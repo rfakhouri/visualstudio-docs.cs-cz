@@ -11,20 +11,66 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eb65f2a1de54cd21ff212443c004dc011d5b3222
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 4275e92b21289c5cf1e3243b2bc782a9e0821fde
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223725"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232746"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>Postupy: Vygenerování dat metrik kódu
 
-Můžete generování výsledků metrik kódu pro jeden nebo více projektů nebo celého řešení. Metriky kódu jsou k dispozici interaktivní vývojového prostředí (IDE) sady Visual Studio a pro C# a projekty Visual Basic, na příkazovém řádku.
+Vygenerování dat metrik kódu třemi způsoby:
 
-Kromě toho můžete nainstalovat [balíček NuGet](https://dotnet.myget.org/feed/roslyn-analyzers/package/nuget/Microsoft.CodeAnalysis.FxCopAnalyzers/2.6.2-beta2-63202-01) , který obsahuje čtyři metriky kódu [analyzátor](roslyn-analyzers-overview.md) pravidla: CA1501 CA1502, CA1505 a CA1506. Tato pravidla jsou ve výchozím nastavení zakázané, ale můžete povolit jim **Průzkumníku řešení** nebo [sada pravidel, která](using-rule-sets-to-group-code-analysis-rules.md) souboru.
+- Nainstalováním [analyzátory FxCop](#fxcop-analyzers-code-metrics-rules) a povolení pravidla metriky (udržovatelnosti) čtyř kódu obsahuje.
 
-## <a name="visual-studio-ide-code-metrics"></a>Visual Studio IDE metriky kódu
+- Kliknutím [ **analyzovat** > **vypočítat metriky kódu** ](#calculate-code-metrics-menu-command) příkazu nabídky v rámci sady Visual Studio.
+
+- Z [příkazového řádku](#command-line-code-metrics) pro C# a projekty Visual Basic.
+
+## <a name="fxcop-analyzers-code-metrics-rules"></a>Analyzátory FxCop pravidla metrik kódu
+
+[Balíček FxCopAnalyzers NuGet](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers) obsahuje řadu metrik kódu [analyzátor](roslyn-analyzers-overview.md) pravidla:
+
+- [CA1501](ca1501-avoid-excessive-inheritance.md)
+- [CA1502](ca1502-avoid-excessive-complexity.md)
+- [CA1505](ca1505-avoid-unmaintainable-code.md)
+- [CA1506](ca1506-avoid-excessive-class-coupling.md)
+
+Tato pravidla jsou ve výchozím nastavení zakázané, ale můžete povolit jim [ **Průzkumníku řešení** ](use-roslyn-analyzers.md#set-rule-severity-from-solution-explorer) nebo [sada pravidel, která](using-rule-sets-to-group-code-analysis-rules.md) souboru. Postup při povolení pravidla CA1502 jako varování, například soubor .ruleset by obsahovat následující položku:
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<RuleSet Name="Rules" Description="Rules" ToolsVersion="16.0">
+  <Rules AnalyzerId="Microsoft.CodeQuality.Analyzers" RuleNamespace="Microsoft.CodeQuality.Analyzers">
+    <Rule Id="CA1502" Action="Warning" />
+  </Rules>
+</RuleSet>
+```
+
+### <a name="configuration"></a>Konfigurace
+
+Můžete nakonfigurovat prahové hodnoty, na které pravidla metriky kódu v analyzátory FxCop balíček fire.
+
+1. Vytvořte textový soubor. Jako příklad, můžete ji nazvat *CodeMetricsConfig.txt*.
+
+2. Přidejte požadované prahové hodnoty do textového souboru v následujícím formátu:
+
+   ```txt
+   CA1502: 10
+   ```
+
+   V tomto příkladu pravidlo [CA1502](ca1502-avoid-excessive-complexity.md) konfigurován tak, aby se aktivují, když je větší než 10 metod cyklomatická složitost.
+
+3. V **vlastnosti** okno sady Visual Studio nebo v souboru projektu, označte akci sestavení konfiguračního souboru jako [ **AdditionalFiles**](../ide/build-actions.md#build-action-values). Příklad:
+
+   ```xml
+   <ItemGroup>
+     <AdditionalFiles Include="CodeMetricsConfig.txt" />
+   </ItemGroup>
+   ```
+
+## <a name="calculate-code-metrics-menu-command"></a>Vypočítat metriky kódu příkazu nabídky
 
 Generovat metriky kódu pro jeden nebo více vašich projektů otevřených v integrovaném vývojovém prostředí pomocí **analyzovat** > **vypočítat metriky kódu** nabídky.
 
@@ -54,7 +100,8 @@ Výsledky jsou generovány a **výsledků metrik kódu** se zobrazí okno. Chcet
 > **Vypočítat metriky kódu** příkaz nefunguje pro projekty .NET Core a .NET Standard. Chcete-li vypočítat metriky kódu pro projekt .NET Core nebo .NET Standard, můžete:
 >
 > - Vypočítat metriky kódu z [příkazového řádku](#command-line-code-metrics) místo
-> - upgrade na Visual Studio 2019
+>
+> - Upgrade na [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)
 
 ::: moniker-end
 

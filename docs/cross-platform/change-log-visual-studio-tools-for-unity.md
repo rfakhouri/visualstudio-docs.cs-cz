@@ -1,7 +1,7 @@
 ---
 title: Protokol změn (Visual Studio Tools for Unity, Windows) | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 11/28/2018
+ms.date: 04/02/2019
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: ea490b7e-fc0d-44b1-858a-a725ce20e396
@@ -10,15 +10,139 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: a7cd8da81fef0d3b4af8e61be979c8bea904072f
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 8a8fd54b15381298542f710cbffa81cd9e0295fe
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53803737"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232759"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>Protokol změn (Visual Studio Tools for Unity, Windows)
 Protokol změn Visual Studio Tools for Unity.
+
+## <a name="4005"></a>4.0.0.5
+ vydáno 27. února 2019
+
+### <a name="bug-fixes"></a>Opravy chyb
+
+-   **Integrace:**
+
+    -   Oprava detekce verze sady Visual Studio pomocí instalačního balíčku.
+
+    -   Odebrat nepoužité sestavení z instalačního balíčku.
+
+## <a name="4004"></a>4.0.0.4
+ vydáno 13. února 2019
+
+### <a name="new-features"></a>Nové funkce
+
+-   **Integrace:**
+
+    -   Přidání podpory pro detekci správně Unity zpracovává během instalace a povolit instalačního modulu pro lepší zpracování souboru zámků.
+    
+    -   Aktualizovat ScriptableObject rozhraní API.
+
+## <a name="4003"></a>4.0.0.3
+ vydáno 31. ledna 2019
+
+### <a name="new-features"></a>Nové funkce
+
+-   **Generování projektu:**
+
+    -   Veřejné a serializovaná pole způsobí, že už upozornění. Jsme jste automaticky potlačit upozornění kompilátoru CS0649 a IDE0051 v Unity projekty, které vytvoří tyto zprávy.
+
+-   **Integrace:**
+
+    -   Vylepšené uživatelské prostředí pro zobrazování Unity editoru a player instance (windows jsou teď umožňující změnu velikosti, použití jednotného okraje a zobrazí změny velikosti úchytu). Byly přidané informace Id procesu pro Unity editoru.
+    
+    -   Aktualizace třídy MonoBehaviour rozhraní API.
+    
+-   **Vyhodnocení:**
+
+    -   Přidání podpory pro lokální funkce.
+    
+    -   Přidání podpory pro pseudo proměnné (identifikátory výjimky a objekt).
+
+### <a name="bug-fixes"></a>Opravy chyb
+
+-   **Integrace:**
+
+    -   Opravili jsme problém s moniker bitové kopie a motivů.
+
+    -   Jenom zápis do okna výstup během ladění, při automatické aktualizaci databáze asset.
+
+    -   Oprava opoždění v uživatelském rozhraní pomocí třídy MonoBehaviour. Průvodce filtrování.
+    
+-   **Ladicí program:**
+
+    -   Opravili jsme čtení vlastní atribut v pojmenované argumenty při používání starší verze protokolu.
+
+## <a name="4002"></a>4.0.0.2
+ vydáno 23. ledna 2019
+
+### <a name="bug-fixes"></a>Opravy chyb
+
+-   **Integrace:**
+
+    -   Opravili jsme generování experimentální sestavení.
+
+    -   Zpracování událostí pevné projektu souboru chcete-li minimalizovat zatížení vlákna uživatelského rozhraní.
+
+    -   Oprava dokončení zprostředkovatele s dávkové text se změní.
+    
+-   **Ladicí program:**
+
+    -   Opravili jsme zobrazování zpráv uživateli ladění na připojený ladicí program.
+
+## <a name="4001"></a>4.0.0.1
+ vydáno 10. prosince 2018
+
+### <a name="new-features"></a>Nové funkce
+
+-   **Vyhodnocení:**
+
+    -   Nahradit NRefactory ve prospěch Roslyn pro vyhodnocení výrazu.
+
+    -   Přidali jsme podporu pro ukazatele: přistoupit přes ukazatel, přetypování a aritmetika ukazatele (Unity 2018.2 + nový modul runtime je požadováno i to).
+
+    -   Přidání podpory pro zobrazení pole ukazatele (jako v jazyce C++). Proveďte výraz ukazatele pak přidat čárku a počet prvků, které chcete zobrazit.
+
+    -   Přidání podpory pro asynchronní konstrukce.
+
+-   **Integrace:**
+    
+    -   Byla přidána podpora automaticky obnovovaných Unity a asset databáze na Uložit. To je ve výchozím nastavení povolené a aktivuje opětovnou kompilaci na straně Unity při ukládání skriptu v sadě Visual Studio. Můžete zakázat tuto funkci v Tools\Options\Tools AssetDatabase Unity\Refresh Unity na uložení.
+
+### <a name="bug-fixes"></a>Opravy chyb
+
+-   **Integrace:**
+
+    -   Oprava most aktivace při sady Visual Studio není vybrána jako upřednostňované externí editor.
+
+    -   Opravili jsme vyhodnocení výrazu s výrazy poškozený nebo nepodporovaný.
+
+## <a name="4000"></a>4.0.0.0
+ vydáno 4. prosince 2018
+
+### <a name="new-features"></a>Nové funkce
+
+-   **Integrace:**
+
+    -   Přidání podpory pro Visual Studio 2019.
+
+    -   Přijata image služby Visual Studio a katalog s plnou podporu pro škálování HDPI, ideální obrázky pixelů a motivů.
+
+### <a name="deprecated-features"></a>Zastaralé funkce
+
+-   **Integrace:**
+
+    -   Od této chvíle, Visual Studio Tools for Unity bude podporovat jenom Unity 5.2 + (s Unity a vestavěná integrace sady Visual Studio).
+
+    -   Od této chvíle, Visual Studio Tools for Unity bude podporovat jenom Visual Studio 2015 +.
+
+    -   Odebrání služby starší verze jazyka, chybových úseček seznam a stav.
+    
+    -   Odebrat rychlé třídy Monobehaviour. Průvodce (ve prospěch podporu vyhrazené technologie intellisense).
 
 ## <a name="3903"></a>3.9.0.3
  vydáno 28. listopadu 2018
@@ -619,7 +743,7 @@ Protokol změn Visual Studio Tools for Unity.
 
     -   Přidání podpory pro NetworkBehavior zprávy v průvodci.
 
--   **UŽIVATELSKÉ ROZHRANÍ:**
+-   **UI:**
 
     -   Přidat možnost konfigurovat, zda se MonoBehavior zprávy.
 
@@ -643,7 +767,7 @@ Protokol změn Visual Studio Tools for Unity.
 
     -   Opravili jsme problém, která způsobila zablokování při ladění sady Visual Studio.
 
--   **UŽIVATELSKÉ ROZHRANÍ:**
+-   **UI:**
 
     -   Oprava nekompatibility s [karty Studio](https://tabsstudio.com/) rozšíření sady Visual Studio.
 

@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a31058893e09de2c945cc253374a55c53f277110
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: dcef749068dfb1f13e5b08160a70dda168b771ee
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56620002"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232850"
 ---
 # <a name="how-to-include-prerequisites-with-a-clickonce-application"></a>Postupy: Zahrnutí předpokladů s aplikací ClickOnce
 Před distribucí požadovaného softwaru se [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace, musíte nejdřív stáhnout instalační balíčky pro tyto požadavky na vývojovém počítači. Když publikujete aplikaci a zvolte **stáhnout součásti ze stejného umístění, jako je má aplikace**, dojde k chybě, pokud instalační balíčky nejsou uloženy v **balíčky** složky.
@@ -25,7 +25,7 @@ Před distribucí požadovaného softwaru se [!INCLUDE[ndptecclick](../deploymen
 
 1. V Průzkumníku souborů otevřete **balíčky** složky.
 
-    Výchozí cesta je *C:\Program Files\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages* na 32bitové verzi systému a *C:\Program Files (x86) \Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages* v 64bitovém systému.
+    Výchozí cesta je `%ProgramFiles(x86)%\Microsoft SDKs\ClickOnce Bootstrapper\Packages\`.
 
 2. Otevřete složku požadovaného softwaru, který chcete přidat a potom otevřete složku jazyka nainstalované verze aplikace [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] (například **en** pro angličtinu).
 

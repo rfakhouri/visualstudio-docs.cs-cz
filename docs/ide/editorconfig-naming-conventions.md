@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 881cf54df018a383d081112f44f98fd8f5d71efa
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: 2e99e07f2f39ef4e01a2b79e5a391c32f6510e3a
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57983271"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232590"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>Zásady vytváření názvů .NET pro EditorConfig
 
@@ -56,7 +56,7 @@ Následující seznam obsahuje povolených hodnot, a můžete zadat více hodnot
 - delegát
 - parametr
 - type_parameter
-- local
+- místní
 - local_function
 
 ### <a name="accessibility-levels-of-symbols"></a>Úrovně přístupnosti symbolů
@@ -74,10 +74,23 @@ Následující seznam obsahuje povolených hodnot, a můžete zadat více hodnot
 - protected
 - chráněné\_interní nebo protected_friend
 - privátní\_chráněné
-- local
+- místní
 
-> [!NOTE]
-> Nezadávejte úroveň dostupnosti jako součást svých zásad vytváření názvů, pokud usnadnění přístupu se nedá použít pro daný druh symbolu, který cílíte. Například parametry nemají úrovní přístupu. Pokud chcete zadat úroveň usnadnění pro zásady vytváření názvů parametrů, pravidlo pro pojmenování nebude fungovat správně.
+   `local` Úrovni přístupu platí pro symboly definované v rámci metody. Je užitečné pro definování zásady vytváření názvů pro symboly, jehož usnadnění nelze zadat v kódu. Pokud zadáte například `applicable_accessibilities = local` na zásady vytváření názvů pro konstanty (`required_modifiers = const`), se pravidlo vztahuje pouze na konstanty definované v rámci metody a ne těch, které jsou definovány v rámci typu.
+
+   ```csharp
+   class TypeName
+   {
+     // Constant defined in a type.
+     const int X = 3;
+
+     void Method()
+     {
+       // Constant defined in a method with "local" accessibility.
+       const int Y = 4;
+     }
+   }
+   ```
 
 ### <a name="symbol-modifiers-optional"></a>Symbol modifikátory (volitelné)
 
@@ -87,11 +100,11 @@ K popisu modifikátory symboly chcete pravidlo pro pojmenování použít, zadej
 
 Následující seznam obsahuje povolené hodnoty (oddělte čárkou více hodnot):
 
-- `abstract` Nebo `must_inherit`
+- `abstract` or `must_inherit`
 - `async`
 - `const`
 - `readonly`
-- `static` Nebo `shared`
+- `static` or `shared`
 
    > [!NOTE]
    > Pokud máte pravidlo pro pojmenování pro `static` nebo `shared` symboly, budou také použity na `const` symboly, protože jsou implicitně statické. Pokud nechcete, aby `static` pravidlo pro pojmenování vyrovnat `const` symboly, vytvořte samostatné pravidlo pro pojmenování pro `const` symboly.
@@ -157,7 +170,7 @@ Severity | Efekt
 žádné nebo tiché | Když se tento styl nedodrží, nezobrazují žádné uživatele. automaticky generovaný kód se však řídí tímto stylem.
 Návrh | Když se tento styl nedodrží, zobrazit uživateli jako návrh, jako základní tečky v prvních dvou znacích. V době kompilace nemá žádný vliv.
 upozornění | Když tento styl nedodrží, zobrazí upozornění kompilátoru v **seznam chyb**.
-Chyba | Když tento styl nedodrží, zobrazit chybu kompilátoru ve **seznam chyb**.
+error | Když tento styl nedodrží, zobrazit chybu kompilátoru ve **seznam chyb**.
 
 > [!NOTE]
 > Nemáte k sestavení projektu, chcete-li zobrazit názvy porušení pravidel. Se zobrazují jako kód je upravovat, buď **seznam chyb** nebo jako návrh.

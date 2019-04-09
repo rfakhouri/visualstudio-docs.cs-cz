@@ -9,12 +9,12 @@ author: seaniyer
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f1a3ccfe4081e3fa5287afc0299755a71f762f7
-ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
+ms.openlocfilehash: 2b130c321e57cdeea6b703b0e439d6b0f15a1a96
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "58897618"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232538"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-or-visual-studio-installer"></a>Postup ohlášení problému se sadou Visual Studio nebo instalační program sady Visual Studio
 
@@ -35,7 +35,7 @@ Nahlásit problém z jeho instalačního programu nebo aplikace Visual Studio s 
 
 1. Jakmile se přihlásíte, budete moci zobrazit vaše **problémy** a **aktivity** na **položky, které sleduji** obrazovky
 
-    ![Položky, které sleduji](../ide/media/items-i-follow.png)
+   ![Položky, které sleduji](../ide/media/items-i-follow.png)
 
 1. Visual Studio poskytuje rozhraní pro hledání na váš problém a zobrazit, pokud ostatní ho nahlásili. Pokud někdo ho ohlásil, "nahoru vote" jej a dejte nám vědět.
    > [!NOTE]

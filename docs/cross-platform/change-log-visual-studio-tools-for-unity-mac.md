@@ -1,7 +1,7 @@
 ---
 title: Protokol změn (Visual Studio Tools for Unity, Mac) | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 11/13/2018
+ms.date: 04/02/2019
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: 33a6ac54-d997-4308-b5a0-af7387460849
@@ -10,15 +10,148 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: d9563d45d9a09e4402f1586a18fe9e5d7d9775c1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 25269189489dab4a51b7f3b45f0aa670e39f50fb
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56611071"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232618"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-mac"></a>Protokol změn (Visual Studio Tools for Unity, Mac)
 Protokol změn Visual Studio Tools for Unity.
+
+## <a name="2020"></a>2.0.2.0
+ vydáno 2. dubna 2019
+
+### <a name="new-features"></a>Nové funkce
+
+-   **Integrace:**
+
+    -   Byla přidána podpora automaticky obnovovaných Unity a asset databáze na Uložit. To je ve výchozím nastavení povolené a aktivuje opětovnou kompilaci na straně Unity při ukládání skriptu v sadě Visual Studio. Můžete zakázat tuto funkci v Tools\Options\Tools AssetDatabase Unity\Refresh Unity na uložení.
+
+    -   Přidání podpory pro nastavení instalace upřednostňované unity pro dokumentaci v režimu offline.
+
+    -   Přidání kontextové nabídky pro nový Editor.
+
+### <a name="bug-fixes"></a>Opravy chyb
+
+-   **Ladicí program:**
+
+    -   Opravili jsme sestavení filtrování a rámce inspekce prázdné rámce.
+
+## <a name="2011"></a>2.0.1.1
+ vydáno 26. března 2019
+
+### <a name="bug-fixes"></a>Opravy chyb
+
+-   **Integrace:**
+
+    -   Dočasně Ujistěte se, Mono výchozí a pouze použitelné ladicí program pro tuto specifickou verzi.
+
+## <a name="2006"></a>2.0.0.6
+ vydáno 26. března 2019
+
+### <a name="new-features"></a>Nové funkce
+
+-   **Integrace:**
+
+    -   Přidání podpory pro "Připojit k Unity a hrát".
+
+## <a name="2005"></a>2.0.0.5
+ vydáno 20. března 2019
+
+### <a name="new-features"></a>Nové funkce
+
+-   **Generování projektu:**
+
+    -   Zachovat vlastnosti externích při zpracování souboru řešení.
+
+## <a name="2004"></a>2.0.0.4
+ vydané 5. března 2019
+
+### <a name="new-features"></a>Nové funkce
+
+-   **Integrace:**
+
+    -   Aktualizovat ScriptableObject rozhraní API.
+
+### <a name="bug-fixes"></a>Opravy chyb
+
+-   **Integrace:**
+
+    -   Odebrání oborů názvů z šablony.
+
+## <a name="2003"></a>2.0.0.3
+ vydané 5. března 2019
+
+### <a name="new-features"></a>Nové funkce
+
+-   **Generování projektu:**
+
+    -   Veřejné a serializovaná pole způsobí, že už upozornění. Jsme jste automaticky potlačit upozornění kompilátoru CS0649 a IDE0051 v Unity projekty, které vytvoří tyto zprávy.
+
+-   **Integrace:**
+
+    -   Výzva k připojení ke konkrétní instanci, pokud běží více jednoho procesu Unity.
+
+-   **Vyhodnocení:**
+
+    -   Přidání podpory pro lokální funkce.
+
+### <a name="bug-fixes"></a>Opravy chyb
+
+-   **Ladicí program:**
+
+    -   Opravili jsme čtení vlastní atribut v pojmenované argumenty při používání starší verze protokolu.
+
+## <a name="2002"></a>2.0.0.2
+ vydáno 4. února 2019
+
+### <a name="new-features"></a>Nové funkce
+
+-   **Integrace:**
+
+    -   Aktualizace třídy MonoBehaviour rozhraní API.
+   
+### <a name="bug-fixes"></a>Opravy chyb
+
+-   **Ladicí program:**
+
+    -   Opravili jsme nastavení primitivní hodnoty v ladicím programu.
+
+## <a name="2001"></a>2.0.0.1
+ vydáno 4. prosince 2018
+
+### <a name="bug-fixes"></a>Opravy chyb
+
+-   **Integrace:**
+
+    -   Oprava instalace balíčku vlastní členství ve skupině.
+
+## <a name="2000"></a>2.0.0.0
+ vydáno 4. prosince 2018
+
+### <a name="new-features"></a>Nové funkce
+
+-   **Ladicí program:**
+
+    -   Ladicí program Unity na počítači Mac nahrazeny stejný ladicí program Unity core z Windows.
+
+    -   Nahradit NRefactory ve prospěch Roslyn pro vyhodnocení výrazu.
+
+    -   Přidali jsme podporu pro ukazatele: přistoupit přes ukazatel, přetypování a aritmetika ukazatele (Unity 2018.2 + nový modul runtime je požadováno i to).
+
+    -   Přidání podpory pro zobrazení pole ukazatele (jako v jazyce C++). Proveďte výraz ukazatele pak přidat čárku a počet prvků, které chcete zobrazit.
+
+    -   Přidání podpory pro asynchronní konstrukce.
+
+    -   Přidání podpory pro pseudo proměnné (identifikátory výjimky a objekt).
+    
+### <a name="bug-fixes"></a>Opravy chyb
+
+-   **Ladicí program:**
+
+    -   Opravili jsme vyhodnocení výrazu s výrazy poškozený nebo nepodporovaný.
 
 ## <a name="1700"></a>1.7.0.0
  Vydáno 13. listopadu 2018
@@ -33,13 +166,13 @@ Protokol změn Visual Studio Tools for Unity.
 
 -   **Ladicí program:**
 
-     -   Oprava vzájemné zablokování v knihovně používaný ke komunikaci s modulem Unity a ladicí program, nastavení sady Visual Studio nebo Unity ukotvit, zejména v případě dosažení "Připojit k Unity" nebo restartování hry.
+    -   Oprava vzájemné zablokování v knihovně používaný ke komunikaci s modulem Unity a ladicí program, nastavení sady Visual Studio nebo Unity ukotvit, zejména v případě dosažení "Připojit k Unity" nebo restartování hry.
 
 -   **Integrace:**
 
-     -   Oprava Unity modulu plug-in aktivace byla vyberete jiný výchozí editor.
+    -   Oprava Unity modulu plug-in aktivace byla vyberete jiný výchozí editor.
 
-     -   Oprava vytvoření šablony souboru Unity.
+    -   Oprava vytvoření šablony souboru Unity.
 
 ## <a name="1602"></a>1.6.0.2
  Vydáno 24. července 2018
@@ -48,7 +181,7 @@ Protokol změn Visual Studio Tools for Unity.
 
 -   **Integrace:**
 
-     -   Alternativní řešení pro chybu Unity výkonu, která byla opravena Unity vrácena zpět.
+    -   Alternativní řešení pro chybu Unity výkonu, která byla opravena Unity vrácena zpět.
 
 ## <a name="1601"></a>1.6.0.1
  Vydáno 10. července 2018
@@ -57,7 +190,7 @@ Protokol změn Visual Studio Tools for Unity.
 
 -   **Integrace:**
 
-     -   Oprava zabarvení kódu shaderu podporovat.
+    -   Oprava zabarvení kódu shaderu podporovat.
 
 ## <a name="1600"></a>1.6.0.0
  Vydáno 26. června 2018
@@ -70,9 +203,9 @@ Protokol změn Visual Studio Tools for Unity.
 
 -   **Generování projektu:**
 
-     -   Přechodné alternativní řešení pro chyby výkonu Unity: při vytváření projektů do mezipaměti MonoIslands.
+    -   Přechodné alternativní řešení pro chyby výkonu Unity: při vytváření projektů do mezipaměti MonoIslands.
 
-     -   Nelze převést souboru PDB typu portable mdb zobrazovat při používání nového modulu runtime Unity.
+    -   Nelze převést souboru PDB typu portable mdb zobrazovat při používání nového modulu runtime Unity.
 
 ## <a name="1502"></a>1.5.0.2
  Vydáno 18. dubna 2018

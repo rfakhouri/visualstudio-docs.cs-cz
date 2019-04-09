@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e68e6c7258cb906ac81cb97f7d82bd5c5d9b467a
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 91462511f5de22c51dd1d6fd07c192a72e69e541
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57873120"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232694"
 ---
 # <a name="intellitrace-for-visual-studio-enterprise-c-visual-basic-c"></a>IntelliTrace for Visual Studio Enterprise (C#, Visual Basic, C++)
 
@@ -33,7 +33,7 @@ Věnovat méně času laděním aplikace, zaznamenávejte a trasujte historii pr
 
 - Zaznamenat konkrétní události
 
-   Prozkoumat související kód, data, která se zobrazí **lokální** okno během událostí ladicího programu a informace o voláních funkcí
+- Prozkoumat související kód, data, která se zobrazí **lokální** okno během událostí ladicího programu a informace o voláních funkcí
 
 - Ladit chyby, které je těžké reprodukovat nebo kterým dochází při nasazení
 
@@ -44,9 +44,9 @@ Můžete použít nástroj IntelliTrace v sadě Visual Studio Enterprise edition
 |||
 |-|-|
 |**Ladit aplikaci pomocí nástroje IntelliTrace:**<br /><br /> -Zobrazit minulé události.<br />-Zobrazit informace o s minulými událostmi volání.<br />-Uložte relaci nástroje IntelliTrace.<br />-Řízení dat, která nástroj IntelliTrace shromažďuje.|- [Kontrola předchozí nové aplikace pomocí nástroje IntelliTrace](../debugger/view-historical-application-state.md)<br />- [Návod: Použití funkce IntelliTrace](../debugger/walkthrough-using-intellitrace.md)<br />- [Funkce IntelliTrace](../debugger/intellitrace-features.md)<br />- [Historické ladění](../debugger/historical-debugging.md)|
-|**Shromažďovat IntelliTrace data během testovací relace v nástroji Test Manager**|- [Shromažďování více diagnostických dat v manuálních testů](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)|
+|**Shromažďovat data IntelliTrace během testovací relace v nástroji Test Manager.**|- [Shromažďování více diagnostických dat v manuálních testů](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)|
 |**Shromažďovat IntelliTrace data z nasazené aplikace**|- [Použití samostatného kolektoru IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md)|
-|**Spuštění ladění ze souboru protokolu IntelliTrace (soubor .iTrace).**|- [Použití uložených dat řešení IntelliTrace](../debugger/using-saved-intellitrace-data.md)|
+|**Spustit ladění ze souboru protokolu IntelliTrace (soubor .iTrace).**|- [Použití uložených dat řešení IntelliTrace](../debugger/using-saved-intellitrace-data.md)|
 
 ## <a name="IntelliTraceSupport"></a> Které aplikace můžete ladit pomocí nástroje IntelliTrace?
 
@@ -54,7 +54,7 @@ Můžete použít nástroj IntelliTrace v sadě Visual Studio Enterprise edition
 |---------------------| - |
 | **Plná podpora** | -Jazyka Visual Basic a Visual C# aplikace, které používají rozhraní .NET Framework 2.0 nebo vyšší verze.<br/>Můžete ladit většinu aplikací, včetně ASP.NET, Microsoft Azure, Windows Forms, WCF, WPF, Windows Workflow, SharePoint 2010, SharePoint 2013 a 64bitové aplikace.<br/>Ladění aplikací SharePoint pomocí nástroje IntelliTrace naleznete v tématu [názorný postup: Ladění aplikace SharePoint s použitím technologie IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md).<br/> Chcete-li ladit aplikace pro Microsoft Azure s použitím technologie IntelliTrace, přečtěte si téma [ladění publikované cloudové služby pomocí nástroje IntelliTrace a sady Visual Studio](../azure/vs-azure-tools-intellitrace-debug-published-cloud-services.md). |
 | **Omezená podpora** | – C++ aplikace určené pro podporu Windows zobrazení snímků pomocí zpětného kroku IntelliTrace. Podporují se jenom události ladicího programu a výjimek.<br />– .NET core a ASP.NET Core aplikace podporované pro určité události pouze (kontroler MVC, ADO.NET a HTTPClient události) v místní ladění. Samostatný kolektor není podporována pro aplikace .NET Core nebo ASP.NET Core.<br />- F# aplikace na experimentální bázi<br />– Aplikace UWP podporované pouze pro události |
-| **Nepodporuje se** | -Ostatní jazyky a skript<br />– Windows Services, Silverlight, Xbox nebo [!INCLUDE[winmobile](../debugger/includes/winmobile_md.md)] aplikace |
+| **Není podporováno** | -Ostatní jazyky a skript<br />– Windows Services, Silverlight, Xbox nebo Windows Mobile apps |
 
 > [!NOTE]
 > Pokud chcete ladit proces, který je již spuštěna, lze shromažďovat pouze události IntelliTrace (žádné informace volání). Můžete připojit k 32bitové nebo 64bitové proces v místním počítači. Shromažďují se události, ke kterým dojde před připojit k procesu.
@@ -75,7 +75,7 @@ Můžete ukládat data IntelliTrace z těchto zdrojů:
 
 - Webové aplikace ASP.NET jsou hostovány službou IIS, nebo SharePoint 2010 a SharePoint 2013 spuštěnými v nasazení při použití nástroje Microsoft Monitoring Agent, buď samostatně, nebo s nástrojem System Center 2012. Zobrazit [použití samostatného kolektoru IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md) a [sledování pomocí agenta Microsoft Monitoring Agent](http://technet.microsoft.com/library/dn465153.aspx).
 
-  Zde je několik příkladů, jak nástroj IntelliTrace může pomoci s laděním:
+Zde je několik příkladů, jak nástroj IntelliTrace může pomoci s laděním:
 
 - Vaše aplikace má poškozený datový soubor, ale nevíte, kdy k této události došlo.
 
@@ -125,9 +125,9 @@ Ve výchozím nastavení nástroj IntelliTrace zaznamenává pouze události Int
 
     - Nezpracované výjimky
 
-- **Události rozhraní .NET framework**
+- **Události .NET Framework**
 
-   Standardně nástroj IntelliTrace zaznamenává nejběžnější události rozhraní .NET Framework. Například zkoušeného případě události zaškrtnutí políčka, nástroj IntelliTrace shromažďuje stav zaškrtávacího políčka a text.
+   Standardně nástroj IntelliTrace zaznamenává nejběžnější události rozhraní .NET Framework. Třeba <xref:System.Windows.Forms.CheckBox.CheckedChanged?displayProperty=nameWithType> shromažďuje události IntelliTrace stav zaškrtávacího políčka a text.
 
 - **Události aplikace SharePoint 2010 a SharePoint 2013**
 
@@ -175,14 +175,6 @@ Pro řízení množství informací o voláních shromažďovaných nástrojem I
 Nástroj IntelliTrace standardně shromažďuje pouze data pro vybrané události IntelliTrace. To může nebo nemusí zpomalit aplikaci v závislosti na struktuře a organizaci kódu. Například pokud nástroj IntelliTrace zaznamenává událost často, může to zpomalit vaši aplikaci. Může mít také můžete zvážení refaktoringu vaší aplikace.
 
 Shromažďování informací o voláních může aplikaci výrazně zpomalit. Může také dojít ke zvětšení všech souborů protokolu IntelliTrace (.iTrace) ukládaných na disk. Pro minimalizaci negativních dopadů shromažďujte informace o volání pouze u modulů, které vás zajímají.  Chcete-li změnit maximální velikost souborů .iTrace, přejděte na **nástroje**, **možnosti**, **IntelliTrace**, **Upřesnit**.
-
-## <a name="in-this-section"></a>V tomto oddílu
-
-[Funkce IntelliTrace](../debugger/intellitrace-features.md)
-
-[Diagnostika problémů po nasazení](../debugger/diagnose-problems-after-deployment.md)
-
-[Použití uložených dat řešení IntelliTrace](../debugger/using-saved-intellitrace-data.md)
 
 ### <a name="blogs"></a>Blogy
 

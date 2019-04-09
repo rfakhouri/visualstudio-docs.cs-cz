@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e368d22a876ddb29770416ba5bbbb2a7995d576
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3c87339e26e5b08fbcbdcde94d43c9f0009e1a22
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55950575"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232415"
 ---
 # <a name="add-visual-studio-editor-support-for-other-languages"></a>Přidání podpory editoru sady Visual Studio pro ostatní jazyky
 
@@ -46,33 +46,33 @@ Visual Studio v současné době poskytuje barevné zvýrazňování syntaxe a d
 
 Kromě barevného zvýrazňování syntaxe a doplňování výrazů basic, Visual Studio také má funkci zvanou [přejít na](https://blogs.msdn.microsoft.com/benwilli/2015/04/09/visual-studio-tip-3-use-navigate-to/). Tato funkce umožňuje rychle vyhledat soubory kódu, cesty k souborům a kód symboly. Visual Studio poskytuje přejít na podporu pro následující jazyky.
 
--   Go
+- Go
 
--   Java
+- Java
 
--   JavaScript
+- JavaScript
 
--   PHP
+- PHP
 
--   TypeScript
+- TypeScript
 
--   Visual Basic
+- Visual Basic
 
--   Visual C++
+- Visual C++
 
--   C#
+- C#
 
 Všechny tyto typy souborů mají funkce popsané dříve i v případě podpory pro daný jazyk ještě se nenainstalovala. Instalace specializované podpory pro některé jazyky mohou poskytnout podpory dalších jazyků, jako je například technologie IntelliSense nebo jiné pokročilé jazyka funkce, jako jsou návrhy.
 
 ## <a name="add-support-for-non-supported-languages"></a>Přidání podpory pro jiné podporované jazyky
 
-Visual Studio 2015 Update 1 a novější verze poskytují podporu jazyka v editoru pomocí [Gramatik TextMate](https://manual.macromates.com/en/language_grammars). Pokud vašem oblíbeném programovacím jazyce se aktuálně nepodporuje v editoru sady Visual Studio, nejprve vyhledávání na webu – sady TextMate pro jazyk již existuje. Pokud nemůžete najít jednu, ale můžete přidat podporu sami v Visual Studio 2015 Update 1 nebo později po vytvoření modelu sady TextMate pro jazyk gramatiky a fragmenty kódu.
+Visual Studio poskytuje podporu jazyka v editoru pomocí [Gramatik TextMate](https://manual.macromates.com/en/language_grammars). Pokud váš oblíbený programovací jazyk není aktuálně podporovaná v editoru sady Visual Studio, nejprve vyhledávání na webu&mdash;sady TextMate pro jazyk již existuje. Pokud nemůžete najít jednu, ale můžete přidat podporu sami tak, že vytvoříte model sady TextMate pro jazyk gramatiky a fragmenty kódu.
 
 Přidejte všechny nové Gramatik TextMate pro Visual Studio v následující složce:
 
 *%userprofile%\\.vs\Extensions*
 
-Pod touto cestou základní přidáte následující složky, pokud se vztahují na konkrétní situaci:
+Pod touto cestou základní přidejte následující složky, pokud se vztahují na konkrétní situaci:
 
 |Název složky|Popis|
 |-----------------|-----------------|
@@ -80,9 +80,12 @@ Pod touto cestou základní přidáte následující složky, pokud se vztahují
 |*\Syntaxes*|Složka gramatiky. Obsahuje gramatiku *.json* souborů pro daný jazyk, jako například *Matlab.json*.|
 |*\Snippets*|Složka fragmentů kódu. Obsahuje fragmenty kódu pro jazyk.|
 
-Ve Windows *% userprofile %* překládá na cestu: *c:\Users\\\<uživatelské jméno >*. Pokud složka rozšíření neexistuje ve vašem systému, musíte ji vytvořit. Pokud složka již existuje, bude skrytá.
+Ve Windows *% userprofile %* překládá na cestu: *c:\Users\\\<uživatelské jméno >*. Pokud *rozšíření* složka neexistuje ve vašem systému, budete potřebovat k jeho vytvoření. Pokud složka již existuje, bude skrytá.
 
-Podrobnosti o tom, jak vytvořit Gramatik TextMate najdete v tématu [TextMate – Úvod do jazyka gramatiky: Přidání zvýrazňování syntaxe kódu zdroje vložený ve formátu HTML](https://developmentality.wordpress.com/2011/02/08/textmate-introduction-to-language-grammars/) a [poznámky o tom, jak vytvořit jazyk gramatiky a vlastní motiv pro sady Textmate](https://benparizek.com/notebook/notes-on-how-to-create-a-language-grammar-and-custom-theme-for-a-textmate-bundle).
+> [!TIP]
+> Pokud máte jakékoli soubory, otevřete v editoru, budete muset zavřít a znovu otevřít, je chcete zobrazit zvýraznění syntaxe po přidání Gramatik TextMate.
+
+Podrobnosti o tom, jak vytvořit Gramatik TextMate najdete v tématu [TextMate – Úvod do jazyka gramatiky](https://developmentality.wordpress.com/2011/02/08/textmate-introduction-to-language-grammars/) a [poznámky o tom, jak vytvořit jazyk gramatiky a vlastní motiv pro sady Textmate](https://benparizek.com/notebook/notes-on-how-to-create-a-language-grammar-and-custom-theme-for-a-textmate-bundle).
 
 ## <a name="see-also"></a>Viz také:
 

@@ -9,12 +9,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4ef0dc772422322d8cfa2f8c7ca88a7cf30eab31
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: 01bd8101aa1e62e65c83d4da40af4eb624338a89
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416247"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232621"
 ---
 # <a name="how-to-create-multi-project-templates"></a>Postupy: Vytváření šablon vícenásobného projektu
 
@@ -75,7 +75,11 @@ Kořen *vstemplate* soubor pro víceprojektové šabloně se liší od jednoproj
 2. Přizpůsobení projektů, dokud nebudou připravené nelze exportovat do šablony.
 
    > [!TIP]
-   > Pokud používáte [parametry šablony](template-parameters.md) a vy chcete odkazovat na proměnné z nadřazené šablony, předpona názvu parametru s `ext_`. Například, `$ext_safeprojectname$`.
+   > Pokud používáte [parametry šablony](template-parameters.md) a vy chcete odkazovat na proměnné z nadřazené šablony, předpona názvu parametru s `ext_`. Například, `$ext_safeprojectname$`. Navíc nastavte **CopyParameters** atribut **ProjectTemplateLink** elementu **true**.
+   >
+   > ```xml
+   > <ProjectTemplateLink ProjectName="MyProject" CopyParameters="true">...</ProjectTemplateLink>
+   > ```
 
 3. Na **projektu** nabídce zvolte **exportovat šablonu**.
 

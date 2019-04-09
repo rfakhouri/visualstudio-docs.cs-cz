@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 36985ab7a0ee94cb735b1954a9e5ea9c2e0d2bbf
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: ba1529840a38a23929b9926cc4bed5cc22a058cb
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57869093"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232564"
 ---
 # <a name="overview-of-net-compiler-platform-analyzers"></a>Přehled analyzátory pro .NET Compiler Platform
 
@@ -38,17 +38,27 @@ Jako je porušení pravidel pro analýzu statického kódu, porušení analyzát
 
 Analyzátory Roslyn analýza kódu v okamžiku sestavení, jako je analýza statického kódu, pokud je povoleno, ale také na live při psaní. Pokud povolíte [úplné analýzy řešení](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md#to-toggle-full-solution-analysis), analyzátorů Roslyn také poskytují analýzu návrhu soubory kódu, které nejsou otevřené v editoru.
 
-> [!NOTE]
+> [!TIP]
 > Čas sestavení chyby a upozornění z analyzátory Roslyn se zobrazí, jenom Pokud jsou nainstalované analyzátory jako balíček NuGet.
 
 Pouze proveďte analyzátory Roslyn sestavy stejné typy problémů, které provádí statickou analýzu kódu, ale jejich usnadňují vás nutí opravovat jednu nebo všechny výskyty narušení v souboru nebo projektu. Tyto akce jsou volány *opravy kódu*. Opravy kódu jsou specifické pro prostředí IDE; v sadě Visual Studio, jsou implementovány jako [rychlé akce](../ide/quick-actions.md). Ne všechny analyzátor diagnostiky mít to napravit přidružený kód.
 
 > [!NOTE]
-> Možnost nabídky **analyzovat** > **spustit analýzu kódu** platí pouze pro statickou analýzu kódu. Kromě toho v projektu **analýzy kódu** stránku vlastností **povolit analýzu kódu na sestavení** a **potlačit Výsledky generovaného kódu** zaškrtávací políčka platí pouze pro Analýza statického kódu. Nemají žádný účinek na analyzátory Roslyn.
+> Tyto možnosti uživatelského rozhraní platí pouze pro statickou analýzu kódu:
+>
+> - **Analyzovat** > **spustit analýzu kódu** nabídky.
+> - **Povolit analýzu kódu na sestavení** a **potlačit Výsledky generovaného kódu** zaškrtávacích políček na **analýzy kódu** kartu (tyto možnosti nemají stránky vlastností projektu vliv na analyzátory Roslyn).
 
 Rozlišovat mezi porušení z analyzátory Roslyn a statickou analýzu kódu v **seznam chyb**, podívejte se na **nástroj** sloupce. Pokud nástroj hodnota odpovídá jednomu z sestavení analyzátoru v **Průzkumníka řešení**, například **Microsoft.CodeQuality.Analyzers**, porušení pochází z Roslyn analyzátor. V opačném případě porušení pochází ze statické analýzy kódu.
 
 ![Nástroj pro sloupec v seznamu chyb](media/code-analysis-tool-in-error-list.png)
+
+> [!TIP]
+> **RunCodeAnalysis** vlastnost msbuild v souboru projektu se týká pouze statické analýzy kódu. Pokud nainstalujete analyzátory, nastavte **RunCodeAnalysis** k **false** v souboru projektu, aby se zabránilo statickou analýzu kódu po dokončení sestavení.
+>
+> ```xml
+> <RunCodeAnalysis>false</RunCodeAnalysis>
+> ```
 
 ## <a name="nuget-package-versus-vsix-extension"></a>Balíček NuGet a rozšíření VSIX
 
@@ -80,6 +90,6 @@ Závažnost pravidla nelze nastavit v analyzátory, které byly nainstalovány j
 
 ## <a name="see-also"></a>Viz také:
 
-- [Analyzátory – nejčastější dotazy](analyzers-faq.md)
+- [Nejčastější dotazy k analyzátorům](analyzers-faq.md)
 - [Napsat vlastní analyzátor Roslyn](../extensibility/getting-started-with-roslyn-analyzers.md)
-- [.NET Compiler Platform SDK](/dotnet/csharp/roslyn-sdk/)
+- [Sada .NET Compiler Platform SDK](/dotnet/csharp/roslyn-sdk/)

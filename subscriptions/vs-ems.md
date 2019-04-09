@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Další informace o Enterprise Mobility + Security výhodu součástí vašeho předplatného sady Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: b1d3aa39f4d3f53d10bcc692da96bfe6c50b981d
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 917f4e6c2b80c2cb0b154d58effd8016f54740c3
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841192"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232655"
 ---
 # <a name="enterprise-mobility--security-ems-in-visual-studio-subscriptions"></a>Enterprise Mobility + Security (EMS) v předplatných sady Visual Studio
 
@@ -73,6 +73,6 @@ Nejste si jistí které předplatné používáte?  Připojte se k [ https://my.
 
 ## <a name="support-resources"></a>Informační zdroje podpory
 -  Potřebujete pomoc s EMS?  Podívejte se na online [dokumentace k EMS](/enterprise-mobility-security/).
--  Pro technickou podporu pro všechny součásti EMS, navštivte prosím [nejčastější dotazy podpory EMS](https://docs.microsoft.com/en-us/enterprise-mobility-security/solutions/ems-support-faq) najít správné podpory pro váš dotaz.
+-  Pro technickou podporu pro všechny součásti EMS, navštivte prosím [nejčastější dotazy podpory EMS](https://docs.microsoft.com/enterprise-mobility-security/solutions/ems-support-faq) najít správné podpory pro váš dotaz.
 -  Potřebujete pomoc se prodeje, předplatnými, účty a fakturací pro předplatná sady Visual Studio, obraťte se na Visual Studio [podpora předplatných](https://visualstudio.microsoft.com/subscriptions/support/).
 -  Máte dotaz k Visual Studio IDE, DevOps služby Azure nebo jiných produktů Visual Studio nebo služeb?  Navštivte [Visual Studio – podpora](https://visualstudio.microsoft.com/support/).

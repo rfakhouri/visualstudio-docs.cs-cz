@@ -16,12 +16,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 443e181edfb0fc60c73d528063a6e6a2be5ab62a
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: e06421955089a378cd20399280d066cc27bfe03f
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57868375"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232798"
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>EditorConfig nastavení konvence psaní kódu .NET
 
@@ -70,7 +70,7 @@ Severity | Efekt
 Následující seznam uvádí jazyka povolená nastavení stylu kódu:
 
 - Nastavení stylu kódu .NET
-    - ["This." a "Me." kvalifikátory](#this_and_me)
+    - ["This." a "Me." Kvalifikátory](#this_and_me)
         - DotNet\_styl\_kvalifikace\_for_field
         - dotnet\_style\_qualification\_for_property
         - DotNet\_styl\_kvalifikace\_for_method
@@ -140,10 +140,10 @@ Následující tabulka uvádí názvy pravidel, použitelné programovací jazyk
 
 | Název pravidla | Použitelné jazyky | Visual Studio výchozí hodnotu |
 | ----------- | -------------------- | ----------------------|
-| dotnet_style_qualification_for_field | C# a Visual Basic | FALSE: žádné |
-| dotnet_style_qualification_for_property | C# a Visual Basic | FALSE: žádné |
-| dotnet_style_qualification_for_method | C# a Visual Basic | FALSE: žádné |
-| dotnet_style_qualification_for_event | C# a Visual Basic | FALSE: žádné |
+| dotnet_style_qualification_for_field | C# a Visual Basic | FALSE: tiché nasazení |
+| dotnet_style_qualification_for_property | C# a Visual Basic | FALSE: tiché nasazení |
+| dotnet_style_qualification_for_method | C# a Visual Basic | FALSE: tiché nasazení |
+| dotnet_style_qualification_for_event | C# a Visual Basic | FALSE: tiché nasazení |
 
 **DotNet\_styl\_kvalifikace\_for_field**
 
@@ -256,8 +256,8 @@ V následující tabulce jsou uvedeny názvy pravidel, pravidel ID, použitelné
 
 | Název pravidla | ID pravidla | Použitelné jazyky | Visual Studio výchozí |
 | --------- | ------- | -------------------- | ----------------------|
-| dotnet_style_predefined_type_for_locals_parameters_members | IDE0012 a IDE0014 | C# a Visual Basic | true: žádné |
-| dotnet_style_predefined_type_for_member_access | IDE0013 a IDE0015 | C# a Visual Basic | true: žádné |
+| dotnet_style_predefined_type_for_locals_parameters_members | IDE0012 a IDE0014 | C# a Visual Basic | true: tiché nasazení |
+| dotnet_style_predefined_type_for_member_access | IDE0013 a IDE0015 | C# a Visual Basic | true: tiché nasazení |
 
 **DotNet\_styl\_předdefinované\_typ\_pro\_lokální\_parameters_members**
 
@@ -322,9 +322,9 @@ V následující tabulce jsou uvedeny názvy pravidel, pravidel ID, použitelné
 
 | Název pravidla | ID pravidla | Použitelné jazyky | Visual Studio výchozí | Visual Studio 2017 version |
 | --------- | ------- | -------------------- | ----------------------| ---------------- |
-| dotnet_style_require_accessibility_modifiers | IDE0040 | C# a Visual Basic | for_non_interface_members:none | 15.5 |
-| csharp_preferred_modifier_order | IDE0036 | C# | veřejné, privátní, chráněné, interní, static a extern, nový, virtuální, abstraktní, zapečetěné, přepsání, jen pro čtení, nebezpečný, ale volatilních, asynchronní: žádné | 15.5 |
-| visual_basic_preferred_modifier_order | IDE0036 | Visual Basic | Částečné výchozí, privátní, chráněné veřejné, Friend, NotOverridable, Overridable, MustOverride, přetížení, přepsání, MustInherit, NotInheritable, statická, sdílí, Shadows, ReadOnly, jen pro zápis, dimenze, Const, WithEvents, rozšíření, zužující, vlastní, Asynchronní: žádné | 15.5 |
+| dotnet_style_require_accessibility_modifiers | IDE0040 | C# a Visual Basic | for_non_interface_members:silent | 15.5 |
+| csharp_preferred_modifier_order | IDE0036 | C# | veřejné, privátní, chráněné, interní, static a extern, nový, virtuální, abstraktní, zapečetěné, přepsání, jen pro čtení, async:silent unsafe, ale volatilních, | 15.5 |
+| visual_basic_preferred_modifier_order | IDE0036 | Visual Basic | Částečné výchozí, privátní, chráněné veřejné, Friend, NotOverridable, Overridable, MustOverride, přetížení, přepsání, MustInherit, NotInheritable, statická, sdílí, Shadows, ReadOnly, jen pro zápis, dimenze, Const, WithEvents, rozšíření, zužující, vlastní, Async:silent | 15.5 |
 | dotnet_style_readonly_field | IDE0044 | C# a Visual Basic | true: návrh | 15.7 |
 
 **dotnet\_style\_require\_accessibility_modifiers**
@@ -430,10 +430,10 @@ V následující tabulce jsou uvedeny názvy pravidel, pravidel ID, použitelné
 
 | Název pravidla | ID pravidla | Použitelné jazyky | Visual Studio výchozí | Visual Studio 2017 version |
 | --------- | ------- | -------------------- | ----------------------| ---- |
-| dotnet_style_parentheses_in_arithmetic_binary_operators | IDE0047 | C# a Visual Basic | always_for_clarity:none | 15.8 |
-| dotnet_style_parentheses_in_relational_binary_operators | IDE0047 | C# a Visual Basic | always_for_clarity:none | 15.8 |
-| dotnet_style_parentheses_in_other_binary_operators | IDE0047 | C# a Visual Basic | always_for_clarity:none | 15.8 |
-| dotnet_style_parentheses_in_other_operators | IDE0047 | C# a Visual Basic | never_if_unnecessary: žádné | 15.8 |
+| dotnet_style_parentheses_in_arithmetic_binary_operators | IDE0047 | C# a Visual Basic | always_for_clarity:silent | 15.8 |
+| dotnet_style_parentheses_in_relational_binary_operators | IDE0047 | C# a Visual Basic | always_for_clarity:silent | 15.8 |
+| dotnet_style_parentheses_in_other_binary_operators | IDE0047 | C# a Visual Basic | always_for_clarity:silent | 15.8 |
+| dotnet_style_parentheses_in_other_operators | IDE0047 | C# a Visual Basic | never_if_unnecessary:silent | 15.8 |
 
 **DotNet\_styl\_závorky\_v\_aritmetické\_binary_operators**
 
@@ -532,10 +532,10 @@ Tato pravidla mohou být zobrazeny v *.editorconfig* to následujícím způsobe
 ```EditorConfig
 # CSharp and Visual Basic code style settings:
 [*.{cs,vb}]
-dotnet_style_parentheses_in_arithmetic_binary_operators = always_for_clarity:none
-dotnet_style_parentheses_in_relational_binary_operators = always_for_clarity:none
-dotnet_style_parentheses_in_other_binary_operators = always_for_clarity:none
-dotnet_style_parentheses_in_other_operators = never_if_unnecessary:none
+dotnet_style_parentheses_in_arithmetic_binary_operators = always_for_clarity:silent
+dotnet_style_parentheses_in_relational_binary_operators = always_for_clarity:silent
+dotnet_style_parentheses_in_other_binary_operators = always_for_clarity:silent
+dotnet_style_parentheses_in_other_operators = never_if_unnecessary:silent
 ```
 
 #### <a name="expression_level"></a>Předvolby výrazu úrovni
@@ -551,10 +551,10 @@ V následující tabulce jsou uvedeny názvy pravidel, pravidel ID, použitelné
 | dotnet_style_explicit_tuple_names | IDE0033 | C# 7.0 + a Visual Basic 15 + | true: návrh | První verze |
 | dotnet_style_prefer_inferred_tuple_names | IDE0037 | C# 7.1 + a Visual Basic 15 + | true: návrh | 15.6 |
 | dotnet_style_prefer_inferred_anonymous_type_member_names | IDE0037 | C# a Visual Basic | true: návrh | 15.6 |
-| dotnet_style_prefer_auto_properties | IDE0032 | C# a Visual Basic | true: žádné | 15.7 |
+| dotnet_style_prefer_auto_properties | IDE0032 | C# a Visual Basic | true: tiché nasazení | 15.7 |
 | dotnet_style_prefer_is_null_check_over_reference_equality_method | IDE0041 | C# a Visual Basic | true: návrh | 15.7 |
-| dotnet_style_prefer_conditional_expression_over_assignment | IDE0045 | C# a Visual Basic | true: žádné | 15.8 |
-| dotnet_style_prefer_conditional_expression_over_return | IDE0046 | C# a Visual Basic | true: žádné | 15.8 |
+| dotnet_style_prefer_conditional_expression_over_assignment | IDE0045 | C# a Visual Basic | true: tiché nasazení | 15.8 |
+| dotnet_style_prefer_conditional_expression_over_return | IDE0046 | C# a Visual Basic | true: tiché nasazení | 15.8 |
 
 **dotnet\_style\_object_initializer**
 
@@ -787,7 +787,7 @@ Else
 End If
 ```
 
-**dotnet\_style\_prefer\_conditional\_expression\_over_return**
+**DotNet\_styl\_raději\_podmíněného\_výraz\_over_return**
 
 - Pokud toto pravidlo je nastaven na **true**, raději příkazy na používání Ternární podmíněné přes if-else – příkaz return.
 - Pokud toto pravidlo je nastaven na **false**, dáváte přednost návratovými příkazy na používání přes Ternární podmínka if-else – příkaz.
@@ -831,7 +831,7 @@ dotnet_style_collection_initializer = true:suggestion
 dotnet_style_explicit_tuple_names = true:suggestion
 dotnet_style_prefer_inferred_tuple_names = true:suggestion
 dotnet_style_prefer_inferred_anonymous_type_member_names = true:suggestion
-dotnet_style_prefer_auto_properties = true:none
+dotnet_style_prefer_auto_properties = true:silent
 dotnet_style_prefer_conditional_expression_over_assignment = true:suggestion
 dotnet_style_prefer_conditional_expression_over_return = true:suggestion
 ```
@@ -918,9 +918,9 @@ Následující tabulka uvádí názvy pravidel, použitelné programovací jazyk
 
 | Název pravidla | Použitelné jazyky | Visual Studio výchozí |
 | ----------- | -------------------- | ----------------------|
-| csharp_style_var_for_built_in_types | C# | true: žádné |
-| csharp_style_var_when_type_is_apparent | C# | true: žádné |
-| csharp_style_var_elsewhere | C# | true: žádné |
+| csharp_style_var_for_built_in_types | C# | true: tiché nasazení |
+| csharp_style_var_when_type_is_apparent | C# | true: tiché nasazení |
+| csharp_style_var_elsewhere | C# | true: tiché nasazení |
 
 **csharp\_style\_var\_for\_built\_in_types**
 
@@ -985,18 +985,18 @@ V následující tabulce jsou uvedeny názvy pravidel, pravidel ID, příslušn�
 
 | Název pravidla | ID pravidla | Použitelné jazyky | Visual Studio výchozí | Visual Studio 2017 version |
 | --------- | ------- | -------------------- | ----------------------| ---------------- |
-| csharp_style_expression_bodied_methods | IDE0022 | C# 6.0 + | FALSE: žádné | 15.3 |
-| csharp_style_expression_bodied_constructors | IDE0021 | C# 7.0 + | FALSE: žádné | 15.3 |
-| csharp_style_expression_bodied_operators | IDE0023 a IDE0024 | C# 7.0 + | FALSE: žádné | 15.3 |
-| csharp_style_expression_bodied_properties | IDE0025 | C# 7.0 + | true: žádné | 15.3 |
-| csharp_style_expression_bodied_indexers | IDE0026 | C# 7.0 + | true: žádné | 15.3 |
-| csharp_style_expression_bodied_accessors | IDE0027 | C# 7.0 + | true: žádné | 15.3 |
+| csharp_style_expression_bodied_methods | IDE0022 | C# 6.0 + | FALSE: tiché nasazení | 15.3 |
+| csharp_style_expression_bodied_constructors | IDE0021 | C# 7.0 + | FALSE: tiché nasazení | 15.3 |
+| csharp_style_expression_bodied_operators | IDE0023 a IDE0024 | C# 7.0 + | FALSE: tiché nasazení | 15.3 |
+| csharp_style_expression_bodied_properties | IDE0025 | C# 7.0 + | true: tiché nasazení | 15.3 |
+| csharp_style_expression_bodied_indexers | IDE0026 | C# 7.0 + | true: tiché nasazení | 15.3 |
+| csharp_style_expression_bodied_accessors | IDE0027 | C# 7.0 + | true: tiché nasazení | 15.3 |
 
 **csharp\_style\_expression\_bodied_methods**
 
 Toto pravidlo je možné zadat hodnoty v následující tabulce:
 
-| Hodnota | Popis |
+| Value | Popis |
 | ----- |:----------- |
 | true | Preferovat členy s výrazem v těle metody |
 | when_on_single_line | Preferovat členy s výrazem v těle metody, když bude se jednat o jeden řádek |
@@ -1036,7 +1036,7 @@ public Customer(int age) { Age = age; }
 
 Toto pravidlo je možné zadat hodnoty v následující tabulce:
 
-| Hodnota | Popis |
+| Value | Popis |
 | ----- |:----------- |
 | true | Preferovat členové tvoření pro operátory |
 | when_on_single_line | Preferovat členové tvoření pro operátory, když bude se jednat o jeden řádek |
@@ -1058,7 +1058,7 @@ public static ComplexNumber operator + (ComplexNumber c1, ComplexNumber c2)
 
 Toto pravidlo je možné zadat hodnoty v následující tabulce:
 
-| Hodnota | Popis |
+| Value | Popis |
 | ----- |:----------- |
 | true | Preferovat s výrazem v těle členy pro vlastnosti |
 | when_on_single_line | Raději s výrazem v těle členy pro vlastnosti, když bude se jednat o jeden řádek |
@@ -1078,7 +1078,7 @@ public int Age { get { return _age; }}
 
 Toto pravidlo je možné zadat hodnoty v následující tabulce:
 
-| Hodnota | Popis |
+| Value | Popis |
 | ----- |:----------- |
 | true | Preferovat členové tvoření pro indexery |
 | when_on_single_line | Členové tvoření pro indexery dáváte přednost, když bude se jednat o jeden řádek |
@@ -1119,9 +1119,9 @@ Příklad *.editorconfig* souboru:
 ```EditorConfig
 # CSharp code style settings:
 [*.cs]
-csharp_style_expression_bodied_methods = false:none
-csharp_style_expression_bodied_constructors = false:none
-csharp_style_expression_bodied_operators = false:none
+csharp_style_expression_bodied_methods = false:silent
+csharp_style_expression_bodied_constructors = false:silent
+csharp_style_expression_bodied_operators = false:silent
 csharp_style_expression_bodied_properties = true:suggestion
 csharp_style_expression_bodied_indexers = true:suggestion
 csharp_style_expression_bodied_accessors = true:suggestion
@@ -1264,7 +1264,7 @@ Console.WriteLine($"{person.name} {person.age}");
 Console.WriteLine($"{point.x} {point.y}");
 ```
 
-**csharp\_style\_pattern\_local\_over\_anonymous_function**
+**CSharp\_styl\_vzor\_místní\_přes\_anonymous_function**
 
 - Pokud toto pravidlo je nastaven na **true**, dáváte přednost lokální funkce přes anonymní funkce.
 - Pokud toto pravidlo je nastaven na **false**, dáváte přednost anonymní funkce přes lokální funkce.
@@ -1355,9 +1355,9 @@ V následující tabulce jsou uvedeny název pravidla, ID pravidla, příslušn�
 
 | Název pravidla | ID pravidla | Použitelné jazyky | Visual Studio výchozí | Visual Studio 2017 version |
 | --------- | ------- | -------------------- | ----------------------| ---------------- |
-| csharp_prefer_braces | IDE0011 | C# | true: žádné | 15.3 |
+| csharp_prefer_braces | IDE0011 | C# | true: tiché nasazení | 15.3 |
 
-**csharp\_prefer\_braces**
+**CSharp\_raději\_složené závorky**
 
 - Pokud toto pravidlo je nastaven na **true**, preferovat složené závorky i pro jeden řádek kódu.
 - Pokud toto pravidlo je nastaven na **false**, dáváte přednost žádné složené závorky, pokud může.
@@ -1377,7 +1377,7 @@ Příklad *.editorconfig* souboru:
 ```EditorConfig
 # CSharp code style settings:
 [*.cs]
-csharp_prefer_braces = true:none
+csharp_prefer_braces = true:silent
 ```
 
 ## <a name="formatting-conventions"></a>Konvence formátování
@@ -1438,7 +1438,7 @@ V následující tabulce jsou uvedeny název pravidla, použitelné jazyky, výc
 | dotnet_sort_system_directives_first | C# a Visual Basic | true | 15.3 |
 | dotnet_separate_import_directive_groups | C# a Visual Basic | false | 15.5 |
 
-**dotnet\_sort\_system\_directives_first**
+**DotNet\_řazení\_systému\_directives_first**
 
 - Pokud toto pravidlo je nastaven na **true**řazení direktiv using abecedně System.* a umístit je před další direktivy using.
 - Pokud toto pravidlo je nastaven na **false**, neumísťujte System.* pomocí direktivy před dalšími direktiv using.
@@ -1465,7 +1465,7 @@ Příklad *.editorconfig* souboru:
 dotnet_sort_system_directives_first = true
 ```
 
-**DotNet\_samostatné\_importovat\_směrnice\_skupiny**
+**dotnet\_separate\_import\_directive\_groups**
 
 - Pokud toto pravidlo je nastaven na **true**, prázdný řádek mezi skupiny direktiv using umístit.
 - Pokud toto pravidlo je nastaven na **false**, neumísťujte prázdný řádek mezi skupiny direktiv using.
@@ -1517,7 +1517,7 @@ V následující tabulce jsou uvedeny "nový řádek" názvy pravidel použiteln
 
 Toto pravidlo se týká, zda levou složenou závorku `{` by měly být umístěny na stejném řádku jako předchozí kód, nebo na nový řádek. Pro toto pravidlo nezadáte **true** nebo **false**. Místo toho zadáte **všechny**, **žádný**, nebo jeden nebo více prvky kódu, jako **metody** nebo **vlastnosti**, chcete-li definovat, kdy by měla být toto pravidlo použít. Úplný seznam povolených hodnot je uveden v následující tabulce:
 
-| Hodnota | Popis
+| Value | Popis
 | ------------- |:-------------|
 | přístupové objekty, anonymous_methods, anonymous_types, control_blocks, události, indexery, výrazů lambda, local_functions, metody, object_collection_array_initializers, vlastnosti, typy.<br>(Pro více typů, oddělte ","). | Požadování složených na nový řádek pro zadaný kód elementy (označované také jako "Allman" styl) |
 | všechny | Požadování složených na nový řádek pro všechny výrazy ("Allman" styl) |
@@ -1591,7 +1591,7 @@ try {
 }
 ```
 
-**csharp\_new\_line\_before_finally**
+**CSharp\_nové\_řádku\_before_finally**
 
 - Pokud toto pravidlo je nastaven na **true**, vyžadují `finally` příkazy následovat pravou složenou závorku na nový řádek.
 - Pokud toto pravidlo je nastaven na **false**, vyžadují `finally` příkazy na stejném řádku jako pravou složenou závorku.
@@ -1620,7 +1620,7 @@ try {
 }
 ```
 
-**csharp\_new\_line\_before\_members\_in\_object_initializers**
+**CSharp\_nové\_řádku\_před\_členy\_v\_object_initializers**
 
 - Pokud toto pravidlo je nastaven na **true**, vyžadují členy inicializátory objektů na samostatných řádcích.
 - Pokud toto pravidlo je nastaven na **false**, vyžadují členy inicializátory objektů na stejném řádku.
@@ -1782,7 +1782,7 @@ default:
 
 Toto pravidlo nepřijímá **true** nebo **false** hodnota; místo toho přijímá hodnotu z následující tabulky:
 
-| Hodnota | Popis |
+| Value | Popis |
 | ----- |:----------- |
 | flush_left | Popisky jsou umístěny ve sloupci nejvíce vlevo |
 | one_less_than_current | Popisky jsou umístěny na jednom méně odsazení aktuálního kontextu |
@@ -1925,7 +1925,7 @@ MyMethod(argument);
 
 Toto pravidlo je možné zadat jednu nebo více hodnot z následující tabulky:
 
-| Hodnota | Popis |
+| Value | Popis |
 | ----- |:------------|
 | control_flow_statements | Vložit mezeru mezi závorky řídícího toku výrazů |
 | výrazy | Vložit mezeru mezi závorky výrazů |
@@ -2008,11 +2008,11 @@ class C :I
 }
 ```
 
-**csharp\_space\_around\_binary_operators**
+**CSharp\_místo\_kolem\_binary_operators**
 
 Toto pravidlo je možné zadat jednu hodnotu z následující tabulky:
 
-| Hodnota | Popis |
+| Value | Popis |
 | ----- |:------------|
 | before_and_after | Vložit mezeru před a za binární operátor |
 | žádná | Odebrat mezery před a za binární operátor |
@@ -2229,14 +2229,14 @@ dotnet_sort_system_directives_first = true
 dotnet_separate_import_directive_groups = false
 
 # this. preferences
-dotnet_style_qualification_for_field = false:none
-dotnet_style_qualification_for_property = false:none
-dotnet_style_qualification_for_method = false:none
-dotnet_style_qualification_for_event = false:none
+dotnet_style_qualification_for_field = false:silent
+dotnet_style_qualification_for_property = false:silent
+dotnet_style_qualification_for_method = false:silent
+dotnet_style_qualification_for_event = false:silent
 
 # Language keywords vs BCL types preferences
-dotnet_style_predefined_type_for_locals_parameters_members = true:none
-dotnet_style_predefined_type_for_member_access = true:none
+dotnet_style_predefined_type_for_locals_parameters_members = true:silent
+dotnet_style_predefined_type_for_member_access = true:silent
 
 # Parentheses preferences
 dotnet_style_parentheses_in_arithmetic_binary_operators = always_for_clarity:silent
@@ -2245,7 +2245,7 @@ dotnet_style_parentheses_in_other_binary_operators = always_for_clarity:silent
 dotnet_style_parentheses_in_other_operators = never_if_unnecessary:silent
 
 # Modifier preferences
-dotnet_style_require_accessibility_modifiers = for_non_interface_members:none
+dotnet_style_require_accessibility_modifiers = for_non_interface_members:silent
 dotnet_style_readonly_field = true:suggestion
 
 # Expression-level preferences
@@ -2282,17 +2282,17 @@ dotnet_naming_symbols.constant_fields.required_modifiers          = const
 
 [*.cs]
 # var preferences
-csharp_style_var_for_built_in_types = true:none
-csharp_style_var_when_type_is_apparent = true:none
-csharp_style_var_elsewhere = true:none
+csharp_style_var_for_built_in_types = true:silent
+csharp_style_var_when_type_is_apparent = true:silent
+csharp_style_var_elsewhere = true:silent
 
 # Expression-bodied members
-csharp_style_expression_bodied_methods = false:none
-csharp_style_expression_bodied_constructors = false:none
-csharp_style_expression_bodied_operators = false:none
-csharp_style_expression_bodied_properties = true:none
-csharp_style_expression_bodied_indexers = true:none
-csharp_style_expression_bodied_accessors = true:none
+csharp_style_expression_bodied_methods = false:silent
+csharp_style_expression_bodied_constructors = false:silent
+csharp_style_expression_bodied_operators = false:silent
+csharp_style_expression_bodied_properties = true:silent
+csharp_style_expression_bodied_indexers = true:silent
+csharp_style_expression_bodied_accessors = true:silent
 
 # Pattern-matching preferences
 csharp_style_pattern_matching_over_is_with_cast_check = true:suggestion
@@ -2306,7 +2306,7 @@ csharp_style_conditional_delegate_call = true:suggestion
 csharp_preferred_modifier_order = public,private,protected,internal,static,extern,new,virtual,abstract,sealed,override,readonly,unsafe,volatile,async:suggestion
 
 # Expression-level preferences
-csharp_prefer_braces = true:none
+csharp_prefer_braces = true:silent
 csharp_style_deconstructed_variable_declaration = true:suggestion
 csharp_prefer_simple_default_expression = true:suggestion
 csharp_style_pattern_local_over_anonymous_function = true:suggestion

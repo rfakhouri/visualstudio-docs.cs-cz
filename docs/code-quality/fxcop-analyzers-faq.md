@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1634731e68c395dea5a14876cf67944714cb4c3a
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 6d8e3f3288c6a64b35a1de59fe0f317b6283b805
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57222480"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232551"
 ---
 # <a name="frequently-asked-questions-about-fxcop-and-fxcop-analyzers"></a>Nejčastější dotazy ohledně FxCop a FxCop analyzátory
 
@@ -41,8 +41,16 @@ Ne. **RunCodeAnalysis** vlastnost v souboru projektu (například *.csproj*) slo
 
 Nejprve spustit analyzátory FxCop [nainstalujte balíček NuGet](install-fxcop-analyzers.md) pro ně. Pak sestavení projektu nebo řešení v sadě Visual Studio nebo pomocí nástroje msbuild. Upozornění a chyby, které generují analyzátory FxCop se zobrazí v **seznam chyb** nebo příkazové okno.
 
+## <a name="i-get-warning-ca0507-even-after-ive-installed-the-fxcop-analyzers-nuget-package"></a>Můžu získat upozornění CA0507 i po instalaci balíčku NuGet analyzátory FxCop
+
+Pokud jste nainstalovali analyzátory FxCop, ale i nadále získat upozornění CA0507 **"Spustit analýzu kódu" je zastaralá a místo toho použití analyzátory FxCop, které se spustí během sestavování**, je nutné nastavit **RunCodeAnalysis**vlastnost msbuild v souboru projektu **false**. Analýza statického kódu, jinak se spustí po každém sestavení.
+
+```xml
+<RunCodeAnalysis>false</RunCodeAnalysis>
+```
+
 ## <a name="see-also"></a>Viz také:
 
 - [Přehled analyzátory pro .NET Compiler Platform](roslyn-analyzers-overview.md)
 - [Začínáme s analyzátory](fxcop-analyzers.yml)
-- [Nainstalujte analyzátory FxCop](install-fxcop-analyzers.md)
+- [Instalace analyzátorů FxCop](install-fxcop-analyzers.md)

@@ -9,21 +9,28 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: af930f983ad328dac16e5eec1fb0cf2650f7681a
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 62ea3402a053ed57280ddbc946d79d27ab35f944
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867852"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232707"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>Nalezení změn kódu a další historie pomocí CodeLensu
 
 CodeLens vám umožňuje soustředit se na svou práci při můžete zjistit, co se stalo se váš kód&ndash;bez opuštění editoru. Můžete najít odkazy na část kódu, změny kódu, propojené chyby, pracovní položky, revize kódu a testy jednotek.
 
+::: moniker range=">=vs-2019"
+
+> [!NOTE]
+> Modul správy zdrojových kódů CodeLens indikátory nejsou k dispozici v aplikaci Visual Studio Community edition.
+
+::: moniker-end
+
 ::: moniker range="vs-2017"
 
 > [!NOTE]
-> CodeLens je k dispozici pouze v edicích sady Visual Studio Enterprise a Visual Studio Professional. Není k dispozici v aplikaci Visual Studio Community edition.
+> CodeLens je k dispozici pouze v edicích sady Visual Studio Enterprise a Professional. Není k dispozici v aplikaci Visual Studio Community edition.
 
 ::: moniker-end
 
@@ -60,15 +67,15 @@ Chcete-li zobrazit vztahy mezi kódem a jeho odkazy [Vytvořte mapu kódu](../mo
 
 ![Funkce CodeLens – odkazy na mapě kódu](../ide/media/codelensmappedreferences.png)
 
-## <a name="a-namefind-code-historyfind-changes-in-your-code"></a><a name="find-code-history"/>Vyhledat změny v kódu
+## <a name="find-changes-in-your-code"></a>Vyhledat změny v kódu
 
 Prozkoumejte historii vašeho kódu a zjistěte, co se stalo se váš kód. Nebo můžete zkontrolovat změny předtím, než se sloučí do kódu to vám umožní lépe pochopit změny v další větve, jak může ovlivnit váš kód.
 
 Potřebuješ:
 
-- Visual Studio 2019 (nebo sady Visual Studio 2017 Enterprise nebo Professional edition)
+- Edice sady Visual Studio Enterprise nebo Professional
 
-- Team Foundation Server 2013 nebo novější, Azure DevOps Services nebo Git
+- Azure DevOps služby Team Foundation Server 2013 nebo novější a Git
 
 - [Skype pro firmy](/skypeforbusiness/) kontaktovat týmem z editoru kódu
 
@@ -224,11 +231,11 @@ Může zjišťovat testy jednotek, které existují bez spuštění kódu jazyka
 
      ![Funkce CodeLens - přejít k definici testu jednotek](../ide/media/codelens-unit-test-definition.png)
 
-6. Chcete-li zobrazit výsledky testu, zvolte indikátor stavu testu (![ikona selhání testu](../ide/media/codelenstestfailedicon.png) nebo ![test prošel ikonu](../ide/media/codelenstestpassedicon.png)), nebo stiskněte klávesu **Alt**+**1**.
+6. Chcete-li zobrazit výsledky testu, zvolte indikátor stavu testu (![ikona selhání testu](../ide/media/codelenstestfailedicon.png) nebo ![test prošel ikonu](../ide/media/codelenstestpassedicon.png)) nebo stiskněte klávesu **Alt**+**1**.
 
      ![Funkce CodeLens – viz výsledky testů jednotek](../ide/media/codelens-unit-test-result.png)
 
-7. Pokud chcete zobrazit, kolik lidí změnilo tento test, kdo změnil nebo kolik změny byly provedeny s tímto testem [najít historii vašeho kódu](#find-code-history) a propojené položky.
+7. Pokud chcete zobrazit, kolik lidí změnilo tento test, kdo změnil nebo kolik změny byly provedeny s tímto testem [najít historii vašeho kódu](#find-changes-in-your-code) a propojené položky.
 
 ## <a name="keyboard-shortcuts"></a>Klávesové zkratky
 
@@ -241,7 +248,7 @@ Chcete-li vybrat ukazatele pomocí klávesnice, stiskněte a podržte **Alt** kl
 
 ## <a name="q--a"></a>Dotazy a odpovědi
 
-### <a name="q-how-do-i-turn-codelens-off-or-on-or-choose-which-indicators-to-see"></a>DOTAZ: Jak funkce CodeLens zapnutí nebo vypnutí, nebo zvolte které indikátory zobrazíte?
+### <a name="q-how-do-i-turn-codelens-off-or-on-or-choose-which-indicators-to-see"></a>DOTAZ: Jak funkce CodeLens zapnutí nebo vypnutí nebo zvolte které indikátory zobrazíte?
 
 **ODPOVĚĎ:**  Můžete zapnout ukazatele nebo vypnutí, s výjimkou indikátor odkazů. Přejděte na **nástroje** > **možnosti** > **textový Editor** > **všechny jazyky**  >  **CodeLens**.
 
@@ -264,6 +271,20 @@ Indikátory CodeLens na úrovni souborů zapněte a vypnout pomocí ikony šipky
 - Indikátory související s DevOps aplikací zobrazí pouze v případě, že jsou pracovní položky propojeny s kódem a v případě, že máte oprávnění k otevření propojené pracovní položky. Potvrďte, že máte [oprávnění člena týmu](/azure/devops/organizations/security/view-permissions?view=vsts).
 
 - Pokud kód aplikace nemá testování částí, nejsou zobrazeny indikátory testu jednotek. Indikátory stavu testu se automaticky zobrazí v projektech testů. Pokud víte, že váš kód aplikace má testování částí, ale nejsou zobrazeny indikátory testu, zkuste sestavit řešení (**Ctrl**+**Shift**+**B**).
+
+::: moniker range=">=vs-2019"
+
+> [!TIP]
+> Indikátory ovládacího prvku zdroje nejsou k dispozici v aplikaci Visual Studio Community edition.
+
+::: moniker-end
+
+::: moniker range="vs-2017"
+
+> [!TIP]
+> CodeLens není k dispozici v aplikaci Visual Studio Community edition.
+
+::: moniker-end
 
 ### <a name="q-why-dont-i-see-the-work-item-details-for-a-commit"></a>DOTAZ: Proč nevidím podrobnosti pracovní položky pro potvrzení změn?
 
@@ -313,11 +334,11 @@ Použití klávesnice:
 
 - **Odkazy na**: Tento indikátor se aktualizuje automaticky při změně kódu. Pokud **odkazy** indikátor je ukotven jako samostatné okno, aktualizovat tak, že vyberete indikátoru **aktualizovat**:
 
-     ![Aktualizovat odkazy CodeLens](../ide/media/codelensviewreferencesdocked.png)
+   ![Aktualizovat odkazy CodeLens](../ide/media/codelensviewreferencesdocked.png)
 
 - **Tým**: Tyto indikátory aktualizovat tak, že vyberete **aktualizovat indikátory týmu funkce CodeLens** v místní nabídce:
 
-     ![Aktualizujte indikátory týmu funkce CodeLens položky nabídky](../ide/media/codelensrefreshindicatorsfromcode.png)
+   ![Aktualizujte indikátory týmu funkce CodeLens položky nabídky](../ide/media/codelensrefreshindicatorsfromcode.png)
 
 - **Test**: [Vyhledání testů jednotek pro kód](#associated-unit-tests) aktualizovat **Test** indikátoru.
 

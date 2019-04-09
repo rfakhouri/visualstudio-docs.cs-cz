@@ -11,12 +11,12 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: e96701f6c6dfe53caaa82a642139ad6dbd9fef08
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.openlocfilehash: 3000510c6bb6079629a3df05909417593569c932
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58794454"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232259"
 ---
 # <a name="javascript-and-typescript-in-visual-studio-2019"></a>JavaScript a TypeScript ve Visual Studio 2019
 
@@ -35,7 +35,7 @@ Obnovit starší službě jazyka JavaScript je již k dispozici. Uživatelé te�
 Visual Studio 2019 poskytuje několik možností pro integraci TypeScript kompilace do projektu:
 
 * [Balíček TypeScript NuGet](https://www.nuget.org/packages/Microsoft.TypeScript.MSBuild). Při instalaci balíčku NuGet pro TypeScript 3.2 nebo vyšší do projektu bude načten odpovídající verze služby jazyka TypeScript v editoru.
-* TypeScript SDK, k dispozici ve výchozím nastavení v instalačním programu sady Visual Studio i jako samostatný stažení sady SDK z [VS Marketplace](https://marketplace.visualstudio.com/items?itemName=TypeScriptTeam.typescript-331-vs2017).
+* TypeScript SDK, k dispozici v instalačním programu sady Visual Studio, jakož i SDK stáhnout samostatně z ve výchozím nastavení [VS Marketplace](https://marketplace.visualstudio.com/items?itemName=TypeScriptTeam.typescript-331-vs2017).
 * [Balíček npm TypeScript](https://www.npmjs.com/package/typescript). Při instalaci balíčku npm pro TypeScript 2.1 nebo vyšší do projektu bude načten odpovídající verze služby jazyka TypeScript v editoru.
 
 Pro projekty vyvinuté v aplikaci Visual Studio 2019 doporučujeme vám používat balíčky npm a TypeScript NuGet pro větší přenositelnost napříč různými platformami a prostředí.

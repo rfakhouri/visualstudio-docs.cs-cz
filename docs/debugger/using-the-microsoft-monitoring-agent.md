@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d797dbd922c85598c4908abc6eb8adc5c43c365
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 335782f93d7bd0cd9a82c258a0fee3b87d50e72b
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56716568"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232577"
 ---
 # <a name="using-the-microsoft-monitoring-agent-c-visual-basic"></a>Použití služby Microsoft Monitoring Agent (C#, Visual Basic)
 
@@ -126,7 +126,7 @@ Místně můžete monitorovat webové aplikace ASP.NET hostované službou IIS a
 
      Tady je příklad, který používá cesta služby IIS a zjednodušené **monitorování** režimu:
 
-     **PS C:>Start-WebApplicationMonitoring "IIS:sitesFabrikamFabrikamFiber.Web" Monitor "C:IntelliTraceLogs"**
+     **PS C: > Start-WebApplicationMonitoring "IIS:sitesFabrikamFabrikamFiber.Web" sledovat "C:IntelliTraceLogs"**
 
      Jakmile bude monitorování zahájeno, se může zobrazit pozastavení agenta sledování Microsoft během restartování aplikace.
 
@@ -211,21 +211,22 @@ Místně můžete monitorovat webové aplikace ASP.NET hostované službou IIS a
    **ODPOVĚĎ:** Ve výchozím nastavení plány shromažďování dat vylučují moduly nastavením `isExclusionList` atribut `true`. Však to může být stále shromažďování dat z modulů, které nesplňují kritéria v seznamu nebo, které vás nemusejí zajímat, například moduly třetích stran nebo open source.
 
 #### <a name="q-what-values-does-the-agent-collect"></a>DOTAZ: Jaké hodnoty agent shromažďuje?
- **ODPOVĚĎ:** Pokud chcete snížit dopad na výkon, agent shromažďuje pouze tyto hodnoty:
+
+**ODPOVĚĎ:** Pokud chcete snížit dopad na výkon, agent shromažďuje pouze tyto hodnoty:
 
 - Primitivní datové typy, které jsou předány do a vracené z metod
 
 - Předán primitivních datových typů v polích objektů nejvyšší úrovně a vracené z metod
 
-  Předpokládejme například, že máte `AlterEmployee` podpis metody, která přijímá celočíselné `id` a `Employee` objekt `oldemployee`:
+Předpokládejme například, že máte `AlterEmployee` podpis metody, která přijímá celočíselné `id` a `Employee` objekt `oldemployee`:
 
-  `public Employee AlterEmployee(int id, Employee oldemployee)`
+`public Employee AlterEmployee(int id, Employee oldemployee)`
 
-  `Employee` Typ má následující atributy: `Id`, `Name`, a `HomeAddress`. Existuje vztah přidružení mezi `Employee` a `Address` typu.
+`Employee` Typ má následující atributy: `Id`, `Name`, a `HomeAddress`. Existuje vztah přidružení mezi `Employee` a `Address` typu.
 
-  ![Vztah mezi zaměstnanci a adresa](../debugger/media/employeeaddressrelationship.png "EmployeeAddressRelationship")
+![Vztah mezi zaměstnanci a adresa](../debugger/media/employeeaddressrelationship.png "EmployeeAddressRelationship")
 
-  Agent zaznamenává hodnoty `id`, `Employee.Id`, `Employee.Name` a `Employee` objekt vrácený z `AlterEmployee` metody. Agent však nezaznamenává informace o `Address` objektu, než zda měl hodnotu null nebo ne. Agent také nezaznamenává data o místních proměnných v `AlterEmployee` metoda Pokud jiné metody nepoužívají tyto místní proměnné jako parametry v tomto okamžiku jsou zaznamenávány jako parametry metod.
+Agent zaznamenává hodnoty `id`, `Employee.Id`, `Employee.Name` a `Employee` objekt vrácený z `AlterEmployee` metody. Agent však nezaznamenává informace o `Address` objektu, než zda měl hodnotu null nebo ne. Agent také nezaznamenává data o místních proměnných v `AlterEmployee` metoda Pokud jiné metody nepoužívají tyto místní proměnné jako parametry v tomto okamžiku jsou zaznamenávány jako parametry metod.
 
 ##  <a name="SaveEvents"></a> Krok 3: Uložení zaznamenaných událostí
  Když najdete chybu nebo potíže s výkonem, uložte zaznamenané události do protokolu IntelliTrace. Agent vytvoří protokol pouze v případě, že zaznamenal události. Pokud používáte System Center 2012, přečtěte si [monitorování webových aplikací pomocí agenta Microsoft Monitoring Agent](http://technet.microsoft.com/library/dn465157.aspx).

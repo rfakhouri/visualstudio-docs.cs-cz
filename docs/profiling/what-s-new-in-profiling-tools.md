@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: 0c05595c311367ca94e3327afd28bc5fa05f7ec2
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 8fcd01198877ef06eb398ce99fe467deb923546c
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57871075"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232467"
 ---
 # <a name="whats-new-in-profiling-tools-in-includevsdev15miscincludesvsdev15mdmd"></a>Co je nového v nástrojích pro profilaci [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]
 
@@ -28,11 +28,11 @@ Další informace najdete v tématu [poznámky k verzi pro [!include[vs_dev15](.
 
 A **Souhrn** přidala karta nástroje, které vám umožní zaměřit se na klíčové oblasti pro analýzu výkonu. Tato karta ukazuje, kolik události došlo, umožňuje pořizovat snímky haldy a umožňuje rychle Povolit shromažďování dat o využití procesoru. Toto zobrazení uvádí některé [Application insights](/azure/azure-monitor/app/visual-studio) nebo [Analýza uživatelského prostředí](/visualstudio/releasenotes/vs2017-relnotes) události. Pro Visual Studio Enterprise, je navíc toto zobrazení také zobrazuje události IntelliTrace.
 
-![Karta Souhrn nástroje Diagnostika](../profiling/media/DiagToolsSummaryTab-2.png "DiagToolsSummaryTab")
+![Karta Souhrn nástroje Diagnostika](../profiling/media/diag-tools-summary-tab-2.png "DiagToolsSummaryTab")
 
 Nástroj využití procesoru je [nové vizualizace](../profiling/Beginners-Guide-to-Performance-Profiling.md) ke snadnější identifikaci funkce, které bývají nejčastějším způsobovat problémy s výkonem. Nové **volající/volaný** zobrazení umožňuje prozkoumat náklady na volání do a z vybrané funkce.
 
-![Diagnostické nástroje volající/volaný zobrazení](../profiling/media/DiagToolsCallerCallee.png "DiagToolsCallerCallee")
+![Diagnostické nástroje volající/volaný zobrazení](../profiling/media/diag-tools-caller-callee-2.png "DiagToolsCallerCallee")
 
 ## <a name="see-also"></a>Viz také:
 

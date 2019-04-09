@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: aa10945e87022546240d05304f59478b33bb5596
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e968cef6491e1c24d98e5f64248b5104db8c5b65
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55916762"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232313"
 ---
 # <a name="ca1502-avoid-excessive-complexity"></a>CA1502: Vyhněte se nadměrné složitosti
 
@@ -34,7 +34,7 @@ ms.locfileid: "55916762"
 |Kategorie|Microsoft.Maintainability|
 |Narušující změna|Nenarušující|
 
-## <a name="cause"></a>příčina
+## <a name="cause"></a>Příčina
 
 Metoda má nadměrnou cyklomatická složitost.
 
@@ -44,11 +44,11 @@ Metoda má nadměrnou cyklomatická složitost.
 
 cyklomatická složitost = počtu hran – počet uzlů + 1
 
-Pokud uzel představuje bod větve logiky a hraniční představuje čáry mezi uzly.
+A *uzel* představuje bod větve logiky a *edge* reprezentuje řádek mezi uzly.
 
 Pravidlo oznámí porušení cyklomatická složitost po více než 25.
 
-Další informace o metriky kódu na [měření složitosti a udržovatelnosti spravovaného kódu](../code-quality/code-metrics-values.md),
+Další informace o metriky kódu na [měření složitost spravovaného kódu](../code-quality/code-metrics-values.md).
 
 ## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
 

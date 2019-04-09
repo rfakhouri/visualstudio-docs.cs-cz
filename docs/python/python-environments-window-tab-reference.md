@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d8e60b92b7c76c22c35edbe42d60644583f37123
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: ce960b7432a1cd98be6f5bdf94c7487679e40d83
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355773"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232603"
 ---
 # <a name="python-environments-window-tabs-reference"></a>Odkaz na kartách okno prostředí Pythonu
 
@@ -60,7 +60,7 @@ V pracovním postupu vaší každý den používáte interaktivních oken, pravd
 
 Spouštěcí skripty obsahovat kód, který **interaktivní** okno načte a spustí automaticky, včetně importy, definice funkcí a prakticky cokoli jiného. Tyto skripty jsou odkazovány dvěma způsoby:
 
-1. Při instalaci prostředí sady Visual Studio vytvoří složku *Documents\Visual Studio <version>\Python skripty\\\<prostředí >* kde &lt;verze&gt; je verze sady Visual Studio (například 2017 nebo 2019) a &lt;prostředí&gt; odpovídá názvu prostředí. Můžete snadno přejít do složky specifické pro prostředí s **prozkoumat interaktivní skripty** příkazu. Při spuštění **interaktivní** okna pro toto prostředí se načte a spustí cokoli, co *.py* zde nacházejí soubory v abecedním pořadí.
+1. Při instalaci prostředí sady Visual Studio vytvoří složku *Documents\Visual Studio \<verze > \Python skripty\\\<prostředí >* kde &lt;verze&gt; je verze sady Visual Studio (například 2017 nebo 2019) a &lt;prostředí&gt; odpovídá názvu prostředí. Můžete snadno přejít do složky specifické pro prostředí s **prozkoumat interaktivní skripty** příkazu. Při spuštění **interaktivní** okna pro toto prostředí se načte a spustí cokoli, co *.py* zde nacházejí soubory v abecedním pořadí.
 
 1. **Skripty** v ovládacím prvku **nástroje** > **možnosti** > **Python**  >  **Interaktivní Windows** kartu (viz [interaktivních oken možnosti](python-support-options-and-settings-in-visual-studio.md#interactive-windows-options)) slouží k určení další složky pro spouštěcí skripty, které jsou načteny a spustit ve všech prostředích. Tato funkce se však nefunguje v současné době.
 
