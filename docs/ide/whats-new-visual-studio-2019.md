@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 25a7f5f0e53518e9beb4b509ab27ae4de0f28fa7
-ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
+ms.openlocfilehash: 399207f81ec1f25e6a5169235820989c1b2c34e4
+ms.sourcegitcommit: 0a2fdc23faee77187e10a1c19665ba5a1ac68e72
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/04/2019
-ms.locfileid: "59018152"
+ms.lasthandoff: 04/10/2019
+ms.locfileid: "59477538"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Novinky v sadě Visual Studio 2019
 
@@ -34,10 +34,10 @@ Visual Studio 2019 získáte ve své třídě nejlepší nástroje a služby pro
 Tady je podrobný rekapitulace toho, co je nového:
 
 * **[Vývoj](#develop)**: Udržte si zaměření a produktivity pomocí Vylepšený výkon, rychlé kód čištění a lepší výsledky hledání.
-* **[Spolupráce](#collaborate)**: Využijte přirozené spolupráci prostřednictvím cloudového pracovního postupu, v reálném čase, úpravy a ladění, a revize kódu přímo v sadě Visual Studio.
+* **[Spolupráce](#collaborate)**: Využijte přirozené spolupráci prostřednictvím Git první pracovní postup v reálném čase, úpravy a ladění, a revize kódu přímo v sadě Visual Studio.
 * **[Ladění](#debug)**: Zvýrazněte a přejděte na konkrétní hodnoty, optimalizovat využití paměti a provést automatické snímky spuštění vaší aplikace.
 
-Úplný seznam všech, který je v této verzi nové, najdete v článku [poznámky k verzi](/visualstudio/releases/2019/release-notes/). 
+Úplný seznam všech, který je v této verzi nové, najdete v článku [poznámky k verzi](/visualstudio/releases/2019/release-notes/).
 
 ## <a name="develop"></a>Vývoj
 
@@ -55,11 +55,11 @@ Nové vyhledávání přibližných shod logiky najdete všechno, co potřebujet
 
 ### <a name="refactorings"></a>Refaktoring
 
-Nové C# refaktoringy usnadňují uspořádání vašeho kódu. Jednoduše vyvolat refaktoringy stisknutím kombinace kláves **Ctrl +.** a vyberte akci, kterou chcete převést. 
+Existuje velké množství refaktoringů, nových a velmi užitečné v C# , které usnadňují uspořádání vašeho kódu. Se zobrazují jako návrhy v žárovky a zahrnují akce, jako je například přesun členy rozhraní nebo základní třídy, obory názvů k nastavení odpovídají strukturu složek, převeďte smyčky foreach do dotazů Linq a dalších.
 
    ![Animace prostředí refaktoringy Visual Studio 2019](media/vs-2019/refactorings.gif)
 
-Přidali jsme mnoho nových refaktoringů, včetně ten, který umožňuje zabalit parametrů metody.
+Jednoduše vyvolat refaktoringy stisknutím kombinace kláves **Ctrl +.** a vyberte akci, kterou chcete převést.
 
 ### <a name="intellicode"></a>IntelliCode
 
@@ -78,7 +78,7 @@ Zpočátku podporujeme pouze C# když jsme první předběžně IntelliCode roz�
 
 A pokud používáte C#, přidali jsme také možnost pro trénování modelu vlastní na váš vlastní kód.
 
-Další informace o IntelliCode, najdete v článku [více kódu, posuňte se menší s Visual Studio IntelliCode](https://devblogs.microsoft.com/visualstudio/code-more-scroll-less-with-visual-studio-intellicode/) blogový příspěvek. 
+Další informace o IntelliCode, najdete v článku [více kódu, posuňte se menší s Visual Studio IntelliCode](https://devblogs.microsoft.com/visualstudio/code-more-scroll-less-with-visual-studio-intellicode/) blogový příspěvek.
 
 ### <a name="code-cleanup"></a>Kód čištění
 
@@ -142,7 +142,7 @@ Jsme provést jednou výhradně C++ datové zarážky a přizpůsobit je pro apl
 
    ![Animace, který zobrazuje ladění ve Visual Studio 2019 datové zarážky](media/vs-2019/debug-data-breakpoints.gif)
 
-Tak, jestli jste už kódování v C++ nebo .NET Core, datové zarážky může být dobrou alternativou jenom uvedení pravidelné zarážky. Datové zarážky jsou taky ideální pro scénáře, jako je hledání pozměňuje globálního objektu nebo jsou přidány nebo odebrány ze seznamu. 
+Tak, jestli jste už kódování v C++ nebo .NET Core, datové zarážky může být dobrou alternativou jenom uvedení pravidelné zarážky. Datové zarážky jsou taky ideální pro scénáře, jako je hledání pozměňuje globálního objektu nebo jsou přidány nebo odebrány ze seznamu.
 
 A pokud jste vývojář C++, který vyvíjí velké aplikace, Visual Studio 2019 provedl symboly mimo proces, který umožňuje ladit tyto aplikace bez majícího problémy související s pamětí.
 

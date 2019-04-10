@@ -9,12 +9,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: eadad8fdbec990607450b374a32758547194f734
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 1d6b575e88349c71f1234950d4efaf77d23518c1
+ms.sourcegitcommit: 0a2fdc23faee77187e10a1c19665ba5a1ac68e72
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58160271"
+ms.lasthandoff: 04/10/2019
+ms.locfileid: "59477499"
 ---
 # <a name="convert-foreach-loop-to-linq"></a>Převod smyčky foreach na LINQ
 
@@ -46,9 +46,37 @@ Tento refaktoring platí pro:
    ![Výsledku dotazu LINQ](media/convert-foreach-to-LINQ-result.png)
    
    ![Výsledek volání formuláře LINQ](media/convert-foreach-to-LINQ-callform-result.png)
+   
+ ### <a name="sample-code"></a>Vzorový kód
+
+```csharp
+using System.Collections.Generic;
+
+public class Class1
+{
+    public void MyMethod()
+    {
+        var greetings = new List<string>()
+            { "hi", "yo", "hello", "howdy" };
+
+        IEnumerable<string> enumerable()
+        {
+            foreach (var greet in greetings)
+            {
+                if (greet.Length < 3)
+                {
+                    yield return greet;
+                }
+            }
+
+            yield break;
+        }
+    }
+}
+```
 
 ## <a name="see-also"></a>Viz také:
 
-- [Refactoring](../refactoring-in-visual-studio.md)
+- [Refaktoring](../refactoring-in-visual-studio.md)
 - [Náhled změn](../../ide/preview-changes.md)
-- [Tipy pro vývojáře .NET](../../ide/visual-studio-2017-for-dotnet-developers.md)
+- [Tipy pro vývojáře na platformě .NET](../../ide/visual-studio-2017-for-dotnet-developers.md)

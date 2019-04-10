@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: f18715be45a41518da691143045f7a41b3f518a7
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.openlocfilehash: 690fe29373e80d9dfc560a616d0e914731d9b6cf
+ms.sourcegitcommit: 0a2fdc23faee77187e10a1c19665ba5a1ac68e72
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58788644"
+ms.lasthandoff: 04/10/2019
+ms.locfileid: "59477523"
 ---
 # <a name="repair-visual-studio"></a>Oprava sady Visual Studio
 
@@ -37,6 +37,10 @@ Někdy instalaci sady Visual Studio stává poškozené. Toto můžete opravit o
 1. Spusťte instalační program, zvolte **Další**a klikněte na tlačítko **opravit**.
 
     ![Opravte Visual Studio z instalačního programu sady Visual Studio](media/repair-visual-studio.png "opravte Visual Studio z instalačního programu sady Visual Studio")
+    
+   > [!NOTE]
+   > Oprava sady Visual Studio resetuje prostředí. Místní přizpůsobení, jako jsou rozšíření vázaná na uživatele instalaci bez nutnosti zvýšení oprávnění, uživatelská nastavení a profily se odeberou. Například motivy, barvy, klávesové zkratky synchronizovaná nastavení se obnoví.
+   >
 
    > [!TIP]
    > **Opravit** možnost se zobrazí pouze pro nainstalované instance sady Visual Studio. Pokud se nezobrazí **opravit** možnost, je pravděpodobné, že jste vybrali **Další** ve verzi, která je uvedena v instalačním programu sady Visual Studio jako "K dispozici" místo "Nainstalováno".
@@ -61,6 +65,10 @@ Někdy instalaci sady Visual Studio stává poškozené. Toto můžete opravit o
 1. V instalačním programu vyhledejte edici sady Visual Studio, který jste nainstalovali. Dále zvolte **Další**a klikněte na tlačítko **opravit**.
 
      ![Repair Visual Studio 2019](media/vs-2019/vs-installer-repair.png "Repair Visual Studio 2019")
+
+   > [!NOTE]
+   > Oprava sady Visual Studio resetuje prostředí. Místní přizpůsobení, jako jsou rozšíření vázaná na uživatele instalaci bez nutnosti zvýšení oprávnění, uživatelská nastavení a profily se odeberou. Například motivy, barvy, klávesové zkratky synchronizovaná nastavení se obnoví.
+   >
 
    > [!TIP]
    > **Opravit** možnost se zobrazí pouze pro nainstalované instance sady Visual Studio. Pokud se nezobrazí **opravit** možnost, je pravděpodobné, že jste vybrali **Další** ve verzi, která je uvedena v instalačním programu sady Visual Studio jako "K dispozici" místo "Nainstalováno".

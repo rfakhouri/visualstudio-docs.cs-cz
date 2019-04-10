@@ -1,7 +1,7 @@
 ---
 title: Přenos, migrace a upgrade projektů
 description: Referenční informace pro podporu projektů vytvořených v dřívějších verzích sady Visual Studio a jak Visual Studio rozhodne, když je potřeba migrovat projekt v sadě Visual Studio 2017.
-ms.date: 10/09/2018
+ms.date: 04/09/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -19,12 +19,12 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: 42554a9479168f2afc7a30a122fccc383b3dc745
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.openlocfilehash: 5935b62984cb3fba5cccad0cbf5633aefc117d54
+ms.sourcegitcommit: 0a2fdc23faee77187e10a1c19665ba5a1ac68e72
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366679"
+ms.lasthandoff: 04/10/2019
+ms.locfileid: "59477603"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio"></a>Migrace a upgrade odkaz na projekt pro Visual Studio 
 
