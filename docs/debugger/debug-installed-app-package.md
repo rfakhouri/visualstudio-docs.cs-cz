@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 10e10b512dc8deb63db7ade2075347d9e6405b6b
-ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
+ms.openlocfilehash: 4bf9306ea1604d032ce9f4436759b11c4d17c343
+ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57428710"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59504338"
 ---
 # <a name="debug-an-installed-uwp-app-package-in-visual-studio"></a>Ladit nainstalovaný balíček aplikace UWP v sadě Visual Studio
 
@@ -97,8 +97,8 @@ Další informace o vzdálené nasazení aplikací pro UWP, naleznete v tématu 
 ## <a name="see-also"></a>Viz také:
 
 - [Ladění v sadě Visual Studio](../debugger/index.md)
-- [Prohlídka funkcí ladicího programu](../debugger/debugger-feature-tour.md)
+- [První seznámení s ladicím programem](../debugger/debugger-feature-tour.md)
 - [Vzdálené ladění](../debugger/remote-debugging.md)
 - [Konfigurace brány firewall ve Windows pro vzdálené ladění](../debugger/configure-the-windows-firewall-for-remote-debugging.md)
 - [Přiřazení portů vzdáleného ladicího programu](../debugger/remote-debugger-port-assignments.md)
-- [Chyby a řešení potíží se vzdáleným laděním](../debugger/remote-debugging-errors-and-troubleshooting.md)
+- [Chyby při vzdáleném ladění a jejich řešení](../debugger/remote-debugging-errors-and-troubleshooting.md)

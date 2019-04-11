@@ -34,12 +34,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6edffaa0b45cc045428161dc04bf52d1c607c51c
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.openlocfilehash: 59b654472b9173d5cb5559a57f644113b382fdb8
+ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366688"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59504325"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Používání zarážek v ladicím programu sady Visual Studio
 Zarážky jsou jedním z nejdůležitějších technik ladění mezi nástroji pro vývojáře sady nástrojů. Můžete nastavit zarážky, bez ohledu na to chcete provést pozastavení spuštění ladicího programu. Můžete například zobrazit stav proměnných kódu se také podívat na zásobník volání na určité zarážce. Pokud je to poprvé, kterou jste se pokusili ladění kódu, můžete chtít číst [ladění pro naprosté začátečníky](../debugger/debugging-absolute-beginners.md) před provedením tohoto článku.
@@ -147,6 +147,28 @@ Vizuálně sledovat zarážky během provádění kódu, naleznete v tématu [ma
     ```C++
     ((my_class *) 0xcccccccc)->my_method
     ```
+::: moniker range=">= vs-2019"
+
+## <a name="BKMK_set_a_data_breakpoint_managed"></a>Nastavení datové zarážky (.NET Core 3.0 nebo vyšší)
+
+Body zarážek přeruší provádění, když se změní vlastnost s určitým objektem.
+
+**K nastavení datové zarážky**
+
+1. V projektu .NET Core spustit ladění a počkejte, dokud není dosaženo zarážky.
+
+2. V **automatické hodnoty**, **Watch**, nebo **lokální** okna, klikněte pravým tlačítkem na vlastnosti a vyberte **přerušit, když se změní hodnota** v místní nabídce.
+
+    ![Spravované datová zarážka](../debugger/media/managed-data-breakpoint.png "spravované datová zarážka")
+
+Datové zarážky v .NET Core nebude fungovat pro:
+
+- Vlastnosti, které nejsou rozšiřitelné v popisu, lokální, automatické hodnoty, nebo okno kukátka
+- Statické proměnné
+- Třídy pomocí atributu DebuggerTypeProxy
+- Pole uvnitř struktur 
+
+::: moniker-end
 
 ## <a name="BKMK_set_a_data_breakpoint_native_cplusplus"></a>Nastavení datové zarážky (pouze nativní C++)
 
@@ -156,7 +178,7 @@ Vizuálně sledovat zarážky během provádění kódu, naleznete v tématu [ma
 
 1.  V projektu jazyka C++ spustit ladění a počkejte, dokud není dosaženo zarážky. Na **ladění** nabídce zvolte **Nová zarážka** > **datová zarážka**
 
-    Můžete také vybrat **nový** > **datová zarážka** v **zarážky** okna.
+    Můžete také vybrat **nový** > **datová zarážka** v **zarážky** okno nebo klikněte pravým tlačítkem na položku **automatické hodnoty**, **Watch**, nebo **lokální** okna a vyberte **přerušit, když se změní hodnota**v místní nabídce.
 
 2.  V **adresu** zadejte adresu paměti nebo výraz, který vyhodnocuje adresu paměti. Zadejte například `&avar` pro přerušení, když obsah proměnné `avar` změny.
 

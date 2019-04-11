@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 041dc4aa5107dab157eaf5b4bc8306b90c3b116c
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.openlocfilehash: a5e39778a2d503470629f6c8b7c9243b9dc69cf3
+ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58789403"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59504078"
 ---
 # <a name="quickstart-debug-with-c-or-visual-basic-using-the-visual-studio-debugger"></a>Rychlý start: Při ladění pomocí C# nebo Visual Basic pomocí ladicího programu sady Visual Studio
 
@@ -186,4 +186,4 @@ Další informace o používání edit-and-continue a na omezení funkcí najdet
 V tomto kurzu jste zjistili, jak spustit ladicí program, krokovat kód a můžete kontrolovat proměnné. Můžete chtít získat podrobný přehled funkcí ladicího programu spolu s odkazy na další informace.
 
 > [!div class="nextstepaction"]
-> [Prohlídka funkcí ladicího programu](../debugger/debugger-feature-tour.md)
+> [První seznámení s ladicím programem](../debugger/debugger-feature-tour.md)

@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf319dd00048a4abf6cc4e3806845200c9eefc64
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 78b755991bd90684c08c7126cb17fd169db7e57c
+ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56703575"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59504355"
 ---
 # <a name="inspect-previous-app-states-using-intellitrace-step-back-in-visual-studio-visual-studio-enterprise"></a>Kontrola předchozí nové aplikace pomocí zpětného kroku IntelliTrace v sadě Visual Studio (Visual Studio Enterprise)
 
@@ -87,7 +87,7 @@ V tomto kurzu se naučíte:
 
     ![Přehled zpětného kroku IntelliTrace](../debugger/media/intellitrace-step-back-overview.png "přehled o zpětného kroku IntelliTrace")
 
-    Další informace o tom, jak kontrolovat proměnné v sadě Visual Studio najdete v tématu [prohlídka funkcí ladicího programu](../debugger/debugger-feature-tour.md)
+    Další informace o tom, jak kontrolovat proměnné v sadě Visual Studio najdete v tématu [nejdřív se podívejte na ladicí program](../debugger/debugger-feature-tour.md)
 
 ## <a name="frequently-asked-questions"></a>Nejčastější dotazy
 

@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ed00a776671bcaa48ddf5fe7e15510df18971dfa
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: b46b1b5fa7952fbd1a14dc9eca7f67c493ea2807
+ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56636135"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59504354"
 ---
 # <a name="publish-clickonce-applications"></a>Publikování aplikací ClickOnce
 Při publikování [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] vlastnosti publikování aplikace poprvé, můžete nastavit pomocí Průvodce publikováním. Pouze některé vlastnosti jsou k dispozici v Průvodci; všechny ostatní vlastnosti jsou nastavené na výchozí hodnoty.
@@ -82,7 +82,7 @@ Při publikování [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.
 |[Postupy: Úprava výchozí webové stránky ClickOnce](../deployment/how-to-customize-the-default-web-page-for-a-clickonce-application.md)|Popisuje, jak přizpůsobit webovou stránku, která je automaticky generována a publikovat spolu s aplikace.|
 |[Postupy: Povolení funkce AutoStart pro instalace z disku CD](../deployment/how-to-enable-autostart-for-cd-installations.md)|Popisuje postup povolení funkce AutoStart tak, aby aplikace ClickOnce se automaticky spustí, když je médium je vloženo.|
 
-## <a name="related-tpics"></a>Související tpics
+## <a name="related-topics"></a>Související témata
 
 |Název|Popis|
 |-----------|-----------------|

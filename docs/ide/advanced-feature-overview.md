@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 416c5e62cf4984219be79572b3b2929a86c29590
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.openlocfilehash: f7a9fdb7d6f17df009920e1677c615cb41df7f6c
+ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58790534"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59504299"
 ---
 # <a name="features-of-visual-studio"></a>Funkce sady Visual Studio
 
@@ -100,7 +100,7 @@ Visual Studio můžete použít k sestavení aplikací a her pro Windows, macOS 
 
 ## <a name="debug-test-and-improve-your-code"></a>Ladit, testovat a zlepšování kódu
 
-Při psaní kódu, musíte ji spustit a otestovat chyb a výkonu. Špičkové ladění systému Visual Studio umožňuje ladit kód spuštěný ve vašem místním projektu na vzdáleném zařízení, nebo na [emulátor zařízení](../cross-platform/visual-studio-emulator-for-android.md). Můžete krokovat kód jeden příkaz najednou a kontrolovat proměnné, co využijete. Můžete nastavit zarážky, které jsou pouze přístupů, když je zadaná podmínka pravdivá. Ladění možnosti jde spravovat v editoru kódu, takže nemusíte opouštět svůj kód. Pokud chcete získat další informace o ladění v sadě Visual Studio, naleznete v tématu [prohlídka funkcí ladicího programu](../debugger/debugger-feature-tour.md).
+Při psaní kódu, musíte ji spustit a otestovat chyb a výkonu. Špičkové ladění systému Visual Studio umožňuje ladit kód spuštěný ve vašem místním projektu na vzdáleném zařízení, nebo na [emulátor zařízení](../cross-platform/visual-studio-emulator-for-android.md). Můžete krokovat kód jeden příkaz najednou a kontrolovat proměnné, co využijete. Můžete nastavit zarážky, které jsou pouze přístupů, když je zadaná podmínka pravdivá. Ladění možnosti jde spravovat v editoru kódu, takže nemusíte opouštět svůj kód. Pokud chcete získat další informace o ladění v sadě Visual Studio, naleznete v tématu [nejdřív se podívejte na ladicí program](../debugger/debugger-feature-tour.md).
 
 Další informace týkající se vylepšení výkonu aplikací, rezervaci si Visual Studio [profilace](../profiling/profiling-feature-tour.md) funkce.
 
@@ -139,5 +139,5 @@ Další informace o rozšíření sady Visual Studio najdete v tématu [rozší�
 ## <a name="see-also"></a>Viz také:
 
 - [Visual Studio IDE – přehled](../get-started/visual-studio-ide.md)
-- [Co je nového v sadě Visual Studio 2017](../ide/whats-new-visual-studio-2017.md)
-- [Co je nového ve Visual Studio 2019](../ide/whats-new-visual-studio-2019.md)
+- [Novinky v sadě Visual Studio 2017](../ide/whats-new-visual-studio-2017.md)
+- [Novinky v sadě Visual Studio 2019](../ide/whats-new-visual-studio-2019.md)

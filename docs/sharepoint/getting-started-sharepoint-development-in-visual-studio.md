@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1f2272323d13121865ace371b2dc1a921106e34e
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: c45635da013f360ccbb1fe2343bca23a58f142c4
+ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57869015"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59504104"
 ---
 # <a name="get-started-sharepoint-development-in-visual-studio"></a>Získejte Začínáme (vývoj pro SharePoint v sadě Visual Studio)
   Tato část pomůže je začít využívat [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] pro vývoj řešení služby SharePoint, které budou využívat [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] a [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)].
@@ -39,10 +39,11 @@ ms.locfileid: "57869015"
 |Téma|Popis|
 |-----------|-----------------|
 |[Vývoj řešení služby SharePoint](../sharepoint/developing-sharepoint-solutions.md)|Popisuje vývoj pro SharePoint v [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].|
+|[Nastavení prostředí obecný vývoj pro SharePoint](/sharepoint/dev/general-development/set-up-a-general-development-environment-for-sharepoint)|Popisuje požadované instalace pro vytvoření řešení služby SharePoint|
 |[Vytváření sloupců webu, typů obsahu a seznamů pro službu SharePoint](../sharepoint/creating-site-columns-content-types-and-lists-for-sharepoint.md)|Popisuje postup vytvoření sloupců vlastního webu, typů obsahu a seznamů pro službu SharePoint pomocí nástroje Visual Studio tools pro vývoj služby SharePoint.|
 |[Vytváření řešení pracovního postupu služby SharePoint](../sharepoint/creating-sharepoint-workflow-solutions.md)|Popisuje pracovní postup návrhu a vývoje.|
 |[Integrace obchodních dat do služby SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)|Popisuje postup připojení k modelům obchodní Data připojení (BDC) k integraci obchodních dat.|
-|[Creatie webové části pro SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)|Popisuje webových částí a webové části stránky stavební kameny stránek na webu služby SharePoint.|
+|[Vytvoření webové části pro SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)|Popisuje webových částí a webové části stránky stavební kameny stránek na webu služby SharePoint.|
 |[Vytváření stránek aplikací pro SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md)|Popisuje postup návrhu stránek aplikací pomocí návrháře.|
 |[Vytvoření opakovaně použitelné ovládací prvky webové části nebo stránky aplikace](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)|Popisuje způsob vytváření vlastních, opakovaně použitelných ovládacích prvků pro stránky aplikace a webové části sharepointu.|
 |[Procházet připojení služby SharePoint pomocí Průzkumníka serveru](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)|Popisuje, jak procházet součásti webu služby SharePoint v panelu nástrojů sady Visual Studio.|

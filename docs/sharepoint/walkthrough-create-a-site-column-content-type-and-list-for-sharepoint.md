@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 244841b5b9416709eda0913d53535d29c83df647
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: dee5d1ec207f2b7bec030076797720fe9e8216ed
+ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57870396"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59504260"
 ---
 # <a name="walkthrough-create-a-site-column-content-type-and-list-for-sharepoint"></a>Návod: Vytvoření sloupce webu, typu obsahu a seznamu pro službu SharePoint
   Následující postupy ukazují, jak vytvořit vlastní sloupce webu služby SharePoint, nebo *pole*– stejně jako typ obsahu, který používá sloupce webu. Také ukazuje, jak vytvořit seznam, který používá nového typu obsahu.
@@ -46,7 +46,7 @@ ms.locfileid: "57870396"
 
 -   Podporované edice systému Windows a SharePoint.
 
--   Visual Studio.
+-   [!INCLUDE[vsprvs-current](../sharepoint/includes/vsprvs-current-md.md)]
 
 ## <a name="create-custom-site-columns"></a>Vytvoření vlastní stránky sloupců
  Tento příklad vytvoří seznam pro správu pacientů v nemocnici. Nejprve musíte vytvořit projekt služby SharePoint v [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] a přidat sloupce webu, následujícím způsobem.
@@ -67,7 +67,7 @@ ms.locfileid: "57870396"
 
      Další informace o v izolovaném prostoru a farmách, přečtěte si [aspekty řešení v izolovaném prostoru](../sharepoint/sandboxed-solution-considerations.md).
 
-6.  Zvolte **Dokončit** tlačítko. Projekt by měl být nyní obsažena v **Průzkumníka řešení**.
+6.  Zvolte **Dokončit** tlačítko. Projekt je nyní obsažena v **Průzkumníka řešení**.
 
 #### <a name="to-add-site-columns"></a>Chcete-li přidat sloupce webu
 

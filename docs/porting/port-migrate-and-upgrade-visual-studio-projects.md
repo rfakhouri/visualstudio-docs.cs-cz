@@ -19,12 +19,12 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: 5935b62984cb3fba5cccad0cbf5633aefc117d54
-ms.sourcegitcommit: 0a2fdc23faee77187e10a1c19665ba5a1ac68e72
+ms.openlocfilehash: 09d0ab3142c1a35521c94ba86a377fc0b90c4821
+ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/10/2019
-ms.locfileid: "59477603"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59504377"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio"></a>Migrace a upgrade odkaz na projekt pro Visual Studio 
 
@@ -139,7 +139,7 @@ Pokud nevidíte projekt nebo typ souboru zde uvedeny, který by měl být, najde
 | LightSwitch | Aplikace LightSwitch je již nejsou podporovány v aplikaci Visual Studio 2019 nebo v sadě Visual Studio 2017. Projekty vytvořené pomocí sady Visual Studio 2012 a starší otevřený v sadě Visual Studio 2013 nebo Visual Studio 2015 jsou upgradovány a lze je otevřít pouze v sadě Visual Studio 2013 nebo Visual Studio 2015 po tomto datu. |
 | Zátěžový test | Schopnostech testu webového výkonu a zatížení jsou zastaralé v aplikaci Visual Studio 2019. <br/><br/>Visual Studio 2019 bude poslední vydané verze pro zátěžový test. Použijte alternativní zátěžového testování nástrojů, jako je Apache JMeter, Akamai CloudTest, Blazemeter.  |
 | Nástroje Microsoft Azure pro sadu Visual Studio | Chcete-li otevřít tyto typy projektů, nejdřív nainstalovat [sady Azure SDK for .NET](http://azure.microsoft.com/downloads/), pak otevřete projekt. V případě potřeby váš projekt se aktualizuje. |
-| Microsoft Test Manager | Nástroje Microsoft Test Manager a klienta Feedback Client už dodávají v sadě Visual Studio od Visual Studio 2019. <br/><br/>Využijte Azure testovací plány (součást Azure DevOps) pro potřeby ruční a průzkumné testování. Přečtěte si další informace. |
+| Microsoft Test Manager | Nástroje Microsoft Test Manager a klienta Feedback Client se už přenosů v sadě Visual Studio, od Visual Studio 2019. <br/><br/>Využijte Azure testovací plány (součást Azure DevOps) pro potřeby ruční a průzkumné testování. Další informace najdete v tématu [doprovodné materiály k použití nástroje Microsoft Test Manager](/azure/devops/test/mtm/guidance-mtm-usage?view=azure-devops) stránky v dokumentaci k Azure DevOps. |
 | Framework Model-View-Controller (MVC technologie ASP.NET) | Podpora pro verze MVC a sady Visual Studio:<ul><li>Visual Studio 2010 SP1 podporuje MVC 2 a MVC 3; Prostřednictvím je přidána podpora MVC 4 [ASP.NET 4 MVC 4 ke stažení Visual Studio 2010 SP1](https://www.microsoft.com/download/details.aspx?id=30683)</li><li>Visual Studio 2012 podporuje pouze MVC 3 a MVC 4</li><li>Visual Studio 2013 podporuje pouze MVC 4 a MVC 5</li><li>Visual Studio 2019, Visual Studio 2017 a Visual Studio 2015 podpora MVC 4 (můžete otevřít stávající projekty ale nikoli vytvářet nové) a MVC 5</li></ul><br/>Upgrade verze MVC:<ul><li>Informace o tom, jak automaticky aktualizovat z MVC 2 na MVC 3 naleznete v tématu [ASP.NET MVC 3 aplikace Upgrader](http://go.microsoft.com/fwlink/?LinkID=238178).</li><li>Informace o tom, jak ručně aktualizovat z MVC 2 na MVC 3 naleznete v tématu [aktualizace projektu ASP.NET MVC 2 na ASP.NET MVC 3 nástroje Update](http://go.microsoft.com/fwlink/?linkid=238178).</li><li>Informace o tom, jak ručně aktualizaci z MVC3 na mvc4 naleznete v tématu [upgrade projektu ASP.NET MVC 3 na ASP.NET MVC 4](http://www.asp.net/whitepapers/mvc4-release-notes). Pokud váš projekt cílí na rozhraní .NET Framework 3.5 SP1, je nutné cíl změnit na použití rozhraní .NET Framework 4.</li><li>Informace o manuální aktualizaci z MVC 4 na MVC 5 najdete v tématu [pokyny k upgradu ASP.NET MVC 4 a projektem webového rozhraní API technologie ASP.NET MVC 5 a webovým rozhraním API 2](https://www.asp.net/mvc/overview/releases/how-to-upgrade-an-aspnet-mvc-4-and-web-api-project-to-aspnet-mvc-5-and-web-api-2).</li></ul> |
 | Modelování | Pokud umožníte softwaru Visual Studio automaticky aktualizovat projekt, lze jej otevřít v sadě Visual Studio 2015, Visual Studio 2013 nebo Visual Studio 2012.<br/><br/>Formát projektu modelování nezměnila, protože Visual Studio 2015 a projekt lze otevřít a upravit v těchto verzích. Nicméně existují rozdíly v chování v sadě Visual Studio 2017 a Visual Studio 2019:<ul><li>Projekty modelování jsou dnes označovány jako "Ověřování závislostí" projekty v nabídkách a šablony.</li><li>Diagramy UML jsou již nejsou podporovány v sadě Visual Studio 2017 a Visual Studio 2019. Soubory UML jsou uvedeny v Průzkumníku řešení jako před, ale jsou otevřené jako soubory XML. Pomocí Visual Studio 2015 můžete zobrazit, vytvořit nebo upravit diagramy UML.</li><li>V aplikaci Visual Studio 2019 se ověřování závislostí architektury už provádí při sestavení projektu modelování. Místo toho jako je předdefinovaný všech projektů kódu, se provádí ověřování. Tato změna nemá vliv na projekt modelování, ale vyžaduje změny do kódové projekty se ověřují. Visual Studio 2019 může automaticky proveďte potřebné změny do kódové projekty.</li></ul> |
 | Instalační program MSI (vdproj) | Projekty InstallShield. |

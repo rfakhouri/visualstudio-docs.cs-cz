@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 384b5dca1da11a430036cce2536e6859f3e98f94
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: a5cf348b06bca6127690c7b5a7301881bdf75078
+ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57868088"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59504143"
 ---
 # <a name="debugging-managed-code"></a>Ladění spravovaného kódu
 
@@ -38,7 +38,7 @@ Popisuje kontrolní výrazy ve spravovaném kódu, které testování podmínek,
 [Příkazy Stop v jazyce Visual Basic](../debugger/stop-statements-in-visual-basic.md)\
 Popisuje `Stop` příkaz, který poskytuje alternativu k nastavením zarážky. Ukázkový kód je také k dispozici, spolu s porovnání mezi `Stop` příkazu a `End` příkaz, a také mezi `Stop` a `Assert` příkazu.
 
-[Návod: Ladění formuláře Windows](../debugger/walkthrough-debugging-a-windows-form.md)\
+[Návod: Ladění formuláře systému Windows](../debugger/walkthrough-debugging-a-windows-form.md)\
 Poskytuje podrobné pokyny pro vytvoření formuláře Windows a ladění, které tvoří. Formuláře Windows, standardní součástí spravované aplikace pro Windows je jedním z nejběžnějších spravovaných aplikací. Tento návod používá Visual C# a Visual Basic, ale jsou obecně podobné techniky pro vytvoření formuláře Windows pomocí C++.
 
 [Ladění metody OnStart](../debugger/how-to-debug-the-onstart-method.md)\
@@ -47,7 +47,7 @@ Poskytuje příklady kódu, aby bylo možné ladit `OnStart` metody spravované 
 [Ladění ve smíšeném režimu](../debugger/debugging-mixed-mode-applications.md)\
 Tento článek popisuje ladění ve smíšeném režimu aplikací. To znamená, že všechny aplikace, která kombinuje nativní kód se spravovaným kódem.
 
-[Chyba: Ladění není možné, protože v systému je povolen ladicí program jádra](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)\
+[Chyba: Ladění není možné, protože v systému je povolen ladicí program protokolu Kernel.](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)\
 Popisuje chybová zpráva, která nastane, pokud se pokusíte ladit spravovaný kód na [!INCLUDE[win7](../debugger/includes/win7_md.md)], [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)], [!INCLUDE[winxp](../code-quality/includes/winxp_md.md)], [!INCLUDE[Win2kFamily](../code-quality/includes/win2kfamily_md.md)], nebo systém Windows NT, který se spustil v režimu ladění.
 
 [Optimalizace a ladění JIT](../debugger/jit-optimization-and-debugging.md)\
@@ -78,9 +78,6 @@ Tento článek popisuje požadavky na konfiguraci a ladění aplikací rozhraní
 
 [Ladění skriptů a webových aplikací](/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications)\
 Popisuje běžné problémy ladění a postupy, které se můžete setkat při ladění skriptu a webové aplikace.
-
-[Ladění domovské stránky](../debugger/debugger-feature-tour.md)\
-Obsahuje odkazy na větší části dokumentace ladění. Obsahuje informace, co je nového v ladicím programu, nastavení a příprava, zarážky, zpracování výjimek, upravit a pokračovat, ladění spravovaného kódu, ladění projektů Visual C++, ladění modelu COM a ActiveX, ladění knihoven DLL, ladění SQL a uživatele Reference k rozhraní.
 
 ## <a name="see-also"></a>Viz také:
 

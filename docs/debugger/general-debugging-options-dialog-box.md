@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e97f2f844c53a6bf26fecc4559b65ae69970c6b
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: 29b730bacd589e7b42b9f87086eda91d9e199622
+ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526536"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59504416"
 ---
 # <a name="general-debugging-options"></a>Obecné možnosti ladění
 
@@ -117,7 +117,7 @@ Chcete-li zjistit, jaké symboly jsou k dispozici v exportní tabulce knihovny D
 
 **Použít spravovaný režim kompatibility**: Nahradí výchozí modul ladění pomocí starší verze, chcete-li povolit tyto scénáře:
 
-- Používáte jazyk rozhraní .NET Framework než C#, Visual Basic nebo F# , který obsahuje vlastní vyhodnocení výrazu (to zahrnuje C + +/ CLI).
+- Používáte jazyk rozhraní .NET Framework než C#, Visual Basic nebo F# , který obsahuje vlastní vyhodnocení výrazu (to zahrnuje C++vyhodnocovací).
 
 - Chcete povolit funkce upravit a pokračovat pro projekty C++ během ladění ve smíšeném režimu.
 
@@ -150,7 +150,7 @@ Chcete-li zjistit, jaké symboly jsou k dispozici v exportní tabulce knihovny D
 
 - **Upozornit na starý kód (pouze nativní)**:   Získáte upozornění na starý kód.
 
-**Zobrazit spuštění klikněte na tlačítko v editoru během ladění**: Pokud je vybraná tato možnost, [běžet do kliknutí](debugger-feature-tour.md#run-to-a-point-in-your-code-quickly-using-the-mouse) tlačítko se zobrazí při ladění.
+**Zobrazit spuštění klikněte na tlačítko v editoru během ladění**: Pokud je vybraná tato možnost, [běžet do kliknutí](../debugger/debugger-feature-tour.md#run-to-a-point-in-your-code-quickly-using-the-mouse) tlačítko se zobrazí při ladění.
 
 **Při zastavení ladění automaticky zavřete konzolu**: Instruuje Visual Studio a zavřete konzolu na konci relace ladění.
 
@@ -173,4 +173,4 @@ Pokud používáte starší verzi sady Visual Studio, může být k dispozici n�
 ## <a name="see-also"></a>Viz také:
 
 - [Ladění v sadě Visual Studio](../debugger/index.md)
-- [Prohlídka funkcí ladicího programu](../debugger/debugger-feature-tour.md)
+- [První seznámení s ladicím programem](../debugger/debugger-feature-tour.md)

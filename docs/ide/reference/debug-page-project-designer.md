@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b02ecf1b4b03bfc8b664af898fdbedcb27c80bf
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a49b2c77833538cb983f776a2f54ad332fb87f59
+ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55949678"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59504403"
 ---
 # <a name="debug-page-project-designer"></a>Stránka Ladění, návrhář projektu
 
@@ -83,7 +83,7 @@ Zaškrtněte nebo zrušte zaškrtnutí políčka Povolit nebo zakázat ladění 
 
 ## <a name="see-also"></a>Viz také:
 
-- [Ladění v sadě Visual Studio](../../debugger/debugger-feature-tour.md)
+- [První seznámení s ladicím programem](../../debugger/debugger-feature-tour.md)
 - [Nastavení projektu pro konfiguraci ladění jazyka C#](../../debugger/project-settings-for-csharp-debug-configurations.md)
 - [Nastavení projektu pro konfiguraci ladění jazyka Visual Basic](../../debugger/project-settings-for-a-visual-basic-debug-configuration.md)
 - [Postupy: Ladění aplikace ClickOnce s omezenými oprávněními](../../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c9e1540e782cb5423ffc82ccfb46b9376842762f
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.openlocfilehash: ac95fc54b410700f3ce28f3ace6192787400d64b
+ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58789540"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59504208"
 ---
 # <a name="quickstart-debug-with-c-using-the-visual-studio-debugger"></a>Rychlý start: Ladění v C++ pomocí ladicího programu sady Visual Studio
 
@@ -138,4 +138,4 @@ Další informace o používání edit-and-continue a na omezení funkcí najdet
 V tomto kurzu jste zjistili, jak spustit ladicí program, krokovat kód a můžete kontrolovat proměnné. Můžete chtít získat podrobný přehled funkcí ladicího programu spolu s odkazy na další informace.
 
 > [!div class="nextstepaction"]
-> [Prohlídka funkcí ladicího programu](../debugger/debugger-feature-tour.md)
+> [První seznámení s ladicím programem](../debugger/debugger-feature-tour.md)

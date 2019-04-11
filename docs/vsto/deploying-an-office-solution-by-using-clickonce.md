@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8499e6f34ae43e0dfa64b98950316dc65227baac
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 90f7fe4d3e4b316f48aed46c40b3d24e0969a536
+ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54863926"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59504429"
 ---
 # <a name="deploy-an-office-solution-by-using-clickonce"></a>Nasazení řešení Office s použitím technologie ClickOnce
   Vaše řešení pro Office v méně kroků můžete nasadit, když použijete ClickOnce. Když publikujete aktualizace, vaše řešení je automaticky rozpozná a nainstaluje. Technologie ClickOnce ale vyžaduje, aby bylo řešení nainstalováno zvlášť pro každého uživatele počítače. Proto byste měli zvážit použití Instalační služby systému Windows (*MSI*) je-li více než jeden uživatel vaše řešení bude používat ve stejném počítači.
@@ -27,13 +27,13 @@ ms.locfileid: "54863926"
 
 - [Publikování řešení](#Publish)
 
-- [Rozhodnutí o způsobu zajištění důvěryhodnosti řešení](#Trust)
+- [Rozhodnutí o způsobu zajištění důvěryhodnosti řešení](#Trust)
 
-- [Pomoc uživatelům s instalací řešení](#Helping)
+- [Pomoc uživatelům s instalací řešení](#Helping)
 
 - [Umístění dokumentu řešení do počítače koncového uživatele (pouze přizpůsobení na úrovni dokumentu)](#Put)
 
-- [Umístění dokumentu řešení na server, na kterém běží SharePoint (pouze přizpůsobení na úrovni dokumentu)](#SharePoint)
+- [Umístění dokumentu řešení na server, na kterém je spuštěna služba SharePoint (pouze přizpůsobení na úrovni dokumentu)](#SharePoint)
 
 - [Vytvoření vlastního instalačního programu](#Custom)
 
@@ -91,9 +91,9 @@ ms.locfileid: "54863926"
 
     |Možnost|Popis|
     |------------|-----------------|
-    |**Stáhnout nezbytné součásti z webu dodavatele součástí**|Uživatel bude vyzván, aby od dodavatele stáhl a nainstaloval nezbytné součásti.|
-    |**Stáhnout součásti ze stejného umístění, jako je má aplikace**|Požadovaný software bude nainstalován spolu s řešením. Pokud zvolíte tuto možnost, sada Visual Studio za vás zkopíruje všechny požadované balíčky do umístění pro publikování. Tato možnost bude fungovat, pouze pokud jsou balíčky požadovaných součástí ve vývojovém počítači.|
-    |**Stáhnout nezbytné součásti z následujícího umístění**|Sada Visual Studio zkopíruje všechny balíčky požadovaných součástí do zadaného umístění a nainstaluje je společně s řešením.|
+    |**Stáhnout nezbytné součásti z webu dodavatele součástí**|Uživatel bude vyzván, aby od dodavatele stáhl a nainstaloval nezbytné součásti.|
+    |**Stáhnout součásti ze stejného umístění jako umístění mé aplikace**|Požadovaný software bude nainstalován spolu s řešením. Pokud zvolíte tuto možnost, sada Visual Studio za vás zkopíruje všechny požadované balíčky do umístění pro publikování. Tato možnost bude fungovat, pouze pokud jsou balíčky požadovaných součástí ve vývojovém počítači.|
+    |**Stáhnout nezbytné součásti z následujícího umístění**|Sada Visual Studio zkopíruje všechny balíčky požadovaných součástí do zadaného umístění a nainstaluje je společně s řešením.|
 
      Zobrazit [dialogové okno požadavky](../ide/reference/prerequisites-dialog-box.md).
 
@@ -139,7 +139,7 @@ ms.locfileid: "54863926"
  Pokud nasazujete přizpůsobení úrovni dokumentu a chcete dokument umístit do složky v počítači uživatele nebo zpřístupnit dokument na webu služby SharePoint, ujistěte se, zda sada Office považuje umístění dokumentu. Zobrazit [udělit důvěryhodnost dokumenty](../vsto/granting-trust-to-documents.md).
 
 ##  <a name="Helping"></a> Pomoc uživatelům s instalací řešení
- Uživatelé mohou řešení nainstalovat tak, že spustí instalační program, otevřou manifest nasazení nebo, v případě přizpůsobení na úrovni dokumentu, přímo otevřou dokument. Osvědčeným postupem je instalace řešení pomocí instalačního programu. Ostatní dva přístupy nezajišťují, že je nainstalovaný požadovaný software. Pokud uživatelé chtějí otevřít dokument z umístění instalace, musejí jej přidat do seznamu důvěryhodných umístění v Centru zabezpečení aplikace Office.
+ Uživatelé mohou nainstalovat řešení spuštěním instalační program, otevřou manifest nasazení nebo během přizpůsobení na úrovni dokumentu, přímo otevřou dokument. Osvědčeným postupem je instalace řešení pomocí instalačního programu. Ostatní dva přístupy nezajišťují, že je nainstalovaný požadovaný software. Pokud uživatelé chtějí otevřít dokument z umístění instalace, musejí jej přidat do seznamu důvěryhodných umístění v Centru zabezpečení aplikace Office.
 
 ### <a name="opening-the-document-of-a-document-level-customization"></a>Otevření dokumentu přizpůsobení na úrovni dokumentu
  Uživatelé mohou otevřít dokument přizpůsobení na úrovni dokumentu přímo z umístění instalace nebo tak, že dokument zkopírují do svého počítače a poté otevřou jeho místní kopii.
@@ -190,7 +190,7 @@ ms.locfileid: "54863926"
 ##  <a name="Put"></a> Umístění dokumentu řešení do počítače koncového uživatele (pouze přizpůsobení na úrovni dokumentu)
  Můžete kopírovat dokument řešení do počítače koncového uživatele pro ně tak, že vytvoříte akci po nasazení. Tímto způsobem, uživatel nebude muset ručně kopírovat dokument z umístění instalace na svém počítači po instalaci vašeho řešení. Bude nutné vytvořit třídu, která definuje akci po nasazení, vytváření a publikování řešení, upravit manifest aplikace a znovu podepsat manifest aplikace a nasazení.
 
- V následujících postupech se předpokládá, že je název vašeho projektu **ExcelWorkbook** a publikování řešení **C:\publish** adresáře v počítači.
+ V následujících postupech se předpokládá, že je název vašeho projektu **ExcelWorkbook** a že řešení publikujete do vytvořené složky s názvem **C:\publish** ve vašem počítači.
 
 ### <a name="create-a-class-that-defines-the-post-deployment-action"></a>Vytvoření třídy, která definuje akci po nasazení
 
@@ -253,7 +253,7 @@ ms.locfileid: "54863926"
 
 ### <a name="modify-the-application-manifest"></a>Úprava manifestu aplikace
 
-1.  Otevřít **c:\publish** adresáře pomocí **Průzkumníka souborů**.
+1.  Otevřete adresář řešení **c:\publish**, s použitím **Průzkumníka souborů**.
 
 2.  Otevřete **soubory aplikace** složku a poté otevřete složku, která odpovídá nejnovější publikované verzi vašeho řešení.
 
@@ -336,7 +336,7 @@ ms.locfileid: "54863926"
              Když uživatelé otevřou dokument z webu služby SharePoint, dokument se otevře a nainstaluje se přizpůsobení. Uživatelé mohou dokument zkopírovat na svou plochu. Přizpůsobení bude stále možné spustit, protože vlastnosti v dokumentu odkazují na síťové umístění dokumentu.
 
 ##  <a name="Custom"></a> Vytvoření vlastního instalačního programu
- Můžete vytvořit vlastní instalační program pro vaše řešení pro Office, namísto použití instalačního programu, který je vytvořen při publikování řešení. Můžete například spustit instalaci pomocí přihlašovacího skriptu nebo můžete řešení nainstalovat pomocí dávkového souboru bez zásahu uživatele. Tyto scénáře fungují nejlépe, pokud jsou požadované součásti již nainstalovány v počítačích koncových uživatelů.
+ Můžete vytvořit vlastní instalační program pro vaše řešení pro Office, namísto použití instalačního programu, který je vytvořen při publikování řešení. Například můžete použít znak ve skriptu ke spuštění instalace, nebo můžete použít dávkový soubor k instalaci řešení bez zásahu uživatele. Tyto scénáře fungují nejlépe, pokud jsou požadované součásti již nainstalovány v počítačích koncových uživatelů.
 
  Jako součást procesu vlastní instalace volejte instalační nástroj pro řešení Office (*VSTOInstaller.exe*), který je ve výchozím nastavení nainstalován v následujícím umístění:
 
@@ -359,8 +359,8 @@ ms.locfileid: "54863926"
 |Kód chyby|Definice|
 |----------------|----------------|
 |0|Řešení bylo úspěšně nainstalováno či odinstalováno nebo se zobrazila nápověda nástroje VSTOInstaller.|
-|-100|Jeden nebo více parametrů příkazového řádku není platných nebo byly nastaveny více než jedenkrát. Další informace, zadejte "vstoinstaller /?" nebo se podívejte [vytvoření vlastního instalátoru pro řešení ClickOnce Office](https://msdn.microsoft.com/3e5887ed-155f-485d-b8f6-3c02c074085e).|
-|-101|Jeden nebo více parametrů příkazového řádku není platná. Pokud chcete získat další informace, zadejte příkaz "vstoinstaller /?".|
+|-100|Jeden nebo více parametrů příkazového řádku nejsou platné nebo byly nastaveny více než jednou. Další informace, zadejte "vstoinstaller /?" nebo se podívejte [vytvoření vlastního instalátoru pro řešení ClickOnce Office](https://msdn.microsoft.com/3e5887ed-155f-485d-b8f6-3c02c074085e).|
+|-101|Jeden nebo více parametrů příkazového řádku nejsou platné. Pokud chcete získat další informace, zadejte příkaz "vstoinstaller /?".|
 |-200|Identifikátor URI manifestu nasazení není platná. Pokud chcete získat další informace, zadejte příkaz "vstoinstaller /?".|
 |-201|Řešení nelze nainstalovat, protože manifest nasazení není platná. Zobrazit [manifesty nasazení pro řešení Office](../vsto/deployment-manifests-for-office-solutions.md).|
 |-202|Řešení nelze nainstalovat, protože Visual Studio Tools for Office části manifestu aplikace není platný. Zobrazit [manifesty aplikace pro řešení Office](../vsto/application-manifests-for-office-solutions.md).|
