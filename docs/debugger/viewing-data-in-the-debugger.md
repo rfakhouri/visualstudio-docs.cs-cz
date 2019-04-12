@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e7d64cc1ae937ee7e68d04c95b56cc02c7612d8
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 32b3fddd13bd16ac2c846f02f54596ec846374b9
+ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56710484"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "59537488"
 ---
 # <a name="create-custom-views-of-data-in-the-visual-studio-debugger-c-visual-basic-c"></a>Vytváření vlastních zobrazení dat v ladicím programu sady Visual Studio (C#, Visual Basic, C++)
 
@@ -32,7 +32,7 @@ ms.locfileid: "56710484"
 
 ## <a name="create-custom-views-of-data-in-variable-windows-and-datatips"></a>Vytváření vlastních zobrazení dat v oknech proměnných a datové tipy
 
- Mnoho [ladicího programu systému windows](../debugger/debugger-windows.md), například **automatické hodnoty** a **Watch** windows, můžete kontrolovat proměnné. Můžete přizpůsobit typy jak nativní, spravované objekty, a vlastních typů jsou zobrazeny v oknech proměnných ladicího programu a [DataTips](../debugger/view-data-values-in-data-tips-in-the-code-editor.md). Další informace najdete v tématu [vytváření vlastních zobrazení nativních objektů](../debugger/create-custom-views-of-native-objects.md) a [vytváření vlastních zobrazení objektů](../debugger/create-custom-views-of-dot-managed-objects.md).
+ Mnoho [ladicího programu systému windows](../debugger/debugger-windows.md), například **automatické hodnoty** a **Watch** windows, můžete kontrolovat proměnné. Můžete přizpůsobit způsob C++ typů spravovaných objektů a vlastních typů jsou zobrazeny v oknech proměnných ladicího programu a [DataTips](../debugger/view-data-values-in-data-tips-in-the-code-editor.md). Další informace najdete v tématu [vytváření vlastních zobrazení C++ objekty](../debugger/create-custom-views-of-native-objects.md) a [vytváření vlastních zobrazení objektů](../debugger/create-custom-views-of-dot-managed-objects.md).
 
 ## <a name="create-custom-visualizers"></a>Vytváření vlastních vizualizérů
 

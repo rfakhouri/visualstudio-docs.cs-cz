@@ -1,5 +1,5 @@
 ---
-title: Používání atributu DebuggerDisplay | Dokumentace Microsoftu
+title: Zobrazit vlastní informace o použití DebuggerDisplay | Dokumentace Microsoftu
 ms.date: 01/09/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4073ad5f112f0585f01de756f2cde4b352b7446a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 5b9c98411e378601280d36dbe4720864177d4019
+ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56680183"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "59537634"
 ---
-# <a name="using-the-debuggerdisplay-attribute-c-visual-basic-f-ccli"></a>Používání atributu DebuggerDisplay (C#, Visual Basic, F#, C + +/ CLI)
+# <a name="tell-the-debugger-what-to-show-using-the-debuggerdisplay-attribute-c-visual-basic-f-ccli"></a>Ladicí program říct, co se má zobrazit, pomocí atributu DebuggerDisplay (C#, Visual Basic, F#, C++vyhodnocovací)
 <xref:System.Diagnostics.DebuggerDisplayAttribute> Ovládací prvky zobrazení objektu, vlastnost nebo pole v oknech proměnných ladicího programu. Tento atribut lze použít pro typy delegátů, vlastnosti, pole a sestavení.
 
 `DebuggerDisplay` Atribut má jeden argument, což je řetězec, který se zobrazí ve sloupci Hodnota pro instance daného typu. Tento řetězec může obsahovat složené závorky (`{` a `}`). Text v rámci dvojici závorek je vyhodnocen jako pole, vlastnosti nebo metody.
@@ -32,7 +32,7 @@ Určuje, zda ladicí program vyhodnotí tomto implicitní `ToString()` volání 
 > Pokud **zobrazit nezpracovanou strukturu objektů v oknech proměnných** zaškrtněte políčko v **nástroje/Možnosti / ladění** dialogové okno, pak bude `DebuggerDisplay` atribut se ignoruje.
 
 > [!NOTE]
-> Pro nativní kód, tento atribut je podporován pouze v jazyce C + +/ CLI kódu.
+> Pro nativní kód, tento atribut je podporován pouze v C++vyhodnocovací kódu.
 
 V následující tabulce jsou uvedeny některé možné způsoby použití `DebuggerDisplay` atribut a příklad výstupy.
 

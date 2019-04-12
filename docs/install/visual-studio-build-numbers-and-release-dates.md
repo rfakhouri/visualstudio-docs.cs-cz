@@ -6,7 +6,7 @@ keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 04/10/2019
+ms.date: 04/11/2019
 ms.topic: reference
 helpviewer_keywords: ''
 ms.custom: seodec18
@@ -14,12 +14,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: cfd8d9346f9e9d0df5376a35b90c6bbcfb24603c
-ms.sourcegitcommit: 0a2fdc23faee77187e10a1c19665ba5a1ac68e72
+ms.openlocfilehash: 6246291a00a86a3cde0e3a9cf134724d9dc470ed
+ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/10/2019
-ms.locfileid: "59477551"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "59537647"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Čísla sestavení a data vydání sady Visual Studio
 
@@ -29,7 +29,7 @@ ms.locfileid: "59477551"
 
 Následující tabulka uvádí data čísla a uvolnění sestavení pro Visual Studio 2017 k datu.
 
-| **Version**| **Kanál** | **Datum vydání** | **Verze buildu** |
+| **Verze**| **Kanál** | **Datum vydání** | **Verze buildu** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
 | 15.9.11 | Vydaná verze | 2. dubna 2019 | 15.9.28307.586 |
 | 15.9.10 | Vydaná verze | 25. března 2019 | 15.9.28307.557 |
@@ -191,8 +191,9 @@ Následující tabulka uvádí data čísla a uvolnění sestavení pro Visual S
 
 Následující tabulka obsahuje kalendářní data pro čísla a uvolnění sestavení pro Visual Studio 2019 k datu.
 
-| **Version**| **Kanál** | **Datum vydání** | **Verze buildu** |
+| **Verze**| **Kanál** | **Datum vydání** | **Verze buildu** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.1.0 | Ve verzi Preview 1 | 10. dubna 2019 | 16.1.28809.33 |
 | 16.0.1 | Vydaná verze | 9. dubna 2019 | 16.0.28803.156 |
 | 16.0.1 | Ve verzi Preview 1 | 9. dubna 2019 | 16.0.28803.156 |
 | 16.0.0 | Vydaná verze | 2. dubna 2019 | 16.0.28729.10 |
@@ -225,7 +226,7 @@ Následující tabulka obsahuje kalendářní data pro čísla a uvolnění sest
 
 ## <a name="see-also"></a>Viz také:
 
-* [Visual Studio vydávání nových verzí](/visualstudio/productinfo/release-rhythm/)
-* [Příručka správce sady Visual Studio](visual-studio-administrator-guide.md)
+* [Frekvence vydávání nových verzí sady Visual Studio](/visualstudio/productinfo/release-rhythm/)
+* [Příručka pro správce aplikace Visual Studio](visual-studio-administrator-guide.md)
 * [Instalace sady Visual Studio s použitím parametrů příkazového řádku](use-command-line-parameters-to-install-visual-studio.md)
 * [Nástroje pro zjišťování a správu instancí sady Visual Studio](tools-for-managing-visual-studio-instances.md)

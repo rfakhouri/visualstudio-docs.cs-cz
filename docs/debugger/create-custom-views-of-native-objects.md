@@ -1,5 +1,5 @@
 ---
-title: Vytváření vlastních pohledů nativních objektů
+title: Vytváření vlastních zobrazení C++ objekty
 description: Pomocí rozhraní Natvis přizpůsobit tak, že Visual Studio zobrazuje nativní typy v ladicím programu
 ms.date: 10/31/2018
 ms.topic: conceptual
@@ -13,14 +13,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fa0f457c81b39f05a18250a5c7ece7533ccc1788
-ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
+ms.openlocfilehash: 1f56dda1f64a0bd50a6bb81b981ad4add7d9c095
+ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57428801"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "59537574"
 ---
-# <a name="create-custom-views-of-native-objects-in-the-debugger"></a>Vytváření vlastních zobrazení nativních objektů v ladicím programu
+# <a name="create-custom-views-of-c-objects-in-the-debugger"></a>Vytváření vlastních zobrazení C++ objektů v ladicím programu
 
 Visual Studio *Natvis* framework přizpůsobí tak, jak zobrazit nativní typy v oknech proměnných ladicího programu, třeba **lokální** a **Watch** windows a v **DataTips**. Vizualizace Natvis můžou pomoct typy, které můžete vytvořit více viditelné během ladění.
 
@@ -165,7 +165,7 @@ Pokud ladicí program narazí na chyby v položce vizualizace, se ignoruje. Je b
 
 **Chcete-li na Diagnostika Natvis:**
 
-- V části **nástroje** > **možnosti** (nebo **ladění** > **možnosti**) > **ladění**  >  **Okno výstup**, nastavte **diagnostické zprávy Natvis (pouze C++)** k **chyba**, **upozornění**, nebo  **Podrobné**a pak vyberte **OK**.
+- V části **nástroje** > **možnosti** (nebo **ladění** > **možnosti**) > **ladění**  >  **Okno výstup**, nastavte **diagnostické zprávy Natvis (C++ pouze)** k **chyba**, **upozornění** , nebo **Verbose**a pak vyberte **OK**.
 
 Chyby se zobrazí v **výstup** okna.
 

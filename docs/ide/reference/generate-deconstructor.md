@@ -9,12 +9,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8887f4cd6b4dcd7f08e808f1271f5d546d6a224c
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: f24fa988cf14bbf48fe157e2b9ee538d3eff2f35
+ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58159176"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "59537527"
 ---
 # <a name="generate-a-deconstructor-in-visual-studio"></a>Generování deconstructor v sadě Visual Studio
 
@@ -26,21 +26,21 @@ Tato generace kód platí pro:
 
 **Kdy:** Chcete automaticky správně dekonstruovat typu.
 
-**Proč:** Deconstructor, můžete zadat ručně, ale tato funkce bude generovat zástupná procedura za vás se správnými výstupní parametry.
+**Proč:** Můžete zadat ručně deconstructor, ale tato funkce generuje zástupná procedura za vás se správnými výstupní parametry.
 
-## <a name="generate-deconstructor"></a>Generování dekonstruktorů
+## <a name="generate-a-deconstructor"></a>Generování deconstructor
 
-1. Deklarujte nový typ s požadovanou si zadanými parametry. Tato deklarace způsobí chybu, pokud žádná instance deconstruct najdete odpovídající vaší deklarace.
+1. Deklarujte nový typ s požadovanou si zadanými parametry. Tato deklarace způsobí chybu při najdete žádná instance deconstruct odpovídající vaší deklarace.
 
    ![Chybějící deconstructor chyba](media/deconstruct.png)
 
-2. Dále proveďte jednu z následujících postupů v:
+2. Proveďte jednu z následujících kroků:
 
    - **Klávesnice**
-      - Kurzor v vašeho prohlášení, stiskněte **Ctrl**+**.** aktivační událost **rychlé akce a Refaktoringy** nabídky.
+      - Kurzor v vašeho prohlášení vyberte kombinaci kláves Ctrl +. aktivační událost **rychlé akce a Refaktoringy** nabídky.
    - **Myši**
       - Klikněte pravým tlačítkem a vyberte **rychlé akce a Refaktoringy** nabídky.
-      - Klikněte na ![šroubovák](media/screwdriver.png) ikona, která se zobrazí u levého okraje, pokud textový kurzor na prázdný řádek ve třídě.
+      - Vyberte ![šroubovák](media/screwdriver.png) ikona, která se zobrazí u levého okraje, pokud textový kurzor na prázdný řádek ve třídě.
 
       ![Generovat deconstructor opravu kódu](media/deconstruct-codefix.png)
 

@@ -9,12 +9,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: afd4b758332d9357dc20dd84e726d72da4d2db74
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: 0ce1b620a6d8aba7e4aea767745891dff6d9f869
+ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355181"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "59537501"
 ---
 # <a name="generate-usings-in-visual-studio"></a>Generovat direktivy using v sadě Visual Studio
 
@@ -22,20 +22,20 @@ Tato generace kód platí pro:
 
 - C#
 
-**Co:** Umožňuje okamžitě přidat nezbytných importů nebo [příkazy using](/dotnet/csharp/language-reference/keywords/using-statement) kopírování a vložení kódu.
+**Co:** Umožňuje okamžitě přidat nezbytných importů nebo [příkazy using](/dotnet/csharp/language-reference/keywords/using-statement) pro kopírování a vložení kódu.
 
-**Kdy:** Je běžnou praxí zkopírujte a vložte kód z různých míst v projektu nebo jiných zdrojů kódu. Této rychlé akce analyzuje chybějící importy pro kopírování a vložení kódu a potom vás vyzve, abyste je přidat.
+**Kdy:** Je běžnou praxí zkopírovat kód z různých míst v projektu nebo jiných zdrojů a vložte ji do nového kódu. Tato rychlá akce vyhledá chybějící importuje příkazy pro kopírování a vložení kódu a potom vás vyzve, abyste je přidat.
 
-**Proč:** Automaticky přidáním nezbytných importů, že uživatel nemusí ručně zkopírovat potřebnou `using` příkazy.
+**Proč:** Protože rychlá akce automaticky přidá nezbytných importů, není nutné ručně zkopírovat `using` příkazy, které potřebuje váš kód.
 
 ## <a name="generate-usings-refactoring"></a>Generovat refaktoring direktivy using
 
-1. Zkopírujte a vložte kód z jiného souboru bez zahrnutí nezbytné `using` příkazy. Chybu teď doplněny opravu kódu, který přidá chybějící `using` příkazy.
+1. Zkopírujte kód ze souboru a vložte ho do nového objektu bez zahrnutí nezbytné `using` příkazy. Výsledná chyba je přiložena opravu kódu, který přidá chybějící `using` příkazy.
 
     > [!NOTE] 
-    > Tento návrh musí být nastavená na on **nástroje > Možnosti > textový Editor > C# > Upřesnit > direktivy Using**.
+    > Je nutné povolit tohoto návrhu v **nástroje > Možnosti > textový Editor > C# > Upřesnit > direktivy Using**.
 
-2. Stisknutím klávesy **Ctrl**+**.** Chcete-li otevřít **rychlé akce a Refaktoringy** nabídky. 
+2. Vyberte kombinaci kláves Ctrl +. Chcete-li otevřít **rychlé akce a Refaktoringy** nabídky.
 
     ![Generování příkazů using](media/generate-using-codefix.png)
 

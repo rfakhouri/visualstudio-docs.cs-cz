@@ -1,5 +1,5 @@
 ---
-title: Používání atributu DebuggerTypeProxy | Dokumentace Microsoftu
+title: Zobrazit vlastní typ pomocí DebuggerTypeProxy | Dokumentace Microsoftu
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,14 +17,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 011f5dc9525a8a5f88f3cc923eb56dde58313d85
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: c379fbeb9d17f92dcc7067424ea06bb1a2805ed1
+ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56717491"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "59537540"
 ---
-# <a name="using-debuggertypeproxy-attribute-c-visual-basic-ccli"></a>Používání atributu DebuggerTypeProxy (C#, Visual Basic, C + +/ CLI)
+# <a name="tell-the-debugger-what-type-to-show-using-debuggertypeproxy-attribute-c-visual-basic-ccli"></a>Ladicí program zjistit, jaký typ zobrazíte používání atributu DebuggerTypeProxy (C#, Visual Basic, C++vyhodnocovací)
 
 <xref:System.Diagnostics.DebuggerTypeProxyAttribute> Určuje proxy server nebo stand-in pro typ a provedené změny tak, jak typ se zobrazí v oknech ladicího programu. Pokud zobrazíte proměnnou, která má proxy server, proxy zastupuje původní typ v **zobrazit**. V okně proměnné ladicího programu se zobrazí pouze veřejné členy typu proxy. Soukromé členy nejsou zobrazeny.
 
@@ -35,7 +35,7 @@ Tento atribut lze použít pro:
 - Sestavení
 
 > [!NOTE]
-> Pro nativní kód, tento atribut je podporován pouze v jazyce C + +/ CLI kódu.
+> Pro nativní kód, tento atribut je podporován pouze v C++vyhodnocovací kódu.
 
 Typ třídy proxy server musí mít konstruktor, který přebírá argument typu, který nahradí proxy serveru. Ladicí program vytvoří novou instanci třídy proxy pokaždé, když je potřeba zobrazení proměnné cílového typu. To může mít vliv na výkon. V důsledku toho by neměla provést žádné další práci v konstruktoru, než je nezbytně nutné.
 

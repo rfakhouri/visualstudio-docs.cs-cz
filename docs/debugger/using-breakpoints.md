@@ -34,12 +34,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 59b654472b9173d5cb5559a57f644113b382fdb8
-ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
+ms.openlocfilehash: 9cfb3e68f1f967c3c74c93107b622c618a8af728
+ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59504325"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "59537595"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Používání zarážek v ladicím programu sady Visual Studio
 Zarážky jsou jedním z nejdůležitějších technik ladění mezi nástroji pro vývojáře sady nástrojů. Můžete nastavit zarážky, bez ohledu na to chcete provést pozastavení spuštění ladicího programu. Můžete například zobrazit stav proměnných kódu se také podívat na zásobník volání na určité zarážce. Pokud je to poprvé, kterou jste se pokusili ladění kódu, můžete chtít číst [ladění pro naprosté začátečníky](../debugger/debugging-absolute-beginners.md) před provedením tohoto článku.
@@ -176,13 +176,13 @@ Datové zarážky v .NET Core nebude fungovat pro:
 
 **Chcete-li nastavit zarážku dat:**
 
-1.  V projektu jazyka C++ spustit ladění a počkejte, dokud není dosaženo zarážky. Na **ladění** nabídce zvolte **Nová zarážka** > **datová zarážka**
+1. V projektu jazyka C++ spustit ladění a počkejte, dokud není dosaženo zarážky. Na **ladění** nabídce zvolte **Nová zarážka** > **datová zarážka**
 
     Můžete také vybrat **nový** > **datová zarážka** v **zarážky** okno nebo klikněte pravým tlačítkem na položku **automatické hodnoty**, **Watch**, nebo **lokální** okna a vyberte **přerušit, když se změní hodnota**v místní nabídce.
 
-2.  V **adresu** zadejte adresu paměti nebo výraz, který vyhodnocuje adresu paměti. Zadejte například `&avar` pro přerušení, když obsah proměnné `avar` změny.
+2. V **adresu** zadejte adresu paměti nebo výraz, který vyhodnocuje adresu paměti. Zadejte například `&avar` pro přerušení, když obsah proměnné `avar` změny.
 
-3.  V **počet bajtů** rozevíracím seznamu vyberte počet bajtů, které chcete ladicí program sledoval. Pokud vyberete třeba **4**, ladicí program bude sledovat čtyři bajty počínaje `&avar` a přerušit, pokud některý z těchto bajtů změní hodnotu.
+3. V **počet bajtů** rozevíracím seznamu vyberte počet bajtů, které chcete ladicí program sledoval. Pokud vyberete třeba **4**, ladicí program bude sledovat čtyři bajty počínaje `&avar` a přerušit, pokud některý z těchto bajtů změní hodnotu.
 
 Zarážky data nefungují za těchto podmínek:
 -   Proces, který se neladí se zapíše do umístění v paměti.

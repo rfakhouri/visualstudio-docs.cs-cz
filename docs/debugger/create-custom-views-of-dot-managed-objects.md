@@ -23,23 +23,23 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 748305683ad8f874c985e2599028152d608ccc84
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 733f3ec7573287e934f8a5f0167db89c0683759a
+ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56597415"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "59537475"
 ---
 # <a name="create-custom-views-of-objects-c-visual-basic-c"></a>Vytváření vlastních zobrazení objektů (C#, Visual Basic, C++)
 Můžete přizpůsobit tak, jak Visual Studio zobrazí datové typy v oknech proměnných ladicího programu.
 
 ## <a name="native-code"></a>Nativní kód
 
-Pro kód jazyka C++, můžete přidat vlastní datový typ rozšíření pomocí rozhraní Natvis, jak je popsáno v [vytváření vlastních pohledů nativních objektů v ladicím programu](/visualstudio/debugger/create-custom-views-of-native-objects). Pro C + +/ CLI kódu, můžete také použít atributy, které jsou zde popsané v tomto článku.
+Pro C++ kódu, můžete přidat vlastní datový typ rozšíření pomocí rozhraní Natvis, jak je popsáno v [vytváření vlastních zobrazení C++ objektů v ladicím programu](/visualstudio/debugger/create-custom-views-of-native-objects). Pro C++/rozhraní příkazového řádku kódu, můžete také použít atributy, které jsou zde popsané v tomto článku.
 
 ## <a name="attributes"></a>Atributy
 
-V C#, Visual Basic a C++ (C + +/ CLI kódu pouze), přidáte rozšíření pro vlastní data s využitím <xref:System.Diagnostics.DebuggerTypeProxyAttribute>, <xref:System.Diagnostics.DebuggerDisplayAttribute>, a <xref:System.Diagnostics.DebuggerBrowsableAttribute>.
+V C#, Visual Basic a C++ (C++vyhodnocovací jenom kód), přidáte rozšíření pro vlastní data s využitím <xref:System.Diagnostics.DebuggerTypeProxyAttribute>, <xref:System.Diagnostics.DebuggerDisplayAttribute>, a <xref:System.Diagnostics.DebuggerBrowsableAttribute>.
 
 V [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] kódu Visual Basic nepodporuje atribut DebuggerBrowsable. Toto omezení neplatí v novějších verzích rozhraní .NET Framework.
 
@@ -49,7 +49,7 @@ Můžete napsat vizualizéru pro zobrazení libovolného typu spravovaná data. 
 
 ## <a name="see-also"></a>Viz také
 
-- [Používání atributu DebuggerTypeProxy](../debugger/using-debuggertypeproxy-attribute.md)
-- [Používání atributu DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md)
+- [Ladicí program říct, co se má zobrazit, pomocí atributu DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md)
+- [Ladicí program zjistit, jaký typ zobrazíte používání atributu DebuggerTypeProxy](../debugger/using-debuggertypeproxy-attribute.md)
 - [Okna Kukátko a Rychlé kukátko](../debugger/watch-and-quickwatch-windows.md)
 - [Rozšíření ladění pomocí atributů zobrazení ladicího programu](/dotnet/framework/debug-trace-profile/enhancing-debugging-with-the-debugger-display-attributes)
