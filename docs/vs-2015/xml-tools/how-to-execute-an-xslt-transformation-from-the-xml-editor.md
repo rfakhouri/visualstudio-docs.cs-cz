@@ -9,17 +9,16 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b4b9adf7d453ba1ecb0d3c0e3dc494c2e6b24fbc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: cf4696827f0c94e9eb9dfbd88a5e814298f823e1
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54805573"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649521"
 ---
 # <a name="how-to-execute-an-xslt-transformation-from-the-xml-editor"></a>Postupy: Provedení transformace XSLT z editoru XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 XML Editor lze přidružit k dokumentu XML, šablony stylů XSLT provedení transformace a zobrazte výstup. Výsledný výstup z transformace XSLT se zobrazí v novém okně dokumentu.  
   
  **Výstup** vlastnost určuje název souboru pro výstup. Pokud **výstup** je vlastnost prázdná, jejichž název souboru se vygeneruje v dočasném adresáři. Přípona souboru je založen na `xsl:output` prvek vašemu stylu listů a může být XML, txt nebo htm.  

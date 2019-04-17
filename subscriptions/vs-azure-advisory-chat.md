@@ -7,14 +7,14 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Naučte se, abyste mohli využívat výhody Azure Advisory Chat součástí předplatných sady Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: e353878d7e911bb38dce80470e77a65f3be85c88
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: e9640fc17f2fa924bc51ab536366479b72de0f36
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841010"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59656112"
 ---
-# <a name="azure-advisory-chat"></a>Azure Advisory Chat
+# <a name="azure-advisory-chat"></a>Chat s poradcem pro Azure
 
 Získejte pomoc při zahájení práce s Azure v reálném čase! Zahrnuje Poradce pro služby Azure PaaS.  Výhoda Azure Advisory Chat je k dispozici v aplikaci Visual Studio Enterprise na úrovni Standard a roční Cloudová předplatná.
 
@@ -48,7 +48,6 @@ Použití poradce Azure konverzace je jednoduché.
 
 > [!NOTE]
 > Microsoft už nenabízí Visual Studio Professional ročních předplatných a předplatných Visual Studio Enterprise roční Cloudová předplatná. Nebude bez nutnosti změn stávajících zkušeností zákazníků a možnost obnovit, zvýšit, snížit nebo zrušit předplatná. Nové nepodnikovým zákazníkům přejít na [ https://visualstudio.microsoft.com/vs/pricing/ ](https://visualstudio.microsoft.com/vs/pricing/) a prozkoumejte různé možnosti pro zakoupení sady Visual Studio.
-
 
 Nejste si jistí které předplatné používáte?  Připojte se k [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) zobrazíte všechna předplatná, která jsou přiřazená e-mailovou adresu. Pokud se nezobrazí všechna předplatná, může mít jeden nebo více přiřazené na jinou e-mailovou adresu.  Bude potřeba přihlásit se přes tento e-mailovou adresu najdete v těchto předplatných.
 

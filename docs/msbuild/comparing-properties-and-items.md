@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 70d86074dabc4365d1d0336f191beada215f4dc1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 3cc0cdb635c90275289f96c55ae68976ffc5edc9
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56640633"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59657269"
 ---
 # <a name="compare-properties-and-items"></a>Porovnávání vlastností a položek
 Vlastnosti nástroje MSBuild a položek se používají k předávání informací do úlohy, vyhodnocení podmínky a ukládat hodnoty, které může být odkazováno v celém souboru projektu.
@@ -86,7 +86,6 @@ Během fáze vyhodnocení sestavení importované soubory jsou součástí sesta
 - Definice položek jsou definovány a upravovat v pořadí, ve kterém jsou uvedeny.
 
 - Položky jsou definovány a upravovat v pořadí, ve kterém jsou uvedeny.
-
 
 Během fáze spuštění sestavení vlastností a položek, které jsou definovány v rámci cíle jsou vyhodnocovány společně v jedné fáze v pořadí, v jakém jsou uvedeny.
 

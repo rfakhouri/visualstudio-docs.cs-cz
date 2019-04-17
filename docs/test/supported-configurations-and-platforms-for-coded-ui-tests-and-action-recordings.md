@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: df0955cc86ef3b57885234fe4e7b1a52fa37f950
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: e0bb62bb8b7ea64bc01e18e47974d4035b9e1bd1
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796566"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59666687"
 ---
 # <a name="supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings"></a>Podporované konfigurace a platformy pro programové testy uživatelského rozhraní a zaznamenávání akcí
 
@@ -40,7 +40,6 @@ V následující tabulce jsou uvedeny podporované konfigurace a platformy pro p
 
 > [!NOTE]
 > *Uživatelské rozhraní Synchronization.n* je funkce, kde je ověřeno přehrávání ve frontě zpráv každého ovládacího prvku. Pokud ovládací prvek neodpověděl na událost, která mu byla zaslána, událost je odeslána znovu.
-
 
 ## <a name="platform-support"></a>Podpora platforem
 

@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 43648fb87202e3f61342bcabfc3acb55541a9985
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 46b7a159fb2d15f817cad47817262202397d3981
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56627971"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654318"
 ---
 # <a name="troubleshoot-specific-errors-in-clickonce-deployments"></a>Řešení konkrétních chyb v nasazeních ClickOnce
 Tento článek uvádí následující běžné chyby, které se mohou vyskytnout při nasazení [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace a popisuje kroky k vyřešení jednotlivých problémů.
@@ -121,7 +121,6 @@ Tento článek uvádí následující běžné chyby, které se mohou vyskytnout
 
 ## <a name="additional-errors"></a>Další chyby
  V následující tabulce jsou uvedeny některé běžné chybové zprávy, které klientské počítače uživatele může zobrazit, když uživatel nainstaluje [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace. Každá chybová zpráva je uvedená vedle popis nejvíce pravděpodobné příčiny chyby.
-
 
 | Chybová zpráva | Popis |
 | - | - |

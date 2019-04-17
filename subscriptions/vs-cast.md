@@ -7,19 +7,18 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Další informace o benefitech PŘETYPOVÁNÍ zvýrazněte k dispozici ve vybraných předplatných sady Visual Studio
 searchscope: VS Subscription
-ms.openlocfilehash: 1858170bb57d4ea46b1aac1d08857dea9609d22d
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 1d4466fa2a4fac38849a7b157921094d769a4e04
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56840894"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59650132"
 ---
 # <a name="the-cast-highlight-benefit-in-visual-studio-subscriptions"></a>Zvýrazněte PŘETYPOVÁNÍ výhoda v předplatných sady Visual Studio
 
 Vývojáři potřebují zásadních informací na svůj software při migraci do cloudu. Pomocí PŘETYPOVÁNÍ zvýraznit předplatitelé sady Visual Studio Enterprise rychle zkontrolovat svůj zdrojový kód aplikace k identifikaci připravenosti cloudových aplikací pro migraci do Azure a monitorovat průběh jejich aplikace během a po migraci.
 
 Předplatitelé sady Visual Studio Enterprise můžete získat předplatné jeden měsíc zadarmo si vyzkoušejte úplné funkce zvýrazněte PŘETYPOVÁNÍ pro až o pěti aplikace na předplatitele.
-
 
 ## <a name="activation-steps"></a>Postup aktivace
 
@@ -29,7 +28,6 @@ Předplatitelé sady Visual Studio Enterprise můžete získat předplatné jede
 
    > [!div class="mx-imgBorder"]
    > ![PŘETYPOVÁNÍ zvýraznění výhodu dlaždice](_img/vs-cast-highlight/vs-cast-highlight-tile.png)
-
 
 0. Zobrazí se zpráva oznamující, váš kód byl úspěšně načten.  Klikněte na tlačítko **aktivovat**, v tomto okamžiku budete přesměrováni na stránku zvýrazněte PŘETYPOVÁNÍ, kde můžete pokračovat v procesu aktivace.  (Pokud nevyberete aktivovat, vždy se můžete vrátit zpět k dlaždici zvýrazněte PŘETYPOVÁNÍ na portálu předplatného.  Odkaz "Kopie kódu" se změní na "Aktivovat", a že na něj kliknete bude pokračovat, proces aktivace.)
 
@@ -57,7 +55,6 @@ Předplatitelé sady Visual Studio Enterprise můžete získat předplatné jede
    *Nejlepším řešením,*
    *Greg*
 
-
 Po schválení vaší žádosti obdržíte e-mail s druhou potvrzení úspěšné vytvoření vašeho účtu a s výzvou, abyste na aktivační odkaz pro dokončení procesu aktivace.
 
    *Úspěšně jsme ověřit a ověřit vaši žádost o přístup k PŘETYPOVÁNÍ zvýraznění. Vítejte na palubě!*
@@ -78,10 +75,8 @@ Po schválení vaší žádosti obdržíte e-mail s druhou potvrzení úspěšn�
    *Nejlepším řešením,*
    *Greg*
 
-
    > [!NOTE]
    > Ujistěte se, že klikněte na aktivační odkaz v e-mailu, který jste dostali.  V opačném případě nebude možné přístup k vašemu předplatnému zvýrazněte PŘETYPOVÁNÍ. Pokud nevidíte e-mailu v doručené poště, nezapomeňte se podívat složky s nevyžádanou poštou.
-
 
 ## <a name="eligibility"></a>Způsobilost
 
@@ -95,14 +90,10 @@ Po schválení vaší žádosti obdržíte e-mail s druhou potvrzení úspěšn�
 | Visual Studio Enterprise (Standard)  | NFR<sup>1</sup> |Není k dispozici  | Není k dispozici |
 | Visual Studio Enterprise, Visual Studio Professional (měsíční cloud) | Azure | Není k dispozici | Není k dispozici |
 
-
-
 <sup>1</sup>*zahrnuje:  Není pro prodej (NFR) FTE, nejcennější Professional (MVP), Regional Director (RD), Microsoft Partner Network (MPN), Visual Studio Industry Partner (VSIP), Microsoft Certified Trainer, BizSpark, Imagine*
-
 
 > [!NOTE]
 > Microsoft už nenabízí Visual Studio Professional ročních předplatných a předplatných Visual Studio Enterprise roční Cloudová předplatná. Nebude bez nutnosti změn stávajících zkušeností zákazníků a možnost obnovit, zvýšit, snížit nebo zrušit předplatná. Nové nepodnikovým zákazníkům přejít na [ https://visualstudio.microsoft.com/vs/pricing/ ](https://visualstudio.microsoft.com/vs/pricing/) a prozkoumejte různé možnosti pro zakoupení sady Visual Studio.
-
 
 Nejste si jistí které předplatné používáte?  Připojte se k [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) zobrazíte všechna předplatná, která jsou přiřazená e-mailovou adresu. Pokud se nezobrazí všechna předplatná, může mít jeden nebo více přiřazené na jinou e-mailovou adresu.  Bude potřeba přihlásit se přes tento e-mailovou adresu najdete v těchto předplatných.
 

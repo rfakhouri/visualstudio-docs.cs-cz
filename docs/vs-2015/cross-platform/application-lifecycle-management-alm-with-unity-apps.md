@@ -9,17 +9,16 @@ caps.latest.revision: 14
 author: conceptdev
 ms.author: crdun
 manager: jillfra
-ms.openlocfilehash: b37f379fc60a260e7c16e87d7c1553429e73fbad
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c4f431dba7f9732333812f64b44db52358071996
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54778588"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658796"
 ---
 # <a name="application-lifecycle-management-alm-with-unity-apps"></a>Application Lifecycle Management (ALM) s aplikacemi Unity
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Vývoj aplikací pro moderní platformy zahrnuje mnoho aktivit více než jen psaní kódu. Tyto aktivity také říká DevOps (vývoj + operations) span kompletní životní cyklus aplikace a zahrnují plánování a sledování práce, navrhování a implementace kódu, správu úložiště zdrojového kódu, běžících sestavení, Správa průběžné integrace nasazení, testování (včetně jednotkové testy a testy uživatelského rozhraní), spuštění různé formy diagnostiku ve vývojovém a produkčním prostředí a sledování výkonu a uživatel chování aplikací v reálném čase prostřednictvím telemetrie a analýz.  
   
  Visual Studio spolu s Visual Studio Team Services a Team Foundation Server poskytuje širokou škálu možnosti DevOps, také označuje jako správa životního cyklu aplikací nebo ALM. Mnohé z nich se vztahují na projekty napříč platformami, včetně hry a atraktivní grafických aplikací vytvořených v Unity, zvláště při použití jazyka C# jako skriptovací jazyk. Ale protože Unity má svou vlastní vývojové prostředí a modulu runtime, mnoho funkcí ALM nemůžete použít jako u jiných typů projektů vytvořených v sadě Visual Studio.  

@@ -20,17 +20,16 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 24f53af16bcab0e3ff631a7c264f139f94d92232
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d6b6428681815f20951b090075e859959a4e3180
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54754946"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59660858"
 ---
 # <a name="create-and-configure-tableadapters"></a>Vytvoření a konfigurace objektů TableAdapter
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Objekty TableAdapter umožňují komunikaci mezi aplikací a databází. Připojení k databázi, spouštění dotazů nebo uložených procedur a buď vrátí nová data tabulky nebo zadejte existující <xref:System.Data.DataTable> s vrácenými daty. Objekty TableAdapter lze také odeslat aktualizovaná data z aplikace zpět do databáze.  
   
  Objekty TableAdapter jsou vytvořeny pro vás při provádění jednoho z následujících akcí:  

@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 43844fc1e8ffed9853f287f82e79d9859b774755
-ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
+ms.openlocfilehash: 54288f345276a019bf8fd6987a9e138c53c8a9e2
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "58897683"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59667375"
 ---
 # <a name="common-msbuild-project-items"></a>Společné položky projektu nástroje MSBuild
 V [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], položka je pojmenovaný odkaz na jeden nebo více souborů. Položky obsahují metadat – například názvy souborů, cesty a čísel verzí. Všechny typy v projektu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] mají společnou několik položek. Tyto položky jsou definovány v souboru *Microsoft.Build.CommonTypes.xsd*.
@@ -45,7 +45,7 @@ V [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md
 
 |Název metadat položky|Popis|
 |---------------|-----------------|
-|Název|Volitelný řetězec. Zobrazovaný název součásti.|
+|Name|Volitelný řetězec. Zobrazovaný název součásti.|
 |Guid|Povinný řetězec. Identifikátor GUID pro komponentu ve formě {12345678-1234-1234-1234-1234567891234}.|
 |VersionMajor|Povinný řetězec. Hlavní část čísla verze komponenty. Například "5" Pokud celé číslo verze je "5.46."|
 |VersionMinor|Povinný řetězec. Dílčí část čísla verze komponenty. Například "46" Pokud celé číslo verze je "5.46."|
@@ -81,7 +81,6 @@ V [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md
 ### <a name="compile"></a>Kompilace
  Představuje zdrojové soubory pro kompilátor.
 
-
 | Název metadat položky | Popis |
 |-----------------------| - |
 | DependentUpon | Volitelný řetězec. Určuje soubor, tento soubor, na kterém závisí na správnou kompilaci. |
@@ -92,7 +91,6 @@ V [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md
 
 ### <a name="embeddedresource"></a>EmbeddedResource
  Představuje prostředky mají být vloženy do generovaného sestavení.
-
 
 | Název metadat položky | Popis |
 |-----------------------| - |
@@ -108,7 +106,6 @@ V [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md
 ### <a name="content"></a>Obsah
  Představuje soubory, které nejsou kompilovány do projektu, ale může vloženy nebo publikovány společně s jeho.
 
-
 | Název metadat položky | Popis |
 |-----------------------| - |
 | DependentUpon | Volitelný řetězec. Určuje soubor, tento soubor, na kterém závisí na správnou kompilaci. |
@@ -123,7 +120,6 @@ V [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md
 
 ### <a name="none"></a>Žádné
  Představuje soubory, které by se neměly nijak podílet v procesu sestavení.
-
 
 | Název metadat položky | Popis |
 |-----------------------| - |

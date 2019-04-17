@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a7ea9c2efd6a204932e24de0ef250ba143b8b34
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 60ef24f91d7b450de4ed4779a6d128032bd8b564
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55925459"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59661695"
 ---
 # <a name="options-text-editor-basic-visual-basic-advanced"></a>Rozšířené možnosti, textový Editor, Basic (Visual Basic)
 **VB konkrétní** stránce vlastností **základní** složky **textový Editor** složky **možnosti** (**nástroje** nabídky) dialogové okno obsahuje následující vlastnosti:
@@ -50,7 +50,6 @@ ms.locfileid: "55925459"
    Když tyto možnosti jsou vybrané, [rychlá akce](../quick-actions.md) je k dispozici pro instalaci balíčku NuGet a přidejte `using` směrnice pro neodkazovaný typy.
 
    ![Rychlé akce pro instalaci balíčku NuGet v sadě Visual Studio](media/nuget-lightbulb.png)
-
 
 ## <a name="highlighting"></a>Zvýraznění
 

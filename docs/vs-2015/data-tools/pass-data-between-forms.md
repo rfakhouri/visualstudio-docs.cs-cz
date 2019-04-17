@@ -20,17 +20,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d2546266d1b050de6a08e7ba8e2f1526acc0291b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 9a109490c4ff89c6a9f45533fc1305d915522621
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54783356"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668935"
 ---
 # <a name="pass-data-between-forms"></a>Předávání dat mezi formuláři
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Tento názorný postup obsahuje podrobné pokyny pro předávání dat z jednoho formuláře. Pomocí zákazníci a objednávky tabulky z databáze Northwind, jeden formulář umožňuje uživatelům vybrat zákazníka a druhý formulář pro zobrazení objednávek pro vybraného zákazníka. Tento návod ukazuje, jak vytvořit metodu na druhý formulář, který přijímá data z první formuláře.  
   
 > [!NOTE]

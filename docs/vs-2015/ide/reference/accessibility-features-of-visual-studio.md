@@ -12,16 +12,15 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 519eefc9260816fcbbbbd3dd8672bbaeebb3429f
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: eebaaf8887358e1eb527a69e6e26d100dfc230a4
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54778510"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59660954"
 ---
 # <a name="accessibility-features-of-visual-studio"></a>Funkce pro usnadnění přístupu sady Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
-
 
 Kromě funkcí a nástrojů usnadnění v Windows následující funkce Ujistěte se, Visual Studio 2013 přístupnější pro osoby s postižením:
 
@@ -40,7 +39,7 @@ Kromě funkcí a nástrojů usnadnění v Windows následující funkce Ujistět
 
  Další informace naleznete v následujících tématech:
 
--   [Postupy: Nastavení možností usnadnění přístupu IDE](../../ide/reference/how-to-set-ide-accessibility-options.md)
+-   [Postupy: Nastavení možností usnadnění přístupu v integrovaném vývojovém prostředí](../../ide/reference/how-to-set-ide-accessibility-options.md)
 
 -   [Postupy: Výhradní používání klávesnice](../../ide/reference/how-to-use-the-keyboard-exclusively.md)
 
@@ -48,7 +47,7 @@ Kromě funkcí a nástrojů usnadnění v Windows následující funkce Ujistět
 
 -   [Rady a tipy k usnadnění přístupu](../../ide/reference/accessibility-tips-and-tricks.md)
 
--   [Postupy: Změna písma a barvy](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
+-   [Postupy: Změna písma a barev](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
 
 ## <a name="see-also"></a>Viz také
  [Produkty a služby pro usnadnění přístupu od Microsoftu](../../ide/reference/accessibility-products-and-services-from-microsoft.md)

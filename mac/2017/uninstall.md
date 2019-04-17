@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 4EB95F75-BC2E-4982-9564-2975805712D8
-ms.openlocfilehash: 2a0b1e14dd822c159484dcaed052a13a35d43939
-ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
+ms.openlocfilehash: e36d4064afe11e3b2ed588fa5a5c62b21e179bc5
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58573090"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59661838"
 ---
 # <a name="uninstalling-visual-studio-for-mac"></a>Odinstalace sady Visual Studio pro Mac
 
@@ -103,7 +103,6 @@ Můžete také odebrat následující adresáře, který obsahuje různé Xamari
 ```bash
 rm -rf ~/Library/Developer/Xamarin
 ```
-
 
 ## <a name="uninstall-mono-sdk-mdk"></a>Odinstalujte modul Mono SDK (MDK)
 

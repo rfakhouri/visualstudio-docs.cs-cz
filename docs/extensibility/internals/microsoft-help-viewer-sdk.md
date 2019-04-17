@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e119a632210a8677f50a6c0d0bd2306b7c810f08
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: 5bee805581f23e4654a8fce318a39b4ff3da4184
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57868298"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59660708"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Microsoft Help Viewer SDK
 
@@ -63,7 +63,7 @@ Podporovaných řetězců jazyka (nerozlišuje velikost písmen):
 
 -   javascript
 
--   CSharp nebo C#
+-   CSharp nebo c#
 
 -   cplusplus nebo visualc ++ nebo c ++
 
@@ -360,7 +360,6 @@ V prostředí IDE v položce nabídky Nápověda, vyberte **ladit kontext nápov
 
 V následující tabulce je jakýkoli řetězec, který se zobrazí mezi hranaté závorky zástupný symbol, který se musí nahradit odpovídajícími rozpoznaná hodnota. Například v \<meta name="Microsoft.Help.Locale" obsah = "[jazyk]" / >, "[jazyk]" se musí nahradit odpovídajícími hodnotu, jako "en-us".
 
-
 | Vlastnosti (znázornění HTML) | Popis |
 | - | - |
 | \< Meta name="Microsoft.Help.Locale" content = "[-kód jazyka]" / > | Nastaví národní prostředí pro toto téma. Pokud se tato značka se používá v tématu, musí být použit pouze jednou a musí být vložen nad všechny ostatní značky Microsoft Help. Pokud tato značka se nepoužívá, základní text tématu, které se indexuje zpětně pomocí pro dělení slov, která souvisí s národní prostředí produktu, pokud je zadán; v opačném případě en-us se používá pro dělení slov. Tato značka odpovídá ISOC RFC 4646. Pokud chcete mít jistotu, že Microsoft Help funguje správně, pomocí této vlastnosti namísto obecného atribut Language. |
@@ -451,7 +450,7 @@ Poznámka: proměnné, které jsou označeny "{n}" mít závislostí kódu – o
 | Funkce: | **CollapsibleArea** |
 | Použití: | Rozbalte text sbalí obsahu ovládacího prvku |
 | **Element** | **Hodnota** |
-| ExpandText | Rozbalte položku |
+| ExpandText | Expand |
 | CollapseText | Sbalit |
 | Funkce: | **CodeSnippet** |
 | Použití: | Text ovládacího prvku fragmentu kódu.  Poznámka: Obsah fragment kódu s prostorem "Non-zásadní" se změní na místo. |

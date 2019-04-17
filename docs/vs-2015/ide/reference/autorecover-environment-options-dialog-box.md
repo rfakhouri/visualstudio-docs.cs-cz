@@ -19,17 +19,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5e5fc9c1d835979c53b499e88e3949d5023e077e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 210b1ca8d2961f9337472faa1a4f92ee852a7a2b
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54766070"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659473"
 ---
 # <a name="autorecover-environment-options-dialog-box"></a>AutoRecover, prostředí, dialogové okno Možnosti
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Pomocí této stránky v dialogovém okně Možnosti k určení, zda se automaticky zálohují soubory. Na této stránce můžete také zadat též upravené soubory se obnoví při neočekávané vypnutí integrovaného vývojového prostředí (IDE). Můžete přístup k tomuto dialogovému oknu výběrem **nástroje** nabídku a zvolíte **možnosti**a pak vyberete **prostředí** složky a zvolíte  **Automatické obnovení** stránky. Pokud se tato stránka se nezobrazí v seznamu, vyberte **zobrazit všechna nastavení** v **možnosti** dialogové okno.  
   
 > [!NOTE]

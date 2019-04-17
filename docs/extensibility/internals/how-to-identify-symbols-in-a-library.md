@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 183a0774bf507fcf8bdf9abeea688bb1ea75b1bd
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: b74eaab3edb205b5218cad5a61556f4803614d94
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628712"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651959"
 ---
 # <a name="how-to-identify-symbols-in-a-library"></a>Postupy: Identifikace symbolů v knihovně
 Nástroje procházení symbolů hierarchické zobrazení symbolů. Symboly představují obory názvů, objektů, tříd, členy třídy a další prvky jazyka.
@@ -49,7 +49,6 @@ N1
  Canonical cesta třídy C2, v tomto příkladu je N1 + C2. Cesta prezentačním C2 zahrnuje C1 a "Základních tříd a rozhraní" uzly: N1 + C1 + "databází a rozhraní" + C2.
 
  Získání informací formuláře prezentace, volání objektu správce <xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo.EnumPresentationNodes%2A> metody.
-
 
 ## <a name="to-obtain-canonical-and-presentation-forms-information"></a>Získat canonical a prezentace forms informace
 

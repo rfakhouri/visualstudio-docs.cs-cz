@@ -8,12 +8,12 @@ ms.assetid: 0e384ea1-4d9e-4307-8884-6e183900732c
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 3b32779fe2d852e21eacf888e7b2326830fa9829
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 10d0ada1ba86f57b9b40a40b6ffc560379d411dc
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54765347"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59670092"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Barvy a styly pro sadu Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -49,7 +49,6 @@ ms.locfileid: "54765347"
 |Máte jednotlivé funkce nebo skupiny funkcí a neexistuje žádné sdílené barvy pro podobné prvky.|**Vlastní barvy**|Token názvy barev, které jsou specifické pro oblast, které není určené ke sdílení s další uživatelského rozhraní|
 |Chcete povolit koncovému uživateli přizpůsobit uživatelské rozhraní nebo obsah (například pro textových editorů nebo specializovaná návrháře windows).|**Přizpůsobení koncových uživatelů**<br /><br /> **(Nástroje > Možnosti dialogového okna)**|Nastavení definované na stránce "Písma a barvy" **nástroje > Možnosti** dialogové okno nebo speciální stránky specifické pro jeden funkce uživatelského rozhraní.|
 
-
 ### <a name="visual-studio-themes"></a>Visual Studio motivy
  Visual Studio obsahuje tří různých barev motivů: světla, tmavý a modrou. Zjistí také režim s vysokým kontrastem, který je systémová barevný motiv určený pro usnadnění přístupu.
 
@@ -79,7 +78,6 @@ ms.locfileid: "54765347"
  ![Nástroje &#62; dialogové okno Možnosti v sadě Visual Studio](../../extensibility/ux-guidelines/media/0301-a-toolsoptionsdialog.png "0301 a_ToolsOptionsDialog")
 
  **Nástroje > dialogové okno Možnosti**
-
 
 ##  <a name="BKMK_TheVSColorService"></a> Služba VSColor
  Visual Studio poskytuje službu barva prostředí, označovaný taky jako služba VSColor nebo služba barva prostředí. Tato služba umožňuje svázat nastavení barev pro každý motiv obsahující název hodnota barvy barevných prvků uživatelského rozhraní. Službu VSColor musí použít pro všechny prvky uživatelského rozhraní tak, aby barvy automaticky změnit tak, aby odrážela aktuální uživatel vybral motiv a tak, aby uživatelské rozhraní svázaná se službou barva prostředí se bude integrovat s nové motivy v budoucích verzích sady Visual Studio.

@@ -20,22 +20,20 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e29a80c9cc3f492a19de630e2a09e1f15ca9c45c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: bddba1170cf675b5bde7ab8deed8cce1e7eb57dd
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54791436"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654994"
 ---
 # <a name="cppclean-task"></a>CPPClean – úloha
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
 
 Odstraní dočasné soubory, které MSBuild vytvoří při vytváření projektu Visual C++. Proces odstraňování souborů sestavení se označuje jako *čištění*.  
 
 ## <a name="parameters"></a>Parametry  
  Následující tabulka popisuje parametry **cppclean –** úloh.  
-
 
 |            Parametr            |                                                                                                Popis                                                                                                 |
 |---------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

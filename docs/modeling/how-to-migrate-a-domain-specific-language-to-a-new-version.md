@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dae9c7728de35c92c973c9fca097595b56aabaf5
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 46fa0dbcc5ab80ce567d4e0afd64d8990006204b
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57869241"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59663242"
 ---
 # <a name="how-to-migrate-a-domain-specific-language-to-a-new-version"></a>Postupy: Migrace jazyka specifického pro doménu na novou verzi
 Můžete migrovat projekty, které definice a používání jazyka specifického pro doménu na [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] oproti verzi [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] , který byl distribuován s [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)].
@@ -81,7 +81,6 @@ Můžete migrovat projekty, které definice a používání jazyka specifického
    -   Pokus o sestavení projektů a prozkoumejte všechny chyby.
 
    -   Otestujte návrháře.
-
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 

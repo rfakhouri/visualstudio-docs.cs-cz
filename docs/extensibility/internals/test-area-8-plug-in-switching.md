@@ -11,14 +11,14 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 002aa5cf9e1324eb81996a5a14f7a1933a26ba9d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2093db67a97bcd913773feebe0a4f10bf6ac9180
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605169"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659498"
 ---
-# <a name="test-area-8-plug-in-switching"></a>Testovací oblast 8: Přepínání modulu plug-in
+# <a name="test-area-8-plug-in-switching"></a>Testovací oblast 8: Přepínání modulů plug-in
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Integrované vývojové prostředí (IDE) má uživatelského rozhraní (UI) Chcete-li změnit aktuální plug-in správy zdrojových kódů. Tato oblast testu obsahuje testovací případy pro proces výběru, který modul plug-in pro použití pro řešení správy zdrojového kódu.
 
 ## <a name="command-menu-access"></a>Přístup do příkazu nabídky
@@ -39,7 +39,6 @@ ms.locfileid: "56605169"
 #### <a name="expected-behavior"></a>Očekávané chování
  Pokud uživatel načte řešení, které je pod správou zdrojových kódů, řešení se automaticky načtou a vhodné plug-in správy zdrojových kódů je vybrán jako aktuální.
 
-
 | Akce | Testovací kroky | Chcete-li ověřit očekávané výsledky |
 | - | - | - |
 | Změnit modul plug-in automatické zdroje ovládacího prvku | 1.  Výběr modulu plug-in v rámci testovacích jako aktuální (**nástroje** -> **možnosti** -> **správy zdrojových kódů** -> **modulu Plug-in Výběr**.)<br />2.  Vytvořte nový projekt.<br />3.  Přidáte řešení do správy zdrojového kódu.<br />4.  Vyberte jiný modul plug-in (například [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)]).<br />5.  Potvrďte výzvu uvolnění řešení.<br />6.  Znovu otevřete řešení z disku. | Otevření řešení.<br /><br /> Modul plug-in v rámci testu je aktuální plug-in správy zdrojových kódů. |
@@ -48,7 +47,6 @@ ms.locfileid: "56605169"
 
 #### <a name="expected-behavior"></a>Očekávané chování
  Řešení může mít jeho přidružené plug-in správy zdrojových kódů změnit.
-
 
 | Akce | Testovací kroky | Chcete-li ověřit očekávané výsledky |
 |----------------------------------| - | - |

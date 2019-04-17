@@ -17,17 +17,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 41467515e172b34fe96200020189a02a6a4fc8a2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0fa25e0bf7742420e21ac75883f9927478ee2c23
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54792787"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59656606"
 ---
 # <a name="edit-data-in-datasets"></a>Úpravy dat v datových sadách
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Můžete upravovat data v datových tabulkách stejně, jako úprava dat v tabulce v jakékoli databázi. Proces může obsahovat, vkládání, aktualizaci a odstranění záznamů v tabulce. Ve formě vázané na data můžete určit, která pole se uživatel upravovat. V těchto případech se datové vazby infrastruktury zpracovává všechny řešení change tracking, aby změny lze odeslat zpět do databáze později. Pokud provedete úpravy prostřednictvím kódu programu k datům a chcete odeslat změny zpět do databáze, musíte použít objekty a metody, které udělal za vás sledování změn.  
   
  Kromě změny skutečná data, můžete také zadávat dotazy <xref:System.Data.DataTable> vrátit konkrétní řádky dat. Například se může dotazovat na jednotlivé řádky, určité verze řádků (původní a navrhované), řádky, které se změnily nebo řádky, které obsahují chyby.  

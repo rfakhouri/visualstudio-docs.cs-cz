@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 2ba4b896a5cea964a4df6392a7c1963f8df00d31
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: 4b0692a790955c537c00e35be97d52583862e5a3
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58415600"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649573"
 ---
 # <a name="quickstart-test-driven-development-with-test-explorer"></a>Rychlý start: Testování vývoj řízený testy s použitím Průzkumníka testů
 
@@ -56,7 +56,6 @@ Průzkumník testů nahrazuje okna jednotkových testů starších vydání sady
 
 > [!IMPORTANT]
 > Výsledky, které se zobrazují se poslední spuštění. Obarvený panel výsledků zobrazuje pouze výsledky testů, které byly spuštěny. Například pokud spuštění více testů a některé z nich selhání a poté spustíte pouze úspěšné testy, pak na panelu výsledků bude celý zelený.
-
 
 > [!NOTE]
 > Je-li zobrazen žádný test, ujistěte se, že máte nainstalován adaptér pro připojení Průzkumníku testů pro testovací rozhraní, kterou používáte. Další informace najdete v tématu [nainstalovat rozhraní pro testování jednotky třetí strany](install-third-party-unit-test-frameworks.md).

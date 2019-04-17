@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4843f1e49e705e42a58afa8a882018463ce46f7b
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.openlocfilehash: 472535a44e8cc9fe2aef40e1e3bf81c57bfcbe98
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366754"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59663169"
 ---
 # <a name="analyze-cpu-usage"></a>Analýza využití procesoru
 
@@ -50,7 +50,6 @@ Obvykle místní počítač nejlepší replikuje provádění nainstalované apl
    Nástroj využití CPU analyzuje data a zobrazí sestavu.
 
    ![Sestava využití procesoru](../profiling/media/cpu_use_wt_report.png "sestava využití procesoru")
-
 
 ## <a name="analyze-the-cpu-usage-report"></a>Analýza sestavy využití procesoru
 

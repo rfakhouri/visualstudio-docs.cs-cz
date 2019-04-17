@@ -13,17 +13,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f4336ef93eded7ed1d56a8ee34fff0189813da17
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: bbdbee2043066716cca2646847c42d0878bab385
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54763345"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59670196"
 ---
 # <a name="advanced-build-settings-dialog-box-c"></a>Dialogové okno Upřesnit nastavení sestavení (C#)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Použití **AdvancedBuild nastavení** dialogovému oknu **Návrháře projektu** k určení rozšířenou vlastností konfigurace sestavení projektu. Toto dialogové okno se vztahuje na [!INCLUDE[csprcs](../../includes/csprcs-md.md)] pouze pro projekty.  
   
 ## <a name="general"></a>Obecné  

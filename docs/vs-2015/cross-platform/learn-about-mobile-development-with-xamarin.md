@@ -6,17 +6,16 @@ ms.assetid: e970d936-1df4-4c0c-96e3-ef6191295882
 caps.latest.revision: 14
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 85b63fe01335b75f4286bcc3d19960ab3b873509
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 4d75c93f2ff1678b1d9790462bc816ea35f8acd9
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54781693"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59662072"
 ---
 # <a name="learn-about-mobile-development-with-xamarin"></a>Informace o vývoji pro mobilní zařízení v Xamarinu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Toto téma vás přesměruje na přehled materiál, který vám pomůže pochopit, vývoj multiplatformních mobilních aplikací s využitím kódu Xamarin. Pokud jste ještě nenainstalovali aplikaci Visual Studio a Xamarin, spusťte [nastavení a instalaci](../cross-platform/setup-and-install.md) procesu nejprve, pak se sem vraťte pro seznámení se základními tyto prostředky jsou spuštěné instalační programy.  
   
 > [!NOTE]

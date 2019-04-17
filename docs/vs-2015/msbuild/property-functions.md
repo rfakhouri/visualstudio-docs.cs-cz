@@ -11,17 +11,16 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6ed61d1b65d03053859b5463b574432e0396449a
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 8bcb8aadc2fb2a2f836fccde56e283b38cbc213d
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54758358"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649235"
 ---
 # <a name="property-functions"></a>Funkce vlastností
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 V rozhraní .NET Framework verze 4 a 4.5 lze použít funkce vlastností k vyhodnocení skriptů nástroje MSBuild. Funkce vlastností je možné bez ohledu na to vlastnosti se zobrazí. Na rozdíl od úloh funkce vlastností lze použít vně cíle a vyhodnocují před spuštěním jakékoli cílové.  
   
  Bez použití úkolů nástroje MSBuild, přečíst systémový čas, porovnat řetězce, porovnat regulární výrazy a provádět jiné akce v váš skript buildu. Nástroj MSBuild se pokusí převést řetězec na číslo a číslo na řetězec a ujistěte se, ostatní převody, podle potřeby.  

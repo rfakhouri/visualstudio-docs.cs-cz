@@ -1,5 +1,5 @@
 ---
-title: 'Průvodce: Přizpůsobení vložit, aktualizovat a odstraňovat chování tříd entit | Dokumentace Microsoftu'
+title: 'Návod: Přizpůsobení vložit, aktualizovat a odstraňovat chování tříd entit | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-data-tools
@@ -9,17 +9,16 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 307722b668a71dd97e6b05364226d8c5ea62af66
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 95afdec845b4b7788274ee0bc03bd5f26e862388
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54766009"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651562"
 ---
-# <a name="walkthrough-customizing-the-insert-update-and-delete-behavior-of-entity-classes"></a>Průvodce: Přizpůsobení vložit, aktualizovat a odstraňovat chování tříd entit
+# <a name="walkthrough-customizing-the-insert-update-and-delete-behavior-of-entity-classes"></a>Návod: Přizpůsobení vložit, aktualizovat a odstraňovat chování tříd entit
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 [LINQ to SQL nástroje v sadě Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) poskytuje vizuální návrhová plocha pro vytváření a úpravu [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] třídy (třídy entity), které jsou založené na objektech v databázi. S použitím [technologie LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655), můžete použít technologii LINQ pro přístup k databázím SQL. Další informace najdete v tématu [LINQ (Language-Integrated Query)](http://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d).  
   
  Ve výchozím nastavení, je poskytována logiku pro provádění aktualizací [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] modulu runtime. Modul runtime vytvoří výchozí příkazy Insert, Update a Delete na základě schématu tabulky (definice sloupců a informacemi o primárním klíči). Pokud nechcete použít výchozí chování, můžete nakonfigurovat chování aktualizací a určit konkrétní uložené procedury k provedení potřebné vložení, aktualizace a odstranění vyžadována pro práci s daty v databázi. Můžete také provést generování výchozího chování není, například při mapování tříd entit na zobrazení. Kromě toho můžete přepsat výchozí chování aktualizací databáze vyžaduje přístup k tabulce prostřednictvím uložené procedury. Další informace najdete v tématu [přizpůsobení operací pomocí pomocí uložené procedury](http://msdn.microsoft.com/library/aedbecc1-c33c-4fb4-8861-fdf7e1dc6b8a).  

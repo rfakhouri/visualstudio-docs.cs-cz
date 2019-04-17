@@ -15,17 +15,17 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: cece70c942b62390e0ba3e96c57c1c46c4dd46fa
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: 37c8193a166849f1361a66c640b1a414d3900fca
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355151"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59667323"
 ---
 # <a name="ca1715-identifiers-should-have-correct-prefix"></a>CA1715: Identifikátory by měly mít správnou předponu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější dokumentaci k sadě Visual Studio, naleznete v tématu [CA1715: Identifikátory by měly mít správnou předponu](https://docs.microsoft.com/visualstudio/code-quality/ca1715-identifiers-should-have-correct-prefix) na webu docs.microsoft.com.  
+Nejnovější dokumentaci k sadě Visual Studio, naleznete v tématu [CA1715: Identifikátory by měly mít správnou předponu](https://docs.microsoft.com/visualstudio/code-quality/ca1715-identifiers-should-have-correct-prefix).  
   
 |||  
 |-|-|  
@@ -34,7 +34,7 @@ Nejnovější dokumentaci k sadě Visual Studio, naleznete v tématu [CA1715: Id
 |Kategorie|Microsoft.Naming|  
 |Narušující změna|Zásadní - při vyvolání na rozhraních.<br /><br /> Bez konce – při aktivaci pro parametry obecného typu.|  
   
-## <a name="cause"></a>příčina  
+## <a name="cause"></a>Příčina  
  Název externě viditelného rozhraní nezačíná velké písmeno "I".  
   
  -nebo-  

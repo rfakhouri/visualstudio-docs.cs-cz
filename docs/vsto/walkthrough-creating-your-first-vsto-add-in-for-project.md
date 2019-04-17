@@ -1,5 +1,5 @@
 ---
-title: 'Průvodce: Vytvoření vašeho prvního doplňku VSTO pro Project'
+title: 'Návod: Vytvoření vašeho prvního doplňku VSTO pro Project'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,14 +15,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 870f5385074e02036a088b34a94bd4e60d8153bc
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 5d257953aeefd56a8b58a75377a64a5d9e882a25
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56641751"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665204"
 ---
-# <a name="walkthrough-create-your-first-vsto-add-in-for-project"></a>Průvodce: Vytvoření vašeho prvního doplňku VSTO pro Project
+# <a name="walkthrough-create-your-first-vsto-add-in-for-project"></a>Návod: Vytvoření vašeho prvního doplňku VSTO pro Project
   Tento návod ukazuje, jak k vytvoření doplňku VSTO pro aplikaci Microsoft Office Project. Funkce, které vytvoříte v tento druh řešení jsou k dispozici pro vlastní projekty bez ohledu na to, které jsou otevřené aplikace. Další informace najdete v tématu [přehled vývoje řešení pro Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).
 
  [!INCLUDE[appliesto_projallapp](../vsto/includes/appliesto-projallapp-md.md)]
@@ -91,7 +91,6 @@ ms.locfileid: "56641751"
 1.  Pokud používáte C#, přidejte následující kód, který `ThisAddIn_Startup` obslužné rutiny události. Tento kód se připojí `Application_Newproject` obslužné rutiny události s NewProject událostí.
 
      [!code-csharp[Trin_ProjectAddInTutorial#2](../vsto/codesnippet/CSharp/Trin_ProjectAddInTutorial/ThisAddIn.cs#2)]
-
 
 ## <a name="test-the-project"></a>Testování projektu
  Při sestavení a spuštění projektu, ověřte, že je nová úloha se zobrazí v výsledný nový projekt.

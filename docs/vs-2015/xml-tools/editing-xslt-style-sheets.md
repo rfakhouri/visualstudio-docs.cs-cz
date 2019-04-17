@@ -9,17 +9,16 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a442612d3eb4845def1a82712ac01c6b90d4047c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2279a193b173924b45f42172281e106370131023
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54805340"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59648171"
 ---
 # <a name="editing-xslt-style-sheets"></a>Úpravy šablon stylů XSLT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 XML Editor lze také upravit šablony stylů XSLT. Můžete využít výhod výchozí funkce editoru, jako je IntelliSense, osnovy, fragmenty kódu XML a tak dále. Kromě toho existují také nové funkce, které usnadňují vývoj v jazyce XSLT.  
   
 ## <a name="xslt-features"></a>Funkce XSLT  

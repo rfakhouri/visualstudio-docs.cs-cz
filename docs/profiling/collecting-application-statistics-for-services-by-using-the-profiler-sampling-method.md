@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 32ebcb8c317d02ee4a55696f231d5c1b7ef7c06a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 80d5b57d8e0a7b857d8a43e783220847b7b42121
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56631156"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665867"
 ---
 # <a name="collect-application-statistics-for-services-by-using-the-profiler-sampling-method"></a>Shromažďování statistik aplikace pro službu pomocí metody vzorkování profileru
 Tato část popisuje postupy a možnosti pro shromažďování statistik výkonu pomocí metody vzorkování z příkazového řádku služeb Windows.
@@ -38,7 +38,6 @@ Tato část popisuje postupy a možnosti pro shromažďování statistik výkonu
 |**Profil s použitím metody instrumentace**|-   [Shromažďování podrobných dat časování pomocí instrumentace](../profiling/collecting-detailed-timing-data-for-services-by-using-the-instrumentation-method.md)|
 |**Profilování paměti .NET přidělování a uvolňování paměti kolekce**|-   [Shromažďování dat paměti .NET](../profiling/collecting-memory-data-from-dotnet-framework-services-by-using-the-profiler-command-line.md)|
 |**Profil aktivita prostředku kolize a vlákna**|-   [Shromažďování dat souběžnosti](../profiling/collecting-concurrency-data-for-a-service-by-using-the-profiler-command-line.md)|
-
 
 ### <a name="profile-by-using-the-sampling-method"></a>Profil s použitím metody vzorkování
 

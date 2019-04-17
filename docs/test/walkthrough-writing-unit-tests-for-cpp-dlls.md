@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 65bbaf015e2d4b0dc8dd66c33656e62c4b9b0102
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 65384c905e1acc99c8e534e537fe397a8286a486
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55915967"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59666647"
 ---
 # <a name="how-to-write-unit-tests-for-c-dlls"></a>Postupy: Zápis testů jednotek pro knihovny DLL C++
 
@@ -294,7 +294,6 @@ Tento návod popisuje, jak vyvíjet nativní knihovny DLL C++ pomocí první tes
 
 > [!TIP]
 > Je-li jednotlivé testy nemají žádné závislosti, které brání spuštění v libovolném pořadí, zapněte paralelní provádění testů s ![USTIT&#95;parallelicon&#45;malé](../test/media/ute_parallelicon-small.png) přepínacího tlačítka na panelu nástrojů. To může výrazně snížit čas potřebný ke spuštění všech testů.
-
 
 ##  <a name="refactor"></a> Refaktorujte kód beze změn testů
 

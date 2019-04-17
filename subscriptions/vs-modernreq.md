@@ -7,17 +7,16 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Další informace o sadě ModernRequirements produktů, které jsou součástí vybraných předplatných sady Visual Studio Enterprise.
 searchscope: VS Subscription
-ms.openlocfilehash: b35dae73b0fad0acb0acb7f67a2a35533d7cf95a
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: ffdcc25a90f73ba904ce2e5162031dff0b200274
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842504"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59660716"
 ---
 # <a name="the-modernrequirements4tfs-benefit-in-visual-studio-subscriptions"></a>Výhoda MODERNRequirements4TFS v předplatných sady Visual Studio
 
 Vybraná předplatná sady Visual Studio zahrnují 6měsíční předplatné pro MODERNRequirements SmartOffice 4TFS a ModernRequirements4TFS.  MODERNRequirements SmartOffice4TFS rozšiřuje možnosti TFS nebo služeb Azure DevOps v Microsoft Wordu generování sestav a rychlé a formátovaného textu.  ModernRequirements4TFS umožňuje monitorování standardních hodnot pracovních položek a simulaci HTML5.
-
 
 ## <a name="activation-steps"></a>Postup aktivace
 1. Na vaše MODERNRequirementsTFS výhodu využít, přihlaste se k [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
@@ -31,11 +30,9 @@ Vybraná předplatná sady Visual Studio zahrnují 6měsíční předplatné pro
    > [!div class="mx-imgBorder"]
    > ![ModernRequirements cílová stránka](_img/vs-modernreq/vs-modernreq-landing.png)
 
-
 5. Další stránka obsahuje licenční klíč.  Prosím zkontrolujte informace o zařízení na stránce a potom klikněte na modrý **stáhnout software, klepněte sem** odkaz uprostřed stránky.
    > [!div class="mx-imgBorder"]
    > ![ModernRequirements licenční klíč](_img/vs-modernreq/vs-modernreq-license-new-resized.png)
-
 
 6. Na stránce stažení máte možnost nainstalovat sady MODERNRequirements nebo nainstalovat jednotlivé moduly ze sady SMARTOffice4TFS.  Správné možnosti pro vás bude záviset na vašich předvoleb, kterou verzi sady TFS jste nainstalovali.  Nezapomeňte seznámit se s informace na stránce můžete vybrat správnou verzi sady produkty za vás.
    > [!div class="mx-imgBorder"]
@@ -97,7 +94,6 @@ Vybraná předplatná sady Visual Studio zahrnují 6měsíční předplatné pro
 
 > [!NOTE]
 > Microsoft už nenabízí Visual Studio Professional ročních předplatných a předplatných Visual Studio Enterprise roční Cloudová předplatná. Nebude bez nutnosti změn stávajících zkušeností zákazníků a možnost obnovit, zvýšit, snížit nebo zrušit předplatná. Nové nepodnikovým zákazníkům přejít na [ https://visualstudio.microsoft.com/vs/pricing/ ](https://visualstudio.microsoft.com/vs/pricing/) a prozkoumejte různé možnosti pro zakoupení sady Visual Studio.
-
 
 Nejste si jistí které předplatné používáte?  Připojte se k [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) zobrazíte všechna předplatná, která jsou přiřazená e-mailovou adresu. Pokud se nezobrazí všechna předplatná, může mít jeden nebo více přiřazené na jinou e-mailovou adresu.  Bude potřeba přihlásit se přes tento e-mailovou adresu najdete v těchto předplatných.
 

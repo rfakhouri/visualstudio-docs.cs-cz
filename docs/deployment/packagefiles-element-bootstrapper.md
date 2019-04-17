@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: da625db79e8738bad2a5e73ceee5d8b0adb6603d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 3f3a1ee08fec613522be5247842e10ced1c032e7
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605143"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651835"
 ---
 # <a name="ltpackagefilesgt-element-bootstrapper"></a>&lt;PackageFiles&gt; – element (zaváděcí nástroj)
 `PackageFiles` Obsahuje element `PackageFile` prvky, které definují instalační balíčky provést kvůli `Command` elementu.
@@ -52,7 +52,6 @@ ms.locfileid: "56605143"
  `PackageFile` Element je podřízeným prvkem `PackageFiles` elementu. A `PackageFiles` element musí mít aspoň jeden `PackageFile` elementu.
 
  `PackageFile` má následující atributy.
-
 
 | Atribut | Popis |
 |---------------| - |

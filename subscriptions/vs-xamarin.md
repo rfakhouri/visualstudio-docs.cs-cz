@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Další informace o předplatném školení na Xamarin University součástí vybraného předplatného sady Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: 77b8a9c7df84203a9edb4b4dc9604d8894236c2d
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 21fd09f6c3b33b00abb377dad14409c138edcf00
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842517"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59664286"
 ---
 # <a name="xamarin-university-training-benefit-in-visual-studio-subscriptions"></a>Xamarin University školení výhoda v předplatných sady Visual Studio
 
@@ -27,7 +27,6 @@ Pokud nejste schopni aktivaci vaší výhody v čase, vědět, že aplikace na X
 Zobrazit [Xamarin University nejčastější dotazy k](https://university.xamarin.com/faq) podrobnosti.
 
 21. prosince 2018 Visual Studio Enterprise předplatitelé získají neomezený přístup k plné katalogové Xamarin University za šest měsíců.  Předplatitelé sady Visual Studio Professional přijímat tří měsíců od přístupu.
-
 
 ## <a name="support-resources"></a>Informační zdroje podpory
 -  Potřebujete pomoc s Xamarin University?  Můžete najít širokou škálu zdrojů podpory na [ https://university.xamarin.com/support ](https://university.xamarin.com/support).

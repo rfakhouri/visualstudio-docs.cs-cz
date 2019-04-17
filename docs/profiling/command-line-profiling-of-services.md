@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 77d03b933952df7597807460846e504317756055
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 09cf4e14e311d9e5e80b48e2aa905637f93b1fdc
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614087"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59657714"
 ---
 # <a name="command-line-profiling-of-services"></a>Profilace služeb z příkazového řádku
 Tato část popisuje postupy a možnosti pro shromažďování dat výkonu pro služby Windows s použitím [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] nástroje pro profilaci z příkazového řádku.
@@ -25,7 +25,6 @@ Tato část popisuje postupy a možnosti pro shromažďování dat výkonu pro s
 >  Rozšířené funkce zabezpečení v systému Windows 8 a Windows Server 2012 vyžadují významné změny ve způsobu, jakým profiler systému Visual Studio na těchto platformách shromažďuje data. U aplikací pro UPW také vyžadují nové techniky kolekce. Zobrazit [nástroje pro výkon v aplikacích Windows 8 a Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).
 
 ## <a name="common-tasks"></a>Běžné úkoly
-
 
 | Úloha | Související obsah |
 | - | - |

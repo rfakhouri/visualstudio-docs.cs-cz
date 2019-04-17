@@ -7,14 +7,12 @@
 ## [Aktualizace](/visualstudio/mac/update)
 ## [Odinstalace](/visualstudio/mac/uninstall)
 
-
 # [Uživatelské účty](/visualstudio/mac/user-accounts)
 ## [Přihlášení](/visualstudio/mac/signing-in)
 ## [Povolení předplatného](/visualstudio/mac/enable-subscription)
 
 # [Přizpůsobení integrovaného vývojového prostředí (IDE)](/visualstudio/mac/customizing-the-ide)
 ## [Rozšíření sady Visual Studio pro Mac](/visualstudio/mac/extending-visual-studio-mac)
-
 
 # [Projekty a řešení](/visualstudio/mac/projects-and-solutions)
 ## [Vytváření nových projektů](/visualstudio/mac/create-new-projects)

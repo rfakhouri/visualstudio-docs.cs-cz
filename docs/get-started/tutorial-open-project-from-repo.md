@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 928e77c5c28b76570525b8ea9037cd0d0cef7f99
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: a3925fcac62dfee9f448bd826dc7948f8b08d498
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58857564"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59663398"
 ---
 # <a name="tutorial-open-a-project-from-a-repo"></a>Kurz: Otevření projektu z úložiště
 
@@ -27,7 +27,7 @@ V tomto kurzu budete používat Visual Studio pro připojení k úložišti popr
 
 ::: moniker range="vs-2017"
 
-Pokud jste ještě nenainstalovali aplikaci Visual Studio, přejděte [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) stránku a nainstalovat zdarma.
+Pokud jste ještě nenainstalovali aplikaci Visual Studio, přejděte [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) stránku a nainstalovat zdarma.
 
 ::: moniker-end
 

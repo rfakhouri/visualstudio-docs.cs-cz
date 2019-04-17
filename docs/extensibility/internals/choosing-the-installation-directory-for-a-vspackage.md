@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 41a5016c528e754e452ee1248e85b705c41a44ac
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 59e712d9354432bc142478935827a6439547321c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56621068"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59662392"
 ---
 # <a name="choose-the-installation-directory-for-a-vspackage"></a>Zvolte instalační adresář pro balíček VSPackage
 V systému souborů uživatele musí být VSPackage a jeho podpůrné soubory. Umístění závisí na, jestli sady VSPackage je spravovaná nebo nespravovaná, schéma vytváření verzí vedle sebe a výběru uživatelů.
@@ -56,7 +56,6 @@ V systému souborů uživatele musí být VSPackage a jeho podpůrné soubory. U
 4.  Výchozí systémové nastavení LCID s dílčího výchozí.
 
 5.  USA Angličtina (*. \1033* nebo *. \0x409*).
-
 
 Pokud vaše knihovna DLL balíčku VSPackage obsahuje prostředky a **SatelliteDll\DllName** záznam v registru odkazuje, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , pokusí se načíst ve výše uvedeném pořadí.
 

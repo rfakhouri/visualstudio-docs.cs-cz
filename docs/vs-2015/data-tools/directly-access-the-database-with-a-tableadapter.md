@@ -26,17 +26,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 372985c0878abbcfd42eab795cf8e2372bf65dd7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5226f5c235b3af10fba4fd0fab3ee44ceb72a93e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54765988"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654097"
 ---
 # <a name="directly-access-the-database-with-a-tableadapter"></a>Přímý přístup k databázi pomocí objektu TableAdapter
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Kromě `InsertCommand`, `UpdateCommand`, a `DeleteCommand`, jsou objekty TableAdapter vytvořeny metodami, které lze spustit přímo proti databázi. Tyto metody (`TableAdapter.Insert`, `TableAdapter.Update`, a `TableAdapter.Delete`) lze volat pro manipulaci s daty přímo v databázi.  
   
  Pokud tyto přímé metody vytvořit nechcete, nastavte TableAdapter `GenerateDbDirectMethods` vlastnost `false` v **vlastnosti** okna. Pokud přidáte všechny dotazy objektu TableAdapter kromě hlavním dotazem objektu TableAdapter jsou samostatné dotazy, které negenerovat tyto dbdirect – metody.  

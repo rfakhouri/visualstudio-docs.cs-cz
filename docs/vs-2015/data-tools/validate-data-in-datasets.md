@@ -24,17 +24,16 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1740e9d7668101911862c91457a2c81c48f7b72d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 73eb1162411800a951566c9eb14928875966cfb7
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54790898"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59661318"
 ---
 # <a name="validate-data-in-datasets"></a>Ověřování dat v datových sadách
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Ověřování dat je proces ověření, hodnot zadaných do datových objektů v souladu s omezeními ve schématu datové sady. Proces ověřování také potvrdí, že jsou tyto hodnoty dle pravidel, které se vytvořily pro vaši aplikaci. Je vhodné ověřit data před odesláním aktualizace do podkladové databáze. Tím se snižuje chyby, jakož i potenciální počet výměn mezi aplikací a databáze.  
   
  Si můžete ověřit, že data, která zapisuje do datové sady platný integrováním ověřovacích kontrol do samotné datové sadě. Datové sady dat bez ohledu na to, jak se provádí aktualizace můžete zkontrolovat, zda přímo ovládacími prvky ve formuláři v rámci komponenty, nebo jiným způsobem. Protože tato datová sada je součástí vaší aplikace (na rozdíl od databáze back-end), je logický místo, kde můžete vytvářet ověřování konkrétní aplikace.  

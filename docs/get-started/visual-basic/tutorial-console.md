@@ -14,12 +14,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: f394ea2775eede3424e4d6995a8e2065c5d986ef
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: 234a2d1070a39c0f9d9dbf5b0ae706b02b660abf
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58857590"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59664957"
 ---
 # <a name="tutorial-get-started-with-visual-basic-in-visual-studio"></a>Kurz: Začínáme s jazykem Visual Basic v sadě Visual Studio
 
@@ -27,7 +27,7 @@ V tomto kurzu pro Visual Basic (VB) budete používat k vytváření a spouště
 
 ::: moniker range="vs-2017"
 
-Pokud jste ještě nenainstalovali aplikaci Visual Studio, přejděte [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) stránku a nainstalovat zdarma.
+Pokud jste ještě nenainstalovali aplikaci Visual Studio, přejděte [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) stránku a nainstalovat zdarma.
 
 ::: moniker-end
 
@@ -267,5 +267,5 @@ Blahopřejeme k dokončení tohoto kurzu! Další ještě víc, najdete v násle
 ## <a name="see-also"></a>Viz také:
 
 * [Návody pro jazyk Visual Basic](/dotnet/visual-basic/walkthroughs)
-* [Visual Basic – reference jazyka](/dotnet/visual-basic/language-reference/index)
+* [Referenční dokumentace jazyka Visual Basic](/dotnet/visual-basic/language-reference/index)
 * [Technologie IntelliSense pro soubory kódu jazyka Visual Basic](../../ide/visual-basic-specific-intellisense.md)

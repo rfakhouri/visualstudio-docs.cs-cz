@@ -19,17 +19,16 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 79900957453464ea5f5dcf338f447dbe01399d11
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: cc6c7af3732f2f96ad53651b146898b655b68fdd
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54760093"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59647924"
 ---
 # <a name="security-page-project-designer"></a>Stránka Zabezpečení, návrhář projektu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 **Zabezpečení** stránku **Návrháře projektu** slouží ke konfiguraci nastavení zabezpečení přístupu kódu pro aplikace, které jsou nasazeny pomocí [!INCLUDE[ndptecclick](../../includes/ndptecclick-md.md)] nasazení. Další informace najdete v tématu [Code Access Security for ClickOnce Applications](../../deployment/code-access-security-for-clickonce-applications.md).  
   
  Pro přístup **zabezpečení** klikněte na uzel projektu v **Průzkumníku řešení**a pak klikněte na **projektu** nabídky, klikněte na tlačítko **vlastnosti**. Když **Návrháře projektu** se zobrazí, klikněte na tlačítko **zabezpečení** kartu.  

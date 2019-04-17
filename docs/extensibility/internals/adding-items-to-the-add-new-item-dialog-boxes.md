@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e392947f86a1adab92289934632dd393f4ff24ed
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f6c0d6928236c151e182c90056641432e4706952
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56620990"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651292"
 ---
 # <a name="add-items-to-the-add-new-item-dialog-box"></a>Přidání položek do dialogových oken přidat novou položku
 Proces přidávání položek do **přidat novou položku** spustí dialogové okno s klíči registru. Jak je znázorněno v následující položky registru **AddItemTemplates** oddíl obsahuje cestu a název adresáře, ve které položky k dispozici v **přidat novou položku** jsou umístěny dialogové okno.
@@ -35,8 +35,7 @@ Proces přidávání položek do **přidat novou položku** spustí dialogové o
 
  **SortPriority** = dword:00000064
 
-
-| Název | Typ | Data (z *.rgs* souboru) | Popis |
+| Name | Type | Data (z *.rgs* souboru) | Popis |
 |------------------|-----------| - | - |
 | @ (Výchozí) | REG_SZ | #% IDS_ADDITEM_TEMPLATES_ENTRY % | ID prostředku pro **přidat položku** šablony. |
 | Val TemplatesDir | REG_SZ | TEMPLATE_PATH %\\&lt;SomeProjectItems&gt; | Cesta položky projektu zobrazí v dialogovém okně pro **přidat novou položku** průvodce. |

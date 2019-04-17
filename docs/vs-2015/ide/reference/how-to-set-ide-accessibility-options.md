@@ -11,17 +11,16 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b1f70f2f33b8ad0af4f0fa13489cb75be529c322
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: e01d73457a0b6bf6da2114a4ae967c25f9953a9a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54803220"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59670322"
 ---
 # <a name="how-to-set-ide-accessibility-options"></a>Postupy: Nastavení možností usnadnění přístupu v integrovaném vývojovém prostředí
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] obsahuje funkce, které usnadňují pro uživatele, kteří mají ke čtení a pro uživatele, kteří mají omezenou pohyblivostí k zápisu. Tyto funkce patří změna velikost a barvu textu v editorech, změna velikosti textu a tlačítka na panely nástrojů a automatické dokončování pro parametry, metody a další.  
   
  Kromě toho [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] podporuje typech klávesnic, které nejčastěji zadávané znaky přístupnější. Můžete také přizpůsobit výchozí klávesové zkratky, který je k dispozici [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Další informace najdete v tématu [určení a přizpůsobení klávesových zkratek](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).  

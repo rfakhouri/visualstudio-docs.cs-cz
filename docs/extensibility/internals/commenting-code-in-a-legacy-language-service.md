@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9f6b7796ff4bd8f2b37e50e53d58de66f823ef8a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 0aa4d1c3126c22661285f18aac18a63d55468312
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56639658"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59647298"
 ---
 # <a name="comment-code-in-a-legacy-language-service"></a>Kód komentářů ve službě starší verze jazyka
 Programovací jazyky obvykle poskytují způsob poznámky nebo komentáře kódu. Komentář je část textu, který poskytuje další informace o kódu, ale je ignorována během kompilace a interpretace.
@@ -29,7 +29,6 @@ Existují dvě obecné styly komentář:
 1.  Řádek komentáře, kde komentář je na jednom řádku.
 
 2.  Komentáře bloku, ve kterém komentář může obsahovat více řádků.
-
 
 Komentářů řádku mají obvykle počáteční znak (nebo znaky), při komentáře bloku mají počátečních a koncových znaků. Například v jazyce C#, řádkový komentář začíná `//`, a blok komentáře začíná `/*` a končí `*/`.
 

@@ -12,17 +12,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3ab8f3896c0a57657966c022f85c7827fedf3d65
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 3a590d3dc3053c5b857917dc358e32a2c7d5247c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54792840"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651746"
 ---
 # <a name="using-multiple-processors-to-build-projects"></a>Použití více procesorů k sestavení projektů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Nástroj MSBuild může využívat výhod systémů s více procesory nebo procesorů s více jádry. Pro každý dostupný procesor je vytvořen samostatný proces sestavení. Pokud má systém například čtyři procesory, jsou vytvořeny čtyři procesy sestavení. [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] může tato sestavení zpracovávat současně, a proto celkové snížit dobu sestavení. Paralelní sestavení však zavádí některé změny v tom, jak dochází k procesům sestavení. V tomto tématu jsou dané změny popsány.  
   
 ## <a name="project-to-project-references"></a>Odkazy typu projekt na projekt  

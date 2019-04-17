@@ -1,5 +1,5 @@
 ---
-title: Instalace řešení Dotfuscator Community
+title: Instalace Dotfuscatoru Community
 ms.date: 03/28/2019
 ms.devlang: dotnet
 ms.topic: conceptual
@@ -22,14 +22,14 @@ ms.assetid: f2146651-e24a-4e24-ade8-8ddee8ff4e43
 author: Joe-Sewell-PreEmptive
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a6e647ae257bfc6517685310f4a77ef398e775be
-ms.sourcegitcommit: 40393347a36779230d128f2355a911632a8d458e
+ms.openlocfilehash: ef556f71d03cf20767fcba38ff3579dda2627a1b
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58866609"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653669"
 ---
-# <a name="install-dotfuscator-community"></a>Instalace řešení Dotfuscator Community
+# <a name="install-dotfuscator-community"></a>Instalace Dotfuscatoru Community
 
 Nástroj Dotfuscator Community je volitelnou součástí aplikace Visual Studio.
 Tyto pokyny vysvětlují, jak ji nainstalovat.
@@ -37,7 +37,6 @@ Tyto pokyny vysvětlují, jak ji nainstalovat.
 > [!NOTE]
 > Kromě verze nástroje Dotfuscator Community dodávané s verzemi sady Visual Studio poskytuje společnosti PreEmptive Solutions aktualizované verze také pravidelně na svém webu.
 > Pokud chcete stáhnout **nejnovější verzi** přímo, bez instalace ze sady Visual Studio **[kliknutím sem přejdete na stránku pro stažení nástroje Dotfuscator] [ download]**.
-
 
 ## <a name="within-visual-studio"></a>V sadě Visual Studio
 
@@ -54,7 +53,7 @@ Nástroj Dotfuscator Community můžete nainstalovat z integrovaného vývojové
    > [!NOTE]
    > Může být nutné zadat přihlašovací údaje správce, abyste mohli pokračovat. 
 
-4. V okně instalačního programu sady Visual Studio klikněte na tlačítko *nainstalovat*. <br/> <br/> ![Kliknutí na Nainstalovat](media/install_in_vs19_34.png) <br/> <br/>
+4. V okně instalačního programu sady Visual Studio klikněte na tlačítko *nainstalovat*. <br/> <br/> ![Klikněte na nainstalovat](media/install_in_vs19_34.png) <br/> <br/>
 
 ::: moniker-end
 
@@ -71,12 +70,11 @@ Nástroj Dotfuscator Community můžete nainstalovat z integrovaného vývojové
    > [!NOTE] 
    > Může být nutné zadat přihlašovací údaje správce, abyste mohli pokračovat.
 
-4. V okně instalačního programu sady Visual Studio klikněte na tlačítko *nainstalovat*. <br/> <br/> ![Kliknutí na Nainstalovat](media/install_from_vs_345.png) <br/> <br/>
+4. V okně instalačního programu sady Visual Studio klikněte na tlačítko *nainstalovat*. <br/> <br/> ![Klikněte na nainstalovat](media/install_from_vs_345.png) <br/> <br/>
 
 ::: moniker-end
 
 Po dokončení instalace můžete [začít používat nástroj Dotfuscator Community][get-started].
-
 
 ## <a name="during-visual-studio-installation"></a>Během instalace sady Visual Studio
 

@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Další informace o předplatném školení Datacampu součástí vybraných předplatných sady Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: 0751c29833b9fac85107af9992910f8046487a70
-ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
+ms.openlocfilehash: c8d18225741c7b514f9b9af5c30f06226a8abcd1
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57428632"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59661542"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Výhoda Datacampu školení v předplatných sady Visual Studio
 
@@ -48,7 +48,6 @@ Doba trvání výhody Datacampu závisí na vaše předplatné sady Visual Studi
    > [!div class="mx-imgBorder"]
    > ![Dovednosti Datacampu datové vědy](_img/vs-datacamp/vs-datacamp-datascience.png)
 
-
 6. Na základě cesty a možnosti, které jste vybrali, zobrazí se vám výběr stopy kariéru.  Klikněte na **zapsat** tlačítko pro sledování podle vašeho výběru.
    > [!div class="mx-imgBorder"]
    > ![Sledování Datacampu kariéru](_img/vs-datacamp/vs-datacamp-all-tracks.png)
@@ -75,17 +74,12 @@ Můžete kdykoli zastavit a obnovit trénování v příští relaci.  Stačí n
 | Visual Studio Enterprise (Standard)  | NFR<sup>1</sup> |Není k dispozici  | Není k dispozici |
 | Visual Studio Enterprise, Visual Studio Professional (měsíční cloud) | Azure | Není k dispozici | Není k dispozici |
 
-
-
 <sup>1</sup>*zahrnuje:  Není pro prodej (NFR) FTE, nejcennější Professional (MVP), Regional Director (RD), Microsoft Partner Network (MPN), Visual Studio Industry Partner (VSIP), Microsoft Certified Trainer, BizSpark, Imagine*
-
 
 > [!NOTE]
 > Microsoft už nenabízí Visual Studio Professional ročních předplatných a předplatných Visual Studio Enterprise roční Cloudová předplatná. Nebude bez nutnosti změn stávajících zkušeností zákazníků a možnost obnovit, zvýšit, snížit nebo zrušit předplatná. Nové nepodnikovým zákazníkům přejít na [ https://visualstudio.microsoft.com/vs/pricing/ ](https://visualstudio.microsoft.com/vs/pricing/) a prozkoumejte různé možnosti pro zakoupení sady Visual Studio.
 
-
 Nejste si jistí které předplatné používáte?  Připojte se k [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) zobrazíte všechna předplatná, která jsou přiřazená e-mailovou adresu. Pokud se nezobrazí všechna předplatná, může mít jeden nebo více přiřazené na jinou e-mailovou adresu.  Bude potřeba přihlásit se přes tento e-mailovou adresu najdete v těchto předplatných.
-
 
 ## <a name="support-resources"></a>Informační zdroje podpory
 -  Potřebujete pomoc s používáním Datacampu?  Projděte si tyto prostředky:

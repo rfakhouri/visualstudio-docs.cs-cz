@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 633ab9d446c65b9408c0e069695d22889e7943d1
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: d8808804c5b99918e68169e4ab5510cdb5c634a8
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56723068"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59670495"
 ---
 # <a name="composite-patterns-for-visual-studio"></a>Složené vzory pro sadu Visual Studio
 Složené vzory kombinovat elementy interakce a návrhu v různých konfiguracích. Některé z vašich nejdůležitějších složené vzory v sadě Visual Studio s ohledem na konzistenci patří:
@@ -393,7 +393,6 @@ Složené vzory kombinovat elementy interakce a návrhu v různých konfigurací
 ####  <a name="BKMK_GraphicalObjectSelectionAppearance"></a> Vzhled výběr grafického objektu
  Výběr popisovače jsou čtverce obdélníkové vzoru kolem ohraničovací rámeček objektu. Následující graf ukazuje příklady různé stavy, které grafický objekt může mít s popisovač, velikost a místní úpravy vzhledu. Velikost úchyty by měl být svázané ohraničení okna a pomocí metriky edge **GetSystemMetrics** rozhraní API.
 
-
 | Stav | Vzhled | Vizuální podrobnosti |
 |-------------------------|---------------| - |
 | **Nevybrané** | Výchozí | ![Výchozí stav tlačítka](../../extensibility/ux-guidelines/media/0713-10_defaultstate.png "0713 10_DefaultState") |
@@ -435,7 +434,6 @@ Složené vzory kombinovat elementy interakce a návrhu v různých konfigurací
 >  **Fokus** a **výběr** jsou různé koncepty. *Fokus* slouží jako ukazatel toho, které uživatelského rozhraní je určená – element pro vstup není explicitně směrovat na jiný objekt, zatímco *výběr* týká stavu zařazení objektu v sadě objekty, na kterých následné operace může proběhnout.
 
  Výběry v seznamech může být souvislé, nesouvislé, nebo oblast. Když je povolené, souvislý více výběrů a nesouvislý by měl vždy být podporován výběr, při podporu pro výběr oblasti (pole) je volitelný. Výběr oblasti lze inicializovat pomocí přetahování v prázdné místo v seznamu obsahu.
-
 
 | Objekt | Výběr |
 |--------|------------|

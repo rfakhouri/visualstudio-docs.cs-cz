@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b63c6b91ec4b93129014d1d7213d8426a4565c2c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: e45a2d0527e1d245a0d034310939bd1601db8adc
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56645924"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59666452"
 ---
 # <a name="ltinstallchecksgt-element-bootstrapper"></a>&lt;InstallChecks&gt; – element (zaváděcí nástroj)
 `InstallChecks` Element podporuje spouštění různých testy proti místnímu počítači, abyste měli jistotu, že byly nainstalovány všechny příslušné požadavky pro aplikaci.
@@ -96,7 +96,6 @@ ms.locfileid: "56645924"
  Tento element je volitelný podřízený prvek `InstallChecks`. Pro každou instanci `FileCheck`, zaváděcí nástroj určí, zda existuje uvedeného souboru a vrátí číslo verze souboru. Pokud soubor neobsahuje číslo verze, zaváděcí nástroj nastaví vlastnost s názvem podle `Property` na hodnotu 0. Pokud soubor neexistuje, `Property` není nastavená na libovolnou hodnotu.
 
  `FileCheck` neobsahuje žádné elementy a má následující atributy.
-
 
 | Atribut | Popis |
 |-----------------| - |

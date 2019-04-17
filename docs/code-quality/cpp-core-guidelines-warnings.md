@@ -8,12 +8,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f57fc0ff69e732e105ce6e9f3202f356633ff176
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 556821ff934d8276622ffb12ddbf4589ac404ab8
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58323448"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59661383"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>Použití kontrolních mechanismů C++ Core Guidelines
 
@@ -95,7 +95,6 @@ Nová pravidla přidávání na kontrola C++ Core pokyny, kdykoliv zvýšit poč
   - **– Pravidla vazeb** vynutit [vazeb profil podle dokumentu C++ Core Guidelines](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#probounds-bounds-safety-profile).
 
   - **Zadejte pravidla** vynutit [zadejte profil podle dokumentu C++ Core Guidelines](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#prosafety-type-safety-profile).
-
 
 Můžete omezit upozornění jenom v jednom nebo několika skupin. **Nativní minimální** a **nativní doporučená** pravidlo sady zahrnují C++ Core Check pravidla kromě jiných PREfast kontroly. Pokud chcete zobrazit dostupné sady pravidel, otevřete dialogové okno Vlastnosti projektu, vyberte **kód Analysis\General**, otevřete rozevírací seznam v **sad pravidel** pole se seznamem a výběru **zvolte více sad pravidel** . Další informace o použití sad pravidel v sadě Visual Studio najdete v tématu [pomocí sad pravidel k seskupování pravidel analýzy kódu](using-rule-sets-to-group-code-analysis-rules.md).
 

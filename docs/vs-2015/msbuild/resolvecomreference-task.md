@@ -19,17 +19,16 @@ caps.latest.revision: 29
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9f535c1d79b1a37a5a25ff3e6f6d424eb4bc631d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 830d2d7d077b65e205536e1b10579fe64633b21a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54801424"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59664989"
 ---
 # <a name="resolvecomreference-task"></a>ResolveComReference – úloha
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Přebírá seznam názvů knihoven typů nebo souborů .tlb a řeší tyto knihovny typů do umístění na disku.  
   
 ## <a name="parameters"></a>Parametry  
@@ -47,10 +46,10 @@ Přebírá seznam názvů knihoven typů nebo souborů .tlb a řeší tyto kniho
 |`ResolvedAssemblyReferences`|Volitelné <xref:Microsoft.Build.Framework.ITaskItem> `[]` výstupní parametr.<br /><br /> Určuje odkazy na sestavení přeložit.|  
 |`ResolvedFiles`|Volitelné <xref:Microsoft.Build.Framework.ITaskItem> `[]` výstupní parametr.<br /><br /> Určuje plně kvalifikovaný soubory na disku, které odpovídají fyzických umístění knihovny typů, které byly k dispozici jako vstup pro tuto úlohu.|  
 |`ResolvedModules`|Volitelné <xref:Microsoft.Build.Framework.ITaskItem> `[]`parametru.|  
-|`SdkToolsPath`|Volitelné [String] (<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->) parametru.<br /><br /> Pokud `ExecuteAsTool` je `true`, tento parametr musí být nastaven na cestu k nástrojům sady SDK pro verzi rozhraní framework, který se cílí.|  
-|`StateFile`|Volitelné <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> parametru.<br /><br /> Určuje soubor mezipaměti pro komponenty modelu COM časová razítka. Pokud není k dispozici, každé spuštění se znova vygeneruje všechny obálky.|  
-|`TargetFrameworkVersion`|Volitelné <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> parametru.<br /><br /> Určuje cílovou verzi rozhraní framework projektu.<br /><br /> Výchozí hodnota je `String.Empty`. což znamená, že není žádné filtrování pro referenci podle cílovou architekturu.|  
-|`TargetProcessorArchitecture`|Volitelné <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> parametru.<br /><br /> Určuje upřednostňovaný cíl architekturu procesoru. Byl předán příznak/Machine tlbimp.exe po převodu.<br /><br /> Hodnota parametru by měl být členem skupiny <xref:Microsoft.Build.Utilities.ProcessorArchitecture>.|  
+|`SdkToolsPath`|(Volitelné [String]<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->) parametru.<br /><br /> Pokud `ExecuteAsTool` je `true`, tento parametr musí být nastaven na cestu k nástrojům sady SDK pro verzi rozhraní framework, který se cílí.|  
+|`StateFile`|volitelná, <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> parametr.<br /><br /> Určuje soubor mezipaměti pro komponenty modelu COM časová razítka. Pokud není k dispozici, každé spuštění se znova vygeneruje všechny obálky.|  
+|`TargetFrameworkVersion`|volitelná, <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> parametr.<br /><br /> Určuje cílovou verzi rozhraní framework projektu.<br /><br /> Výchozí hodnota je `String.Empty`. což znamená, že není žádné filtrování pro referenci podle cílovou architekturu.|  
+|`TargetProcessorArchitecture`|volitelná, <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> parametr.<br /><br /> Určuje upřednostňovaný cíl architekturu procesoru. Byl předán příznak/Machine tlbimp.exe po převodu.<br /><br /> Hodnota parametru by měl být členem skupiny <xref:Microsoft.Build.Utilities.ProcessorArchitecture>.|  
 |`TypeLibFiles`|Volitelné <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametru.<br /><br /> Určuje cesta k souboru knihovny typů pro odkazy modelu COM. Metadata položek může obsahovat položky obsažené v tomto parametru. Další informace najdete v části "TypeLibFiles Metadata položky" níže.|  
 |`TypeLibNames`|Volitelné <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametru.<br /><br /> Určuje názvy knihovny typů řešení. Některá metadata položky musí obsahovat položky obsažené v tomto parametru. Další informace najdete v části "TypeLibNames Metadata položky" níže.|  
 |`WrapperOutputDirectory`|Volitelné `String` parametru.<br /><br /> Umístění na disku, kde je umístěn vygenerovaný definiční sestavení. Pokud tuto položku metadat není zadán, úkol používá absolutní cestu k adresáři a kde je umístěn soubor projektu.|  

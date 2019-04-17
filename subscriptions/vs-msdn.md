@@ -7,17 +7,16 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Přihlaste se k odběru předplatného MSDN Magazine součástí vašeho předplatného sady Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: 3de620413610294072511f1e6e5e498fa64973a3
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: f0bc688f20b249b86c3a3d5512569feb47789c05
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843114"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649912"
 ---
 # <a name="the-msdn-magazine-benefit-in-visual-studio-subscriptions"></a>Výhoda MSDN Magazine v předplatných sady Visual Studio
 
 Komplexní pokrytí technologií Microsoftu a praktická řešení reálných problémů.  V závislosti na předplatné mají nárok na tištěných časopis, nebo dřívější přístup k digitální verzi.
-
 
 ## <a name="activation-steps"></a>Postup aktivace
 Postup výhodu si aktivujete závisí na edici, kterou zvolíte.
@@ -33,7 +32,6 @@ Digitální edice je k dispozici pro členy programu Visual Studio Dev Essential
 2. Vyhledejte dlaždici Zpravodaj MSDN Magazine v části vývoj Professional a klikněte na **přihlásit k odběru** na dlaždici předplatné MSDN Magazine. (Klikněte na "!" v pravém dolním rohu dlaždice pro přístup k digitální verzi.)
    > [!div class="mx-imgBorder"]
    > ![Dlaždice MSDN Magazine výhody](_img/vs-msdn/vs-msdn-tile.png)
-
 
 3. Na stránce MSDN Magazine. Vyberte typ své upřednostňované předplatného.  Můžete zvolit digitální edice zdarma, bez ohledu na to, kde bydlíte.  Tištěná verze je k dispozici zdarma do oblasti USA.  Přesouvání poplatky za tištěné verze odeslané na adresy mimo USA.
    > [!div class="mx-imgBorder"]
@@ -64,7 +62,6 @@ Digitální edice je k dispozici pro členy programu Visual Studio Dev Essential
 
 > [!NOTE]
 > Microsoft už nenabízí Visual Studio Professional ročních předplatných a předplatných Visual Studio Enterprise roční Cloudová předplatná. Nebude bez nutnosti změn stávajících zkušeností zákazníků a možnost obnovit, zvýšit, snížit nebo zrušit předplatná. Nové nepodnikovým zákazníkům přejít na [ https://visualstudio.microsoft.com/vs/pricing/ ](https://visualstudio.microsoft.com/vs/pricing/) a prozkoumejte různé možnosti pro zakoupení sady Visual Studio.
-
 
 Nejste si jistí které předplatné používáte?  Připojte se k [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) zobrazíte všechna předplatná, která jsou přiřazená e-mailovou adresu. Pokud se nezobrazí všechna předplatná, může mít jeden nebo více přiřazené na jinou e-mailovou adresu.  Bude potřeba přihlásit se přes tento e-mailovou adresu najdete v těchto předplatných.
 

@@ -1,5 +1,5 @@
 ---
-title: 'Průvodce: Aktualizace grafu na listu s použitím přepínačů'
+title: 'Návod: Aktualizace grafu na listu s použitím přepínačů'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,14 +14,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 791908c4e5c85a9d1b5210eb950394273bda184c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: c65e064452d307727e1c19578f7a660451f49c70
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602062"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651887"
 ---
-# <a name="walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons"></a>Průvodce: Aktualizace grafu na listu s použitím přepínačů
+# <a name="walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons"></a>Návod: Aktualizace grafu na listu s použitím přepínačů
   Tento návod ukazuje základy používání přepínací tlačítka na list aplikace Microsoft Office Excel poskytnout způsob, jak rychle přepínat mezi možnostmi uživatele. V takovém případě možnosti změnit styl grafu.
 
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]
@@ -108,7 +108,7 @@ ms.locfileid: "56602062"
 
 1.  Vyberte <xref:Microsoft.Office.Tools.Excel.Chart> ovládací prvek v návrháři a změnit následující vlastnosti v **vlastnosti** okna.
 
-    |Vlastnost|Hodnota|
+    |Vlastnost|Value|
     |--------------|-----------|
     |**Název**|**dataChart**|
     |**HasLegend**|**false**|
@@ -132,34 +132,28 @@ ms.locfileid: "56602062"
 
 2. Z **běžné ovládací prvky** karty **nástrojů**, přetáhněte **přepínač** řídit uživatelského ovládacího prvku a změňte následující vlastnosti.
 
-
    | Vlastnost | Hodnota |
    |----------|------------------|
    | **Název** | **columnChart** |
    | **Text** | **Sloupcový graf** |
 
-
 3. Přidejte druhé tlačítko přepínače do uživatelského ovládacího prvku a změňte následující vlastnosti.
 
-
-   | Vlastnost | Hodnota |
+   | Vlastnost | Value |
    |----------|---------------|
    | **Název** | **barChart** |
    | **Text** | **Pruhový graf** |
 
-
 4. Přidejte třetí přepínač uživatelského ovládacího prvku a změňte následující vlastnosti.
-
 
    | Vlastnost | Hodnota |
    |----------|----------------|
    | **Název** | **lineChart** |
    | **Text** | **Spojnicový graf** |
 
-
 5. Přidejte čtvrtý přepínač uživatelského ovládacího prvku a změňte následující vlastnosti.
 
-   |Vlastnost|Hodnota|
+   |Vlastnost|Value|
    |--------------|-----------|
    |**Název**|**areaBlockChart**|
    |**Text**|**Plošný graf bloku**|

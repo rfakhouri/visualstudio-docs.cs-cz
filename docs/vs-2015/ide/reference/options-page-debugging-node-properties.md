@@ -9,17 +9,16 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 31eff8876dd6ae1a83f74d419853846bf461e275
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: a9ebedd1a764098d8e4a4866a9645d10aa999062
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54782194"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59670183"
 ---
 # <a name="options-page-debugging-node-properties"></a>Stránka Možnosti, vlastnosti uzlu ladění
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Následující tabulky popisují stránky (nebo kolekce vlastností), které jsou přidruženy **ladění** kategorie, `DTE.Properties("Debugging", <Property Page>)` z **možnosti** dialogové okno.  
   
 ## <a name="general"></a>Obecné  
@@ -67,7 +66,7 @@ Následující tabulky popisují stránky (nebo kolekce vlastností), které jso
 ## <a name="just-in-time"></a>za běhu  
  `DTE.Properties("Debugging", "JustInTime")`  
   
-|Název položky vlastnosti|Hodnota|Popis|  
+|Název položky vlastnosti|Value|Popis|  
 |------------------------|-----------|-----------------|  
 |JitManaged|Get/Set (Boolean)|Určuje, zda je povoleno ladění za běhu pro spravovaný kód.|  
 |JitNative|Get/Set (Boolean)|Určuje, zda je povoleno ladění za běhu pro nativní kód.|  

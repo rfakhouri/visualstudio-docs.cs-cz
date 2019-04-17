@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 49edb08b35b3006901201ccc880a5e74da92f834
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 25ea62284698de9d57cbcbefa73b950af8c42a6f
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55948313"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59647984"
 ---
 # <a name="build-events-page-project-designer-c"></a>Stránka Události sestavení, návrhář projektu (C#)
 Použití **události sestavení** stránku **Návrháře projektu** k určení pokyny ke konfiguraci sestavení. Můžete také zadat podmínky, za kterých jsou spuštěny žádné události po sestavení. Další informace najdete v tématu [jak: Určení událostí sestavení (C#)](../../ide/how-to-specify-build-events-csharp.md)a [jak: Určení událostí sestavení (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md).
@@ -35,12 +35,10 @@ Použití **události sestavení** stránku **Návrháře projektu** k určení 
 > [!NOTE]
 > Události před sestavením nebudou spuštěny, pokud je aktuální projekt a není aktivováno žádné sestavení.
 
-
  **Příkazový řádek události po sestavení** Určuje všechny příkazy k provedení po skončení sestavování. Zadejte dlouhé příkazy, klikněte na tlačítko **upravit POST-Build** zobrazíte **pre-build Event/po sestavení příkazového řádku dialogové okno události**.
 
 > [!NOTE]
 > Přidat `call` než vše post-build příkazy, které spouštějí soubory .bat. Například `call C:\MyFile.bat` nebo `call C:\MyFile.bat call C:\MyFile2.bat`.
-
 
  **Spustit událost po sestavení** určuje následující podmínky pro událost po sestavení ke spuštění, jak je znázorněno v následující tabulce.
 

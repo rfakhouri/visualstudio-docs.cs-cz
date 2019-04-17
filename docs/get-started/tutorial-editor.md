@@ -11,19 +11,30 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 3aacddcd5cd27435b92b4689999e6d9dc5ca190b
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: 913a5a08dc467ea23d22c2a08a23abfe70b9a736
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "58069811"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59657218"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Zjistěte, jak pomocí editoru kódu
 
 V tomto úvodu během 10 minut do editoru kódu v sadě Visual Studio přidáme kód pro soubor, který chcete podívat na některé ze způsobů, že sada Visual Studio provádí zápis, procházení a porozumění kódu jednodušší.
 
+::: moniker range="vs-2017"
+
 > [!TIP]
-> Pokud jste ještě nenainstalovali aplikaci Visual Studio, přejděte [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) stránku a nainstalovat zdarma.
+> Pokud jste ještě nenainstalovali aplikaci Visual Studio, přejděte [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) stránku a nainstalovat zdarma.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+> [!TIP]
+> Pokud jste ještě nenainstalovali aplikaci Visual Studio, přejděte [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) stránku a nainstalovat zdarma.
+
+::: moniker-end
 
 Tento článek předpokládá, že jste již obeznámeni s programovacím jazyce. Pokud si nejste, doporučujeme nejdřív podívat na jeden z programovací šablon rychlý start, jako je například vytvoření webové aplikace s využitím [Python](../ide/quickstart-python.md) nebo [jazyka C#](../get-started/csharp/tutorial-aspnet-core.md), nebo vytvořte aplikaci konzoly pomocí [jazyka Visual Basic](../ide/quickstart-visual-basic-console.md) nebo [C++](../ide/getting-started-with-cpp-in-visual-studio.md).
 

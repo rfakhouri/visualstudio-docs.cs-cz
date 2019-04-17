@@ -17,17 +17,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2ae8687a63f4f49a84a67a2c504ee5bf11769128
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f239da7816f72b9204364303113d32f5e06c4fd8
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54768139"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59661903"
 ---
 # <a name="property-pages-javascript"></a>Stránky vlastností, JavaScript
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 **Stránky vlastností**poskytuje přístup k nastavení projektu. Můžete použít stránky, které se zobrazují v **stránky vlastností** Chcete-li změnit vlastnosti projektu.  
   
  Pro přístup k vlastnostem projektu, vyberte uzel projektu v **Průzkumníka řešení**. Na **projektu** nabídky, klikněte na tlačítko **vlastnosti**.  

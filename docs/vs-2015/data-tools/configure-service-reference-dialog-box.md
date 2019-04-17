@@ -15,17 +15,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4cc4ae6704f59f33de091fe528c7e05898361115
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 56e8a9210b842d6fe63140f643ac3c0712cd100d
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54773432"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59656762"
 ---
 # <a name="configure-service-reference-dialog-box"></a>Dialogové okno Nastavit odkaz na službu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 **Nastavit odkaz na službu** dialogové okno umožňuje konfigurovat chování [!INCLUDE[vsindigo](../includes/vsindigo-md.md)] služby.  
   
 > [!NOTE]
@@ -33,7 +32,7 @@ ms.locfileid: "54773432"
   
  Pro přístup **nastavit odkaz na službu** dialogové okno, klikněte pravým tlačítkem na službu odkazovat v **Průzkumníku řešení** a zvolte **nastavit odkaz na službu**. Dialogové okno se můžete dostat taky kliknutím **Upřesnit** tlačítko **Add Service Reference Dialog Box**.  
   
-## <a name="task-list"></a>Seznam úloh  
+## <a name="task-list"></a>Seznam úkolů  
   
 -   Chcete-li změnit adresu, kde se hostuje službu WCF, zadejte novou adresu ve **adresu** pole.  
   

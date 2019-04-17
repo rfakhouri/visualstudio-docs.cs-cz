@@ -19,17 +19,16 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 936ab49a07da5065b14b4a56325607001352f747
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ce88cb875a008b806aa882dafe186af7d8f29f29
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54802157"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649545"
 ---
 # <a name="createitem-task"></a>CreateItem – úloha
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Naplní položku kolekce s vstupních položek. To umožňuje položky, které se mají zkopírovat z jednoho seznamu do jiného.  
   
 > [!NOTE]

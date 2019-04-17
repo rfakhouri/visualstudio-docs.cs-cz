@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 9edda9d12ad5dfea1e65bd0356010d97af6dc3ac
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: c3c477fa1187dfd6ffc24653915e0e8d708d77c3
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317416"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59669924"
 ---
 # <a name="generate-unit-tests-for-your-code-with-intellitest"></a>Generování testů jednotek pro kód pomocí funkce IntelliTest
 
@@ -147,13 +147,11 @@ Testovací rozhraní framework rozšíření jsou k dispozici také v aplikaci V
 * [NUnit rozšíření pro generátory testu](https://marketplace.visualstudio.com/items?itemName=NUnitDevelopers.TestGeneratorNUnitextension-18371)
 * [rozšíření xUnit.net pro generátory testu](https://marketplace.visualstudio.com/items?itemName=BradWilson.xUnitnetTestExtensions)
 
-
 Po restartování sady Visual Studio a znovu otevřete řešení, klikněte pravým tlačítkem na třídy nebo metody a pak zvolte **vytvořit IntelliTest**. Vyberte nainstalované rozhraní tady:
 
 ![Vyberte jiné rámce jednotkových testů pro IntelliTest](../test/media/pexcreateintellitestextensions.png)
 
 Potom spusťte IntelliTest generování testů jednotek v jejich odpovídající *. g.cs* soubory.
-
 
 ### <a name="q-can-i-learn-more-about-how-the-tests-are-generated"></a>DOTAZ: Dozvím víc o tom, jak jsou generovány testy?
 

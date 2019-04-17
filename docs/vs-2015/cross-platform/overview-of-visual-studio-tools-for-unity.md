@@ -8,17 +8,16 @@ ms.assetid: b4231bb9-45c4-4c77-ac3c-d05033b26393
 caps.latest.revision: 6
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 69b9fb9bd21ad19199e5ba268c8f0a87fb546d57
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d7ad35c95fab41ded9fd15b0f098307d4f7bb3ac
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54776508"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659077"
 ---
 # <a name="overview-of-visual-studio-tools-for-unity"></a>Přehled Visual Studio Tools for Unity
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 V této části se dozvíte více o funkcích nástroje Visual Studio Tools pro Unity nabídky a jak vám pomůže je zvýšit produktivitu pomocí Unity.  
   
  Pomocí Visual Studio Tools for Unity (*VSTU*), můžete použít Visual Studio napsat hru a editor skriptů v jazyce C# a pak použijte jeho výkonný ladicí program najít a opravit chyby. Nejnovější verzí VSTU zahrnuje pro Unity a ShaderLab shader language, lepší vizualizace ladicího programu a generování kódu vylepšené pro Průvodce MonoBehavior barevné zvýrazňování syntaxe. VSTU také přináší soubory projektu Unity, zprávy konzoly a schopnost pustit do hry... do sady Visual Studio, takže můžete věnovat méně času přepnutí do a z Unity editoru při psaní kódu.  

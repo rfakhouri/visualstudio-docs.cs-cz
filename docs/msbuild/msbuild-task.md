@@ -18,19 +18,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b3a8b210c91019b2b7285288c7826f4983dfed6
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 87f600e3872de2211d893fa32b7cbcd2600825bd
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56627321"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59667544"
 ---
 # <a name="msbuild-task"></a>MSBuild – úloha
 Sestaví [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] projekty z jiného [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] projektu.
 
 ## <a name="parameters"></a>Parametry
  Následující tabulka popisuje parametry `MSBuild` úloh.
-
 
 | Parametr | Popis |
 |-----------------------------------| - |

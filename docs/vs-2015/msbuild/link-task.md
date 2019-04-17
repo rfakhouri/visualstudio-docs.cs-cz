@@ -31,17 +31,16 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4575516304862b4d50060a101a08a74f88db4597
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 7300d11741e9e3395a39b275ec966f4d801e0cec
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54768511"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59650146"
 ---
 # <a name="link-task"></a>Úloha odkazu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Zabalí nástroj linker Visual C++, link.exe. Nástroj linker k propojení objektových souborů Common Object File Format (COFF) a knihovny, které chcete vytvořit spustitelný soubor (.exe) nebo dynamická knihovna (DLL). Další informace najdete v tématu [možnosti Linkeru](http://msdn.microsoft.com/library/c1d51b8a-bd23-416d-81e4-900e02b2c129).  
   
 ## <a name="parameters"></a>Parametry  
@@ -145,7 +144,7 @@ Zabalí nástroj linker Visual C++, link.exe. Nástroj linker k propojení objek
   
   - **ForceIJWImage** - **/CLRIMAGETYPE:IJW**  
   
-  - **ForcePureILImage** -  ** /CLRIMAGETYPE: PURE**  
+  - **ForcePureILImage** -   **/CLRIMAGETYPE: PURE**  
   
   - **ForceSafeILImage** - **Safe**  
   
@@ -299,11 +298,11 @@ Zabalí nástroj linker Visual C++, link.exe. Nástroj linker k propojení objek
   
    Zadejte jednu z následujících hodnot, z nichž každý odpovídá možnosti příkazového řádku.  
   
-  - **Povolené** -  ** /FORCE**  
+  - **Povolené** -   **/FORCE**  
   
   - **MultiplyDefinedSymbolOnly** - **/FORCE:MULTIPLE**  
   
-  - **UndefinedSymbolOnly** -  ** /FORCE: NEROZPOZNANÝ**  
+  - **UndefinedSymbolOnly** -   **/FORCE: NEROZPOZNANÝ**  
   
     Další informace najdete v tématu [/Force (vynucení výstupu souboru)](http://msdn.microsoft.com/library/b1e9a218-a5eb-4e60-a4a4-65b4be15e5da).  
   
@@ -449,13 +448,13 @@ Zabalí nástroj linker Visual C++, link.exe. Nástroj linker k propojení objek
   
    Zadejte jednu z následujících hodnot, z nichž každý odpovídá možnosti příkazového řádku.  
   
-  - **NoErrorReport** -  ** /errorreport: žádné**  
+  - **NoErrorReport** -   **/errorreport: žádné**  
   
   - **PromptImmediately** - **/ERRORREPORT:PROMPT**  
   
   - **QueueForNextLogin** - **/ERRORREPORT:QUEUE**  
   
-  - **SendErrorReport** -  ** /errorreport: Send**  
+  - **SendErrorReport** -   **/errorreport: Send**  
   
     Další informace najdete v tématu [/errorreport (sestava interními chybami Linkeru)](http://msdn.microsoft.com/library/f5fab595-a2f1-4eb0-ab5c-1c0fbd3d8c28).  
   
@@ -749,7 +748,7 @@ Zabalí nástroj linker Visual C++, link.exe. Nástroj linker k propojení objek
   
   - **NotSet** - *\<none>*  
   
-  - **Konzola** -  ** /Subsystem: Console**  
+  - **Konzola** -   **/Subsystem: Console**  
   
   - **Windows** - **/SUBSYSTEM:WINDOWS**  
   

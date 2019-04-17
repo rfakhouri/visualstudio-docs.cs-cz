@@ -15,17 +15,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9d3b9957d9eb08c8e6398866fa4b4dd51dbcea70
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8ce14dacb805839a1e61d8cf56753cedd312c162
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54799105"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59661864"
 ---
 # <a name="how-to-change-fonts-and-colors-in-the-editor"></a>Postupy: Změna písma a barev v editoru
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Můžete změnit výchozí řez písma, nastavit velikost písma a změnit barvy popředí a pozadí pro různé textové **zobrazení položek** v editoru kódu. Když měnit nastavení písma mějte na paměti následující informace:  
   
 -   Nastavení pro **písmo** a **velikost** jsou globální pro všechny elementy textu ve všech [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] editory.  
@@ -58,4 +57,4 @@ Můžete změnit výchozí řez písma, nastavit velikost písma a změnit barvy
  [Vlastní nastavení editoru](../../ide/customizing-the-editor.md)   
  [Dialogové okno Možnosti textového editoru pole](../../ide/reference/text-editor-options-dialog-box.md)   
  [Psaní kódu](../../ide/writing-code-in-the-code-and-text-editor.md)   
- [Postupy: Změna písma a barvy](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
+ [Postupy: Změna písma a barev](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)

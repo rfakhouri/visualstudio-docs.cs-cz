@@ -25,17 +25,16 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 24aae7066d3fb14a298c780e5cd9f7e91901821e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 147e9cc66518372e042230a30c16588ab719cb1c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54765549"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59661578"
 ---
 # <a name="create-a-sql-database-by-using-a-designer"></a>Vytvoření databáze SQL pomocí návrháře
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Můžete zkoumat základní úkoly, jako je například přidávání tabulek a definování sloupců, pomocí sady Visual Studio k vytvoření a aktualizaci souboru místní databáze v serveru SQL Server Express LocalDB. Po dokončení tohoto návodu můžete najít pokročilejší možnosti použitím místní databáze jako výchozího bodu pro další návody, které je vyžadují.  
   
  Můžete také vytvořit databázi pomocí SQL Server Management Studio (samostatný soubor ke stažení) nebo pomocí příkazů jazyka Transact-SQL v **Průzkumník objektů systému SQL Server** panelu nástrojů v sadě Visual Studio.  

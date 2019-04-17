@@ -13,12 +13,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 27affdb42f6f5ad1dd4c880b87e3cbf737d52921
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 24575f125c07a016bef4742e010cbdd51f6c75e9
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54763224"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59647930"
 ---
 # <a name="properties-of-attributes-on-uml-class-diagrams"></a>Vlastnosti atributů v diagramech tříd UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,6 @@ V diagramu tříd UML lze přidat *atributy* u tříd a rozhraní. Atribut defin
  Můžete zobrazit vlastnosti atributu, klikněte pravým tlačítkem na atribut v dané třídy nebo rozhraní v diagramu a klikněte na **vlastnosti**. Vlastnosti se zobrazí v okně Vlastnosti.  
 
  Chcete-li zobrazit vlastnosti atributu, pravým tlačítkem myši a potom klikněte na **vlastnosti**.  
-
 
 |   **Vlastnost**    | **Default**  |                                                                                                                                                                                                         Popis                                                                                                                                                                                                          |
 |-------------------|--------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

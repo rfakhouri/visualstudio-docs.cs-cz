@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ee63e2fe4409921a36daba5ac85cce417d5564aa
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 074c877e8fd8f1e29aee440bf54e73ceab68767a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56612319"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649131"
 ---
 # <a name="concurrency-visualizer-command-line-utility-cvcollectioncmd"></a>Nástroj příkazového řádku ve Vizualizéru souběžnosti (CVCollectionCmd)
 Můžete použít nástroj příkazového řádku Vizualizéru souběžnosti (*CVCollectionCmd.exe*) Chcete-li shromažďovat trasování z příkazového řádku, takže můžete je zobrazit v Concurrency Visualizer pro sadu Visual Studio. Nástroje lze použít na počítačích, které nemají nainstalovanou sadu Visual Studio.
@@ -40,7 +40,7 @@ Můžete použít nástroj příkazového řádku Vizualizéru souběžnosti (*C
 
 |Možnost|Popis|Parametry|Vrácené hodnoty|
 |------------|-----------------|----------------|-------------------|
-|Dotazy|Vrátí, zda shromažďování lze spustit.|Žádná|0, pokud kolekce je připraven ke spuštění.<br /><br /> 1, pokud kolekce je již spuštěna.<br /><br /> 2, pokud kolekce není v průběhu, ale jeden nebo více požadovaných [trasování událostí pro Windows](/dotnet/framework/wcf/samples/etw-tracing) relace je již povolen.|
+|Dotazy|Vrátí, zda shromažďování lze spustit.|Žádné|0, pokud kolekce je připraven ke spuštění.<br /><br /> 1, pokud kolekce je již spuštěna.<br /><br /> 2, pokud kolekce není v průběhu, ale jeden nebo více požadovaných [trasování událostí pro Windows](/dotnet/framework/wcf/samples/etw-tracing) relace je již povolen.|
 |Spuštění|Spustí zadaný procesu v rámci Vizualizátor souběžnosti.|Cesta ke spustitelnému souboru.|0, pokud spuštění úspěšné.<br /><br /> 1, pokud spuštění selhalo, protože nebylo možné spustit cílovou aplikaci.<br /><br /> 13, pokud spuštění selhalo, protože CVCollectionCmd nemá dostatečná oprávnění k zápisu do zadaného výstupního adresáře.|
 |Připojit|Začne sběr trasování celého systému; v opačném případě připojí k procesu, pokud je zadaná.|Žádné|0, pokud byla úspěšná přílohy.<br /><br /> 1 pro přílohy se nezdařilo, protože určený proces je neplatný nebo nejednoznačný.<br /><br /> 13 Pokud přílohy se nezdařilo, protože CVCollectionCmd nemá dostatečná oprávnění k zápisu do zadaného výstupního adresáře:.|
 |Odpojit|Zastaví shromažďování.|Žádné|0, pokud bylo úspěšné odpojení.<br /><br /> 1 pro odpojení se nezdařilo, protože kolekce není právě probíhá.<br /><br /> 2, pokud odpojení se nezdařilo, protože kolekce se nepovedlo zastavit.|
@@ -61,7 +61,6 @@ Můžete použít nástroj příkazového řádku Vizualizéru souběžnosti (*C
 ### <a name="configuration-file-tags"></a>Konfigurační soubor značek
  Konfigurační soubor je založený na formátu XML. Zde jsou platné značky a hodnoty:
 
-
 | Značka | Popis | Hodnoty |
 |-------------------------| - | - |
 | Konfigurace | Vymezuje pásma celkové konfiguračního souboru. | Musí obsahovat tyto prvky:<br /><br /> -Podverze<br />-   MajorVersion |
@@ -74,7 +73,7 @@ Můžete použít nástroj příkazového řádku Vizualizéru souběžnosti (*C
 | MarkerProvider | Určuje zprostředkovatele jednu značku. | Musí obsahovat tyto prvky:<br /><br /> -Úroveň<br />-IDENTIFIKÁTOR GUID<br />– Název<br /><br /> Může obsahovat tyto prvky:<br /><br /> -Kategorie<br />-IsEnabled |
 | úroveň | Nastaví úroveň důležitosti MarkerProvider. | – Nízká<br />-Normální<br />– Vysoká<br />– Kritické<br />-Vše |
 | Guid | Globálně jedinečný identifikátor poskytovatele trasování událostí pro Windows značek. | A GUID. |
-| Název | Určuje popis poskytovatele značek. | Řetězec. |
+| Name | Určuje popis poskytovatele značek. | Řetězec. |
 | Kategorie | Určuje kategorie shromážděných pro poskytovatele značek. | Řetězec oddělených čárkou čísla nebo rozsahy čísel. |
 | hodnotu isEnabled | Nastaví hodnotu, která určuje, zda je povoleno poskytovatele značek pro kolekci. | -True<br />-False |
 | FilterConfig | Určuje seznam možností konfigurace událostí trasování událostí pro Windows, které jsou filtrovány z kolekce. | Může obsahovat tyto prvky:<br /><br /> -CollectClrEvents<br />-ClrCollectionOptions<br />-CollectSampleEvents<br />-CollectGpuEvents<br />-CollectFileIO |

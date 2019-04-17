@@ -19,17 +19,16 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1a4610f5603ad0197487c198074ad72d1381fda1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a3d829a439ec7fb61247e28146e80d4988f04623
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54802186"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659693"
 ---
 # <a name="vbc-task"></a>Vbc – úloha
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Zabalí vbc.exe, která vytváří spustitelné soubory (.exe), dynamické knihovny (DLL) nebo moduly kódu (.netmodule). Další informace o vbc.exe, naleznete v tématu [příkazového řádku kompilátoru jazyka Visual Basic](http://msdn.microsoft.com/library/6b57c444-50c7-4b88-8f59-ed65cff5e05c).  
   
 ## <a name="parameters"></a>Parametry  
@@ -53,7 +52,7 @@ Zabalí vbc.exe, která vytváří spustitelné soubory (.exe), dynamické kniho
 |`Imports`|Volitelné <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametru.<br /><br /> Obory názvů se importuje z zadanou položku kolekce. Tento parametr [/importuje](http://msdn.microsoft.com/library/9a93fb53-c080-497b-bf9b-441022dbbc39) přepínače kompilátoru vbc.exe.|  
 |`KeyContainer`|Volitelné `String` parametru.<br /><br /> Určuje název kontejneru kryptografických klíčů. Tento parametr corresonds k [/keycontainer](http://msdn.microsoft.com/library/6a9bc861-1752-4db1-9f64-b5252f0482cc) přepínače kompilátoru vbc.exe.|  
 |`KeyFile`|Volitelné `String` parametru.<br /><br /> Určuje název souboru obsahujícího kryptografický klíč. Další informace najdete v tématu [/keyfile](http://msdn.microsoft.com/library/ffa82a4b-517a-4c6c-9889-5bae7b534bb8).|  
-|`LangVersion`|Volitelné [String] (<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->) parametru.<br /><br /> Určuje jazykovou verzi, "9" nebo "10".|  
+|`LangVersion`|(Volitelné [String]<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->) parametru.<br /><br /> Určuje jazykovou verzi, "9" nebo "10".|  
 |`LinkResources`|Volitelné <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametru.<br /><br /> Vytvoří odkaz na prostředek rozhraní .NET Framework do výstupního souboru; soubor prostředků není umístěn do výstupního souboru. Tento parametr [/linkresource](http://msdn.microsoft.com/library/cf4dcad8-17b7-404c-9184-29358aa05b15) přepínače kompilátoru vbc.exe.|  
 |`MainEntryPoint`|Volitelné `String` parametru.<br /><br /> Určuje třídu nebo modul, který obsahuje `Sub Main` postup. Tento parametr corresonds k [/main](http://msdn.microsoft.com/library/83fc339d-6652-415d-b205-b5133319b5b0) přepínače kompilátoru vbc.exe.|  
 |`ModuleAssemblyName`|Volitelné `String` parametru.<br /><br /> Určuje sestavení, které tento modul je součástí.|  

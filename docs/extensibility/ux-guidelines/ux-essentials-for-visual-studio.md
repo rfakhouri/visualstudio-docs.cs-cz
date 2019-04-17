@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f7be75a00925fbd3220934d50432f625c66fee9d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 063818aa828305eedfc184231f2dc4de4eec981c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56723497"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59667452"
 ---
 # <a name="ux-essentials-for-visual-studio"></a>Základy uživatelského prostředí pro Visual Studio
 ## <a name="best-practices"></a>Osvědčené postupy
@@ -102,7 +102,6 @@ ms.locfileid: "56723497"
 
 #### <a name="example-video-links-in-team-explorer"></a>Příklad: video odkazy v Průzkumníku týmových projektů
 Vynucení uživateli číst vysvětlující text před zavření uživatelského rozhraní je odolné proti vzoru v rámci sady Visual Studio. Odkazy správně navrženého, video by měl zobrazení popisu tlačítka společně s dalšími informacemi na podržte ukazatel myši a kliknutím "&times;" by měla Zavřít zprávu bez nutnosti další interakce.
-
 
  ![Vysvětlující text spojení anti&#45;vzor &#45; nesprávné](../../extensibility/ux-guidelines/media/incorrectuseofmultipleclicks.png "Incorrectuseofmultipleclicks")<br />Nesprávný odkaz na video vzor
 

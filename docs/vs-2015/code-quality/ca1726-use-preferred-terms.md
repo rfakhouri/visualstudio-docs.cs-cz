@@ -14,17 +14,17 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: e31c459d2d5ce8dc114605716c09f8360eca23d3
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: 67dab4c732faa04af44800f740d78c4ce4f9dc80
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355209"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59664109"
 ---
 # <a name="ca1726-use-preferred-terms"></a>CA1726: Použijte upřednostňované výrazy
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější dokumentaci k sadě Visual Studio, naleznete v tématu [CA1726: Použijte upřednostňované výrazy](https://docs.microsoft.com/visualstudio/code-quality/ca1726-use-preferred-terms) na webu docs.microsoft.com.  
+Nejnovější dokumentaci k sadě Visual Studio, naleznete v tématu [CA1726: Použijte upřednostňované výrazy](https://docs.microsoft.com/visualstudio/code-quality/ca1726-use-preferred-terms).  
   
 |||  
 |-|-|  
@@ -33,7 +33,7 @@ Nejnovější dokumentaci k sadě Visual Studio, naleznete v tématu [CA1726: Po
 |Kategorie|Microsoft.Naming|  
 |Narušující změna|Zásadní - při vyvolání na sestavení<br /><br /> Bez konce – při vyvolání na parametry typu|  
   
-## <a name="cause"></a>příčina  
+## <a name="cause"></a>Příčina  
  Název externě viditelného identifikátoru zahrnuje výraz, pro který existuje alternativní upřednostňovaný výraz. Název případně obsahuje také výraz příznak nebo příznaky.  
   
 ## <a name="rule-description"></a>Popis pravidla  
@@ -41,30 +41,30 @@ Nejnovější dokumentaci k sadě Visual Studio, naleznete v tématu [CA1726: Po
   
 |Zastaralé termín|Upřednostňovaný termín|  
 |-------------------|--------------------|  
-|nejsou|AreNot|  
-|Zrušeno|Zrušeno|  
-|Nemůžu|Cannot|  
-|ComPlus|EnterpriseServices|  
-|Nepovedlo|CouldNot|  
-|Didnt|DidNot|  
-|Doesnt|DoesNot|  
-|Dont|DoNot|  
-|Příznak nebo příznaky|Neexistuje žádné nahrazující výraz. Nepoužívejte.|  
-|Hadnt|HadNot|  
-|Nebyl|HasNot|  
-|nebyly|HaveNot|  
-|Indexy|Indexy|  
-|není|IsNot|  
-|Přihlášení|Přihlášení|  
-|Odhlášení|LogOff|  
-|Shouldnt|ShouldNot|  
-|Přihlášení|SignIn|  
-|Schvalování|Odhlášení|  
-|Wasnt|WasNot|  
-|nebyly|WereNot|  
-|Wont|WillNot|  
-|Wouldnt|WouldNot|  
-|Zapisovatelný|Zápis|  
+|`Arent`|`AreNot`|
+|`Cancelled`|`Canceled`|
+|`Cant`|`Cannot`|
+|`ComPlus`|`EnterpriseServices`|
+|`Couldnt`|`CouldNot`|
+|`Didnt`|`DidNot`|
+|`Doesnt`|`DoesNot`|
+|`Dont`|`DoNot`|
+|`Flag` Nebo `Flags`|Neexistuje žádné nahrazující výraz. Nepoužívejte.|
+|`Hadnt`|`HadNot`|
+|`Hasnt`|`HasNot`|
+|`Havent`|`HaveNot`|
+|`Indices`|`Indexes`|
+|`Isnt`|`IsNot`|
+|`LogIn`|`LogOn`|
+|`LogOut`|`LogOff`|
+|`Shouldnt`|`ShouldNot`|
+|`SignOn`|`SignIn`|
+|`SignOff`|`SignOut`|
+|`Wasnt`|`WasNot`|
+|`Werent`|`WereNot`|
+|`Wont`|`WillNot`|
+|`Wouldnt`|`WouldNot`|
+|`Writeable`|`Writable`|
   
 ## <a name="how-to-fix-violations"></a>Jak vyřešit porušení  
  Chcete-li opravit porušení tohoto pravidla, nahraďte výraz s alternativní upřednostňovaný výraz.  

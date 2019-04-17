@@ -12,12 +12,12 @@ manager: jillfra
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: f9a170cec2d41a779ecdecc1f2be408d485b3a63
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: f3dbd175ef5575375c314b942fedff9f77403265
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58857473"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59656437"
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>Ladění živé aplikace ASP.NET Azure pomocí ladicího programu snímků
 
@@ -34,9 +34,14 @@ V tomto kurzu se naučíte:
 
 ## <a name="prerequisites"></a>Požadavky
 
-* Snapshot Debugger je dostupná jenom pro Visual Studio Enterprise 2017 verze 15.5 nebo novější s **funkcí vývoj pro Azure**. (V části **jednotlivé komponenty** kartu, najdete ho pod **ladění a testování** > **Snapshot debugger**.)
+* Snapshot Debugger je k dispozici od verze Visual Studio Enterprise 2017 verze 15.5 nebo novější s pouze **funkcí vývoj pro Azure**. (V části **jednotlivé komponenty** kartu, najdete ho pod **ladění a testování** > **Snapshot debugger**.)
 
-    Pokud ještě není nainstalovaný, nainstalujte [Visual Studio Enterprise 2017 verze 15.5](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) nebo novější. Při aktualizaci z předchozí instalace sady Visual Studio 2017, spusťte instalační program sady Visual Studio a vrátit se změnami komponenty ladicího programu snímků **úlohy pro vývoj pro ASP.NET a web**.
+    ::: moniker range=">=vs-2019"
+    Pokud ještě není nainstalovaný, nainstalujte [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019). Při aktualizaci z předchozí instalace sady Visual Studio, spusťte instalační program sady Visual Studio a vrátit se změnami komponenty ladicího programu snímků **úlohy pro vývoj pro ASP.NET a web**.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Pokud ještě není nainstalovaný, nainstalujte [Visual Studio Enterprise 2017 verze 15.5](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) nebo novější. Při aktualizaci z předchozí instalace sady Visual Studio 2017, spusťte instalační program sady Visual Studio a vrátit se změnami komponenty ladicího programu snímků **úlohy pro vývoj pro ASP.NET a web**.
+    ::: moniker-end
 
 * Plán služby App Service Basic nebo vyšší.
 

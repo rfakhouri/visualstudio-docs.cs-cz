@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bba2a948ef9554434ad1032bcbfb8b54dfe8d4c3
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2c358f80284083625dfe8c0eb3484c95000beb63
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56622719"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59670443"
 ---
 # <a name="support-for-user-settings"></a>Podpora pro uživatelská nastavení
 VSPackage může definovat jeden nebo více kategorií nastavení, které jsou skupiny proměnných stavu, které se zachovávají po kliknutí **Importovat/exportovat nastavení** příkaz **nástroje** nabídky. Pokud chcete povolit tento trvalost, použijte nastavení rozhraní API v [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)].
@@ -50,8 +50,7 @@ VSPackage může definovat jeden nebo více kategorií nastavení, které jsou s
 
  AlternateParent = CategoryName
 
-
-| Název | Typ | Data | Popis |
+| Name | Typ | Data | Popis |
 |-----------------|--------| - | - |
 | (Výchozí) | REG_SZ | Název vlastního nastavení bodu | Název klíče, `<CSPName`>, je nelokalizovaný název vlastního nastavení bodu.<br /><br /> Pro implementace podle MPF, je tím, že zkombinujete získat název klíče `categoryName` a `objectName` argumenty <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> konstruktor do `categoryName_objectName`.<br /><br /> Klíč může být prázdný nebo měl obsahovat ID odkazu na lokalizovaný řetězec v satelitní knihovně DLL. Tato hodnota pochází z `objectNameResourceID` argument <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> konstruktoru. |
 | Balíček | REG_SZ | GUID | Identifikátor GUID sady VSPackage, která implementuje vlastního nastavení bodu.<br /><br /> Implementace založené na používání MPF <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> třídy, použijte konstruktoru `objectType` argument, který obsahuje sady VSPackage <xref:System.Type> a reflexe získat tuto hodnotu. |

@@ -9,17 +9,16 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2cba9557ba40fe2daf993557b8d8ce92d5dda698
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3c5a461b2aad51fa4fa2d4ac5cc682ae413b6eb1
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54771252"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653433"
 ---
 # <a name="sample-xsd-file-relationships"></a>Ukázkový soubor XSD: Relace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Následující soubor XSD se používá v různých příkladů v dokumentaci k Návrhář schématu XSD. Tento soubor je nákupní pořadí schématu poznámky a dokumentaci.  
   
 ```xml  

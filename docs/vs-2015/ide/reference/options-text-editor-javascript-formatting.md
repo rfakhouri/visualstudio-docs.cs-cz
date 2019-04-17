@@ -13,17 +13,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 545d5ff9530de577a553923eea3cb208bd5bc68e
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 81532137b98b415a598a2770b19c3df8ce14f135
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54794407"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59666465"
 ---
 # <a name="options-text-editor-javascript-formatting"></a>Možnosti, textový editor, JavaScript, formátování
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Použití **formátování** stránku **možnosti** dialogové okno Nastavení možností pro formátování kódu v editoru kódu. Pro přístup k této stránce, na panelu nabídek zvolte **nástroje**, **možnosti**a potom rozbalte **textový Editor**, **JavaScript**a **Formátování**.  
   
  [!INCLUDE[note_settings_general](../../includes/note-settings-general-md.md)]  

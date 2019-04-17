@@ -7,17 +7,17 @@ ms.date: 11/03/2018
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
-ms.openlocfilehash: 1a3d95176af41bbf7803144995888b12abeeea3a
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: 117dfbe2d9d97dadd02388b7d4f88a047fcb69fa
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58856674"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659056"
 ---
 # <a name="install-visual-studio-2017-for-mac"></a>Instalace sady Visual Studio 2017 pro Mac
 
 > [!NOTE]
-> 2019 Visual Studio for Mac je [nyní k dispozici](installation.md?view=vsmac-2019).
+> 2019 Visual Studio for Mac je [nyní k dispozici](installation.md?view=vsmac-2019). Starší verze sady Visual Studio pro Mac, najdete v sadě Visual Studio [stránky pro stažení](https://visualstudio.microsoft.com/vs/older-downloads/).
 
 ## <a name="requirements"></a>Požadavky
 

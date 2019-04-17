@@ -22,16 +22,15 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 5165cf21328b8af1cda63384a5dafbc8dfc2d849
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 02d40062b1202a261aa7be4ae306329a6a93b37a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57873701"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59669455"
 ---
 # <a name="accessing-data-in-visual-studio"></a>Přístup k datům v sadě Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
 
 V sadě Visual Studio můžete vytvářet aplikace, které se připojují k datům v téměř jakoukoli databázový produkt nebo službu, v libovolném formátu, kdekoli – v místním počítači, v místní síti, nebo veřejné, privátní nebo hybridní cloud.
 

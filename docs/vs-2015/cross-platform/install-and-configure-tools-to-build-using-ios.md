@@ -11,17 +11,16 @@ caps.latest.revision: 13
 author: corob-msft
 ms.author: corob
 manager: jillfra
-ms.openlocfilehash: c1eaa934c83676ee11854701f372b972f3045e66
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3ca198b88a8e42ba937ceb2426edd23793765b03
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54792859"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59656203"
 ---
 # <a name="install-and-configure-tools-to-build-using-ios"></a>Instalace a konfigurace nástrojů pro vytváření pomocí iOS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Visual C++ pro vývoj mobilních řešení napříč platformami můžete použít pro úpravy, ladění a nasazení iOS kódu do simulátoru iOS nebo zařízení s Iosem, ale z důvodu licenčních omezení, kód musí být vytvořená a vzdálené spouštění v počítačích Mac. Pokud chcete sestavovat a spouštět aplikace pro iOS pomocí sady Visual Studio, budete muset nastavit a nakonfigurovat vzdálený agent [vcremote](http://go.microsoft.com/fwlink/p/?LinkId=534988), na vašem počítači Mac. Vzdálený agent obslužné rutiny žádosti o sestavení ze sady Visual Studio aplikace a spustí se na zařízení s iOS připojené k počítači Mac, nebo simulátor iOS na macu  
   
 > [!NOTE]

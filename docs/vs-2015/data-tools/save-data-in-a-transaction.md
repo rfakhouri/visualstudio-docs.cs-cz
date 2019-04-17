@@ -20,17 +20,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 48c8732f75f23a0d0b0929eeef8865044f19d27b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 07bd9e469d090ffb97e166ce943397b51aedd497
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54752985"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59647672"
 ---
 # <a name="save-data-in-a-transaction"></a>Ukládání dat do transakce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Tento návod ukazuje, jak uložit data v transakci pomocí <xref:System.Transactions> oboru názvů. V tomto příkladu `Customers` a `Orders` tabulek z ukázkové databáze Northwind.  
   
 ## <a name="prerequisites"></a>Požadavky  

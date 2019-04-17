@@ -11,17 +11,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 41be21f3b28cccfe735a2a908851ebe3b181ce7b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0e0fdfc710abfc40005f3480e66b4411e93d0623
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54762892"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654721"
 ---
 # <a name="options-text-editor-cc-experimental"></a>Možnosti, textový Editor, C/C++, experimentální
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Změnou tyto možnosti můžete změnit chování související se technologie IntelliSense a procházení databází, když programujete v jazyce C nebo C++.  
   
  Pro přístup k této stránce v **možnosti** dialogové okno, v levém podokně rozbalte **textový Editor**, rozbalte **C/C++** a klikněte na tlačítko **experimentální**.  

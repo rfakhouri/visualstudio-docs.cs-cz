@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Další informace o benefitech LinkedIn Learning zahrnutý jako součást předplatného LinkedIn Premium součástí vybraných předplatných sady Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: 2f1e465be1d9c81235af1bad723f827a0f04147c
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: bdc7eaf4aa5c7105b996d25494643209b38f51d3
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841546"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59670040"
 ---
 # <a name="the-linkedin-learning-benefit-in-visual-studio-subscriptions"></a>Výhoda Linkedinem v předplatných sady Visual Studio
 
@@ -28,7 +28,6 @@ Chcete-li aktivovat vaše předplatné LinkedIn Premium a LinkedIn Learning výh
 2. Vyhledejte dlaždici LinkedIn Learning v kategorii vzdělávání a klikněte **získat kód** odkaz.
    > [!div class="mx-imgBorder"]
    > ![LinkedIn Learning výhodu dlaždice](_img/vs-linkedin/vs-linkedin-3-month-tile.png)
-
 
 3. Pokud už máte účet LinkedIn a jste přihlášení automaticky, okamžitě přejdete na stránku aktivace Linkedinem výhodu.  Pokud máte účet LinkedIn, ale jste přihlášení automaticky, stačí zadat svoje uživatelské jméno a heslo a potom klikněte na tlačítko **přihlášení**.  Přejděte prosím na [tento krok](#activate-your-offer) a aktivujte svou nabídku.
 
@@ -80,7 +79,6 @@ Chcete-li aktivovat vaše předplatné LinkedIn Premium a LinkedIn Learning výh
    > [!div class="mx-imgBorder"]
    > ![Aktivovat Linkedinem](_img/vs-linkedin/vs-linkedin-Activate1.png)
 
-
 16. Můžete začít zkoumat dovednosti, které vás zajímají.  Vyberte ze seznamu doporučení, vyhledejte další dovednosti, nebo klikněte na tlačítko **přeskočit** pro pokračování bez dovednosti vyberete.
    > [!div class="mx-imgBorder"]
    > ![LinkedIn Learning dovednosti](_img/vs-linkedin/vs-linkedin-skills.png)
@@ -97,15 +95,13 @@ Chcete-li aktivovat vaše předplatné LinkedIn Premium a LinkedIn Learning výh
 | Visual Studio Professional (Standard) | VL, Azure, maloobchodního prodeje                                       | 3 měsíce                                                            |Ne.  K dispozici pro nové předplatitele pouze         |
 | Visual Studio Test Professional (Standard)                         | VL maloobchodního prodeje                                              | 3 měsíce                                             |  Ne.  K dispozici pro nové předplatitele pouze         |
 | Předplatné MSDN Platforms (Standard)                                          | VL maloobchodního prodeje                                              | 3 měsíce                                              | Ne.  K dispozici pro nové předplatitele pouze         |
-| Visual Studio Dev Essentials | Není k dispozici  | 3 měsíce |Ne.  K dispozici pro nové předplatitele pouze |
+| Visual Studio Dev Essentials | Není k dispozici  | Není k dispozici |Není k dispozici|
 | Visual Studio Enterprise, Visual Studio Professional (měsíční cloud) | Azure                                       | Není k dispozici                                                           |Není k dispozici|
 
 <sup>1</sup>*zahrnuje:  Neprodejné (NFR), Visual Studio Industry Partner (VSIP).  Vyloučí:  Microsoft Partner Network (MPN), FTE, MCT Software & Services pro vývojáře, BizSpark, Imagine, nejcennější Professional (MVP) Regional Director (RD).  MCT Software & Services.*
 
-
 > [!NOTE]
 > Microsoft už nenabízí Visual Studio Professional ročních předplatných a předplatných Visual Studio Enterprise roční Cloudová předplatná. Nebude bez nutnosti změn stávajících zkušeností zákazníků a možnost obnovit, zvýšit, snížit nebo zrušit předplatná. Nové nepodnikovým zákazníkům přejít na [ https://visualstudio.microsoft.com/vs/pricing/ ](https://visualstudio.microsoft.com/vs/pricing/) a prozkoumejte různé možnosti pro zakoupení sady Visual Studio.
-
 
 Nejste si jistí které předplatné používáte?  Připojte se k [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) zobrazíte všechna předplatná, která jsou přiřazená e-mailovou adresu. Pokud se nezobrazí všechna předplatná, může mít jeden nebo více přiřazené na jinou e-mailovou adresu.  Bude potřeba přihlásit se přes tento e-mailovou adresu najdete v těchto předplatných.
 

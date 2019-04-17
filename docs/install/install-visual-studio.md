@@ -2,7 +2,7 @@
 title: Instalace sady Visual Studio
 titleSuffix: ''
 description: Zjistěte, jak nainstalovat sadu Visual Studio, krok za krokem.
-ms.date: 03/30/2019
+ms.date: 04/16/2019
 ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
@@ -20,12 +20,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: b45778cfbf34a6703de365bcf2a85be994a05173
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: 0d4ad3767e8ee6076f45deefa5c532b62175520f
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58857538"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649352"
 ---
 # <a name="install-visual-studio"></a>Instalace sady Visual Studio
 
@@ -105,14 +105,14 @@ Dále si stáhněte soubor zaváděcího nástroje sady Visual Studio. Uděláte
 ::: moniker range="vs-2017"
 
  > [!div class="button"]
- > [Stažení sady Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
+ > [Stáhněte si Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
  > [!div class="button"]
- > [Stažení sady Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019)
+ > [Stáhněte si Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019)
 
 ::: moniker-end
 
@@ -182,7 +182,6 @@ Pokud nechcete použít funkci úlohy k přizpůsobení instalace sady Visual St
   ![Visual Studio 2019 – instalace jednotlivých součástí](media/vs-2019/vs-installer-individual-components.png "jednotlivých součástí instalace sady Visual Studio")
 
 ::: moniker-end
-
 
 ## <a name="step-6---install-language-packs-optional"></a>Krok 6 – instalace jazykových sad (volitelné)
 

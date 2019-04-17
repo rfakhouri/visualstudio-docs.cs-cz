@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6fe0f5be0dfaf9f35f390c78633f41711f6bcbc9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a226f22370f128374433e78b787ad730a3bbdfc9
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913038"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59662035"
 ---
 # <a name="compile-page-project-designer-visual-basic"></a>Stránka Kompilovat, návrhář projektu (Visual Basic)
 
@@ -158,7 +158,6 @@ Tato možnost není k dispozici pro projekty aplikací pro Windows nebo konzolov
 **Události sestavení** kliknutím na toto tlačítko přístup **události sestavení** dialogové okno. Použijte toto dialogové okno k určení pokyny ke konfiguraci před a po sestavení projektu. Toto dialogové okno se vztahují na projekty Visual Basic pouze. Další informace najdete v tématu [sestavení dialogové okno události (Visual Basic)](../../ide/reference/build-events-dialog-box-visual-basic.md).
 
 **Upřesnit možnosti kompilace** kliknutím na toto tlačítko přístup **AdvancedCompiler nastavení** dialogové okno. Použití **AdvancedCompiler nastavení** dialogové okno k zadání projekt rozšířenou vlastností konfigurace sestavení. Toto dialogové okno se vztahují na projekty Visual Basic pouze. Další informace najdete v tématu [Advanced kompilátoru dialogové okno nastavení (Visual Basic)](../../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md).
-
 
 ## <a name="see-also"></a>Viz také:
 

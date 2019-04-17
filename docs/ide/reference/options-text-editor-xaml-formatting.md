@@ -29,12 +29,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: f92dc12dfb9e9f8fb1ec3d3910edf7102342f69b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f5459da813de289eb4e3c86a298128c2abb42363
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55920389"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59661721"
 ---
 # <a name="options-text-editor-xaml-formatting"></a>Možnosti, textový editor, XAML, formátování
 
@@ -146,7 +146,6 @@ Prázdné řádky v obsahu elementu se neodeberou.
 
 ```xml
 <Grid>
-
 
 <Button Name="button1">Hello</Button>
 

@@ -22,17 +22,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 136bc554abe6c231dfa80753b19dba89946830c3
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: e8666f990265a1fcf9947ac5c7c18c7489a6bdb8
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54756660"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653590"
 ---
 # <a name="cl-task"></a>CL – úloha
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Zabalí nástroj kompilátoru Visual C++, cl.exe. Kompilátor vytvoří spustitelné soubory (.exe), dynamická knihovna (.dll) soubory nebo soubory kódu modulu (.netmodule). Další informace najdete v tématu [– možnosti kompilátoru](http://msdn.microsoft.com/library/ed3376c8-bef4-4c9a-80e9-3b5da232644c).  
   
 ## <a name="parameters"></a>Parametry  
@@ -84,11 +83,11 @@ Zabalí nástroj kompilátoru Visual C++, cl.exe. Kompilátor vytvoří spustite
   
   - **AssemblyCode** - **/FA**  
   
-  - **AssemblyAndMachineCode** -  ** /FAC**  
+  - **AssemblyAndMachineCode** -   **/FAC**  
   
-  - **AssemblyAndSourceCode** -  ** /FAS**  
+  - **AssemblyAndSourceCode** -   **/FAS**  
   
-  - **Všechny** -  ** /facs**  
+  - **Všechny** -   **/facs**  
   
     Další informace najdete v tématu **/FA**, **/FAC**, **/FAS**, a **/facs** možnosti [/FA, /Fa (výpis soubor)](http://msdn.microsoft.com/library/c7507d0e-c69d-44f9-b8e2-d2c398697402).  
   
@@ -182,11 +181,11 @@ Zabalí nástroj kompilátoru Visual C++, cl.exe. Kompilátor vytvoří spustite
   
   - **false** - *\<žádné >*  
   
-  - **Hodnota TRUE** -  ** /CLR**  
+  - **Hodnota TRUE** -   **/CLR**  
   
-  - **Čistě** -  ** /CLR: pure**  
+  - **Čistě** -   **/CLR: pure**  
   
-  - **Bezpečné** -  ** /CLR: safe**  
+  - **Bezpečné** -   **/CLR: safe**  
   
   - **OldSyntax** - **/clr:oldSyntax**  
   
@@ -270,7 +269,7 @@ Zabalí nástroj kompilátoru Visual C++, cl.exe. Kompilátor vytvoří spustite
   
    Zadejte jednu z následujících hodnot, z nichž každý odpovídá možnosti příkazového řádku.  
   
-  - **Žádný** -  ** /errorreport: žádné**  
+  - **Žádný** -   **/errorreport: žádné**  
   
   - **Prompt** - **/errorReport:prompt**  
   
@@ -316,7 +315,7 @@ Zabalí nástroj kompilátoru Visual C++, cl.exe. Kompilátor vytvoří spustite
   
   - **Ani** - *\<žádné >*  
   
-  - **Velikost** -  ** /OS**  
+  - **Velikost** -   **/OS**  
   
   - **Rychlost** - **/Ot**  
   
@@ -338,9 +337,9 @@ Zabalí nástroj kompilátoru Visual C++, cl.exe. Kompilátor vytvoří spustite
   
    Zadejte jednu z následujících hodnot, z nichž každý odpovídá možnosti příkazového řádku.  
   
-  - **Přesné** -  ** /FP: precise**  
+  - **Přesné** -   **/FP: precise**  
   
-  - **Striktní** -  ** /FP: strict**  
+  - **Striktní** -   **/FP: strict**  
   
   - **Rychlé** - **Fast**  
   
@@ -408,7 +407,7 @@ Zabalí nástroj kompilátoru Visual C++, cl.exe. Kompilátor vytvoří spustite
   
   - **OnlyExplicitInline** - **/Ob1**  
   
-  - **AnySuitable** -  ** /ob2**  
+  - **AnySuitable** -   **/ob2**  
   
     Další informace najdete v tématu [/Ob (rozbalení vložené funkce)](http://msdn.microsoft.com/library/f134e6df-e939-4980-a01d-47425dbc562a).  
   
@@ -484,7 +483,7 @@ Zabalí nástroj kompilátoru Visual C++, cl.exe. Kompilátor vytvoří spustite
   
   - **Zakázané** - **/Od**  
   
-  - **MinSpace** -  ** /O1**  
+  - **MinSpace** -   **/O1**  
   
   - **MaxSpeed** - **/O2**  
   
@@ -750,9 +749,9 @@ Zabalí nástroj kompilátoru Visual C++, cl.exe. Kompilátor vytvoří spustite
   
   - **Level3** - **w3**  
   
-  - **Level4** -  ** /W4**  
+  - **Level4** -   **/W4**  
   
-  - **EnableAllWarnings** -  ** /Wall**  
+  - **EnableAllWarnings** -   **/Wall**  
   
     Další informace najdete v tématu **/W**_n_ možnost [/w, /W0, /W1, /W2, w3, / W4, /w1, /w2, w3, / W4, / wall, WD, / we, Wo, WV, /WX (úroveň upozornění)](http://msdn.microsoft.com/library/d6bc7bf5-c754-4879-909c-8e3a67e2629f).  
   

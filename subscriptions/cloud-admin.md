@@ -7,12 +7,12 @@ ms.date: 03/28/2018
 ms.topic: conceptual
 description: Nastavení správců cloudových předplatných
 searchscope: VS Subscription
-ms.openlocfilehash: fafac6b36c2abd34f47d4321155d123ce7cecd90
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 34479c21ec3cb0672b8d2354595c971b062bba56
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841441"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59664273"
 ---
 # <a name="set-up-administrators-for-visual-studio-cloud-subscriptions"></a>Nastavte správce pro předplatné cloudu Visual Studio
 
@@ -45,7 +45,6 @@ Přidat správce:
 Odběrateli, kterou jste určili se zobrazí v Centru pro stránky a jejich role se zobrazí jako "Správce uživatelských přístupů".
 
 Nový Správce může přihlásit k [portálu pro správu](https://manage.visualstudio.com), vyberte stejné předplatné Azure, které se použilo k nákupu cloudových předplatných ze seznamu v horním levém horním rohu stránky a začít spravovat předplatná.
-
 
 > [!NOTE]
 > Pokud se zobrazí uživatelům s přístupem k úpravě vaše Cloudová předplatná, která se nepovedlo vytvořit jako správce, mohou mít role v podkladové předplatné Azure, které zajistí, aby Správa předplatných. Zahrnout tyto role: vlastník, Přispěvatel, služby správce nebo spolusprávce. Další informace najdete v článku [přidat správce fakturace](/azure/devops/organizations/billing/add-backup-billing-managers?view=vsts).

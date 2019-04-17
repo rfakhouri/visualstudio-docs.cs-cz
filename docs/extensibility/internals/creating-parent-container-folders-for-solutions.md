@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6845e867a8c5fd0ef2b367dc5f2e3b5760869746
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 6c23ec3101baac033cbef47f6f1c3ad6f717a15d
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602010"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59661058"
 ---
 # <a name="create-parent-container-folders-for-solutions"></a>Vytvoření nadřazené složky kontejneru pro řešení
 Ve verzi 1.2 zdrojového ovládacího prvku modulu Plug-in rozhraní API můžete uživatele zadejte cílovou složku jeden kořenový zdrojového ovládacího prvku pro všechny webové projekty v řešení. Tento jeden kořenový se nazývá Super Unified Root (SUR).
@@ -42,7 +42,6 @@ Ve verzi 1.2 zdrojového ovládacího prvku modulu Plug-in rozhraní API můžet
 -   Existují jiné sdílené složky pro projekt a soubor řešení.
 
 -   Projekty byly přidány samostatně (v řešení se spravovanými zdroji).
-
 
 V [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], doporučuje se, že název složky SUR být stejný jako název řešení bez přípony. Následující tabulka shrnuje chování v obou verzích.
 

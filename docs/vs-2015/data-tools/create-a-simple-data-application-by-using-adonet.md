@@ -14,17 +14,16 @@ caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9f3c5dd921ab9c86d197d22aea63bad86264bb5b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 19c20241914001f7095e63e0cc25f91b2ab5c35e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54805516"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59664213"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>Vytvoření jednoduché datové aplikace pomocí ADO.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Když vytvoříte aplikaci, která zpracovává data v databázi, provedete základní úlohy takové definování připojovacích řetězců, vkládání dat a spouštění uložených procedur. Podle tohoto tématu můžete zjistit, jak pracovat s databází z jednoduchého "formy nad daty" aplikace Windows Forms pomocí Visual C# nebo Visual Basic a ADO.NET.  Všechna data technologie .NET, včetně datových sad, LINQ to SQL a Entity Framework – nakonec proveďte kroky, které jsou velmi podobné těm, které jsou uvedené v tomto článku.  
   
  Tento článek ukazuje jednoduchý způsob, jak získat data z databáze způsobem, velmi rychle. Pokud vaše aplikace potřebuje upravovat data nejsou v netriviálních způsoby a aktualizaci databáze, měli byste zvážit používající nástroj Entity Framework a použití datových vazeb se automaticky synchronizovat ovládacích prvků uživatelského rozhraní na změny v podkladových datech.  

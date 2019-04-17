@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 28f0c1ad2026a23833f777a7a40dffc76e3a379c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: ed4fca494cfdbd7d74d1446e57ba740580b52d11
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56632690"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668727"
 ---
 # <a name="summary-view"></a>Souhrnné zobrazení
 Souhrnné zobrazení zobrazuje informace o výkonu – nejdražší funkce nebo objekty během spuštění profilování. Toto zobrazení obsahuje graf časové osy a nejmíň dva seznamy nejdražší funkce nebo objekty založené na metodě profilování metriky výkonu. Data v tomto zobrazení, závisí na metodě profilování, která byla použita (vzorkování, instrumentace nebo souběžnosti) a určuje, zda byl shromážděn alokaci paměti .NET.
@@ -43,7 +43,6 @@ Souhrnné zobrazení zobrazuje informace o výkonu – nejdražší funkce nebo 
 
 ## <a name="report"></a>Sestava
  Můžete kliknout na odkazy v seznamu sestav otevřete různá zobrazení a k porovnání, uložte nebo filtrování sestavy. Seznam je napravo od grafu časové osy.
-
 
 | | |
 |----------------------------| - |

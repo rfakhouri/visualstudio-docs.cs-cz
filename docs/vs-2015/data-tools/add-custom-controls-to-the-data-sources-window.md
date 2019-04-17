@@ -23,17 +23,16 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a7dbfb1b0636418971b2dffb6ff67ca2de5e211d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ccdec180c8e38216a230813e1ffdf7ca98281c14
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54765964"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651122"
 ---
 # <a name="add-custom-controls-to-the-data-sources-window"></a>Přidání vlastních ovládacích prvků do okna zdrojů dat
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Při přetažení položky z **zdroje dat** okno na návrhovou plochu vytvoříte ovládací prvek vázaný na data, můžete vybrat typ ovládacího prvku, který vytvoříte. Každá položka v okně se rozevírací seznam, který se zobrazí ovládací prvky, které můžete vybrat z. Sadu ovládacích prvků, které jsou spojené s každou položku je určeno typem dat položky. Pokud ovládací prvek, který chcete vytvořit v seznamu nezobrazí, můžete podle pokynů v tomto tématu přidejte ovládací prvek do seznamu.  
   
  Další informace o výběru ovládacích prvků vázaných na data pro vytvoření pro položky v **zdroje dat** okna, naleznete v tématu [nastavení ovládacího prvku, který má být vytvořen při přetažení z okna zdroje dat](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).  

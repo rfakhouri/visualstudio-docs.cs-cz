@@ -9,23 +9,21 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5827debb4f79ef34bbdd059c6beb0003988a721c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 35e292d5fcaaea4f70154cf6febfc26bc20f1318
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54795552"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59648962"
 ---
 # <a name="schema-cache"></a>Mezipaměť schémat
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
 
 XML Editor obsahuje schéma mezipaměti umístěné v adresáři %InstallRoot%\Xml\Schemas. Mezipaměti schématu je pro všechny uživatele ve vašem počítači globální a obsahuje standardní schémat XML, které se používají k ověření dokumentu technologie IntelliSense a XML.  
 
  Editor souborů XML můžete také vyhledat schémata, které jsou umístěny v řešení, schémata zadané v **schémata** pole dokumentu **vlastnosti** okno a schémata identifikován `xsi:schemaLocation` a `xsi:noNamespaceSchemaLocation`atributy.  
 
  Následující tabulka popisuje schémata, které jsou nainstalovány v editoru XML.  
-
 
 |     Název souboru      |                                                      Popis                                                      |
 |-------------------|-----------------------------------------------------------------------------------------------------------------------|
@@ -34,7 +32,7 @@ XML Editor obsahuje schéma mezipaměti umístěné v adresáři %InstallRoot%\X
 |    msbuild.xsd    |              Schéma pro soubory MSBuild Ujistěte se, "<http://schemas.microsoft.com/developer/msbuild/2003>".              |
 |    msdata.xsd     | Schéma XSD poznámky přidal <xref:System.Data.DataSet> třídy, "urn: schémata-microsoft-schemas-msdata". |
 |     msxsl.xsd     |                  Schéma pro rozšíření bloku skriptu Microsoft XSLT, urn: schémata-microsoft-com:xslt.                   |
-| SnippetFormat.xsd |                 Schéma pro soubory XML fragmentu kódu. Příklady najdete v tématu % InstallDir%\VC#\Expansions.                 |
+| SnippetFormat.xsd |                 Schéma pro soubory XML fragmentu kódu. Příklady najdete v tématu %InstallDir%\VC#\Expansions.                 |
 |    Soap1.1.xsd    |            Schéma pro Simple Object Access Protocol (SOAP) 1.1, http://schemas.xmlsoap.org/soap/envelope/.            |
 |    Soap1.2.xsd    |                                     Schéma pro Simple Object Access Protocol 1.2.                                     |
 | SiteMapSchema.xsd |            Schéma pro soubor XML mapy webu technologie ASP.NET, "<http://schemas.microsoft.com/AspNet/SiteMap-File-1.0>".             |

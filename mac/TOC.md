@@ -14,7 +14,6 @@
 # [Přizpůsobení integrovaného vývojového prostředí (IDE)](customizing-the-ide.md)
 ## [Rozšíření sady Visual Studio pro Mac](extending-visual-studio-mac.md)
 
-
 # [Projekty a řešení](projects-and-solutions.md)
 ## [Vytváření nových projektů](create-new-projects.md)
 ## [Přidávání a odebírání projektových položek](add-and-remove-project-items.md)

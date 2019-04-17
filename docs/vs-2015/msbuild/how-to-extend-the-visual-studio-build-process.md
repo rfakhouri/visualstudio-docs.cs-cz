@@ -14,16 +14,15 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 43b95fd47c2d5b859478814dd330c175e82bac89
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 1f86605f3e76dc17fd8e404eb0d189f51ff2dc69
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54758662"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59652160"
 ---
 # <a name="how-to-extend-the-visual-studio-build-process"></a>Postupy: Rozšíření procesu sestavení v sadě Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
 
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Procesu sestavení je definován pomocí posloupnosti [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] – soubory .targets, které jsou importovány do souboru projektu. Některý z těchto importovaných souborů webu Microsoft.Common.targets je možné rozšířit, aby bylo možné spouštět vlastní úlohy na několika místech v procesu sestavení. Toto téma vysvětluje, dvě metody, které vám umožní rozšířit [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] procesu sestavení:
 

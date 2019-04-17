@@ -1,5 +1,5 @@
 ---
-title: Vytváření vlastních zobrazení C++ objekty
+title: Vytváření vlastních zobrazení objektů C++
 description: Pomocí rozhraní Natvis přizpůsobit tak, že Visual Studio zobrazuje nativní typy v ladicím programu
 ms.date: 10/31/2018
 ms.topic: conceptual
@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1f56dda1f64a0bd50a6bb81b981ad4add7d9c095
-ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
+ms.openlocfilehash: 2dba61d53bdb0007eb2a4f0acff734613e320ab9
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59537574"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649638"
 ---
 # <a name="create-custom-views-of-c-objects-in-the-debugger"></a>Vytváření vlastních zobrazení C++ objektů v ladicím programu
 
@@ -153,7 +153,6 @@ Můžete definovat různá zobrazení Natvis, chcete-li zobrazit typy různými 
     </Expand>
 </Type>
 ```
-
 
 V **Watch** okno, použijte **, zobrazení** specifikátor formátu pro určit alternativní zobrazení. Jednoduché zobrazení se zobrazí jako **vec,view(simple)**:
 

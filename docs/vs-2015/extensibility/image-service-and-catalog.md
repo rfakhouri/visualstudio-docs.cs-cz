@@ -6,12 +6,12 @@ ms.assetid: 34990c37-ae98-4140-9b1e-a91c192220d9
 caps.latest.revision: 38
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 95d3de67dce269696bdd3fbea7ec562511bd0347
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 6e40401b533d5fcaad8dc9bb4530580608efaad9
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56844421"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59670222"
 ---
 # <a name="image-service-and-catalog"></a>Služba vyhledávání a katalog obrázků
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -161,7 +161,6 @@ Tato kuchařka obsahuje pokyny a osvědčené postupy pro přijetí, služby Vis
  </Source>  
 ```  
 
-
 |               |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 |---------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Atribut** |                                                                                                                                                                                                                                                                                                                                                                                                                                                                            **Definice**                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
@@ -174,7 +173,7 @@ Tato kuchařka obsahuje pokyny a osvědčené postupy pro přijetí, služby Vis
 ||||  
 |-|-|-|  
 |**Element**|**Atributy (všechny povinné)**|**Definice**|  
-|\<Velikost >|Hodnota|Zdroj se použije pro Image dané velikosti (v jednotkách zařízení). Image bude čtvereček.|  
+|\<Velikost >|Value|Zdroj se použije pro Image dané velikosti (v jednotkách zařízení). Image bude čtvereček.|  
 |\<SizeRange >|MinSize MaxSize|Zdroj se použije pro obrázky z MinSize pro parametr MaxSize (v jednotkách zařízení) (včetně). Image bude čtvereček.|  
 |\<Dimenze >|Šířka, výška|Zdroj se použije pro Image dané šířky a výšky (v jednotkách zařízení).|  
 |\<DimensionRange >|Hodnota MinWidth MinHeight,<br /><br /> MaxWidth MaxHeight|Zdroj se použije pro obrázků ze minimální šířky a výšky na maximální šířku nebo výšku (v jednotkách zařízení) (včetně).|  
@@ -188,7 +187,7 @@ Tato kuchařka obsahuje pokyny a osvědčené postupy pro přijetí, služby Vis
 |||  
 |-|-|  
 |**Atribut**|**Definice**|  
-|Typ|[Povinné] Typ nativního prostředku, XAML nebo PNG|  
+|Type|[Povinné] Typ nativního prostředku, XAML nebo PNG|  
 |ID|[Povinné] Část celého čísla ID nativní prostředky|  
 
  **Ovládací prvek ImageList**  

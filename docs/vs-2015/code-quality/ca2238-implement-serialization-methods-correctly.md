@@ -15,26 +15,26 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 26d9c23ef8da970a29057c0e299d5b8d12dda524
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: cff617adf2b31ef773de3bc41db7245346795bee
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58354999"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59657126"
 ---
 # <a name="ca2238-implement-serialization-methods-correctly"></a>CA2238: Implementujte správně metody serializace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější dokumentaci k sadě Visual Studio, naleznete v tématu [CA2238: Implementujte správně metody serializace](https://docs.microsoft.com/visualstudio/code-quality/ca2238-implement-serialization-methods-correctly) na webu docs.microsoft.com.  
+Nejnovější dokumentaci k sadě Visual Studio, naleznete v tématu [CA2238: Implementujte správně metody serializace](https://docs.microsoft.com/visualstudio/code-quality/ca2238-implement-serialization-methods-correctly).  
   
 |||  
 |-|-|  
 |TypeName|ImplementSerializationMethodsCorrectly|  
 |CheckId|CA2238|  
 |Kategorie|Microsoft.Usage|  
-|Narušující změna|Rozdělení - metoda je viditelná mimo sestavení.<br /><br /> Pevné – Pokud metoda není viditelná mimo sestavení.|  
+|Narušující změna|Rozdělení - metoda je viditelná mimo sestavení.<br /><br /> Bez konce – Pokud metoda není viditelná mimo sestavení.|  
   
-## <a name="cause"></a>příčina  
+## <a name="cause"></a>Příčina  
  Metoda, která zpracovává událost serializace, nemá správný podpis, návratový typ nebo viditelnost.  
   
 ## <a name="rule-description"></a>Popis pravidla  

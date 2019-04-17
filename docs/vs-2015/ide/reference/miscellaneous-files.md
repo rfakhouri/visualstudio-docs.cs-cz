@@ -21,17 +21,16 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9b55bc206b204fe2b2e5ef71e2fdb1d48e67802d
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: aadb6b0212f760ab16efd677e02e1d922ae52e12
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54802581"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658488"
 ---
 # <a name="miscellaneous-files"></a>Ostatní soubory
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Můžete chtít použít [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] editory pracovat nezávisle na soubory z projektu nebo řešení. Když máte řešení otevřené, můžete otevřít a upravit soubory bez jejich přidání do řešení nebo projektu. Soubory, které chcete pracovat s nezávisle na kontejnery se nazývají různé soubory. Různé soubory jsou externí vzhledem k řešení a projektů, nejsou zahrnuty v sestavení a nemůže být součástí řešení pod správou zdrojových kódů.  
   
  Otevírání souborů nezávisle z kontejneru je užitečné pro celou řadu důvodů. Můžete mít soubor, který chcete zobrazit při vývoji řešení založené na projektu, ale není celočíselný k vývoji tohoto řešení. Běžné příklady vývojové poznámky nebo pokynů, schéma databáze a klipů kódu. Kromě toho můžete vytvořit samostatný soubor.  

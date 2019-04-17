@@ -17,16 +17,15 @@ caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4679063634af102c71635f2d84b7c3e44cd33085
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0a2930acee9e187f14b87e28190a88195b0bea7a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54759446"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59656245"
 ---
 # <a name="create-and-configure-datasets-in-visual-studio"></a>Vytvoření a konfigurace datových sad v sadě Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
 
 A *datovou sadu* je sada objektů, které ukládají data z databáze v paměti a podporují řešení change tracking umožňuje vytvářet, číst, aktualizovat a odstranění (CRUD) operací na těchto datech, aniž byste museli být neustále připojeni k databázi. Datové sady byly navržené pro jednoduchou *formy nad daty* obchodních aplikací. Pro nové aplikace zvažte použití rozhraní Entity Framework ukládat a modelovat data v paměti. Pro práci s datovými sadami, byste měli mít základní znalost konceptů databáze.
 

@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: b8930d288b5f37d59f3c14657aee045a6a95fb96
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 853920ac30b6e779c94bf82aa6c655bf81146d2e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55948092"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59664814"
 ---
 # <a name="configuring-your-azure-project-in-visual-studio-to-use-multiple-service-configurations"></a>Konfigurace projektu Azure v sadě Visual Studio za účelem použití více konfigurací služby
 
@@ -28,7 +28,6 @@ Nastavení konfigurace jsou spravovaná a upravit v sadě Visual Studio pomocí 
 ![VS_Solution_Explorer_Roles_Properties](./media/vs-azure-tools-multiple-services-project-configurations/IC784076.png)
 
 Informace o základní schémata pro definici služby a služby konfigurační soubory, najdete v článku [.csdef XML schématu](/azure/cloud-services/schema-csdef-file) a [.cscfg XML schématu](/azure/cloud-services/schema-cscfg-file) článků. Další informace o konfiguraci služby najdete v tématu [jak konfigurovat Cloud Services](/azure/cloud-services/cloud-services-how-to-configure-portal).
-
 
 ## <a name="configuration-page"></a>Stránka Konfigurace
 

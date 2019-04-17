@@ -12,12 +12,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5c978c4be142283866ce140a1f0870cd654a06dd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2566d5d0d653af7caa29474e7916352600bf94d4
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54804944"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668259"
 ---
 # <a name="sendandreceivereply-template-designer"></a>Návrhář šablony SendAndReceiveReply
 **SendAndReceiveReply** šablona se používá k vytvoření páru předem nakonfigurované <xref:System.ServiceModel.Activities.Send> a <xref:System.ServiceModel.Activities.ReceiveReply> aktivity v rámci <xref:System.Activities.Statements.Sequence> aktivitu, která se korelují jako součást výměně zpráv žádost odpověď vzor na straně klienta.  
@@ -42,7 +42,6 @@ ms.locfileid: "54804944"
 
 ### <a name="properties-of-receivereply"></a>Vlastnosti ReceiveReply  
  Následující tabulka ukazuje <xref:System.ServiceModel.Activities.ReceiveReply> vlastnosti a popisuje, jak se používají v návrháři. Tyto vlastnosti můžete upravit v mřížce vlastností a některé možné upravovat ve [!INCLUDE[wfd2](../includes/wfd2-md.md)]návrhové ploše.  
-
 
 |                                 Název vlastnosti                                 | Požadováno |                                                                                                                                                                                                                                                                                                                                                        Použití                                                                                                                                                                                                                                                                                                                                                        |
 |-------------------------------------------------------------------------------|----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

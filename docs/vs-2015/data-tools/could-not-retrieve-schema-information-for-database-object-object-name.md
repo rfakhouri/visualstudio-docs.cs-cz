@@ -9,17 +9,16 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2fa0c6e6e968f05ed8e2612e330d251ee7251206
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c4847c8b6abf44e1ac68de1f1b9c8cbb0ca0aac7
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54780067"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59652465"
 ---
 # <a name="could-not-retrieve-schema-information-for-database-object-ltobject-namegt"></a>Nelze načíst informace o schématu pro databázový objekt &lt;název objektu&gt;
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Tato zpráva obvykle se zobrazí, když objekt **Průzkumník serveru/Průzkumník databáze** je zkopírován do schránky, odstraněna z databáze a potom vložit do návrháře. Protože objekt databáze již existuje, zobrazí se tato zpráva.  
   
 ### <a name="to-correct-this-error"></a>Oprava této chyby  

@@ -7,14 +7,14 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Další informace o benefitech komunity Azure zahrnuté ve vybraných předplatných sady Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: 78c6954cd6dbbee48a3754d7d58eaa34b2e17158
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 5e40621afe4d4211660064c52f97bdbcb96effe1
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842101"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653943"
 ---
-# <a name="azure-community"></a>Azure Community
+# <a name="azure-community"></a>Komunita Azure
 
 Získat pomoc přímo od týmu Azure v rámci vyberte fóra podpory prostřednictvím komunity Azure.  Komunita Azure benefit vám poskytne přístup ke kolekci z fór, zaměřuje na témata související s Azure.
 
@@ -27,8 +27,6 @@ Získat pomoc přímo od týmu Azure v rámci vyberte fóra podpory prostřednic
 | [Azure Multi-Factor Authentication](https://social.msdn.microsoft.com/Forums/azure/home?forum=windowsazureactiveauthentication&filter=alltypes&sort=lastpostdesc)     | [Ceny a fakturace](https://social.msdn.microsoft.com/Forums/azure/home?forum=windowsazurepurchasing&filter=alltypes&sort=lastpostdesc)                                | [Azure skriptování a nástroje příkazového řádku](https://social.msdn.microsoft.com/forums/home?forum=azurescripting&filter=alltypes&sort=lastpostdesc) |
 | [Portál pro správu Azure](https://social.msdn.microsoft.com/Forums/home?forum=windowsazuremanagement&filter=alltypes&sort=lastpostdesc)               | [Azure Backup](https://social.msdn.microsoft.com/forums/home?forum=windowsazureonlinebackup&filter=alltypes&sort=lastpostdesc)                                       | [Azure Stack](https://social.msdn.microsoft.com/forums/home?forum=AzureStack&filter=alltypes&sort=lastpostdesc)                          |
 | [Azure Virtual Machines](https://social.msdn.microsoft.com/Forums/home?forum=WAVirtualMachinesforWindows&filter=alltypes&sort=lastpostdesc)                | [Azure Site Recovery](https://social.msdn.microsoft.com/forums/home?forum=hypervrecovmgr&filter=alltypes&sort=lastpostdesc)                                | [Azure Marketplace](https://social.msdn.microsoft.com/forums/home?forum=DataMarket&filter=alltypes&sort=lastpostdesc)                    |
-
-
 
 ## <a name="activation-steps"></a>Postup aktivace
 Začínáme s komunitou Azure je snadné.
@@ -49,7 +47,6 @@ Začínáme s komunitou Azure je snadné.
 ## <a name="eligibility"></a>Způsobilost
 Dostupnost ve prospěch komunity Azure závisí na vaší úrovně předplatného, jak je znázorněno níže:
 
-
 |                                          Úroveň předplatného                                           |     Kanály      |    Výhody    | Obnovitelné? |
 |-------------------------------------------------------------------------------------------------------|-------------------|---------------|------------|
 |                           Visual Studio Enterprise (Standard)                           | VL, Azure, maloobchodního prodeje |   Jeden rok    |    Ano     |
@@ -64,7 +61,6 @@ Dostupnost ve prospěch komunity Azure závisí na vaší úrovně předplatnéh
 
 > [!NOTE]
 > Microsoft už nenabízí Visual Studio Professional ročních předplatných a předplatných Visual Studio Enterprise roční Cloudová předplatná. Nebude bez nutnosti změn stávajících zkušeností zákazníků a možnost obnovit, zvýšit, snížit nebo zrušit předplatná. Nové nepodnikovým zákazníkům přejít na [ https://visualstudio.microsoft.com/vs/pricing/ ](https://visualstudio.microsoft.com/vs/pricing/) a prozkoumejte různé možnosti pro zakoupení sady Visual Studio.
-
 
 Nejste si jistí které předplatné používáte?  Připojte se k [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) zobrazíte všechna předplatná, která jsou přiřazená e-mailovou adresu. Pokud se nezobrazí všechna předplatná, může mít jeden nebo více přiřazené na jinou e-mailovou adresu.  Bude potřeba přihlásit se přes tento e-mailovou adresu najdete v těchto předplatných.
 

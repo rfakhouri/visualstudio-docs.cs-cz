@@ -1,5 +1,5 @@
 ---
-title: 'Průvodce: Vytvoření vlastního procesoru direktiv | Dokumentace Microsoftu'
+title: 'Návod: Vytvoření vlastního procesoru direktiv | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -12,14 +12,14 @@ caps.latest.revision: 76
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e10c489ee8bd14599220429c9d74821986f8b915
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 665c59e6881ec2e5924845dfc8dcc130b5044095
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54798798"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59663385"
 ---
-# <a name="walkthrough-creating-a-custom-directive-processor"></a>Průvodce: Vytvoření vlastního procesoru direktiv
+# <a name="walkthrough-creating-a-custom-directive-processor"></a>Návod: Vytvoření vlastního procesoru direktiv
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Procesory direktiv * fungovat tak, že přidáte kód, který *vygenerované třídy transformace*. Při volání *směrnice* z *textové šablony*, zbytek kódu, který napíšete do textové šablony může záviset na funkčnosti, která poskytuje tato direktiva.  
@@ -659,8 +659,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 
     Klíč registru by měl mít následující hodnoty:  
 
-
-   |   Název    |  Typ  |                                   Data                                   |
+   |   Name    |  Typ  |                                   Data                                   |
    |-----------|--------|--------------------------------------------------------------------------|
    | (Výchozí) | REG_SZ |                             (hodnota nenastavena)                              |
    |   Třída   | REG_SZ |                    CustomDP.CustomDirectiveProcessor                     |
@@ -668,13 +667,11 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 
     Pokud jste sestavení vložili do mezipaměti GAC, měly by tyto hodnoty vypadat takto:  
 
-
-   |   Název    |  Typ  |               Data                |
+   |   Name    |  Typ  |               Data                |
    |-----------|--------|-----------------------------------|
    | (Výchozí) | REG_SZ |          (hodnota nenastavena)          |
    |   Třída   | REG_SZ | CustomDP.CustomDirectiveProcessor |
    | Assembly  | REG_SZ |           CustomDP.dll            |
-
 
 6. Restartujte sadu Visual Studio.  
 

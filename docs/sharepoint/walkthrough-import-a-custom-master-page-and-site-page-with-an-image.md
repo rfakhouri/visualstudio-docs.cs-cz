@@ -1,5 +1,5 @@
 ---
-title: 'Průvodce: Import vlastní stránky předlohy a stránky webu s bitovou kopii | Dokumentace Microsoftu'
+title: 'Návod: Import vlastní stránky předlohy a stránky webu s bitovou kopii | Dokumentace Microsoftu'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,14 +13,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 59dad7f376b79b2e8ac773f8cc604204dcd0c908
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 3d99b76e1ca9c67c0cd29bd435759b529d97b348
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602204"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665991"
 ---
-# <a name="walkthrough-import-a-custom-master-page-and-site-page-with-an-image"></a>Průvodce: Import vlastní stránky předlohy a stránky webu s obrázkem
+# <a name="walkthrough-import-a-custom-master-page-and-site-page-with-an-image"></a>Návod: Import vlastní stránky předlohy a stránky webu s obrázkem
   Tento návod ukazuje, jak importovat vlastní stránku SharePoint předlohy a stránky webu s obrázkem do [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projektu služby SharePoint.
 
  Tento návod ukazuje, jak provádět následující úlohy:
@@ -150,13 +150,11 @@ ms.locfileid: "56602204"
 
 2. Na **vybrat položky k importu** stránce v části **modulu** v **typ** sloupců, zaškrtněte políčka pro pouze soubory v následující tabulce pro import.
 
-
    | Název souboru | Popis |
    |------------------------|-----------------------------------------------|
    | \_catalogsmasterpage\_ | Vlastní stránky předlohy. |
    | images_ | Soubor obrázku v systému souborů služby SharePoint. |
    | SitePages_ | Stránka webu. |
-
 
 3. Zvolte **Dokončit** tlačítko Import vybraných položek.
 

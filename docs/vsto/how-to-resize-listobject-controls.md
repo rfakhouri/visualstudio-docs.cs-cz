@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e6d996cfcfb9dd8c63cf31b203905b486b3a1c82
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: af494a87b2feea10d121e59931e51ef3dd344f67
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56598463"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59669299"
 ---
 # <a name="how-to-resize-listobject-controls"></a>Postupy: Změna velikosti ovládacích prvků ListObject
   Nastavte velikost <xref:Microsoft.Office.Tools.Excel.ListObject> ovládací prvek, když ho přidáte do sešitu aplikace Microsoft Office Excel; však můžete chtít změnit jeho velikost později. Například můžete chtít změnit seznam dvěma sloupci na tři sloupce.
@@ -43,7 +43,6 @@ ms.locfileid: "56598463"
  Pokud chcete změnit velikost seznamu, můžete kliknout a přetáhněte jeden z úchytů pro změnu velikosti, nebo můžete změnit jeho velikost v **změnit velikost seznamu** dialogové okno.
 
 ### <a name="to-resize-a-list-by-using-the-resize-list-dialog-box"></a>Změnit velikost seznamu pomocí dialogu změnit velikost seznamu
-
 
 1.  Klikněte kamkoli do <xref:Microsoft.Office.Tools.Excel.ListObject> tabulky. **Nástroje tabulky** > **návrhu** zobrazuje kartu na pásu karet.
 

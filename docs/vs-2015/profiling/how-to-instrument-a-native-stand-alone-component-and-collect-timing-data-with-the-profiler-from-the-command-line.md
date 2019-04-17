@@ -9,12 +9,12 @@ caps.latest.revision: 30
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 13245f28ac758685c95acdc11bbe92489724f5e4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 4b3f104354a132702ebfc33e628c4643a34c8da0
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54757105"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649769"
 ---
 # <a name="how-to-instrument-a-native-stand-alone-component-and-collect-timing-data-with-the-profiler-from-the-command-line"></a>Postupy: Instrumentace nativní samostatné součásti a shromažďování dat Profiler z příkazového řádku časování
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,10 +56,9 @@ Toto téma popisuje způsob použití [!INCLUDE[vsprvs](../includes/vsprvs-md.md
    |         [/automark](../profiling/automark.md) **:** `Interval`          |                                                                                Použití s **/wincounter** pouze. Určuje počet milisekund mezi událostmi sběru čítače výkonu Windows. Výchozí hodnota je 500 ms.                                                                                |
    |       [/Events](../profiling/events-vsperfcmd.md) **:** `Config`        |                                                                                  Určuje událost trasování událostí pro Windows (ETW) má být shromážděn během profilování. Události trasování událostí pro Windows jsou shromážděny v samostatném (ETL) soubor.                                                                                   |
 
-
 4. Spusťte cílovou aplikaci standardním způsobem.  
 
-## <a name="controlling-data-collection"></a>Řízení kolekce dat  
+## <a name="controlling-data-collection"></a>Řízení shromažďování dat  
  Pokud je cílová aplikace spuštěna, lze sběr dat řídit spouštěním či pozastavováním zápisu dat do souboru s použitím **VSPerfCmd.exe** možnosti. Řízení sběru dat umožňuje shromažďovat data pro určitou část provádění programu, například spouštění či ukončování aplikace.  
 
 #### <a name="to-start-and-stop-data-collection"></a>Spuštění a zastavení shromažďování dat  

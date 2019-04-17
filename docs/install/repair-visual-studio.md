@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 690fe29373e80d9dfc560a616d0e914731d9b6cf
-ms.sourcegitcommit: 0a2fdc23faee77187e10a1c19665ba5a1ac68e72
+ms.openlocfilehash: 3ba5cdf7ba627bc1d6a75368d90da5ce8a726a5e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/10/2019
-ms.locfileid: "59477523"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59647165"
 ---
 # <a name="repair-visual-studio"></a>Oprava sady Visual Studio
 
@@ -74,7 +74,6 @@ Někdy instalaci sady Visual Studio stává poškozené. Toto můžete opravit o
    > **Opravit** možnost se zobrazí pouze pro nainstalované instance sady Visual Studio. Pokud se nezobrazí **opravit** možnost, je pravděpodobné, že jste vybrali **Další** ve verzi, která je uvedena v instalačním programu sady Visual Studio jako "K dispozici" místo "Nainstalováno".
 
 ::: moniker-end
-
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

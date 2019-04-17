@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ada8a5b08d1a5ca7caed142c1bba9de103a3f954
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9e952cda19664a9d73ebe6b77daba3ecfd78777c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55951511"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658706"
 ---
 # <a name="creating-a-windows-forms-based-domain-specific-language"></a>Vytvoření doménově specifického jazyka založeného na Windows Forms
 Windows Forms slouží k zobrazení stavu modelu jazyka specifického pro doménu (DSL), namísto použití DSL diagram. Toto téma vás provede vazbu formuláře Windows k DSL pomocí Visual Studio Visualization and Modeling SDK.
@@ -28,12 +28,10 @@ Windows Forms slouží k zobrazení stavu modelu jazyka specifického pro domén
 
     V tomto názorném postupu se předpokládá, že následující názvy:
 
-
    | | |
    |-|-|
    | Název řešení a DSL | FarmApp |
    | Obor názvů | Company.FarmApp |
-
 
 2. Experimentujte s počáteční příklad, který poskytuje šablony:
 

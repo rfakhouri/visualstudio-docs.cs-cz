@@ -19,17 +19,16 @@ caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7a564028017e97a10ba0dda51c2e0db23dd1067a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6f0c13e5ea8778ca91c30383287aaad6e965bb65
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54792939"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665841"
 ---
 # <a name="generatedeploymentmanifest-task"></a>GenerateDeploymentManifest – úloha
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Generuje [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifestu nasazení. A [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifestu nasazení popisuje nasazení aplikace definicí jedinečné identity pro nasazení, identifikující vlastností nasazení, jako je například instalace nebo online režimu, určení aplikace aktualizací nastavení nebo umístění, a označením odpovídajícího [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifest aplikace.  
   
 ## <a name="parameters"></a>Parametry  
@@ -44,7 +43,7 @@ Generuje [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifestu nasaze
 |`Description`|Volitelné `String` parametru.<br /><br /> Určuje volitelný popis pro aplikaci.|  
 |`DisallowUrlActivation`|Volitelné `Boolean` parametru.<br /><br /> Určuje, zda aplikace spouštěna automaticky při otevření prostřednictvím adresy URL. Pokud je tento parametr `true`, aplikaci lze spustit pouze z nabídky Start. Výchozí hodnota tohoto parametru je `false`. Tento vstup platí pouze tehdy, když `Install` je hodnota parametru `true`.|  
 |`EntryPoint`|Volitelné <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametru.<br /><br /> Označuje položku zadání pro generované sestavení manifestu. Pro [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifest nasazení, tento vstup Určuje [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifest aplikace.<br /><br /> V [!INCLUDE[vsprvslong](../includes/vsprvslong-md.md)], [generateapplicationmanifest – úloha](../msbuild/generateapplicationmanifest-task.md) vyžaduje `EntryPoint` ke generování manifestu aplikace. (Sestavení nebo nativní manifesty nevyžadují, aby `EntryPoint`.) Tento požadavek byl vynuceno chybou sestavení: "MSB3185: Nebyl zadán parametr EntryPoint pro manifest."<br /><br /> [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] nevydává tuto chybu při `EntryPoint` není zadán parametr úlohy. Místo toho \<customHostSpecified > jako podřízený objekt je vložena značka \<entryPoint > značku, například:<br /><br /> `<entryPoint xmlns="urn:schemas-`<br /><br /> `microsoft-com:asm.v2">`<br /><br /> `<co.v1:customHostSpecified />`<br /><br /> `</entryPoint>`<br /><br /> Závislosti mezi knihovnami DLL k manifestu aplikace můžete přidat pomocí následujících kroků:<br /><br /> 1.  Přeložit odkazy na sestavení pomocí volání <xref:Microsoft.Build.Tasks.ResolveAssemblyReference>.<br />2.  Předejte výstup předchozího úkolu a samotného sestavení do <xref:Microsoft.Build.Tasks.ResolveManifestFiles>.<br />3.  Předejte závislosti pomocí `Dependencies` parametr <xref:Microsoft.Build.Tasks.GenerateApplicationManifest>.|  
-|`ErrorReportUrl`|Volitelné [String] (<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->) parametru.<br /><br /> Určuje adresu URL webové stránky, který se zobrazí v dialogových oknech během instalace ClickOnce.|  
+|`ErrorReportUrl`|(Volitelné [String]<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->) parametru.<br /><br /> Určuje adresu URL webové stránky, který se zobrazí v dialogových oknech během instalace ClickOnce.|  
 |`InputManifest`|Volitelné <xref:Microsoft.Build.Framework.ITaskItem> parametru.<br /><br /> Označuje vstupní dokument XML, který bude sloužit jako základ pro generátor manifestu. To umožňuje strukturovaným datům, například definicím vlastního manifestu, se projevovat ve výstupním manifestu. Kořenový element v dokumentu XML musí být uzel sestavení v oboru názvů asmv1.|  
 |`Install`|Volitelné `Boolean` parametru.<br /><br /> Určuje, zda je aplikace nainstalovaná aplikace nebo aplikace pouze online. Pokud je tento parametr `true`, aplikace se nainstaluje v nabídce Start uživatele a můžete ji odstranit pomocí dialogu přidat nebo odebrat programy. Pokud je tento parametr `false`, aplikace je určena pro použití online z webové stránky. Výchozí hodnota tohoto parametru je `true`.|  
 |`MapFileExtensions`|Volitelné `Boolean` parametru.<br /><br /> Určuje, zda je použito mapování přípon názvů souborů .deploy. Pokud je tento parametr `true`, každý programový soubor je publikován s příponou názvu souboru .deploy. Tato možnost je užitečná pro zabezpečení webového serveru k omezení počtu přípon souborů, které musí být odblokovány pro povolení [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] nasazení aplikace. Výchozí hodnota tohoto parametru je `false`.|  

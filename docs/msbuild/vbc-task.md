@@ -18,19 +18,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 585a3d4940d11508dbe6d8874cb401cfe380a690
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 247d7c5a204418fdddf41e906a12ef2ef1fb232f
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56623824"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653330"
 ---
 # <a name="vbc-task"></a>Vbc – úloha
 Zabalí *vbc.exe*, která vytváří spustitelné soubory (*.exe*), dynamické knihovny (*.dll*), nebo moduly kódu (*.netmodule*). Další informace o *vbc.exe*, naleznete v tématu [příkazového řádku kompilátoru jazyka Visual Basic](/dotnet/visual-basic/reference/command-line-compiler/index).
 
 ## <a name="parameters"></a>Parametry
  Následující tabulka popisuje parametry `Vbc` úloh.
-
 
 | Parametr | Popis |
 |------------------------------| - |

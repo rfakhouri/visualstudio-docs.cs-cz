@@ -11,18 +11,17 @@ caps.latest.revision: 17
 author: corob-msft
 ms.author: corob
 manager: jillfra
-ms.openlocfilehash: 504f7f002c41832294e61fa968f7cfd2d32b54b0
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 7236c0cde965a52ea6ea19f4244e90ec53851405
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57869119"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659160"
 ---
 # <a name="install-visual-c-for-cross-platform-mobile-development"></a>Instalace komponenty Visual C++ for Cross-Platform Mobile Development
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
-Visual C++ pro vývoj mobilních řešení napříč platformami] (http://go.microsoft.com/fwlink/p/?LinkId=536383) je instalovatelných komponent sady Visual Studio 2015. Obsahuje šablony sady Visual Studio a platformy a instalaci nástrojů pro různé platformy a sady SDK, abyste mohli začít rychle a bez nutnosti vyhledat, stáhnout a nakonfigurovat sami. Tyto nástroje v sadě Visual Studio můžete snadno vytvářet, upravovat, ladění a testování multiplatformních projektů. Toto téma popisuje postup instalace nástroje a software jiných výrobců, které jsou potřebné k vývoji aplikací pro různé platformy pomocí sady Visual Studio. Přehled komponenty, naleznete v tématu [Visual C++ Cross-Platform Mobile](http://go.microsoft.com/fwlink/p/?LinkId=536387)  
+Vizuální C++ pro vývoj mobilních řešení napříč platformami] (http://go.microsoft.com/fwlink/p/?LinkId=536383) je instalovatelných komponent sady Visual Studio 2015. Obsahuje šablony sady Visual Studio a platformy a instalaci nástrojů pro různé platformy a sady SDK, abyste mohli začít rychle a bez nutnosti vyhledat, stáhnout a nakonfigurovat sami. Tyto nástroje v sadě Visual Studio můžete snadno vytvářet, upravovat, ladění a testování multiplatformních projektů. Toto téma popisuje postup instalace nástroje a software jiných výrobců, které jsou potřebné k vývoji aplikací pro různé platformy pomocí sady Visual Studio. Přehled komponenty, naleznete v tématu [Visual C++ Cross-Platform Mobile](http://go.microsoft.com/fwlink/p/?LinkId=536387)  
   
  [Požadavky](#Requirements)   
  [Získání nástrojů](#GetTheTools)   

@@ -11,12 +11,12 @@ ms.assetid: 303e1d70-5d98-424a-b51e-e0898e16d3f8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5503c6d579fc77aa066e4052aa109b531ff1e39c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1aa698c2c152b33d111ffe893ec22fbf9eec4316
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942658"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59652173"
 ---
 # <a name="edit-the-test-mix-to-specify-which-web-performance-unit-and-coded-ui-tests-to-include-in-a-load-test-scenario"></a>Úpravy poměru testů určit, které webového výkonu, jednotek a programové testy uživatelského rozhraní mají být zahrnuty do scénáře zátěžového testu
 
@@ -81,12 +81,10 @@ Můžete přidat další testy webového výkonu a jednotku s různými text sc�
 > [!WARNING]
 > **Rozmístit** tlačítko přepíše všechny položky, které jsou zamknuté.
 
-
  Je také možné zadat procentní hodnoty přímo do **%** sloupce namísto použití posuvníků. Pokud zadáte hodnotu v procentech přímo, nebude se automaticky upraví další položky.
 
 > [!NOTE]
 > Posuvníky jsou zakázané, pokud celkový počet nepřidá do 100 %, nebo pokud procentní hodnoty zadané do **%** sloupce jsou desetinná čísla.
-
 
  Když ručně zadáte procentní hodnoty, by měl Ujistěte se, že součet všech položek je 100 %. Při ukládání kombinaci, nejsou-li součet 100 %, vyzve tak, aby přijímal procentní hodnoty, jak jsou, nebo se vrátit a upravte je tak. Pokud budete chtít nepřijmete, jak jsou, budou se poměrné přepočítání na 100 %.  Pokud máte dvě položky a je ručně nastaveno na 80 % až 40 %, nastaví se první položka % 66.67 (80 dělený 120) a nastaví se druhá položka % 33,33 (40 dělený 120).
 

@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 007a8b8d94c178b4282999bf7102b645530c6adf
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 7b1a99f3007a87738f55d0b13fa8943ded925266
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56645027"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59663937"
 ---
 # <a name="collect-concurrency-data-for-an-aspnet-web-application-using-the-profiler-command-line"></a>Shromažďování dat souběžnosti pro webovou aplikaci ASP.NET pomocí příkazového řádku profileru
 Za použití metody souběžnosti z [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] nástrojů pro profilaci sady umožňuje shromažďovat data kolize prostředků.
@@ -39,7 +39,6 @@ Za použití metody souběžnosti z [!INCLUDE[vsprvs](../code-quality/includes/v
 |**Profil s použitím metody vzorkování**|-   [Shromažďování statistik aplikace pomocí vzorkování](../profiling/collecting-application-statistics-for-aspnet-using-the-profiler-sampling-method.md)|
 |**Profil s použitím metody instrumentace**|-   [Shromažďování podrobných dat časování pomocí instrumentace](../profiling/collecting-detailed-timing-data-aspnet-profiler-instrumentation-method.md)|
 |**Profil přidělování a uvolňování paměti kolekce paměti**|-   [Shromažďování dat paměti](../profiling/collecting-memory-data-from-an-aspnet-web-application.md)|
-
 
 ### <a name="profile-concurrency-issues"></a>Potíže se souběžností profilu
 

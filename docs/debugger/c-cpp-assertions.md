@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c103448ae1471e2d9806a1d1cd2f8510c607f844
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 8e2d416bd932f1334468bfb3d43e050b3e71d2ec
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628322"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653720"
 ---
 # <a name="cc-assertions"></a>Kontrolní výrazy jazyka C/C++
 Příkaz kontrolní výraz určuje podmínku, která očekáváte, že na hodnotu true na místě v aplikaci. Pokud tato podmínka není splněna, výraz se nezdaří, dojde k přerušení provádění programu a [chyba kontrolního výrazu dialogovému oknu](../debugger/assertion-failed-dialog-box.md) se zobrazí.
@@ -105,7 +105,6 @@ VERIFY ( myFnctn(0)==1 ) // safe
 
 ## <a name="BKMK_CRT_assertions"></a> Kontrolní výrazy CRT
 CRTDBG. Definuje soubor hlaviček H [_ASSERT a _asserte – makra](/cpp/c-runtime-library/reference/assert-asserte-assert-expr-macros) kontroly kontrolní výraz.
-
 
 | – Makro | Výsledek |
 |------------| - |

@@ -14,17 +14,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: aa90a0d10b06559b3f4f46fd8dc0c5da4cef981e
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 9f4f410656e49b1a76e74898940cbd32314fc8b4
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54780744"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59661331"
 ---
 # <a name="how-to-clean-a-build"></a>Postupy: Vyčištění sestavení
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Při čištění sestavení se odstraní všechny pomocných a výstupních souborů, byste museli opustit jenom soubory projektu a součást. Ze souborů projektu a komponenty nových instancí přechodný a výstupních souborů může pak být sestavena. Knihovny běžných úloh, které je součástí [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] zahrnuje [Exec](../msbuild/exec-task.md) úkol, který můžete použít ke spuštění příkazů systému. Další informace o knihovně úkoly, naleznete v tématu [– referenční dokumentace úlohy](../msbuild/msbuild-task-reference.md).  
   
 ## <a name="creating-a-directory-for-output-items"></a>Vytváří se adresář pro výstupní položky  

@@ -8,12 +8,12 @@ manager: jillfra
 ms.technology: vs-azure
 ms.workload:
 - azure
-ms.openlocfilehash: ae068ba052c9fcde99bea034c9216d2a24b5626e
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: 458334beebe6be24b2bec70d0160688e48e653d6
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58856827"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59664327"
 ---
 # <a name="get-started-with-visual-studio-kubernetes-tools"></a>Začínáme s Kubernetes nástroje sady Visual Studio
 
@@ -26,7 +26,7 @@ Tento kurz se zabývá použitím sady Visual Studio, přidejte do projektu podp
 Chcete-li využívají tato nová funkce, budete potřebovat:
 
 ::: moniker range="vs-2017"
-- Nejnovější verzi [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) s *vývoj pro ASP.NET a web* pracovního vytížení.
+- Nejnovější verzi [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) s *vývoj pro ASP.NET a web* pracovního vytížení.
 - [Kubernetes tools pro Visual Studio](https://aka.ms/get-vsk8stools), která je dostupná jako samostatný soubor ke stažení.
 ::: moniker-end
 ::: moniker range="vs-2019"

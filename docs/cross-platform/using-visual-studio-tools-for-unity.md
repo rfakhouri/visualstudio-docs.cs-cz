@@ -10,12 +10,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 380618e0cee57a1cf0f45a1324d150170e5ee16e
-ms.sourcegitcommit: 5c049194fa256b876ad303f491af11edd505756c
+ms.openlocfilehash: 72160388114cd3c4860d9b22cd6c75535a4819dc
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53027338"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59669084"
 ---
 # <a name="use-visual-studio-tools-for-unity"></a>Používání Visual Studio Tools for Unity
 
@@ -91,7 +91,7 @@ Vytvoření prázdné definice metod MonoBehavior pomocí Průvodce MonoBehavior
 
 Unity Project Exploreru zobrazí všechny soubory projektů Unity a adresáře stejným způsobem, který jako Unity Editor. To se liší od navigace Unity skripty s normální Visual Studio Průzkumníku řešení, které uspořádány do projektů a řešení vygenerované sadou Visual Studio.
 
-- V hlavní nabídce sady Visual Studio, zvolte **zobrazení > Unity Project Exploreru**. Klávesová zkratka: **Alt**+**Shift**+**E**
+- V hlavní nabídce sady Visual Studio, zvolte **zobrazení > Unity Project Exploreru**. Klávesová zkratka: **ALT**+**Shift**+**E**
 
    ![Zobrazte okno Průzkumníka projektů Unity. ](../cross-platform/media/vstu_view_unity_project_explorer.png "vstu_view_unity_project_explorer")
 
@@ -181,13 +181,16 @@ Všimněte si, že podle scénáře popsaného zde předpokládá, že máte zdr
 
 #### <a name="to-debug-a-managed-dll-project-used-in-your-unity-project"></a>Chcete-li ladit spravovaný projekt knihovny DLL použít ve vašem Unity projektu
 
-1. Přidáte do existujícího projektu knihovny DLL do řešení sady Visual Studio vygenerovaná aplikace Visual Studio Tools for Unity. Ne tak často může být spuštění nového spravovaného projektu knihovny DLL tak, aby obsahovala kód komponent ve vašem Unity projektu; Pokud je to tento případ, můžete přidat nový projekt spravované knihovny DLL do řešení sady Visual Studio místo. Další informace o přidání nového nebo existujícího projektu k řešení najdete v tématu [postupy: Přidání projektů do řešení](https://msdn.microsoft.com/library/ff460187.aspx).
+1. Přidáte do existujícího projektu knihovny DLL do řešení sady Visual Studio vygenerovaná aplikace Visual Studio Tools for Unity. Ne tak často může být spuštění nového spravovaného projektu knihovny DLL tak, aby obsahovala kód komponent ve vašem Unity projektu; Pokud je to tento případ, můžete přidat nový projekt spravované knihovny DLL do řešení sady Visual Studio místo. Další informace o přidání nového nebo existujícího projektu k řešení najdete v tématu [jak: Přidat projekty do řešení](https://msdn.microsoft.com/library/ff460187.aspx).
 
    ![Přidáte do existujícího projektu knihovny DLL do řešení. ](../cross-platform/media/vstu_debugging_dll_add_existing.png "vstu_debugging_dll_add_existing")
 
    V obou případech se Visual Studio Tools for Unity udržuje odkaz na projekt, i když bylo potřeba znovu generovat soubory projektu a řešení znovu, takže vám stačí jednou provést tyto kroky.
 
 2. Odkaz na správný profil framework Unity v projektu knihovny DLL. V sadě Visual Studio, nastavte ve vlastnostech projektu knihovny DLL **Cílová architektura** vlastnost na požadovanou verzi Frameworku Unity, které používáte. Toto je Unity základní knihovny tříd, který odpovídá kompatibilitu s rozhraními API, že váš projekt cílí, jako je například plně Unity, micro nebo webové základní knihovny tříd. To zabrání tomu, aby vaše knihovna DLL volání metod rozhraní framework, která existují v jiných platforem nebo úrovně kompatibility, ale které nemusí existovat ve verzi rozhraní framework Unity, které používáte.
+
+> [!NOTE]
+> Tady je jenom nutné, pokud používáte starší verzi modulu runtime Unity a. Pokud používáte nový modul runtime Unity, nemusíte už nebudete používat tyto vyhrazené 3.5 profily. Použijte profil .NET 4.x kompatibilní s vaší verzí Unity.
 
    ![Nastavte cílové rozhraní DLL architektury Unity. ](../cross-platform/media/vstu_debugging_dll_target_framework.png "vstu_debugging_dll_target_framework")
 
@@ -197,7 +200,9 @@ Všimněte si, že podle scénáře popsaného zde předpokládá, že máte zdr
 
    - Upravit nastavení sestavení vašeho projektu knihovny DLL a nastavte jeho výstupní složka bude **prostředky** složce Unity projektu. V budou umístěné soubory DLL a soubor PDB **prostředky** složky.
 
-   Soubory PDB jsou potřeba pro ladění, protože mohou obsahovat symboly pro ladění knihovny DLL a mapování kód knihovny DLL na jeho formě zdrojového kódu. Visual Studio Tools for Unity pomocí informací z knihovny DLL a soubor PDB vytvořit knihovnu DLL. Soubor MDB, což je formát symbolů ladění používat skriptovací modul Unity.
+   Soubory PDB jsou potřeba pro ladění, protože mohou obsahovat symboly pro ladění knihovny DLL a mapování kód knihovny DLL na jeho formě zdrojového kódu. Pokud se zaměřujete na starší verzi modulu runtime, Visual Studio Tools for Unity použije k vytvoření knihovny DLL informace z knihovny DLL a soubor PDB. Používá soubor MDB, což je formát symbolů ladění starší verzi skriptování herní engine Unity. Pokud cílíte na nový modul runtime a pomocí Portable PDB, Visual Studio Tools for Unity se nebude pokoušet provést jakýkoli převod symbolů je nativně využívat Portable PDB nový modul runtime Unity.
+   
+   Další informace o generování souborů PDB může najít [tady](https://docs.microsoft.com/en-us/visualstudio/debugger/how-to-set-debug-and-release-configurations?view=vs-2019). Pokud se zaměřujete na nový modul runtime, ujistěte se prosím, že "Informace o ladění" je nastavena na "Přenosná", aby bylo možné správně generovat Portable PDB. Pokud se zaměřujete na starší verzi modulu runtime, budete muset použít "Úplné".
 
 4. Ladění kódu. Teď můžete ladit knihovnu DLL zdrojový kód společně se svým projektem Unity zdrojový kód a použít všechny ladění funkcí, které jste zvyklí, jako například zarážky a krokování kódu.
 

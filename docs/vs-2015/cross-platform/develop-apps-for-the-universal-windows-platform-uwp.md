@@ -9,17 +9,16 @@ caps.latest.revision: 50
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 949cbbc7146fc744f549201a98f61d82a80185e8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8a273e3422c1ab96a0c5fdba8330b218b4b7640f
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54787015"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59666764"
 ---
 # <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>Vývoj aplikací pro Univerzální platformu Windows (UWP)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Univerzální platforma Windows a naše jednoho jádra Windows můžete spustit stejné aplikace na všechna zařízení s Windows 10 z telefonů stolní počítače. Vytvořte tyto Universal Windows apps pomocí sady Visual Studio 2015 a nástroje pro vývoj univerzálních aplikací pro Windows.  
   
  ![Universal Windows Platform](../cross-platform/media/uwp-coreextensions.png "UWP_CoreExtensions")  

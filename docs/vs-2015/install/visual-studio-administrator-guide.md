@@ -13,17 +13,17 @@ caps.latest.revision: 76
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 839573b296d01d10e3f4c06e94cb1553380c673c
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 5a84f0a037df92ff31ce66eb6692367ef1d209f6
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57868879"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649365"
 ---
 # <a name="visual-studio-administrator-guide"></a>Příručka administrátora sady Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější dokumentaci pro sadu Visual Studio 2017, najdete v článku [příručce pro správce sady Visual Studio 2017](/visualstudio/install/visual-studio-administrator-guide).
+Nejnovější dokumentaci k sadě Visual Studio, najdete v článku [příručce pro správce sady Visual Studio](/visualstudio/install/visual-studio-administrator-guide).
 
 Visual Studio 2015 můžete nasadit v síti, tak dlouho, dokud každý cílový počítač splňuje [minimální požadavky na instalaci](https://visualstudio.microsoft.com/vs/older-downloads/). Sdílené síťové složky můžete vytvořit spuštěním instalační soubor s přepínačem/Layout (jak je popsáno na [vytvoření v režimu Offline instalace sady Visual Studio](../install/create-an-offline-installation-of-visual-studio.md) stránky) a následným kopírováním z místního počítače do sdílené síťové složky. Pokud použijete Image ISO, můžete připojit bitovou kopii ISO a sdílet ho nebo zkopírovat bitovou kopii ISO do sdílené síťové složky.  
   
@@ -57,12 +57,13 @@ Visual Studio 2015 můžete nasadit v síti, tak dlouho, dokud každý cílový 
  Další informace o souboru prostředí správce, naleznete v tématu [jak: Vytvoření a spuštění bezobslužné instalace sady Visual Studio](../install/how-to-create-and-run-an-unattended-installation-of-visual-studio.md) a [jak: Automatické použití kódů product key při nasazení sady Visual Studio](../install/how-to-automatically-apply-product-keys-when-deploying-visual-studio.md).  Další informace o řízení příkazového řádku, najdete v článku [použití parametrů příkazového řádku instalace sady Visual Studio](../install/use-command-line-parameters-to-install-visual-studio.md) stránky.  
   
 ## <a name="specifying-customer-feedback-settings"></a>Určení nastavení zpětné vazby zákazníka  
- Ve výchozím nastavení instalaci sady Visual Studio umožňuje zpětné vazby od zákazníků. Visual Studio a zakázání zpětné vazby od zákazníků v jednotlivých počítačích změnou hodnoty následujícího klíče registru na řetězec "0", můžete nakonfigurovat:  
+
+Ve výchozím nastavení instalaci sady Visual Studio umožňuje zpětné vazby od zákazníků. Visual Studio a zakázání zpětné vazby od zákazníků v jednotlivých počítačích změnou hodnoty následujícího klíče registru na řetězec "0", můžete nakonfigurovat:  
   
- **HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\VisualStudio\SQM**  
+**HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\VisualStudio\SQM**  
 **OptIn**  
   
- (Třeba, změňte ho na HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\VisualStudio\SQM OptIn = "0")  
+(Třeba, změňte ho na HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\VisualStudio\SQM OptIn = "0")  
   
 ## <a name="related-topics"></a>Související témata  
   

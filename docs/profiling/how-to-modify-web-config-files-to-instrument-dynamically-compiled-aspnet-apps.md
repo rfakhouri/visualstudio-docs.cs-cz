@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 925112de25a127d4664bb66d602ca137ad624f70
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 35e68a9a359d139fae631d06d5fa847ae6e60b8c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616687"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59657308"
 ---
 # <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>Postupy: Úprava souborů web.config za účelem instrumentace a profilování dynamicky kompilovaných webových aplikací ASP.NET
 Můžete použít [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] nástrojů pro profilaci sady metody instrumentace ke shromažďování podrobných dat časování, data o přidělování paměti .NET a životnosti objektů .NET z dynamicky zkompilován [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] webové aplikace.
@@ -45,11 +45,9 @@ Můžete použít [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] nás
 
 3. Přidejte následující atribut název a hodnota, která se **assemblyBinding** element:
 
-
    | Název atributu | Hodnota atributu |
    |----------------|--------------------------------------|
    | **Xmlns** | **urn:schemas-microsoft-com:asm.v1** |
-
 
 4. Přidat **dependentAssembly** prvek jako podřízený prvek **assemblyBinding** elementu.
 
@@ -59,13 +57,11 @@ Můžete použít [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] nás
 
 6. Přidejte následující atribut názvy a hodnoty, které mají **assemblyIdentity** element:
 
-
    | Název atributu | Hodnota atributu |
    |--------------------| - |
    | **Jméno** | **Microsoft.VisualStudio.Enterprise.ASPNetHelper** |
    | **PublicKeyToken** | **b03f5f7f11d50a3a** |
    | **Jazyková verze** | **Neutrální** |
-
 
 7. Přidat **základu kódu** element jako podřízený objekt **dependentAssembly** elementu.
 
@@ -140,12 +136,10 @@ Můžete použít [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] nás
 
 3. Přidejte následující atribut názvy a hodnoty, které mají **přidat** element:
 
-
    | Název atributu | Hodnota atributu |
    |----------------| - |
    | **key** | **Microsoft.VisualStudio.Enterprise.AspNetHelper.VsInstrLocation** |
    | **value** | `PerformanceToolsFolder` **\VSInstr.Exe** |
-
 
 4. Přidejte další **přidat** element jako podřízený objekt **appSettings** elementu.
 
@@ -157,7 +151,6 @@ Můžete použít [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] nás
    |**value**|`PerformanceToolsFolder`|
 
     `PerformanceToolsFolder` je cesta profileru spustitelné soubory. Chcete-li získat cestu k nástrojů pro profilaci, naleznete v tématu [zadejte cestu k nástrojům příkazového řádku](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).
-
 
 ```xml
     <configuration>

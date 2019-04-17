@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: cdead60fbde711ac9b219a6bbcb635e329d51a0a
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: 261ddf457ad117812be9971b630c2fcd3b75b550
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57983194"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651284"
 ---
 # <a name="extract-an-interface-refactoring"></a>Rozhraní refaktoring extrahovat
 
@@ -58,13 +58,11 @@ Tento refaktoring platí pro:
 
    ![extrahování rozhraní](media/extractinterface-dialog-same-file.png)
 
-
    | Pole | Popis |
    | - | - |
    | **Název nového rozhraní** | Název rozhraní, který se má vytvořit. Název bude ve výchozím nastavení můžu*ClassName*, kde *ClassName* je název třídy, které vyberete nahoře. |
    | **Nový název souboru** | Název generovaného souboru, který bude obsahovat rozhraní. Jak je názvem rozhraní, tento název bude ve výchozím nastavení můžu*ClassName*, kde *ClassName* je název třídy, které vyberete nahoře. Můžete také vybrat možnost **přidat do aktuálního souboru**. |
    | **Vybrat veřejné členy rozhraní** | Položky, které chcete extrahovat do rozhraní. Můžete vybrat libovolný počet podle potřeby. |
-
 
 4. Zvolte **OK**.
 
@@ -73,15 +71,13 @@ Tento refaktoring platí pro:
    - C#:
 
       ![Výsledné třídy –C#](media/extractinterface-class-cs.png)
-      
-      
+
       ![Výsledný rozhraní-C#](media/extractinterface-interface-cs.png)
 
    - Visual Basic:
 
       ![Výsledné třídy – Visual Basic](media/extractinterface-class-vb.png)
-      
-      
+
       ![Výsledný rozhraní - jazyka Visual Basic](media/extractinterface-interface-vb.png)
 
 ## <a name="see-also"></a>Viz také:

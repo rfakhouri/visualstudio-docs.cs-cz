@@ -9,17 +9,16 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9ff3f206f57a544053498def16318e0ed65b64ab
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6171ca233af1ec2af71f11d3248a9d2e670c156b
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54756104"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665854"
 ---
 # <a name="how-to-turn-pluralization-on-and-off-or-designer"></a>Postupy: Pluralizace zapnutí a vypnutí (O/R Designer)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Ve výchozím nastavení se při přetažení databázových objektů, které mají jména končící na s nebo dokumentu z **Průzkumníka serveru**/**Průzkumník databáze** na [LINQ to SQL nástroje v sadě Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md), názvy generovaných tříd entit se změnil z množném čísle k jednotném čísle. To slouží k reprezentaci přesněji skutečnost, že třída vytvořenou instanci entity se mapuje na jeden záznam dat. Příkladem je přidání tabulky Zákazníci [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] výsledky v třídu entity s názvem zákazníka, protože třída bude obsahovat data pro jediného zákazníka.  
   
 > [!NOTE]

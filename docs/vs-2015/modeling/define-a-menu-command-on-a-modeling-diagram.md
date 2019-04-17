@@ -11,12 +11,12 @@ caps.latest.revision: 63
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1a01681c4674fd5a47d4f5f795f78899df00e770
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ef029cc6e931509997ad6f094adedc7d96e4bcd3
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54753451"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59670316"
 ---
 # <a name="define-a-menu-command-on-a-modeling-diagram"></a>Definování příkazu nabídky v diagramu modelování
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,7 +65,6 @@ V sadě Visual Studio můžete definovat další položky nabídky v místních 
 
 2. Přidejte následující odkazy do projektu.  
 
-
    |                                                                                                    Odkaz                                                                                                    |                                                                                                  To umožňuje provést                                                                                                  |
    |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
    |                                                                                        System.ComponentModel.Composition                                                                                        |                                         Definovat součásti pomocí [Managed Extensibility Framework (MEF)](http://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde).                                          |
@@ -74,7 +73,6 @@ V sadě Visual Studio můžete definovat další položky nabídky v místních 
    |                                                                                  Microsoft.VisualStudio.Modeling.Sdk.[version]                                                                                  | Definování obslužných rutin událostí modelu.<br /><br /> Zapouzdření sérii změn do modelu. Další informace najdete v tématu [UML propojení aktualizací modelů pomocí transakcí](../modeling/link-uml-model-updates-by-using-transactions.md). |
    |                                                            Microsoft.VisualStudio.Modeling.Sdk.Diagrams.[version]<br /><br /> (není vždy nutné)                                                             |                                                                                   Přístup k dalším prvkům diagramu pro obslužné rutiny gest.                                                                                   |
    | Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer<br /><br /> Vyžaduje se jenom pro příkazy v diagramech vrstev. Další informace najdete v tématu [rozšíření diagramů vrstev](../modeling/extend-layer-diagrams.md). |                                                                                             Definujte příkazy diagramu vrstva.                                                                                              |
-
 
 3. Přidejte soubor třídy do projektu a nastavte jeho obsah následujícím kódem.  
 

@@ -15,17 +15,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bd9b728ee8537f5668914f05f05481fd3fe56d92
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: d688e737593ab4eaaeddfe0edcae57c99be4f8ad
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54780421"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59663726"
 ---
 # <a name="toolbox-html-tab"></a>Sada nástrojů, karta HTML
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 **HTML** součásti, které jsou užitečné pro webové stránky a webové formuláře poskytuje kartu na panelu nástrojů. Chcete-li zobrazit na této kartě, nejprve otevřete dokument pro úpravy v Návrháři HTML. Na **zobrazení** nabídky, klikněte na tlačítko **nástrojů**a potom klikněte na tlačítko **HTML** kartu na panelu nástrojů.  
   
  Chcete-li vytvořit instanci nástroje na **HTML** kartu, buď klikněte dvakrát na nástroj, který ho přidat do aktuálního místa vložení dokumentu nebo vyberte nástroj a přetáhněte ji na požadované pozici na povrchu úpravy.  

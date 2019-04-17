@@ -1,5 +1,5 @@
 ---
-title: 'Průvodce: Použití nástroje MSBuild | Dokumentace Microsoftu'
+title: 'Návod: Použití nástroje MSBuild | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -11,17 +11,16 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: bbce3f0723a4f4729c844db92ffddb5c43430107
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3a256a13d1840d2bf5f26635c5e572dce30434ae
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54792217"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59655007"
 ---
-# <a name="walkthrough-using-msbuild"></a>Průvodce: Použití nástroje MSBuild
+# <a name="walkthrough-using-msbuild"></a>Návod: Použití nástroje MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Nástroj MSBuild je platforma sestavení pro společnost Microsoft a sady Visual Studio. Tento návod vás seznámí s stavební kameny nástroje MSBuild a ukazuje, jak psát, manipulaci a ladit projekty MSBuild. Kurzu se naučíte:  
   
 - Vytváření a manipulaci se soubor projektu.  

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bfca12367bf675fdadd7bc84bc616e0d5e0b6b7d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 5aa6e2fdcbca0a434af044b842cf2b4ece10c8ef
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603424"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59667336"
 ---
 # <a name="how-to-specify-which-target-to-build-first"></a>Postupy: Zadejte cíl, které nejdřív sestavit
 Soubor projektu může obsahovat jednu nebo více `Target` prvky, které definují, jak je sestaven projekt. [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) Modulu sestavení první ho najde a projektu všechny závislosti, pokud soubor projektu obsahuje `DefaultTargets` atribut, `InitialTargets` atribut nebo cíl je zadán v příkazovém řádku pomocí **– Cíl** přepnout.
@@ -58,7 +58,6 @@ Soubor projektu může obsahovat jednu nebo více `Target` prvky, které definuj
 
 ## <a name="use-the--target-switch"></a>Použijte přepínač - cíl
  Pokud není definován výchozí cíl v souboru projektu, nebo pokud nechcete používat, které se zaměřují výchozí, můžete použít přepínač příkazového řádku **-target** určit jiný cíl. Cíl nebo cíle zadané s **– cíl** přepínače se spustí místo cíle, které jsou určené `DefaultTargets` atribut. Podle cílů `InitialTargets` atribut vždy spouští jako první.
-
 
 #### <a name="to-use-a-target-other-than-the-default-target-first"></a>Nejprve použít jiný cíl než výchozí cíl
 

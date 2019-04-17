@@ -18,17 +18,16 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4ddb6ad55a8d90a3e9d4f5b2568885cbe49fb66c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 120020f4ae1aa409f64ce9999c0fcd9c96e806a9
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54764548"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659017"
 ---
 # <a name="save-data-from-an-object-to-a-database"></a>Uložení dat z objektu do databáze
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Předáním hodnoty z objektu do jednoho objektu TableAdapter dbdirect – metody můžete uložit data v objektech k databázi (například `TableAdapter.Insert`).
   
  K uložení dat z kolekce objektů smyčky přes kolekce objektů (například smyčka pro další) a odešlete hodnoty pro každý objekt do databáze pomocí jedné z objektu TableAdapter dbdirect – metody.  

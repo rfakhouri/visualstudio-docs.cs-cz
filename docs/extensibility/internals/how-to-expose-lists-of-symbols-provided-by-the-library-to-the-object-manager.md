@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c890602fa35ae96c4a28ef3c6d39724ce062a3c9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: efc9fa354ab7dfc119efd747c54091d2426b257b
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56612462"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59666582"
 ---
 # <a name="how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager"></a>Postupy: Zveřejnění seznamů symbolů poskytovaných knihovnou správci objektů
 Nástroje procházení symbolů **zobrazení tříd**, **prohlížeče objektů**, **volání prohlížeče** a **výsledky hledáni symbolu**, předat požadavky na nová data [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] object Manageru. Správci objektů najde odpovídající knihovny a vyžaduje nový seznam symbolů. Knihovny reakce díky na požadovaná data [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] object Manageru prostřednictvím <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> rozhraní. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Object Manageru volá metody <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> rozhraní na získání dat a použije ho k naplnění nebo aktualizovat zobrazení nástroje procházení symbolů.
@@ -30,7 +30,6 @@ Nástroje procházení symbolů **zobrazení tříd**, **prohlížeče objektů*
 >  Následující příklady spravovaného kódu ukazují, jak poskytnout seznamů symbolů prostřednictvím implementace <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> rozhraní. Objekt správce volá metody v tomto rozhraní a používá získaných dat k naplnění nebo aktualizovat nástroje procházení symbolů.
 >
 >  Pro nativní kód používaná implementace poskytovatele symbolů, použijte <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectList2> rozhraní.
-
 
 ## <a name="to-provide-lists-of-symbols-to-the-object-manager"></a>Seznam symbolů poskytovat správci objektů
 

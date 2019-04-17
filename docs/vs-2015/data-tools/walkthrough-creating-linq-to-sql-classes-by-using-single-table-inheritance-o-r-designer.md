@@ -1,5 +1,5 @@
 ---
-title: 'Průvodce: Vytvoření třídy LINQ to SQL s použitím dědičnosti jedné tabulky (O R Designer) | Dokumentace Microsoftu'
+title: 'Návod: Vytvoření třídy LINQ to SQL s použitím dědičnosti jedné tabulky (O R Designer) | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-data-tools
@@ -9,17 +9,16 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 62b56e11f5f91485f8fb38f4b087ee2466ad43f8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 61509b7427a9c1a95fe15bba93d231f0dc37d136
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54788141"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59664987"
 ---
-# <a name="walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>Průvodce: Vytvoření třídy LINQ to SQL s použitím dědičnosti jedné tabulky (O/R Designer)
+# <a name="walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>Návod: Vytvoření třídy LINQ to SQL s použitím dědičnosti jedné tabulky (O/R Designer)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 [LINQ to SQL nástroje v sadě Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) podporuje dědičnosti jedné tabulky, jak se zpravidla implementuje v relačních systémech. Tento názorný postup rozšiřují obecných kroků uvedených v [jak: Konfigurace dědičnosti pomocí Návrháře relací objektů](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md) tématu a poskytuje některé reálná data pro demonstraci použití dědičnosti v [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].  
   
  V tomto návodu budete provádět následující úlohy:  

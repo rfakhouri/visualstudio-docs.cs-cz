@@ -19,17 +19,17 @@ caps.latest.revision: 108
 author: kraigb
 ms.author: kraigb
 manager: jillfra
-ms.openlocfilehash: 7fd6319c9c4527988511c423cd2094ffa34d93c3
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: bdb3973502d57ef326d0e13b1ddc43d0e9c89c87
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194921"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654695"
 ---
 # <a name="porting-migrating-and-upgrading-visual-studio-projects"></a>Přenosy, migrace a upgrade projektů sady Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější dokumentaci pro sadu Visual Studio 2017 najdete v tématu [Port, migrace a Upgrade projektů sady Visual Studio](https://docs.microsoft.com/visualstudio/porting/port-migrate-and-upgrade-visual-studio-projects).
+Nejnovější dokumentaci k sadě Visual Studio, naleznete v tématu [migrace a upgrade odkaz na projekt pro Visual Studio](/visualstudio/porting/port-migrate-and-upgrade-visual-studio-projects).
 
 Když zvažujete, zda byste měli přejít na novější verzi sady Visual Studio, můžete použít tento dokument a zjistěte, jaká řešení, projekty, soubory a další prostředky, které jste vytvořili v [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] nebo Visual Studio 2010 SP1, poběží beze změny v [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] a [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)]. Nebo, mohli jste dosáhnout na této stránce Pokud jste narazili chybová zpráva při pokusu o otevření projektu, který není podporované ve verzi sady Visual Studio, které jste otevřeli v, nebo vyžaduje sadu SDK nebo příponu, třeba Azure SDK for .NET.
 
@@ -38,7 +38,7 @@ Když zvažujete, zda byste měli přejít na novější verzi sady Visual Studi
  Pokud používáte [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] spolu s [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)],[!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] nebo Visual Studio 2010 SP1, můžete vytvářet a upravovat projekty a soubory v libovolné verze. Můžete přenášet projekty a soubory mezi verzemi tak dlouho, dokud nepřidáte funkce, které nejsou podporovány jednou z verzí.
 
 ##  <a name="project"></a> Projekty
- Následující seznam popisuje podporu v [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] a [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] pro projekty, které byly vytvořeny v [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] nebo Visual Studio 2010 SP1. Tento seznam můžete použít k určení, zda můžete otevřít projekt jako-probíhá [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)], [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], nebo Visual Studio 2010 SP1, nebo zda je třeba jej pro zajištění kompatibilitě upravit.
+ Následující seznam popisuje podporu v [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] a [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] pro projekty, které byly vytvořeny v [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] nebo Visual Studio 2010 SP1. Tento seznam slouží k určení, zda lze otevřít projekt "tak jak jsou" v [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)], [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], nebo Visual Studio 2010 SP1, nebo zda je třeba jej pro zajištění kompatibilitě upravit.
 
 |Typ projektu|Kompatibilita|
 |---------------------|-------------------|
@@ -130,4 +130,5 @@ Když zvažujete, zda byste měli přejít na novější verzi sady Visual Studi
 |[!INCLUDE[vs_dev11_expwin_long](../includes/vs-dev11-expwin-long-md.md)]|64bitové prostředí jako MSBuild nebo [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] nelze použít k sestavení [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] aplikace, které jsou vytvořené v [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)].|
 
 ## <a name="see-also"></a>Viz také
- [Vytváření vlastních projektů s ohledem na verzi](../misc/making-custom-projects-version-aware.md)
+
+- [Vytváření vlastních projektů s ohledem na verzi](../misc/making-custom-projects-version-aware.md)

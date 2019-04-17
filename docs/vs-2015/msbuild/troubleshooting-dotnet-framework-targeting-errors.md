@@ -18,17 +18,16 @@ caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9c7854e982a369816a9dac2c54df48e98ec6d3b7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 85f57d03ac52562c5cbebc27f410570c03e33d3f
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54804231"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668168"
 ---
 # <a name="troubleshooting-net-framework-targeting-errors"></a>Řešení potíží s cílením na rozhraní .NET Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Toto téma popisuje chyby nástroje MSBuild, kterým by mohlo dojít z důvodu odkazu problémy a jak můžete tyto chyby vyřešili.  
   
 ## <a name="you-have-referenced-a-project-or-assembly-that-targets-a-different-version-of-the-net-framework"></a>Mít odkazuje na projekt nebo sestavení, který cílí na jinou verzi rozhraní .NET Framework  

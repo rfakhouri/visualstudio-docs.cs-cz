@@ -25,12 +25,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: de4fc349a25719a0494b095e5a37c218b87cb0f8
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 84e26a2d7dae70e0029817d4e6bb6e70dd53bce4
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56600717"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59648231"
 ---
 # <a name="ltdependencygt-element-clickonce-deployment"></a>&lt;závislost&gt; – element (nasazení ClickOnce)
 Určuje verzi aplikace k instalaci a umístění manifestu aplikace.
@@ -78,7 +78,6 @@ Určuje verzi aplikace k instalaci a umístění manifestu aplikace.
 ## <a name="dependentassembly"></a>dependentAssembly
  Povinný parametr. Tento prvek obsahuje `assemblyIdentity` elementu. V následující tabulce jsou uvedeny atributy `dependentAssembly` podporuje.
 
-
 | Atribut | Popis |
 |------------------| - |
 | `preRequisite` | Volitelné. Určuje, že toto sestavení by již měla existovat v mezipaměti GAC. Platné hodnoty jsou `true` a `false`. Pokud `true`a zadané sestavení v GAC neexistuje, aplikace se nepovedlo spustit. |
@@ -110,14 +109,12 @@ Určuje verzi aplikace k instalaci a umístění manifestu aplikace.
 ## <a name="dsigtransform"></a>dsig:Transform
  `dsig:Transform` Je požadovaný podřízený element `dsig:Transforms` elementu. V následující tabulce jsou uvedeny atributy `dsig:Transform` elementu.
 
-
 | Atribut | Popis |
 |-------------| - |
 | `Algorithm` | Algoritmus používaný k výpočtu algoritmu digest pro tento soubor. Aktuálně pouze hodnota používaná metodou [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] je `urn:schemas-microsoft-com:HashTransforms.Identity`. |
 
 ## <a name="dsigdigestmethod"></a>dsig: DigestMethod
  `dsig:DigestMethod` Je požadovaný podřízený element `hash` elementu. V následující tabulce jsou uvedeny atributy `dsig:DigestMethod` elementu.
-
 
 | Atribut | Popis |
 |-------------| - |

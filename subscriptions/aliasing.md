@@ -7,12 +7,12 @@ ms.date: 01/02/2018
 ms.topic: conceptual
 description: Přihlášení může selhat, pokud se používají aliasy nebo popisné názvy
 searchscope: VS Subscription
-ms.openlocfilehash: f0b18aca4c6188c23998c8a87f86359895198b95
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: cef5c71a62088fdef410dccb22b93eb0d7ad025d
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58195148"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668532"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-may-fail-when-using-aliases"></a>Přihlášení k předplatná sady Visual Studio může selhat, pokud aliasy using
 
@@ -50,7 +50,6 @@ Postupujte podle těchto kroků pro přidání nového odběratele s účtem slu
 
     > [!div class="mx-imgBorder"]
     > ![Nabídka předplatného](_img//vlsc/vlsc-subscriptions.png)
-
 
 3. Klikněte na tlačítko **číslo smlouvy** přidružený k předplatnému sady Visual Studio.
 

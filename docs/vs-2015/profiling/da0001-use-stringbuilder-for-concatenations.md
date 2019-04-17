@@ -14,17 +14,17 @@ caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5a374e867283e4dad614d8bebce88a9bababa7d5
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: 386eda282364ccc4ab9841f126bb10944477df18
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355174"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659147"
 ---
 # <a name="da0001-use-stringbuilder-for-concatenations"></a>DA0001: Použití třídy StringBuilder ke zřetězení
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější dokumentaci k sadě Visual Studio, naleznete v tématu [DA0001: Použít StringBuilder pro zřetězení](https://docs.microsoft.com/visualstudio/profiling/da0001-use-stringbuilder-for-concatenations) na webu docs.microsoft.com.  
+Nejnovější dokumentaci k sadě Visual Studio, naleznete v tématu [DA0001: Použít StringBuilder pro zřetězení](https://docs.microsoft.com/visualstudio/profiling/da0001-use-stringbuilder-for-concatenations).  
   
 |||  
 |-|-|  
@@ -34,7 +34,7 @@ Nejnovější dokumentaci k sadě Visual Studio, naleznete v tématu [DA0001: Po
 |Zpráva|Zvažte možnost použít StringBuilder pro zřetězení řetězců|  
 |Typ zprávy|Upozornění|  
   
-## <a name="cause"></a>příčina  
+## <a name="cause"></a>Příčina  
  Volání System.String.Concat jsou podstatnou část dat profilování. Zvažte použití <xref:System.Text.StringBuilder> třídy k vytvoření řetězce z více segmentů.  
   
 ## <a name="rule-description"></a>Popis pravidla  

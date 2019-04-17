@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b834ce2b76d9c73fc5247da3402003b766dd9d87
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 85c3e70fd1d88bfa82d1aa55fe27505414986415
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56597794"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654084"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>Problémy s konfigurací serveru a klienta v nasazeních ClickOnce
 Pokud používáte Internetové informační služby (IIS) v systému Windows Server a vaše nasazení obsahuje typ souboru, který se nedokáže rozpoznat Windows, jako je například Microsoft Word soubor, služba IIS odmítne přenášet tento soubor a nasazení se nezdaří.
@@ -93,7 +93,6 @@ Pokud používáte Internetové informační služby (IIS) v systému Windows Se
 
 ## <a name="ftp-protocol-not-supported-for-installing-applications"></a>Protokol FTP není podporován pro instalaci aplikací
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] podporuje instalaci aplikací z libovolné HTTP 1.1 webového nebo souborového serveru. FTP, File Transfer Protocol, není podporován pro instalaci aplikace. Publikování aplikací jenom pomocí funkce FTP. Následující tabulka shrnuje tyto rozdíly:
-
 
 | Typ adresy URL | Popis |
 |----------| - |

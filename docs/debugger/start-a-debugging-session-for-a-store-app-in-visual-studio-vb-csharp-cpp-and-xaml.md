@@ -35,12 +35,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 9e863a4106ea81dc06ef84fb812bbb32c6e94b07
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.openlocfilehash: 63c6dfde0f4f097b4bfa595c0e594ba80020cedc
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58790508"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59669783"
 ---
 # <a name="start-a-debugging-session-for-a-uwp-app"></a>Spuštění ladicí relace aplikace pro UPW
 
@@ -122,7 +122,6 @@ V aplikacích jazyka C++ Visual Studio ladí nativního kódu ve výchozím nast
 |**skript**|Ladění kódu JavaScript ve vaší aplikaci. Nativní a spravovaný kód jsou ignorovány.|
 |**Nativní pomocí skriptu**|Ladění nativního kódu C/C++ a jazyka JavaScript v aplikaci. Spravovaný kód se ignoruje. K dispozici v projektech C++ nebo pouze úlohy na pozadí.|
 |**Jenom grafický procesor (C++ AMP)**|Ladění nativního kódu C++, na které poběží grafický procesor (GPU). K dispozici v pouze projekty C++.|
-
 
 ###  <a name="BKMK__Optional__Disable_network_loopbacks"></a> Zakázat network vytváření zpětných smyček (volitelné)
 

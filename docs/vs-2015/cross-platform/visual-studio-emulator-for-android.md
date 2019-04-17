@@ -8,17 +8,16 @@ ms.assetid: 80f0104f-a4db-44dd-bd55-37bb67776c62
 caps.latest.revision: 7
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: ec7e6d3ee6d27c444d0904e750293a3d82c3ab4a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1b14283127aa4a3488c258f1101a43a4d6208df5
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54789851"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59664260"
 ---
 # <a name="visual-studio-emulator-for-android"></a>Emulátor sady Visual Studio pro Android
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Visual Studio Emulator for Android je desktopová aplikace, které emuluje zařízení s Androidem. Poskytuje virtualizované prostředí, ve kterém můžete ladit a testovat aplikace pro Android bez fyzického zařízení. Také poskytuje izolované prostředí pro vaše aplikace prototypů.  
   
  Visual Studio Emulator for Android je navržené pro poskytování srovnatelné výkonu pro skutečné zařízení. Předtím, než můžete publikovat aplikaci, doporučujeme však, že testujete aplikaci na fyzickém zařízení.  

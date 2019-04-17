@@ -10,22 +10,22 @@ caps.latest.revision: 11
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: bbbc5cf6a6a65f7dbb38de60a5a99ec89fc70687
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: ec050cf8f365bfae2290593a0c7f215dcb2f39cc
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54834845"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59656723"
 ---
 # <a name="how-to-automatically-apply-product-keys-when-deploying-visual-studio"></a>Postupy: Automatické použití kódů Product Key při nasazení sady Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější dokumentaci pro sadu Visual Studio 2017 najdete v tématu [automatické použití kódů product key při nasazení sady Visual Studio](/visualstudio/install/automatically-apply-product-keys-when-deploying-visual-studio).
+Nejnovější dokumentaci k sadě Visual Studio, naleznete v tématu [automatické použití kódů product key při nasazení sady Visual Studio](/visualstudio/install/automatically-apply-product-keys-when-deploying-visual-studio).
 
 Můžete použít kód product key prostřednictvím kódu programu jako součást skriptu použít k automatizaci nasazení sady Visual Studio 2015. Kódy Product Key můžete nastavit na zařízení prostřednictvím kódu programu při instalaci sady Visual Studio nebo po dokončení instalace.
 
 ## <a name="apply-the-license-during-installation"></a>Použití licence během instalace
- Chcete-li použít kód product key během procesu instalace sady Visual Studio, použijte parametr/ProductKey. Tento parametr instalace lze použít s/silent parametr instalace sady Visual Studio ve stavu již licencované pro koncového uživatele. Pokud chcete použít parametr/ProductKey, otevřete příkazový řádek. Spusťte instalační program (např. vs_enterprise.exe nebo vs_professional.exe) a nastavte parametr/ProductKey s kódem product key (25 znaků), který obsahuje pomlčky:
+ Chcete-li použít kód product key během procesu instalace sady Visual Studio, použijte parametr/ProductKey. Tento parametr instalace lze použít s/silent parametr instalace sady Visual Studio ve stavu již licencované pro koncového uživatele. Pokud chcete použít parametr/ProductKey, otevřete příkazový řádek. Spusťte instalační program (například vs_enterprise.exe nebo vs_professional.exe) a nastavte parametr/ProductKey s kódem product key (25 znaků), který obsahuje pomlčky:
 
  Toto je příklad příkaz pro instalaci sady Visual Studio 2015 Enterprise s kódem product key AAAAABBBBBCCCCCDDDDDEEEEEEE:
 
@@ -34,7 +34,7 @@ Můžete použít kód product key prostřednictvím kódu programu jako součá
 ## <a name="apply-the-license-after-installation"></a>Použití licence, které jsou po instalaci
  Nainstalovaná verze sady Visual Studio s kódem product key můžete aktivovat pomocí nástroje storePID.exe na cílové počítače v bezobslužném režimu. StorePID.exe program je nástroj, který instaluje se sadou Visual Studio na  **\<jednotky >:\\\Program soubory (x86) \Microsoft Visual Studio 14.0\Common7\IDE\StorePID.exe**.
 
- StorePID.exe spusťte s vyššími oprávněními, buď pomocí agenta System Center nebo příkazovém řádku, za nímž následuje kód product key (včetně pomlček) a kód produktu společnosti Microsoft (MPC). Nezapomeňte zahrnout pomlček kód product key.
+ StorePID.exe spusťte s vyššími oprávněními, buď pomocí agenta System Center nebo příkazovém řádku, za nímž následuje kód product key (včetně pomlček) a kód produktu společnosti Microsoft (MPC). Nezapomeňte zahrnout pomlček kód product key!
 
  `StorePID.exe [product key including the dashes] [MPC]`
 
@@ -54,9 +54,10 @@ Můžete použít kód product key prostřednictvím kódu programu jako součá
 |Visual Studio Professional 2013|06177|
 |Visual Studio Test Professional 2013|06194|
 
- Další informace o získání kódu product key, najdete v tématu [jak: Vyhledejte kód Product Key sady Visual Studio](../install/how-to-locate-the-visual-studio-product-key.md).
+Další informace o získání kódu product key, naleznete v tématu [jak: Vyhledejte kód Product Key sady Visual Studio](../install/how-to-locate-the-visual-studio-product-key.md).
 
- Pokud StorePID.exe úspěšně použít kód product key, vrátí 0. Pokud se setká chyby, vrátí číslo od 1 do 6.
+Pokud StorePID.exe úspěšně použít kód product key, vrátí 0. Pokud se setká chyby, vrátí číslo od 1 do 6.
 
-## <a name="see-also"></a>Viz také
- [Instalace sady Visual Studio](../install/install-visual-studio-2015.md)
+## <a name="see-also"></a>Viz také:
+
+- [Instalace sady Visual Studio](../install/install-visual-studio-2015.md)

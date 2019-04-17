@@ -5,12 +5,12 @@ author: therealjohn
 ms.author: johmil
 ms.date: 04/02/2019
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
-ms.openlocfilehash: 8d2cff0f2366a1f59dc70db7fd36415e853e1d2e
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: 56050de063dcbc86bfa469ee9f466a8e87bba973
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58857005"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59667882"
 ---
 # <a name="using-visual-studio-for-mac-tools-for-unity"></a>Pomocí sady Visual Studio for Mac Tools for Unity
 
@@ -102,7 +102,6 @@ Spuštění ladění:
    ![Kliknutím na tlačítko Přehrát v Unity](media/using-vsmac-tools-unity-image6.png)
 
 3. Neopravňují hry v Unity editoru připojeny k sadě Visual Studio budou všechny zarážky, došlo k pozastavení provádění hry a otevřete řádek kódu, kde hru zarážce v sadě Visual Studio pro Mac.
-
 
 ### <a name="start-debugging-in-a-single-step"></a>Spuštění ladění jedním krokem.
 

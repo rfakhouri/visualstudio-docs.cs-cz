@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b4152482f404596e1d97a94a12890b4c5b298794
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 9345f3f094e1c48204892cd40cca71a7e28eba7c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604220"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59657205"
 ---
 # <a name="ltfilegt-element-clickonce-application"></a>&lt;soubor&gt; – element (aplikace ClickOnce)
 Identifikuje všechny soubory nonassembly stáhli a použili aplikací.
@@ -166,14 +166,12 @@ Identifikuje všechny soubory nonassembly stáhli a použili aplikací.
 ## <a name="dsigtransform"></a>dsig:Transform
  `dsig:Transform` Je požadovaný podřízený element `dsig:Transforms` elementu. `dsig:Transform` Element má následující atributy.
 
-
 | Atribut | Popis |
 |-------------| - |
 | `Algorithm` | Algoritmus používaný k výpočtu algoritmu digest pro tento soubor. Aktuálně pouze hodnota používaná metodou [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] je `urn:schemas-microsoft-com:HashTransforms.Identity`. |
 
 ## <a name="dsigdigestmethod"></a>dsig: DigestMethod
  `dsig:DigestMethod` Je požadovaný podřízený element `hash` elementu. `dsig:DigestMethod` Element má následující atributy.
-
 
 | Atribut | Popis |
 |-------------| - |

@@ -9,17 +9,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c6c3155ee65031b57ec70cc7f22ed53cdef67ebf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5e2fbba9006c1621b8f98084d4ffd4c637be1127
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54786292"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654652"
 ---
 # <a name="xml-snippets"></a>Fragmenty XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 XML Editor nabízí funkci *fragmentů XML*, který umožňuje rychlejší vytváření souborů XML. Můžete znovu použít fragmentů XML tak, že vloží do vašich souborů. Můžete také vygenerovat data XML na základě schématu schématu XML definice jazyk (XSD).  
   
 ## <a name="reusable-xml-snippets"></a>Opakovaně použitelné XML fragmentů  

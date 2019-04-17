@@ -8,14 +8,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fd29a8d31d425529db377c812611f1efddc60f11
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: 43305d7b9353bd34e98a3dcfd31205cb9159a2f3
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526617"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659916"
 ---
-# <a name="how-to-create-xml-snippets"></a>Postupy: Vytváření fragmentů XML
+# <a name="how-to-create-xml-snippets"></a>Postupy: Vytváření fragmentů kódu XML
 
 XML editor lze použít k vytvoření nových fragmentů kódu XML. Editor obsahuje fragmentu XML, s názvem "Fragmentu kódu", který je často používaný text fragment kódu pro vytvoření nových fragmentů kódu XML.
 
@@ -64,7 +64,6 @@ XML editor lze použít k vytvoření nových fragmentů kódu XML. Editor obsah
 
 > [!NOTE]
 > Fragment textu XML musí být uzavřena do `<![CDATA[...]]>` oddílu.
-
 
  Tady je `Code` element, který je vytvořen pomocí standardní fragment kódu.
 

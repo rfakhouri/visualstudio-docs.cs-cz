@@ -8,12 +8,12 @@ ms.author: karann
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d92c266b0504f021328175d436216d9c86a6032
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d3ae795b464d8a693371b1ebb9238a897debbf02
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913103"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59650002"
 ---
 # <a name="xaml-errors-and-warnings"></a>Chyby a upozornění XAML
 
@@ -31,7 +31,6 @@ Na pozadí analyzovat více nástrojů pro XAML paralelně. Chyby XAML jsou rozd
 
 > [!Note]
 > Ne všechny chyby nebo upozornění mají odpovídající kód. Tyto chyby jsou obvykle chyby návrháře XAML.
-
 
 ## <a name="suppress-xaml-designer-errors"></a>Potlačit chyby návrháře XAML
 

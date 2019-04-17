@@ -14,17 +14,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 773ecc04569850546f03fd0cdb68bfe1a81a79f9
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 4cbfaea72633f6f4bbeb7da3bf6e7c02069889f9
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54835023"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59647699"
 ---
 # <a name="choose-toolbox-items-wpf-components"></a>Výběr položek sady nástrojů, součásti WPF
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Tato karta **zvolit položky nástrojů** dialogové okno zobrazí seznam dostupných ovládacích prvků Windows Presentation Foundation (WPF) v místním počítači. Chcete-li zobrazit tento seznam, vyberte **zvolit položky nástrojů** z **nástroje** nabídku zobrazíte **zvolit položky nástrojů** dialogové okno a pak vyberte jeho **WPF Součásti** kartu. Součástí uvedené seřadit, vyberte libovolné záhlaví sloupce.  
   
 - Pokud je zaškrtnuto políčko vedle komponenty, bude zobrazena ikona pro danou součást v **nástrojů**.  
@@ -39,7 +38,7 @@ Tato karta **zvolit položky nástrojů** dialogové okno zobrazí seznam dostup
   
   Sloupce **součásti WPF** karta obsahovat následující informace:  
   
-  Název  
+  Name  
   Seznamy názvů ovládacích prvků WPF pro položky, které existují v registru počítače.  
   
   Obor názvů  

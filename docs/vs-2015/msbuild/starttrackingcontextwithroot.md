@@ -17,17 +17,16 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e35384af02ad2fb5f3c15d1851cdc716bc29445b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 68e80da01a0ab1ad59bbb5bdb06c92c1a11a8ac1
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54787169"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59666230"
 ---
 # <a name="starttrackingcontextwithroot"></a>StartTrackingContextWithRoot
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Spouští kontext sledování pomocí souboru odpovědí. určení kořenové značky.  
   
 ## <a name="syntax"></a>Syntaxe  
@@ -47,7 +46,7 @@ HRESULT WINAPI StartTrackingContextWithRoot(LPCTSTR intermediateDirectory, LPCTS
  Cesta souboru odpovědí obsahující kořenové značky. Název kořenového slouží k seskupení všech sledování pro kontext, společně.  
   
 ## <a name="return-value"></a>Návratová hodnota  
- [HRESULT] (<!-- TODO: review code entity reference <xref:assetId:///HRESULT?qualifyHint=False&amp;autoUpgrade=True>  -->) s [úspěch] (<!-- TODO: review code entity reference <xref:assetId:///SUCCEEDED?qualifyHint=False&amp;autoUpgrade=True>  -->) sadu bitů, pokud byl vytvořen kontext sledování.  
+ [HRESULT] ()<!-- TODO: review code entity reference <xref:assetId:///HRESULT?qualifyHint=False&amp;autoUpgrade=True>  -->) s ([úspěch]<!-- TODO: review code entity reference <xref:assetId:///SUCCEEDED?qualifyHint=False&amp;autoUpgrade=True>  -->) sadu bitů, pokud byl vytvořen kontext sledování.  
   
 ## <a name="requirements"></a>Požadavky  
  **Záhlaví:** FileTracker.h  

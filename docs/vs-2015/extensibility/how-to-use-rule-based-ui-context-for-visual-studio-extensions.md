@@ -5,12 +5,12 @@ ms.topic: conceptual
 ms.assetid: 8dd2cd1d-d8ba-49b9-870a-45acf3a3259d
 caps.latest.revision: 8
 ms.author: gregvanl
-ms.openlocfilehash: fdaa8396049da2a0d875282b13eb2744bedbdd29
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ccdba95816d77e5282e978d508da581d9240ef06
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54759797"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59664311"
 ---
 # <a name="how-to-use-rule-based-ui-context-for-visual-studio-extensions"></a>Postupy: Použití kontextu uživatelského rozhraní založeného na pravidlech pro rozšíření sady Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -137,8 +137,6 @@ Visual Studio umožňuje načítání rozšíření VSPackages při některých 
 |ActiveProjectCapability:\<výrazu >|Termín má hodnotu true, když zadaného výrazu odpovídá možnosti aktivního projektu. Výraz může být třeba VB &#124; CSharp|
 |SolutionHasProjectCapability:\<výrazu >|Podobně jako výše, ale termín je true, pokud řešení obsahuje načtený projekt, který odpovídá výrazu.|
 |SolutionHasProjectFlavor:\<projectTypeGuid >|Výraz bude mít hodnotu true, vždy, když řešení obsahuje projekt, který je flavored (souhrn) a má flavor odpovídající danému projektu typu GUID.|
-
-
 
 ## <a name="compatibility-with-cross-version-extension"></a>Kompatibilita s verzí rozšíření
  Pravidla na základě kontextu uživatelského rozhraní je nová funkce v sadě Visual Studio 2015 a nebude přenést do starší verze. Vzniká tak problém s rozšíření/balíčky, které cílí více verzí sady Visual Studio, který by mohl být automaticky načíst v sadě Visual Studio 2013 a starší, ale může přinést pravidlo na základě uživatelského rozhraní kontexty zabránit automatické načítání v aplikaci Visual Studio 2015.

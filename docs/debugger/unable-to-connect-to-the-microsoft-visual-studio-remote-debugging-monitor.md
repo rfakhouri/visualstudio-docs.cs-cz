@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 95a438c6776e468611a99691c0a4bfea2e4203a5
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: c58e6531847d7694d9bde0f4520a3e21de6ce23f
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953648"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665620"
 ---
 # <a name="unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor"></a>Nepodařilo se připojit ke sledování Microsoft Visual Studio Remote Debugging Monitor.
 Tato zpráva může dojít, protože sledování vzdáleného ladění není správně nastavena na vzdáleném počítači nebo vzdálený počítač není dostupný kvůli potížím se sítí nebo přítomnost brány firewall.
@@ -80,7 +80,6 @@ Visual Studio nemohla připojit k vzdálený ladicí program. Tato zpráva můž
 - Port je blokována v bráně firewall. Ujistěte se, že brána firewall je [není blokuje vaši žádost](#firewall), zejména v případě, že používáte bránu firewall jiného dodavatele.
 
 - Verze vzdáleného ladicího programu se neshoduje s Visual Studio. Chcete-li získat správnou verzi vzdáleného ladicího programu, najdete v článku [vzdálené ladění](../debugger/remote-debugging.md)
-
 
 ## <a name="valid_name"></a> Název požadovaného byl platný, ale nebyla nalezena žádná data požadovaného typu
 

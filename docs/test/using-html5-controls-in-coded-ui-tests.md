@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 05ef65668edc9b008d95492605f967e467aa34b0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 84c1a0a4f74c847da78920a638b37c0294717d02
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55951875"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649782"
 ---
 # <a name="using-html5-controls-in-coded-ui-tests"></a>Použití ovládacích prvků HTML5 v programových testech UI
 
@@ -53,7 +53,6 @@ Zobrazit [HTMLAudioElement](https://developer.mozilla.org/docs/Web/API/HTMLAudio
 
 > [!NOTE]
 > Můžou být významné množství času pro hledání a pozastavit. Během přehrávání programového testu uživatelského rozhraní počká, až do zadaného času v `(TimeSpan)` před pozastavením zvuku. Pokud pomocí některé zvláštní okolnosti, určený čas uplynul před tím příkazu k pozastavení, bude vyvolána výjimka.
-
 
 ## <a name="video-control"></a>Ovládacího prvku video
  **Ovládacího prvku Video:** Akce na ovládacím prvku jako videa HTML5 správně se zaznamenávají a přehrát.

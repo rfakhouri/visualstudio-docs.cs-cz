@@ -19,17 +19,16 @@ caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b7aee698498fa59c4dc6fee66f89b496f8b21f34
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f7e119eccb31774bc5b300bf9608cb2e23eb83d7
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54804037"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654292"
 ---
 # <a name="import-element-msbuild"></a>Import – element (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Importuje obsah jednoho souboru projektu do jiného souboru projektu.  
   
  \<Project>  
@@ -53,7 +52,7 @@ Importuje obsah jednoho souboru projektu do jiného souboru projektu.
 |`Condition`|Nepovinný atribut.<br /><br /> Stav, který se má vyhodnotit. Další informace najdete v tématu [podmínky](../msbuild/msbuild-conditions.md).|  
   
 ### <a name="child-elements"></a>Podřízené elementy  
- Žádná  
+ Žádné  
   
 ### <a name="parent-elements"></a>Nadřazené elementy  
   

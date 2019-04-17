@@ -16,12 +16,12 @@ caps.latest.revision: 53
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ffe24127fc0b02b2abb8b4c91ff57345cf88ff7f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2613dbd0c803352c758ac1baf1b1f5d4469b9c73
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54802167"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59663989"
 ---
 # <a name="generate-code-from-uml-class-diagrams"></a>Generování kódu z diagramů tříd UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -164,16 +164,14 @@ Chcete-li generovat Visual C# .NET kódu z diagramů tříd UML v sadě Visual S
 
 4. V tomto dialogovém okně nastavte vlastnosti vazby textové šablony.  
 
-
    |    **Vlastnost**    |                                                                                                                                                                                                                                                                                                                    **Popis**                                                                                                                                                                                                                                                                                                                    |
    |--------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-   |        Název        |                                                                                                                                                                                                                                                  Název této vazby. Chcete-li přepsat vazby zděděné od nadřazeného balíčku nebo modelu, použijte stejný název, jako je název vazby, kterou chcete přepsat.                                                                                                                                                                                                                                                  |
+   |        Name        |                                                                                                                                                                                                                                                  Název této vazby. Chcete-li přepsat vazby zděděné od nadřazeného balíčku nebo modelu, použijte stejný název, jako je název vazby, kterou chcete přepsat.                                                                                                                                                                                                                                                  |
    |     Přepsat      |                                                                                                                                                                                                                                                                                                      Pokud je hodnota true, je existující kód přepsán.                                                                                                                                                                                                                                                                                                       |
    |    Cílový název     | Název souboru, který je generován.<br /><br /> Výrazy můžete vložit do tohoto řetězce, jako `{Name}` nebo `{Owner.Name}`. Můžete například napsat: `{Owner.Name}_{Name}`. Tento výraz je vyhodnocen pro prvek modelu. Mohou být použity vlastnosti prvků, ale nikoli metody. Pokud chcete zjistit, jaké vlastnosti lze použít, podívejte se na vlastnosti typů v **Microsoft.VisualStudio.Uml.\\ ***. \*\*Důležité:* \* `{Name}` nebo `{Owner.Name}` lze použít pouze ve **název cílového** vlastnost. Chcete-li změnit název vygenerované třídy, musíte změnit šablonu. Další informace najdete v tématu [Writing a Text Template](#writing). |
    |    Cesta k projektu    |                                                                      Určuje cestu k [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] výstupní soubory projektu, který bude obsahovat transformace. Zadávané hodnoty slouží k vytvoření nového projektu. Zvolte tlačítko se třemi tečkami (**[...]** ) vyberte existující projekt.<br /><br /> Pokud nový projekt neexistuje, bude vytvořen. Bude to projekt knihovny tříd jazyka C#.<br /><br /> Chcete-li to provést, je nutné projekt zadat přímo. Lze použít makra proměnných prostředí, například %ProgramFiles% nebo %LocalAppData%.                                                                       |
    |  Cílový adresář  |                                                                                          Složka, do které je cílový soubor generován. Tato cesta je relativní ke složce projektu.<br /><br /> Můžete použít `{PackageStructure}` výraz lze vložit cestu, která odpovídá názvům obsažených balíčků. Výchozí hodnota je `\GeneratedCode\{PackageStructure}`. Lze také použít proměnné prostředí, například %TEMP% nebo %HomePath%. **Důležité:** `{PackageStructure}` lze použít pouze ve **cílový adresář** vlastnost.                                                                                          |
    | Cesta k souboru šablony |                                                                                                                                                           Šablona, která bude provádět transformaci.<br /><br /> Lze použít buď dodané šablony, nebo vytvořit vlastní. Dodané šablony naleznete v následujícím umístění:<br /><br /> ...\Program Files\Microsoft Visual Studio 12.0\Common7\IDE\Extensions\Microsoft\Architecture Tools\Extensibility\Templates\Text\                                                                                                                                                           |
-
 
 5. K prvku lze připojit libovolný počet vazeb.  
 

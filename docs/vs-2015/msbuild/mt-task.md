@@ -25,17 +25,16 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 957e40a44c4f396fbd31b9062cfacddfd78cc8d5
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 93fd3bcff6fa16a4fb28521c58ff2caad6edafbb
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54805471"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59667908"
 ---
 # <a name="mt-task"></a>MT – úloha
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Zabalí nástroj Microsoft Manifest mt.exe. Další informace najdete v tématu "Mt.exe" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) webu.  
   
 ## <a name="parameters"></a>Parametry  

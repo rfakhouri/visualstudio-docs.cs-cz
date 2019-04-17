@@ -9,17 +9,16 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 385eee679c3a65db360d9ec6c0ab7735ff40128a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7f8e3f4d53b0a8b79367064761ba0fc5b901dc5e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54771220"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59670066"
 ---
 # <a name="how-to-select-the-xml-schemas-to-use"></a>Postupy: Výběr schémat XML pro použití
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 XML Editor obsahuje schéma mezipaměti umístěné v adresáři %InstallDir%\Xml\Schemas. Mezipaměti schématu obsahuje dobře známými schématy XML, které slouží k ověření dokumentu technologie IntelliSense a XML.  
   
  **Schémata** vlastnost dokumentu slouží k výběru jedné nebo více schématu definice jazyk (XSD) schématu XML používat. Umožní vám vybrat schémata z mezipaměti schémat nebo změnu schématu, který se nenachází v mezipaměti.  

@@ -22,17 +22,16 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: dc67a44586d221830825b94dd1c0eb160e307d21
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6cdbb5d092f431f628e76c7ab629d5ed70429cee
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54764496"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59661500"
 ---
 # <a name="upgrade-mdf-files"></a>Upgrade souborů .mdf
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Toto téma popisuje možnosti pro upgrade souboru databáze (MDF), po instalaci novější verze sady Visual Studio. Obsahuje pokyny pro následující úlohy:  
   
 - Upgrade databázového souboru, který chcete používat novější verzi SQL Server Express LocalDB  

@@ -9,12 +9,12 @@ caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2568b04e999a1b887e918a07ff8233ea9bf289a1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b6d205a3a8abddadc714aea4aa913ff064518920
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54802375"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59663476"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-service-to-collect-memory-data-by-using-the-command-line"></a>Postupy: Připojit Profiler ke službě .NET ke shromažďování dat paměti pomocí příkazového řádku
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -84,7 +84,6 @@ Toto téma popisuje způsob použití [!INCLUDE[vsprvs](../includes/vsprvs-md.md
    |         [/automark](../profiling/automark.md) **:** `Interval`          |                                                                                  Použití s **/wincounter** pouze. Určuje počet milisekund mezi událostmi sběru čítače výkonu Windows. Výchozí hodnota je 500 ms.                                                                                   |
    |       [/Events](../profiling/events-vsperfcmd.md) **:** `Config`        |                                                                                     Určuje událost trasování událostí pro Windows (ETW) má být shromážděn během profilování. Události trasování událostí pro Windows jsou shromážděny v samostatném (ETL) soubor.                                                                                     |
 
-
 8. Připojení profileru ke službě. Typ:  
 
     **Nástroj VSPerfCmd**[/ attach](../profiling/attach.md) **:**{`PID`&#124;`ProcName`} [[targetclr](../profiling/targetclr.md)**:**`Version`]    
@@ -93,7 +92,7 @@ Toto téma popisuje způsob použití [!INCLUDE[vsprvs](../includes/vsprvs-md.md
 
    -   **targetclr:** `Version` Určuje verzi modulu common language runtime (CLR) do profilu je do aplikace načtena více než jedna verze modulu runtime. Volitelné.  
 
-## <a name="controlling-data-collection"></a>Řízení kolekce dat  
+## <a name="controlling-data-collection"></a>Řízení shromažďování dat  
  Služba je spuštěná, ale můžete použít **VSPerfCmd.exe** možnosti zastavení a spuštění zápisu dat do datového souboru profilování. Řízení sběru dat umožňuje shromažďovat data pro určitou část provádění programu, například spouštění či ukončování aplikace.  
 
 #### <a name="to-start-and-stop-data-collection"></a>Spuštění a zastavení shromažďování dat  

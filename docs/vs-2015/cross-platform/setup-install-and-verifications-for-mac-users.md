@@ -6,17 +6,16 @@ ms.assetid: 22725520-59ba-4f6f-80e4-097b1287a34b
 caps.latest.revision: 14
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 52310ffb0a3c08f652f4d628db1c047a5d0417d6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 623e47e7244e9e4317e89f47cfda02bda465273b
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54772032"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59670287"
 ---
 # <a name="setup-install-and-verifications-for-mac-users"></a>Nastavení, instalace a ověření pro uživatele počítačů Mac
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Toto téma je určená pro vývojáře, kteří pracují hlavně na počítači Mac a kteří volitelně použít Visual Studio uvnitř virtuálního počítače Windows na počítači Mac. Pokud jste vývojář, pracující primárně na počítači Windows a muset nastavit sekundární Mac pro cílení na iOS, najdete v hlavním [nastavení a instalaci](../cross-platform/setup-and-install.md) tématu.  
   
  Pro práci s využitím kódu Xamarin na počítači Mac budete potřebovat následující:  

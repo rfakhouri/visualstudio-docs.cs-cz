@@ -9,17 +9,16 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cc3ebfcd9ad335cf95894aa916412da1a91cf008
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b9592605a25c76b4ea17b6efe91363d59585f56e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54774333"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59660967"
 ---
 # <a name="cannot-create-an-association-ltassociation-namegt---property-listed-twice"></a>Nelze vytvořit přidružení &lt;název přidružení&gt; – vlastnost je uvedená dvakrát
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Nelze vytvořit přidružení \<název přidružení >. Stejná vlastnost je uvedená víc než jednou: \<název vlastnosti >.  
   
  Přidružení jsou definovány ve vybrané **vlastnosti přidružení** v **Editor asociace** dialogové okno. Vlastnosti může být uveden pouze jednou pro každou třídu v přidružení.  

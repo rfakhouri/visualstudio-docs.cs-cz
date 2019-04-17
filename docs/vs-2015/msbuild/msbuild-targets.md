@@ -11,17 +11,16 @@ caps.latest.revision: 29
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 06b49a8fda448707540d5bfe65d0499c6c2dde96
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c4cc8d9654fc2d277f0b7c69483ab46aa3209983
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54767360"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59652355"
 ---
 # <a name="msbuild-targets"></a>Cíle nástroje MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Cíle seskupují úkoly v určitém pořadí a povolit procesu sestavení, abychom promítnout do menších jednotek. Například jeden cíl může odstranit všechny soubory ve výstupním adresáři připravit pro sestavení, zatímco jiné zkompiluje vstupy pro projekt a umístí je do prázdného adresáře. Další informace o úlohách najdete v části [úlohy](../msbuild/msbuild-tasks.md).  
   
 ## <a name="declaring-targets-in-the-project-file"></a>Deklarace cílů v souboru projektu  

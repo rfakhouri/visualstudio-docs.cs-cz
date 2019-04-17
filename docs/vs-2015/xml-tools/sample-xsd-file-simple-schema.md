@@ -9,17 +9,16 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dd61a665e50c04516d8c3c62489f9ccab7880b6a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: beea8103cce20d7437965b94a5ace10605847546
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54763795"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59662038"
 ---
 # <a name="sample-xsd-file-simple-schema"></a>Ukázkový soubor XSD: Jednoduché schéma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Následující soubor XSD se používá v různých příkladů v dokumentaci k Návrhář schématu XSD. Tento soubor je jednoduchý nákupní pořadí schématu.  
   
 ```xml  

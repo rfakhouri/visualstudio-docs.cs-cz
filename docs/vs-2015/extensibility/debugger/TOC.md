@@ -128,4 +128,3 @@
 ### [m_objectIdForDebugger – pole](asyncvoidmethodbuilder-m-objectidfordebugger-field.md)
 # [Referenční informace](reference/reference-visual-studio-debugging-apis.md)
 # [Ukázky](visual-studio-debugging-samples.md)
-

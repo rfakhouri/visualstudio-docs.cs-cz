@@ -7,12 +7,12 @@ ms.date: 11/07/2018
 ms.topic: conceptual
 description: Další informace o problémech, které mohou vzniknout při přihlašování k předplatná sady Visual Studio
 searchscope: VS Subscription
-ms.openlocfilehash: 0073ec4193190e56fb5147b5da56898e1a289fd5
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: ebdca1a8b38fd6ecbe895524da9c090be0620894
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56840945"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59656216"
 ---
 # <a name="issues-signing-in-to-visual-studio-subscriptions"></a>Potíže s přihlášením k předplatným sady Visual Studio
 Na používání vašeho předplatného sady Visual Studio, musíte nejdřív přihlásit.  V závislosti na vaše předplatné může nastavíte ho s účtem Microsoft (MSA) nebo identita Azure Active Directory (AAD).  Tento článek popisuje některé problémy, které můžete narazit při přihlašování k vašemu předplatnému.
@@ -55,7 +55,6 @@ Pokud odstraníte jednu nebo více identit (MSA nebo AAD) přidružených k vaš
 Aby se zabránilo dopad na vaše předplatné přístup, použijte některý z následujících postupů.
 - Nasazení – MSA nebo AAD – systém správy jedinou identitu, ale ne obojí.
 - Přidružte identity AAD a MSA prostřednictvím tenanta.
-
 
 ## <a name="next-steps"></a>Další kroky
 - Zjistěte, jak [propojení účtů MSA a AAD](/azure/active-directory/b2b/add-users-administrator) v AAD.

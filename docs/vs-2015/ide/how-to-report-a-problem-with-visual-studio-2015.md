@@ -9,26 +9,27 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 10cf59d4350d71d6f7feb75757b1c5ea9c9d1363
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 73b06f4235d5770cb6c086d6aed54229e00702de
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54834436"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665139"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2015"></a>Postup ohlášení problému se sadou Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější dokumentaci pro sadu Visual Studio 2017 najdete v tématu [jak chcete nahlásit problém v sadě Visual Studio 2017](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017).
+Nejnovější dokumentaci k sadě Visual Studio, naleznete v tématu [jak chcete nahlásit problém v sadě Visual Studio](/visualstudio/ide/how-to-report-a-problem-with-visual-studio).
 
 Pokud dojde k potížím s Visual Studiem 2015, chceme znát, takže jsme diagnostikovat a opravit ho.  S použitím **nahlásit problém** nástroj, můžete shromažďovat podrobné informace o problému a odesílají je společnosti Microsoft s několika málo kliknutí na tlačítko.
 
- Microsoft respektuje vaše soukromí. Informace o tom, jak jsme zacházet s daty, které nám pošlete, naleznete v tématu [prohlášení společnosti Microsoft Visual Studio Product řady](https://www.visualstudio.com/dn948229).
+Microsoft respektuje vaše soukromí. Informace o tom, jak jsme zacházet s daty, které nám pošlete, naleznete v tématu [prohlášení společnosti Microsoft Visual Studio Product řady](https://www.visualstudio.com/dn948229).
 
 ## <a name="open-the-report-a-problem-tool"></a>Otevřete sestavu nástroj problému
- Klikněte na ikonu zpětné vazby uživatelů vedle **Snadné spuštění** v záhlaví okna, nebo klikněte na **pomáhají &#124; odeslat zpětnou vazbu &#124; nahlásit problém**.
 
- ![Nahlásit problém položky nabídky](../ide/media/report-a-problem-menu-item.png "nahlásit problém položky nabídky")
+Klikněte na ikonu zpětné vazby uživatelů vedle **Snadné spuštění** v záhlaví okna, nebo klikněte na **Nápověda > Odeslat názor > ohlásit problém**.
+
+![Nahlásit problém položky nabídky](../ide/media/report-a-problem-menu-item.png "nahlásit problém položky nabídky")
 
 ## <a name="describe-the-problem"></a>Popište problém
 
@@ -43,7 +44,8 @@ Pokud dojde k potížím s Visual Studiem 2015, chceme znát, takže jsme diagno
    ![Nahlásit problém dialogové okno](../ide/media/report-a-problem-dialog.png "nahlásit problém dialogové okno")
 
 ## <a name="provide-a-screenshot-optional"></a>Zadejte snímek obrazovky (volitelné)
- Zvolte **zahrnout snímek obrazovky** k odeslání společnosti Microsoft aktuální obrazovky. Nástroj umožňuje Oříznout okraje obrázku, chcete-li zobrazit pouze část obrazovky, který zobrazuje problém. Kliknutím můžete připojit další snímky obrazovky nebo jiné soubory **připojit další soubory** tlačítko.
+
+Zvolte **zahrnout snímek obrazovky** k odeslání společnosti Microsoft aktuální obrazovky. Nástroj umožňuje Oříznout okraje obrázku, chcete-li zobrazit pouze část obrazovky, který zobrazuje problém. Kliknutím můžete připojit další snímky obrazovky nebo jiné soubory **připojit další soubory** tlačítko.
 
 ## <a name="provide-a-trace-and-heap-dump-optional"></a>Zadejte trasování a haldy výpis (volitelné)
 
@@ -60,10 +62,13 @@ Pokud dojde k potížím s Visual Studiem 2015, chceme znát, takže jsme diagno
      ![Záznam trasování souboru](../ide/media/record-a-trace-file.png "záznam souboru trasování")
 
 ## <a name="describe-the-workaround-if-there-is-one"></a>Popište alternativní řešení, pokud existuje
- Pokud jste mohli problém vyřešit, popište prosím řešením pro pole pro úpravy pro tento účel k dispozici. To pomáhá nám nejen a Diagnostikujte problém, ale také jako pomoc dalším uživatelům, kteří mohou nastat stejný problém.
+
+Pokud jste mohli problém vyřešit, popište prosím řešením pro pole pro úpravy pro tento účel k dispozici. To pomáhá nám nejen a Diagnostikujte problém, ale také jako pomoc dalším uživatelům, kteří mohou nastat stejný problém.
 
 ## <a name="submit-the-report"></a>Odeslat sestavu
- Klikněte na tlačítko pro odeslání k odeslání zprávy, spolu s všechny Image a soubory trasování nebo s výpisem paměti. Pokud **odeslat** tlačítko nejde aktivovat, ujistěte se, že jste zadali název a popis.
+
+Klikněte na tlačítko pro odeslání k odeslání zprávy, spolu s všechny Image a soubory trasování nebo s výpisem paměti. Pokud **odeslat** tlačítko nejde aktivovat, ujistěte se, že jste zadali název a popis.
 
 ## <a name="see-also"></a>Viz také
- [Kontaktujte nás](../ide/talk-to-us.md)
+
+- [Kontaktujte nás](../ide/talk-to-us.md)

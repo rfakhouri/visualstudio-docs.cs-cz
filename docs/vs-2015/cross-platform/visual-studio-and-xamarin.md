@@ -8,17 +8,16 @@ ms.assetid: 1da4064f-af69-472c-8f31-98484be5f790
 caps.latest.revision: 14
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 99f36287c6ab1aa6b8157e6dde2a84bb97233fcb
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a38e711a8a0244992f9958b4d48920f3437a8329
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54766955"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59666517"
 ---
 # <a name="visual-studio-and-xamarin"></a>Visual Studio a Xamarin
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Xamarin je platforma pro vývoj mobilních aplikací pro vytváření nativních aplikací pro iOS, Android a Windows apps ze společného C#/.NET základu kódu, dosažení 75 % na téměř 100 % opakované využívání kódu mezi platformami. Aplikace vytvořené pomocí Xamarinu a C# mít úplný přístup k rozhraní API základní platformy a umožňuje vytvářet nativní uživatelská rozhraní a zkompilovat do balíčků specifických pro platformu, je malý vliv na výkon modulu runtime. (Poznámka: Xamarin podporuje také F#, ale tato dokumentace se zaměří na C# pouze. Visual Basic není v tuto chvíli nepodporuje.)  
   
  Stále lepší vývojáři, kteří znají C#, .NET a Visual Studio bude vztahovat stejný výkon a produktivitu při práci s využitím kódu Xamarin pro mobile apps, včetně vzdáleného ladění na zařízení s Androidem, iOS a Windows – bez nutnosti učit vytváření nativního kódu jazyky, jako je Objective-C nebo Java. Je trochu překvapením a potom daný počet vysoce výkonné aplikace s krásná uživatelská rozhraní, jako je například NASCAR, Aviva a MixRadio – byly vytvořené pomocí Xamarinu.  

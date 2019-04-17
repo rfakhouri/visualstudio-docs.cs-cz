@@ -9,17 +9,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c0a25766327f2e074c4b7f8adf1ccde5a46895d9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e3834e22f67001e38096032037f33c5d184a5330
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54790598"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668896"
 ---
 # <a name="content-model-view"></a>Zobrazení modelu obsahu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Zobrazení modelu obsahu poskytuje grafické znázornění schématu místní a globální uzlů a jejich komponent, včetně jednoduché a komplexní typy prvků, skupiny modelů, atributy a skupiny atributů. Komentáře XML a pokyny pro zpracování nelze zobrazit v zobrazení modelu obsahu. Zobrazení modelu obsahu obsahuje dva panely: **pracovní prostor** panel, který obsahuje seznam uzlů v [pracovní prostor návrháře schémat XML](../xml-tools/xml-schema-designer-workspace.md)a návrhovou plochu, ve kterém uvidíte modelu obsahu schématu uzly, které jsou vybrány v **pracovní prostor** panelu. Zobrazení modelu obsahu také obsahuje panel nástrojů Návrhář schémat XML a panelu navigace s popisem cesty.  
   
  Na následujícím obrázku obsahuje panelu pracovního prostoru šesti uzlů schémat. `purchaseOrder` Uzlu je vybrán v panelu pracovní prostor a zobrazí se v návrhové ploše.  

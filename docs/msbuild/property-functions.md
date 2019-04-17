@@ -10,18 +10,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d7e8c3bab691eeaf71383aef3315b51173492f7
-ms.sourcegitcommit: 2dc924c96a6d48803c8eedc3d6781202629b41fa
+ms.openlocfilehash: 8474bd6550bb57a51bfb6e2c585a333f05d3c1d9
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57737030"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59652407"
 ---
 # <a name="property-functions"></a>Funkce vlastností
 
 V rozhraní .NET Framework verze 4 a 4.5 lze použít funkce vlastností k vyhodnocení skriptů nástroje MSBuild. Funkce vlastností je možné bez ohledu na to vlastnosti se zobrazí. Na rozdíl od úloh funkce vlastností lze použít vně cíle a vyhodnocují před spuštěním jakékoli cílové.
 
  Bez použití úkolů nástroje MSBuild, přečíst systémový čas, porovnat řetězce, porovnat regulární výrazy a provádět jiné akce v váš skript buildu. Nástroj MSBuild se pokusí převést řetězec na číslo a číslo na řetězec a ujistěte se, ostatní převody, podle potřeby.
+ 
+Hodnoty řetězce vrácena z funkce vlastností mají [speciální znaky](msbuild-special-characters.md) uvozeny řídicími znaky. Pokud chcete, aby hodnota, která má být zacházeno, jako by byl umístěn přímo do souboru projektu, použijte `$([MSBuild]::Unescape())` k unescape speciální znaky.
 
 ## <a name="property-function-syntax"></a>Syntaxe funkce vlastností
 

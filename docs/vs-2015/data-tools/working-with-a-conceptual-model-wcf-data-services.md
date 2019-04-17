@@ -18,17 +18,16 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b47950ea00f8ea7a6ec55476157a54dcd0aa9c75
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2e22a606c720f7d6b3304f6afb297ed76390f7ea
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54799401"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668389"
 ---
 # <a name="working-with-a-conceptual-model-wcf-data-services"></a>Práce s Konceptuálními modely (WCF Data Services)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Při použití koncepčního modelu pro popis dat v databázi se můžete dotazovat data prostřednictvím objekty namísto toho, aby pro převod vpřed a zpět mezi schéma databáze a objektový model.  
   
  Použití konceptuálních modelů pomocí aplikace služby WCF Data Services. Následující témata ukazují, jak zadávat dotazy na data prostřednictvím konceptuálního modelu.  

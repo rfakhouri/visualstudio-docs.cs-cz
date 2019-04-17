@@ -1,5 +1,5 @@
 ---
-title: 'Průvodce: Změna formátování dokumentů s použitím ovládacích prvků CheckBox'
+title: 'Návod: Změna formátování dokumentů s použitím ovládacích prvků CheckBox'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,14 +16,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0e1a1561bef1ae99db2b6bf338b083c57d0c8d7e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f1b4137a6f024a9a4f752af7c9e19fd946a1c282
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56621510"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653889"
 ---
-# <a name="walkthrough-change-document-formatting-using-checkbox-controls"></a>Průvodce: Změna formátování dokumentů s použitím ovládacích prvků CheckBox
+# <a name="walkthrough-change-document-formatting-using-checkbox-controls"></a>Návod: Změna formátování dokumentů s použitím ovládacích prvků CheckBox
   Tento návod ukazuje, jak změnit formátování textu pomocí ovládacích prvků Windows Forms v přizpůsobení úrovni dokumentu pro aplikaci Microsoft Office Word.
 
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]
@@ -76,7 +76,7 @@ ms.locfileid: "56621510"
 
 5.  Přidejte druhý zaškrtávací políčko níže dokumentu `ApplyBoldFont` zaškrtněte políčko a změnit následující vlastnosti.
 
-    |Vlastnost|Hodnota|
+    |Vlastnost|Value|
     |--------------|-----------|
     |**Název**|**applyItalicFont**|
     |**Text**|**Kurzíva**|
@@ -85,7 +85,7 @@ ms.locfileid: "56621510"
 
 7.  Přidat třetí zaškrtávací políčko níže dokumentu `ApplyItalicFont` zaškrtněte políčko a změnit následující vlastnosti.
 
-    |Vlastnost|Hodnota|
+    |Vlastnost|Value|
     |--------------|-----------|
     |**Název**|**applyUnderlineFont**|
     |**Text**|**Podtržení**|
@@ -155,7 +155,6 @@ ms.locfileid: "56621510"
 -   Tlačítko se používá k naplnění textové pole. Další informace najdete v tématu [názorný postup: Zobrazení textu v textovém poli v dokumentu s použitím tlačítka](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md).
 
 -   Pomocí přepínačů vyberte styly grafu. Další informace najdete v tématu [názorný postup: Aktualizace grafu v dokumentu s použitím přepínačů](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md).
-
 
 ## <a name="see-also"></a>Viz také:
 - [Návody pro aplikaci Word](../vsto/walkthroughs-using-word.md)

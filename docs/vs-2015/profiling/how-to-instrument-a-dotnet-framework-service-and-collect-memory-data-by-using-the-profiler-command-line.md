@@ -9,12 +9,12 @@ caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 45904463abf5d7cd420c938f58eed6f35a2831eb
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c9bc74cbd0d7fbcfec26f4bfe3f334623baf066b
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54766445"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653733"
 ---
 # <a name="how-to-instrument-a-net-framework-service-and-collect-memory-data-by-using-the-profiler-command-line"></a>Postupy: Instrumentace služby rozhraní .NET Framework a shromažďovat paměťová Data pomocí příkazového řádku Profiler
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -85,7 +85,6 @@ Toto téma popisuje způsob použití [!INCLUDE[vsprvs](../includes/vsprvs-md.md
    |         [/automark](../profiling/automark.md) **:** `Interval`          |                                                                                  Použití s **/wincounter** pouze. Určuje počet milisekund mezi událostmi sběru čítače výkonu Windows. Výchozí hodnota je 500 ms.                                                                                   |
    |       [/Events](../profiling/events-vsperfcmd.md) **:** `Config`        |                                                                                     Určuje událost trasování událostí pro Windows (ETW) má být shromážděn během profilování. Události trasování událostí pro Windows jsou shromážděny v samostatném (ETL) soubor.                                                                                     |
 
-
 8. V případě potřeby spusťte službu.  
 
 9. Připojení profileru ke službě. Zadejte:  
@@ -94,7 +93,7 @@ Toto téma popisuje způsob použití [!INCLUDE[vsprvs](../includes/vsprvs-md.md
 
     -   Zadejte ID procesu nebo názvem procesu služby. ID procesů a názvy všech spuštěných procesů lze zobrazit ve Správci úloh Windows.  
 
-## <a name="controlling-data-collection"></a>Řízení kolekce dat  
+## <a name="controlling-data-collection"></a>Řízení shromažďování dat  
  Zatímco je služba spuštěna, lze sběr dat řídit spouštěním či pozastavováním zápisu dat do souboru s **VSPerfCmd.exe** možnosti. Řízení sběru dat umožňuje shromažďovat data pro určitou část provádění programu, například spouštění či ukončování aplikace.  
 
 #### <a name="to-start-and-stop-data-collection"></a>Spuštění a zastavení shromažďování dat  

@@ -18,17 +18,16 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b4d3c47c5165ecf979146c928b97b5ff4f65e966
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 760df73b35f45b983740f6dda5e6fe58dc2493ae
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54833703"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658433"
 ---
 # <a name="wpf-targets-files"></a>WPF – soubory .Targets
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 [!INCLUDE[TLA#tla_winclient](../includes/tlasharptla-winclient-md.md)] rozšiřuje [!INCLUDE[TLA#tla_msbuild](../includes/tlasharptla-msbuild-md.md)] tak, že přidáte sadu [!INCLUDE[TLA2#tla_wpf](../includes/tla2sharptla-wpf-md.md)]-konkrétní úlohy, které jsou zkombinované do souboru .targets speciální **Microsoft.WinFX.targets**. Tento soubor kombinuje sadu [!INCLUDE[TLA2#tla_msbuild](../includes/tla2sharptla-msbuild-md.md)] úlohy, které jsou nutné k vytvoření [!INCLUDE[TLA2#tla_msbuild](../includes/tla2sharptla-msbuild-md.md)] projekt [!INCLUDE[TLA#tla_winclient](../includes/tlasharptla-winclient-md.md)].  
   
 ## <a name="see-also"></a>Viz také  

@@ -22,17 +22,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dbeaf44d767779281a3af4fe41f97a827a38c097
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: b25a86617fdead402a2bcc3e6d901868caad840e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54834580"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59663779"
 ---
 # <a name="create-lookup-tables-in-wpf-applications"></a>Vytváření vyhledávacích tabulek v aplikacích WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Termín *vyhledávací tabulka* (říká se jim *vazbu vyhledávání*) popisuje ovládací prvek, který se zobrazí informace z jedné datové tabulky na základě hodnoty pole cizího klíče v druhé tabulce. Můžete vytvořit vyhledávací tabulku přetažením hlavního uzlu nadřazené tabulky nebo v objektu **zdroje dat** okna do ovládacího prvku, který je již vázán na sloupec nebo vlastnosti v související podřízené tabulce.  
   
  Předpokládejme například tabulku `Orders` v prodejní databázi. Každý záznam v `Orders` obsahuje tabulku `CustomerID` , která označuje, který zákazník objednávku vystavil. `CustomerID` Je cizí klíč odkazující na záznam zákazníka v `Customers` tabulky. Při zobrazení seznamu objednávek z `Orders` tabulky, můžete zobrazovaný název skutečných zákazníků místo `CustomerID`. Protože název zákazníka se `Customers` tabulky, je potřeba vytvořit vyhledávací tabulky pro zobrazované jméno zákazníka. Používá tabulky vyhledávání `CustomerID` hodnotu `Orders` záznam se má přejít relace a vrátí jméno zákazníka.  

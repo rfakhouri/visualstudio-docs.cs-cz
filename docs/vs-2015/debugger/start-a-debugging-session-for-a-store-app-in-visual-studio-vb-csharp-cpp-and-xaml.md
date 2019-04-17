@@ -34,12 +34,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 129b94087b19ebed9f95ec29dd093f3c18e42e87
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1f5dced1acba79b0559db49f079e04f605263e0f
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54761771"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653473"
 ---
 # <a name="start-a-debugging-session-for-a-store-app-in-visual-studio-vb-c-c-and-xaml"></a>Spuštění ladicí relace pro Store app v sadě Visual Studio (VB, C#, C++ a XAML)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -256,13 +256,11 @@ Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "wi
 
 2. Ze seznamu vyberte jednu z následujících možností:
 
-
    |                    |                                                                                                                                                                                                                                                                                                                                                                                                           |
    |--------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
    | **Místní počítač**  |                                                                                                                Ladění aplikace v aktuální relaci na místním počítači. Zobrazit [aplikace Windows Store spustit na místním počítači](../debugger/run-windows-store-apps-on-the-local-machine.md).                                                                                                                 |
    |   **Simulátor**    | Ladění aplikace v simulátoru sady Visual Studio pro [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] aplikace. Simulátor není okno klasické pracovní plochy, která umožňuje ladit funkce zařízení, jako je například gesta dotykového ovládání a otočení obrazovky –, které nejsou k dispozici v místním počítači. Zobrazit [aplikace spustit Windows Store v simulátoru](../debugger/run-windows-store-apps-in-the-simulator.md). |
    | **Vzdálený počítač** |                          Ladění aplikací na zařízení, který je připojený k místním počítači v síti intranet nebo přímo pomocí kabelu Ethernet. Pro vzdálené ladění, vzdálené nástroje sady Visual Studio musí být nainstalovaná a spuštěná na vzdáleném zařízení. Zobrazit [aplikace Windows Store spustit ve vzdáleném počítači](../debugger/run-windows-store-apps-on-a-remote-machine.md).                           |
-
 
 3. Vyberte aplikaci ze **nainstalované balíčky aplikací** seznamu.
 

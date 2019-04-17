@@ -19,17 +19,16 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fedbee06d37ff62b4ccefc812f0c77064ba67025
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 2446320f1cbf0551fdfb1532df4fea23631b1131
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194506"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649261"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Integrace sady Visual Studio (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Visual Studio hostuje [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] k načtení a sestavení spravovaných projektů. Protože [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] je zodpovědné za projekt, téměř každý projekt ve [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] formát může být úspěšně použit v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], i když byl autorem jiný nástroj a má vlastní proces sestavení projektu.  
   
  Toto téma popisuje konkrétní aspekty [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]společnosti [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] hostování, který by měl zvážit při přizpůsobení projektů a souborů TARGETS, které chcete načíst a vytvořit v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Ty vám pomohou Ujistěte se, že [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] funkce jako IntelliSense a ladění práce pro váš vlastní projekt.  

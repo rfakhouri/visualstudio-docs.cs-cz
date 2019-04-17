@@ -24,17 +24,16 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 55452897212c0ce28ec44aa107de44b29ed9f80b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e2839cf3fdd780ffbf2c3cfb50e086996cfc865e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54778397"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59663294"
 ---
 # <a name="hierarchical-update"></a>Hierarchická aktualizace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Hierarchická aktualizace * se vztahuje k procesu ukládání aktualizovaná data (z datové sady s dvěma nebo více souvisejícími tabulkami) do databáze při zachování pravidla referenční integrity. *Referenční integritu* odkazuje na pravidla konzistence poskytované omezení v databázi, která řídí chování vkládání, aktualizaci a odstraňování souvisejících záznamů. Například je referenční integritu, který vynutí vytvoření záznam zákazníka předtím, než pro zákazníka objednávky, který se má vytvořit.  Další informace o relacích v datových sadách najdete v tématu [vztahy v datových sadách](../data-tools/relationships-in-datasets.md)  
   
  Hierarchická aktualizace funkce používá `TableAdapterManager` ke správě `TableAdapter`ve typové datové sady. `TableAdapterManager` Komponenta [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]– vygeneruje třídy, takže není součástí [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. Při přetažení tabulky z okna zdrojů dat na formuláři Windows nebo na stránce WPF, Visual Studio přidá proměnnou typu TableAdapterManager do formuláře nebo stránky a vidět ji v Návrháři v panelu komponent. Podrobné informace o `TableAdapterManager` třídy, najdete v části odkaz TableAdapterManager [TableAdapterManager – přehled](http://msdn.microsoft.com/library/33076d42-6b41-491a-ac11-6c6339aea650).  

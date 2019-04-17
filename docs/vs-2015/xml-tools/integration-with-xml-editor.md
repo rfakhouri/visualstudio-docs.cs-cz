@@ -9,17 +9,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f3024f9a8b33f27797c186b06b7ce89a7c18d844
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 350b97385ab03daca80cc86d4f672dfec07222aa
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54802700"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654019"
 ---
 # <a name="integration-with-xml-editor"></a>Integrace s editorem XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Návrhář schémat XML je integrovaná v editoru XML. Pokud upravíte soubor XSD v editoru XML, změna se projeví ve [Průzkumníka schémat XML](../xml-tools/xml-schema-explorer.md). Pokud máte [zobrazení grafu](../xml-tools/graph-view.md) nebo [zobrazení modelu obsahu](../xml-tools/content-model-view.md) otevřete, změnu se také projeví existuje. Můžete procházet Průzkumníka schémat XML a Editor souborů XML následujícími způsoby:  
   
 - V editoru jazyka XML, klikněte pravým tlačítkem na uzel a vyberte **zobrazit v Průzkumníkovi schémat XML**.  

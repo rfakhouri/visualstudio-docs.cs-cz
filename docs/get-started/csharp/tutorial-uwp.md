@@ -14,19 +14,19 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 0257b29d327610b6b301d3c368e727a0912ab691
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: cbb5eeaaa69852b43d2189c4ca9d308cff75ba98
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58856417"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59656155"
 ---
 # <a name="tutorial-create-your-first-universal-windows-platform-application-in-visual-studio-with-xaml-and-c35"></a>Kurz: Vytvoření první aplikace pro univerzální platformu Windows v sadě Visual Studio pomocí XAML a C&#35;
 
 V tomto úvodu do integrovaného vývojového prostředí (IDE) sady Visual Studio vytvoříte aplikaci "Hello World", který běží na všechna zařízení s Windows 10. V takovém případě budete používat šablonu projektu univerzální platformu Windows (UPW), Extensible Application Markup Language (XAML) a C# programovací jazyk.
 
 ::: moniker range="vs-2017"
-Pokud jste ještě nenainstalovali aplikaci Visual Studio, přejděte [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) stránku a nainstalovat zdarma.
+Pokud jste ještě nenainstalovali aplikaci Visual Studio, přejděte [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) stránku a nainstalovat zdarma.
 ::: moniker-end
 ::: moniker range="vs-2019"
 Pokud jste ještě nenainstalovali aplikaci Visual Studio, přejděte [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) stránku a nainstalovat zdarma.

@@ -11,14 +11,14 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ab37b3766c61c63ce99c13bb375d1bdd90d237d2
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 0a9c13a1b1bb9c8240faeaaf8d67b0b8df259227
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599646"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649248"
 ---
-# <a name="test-area-5-change-source-control"></a>Testovací oblast 5: Změnit správu zdrojového kódu
+# <a name="test-area-5-change-source-control"></a>Testovací oblast 5: Změna správy zdrojového kódu
 Tento modul plug-in testu oblast správy zdrojového kódu obsahuje informace o změnou správy zdrojových kódů prostřednictvím **změnit správu zdrojových kódů** příkazu.
 
  **Změna správy zdrojového kódu** příkaz poskytuje čtyři základní funkce pro uživatele:
@@ -45,7 +45,6 @@ Tento modul plug-in testu oblast správy zdrojového kódu obsahuje informace o 
 
 ### <a name="case-5a-bind"></a>Případu 5a: Vytvoření vazby
  Vazba umožňuje uživateli přidat informace o řízení zdrojového kódu pro vybrané projekty a řešení. Obvykle bude uživatel vyzván k identifikaci projektu ve správě zdrojového kódu, ke kterému jde přidat. Uživatele nelze vytvořit nový projekt ve správě zdrojového kódu jako součást této operace (kontrastu u přidat do správy zdrojového kódu).
-
 
 | Akce | Testovací kroky | Chcete-li ověřit očekávané výsledky |
 | - | - | - |
