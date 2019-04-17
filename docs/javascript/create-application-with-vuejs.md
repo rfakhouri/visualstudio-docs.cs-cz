@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 28194f007066c1fd39e3a26dd4a8c0e99e118059
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: 451d7a735116d7b181263eebe76751fd49900ce3
+ms.sourcegitcommit: 847d192013eb8225776243045c9b5a53d1ba4a59
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58857226"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "59584412"
 ---
 # <a name="create-a-vuejs-application-using-nodejs-tools-for-visual-studio"></a>Vytvoření aplikace Vue.js pomocí Node.js Tools for Visual Studio
 
@@ -96,6 +96,9 @@ Chcete-li nainstalovat modul npm vue rozhraní příkazového řádku, otevřete
 1. Přejděte na příkazovém řádku a přejděte do kořenové složky projektu.
 
 1. Typ `vue init webpack ClientApp` a postupujte podle kroků po zobrazení výzvy na další otázky.
+
+    > [!NOTE]
+    > Pro *.vue* soubory, budete muset použít Webpacku nebo podobné architekturu s zavaděč k provedení převodu. TypeScript a sady Visual Studio není známo, jak chcete-li zkompilovat *.vue* soubory. Totéž platí pro sdružování; TypeScript nebude vědět, jak převést ES2015 moduly (to znamená, `import` a `export` příkazy) do jedné koncový *js* soubor načíst v prohlížeči. Webpacku znovu, je nejlepší volbou. Centrum umožňující prosazovat tento proces z v rámci sady Visual Studio pomocí nástroje MSBuild, musíte spustit ze šablony sady Visual Studio. V současné době neexistuje žádná šablona technologie ASP.NET pro Vue.js vývoj in-the-box.
 
 #### <a name="modify-the-webpack-configuration-to-output-the-built-files-to-wwwroot"></a>Upravit konfiguraci webpacku pro výstupní soubory sestavení do wwwroot
 

@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 21fafd202fd89666cedb1132d9647f2f1d95f4b9
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: df01776b5a7f2437c704c2b389c7d0929be5901c
+ms.sourcegitcommit: 847d192013eb8225776243045c9b5a53d1ba4a59
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56685050"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "59584516"
 ---
 # <a name="about-the-registers-window-in-visual-studio-c-c-visual-basic-f"></a>Informace o okně registr v sadě Visual Studio (C#, C++, Visual Basic, F#)
 
@@ -47,7 +47,23 @@ ms.locfileid: "56685050"
  **Zaregistruje** okno umožňuje provádět více než jen zobrazení obsahu registru. Když jste v režimu pozastavení v nativním kódu, můžete kliknout na obsah registru a upravit její hodnotu. To je něco, co byste měli dělat náhodně. Pokud nerozumíte do registru, který upravujete a data, která obsahuje výsledek nepozorný úpravy by mohla být selhání program nebo jiné nežádoucí důsledky. Bohužel podrobné vysvětlení registr sady různých procesorů Intel a kompatibilní s verzí Intel dalece přesahuje rozsah Tento stručný úvod.
 
 ## <a name="register-groups"></a>Registrovat skupiny
- Pro přehlednost, **zaregistruje** okno uspořádá registry do skupiny. Pokud kliknete pravým tlačítkem **zaregistruje** okně se zobrazí místní nabídku, který obsahuje seznam skupin, které můžete zobrazit nebo skrýt podle svých potřeb.
+
+Pro přehlednost, **zaregistruje** okno uspořádá registry do skupiny. Pokud kliknete pravým tlačítkem **zaregistruje** okně se zobrazí místní nabídku, který obsahuje seznam skupin, které můžete zobrazit nebo skrýt podle svých potřeb.
+
+## <a name="register-flags"></a>Zaregistrujte příznaky
+
+Pro procesory Intel x86, může se zobrazit následující příznaky v **zaregistruje** okna. Během relace ladění můžete také upravit tyto příznaky.
+
+|Příznak|Nastavit hodnotu|
+|-|-|
+|přetečení|OV = 1|
+|Směr|UP = 1|
+|Přerušení|EI = 1|
+|přihlášení|PL = 1|
+|Nula|ZR = 1|
+|Pomocná provádět|AC = 1|
+|Parita|PE = 1|
+|Provádění|CY = 1|
 
 ## <a name="see-also"></a>Viz také
 - [Postupy: Použití okna Registry](../debugger/how-to-use-the-registers-window.md)

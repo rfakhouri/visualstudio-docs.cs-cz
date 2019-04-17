@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d263344b84ad93cc582d05112c08d2bad1aa998
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 1ed6be5b3beb394f4e9486ecdca973aa28c97f92
+ms.sourcegitcommit: 847d192013eb8225776243045c9b5a53d1ba4a59
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56632443"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "59584321"
 ---
 # <a name="special-characters-to-escape"></a>Speciální řídicí znaky
 Speciální znaky musí být uvozena pouze v případě, že mají zvláštní význam v kontextu, ve kterém se používají. Například hvězdičku (*) je speciální znak pouze v atributech definici položky "Zahrnout" a "Vyloučit", nebo ve volání <xref:Microsoft.Build.Tasks.CreateItem>. Ve všech ostatních případech hvězdička je považován za literál hvězdičku. Zatímco nepotřebujete řídicí hvězdičky z obou stran kdekoli v souborech projektu, učiníte tak neškodí.
@@ -37,7 +37,7 @@ Speciální znaky musí být uvozena pouze v případě, že mají zvláštní v
 |@|Znak, slouží jako odkaz na seznamy položek.|
 |(|Levou (otevírací), použít v seznamech.|
 |)|Zavřít závorky používané seznamy.|
-|`| Apostrof (nebo značky zaškrtnutí), použít v podmínkách a jiných výrazech.|
+|\`| Apostrof (nebo značky zaškrtnutí), použít v podmínkách a jiných výrazech.|
 |;|Středník, oddělovač seznamu.|
 |?|Otazník, zástupný znak při popisu specifikace souboru v části zahrnout/vyloučit položky.|
 |*|Hvězdička, zástupný znak při popisu specifikace souboru v části zahrnout/vyloučit položky.|

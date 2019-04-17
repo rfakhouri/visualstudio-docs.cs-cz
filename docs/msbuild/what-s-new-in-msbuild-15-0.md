@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: 0353249712fefc0052a27469b075c52b9fdd5d06
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: 718ef14fda76df87dc4627dc518e993058896471
+ms.sourcegitcommit: 847d192013eb8225776243045c9b5a53d1ba4a59
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57982906"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "59584295"
 ---
 # <a name="whats-new-in-msbuild-15"></a>Co je nového v MSBuild 15
 
@@ -24,7 +24,7 @@ Nástroj MSBuild je nyní k dispozici jako součást [.NET Core SDK](https://www
 
  Nástroj MSBuild je nyní nainstalován do složky pod jednotlivými verzemi sady Visual Studio. Například *C:\Program Files (x86) \Microsoft Visual Studio\2017\Enterprise\MSBuild*. Následující modul Powershellu můžete použít také k vyhledání nástroje MSBuild: [vssetup.powershell](https://github.com/Microsoft/vssetup.powershell).
 
- MSBuild je již nainstalována v globální mezipaměti sestavení. K odkazování MSBuild prostřednictvím kódu programu, používaly balíčky NuGet.
+ MSBuild je již nainstalována v globální mezipaměti sestavení. K odkazování MSBuild prostřednictvím kódu programu, používaly balíčky NuGet. Další informace najdete v tématu [aktualizuje existující aplikaci pro 15.0 nástroje MSBuild](../msbuild/updating-an-existing-application.md).
 
 ## <a name="changed-properties"></a>Změněné vlastnosti
 

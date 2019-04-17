@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2248c5e8c974d4445db37e265725bcee60d3a9a4
-ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
+ms.openlocfilehash: ae318a4fbfe7e452ab995ad53d961d288c0cbcf5
+ms.sourcegitcommit: 847d192013eb8225776243045c9b5a53d1ba4a59
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "58897735"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "59584399"
 ---
 # <a name="walkthrough-use-msbuild"></a>Návod: Použití nástroje MSBuild
 
@@ -416,7 +416,7 @@ Chcete-li změnit oddělovač typ položky, použijte následující syntaxi, kd
  Přidá všechny soubory s příponou souboru *.jpeg* v *imagí* složku pro typ položky fotografie, zatímco
 
 ```xml
-<Photos Include="images\**.jpeg" />
+<Photos Include="images\**\*.jpeg" />
 ```
 
  Přidá všechny soubory s příponou souboru *.jpeg* v *imagí* složka a všechny její podsložky, typu položky fotografie. Další příklady najdete v tématu [jak: Vyberte soubory, které chcete sestavit](../msbuild/how-to-select-the-files-to-build.md).

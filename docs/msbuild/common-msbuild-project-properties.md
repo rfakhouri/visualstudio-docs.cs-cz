@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 103503b5f35d335867b4f5a9b0b76d7c3e6ed20e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a0ecdd051ecc44cb3205ca8793653bf31a63abd2
+ms.sourcegitcommit: 847d192013eb8225776243045c9b5a53d1ba4a59
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56610603"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "59584555"
 ---
 # <a name="common-msbuild-project-properties"></a>Obecné vlastnosti projektu nástroje MSBuild
 V následující tabulce je často používané seznamy vlastností, které jsou definovány v souborech projektu sady Visual Studio nebo součástí *.targets* soubory, které poskytuje nástroj MSBuild.
@@ -54,7 +54,7 @@ V následující tabulce je často používané seznamy vlastností, které jsou
 | CscToolPath | Cesta k *csc.exe*, [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] kompilátoru. |
 | CustomBeforeMicrosoftCommonTargets | Název souboru projektu nebo soubor cílů, které mají být importovány automaticky před importem společných cílů. |
 | DebugSymbols | Logická hodnota, která určuje, zda jsou symboly generovány sestavením.<br /><br /> Nastavení **- p: DebugSymbols = false** na příkazovém řádku zakáže generování databázi programu (*PDB*) soubory symbolů. |
-| DebugType | Definuje úroveň ladění informací, které mají být vygenerovány. Platné hodnoty jsou "full", "pdbonly" a "none". |
+| DebugType | Definuje úroveň ladění informací, které mají být vygenerovány. Platné hodnoty jsou "full", "pdbonly" "přenosné", "embedded" a "none". |
 | DefineConstants | Definuje podmíněné konstanty kompilátoru. Dvojice symbol/hodnota jsou odděleny středníkem a jsou zadány pomocí následující syntaxe:<br /><br /> *symbol1 = value1; symbol2 = hodnota2*<br /><br /> Vlastnost je ekvivalentní `/define` přepínač kompilátoru. |
 | DefineDebug | Logická hodnota, která určuje, zda má být definována konstanta DEBUG. |
 | DefineTrace | Logická hodnota, která určuje, zda má být definována konstanta TRACE. |
@@ -91,7 +91,7 @@ V následující tabulce je často používané seznamy vlastností, které jsou
 | ProduceReferenceAssembly | Logická hodnota, která pokud je nastavena na `true` umožňuje produkce [odkazovat na sestavení](https://github.com/dotnet/roslyn/blob/master/docs/features/refout.md) pro aktuální sestavení. `Deterministic` by měl být `true` při použití této funkce. Tato vlastnost odpovídá `/refout` přepnout z *vbc.exe* a *csc.exe* kompilátory. |
 | ProduceOnlyReferenceAssembly | Logická hodnota, která dává pokyn kompilátoru generovat referenční sestavení, spíše než zkompilovaný kód. Nelze použít ve spojení s `ProduceReferenceAssembly`.  Tato vlastnost odpovídá `/refonly` přepnout z *vbc.exe* a *csc.exe* kompilátory. |
 | RemoveIntegerChecks | Logická hodnota určující, zda chcete zakázat chyby kontroly přetečení celých čísel. Výchozí hodnota je `false`. Tato vlastnost je ekvivalentní `/removeintchecks` přepnout z *vbc.exe* kompilátoru. |
-| SGenUseProxyTypes | Logická hodnota, která určuje, zda typy proxy měly být generovány pomocí *SGen.exe*.<br /><br /> Cíl SGen používá tuto vlastnost pro nastavení příznaku UseProxyTypes. Výchozí hodnota této vlastnosti na hodnotu true a neexistuje žádné uživatelské rozhraní pro toto nastavení změnit. Generovat sestavení serializace pro typy bez, přidejte do souboru projektu tuto vlastnost a nastavte ji na hodnotu false před importem *cílů Microsoft.Common.Targets* nebo *webových*. |
+| SGenUseProxyTypes | Logická hodnota, která určuje, zda typy proxy měly být generovány pomocí *SGen.exe*.<br /><br /> Cíl SGen používá tuto vlastnost pro nastavení příznaku UseProxyTypes. Výchozí hodnota této vlastnosti na hodnotu true a neexistuje žádné uživatelské rozhraní pro toto nastavení změnit. Generovat sestavení serializace pro typy bez, přidejte do souboru projektu tuto vlastnost a nastavte ji na hodnotu false před importem *cílů Microsoft.Common.Targets* nebo  *C#/VB.targets*. |
 | SGenToolPath | Volitelný nástroj pro cestu, která označuje, kde můžete získat *SGen.exe* při aktuální verzi *SGen.exe* je přepsána. |
 | StartupObject | Určuje třídu nebo modul, který obsahuje metodu Main nebo Sub Main proceduru. Tato vlastnost je ekvivalentní `/main` přepínač kompilátoru. |
 | ProcessorArchitecture | Architektura procesoru, který se používá, když jsou překládány odkazy na sestavení. Platné hodnoty jsou "msil", "x86," "amd64" nebo "ia64". |

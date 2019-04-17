@@ -77,3 +77,4 @@
 # [Odstraňování potíží](/visualstudio/mac/troubleshooting)
 ## [Program Zlepšování softwaru a služeb na základě zkušeností uživatelů](/visualstudio/mac/visual-studio-experience-improvement-program)
 ## [Nahlášení problému](/visualstudio/mac/report-a-problem)
+## [Odstraňování potíží: Aktualizátor obsahuje chyby načítání informací](updater-troubleshooting.md)

@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dfc0482152b3da0b52950ab6389cc9f7d9e83e3a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: afcada407060af2072e3cf1c30e86153762890b5
+ms.sourcegitcommit: 847d192013eb8225776243045c9b5a53d1ba4a59
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54974276"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "59584386"
 ---
 # <a name="view-register-values-in-the-registers-window-c-c-visual-basic-f"></a>Zobrazení hodnoty registru v okně registr (C#, C++, Visual Basic, F#)
 
@@ -41,6 +41,8 @@ ms.locfileid: "54974276"
 Během ladění, zaregistrujte změnu hodnoty jako kód spustí ve vaší aplikaci. Hodnoty, které se změnily nedávno zobrazí červeně **zaregistruje** okna.
 
 K odebrání nepotřebných prvků, **zaregistruje** okno uspořádá registry do skupiny, které se liší podle platformy a procesor typu. Můžete zobrazit nebo skrytí nabídky registrovat skupiny. Další informace najdete v tématu [jak: Zobrazení a skrytí nabídky registrovat skupiny](../debugger/how-to-display-and-hide-register-groups.md).
+
+Informace o příznaky se zobrazí **zaregistruje** okno, naleznete v tématu [o the zaregistruje okno](../debugger/debugging-basics-registers-window.md)
 
 Můžete upravit hodnot registru. Další informace najdete v tématu [jak: Úprava hodnoty registru](../debugger/how-to-edit-a-register-value.md).
 

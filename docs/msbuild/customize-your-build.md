@@ -11,14 +11,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e14cfe5947356c68df137144556e01b94673b145
-ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
+ms.openlocfilehash: da7b755c5b0ec72a9e1b906bdc1cd27a6dca7c0a
+ms.sourcegitcommit: 847d192013eb8225776243045c9b5a53d1ba4a59
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59537608"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "59584308"
 ---
-# <a name="customize-your-build-c-f-visual-basic"></a>Přizpůsobení sestavení (C#, F#, Visual Basic)
+# <a name="customize-your-build"></a>Přizpůsobení sestavení
 
 Projekty MSBuild, které používají standardní proces sestavení (import *Microsoft.Common.props* a *cílů Microsoft.Common.targets*) mají několik háky rozšíření, které můžete použít k přizpůsobení sestavení proces.
 
