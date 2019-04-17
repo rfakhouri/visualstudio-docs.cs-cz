@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: da49cd81ea309df2d8e2bd0b4c41c28a84564fa8
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: fd8928f204da4a3af15918a598df6241cd39df85
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526087"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665672"
 ---
 # <a name="create-a-visual-map-of-the-call-stack-while-debugging-c-visual-basic-c-javascript"></a>Vytvoření vizuální mapy zásobníku volání při ladění (C#, Visual Basic, C++, JavaScript)
 
@@ -45,7 +45,7 @@ Návod podívejte se na toto video: [Video: Vizuální ladění díky integraci 
 Podrobnosti o příkazů a akcí můžete pomocí map kódu, naleznete v tématu [Procházet a uspořádání map kódu](../modeling/browse-and-rearrange-code-maps.md).
 
 >[!IMPORTANT]
->Můžete vytvořit pouze v mapy kódu [edici Visual Studio Enterprise](https://visualstudio.microsoft.com/downloads/).
+>Můžete vytvořit pouze v mapy kódu [edici Visual Studio Enterprise](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019).
 
 Tady je rychlý pohled na mapě kódu:
 

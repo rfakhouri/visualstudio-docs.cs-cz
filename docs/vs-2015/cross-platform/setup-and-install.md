@@ -6,17 +6,16 @@ ms.assetid: 2cfcad00-352c-4161-814c-f5ae32d8ada8
 caps.latest.revision: 19
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 26733c576a8bfd260368697ba0791a665afa46ff
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6f0282e94d252040f05091ddb25c17857c3a74b6
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54781706"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59663856"
 ---
 # <a name="setup-and-install"></a>Nastavení a instalace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 K sestavení nativních aplikací pro iOS, Android a Windows aplikace z common jazyka C# / základu kódu .NET pomocí Xamarinu, budete potřebovat následující:  
   
 - Pro práci s Windows a aplikace pro Android: vývojovém počítači Windows pomocí sady Visual Studio 2015 a Xamarin 4 nainstalovaný (viz Poznámka: níže). (Můžete také použít Visual Studio 2013 podle pokynů pro [přímé instalace Xamarin](https://developer.xamarin.com/guides/cross-platform/getting_started/requirements/#install) (xamarin.com).)   

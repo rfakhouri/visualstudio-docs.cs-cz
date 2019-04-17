@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f7a9fdb7d6f17df009920e1677c615cb41df7f6c
-ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
+ms.openlocfilehash: 9ac716c3268709cdf168a379b2df6cd40b727f51
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59504299"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59662137"
 ---
 # <a name="features-of-visual-studio"></a>Funkce sady Visual Studio
 
@@ -24,7 +24,7 @@ Modulární instalačního programu sady Visual Studio vám umožní vybrat a na
 
 ::: moniker range="vs-2017"
 
-Pokud jste ještě nenainstalovali aplikaci Visual Studio, přejděte [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) stránku a nainstalovat zdarma.
+Pokud jste ještě nenainstalovali aplikaci Visual Studio, přejděte [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) stránku a nainstalovat zdarma.
 
 ::: moniker-end
 
@@ -139,5 +139,5 @@ Další informace o rozšíření sady Visual Studio najdete v tématu [rozší�
 ## <a name="see-also"></a>Viz také:
 
 - [Visual Studio IDE – přehled](../get-started/visual-studio-ide.md)
-- [Novinky v sadě Visual Studio 2017](../ide/whats-new-visual-studio-2017.md)
-- [Novinky v sadě Visual Studio 2019](../ide/whats-new-visual-studio-2019.md)
+- [Co je nového v sadě Visual Studio 2017](../ide/whats-new-visual-studio-2017.md)
+- [Co je nového ve Visual Studio 2019](../ide/whats-new-visual-studio-2019.md)
