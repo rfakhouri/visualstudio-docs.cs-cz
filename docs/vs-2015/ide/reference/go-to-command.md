@@ -14,17 +14,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 50f91c4bdb17612d56534290a7b83b7df1d771c9
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 010d2c395d77be590b3d8d3bc26fc83aaa63adfa
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54790017"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59660603"
 ---
 # <a name="go-to-command"></a>Přejít na – příkaz
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Přesune kurzor na zadaný řádek.  
   
 ## <a name="syntax"></a>Syntaxe  

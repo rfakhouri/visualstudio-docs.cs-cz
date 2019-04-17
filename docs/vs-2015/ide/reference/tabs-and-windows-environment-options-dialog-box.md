@@ -11,17 +11,16 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2f8010cca68d6e79f6faa19f138e816e339ea699
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 6d1a6f33bcecbcd607422741442120471e313791
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54803207"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59660252"
 ---
 # <a name="tabs-and-windows-environment-options-dialog-box"></a>Dialogové okno Karty a okna, Prostředí, Možnosti
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Pomocí této stránky lze nastavit možnosti pro jak s kartami windows chovat do podokna editoru a chování oken nástrojů. Další informace najdete v tématu [jak: Rozvržení a dokování Windows](../../misc/how-to-arrange-and-dock-windows.md)  
   
 ## <a name="see-also"></a>Viz také  

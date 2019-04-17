@@ -1,5 +1,5 @@
 ---
-title: 'Průvodce: Vytvoření datové služby WCF s WPF a Entity Framework | Dokumentace Microsoftu'
+title: 'Návod: Vytvoření datové služby WCF s WPF a Entity Framework | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-data-tools
@@ -14,17 +14,16 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2be6c030cf8602f053472971a98508043b253e43
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 67b3034ee1d651289c167b894b0417d11b5995e8
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54777849"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653083"
 ---
-# <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>Průvodce: Vytvoření datové služby WCF s WPF a Entity Framework
+# <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>Návod: Vytvoření datové služby WCF s WPF a Entity Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Tento návod ukazuje, jak vytvořit jednoduchou [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)] , která je hostována v [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] webovou aplikaci a pak k němu přístup z aplikace Windows Forms.  
   
  V tomto návodu se dozvíte, jak:  

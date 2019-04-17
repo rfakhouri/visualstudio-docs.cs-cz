@@ -16,17 +16,16 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 67a57953dc0583b105741be358b19a74897c308c
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 847fa53acad63cec151222521ed8f85090c52080
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54772583"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59660525"
 ---
 # <a name="msbuild-project-file-schema-reference"></a>Referenční dokumentace schématu souboru projektu nástroje MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Obsahuje všechny tabulky [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] prvky schématu XML s jejich dostupné atributy a podřízené prvky.  
   
  [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] soubory projektu používá dáte pokyn, aby modul sestavení co k sestavení a jak ji sestavit. [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] soubory projektu jsou soubory XML, které se řídí [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] schématu XML. Tato část popisuje soubor definice (XSD) schématu XML pro [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)].  
@@ -48,11 +47,11 @@ Obsahuje všechny tabulky [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md
 |[Output – element (MSBuild)](../msbuild/output-element-msbuild.md)|--|Podmínka<br /><br /> ItemName<br /><br /> Vlastnost PropertyName<br /><br /> Parametr úkolu|  
 |[Parameter – element](../msbuild/parameter-element.md)|--|Výstup<br /><br /> Zda položka ParameterType<br /><br /> Požadováno|  
 |[ParameterGroup – element](../msbuild/parametergroup-element.md)|*Parametr*|--|  
-|[Project – element (MSBuild)](../msbuild/project-element-msbuild.md)|Zvolte<br /><br /> Import<br /><br /> ItemGroup<br /><br /> ProjectExtensions<br /><br /> PropertyGroup<br /><br /> Target<br /><br /> Usingtask –|Defaulttargets –<br /><br /> InitialTargets<br /><br /> ToolsVersion<br /><br /> TreatAsLocalProperty<br /><br /> atribut xmlns|  
+|[Project – element (MSBuild)](../msbuild/project-element-msbuild.md)|Zvolte<br /><br /> Import<br /><br /> ItemGroup<br /><br /> ProjectExtensions<br /><br /> PropertyGroup<br /><br /> Target<br /><br /> Usingtask –|Defaulttargets –<br /><br /> InitialTargets<br /><br /> ToolsVersion<br /><br /> TreatAsLocalProperty<br /><br /> xmlns|  
 |[ProjectExtensions – element (MSBuild)](../msbuild/projectextensions-element-msbuild.md)|--|--|  
 |[Property – element (MSBuild)](../msbuild/property-element-msbuild.md)|--|Podmínka|  
 |[PropertyGroup – element (MSBuild)](../msbuild/propertygroup-element-msbuild.md)|*Vlastnost*|Podmínka|  
-|[Target – element (MSBuild)](../msbuild/target-element-msbuild.md)|Onerror –<br /><br /> *Úloha*|AfterTargets<br /><br /> BeforeTargets<br /><br /> Podmínka<br /><br /> DependsOnTargets<br /><br /> Vstupy<br /><br /> KeepDuplicateOutputs<br /><br /> Název<br /><br /> Výstupy<br /><br /> Vrací|  
+|[Target – element (MSBuild)](../msbuild/target-element-msbuild.md)|Onerror –<br /><br /> *Úloha*|AfterTargets<br /><br /> BeforeTargets<br /><br /> Podmínka<br /><br /> DependsOnTargets<br /><br /> Vstupy<br /><br /> KeepDuplicateOutputs<br /><br /> Name<br /><br /> Výstupy<br /><br /> Vrací|  
 |[Task – element (MSBuild)](../msbuild/task-element-msbuild.md)|Výstup|Podmínka<br /><br /> ContinueOnError –<br /><br /> *Parametr*|  
 |[TaskBody – element (MSBuild)](../msbuild/taskbody-element-msbuild.md)|*Data*|Vyhodnocení|  
 |[UsingTask – element (MSBuild)](../msbuild/usingtask-element-msbuild.md)|Parametergroup –<br /><br /> Taskbody –|AssemblyFile<br /><br /> AssemblyName<br /><br /> Podmínka<br /><br /> TaskFactory<br /><br /> TaskName|  

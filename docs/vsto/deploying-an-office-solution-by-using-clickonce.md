@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 90f7fe4d3e4b316f48aed46c40b3d24e0969a536
-ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
+ms.openlocfilehash: 7eb266eda25198f6d270ebcf48086141a73dcb9c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59504429"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665451"
 ---
 # <a name="deploy-an-office-solution-by-using-clickonce"></a>Nasazení řešení Office s použitím technologie ClickOnce
   Vaše řešení pro Office v méně kroků můžete nasadit, když použijete ClickOnce. Když publikujete aktualizace, vaše řešení je automaticky rozpozná a nainstaluje. Technologie ClickOnce ale vyžaduje, aby bylo řešení nainstalováno zvlášť pro každého uživatele počítače. Proto byste měli zvážit použití Instalační služby systému Windows (*MSI*) je-li více než jeden uživatel vaše řešení bude používat ve stejném počítači.
@@ -27,13 +27,13 @@ ms.locfileid: "59504429"
 
 - [Publikování řešení](#Publish)
 
-- [Rozhodnutí o způsobu zajištění důvěryhodnosti řešení](#Trust)
+- [Rozhodnutí o způsobu zajištění důvěryhodnosti řešení](#Trust)
 
-- [Pomoc uživatelům s instalací řešení](#Helping)
+- [Pomoc uživatelům s instalací řešení](#Helping)
 
 - [Umístění dokumentu řešení do počítače koncového uživatele (pouze přizpůsobení na úrovni dokumentu)](#Put)
 
-- [Umístění dokumentu řešení na server, na kterém je spuštěna služba SharePoint (pouze přizpůsobení na úrovni dokumentu)](#SharePoint)
+- [Umístění dokumentu řešení na server, na kterém běží SharePoint (pouze přizpůsobení na úrovni dokumentu)](#SharePoint)
 
 - [Vytvoření vlastního instalačního programu](#Custom)
 
@@ -91,9 +91,9 @@ ms.locfileid: "59504429"
 
     |Možnost|Popis|
     |------------|-----------------|
-    |**Stáhnout nezbytné součásti z webu dodavatele součástí**|Uživatel bude vyzván, aby od dodavatele stáhl a nainstaloval nezbytné součásti.|
-    |**Stáhnout součásti ze stejného umístění jako umístění mé aplikace**|Požadovaný software bude nainstalován spolu s řešením. Pokud zvolíte tuto možnost, sada Visual Studio za vás zkopíruje všechny požadované balíčky do umístění pro publikování. Tato možnost bude fungovat, pouze pokud jsou balíčky požadovaných součástí ve vývojovém počítači.|
-    |**Stáhnout nezbytné součásti z následujícího umístění**|Sada Visual Studio zkopíruje všechny balíčky požadovaných součástí do zadaného umístění a nainstaluje je společně s řešením.|
+    |**Stáhnout nezbytné součásti z webu dodavatele součástí**|Uživatel bude vyzván, aby od dodavatele stáhl a nainstaloval nezbytné součásti.|
+    |**Stáhnout součásti ze stejného umístění, jako je má aplikace**|Požadovaný software bude nainstalován spolu s řešením. Pokud zvolíte tuto možnost, sada Visual Studio za vás zkopíruje všechny požadované balíčky do umístění pro publikování. Tato možnost bude fungovat, pouze pokud jsou balíčky požadovaných součástí ve vývojovém počítači.|
+    |**Stáhnout nezbytné součásti z následujícího umístění**|Sada Visual Studio zkopíruje všechny balíčky požadovaných součástí do zadaného umístění a nainstaluje je společně s řešením.|
 
      Zobrazit [dialogové okno požadavky](../ide/reference/prerequisites-dialog-box.md).
 
@@ -345,7 +345,6 @@ ms.locfileid: "59504429"
  Pokud nástroj není v dané oblasti, můžete použít **nenachází Runtime Setup\v4\InstallerPath** nebo **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VSTO Runtime Setup\v4 \InstallerPath** najít cestu k tomuto klíči registru.
 
  Můžete použít následující parametry s *VSTOinstaller.exe*.
-
 
 | Parametr | Definice |
 |------------------| - |

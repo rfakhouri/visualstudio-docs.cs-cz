@@ -7,17 +7,16 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Zjistěte, jak chcete předplatné aktivovat, Test Professional Parasoft Virtualize/SOA součástí vašeho předplatného sady Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: 89b079f9f797db58eb0afc887a70cdc78c48d886
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: fed9e66f521f27b140c2f11fc2642ffd1ea380c6
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56844110"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665308"
 ---
 # <a name="parasoft-virtualizesoatest-professional-desktop-in-visual-studio-subscriptions"></a>Parasoft Virtualize/SOAtest Professional Desktop v předplatných sady Visual Studio
 
 Testujte dříve a častěji.  Simulujte a testujte chování není k dispozici vyvíjejícím aplikace a systémy.  Vaše výhoda zahrnuje bezplatný šestiměsíčního předplatného.  Na konci šestiměsíčního předplatného budete mít nárok na 25 % slevu z ceny ročního předplatného.
-
 
 ## <a name="activation-steps"></a>Postup aktivace
 
@@ -30,7 +29,6 @@ Testujte dříve a častěji.  Simulujte a testujte chování není k dispozici 
 3. Budete přesměrováni na web Parasoft, kde vytvoříte účet.  Stačí zadat kontaktní informace a klikněte na tlačítko **odeslat**.
    > [!div class="mx-imgBorder"]
    > ![Parasoft Benefit Create Account](_img/vs-parasoft/vs-parasoft-account-cropped.png)
-
 
 4. Po vytvoření účtu, zobrazí se oznámení, že jste poslal e-mail s pokyny ke stažení.  (Nezapomeňte zkontrolovat spamech nebo nevyžádané poště, pokud se e-mailu v doručené poště).
 
@@ -83,10 +81,8 @@ Testujte dříve a častěji.  Simulujte a testujte chování není k dispozici 
 
 <sup>1</sup>*zahrnuje: Microsoft Partner Network (Enterprise).  Vyloučí:  Neprodejné (NFR) Visual Studio Industry Partner (VSIP), FTE, MCT Software & Services pro vývojáře, BizSpark, Imagine, nejcennější Professional (MVP) Regional Director (RD).  MCT Software & Services.*
 
-
 > [!NOTE]
 > Microsoft už nenabízí Visual Studio Professional ročních předplatných a předplatných Visual Studio Enterprise roční Cloudová předplatná. Nebude bez nutnosti změn stávajících zkušeností zákazníků a možnost obnovit, zvýšit, snížit nebo zrušit předplatná. Nové nepodnikovým zákazníkům přejít na [ https://visualstudio.microsoft.com/vs/pricing/ ](https://visualstudio.microsoft.com/vs/pricing/) a prozkoumejte různé možnosti pro zakoupení sady Visual Studio.
-
 
 ## <a name="support-resources"></a>Informační zdroje podpory
 -  Potřebujete pomoc s produkty Parasoft?  Projděte si tyto prostředky:

@@ -19,17 +19,16 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 243170acd838b96efac6521a548596a021893e41
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ba83cf7db6415eefcb989f678bc4149d495016e4
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54788702"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658341"
 ---
 # <a name="save-data-by-using-a-transaction"></a>Ukládání dat pomocí transakce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Ukládání dat v transakci pomocí <xref:System.Transactions> oboru názvů. Použití <xref:System.Transactions.TransactionScope> objektu k účasti v transakci, která se automaticky spravuje za vás.  
   
  Projekty nejsou vytvořeny pomocí odkazu na sestavení System.Transactions, je třeba ručně přidat odkaz na projektech, které používají transakce.  

@@ -13,12 +13,12 @@ monikerRange: '>= vs-2019'
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: 64ebe649b9cf2dab9f52d1968d52fbad38769402
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: 949f17b97a670ceb279333dbd3a00fe5e4cb715e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58856687"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654708"
 ---
 # <a name="debug-live-aspnet-azure-kubernetes-services-using-the-snapshot-debugger"></a>Ladění služby Azure Kubernetes za provozu technologie ASP.NET se pomocí ladicího programu snímků
 
@@ -35,9 +35,9 @@ V tomto kurzu se naučíte:
 
 ## <a name="prerequisites"></a>Požadavky
 
-* Snapshot Debugger pro služby Azure Kubernetes, pouze je dostupná ve verzi preview sady Visual Studio. 2019 Enterprise nebo vyšší s **funkcí vývoj pro Azure**. (V části **jednotlivé komponenty** kartu, najdete ho pod **ladění a testování** > **Snapshot debugger**.)
+* Snapshot Debugger pro služby Azure Kubernetes je pouze k dispozici pro Visual Studio Enterprise. 2019 nebo vyšší s **funkcí vývoj pro Azure**. (V části **jednotlivé komponenty** kartu, najdete ho pod **ladění a testování** > **Snapshot debugger**.)
 
-    Pokud ještě není nainstalovaný, nainstalujte [ve verzi preview sady Visual Studio Enterprise. 2019](https://visualstudio.microsoft.com/vs/preview/).
+    Pokud ještě není nainstalovaný, nainstalujte [Visual Studio Enterprise. 2019](https://visualstudio.microsoft.com/vs/).
 
 * Shromažďování snímků je k dispozici pro následující web apps služby Azure Kubernetes:
   * Aplikace ASP.NET Core spuštěné v .NET Core 2.2 nebo vyšší na Debian 9.

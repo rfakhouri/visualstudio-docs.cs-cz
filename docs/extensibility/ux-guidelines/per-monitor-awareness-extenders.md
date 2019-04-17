@@ -16,12 +16,12 @@ ms.technology: vs-ide-general
 ms.topic: reference
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d4d9afdfcc221e8f07bae7d4bbf7dee57dda31f
-ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
+ms.openlocfilehash: db30c3d74a7742daa3c9cf7225bc2a38062dc6e4
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59504247"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59660694"
 ---
 # <a name="per-monitor-awareness-support-for-visual-studio-extenders"></a>Podpora sledování na sledování pro rozšíření sady Visual Studio
 Verze starší než Visual Studio 2019 měl svým kontextem povědomí o DPI nastavena na systém vědět, spíše než za sledování DPI vědět (PMA). Spouštění v systému sledování je v degradovaném stavu vizuálu pokaždé, když Visual Studio došlo k vykreslení na monitorech s jinou měřítko nebo vzdálené do počítačů s jiným zobrazením konfigurací např (jiné prostředí (například fuzzy písma nebo ikony) Windows škálování).
@@ -40,10 +40,13 @@ Odkazovat [vysoké rozlišení DPI Desktop Application Development na Windows](h
 ## <a name="enabling-pma"></a>Povolení PMA
 Pokud chcete povolit PMA v sadě Visual Studio, musí být splněny následující požadavky:
 1)  Windows 10. dubna 2018 Update (v1803 RS4) nebo novější
-2)  Rozhraní .NET framework 4.8 RTM nebo novější (aktuálně se dodává jako samostatné ve verzi preview nebo svazku s poslední Windows Insider sestavení)
+2)  Rozhraní .NET framework 4.8 RTM nebo novější
 3)  Visual Studio 2019 s ["Optimalizace vykreslování obrazovky s jinou hustoty"](https://docs.microsoft.com/visualstudio/ide/reference/general-environment-options-dialog-box?view=vs-2019) povolenou možnost
 
 Jakmile jsou splněny tyto požadavky, Visual Studio automaticky povolí režim PMA celém procesu.
+
+> [!NOTE]
+> Obsah Windows Forms v sadě Visual Studio (například prohlížeč vlastností) budou podporovat PMA pouze v případě, že máte Visual Studio. 2019 aktualizace č. 1.
 
 ## <a name="testing-your-extensions-for-pma-issues"></a>Testování rozšíření PMA problémů
 
@@ -106,12 +109,18 @@ Vždy, když ve scénářích DPI ve smíšeném režimu (například různé pr
 #### <a name="out-of-process-ui"></a>Uživatelského rozhraní na více instancí procesu
 Některé uživatelské rozhraní se vytvoří na více instancí procesu a pokud vytvoření externího procesu je v jiném režimu povědomí o DPI než Visual Studio, což může představovat všechny předchozí problémů vykreslování.
 
-#### <a name="windows-forms-controls-images-or-windows-not-displaying"></a>Ovládací prvky Windows Forms, Image nebo windows nejsou zobrazena
+#### <a name="windows-forms-controls-images-or-layouts-rendered-incorrectly"></a>Ovládací prvky Windows Forms, Image nebo rozložení vykreslen nesprávně
+Obsah Windows Forms nepodporují PMA režimu. V důsledku toho se může zobrazit vykreslování problém s nesprávnou rozložení nebo škálování. V tomto případě je možné řešení explicitně vykreslení obsahu Windows Forms v "Systému upozornit" DpiAwarenessContext (odkazovat [vynucení ovládacího prvku do konkrétní DpiAwarenessContext](#forcing-a-control-into-a-specific-dpiawarenesscontext)).
+
+#### <a name="windows-forms-controls-or-windows-not-displaying"></a>Ovládací prvky Windows Forms nebo windows nejsou zobrazena
 Jedním z hlavní příčiny tohoto problému je vývojáři, chcete-li změnit nadřazenou položku pro ovládací prvek nebo okno s jeden DpiAwarenessContext do okna s jinou DpiAwarenessContext.
 
-Následující obrázky ukazují aktuální omezení operačního systému Windows v systému windows nadřazenosti:
+Následující obrázky ukazují aktuální **výchozí** omezení operačního systému Windows v systému windows nadřazenosti:
 
 ![Snímek obrazovky vztahy k nadřazeným položkám správné chování](../../extensibility/ux-guidelines/media/PMA-parenting-behavior.PNG)
+
+> [!Note]
+> Toto chování můžete změnit nastavením chování vlákna hostování (odkazovat [DpiHostinBehaviour](https://docs.microsoft.com/windows/desktop/api/windef/ne-windef-dpi_hosting_behavior)).
 
 V důsledku toho pokud je nastavit vztah nadřazenosti a podřízenosti mezi nepodporované režimy, se nezdaří a okna ovládacího prvku nebo nemusí být vykreslen podle očekávání.
 

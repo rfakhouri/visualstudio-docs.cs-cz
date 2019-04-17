@@ -18,19 +18,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e863b8a35d8ef0d5ced0a200d1033b3768df690
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 39340e268d41207e9b054866ecebe613f7836347
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56624903"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654591"
 ---
 # <a name="al-assembly-linker-task"></a>AL (Linker sestavení) – úloha
 Al – úloha zabalí *AL.exe*, nástroj, který je distribuován spolu s [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]. Tento nástroj Linker sestavení se používá k vytvoření sestavení s manifestem z jednoho nebo více souborů, které jsou buď moduly nebo souborů prostředků. Kompilátory a vývojová prostředí už zadat tyto možnosti tak, aby byl často není potřeba přímo pomocí této úlohy. Linker sestavení je zvláště užitečná pro vývojáře, které by bylo potřeba vytvořte jedno sestavení z více souborů součástí, například ty, které může být vytvořen z jazyků vývoj. Tato úloha není možné sloučit moduly do jednoho sestavení souboru; jednotlivé moduly musí být stále distribuované a k dispozici v pořadí pro výsledné sestavení se načíst správně. Další informace o *AL.exe*, naleznete v tématu [Al.exe (Linker sestavení)](/dotnet/framework/tools/al-exe-assembly-linker).
 
 ## <a name="parameters"></a>Parametry
  Následující tabulka popisuje parametry `AL` úloh.
-
 
 | Parametr | Popis |
 |---------------------| - |

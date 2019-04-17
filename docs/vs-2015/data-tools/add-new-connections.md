@@ -9,17 +9,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a5c7d4bda59b8ff9bdedb775ecc6376a23a2db7b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ff1ec43d6faec329db6138598d84e47db009113e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54770627"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665321"
 ---
 # <a name="add-new-connections"></a>Přidat nové připojení
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Můžete otestovat připojení k databázi nebo službu a prozkoumat obsah databáze a schémat, pomocí **Průzkumníka serveru**, **Průzkumníka cloudu**, nebo **Průzkumník objektů systému SQL Server**. Funkce z těchto oken se překrývá do určité míry. Základní rozdíly jsou:  
   
  Průzkumník serveru  

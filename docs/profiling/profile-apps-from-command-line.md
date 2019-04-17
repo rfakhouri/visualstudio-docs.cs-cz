@@ -14,12 +14,12 @@ manager: jillfra
 monikerRange: '>= vs-2019'
 ms.workload:
 - multiple
-ms.openlocfilehash: b2de537b17b68461c16f886c1eab706d2438ff6c
-ms.sourcegitcommit: 62149c96de0811415e99bb1e0194e76c320e1a1e
+ms.openlocfilehash: 87bf0c236f34e753866ea114dfc7f45e8f16a979
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "57007513"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59670482"
 ---
 # <a name="measure-application-performance-from-the-command-line"></a>Měřit výkon aplikace z příkazového řádku
 
@@ -87,7 +87,3 @@ VSDiagnostics.exe start <id> /attach:<pid> /loadAgent:<agentCLSID>;<agentName>[;
 ## <a name="permissions"></a>Oprávnění
 
 Chcete-li Profilovat aplikaci, která vyžaduje zvýšenou úroveň oprávnění, musíte tak učinit z příkazového řádku se zvýšenými oprávněními.
-
-
-
-

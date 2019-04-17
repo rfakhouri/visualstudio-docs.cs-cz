@@ -11,17 +11,16 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c5afc245bd16954ba348b4ec581238bf17e5d994
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d8d999d65b207f72542b732842f6eb984df40764
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54758710"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59656814"
 ---
 # <a name="file-tracking"></a>Sledování souborů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Volání do systému souborů Windows pro proces a podřízené procesy protokolů sledování souborů. Voláním funkcí uvedených níže programy řídí, kdy zapnout a vypnout protokolování a určit soubor protokolu, který chcete použít.  
   
 ## <a name="in-this-section"></a>V tomto oddílu  

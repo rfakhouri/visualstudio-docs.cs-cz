@@ -1,5 +1,5 @@
 ---
-title: 'Průvodce: Připojení hostitele k procesoru vygenerovaných direktiv'
+title: 'Návod: Připojení hostitele k procesoru vygenerovaných direktiv'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,14 +13,14 @@ ms.workload:
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: a84b24dff387e0a93058c07e9f6d7b6cfe503d49
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b255f521d45d1e827a3bfb9bc9bc5129f090bcaa
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55935586"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59655709"
 ---
-# <a name="walkthrough-connect-a-host-to-a-generated-directive-processor"></a>Průvodce: Připojení hostitele k procesoru vygenerovaných direktiv
+# <a name="walkthrough-connect-a-host-to-a-generated-directive-processor"></a>Návod: Připojení hostitele k procesoru vygenerovaných direktiv
 
 Můžete napsat vlastního hostitele, který zpracovává textových šablon. Základní vlastního hostitele je ukázáno v [názorný postup: Vytváření vlastního hostitele textových šablon](../modeling/walkthrough-creating-a-custom-text-template-host.md). Můžete rozšířit, které hostují přidat funkce, například generování víc výstupních souborů.
 
@@ -40,7 +40,6 @@ Tento návod zahrnuje následující úlohy:
 ## <a name="prerequisites"></a>Požadavky
 
 Pokud chcete definovat DSL, musíte mít nainstalovaný následující komponenty:
-
 
 | | |
 |-|-|
@@ -363,4 +362,4 @@ K otestování vlastního hostitele textových šablon, nejprve musí napsat tex
 
 ## <a name="see-also"></a>Viz také:
 
-- [Návod: Vytváření vlastního hostitele textových šablon](../modeling/walkthrough-creating-a-custom-text-template-host.md)
+- [Návod: Vytvoření vlastního hostitele textových šablon](../modeling/walkthrough-creating-a-custom-text-template-host.md)

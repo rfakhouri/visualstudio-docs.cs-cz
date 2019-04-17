@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 06cb3ad9a3f424d4e7ec0c5ed239303c9b85ca58
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b986e5219c1e8d437651feebeec09eb4ca3dd5cb
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55910115"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59662683"
 ---
 # <a name="ca2000-dispose-objects-before-losing-scope"></a>CA2000: Uvolňujte objekty před ztrátou oboru
 
@@ -34,7 +34,7 @@ ms.locfileid: "55910115"
 |Kategorie|Microsoft.Reliability|
 |Narušující změna|Nenarušující|
 
-## <a name="cause"></a>příčina
+## <a name="cause"></a>Příčina
  Je vytvořen místní objekt typu <xref:System.IDisposable>, který však není uvolněn před tím, než jsou všechny odkazy na objekt mimo rozsah.
 
 ## <a name="rule-description"></a>Popis pravidla
@@ -147,7 +147,6 @@ Public Function OpenPort2(ByVal PortName As String) As SerialPort
       If Not tempPort Is Nothing Then
          tempPort.Close()
       End If
-
 
    End Try
 

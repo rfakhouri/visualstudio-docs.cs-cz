@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b5ed2b15c59ca4b9955a2f28985325a2d5e244ee
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: f97c86bd274d8fe6a75e8731165c5189e27cf08f
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416419"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59664479"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>Jak se definuje jazyk specifický pro doménu
 Do definice jazyka specifického pro doménu (DSL), vytvoříte ze šablony řešení sady Visual Studio. Klíčovou součástí řešení je diagramem definice DSL, která je uložena v DslDefinition.dsl. Definice DSL definuje třídy a tvary DSL. Po úpravě a přidáte k těmto prvkům můžete přidat kód programu k přizpůsobení DSL podrobněji.
@@ -608,7 +608,6 @@ Pokud chcete vytvořit nový jazyk specifický pro doménu, vytvořte nové ře�
 
 ## <a name="trouble"></a> Řešení potíží
  Následující tabulka uvádí některé z nejběžnějších problémů, které se vyskytují při návrhu DSL, společně s návrhy pro jejich řešení. Další Rady, jak je k dispozici na [fórum pro rozšiřitelnost nástroje vizualizace](http://go.microsoft.com/fwlink/?LinkId=186074).
-
 
 | Problém | Doporučení |
 |-|-|

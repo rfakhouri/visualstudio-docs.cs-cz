@@ -19,12 +19,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3411d3e9960235f7fbd948e82cf9498377746b7d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 862f2ca7da96e7d084d2af7bfa53a5640bed22d8
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55938758"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59667037"
 ---
 # <a name="signing-page-project-designer"></a>Stránka Podepisování, návrhář projektu (C#)
 Použití **podepisování** stránku **Návrháře projektu** k podepsání manifestů aplikace a nasazení a také k podepsání sestavení (podepisování silným názvem).
@@ -94,12 +94,11 @@ Použití **podepisování** stránku **Návrháře projektu** k podepsání man
 > [!NOTE]
 > Při podpisu sestavení, nemusí mít vždy přístup k privátnímu klíči. Organizace může například mít úzce strážených pár klíčů, aby vývojáři nemuseli přístup k každý den. Veřejný klíč může být k dispozici, ale přístup k privátnímu klíči omezen na několika jednotlivcům. V takovém případě můžete použít *zpožděné* nebo *částečné podepsání* poskytnout veřejný klíč, přidání soukromého klíče odložit, dokud je předáno sestavení.
 
-
 ## <a name="see-also"></a>Viz také:
 
 - [Referenční dokumentace k vlastnostem projektu](../../ide/reference/project-properties-reference.md)
 - [Správa sestavení a podepsání manifestu](../../ide/managing-assembly-and-manifest-signing.md)
-- [Postupy: Přihlášení aplikace a manifestů nasazení](../../ide/how-to-sign-application-and-deployment-manifests.md)
+- [Postupy: Podepsání manifestů aplikace a nasazení](../../ide/how-to-sign-application-and-deployment-manifests.md)
 - [Postupy: Podepsání sestavení (Visual Studio)](../managing-assembly-and-manifest-signing.md#how-to-sign-an-assembly-in-visual-studio)
 - [Postupy: Podepsání sestavení silným názvem](/dotnet/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name)
 - [Sestavení se silným názvem](/dotnet/framework/app-domains/strong-named-assemblies)

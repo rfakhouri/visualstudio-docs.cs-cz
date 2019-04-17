@@ -19,17 +19,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a2a0831ea2220877d020b3e109460c560a1d6694
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: caa267aa44a72d180195a30b41fa7a2c03033bdf
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54796903"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668402"
 ---
 # <a name="generateresource-task"></a>GenerateResource – úloha
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Převede mezi txt a souborů .resx (formát založený na formátu XML prostředků) a common language runtime binárních souborů .resources, které může být vložen do binárního spustitelného souboru modulu nebo zkompilovány do satelitních sestavení. Tato úloha je obvykle používána pro převod souborů .txt nebo .resx na soubory Resource. `GenerateResource` Úkolu je funkčně podobný [resgen.exe](http://msdn.microsoft.com/library/8ef159de-b660-4bec-9213-c3fbc4d1c6f4).  
   
 ## <a name="parameters"></a>Parametry  
@@ -57,11 +56,11 @@ Převede mezi txt a souborů .resx (formát založený na formátu XML prostřed
 |`StronglyTypedNamespace`|Volitelné `String` parametru.<br /><br /> Určuje obor názvů pro zdroj generovaná třída prostředků se silnými typy. Pokud není tento parametr zadán, jsou všechny prostředky se silnými typy v globálním oboru názvů.|  
 |`TLogReadFiles`|Volitelné <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametr jen pro čtení.<br /><br /> Získá pole objektů, které představují čtení protokoly sledování.|  
 |`TLogWriteFiles`|Volitelné <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametr jen pro čtení.<br /><br /> Získá pole položek, které představují zápis protokoly sledování.|  
-|`ToolArchitecture`|Volitelné [String] (<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->) parametru.<br /><br /> Slouží k určení, zda je potřeba použít ResGen.exe nejde vytvořit podřízený Tracker.exe.<br /><br /> By měl být analyzovatelný členovi <xref:Microsoft.Build.Utilities.ExecutableType> výčtu. Pokud `String.Empty`, používá k určení výchozí architektura heuristické metody. By měl být na člena výčtu Microsoft.Build.Utilities.ExecutableType možné analyzovat.|  
-|`TrackerFrameworkPath`|Volitelné <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> parametru.<br /><br /> Určuje cestu k odpovídající umístění rozhraní .NET Framework, která obsahuje FileTracker.dll.<br /><br /> Pokud sada, uživatel přebírá odpovědnost za zajištění, že odpovídá počtu bitů FileTracker.dll, který předávají bitové verze nástroje ResGen.exe, které mají v úmyslu použít. Pokud není sada, rozhodne úlohy do příslušného umístění na základě aktuální verze rozhraní .NET Framework.|  
-|`TrackerLogDirectory`|Volitelné <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> parametru.<br /><br /> Určuje zprostředkující adresář, do kterého bude umístěn protokoly sledování od spuštění této úlohy.|  
-|`TrackerSdkPath`|Volitelné <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> parametru.<br /><br /> Určuje cestu k odpovídající umístění sady Windows SDK obsahující Tracker.exe.<br /><br /> Pokud sada, uživatel přebírá odpovědnost za zajištění, že odpovídá počtu bitů Tracker.exe, který předávají bitové verze nástroje ResGen.exe, které mají v úmyslu použít. Pokud není sada, rozhodne úlohy do příslušného umístění podle aktuální sady Windows SDK.|  
-|`TrackFileAccess`|Volitelná [logická hodnota] (<!-- TODO: review code entity reference <xref:assetId:///Boolean?qualifyHint=False&amp;autoUpgrade=True>  -->) parametru.<br /><br /> Při hodnotě true se vstupního souboru se použije k vyřešení relativní cesty k souboru.|  
+|`ToolArchitecture`|(Volitelné [String]<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->) parametru.<br /><br /> Slouží k určení, zda je potřeba použít ResGen.exe nejde vytvořit podřízený Tracker.exe.<br /><br /> By měl být analyzovatelný členovi <xref:Microsoft.Build.Utilities.ExecutableType> výčtu. Pokud `String.Empty`, používá k určení výchozí architektura heuristické metody. By měl být na člena výčtu Microsoft.Build.Utilities.ExecutableType možné analyzovat.|  
+|`TrackerFrameworkPath`|volitelná, <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> parametr.<br /><br /> Určuje cestu k odpovídající umístění rozhraní .NET Framework, která obsahuje FileTracker.dll.<br /><br /> Pokud sada, uživatel přebírá odpovědnost za zajištění, že odpovídá počtu bitů FileTracker.dll, který předávají bitové verze nástroje ResGen.exe, které mají v úmyslu použít. Pokud není sada, rozhodne úlohy do příslušného umístění na základě aktuální verze rozhraní .NET Framework.|  
+|`TrackerLogDirectory`|volitelná, <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> parametr.<br /><br /> Určuje zprostředkující adresář, do kterého bude umístěn protokoly sledování od spuštění této úlohy.|  
+|`TrackerSdkPath`|volitelná, <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> parametr.<br /><br /> Určuje cestu k odpovídající umístění sady Windows SDK obsahující Tracker.exe.<br /><br /> Pokud sada, uživatel přebírá odpovědnost za zajištění, že odpovídá počtu bitů Tracker.exe, který předávají bitové verze nástroje ResGen.exe, které mají v úmyslu použít. Pokud není sada, rozhodne úlohy do příslušného umístění podle aktuální sady Windows SDK.|  
+|`TrackFileAccess`|Nepovinné () [logická]<!-- TODO: review code entity reference <xref:assetId:///Boolean?qualifyHint=False&amp;autoUpgrade=True>  -->) parametru.<br /><br /> Při hodnotě true se vstupního souboru se použije k vyřešení relativní cesty k souboru.|  
 |`UseSourcePath`|Volitelné `Boolean` parametru.<br /><br /> Pokud `true`, určuje, že adresář vstupního souboru se má použít k vyřešení relativní cesty k souboru.|  
   
 ## <a name="remarks"></a>Poznámky  

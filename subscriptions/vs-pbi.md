@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Další informace o předplatné Power BI Pro, které jsou součástí vybraných předplatných sady Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: 176ce1d13faad7143da591f4f04f9feee1b5b2a0
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 966db1966b6056b81f143b41db53f132c5b2755b
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843867"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59663255"
 ---
 # <a name="power-bi-pro-in-visual-studio-subscriptions"></a>Power BI Pro v předplatných sady Visual Studio
 
@@ -37,16 +37,13 @@ Pokud chcete používat Power BI Pro, budete muset nastavit účet nebo se přih
    > [!div class="mx-imgBorder"]
    > ![Výhody Power BI Pro vytvoření účtu](_img/vs-pbi/vs-pbi-create-account-cropped.png)
 
-
 5. Dále vytvořte své ID uživatele a heslo.  Pokud už máte účet a že vytváříte novou, budete muset poskytnout název jiné společnosti než jste použili pro existující účet.  Klikněte na tlačítko **vytvořit Můj účet**.
    > [!div class="mx-imgBorder"]
    > ![Power BI Pro Benefit vytvořit ID uživatele](_img/vs-pbi/vs-pbi-create-user-id-cropped.png)
 
-
 6. Pokud chcete mít jistotu, že účet vytváří skutečný člověk, budete vyzváni k zadání potvrzení kódu.  Zadejte telefonní číslo a zvolit, jestli chcete obdržet svůj kód pomocí telefonního hovoru nebo textové zprávy.  Klikněte na tlačítko **Poslat mi SMS** nebo **zavolat mi**.
    > [!div class="mx-imgBorder"]
    > ![Power BI Pro Benefit A ne Robot](_img/vs-pbi/vs-pbi-robot1-cropped.png)
-
 
 7. Zadejte kód se zobrazí a klikněte na tlačítko **Další**.
    > [!div class="mx-imgBorder"]
@@ -55,7 +52,6 @@ Pokud chcete používat Power BI Pro, budete muset nastavit účet nebo se přih
 8. Zadejte svoje kontaktní informace a pak klikněte na tlačítko **Další**.
    > [!div class="mx-imgBorder"]
    > ![Power BI Pro Benefit kontaktní informace](_img/vs-pbi/vs-pbi-contact-cropped.png)
-
 
 9. Na další stránku potvrdí, že vaše předplatné Power BI Pro vývojáře (MSDN) má cenu 0,00 USD.  Klikněte na **Další**.
 
@@ -66,7 +62,6 @@ Pokud chcete používat Power BI Pro, budete muset nastavit účet nebo se přih
 11. Další stránka potvrdí, že všechno je nastavené na začít používat Power BI Pro.  Na stránce bude obsahovat odkaz na stránku pro přihlášení.  Doporučujeme záznamu odkaz na přihlašovací stránku, jakož i vaše ID uživatele.  (Obdržíte také Uvítacího e-mailu na adresu, kterou jste zadali při nastavení účtu.)  Může se zobrazit také automatizované okno pomocníka Office 365, které můžete použít, pokud máte dotazy.  Klikněte na tlačítko **pusťme se do práce** pokračujte.
     > [!div class="mx-imgBorder"]
     > ![Všechny výhody Power BI Pro nastavení](_img/vs-pbi/vs-pbi-all-set-cropped.png)
-
 
 12. Teď, když je nastavení vašeho účtu Power BI Pro, zobrazí se vám Centrum pro správu Office 365, kde můžete spravovat uživatele a domény, instalace softwaru Office a seznamte se s Office 365.  A to je vše!  Jste připraveni začít.
 
@@ -86,9 +81,7 @@ Pokud chcete používat Power BI Pro, budete muset nastavit účet nebo se přih
 > [!NOTE]
 > Microsoft už nenabízí Visual Studio Professional ročních předplatných a předplatných Visual Studio Enterprise roční Cloudová předplatná. Nebude bez nutnosti změn stávajících zkušeností zákazníků a možnost obnovit, zvýšit, snížit nebo zrušit předplatná. Nové nepodnikovým zákazníkům přejít na [ https://visualstudio.microsoft.com/vs/pricing/ ](https://visualstudio.microsoft.com/vs/pricing/) a prozkoumejte různé možnosti pro zakoupení sady Visual Studio.
 
-
 Nejste si jistí které předplatné používáte?  Připojte se k [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) zobrazíte všechna předplatná, která jsou přiřazená e-mailovou adresu. Pokud se nezobrazí všechna předplatná, může mít jeden nebo více přiřazené na jinou e-mailovou adresu.  Bude potřeba přihlásit se přes tento e-mailovou adresu najdete v těchto předplatných.
-
 
 ## <a name="frequently-asked-questions"></a>Nejčastější dotazy
 ### <a name="q--if-the-benefit-is-free-why-do-i-have-to-supply-a-credit-card-number"></a>DOTAZ:  Pokud je bezplatné výhody, Proč musím zadat číslo platební karty?
@@ -112,7 +105,6 @@ O:  Ano.  Zpráva označuje, že jste přihlášení k doméně, která už má 
     > ![Výhoda Pro Power BI vytvořit ID uživatele v soukromé tenanta](_img/vs-pbi/vs-pbi-work-userid.png)
 
 4.  Zbývající kroky v procesu jsou shodné s hodnotami uvedenými v těle článku, počínaje krokem 6.
-
 
 ### <a name="q--im-on-a-government-tenant--can-i-use-the-benefit"></a>DOTAZ:  Jsem v tenantu pro státní správu.  Můžete použít výhody?
 O:  Ne.  Power BI Pro benefit nelze přidat do tenantech pro státní správu.

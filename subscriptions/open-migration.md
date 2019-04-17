@@ -7,12 +7,12 @@ ms.date: 07/02/2018
 ms.topic: conceptual
 description: Další informace o Open a Open License migrace na portál pro správu předplatných sady Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: a2f3ed6db9b8e0ce0dce645bfbbb715b89fe1f04
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 0e3ad14f48aaa461b7c70507cd4501067eacc789
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843192"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658198"
 ---
 # <a name="open-and-open-license-migration-to-the-new-visual-studio-subscriptions-administration-portal"></a>Otevřít a Open License migraci na nový portál pro správu předplatných Visual Studio
 
@@ -38,7 +38,6 @@ Ke správě předplatných [portál pro správu předplatných sady Visual Studi
 
 - Partneři spravovat předplatná jménem zákazníků bude potřebovat k registraci na portálu pro správu. Níže jsou uvedeny různé způsoby, získat přístup k (podobný jako otevřený přidat).
 
-
 ## <a name="existing-partners-adding-a-new-license"></a>Přidat novou licenci existující partnery
 
 To platí pro partnery, kteří už mají přístup k [portál pro správu předplatných sady Visual Studio](https://manage.visualstudio.com), ale si objednali otevřít licence s předplatným Visual Studia, které potřebují ke správě.
@@ -48,7 +47,6 @@ To platí pro partnery, kteří už mají přístup k [portál pro správu před
 - Vyberou se rozevírací seznam dohoda a přejděte do dolní části ve kterých je možnost **+ nové Open License**.
 
 - V panelu rozbalení partnera se zadejte autorizační číslo, číslo licence, e-mailová adresa zákazníka, který je na smlouvu, vyberte zaškrtávací políčko a potom klikněte na tlačítko **odeslat**.
-
 
 > [!NOTE]
 > Zákazník dostane e-mailové oznámení, informuje o tom, že Partner je přidaný do Open License. Uživatel může vybrat k odebrání přístupu partnerské organizace.
@@ -67,7 +65,6 @@ To platí pro nové partneři uvedení nové objednávky otevřete licence, ale 
 
 - Partner pak bude moct spravovat předplatná pro tento Open License.
 
-
 > [!NOTE]
 > Zákazník dostane e-mailové oznámení, informuje o tom, že Partner je přidaný do Open License. Uživatel může vybrat k odebrání přístupu partnerské organizace.
 
@@ -80,7 +77,6 @@ Tento scénář se vztahuje na nové partnerů, kteří máte objednaný nové o
 - Se zobrazí chyba, že nejsou rozpoznaný uživatel.
 
 - Partner bude nutné vybrat **OLP partneři** registrace možnost a zadejte autorizační číslo, číslo licence, e-mailovou adresu zákazníka používá v pořadí, zaškrtněte políčko a klikněte na tlačítko **odeslat**.
-
 
 > [!NOTE]
 > Zákazník dostane e-mailové oznámení, informuje o tom, že Partner je přidaný do Open License. Uživatel může vybrat k odebrání přístupu partnerské organizace.

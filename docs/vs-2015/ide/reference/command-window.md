@@ -17,17 +17,16 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c7ec3911496c5106d53f90a281452df2c8a128f6
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 3c83ebc4b2a58976f8848f4576d8b30ad7778db2
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54788344"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59650431"
 ---
 # <a name="command-window"></a>Příkazové okno
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 **Příkaz** okno se používá ke spuštění příkazů nebo přímo v aliasy [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] integrované vývojové prostředí (IDE). Můžete spustit příkazy nabídek a příkazů, které nejsou zobrazeny na jakékoliv nabídky. Pro zobrazení **příkaz** okně zvolte **ostatní Windows** z **zobrazení** nabídky a vybereme **příkazové okno**.  
   
 ## <a name="displaying-the-values-of-variables"></a>Zobrazení hodnot proměnných  

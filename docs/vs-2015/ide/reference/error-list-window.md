@@ -16,17 +16,16 @@ caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 080bc6b8efe5407a372ef2e22c53d04fa977e057
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 9dc94abdfb35bc4537f0ba80f96f393157263e63
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54785768"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658146"
 ---
 # <a name="error-list-window"></a>Okno Seznam chyb
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 POZNÁMKA:]
 >  V seznamu chyb zobrazí informace o určité chybové zprávě. Číslo chyby nebo text řetězce chyby můžete zkopírovat z okna výstup. Chcete-li zobrazit okno výstup, stiskněte Ctrl + Alt + O. Zobrazit [okna výstup](../../ide/reference/output-window.md).  
   
@@ -87,7 +86,7 @@ POZNÁMKA:]
  Popis  
  Zobrazí text záznamu.  
   
- Projekt  
+ Project  
  Název aktuálního projektu.  
   
  Soubor  

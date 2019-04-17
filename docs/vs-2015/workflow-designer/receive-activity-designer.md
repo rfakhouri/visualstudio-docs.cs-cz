@@ -11,12 +11,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 16b0f414c87fd1d9dea7305e43e23a59b7dc53b0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 05dc1643ecd05277baeba50bb00320d2f3a89abe
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54805001"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658491"
 ---
 # <a name="receive-activity-designer"></a>Návrhář aktivity Receive
 **Receive** Návrhář aktivity se používá k vytvoření a konfigurace <xref:System.ServiceModel.Activities.Receive> aktivity. A <xref:System.ServiceModel.Activities.Receive> aktivitu, která bude přijímat zprávy, která může být buď vestavěný typ, jako je aktivita <xref:System.ServiceModel.Channels.Message>, <xref:System.IO.Stream> nebo <xref:System.Xml.Linq.XElement>, nebo kontraktu dat definované aplikací, kontraktu zprávy nebo třída XML, který lze serializovat.  
@@ -35,7 +35,6 @@ ms.locfileid: "54805001"
 
 ### <a name="the-receive-activity-properties"></a>Zobrazí vlastnosti aktivity  
  Následující tabulka ukazuje <xref:System.ServiceModel.Activities.Receive> vlastnosti a popisuje, jak se používají v návrháři. Tyto vlastnosti můžete upravit v mřížce vlastností nebo na [!INCLUDE[wfd2](../includes/wfd2-md.md)] povrchu. Je pouze požadovaná vlastnost <xref:System.ServiceModel.Activities.Receive.OperationName%2A> vlastnost.  
-
 
 |                              Název vlastnosti                               | Požadováno |                                                                                                                                                                                                                                                                                                                                                                                         Použití                                                                                                                                                                                                                                                                                                                                                                                         |
 |--------------------------------------------------------------------------|----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

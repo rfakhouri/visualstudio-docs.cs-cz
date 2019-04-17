@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c6731f91544235c3011e458aea7c4c5b90f89908
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e71615e90a23ad8ca6de6e01495de1ea8538a644
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55907552"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59650445"
 ---
 # <a name="sendandreceivereply-template-designer"></a>Návrhář šablony SendAndReceiveReply
 
@@ -41,7 +41,6 @@ Další informace o používání **odeslat** návrháře konfigurace <xref:Syst
 ### <a name="properties-of-receivereply"></a>Vlastnosti ReceiveReply
 
 Následující tabulka ukazuje <xref:System.ServiceModel.Activities.ReceiveReply> vlastnosti a popisuje, jak se používají v návrháři. Tyto vlastnosti můžete upravit v mřížce vlastností a můžete upravit některé na povrchu návrháře postupu provádění.
-
 
 | Název vlastnosti | Požadováno | Použití |
 |-|----------|-|

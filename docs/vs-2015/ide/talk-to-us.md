@@ -11,19 +11,17 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 02320e4e47f98212d49d81e302510bce4573e685
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: b91eeff74df839836a380db3d2005c7823494581
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58354853"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59657602"
 ---
 # <a name="talk-to-us"></a>Kontaktujte nás
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější dokumentaci k sadě Visual Studio, naleznete v tématu [kontaktujte nás](https://docs.microsoft.com/visualstudio/ide/talk-to-us) na webu docs.microsoft.com.  
-
-  
+Nejnovější dokumentaci k sadě Visual Studio, naleznete v tématu [kontaktujte nás](https://docs.microsoft.com/visualstudio/ide/talk-to-us).  
 
 Nás zajímá nápadů pro zlepšení naší dokumentaci. Jsme nemůže odpovědět osobně, ale zajistíme, že vaše zpětná vazba získá správným lidem.  
   

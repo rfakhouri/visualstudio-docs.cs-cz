@@ -1,5 +1,5 @@
 ---
-title: 'Kurz: Služba Azure Functions'
+title: 'Kurz: Azure Functions'
 description: Pomocí Azure functions v sadě Visual Studio pro Mac.
 author: conceptdev
 ms.author: crdun
@@ -7,14 +7,14 @@ ms.date: 05/06/2018
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 38FD2070-5151-482E-B0A9-993715128736
-ms.openlocfilehash: d6a0683405340d479fb3289540ffde2c5e7a4f78
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: d728de52a159d058ecae48d48620547b6d8fcf4f
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296434"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59650264"
 ---
-# <a name="tutorial-getting-started-with-azure-functions"></a>Kurz: Začínáme s Azure Functions
+# <a name="tutorial-getting-started-with-azure-functions"></a>Kurz: Začínáme se službou Azure Functions
 
 V tomto testovacím prostředí budete zjistěte, jak začít vytvářet funkce Azure pomocí sady Visual Studio pro Mac. Budete také integrovat tabulky v úložišti Azure, které představují jeden z mnoha typů vazeb a aktivačních událostí, které jsou k dispozici pro vývojáře Azure Functions.
 
@@ -36,7 +36,7 @@ V tomto testovacím prostředí budete zjistěte, jak začít vytvářet funkce 
 
 2. Vyberte **soubor > Nový řešení**.
 
-3. Z **Cloud > Obecné** kategorii, vyberte **Azure Functions** šablony. Použijete C# k vytvoření knihovny tříd .NET, který je hostitelem Azure Functions. Klikněte na tlačítko **Další**.
+3. Z **Cloud > Obecné** kategorii, vyberte **Azure Functions** šablony. Použijete C# k vytvoření knihovny tříd .NET, který je hostitelem Azure Functions. Klikněte na **Další**.
 
     ![Výběr šablony Azure functions](media/azure-functions-lab-image1.png)
 
@@ -49,7 +49,7 @@ V tomto testovacím prostředí budete zjistěte, jak začít vytvářet funkce 
      Jsou také tři soubory:- **host.json** pro popis globální možnosti konfigurace pro hostitele - **local.settings.json** ke konfiguraci nastavení služby.
         - Šablona projektu také vytvoří výchozí HttpTrigger. Pro účely tohoto testovacího prostředí, měli byste odstranit **HttpTrigger.cs** soubor z projektu.
 
-    Otevřít **local.settings.json**. Použije se výchozí s tím, že dvě nastavení prázdný připojovacího řetězce.
+    Open **local.settings.json**. Použije se výchozí s tím, že dvě nastavení prázdný připojovacího řetězce.
 
     ![zobrazení souboru local.settings.json řešení panel](media/azure-functions-lab-image3.png)
 
@@ -69,7 +69,7 @@ V tomto testovacím prostředí budete zjistěte, jak začít vytvářet funkce 
 
     ![Podrobnosti o novém účtu úložiště](media/azure-functions-lab-image6.png)
 
-1. Klikněte na tlačítko **vytvořit**. Může trvat několik minut pro vytvoření účtu úložiště. Jakmile byla úspěšně vytvořena, dostanete oznámení.
+1. Klikněte na možnost **Vytvořit**. Může trvat několik minut pro vytvoření účtu úložiště. Jakmile byla úspěšně vytvořena, dostanete oznámení.
 
     ![oznámení o úspěchu nasazení](media/azure-functions-lab-image7.png)
 
@@ -187,7 +187,6 @@ V tomto testovacím prostředí budete zjistěte, jak začít vytvářet funkce 
 1. Tentokrát výsledek by měl odrážet nové parametry. Můžete spustit projekt s různými hodnotami. Všimněte si, že není k dispozici žádné kontroly chyb, neplatné nebo chybějící parametry vyvolá chybu.
 
 1. Zastavte relaci ladění.
-
 
 ## <a name="exercise-4-working-with-functionjson"></a>Cvičení 4: Práce s function.json
 
@@ -409,4 +408,3 @@ Služby, které vytváříte často, může být mnohem složitější než co j
 ## <a name="summary"></a>Souhrn
 
 V tomto testovacím prostředí jste zjistili, jak začít sestavovat Azure Functions pomocí sady Visual Studio pro Mac.
-

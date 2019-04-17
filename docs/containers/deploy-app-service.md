@@ -8,12 +8,12 @@ ms.devlang: dotnet
 ms.topic: article
 ms.date: 03/08/2019
 ms.author: ghogen
-ms.openlocfilehash: 3afc5cae38b7eea3b77d0385b87199953826ca2e
-ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
+ms.openlocfilehash: 8dfb41e9e5e24c01b2973c3d743897329a3a115e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59537958"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59648086"
 ---
 # <a name="deploy-an-aspnet-core-container-to-azure-app-service-using-visual-studio"></a>Nasazení kontejneru ASP.NET Core do služby Azure App Service pomocí sady Visual Studio
 
@@ -26,7 +26,7 @@ Pokud ještě nemáte předplatné Azure, vytvořte si [bezplatný účet](https
 K provedení kroků v tomto kurzu je potřeba:
 
 ::: moniker range="vs-2017"
-- Nainstalujte nejnovější verzi [Visual Studio 2017](https://azure.microsoft.com/downloads/) s úlohou "vývoj aplikací ASP.NET a web"
+- Nainstalujte nejnovější verzi [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) s úlohou "vývoj aplikací ASP.NET a web"
 ::: moniker-end
 ::: moniker range=">=vs-2019"
 - [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) s *vývoj pro ASP.NET a web* pracovního vytížení.

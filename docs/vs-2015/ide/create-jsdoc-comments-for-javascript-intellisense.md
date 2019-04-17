@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 22db62a186c1f1c668a0304a9b586aca85e713c3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f4d300651731b38b9b86421d36d9de169dc6464d
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54758507"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651042"
 ---
 # <a name="create-jsdoc-comments-for-javascript-intellisense"></a>Vytvoření komentářů JSDoc pro JavaScript IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,6 @@ Technologie IntelliSense v sadě Visual Studio zobrazí informace, které přid�
 
 ## <a name="jsdoc-comment-tags"></a>Značky pro komentáře JSDoc  
  Následující standardních značek komentářů JSDoc se používají technologii IntelliSense pro zobrazení informací o kódu.  
-
 
 |  Značka JSDoc   |                       Syntaxe                        |                                                     Poznámky                                                      |
 |--------------|-----------------------------------------------------|----------------------------------------------------------------------------------------------------------------|

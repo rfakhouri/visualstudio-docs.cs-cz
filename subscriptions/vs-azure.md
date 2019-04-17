@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Zjistěte, jak aktivovat výhody služeb Azure součástí vašeho předplatného sady Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: 5ef69bbaeeeed7de66e1cf206182bb83f4f42ff2
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 31dead0299c3af1b22813c2fe41cde728c6bb0b4
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843205"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59648378"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Použití Microsoft Azure v předplatných sady Visual Studio
 
@@ -43,10 +43,8 @@ Jako předplatitel sady Visual Studio můžete použít Microsoft Azure bez dal�
 
 * Zahrnuje není pro prodej (NFR), nejcennější Professional (MVP), Regional Director (RD), Visual Studio Industry Partner (VSIP)
 
-
 > [!NOTE]
 > Microsoft už nenabízí Visual Studio Professional ročních předplatných a předplatných Visual Studio Enterprise roční Cloudová předplatná. Nebude bez nutnosti změn stávajících zkušeností zákazníků a možnost obnovit, zvýšit, snížit nebo zrušit předplatná. Nové nepodnikovým zákazníkům přejít na [ https://visualstudio.microsoft.com/vs/pricing/ ](https://visualstudio.microsoft.com/vs/pricing/) a prozkoumejte různé možnosti pro zakoupení sady Visual Studio.
-
 
 Nejste si jistí které předplatné používáte?  Připojte se k [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) zobrazíte všechna předplatná, která jsou přiřazená e-mailovou adresu. Pokud se nezobrazí všechna předplatná, může mít jeden nebo více přiřazené na jinou e-mailovou adresu.  Bude potřeba přihlásit se přes tento e-mailovou adresu najdete v těchto předplatných.
 
@@ -91,7 +89,6 @@ O:  Tento e-mail jste dostali, protože používáte výhody služeb Azure spoje
 Chcete-li pokračovat v používání vašich slevy a kredit sady Visual Studio v Azure, proveďte jednu z následujících kroků:
 
 Pokud někdo ve vašem týmu nebo organizaci kupuje předplatná ve vašem zastoupení, obraťte se na správce sady Visual Studio ve vaší organizaci a požádat o předplatné sady Visual Studio, která vás opravňuje k použití Azure měsíčního kreditu, které potřebujete.   Požádejte správce o přiřazení nové předplatné do stejného ID uživatele, která byla přiřazena předchozí předplatné, abyste nemuseli se starat o přenos předplatného Azure.
-
 
 Pokud předplatné si můžete koupit přímo, proveďte jednu z následujících akcí:
 1.  Zakoupit roční sadu Visual Studio [Enterprise](https://marketplace.visualstudio.com/items?itemName=ms.vs-enterprise-annual) nebo [Professional](https://marketplace.visualstudio.com/items?itemName=ms.vs-professional-annual) cloudové předplatné Visual Studio Marketplace.

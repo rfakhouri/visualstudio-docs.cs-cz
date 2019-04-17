@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8cdfa140614117e00e0ad3cc813c7f33d7a47b75
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e305ba59eaf5a0f60ec84d40ee9888ac17982c42
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55027708"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59650626"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Barvy a styly pro sadu Visual Studio
 
@@ -112,7 +112,6 @@ IVsUIShell2::GetVSSysColorEx(VSSYSCOLOR dwSysColIndex, DWORD *pdwRGBval)
 V souboru VSShell80.idl výčtu `__VSSYSCOLOREX` má barva konstanty prostředí. Pro použití je třeba předat jako hodnotu indexu některá z hodnot z `enum __VSSYSCOLOREX` zdokumentované v MSDN nebo pravidelné index číslo, které v systému Windows, rozhraní API, `GetSysColor`, přijímá. Tím získá zpět hodnoty RGB barvy, který se má použít ve druhém parametru.
 
 Pokud ukládáte pera nebo novou barvou štětce, je nutné `AdviseBroadcastMessages` (z prostředí sady Visual Studio) a naslouchat `WM_SYSCOLORCHANGE` a `WM_THEMECHANGED` zprávy.
-
 
 Přístup k této službě barvy v nativním kódu, provedete volání, které vypadá takto:
 
@@ -312,7 +311,7 @@ Mnoho běžných prvků uživatelského rozhraní již mít vysoký kontrast –
 | --- | --- |
 | ActiveCaption | – Integrované vývojové prostředí aktivní a glyfy rafted okno tlačítko na při najetí myší a stiskněte klávesu<br />-Title pozadí panelu pro integrované vývojové prostředí a rafted windows<br />– Pozadí panelu výchozí stav |
 | ActiveCaptionText | -Active integrovaného vývojového prostředí a rafted okna popředí panelu title (text a glyfy)<br />-Na pozadí a ohraničení tlačítka aktivní okno na při najetí myší a stiskněte klávesu |
-| Ovládací prvek | – Pole se seznamem, rozevíracího seznamu a hledání řídit výchozí a zakázán na pozadí, včetně tlačítko rozevíracího seznamu<br />-Pozadí tlačítka target ukotvení<br />-– Pozadí panelu příkaz<br />– Pozadí okna nástroj |
+| Control | – Pole se seznamem, rozevíracího seznamu a hledání řídit výchozí a zakázán na pozadí, včetně tlačítko rozevíracího seznamu<br />-Pozadí tlačítka target ukotvení<br />-– Pozadí panelu příkaz<br />– Pozadí okna nástroj |
 | ControlDark | – Integrované vývojové prostředí pozadí<br />-Oddělovače řádku nabídek a příkazů<br />-– Ohraničení panelu příkaz<br />– Shadows nabídka<br />– Nástroj okraj výchozí a při najetí myší kartě okna a oddělovač<br />-Dokumentu i na pozadí tlačítko přetečení<br />– Dock cíl piktogram ohraničení |
 | ControlDarkDark |– Okno s kartou bez fokusu, vybraný dokument |
 | ControlLight |-Karta border automatického schovávání<br />– Ohraničení pole se seznamem pole a rozevírací seznam<br />-Ukotvit cílové pozadí a ohraničení |

@@ -9,17 +9,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 50b38a5ca5c37fe2b372f863f695a968055895ff
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 49dde34079cc7d8b63ab374c0ceb16390f934d58
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54752608"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665725"
 ---
 # <a name="how-to-print-diagrams-from-the-graph-view-and-the-content-model-view"></a>Postupy: Tisk diagramů ze zobrazení grafu a ze zobrazení modelu obsahu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Toto téma popisuje, jak vytisknout diagram ze zobrazení grafu nebo zobrazení modelu obsahu.  
   
 ### <a name="to-print-diagrams-from-the-xml-schema-designer"></a>Tisk diagramů z Průzkumníka schémat XML  

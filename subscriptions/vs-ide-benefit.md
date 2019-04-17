@@ -7,17 +7,16 @@ ms.date: 04/03/2019
 ms.topic: conceptual
 description: Zjistěte, jak stáhnout a nainstalovat Visual Studio IDE, které jsou součástí vašeho předplatného sady Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: e2ac206e85d43cff897ff97b42b4b8fccaeec906
-ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
+ms.openlocfilehash: 00168d9ab31c29264cc4ca3dc3a65412861aac52
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/04/2019
-ms.locfileid: "59018139"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653163"
 ---
 # <a name="using-the-visual-studio-2019-benefit"></a>Používání benefitu Visual Studio 2019
 
 Jako předplatitel sady Visual Studio budete mít přístup k sadě Visual Studio IDE.  Konkrétní verzi, bude záviset na úrovni předplatného.  Výhoda se zobrazí jako dlaždice v kategorii nástroje na [výhody](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) stránku portálu pro předplatitele.
-
 
 ## <a name="activation-steps"></a>Postup aktivace
 
@@ -75,9 +74,7 @@ Chcete-li stáhnout integrovaném vývojovém prostředí:
 > [!NOTE]
 > Microsoft už nenabízí Visual Studio Professional ročních předplatných a předplatných Visual Studio Enterprise roční Cloudová předplatná. Nebude bez nutnosti změn stávajících zkušeností zákazníků a možnost obnovit, zvýšit, snížit nebo zrušit předplatná. Nové nepodnikovým zákazníkům přejít na [ https://visualstudio.microsoft.com/vs/pricing/ ](https://visualstudio.microsoft.com/vs/pricing/) a prozkoumejte různé možnosti pro zakoupení sady Visual Studio.
 
-
 Nejste si jistí které předplatné používáte?  Připojte se k [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) zobrazíte všechna předplatná, která jsou přiřazená e-mailovou adresu. Pokud se nezobrazí všechna předplatná, může mít jeden nebo více přiřazené na jinou e-mailovou adresu.  Bude potřeba přihlásit se přes tento e-mailovou adresu najdete v těchto předplatných.
-
 
 ## <a name="support-resources"></a>Informační zdroje podpory
 -  Potřebujete pomoc s Visual Studio IDE, podívejte se na tyto prostředky:

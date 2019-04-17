@@ -11,17 +11,16 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 77254bea0c4b587df8f4aef8297f17b6b4304339
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: f60f952b5784b0901c89f0c1f846ac39e6212a6b
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54800785"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59660146"
 ---
 # <a name="accessibility-tips-and-tricks"></a>Rady a tipy k usnadnění přístupu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] obsahuje vestavěných funkcí usnadnění, takže můžete snadno pracovat z klávesnice a pomocí čtečky obrazovky nebo jiné technologie pro usnadnění zařízení. Téma obsahuje některé návrhy pro optimalizaci [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] pro usnadnění přístupu, stejně jako některé užitečné kombinace klávesových zkratek.  
   
 > [!NOTE]

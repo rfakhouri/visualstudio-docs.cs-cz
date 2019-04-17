@@ -60,12 +60,12 @@ caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dbfb22a5854d8d966548e113f10c6fdb0ddc070a
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.openlocfilehash: 5953afed3ede465cab03677c00e2e930ac6b6cb4
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366611"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665740"
 ---
 # <a name="writing-code-in-the-code-and-text-editor"></a>Psaní kódu v editoru kódu a textovém editoru
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -171,7 +171,6 @@ Příkaz "Přejít na" Visual Studio nepodporuje cílené hledání kódu vám p
     Jak budete zadávat, výsledky se zobrazí v rozevíracím seznamu pod textovým polem.
 1. Přejít na element, vyberte v seznamu.
 
-
 ### <a name="filter-your-search"></a>Umožňuje filtrovat hledání
 
 Omezit hledání na pouze kód symboly, musí přejít na dotaz s "\@" znak. Například, pokud hledáte `@application`, přejít na zobrazí například pouze třídy, které obsahují slovo "aplikace" v nich.
@@ -193,7 +192,7 @@ Tato funkce je zvláště užitečné, pokud váš kód obsahuje dlouhé názvy.
 
 -   [Použití vývojového prostředí sady Visual Studio pro jazyk C#](../csharp-ide/using-the-visual-studio-development-environment-for-csharp.md)  
 
--   [Možnosti, textový editor, JavaScript, formátování](../ide/reference/options-text-editor-javascript-formatting.md)  
+-   [Možnosti, Textový editor, JavaScript, Formátování](../ide/reference/options-text-editor-javascript-formatting.md)  
 
 ## <a name="in-this-section"></a>V tomto oddílu  
 
@@ -201,9 +200,9 @@ Tato funkce je zvláště užitečné, pokud váš kód obsahuje dlouhé názvy.
 
 -   [Šifrování a zalomení řádků](../ide/encodings-and-line-breaks.md)  
 
--   [Sbalování](../ide/outlining.md)  
+-   [Sbalení](../ide/outlining.md)  
 
--   [Refaktoring](../ide/refactoring-in-visual-studio.md)  
+-   [Refactoring](../ide/refactoring-in-visual-studio.md)  
 
 -   [Tipy pro vyšší produktivitu](../ide/productivity-tips-for-visual-studio.md)  
 
@@ -213,7 +212,7 @@ Tato funkce je zvláště užitečné, pokud váš kód obsahuje dlouhé názvy.
 
 -   [Postupy: Sledování kódu přizpůsobením posuvníku](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md)  
 
--   [Postupy: Zobrazení a úpravy kódu s použitím funkce Náhled definice (Alt + F12)](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)  
+-   [Postupy: Zobrazení a úpravy kódu s použitím funkce Náhled definice (Alt+F12)](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)  
 
 -   [Rychlé akce pomocí žárovek](../ide/perform-quick-actions-with-light-bulbs.md)  
 
@@ -230,4 +229,4 @@ Tato funkce je zvláště užitečné, pokud váš kód obsahuje dlouhé názvy.
 -   [Nalezení změn kódu a další historie](../ide/find-code-changes-and-other-history-with-codelens.md)  
 
 ## <a name="see-also"></a>Viz také  
- [Visual Studio – sada IDE](../ide/visual-studio-ide.md)
+ [Integrované vývojové prostředí sady Visual Studio](../ide/visual-studio-ide.md)

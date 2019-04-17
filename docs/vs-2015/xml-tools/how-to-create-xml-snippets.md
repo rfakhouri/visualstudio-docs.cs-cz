@@ -9,17 +9,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4c676032c2d0bc6c47023c5fd43bc759cccff8de
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b64c94d26dcb197246f78b721fd087d5dbf1e0dc
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54773226"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59660356"
 ---
 # <a name="how-to-create-xml-snippets"></a>Postupy: Vytváření fragmentů XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 XML Editor lze použít k vytvoření nových fragmentů kódu XML. Editor obsahuje fragmentu XML, s názvem "Fragmentu kódu", který je často používaný text fragment kódu pro vytvoření nových fragmentů kódu XML.  
   
 ## <a name="to-create-a-new-xml-snippet"></a>Chcete-li vytvořit nové fragment kódu XML  
@@ -116,4 +115,4 @@ XML Editor lze použít k vytvoření nových fragmentů kódu XML. Editor obsah
 ## <a name="see-also"></a>Viz také  
  [Fragmentů XML](../xml-tools/xml-snippets.md)   
  [Postupy: Použití fragmentů XML](../xml-tools/how-to-use-xml-snippets.md)   
- [Postupy: Generování fragmentu XML ze schématu XML](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)
+ [Postupy: Generování fragmentu kódu XML ze schématu XML](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)

@@ -7,12 +7,12 @@ ms.date: 10/03/2017
 ms.topic: conceptual
 description: Zjistěte, jak nastavit účet Azure s průběžnými platbami.
 searchscope: VS Subscription
-ms.openlocfilehash: a5d6c0c609ddd87e29e7870792cbb558a756be6d
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 275088d1683c740e51caccb2ad4500dcc2885752
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843906"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59657646"
 ---
 # <a name="setting-up-an-azure-devtest-pay-as-you-go-subscription"></a>Nastavení předplatného služby Azure pro vývoj/testování s průběžnými platbami
 Spolupracujte se svým týmem v cloudu.  Vytvořte více předplatných pro vývoj / testování s průběžnými moct pracovat společně s dalšími předplatiteli a současně zajistí izolaci mezi týmy a prostředím.  Získají exkluzivní zlevněné hodinové sazby pro vývoj a testování a práva na používání cloudu pro svého předplaceného softwaru v Azure.
@@ -31,11 +31,9 @@ Spolupracujte se svým týmem v cloudu.  Vytvořte více předplatných pro výv
    > [!div class="mx-imgBorder"]
    > ![Registrace Azure průběžné platby](_img/vs-azure-payg/vs-azure-payg-identity-cropped.png)
 
-
 5. Dále zadejte prosím fakturační údaje pro svůj účet a klikněte na tlačítko **Další**.  (To bude platební karty, kterou se budou účtovat všechny vaše nákupy na Azure.)
    > [!div class="mx-imgBorder"]
    > ![Průběžné platby Azure platby](_img/vs-azure-payg/vs-azure-payg-payment-cropped.png)
-
 
 6. V části smlouva, klikněte na zaškrtávací políčko přijmout smlouvu o předplatném, podrobnosti a zásady ochrany osobních údajů a pak klikněte na **nákupní**.
 

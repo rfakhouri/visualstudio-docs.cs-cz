@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f61c9623cd2006f0df82c93dc420a25f23d3d2a
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: c84402fcccd289b7e4c80ffeaa988411e0c77baf
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416201"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59669950"
 ---
 # <a name="rules-propagate-changes-within-the-model"></a>Pravidla šířící změny v modelu
 Můžete vytvořit pravidlo úložiště, které rozšíří změnu z jednoho elementu do druhého v produktu Visualization and Modeling SDK (vmsdk následující položky). Když dojde ke změně k libovolnému prvku v Store, jsou naplánovány pravidla má být spuštěna, většinou když nejkrajnější transakce se potvrzeny. Existují různé typy pravidel pro různé druhy událostí, jako je například přidání elementu nebo jejím odstranění. Pravidla můžete připojit na konkrétní typy prvků, tvary nebo diagramů. Mnoho integrovaných funkcí, které jsou definovány pomocí pravidel: například pravidla ujistěte se, že diagramu se aktualizuje při změně modelu. Doménově specifického jazyka můžete přizpůsobit tak, že přidáte vlastní pravidla.
@@ -128,7 +128,6 @@ namespace ExampleNamespace
 
 - Třída pravidla odvození od některého z následujících základních tříd:
 
-
   | Základní třída | Trigger |
   |-|-|
   | <xref:Microsoft.VisualStudio.Modeling.AddRule> | Přidání elementu, odkaz nebo tvar.<br /><br /> To lze použijte k detekci nové relace, kromě nových elementů. |
@@ -141,7 +140,6 @@ namespace ExampleNamespace
   | <xref:Microsoft.VisualStudio.Modeling.TransactionBeginningRule> | Spustit při transakci. |
   | <xref:Microsoft.VisualStudio.Modeling.TransactionCommittingRule> | Spustit transakci blížící se odešlou. |
   | <xref:Microsoft.VisualStudio.Modeling.TransactionRollingBackRule> | Spustit, když transakce je vrácena zpět. |
-
 
 - Každá třída má metodu, která je přepsat. Typ `override` ve své třídě jej zjistit. Parametr této metody určuje prvek, který mění.
 

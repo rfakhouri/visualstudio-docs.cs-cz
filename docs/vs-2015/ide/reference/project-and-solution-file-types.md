@@ -30,23 +30,22 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b0c4a353923bbf5d98bd2ef4fcb3c5fe28447fe8
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 632c3027ccb8019e372abd6400dd3f2333742e05
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54773333"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658098"
 ---
 # <a name="project-and-solution-file-types"></a>Typy souborů projektu a řešení
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] podporuje mnoho typů souborů. V konkrétní instalaci nainstalované součásti určují, které typy souborů jsou podporovány. Toto téma uvádí řešení a typy souborů projektu, které jsou podporovány v některých typických instalacích. Informace o ostatních typech souborů vyhledejte pomocí přípon názvů souborů pro každý typ.  
   
 ## <a name="solution-files-sln-and-suo"></a>Soubory řešení (.sln a .suo)  
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] používá dva typy souborů (.sln a .suo) k ukládání nastavení specifických pro řešení. Tyto soubory, souhrnně označované jako soubory řešení, poskytnou Průzkumníku řešení informace potřebné k zobrazení grafického rozhraní pro správu vašich souborů. Umožňují vám soustředit se na projekty a konečné cíle, spíše než na prostředí samotné pokaždé, když se vrátíte k vašim vývojářským úlohám.  
   
-|Linka|Název|Popis|  
+|Linka|Name|Popis|  
 |---------------|----------|-----------------|  
 |.sln|[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Řešení|Uspořádá projekty, položky projektu a položky řešení do řešení.|  
 |.suo|Uživatelské možnosti řešení|Uchovává informace o přizpůsobení na úrovni uživatele provedené Visual Studio, jako například zarážky.|  

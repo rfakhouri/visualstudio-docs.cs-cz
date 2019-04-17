@@ -19,17 +19,16 @@ caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b8d70651d319f174f2ed7c1ee81021d89201bbcf
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 6113bbcb271aa7774bca538858b02edb9f5e3583
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54758645"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59662228"
 ---
 # <a name="al-assembly-linker-task"></a>AL (linker sestavení) – úloha
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Al – úloha zabalí AL.exe, nástroj, který je distribuován spolu s [!INCLUDE[winsdklong](../includes/winsdklong-md.md)]. Tento nástroj Linker sestavení se používá k vytvoření sestavení s manifestem z jednoho nebo více souborů, které jsou buď moduly nebo souborů prostředků. Kompilátory a vývojová prostředí už zadat tyto možnosti tak, aby byl často není potřeba přímo pomocí této úlohy. Linker sestavení je zvláště užitečná pro vývojáře, které by bylo potřeba vytvořte jedno sestavení z více souborů součástí, například ty, které může být vytvořen z jazyků vývoj. Tato úloha není možné sloučit moduly do jednoho sestavení souboru; jednotlivé moduly musí být stále distribuované a k dispozici v pořadí pro výsledné sestavení se načíst správně. Další informace o AL.exe najdete v tématu [Al.exe (Linker sestavení)](http://msdn.microsoft.com/library/b5382965-0053-47cf-b92f-862860275a01).  
   
 ## <a name="parameters"></a>Parametry  

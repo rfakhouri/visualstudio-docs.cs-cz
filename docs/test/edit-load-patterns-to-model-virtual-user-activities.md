@@ -10,12 +10,12 @@ ms.assetid: 0ba0363b-7f50-4bde-a919-0e3bce7bc115
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4a2c368f15da44bdc965d2176f290c2a796f4347
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b09ebf838b33eaddff485e179209a564ae81807a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55956412"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59657883"
 ---
 # <a name="edit-load-patterns-to-model-virtual-user-activities"></a>Úpravy vzorů zatížení pro model aktivity virtuálního uživatele
 
@@ -46,7 +46,6 @@ Vzor zatížení je součástí scénáře. Scénáře, spolu s jejich vzory zat
 
 > [!NOTE]
 > Pokud doba trvání celkový testu je kratší než čas, který je potřeba krok až do maximální uživatelské zatížení, pak se zastaví po uplynulá doba trvání testu a vůbec nedostane **maximální počet uživatelů** cíl.
-
 
  Cílem kroku můžete použít ke zvýšení zatížení, dokud se server dosáhne bod, který kde se výrazně snižuje výkon. Při zvýšení zátěže serveru nakonec dostatek prostředků. Krokové zatížení je dobrým způsobem, jak zjistit počet uživatelů, na kterých k tomu dochází. Při krokování zatížení budete muset také monitorovat prostředky agenta pečlivě sledují a ujistěte se, že agenty můžete generování požadovaného zatížení.
 
@@ -122,12 +121,10 @@ Vzor zatížení je součástí scénáře. Scénáře, spolu s jejich vzory zat
 > [!NOTE]
 > Úplný seznam vlastnosti scénáře zátěžového testu a jejich popis najdete v tématu [vlastnosti scénáře zátěžového testu](../test/load-test-scenario-properties.md).
 
-
  Vzor zatížení určuje počet virtuálních uživatelů aktivních během testu zatížení a rychlost, jakou se přidají nové uživatele. Můžete si vybrat z tři dostupné vzorky: krok vzor, konstanty a založeno na cíli. Další informace najdete v tématu [zadat počet virtuálních uživatelů se vzorci zatížení ve scénáři testu zatížení](../test/edit-load-patterns-to-model-virtual-user-activities.md).
 
 > [!NOTE]
 > Můžete také změnit vlastnosti zatížení prostřednictvím kódu programu pomocí modulu plug-in zátěžového testu. Další informace najdete v tématu [jak: Vytvoření modulu Plugin pro zátěžový test](../test/how-to-create-a-load-test-plug-in.md).
-
 
 ### <a name="to-change-the-load-pattern"></a>Chcete-li změnit vzor zatížení
 

@@ -19,17 +19,16 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 84b4ee6cba98e18379dc0e0e4fd81d8c10e37d7b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 979c476068afb3f76d4561c4d93a8c02ce4e4187
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54764539"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59648299"
 ---
 # <a name="save-data-to-a-database-multiple-tables"></a>Uložení dat do databáze (více tabulek)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Jedním z nejběžnějších scénářů při vývoji aplikace je zobrazení dat na formulář v nástrojích pro aplikace Windows, upravte údaje a odeslat aktualizovaná data zpět do databáze. Tento návod vytvoří formulář, který zobrazuje data ze dvou souvisejících tabulek a ukazuje, jak upravovat záznamy a změny uložit zpět do databáze. V tomto příkladu `Customers` a `Orders` tabulek z ukázkové databáze Northwind.  
   
  Data můžete uložit ve vaší aplikaci zpět do databáze pomocí volání `Update` metody třídy TableAdapter. Při přetažení tabulky z **zdroje dat** okna do formuláře, kód, který je potřeba k uložení dat se automaticky přidá. Žádné další tabulky, které jsou přidány k formuláři vyžadují ruční přidání tohoto kódu. Tento návod ukazuje, jak přidat kód pro uložení aktualizací z více než jedné tabulky.  

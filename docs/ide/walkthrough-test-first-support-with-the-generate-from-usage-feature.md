@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d4862bc9d4dc43549a1b0d5050035dbb8dd407b
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: 4e65a92e1dba9a6f6dcdd243681313e0aec9096a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355627"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59648418"
 ---
 # <a name="walkthrough-test-first-development-with-the-generate-from-usage-feature"></a>Návod: Vývoj včasného testování s funkcí generování před využitím
 
@@ -110,7 +110,6 @@ Teď vytvoříme testovací metoda, která se generovat podložení konstruktor 
 2.  Klikněte na tlačítko **rychlé akce** chyba světle kuličky v rámci červená vlnovka a potom klikněte na **generovat konstruktor 'Auto'**.
 
      V `Automobile` třídy souboru, Všimněte si, že nový konstruktor má prověřit, názvy místních proměnných, které se používají ve volání konstruktoru, nalezené vlastnosti, které mají stejné názvy v `Automobile` třídy a zadaný kód v těle konstruktoru na ukládání hodnot argumentů v `Model` a `TopSpeed` vlastnosti.
-
 
 3.  Jakmile vygenerujete nový konstruktor, podtržení vlnovkou se zobrazí pod volání výchozího konstruktoru v `DefaultAutomobileIsInitializedCorrectly`. Chybová zpráva uvádí, že `Automobile` třída nemá žádný konstruktor, který nepřijímá žádné argumenty. Chcete-li generovat explicitní výchozí konstruktor, který nemá žádné parametry, klikněte na tlačítko **rychlé akce** chyba žárovku a pak klikněte na **generovat konstruktor 'Auto'**.
 

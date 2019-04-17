@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 5de7976af32601b6df188162aef0e129789a5147
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: 5ea7b0c934dfeeee6825c558868388a65a8bdcd2
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58857382"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59655670"
 ---
 # <a name="troubleshoot-visual-studio-installation-and-upgrade-issues"></a>Řešení potíží s instalací sady Visual Studio a upgradovat problémy
 
@@ -62,7 +62,7 @@ Instalační program sady Visual Studio bootstrapper je minimální odlehčené 
 
 1. Ukončete instalační program sady Visual Studio.
 2. Odstraňte adresář instalační program sady Visual Studio. Adresář je obvykle `C:\Program Files (x86)\Microsoft Visual Studio\Installer`.
-3. Spusťte instalační program sady Visual Studio zaváděcí nástroj. Zaváděcí nástroj může najít ve složce stažené soubory s názvem souboru, který následuje `vs_[Visual Studio edition]__*.exe` vzor. Pokud tuto aplikaci se nepodařilo najít, zaváděcí nástroj můžete stáhnout tak, že přejdete [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) stránku a kliknutím na **Stáhnout** vaší verze sady Visual Studio. Spusťte spustitelný soubor resetovat vaše instalace metadata.
+3. Spusťte instalační program sady Visual Studio zaváděcí nástroj. Zaváděcí nástroj může najít ve složce stažené soubory s názvem souboru, který následuje `vs_[Visual Studio edition]__*.exe` vzor. Pokud tuto aplikaci se nepodařilo najít, zaváděcí nástroj můžete stáhnout tak, že přejdete [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) stránku a kliknutím na **Stáhnout** vaší verze sady Visual Studio. Spusťte spustitelný soubor resetovat vaše instalace metadata.
 4. Akci pro instalaci nebo aktualizaci sady Visual Studio znovu. Pokud instalační program ani potom nedaří, přejděte k dalšímu kroku.
 
 ::: moniker-end
@@ -146,4 +146,4 @@ Pokud řešení uvedené v této příručce pro řešení potíží vám jak ú
 * [Odebrání sady Visual Studio](remove-visual-studio.md)
 * [Instalace a používání sady Visual Studio a služeb Azure za bránou firewall nebo proxy serverem](install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md)
 * [Nástroje pro zjišťování a správu instancí sady Visual Studio](tools-for-managing-visual-studio-instances.md)
-* [Příručka správce sady Visual Studio](visual-studio-administrator-guide.md)
+* [Příručka pro správce aplikace Visual Studio](visual-studio-administrator-guide.md)

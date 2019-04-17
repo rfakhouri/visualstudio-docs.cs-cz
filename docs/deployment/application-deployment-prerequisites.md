@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5dfc0bccd0b5b8ae55f5e4df6aec1a85254e2220
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 12a46c424e8b2c44e0622edf4b4a615273580814
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56600485"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59657589"
 ---
 # <a name="application-deployment-prerequisites"></a>Nezbytné součásti nasazení aplikace
 
@@ -70,7 +70,6 @@ Pokud chcete, aby vaše aplikace k instalaci a spuštění úspěšně, nejprve 
  *Setup.exe* generovaných [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] a úlohy nástroje MSBuild podporuje následující sadu argumentů příkazového řádku. Libovolné další argumenty jsou předány instalačním programem aplikace.
 
  Pokud změníte všechny možnosti zaváděcí nástroj, musíte změnit bez znaménka zaváděcího nástroje a později podepsat soubor zaváděcí nástroj.
-
 
 | argument příkazového řádku | Popis |
 | - | - |

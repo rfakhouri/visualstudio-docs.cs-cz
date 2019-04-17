@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f90e6c4bb3759adb46bf827580cc94dc4a8ed71f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 69a8d3f1b84bd59cec9e13bf50eb8eaa46795cdf
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927175"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658289"
 ---
 # <a name="options-text-editor-html-web-forms-formatting"></a>Možnosti, textový Editor HTML (webové formuláře), formátování
 
@@ -41,7 +41,6 @@ Tyto možnosti určují, jak velké značky pro ovládací prvky webového serve
 |**Malá**|Názvy elementů jsou přeformátována na malá písmena.|
 |**Definice sestavení**|Element případ je určeno v odpovídajícím typu třídy bude definován takhle elementu.|
 
-
 **Značka klienta, atributy klienta**
 
 Tyto možnosti určit, zda automatické formátování změní názvy atributů HTML a vlastnosti na velká nebo malá nebo zůstanou jako vložené.
@@ -51,7 +50,6 @@ Tyto možnosti určit, zda automatické formátování změní názvy atributů 
 |**Jako vložené**|Atribut případem je stejným způsobem, jako je zadat.|
 |**velká písmena**|Názvy atributů jsou přeformátována na velká písmena.|
 |**Malá**|Názvy atributů jsou přeformátována na malá písmena.|
-
 
 ## <a name="automatic-formatting-options"></a>Možnosti automatického formátování
 
@@ -65,7 +63,6 @@ Tyto možnosti způsobit zobrazení editoru zdrojového kódu s přidáváním a
 - **Při psaní vkládat uvozovky u hodnot atributů**
 
    Pokud je vybraná tato možnost, editor automaticky vloží atributů do uvozovek při psaní (například: ID = "Select1"). Pokud chcete vkládání uvozovek do vašeho kódu ručně, zrušte zaškrtnutí tohoto políčka.
-
 
    > [!NOTE]
    > Jestli je vybraná tato možnost, všechny existující uvozovky ve vašem kódu jsou zachovány; uvozovky jsou nikdy neodeberou.

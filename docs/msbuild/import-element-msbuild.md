@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b4c7df0cf9e837e27e8f572bb50d5e3395b3424a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: ec4e48bdd1a7f8701f46ed84296f7aad4490d08a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56629908"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59652797"
 ---
 # <a name="import-element-msbuild"></a>Import – element (MSBuild)
 Importuje obsah jednoho souboru projektu do jiného souboru projektu.
@@ -48,7 +48,7 @@ Importuje obsah jednoho souboru projektu do jiného souboru projektu.
 |`Condition`|Nepovinný atribut.<br /><br /> Stav, který se má vyhodnotit. Další informace najdete v tématu [podmínky](../msbuild/msbuild-conditions.md).|
 
 ### <a name="child-elements"></a>Podřízené prvky
- Žádná
+ Žádné
 
 ### <a name="parent-elements"></a>Nadřazené prvky
 
@@ -69,7 +69,6 @@ Importuje obsah jednoho souboru projektu do jiného souboru projektu.
  Pokud importovaném projektu nemá `DefaultTargets` atribut importovat projekty jsou kontrolovány v pořadí, ve kterém se importují, a hodnotu prvního zjištění `DefaultTargets` atribut se používá. Například, pokud ProjectA importuje ProjectB a ProjectC (v uvedeném pořadí) a ProjectB importuje ProjectD [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] nejprve hledá `DefaultTargets` zadat pro výzkum, pak ProjectB, pak ProjectD a nakonec ProjectC.
 
  Schéma importovaném projektu je stejný jako u standardní projekt. I když [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] může být možné sestavit importovaném projektu, nepravděpodobné, protože importovaném projektu obvykle neobsahuje informace o vlastnosti, které k sadě nebo pořadí, ve kterém se spustí cíle. Importovaném projektu závisí na projektu, do kterého je importován předejte tyto informace.
-
 
 ## <a name="wildcards"></a>Zástupné znaky
  V rozhraní .NET Framework 4 nástroj MSBuild umožňuje zástupné znaky v atributu projektu. Po zástupné znaky se nalezeny všechny shody jsou seřazené (pro reprodukovatelnost) a potom jejich importování v tomto pořadí jakoby pořadí měli explicitně nastavit.

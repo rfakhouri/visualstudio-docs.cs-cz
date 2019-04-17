@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 89ddfd81c68ed2ef675052d1fbba524f0a03cfc2
-ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
+ms.openlocfilehash: 89c4a4a25c2dfdeb33bfadcf8416a0cbc4726658
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "59232811"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649951"
 ---
 # <a name="shared-colors-for-visual-studio"></a>Sdílené barvy pro Visual Studio
 Když vytváříte uživatelské rozhraní, které používá běžné prvky prostředí Visual Studio nebo prvek rozhraní konzistentní s podobnými funkcemi, například, vybrat a přiřadit barvy pomocí existující token názvy v souborech s definicí balíčku. Tím se zajistí, že vaše uživatelské rozhraní zůstane konzistentní s celkové prostředí sady Visual Studio a že se automaticky aktualizuje při přidávání nebo aktualizaci motivy.
@@ -315,7 +315,7 @@ Záhlaví sloupců se skládají z na pozadí, ohraničení, text nadpisu a voli
 | --- | --- |
 | Pozadí | `TreeView.SelectedItemInactive` |
 | Popředí (Text) | `TreeView.SelectedItemInactiveText` |
-| Ohraničení | Žádné |
+| Ohraničení | Žádný |
 
 ### <a name="ui-text"></a>Text uživatelského rozhraní
 
@@ -427,7 +427,7 @@ Infobars se používají k poskytují další informace o daném kontextu a vžd
 | Popředí (Text) | `InfoBar.InfoBar` |
 | Ohraničení | `InfoBar.InfoBarBorder` |
 
-**Zavřít informační panel (&times;) tlačítko: výchozí stav**
+**Informační panel zavřít (&times;) tlačítko: výchozí stav**
 
 ![Výchozí zavřít informační panel (&times;) tlačítko](../../extensibility/ux-guidelines/media/0303_InfobarCloseDefault.png "0303_InfobarCloseDefault.png")<br />Informační panel zavřete výchozí (&times;) tlačítko
 
@@ -437,7 +437,7 @@ Infobars se používají k poskytují další informace o daném kontextu a vžd
 | Ohraničení | `InfoBar.CloseButtonBorder` |
 | Piktogram | `InfoBar.CloseButtonGlyph` |
 
-**Zavřít informační panel (&times;) tlačítko: najeďte na stav**
+**Informační panel zavřít (&times;) tlačítko: ukazatel stavu**
 
 ![Zavřít informační panel (&times;) tlačítka při najetí myší](../../extensibility/ux-guidelines/media/0303_InfobarCloseHover.png "0303_InfobarCloseHover.png")<br />Informační panel zavřít (&times;) tlačítka na přechodu.
 
@@ -447,7 +447,7 @@ Infobars se používají k poskytují další informace o daném kontextu a vžd
 | Ohraničení | `InfoBar.CloseButtonHoverBorder` |
 | Piktogram | `InfoBar.CloseButtonHoverGlyph` |
 
-**Zavřít informační panel (&times;) tlačítko: stisknutí stavu**
+**Informační panel zavřít (&times;) tlačítka: stav stisknutí**
 
 ![Stisknutí zavřít informační panel (&times;) tlačítko](../../extensibility/ux-guidelines/media/0303_InfobarClosePressed.png "0303_InfobarClosePressed.png")<br />Klepnutí na informační panel zavřít (&times;) tlačítko
 
@@ -884,7 +884,7 @@ Hierarchické organizační schéma, jehož barvy jsou řízeny názvy barev v p
 | Pozadí | `TreeView.Background` |
 | Popředí (Text) | `TreeView.Background` |
 | Popředí (piktogram) | `TreeView.GlyphMouseOver` |
-| Ohraničení | Žádné |
+| Ohraničení | Žádný |
 
 **Položky zobrazení stromu: přetáhněte přes stát**
 
@@ -895,7 +895,7 @@ Hierarchické organizační schéma, jehož barvy jsou řízeny názvy barev v p
 | Pozadí | `TreeView.DragOverItem` |
 | Popředí (Text) | `TreeView.DragOverItem` |
 | Popředí (piktogram) | `TreeView.DragOverItemGlyph` |
-| Ohraničení | Žádné |
+| Ohraničení | Žádný |
 
 **Položky zobrazení stromu: vybrané, zaměřený stav**
 
@@ -917,7 +917,7 @@ Hierarchické organizační schéma, jehož barvy jsou řízeny názvy barev v p
 | Pozadí | `TreeView.SelectedItemInactive` |
 | Popředí (Text) | `TreeView.SelectedItemInactive` |
 | Popředí (piktogram) | `TreeView.SelectedItemInactiveGlyph` |
-| Ohraničení | Žádné |
+| Ohraničení | Žádný |
 
 **Položky zobrazení stromu: při přechodu myší, vybrali a zaměřena stavu**
 
@@ -939,7 +939,7 @@ Hierarchické organizační schéma, jehož barvy jsou řízeny názvy barev v p
 | Pozadí | `TreeView.SelectedItemInactive` |
 | Popředí (Text) | `TreeView.SelectedItemInactive` |
 | Popředí (piktogram) | `TreeView.SelectedItemActiveGlyphMouseOver` |
-| Ohraničení | Žádný |
+| Ohraničení | Žádné |
 
 ## <a name="shell-appearance"></a>Vzhled prostředí
 
@@ -1907,7 +1907,7 @@ Visual Studio podporuje označování, které umožňuje uživateli deklarovat p
 
 #### <a name="close-times-tag-glyph"></a>Zavřít (&times;) značky glyfů
 
-**Zavřít (&times;) označit piktogram: výchozí stav**
+**Zavřít (&times;) značky glyfů: výchozí stav**
 
 ![Výchozí Zavřít (&times;) označit piktogram](../../extensibility/ux-guidelines/media/0303-181_tagglyph.png "0303 181_TagGlyph")<br />Výchozí Zavřít (&times;) značky glyfů
 
@@ -1916,7 +1916,7 @@ Visual Studio podporuje označování, které umožňuje uživateli deklarovat p
 | Pozadí | Není k dispozici |
 | Popředí (piktogram) | `Tag.TagHoverGlyph` |
 
-**Zavřít (&times;) označit piktogram: najeďte na stav**
+**Zavřít (&times;) značky glyfů: ukazatel stavu**
 
 ![Zavřít (&times;) označit piktogram při najetí myší](../../extensibility/ux-guidelines/media/0303-182_tagglyphhover.png "0303 182_TagGlyphHover")<br />Zavřít (&times;) značky glyfů v přechodu.
 
@@ -1926,7 +1926,7 @@ Visual Studio podporuje označování, které umožňuje uživateli deklarovat p
 | Popředí (piktogram) | `Tag.TagHoverGlyphHover` |
 | Ohraničení | `Tag.TagHoverGlyphHoverBorder` |
 
-**Zavřít (&times;) označit piktogram: stisknutí stavu**
+**Zavřít (&times;) značky glyfů: stav stisknutí**
 
 ![Stisknutí Zavřít (&times;) označit piktogram](../../extensibility/ux-guidelines/media/0303-183_tagglyphpressed.png "0303 183_TagGlyphPressed")<br />Stisknutí tlačítka Zavřít (&times;) značky glyfů
 
@@ -1936,7 +1936,7 @@ Visual Studio podporuje označování, které umožňuje uživateli deklarovat p
 | Popředí (piktogram) | `Tag.TagHoverGlyphPressed` |
 | Ohraničení | `Tag.TagHoverGlyphPressedBorder` |
 
-**Vybraná značka Zavřít (&times;) piktogram: výchozí stav**
+**Vybrané značky se zavřít (&times;) glyfů: výchozí stav**
 
 ![Výchozí možností Zavřít vybranou značku (&times;) piktogram](../../extensibility/ux-guidelines/media/0303-184_tagselected.png "0303 184_TagSelected")<br />Výchozí vybranou značku s Zavřít (&times;) – piktogram
 
@@ -1945,10 +1945,9 @@ Visual Studio podporuje označování, které umožňuje uživateli deklarovat p
 | Pozadí | Není k dispozici |
 | Popředí (piktogram) | `Tag.TagSelectedGlyph` |
 
-**Vybraná značka Zavřít (&times;) piktogram: najeďte na stav**
+**Vybrané značky se zavřít (&times;) glyfů: ukazatel stavu**
 
 ![Vybraná značka Zavřít (&times;) piktogram při najetí myší](../../extensibility/ux-guidelines/media/0303-185_tagselectedhover.png "0303 185_TagSelectedHover")<br />Vybrané značky se zavřít (&times;) glyfů v přechodu.
-
 
 | Prvek | Název tokenu: Category.Color |
 | --- | --- |
@@ -1956,7 +1955,7 @@ Visual Studio podporuje označování, které umožňuje uživateli deklarovat p
 | Popředí (piktogram) | `Tag.TagSelectedGlyphHover` |
 | Ohraničení | `Tag.TagSelectedGlyphHoverBorder` |
 
-**Vybraná značka Zavřít (&times;) piktogram: stisknutí stavu**
+**Vybrané značky se zavřít (&times;) glyfů: stav stisknutí**
 
 ![Vybraná, stisknutí značka Zavřít (&times;) piktogram](../../extensibility/ux-guidelines/media/0303-186_tagselectedpressed.png "0303 186_TagSelectedPressed")<br />Vybrané, značka s zavřít stisknutí (&times;) – piktogram
 

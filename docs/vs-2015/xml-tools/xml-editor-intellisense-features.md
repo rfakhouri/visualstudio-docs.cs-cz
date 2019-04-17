@@ -9,17 +9,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b8299e96f6ec074ce82dcd1fd872e56886c2d19b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 64c7bc0f5b9aa9b23aa940583cebcd3e202e6487
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54803255"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653642"
 ---
 # <a name="xml-editor-intellisense-features"></a>Funkce IntelliSense editoru XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 XML Editor poskytuje úplné funkce IntelliSense srovnatelná s hodnotou jiné editory jazyk v sadě Visual Studio. Tato část vysvětluje, jak můžete pomocí technologie IntelliSense se schéma XML definice jazyk (XSD) a dokumentů XSLT.  
   
 ## <a name="intellisense-in-an-xsd-document"></a>Technologie IntelliSense v XSD dokumentu  
@@ -105,7 +104,7 @@ XML Editor poskytuje úplné funkce IntelliSense srovnatelná s hodnotou jiné e
   
  **Automatické vložení** část **různé** ovládací prvky stránek následující chování:  
   
-|Název|Popis|  
+|Name|Popis|  
 |----------|-----------------|  
 |Zavřít značky|Vloží uzavírací značky pro nové prvky.|  
 |Uvozovky atributu|Když zadáte nový název atributu, vloží uvozovky u hodnot atributů.|  
@@ -122,4 +121,4 @@ XML Editor poskytuje úplné funkce IntelliSense srovnatelná s hodnotou jiné e
 ## <a name="see-also"></a>Viz také  
  [XML Editor](../xml-tools/xml-editor.md)   
  [Používání atributu IntelliSense](../ide/using-intellisense.md)   
- [Návod: Používání XSLT IntelliSense](../xml-tools/walkthrough-using-xslt-intellisense.md)
+ [Návod: Používání IntelliSense pro XSLT](../xml-tools/walkthrough-using-xslt-intellisense.md)

@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: bc7f1bbc7b74c88884409767d9c2617d6ad564b1
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.openlocfilehash: 759a1e2c5ba1c3ecff983e1d2ca3903471b7f5fe
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58789377"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59666741"
 ---
 # <a name="uninstall-visual-studio"></a>Odinstalace sady Visual Studio
 
@@ -97,7 +97,6 @@ Chcete-li odebrat všechny instalace Visual Studio 2019, stejně jako instalačn
 1. Zvolte **odinstalovat**.
 
 ::: moniker-end
-
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

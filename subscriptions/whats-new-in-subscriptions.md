@@ -8,12 +8,12 @@ ms.topic: conceptual
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 81c7c62a85af6950c1c888e9f6673fc0d4429735
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: dc243e057e3e0d4eec6ea314b0e7aa0778d6c0dc
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842062"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59655657"
 ---
 # <a name="what39s-new-in-visual-studio-subscriptions"></a>Co&#39;s novou v předplatných sady Visual Studio
 
@@ -34,7 +34,6 @@ Přidali jsme nové funkce pro správce cloudu, umožňující snadnější spr�
 * [**Export**](/visualstudio/subscriptions/exporting-subscriptions): Exportujte seznam uživatelů a podrobnosti o jejich přiřazení. Seznam například to může být velmi užitečné, pokud chcete ke sledování přiřazení a datum vypršení platnosti.
 
    ![Exportovat seznam předplatitelů do aplikace Excel s použitím tlačítko pro Export](media/export-subscriber-list-to-csv.png)
-
 
 * [**Hromadná úprava**](/visualstudio/subscriptions/edit-license#editing-multiple-subscribers-by-using-bulk-edit): Informace o předplatném několik předplatitelů hromadných úprav
 

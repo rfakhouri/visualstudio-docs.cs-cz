@@ -12,23 +12,22 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ae1dc5c7eb8b1f10771afacfe1398e17b2bf8ed8
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: a5c6a2314fe1673efba27d829c1141dcfd5be1cc
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54753513"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59666816"
 ---
 # <a name="options-page-environment-node-properties"></a>Stránka Možnosti, vlastnosti uzlu prostředí
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Tento dokument popisuje stránky (nebo kolekce vlastností), které jsou přidruženy **prostředí** kategorie, `DTE.Properties("Environment", <Property Page>)`, nástroje **možnosti** dialogové okno. Název každého pododdílu je volání, které slouží k přístupu k vlastnosti kolekce a v tabulce v každém pododdílu jsou uvedeny vlastnosti v kolekci.  
   
 ## <a name="general"></a>Obecné  
  `DTE.Properties("Environment", "General")`  
   
-|Název položky vlastnosti|Hodnota|Popis|  
+|Název položky vlastnosti|Value|Popis|  
 |------------------------|-----------|-----------------|  
 |ShowStatusBar|Get/Set (Boolean)|Určuje, zda je viditelný stavový řádek.|  
 |WindowMenuContainsNItems|Získá nebo nastaví (krátký)|Určuje, jak okna dokumentu jsou obsaženy v dolní části nabídky Windows.|  
@@ -43,7 +42,7 @@ Tento dokument popisuje stránky (nebo kolekce vlastností), které jsou přidru
 ## <a name="add-inmacros-security"></a>Přidat doplňků/maker zabezpečení  
  `DTE.Properties("Environment", "AddinMacrosSecurity")`  
   
-|Název položky vlastnosti|Hodnota|Popis|  
+|Název položky vlastnosti|Value|Popis|  
 |------------------------|-----------|-----------------|  
 |MacrosEnabled|Get/Set (Boolean)|Umožňuje spuštění maker.|  
 |AddinsEnabled|Get/Set (Boolean)|Umožňuje doplňků pro načtení.|  
@@ -88,7 +87,7 @@ Tento dokument popisuje stránky (nebo kolekce vlastností), které jsou přidru
 ## <a name="import-and-export-settings"></a>Nastavení importu a exportu  
  `DTE.Properties("Environment", "Import and Export Settings")`  
   
-|Název položky vlastnosti|Hodnota|Popis|  
+|Název položky vlastnosti|Value|Popis|  
 |------------------------|-----------|-----------------|  
 |TrackTeamSettings|Get/Set (Boolean)|Použije nastavení v souboru určeném TeamSettingsFile.|  
 |TeamSettingsFile|Získá nebo nastaví (String)|Název souboru, který má nastavení týmu.|  
@@ -97,21 +96,21 @@ Tento dokument popisuje stránky (nebo kolekce vlastností), které jsou přidru
 ## <a name="international-settings"></a>Mezinárodní nastavení  
  `DTE.Properties("Environment", "International")`  
   
-|Název položky vlastnosti|Hodnota|Popis|  
+|Název položky vlastnosti|Value|Popis|  
 |------------------------|-----------|-----------------|  
 |Jazyk|Získá nebo nastaví (String)|Hodnota LCID pro aktuální jazyk pro Visual Studio.|  
   
 ## <a name="keyboard"></a>Klávesnice  
  `DTE.Properties("Environment", "Keyboard")`  
   
-|Název položky vlastnosti|Hodnota|Popis|  
+|Název položky vlastnosti|Value|Popis|  
 |------------------------|-----------|-----------------|  
 |Schéma|Získá nebo nastaví (String)|Vrátí řetězec, který obsahuje vestavěné schéma, řetězec obsahující úplnou cestu souboru .vsk, který je načten nebo "(výchozí)" Pokud se žádný soubor .vsk, který je načten.|  
   
 ## <a name="projects-and-solution"></a>Projekty a řešení  
  `DTE.Properties("Environment", "ProjectsAndSolution")`  
   
-|Název položky vlastnosti|Hodnota|Popis|  
+|Název položky vlastnosti|Value|Popis|  
 |------------------------|-----------|-----------------|  
 |OnRunOrPreview|Získá nebo nastaví (String)|Určuje, zda integrovaného vývojového prostředí všechno, co ukládat před náhledem nebo spuštěním sestavením projektu.|  
 |ProjectsLocation|Získá nebo nastaví (String)|Určuje výchozí adresář kde **přidat projekt** dialogové okno uloží nové projekty.|  
@@ -134,7 +133,7 @@ Tento dokument popisuje stránky (nebo kolekce vlastností), které jsou přidru
 ## <a name="startup"></a>Třída pro spuštění  
  `DTE.Properties("Environment", "Startup")`  
   
-|Název položky vlastnosti|Hodnota|Popis|  
+|Název položky vlastnosti|Value|Popis|  
 |------------------------|-----------|-----------------|  
 |OnStartUp|Get/Set (Enum)|Akce se má provést při spuštění z <xref:EnvDTE.vsStartUp>, s hodnotami 0 až 5:<br /><br /> -   0: Otevřít domovskou stránku<br />-   1: Načíst poslední načtené řešení<br />-   2: Zobrazit **otevřít projekt** dialogové okno<br />-   3: Zobrazit **nový projekt** dialogové okno<br />-   4: Zobrazit prázdné prostředí<br />-   5: Zobrazit úvodní stránku|  
 |StartPageRSSUrl|Získá nebo nastaví (String)|Adresa URL pro informační kanál RSS informačního kanálu, který se používá při spuštění.|  
@@ -144,7 +143,7 @@ Tento dokument popisuje stránky (nebo kolekce vlastností), které jsou přidru
 ## <a name="tasklist"></a>Seznamu úkolů  
  `DTE.Properties("Environment", "TaskList")`  
   
-|Název položky vlastnosti|Hodnota|Popis|  
+|Název položky vlastnosti|Value|Popis|  
 |------------------------|-----------|-----------------|  
 |ConfirmTaskDeletion|Get/Set (Boolean)|Určuje, zda potvrzovací okno se zobrazí při odstraňování úlohy **seznamu úkolů**.|  
 |WarnOnAddingHiddenItem|Get/Set (Boolean)|Určuje, zda se zobrazí upozornění při přidávání uživatele úlohu, která se nezobrazí.|  
@@ -154,7 +153,7 @@ Tento dokument popisuje stránky (nebo kolekce vlastností), které jsou přidru
 ## <a name="web-browser"></a>Webový prohlížeč  
  `DTE.Properties("Environment", "WebBrowser")`  
   
-|Název položky vlastnosti|Hodnota|Popis|  
+|Název položky vlastnosti|Value|Popis|  
 |------------------------|-----------|-----------------|  
 |Domovská stránka|Získá nebo nastaví (String)|Představuje adresu URL domovské stránky.|  
 |SearchPage|Získá nebo nastaví (String)|Představuje adresu URL stránky vyhledávání.|  

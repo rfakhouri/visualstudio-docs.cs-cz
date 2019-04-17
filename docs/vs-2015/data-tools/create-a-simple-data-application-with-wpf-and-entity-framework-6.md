@@ -9,17 +9,16 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 56c211597e99689e1ad263cfe12d7dafdf3cf5cc
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 62e1a6c317752dc5513a51d3e8018d15c9598b93
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57870406"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59664797"
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>Vytvoření jednoduché datové aplikace s použitím WPF a Entity Framework 6
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Tento názorný ukazuje, jak vytvořit základní "formy nad daty" aplikace v sadě Visual Studio s SQL Server LocalDB, Northwind databáze, Entity Framework 6 a Windows Presentation Foundation. Ukazuje, jak provést základní datové vazby seznam podrobnosti zobrazení a také se vlastní "vazby Navigátor" pomocí tlačítka pro "Přesunout na další", "Přesunout na předchozí," "Přesunout na začátek," "přesunout na konec," "Aktualizace" a "Odstranit".  
   
  Tento článek se zaměřuje na pomocí nástrojů data v sadě Visual Studio a nebude pokoušet o vysvětlují základní technologie v libovolnou hloubku. Předpokládá, že máte základní znalosti s XAML, Entity Framework a SQL. Tento příklad také neukazuje architektury MVVM, což je standard pro aplikace WPF. Tento kód však můžete zkopírovat do MVVM aplikace s velmi několik změn.  

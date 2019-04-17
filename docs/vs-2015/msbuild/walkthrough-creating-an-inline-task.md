@@ -1,5 +1,5 @@
 ---
-title: 'Průvodce: Vytvoření vložené úlohy | Dokumentace Microsoftu'
+title: 'Návod: Vytvoření vložené úlohy | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -12,17 +12,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f1dd2cb3278357f05d5ed08031c8e385d45f1a35
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 11a8f649256c9c25f045f4417d293e7b6ff842a7
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54800489"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59655384"
 ---
-# <a name="walkthrough-creating-an-inline-task"></a>Průvodce: Vytvoření vložené úlohy
+# <a name="walkthrough-creating-an-inline-task"></a>Návod: Vytvoření vložené úlohy
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Úlohy nástroje MSBuild se obvykle vytvářejí kompilováním třídy, která implementuje <xref:Microsoft.Build.Framework.ITask> rozhraní. Od verze rozhraní .NET Framework verze 4, můžete vytvořit úlohy vložené v souboru projektu. Není nutné vytvořit samostatné sestavení pro hostování úkolu. Další informace najdete v tématu [vložené úlohy](../msbuild/msbuild-inline-tasks.md).  
   
  Tento návod ukazuje, jak vytvářet a spouštět tyto vložené úlohy:  

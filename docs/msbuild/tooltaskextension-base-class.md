@@ -15,19 +15,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e4cb02cdaf2827ac5c892c7565f446d8f84257c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 061d78a1e6415d6e7386fdc4de76aa1dd8ddd6d6
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56623005"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59663086"
 ---
 # <a name="tooltaskextension-base-class"></a>Tooltaskextension – základní třída
 Dědí celou řadu úloh <xref:Microsoft.Build.Tasks.ToolTaskExtension> třída, která dědí z <xref:Microsoft.Build.Utilities.ToolTask> třída, která sama dědí z <xref:Microsoft.Build.Utilities.Task> třídy. Tento řetězec dědičnosti přidá několik parametrů do úlohy, které jsou odvozeny z nich. Tyto parametry jsou uvedeny v tomto dokumentu.
 
 ## <a name="parameters"></a>Parametry
  Následující tabulka popisuje parametry základní třídy.
-
 
 | Parametr | Popis |
 | - | - |

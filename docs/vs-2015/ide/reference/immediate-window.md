@@ -15,17 +15,16 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e856a4fcdc2fbe9174c91910f6676be9e03fafb0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 574b480cbdce0f038ba4d94be6dc2ba9cf46726c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54802671"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59660291"
 ---
 # <a name="immediate-window"></a>Příkazové podokno
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 **Okamžité** okna slouží k ladění a vyhodnocení výrazů, spuštění příkazů, tisku hodnot proměnných a tak dále. Umožňuje zadat výrazy k vyhodnocování nebo provádění ve vývojovém jazyce během ladění. Pro zobrazení **okamžité** okno, otevřete projekt pro úpravy a pak zvolte **Windows** z **ladění** nabídky a vybereme **okamžité**, nebo stiskněte kombinaci kláves CTRL + ALT + I.  
   
  Můžete použít toto okno k vydání jednotlivých [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] příkazy. Dostupné příkazy zahrnují `EvaluateStatement`, který slouží k přiřazení hodnoty proměnné. **Okamžité** okna také podporuje technologii IntelliSense.  

@@ -9,17 +9,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 05acf62d30a1ac272003c0883b4a8c927e13e659
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a57f94758d4289981740ed9c1a8a463a8a97887d
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54790059"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59661591"
 ---
 # <a name="datacontext-methods-or-designer"></a>Metody DataContext (O/R Designer)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 DataContext] (assetId:///T:System.Data.Linq.DataContext?qualifyHint=False & autoUpgrade = True) metody (v kontextu [LINQ to SQL nástroje v sadě Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)) jsou metody <xref:System.Data.Linq.DataContext> třída, která spustí uložené postupy a funkce v databázi.  
   
  <xref:System.Data.Linq.DataContext> Třída je [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] třídu, která funguje jako přenos mezi databází systému SQL Server a [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] tříd entit namapována na tuto databázi. <xref:System.Data.Linq.DataContext> Třída obsahuje metody pro připojení k databázi a manipulace s daty v databázi a informace o připojovacím řetězci. Ve výchozím nastavení <xref:System.Data.Linq.DataContext> třída obsahuje několik metod, které bude možné volat, například <xref:System.Data.Linq.DataContext.SubmitChanges%2A> metodu, která odešle aktualizovaná data z [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] třídy do databáze. Můžete také vytvořit další <xref:System.Data.Linq.DataContext> metody, které se mapují na uložené procedury a funkce. Jinými slovy, volání těchto metod vlastní Spustí uloženou proceduru nebo funkci v databázi, která <xref:System.Data.Linq.DataContext> metoda je namapována na. Můžete přidat nové metody <xref:System.Data.Linq.DataContext> třídy stejně, jako byste přidali metody rozšíření libovolné třídy. Nicméně v diskuzích k žádostem o <xref:System.Data.Linq.DataContext> metody v kontextu [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)], je <xref:System.Data.Linq.DataContext> metody, které se mapují na uložené procedury a funkce, které byly diskutovány.  

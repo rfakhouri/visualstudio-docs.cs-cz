@@ -21,17 +21,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bd437be1dd61e05259bc13501d7b9b9aaa06e285
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: beb0296834986648f47357da50d4022c1f632823
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54753529"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658783"
 ---
 # <a name="properties-window"></a>Okno vlastností
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Toto okno k zobrazení a změna vlastností návrhu a událostí vybraných objektů, které se nacházejí v editorech a návrhářích. Můžete také použít **vlastnosti** okna k úpravám a zobrazování souborů, projektů a vlastností řešení. Můžete najít **vlastnosti** na okno **zobrazení** nabídky. Můžete také otevřít ji stisknutím klávesy F4 nebo zadáním **vlastnosti** v **Snadné spuštění** okna.  
   
  **Vlastnosti** okno zobrazuje různé typy editačních polí v závislosti na potřebách určité vlastnosti. Tato editační pole zahrnout editační políčka, rozevírací seznamy a odkazy na vlastní editor dialogových oknech. Vlastnosti zobrazené šedě jsou jen pro čtení.  

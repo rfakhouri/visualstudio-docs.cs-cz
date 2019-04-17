@@ -9,16 +9,15 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d7dcb33add9726a341c1b4b92c032be7c289c2d2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 44e12e616e453dcdc0390e8a6eb5b2065a51a6bb
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54758087"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59656931"
 ---
 # <a name="linq-to-sql-tools-in-visual-studio"></a>Nástroje LINQ to SQL v sadě Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
 
 Technologie LINQ to SQL byl první objektově relační mapování technologie vydané společností Microsoft. Dobře funguje v základní scénáře a jsou nadále podporované v sadě Visual Studio, ale už se aktivně vyvíjí. Použití LINQ to SQL při zachování starší verze aplikací, který je již používán, nebo jednoduché aplikace, které používají SQL Server a nevyžadují žádná mapování více tabulek. Obecně platí nové aplikace by měly používat Entity Framework, pokud je nutné použít vrstvu objektově relační Mapovač.
 

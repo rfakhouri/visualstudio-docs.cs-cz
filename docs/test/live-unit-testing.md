@@ -9,12 +9,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1a51b056e4a3a4f2f434e6fd57ec270029d9155b
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: ce9a1a2da7397dbc7ce4235391c962cada7d59eb
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58325130"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59669911"
 ---
 # <a name="live-unit-testing-with-visual-studio"></a>Live Unit Testing pomocí sady Visual Studio
 
@@ -27,7 +27,6 @@ Pokud používáte Live Unit Testing pro testy, Live Unit Testing uchovává dat
 
 ## <a name="supported-test-frameworks"></a>Podporované testovacích architektur
 Live Unit Testing spolupracuje s tři rozhraní testování částí oblíbených uvedené v následující tabulce. Minimální podporovaná verze jejich adaptéry a rozhraní je také uvedený v tabulce. Rozhraní testování částí jsou všechny dostupné z webu NuGet.org.
-
 
 |Rozhraní pro testování  |Minimální verze aplikace Visual Studio adaptéru  |Minimální verze rozhraní Framework  |
 |---------|---------|---------|

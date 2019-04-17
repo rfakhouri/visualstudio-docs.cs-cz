@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a7a22e683f1db05544f235308dc5ba495f74095
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 90168dd760ba5619e2d50c864f54122b01ed66fa
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56629518"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59667206"
 ---
 # <a name="ltdeploymentgt-element-clickonce-deployment"></a>&lt;nasazení&gt; – element (nasazení ClickOnce)
 Určuje atributy použité pro nasazení aktualizací a vystavení systému.
@@ -59,7 +59,6 @@ Určuje atributy použité pro nasazení aktualizací a vystavení systému.
 
 ## <a name="elements-and-attributes"></a>Elementy a atributy
  `deployment` Element je povinný a je v `urn:schemas-microsoft-com:asm.v1` oboru názvů. Element má následující atributy.
-
 
 | Atribut | Popis |
 |--------------------------| - |
@@ -96,7 +95,6 @@ Určuje atributy použité pro nasazení aktualizací a vystavení systému.
  Pro rozhraní .NET Framework 2.0, tento element je povinný, pokud obsahuje manifest nasazení `subscription` oddílu. Pro rozhraní .NET Framework 3.5 a novější Tento element je volitelný a budou ve výchozím nastavení serveru a cestu souboru, ve kterém bylo zjištěno manifest nasazení.
 
  Tento element je podřízeným prvkem `deployment` elementu a nemá tento atribut.
-
 
 | Atribut | Popis |
 |------------| - |

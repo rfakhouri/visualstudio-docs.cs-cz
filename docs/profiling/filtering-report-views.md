@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 31c099fac3abba543c177becc1fe375b43ce1dd2
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: c7613eed6107f5be4909d57dd0ca617e1113ee0d
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604428"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651589"
 ---
 # <a name="filter-report-views"></a>Filtrování zobrazení sestav
 Filtry můžete použít profilování datové soubory pro omezení, která se zobrazí v zobrazení sestav výkonu a exportovat soubory sestav modulu dat profilování. Můžete omezit sestavu pro data mezi hodnot časového razítka a můžete omezit data, která mají konkrétní procesy a vlákna. Můžete uložit filtry do souboru a pak vytvořit filtr na jiný soubor dat profilování importováním uložený filtr.
@@ -40,7 +40,6 @@ Filtry můžete použít profilování datové soubory pro omezení, která se z
     |**Pole**|Vyberte pole sestavy použít v klauzuli filtru ze zobrazeného seznamu datových polí.|
     |**– Operátor**|Vyberte operátor, který určuje vztah, který chcete v klauzuli mezi pole a hodnotu.<br /><br /> = Rovná se<br /><br /> <> Nerovná se<br /><br /> < Menší než<br /><br /> > Větší než<br /><br /> < = menší než nebo rovno<br /><br /> > = je větší než nebo rovno|
     |**Hodnota**|Vyberte nebo zadejte hledaná hodnota. Některá pole jsou uvedeny dostupné hodnoty pro pole.|
-
 
 #### <a name="to-create-a-profiler-report-filter-from-the-marks-report-view"></a>Chcete-li vytvořit filtr sestavy profileru v zobrazení sestavy značky
 

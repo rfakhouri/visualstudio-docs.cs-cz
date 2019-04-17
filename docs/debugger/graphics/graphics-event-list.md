@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1cbffb56d437eebffcaa59a146ede2a8b5f94273
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 5e71239755cf7cf5d38f6e71568a0cd7be0f0d98
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56683674"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649989"
 ---
 # <a name="graphics-event-list"></a>Seznam událostí grafiky
 Použijte seznam událostí grafiky v analyzátoru grafiky sady Visual Studio zkoumat události rozhraní Direct3D, které byly zaznamenány při vykreslování rámce hru nebo aplikaci.
@@ -104,7 +104,6 @@ Visual Studio 2017 a novějších obsahují **rie prostředku** okna.  Vyberte i
 ![Historie prostředku](media/gfx_diag_resource_history.png)
 
 V tomto okně můžete zobrazit historii vybranou položku v seznamu událostí.  Rozevírací seznam v horní části umožňuje vybrat další položky k zobrazení historie.  Obsahuje v horní části okna **události nastavení snímků**.  Toto jsou události, které spadají do *vytvořit* zadejte kategorie a jsou volání, které obvykle inicializují a vytvořte prostředek.  Dolní části okna obsahuje **události snímků** oddílu.  Jsou normální číst a zapisovat události, ke kterým dochází při používání prostředku.
-
 
 | Sloupec | Popis |
 |-----------| - |

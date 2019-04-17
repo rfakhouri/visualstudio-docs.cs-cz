@@ -13,17 +13,16 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2a553363894bbaf10daf242164f13e777b12f10a
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: c74db546307767b352387b1627310794ec833b0f
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54795409"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59650379"
 ---
 # <a name="building-multiple-projects-in-parallel-with-msbuild"></a>Paralelní sestavování více projektů současně pomocí nástroje MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Nástroj MSBuild lze použít pro rychlejší sestavení více projektů tak, že budou tyto projekty spuštěny paralelně. Pro paralelní spuštění sestavení je možné na počítači s více jádry nebo s více procesory použít následující nastavení:  
   
 -   Přepínač příkazového řádku `/maxcpucount`.  
@@ -47,7 +46,7 @@ msbuild.exe myproj.proj /maxcpucount:3
 ```  
   
 ## <a name="buildinparallel-task-parameter"></a>Parametr úlohy BuildInParallel  
- `BuildInParallel` je volitelný logický parametr úlohy nástroje [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]. Když `BuildInParallel` je nastavena na `true` (výchozí hodnota), více procesů, kolik je vytvořeno pro sestavení tolik projekty ve stejnou dobu jako možný. Aby tento postup správně fungoval, musí být přepínač `/maxcpucount` nastaven na hodnotu větší než 1 a systém musí být alespoň dvoujádrový nebo mít dva nebo více procesorů.  
+ `BuildInParallel` je volitelný logický parametr na [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] úloh. Když `BuildInParallel` je nastavena na `true` (výchozí hodnota), více procesů, kolik je vytvořeno pro sestavení tolik projekty ve stejnou dobu jako možný. Aby tento postup správně fungoval, musí být přepínač `/maxcpucount` nastaven na hodnotu větší než 1 a systém musí být alespoň dvoujádrový nebo mít dva nebo více procesorů.  
   
  Následuje příklad z webu microsoft.common.targets o tom, jak nastavit parametr `BuildInParallel`.  
   

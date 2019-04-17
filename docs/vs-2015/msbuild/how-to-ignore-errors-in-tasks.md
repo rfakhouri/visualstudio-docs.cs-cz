@@ -12,17 +12,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4bac63523829c47b17821ff5905687bd76bbc57e
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 3c641e1f84e90a9e805630d8711f13e3d212ab17
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54777028"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668077"
 ---
 # <a name="how-to-ignore-errors-in-tasks"></a>Postupy: Ignorování chyb v úlohách
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Občas můžete chtít sestavení bude odolný vůči chybám chyb v určité úlohy. Pokud tyto méně náročné úlohy nezdaří, chcete pokračovat, protože stále může vytvořit požadovaný výstupní sestavení. Například, pokud projekt používá `SendMail` úloha pro odeslání e-mailovou zprávu po jednotlivých komponent je sestavená, můžete zvážit je přijatelné pro sestavení a pokračujte na dokončení, i když nedostupné servery e-mailu a stavové zprávy nelze odeslat. Nebo, například pokud zprostředkující soubory jsou obvykle odstraněny během sestavení, můžete zvážit je přijatelné pro sestavení a pokračujte na dokončení, i v případě, že tyto soubory nelze odstranit.  
   
 ## <a name="using-the-continueonerror-attribute"></a>Pomocí ContinueOnError – atribut  

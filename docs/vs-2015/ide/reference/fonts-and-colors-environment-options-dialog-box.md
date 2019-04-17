@@ -27,17 +27,16 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 691500690470f66bced8fdec5ff885a2d1f0d73b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a1a66ae20065546d5a42b990d0ba0009d0657ed0
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54761624"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59656021"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Písma a barvy, prostředí, dialogové okno Možnosti
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 **Písma a barvy** stránku **možnosti** dialogové okno umožňuje vytvořit vlastní písma a barvy režim pro různé prvky uživatelského rozhraní v integrovaném vývojovém prostředí (IDE). Toto dialogové okno se zpřístupní po kliknutí **Nástroje / možnosti**a pak vyberete **prostředí / písma a barvy**. Pokud se tato stránka se nezobrazí v seznamu, vyberte **zobrazit všechna nastavení** v **možnosti** dialogové okno.  
   
 > [!NOTE]
@@ -163,7 +162,7 @@ ms.locfileid: "54761624"
 |**Inteligentní značky**|Používá k označení obrys, když jsou vyvolány inteligentních značek.|  
 |**SQL DML Marker**|Platí pro editor jazyka Transact-SQL. Příkazy DML v tomto editoru jsou označené ohraničujícího rámečku modrá ve výchozím nastavení.|  
 |**Zastaralý kód**|Nahrazené kód čeká na aktualizace. V některých případech funkce upravit a pokračovat nemůže použít změny kódu okamžitě, ale je použít později v průběhu ladění. K tomu dochází při úpravě funkce, která se musí volat funkci právě probíhá, nebo pokud chcete přidat více než 64 bajtů nové proměnné čekání v zásobníku volání funkce. Pokud k tomu dojde, ladicí program zobrazí dialogové okno "Upozornění na starý kód", a kód nahrazené pokračuje v provádění, dokud dotyčný funkce dokončí a je volána znovu. Upravit a pokračovat platí v daném čase změny kódu.|  
-|**řetězec**|Řetězcových literálů.|  
+|**Řetězec**|Řetězcových literálů.|  
 |**Řetězce (C# @ Verbatim)**|Textové literály v jazyce C#, které dokáže interpretovat znění. Příklad:<br /><br /> @"x"|  
 |**Chyba syntaxe**|Chyby analýzy.|  
 |**Zástupce seznamu úkolů**|Pokud **seznamu úkolů** řádku, je přidán zástupce a okraj indikátoru je zakázané, budou zvýrazněny řádku.|  
@@ -236,4 +235,4 @@ ms.locfileid: "54761624"
 ## <a name="see-also"></a>Viz také  
  [Dialogové okno Možnosti prostředí](../../ide/reference/environment-options-dialog-box.md)   
  [Dialogové okno Možnosti](../../ide/reference/options-dialog-box-visual-studio.md)   
- [Postupy: Změna písma a barvy](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
+ [Postupy: Změna písma a barev](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)

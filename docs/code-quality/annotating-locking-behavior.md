@@ -32,12 +32,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 7661de324e2d2872491988c7b0fa637d0c318545
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ace3a8b729a9d0f54817bdad2eb5b8ee5343c0a9
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55920571"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653005"
 ---
 # <a name="annotating-locking-behavior"></a>Zadávání poznámek o chování při zamykání
 Předejdete tak chybám souběžnosti ve vašem vícevláknovém programu, vždy postupujte podle příslušné zamykání disciplína a použití anotací SAL.
@@ -104,7 +104,6 @@ Předejdete tak chybám souběžnosti ve vašem vícevláknovém programu, vždy
 |`_Interlocked_`|Označí proměnné a je ekvivalentní `_Guarded_by_(_Global_interlock_)`.|
 |`_Interlocked_operand_`|Parametr s poznámkami funkce je operand target jednoho z různých funkcí Interlocked.  Těmito operandy musí mít specifické další vlastnosti.|
 |`_Write_guarded_by_(expr)`|Označí proměnné a označuje, že vždy, když je proměnná je upraveno, počet zámků zámek objektu, který je pojmenován podle `expr` je alespoň jednou.|
-
 
 ## <a name="smart-lock-and-raii-annotations"></a>Smart Lock a RAII poznámky
  Chytré zámky obvykle zabalení nativních zámky a spravovat jejich životního cyklu. V následující tabulce jsou uvedeny poznámky, které lze použít s Chytré zámky a RAII, pravidel psaní kódu s podporou `move` sémantiku.

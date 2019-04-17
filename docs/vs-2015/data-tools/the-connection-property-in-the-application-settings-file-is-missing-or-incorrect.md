@@ -9,17 +9,16 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 671b0acfd0f2ec81e349bd6a69db0fb64bff94d4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a29d98455ccf796f331513c7abf5e679e55af8b5
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54753061"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59669468"
 ---
 # <a name="the-connection-property-in-the-application-settings-file-is-missing-or-incorrect"></a>V souboru nastavení aplikace chybí vlastnost připojení nebo je nesprávná.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Vlastnost připojení v souboru nastavení aplikace je chybí nebo není správný. Jejím místě se použil připojovací řetězec ze souboru .dbml.  
   
  Souboru .dbml obsahuje odkaz na připojovací řetězec v souboru nastavení aplikace, který nebyl nalezen. Tato zpráva je informační; nastavení připojovacího řetězce se vytvoří při **OK** dojde ke kliknutí na.  

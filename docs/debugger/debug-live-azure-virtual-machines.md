@@ -13,12 +13,12 @@ monikerRange: '>= vs-2019'
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: 0bbe7d081e15fdf81308218f2bb4b54e7623b333
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: 2880b8bee25a79f5f182043ffed5c50c4512d033
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58856953"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59663187"
 ---
 # <a name="debug-live-aspnet-apps-on-azure-virtual-machines-and-azure-virtual-machine-scale-sets-using-the-snapshot-debugger"></a>Ladit živé aplikace ASP.NET na virtuálních počítačích Azure a škálovací sady virtuálních počítačů Azure pomocí ladicího programu snímků
 
@@ -35,11 +35,11 @@ V tomto kurzu se naučíte:
 
 ## <a name="prerequisites"></a>Požadavky
 
-* Snapshot Debugger pro Azure Virtual Machines (VM) a Azure virtuálního počítače Škálovací sady (VMSS) je pouze dostupná ve verzi preview sady Visual Studio. 2019 Enterprise nebo vyšší s **funkcí vývoj pro Azure**. (V části **jednotlivé komponenty** kartu, najdete ho pod **ladění a testování** > **Snapshot debugger**.)
+* Snapshot Debugger pro Azure Virtual Machines (VM) a Azure Virtual Machine Scale Sets je pouze k dispozici pro Visual Studio Enterprise. 2019 nebo vyšší s **funkcí vývoj pro Azure**. (V části **jednotlivé komponenty** kartu, najdete ho pod **ladění a testování** > **Snapshot debugger**.)
 
-    Pokud ještě není nainstalovaný, nainstalujte [ve verzi preview sady Visual Studio Enterprise. 2019](https://visualstudio.microsoft.com/vs/preview/).
+    Pokud ještě není nainstalovaný, nainstalujte [Visual Studio Enterprise. 2019](https://visualstudio.microsoft.com/vs/).
 
-* Shromažďování snímků je k dispozici pro následující webové aplikace Azure VM/VMSS:
+* Shromažďování snímků je k dispozici pro následující virtuální Machines\Virtual počítače škálovacích sadách Azure web apps:
   * Aplikace ASP.NET spuštěné na rozhraní .NET Framework 4.6.1 nebo novější.
   * Aplikace ASP.NET Core na .NET Core 2.0 nebo novější na Windows.
 
@@ -48,9 +48,9 @@ V tomto kurzu se naučíte:
 1. Otevřete projekt, který chcete snímek ladění.
 
     > [!IMPORTANT]
-    > K ladění snímků, budete muset otevřít *stejnou verzi zdrojového kódu* , který je publikován do služby Azure VM/VMSS.
+    > K ladění snímků, budete muset otevřít *stejnou verzi zdrojového kódu* , který je publikován do služby Azure Virtual Machine\Virtual Machine Scale Sets.
 
-1. Zvolte **ladit > připojit Snapshot Debugger...** . Vyberte Azure VM/VMSS nasazuje se do vaší webové aplikace a účet úložiště Azure a klikněte na **připojit**.
+1. Zvolte **ladit > připojit Snapshot Debugger...** . Vyberte virtuální Machine\Virtual počítače Škálovací sady Azure nasazuje se do vaší webové aplikace a účet úložiště Azure a klikněte na **připojit**.
 
       ![Spuštění ladicího programu snímků z nabídky ladění](../debugger/media/snapshot-debug-menu-attach.png)
 
@@ -58,7 +58,7 @@ V tomto kurzu se naučíte:
 
     > [!IMPORTANT]
     > Při prvním vyberete **připojit Snapshot Debugger** pro váš virtuální počítač automaticky restartuje služba IIS.
-    > Při prvním vyberete **připojit Snapshot Debugger** VMSS, vyžaduje ruční upgrade každé instance VMSS.
+    > Při prvním vyberete **připojit Snapshot Debugger** pro Škálovací sady virtuálního počítače, vyžaduje ruční upgrade každé instance Škálovací sady virtuálních počítačů.
 
     Metadata pro **moduly** nebudou zpočátku aktivovat, přejděte do webové aplikace a **spustit shromažďování** tlačítko je aktivní. Visual Studio je nyní v režimu ladění snímků.
 
@@ -66,9 +66,9 @@ V tomto kurzu se naučíte:
 
     > [!NOTE]
     > Rozšíření webu Application Insights podporuje také ladění snímků. Pokud narazíte na chybovou zprávu "aktuální rozšíření webu", přečtěte si téma [řešení potíží, tipy a známé problémy pro ladění snímků](../debugger/debug-live-azure-apps-troubleshooting.md) pro upgrade podrobnosti.
-    > Pro VMSS je potřeba ručně upgradovat instance v jejich VMSS po prvním spuštění Snapshot Debugger připojit uživatele.
+    > Pro VMSS je potřeba ručně upgradovat instance v jejich Škálovací sady virtuálních počítačů po prvním spuštění Snapshot Debugger připojit uživatele.
 
-   **Moduly** okno zobrazuje, když všechny moduly jste načetli pro Azure VM/VMSS (zvolte **ladit > Windows > moduly** otevřete toto okno).
+   **Moduly** okno zobrazuje, když jste načetli všechny moduly Azure virtuální Machine\Virtual počítače Škálovací sady (zvolte **ladit > Windows > moduly** otevřete toto okno).
 
    ![Zkontrolujte okno modulů](../debugger/media/snapshot-modules.png)
 

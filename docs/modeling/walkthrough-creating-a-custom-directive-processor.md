@@ -13,12 +13,12 @@ ms.workload:
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: e5745f917749e29855dd244646ba13a2bbc26942
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 661d8670f857240fdd4ed7714ca389c851d83601
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58195122"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649105"
 ---
 # <a name="walkthrough-create-a-custom-directive-processor"></a>Návod: Vytvoření vlastního procesoru direktiv
 
@@ -654,8 +654,7 @@ V tomto oddílu přidáte na stejné místo v registru klíč pro vlastní pro
 
      Klíč registru by měl mít následující hodnoty:
 
-
-   | Název | Typ | Data |
+   | Name | Typ | Data |
    |-|-|-|
    | (Výchozí) | REG_SZ | (hodnota nenastavena) |
    | Třída | REG_SZ | CustomDP.CustomDirectiveProcessor |
@@ -663,13 +662,11 @@ V tomto oddílu přidáte na stejné místo v registru klíč pro vlastní pro
 
      Pokud jste sestavení vložili do mezipaměti GAC, měly by tyto hodnoty vypadat takto:
 
-
-   | Název | Typ | Data |
+   | Name | Typ | Data |
    |-|-|-|
    | (Výchozí) | REG_SZ | (hodnota nenastavena) |
    | Třída | REG_SZ | CustomDP.CustomDirectiveProcessor |
    | Assembly | REG_SZ | CustomDP.dll |
-
 
 6. Restartujte sadu Visual Studio.
 

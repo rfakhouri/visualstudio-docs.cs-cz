@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Podrobnosti o jaká předplatná jsou k dispozici, platí pravidla a kolik předplatných v programu MPN nabízíme.
 searchscope: VS Subscription
-ms.openlocfilehash: b9445b3b990698b273145ab8791e03ee6690570b
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: c7e58cd53ccbab31e90f2fc73a07b1011473777e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843156"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659854"
 ---
 # <a name="visual-studio-subscriptions-offered-to-partners-in-the-microsoft-partner-network-mpn"></a>Předplatná sady Visual Studio nabízí pro partnery v Microsoft Partner Network (MPN)
 Partneři, kteří získejte kompetenci nebo kteří zakoupili Action Pack v programu MPN mají nárok na použití předplatná sady Visual Studio. Tato předplatná jsou licencovaný podle počtu uživatelů a platí pouze v případě přiřazenou na konkrétní uživatele, který se dá použít pro partnerské firmě s názvem.
@@ -43,7 +43,6 @@ Bez ohledu na to, kolik činnost nepřesahuje partnera počet předplatných sad
 | Maximální výhoda pro partnery s úroveň pouze silver competency                   | Maximální výhoda pro partnery s nejméně jedné zlaté úrovně kompetence               |
 |------------------------------------------------------------------------------|------------------------------------------------------------------------------|
 | 25 předplatných sady visual Studio Enterprise každou zemi; 75 po celém světě          | 50 předplatných sady visual Studio Enterprise každou zemi; 150 po celém světě         |
-
 
 ## <a name="subscriptions-for-partners-purchasing-the-action-pack"></a>Předplatná pro partnery zakoupení Action Pack
 Partneři s kompetencí nejsou nárok na zakoupení Action Pack. Pouze jeden Action Pack si můžete koupit na partnera.

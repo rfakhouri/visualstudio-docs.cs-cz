@@ -17,17 +17,16 @@ caps.latest.revision: 79
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 593db9fe2f460229cfdd4c241124ef8270448094
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 50562b74a948365e91a7f36def634030a25aeac9
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194655"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59657962"
 ---
 # <a name="prerequisites-dialog-box"></a>Dialogové okno Požadavky
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Toto dialogové okno určuje, které nezbytné součásti se instalují, jak jsou nainstalovány a v jakém pořadí jsou nainstalované balíčky.  
   
  Pro přístup k tomuto dialogovému oknu, vyberte uzel projektu v **Průzkumníka řešení**a potom na **projektu** nabídky, klikněte na tlačítko **vlastnosti**. Když **Návrháře projektu** se zobrazí, klikněte na tlačítko **publikovat** kartu. Na **publikovat** klikněte na **požadavky**. Pro projekty instalace na **projektu** nabídky, klikněte na tlačítko **vlastnosti**. Když **stránky vlastností** dialogové okno se zobrazí, klikněte na tlačítko **požadavky**.  

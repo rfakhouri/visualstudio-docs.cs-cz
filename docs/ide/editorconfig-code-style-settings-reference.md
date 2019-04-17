@@ -16,12 +16,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: e06421955089a378cd20399280d066cc27bfe03f
-ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
+ms.openlocfilehash: 4d6bb7092dfbd9ef1d3d8263305496eef86e264b
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "59232798"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649805"
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>EditorConfig nastavení konvence psaní kódu .NET
 
@@ -70,7 +70,7 @@ Severity | Efekt
 Následující seznam uvádí jazyka povolená nastavení stylu kódu:
 
 - Nastavení stylu kódu .NET
-    - ["This." a "Me." Kvalifikátory](#this_and_me)
+    - ["This." a "Me." kvalifikátory](#this_and_me)
         - DotNet\_styl\_kvalifikace\_for_field
         - dotnet\_style\_qualification\_for_property
         - DotNet\_styl\_kvalifikace\_for_method
@@ -331,7 +331,7 @@ V následující tabulce jsou uvedeny názvy pravidel, pravidel ID, použitelné
 
 Toto pravidlo nepřijímá **true** nebo **false** hodnota; místo toho přijímá hodnotu z následující tabulky:
 
-| Hodnota | Popis |
+| Value | Popis |
 | ----- |:----------- |
 | Vždy | Modifikátory dostupnosti. Chcete-li zadat raději |
 | for\_non\_interface_members | Preferovat modifikátory deklarovat s výjimkou veřejné členy. To je stejný jako **vždy** a byla přidána pro budoucí kontroly pravopisu, pokud C# přidá výchozí metody rozhraní. |
@@ -749,8 +749,6 @@ If Object.ReferenceEquals(value, Nothing)
 End If
 ```
 
-
-
 **dotnet\_style\_prefer\_conditional\_expression\_over_assignment**
 
 - Pokud toto pravidlo je nastaven na **true**, dáváte přednost přiřazení s Ternární podmíněné přes if-else – příkaz.
@@ -787,7 +785,7 @@ Else
 End If
 ```
 
-**DotNet\_styl\_raději\_podmíněného\_výraz\_over_return**
+**dotnet\_style\_prefer\_conditional\_expression\_over_return**
 
 - Pokud toto pravidlo je nastaven na **true**, raději příkazy na používání Ternární podmíněné přes if-else – příkaz return.
 - Pokud toto pravidlo je nastaven na **false**, dáváte přednost návratovými příkazy na používání přes Ternární podmínka if-else – příkaz.
@@ -996,7 +994,7 @@ V následující tabulce jsou uvedeny názvy pravidel, pravidel ID, příslušn�
 
 Toto pravidlo je možné zadat hodnoty v následující tabulce:
 
-| Value | Popis |
+| Hodnota | Popis |
 | ----- |:----------- |
 | true | Preferovat členy s výrazem v těle metody |
 | when_on_single_line | Preferovat členy s výrazem v těle metody, když bude se jednat o jeden řádek |
@@ -1016,7 +1014,7 @@ public int GetAge() { return this.Age; }
 
 Toto pravidlo je možné zadat hodnoty v následující tabulce:
 
-| Hodnota | Popis |
+| Value | Popis |
 | ----- |:----------- |
 | true | Preferovat členové tvoření konstruktorů |
 | when_on_single_line | Dáváte přednost členové tvoření pro konstruktory, když bude se jednat o jeden řádek |
@@ -1036,7 +1034,7 @@ public Customer(int age) { Age = age; }
 
 Toto pravidlo je možné zadat hodnoty v následující tabulce:
 
-| Value | Popis |
+| Hodnota | Popis |
 | ----- |:----------- |
 | true | Preferovat členové tvoření pro operátory |
 | when_on_single_line | Preferovat členové tvoření pro operátory, když bude se jednat o jeden řádek |
@@ -1078,7 +1076,7 @@ public int Age { get { return _age; }}
 
 Toto pravidlo je možné zadat hodnoty v následující tabulce:
 
-| Value | Popis |
+| Hodnota | Popis |
 | ----- |:----------- |
 | true | Preferovat členové tvoření pro indexery |
 | when_on_single_line | Členové tvoření pro indexery dáváte přednost, když bude se jednat o jeden řádek |
@@ -1098,7 +1096,7 @@ public T this[int i] { get { return _values[i]; } }
 
 Toto pravidlo je možné zadat hodnoty v následující tabulce:
 
-| Hodnota | Popis |
+| Value | Popis |
 | ----- |:----------- |
 | true | Preferovat s výrazem v těle členy pro přístupové objekty |
 | when_on_single_line | Členové tvoření pro přistupující objekty dáváte přednost, když bude se jednat o jeden řádek |
@@ -1264,7 +1262,7 @@ Console.WriteLine($"{person.name} {person.age}");
 Console.WriteLine($"{point.x} {point.y}");
 ```
 
-**CSharp\_styl\_vzor\_místní\_přes\_anonymous_function**
+**csharp\_style\_pattern\_local\_over\_anonymous_function**
 
 - Pokud toto pravidlo je nastaven na **true**, dáváte přednost lokální funkce přes anonymní funkce.
 - Pokud toto pravidlo je nastaven na **false**, dáváte přednost anonymní funkce přes lokální funkce.
@@ -1357,7 +1355,7 @@ V následující tabulce jsou uvedeny název pravidla, ID pravidla, příslušn�
 | --------- | ------- | -------------------- | ----------------------| ---------------- |
 | csharp_prefer_braces | IDE0011 | C# | true: tiché nasazení | 15.3 |
 
-**CSharp\_raději\_složené závorky**
+**csharp\_prefer\_braces**
 
 - Pokud toto pravidlo je nastaven na **true**, preferovat složené závorky i pro jeden řádek kódu.
 - Pokud toto pravidlo je nastaven na **false**, dáváte přednost žádné složené závorky, pokud může.
@@ -1438,7 +1436,7 @@ V následující tabulce jsou uvedeny název pravidla, použitelné jazyky, výc
 | dotnet_sort_system_directives_first | C# a Visual Basic | true | 15.3 |
 | dotnet_separate_import_directive_groups | C# a Visual Basic | false | 15.5 |
 
-**DotNet\_řazení\_systému\_directives_first**
+**dotnet\_sort\_system\_directives_first**
 
 - Pokud toto pravidlo je nastaven na **true**řazení direktiv using abecedně System.* a umístit je před další direktivy using.
 - Pokud toto pravidlo je nastaven na **false**, neumísťujte System.* pomocí direktivy před dalšími direktiv using.
@@ -1465,7 +1463,7 @@ Příklad *.editorconfig* souboru:
 dotnet_sort_system_directives_first = true
 ```
 
-**dotnet\_separate\_import\_directive\_groups**
+**DotNet\_samostatné\_importovat\_směrnice\_skupiny**
 
 - Pokud toto pravidlo je nastaven na **true**, prázdný řádek mezi skupiny direktiv using umístit.
 - Pokud toto pravidlo je nastaven na **false**, neumísťujte prázdný řádek mezi skupiny direktiv using.
@@ -1517,7 +1515,7 @@ V následující tabulce jsou uvedeny "nový řádek" názvy pravidel použiteln
 
 Toto pravidlo se týká, zda levou složenou závorku `{` by měly být umístěny na stejném řádku jako předchozí kód, nebo na nový řádek. Pro toto pravidlo nezadáte **true** nebo **false**. Místo toho zadáte **všechny**, **žádný**, nebo jeden nebo více prvky kódu, jako **metody** nebo **vlastnosti**, chcete-li definovat, kdy by měla být toto pravidlo použít. Úplný seznam povolených hodnot je uveden v následující tabulce:
 
-| Value | Popis
+| Hodnota | Popis
 | ------------- |:-------------|
 | přístupové objekty, anonymous_methods, anonymous_types, control_blocks, události, indexery, výrazů lambda, local_functions, metody, object_collection_array_initializers, vlastnosti, typy.<br>(Pro více typů, oddělte ","). | Požadování složených na nový řádek pro zadaný kód elementy (označované také jako "Allman" styl) |
 | všechny | Požadování složených na nový řádek pro všechny výrazy ("Allman" styl) |
@@ -1591,7 +1589,7 @@ try {
 }
 ```
 
-**CSharp\_nové\_řádku\_before_finally**
+**csharp\_new\_line\_before_finally**
 
 - Pokud toto pravidlo je nastaven na **true**, vyžadují `finally` příkazy následovat pravou složenou závorku na nový řádek.
 - Pokud toto pravidlo je nastaven na **false**, vyžadují `finally` příkazy na stejném řádku jako pravou složenou závorku.
@@ -1620,7 +1618,7 @@ try {
 }
 ```
 
-**CSharp\_nové\_řádku\_před\_členy\_v\_object_initializers**
+**csharp\_new\_line\_before\_members\_in\_object_initializers**
 
 - Pokud toto pravidlo je nastaven na **true**, vyžadují členy inicializátory objektů na samostatných řádcích.
 - Pokud toto pravidlo je nastaven na **false**, vyžadují členy inicializátory objektů na stejném řádku.
@@ -2008,11 +2006,11 @@ class C :I
 }
 ```
 
-**CSharp\_místo\_kolem\_binary_operators**
+**csharp\_space\_around\_binary_operators**
 
 Toto pravidlo je možné zadat jednu hodnotu z následující tabulky:
 
-| Value | Popis |
+| Hodnota | Popis |
 | ----- |:------------|
 | before_and_after | Vložit mezeru před a za binární operátor |
 | žádná | Odebrat mezery před a za binární operátor |

@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 80f7c2d941852303771df1998a21c076265fdb93
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 59af3b192b404184e5bc5e5a5461c978e2a85e1b
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55929489"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59648494"
 ---
 # <a name="property-pages-javascript"></a>Stránky vlastností, JavaScript
 **Stránky vlastností** poskytuje přístup k nastavení projektu. Můžete použít stránky, které se zobrazují v **stránky vlastností** Chcete-li změnit vlastnosti projektu.
@@ -49,7 +49,6 @@ Následující stránky a možnosti se zobrazí v **stránky vlastností**.
 > [!NOTE]
 > Některé možnosti jsou dostupné jenom v aplikacích pro UPW.
 
-
  **Výstupní cesta**
 
  Určuje umístění výstupních souborů pro konfiguraci projektu. Cesta je relativní; Pokud zadáte absolutní cestu, absolutní cesta je uložena v projektu. Výchozí cesta je bin\Debug.
@@ -65,7 +64,6 @@ Následující stránky a možnosti se zobrazí v **stránky vlastností**.
 
 > [!NOTE]
 > Některé možnosti jsou dostupné jenom v aplikacích pro UPW.
-
 
  **Spustit ladicí program**
 

@@ -16,17 +16,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: dfc0c8eca387c2405881334670a51ee5d08685e5
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 8e36d5e50b15a5ede425715ec756f05ab8d014de
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54796874"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59655813"
 ---
 # <a name="common-msbuild-project-items"></a>Společné položky projektu nástroje MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 V [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], položka je pojmenovaný odkaz na jeden nebo více souborů. Položky obsahují metadat – například názvy souborů, cesty a čísel verzí. Všechny typy v projektu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] mají společnou několik položek. Tyto položky jsou definovány v microsoft.build.commontypes.xsd souboru.  
   
 ## <a name="common-items"></a>Společné položky  
@@ -38,7 +37,7 @@ V [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], položka je pojmenov
 |Název položky|Popis|  
 |---------------|-----------------|  
 |HintPath|Volitelný řetězec. Relativní nebo absolutní cesta k sestavení.|  
-|Název|Volitelný řetězec. Zobrazovaný název sestavení, například "System.Windows.Forms."|  
+|Name|Volitelný řetězec. Zobrazovaný název sestavení, například "System.Windows.Forms."|  
 |FusionName|Volitelný řetězec. Určuje jednoduchý nebo silné sloučeném názvu pro položku.<br /><br /> Když tento atribut je k dispozici, můžete ušetřit čas, protože není potřeba otevřít získat sloučeném názvu souboru sestavení.|  
 |SpecificVersion|Nepovinný datový typ boolean. Určuje, zda by se měla odkazovat pouze verze ve sloučeném názvu.|  
 |Aliasy|Volitelný řetězec. Všechny aliasy pro odkaz.|  
@@ -49,7 +48,7 @@ V [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], položka je pojmenov
   
 |Název položky|Popis|  
 |---------------|-----------------|  
-|Název|Volitelný řetězec. Zobrazovaný název součásti.|  
+|Name|Volitelný řetězec. Zobrazovaný název součásti.|  
 |Guid|Volitelný řetězec. Identifikátor GUID pro komponentu ve formě {12345678-1234-1234-1234-1234567891234}.|  
 |VersionMajor|Volitelný řetězec. Hlavní část čísla verze komponenty. Například "5" Pokud celé číslo verze je "5.46."|  
 |VersionMinor|Volitelný řetězec. Dílčí část čísla verze komponenty. Například "46" Pokud celé číslo verze je "5.46."|  
@@ -69,7 +68,7 @@ V [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], položka je pojmenov
   
 |Název položky|Popis|  
 |---------------|-----------------|  
-|Název|Povinný řetězec. Základní název souboru manifestu.|  
+|Name|Povinný řetězec. Základní název souboru manifestu.|  
 |HintPath|Povinný řetězec. Relativní cesta souboru manifestu.|  
   
 ### <a name="projectreference"></a>ProjectReference  
@@ -77,7 +76,7 @@ V [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], položka je pojmenov
   
 |Název položky|Popis|  
 |---------------|-----------------|  
-|Název|Volitelný řetězec. Zobrazovaný název odkazu.|  
+|Name|Volitelný řetězec. Zobrazovaný název odkazu.|  
 |Project|Volitelný řetězec. Identifikátor GUID pro odkaz ve formuláři {12345678-1234-1234-1234-1234567891234}.|  
 |Balíček|Volitelný řetězec. Cesta souboru projektu, který se odkazuje.|  
   
@@ -121,7 +120,7 @@ V [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], položka je pojmenov
 |Viditelné|Nepovinný datový typ boolean. Určuje, zda se zobrazí soubor v **Průzkumníka řešení** v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|  
 |CopyToOutputDirectory|Volitelný řetězec. Určuje, jestli se má zkopírovat soubor do výstupního adresáře. Hodnoty jsou:<br /><br /> 1.  Nikdy<br />2.  Vždy<br />3.  PreserveNewest|  
   
-### <a name="none"></a>Žádná  
+### <a name="none"></a>Žádný  
  Představuje soubory, které by se neměly nijak podílet v procesu sestavení.  
   
 |Název položky|Popis|  

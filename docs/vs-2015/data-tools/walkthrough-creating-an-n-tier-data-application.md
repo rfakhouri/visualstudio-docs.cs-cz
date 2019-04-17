@@ -1,5 +1,5 @@
 ---
-title: 'Průvodce: Vytvoření vícevrstvé datové aplikace | Dokumentace Microsoftu'
+title: 'Návod: Vytvoření vícevrstvé datové aplikace | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-data-tools
@@ -17,17 +17,16 @@ caps.latest.revision: 51
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f3185a6b7ebe4f5f37428e04f1b4215431921c51
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d48cea795cbbe3b7cc749c5866bfd5e720ac768a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54769681"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654682"
 ---
-# <a name="walkthrough-creating-an-n-tier-data-application"></a>Průvodce: Vytvoření vícevrstvé datové aplikace
+# <a name="walkthrough-creating-an-n-tier-data-application"></a>Návod: Vytvoření vícevrstvé datové aplikace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 N-úroveň * datové aplikace jsou aplikace, které přístup k datům a jsou rozdělené do několika logické vrstvy, nebo *úrovně*. Rozdělení komponent aplikace do samostatných vrstev zvyšuje udržovatelnost a škálovatelnost aplikace. Dělá to tak, že umožněno snadnější přijímání nových technologií, které lze použít u jedné vrstvě, aniž by bylo potřeba změnit návrh celého řešení. N-vrstvá architektura obsahuje prezentační vrstvu, střední vrstvy, a datové vrstvy. Střední vrstva obvykle zahrnuje vrstvy přístupu k datům, vrstvy obchodní logiky a sdílené komponenty, jako je například ověřování a ověřování. Datová vrstva obsahuje relační databáze. N-vrstvá aplikace obvykle ukládá citlivé informace do vrstvy přístupu k datům z střední vrstvy, aby se zachovala izolace koncovým uživatelům, kteří přistupují k prezentační vrstvy. Další informace najdete v tématu [přehled vícevrstvých datových aplikací](../data-tools/n-tier-data-applications-overview.md).  
   
  Jedním ze způsobů k rozdělení různých vrstev v n vrstvé aplikaci je vytvoření samostatných projektů pro každou vrstvu, která chcete zahrnout do vaší aplikace. Typové datové sady obsahují `DataSet Project` vlastnost, která určuje, že generované datová sada projekty, které a `TableAdapter` kódu by měly patřit do.  

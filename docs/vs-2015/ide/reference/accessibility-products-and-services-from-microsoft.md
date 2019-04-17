@@ -19,17 +19,16 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9c780213083068d64a62791fdd858f692533bf40
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 183a0a489d18625521d01d5abca5ed4f1eb12535
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867937"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59669598"
 ---
 # <a name="accessibility-products-and-services-from-microsoft"></a>Produkty a služby usnadnění přístupu od společnosti Microsoft
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Microsoft usiluje o usnadnění svých produktů a služeb pro každodenní použití. V následujících tématech najdete informace o funkcích, produktech a službách, které usnadňují práci s Microsoft Windows osobám s postižením:  
   
 -   [Funkce usnadnění systému Windows](../../ide/reference/accessibility-products-and-services-from-microsoft.md#windows)  
@@ -59,7 +58,7 @@ Microsoft usiluje o usnadnění svých produktů a služeb pro každodenní pou�
 ##  <a name="altfortmats"></a> Dokumentace v alternativních formátech  
  Pokud máte potíže se čtením či používáním tištěných materiálů, získáte v dokumentaci k různým produktům Microsoft v dostupnějších formátech. Můžete zobrazit rejstřík dostupné produktové dokumentace naleznete na [webu Microsoft Accessibility](http://go.microsoft.com/fwlink/?LinkId=8431).  
   
- Navíc lze získat další publikace společnosti Microsoft od společnosti Recording for the Blind & Dyslexic, Inc (RFB&D). Společnost RFB&D distribuuje tyto dokumenty registrovaným a kvalifikovaným členům své distribuční služby. Informace o dostupnosti dokumentace produktů společnosti Microsoft a knihy z nakladatelství Microsoft Press obraťte se na:  
+ Kromě toho můžete opatřit další publikace Microsoft od nahrávání pro the Blind & Dyslexic, Inc (RFB & D). Organizace RFB & D distribuuje tyto dokumenty registrovaným oprávněným členům své distribuční služby. Informace o dostupnosti dokumentace produktů společnosti Microsoft a knihy z nakladatelství Microsoft Press obraťte se na:  
   
 |Sdružení Learning Ally|  
 |----------------------------------------------|  

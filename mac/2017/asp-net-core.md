@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 07/13/2017
 ms.assetid: 6E8B0C90-33D6-4546-8207-CE0787584565
 ms.custom: video
-ms.openlocfilehash: 7544d3aa72bb981a35b3c7fc63db3f397f8f26dd
-ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
+ms.openlocfilehash: ee22f8d2055715a2ea64ebde473c8e491a724c25
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58573027"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59666895"
 ---
 # <a name="getting-started-with-aspnet-core"></a>Začínáme s ASP.NET Core
 
@@ -218,7 +218,6 @@ Chcete-li přidat kontroler, postupujte takto:
 9. Zkuste přejít ke `http://localhost:xxxx/HelloWorld/Xamarin?name=Amy` (nahrazení `xxxx` s správný port), měli byste vidět následující:
 
     ![Běžící aplikaci v prohlížeči s argumenty](media/asp-net-core-image10.png)
-
 
 ## <a name="troubleshooting"></a>Poradce při potížích
 

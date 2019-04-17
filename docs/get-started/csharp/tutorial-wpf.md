@@ -14,19 +14,19 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 706b365834e9e0b96e885cdae9ff25f1f70d1e76
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: c098aba51b4b2340ab4094971e3509af42c6c8ed
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58856872"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59655397"
 ---
 # <a name="tutorial-create-a-simple-application-with-c"></a>Kurz: Vytvoření jednoduché aplikace s C\#
 
 Po dokončení tohoto kurzu, seznámíte se s mnoha nástrojů, dialogových oknech a návrhářích, které můžete použít při vývoji aplikací pomocí sady Visual Studio. Budete vytvářet aplikace "Hello, World", návrh uživatelského rozhraní, přidat kód a ladit chyby, zatímco informace o práci v integrovaném vývojovém prostředí ([IDE](visual-studio-ide.md)).
 
 ::: moniker range="vs-2017"
-Pokud jste ještě nenainstalovali aplikaci Visual Studio, přejděte [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) stránku a nainstalovat zdarma.
+Pokud jste ještě nenainstalovali aplikaci Visual Studio, přejděte [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) stránku a nainstalovat zdarma.
 ::: moniker-end
 ::: moniker range=">=vs-2019"
 Pokud jste ještě nenainstalovali aplikaci Visual Studio, přejděte [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) stránku a nainstalovat zdarma.
@@ -84,7 +84,6 @@ Poté, co jste projekt vytvořili, jej můžete upravit. S použitím **vlastnos
 1. V okně start zvolte **vytvořit nový projekt**.
 
    ![Zobrazit okno 'vytvořte nový projekt.](../../get-started/media/vs-2019/start-window-create-new-project.png)
-
 
 2. Na **vytvořte nový projekt** obrazovky, vyhledejte "WPF," zvolte **aplikace WPF (.NET Framework)** a klikněte na tlačítko **Další**.
 

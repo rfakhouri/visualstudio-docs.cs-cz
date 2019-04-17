@@ -17,17 +17,16 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 91a72045e7e03a21bd827be1501251db823ca6ec
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3b2d7811a40e87cb5fd19785fc387aad02a7ad07
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54782542"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59652923"
 ---
 # <a name="suspendtracking"></a>SuspendTracking
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Pozastaví sledování v rámci aktuálního kontextu.  
   
 ## <a name="syntax"></a>Syntaxe  
@@ -37,7 +36,7 @@ HRESULT WINAPI SuspendTracking(void);
 ```  
   
 ## <a name="return-value"></a>Návratová hodnota  
- [HRESULT] (<!-- TODO: review code entity reference <xref:assetId:///HRESULT?qualifyHint=False&amp;autoUpgrade=True>  -->) s [úspěch] (<!-- TODO: review code entity reference <xref:assetId:///SUCCEEDED?qualifyHint=False&amp;autoUpgrade=True>  -->) sadu bitů, pokud sledování bylo pozastaveno.  
+ [HRESULT] ()<!-- TODO: review code entity reference <xref:assetId:///HRESULT?qualifyHint=False&amp;autoUpgrade=True>  -->) s ([úspěch]<!-- TODO: review code entity reference <xref:assetId:///SUCCEEDED?qualifyHint=False&amp;autoUpgrade=True>  -->) sadu bitů, pokud sledování bylo pozastaveno.  
   
 ## <a name="requirements"></a>Požadavky  
  **Záhlaví:** FileTracker.h  

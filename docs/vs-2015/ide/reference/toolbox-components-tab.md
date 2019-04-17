@@ -11,17 +11,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 121474dcc7abcfb01ff992558f3ce0a245444e9f
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 0ebbf8a0492537ee40062fb17bb338d46c228a9a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54775885"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59652862"
 ---
 # <a name="toolbox-components-tab"></a>Sada nástrojů, karta Součásti
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Zobrazí součásti můžete přidat do [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] a [!INCLUDE[csprcs](../../includes/csprcs-md.md)] návrháře. Kromě [!INCLUDE[dnprdnshort](../../includes/dnprdnshort-md.md)] součásti, které jsou součástí [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], například <xref:System.Messaging.MessageQueue> a <xref:System.Diagnostics.EventLog> součásti, můžete přidat vaše třetích stran nebo vlastních komponent na této kartě. Další informace najdete v tématu [jak: Manipulace s karty panelu nástrojů](http://msdn.microsoft.com/21285050-cadd-455a-b1f5-a2289a89c4db).  
   
  Zobrazené na této kartě **zobrazení** nabídce vyberte možnost **nástrojů**. V **nástrojů**, vyberte **součásti** kartu.  

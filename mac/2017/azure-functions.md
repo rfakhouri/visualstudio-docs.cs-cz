@@ -1,5 +1,5 @@
 ---
-title: Úvod do služby Azure Functions
+title: Úvod do Azure Functions
 description: Pomocí Azure functions v sadě Visual Studio pro Mac.
 author: conceptdev
 ms.author: crdun
@@ -7,14 +7,14 @@ ms.date: 05/06/2018
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 25CD47A4-5B32-4734-8EF3-E24A02AABF29
-ms.openlocfilehash: eaf6f82cdc40b174dcd1ca8deb12c412fe675d70
-ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
+ms.openlocfilehash: 8ceee693ee7b20e7045aa8bca4b895a0df383c80
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58573015"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59657322"
 ---
-# <a name="introduction-to-azure-functions"></a>Úvod do služby Azure Functions
+# <a name="introduction-to-azure-functions"></a>Úvod do Azure Functions
 
 Azure functions je způsob, jak vytvářet a spouštět založený na událostech fragmenty kódu – – funkce – – v cloudu, aniž byste museli explicitně zřizovat nebo spravovat infrastrukturu. Další informace o službě Azure Functions najdete v tématu [dokumentaci ke službě Azure Functions](/azure/azure-functions/).
 
@@ -149,9 +149,7 @@ Je jedním z důležitých nastavení budete muset nastavit `FUNCTIONS_EXTENSION
     - HTTP POST CRUD
     - Aktivační událost HTTP s parametry
 
-
 - **Časovač** – provádění úkolů čištění nebo jiných dávkových úkolů podle předdefinovaného plánu. Tato šablona má dvě pole: název a plánu, což je výraz CRONU pole. Další informace najdete v tématu [Azure functions článek na čas](/azure/azure-functions/functions-create-scheduled-function)
-
 
 - **Aktivační událost fronty** – to je funkce, která bude reagovat na zprávy přicházející do fronty Azure Storage. Kromě názvu funkce přebírá Tato šablona **cesta** (název fronty, ze kterého se bude číst zpráva) a účet úložiště **připojení** (název nastavení aplikace s úložiště připojovací řetězec účtu). Další informace najdete v tématu [článek funkce Azure Queue Storage](/azure/azure-functions/functions-create-storage-queue-triggered-function).
 

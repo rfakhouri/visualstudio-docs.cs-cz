@@ -19,12 +19,12 @@ caps.latest.revision: 56
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8ede92874833ca54f44740f518994dac1d6a822f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6906a351a9d93e566c1a184ed237beb15cbd7b89
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54774509"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59669338"
 ---
 # <a name="use-regular-expressions-in-visual-studio"></a>Použití regulárních výrazů v sadě Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,6 @@ Visual Studio před Visual Studio 2012, použít vlastní syntaxi regulárního 
 ## <a name="regular-expression-examples"></a>Příklady regulárních výrazů
 
 Následuje několik příkladů:
-
 
 |                                                                                                                       Účel                                                                                                                       |                                                     Výraz                                                     |                                                                          Příklad                                                                          |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|

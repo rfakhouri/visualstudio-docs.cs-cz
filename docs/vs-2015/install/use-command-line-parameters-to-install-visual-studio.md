@@ -14,25 +14,26 @@ caps.latest.revision: 10
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: cd61d03b5639038612e305697f4245e582ee3efe
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a3fe0233f08f33535be4b02cc06c29d919d75169
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54794036"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651160"
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio"></a>Použití parametrů příkazového řádku instalace sady Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější dokumentaci pro sadu Visual Studio 2017 najdete v tématu [použitím parametrů příkazového řádku instalace sady Visual Studio 2017](https://docs.microsoft.com/visualstudio/install/use-command-line-parameters-to-install-visual-studio).
+Nejnovější dokumentaci k sadě Visual Studio, naleznete v tématu [použít parametry příkazového řádku instalace sady Visual Studio](/visualstudio/install/use-command-line-parameters-to-install-visual-studio).
 
 Když nainstalujete sadu Visual Studio 2015 z příkazového řádku, můžete použít následující parametry příkazového řádku (také se označují jako přepínače).
 
 > [!NOTE]
->  Ujistěte se, že používáte skutečné instalační program a ne soubor zaváděcího nástroje. Například, ujistěte se, že používáte **`vs_enterprise.exe`** místo vs_enterprise_*GUID*.exe. Můžete stáhnout instalační program z [My.VisualStudio.com](https://my.visualstudio.com/downloads?q=visual%20studio%20enterprise%202015).
+> Ujistěte se, že používáte skutečné instalační program a ne soubor zaváděcího nástroje. Například, ujistěte se, že používáte **`vs_enterprise.exe`** místo vs_enterprise_*GUID*.exe. Můžete stáhnout instalační program z [My.VisualStudio.com](https://my.visualstudio.com/downloads?q=visual%20studio%20enterprise%202015).
 
 ## <a name="list-of-command-line-parameters"></a>Seznam parametrů příkazového řádku
- Parametry příkazového řádku aplikace Visual Studio nerozlišují malá a velká písmena.
+
+Parametry příkazového řádku aplikace Visual Studio nerozlišují malá a velká písmena.
 
 |Parametr|Popis|
 |---------------|-----------------|
@@ -62,4 +63,5 @@ Když nainstalujete sadu Visual Studio 2015 z příkazového řádku, můžete p
 |**/ Uninstall/Force**<br /><br /> **/ Force /u**|Odinstaluje Visual Studio a všechny funkce, které jsou sdíleny s jinými produkty. **Upozornění:**  Pokud použijete tento parametr, jiné produkty, které jsou nainstalovány ve stejném počítači, mohou přestat fungovat správně.|
 
 ## <a name="see-also"></a>Viz také
- [Příručka správce sady Visual Studio](../install/visual-studio-administrator-guide.md)
+
+- [Příručka správce sady Visual Studio](../install/visual-studio-administrator-guide.md)

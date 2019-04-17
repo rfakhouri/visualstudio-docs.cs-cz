@@ -7,12 +7,12 @@ ms.date: 10/03/2017
 ms.topic: conceptual
 description: Zjistěte, jak získat a spravovat kódy product key v předplatných sady Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: 9a1163aecab9f9330f1464704d0aa97018e51d6b
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: 74d13602dd27669233cd40ebdd2f5e165c09079a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953898"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59667778"
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>Používání kódů product key v předplatných sady Visual Studio
 
@@ -53,7 +53,6 @@ Některé kódy jsou poskytovány automaticky, jako jsou "statických" klíče, 
 
 Různé typy klíčů jsou k dispozici, v závislosti na produktu.
 
-
 ### <a name="product-key-types"></a>Typy kódů Product key
 
 |    Typ klíče           |    Popis                                                                                                                                                                                                           |
@@ -74,7 +73,6 @@ Můžete převzít klíče ze stránky pro stažení produktu, nebo můžete vyh
 
 ### <a name="claiming-product-keys"></a>Uplatňování kódů product key
 Jenom předplatitelé s aktivním předplatným můžete stahovat produkty a deklarace identity kódy product key.  Můžete exportovat z vaší uplatněné kódy [kódy Product Key](https://my.visualstudio.com/productkeys) stránce, zatímco je vaše předplatné aktivní.
-
 
 Uplatnit kód product key:
 1. Přihlaste se k předplatnému sady Visual Studio.  Musíte být přihlášeni ke stažení produktů nebo deklarací identity kódy product key.

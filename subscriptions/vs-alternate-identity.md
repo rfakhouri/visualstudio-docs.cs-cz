@@ -7,12 +7,12 @@ ms.date: 04/10/2018
 ms.topic: conceptual
 description: Přidání alternativní identity pro vaše předplatné sady Visual Studio a pro Azure DevOps a Azure
 searchscope: vs subscription
-ms.openlocfilehash: ee1db1fc10629c5476b9fd78b826993401aa14db
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 63a372d4a0e0e70a008f86a36aae73516bf42458
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842127"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59648449"
 ---
 # <a name="identities-for-visual-studio-subscribers"></a>Identit pro předplatitele sady Visual Studio
 
@@ -33,9 +33,7 @@ To neposkytuje kopii tohoto předplatného na jiný účet; pouze poskytuje mož
 
 Pro všechna předplatná můžete přidat "pracovní nebo školní účet", abyste mohli používat tento účet se výhody, které vyžadují přihlašovací údaje (VS IDE, Azure DevOps a Azure).
 
-
 ### <a name="add-the-alternate-account"></a>Přidání alternativního účtu
-
 
 1. Přihlaste se k portálu pro předplatitele sady Visual Studio pomocí účtu Microsoft (https://my.visualstudio.com).
 

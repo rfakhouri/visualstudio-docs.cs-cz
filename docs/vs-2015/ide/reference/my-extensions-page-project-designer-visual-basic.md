@@ -14,17 +14,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 65925a0ee6b7247ecd85f9db9536ff8519a01a33
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: a9c21bb50c9e97ed6a5daee713882f1d25456202
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54803159"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59660993"
 ---
 # <a name="my-extensions-page-project-designer-visual-basic"></a>Stránka Moje rozšíření, návrhář projektu (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Použití **Moje rozšíření** stránku **Návrháře projektu** ke správě `My` rozšíření oboru názvů ve vašem projektu. `My` rozšíření oboru názvů umožňují přizpůsobit `My` obor názvů pro přidání vlastních členů. Informace o vytváření vlastních `My` rozšíření oboru názvů, naleznete v tématu [rozšíření My Namespace v jazyce Visual Basic](http://msdn.microsoft.com/library/808e8617-b01c-4135-8b21-babe87389e8e).  
   
  Pro přístup **Moje rozšíření** stránce, dvakrát klikněte na panel **Můj projekt** pro uzel projektu v **Průzkumníku řešení**. Když **Návrháře projektu** se zobrazí, klikněte na tlačítko **Moje rozšíření** kartu.  

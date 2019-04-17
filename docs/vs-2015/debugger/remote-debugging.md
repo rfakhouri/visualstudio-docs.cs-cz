@@ -19,12 +19,12 @@ caps.latest.revision: 81
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a22442e390929e4b378d3e2e39d32656ff59e951
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: c964eaa8e8c130516b29c88a3ccae78aa902c66a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57871595"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649443"
 ---
 # <a name="remote-debugging"></a>Vzdálené ladění
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,7 +75,6 @@ Můžete najít vzdáleného ladicího programu (**msvsmon.exe**) na počítači
 > [!TIP] 
 > Instalace pomocí příkazového řádku a příkazový řádek, naleznete na stránce nápovědy pro **msvsmon.exe** zadáním ``msvsmon.exe /?`` na příkazovém řádku na počítači s nainstalovanou sadu Visual Studio (nebo můžete přejít na **Nápověda / využití**v vzdálený ladicí program).
 
-  
 ## <a name="supported-operating-systems"></a>Podporované operační systémy  
  Vzdáleném počítači musí běžet některý z následujících operačních systémů:  
   
@@ -193,7 +192,7 @@ Můžete najít vzdáleného ladicího programu (**msvsmon.exe**) na počítači
   
 5. Proveďte změny následujících vlastností:  
   
-   |Nastavení|Hodnota|
+   |Nastavení|Value|
    |-|-|  
    |Vzdálený příkaz|C:\remotetemp\mymfc.exe|  
    |Pracovní adresář|C:\remotetemp|  

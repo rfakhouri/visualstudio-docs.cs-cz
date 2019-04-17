@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 04/02/2019
 ms.assetid: 6E8B0C90-33D6-4546-8207-CE0787584565
 ms.custom: video
-ms.openlocfilehash: 183431a160245fd8fc0ec2193c00c32659230459
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: 7fc08e4896965e87315466ef6acd7d015eb98174
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58856791"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59648187"
 ---
 # <a name="getting-started-with-aspnet-core"></a>Začínáme s ASP.NET Core
 
@@ -32,7 +32,7 @@ Zobrazí se dialogové okno Nový projekt, což vám umožní vybrat šablonu pr
 Existuje mnoho projektů, které vám poskytne předem připravené šablony, abyste mohli začít vytvářet vaše aplikace ASP.NET Core. Toto jsou:
 
 - **.NET core > prázdný**
-- **.NET Core > API**
+- **.NET core > rozhraní API**
 - **.NET core > Webová aplikace**
 - **.NET core > Webová aplikace (Model-View-Controller)**
 
@@ -220,7 +220,6 @@ Chcete-li přidat kontroler, postupujte takto:
 9. Zkuste přejít ke `http://localhost:xxxx/HelloWorld/Xamarin?name=Amy` (nahrazení `xxxx` s správný port), měli byste vidět následující:
 
     ![Běžící aplikaci v prohlížeči s argumenty](media/asp-net-core-image10.png)
-
 
 ## <a name="troubleshooting"></a>Poradce při potížích
 

@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff36bf74249ec5266218060eedb879e4d796625c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 04ef05c5823c6a07fb6f93d82ddae55830e0e3ac
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55938693"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59669384"
 ---
 # <a name="options-text-editor-javascript-intellisense"></a>Možnosti, textový editor, JavaScript, IntelliSense
 Použití **IntelliSense** stránku **možnosti** dialogové okno Upravit nastavení, které ovlivňují chování technologie IntelliSense pro JavaScript. Můžete přistupovat **IntelliSense** stránky výběrem **nástroje** > **možnosti** na řádku nabídek a následným rozbalením položek **textový Editor**  >  **JavaScript** > **technologie IntelliSense.**
@@ -59,7 +59,6 @@ Tato možnost určuje pořadí, v jakém se soubory načítají do kontextu jaz
 > [!CAUTION]
 > Pokud je objekt definován nepodmíněně ve dvou nebo více implicitních odkazech, použije se k definování tohoto objektu poslední odkaz v tomto seznamu.
 
-
 **Přidat odkaz na aktuální skupinu**
 
 Tato možnost poskytuje způsob, jak přidat další soubory .js technologie IntelliSense vyhledáním příslušných souborů.
@@ -70,8 +69,6 @@ Když je toto políčko zaškrtnuto a máte soubor jazyka JavaScript, který je 
 
 > [!NOTE]
 > Pro webové projekty se ve výchozím nastavení stáhnou vzdálené soubory v projektu.
-
-
 
 ## <a name="see-also"></a>Viz také
 

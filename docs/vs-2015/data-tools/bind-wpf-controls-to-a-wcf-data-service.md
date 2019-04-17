@@ -18,17 +18,16 @@ caps.latest.revision: 44
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 86c4358179b86031652cf933823c00a68526e9c5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 33928df6dd1151dc79dd07c966985666d2e7fd19
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54774363"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59655787"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>Vytvoření vazby ovládacích prvků WPF k datové službě WCF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 V tomto návodu vytvoříte aplikaci WPF, která obsahuje ovládací prvky vázané na data. Ovládací prvky, které jsou vázány na záznamy o zákaznících, které jsou zapouzdřeny v [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)]. Pokud přidáte tlačítka, která zákazníkům umožňuje zobrazit a aktualizovat záznamy.  
   
  Tento návod znázorňuje následující úlohy:  

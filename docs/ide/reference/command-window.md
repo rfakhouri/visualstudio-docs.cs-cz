@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bed026b76ae99509dd2abb77b11b46c14b1d3aae
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f4e16d6dc3eb7529e2e13ed333cacaf93e36d728
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928748"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653876"
 ---
 # <a name="command-window"></a>Příkazové okno
 **Příkaz** okno se používá ke spuštění příkazů nebo přímo v aliasy [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrované vývojové prostředí (IDE). Můžete spustit příkazy nabídek a příkazů, které nejsou zobrazeny na jakékoliv nabídky. Pro zobrazení **příkaz** okně zvolte **ostatní Windows** z **zobrazení** nabídky a vybereme **příkazové okno**.
@@ -60,7 +60,6 @@ ms.locfileid: "55928748"
 
 > [!TIP]
 > Část nebo celý předchozího příkazu můžete zkopírovat na vstupním řádku posouvání, aby ji mohl, zvýraznění nebo jeho část a pak stisknutím klávesy ENTER.
-
 
 ## <a name="mark-mode"></a>Režim označení
  Po kliknutí na libovolný předchozí řádek v **příkaz** okna, posunete automaticky do režimu označení. To vám umožňuje vybrat, upravit a zkopírujte text z předchozích příkazů, jako by v libovolném textovém editoru a vložte je do aktuálního řádku.

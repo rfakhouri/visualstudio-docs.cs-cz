@@ -13,17 +13,16 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7b8b195569d5e1daf0a414ee872a828f7c98be90
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0ff92e93d2fa15591afddddc1a012ff94b8ba6c0
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54753242"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59656008"
 ---
 # <a name="how-to-manage-word-wrap-in-the-editor"></a>Postupy: Správa zalamování řádků v editoru
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Můžete nastavit a zrušit **zalamování** možnost. Když nastavíte tuto možnost, zobrazí se na další řádek část dlouhý řádek, který přesahuje aktuální šířku okna editoru kódu. Pokud tato možnost vybrána, například pro usnadnění použití číslování řádků, můžete posouvat doprava a zobrazit konce dlouhé řádky.  
   
  Další informace najdete v tématu [jak: Nastavení možností editoru Obecné](http://msdn.microsoft.com/704e4a7b-2162-4bed-8a47-f4f6ffec98c2).  

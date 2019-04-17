@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 330c8bb033a167b03f62cf4fda95a58ea08ccd92
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: eea14ebd5e4c56b62054a982aef83c1b8964b662
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55922144"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59650330"
 ---
 # <a name="build-page-project-designer-c"></a>Stránka Sestavení, návrhář projektu (C#)
 Použití **sestavení** stránku **Návrháře projektu** k určení vlastností konfigurace sestavení projektu. Tato stránka se vztahuje na [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] pouze pro projekty.
@@ -61,7 +61,6 @@ Toto zaškrtávací políčko je dostupné jenom v případě, že jsou splněny
 -   Na **stránky aplikace**, **typ výstupu** seznam určuje, že projekt je aplikace.
 
 -   Na **stránky aplikace**, **Cílová architektura** seznamu určuje rozhraní .NET Framework 4.5.
-
 
 **Povolit nezabezpečený kód** umožňuje kód, který používá [nebezpečné](/dotnet/csharp/language-reference/keywords/unsafe) ke kompilaci klíčové slovo. Další informace najdete v tématu [/ unsafe (možnosti kompilátoru C#)](/dotnet/csharp/language-reference/compiler-options/unsafe-compiler-option).
 

@@ -9,17 +9,16 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ec1b206bffa5ea49a17bd76487cdc398395c1f48
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: be8d42a5a4557b39a02e724eb54b5434c1b454ea
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54798462"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659966"
 ---
 # <a name="how-to-use-xml-snippets"></a>Postupy: Použití fragmentů XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Fragmenty XML lze vyvolat pomocí následujících dvou příkazů v místní nabídce editoru XML. **Vložit fragment** příkaz vloží fragment kódu XML na pozici kurzoru. **Obklopit fragmentem** příkaz zabalí fragment kódu XML okolo vybraného textu. Každý fragment kódu XML určil typy fragment kódu. Typy fragment určují, zda fragment kódu je k dispozici **Vložit fragment** příkazu **obklopit fragmentem** příkazu, nebo obojí.  
   
  Po přidání fragment kódu XML editor žádné upravitelné pole v tomto fragmentu kódu je zvýrazněn žlutě a se kurzor na první pole upravitelné.  
@@ -113,4 +112,4 @@ Fragmenty XML lze vyvolat pomocí následujících dvou příkazů v místní na
 ## <a name="see-also"></a>Viz také  
  [Fragmentů XML](../xml-tools/xml-snippets.md)   
  [Postupy: Generování fragmentu XML ze schématu XML](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)   
- [Postupy: Vytváření fragmentů XML](../xml-tools/how-to-create-xml-snippets.md)
+ [Postupy: Vytváření fragmentů kódu XML](../xml-tools/how-to-create-xml-snippets.md)

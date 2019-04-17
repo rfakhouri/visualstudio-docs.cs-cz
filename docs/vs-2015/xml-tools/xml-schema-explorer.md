@@ -9,17 +9,16 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 59f2c4ba05b0e802f1daa303db0646a94f36fd31
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 575be3277dd7d876b19b9c557643cb05831255a5
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54803280"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59670430"
 ---
 # <a name="xml-schema-explorer"></a>Průzkumník schémat XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Průzkumníka schémat XML je součástí sady Microsoft Visual Studio a Editor souborů XML umožňují pracovat s schémat schématu XML definice jazyk (XSD). Když otevřete soubor schématu XML **schéma nastaveno** uzel se zobrazí v Průzkumník schémat XML. Všech součástí, importované nebo Předefinovaná schémata pro cílový soubor, stejně jako všechny soubory, které jsou odkazovány prostřednictvím `include` nebo `import` příkazu se zobrazí také v Průzkumník schémat XML.  
   
  Průzkumníka schémat XML lze provádět následující akce:  

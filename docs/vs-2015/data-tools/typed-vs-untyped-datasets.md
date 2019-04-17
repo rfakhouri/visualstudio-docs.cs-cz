@@ -9,17 +9,16 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 219ba8c35cf67e3675f565b89607e6d518599dfd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0d02f72a686d0f271e387e550122451db34c019a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54790815"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668025"
 ---
 # <a name="typed-vs-untyped-datasets"></a>Typové a netypové datové sady
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Typové datové sady je datová sada, která je nejprve odvozené od základní třídy <xref:System.Data.DataSet> třídy a potom pomocí informací z **Návrhář Dataset**, které je uložený v souboru XSD pro generování nového silně typované třídy datové sady. Informace ze schématu (tabulky, sloupce a tak dále) je generována a zkompilovány do této třídy novou datovou sadu jako sada první třídy objektů a vlastností. Protože typové datové sady se dědí ze základní <xref:System.Data.DataSet> třídy, typovaná třída předpokládá, všechny funkce <xref:System.Data.DataSet> třídy a je možné pomocí metod, které berou instance <xref:System.Data.DataSet> jako parametr předávat třídu.  
   
  Netypové datové sady, naproti tomu nemá žádné odpovídající vestavěné schéma. Stejně jako v typové datové sady, netypové datové sady obsahuje tabulky, sloupce a tak dále, ale ty jsou dostupné jenom jako kolekce. (Však po ručně vytvářet tabulky a další datové prvky v netypovou datovou sadu můžete exportovat strukturu datové sady jako schéma datové sady pomocí <xref:System.Data.DataSet.WriteXmlSchema%2A> metoda.)  

@@ -11,17 +11,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fc12ba16a52546b26a7941734caa8c6fca8419b1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f5d619a18fa38c09b25f2d8367f3f767ac5bdc11
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54764858"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651079"
 ---
 # <a name="target-build-order"></a>Pořadí sestavení cílů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Pokud vstup pro jeden cíl závisí na výstupu jiný cíl, musejí být seřazeny cíle. Tyto atributy můžete určit pořadí, ve kterém jsou spuštěny cíle:  
   
 - `InitialTargets`. To `Project` atribut určuje cíle, které bude spuštěn jako první, a to i v případě, že cíle jsou zadány v příkazovém řádku nebo v `DefaultTargets` atribut.  

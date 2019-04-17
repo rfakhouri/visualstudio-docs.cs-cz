@@ -11,17 +11,16 @@ caps.latest.revision: 12
 author: corob-msft
 ms.author: corob
 manager: jillfra
-ms.openlocfilehash: c2ff6555be6f8189ff085e203890891f5345d3c4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ec4bc799c3a808a7259e4dd39565e2e21940ca56
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54778300"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665699"
 ---
 # <a name="visual-c-for-cross-platform-mobile-development"></a>Visual C++ for Cross-Platform Mobile Development
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Můžete vytvářet nativní aplikace C++ pro iOS, Android a Windows a sdílet společný kód v knihovnách vytvořené pro iOS, Android a Windows pomocí jazyka Visual C++ pro vývoj mobilních řešení napříč platformami. To je k dispozici v sadě Visual Studio 2015, který nainstaluje sady SDK a nástroje, které potřebujete pro vývoj pro různé platformy sdílených knihoven a nativních aplikací možnost. Po instalaci, můžete vytvořit kód, který běží na iOS a androidem a platformy kromě Windows, Windows Phone a Xbox Visual C++.  
   
  Psaní kódu pro různé platformy může být frustrující. Primární programovacích jazyků a nástrojů pro iOS, Android a Windows se liší na jednotlivých platformách. Ale všechny platformy podporují psaní kódu v jazyce C++. Toto je společným faktorem, který můžete použít k zajištění opakované použití jádra kódu napříč platformami. Nativní kód napsaný v jazyce C++ může být oba výkonnější a odolnější vůči zpětná analýza. Opakované využívání kódu ušetříte čas a námahu při vytváření aplikací pro různé platformy.  

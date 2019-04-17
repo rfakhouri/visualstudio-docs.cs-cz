@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 0726ddf0bb0798a5f989e902662ee5b4e26c6801
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 60eeb84dcbea7a30cc0b46c3a22571ccfe258028
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58152587"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59648767"
 ---
 # <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>Vývoj aplikací pro Univerzální platformu Windows (UWP)
 
@@ -38,11 +38,26 @@ Nástroje pro vývoj univerzálních aplikací pro Windows jsou dostupné emulá
 
 Tady je seznam softwaru, které potřebujete:
 
+::: moniker range="vs-2017"
+
 - [Windows 10](http://windows.microsoft.com/windows/downloads). Visual Studio 2017 podporuje vývoj pro UPW pouze ve Windows 10. Další podrobnosti najdete v tématu Visual Studio [cílení na platformy](/visualstudio/productinfo/vs2017-compatibility-vs) a [požadavky na systém](/visualstudio/productinfo/vs2017-system-requirements-vs).
 
-- [Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017). Musíte také volitelné úlohu vývoje univerzální platformy Windows.
+- [Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download). Musíte také volitelné úlohu vývoje univerzální platformy Windows.
 
      ![Úlohy UPW](media/uwp_workload.png)
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+- [Windows 10](http://windows.microsoft.com/windows/downloads). Vývoj UWP Visual Studio 2019 podporuje pouze ve Windows 10. Další podrobnosti najdete v tématu Visual Studio [cílení na platformy](/visualstudio/releases/2019/compatibility/) a [požadavky na systém](/visualstudio/releases/2019/system-requirements/).
+
+- [Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019). Musíte také volitelné úlohu vývoje univerzální platformy Windows.
+
+     ![Úlohy UPW](media/uwp_workload.png)
+
+::: moniker-end
+
 
 Po instalaci tohoto softwaru, je potřeba povolit zařízení s Windows 10 pro vývoj. Zobrazit [aktivovat zařízení pro vývoj](/windows/uwp/get-started/enable-your-device-for-development). Už nepotřebujete licenci vývojáře pro každé zařízení s Windows 10.
 

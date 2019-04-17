@@ -9,12 +9,12 @@ caps.latest.revision: 13
 author: kraigb
 ms.author: kraigb
 manager: jillfra
-ms.openlocfilehash: 11febf99dc411d50ee94e003515bfa6581591b91
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 9c18ae2731d92e6d128d13e7687bac77ae76dc8a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56678862"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59648446"
 ---
 # <a name="getting-started-with-python"></a>Začínáme s Pythonem
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,8 +39,7 @@ Jako programovací jazyk Python je:
 Další informace o jazyku, začněte s [Python pro začátečníky](https://www.python.org/about/gettingstarted/) na webu python.org.
 
 K instalaci Pythonu, sama, navštivte [ https://www.python.org/download/ ](https://www.python.org/download/).
- 
-  
+
 ## <a name="python-tools-for-visual-studio"></a>Python Tools for Visual Studio
   
 Nástroje Pythonu pro Visual Studio, které si můžete nainstalovat z [visualstudio.com](https://www.visualstudio.com/explore/python-vs), poskytují následující funkce:  
@@ -64,7 +63,6 @@ Následující prostředky vám pomůže začít pracovat:
 - Instalace a funkce ukázka (27 min)]( https://www.youtube.com/watch?v=JNNAOypc6Ek)  
 - [Dokumentace](https://github.com/Microsoft/PTVS/wiki)  
 
-
 Všimněte si, že Visual Studio v současné době neposkytuje způsob, jak vytvořit samostatný spustitelný soubor pomocí Pythonu, která v podstatě znamená, že program s vložený interpret Pythonu. Existují však různými prostředky v rámci komunity Python k tomu, jak je popsáno na [StackOverflow](http://stackoverflow.com/questions/5458048/how-to-make-a-python-script-standalone-executable-to-run-without-any-dependency). CPython také podporuje se vložený do nativní aplikace, jak je popsáno v blogovém příspěvku [pomocí CPython Vložitelný soubor Zip](https://devblogs.microsoft.com/python/cpython-embeddable-zip-file/).
   
 ## <a name="building-ui-with-python"></a>Vytváření uživatelského rozhraní pomocí Pythonu  
@@ -77,7 +75,7 @@ Sada Azure SDK pro Python, která podporuje Windows, Mac a Linux, usnadňuje pou
 
 - Chcete-li nainstalovat sadu SDK, použijte [indexu balíčků Pythonu](https://pypi.python.org/pypi/azure) nebo postupujte podle [instalace Pythonu a sady SDK](https://azure.microsoft.com/documentation/articles/python-how-to-install/) v dokumentaci k Azure. 
 - [Azure SDK pro Centrum pro vývojáře Python](https://azure.microsoft.com/develop/python/) obsahuje velké množství nápovědy z instalace dokumentaci k kurzy.  Mezi nejdůležitější funkce následujícím:  
-- Návody:
+- Praktičtí průvodci:
   - [Úložiště objektů Blob](https://azure.microsoft.com/develop/python/how-to-guides/blob-service/)  
   - [Fronta úložiště](https://azure.microsoft.com/develop/python/how-to-guides/queue-service/)  
   - [Storage Table](https://azure.microsoft.com/develop/python/how-to-guides/table-service/)  

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2df391440e8fe175b86a37cd02d0aec8fee372e6
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 9a798f200734dd4db885aee4a25258bfdb49c69c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603167"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668883"
 ---
 # <a name="how-to-exclude-files-from-the-build"></a>Postupy: Vyloučení souborů ze sestavení
 V souboru projektu můžete použít zástupné znaky jako vstupy pro sestavení zahrnout všechny soubory v jednom adresáři nebo vnořenou sadu adresáře. Ale může být jeden soubor v adresáři nebo jednoho adresáře v vnořenou sadu adresáře, které nechcete zahrnout jako vstupy pro sestavení. Tento soubor nebo adresář můžete explicitně vyloučit z seznam vstupů. V projektu, který chcete zahrnout za určitých podmínek může být také soubor. Můžete explicitně deklarovat podmínky, za kterých je soubor součástí sestavení.
@@ -100,7 +100,7 @@ V souboru projektu můžete použít zástupné znaky jako vstupy pro sestavení
     </PropertyGroup>
 
     <ItemGroup>
-        <CSFile Include="*.cs Exclude="Form2.cs"/>
+        <CSFile Include="*.cs" Exclude="Form2.cs"/>
 
         <Reference Include="System.dll"/>
         <Reference Include="System.Data.dll"/>

@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fe97972d882fa8806de925bac6a072cd2dde4513
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: c498fd10403bcb6b62552c30fe3a92b71ded4944
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796878"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659784"
 ---
 # <a name="application-patterns-for-visual-studio"></a>Modely aplikací pro sadu Visual Studio
 ##  <a name="BKMK_WindowInteractions"></a> Okno interakce
@@ -115,7 +115,7 @@ Příklady oken nástrojů lze procházet seznam: v Průzkumníku řešení a v 
 
 | Panel nástrojů | Funkce |
 | --- | --- |
-| Nápověda | Okno, které umožňuje uživatelům přístup k různým metodám získání nápovědy z "Jak na to?" videa k fórům MSDN. |
+| Help | Okno, které umožňuje uživatelům přístup k různým metodám získání nápovědy z "Jak na to?" videa k fórům MSDN. |
 | Dynamická nápověda | Okno nástroje, který zobrazuje odkazy na témata pro aktuální výběr nápovědy. |
 | prohlížeč objektů | Sada rámců dvousloupcových seznam komponent hierarchický objekt v levém podokně a objektu, vlastnosti a metody v pravém sloupci. |
 
@@ -547,7 +547,6 @@ Uživatel by měl vždy být schopní určit efekt operace přetažení myší v
 
 #### <a name="directory-based-projects"></a>Projekty založené na adresáři
 Následující tabulka shrnuje přetažení myší (a také Vyjmout/Kopírovat/vložit) operace, které je třeba provést podle povahy zdroj položky a modifikátor klíče z důvodu adresářového cílové projekty:
-
 
 | Modifikátor | Kategorie | Zdrojová položka: / Odkazu | Zdrojová položka: Fyzického zboží nebo systém souborů (`CF_HDROP`) |
 |-----------------|----------| - | - |

@@ -1,5 +1,5 @@
 ---
-title: 'Průvodce: Přidání ovládacích prvků do dokumentu za běhu v doplňku VSTO'
+title: 'Návod: Přidání ovládacích prvků do dokumentu za běhu v doplňku VSTO'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,14 +15,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d38657e1885ed84d5bd5e0e574968ae2009c19d5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: bdfd80818e88af8e2907c982e75628627bcac5e9
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56645872"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59648547"
 ---
-# <a name="walkthrough-add-controls-to-a-document-at-runtime-in-a-vsto-add-in"></a>Průvodce: Přidání ovládacích prvků do dokumentu za běhu v doplňku VSTO
+# <a name="walkthrough-add-controls-to-a-document-at-runtime-in-a-vsto-add-in"></a>Návod: Přidání ovládacích prvků do dokumentu za běhu v doplňku VSTO
   Můžete přidat ovládací prvky do libovolného otevřeného dokumentu aplikace Microsoft Office Word s použitím doplňku VSTO. Tento návod ukazuje, jak používat na pásu karet umožňující uživatelům přidávat <xref:Microsoft.Office.Tools.Word.Controls.Button> nebo <xref:Microsoft.Office.Tools.Word.RichTextContentControl> do dokumentu.
 
  **Platí pro:** Informace v tomto tématu se vztahují na projekty doplňku VSTO pro Word 2010. Další informace najdete v tématu [Dostupné funkce podle aplikace Office a typu projektu](../vsto/features-available-by-office-application-and-project-type.md).
@@ -78,21 +78,17 @@ ms.locfileid: "56645872"
 
 8. V **vlastnosti** okně změnit následující vlastnosti.
 
-
-   | Vlastnost | Hodnota |
+   | Vlastnost | Value |
    |-----------|-----------------------|
    | **Název** | **addButtonCheckBox** |
    | **Popisek** | **Přidání tlačítka** |
 
-
 9. Přidejte druhý zaškrtnutím políčka **group1**a potom změňte následující vlastnosti.
 
-
-   | Vlastnost | Hodnota |
+   | Vlastnost | Value |
    |-----------|---------------------------|
    | **Název** | **addRichTextCheckBox** |
    | **Popisek** | **Přidání ovládacího prvku RTF** |
-
 
 10. V Návrháři pásu karet klikněte dvakrát na **přidat tlačítko**.
 

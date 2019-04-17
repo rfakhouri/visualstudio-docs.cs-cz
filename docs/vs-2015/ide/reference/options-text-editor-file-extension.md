@@ -16,17 +16,16 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2b81d4f2341f9ddca3468bd77f0f79940dba3d29
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: d42495542f96a4ae4918d9d6477f0877979871d2
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54755003"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59655889"
 ---
 # <a name="options-text-editor-file-extension"></a>Možnosti, textový editor, přípona souboru
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Dialogové okno umožňuje zadat, jak všechny soubory s určité přípony souborů této možnosti bude zpracován adresou integrovaného vývojového prostředí (IDE) sady Visual Studio. Pro každou **rozšíření** , že zadáte, můžete vybrat prostředí pro úpravy. To umožňuje zvolit integrovaného vývojového prostředí editoru nebo návrháře, ve kterém se otevře dokumenty určitého typu. Chcete-li zobrazit tyto možnosti, zvolte **možnosti** z **nástroje** nabídky, rozbalte **textový Editor** uzel a vyberte možnost **přípona souboru**.  
   
  Když vyberete možnost "s kódováním", při každém otevření dokumentu tohoto typu, které vám umožní vybrat kódování schéma pro tento dokument se zobrazí dialogové okno. To může být užitečné, pokud provádíte přípravu verze dokumentů projektu pro použití na různých platformách, nebo v různých jazycích cíl.  

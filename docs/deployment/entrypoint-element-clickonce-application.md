@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d3002fa5c015d80304a9de5aaf3b7f7aa1d2d85f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 615a606dc4d04682a9d5a1a69c91b4d2cd67de15
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56629037"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665256"
 ---
 # <a name="ltentrypointgt-element-clickonce-application"></a>&lt;vstupní bod&gt; – element (aplikace ClickOnce)
 Určuje sestavení, které by měla být spuštěna při to [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] na klientském počítači při spuštění aplikace.
@@ -67,7 +67,6 @@ Určuje sestavení, které by měla být spuštěna při to [!INCLUDE[ndptecclic
 
 ## <a name="commandline"></a>příkazový řádek
  Povinný parametr. Musí být podřízeným `entryPoint` elementu. Nemá žádný podřízený element a má následující atributy.
-
 
 | Atribut | Popis |
 |--------------| - |

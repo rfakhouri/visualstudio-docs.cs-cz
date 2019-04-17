@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 33f2d4fda2fe7981863d65b17fc6dba53355dbeb
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 30f51715cd26c9d61e355115db6f4ca4b9831ef0
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56702275"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59660785"
 ---
 # <a name="core-interfaces"></a>Základní rozhraní
 Následující rozhraní jsou základní rozhraní pro rozšíření ladicího programu s použitím [!INCLUDE[vsipsdk](../../../extensibility/includes/vsipsdk_md.md)].
@@ -138,7 +138,6 @@ Následující rozhraní jsou základní rozhraní pro rozšíření ladicího p
 ##  <a name="Events"></a> Události
  Tato rozhraní představují všechny události, které jsou odeslány mezi DE a správce ladění relace (SDM).
 
-
 | Rozhraní | Implementováno | Popis |
 | - |----------------| - |
 | [IDebugActivateDocumentEvent2](../../../extensibility/debugger/reference/idebugactivatedocumentevent2.md) | DE | Odeslaný DE požádat o otevření dokumentu. |
@@ -211,7 +210,6 @@ Následující rozhraní jsou základní rozhraní pro rozšíření ladicího p
 
 ##  <a name="Ports"></a> Porty
  Tato rozhraní představují porty a dodavatelé portů.
-
 
 | Rozhraní | Implementováno | Popis |
 | - |----------------| - |

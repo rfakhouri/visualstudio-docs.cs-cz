@@ -15,17 +15,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f020e23b5a58d700fb698e8026ef0b783b6de6a4
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: a67804984c427062e55b72e3bbe942e6e4839f99
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54758563"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59652823"
 ---
 # <a name="convert-dialog-box"></a>Dialogové okno Převést
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 **Převést** dialogové okno umožňuje vybrat převodní nástroj k vytvoření nového projektu z staré heslo, jako je například vytváření [!INCLUDE[vbprvblong](../../includes/vbprvblong-md.md)] projekt z projektu jazyka Visual Basic 6. Můžete také použít [konvertor projektů Visual Studio](http://go.microsoft.com/fwlink/?LinkID=246465), která je dostupná na webu CodePlex upgrade projektů vytvořených v předchozích verzích sady Visual Studio.  
   
  [!INCLUDE[note_settings_general](../../includes/note-settings-general-md.md)].  

@@ -16,17 +16,16 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0aa325aa016b95a0dac0047f4b6fe9ae67f52ecc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c1cde6d36a1244976a2cc95dd9c1d3698be40df0
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54800859"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59652615"
 ---
 # <a name="options-dialog-box--projects-and-solutions-build-and-run"></a>Dialogové okno Možnosti, projekty a řešení, sestavit a spustit
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 V tomto dialogovém okně můžete zadat maximální počet projekty Visual C++ nebo Visual C#, které můžete vytvářet ve stejnou dobu, určité výchozí chování sestavení a některá nastavení protokolu sestavení. Chcete-li otevřít **možnosti** dialogového okna zvolte **nástroje**, **možnosti** na řádku nabídek. Chcete-li získat přístup k této sadě možností, rozbalte **projekty a řešení**a klikněte na tlačítko **sestavíte a spustíte**.  
   
 ## <a name="uielement-list"></a>Seznam prvků uživatelského rozhraní  

@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f78cffeb5cc538cfa8fa80edf35ca1390ebbc65
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: 081abc8765e1f95b723a598f4fedbaef4357c539
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58857772"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59655172"
 ---
 # <a name="diagnose-problems-after-deployment-using-intellitrace-c-visual-basic"></a>Diagnostika problémů po nasazení pomocí nástroje IntelliTrace (C#, Visual Basic)
 
@@ -45,7 +45,6 @@ Visual Studio 2017 a novějších verzích nejsou zahrnuté *BuildInfo.config* s
 * Pro nasazení do Azure, použijte [Application Insights](https://docs.microsoft.com/azure/application-insights/).
 
 * Pokud budete muset použít nástroje IntelliTrace, otevřete projekt v sadě Visual Studio a načítání souborů symbolů z odpovídající sestavení. Můžete načíst soubory symbolů z **moduly** okno nebo tím, že nakonfigurujete symboly v **nástroje** > **možnosti** > **ladění**   >  **Symboly**.
-
 
 ####  <a name="TFS2013"></a> Team Foundation Server 2013
  Nastavení vašeho kanálu sestavení přidat umístění zdroje, sestavení a symboly do manifestu sestavení (soubor BuildInfo.config). Team Foundation Build automaticky vytvoří tento soubor a umístí jej do výstupní složky vašeho projektu.
@@ -168,7 +167,7 @@ Visual Studio 2017 a novějších verzích nejsou zahrnuté *BuildInfo.config* s
 
 1.  Otevřete protokol nástroje IntelliTrace (soubor .iTrace) z Visual Studio Enterprise. Nebo stačí dvakrát klikněte na soubor, pokud máte Visual Studio Enterprise ve stejném počítači.
 
-2.  Zvolte **otevřete řešení** mít Visual Studio automaticky otevřela odpovídající řešení nebo projekt, pokud projekt nebyl vytvořen jako součást řešení. [DOTAZ: Protokol nástroje IntelliTrace neobsahuje informace o mé nasazené aplikaci. Proč k tomu? Co mám udělat?](#InvalidConfigFile)
+2.  Zvolte **otevřete řešení** mít Visual Studio automaticky otevřela odpovídající řešení nebo projekt, pokud projekt nebyl vytvořen jako součást řešení. [DOTAZ: Protokol nástroje IntelliTrace neobsahuje informace o mé nasazené aplikaci. Proč k tomu? Co mám dělat?](#InvalidConfigFile)
 
      Automaticky odloží sada Visual Studio všechny čekající změny při otevření odpovídajícího řešení nebo projektu. Chcete-li získat další podrobnosti o této sadě odložených změn, podívejte **výstup** okno nebo **Team Exploreru**.
 
@@ -215,7 +214,7 @@ Visual Studio 2017 a novějších verzích nejsou zahrnuté *BuildInfo.config* s
      Nyní můžete zkontrolovat další zaznamenané hodnoty, zásobník volání, procházet kódem nebo použít **IntelliTrace** okno [přesune zpět nebo vpřed "v čase" mezi ostatními metodami](../debugger/intellitrace.md) , které byly volány během této události výkonu.
 
     - [Co je všechny tyto další události a informace v protokolu nástroje IntelliTrace?](../debugger/using-saved-intellitrace-data.md)
-    - [Co víc mohu ještě udělat?](#WhatElse)
+    - [Co dalšího můžete mohu ještě udělat?](#WhatElse)
     - [Přečtěte si další informace o událostech výkonu?](https://devblogs.microsoft.com/devops/performance-details-in-intellitrace/)
 
 ### <a name="diagnose-an-exception"></a>Diagnostikování výjimky
@@ -270,7 +269,7 @@ Visual Studio 2017 a novějších verzích nejsou zahrnuté *BuildInfo.config* s
   <ProjectName>FabrikamFiber.Extranet.Web</ProjectName>
   ```
 
-- **Správa zdrojových kódů**
+- **SourceControl**
 
 - Informace o systému správy zdrojů a tyto požadované vlastnosti:
 

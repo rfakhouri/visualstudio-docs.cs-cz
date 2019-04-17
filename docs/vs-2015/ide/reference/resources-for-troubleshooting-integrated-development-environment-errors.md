@@ -94,17 +94,16 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3c660138437d9b08d49f9cf0c212e7b3612e9215
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 97edc5419cb552f853a75817564a69dd175ec54b
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57869861"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59666062"
 ---
 # <a name="resources-for-troubleshooting-integrated-development-environment-errors"></a>Zdroje pro řešení potíží obsahovaly chyby vývojového prostředí.
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Ne všechny chybové zprávy mají konkrétní související téma nápovědy. Informace v chybové zprávě není vám pomůžou vyřešit problém, naleznete další prostředky, například články znalostní báze, komunitu vývojářů nebo odbornou pomoc.  
   
 ## <a name="knowledge-base-articles"></a>Články znalostní báze  

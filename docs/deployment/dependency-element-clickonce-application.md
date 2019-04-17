@@ -26,12 +26,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4bbed7664232f1c508c71534f447b67dc837f55e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 7c9172749dc00acf0fd43725f6754373a0ade16e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56612670"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658055"
 ---
 # <a name="ltdependencygt-element-clickonce-application"></a>&lt;závislost&gt; – element (aplikace ClickOnce)
 Určuje závislost platformy nebo sestavení, která je požadována pro aplikaci.
@@ -122,7 +122,6 @@ Určuje závislost platformy nebo sestavení, která je požadována pro aplikac
 
  `dependentAssembly` má následující atributy.
 
-
 | Atribut | Popis |
 |-----------------------| - |
 | `dependencyType` | Povinný parametr. Určuje typ závislosti. Platné hodnoty jsou `preprequisite` a `install`. `install` Sestavení je nainstalován jako součást [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace. A `prerequisite` sestavení musí být k dispozici v globální mezipaměti sestavení (GAC) před [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikaci jde nainstalovat. |
@@ -153,14 +152,12 @@ Určuje závislost platformy nebo sestavení, která je požadována pro aplikac
 ### <a name="dsigtransform"></a>dsig:Transform
  `dsig:Transform` Je požadovaný podřízený element `dsig:Transforms` elementu. `dsig:Transform` Element má následující atributy.
 
-
 | Atribut | Popis |
 |-------------| - |
 | `Algorithm` | Algoritmus používaný k výpočtu algoritmu digest pro tento soubor. Aktuálně pouze hodnota používaná metodou [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] je `urn:schemas-microsoft-com:HashTransforms.Identity`. |
 
 ### <a name="dsigdigestmethod"></a>dsig: DigestMethod
  `dsig:DigestMethod` Je požadovaný podřízený element `hash` elementu. `dsig:DigestMethod` Element má následující atributy.
-
 
 | Atribut | Popis |
 |-------------| - |

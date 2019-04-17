@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b984a404ed8a33f2b4f78bca8e5a85f4d11bd91
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 8d27bd9be1b769215dd77d1e906a5698e17bd18b
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55908514"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659936"
 ---
 # <a name="send-activity-designer"></a>Návrhář aktivity Send
 
@@ -36,7 +36,6 @@ Alternativně **SendAndReceiveReply** návrhář šablony v **zasílání zpráv
 ### <a name="the-send-activity-properties"></a>Vlastnosti aktivity Send
 
 Následující tabulka ukazuje <xref:System.ServiceModel.Activities.Send> vlastnosti a popisuje, jak se používají v návrháři. Tyto vlastnosti můžete upravit v mřížce vlastností nebo na plochu návrháře postupu provádění.
-
 
 | Název vlastnosti | Požadováno | Použití |
 |-|----------|-|

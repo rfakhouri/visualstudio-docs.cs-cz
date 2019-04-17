@@ -1,5 +1,5 @@
 ---
-title: 'Průvodce: Profiler XSLT | Dokumentace Microsoftu'
+title: 'Návod: Profiler XSLT | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-xml-tools
@@ -9,17 +9,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1fd5f581308a677f1de7cd9311d4a8649b3ea4fc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 003b4ed6407126c7b1b6992c9c99eb30d36379b6
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54757210"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665386"
 ---
-# <a name="walkthrough-xslt-profiler"></a>Průvodce: Profiler XSLT
+# <a name="walkthrough-xslt-profiler"></a>Návod: Profiler XSLT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Profiler XSLT chyb vytváří detailní zprávy XSLT výkonu, které pomůže měřit, vyhodnotit a řešit problémy související s výkonem v kódu XSLT. Profiler XSLT zahrnuje užitečných rad pro XSL a XSLT optimalizace list stylu. Pro aplikace XSLT tento požadavek maximální výkon, tento nástroj může být nezbytné.  
   
 ## <a name="prerequisites"></a>Požadavky  

@@ -20,17 +20,16 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cd800e5d31189487689781c1f04cd82479893dfa
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a6080539a3f8b5f93a8d6fcd144dbd26dbd9eeaf
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54776558"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59667011"
 ---
 # <a name="create-a-windows-form-to-search-data"></a>Vytvoření formuláře Windows k vyhledávání dat
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Běžný scénář, kdy aplikace se má zobrazit vybraná data ve formuláři. Můžete například chtít zobrazujících objednávky pro konkrétního zákazníka nebo podrobnosti o určitém pořadí. V tomto scénáři uživatel zadá informace do formátu, a pak je dotaz proveden se vstupem uživatele jako parametr; To znamená data se určí parametrický dotaz. Dotaz vrátí pouze data, která splňuje kritéria zadaná uživatelem. Tento návod ukazuje, jak vytvořit dotaz, který vrátí zákazníky v konkrétním městě a upravte uživatelské rozhraní, aby uživatelé můžete zadat název města a kliknutím na tlačítko Spustit dotaz.  
   
  Použití parametrizovaných dotazů pomáhá zajištění efektivního aplikace tím, že databáze je nejvhodnější při práci – rychle filtrování záznamů. Naopak pokud vyžádáte tabulku celé databáze, přenos přes síť a pak použít k vyhledání záznamy, které chcete aplikaci logiky, aplikace může být pomalé a neefektivní.  

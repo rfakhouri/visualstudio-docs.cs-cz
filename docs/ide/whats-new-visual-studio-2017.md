@@ -18,12 +18,12 @@ ms.topic: conceptual
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: fea8aeac90a974fc6b1cb89d9419c0652c184796
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: eabfb7ffd365ab377bc80997138a4f3368db488d
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58857811"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649326"
 ---
 # <a name="whats-new-in-visual-studio-2017"></a>Novinky v sadě Visual Studio 2017
 
@@ -32,7 +32,7 @@ ms.locfileid: "58857811"
 Pokud chcete upgradovat z předchozí verze sady Visual Studio? Zde je, co Visual Studio 2017 můžete nabídnout: Nebývalá produktivita pro všechny vývojáře, aplikace a jakoukoli platformu. Pomocí sady Visual Studio 2017 můžete vyvíjet aplikace pro Android, iOS, Windows, Linux, web a cloud. Svůj kód můžete rychle psát, snadno ladit a diagnostikovat, často testovat a bez obav vydávat. Navíc si můžete sadu Visual Studio rozšířit a přizpůsobit pomocí svých vlastních rozšíření. Používejte správu verzí, agilita a efektivní spolupráce v této vydané verzi!
 
 >[!div class="button"]
->[Stažení sady Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
+>[Stáhněte si Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)
 
 Tady je podrobný rekapitulace toho, změny provedené od předchozích verzí sady Visual Studio 2015:
 
@@ -371,9 +371,11 @@ Díky novým funkcím, které můžete provádět vývoj ještě lepší prostř
 
 Chcete vědět více o tom, co jiného se připravuje pro Visual Studio 2017? Zobrazit [Visual Studio Roadmap](/visualstudio/productinfo/vs2018-roadmap) stránky.
 
+A nezapomeňte si prohlédněte si naše nejnovější verze [Visual Studio 2019](whats-new-visual-studio-2019.md).
+
 ## <a name="contact-us"></a>Kontaktujte nás
 
- Proč odeslat zpětnou vazbu týmu sady Visual Studio? Protože jsme vážně trvat zpětné vazby od zákazníků. To vede velkou část co děláme.
+Proč odeslat zpětnou vazbu týmu sady Visual Studio? Protože jsme vážně trvat zpětné vazby od zákazníků. To vede velkou část co děláme.
 
 Pokud chcete provést návrh, o jak jsme vylepšení sady Visual Studio, nebo Další informace o možnostech podpory produktu, naleznete [kontaktujte nás](talk-to-us.md) stránky.
 
@@ -389,4 +391,4 @@ Pokud chcete provést návrh, o jak jsme vylepšení sady Visual Studio, nebo Da
 * [Co je nového v jazyce C#](/dotnet/csharp/whats-new)
 * [Co je nového v Team Foundation Server](/tfs/server/whats-new?view=vsts)
 * [Co je nového v sadě Visual Studio pro Mac](https://visualstudio.microsoft.com/vs/visual-studio-mac/)
-* [Novinky v sadě Visual Studio 2019](whats-new-visual-studio-2019.md)
+* [Co je nového ve Visual Studio 2019](whats-new-visual-studio-2019.md)

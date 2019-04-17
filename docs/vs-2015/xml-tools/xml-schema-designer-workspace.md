@@ -9,17 +9,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f65312776f56fc2c96f2da7b528cc8cc9d339fb2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6d0b14b9f1cbbb81cc814546c5965e505a42885d
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54753445"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59656541"
 ---
 # <a name="xml-schema-designer-workspace"></a>Pracovní prostor Návrháře schémat XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Návrhář schématu XML (XSD Designer) je grafický nástroj, který umožňuje zkoumat vaše schémat XML. Kromě [Průzkumníka schémat XML](../xml-tools/xml-schema-explorer.md), která umožňuje procházet a procházet stromu XML schéma a provádět vyhledávání, Návrhář XSD poskytuje tři zobrazení, které vám umožní prozkoumat podrobněji schéma XSD. Počáteční zobrazení je výchozím bodem pro návrháře XSD; ze zobrazení spuštění můžete přejít na další zobrazení návrháře XSD a prohlédněte si podrobnosti o sadě schémat. Zobrazení grafu umožňuje vidíte Přehled schématu nastavení a vztahy mezi uzly schématu. Zobrazení modelu obsahu poskytuje grafické znázornění podrobnosti uzlů místní a globální schémat, včetně jednoduché a komplexní typy prvků, skupiny, atributy a skupiny atributů.  
   
  A začněte se seznamovat uzly, které vás zajímají, musíte je přidat do pracovního prostoru. Pracovní prostor se sdílí mezi všech zobrazení.  

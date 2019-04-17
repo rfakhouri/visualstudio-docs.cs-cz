@@ -12,17 +12,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d0fbdfb1af767bfc49d373fedd81598e29ef6918
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: ecc9bae7176c0d8c0f79452baff87a7a697db459
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54804624"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59648218"
 ---
 # <a name="creating-forwarding-loggers"></a>Vytváření předávajících (sekundárních) protokolovacích nástrojů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Předávající Protokolovací nástroje zvýšit efektivitu protokolování tím, že umožňuje zvolit události, které chcete monitorovat při sestavování projektů v systému s více procesory. Tím, že předávající Protokolovací nástroje, je možné zabránit nežádoucí události od zahlcení centrálním protokolovacím zpomalení doby sestavení a nebudou zbytečně zabírat protokol.  
   
  Chcete-li vytvořit předávající protokolovací nástroj, můžete buď implementovat <xref:Microsoft.Build.Framework.IForwardingLogger> rozhraní a implementaci metody ručně nebo použít <xref:Microsoft.Build.BuildEngine.ConfigurableForwardingLogger> třída a její předem nakonfigurovaná metody. (Druhá možnost postačí pro většinu aplikací.)  

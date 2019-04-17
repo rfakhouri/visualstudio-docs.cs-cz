@@ -10,17 +10,16 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 0fba11063e7be570dc8ad2ce9a1b07b3ea88ffa2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 85978a79fc1e0110e5b13d6dc0e3198d20ac674a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54802369"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653057"
 ---
 # <a name="visual-studio-data-tools-for-c"></a>Visual Studio data tools pro C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Nativní kód C++ často poskytují nejrychlejší výkon při přístupu k zdroje dat. Nástroje pro aplikace C++ v sadě Visual Studio data však není bohaté, protože je pro aplikace .NET. Například okna zdroje dat nelze přetáhnout zdroje dat na návrhovou plochu C++. Pokud potřebujete objektově relační vrstvy, budete muset napište vlastní, nebo použijte produkt jiného výrobce.  Totéž platí pro datovou vazbu funkce, i když se aplikace, které používají knihovnu Microsoft Foundation Class můžete použít některé databázových tříd s dokumenty a zobrazeními, ukládat data v paměti a zobrazí uživateli. Další informace najdete v tématu [přístup k datům v jazyce Visual C++](https://msdn.microsoft.com/library/7wtdsdkh.aspx) .  
   
  Pro připojení k SQL Database, můžete použít nativní aplikace C++ ovladače rozhraní ODBC a OLE DB a ADO poskytovatele, které jsou součástí Windows.     Ty můžete připojit k libovolné databázi, která podporuje těchto rozhraní. Ovladač ODBC je standardem. OLE DB je k dispozici z důvodu zpětné kompatibility. Další informace o těchto technologií ještě používáte dat najdete v tématu [Windows Data Access Components](https://msdn.microsoft.com/library/windows/desktop/aa968814\(v=vs.85\).aspx)  

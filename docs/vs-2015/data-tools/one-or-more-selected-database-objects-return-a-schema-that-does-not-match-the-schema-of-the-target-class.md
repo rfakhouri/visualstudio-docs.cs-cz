@@ -9,17 +9,16 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c9696d41b228cedb301239ebcd59cb68bc7e437f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: df23a6e2a4288c6370a339d37d151283fe3afa8f
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54757978"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59655553"
 ---
 # <a name="one-or-more-selected-database-objects-return-a-schema-that-does-not-match-the-schema-of-the-target-class"></a>Minimálně jeden vybraný databázový objekt vrací schéma, které neodpovídá schématu cílové třídy.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Jeden nebo více vybraných databázových objektů vrací schéma, které neodpovídá schématu cílové třídy. Nic se přidala do návrháře.  
   
  Při přetažení databázových objektů na existující entity třídy dat vrácených databázového objektu musí odpovídat schématu cílové třídy entity. Ověřte, že je vybraný objekt správnou databázi a, třídy správné entita je cílem.  

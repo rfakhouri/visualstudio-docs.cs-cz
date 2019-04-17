@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f8c081a2836c4dbb85f7d9af789deeda667a2a27
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 582006c7b9629911f9d403fdab6af0637eb9337c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616869"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59661890"
 ---
 # <a name="legacy-language-service-essentials"></a>Základy služby starší verze jazyka
 Služba jazyka pro integraci programovací jazyk do sady Visual Studio je nutné zadat. Toto téma popisuje funkce dostupné ve službě starší verze jazyka services.
@@ -41,7 +41,6 @@ Služba jazyka pro integraci programovací jazyk do sady Visual Studio je nutné
  Mnohé z těchto funkcí vyžadovat služba jazyka analyzovat zdrojový kód. Často můžete opakovaně použít tokenizaci a analýzu kódu pro kompilátor nebo překladač.
 
  Tyto funkce se vztahují k podpoře programovacích jazyků, ale nejsou součástí jazykových služeb:
-
 
 | Funkce | Popis |
 |-----------------------| - |

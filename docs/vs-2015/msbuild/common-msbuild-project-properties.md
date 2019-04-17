@@ -19,17 +19,16 @@ caps.latest.revision: 39
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3f5c7c2f587f4c2fb44ab56223dafa2f988c6103
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 7d5c716d702716ffb0083279523668eab3e01685
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54758467"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59650236"
 ---
 # <a name="common-msbuild-project-properties"></a>Obecné vlastnosti projektu nástroje MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 V následující tabulce jsou uvedeny často používané vlastnosti, které jsou definovány v souborech projektu sady Visual Studio nebo zahrnuté v souborech TARGETS, které poskytuje nástroj MSBuild.  
   
  Soubory projektu v sadě Visual Studio (CSPROJ, vbproj, vcxproj a jiné) obsahují kód XML nástroje MSBuild, která se spouští při vytváření projektu pomocí rozhraní IDE. Projekty obvykle importují jeden nebo více souborů TARGETS pro definování jejich procesu sestavení. Další informace najdete v tématu [. Cílí na soubory](../msbuild/msbuild-dot-targets-files.md).  
@@ -91,7 +90,7 @@ V následující tabulce jsou uvedeny často používané vlastnosti, které jso
 |PdbFile|Název souboru, který emitujete souboru .pdb. Tato vlastnost je ekvivalentní `/pdb` přepínače kompilátoru csc.exe.|  
 |Platforma|Operační systém, který vytváříte. Platné hodnoty jsou "Any CPU", "x 86" a "x64".|  
 |RemoveIntegerChecks|Logická hodnota určující, zda chcete zakázat chyby kontroly přetečení celých čísel. Výchozí hodnota je `false`. Tato vlastnost je ekvivalentní `/removeintchecks` přepínače kompilátoru vbc.exe.|  
-|SGenUseProxyTypes|Logická hodnota, která určuje, zda typy proxy měly být generovány pomocí SGen.exe.<br /><br /> Cíl SGen používá tuto vlastnost pro nastavení příznaku UseProxyTypes. Výchozí hodnota této vlastnosti na hodnotu true a neexistuje žádné uživatelské rozhraní pro toto nastavení změnit. Generovat sestavení serializace pro typy bez, přidejte do souboru projektu tuto vlastnost a nastavte ji na hodnotu false před importem cílů Microsoft.Common.Targets nebo webových.|  
+|SGenUseProxyTypes|Logická hodnota, která určuje, zda typy proxy měly být generovány pomocí SGen.exe.<br /><br /> Cíl SGen používá tuto vlastnost pro nastavení příznaku UseProxyTypes. Výchozí hodnota této vlastnosti na hodnotu true a neexistuje žádné uživatelské rozhraní pro toto nastavení změnit. Generovat sestavení serializace pro typy bez, přidejte do souboru projektu tuto vlastnost a nastavte ji na hodnotu false před importem cílů Microsoft.Common.Targets nebo C#/VB.targets.|  
 |SGenToolPath|Volitelný nástroj pro cestu, která označuje, kde získat SGen.exe, když je aktuální verze SGen.exe přepsána.|  
 |StartupObject|Určuje třídu nebo modul, který obsahuje metodu Main nebo Sub Main proceduru. Tato vlastnost je ekvivalentní `/main` přepínač kompilátoru.|  
 |ProcessorArchitecture|Architektura procesoru, který se používá, když jsou překládány odkazy na sestavení. Platné hodnoty jsou "msil", "x86," "amd64" nebo "ia64".|  
