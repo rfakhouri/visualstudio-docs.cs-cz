@@ -26,17 +26,16 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 413a92f2e42b6bacfeb62deb3bae0e50d5ef908b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b2358e177f049d9eda17bcb54baf6a547605419c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54800904"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653096"
 ---
 # <a name="save-data-back-to-the-database"></a>Ukládání dat zpět do databáze
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Datová sada je kopie v paměti data. Pokud upravíte, tato data, je vhodné tyto změny uložit zpět do databáze. Můžete to udělat jedním ze tří způsobů:  
   
 - Voláním jedné z `Update` metody třídy TableAdapter  

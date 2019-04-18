@@ -10,12 +10,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6db375422e4a8d21d9b82cac82a07fed45e7d279
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: 0b725d0ee49590062ebdde9a1ef27f838678ccf5
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796813"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59652108"
 ---
 # <a name="c-core-guidelines-checker-reference"></a>Referenční dokumentace pro kontrolu požadovaných součástí C++ Core Guidelines
 
@@ -107,12 +107,9 @@ Výrazu "% expr": Rozklad pole na ukazatel. Zobrazit [Bounds.3 pokyny pro jádro
 
 [C26435 SINGLE_VIRTUAL_SPECIFICATION](c26435.md) funkce 'symbol %' by měla určovat právě jeden z 'virtual', 'override' nebo 'final. Zobrazit [C.128: Virtuální funkce by měla určovat právě jedno z virtual, override nebo konečné](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md).
 
-
 [C26436 NEED_VIRTUAL_DTOR](C26436.md) typ '% symbol %' s virtuální funkcí potřebuje buď veřejný virtuální, nebo chráněný nevirtuální destruktor. Zobrazit [C++ Core Guidelines C.35](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#c35-a-base-class-destructor-should-be-either-public-and-virtual-or-protected-and-nonvirtual).
 
-
 [C26443 NO_EXPLICIT_DTOR_OVERRIDE](c26443.md) potlačení destruktoru by neměl používat explicitní 'override' nebo 'virtual' specifikátorů. Zobrazit [C.128: Virtuální funkce by měla určovat právě jedno z virtual, override nebo konečné](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md).
-
 
 ## <a name="type-group"></a>Typ skupiny
 
@@ -205,7 +202,6 @@ Zobrazit [GSL.view pokyny pro jádro C++: Zobrazení](https://github.com/isocpp/
 
 [C26449 NO_SPAN_FROM_TEMPORARY](c26449.md) 
  `gsl::span` nebo `std::string_view` vytvořené z dočasného budou mít neplatná při dočasný zneplatněna. Zobrazit [C++ Core Guidelines: GSL.view: Zobrazení](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#gslview-views).
-
 
 ## <a name="deprecated-warnings"></a>Upozornění na zastaralé
 

@@ -26,17 +26,16 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e2586de5731aee916dfc877013269f8d08eb756d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: fc7c3202b26e94736f59561c6c13f8350102d7b6
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54780366"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59656479"
 ---
 # <a name="file-properties-javascript"></a>Vlastnosti souboru, JavaScript
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Vlastnosti souboru můžete použít k označení jaké akce systém projektu by měl provádět na souborech. Můžete třeba nastavit vlastnosti souboru k označení, zda má soubor přidat do balíčku jako soubor prostředků.  
   
  Můžete vybrat libovolný soubor v Průzkumníku řešení a pak zkontrolujte její vlastnosti v okně Vlastnosti. Soubory jazyka JavaScript máte čtyři vlastnosti: **Kopírovat do výstupního adresáře**, **balíček akce**, **název souboru**, a **cesta k souboru**.  

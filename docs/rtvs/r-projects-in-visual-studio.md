@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: c99d7d01009ef064056f0ca91688ad043880cffd
-ms.sourcegitcommit: d78821f8c353e0102b1554719f549f32dffac71b
+ms.openlocfilehash: a24f887b5e8d12a757098eb94768ad110a5cb727
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "58515187"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59669209"
 ---
 # <a name="create-r-projects-in-visual-studio"></a>Vytvořit projekty v R v sadě Visual Studio
 
@@ -62,7 +62,6 @@ Pokud máte existující složky *. R* soubory, které chcete spravovat v projek
 ## <a name="project-properties"></a>Vlastnosti projektu
 
 K otevření stránek vlastností projektu, klikněte pravým tlačítkem na projekt v **Průzkumníka řešení** a vyberte **vlastnosti**, nebo vyberte **projektu > vlastnosti (název projektu)** nabídky položka. Otevřeném okně zobrazí vlastnosti projektu:
-
 
 | Karta | Vlastnost | Popis |
 | --- | --- | --- |

@@ -20,17 +20,16 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 570f4d7ec459a961f2608557ce692029128ce4b6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: cf3c68d7f70822bbe7b085b92e64bda0b9437dfc
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54756581"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59660980"
 ---
 # <a name="generateapplicationmanifest-task"></a>GenerateApplicationManifest – úloha
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Generuje [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifest aplikace nebo nativní manifest. Nativní manifest popisuje komponentu definováním jedinečné identity pro komponentu a identifikaci všech sestavení a souborů, které tvoří součást. A [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifest aplikace rozšiřuje nativní manifest označením vstupního bodu aplikace a určením úrovně zabezpečení aplikace.  
   
 ## <a name="parameters"></a>Parametry  
@@ -45,10 +44,10 @@ Generuje [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifest aplikac
 |`Dependencies`|Volitelné <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametru.<br /><br /> Určuje seznam položek, který definuje sadu závislých sestavení pro generovaný manifest. Každá položka může být dále popsána metadaty položky pro označují další stav nasazení a typ závislosti. Další informace naleznete v části "Metadata položky" níže.|  
 |`Description`|Volitelné `String` parametru.<br /><br /> Určuje popis aplikace nebo komponenty.|  
 |`EntryPoint`|Volitelné <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametru.<br /><br /> Určuje jednu položku, která označuje vstupní bod pro generované sestavení manifestu.<br /><br /> Pro [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifestu aplikace tento parametr určuje sestavení, který se spustí při spuštění aplikace.|  
-|`ErrorReportUrl`|Volitelné [String] (<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->) parametru.<br /><br /> Určuje adresu URL webové stránky, který se zobrazí v dialogových oknech během chybových sestav v instalacích ClickOnce.|  
+|`ErrorReportUrl`|(Volitelné [String]<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->) parametru.<br /><br /> Určuje adresu URL webové stránky, který se zobrazí v dialogových oknech během chybových sestav v instalacích ClickOnce.|  
 |`FileAssociations`|Volitelné <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametru.<br /><br /> Určuje seznam jednoho nebo více typů souboru, které jsou propojeny s manifestem nasazení ClickOnce.<br /><br /> Přidružení souborů platné, pouze v případě, že je cílem rozhraní .NET Framework 3.5 nebo novější.|  
 |`Files`|Volitelné <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametru.<br /><br /> Soubory k zahrnutí do manifestu. Zadejte úplnou cestu pro každý soubor.|  
-|`HostInBrowser`|Volitelná [logická hodnota] (<!-- TODO: review code entity reference <xref:assetId:///Boolean?qualifyHint=False&amp;autoUpgrade=True>  -->) parametru.<br /><br /> Pokud `true`, je aplikace hostovaná v prohlížeči (jako jsou aplikace WPF webového prohlížeče).|  
+|`HostInBrowser`|Nepovinné () [logická]<!-- TODO: review code entity reference <xref:assetId:///Boolean?qualifyHint=False&amp;autoUpgrade=True>  -->) parametru.<br /><br /> Pokud `true`, je aplikace hostovaná v prohlížeči (jako jsou aplikace WPF webového prohlížeče).|  
 |`IconFile`|Volitelné <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametru.<br /><br /> Určuje soubor ikony aplikace. Ikona aplikace je vyjádřena v manifestu generované aplikace a používá se pro dialogové okno nabídky Start a přidat nebo odebrat programy. Pokud tento vstup není zadán, je použita výchozí ikona. Pokud úloha generuje nativní manifest, tento parametr je ignorován.|  
 |`InputManifest`|Volitelné <xref:Microsoft.Build.Framework.ITaskItem> parametru.<br /><br /> Označuje vstupní dokument XML, který bude sloužit jako základ pro generátor manifestu. To umožňuje strukturovaným datům, například zabezpečení aplikace nebo definicím vlastního manifestu, se projevovat ve výstupním manifestu. Kořenový element v dokumentu XML musí být uzel sestavení v oboru názvů asmv1.|  
 |`IsolatedComReferences`|Volitelné <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametru.<br /><br /> Určuje model COM izolovat v generovaném manifestu. Tento parametr podporuje schopnost izolovat komponenty modelu COM pro nasazení "Model COM bez registrace". Funguje díky automaticky vygeneruje manifest se standardními definicemi registrace COM. Nicméně komponenty modelu COM musí být zaregistrovaný v počítači sestavení, aby toto fungovalo správně.|  
@@ -61,12 +60,12 @@ Generuje [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifest aplikac
 |`Publisher`|Volitelné `String` parametru.<br /><br /> Určuje název vydavatele aplikace. Pokud tento parametr nezadáte, název je odvozen z registrovaného uživatele, nebo z identity generovaného manifestu. Tento název se používá pro název složky v nabídce Start a je součástí názvu, který se zobrazí v dialogovém okně Přidat nebo odebrat programy.|  
 |`RequiresMinimumFramework35SP1`|Volitelné `Boolean` parametru.<br /><br /> Pokud je hodnota true, aplikace požaduje instalaci rozhraní .NET Framework 3.5 SP1 nebo novější verze.|  
 |`TargetCulture`|Volitelné `String` parametru.<br /><br /> Určuje jazykovou verzi aplikace a určuje, `Language` pole identity sestavení pro generovaný manifest. Pokud není tento parametr zadán, předpokládá se, že aplikace je invariantní jazyková verze.|  
-|`TargetFrameworkMoniker`|Volitelné <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> parametru.<br /><br /> Určuje moniker cílového rozhraní.|  
-|`TargetFrameworkProfile`|Volitelné <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> parametru.<br /><br /> Určuje profil cílového rozhraní framework.|  
-|`TargetFrameworkSubset`|Volitelné <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> parametru.<br /><br /> Určuje název podsady rozhraní .NET Framework na cíl.|  
-|`TargetFrameworkVersion`|Volitelné <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> parametru.<br /><br /> Určuje cílovou platformu .NET Framework projektu.|  
+|`TargetFrameworkMoniker`|volitelná, <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> parametr.<br /><br /> Určuje moniker cílového rozhraní.|  
+|`TargetFrameworkProfile`|volitelná, <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> parametr.<br /><br /> Určuje profil cílového rozhraní framework.|  
+|`TargetFrameworkSubset`|volitelná, <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> parametr.<br /><br /> Určuje název podsady rozhraní .NET Framework na cíl.|  
+|`TargetFrameworkVersion`|volitelná, <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> parametr.<br /><br /> Určuje cílovou platformu .NET Framework projektu.|  
 |`TrustInfoFile`|Volitelné <xref:Microsoft.Build.Framework.ITaskItem> parametru.<br /><br /> Označuje dokument XML, který určuje zabezpečení aplikace. Kořenový element v dokumentu XML musí být uzel trustInfo v oboru názvů asmv2. Pokud úloha generuje nativní manifest, tento parametr je ignorován.|  
-|`UseApplicationTrust`|Volitelné <!-- TODO: review code entity reference <xref:assetId:///Boolean?qualifyHint=False&amp;autoUpgrade=True>  --> parametru.<br /><br /> Hodnota TRUE znamená, `Product`, `Publisher`, a `SupportUrl` vlastnosti jsou zapisovány do manifestu aplikace.|  
+|`UseApplicationTrust`|volitelná, <!-- TODO: review code entity reference <xref:assetId:///Boolean?qualifyHint=False&amp;autoUpgrade=True>  --> parametr.<br /><br /> Hodnota TRUE znamená, `Product`, `Publisher`, a `SupportUrl` vlastnosti jsou zapisovány do manifestu aplikace.|  
   
 ## <a name="remarks"></a>Poznámky  
  Kromě výše uvedených parametrů zdědí tento úkol parametry ze <xref:Microsoft.Build.Tasks.GenerateManifestBase> třída, která sama dědí z <xref:Microsoft.Build.Utilities.Task> třídy. Seznam parametrů třídy úkoly naleznete v tématu [Třída Base úlohy](../msbuild/task-base-class.md).  

@@ -13,17 +13,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 760caa1fc87b0978571a8a53a44c5cb60616b615
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: c681a67b48baf89e1e601943c6cafd25e91ff332
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54768955"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59663911"
 ---
 # <a name="toolbox-data-tab"></a>Sada nástrojů, karta Data
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Zobrazí data objekty, které můžete přidat do formuláře a komponenty. **Data** karty **nástrojů** se zobrazí, když vytvoříte projekt, který má přidružený designer. **Nástrojů** se zobrazí ve výchozím nastavení v integrovaném vývojovém prostředí sady Visual Studio; Pokud chcete zobrazit **nástrojů**vyberte **nástrojů** z **Zobrazení** nabídky.  
   
 > [!TIP]
@@ -32,7 +31,7 @@ Zobrazí data objekty, které můžete přidat do formuláře a komponenty. **Da
 ## <a name="ui-element-list"></a>Seznam prvků uživatelského rozhraní  
  Chcete-li přejít přímo na stránce dokumentace rozhraní .NET Framework pro komponentu, stiskněte **F1** na položku v **nástrojů** nebo na položku součásti na hlavním panelu v návrháři.  
   
-|Název|Popis|  
+|Name|Popis|  
 |----------|-----------------|  
 |<xref:System.Data.DataSet>|Přidá instanci typovou nebo netypovou datovou sadu do formuláře nebo komponenty. Při přetažení tohoto objektu na Návrhář zobrazí dialogové okno, které vám umožní vybrat existující třídy typové datové sady nebo určit, že chcete vytvořit novou, prázdnou, netypové datové sady. **Poznámka:**  Je velmi riskantní používat <xref:System.Data.DataSet> objektu na **nástrojů** k vytvoření nové schéma typové datové sady a třídy. Další informace najdete v tématu [vytvoření a konfigurace datové sady](../../data-tools/create-and-configure-datasets-in-visual-studio.md).|  
 |<xref:System.Windows.Forms.DataGridView>|Poskytuje výkonný a flexibilní způsob, jak zobrazit data ve formátu tabulky.|  
