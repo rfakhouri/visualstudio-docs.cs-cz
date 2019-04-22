@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: ba1529840a38a23929b9926cc4bed5cc22a058cb
-ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/08/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59232564"
 ---
 # <a name="overview-of-net-compiler-platform-analyzers"></a>Přehled analyzátory pro .NET Compiler Platform
@@ -90,6 +90,6 @@ Závažnost pravidla nelze nastavit v analyzátory, které byly nainstalovány j
 
 ## <a name="see-also"></a>Viz také:
 
-- [Nejčastější dotazy k analyzátorům](analyzers-faq.md)
+- [Analyzátory – nejčastější dotazy](analyzers-faq.md)
 - [Napsat vlastní analyzátor Roslyn](../extensibility/getting-started-with-roslyn-analyzers.md)
-- [Sada .NET Compiler Platform SDK](/dotnet/csharp/roslyn-sdk/)
+- [.NET Compiler Platform SDK](/dotnet/csharp/roslyn-sdk/)

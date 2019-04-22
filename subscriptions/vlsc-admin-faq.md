@@ -8,10 +8,10 @@ ms.topic: conceptual
 description: Časté otázky k migraci Volume License Service Center správce
 searchscope: VS Subscription
 ms.openlocfilehash: 43b5ff7aeddf5ba1d938709e9f395f50395d0f3d
-ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/03/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58897657"
 ---
 # <a name="visual-studio-subscriptions-administration-migration"></a>Migrace správy předplatných služby Visual Studio

@@ -6,10 +6,10 @@ ms.author: johmil
 ms.date: 04/02/2019
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
 ms.openlocfilehash: b9e033b765df4ae4396c011fe37939b4fc63e372
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58857551"
 ---
 # <a name="set-up-visual-studio-for-mac-tools-for-unity"></a>Instalace sady Visual Studio for Mac Tools for Unity
@@ -36,7 +36,7 @@ Během instalace Ujistěte se, že Visual Studio pro Mac se změnami seznam sou�
 
 Verze sady Visual Studio pro Mac součástí instalace Unity nemusí být na nejnovější verzi. Doporučujeme zkontrolovat aktualizace Ujistěte se, že máte přístup k nejnovější nástroje a funkce.
 
-* [Updating Visual Studio for Mac](update.md)
+* [Aktualizace sady Visual Studio pro Mac](update.md)
 
 ### <a name="manual-installation"></a>Ruční instalace
 

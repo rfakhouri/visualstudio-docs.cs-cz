@@ -10,10 +10,10 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 18c5b01aed925bf458e1c8779a2f41ea1a2d98a4
-ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/11/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59504065"
 ---
 # <a name="convert-foreach-loop-to-linq"></a>Převod smyčky foreach na LINQ
@@ -77,6 +77,6 @@ public class Class1
 
 ## <a name="see-also"></a>Viz také:
 
-- [Refaktoring](../refactoring-in-visual-studio.md)
+- [Refactoring](../refactoring-in-visual-studio.md)
 - [Náhled změn](../../ide/preview-changes.md)
-- [Tipy pro vývojáře na platformě .NET](../../ide/visual-studio-2017-for-dotnet-developers.md)
+- [Tipy pro vývojáře .NET](../../ide/visual-studio-2017-for-dotnet-developers.md)

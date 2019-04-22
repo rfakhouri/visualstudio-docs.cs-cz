@@ -18,10 +18,10 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: 8e999df4fc1269025c9adc038c1a17dd586a3081
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58790482"
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio"></a>Instalace sady Visual Studio s použitím parametrů příkazového řádku
@@ -68,7 +68,7 @@ Možnosti příkazového řádku se používají ve spojení s zaváděcí nást
 | `update` | Aktualizuje zobrazí nainstalovaný produkt. |
 | `repair` | Opraví zobrazí nainstalovaný produkt. |
 | `uninstall` | Odinstaluje zobrazí nainstalovaný produkt. |
-| `export` | **Novinka ve verzi 15.9**: Exportuje výběr instalace na konfigurační soubor instalace. **Poznámka:**: Jde použít jenom s vs_installer.exe. |
+| `export` | **Novinka ve verzi 15.9**: Exportuje výběr instalace na konfigurační soubor instalace. **Poznámka:** Jde použít jenom s vs_installer.exe. |
 
 ## <a name="install-options"></a>Možnosti instalace
 
@@ -101,7 +101,7 @@ Možnosti příkazového řádku se používají ve spojení s zaváděcí nást
 | ----------------------- | --------------- |
 | `--layout <dir>` | Určuje adresář, který chcete vytvořit offline instalaci mezipaměti. Další informace najdete v tématu [vytvoření síťové instalace sady Visual Studio](create-a-network-installation-of-visual-studio.md).|
 | `--lang <one or more language-locales>` | **Volitelné**: Použít s `--layout` Příprava offline instalace mezipaměti pomocí balíčků prostředků se zadaným jazyk(y). Další informace najdete v tématu [seznam národních prostředí jazyka](#list-of-language-locales) části na této stránce.|
-| `--add <one or more workload or component IDs>` | **Volitelné**: Jeden nebo více úloh nebo ID komponenty pro přidání. Ale ne doporučené a volitelné komponenty jsou nainstalovány požadované součásti artefaktu. Můžete určit další součásti globálně pomocí `--includeRecommended` a/nebo `--includeOptional`. Pro citlivější ovládací prvek, můžete připojit `;includeRecommended` nebo `;includeOptional` ID (například `--add Workload1;includeRecommended` nebo `--add Workload2;includeOptional`). Další informace najdete v tématu [pracovního vytížení a komponenta ID](workload-and-component-ids.md) stránky. <br/>**Poznámka:**: Pokud `--add` se používá, pouze zadané úlohy a komponenty a jejich závislosti se stáhnou. Pokud `--add` neurčíte, všechny úlohy a komponenty se stáhnou do rozložení.|
+| `--add <one or more workload or component IDs>` | **Volitelné**: Jeden nebo více úloh nebo ID komponenty pro přidání. Ale ne doporučené a volitelné komponenty jsou nainstalovány požadované součásti artefaktu. Můžete určit další součásti globálně pomocí `--includeRecommended` a/nebo `--includeOptional`. Pro citlivější ovládací prvek, můžete připojit `;includeRecommended` nebo `;includeOptional` ID (například `--add Workload1;includeRecommended` nebo `--add Workload2;includeOptional`). Další informace najdete v tématu [pracovního vytížení a komponenta ID](workload-and-component-ids.md) stránky. <br/>**Poznámka:** Pokud `--add` se používá, pouze zadané úlohy a komponenty a jejich závislosti se stáhnou. Pokud `--add` neurčíte, všechny úlohy a komponenty se stáhnou do rozložení.|
 | `--includeRecommended` | **Volitelné**: Obsahuje doporučené komponenty pro všechny úlohy, které jsou nainstalovány, ale nikoli volitelné komponenty. Úlohy jsou zadány buď pomocí `--allWorkloads` nebo `--add`. |
 | `--includeOptional` | **Volitelné**: Obsahuje doporučené *a* volitelné komponenty pro všechny úlohy nebudou zahrnuty do rozložení. Úlohy jsou zadány s `--add`.  |
 | `--keepLayoutVersion` | **Novinka v 15.3, volitelné**: Použijte změny na rozložení bez aktualizace verze rozložení. |

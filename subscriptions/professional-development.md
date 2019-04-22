@@ -8,10 +8,10 @@ ms.topic: conceptual
 description: Výhody profesní rozvoj součástí předplatných sady Visual Studio
 searchscope: VS Subscription
 ms.openlocfilehash: d63fd098c003f606a1d88aec55157e554620b20b
-ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/04/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59018360"
 ---
 # <a name="professional-development-benefits-available-in-visual-studio-subscriptions"></a>Profesionální vývoj výhody, které jsou k dispozici v předplatných sady Visual Studio
@@ -22,7 +22,7 @@ V závislosti na vaší úrovni předplatného se zobrazí přístup k obsahu š
 
 Další informace o určité výhody projděte si tyto stránky:
 
-- [Datacampu](vs-datacamp.md)
+- [DataCamp](vs-datacamp.md)
 - [Opsgility](vs-opsgility.md)
 - [Pluralsight](vs-pluralsight.md)
 - [Zpravodaj MSDN Magazine](vs-msdn.md)

@@ -11,10 +11,10 @@ manager: crdun
 ms.workload:
 - unity
 ms.openlocfilehash: a635ca7369470788f0813f6e246767b64f6af445
-ms.sourcegitcommit: 0a2fdc23faee77187e10a1c19665ba5a1ac68e72
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/10/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59477662"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>Protokol změn (Visual Studio Tools for Unity, Windows)
@@ -743,7 +743,7 @@ Protokol změn Visual Studio Tools for Unity.
 
     -   Přidání podpory pro NetworkBehavior zprávy v průvodci.
 
--   **UI:**
+-   **UŽIVATELSKÉ ROZHRANÍ:**
 
     -   Přidat možnost konfigurovat, zda se MonoBehavior zprávy.
 
@@ -767,7 +767,7 @@ Protokol změn Visual Studio Tools for Unity.
 
     -   Opravili jsme problém, která způsobila zablokování při ladění sady Visual Studio.
 
--   **UI:**
+-   **UŽIVATELSKÉ ROZHRANÍ:**
 
     -   Oprava nekompatibility s [karty Studio](https://tabsstudio.com/) rozšíření sady Visual Studio.
 

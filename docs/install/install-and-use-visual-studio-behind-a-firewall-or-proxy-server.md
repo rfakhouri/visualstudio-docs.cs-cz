@@ -18,10 +18,10 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: 227525b08e45832041b573fbb7cf3719484d1b8e
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58857525"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Instalace a používání sady Visual Studio a služeb Azure za bránou firewall nebo proxy serverem
@@ -144,5 +144,5 @@ Tady je několik dalších možností podpory:
 * [Požadavky na připojení pro Live Share](/visualstudio/liveshare/reference/connectivity/)
 * [Vytvoření síťové instalace sady Visual Studio](create-a-network-installation-of-visual-studio.md)
 * [Řešení potíží s chybami související se sítí v sadě Visual Studio](troubleshooting-network-related-errors-in-visual-studio.md)
-* [Příručka správce sady Visual Studio](visual-studio-administrator-guide.md)
+* [Příručka pro správce aplikace Visual Studio](visual-studio-administrator-guide.md)
 * [Nainstalovat za bránou firewall nebo proxy serverem (Visual Studio for Mac)](/visualstudio/mac/install-behind-a-firewall-or-proxy-server)

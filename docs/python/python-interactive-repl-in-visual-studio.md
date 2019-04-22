@@ -11,10 +11,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: bc813868f3284ad81849e3a03d864de65d9f54ed
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59365924"
 ---
 # <a name="work-with-the-python-interactive-window"></a>Práce s interaktivní okno Pythonu
@@ -77,7 +77,7 @@ Výjimkou je další řádky kódu, které jsou potřebné k tomu úplný přík
 | --- | --- |
 | `$$` | Vloží poznámku, což je užitečné komentáře kódu v průběhu relace. |
 | `$attach` | Ladicí program sady Visual Studio připojí k procesu okno REPL pro povolení ladění. |
-| `$cls`,  `$clear` | Vymaže obsah okna editor uživatele zůstanou nedotčena historie a spuštění kontextu. |
+| `$cls`, `$clear` | Vymaže obsah okna editor uživatele zůstanou nedotčena historie a spuštění kontextu. |
 | `$help` | Zobrazit seznam příkazů a nápovědy ke konkrétnímu příkazu. |
 | `$load` | Načte příkazy ze souboru a spustí, až do dokončení. |
 | `$mod` | Přepne aktuální obor na zadaný název modulu. |

@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f3f3537a56b746c9104898d68e40038fcd545910
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58856457"
 ---
 # <a name="get-started-with-unit-testing"></a>Začínáme s testováním částí
@@ -162,7 +162,7 @@ Chcete-li vytvořit jednotkové testy používající [NUnit](https://nunit.org/
 
 ## <a name="see-also"></a>Viz také:
 
-* [Návod: Vytváření a spouštění testů jednotek pro spravovaný kód](walkthrough-creating-and-running-unit-tests-for-managed-code.md)
+* [Návod: Vytváření a spouštění testů jednotek pro spravovaný kód](walkthrough-creating-and-running-unit-tests-for-managed-code.md)
 * [Vytvoření příkazu pro testování částí](create-unit-tests-menu.md)
 * [Generování testů s Intellitestem](generate-unit-tests-for-your-code-with-intellitest.md)
 * [Spouštění testů pomocí Průzkumníka testů](run-unit-tests-with-test-explorer.md)

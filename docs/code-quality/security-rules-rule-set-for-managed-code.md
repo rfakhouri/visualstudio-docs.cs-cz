@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 45c51a6c5496686ef84b17341c97f00680a80bdd
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59366039"
 ---
 # <a name="security-rules-rule-set-for-managed-code"></a>Sada pravidel Pravidla zabezpečení pro spravovaný kód
@@ -63,9 +63,9 @@ Měli byste zahrnout sadu pro maximalizaci počtu možných problémů se zabezp
 |[CA2147](../code-quality/ca2147-transparent-methods-may-not-use-security-asserts.md)|Transparentní metody nemusí používat kontrolní příkazy zabezpečení|
 |[CA2149](../code-quality/ca2149-transparent-methods-must-not-call-into-native-code.md)|Transparentní metody nesmí provádět volání nativního kódu|
 |[CA2210](../code-quality/ca2210-assemblies-should-have-valid-strong-names.md)|Sestavení by měla mít platné silné názvy|
-|[CA2300](ca2300-do-not-use-insecure-deserializer-binaryformatter.md)|Nepoužívejte nezabezpečené deserializátor BinaryFormatter|
-|[CA2301](ca2301-do-not-call-binaryformatter-deserialize-without-first-setting-binaryformatter-binder.md)|Nevolejte BinaryFormatter.Deserialize bez první nastavení BinaryFormatter.Binder|
-|[CA2302](ca2302-ensure-binaryformatter-binder-is-set-before-calling-binaryformatter-deserialize.md)|Ujistěte se, že BinaryFormatter.Binder nastavený před voláním BinaryFormatter.Deserialize|
+|[CA2300](ca2300-do-not-use-insecure-deserializer-binaryformatter.md)|Nepoužívat nezabezpečený deserializátor BinaryFormatter|
+|[CA2301](ca2301-do-not-call-binaryformatter-deserialize-without-first-setting-binaryformatter-binder.md)|Nevolat BinaryFormatter.Deserialize dříve, než se nastaví BinaryFormatter.Binder|
+|[CA2302](ca2302-ensure-binaryformatter-binder-is-set-before-calling-binaryformatter-deserialize.md)|Než zavoláte BinaryFormatter.Deserialize, ujistěte se, že je nastavený BinaryFormatter.Binder|
 |[CA3001](../code-quality/ca3001-review-code-for-sql-injection-vulnerabilities.md)|Zkontrolujte ohrožení zabezpečení injektáží SQL v kódu|
 |[CA3002](../code-quality/ca3002-review-code-for-xss-vulnerabilities.md)|Zkontrolujte ohrožení zabezpečení proti XSS v kódu|
 |[CA3003](../code-quality/ca3003-review-code-for-file-path-injection-vulnerabilities.md)|Zkontrolujte ohrožení zabezpečení injektáží cesty k souboru v kódu|

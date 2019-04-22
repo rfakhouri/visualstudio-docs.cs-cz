@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2b130c321e57cdeea6b703b0e439d6b0f15a1a96
-ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/08/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59232538"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-or-visual-studio-installer"></a>Postup ohlášení problému se sadou Visual Studio nebo instalační program sady Visual Studio
@@ -126,4 +126,4 @@ Pokud nemáte problém nahlásit, ale chcete navrhnout funkci, je místo, kde, p
 * [Ohlášení problému se sadou Visual Studio pro Mac](/visualstudio/mac/report-a-problem)
 * [Ohlášení problému se sadou C++](/cpp/how-to-report-a-problem-with-the-visual-cpp-toolset)
 * [Visual Studio Developer Community](https://developercommunity.visualstudio.com/)
-* [Ochrana osobních údajů komunity vývojářů](developer-community-privacy.md)
+* [Ochrana dat pro vývojáře komunity](developer-community-privacy.md)

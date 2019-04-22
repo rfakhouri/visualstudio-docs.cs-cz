@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7d270b14a0dda18a037eb74181c2eec69cf26dc8
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59366546"
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows"></a>Kontrolovat proměnné v okně Automatické hodnoty a místní hodnoty
@@ -164,6 +164,6 @@ Chcete-li zobrazit vrácené hodnoty `sumVars()` a `subtractVars()` volá metody
 ## <a name="see-also"></a>Viz také:
 
 - [Co je ladění?](../debugger/what-is-debugging.md)
-- [Techniky ladění a související nástroje](../debugger/write-better-code-with-visual-studio.md)
+- [Nástroje a techniky ladění](../debugger/write-better-code-with-visual-studio.md)
 - [První pohled na ladění](../debugger/debugger-feature-tour.md)
-- [Ladicí program systému windows](../debugger/debugger-windows.md)
+- [Okno ladicího programu](../debugger/debugger-windows.md)

@@ -11,10 +11,10 @@ manager: crdun
 ms.workload:
 - unity
 ms.openlocfilehash: 57249507373199d217079a9b18c483fee9a51098
-ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/03/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58897696"
 ---
 # <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>Řešení potíží a známé problémy (Visual Studio Tools for Unity)
@@ -142,7 +142,7 @@ Zkuste ho upgradovat vaše Visual Studio 2015 update 3.
 
     Možná budete muset provést **příkaz** okno viditelné první. V sadě Visual Studio, zvolte v hlavní nabídce **zobrazení**, **ostatní Windows**, **příkazové okno**.
 
-*On Mac:*
+*Na počítači Mac:*
 
 1. Otevřete terminál a získejte identifikátor PID sady Visual Studio pro Mac:
 

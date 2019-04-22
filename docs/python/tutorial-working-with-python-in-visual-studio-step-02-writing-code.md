@@ -12,10 +12,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: fda68b9e5bffbd1afab3389a0d8d624312a8de3f
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59366429"
 ---
 # <a name="step-2-write-and-run-code"></a>Krok 2: Psání a spouštění kódu
@@ -94,6 +94,6 @@ I když **Průzkumníku řešení** je, kde budete spravovat soubory projektu, *
 ## <a name="go-deeper"></a>Seznamte se blíž
 
 - [Úpravy kódu](editing-python-code-in-visual-studio.md)
-- [Formátování kódu](formatting-python-code.md)
+- [Formátovat kód](formatting-python-code.md)
 - [Refaktorování kódu](refactoring-python-code.md)
-- [Použití analyzátoru PyLint](linting-python-code.md)
+- [Použití Pylintu](linting-python-code.md)

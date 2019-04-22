@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 17cda43c2fab2944e5027f5292b405f8a9e2e084
-ms.sourcegitcommit: 40393347a36779230d128f2355a911632a8d458e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58866689"
 ---
 # <a name="manage-assembly-and-manifest-signing"></a>Správa podepsání sestavení a manifestu
@@ -28,7 +28,7 @@ Silný název se skládá z identity sestavení (jednoduchý textový název, č
 
 Informace o podepisování sestavení v projektech Visual Basic a C# najdete v tématu [vytvoření a použití sestavení se silným názvem](/dotnet/framework/app-domains/create-and-use-strong-named-assemblies).
 
-Informace o podepisování sestavení v projektech Visual C++, naleznete v tématu [sestavení se silným názvem (C + +/ CLI)](/cpp/dotnet/strong-name-assemblies-assembly-signing-cpp-cli).
+Informace o podepisování sestavení ve Vizuálu C++ projektů, naleznete v tématu [sestavení se silným názvem (C++vyhodnocovací)](/cpp/dotnet/strong-name-assemblies-assembly-signing-cpp-cli).
 
 > [!NOTE]
 > Podepisování silným názvem neposkytuje ochranu proti zpětné analýzy sestavení. K ochraně proti zpětné analýzy, najdete v článku [nástroj Dotfuscator Community](dotfuscator/index.md).
@@ -73,4 +73,4 @@ Informace o podepisování manifestů naleznete v tématu [jak: Podepsání mani
 ## <a name="see-also"></a>Viz také:
 
 - [Sestavení se silným názvem](/dotnet/framework/app-domains/strong-named-assemblies)
-- [Sestavení se silným názvem (C + +/ CLI)](/cpp/dotnet/strong-name-assemblies-assembly-signing-cpp-cli)
+- [Sestavení se silným názvem (C++vyhodnocovací)](/cpp/dotnet/strong-name-assemblies-assembly-signing-cpp-cli)

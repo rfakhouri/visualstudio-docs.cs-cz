@@ -12,10 +12,10 @@ ms.workload:
 - data-science
 - azure
 ms.openlocfilehash: a47ef2bc1b75985639d0c5eb43bba516ff9b8088
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59366533"
 ---
 # <a name="azure-cloud-service-projects-for-python"></a>Projekty Azure cloudových služeb pro Python
@@ -97,7 +97,7 @@ Pokud vaše webová nebo pracovní role nechoval správně po nasazení, zkontro
 
   - *ConfigureCloudService.ps1*
   - *Souboru LaunchWorker.ps1* (u rolí pracovního procesu)
-  - *ps.cmd*
+  - *PS.cmd*
 
 - Zahrnuje projektu v Pythonu *souboru requirements.txt* seznamu všechny závislosti (nebo případně kolekce souborů wheel) souborů.
 - Povolení vzdálené plochy na cloudové služby a prozkoumejte soubory protokolu.

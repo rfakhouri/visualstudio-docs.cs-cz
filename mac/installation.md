@@ -8,10 +8,10 @@ ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
 ms.openlocfilehash: 52f9e5f5d21fe69cde613d8e05b365fc8d795dd8
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58857317"
 ---
 # <a name="install-visual-studio-2019-for-mac"></a>Install Visual Studio 2019 for Mac
@@ -32,20 +32,20 @@ K vytváření aplikací Xamarin pro iOS nebo macOS, budete také potřebovat:
 1. Stažení instalačního programu z [Visual Studio for Mac stránku pro stažení](https://aka.ms/vsmac).
 2. Po dokončení stahování klikněte na tlačítko **VisualStudioforMacInstaller.dmg** připojit instalační program, spusťte jej dvojitým kliknutím šipku logo:
 
-    [![CKlepněte na velké šipku a spusťte instalaci](media/install-installer-sml.png)](media/install-installer.png#lightbox)
+    [![Klikněte na šipku velké k zahájení instalace](media/install-installer-sml.png)](media/install-installer.png#lightbox)
 
 3. Vám může se vám upozornění týkající se aplikace stahuje z Internetu. Klikněte na tlačítko **otevřít**.
 4. Počkejte, než instalační program zkontroluje počítač:
 
-    [![The instalační program zkontroluje váš systém nainstalované součásti.](media/install-checking-sml.png)](media/install-checking.png#lightbox)
+    [![Instalační program zkontroluje váš systém nainstalované součásti.](media/install-checking-sml.png)](media/install-checking.png#lightbox)
 
 5. Upozornění se zobrazí s výzvou k potvrzení o ochraně osobních údajů a licenční podmínky. Použijte odkazy, přečtěte si je a pak stiskněte klávesu **pokračovat** Pokud souhlasíte s tím:
 
-    [![Follow odkazy na ochranu osobních údajů a podmínky, a pokračovat, souhlasíte s](media/install-privacy-sml.png)](media/install-privacy.png#lightbox)
+    [![Na odkazech na ochranu osobních údajů a podmínky a potom pokračovat, souhlasíte s](media/install-privacy-sml.png)](media/install-privacy.png#lightbox)
 
 6. Zobrazí se seznam dostupných úloh. Vyberte ty, které chcete použít:
 
-    [![CZvolte, které volitelné úlohy funkce by chtěli nainstalovat](media/install-selection-sml.png)](media/install-selection.png#lightbox)
+    [![Zvolte nepovinné úlohy funkcí, které chcete nainstalovat](media/install-selection-sml.png)](media/install-selection.png#lightbox)
 
 7. Po provedení výběru, stiskněte **nainstalovat** tlačítko.
 8. Instalační program se zobrazí průběh, stáhne a nainstaluje sadu Visual Studio pro Mac a vybrané úlohy. Vám může zobrazit výzva k zadání hesla k udělení oprávnění pro instalaci.

@@ -19,10 +19,10 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: be29a8eff4e36df04721e8f946b9b2b0ebae3145
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58857577"
 ---
 # <a name="set-defaults-for-enterprise-deployments-of-visual-studio"></a>Nastavení výchozích hodnot pro podniková nasazení sady Visual Studio
@@ -50,11 +50,11 @@ Některé hodnoty registru se nastaví automaticky při prvním, jsou použita, 
 
 Můžete nastavit následující hodnoty registru:
 
-| **Name** | **Type** | **Výchozí** | **Popis** |
+| **Jméno** | **Typ** | **Default** | **Popis** |
 | -------- | -------- | ----------- | --------------- |
-| `CachePath` | `REG_SZ` or `REG_EXPAND_SZ` | %ProgramData%\Microsoft\VisualStudio\Packages | Ukládají se adresáře, kde manifesty balíček a volitelně datové části. Další informace najdete v tématu [zakázání nebo přesunutí mezipaměti balíčku](disable-or-move-the-package-cache.md) stránky. |
+| `CachePath` | `REG_SZ` Nebo `REG_EXPAND_SZ` | %ProgramData%\Microsoft\VisualStudio\Packages | Ukládají se adresáře, kde manifesty balíček a volitelně datové části. Další informace najdete v tématu [zakázání nebo přesunutí mezipaměti balíčku](disable-or-move-the-package-cache.md) stránky. |
 | `KeepDownloadedPayloads` | `REG_DWORD` | 1 | Zachovejte datové části balíčku, i když jsou nainstalovány. Kdykoli můžete změnit hodnotu. Zakázání zásady odebere všechny datové části v mezipaměti balíčku pro instanci opravit nebo změnit. Další informace najdete v tématu [zakázání nebo přesunutí mezipaměti balíčku](disable-or-move-the-package-cache.md) stránky. |
-| `SharedInstallationPath` | `REG_SZ` or `REG_EXPAND_SZ` | %ProgramFiles(x86)%\Microsoft Visual Studio\Shared | Adresář, ve kterém jsou nainstalované některé balíčky sdíleny napříč verzemi instance sady Visual Studio. Můžete kdykoli změnit hodnotu, ale pouze ovlivní budoucí nainstaluje. Všechny produkty již nainstalován na původní umístění nesmí být přesunuta, nebo že nebudou fungovat správně. |
+| `SharedInstallationPath` | `REG_SZ` Nebo `REG_EXPAND_SZ` | %ProgramFiles(x86)%\Microsoft Visual Studio\Shared | Adresář, ve kterém jsou nainstalované některé balíčky sdíleny napříč verzemi instance sady Visual Studio. Můžete kdykoli změnit hodnotu, ale pouze ovlivní budoucí nainstaluje. Všechny produkty již nainstalován na původní umístění nesmí být přesunuta, nebo že nebudou fungovat správně. |
 
 > [!IMPORTANT]
 > Pokud změníte `CachePath` registru zásad po všechny instalace musíte přesunout stávající mezipaměti balíčku do nového umístění a ujistěte se, že je zabezpečený tak, aby `SYSTEM` a `Administrators` mít plnou kontrolu a že `Everyone` má přístup pro čtení.

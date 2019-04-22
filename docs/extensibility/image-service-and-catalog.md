@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 5c7f2a98b56765efdb8a12cd9cf479bcd3a08402
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58857850"
 ---
 # <a name="image-service-and-catalog"></a>Služba bitových kopií a katalog
@@ -131,7 +131,7 @@ Tato kuchařka obsahuje pokyny a osvědčené postupy pro přijetí, služby Vis
 |Systém|*Windows\System32* složky|
 |WinDir|Hodnota proměnné prostředí % WinDir %|
 
- **Image**
+ **Obrázek**
 
  \<Image > element definuje bitovou kopii, která lze odkazovat pomocí monikeru. Identifikátor GUID a ID, které dohromady tvoří moniker bitové kopie. Moniker bitové kopie musí být jedinečný ve knihovny celého obrázku. Pokud více než jednu image má daný monikeru, došlo při vytváření knihovny k první z nich je ten, který je zachováno.
 
@@ -173,7 +173,7 @@ Tato kuchařka obsahuje pokyny a osvědčené postupy pro přijetí, služby Vis
 
 ||||
 |-|-|-|
-|**Prvek**|**Atributy (všechny povinné)**|**Definice**|
+|**Element**|**Atributy (všechny povinné)**|**Definice**|
 |\<Velikost >|Hodnota|Zdroj se použije pro Image dané velikosti (v jednotkách zařízení). Image bude čtvereček.|
 |\<SizeRange >|MinSize MaxSize|Zdroj se použije pro obrázky z MinSize pro parametr MaxSize (v jednotkách zařízení) (včetně). Image bude čtvereček.|
 |\<Dimenze >|Šířka, výška|Zdroj se použije pro Image dané šířky a výšky (v jednotkách zařízení).|

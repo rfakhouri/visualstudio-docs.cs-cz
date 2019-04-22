@@ -11,10 +11,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 952c4d9ab82275ff7b1550a3704e89b93c6260a3
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59366585"
 ---
 # <a name="python-web-application-project-templates"></a>Šablony projektů webové aplikace Python
@@ -113,7 +113,7 @@ Jakákoli proměnná vlastnost nebo prostředí projektu je možné zadat při M
 
 - **Příkaz ladicího serveru** skupiny:
   - **Příkaz**: `bottle` (modul)
-  - **Arguments** `--debug --bind=%SERVER_HOST%:%SERVER_PORT% {StartupModule}:app`
+  - **argumenty** `--debug --bind=%SERVER_HOST%:%SERVER_PORT% {StartupModule}:app`
 
 `--reload` Možnost se nedoporučuje používat při používání sady Visual Studio pro ladění.
 

@@ -8,10 +8,10 @@ ms.topic: conceptual
 description: Další informace o benefitech RStudio Desktop součástí předplatných sady Visual Studio Enterprise
 searchscope: VS Subscription
 ms.openlocfilehash: 5bd24bd07254c1173f7590111c27fdcc68206d2a
-ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/04/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59018826"
 ---
 # <a name="the-rstudio-desktop-benefit-included-in-visual-studio-enterprise-subscriptions"></a>Výhoda RStudio Desktop součástí předplatných sady Visual Studio Enterprise
@@ -98,7 +98,7 @@ RStudio je dostupné v open source a komerční edice a běží na ploše (Windo
 | Visual Studio Enterprise, Visual Studio Professional (měsíční cloud) |       Azure       | Není k dispozici |       Není k dispozici       |
 |             Visual Studio Enterprise (NFR<sup>1</sup> )              |      Program      | Není k dispozici |       Není k dispozici       |
 
-<sup>1</sup>*NFR zahrnuje:    Ne pro prodej (NFR), Visual Studio Industry Partner (VSIP), BizSpark, MCT Software & služby pro vývojáře, MCT Software a služby, nejcennější Professional (MVP) Regional Director (RD), Microsoft Partner Network (MPN), FTE Imagine.*
+<sup>1</sup>*NFR zahrnuje:  Ne pro prodej (NFR), Visual Studio Industry Partner (VSIP), BizSpark, MCT Software & služby pro vývojáře, MCT Software a služby, nejcennější Professional (MVP) Regional Director (RD), Microsoft Partner Network (MPN), FTE Imagine.*
 
 > [!NOTE]
 > Microsoft už nenabízí Visual Studio Professional ročních předplatných a předplatných Visual Studio Enterprise roční Cloudová předplatná. Nebude bez nutnosti změn stávajících zkušeností zákazníků a možnost obnovit, zvýšit, snížit nebo zrušit předplatná. Nové nepodnikovým zákazníkům přejít na [ https://visualstudio.microsoft.com/vs/pricing/ ](https://visualstudio.microsoft.com/vs/pricing/) a prozkoumejte různé možnosti pro nákup předplatných sady Visual Studio.

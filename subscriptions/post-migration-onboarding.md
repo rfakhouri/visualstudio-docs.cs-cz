@@ -8,10 +8,10 @@ ms.topic: conceptual
 description: Zjistěte, jak úspěšně připojit vaše organizace pro předplatná sady Visual Studio po migraci na portál pro správu.
 searchscope: VS Subscription
 ms.openlocfilehash: 3b12f5ad2d4f83759c6247f3498eb3da9d376991
-ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/03/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58897605"
 ---
 # <a name="onboard-to-the-visual-studio-subscriptions-administration-portal-after-your-organization-is-migrated"></a>Připojení k portálu správy předplatných Visual Studio po vaší organizace migrována

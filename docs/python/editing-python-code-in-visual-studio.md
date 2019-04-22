@@ -11,10 +11,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: b111d3b0fe2f4af9098186aff3ef661045215473
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59366273"
 ---
 # <a name="edit-python-code"></a>Úprava kódu v Pythonu
@@ -228,5 +228,5 @@ Poklepáním na libovolný název, nebo jeho výběru pomocí šipkových kláve
 ## <a name="see-also"></a>Viz také:
 
 - [Formátování](formatting-python-code.md)
-- [Refaktoring](refactoring-python-code.md)
+- [Refactoring](refactoring-python-code.md)
 - [Použít linter](linting-python-code.md)

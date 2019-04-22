@@ -11,10 +11,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 9c81984e8921e44e32b58ae7f5c5c27c5fe8b12f
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59366897"
 ---
 # <a name="create-a-c-extension-for-python"></a>Vytvoření rozšíření C++ pro Python
@@ -120,7 +120,7 @@ Postupujte podle pokynů v této části vytvořit dva shodné projekty C++ s n�
 
 1. Nastavit konkrétní vlastnosti, jak je popsáno v následující tabulce a pak vyberte **OK**.
 
-    | Tabulátor | Vlastnost | Value |
+    | Tabulátor | Vlastnost | Hodnota |
     | --- | --- | --- |
     | **Obecné** | **Obecné** > **název cílové** | Zadejte název modulu, jak chcete na něj odkazovat z Pythonu v `from...import` příkazy. Použijte tento stejný název v C++, při definování modulu pro Python. Pokud chcete použít název projektu jako název modulu, ponechte výchozí hodnotu **$(ProjectName)**. |
     | | **Obecné** > **cílit na rozšíření** | **.pyd** |

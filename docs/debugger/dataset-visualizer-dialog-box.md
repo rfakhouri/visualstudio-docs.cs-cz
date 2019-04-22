@@ -20,10 +20,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e4086c473270befcf2213f003e516128b45c4227
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59366988"
 ---
 # <a name="dataset-visualizer-dialog-box"></a>Dialogové okno Vizualizér DataSetu
@@ -37,6 +37,6 @@ Vizualizér datasetu vám umožní zobrazit obsah objektu datové sady, datové 
 ## <a name="see-also"></a>Viz také
 
 - [Zabezpečení ladicího programu](../debugger/debugger-security.md)
-- [Vytváření vlastních Vizualizérů](../debugger/create-custom-visualizers-of-data.md)
-- [Ladicí program Windows](../debugger/debugger-windows.md)
+- [Vytváření vlastních vizualizérů](../debugger/create-custom-visualizers-of-data.md)
+- [Okna ladicího programu](../debugger/debugger-windows.md)
 - [Zobrazení hodnot dat v datových tipech](../debugger/view-data-values-in-data-tips-in-the-code-editor.md)

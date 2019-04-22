@@ -1,5 +1,5 @@
 ---
-title: Upgrade řešení Dotfuscator Community
+title: Upgrade Dotfuscatoru Community
 ms.date: 03/28/2019
 ms.devlang: dotnet
 ms.topic: conceptual
@@ -25,13 +25,13 @@ author: Joe-Sewell-PreEmptive
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: cee876a3904d5c47b43b58793087c901e8444dd3
-ms.sourcegitcommit: 40393347a36779230d128f2355a911632a8d458e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58866676"
 ---
-# <a name="upgrade-dotfuscator-community"></a>Upgrade řešení Dotfuscator Community
+# <a name="upgrade-dotfuscator-community"></a>Upgrade Dotfuscatoru Community
 
 Nástroj Dotfuscator Community nabízí mnoho Ochrana aplikace a funkce pro posílení zabezpečení okamžitě pro všechny vývojáře, kteří používají Microsoft Visual Studio.
 Existují však další funkce dostupné pro uživatele, kteří upgrade řešení dotfuscator jejich verze.

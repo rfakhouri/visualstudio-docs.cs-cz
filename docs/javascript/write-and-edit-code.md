@@ -11,10 +11,10 @@ dev_langs:
 ms.workload:
 - nodejs
 ms.openlocfilehash: 111100038817d16d4655271f648aeb076bf1e9af
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58856629"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Zjistěte, jak pomocí editoru kódu
@@ -120,7 +120,7 @@ Můžete si prohlédnout fragmenty kódu k dispozici pro váš jazyk výběrem *
 
 - [Fragmenty kódu](../ide/code-snippets.md)
 - [Vyhledání kódu](../ide/navigating-code.md)
-- [Sbalování](../ide/outlining.md)
-- [Přejít k definici a náhled definice](../ide/go-to-and-peek-definition.md)
-- [Refaktoring](../ide/refactoring-in-visual-studio.md)
+- [Sbalení](../ide/outlining.md)
+- [Přejít k definici a Náhled definice](../ide/go-to-and-peek-definition.md)
+- [Refactoring](../ide/refactoring-in-visual-studio.md)
 - [Používání technologie IntelliSense](../ide/using-intellisense.md)
