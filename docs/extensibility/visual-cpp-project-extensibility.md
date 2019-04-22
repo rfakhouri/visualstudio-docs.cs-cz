@@ -10,12 +10,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a524d242f5c3fb146f3446cd0c020b01e130277c
-ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
+ms.openlocfilehash: 94f61902090c2ada0770a41375d5cb501b92580f
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "58268730"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59660736"
 ---
 # <a name="visual-studio-c-project-system-extensibility-and-toolset-integration"></a>Visual Studio C++ systému sada nástrojů a rozšíření integrace s Project
 
@@ -285,7 +285,6 @@ Nástroj MSBuild poskytuje tyto pomocné třídy ke čtení a zápisu .tlog soub
 [FlatTrackingData](/dotnet/api/microsoft.build.utilities.flattrackingdata) třídy lze použít pro přístup k čtení a zápis souborů .tlog a identifikovat vstupy, které jsou novější než výstupy, nebo pokud chybí výstup. Používá se v Kontrola aktuálnosti.
 
 Příkazový řádek .tlog soubory obsahují informace o příkazové řádky v sestavení použity. Pouze používají se pro přírůstková sestavení, není aktuální kontrol, tak interní formát závisí na úkolu MSBuild, který vytvoří je.
-
 
 ### <a name="read-tlog-format"></a>Formát .tlog pro čtení
 
