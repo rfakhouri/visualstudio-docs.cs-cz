@@ -8,24 +8,24 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c79f70129a21ab28c653ecfbef5e00a8050d9b0
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: 6a310a1b92d5e4558e097cf82501960bf6a9a535
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323462"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078213"
 ---
 # <a name="command-line-arguments-for-the-help-content-manager"></a>Argumenty příkazového řádku pro Help Content Manager
 
 Můžete určit, jak nasazovat a spravovat místní obsah nápovědy pomocí argumentů příkazového řádku pro Help Content Manager (*HlpCtntMgr.exe*). Je nutné spustit skripty pro tento nástroj příkazového řádku s oprávněními správce a tyto skripty nelze spouštět jako službu. Pomocí tohoto nástroje můžete provádět následující úlohy:
 
--   Přidejte nebo aktualizujte místní obsah nápovědy z disku nebo cloudu.
+- Přidejte nebo aktualizujte místní obsah nápovědy z disku nebo cloudu.
 
--   Odeberte obsah místní nápovědy.
+- Odeberte obsah místní nápovědy.
 
--   Přesuňte místní úložiště obsahu nápovědy.
+- Přesuňte místní úložiště obsahu nápovědy.
 
--   Přidat, aktualizovat, odstranit nebo přesunout obsah místní nápovědy tiše.
+- Přidat, aktualizovat, odstranit nebo přesunout obsah místní nápovědy tiše.
 
 Syntaxe:
 

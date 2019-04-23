@@ -8,12 +8,12 @@ ms.assetid: 8a7b760d-b5ac-4451-9593-6ac1a0b95cdb
 caps.latest.revision: 11
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4ab353f9c42eebe4af10f56f6ee4cda533069121
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 64632c175b44a370d7dcaf48e7c0a8cee766a4ab
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54779567"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078067"
 ---
 # <a name="sample-excel-extension-technologymanager-class"></a>Ukázka rozšíření Excel: TechnologyManager – třída
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,15 +38,15 @@ Tato třída rozšiřuje <xref:Microsoft.VisualStudio.TestTools.UITest.Extension
 ## <a name="methods-to-get-an-element"></a>Metody k získání elementu  
  Existuje několik důležitých metod, které se používají rozhraní programového testování uživatelského rozhraní pro získání elementu specifické pro technologie tím, že poskytuje popisovač bodu na obrazovce nebo element z různých technologií. Kód pro tyto metody není potřeba vysvětlovat. Základní metody jsou následující:  
   
--   <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager.GetFocusedElement%2A?displayProperty=fullName>  
+- <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager.GetFocusedElement%2A?displayProperty=fullName>  
   
--   <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager.GetElementFromPoint%2A?displayProperty=fullName>  
+- <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager.GetElementFromPoint%2A?displayProperty=fullName>  
   
--   <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager.GetElementFromWindowHandle%2A?displayProperty=fullName>  
+- <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager.GetElementFromWindowHandle%2A?displayProperty=fullName>  
   
--   <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager.GetElementFromNativeElement%2A?displayProperty=fullName>  
+- <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager.GetElementFromNativeElement%2A?displayProperty=fullName>  
   
--   <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager.ConvertToThisTechnology%2A?displayProperty=fullName>  
+- <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager.ConvertToThisTechnology%2A?displayProperty=fullName>  
   
 ## <a name="parsequeryid-method"></a>ParseQueryId – metoda  
  Při vytvoření programového testu uživatelského rozhraní, může uživatel zadat hodnoty vlastností pro některé nebo všechny ovládací prvky v testu. Hodnoty těchto vlastností jsou testovací rozhraní používá k vytvoření dvojice název hodnota s názvem vlastnosti hledání, které se používají k vyhledání konkrétní ovládacích prvků uživatelského rozhraní během testu. Všechny vlastnosti hledání dohromady představují hodnoty <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement.QueryId%2A?displayProperty=fullName> vlastnost člena každý prvek v technologii, která obsahuje každý ovládací prvek. Protože ovládací prvek může být nutné najít několikrát během testu, tato metoda poskytuje způsob, jak optimalizovat parsování vlastnosti hledání pro zadaný ovládací prvek Správce technologie. Tato metoda také vrátí hodnotu souboru cookie, který můžete použít rozhraní pro následné hledání pro ovládací prvek. Tato implementace metody používá <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.AndCondition.Match%2A?displayProperty=fullName> metoda analyzovat vlastnosti hledání.  

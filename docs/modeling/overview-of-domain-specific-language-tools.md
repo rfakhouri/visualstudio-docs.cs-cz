@@ -9,25 +9,25 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 75d1a9fc5ac7fa35afb53c89f5af016ed909d11e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e31d9c01ded7754fd10419f3fd0e18d9616a51eb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55915958"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078236"
 ---
 # <a name="overview-of-domain-specific-language-tools"></a>Přehled Jazykových nástrojů specifických pro doménu
 Nástroje jazyka specifického pro doménu (DSL Tools), které jsou hostovány v sadě Visual Studio, vám umožní navrhnout jazyka specifického pro doménu a potom generovat vše, co uživatelé musí mít k vytváření modelů, které jsou založeny na jazyce.
 
  Tyto nástroje jsou součástí nástroje DSL:
 
--   Průvodce projektem, který používá jiné řešení šablony můžete začít s vývojem jazyka specifického pro doménu.
+- Průvodce projektem, který používá jiné řešení šablony můžete začít s vývojem jazyka specifického pro doménu.
 
--   Grafický návrhář pro vytváření a úpravu definice jazyka specifického pro doménu.
+- Grafický návrhář pro vytváření a úpravu definice jazyka specifického pro doménu.
 
--   Modul ověřování, který zajišťuje, že definice jazyka specifického pro doménu ve správném formátu a pokud dojde k problémům se zobrazí chyby a upozornění.
+- Modul ověřování, který zajišťuje, že definice jazyka specifického pro doménu ve správném formátu a pokud dojde k problémům se zobrazí chyby a upozornění.
 
--   Generátor kódu, který má definice jazyka specifického pro doménu jako vstup a vytvoří zdrojový kód jako výstup.
+- Generátor kódu, který má definice jazyka specifického pro doménu jako vstup a vytvoří zdrojový kód jako výstup.
 
 ## <a name="the-dsl-tools-solution"></a>Řešení nástrojů DSL
  Průvodce Designer specifického pro doménu poskytuje následující šablony řešení:

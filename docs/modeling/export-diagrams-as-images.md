@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f407a3bc3236d76c4cf5418ed3aef2c3388867a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 069a9ce5f3126550f54a5d2780411f6832acee83
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55926187"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077924"
 ---
 # <a name="export-diagrams-as-images"></a>Exportovat diagramy jako obrázky
 V sadě Visual Studio můžete ušetřit, modelování diagramů ve formátech, jen pro čtení, takže můžete je sdílet se zúčastněnými stranami, uživatele nebo členy projektového týmu, kteří nepoužívají stejnou verzi sady Visual Studio.
@@ -25,19 +25,19 @@ V sadě Visual Studio můžete ušetřit, modelování diagramů ve formátech, 
 
 ### <a name="to-copy-a-diagram-or-part-of-a-diagram-to-another-application"></a>Kopírování diagramu nebo část diagramu do jiné aplikace
 
-1.  V diagramu vyberte některé nebo všechny obrazce.
+1. V diagramu vyberte některé nebo všechny obrazce.
 
-2.  Klikněte pravým tlačítkem na svůj výběr a potom klikněte na tlačítko **kopírování**.
+2. Klikněte pravým tlačítkem na svůj výběr a potom klikněte na tlačítko **kopírování**.
 
-3.  Vložte svůj výběr do aplikace, které mají.
+3. Vložte svůj výběr do aplikace, které mají.
 
 ### <a name="to-save-a-modeling-diagram-as-an-xml-paper-specification-xps-file"></a>Chcete-li uložit jako soubor XML Paper Specification (XPS) diagramu modelování
 
-1.  Na **souboru** nabídky, klikněte na tlačítko **tisk** otevřít **tisk** dialogové okno.
+1. Na **souboru** nabídky, klikněte na tlačítko **tisk** otevřít **tisk** dialogové okno.
 
-2.  V **název** seznamu vyberte **zapisovací modul dokumentů Microsoft XPS**a potom klikněte na tlačítko **OK**.
+2. V **název** seznamu vyberte **zapisovací modul dokumentů Microsoft XPS**a potom klikněte na tlačítko **OK**.
 
-3.  V **uložte soubor jako** dialogové okno, uložte soubor jako **dokument XPS (\*XPS)** souboru.
+3. V **uložte soubor jako** dialogové okno, uložte soubor jako **dokument XPS (\*XPS)** souboru.
 
 ## <a name="net-framework-security"></a>Zabezpečení rozhraní .NET Framework
 

@@ -14,12 +14,12 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9f4f410656e49b1a76e74898940cbd32314fc8b4
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: f8c64bb19d65540f8c72be9acb1c5f59deb3c8f9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59661331"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075360"
 ---
 # <a name="how-to-clean-a-build"></a>Postupy: Vyčištění sestavení
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,11 +31,11 @@ Při čištění sestavení se odstraní všechny pomocných a výstupních soub
   
 #### <a name="to-create-a-directory-for-output-items"></a>Chcete-li vytvořit adresář pro výstupní položky  
   
-1.  Použití `Property` element zadat umístění a název adresáře. Například vytvořte adresář `BuiltApp` v adresáři projektu a zdrojových souborech:  
+1. Použití `Property` element zadat umístění a název adresáře. Například vytvořte adresář `BuiltApp` v adresáři projektu a zdrojových souborech:  
   
      `<builtdir>BuiltApp</builtdir>`  
   
-2.  Použití [MakeDir](../msbuild/makedir-task.md) úkolu k vytvoření adresáře, pokud adresář neexistuje. Příklad:  
+2. Použití [MakeDir](../msbuild/makedir-task.md) úkolu k vytvoření adresáře, pokud adresář neexistuje. Příklad:  
   
      `<MakeDir Directories = "$(builtdir)"`  
   
@@ -46,7 +46,7 @@ Při čištění sestavení se odstraní všechny pomocných a výstupních soub
   
 #### <a name="to-remove-a-directory-and-all-files-contained-in-the-directory"></a>Chcete-li odebrat adresář a všechny soubory obsažené v adresáři  
   
--   Použití `RemoveDir` na odebrat adresář úlohy. Příklad:  
+- Použití `RemoveDir` na odebrat adresář úlohy. Příklad:  
   
      `<RemoveDir Directories="$(builtdir)" />`  
   

@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2b1859d422b0f3a76947a64e754521efcda46e65
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: 1afeb6f75648ce2ab1687fa9262ab28b658b0d70
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57982932"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077807"
 ---
 # <a name="install-net-compiler-platform-analyzers"></a>Instalace analyzátorů .NET Compiler Platform
 
@@ -24,14 +24,14 @@ Visual Studio obsahuje základní sadu .NET Compiler Platform (*Roslyn*) analyz�
 
 ## <a name="to-install-nuget-analyzer-packages"></a>Instalace balíčků NuGet analyzátoru
 
-1. Najdete analyzátor balíček, který chcete nainstalovat na www.nuget.org. Například můžete chtít [nainstalovat analyzátory Microsoft FxCop](install-fxcop-analyzers.md#to-install-fxcop-analyzers-as-a-nuget-package) ke kontrole v kódu, problémy zabezpečení a výkonu, mimo jiné.
+1. Najdete analyzátor balíček, který chcete nainstalovat na www.nuget.org.
+
+   Například můžete chtít [nainstalovat analyzátory Microsoft FxCop](install-fxcop-analyzers.md#to-install-fxcop-analyzers-as-a-nuget-package) ke kontrole v kódu, problémy zabezpečení a výkonu, mimo jiné. Můžete ale taky nainstalovat [StyleCopAnalyzers](https://www.nuget.org/packages/stylecop.analyzers/) styl problémů ve vašem základu kódu.
 
 2. Nainstalujte balíček v sadě Visual Studio, buď pomocí [Konzola správce balíčků](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console) nebo [uživatelské rozhraní Správce balíčků](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console).
 
    > [!NOTE]
    > Na stránce www.nuget.org pro každý balíček Analyzátor se dozvíte, příkaz a vložte do **Konzola správce balíčků**. Je i užitečný tlačítko ke zkopírování textu do schránky.
-   >
-   > ![NuGet.org stránky zobrazující příkaz konzoly Správce balíčků](media/nuget-install-command.png)
 
    Sestavení analyzátoru jsou nainstalovány a zobrazují v **Průzkumníka řešení** pod **odkazy** > **analyzátory**.
 

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 630934ce6915191ccb111e8bc061d8faacc421f7
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: ce8bc44bf506cf315420aad4108832f7461f1c70
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58415470"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077872"
 ---
 # <a name="add-commands-and-gestures-to-dependency-diagrams"></a>Přidávání příkazů a gest do diagramů závislostí
 
@@ -108,7 +108,7 @@ Pokud chcete vytvořit jeden VSIX, který obsahuje příkazy, validátory vrstvy
 
 8. Chcete-li nainstalovat VSIX v instanci hlavní aplikace Visual Studio nebo na jiném počítači, vyhledejte **VSIX** soubor **bin** adresáře projektu VSIX. Zkopírujte ho do počítače, ve které chcete nainstalovat VSIX. Poklikejte na soubor VSIX v Průzkumníku souborů.
 
-##  <a name="command"></a> Definování příkazu nabídky
+## <a name="command"></a> Definování příkazu nabídky
 
 K existujícímu gestu nebo projektu příkazu můžete přidat další definice příkazu nabídky. Každý příkaz je definován třídou, která má následující vlastnosti:
 
@@ -124,11 +124,11 @@ K existujícímu gestu nebo projektu příkazu můžete přidat další definice
 
 - Metody, které implementují `ICommandExtension` jsou následující:
 
-  -   `string Text {get;}` – Popisek, který se zobrazí v nabídce.
+  - `string Text {get;}` – Popisek, který se zobrazí v nabídce.
 
-  -   `void QueryStatus(IMenuCommand command)` – volána, když uživatel klepne pravým tlačítkem myši v diagramu a určuje, zda má být příkaz viditelný a povolený pro aktuální výběr uživatele.
+  - `void QueryStatus(IMenuCommand command)` – volána, když uživatel klepne pravým tlačítkem myši v diagramu a určuje, zda má být příkaz viditelný a povolený pro aktuální výběr uživatele.
 
-  -   `void Execute(IMenuCommand command)` – volána, když uživatel vybere příkaz.
+  - `void Execute(IMenuCommand command)` – volána, když uživatel vybere příkaz.
 
 - Chcete-li zjistit aktuální výběr, můžete importovat `IDiagramContext`:
 
@@ -212,7 +212,7 @@ namespace MyLayerExtension // Change to your preference.
 }
 ```
 
-##  <a name="gesture"></a> Definování obslužné rutiny gesta
+## <a name="gesture"></a> Definování obslužné rutiny gesta
 
 Obslužná rutina gesta reaguje, když uživatel přetáhne položky do diagramu závislosti, a když uživatel poklepe kdekoli v diagramu.
 
@@ -238,7 +238,7 @@ namespace MyLayerExtensions // change to your preference
 
 Všimněte si následujících o obslužných rutinách gest:
 
--   Členové `IGestureExtension` jsou následující:
+- Členové `IGestureExtension` jsou následující:
 
      **OnDoubleClick** – volána, když uživatel poklepe kdekoli v diagramu.
 
@@ -246,7 +246,7 @@ Všimněte si následujících o obslužných rutinách gest:
 
      **OnDragDrop** – volána, když uživatel zahodí položky do diagramu.
 
--   První argument pro každou metodu je `IShape`, ze kterého můžete získat prvek vrstvy. Příklad:
+- První argument pro každou metodu je `IShape`, ze kterého můžete získat prvek vrstvy. Příklad:
 
     ```csharp
     public void OnDragDrop(IShape target, IDataObject data)
@@ -259,7 +259,7 @@ Všimněte si následujících o obslužných rutinách gest:
     }
     ```
 
--   Obslužné rutiny pro některé typy přetažených položek jsou již definovány. Například můžete uživateli přetáhnout položky z Průzkumníka řešení do diagram závislostí. Nelze definovat obslužnou rutinu přetažení pro tyto typy položky. V těchto případech vaše `DragDrop` metody nebudou vyvolány.
+- Obslužné rutiny pro některé typy přetažených položek jsou již definovány. Například můžete uživateli přetáhnout položky z Průzkumníka řešení do diagram závislostí. Nelze definovat obslužnou rutinu přetažení pro tyto typy položky. V těchto případech vaše `DragDrop` metody nebudou vyvolány.
 
 ## <a name="see-also"></a>Viz také
 

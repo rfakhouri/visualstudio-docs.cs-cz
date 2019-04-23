@@ -21,12 +21,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9d2c2c6f178c952a5516533c2722bc451be2e3bf
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 9991adc9d770487c646c97da81b6245ae65ba5f5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649664"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075373"
 ---
 # <a name="relationships-in-datasets"></a>Vztahy v datových sadách
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -84,23 +84,23 @@ Datové sady, které obsahují data související tabulky použijte <xref:System
   
 #### <a name="to-create-a-relationship-between-two-data-tables"></a>K vytvoření vztahu mezi dvěma datovými tabulkami  
   
-1.  Otevřete svou datovou sadu v **Návrhář Dataset**. Další informace najdete v tématu [jak: Otevření datové sady v návrháři datových sad](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
+1. Otevřete svou datovou sadu v **Návrhář Dataset**. Další informace najdete v tématu [jak: Otevření datové sady v návrháři datových sad](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
   
-2.  Přetáhněte **vztah** objektu z **datovou sadu** nástrojů do podřízené tabulky dat v relaci.  
+2. Přetáhněte **vztah** objektu z **datovou sadu** nástrojů do podřízené tabulky dat v relaci.  
   
      **Vztah** otevře se dialogové okno, naplnění **podřízenou tabulku** pole s tabulkou, kterou jste přetáhli **vztah** objekt.  
   
-3.  Vyberte nadřazené tabulky z **nadřazená tabulka** pole. Nadřazená tabulka obsahuje záznamy na straně "1" vztah jeden mnoho.  
+3. Vyberte nadřazené tabulky z **nadřazená tabulka** pole. Nadřazená tabulka obsahuje záznamy na straně "1" vztah jeden mnoho.  
   
-4.  Zkontrolujte, jestli je v zobrazuje správné podřízené tabulky **podřízenou tabulku** pole. Podřízené tabulky obsahuje záznamy na straně "n" vztah jeden mnoho.  
+4. Zkontrolujte, jestli je v zobrazuje správné podřízené tabulky **podřízenou tabulku** pole. Podřízené tabulky obsahuje záznamy na straně "n" vztah jeden mnoho.  
   
-5.  Zadejte název pro relaci v **název** pole, nebo ponechte výchozí název založený na vybrané tabulky. Toto je název aplikace skutečný <xref:System.Data.DataRelation> objekt v kódu.  
+5. Zadejte název pro relaci v **název** pole, nebo ponechte výchozí název založený na vybrané tabulky. Toto je název aplikace skutečný <xref:System.Data.DataRelation> objekt v kódu.  
   
-6.  Vyberte sloupce, které spojení tabulek v **sloupce klíčů** a **sloupce cizího klíče** seznamy.  
+6. Vyberte sloupce, které spojení tabulek v **sloupce klíčů** a **sloupce cizího klíče** seznamy.  
   
-7.  Vyberte, jestli chcete vytvořit relaci nebo omezení. Informace najdete v tématu [Úvod do objektů DataRelation](http://msdn.microsoft.com/library/89d8a881-8265-41f2-a88b-61311ab06192).  
+7. Vyberte, jestli chcete vytvořit relaci nebo omezení. Informace najdete v tématu [Úvod do objektů DataRelation](http://msdn.microsoft.com/library/89d8a881-8265-41f2-a88b-61311ab06192).  
   
-8.  Zaškrtněte nebo zrušte zaškrtnutí **vnořené relace** pole. Výběr, tato možnost nastaví <xref:System.Data.DataRelation.Nested%2A> vlastnost `true`, a to způsobí, že podřízené řádky vztahu, chcete-li být vnořen v rámci nadřazeného sloupce, když jsou tyto řádky zapisují jako XML data nebo synchronizovat se službou <xref:System.Xml.XmlDataDocument>. Další informace najdete v tématu [vnoření datových relací](http://msdn.microsoft.com/library/9530f9c9-dd98-4b93-8cdb-40d7f1e8d0ab).  
+8. Zaškrtněte nebo zrušte zaškrtnutí **vnořené relace** pole. Výběr, tato možnost nastaví <xref:System.Data.DataRelation.Nested%2A> vlastnost `true`, a to způsobí, že podřízené řádky vztahu, chcete-li být vnořen v rámci nadřazeného sloupce, když jsou tyto řádky zapisují jako XML data nebo synchronizovat se službou <xref:System.Xml.XmlDataDocument>. Další informace najdete v tématu [vnoření datových relací](http://msdn.microsoft.com/library/9530f9c9-dd98-4b93-8cdb-40d7f1e8d0ab).  
   
 9. Nastavení pravidel vynucení když děláte změny na záznamy v těchto tabulkách. Další informace naleznete v tématu <xref:System.Data.Rule>.  
   
@@ -108,6 +108,6 @@ Datové sady, které obsahují data související tabulky použijte <xref:System
   
 #### <a name="to-display-a-relation-name-in-the-dataset-designer"></a>Chcete-li zobrazit název relace v návrháři datových sad  
   
-1.  Otevřete svou datovou sadu v **Návrhář Dataset**. Další informace najdete v tématu [jak: Otevření datové sady v návrháři datových sad](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
+1. Otevřete svou datovou sadu v **Návrhář Dataset**. Další informace najdete v tématu [jak: Otevření datové sady v návrháři datových sad](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
   
-2.  Z **Data** nabídku, vyberte **zobrazení popisků relací** příkazu můžete zobrazit název vztahu. Tento příkaz Skrýt název vztahu vymažte.
+2. Z **Data** nabídku, vyberte **zobrazení popisků relací** příkazu můžete zobrazit název vztahu. Tento příkaz Skrýt název vztahu vymažte.

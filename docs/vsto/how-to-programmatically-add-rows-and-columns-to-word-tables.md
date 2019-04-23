@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 536e5ea82d230d27e0b5e95099bf377d6ec1123f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: c590ed271897ac6aebb875bafcb1b6b50a753629
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56643532"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078016"
 ---
 # <a name="how-to-programmatically-add-rows-and-columns-to-word-tables"></a>Postupy: Programové přidání řádků a sloupců do tabulek aplikace Word
   V tabulce aplikace Microsoft Office Word buňky jsou uspořádány do řádků a sloupců. Můžete použít <xref:Microsoft.Office.Interop.Word.Rows.Add%2A> metodu <xref:Microsoft.Office.Interop.Word.Rows> objektu pro přidání řádků do tabulky a <xref:Microsoft.Office.Interop.Word.Columns.Add%2A> metodu <xref:Microsoft.Office.Interop.Word.Columns> objektu, který chcete přidat sloupce.
@@ -41,14 +41,14 @@ ms.locfileid: "56643532"
 
 ### <a name="to-add-a-row-to-a-table"></a>Chcete-li přidat řádek do tabulky
 
-1.  Použití <xref:Microsoft.Office.Interop.Word.Rows.Add%2A> metoda pro přidání řádku do tabulky.
+1. Použití <xref:Microsoft.Office.Interop.Word.Rows.Add%2A> metoda pro přidání řádku do tabulky.
 
      [!code-vb[Trin_VstcoreWordAutomation#95](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#95)]
      [!code-csharp[Trin_VstcoreWordAutomation#95](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#95)]
 
 ### <a name="to-add-a-column-to-a-table"></a>Chcete-li přidat sloupec do tabulky
 
-1.  Použít <xref:Microsoft.Office.Interop.Word.Columns.Add%2A> metoda a pak <xref:Microsoft.Office.Interop.Word.Columns.DistributeWidth%2A> metoda chcete, aby všechny sloupce mají stejnou šířku.
+1. Použít <xref:Microsoft.Office.Interop.Word.Columns.Add%2A> metoda a pak <xref:Microsoft.Office.Interop.Word.Columns.DistributeWidth%2A> metoda chcete, aby všechny sloupce mají stejnou šířku.
 
      [!code-vb[Trin_VstcoreWordAutomation#96](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#96)]
      [!code-csharp[Trin_VstcoreWordAutomation#96](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#96)]
@@ -63,14 +63,14 @@ ms.locfileid: "56643532"
 
 ### <a name="to-add-a-row-to-a-table"></a>Chcete-li přidat řádek do tabulky
 
-1.  Použití <xref:Microsoft.Office.Interop.Word.Rows.Add%2A> metoda pro přidání řádku do tabulky.
+1. Použití <xref:Microsoft.Office.Interop.Word.Rows.Add%2A> metoda pro přidání řádku do tabulky.
 
      [!code-vb[Trin_VstcoreWordAutomationAddIn#95](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#95)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#95](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#95)]
 
 ### <a name="to-add-a-column-to-a-table"></a>Chcete-li přidat sloupec do tabulky
 
-1.  Použít <xref:Microsoft.Office.Interop.Word.Columns.Add%2A> metoda a pak <xref:Microsoft.Office.Interop.Word.Columns.DistributeWidth%2A> metoda chcete, aby všechny sloupce mají stejnou šířku.
+1. Použít <xref:Microsoft.Office.Interop.Word.Columns.Add%2A> metoda a pak <xref:Microsoft.Office.Interop.Word.Columns.DistributeWidth%2A> metoda chcete, aby všechny sloupce mají stejnou šířku.
 
      [!code-vb[Trin_VstcoreWordAutomationAddIn#96](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#96)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#96](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#96)]

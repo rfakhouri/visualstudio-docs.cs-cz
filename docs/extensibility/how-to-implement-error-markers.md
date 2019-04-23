@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2934cb9cb009a46cbd79340173eb2cad0a0fefe0
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: d96fffad2159d8a8f7a8ab785ad9d5d8f35186f8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56720079"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078214"
 ---
 # <a name="how-to-implement-error-markers"></a>Postupy: Implementace označování chyb
 Označování chyb (nebo červené podtržení vlnovkou) jsou nejobtížnější přizpůsobení editoru textu k implementaci. Však výhody, které nabízejí uživatelům vaší VSPackage můžete mnohem převažují nad náklady a umožnit jim. Označování chyb myš označit text, který předpokládá, že nesprávné s podtržení nebo podtrženo červenou čáru vaše analyzátoru jazyka. Tento ukazatel pomáhá programátoři vizuálně zobrazením nesprávný kód.
@@ -42,16 +42,16 @@ Označování chyb (nebo červené podtržení vlnovkou) jsou nejobtížnější
 
   Analyzátor, zprostředkovatel úkolu a filtr poskytují infrastrukturu nutnou k umožnění označování chyb. Následující kroky obsahují procesu pro zobrazení označování chyb.
 
-1.  V zobrazení se filtruje je filtr získá ukazatel na úkol zprostředkovatele spojeného s data tohoto zobrazení.
+1. V zobrazení se filtruje je filtr získá ukazatel na úkol zprostředkovatele spojeného s data tohoto zobrazení.
 
     > [!NOTE]
     >  Stejný filtr příkaz můžete použít pro metodu tipy, dokončování příkazů, označování chyb a tak dále.
 
-2.  Když filtr dostane událost označující, že přesunete na jiný řádek, vytvoří se úkol ke kontrole chyb.
+2. Když filtr dostane událost označující, že přesunete na jiný řádek, vytvoří se úkol ke kontrole chyb.
 
-3.  Obslužná rutina úkol zkontroluje, jestli řádku změny. Pokud ano, analyzuje řádku chyby.
+3. Obslužná rutina úkol zkontroluje, jestli řádku změny. Pokud ano, analyzuje řádku chyby.
 
-4.  Pokud byly zjištěny chyby, zprostředkovatel úkolu vytvoří instanci položky úkolu. Tato instance vytvoří značku text, který používá prostředí jako značka chyby v zobrazení textu.
+4. Pokud byly zjištěny chyby, zprostředkovatel úkolu vytvoří instanci položky úkolu. Tato instance vytvoří značku text, který používá prostředí jako značka chyby v zobrazení textu.
 
 ## <a name="see-also"></a>Viz také:
 - [Text značky pomocí starší verze rozhraní API](../extensibility/using-text-markers-with-the-legacy-api.md)

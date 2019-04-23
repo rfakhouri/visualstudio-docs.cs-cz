@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ecb4d69db653c24ff13c0c95059d431424e4fe9
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 35d2343343bf554df7592c8616e7697d88665baf
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55069118"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077885"
 ---
 # <a name="how-to-debug-injected-code"></a>Postupy: Ladění vloženého kódu
 
@@ -46,25 +46,25 @@ Pomocí atributů může výrazně zjednodušit programování C++. Další info
 
 ## <a name="to-turn-on-source-annotation"></a>Chcete-li ve zdrojové poznámky
 
--   Klikněte pravým tlačítkem myši **zpětný překlad** okna a zvolte **zobrazit zdrojový kód** z místní nabídky.
+- Klikněte pravým tlačítkem myši **zpětný překlad** okna a zvolte **zobrazit zdrojový kód** z místní nabídky.
 
      Pokud znáte umístění atributu v okně zdroje, můžete použít nabídku k vyhledání kódu injektovaného do **zpětný překlad** okna.
 
 ## <a name="to-view-injected-code"></a>Chcete-li zobrazit vloženého kódu
 
-1.  Ladicí program musí být v režimu přerušení.
+1. Ladicí program musí být v režimu přerušení.
 
-2.  V okně zdrojového kódu umístěte kurzor na slovo před atribut, jehož vloženého kódu, které chcete zobrazit.
+2. V okně zdrojového kódu umístěte kurzor na slovo před atribut, jehož vloženého kódu, které chcete zobrazit.
 
-3.  Klikněte pravým tlačítkem a vyberte **přejít na zpětný překlad** z místní nabídky.
+3. Klikněte pravým tlačítkem a vyberte **přejít na zpětný překlad** z místní nabídky.
 
      Pokud je atribut umístění u aktuální bod provádění, můžete vybrat **zpětný překlad** okna **ladění** nabídky.
 
 ## <a name="to-view-the-disassembly-code-at-the-current-execution-point"></a>Chcete-li zobrazit zpětný překlad kódu v aktuální bod provádění
 
-1.  Ladicí program musí být v režimu přerušení.
+1. Ladicí program musí být v režimu přerušení.
 
-2.  Z **ladění** nabídce zvolte **Windows**a klikněte na tlačítko **zpětný překlad**.
+2. Z **ladění** nabídce zvolte **Windows**a klikněte na tlačítko **zpětný překlad**.
 
 ## <a name="see-also"></a>Viz také:
 

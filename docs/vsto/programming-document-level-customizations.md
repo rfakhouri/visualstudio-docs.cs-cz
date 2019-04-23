@@ -27,12 +27,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0815ccf781782a0d638fcf941a6e48edcf8ccd1f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 53003e2a88faf2ef29d3a1eb3df1da081f20ce57
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56624682"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077755"
 ---
 # <a name="program-document-level-customizations"></a>Programování přizpůsobení na úrovni dokumentu
   Když rozšíříte pomocí přizpůsobení úrovni dokumentu aplikace Microsoft Office Word nebo Microsoft Office Excel, můžete provádět následující úlohy:
@@ -62,13 +62,13 @@ ms.locfileid: "56624682"
 
 - Projekty na úrovni dokumentu pro Excel mít více generované třídy: jeden pro sešit samotný a jeden pro každý list nástroje. Ve výchozím nastavení tyto třídy mají následující názvy:
 
-  -   `ThisWorkbook`
+  - `ThisWorkbook`
 
-  -   `Sheet1`
+  - `Sheet1`
 
-  -   `Sheet2`
+  - `Sheet2`
 
-  -   `Sheet3`
+  - `Sheet3`
 
   Generované třídy obsahuje obslužné rutiny událostí, které jsou volány, když je dokument otevřel nebo zavřel. Ke spuštění kódu při otevření dokumentu, přidejte kód pro `Startup` obslužné rutiny události. Chcete-li spustit kód bezprostředně před zavřením dokumentu, přidejte kód pro `Shutdown` obslužné rutiny události. Další informace najdete v tématu [události v projektech pro systém Office](../vsto/events-in-office-projects.md).
 

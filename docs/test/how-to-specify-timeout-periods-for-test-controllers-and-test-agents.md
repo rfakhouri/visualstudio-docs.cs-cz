@@ -11,12 +11,12 @@ ms.assetid: 777d0db5-0073-458a-a2a3-58b1c1f24c60
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b0e71e499eb1920dd59ee47533855cf9f86cbbd0
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: 5e703ca3e1770d92a2dc01402acaaba0b4988e92
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416094"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078184"
 ---
 # <a name="how-to-specify-timeout-periods-for-test-controllers-and-test-agents"></a>Postupy: Nastavení časových limitů pro testovací kontroléry a testovací agenty
 
@@ -26,7 +26,7 @@ Testovací kontrolér a testovací agent mají několik nastavení časového li
 
 Chcete-li upravit testovací kontrolér nebo testovacího agenta různá nastavení časového limitu, upravte následující konfigurační soubory pomocí názvů klíčů a hodnot v tabulkách:
 
--   Kontroler testů: *QTController.exe.config*
+- Kontroler testů: *QTController.exe.config*
 
     |Název klíče|Popis|Hodnota|
     |-|-----------------|-|
@@ -35,7 +35,7 @@ Chcete-li upravit testovací kontrolér nebo testovacího agenta různá nastave
     |AgentInitializeTimeout|Počet sekund čekání na všech agentech a jejich kolektorů dat inicializovat na začátku testu spusťte před přerušením testu. Tato hodnota by měla být přiměřeně velká, pokud používáte kolekce dat.|"n" sekund. Výchozí hodnota: "120" (dvě minuty).|
     |AgentCleanupTimeout|Počet sekund čekání na všech agentech a jejich kolektorů dat na vyčištění před dokončením testového běhu. Tato hodnota by měla být přiměřeně velká, pokud používáte kolekce dat.|"n" sekund. Výchozí hodnota: "120" (dvě minuty).|
 
--   Testovací Agent: *QTAgentService.exe.config*
+- Testovací Agent: *QTAgentService.exe.config*
 
     |Název klíče|Popis|Hodnota|
     |-|-----------------|-|

@@ -60,12 +60,12 @@ caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5953afed3ede465cab03677c00e2e930ac6b6cb4
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: a949f920fe956d1b0b3e7e9522d1b82e26a60168
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59665740"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077820"
 ---
 # <a name="writing-code-in-the-code-and-text-editor"></a>Psaní kódu v editoru kódu a textovém editoru
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -188,45 +188,45 @@ Tato funkce je zvláště užitečné, pokud váš kód obsahuje dlouhé názvy.
 
  Informace o možnosti editoru pro konkrétní jazyk naleznete v následujících tématech:  
 
--   [Nastavení jazyka Visual Basic](http://msdn.microsoft.com/library/2712b3b1-18f2-430c-ae91-28468bbf5f32)  
+- [Nastavení jazyka Visual Basic](http://msdn.microsoft.com/library/2712b3b1-18f2-430c-ae91-28468bbf5f32)  
 
--   [Použití vývojového prostředí sady Visual Studio pro jazyk C#](../csharp-ide/using-the-visual-studio-development-environment-for-csharp.md)  
+- [Použití vývojového prostředí sady Visual Studio pro jazyk C#](../csharp-ide/using-the-visual-studio-development-environment-for-csharp.md)  
 
--   [Možnosti, Textový editor, JavaScript, Formátování](../ide/reference/options-text-editor-javascript-formatting.md)  
+- [Možnosti, Textový editor, JavaScript, Formátování](../ide/reference/options-text-editor-javascript-formatting.md)  
 
 ## <a name="in-this-section"></a>V tomto oddílu  
 
--   [Hledání a nahrazení textu](../ide/finding-and-replacing-text.md)  
+- [Hledání a nahrazení textu](../ide/finding-and-replacing-text.md)  
 
--   [Šifrování a zalomení řádků](../ide/encodings-and-line-breaks.md)  
+- [Šifrování a zalomení řádků](../ide/encodings-and-line-breaks.md)  
 
--   [Sbalení](../ide/outlining.md)  
+- [Sbalení](../ide/outlining.md)  
 
--   [Refactoring](../ide/refactoring-in-visual-studio.md)  
+- [Refactoring](../ide/refactoring-in-visual-studio.md)  
 
--   [Tipy pro vyšší produktivitu](../ide/productivity-tips-for-visual-studio.md)  
+- [Tipy pro vyšší produktivitu](../ide/productivity-tips-for-visual-studio.md)  
 
--   [Používání atributu IntelliSense](../ide/using-intellisense.md)  
+- [Používání atributu IntelliSense](../ide/using-intellisense.md)  
 
--   [Vlastní nastavení editoru](../ide/customizing-the-editor.md)  
+- [Vlastní nastavení editoru](../ide/customizing-the-editor.md)  
 
--   [Postupy: Sledování kódu přizpůsobením posuvníku](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md)  
+- [Postupy: Sledování kódu přizpůsobením posuvníku](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md)  
 
--   [Postupy: Zobrazení a úpravy kódu s použitím funkce Náhled definice (Alt+F12)](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)  
+- [Postupy: Zobrazení a úpravy kódu s použitím funkce Náhled definice (Alt+F12)](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)  
 
--   [Rychlé akce pomocí žárovek](../ide/perform-quick-actions-with-light-bulbs.md)  
+- [Rychlé akce pomocí žárovek](../ide/perform-quick-actions-with-light-bulbs.md)  
 
--   [Fragmenty kódu](../ide/code-snippets.md)  
+- [Fragmenty kódu](../ide/code-snippets.md)  
 
--   [Používání sady nástrojů](../ide/using-the-toolbox.md)  
+- [Používání sady nástrojů](../ide/using-the-toolbox.md)  
 
--   [Zobrazení struktury kódu](../ide/viewing-the-structure-of-code.md)  
+- [Zobrazení struktury kódu](../ide/viewing-the-structure-of-code.md)  
 
--   [Nastavení záložek v kódu](../ide/setting-bookmarks-in-code.md)  
+- [Nastavení záložek v kódu](../ide/setting-bookmarks-in-code.md)  
 
--   [Používání seznamu úkolů](../ide/using-the-task-list.md)  
+- [Používání seznamu úkolů](../ide/using-the-task-list.md)  
 
--   [Nalezení změn kódu a další historie](../ide/find-code-changes-and-other-history-with-codelens.md)  
+- [Nalezení změn kódu a další historie](../ide/find-code-changes-and-other-history-with-codelens.md)  
 
 ## <a name="see-also"></a>Viz také  
  [Integrované vývojové prostředí sady Visual Studio](../ide/visual-studio-ide.md)

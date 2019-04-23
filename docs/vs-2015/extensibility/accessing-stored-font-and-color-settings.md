@@ -12,12 +12,12 @@ ms.assetid: beba7174-e787-45c2-b6ff-a60f67ad4998
 caps.latest.revision: 27
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 88562da16a0c9803441b859b6498782e6e316fb6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6ff962a618ba0001441db748facac8af444cd255
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54793450"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078093"
 ---
 # <a name="accessing-stored-font-and-color-settings"></a>Přístup k uložené písma a barev
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,21 +29,21 @@ ms.locfileid: "54793450"
   
  Proto zahájíte trvalost VSPackage musí:  
   
--   Získat <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> rozhraní voláním `QueryService` proti globální poskytovatel.  
+- Získat <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> rozhraní voláním `QueryService` proti globální poskytovatel.  
   
      `QueryService` musí být volána pomocí argumentu služby ID `SID_SVsFontAndColorStorage` a interface ID argument `IID_IVsFontAndColorStorage`.  
   
--   Použití <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.OpenCategory%2A> metodu otevření kategorie natrvalo pomocí identifikátoru GUID kategorii a příznak režimu jako argumenty.  
+- Použití <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.OpenCategory%2A> metodu otevření kategorie natrvalo pomocí identifikátoru GUID kategorii a příznak režimu jako argumenty.  
   
      Režimu určeném `fFlags` argument, je vytvořen z hodnot v <xref:Microsoft.VisualStudio.Shell.Interop.__FCSTORAGEFLAGS> výčtu. Tento režim – ovládací prvky:  
   
-    -   Nastavení, která je přístupná prostřednictvím <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> rozhraní.  
+    - Nastavení, která je přístupná prostřednictvím <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> rozhraní.  
   
-    -   Všechna nastavení nebo jenom na ty, které uživatelé upravovat a, které jsou získat prostřednictvím <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> rozhraní.  
+    - Všechna nastavení nebo jenom na ty, které uživatelé upravovat a, které jsou získat prostřednictvím <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> rozhraní.  
   
-    -   Metody šíření změn nastavení pro uživatele.  
+    - Metody šíření změn nastavení pro uživatele.  
   
-    -   Formát hodnot barev, které se používají.  
+    - Formát hodnot barev, které se používají.  
   
 ## <a name="to-use-state-persistence-of-fonts-and-colors"></a>Použití stavu trvalost písma a barvy  
  Zachování písma a barvy zahrnuje:  

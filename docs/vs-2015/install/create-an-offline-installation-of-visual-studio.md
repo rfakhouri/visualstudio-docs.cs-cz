@@ -13,12 +13,12 @@ caps.latest.revision: 22
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 798318f55c6f5db599f39a653a4d9ed5edbed8f6
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 197ae2a168f7f14f7d0ea3d9b82b5943c1af82f4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59651003"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077937"
 ---
 # <a name="create-an-offline-installation-of-visual-studio"></a>Vytvoření Offline instalace sady Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,33 +30,33 @@ Tato stránka popisuje postup instalace sady Visual Studio 2015, když nejsou p�
 > [!IMPORTANT]
 > Pokud je offline počítač se systémem Windows 7 SP1 nebo Windows Server 2008 R2, naleznete zvláštní pokyny v [odstraňování potíží s offline instalací](#BKMK_tshoot) části tohoto tématu.  Musí postupovat podle těchto pokynů *před* nainstalujete Visual Studio 2015.
 
-##  <a name="BKMK_Offline"></a> Instalace vytvořením offline instalace
+## <a name="BKMK_Offline"></a> Instalace vytvořením offline instalace
 
 #### <a name="to-create-an-offline-installation-layout"></a>Chcete-li vytvářet rozložení offline instalaci
 
-1.  Zvolte edici sady Visual Studio, kterou chcete nainstalovat z [My.VisualStudio.com](https://my.visualstudio.com/downloads?q=visual%20studio%20Enterprise%202015) stránce pro stažení.
+1. Zvolte edici sady Visual Studio, kterou chcete nainstalovat z [My.VisualStudio.com](https://my.visualstudio.com/downloads?q=visual%20studio%20Enterprise%202015) stránce pro stažení.
 
-2.  Po stažení instalačního programu do umístění v systému souborů spusťte "\<název spustitelného souboru >/layout".
+2. Po stažení instalačního programu do umístění v systému souborů spusťte "\<název spustitelného souboru >/layout".
 
      Například spusťte: `vs_enterprise.exe /layout D:\VisualStudio2015`
 
      S použitím `/layout` přepínače, můžete stáhnout téměř všechny instalační balíčky, nejen ty, které se vztahují k počítači ke stažení. Tento přístup vám dává soubory, které je potřeba spustit tento instalační program kdekoli a může být užitečné, pokud chcete nainstalovat součásti, které původně nebyly nainstalovány.
 
-3.  Po spuštění tohoto příkazu se zobrazí dialogové okno, které je možné změnit složku offline instalace rozložení uložená.   Klikněte **Stáhnout** tlačítko.
+3. Po spuštění tohoto příkazu se zobrazí dialogové okno, které je možné změnit složku offline instalace rozložení uložená.   Klikněte **Stáhnout** tlačítko.
 
      Je-li stažení balíčku úspěšné, zobrazí se zpráva, že **instalace úspěšná! Všechny zadané součásti byly úspěšně získány.**
 
-4.  Vyhledejte složku, kterou jste zadali dříve. (Vyhledejte například D:\VisualStudio2015.) Tato složka obsahuje všechno, co potřebujete zkopírovat do sdíleného umístění nebo instalační médium.
+4. Vyhledejte složku, kterou jste zadali dříve. (Vyhledejte například D:\VisualStudio2015.) Tato složka obsahuje všechno, co potřebujete zkopírovat do sdíleného umístění nebo instalační médium.
 
     > [!CAUTION]
     > Sady Android SDK v současné době nepodporuje prostředí offline instalace. Pokud nainstalujete na počítač, který není připojený k Internetu položky instalace sady Android SDK, instalace se nemusí podařit. Další informace najdete v části "Řešení potíží s offline instalace" v tomto tématu.
 
-5.  Spusťte instalaci z umístění souboru nebo z instalačního média.
+5. Spusťte instalaci z umístění souboru nebo z instalačního média.
 
 ## <a name="updating-an-offline-installation"></a>Aktualizace offline instalace
  Společnost Microsoft vydala několik aktualizací pro sadu Visual Studio 2015. K aktualizaci instalace Visual Studio, jednoduše stáhnout edice, ze z [My.VisualStudio.com](https://my.visualstudio.com/downloads?q=visual%20studio%20Enterprise%202015) stránce pro stažení. Potom postupujte podle kroků uvedených v tomto tématu můžete vytvořit nové rozložení pro offline instalaci a pak ji použijete k aktualizaci kopie sady Visual Studio 2015.
 
-##  <a name="BKMK_tshoot"></a> Řešení potíží s offline instalace
+## <a name="BKMK_tshoot"></a> Řešení potíží s offline instalace
  Při offline instalaci z offline instalaci mezipaměti, může se zobrazit zprávy s upozorněním nebude moct instalaci některých komponent a balíčků. Následující tabulka obsahuje možné řešení pro tyto scénáře.
 
 | Součásti nebo balíčku | Řešení |
