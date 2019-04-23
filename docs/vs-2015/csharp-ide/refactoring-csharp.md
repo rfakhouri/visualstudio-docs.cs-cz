@@ -18,12 +18,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 78ac19ac0e992b51affdbf6a0e6e3268ddfa52d0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ca7a85bf7ace1f9aeb0e47e031cda5f793df2331
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54785466"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046315"
 ---
 # <a name="refactoring-c"></a>Refaktoring (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,17 +32,17 @@ Refaktoring je proces vylepšení kódu po byl zapsán tak, že změníte intern
   
  Visual C# umožňuje refaktoringu pomocí následujících příkazů na **refaktoringu** nabídky:  
   
--   [Refaktoring pro extrahování metody (C#)](../csharp-ide/extract-method-refactoring-csharp.md)  
+- [Refaktoring pro extrahování metody (C#)](../csharp-ide/extract-method-refactoring-csharp.md)  
   
--   [Refaktoring pro přejmenování (C#)](../csharp-ide/rename-refactoring-csharp.md)  
+- [Refaktoring pro přejmenování (C#)](../csharp-ide/rename-refactoring-csharp.md)  
   
--   [Refaktoring pro zapouzdření polí (C#)](../csharp-ide/encapsulate-field-refactoring-csharp.md)  
+- [Refaktoring pro zapouzdření polí (C#)](../csharp-ide/encapsulate-field-refactoring-csharp.md)  
   
--   [Refaktoring pro extrahování rozhraní (C#)](../csharp-ide/extract-interface-refactoring-csharp.md)  
+- [Refaktoring pro extrahování rozhraní (C#)](../csharp-ide/extract-interface-refactoring-csharp.md)  
   
--   [Refaktoring pro odebrání parametrů (C#)](../csharp-ide/remove-parameters-refactoring-csharp.md)  
+- [Refaktoring pro odebrání parametrů (C#)](../csharp-ide/remove-parameters-refactoring-csharp.md)  
   
--   [Refaktoring pro přeskupení parametrů (C#)](../csharp-ide/reorder-parameters-refactoring-csharp.md)  
+- [Refaktoring pro přeskupení parametrů (C#)](../csharp-ide/reorder-parameters-refactoring-csharp.md)  
   
 ## <a name="multi-project-refactoring"></a>Refaktoring vícenásobného projektu  
  Visual Studio podporuje víceprojektové refaktoring pro projekty, které jsou ve stejném řešení. Všechny operace refaktoringu, které opravit odkazy napříč soubory opravit tyto odkazy ve všech projektech stejný jazyk. Tento postup funguje pro všechny odkazy typu projekt projekt. Například, pokud budete mít konzolovou aplikaci, která odkazuje na knihovnu tříd při přejmenování typ knihovny tříd (pomocí `Rename` operace refaktoringu), jsou aktualizovány také odkazy na typ třídy knihovny v konzolové aplikaci.  
@@ -108,4 +108,4 @@ class Example
   
 ## <a name="see-also"></a>Viz také  
  [Použití vývojového prostředí sady Visual Studio pro jazyk C#](../csharp-ide/using-the-visual-studio-development-environment-for-csharp.md)   
- [Postupy: Obnovení C# fragmentů kódu refaktoringu](../ide/how-to-restore-csharp-refactoring-snippets.md)
+ [Postupy: Obnovení fragmentů kódu refaktoringu jazyka C#](../ide/how-to-restore-csharp-refactoring-snippets.md)

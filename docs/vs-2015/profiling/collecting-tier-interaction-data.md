@@ -16,12 +16,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: abe38162f20fb73de04301e97974dc348d704b6f
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: a20266c870316be9b6be67e661d13eb4e6fdbaee
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54770882"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047222"
 ---
 # <a name="collecting-tier-interaction-data"></a>Shromažďování dat interakce vrstev
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,11 +42,11 @@ Profilování interakce vrstev poskytuje další informace o spuštění s úsp�
   
 ### <a name="to-add-tier-interaction-data-to-a-profiling-run-by-using-the-performance-session-property-pages"></a>Přidání dat interakce vrstev pro profilování pomocí stránky vlastností relace výkonu  
   
-1.  V Průzkumníku výkonu, zvolte **vlastnosti** v místní nabídce.  
+1. V Průzkumníku výkonu, zvolte **vlastnosti** v místní nabídce.  
   
-2.  Vyberte **interakce vrstev** stránce a potom zkontrolujte **povolit profilaci interakce vrstev** zaškrtávací políčko.  
+2. Vyberte **interakce vrstev** stránce a potom zkontrolujte **povolit profilaci interakce vrstev** zaškrtávací políčko.  
   
-3.  V prohlížeči výkonu, vyberte **cíle** uzel a pak zadejte projekt, spustitelný soubor nebo web, který chcete Profilovat.  
+3. V prohlížeči výkonu, vyberte **cíle** uzel a pak zadejte projekt, spustitelný soubor nebo web, který chcete Profilovat.  
   
 ## <a name="see-also"></a>Viz také  
  [Zobrazení interakcí vrstev](../profiling/tier-interactions-view.md)

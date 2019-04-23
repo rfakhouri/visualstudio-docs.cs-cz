@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: e72c04d5d8ce4419938ca30c719e82c403ae0157
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 93d65574012d219d0f65d5b42600c75cf7a624fb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55940591"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046706"
 ---
 # <a name="how-to-change-the-return-type-of-a-datacontext-method-or-designer"></a>Postupy: Změnu návratového typu metody DataContext (O/R Designer)
 Návratový typ <xref:System.Data.Linq.DataContext> – metoda (založeno na uložená procedura nebo funkce) se liší v závislosti na tom, kde vyřaďte uloženou proceduru nebo funkci v **O/R Designer**. Pokud přetáhnete položku přímo do existující entity třídy, <xref:System.Data.Linq.DataContext> metodu, která má návratový typ třídy entita se vytvoří (Pokud je schéma dat vrácené uloženou proceduru nebo funkci odpovídá obrazec třídy entity). Pokud přetáhnete položku na prázdnou oblast **O/R Designer**, <xref:System.Data.Linq.DataContext> vytvořené metodou, která vrací automaticky generovanému typu. Můžete změnit návratový typ <xref:System.Data.Linq.DataContext> metoda po přidání do podokna metody. Zkontrolovat nebo změnit návratový typ <xref:System.Data.Linq.DataContext> metoda, vyberte ho a klikněte **návratový typ** vlastnost v **vlastnosti** okna.
@@ -25,19 +25,19 @@ Návratový typ <xref:System.Data.Linq.DataContext> – metoda (založeno na ulo
 
 ## <a name="to-change-the-return-type-of-a-datacontext-method-from-the-auto-generated-type-to-an-entity-class"></a>Změna návratového typu metody DataContext z automaticky generovaný typ pro třídu entity
 
-1.  Vyberte <xref:System.Data.Linq.DataContext> metoda v podokně metody.
+1. Vyberte <xref:System.Data.Linq.DataContext> metoda v podokně metody.
 
-2.  Vyberte **návratový typ** v **vlastnosti** okna a pak vyberte dostupné entity třídy v **návratový typ** seznamu. Pokud třída požadované entity není v seznamu, přidejte ji tak nebo jej vytvořit v **O/R Designer** ho přidat do seznamu.
+2. Vyberte **návratový typ** v **vlastnosti** okna a pak vyberte dostupné entity třídy v **návratový typ** seznamu. Pokud třída požadované entity není v seznamu, přidejte ji tak nebo jej vytvořit v **O/R Designer** ho přidat do seznamu.
 
-3.  Uložit *dbml* souboru.
+3. Uložit *dbml* souboru.
 
 ## <a name="to-change-the-return-type-of-a-datacontext-method-from-an-entity-class-back-to-the-auto-generated-type"></a>Chcete-li změnit zpět na automaticky generovaný typ návratového typu metody DataContext z třídy entity
 
-1.  Vyberte <xref:System.Data.Linq.DataContext> metodu **metody** podokně a odstraňte ho.
+1. Vyberte <xref:System.Data.Linq.DataContext> metodu **metody** podokně a odstraňte ho.
 
-2.  Přetáhněte objekt databáze z **Průzkumníka serveru** nebo **Průzkumník databáze** na prázdnou oblast **O/R Designer**.
+2. Přetáhněte objekt databáze z **Průzkumníka serveru** nebo **Průzkumník databáze** na prázdnou oblast **O/R Designer**.
 
-3.  Uložit *dbml* souboru.
+3. Uložit *dbml* souboru.
 
 ## <a name="see-also"></a>Viz také:
 

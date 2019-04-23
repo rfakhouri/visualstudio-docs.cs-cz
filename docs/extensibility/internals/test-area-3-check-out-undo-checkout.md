@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 772e238367f16d95fa47d661f8a4bd24091524d1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: eb95c5475c653e60c863ddf093d3a92e0c70cf45
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605650"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048085"
 ---
 # <a name="test-area-3-check-outundo-checkout"></a>Testovací oblast 3: Podívejte se na / Zrušit rezervaci
 Tato oblast testovací modul plug-in správy zdrojového kódu pokrývá úprav a vrací položky z úložiště verzí prostřednictvím **rezervovat** a **vrátit zpět rezervaci** příkazy.
@@ -33,21 +33,21 @@ Následující [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] inte
 
 ##### <a name="check-out"></a>Mrkni se:
 
--   **Soubor**, **správy zdrojového kódu**, **rezervovat**.
+- **Soubor**, **správy zdrojového kódu**, **rezervovat**.
 
--   **Soubor**, **rezervovat**.
+- **Soubor**, **rezervovat**.
 
--   Místní nabídka **rezervovat**.
+- Místní nabídka **rezervovat**.
 
--   Vrátit zpět rezervaci: **Soubor**, **správy zdrojového kódu**, **rezervace**.
+- Vrátit zpět rezervaci: **Soubor**, **správy zdrojového kódu**, **rezervace**.
 
 ## <a name="common-expected-behavior"></a>Běžné očekávané chování
 
--   Po rezervaci operace jsou cílové soubory nebo složky označena jako kontrolovaná navýšení kapacity v úložišti verzí.
+- Po rezervaci operace jsou cílové soubory nebo složky označena jako kontrolovaná navýšení kapacity v úložišti verzí.
 
--   Úložiště verzí atributy rezervace pro správné uživatele.
+- Úložiště verzí atributy rezervace pro správné uživatele.
 
--   Čas a datum rezervaci správnost (podle nastavení uživatele).
+- Čas a datum rezervaci správnost (podle nastavení uživatele).
 
 ## <a name="test-cases"></a>Testovací případy
 
@@ -74,11 +74,11 @@ Když uživatel znovu připojí k verzi ukládat, rezervaci stavy všech zařaze
 
 #### <a name="expected-behavior"></a>Očekávané chování
 
--   Nelze použít **zkontrolujte si výhradně** příkaz odpojené od úložiště verzí.
+- Nelze použít **zkontrolujte si výhradně** příkaz odpojené od úložiště verzí.
 
--   Nelze použít **vrátit zpět rezervaci** příkaz odpojené od úložiště verzí.
+- Nelze použít **vrátit zpět rezervaci** příkaz odpojené od úložiště verzí.
 
--   **Sdílené rezervovat** příkaz funguje.
+- **Sdílené rezervovat** příkaz funguje.
 
 |Akce|Testovací kroky|Chcete-li ověřit očekávané výsledky|
 |------------|----------------|--------------------------------|
@@ -89,13 +89,13 @@ Když uživatel znovu připojí k verzi ukládat, rezervaci stavy všech zařaze
 
 #### <a name="expected-behavior"></a>Očekávané chování
 
--   Po rezervaci operace jsou cílové soubory nebo složky označena jako kontrolovaná navýšení kapacity v úložišti verzí.
+- Po rezervaci operace jsou cílové soubory nebo složky označena jako kontrolovaná navýšení kapacity v úložišti verzí.
 
--   Úložiště verzí atributy rezervaci pro správné uživatele.
+- Úložiště verzí atributy rezervaci pro správné uživatele.
 
--   Čas a datum rezervaci správnost (podle nastavení uživatele).
+- Čas a datum rezervaci správnost (podle nastavení uživatele).
 
--   Místní kopie na cílový soubor nebo složku je zapisovatelný.
+- Místní kopie na cílový soubor nebo složku je zapisovatelný.
 
 |Akce|Testovací kroky|Chcete-li ověřit očekávané výsledky|
 |------------|----------------|--------------------------------|
@@ -108,13 +108,13 @@ Když uživatel znovu připojí k verzi ukládat, rezervaci stavy všech zařaze
 
 #### <a name="expected-behavior"></a>Očekávané chování
 
--   Po rezervaci operace jsou cílové soubory nebo složky označena jako kontrolovaná navýšení kapacity v úložišti verzí.
+- Po rezervaci operace jsou cílové soubory nebo složky označena jako kontrolovaná navýšení kapacity v úložišti verzí.
 
--   Úložiště verzí atributy rezervaci pro správné uživatele.
+- Úložiště verzí atributy rezervaci pro správné uživatele.
 
--   Čas a datum rezervaci je správný (podle nastavení uživatele).
+- Čas a datum rezervaci je správný (podle nastavení uživatele).
 
--   Místní kopie na cílový soubor nebo složku je zapisovatelný.
+- Místní kopie na cílový soubor nebo složku je zapisovatelný.
 
 |Akce|Testovací kroky|Chcete-li ověřit očekávané výsledky|
 |------------|----------------|--------------------------------|
@@ -126,9 +126,9 @@ Když uživatel znovu připojí k verzi ukládat, rezervaci stavy všech zařaze
 
 #### <a name="expected-behavior"></a>Očekávané chování
 
--   Výchozí hodnota je založena na uživatele **podívejte se na místní verze** nastavení. Pokud uživatel se rozhodl rezervovat místní verze, je výchozí nastavení pro zrušení rezervace se vždycky vrátit k verzi rezervován.
+- Výchozí hodnota je založena na uživatele **podívejte se na místní verze** nastavení. Pokud uživatel se rozhodl rezervovat místní verze, je výchozí nastavení pro zrušení rezervace se vždycky vrátit k verzi rezervován.
 
--   Po přijetí zpět na ikony v **Průzkumníka řešení** jsou aktualizované pro vliv na soubory a položka se odebere z **čekající vrácení se změnami** okna.
+- Po přijetí zpět na ikony v **Průzkumníka řešení** jsou aktualizované pro vliv na soubory a položka se odebere z **čekající vrácení se změnami** okna.
 
 |Akce|Testovací kroky|Chcete-li ověřit očekávané výsledky|
 |------------|----------------|--------------------------------|

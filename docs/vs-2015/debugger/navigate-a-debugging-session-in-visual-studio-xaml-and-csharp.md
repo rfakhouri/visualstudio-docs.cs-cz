@@ -14,12 +14,12 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f6a4ea19013aefa1b3d078ce5993d48b4694989c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b5b8d24f01f7882e8c760918119a03a1c489c727
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54773355"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059874"
 ---
 # <a name="navigate-a-debugging-session-in-visual-studio-xaml-and-c"></a>Přechod na relaci ladění ve Visual Studiu (Xaml a C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,17 +35,17 @@ Tento rychlý start ukazuje, jak se zorientovat relacemi ladění sady Visual St
 ## <a name="in-this-topic"></a>V tomto tématu
  Můžete získat informace tom, jak:
 
--   [Vytvoření ukázkové aplikace](#BKMK_CreateTheApplication)
+- [Vytvoření ukázkové aplikace](#BKMK_CreateTheApplication)
 
--   [Nastavit a spusťte zarážku, krokování s vnořením do metody a prozkoumejte data programu](#BKMK_StepInto)
+- [Nastavit a spusťte zarážku, krokování s vnořením do metody a prozkoumejte data programu](#BKMK_StepInto)
 
--   [Krokovat do, nad a z metody](#BKMK_StepIntoOverOut)
+- [Krokovat do, nad a z metody](#BKMK_StepIntoOverOut)
 
--   [Nastavení podmíněné zarážky, přechod ke kurzoru a vizualizovat proměnné](#BKMK_ConditionCursorVisualize)
+- [Nastavení podmíněné zarážky, přechod ke kurzoru a vizualizovat proměnné](#BKMK_ConditionCursorVisualize)
 
--   [Upravit a pokračovat, obnovení z výjimky](#BKMK_EditContinueRecoverExceptions)
+- [Upravit a pokračovat, obnovení z výjimky](#BKMK_EditContinueRecoverExceptions)
 
-##  <a name="BKMK_CreateTheApplication"></a> Vytvoření ukázkové aplikace
+## <a name="BKMK_CreateTheApplication"></a> Vytvoření ukázkové aplikace
  Ladění je kód, takže ukázková aplikace používá rozhraní framework aplikace Windows Store pouze k vytvoření zdrojového souboru, ve kterém uvidíte navigace ladicí relaci jak funguje a jak zkontrolovat a změnit stav programu. Veškerý kód, který bude volat funkce je volána z konstruktoru hlavní stránky. žádné ovládací prvky jsou přidány a jsou zpracovány žádné události.
 
  **Vytvořte výchozí aplikaci C# Windows Store.** Otevřít Visual Studio. Na domovské stránce, zvolte **nový projekt** odkaz. V dialogovém okně Nový projekt, zvolte **Visual C#** v **nainstalováno** seznamu a klikněte na tlačítko **Windows Store**. V seznamu šablon projektu vyberte **aplikace**. Visual Studio vytvoří nová řešení a projektu a zobrazí MainPage.xaml návrháře a editoru kódu XAML.
@@ -56,7 +56,7 @@ Tento rychlý start ukazuje, jak se zorientovat relacemi ladění sady Visual St
 
  Teď můžete sledovat, spolu s příklady v tomto tématu.
 
-##  <a name="BKMK_StepInto"></a> Nastavit a spusťte zarážku, krokování s vnořením do metody a prozkoumejte data programu
+## <a name="BKMK_StepInto"></a> Nastavit a spusťte zarážku, krokování s vnořením do metody a prozkoumejte data programu
  Nejběžnější způsob spuštění ladicí relace je zvolit **spustit ladění** z **ladění** nabídce (klávesnice: F5). Provádění začne a pokračuje, dokud není dosaženo zarážky, můžete ručně pozastavení provádění, dojde k výjimce nebo ukončení aplikace.
 
  Když je spuštění pozastaveno v ladicím programu, můžete zobrazit hodnotu active proměnné v popisu dat podržením ukazatele myši nad proměnnou. Můžete také otevřít místní hodnoty a automatické hodnoty windows zobrazíte seznam aktivních proměnné a jejich aktuální hodnoty. Přidání jednoho nebo více proměnných do okna umožňuje sledovat, se můžete soustředit na hodnotu proměnné, protože aplikace pokračuje v provádění kódu.
@@ -112,7 +112,7 @@ Tento rychlý start ukazuje, jak se zorientovat relacemi ladění sady Visual St
 
   Podívejte se na více proměnných v okně kukátko. Hodnoty proměnných sledovaných, jako jsou hodnoty v oknech místní hodnoty a datový tip windows, se aktualizují pokaždé, když je spuštění pozastaveno. K oknu kukátka můžete také přidat proměnné z editoru kódu. Vyberte proměnnou ke sledování, klikněte pravým tlačítkem a pak zvolte **Přidat kukátko**.
 
-##  <a name="BKMK_StepIntoOverOut"></a> Krokovat do, nad a z metody
+## <a name="BKMK_StepIntoOverOut"></a> Krokovat do, nad a z metody
  Na rozdíl od krokování s vnořením do metody volané nadřazené metody, krokování přes metody spustí metodu podřízené a následně pozastaví provádění kódu ve volání metody jako nadřazený obnoví. Pokud jste obeznámeni s způsob, jak metoda funguje a si jisti, že jeho spuštění nebude mít vliv na problém, který se objeví prošetřovaná může Krokovat přes metodu.
 
  Krokování přes jediného řádku kódu, které nebude obsahovat volání metody spustí řádku stejně jako krokování s vnořením do řádku.
@@ -144,7 +144,7 @@ Tento rychlý start ukazuje, jak se zorientovat relacemi ladění sady Visual St
 
  **Zastavte ladění.** V nabídce ladit, zvolte Ukončit ladění (klávesnice: SHIFT + F5). Ukončí relaci ladění.
 
-##  <a name="BKMK_ConditionCursorVisualize"></a> Nastavení podmíněné zarážky, přechod ke kurzoru a vizualizovat proměnné
+## <a name="BKMK_ConditionCursorVisualize"></a> Nastavení podmíněné zarážky, přechod ke kurzoru a vizualizovat proměnné
  Podmíněné zarážky Určuje podmínku, která způsobí, že ladicí program k pozastavení provádění. Podmínka je zadaný libovolný výraz kód, který může být vyhodnocen jako true nebo false. Můžete například použít podmíněné zarážky prozkoumat stav programu v často volaných metodu pouze v případě, že proměnné dosáhne určité hodnoty.
 
  Provést do pozice kurzoru je třeba nastavit jednorázové zarážku. Když je spuštění pozastaveno, můžete vybrat řádek ve zdroji a obnovit spuštění, dokud nebude dosaženo vybraný řádek. Například můžete být krokování smyčky v metodě a určit, že kód ve smyčce pracuje správně. Místo procházení každé iteraci smyčky, můžete spustit na kurzor, který je umístěn po provedení smyčky je.
@@ -180,7 +180,7 @@ Tento rychlý start ukazuje, jak se zorientovat relacemi ladění sady Visual St
 
  **Zastavte ladění.** V nabídce ladit, zvolte Ukončit ladění (klávesnice: SHIFT + F5). Ukončí relaci ladění.
 
-##  <a name="BKMK_EditContinueRecoverExceptions"></a> Upravit a pokračovat, obnovení z výjimky
+## <a name="BKMK_EditContinueRecoverExceptions"></a> Upravit a pokračovat, obnovení z výjimky
  V některých případech až proniknout do kódu v ladicím programu sady Visual Studio budete mít příležitost změnit hodnoty proměnných a dokonce i logics příkazy. Tato funkce je volána upravit a pokračovat.
 
  Upravit a pokračovat může být zvláště užitečné při rozdělit na výjimku. Namísto nutnosti zastavit a znovu spusťte ladění dlouhé a potřebný postup výjimce vyhnout, můžete "vrátit se zpět" výjimka, která má přesunout zpracování do bodu bezprostředně před došlo k výjimce a změňte problematický proměnné nebo příkazu a Pokračujte s aktuální relaci ladění ve stavu, který nevyvolá výjimku.

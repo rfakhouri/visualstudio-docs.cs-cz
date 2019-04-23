@@ -35,12 +35,12 @@ caps.latest.revision: 48
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 93aa6d9f6e821dba012009e90ba6f9be51641703
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: da8b3b32eae5d3045216f562dc7db25fb1f3264a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54756940"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048189"
 ---
 # <a name="how-to-set-debug-and-release-configurations"></a>Postupy: Konfigurace nastavení ladění a verzí
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,9 +57,9 @@ Projekty aplikace Visual Studio mají samostatné verze a ladění konfigurace p
   
 ### <a name="to-change-the-build-configuration"></a>Chcete-li změnit konfiguraci sestavení  
   
-1.  V nabídce sestavení: klikněte na tlačítko **sestavení / nástroje Configuration Manager**a pak vyberte **ladění** nebo **vydání**.  
+1. V nabídce sestavení: klikněte na tlačítko **sestavení / nástroje Configuration Manager**a pak vyberte **ladění** nebo **vydání**.  
   
-2.  Na panelu nástrojů zvolte buď **ladění** nebo **vydání** z **konfigurace řešení** pole se seznamem.  
+2. Na panelu nástrojů zvolte buď **ladění** nebo **vydání** z **konfigurace řešení** pole se seznamem.  
   
      ![konfigurace sestavení nástrojů](../debugger/media/toolbarbuildconfiguration.png "ToolbarBuildConfiguration")  
   

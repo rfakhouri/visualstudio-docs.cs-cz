@@ -15,12 +15,12 @@ caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 81aab6e0eea808c8dcb9b37d5772144a863329aa
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 94e2186fa13f7fe125457dc6f04d6d31d0bcc65d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54797444"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046120"
 ---
 # <a name="extending-javascript-intellisense"></a>Rozšíření JavaScript IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -90,7 +90,7 @@ intellisense.addEventListener('statementcompletion', function (event) {
 > [!NOTE]
 >  V jazyce JavaScript rychlé informace odkazuje na místním okně, které se zobrazí napravo od seznamu dokončení. Rychlé informace nelze vyvolat ručně.  
   
-##  <a name="intellisenseObject"></a> technologie IntelliSense objektu  
+## <a name="intellisenseObject"></a> technologie IntelliSense objektu  
  V následující tabulce jsou uvedeny funkce, které jsou k dispozici pro `intellisense` objektu. `intellisense` Objekt je k dispozici pouze v době návrhu.  
   
 |Funkce|Popis|  
@@ -108,118 +108,118 @@ intellisense.addEventListener('statementcompletion', function (event) {
 ## <a name="event-members"></a>Události  
  Následující části popisují členy, které jsou vystaveny v objektu události pro následující události: `statementcompletion`, `signaturehelp`, a `statementcompletionhint`.  
   
-###  <a name="CompletionItem"></a> completionItem vlastnost  
+### <a name="CompletionItem"></a> completionItem vlastnost  
  Vrátí identifikátor, označované jako položky dokončení, pro kterou je požadována v místním okně Rychlé informace. Tato vlastnost je k dispozici pro `statementcompletionhint` objektu události a [položky vlastnost](#Items) vlastnost `statementcompletion` objektu události.  
   
  Návratová hodnota: `completionItem` objektu  
   
  Následují členové `completionItem` objektu:  
   
--   `name`. Čtení a zápis při použití v `items` kolekci; jinak jen pro čtení. Vrátí řetězec, který určuje položky dokončení.  
+- `name`. Čtení a zápis při použití v `items` kolekci; jinak jen pro čtení. Vrátí řetězec, který určuje položky dokončení.  
   
--   `kind`. Čtení a zápis při použití v `items` kolekci; jinak jen pro čtení. Vrátí řetězec, který představuje typ položky dokončení. Možné hodnoty jsou metody, pole, vlastnost, parametr, proměnné a rezervován.  
+- `kind`. Čtení a zápis při použití v `items` kolekci; jinak jen pro čtení. Vrátí řetězec, který představuje typ položky dokončení. Možné hodnoty jsou metody, pole, vlastnost, parametr, proměnné a rezervován.  
   
--   `glyph`. Čtení a zápis při použití v `items` kolekci; jinak jen pro čtení. Vrátí řetězec, který představuje ikonu, která se zobrazí v seznamu dokončení. Možné hodnoty parametru `glyph` použijte následující formát: vs:*glyphType*, kde *glyphType* odpovídá členy jazykově nezávislé <xref:Microsoft.VisualStudio.Language.Intellisense.StandardGlyphGroup> výčet. Například `vs:GlyphGroupMethod` je jednou z možných hodnot pro `glyph`. Když `glyph` není nastavená, `kind` vlastnost určuje výchozí ikona.  
+- `glyph`. Čtení a zápis při použití v `items` kolekci; jinak jen pro čtení. Vrátí řetězec, který představuje ikonu, která se zobrazí v seznamu dokončení. Možné hodnoty parametru `glyph` použijte následující formát: vs:*glyphType*, kde *glyphType* odpovídá členy jazykově nezávislé <xref:Microsoft.VisualStudio.Language.Intellisense.StandardGlyphGroup> výčet. Například `vs:GlyphGroupMethod` je jednou z možných hodnot pro `glyph`. Když `glyph` není nastavená, `kind` vlastnost určuje výchozí ikona.  
   
--   `parentObject`. Jen pro čtení. Vrátí nadřazený objekt.  
+- `parentObject`. Jen pro čtení. Vrátí nadřazený objekt.  
   
--   `value`. Jen pro čtení. Vrátí objekt, který představuje hodnotu položky dokončení.  
+- `value`. Jen pro čtení. Vrátí objekt, který představuje hodnotu položky dokončení.  
   
--   `comments`. Jen pro čtení. Vrátí řetězec, který obsahuje komentáře, které jsou nad pole nebo proměnné.  
+- `comments`. Jen pro čtení. Vrátí řetězec, který obsahuje komentáře, které jsou nad pole nebo proměnné.  
   
--   `scope`. Jen pro čtení. Vrátí rozsah položky dokončení. Možné hodnoty jsou globální, místní, parametr a člena.  
+- `scope`. Jen pro čtení. Vrátí rozsah položky dokončení. Možné hodnoty jsou globální, místní, parametr a člena.  
   
-###  <a name="Items"></a> položky vlastnosti  
+### <a name="Items"></a> položky vlastnosti  
  Získá nebo nastaví pole příkazu položek dokončení. Každý prvek v poli je [completionItem vlastnost](#CompletionItem) objektu. `items` Vlastnost je k dispozici pro `statementcompletion` objektu události.  
   
  Návratová hodnota: pole  
   
-###  <a name="FunctionComments"></a> functionComments vlastnost  
+### <a name="FunctionComments"></a> functionComments vlastnost  
  Vrátí komentáře pro funkci. Tato vlastnost je k dispozici pro `signaturehelp` objektu události.  
   
  Návratová hodnota: `comments` objektu  
   
  Následují členové `comments` objektu:  
   
--   `above`. Vrátí komentáře nad funkce.  
+- `above`. Vrátí komentáře nad funkce.  
   
--   `inside`. Vrátí komentáře uvnitř funkce, obvykle ve formátu VSDoc.  
+- `inside`. Vrátí komentáře uvnitř funkce, obvykle ve formátu VSDoc.  
   
--   `paramComments`. Vrátí pole představující komentáře pro každého parametru ve funkci. Členy pole patří:  
+- `paramComments`. Vrátí pole představující komentáře pro každého parametru ve funkci. Členy pole patří:  
   
-    -   `name`. Vrátí řetězec představující název parametru.  
+    - `name`. Vrátí řetězec představující název parametru.  
   
-    -   `comment`. Vrátí řetězec, který obsahuje parametr komentář.  
+    - `comment`. Vrátí řetězec, který obsahuje parametr komentář.  
   
-###  <a name="FunctionHelp"></a> functionHelp vlastnost  
+### <a name="FunctionHelp"></a> functionHelp vlastnost  
  Vrátí Nápověda pro funkci. Tato vlastnost je k dispozici pro `signaturehelp` objektu události.  
   
  Návratová hodnota: `functionHelp` objektu  
   
  Následují členové `functionHelp` objektu:  
   
--   `functionName`. Čtení a zápis Vrátí řetězec, který obsahuje název funkce.  
+- `functionName`. Čtení a zápis Vrátí řetězec, který obsahuje název funkce.  
   
--   `signatures`. Čtení a zápis Získá nebo nastaví pole signatury funkce. Každý prvek v poli je `signature` objektu. Některé `signature` vlastnosti, jako například `locid`, odpovídají na běžné [dokumentační komentáře XML](../ide/xml-documentation-comments-javascript.md) atributy.  
+- `signatures`. Čtení a zápis Získá nebo nastaví pole signatury funkce. Každý prvek v poli je `signature` objektu. Některé `signature` vlastnosti, jako například `locid`, odpovídají na běžné [dokumentační komentáře XML](../ide/xml-documentation-comments-javascript.md) atributy.  
   
      Členové `signature` objekt obsahovat:  
   
-    -   `description`. Čtení a zápis Vrátí řetězec, který popisuje funkce.  
+    - `description`. Čtení a zápis Vrátí řetězec, který popisuje funkce.  
   
-    -   `locid`. Čtení a zápis Vrátí identifikátor řetězce, který obsahuje informace o lokalizaci, informace o funkci.  
+    - `locid`. Čtení a zápis Vrátí identifikátor řetězce, který obsahuje informace o lokalizaci, informace o funkci.  
   
-    -   `helpKeyword`. Čtení a zápis Vrátí řetězec, který obsahuje klíčové slovo nápovědy.  
+    - `helpKeyword`. Čtení a zápis Vrátí řetězec, který obsahuje klíčové slovo nápovědy.  
   
-    -   `externalFile`. Čtení a zápis Vrátí řetězec, který představuje soubor, který obsahuje ID člena.  
+    - `externalFile`. Čtení a zápis Vrátí řetězec, který představuje soubor, který obsahuje ID člena.  
   
-    -   `externalid`. Čtení a zápis Vrátí řetězec, který představuje ID členské funkce.  
+    - `externalid`. Čtení a zápis Vrátí řetězec, který představuje ID členské funkce.  
   
-    -   `params`. Čtení a zápis Získá nebo nastaví pole parametrů pro funkci. Každý prvek v poli parametrů `parameter` objekt, který obsahuje vlastnosti, které odpovídají na následující atributy [ \<param >](../ide/param-javascript.md) element:  
+    - `params`. Čtení a zápis Získá nebo nastaví pole parametrů pro funkci. Každý prvek v poli parametrů `parameter` objekt, který obsahuje vlastnosti, které odpovídají na následující atributy [ \<param >](../ide/param-javascript.md) element:  
   
-        -   `name`. Čtení a zápis Vrátí řetězec představující název parametru.  
+        - `name`. Čtení a zápis Vrátí řetězec představující název parametru.  
   
-        -   `type`. Čtení a zápis Vrátí řetězec, který představuje typ parametru.  
+        - `type`. Čtení a zápis Vrátí řetězec, který představuje typ parametru.  
   
-        -   `elementType`. Čtení a zápis Pokud je typ `Array`, vrátí řetězec, který představuje typ prvků v poli.  
+        - `elementType`. Čtení a zápis Pokud je typ `Array`, vrátí řetězec, který představuje typ prvků v poli.  
   
-        -   `description`. Čtení a zápis Vrátí řetězec, který popisuje parametr.  
+        - `description`. Čtení a zápis Vrátí řetězec, který popisuje parametr.  
   
-        -   `locid`. Čtení a zápis Vrátí identifikátor řetězce, který obsahuje informace o lokalizaci, informace o funkci.  
+        - `locid`. Čtení a zápis Vrátí identifikátor řetězce, který obsahuje informace o lokalizaci, informace o funkci.  
   
-        -   `optional`. Čtení a zápis Vrátí řetězec, který označuje, zda se jedná o volitelný parametr. `true` Označuje, že parametr je volitelná. `false` označuje, že není.  
+        - `optional`. Čtení a zápis Vrátí řetězec, který označuje, zda se jedná o volitelný parametr. `true` Označuje, že parametr je volitelná. `false` označuje, že není.  
   
-    -   `returnValue`. Čtení a zápis Získá nebo nastaví návratovou hodnotu objekt s vlastnostmi, které odpovídají na následující atributy [ \<vrátí >](../ide/returns-javascript.md) element:  
+    - `returnValue`. Čtení a zápis Získá nebo nastaví návratovou hodnotu objekt s vlastnostmi, které odpovídají na následující atributy [ \<vrátí >](../ide/returns-javascript.md) element:  
   
-        -   `type`. Čtení a zápis Vrátí řetězec, který představuje návratovým typem.  
+        - `type`. Čtení a zápis Vrátí řetězec, který představuje návratovým typem.  
   
-        -   `elementType`. Čtení a zápis Pokud je typ `Array`, vrátí řetězec, který představuje typ prvků v poli.  
+        - `elementType`. Čtení a zápis Pokud je typ `Array`, vrátí řetězec, který představuje typ prvků v poli.  
   
-        -   `description`. Čtení a zápis Vrátí řetězec, který popisuje návratovou hodnotu.  
+        - `description`. Čtení a zápis Vrátí řetězec, který popisuje návratovou hodnotu.  
   
-        -   `locid`. Čtení a zápis Vrátí identifikátor řetězce, který obsahuje informace o lokalizaci, informace o funkci.  
+        - `locid`. Čtení a zápis Vrátí identifikátor řetězce, který obsahuje informace o lokalizaci, informace o funkci.  
   
-        -   `helpKeyword`. Čtení a zápis Vrátí řetězec, který obsahuje klíčové slovo nápovědy.  
+        - `helpKeyword`. Čtení a zápis Vrátí řetězec, který obsahuje klíčové slovo nápovědy.  
   
-        -   `externalFile`. Čtení a zápis Vrátí řetězec, který představuje soubor, který obsahuje ID člena.  
+        - `externalFile`. Čtení a zápis Vrátí řetězec, který představuje soubor, který obsahuje ID člena.  
   
-        -   `externalid`. Čtení a zápis Vrátí řetězec, který představuje ID členské funkce.  
+        - `externalid`. Čtení a zápis Vrátí řetězec, který představuje ID členské funkce.  
   
-###  <a name="ParentObject"></a> parentObject vlastnost  
+### <a name="ParentObject"></a> parentObject vlastnost  
  Vrátí nadřazený objekt členské funkce. Například pro `document.getElementByID`, `parentObject` vrátí `document` objektu. Tato vlastnost je k dispozici pro `signaturehelp` objektu události.  
   
  Návratová hodnota: objekt  
   
-###  <a name="Target"></a> Vlastnost cíle  
+### <a name="Target"></a> Vlastnost cíle  
  Vrátí objekt, který představuje položku vlevo od znaku aktivační události, které je tečka (.). Pro funkce `target` vrátí funkci, pro kterou je požadována informace o parametru. Tato vlastnost je k dispozici pro `statementcompletion` a `signaturehelp` objekty událostí.  
   
  Návratová hodnota: objekt  
   
-###  <a name="TargetName"></a> Vlastnost targetName  
+### <a name="TargetName"></a> Vlastnost targetName  
  Vrátí řetězec, který představuje cíl. Například pro "this." `targetName` vrátí "this". Pro "A.B" (když je ukazatel myši po "B") `targetName` vrátí "B". Tato vlastnost je k dispozici pro `statementcompletion` objektu události.  
   
  Návratová hodnota: řetězec  
   
-###  <a name="SymbolHelp"></a> symbolHelp vlastnost  
+### <a name="SymbolHelp"></a> symbolHelp vlastnost  
  Vrátí položky dokončení, pro kterou je požadována v místním okně Rychlé informace. Tato vlastnost je k dispozici pro `statementcompletionhint` objektu události.  
   
  Návratová hodnota: `symbolHelp` objektu.  
@@ -228,29 +228,29 @@ intellisense.addEventListener('statementcompletion', function (event) {
   
  Následují členové `symbolHelp` objektu:  
   
--   `name`. Čtení a zápis Vrátí řetězec, který obsahuje název identifikátoru.  
+- `name`. Čtení a zápis Vrátí řetězec, který obsahuje název identifikátoru.  
   
--   `symbolType`. Čtení a zápis Vrátí řetězec, který představuje typ symbolu. Možné hodnoty zahrnují neznámý, logická hodnota, číslo, řetězec, objekt, funkce, pole, datum a regulární výraz.  
+- `symbolType`. Čtení a zápis Vrátí řetězec, který představuje typ symbolu. Možné hodnoty zahrnují neznámý, logická hodnota, číslo, řetězec, objekt, funkce, pole, datum a regulární výraz.  
   
--   `symbolDisplayType`. Čtení a zápis Vrátí řetězec, který obsahuje název typu pro zobrazení. Pokud `symbolDisplayType` není nastavena, `symbolType` se používá.  
+- `symbolDisplayType`. Čtení a zápis Vrátí řetězec, který obsahuje název typu pro zobrazení. Pokud `symbolDisplayType` není nastavena, `symbolType` se používá.  
   
--   `elementType`. Čtení a zápis Pokud `symbolType` je `Array`, vrátí řetězec, který představuje typ prvků v poli.  
+- `elementType`. Čtení a zápis Pokud `symbolType` je `Array`, vrátí řetězec, který představuje typ prvků v poli.  
   
--   `scope`. Čtení a zápis Vrátí řetězec, který představuje obor symbolu. Možné hodnoty zahrnují parametr globální, místní a člena.  
+- `scope`. Čtení a zápis Vrátí řetězec, který představuje obor symbolu. Možné hodnoty zahrnují parametr globální, místní a člena.  
   
--   `description`. Čtení a zápis Vrátí řetězec, který obsahuje popis daného symbolu.  
+- `description`. Čtení a zápis Vrátí řetězec, který obsahuje popis daného symbolu.  
   
--   `locid`. Čtení a zápis Vrátí identifikátor řetězce, který obsahuje informace o lokalizaci o symbolu.  
+- `locid`. Čtení a zápis Vrátí identifikátor řetězce, který obsahuje informace o lokalizaci o symbolu.  
   
--   `helpKeyword`. Čtení a zápis Vrátí řetězec, který obsahuje klíčové slovo nápovědy.  
+- `helpKeyword`. Čtení a zápis Vrátí řetězec, který obsahuje klíčové slovo nápovědy.  
   
--   `externalFile`. Čtení a zápis Vrátí řetězec, který představuje soubor, který obsahuje ID člena.  
+- `externalFile`. Čtení a zápis Vrátí řetězec, který představuje soubor, který obsahuje ID člena.  
   
--   `externalid`. Čtení a zápis Vrátí řetězec, který představuje ID člena symbolu.  
+- `externalid`. Čtení a zápis Vrátí řetězec, který představuje ID člena symbolu.  
   
--   `functionHelp`. Čtení a zápis Vrátí [functionHelp vlastnost](#FunctionHelp), který by mohl obsahovat informace při `symbolType` je funkce.  
+- `functionHelp`. Čtení a zápis Vrátí [functionHelp vlastnost](#FunctionHelp), který by mohl obsahovat informace při `symbolType` je funkce.  
   
-###  <a name="Scope"></a> obor vlastnost  
+### <a name="Scope"></a> obor vlastnost  
  Vrátí obor dokončení události. Možné hodnoty pro dokončení obor je globální a členy. Tato vlastnost je k dispozici pro `statementcompletion` objektu události.  
   
  Návratová hodnota: řetězec  
@@ -258,27 +258,27 @@ intellisense.addEventListener('statementcompletion', function (event) {
 ## <a name="debugging-intellisense-extensions"></a>Ladění rozšíření technologie IntelliSense  
  Nelze ladit rozšíření, ale můžete použít [intellisense objekt](#intellisenseObject) funkce odesílat informace v okně Výstup Visual Studia. Příklad, který ukazuje, jak tuto funkci použít, najdete v části [odesílání zpráv do okna výstup](#Logging) dále v tomto tématu. Pro `logMessage` fungovat, musí být zaregistrovaný aspoň jedna obslužná rutina události v rozšíření.  
   
-##  <a name="CodeExamples"></a> Příklady kódu  
+## <a name="CodeExamples"></a> Příklady kódu  
  Tato část obsahuje příklady kódu, které ukazují, jak používat rozšíření IntelliSense rozhraní API. Existují také jiné způsoby, jak pomocí těchto rozhraní API. Další příklady najdete v následující soubory v seznamu \\ \\ *cestu instalace sady Visual Studio*\JavaScript\References složky. Tyto příklady, které používá služba jazyka JavaScript pracují.  
   
--   underscoreFilter.js. Tento kód skryje soukromé členy z technologie IntelliSense. Obsahuje obslužné rutiny událostí pro `statementcompletion` událostí.  
+- underscoreFilter.js. Tento kód skryje soukromé členy z technologie IntelliSense. Obsahuje obslužné rutiny událostí pro `statementcompletion` událostí.  
   
--   showPlainComments.js. Tento kód poskytuje podporu technologie IntelliSense pro standardní komentáře. Obsahuje obslužné rutiny událostí pro `signaturehelp` a `statementcompletionhint` události.  
+- showPlainComments.js. Tento kód poskytuje podporu technologie IntelliSense pro standardní komentáře. Obsahuje obslužné rutiny událostí pro `signaturehelp` a `statementcompletionhint` události.  
   
-###  <a name="Annotations"></a> Přidávání poznámek technologie IntelliSense  
+### <a name="Annotations"></a> Přidávání poznámek technologie IntelliSense  
  Následující postup ukazuje, jak poskytnout podporu technologie IntelliSense dokumentace pro knihovny třetí strany beze změny knihovny přímo. K tomuto účelu můžete použít `intellisense.annotate` v rozšíření.  
   
  Pro tento příklad fungoval musíte tyto soubory jazyka JavaScript v projektu:  
   
--   demoLib.js, což je soubor projektu, který představuje knihovnu třetí strany.  
+- demoLib.js, což je soubor projektu, který představuje knihovnu třetí strany.  
   
--   demoLib.intellisense.js, což je rozšíření technologie IntelliSense. Tento soubor nemusí být součástí projektu, ale musí být ve stejné složce jako exampleLib.js.  
+- demoLib.intellisense.js, což je rozšíření technologie IntelliSense. Tento soubor nemusí být součástí projektu, ale musí být ve stejné složce jako exampleLib.js.  
   
--   appCode.js, což je soubor projektu, který představuje kód aplikace.  
+- appCode.js, což je soubor projektu, který představuje kód aplikace.  
   
 ##### <a name="to-add-an-intellisense-annotation"></a>Přidat poznámku technologie IntelliSense  
   
-1.  Přidejte následující kód do demoLib.js.  
+1. Přidejte následující kód do demoLib.js.  
   
     ```javascript  
     function someFunc(a) { };  
@@ -286,7 +286,7 @@ intellisense.addEventListener('statementcompletion', function (event) {
   
     ```  
   
-2.  Přidejte následující kód do demoLib.intellisense.js.  
+2. Přidejte následující kód do demoLib.intellisense.js.  
   
     ```javascript  
     intellisense.annotate(someFunc, function (a) {  
@@ -302,35 +302,35 @@ intellisense.addEventListener('statementcompletion', function (event) {
     });  
     ```  
   
-3.  Přidejte následující direktivy odkazu jako první řádek v appCode.js. Cesta se tady použít označuje, že soubory jazyka JavaScript jsou ve stejné složce.  
+3. Přidejte následující direktivy odkazu jako první řádek v appCode.js. Cesta se tady použít označuje, že soubory jazyka JavaScript jsou ve stejné složce.  
   
     ```javascript  
     /// <reference path="demoLib.js" />  
   
     ```  
   
-4.  AppCode.js zadejte následující kód. Zobrazí se vám dokumentační komentáře XML v rozšíření zobrazí jako informace o parametru technologie IntelliSense.  
+4. AppCode.js zadejte následující kód. Zobrazí se vám dokumentační komentáře XML v rozšíření zobrazí jako informace o parametru technologie IntelliSense.  
   
      ![Příklad znázorňující použití intellisense.annotate](../ide/media/js-intellisense-annotate-paraminfo.png "js_intellisense_annotate_paraminfo")  
   
-5.  AppCode.js zadejte následující kód. Při psaní uvidíte standardních komentářů v rozšíření zobrazí jako rychlé informace technologie IntelliSense.  
+5. AppCode.js zadejte následující kód. Při psaní uvidíte standardních komentářů v rozšíření zobrazí jako rychlé informace technologie IntelliSense.  
   
      ![Příklad znázorňující použití intellisense.annotate](../ide/media/js-intellisense-annotations.png "js_intellisense_annotations")  
   
-###  <a name="Logging"></a> Odesílání zpráv do okna výstup  
+### <a name="Logging"></a> Odesílání zpráv do okna výstup  
  Následující postup ukazuje, jak odesílat zprávy v okně výstupu. Můžete odesílat zprávy pomoci při ladění rozšíření technologie IntelliSense.  
   
  Pro tento příklad fungoval musíte tyto soubory jazyka JavaScript v projektu:  
   
--   exampleLib.js, což je soubor projektu, který představuje knihovnu třetí strany.  
+- exampleLib.js, což je soubor projektu, který představuje knihovnu třetí strany.  
   
--   exampleLib.intellisense.js, což je rozšíření technologie IntelliSense. Tento soubor nemusí být součástí projektu, ale musí být ve stejné složce jako exampleLib.js.  
+- exampleLib.intellisense.js, což je rozšíření technologie IntelliSense. Tento soubor nemusí být součástí projektu, ale musí být ve stejné složce jako exampleLib.js.  
   
--   appCode.js, což je soubor projektu, který představuje kód aplikace.  
+- appCode.js, což je soubor projektu, který představuje kód aplikace.  
   
 ##### <a name="to-send-a-message-to-the-output-window"></a>Odeslat zprávu do okna výstup  
   
-1.  Přidejte následující kód do exampleLib.js.  
+1. Přidejte následující kód do exampleLib.js.  
   
     ```javascript  
     var someVar = {  
@@ -339,7 +339,7 @@ intellisense.addEventListener('statementcompletion', function (event) {
     };  
     ```  
   
-2.  Přidejte následující kód do exampleLib.intellisense.js.  
+2. Přidejte následující kód do exampleLib.intellisense.js.  
   
     ```javascript  
     intellisense.addEventListener('statementcompletion', function (e) {  
@@ -357,16 +357,16 @@ intellisense.addEventListener('statementcompletion', function (event) {
     });  
     ```  
   
-3.  Přidejte následující direktivy odkazu jako první řádek v appCode.js. Cesta se tady použít označuje, že soubory jazyka JavaScript jsou ve stejné složce.  
+3. Přidejte následující direktivy odkazu jako první řádek v appCode.js. Cesta se tady použít označuje, že soubory jazyka JavaScript jsou ve stejné složce.  
   
     ```javascript  
     /// <reference path="exampleLib.js" />  
   
     ```  
   
-4.  V okně výstupu zvolte **jazyková služba JavaScriptu** v **zobrazit výstup z:** seznamu. (Chcete-li zobrazit okno výstup, vyberte **výstup** v nabídce Zobrazit.)  
+4. V okně výstupu zvolte **jazyková služba JavaScriptu** v **zobrazit výstup z:** seznamu. (Chcete-li zobrazit okno výstup, vyberte **výstup** v nabídce Zobrazit.)  
   
-5.  AppCode.js zadejte následující kód. Během psaní zobrazuje v okně Výstup zprávy ze služby jazyka. První zprávu v okně výstupu označuje požádal dokončování aktuálního oboru.  
+5. AppCode.js zadejte následující kód. Během psaní zobrazuje v okně Výstup zprávy ze služby jazyka. První zprávu v okně výstupu označuje požádal dokončování aktuálního oboru.  
   
     ```javascript  
     some  
@@ -383,9 +383,9 @@ intellisense.addEventListener('statementcompletion', function (event) {
     …  
     ```  
   
-6.  Zvolte **Vymazat vše** tlačítka v okně výstup.  
+6. Zvolte **Vymazat vše** tlačítka v okně výstup.  
   
-7.  Zadáním následujícího kódu. První zprávu v okně výstupu označuje požádal seznam členů.  
+7. Zadáním následujícího kódu. První zprávu v okně výstupu označuje požádal seznam členů.  
   
     ```javascript  
     someVar.  
@@ -402,22 +402,22 @@ intellisense.addEventListener('statementcompletion', function (event) {
     …  
     ```  
   
-###  <a name="Icons"></a> Změna ikony technologie IntelliSense  
+### <a name="Icons"></a> Změna ikony technologie IntelliSense  
  Následující postup ukazuje, jak změnit ikony ve výchozím nastavení zobrazí v IntelliSense. To může být užitečné, když zadáte, aby IntelliSense informace o konkrétní knihovny konceptů, jako jsou obory názvů, třídy, rozhraní a výčty.  
   
  K dispozici ikona hodnoty, najdete v části <xref:Microsoft.VisualStudio.Language.Intellisense.StandardGlyphGroup>.  
   
  Pro tento příklad fungoval musíte tyto soubory jazyka JavaScript v projektu:  
   
--   exampleLib.js, což je projekt soubor knihovny represens třetí strany.  
+- exampleLib.js, což je projekt soubor knihovny represens třetí strany.  
   
--   exampleLib.intellisense.js, což je rozšíření technologie IntelliSense. Tento soubor nemusí být součástí projektu, ale musí být ve stejné složce jako exampleLib.js.  
+- exampleLib.intellisense.js, což je rozšíření technologie IntelliSense. Tento soubor nemusí být součástí projektu, ale musí být ve stejné složce jako exampleLib.js.  
   
--   appCode.js, což je soubor projektu, který představuje kód aplikace.  
+- appCode.js, což je soubor projektu, který představuje kód aplikace.  
   
 ##### <a name="to-change-the-icons"></a>Chcete-li změnit ikony  
   
-1.  Přidejte následující kód do exampleLib.js.  
+1. Přidejte následující kód do exampleLib.js.  
   
     ```javascript  
     function Namespace(name) {  
@@ -437,7 +437,7 @@ intellisense.addEventListener('statementcompletion', function (event) {
     SomeNamespace.Enum1 = new Enum({ VALUE1: 0, VALUE2: 1 });  
     ```  
   
-2.  Přidejte následující kód do exampleLib.intellisense.js.  
+2. Přidejte následující kód do exampleLib.intellisense.js.  
   
     ```javascript  
     intellisense.addEventListener('statementcompletion', function (e) {  
@@ -479,35 +479,35 @@ intellisense.addEventListener('statementcompletion', function (event) {
     });  
     ```  
   
-3.  Přidejte následující direktivy odkazu jako první řádek v appCode.js. Cesta se tady použít označuje, že soubory jazyka JavaScript jsou ve stejné složce.  
+3. Přidejte následující direktivy odkazu jako první řádek v appCode.js. Cesta se tady použít označuje, že soubory jazyka JavaScript jsou ve stejné složce.  
   
     ```javascript  
     /// <reference path="exampleLib.js" />  
   
     ```  
   
-4.  AppCode.js zadejte následující kód. Při psaní uvidíte, že na ikonu pro obor názvů se změnila na "{}", jak se používá v jazyce C#.  
+4. AppCode.js zadejte následující kód. Při psaní uvidíte, že na ikonu pro obor názvů se změnila na "{}", jak se používá v jazyce C#.  
   
      ![Příklad znázorňující použití piktogram vlastnosti](../ide/media/js-intellisense-glyph-namespace.png "js_intellisense_glyph_namespace")  
   
-5.  AppCode.js zadejte následující kód. Během psaní se zobrazí nová ikona výčtu pro člena Enum1 a novou ikonu třídy SomeClass1 člena.  
+5. AppCode.js zadejte následující kód. Během psaní se zobrazí nová ikona výčtu pro člena Enum1 a novou ikonu třídy SomeClass1 člena.  
   
      ![Příklad znázorňující použití vlastnosti piktogram](../ide/media/js-intellisense-glyph-class-enum.png "js_intellisense_glyph_class_enum")  
   
-###  <a name="Overriding"></a> Jak se vyhnout za běhu vliv na výsledky technologie IntelliSense  
+### <a name="Overriding"></a> Jak se vyhnout za běhu vliv na výsledky technologie IntelliSense  
  Služba jazyka JavaScript spouští kód k dynamickému poskytování informací technologie IntelliSense. V důsledku toho chování za běhu může čas od času narušovat požadovaných výsledků. Následující postup ukazuje, jak přepsat výsledky technologie IntelliSense při chování za běhu má za následek nesprávnou IntelliSense.  
   
  Pro tento příklad fungoval musíte tyto soubory jazyka JavaScript v projektu:  
   
--   exampleLib.js, což je soubor projektu, který představuje knihovnu třetí strany.  
+- exampleLib.js, což je soubor projektu, který představuje knihovnu třetí strany.  
   
--   exampleLib.intellisense.js, což je rozšíření technologie IntelliSense. Tento soubor nemusí být součástí projektu, ale musí být ve stejné složce jako exampleLib.js.  
+- exampleLib.intellisense.js, což je rozšíření technologie IntelliSense. Tento soubor nemusí být součástí projektu, ale musí být ve stejné složce jako exampleLib.js.  
   
--   appCode.js, což je soubor projektu, který představuje kód aplikace.  
+- appCode.js, což je soubor projektu, který představuje kód aplikace.  
   
 ##### <a name="to-avoid-run-time-effects-on-intellisense-results"></a>Aby se zabránilo za běhu vliv na výsledky technologie IntelliSense  
   
-1.  Přidejte následující kód do exampleLib.js.  
+1. Přidejte následující kód do exampleLib.js.  
   
     ```javascript  
     function after(count, func) {  
@@ -521,18 +521,18 @@ intellisense.addEventListener('statementcompletion', function (event) {
   
      V předchozím kódu zabalené funkce ignoruje počáteční volání na základě hodnoty z `count`a nevrací výsledky.  
   
-2.  Přidejte následující direktivy odkazu jako první řádek v appCode.js. Cesta se tady použít označuje, že soubory jazyka JavaScript jsou ve stejné složce.  
+2. Přidejte následující direktivy odkazu jako první řádek v appCode.js. Cesta se tady použít označuje, že soubory jazyka JavaScript jsou ve stejné složce.  
   
     ```javascript  
     /// <reference path="exampleLib.js" />  
   
     ```  
   
-3.  AppCode.js zadejte následující kód. Seznam identifikátorů se zobrazí místo technologie IntelliSense, protože zabalené funkce se nikdy nevolá, což znamená, že `throttled` funkce nevrací žádné výsledky.  
+3. AppCode.js zadejte následující kód. Seznam identifikátorů se zobrazí místo technologie IntelliSense, protože zabalené funkce se nikdy nevolá, což znamená, že `throttled` funkce nevrací žádné výsledky.  
   
      ![Příklad přepsání intellisense výsledky](../ide/media/js-intellisense-override.png "js_intellisense_override")  
   
-4.  Přidejte následující kód do exampleLib.intellisense.js. Tím se změní chování návrhu tak, aby IntelliSense se zobrazí pro zabalenou funkci podle očekávání.  
+4. Přidejte následující kód do exampleLib.intellisense.js. Tím se změní chování návrhu tak, aby IntelliSense se zobrazí pro zabalenou funkci podle očekávání.  
   
     ```javascript  
     window.after = function (count, func) {  
@@ -541,7 +541,7 @@ intellisense.addEventListener('statementcompletion', function (event) {
     };  
     ```  
   
-5.  V appCode.js výsledky testů tak, že zadáte stejný kód, který jste zadali dříve. Tentokrát IntelliSense obsahuje požadované informace.  
+5. V appCode.js výsledky testů tak, že zadáte stejný kód, který jste zadali dříve. Tentokrát IntelliSense obsahuje požadované informace.  
   
      ![Příklad přepsání IntelliSense výsledky](../ide/media/js-intellisense-override-fixed.png "js_intellisense_override_fixed")  
   

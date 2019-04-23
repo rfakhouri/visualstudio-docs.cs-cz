@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: eea14ebd5e4c56b62054a982aef83c1b8964b662
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: f9aa586f5036c4aa2c321f2dda8333ad4342e165
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59650330"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049813"
 ---
 # <a name="build-page-project-designer-c"></a>Stránka Sestavení, návrhář projektu (C#)
 Použití **sestavení** stránku **Návrháře projektu** k určení vlastností konfigurace sestavení projektu. Tato stránka se vztahuje na [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] pouze pro projekty.
@@ -56,11 +56,11 @@ Pokud spustíte aplikaci jako 64bitovou aplikaci, zdvojnásobí se velikost ukaz
 
 Toto zaškrtávací políčko je dostupné jenom v případě, že jsou splněny všechny následující podmínky:
 
--   Na **sestavit stránku**, **Cílová platforma** seznamu je nastavena na **jakýkoli procesor**.
+- Na **sestavit stránku**, **Cílová platforma** seznamu je nastavena na **jakýkoli procesor**.
 
--   Na **stránky aplikace**, **typ výstupu** seznam určuje, že projekt je aplikace.
+- Na **stránky aplikace**, **typ výstupu** seznam určuje, že projekt je aplikace.
 
--   Na **stránky aplikace**, **Cílová architektura** seznamu určuje rozhraní .NET Framework 4.5.
+- Na **stránky aplikace**, **Cílová architektura** seznamu určuje rozhraní .NET Framework 4.5.
 
 **Povolit nezabezpečený kód** umožňuje kód, který používá [nebezpečné](/dotnet/csharp/language-reference/keywords/unsafe) ke kompilaci klíčové slovo. Další informace najdete v tématu [/ unsafe (možnosti kompilátoru C#)](/dotnet/csharp/language-reference/compiler-options/unsafe-compiler-option).
 

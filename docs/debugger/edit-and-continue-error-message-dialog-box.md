@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6531311e00d25947a8bb5ca2e691c941a20307ba
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 0428ecf21da525b8f77334e57547c8f10da7cdf5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57222344"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044900"
 ---
 # <a name="edit-and-continue-error-message"></a>Upravit a pokračovat chybová zpráva
 
@@ -31,19 +31,19 @@ ms.locfileid: "57222344"
 
 Mezi možné důvody pro tato chybová zpráva patří:
 
--   Došlo k pokusu o úpravu kódu SQL serveru.
--   Došlo k pokusu o úpravu optimalizovaný kód. Budete muset přepnutí z verze sestavení k sestavení pro ladění.
--   Při pokusu o úpravu kódu, když je spuštěn, místo během pozastavení v ladicím programu. Zkuste [nastavením zarážky](../debugger/using-breakpoints.md), okna a editací kódu během pozastavení.
--   Došlo k pokusu o úpravu spravovaného kódu, když je povoleno pouze nespravované ladění. Upravit a pokračovat nefunguje při využití [ladění ve smíšeném režimu](../debugger/how-to-debug-in-mixed-mode.md).
--   Provádění kódu změňte, který není podporována možností upravit a pokračovat v programovacím jazyce. Další informace najdete v článcích [podporované změny kódu v jazyce C#](supported-code-changes-csharp.md), [nepodporované úpravy v jazyce Visual Basic upravit a pokračovat](/visualstudio/debugger/supported-code-changes-csharp), a [podporované změny kódu C++](supported-code-changes-cpp.md).
--   Při pokusu o úpravu kódu v aplikaci jsou připojeny, namísto spuštění ladění od **ladění** nabídky.
--   Došlo k pokusu o úpravu kódu během ladění zotavení po havárii. Watson s výpisem paměti.
--   Při pokusu o úpravy kódu, jakmile dojde k neošetřené výjimce a možnost **vrátit zásobník volání v případě neošetřených výjimek** není vybraná.
--   Došlo k pokusu o úpravu kódu během ladění aplikace vložený modul runtime.
--   Došlo k pokusu o úpravu spravovaného kódu pomocí rozhraní .NET Framework verze starší než 4.5.1 s cílem 64bitové aplikace. Chcete-li použít funkci upravit a pokračovat pro rozhraní .NET Framework starší než 4.5.1, nastavte cíl na **x86** v  **\<ProjectName >** > **vlastnosti**  >  **Kompilaci** kartě **Advanced kompilátoru** nastavení.
--   Došlo k pokusu o úpravu kódu v sestavení, která byla změněna během ladění a má znovu načten.
--   Došlo k pokusu o úpravu kódu v sestavení, který není načtený.
--   Spuštění ladění starší verzi aplikace, protože na nejnovější verzi má chyby sestavení.
+- Došlo k pokusu o úpravu kódu SQL serveru.
+- Došlo k pokusu o úpravu optimalizovaný kód. Budete muset přepnutí z verze sestavení k sestavení pro ladění.
+- Při pokusu o úpravu kódu, když je spuštěn, místo během pozastavení v ladicím programu. Zkuste [nastavením zarážky](../debugger/using-breakpoints.md), okna a editací kódu během pozastavení.
+- Došlo k pokusu o úpravu spravovaného kódu, když je povoleno pouze nespravované ladění. Upravit a pokračovat nefunguje při využití [ladění ve smíšeném režimu](../debugger/how-to-debug-in-mixed-mode.md).
+- Provádění kódu změňte, který není podporována možností upravit a pokračovat v programovacím jazyce. Další informace najdete v článcích [podporované změny kódu v jazyce C#](supported-code-changes-csharp.md), [nepodporované úpravy v jazyce Visual Basic upravit a pokračovat](/visualstudio/debugger/supported-code-changes-csharp), a [podporované změny kódu C++](supported-code-changes-cpp.md).
+- Při pokusu o úpravu kódu v aplikaci jsou připojeny, namísto spuštění ladění od **ladění** nabídky.
+- Došlo k pokusu o úpravu kódu během ladění zotavení po havárii. Watson s výpisem paměti.
+- Při pokusu o úpravy kódu, jakmile dojde k neošetřené výjimce a možnost **vrátit zásobník volání v případě neošetřených výjimek** není vybraná.
+- Došlo k pokusu o úpravu kódu během ladění aplikace vložený modul runtime.
+- Došlo k pokusu o úpravu spravovaného kódu pomocí rozhraní .NET Framework verze starší než 4.5.1 s cílem 64bitové aplikace. Chcete-li použít funkci upravit a pokračovat pro rozhraní .NET Framework starší než 4.5.1, nastavte cíl na **x86** v  **\<ProjectName >** > **vlastnosti**  >  **Kompilaci** kartě **Advanced kompilátoru** nastavení.
+- Došlo k pokusu o úpravu kódu v sestavení, která byla změněna během ladění a má znovu načten.
+- Došlo k pokusu o úpravu kódu v sestavení, který není načtený.
+- Spuštění ladění starší verzi aplikace, protože na nejnovější verzi má chyby sestavení.
 
 Další informace naleznete v tématu:
 - [C++ upravit a pokračovat blogový příspěvek](https://devblogs.microsoft.com/cppblog/c-edit-and-continue-in-visual-studio-2015-update-3/)

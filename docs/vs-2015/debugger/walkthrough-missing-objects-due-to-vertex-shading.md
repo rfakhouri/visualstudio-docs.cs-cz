@@ -1,5 +1,5 @@
 ---
-title: 'Průvodce: Chybějící objekty z důvodu použití funkce Vertex Shading | Dokumentace Microsoftu'
+title: 'Návod: Chybějící objekty z důvodu použití funkce Vertex Shading | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -9,27 +9,27 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 14b9b3e338989a7ac4291bdf524b7ea872618d8f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: cc1f87ac6ce94a1ef474388f75b33aa963b19f8d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54795160"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046377"
 ---
-# <a name="walkthrough-missing-objects-due-to-vertex-shading"></a>Průvodce: Chybějící objekty z důvodu použití funkce Vertex Shading
+# <a name="walkthrough-missing-objects-due-to-vertex-shading"></a>Návod: Chybějící objekty z důvodu použití funkce Vertex Shading
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Tento návod ukazuje, jak používat [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nástrojů diagnostiky grafiky k prozkoumání objekt, který nebyl nalezen z důvodu chyby, ke které dojde během fáze vertex shader.  
   
  Tento návod ilustruje tyto úkoly:  
   
--   Použití **seznam událostí grafiky** k vyhledání potenciálních zdrojů problému.  
+- Použití **seznam událostí grafiky** k vyhledání potenciálních zdrojů problému.  
   
--   Použití **fáze zřetězení grafiky** okna zkontrolovat dopad `DrawIndexed` volání rozhraní API Direct3D.  
+- Použití **fáze zřetězení grafiky** okna zkontrolovat dopad `DrawIndexed` volání rozhraní API Direct3D.  
   
--   Použití **ladicí program HLSL** prozkoumat vertex shader.  
+- Použití **ladicí program HLSL** prozkoumat vertex shader.  
   
--   Použití **zásobník volání událostí grafiky** vám pomohou najít zdroje nesprávné konstanty HLSL.  
+- Použití **zásobník volání událostí grafiky** vám pomohou najít zdroje nesprávné konstanty HLSL.  
   
 ## <a name="scenario"></a>Scénář  
  Jednou z běžných příčin chybí objekt v 3D aplikaci nastane vertex shader vrcholů objektu transformuje nesprávné nebo neočekávaným způsobem, například objekt může být škálovat velmi malé velikosti, nebo transformovat tak, aby se zobrazí za fotoaparátu/kamery , spíše než před tímto prvkem.  

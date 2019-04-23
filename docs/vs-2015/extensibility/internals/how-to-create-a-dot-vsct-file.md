@@ -10,12 +10,12 @@ ms.assetid: b955f51c-f9f9-49c3-a8e4-63b6eb0e0341
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 2d3def90d568b77ccfd781d573b49551313d733f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a2483c000bb7c9446ac51bb94ef4006a7b2ac89f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54794505"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056936"
 ---
 # <a name="how-to-create-a-vsct-file"></a>Postupy: Vytvoření souboru .Vsct
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,32 +34,32 @@ Existuje několik způsobů, jak vytvořit soubor konfigurace (.vsct) založený
   
 ### <a name="to-manually-create-a-new-vsct-file"></a>Ruční vytvoření nového souboru .vsct  
   
-1.  Spustit [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
+1. Spustit [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
   
-2.  Na **souboru** nabídky, přejděte k **nový**a potom klikněte na tlačítko **souboru**.  
+2. Na **souboru** nabídky, přejděte k **nový**a potom klikněte na tlačítko **souboru**.  
   
-3.  V **šablony** podokně klikněte na tlačítko **soubor XML** a potom klikněte na tlačítko **otevřít**.  
+3. V **šablony** podokně klikněte na tlačítko **soubor XML** a potom klikněte na tlačítko **otevřít**.  
   
-4.  Na **zobrazení** nabídky, klikněte na tlačítko **okno vlastností** zobrazíte vlastnosti souboru XML.  
+4. Na **zobrazení** nabídky, klikněte na tlačítko **okno vlastností** zobrazíte vlastnosti souboru XML.  
   
-5.  V **vlastnosti** okna, klikněte na tlačítko Procházet (...) na vlastnost schémat.  
+5. V **vlastnosti** okna, klikněte na tlačítko Procházet (...) na vlastnost schémat.  
   
-6.  V seznamu schémata XSD vyberte schéma vsct.xsd. Pokud to není v seznamu, klikněte na tlačítko **přidat** a pak vyhledejte soubor na místním disku. Klikněte na tlačítko **OK** až budete hotoví.  
+6. V seznamu schémata XSD vyberte schéma vsct.xsd. Pokud to není v seznamu, klikněte na tlačítko **přidat** a pak vyhledejte soubor na místním disku. Klikněte na tlačítko **OK** až budete hotoví.  
   
-7.  V souboru XML, zadejte `<CommandTable` a potom stiskněte klávesu TAB. Zavřete značku zadáním `>`.  
+7. V souboru XML, zadejte `<CommandTable` a potom stiskněte klávesu TAB. Zavřete značku zadáním `>`.  
   
      Tím se vytvoří soubor základní .vsct.  
   
-8.  Vyplňte elementy souboru XML, který chcete přidat, podle [schématu VSCT](../../extensibility/vsct-xml-schema-reference.md). Další informace najdete v tématu [vytváření obsahu. Soubory Vsct](../../extensibility/internals/authoring-dot-vsct-files.md)  
+8. Vyplňte elementy souboru XML, který chcete přidat, podle [schématu VSCT](../../extensibility/vsct-xml-schema-reference.md). Další informace najdete v tématu [vytváření obsahu. Soubory Vsct](../../extensibility/internals/authoring-dot-vsct-files.md)  
   
 ## <a name="compiling-the-code"></a>Probíhá kompilace kódu  
  Pouhým přidáním souboru .vsct do projektu nezpůsobí, je pro kompilaci. Musí obsahovat ho v procesu sestavení.  
   
 ### <a name="to-add-a-vsct-file-to-project-compilation"></a>Přidat do projektu kompilace souboru .vsct  
   
-1.  Otevřete soubor projektu v editoru. Pokud projekt načíst, musí se nejdřív uvolnit.  
+1. Otevřete soubor projektu v editoru. Pokud projekt načíst, musí se nejdřív uvolnit.  
   
-2.  Přidat [itemgroup – element](../../msbuild/itemgroup-element-msbuild.md) , který obsahuje VSCTCompile element, jak je znázorněno v následujícím příkladu.  
+2. Přidat [itemgroup – element](../../msbuild/itemgroup-element-msbuild.md) , který obsahuje VSCTCompile element, jak je znázorněno v následujícím příkladu.  
   
     ```xml  
     <ItemGroup>  
@@ -72,7 +72,7 @@ Existuje několik způsobů, jak vytvořit soubor konfigurace (.vsct) založený
   
      ResourceName element musí být vždy nastavená na `Menus.ctmenu`.  
   
-3.  Pokud váš projekt obsahuje soubor RESX, přidejte EmbeddedResource element, který obsahuje MergeWithCTO element, jak je znázorněno v následujícím příkladu.  
+3. Pokud váš projekt obsahuje soubor RESX, přidejte EmbeddedResource element, který obsahuje MergeWithCTO element, jak je znázorněno v následujícím příkladu.  
   
     ```xml  
     <EmbeddedResource Include="VSPackage.resx">  
@@ -84,9 +84,9 @@ Existuje několik způsobů, jak vytvořit soubor konfigurace (.vsct) založený
   
      Tento kód by měl přejít uvnitř itemgroup – element, který obsahuje vložené prostředky.  
   
-4.  Otevřete soubor balíčku, obvykle s názvem *ProjectName*Package.cs nebo *ProjectName*Package.vb v editoru.  
+4. Otevřete soubor balíčku, obvykle s názvem *ProjectName*Package.cs nebo *ProjectName*Package.vb v editoru.  
   
-5.  Přidejte atribut ProvideMenuResource do třídy balíčku, jak je znázorněno v následujícím příkladu.  
+5. Přidejte atribut ProvideMenuResource do třídy balíčku, jak je znázorněno v následujícím příkladu.  
   
     ```csharp  
     [ProvideMenuResource("Menus.ctmenu", 1)]  

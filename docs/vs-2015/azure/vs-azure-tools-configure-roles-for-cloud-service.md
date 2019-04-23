@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: 8cbf01d79011f2917236f3577cf25986e4bc5b76
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: c14de7498cf893169295c08947d6687a2121bd6e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56954305"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059441"
 ---
 # <a name="configure-azure-cloud-service-roles-with-visual-studio"></a>Konfigurace rolí cloudové služby Azure v sadě Visual Studio
 Cloudové služby Azure může mít jednu nebo více pracovních procesů nebo webové role. Pro každou roli budete muset definovat, jak nastavit tuto roli a také nakonfigurovat tak, jak tuto roli běží. Další informace o rolích v cloudových službách, podívejte se na video [Úvod do služby Azure Cloud Services](https://channel9.msdn.com/Series/Windows-Azure-Cloud-Services-Tutorials/Introduction-to-Windows-Azure-Cloud-Services).
@@ -259,7 +259,7 @@ Následující kód ukazuje příklad toho, jak zápis do textového souboru do 
 
 Chcete-li zobrazit soubor vytvořený kódem v předchozí části, postupujte podle těchto kroků:
 
-1.  V oznamovací oblasti Windows, klikněte pravým tlačítkem na ikonu Azure a, v místní nabídce vyberte **zobrazit Uživatelském prostředí emulátoru výpočtů**.
+1. V oznamovací oblasti Windows, klikněte pravým tlačítkem na ikonu Azure a, v místní nabídce vyberte **zobrazit Uživatelském prostředí emulátoru výpočtů**.
 
     ![Zobrazit emulátoru služby výpočty v Azure](./media/vs-azure-tools-configure-roles-for-cloud-service/show-compute-emulator.png)
 

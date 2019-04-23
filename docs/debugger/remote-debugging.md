@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2142b73dc44b16e8e7ac149b7377959ae3c5cfcc
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: 8161623b35dd626e59cdb0ed387ece6a104429a1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526435"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047579"
 ---
 # <a name="remote-debugging"></a>Vzdálené ladění
 Můžete ladit aplikace Visual Studio, který byl nasazen na jiný počítač. K tomu použijete vzdálený ladicí program sady Visual Studio.
@@ -88,21 +88,21 @@ Můžete najít vzdáleného ladicího programu (*msvsmon.exe*) na počítači s
 ### <a name="configure_msvsmon"></a> Konfigurace vzdáleného ladicího programu
 Některé aspekty konfigurace vzdáleného ladicího programu můžete změnit po prvním spuštění po spuštění.
 
--   Pokud je potřeba přidat oprávnění pro ostatní uživatele, který chcete připojit ke vzdálenému ladicímu programu, zvolte **nástroje > oprávnění**. K udělení nebo odebrání oprávnění je potřeba mít oprávnění správce.
+- Pokud je potřeba přidat oprávnění pro ostatní uživatele, který chcete připojit ke vzdálenému ladicímu programu, zvolte **nástroje > oprávnění**. K udělení nebo odebrání oprávnění je potřeba mít oprávnění správce.
 
      > [!IMPORTANT]
      > Můžete spustit vzdálený ladicí program uživatelského účtu, který se liší od uživatelského účtu, který používáte na počítači aplikace Visual Studio, ale musíte přidat jiný uživatelský účet oprávnění vzdáleného ladicího programu.
 
      Alternativně můžete spustit vzdálený ladicí program z příkazového řádku pomocí **/ allow \<uživatelské jméno >** parametr: **msvsmon / allow \< username@computer>**.
 
--   Pokud je potřeba změnit režim ověřování nebo číslo portu nebo zadat hodnotu časového limitu pro nástroje remote tools: Zvolte **nástroje > Možnosti**.
+- Pokud je potřeba změnit režim ověřování nebo číslo portu nebo zadat hodnotu časového limitu pro nástroje remote tools: Zvolte **nástroje > Možnosti**.
 
      Seznam čísel portů používaných ve výchozím nastavení, najdete v části [přiřazení portů vzdáleného ladicího programu](../debugger/remote-debugger-port-assignments.md).
 
      > [!WARNING]
      >  Můžete také spustit nástroje Remote Tools v režimu bez ověřování, ale tento režim se rozhodně nedoporučuje. Při spuštění v tomto režimu není žádné zabezpečení sítě. Zvolte režim bez ověřování jenom v případě, že jste si jisti, že síť není ohroženy škodlivými nebo nevyžádanými daty.
 
-##  <a name="bkmk_configureService"></a> (Volitelné) Konfigurovat vzdálený ladicí program jako službu
+## <a name="bkmk_configureService"></a> (Volitelné) Konfigurovat vzdálený ladicí program jako službu
 Pro ladění v technologii ASP.NET a jiné prostředí serveru, musíte buď spustit vzdálený ladicí program jako správce nebo, je vždy spuštěn, chcete-li spustit vzdálený ladicí program jako službu.
 
  Pokud chcete nakonfigurovat vzdálený ladicí program jako službu, postupujte podle těchto kroků.

@@ -11,23 +11,23 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6fb532c122bec0ff56c00a261ca464daba0a464f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: bdb818735a19be8dc6e8a96f677072d00aae6a46
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54784397"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055597"
 ---
 # <a name="text-template-control-blocks"></a>Řídicí bloky textových šablon
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Řídicí bloky umožňují napsat kód v textové šabloně, aby bylo možné odlišit výstup. Existují tři druhy řídicí bloky, které se rozlišují výhradně podle jejich otvírací závorky:  
   
--   `<# Standard control blocks #>` mohou obsahovat příkazy.  
+- `<# Standard control blocks #>` mohou obsahovat příkazy.  
   
--   `<#= Expression control blocks #>` může obsahovat výrazy.  
+- `<#= Expression control blocks #>` může obsahovat výrazy.  
   
--   `<#+ Class feature control blocks #>` může obsahovat metody, pole a vlastnosti.  
+- `<#+ Class feature control blocks #>` může obsahovat metody, pole a vlastnosti.  
   
 ## <a name="standard-control-block"></a>Standardní řídicí blok  
  Standardní řídicí bloky obsahují příkazy. Například následující standardní blok načte názvy všech atributů v dokumentu XML:  
@@ -150,17 +150,17 @@ Some text.
   
  Je třeba mít na paměti následující aspekty při použití řídicí bloky:  
   
--   **Jazyk.** Můžete buď C# nebo Visual Basic kód v textové šabloně. Výchozí jazyk je C#, ale můžete zadat pomocí jazyka Visual Basic `language` parametr `template` směrnice. (Další informace o `template` direktiv, viz [direktivy textové šablony T4](../modeling/t4-text-template-directives.md).)  
+- **Jazyk.** Můžete buď C# nebo Visual Basic kód v textové šabloně. Výchozí jazyk je C#, ale můžete zadat pomocí jazyka Visual Basic `language` parametr `template` směrnice. (Další informace o `template` direktiv, viz [direktivy textové šablony T4](../modeling/t4-text-template-directives.md).)  
   
      Jazyk, který použijete v řídicích blocích nemá nic společného jazyka nebo formátování textu, který vygenerujete v textové šabloně. Můžete vygenerovat C# s použitím jazyka Visual Basic kódu nebo naopak versa.  
   
      Můžete použít pouze jeden jazyk v dané textové šablony, včetně všech textových šablon, můžete zahrnout `include` směrnice.  
   
--   **Lokální proměnné.** Vzhledem k tomu, že veškerý kód v ovládacím prvku standard a výraz bloky v textové šablony je generován jako jedinou metodu, měli byste si jisti, že pocházejí nedojde ke konfliktům s názvy místních proměnných. Pokud jsou včetně jiných textových šablon, musí se ujistěte, že názvy proměnných jsou jedinečné ve všech součástí šablony. Jeden způsob, jak zajistit tím je přidání řetězec pro každý název místní proměnné identifikace textové šablony, ve kterém byl deklarován.  
+- **Lokální proměnné.** Vzhledem k tomu, že veškerý kód v ovládacím prvku standard a výraz bloky v textové šablony je generován jako jedinou metodu, měli byste si jisti, že pocházejí nedojde ke konfliktům s názvy místních proměnných. Pokud jsou včetně jiných textových šablon, musí se ujistěte, že názvy proměnných jsou jedinečné ve všech součástí šablony. Jeden způsob, jak zajistit tím je přidání řetězec pro každý název místní proměnné identifikace textové šablony, ve kterém byl deklarován.  
   
      Je také vhodné k inicializaci vaší lokální proměnné na hodnoty rozumné při deklaraci, zejména pokud jsou včetně více textových šablon.  
   
--   **Vnořené řídicí bloky.** Řídicí bloky nemusí být vnořena v sobě navzájem. Blok zadaný ovládací prvek musí ukončit vždy před otevřením jiný. Například následující ukazuje, jak vytisknout nějaký text v bloku výrazu jako součást standardní řídicí blok.  
+- **Vnořené řídicí bloky.** Řídicí bloky nemusí být vnořena v sobě navzájem. Blok zadaný ovládací prvek musí ukončit vždy před otevřením jiný. Například následující ukazuje, jak vytisknout nějaký text v bloku výrazu jako součást standardní řídicí blok.  
   
     ```  
     <#   
@@ -172,4 +172,4 @@ Some text.
     <# } #>  
     ```  
   
--   **Refaktoring.** Aby bylo možné zachovat textové šablony krátký a pochopitelnější, důrazně doporučujeme zabránit opakování kódu, které budou zohledňovat opakovaně použitelný kód do pomocné funkce v bloky s funkcí třídy nebo tak, že vytvoříte vlastní textové šablony třídy, která dědí ze třídy Microsoft.VisualStudio.TextTemplating.TextTransformation.
+- **Refaktoring.** Aby bylo možné zachovat textové šablony krátký a pochopitelnější, důrazně doporučujeme zabránit opakování kódu, které budou zohledňovat opakovaně použitelný kód do pomocné funkce v bloky s funkcí třídy nebo tak, že vytvoříte vlastní textové šablony třídy, která dědí ze třídy Microsoft.VisualStudio.TextTemplating.TextTransformation.

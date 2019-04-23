@@ -12,21 +12,21 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 29590b96a8d8d2ad8fbddaf0d97b9ed55e6aadf2
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: e89b677113a04f286be3201a6b76d78fd5d191c2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54763595"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044015"
 ---
 # <a name="adding-references-using-nuget-versus-an-extension-sdk"></a>Přidání odkazů pomocí nástroje NuGet a sady Extension SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Balíček pro použití v rámci projektů sady Visual Studio můžete zadat prostřednictvím rozšíření NuGet sady Visual Studio, nebo (SDK) software development kit. Zadáním popisu vašeho nového podobnosti a rozdíly mezi dva mechanismy, v tomto tématu vám můžou pomoct vybrat ten nejlepší pro vaše úlohy.  
   
--   NuGet je open source systém správy balíčků, který slouží ke zjednodušení procesu začlenění knihoven do řešení projekt. Další informace najdete v tématu [NuGet přehled](http://go.microsoft.com/fwlink/?LinkId=254877).  
+- NuGet je open source systém správy balíčků, který slouží ke zjednodušení procesu začlenění knihoven do řešení projekt. Další informace najdete v tématu [NuGet přehled](http://go.microsoft.com/fwlink/?LinkId=254877).  
   
--   Sada SDK je kolekce souborů, které Visual Studio považuje za položku jeden odkaz. **Správce odkazů** dialogové okno obsahuje všechny sady SDK, které se vztahují k projektu, která je otevřená, při zobrazení tohoto pole dialogového okna. Při přidání sady SDK do projektu, můžete celý obsah této sady SDK přistupovat prostřednictvím technologie IntelliSense, **nástrojů**, návrháři, **prohlížeče objektů**, MSBuild, nasazení, ladění a balení. Další informace o sadách SDK najdete v tématu [vytváření Software Development Kit](../extensibility/creating-a-software-development-kit.md).  
+- Sada SDK je kolekce souborů, které Visual Studio považuje za položku jeden odkaz. **Správce odkazů** dialogové okno obsahuje všechny sady SDK, které se vztahují k projektu, která je otevřená, při zobrazení tohoto pole dialogového okna. Při přidání sady SDK do projektu, můžete celý obsah této sady SDK přistupovat prostřednictvím technologie IntelliSense, **nástrojů**, návrháři, **prohlížeče objektů**, MSBuild, nasazení, ladění a balení. Další informace o sadách SDK najdete v tématu [vytváření Software Development Kit](../extensibility/creating-a-software-development-kit.md).  
   
 ## <a name="which-mechanism-should-i-use"></a>Které mechanismus mám použít?  
  Následující tabulka vám pomůže porovnat odkazující funkcí sady SDK odkazující funkcí NuGet.  

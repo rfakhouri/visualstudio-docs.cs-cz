@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 260fbaa15f7880e604985fca50e8d99ac0e0fd39
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: ef9439d9cebfa8b80b214e52d077ab1f770d4750
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56683100"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047317"
 ---
 # <a name="extend-the-solution-explorer-filter"></a>Rozšíření filtru Průzkumníka řešení
 Můžete rozšířit **Průzkumníka řešení** filtrování funkce, které umožňuje zobrazit nebo skrýt různé soubory. Například můžete vytvořit filtr zobrazující jenom soubory jazyka C# třída továrny v **Průzkumníka řešení**, jak Tento názorný postup ukazuje.
@@ -26,13 +26,13 @@ Můžete rozšířit **Průzkumníka řešení** filtrování funkce, které umo
 
 ### <a name="create-a-visual-studio-package-project"></a>Vytvořte projekt balíčku Visual Studio
 
-1.  Vytvořte projekt VSIX s názvem `FileFilter`. Přidat vlastní příkaz šablonu položky s názvem **FileFilter**. Další informace najdete v tématu [vytváření rozšíření pomocí příkazu nabídky](../extensibility/creating-an-extension-with-a-menu-command.md).
+1. Vytvořte projekt VSIX s názvem `FileFilter`. Přidat vlastní příkaz šablonu položky s názvem **FileFilter**. Další informace najdete v tématu [vytváření rozšíření pomocí příkazu nabídky](../extensibility/creating-an-extension-with-a-menu-command.md).
 
-2.  Přidejte odkaz na `System.ComponentModel.Composition` a `Microsoft.VisualStudio.Utilities`.
+2. Přidejte odkaz na `System.ComponentModel.Composition` a `Microsoft.VisualStudio.Utilities`.
 
-3.  Vytvořit příkaz nabídky zobrazí na **Průzkumníka řešení** nástrojů. Otevřít *FileFilterPackage.vsct* souboru.
+3. Vytvořit příkaz nabídky zobrazí na **Průzkumníka řešení** nástrojů. Otevřít *FileFilterPackage.vsct* souboru.
 
-4.  Změnit `<Button>` bloku pro následující:
+4. Změnit `<Button>` bloku pro následující:
 
     ```xml
     <Button guid="guidFileFilterPackageCmdSet" id="FileFilterId" priority="0x0400" type="Button">
@@ -46,28 +46,28 @@ Můžete rozšířit **Průzkumníka řešení** filtrování funkce, které umo
 
 ### <a name="update-the-manifest-file"></a>Aktualizujte soubor manifestu
 
-1.  V *source.extension.vsixmanifest* přidejte asset, který je součástí MEF.
+1. V *source.extension.vsixmanifest* přidejte asset, který je součástí MEF.
 
-2.  Na **prostředky** , vyberte **nový** tlačítko.
+2. Na **prostředky** , vyberte **nový** tlačítko.
 
-3.  V **typ** zvolte **Microsoft.VisualStudio.MefComponent**.
+3. V **typ** zvolte **Microsoft.VisualStudio.MefComponent**.
 
-4.  V **zdroj** zvolte **projekt v aktuálním řešení**.
+4. V **zdroj** zvolte **projekt v aktuálním řešení**.
 
-5.  V **projektu** zvolte **FileFilter**a klikněte na tlačítko **OK** tlačítko.
+5. V **projektu** zvolte **FileFilter**a klikněte na tlačítko **OK** tlačítko.
 
 ### <a name="add-the-filter-code"></a>Přidejte kód filtru
 
-1.  Některé identifikátory GUID pro přidání *FileFilterPackageGuids.cs* souboru:
+1. Některé identifikátory GUID pro přidání *FileFilterPackageGuids.cs* souboru:
 
     ```csharp
     public const string guidFileFilterPackageCmdSetString = "00000000-0000-0000-0000-00000000"; // get your GUID from the .vsct file
     public const int FileFilterId = 0x100;
     ```
 
-2.  Přidejte soubor třídy do projektu FileFilter s názvem *FileNameFilter.cs*.
+2. Přidejte soubor třídy do projektu FileFilter s názvem *FileNameFilter.cs*.
 
-3.  Prázdný obor názvů a prázdné třídy nahraďte následujícím kódem.
+3. Prázdný obor názvů a prázdné třídy nahraďte následujícím kódem.
 
      `Task<IReadOnlyObservableSet> GetIncludedItemsAsync(IEnumerable<IVsHierarchyItem rootItems)` Metoda přijímá kolekce, která obsahuje kořenovou složku řešení (`rootItems`) a vrátí kolekci položek, které chcete zahrnout do filtru.
 
@@ -158,7 +158,7 @@ Můžete rozšířit **Průzkumníka řešení** filtrování funkce, které umo
 
     ```
 
-4.  V *FileFilter.cs*, odeberte umístění příkazu a kód z konstruktoru FileFilter pro zpracování. Výsledek by měl vypadat nějak takto:
+4. V *FileFilter.cs*, odeberte umístění příkazu a kód z konstruktoru FileFilter pro zpracování. Výsledek by měl vypadat nějak takto:
 
     ```csharp
     private FileFilter(Package package)
@@ -174,7 +174,7 @@ Můžete rozšířit **Průzkumníka řešení** filtrování funkce, které umo
 
      Odeberte `ShowMessageBox()` také metody.
 
-5.  V *FileFilterPackage.cs*, nahraďte kód v `Initialize()` metoda následujícím kódem:
+5. V *FileFilterPackage.cs*, nahraďte kód v `Initialize()` metoda následujícím kódem:
 
     ```csharp
     protected override void Initialize()
@@ -186,10 +186,10 @@ Můžete rozšířit **Průzkumníka řešení** filtrování funkce, které umo
 
 ### <a name="test-your-code"></a>Testování kódu
 
-1.  Sestavte a spusťte projekt. Zobrazí se druhé instanci aplikace Visual Studio. Tomu se říká experimentální instanci aplikace.
+1. Sestavte a spusťte projekt. Zobrazí se druhé instanci aplikace Visual Studio. Tomu se říká experimentální instanci aplikace.
 
-2.  V experimentální instanci sady Visual Studio otevřete projekt C#.
+2. V experimentální instanci sady Visual Studio otevřete projekt C#.
 
-3.  Najděte tlačítko jste přidali na **Průzkumníka řešení** nástrojů. Měla by být čtvrté tlačítko z levé strany.
+3. Najděte tlačítko jste přidali na **Průzkumníka řešení** nástrojů. Měla by být čtvrté tlačítko z levé strany.
 
-4.  Když kliknete na tlačítko, by měl být odfiltrovány všechny soubory a byste měli vidět **všechny položky byly filtrovány ze zobrazení.** v **Průzkumníka řešení**.
+4. Když kliknete na tlačítko, by měl být odfiltrovány všechny soubory a byste měli vidět **všechny položky byly filtrovány ze zobrazení.** v **Průzkumníka řešení**.

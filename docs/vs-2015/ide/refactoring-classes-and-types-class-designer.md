@@ -20,12 +20,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e6a150d32fa4eb5bc162f9ce8522ddfed634253b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1fae6a503323d42d4f759a30b4db790a88079815
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54782123"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048395"
 ---
 # <a name="refactoring-classes-and-types-class-designer"></a>Refaktoring tříd a typů (návrhář tříd)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,52 +39,52 @@ Když refaktorujete kód, můžete bylo snazší porozumět, udržovat a efektiv
   
 |Úloha|Podpůrný obsah|  
 |----------|------------------------|  
-|**Refaktoring tříd:** Operace refaktoringu můžete použít k rozdělení třídy na částečné třídy nebo k implementaci abstraktní základní třídu.|-   [Jak: Rozdělení třídy na částečné třídy (návrhář tříd)](../ide/how-to-split-a-class-into-partial-classes-class-designer.md)|  
-|**Práce s rozhraní:** V Návrháři tříd můžete implementovat rozhraní v diagramu tříd díky připojení k třídu, která poskytuje kód pro metody rozhraní.|-   [Jak: Implementace rozhraní (návrhář tříd)](../ide/how-to-implement-an-interface-class-designer.md)|  
-|**Refaktoring parametry, typy a členy typu:** Pomocí návrháře tříd můžete přejmenovat typy, přepsat členy typu nebo je přesunout z jednoho typu na jiný. Můžete také vytvořit typy připouštějící hodnotu Null.|-   [Přejmenování typů a členů typu](../ide/refactoring-classes-and-types-class-designer.md#RenamingTypesAndMembers)<br />-   [Přesunutí členy typu z jednoho typu na jiný](../ide/refactoring-classes-and-types-class-designer.md#MovingTypeMembers)<br />-   [Jak: Vytvoření typu s možnou hodnotou Null (návrhář tříd)](../ide/how-to-create-a-nullable-type-class-designer.md)|  
+|**Refaktoring tříd:** Operace refaktoringu můžete použít k rozdělení třídy na částečné třídy nebo k implementaci abstraktní základní třídu.|-   [Jak: Rozdělení třídy na částečné třídy (Návrhář tříd)](../ide/how-to-split-a-class-into-partial-classes-class-designer.md)|  
+|**Práce s rozhraní:** V Návrháři tříd můžete implementovat rozhraní v diagramu tříd díky připojení k třídu, která poskytuje kód pro metody rozhraní.|-   [Jak: Implementace rozhraní (Návrhář tříd)](../ide/how-to-implement-an-interface-class-designer.md)|  
+|**Refaktoring parametry, typy a členy typu:** Pomocí návrháře tříd můžete přejmenovat typy, přepsat členy typu nebo je přesunout z jednoho typu na jiný. Můžete také vytvořit typy připouštějící hodnotu Null.|-   [Přejmenování typů a členů typu](../ide/refactoring-classes-and-types-class-designer.md#RenamingTypesAndMembers)<br />-   [Přesunutí členy typu z jednoho typu na jiný](../ide/refactoring-classes-and-types-class-designer.md#MovingTypeMembers)<br />-   [Jak: Vytváření typů s povolenou hodnotou Null (Návrhář tříd)](../ide/how-to-create-a-nullable-type-class-designer.md)|  
   
-###  <a name="RenamingTypesAndMembers"></a> Přejmenování typů a členů typu  
+### <a name="RenamingTypesAndMembers"></a> Přejmenování typů a členů typu  
  V Návrháři tříd můžete přejmenovat typ nebo člen typu v diagramu tříd nebo v okně Vlastnosti. V okně podrobností třídy můžete změnit název člena, ale není typu. Přejmenování typ nebo člen typu rozšíří pro všechna okna a kódem umístění, kde se nacházela původní název.  
   
 ##### <a name="to-rename-a-name-in-the-class-designer"></a>Chcete-li přejmenovat na název v Návrháři tříd  
   
-1.  V diagramu tříd vyberte typ nebo člen a klikněte na název.  
+1. V diagramu tříd vyberte typ nebo člen a klikněte na název.  
   
      Název členu bude možné editovat.  
   
-2.  Zadejte nový název pro tento typ nebo člen typu  
+2. Zadejte nový název pro tento typ nebo člen typu  
   
 ##### <a name="to-rename-a-name-in-the-class-details-window"></a>Chcete-li přejmenovat na název v okně podrobností třídy  
   
-1.  Pokud chcete zobrazit v okně podrobností třídy, klikněte pravým tlačítkem na typ nebo člen typu a potom klikněte na **podrobností třídy**.  
+1. Pokud chcete zobrazit v okně podrobností třídy, klikněte pravým tlačítkem na typ nebo člen typu a potom klikněte na **podrobností třídy**.  
   
      Zobrazí se okno podrobností třídy.  
   
-2.  V **název** sloupce, změňte název členu typu  
+2. V **název** sloupce, změňte název členu typu  
   
-3.  Chcete-li přesunout fokus z buňky, stiskněte **ENTER** klíče nebo klikněte na tlačítko mimo buňku.  
+3. Chcete-li přesunout fokus z buňky, stiskněte **ENTER** klíče nebo klikněte na tlačítko mimo buňku.  
   
     > [!NOTE]
     >  V okně podrobností třídy můžete změnit název člena, ale není typu.  
   
 ##### <a name="to-rename-a-name-in-the-properties-window"></a>Chcete-li přejmenovat na název v okně Vlastnosti  
   
-1.  V diagramu tříd nebo okně podrobností třídy klikněte pravým tlačítkem na tento typ nebo člen a pak klikněte na tlačítko **vlastnosti**.  
+1. V diagramu tříd nebo okně podrobností třídy klikněte pravým tlačítkem na tento typ nebo člen a pak klikněte na tlačítko **vlastnosti**.  
   
      V okně Vlastnosti se zobrazí vlastnosti pro tento typ nebo člen typu.  
   
-2.  V **název** vlastnosti, změňte název typu nebo typ člena.  
+2. V **název** vlastnosti, změňte název typu nebo typ člena.  
   
      Nový název šíří pro všechna okna a umístění kódu v aktuálním projektu, kde se nacházela původní název.  
   
-###  <a name="MovingTypeMembers"></a> Přesunutí členy typu z jednoho typu na jiný  
+### <a name="MovingTypeMembers"></a> Přesunutí členy typu z jednoho typu na jiný  
  Pomocí **návrhář tříd**, můžete přesunout člena typu z jednoho typu na jiný typ, pokud obě jsou viditelné v aktuálním diagramu tříd.  
   
 ##### <a name="to-move-a-type-member-from-one-type-to-another"></a>Přesunutí člena typu z jednoho typu na jiný  
   
-1.  V typu, který je viditelný na návrhové ploše, klikněte pravým tlačítkem na člena, kterou chcete přesunout na jiný typ a potom klikněte na **Vyjmout**.  
+1. V typu, který je viditelný na návrhové ploše, klikněte pravým tlačítkem na člena, kterou chcete přesunout na jiný typ a potom klikněte na **Vyjmout**.  
   
-2.  Klikněte pravým tlačítkem na typ cíle a potom klikněte na tlačítko **vložit**.  
+2. Klikněte pravým tlačítkem na typ cíle a potom klikněte na tlačítko **vložit**.  
   
      Vlastnost se odebere z typ zdroje a zobrazí se v cílovém typu.  
   

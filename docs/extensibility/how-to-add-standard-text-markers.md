@@ -10,19 +10,19 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 44ad7dd9ef83f9de3cfe406dc4fda2cd00837464
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 021e5f39f3296a475795b991283e60aa518b98dc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56720637"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060082"
 ---
 # <a name="how-to-add-standard-text-markers"></a>Postupy: Přidání standardní text značky
 Pomocí následujícího postupu vytvořte jeden výchozí typ značky text, opatřeného [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] základní editor.
 
 ## <a name="to-create-a-text-marker"></a>Chcete-li vytvořit text značky
 
-1.  V závislosti na tom, zda používáte jeden nebo two trojrozměrným systém souřadnic, zavolejte <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines.CreateLineMarker%2A> metoda nebo <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStream.CreateStreamMarker%2A> metodu pro vytvoření nové značky text.
+1. V závislosti na tom, zda používáte jeden nebo two trojrozměrným systém souřadnic, zavolejte <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines.CreateLineMarker%2A> metoda nebo <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStream.CreateStreamMarker%2A> metodu pro vytvoření nové značky text.
 
      Při volání této metody určete typ značky, rozsah textu pro vytvoření značky nad a <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> rozhraní. Tato metoda pak vrací ukazatel na nově vytvořený text značky. Typy značek pocházejí ze <xref:Microsoft.VisualStudio.TextManager.Interop.MARKERTYPE> výčtu. Zadejte <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> rozhraní, pokud chcete být informováni o událostech.
 
@@ -34,15 +34,15 @@ Pomocí následujícího postupu vytvořte jeden výchozí typ značky text, opa
 
 ### <a name="to-add-a-custom-command-to-the-context-menu"></a>Chcete-li přidat vlastní příkaz do kontextové nabídky
 
-1.  Před zobrazením v místní nabídce prostředí volá <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient.GetMarkerCommandInfo%2A> – metoda a předá je ukazatel na text značky vliv a počet položky příkazu v místní nabídce.
+1. Před zobrazením v místní nabídce prostředí volá <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient.GetMarkerCommandInfo%2A> – metoda a předá je ukazatel na text značky vliv a počet položky příkazu v místní nabídce.
 
      Například obsahovat příkazů specifických pro zarážku v místní nabídce **odebrat zarážku** prostřednictvím **Nová zarážka**, jako je zobrazena na následujícím snímku obrazovky.
 
      ![Místní nabídka značky](../extensibility/media/vsmarkercontextmenu.gif "vsMarkercontextmenu")
 
-2.  Předávání zpátky nějaký text rozlišujícího názvu vlastní příkaz. Například **odebrat zarážku** může být vlastní příkaz, pokud prostředí už neposkytl ho. Můžete také předat zpět Určuje, zda je příkazu podporované, zpřístupnění a povolení a přepínání zapnutí nebo vypnutí. Prostředí používá tyto informace k zobrazení vlastního příkazu v místní nabídce správným způsobem.
+2. Předávání zpátky nějaký text rozlišujícího názvu vlastní příkaz. Například **odebrat zarážku** může být vlastní příkaz, pokud prostředí už neposkytl ho. Můžete také předat zpět Určuje, zda je příkazu podporované, zpřístupnění a povolení a přepínání zapnutí nebo vypnutí. Prostředí používá tyto informace k zobrazení vlastního příkazu v místní nabídce správným způsobem.
 
-3.  Ke spuštění příkazu prostředí volání <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient.ExecMarkerCommand%2A> metoda předání ukazatele text značky a počet vybraný v místní nabídce příkaz.
+3. Ke spuštění příkazu prostředí volání <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient.ExecMarkerCommand%2A> metoda předání ukazatele text značky a počet vybraný v místní nabídce příkaz.
 
      Tyto informace z tohoto volání použijte k provedení libovolné akce text značky určuje vlastní příkaz.
 

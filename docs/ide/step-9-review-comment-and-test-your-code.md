@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9cddb92e57a501fb8ea5eeda9b2c6ec60b95c45c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 2ff907289233bf0a7bea8321df35c8f755f16fe5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55934312"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049747"
 ---
 # <a name="step-9-review-comment-and-test-your-code"></a>Krok 9: Zkontrolujte, komentáře a testování kódu
 Dále přidáte komentář do vašeho kódu. Komentář je Všimněte si, že nedojde ke změně způsobu, jakým se chová program. To usnadňuje pro čtenáře kódu pochopit jeho význam. Přidání komentářů do kódu je dobré se naučit do. V jazyce Visual C# dvě lomítka (/ /) značí řádek jako komentáře. V jazyce Visual Basic jednoduché uvozovky (') slouží k označení řádku jako komentáře. Po přidání komentáře otestujete váš program. Je vhodné spustit a otestovat kód často při práci na svých projektech, takže můžete zachytit a opravit případné problémy dříve, než kód složitější. Tento postup se nazývá *iterativnější testování*.
@@ -46,7 +46,7 @@ Dále přidáte komentář do vašeho kódu. Komentář je Všimněte si, že ne
 
 ## <a name="to-add-comments"></a>Chcete-li přidat komentáře
 
-1.  Přidejte následující komentář do kódu.
+1. Přidejte následující komentář do kódu.
 
      [!code-vb[VbExpressTutorial1Step9_10#1](../ide/codesnippet/VisualBasic/step-9-review-comment-and-test-your-code_1.vb)]
      [!code-csharp[VbExpressTutorial1Step9_10#1](../ide/codesnippet/CSharp/step-9-review-comment-and-test-your-code_1.cs)]
@@ -61,7 +61,7 @@ Dále přidáte komentář do vašeho kódu. Komentář je Všimněte si, že ne
     >
     >  K aktivování výstřižku při zadávání kódu, zadejte ho a zvolte **kartu** klíč. Mnoho fragmentů se nachází v **IntelliSense** okna, což je důvod, proč zvolit **kartu** klíč dvakrát: nejprve k vybrání fragmentu z **IntelliSense** okna a poté ke sdělení rozhraní IDE má fragment použít. (Technologie IntelliSense podporuje `if` fragment kódu, ale ne `ifelse` fragment kódu.)
 
-2.  Než svůj program spustíte, uložte program výběrem **Uložit vše** tlačítka panelu nástrojů, které se zobrazí takto.
+2. Než svůj program spustíte, uložte program výběrem **Uložit vše** tlačítka panelu nástrojů, které se zobrazí takto.
 
      ![Uložit všechny tlačítka panelu nástrojů](../ide/media/express_iconsaveall.png)
 **Uložit vše** tlačítko
@@ -75,19 +75,19 @@ Dále přidáte komentář do vašeho kódu. Komentář je Všimněte si, že ne
 
 ## <a name="to-test-your-program"></a>Testovat váš program
 
-1.  Zvolte **F5** key, nebo ho vyberte **spustit ladění** tlačítka panelu nástrojů.
+1. Zvolte **F5** key, nebo ho vyberte **spustit ladění** tlačítka panelu nástrojů.
 
-2.  Zvolte **zobrazit obrázek** tlačítko spustit kód, který jste napsali. Nejprve program otevře **otevřít soubor** dialogové okno. Ověřte, že vaše filtry se zobrazí v **soubory typu** rozevírací seznam v dolní části dialogového okna. Potom přejděte na obrázek a otevřete jej. Obvykle lze najít vzorové obrázky dodávané s operačním systémem Windows ve vaší *dokumenty* složky, uvnitř *Moje Obrázky\Příklady obrázků* složky.
+2. Zvolte **zobrazit obrázek** tlačítko spustit kód, který jste napsali. Nejprve program otevře **otevřít soubor** dialogové okno. Ověřte, že vaše filtry se zobrazí v **soubory typu** rozevírací seznam v dolní části dialogového okna. Potom přejděte na obrázek a otevřete jej. Obvykle lze najít vzorové obrázky dodávané s operačním systémem Windows ve vaší *dokumenty* složky, uvnitř *Moje Obrázky\Příklady obrázků* složky.
 
     > [!NOTE]
     >  Pokud nevidíte žádné obrázky v **vyberte soubor s obrázkem** dialogové okno, ujistěte se, že **všechny soubory (*.\*)**  filtru je vybrali v rozevíracím seznamu v dolní pravé části dialogových oken.
 
-3.  Načíst obrázek a zobrazí se ve vašem ovládacím prvku PictureBox. Zkuste změnit velikost formuláře přetažením jeho okrajů. Protože máte váš ovládací prvek PictureBox ukotven uvnitř kontejneru TableLayoutPanel, který je sám ukotven uvnitř formuláře, oblast vašeho obrázku změní velikost sebe sama tak, aby je stejně široká jako formulář a vyplní horních 90 procent formuláře. To je důvod, proč jste použili <xref:System.Windows.Forms.TableLayoutPanel> a <xref:System.Windows.Forms.FlowLayoutPanel> kontejnerů: Udržují správnou velikost, když ji uživatel změní formuláře.
+3. Načíst obrázek a zobrazí se ve vašem ovládacím prvku PictureBox. Zkuste změnit velikost formuláře přetažením jeho okrajů. Protože máte váš ovládací prvek PictureBox ukotven uvnitř kontejneru TableLayoutPanel, který je sám ukotven uvnitř formuláře, oblast vašeho obrázku změní velikost sebe sama tak, aby je stejně široká jako formulář a vyplní horních 90 procent formuláře. To je důvod, proč jste použili <xref:System.Windows.Forms.TableLayoutPanel> a <xref:System.Windows.Forms.FlowLayoutPanel> kontejnerů: Udržují správnou velikost, když ji uživatel změní formuláře.
 
      Nyní větší obrázky překračují hranice prohlížeče obrázků. V dalším kroku přidáte kód, aby obrázky pasovaly do okna.
 
 ## <a name="to-continue-or-review"></a>Chcete-li pokračovat nebo přezkoumat
 
--   Přechod k dalšímu kroku výukového programu naleznete v tématu [krok 10: Napište kód pro přídavná tlačítka a zaškrtávací políčko](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md).
+- Přechod k dalšímu kroku výukového programu naleznete v tématu [krok 10: Napište kód pro přídavná tlačítka a zaškrtávací políčko](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md).
 
--   Chcete-li vrátit k předchozímu kroku tutoriálu, přečtěte si téma [krok 8: Napsat kód pro zobrazení obslužné rutiny události obrázku tlačítka](../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md).
+- Chcete-li vrátit k předchozímu kroku tutoriálu, přečtěte si téma [krok 8: Napsat kód pro zobrazení obslužné rutiny události obrázku tlačítka](../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md).

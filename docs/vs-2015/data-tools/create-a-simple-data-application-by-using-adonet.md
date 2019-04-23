@@ -14,12 +14,12 @@ caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 19c20241914001f7095e63e0cc25f91b2ab5c35e
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 234c289cd039485163aa201516c418bacaed590b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59664213"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047422"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>Vytvoření jednoduché datové aplikace pomocí ADO.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,17 +33,17 @@ Když vytvoříte aplikaci, která zpracovává data v databázi, provedete zák
   
  **V tomto tématu**  
   
--   [Nastavení ukázkové databáze](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_setupthesampledatabase)  
+- [Nastavení ukázkové databáze](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_setupthesampledatabase)  
   
--   [Vytvoření formulářů a přidání ovládacích prvků](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_createtheformsandaddcontrols)  
+- [Vytvoření formulářů a přidání ovládacích prvků](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_createtheformsandaddcontrols)  
   
--   [Store připojovací řetězec](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_storetheconnectionstring)  
+- [Store připojovací řetězec](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_storetheconnectionstring)  
   
--   [Načtení připojovacího řetězce](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_retrievetheconnectionstring)  
+- [Načtení připojovacího řetězce](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_retrievetheconnectionstring)  
   
--   [Napište kód pro formuláře](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_writethecodefortheforms)  
+- [Napište kód pro formuláře](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_writethecodefortheforms)  
   
--   [Testování aplikace](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_testyourapplication)  
+- [Testování aplikace](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_testyourapplication)  
   
 ## <a name="prerequisites"></a>Požadavky  
  Chcete-li vytvořit aplikaci, budete potřebovat:  
@@ -58,10 +58,10 @@ Když vytvoříte aplikaci, která zpracovává data v databázi, provedete zák
   
   Toto téma předpokládá, že ovládáte základní funkce integrovaného vývojového prostředí sady Visual Studio a můžete vytvořit aplikaci Windows Forms, přidat formuláře do projektu, Vložit tlačítka a další ovládací prvky na tyto formuláře, nastavit vlastnosti těchto ovládacích prvků a kódovat jednoduché události . Pokud si nejste seznámení s těmito úkoly, doporučujeme provést [Začínáme s Visual C# a Visual Basic](../ide/getting-started-with-visual-csharp-and-visual-basic.md) před započetím tohoto tématu.  
   
-##  <a name="BKMK_setupthesampledatabase"></a> Nastavení ukázkové databáze  
+## <a name="BKMK_setupthesampledatabase"></a> Nastavení ukázkové databáze  
  Vzorové databáze pro Tento názorný postup se skládá z tabulek Customer a Orders. Tabulky zpočátku neobsahují žádná data, ale přidáte data při spuštění aplikace, kterou vytvoříte. Databáze má také pět jednoduchých uložených procedur. [Vytvoření databáze SQL pomocí skriptu](../data-tools/create-a-sql-database-by-using-a-script.md) obsahuje skript Transact-SQL, který vytvoří tabulky, primární a cizí klíče, omezení a uložené procedury.  
   
-##  <a name="BKMK_createtheformsandaddcontrols"></a> Vytvoření formulářů a přidání ovládacích prvků  
+## <a name="BKMK_createtheformsandaddcontrols"></a> Vytvoření formulářů a přidání ovládacích prvků  
   
 1. Vytvoření projektu aplikace Windows Forms a pojmenujte ho SimpleDataApp.  
   
@@ -69,11 +69,11 @@ Když vytvoříte aplikaci, která zpracovává data v databázi, provedete zák
   
 2. Přidejte do projektu dva formuláře Windows, tak, aby měl tři formuláře a dejte jim následující názvy:  
   
-   -   Navigace  
+   - Navigace  
   
-   -   NewCustomer  
+   - NewCustomer  
   
-   -   FillOrCancel  
+   - FillOrCancel  
   
 3. U každého formuláře přidejte textová pole, tlačítka a další ovládací prvky, které se zobrazují na následujících obrázcích. Pro každý ovládací prvek nastavte vlastnosti, které jsou popsány v tabulce.  
   
@@ -119,33 +119,33 @@ Když vytvoříte aplikaci, která zpracovává data v databázi, provedete zák
 |Tlačítko|Název = btnFillOrder|  
 |Tlačítko|Název = btnFinishUpdates|  
   
-##  <a name="BKMK_storetheconnectionstring"></a> Store připojovací řetězec  
+## <a name="BKMK_storetheconnectionstring"></a> Store připojovací řetězec  
  Když vaše aplikace se pokusí otevřít připojení k databázi, musí mít vaše aplikace přístup k připojovací řetězec. Pokud chcete vyhnout ručním zadáním řetězce na každém formuláři, uložte řetězec v konfiguračním souboru aplikace ve vašem projektu a vytvořte metodu, která vrátí řetězec, když je volána metoda z libovolného formuláře v aplikaci.  
   
  Připojovací řetězec můžete najít **Průzkumník objektů systému SQL Server** tím pravým tlačítkem myši databázi, vyberte **vlastnosti**a vyhledáním vlastnost připojovací řetězec. Pomocí kombinace kláves Ctrl + A vyberte řetězec.  
   
-1.  V **Průzkumníka řešení**, vyberte **vlastnosti** uzlu projektu a pak vyberte **Settings.settings**.  
+1. V **Průzkumníka řešení**, vyberte **vlastnosti** uzlu projektu a pak vyberte **Settings.settings**.  
   
-2.  V **název** sloupce, zadejte `connString`.  
+2. V **název** sloupce, zadejte `connString`.  
   
-3.  V **typ** seznamu vyberte **(připojovací řetězec)**.  
+3. V **typ** seznamu vyberte **(připojovací řetězec)**.  
   
-4.  V **oboru** seznamu vyberte **aplikace**.  
+4. V **oboru** seznamu vyberte **aplikace**.  
   
-5.  V **hodnotu** sloupce, zadejte svůj připojovací řetězec (bez jakékoli mimo uvozovky) a pak uložte provedené změny.  
+5. V **hodnotu** sloupce, zadejte svůj připojovací řetězec (bez jakékoli mimo uvozovky) a pak uložte provedené změny.  
   
 > [!NOTE]
 >  V reálné aplikaci byste měli uložit připojovací řetězec bezpečně, jak je popsáno v [připojovací řetězce a konfigurační soubory](http://msdn.microsoft.com/library/37df2641-661e-407a-a3fb-7bf9540f01e8).  
   
-##  <a name="BKMK_retrievetheconnectionstring"></a> Načtení připojovacího řetězce  
+## <a name="BKMK_retrievetheconnectionstring"></a> Načtení připojovacího řetězce  
   
-1.  Na panelu nabídek vyberte **projektu** > **přidat odkaz**a pak přidejte odkaz na System.Configuration.dll.  
+1. Na panelu nabídek vyberte **projektu** > **přidat odkaz**a pak přidejte odkaz na System.Configuration.dll.  
   
-2.  Na panelu nabídek vyberte **projektu** > **přidat třídu** přidejte soubor třídy do projektu a potom zadejte název souboru `Utility`.  
+2. Na panelu nabídek vyberte **projektu** > **přidat třídu** přidejte soubor třídy do projektu a potom zadejte název souboru `Utility`.  
   
      Visual Studio vytvoří soubor a zobrazí ho v **Průzkumníka řešení**.  
   
-3.  V souboru s nástroji nahraďte kód zástupce následujícím kódem. Všimněte si číslovaných komentářů (s předponou Util.-), které identifikují oddíly kódu. Tabulka, která následuje kód, volá klíčové body.  
+3. V souboru s nástroji nahraďte kód zástupce následujícím kódem. Všimněte si číslovaných komentářů (s předponou Util.-), které identifikují oddíly kódu. Tabulka, která následuje kód, volá klíčové body.  
   
     ```csharp  
     using System;  
@@ -219,7 +219,7 @@ Když vytvoříte aplikaci, která zpracovává data v databázi, provedete zák
     |Util-2|Definujte proměnnou, `returnValue`a inicializujte ji na `null` (C#) nebo `Nothing` (Visual Basic).|  
     |Util-3|I když jste zadali `connString` jako název připojovacího řetězce v **vlastnosti** okna, je nutné zadat `"SimpleDataApp.Properties.Settings.connString"` (C#) nebo `"SimpleDataApp.My.MySettings.connString"` (Visual Basic) v kódu.|  
   
-##  <a name="BKMK_writethecodefortheforms"></a> Napište kód pro formuláře  
+## <a name="BKMK_writethecodefortheforms"></a> Napište kód pro formuláře  
  Tato část obsahuje stručný přehled, co každá forma provádí a zobrazuje kód, který vytváří formy. Očíslované poznámky určují oddíly kódu.  
   
 ### <a name="navigation-form"></a>Navigační formulář  
@@ -1139,5 +1139,5 @@ End Namespace
 |FC-8|Přidejte kód do obslužné rutiny události kliknutí pro `btnFillOrder`. Tento kód se spustí `Sales.uspFillOrder` uložené procedury.|  
 |FC-9|Vytvořit metodu pro ověření, že `OrderID` je připraveno odeslat jako parametr `SqlCommand` objektu.<br /><br /> – Ujistěte se, že bylo zadáno ID v `txtOrderID`.<br />– Použijte `Regex.IsMatch` k definování jednoduchého vyhledání znaků jiných než celých čísel.<br />-Je deklarován `parsedOrderID` proměnné na FC-2.<br />– Pokud je vstup platný, převede text na celé číslo a uložte hodnotu `parsedOrderID` proměnné.<br />-Zabalení `isOrderID` metoda kolem `btnFindByOrderID`, `btnCancelOrder`, a `btnFillOrder` obslužné rutiny události kliknutí.|  
   
-##  <a name="BKMK_testyourapplication"></a> Testování aplikace  
+## <a name="BKMK_testyourapplication"></a> Testování aplikace  
  Vyberte klávesu F5 k sestavení a testování vaší aplikace po kódu každé obslužné rutiny události kliknutí a potom můžete po dokončení kódování.

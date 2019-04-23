@@ -8,26 +8,26 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 45944afe3c5ebd1baa307f6063b021c09fd6bfa6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1be8af11dd9b03b8c63d34b60e6af3c3c8147b48
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970267"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059185"
 ---
 # <a name="how-to-create-a-basic-3d-model"></a>Postupy: Vytvoření základního 3D modelu
 
 Tento článek popisuje způsob použití Editoru modelů pro vytvoření základního 3D modelu. Zahrnuje následující činnosti:
 
--   Přidání objektů do scény
+- Přidání objektů do scény
 
--   Výběrem tváří a okraje
+- Výběrem tváří a okraje
 
--   Možnosti překladu
+- Možnosti překladu
 
--   Použití **rozdělit plochu** a **vyloučit plochu** nástroje
+- Použití **rozdělit plochu** a **vyloučit plochu** nástroje
 
--   Použití **Triangulovat** příkazu
+- Použití **Triangulovat** příkazu
 
 ## <a name="create-a-basic-3d-model"></a>Vytvoření základního 3D modelu
  Editor modelů můžete použít k vytvoření a úprava 3D modely a pozadí pro vaše hry nebo aplikace. Následující kroky ukazují, jak vytvořit jednoduchý model 3D domu pomocí Editoru modelů. Zjednodušený model může sloužit jako stand-in pro konečné prostředků, které jsou stále probíhá vytváření, jako síť pro detekci kolizí, nebo jako model s nízkou podrobností se použije, když je objekt, který představuje příliš daleko těžit z podrobnější vykreslování.

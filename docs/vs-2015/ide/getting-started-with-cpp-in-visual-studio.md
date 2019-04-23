@@ -9,12 +9,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 264fcea4b04b1777a455199789ed1bb9c3757f7c
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: ae373742c114129c99e7b3444393e12c6c4dd8dd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54758239"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60057820"
 ---
 # <a name="getting-started-with-c-in-visual-studio"></a>Začínáme s C++ v sadě Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ V tomto návodu se seznámíte s mnoha nástrojů a dialogových oknech, které 
 
  [Sestavení verze pro vydání aplikace](../ide/getting-started-with-cpp-in-visual-studio.md#BKMK_BuildRelease)
 
-##  <a name="BKMK_Configure"></a> Přihlaste se k sadě Visual Studio
+## <a name="BKMK_Configure"></a> Přihlaste se k sadě Visual Studio
  Při prvním spuštění aplikace Visual Studio, budete mít možnost se přihlásit pomocí účtu Microsoft, jako je Live nebo Outlook. Přihlašování umožňuje nastavení synchronizovat napříč všemi zařízeními. Další informace najdete v tématu [přihlášení k sadě Visual Studio](../ide/signing-in-to-visual-studio.md)
 
  Obrázek 1: Visual Studio – sada IDE
@@ -42,7 +42,7 @@ V tomto návodu se seznámíte s mnoha nástrojů a dialogových oknech, které 
 
  Po otevření sady Visual Studio se zobrazí tři základní části rozhraní IDE: nástroj oken, nabídek a panelů nástrojů a prostor hlavního okna. Okna nástrojů jsou ukotveny na levé a pravé straně okna aplikace s **Snadné spuštění**, nabídek a běžný panel nástrojů v horní části. Obsahuje střední části okna aplikace **úvodní stránka**. Při otevření řešení nebo projektu, na tomto místě zobrazí editory a návrháře. Při vývoji aplikace strávíte nejvíce času v této centrální oblasti.
 
-##  <a name="BKMK_CreateApp"></a> Vytvoření jednoduché aplikace
+## <a name="BKMK_CreateApp"></a> Vytvoření jednoduché aplikace
  Když vytvoříte aplikaci v sadě Visual Studio, nejprve vytvoříte projekt a řešení. V tomto příkladu vytvoříte konzolovou aplikaci Windows.
 
 #### <a name="to-create-a-console-app"></a>K vytvoření konzolové aplikace
@@ -65,12 +65,12 @@ V tomto návodu se seznámíte s mnoha nástrojů a dialogových oknech, které 
 
    ![Soubory řešení v Průzkumníku řešení](../ide/media/c-ide-solutioncontents.png "IDE_SolutionContents C ++")
 
-##  <a name="BKMK_AddCode"></a> Přidejte kód do aplikace
+## <a name="BKMK_AddCode"></a> Přidejte kód do aplikace
  V dalším kroku přidáte kód, zobrazují slovo "Hello" v okně konzoly.
 
 #### <a name="to-display-hello-in-the-console-window"></a>Chcete-li zobrazit "Hello" v okně konzoly
 
-1.  V souboru GreetingsConsoleApp.cpp zadejte prázdný řádek před řádkem `return 0;` a potom zadejte následující kód:
+1. V souboru GreetingsConsoleApp.cpp zadejte prázdný řádek před řádkem `return 0;` a potom zadejte následující kód:
 
     ```
     cout << "Hello\n";
@@ -84,7 +84,7 @@ V tomto návodu se seznámíte s mnoha nástrojů a dialogových oknech, které 
 
      [cout](http://msdn.microsoft.com/library/d87db6c3-e4e1-4d09-9ec5-458f55018257) je součástí \<iostream\> hlavičkový soubor.
 
-2.  Pokud chcete zahrnout do hlavičky iostream, zadejte následující kód za `#include "stdafx.h"`:
+2. Pokud chcete zahrnout do hlavičky iostream, zadejte následující kód za `#include "stdafx.h"`:
 
     ```
     #include \<iostream\>
@@ -95,16 +95,16 @@ V tomto návodu se seznámíte s mnoha nástrojů a dialogových oknech, které 
 
      Červená vlnovka čára pod `cout` po odstranění chyby zmizí.
 
-3.  Uložte změny do souboru.
+3. Uložte změny do souboru.
 
      ![Kód, který opraví chyby cout](../ide/media/c-ide-coutfix.png "IDE_CoutFix C ++")
 
-##  <a name="BKMK_DebugTest"></a> Ladění a testování aplikace
+## <a name="BKMK_DebugTest"></a> Ladění a testování aplikace
  Můžete ladit GreetingsConsoleApp chcete zobrazit, zda slovo "Hello" se zobrazí v okně konzoly.
 
 #### <a name="to-debug-the-application"></a>Chcete-li ladit aplikaci
 
--   Spuštění ladicího programu.
+- Spuštění ladicího programu.
 
      ![Spuštění ladění příkaz v nabídce ladění](../ide/media/exploreide-startdebugging.png "ExploreIDE StartDebugging")
 
@@ -128,7 +128,7 @@ V tomto návodu se seznámíte s mnoha nástrojů a dialogových oknech, které 
 
    Další informace najdete v tématu [projekty konzoly](../debugger/debugging-preparation-console-projects.md).
 
-##  <a name="BKMK_BuildRelease"></a> Sestavení verze pro vydání aplikace
+## <a name="BKMK_BuildRelease"></a> Sestavení verze pro vydání aplikace
  Nyní poté, co jste ověřili, že vše funguje, jak má, lze připravit sestavení pro vydání aplikace.
 
 #### <a name="to-clean-the-solution-files-and-build-a-release-version"></a>Vyčištění souborů řešení a sestavení verze pro vydání

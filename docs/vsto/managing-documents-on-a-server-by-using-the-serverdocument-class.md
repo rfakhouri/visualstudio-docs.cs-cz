@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 83f23bb04c9080b75d2a8e93252d981c0833d69d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 595c9127aad71cac6f446f356c309809b7172d94
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56630077"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045484"
 ---
 # <a name="manage-documents-on-a-server-by-using-the-serverdocument-class"></a>Správa dokumentů na serveru s použitím třídy ServerDocument
   Můžete použít `ServerDocument` třídy v [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] ke správě několik aspektů přizpůsobení na úrovni dokumentu i v případě, že není nainstalovaný Microsoft Office Word nebo Microsoft Office Excel. Můžete provádět následující úlohy:
@@ -40,7 +40,7 @@ ms.locfileid: "56630077"
 > [!NOTE]
 >  Pokud máte starší verzi aplikace, která používá `ServerDocument` třídy v `Visual Studio Tools for Office` system (verze 3.0 Runtime), `Visual Studio Tools for Office` systém (verze 3.0 runtime) musí být nainstalován na počítačích, na kterých běží aplikace. `Visual Studio 2010 Tools for Office runtime` Nelze spustit tyto aplikace.
 
-##  <a name="CachedData"></a> Práce s data uložená v mezipaměti v dokumentu
+## <a name="CachedData"></a> Práce s data uložená v mezipaměti v dokumentu
  `ServerDocument` Třída obsahuje členy, které slouží k práci s mezipamětí dat v upravené dokumenty. Další informace o data uložená v mezipaměti, naleznete v tématu [ukládat data do mezipaměti](../vsto/caching-data.md) a [přístup k datům v dokumentech na serveru](../vsto/accessing-data-in-documents-on-the-server.md).
 
  Následující tabulka uvádí členy, které můžete použít pro práci s data uložená v mezipaměti.
@@ -50,7 +50,7 @@ ms.locfileid: "56630077"
 |Chcete-li zjistit, jestli má dokument datové mezipaměti.|<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.IsCacheEnabled%2A> Metody.|
 |Pro přístup k data uložená v mezipaměti v dokumentu.<br /><br /> Další informace najdete v tématu [přístup k datům v dokumentech na serveru](../vsto/accessing-data-in-documents-on-the-server.md).|<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.CachedData%2A> Vlastnost.|
 
-##  <a name="CustomizationInfo"></a> Spravovat vlastní nastavení dokumentu
+## <a name="CustomizationInfo"></a> Spravovat vlastní nastavení dokumentu
  Členy můžete použít `ServerDocument` třídy ke správě vlastního nastavení sestavení, které je spojeno s dokumentem. Například můžete programově odebrat vlastní nastavení z dokumentu tak, aby dokument už nejsou součástí přizpůsobení.
 
  Následující tabulka uvádí členy, které můžete použít ke správě vlastního nastavení sestavení.

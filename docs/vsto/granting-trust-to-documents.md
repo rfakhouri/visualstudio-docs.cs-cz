@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 52ff98f15afb95bda4d69770b84764db21171425
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: be8a17496788b0f4fe8abc9859b46cbfa11a6ed7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599659"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053010"
 ---
 # <a name="grant-trust-to-documents"></a>Zajistit jeho důvěryhodnost do dokumentů
   Úrovni dokumentu projekt má stejné požadavky na zabezpečení jako projekty na úrovni aplikace: podepisování manifestů s certifikátem nebo kliknutím na výzvu vztahu důvěryhodnosti. Kromě toho dokumentem nebo sešitem, musí být umístěn v adresáři, který je určený jako důvěryhodného umístění.
@@ -35,13 +35,13 @@ ms.locfileid: "56599659"
 ## <a name="security-considerations-for-office-solutions"></a>Informace o zabezpečení pro řešení pro systém Office
  Existuje několik otázky zabezpečení při zvažování složky, které chcete přidat do seznamu důvěryhodných umístění:
 
--   Místní složky jsou považovány za další zabezpečení a jsou implicitně důvěryhodné. Vzdálených umístěních, jako jsou sdílené složky musí být určena jako důvěryhodných umístění.
+- Místní složky jsou považovány za další zabezpečení a jsou implicitně důvěryhodné. Vzdálených umístěních, jako jsou sdílené složky musí být určena jako důvěryhodných umístění.
 
--   Když přidáte do seznamu důvěryhodných umístění adresáře, tato akce uděluje úplný vztah důvěryhodnosti, nejen pro řešení pro Office, ale také pro kód VBA a ActiveX. Z tohoto důvodu, kořenový adresář a *dokumenty* složky by neměl být určen jako důvěryhodné.
+- Když přidáte do seznamu důvěryhodných umístění adresáře, tato akce uděluje úplný vztah důvěryhodnosti, nejen pro řešení pro Office, ale také pro kód VBA a ActiveX. Z tohoto důvodu, kořenový adresář a *dokumenty* složky by neměl být určen jako důvěryhodné.
 
--   I když samotný dokument je důvěryhodný pro používání důvěryhodných umístění, další oprávnění jsou nutná k přizpůsobení důvěřovat. Můžete udělit úplný vztah důvěryhodnosti k přizpůsobení pomocí podepisování manifestů s certifikátem, klepnutím na výzvu vztahu důvěryhodnosti nebo instalací řešení Office tak, aby *Program Files* adresáře.
+- I když samotný dokument je důvěryhodný pro používání důvěryhodných umístění, další oprávnění jsou nutná k přizpůsobení důvěřovat. Můžete udělit úplný vztah důvěryhodnosti k přizpůsobení pomocí podepisování manifestů s certifikátem, klepnutím na výzvu vztahu důvěryhodnosti nebo instalací řešení Office tak, aby *Program Files* adresáře.
 
--   Můžete ukládat dokumentem nebo sešitem, řešení úrovni dokumentu ve stejném adresáři jako sestavení nebo v jiném adresáři. Například dokument může nacházet na serveru SharePoint server a sestavení nebyly nalezeny ve sdílené síti. Další informace najdete v tématu [jak: Publikování řešení Office úrovni dokumentu na SharePoint serveru s použitím technologie ClickOnce](https://msdn.microsoft.com/2408e809-fb78-42a1-9152-00afa1522e58).
+- Můžete ukládat dokumentem nebo sešitem, řešení úrovni dokumentu ve stejném adresáři jako sestavení nebo v jiném adresáři. Například dokument může nacházet na serveru SharePoint server a sestavení nebyly nalezeny ve sdílené síti. Další informace najdete v tématu [jak: Publikování řešení Office úrovni dokumentu na SharePoint serveru s použitím technologie ClickOnce](https://msdn.microsoft.com/2408e809-fb78-42a1-9152-00afa1522e58).
 
 ## <a name="see-also"></a>Viz také:
 - [Zajistit jeho důvěryhodnost do řešení pro systém Office](../vsto/granting-trust-to-office-solutions.md)

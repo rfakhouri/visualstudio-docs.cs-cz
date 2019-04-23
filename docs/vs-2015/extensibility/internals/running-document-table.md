@@ -14,12 +14,12 @@ ms.assetid: bbec74f3-dd8e-48ad-99c1-2df503c15f5a
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 2bee266cb917f1e16bdebbdad52f2cc30055835e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7ea32df892efa47c91d8292bdc9065080318a059
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54798703"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044603"
 ---
 # <a name="running-document-table"></a>Spuštění tabulky dokumentů
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -54,9 +54,9 @@ Rozhraní IDE udržuje seznam všech aktuálně otevřených dokumentů v vnitř
   
  Integrované vývojové prostředí rámcový používá také k resurface (přenést do popředí) otevřený dokument, pokud si uživatel vyžádá tohoto dokumentu. Další informace najdete v tématu [zobrazení souborů pomocí příkazu Otevřít soubor](../../extensibility/internals/displaying-files-by-using-the-open-file-command.md). Pokud chcete zjistit, zda je soubor otevřen v r..., proveďte následující.  
   
--   Dotaz na dokument moniker (to znamená, že cesta celého dokumentu) a zjistěte, zda je položka otevřít.  
+- Dotaz na dokument moniker (to znamená, že cesta celého dokumentu) a zjistěte, zda je položka otevřít.  
   
--   ID hierarchie nebo položky můžete klást projektový systém pro celý dokument cestu a potom vyhledat položku v r....  
+- ID hierarchie nebo položky můžete klást projektový systém pro celý dokument cestu a potom vyhledat položku v r....  
   
 ## <a name="see-also"></a>Viz také  
  [Využití RDT_ReadLock](../../extensibility/internals/rdt-readlock-usage.md)   

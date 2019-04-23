@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1122e59d804387172d14f5ac9b24b6fad42213f9
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: 9ff67be52c36050f513fc3ef6530a6bd81d8988d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526526"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046667"
 ---
 # <a name="edit-and-continue-visual-c"></a>Upravit a pokračovat (Visual C++)
 Můžete upravit a pokračovat v projektech Visual C++. Zobrazit [podporované změny kódu (C++)](../debugger/supported-code-changes-cpp.md) informace o omezení operace upravit a pokračovat.
@@ -33,7 +33,7 @@ Další informace o vylepšení Visual Studio 2015 Update 3 najdete v tématu [C
 
  **/Zo** zakáže operace upravit a pokračovat. Zobrazit [jak: Ladění optimalizovaného kódu](../debugger/how-to-debug-optimized-code.md).
 
-##  <a name="BKMK_Enable_or_disable_automatic_invocation_of_Edit_and_Continue"></a> Povolení nebo zakázání funkce upravit a pokračovat
+## <a name="BKMK_Enable_or_disable_automatic_invocation_of_Edit_and_Continue"></a> Povolení nebo zakázání funkce upravit a pokračovat
  Můžete chtít zakázat automatického volání operace upravit a pokračovat, pokud provádíte úpravy kódu, který nechcete, aby platily aktuální relace ladění. Můžete také znovu povolit automatické funkce upravit a pokračovat.
 
 > [!IMPORTANT]
@@ -51,14 +51,14 @@ Další informace o vylepšení Visual Studio 2015 Update 3 najdete v tématu [C
 
    Změna tohoto nastavení má vliv na všechny projekty, které pracujete. Není nutné znovu sestavit aplikaci po změně tohoto nastavení. Pokud vytváříte aplikaci z příkazového řádku nebo ze souboru pravidel, ale ladit v prostředí sady Visual Studio, stále můžete upravit a pokračovat Pokud nastavíte **/zi** možnost.
 
-##  <a name="BKMK_How_to_apply_code_changes_explicitly"></a> Jak explicitní použití změn kódu
+## <a name="BKMK_How_to_apply_code_changes_explicitly"></a> Jak explicitní použití změn kódu
  V jazyce Visual C++ můžete použít kód změny v dva způsoby, jak upravit a pokračovat. Změny kódu lze použít implicitně, když zvolíte příkazu ke spuštění, nebo explicitně, pomocí **použít změny kódu** příkazu.
 
  Při explicitní použití změn kódu aplikace zůstávají v režimu pozastavení – žádná spuštění.
 
--   Na explicitní, použití změn kódu na **ladění** nabídce zvolte **použít změny kódu**.
+- Na explicitní, použití změn kódu na **ladění** nabídce zvolte **použít změny kódu**.
 
-##  <a name="BKMK_How_to_stop_code_changes"></a> Postup zastavení změn kódu
+## <a name="BKMK_How_to_stop_code_changes"></a> Postup zastavení změn kódu
  Upravit a pokračovat je právě aplikování změn kódu, můžete zastavit operaci.
 
  Zastavit provádění změn kódu:
@@ -69,12 +69,12 @@ Další informace o vylepšení Visual Studio 2015 Update 3 najdete v tématu [C
 
   Pokud zvolíte tuto možnost, žádná ze změn kódu není potvrzena.
 
-##  <a name="BKMK_How_to_reset_the_point_of_execution"></a> Obnovení bodu provádění
+## <a name="BKMK_How_to_reset_the_point_of_execution"></a> Obnovení bodu provádění
  Některé změny kódu může způsobit bod provádění přesunout do nového umístění, pokud funkce upravit a pokračovat se vztahuje změny. Upravit a pokračovat umístí bod provádění co nejpřesněji, ale výsledky nemusí být správný ve všech případech.
 
  V jazyce Visual C++ dialogové okno vás informuje změny bodu provádění. Ověřte, že je umístění správné předtím, než budete pokračovat v ladění. Pokud není správná, použijte **nastavit další příkaz** příkazu. Další informace najdete v tématu [nastavení dalšího příkazu ke spuštění](https://msdn.microsoft.com/library/y740d9d3.aspx#BKMK_Set_the_next_statement_to_execute).
 
-##  <a name="BKMK_How_to_work_with_stale_code"></a> Práce se starým kódem
+## <a name="BKMK_How_to_work_with_stale_code"></a> Práce se starým kódem
  V některých případech funkce upravit a pokračovat nemůže použití změn kódu spustitelný soubor, ale možná půjde použít změny kódu později, pokud budete pokračovat, ladění. K tomu dochází při úpravě funkce, která volá aktuální funkci nebo pokud chcete přidat více než 64 bajtů nové proměnné na funkci v zásobníku volání
 
  V takových případech ladicí program pokračuje v provádění původní kód, dokud změny mohou být použity. Zastaralý kód se zobrazí jako dočasné zdrojové okno souborů v okně samostatného zdroje s názvem, jako `enc25.tmp`. Upravené zdroje i nadále zobrazovat v okně původního zdroje. Pokud se pokusíte úprava starý kód, zobrazí se zpráva s upozorněním.

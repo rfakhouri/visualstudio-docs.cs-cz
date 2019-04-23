@@ -13,12 +13,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 481c1a66f3e025d3a29b2d5a1e39cd29bbb22490
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0c85690b34f0db705fe2a17e2f98d5b4f11433b3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54775263"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044973"
 ---
 # <a name="how-to-add-an-application-configuration-file-to-a-c-project"></a>Postupy: Přidejte do konfiguračního souboru aplikace C# projektu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,13 +32,13 @@ Přidejte konfigurační soubor aplikace (soubor app.config) do projektu C#, mů
   
 ### <a name="to-add-an-application-configuration-file-to-your-c-project"></a>Přidání konfiguračního souboru aplikace do projektu C#  
   
-1.  V panelu nabídky zvolte **projektu**, **přidat novou položku**.  
+1. V panelu nabídky zvolte **projektu**, **přidat novou položku**.  
   
      Zobrazí se dialogové okno **Přidat novou položku**.  
   
-2.  Rozbalte **nainstalováno**, rozbalte **položky Visual C#** a klikněte na tlačítko **konfiguračního souboru aplikace** šablony.  
+2. Rozbalte **nainstalováno**, rozbalte **položky Visual C#** a klikněte na tlačítko **konfiguračního souboru aplikace** šablony.  
   
-3.  V **název** textového pole zadejte název a klikněte na tlačítko **přidat** tlačítko.  
+3. V **název** textového pole zadejte název a klikněte na tlačítko **přidat** tlačítko.  
   
      Do projektu se přidá soubor s názvem souboru app.config.  
   

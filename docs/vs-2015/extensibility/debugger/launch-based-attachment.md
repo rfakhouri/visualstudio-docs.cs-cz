@@ -11,12 +11,12 @@ ms.assetid: 362f00ac-1909-4a3a-bacb-c0ceb5549816
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 015443968350b63f804858166860ce34d47991af
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 09a6b39bef9ba6af098bf92d779a490e22492209
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54834273"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044847"
 ---
 # <a name="launch-based-attachment"></a>Příloha založená na spuštění
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -26,13 +26,13 @@ Příloha založená na spuštění programu je automatické. Při spuštění p
 ## <a name="the-attaching-process"></a>Proces připojení  
  Hlavní rozdíl je posloupnost událostí po **připojit** volání následujícím způsobem:  
   
-1.  Odeslání **IDebugEngineCreateEvent2** objekt SDM události. Podrobnosti najdete v tématu [odesílání událostí](../../extensibility/debugger/sending-events.md).  
+1. Odeslání **IDebugEngineCreateEvent2** objekt SDM události. Podrobnosti najdete v tématu [odesílání událostí](../../extensibility/debugger/sending-events.md).  
   
-2.  Volání `IDebugProgram2::GetProgramId` metodu na **IDebugProgram2** předán rozhraní **připojit** metody.  
+2. Volání `IDebugProgram2::GetProgramId` metodu na **IDebugProgram2** předán rozhraní **připojit** metody.  
   
-3.  Odeslání **IDebugProgramCreateEvent2** události objektu oznámit SDM, místní **IDebugProgram2** byl vytvořen objekt představující program DE.  
+3. Odeslání **IDebugProgramCreateEvent2** události objektu oznámit SDM, místní **IDebugProgram2** byl vytvořen objekt představující program DE.  
   
-4.  Odeslání [IDebugThreadCreateEvent2](../../extensibility/debugger/reference/idebugthreadcreateevent2.md) události objektu oznámit SDM, že se vytvoří nové vlákno pro proces, který spustil.  
+4. Odeslání [IDebugThreadCreateEvent2](../../extensibility/debugger/reference/idebugthreadcreateevent2.md) události objektu oznámit SDM, že se vytvoří nové vlákno pro proces, který spustil.  
   
 ## <a name="see-also"></a>Viz také  
  [Odesílání požadovaných událostí](../../extensibility/debugger/sending-the-required-events.md)   

@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 89b8a9821fb9e02821d0a0a3b752fd92d46058ca
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 7a4f721f8e6f2faeca1a1d430534f802c719bf43
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59647032"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047862"
 ---
 # <a name="how-to-instrument-a-native-stand-alone-component-and-collect-timing-data-with-the-profiler-from-the-command-line"></a>Postupy: Instrumentace nativní samostatné součásti a shromažďování dat časování s profilerem z příkazového řádku
 Toto téma popisuje způsob použití [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] příkazového řádku nástrojů pro profilaci instrumentace nativní součásti, jako je například jazyka C++. *soubor exe* nebo. *Knihovna DLL* souboru a shromažďování podrobných dat časování.
@@ -60,7 +60,7 @@ Ke shromažďování podrobných dat časování z komponenty pomocí metody ins
 
 #### <a name="to-start-and-stop-data-collection"></a>Spuštění a zastavení shromažďování dat
 
--   Následující páry možností spouští a zastavují sběr dat. Každou možnost zadejte na samostatný příkazový řádek. Sběr dat lze zapnout a vypnout několikrát.
+- Následující páry možností spouští a zastavují sběr dat. Každou možnost zadejte na samostatný příkazový řádek. Sběr dat lze zapnout a vypnout několikrát.
 
     |Možnost|Popis|
     |------------|-----------------|
@@ -73,9 +73,9 @@ Ke shromažďování podrobných dat časování z komponenty pomocí metody ins
 
 #### <a name="to-end-a-profiling-session"></a>Chcete-li ukončit relaci profilování
 
-1.  Ukončete cílovou aplikaci.
+1. Ukončete cílovou aplikaci.
 
-2.  Vypněte profiler. Typ:
+2. Vypněte profiler. Typ:
 
      **/ Shutdown VSPerfCmd**
 

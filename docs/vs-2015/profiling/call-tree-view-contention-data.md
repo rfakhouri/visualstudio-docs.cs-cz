@@ -11,12 +11,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 47db94f7602a42ae9e5142ef27213a06adb8865c
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 5d12f1a2343018f05f0e741222b844c562b50f5e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54791650"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048375"
 ---
 # <a name="call-tree-view---contention-data"></a>Zobrazení stromu volání – data kolizí
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Zobrazení stromu volání zobrazí cesty spuštění funkce, které byly Proch�
 ## <a name="highlighting-the-execution-hot-path"></a>Zvýraznění provádění kritickou cestu  
  Zobrazení stromu volání můžete rozbalit a zvýrazňovat postupu provádění procesu nebo funkci, kterou vytvořili většina sporů.  
   
--   Zobrazit Nejaktivnější cestu, klikněte pravým tlačítkem myši na proces nebo funkci a klikněte na **rozbalit kritickou cestu**.  
+- Zobrazit Nejaktivnější cestu, klikněte pravým tlačítkem myši na proces nebo funkci a klikněte na **rozbalit kritickou cestu**.  
   
 ## <a name="setting-the-call-tree-root-node"></a>Nastavení kořenový uzel stromu volání  
  Každý proces při spuštění profilování se zobrazí jako kořenový uzel. Pokud chcete nastavit počáteční uzel zobrazení stromu volání, klikněte pravým tlačítkem na uzel, který chcete nastavit jako počáteční uzel a potom klikněte na tlačítko **nastavit kořenový**.  

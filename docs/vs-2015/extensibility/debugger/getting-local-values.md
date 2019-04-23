@@ -12,12 +12,12 @@ ms.assetid: a10b0764-65ac-476f-bf42-b4a9c38e20de
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 10e5b03f2a9c275de3ac3d8259582aee771a20f7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7344bc5b830de07a72a86537af6839ab0993518a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54785221"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044457"
 ---
 # <a name="getting-local-values"></a>Načtení místních hodnot
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,13 +29,13 @@ ms.locfileid: "54785221"
   
  Tato implementace `IDebugProperty2::GetPropertyInfo` provádí následující úlohy:  
   
-1.  Získá název, vlastnosti a atributů z vaší místní [FIELD_INFO](../../extensibility/debugger/reference/field-info.md) struktura vyplněno, pokud byla vytvořena instance a inicializovat třídu.  
+1. Získá název, vlastnosti a atributů z vaší místní [FIELD_INFO](../../extensibility/debugger/reference/field-info.md) struktura vyplněno, pokud byla vytvořena instance a inicializovat třídu.  
   
-2.  Získá typ na místní z [IDebugField](../../extensibility/debugger/reference/idebugfield.md) objektu.  
+2. Získá typ na místní z [IDebugField](../../extensibility/debugger/reference/idebugfield.md) objektu.  
   
-3.  Získá hodnotu na místní `IDebugField` objektu. Toto pole je vázán na umístění v paměti místní použití [IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md) objektu a hodnota se získávají z výsledné [IDebugObject](../../extensibility/debugger/reference/idebugobject.md) objektu.  
+3. Získá hodnotu na místní `IDebugField` objektu. Toto pole je vázán na umístění v paměti místní použití [IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md) objektu a hodnota se získávají z výsledné [IDebugObject](../../extensibility/debugger/reference/idebugobject.md) objektu.  
   
-4.  Vrátí všechny požadované vlastnosti [DEBUG_PROPERTY_INFO](../../extensibility/debugger/reference/debug-property-info.md) struktury.  
+4. Vrátí všechny požadované vlastnosti [DEBUG_PROPERTY_INFO](../../extensibility/debugger/reference/debug-property-info.md) struktury.  
   
 ## <a name="managed-code"></a>Spravovaný kód  
  Tento příklad ukazuje implementaci `IDebugProperty2::GetPropertyInfo` pro metodu místní ve spravovaném kódu. Také ukazuje pomocná funkce, `Field.GetType`, která je použít k získání typu pole. `Field.GetValue` je zobrazena ve [vyhodnocení místních hodnot](../../extensibility/debugger/evaluating-locals.md). Pomocná funkce `Field.MapModifiersToAttributes` (není vidět) jednoduše převede pole [FIELD_MODIFIERS](../../extensibility/debugger/reference/field-modifiers.md) příznaky pro [DBG_ATTRIB_FLAGS](../../extensibility/debugger/reference/dbg-attrib-flags.md) hodnoty.  

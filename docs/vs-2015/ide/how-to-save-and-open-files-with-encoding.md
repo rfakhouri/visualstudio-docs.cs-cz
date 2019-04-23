@@ -14,12 +14,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e78d634ed72878f15f240dd2c32577e6124ccd8d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: bb4e07f90f3a05f61957898c579b9a70da6e5ce1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54799013"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039224"
 ---
 # <a name="how-to-save-and-open-files-with-encoding"></a>Postupy: Ukládání a otevírání souborů s kódováním
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,13 +28,13 @@ Uložte soubory s konkrétní znak kódování pro podporu obousměrných jazyc�
   
 ### <a name="to-save-a-file-with-encoding"></a>Uložte soubor s kódováním  
   
-1.  Z **souboru** nabídce zvolte **uložit soubor jako**a potom klikněte na tlačítko rozevíracího seznamu vedle položky **Uložit** tlačítko.  
+1. Z **souboru** nabídce zvolte **uložit soubor jako**a potom klikněte na tlačítko rozevíracího seznamu vedle položky **Uložit** tlačítko.  
   
      **Pokročilé nastavení uložení** se zobrazí dialogové okno.  
   
-2.  V části **kódování**, vyberte kódování použité pro soubor.  
+2. V části **kódování**, vyberte kódování použité pro soubor.  
   
-3.  Volitelně můžete v rámci **once**, vyberte formát pro znaky na konec řádku.  
+3. Volitelně můžete v rámci **once**, vyberte formát pro znaky na konec řádku.  
   
      Tato možnost je užitečná, pokud máte v úmyslu exchange souboru s uživateli jiný operační systém.  
   
@@ -42,21 +42,21 @@ Uložte soubory s konkrétní znak kódování pro podporu obousměrných jazyc�
   
 ### <a name="to-open-an-encoded-file-that-is-part-of-a-project"></a>Chcete-li otevřít kódovaný soubor, který je součástí projektu  
   
-1.  V **Průzkumníka řešení**, klikněte pravým tlačítkem na soubor a zvolte **otevřít v**.  
+1. V **Průzkumníka řešení**, klikněte pravým tlačítkem na soubor a zvolte **otevřít v**.  
   
-2.  V **otevřít v programu** dialogového okna zvolte editoru otevřete soubor s.  
+2. V **otevřít v programu** dialogového okna zvolte editoru otevřete soubor s.  
   
      Mnohé editory sady Visual Studio, jako je například editor formulářů, bude automaticky rozpoznat kódování a otevřete soubor odpovídajícím způsobem. Pokud se rozhodnete editor, který umožňuje zvolit kódování, **kódování** se zobrazí dialogové okno.  
   
-3.  V **kódování** dialogového okna, vyberte kódování, které by měl použít editor.  
+3. V **kódování** dialogového okna, vyberte kódování, které by měl použít editor.  
   
 ### <a name="to-open-an-encoded-file-that-is-not-part-of-a-project"></a>Chcete-li otevřít kódovaného souboru, který není součástí projektu  
   
-1.  Na **souboru** nabídky, přejděte k **otevřete**, zvolte **souboru** nebo **soubor z webu**a potom vyberte soubor otevřete.  
+1. Na **souboru** nabídky, přejděte k **otevřete**, zvolte **souboru** nebo **soubor z webu**a potom vyberte soubor otevřete.  
   
-2.  Klikněte na tlačítko rozevíracího seznamu vedle položky **otevřít** tlačítko a zvolte **otevřít v**.  
+2. Klikněte na tlačítko rozevíracího seznamu vedle položky **otevřít** tlačítko a zvolte **otevřít v**.  
   
-3.  Postupujte podle kroků 2 a 3 v předchozím postupu.  
+3. Postupujte podle kroků 2 a 3 v předchozím postupu.  
   
 ## <a name="see-also"></a>Viz také  
  [Kódování a globalizace Windows Forms](http://msdn.microsoft.com/library/22e8965d-a712-42b3-8167-3ee346bd70f9)   

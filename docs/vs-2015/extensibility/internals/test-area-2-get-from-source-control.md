@@ -11,14 +11,14 @@ ms.assetid: cbd345c5-ca43-4630-b7a4-85564f4e2090
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 78ecbcb50effc133487f03ffd2f2edee3cbd8d4a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 069c396ce4cb75c9153082fdbb352b2ba713c8a8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54774343"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052582"
 ---
-# <a name="test-area-2-get-from-source-control"></a>Testovací oblast 2: Získat ze správy zdrojového kódu
+# <a name="test-area-2-get-from-source-control"></a>Testovací oblast 2: Získání ze správy zdrojového kódu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Tento test oblast obsahuje informace o testovacích případů pro načítání položek ze úložiště verzí pomocí příkazu Get. Tyto testovací případy můžete použít pro oba místní a pro webové projekty.  
@@ -28,13 +28,13 @@ Tento test oblast obsahuje informace o testovacích případů pro načítání 
   
 ##### <a name="get-latest-version"></a>Načíst nejnovější verzi:  
   
--   **Soubor**, **správy zdrojového kódu**, **načíst nejnovější verzi**.  
+- **Soubor**, **správy zdrojového kódu**, **načíst nejnovější verzi**.  
   
--   **Soubor**, **načíst nejnovější verzi**.  
+- **Soubor**, **načíst nejnovější verzi**.  
   
--   Místní nabídka **získat nejnovější verzi**.  
+- Místní nabídka **získat nejnovější verzi**.  
   
--   Získáte: **Soubor**, **správy zdrojového kódu**, **získat**.  
+- Získáte: **Soubor**, **správy zdrojového kódu**, **získat**.  
   
 ## <a name="expected-behavior"></a>Očekávané chování  
   

@@ -15,12 +15,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5eb3891026976c036fb48b16ed5ebfeba909100e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 582b3763cf2925e373bb3f71b843755ade49dcd2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54758140"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046492"
 ---
 # <a name="how-to-view-existing-types-class-designer"></a>Postupy: Zobrazení existujících typů (návrhář tříd)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,9 +41,9 @@ Chcete-li zobrazit existující typ a její členy, přidáte jeho tvar do diagr
    >  Pokud má vaše řešení projekt, které sdílejí kód mezi více aplikacemi, můžete přetáhnout soubory nebo kód do diagramu tříd pouze z těchto zdrojů:  
    > 
    > - Projekt aplikace, který obsahuje diagram  
-   >   -   Sdílený projekt, který byl importován projektem aplikace  
-   >   -   Odkazovaný projekt  
-   >   -   Sestavení  
+   >   - Sdílený projekt, který byl importován projektem aplikace  
+   >   - Odkazovaný projekt  
+   >   - Sestavení  
   
     Tvary, které představují typy definované v souboru zdrojového kódu, se zobrazí v diagramu na pozici, kam jste soubor přetáhli.  
   
@@ -61,7 +61,7 @@ Chcete-li zobrazit existující typ a její členy, přidáte jeho tvar do diagr
   
 ### <a name="to-display-the-contents-of-a-project-in-a-class-diagram"></a>Chcete-li zobrazit obsah projektu v diagramu tříd  
   
-1.  V Průzkumníku řešení nebo zobrazení tříd, klikněte pravým tlačítkem na projekt a zvolte **zobrazení**, klikněte na tlačítko **zobrazit Diagram tříd**.  
+1. V Průzkumníku řešení nebo zobrazení tříd, klikněte pravým tlačítkem na projekt a zvolte **zobrazení**, klikněte na tlačítko **zobrazit Diagram tříd**.  
   
      Vytvoří se automaticky vyplněný diagram tříd.  
   

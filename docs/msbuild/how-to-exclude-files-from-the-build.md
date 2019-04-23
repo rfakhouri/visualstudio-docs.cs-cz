@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a798f200734dd4db885aee4a25258bfdb49c69c
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: f30454cb88b9310e78af70997949d970a161027a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59668883"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044886"
 ---
 # <a name="how-to-exclude-files-from-the-build"></a>Postupy: Vyloučení souborů ze sestavení
 V souboru projektu můžete použít zástupné znaky jako vstupy pro sestavení zahrnout všechny soubory v jednom adresáři nebo vnořenou sadu adresáře. Ale může být jeden soubor v adresáři nebo jednoho adresáře v vnořenou sadu adresáře, které nechcete zahrnout jako vstupy pro sestavení. Tento soubor nebo adresář můžete explicitně vyloučit z seznam vstupů. V projektu, který chcete zahrnout za určitých podmínek může být také soubor. Můžete explicitně deklarovat podmínky, za kterých je soubor součástí sestavení.
@@ -36,7 +36,7 @@ V souboru projektu můžete použít zástupné znaky jako vstupy pro sestavení
 
 #### <a name="to-include-all-cs-or-vb-files-except-form2"></a>Zahrnout všechny *.cs* nebo *.vb* soubory s výjimkou *Form2*
 
--   Použijte jednu z následujících `Include` a `Exclude` atributy:
+- Použijte jednu z následujících `Include` a `Exclude` atributy:
 
     ```xml
     <CSFile Include="*.cs" Exclude="Form2.cs"/>
@@ -50,7 +50,7 @@ V souboru projektu můžete použít zástupné znaky jako vstupy pro sestavení
 
 #### <a name="to-include-all-cs-or-vb-files-except-form2-and-form3"></a>Zahrnout všechny *.cs* nebo *.vb* soubory s výjimkou *Form2* a *Form3*
 
--   Použijte jednu z následujících `Include` a `Exclude` atributy:
+- Použijte jednu z následujících `Include` a `Exclude` atributy:
 
     ```xml
     <CSFile Include="*.cs" Exclude="Form2.cs;Form3.cs"/>
@@ -64,7 +64,7 @@ V souboru projektu můžete použít zástupné znaky jako vstupy pro sestavení
 
 #### <a name="to-include-all-jpg-files-in-subdirectories-of-the-images-directory-except-those-in-the-version2-directory"></a>Zahrnout všechny *.jpg* soubory nacházejí v podadresářích *Imagí* s výjimkou těch v adresáři *větev Version2* adresáře
 
--   Pomocí následujících `Include` a `Exclude` atributy:
+- Pomocí následujících `Include` a `Exclude` atributy:
 
     ```xml
     <JPGFile
@@ -80,7 +80,7 @@ V souboru projektu můžete použít zástupné znaky jako vstupy pro sestavení
 
 #### <a name="to-include-the-file-formulavb-only-in-release-builds"></a>Zahrnout soubor *Formula.vb* pouze v sestaveních pro vydání
 
--   Použití `Condition` atribut podobný následujícímu:
+- Použití `Condition` atribut podobný následujícímu:
 
     ```xml
     <Compile

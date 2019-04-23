@@ -9,12 +9,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9af0d60e9321baa9f4d2ffc4944d939e6398dcf7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 9f23d0593129cae2732c8b4df14b3f5e2d5a69f7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54775927"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051372"
 ---
 # <a name="step-4-add-a-click-event-handler-to-each-label"></a>Krok 4: Přidání obslužné rutiny události Click ke každému popisku
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,18 +31,18 @@ Porovnávací hra probíhá takto:
   
 ### <a name="to-add-a-click-event-handler-to-each-label"></a>Přidání obslužné rutiny události Click ke každému popisku  
   
-1.  Otevřete formulář v Návrháři formulářů Windows. V Průzkumníku řešení vyberte soubor Form1.cs nebo Form1.vb. V panelu nabídky zvolte **zobrazení**, **návrháře**.  
+1. Otevřete formulář v Návrháři formulářů Windows. V Průzkumníku řešení vyberte soubor Form1.cs nebo Form1.vb. V panelu nabídky zvolte **zobrazení**, **návrháře**.  
   
-2.  Vyberte první ovládací prvek popisku. Potom podržte klávesu Ctrl a postupně klikněte na každý další popisek, abyste je vybrali. Je nutné vybrat všechny popisky.  
+2. Vyberte první ovládací prvek popisku. Potom podržte klávesu Ctrl a postupně klikněte na každý další popisek, abyste je vybrali. Je nutné vybrat všechny popisky.  
   
-3.  Zvolte **události** tlačítko na panelu nástrojů v **vlastnosti** okno zobrazení **události** stránku **vlastnosti** okna. Přejděte dolů k položce **klikněte na tlačítko** události a zadejte **výraz label_Click** v poli, jak je znázorněno na následujícím obrázku.  
+3. Zvolte **události** tlačítko na panelu nástrojů v **vlastnosti** okno zobrazení **události** stránku **vlastnosti** okna. Přejděte dolů k položce **klikněte na tlačítko** události a zadejte **výraz label_Click** v poli, jak je znázorněno na následujícím obrázku.  
   
      ![Okno Vlastnosti zobrazující klikněte na událost](../ide/media/express-labelclick.png "Express_labelClick")  
 Okno Vlastnosti zobrazující událost Click  
   
-4.  Poté stiskněte klávesu ENTER. Rozhraní IDE přidá obslužnou rutinu události Click, která se nazývá `label_Click()` kódu a připojí ji k jednotlivým popiskům ve formuláři.  
+4. Poté stiskněte klávesu ENTER. Rozhraní IDE přidá obslužnou rutinu události Click, která se nazývá `label_Click()` kódu a připojí ji k jednotlivým popiskům ve formuláři.  
   
-5.  Vyplňte zbývající část kódu takto:  
+5. Vyplňte zbývající část kódu takto:  
   
      [!code-csharp[VbExpressTutorial4Step2_3_4#4](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial4step2_3_4/cs/form1.cs#4)]
      [!code-vb[VbExpressTutorial4Step2_3_4#4](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial4step2_3_4/vb/form1.vb#4)]  
@@ -55,10 +55,10 @@ Okno Vlastnosti zobrazující událost Click
   
      Tato metoda nejprve zkontroluje, jestli **clickedLabel** byl úspěšně převeden (přetypován) z objektu do ovládacího prvku popisku. Pokud neúspěšný, má hodnotu `null` (C#) nebo `Nothing` (Visual Basic), a nechcete provést zbytek kódu v metodě. Dále metoda zkontroluje barvu textu vybraného popisku pomocí popisku **ForeColor** vlastnost. Pokud je barva textu popisku černá, znamená to, že ikona již byla vybrána a metoda je provedena. (To `return` provádí příkaz: Říká programu, že má zastavit spouštění metody.) V opačném případě ikona nebyla vybrána, takže program změní barvu textu popisku na černou.  
   
-6.  V panelu nabídky zvolte **souboru**, **Uložit vše** rozdělanou práci uložit, a pak na panelu nabídek zvolte **ladění**, **spustit ladění** ke spuštění váš program. Měl by se zobrazit prázdný formulář s modrým pozadím. Vyberte jakékoli buňky ve formuláři. Měla by se zobrazit jedna z ikon. Pokračujte ve výběru různých míst ve formuláři. Ikony by se měly výběrem postupně zobrazovat.  
+6. V panelu nabídky zvolte **souboru**, **Uložit vše** rozdělanou práci uložit, a pak na panelu nabídek zvolte **ladění**, **spustit ladění** ke spuštění váš program. Měl by se zobrazit prázdný formulář s modrým pozadím. Vyberte jakékoli buňky ve formuláři. Měla by se zobrazit jedna z ikon. Pokračujte ve výběru různých míst ve formuláři. Ikony by se měly výběrem postupně zobrazovat.  
   
 ### <a name="to-continue-or-review"></a>Chcete-li pokračovat nebo přezkoumat  
   
--   Přechod k dalšímu kroku výukového programu naleznete v tématu [krok 5: Přidejte odkazy na jmenovky](../ide/step-5-add-label-references.md).  
+- Přechod k dalšímu kroku výukového programu naleznete v tématu [krok 5: Přidejte odkazy na jmenovky](../ide/step-5-add-label-references.md).  
   
--   Chcete-li vrátit k předchozímu kroku tutoriálu, přečtěte si téma [krok 3: Přiřaďte jednotlivým jmenovkám náhodné ikony](../ide/step-3-assign-a-random-icon-to-each-label.md).
+- Chcete-li vrátit k předchozímu kroku tutoriálu, přečtěte si téma [krok 3: Přiřaďte jednotlivým jmenovkám náhodné ikony](../ide/step-3-assign-a-random-icon-to-each-label.md).

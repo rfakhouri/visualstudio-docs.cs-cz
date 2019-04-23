@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 64b602b5c00380449eb1c296ccde98a88bdc1abc
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: ab5e4b65db5c3d96b16a68a7b8e21a2786b9110b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56600230"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047238"
 ---
 # <a name="concurrency-visualizer-markers"></a>Značky Vizualizéru souběžnosti
 Ve Vizualizátor souběžnosti značky jsou ikony, které představují událostí v aplikaci.  Aplikace obvykle generuje těchto událostí k určení fází nebo výskyty v aplikaci.  Události se můžou generovat aplikace nebo knihovny a moduly runtime, který aplikace používá.
@@ -23,11 +23,11 @@ Ve Vizualizátor souběžnosti značky jsou ikony, které představují událost
 ## <a name="kinds-of-markers"></a>Typy značek
  Vizualizátor souběžnosti používá k reprezentaci události aplikace na tři typy značek: flags, zprávy a zahrnuje.
 
-1.  Použití *příznak* udávajících zajímavého bodu v čase ve vaší aplikaci.  Příznak, který může například použít k reprezentaci, že hodnota proměnné bylo dosaženo určitou prahovou hodnotu nebo že došlo k výjimce.
+1. Použití *příznak* udávajících zajímavého bodu v čase ve vaší aplikaci.  Příznak, který může například použít k reprezentaci, že hodnota proměnné bylo dosaženo určitou prahovou hodnotu nebo že došlo k výjimce.
 
-2.  A *zpráva* značky bodu v čase, ale můžete jej také použít pro trasování protokolů – vizuální styl.  Například co může mít byly zálohované do souboru protokolu, které můžete nyní zabalit do volání zpráv tak, aby můžete zpětně a zobrazit ho ve vizualizátoru souběžnosti. Vizualizátor souběžnosti můžete použít také tato data exportovat do souboru CSV.
+2. A *zpráva* značky bodu v čase, ale můžete jej také použít pro trasování protokolů – vizuální styl.  Například co může mít byly zálohované do souboru protokolu, které můžete nyní zabalit do volání zpráv tak, aby můžete zpětně a zobrazit ho ve vizualizátoru souběžnosti. Vizualizátor souběžnosti můžete použít také tato data exportovat do souboru CSV.
 
-3.  A *span* představuje ve vaší aplikaci, například jeden z jeho fází časový interval.
+3. A *span* představuje ve vaší aplikaci, například jeden z jeho fází časový interval.
 
 ## <a name="marker-linkage-to-threads"></a>Propojení značky vlákna
  Každý podproces, který generuje značky má kanál časové osy.  ID vlákna, která je zodpovědná za generování značky události se zobrazí vedle popis kanálu značky.  ID, které se zobrazí na levé straně kanálu značky odpovídá ID jiného vlákna v aktuálním procesu.

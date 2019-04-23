@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ab9b6e0ee62bc2506022a853a04871902fa04aad
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c2e6db11220c2cc7f14bc2f0f05912e7855646c1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54789779"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045979"
 ---
 # <a name="automatic-feature-suspension"></a>Automatické pozastavení funkce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,11 +29,11 @@ Pokud dostupné systémové paměti klesne na 200MB nebo méně, Visual Studio z
 
  V ke stavu nedostatku paměti, dojde k následujícímu:
 
--   Úplná analýza řešení pro Visual C# a Visual Basic je zakázaná.
+- Úplná analýza řešení pro Visual C# a Visual Basic je zakázaná.
 
--   [Uvolňování paměti](http://msdn.microsoft.com/library/22b6cb97-0c80-4eeb-a2cf-5ed7655e37f9) režimu s nízkou latencí (GC) pro Visual C# a Visual Basic jsou zakázané.
+- [Uvolňování paměti](http://msdn.microsoft.com/library/22b6cb97-0c80-4eeb-a2cf-5ed7655e37f9) režimu s nízkou latencí (GC) pro Visual C# a Visual Basic jsou zakázané.
 
--   Visual Studio mezipamětí, vyprázdní.
+- Visual Studio mezipamětí, vyprázdní.
 
 ## <a name="improve-visual-studio-performance"></a>Zlepšení výkonu sady Visual Studio
  Tipy a triky pro zlepšení výkonu sady Visual Studio, když se zabývají velká řešení nebo nedostatku paměti najdete v tématu [faktory ovlivňující výkon u velkých řešení](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions).
@@ -48,11 +48,11 @@ Pokud dostupné systémové paměti klesne na 200MB nebo méně, Visual Studio z
 
 Všechny sady Visual Studio mezipaměti jsou vyprázdněny okamžitě, ale začne znovu vytvořit, je-li pokračovat v aktuální relaci vývoj nebo restartujte sadu Visual Studio. Vyprázdnění mezipaměti zahrnují mezipaměť pro následující funkce.
 
--   Najít všechny odkazy
+- Najít všechny odkazy
 
--   Přejděte na
+- Přejděte na
 
--   Přidání direktivy Using
+- Přidání direktivy Using
 
 Kromě toho jsou vymazány mezipamětí použít pro interní operace sady Visual Studio.
 

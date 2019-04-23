@@ -11,12 +11,12 @@ ms.assetid: 81536233-1962-40d9-9511-0b4633814d90
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6b73d0c9f056709bf393fd2e7ab23cf917d48ffc
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 692ea254719f5ae14491ae81e2e6ab0f5740fc05
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936071"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048928"
 ---
 # <a name="how-to-add-and-delete-counters-on-graphs-in-load-test-results"></a>Postupy: Přidání a odstranění čítačů pro grafy ve výsledcích zátěžového testu
 
@@ -51,25 +51,25 @@ Další informace najdete v tématu [jak: Určení vlastnosti úložiště podro
 
 ## <a name="to-display-a-particular-performance-counter-on-a-load-test-graph"></a>Chcete-li zobrazit konkrétního čítače výkonu v grafu zátěžového testu
 
-1.  Po dokončení zátěžového testu nebo po načtení výsledků testu v Analyzéru zátěžového testu na panelu nástrojů, zvolte **grafy**.
+1. Po dokončení zátěžového testu nebo po načtení výsledků testu v Analyzéru zátěžového testu na panelu nástrojů, zvolte **grafy**.
 
      **Čítače** panelu se zobrazí v zobrazení grafů.
 
     > [!NOTE]
     > Pokud **čítače** panelu není zobrazen, zvolte **zobrazit Panel čítačů** na panelu nástrojů.
 
-2.  V **čítače** panelu, rozbalte uzly v hierarchii, dokud nenajdete, kterou chcete zobrazit graficky čítače výkonu.
+2. V **čítače** panelu, rozbalte uzly v hierarchii, dokud nenajdete, kterou chcete zobrazit graficky čítače výkonu.
 
      Například pokud chcete zobrazit dostupné paměti v počítači, ve kterém jsou testy spuštěny, rozbalte **počítače**, rozbalte uzel pro počítač a potom rozbalte **paměti**. Zobrazí se **počet MB k dispozici** čítače.
 
-3.  Vyberte graf, na kterém chcete zobrazit čítače výkonu.
+3. Vyberte graf, na kterém chcete zobrazit čítače výkonu.
 
-4.  Pravým tlačítkem myši na čítač výkonu v **čítače** panelu a vyberte **zobrazit čítač v grafu**.
+4. Pravým tlačítkem myši na čítač výkonu v **čítače** panelu a vyberte **zobrazit čítač v grafu**.
 
     > [!TIP]
     > Dočasné zastavení, zobrazení dat čítače výkonu v grafu, zrušte zaškrtnutí políčka pro čítač výkonu v legendě. To umožňuje statistiky minimum, Maximum a průměr stále analyzovat bez zobrazení trendovou linii do grafu. To může být užitečné, pokud graf obsahuje několik překrývající se vykreslení čítače výkonu při analýze problémy. Další informace najdete v tématu [použití legendy zobrazení grafů k analýze zátěžových testů](../test/use-the-graphs-view-legend-to-analyze-load-tests.md).
 
-5.  Z grafu odebrat data čítače výkonu, pravým tlačítkem myši na čítač výkonu v **čítač** sloupce legendy a vyberte **odstranit**.
+5. Z grafu odebrat data čítače výkonu, pravým tlačítkem myši na čítač výkonu v **čítač** sloupce legendy a vyberte **odstranit**.
 
      \- nebo –
 

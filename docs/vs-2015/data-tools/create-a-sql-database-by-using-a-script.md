@@ -14,12 +14,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b78e70ae790a39cb761eca34dcdc2b9b32b5bbfd
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: fd0bf5c0e95b4c859dc2d6470ab6f922041b20ba
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59653629"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049877"
 ---
 # <a name="create-a-sql-database-by-using-a-script"></a>Vytvoření databáze SQL pomocí skriptu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,30 +28,30 @@ V tomto názorném postupu použijete k vytvoření malé databáze, která obsa
   
  **V tomto tématu**  
   
--   [Vytvořit skript, který obsahuje databázové schéma](../data-tools/create-a-sql-database-by-using-a-script.md#CreateScript)  
+- [Vytvořit skript, který obsahuje databázové schéma](../data-tools/create-a-sql-database-by-using-a-script.md#CreateScript)  
   
--   [Vytvořte projekt databáze a importovat schéma](../data-tools/create-a-sql-database-by-using-a-script.md#CreateProject)  
+- [Vytvořte projekt databáze a importovat schéma](../data-tools/create-a-sql-database-by-using-a-script.md#CreateProject)  
   
--   [Nasazení databáze](../data-tools/create-a-sql-database-by-using-a-script.md#DeployDatabase)  
+- [Nasazení databáze](../data-tools/create-a-sql-database-by-using-a-script.md#DeployDatabase)  
   
 ## <a name="prerequisites"></a>Požadavky  
  K dokončení tohoto návodu, musí mít SQL Server Express LocalDB nebo jiné databáze SQL, nainstalována.  
   
-##  <a name="CreateScript"></a> Vytvořit skript, který obsahuje databázové schéma  
+## <a name="CreateScript"></a> Vytvořit skript, který obsahuje databázové schéma  
   
 #### <a name="to-create-a-script-from-which-you-can-import-a-schema"></a>Postup vytvoření skriptu ze kterého můžete importovat schéma  
   
-1.  V [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], na panelu nabídek vyberte **souboru** > **nový** > **souboru**.  
+1. V [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], na panelu nabídek vyberte **souboru** > **nový** > **souboru**.  
   
      **Nový soubor** zobrazí se dialogové okno.  
   
-2.  V **kategorie** seznamu vyberte **Obecné**.  
+2. V **kategorie** seznamu vyberte **Obecné**.  
   
-3.  V **šablony** seznamu vyberte **soubor Sql**a pak vyberte **otevřít** tlačítko.  
+3. V **šablony** seznamu vyberte **soubor Sql**a pak vyberte **otevřít** tlačítko.  
   
      Otevře se editor jazyka Transact-SQL.  
   
-4.  Zkopírujte následující kód Transact-SQL a vložte ho do editoru jazyka Transact-SQL.  
+4. Zkopírujte následující kód Transact-SQL a vložte ho do editoru jazyka Transact-SQL.  
   
     ```  
     PRINT N'Creating Sales...';  
@@ -213,34 +213,34 @@ V tomto názorném postupu použijete k vytvoření malé databáze, která obsa
     GO  
     ```  
   
-5.  Na panelu nabídek vyberte **souboru** > **uložit SqlQuery_1.sql jako**.  
+5. Na panelu nabídek vyberte **souboru** > **uložit SqlQuery_1.sql jako**.  
   
      **Uložit soubor jako** zobrazí se dialogové okno.  
   
-6.  V **název_souboru** zadejte `SampleImportScript.sql`, poznamenejte si umístění, kde můžete uložit soubor a pak vyberte **Uložit** tlačítko.  
+6. V **název_souboru** zadejte `SampleImportScript.sql`, poznamenejte si umístění, kde můžete uložit soubor a pak vyberte **Uložit** tlačítko.  
   
-7.  Na panelu nabídek vyberte **souboru** > **zavřít řešení**.  
+7. Na panelu nabídek vyberte **souboru** > **zavřít řešení**.  
   
      Dále vytvořte projekt databáze a importujte schéma ze skriptu, který jste vytvořili.  
   
-##  <a name="CreateProject"></a> Vytvořte projekt databáze a importovat schéma  
+## <a name="CreateProject"></a> Vytvořte projekt databáze a importovat schéma  
   
 #### <a name="to-create-a-database-project"></a>Vytvoření projektu databáze  
   
-1.  Na panelu nabídek vyberte **souboru** > **nový** > **projektu**.  
+1. Na panelu nabídek vyberte **souboru** > **nový** > **projektu**.  
   
      Zobrazí se dialogové okno **Nový projekt**.  
   
-2.  V části **nainstalováno**, rozbalte **šablony** uzlu, rozbalte **jiné jazyky** uzlu, vyberte **systému SQL Server** kategorie a pak Vyberte **databázový projekt SQL Server** šablony.  
+2. V části **nainstalováno**, rozbalte **šablony** uzlu, rozbalte **jiné jazyky** uzlu, vyberte **systému SQL Server** kategorie a pak Vyberte **databázový projekt SQL Server** šablony.  
   
     > [!NOTE]
     >  **Jiné jazyky** uzlu se nezobrazí ve všech instalacích sady Visual Studio.  
   
-3.  V **název** zadejte `Small Database`.  
+3. V **název** zadejte `Small Database`.  
   
-4.  Vyberte **vytvořit adresář pro řešení** zaškrtávací políčko, pokud ještě není vybraná.  
+4. Vyberte **vytvořit adresář pro řešení** zaškrtávací políčko, pokud ještě není vybraná.  
   
-5.  Zrušte **přidat do správy zdrojových kódů** zaškrtávací políčko, pokud ještě není nezaškrtnuté a pak vyberte **OK** tlačítko.  
+5. Zrušte **přidat do správy zdrojových kódů** zaškrtávací políčko, pokud ještě není nezaškrtnuté a pak vyberte **OK** tlačítko.  
   
      Projekt databáze se vytvoří a zobrazí se v **Průzkumníka řešení**.  
   
@@ -248,27 +248,27 @@ V tomto názorném postupu použijete k vytvoření malé databáze, která obsa
   
 #### <a name="to-import-a-database-schema-from-a-script"></a>Chcete-li importovat schéma databáze ze skriptu  
   
-1.  Na panelu nabídek vyberte **projektu** > **Import** > **skript**.  
+1. Na panelu nabídek vyberte **projektu** > **Import** > **skript**.  
   
-2.  Na **úvodní** stránce zkontrolujte text a pak vyberte **Další** tlačítko.  
+2. Na **úvodní** stránce zkontrolujte text a pak vyberte **Další** tlačítko.  
   
-3.  Vyberte **jednoho souboru** přepínač a pak vyberte **Procházet** tlačítko.  
+3. Vyberte **jednoho souboru** přepínač a pak vyberte **Procházet** tlačítko.  
   
      **Import skriptu SQL** zobrazí se dialogové okno.  
   
-4.  Otevřete složku, kam jste uložili soubor SampleImportScript.sql, vyberte ho a pak vyberte **otevřít** tlačítko.  
+4. Otevřete složku, kam jste uložili soubor SampleImportScript.sql, vyberte ho a pak vyberte **otevřít** tlačítko.  
   
-5.  Vyberte **Dokončit** tlačítko pro uzavření **Import skriptu SQL** dialogové okno.  
+5. Vyberte **Dokončit** tlačítko pro uzavření **Import skriptu SQL** dialogové okno.  
   
      Skript se importuje a objekty, které skript definuje se přidají do databáze projektu.  
   
-6.  Zkontrolujte souhrn a pak klikněte na tlačítko **Dokončit** tlačítko pro uzavření **importovat soubor skriptu SQL** dialogové okno.  
+6. Zkontrolujte souhrn a pak klikněte na tlačítko **Dokončit** tlačítko pro uzavření **importovat soubor skriptu SQL** dialogové okno.  
   
-7.  V **Průzkumníka řešení**, rozbalte prodej, skripty a zabezpečení složky vašeho projektu a ověřte, že obsahují soubory .sql.  
+7. V **Průzkumníka řešení**, rozbalte prodej, skripty a zabezpečení složky vašeho projektu a ověřte, že obsahují soubory .sql.  
   
-8.  V **Průzkumník objektů systému SQL Server**, ověřte, že se databáze zobrazí v části **projekty** uzlu.  
+8. V **Průzkumník objektů systému SQL Server**, ověřte, že se databáze zobrazí v části **projekty** uzlu.  
   
      V tomto okamžiku databáze obsahuje pouze systémové objekty, jako jsou tabulky a uložené procedury. Po nasazení bude databáze bude obsahovat uživatelské tabulky a uložené procedury, které definují skripty.  
   
-##  <a name="DeployDatabase"></a> Nasazení databáze  
+## <a name="DeployDatabase"></a> Nasazení databáze  
  Po stisknutí klávesy **F5** klíč, nasadit (nebo publikovat) databázi na databázi LocalDB ve výchozím nastavení. Můžete nasadit databázi do jiného umístění otevřením stránky vlastností pro projekt, vyberte **ladění** kartu a potom změnou propojovacího řetězce.

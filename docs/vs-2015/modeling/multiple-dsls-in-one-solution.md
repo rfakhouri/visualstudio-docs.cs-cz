@@ -9,12 +9,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 76f34194381df92097e8dc2c42f1bf57a83f484b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d70794dddc02605c76c1af330a49af4be917c0e3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54760627"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050137"
 ---
 # <a name="multiple-dsls-in-one-solution"></a>Vícesouborové DSL v jediném řešení
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,35 +27,35 @@ Jako součást jediného řešení můžete zabalit několik DSL, tak, že jsou 
   
 1. Vytvořte dvě nebo více řešení DSL a projekt VSIX a přidejte všechny projekty do jediného řešení.  
   
-   -   Chcete-li vytvořit nový projekt VSIX: V **nový projekt** dialogového okna, vyberte **Visual C#** , **rozšiřitelnost**, **projekt VSIX**.  
+   - Chcete-li vytvořit nový projekt VSIX: V **nový projekt** dialogového okna, vyberte **Visual C#** , **rozšiřitelnost**, **projekt VSIX**.  
   
-   -   Vytvoření dvou nebo více řešení DSL v adresáři řešení VSIX.  
+   - Vytvoření dvou nebo více řešení DSL v adresáři řešení VSIX.  
   
         Pro každý DSL otevřete novou instanci sady Visual Studio. Vytvořte nový DSL a zadejte stejnou složku řešení jako řešení VSIX.  
   
         Ujistěte se, že vytvoření každé DSL s příponou jiný název souboru.  
   
-   -   Změna názvů **Dsl** a **DslPackage** projekty tak, aby byly všechny různé. Příklad: `Dsl1`, `DslPackage1`, `Dsl2`, `DslPackage2`.  
+   - Změna názvů **Dsl** a **DslPackage** projekty tak, aby byly všechny různé. Příklad: `Dsl1`, `DslPackage1`, `Dsl2`, `DslPackage2`.  
   
-   -   V každém **DslPackage\*\source.extension.tt**, aktualizujte tohoto řádku na správný název projektu Dsl:  
+   - V každém **DslPackage\*\source.extension.tt**, aktualizujte tohoto řádku na správný název projektu Dsl:  
   
         `string dslProjectName = "Dsl2";`  
   
-   -   Do řešení VSIX, přidejte Dsl * a DslPackage\* projekty.  
+   - Do řešení VSIX, přidejte Dsl * a DslPackage\* projekty.  
   
         Můžete chtít umístit každý pár ve vlastní složce řešení.  
   
 2. Kombinovat manifestu VSIX DSL:  
   
-   1.  Open _YourVsixProject_**\source.extension.manifest**.  
+   1. Open _YourVsixProject_**\source.extension.manifest**.  
   
-   2.  Pro každý DSL, zvolte **přidat obsah** a přidejte:  
+   2. Pro každý DSL, zvolte **přidat obsah** a přidejte:  
   
-       -   `Dsl*` projekt jako **Komponenta MEF**  
+       - `Dsl*` projekt jako **Komponenta MEF**  
   
-       -   `DslPackage*` projekt jako **Komponenta MEF**  
+       - `DslPackage*` projekt jako **Komponenta MEF**  
   
-       -   `DslPackage*` projekt jako **balíček VS**  
+       - `DslPackage*` projekt jako **balíček VS**  
   
 3. Sestavte řešení.  
   

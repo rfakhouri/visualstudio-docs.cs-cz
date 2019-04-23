@@ -13,12 +13,12 @@ caps.latest.revision: 32
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 093054168a2314711476a5c4bc8a98ffdc6f732e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5f838974292a16a9aeaea11362848b06f5abe982
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54780757"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048512"
 ---
 # <a name="how-to-profile-javascript-code-in-web-pages"></a>Postupy: Profilování kódu JavaScript ve webových stránkách
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,61 +27,61 @@ ms.locfileid: "54780757"
   
  **Požadavky**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
--   Internet Explorer 8 nebo novější.  
+- Internet Explorer 8 nebo novější.  
   
 > [!WARNING]
 >  Chcete-li Profilovat jazyk JavaScript v aplikacích pro Windows Store, naleznete v následujících tématech:  
 > 
 > - [Časování funkcí jazyka JavaScript](http://msdn.microsoft.com/library/b2bf49fc-aea7-4d9c-8fcf-cff8b8dd0c03) [časování funkcí jazyka JavaScript na vzdáleném zařízení](http://msdn.microsoft.com/library/d78812b6-a97e-46dc-8d99-e724d1d725d8)  
->   -   [Analýza dat časování funkcí jazyka JavaScript](http://msdn.microsoft.com/library/b5aea8d8-36df-47ba-a7ca-95406700ca9b)  
->   -  
+>   - [Analýza dat časování funkcí jazyka JavaScript](http://msdn.microsoft.com/library/b5aea8d8-36df-47ba-a7ca-95406700ca9b)  
+>   - 
   
  Průvodce Profilováním můžete použít k vytvoření relace výkonu. Určete metody instrumentace a potom určete možnost na stránce instrumentace dialogové okno Vlastnosti relace výkonu profilace jazyka JavaScript.  
   
  Když zadáte profilace JavaScriptu, kód jazyka JavaScript, který se spustí v prohlížeči a [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] kód, který se spustí na serveru jsou profilovány.  
   
--   Pro [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] webovou aplikaci, jak kód jazyka JavaScript, který se spustí v prohlížeči a [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] kód, který se spustí na serveru jsou profilovány.  
+- Pro [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] webovou aplikaci, jak kód jazyka JavaScript, který se spustí v prohlížeči a [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] kód, který se spustí na serveru jsou profilovány.  
   
--   Pro libovolnou webovou stránku je profilována kód jazyka JavaScript, který se spustí v prohlížeči.  
+- Pro libovolnou webovou stránku je profilována kód jazyka JavaScript, který se spustí v prohlížeči.  
   
 ### <a name="to-profile-javascript-in-an-aspnet-web-application-project"></a>Chcete-li Profilovat jazyk JavaScript v projektu aplikace ASP.NET  
   
-1.  V [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], otevřete [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] webový projekt.  
+1. V [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], otevřete [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] webový projekt.  
   
-2.  Na **analyzovat** nabídky, klikněte na tlačítko **spustit Průvodce výkonem**.  
+2. Na **analyzovat** nabídky, klikněte na tlačítko **spustit Průvodce výkonem**.  
   
-3.  Na první stránce Průvodce výkonem, zadejte **instrumentace** metoda profilace a potom klikněte na **Další**.  
+3. Na první stránce Průvodce výkonem, zadejte **instrumentace** metoda profilace a potom klikněte na **Další**.  
   
-4.  Na druhé stránce průvodce, ujistěte se, že je aktuální projekt vybraný v seznamu cílů a potom klikněte na tlačítko **Další.**  
+4. Na druhé stránce průvodce, ujistěte se, že je aktuální projekt vybraný v seznamu cílů a potom klikněte na tlačítko **Další.**  
   
-5.  Na třetí stránce průvodce vyberte **Profilovat jazyk JavaScript** zaškrtněte políčko a potom klikněte na tlačítko **Další**.  
+5. Na třetí stránce průvodce vyberte **Profilovat jazyk JavaScript** zaškrtněte políčko a potom klikněte na tlačítko **Další**.  
   
-6.  Na čtvrté stránce průvodce, klikněte na tlačítko **Dokončit** spusťte webovou aplikaci v prohlížeči.  
+6. Na čtvrté stránce průvodce, klikněte na tlačítko **Dokončit** spusťte webovou aplikaci v prohlížeči.  
   
-7.  Vykonává funkce, které chcete profil.  
+7. Vykonává funkce, které chcete profil.  
   
-8.  Chcete-li ukončit relaci profilování, ukončete prohlížeč.  
+8. Chcete-li ukončit relaci profilování, ukončete prohlížeč.  
   
 ### <a name="to-profile-javascript-in-individual-web-pages-or-a-javascript-applications"></a>Chcete-li Profilovat jazyk JavaScript v jednotlivých webových stránek nebo aplikací jazyka JavaScript  
   
-1.  Otevřít [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)].  
+1. Otevřít [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)].  
   
-2.  Na **analyzovat** nabídky, klikněte na tlačítko **spustit Průvodce výkonem**.  
+2. Na **analyzovat** nabídky, klikněte na tlačítko **spustit Průvodce výkonem**.  
   
-3.  Na první stránce Průvodce výkonem, zadejte **instrumentace** metoda profilace a potom klikněte na **Další**.  
+3. Na první stránce Průvodce výkonem, zadejte **instrumentace** metoda profilace a potom klikněte na **Další**.  
   
-4.  Na druhé stránce průvodce, klikněte na aplikace ASP.NET nebo JavaScript a potom klikněte na tlačítko **Další.**  
+4. Na druhé stránce průvodce, klikněte na aplikace ASP.NET nebo JavaScript a potom klikněte na tlačítko **Další.**  
   
-5.  Na třetí stránce průvodce:  
+5. Na třetí stránce průvodce:  
   
-    1.  Zadejte adresu URL stránky v **jaká adresa URL nebo cesta se spustí aplikace** pole.  
+    1. Zadejte adresu URL stránky v **jaká adresa URL nebo cesta se spustí aplikace** pole.  
   
-    2.  Vyberte **Profilovat jazyk JavaScript** zaškrtněte políčko a potom klikněte na tlačítko **Další**.  
+    2. Vyberte **Profilovat jazyk JavaScript** zaškrtněte políčko a potom klikněte na tlačítko **Další**.  
   
-6.  Na čtvrté stránce průvodce, klikněte na tlačítko **Dokončit** spuštění webové stránky v prohlížeči.  
+6. Na čtvrté stránce průvodce, klikněte na tlačítko **Dokončit** spuštění webové stránky v prohlížeči.  
   
-7.  Vykonává funkce, které chcete profil.  
+7. Vykonává funkce, které chcete profil.  
   
-8.  Chcete-li ukončit relaci profilování, ukončete prohlížeč.
+8. Chcete-li ukončit relaci profilování, ukončete prohlížeč.

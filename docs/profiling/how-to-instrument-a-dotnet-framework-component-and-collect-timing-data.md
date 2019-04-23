@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 141c1a045a5d1f668fdedf9477dfa2b7ceffbd56
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: a19c30e043a663e7cb7b6a910f67278a1d3172bf
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59664187"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046901"
 ---
 # <a name="how-to-instrument-a-stand-alone-net-framework-component-and-collect-timing-data-with-the-profiler-from-the-command-line"></a>Postupy: Instrumentace samostatné součásti rozhraní .NET Framework a shromažďování dat časování s profilerem z příkazového řádku
 Toto téma popisuje způsob použití [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] příkazového řádku nástrojů pro profilaci k instrumentaci komponenty rozhraní .NET Framework, jako. *soubor exe* nebo. *Knihovna DLL* souboru a shromažďování podrobných dat časování.
@@ -70,7 +70,7 @@ Toto téma popisuje způsob použití [!INCLUDE[vsprvs](../code-quality/includes
 
 #### <a name="to-start-and-stop-data-collection"></a>Spuštění a zastavení shromažďování dat
 
--   Následující páry možností spouští a zastavují sběr dat. Každou možnost zadejte na samostatný příkazový řádek. Sběr dat lze zapnout a vypnout několikrát.
+- Následující páry možností spouští a zastavují sběr dat. Každou možnost zadejte na samostatný příkazový řádek. Sběr dat lze zapnout a vypnout několikrát.
 
     |Možnost|Popis|
     |------------|-----------------|
@@ -83,13 +83,13 @@ Toto téma popisuje způsob použití [!INCLUDE[vsprvs](../code-quality/includes
 
 #### <a name="to-end-a-profiling-session"></a>Chcete-li ukončit relaci profilování
 
-1.  Ukončete cílovou aplikaci.
+1. Ukončete cílovou aplikaci.
 
-2.  Vypněte profiler. Typ:
+2. Vypněte profiler. Typ:
 
      **/ Shutdown VSPerfCmd**
 
-3.  (Volitelné) Vyčistěte proměnné prostředí profilování. Typ:
+3. (Volitelné) Vyčistěte proměnné prostředí profilování. Typ:
 
      **Vsperfclrenv – / vypnuté**
 

@@ -8,43 +8,43 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b9b4856188cb08379649ab7611dceb5b26b55149
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: de1004dd7a62fe4163147db4928783dd9a0dca98
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55950471"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049561"
 ---
 # <a name="how-to-use-breadcrumb-navigation"></a>Postupy: Používání navigace s popisem cesty
 
 Chcete-li změnit sadu aktivit, které se zobrazí v Návrháři postupu provádění třemi způsoby:
 
-1.  Dvakrát klikněte na Přejít k podřízené aktivity.
+1. Dvakrát klikněte na Přejít k podřízené aktivity.
 
-2.  Klikněte na tlačítko na panelu navigace s popisem cesty a přejděte na nadřazenou aktivitou.
+2. Klikněte na tlačítko na panelu navigace s popisem cesty a přejděte na nadřazenou aktivitou.
 
-3.  Rozbalit nebo sbalit aktivity na místě.
+3. Rozbalit nebo sbalit aktivity na místě.
 
 ## <a name="using-breadcrumb-navigation"></a>Pomocí navigace s popisem cesty
 
-1.  Dvakrát klikněte na aktivitu pracovního postupu návrháře změna kořenové aktivity na kliknutí na aktivity. Kliknutí na aktivity se pak úplně rozbalit v kořenovém adresáři a jeho nadřazenými prvky jsou uvedeny na panelu navigace s popisem cesty. To se někdy nazývá procházení nebo z aktivity.
+1. Dvakrát klikněte na aktivitu pracovního postupu návrháře změna kořenové aktivity na kliknutí na aktivity. Kliknutí na aktivity se pak úplně rozbalit v kořenovém adresáři a jeho nadřazenými prvky jsou uvedeny na panelu navigace s popisem cesty. To se někdy nazývá procházení nebo z aktivity.
 
-2.  Pokud chcete přejít na nadřazena aktuální kořenové aktivity, klikněte na aktivitu v panelu s popisem cesty.
+2. Pokud chcete přejít na nadřazena aktuální kořenové aktivity, klikněte na aktivitu v panelu s popisem cesty.
 
 ## <a name="expanding-or-collapsing-an-activity-in-place"></a>Rozbalení a sbalení aktivitu na místě
 
-1.  Kliknutím na dvojité šipky pro aktivitu rozbalí nebo sbalí aktivity na místě.
+1. Kliknutím na dvojité šipky pro aktivitu rozbalí nebo sbalí aktivity na místě.
 
-2.  Při změně stavu stavu rozbalení kliknutím na tlačítko Nový stav rozšíření je uložen v XAML.
+2. Při změně stavu stavu rozbalení kliknutím na tlačítko Nový stav rozšíření je uložen v XAML.
 
     > [!WARNING]
     > Ne všechny aktivity lze rozšířit na místě. Existují dva možné případy, kdy aktivita nelze rozšířit na místě: buď nadřazené aktivity nepovoluje své podřízené objekty rozbalen v místě, (například aktivity ve vývojovém diagramu nelze rozšířit na místě), nebo Návrhář aktivity neumožňuje samotného Rozbalit na místě. I když žádný z návrhářů aktivit v Návrháři postupu provádění nemá druhé chování, některé vlastní aktivity může tímto způsobem chovat.
 
 ## <a name="expanding-all-or-collapsing-all-activities"></a>Všechny rozbalení nebo sbalení všech aktivit
 
-1.  Použití **Rozbalit vše** a **Sbalit vše** tlačítka v uživatelském rozhraní pro rozbalení a sbalení všech aktivit v kořenovém adresáři aktuální navigace s popisem cesty. Všimněte si, že všechny rozbalit nebo sbalit všechny jsou globální stavy. To znamená, že když změníte kořenové aktivity pomocí navigace s popisem cesty, Rozbalit vše nebo sbalit všechny stavy opakuje dokud nekliknete na tlačítko **obnovení**.
+1. Použití **Rozbalit vše** a **Sbalit vše** tlačítka v uživatelském rozhraní pro rozbalení a sbalení všech aktivit v kořenovém adresáři aktuální navigace s popisem cesty. Všimněte si, že všechny rozbalit nebo sbalit všechny jsou globální stavy. To znamená, že když změníte kořenové aktivity pomocí navigace s popisem cesty, Rozbalit vše nebo sbalit všechny stavy opakuje dokud nekliknete na tlačítko **obnovení**.
 
-2.  Po použily všechny rozbalit nebo sbalit všechny stavy, můžete klepnout **obnovení** tlačítko, které se zobrazí chcete přejít zpátky k prohlížení stavu dříve použít u každé aktivity.
+2. Po použily všechny rozbalit nebo sbalit všechny stavy, můžete klepnout **obnovení** tlačítko, které se zobrazí chcete přejít zpátky k prohlížení stavu dříve použít u každé aktivity.
 
     > [!WARNING]
     > Pokud aktivitu, například <xref:System.Activities.Statements.Flowchart>, zvolil z rozbalit na místě, přidružený k funkci **Rozbalit vše** a **Sbalit vše** tlačítka je zakázán na **vývojový diagram**  návrháře. Další informace o **vývojový diagram** návrháře, viz [vývojový diagram](../workflow-designer/flowchart-activity-designer.md) tématu.

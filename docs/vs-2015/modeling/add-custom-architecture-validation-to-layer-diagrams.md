@@ -11,14 +11,14 @@ caps.latest.revision: 44
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6cf1dad590a8d7632e9077764e85f432373cc54b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b91f89bc6c3db52526c8c5e64549b08310a17313
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54796801"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045876"
 ---
-# <a name="add-custom-architecture-validation-to-layer-diagrams"></a>Přidání ověřování vlastní architektury do diagramů vrstev
+# <a name="add-custom-architecture-validation-to-layer-diagrams"></a>Přidání ověření vlastní architektury do diagramů vrstev
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 V sadě Visual Studio uživatelé mohou ověřit zdrojový kód v projektu proti vrstvě modelu, tak, aby mohli ověřit, že zdrojový kód odpovídá závislostem na diagramu vrstvy. Existuje standardní ověřovací algoritmus, ale můžete definovat vlastní rozšíření ověřování.  
@@ -51,7 +51,7 @@ V sadě Visual Studio uživatelé mohou ověřit zdrojový kód v projektu proti
    >  Do šablony makethe fungovat správně:  
    > 
    > - Upravte volání `LogValidationError` odebrat volitelné argumenty `errorSourceNodes` a `errorTargetNodes`.  
-   >   -   Pokud používáte vlastní vlastnosti, použijte aktualizace uvedené v [přidání vlastních vlastností do diagramů vrstev](../modeling/add-custom-properties-to-layer-diagrams.md).  
+   >   - Pokud používáte vlastní vlastnosti, použijte aktualizace uvedené v [přidání vlastních vlastností do diagramů vrstev](../modeling/add-custom-properties-to-layer-diagrams.md).  
   
 3. Upravte kód, aby definoval vaše ověření. Další informace najdete v tématu [programování ověření](#programming).  
   
@@ -67,19 +67,19 @@ V sadě Visual Studio uživatelé mohou ověřit zdrojový kód v projektu proti
   
 #### <a name="to-add-layer-validation-to-a-separate-vsix"></a>Přidání ověření vrstvy do samostatného souboru VSIX  
   
-1.  Vytvořte projekt knihovny tříd v nové nebo existující řešení sady Visual Studio. V **nový projekt** dialogové okno, klikněte na tlačítko **Visual C#** a potom klikněte na tlačítko **knihovny tříd**. Tento projekt bude obsahovat třídu ověřování vrstvy.  
+1. Vytvořte projekt knihovny tříd v nové nebo existující řešení sady Visual Studio. V **nový projekt** dialogové okno, klikněte na tlačítko **Visual C#** a potom klikněte na tlačítko **knihovny tříd**. Tento projekt bude obsahovat třídu ověřování vrstvy.  
   
-2.  Určete nebo vytvořte VSIX projekt ve vašem řešení. Projekt VSIX obsahuje soubor s názvem **source.extension.vsixmanifest**. Pokud budete muset přidat projekt VSIX, postupujte podle těchto kroků:  
+2. Určete nebo vytvořte VSIX projekt ve vašem řešení. Projekt VSIX obsahuje soubor s názvem **source.extension.vsixmanifest**. Pokud budete muset přidat projekt VSIX, postupujte podle těchto kroků:  
   
-    1.  V **nový projekt** dialogového okna zvolte **Visual C#**, **rozšiřitelnost**, **projekt VSIX**.  
+    1. V **nový projekt** dialogového okna zvolte **Visual C#**, **rozšiřitelnost**, **projekt VSIX**.  
   
-    2.  V **Průzkumníka řešení**, v místní nabídce projektu VSIX **nastavit jako spouštěný projekt**.  
+    2. V **Průzkumníka řešení**, v místní nabídce projektu VSIX **nastavit jako spouštěný projekt**.  
   
-3.  V **source.extension.vsixmanifest**v části **prostředky**, přidejte vrstvu ověřování projektu jako komponentu MEF:  
+3. V **source.extension.vsixmanifest**v části **prostředky**, přidejte vrstvu ověřování projektu jako komponentu MEF:  
   
-    1.  Zvolte **nové**.  
+    1. Zvolte **nové**.  
   
-    2.  V **přidat nové aktivum** dialogovém okně nastavení:  
+    2. V **přidat nové aktivum** dialogovém okně nastavení:  
   
          **Type** = **Microsoft.VisualStudio.MefComponent**  
   
@@ -87,11 +87,11 @@ V sadě Visual Studio uživatelé mohou ověřit zdrojový kód v projektu proti
   
          **Projekt** = *projektu program pro ověření*  
   
-4.  Musíte taky přidat ji jako vrstvu ověřování:  
+4. Musíte taky přidat ji jako vrstvu ověřování:  
   
-    1.  Zvolte **nové**.  
+    1. Zvolte **nové**.  
   
-    2.  V **přidat nové aktivum** dialogovém okně nastavení:  
+    2. V **přidat nové aktivum** dialogovém okně nastavení:  
   
          **Type** = **Microsoft.VisualStudio.ArchitectureTools.Layer.Validator**. To však není jednou z možností v rozevíracím seznamu. Je nutné zadat z klávesnice.  
   
@@ -99,7 +99,7 @@ V sadě Visual Studio uživatelé mohou ověřit zdrojový kód v projektu proti
   
          **Projekt** = *projektu program pro ověření*  
   
-5.  Vraťte se do projektu ověření vrstvy a přidejte následující odkazy projektu:  
+5. Vraťte se do projektu ověření vrstvy a přidejte následující odkazy projektu:  
   
     |**Referenční informace**|**To umožňuje provést**|  
     |-------------------|------------------------------------|  
@@ -110,18 +110,18 @@ V sadě Visual Studio uživatelé mohou ověřit zdrojový kód v projektu proti
     |System.ComponentModel.Composition|Definovat součást ověřování pomocí Managed Extensibility Framework (MEF)|  
     |Microsoft.VisualStudio.Modeling.Sdk.[version]|Definovat rozšíření modelování|  
   
-6.  Zkopírujte ukázkový kód na konci tohoto tématu do souboru třídy v projektu knihovny ověřování tak, aby obsahovala kód pro ověření. Další informace najdete v tématu [programování ověření](#programming).  
+6. Zkopírujte ukázkový kód na konci tohoto tématu do souboru třídy v projektu knihovny ověřování tak, aby obsahovala kód pro ověření. Další informace najdete v tématu [programování ověření](#programming).  
   
-7.  Chcete-li otestovat rozšíření, naleznete v tématu [ladění ověřování vrstev](#debugging).  
+7. Chcete-li otestovat rozšíření, naleznete v tématu [ladění ověřování vrstev](#debugging).  
   
     > [!NOTE]
     >  Vaše metoda bude volána pouze za zvláštních okolností a zarážky nebudou fungovat automaticky. Další informace najdete v tématu [ladění ověřování vrstev](#debugging).  
   
-8.  Chcete-li nainstalovat VSIX v instanci hlavní aplikace [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], nebo v jiném počítači, vyhledejte **VSIX** ve **bin** adresáře projektu VSIX. Zkopírujte ho do počítače, ve které chcete nainstalovat VSIX. Poklikejte na soubor VSIX v Průzkumníku Windows. (Průzkumník souborů v systému Windows 8.)  
+8. Chcete-li nainstalovat VSIX v instanci hlavní aplikace [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], nebo v jiném počítači, vyhledejte **VSIX** ve **bin** adresáře projektu VSIX. Zkopírujte ho do počítače, ve které chcete nainstalovat VSIX. Poklikejte na soubor VSIX v Průzkumníku Windows. (Průzkumník souborů v systému Windows 8.)  
   
      Chcete-li ho odinstalovat, použijte **rozšíření a aktualizace** na **nástroje** nabídky.  
   
-##  <a name="programming"></a> Ověření programování  
+## <a name="programming"></a> Ověření programování  
  K definování ověření přípony vrstvy definujete třídu, která má následující vlastnosti:  
   
 - Celková forma deklarace je následující:  
@@ -190,7 +190,7 @@ V sadě Visual Studio uživatelé mohou ověřit zdrojový kód v projektu proti
   
   Propojení z vrstev do prvků v kódu mají kategorii "Představuje".  
   
-##  <a name="debugging"></a> Ladění ověřování  
+## <a name="debugging"></a> Ladění ověřování  
  Chcete-li ladit rozšíření ověřování vrstvy, stiskněte CTRL + F5. Experimentální instanci [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] otevře. V tomto případě otevřete nebo vytvořte model vrstev. Tento model musí být přidružen ke kódu a musí mít alespoň jednu závislost.  
   
 ### <a name="test-with-a-solution-that-contains-dependencies"></a>Otestujte řešení, která obsahuje závislosti  
@@ -217,7 +217,7 @@ V sadě Visual Studio uživatelé mohou ověřit zdrojový kód v projektu proti
 ### <a name="deploying-a-validation-extension"></a>Nasazení rozšíření ověřování  
  Chcete-li nainstalovat rozšíření ověřování v počítači, na kterém je nainstalován vhodnou verzi sady Visual Studio, otevřete soubor VSIX v cílovém počítači. K instalaci na počítač, na kterém [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] je nainstalovaný, musíte ručně extrahovat obsah souboru VSIX do složky Extensions. Další informace najdete v tématu [nasazení rozšíření pro modelování vrstev](../modeling/deploy-a-layer-model-extension.md).  
   
-##  <a name="example"></a> Příklad kódu  
+## <a name="example"></a> Příklad kódu  
   
 ```csharp  
 using System;  

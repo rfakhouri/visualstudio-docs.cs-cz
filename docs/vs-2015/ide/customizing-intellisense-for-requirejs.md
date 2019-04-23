@@ -9,12 +9,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5bcf5f27653782d0280082713306e142702559c8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ce0aadf455e95895309bbae4f23eb84c75935428
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54770314"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049864"
 ---
 # <a name="customizing-intellisense-for-requirejs"></a>Přizpůsobení IntelliSense pro RequireJS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,9 +25,9 @@ Od verze Visual Studio 2013 Update 4, podpora pro oblíbené soubor RequireJS Ja
   
  Toto téma popisuje, jak:  
   
--   Přizpůsobení RequireJS v projektech ASP.NET  
+- Přizpůsobení RequireJS v projektech ASP.NET  
   
--   Přizpůsobit RequireJS JSProj projekty, které se používají k vytváření aplikací Apache Cordova, aplikace Windows Store a aplikace LightSwitch HTML  
+- Přizpůsobit RequireJS JSProj projekty, které se používají k vytváření aplikací Apache Cordova, aplikace Windows Store a aplikace LightSwitch HTML  
   
 ## <a name="customize-requirejs-in-aspnet-projects"></a>Přizpůsobení RequireJS v projektech ASP.NET  
  Pokud soubor s názvem require.js odkazuje aktuální soubor JavaScript automaticky povolena podpora pro RequireJS (Další informace najdete v části Určení kontextu technologie IntelliSense v [technologie IntelliSense jazyka JavaScript](../ide/javascript-intellisense.md)). V projektech ASP.NET, odkazující na require.js se obvykle provádí pomocí / / / / / \<odkaz / > direktivy v souboru _references.js.  

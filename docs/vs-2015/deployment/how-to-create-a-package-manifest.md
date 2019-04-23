@@ -19,12 +19,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 725f2a7882b0825795ac75906bdfd6ef1cfef669
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c711c50ab484cc88b1d6aff5c8e3018cead69953
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54800076"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046012"
 ---
 # <a name="how-to-create-a-package-manifest"></a>Postupy: Vytvoření manifestu balíčku
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,13 +37,13 @@ Nasazení nezbytných součástí pro vaši aplikaci, můžete balíček zavád�
   
 #### <a name="to-create-the-package-manifest"></a>K vytvoření manifestu balíčku  
   
-1.  Vytvořte adresář pro balíček zaváděcího nástroje. Tento příklad používá C:\package.  
+1. Vytvořte adresář pro balíček zaváděcího nástroje. Tento příklad používá C:\package.  
   
-2.  Vytvořte podadresář s názvem národního prostředí, například cs pro angličtinu.  
+2. Vytvořte podadresář s názvem národního prostředí, například cs pro angličtinu.  
   
-3.  V sadě Visual Studio, vytvořit soubor XML, který je pojmenován `package.xml`a uložte ho do složky C:\package\en.  
+3. V sadě Visual Studio, vytvořit soubor XML, který je pojmenován `package.xml`a uložte ho do složky C:\package\en.  
   
-4.  Přidejte XML pro název balíčku zaváděcího nástroje, jazykovou verzi pro tento manifest balíčku lokalizované a volitelné licenční smlouvu. Následující kód XML používá proměnné `DisplayName` a `Culture`, které jsou definovány v prvku novější.  
+4. Přidejte XML pro název balíčku zaváděcího nástroje, jazykovou verzi pro tento manifest balíčku lokalizované a volitelné licenční smlouvu. Následující kód XML používá proměnné `DisplayName` a `Culture`, které jsou definovány v prvku novější.  
   
     ```  
     <Package  
@@ -53,7 +53,7 @@ Nasazení nezbytných součástí pro vaši aplikaci, můžete balíček zavád�
         LicenseAgreement="eula.txt">  
     ```  
   
-5.  Přidejte XML pro všechny soubory, které jsou v adresáři specifických pro národní prostředí. Následující kód XML používá soubor, který je pojmenován eula.txt, který je možné použít **en** národní prostředí.  
+5. Přidejte XML pro všechny soubory, které jsou v adresáři specifických pro národní prostředí. Následující kód XML používá soubor, který je pojmenován eula.txt, který je možné použít **en** národní prostředí.  
   
     ```  
     <PackageFiles>  
@@ -61,7 +61,7 @@ Nasazení nezbytných součástí pro vaši aplikaci, můžete balíček zavád�
     </PackageFiles>  
     ```  
   
-6.  Přidejte kód jazyka XML pro definování lokalizovatelných řetězců pro balíček zaváděcího nástroje. Následující kód XML přidá chybové řetězce pro národní prostředí cs.  
+6. Přidejte kód jazyka XML pro definování lokalizovatelných řetězců pro balíček zaváděcího nástroje. Následující kód XML přidá chybové řetězce pro národní prostředí cs.  
   
     ```  
       <Strings>  
@@ -74,7 +74,7 @@ Nasazení nezbytných součástí pro vaši aplikaci, můžete balíček zavád�
     </Strings>  
     ```  
   
-7.  Zkopírujte složku C:\package do adresáře zaváděcího nástroje sady Visual Studio. Pro sadu Visual Studio 2010 je to adresář SDKs\Windows\v7.0A\Bootstrapper\Packages \Program Files\Microsoft.  
+7. Zkopírujte složku C:\package do adresáře zaváděcího nástroje sady Visual Studio. Pro sadu Visual Studio 2010 je to adresář SDKs\Windows\v7.0A\Bootstrapper\Packages \Program Files\Microsoft.  
   
 ## <a name="example"></a>Příklad  
  Manifest balíčku obsahuje informace o specifických pro národní prostředí, jako jsou chybové zprávy, licenční podmínky pro software a jazykových sad.  

@@ -1,5 +1,5 @@
 ---
-title: Nástroj Dotfuscator Community
+title: Dotfuscator Community
 ms.date: 03/28/2019
 ms.devlang: dotnet
 ms.topic: conceptual
@@ -18,13 +18,13 @@ author: Joe-Sewell-PreEmptive
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: bf77f2796a224d6fad81c4a1485ba82f8822cfcc
-ms.sourcegitcommit: 40393347a36779230d128f2355a911632a8d458e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58866702"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60058366"
 ---
-# <a name="dotfuscator-community"></a>Nástroj Dotfuscator Community
+# <a name="dotfuscator-community"></a>Dotfuscator Community
 
 ***PreEmptive ochranu – řešení Dotfuscator*** poskytuje komplexní ochranu aplikací .NET snadno přizpůsobí do vývojového cyklu zabezpečeného softwaru.
 Použijte ho k posílení zabezpečení, ochraně a vyřadit plochy, mobilních, server a vložené aplikace zabezpečené obchodní tajemství a jinému duševnímu (IP), snížit pirátství a padělání a Chraňte se proti manipulaci a neoprávněným ladění.

@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: e13de2f53622923aef1d4870de30be1afdf891ac
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: dc2b1c25f9b4cf9bc777eefd0c95985a534799b5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942905"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60058133"
 ---
 # <a name="how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-or-designer"></a>Postupy: Vytvoření metod DataContext namapovaných na uložené procedury a funkce (O/R Designer)
 
@@ -33,17 +33,17 @@ Můžete vytvořit <xref:System.Data.Linq.DataContext> metody přetažením ulo�
 
 ### <a name="to-create-datacontext-methods-that-return-automatically-generated-types"></a>Chcete-li vytvořit DataContext metody, které vracejí automaticky vygenerovaných typů
 
-1.  V **Průzkumníka serveru** nebo **Průzkumník databáze**, rozbalte **uložené procedury** uzel databáze, se kterým pracujete.
+1. V **Průzkumníka serveru** nebo **Průzkumník databáze**, rozbalte **uložené procedury** uzel databáze, se kterým pracujete.
 
-2.  Vyhledejte požadovanou uložené procedury a přetáhněte ji na prázdnou oblast **O/R Designer**.
+2. Vyhledejte požadovanou uložené procedury a přetáhněte ji na prázdnou oblast **O/R Designer**.
 
      <xref:System.Data.Linq.DataContext> Metoda se vytvoří s automaticky generovanou návratový typ a zobrazí se v **metody** podokně.
 
 ### <a name="to-create-datacontext-methods-that-have-the-return-type-of-an-entity-class"></a>Vytvoření metod DataContext, které mají návratový typ třídy entity
 
-1.  V **Průzkumníka serveru** nebo **Průzkumník databáze**, rozbalte **uložené procedury** uzel databáze, se kterým pracujete.
+1. V **Průzkumníka serveru** nebo **Průzkumník databáze**, rozbalte **uložené procedury** uzel databáze, se kterým pracujete.
 
-2.  Vyhledejte požadovanou uložené procedury a přetáhněte ji na existující třídu entity v **O/R Designer**.
+2. Vyhledejte požadovanou uložené procedury a přetáhněte ji na existující třídu entity v **O/R Designer**.
 
      <xref:System.Data.Linq.DataContext> Metoda s návratovým typem třídy vybranou entitu a je zahrnut v **metody** podokně.
 

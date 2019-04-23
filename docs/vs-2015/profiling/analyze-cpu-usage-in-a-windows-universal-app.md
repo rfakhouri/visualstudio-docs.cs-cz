@@ -15,12 +15,12 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: d6728ce1f83c53a406512c75d89368dbcdd87c3e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: fcc31e2f7fb06f58f07b0af58a1375466b16cc23
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54777430"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053049"
 ---
 # <a name="analyze-cpu-usage-in-a-windows-universal-app"></a>Analýza využití procesoru v univerzální aplikace pro Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,27 +34,27 @@ Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "wi
   
  Tento názorný postup vás provede shromažďování a analýza využití procesoru pro jednoduchou aplikaci Windows Universal XAML.  
   
-##  <a name="BKMK_Create_the_CpuUseDemo_project"></a> Vytvoření projektu CpuUseDemo  
+## <a name="BKMK_Create_the_CpuUseDemo_project"></a> Vytvoření projektu CpuUseDemo  
  **CpuUseDemo** je aplikace, který byl vytvořen za účelem ukazují, jak shromažďovat a analyzovat data o využití procesoru. Tlačítka vygenerovat číslo při volání metody, která vybere maximální hodnota z více volání funkce. Volaná funkce vytvoří velký počet náhodných hodnot a vrátí poslední z nich. Data se zobrazí v textovém poli.  
   
-1.  Vytvoření nového projektu s C# Windows Universal aplikaci s názvem **CpuUseDemo** pomocí **BlankApp** šablony.  
+1. Vytvoření nového projektu s C# Windows Universal aplikaci s názvem **CpuUseDemo** pomocí **BlankApp** šablony.  
   
      ![Vytvořte CpuUseDemoProject](../profiling/media/cpu-use-newproject.png "CPU_USE_NewProject")  
   
-2.  Nahraďte souboru MainPage.xaml s [tento kód](#BKMK_MainPage_xaml).  
+2. Nahraďte souboru MainPage.xaml s [tento kód](#BKMK_MainPage_xaml).  
   
-3.  Nahraďte MainPage.xaml.cs s [tento kód](#BKMK_MainPage_xaml_cs).  
+3. Nahraďte MainPage.xaml.cs s [tento kód](#BKMK_MainPage_xaml_cs).  
   
-4.  Vytvořte aplikaci a vyzkoušejte si to. Aplikace není dostatečně jednoduchá, až vám ukážeme některé běžné případy analýzy dat využití procesoru.  
+4. Vytvořte aplikaci a vyzkoušejte si to. Aplikace není dostatečně jednoduchá, až vám ukážeme některé běžné případy analýzy dat využití procesoru.  
   
-##  <a name="BKMK_Collect_CPU_usage_data"></a> Shromažďování dat o využití procesoru  
+## <a name="BKMK_Collect_CPU_usage_data"></a> Shromažďování dat o využití procesoru  
  ![Spustit sestavení pro vydání aplikace v simulátoru](../profiling/media/cpu-use-wt-setsimulatorandretail.png "CPU_USE_WT_SetSimulatorAndRetail")  
   
 1. V sadě Visual Studio, nastavte cíl nasazení na **simulátor** a konfigurace řešení **vydání**.  
   
-   -   Spuštění aplikace v simulátoru umožňuje snadno přepínat mezi aplikací a rozhraní IDE sady Visual Studio.  
+   - Spuštění aplikace v simulátoru umožňuje snadno přepínat mezi aplikací a rozhraní IDE sady Visual Studio.  
   
-   -   Tuto aplikaci spustíte v **vydání** režim poskytuje lepší přehled aplikace skutečný výkon vaší aplikace.  
+   - Tuto aplikaci spustíte v **vydání** režim poskytuje lepší přehled aplikace skutečný výkon vaší aplikace.  
   
 2. Na **ladění** nabídce zvolte **Profiler výkonu...** .  
   
@@ -72,14 +72,14 @@ Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "wi
   
    ![Sestava CpuUsage](../profiling/media/cpu-use-wt-report.png "CPU_USE_WT_Report")  
   
-##  <a name="BKMK_Analyze_the_CPU_Usage_report"></a> Analýza sestavy využití procesoru  
+## <a name="BKMK_Analyze_the_CPU_Usage_report"></a> Analýza sestavy využití procesoru  
   
-###  <a name="BKMK_CPU_utilization_timeline_graph"></a> Časová osa graf využití procesoru  
+### <a name="BKMK_CPU_utilization_timeline_graph"></a> Časová osa graf využití procesoru  
  ![CpuUtilization &#40;%&#41; časová osa grafu](../profiling/media/cpu-use-wt-timelinegraph.png "CPU_USE_WT_TimelineGraph")  
   
  Graf využití procesoru obsahuje informace o aktivitě využití procesoru aplikace jako procento všech čas procesoru ze všech jader procesoru na zařízení. Data této sestavy byl shromážděn dvoujádrový počítače. Dva extrémní představují aktivity procesoru kliknutí dvě tlačítka. `GetMaxNumberButton_Click` provede synchronně jednojádrový, takže je vhodné metody výška grafu nikdy přesáhne 50 %. `GetMaxNumberAsycButton_Click` běží asynchronně napříč obě jádra ho tak, že ho znovu vypadá hned, který získá blíž k využívání prostředků procesoru na obou jádrech všechny jeho zásobníku.  
   
-####  <a name="BKMK_Select_timeline_segments_to_view_details"></a> Vyberte časovou osu segmenty, chcete-li zobrazit podrobnosti  
+#### <a name="BKMK_Select_timeline_segments_to_view_details"></a> Vyberte časovou osu segmenty, chcete-li zobrazit podrobnosti  
  Pomocí výběru panelů na **diagnostické relace** časové osy a zaměřte se na GetMaxNumberButton_Click data:  
   
  ![GetMaxNumberButton&#95;Click selected](../profiling/media/cpu-use-wt-getmaxnumberreport.png "CPU_USE_WT_GetMaxNumberReport")  
@@ -92,10 +92,10 @@ Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "wi
   
  Tato metoda nedokončí asi sekundy rychlejší než `GetMaxNumberButton_Click`, ale jsou méně zřejmé, význam položky stromu volání.  
   
-###  <a name="BKMK_The_CPU_Usage_call_tree"></a> Využití procesoru strom volání  
+### <a name="BKMK_The_CPU_Usage_call_tree"></a> Využití procesoru strom volání  
  Abyste mohli začít Principy informace o volání stromu, klikněte `GetMaxNumberButton_Click` segmentovat a podívejte se na Podrobnosti stromu volání.  
   
-####  <a name="BKMK_Call_tree_structure"></a> Struktura stromu volání  
+#### <a name="BKMK_Call_tree_structure"></a> Struktura stromu volání  
  ![GetMaxNumberButton&#95;klikněte na tlačítko volání stromu](../profiling/media/cpu-use-wt-getmaxnumbercalltree-annotated.png "CPU_USE_WT_GetMaxNumberCallTree_annotated")  
   
 |||  
@@ -105,7 +105,7 @@ Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "wi
 |![3. krok](../profiling/media/procguid-3.png "ProcGuid_3")|Uzlu druhé úrovně jsou podřízeny metody uživatelského kódu a asynchronní rutiny, které volá nebo vytváří systémový kód a kód architektury druhé úrovně.|  
 |![4. krok](../profiling/media/procguid-4.png "ProcGuid_4")|Podřízené uzly metody obsahují jenom data pro volání nadřízené metody. Pokud zakážete **Zobrazit externí kód**, mohou metody aplikace obsahovat také uzel **[Externí kód]**.|  
   
-####  <a name="BKMK_External_Code"></a> Externí kód  
+#### <a name="BKMK_External_Code"></a> Externí kód  
  Externí kód se skládá z funkce v systému a komponenty rozhraní, které jsou spouštěny v kódu, který napíšete. Externí kód obsahuje funkce, které spuštění a zastavení aplikace, vykreslení uživatelského rozhraní, řízení práce s vlákny a poskytují další nižší úrovně služby do aplikace. Ve většině případů nebudete zájem o externí kód, a proto využití procesoru volání stromu shromáždí externí funkce metody uživatele do jednoho **[externí kód]** uzlu.  
   
  Pokud chcete zobrazit volání cesty z externího kódu, zvolte **zobrazit externí kód** z **filtrovat zobrazení** seznamu a klikněte na tlačítko **použít**.  
@@ -120,7 +120,7 @@ Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "wi
   
  ![Hledat vnořené externí kód](../profiling/media/cpu-use-wt-showexternalcodetoowide-found.png "CPU_USE_WT_ShowExternalCodeTooWide_Found")  
   
-###  <a name="BKMK_Call_tree_data_columns"></a> Volání stromu datové sloupce  
+### <a name="BKMK_Call_tree_data_columns"></a> Volání stromu datové sloupce  
   
 |||  
 |-|-|  
@@ -130,7 +130,7 @@ Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "wi
 |**Vlastní čas procesoru (ms)**|Počet milisekund strávený ve volání funkce ve vybraném časovém rozsahu a funkce, které byly volány funkce.|  
 |**Modul**|Název modulu, který obsahuje funkce, nebo počet modulů, který obsahuje funkce v uzlu [externí kód].|  
   
-###  <a name="BKMK_Asynchronous_functions_in_the_CPU_Usage_call_tree"></a> Strom volání asynchronní funkce v využití procesoru  
+### <a name="BKMK_Asynchronous_functions_in_the_CPU_Usage_call_tree"></a> Strom volání asynchronní funkce v využití procesoru  
  Když kompilátor narazí na asynchronní metodu, vytvoří třídu skryté k řízení provádění metody. Třída je koncepčně stavového stroje, který obsahuje seznam vygenerovaný kompilátorem funkce, které volají operace původní metody asynchronně, a zpětná volání, Plánovač a iterátory, které jsou nutné k nim správně. Při původní metody je volána metodou nadřazeného, modul runtime odebere z kontextu spuštění nadřazené metody a metody třídy skryté běží v kontextu systému a rozhraní framework kód, který řídí spuštění aplikace. Asynchronní metody jsou často, ale ne vždy spouštěny na jeden nebo více různých vláken. Tento kód se zobrazí ve stromu volání procesoru jako podřízené objekty **[externí kód]** uzel bezprostředně pod nejvyšší uzel stromu.  
   
  Tento údaj zobrazíte v našem příkladu, znovu vyberte `GetMaxNumberAsyncButton_Click` segment na časové ose.  
@@ -141,22 +141,22 @@ Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "wi
   
  ![Rozbalit GetMaxNumberAsyncButton&#95;klikněte na tlačítko volání stromu](../profiling/media/cpu-use-wt-getmaxnumberasync-expandedcalltree.png "CPU_USE_WT_GetMaxNumberAsync_ExpandedCallTree")  
   
--   `MainPage::GetMaxNumberAsyncButton_Click` velmi malý; nemá spravuje seznam hodnot úloh, vypočítá maximální počet výsledků a zobrazí výstup.  
+- `MainPage::GetMaxNumberAsyncButton_Click` velmi malý; nemá spravuje seznam hodnot úloh, vypočítá maximální počet výsledků a zobrazí výstup.  
   
--   `MainPage+<GetMaxNumberAsyncButton_Click>d__3::MoveNext` ukazuje aktivit potřebných k naplánování a spuštění 48 úkoly, které obalují volání `GetNumberAsync`.  
+- `MainPage+<GetMaxNumberAsyncButton_Click>d__3::MoveNext` ukazuje aktivit potřebných k naplánování a spuštění 48 úkoly, které obalují volání `GetNumberAsync`.  
   
--   `MainPage::<GetNumberAsync>b__b` ukazuje aktivitu úloh, které volají `GetNumber`.  
+- `MainPage::<GetNumberAsync>b__b` ukazuje aktivitu úloh, které volají `GetNumber`.  
   
-##  <a name="BKMK_Next_steps"></a> Další kroky  
+## <a name="BKMK_Next_steps"></a> Další kroky  
  Aplikace CpuUseDemo není nejvíce vynikající aplikace, ale jeho nástroje můžete rozšířit pomocí můžete experimentovat s asynchronní operace a další nástroje v rozcestníku výkon a Diagnostika.  
   
--   Všimněte si, že `MainPage::<GetNumberAsync>b__b` tráví víc času [externí kód] než provádění metody GetNumber. Většina této doby je režie na asynchronní operace. Zkuste zvýšit počet těchto úloh (nastavit `NUM_TASKS` konstantu MainPage.xaml.cs) a snížení počtu iterací v `GetNumber` (změnit `MIN_ITERATIONS` hodnota). Spustit scénář kolekce a porovnat aktivitu procesoru `MainPage::<GetNumberAsync>b__b`, který v původní relaci diagnostiky využití procesoru. Zkuste snížení úkolů a zvýšit počet iterací.  
+- Všimněte si, že `MainPage::<GetNumberAsync>b__b` tráví víc času [externí kód] než provádění metody GetNumber. Většina této doby je režie na asynchronní operace. Zkuste zvýšit počet těchto úloh (nastavit `NUM_TASKS` konstantu MainPage.xaml.cs) a snížení počtu iterací v `GetNumber` (změnit `MIN_ITERATIONS` hodnota). Spustit scénář kolekce a porovnat aktivitu procesoru `MainPage::<GetNumberAsync>b__b`, který v původní relaci diagnostiky využití procesoru. Zkuste snížení úkolů a zvýšit počet iterací.  
   
--   Uživatelé často nezáleží skutečný výkon vaší aplikace; nestarají o dosahovaný výkon a rychlost odezvy aplikace. Nástroj pro Responzivní uživatelské rozhraní XAML zobrazuje podrobnosti o aktivitě ve vlákně uživatelského rozhraní, efekt vnímané rychlost odezvy.  
+- Uživatelé často nezáleží skutečný výkon vaší aplikace; nestarají o dosahovaný výkon a rychlost odezvy aplikace. Nástroj pro Responzivní uživatelské rozhraní XAML zobrazuje podrobnosti o aktivitě ve vlákně uživatelského rozhraní, efekt vnímané rychlost odezvy.  
   
      Vytvořit novou relaci v rozcestníku výkon a diagnostiku a přidat nástroj pro Responzivní uživatelské rozhraní XAML a nástroj využití CPU. Spusťte scénář kolekce. Pokud jste si přečetli to daleko, sestava pravděpodobně nemá zjistíte cokoli, co je ještě již bylo zajištěno, ale rozdíly mezi **využití vlákna UI** působivý časovou osu grafu pro tyto dvě metody. V reálné, komplexní aplikace může být kombinací nástroje velmi užitečné.  
   
-##  <a name="BKMK_MainPage_xaml"></a> MainPage.xaml  
+## <a name="BKMK_MainPage_xaml"></a> MainPage.xaml  
   
 ```csharp  
 <Page  
@@ -191,7 +191,7 @@ Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "wi
   
 ```  
   
-##  <a name="BKMK_MainPage_xaml_cs"></a> MainPage.xaml.cs  
+## <a name="BKMK_MainPage_xaml_cs"></a> MainPage.xaml.cs  
   
 ```csharp  
 using System;  

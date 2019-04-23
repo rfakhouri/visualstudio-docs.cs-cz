@@ -19,12 +19,12 @@ caps.latest.revision: 108
 author: kraigb
 ms.author: kraigb
 manager: jillfra
-ms.openlocfilehash: bdb3973502d57ef326d0e13b1ddc43d0e9c89c87
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 0554302f408547ea08c886bc3b458efdf7ddd412
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59654695"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046591"
 ---
 # <a name="porting-migrating-and-upgrading-visual-studio-projects"></a>Přenosy, migrace a upgrade projektů sady Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ Když zvažujete, zda byste měli přejít na novější verzi sady Visual Studi
 
  Pokud používáte [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] spolu s [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)],[!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] nebo Visual Studio 2010 SP1, můžete vytvářet a upravovat projekty a soubory v libovolné verze. Můžete přenášet projekty a soubory mezi verzemi tak dlouho, dokud nepřidáte funkce, které nejsou podporovány jednou z verzí.
 
-##  <a name="project"></a> Projekty
+## <a name="project"></a> Projekty
  Následující seznam popisuje podporu v [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] a [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] pro projekty, které byly vytvořeny v [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] nebo Visual Studio 2010 SP1. Tento seznam slouží k určení, zda lze otevřít projekt "tak jak jsou" v [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)], [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], nebo Visual Studio 2010 SP1, nebo zda je třeba jej pro zajištění kompatibilitě upravit.
 
 |Typ projektu|Kompatibilita|
@@ -101,7 +101,7 @@ Když zvažujete, zda byste měli přejít na novější verzi sady Visual Studi
 
   Další informace o odstraňování potíží, najdete v článku [Kompatibilita sady Visual Studio 2013](http://support.microsoft.com/kb/2863286) článku znalostní BÁZE.
 
-##  <a name="file"></a> Soubory
+## <a name="file"></a> Soubory
  Následující seznam určuje, zda [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] podporuje všechny typy souborů, zda můžete otevřít soubor v [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] a Visual Studio 2010 SP1, a určuje, zda je třeba jej pro zajištění kompatibilitě upravit.
 
 |Typ souboru|Kompatibilita|
@@ -121,7 +121,7 @@ Když zvažujete, zda byste měli přejít na novější verzi sady Visual Studi
 |Soubory protokolů IntelliTrace ze [!INCLUDE[vs2010](../includes/vs2010-md.md)]|Tyto soubory můžete otevřít [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]a Visual Studio 2010 SP1.|
 |Soubory JavaScript Memory Analyzer (.diagsession)|Soubory vytvořené ve starších verzích sady Visual Studio lze zobrazit v [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]. Nicméně podle shromážděných informací, soubory vytvořené v [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] možná nebude možní otevřít v [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] nebo Visual Studio 2010 SP1.|
 
-##  <a name="integration"></a> Integrační aktiva
+## <a name="integration"></a> Integrační aktiva
  Při použití klientů a serverů z různých verzí služby Visual Studio Team Foundation Server může dojít k problémům s kompatibilitou.
 
 |Druh integrace|Kompatibilita|

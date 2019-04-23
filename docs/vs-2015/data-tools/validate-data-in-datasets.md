@@ -24,12 +24,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 73eb1162411800a951566c9eb14928875966cfb7
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 67c9b9aed677e83cd8012b53530b4c474922108e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59661318"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047134"
 ---
 # <a name="validate-data-in-datasets"></a>Ověřování dat v datových sadách
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -103,9 +103,9 @@ Ověřování dat je proces ověření, hodnot zadaných do datových objektů v
   
 #### <a name="to-validate-data-when-a-row-changes-visual-basic"></a>Ověření dat při řádek změní (Visual Basic)  
   
-1.  Otevřete svou datovou sadu v **Návrhář Dataset**. Další informace najdete v tématu [jak: Otevření datové sady v návrháři datových sad](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
+1. Otevřete svou datovou sadu v **Návrhář Dataset**. Další informace najdete v tématu [jak: Otevření datové sady v návrháři datových sad](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
   
-2.  Poklepejte na záhlaví tabulky, kterou chcete ověřit. Tato akce automaticky vytvoří <xref:System.Data.DataTable.RowChanging> obslužná rutina události <xref:System.Data.DataTable> v souboru částečné třídy datové sady.  
+2. Poklepejte na záhlaví tabulky, kterou chcete ověřit. Tato akce automaticky vytvoří <xref:System.Data.DataTable.RowChanging> obslužná rutina události <xref:System.Data.DataTable> v souboru částečné třídy datové sady.  
   
     > [!TIP]
     >  Dvakrát klikněte na panel vlevo od názvu tabulky k vytvoření obslužné rutiny události měnící řádek. Pokud dvakrát kliknete na název tabulky, můžete ho upravit.  
@@ -114,14 +114,14 @@ Ověřování dat je proces ověření, hodnot zadaných do datových objektů v
   
 #### <a name="to-validate-data-when-a-row-changes-c"></a>Ověření dat při změně řádku (C#)  
   
-1.  Otevřete svou datovou sadu v **Návrhář Dataset**. Další informace najdete v tématu [jak: Otevření datové sady v návrháři datových sad](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
+1. Otevřete svou datovou sadu v **Návrhář Dataset**. Další informace najdete v tématu [jak: Otevření datové sady v návrháři datových sad](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
   
-2.  Poklepejte na záhlaví tabulky, kterou chcete ověřit. Tato akce vytvoří soubor částečné třídy pro <xref:System.Data.DataTable>.  
+2. Poklepejte na záhlaví tabulky, kterou chcete ověřit. Tato akce vytvoří soubor částečné třídy pro <xref:System.Data.DataTable>.  
   
     > [!NOTE]
     >  **Návrhář Dataset** nevytváří automaticky obslužnou rutinu události pro <xref:System.Data.DataTable.RowChanging> událostí. Je nutné vytvořit metodu ke zpracování <xref:System.Data.DataTable.RowChanging> události a spouštění kódu k připojení události do metody inicializace tabulky.  
   
-3.  Zkopírujte následující kód do částečné třídy:  
+3. Zkopírujte následující kód do částečné třídy:  
   
     ```  
     public override void EndInit()  
@@ -155,7 +155,7 @@ Ověřování dat je proces ověření, hodnot zadaných do datových objektů v
   
 #### <a name="to-get-all-changed-records-from-a-dataset"></a>Chcete-li získat všechny změněné záznamy z datové sady  
   
--   Volání <xref:System.Data.DataSet.GetChanges%2A> metoda datové sady.  
+- Volání <xref:System.Data.DataSet.GetChanges%2A> metoda datové sady.  
   
      Následující příklad vytvoří novou datovou sadu s názvem `changedRecords` a naplní se všechny změněné záznamy z jiného datovou sadu s názvem `dataSet1`.  
   
@@ -164,7 +164,7 @@ Ověřování dat je proces ověření, hodnot zadaných do datových objektů v
   
 #### <a name="to-get-all-changed-records-from-a-data-table"></a>Chcete-li získat všechny změněné záznamy z tabulky dat  
   
--   Volání <xref:System.Data.DataTable.GetChanges%2A> metoda objektu DataTable.  
+- Volání <xref:System.Data.DataTable.GetChanges%2A> metoda objektu DataTable.  
   
      Následující příklad vytvoří novou tabulku volá `changedRecordsTable` a naplní se všechny změněné záznamy z jiné tabulky dat, volá `dataTable1`.  
   
@@ -173,14 +173,14 @@ Ověřování dat je proces ověření, hodnot zadaných do datových objektů v
   
 #### <a name="to-get-all-records-that-have-a-specific-row-state"></a>Chcete-li získat všechny záznamy, které mají stav konkrétní řádek  
   
--   Volání `GetChanges` metoda datová sada nebo tabulka dat a pass <xref:System.Data.DataRowState> hodnota výčtu jako argument.  
+- Volání `GetChanges` metoda datová sada nebo tabulka dat a pass <xref:System.Data.DataRowState> hodnota výčtu jako argument.  
   
      Následující příklad ukazuje, jak vytvořit novou datovou sadu s názvem `addedRecords` a přidejte do ní jenom záznamy, které byly přidány do `dataSet1` datové sady.  
   
      [!code-csharp[VbRaddataEditing#16](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs#16)]
      [!code-vb[VbRaddataEditing#16](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb#16)]  
   
--   Následující příklad ukazuje, jak vrátit všechny záznamy, které jste nedávno přidali `Customers` tabulky:  
+- Následující příklad ukazuje, jak vrátit všechny záznamy, které jste nedávno přidali `Customers` tabulky:  
   
      [!code-csharp[VbRaddataEditing#17](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs#17)]
      [!code-vb[VbRaddataEditing#17](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb#17)]  
@@ -195,7 +195,7 @@ Ověřování dat je proces ověření, hodnot zadaných do datových objektů v
   
 #### <a name="to-get-the-original-version-of-a-record"></a>Získání původní verze záznamu  
   
--   Přístup k hodnotě sloupce předáním <xref:System.Data.DataRowVersion> řádku, který chcete vrátit.  
+- Přístup k hodnotě sloupce předáním <xref:System.Data.DataRowVersion> řádku, který chcete vrátit.  
   
      Následující příklad ukazuje způsob použití <xref:System.Data.DataRowVersion> hodnotu k získání původní hodnoty `CompanyName` pole <xref:System.Data.DataRow>:  
   
@@ -206,7 +206,7 @@ Ověřování dat je proces ověření, hodnot zadaných do datových objektů v
   
 #### <a name="to-get-the-current-version-of-a-record"></a>Chcete-li získat aktuální verze záznamu  
   
--   Přístup k hodnotě sloupce a pak přidejte parametr do indexu, která určuje, kterou verzi řádku chcete vrátit.  
+- Přístup k hodnotě sloupce a pak přidejte parametr do indexu, která určuje, kterou verzi řádku chcete vrátit.  
   
      Následující příklad ukazuje způsob použití <xref:System.Data.DataRowVersion> hodnotu k získání aktuální hodnoty `CompanyName` pole <xref:System.Data.DataRow>:  
   

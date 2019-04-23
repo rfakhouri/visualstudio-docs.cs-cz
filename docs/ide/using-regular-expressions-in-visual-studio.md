@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a5421599d2ffa006a445e0410088671d8897cc52
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d62f999f485acaba168a50d404f2b5cbb272ef14
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55923249"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047563"
 ---
 # <a name="use-regular-expressions-in-visual-studio"></a>Použití regulárních výrazů v sadě Visual Studio
 
@@ -61,12 +61,12 @@ Následuje několik příkladů:
 |Porovná hranici slova|\b (mimo třídu znaků `\b` určuje hranici slova a uvnitř třídy znaků `\b` Určuje znak backspace.)|`\bin` odpovídá "in" v "inside" ale ne "pinto".|
 |Odpovídá konci řádku (to znamená zalomení řádku a nový řádek).|\r?\n|`End\r?\nBegin` odpovídá "End" a "Begin" pouze, když je "End" posledním řetězcem v řádku a "Begin" je první řetězec v následujícím řádku.|
 |Odpovídá libovolnému alfanumerickému znaku|\w|`a\wd` odpovídá "Přidat" a "a1d", ale ne "a d".|
-|Odpovídá jakémukoli prázdnému znaku.|(?([^\r\n])\s)|`Public\sInterface` odpovídá slovnímu "Veřejné rozhraní".|
+|Odpovídá jakémukoli prázdnému znaku.|\s|`Public\sInterface` odpovídá slovnímu "Veřejné rozhraní".|
 |Odpovídá jakémukoli číselnému znaku|\d|`\d` shody a "3" v "3456", "2" ve "23" a "1" v "1".|
 |Odpovídá znaku Unicode|\uXXXX kde XXXX Určuje hodnotu znaku Unicode.|`\u0065` odpovídá znaku "e".|
 |Odpovídá identifikátoru|\b [\_\w-[0-9]] [\_\w]*\b|Odpovídá "type1" ale ne "& type1" nebo "#define".|
 |Odpovídá řetězci v uvozovkách|((\\".+?\\")&#124;('.+?'))|Odpovídá jakémukoli řetězci v jednoduchých nebo dvojitých uvozovkách.|
-|Shoda s šestnáctkovým číslem|\b0[xX]([0-9a-fA-F]\)\b|Odpovídá "0xc67f", ale ne "0xc67fc67f".|
+|Shoda s šestnáctkovým číslem|\b0[xX]([0-9a-fA-F]+\)\b|Odpovídá "0xc67f" ale ne "0xc67g".|
 |Odpovídá celým nebo desetinným a desetinných míst|\b[0-9]*\\.\*[0-9]+\b|Odpovídá "1,333".|
 
 > [!TIP]

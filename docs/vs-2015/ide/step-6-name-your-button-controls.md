@@ -9,12 +9,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a65eb289cf42ba7b9a9bd7d0ad2cfdc1b630a131
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 98a7159f750a036ed588fd01761e20a2a23ee84e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54796826"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059965"
 ---
 # <a name="step-6-name-your-button-controls"></a>Krok 6: Pojmenování tlačítkových ovládacích prvků
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Ve formuláři je pouze jeden ovládací prvek PictureBox. Při přidávání je
   
 ### <a name="to-name-your-button-controls"></a>Pojmenujte své ovládací prvky tlačítek  
   
-1.  Ve formuláři, zvolte **Zavřít** tlačítko. (Pokud stále máte všechna tlačítka vybrána, stiskněte klávesu ESC zrušte výběr.) Posouvejte **vlastnosti** okna, dokud se nezobrazí **(název)** vlastnost. ( **(Název)** vlastnost je blízko horní, pokud jsou vlastnosti v abecedním pořadí.) Změňte název na **closeButton**, jak je znázorněno na následujícím obrázku.  
+1. Ve formuláři, zvolte **Zavřít** tlačítko. (Pokud stále máte všechna tlačítka vybrána, stiskněte klávesu ESC zrušte výběr.) Posouvejte **vlastnosti** okna, dokud se nezobrazí **(název)** vlastnost. ( **(Název)** vlastnost je blízko horní, pokud jsou vlastnosti v abecedním pořadí.) Změňte název na **closeButton**, jak je znázorněno na následujícím obrázku.  
   
      ![Okno Vlastnosti s názvem closeButton](../ide/media/express-setnameproperty.png "Express_SetNameProperty")  
 Okno Vlastnosti s názvem closeButton  
@@ -38,14 +38,14 @@ Okno Vlastnosti s názvem closeButton
     > [!NOTE]
     >  Pokud se pokusíte změnit název tlačítka na **closeButton**, s mezerou mezi slovy, zavřít a tlačítko, rozhraní IDE zobrazí chybovou zprávu: "Hodnota vlastnosti není platná." Mezery (a několik jiných znaků) nejsou povoleny v názvech ovládacích prvků.  
   
-2.  Přejmenujte další tři tlačítka na **backgroundButton**, **tlacitkoVymazat**, a **showButton**. Názvy můžete ověřit výběrem ovládacího prvku selektoru rozevíracího seznamu v **vlastnosti** okna. Nové názvy tlačítek se zobrazí.  
+2. Přejmenujte další tři tlačítka na **backgroundButton**, **tlacitkoVymazat**, a **showButton**. Názvy můžete ověřit výběrem ovládacího prvku selektoru rozevíracího seznamu v **vlastnosti** okna. Nové názvy tlačítek se zobrazí.  
   
-3.  Dvakrát klikněte **zobrazit obrázek** tlačítko na formuláři. Jako alternativu zvolte **zobrazit obrázek** tlačítko na formuláři a potom stiskněte klávesu ENTER. Když použijete, rozhraní IDE otevře další kartu v hlavním okně volá **Form1.cs** (**Form1.vb** Pokud používáte jazyk Visual Basic). Tato karta zobrazuje soubor kódu za formulářem, jak je znázorněno na následujícím obrázku.  
+3. Dvakrát klikněte **zobrazit obrázek** tlačítko na formuláři. Jako alternativu zvolte **zobrazit obrázek** tlačítko na formuláři a potom stiskněte klávesu ENTER. Když použijete, rozhraní IDE otevře další kartu v hlavním okně volá **Form1.cs** (**Form1.vb** Pokud používáte jazyk Visual Basic). Tato karta zobrazuje soubor kódu za formulářem, jak je znázorněno na následujícím obrázku.  
   
      ![Karta Form1.cs s Visual C&#35; kód](../ide/media/express-showbuttoncode.png "Express_ShowButtonCode")  
 Karta Form1.cs s kódem Visual C#  
   
-4.  Zaměřte se na tuto část kódu. (Zvolte **VB** kartě níže, pokud používáte jazyk Visual Basic k zobrazení verze kódu jazyka Visual Basic.)  
+4. Zaměřte se na tuto část kódu. (Zvolte **VB** kartě níže, pokud používáte jazyk Visual Basic k zobrazení verze kódu jazyka Visual Basic.)  
   
      [!code-csharp[VbExpressTutorial1Step6#1](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial1step6/cs/form1.cs#1)]
      [!code-vb[VbExpressTutorial1Step6#1](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial1step6/vb/form1.vb#1)]  
@@ -55,9 +55,9 @@ Karta Form1.cs s kódem Visual C#
     > [!NOTE]
     >  V tomto kurzu kódu jazyka Visual Basic, který je automaticky generován byl zjednodušen odebráním všeho mezi závorkami, (). Pokaždé, když se v takovém případě můžete odebrat stejný kód. Váš program bude fungovat v obou případech. Pro zbývající část kurzů je všechen automaticky generovaný kód zjednodušen, kdykoli je to možné.  
   
-5.  Zvolte znovu kartu Návrhář formulářové aplikace Windows (**Form1.cs [Design]** ve Vizuálu C#, **Form1.vb [Design]** v jazyce Visual Basic) a pak otevřete soubor kódu **Vymazat obrázek** tlačítko pro vytvoření metody pro něj v kódu formuláře. Tento postup opakujte pro zbývající dvě tlačítka. Pokaždé, když, rozhraní IDE přidá novou metodu do souboru kódu formuláře.  
+5. Zvolte znovu kartu Návrhář formulářové aplikace Windows (**Form1.cs [Design]** ve Vizuálu C#, **Form1.vb [Design]** v jazyce Visual Basic) a pak otevřete soubor kódu **Vymazat obrázek** tlačítko pro vytvoření metody pro něj v kódu formuláře. Tento postup opakujte pro zbývající dvě tlačítka. Pokaždé, když, rozhraní IDE přidá novou metodu do souboru kódu formuláře.  
   
-6.  Chcete-li přidat další metodu, otevřete soubor kódu pro ovládací prvek CheckBox v Návrháři formulářů Windows rozhraní IDE, přidejte `checkBox1_CheckedChanged()` metody. Tato metoda je volána pokaždé, když uživatel vybere nebo zruší zaškrtávací políčko.  
+6. Chcete-li přidat další metodu, otevřete soubor kódu pro ovládací prvek CheckBox v Návrháři formulářů Windows rozhraní IDE, přidejte `checkBox1_CheckedChanged()` metody. Tato metoda je volána pokaždé, když uživatel vybere nebo zruší zaškrtávací políčko.  
   
     > [!NOTE]
     >  Při práci na programu se často přesouváte mezi editorem kódu a Návrhář formulářů Windows. Rozhraní IDE usnadňuje navigaci v projektu. Použití **Průzkumníka řešení** otevřít Návrhář formulářů Windows dvojitým kliknutím **Form1.cs** v jazyce Visual C# nebo **Form1.vb** v jazyce Visual Basic nebo na panelu nabídek zvolte **Zobrazení**, **návrháře**.  
@@ -77,6 +77,6 @@ Karta Form1.cs s kódem Visual C#
   
 ### <a name="to-continue-or-review"></a>Chcete-li pokračovat nebo přezkoumat  
   
--   Přechod k dalšímu kroku výukového programu naleznete v tématu [krok 7: Přidejte do svého formuláře komponenty dialogových oken](../ide/step-7-add-dialog-components-to-your-form.md).  
+- Přechod k dalšímu kroku výukového programu naleznete v tématu [krok 7: Přidejte do svého formuláře komponenty dialogových oken](../ide/step-7-add-dialog-components-to-your-form.md).  
   
--   Chcete-li vrátit k předchozímu kroku tutoriálu, přečtěte si téma [krok 5: Přidejte do svého formuláře ovládací prvky](../ide/step-5-add-controls-to-your-form.md).
+- Chcete-li vrátit k předchozímu kroku tutoriálu, přečtěte si téma [krok 5: Přidejte do svého formuláře ovládací prvky](../ide/step-5-add-controls-to-your-form.md).

@@ -21,12 +21,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cdc000a4ad825be495c28bb59d35f8ef378c563f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 4f2f963ad2fbdad9453f6c6b853bc720034f613c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54781746"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056902"
 ---
 # <a name="error-debugging-isn39t-possible-because-a-kernel-debugger-is-enabled-on-the-system"></a>Chyba: Ladění není&#39;t možné, protože v systému je povolen ladicí program jádra
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,31 +39,31 @@ Debugging isn't possible because a kernel debugger is enabled on the system
   
  Tato zpráva se zobrazí při pokusu o ladění spravovaného kódu:  
   
--   na [!INCLUDE[win7](../includes/win7-md.md)] nebo [!INCLUDE[wiprlhext](../includes/wiprlhext-md.md)]systém, který se spustil v režimu ladění.  
+- na [!INCLUDE[win7](../includes/win7-md.md)] nebo [!INCLUDE[wiprlhext](../includes/wiprlhext-md.md)]systém, který se spustil v režimu ladění.  
   
--   aplikace používá CLR verze CLR 2.0, 3.0 nebo 3.5.  
+- aplikace používá CLR verze CLR 2.0, 3.0 nebo 3.5.  
   
 ## <a name="solution"></a>Řešení  
   
 #### <a name="to-fix-this-problem"></a>Chcete-li vyřešit tento problém  
   
--   Upgrade aplikace pomocí modulu CLR verze 4.0 nebo 4.5  
+- Upgrade aplikace pomocí modulu CLR verze 4.0 nebo 4.5  
   
      —nebo—  
   
--   Zakázat ladění jádra a ladit v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+- Zakázat ladění jádra a ladit v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
      —nebo—  
   
--   Ladění pomocí ladicího programu jádra místo [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+- Ladění pomocí ladicího programu jádra místo [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
      —nebo—  
   
--   V ladicím programu jádra zakažte výjimky v uživatelském režimu.  
+- V ladicím programu jádra zakažte výjimky v uživatelském režimu.  
   
 #### <a name="to-disable-kernel-debugging-in-the-current-session"></a>Chcete-li zakázat ladění jádra v aktuální relaci.  
   
--   V příkazovém řádku zadejte příkaz:  
+- V příkazovém řádku zadejte příkaz:  
   
     ```  
     Kdbgctrl.exe -d  
@@ -71,23 +71,23 @@ Debugging isn't possible because a kernel debugger is enabled on the system
   
 #### <a name="to-disable-kernel-debugging-for-all-sessions-windows-vista-and-windows-7"></a>Chcete-li zakázat ladění jádra na všechny relace (Windows Vista a Windows 7)  
   
-1.  V příkazovém řádku zadejte příkaz:  
+1. V příkazovém řádku zadejte příkaz:  
   
     ```  
     bcdedit /debug off   
     ```  
   
-2.  Restartujte počítač.  
+2. Restartujte počítač.  
   
 #### <a name="to-disable-kernel-debugging-for-all-sessions-other-windows-operating-systems"></a>Chcete-li zakázat ladění jádra na všechny relace (ostatní Windows operační systémy)  
   
-1.  Vyhledejte soubor boot.ini na systémovou jednotku (obvykle C:\\). Soubor boot.ini může být skrytý, jen pro čtení. Takže je třeba použít následující příkaz a prohlédněte si ho:  
+1. Vyhledejte soubor boot.ini na systémovou jednotku (obvykle C:\\). Soubor boot.ini může být skrytý, jen pro čtení. Takže je třeba použít následující příkaz a prohlédněte si ho:  
   
     ```  
     dir /ASH  
     ```  
   
-2.  Otevřete soubor boot.ini pomocí poznámkového bloku a odeberte následující možnosti:  
+2. Otevřete soubor boot.ini pomocí poznámkového bloku a odeberte následující možnosti:  
   
     ```  
     /debug  
@@ -95,13 +95,13 @@ Debugging isn't possible because a kernel debugger is enabled on the system
     /baudrate  
     ```  
   
-3.  Restartujte počítač.  
+3. Restartujte počítač.  
   
 #### <a name="to-debug-with-the-kernel-debugger"></a>Chcete-li ladit pomocí ladicího programu jádra  
   
-1.  Pokud ladicí program jádra je připojili, zobrazí se zpráva s dotazem, jestli chcete pokračovat v ladění. Klikněte na tlačítko Pokračovat.  
+1. Pokud ladicí program jádra je připojili, zobrazí se zpráva s dotazem, jestli chcete pokračovat v ladění. Klikněte na tlačítko Pokračovat.  
   
-2.  Může se zobrazit `User break exception(Int 3).` Pokud k tomu dojde, zadejte následující příkaz ladicí program jádra a pokračujte v ladění:  
+2. Může se zobrazit `User break exception(Int 3).` Pokud k tomu dojde, zadejte následující příkaz ladicí program jádra a pokračujte v ladění:  
   
      `gn`  
   

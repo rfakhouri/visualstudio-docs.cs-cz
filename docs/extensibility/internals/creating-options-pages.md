@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5d05b64f2245e4710f501ed8a24f7052cc310b30
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: d87e4002bd920a3b189886ae29bc7cf3a6ccf61f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56633080"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044499"
 ---
 # <a name="create-options-pages"></a>Vytvoření stránky Možnosti
 V [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] spravovaného balíčku rozhraní .NET framework, třídy odvozené z <xref:Microsoft.VisualStudio.Shell.DialogPage> rozšířit [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrovaného vývojového prostředí tak, že přidáte **možnosti** stránky v části **nástroje** nabídky.
@@ -25,9 +25,9 @@ V [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] spravovaného bal
 
  Protože prostředí vytvoří instanci objektu implementace konkrétní **možnosti nástrojů** stránce při této konkrétní stránce se zobrazí v integrovaném vývojovém prostředí:
 
--   A **– možnost Nástroje** stránka by měla být implementována na vlastní objekt a ne na objekt implementující VSPackage.
+- A **– možnost Nástroje** stránka by měla být implementována na vlastní objekt a ne na objekt implementující VSPackage.
 
--   Objekt nelze implementovat více **možnosti nástrojů** stránky.
+- Objekt nelze implementovat více **možnosti nástrojů** stránky.
 
 ## <a name="register-as-a-tools-options-page-provider"></a>Zaregistrujte se jako zprostředkovatel stránky Možnosti nástrojů
  Konfigurace balíčku VSPackage podpůrné uživatele prostřednictvím **možnosti nástrojů** stránky určuje objekty, které poskytuje **možnosti nástrojů** stránky s použitím instance <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> u <xref:Microsoft.VisualStudio.Shell.Package>implementace.

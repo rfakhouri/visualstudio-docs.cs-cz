@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cd92f2c87d1f9541d0b5fc7c812c2a096ee0615a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9c09e8eeed3ba5b7e2a348982444ad8faa0884e9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55948939"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047810"
 ---
 # <a name="model-your-app39s-architecture"></a>Modelování aplikace&#39;s architektury
 K zajištění, že softwarový systém nebo aplikace splňuje uživatelů potřebuje, si můžete vytvořit modelů v sadě Visual Studio jako součást vaší popis celkovou strukturu a chování softwarového systému nebo aplikace. Použití modelů, může také popisovat vzory, které se používají v návrhu. Tyto modely umožňují pochopit stávající architekturou, změny a jasně komunikovat vaše záměry.
@@ -28,9 +28,9 @@ K zajištění, že softwarový systém nebo aplikace splňuje uživatelů potř
 
  Architektura systému je možné rozdělit do dvou oblastí:
 
--   [Podrobný návrh](#Structure). Popisuje hlavní součásti a jejich vzájemné interakce mezi sebou ke splnění každý požadavek. Pokud systém je velká, může být jednotlivé komponenty vlastní hlavnímu návrhu, který ukazuje, jak se skládají z menších komponent.
+- [Podrobný návrh](#Structure). Popisuje hlavní součásti a jejich vzájemné interakce mezi sebou ke splnění každý požadavek. Pokud systém je velká, může být jednotlivé komponenty vlastní hlavnímu návrhu, který ukazuje, jak se skládají z menších komponent.
 
--   [Vzory návrhu](#Patterns) a pravidla týkající se používají v návrzích komponenty. Vzor popisuje konkrétní přístup k dosažení cíle programování. Pomocí stejné vzorce v celém návrh váš tým může snížit náklady na provedení změn a vývoji nového softwaru.
+- [Vzory návrhu](#Patterns) a pravidla týkající se používají v návrzích komponenty. Vzor popisuje konkrétní přístup k dosažení cíle programování. Pomocí stejné vzorce v celém návrh váš tým může snížit náklady na provedení změn a vývoji nového softwaru.
 
 ## <a name="Structure"></a> Návrh vysoké úrovně
  Návrh vysoké úrovně popisuje hlavní součásti systému a jejich vzájemné interakce mezi sebou k dosažení cíle návrhu. Aktivity v následujícím seznamu jsou součástí vývoje nejvyšší úrovni návrhu, i když nemusí nutně jít v určitém pořadí.
@@ -39,11 +39,11 @@ K zajištění, že softwarový systém nebo aplikace splňuje uživatelů potř
 
  Ve všech případech je užitečné pro vývoj různé aktivity paralelně a pro vývoj kódu a testy v rané fázi. Vyhněte se pokusům o proveďte jeden z těchto aspektů před spuštěním jiného. Obvykle požadavky a pochopíte nejlepší způsob, jak navrhnout systému se změní při psaní a testování kódu. Proto měli byste začít tak, že porozumění a psaní kódu si hlavní funkce požadavky a návrhu. Vyplňte podrobnosti v pozdější iterace projektu.
 
--   [Principy požadavky](#Requirements). Výchozí bod jakékoli návrhu je pochopili, že potřebám uživatelů.
+- [Principy požadavky](#Requirements). Výchozí bod jakékoli návrhu je pochopili, že potřebám uživatelů.
 
--   [Vzorech architektury](#BigDecisions). Volby, které jste provedli o základních technologií a prvky architektury systému.
+- [Vzorech architektury](#BigDecisions). Volby, které jste provedli o základních technologií a prvky architektury systému.
 
--   Datový Model, komponent a rozhraní. Je-li nakreslit diagramy tříd k popisu informace, které se ukládají v součásti a předány mezi komponentami.
+- Datový Model, komponent a rozhraní. Je-li nakreslit diagramy tříd k popisu informace, které se ukládají v součásti a předány mezi komponentami.
 
 ## <a name="Requirements"></a> Vysvětlení požadavků
  Hlavnímu návrhu dokončené aplikace je efektivní vyvinutý spolu s modelem požadavky nebo jiný popis potřebám uživatelů. Další informace o modelech požadavky najdete v části [modelování uživatelských požadavků](../modeling/model-user-requirements.md).
@@ -88,19 +88,19 @@ K zajištění, že softwarový systém nebo aplikace splňuje uživatelů potř
 
  Vzor návrhu je popsaný v dokumentu a obvykle zahrnuje tyto části:
 
--   Jméno.
+- Jméno.
 
--   Popis kontext, ve které se vztahuje. Jakých kritérií by měl vytvořit vývojář, jestli nebude lepší uplatňovat tento model?
+- Popis kontext, ve které se vztahuje. Jakých kritérií by měl vytvořit vývojář, jestli nebude lepší uplatňovat tento model?
 
--   Stručné vysvětlení problému, který řeší.
+- Stručné vysvětlení problému, který řeší.
 
--   Model hlavních částí a jejich vztahy. Může se jednat třídy nebo součásti a rozhraní se přidružení a závislostí mezi nimi. Elementy obvykle spadají do dvou kategorií:
+- Model hlavních částí a jejich vztahy. Může se jednat třídy nebo součásti a rozhraní se přidružení a závislostí mezi nimi. Elementy obvykle spadají do dvou kategorií:
 
--   Zásady vytváření názvů.
+- Zásady vytváření názvů.
 
--   Popis jak vzoru byl problém vyřešen.
+- Popis jak vzoru byl problém vyřešen.
 
--   Popis změn, která se můžou vývojáři moci přijmout.
+- Popis změn, která se můžou vývojáři moci přijmout.
 
 ## <a name="see-also"></a>Viz také
 

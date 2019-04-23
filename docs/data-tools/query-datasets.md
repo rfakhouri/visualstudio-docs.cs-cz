@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 88433ae91691caf795ad61116c8e3691662aad42
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ccd8bd0cb37aaa2d4bfad7ea20979987048bf862
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927708"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050670"
 ---
 # <a name="query-datasets"></a>Datové sady dotazů
 K vyhledání konkrétních záznamů v datové sadě, použijte `FindBy` metodu na objekt DataTable, psát vlastní příkazu foreach k vytvoření smyčky přes kolekce řádků v tabulce, nebo použijte [LINQ to DataSet](/dotnet/framework/data/adonet/linq-to-dataset).
@@ -33,7 +33,7 @@ Rozlišování velikosti písmen, ale může být faktor při tom, jak je interp
 
 #### <a name="to-find-a-row-in-a-typed-dataset-with-a-primary-key-value"></a>Najít řádek v typové datové sady s hodnotou primárního klíče
 
--   Chcete-li vyhledejte řádek, zavolejte silného typu `FindBy` metodu, která používá primární klíč v tabulce.
+- Chcete-li vyhledejte řádek, zavolejte silného typu `FindBy` metodu, která používá primární klíč v tabulce.
 
      V následujícím příkladu `CustomerID` primární klíč je sloupec `Customers` tabulky. To znamená, že generované `FindBy` je metoda `FindByCustomerID`. Tento příklad ukazuje, jak přiřadit konkrétní <xref:System.Data.DataRow> proměnné s použitím vytvořeného `FindBy` metody.
 
@@ -42,7 +42,7 @@ Rozlišování velikosti písmen, ale může být faktor při tom, jak je interp
 
 #### <a name="to-find-a-row-in-an-untyped-dataset-with-a-primary-key-value"></a>Najít řádek v netypovou datovou sadu s hodnotu primárního klíče
 
--   Volání <xref:System.Data.DataRowCollection.Find%2A> metodu <xref:System.Data.DataRowCollection> kolekce, které se předá jako parametr primární klíč.
+- Volání <xref:System.Data.DataRowCollection.Find%2A> metodu <xref:System.Data.DataRowCollection> kolekce, které se předá jako parametr primární klíč.
 
      Následující příklad ukazuje, jak deklarovat nový řádek, který volá `foundRow` a přiřaďte ho na návratový typ <xref:System.Data.DataRowCollection.Find%2A> metody. Pokud je nalezen primární klíč, obsah index sloupce 1 jsou zobrazeny v okně se zprávou.
 
@@ -53,7 +53,7 @@ Rozlišování velikosti písmen, ale může být faktor při tom, jak je interp
 
 #### <a name="to-find-rows-based-on-the-values-in-any-column"></a>K vyhledání řádků na základě hodnot v libovolný sloupec
 
--   Tabulky dat jsou vytvořeny pomocí <xref:System.Data.DataTable.Select%2A> metodu, která vrací pole <xref:System.Data.DataRow>předán s založené na výrazu <xref:System.Data.DataTable.Select%2A> metody. Další informace o vytváření platné výrazy, naleznete v části "Syntaxe výrazu" na stránce <xref:System.Data.DataColumn.Expression%2A> vlastnost.
+- Tabulky dat jsou vytvořeny pomocí <xref:System.Data.DataTable.Select%2A> metodu, která vrací pole <xref:System.Data.DataRow>předán s založené na výrazu <xref:System.Data.DataTable.Select%2A> metody. Další informace o vytváření platné výrazy, naleznete v části "Syntaxe výrazu" na stránce <xref:System.Data.DataColumn.Expression%2A> vlastnost.
 
      Následující příklad ukazuje způsob použití <xref:System.Data.DataTable.Select%2A> metodu <xref:System.Data.DataTable> najít konkrétní řádky.
 
@@ -72,24 +72,24 @@ Tato stránka obsahuje příklady použití typové datové sady. Informace o na
 
 Následující příklady kódu ukazují, jak procházet nahoru a dolů vztahy v typových datových sadách. Příklady použití kód zadali <xref:System.Data.DataRow>s (`NorthwindDataSet.OrdersRow`) a vygenerovaný FindBy*PrimaryKey* (`FindByCustomerID`) metody pro vyhledání požadovaný řádek a vrácení souvisejících záznamů. V příkladech kompilace a spuštění správně pouze v případě, že máte:
 
--   Instance datovou sadu s názvem `NorthwindDataSet` s `Customers` tabulky.
+- Instance datovou sadu s názvem `NorthwindDataSet` s `Customers` tabulky.
 
--   `Orders` Tabulky.
+- `Orders` Tabulky.
 
--   Relace s názvem `FK_Orders_Customers`týkající se dvěma tabulkami.
+- Relace s názvem `FK_Orders_Customers`týkající se dvěma tabulkami.
 
 Kromě toho obou tabulek muset být naplněný daty pro záznamy, které se mají vrátit.
 
 #### <a name="to-return-the-child-records-of-a-selected-parent-record"></a>Vrátit podřízené záznamy vybraný nadřazený záznam
 
--   Volání <xref:System.Data.DataRow.GetChildRows%2A> metoda konkrétní `Customers` data řádku a vrátí řádky z pole `Orders` tabulky:
+- Volání <xref:System.Data.DataRow.GetChildRows%2A> metoda konkrétní `Customers` data řádku a vrátí řádky z pole `Orders` tabulky:
 
      [!code-csharp[VbRaddataDatasets#6](../data-tools/codesnippet/CSharp/query-datasets_4.cs)]
      [!code-vb[VbRaddataDatasets#6](../data-tools/codesnippet/VisualBasic/query-datasets_4.vb)]
 
 #### <a name="to-return-the-parent-record-of-a-selected-child-record"></a>Chcete-li vrátit nadřazený záznam vybraný podřízený záznam
 
--   Volání <xref:System.Data.DataRow.GetParentRow%2A> metoda konkrétní `Orders` řádek dat a vrátí jeden řádek z `Customers` tabulky:
+- Volání <xref:System.Data.DataRow.GetParentRow%2A> metoda konkrétní `Orders` řádek dat a vrátí jeden řádek z `Customers` tabulky:
 
      [!code-csharp[VbRaddataDatasets#7](../data-tools/codesnippet/CSharp/query-datasets_5.cs)]
      [!code-vb[VbRaddataDatasets#7](../data-tools/codesnippet/VisualBasic/query-datasets_5.vb)]

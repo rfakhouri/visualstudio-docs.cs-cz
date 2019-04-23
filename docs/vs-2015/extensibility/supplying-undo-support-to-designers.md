@@ -10,12 +10,12 @@ ms.assetid: 43eb1f14-b129-404a-8806-5bf9b099b67b
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e0ee2059c6a2bc1c5456cc949cf05b921c874cd3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 9118cbe3f4a8dcee443eca8b3fa5fb9a7664fd41
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54755272"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049305"
 ---
 # <a name="supplying-undo-support-to-designers"></a>Nastavení podpory fáze vrácení zpět v návrháři
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,9 +41,9 @@ Návrháře, jako jsou editory, obvykle musí podporovat operace vrácení zpět
 ## <a name="obtaining-undo-support-automatically"></a>Získání podpory zpět automaticky  
  Všechny návrháře vytvořené v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] podporuje automatické a úplné zpět if, návrháře:  
   
--   Využívá <xref:System.Windows.Forms.Control> na základě třídy pro jeho uživatelské rozhraní.  
+- Využívá <xref:System.Windows.Forms.Control> na základě třídy pro jeho uživatelské rozhraní.  
   
--   Využívá standardní kód založený na CodeDOM generování a systém analýzy pro generování kódu a uchovávání.  
+- Využívá standardní kód založený na CodeDOM generování a systém analýzy pro generování kódu a uchovávání.  
   
      Další informace o práci s podporou Visual Studio CodeDOM naleznete v tématu [dynamické generování zdrojového kódu a kompilace](http://msdn.microsoft.com/library/d077a3e8-bd81-4bdf-b6a3-323857ea30fb)  
   
@@ -80,15 +80,15 @@ Návrháře, jako jsou editory, obvykle musí podporovat operace vrácení zpět
   
 - To <xref:System.IServiceProvider> třída musí poskytovat následující služby:  
   
-  -   <xref:System.ComponentModel.Design.IDesignerHost>.  
+  - <xref:System.ComponentModel.Design.IDesignerHost>.  
   
-  -   <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService>  
+  - <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService>  
   
        Pomocí návrhářů [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] v případě serializace CodeDOM rozhodnout pro použití <xref:System.ComponentModel.Design.Serialization.CodeDomComponentSerializationService> součástí [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] jako jeho implementace <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService>.  
   
        V takovém případě <xref:System.IServiceProvider> třídy, které jsou k dispozici na <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine> konstruktor by měl vrátit tento objekt jako implementace <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService> třídy.  
   
-  -   <xref:System.ComponentModel.Design.IComponentChangeService>  
+  - <xref:System.ComponentModel.Design.IComponentChangeService>  
   
        Použití výchozí hodnoty návrháře <xref:System.ComponentModel.Design.DesignSurface> poskytované [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] návrhu hostitele je zaručeno, že má výchozí implementaci třídy <xref:System.ComponentModel.Design.IComponentChangeService> třídy.  
   

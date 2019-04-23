@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: a99cdc4e8c9a4b7551574c93ad6ccdb8c44479df
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f0d1a9e24c965af9513b3c2645bcee35f916f436
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927042"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048590"
 ---
 # <a name="troubleshoot-service-references"></a>Řešení potíží s odkazy na služby
 
@@ -33,9 +33,9 @@ Po návratu `DataSet` nebo `DataTable` ze služby, může se zobrazit výjimka "
 
 Chcete-li vyřešit tuto chybu:
 
-1.  V **Průzkumníka řešení**, dvakrát klikněte *app.config* soubor otevřete.
+1. V **Průzkumníka řešení**, dvakrát klikněte *app.config* soubor otevřete.
 
-2.  Vyhledejte `MaxReceivedMessageSize` vlastnosti a změňte ji na vyšší hodnotu.
+2. Vyhledejte `MaxReceivedMessageSize` vlastnosti a změňte ji na vyšší hodnotu.
 
 ## <a name="cannot-find-a-service-in-my-solution"></a>Nelze najít službu v mém řešení
 
@@ -43,7 +43,7 @@ Po kliknutí **zjišťování** tlačítko **přidat odkazy na služby** dialogo
 
 Chcete-li vyřešit tuto chybu:
 
--   V **Průzkumníka řešení**, klikněte pravým tlačítkem na projekt knihovny služby WCF a klikněte na tlačítko **sestavení**.
+- V **Průzkumníka řešení**, klikněte pravým tlačítkem na projekt knihovny služby WCF a klikněte na tlačítko **sestavení**.
 
 ## <a name="error-accessing-a-service-over-a-remote-desktop"></a>Chyba při přístupu ke službě přes vzdálenou plochu
 
@@ -51,9 +51,9 @@ Když uživatel pracuje s WCF hostované webové služby přes připojení ke vz
 
 Chcete-li vyřešit tuto chybu:
 
-1.  V projektu webu, otevřete **vlastnosti** stránky.
+1. V projektu webu, otevřete **vlastnosti** stránky.
 
-2.  Na **možnosti spuštění** kartu, zrušte **ověřování protokolem NTLM** zaškrtávací políčko.
+2. Na **možnosti spuštění** kartu, zrušte **ověřování protokolem NTLM** zaškrtávací políčko.
 
     > [!NOTE]
     > Měli byste vypnout ověřování protokolem NTLM pouze pro weby, které obsahují výhradně služby WCF. Zabezpečení služeb WCF je spravována prostřednictvím konfigurace v nástroji *web.config* souboru. Díky ověřování protokolem NTLM zbytečné.
@@ -74,19 +74,19 @@ Pokud projekt služby je odebrán z řešení, tato závislost explicitní sesta
 
 Chcete-li tuto chybu vyřešit, budete muset ručně znovu sestavit projekt služby:
 
-1.  Na **nástroje** nabídky, klikněte na tlačítko **možnosti**.
+1. Na **nástroje** nabídky, klikněte na tlačítko **možnosti**.
 
-2.  V **možnosti** dialogového okna rozbalte **projekty a řešení**a pak vyberte **Obecné**.
+2. V **možnosti** dialogového okna rozbalte **projekty a řešení**a pak vyberte **Obecné**.
 
-3.  Ujistěte se, že **zobrazit pokročilé konfigurace sestavení** zaškrtávací políčko zaškrtnuto a pak klikněte na **OK**.
+3. Ujistěte se, že **zobrazit pokročilé konfigurace sestavení** zaškrtávací políčko zaškrtnuto a pak klikněte na **OK**.
 
-4.  Načtěte projekt služby WCF.
+4. Načtěte projekt služby WCF.
 
-5.  V **nástroje Configuration Manager** dialogové okno, nastavte **konfigurace aktivního řešení** k **ladění**. Další informace najdete v tématu [jak: Vytvoření a úprava konfigurací](../ide/how-to-create-and-edit-configurations.md).
+5. V **nástroje Configuration Manager** dialogové okno, nastavte **konfigurace aktivního řešení** k **ladění**. Další informace najdete v tématu [jak: Vytvoření a úprava konfigurací](../ide/how-to-create-and-edit-configurations.md).
 
-6.  V **Průzkumníka řešení**, vyberte projekt služby WCF.
+6. V **Průzkumníka řešení**, vyberte projekt služby WCF.
 
-7.  Na **sestavení** nabídky, klikněte na tlačítko **znovu sestavit** znovu sestavit projekt služby WCF.
+7. Na **sestavení** nabídky, klikněte na tlačítko **znovu sestavit** znovu sestavit projekt služby WCF.
 
 ## <a name="wcf-data-services-do-not-display-in-the-browser"></a>Služby WCF Data Services nezobrazují v prohlížeči
 
@@ -94,13 +94,13 @@ Když se pokusí zobrazit reprezentaci XML dat [!INCLUDE[ss_data_service](../dat
 
 Chcete-li vyřešit tuto chybu, zakažte informační kanály RSS:
 
-1.  V Internet Exploreru na **nástroje** nabídky, klikněte na tlačítko **Možnosti Internetu**.
+1. V Internet Exploreru na **nástroje** nabídky, klikněte na tlačítko **Možnosti Internetu**.
 
-2.  Na **obsahu** kartě **informační kanály** klikněte na tlačítko **nastavení**.
+2. Na **obsahu** kartě **informační kanály** klikněte na tlačítko **nastavení**.
 
-3.  V **nastavení informačního kanálu** dialogové okno, zrušte **zapnout zobrazení pro čtení informačního kanálu** zaškrtněte políčko a potom klikněte na tlačítko **OK**.
+3. V **nastavení informačního kanálu** dialogové okno, zrušte **zapnout zobrazení pro čtení informačního kanálu** zaškrtněte políčko a potom klikněte na tlačítko **OK**.
 
-4.  Klikněte na tlačítko **OK** zavřete **Možnosti Internetu** dialogové okno.
+4. Klikněte na tlačítko **OK** zavřete **Možnosti Internetu** dialogové okno.
 
 ## <a name="see-also"></a>Viz také:
 

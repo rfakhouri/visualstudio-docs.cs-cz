@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 803fd69df06ae820e39d7edcfa54e56e59717a1c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3979138944671ff2809f4f73beb0a28b222ec5ff
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54963109"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053192"
 ---
 # <a name="inside-the-editor"></a>V editoru
 
@@ -202,19 +202,19 @@ Zobrazení textu formáty jeden <xref:Microsoft.VisualStudio.Text.ITextSnapshotL
 
 Funkce editoru jsou navrženy tak, aby definice funkce je oddělený od jeho implementace. Editor zahrnuje tyto funkce:
 
--   Značky a třídění
+- Značky a třídění
 
--   Vylepšení
+- Vylepšení
 
--   Projekce
+- Projekce
 
--   Sbalování
+- Sbalování
 
--   Myš a klíč vazby
+- Myš a klíč vazby
 
--   Operace a primitiv
+- Operace a primitiv
 
--   IntelliSense
+- IntelliSense
 
 ### <a name="tags-and-classifiers"></a>Značky a třídění
 
@@ -262,7 +262,7 @@ Vložený vylepšení jsou obrázky, které tvoří část zobrazení formátova
 
 Místní vylepšení jsou obrázky, které se zobrazí v malém okně nad zobrazení textu, například popisky.
 
-###  <a name="projection"></a> Projekce
+### <a name="projection"></a> Projekce
 
 Projekce je postup pro vytváření jiný typ textové vyrovnávací paměti, která ve skutečnosti neukládá textu, ale místo toho kombinuje text z jiné textové vyrovnávací paměti. Například projekce vyrovnávací paměť lze zřetězit text ze dvou dalších vyrovnávací paměti a zobrazí výsledky, pokud je v jediné vyrovnávací paměti nebo skrýt části textu v jedné vyrovnávací paměti. Projekce vyrovnávací paměť může fungovat jako zdrojová vyrovnávací paměť do vyrovnávací paměti jiného projekce. Chcete-li uspořádat text mnoha různými způsoby lze sestavit sadu vyrovnávacích pamětí, které se týkají projekcí. (Takové sadě se taky říká *vyrovnávací paměti grafu*.) Funkce sbalování text sady Visual Studio je implementovaný s využitím vyrovnávací paměti projekce ke skrytí sbalených textu a editoru sady Visual Studio pro stránky ASP.NET používá projekce pro podporu vložené jazyků, jako je například Visual Basic a C#.
 

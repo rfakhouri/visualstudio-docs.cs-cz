@@ -16,12 +16,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: f356f0a13b9a1b9ecf3a8096b29c1f0c9c6f275a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 0efbec121e08d026145d8762b574847fbd4a2b88
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59662605"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045639"
 ---
 # <a name="ca1801-review-unused-parameters"></a>CA1801: Zkontrolujte nepoužité parametry
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,17 +38,17 @@ Nejnovější dokumentaci k sadě Visual Studio, naleznete v tématu [CA1801: Re
 ## <a name="cause"></a>Příčina  
  Podpis metody obsahuje parametr, který není použit v těle metody. Toto pravidlo nezkoumá následujících metod:  
   
--   Metody odkazuje delegáta.  
+- Metody odkazuje delegáta.  
   
--   Metody používané jako obslužné rutiny událostí.  
+- Metody používané jako obslužné rutiny událostí.  
   
--   Metody deklarované s `abstract` (`MustOverride` v jazyce Visual Basic) modifikátor.  
+- Metody deklarované s `abstract` (`MustOverride` v jazyce Visual Basic) modifikátor.  
   
--   Metody deklarované s `virtual` (`Overridable` v jazyce Visual Basic) modifikátor.  
+- Metody deklarované s `virtual` (`Overridable` v jazyce Visual Basic) modifikátor.  
   
--   Metody deklarované s `override` (`Overrides` v jazyce Visual Basic) modifikátor.  
+- Metody deklarované s `override` (`Overrides` v jazyce Visual Basic) modifikátor.  
   
--   Metody deklarované s `extern` (`Declare` v sadě Visual Studio) modifikátor.  
+- Metody deklarované s `extern` (`Declare` v sadě Visual Studio) modifikátor.  
   
 ## <a name="rule-description"></a>Popis pravidla  
  Zkontrolujte parametry v nevirtuálních metodách, které nejsou používány v těle metody, abyste měli jistotu, že nesprávnosti kolem selhání k nim přístup. Nevyužité parametry zvyšují náklady na náklady na údržbu a výkonu.  

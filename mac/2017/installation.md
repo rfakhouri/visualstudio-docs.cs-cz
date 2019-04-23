@@ -7,18 +7,22 @@ ms.date: 11/03/2018
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
-ms.openlocfilehash: 117dfbe2d9d97dadd02388b7d4f88a047fcb69fa
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 3fe365b56d35202e7755e93219eeaf45f51509d2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59659056"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60057417"
 ---
 # <a name="install-visual-studio-2017-for-mac"></a>Instalace sady Visual Studio 2017 pro Mac
 
 > [!NOTE]
-> 2019 Visual Studio for Mac je [nyní k dispozici](installation.md?view=vsmac-2019). Starší verze sady Visual Studio pro Mac, najdete v sadě Visual Studio [stránky pro stažení](https://visualstudio.microsoft.com/vs/older-downloads/).
+> 2019 Visual Studio for Mac je [nyní k dispozici](installation.md?view=vsmac-2019). Starší verze sady Visual Studio pro Mac, najdete v sadě Visual Studio [stránky pro stažení](https://my.visualstudio.com/Downloads?q=Visual%20Studio%202017%20for%20Mac).
 
+## <a name="downgrading-from-visual-studio-2019-for-mac"></a>Downgrade z Visual Studio 2019 for Mac?
+
+Pro dosažení co nejlepších výsledků, než spustíte downgrade měli byste zajistit, kterou jste [odinstalovat](uninstall.md) 2019 Visual Studio pro Mac. Pokud máte problémy, které jsou příčinou stáhnout, ujistěte se, že nám dejte vědět pomocí [hlášení problému](report-a-problem.md).
+ 
 ## <a name="requirements"></a>Požadavky
 
 Pro počáteční vývoj nativních, jsou aplikací napříč platformami, když si stáhnout Visual Studio pro Mac existuje několik věcí, které musíte nainstalovat a nastavit v rámci přípravy.
@@ -31,7 +35,7 @@ Pro práci se systémem iOS v sadě Visual Studio potřebujete následující:
 
 ## <a name="install"></a>Instalace
 
-1. Stáhněte si Visual Studio for Mac z [https://visualstudio.microsoft.com/](https://visualstudio.microsoft.com/)
+1. Stáhněte si Visual Studio for Mac z [my.visualstudio.com](https://my.visualstudio.com/Downloads?q=Visual%20Studio%202017%20for%20Mac)
 
 2. Po stažení instalačního programu balíčku, klikněte na tlačítko **VisualStudioForMacInstaller.dmg** souboru připojit instalační program a spusťte jej dvojitým kliknutím logo, jak je znázorněno v následujícím obrázku:
 

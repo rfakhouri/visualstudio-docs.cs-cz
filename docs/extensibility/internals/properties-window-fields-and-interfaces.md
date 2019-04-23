@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a252a719e800e828275b8f3575c5073ae185e10b
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 03f3c9ca624f0cccae5f9a21573fdcf01b7e9143
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335438"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060225"
 ---
 # <a name="properties-window-fields-and-interfaces"></a>Pole a rozhraní okna Vlastnosti
 Model pro výběr k určení, které informace se zobrazují v **vlastnosti** okna je založen na okně, které má fokus v integrovaném vývojovém prostředí. Každé okno a objekt v rámci vybrané okno může mít objekt kontextu jeho výběr do kontextu globálního výběru. Prostředí aktualizuje kontext globálního výběru s hodnotami z okna rámce, když je toto okno fokus. Při změně fokusu zločinců se stejně kontext výběru.
@@ -50,26 +50,26 @@ Existují dva způsoby, jak zachovat **vlastnosti** okno, které jsou synchroniz
 
 #### <a name="to-update-property-values-using-the-ivsuishell-interface"></a>Chcete-li aktualizovat pomocí rozhraní IVsUIShell hodnoty vlastností
 
-1.  Volání <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> (prostřednictvím <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell> služby) kdykoli VSPackages, projekty, nebo editory musíte vytvořit nebo výčet nástroj nebo dokumentu.
+1. Volání <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> (prostřednictvím <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell> služby) kdykoli VSPackages, projekty, nebo editory musíte vytvořit nebo výčet nástroj nebo dokumentu.
 
-2.  Implementace <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.RefreshPropertyBrowser%2A> zachovat **vlastnosti** okno, které jsou synchronizované s změny vlastností pro projekt (nebo vybraný objekt prochází se jím podle **vlastnosti** okno) bez implementace <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer> MSMQEvent_Arrived; <xref:Microsoft.VisualStudio.OLE.Interop.IPropertyNotifySink.OnChanged%2A> události.
+2. Implementace <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.RefreshPropertyBrowser%2A> zachovat **vlastnosti** okno, které jsou synchronizované s změny vlastností pro projekt (nebo vybraný objekt prochází se jím podle **vlastnosti** okno) bez implementace <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer> MSMQEvent_Arrived; <xref:Microsoft.VisualStudio.OLE.Interop.IPropertyNotifySink.OnChanged%2A> události.
 
-3.  Implementace <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> metody <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.AdviseHierarchyEvents%2A> a <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.UnadviseHierarchyEvents%2A> k zahájení a zakázat, klientské oznámení událostí hierarchii bez nutnosti hierarchii k implementaci <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer>.
+3. Implementace <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> metody <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.AdviseHierarchyEvents%2A> a <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.UnadviseHierarchyEvents%2A> k zahájení a zakázat, klientské oznámení událostí hierarchii bez nutnosti hierarchii k implementaci <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer>.
 
 ### <a name="updating-property-values-using-iconnection"></a>Aktualizuje se pomocí připojení IConnection hodnoty vlastností
  Druhý způsob, jak uchovávat **vlastnosti** je okno, které jsou synchronizované s změně hodnoty vlastnosti k implementaci `IConnection` umožňující připojení k objektu k označení existenci odchozí rozhraní. Pokud chcete lokalizovat název vlastnosti, jsou odvozeny z objektu <xref:System.ComponentModel.ICustomTypeDescriptor>. <xref:System.ComponentModel.ICustomTypeDescriptor> Implementace můžete upravit vlastnosti popisovače vrátí a změnit název vlastnosti. Chcete-li lokalizovat popis, vytvořit atribut, který je odvozen od <xref:System.ComponentModel.DescriptionAttribute> a přepsat vlastnost Popis.
 
 #### <a name="considerations-in-implementing-the-iconnection-interface"></a>Důležité informace při implementaci rozhraní připojení IConnection
 
-1.  `IConnection` poskytuje přístup k enumerátoru dílčí objekt se <xref:Microsoft.VisualStudio.OLE.Interop.IEnumConnectionPoints> rozhraní. Také poskytuje přístup ke všem připojení bodu dílčí objektům, každý z která implementuje <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> rozhraní.
+1. `IConnection` poskytuje přístup k enumerátoru dílčí objekt se <xref:Microsoft.VisualStudio.OLE.Interop.IEnumConnectionPoints> rozhraní. Také poskytuje přístup ke všem připojení bodu dílčí objektům, každý z která implementuje <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> rozhraní.
 
-2.  Libovolný objekt procházet zodpovídá za implementace <xref:Microsoft.VisualStudio.OLE.Interop.IPropertyNotifySink> událostí. **Vlastnosti** okno vás upozorní, události nastavený prostřednictvím `IConnection`.
+2. Libovolný objekt procházet zodpovídá za implementace <xref:Microsoft.VisualStudio.OLE.Interop.IPropertyNotifySink> událostí. **Vlastnosti** okno vás upozorní, události nastavený prostřednictvím `IConnection`.
 
-3.  Spojovací bod určuje, kolik připojení (jeden nebo více) povoluje v jeho provádění <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint.Advise%2A>. Spojovací bod, který umožňuje pouze jedno rozhraní můžou vrátit <xref:Microsoft.VisualStudio.VSConstants.E_NOTIMPL> z <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint.EnumConnections%2A> metody.
+3. Spojovací bod určuje, kolik připojení (jeden nebo více) povoluje v jeho provádění <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint.Advise%2A>. Spojovací bod, který umožňuje pouze jedno rozhraní můžou vrátit <xref:Microsoft.VisualStudio.VSConstants.E_NOTIMPL> z <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint.EnumConnections%2A> metody.
 
-4.  Klient může volat `IConnection` rozhraní se získat přístup k enumerátoru dílčí objekt se <xref:Microsoft.VisualStudio.OLE.Interop.IEnumConnectionPoints> rozhraní. <xref:Microsoft.VisualStudio.OLE.Interop.IEnumConnectionPoints> Rozhraní může být volána pro výčet spojovacích bodů pro každou odchozí ID rozhraní (IID).
+4. Klient může volat `IConnection` rozhraní se získat přístup k enumerátoru dílčí objekt se <xref:Microsoft.VisualStudio.OLE.Interop.IEnumConnectionPoints> rozhraní. <xref:Microsoft.VisualStudio.OLE.Interop.IEnumConnectionPoints> Rozhraní může být volána pro výčet spojovacích bodů pro každou odchozí ID rozhraní (IID).
 
-5.  `IConnection` Můžete také volat získat přístup k připojení bodu podřízených objektů s <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> pro každou odchozí identifikátor IID rozhraní. Až <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> rozhraní, klient spustí nebo ukončí advisory smyčky s umožňující připojení k objektu a klienta vlastní synchronizaci. Klient může také volat <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> rozhraní získat objekt enumerátoru s <xref:Microsoft.VisualStudio.OLE.Interop.IEnumConnections> rozhraní pro připojení, která ví o zobrazení výčtu.
+5. `IConnection` Můžete také volat získat přístup k připojení bodu podřízených objektů s <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> pro každou odchozí identifikátor IID rozhraní. Až <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> rozhraní, klient spustí nebo ukončí advisory smyčky s umožňující připojení k objektu a klienta vlastní synchronizaci. Klient může také volat <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> rozhraní získat objekt enumerátoru s <xref:Microsoft.VisualStudio.OLE.Interop.IEnumConnections> rozhraní pro připojení, která ví o zobrazení výčtu.
 
 ## <a name="getting-field-descriptions-from-the-properties-window"></a> Získávání popisy pole z okna Vlastnosti
 V dolní části **vlastnosti** okně oblasti popisu zobrazí informace související s vybranou vlastnost pole. Tato funkce je ve výchozím nastavení zapnutá. Pokud chcete skrýt pole Popis, klikněte pravým tlačítkem myši **vlastnosti** okno a klikněte na tlačítko **popis**. Tím také odstraněn znak zaškrtnutí vedle položky **popis** title v nabídce okno. Pole lze zobrazit znovu pomocí stejných kroků, chcete-li přepnout **popis** zpět na.

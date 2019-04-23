@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f2385d359387090d0430fbea182fcef738b454a7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: d737ecf51b6726bf46a525104c99f8ac61569964
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603271"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045856"
 ---
 # <a name="how-to-clean-a-build"></a>Postupy: Vyčištění sestavení
 Při čištění sestavení se odstraní všechny pomocných a výstupních souborů, byste museli opustit jenom soubory projektu a součást. Ze souborů projektu a komponenty nových instancí přechodný a výstupních souborů může pak být sestavena. Knihovny běžných úloh, které je součástí [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] zahrnuje [Exec](../msbuild/exec-task.md) úkol, který můžete použít ke spuštění příkazů systému. Další informace o knihovně úkoly, naleznete v tématu [úkolů odkaz](../msbuild/msbuild-task-reference.md).
@@ -28,11 +28,11 @@ Při čištění sestavení se odstraní všechny pomocných a výstupních soub
 
 #### <a name="to-create-a-directory-for-output-items"></a>Chcete-li vytvořit adresář pro výstupní položky
 
-1.  Použití `Property` element zadat umístění a název adresáře. Například vytvořte adresář *BuiltApp* v adresáři projektu a zdrojových souborech:
+1. Použití `Property` element zadat umístění a název adresáře. Například vytvořte adresář *BuiltApp* v adresáři projektu a zdrojových souborech:
 
      `<builtdir>BuiltApp</builtdir>`
 
-2.  Použití [MakeDir](../msbuild/makedir-task.md) úkolu k vytvoření adresáře, pokud adresář neexistuje. Příklad:
+2. Použití [MakeDir](../msbuild/makedir-task.md) úkolu k vytvoření adresáře, pokud adresář neexistuje. Příklad:
 
      ```xml
      <MakeDir Directories = "$(builtdir)"
@@ -44,7 +44,7 @@ Při čištění sestavení se odstraní všechny pomocných a výstupních soub
 
 #### <a name="to-remove-a-directory-and-all-files-contained-in-the-directory"></a>Chcete-li odebrat adresář a všechny soubory obsažené v adresáři
 
--   Použití `RemoveDir` na odebrat adresář úlohy. Příklad:
+- Použití `RemoveDir` na odebrat adresář úlohy. Příklad:
 
      `<RemoveDir Directories="$(builtdir)" />`
 

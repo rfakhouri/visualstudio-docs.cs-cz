@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 451d7a735116d7b181263eebe76751fd49900ce3
-ms.sourcegitcommit: 847d192013eb8225776243045c9b5a53d1ba4a59
+ms.openlocfilehash: ff323547135d4c0d57900ac4e871cf053dedf096
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/15/2019
-ms.locfileid: "59584412"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047677"
 ---
 # <a name="create-a-vuejs-application-using-nodejs-tools-for-visual-studio"></a>Vytvoření aplikace Vue.js pomocí Node.js Tools for Visual Studio
 
@@ -31,12 +31,17 @@ Následující nové funkce podporují Vue.js vývoj aplikací v sadě Visual St
 
 ## <a name="prerequisites"></a>Požadavky
 
-* Musíte mít nainstalovanou 15,8 ve verzi Preview 3 nebo novější verzi sady Visual Studio 2017 a **vývoj v Node.js** pracovního vytížení.
+* Musíte mít nainstalované Visual Studio 2017 verze 15.8 nebo novější a **vývoj v Node.js** pracovního vytížení.
 
     > [!IMPORTANT]
-    > Tento článek vyžaduje funkce, které jsou pouze dostupné od verze Visual Studio 2017 verze 15,8 ve verzi Preview 3.
+    > Tento článek vyžaduje funkce, které jsou k dispozici od verze Visual Studio 2017 verze 15.8.
 
-    Pokud jste ještě nenainstalovali aplikaci Visual Studio, přejděte [soubory ke stažení Visual Studio](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) stránku a nainstalovat zdarma.
+    ::: moniker range=">=vs-2019"
+    Pokud již není nainstalovaná požadovaná verze, nainstalujte [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019).
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Pokud jste ještě nenainstalovali aplikaci Visual Studio, přejděte [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) stránku a nainstalovat zdarma.
+    ::: moniker-end
 
     Pokud je potřeba, nainstalujte úlohu, ale už máte sadu Visual Studio, přejděte na **nástroje** > **získat nástroje a funkce...** , který otevře instalačního programu sady Visual Studio. Zvolte úlohu **Vývoj aplikací Node.js** a pak zvolte **Změnit**.
 

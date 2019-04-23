@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d6f0e70111c557be038e73c05ef7a1578493002d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 12c9515cf6f4841dd1f5ebfb554e00a262b8a160
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55951316"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060121"
 ---
 # <a name="l2dbformxamlcs-source-code"></a>Zdrojový kód L2DBForm.xaml.cs
 
@@ -23,9 +23,9 @@ Toto téma obsahuje obsah a popis jazyka C# zdrojový kód v souboru *L2DBForm.x
 
 Dva soukromé datové členy slouží k přidružení této třídy do okna prostředků používaných v *L2DBForm.xaml*.
 
--   Proměnná oboru názvů `myBooks` je inicializován na `"http://www.mybooks.com"`.
+- Proměnná oboru názvů `myBooks` je inicializován na `"http://www.mybooks.com"`.
 
--   Člen `bookList` je inicializována v konstruktoru na řetězec CDATA v *L2DBForm.xaml* tento řádek:
+- Člen `bookList` je inicializována v konstruktoru na řetězec CDATA v *L2DBForm.xaml* tento řádek:
 
     ```csharp
     bookList = (XElement)((ObjectDataProvider)Resources["LoadedBooks"]).Data;
@@ -35,11 +35,11 @@ Dva soukromé datové členy slouží k přidružení této třídy do okna pros
 
 Tato metoda obsahuje následující tři příkazy:
 
--   První podmíněný příkaz se používá k ověření vstupu.
+- První podmíněný příkaz se používá k ověření vstupu.
 
--   Druhý příkaz vytvoří novou <xref:System.Xml.Linq.XElement> z řetězce hodnoty zadané v uživatelem **přidat nová kniha** části uživatelského rozhraní (UI).
+- Druhý příkaz vytvoří novou <xref:System.Xml.Linq.XElement> z řetězce hodnoty zadané v uživatelem **přidat nová kniha** části uživatelského rozhraní (UI).
 
--   Poslední příkaz přidá tento nový prvek book na poskytovatele dat v *L2DBForm.xaml*. V důsledku toho vázání dat dynamického automaticky aktualizuje uživatelské rozhraní s touto novou položkou; není vyžadován žádný extra uživatelský kód.
+- Poslední příkaz přidá tento nový prvek book na poskytovatele dat v *L2DBForm.xaml*. V důsledku toho vázání dat dynamického automaticky aktualizuje uživatelské rozhraní s touto novou položkou; není vyžadován žádný extra uživatelský kód.
 
 ## <a name="onremove-event-handler"></a>OnRemove obslužné rutiny události
 
@@ -47,13 +47,13 @@ Tato metoda obsahuje následující tři příkazy:
 
 Základní práce odebrání položky vybrané knihy však provádí pouze dva příkazy:
 
--   Nejprve je načten prvek knihy, které jsou spojené s aktuálně vybranou položku v seznamu:
+- Nejprve je načten prvek knihy, které jsou spojené s aktuálně vybranou položku v seznamu:
 
     ```csharp
     XElement selBook = (XElement)lbBooks.SelectedItem;
     ```
 
--   Potom tento prvek je odstraněn z poskytovatele dat:
+- Potom tento prvek je odstraněn z poskytovatele dat:
 
     ```csharp
     selBook.Remove();

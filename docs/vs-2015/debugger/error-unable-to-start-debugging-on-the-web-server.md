@@ -28,12 +28,12 @@ caps.latest.revision: 40
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ee62f07bd9fb4626f8e8fb3387e4b80ca2d903d7
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 0b0cbd7afe90b1dbc091263e3a2594c9ca739e1c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59652056"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048759"
 ---
 # <a name="error-unable-to-start-debugging-on-the-web-server"></a>Chyba: Nepodařilo se zahájit ladění na webovém serveru
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ Při pokusu o ladění aplikace ASP.NET běžící na webovém serveru, může z
   
 V mnoha případech se této chybě dochází, protože IIS není správně nakonfigurovaný.
 
-##  <a name="vxtbshttpservererrorsthingstocheck"></a> Zkontrolujte konfiguraci služby IIS
+## <a name="vxtbshttpservererrorsthingstocheck"></a> Zkontrolujte konfiguraci služby IIS
 
 Po provedení kroků pro řešení problému podrobné tady a před dalším pokusem o ladění, může být také potřeba resetovat služby IIS. Můžete to udělat tak, že otevřete příkazový řádek správce a zadáním `iisreset`, nebo to můžete provést ve Správci služby IIS. 
 

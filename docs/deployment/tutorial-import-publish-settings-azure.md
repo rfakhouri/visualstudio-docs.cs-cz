@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: febf742ca7a54a14d8de59c251bb8783cf76370a
-ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
+ms.openlocfilehash: 3965fdaa085d609fd87bf070e9a38aa2079cc9b5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58567877"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052954"
 ---
 # <a name="publish-an-application-to-azure-app-service-by-importing-publish-settings-in-visual-studio"></a>Publikování aplikace do služby Azure App Service pomocí importu nastavení publikování v sadě Visual Studio
 
@@ -100,6 +100,7 @@ Soubor nastavení publikování (*\*.publishsettings*) se liší od profil publi
       </publishProfile>
     </publishData>
     ```
+
     Předchozí soubor *.publishsettings obvykle obsahuje dva profily publikování, které můžete použít v sadě Visual Studio, z nich se má nasadit pomocí nasazení webu a jeden pro nasazení přes FTP. Předchozí kód zobrazí profil nasazení webu. Oba profily se naimportují později při importu profilu.
 
 ## <a name="import-the-publish-settings-in-visual-studio-and-deploy"></a>Import nastavení publikování v sadě Visual Studio a nasazení

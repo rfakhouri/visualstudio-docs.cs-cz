@@ -10,14 +10,14 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 437f5aecb2fe8f7bb953c9efb6eb33ccb945c9f0
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: dd6514ec43cd3180d808c20d5589bf18e3a9b58b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56721788"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048202"
 ---
-# <a name="walkthrough-create-a-core-editor-and-registering-an-editor-file-type"></a>Průvodce: Vytvoření základní editor a registraci typu souboru editoru
+# <a name="walkthrough-create-a-core-editor-and-registering-an-editor-file-type"></a>Návod: Vytvoření základní editor a registraci typu souboru editoru
 Tento návod ukazuje, jak vytvořit VSPackage, která se spustí [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] základním editoru při otevření souboru se *.myext* příponu názvu souboru je načtena.
 
 ## <a name="prerequisites"></a>Požadavky
@@ -26,11 +26,11 @@ Tento návod ukazuje, jak vytvořit VSPackage, která se spustí [!INCLUDE[vsprv
 ## <a name="locations-for-the-visual-studio-package-project-template"></a>Umístění pro Visual Studio balíček šablony projektu
  Šablona projektu balíček Visual Studio najdete ve třech různých umístěních v **nový projekt** dialogové okno:
 
-1.  V části **rozšiřitelnosti Visual Basic**. Je výchozí jazyk projektu jazyka Visual Basic.
+1. V části **rozšiřitelnosti Visual Basic**. Je výchozí jazyk projektu jazyka Visual Basic.
 
-2.  V části **rozšíření jazyka C#**. Je výchozí jazyk projektu C#.
+2. V části **rozšíření jazyka C#**. Je výchozí jazyk projektu C#.
 
-3.  V části **jiný projekt typy rozšíření**. Výchozí jazyk projektu je C++.
+3. V části **jiný projekt typy rozšíření**. Výchozí jazyk projektu je C++.
 
 ### <a name="to-create-the-vspackage"></a>Vytvoření sady VSPackage
 

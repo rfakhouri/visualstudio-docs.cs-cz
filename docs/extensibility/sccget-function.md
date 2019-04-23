@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e74de898bb9e7810729a0895834f7cdfe5ee5984
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 6b773fc52da702f2563276b4a8e51b6c3651f596
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56691303"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044490"
 ---
 # <a name="sccget-function"></a>Sccget – funkce
 Tato funkce načte kopii jeden nebo více souborů pro zobrazení a kompilace, ale ne pro úpravy. Ve většině systémů jsou soubory označené jako jen pro čtení.
@@ -63,7 +63,7 @@ SCCRTN SccGet(
 ## <a name="return-value"></a>Návratová hodnota
  Modul plug-in implementaci ovládacího prvku zdroje této funkce má vracet instanci jednoho z následujících hodnot:
 
-|Hodnota|Popis|
+|Value|Popis|
 |-----------|-----------------|
 |SCC_OK|Úspěšné operaci get.|
 |SCC_E_FILENOTCONTROLLED|Soubor není pod správou zdrojových kódů.|
@@ -90,21 +90,21 @@ SCCRTN SccGet(
 
  Existují dva způsoby, jak vyřešit tuto situaci, kde bude synchronizován s databázi správy zdrojových kódů místní mezipaměť verze ovládacího prvku zdroje:
 
-1.  Nepovolit přejmenování souboru v databázi správy zdrojových kódů, která je právě rezervována.
+1. Nepovolit přejmenování souboru v databázi správy zdrojových kódů, která je právě rezervována.
 
-2.  To ekvivalent "odstranit staré" následované "Přidat nový". Následující požadovaný algoritmus je jedním ze způsobů jak toho dosáhnout.
+2. To ekvivalent "odstranit staré" následované "Přidat nový". Následující požadovaný algoritmus je jedním ze způsobů jak toho dosáhnout.
 
-    1.  Volání [sccquerychanges –](../extensibility/sccquerychanges-function.md) funkce, která se další informace o přejmenování *a.txt* k *b.txt* v databázi správy zdrojových kódů.
+    1. Volání [sccquerychanges –](../extensibility/sccquerychanges-function.md) funkce, která se další informace o přejmenování *a.txt* k *b.txt* v databázi správy zdrojových kódů.
 
-    2.  Přejmenovat místní *a.txt* k *b.txt*.
+    2. Přejmenovat místní *a.txt* k *b.txt*.
 
-    3.  Volání `SccGet` funkce pro obě *a.txt* a *b.txt*.
+    3. Volání `SccGet` funkce pro obě *a.txt* a *b.txt*.
 
-    4.  Protože *a.txt* neexistuje v databázi správy zdrojových kódů, se vyprazdňují místní verze mezipaměti chybí *a.txt* informace o verzi.
+    4. Protože *a.txt* neexistuje v databázi správy zdrojových kódů, se vyprazdňují místní verze mezipaměti chybí *a.txt* informace o verzi.
 
-    5.  *B.txt* soubor rezervuje se sloučí s obsahem místní *b.txt* souboru.
+    5. *B.txt* soubor rezervuje se sloučí s obsahem místní *b.txt* souboru.
 
-    6.  Aktualizovaný *b.txt* souboru můžete teď být vráceny se změnami.
+    6. Aktualizovaný *b.txt* souboru můžete teď být vráceny se změnami.
 
 ## <a name="see-also"></a>Viz také:
 - [Funkce modulu plug-in API zdrojového ovládacího prvku](../extensibility/source-control-plug-in-api-functions.md)

@@ -11,12 +11,12 @@ ms.assetid: a7816161-0490-4043-86f5-0f7331ed83b3
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f8cec34f5eb814dfd236aa5fab46bcc811c8c88f
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 5238274d66296a21e15b47d1a090ab01c1a1299d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59669702"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046289"
 ---
 # <a name="walkthrough-publishing-a-visual-studio-extension"></a>Návod: Publikování rozšíření sady Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,35 +31,35 @@ Tento návod ukazuje, jak publikovat rozšíření sady Visual Studio do Galerie
 ## <a name="create-a-visual-studio-extension"></a>Vytvoření rozšíření sady Visual Studio
  V tomto případě použijeme rozšíření VSPackage výchozí, ale stejný postup platí pro každý typ rozšíření.
 
-1.  Vytvoření v jazyce C# s názvem VSPackage `TestPublishing` , která obsahuje příkaz nabídky. Další informace najdete v tématu [vytváření rozšíření pomocí příkazu nabídky](../extensibility/creating-an-extension-with-a-menu-command.md).
+1. Vytvoření v jazyce C# s názvem VSPackage `TestPublishing` , která obsahuje příkaz nabídky. Další informace najdete v tématu [vytváření rozšíření pomocí příkazu nabídky](../extensibility/creating-an-extension-with-a-menu-command.md).
 
 ## <a name="test-the-extension"></a>Testování rozšíření
  Před distribucí rozšíření, sestavit a otestovat a ujistit se, že je v experimentální instanci sady Visual Studio správně nainstalované.
 
-1.  V sadě Visual Studio spusťte ladění. Chcete-li spustit experimentální instanci sady Visual Studio.
+1. V sadě Visual Studio spusťte ladění. Chcete-li spustit experimentální instanci sady Visual Studio.
 
-2.  V experimentální instanci aplikace, přejděte **nástroje** nabídky a klikněte na tlačítko **Správce rozšíření**. Rozšíření TestPublishing by se měla objevit v prostředním podokně a povolit.
+2. V experimentální instanci aplikace, přejděte **nástroje** nabídky a klikněte na tlačítko **Správce rozšíření**. Rozšíření TestPublishing by se měla objevit v prostředním podokně a povolit.
 
-3.  Na **nástroje** nabídky, ujistěte se, že se zobrazí příkaz test.
+3. Na **nástroje** nabídky, ujistěte se, že se zobrazí příkaz test.
 
 ## <a name="publish-the-extension-to-the-visual-studio-gallery"></a>Publikování rozšíření do Galerie Visual Studio
  Rozšíření můžete teď publikovat do Galerie Visual Studio.
 
-1.  Ujistěte se, že jste vytvořili na prodejní verzi produktu rozšíření a zda je aktuální.
+1. Ujistěte se, že jste vytvořili na prodejní verzi produktu rozšíření a zda je aktuální.
 
-2.  Ve webovém prohlížeči otevřete [Visual Studio Marketplace](https://marketplace.visualstudio.com/) webu.
+2. Ve webovém prohlížeči otevřete [Visual Studio Marketplace](https://marketplace.visualstudio.com/) webu.
 
-3.  V pravém horním rohu klikněte na tlačítko **SIGN IN**.
+3. V pravém horním rohu klikněte na tlačítko **SIGN IN**.
 
-4.  K přihlášení pomocí účtu Microsoft. Pokud nemáte účet Microsoft, můžete jeden vytvořit v tomto okamžiku.
+4. K přihlášení pomocí účtu Microsoft. Pokud nemáte účet Microsoft, můžete jeden vytvořit v tomto okamžiku.
 
-5.  Klikněte na **Odeslat**.
+5. Klikněte na **Odeslat**.
 
-6.  V **krok 1: Typ rozšíření**vyberte **nástroj** a potom klikněte na tlačítko **Další**.
+6. V **krok 1: Typ rozšíření**vyberte **nástroj** a potom klikněte na tlačítko **Další**.
 
-7.  V **krok 2: Nahrát**, je možné nahrávat přímo do Galerie Visual Studio nebo jednoduše přidejte odkaz na vlastní web. V tomto případě vyberte **chci nahrát nástroj**. **Vybrat ovládací prvek** se zobrazí okno. Klikněte na tlačítko **Procházet** a pak vyberte TestPublish.vsix ve složce \bin\Release projektu. Klikněte na **Další**.
+7. V **krok 2: Nahrát**, je možné nahrávat přímo do Galerie Visual Studio nebo jednoduše přidejte odkaz na vlastní web. V tomto případě vyberte **chci nahrát nástroj**. **Vybrat ovládací prvek** se zobrazí okno. Klikněte na tlačítko **Procházet** a pak vyberte TestPublish.vsix ve složce \bin\Release projektu. Klikněte na **Další**.
 
-8.  V **krok 3: Základní informace**, jsou zobrazena pole ze souboru source.extension.vsixmanifest. Vyberte odpovídající **kategorie** a přidejte **značky** k poskytování pomoci uživatelům najít rozšíření. Můžete chtít přidat podrobnější přehled a popis (popis musí být aspoň 280 znaků). Ponechte **typ rozšíření** jako **rozšíření společnosti Microsoft** a **nákladů kategorie** jako **zkušební verze**.
+8. V **krok 3: Základní informace**, jsou zobrazena pole ze souboru source.extension.vsixmanifest. Vyberte odpovídající **kategorie** a přidejte **značky** k poskytování pomoci uživatelům najít rozšíření. Můžete chtít přidat podrobnější přehled a popis (popis musí být aspoň 280 znaků). Ponechte **typ rozšíření** jako **rozšíření společnosti Microsoft** a **nákladů kategorie** jako **zkušební verze**.
 
 9. Přečtěte si příspěvek smlouvu v dolní části stránky a zkontrolujte **souhlasím**.
 
@@ -72,29 +72,29 @@ Tento návod ukazuje, jak publikovat rozšíření sady Visual Studio do Galerie
 ## <a name="install-the-extension-from-the-visual-studio-gallery"></a>Nainstalovat rozšíření z Galerie sady Visual Studio
  Teď, když se publikuje rozšíření, nainstalujte ho v sadě Visual Studio a ho vyzkoušeli.
 
-1.  V sadě Visual Studio na **nástroje** nabídky, klikněte na tlačítko **rozšíření a aktualizace**.
+1. V sadě Visual Studio na **nástroje** nabídky, klikněte na tlačítko **rozšíření a aktualizace**.
 
-2.  Klikněte na tlačítko **Online** a vyhledejte TestPublish. Seznam rozšíření TestPublish by se zobrazit.
+2. Klikněte na tlačítko **Online** a vyhledejte TestPublish. Seznam rozšíření TestPublish by se zobrazit.
 
-3.  Klikněte na tlačítko **Stáhnout**. Po stažení rozšíření, klikněte na tlačítko **nainstalovat**.
+3. Klikněte na tlačítko **Stáhnout**. Po stažení rozšíření, klikněte na tlačítko **nainstalovat**.
 
-4.  K dokončení instalace, restartujte aplikaci Visual Studio.
+4. K dokončení instalace, restartujte aplikaci Visual Studio.
 
 ## <a name="removing-the-extension"></a>Odebírá se rozšíření
  Můžete odebrat rozšíření z Galerie sady Visual Studio a z vašeho počítače.
 
 #### <a name="to-remove-the-extension-from-the-visual-studio-gallery"></a>Odebrat rozšíření z Galerie sady Visual Studio
 
-1.  Otevřít [Visual Studio Marketplace](https://marketplace.visualstudio.com/) webu.
+1. Otevřít [Visual Studio Marketplace](https://marketplace.visualstudio.com/) webu.
 
-2.  V pravém horním rohu klikněte na tlačítko **Moje Extenions**. Zobrazí se seznam u možnosti TestPublish.
+2. V pravém horním rohu klikněte na tlačítko **Moje Extenions**. Zobrazí se seznam u možnosti TestPublish.
 
-3.  Klikněte na tlačítko **odstranit**.
+3. Klikněte na tlačítko **odstranit**.
 
 #### <a name="to-remove-the-extension-from-your-computer"></a>Odebrat rozšíření z počítače
 
-1.  V sadě Visual Studio na **nástroje** nabídky, klikněte na tlačítko **Správce rozšíření**.
+1. V sadě Visual Studio na **nástroje** nabídky, klikněte na tlačítko **Správce rozšíření**.
 
-2.  Vyberte TestPublish a potom klikněte na tlačítko **odinstalovat**.
+2. Vyberte TestPublish a potom klikněte na tlačítko **odinstalovat**.
 
-3.  K dokončení odinstalace restartujte aplikaci Visual Studio.
+3. K dokončení odinstalace restartujte aplikaci Visual Studio.

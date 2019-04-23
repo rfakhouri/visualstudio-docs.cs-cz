@@ -13,27 +13,27 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4bfc46e4860933d57b3439f8293b0d88fc0519ec
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c859e4488a4e1ef6d843ffe27f5b342ea1a92e0b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54799756"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049955"
 ---
 # <a name="how-to-export-class-diagrams-as-images-class-designer"></a>Postupy: Export diagramů tříd jako obrázky (návrhář tříd)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Export diagramu tříd, který jste vytvořili z kódu v projektu, uložte jako obrázek diagramu. Pokud chcete místo toho export diagramů tříd UML, přečtěte si téma [exportování diagramů jako obrázků](../modeling/export-diagrams-as-images.md).  
   
-1.  Otevřete váš soubor diagramu tříd (.cd).  
+1. Otevřete váš soubor diagramu tříd (.cd).  
   
-2.  Z **Diagram tříd** nabídky nebo surface místní nabídky diagramu zvolte **exportovat Diagram jako obrázek**.  
+2. Z **Diagram tříd** nabídky nebo surface místní nabídky diagramu zvolte **exportovat Diagram jako obrázek**.  
   
-3.  Vyberte diagram.  
+3. Vyberte diagram.  
   
-4.  Vyberte formát, který chcete.  
+4. Vyberte formát, který chcete.  
   
-5.  Zvolte **exportovat** pro dokončení exportu.  
+5. Zvolte **exportovat** pro dokončení exportu.  
   
      Automaticky aktualizovat exportované obrázky, které jsou odkazované z jiných dokumentů, exportujte diagram znovu v sadě Visual Studio.  
   

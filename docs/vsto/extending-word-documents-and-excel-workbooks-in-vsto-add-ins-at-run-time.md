@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 62b952d604ce095ef24ef427c98a74e60f25ba4e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 7f7218324e643355e7c6554f3a1cf6c74e8349d5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56643818"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049467"
 ---
 # <a name="extend-word-documents-and-excel-workbooks-in-vsto-add-ins-at-runtime"></a>Rozšíření dokumentů aplikace Word a sešitů aplikace Excel v doplňcích VSTO za běhu
   Doplněk VSTO slouží k přizpůsobení dokumentů aplikace Word a sešitů aplikace Excel následujícími způsoby:
@@ -54,21 +54,21 @@ ms.locfileid: "56643818"
 
 #### <a name="to-generate-a-host-item-for-a-word-document"></a>Generovat položku hostitele pro dokument aplikace Word
 
--   Následující příklad kódu ukazuje, jak generovat položku hostitele pro aktivní dokument.
+- Následující příklad kódu ukazuje, jak generovat položku hostitele pro aktivní dokument.
 
      [!code-vb[Trin_WordAddInDynamicControls#8](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#8)]
      [!code-csharp[Trin_WordAddInDynamicControls#8](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#8)]
 
 #### <a name="to-generate-a-host-item-for-an-excel-workbook"></a>Ke generování hostitelská položka sešitu aplikace Excel
 
--   Následující příklad kódu ukazuje, jak generovat hostitelská položka sešitu aktivní.
+- Následující příklad kódu ukazuje, jak generovat hostitelská položka sešitu aktivní.
 
      [!code-vb[Trin_ExcelAddInDynamicControls#2](../vsto/codesnippet/VisualBasic/trin_exceladdindynamiccontrols4/ThisAddIn.vb#2)]
      [!code-csharp[Trin_ExcelAddInDynamicControls#2](../vsto/codesnippet/CSharp/trin_exceladdindynamiccontrols4/ThisAddIn.cs#2)]
 
 #### <a name="to-generate-a-host-item-for-an-excel-worksheet"></a>Generovat položku hostitele pro listu aplikace Excel
 
--   Následující příklad kódu ukazuje, jak generovat hostitelská položka pro aktivního listu v projektu.
+- Následující příklad kódu ukazuje, jak generovat hostitelská položka pro aktivního listu v projektu.
 
      [!code-vb[Trin_ExcelAddInDynamicControls#1](../vsto/codesnippet/VisualBasic/trin_exceladdindynamiccontrols4/ThisAddIn.vb#1)]
      [!code-csharp[Trin_ExcelAddInDynamicControls#1](../vsto/codesnippet/CSharp/trin_exceladdindynamiccontrols4/ThisAddIn.cs#1)]
@@ -78,12 +78,12 @@ ms.locfileid: "56643818"
 
 #### <a name="to-generate-a-host-control-for-a-listobject"></a>Ke generování hostitelského ovládacího prvku pro ListObject
 
--   Následující příklad kódu ukazuje, jak vygenerovat <xref:Microsoft.Office.Tools.Excel.ListObject> poprvé <xref:Microsoft.Office.Interop.Excel.ListObject> v aktivním listu v projektu.
+- Následující příklad kódu ukazuje, jak vygenerovat <xref:Microsoft.Office.Tools.Excel.ListObject> poprvé <xref:Microsoft.Office.Interop.Excel.ListObject> v aktivním listu v projektu.
 
      [!code-vb[Trin_ExcelAddInDynamicControls#3](../vsto/codesnippet/VisualBasic/trin_exceladdindynamiccontrols4/ThisAddIn.vb#3)]
      [!code-csharp[Trin_ExcelAddInDynamicControls#3](../vsto/codesnippet/CSharp/trin_exceladdindynamiccontrols4/ThisAddIn.cs#3)]
 
-###  <a name="AddControls"></a> Přidání spravovaných ovládacích prvků do dokumentů a listů
+### <a name="AddControls"></a> Přidání spravovaných ovládacích prvků do dokumentů a listů
  Jakmile vygenerujete <xref:Microsoft.Office.Tools.Word.Document> nebo <xref:Microsoft.Office.Tools.Excel.Worksheet>, můžete přidat ovládací prvky v dokumentu nebo listu, že tyto rozšířené objekty představují. Chcete-li přidat ovládací prvky, použijte `Controls` vlastnost <xref:Microsoft.Office.Tools.Word.Document> nebo <xref:Microsoft.Office.Tools.Excel.Worksheet>. Další informace najdete v tématu [přidání ovládacích prvků do dokumentů Office za běhu](../vsto/adding-controls-to-office-documents-at-run-time.md).
 
  Můžete přidat ovládací prvky Windows Forms nebo *hostování ovládacích prvků*. Hostitelský ovládací prvek je ovládací prvek poskytované [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] , která zabalí odpovídající ovládací prvek v aplikaci Word nebo Excel primárního spolupracujícího sestavení. Hostitelský ovládací prvek zpřístupní všechna chování základní nativní objekt Office. Také vyvolává události a může být vázaný na data pomocí vazby datového modelu Windows Forms. Další informace najdete v tématu [hostovat položky a hostujte Přehled ovládacích prvků](../vsto/host-items-and-host-controls-overview.md).
@@ -113,7 +113,7 @@ ms.locfileid: "56643818"
  [!code-vb[Trin_WordAddInDynamicControls #13](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#13)]
  [!code-csharp[Trin_WordAddInDynamicControls#13](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#13)]
 
-##  <a name="HasVstoObject"></a> Určení, zda objekt Office se prodloužila
+## <a name="HasVstoObject"></a> Určení, zda objekt Office se prodloužila
  Chcete-li zjistit, zda rozšířený objekt již byl vygenerován pro konkrétní nativní objekt Office, použijte `HasVstoObject` metody. Tato metoda vrátí **true** Pokud rozšířené objekt již byl vytvořen.
 
  Použití `Globals.Factory.HasVstoMethod` metody. Předat do nativní aplikace Word nebo Excel objektu, například <xref:Microsoft.Office.Interop.Word.Document> nebo <xref:Microsoft.Office.Interop.Excel.Worksheet>, který chcete testovat rozšířeného objektu.

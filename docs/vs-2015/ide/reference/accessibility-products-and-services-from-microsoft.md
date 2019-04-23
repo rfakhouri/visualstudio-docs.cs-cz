@@ -19,30 +19,30 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 183a0a489d18625521d01d5abca5ed4f1eb12535
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: ae91a057dc983044caa9544030571a8be34deef7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59669598"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048072"
 ---
 # <a name="accessibility-products-and-services-from-microsoft"></a>Produkty a služby usnadnění přístupu od společnosti Microsoft
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Microsoft usiluje o usnadnění svých produktů a služeb pro každodenní použití. V následujících tématech najdete informace o funkcích, produktech a službách, které usnadňují práci s Microsoft Windows osobám s postižením:  
   
--   [Funkce usnadnění systému Windows](../../ide/reference/accessibility-products-and-services-from-microsoft.md#windows)  
+- [Funkce usnadnění systému Windows](../../ide/reference/accessibility-products-and-services-from-microsoft.md#windows)  
   
--   [Dokumentace v alternativních formátech](../../ide/reference/accessibility-products-and-services-from-microsoft.md#altfortmats)  
+- [Dokumentace v alternativních formátech](../../ide/reference/accessibility-products-and-services-from-microsoft.md#altfortmats)  
   
--   [Zákaznický servis pro osoby s poškozením sluchu](../../ide/reference/accessibility-products-and-services-from-microsoft.md#hearing)  
+- [Zákaznický servis pro osoby s poškozením sluchu](../../ide/reference/accessibility-products-and-services-from-microsoft.md#hearing)  
   
--   [Další informace](../../ide/reference/accessibility-products-and-services-from-microsoft.md#moreinfo)  
+- [Další informace](../../ide/reference/accessibility-products-and-services-from-microsoft.md#moreinfo)  
   
 > [!NOTE]
 >  Informace v této části mohou platit pouze pro uživatele, kteří licencují produkty společnosti Microsoft ve Spojených státech. Pokud jste získali mimo Spojené státy tento produkt, můžete použít kartu s informacemi o pobočkách, která byla součástí vašeho softwarového balíčku, nebo navštívit [webu Microsoft Accessibility](http://go.microsoft.com/fwlink/?LinkId=8431) služby podpory společnosti Microsoft telefonních čísel a adres. Můžete se obrátit na pobočku společnosti a zjistěte, zda typu produktů a služeb popsaných v této části jsou k dispozici ve vaší oblasti. Informace o usnadnění jsou k dispozici v dalších jazycích včetně japonštiny a francouzštiny.  
   
-##  <a name="windows"></a> Funkce usnadnění systému Windows  
+## <a name="windows"></a> Funkce usnadnění systému Windows  
  Operační systém Windows obsahuje mnoho vestavěných funkcí usnadnění, které jsou užitečné pro uživatele, kteří mají potíže se psaním nebo používáním myši, jsou nevidomí, nebo mají slabý zrak nebo kteří jsou osoby neslyšící či s vadou sluchu. Tyto funkce jsou instalovány během instalace. Další informace o těchto funkcích naleznete v nápovědě ve Windows a [webu Microsoft Accessibility](http://go.microsoft.com/fwlink/?LinkId=8431).  
   
 ### <a name="free-step-by-step-tutorials"></a>Podrobné kurzy zdarma  
@@ -55,7 +55,7 @@ Microsoft usiluje o usnadnění svých produktů a služeb pro každodenní pou�
   
  Pokud používáte podpůrnou technologií, ujistěte se, že jste před provedením upgradu softwaru nebo hardwaru, chcete-li zkontrolovat případné problémy s kompatibilitou obraťte se na dodavatele technologie pro usnadnění.  
   
-##  <a name="altfortmats"></a> Dokumentace v alternativních formátech  
+## <a name="altfortmats"></a> Dokumentace v alternativních formátech  
  Pokud máte potíže se čtením či používáním tištěných materiálů, získáte v dokumentaci k různým produktům Microsoft v dostupnějších formátech. Můžete zobrazit rejstřík dostupné produktové dokumentace naleznete na [webu Microsoft Accessibility](http://go.microsoft.com/fwlink/?LinkId=8431).  
   
  Kromě toho můžete opatřit další publikace Microsoft od nahrávání pro the Blind & Dyslexic, Inc (RFB & D). Organizace RFB & D distribuuje tyto dokumenty registrovaným oprávněným členům své distribuční služby. Informace o dostupnosti dokumentace produktů společnosti Microsoft a knihy z nakladatelství Microsoft Press obraťte se na:  
@@ -66,7 +66,7 @@ Microsoft usiluje o usnadnění svých produktů a služeb pro každodenní pou�
   
  Webové adresy se mohou měnit, takže je možné, že se nemůže připojit k stránkám nebo serverům.  
   
-##  <a name="hearing"></a> Zákaznický servis pro osoby s poškozením sluchu  
+## <a name="hearing"></a> Zákaznický servis pro osoby s poškozením sluchu  
  Pokud jste osoby neslyšící či s vadou sluchu, úplný přístup k produktům a zákaznickým službám společnosti Microsoft je k dispozici prostřednictvím služby textového telefonu (TTY/TDD):  
   
 - Zákaznický servis obraťte se na Microsoft Sales Information Center na (800) 892-5234 6:30:00 až 17:30:00 tichomořského času, pondělí až pátek kromě svátků.  
@@ -75,7 +75,7 @@ Microsoft usiluje o usnadnění svých produktů a služeb pro každodenní pou�
   
   Služby podpory společnosti Microsoft jsou v souladu s cenami, podmínky a ujednání v místě v době, kdy se služba používá.  
   
-##  <a name="moreinfo"></a> Další informace  
+## <a name="moreinfo"></a> Další informace  
  Další informace o tom, jak počítačové technologie pro usnadnění pomáhají zlepšit život osobám s postižením, naleznete v tématu [webu Microsoft Accessibility](http://go.microsoft.com/fwlink/?LinkId=8431).  
   
 ## <a name="see-also"></a>Viz také  

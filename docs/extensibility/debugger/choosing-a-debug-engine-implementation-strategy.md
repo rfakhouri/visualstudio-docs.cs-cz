@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e2fb608acdad60f5387750045a15f8eba36e2375
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 245fb14b06b5deed5ee652ef394e241bd1191022
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56683204"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048947"
 ---
 # <a name="choose-a-debug-engine-implementation-strategy"></a>Volba strategie implementace modulu ladění
 Určení strategie implementace ladicí stroj (DE) pomocí architektury za běhu. Můžete vytvořit ladicí modul v rámci procesu program, který ladíte. Vytvořte ladicí modul v rámci procesu správci ladicí relaci sady Visual Studio (SDM). Nebo můžete vytvořit ladicí stroj mimo proces do obou z nich. Podle následujících pokynů byste mohli vybrat mezi tyto tři strategie.
@@ -27,9 +27,9 @@ Určení strategie implementace ladicí stroj (DE) pomocí architektury za běhu
 
  V opačném případě můžete buď vytvořit DE v rámci procesu SDM nebo v rámci procesu program, kterou ladíte. Musíte vzít v úvahu, pokud vyhodnocovač výrazů DE vyžaduje časté přístup k úložišti symbolů programu. Nebo, pokud úložiště symbolů je možné načíst do paměti pro rychlý přístup. Zvažte také následující přístupy:
 
--   Pokud nejsou k dispozici mnoho volání mezi vyhodnocovací filtr výrazů a úložiště symbolů nebo úložiště symbolů lze načíst do paměti SDM, vytvořte DE v rámci procesu SDM. Identifikátor CLSID ladicí stroj musí vrátit SDM při připojování vašeho programu. K vytvoření instance v procesu je DE SDM používá tento identifikátor CLSID.
+- Pokud nejsou k dispozici mnoho volání mezi vyhodnocovací filtr výrazů a úložiště symbolů nebo úložiště symbolů lze načíst do paměti SDM, vytvořte DE v rámci procesu SDM. Identifikátor CLSID ladicí stroj musí vrátit SDM při připojování vašeho programu. K vytvoření instance v procesu je DE SDM používá tento identifikátor CLSID.
 
--   Pokud DE musí volat program pro přístup k úložišti symbolů, vytvořte program DE v rámci procesu. V takovém případě program vytvoří instance DE.
+- Pokud DE musí volat program pro přístup k úložišti symbolů, vytvořte program DE v rámci procesu. V takovém případě program vytvoří instance DE.
 
 ## <a name="see-also"></a>Viz také:
 - [Rozšiřitelnost ladicího programu Visual Studio](../../extensibility/debugger/visual-studio-debugger-extensibility.md)

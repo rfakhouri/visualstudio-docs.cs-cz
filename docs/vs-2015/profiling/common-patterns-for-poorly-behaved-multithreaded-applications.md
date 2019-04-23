@@ -13,12 +13,12 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fc126d8283562f84cabfaae7df1001c832553568
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f2c1a799663d33e61977c5416ad199bce8bce545
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54778951"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050112"
 ---
 # <a name="common-patterns-for-poorly-behaved-multithreaded-applications"></a>Obecné vzory pro vícevláknové aplikace s nevhodným chováním
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,9 +52,9 @@ Vizualizátor souběžnosti pomáhá vývojářům k vizualizaci chování aplik
   
  Při hodnocení tohoto problému byste měli zvážit následující:  
   
--   Může být oversubscribed celého systému. Zvažte, zda jiné procesy v systému může přerušený vlákna. Při přesunutí ukazatele myši přes segment přerušení v zobrazení vláken, popisek bude identifikovat vlákna a procesu přerušeno vlákno. Tento proces není nutně ten, který spouští po celou dobu procesu bylo přerušeno, ale ji poskytuje informace o co vytvořili přerušení tlak na váš proces.  
+- Může být oversubscribed celého systému. Zvažte, zda jiné procesy v systému může přerušený vlákna. Při přesunutí ukazatele myši přes segment přerušení v zobrazení vláken, popisek bude identifikovat vlákna a procesu přerušeno vlákno. Tento proces není nutně ten, který spouští po celou dobu procesu bylo přerušeno, ale ji poskytuje informace o co vytvořili přerušení tlak na váš proces.  
   
--   Vyhodnoťte, jak váš proces určuje odpovídající počet vláken pro spuštění v průběhu této fáze práce. Pokud váš proces přímo vypočítá počet aktivních podprocesů paralelní, zvažte úpravu algoritmu lepší počítat počet logických jader dostupných v systému. Pokud používáte modulu Runtime souběžnosti, Task Parallel Library a PLINQ, proveďte tyto knihovny práci při výpočtu počtu vláken.  
+- Vyhodnoťte, jak váš proces určuje odpovídající počet vláken pro spuštění v průběhu této fáze práce. Pokud váš proces přímo vypočítá počet aktivních podprocesů paralelní, zvažte úpravu algoritmu lepší počítat počet logických jader dostupných v systému. Pokud používáte modulu Runtime souběžnosti, Task Parallel Library a PLINQ, proveďte tyto knihovny práci při výpočtu počtu vláken.  
   
 ## <a name="inefficient-io"></a>Neefektivní vstupně-výstupních operací  
  ![Neefektivní můžu&#47;O](../profiling/media/inefficient-io.png "Inefficient_IO")  
