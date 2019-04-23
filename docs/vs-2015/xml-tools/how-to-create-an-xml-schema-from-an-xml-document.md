@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 43c4f50b5793933065b2f3ff4342d4aabdbd130b
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 8e32d96451e2494816ddd5f7a66591f40f847e85
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59669978"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066062"
 ---
 # <a name="how-to-create-an-xml-schema-from-an-xml-document"></a>Postupy: Vytvoření schématu XML z dokumentu XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,9 +33,9 @@ Editor souborů XML můžete vytvořit jazyk (XSD) schématu definice schématu 
   
 ### <a name="to-create-an-xml-schema"></a>Vytvoření schématu XML  
   
-1.  Načtěte instanci dokumentu XML do editoru XML.  
+1. Načtěte instanci dokumentu XML do editoru XML.  
   
-2.  Klikněte na tlačítko **Create Schema** tlačítko **nástrojů**.  
+2. Klikněte na tlačítko **Create Schema** tlačítko **nástrojů**.  
   
      Dokument schématu XML je vytvořen a otevřen pro každý obor názvů v dokumentu instance XML. Každý schématu je otevřen jako dočasný soubor různé.  
   

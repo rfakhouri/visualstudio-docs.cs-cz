@@ -15,12 +15,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2e326bac1138fc03be94c1e6d1a5037e3d1a2f40
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 622d349fd063cf0a22e3c286003490e088cd4440
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54800827"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068883"
 ---
 # <a name="how-to-manually-create-performance-sessions"></a>Postupy: Ruční vytváření výkonnostních relací
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,13 +29,13 @@ Můžete ručně vytvořit relaci výkonu. Není nutné k otevření projektu v 
   
 ### <a name="to-manually-create-a-performance-session"></a>Ručně vytvořte relaci výkonu  
   
-1.  Na **analyzovat** nabídky, přejděte k **Profiler**a potom klikněte na tlačítko **novou relaci výkonu**.  
+1. Na **analyzovat** nabídky, přejděte k **Profiler**a potom klikněte na tlačítko **novou relaci výkonu**.  
   
      Prázdný výkonnostní relaci se přidá do **prohlížeč výkonu**.  
   
-2.  Klikněte pravým tlačítkem na **cíle**a potom klikněte na tlačítko **přidat cílový binární**.  
+2. Klikněte pravým tlačítkem na **cíle**a potom klikněte na tlačítko **přidat cílový binární**.  
   
-3.  V **přidat cílový binární** dialogové okno, vyberte název souboru a pak klikněte na tlačítko **otevřít**.  
+3. V **přidat cílový binární** dialogové okno, vyberte název souboru a pak klikněte na tlačítko **otevřít**.  
   
      Přidání nové binární soubor.  
   
