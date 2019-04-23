@@ -11,12 +11,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2fc0db508fc06cc5b80db589ba7ebd88bc3221be
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 25c4359a5ff64a3ddd229e872aa8a52303c22bf2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54777453"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068428"
 ---
 # <a name="understanding-the-dsl-code"></a>Porozumění kódu DSL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,15 +47,15 @@ ms.locfileid: "54777453"
   
  Důrazně doporučujeme generovaný kód přímo, neupravujte vzhledem k tomu, že vaše úpravy budou ztraceny, když znovu sestavte řešení. Místo toho k přizpůsobení vašeho DSL:  
   
--   Upravte velký počet parametrů v definici DSL.  
+- Upravte velký počet parametrů v definici DSL.  
   
--   Částečné třídy zapisovat do souborů samostatného kódu přepsání metody, které jsou definovány v, nebo zdědí generované třídy. V některých případech je nutné nastavit **Generates Double Derived** možnost třídy v definici DSL, aby bylo možné přepsat vygenerovaný metodu.  
+- Částečné třídy zapisovat do souborů samostatného kódu přepsání metody, které jsou definovány v, nebo zdědí generované třídy. V některých případech je nutné nastavit **Generates Double Derived** možnost třídy v definici DSL, aby bylo možné přepsat vygenerovaný metodu.  
   
--   Nastavení možností v definici DSL, která způsobí, že generovaný kód k poskytnutí "zachytávání" pro váš vlastní kód.  
+- Nastavení možností v definici DSL, která způsobí, že generovaný kód k poskytnutí "zachytávání" pro váš vlastní kód.  
   
      Pokud nastavíte například **má vlastní konstruktor** možnost doménové třídy a začnete vytvářet řešení, zobrazí se chybové zprávy. Když dvakrát kliknete na jednu z těchto chybových zpráv, zobrazí se poznámky v generovaném kódu, které popisují, co by měly poskytnout vlastní kód.  
   
--   Zápis textové šablony pro generování kódu, které jsou specifické pro vaši aplikaci. Vám může zahrnovat použití souborů sdílet části šablony, které jsou společné pro mnoho projektů, a můžete vytvořit [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] šablony nastavit projekty, které jsou inicializovány pomocí strukturu souboru projektu.  
+- Zápis textové šablony pro generování kódu, které jsou specifické pro vaši aplikaci. Vám může zahrnovat použití souborů sdílet části šablony, které jsou společné pro mnoho projektů, a můžete vytvořit [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] šablony nastavit projekty, které jsou inicializovány pomocí strukturu souboru projektu.  
   
 ## <a name="generated-files-in-dsl"></a>Generované soubory v Dsl  
  Tyto vygenerované soubory se zobrazí v **Dsl** projektu.  

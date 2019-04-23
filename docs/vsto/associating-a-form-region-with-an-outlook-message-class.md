@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 39f94442e89cee6a615497376ad7baa9c85b7797
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a1b6ef478b9f3661690383623df7c89fae28bb0c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56625527"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063540"
 ---
 # <a name="associate-a-form-region-with-an-outlook-message-class"></a>Přidružení oblasti formuláře k třídě zpráv aplikace Outlook
   Můžete určit oblast formuláře zobrazit podle přidružení oblasti formuláře k třídě zpráv každé položky, položky, které aplikace Microsoft Office Outlook. Například pokud se chcete připojit k dolnímu okraji položky pošty oblasti formuláře, můžete přidružit oblasti formuláře s `IPM.Note` třída zprávy.
@@ -50,9 +50,9 @@ ms.locfileid: "56625527"
 ## <a name="associate-a-form-region-with-an-outlook-message-class"></a>Přidružení oblasti formuláře k třídě zpráv aplikace Outlook
  Přidružení oblasti formuláře k třídu zpráv dvěma způsoby:
 
--   Použití **novou oblast formuláře Outlooku** průvodce.
+- Použití **novou oblast formuláře Outlooku** průvodce.
 
--   Použití třídy atributů.
+- Použití třídy atributů.
 
 ### <a name="use-the-new-outlook-form-region-wizard"></a>Pomocí Průvodce novou oblast formuláře Outlooku
  Na poslední stránce **novou oblast formuláře Outlooku** průvodce, můžete vybrat standardní třídy zpráv a zadejte název vlastní třídy zpráv, které chcete přidružit k oblasti formuláře.

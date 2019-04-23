@@ -12,12 +12,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: fbe0942226e44e5ca2908f7c13f34595bef34887
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: ac2f040addb4c387afe0b325fe53b6a9c289f33a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "58069694"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079959"
 ---
 # <a name="create-an-android-native-activity-app"></a>Vytvoření aplikace s NativeActivity pro Android
 
@@ -45,9 +45,9 @@ V tomto kurzu budete nejdřív vytvořte nový projekt Android Native Activity a
 
    Nové řešení aplikace Android Native Activity obsahuje dva projekty:
 
--   `MyAndroidApp.NativeActivity` obsahuje odkazy na a spojovacího kódu pro svoji aplikaci spouštět jako nativní aktivita v Androidu. Implementace vstupních bodů ze spojovacího kódu jsou v *main.cpp*. Předkompilované hlavičky jsou v *soubor pch.h*. Tento projekt aplikace Nativeactivity je zkompilován do sdílené knihovny *.so* souboru, který převezme balícího projektu.
+- `MyAndroidApp.NativeActivity` obsahuje odkazy na a spojovacího kódu pro svoji aplikaci spouštět jako nativní aktivita v Androidu. Implementace vstupních bodů ze spojovacího kódu jsou v *main.cpp*. Předkompilované hlavičky jsou v *soubor pch.h*. Tento projekt aplikace Nativeactivity je zkompilován do sdílené knihovny *.so* souboru, který převezme balícího projektu.
 
--   `MyAndroidApp.Packaging` vytvoří *.apk* souboru pro nasazení na emulátoru nebo zařízení s Androidem. Tato položka obsahuje prostředky a *AndroidManifest.xml* souboru, kde nastavíte vlastnosti manifestu. Obsahuje taky *build.xml* soubor, který určuje, Ant procesu sestavení. Ho jako spouštěný projekt ve výchozím nastavení, takže je možné nasadit a spustit přímo ze sady Visual Studio.
+- `MyAndroidApp.Packaging` vytvoří *.apk* souboru pro nasazení na emulátoru nebo zařízení s Androidem. Tato položka obsahuje prostředky a *AndroidManifest.xml* souboru, kde nastavíte vlastnosti manifestu. Obsahuje taky *build.xml* soubor, který určuje, Ant procesu sestavení. Ho jako spouštěný projekt ve výchozím nastavení, takže je možné nasadit a spustit přímo ze sady Visual Studio.
 
 ## <a name="build-and-run-the-default-android-native-activity-app"></a>Sestavte a spusťte výchozí aplikace Android Native Activity
 
@@ -55,21 +55,21 @@ Sestavíte a spustíte aplikaci vygenerovaná šablona k ověření instalace a 
 
 ## <a name="to-build-and-run-the-default-native-activity-app"></a>Chcete sestavovat a spouštět aplikace s Nativeactivity výchozí
 
-1.  Pokud ještě není vybraná, zvolte **x86** z **platformy řešení** rozevíracího seznamu.
+1. Pokud ještě není vybraná, zvolte **x86** z **platformy řešení** rozevíracího seznamu.
 
      ![Výběru v rozevíracího seznamu x86 platformy řešení](../cross-platform/media/cppmdd_rc_na_solution_x86.png "CPPMDD_RC_NA_Solution_x86")
 
      Pokud **platformy řešení** seznamu nezobrazuje, vyberte **platformy řešení** z **přidat nebo odebrat tlačítka** seznamu a pak zvolte vaši platformu.
 
-2.  V panelu nabídky zvolte **sestavení** > **sestavit řešení**.
+2. V panelu nabídky zvolte **sestavení** > **sestavit řešení**.
 
      V okně výstupu zobrazí výstup z procesu sestavení pro tyto dva projekty v řešení.
 
-3.  Vyberte jednu z emulátoru VS telefon s Androidem (x86) profily jako cíl nasazení.
+3. Vyberte jednu z emulátoru VS telefon s Androidem (x86) profily jako cíl nasazení.
 
      Pokud jste nainstalovali jiné emulátory nebo připojené zařízení s Androidem, můžete je v rozevíracím seznamu cíl nasazení.
 
-4.  Stisknutím klávesy **F5** spusťte ladění nebo Shift + F5 spustit bez ladění.
+4. Stisknutím klávesy **F5** spusťte ladění nebo Shift + F5 spustit bez ladění.
 
      Tady je výchozí aplikace vypadá v sadě Visual Studio emulator for Android.
 
@@ -77,6 +77,6 @@ Sestavíte a spustíte aplikaci vygenerovaná šablona k ověření instalace a 
 
      Visual Studio spustí se emulátor, který trvá několik sekund na zatížení a nasaďte svůj kód. Po zahájení vaší aplikace můžete nastavit zarážky a ladicího programu můžete krokovat kód, prozkoumat místní hodnoty a podívejte se na hodnoty.
 
-5.  Stisknutím klávesy **Shift**+**F5** chcete zastavit ladění.
+5. Stisknutím klávesy **Shift**+**F5** chcete zastavit ladění.
 
      Emulátor je samostatný proces, který zůstane spuštěný. Můžete upravit, zkompilujte a nasaďte svůj kód do stejné emulátor více než jednou.

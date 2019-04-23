@@ -22,12 +22,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 099f284838a74ce5e302d9ba6ba0974b85260e73
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e913d67442d21cb1a0895721c22ede9b69363f53
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54776597"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068701"
 ---
 # <a name="how-to-debug-an-executable-not-part-of-a-visual-studio-solution"></a>Postupy: Ladit spustitelný soubor není součástí řešení sady Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,25 +40,25 @@ V některých případech můžete chtít ladit spustitelný soubor, který nen�
   
 ### <a name="to-create-an-exe-project-for-an-existing-executable"></a>Chcete-li vytvořit projekt EXE pro stávající spustitelný soubor  
   
-1.  Na **souboru** nabídky, klikněte na tlačítko **otevřít** a vyberte **projektu**.  
+1. Na **souboru** nabídky, klikněte na tlačítko **otevřít** a vyberte **projektu**.  
   
-2.  V **otevřít projekt** dialogové okno, klikněte rozevírací seznam vedle **název_souboru** a vyberte **všechny soubory projektu**.  
+2. V **otevřít projekt** dialogové okno, klikněte rozevírací seznam vedle **název_souboru** a vyberte **všechny soubory projektu**.  
   
-3.  Vyhledejte spustitelný soubor a klikněte na tlačítko **OK**.  
+3. Vyhledejte spustitelný soubor a klikněte na tlačítko **OK**.  
   
      Tím se vytvoří dočasné řešení, která obsahuje spustitelný soubor.  
   
 ### <a name="to-import-an-executable-into-a-visual-studio-solution"></a>Import spustitelného souboru do řešení sady Visual Studio  
   
-1.  Na **souboru** nabídky, přejděte k **přidat projekt**a potom klikněte na tlačítko **existující projekt**.  
+1. Na **souboru** nabídky, přejděte k **přidat projekt**a potom klikněte na tlačítko **existující projekt**.  
   
-2.  V **přidat existující projekt** dialogové okno, klikněte rozevírací seznam vedle **název_souboru** a vyberte **všechny soubory projektu**.  
+2. V **přidat existující projekt** dialogové okno, klikněte rozevírací seznam vedle **název_souboru** a vyberte **všechny soubory projektu**.  
   
-3.  Vyhledejte a vyberte spustitelný soubor.  
+3. Vyhledejte a vyberte spustitelný soubor.  
   
-4.  Klikněte na **OK**.  
+4. Klikněte na **OK**.  
   
-5.  Spusťte spustitelný soubor výběrem příkazu ke spuštění, například **Start**, z **ladění** nabídky.  
+5. Spusťte spustitelný soubor výběrem příkazu ke spuštění, například **Start**, z **ladění** nabídky.  
   
     > [!NOTE]
     >  Ne všechny programovací jazyky podporují projekty EXE. Nainstalujte [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] Pokud chcete tuto funkci používat.  

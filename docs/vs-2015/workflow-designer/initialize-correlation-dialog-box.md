@@ -11,12 +11,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c5b841298c7d4683059599bb95b145514ab94873
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 75906a279c1047ff98c7ff8d82d7baf3efc8be0d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54771018"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068853"
 ---
 # <a name="initialize-correlation-dialog-box"></a>Dialogové okno Inicializace korelace
 **Inicializace korelace** dialogové okno se používá v [!INCLUDE[wfd1](../includes/wfd1-md.md)] upravit <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A> vlastnost <xref:System.ServiceModel.Activities.InitializeCorrelation> aktivity. [!INCLUDE[crdefault](../includes/crdefault-md.md)] [InitializeCorrelation](../workflow-designer/initializecorrelation-activity-designer.md) tématu.  
@@ -30,7 +30,7 @@ ms.locfileid: "54771018"
   
 ## <a name="to-launch-the-initialize-correlation-dialog-box"></a>Chcete-li spustit dialogové okno Inicializace korelace  
   
--   Klikněte na tlačítko **zobrazení** na **InitializeCorrelation** aktivity návrháře nebo vyberte <xref:System.ServiceModel.Activities.InitializeCorrelation> aktivity v [!INCLUDE[wfd2](../includes/wfd2-md.md)] a potom klikněte na tlačítko se třemi tečkami vedle <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A> vlastnost v mřížku vlastností.  
+- Klikněte na tlačítko **zobrazení** na **InitializeCorrelation** aktivity návrháře nebo vyberte <xref:System.ServiceModel.Activities.InitializeCorrelation> aktivity v [!INCLUDE[wfd2](../includes/wfd2-md.md)] a potom klikněte na tlačítko se třemi tečkami vedle <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A> vlastnost v mřížku vlastností.  
   
 ## <a name="see-also"></a>Viz také  
  [InitializeCorrelation](../workflow-designer/initializecorrelation-activity-designer.md)

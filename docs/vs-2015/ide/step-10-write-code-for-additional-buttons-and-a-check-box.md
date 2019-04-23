@@ -9,12 +9,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 58e50e7d70c485a4a49564ec0a57ba03b74e4a85
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 75780cf846b2f328dbe79481244901ad7662ab7d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54786022"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076590"
 ---
 # <a name="step-10-write-code-for-additional-buttons-and-a-check-box"></a>Krok 10: Napsání kódu pro přídavná tlačítka a zaškrtávací políčko
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,13 +30,13 @@ Nyní jste připraveni provést další čtyři metody. Mohli byste zkopírovat 
   
 ### <a name="to-write-code-for-additional-buttons-and-a-check-box"></a>Napsat kód pro přídavná tlačítka a zaškrtávací políčko  
   
--   Přidejte následující kód do souboru kódu Form1 (Form1.cs nebo Form1.vb). Zvolte **VB** kartu k zobrazení kódu jazyka Visual Basic.  
+- Přidejte následující kód do souboru kódu Form1 (Form1.cs nebo Form1.vb). Zvolte **VB** kartu k zobrazení kódu jazyka Visual Basic.  
   
      [!code-csharp[VbExpressTutorial1Step9_10#2](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial1step9_10/cs/form1.cs#2)]
      [!code-vb[VbExpressTutorial1Step9_10#2](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial1step9_10/vb/form1.vb#2)]  
   
 ### <a name="to-continue-or-review"></a>Chcete-li pokračovat nebo přezkoumat  
   
--   Přechod k dalšímu kroku výukového programu naleznete v tématu [krok 11: Spusťte Program a vyzkoušejte další funkce](../ide/step-11-run-your-program-and-try-other-features.md).  
+- Přechod k dalšímu kroku výukového programu naleznete v tématu [krok 11: Spusťte Program a vyzkoušejte další funkce](../ide/step-11-run-your-program-and-try-other-features.md).  
   
--   Chcete-li vrátit k předchozímu kroku tutoriálu, přečtěte si téma [krok 9: Zkontrolujte, komentáře a testují vytvořený kód](../ide/step-9-review-comment-and-test-your-code.md).
+- Chcete-li vrátit k předchozímu kroku tutoriálu, přečtěte si téma [krok 9: Zkontrolujte, komentáře a testují vytvořený kód](../ide/step-9-review-comment-and-test-your-code.md).

@@ -14,19 +14,19 @@ ms.assetid: 1a467040-4702-4178-848f-418a5974e907
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 691f7aff61a8a2bfae6444540afe9a28a200278d
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 31673205a7ca94783985e0249c5664b4bbca6147
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56840429"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073979"
 ---
 # <a name="array-length-must-be-a-finite-positive-integer"></a>Délka pole musí být konečné kladné celé číslo
 Při volání **pole** konstruktor s argumentem, který není celé číslo (celá čísla skládá z nula a sadu kladná celá čísla).  
   
 ### <a name="to-correct-this-error"></a>Oprava této chyby  
   
--   Kladná celá čísla použít jenom při vytváření nového `Array` objektu. Pokud chcete vytvořit pole s jediným elementem, který není celé číslo, postup ve dvou krocích. Nejprve vytvoříte pole s jedním prvkem, pak umístit hodnotu elementu první (array[0]). Následuje příklad, který generuje tuto chybu.  
+- Kladná celá čísla použít jenom při vytváření nového `Array` objektu. Pokud chcete vytvořit pole s jediným elementem, který není celé číslo, postup ve dvou krocích. Nejprve vytvoříte pole s jedním prvkem, pak umístit hodnotu elementu první (array[0]). Následuje příklad, který generuje tuto chybu.  
   
     ```JavaScript  
     var piArray = new Array(3.14159);  

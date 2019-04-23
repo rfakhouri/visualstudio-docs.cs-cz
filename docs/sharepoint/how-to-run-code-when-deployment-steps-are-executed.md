@@ -12,29 +12,29 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f44af8ae730a39f68d24624cd321bd634d98dd73
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 581f9c0b9907fd59863f6a468a45ef67d9966475
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56638930"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061395"
 ---
 # <a name="how-to-run-code-when-deployment-steps-are-executed"></a>Postupy: Spuštění kódu při provádění kroků nasazení
   Pokud chcete provádět další úkoly pro krok nasazení v projektu služby SharePoint, můžete zpracovávat události, které jsou vyvolány pomocí položky Sharepointového projektu před a po provedení každého kroku nasazení sady Visual Studio. Další informace najdete v tématu [rozšíření balení a nasazení SharePoint](../sharepoint/extending-sharepoint-packaging-and-deployment.md).
 
 ### <a name="to-run-code-when-deployment-steps-are-executed"></a>Ke spuštění kódu při provádění kroků nasazení
 
-1.  Vytvoření rozšíření položky projektu, rozšíření projektu nebo definici novému typu položky projektu. Další informace naleznete v následujících tématech:
+1. Vytvoření rozšíření položky projektu, rozšíření projektu nebo definici novému typu položky projektu. Další informace naleznete v následujících tématech:
 
-    -   [Postupy: Vytváření rozšíření položky projektu SharePoint](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)
+    - [Postupy: Vytváření rozšíření položky projektu SharePoint](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)
 
-    -   [Postupy: Vytváření rozšíření projektu SharePoint](../sharepoint/how-to-create-a-sharepoint-project-extension.md)
+    - [Postupy: Vytváření rozšíření projektu SharePoint](../sharepoint/how-to-create-a-sharepoint-project-extension.md)
 
-    -   [Postupy: Definování typu položky projektu SharePoint](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)
+    - [Postupy: Definování typu položky projektu SharePoint](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)
 
-2.  V rozšíření, zpracovat <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.DeploymentStepStarted> a <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.DeploymentStepCompleted> události <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemType> objekt (do rozšíření položky projektu nebo rozšíření projektu) nebo <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition> objekt (v definici novému typu položky projektu).
+2. V rozšíření, zpracovat <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.DeploymentStepStarted> a <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.DeploymentStepCompleted> události <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemType> objekt (do rozšíření položky projektu nebo rozšíření projektu) nebo <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition> objekt (v definici novému typu položky projektu).
 
-3.  V události obslužné rutiny, použijte <xref:Microsoft.VisualStudio.SharePoint.DeploymentStepStartedEventArgs> a <xref:Microsoft.VisualStudio.SharePoint.DeploymentStepCompletedEventArgs> parametry a získat informace o kroku nasazení. Například můžete určit, který krok nasazení se provádí a řešení určuje, zda je právě nasazen nebo stažen.
+3. V události obslužné rutiny, použijte <xref:Microsoft.VisualStudio.SharePoint.DeploymentStepStartedEventArgs> a <xref:Microsoft.VisualStudio.SharePoint.DeploymentStepCompletedEventArgs> parametry a získat informace o kroku nasazení. Například můžete určit, který krok nasazení se provádí a řešení určuje, zda je právě nasazen nebo stažen.
 
 ## <a name="example"></a>Příklad
  Následující příklad kódu ukazuje, jak zpracovat <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.DeploymentStepStarted> a <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.DeploymentStepCompleted> události v rozšíření pro položky projektu instanci seznamu. Toto rozšíření zapíše na další zprávu **výstup** okno dojde k sadě Visual Studio recyklování fondu aplikací při nasazování a odvolává se řešení.
@@ -45,9 +45,9 @@ ms.locfileid: "56638930"
 ## <a name="compile-the-code"></a>Kompilace kódu
  Tento příklad vyžaduje odkazy na následující sestavení:
 
--   Microsoft.VisualStudio.SharePoint
+- Microsoft.VisualStudio.SharePoint
 
--   System.ComponentModel.Composition
+- System.ComponentModel.Composition
 
 ## <a name="deploy-the-extension"></a>Nasazení rozšíření
  Chcete-li nasadit rozšíření, vytvořte [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] extension (VSIX) balíčku pro sestavení a všechny další soubory, které chcete distribuovat s příponou. Další informace najdete v tématu [nasadit rozšíření pro nástroje služby SharePoint v sadě Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).

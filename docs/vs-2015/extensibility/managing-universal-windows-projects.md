@@ -8,12 +8,12 @@ ms.assetid: 47926aa1-3b41-410d-bca8-f77fc950cbe7
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e905ca4a34399c1ec590d5ff16441bd5afe9ce23
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8de4960548b363c99b9625553c47b2cbad2df2de
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54771268"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063683"
 ---
 # <a name="managing-universal-windows-projects"></a>Správa projektů univerzálních aplikací pro Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,11 +25,11 @@ Univerzální aplikace pro Windows jsou aplikace, které se zaměřují na Windo
   
 ### <a name="navigate-the-shared-project"></a>Přejděte sdílený projekt  
   
-1.  Vytvořte projekt VSIX C# s názvem **TestUniversalProject**. (**Soubor, nový, projekt** a potom **balíčku sady Visual Studio C#, rozšiřitelnosti,**). Přidat **vlastního příkazu** šablony položky projektu (v Průzkumníku řešení klikněte pravým tlačítkem myši na uzel projektu a vyberte **přidat / nová položka**, pak přejděte na **rozšiřitelnost**). Název souboru **TestUniversalProject**.  
+1. Vytvořte projekt VSIX C# s názvem **TestUniversalProject**. (**Soubor, nový, projekt** a potom **balíčku sady Visual Studio C#, rozšiřitelnosti,**). Přidat **vlastního příkazu** šablony položky projektu (v Průzkumníku řešení klikněte pravým tlačítkem myši na uzel projektu a vyberte **přidat / nová položka**, pak přejděte na **rozšiřitelnost**). Název souboru **TestUniversalProject**.  
   
-2.  Přidejte odkaz na Microsoft.VisualStudio.Shell.Interop.12.1.DesignTime.dll a Microsoft.VisualStudio.Shell.Interop.14.0.DesignTime.dll (v **rozšíření** části).  
+2. Přidejte odkaz na Microsoft.VisualStudio.Shell.Interop.12.1.DesignTime.dll a Microsoft.VisualStudio.Shell.Interop.14.0.DesignTime.dll (v **rozšíření** části).  
   
-3.  Otevřete TestUniversalProject.cs a přidejte následující `using` příkazy:  
+3. Otevřete TestUniversalProject.cs a přidejte následující `using` příkazy:  
   
     ```csharp  
     using EnvDTE;  
@@ -42,7 +42,7 @@ Univerzální aplikace pro Windows jsou aplikace, které se zaměřují na Windo
     using System.Windows.Forms;  
     ```  
   
-4.  Ve třídě TestUniversalProject přidat soukromé pole odkazující **výstup** okna.  
+4. Ve třídě TestUniversalProject přidat soukromé pole odkazující **výstup** okna.  
   
     ```csharp  
     public sealed class TestUniversalProject   
@@ -52,7 +52,7 @@ Univerzální aplikace pro Windows jsou aplikace, které se zaměřují na Windo
     }  
     ```  
   
-5.  Nastavení odkazu na podokno výstup uvnitř TestUniversalProject konstruktor:  
+5. Nastavení odkazu na podokno výstup uvnitř TestUniversalProject konstruktor:  
   
     ```csharp  
     private TestUniversalProject(Package package)  
@@ -77,7 +77,7 @@ Univerzální aplikace pro Windows jsou aplikace, které se zaměřují na Windo
     }  
     ```  
   
-6.  Odebrat z existujícího kódu `ShowMessageBox` metody:  
+6. Odebrat z existujícího kódu `ShowMessageBox` metody:  
   
     ```csharp  
     private void ShowMessageBox(object sender, EventArgs e)   
@@ -85,7 +85,7 @@ Univerzální aplikace pro Windows jsou aplikace, které se zaměřují na Windo
     }  
     ```  
   
-7.  Získáte objekt DTE, který budeme používat v tomto návodu několika různým účelům. Také ujistěte se, že je načtené řešení, když dojde ke kliknutí na tlačítko nabídky.  
+7. Získáte objekt DTE, který budeme používat v tomto návodu několika různým účelům. Také ujistěte se, že je načtené řešení, když dojde ke kliknutí na tlačítko nabídky.  
   
     ```csharp  
     private void ShowMessageBox(object sender, EventArgs e)  
@@ -103,7 +103,7 @@ Univerzální aplikace pro Windows jsou aplikace, které se zaměřují na Windo
     }  
     ```  
   
-8.  Najdete sdíleného projektu. Sdílený projekt je čistě kontejneru; nepodporuje sestavení ani vytvářet výstupy. Následující metoda vyhledá první sdíleného projektu v řešení tím, že hledají <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> objekt, který má schopnost sdíleného projektu.  
+8. Najdete sdíleného projektu. Sdílený projekt je čistě kontejneru; nepodporuje sestavení ani vytvářet výstupy. Následující metoda vyhledá první sdíleného projektu v řešení tím, že hledají <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> objekt, který má schopnost sdíleného projektu.  
   
     ```csharp  
     private IVsHierarchy FindSharedProject()  
@@ -306,7 +306,7 @@ Univerzální aplikace pro Windows jsou aplikace, které se zaměřují na Windo
   
 ### <a name="manage-the-shared-items-in-the-platform-project"></a>Správa sdílených položek v projektu platformy  
   
-1.  Najdete sdílené položky v projektu platformy. Položky ve sdíleném projektu se zobrazí v projektu platformy jako sdílené položky. Nelze zobrazit, je **Průzkumníku řešení**, ale můžete procházet hierarchii projektu je vyhledat. Následující metoda provede hierarchii a shromažďuje všechny sdílené položky. Volitelně vypíše titulek každé položky. Sdílené položky jsou označeny novou vlastnost <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID7>.  
+1. Najdete sdílené položky v projektu platformy. Položky ve sdíleném projektu se zobrazí v projektu platformy jako sdílené položky. Nelze zobrazit, je **Průzkumníku řešení**, ale můžete procházet hierarchii projektu je vyhledat. Následující metoda provede hierarchii a shromažďuje všechny sdílené položky. Volitelně vypíše titulek každé položky. Sdílené položky jsou označeny novou vlastnost <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID7>.  
   
     ```csharp  
     private void InspectHierarchyItems(IVsHierarchy hier, uint itemid, int level, List<uint> itemIds, bool getSharedItems, bool printItems)  
@@ -338,7 +338,7 @@ Univerzální aplikace pro Windows jsou aplikace, které se zaměřují na Windo
     }  
     ```  
   
-2.  V `ShowMessageBox` metodu, přidejte následující kód, který vás položky hierarchie projektu platformy. Vložit jej `foreach` bloku.  
+2. V `ShowMessageBox` metodu, přidejte následující kód, který vás položky hierarchie projektu platformy. Vložit jej `foreach` bloku.  
   
     ```csharp  
     output.OutputStringThreadSafe("Walk the active platform project:\n");  
@@ -346,7 +346,7 @@ Univerzální aplikace pro Windows jsou aplikace, které se zaměřují na Windo
     this.InspectHierarchyItems(activePlatformHier, (uint)VSConstants.VSITEMID.Root, 1, sharedItemIds, true, true);  
     ```  
   
-3.  Čtení sdílené položky. Sdílené položky se zobrazí v projektu platformy jako skryté propojené soubory a může číst všechny vlastnosti jako běžný propojené soubory. Následující kód načte úplnou cestu první sdílené položky.  
+3. Čtení sdílené položky. Sdílené položky se zobrazí v projektu platformy jako skryté propojené soubory a může číst všechny vlastnosti jako běžný propojené soubory. Následující kód načte úplnou cestu první sdílené položky.  
   
     ```csharp  
     var sharedItemId = sharedItemIds[0];  
@@ -355,7 +355,7 @@ Univerzální aplikace pro Windows jsou aplikace, které se zaměřují na Windo
     output.OutputStringThreadSafe(string.Format("Shared item full path: {0}\n", fullPath));  
     ```  
   
-4.  Nyní vyzkoušejte. Stisknutím klávesy F5 spusťte experimentální instanci aplikace. Vytvoření projektu aplikace pro univerzální centra C# v experimentální instanci (v **nový projekt** dialogovém okně **Visual C# / Windows / Windows 8 / Universal / aplikace rozcestníku**) přejděte **nástroje** nabídky a klikněte na tlačítko **vyvolat TestUniversalProject**a vrátit se změnami text **výstup** podokně. By měl vypadat přibližně takto:  
+4. Nyní vyzkoušejte. Stisknutím klávesy F5 spusťte experimentální instanci aplikace. Vytvoření projektu aplikace pro univerzální centra C# v experimentální instanci (v **nový projekt** dialogovém okně **Visual C# / Windows / Windows 8 / Universal / aplikace rozcestníku**) přejděte **nástroje** nabídky a klikněte na tlačítko **vyvolat TestUniversalProject**a vrátit se změnami text **výstup** podokně. By měl vypadat přibližně takto:  
   
     ```  
     Found shared project: HubApp.Shared  

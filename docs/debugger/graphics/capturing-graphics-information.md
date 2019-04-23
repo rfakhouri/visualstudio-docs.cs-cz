@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d614a991de46552c34ca5ab8c797f6dd92954180
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: bf8c3a43cfff286e43d099258913b816491527da
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56708612"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065649"
 ---
 # <a name="capturing-graphics-information"></a>Zaznamenání grafických informací
 Zachytit informace grafiky z aplikace Direct3D analyzátoru grafiky sady Visual Studio můžete použít k diagnostice problémů s vykreslováním a problémy s výkonem.
@@ -57,9 +57,9 @@ Zachytit informace grafiky z aplikace Direct3D analyzátoru grafiky sady Visual 
 
 #### <a name="to-configure-graphics-diagnostics-capture-options"></a>Konfigurace možností zachycení diagnostiky grafiky
 
-1.  V panelu nabídky zvolte Nástroje, možnosti. Zobrazí se dialogové okno Možnosti.
+1. V panelu nabídky zvolte Nástroje, možnosti. Zobrazí se dialogové okno Možnosti.
 
-2.  V seznamu kategorií možností na levé straně zvolte diagnostiky grafiky a pak nakonfigurujte možnosti diagnostiky grafiky, které chcete.
+2. V seznamu kategorií možností na levé straně zvolte diagnostiky grafiky a pak nakonfigurujte možnosti diagnostiky grafiky, které chcete.
 
      **Během zachytávání shromažďovat zásobníky volání (zpomaluje zachytávání)** zaškrtnutím tohoto políčka shromažďovat zásobníky volání. Ve výchozím nastavení se neshromažďují zásobníky volání. K zachycení zásobníky volání, ujistěte se, že **shromažďování volání zásobníků při zachytávání (zpomaluje zachytávání** zaškrtávací políčko je nastavena na Povolit kolekci a pak nastavte buď **pro značky kreslení, odesílání, k dispozici a výkonu**možnost (výchozí) Chcete-li shromažďovat pouze ty nejdůležitější zásobníky volání, nebo **pro všechno, co** možnost shromažďovat všechny zásobníky volání. Chcete-li zastavit shromažďování zásobníků volání později, zrušte **shromažďování volání zásobníků při zachytávání (zpomaluje zachytávání** zaškrtávací políčko.
 

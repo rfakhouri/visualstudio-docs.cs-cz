@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 75f7dd3149785520023657bb86ec8172dc379ab6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 6454eb53bf6d171e469a4cf2758e0e10a76eab6e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55926993"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066114"
 ---
 # <a name="add-code-to-tableadapters-in-n-tier-applications"></a>Přidávání kódu do objektů TableAdapter ve vícevrstvých aplikacích
 Funkcí objektů TableAdapter můžete rozšířit vytvořením souboru částečné třídy pro TableAdapter a přidáním kódu k němu (místo přidání kódu *DatasetName.DataSet.Designer* souboru). Částečné třídy povolit kód pro konkrétní třídu rozdělit mezi několik fyzických souborů. Další informace najdete v tématu [částečné](/dotnet/visual-basic/language-reference/modifiers/partial) nebo [partial (typ)](/dotnet/csharp/language-reference/keywords/partial-type).
@@ -38,17 +38,17 @@ Ve výchozím nastavení po oddělíte datové sady a kód třídy TableAdapter,
 
 ## <a name="to-add-user-code-to-a-tableadapter-in-an-n-tier-application"></a>Chcete-li přidat uživatelský kód do objektu TableAdapter v n vrstvou aplikaci
 
-1.  Najít projekt, který obsahuje *XSD* souboru.
+1. Najít projekt, který obsahuje *XSD* souboru.
 
-2.  Dvakrát klikněte *XSD* soubor otevřete **Návrhář Dataset**.
+2. Dvakrát klikněte *XSD* soubor otevřete **Návrhář Dataset**.
 
-3.  Klikněte pravým tlačítkem na TableAdapter, které chcete přidat kód a pak vyberte **zobrazit kód**.
+3. Klikněte pravým tlačítkem na TableAdapter, které chcete přidat kód a pak vyberte **zobrazit kód**.
 
      Částečné třídy se vytvoří a otevře v editoru kódu.
 
-4.  Přidejte kód do částečné deklarace třídy.
+4. Přidejte kód do částečné deklarace třídy.
 
-5.  Následující příklad ukazuje, kde přidat kód pro `CustomersTableAdapter` v `NorthwindDataSet`:
+5. Následující příklad ukazuje, kde přidat kód pro `CustomersTableAdapter` v `NorthwindDataSet`:
 
     ```vb
     Partial Public Class CustomersTableAdapter

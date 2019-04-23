@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 1fa232ccefed20608ec2391f591ac0a8a6f31fe2
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1c3d0e7d30778580ac09bfd4476e44280c775a2c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55931335"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079962"
 ---
 # <a name="work-with-elements-in-xaml-designer"></a>Práce s elementy v Návrháři XAML
 
@@ -61,11 +61,11 @@ A *snapline –* je vizuální upozornění, která pomáhá zarovnat element vz
 
 Chcete-li zarovnat nejmíň dva elementy pomocí příkazů nabídky:
 
-1.  Vyberte prvky, které chcete, aby bylo v souladu. Můžete vybrat více než jeden element stisknutím a podržením **Ctrl** klávesu vybrat elementy.
+1. Vyberte prvky, které chcete, aby bylo v souladu. Můžete vybrat více než jeden element stisknutím a podržením **Ctrl** klávesu vybrat elementy.
 
-2.  Vyberte jednu z následujících vlastností v rámci **HorizontalAlignment** v **rozložení** části okna vlastnosti: **Vlevo**, **Center**, **vpravo**, nebo **Stretch**.
+2. Vyberte jednu z následujících vlastností v rámci **HorizontalAlignment** v **rozložení** části okna vlastnosti: **Vlevo**, **Center**, **vpravo**, nebo **Stretch**.
 
-3.  Vyberte jednu z následujících vlastností v rámci **VerticalAlignment** v **rozložení** části okna vlastnosti: **Horní**, **Center**, **dolní**, nebo **Stretch**.
+3. Vyberte jednu z následujících vlastností v rámci **VerticalAlignment** v **rozložení** části okna vlastnosti: **Horní**, **Center**, **dolní**, nebo **Stretch**.
 
 Zarovnat dva nebo více prvků pomocí zarovnávacích čar, v Návrháři XAML, v rozložení, který obsahuje alespoň dva prvky, přetáhněte nebo jeden z elementů velikost tak, aby na hraničních zařízeních je v souladu s jiný element.
 
@@ -77,9 +77,9 @@ Okraje v Návrháři XAML určují velikost volného místa okolo prvek na návr
 
 Změna okrajů elementu v okně Vlastnosti:
 
-1.  Vyberte prvek, jehož okraje, kterou chcete změnit.
+1. Vyberte prvek, jehož okraje, kterou chcete změnit.
 
-2.  V části **rozložení** v okně Vlastnosti změňte hodnotu (v pixelech nebo jednotkách nezávislých na zařízení, které jsou přibližně 1/96 palce) pro některý z **okraj** vlastnosti (**horní**, **Vlevo**, **vpravo**, nebo **dolní**).
+2. V části **rozložení** v okně Vlastnosti změňte hodnotu (v pixelech nebo jednotkách nezávislých na zařízení, které jsou přibližně 1/96 palce) pro některý z **okraj** vlastnosti (**horní**, **Vlevo**, **vpravo**, nebo **dolní**).
 
 V návrhové ploše, chcete-li změnit okrajů elementu vzhledem k elementu kontejner rozložení, klikněte na tlačítko *doplňků pro úpravy okrajů* , který se zobrazí kolem elementu když elementu je vybraná a není kontejner rozložení. Obrázek, na kterém doplňků pro úpravy rozpětí, naleznete v tématu [vytvoření uživatelského rozhraní pomocí návrháře XAML](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md).
 

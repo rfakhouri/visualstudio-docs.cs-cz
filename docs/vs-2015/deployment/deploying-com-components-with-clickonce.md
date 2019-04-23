@@ -19,12 +19,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 870255afe466709f8e9a5fc48e5135943443900d
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: 63328af2211f18fe553c32b018ed0a8422a1857f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57871305"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066348"
 ---
 # <a name="deploying-com-components-with-clickonce"></a>Nasazování komponent COM s ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,9 +49,9 @@ Nasazení komponent modelu COM, starší verze tradičně těžký úkol. Souč�
   
  Existují dva způsoby, které [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] nasadí komponenty modelu COM:  
   
--   Můžete nasadit komponenty modelu COM; zaváděcí nástroj Tento postup funguje na všech podporovaných platformách.  
+- Můžete nasadit komponenty modelu COM; zaváděcí nástroj Tento postup funguje na všech podporovaných platformách.  
   
--   Použijte nativní součásti nasazení izolace (označované také jako COM bez registrace). Ale bude to fungovat jenom na Windows XP nebo novější operační systém.  
+- Použijte nativní součásti nasazení izolace (označované také jako COM bez registrace). Ale bude to fungovat jenom na Windows XP nebo novější operační systém.  
   
 ### <a name="example-of-isolating-and-deploying-a-simple-com-component"></a>Příklad izolace a nasazení jednoduché komponenty modelu COM  
  Pro ukázání nasazení součásti COM bez registrace, v tomto příkladu se vytvoření aplikace pro Windows v jazyce Visual Basic, která odkazuje na izolované nativní součást COM vytvořené pomocí jazyka Visual Basic 6.0 a nasaďte ji pomocí [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)].  
@@ -60,16 +60,16 @@ Nasazení komponent modelu COM, starší verze tradičně těžký úkol. Souč�
   
 ##### <a name="to-create-a-native-com-component"></a>Chcete-li vytvořit nativní komponenty modelu COM  
   
-1.  Pomocí jazyka Visual Basic 6.0 **soubor** nabídky, klikněte na **nový**, pak **projektu**.  
+1. Pomocí jazyka Visual Basic 6.0 **soubor** nabídky, klikněte na **nový**, pak **projektu**.  
   
-2.  V **nový projekt** dialogové okno, vyberte **jazyka Visual Basic** uzel a vyberte možnost **ActiveX DLL** projektu. V **název** zadejte `VB6Hello`.  
+2. V **nový projekt** dialogové okno, vyberte **jazyka Visual Basic** uzel a vyberte možnost **ActiveX DLL** projektu. V **název** zadejte `VB6Hello`.  
   
     > [!NOTE]
     >  S modelem COM bez registrace, jsou podporovány pouze typy projektu ActiveX knihovny DLL a ovládacího prvku ActiveX ActiveX EXE a dokument ActiveX typy projektů nejsou podporovány.  
   
-3.  V **Průzkumníka řešení**, dvakrát klikněte na panel **Class1.vb** otevřete textový editor.  
+3. V **Průzkumníka řešení**, dvakrát klikněte na panel **Class1.vb** otevřete textový editor.  
   
-4.  V Class1.vb, přidejte následující kód za vygenerovaný kód `New` metody:  
+4. V Class1.vb, přidejte následující kód za vygenerovaný kód `New` metody:  
   
     ```  
     Public Sub SayHello()  
@@ -77,7 +77,7 @@ Nasazení komponent modelu COM, starší verze tradičně těžký úkol. Souč�
     End Sub  
     ```  
   
-5.  Začlenění komponenty. Z **sestavení** nabídky, klikněte na tlačítko **sestavit řešení**.  
+5. Začlenění komponenty. Z **sestavení** nabídky, klikněte na tlačítko **sestavit řešení**.  
   
 > [!NOTE]
 >  Bez registrace modelu COM podporuje pouze knihovny DLL a modelu COM Určuje typy projektů. Exe nelze použít s modelu COM bez registrace  

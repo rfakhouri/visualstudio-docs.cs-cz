@@ -12,12 +12,12 @@ ms.assetid: 9df51800-190e-4662-b685-fdaafcff1400
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: a5f6b8ef087d3e9d43aaf740a99983cf0f5c8d1b
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: cd224f84dd1d0be8167ee55fa7b40264d742c4f7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59661552"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063767"
 ---
 # <a name="template-directory-description-vsdir-files"></a>Soubory popisu adresáře šablon (.Vsdir)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -52,17 +52,17 @@ SourceFile.cpp|{E59935A1-6156-11d1-87A6-00A0C91E2A46}|#122|110|#123|0|0|0|#124
 
  Při vytváření souboru průvodce byste také zvážit následující problémy.  
 
--   Libovolné nepovinné pole pro kterou neexistují žádná smysluplná data by měla obsahovat hodnotu 0 (nula) jako zástupný symbol.  
+- Libovolné nepovinné pole pro kterou neexistují žádná smysluplná data by měla obsahovat hodnotu 0 (nula) jako zástupný symbol.  
 
--   Pokud není lokalizovaný název zadán, použije se v souboru průvodce název relativní cestu.  
+- Pokud není lokalizovaný název zadán, použije se v souboru průvodce název relativní cestu.  
 
--   DLLPath přepíše clsidPackage pro umístění ikony.  
+- DLLPath přepíše clsidPackage pro umístění ikony.  
 
--   Pokud není definována žádná ikona, IDE nahradí výchozí ikonu pro soubor, který se má toto rozšíření.  
+- Pokud není definována žádná ikona, IDE nahradí výchozí ikonu pro soubor, který se má toto rozšíření.  
 
--   Pokud není navrhované základní název zadán, použije se 'Project'.  
+- Pokud není navrhované základní název zadán, použije se 'Project'.  
 
--   Pokud odstraníte soubory .vsz, složky nebo soubory šablon, musíte také odebrat jejich přidružené záznamy ze souboru .vsdir.  
+- Pokud odstraníte soubory .vsz, složky nebo soubory šablon, musíte také odebrat jejich přidružené záznamy ze souboru .vsdir.  
 
 ## <a name="see-also"></a>Viz také  
  [Průvodce](../../extensibility/internals/wizards.md)   

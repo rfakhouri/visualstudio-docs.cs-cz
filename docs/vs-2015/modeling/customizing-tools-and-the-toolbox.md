@@ -15,12 +15,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 93cc5fdef5c3d91281f01db8d4946dee17394170
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 47b108cfbef8831f9650c7e1af29d528aa8abaa2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54790595"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077261"
 ---
 # <a name="customizing-tools-and-the-toolbox"></a>Přizpůsobení nástrojů a panelu nástrojů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,15 +29,15 @@ Je nutné definovat položky panelu nástrojů pro prvky, které chcete umožnit
   
  V tomto tématu:  
   
--   [Jak je definované sady nástrojů](#ToolboxDef)  
+- [Jak je definované sady nástrojů](#ToolboxDef)  
   
--   [Přizpůsobení nástrojů elementu](#customizing)  
+- [Přizpůsobení nástrojů elementu](#customizing)  
   
--   [Vytvoření skupiny prvků z nástroje](#groups)  
+- [Vytvoření skupiny prvků z nástroje](#groups)  
   
--   [Přizpůsobení nástrojů pro připojení](#connections)  
+- [Přizpůsobení nástrojů pro připojení](#connections)  
   
-##  <a name="ToolboxDef"></a> Jak je definované sady nástrojů  
+## <a name="ToolboxDef"></a> Jak je definované sady nástrojů  
  V okně Průzkumník DSL rozbalte Editor uzlů a uzlů pod ním. Obvykle se zobrazí hierarchie, která vypadá takto:  
   
 ```  
@@ -53,15 +53,15 @@ Editor
   
  V této části Průzkumník DSL můžete:  
   
--   Vytvoření nových kartách. Karty definovat nadpisy oddílů v panelu nástrojů.  
+- Vytvoření nových kartách. Karty definovat nadpisy oddílů v panelu nástrojů.  
   
--   Vytvoření nových nástrojů.  
+- Vytvoření nových nástrojů.  
   
--   Zkopírujte a vložte nástroje.  
+- Zkopírujte a vložte nástroje.  
   
--   Přesunutí nástroje směrem nahoru nebo dolů v seznamu.  
+- Přesunutí nástroje směrem nahoru nebo dolů v seznamu.  
   
--   Odstraňte karty a nástroje.  
+- Odstraňte karty a nástroje.  
   
 > [!IMPORTANT]
 >  Chcete-li přidat nebo vložit položky v Průzkumníku DSL, klikněte pravým tlačítkem na nadřazený nový uzel. Například pokud chcete přidat nástroj, klikněte pravým tlačítkem na kartu a ne **nástroje** uzlu. Chcete-li přidat na kartě, klikněte pravým tlačítkem **Editor** uzlu.  
@@ -74,38 +74,38 @@ Editor
   
 #### <a name="to-add-a-tool-to-the-toolbox"></a>Chcete-li přidat nástroj na panelu nástrojů  
   
-1.  Obvykle vytvoříte nástroj pro element po vytvoření obrazec třídy a mapován na doménovou třídu.  
+1. Obvykle vytvoříte nástroj pro element po vytvoření obrazec třídy a mapován na doménovou třídu.  
   
      Obvykle vytvoříte konektor nástroje po vytvoření konektoru třídy a mapován na vztah odkazu.  
   
-2.  V okně Průzkumník DSL, rozbalte **Editor** uzlu a **karty panelu nástrojů** uzlu.  
+2. V okně Průzkumník DSL, rozbalte **Editor** uzlu a **karty panelu nástrojů** uzlu.  
   
      Klikněte pravým tlačítkem na uzel kartu panelu nástrojů a potom klikněte na tlačítko **přidejte nový prvek nástroj** nebo **přidat nové připojení nástroje**.  
   
-3.  Nastavte **panelu nástrojů ikonu** vlastnost k odkazování na rastrový obrázek 16 x 16.  
+3. Nastavte **panelu nástrojů ikonu** vlastnost k odkazování na rastrový obrázek 16 x 16.  
   
      Pokud chcete definovat nová ikona, vytvořit soubor rastrového obrázku v Průzkumníku řešení v **Dsl\Resources** složky. Soubor by měl mít následující hodnoty vlastností: **Akce sestavení** = **obsahu**; **Kopírovat do výstupního adresáře** = **nekopírovat**.  
   
-4.  **Pro nástroj element:** Nastavte **třídy** vlastnost nástroje k odkazování na konkrétní doménovou třídou, která je namapovaná na obrazec.  
+4. **Pro nástroj element:** Nastavte **třídy** vlastnost nástroje k odkazování na konkrétní doménovou třídou, která je namapovaná na obrazec.  
   
      **Konektor nástroje:** Nastavte **Tvůrce připojení** vlastnost nástroje pro jednu z položek, které nabízí v rozevíracím seznamu. Tvůrci připojení se automaticky vytvoří při mapování spojnici na doménový vztah. Pokud jste nedávno vytvořili konektor, obvykle vyberete Tvůrce asociované připojení.  
   
-5.  Chcete-li otestovat DSL, stiskněte klávesu F5 nebo CTRL + F5 a v experimentální instanci [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], otevřete ukázkový soubor modelu. Nový nástroj by se zobrazit na panelu nástrojů. Přetáhněte do diagramu, ověřte, že vytvoří nový prvek.  
+5. Chcete-li otestovat DSL, stiskněte klávesu F5 nebo CTRL + F5 a v experimentální instanci [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], otevřete ukázkový soubor modelu. Nový nástroj by se zobrazit na panelu nástrojů. Přetáhněte do diagramu, ověřte, že vytvoří nový prvek.  
   
      Pokud nástroj nezobrazí, ukončete experimentální instanci [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. V Windows **Start** nabídky, spusťte **resetování Microsoft Visual Studio 2010 experimentální instanci**. Na [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **sestavení** nabídky, klikněte na tlačítko **znovu sestavit řešení**. Potom znovu otestujte DSL.  
   
-##  <a name="customizing"></a> Přizpůsobení nástrojů elementu  
+## <a name="customizing"></a> Přizpůsobení nástrojů elementu  
  Ve výchozím nastavení nástroj vytvoří jednu instanci dané třídy, ale to se může pohybovat dvěma způsoby:  
   
--   Definujte direktivy sloučení elementů pro jiné třídy, což jim tak, aby přijímal nové instance této třídy a umožnit jim vytvořit další odkazy, když se vytvoří nový prvek. Může například uživateli umožní vyřadit komentář na jiný element a tím vytvořit odkaz mezi těmito dvěma.  
+- Definujte direktivy sloučení elementů pro jiné třídy, což jim tak, aby přijímal nové instance této třídy a umožnit jim vytvořit další odkazy, když se vytvoří nový prvek. Může například uživateli umožní vyřadit komentář na jiný element a tím vytvořit odkaz mezi těmito dvěma.  
   
      Tyto úpravy také vliv na co se stane, když uživatel vloží nebo přetáhne a zahodí elementu.  
   
      Další informace najdete v tématu [přizpůsobení vytvoření a přesunutí elementu](../modeling/customizing-element-creation-and-movement.md).  
   
--   Zápis kódu pro úpravu nástroje, takže ho můžete vytvořit skupiny prvků. Nástroj je inicializován pomocí metody v ToolboxHelper.cs, které můžete přepsat. Další informace najdete v tématu [vytváření skupin z prvků z nástroje](#groups).  
+- Zápis kódu pro úpravu nástroje, takže ho můžete vytvořit skupiny prvků. Nástroj je inicializován pomocí metody v ToolboxHelper.cs, které můžete přepsat. Další informace najdete v tématu [vytváření skupin z prvků z nástroje](#groups).  
   
-##  <a name="groups"></a> Vytvoření skupiny prvků z nástroje  
+## <a name="groups"></a> Vytvoření skupiny prvků z nástroje  
  Nástroj pro každý prvek obsahuje prototyp prvky, které se má vytvořit. Ve výchozím nastavení nástroj pro každý element vytvoří jeden element, ale je také možné vytvořit pomocí jednoho nástroje skupiny souvisejících objektů. K tomuto účelu nástroj s inicializaci <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> , který obsahuje související položky.  
   
  Následující příklad je převzat z DSL, ve kterém je typ tranzistorové. Každý tranzistorové má tři pojmenované terminály. Nástroj elementu pro tranzistory ukládá prototypem obsahující čtyři prvků modelu a tři vztah odkazy. Když uživatel přetáhne nástroj do diagramu, prototyp vytvořena a propojí s kořenem modelu.  
@@ -155,7 +155,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
   
 ```  
   
-##  <a name="connections"></a> Přizpůsobení nástrojů pro připojení  
+## <a name="connections"></a> Přizpůsobení nástrojů pro připojení  
  Obvykle vytvoříte nástroj pro element když vytvoříte novou třídu konektoru. Alternativně můžete použít přetížení jeden nástroj pro tím, že typy dva elementy end určit typ vztahu. Můžete například definovat jeden nástroj pro připojení, která může vytvářet vztahy osoba na osobu a vztahy osoba města.  
   
  Připojení nástroje vyvolat tvůrci připojení. Tvůrci připojení použijte k určení, jak uživatele můžete propojit prvky ve vygenerovaném návrháři. Tvůrci připojení zadejte prvky, které lze propojit a typu odkazu, který je vytvořen mezi nimi.  

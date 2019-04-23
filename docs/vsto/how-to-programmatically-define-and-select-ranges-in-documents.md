@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d95690af1b1712aa374a4e9717c8c3bc6ac17fed
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 6cdfe722e957eaae97b587940a1b8fb3db1112c6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599900"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078860"
 ---
 # <a name="how-to-programmatically-define-and-select-ranges-in-documents"></a>Postupy: Programově definování a výběr oblastí v dokumentech
   Můžete definovat rozsah v dokumentu aplikace Microsoft Office Word s použitím <xref:Microsoft.Office.Interop.Word.Range> objektu. Můžete vybrat celý dokument v několika způsoby, například pomocí <xref:Microsoft.Office.Interop.Word.Range.Select%2A> metodu <xref:Microsoft.Office.Interop.Word.Range> objektu, nebo pomocí vlastnosti obsahu <xref:Microsoft.Office.Tools.Word.Document> třídy (v přizpůsobení úrovni dokumentu) nebo <xref:Microsoft.Office.Interop.Word.Document> třídy (v Doplněk VSTO).
@@ -33,14 +33,14 @@ ms.locfileid: "56599900"
 
 ### <a name="to-define-a-range-in-a-document-level-customization"></a>Chcete-li definovat rozsah v přizpůsobení na úrovni dokumentu
 
-1.  Přidat oblast v dokumentu předáním počáteční a koncový znak do <xref:Microsoft.Office.Tools.Word.Document.Range%2A> metodu <xref:Microsoft.Office.Tools.Word.Document> třídy. Pokud chcete použít tento příklad kódu, spusťte jej z `ThisDocument` třídu ve vašem projektu.
+1. Přidat oblast v dokumentu předáním počáteční a koncový znak do <xref:Microsoft.Office.Tools.Word.Document.Range%2A> metodu <xref:Microsoft.Office.Tools.Word.Document> třídy. Pokud chcete použít tento příklad kódu, spusťte jej z `ThisDocument` třídu ve vašem projektu.
 
      [!code-vb[Trin_VstcoreWordAutomation#18](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#18)]
      [!code-csharp[Trin_VstcoreWordAutomation#18](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#18)]
 
 ### <a name="to-define-a-range-by-using-a-vsto-add-in"></a>Chcete-li definovat rozsah s použitím doplňku VSTO
 
-1.  Přidat oblast v dokumentu předáním počáteční a koncový znak do <xref:Microsoft.Office.Interop.Word._Document.Range%2A> metodu <xref:Microsoft.Office.Interop.Word.Document> třídy. Následující příklad kódu přidá rozsah v aktivním dokumentu. Pokud chcete použít tento příklad kódu, spusťte jej z `ThisAddIn` třídu ve vašem projektu.
+1. Přidat oblast v dokumentu předáním počáteční a koncový znak do <xref:Microsoft.Office.Interop.Word._Document.Range%2A> metodu <xref:Microsoft.Office.Interop.Word.Document> třídy. Následující příklad kódu přidá rozsah v aktivním dokumentu. Pokud chcete použít tento příklad kódu, spusťte jej z `ThisAddIn` třídu ve vašem projektu.
 
      [!code-vb[Trin_VstcoreWordAutomationAddIn#18](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#18)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#18](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#18)]
@@ -50,7 +50,7 @@ ms.locfileid: "56599900"
 
 ### <a name="to-select-the-entire-document-as-a-range-by-using-the-select-method"></a>Vybrat celý dokument jako rozsah pomocí metody Select
 
-1.  Použití <xref:Microsoft.Office.Interop.Word.Range.Select%2A> metodu <xref:Microsoft.Office.Interop.Word.Range> , který obsahuje celý dokument. Pokud chcete použít následující příklad kódu, spusťte jej z `ThisDocument` třídu ve vašem projektu.
+1. Použití <xref:Microsoft.Office.Interop.Word.Range.Select%2A> metodu <xref:Microsoft.Office.Interop.Word.Range> , který obsahuje celý dokument. Pokud chcete použít následující příklad kódu, spusťte jej z `ThisDocument` třídu ve vašem projektu.
 
      [!code-vb[Trin_VstcoreWordAutomation#19](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#19)]
      [!code-csharp[Trin_VstcoreWordAutomation#19](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#19)]
@@ -75,12 +75,12 @@ ms.locfileid: "56599900"
 
 ### <a name="to-select-a-sentence-by-manually-setting-the-start-and-end-values"></a>Chcete-li vybrat větu ručně nastavte počáteční a koncové hodnoty
 
-1.  Vytvořte proměnnou rozsahu.
+1. Vytvořte proměnnou rozsahu.
 
      [!code-vb[Trin_VstcoreWordAutomation#23](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#23)]
      [!code-csharp[Trin_VstcoreWordAutomation#23](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#23)]
 
-2.  Zkontrolujte, zda existují alespoň dvě věty v dokumentu, nastavte *Start* a *End* argumenty rozsah a pak vyberte oblast.
+2. Zkontrolujte, zda existují alespoň dvě věty v dokumentu, nastavte *Start* a *End* argumenty rozsah a pak vyberte oblast.
 
      [!code-vb[Trin_VstcoreWordAutomation#24](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#24)]
      [!code-csharp[Trin_VstcoreWordAutomation#24](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#24)]
@@ -90,7 +90,7 @@ ms.locfileid: "56599900"
 
 ### <a name="to-select-the-entire-document-as-a-range-by-using-the-select-method"></a>Vybrat celý dokument jako rozsah pomocí metody Select
 
-1.  Použití <xref:Microsoft.Office.Interop.Word.Range.Select%2A> metodu <xref:Microsoft.Office.Interop.Word.Range> , který obsahuje celý dokument. Následující příklad kódu vybere obsah aktivního dokumentu. Pokud chcete použít tento příklad kódu, spusťte jej z `ThisAddIn` třídu ve vašem projektu.
+1. Použití <xref:Microsoft.Office.Interop.Word.Range.Select%2A> metodu <xref:Microsoft.Office.Interop.Word.Range> , který obsahuje celý dokument. Následující příklad kódu vybere obsah aktivního dokumentu. Pokud chcete použít tento příklad kódu, spusťte jej z `ThisAddIn` třídu ve vašem projektu.
 
      [!code-vb[Trin_VstcoreWordAutomationAddIn#19](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#19)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#19](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#19)]
@@ -115,12 +115,12 @@ ms.locfileid: "56599900"
 
 ### <a name="to-select-a-sentence-by-manually-setting-the-start-and-end-values"></a>Chcete-li vybrat větu ručně nastavte počáteční a koncové hodnoty
 
-1.  Vytvořte proměnnou rozsahu.
+1. Vytvořte proměnnou rozsahu.
 
      [!code-vb[Trin_VstcoreWordAutomationAddIn#23](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#23)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#23](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#23)]
 
-2.  Zkontrolujte, zda existují alespoň dvě věty v dokumentu, nastavte *Start* a *End* argumenty rozsah a pak vyberte oblast.
+2. Zkontrolujte, zda existují alespoň dvě věty v dokumentu, nastavte *Start* a *End* argumenty rozsah a pak vyberte oblast.
 
      [!code-vb[Trin_VstcoreWordAutomationAddIn#24](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#24)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#24](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#24)]

@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fadc8830649a15f1785194f3e2640a7ee86fadbb
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 78b73cfe13d2374afad22dd322a80fe69acfb838
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56644585"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068974"
 ---
 # <a name="how-to-programmatically-remove-all-comments-from-documents"></a>Postupy: Programově odstraňování všech komentářů z dokumentů
   Použití `DeleteAllComments` metoda všech komentářů z dokumentů Microsoft Office Word.
@@ -27,14 +27,14 @@ ms.locfileid: "56644585"
 
 ## <a name="to-remove-all-comments-from-a-document-that-is-part-of-a-document-level-customization"></a>Chcete odstranit všechny komentáře z dokumentu, který je součástí přizpůsobení na úrovni dokumentu
 
-1.  Volání <xref:Microsoft.Office.Tools.Word.Document.DeleteAllComments%2A> metodu `ThisDocument` třídu ve vašem projektu. Pokud chcete použít tento příklad kódu, spusťte jej z `ThisDocument` třídy.
+1. Volání <xref:Microsoft.Office.Tools.Word.Document.DeleteAllComments%2A> metodu `ThisDocument` třídu ve vašem projektu. Pokud chcete použít tento příklad kódu, spusťte jej z `ThisDocument` třídy.
 
      [!code-vb[Trin_VstcoreWordAutomation#119](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#119)]
      [!code-csharp[Trin_VstcoreWordAutomation#119](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#119)]
 
 ## <a name="to-remove-all-comments-from-a-document-by-using-a-vsto-add-in"></a>Chcete odstranit všechny komentáře z dokumentu s použitím doplňku VSTO
 
-1.  Volání <xref:Microsoft.Office.Interop.Word._Document.DeleteAllComments%2A> metodu <xref:Microsoft.Office.Interop.Word.Document> ze kterého chcete odebrat komentáře.
+1. Volání <xref:Microsoft.Office.Interop.Word._Document.DeleteAllComments%2A> metodu <xref:Microsoft.Office.Interop.Word.Document> ze kterého chcete odebrat komentáře.
 
      Následující příklad odebere všechny komentáře v aktivním dokumentu. Pokud chcete použít tento příklad kódu, spusťte jej z `ThisAddIn` třídu ve vašem projektu.
 

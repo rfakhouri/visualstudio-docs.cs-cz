@@ -14,12 +14,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: dc5c4b68b5713ba8831d840decea7f2ea25704f4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 58b7348a1bd46b426339effbe259e6f5058c769b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55931439"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063638"
 ---
 # <a name="how-to-create-a-data-driven-unit-test"></a>Postupy: Vytvoření testu jednotek řízené daty
 
@@ -27,27 +27,27 @@ Pomocí rozhraní pro testování jednotek Microsoft pro spravovaný kód, můž
 
 Vytvoření testu jednotek řízené daty zahrnuje následující kroky:
 
-1.  Vytvořte zdroj dat, který obsahuje hodnoty, které můžete použít testovací metody. Zdroj dat může být libovolný typ, který je registrován v počítači, na kterém běží test.
+1. Vytvořte zdroj dat, který obsahuje hodnoty, které můžete použít testovací metody. Zdroj dat může být libovolný typ, který je registrován v počítači, na kterém běží test.
 
-2.  Přidat soukromé <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> pole a veřejnou `TestContext` vlastnost testovací třídy.
+2. Přidat soukromé <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> pole a veřejnou `TestContext` vlastnost testovací třídy.
 
-3.  Vytvořit metodu testovací jednotky a přidejte <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute> atribut k němu.
+3. Vytvořit metodu testovací jednotky a přidejte <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute> atribut k němu.
 
-4.  Použít <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.DataRow%2A> vlastnost indexeru pro načtení hodnoty, které můžete použít v rámci testu.
+4. Použít <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.DataRow%2A> vlastnost indexeru pro načtení hodnoty, které můžete použít v rámci testu.
 
 ## <a name="the-method-under-test"></a>Testované metody
 
 Jako příklad předpokládejme, že máte:
 
-1.  Volá se řešení `MyBank` , který přijme a zpracuje transakce pro různé typy účtů.
+1. Volá se řešení `MyBank` , který přijme a zpracuje transakce pro různé typy účtů.
 
-2.  Projekt v `MyBank` volá `BankDb` , který spravuje transakce pro účty.
+2. Projekt v `MyBank` volá `BankDb` , který spravuje transakce pro účty.
 
-3.  Třída nazývá `Maths` v `DbBank` projekt, který provádí matematické funkce zajistit, že všechny transakce je výhodné banky.
+3. Třída nazývá `Maths` v `DbBank` projekt, který provádí matematické funkce zajistit, že všechny transakce je výhodné banky.
 
-4.  Projekt s názvem testování částí `BankDbTests` otestovat chování `BankDb` komponenty.
+4. Projekt s názvem testování částí `BankDbTests` otestovat chování `BankDb` komponenty.
 
-5.  Testování částí třídu s názvem `MathsTests` ověření chování `Maths` třídy.
+5. Testování částí třídu s názvem `MathsTests` ověření chování `Maths` třídy.
 
 Testujeme metody v `Maths` , který přidá dvou celých čísel pomocí smyčka:
 

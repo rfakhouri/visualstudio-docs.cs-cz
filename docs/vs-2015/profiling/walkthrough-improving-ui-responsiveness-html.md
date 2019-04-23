@@ -1,5 +1,5 @@
 ---
-title: 'Průvodce: Zlepšení rychlosti odezvy uživatelského rozhraní (HTML) | Dokumentace Microsoftu'
+title: 'Návod: Zlepšení rychlosti odezvy uživatelského rozhraní (HTML) | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -19,30 +19,30 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b31d5c7d22ae209b46bdd4c422f6c3e7473ec8e0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ae2bb442edbeb49de25b44056263607fa4f26111
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54758681"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071639"
 ---
-# <a name="walkthrough-improving-ui-responsiveness-html"></a>Průvodce: Zlepšení rychlosti odezvy uživatelského rozhraní (HTML)
+# <a name="walkthrough-improving-ui-responsiveness-html"></a>Návod: Zlepšení rychlosti odezvy uživatelského rozhraní (HTML)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Tento názorný postup vás provede procesem identifikace a řešení potíží s výkonem s použitím [profiler odezvy uživatelského rozhraní HTML](../profiling/html-ui-responsiveness.md). Profiler je k dispozici v aplikacích Visual Studio pro Windows Universal a Windows Store pomocí jazyka JavaScript. V tomto scénáři vytvoříte aplikace pro testy výkonu, která aktualizuje elementů modelu DOM příliš často a využívat profiler a identifikovat a opravit tento problém.  
   
 ### <a name="creating-and-running-the-performance-test-app"></a>Vytváření a spouštění výkon testování aplikace  
   
-1.  V sadě Visual Studio vytvořte nový projekt univerzální JavaScript Windows. (Vyberte **soubor / nový / Project**. Zvolte **JavaScript** v levém podokně a pak zvolte **Windows**, **Windows 10**, pak buď **univerzální**, nebo  **Windows Phone**.  
+1. V sadě Visual Studio vytvořte nový projekt univerzální JavaScript Windows. (Vyberte **soubor / nový / Project**. Zvolte **JavaScript** v levém podokně a pak zvolte **Windows**, **Windows 10**, pak buď **univerzální**, nebo  **Windows Phone**.  
   
-2.  > [!IMPORTANT]
+2. > [!IMPORTANT]
     >  Aplikace pro Windows 8 se zobrazí výsledky diagnostiky, které jsou uvedené v tomto tématu.  
   
-3.  Zvolte jednu z prázdného projektu šablon v prostředním podokně, jako například **prázdnou aplikaci**.  
+3. Zvolte jednu z prázdného projektu šablon v prostředním podokně, jako například **prázdnou aplikaci**.  
   
-4.  V **název** zadejte název, jako `JS_Perf_Tester`a klikněte na tlačítko **OK**.  
+4. V **název** zadejte název, jako `JS_Perf_Tester`a klikněte na tlačítko **OK**.  
   
-5.  V **Průzkumníka řešení**, otevřete soubor default.html a vložte následující kód mezi \<text > značky:  
+5. V **Průzkumníka řešení**, otevřete soubor default.html a vložte následující kód mezi \<text > značky:  
   
     ```html  
     <div class="wrapper">  
@@ -50,7 +50,7 @@ Tento názorný postup vás provede procesem identifikace a řešení potíží 
     </div>  
     ```  
   
-6.  Otevřete default.css a přidejte následující kód šablony stylů CSS:  
+6. Otevřete default.css a přidejte následující kód šablony stylů CSS:  
   
     ```css  
     #content {  
@@ -59,7 +59,7 @@ Tento názorný postup vás provede procesem identifikace a řešení potíží 
     }  
     ```  
   
-7.  Otevřete default.js a nahraďte celý kód s tímto kódem:  
+7. Otevřete default.js a nahraďte celý kód s tímto kódem:  
   
     ```javascript  
     (function () {  
@@ -148,7 +148,7 @@ Tento názorný postup vás provede procesem identifikace a řešení potíží 
   
     ```  
   
-8.  Stisknutím klávesy F5 spusťte ladění. Ověřte, že **čekání na hodnoty** tlačítko se zobrazí na stránce.  
+8. Stisknutím klávesy F5 spusťte ladění. Ověřte, že **čekání na hodnoty** tlačítko se zobrazí na stránce.  
   
 9. Zvolte **čekání na hodnoty** a ověřit, tlačítko text a barvu aktualizovat přibližně jednou za sekundu. Jedná se o účel.  
   
@@ -204,9 +204,9 @@ Tento názorný postup vás provede procesem identifikace a řešení potíží 
   
      Širokou škálu faktů mohou úsporách získaných data. Příklad:  
   
-    -   Každý `Timer` události barevné označení k jeho identifikaci jako skriptovací událostí obsahuje volání `document.createElement`následovaný výpočet stylu a volání `style.backgroundColor` a `appendChild()`.  
+    - Každý `Timer` události barevné označení k jeho identifikaci jako skriptovací událostí obsahuje volání `document.createElement`následovaný výpočet stylu a volání `style.backgroundColor` a `appendChild()`.  
   
-    -   V krátkém časovém úseku, v vybrané (přibližně 1 až 2 sekund), existuje velký počet `Timer`, `Layout`, a `Paint` události probíhat. `Timer` Daleko častěji než jednu aktualizaci za sekundu, které je viditelně zřejmý po spuštění aplikace a zvolte dojde k událostem **čekání na hodnoty** tlačítko.  
+    - V krátkém časovém úseku, v vybrané (přibližně 1 až 2 sekund), existuje velký počet `Timer`, `Layout`, a `Paint` události probíhat. `Timer` Daleko častěji než jednu aktualizaci za sekundu, které je viditelně zřejmý po spuštění aplikace a zvolte dojde k událostem **čekání na hodnoty** tlačítko.  
   
 10. K prozkoumání, zvolte odkaz pro anonymní funkce pro jeden z `Timer` události v dolním levém podokně. Otevře se v souboru default.js následující funkce:  
   
@@ -225,7 +225,7 @@ Tento názorný postup vás provede procesem identifikace a řešení potíží 
   
 ### <a name="fixing-the-performance-issue"></a>Oprava potíží s výkonem  
   
-1.  Nahradit `update()` funkce s následujícím kódem:  
+1. Nahradit `update()` funkce s následujícím kódem:  
   
     ```javascript  
     function update() {  
@@ -240,7 +240,7 @@ Tento názorný postup vás provede procesem identifikace a řešení potíží 
   
      Tuto opravenou verzi kódu zahrnuje 1000 prodlevě milisekund bylo vynecháno z předchozí verze kódu, takže použijte výchozí hodnotu zpoždění. Z dat profileru, zobrazí se, že výchozí hodnota je nula milisekund, které způsobily `setValues()` funkce pro spuštění příliš často.  
   
-2.  Znovu spustit profiler odezvy uživatelského rozhraní HTML a zkontrolujte graf využití procesoru. Zjistíte, že jsou pryč nadměrné události a využití procesoru zamítl k téměř nulové. Napravila.  
+2. Znovu spustit profiler odezvy uživatelského rozhraní HTML a zkontrolujte graf využití procesoru. Zjistíte, že jsou pryč nadměrné události a využití procesoru zamítl k téměř nulové. Napravila.  
   
 ## <a name="see-also"></a>Viz také  
  [Rychlost odezvy uživatelského rozhraní HTML](../profiling/html-ui-responsiveness.md)

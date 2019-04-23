@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 89e1b8460ccfa99a1adef93ed6bcd78990f75d67
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 316243f53871c9411af08d6721f2ca590fadea99
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54792958"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078613"
 ---
 # <a name="application-timeline"></a>Časová osa aplikace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,20 +27,20 @@ Použití **časová osa aplikace** profiler k nalezení a opravení interakce a
   
  Tento nástroj můžete použít na následujících platformách:  
   
-1.  Aplikace pro Universal Windows (ve Windows 10)  
+1. Aplikace pro Universal Windows (ve Windows 10)  
   
-2.  Windows Store 8.1  
+2. Windows Store 8.1  
   
-3.  Windows Phone 8.1 (společnou platformu XAML)  
+3. Windows Phone 8.1 (společnou platformu XAML)  
   
-4.  Windows Presentation Foundation (.Net 4.0 a novější)  
+4. Windows Presentation Foundation (.Net 4.0 a novější)  
   
-5.  Windows 7  
+5. Windows 7  
   
 > [!NOTE]
 >  Můžete shromažďovat a analyzovat data o využití procesoru a data o spotřebě energie spolu s **ApplicationTimeline** data. Zobrazit [spustit profilovací nástroje bez ladění](http://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)  
   
-##  <a name="BKMK_Collect_Timeline_data_for_your_app"></a> Shromažďování dat časová osa aplikace  
+## <a name="BKMK_Collect_Timeline_data_for_your_app"></a> Shromažďování dat časová osa aplikace  
  Rychlost odezvy své aplikace na místním počítači, připojené zařízení, simulátoru sady Visual Studio nebo emulátory nebo vzdáleného zařízení. Zobrazit [spustit profilovací nástroje bez ladění](http://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01).  
   
 > [!TIP]
@@ -48,51 +48,51 @@ Použití **časová osa aplikace** profiler k nalezení a opravení interakce a
   
  Zde jsou základní kroky:  
   
-1.  Otevření aplikace XAML.  
+1. Otevření aplikace XAML.  
   
-2.  Klikněte na tlačítko **ladění / Profiler výkonu...** . Zobrazí se seznam v okně .diagsession nástroje pro profilaci.  
+2. Klikněte na tlačítko **ladění / Profiler výkonu...** . Zobrazí se seznam v okně .diagsession nástroje pro profilaci.  
   
-3.  Vyberte **časová osa aplikace** a potom klikněte na tlačítko **Start** v dolní části okna.  
+3. Vyberte **časová osa aplikace** a potom klikněte na tlačítko **Start** v dolní části okna.  
   
     > [!NOTE]
     >  Může se zobrazit okno Řízení uživatelských účtů ke spuštění VsEtwCollector.exe. Klikněte na **Ano**.  
   
-4.  Spusťte scénář zájem o profilování ve vaší aplikaci ke shromažďování dat výkonu.  
+4. Spusťte scénář zájem o profilování ve vaší aplikaci ke shromažďování dat výkonu.  
   
-5.  Pokud chcete profilaci zastavit, přepněte zpět do okna .diagsession a klikněte na tlačítko **Zastavit** v horní části okna.  
+5. Pokud chcete profilaci zastavit, přepněte zpět do okna .diagsession a klikněte na tlačítko **Zastavit** v horní části okna.  
   
      Aplikace Visual Studio analyzuje shromážděná data a zobrazuje výsledky.  
   
      ![Sestava profileru časová osa](../profiling/media/timeline-base.png "TIMELINE_Base")  
   
-##  <a name="BKMK_Analyze_Timeline_profiling_data"></a> Analyzujte data profilování časové osy  
+## <a name="BKMK_Analyze_Timeline_profiling_data"></a> Analyzujte data profilování časové osy  
  Chcete-li spustit analýzu, řiďte se po shromáždění profilačních dat těmito kroky:  
   
-1.  Zkontrolujte informace v **využití vlákna UI** a **vizuální propustnost (FPS)** grafů a pak pomocí navigačních panelů časové ose vyberte časový rozsah, který chcete analyzovat.  
+1. Zkontrolujte informace v **využití vlákna UI** a **vizuální propustnost (FPS)** grafů a pak pomocí navigačních panelů časové ose vyberte časový rozsah, který chcete analyzovat.  
   
-2.  Podle informací uvedených v **využití vlákna UI** nebo **vizuální propustnost (FPS)** grafů, zkontrolujte podrobnosti v **podrobnosti časové osy** zobrazení zjistíte tak možné příčiny náhledech rychlost odezvy.  
+2. Podle informací uvedených v **využití vlákna UI** nebo **vizuální propustnost (FPS)** grafů, zkontrolujte podrobnosti v **podrobnosti časové osy** zobrazení zjistíte tak možné příčiny náhledech rychlost odezvy.  
   
-###  <a name="BKMK_Report_scenarios_categories_and_events"></a> Sestava scénáře, kategorie a události  
+### <a name="BKMK_Report_scenarios_categories_and_events"></a> Sestava scénáře, kategorie a události  
  **Časová osa aplikace** nástroj zobrazí data o časování pro scénáře, kategorie a události, které se vztahují k výkonu XAML.  
   
-###  <a name="BKMK_Diagnostic_session_timeline"></a> Časová osa diagnostiky  
+### <a name="BKMK_Diagnostic_session_timeline"></a> Časová osa diagnostiky  
  ![Výkon a Diagnostika časová osa](../profiling/media/diaghub-timelinewithusermarks.png "DIAGHUB_TimelineWithUserMarks")  
   
  Pravítka v horní části stránky zobrazuje časovou osu profilovaných informací. Tato časová osa platí jak **využití vlákna UI** grafu a **vizuální propustnost** grafu. Přetažením navigačních panelů na časové ose můžete vybrat určitou část časové osy a zúžit tak rozsah sestavy.  
   
  Na časové ose se také zobrazují všechny uživatelské značky, které jste tam vložili, a události z aktivačního životního cyklu aplikace.  
   
-###  <a name="BKMK_UI_thread_utilization_graph"></a> Graf využití vlákna UI  
+### <a name="BKMK_UI_thread_utilization_graph"></a> Graf využití vlákna UI  
  ![Graf využití procesoru](../profiling/media/timeline-cpuutilization.png "TIMELINE_CpuUtilization")  
   
  **Využití vlákna UI (%)** graf je pruhový graf, který zobrazuje relativní množství času stráveného v kategorii během zadané kolekce.  
   
-###  <a name="BKMK_Visual_throughput_FPS_graph"></a> Vizuální propustnost (FPS) grafu  
+### <a name="BKMK_Visual_throughput_FPS_graph"></a> Vizuální propustnost (FPS) grafu  
  ![Vizuální propustnost grafu](../profiling/media/timeline-visualthroughput.png "TIMELINE_VisualThroughput")  
   
  **Vizuální propustnost (FPS)** spojnicový graf zobrazuje počet snímků za sekundu (FPS) ve vlákně uživatelského rozhraní a složení aplikace.  
   
-###  <a name="BKMK_Timeline_details_"></a> Podrobnosti časové osy  
+### <a name="BKMK_Timeline_details_"></a> Podrobnosti časové osy  
  Zobrazení podrobností je, kde bude útraty většinu svého času analýza sestavy. Zobrazuje podrobné zobrazení využití procesoru aplikace zařazený do kategorie službou subsystému architekturu uživatelského rozhraní nebo součást systému provedla spotřebovávaného procesoru.  
   
  Podporují se následující události:  
@@ -109,7 +109,7 @@ Použití **časová osa aplikace** profiler k nalezení a opravení interakce a
 > [!TIP]
 >  Zvolte **využití procesoru** společně s nástroji **časová osa aplikace** nástroj při spuštění profilace zobrazit aplikace metody, které jsou spouštěny na vlákně UI. Přesunutí kódu dlouho běžící aplikace do vlákna na pozadí může zvýšit rychlost odezvy UI.  
   
-####  <a name="BKMK_Customizing_Timeline_details_"></a> Přizpůsobení podrobnosti časové osy  
+#### <a name="BKMK_Customizing_Timeline_details_"></a> Přizpůsobení podrobnosti časové osy  
  Použití **podrobnosti časové osy** nástrojů můžete řadit, filtrovat a zadejte poznámky o **podrobnosti časové osy** zobrazení položek.  
   
 |||  

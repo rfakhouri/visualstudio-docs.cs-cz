@@ -16,12 +16,12 @@ caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 80a0c6d24bb1954a9d405c2f318dbb44642d1996
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 189e5c622d19ce3e122e01bfbe4b886bd2a830b7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54754153"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063384"
 ---
 # <a name="mixed-mode-debugging-for-x64-processes-is-only-supported-when-using-microsoftnet-framework-4-or-greater"></a>Ladění ve smíšeném režimu pro procesy x64 je podporováno, pouze pokud používáte rozhraní Microsoft .NET Framework 4 nebo vyšší
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Rozhraní .NET Framework verze nižší než 4 se neposkytuje podporu pro laděn
   
 ### <a name="workarounds"></a>Alternativní řešení  
   
--   Aktualizujte projekt pro použití rozhraní Microsoft .NET Framework 4 nebo novější.  
+- Aktualizujte projekt pro použití rozhraní Microsoft .NET Framework 4 nebo novější.  
   
      – nebo –  
   
@@ -42,23 +42,23 @@ Rozhraní .NET Framework verze nižší než 4 se neposkytuje podporu pro laděn
   
 ### <a name="to-change-the-platform-to-32-bit-visual-basic-or-c"></a>Chcete-li změnit platformu na 32 bitů (Visual Basic nebo C#)  
   
-1.  V **Průzkumníka řešení**, klikněte pravým tlačítkem na projekt a potom klikněte na tlačítko **vlastnosti**.  
+1. V **Průzkumníka řešení**, klikněte pravým tlačítkem na projekt a potom klikněte na tlačítko **vlastnosti**.  
   
-2.  Na stránkách vlastností, klikněte na tlačítko **kompilaci** nebo **ladění** kartu.  
+2. Na stránkách vlastností, klikněte na tlačítko **kompilaci** nebo **ladění** kartu.  
   
-3.  Klikněte na tlačítko **platformy** a vyberte x86 ze seznamu platformy.  
+3. Klikněte na tlačítko **platformy** a vyberte x86 ze seznamu platformy.  
   
      Ve výchozím nastavení výchozí kompilátory jazyka Visual Basic a C# vytvářet kód pro spuštění na jakýkoli procesor. Na 64bitovém počítači spusťte tyto binární soubory jako 64bitové procesy. Ke spuštění na 32bitový proces, musíte zvolit **Win32**, nikoli **AnyCPU**.  
   
 ### <a name="to-change-the-platform-to-32-bit-cc"></a>Chcete-li změnit platformu na 32 bitů (C/C++)  
   
-1.  V **Průzkumníka řešení**, klikněte pravým tlačítkem na projekt a pak klikněte na tlačítko **vlastnosti**.  
+1. V **Průzkumníka řešení**, klikněte pravým tlačítkem na projekt a pak klikněte na tlačítko **vlastnosti**.  
   
-2.  Na stránkách vlastností, klikněte na tlačítko **platformy** a vyberte ze seznamu platformy Win32.  
+2. Na stránkách vlastností, klikněte na tlačítko **platformy** a vyberte ze seznamu platformy Win32.  
   
 ### <a name="to-correct-this-error"></a>Oprava této chyby  
   
--   Zobrazit [nastavení ladění SQL](http://msdn.microsoft.com/3db09e68-edcc-42de-9c22-4e97cfd55ab3).  
+- Zobrazit [nastavení ladění SQL](http://msdn.microsoft.com/3db09e68-edcc-42de-9c22-4e97cfd55ab3).  
   
 ## <a name="see-also"></a>Viz také  
  [Ladění 64bitových aplikací](../debugger/debug-64-bit-applications.md)

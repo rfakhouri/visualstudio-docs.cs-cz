@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 14eaa83f63a4f1c7f91bd2a0da3ad8d285f19113
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: fbcf07b462e280f522741b8329d34c2907f5b454
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56639811"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066283"
 ---
 # <a name="how-to-localize-code"></a>Postupy: Lokalizace kódu
   Nelokalizovaný kód používá pevně zakódované řetězcové hodnoty. Chcete-li lokalizovat řetězce kódu, nahraďte je voláními do <xref:System.Web.HttpContext.GetGlobalResourceObject%2A>, což je metoda, která odkazuje na lokalizované prostředky.
@@ -27,30 +27,30 @@ ms.locfileid: "56639811"
 
 #### <a name="to-localize-code"></a>Chcete-li lokalizovat kód
 
-1.  V **Průzkumníka řešení**, otevřete místní nabídku pro položku projektu a klikněte na tlačítko **přidat** > **modulu**.
+1. V **Průzkumníka řešení**, otevřete místní nabídku pro položku projektu a klikněte na tlačítko **přidat** > **modulu**.
 
      Zvolte **soubor prostředků** šablony.
 
     > [!NOTE]
     >  Nezapomeňte přidat soubor prostředků do položky projektu SharePoint tak, aby vlastnost typ nasazení je k dispozici. Tato vlastnost je vyžadováno později v tomto postupu.
 
-2.  Pojmenujte soubor prostředků výchozího jazyka jméno dle vašeho výběru s *RESX* rozšíření, jako například *MyAppResources.resx*.
+2. Pojmenujte soubor prostředků výchozího jazyka jméno dle vašeho výběru s *RESX* rozšíření, jako například *MyAppResources.resx*.
 
-3.  Opakujte kroky 1 a 2 pro přidání souborů prostředků do položky projektu služby SharePoint: jeden pro každý lokalizovaný jazyk.
+3. Opakujte kroky 1 a 2 pro přidání souborů prostředků do položky projektu služby SharePoint: jeden pro každý lokalizovaný jazyk.
 
      Použijte stejný základní název pro každý lokalizovaný soubor prostředků, ale přidejte identifikátor jazykové verze. Například pojmenujte německý lokalizovaný prostředek *MyAppResources.de-DE.resx*.
 
-4.  Otevřete každý soubor prostředků a přidejte lokalizované řetězce. V každém souboru použijte stejná ID řetězce.
+4. Otevřete každý soubor prostředků a přidejte lokalizované řetězce. V každém souboru použijte stejná ID řetězce.
 
-5.  Změňte hodnotu **typ nasazení** vlastnosti každého souboru prostředků na **AppGlobalResource** pro každý soubor pro nasazení do složky App_GlobalResources serveru.
+5. Změňte hodnotu **typ nasazení** vlastnosti každého souboru prostředků na **AppGlobalResource** pro každý soubor pro nasazení do složky App_GlobalResources serveru.
 
-6.  Ponechte hodnotu **akce sestavení** jednotlivých souborů jako **integrovaný prostředek**.
+6. Ponechte hodnotu **akce sestavení** jednotlivých souborů jako **integrovaný prostředek**.
 
      Vložené prostředky jsou kompilovány do projektu knihovny DLL.
 
-7.  Vytvoření projektu pro vytvoření prostředku satelitní knihovny DLL.
+7. Vytvoření projektu pro vytvoření prostředku satelitní knihovny DLL.
 
-8.  V **návrháři balíčku**, zvolte **Upřesnit** kartu a pak přidejte satelitní sestavení.
+8. V **návrháři balíčku**, zvolte **Upřesnit** kartu a pak přidejte satelitní sestavení.
 
 9. V **umístění** pole, předřaďte proveďte předřazení složky ID pro cestu k umístění, jako například *de-DE\\\<název položky projektu >. resources.dll*.
 

@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 451afe75d71969b4a4a866fc9a7cda1fd85562d3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c4f5de2926cb38f570defa95463489523c694132
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54764536"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079068"
 ---
 # <a name="how-to-enable-and-disable-automatic-code-analysis-for-managed-code"></a>Postupy: Povolení a zákaz automatické analýzy kódu pro spravovaný kód
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,10 +23,10 @@ Můžete konfigurovat analýzu kódu pro spuštění před každým sestavením 
   
 ### <a name="to-enable-or-disable-automatic-code-analysis"></a>K povolení nebo zakázání automatické analýzy kódu  
   
-1.  V **Průzkumníka řešení**, klikněte pravým tlačítkem na projekt a potom klikněte na tlačítko **vlastnosti**.  
+1. V **Průzkumníka řešení**, klikněte pravým tlačítkem na projekt a potom klikněte na tlačítko **vlastnosti**.  
   
-2.  V dialogovém okně Vlastnosti projektu klikněte na tlačítko **analýzy kódu**.  
+2. V dialogovém okně Vlastnosti projektu klikněte na tlačítko **analýzy kódu**.  
   
-3.  Zadejte typ sestavení v **konfigurace** a cílovou platformu v **platformy**.  
+3. Zadejte typ sestavení v **konfigurace** a cílovou platformu v **platformy**.  
   
-4.  K povolení nebo zakázání automatické analýzy kódu, zaškrtněte nebo zrušte zaškrtnutí **povolit analýzu kódu na sestavení (definuje konstantu CODE_ANALYSIS)** zaškrtávací políčko.
+4. K povolení nebo zakázání automatické analýzy kódu, zaškrtněte nebo zrušte zaškrtnutí **povolit analýzu kódu na sestavení (definuje konstantu CODE_ANALYSIS)** zaškrtávací políčko.

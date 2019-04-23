@@ -1,5 +1,5 @@
 ---
-title: 'Průvodce: Stahování sestavení na vyžádání pomocí rozhraní API nasazení ClickOnce | Dokumentace Microsoftu'
+title: 'Návod: Stahování sestavení na vyžádání pomocí rozhraní API nasazení ClickOnce | Dokumentace Microsoftu'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,14 +16,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cadba0d6afd35303fd44eb0442bb8f4eb9aa8440
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: e363989094f4d4859f272423792aa32152c6de57
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603896"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063878"
 ---
-# <a name="walkthrough-download-assemblies-on-demand-with-the-clickonce-deployment-api"></a>Průvodce: Stáhnout sestavení na vyžádání pomocí rozhraní API nasazení ClickOnce
+# <a name="walkthrough-download-assemblies-on-demand-with-the-clickonce-deployment-api"></a>Návod: Stáhnout sestavení na vyžádání pomocí rozhraní API nasazení ClickOnce
 Ve výchozím nastavení, všechna sestavení součástí [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace se stáhne při prvním spuštění aplikace. Může však mít částí aplikace, které jsou používány malého počtu uživatelů. V takovém případě budete chtít stáhnout sestavení pouze v případě, že můžete vytvořit jeden z jeho typy. Následující návod ukazuje, jak označit určité sestavení v aplikaci jako "volitelné", a jak si je stáhnout pomocí tříd v <xref:System.Deployment.Application> obor názvů, když je modul CLR (CLR) požaduje.
 
 > [!NOTE]
@@ -32,9 +32,9 @@ Ve výchozím nastavení, všechna sestavení součástí [!INCLUDE[ndptecclick]
 ## <a name="prerequisites"></a>Požadavky
  Budete potřebovat jednu z následujících komponent k dokončení tohoto návodu:
 
--   Windows SDK. Sada Windows SDK můžete stáhnout z webu Microsoft Download Center.
+- Windows SDK. Sada Windows SDK můžete stáhnout z webu Microsoft Download Center.
 
--   Visual Studio.
+- Visual Studio.
 
 ## <a name="create-the-projects"></a>Vytváření projektů
 
@@ -100,17 +100,17 @@ Ve výchozím nastavení, všechna sestavení součástí [!INCLUDE[ndptecclick]
 
 #### <a name="to-mark-assemblies-as-optional-in-your-clickonce-application-by-using-mageuiexe"></a>S použitím MageUI.exe označit sestavení jako volitelný v aplikaci ClickOnce
 
-1.  Pomocí *MageUI.exe*, vytvořte manifest aplikace, jak je popsáno v [názorný postup: Ruční nasazení aplikace ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Pro manifest aplikace použijte následující nastavení:
+1. Pomocí *MageUI.exe*, vytvořte manifest aplikace, jak je popsáno v [názorný postup: Ruční nasazení aplikace ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Pro manifest aplikace použijte následující nastavení:
 
-    -   Název manifestu aplikace `ClickOnceOnDemand`.
+    - Název manifestu aplikace `ClickOnceOnDemand`.
 
-    -   Na **soubory** stránku, *ClickOnceLibrary.dll* řádek, nastavte **typ souboru** sloupec, který se **žádný**.
+    - Na **soubory** stránku, *ClickOnceLibrary.dll* řádek, nastavte **typ souboru** sloupec, který se **žádný**.
 
-    -   Na **soubory** stránku, *ClickOnceLibrary.dll* řádek, zadejte `ClickOnceLibrary.dll` v **skupiny** sloupce.
+    - Na **soubory** stránku, *ClickOnceLibrary.dll* řádek, zadejte `ClickOnceLibrary.dll` v **skupiny** sloupce.
 
-2.  Pomocí *MageUI.exe*, vytvořte podle popisu v manifestu nasazení [názorný postup: Ruční nasazení aplikace ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Pro manifest nasazení použijte následující nastavení:
+2. Pomocí *MageUI.exe*, vytvořte podle popisu v manifestu nasazení [názorný postup: Ruční nasazení aplikace ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Pro manifest nasazení použijte následující nastavení:
 
-    -   Název manifestu nasazení `ClickOnceOnDemand`.
+    - Název manifestu nasazení `ClickOnceOnDemand`.
 
 ## <a name="testing-the-new-assembly"></a>Testování nového sestavení
 

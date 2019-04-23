@@ -16,12 +16,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8f941aaff6b4f5f97a298549e91c29ffb19e84ea
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 68e5dcc5ff2e78fe87bbaad639c93f5532ea74fe
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59667518"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065672"
 ---
 # <a name="run-devenvexe"></a>/Run (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -44,9 +44,9 @@ devenv {/run|/r} {SolutionName|ProjectName}
 ## <a name="remarks"></a>Poznámky  
  Zkompiluje a spustí zadaný projekt nebo řešení podle nastavení nakonfigurovaného pro konfiguraci aktivního řešení. Tento přepínač spuštění integrovaného vývojového prostředí (IDE) a zůstane aktivní po projekt nebo řešení po dokončení jeho běhu.  
   
--   Uzavření řetězců, které obsahují mezery v dvojitých uvozovkách.  
+- Uzavření řetězců, které obsahují mezery v dvojitých uvozovkách.  
   
--   Souhrnné informace, včetně chyb, lze zobrazit v **příkaz** okna, nebo do jakéhokoli souboru protokolu zadaný `/out` přepnout.  
+- Souhrnné informace, včetně chyb, lze zobrazit v **příkaz** okna, nebo do jakéhokoli souboru protokolu zadaný `/out` přepnout.  
   
 ## <a name="example"></a>Příklad  
  Tento příklad spustí řešení `MySolution` pomocí konfigurace aktivního nasazení.  

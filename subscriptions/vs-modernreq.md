@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Další informace o sadě ModernRequirements produktů, které jsou součástí vybraných předplatných sady Visual Studio Enterprise.
 searchscope: VS Subscription
-ms.openlocfilehash: ffdcc25a90f73ba904ce2e5162031dff0b200274
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 77729e8e5bf39d252ebd570d7d6d514e9ffdcdbb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59660716"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074187"
 ---
 # <a name="the-modernrequirements4tfs-benefit-in-visual-studio-subscriptions"></a>Výhoda MODERNRequirements4TFS v předplatných sady Visual Studio
 
@@ -98,6 +98,6 @@ Vybraná předplatná sady Visual Studio zahrnují 6měsíční předplatné pro
 Nejste si jistí které předplatné používáte?  Připojte se k [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) zobrazíte všechna předplatná, která jsou přiřazená e-mailovou adresu. Pokud se nezobrazí všechna předplatná, může mít jeden nebo více přiřazené na jinou e-mailovou adresu.  Bude potřeba přihlásit se přes tento e-mailovou adresu najdete v těchto předplatných.
 
 ## <a name="support-resources"></a>Informační zdroje podpory
--  Potřebujete pomoc s produkty ModernRequirements?  Navštivte prosím https://www.modernrequirements.com/support-2/.
--  Potřebujete pomoc se prodeje, předplatnými, účty a fakturací pro předplatná sady Visual Studio, obraťte se na Visual Studio [podpora předplatných](https://visualstudio.microsoft.com/subscriptions/support/).
--  Máte dotaz k Visual Studio IDE, DevOps služby Azure nebo jiných produktů Visual Studio nebo služeb?  Navštivte [Visual Studio – podpora](https://visualstudio.microsoft.com/support/).
+- Potřebujete pomoc s produkty ModernRequirements?  Navštivte prosím https://www.modernrequirements.com/support-2/.
+- Potřebujete pomoc se prodeje, předplatnými, účty a fakturací pro předplatná sady Visual Studio, obraťte se na Visual Studio [podpora předplatných](https://visualstudio.microsoft.com/subscriptions/support/).
+- Máte dotaz k Visual Studio IDE, DevOps služby Azure nebo jiných produktů Visual Studio nebo služeb?  Navštivte [Visual Studio – podpora](https://visualstudio.microsoft.com/support/).

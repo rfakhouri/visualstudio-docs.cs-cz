@@ -16,12 +16,12 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 833beb91c35c35d29df45a2e8caa31aae173bb27
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7e828d0150e3519e588702be95111126fd1e2c04
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54779780"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069234"
 ---
 # <a name="error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer"></a>Chyba: Služba Visual Studio Remote Debugger na cílovém počítači se nemůže připojit zpět k tomuto počítači
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,41 +40,41 @@ Tato chyba znamená, že se službou Visual Studio Remote Debugger uživatelské
   
  Navíc:  
   
--   Účet, který spustíte v rámci služby Visual Studio Remote Debugger by měl být správce na vzdáleném počítači tak, aby ho můžete ladit nějaký proces.  
+- Účet, který spustíte v rámci služby Visual Studio Remote Debugger by měl být správce na vzdáleném počítači tak, aby ho můžete ladit nějaký proces.  
   
--   Účet také musí být udělena `Log on as a service` oprávnění ve vzdáleném počítači, který se používá **místní zásady zabezpečení** nástroje pro správu.  
+- Účet také musí být udělena `Log on as a service` oprávnění ve vzdáleném počítači, který se používá **místní zásady zabezpečení** nástroje pro správu.  
   
--   Pokud používáte místní účet přístupu k počítači, je nutné spustit pod účtem místní služby Visual Studio Remote Debugger.  
+- Pokud používáte místní účet přístupu k počítači, je nutné spustit pod účtem místní služby Visual Studio Remote Debugger.  
   
 ### <a name="to-correct-this-error"></a>Oprava této chyby  
   
-1.  Ujistěte se, že služba Visual Studio Remote Debugger je správně nastavený na vzdáleném počítači. Další informace najdete v tématu [nastavit Up the Remote Tools na zařízení](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c).  
+1. Ujistěte se, že služba Visual Studio Remote Debugger je správně nastavený na vzdáleném počítači. Další informace najdete v tématu [nastavit Up the Remote Tools na zařízení](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c).  
   
-2.  Spusťte službu vzdálený ladicí program pomocí účtu, který má přístup k počítači hostitele ladicího programu, jak je znázorněno v předchozí tabulce.  
+2. Spusťte službu vzdálený ladicí program pomocí účtu, který má přístup k počítači hostitele ladicího programu, jak je znázorněno v předchozí tabulce.  
   
 ### <a name="to-add-log-on-as-a-service-privilege"></a>Chcete-li přidat oprávnění "Přihlásit jako službu"  
   
-1.  Na **Start** nabídce zvolte **ovládací panely**.  
+1. Na **Start** nabídce zvolte **ovládací panely**.  
   
-2.  V Ovládacích panelech zvolte **klasické zobrazení**, v případě potřeby.  
+2. V Ovládacích panelech zvolte **klasické zobrazení**, v případě potřeby.  
   
-3.  Dvakrát klikněte na panel **nástroje pro správu**.  
+3. Dvakrát klikněte na panel **nástroje pro správu**.  
   
-4.  V okně nástroje pro správu, klikněte dvakrát na **místní zásady zabezpečení**.  
+4. V okně nástroje pro správu, klikněte dvakrát na **místní zásady zabezpečení**.  
   
-5.  V **místní nastavení zabezpečení** okna, rozbalte **místní zásady** složky.  
+5. V **místní nastavení zabezpečení** okna, rozbalte **místní zásady** složky.  
   
-6.  Klikněte na tlačítko **přiřazení uživatelských práv**.  
+6. Klikněte na tlačítko **přiřazení uživatelských práv**.  
   
-7.  V **zásady** sloupce, klikněte dvakrát na **přihlásit jako službu** zobrazíte aktuální místní zásady skupiny přiřazení v **přihlásit jako službu** dialogové okno.  
+7. V **zásady** sloupce, klikněte dvakrát na **přihlásit jako službu** zobrazíte aktuální místní zásady skupiny přiřazení v **přihlásit jako službu** dialogové okno.  
   
-8.  Pokud chcete přidat nové uživatele, klikněte na tlačítko **přidat uživatele nebo skupinu** tlačítko.  
+8. Pokud chcete přidat nové uživatele, klikněte na tlačítko **přidat uživatele nebo skupinu** tlačítko.  
   
 9. Po dokončení přidávání uživatelů, klikněte na tlačítko **OK**.  
   
 ### <a name="to-work-around-this-error"></a>Chcete-li vyřešit tuto chybu  
   
--   Spuštění sledování vzdáleného ladění jako aplikace místo jako služba.  
+- Spuštění sledování vzdáleného ladění jako aplikace místo jako služba.  
   
 ## <a name="see-also"></a>Viz také  
  [Vzdálené ladění chyby a řešení potíží](../debugger/remote-debugging-errors-and-troubleshooting.md)   

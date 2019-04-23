@@ -14,39 +14,39 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c049a6f6a5d57ea5c283b262f6f975c0838ac94f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 354fe62914a8708ac63acdde7d30060aca8d52fe
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596365"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072016"
 ---
 # <a name="how-to-create-a-sharepoint-web-part-by-using-a-designer"></a>Postupy: Vytvoření webové části služby SharePoint pomocí návrháře
   Můžete vytvořit webovou část přidáním **vizuální webové části** položky do jakéhokoli projektu SharePoint. Otevře se Návrhář Visual Web Developer v sadě Visual Studio, ve kterém můžete přidat ovládací prvky a kódem do webové části. Vizuální webové části fungovat stejně jako webových částí. Jediným rozdílem je, že návrh vizuální webové části v návrháři aplikace Visual Web Developer.
 
 ### <a name="to-create-a-project-for-visual-web-parts"></a>Vytvoření projektu vizuální webové části
 
-1.  V panelu nabídky zvolte **souboru** >**nový** > **projektu**.
+1. V panelu nabídky zvolte **souboru** >**nový** > **projektu**.
 
      **Nový projekt** zobrazí se dialogové okno.
 
-2.  V **nový projekt** dialogové okno, v části **Visual C#**  nebo **jazyka Visual Basic**, rozbalte **Office/SharePoint** uzel a pak Zvolte **řešení služby SharePoint** kategorie.
+2. V **nový projekt** dialogové okno, v části **Visual C#**  nebo **jazyka Visual Basic**, rozbalte **Office/SharePoint** uzel a pak Zvolte **řešení služby SharePoint** kategorie.
 
-3.  V seznamu šablon projektu vyberte **SharePoint 2013 - Visual Web Part**a klikněte na tlačítko **OK** tlačítko.
+3. V seznamu šablon projektu vyberte **SharePoint 2013 - Visual Web Part**a klikněte na tlačítko **OK** tlačítko.
 
      **Průvodce přizpůsobením SharePoint** se zobrazí.
 
-4.  Na **zadejte web a úroveň zabezpečení pro ladění** stránky, zadejte adresu URL webu služby SharePoint, který je na místním počítači, a klikněte na tlačítko **Dokončit** tlačítko.
+4. Na **zadejte web a úroveň zabezpečení pro ladění** stránky, zadejte adresu URL webu služby SharePoint, který je na místním počítači, a klikněte na tlačítko **Dokončit** tlačítko.
 
      V **Průzkumníka řešení**, webová část se zobrazí. Po návrh webové části v návrháři aplikace Visual Web Developer, budete ji otestovat na webu, který zadáte.
 
 ### <a name="to-add-a-visual-web-part-to-an-existing-sharepoint-project"></a>Přidání vizuální webové části do existujícího projektu služby SharePoint
 
-1.  V panelu nabídky zvolte **projektu** > **přidat novou položku**.
+1. V panelu nabídky zvolte **projektu** > **přidat novou položku**.
 
-2.  V **přidat novou položku** dialogového okna zvolte **Office/SharePoint** uzlu.
+2. V **přidat novou položku** dialogového okna zvolte **Office/SharePoint** uzlu.
 
-3.  V seznamu šablon projektu vyberte **vizuální webové části**, pojmenujte ho a klikněte na tlačítko **přidat** tlačítko.
+3. V seznamu šablon projektu vyberte **vizuální webové části**, pojmenujte ho a klikněte na tlačítko **přidat** tlačítko.
 
      V **Průzkumníka řešení**, webová část se zobrazí. Po návrh webové části v návrháři aplikace Visual Web Developer, budete ji otestovat na webu, který zadáte.
 

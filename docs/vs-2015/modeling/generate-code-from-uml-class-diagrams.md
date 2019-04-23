@@ -16,12 +16,12 @@ caps.latest.revision: 53
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2613dbd0c803352c758ac1baf1b1f5d4469b9c73
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 020dd35d225d8629a8061d1a74b234b62960c830
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59663989"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056156"
 ---
 # <a name="generate-code-from-uml-class-diagrams"></a>Generování kódu z diagramů tříd UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,11 +53,11 @@ Chcete-li generovat Visual C# .NET kódu z diagramů tříd UML v sadě Visual S
 
 2. V diagramu tříd nebo v **Průzkumníku modelů UML**, vyberte prvky, ze kterých chcete generovat kód. Lze vybrat jednu z následujících možností:  
 
-   -   Určitou sadu prvků.  
+   - Určitou sadu prvků.  
 
-   -   Balíček nebo model, chcete-li z jeho obsahu vygenerovat kód.  
+   - Balíček nebo model, chcete-li z jeho obsahu vygenerovat kód.  
 
-   -   Diagram, chcete-li vybrat všechny prvky diagramu.  
+   - Diagram, chcete-li vybrat všechny prvky diagramu.  
 
 3. Otevřete místní nabídku pro vybraný element a pak zvolte **generovat kód**.  
 
@@ -71,7 +71,7 @@ Chcete-li generovat Visual C# .NET kódu z diagramů tříd UML v sadě Visual S
 
    Na model jsou použity některé ověřovací testy, aby bylo zajištěno, že jej lze přeložit do jazyka C#. Pokud se tyto testy nezdaří, zobrazí se chybová zpráva a generování kódu nebude provedeno. Pokud jste vytvořili příkaz nabídky ověření, kód nebude vygenerován pro žádný prvek, u kterého příkaz ověření selže. Další informace najdete v tématu [definovat omezení ověření pro modely UML](../modeling/define-validation-constraints-for-uml-models.md).  
 
-##  <a name="default"></a> Výchozí transformace generování kódu  
+## <a name="default"></a> Výchozí transformace generování kódu  
  Tento oddíl shrnuje výsledky, které jsou vytvářeny **generovat kód** příkazu, pokud jste tento příkaz nepřizpůsobili. Další informace najdete v tématu [přizpůsobení příkazu generovat kód](#custom).  
 
 - Pro každý typ je vytvořen jeden typ jazyka C#, který jste vybrali v modelu UML. Každý typ je umístěn v samostatném souboru kódu v rámci **GeneratedCode** složky.  
@@ -126,7 +126,7 @@ Chcete-li generovat Visual C# .NET kódu z diagramů tříd UML v sadě Visual S
 
   Všechny atributy a operace mají také vlastnosti stereotypu, které lze nastavit. Pokud se vlastnosti na novém atributu nezobrazí, spusťte **generovat kód**.  
 
-##  <a name="custom"></a> Přizpůsobení příkazu generovat kód  
+## <a name="custom"></a> Přizpůsobení příkazu generovat kód  
  **Generovat kód** příkaz funguje pomocí transformace prvků modelu s použitím sady textových šablon. Další informace o textových šablonách naleznete v tématu [generování kódu a textové šablony T4](../modeling/code-generation-and-t4-text-templates.md).  
 
  Šablony jsou uvedeny v sadě *vazby textové šablony*. Vazba textové šablony určuje, co šablona měla být použita, kde by měl být umístěn generovaný výstup a jiné parametry **generovat kód** příkazu.  
@@ -166,7 +166,7 @@ Chcete-li generovat Visual C# .NET kódu z diagramů tříd UML v sadě Visual S
 
    |    **Vlastnost**    |                                                                                                                                                                                                                                                                                                                    **Popis**                                                                                                                                                                                                                                                                                                                    |
    |--------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-   |        Name        |                                                                                                                                                                                                                                                  Název této vazby. Chcete-li přepsat vazby zděděné od nadřazeného balíčku nebo modelu, použijte stejný název, jako je název vazby, kterou chcete přepsat.                                                                                                                                                                                                                                                  |
+   |        Název        |                                                                                                                                                                                                                                                  Název této vazby. Chcete-li přepsat vazby zděděné od nadřazeného balíčku nebo modelu, použijte stejný název, jako je název vazby, kterou chcete přepsat.                                                                                                                                                                                                                                                  |
    |     Přepsat      |                                                                                                                                                                                                                                                                                                      Pokud je hodnota true, je existující kód přepsán.                                                                                                                                                                                                                                                                                                       |
    |    Cílový název     | Název souboru, který je generován.<br /><br /> Výrazy můžete vložit do tohoto řetězce, jako `{Name}` nebo `{Owner.Name}`. Můžete například napsat: `{Owner.Name}_{Name}`. Tento výraz je vyhodnocen pro prvek modelu. Mohou být použity vlastnosti prvků, ale nikoli metody. Pokud chcete zjistit, jaké vlastnosti lze použít, podívejte se na vlastnosti typů v **Microsoft.VisualStudio.Uml.\\ ***. \*\*Důležité:* \* `{Name}` nebo `{Owner.Name}` lze použít pouze ve **název cílového** vlastnost. Chcete-li změnit název vygenerované třídy, musíte změnit šablonu. Další informace najdete v tématu [Writing a Text Template](#writing). |
    |    Cesta k projektu    |                                                                      Určuje cestu k [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] výstupní soubory projektu, který bude obsahovat transformace. Zadávané hodnoty slouží k vytvoření nového projektu. Zvolte tlačítko se třemi tečkami (**[...]** ) vyberte existující projekt.<br /><br /> Pokud nový projekt neexistuje, bude vytvořen. Bude to projekt knihovny tříd jazyka C#.<br /><br /> Chcete-li to provést, je nutné projekt zadat přímo. Lze použít makra proměnných prostředí, například %ProgramFiles% nebo %LocalAppData%.                                                                       |
@@ -175,7 +175,7 @@ Chcete-li generovat Visual C# .NET kódu z diagramů tříd UML v sadě Visual S
 
 5. K prvku lze připojit libovolný počet vazeb.  
 
-##  <a name="writing"></a> Vytvoření textové šablony  
+## <a name="writing"></a> Vytvoření textové šablony  
  Lze vytvářet vlastní textové šablony. Textové šablony mohou generovat kód programu nebo jakýkoli jiný typ textového souboru.  
 
  Doporučujeme začít úpravou kopií standardních šablon. Tyto šablony lze zkopírovat z následujících umístění:  

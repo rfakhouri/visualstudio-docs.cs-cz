@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f7d0a13a72613ba72be5a90aa65be991d6ca10b3
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 6dbc2638fa23a1e0c7bf1301c3c978a1ef864c75
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59657035"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074096"
 ---
 # <a name="application-of-settings-across-multiple-project-connections"></a>Aplikace nastavení napříč různými připojeními projektů
 Modul plug-in správy zdrojového kódu vytvořených pomocí verze 1.2 zdrojový ovládací prvek modulu Plug-in API můžete použít dávkové operace ke spuštění stejnou operaci správy zdrojových kódů napříč více projekty nebo více kontexty připojení. Dávky je možné vyloučit redundantní, dialogová okna uživatelským prostředím jednotlivých projektů.
@@ -28,9 +28,9 @@ Modul plug-in správy zdrojového kódu vytvořených pomocí verze 1.2 zdrojov�
 ## <a name="new-functions"></a>Nové funkce
 Následující nové funkce podporují dávkové operace:
 
--   [SccBeginBatch](../../extensibility/sccbeginbatch-function.md)
+- [SccBeginBatch](../../extensibility/sccbeginbatch-function.md)
 
--   [SccEndBatch](../../extensibility/sccendbatch-function.md)
+- [SccEndBatch](../../extensibility/sccendbatch-function.md)
 
 `SCCBeginBatch` Funkce spustí skupinu operací správy zdrojů. `SccEndBatch` Funkce uzavře skupině. Skupiny nemůže být vnořený.
 

@@ -19,12 +19,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e885ffa758f6503c10517c672745a31ef0960fe5
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 2c507bb2ea6fa231b2b3f3d92cebb3ca78bb4eb5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54767328"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071197"
 ---
 # <a name="how-to-create-and-edit-configurations"></a>Postupy: Vytvoření a úprava konfigurací
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ Můžete vytvořit několik konfigurací sestavení řešení. Například můž
   
 #### <a name="to-set-properties-based-on-configurations"></a>Chcete-li nastavit vlastnosti konfigurace  
   
--   V **Průzkumníka řešení**, otevřete místní nabídku pro projekt a klikněte na tlačítko **vlastnosti**.  
+- V **Průzkumníka řešení**, otevřete místní nabídku pro projekt a klikněte na tlačítko **vlastnosti**.  
   
      **Stránky vlastností** otevře se okno.  
   
@@ -59,69 +59,69 @@ Můžete vytvořit několik konfigurací sestavení řešení. Například můž
   
 #### <a name="to-create-a-project-configuration"></a>Pro vytvoření konfigurace projektu  
   
-1.  Otevřít **nástroje Configuration Manager** dialogové okno.  
+1. Otevřít **nástroje Configuration Manager** dialogové okno.  
   
-2.  Vyberte projekt v **projektu** sloupce.  
+2. Vyberte projekt v **projektu** sloupce.  
   
-3.  V **konfigurace** rozevíracího seznamu pro daný projekt, zvolte **nový**.  
+3. V **konfigurace** rozevíracího seznamu pro daný projekt, zvolte **nový**.  
   
      **Nové konfigurace projektu** zobrazí se dialogové okno.  
   
-4.  V **název** pole, zadejte název pro novou konfiguraci.  
+4. V **název** pole, zadejte název pro novou konfiguraci.  
   
-5.  Používané k nastavení vlastností z existující konfigurace projektu, **Kopírovat nastavení z:** rozevíracím seznamu klikněte na položku konfigurace.  
+5. Používané k nastavení vlastností z existující konfigurace projektu, **Kopírovat nastavení z:** rozevíracím seznamu klikněte na položku konfigurace.  
   
-6.  Chcete-li vytvořit konfiguraci celé řešení ve stejnou dobu, vyberte **vytvořit nová konfigurace řešení** zaškrtávací políčko.  
+6. Chcete-li vytvořit konfiguraci celé řešení ve stejnou dobu, vyberte **vytvořit nová konfigurace řešení** zaškrtávací políčko.  
   
 #### <a name="to-rename-a-project-configuration"></a>Chcete-li přejmenovat konfigurace projektu  
   
-1.  Otevřít **nástroje Configuration Manager** dialogové okno.  
+1. Otevřít **nástroje Configuration Manager** dialogové okno.  
   
-2.  V **projektu** sloupce, vyberte projekt, který obsahuje konfiguraci projektu, kterou chcete přejmenovat.  
+2. V **projektu** sloupce, vyberte projekt, který obsahuje konfiguraci projektu, kterou chcete přejmenovat.  
   
-3.  V **konfigurace** rozevíracího seznamu pro daný projekt, zvolte **upravit**.  
+3. V **konfigurace** rozevíracího seznamu pro daný projekt, zvolte **upravit**.  
   
      **Upravit konfigurace projektu** zobrazí se dialogové okno.  
   
-4.  Vyberte název konfigurace projektu, který chcete změnit.  
+4. Vyberte název konfigurace projektu, který chcete změnit.  
   
-5.  Vyberte **přejmenovat**a pak zadejte nový název.  
+5. Vyberte **přejmenovat**a pak zadejte nový název.  
   
 ## <a name="creating-and-modifying-solution-wide-build-configurations"></a>Konfigurace sestavení pro vytváření a úpravy celé řešení  
   
 #### <a name="to-create-a-solution-wide-build-configuration"></a>Chcete-li vytvořit řešení celou konfiguraci sestavení  
   
-1.  Otevřít **nástroje Configuration Manager** dialogové okno.  
+1. Otevřít **nástroje Configuration Manager** dialogové okno.  
   
-2.  V **konfigurace aktivního řešení** rozevíracím seznamu klikněte na položku **nový**.  
+2. V **konfigurace aktivního řešení** rozevíracím seznamu klikněte na položku **nový**.  
   
      **Nová konfigurace řešení** zobrazí se dialogové okno.  
   
-3.  V **název** textové pole, zadejte název pro novou konfiguraci.  
+3. V **název** textové pole, zadejte název pro novou konfiguraci.  
   
-4.  Chcete-li použít nastavení z existující konfigurace řešení, v **Kopírovat nastavení z:** rozevíracím seznamu klikněte na položku konfigurace.  
+4. Chcete-li použít nastavení z existující konfigurace řešení, v **Kopírovat nastavení z:** rozevíracím seznamu klikněte na položku konfigurace.  
   
-5.  Pokud chcete vytvořit konfigurace projektu ve stejnou dobu, vyberte **vytvořit nové konfigurace projektu** zaškrtávací políčko.  
+5. Pokud chcete vytvořit konfigurace projektu ve stejnou dobu, vyberte **vytvořit nové konfigurace projektu** zaškrtávací políčko.  
   
 #### <a name="to-rename-a-solution-wide-build-configuration"></a>Přejmenování řešení celou konfiguraci sestavení  
   
-1.  Otevřít **nástroje Configuration Manager** dialogové okno.  
+1. Otevřít **nástroje Configuration Manager** dialogové okno.  
   
-2.  V **konfigurace aktivního řešení** rozevíracím seznamu klikněte na položku **upravit**.  
+2. V **konfigurace aktivního řešení** rozevíracím seznamu klikněte na položku **upravit**.  
   
      **Upravit konfiguraci řešení** zobrazí se dialogové okno.  
   
-3.  Vyberte název konfigurace řešení, které chcete změnit.  
+3. Vyberte název konfigurace řešení, které chcete změnit.  
   
-4.  Vyberte **přejmenovat**a pak zadejte nový název.  
+4. Vyberte **přejmenovat**a pak zadejte nový název.  
   
 #### <a name="to-modify-a-solution-wide-build-configuration"></a>Chcete-li změnit konfiguraci sestavení celé řešení  
   
-1.  Otevřít **nástroje Configuration Manager** dialogové okno.  
+1. Otevřít **nástroje Configuration Manager** dialogové okno.  
   
-2.  V **konfigurace aktivního řešení** rozevíracího seznamu vyberte konfigurace, kterou chcete.  
+2. V **konfigurace aktivního řešení** rozevíracího seznamu vyberte konfigurace, kterou chcete.  
   
-3.  V **projektu kontexty** podokno pro každý projekt, vyberte **konfigurace** a **platformy** a vyberte, jestli se má **sestavení**ho a zda má být **nasadit** ho.  
+3. V **projektu kontexty** podokno pro každý projekt, vyberte **konfigurace** a **platformy** a vyberte, jestli se má **sestavení**ho a zda má být **nasadit** ho.  
   
 ## <a name="see-also"></a>Viz také  
  [Principy konfigurací sestavení](../ide/understanding-build-configurations.md)   

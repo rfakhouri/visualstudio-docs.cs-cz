@@ -12,12 +12,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a781fc290a9be795cf48cf08c062711376bd6acc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 53b75732c636a551e3a000008d3ddcca2aa686cb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54776038"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60058477"
 ---
 # <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>Postupy: Úprava příkazu standardní nabídky v jazyce specifickém pro doménu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,37 +37,37 @@ Můžete změnit chování některé standardní příkazy, které jsou automati
 > [!NOTE]
 >  Pokud chcete vytvořit vlastní příkazy nabídek, přečtěte si téma [jak: Přidání příkazu do místní nabídky](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).  
   
-##  <a name="what"></a> Jaké příkazy lze upravit?  
+## <a name="what"></a> Jaké příkazy lze upravit?  
   
 #### <a name="to-discover-what-commands-you-can-modify"></a>Pokud chcete zjistit, jaké příkazy, které můžete upravit  
   
-1.  V `DslPackage` projekt, otevřete `GeneratedCode\CommandSet.cs`. Tento soubor jazyka C# najdete v okně Průzkumník řešení jako pobočka `CommandSet.tt`.  
+1. V `DslPackage` projekt, otevřete `GeneratedCode\CommandSet.cs`. Tento soubor jazyka C# najdete v okně Průzkumník řešení jako pobočka `CommandSet.tt`.  
   
-2.  Hledání třídy v tomto souboru, jejichž názvy končí "`CommandSet`", například `Language1CommandSet` a `Language1ClipboardCommandSet`.  
+2. Hledání třídy v tomto souboru, jejichž názvy končí "`CommandSet`", například `Language1CommandSet` a `Language1ClipboardCommandSet`.  
   
-3.  Každá třída set příkazu, zadejte "`override`" následované mezerou. Technologie IntelliSense zobrazí seznam metod, které můžete přepsat. Každý příkaz nemá dvojici metod, jejichž názvy začínají "`ProcessOnStatus`"a"`ProcessOnMenu`".  
+3. Každá třída set příkazu, zadejte "`override`" následované mezerou. Technologie IntelliSense zobrazí seznam metod, které můžete přepsat. Každý příkaz nemá dvojici metod, jejichž názvy začínají "`ProcessOnStatus`"a"`ProcessOnMenu`".  
   
-4.  Poznačte si příkazu nastavit třídy obsahuje příkaz, který chcete upravit.  
+4. Poznačte si příkazu nastavit třídy obsahuje příkaz, který chcete upravit.  
   
-5.  Zavřete soubor bez uložení úprav.  
+5. Zavřete soubor bez uložení úprav.  
   
     > [!NOTE]
     >  Obvykle byste neměli upravovat soubory, které byly vytvořeny. Veškeré úpravy budou ztraceny při příštím tyto soubory jsou vygenerovány.  
   
-##  <a name="extend"></a> Rozšíření příslušný příkaz set – třída  
+## <a name="extend"></a> Rozšíření příslušný příkaz set – třída  
  Vytvořte nový soubor, který obsahuje částečné deklarace třídy příkazu set.  
   
 #### <a name="to-extend-the-command-set-class"></a>K rozšíření příkazu Set – třída  
   
-1.  V Průzkumníku řešení v projektu DslPackage otevřete složku GeneratedCode a podívejte se do části CommandSet.tt a otevřete její vygenerovaný soubor CommandSet.cs. Poznámka: obor názvů a název první třídy, která je definována existuje. Například může se zobrazit:  
+1. V Průzkumníku řešení v projektu DslPackage otevřete složku GeneratedCode a podívejte se do části CommandSet.tt a otevřete její vygenerovaný soubor CommandSet.cs. Poznámka: obor názvů a název první třídy, která je definována existuje. Například může se zobrazit:  
   
      `namespace Company.Language1`  
   
      `{ ...  internal partial class Language1CommandSet : ...`  
   
-2.  V **DslPackage**, vytvořte složku s názvem **vlastní kód**. V této složce, vytvořte nový soubor třídy `CommandSet.cs`.  
+2. V **DslPackage**, vytvořte složku s názvem **vlastní kód**. V této složce, vytvořte nový soubor třídy `CommandSet.cs`.  
   
-3.  V novém souboru zápisu částečná deklarace, který má stejný obor názvů a název jako vygenerovanou dílčí třídu. Příklad:  
+3. V novém souboru zápisu částečná deklarace, který má stejný obor názvů a název jako vygenerovanou dílčí třídu. Příklad:  
   
     ```  
     using System;  
@@ -79,7 +79,7 @@ Můžete změnit chování některé standardní příkazy, které jsou automati
   
      **Poznámka:** Pokud jste použili k vytvoření nového souboru. soubor šablony třídy, je nutné opravit obor názvů a název třídy.  
   
-##  <a name="override"></a> Přepište metody příkaz  
+## <a name="override"></a> Přepište metody příkaz  
  Většina příkazů mít přidružené dvě metody: Metodu s názvem, jako jsou `ProcessOnStatus`... Určuje, zda má být příkaz viditelný a povolený. Je volána, když uživatel klepne pravým tlačítkem myši diagram a by měl rychle spustit a neprovádějte žádné změny. `ProcessOnMenu`... se volá, když uživatel klepne na příkaz a by měl provádět funkce příkazu. Můžete chtít přepsat jeden nebo oba z těchto metod.  
   
 ### <a name="to-change-when-the-command-appears-on-a-menu"></a>Chcete-li změnit při příkazu se zobrazí v nabídce  

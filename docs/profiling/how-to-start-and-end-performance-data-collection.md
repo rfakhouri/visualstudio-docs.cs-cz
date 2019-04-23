@@ -15,27 +15,27 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 798ae2e577d56abbe4cd2619ea40c7fc729d2406
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: c570145c2a8eae887de691c2507683dddb93b2cf
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56622537"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079393"
 ---
 # <a name="how-to-start-and-end-performance-data-collection"></a>Postupy: Zahájení a ukončení shromažďování dat o výkonu
 Je nutné přidat cílový binární soubor, který chcete Profilovat, do relace výkonu, před zahájením profilování. Chcete-li přidat cíl, klikněte pravým tlačítkem na **cíle** v **prohlížeč výkonu**a potom klikněte na tlačítko **přidat cílový binární**. V **přidat cílový binární** dialogové okno, vyberte název souboru a pak klikněte na tlačítko **otevřít**. Přidání nové binární soubor.
 
 ### <a name="to-start-profiling"></a>Chcete-li spustit profilování
 
-1.  Klikněte pravým tlačítkem na název relace výkonu na **prohlížeč výkonu** okno a zvolte jednu z následujících možností:
+1. Klikněte pravým tlačítkem na název relace výkonu na **prohlížeč výkonu** okno a zvolte jednu z následujících možností:
 
-    -   **Spustit s nástrojem pro profilaci** – aplikaci spustí a začne okamžitě profilace.
+    - **Spustit s nástrojem pro profilaci** – aplikaci spustí a začne okamžitě profilace.
 
-    -   **Spustit s Pozastaveným** – spustí aplikaci, která ale není spuštění profilování. Můžete spustit profilování tak, že vyberete **opět spustit shromažďování** v **ovládacího prvku sběru dat** okna. Další informace najdete v tématu [jak: Pozastavit a obnovit shromažďování údajů o výkonu](../profiling/how-to-pause-and-resume-performance-data-collection.md).
+    - **Spustit s Pozastaveným** – spustí aplikaci, která ale není spuštění profilování. Můžete spustit profilování tak, že vyberete **opět spustit shromažďování** v **ovládacího prvku sběru dat** okna. Další informace najdete v tématu [jak: Pozastavit a obnovit shromažďování údajů o výkonu](../profiling/how-to-pause-and-resume-performance-data-collection.md).
 
 ### <a name="to-end-profiling"></a>Do konce profilace
 
--   Preferovanou metodu ukončení relace profilování se ukončíte aplikaci. Okamžitě zastavit profilaci na **prohlížeč výkonu** nástrojů, klikněte na tlačítko **Zastavit**.
+- Preferovanou metodu ukončení relace profilování se ukončíte aplikaci. Okamžitě zastavit profilaci na **prohlížeč výkonu** nástrojů, klikněte na tlačítko **Zastavit**.
 
 ## <a name="see-also"></a>Viz také:
 - [Řízení shromažďování dat](../profiling/controlling-data-collection.md)

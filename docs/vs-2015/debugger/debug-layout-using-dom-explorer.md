@@ -18,12 +18,12 @@ caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cb6de5edcd94b0391c090b0f68658258134375aa
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2e9292464ee117cf79a249c1c1a0636edb931c1d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54763912"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063229"
 ---
 # <a name="debug-layout-using-dom-explorer"></a>Ladění rozložení pomocí průzkumníka modelu DOM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,11 +42,11 @@ Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "wi
   
 #### <a name="to-fix-the-layout-issue"></a>Chcete-li vyřešit tento problém rozložení  
   
-1.  V sadě Visual Studio vytvořte novou aplikaci Store, který používá šablonu projektu centra/Pivot.  
+1. V sadě Visual Studio vytvořte novou aplikaci Store, který používá šablonu projektu centra/Pivot.  
   
-2.  Ve složce sdílené pages\hub otevřete hub.css.  
+2. Ve složce sdílené pages\hub otevřete hub.css.  
   
-3.  Nahraďte následující kód šablony stylů CSS:  
+3. Nahraďte následující kód šablony stylů CSS:  
   
     ```css  
     .hubpage .hub .section4 .sub-image-row img {  
@@ -65,22 +65,22 @@ Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "wi
     }  
     ```  
   
-4.  V Průzkumníku řešení vyberte projekt appName.WindowsPhone nebo appName.Windows projektu a klikněte na tlačítko **nastavit jako spouštěný projekt** z místní nabídky pro projekt.  
+4. V Průzkumníku řešení vyberte projekt appName.WindowsPhone nebo appName.Windows projektu a klikněte na tlačítko **nastavit jako spouštěný projekt** z místní nabídky pro projekt.  
   
-5.  V závislosti na spouštěný projekt, zvolte buď **palec Emulator 8.1 WVGA 4, 512 MB** nebo **simulátor** v rozevíracím seznamu na panelu nástrojů ladění (**místního počítače** je výchozí nastavení hodnota).  
+5. V závislosti na spouštěný projekt, zvolte buď **palec Emulator 8.1 WVGA 4, 512 MB** nebo **simulátor** v rozevíracím seznamu na panelu nástrojů ladění (**místního počítače** je výchozí nastavení hodnota).  
   
      ![Výběr cíle ladění](../debugger/media/js-dom-debug-target-emu.png "JS_DOM_Debug_Target_Emu")  
   
-6.  Stisknutím klávesy F5 spusťte aplikaci v režimu ladění.  
+6. Stisknutím klávesy F5 spusťte aplikaci v režimu ladění.  
   
-7.  Otevřete část 4 posouvání nebo flicking.  
+7. Otevřete část 4 posouvání nebo flicking.  
   
     > [!TIP]
     >  Pozice Phone emulátor ani simulátor vpravo vedle okna sady Visual Studio, protože okamžitě uvidíte výsledky výběru a změny stylů CSS.  
   
      Když se načte 4 části, naleznete v tématu nižší imagí nevypadají správně. Vyjmutí na polovinu (s levé poloviční chybějící) se zobrazí každý obrázek položky.  
   
-8.  Přepněte do aplikace Visual Studio a zvolte **vybrat Element** v Průzkumníku modelu DOM (nebo stiskněte kombinaci kláves Ctrl + B). Změní se režim výběru, takže budete moci kliknutím vybrat položku a aplikace se zobrazí v popředí. Po kliknutí se režim přepne zpět.  
+8. Přepněte do aplikace Visual Studio a zvolte **vybrat Element** v Průzkumníku modelu DOM (nebo stiskněte kombinaci kláves Ctrl + B). Změní se režim výběru, takže budete moci kliknutím vybrat položku a aplikace se zobrazí v popředí. Po kliknutí se režim přepne zpět.  
   
     > [!TIP]
     >  Vybrat elementy HTML přímo v Průzkumníku modelu DOM můžete také použít klávesy se šipkami nebo jiné metody. Další informace o výběru elementů naleznete v tématu [rychlý start: Ladění kódu HTML a CSS](../debugger/quickstart-debug-html-and-css.md).  
@@ -105,11 +105,11 @@ Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "wi
   
      Toto zobrazení obsahuje některé užitečné informace o elementu:  
   
-    -   Barvy odpovídají pole zvýraznění, který se zobrazí v simulátoru, když ukazatel myši přesunout prvky. Představuje modrou barvu \<img > elementu dimenze. Tan barva představuje hodnoty vlastnosti okraj.  
+    - Barvy odpovídají pole zvýraznění, který se zobrazí v simulátoru, když ukazatel myši přesunout prvky. Představuje modrou barvu \<img > elementu dimenze. Tan barva představuje hodnoty vlastnosti okraj.  
   
-    -   Je nastavena na levý okraj (levého okraje), který pomocné parametry na příčinu problému protože odpovídá příznaku (černá na levé straně imagí).  
+    - Je nastavena na levý okraj (levého okraje), který pomocné parametry na příčinu problému protože odpovídá příznaku (černá na levé straně imagí).  
   
-    -   Pole, která zobrazí hodnoty 0 pixelů (například okraje a odsazení) naznačují, že odpovídající vlastnosti šablon stylů CSS, pravděpodobně není nastavené.  
+    - Pole, která zobrazí hodnoty 0 pixelů (například okraje a odsazení) naznačují, že odpovídající vlastnosti šablon stylů CSS, pravděpodobně není nastavené.  
   
 11. Pokud chcete zjistit, jak je okraj doleva pravidlo použito, zvolte **vypočítané** kartu a podívejte se do části pravidlo okraj doleva. Uvidíte, že toto pravidlo se nastaví pomocí 5em hodnotu, ale je vypočítaná hodnota 66.66px nebo 146.66px, v závislosti na cílové zařízení.  
   

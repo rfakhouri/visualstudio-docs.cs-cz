@@ -11,12 +11,12 @@ ms.assetid: 42907bcf-4e27-46bd-a8cb-01c2ccd2bde5
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 9627170ad65906af1bc7930897c374504cae4552
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: abbcc1fc1048866ef790a4b6779ed15ef80a9be1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58152568"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074239"
 ---
 # <a name="project-persistence"></a>Trvalost projektu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -27,9 +27,9 @@ Trvalost se v úvahu důležité pro váš projekt. Většina projektů pomocí 
   
  Položky projektu může být založené na souboru nebo jiné file-based:  
   
--   Souborové položky může být místní nebo vzdálené. Ve webové projekty v jazyce C# například připojení k souborům ve vzdáleném systému zachovat místně, zatímco podotknout zachovat ve vzdáleném systému.  
+- Souborové položky může být místní nebo vzdálené. Ve webové projekty v jazyce C# například připojení k souborům ve vzdáleném systému zachovat místně, zatímco podotknout zachovat ve vzdáleném systému.  
   
--   Non-file-based položky uložit položky databáze nebo úložiště.  
+- Non-file-based položky uložit položky databáze nebo úložiště.  
   
 ## <a name="commit-models"></a>Potvrdit modelů  
  Po rozhodnutí, kde jsou umístěné položky projektu, je nutné zvolit model příslušné potvrzení. Například v modelu na základě souboru s místními soubory, každý může být projekt uložen samostatně. V modelu úložiště můžete uložit několik položek v rámci jedné transakce. Další informace najdete v tématu [rozhodnutí o návrhu typu projektu](../../extensibility/internals/project-type-design-decisions.md).  

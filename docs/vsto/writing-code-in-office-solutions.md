@@ -33,12 +33,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1e47e8bea173298761e2a5170382ef2c4b32c6c5
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 2c5163de342415113321b6bd2337cd75ff528f6c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54864069"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076887"
 ---
 # <a name="write-code-in-office-solutions"></a>Psaní kódu v řešeních pro systém Office
   Existují některé aspekty psaní kódu v projektech Office, které se liší od ostatních typů projektů v sadě Visual Studio. Mnohé z těchto rozdílů jsou týkající se způsobu, jakým Office – objektové modely jsou přístupné pro spravovaný kód. Další rozdíly v návrhu projektů Office souvisejí.
@@ -63,9 +63,9 @@ ms.locfileid: "54864069"
 
  Vzhledem k tomu, že typy v sestavení PIA sady Office odpovídají typům v modelech objektů založené na modelu COM, je často způsob, jak používat tyto typy liší od jiné spravované typy. Způsob volání metody, které mají volitelné parametry v sestavení primární spolupráce Office, například závisí na programovací jazyk, který používáte ve vašem projektu. Další informace naleznete v následujících tématech:
 
--   [Volitelné parametry v řešeních pro systém Office](../vsto/optional-parameters-in-office-solutions.md).
+- [Volitelné parametry v řešeních pro systém Office](../vsto/optional-parameters-in-office-solutions.md).
 
--   [Pozdní vazba v řešeních pro systém Office](../vsto/late-binding-in-office-solutions.md).
+- [Pozdní vazba v řešeních pro systém Office](../vsto/late-binding-in-office-solutions.md).
 
 ## <a name="program-model-of-office-projects"></a>Model program projektů Office
  Všechny projekty Office zahrnují jeden nebo více generované třídy, které poskytují vstupní bod pro kód. Tyto třídy také poskytují přístup k objektovému modelu hostitelské aplikace a přístup k funkcím, jako jsou podokna akcí a vlastních podoken úloh.
@@ -99,8 +99,11 @@ ms.locfileid: "54864069"
 ## <a name="program-with-visual-basic-vs-visual-c-in-office-solutions"></a>Program s vs jazyka Visual Basic. Visual C# v řešeních pro systém Office
  Řešení pro Office můžete vytvořit pomocí jazyka Visual Basic nebo Visual C#. Vzhledem k tomu, Microsoft Office – objektové modely byly navrženy pro použití s Microsoft Visual Basic for Applications (VBA), vývojáře jazyka Visual Basic můžete pohodlně pracovat s objekty vystavené aplikace Microsoft Office. Visual C# mohou vývojáři většinu stejné funkce jako vývojáři v jazyce Visual Basic, ale existují případy, kdy musíte napsat další kód, který použijete Office – objektové modely. Existují také některé rozdíly mezi základní funkce programování v vývoj pro Office a spravovaný kód napsaný v jazyce Visual Basic a C#.
 
+<!-- markdownlint-disable MD003 MD020 -->
 ## <a name="key-differences-between-visual-basic-and-visual-c"></a>Hlavní rozdíly mezi Visual Basic a Visual C#
- Následující tabulka uvádí hlavní rozdíly mezi Visual Basic a Visual C# v vývoj pro Office.
+<!-- markdownlint-enable MD003 MD020 -->
+
+Následující tabulka uvádí hlavní rozdíly mezi Visual Basic a Visual C# v vývoj pro Office.
 
 |Funkce|Popis|Podpora jazyka Visual Basic|Podpora Visual C#|
 |-------------|-----------------|--------------------------|------------------------|

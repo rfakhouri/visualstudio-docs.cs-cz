@@ -12,12 +12,12 @@ ms.assetid: 09a18bd2-b788-411a-9da6-067d806e46f6
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: baaa2691783562240b5e465c98aab43e6f8cd1e9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3f8317405c52850eceb816b958718835c029c6c4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54763792"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068298"
 ---
 # <a name="sccget-function"></a>SccGet – funkce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -86,21 +86,21 @@ SCCRTN SccGet(
   
  Existují dva způsoby, jak vyřešit tuto situaci, kde bude synchronizován s databázi správy zdrojových kódů místní mezipaměť verze ovládacího prvku zdroje:  
   
-1.  Nepovolit přejmenování souboru v databázi správy zdrojových kódů, která je právě rezervována.  
+1. Nepovolit přejmenování souboru v databázi správy zdrojových kódů, která je právě rezervována.  
   
-2.  To ekvivalent "odstranit staré" následované "Přidat nový". Následující požadovaný algoritmus je jedním ze způsobů jak toho dosáhnout.  
+2. To ekvivalent "odstranit staré" následované "Přidat nový". Následující požadovaný algoritmus je jedním ze způsobů jak toho dosáhnout.  
   
-    1.  Volání [sccquerychanges –](../extensibility/sccquerychanges-function.md) funkce, která se další informace o přejmenování a.txt k b.txt v databázi správy zdrojových kódů.  
+    1. Volání [sccquerychanges –](../extensibility/sccquerychanges-function.md) funkce, která se další informace o přejmenování a.txt k b.txt v databázi správy zdrojových kódů.  
   
-    2.  Přejmenujte místní a.txt b.txt.  
+    2. Přejmenujte místní a.txt b.txt.  
   
-    3.  Volání `SccGet` funkce pro a.txt a b.txt.  
+    3. Volání `SccGet` funkce pro a.txt a b.txt.  
   
-    4.  Protože a.txt neexistuje v databázi správy zdrojových kódů, místní verze mezipaměti se vyprazdňují chybějící a.txt informace o verzi.  
+    4. Protože a.txt neexistuje v databázi správy zdrojových kódů, místní verze mezipaměti se vyprazdňují chybějící a.txt informace o verzi.  
   
-    5.  Rezervuje soubor b.txt je sloučen s obsah souboru místní b.txt.  
+    5. Rezervuje soubor b.txt je sloučen s obsah souboru místní b.txt.  
   
-    6.  Aktualizované b.txt souboru můžete teď být vráceny se změnami.  
+    6. Aktualizované b.txt souboru můžete teď být vráceny se změnami.  
   
 ## <a name="see-also"></a>Viz také  
  [Funkce rozhraní API modulu Plug-in zdroje ovládacího prvku](../extensibility/source-control-plug-in-api-functions.md)   

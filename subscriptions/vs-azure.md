@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Zjistěte, jak aktivovat výhody služeb Azure součástí vašeho předplatného sady Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: 31dead0299c3af1b22813c2fe41cde728c6bb0b4
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 2c78f4d88cf42197691fa798af115c16227bd2a1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59648378"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066166"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Použití Microsoft Azure v předplatných sady Visual Studio
 
@@ -91,8 +91,8 @@ Chcete-li pokračovat v používání vašich slevy a kredit sady Visual Studio 
 Pokud někdo ve vašem týmu nebo organizaci kupuje předplatná ve vašem zastoupení, obraťte se na správce sady Visual Studio ve vaší organizaci a požádat o předplatné sady Visual Studio, která vás opravňuje k použití Azure měsíčního kreditu, které potřebujete.   Požádejte správce o přiřazení nové předplatné do stejného ID uživatele, která byla přiřazena předchozí předplatné, abyste nemuseli se starat o přenos předplatného Azure.
 
 Pokud předplatné si můžete koupit přímo, proveďte jednu z následujících akcí:
-1.  Zakoupit roční sadu Visual Studio [Enterprise](https://marketplace.visualstudio.com/items?itemName=ms.vs-enterprise-annual) nebo [Professional](https://marketplace.visualstudio.com/items?itemName=ms.vs-professional-annual) cloudové předplatné Visual Studio Marketplace.
-2.  Využijte výhod 50 % nebo vyšší slevy obnovením vašeho aktuálního předplatného prostřednictvím [Microsoft Store](https://www.microsoft.com/en-us/search/result.aspx?q=visual+studio+subscription).
+1. Zakoupit roční sadu Visual Studio [Enterprise](https://marketplace.visualstudio.com/items?itemName=ms.vs-enterprise-annual) nebo [Professional](https://marketplace.visualstudio.com/items?itemName=ms.vs-professional-annual) cloudové předplatné Visual Studio Marketplace.
+2. Využijte výhod 50 % nebo vyšší slevy obnovením vašeho aktuálního předplatného prostřednictvím [Microsoft Store](https://www.microsoft.com/en-us/search/result.aspx?q=visual+studio+subscription).
 
 Porovnat všechny [předplatná a jejich výhody](https://visualstudio.microsoft.com/vs/pricing/).
 
@@ -108,8 +108,8 @@ Pokud si myslíte, že tento e-mail jste dostali omylem, obraťte se prosím [Az
 
 ## <a name="support-resources"></a>Informační zdroje podpory
 
--  Potřebujete pomoc s Azure?  Projděte si tyto prostředky:
+- Potřebujete pomoc s Azure?  Projděte si tyto prostředky:
     - Technické podpory: [https://azure.microsoft.com/support/options/](https://azure.microsoft.com/support/options/)
     - [Dokumentace ke službě Azure](/azure/)
--  Potřebujete pomoc se prodeje, předplatnými, účty a fakturací pro předplatná sady Visual Studio, obraťte se na Visual Studio [podpora předplatných](https://visualstudio.microsoft.com/subscriptions/support/).
--  Máte dotaz k Visual Studio IDE, DevOps služby Azure nebo jiných produktů Visual Studio nebo služeb?  Navštivte [Visual Studio – podpora](https://visualstudio.microsoft.com/support/).
+- Potřebujete pomoc se prodeje, předplatnými, účty a fakturací pro předplatná sady Visual Studio, obraťte se na Visual Studio [podpora předplatných](https://visualstudio.microsoft.com/subscriptions/support/).
+- Máte dotaz k Visual Studio IDE, DevOps služby Azure nebo jiných produktů Visual Studio nebo služeb?  Navštivte [Visual Studio – podpora](https://visualstudio.microsoft.com/support/).

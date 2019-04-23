@@ -21,12 +21,12 @@ caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c7506b2a5ffe2f73fb5e2189a5a6dcdeb7eef86b
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 2324fa4e3bd10d6ed828cfe6b220f585b30bc475
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59667531"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071886"
 ---
 # <a name="resolveassemblyreference-task"></a>ResolveAssemblyReference – úloha
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -83,25 +83,25 @@ Určuje všechna sestavení, které jsou závislé na zadaná sestavení. Jedná
 ## <a name="warnings"></a>Upozornění  
  Jsou zaznamenány následující upozornění:  
 
--   `ResolveAssemblyReference.TurnOnAutoGenerateBindingRedirects`  
+- `ResolveAssemblyReference.TurnOnAutoGenerateBindingRedirects`  
 
--   `ResolveAssemblyReference.SuggestedRedirects`  
+- `ResolveAssemblyReference.SuggestedRedirects`  
 
--   `ResolveAssemblyReference.FoundConflicts`  
+- `ResolveAssemblyReference.FoundConflicts`  
 
--   `ResolveAssemblyReference.AssemblyFoldersExSearchLocations`  
+- `ResolveAssemblyReference.AssemblyFoldersExSearchLocations`  
 
--   `ResolveAssemblyReference.UnifiedPrimaryReference`  
+- `ResolveAssemblyReference.UnifiedPrimaryReference`  
 
--   `ResolveAssemblyReference.PrimaryReference`  
+- `ResolveAssemblyReference.PrimaryReference`  
 
--   `ResolveAssemblyReference.UnifiedDependency`  
+- `ResolveAssemblyReference.UnifiedDependency`  
 
--   `ResolveAssemblyReference.UnificationByAutoUnify`  
+- `ResolveAssemblyReference.UnificationByAutoUnify`  
 
--   `ResolveAssemblyReference.UnificationByAppConfig`  
+- `ResolveAssemblyReference.UnificationByAppConfig`  
 
--   `ResolveAssemblyReference.UnificationByFrameworkRetarget`  
+- `ResolveAssemblyReference.UnificationByFrameworkRetarget`  
 
 ## <a name="remarks"></a>Poznámky  
  Kromě výše uvedených parametrů zdědí tento úkol parametry ze <xref:Microsoft.Build.Tasks.TaskExtension> třída, která sama dědí z <xref:Microsoft.Build.Utilities.Task> třídy. Seznam těchto dalších parametrů a jejich popisy najdete v tématu [taskextension – základní třída](../msbuild/taskextension-base-class.md).  

@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0c3a14a254eb3b07a95687faaf377664dd6f747a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1f5b12dce533aa03cf12efd8a6f9fc26ce990e5d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54780880"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073823"
 ---
 # <a name="sharing-classes-between-dsls-by-using-a-dsl-library"></a>Sdílení tříd mezi DSL pomocí knihovny DSL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,11 +25,11 @@ V [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Visualization and Modeling SDK, m
   
 #### <a name="to-create-a-dsl-library"></a>Chcete-li vytvořit knihovny DSL  
   
-1.  Vytvoření nového projektu DSL a výběr šablony řešení knihovny DSL.  
+1. Vytvoření nového projektu DSL a výběr šablony řešení knihovny DSL.  
   
      Jednoho projektu DSL se vytvoří s prázdnou modelu.  
   
-2.  Přidáte doménovými třídami, relace, tvary a tak dále.  
+2. Přidáte doménovými třídami, relace, tvary a tak dále.  
   
      Není potřeba tvoří jeden strom vkládání prvků do knihovny.  
   
@@ -37,15 +37,15 @@ V [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Visualization and Modeling SDK, m
   
      Zvažte nastavení **modifikátor dědičnosti** doménové třídy k `Abstract`.  
   
-3.  Můžete přidat prvky, které definujete v Průzkumník DSL, jako je například tvůrci připojení.  
+3. Můžete přidat prvky, které definujete v Průzkumník DSL, jako je například tvůrci připojení.  
   
-4.  Můžete přidat vlastní nastavení, které vyžadují další kód, jako je například omezení ověření.  
+4. Můžete přidat vlastní nastavení, které vyžadují další kód, jako je například omezení ověření.  
   
-5.  Klikněte na tlačítko **Transformovat všechny šablony**.  
+5. Klikněte na tlačítko **Transformovat všechny šablony**.  
   
-6.  Sestavte projekt.  
+6. Sestavte projekt.  
   
-7.  Když distribuujete DSL pro používání jiným lidem, je nutné zadat zkompilovaného sestavení (knihovny DLL) a soubor `DslDefinition.dsl`. Můžete najít kompilované sestavení v rámci `Dsl\bin\*`  
+7. Když distribuujete DSL pro používání jiným lidem, je nutné zadat zkompilovaného sestavení (knihovny DLL) a soubor `DslDefinition.dsl`. Můžete najít kompilované sestavení v rámci `Dsl\bin\*`  
   
 #### <a name="to-import-a-dsl-library"></a>Postup importování knihovny DSL  
   

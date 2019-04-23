@@ -12,12 +12,12 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0be2860408634d78b8d25403de99e7fcb410422c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 449e273659df1e3b6846ff8e7e3d8d6943ba69f4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54796804"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079821"
 ---
 # <a name="add-commands-and-gestures-to-layer-diagrams"></a>Přidávání příkazů a gest do diagramů vrstev
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,30 +62,30 @@ Můžete definovat příkazy kontextové nabídky a obslužné rutiny gesta v di
   
 #### <a name="to-add-layer-extensions-to-a-separate-vsix"></a>Přidání rozšíření vrstvy do samostatného souboru VSIX  
   
-1.  Vytvořte projekt knihovny tříd v nové nebo existující řešení sady Visual Studio. V **nový projekt** dialogové okno, klikněte na tlačítko **Visual C#** a potom klikněte na tlačítko **knihovny tříd**. Tento projekt bude obsahovat příkaz nebo třídy obslužné rutiny gesta.  
+1. Vytvořte projekt knihovny tříd v nové nebo existující řešení sady Visual Studio. V **nový projekt** dialogové okno, klikněte na tlačítko **Visual C#** a potom klikněte na tlačítko **knihovny tříd**. Tento projekt bude obsahovat příkaz nebo třídy obslužné rutiny gesta.  
   
     > [!NOTE]
     >  Můžete definovat více než jednu třídu obslužné rutiny příkazu nebo gesta v jedné knihovně tříd, ale měli byste definovat třídy ověřování vrstvy v samostatné knihovně tříd.  
   
-2.  Určete nebo vytvořte VSIX projekt ve vašem řešení. Projekt VSIX obsahuje soubor s názvem **source.extension.vsixmanifest**. Přidání projektu VSIX:  
+2. Určete nebo vytvořte VSIX projekt ve vašem řešení. Projekt VSIX obsahuje soubor s názvem **source.extension.vsixmanifest**. Přidání projektu VSIX:  
   
-    1.  V **nový projekt** dialogového okna rozbalte **Visual C#**, klikněte na **rozšiřitelnost**a potom klikněte na tlačítko **projekt VSIX**.  
+    1. V **nový projekt** dialogového okna rozbalte **Visual C#**, klikněte na **rozšiřitelnost**a potom klikněte na tlačítko **projekt VSIX**.  
   
-    2.  V Průzkumníku řešení klikněte pravým tlačítkem na projekt VSIX a potom klikněte na tlačítko **nastavit jako spouštěný projekt**.  
+    2. V Průzkumníku řešení klikněte pravým tlačítkem na projekt VSIX a potom klikněte na tlačítko **nastavit jako spouštěný projekt**.  
   
-    3.  Klikněte na tlačítko **vybrat vydání** a ujistěte se, že **sady Visual Studio** je zaškrtnuté políčko.  
+    3. Klikněte na tlačítko **vybrat vydání** a ujistěte se, že **sady Visual Studio** je zaškrtnuté políčko.  
   
-3.  V **source.extension.vsixmanifest**v části **prostředky**, přidání příkazu nebo gesta projektu obslužné rutiny jako komponentu MEF.  
+3. V **source.extension.vsixmanifest**v části **prostředky**, přidání příkazu nebo gesta projektu obslužné rutiny jako komponentu MEF.  
   
-    1.  V **prostředky**TAB, zvolte **nový**.  
+    1. V **prostředky**TAB, zvolte **nový**.  
   
-    2.  Na **typ**vyberte **Microsoft.VisualStudio.MefComponent**.  
+    2. Na **typ**vyberte **Microsoft.VisualStudio.MefComponent**.  
   
-    3.  Na **zdroj**vyberte **projekt v aktuálním řešení** a vyberte název projektu obslužné rutiny příkazu nebo gesta.  
+    3. Na **zdroj**vyberte **projekt v aktuálním řešení** a vyberte název projektu obslužné rutiny příkazu nebo gesta.  
   
-    4.  Uložte soubor.  
+    4. Uložte soubor.  
   
-4.  Vraťte se do projektu obslužné rutiny příkazu nebo gesta a přidejte následující odkazy projektu.  
+4. Vraťte se do projektu obslužné rutiny příkazu nebo gesta a přidejte následující odkazy projektu.  
   
 |**Referenční informace**|**To umožňuje provést**|  
 |-------------------|------------------------------------|  
@@ -96,7 +96,7 @@ Můžete definovat příkazy kontextové nabídky a obslužné rutiny gesta v di
 |Microsoft.VisualStudio.Modeling.Sdk.[version]|Definovat rozšíření modelování|  
 |Microsoft.VisualStudio.Modeling.Sdk.Diagrams.[version]|Aktualizovat tvary a diagramy|  
   
-1.  Upravte soubor třídy v jazyce C# projekt knihovny tříd obsahující kód pro rozšíření. Další informace naleznete v následující části:  
+1. Upravte soubor třídy v jazyce C# projekt knihovny tříd obsahující kód pro rozšíření. Další informace naleznete v následující části:  
   
      [Definování příkazu nabídky](#command)  
   
@@ -104,13 +104,13 @@ Můžete definovat příkazy kontextové nabídky a obslužné rutiny gesta v di
   
      Viz také [navigace a aktualizace modelů v programovém kódu vrstvy](../modeling/navigate-and-update-layer-models-in-program-code.md).  
   
-2.  Chcete-li otestovat funkci, stiskněte kombinaci kláves CTRL + F5 nebo F5. Experimentální instanci [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] otevře. V takovém případě vytvořte nebo otevřete diagram vrstvy.  
+2. Chcete-li otestovat funkci, stiskněte kombinaci kláves CTRL + F5 nebo F5. Experimentální instanci [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] otevře. V takovém případě vytvořte nebo otevřete diagram vrstvy.  
   
-3.  Chcete-li nainstalovat VSIX v instanci hlavní aplikace [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], nebo v jiném počítači, vyhledejte **VSIX** ve **bin** adresáře projektu VSIX. Zkopírujte ho do počítače, ve které chcete nainstalovat VSIX. Poklikejte na soubor VSIX v aplikaci Windows Explorer (Průzkumník souborů v systému Windows 8).  
+3. Chcete-li nainstalovat VSIX v instanci hlavní aplikace [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], nebo v jiném počítači, vyhledejte **VSIX** ve **bin** adresáře projektu VSIX. Zkopírujte ho do počítače, ve které chcete nainstalovat VSIX. Poklikejte na soubor VSIX v aplikaci Windows Explorer (Průzkumník souborů v systému Windows 8).  
   
      Chcete-li ho odinstalovat, použijte **rozšíření a aktualizace** na **nástroje** nabídky.  
   
-##  <a name="command"></a> Definování příkazu nabídky  
+## <a name="command"></a> Definování příkazu nabídky  
  K existujícímu gestu nebo projektu příkazu můžete přidat další definice příkazu nabídky. Každý příkaz je definován třídou, která má následující vlastnosti:  
   
 - Třída je deklarována následovně:  
@@ -125,11 +125,11 @@ Můžete definovat příkazy kontextové nabídky a obslužné rutiny gesta v di
   
 - Metody, které implementují `ICommandExtension` jsou následující:  
   
-  -   `string Text {get;}` – Popisek, který se zobrazí v nabídce.  
+  - `string Text {get;}` – Popisek, který se zobrazí v nabídce.  
   
-  -   `void QueryStatus(IMenuCommand command)` – volána, když uživatel klepne pravým tlačítkem myši v diagramu a určuje, zda má být příkaz viditelný a povolený pro aktuální výběr uživatele.  
+  - `void QueryStatus(IMenuCommand command)` – volána, když uživatel klepne pravým tlačítkem myši v diagramu a určuje, zda má být příkaz viditelný a povolený pro aktuální výběr uživatele.  
   
-  -   `void Execute(IMenuCommand command)` – volána, když uživatel vybere příkaz.  
+  - `void Execute(IMenuCommand command)` – volána, když uživatel vybere příkaz.  
   
 - Chcete-li zjistit aktuální výběr, můžete importovat `IDiagramContext`:  
   
@@ -215,7 +215,7 @@ namespace MyLayerExtension // Change to your preference.
 }  
 ```  
   
-##  <a name="gesture"></a> Definování obslužné rutiny gesta  
+## <a name="gesture"></a> Definování obslužné rutiny gesta  
  Obslužná rutina gesta reaguje, když uživatel přetáhne položky do diagramu vrstev, a když uživatel poklepe kdekoli v diagramu.  
   
  Do vašeho existujícího příkazu nebo projektu VSIX obslužné rutiny gesta můžete přidat soubor kódu, který definuje obslužnou rutinu gesta:  

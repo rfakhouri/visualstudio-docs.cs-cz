@@ -14,37 +14,37 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 589e6f5fd102cdd2a69bc63bf623142c14337678
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 0e0483f535dfd7a483d2b83728f78fa9c7167bcb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56639229"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061434"
 ---
 # <a name="how-to-define-a-sharepoint-project-item-type"></a>Postupy: Definování typu položky projektu SharePoint
   Definování typu položky projektu, pokud chcete vytvořit vlastní položky projektu služby SharePoint. Další informace najdete v tématu [definování vlastních typů položek projektu služby SharePoint](../sharepoint/defining-custom-sharepoint-project-item-types.md).
 
 ### <a name="to-define-a-project-item-type"></a>K definování typu položky projektu
 
-1.  Vytvořte projekt knihovny tříd.
+1. Vytvořte projekt knihovny tříd.
 
-2.  Přidejte odkazy na následující sestavení:
+2. Přidejte odkazy na následující sestavení:
 
-    -   Microsoft.VisualStudio.SharePoint
+    - Microsoft.VisualStudio.SharePoint
 
-    -   System.ComponentModel.Composition
+    - System.ComponentModel.Composition
 
-3.  Vytvořte třídu, která implementuje <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider> rozhraní.
+3. Vytvořte třídu, která implementuje <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider> rozhraní.
 
-4.  Přidejte do třídy následující atributy:
+4. Přidejte do třídy následující atributy:
 
-    -   <xref:System.ComponentModel.Composition.ExportAttribute>. Tento atribut umožňuje sadě Visual Studio zjišťovat a načíst vaše <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider> implementace. Předat <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider> typ konstruktoru atributu.
+    - <xref:System.ComponentModel.Composition.ExportAttribute>. Tento atribut umožňuje sadě Visual Studio zjišťovat a načíst vaše <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider> implementace. Předat <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider> typ konstruktoru atributu.
 
-    -   <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute>. V definici typu položky projektu tento atribut určuje identifikátor řetězce pro novou položku projektu. Doporučujeme použít formát *název společnosti*. *název funkce* abyste měli jistotu, že všechny položky projektu mít jedinečný název.
+    - <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute>. V definici typu položky projektu tento atribut určuje identifikátor řetězce pro novou položku projektu. Doporučujeme použít formát *název společnosti*. *název funkce* abyste měli jistotu, že všechny položky projektu mít jedinečný název.
 
-    -   <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemIconAttribute>. Tento atribut určuje ikonu k zobrazení pro tuto položku projektu v **Průzkumníka řešení**. Tento atribut je volitelná. Pokud jste se nevztahují na vaší třídy, Visual Studio zobrazí výchozí ikonu pro položky projektu. Pokud je tento atribut nastaven, předejte plně kvalifikovaný název ikona nebo rastrový obrázek, který je vložen do vašeho sestavení.
+    - <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemIconAttribute>. Tento atribut určuje ikonu k zobrazení pro tuto položku projektu v **Průzkumníka řešení**. Tento atribut je volitelná. Pokud jste se nevztahují na vaší třídy, Visual Studio zobrazí výchozí ikonu pro položky projektu. Pokud je tento atribut nastaven, předejte plně kvalifikovaný název ikona nebo rastrový obrázek, který je vložen do vašeho sestavení.
 
-5.  Ve vaší implementaci <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider.InitializeType%2A> metody, použijte členy *projectItemTypeDefinition* parametr definuje chování typu položky projektu. Tento parametr je <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition> objekt, který poskytuje přístup k události definované v <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents> a <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemFileEvents> rozhraní. Přístup ke konkrétní instanci typu položky projektu, zpracování <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents> událostech, například <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemAdded> a <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemInitialized>.
+5. Ve vaší implementaci <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider.InitializeType%2A> metody, použijte členy *projectItemTypeDefinition* parametr definuje chování typu položky projektu. Tento parametr je <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition> objekt, který poskytuje přístup k události definované v <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents> a <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemFileEvents> rozhraní. Přístup ke konkrétní instanci typu položky projektu, zpracování <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents> událostech, například <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemAdded> a <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemInitialized>.
 
 ## <a name="example"></a>Příklad
  Následující příklad kódu ukazuje, jak definovat typ položky simple projektu. Zapíše zprávu do tohoto typu položky projektu **výstup** okno a **seznam chyb** okno, když uživatel přidá tohoto typu položky projektu do projektu.
@@ -57,9 +57,9 @@ ms.locfileid: "56639229"
 ## <a name="compile-the-code"></a>Kompilace kódu
  Tento příklad vyžaduje odkazy na následující sestavení:
 
--   Microsoft.VisualStudio.SharePoint
+- Microsoft.VisualStudio.SharePoint
 
--   System.ComponentModel.Composition
+- System.ComponentModel.Composition
 
 ## <a name="deploy-the-project-item"></a>Nasazení položky projektu
  Povolit ostatním vývojářům použít vaši položku projektu, vytvořte šablonu projektu nebo šablony položky projektu. Další informace najdete v tématu [položky vytvářet šablony a šablony projektů pro položky Sharepointového projektu](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md).

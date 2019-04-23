@@ -13,12 +13,12 @@ caps.latest.revision: 25
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 357623a6c93cf2ec87cc9d4b53f76cec535fd6c1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7432009cb64081fc235ec48a3de5400311260f3f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54805305"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079055"
 ---
 # <a name="understanding-performance-collection-methods"></a>Principy metody kolekce výkonu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Nástroje pro profilaci sady Visual Studio poskytují pět metod, které můžet
   
  Pomocí některé z metod profilace můžete shromažďovat další data, například čítače výkonu softwaru a hardwaru. Další informace najdete v tématu [shromažďovat další údaje o výkonu](../profiling/collecting-additional-performance-data.md).  
   
-##  <a name="sampling"></a> Vzorkování  
+## <a name="sampling"></a> Vzorkování  
  Metoda profilování vzorkování shromažďuje statistická data o práci, kterou aplikace provede během spuštění profilace. Metoda vzorkování je nenáročná a má malý vliv na provádění metod aplikace.  
   
  Vzorkování je výchozí metodou nástrojů pro profilaci sady Visual Studio. Je užitečné v následujících situacích:  
@@ -57,7 +57,7 @@ Nástroje pro profilaci sady Visual Studio poskytují pět metod, které můžet
   
   [Zobrazení dat metody vzorkování](../profiling/profiler-sampling-method-data-views.md)  
   
-##  <a name="instrumentation"></a> Instrumentace  
+## <a name="instrumentation"></a> Instrumentace  
  Metoda profilace instrumentace shromažďuje podrobná časování pro volání funkcí v profilované aplikaci. Profilace instrumentace je užitečná pro následující případy:  
   
 - Ověřování problémových míst vstupů a výstupů, jako jsou například vstupně-výstupní operace disku.  
@@ -82,7 +82,7 @@ Nástroje pro profilaci sady Visual Studio poskytují pět metod, které můžet
   
   [Zobrazení dat metody instrumentace](../profiling/instrumentation-method-data-views.md)  
   
-##  <a name="concurrency"></a> souběžnost  
+## <a name="concurrency"></a> souběžnost  
  Profilace souběžnosti shromažďuje informace o aplikacích s více vlákny. Profilace kolize prostředků shromažďuje podrobné informace o zásobníku volání pokaždé, kdy jsou konkurenční vlákna nucena počkat na přístup ke sdíleným prostředkům. Vizualizace souběžnosti shromažďuje obecnější informace o interakci vícevláknové aplikace se sebou, s hardwarem, s operačním systémem a dalšími procesy na hostitelském počítači:  
   
 - Sestavy kolize prostředků zobrazují celkový počet kolizí a celkový čas, který byl vynaložen na čekání na prostředek pro moduly, funkce, řádky zdrojového kódu a instrukce, ve kterých došlo k čekání. Kolize se rovněž zobrazí v grafech časové osy.  
@@ -97,7 +97,7 @@ Nástroje pro profilaci sady Visual Studio poskytují pět metod, které můžet
   
   [Vizualizér souběžnosti](../profiling/concurrency-visualizer.md)  
   
-##  <a name="net_memory"></a> Paměť .NET  
+## <a name="net_memory"></a> Paměť .NET  
  Metoda profilace alokace paměti .NET přeruší procesor počítače při každém přidělení objektu rozhraní .NET Framework v profilované aplikaci. Při shromažďování dat o době životnosti objektu přerušuje profiler procesor po každém uvolnění paměti rozhraní .NET Framework.  
   
  Profiler shromažďuje informace o typu, velikosti a počtu objektů, které byly vytvořeny během přidělování nebo byly zničeny v procesu uvolnění paměti.  
@@ -118,7 +118,7 @@ Nástroje pro profilaci sady Visual Studio poskytují pět metod, které můžet
   
   [Zobrazení dat paměti .NET](../profiling/dotnet-memory-data-views.md)  
   
-##  <a name="tier_interaction"></a> Interakce vrstev  
+## <a name="tier_interaction"></a> Interakce vrstev  
  Profilování interakce vrstev přidá do datového souboru profilování informace o synchronních voláních [!INCLUDE[vstecado](../includes/vstecado-md.md)] mezi stránkou [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] nebo jinou aplikací a databází [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)]. Data obsahují počet a čas volání a maximální a minimální časy. Data interakce vrstev lze přidat mezi data profilace, která jsou shromážděna metodami vzorkování, instrumentace, paměti .NET nebo souběžnosti.  
   
  ![Data profilace interakce vrstev](../profiling/media/tierinteraction-profilingtools.png "TierInteraction_ProfilingTools")  

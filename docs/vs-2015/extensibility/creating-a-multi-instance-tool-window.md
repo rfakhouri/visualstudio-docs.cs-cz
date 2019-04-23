@@ -11,12 +11,12 @@ ms.assetid: 4a7872f1-acc9-4f43-8932-5a526b36adea
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 77363b0ed4635559007680e9923575eac222fbcb
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: fa0acb706d0b5cb6a37578ab6cb7b707850c5949
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54793425"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070625"
 ---
 # <a name="creating-a-multi-instance-tool-window"></a>Vytvoření panelu nástrojů s více instancemi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,14 +27,14 @@ Panel nástrojů můžete naprogramovat tak, aby více instancí může být ote
   
 ## <a name="creating-a-basic-single-instance-tool-window"></a>Vytvoření okna nástroje Basic (Single-Instance)  
   
-1.  Vytvoření projektu s názvem **MultiInstanceToolWindow** VSIX šablony a přidat šablonu vlastního nástroje okna položku s názvem **MIToolWindow**.  
+1. Vytvoření projektu s názvem **MultiInstanceToolWindow** VSIX šablony a přidat šablonu vlastního nástroje okna položku s názvem **MIToolWindow**.  
   
     > [!NOTE]
     >  Další informace o vytváření rozšíření pomocí panelu nástrojů najdete v tématu [vytváření rozšíření pomocí panelu nástrojů](../extensibility/creating-an-extension-with-a-tool-window.md).  
   
 ## <a name="making-a-tool-window-multi-instance"></a>Provádění více instancí nástroje okna  
   
-1.  Otevřít **MIToolWindowPackage.cs** souborů a vyhledejte `ProvideToolWindow` atribut. a `MultiInstances=true` parametru, jak je znázorněno v následujícím příkladu.  
+1. Otevřít **MIToolWindowPackage.cs** souborů a vyhledejte `ProvideToolWindow` atribut. a `MultiInstances=true` parametru, jak je znázorněno v následujícím příkladu.  
   
     ```csharp  
     [PackageRegistration(UseManagedResourcesOnly = true)]  
@@ -46,15 +46,15 @@ Panel nástrojů můžete naprogramovat tak, aby více instancí může být ote
     {. . .}  
     ```  
   
-2.  V souboru MIToolWindowCommand.cs najdete metodu ShowToolWindos(). V této metodě volání <xref:Microsoft.VisualStudio.Shell.Package.FindToolWindow%2A> metoda a nastavte jeho `create` příznak `false` tak, aby se iterovat přes existující instance okno nástrojů do dostupného `id` nenajde.  
+2. V souboru MIToolWindowCommand.cs najdete metodu ShowToolWindos(). V této metodě volání <xref:Microsoft.VisualStudio.Shell.Package.FindToolWindow%2A> metoda a nastavte jeho `create` příznak `false` tak, aby se iterovat přes existující instance okno nástrojů do dostupného `id` nenajde.  
   
-3.  Chcete-li vytvořit instanci okna nástroje, zavolejte <xref:Microsoft.VisualStudio.Shell.Package.FindToolWindow%2A> metoda a nastavte jeho `id` dostupné hodnotu a jeho `create` příznak `true`.  
+3. Chcete-li vytvořit instanci okna nástroje, zavolejte <xref:Microsoft.VisualStudio.Shell.Package.FindToolWindow%2A> metoda a nastavte jeho `id` dostupné hodnotu a jeho `create` příznak `true`.  
   
      Ve výchozím nastavení mají hodnotu `id` parametr <xref:Microsoft.VisualStudio.Shell.Package.FindToolWindow%2A> je metoda `0`. Díky tomu okno nástroje jednou instancí. Pro více než jednu instanci zajistit také jejich hostování, každá instance musí mít svůj vlastní jedinečný `id`.  
   
-4.  Volání <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.Show%2A> metodu na <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> objekt, který je vrácený <xref:Microsoft.VisualStudio.Shell.ToolWindowPane.Frame%2A> vlastnost instance okno nástroje.  
+4. Volání <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.Show%2A> metodu na <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> objekt, který je vrácený <xref:Microsoft.VisualStudio.Shell.ToolWindowPane.Frame%2A> vlastnost instance okno nástroje.  
   
-5.  Ve výchozím nastavení `ShowToolWindow` metodu, která je vytvořen pomocí šablony položky okna nástroje vytvoří panel nástrojů s jednou instancí. Následující příklad ukazuje, jak změnit `ShowToolWindow` metodu pro vytvoření víc instancí.  
+5. Ve výchozím nastavení `ShowToolWindow` metodu, která je vytvořen pomocí šablony položky okna nástroje vytvoří panel nástrojů s jednou instancí. Následující příklad ukazuje, jak změnit `ShowToolWindow` metodu pro vytvoření víc instancí.  
   
     ```csharp  
     private void ShowToolWindow(object sender, EventArgs e)  

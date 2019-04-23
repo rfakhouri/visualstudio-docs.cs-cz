@@ -13,21 +13,21 @@ ms.assetid: 3ffc4312-c6db-4759-a946-a4bb85f4a17a
 caps.latest.revision: 36
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f709786d908d5bfe4ef4db04916801a5cd6a7366
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 78561db4bbf9517cc3fbcd5d9ac6ca36fcafbe05
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54794859"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071223"
 ---
 # <a name="making-commands-available"></a>Zpřístupnění příkazů
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Při více rozšíření VSPackages přidávají do sady Visual Studio, může být pomocí příkazů přeplněné uživatelského rozhraní (UI). Můžete naprogramovat váš balíček ke zmírnění tohoto problému, následujícím způsobem:  
   
--   Program balíčku tak, aby se načetl pouze v případě, že uživatel vyžaduje.  
+- Program balíčku tak, aby se načetl pouze v případě, že uživatel vyžaduje.  
   
--   Balíček naprogramovat tak, aby jeho příkazy se zobrazí jenom v případě, že může být nutné v kontextu aktuálního stavu integrovaného vývojového prostředí (IDE).  
+- Balíček naprogramovat tak, aby jeho příkazy se zobrazí jenom v případě, že může být nutné v kontextu aktuálního stavu integrovaného vývojového prostředí (IDE).  
   
 ## <a name="delayed-loading"></a>S odloženým načtením  
  Typické způsob, jak povolit s odloženým načtením je návrh sady VSPackage, aby jeho příkazy jsou zobrazeny v uživatelském rozhraní, ale není načten samotném balíčku, dokud uživatel neklikne jeden z příkazů. Provedete to, že v souboru .vsct vytvořte příkazy, které mají bez příznaků příkazů.  
@@ -94,11 +94,11 @@ Při více rozšíření VSPackages přidávají do sady Visual Studio, může b
 ### <a name="custom-context-guids"></a>Vlastní místní GUID  
  Pokud příslušný příkaz kontextu, již není definovaný identifikátor GUID, můžete definovat v vašeho balíčku VSPackage a pak naprogramovat tak být aktivní nebo neaktivní podle potřeby řídit viditelnost příkazů. Použití <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection> služby na:  
   
--   Zaregistrovat GUID kontextu (voláním <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.GetCmdUIContextCookie%2A> metoda).  
+- Zaregistrovat GUID kontextu (voláním <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.GetCmdUIContextCookie%2A> metoda).  
   
--   Získat informace o stavu kontextu `GUID` (voláním <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A> metoda).  
+- Získat informace o stavu kontextu `GUID` (voláním <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A> metoda).  
   
--   Zapnout kontextu `GUID`s zapnout a vypnout (pomocí volání <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.SetCmdUIContext%2A> metoda).  
+- Zapnout kontextu `GUID`s zapnout a vypnout (pomocí volání <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.SetCmdUIContext%2A> metoda).  
   
     > [!CAUTION]
     >  Ujistěte se, že vaše VSPackage nemá vliv na stav jakýkoli existující kontext GUID vzhledem k tomu, že ostatní rozšíření VSPackages může záviset na ně.  

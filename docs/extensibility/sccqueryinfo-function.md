@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e01c76f5696e029cd7d15be75786b1009af4a673
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: d2c17d20b54ea16f0a6764277855ca240aeb7224
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56678628"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061205"
 ---
 # <a name="sccqueryinfo-function"></a>SccQueryInfo – funkce
 Tato funkce načítá informace o stavu pro sadu vybraných souborů pod správou zdrojových kódů.
@@ -67,13 +67,13 @@ SCCRTN SccQueryInfo(
 
  Při použití této funkce rezervace souborů, pamatujte na Tyhle věci `MSSCCI` stav požadavky:
 
--   `SCC_STATUS_OUTBYUSER` je nastavena pokud má aktuální uživatel rezervoval soubor.
+- `SCC_STATUS_OUTBYUSER` je nastavena pokud má aktuální uživatel rezervoval soubor.
 
--   `SCC_STATUS_CHECKEDOUT` Nelze nastavit, pokud `SCC_STATUS_OUTBYUSER` nastavena.
+- `SCC_STATUS_CHECKEDOUT` Nelze nastavit, pokud `SCC_STATUS_OUTBYUSER` nastavena.
 
--   `SCC_STATUS_CHECKEDOUT` pouze při nastavený souboru je rezervován do určeným pracovního adresáře.
+- `SCC_STATUS_CHECKEDOUT` pouze při nastavený souboru je rezervován do určeným pracovního adresáře.
 
--   Pokud soubor je rezervován aktuálním uživatelem do na jiný adresář než pracovní adresář `SCC_STATUS_OUTBYUSER` je nastavena, ale `SCC_STATUS_CHECKEDOUT` není.
+- Pokud soubor je rezervován aktuálním uživatelem do na jiný adresář než pracovní adresář `SCC_STATUS_OUTBYUSER` je nastavena, ale `SCC_STATUS_CHECKEDOUT` není.
 
 ## <a name="see-also"></a>Viz také
 - [Funkce modulu plug-in správy zdrojového kódu v rozhraní API](../extensibility/source-control-plug-in-api-functions.md)

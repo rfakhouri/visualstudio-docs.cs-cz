@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5bebc8581ead00eeb6b28c2c45f4dcfe991a9e1a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3dfaa1fb344f11817cc67a074580c726f3d23036
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55918148"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076039"
 ---
 # <a name="test-a-large-application-with-multiple-ui-maps"></a>Testování rozsáhlé aplikace s více mapami uživatelského rozhraní
 
@@ -42,9 +42,9 @@ Použití více souborů mapování uživatelského rozhraní může poskytnout 
 ## <a name="do-you-need-multiple-ui-maps"></a>Potřebujete více mapami uživatelského rozhraní?
  Vytvoření více mapami uživatelského rozhraní v každém z těchto typů situacích:
 
--   Několik sad komplexní složených ovládacích prvků uživatelského rozhraní, které dohromady provádějí logické operace, jako je například na registrační stránce na webu nebo na stránce nákupní nákupního košíku.
+- Několik sad komplexní složených ovládacích prvků uživatelského rozhraní, které dohromady provádějí logické operace, jako je například na registrační stránce na webu nebo na stránce nákupní nákupního košíku.
 
--   Nezávislého sada ovládacích prvků, které je přístupné z různých míst aplikaci, jako je průvodce se několik stránek operací. Pokud je obzvláště složité každou stránku průvodce, můžete vytvořit samostatné mapami uživatelského rozhraní pro každou stránku.
+- Nezávislého sada ovládacích prvků, které je přístupné z různých míst aplikaci, jako je průvodce se několik stránek operací. Pokud je obzvláště složité každou stránku průvodce, můžete vytvořit samostatné mapami uživatelského rozhraní pro každou stránku.
 
 ## <a name="add-multiple-ui-maps"></a>Přidání více mapami uživatelského rozhraní
 

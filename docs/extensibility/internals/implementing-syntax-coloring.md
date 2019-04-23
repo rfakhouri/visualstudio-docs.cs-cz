@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3e82246a750c26881a055e372baa7d5eb0386952
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 453952f52561a761ab4cf01825d07aa97595d0c2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596085"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080199"
 ---
 # <a name="implementing-syntax-coloring"></a>Implementace barevného zvýrazňování syntaxe
 Když služba jazyka nabízí barevné zvýrazňování syntaxe, analyzátor převede řádek textu do pole položek, které lze zabarvit a vrátí odpovídající tyto které lze zabarvit položky pro typy tokenů. Analyzátor by měl vrátit typy tokenů, které patří do seznamu položek, které lze zabarvit. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] které lze zabarvit položky se zobrazí v okně kódu podle atributů přiřazených objektem colorizer odpovídající typ tokenu.
@@ -31,33 +31,33 @@ Když služba jazyka nabízí barevné zvýrazňování syntaxe, analyzátor př
 
 ## <a name="steps-followed-by-an-editor-to-colorize-text"></a>Kroky, následuje editoru barevně zvýrazňovat Text
 
-1.  Editoru colorizer získá voláním <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetColorizer%2A> metodu <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> objektu.
+1. Editoru colorizer získá voláním <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetColorizer%2A> metodu <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> objektu.
 
-2.  Editor volání <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.GetStateMaintenanceFlag%2A> metodou ke zjištění, zda colorizer potřebuje stavu každého řádku být zachován mimo colorizer.
+2. Editor volání <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.GetStateMaintenanceFlag%2A> metodou ke zjištění, zda colorizer potřebuje stavu každého řádku být zachován mimo colorizer.
 
-3.  Pokud colorizer vyžaduje stav, který má být zachován mimo colorizer, zavolá editoru <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.GetStartState%2A> metodu k získání stavu na prvním řádku.
+3. Pokud colorizer vyžaduje stav, který má být zachován mimo colorizer, zavolá editoru <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.GetStartState%2A> metodu k získání stavu na prvním řádku.
 
-4.  Pro každý řádek ve vyrovnávací paměti volá editoru <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> metodu, která provede následující kroky:
+4. Pro každý řádek ve vyrovnávací paměti volá editoru <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> metodu, která provede následující kroky:
 
-    1.  Řádek textu je předáno scanner k převodu textu na tokeny. Každý token Určuje text tokenu a typ tokenu.
+    1. Řádek textu je předáno scanner k převodu textu na tokeny. Každý token Určuje text tokenu a typ tokenu.
 
-    2.  Typ tokenu je převést na index do seznamu, které lze zabarvit položky.
+    2. Typ tokenu je převést na index do seznamu, které lze zabarvit položky.
 
-    3.  Informace o tokenu se používá k vyplnění pole tak, aby každý prvek pole odpovídá znaku v řádku. Hodnoty uložené v poli se indexy, do které lze zabarvit položky seznamu.
+    3. Informace o tokenu se používá k vyplnění pole tak, aby každý prvek pole odpovídá znaku v řádku. Hodnoty uložené v poli se indexy, do které lze zabarvit položky seznamu.
 
-    4.  Stav na konci řádku se vrací pro každý řádek.
+    4. Stav na konci řádku se vrací pro každý řádek.
 
-5.  Pokud colorizer vyžaduje stav, který má být zachována, editoru ukládá do mezipaměti stavu pro tento řádek.
+5. Pokud colorizer vyžaduje stav, který má být zachována, editoru ukládá do mezipaměti stavu pro tento řádek.
 
-6.  Editor vykreslí řádek textu s použitím informací vrácených <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> metody. To vyžaduje následující kroky:
+6. Editor vykreslí řádek textu s použitím informací vrácených <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> metody. To vyžaduje následující kroky:
 
-    1.  Pro každý znak na řádku získání index které lze zabarvit položky.
+    1. Pro každý znak na řádku získání index které lze zabarvit položky.
 
-    2.  Pokud používáte výchozí které lze zabarvit položky, přístup k editoru které lze zabarvit položky seznamu.
+    2. Pokud používáte výchozí které lze zabarvit položky, přístup k editoru které lze zabarvit položky seznamu.
 
-    3.  V opačném případě volání služby language <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetColorableItem%2A> metodu k získání které lze zabarvit položky.
+    3. V opačném případě volání služby language <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetColorableItem%2A> metodu k získání které lze zabarvit položky.
 
-    4.  Pomocí informací v které lze zabarvit položky k vykreslení textu do zobrazení.
+    4. Pomocí informací v které lze zabarvit položky k vykreslení textu do zobrazení.
 
 ## <a name="managed-package-framework-colorizer"></a>Managed Package Framework Colorizer
  Rozhraní spravovaného balíčku (MPF) poskytuje všechny třídy, které jsou nutné k implementaci colorizer. Vaše třída jazyka služby by měla dědit <xref:Microsoft.VisualStudio.Package.LanguageService> třídy a implementuje požadované metody. Musíte zadat analyzátor a skener implementací <xref:Microsoft.VisualStudio.Package.IScanner> rozhraní a vracet instanci rozhraní z <xref:Microsoft.VisualStudio.Package.LanguageService.GetScanner%2A> – metoda (jedné z metod, které je třeba implementovat v <xref:Microsoft.VisualStudio.Package.LanguageService> třídy). Další informace najdete v tématu [barevné zvýrazňování syntaxe ve službě starší verze jazyka](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md).

@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6dba30926b3afafae6cb32e159a98d4155438c08
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: f55c67fbad80b05431ed13439584d3a94fa88c65
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56679951"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078301"
 ---
 # <a name="locationfield-element-visual-studio-project-templates"></a>Locationfield – element (šablony projektů Visual Studio)
 Určuje, zda je či není **umístění** textové pole **nový projekt** dialogové okno je povolena, zakázané nebo skrytý pro šablonu projektu.
@@ -51,11 +51,11 @@ Určuje, zda je či není **umístění** textové pole **nový projekt** dialog
 
  Text platné hodnoty jsou:
 
--   `Enabled`, který určuje, že **umístění** pomocí boxingu **nový projekt** dialogové okno je povolená.
+- `Enabled`, který určuje, že **umístění** pomocí boxingu **nový projekt** dialogové okno je povolená.
 
--   `Disabled`, který určuje, že **umístění** pomocí boxingu **nový projekt** dialogové okno je zakázaná.
+- `Disabled`, který určuje, že **umístění** pomocí boxingu **nový projekt** dialogové okno je zakázaná.
 
--   `Hidden`, který určuje, že **umístění** pomocí boxingu **nový projekt** dialogové okno je skrytá.
+- `Hidden`, který určuje, že **umístění** pomocí boxingu **nový projekt** dialogové okno je skrytá.
 
 ## <a name="remarks"></a>Poznámky
  Výchozí hodnota je `Enabled`.

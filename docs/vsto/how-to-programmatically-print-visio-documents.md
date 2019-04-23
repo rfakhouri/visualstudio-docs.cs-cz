@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9a949ee781652c3e19b3ebc3476e736374fe4f21
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4bf492c866a43a0098fbcad5660a19c57fc90a3a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56634315"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071539"
 ---
 # <a name="how-to-programmatically-print-visio-documents"></a>Postupy: Tisk dokumentů aplikace Visio prostřednictvím kódu programu
   Můžete vytisknout úplné dokumentu aplikace Microsoft Office Visio nebo pouze konkrétní stránku.
@@ -29,7 +29,7 @@ ms.locfileid: "56634315"
 
 ### <a name="to-print-a-complete-document"></a>K vytištění celého dokumentu
 
--   Volání `Microsoft.Office.Interop.Visio.Document.Print` metodu `Microsoft.Office.Interop.Visio.Document` objekt, který chcete vytisknout.
+- Volání `Microsoft.Office.Interop.Visio.Document.Print` metodu `Microsoft.Office.Interop.Visio.Document` objekt, který chcete vytisknout.
 
      Následující příklad kódu zobrazí aktivní dokument. Pokud chcete použít tento příklad, spusťte kód z `ThisAddIn` třídu ve vašem projektu.
 
@@ -40,7 +40,7 @@ ms.locfileid: "56634315"
 
 ### <a name="to-print-a-page-of-a-document"></a>K tisku stránky z dokumentu
 
--   Volání `Microsoft.Office.Interop.Visio.Pages.Print` metodu `Microsoft.Office.Interop.Visio.Pages` objekt, který chcete vytisknout.
+- Volání `Microsoft.Office.Interop.Visio.Pages.Print` metodu `Microsoft.Office.Interop.Visio.Pages` objekt, který chcete vytisknout.
 
      Následující příklad kódu zobrazí první stránka aktivní dokument. Pokud chcete použít tento příklad, spusťte kód z `ThisAddIn` třídu ve vašem projektu.
 

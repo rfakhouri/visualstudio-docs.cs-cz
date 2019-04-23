@@ -11,12 +11,12 @@ caps.latest.revision: 9
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 780cbcf5c6e03c5534b7f2125662696344e9cec4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c14fdcc5d58c62eebf993ba336a109adac5b7106
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54771634"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053764"
 ---
 # <a name="how-to-use-the-finder-tool"></a>Postupy: Používání vyhledávacího nástroje
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,13 +30,13 @@ Tažením nástroje hledání v dialogovém okně Najít okno
   
 ### <a name="to-display-window-properties-or-messages"></a>Chcete-li zobrazit okno Vlastnosti nebo zprávy.  
   
-1.  Uspořádejte windows tak, aby nástroje Spy ++ i cílové okno viditelné.  
+1. Uspořádejte windows tak, aby nástroje Spy ++ i cílové okno viditelné.  
   
-2.  Z **Spy** nabídce zvolte **najít okno**.  
+2. Z **Spy** nabídce zvolte **najít okno**.  
   
      [Dialogové okno hledání oken](../debugger/find-window-dialog-box.md) otevře.  
   
-3.  Přetáhněte **tažením nástroje hledání** intervalu cíl.  
+3. Přetáhněte **tažením nástroje hledání** intervalu cíl.  
   
      Při přetahování nástroj, **najít okno** dialogové okno zobrazí podrobnosti o vybrané okno.  
   
@@ -47,9 +47,9 @@ Tažením nástroje hledání v dialogovém okně Najít okno
     > [!TIP]
     >  Chcete-li přehlednost obrazovky, vyberte **skrýt Spy** možnost. Tato možnost ukrývá hlavním nástroje Spy ++ okně byste museli opustit pouze **najít okno** dialogové okno viditelné nad vaší aplikace. Obnovení hlavního okna nástroje Spy ++, po kliknutí na **OK** nebo **zrušit**, nebo pokud zrušíte výběr **skrýt Spy ++** možnost.  
   
-4.  V části **zobrazit**, vyberte buď **vlastnosti** nebo **zprávy**.  
+4. V části **zobrazit**, vyberte buď **vlastnosti** nebo **zprávy**.  
   
-5.  Stisknutím klávesy **OK**.  
+5. Stisknutím klávesy **OK**.  
   
      Pokud jste vybrali **vlastnosti**, [dialogové okno Vlastnosti okna](../debugger/window-properties-dialog-box.md) otevře. Pokud jste vybrali **zprávy**, [zobrazení zpráv](../debugger/messages-view.md) otevře se okno.  
   

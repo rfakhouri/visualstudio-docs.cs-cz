@@ -12,31 +12,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ecd67f78585a86fa2f7429e1e4e53a410837afc9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: c8d45109835fa0dad46d77d58a42f4d859ce7362
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56612696"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078756"
 ---
 # <a name="how-to-exclude-or-include-short-functions-from-instrumentation"></a>Postupy: Vyloučení krátkých funkcí z instrumentace nebo jejich zahrnutí do instrumentace
 Ve výchozím nastavení, nástroje pro profilaci vyloučit *malé funkce* z instrumentace. Malé funkce jsou krátkých funkcí, které Nedovolte, aby byly všechny volání funkce. Kromě těchto malé funkce poskytuje pro menší nároky na instrumentace a proto zlepšit rychlost instrumentace. Vyloučení malé funkce taky snižuje výkon souboru dat profilování (. *Vsp*) velikosti a čas, který je vyžadován pro analýzu. Pokud jsou malé funkce vyloučit, čas, který byl stráven malé funkce počítat celkové a výhradní čas jejich nadřazené funkce. Malé funkce můžete vyloučit nebo součástí instrumentace, jak je popsáno v následujícím postupu.
 
 ### <a name="to-exclude-or-include-short-functions-from-instrumentation"></a>Vyloučení nebo zahrnutí krátkých funkcí z instrumentace
 
-1.  V **prohlížeč výkonu**vyberte **relace výkonu** a pak klikněte pravým tlačítkem a vyberte **vlastnosti**.
+1. V **prohlížeč výkonu**vyberte **relace výkonu** a pak klikněte pravým tlačítkem a vyberte **vlastnosti**.
 
      **Stránky vlastností** se zobrazí dialogové okno.
 
-2.  V **stránky vlastností**, klikněte na tlačítko **instrumentace** vlastnosti.
+2. V **stránky vlastností**, klikněte na tlačítko **instrumentace** vlastnosti.
 
-3.  Chcete-li vyloučení krátkých funkcí z instrumentace, vyberte **vyloučení krátkých funkcí z instrumentace**. Toto je výchozí nastavení.
+3. Chcete-li vyloučení krátkých funkcí z instrumentace, vyberte **vyloučení krátkých funkcí z instrumentace**. Toto je výchozí nastavení.
 
      -nebo-
 
      Chcete-li zahrnout krátkých funkcí instrumentace, zrušte **vyloučení krátkých funkcí z instrumentace**.
 
-4.  Klikněte na **OK**.
+4. Klikněte na **OK**.
 
 ## <a name="see-also"></a>Viz také:
 - [Řízení shromažďování dat](../profiling/controlling-data-collection.md)

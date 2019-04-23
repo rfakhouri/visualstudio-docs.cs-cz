@@ -13,12 +13,12 @@ ms.assetid: f97104c8-2bcb-45c7-a3c9-85abeda8df98
 caps.latest.revision: 57
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 644f763c64897eda4896c1431c815519dcc9b65f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e3bbf6b3b1ed2565d5e58806bd0935f713ba5bfd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54774255"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076680"
 ---
 # <a name="creating-an-extension-with-a-menu-command"></a>Vytváření rozšíření pomocí příkazu nabídky
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,28 +30,28 @@ Tento návod ukazuje, jak vytvořit rozšíření pomocí příkazu nabídky, kt
   
 ## <a name="creating-a-menu-command"></a>Vytvoření příkazu nabídky  
   
-1.  Vytvořte projekt VSIX s názvem **FirstMenuCommand**. Můžete najít šablonu projektu VSIX v **nový projekt** dialogového okna v části **Visual C# / rozšíření**.  
+1. Vytvořte projekt VSIX s názvem **FirstMenuCommand**. Můžete najít šablonu projektu VSIX v **nový projekt** dialogového okna v části **Visual C# / rozšíření**.  
   
-2.  Po otevření projektu přidat vlastní příkaz šablonu položky s názvem **FirstCommand**. V **Průzkumníka řešení**, klikněte pravým tlačítkem na uzel projektu a vyberte **Add / nová položka**. V **přidat novou položku** dialogové okno, přejděte na **Visual C# / rozšíření** a vyberte **vlastního příkazu**. V **název** pole v dolní části okna, změňte název souboru příkazu **FirstCommand.cs**.  
+2. Po otevření projektu přidat vlastní příkaz šablonu položky s názvem **FirstCommand**. V **Průzkumníka řešení**, klikněte pravým tlačítkem na uzel projektu a vyberte **Add / nová položka**. V **přidat novou položku** dialogové okno, přejděte na **Visual C# / rozšíření** a vyberte **vlastního příkazu**. V **název** pole v dolní části okna, změňte název souboru příkazu **FirstCommand.cs**.  
   
-3.  Sestavte projekt a spusťte ladění.  
+3. Sestavte projekt a spusťte ladění.  
   
      Experimentální instanci sady Visual Studio se zobrazí. Další informace o experimentální instanci najdete v tématu [experimentální instanci](../extensibility/the-experimental-instance.md).  
   
-4.  V experimentální instanci aplikace, otevřete **nástrojů / rozšíření a aktualizace** okna. Měli byste vidět **FirstMenuCommand** rozšíření tady. (Pokud otevřete **rozšíření a aktualizace** v instanci pracovního sadě Visual Studio, neuvidíte **FirstMenuCommand**).  
+4. V experimentální instanci aplikace, otevřete **nástrojů / rozšíření a aktualizace** okna. Měli byste vidět **FirstMenuCommand** rozšíření tady. (Pokud otevřete **rozšíření a aktualizace** v instanci pracovního sadě Visual Studio, neuvidíte **FirstMenuCommand**).  
   
      Teď přejděte **nástroje** nabídky v experimentální instanci aplikace. Měli byste vidět **vyvolat FirstCommand** příkazu. V tomto okamžiku je právě zobrazí okno se zprávou s textem "FirstCommandPackage uvnitř FirstMenuCommand.FirstCommand.MenuItemCallback()". Uvidíme, jak se ve skutečnosti spustí program Poznámkový blok z tohoto příkazu v další části.  
   
 ## <a name="changing-the-menu-command-handler"></a>Změna obslužná rutina příkazu nabídky  
  Teď můžeme aktualizovat obslužná rutina příkazu Spustit Poznámkový blok.  
   
-1.  Zastavit ladění a vrátit se zpět k vaší instanci pracovní sady Visual Studio. Otevřete soubor FirstCommand.cs a přidejte následující příkaz using:  
+1. Zastavit ladění a vrátit se zpět k vaší instanci pracovní sady Visual Studio. Otevřete soubor FirstCommand.cs a přidejte následující příkaz using:  
   
     ```csharp  
     using System.Diagnostics;  
     ```  
   
-2.  Najdete soukromý konstruktor FirstCommand. Toto je kde příkazu se připojili ke službě příkazu a zadaná obslužná rutina příkazu. Změňte název obslužná rutina příkazu StartNotepad, následujícím způsobem:  
+2. Najdete soukromý konstruktor FirstCommand. Toto je kde příkazu se připojili ke službě příkazu a zadaná obslužná rutina příkazu. Změňte název obslužná rutina příkazu StartNotepad, následujícím způsobem:  
   
     ```csharp  
     private FirstCommand(Package package)  
@@ -74,7 +74,7 @@ Tento návod ukazuje, jak vytvořit rozšíření pomocí příkazu nabídky, kt
     }  
     ```  
   
-3.  Odeberte metodu MenuItemCallback a přidejte StartNotepad metodu, která se právě spusťte program Poznámkový blok:  
+3. Odeberte metodu MenuItemCallback a přidejte StartNotepad metodu, která se právě spusťte program Poznámkový blok:  
   
     ```csharp  
     private void StartNotepad(object sender, EventArgs e)  
@@ -85,7 +85,7 @@ Tento návod ukazuje, jak vytvořit rozšíření pomocí příkazu nabídky, kt
     }  
     ```  
   
-4.  Nyní vyzkoušejte. Při spuštění ladění projektu a klikněte na tlačítko **nástroje / vyvolat FirstCommand**, byste měli vidět instance poznámkového bloku přijít.  
+4. Nyní vyzkoušejte. Při spuštění ladění projektu a klikněte na tlačítko **nástroje / vyvolat FirstCommand**, byste měli vidět instance poznámkového bloku přijít.  
   
      Můžete použít instanci <xref:System.Diagnostics.Process> má třída spustit libovolný spustitelný soubor, nejen Poznámkový blok. Vyzkoušejte si to s calc.exe, např.  
   
@@ -94,9 +94,9 @@ Tento návod ukazuje, jak vytvořit rozšíření pomocí příkazu nabídky, kt
   
  Můžete získat tohoto skriptu v jednom ze dvou způsobů:  
   
-1.  Z plochy, vyhledejte **resetovat Visual Studio 2015 experimentální instanci**.  
+1. Z plochy, vyhledejte **resetovat Visual Studio 2015 experimentální instanci**.  
   
-2.  Z příkazového řádku spusťte následující příkaz:  
+2. Z příkazového řádku spusťte následující příkaz:  
   
     ```  
     <VSSDK installation>\VisualStudioIntegration\Tools\Bin\CreateExpInstance.exe /Reset /VSInstance=14.0 /RootSuffix=Exp && PAUSE  
@@ -119,11 +119,11 @@ Tento návod ukazuje, jak vytvořit rozšíření pomocí příkazu nabídky, kt
   
 1. Můžete provést mnoho dalších věcí s jednoduchý příkaz:  
   
-   1.  Přidáte vlastní ikonu: [Přidávání ikon k příkazům nabídky](../extensibility/adding-icons-to-menu-commands.md)  
+   1. Přidáte vlastní ikonu: [Přidávání ikon k příkazům nabídky](../extensibility/adding-icons-to-menu-commands.md)  
   
-   2.  Změna textu příkazu nabídky: [Změna textu příkazu nabídky](../extensibility/changing-the-text-of-a-menu-command.md)  
+   2. Změna textu příkazu nabídky: [Změna textu příkazu nabídky](../extensibility/changing-the-text-of-a-menu-command.md)  
   
-   3.  Přidání místní nabídky k příkazu: [Vytváření vazeb mezi klávesovými zkratkami a položkami nabídky](../extensibility/binding-keyboard-shortcuts-to-menu-items.md)  
+   3. Přidání místní nabídky k příkazu: [Vytváření vazeb mezi klávesovými zkratkami a položkami nabídky](../extensibility/binding-keyboard-shortcuts-to-menu-items.md)  
   
 2. Přidáte různé druhy příkazy, nabídky a panely nástrojů: [Rozšiřování nabídek a příkazů](../extensibility/extending-menus-and-commands.md)  
   

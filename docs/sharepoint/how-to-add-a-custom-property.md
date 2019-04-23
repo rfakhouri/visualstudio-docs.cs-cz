@@ -17,31 +17,31 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 575eb99f7bbc2a102c576cb4a0f256bd3acfc5f6
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: caf2d0e63db724c8eb3c1e72c79a109548af8f9c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56639645"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056013"
 ---
 # <a name="how-to-add-a-custom-property"></a>Postupy: Přidat vlastní vlastnost
   Přidání vlastních vlastností do modelu s použitím **Editor vlastností**. Můžete zobrazit tyto vlastnosti v kódu a získejte informace, jako jsou připojovací řetězce a další data v době běhu.
 
 ### <a name="to-add-a-custom-property"></a>Chcete-li přidat vlastní vlastnost
 
-1.  V **služby BDC Explorer**, vyberte uzel, který představuje prvek modelu, na který chcete použít vlastní vlastnost.
+1. V **služby BDC Explorer**, vyberte uzel, který představuje prvek modelu, na který chcete použít vlastní vlastnost.
 
-2.  V panelu nabídky zvolte **zobrazení** > **okno vlastností**.
+2. V panelu nabídky zvolte **zobrazení** > **okno vlastností**.
 
-3.  V **vlastnosti** okna, vyberte **vlastní vlastnosti** vlastnost a klikněte na tlačítko se třemi tečkami (![elipsa ASP.NET – Návrhář mobilních řešení](../sharepoint/media/mwellipsis.gif "ASP. Návrhář mobilních NET Elipsa")).
+3. V **vlastnosti** okna, vyberte **vlastní vlastnosti** vlastnost a klikněte na tlačítko se třemi tečkami (![elipsa ASP.NET – Návrhář mobilních řešení](../sharepoint/media/mwellipsis.gif "ASP. Návrhář mobilních NET Elipsa")).
 
      **Editor vlastností** zobrazí se dialogové okno.
 
-4.  V textovém poli v **název** sloupce, zadejte název vlastnosti.
+4. V textovém poli v **název** sloupce, zadejte název vlastnosti.
 
-5.  Pro **typ** pole vlastní vlastnosti, vyberte odpovídající typ dat.
+5. Pro **typ** pole vlastní vlastnosti, vyberte odpovídající typ dat.
 
-6.  Pro **hodnotu** vlastní vlastnosti, pole zadejte hodnotu a klikněte na tlačítko **OK** tlačítko.
+6. Pro **hodnotu** vlastní vlastnosti, pole zadejte hodnotu a klikněte na tlačítko **OK** tlačítko.
 
 ## <a name="see-also"></a>Viz také:
 - [Navrhování modelu připojení obchodních dat](../sharepoint/designing-a-business-data-connectivity-model.md)

@@ -14,14 +14,14 @@ caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: aa60d16eec09255f39e18b86b468a2fef2269aff
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ad9a0671595d4628932ff4f2db41a137e060c4d1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54782631"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076482"
 ---
-# <a name="da0003-many-kernel-samples"></a>DA0003: Počet ukázek jádra
+# <a name="da0003-many-kernel-samples"></a>DA0003: Velký počet vzorků jádra
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Id pravidla | DA0003 VYSOKÝ POČET |  
@@ -41,6 +41,6 @@ Id pravidla | DA0003 VYSOKÝ POČET |
 ## <a name="how-to-fix-violations"></a>Jak vyřešit porušení  
  Zvažte profilaci vaší aplikace znovu pomocí jedné z následujících možností:  
   
--   Profilu pomocí metody instrumentace.  
+- Profilu pomocí metody instrumentace.  
   
--   Zvyšte vzorkovací frekvenci se pokouší shromažďovat další ukázky v uživatelském režimu.
+- Zvyšte vzorkovací frekvenci se pokouší shromažďovat další ukázky v uživatelském režimu.

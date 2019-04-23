@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 188ad2ca0ff0b84d94c58cb42076c6b0782742a1
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: 375f6996c91c294dd3b630c9ab987ff4b2d6cbdb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416029"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078639"
 ---
 # <a name="responding-to-and-propagating-changes"></a>Reagování na změny a šíření změn
 Po elementu se vytvoří, odstraní nebo aktualizuje, můžete napsat kód, který šíří změny dalších součástí modelu, nebo k externím prostředkům, jako jsou soubory, databáze nebo další komponenty.
@@ -41,13 +41,13 @@ Po elementu se vytvoří, odstraní nebo aktualizuje, můžete napsat kód, kter
 
  Při události v úložišti se budou synchronizovat model s objekty mimo Store a pravidla můžete zachovat konzistenci v rámci Store.
 
--   **Vytváření vlastních pravidel** jako odvozené třídy abstraktní pravidlo vytvoříte vlastní pravidlo. Musíte také upozornit framework o vlastní pravidlo. Další informace najdete v tématu [pravidla šíření změn v rámci the Model](../modeling/rules-propagate-changes-within-the-model.md).
+- **Vytváření vlastních pravidel** jako odvozené třídy abstraktní pravidlo vytvoříte vlastní pravidlo. Musíte také upozornit framework o vlastní pravidlo. Další informace najdete v tématu [pravidla šíření změn v rámci the Model](../modeling/rules-propagate-changes-within-the-model.md).
 
--   **Přihlášení k odběru událostí** předtím, než se můžete přihlásit odběr události, vytvořit obslužnou rutinu události a delegáta. Potom použijte <xref:Microsoft.VisualStudio.Modeling.Store.EventManagerDirectory%2A>vlastnost k odběru události. Další informace najdete v tématu [obslužné rutiny rozšíření změny mimo the Model událostí](../modeling/event-handlers-propagate-changes-outside-the-model.md).
+- **Přihlášení k odběru událostí** předtím, než se můžete přihlásit odběr události, vytvořit obslužnou rutinu události a delegáta. Potom použijte <xref:Microsoft.VisualStudio.Modeling.Store.EventManagerDirectory%2A>vlastnost k odběru události. Další informace najdete v tématu [obslužné rutiny rozšíření změny mimo the Model událostí](../modeling/event-handlers-propagate-changes-outside-the-model.md).
 
--   **Ruší se provedené změny** při vrácení transakce, jsou vyvolány události, ale pravidla se nepoužijí. Pokud pravidlo změní hodnotu a můžete tuto změnu vrátit zpět, je hodnota obnovit během akce vrátit zpět na původní hodnotu. Když je vyvolána událost, musíte ručně změnit hodnotu zpět na původní hodnotu. Další informace o transakcích a vrácení zpět, najdete v článku [jak: Používání transakcí k aktualizaci modelu](../modeling/how-to-use-transactions-to-update-the-model.md).
+- **Ruší se provedené změny** při vrácení transakce, jsou vyvolány události, ale pravidla se nepoužijí. Pokud pravidlo změní hodnotu a můžete tuto změnu vrátit zpět, je hodnota obnovit během akce vrátit zpět na původní hodnotu. Když je vyvolána událost, musíte ručně změnit hodnotu zpět na původní hodnotu. Další informace o transakcích a vrácení zpět, najdete v článku [jak: Používání transakcí k aktualizaci modelu](../modeling/how-to-use-transactions-to-update-the-model.md).
 
--   **Předávání argumentů událostí k pravidla a akce** obou událostí a pravidla jsou předány `EventArgs` parametr, který obsahuje informace o tom, model změnit.
+- **Předávání argumentů událostí k pravidla a akce** obou událostí a pravidla jsou předány `EventArgs` parametr, který obsahuje informace o tom, model změnit.
 
 ## <a name="see-also"></a>Viz také
 

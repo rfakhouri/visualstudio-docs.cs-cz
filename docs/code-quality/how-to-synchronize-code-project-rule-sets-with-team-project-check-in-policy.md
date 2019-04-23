@@ -10,57 +10,57 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 41fb9f60efa439f3a8157059ee4e64af5c25292e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: bd92cbb5dfee83a4a2b92729a8fde3846a5e5475
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55945440"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065699"
 ---
 # <a name="how-to-synchronize-code-project-rule-sets-with-an-azure-devops-project-check-in-policy"></a>Postupy: Synchronizace sad pravidel projektu kódu pomocí zásad vracení se změnami Azure DevOps Project
 
 Synchronizovat nastavení analýzy kódu pro projekty kódu mají zásady vrácení se změnami pro Azure DevOps project tak, že zadáte sadu pravidel, která obsahuje aspoň pravidla, která jsou uvedená v pravidle nastavit zásady vrácení se změnami. Váš vedoucí vývojář může informovat o název a umístění sada pravidel pro zásadu vrácení se změnami. Jeden z následujících možností můžete zajistit, že analýzy kódu pro projekt používá správné sady pravidel:
 
--   Pokud zásady vrácení se změnami používá jedné sady předdefinovaných pravidel společnosti Microsoft, otevřete dialogové okno Vlastnosti projektu kódu, zobrazení stránky pro analýzu kódu a vyberte pravidlo, nastavte na stránce analýzy kódu v nastavení projektu kódu. Společnost Microsoft sad standardních pravidel jsou automaticky nainstalován se sadou Visual Studio jsou nastaveny na jen pro čtení a by neměla být upravována. Pokud se neupravují sady pravidel, pravidel zásad a nastaví místní pravidlo zaručeno tak, aby odpovídaly.
+- Pokud zásady vrácení se změnami používá jedné sady předdefinovaných pravidel společnosti Microsoft, otevřete dialogové okno Vlastnosti projektu kódu, zobrazení stránky pro analýzu kódu a vyberte pravidlo, nastavte na stránce analýzy kódu v nastavení projektu kódu. Společnost Microsoft sad standardních pravidel jsou automaticky nainstalován se sadou Visual Studio jsou nastaveny na jen pro čtení a by neměla být upravována. Pokud se neupravují sady pravidel, pravidel zásad a nastaví místní pravidlo zaručeno tak, aby odpovídaly.
 
--   Pokud zásady vrácení se změnami používá vlastní sady pravidel, proveďte operaci načíst v souboru sady pravidel v rámci správy verzí, chcete-li vytvořit místní kopii. V nastavení analýzy kódu pro projekt kódu zadejte tento místní umístění. Pravidla zaručeno splněno, pokud je aktuální pravidlo pro nastavení zásady vrácení se změnami.
+- Pokud zásady vrácení se změnami používá vlastní sady pravidel, proveďte operaci načíst v souboru sady pravidel v rámci správy verzí, chcete-li vytvořit místní kopii. V nastavení analýzy kódu pro projekt kódu zadejte tento místní umístění. Pravidla zaručeno splněno, pokud je aktuální pravidlo pro nastavení zásady vrácení se změnami.
 
      Pokud namapujete umístění ovládacího prvku verze do místní složky, který je ve stejné relaci do kořenového adresáře Azure DevOps project jako kód projektu, umístění pravidla se nastaví pomocí relativní cesty. Relativní cesta se zajistí, že nastavení projektů kód pro analýzu kódu lze přesunout do jiných počítačů.
 
--   Upravte kopii tohoto pravidla pro nastavení zásady vrácení se změnami pro projekt kódu. Ujistěte se, že nové sady pravidel obsahuje všechna pravidla v zásadách vrácení se změnami a ostatní pravidla, které chcete zahrnout. Ujistěte se, že vaše sada pravidel obsahuje všechna pravidla v pravidle, nastavte pro zásadu vrácení se změnami.
+- Upravte kopii tohoto pravidla pro nastavení zásady vrácení se změnami pro projekt kódu. Ujistěte se, že nové sady pravidel obsahuje všechna pravidla v zásadách vrácení se změnami a ostatní pravidla, které chcete zahrnout. Ujistěte se, že vaše sada pravidel obsahuje všechna pravidla v pravidle, nastavte pro zásadu vrácení se změnami.
 
 ## <a name="to-specify-a-microsoft-standard-rule-set"></a>Chcete-li určit standardních pravidel společnosti Microsoft nastavit
 
-1.  V **Průzkumníka řešení**, klikněte pravým tlačítkem na projekt kódu a potom klikněte na tlačítko **vlastnosti**.
+1. V **Průzkumníka řešení**, klikněte pravým tlačítkem na projekt kódu a potom klikněte na tlačítko **vlastnosti**.
 
-2.  Klikněte na tlačítko **analýza kódu**.
+2. Klikněte na tlačítko **analýza kódu**.
 
-3.  V **spustit tuto sadu pravidel** klikněte na možnost zásad vrácení se změnami sadu pravidel.
+3. V **spustit tuto sadu pravidel** klikněte na možnost zásad vrácení se změnami sadu pravidel.
 
 ## <a name="to-specify-a-custom-check-in-policy-rule-set"></a>Chcete-li určit sadu pravidel vlastních zásad vrácení se změnami
 
-1.  V případě potřeby proveďte operaci načíst v souboru sady pravidel, která určuje zásady vrácení se změnami.
+1. V případě potřeby proveďte operaci načíst v souboru sady pravidel, která určuje zásady vrácení se změnami.
 
-2.  V **Průzkumníka řešení**, klikněte pravým tlačítkem na projekt kódu a potom klikněte na tlačítko **vlastnosti**.
+2. V **Průzkumníka řešení**, klikněte pravým tlačítkem na projekt kódu a potom klikněte na tlačítko **vlastnosti**.
 
-3.  Klikněte na tlačítko **analýza kódu**.
+3. Klikněte na tlačítko **analýza kódu**.
 
-4.  V **spustit tuto sadu pravidel** klikněte na možnost  **\<Procházet... >**.
+4. V **spustit tuto sadu pravidel** klikněte na možnost  **\<Procházet... >**.
 
-5.  V **otevřít** dialogového okna zadejte soubor sady pravidel zásad vrácení se změnami.
+5. V **otevřít** dialogového okna zadejte soubor sady pravidel zásad vrácení se změnami.
 
 ## <a name="to-create-a-custom-rule-set-for-a-code-project"></a>Chcete-li vytvořit vlastní pravidlo nastavte pro projekt kódu
 
-1.  Postupujte podle jednoho z postupů dříve v tomto tématu vyberte zásadu vrácení se změnami z Azure DevOps project na stránce analýzy kódu v dialogovém okně nastavení projektu.
+1. Postupujte podle jednoho z postupů dříve v tomto tématu vyberte zásadu vrácení se změnami z Azure DevOps project na stránce analýzy kódu v dialogovém okně nastavení projektu.
 
-2.  Klikněte na tlačítko **otevřít**.
+2. Klikněte na tlačítko **otevřít**.
 
-3.  Přidání nebo odebrání pravidla pomocí [s editorem sad pravidel](../code-quality/working-in-the-code-analysis-rule-set-editor.md).
+3. Přidání nebo odebrání pravidla pomocí [s editorem sad pravidel](../code-quality/working-in-the-code-analysis-rule-set-editor.md).
 
-4.  Uložte upravený pravidlo nastavte soubor .ruleset v místním počítači nebo na cestu UNC.
+4. Uložte upravený pravidlo nastavte soubor .ruleset v místním počítači nebo na cestu UNC.
 
-5.  Otevřete dialogové okno Vlastnosti projektu kódu a zobrazit **analýzy kódu** stránky.
+5. Otevřete dialogové okno Vlastnosti projektu kódu a zobrazit **analýzy kódu** stránky.
 
-6.  V **spustit tuto sadu pravidel** klikněte na možnost  **\<Procházet... >**.
+6. V **spustit tuto sadu pravidel** klikněte na možnost  **\<Procházet... >**.
 
-7.  V **otevřít** dialogového okna zadejte soubor sady pravidel.
+7. V **otevřít** dialogového okna zadejte soubor sady pravidel.

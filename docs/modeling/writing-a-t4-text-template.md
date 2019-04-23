@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ae4a99fd1473ea25667887701198efee23b1356
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 68bb68160b78df4abe1b6874080c9a3ec91a3e31
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970800"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063423"
 ---
 # <a name="writing-a-t4-text-template"></a>Tvorba textové šablony T4
 Textová šablona obsahuje text, který z ní bude vygenerován. Například šablonu, která vytvoří webovou stránku bude obsahovat "\<html >..." a všechny ostatní standardní části stránky HTML. Do šablony jsou *řídicí bloky*, což jsou fragmenty kódu programu. Řídicí bloky poskytují různé hodnoty a umožňují, aby části textu byly podmíněné a opakované.
@@ -25,11 +25,11 @@ Textová šablona obsahuje text, který z ní bude vygenerován. Například ša
 
  Textové šablony se skládají z těchto částí:
 
--   **Direktivy** – prvky, které určují způsob zpracování šablony.
+- **Direktivy** – prvky, které určují způsob zpracování šablony.
 
--   **Textové bloky** – obsah, který je zkopírován přímo do výstupu.
+- **Textové bloky** – obsah, který je zkopírován přímo do výstupu.
 
--   **Řídicí bloky** – programový kód, který do textu vloží hodnoty proměnných a řídí podmíněné nebo opakované části textu.
+- **Řídicí bloky** – programový kód, který do textu vloží hodnoty proměnných a řídí podmíněné nebo opakované části textu.
 
 Pokud chcete vyzkoušet příklady v tomto tématu, zkopírujte je do souboru šablony podle popisu v [vytvoření kódu v době návrhu pomocí textových šablon T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md). Po úpravě souboru šablony jej uložte a poté zkontrolujte výstupní **.txt** souboru.
 
@@ -107,7 +107,7 @@ Hello!
 <#= 2 + 3 #>
 ```
 
- Všimněte si, že počáteční symbol má tři znaky „<#=“.
+ Všimněte si, že počáteční symbol má tři znaky "< #=".
 
  Výraz může obsahovat jakoukoli proměnnou, která je v rozsahu. Tento blok například vytiskne řádky s čísly:
 

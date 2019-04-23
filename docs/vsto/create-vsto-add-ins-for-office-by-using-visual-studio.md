@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: efb95d2beb90358cbbe359076a815dee13ce7166
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: e39a742c01b013c43992847010bf5f6cb6ac6009
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56644377"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070911"
 ---
 # <a name="create-vsto-add-ins-for-office-by-using-visual-studio"></a>Vytváření doplňků VSTO pro Office s použitím sady Visual Studio
   Nástroje Microsoft Office developer tools v sadě Visual Studio můžete použít k vytvoření aplikací rozhraní .NET Framework, které rozšiřují Office. Tyto aplikace se také nazývají *řešení pro systém Office*.
@@ -29,9 +29,9 @@ ms.locfileid: "56644377"
 
  Nejnovější informace o vývoj pro Office najdete v následujících vývojová střediska na webové stránce MSDN:
 
--   [Vývoj pro Office s portálem pro vývojáře Visual Studio](http://go.microsoft.com/fwlink/?LinkId=123844) obsahuje odkazy na informace o produktech, ukázky kódu, videa a komunitní zdroje o přizpůsobení aplikace Office jako součást řešení pomocí sady Visual Studio .
+- [Vývoj pro Office s portálem pro vývojáře Visual Studio](http://go.microsoft.com/fwlink/?LinkId=123844) obsahuje odkazy na informace o produktech, ukázky kódu, videa a komunitní zdroje o přizpůsobení aplikace Office jako součást řešení pomocí sady Visual Studio .
 
--   [Střediska pro vývojáře Microsoft Office](http://go.microsoft.com/fwlink/?LinkId=83467) obsahuje odkazy na technické články, ukázky kódu, souborů ke stažení, informací komunity, podpory a další dokumentace o přizpůsobení sady Office a obchodní aplikace Office (OBAs ).
+- [Střediska pro vývojáře Microsoft Office](http://go.microsoft.com/fwlink/?LinkId=83467) obsahuje odkazy na technické články, ukázky kódu, souborů ke stažení, informací komunity, podpory a další dokumentace o přizpůsobení sady Office a obchodní aplikace Office (OBAs ).
 
 ## <a name="in-this-section"></a>V tomto oddílu
 - [Začínáme &#40;vývoj pro Office v sadě Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)

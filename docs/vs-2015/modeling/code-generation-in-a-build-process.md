@@ -12,12 +12,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 61301fce94ab1359a10249f739d2bf613ebfdda8
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: f2146c8a15292ddc9233c8e10b8f58f5212df0c5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867739"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077599"
 ---
 # <a name="code-generation-in-a-build-process"></a>Vytvoření kódu v procesu sestavení
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,31 +27,31 @@ V závislosti na tom, který stroj sestavení používáte, jsou určité rozd�
 
 To znamená, že k různým položkám (například k názvům projektů) nelze získat přístup stejně jako při sestavování textové šablony v nástroji MSBuild. Můžete však [předání informací o prostředí do textových šablon a procesorů pro direktivy použít parametry sestavení](#parameters).
 
-##  <a name="buildserver"></a> Konfigurace počítačů
+## <a name="buildserver"></a> Konfigurace počítačů
 
 Pokud chcete povolit úlohy sestavení na vašem vývojovém počítači, nainstalujte [sada Modeling SDK for Visual Studio](https://www.microsoft.com/download/details.aspx?id=48148).
 
 Pokud [váš server sestavení](http://msdn.microsoft.com/library/788443c3-0547-452e-959c-4805573813a9) se spustí na počítači, na kterém není nainstalována sada Visual Studio, zkopírujte následující soubory do počítače sestavení z vývojového počítače. Nahraďte nejnovější čísla verzí pro "*".
 
--   $(ProgramFiles)\MSBuild\Microsoft\VisualStudio\v*.0\TextTemplating
+- $(ProgramFiles)\MSBuild\Microsoft\VisualStudio\v*.0\TextTemplating
 
-    -   Microsoft.VisualStudio.TextTemplating.Sdk.Host.*.0.dll
+    - Microsoft.VisualStudio.TextTemplating.Sdk.Host.*.0.dll
 
-    -   Microsoft.TextTemplating.Build.Tasks.dll
+    - Microsoft.TextTemplating.Build.Tasks.dll
 
-    -   Microsoft.TextTemplating.targets
+    - Microsoft.TextTemplating.targets
 
--   $(ProgramFiles)\Microsoft Visual Studio *.0\VSSDK\VisualStudioIntegration\Common\Assemblies\v4.0
+- $(ProgramFiles)\Microsoft Visual Studio *.0\VSSDK\VisualStudioIntegration\Common\Assemblies\v4.0
 
-    -   Microsoft.VisualStudio.TextTemplating.*.0.dll
+    - Microsoft.VisualStudio.TextTemplating.*.0.dll
 
-    -   Microsoft.VisualStudio.TextTemplating.Interfaces.*.0.dll (several files)
+    - Microsoft.VisualStudio.TextTemplating.Interfaces.*.0.dll (several files)
 
-    -   Microsoft.VisualStudio.TextTemplating.VSHost.*.0.dll
+    - Microsoft.VisualStudio.TextTemplating.VSHost.*.0.dll
 
--   $(ProgramFiles)\Microsoft Visual Studio *.0\Common7\IDE\PublicAssemblies\
+- $(ProgramFiles)\Microsoft Visual Studio *.0\Common7\IDE\PublicAssemblies\
 
-    -   Microsoft.VisualStudio.TextTemplating.Modeling.*.0.dll
+    - Microsoft.VisualStudio.TextTemplating.Modeling.*.0.dll
 
 ## <a name="to-edit-the-project-file"></a>Úprava souboru projektu
 
@@ -90,7 +90,7 @@ Za tento řádek vložte import šablonování textu:
 
 Do souboru projektu lze vložit některé vlastnosti, které slouží k řízení úlohy transformace:
 
--   Spuštění úlohy transformace na začátku každého sestavení:
+- Spuštění úlohy transformace na začátku každého sestavení:
 
     ```xml
     <PropertyGroup>
@@ -98,7 +98,7 @@ Do souboru projektu lze vložit některé vlastnosti, které slouží k řízen
     </PropertyGroup>
     ```
 
--   Přepsání souborů, které jsou určeny jen pro čtení, protože například nejsou rezervovány:
+- Přepsání souborů, které jsou určeny jen pro čtení, protože například nejsou rezervovány:
 
     ```xml
     <PropertyGroup>
@@ -106,7 +106,7 @@ Do souboru projektu lze vložit některé vlastnosti, které slouží k řízen
     </PropertyGroup>
     ```
 
--   Transformace všech šablon při každém spuštění:
+- Transformace všech šablon při každém spuštění:
 
     ```xml
     <PropertyGroup>
@@ -213,7 +213,7 @@ $(IncludeFolders);$(MSBuildProjectDirectory)\Include;AnotherFolder;And\Another</
 </PropertyGroup>
 ```
 
-##  <a name="parameters"></a> Předání kontextových dat sestavení do šablon
+## <a name="parameters"></a> Předání kontextových dat sestavení do šablon
 
 Hodnoty parametru lze nastavit v souboru projektu. Můžete například předat vlastnosti sestavení a [proměnné prostředí](../msbuild/how-to-use-environment-variables-in-a-build.md):
 
@@ -234,7 +234,7 @@ V textové šabloně nastavte `hostspecific` v direktivě šablony. Použití [p
 The project folder is: <#= ProjectFolder #>
 ```
 
-##  <a name="msbuild"></a> Používání vlastností projektu v sestavení a direktiv
+## <a name="msbuild"></a> Používání vlastností projektu v sestavení a direktiv
 
 Makra sady Visual Studio, například $(SolutionDir), nefungují v nástroji MSBuild. Místo toho můžete použít vlastnosti projektu.
 
@@ -271,13 +271,13 @@ Při aktualizaci vkládaného souboru nebo jiného souboru čteného šablonou n
 
 **Jaké jsou další možnosti transformace textových šablon?**
 
--   [Nástroj TextTransform](../modeling/generating-files-with-the-texttransform-utility.md) lze použít v příkazových skriptech. Ve většině případů je jednodušší použít nástroj MSBuild.
+- [Nástroj TextTransform](../modeling/generating-files-with-the-texttransform-utility.md) lze použít v příkazových skriptech. Ve většině případů je jednodušší použít nástroj MSBuild.
 
--   [Volání transformací textu v rozšíření VS](../modeling/invoking-text-transformation-in-a-vs-extension.md)
+- [Volání transformací textu v rozšíření VS](../modeling/invoking-text-transformation-in-a-vs-extension.md)
 
--   [Návrhové textové šablony](../modeling/design-time-code-generation-by-using-t4-text-templates.md) jsou transformovány sadou Visual Studio.
+- [Návrhové textové šablony](../modeling/design-time-code-generation-by-using-t4-text-templates.md) jsou transformovány sadou Visual Studio.
 
--   [Textové šablony běhu](../modeling/run-time-text-generation-with-t4-text-templates.md) jsou transformovány při běhu aplikace.
+- [Textové šablony běhu](../modeling/run-time-text-generation-with-t4-text-templates.md) jsou transformovány při běhu aplikace.
 
 ## <a name="read-more"></a>Další informace
 

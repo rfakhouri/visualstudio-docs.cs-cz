@@ -17,12 +17,12 @@ caps.latest.revision: 32
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c403cefee3aa7d45c11cd80cf5fc2dd53a06c1fc
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 4cc62b8635a2d7a663b597d4f8a2363fe14ba432
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54834029"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071925"
 ---
 # <a name="how-to-find-the-name-of-the-aspnet-process"></a>Postupy: Hledání názvu procesu ASP.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,25 +42,25 @@ Připojit ke spuštěnému [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] apli
   
 ### <a name="to-determine-whether-project-code-resides-on-the-file-system-or-iis"></a>Chcete-li zjistit, zda kód projektu je umístěn v systému souborů nebo ze služby IIS  
   
-1.  V sadě Visual Studio, otevřete **Průzkumníka řešení** Pokud ještě není otevřený.  
+1. V sadě Visual Studio, otevřete **Průzkumníka řešení** Pokud ještě není otevřený.  
   
-2.  Vyberte nejvyšší uzel, který obsahuje název aplikace.  
+2. Vyberte nejvyšší uzel, který obsahuje název aplikace.  
   
-3.  Pokud **vlastnosti** název okna obsahuje cestu k souboru, kód aplikace se nachází v systému souborů.  
+3. Pokud **vlastnosti** název okna obsahuje cestu k souboru, kód aplikace se nachází v systému souborů.  
   
      V opačném případě **vlastnosti** název okna bude obsahovat název webové stránky.  
   
 ### <a name="to-determine-the-iis-version-under-which-the-application-is-running"></a>Chcete-li zjistit verzi služby IIS, pod kterým je aplikace spuštěná  
   
-1.  Najít **nástroje pro správu** a spustíme ji. V závislosti na operačním systému, může to být ikonu uvnitř **ovládací panely**, nebo, který se zobrazí po kliknutí na položku nabídky **Start**.  
+1. Najít **nástroje pro správu** a spustíme ji. V závislosti na operačním systému, může to být ikonu uvnitř **ovládací panely**, nebo, který se zobrazí po kliknutí na položku nabídky **Start**.  
   
      Ve Windows XP **ovládací panely** může být v zobrazení kategorií nebo klasické zobrazení. V zobrazení kategorií, budete muset kliknout na **přepnout do klasického zobrazení** nebo **výkon a údržba** zobrazíte **nástroje pro správu** ikonu.  
   
-2.  Z **nástroje pro správu**, spusťte Internetová informační služba. Zobrazí se dialogové okno konzoly MMC.  
+2. Z **nástroje pro správu**, spusťte Internetová informační služba. Zobrazí se dialogové okno konzoly MMC.  
   
-3.  Pokud existuje více než jednom počítači, které jsou uvedené v levém podokně, vyberte ten, na kterém je umístěn do kódu aplikace.  
+3. Pokud existuje více než jednom počítači, které jsou uvedené v levém podokně, vyberte ten, na kterém je umístěn do kódu aplikace.  
   
-4.  Verze služby IIS **verze** sloupce v pravém podokně.  
+4. Verze služby IIS **verze** sloupce v pravém podokně.  
   
 ## <a name="see-also"></a>Viz také  
  [Předpoklady pro vzdálené ladění webových aplikací](../debugger/prerequistes-for-remote-debugging-web-applications.md)   

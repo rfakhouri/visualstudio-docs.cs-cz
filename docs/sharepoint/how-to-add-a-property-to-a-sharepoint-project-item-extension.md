@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6dc2c0588fa3078a805f9804263afcf521ae72ed
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 20a7abaa8c132b3cd1679ab95ed8154b8ca86502
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56644426"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068558"
 ---
 # <a name="how-to-add-a-property-to-a-sharepoint-project-item-extension"></a>Postupy: Přidání vlastnosti do rozšíření položky projektu SharePoint
   Rozšíření položky projektu můžete použít k přidání vlastnosti do položky projektu služby SharePoint, která je již nainstalována v sadě Visual Studio. Vlastnost se zobrazí v **vlastnosti** okno při výběru položky projektu v **Průzkumníka řešení**.
@@ -28,11 +28,11 @@ ms.locfileid: "56644426"
 
 ### <a name="to-add-a-property-to-a-project-item-extension"></a>Přidání vlastnosti do rozšíření položky projektu
 
-1.  Definice třídy s veřejné vlastnosti, která představuje vlastnost, kterou chcete přidat do typu položky projektu. Pokud chcete přidat více vlastností typu položky projektu, můžete definovat všechny vlastnosti ve stejné třídě nebo v různých tříd.
+1. Definice třídy s veřejné vlastnosti, která představuje vlastnost, kterou chcete přidat do typu položky projektu. Pokud chcete přidat více vlastností typu položky projektu, můžete definovat všechny vlastnosti ve stejné třídě nebo v různých tříd.
 
-2.  V <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension.Initialize%2A> metodu vaše <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension> implementace, popisovač <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemPropertiesRequested> událost *projectItemType* parametru.
+2. V <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension.Initialize%2A> metodu vaše <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension> implementace, popisovač <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemPropertiesRequested> událost *projectItemType* parametru.
 
-3.  V obslužné rutině události pro <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemPropertiesRequested> události, přidá instanci třídy vlastnosti má <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemPropertiesRequestedEventArgs.PropertySources%2A> kolekce parametr argumenty události.
+3. V obslužné rutině události pro <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemPropertiesRequested> události, přidá instanci třídy vlastnosti má <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemPropertiesRequestedEventArgs.PropertySources%2A> kolekce parametr argumenty události.
 
 ## <a name="example"></a>Příklad
  Následující příklad kódu ukazuje, jak přidat vlastnost s názvem **Příklad vlastnosti** do položky projektu příjemce událostí.
@@ -48,22 +48,22 @@ ms.locfileid: "56644426"
 ### <a name="specify-the-behavior-of-custom-properties"></a>Zadejte chování vlastní vlastnosti
  Můžete definovat, jak vlastní vlastnosti se zobrazí a jak se bude chovat v **vlastnosti** okna s použitím atributů z <xref:System.ComponentModel> oboru názvů v definici vlastnosti. Následující atributy jsou užitečné v mnoha scénářích:
 
--   <xref:System.ComponentModel.DisplayNameAttribute>: Určuje název vlastnosti, která se zobrazí **vlastnosti** okna.
+- <xref:System.ComponentModel.DisplayNameAttribute>: Určuje název vlastnosti, která se zobrazí **vlastnosti** okna.
 
--   <xref:System.ComponentModel.DescriptionAttribute>: Určuje řetězec popisu, který se zobrazí v dolní části **vlastnosti** okno, pokud je vybrána vlastnost.
+- <xref:System.ComponentModel.DescriptionAttribute>: Určuje řetězec popisu, který se zobrazí v dolní části **vlastnosti** okno, pokud je vybrána vlastnost.
 
--   <xref:System.ComponentModel.DefaultValueAttribute>: Určuje výchozí hodnotu vlastnosti.
+- <xref:System.ComponentModel.DefaultValueAttribute>: Určuje výchozí hodnotu vlastnosti.
 
--   <xref:System.ComponentModel.TypeConverterAttribute>: Určuje vlastní převod mezi řetězci, který se zobrazí v **vlastnosti** okna a hodnotu vlastnosti jiné než řetězec.
+- <xref:System.ComponentModel.TypeConverterAttribute>: Určuje vlastní převod mezi řetězci, který se zobrazí v **vlastnosti** okna a hodnotu vlastnosti jiné než řetězec.
 
--   <xref:System.ComponentModel.EditorAttribute>: Určuje vlastní editor použít ke změně vlastnosti.
+- <xref:System.ComponentModel.EditorAttribute>: Určuje vlastní editor použít ke změně vlastnosti.
 
 ## <a name="compile-the-code"></a>Kompilace kódu
  Tyto příklady vyžadují projekt knihovny tříd s odkazy na následující sestavení:
 
--   Microsoft.VisualStudio.SharePoint
+- Microsoft.VisualStudio.SharePoint
 
--   System.ComponentModel.Composition
+- System.ComponentModel.Composition
 
 ## <a name="deploy-the-extension"></a>Nasazení rozšíření
  Chcete-li nasadit rozšíření, vytvořte [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] extension (VSIX) balíčku pro sestavení a všechny další soubory, které chcete distribuovat s příponou. Další informace najdete v tématu [nasadit rozšíření pro nástroje služby SharePoint v sadě Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).

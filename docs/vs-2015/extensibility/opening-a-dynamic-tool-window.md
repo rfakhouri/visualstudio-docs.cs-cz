@@ -10,12 +10,12 @@ ms.assetid: 21547ba7-6e81-44df-9277-265bf34f877a
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 80d2666fc40fa561a0e2993ca50edd0dcf72dbc4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 4302e7eabb8e731a4332116956614643a4b95ef2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54799881"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076783"
 ---
 # <a name="opening-a-dynamic-tool-window"></a>Otevření dynamického panelu nástrojů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,9 +34,9 @@ Okna nástrojů jsou obvykle otevřené z příkazu nabídky nebo ekvivalentní 
   
 ### <a name="to-open-a-dynamic-tool-window"></a>K otevření dynamického panelu nástrojů  
   
-1.  Vytvořte projekt VSIX s názvem **DynamicToolWindow** a přidat šablonu položky okna nástroje s názvem **DynamicWindowPane.cs**. Další informace najdete v tématu [vytváření rozšíření pomocí panelu nástrojů](../extensibility/creating-an-extension-with-a-tool-window.md).  
+1. Vytvořte projekt VSIX s názvem **DynamicToolWindow** a přidat šablonu položky okna nástroje s názvem **DynamicWindowPane.cs**. Další informace najdete v tématu [vytváření rozšíření pomocí panelu nástrojů](../extensibility/creating-an-extension-with-a-tool-window.md).  
   
-2.  V souboru DynamicWindowPanePackage.cs najdete DynamicWindowPanePackage deklarace. Přidat <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> a T:Microsoft.VisualStudio.Shell.ProvideToolWindowVisibilityAttribute atributy registrace panel nástrojů.  
+2. V souboru DynamicWindowPanePackage.cs najdete DynamicWindowPanePackage deklarace. Přidat <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> a T:Microsoft.VisualStudio.Shell.ProvideToolWindowVisibilityAttribute atributy registrace panel nástrojů.  
   
     ```vb  
     [[ProvideToolWindow(typeof(DynamicWindowPane)]  
@@ -52,6 +52,6 @@ Okna nástrojů jsou obvykle otevřené z příkazu nabídky nebo ekvivalentní 
   
      Tento registr – okno nástroje s názvem DynamicWindowPane jako přechodné okna, která není zachována, když je aplikace Visual Studio zavřít a znovu otevřít. Otevřít DynamicWindowPane pokaždé, když <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExists_string> platí a uzavřených jinak.  
   
-3.  Sestavte projekt a spusťte ladění. Experimentální instanci aplikace by se zobrazit. Panel nástrojů byste neměli vidět.  
+3. Sestavte projekt a spusťte ladění. Experimentální instanci aplikace by se zobrazit. Panel nástrojů byste neměli vidět.  
   
-4.  Otevřete projekt v experimentální instanci aplikace. By se zobrazit panel nástrojů.
+4. Otevřete projekt v experimentální instanci aplikace. By se zobrazit panel nástrojů.

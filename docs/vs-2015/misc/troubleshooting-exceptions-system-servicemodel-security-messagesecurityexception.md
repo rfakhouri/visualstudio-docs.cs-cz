@@ -12,21 +12,21 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b6d63393313097503ed92c8a540d85152b3f8688
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ce4b5671d0e10d2f524ee96494d37cb68babe72a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54794004"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60058873"
 ---
 # <a name="troubleshooting-exceptions-systemservicemodelsecuritymessagesecurityexception"></a>Řešení potíží s výjimkami: System.ServiceModel.Security.MessageSecurityException
 A <xref:System.ServiceModel.Security.MessageSecurityException> výjimka je vyvolána, když [!INCLUDE[vsindigo](../includes/vsindigo-md.md)] Určuje, že zpráva není správně zabezpečené nebo nebude bylo manipulováno. Dojde k chybě nejčastěji Pokud jsou splněny všechny následující podmínky:  
   
--   Pomocí odkazu na službu WCF prostřednictvím vzdáleného připojení, jako je připojení ke vzdálené ploše nebo Terminálovými službami komunikovat se službou WCF (.svc) v projektu webové stránky nebo webové aplikace.  
+- Pomocí odkazu na službu WCF prostřednictvím vzdáleného připojení, jako je připojení ke vzdálené ploše nebo Terminálovými službami komunikovat se službou WCF (.svc) v projektu webové stránky nebo webové aplikace.  
   
--   Nemáte oprávnění správce na vzdáleném serveru.  
+- Nemáte oprávnění správce na vzdáleném serveru.  
   
--   Právě zpracovávají požadavky na místního hostitele vzdálené lokality [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] vývojový Server.  
+- Právě zpracovávají požadavky na místního hostitele vzdálené lokality [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] vývojový Server.  
   
 ## <a name="associated-tips"></a>Přidružené tipy  
  **Při použití serveru ASP.Net Development Server, vyřešte potíže s ověřováním NTLM.**  
@@ -78,11 +78,11 @@ A <xref:System.ServiceModel.Security.MessageSecurityException> výjimka je vyvol
   
 #### <a name="to-turn-off-ntlm-security"></a>Chcete-li vypnout zabezpečení NTLM  
   
-1.  V **Průzkumníka řešení**, klikněte pravým tlačítkem na název webového serveru a potom klikněte na tlačítko **stránky vlastností**.  
+1. V **Průzkumníka řešení**, klikněte pravým tlačítkem na název webového serveru a potom klikněte na tlačítko **stránky vlastností**.  
   
-2.  Vyberte **možnosti spuštění**a poté zrušte zaškrtnutí **ověřování protokolem NTLM** zaškrtávací políčko.  
+2. Vyberte **možnosti spuštění**a poté zrušte zaškrtnutí **ověřování protokolem NTLM** zaškrtávací políčko.  
   
-3.  Klikněte na **OK**.  
+3. Klikněte na **OK**.  
   
 ## <a name="see-also"></a>Viz také  
  <xref:System.ServiceModel.Security.MessageSecurityException>   

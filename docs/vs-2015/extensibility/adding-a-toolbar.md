@@ -11,12 +11,12 @@ ms.assetid: 17302c25-6f59-4e97-8c85-54f95336a07f
 caps.latest.revision: 39
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 12c57f83e992750ddc12c50fafb2065345022f80
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: de74961715a82dde4e184509094d05145ad0f79c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54771295"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077716"
 ---
 # <a name="adding-a-toolbar"></a>Přidání panelu nástrojů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ Tento návod ukazuje, jak přidat panel nástrojů Visual Studio IDE.
   
 ## <a name="creating-a-toolbar-for-the-ide"></a>Vytváření panelů nástrojů pro prostředí IDE  
   
-1.  V ToolbarTestCommandPackage.vsct vyhledejte v části symboly. V guidsymbol – element s názvem guidToolbarTestCommandPackageCmdSet přidejte deklarace pro panel nástrojů a panelu nástrojů skupiny, následujícím způsobem.  
+1. V ToolbarTestCommandPackage.vsct vyhledejte v části symboly. V guidsymbol – element s názvem guidToolbarTestCommandPackageCmdSet přidejte deklarace pro panel nástrojů a panelu nástrojů skupiny, následujícím způsobem.  
   
     ```xml  
     <IDSymbol name="Toolbar" value="0x1000" />  
@@ -45,7 +45,7 @@ Tento návod ukazuje, jak přidat panel nástrojů Visual Studio IDE.
   
     ```  
   
-2.  V horní části příkazy vytvořte oddíl nabídky. Přidejte prvek nabídky do části nabídky k definování panelu nástrojů.  
+2. V horní části příkazy vytvořte oddíl nabídky. Přidejte prvek nabídky do části nabídky k definování panelu nástrojů.  
   
     ```xml  
     <Menus>  
@@ -62,7 +62,7 @@ Tento návod ukazuje, jak přidat panel nástrojů Visual Studio IDE.
   
      Panely nástrojů nemůže být vnořena jako dílčích nabídek. Proto nemáte přiřazení nadřazené skupiny. Navíc není nutné nastavit prioritu, protože uživatel může přesunout panely nástrojů. Obvykle je počáteční umístění panelu nástrojů definované prostřednictvím kódu programu, ale jsou zachované následné změny uživatelem.  
   
-3.  V [skupiny](../extensibility/groups-element.md) části po položce existující skupiny, definujte [skupiny](../extensibility/group-element.md) element tak, aby obsahovala příkazů pro panel nástrojů.  
+3. V [skupiny](../extensibility/groups-element.md) části po položce existující skupiny, definujte [skupiny](../extensibility/group-element.md) element tak, aby obsahovala příkazů pro panel nástrojů.  
   
     ```xml  
     <Group guid="guidToolbarTestCommandPackageCmdSet" id="ToolbarGroup"  
@@ -71,7 +71,7 @@ Tento návod ukazuje, jak přidat panel nástrojů Visual Studio IDE.
     </Group>  
     ```  
   
-4.  Aby se tlačítko zobrazilo na panelu nástrojů. V části tlačítka nahraďte nadřazený blok tlačítka na panelu nástrojů. Výsledného bloku tlačítko by měl vypadat nějak takto:  
+4. Aby se tlačítko zobrazilo na panelu nástrojů. V části tlačítka nahraďte nadřazený blok tlačítka na panelu nástrojů. Výsledného bloku tlačítko by měl vypadat nějak takto:  
   
     ```xml  
     <Button guid="guidToolbarTestCommandPackageCmdSet" id="ToolbarTestCommandId" priority="0x0100" type="Button">  
@@ -85,11 +85,11 @@ Tento návod ukazuje, jak přidat panel nástrojů Visual Studio IDE.
   
      Ve výchozím nastavení Pokud panel nástrojů nemá žádné příkazy se nezobrazí.  
   
-5.  Sestavte projekt a spusťte ladění. Experimentální instanci aplikace by se zobrazit.  
+5. Sestavte projekt a spusťte ladění. Experimentální instanci aplikace by se zobrazit.  
   
-6.  Klikněte pravým tlačítkem na řádku nabídek sady Visual Studio zobrazíte seznam panely nástrojů. Vyberte **testování nástrojů**.  
+6. Klikněte pravým tlačítkem na řádku nabídek sady Visual Studio zobrazíte seznam panely nástrojů. Vyberte **testování nástrojů**.  
   
-7.  Teď byste měli vidět panelu nástrojů jako ikony napravo od najít v souborech ikonu. Když kliknete na ikonu, zobrazí se okno se zprávou, že **ToolbarTestCommandPackage. Inside IDEToolbar.ToolbarTestCommand.MenuItemCallback()**.  
+7. Teď byste měli vidět panelu nástrojů jako ikony napravo od najít v souborech ikonu. Když kliknete na ikonu, zobrazí se okno se zprávou, že **ToolbarTestCommandPackage. Inside IDEToolbar.ToolbarTestCommand.MenuItemCallback()**.  
   
 ## <a name="see-also"></a>Viz také  
  [Příkazy, nabídky a panely nástrojů](../extensibility/internals/commands-menus-and-toolbars.md)

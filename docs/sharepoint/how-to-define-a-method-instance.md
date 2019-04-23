@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2f879f8367ad1b992300c9e5b1c8a2887e89205b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 318744ec1a1a9214ce0385fc56fb1c0cf340339b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56608005"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068493"
 ---
 # <a name="how-to-define-a-method-instance"></a>Postupy: Definování instance metody
   Je nutné zadat alespoň jednu instanci metody pro každou metodu ve vašem modelu.
@@ -29,15 +29,15 @@ ms.locfileid: "56608005"
 
 ### <a name="to-define-a-method-instance"></a>Definování instance metody
 
-1.  V **podrobnosti metody služby BDC** okna, rozbalte uzel metodu a poté rozbalte **instance** uzlu.
+1. V **podrobnosti metody služby BDC** okna, rozbalte uzel metodu a poté rozbalte **instance** uzlu.
 
-2.  V **přidat instanci metody** klikněte na položku **vytvořit instanci Finder**.
+2. V **přidat instanci metody** klikněte na položku **vytvořit instanci Finder**.
 
      Nová instance metody se zobrazí pod **instance** uzlu.
 
-3.  V panelu nabídky zvolte **zobrazení** > **okno vlastností**.
+3. V panelu nabídky zvolte **zobrazení** > **okno vlastností**.
 
-4.  V **vlastnosti** okno, nastavte vlastnosti metody instance. Další informace o jednotlivých vlastnostech najdete v tématu [třídu MethodInstance](http://go.microsoft.com/fwlink/?LinkID=169282).
+4. V **vlastnosti** okno, nastavte vlastnosti metody instance. Další informace o jednotlivých vlastnostech najdete v tématu [třídu MethodInstance](http://go.microsoft.com/fwlink/?LinkID=169282).
 
 ## <a name="see-also"></a>Viz také:
 - [Přehled nástroje pro navrhování modelů služby BDC](../sharepoint/bdc-model-design-tools-overview.md)

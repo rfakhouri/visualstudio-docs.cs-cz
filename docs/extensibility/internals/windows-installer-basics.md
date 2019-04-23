@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d2712c8d52ffd569f7d422708de612ac322045f8
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: bf47b5c6aa84cb5d5cc961e34161435dc27dd517
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57872950"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066257"
 ---
 # <a name="windows-installer-basics"></a>Základní informace o Instalační službě systému Windows
 Instalační program Windows instaluje a odinstaluje aplikací nebo softwarové produkty na počítači uživatele, provedení těchto úloh v jednotkách nazývaných součásti Instalační služby systému Windows (říká se jim WICs nebo pouze komponenty). Identifikátor GUID identifikuje každý WIC, což je základní jednotkou instalace a pro nastavení pomocí Instalační služby systému Windows pro počítání odkazů.
@@ -57,15 +57,15 @@ Instalační program Windows instaluje a odinstaluje aplikací nebo softwarové 
 
 #### <a name="installer-enforced-rules"></a>Pravidla vynucovat instalačního programu
 
--   Všechny soubory v dané součásti musí být nainstalovány do stejného adresáře. Naopak soubory nainstalovat do samostatné složky musí patřit do samostatné součásti.
+- Všechny soubory v dané součásti musí být nainstalovány do stejného adresáře. Naopak soubory nainstalovat do samostatné složky musí patřit do samostatné součásti.
 
--   Může existovat jenom jedna cesta ke klíči jednotlivé komponenty. Jako cestu ke klíči je jednoduše souborů nebo registru klíč, který představuje celé součást.
+- Může existovat jenom jedna cesta ke klíči jednotlivé komponenty. Jako cestu ke klíči je jednoduše souborů nebo registru klíč, který představuje celé součást.
 
 #### <a name="component-provider-responsibilities"></a>Součást poskytovatele odpovědnosti
 
--   Žádné dva prostředky, které může dodávat odděleně v budoucích verzích by měla existovat v jednotlivých součástí. Prostředky by měly být seskupeny do pod stejnou komponentou pouze v případě, že jste si jisti, že tyto prostředky se nikdy dodávat odděleně. Ve skutečnosti se doporučuje, všechny primární prostředky (například DLL) vždy v samostatných WICs existovat. Další informace najdete v tématu [definování komponenty instalačního programu](/windows/desktop/Msi/defining-installer-components).
+- Žádné dva prostředky, které může dodávat odděleně v budoucích verzích by měla existovat v jednotlivých součástí. Prostředky by měly být seskupeny do pod stejnou komponentou pouze v případě, že jste si jisti, že tyto prostředky se nikdy dodávat odděleně. Ve skutečnosti se doporučuje, všechny primární prostředky (například DLL) vždy v samostatných WICs existovat. Další informace najdete v tématu [definování komponenty instalačního programu](/windows/desktop/Msi/defining-installer-components).
 
--   Ve více než jeden WIC by nikdy dodávat systémovou správou verzí se žádný prostředek.
+- Ve více než jeden WIC by nikdy dodávat systémovou správou verzí se žádný prostředek.
 
 ## <a name="see-also"></a>Viz také
 - [Co se stane, pokud jsou porušení pravidla komponenty?](/windows/desktop/Msi/what-happens-if-the-component-rules-are-broken)

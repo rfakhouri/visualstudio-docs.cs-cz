@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 63726f9f38cdede6c8a0525b74244baac9455aad
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 02bfb1b4797973b3946405c38598409bf3247c70
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58790378"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065737"
 ---
 # <a name="deploy-uwp-apps-from-visual-studio"></a>Nasazení aplikací pro UPW ze sady Visual Studio
 
@@ -36,18 +36,18 @@ Nasazení je automaticky při ladění aplikace v sadě Visual Studio s použit�
 
 - Nasazení aplikace, která bude laděn, kdy byla spuštěna jiná aplikace nebo metody.
 
-##  <a name="BKMK_How_to_deploy_a_Windows_Store_app"></a> Jak nasadit aplikace pro UPW
+## <a name="BKMK_How_to_deploy_a_Windows_Store_app"></a> Jak nasadit aplikace pro UPW
  Ruční nasazení aplikace je jednoduchý proces:
 
-1.  Pokud provádíte nasazení na vzdáleném zařízení, zadejte název nebo IP adresa zařízení, na stránce vlastností projektu z projektu po spuštění aplikace. (Tento postup jsou uvedeny níže v tomto tématu.).
+1. Pokud provádíte nasazení na vzdáleném zařízení, zadejte název nebo IP adresa zařízení, na stránce vlastností projektu z projektu po spuštění aplikace. (Tento postup jsou uvedeny níže v tomto tématu.).
 
-2.  Na panelu nástrojů ladicího programu sady Visual Studio, zvolte cíl nasazení z rozevíracího seznamu vedle položky **spustit ladění** tlačítko.
+2. Na panelu nástrojů ladicího programu sady Visual Studio, zvolte cíl nasazení z rozevíracího seznamu vedle položky **spustit ladění** tlačítko.
 
      ![Spustit na místním počítači](../debugger/media/vsrun_f5_local.png "VSRUN_F5_Local")
 
-3.  Na **sestavení** nabídce zvolte **nasazení**
+3. Na **sestavení** nabídce zvolte **nasazení**
 
-##  <a name="BKMK_How_to_specify_a_remote_device"></a> Určení vzdáleného zařízení
+## <a name="BKMK_How_to_specify_a_remote_device"></a> Určení vzdáleného zařízení
 
 **Požadované součásti**
 
@@ -92,7 +92,7 @@ Nasazení používá síťový kanál. vzdálený ladicí program ke vzdáleném
 
 10. Zadejte síťový název vzdáleného zařízení **vzdálený počítač** pole nebo klikněte na tlačítko **najít** pro výběr zařízení z **vyberte připojení vzdáleného ladicího programu** dialogové okno.
 
-##  <a name="BKMK_Deployment_options"></a> Možnosti nasazení
+## <a name="BKMK_Deployment_options"></a> Možnosti nasazení
 
 Můžete nastavit následující možnosti nasazení na stránky vlastnosti ladění projektu při spuštění.
 

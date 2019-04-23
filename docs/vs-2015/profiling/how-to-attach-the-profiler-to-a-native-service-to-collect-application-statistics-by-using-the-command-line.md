@@ -9,12 +9,12 @@ caps.latest.revision: 30
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6575cf949084b8fa1bdbb0c891cafdc720e809d3
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 214a7fc8144d50dac52a5be1b45d9d5fc2b4a633
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59666374"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078600"
 ---
 # <a name="how-to-attach-the-profiler-to-a-native-service-to-collect-application-statistics-by-using-the-command-line"></a>Postupy: Připojit Profiler k nativní službě ke shromažďování statistik aplikace pomocí příkazového řádku
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,7 +81,7 @@ Toto téma popisuje způsob použití [!INCLUDE[vsprvs](../includes/vsprvs-md.md
 
 #### <a name="to-start-and-stop-data-collection"></a>Spuštění a zastavení shromažďování dat  
 
--   Následující páry **VSPerfCmd** možností spouští a zastavují sběr dat. Každou možnost zadejte na samostatný příkazový řádek. Sběr dat lze zapnout a vypnout několikrát.  
+- Následující páry **VSPerfCmd** možností spouští a zastavují sběr dat. Každou možnost zadejte na samostatný příkazový řádek. Sběr dat lze zapnout a vypnout několikrát.  
 
     |Možnost|Popis|  
     |------------|-----------------|  
@@ -94,15 +94,15 @@ Toto téma popisuje způsob použití [!INCLUDE[vsprvs](../includes/vsprvs-md.md
 
 #### <a name="to-end-a-profiling-session"></a>Chcete-li ukončit relaci profilování  
 
-1.  Proveďte jednu z následujících-li odpojit profiler od cílové aplikace:  
+1. Proveďte jednu z následujících-li odpojit profiler od cílové aplikace:  
 
-    -   Zastavte službu.  
+    - Zastavte službu.  
 
          -nebo-  
 
-    -   Typ **VSPerfCmd / odpojení**  
+    - Typ **VSPerfCmd / odpojení**  
 
-2.  Vypněte profiler. Typ:  
+2. Vypněte profiler. Typ:  
 
      **/ Shutdown VSPerfCmd**  
 

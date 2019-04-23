@@ -26,12 +26,12 @@ caps.latest.revision: 67
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b96ceed46b9411e128a34861fbd06fd53817a18a
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: af1484bef2baadf961eb00c952a50abec5c4a9f1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194454"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066582"
 ---
 # <a name="javascript-intellisense"></a>JavaScript IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,40 +62,40 @@ Technologie IntelliSense umožňuje napsat kód rychleji a s menším množství
 
   Další informace o funkcích technologie IntelliSense [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)], naleznete v tématu [pomocí technologie IntelliSense](../ide/using-intellisense.md).
 
-##  <a name="DeterminingIntelliSenseContext"></a> Určení kontextu technologie IntelliSense
+## <a name="DeterminingIntelliSenseContext"></a> Určení kontextu technologie IntelliSense
  Technologie IntelliSense jazyka JavaScript poskytuje možnosti kódování na základě veškerého skriptu, který je relevantní pro váš aktuální skriptovací kontext. To zahrnuje skriptovací prvky v aktuálním souboru. Patří sem také jakýkoli kód, na který váš skript odkazuje přímo nebo nepřímo, například odkazy na soubor skriptu, odkazy na skript sestavení, odkazy na služby a odkazy související se stránkami.
 
  Aktuální kontext skriptu je vytvořen na základě následujících položek:
 
--   Funkce, které jsou definovány ve všech blocích skriptu v aktivním dokumentu. Vložené bloky kódu skriptu jsou podporovány v souborech, které mají přípony názvu souboru .aspx., .ascx, .master, .html a .htm.
+- Funkce, které jsou definovány ve všech blocích skriptu v aktivním dokumentu. Vložené bloky kódu skriptu jsou podporovány v souborech, které mají přípony názvu souboru .aspx., .ascx, .master, .html a .htm.
 
--   `script` prvky s `src` atributy, které odkazují do jiného souboru skriptu. Cílový soubor skriptu musí mít příponu názvu souboru .js.
+- `script` prvky s `src` atributy, které odkazují do jiného souboru skriptu. Cílový soubor skriptu musí mít příponu názvu souboru .js.
 
--   Soubory jazyka JavaScript, které odkazují jiné soubory jazyka JavaScript pomocí `reference` směrnice.
+- Soubory jazyka JavaScript, které odkazují jiné soubory jazyka JavaScript pomocí `reference` směrnice.
 
--   Referenční skupiny pro globální objekty, rozšíření technologie IntelliSense nebo soubory skriptů pro načtení zpoždění.
+- Referenční skupiny pro globální objekty, rozšíření technologie IntelliSense nebo soubory skriptů pro načtení zpoždění.
 
--   Odkazy na webové služby XML
+- Odkazy na webové služby XML
 
--   <xref:System.Web.UI.ScriptManager> a <xref:System.Web.UI.ScriptManagerProxy> řídí, zda webová aplikace je aplikace ASP.NET s podporou technologie AJAX.
+- <xref:System.Web.UI.ScriptManager> a <xref:System.Web.UI.ScriptManagerProxy> řídí, zda webová aplikace je aplikace ASP.NET s podporou technologie AJAX.
 
--   [!INCLUDE[atlaslib_current_ext](../includes/atlaslib-current-ext-md.md)], Pokud pracujete v aplikaci s povoleným AJAX technologie ASP.NET.
+- [!INCLUDE[atlaslib_current_ext](../includes/atlaslib-current-ext-md.md)], Pokud pracujete v aplikaci s povoleným AJAX technologie ASP.NET.
 
     > [!NOTE]
     >  Technologie IntelliSense není podporována pro skript, který je v atributech obslužné rutiny události na prvcích HTML nebo která je definována v `href` atributy.
 
-##  <a name="ProcessingIntelliSenseInformation"></a> Zpracování informací technologie IntelliSense
+## <a name="ProcessingIntelliSenseInformation"></a> Zpracování informací technologie IntelliSense
  K poskytování technologie IntelliSense jazyka JavaScript provádí služba jazyka následující operace:
 
--   Vytvoří seznam závislých souborů jazyka JavaScript, které jsou založené na odkazech v aktivním dokumentu a na opakovaném zkoumání odkazů skriptu v odkazovaných souborech.
+- Vytvoří seznam závislých souborů jazyka JavaScript, které jsou založené na odkazech v aktivním dokumentu a na opakovaném zkoumání odkazů skriptu v odkazovaných souborech.
 
--   Projde seznam a z každého souboru shromáždí informace o typu a další relevantní data.
+- Projde seznam a z každého souboru shromáždí informace o typu a další relevantní data.
 
--   Agreguje data a předá je službě jazyka JavaScript, která informace o typu a data zpřístupňuje technologii IntelliSense.
+- Agreguje data a předá je službě jazyka JavaScript, která informace o typu a data zpřístupňuje technologii IntelliSense.
 
--   Sleduje změny v souborech, které by mohly ovlivnit seznam technologie IntelliSense, a podle potřeby seznam aktualizuje. Skripty na vzdálených úložištích (například skripty odkazované pomocí HTTP) monitorovány nejsou.
+- Sleduje změny v souborech, které by mohly ovlivnit seznam technologie IntelliSense, a podle potřeby seznam aktualizuje. Skripty na vzdálených úložištích (například skripty odkazované pomocí HTTP) monitorovány nejsou.
 
-##  <a name="Features"></a> Funkce JavaScript IntelliSense
+## <a name="Features"></a> Funkce JavaScript IntelliSense
  Technologie IntelliSense jazyka JavaScript podporuje následující objekty:
 
 - [Elementů dokumentu Object Model (DOM)](#HTMLDom)
@@ -118,21 +118,21 @@ Technologie IntelliSense umožňuje napsat kód rychleji a s menším množství
 
   Pokud technologie IntelliSense nedokáže určit typ objektu, poskytuje možnosti pro doplňování výrazů pomocí identifikátorů v aktivním dokumentu. Další informace najdete v tématu [doplňování výrazů pro identifikátory](../ide/statement-completion-for-identifiers.md).
 
-###  <a name="HTMLDom"></a> Prvky HTML DOM
+### <a name="HTMLDom"></a> Prvky HTML DOM
  Technologie IntelliSense jazyka JavaScript poskytuje programovací odkazy pro elementy Dynamic HTML (DHTML) DOM, jako například `body`, `form`, a `div`. Technologie IntelliSense zobrazuje pouze prvky, které jsou obsaženy v aktuálním dokumentu a na hlavní stránce. Technologie IntelliSense jazyka JavaScript také podporuje `window` a `document` objekty a jejich členy.
 
-###  <a name="IntrinsicObjects"></a> Vnitřní objekty
+### <a name="IntrinsicObjects"></a> Vnitřní objekty
  Technologie IntelliSense jazyka JavaScript poskytuje programovací odkazy pro vnitřní objekty, jako `Array`, `String`, `Math`, `Date`, a `Number`. Další informace o vnitřních objektech naleznete v tématu [standardní předdefinované objekty](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects).
 
-###  <a name="UserDefined"></a> Uživatelem definované proměnné, funkce a objekty
+### <a name="UserDefined"></a> Uživatelem definované proměnné, funkce a objekty
  Pokud změníte soubor jazyka JavaScript [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] prohledá otevřené a odkazované dokumenty k určení všech dostupných prostředků kódu. To zahrnuje proměnné, funkce a objekty, které jste vytvořili. Tyto prostředky jsou pak k dispozici technologii IntelliSense jazyka JavaScript.
 
  Další informace o uživatelem definované proměnné, funkce a objekty, najdete v části [vytváření vlastních objektů](http://go.microsoft.com/fwlink/?LinkId=108671) na webu MSDN.
 
-###  <a name="External"></a> Odkazy na externí soubory
+### <a name="External"></a> Odkazy na externí soubory
  Můžete zahrnout různé typy odkazů na externí soubory, které má technologie IntelliSense ve vašem kódu podporovat. Odkazy na externí soubory mohou být odkazy skriptu, direktivy odkazů nebo mohou být určeny pomocí referenčních skupin.
 
-####  <a name="Script"></a> Odkazy na skript
+#### <a name="Script"></a> Odkazy na skript
  Místo psaní celého klientského skriptu na stránce můžete odkazovat na externí soubory, které obsahují kód skriptu. To usnadňuje opětovné použití kódu mezi stránkami a umožňuje ukládání klientského skriptu do mezipaměti prohlížeče.
 
  Pokud nepracujete s webovou stránkou s podporou technologie ASP.NET AJAX, můžete odkazovat na externí soubor skriptu pomocí `src` atribut v otevírací značce `script` elementu. `src` Atribut určuje adresu URL pro externí soubor, který obsahuje zdrojový kód nebo data.
@@ -159,7 +159,7 @@ Technologie IntelliSense umožňuje napsat kód rychleji a s menším množství
 
  Technologie IntelliSense také podporuje soubory skriptu, které jsou vloženy jako prostředky v sestavení ve webových aplikacích technologie ASP.NET AJAX. Další informace o integrovaných prostředků skriptu naleznete v tématu [názorný postup: Embedding a JavaScript File jako prostředek v sestavení](http://msdn.microsoft.com/library/d8cb78cd-95a9-4dc6-92df-391866817e89).
 
-####  <a name="ReferenceDirectives"></a> Odkazované direktivy
+#### <a name="ReferenceDirectives"></a> Odkazované direktivy
  A `reference` direktiva umožňuje [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] k vytvoření vztahu mezi skript, který právě upravujete a jinými skripty. `reference` Umožňuje zahrnout soubor skriptu do kontextu skriptování aktuálního souboru skriptu. Technologie IntelliSense tak může při kódování odkazovat na externě definované funkce, typy a pole.
 
  Vytváření `reference` direktiv ve formě komentáře XML. Direktiva musí být deklarována v souboru dříve než jakýkoli skript. A `reference` směrnice může obsahovat odkaz na skript na základě disku, odkaz na skript na základě sestavení, odkaz na skript založený na službách nebo odkaz na skript na stránce.
@@ -203,23 +203,23 @@ Technologie IntelliSense umožňuje napsat kód rychleji a s menším množství
 
  Následující pravidla platí pro `reference` směrnice.
 
--   `reference` Komentář XML musí být deklarován před veškerým skriptem.
+- `reference` Komentář XML musí být deklarován před veškerým skriptem.
 
--   Je nutné použít syntaxi komentářů XML se třemi lomítky. Odkazy vytvořené pomocí syntaxe standardních komentářů (dvě lomítka) jsou ignorovány.
+- Je nutné použít syntaxi komentářů XML se třemi lomítky. Odkazy vytvořené pomocí syntaxe standardních komentářů (dvě lomítka) jsou ignorovány.
 
--   Na jednu direktivu lze určit pouze jeden soubor nebo prostředek.
+- Na jednu direktivu lze určit pouze jeden soubor nebo prostředek.
 
--   Více odkazů na skripty na základě stránky není povoleno.
+- Více odkazů na skripty na základě stránky není povoleno.
 
--   Pokud je zadán odkaz na stránku, není povolen žádný jiný typ direktiv odkazu.
+- Pokud je zadán odkaz na stránku, není povolen žádný jiný typ direktiv odkazu.
 
--   Názvy souborů používají relativní cesty. Můžete použít operátor tilda (`~`) Chcete-li aplikace relativní kořenové cesty.
+- Názvy souborů používají relativní cesty. Můžete použít operátor tilda (`~`) Chcete-li aplikace relativní kořenové cesty.
 
--   Absolutní cesty jsou ignorovány.
+- Absolutní cesty jsou ignorovány.
 
--   Direktivy odkazu na odkazovaných stránkách nebudou zpracovány; direktivy odkazu nejsou pro stránky řešeny rekurzivně. Je zahrnut pouze jeden skript, na který stránka odkazuje přímo.
+- Direktivy odkazu na odkazovaných stránkách nebudou zpracovány; direktivy odkazu nejsou pro stránky řešeny rekurzivně. Je zahrnut pouze jeden skript, na který stránka odkazuje přímo.
 
-####  <a name="ReferenceGroups"></a> Referenční skupiny
+#### <a name="ReferenceGroups"></a> Referenční skupiny
  Pomocí předdefinovaných referenčních skupin můžete určit, že konkrétní soubory .js technologie IntelliSense jsou v oboru pro různé projekty jazyka JavaScript. K dispozici jsou následující typy referenčních skupin:
 
 - Implicitní (Windows) pro [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] využívající JavaScript. Soubory zahrnuté v této skupině jsou v oboru pro každý soubor .js otevřený v editoru kódu pro projekt určeného typu.
@@ -246,7 +246,7 @@ Technologie IntelliSense umožňuje napsat kód rychleji a s menším množství
 > [!WARNING]
 >  Pokud tuto funkci povolíte a zaznamenáte snížení výkonu editoru kódu, doporučujeme ji zakázat.
 
-###  <a name="XMLDocComments"></a> Dokumentační komentáře XML
+### <a name="XMLDocComments"></a> Dokumentační komentáře XML
  Dokumentační komentáře XML jsou textové popisy prvků kódu, které můžete přidat do skriptu. Tyto textové popisy jsou zobrazovány v technologii IntelliSense při odkazu na skript s komentářem. Můžete například poskytnout informace o parametrech funkce a návratové hodnotě. Dokumentační komentáře XML jsou k dispozici pouze z odkazovaných souborů, sestavení a služeb. Další informace najdete v tématu [dokumentační komentáře XML](../ide/xml-documentation-comments-javascript.md) a [vytvořit dokumentační komentáře XML](../ide/create-xml-documentation-comments-for-javascript-intellisense.md).
 
  Technologie IntelliSense může dokumentační komentáře XML zobrazit v následujících situacích:
@@ -259,23 +259,23 @@ Technologie IntelliSense umožňuje napsat kód rychleji a s menším množství
 
   Technologie IntelliSense není dostupná, když jeden soubor .aspx odkazuje na jiný soubor .aspx.
 
-###  <a name="ASPNet"></a> Objekty technologie ASP.NET AJAX
+### <a name="ASPNet"></a> Objekty technologie ASP.NET AJAX
  Technologie ASP.NET AJAX podporuje také technologii IntelliSense jazyka JavaScript. Technologie ASP.NET AJAX obsahuje rozhraní klienta, které rozšiřuje standardní typy dostupné v jazyce ECMAScript (JavaScript). Pokud chcete povolit technologii IntelliSense jazyka JavaScript poskytovat podrobnosti o objektech AJAX technologie ASP.NET, byly přidány dokumentační komentáře XML v rámci [!INCLUDE[atlaslib_current_ext](../includes/atlaslib-current-ext-md.md)]. Tyto dokumentační komentáře XML se zobrazí při použití typů a členů, které jsou obsaženy v knihovně technologie ASP.NET AJAX.
 
 > [!NOTE]
 >  Soukromé členy nejsou pomocí technologie IntelliSense jazyka JavaScript zobrazeny. Soukromé členy jsou v technologii ASP.NET AJAX označeny jako členy, které začínají podtržítkem (_).
 
-##  <a name="Extensibility"></a> Rozšíření technologie IntelliSense jazyka JavaScript
+## <a name="Extensibility"></a> Rozšíření technologie IntelliSense jazyka JavaScript
  Služba jazyka JavaScript poskytuje objekty a funkce, které vám umožní změnit prostředí technologie IntelliSense pro vývojáře, kteří používají knihovny třetích stran. Tyto funkce jsou zvláště užitečné v případě, že výchozí služba jazyka není schopna poskytnout všechny informace, které chcete poskytnout zákazníkům. Další informace najdete v tématu [rozšíření technologie IntelliSense jazyka JavaScript](../ide/extending-javascript-intellisense.md).
 
-##  <a name="Validation"></a> Ověření jazyka JavaScript
+## <a name="Validation"></a> Ověření jazyka JavaScript
  Ověření skriptování v jazyce JavaScript probíhá neustále na pozadí. Když [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] zjistí chyby syntaxe v kódu jazyka JavaScript poskytuje zpětnou vazbu následujícími způsoby:
 
--   Podtržením prvků v editoru. Chyby jsou podtrženy červenou vlnovkou. Když nad chybou podržíte ukazatel myši, zobrazí se popis chyby.
+- Podtržením prvků v editoru. Chyby jsou podtrženy červenou vlnovkou. Když nad chybou podržíte ukazatel myši, zobrazí se popis chyby.
 
--   **Seznam chyb** okna. **Seznam chyb** okně se zobrazí popis chyby, soubor, ve kterém došlo k chybě, číslo řádku a sloupce a projekt. Chcete-li zobrazit **seznam chyb** okno v **zobrazení** nabídky, klikněte na tlačítko **seznam chyb**.
+- **Seznam chyb** okna. **Seznam chyb** okně se zobrazí popis chyby, soubor, ve kterém došlo k chybě, číslo řádku a sloupce a projekt. Chcete-li zobrazit **seznam chyb** okno v **zobrazení** nabídky, klikněte na tlačítko **seznam chyb**.
 
--   Okno Výstup zobrazí odkazy, které nebyly načteny.
+- Okno Výstup zobrazí odkazy, které nebyly načteny.
 
 ## <a name="see-also"></a>Viz také
 - [Používání atributu IntelliSense](../ide/using-intellisense.md)

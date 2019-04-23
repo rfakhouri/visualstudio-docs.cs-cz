@@ -8,12 +8,12 @@ manager: jillfra
 ms.technology: vs-azure
 ms.workload:
 - azure
-ms.openlocfilehash: 458334beebe6be24b2bec70d0160688e48e653d6
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 55e18da9eb7e887ca49565725737cfb8c5aa719e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59664327"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075955"
 ---
 # <a name="get-started-with-visual-studio-kubernetes-tools"></a>Začínáme s Kubernetes nástroje sady Visual Studio
 
@@ -36,13 +36,13 @@ Chcete-li využívají tato nová funkce, budete potřebovat:
 ::: moniker range="vs-2017"
 - Pokud chcete publikovat ze sady Visual Studio do AKS (*není* požadovaná pro ladění ve službě AKS pomocí Azure Dev mezery):
 
-    1.  [AKS nástroje pro publikování](https://aka.ms/get-vsk8spublish), která je dostupná jako samostatný soubor ke stažení.
+    1. [AKS nástroje pro publikování](https://aka.ms/get-vsk8spublish), která je dostupná jako samostatný soubor ke stažení.
 
-    1.  Cluster Azure Kubernetes Service. Další informace najdete v tématu [vytváření clusteru AKS](/azure/aks/kubernetes-walkthrough-portal#create-an-aks-cluster). Nezapomeňte [připojení ke clusteru](/azure/aks/kubernetes-walkthrough#connect-to-the-cluster) z vaší pracovní stanici.
+    1. Cluster Azure Kubernetes Service. Další informace najdete v tématu [vytváření clusteru AKS](/azure/aks/kubernetes-walkthrough-portal#create-an-aks-cluster). Nezapomeňte [připojení ke clusteru](/azure/aks/kubernetes-walkthrough#connect-to-the-cluster) z vaší pracovní stanici.
 
-    1.  Helm CLI nainstalované na pracovní stanici vývoje. Další informace najdete v části [instalace Helm](https://github.com/kubernetes/helm/blob/master/docs/install.md).
+    1. Helm CLI nainstalované na pracovní stanici vývoje. Další informace najdete v části [instalace Helm](https://github.com/kubernetes/helm/blob/master/docs/install.md).
 
-    1.  Konfigurovat u vašeho clusteru AKS pomocí Helm `helm init` příkazu. Další informace o tom, jak to provést, najdete v části [konfigurace Helm](/azure/aks/kubernetes-helm#configure-helm).
+    1. Konfigurovat u vašeho clusteru AKS pomocí Helm `helm init` příkazu. Další informace o tom, jak to provést, najdete v části [konfigurace Helm](/azure/aks/kubernetes-helm#configure-helm).
 ::: moniker-end
 
 ## <a name="create-a-new-kubernetes-project"></a>Vytvořte nový projekt Kubernetes

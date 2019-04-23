@@ -11,12 +11,12 @@ ms.assetid: 1c323afd-fb4e-449a-adaa-bb7a5d3b1468
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e47fa574d607f0fe56950b232991ad6e5ff2b351
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 3870027762675f4f9791fa720ae932aedf0b5f90
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867907"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061330"
 ---
 # <a name="enabling-the-azure-sdk"></a>Povolení sady Azure SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,11 +29,11 @@ Sady Azure SDK for .NET pomáhá vytvářet, konfigurovat, sestavení, ladění,
   
 ### <a name="to-enable-the-azure-sdk"></a>Chcete-li povolit sadu Azure SDK  
   
-1.  Na **souboru** nabídky, vytvořte nový projekt. (Klikněte na tlačítko **nový** a potom klikněte na tlačítko **projektu**.)  
+1. Na **souboru** nabídky, vytvořte nový projekt. (Klikněte na tlačítko **nový** a potom klikněte na tlačítko **projektu**.)  
   
-2.  Rozbalte uzel pro buď **jazyka Visual Basic** nebo **jazyka C#** a potom klikněte na tlačítko **cloudu**.  
+2. Rozbalte uzel pro buď **jazyka Visual Basic** nebo **jazyka C#** a potom klikněte na tlačítko **cloudu**.  
   
-3.  V prostředním podokně vyberte **získání sady Azure SDK for .NET**a potom klikněte na tlačítko **OK**.  
+3. V prostředním podokně vyberte **získání sady Azure SDK for .NET**a potom klikněte na tlačítko **OK**.  
   
      Postupujte podle pokynů v instalačním programu.  
   

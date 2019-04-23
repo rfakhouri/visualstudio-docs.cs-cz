@@ -32,12 +32,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: ace3a8b729a9d0f54817bdad2eb5b8ee5343c0a9
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 6590a07ec7fc67bef5f1b1cfd96e80105fa325ce
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59653005"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053726"
 ---
 # <a name="annotating-locking-behavior"></a>Zadávání poznámek o chování při zamykání
 Předejdete tak chybám souběžnosti ve vašem vícevláknovém programu, vždy postupujte podle příslušné zamykání disciplína a použití anotací SAL.
@@ -55,11 +55,11 @@ Předejdete tak chybám souběžnosti ve vašem vícevláknovém programu, vždy
 
  Některé vlákno pravidel vlastnictví brát v úvahu:
 
--   Číselník zámky nebudou uncounted zámky, které mají jasné vlákno vlastnictví.
+- Číselník zámky nebudou uncounted zámky, které mají jasné vlákno vlastnictví.
 
--   Vzájemně vyloučené přístupy a kritické oddíly se počítají zámků, které se mají vymazat vlákno vlastnictví.
+- Vzájemně vyloučené přístupy a kritické oddíly se počítají zámků, které se mají vymazat vlákno vlastnictví.
 
--   Semaforů a události se počítají zámků, které nemají vlastnictví vymazat vlákna.
+- Semaforů a události se počítají zámků, které nemají vlastnictví vymazat vlákna.
 
 ## <a name="locking-annotations"></a>Uzamčení poznámky
  V následující tabulce jsou uvedeny zamykání poznámky.

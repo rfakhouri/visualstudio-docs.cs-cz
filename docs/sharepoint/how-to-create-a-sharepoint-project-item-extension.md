@@ -14,35 +14,35 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 42cea2633ceb0cbda1c63b76a4e2b7775e967bc2
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: c46b629227b1b3d73ee4bc6a265c867921937df2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56597098"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069065"
 ---
 # <a name="how-to-create-a-sharepoint-project-item-extension"></a>Postupy: Vytváření rozšíření položky projektu SharePoint
   Vytváření rozšíření položky projektu, pokud chcete přidat funkce do položky projektu služby SharePoint, která je již nainstalována v sadě Visual Studio. Další informace najdete v tématu [položek projektu služby SharePoint rozšiřte](../sharepoint/extending-sharepoint-project-items.md).
 
 ### <a name="to-create-a-project-item-extension"></a>Chcete-li vytvořit rozšíření položky projektu
 
-1.  Vytvořte projekt knihovny tříd.
+1. Vytvořte projekt knihovny tříd.
 
-2.  Přidejte odkazy na následující sestavení:
+2. Přidejte odkazy na následující sestavení:
 
-    -   Microsoft.VisualStudio.SharePoint
+    - Microsoft.VisualStudio.SharePoint
 
-    -   System.ComponentModel.Composition
+    - System.ComponentModel.Composition
 
-3.  Vytvořte třídu, která implementuje <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension> rozhraní.
+3. Vytvořte třídu, která implementuje <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension> rozhraní.
 
-4.  Přidejte do třídy následující atributy:
+4. Přidejte do třídy následující atributy:
 
-    -   <xref:System.ComponentModel.Composition.ExportAttribute>. Tento atribut umožňuje sadě Visual Studio zjišťovat a načíst vaše <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension> implementace. Předat <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension> typ konstruktoru atributu.
+    - <xref:System.ComponentModel.Composition.ExportAttribute>. Tento atribut umožňuje sadě Visual Studio zjišťovat a načíst vaše <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension> implementace. Předat <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension> typ konstruktoru atributu.
 
-    -   <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute>. V rozšíření položky projektu tento atribut určuje položku projektu, kterou chcete rozšířit. Předejte konstruktoru atributu ID položky projektu. Seznam ID položky projektu, které jsou součástí sady Visual Studio najdete v tématu [položek projektu služby SharePoint rozšiřte](../sharepoint/extending-sharepoint-project-items.md).
+    - <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute>. V rozšíření položky projektu tento atribut určuje položku projektu, kterou chcete rozšířit. Předejte konstruktoru atributu ID položky projektu. Seznam ID položky projektu, které jsou součástí sady Visual Studio najdete v tématu [položek projektu služby SharePoint rozšiřte](../sharepoint/extending-sharepoint-project-items.md).
 
-5.  Ve vaší implementaci <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension.Initialize%2A> metody, použijte členy *projectItemType* parametr definuje chování rozšíření. Tento parametr je <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemType> objekt, který poskytuje přístup k události definované v <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents> a <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemFileEvents> rozhraní. Přístup ke konkrétní instanci rozšiřování typu položky projektu, zpracování <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents> událostech, například <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemAdded> a <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemInitialized>.
+5. Ve vaší implementaci <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension.Initialize%2A> metody, použijte členy *projectItemType* parametr definuje chování rozšíření. Tento parametr je <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemType> objekt, který poskytuje přístup k události definované v <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents> a <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemFileEvents> rozhraní. Přístup ke konkrétní instanci rozšiřování typu položky projektu, zpracování <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents> událostech, například <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemAdded> a <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemInitialized>.
 
 ## <a name="example"></a>Příklad
  Následující příklad kódu ukazuje, jak vytvořit jednoduché rozšíření položky projektu příjemce událostí. Pokaždé, když uživatel přidá položku projektu příjemce událostí do projektu služby SharePoint, toto rozšíření zapíše zprávu do **výstup** okno a **seznam chyb** okna.
@@ -55,9 +55,9 @@ ms.locfileid: "56597098"
 ## <a name="compile-the-code"></a>Kompilace kódu
  Tento příklad vyžaduje odkazy na následující sestavení:
 
--   Microsoft.VisualStudio.SharePoint
+- Microsoft.VisualStudio.SharePoint
 
--   System.ComponentModel.Composition
+- System.ComponentModel.Composition
 
 ## <a name="deploy-the-extension"></a>Nasazení rozšíření
  Chcete-li nasadit rozšíření, vytvořte [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] extension (VSIX) balíčku pro sestavení a všechny další soubory, které chcete distribuovat s příponou. Další informace najdete v tématu [nasazení rozšíření pro nástroje služby SharePoint v sadě Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).

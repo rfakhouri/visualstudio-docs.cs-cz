@@ -20,12 +20,12 @@ caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: bce2eae7c9df527c9b40e8d7f68bda68033449f8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b03f7c69e5eac71f9edc790df31d9704a141e590
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54798471"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065685"
 ---
 # <a name="quickstart-debug-javascript-using-the-console"></a>Rychlý start: Ladění JavaScriptu pomocí konzoly
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +63,7 @@ Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "wi
   
  Pomocí okna konzoly jazyka JavaScript, můžete pracovat s vaší aplikací bez zastavení a restartování ladicího programu. Další informace najdete v tématu [aktualizace aplikace (JavaScript)](../debugger/refresh-an-app-javascript.md). Informace o další funkce, například pomocí Průzkumníka modelu DOM a nastavovat zarážky, ladění jazyka JavaScript naleznete v tématu [rychlý start: Ladění kódu HTML a CSS](../debugger/quickstart-debug-html-and-css.md) a [ladění aplikací v sadě Visual Studio](../debugger/debug-store-apps-in-visual-studio.md).  
   
-##  <a name="InteractiveConsole"></a> Ladění pomocí okna konzoly jazyka JavaScript  
+## <a name="InteractiveConsole"></a> Ladění pomocí okna konzoly jazyka JavaScript  
  Následujícím postupem se vytvoří `FlipView` aplikace a ukazují, jak interaktivně ladění JavaScriptu Chyba kódování.  
   
 > [!CAUTION]
@@ -71,13 +71,13 @@ Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "wi
   
 #### <a name="to-debug-javascript-code-in-the-flipview-app"></a>Chcete-li ladit kód jazyka JavaScript v aplikaci FlipView  
   
-1.  Vytvoření nového řešení v sadě Visual Studio výběrem **souboru** > **nový projekt**.  
+1. Vytvoření nového řešení v sadě Visual Studio výběrem **souboru** > **nový projekt**.  
   
-2.  Zvolte **JavaScript** > **Store aplikace**, zvolte buď **aplikací Windows** nebo **aplikace Windows Phone**a klikněte na tlačítko  **Prázdná aplikace**.  
+2. Zvolte **JavaScript** > **Store aplikace**, zvolte buď **aplikací Windows** nebo **aplikace Windows Phone**a klikněte na tlačítko  **Prázdná aplikace**.  
   
-3.  Zadejte název projektu, například `FlipViewApp`a zvolte **OK** vytvořte aplikaci.  
+3. Zadejte název projektu, například `FlipViewApp`a zvolte **OK** vytvořte aplikaci.  
   
-4.  V elementu tělo default.html nahraďte stávající kód HTML s tímto kódem:  
+4. V elementu tělo default.html nahraďte stávající kód HTML s tímto kódem:  
   
     ```html  
     <div id="flipTemplate" data-win-control="WinJS.Binding.Template"  
@@ -91,7 +91,7 @@ Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "wi
     </div>  
     ```  
   
-5.  Otevřete default.css a přidat šablona stylů CSS pro `#fView` selektor:  
+5. Otevřete default.css a přidat šablona stylů CSS pro `#fView` selektor:  
   
     ```css  
     #fView {  
@@ -101,7 +101,7 @@ Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "wi
     }  
     ```  
   
-6.  Otevřete default.js a nahraďte kód následujícím kódem jazyka JavaScript:  
+6. Otevřete default.js a nahraďte kód následujícím kódem jazyka JavaScript:  
   
     ```javascript  
     (function () {  
@@ -153,11 +153,11 @@ Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "wi
     })();  
     ```  
   
-7.  Pokud ještě není vybraná cíl ladění, zvolte **simulátor** nebo pro Windows Phone, **palec Emulator 8.1 WVGA 4, 512MB** z rozevíracího seznamu vedle položky **zařízení** tlačítko **ladění** nástrojů:  
+7. Pokud ještě není vybraná cíl ladění, zvolte **simulátor** nebo pro Windows Phone, **palec Emulator 8.1 WVGA 4, 512MB** z rozevíracího seznamu vedle položky **zařízení** tlačítko **ladění** nástrojů:  
   
      ![Seznam cílů ladění vyberte](../debugger/media/js-select-target.png "JS_Select_Target")  
   
-8.  Stisknutím klávesy F5 spusťte ladicí program.  
+8. Stisknutím klávesy F5 spusťte ladicí program.  
   
      Spuštění aplikace, ale Image nebyly nalezeny. APPHOST chyby v okně konzoly jazyka JavaScript, týkají chybí obrázky.  
   
@@ -209,18 +209,18 @@ Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "wi
   
      Pro dokončení default.html stránku obsahující opravíte ukázkový kód, naleznete v tématu [ukázkový kód pro ladění jazyka HTML, CSS a JavaScript](../debugger/debug-html-css-and-javascript-sample-code.md).  
   
-##  <a name="InteractiveDebuggingBreakMode"></a> Interaktivní režim ladění a přerušení  
+## <a name="InteractiveDebuggingBreakMode"></a> Interaktivní režim ladění a přerušení  
  Můžete používat zarážky a při použití nástroje, jako jsou okna konzoly jazyka JavaScript ladění JavaScriptu s vnořením do kódu. Pokud program, který běží v ladicí program narazí na zarážku, ladicí program dočasně pozastaví provádění programu. Když je spuštění pozastaveno, program se přepne z režimu spuštění do režimu přerušení. Může obnovit spuštění kdykoli.  
   
  Když je program v režimu přerušení, můžete spouštět skripty a příkazy, které jsou platné v aktuálním kontextu spuštění skriptu okna konzoly jazyka JavaScript. V tomto postupu budete používat pevné verzi `FlipView` aplikaci, kterou jste dříve vytvořili pro demonstraci použití režimu pozastavení.  
   
 #### <a name="to-set-a-breakpoint-and-debug-the-app"></a>Nastavení zarážky a ladit aplikace  
   
-1.  V souboru default.html `FlipView` aplikaci, kterou jste dříve vytvořili, otevřete místní nabídku pro `updateImages()` pracovat a klikněte na tlačítko **zarážku** > **vložit zarážku**.  
+1. V souboru default.html `FlipView` aplikaci, kterou jste dříve vytvořili, otevřete místní nabídku pro `updateImages()` pracovat a klikněte na tlačítko **zarážku** > **vložit zarážku**.  
   
-2.  Zvolte **místního počítače** nebo **palec Emulator 8.1 WVGA 4, 512MB** v rozevíracího seznamu vedle položky **spustit ladění** tlačítko **ladění** panel nástrojů.  
+2. Zvolte **místního počítače** nebo **palec Emulator 8.1 WVGA 4, 512MB** v rozevíracího seznamu vedle položky **spustit ladění** tlačítko **ladění** panel nástrojů.  
   
-3.  Zvolte **ladění** > **spustit ladění**, nebo stiskněte klávesu F5.  
+3. Zvolte **ladění** > **spustit ladění**, nebo stiskněte klávesu F5.  
   
      Aplikace přejde do režimu přerušení, když spuštění dosáhne `updateImages()` funkce a aktuální řádek provádění programu je zvýrazněn žlutě.  
   
@@ -228,36 +228,36 @@ Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "wi
   
      Můžete změnit hodnoty proměnných okamžitě ovlivnit stav programu bez ukončení aktuální relace ladění.  
   
-4.  Typ `updateImages` na řádku a stisknutím klávesy Enter. Vizualizér pro funkce se zobrazí v okně konzoly.  
+4. Typ `updateImages` na řádku a stisknutím klávesy Enter. Vizualizér pro funkce se zobrazí v okně konzoly.  
   
-5.  Vyberte funkci v okně konzoly zobrazíte implementace funkce.  
+5. Vyberte funkci v okně konzoly zobrazíte implementace funkce.  
   
      Následující obrázek znázorňuje okno konzoly v tomto okamžiku.  
   
      ![Okno konzoly jazyka JavaScript vizualizéru](../debugger/media/js-console-function-visualizer.png "JS_Console_Function_Visualizer")  
   
-6.  Zkopírujte jeden řádek z funkce z okna výstup do výzvou k zadání a změňte hodnotu indexu na 3:  
+6. Zkopírujte jeden řádek z funkce z okna výstup do výzvou k zadání a změňte hodnotu indexu na 3:  
   
     ```javascript  
     pages.setAt(3, { flipImg: "http://go.microsoft.com/fwlink/?LinkID=223197" });  
     ```  
   
-7.  Stiskněte klávesu Enter pro spuštění na řádek kódu.  
+7. Stiskněte klávesu Enter pro spuštění na řádek kódu.  
   
      Pokud chcete krokovat kód řádek po řádku, stisknutím klávesy F11 nebo stisknutím klávesy F5 pokračovat v provádění programu.  
   
-8.  Stisknutím klávesy F5 pokračovat v provádění programu. `FlipView` Aplikace se zobrazí, a teď zobrazují všechny čtyři stránky některou k imagí jiné než výchozí.  
+8. Stisknutím klávesy F5 pokračovat v provádění programu. `FlipView` Aplikace se zobrazí, a teď zobrazují všechny čtyři stránky některou k imagí jiné než výchozí.  
   
      Pokud chcete přepnout zpět do sady Visual Studio, stiskněte klávesu F12 nebo Alt + Tab.  
   
-##  <a name="SinglelineMultilineMode"></a> Jednořádkový režim a víceřádkový režim v okně konzoly jazyka JavaScript  
+## <a name="SinglelineMultilineMode"></a> Jednořádkový režim a víceřádkový režim v okně konzoly jazyka JavaScript  
  Výzvou k zadání okna konzoly jazyka JavaScript podporuje jednořádkový režim a víceřádkový režim. Interaktivní ladění postup v tomto tématu poskytuje příklad použití obou režimech. Můžete stisknout kombinaci kláves Ctrl + Alt + M, chcete-li přepnout mezi režimy.  
   
  Poskytuje jednořádkový režim vstupní historie. Vstupní historie můžete procházet pomocí kláves Šipka nahoru a Šipka dolů. Jednořádkový režim vymaže výzvou k zadání při spouštění skriptů. Spustit skript v jednořádkový mód, stiskněte klávesu Enter.  
   
  Víceřádkový režim nevymaže výzvou k zadání při spouštění skriptů. Když přepnout do jednořádkového režimu z víceřádkový režim, můžete vymazat vstupní řádek stisknutím kombinace kláves **vymazat vstup** (červená "X"). Spustit skript v víceřádkový režim, stiskněte klávesy Ctrl + Enter nebo výběrem symbolu šipku v pravém dolním rohu okna.  
   
-##  <a name="Switching"></a> Přepínání kontextu spuštění skriptu  
+## <a name="Switching"></a> Přepínání kontextu spuštění skriptu  
  Okno konzoly JavaScriptu umožňuje interakci s jedno provedení kontext, který představuje jednu instanci hostitele webové platformy (WWAHost.exe), po jednom. V některých případech může aplikaci spustit další instanci hostitele, jako je například při použití `iframe`, kontrakt sdílení, webový pracovní proces, nebo `WebView` ovládacího prvku. Pokud je spuštěna jiná instance hostitele, můžete vybrat kontextu různých spuštění při spuštění aplikace tak, že vyberete kontextu spuštění v **cílové** seznamu.  
   
  Následující obrázek znázorňuje cílového seznamu v okně konzoly jazyka JavaScript.  
@@ -266,14 +266,14 @@ Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "wi
   
  Můžete také přepnout kontext spuštění pomocí `cd` příkaz, ale musíte znát název další kontext spuštění a pomocí odkazu musí být v rozsahu. **Cílové** seznam poskytuje lepší přístup k jiné kontexty provádění.  
   
-##  <a name="BrowserSupport"></a> Prohlížeče a Platformní podpory  
+## <a name="BrowserSupport"></a> Prohlížeče a Platformní podpory  
  Okna konzoly jazyka JavaScript se nepodporuje na následujících platformách:  
   
--   [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] a aplikací pro Windows Phone Store v jazyce JavaScript a HTML  
+- [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] a aplikací pro Windows Phone Store v jazyce JavaScript a HTML  
   
--   Internet Explorer 11 a systémem [!INCLUDE[win81](../includes/win81-md.md)]  
+- Internet Explorer 11 a systémem [!INCLUDE[win81](../includes/win81-md.md)]  
   
--   Aplikace Internet Explorer 10 a systémem [!INCLUDE[win8](../includes/win8-md.md)]  
+- Aplikace Internet Explorer 10 a systémem [!INCLUDE[win8](../includes/win8-md.md)]  
   
 ## <a name="see-also"></a>Viz také  
  [Ladění aplikací v sadě Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)   

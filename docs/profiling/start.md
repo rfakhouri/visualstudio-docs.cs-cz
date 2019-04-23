@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: df1e76c895102d5a33d66628a7c6436ab604b1ba
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: e85c589866aba54e856afb066cec253c7057aaad
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56639762"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071405"
 ---
 # <a name="start"></a>Spustit
 **Start** volba je *VSPerfCmd.exe* možnost, která inicializuje možnost profileru zadané metodě profilování.
@@ -27,13 +27,13 @@ VSPerfCmd.exe /Start:Method /Output:FileName [Options]
 #### <a name="parameters"></a>Parametry
  `Method` Musí být jedna z následujících klíčových slov:
 
--   **TRASOVÁNÍ** -určuje metody instrumentace.
+- **TRASOVÁNÍ** -určuje metody instrumentace.
 
--   **Ukázka** -určuje metody vzorkování.
+- **Ukázka** -určuje metody vzorkování.
 
--   **POKRYTÍ** -určuje pokrytí kódu.
+- **POKRYTÍ** -určuje pokrytí kódu.
 
--   **SOUBĚŽNOST** -určuje metodu kolize prostředků.
+- **SOUBĚŽNOST** -určuje metodu kolize prostředků.
 
 ## <a name="required-options"></a>Požadované možnosti
  **Výstup** možnost musí být zadán při **Start** je zadán v příkazovém řádku.

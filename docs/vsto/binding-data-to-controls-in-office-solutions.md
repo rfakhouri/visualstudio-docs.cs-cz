@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f7d80071871ebe970a9584a1ac40cead7b59ac26
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 1bbcbc2411d261b4ddec9423896dc21acc3e0033
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605715"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073732"
 ---
 # <a name="bind-data-to-controls-in-office-solutions"></a>Vytvoření vazby dat k ovládacím prvkům v řešeních pro systém Office
   Můžete svázat ovládací prvky Windows Forms a *hostování ovládacích prvků* na dokumentu aplikace Microsoft Office Word nebo list aplikace Microsoft Office Excel ke zdroji dat, ovládací prvky automaticky zobrazovat data. Vytvoření vazby dat k ovládacím prvkům v projektech na úrovni aplikace i na úrovni dokumentu.
@@ -73,22 +73,22 @@ ms.locfileid: "56605715"
 ### <a name="bind-data-in-document-level-projects-at-design-time"></a>Vytvoření vazby dat v projektech na úrovni dokumentu v době návrhu
  Následující témata ukazují příklady vazba dat v době návrhu:
 
--   [Postupy: Naplnění listů daty z databáze](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)
+- [Postupy: Naplnění listů daty z databáze](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)
 
--   [Postupy: Naplnění dokumentů daty z databáze](../vsto/how-to-populate-documents-with-data-from-a-database.md)
+- [Postupy: Naplnění dokumentů daty z databáze](../vsto/how-to-populate-documents-with-data-from-a-database.md)
 
--   [Postupy: Naplnění dokumentů daty z objektů](../vsto/how-to-populate-documents-with-data-from-objects.md)
+- [Postupy: Naplnění dokumentů daty z objektů](../vsto/how-to-populate-documents-with-data-from-objects.md)
 
--   [Postupy: Naplnění dokumentů daty ze služeb](../vsto/how-to-populate-documents-with-data-from-services.md)
+- [Postupy: Naplnění dokumentů daty ze služeb](../vsto/how-to-populate-documents-with-data-from-services.md)
 
--   [Postupy: Procházení databázových záznamů na listu](../vsto/how-to-scroll-through-database-records-in-a-worksheet.md)
+- [Postupy: Procházení databázových záznamů na listu](../vsto/how-to-scroll-through-database-records-in-a-worksheet.md)
 
 ### <a name="bind-data-in-vsto-add-in-projects"></a>Vytvoření vazby dat v projekty doplňků VSTO
  V doplňku VSTO projektů můžete přidat ovládací prvky pouze za běhu. Následující témata ukazují příklady vazba dat za běhu:
 
--   [Návod: Jednoduché datové vazby v projektu doplňku VSTO](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md)
+- [Návod: Jednoduché datové vazby v projektu doplňku VSTO](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md)
 
--   [Návod: Rozšířené datové vazby v projektu doplňku VSTO](../vsto/walkthrough-complex-data-binding-in-vsto-add-in-project.md)
+- [Návod: Rozšířené datové vazby v projektu doplňku VSTO](../vsto/walkthrough-complex-data-binding-in-vsto-add-in-project.md)
 
 ## <a name="update-data-that-is-bound-to-host-controls"></a>Aktualizovat data, která je vázána k hostitelské ovládací prvky
  Vytváření datových vazeb mezi zdroji dat a hostitelského ovládacího prvku zahrnuje aktualizace obousměrný data. V jednoduché datové vazby, změny ve zdroji dat se automaticky projeví v hostitelského ovládacího prvku, ale explicitní volání konstruktoru se aktualizovat zdroj dat vyžadovat změny v hostitelského ovládacího prvku. Důvodem je, že v některých případech se změny v jednom poli vázané na data nepřijmou Pokud jsou doplněny změny v jiném poli vázané na data. Například může mít dvě pole, jeden pro stáří a jeden pro let zkušeností. Prostředí může mít maximálně věku. Uživatele nejde aktualizovat starší z 50 až 25 a pak prostředí od 30 do 10 Pokud uživatel provede změny ve stejnou dobu. Pokud chcete tento problém vyřešit, nebudou aktualizovány pole s jednoduchou datovou vazbu, dokud explicitně odesílá aktualizace kódu.

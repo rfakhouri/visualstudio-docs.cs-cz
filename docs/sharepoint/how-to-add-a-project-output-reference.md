@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 22b2073e63d2e6551a47469742142821391c86e3
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2ae3965647416d7a8e11cf0ea5e24cef1e54a09b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56619326"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079782"
 ---
 # <a name="how-to-add-a-project-output-reference"></a>Postupy: Přidání odkazu na výstup projektu
   Nasazení do služby SharePoint bez Sharepointu sestavení projektu (nebo souborů .xap v projekty technologie Silverlight), přidejte je jako odkazu na výstup projektu.
@@ -28,17 +28,17 @@ ms.locfileid: "56619326"
 
 ### <a name="to-add-a-project-output-reference"></a>Přidání odkazu na výstup projektu
 
-1.  Načtení řešení, které obsahuje alespoň jeden projekt služby SharePoint a jeden projekt jiný než služby SharePoint.
+1. Načtení řešení, které obsahuje alespoň jeden projekt služby SharePoint a jeden projekt jiný než služby SharePoint.
 
-2.  V **Průzkumníka řešení**, zvolte položku v uzlu projektu služby SharePoint.
+2. V **Průzkumníka řešení**, zvolte položku v uzlu projektu služby SharePoint.
 
-3.  V **vlastnosti** okna, vyberte **odkazy na výstup projektu** vlastnost a klikněte na tlačítko se třemi tečkami (![elipsa ASP.NET – Návrhář mobilních řešení](../sharepoint/media/mwellipsis.gif "ASP. Návrhář mobilních NET Elipsa")) vedle sebe tlačítko.
+3. V **vlastnosti** okna, vyberte **odkazy na výstup projektu** vlastnost a klikněte na tlačítko se třemi tečkami (![elipsa ASP.NET – Návrhář mobilních řešení](../sharepoint/media/mwellipsis.gif "ASP. Návrhář mobilních NET Elipsa")) vedle sebe tlačítko.
 
-4.  V **odkazy na výstup projektu** dialogového okna zvolte **přidat** tlačítko.
+4. V **odkazy na výstup projektu** dialogového okna zvolte **přidat** tlačítko.
 
-5.  V podokně vlastností klikněte na šipku vedle položky **typ nasazení** vlastnost a pak zvolte příslušnou hodnotu pro položku mimo SharePoint odkazujete, jako například **ElementFile**.
+5. V podokně vlastností klikněte na šipku vedle položky **typ nasazení** vlastnost a pak zvolte příslušnou hodnotu pro položku mimo SharePoint odkazujete, jako například **ElementFile**.
 
-6.  Klikněte na šipku vedle položky **název projektu**, zvolte název položky projektu jiný než služby SharePoint a klikněte na tlačítko **OK** tlačítko.
+6. Klikněte na šipku vedle položky **název projektu**, zvolte název položky projektu jiný než služby SharePoint a klikněte na tlačítko **OK** tlačítko.
 
 ## <a name="see-also"></a>Viz také:
 - [Zadání informací o balení a nasazení v položkách projektu](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)

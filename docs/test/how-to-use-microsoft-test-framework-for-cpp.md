@@ -7,22 +7,22 @@ manager: jillfra
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: f4508856fd2aa280a9e9d62c7e4add9e6ca383c1
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 14f2b1e5267bd5c9ce35375c6cf6438406aa3e80
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649216"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072055"
 ---
 # <a name="use-the-microsoft-unit-testing-framework-for-c-in-visual-studio"></a>Použít Microsoft rozhraní testování části pro C++ v sadě Visual Studio
 
 Ve výchozím nastavení je zahrnuto Microsoft Unit Testing Framework pro C++ **Desktop Development with C++** pracovního vytížení.
 
-##  <a name="separate_project"></a> Pro psaní jednotkových testů testovacího projektu
+## <a name="separate_project"></a> Pro psaní jednotkových testů testovacího projektu
 
 Obvykle spustíte testovací kód ve svém vlastním projektu ve stejném řešení jako kód, který chcete testovat. Chcete-li vytvořit a nakonfigurovat nový testovací projekt, naleznete v tématu [zápis testů jednotek pro C/C++](writing-unit-tests-for-c-cpp.md).
 
-##  <a name="same_project"></a> Pro psaní jednotkových testů do stejného projektu
+## <a name="same_project"></a> Pro psaní jednotkových testů do stejného projektu
 
 V některých případech, například při testování Neexportované funkce v knihovně DLL budete možná muset vytvořit testy ve stejném projektu jako program, který testujete. Pro psaní jednotkových testů do stejného projektu:
 
@@ -39,7 +39,7 @@ V některých případech, například při testování Neexportované funkce v 
 
 2. Přidáte soubor testu jednotek C++:
 
-   -   Klikněte pravým tlačítkem na uzel projektu v **Průzkumníka řešení** a zvolte **přidat** > **nová položka** > **Jednotkový Test C++**.
+   - Klikněte pravým tlačítkem na uzel projektu v **Průzkumníka řešení** a zvolte **přidat** > **nová položka** > **Jednotkový Test C++**.
 
 ## <a name="write-the-tests"></a>Zápis testů
 

@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aeaa87cf55b9429904286817b043dcba92d2bfcf
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 03b9d4fb6a92694df55d6732ac80d75645209a87
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335217"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071275"
 ---
 # <a name="vspackage-structure-source-control-vspackage"></a>Struktura balíčku VSPackage (balíček VSPackage správy zdrojového kódu)
 
@@ -28,23 +28,23 @@ VSPackage deklaruje jeho položky nabídky a vytvoří výchozí položku Stav p
 
 Balíčku VSPackage správy zdrojového kódu je integrováno do sady Visual Studio. Sémantika VSPackage patří:
 
--   Rozhraní k implementaci tím, že se VSPackage ( `IVsPackage` rozhraní)
+- Rozhraní k implementaci tím, že se VSPackage ( `IVsPackage` rozhraní)
 
--   Implementace příkazu uživatelského rozhraní (.vsct souborů a provádění <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> rozhraní)
+- Implementace příkazu uživatelského rozhraní (.vsct souborů a provádění <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> rozhraní)
 
--   Registrace balíčku VSPackage pomocí sady Visual Studio.
+- Registrace balíčku VSPackage pomocí sady Visual Studio.
 
 Ovládací prvek zdroje balíčku VSPackage musí komunikovat s tyto sady Visual Studio entity:
 
--   Projekty
+- Projekty
 
--   Editory
+- Editory
 
--   Řešení
+- Řešení
 
--   Windows
+- Windows
 
--   Spuštění tabulky dokumentů
+- Spuštění tabulky dokumentů
 
 ### <a name="visual-studio-environment-services-that-may-be-consumed"></a>Prostředí služby Visual Studio, které mohou být využívány
 

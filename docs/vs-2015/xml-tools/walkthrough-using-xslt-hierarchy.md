@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5d662a94a77dff02fd994122e5106f5bff35bac3
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: ed644c1dda4ac3674ef60d0027c37532fc6d0f92
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59669442"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075621"
 ---
 # <a name="walkthrough-using-xslt-hierarchy"></a>Návod: Používání hierarchie XSLT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ Nástroj XSLT Hierarchy zjednodušuje mnoho úloh vývoje XML. Šablony stylů X
   
 ### <a name="procedure-title"></a>Název procedury  
   
-1.  Otevřete dokument XML v sadě Visual Studio. Tento příklad používá následující `collection.xml` dokumentu.  
+1. Otevřete dokument XML v sadě Visual Studio. Tento příklad používá následující `collection.xml` dokumentu.  
   
     ```  
     <?xml version="1.0" encoding="utf-8"?>  
@@ -51,7 +51,7 @@ Nástroj XSLT Hierarchy zjednodušuje mnoho úloh vývoje XML. Šablony stylů X
     </COLLECTION>  
     ```  
   
-2.  Přidejte následující `xslincludefile.xsl`:  
+2. Přidejte následující `xslincludefile.xsl`:  
   
     ```  
     <?xml version='1.0'?>  
@@ -74,7 +74,7 @@ Nástroj XSLT Hierarchy zjednodušuje mnoho úloh vývoje XML. Šablony stylů X
     </xsl:stylesheet>  
     ```  
   
-3.  Přidejte následující `xslinclude.xsl` souboru:  
+3. Přidejte následující `xslinclude.xsl` souboru:  
   
     ```  
     <?xml version='1.0'?>  
@@ -108,11 +108,11 @@ Nástroj XSLT Hierarchy zjednodušuje mnoho úloh vývoje XML. Šablony stylů X
     </xsl:stylesheet>  
     ```  
   
-4.  Přidejte zarážku na instrukci: `<xsl:include href="xslincludefile.xsl" />`  
+4. Přidejte zarážku na instrukci: `<xsl:include href="xslincludefile.xsl" />`  
   
-5.  Spusťte ladění.  
+5. Spusťte ladění.  
   
-6.  Pokud ladicí program se zastaví podle instrukce `<xsl:include href="xslincludefile.xsl" />`, stiskněte klávesu Krok dovnitř tlačítko. Všimněte si, že ladění můžete pokračovat v odkazované šablony stylů. V hierarchii je viditelná a Návrhář zobrazí správné cestě.  
+6. Pokud ladicí program se zastaví podle instrukce `<xsl:include href="xslincludefile.xsl" />`, stiskněte klávesu Krok dovnitř tlačítko. Všimněte si, že ladění můžete pokračovat v odkazované šablony stylů. V hierarchii je viditelná a Návrhář zobrazí správné cestě.  
   
 ## <a name="see-also"></a>Viz také  
  [Návod: XSLT Profiler](../xml-tools/walkthrough-xslt-profiler.md)

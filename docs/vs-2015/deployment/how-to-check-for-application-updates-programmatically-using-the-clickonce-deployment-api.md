@@ -16,12 +16,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ac7a5665b287f51e59d99d21802acc252a55a99a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e0c2b544a72f8a50000b48092658254c6b978a1c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54793228"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074346"
 ---
 # <a name="how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api"></a>Postupy: Kontrola aktualizací aplikace programově pomocí rozhraní API nasazení ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,19 +37,19 @@ ClickOnce poskytuje dva způsoby, jak je nasadíte aktualizaci aplikace. V prvn�
   
 ### <a name="to-check-for-updates-programmatically"></a>Kontrolu aktualizací prostřednictvím kódu programu  
   
-1.  Vytvoření nové aplikace Windows Forms pomocí oblíbených nástrojů příkazového řádku nebo visual.  
+1. Vytvoření nové aplikace Windows Forms pomocí oblíbených nástrojů příkazového řádku nebo visual.  
   
-2.  Vytvoření jakékoli tlačítko, položka nabídky nebo jinou položku uživatelského rozhraní se mají vaši uživatelé k výběru a vyhledat aktualizace. Z obslužné rutiny události danou položku zavolejte následující metodu do kontrolovat a instalovat aktualizace.  
+2. Vytvoření jakékoli tlačítko, položka nabídky nebo jinou položku uživatelského rozhraní se mají vaši uživatelé k výběru a vyhledat aktualizace. Z obslužné rutiny události danou položku zavolejte následující metodu do kontrolovat a instalovat aktualizace.  
   
      [!code-cpp[ClickOnceAPI#6](../snippets/cpp/VS_Snippets_Winforms/ClickOnceAPI/cpp/form1.cpp#6)]
      [!code-csharp[ClickOnceAPI#6](../snippets/csharp/VS_Snippets_Winforms/ClickOnceAPI/CS/Form1.cs#6)]
      [!code-vb[ClickOnceAPI#6](../snippets/visualbasic/VS_Snippets_Winforms/ClickOnceAPI/VB/Form1.vb#6)]  
   
-3.  Zkompilujte aplikaci.  
+3. Zkompilujte aplikaci.  
   
 ### <a name="using-mageexe-to-deploy-an-application-that-checks-for-updates-programmatically"></a>Použití Mage.exe k nasazení aplikace, která zjišťuje dostupnost aktualizací prostřednictvím kódu programu  
   
--   Postupujte podle pokynů pro nasazení aplikace pomocí Mage.exe, jak je vysvětleno v [názorný postup: Ruční nasazení aplikace ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Při volání metody Mage.exe ke generování manifestu nasazení, je nutné použít přepínač příkazového řádku `providerUrl`a chcete zadat adresu URL, kde má technologie ClickOnce aktualizace. Pokud vaše aplikace bude aktualizovat z [ http://www.adatum.com/MyApp ](http://www.adatum.com/MyApp), například volání ke generování manifestu nasazení může vypadat takto:  
+- Postupujte podle pokynů pro nasazení aplikace pomocí Mage.exe, jak je vysvětleno v [názorný postup: Ruční nasazení aplikace ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Při volání metody Mage.exe ke generování manifestu nasazení, je nutné použít přepínač příkazového řádku `providerUrl`a chcete zadat adresu URL, kde má technologie ClickOnce aktualizace. Pokud vaše aplikace bude aktualizovat z [ http://www.adatum.com/MyApp ](http://www.adatum.com/MyApp), například volání ke generování manifestu nasazení může vypadat takto:  
   
     ```  
     mage -New Deployment -ToFile WindowsFormsApp1.application -Name "My App 1.0" -Version 1.0.0.0 -AppManifest 1.0.0.0\MyApp.manifest -providerUrl http://www.adatum.com/MyApp/MyApp.application  
@@ -57,7 +57,7 @@ ClickOnce poskytuje dva způsoby, jak je nasadíte aktualizaci aplikace. V prvn�
   
 ### <a name="using-mageuiexe-to-deploy-an-application-that-checks-for-updates-programmatically"></a>Použití MageUI.exe pro nasazení aplikace, která zjišťuje dostupnost aktualizací prostřednictvím kódu programu  
   
--   Postupujte podle pokynů pro nasazení aplikace pomocí Mage.exe, jak je vysvětleno v [názorný postup: Ruční nasazení aplikace ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Na **možnosti nasazení** kartu, nastavte **počáteční umístění** pole do manifestu aplikace ClickOnce by měla vyhledávat aktualizace. Na **možnosti aktualizace** kartu, zrušte **tato aplikace by měla vyhledávat aktualizace** zaškrtávací políčko.  
+- Postupujte podle pokynů pro nasazení aplikace pomocí Mage.exe, jak je vysvětleno v [názorný postup: Ruční nasazení aplikace ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Na **možnosti nasazení** kartu, nastavte **počáteční umístění** pole do manifestu aplikace ClickOnce by měla vyhledávat aktualizace. Na **možnosti aktualizace** kartu, zrušte **tato aplikace by měla vyhledávat aktualizace** zaškrtávací políčko.  
   
 ## <a name="net-framework-security"></a>Zabezpečení rozhraní .NET Framework  
  Vaše aplikace musí mít oprávnění plné důvěryhodnosti pro použití programových aktualizací.  

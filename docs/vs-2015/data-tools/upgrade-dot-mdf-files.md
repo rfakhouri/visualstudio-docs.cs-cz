@@ -22,12 +22,12 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 6cdbb5d092f431f628e76c7ab629d5ed70429cee
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 395e2a6233c1b6187d9089459cb8f267c4c3c904
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59661500"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079905"
 ---
 # <a name="upgrade-mdf-files"></a>Upgrade souborů .mdf
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,15 +54,15 @@ Toto téma popisuje možnosti pro upgrade souboru databáze (MDF), po instalaci 
   
  Než spustíte upgrade databáze, zvažte následující kritéria:  
   
--   Neprovádějte upgrade, pokud budete chtít pracovat na projektu ve starší verzi a novější verze sady Visual Studio.  
+- Neprovádějte upgrade, pokud budete chtít pracovat na projektu ve starší verzi a novější verze sady Visual Studio.  
   
--   Neprovádějte upgrade, pokud vaše aplikace se použije v prostředí, které používá namísto LocalDB systému SQL Server Express.  
+- Neprovádějte upgrade, pokud vaše aplikace se použije v prostředí, které používá namísto LocalDB systému SQL Server Express.  
   
--   Pokud vaše aplikace používá vzdálená připojení, nemusíte upgradovat, protože LocalDB nepřijme.  
+- Pokud vaše aplikace používá vzdálená připojení, nemusíte upgradovat, protože LocalDB nepřijme.  
   
--   Neprovádějte upgrade, pokud vaše aplikace využívá v Internetové informační služby (IIS).  
+- Neprovádějte upgrade, pokud vaše aplikace využívá v Internetové informační služby (IIS).  
   
--   Pokud chcete otestovat databázových aplikací v prostředí izolovaného prostoru, ale nechcete, aby ke správě databáze, zvažte možnost upgradovat.  
+- Pokud chcete otestovat databázových aplikací v prostředí izolovaného prostoru, ale nechcete, aby ke správě databáze, zvažte možnost upgradovat.  
   
 ### <a name="to-upgrade-a-database-file"></a>Upgrade databázového souboru  
   
@@ -70,17 +70,17 @@ Toto téma popisuje možnosti pro upgrade souboru databáze (MDF), po instalaci 
   
 2. V **přidat připojení** dialogovém okně zadejte následující informace:  
   
-   -   **Zdroj dat**: `Microsoft SQL Server (SqlClient)`  
+   - **Zdroj dat**: `Microsoft SQL Server (SqlClient)`  
   
-   -   **Název serveru**:  
+   - **Název serveru**:  
   
-       -   Chcete-li použít výchozí verzi: `(localdb)\MSSQLLocalDB`.  To určí ProjectV12 nebo ProjectV13, v závislosti na tom, která verze sady Visual Studio je nainstalovaná a vytvoření první instanci LocalDB. **MSSQLLocalDB** uzel v **Průzkumník objektů systému SQL Server** ukazuje, která verze bude ukazovat.  
+       - Chcete-li použít výchozí verzi: `(localdb)\MSSQLLocalDB`.  To určí ProjectV12 nebo ProjectV13, v závislosti na tom, která verze sady Visual Studio je nainstalovaná a vytvoření první instanci LocalDB. **MSSQLLocalDB** uzel v **Průzkumník objektů systému SQL Server** ukazuje, která verze bude ukazovat.  
   
-       -   Chcete-li použít konkrétní verzi: `(localdb)\ProjectsV12` nebo `(localdb)\ProjectsV13`, kde je V12 LocalDB 2014 a V13 je LocalDB 2016.  
+       - Chcete-li použít konkrétní verzi: `(localdb)\ProjectsV12` nebo `(localdb)\ProjectsV13`, kde je V12 LocalDB 2014 a V13 je LocalDB 2016.  
   
-   -   **Připojit soubor databáze**: Fyzická cesta primárního souboru MDF.  
+   - **Připojit soubor databáze**: Fyzická cesta primárního souboru MDF.  
   
-   -   **Logický název**: Název, který chcete použít se souborem.  
+   - **Logický název**: Název, který chcete použít se souborem.  
   
 3. Vyberte tlačítko **OK**.  
   
@@ -102,11 +102,11 @@ Toto téma popisuje možnosti pro upgrade souboru databáze (MDF), po instalaci 
   
 ### <a name="to-work-with-the-database-in-visual-studio-but-retain-compatibility-with-sql-server-express"></a>K práci s databází v sadě Visual Studio, ale zachovat kompatibilitu s SQL Server Express  
   
--   V sadě Visual Studio otevřete projekt bez upgradu ho.  
+- V sadě Visual Studio otevřete projekt bez upgradu ho.  
   
-    -   Spusťte projekt, vyberte klávesu F5.  
+    - Spusťte projekt, vyberte klávesu F5.  
   
-    -   Chcete-li upravit databázi, otevřete soubor MDF v **Průzkumníku řešení**a rozbalte uzel v **Průzkumníka serveru** pro práci s databází.  
+    - Chcete-li upravit databázi, otevřete soubor MDF v **Průzkumníku řešení**a rozbalte uzel v **Průzkumníka serveru** pro práci s databází.  
   
 ### <a name="to-make-sql-server-express-the-default-database-engine"></a>Chcete-li systém SQL Server Express výchozí databázový stroj  
   

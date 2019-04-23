@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fff1187793350b52484bcac99021be7fc2845607
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: e6eadc98ccdc0960e4b4bc400a94f06b90fe89bd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56717790"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069494"
 ---
 # <a name="add-a-command-to-the-solution-explorer-toolbar"></a>Přidání příkazu do panelu nástrojů Průzkumníka řešení
 Tento návod ukazuje, jak přidat tlačítko **Průzkumníka řešení** nástrojů.
@@ -38,13 +38,13 @@ Tento návod ukazuje, jak přidat tlačítko **Průzkumníka řešení** nástro
 ## <a name="add-a-button-to-the-solution-explorer-toolbar"></a>Přidání tlačítka na panelu nástrojů Průzkumníka řešení
  Tato část návodu ukazuje, jak přidat tlačítko **Průzkumníka řešení** nástrojů. Po kliknutí na tlačítko spuštění kódu v metodě zpětného volání.
 
-1.  V *ToolbarButtonPackage.vsct* souboru, přejděte `<Symbols>` oddílu. `<GuidSymbol>` Uzel obsahuje skupiny nabídek a příkaz, který byl vytvořen balíček šablony. Přidat `<IDSymbol>` – element pro tento uzel, chcete-li deklarovat skupiny, která bude obsahovat svých rukou.
+1. V *ToolbarButtonPackage.vsct* souboru, přejděte `<Symbols>` oddílu. `<GuidSymbol>` Uzel obsahuje skupiny nabídek a příkaz, který byl vytvořen balíček šablony. Přidat `<IDSymbol>` – element pro tento uzel, chcete-li deklarovat skupiny, která bude obsahovat svých rukou.
 
     ```xml
     <IDSymbol name="SolutionToolbarGroup" value="0x0190"/>
     ```
 
-2.  V `<Groups>` části po položce existující skupiny definovat novou skupinu, která je deklarována v předchozím kroku.
+2. V `<Groups>` části po položce existující skupiny definovat novou skupinu, která je deklarována v předchozím kroku.
 
     ```xml
     <Group guid="guidToolbarButtonPackageCmdSet"
@@ -55,7 +55,7 @@ Tento návod ukazuje, jak přidat tlačítko **Průzkumníka řešení** nástro
 
      Nastavení nadřazeného GUID:ID pár `guidSHLMainMenu` a `IDM_VS_TOOL_PROJWIN` umístí na tuto skupinu **Průzkumníku řešení** nástrojů a nastavení hodnoty s vysokou prioritou umístí po další příkaz skupiny.
 
-3.  V `<Buttons>` oddíl, změňte ID nadřazeného generované `<Button>` položky tak, aby odrážely skupině, která jste definovali v předchozím kroku. Upravené `<Button>` prvek by měl vypadat takto:
+3. V `<Buttons>` oddíl, změňte ID nadřazeného generované `<Button>` položky tak, aby odrážely skupině, která jste definovali v předchozím kroku. Upravené `<Button>` prvek by měl vypadat takto:
 
     ```xml
     <Button guid="guidToolbarButtonPackageCmdSet" id="ToolbarButtonId" priority="0x0100" type="Button">
@@ -67,11 +67,11 @@ Tento návod ukazuje, jak přidat tlačítko **Průzkumníka řešení** nástro
     </Button>
     ```
 
-4.  Sestavte projekt a spusťte ladění. Zobrazí se experimentální instance.
+4. Sestavte projekt a spusťte ladění. Zobrazí se experimentální instance.
 
      **Průzkumníka řešení** nástrojů zobrazeno tlačítko Nový příkaz napravo od existující tlačítka. Ikona tlačítka je přeškrtnutím.
 
-5.  Klikněte na tlačítko Nový.
+5. Klikněte na tlačítko Nový.
 
      Dialogové okno, které se má zpráva **ToolbarButtonPackage uvnitř SolutionToolbar.ToolbarButton.MenuItemCallback()** by se mělo zobrazit.
 

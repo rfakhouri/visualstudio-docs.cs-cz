@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c878bcc3b0ed2f37f5bb8700b463ac5c1308981
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 59229b1ca2b055fc8242bf6446541a395eceaa56
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56682073"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071353"
 ---
 # <a name="how-to-use-the-gpu-threads-window-c"></a>Postupy: Použití okna vláken GPU (C++)
 V okně vlákna GPU můžete prozkoumat a práce s vlákny, která běží na grafickém procesoru v aplikaci, kterou ladíte. Další informace o aplikacích, které běží na GPU, naleznete v tématu [přehled modelu C++ AMP](/cpp/parallel/amp/cpp-amp-overview).
@@ -52,55 +52,55 @@ V okně vlákna GPU můžete prozkoumat a práce s vlákny, která běží na gr
 
 ### <a name="to-display-the-gpu-threads-window"></a>Chcete-li zobrazit okna vláken GPU
 
-1.  V **Průzkumníka řešení**, otevřete místní nabídku pro projekt a klikněte na tlačítko **vlastnosti**.
+1. V **Průzkumníka řešení**, otevřete místní nabídku pro projekt a klikněte na tlačítko **vlastnosti**.
 
-2.  V **stránky vlastností** okna pro projekt, v části **vlastnosti konfigurace**, zvolte **ladění**.
+2. V **stránky vlastností** okna pro projekt, v části **vlastnosti konfigurace**, zvolte **ladění**.
 
-3.  V **ladicí program ke spuštění** seznamu vyberte **místní ladicí program Windows**. V **typ ladicího programu** seznamu vyberte **pouze GPU**. Musíte zvolit tento ladicí program na přerušení na zarážkách v kódu, který běží na GPU.
+3. V **ladicí program ke spuštění** seznamu vyberte **místní ladicí program Windows**. V **typ ladicího programu** seznamu vyberte **pouze GPU**. Musíte zvolit tento ladicí program na přerušení na zarážkách v kódu, který běží na GPU.
 
-4.  Zvolte **OK** tlačítko.
+4. Zvolte **OK** tlačítko.
 
-5.  Nastavte zarážku v kódu GPU.
+5. Nastavte zarážku v kódu GPU.
 
-6.  V panelu nabídky zvolte **ladění**, **spustit ladění**. Vyčkat, než aplikace k dosažení zarážky.
+6. V panelu nabídky zvolte **ladění**, **spustit ladění**. Vyčkat, než aplikace k dosažení zarážky.
 
-7.  Jeden řádek nabídek, zvolte **ladění**, **Windows**, **vlákna GPU**.
+7. Jeden řádek nabídek, zvolte **ladění**, **Windows**, **vlákna GPU**.
 
 ### <a name="to-switch-to-a-different-thread"></a>Chcete-li přepnout do jiného vlákna
 
--   Poklepejte na sloupec. (Klávesnice: Vyberte řádek a zvolte Enter.)
+- Poklepejte na sloupec. (Klávesnice: Vyberte řádek a zvolte Enter.)
 
 ### <a name="to-display-a-particular-tile-and-thread"></a>Chcete-li zobrazit konkrétní pole a vlákno
 
-1.  Zvolte **rozbalte vlákna přepínání** tlačítka v okně vlákna GPU.
+1. Zvolte **rozbalte vlákna přepínání** tlačítka v okně vlákna GPU.
 
-2.  Zadejte hodnoty pole a vlákno v textových polích.
+2. Zadejte hodnoty pole a vlákno v textových polích.
 
-3.  Klikněte na tlačítko se šipkou na něj.
+3. Klikněte na tlačítko se šipkou na něj.
 
 ### <a name="to-display-or-hide-a-column"></a>Chcete-li zobrazit nebo skrýt sloupec
 
--   Otevřete místní nabídku pro okno vlákna GPU, zvolte **sloupce**a pak zvolte sloupec, který chcete zobrazit nebo skrýt.
+- Otevřete místní nabídku pro okno vlákna GPU, zvolte **sloupce**a pak zvolte sloupec, který chcete zobrazit nebo skrýt.
 
 ### <a name="to-sort-by-a-column"></a>Seřadit podle sloupce
 
--   Vyberte záhlaví sloupce.
+- Vyberte záhlaví sloupce.
 
 ### <a name="to-group-threads"></a>Do skupiny vláken
 
--   Otevřete místní nabídku pro okno vlákna GPU, zvolte **Group**a pak zvolte jeden z názvů sloupců, které jsou zobrazeny. Zvolte **žádný** oddělit vlákna.
+- Otevřete místní nabídku pro okno vlákna GPU, zvolte **Group**a pak zvolte jeden z názvů sloupců, které jsou zobrazeny. Zvolte **žádný** oddělit vlákna.
 
 ### <a name="to-freeze-or-thaw-a-row-of-threads"></a>Chcete-li zmrazit nebo odblokovat řádek vláken
 
--   Otevřete místní nabídku pro řádek a zvolte **ukotvit** nebo **uvolnit**.
+- Otevřete místní nabídku pro řádek a zvolte **ukotvit** nebo **uvolnit**.
 
 ### <a name="to-flag-or-unflag-a-row-of-threads"></a>Chcete-li označit nebo zrušit označení příznakem řádek vlákna
 
--   Vyberte sloupec příznaku pro vlákno, nebo otevřete místní nabídku pro vlákno a zvolte **příznak** nebo **Unflag**.
+- Vyberte sloupec příznaku pro vlákno, nebo otevřete místní nabídku pro vlákno a zvolte **příznak** nebo **Unflag**.
 
 ### <a name="to-display-only-flagged-threads"></a>Chcete-li zobrazit pouze vlákna označená příznakem
 
--   Klikněte na tlačítko příznak v okně vlákna GPU.
+- Klikněte na tlačítko příznak v okně vlákna GPU.
 
 ## <a name="see-also"></a>Viz také
 - [Ladění vícevláknových aplikací](../debugger/debug-multithreaded-applications-in-visual-studio.md)

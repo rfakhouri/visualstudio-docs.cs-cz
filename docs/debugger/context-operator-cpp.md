@@ -22,20 +22,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3c39a9e4f268a0e11d7a0962820b418876e9733b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: aa16bd6f93198e5360139dbc5a6a0d96f02a1e41
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56633535"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059016"
 ---
 # <a name="context-operator-in-the-visual-studio-debugger-c"></a>Operátor kontextu v ladicím programu sady Visual Studio (C++)
 Operátor kontextu v jazyce C++ můžete použít k určení umístění zarážky, název proměnné nebo výrazu. Operátor kontextu je vhodné při zadání názvu z vnějšího oboru, který je jinak skrytý místní název.
 
-##  <a name="BKMK_Using_context_operators_to_specify_a_symbol"></a> Syntaxe
+## <a name="BKMK_Using_context_operators_to_specify_a_symbol"></a> Syntaxe
  Existují dva způsoby určení kontextu:
 
-1.  {, [*modulu*]} *výraz*
+1. {, [*modulu*]} *výraz*
 
      Složené závorky musí obsahovat dvě čárky a modulu (spustitelné nebo knihovna DLL) název nebo úplnou cestu.
 
@@ -45,7 +45,7 @@ Operátor kontextu v jazyce C++ můžete použít k určení umístění zaráž
     {,,EXAMPLE.dll}SomeFunction
     ```
 
-2.  *modul*! *výraz*
+2. *modul*! *výraz*
 
     ```C++
     EXAMPLE.dll!SomeFunction
@@ -63,12 +63,12 @@ Operátor kontextu v jazyce C++ můžete použít k určení umístění zaráž
 
   Chyba při vyhodnocování výrazu narazí na symbol ve výrazu, prohledá pro symbol v tomto pořadí:
 
-1.  V rámci oboru lexikální směrem ven, počínaje aktuální blok řadu příkazů uzavřeny ve složených závorkách a ven pokračujte v nadřízeném bloku. Aktuální blok je kód, který obsahuje aktuální umístění, adresa ukazatele instrukce.
+1. V rámci oboru lexikální směrem ven, počínaje aktuální blok řadu příkazů uzavřeny ve složených závorkách a ven pokračujte v nadřízeném bloku. Aktuální blok je kód, který obsahuje aktuální umístění, adresa ukazatele instrukce.
 
-2.  Rozsah funkce. Aktuální funkce.
+2. Rozsah funkce. Aktuální funkce.
 
-3.  Pokud je aktuální umístění uvnitř členské funkce C++ oboru třídy. Rozsah třídy obsahuje všechny základní třídy. Chyba při vyhodnocování výrazu používá pravidla dominance v normální.
+3. Pokud je aktuální umístění uvnitř členské funkce C++ oboru třídy. Rozsah třídy obsahuje všechny základní třídy. Chyba při vyhodnocování výrazu používá pravidla dominance v normální.
 
-4.  Globální symboly v aktuálním modulu.
+4. Globální symboly v aktuálním modulu.
 
-5.  Veřejné symboly v aktuálním programu.
+5. Veřejné symboly v aktuálním programu.

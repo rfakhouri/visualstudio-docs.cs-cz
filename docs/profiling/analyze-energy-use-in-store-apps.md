@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: dd28e0f2455e1a6ed866d879ec347082e9302c3a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: e16261020a737651fc79c3fb3eb1da6a539cee34
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58790430"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078769"
 ---
 # <a name="analyze-energy-use-in-uwp-apps"></a>Analýza spotřeby energie v aplikacích pro UWP
 
@@ -88,18 +88,18 @@ if (performance && performance.mark) {
 
 ## <a name="collect-energy-profile-data-for-your-app"></a>Shromažďování dat o energetickém profilu vaší aplikace
 
-1.  Na **ladění** nabídce zvolte **spustit diagnostické nástroje bez ladění**.
+1. Na **ladění** nabídce zvolte **spustit diagnostické nástroje bez ladění**.
 
      ![Zvolte spotřebu energie v centra diagnostiky](../profiling/media/energyprof_diagnosticshub.png "ENERGYPROF_DiagnosticsHub")
 
-2.  Zvolte **spotřeba energie** a klikněte na tlačítko **Start**.
+2. Zvolte **spotřeba energie** a klikněte na tlačítko **Start**.
 
     > [!NOTE]
     > Při spuštění **spotřeba energie** profiler, může se zobrazit **řízení uživatelských účtů** okno ke spuštění *VsEtwCollector.exe*. Zvolte **Ano**.
 
-3.  Spusťte v aplikaci shromažďování dat.
+3. Spusťte v aplikaci shromažďování dat.
 
-4.  Pokud chcete profilaci zastavit, přepněte zpět do sady Visual Studio (Alt + Tab) a zvolte **zastavit shromažďování** na stránce centra diagnostiky.
+4. Pokud chcete profilaci zastavit, přepněte zpět do sady Visual Studio (Alt + Tab) a zvolte **zastavit shromažďování** na stránce centra diagnostiky.
 
      ![Shromažďování dat ukončit](../profiling/media/xamlprof_stopcollection.png "XAMLProf_StopCollection")
 

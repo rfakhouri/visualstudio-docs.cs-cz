@@ -24,12 +24,12 @@ caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6fa22e93a767df599815c87e5809faddb674854b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d1a6167759d35dd67142e1919423df6aa380fe88
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54797930"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063527"
 ---
 # <a name="watch-and-quickwatch-windows"></a>Kukátko a Rychlé kukátko Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,15 +54,15 @@ static void Main(string[] args)
   
  Můžete sledovat proměnnou v okně QuickWatch následujícím způsobem:  
   
-1.  Nastavit zarážku na `a = a + b;` řádku.  
+1. Nastavit zarážku na `a = a + b;` řádku.  
   
-2.  Spusťte ladění. Provádění zastaví na zarážce.  
+2. Spusťte ladění. Provádění zastaví na zarážce.  
   
-3.  Otevřít **QuickWatch** okno (klikněte pravým tlačítkem na, klikněte na tlačítko **ladění / QuickWatch**, nebo **SHIFT + F9**). Můžete otevřít okno a přidat proměnnou, která **výraz** okna, klikněte na **přehodnotit**. Měli byste vidět proměnnou v **hodnoty** okno s hodnotou 2.  
+3. Otevřít **QuickWatch** okno (klikněte pravým tlačítkem na, klikněte na tlačítko **ladění / QuickWatch**, nebo **SHIFT + F9**). Můžete otevřít okno a přidat proměnnou, která **výraz** okna, klikněte na **přehodnotit**. Měli byste vidět proměnnou v **hodnoty** okno s hodnotou 2.  
   
-4.  **QuickWatch** je okno oknem modální dialogové okno, takže nelze pokračovat v ladění, dokud je otevřen. Můžete přidat proměnnou **Watch** okno kliknutím **Přidat kukátko**.  
+4. **QuickWatch** je okno oknem modální dialogové okno, takže nelze pokračovat v ladění, dokud je otevřen. Můžete přidat proměnnou **Watch** okno kliknutím **Přidat kukátko**.  
   
-5.  Zavřít **QuickWatch** okna. Teď můžete pokračovat v ladění při sledování hodnotu v **Watch** okna  
+5. Zavřít **QuickWatch** okna. Teď můžete pokračovat v ladění při sledování hodnotu v **Watch** okna  
   
 ## <a name="observing-variables-with-the-watch-window"></a>Sledování proměnné okno kukátka  
  Můžete sledovat více proměnných s **Watch** okna. Pokud například máte následující kód:  
@@ -112,7 +112,7 @@ static void Main(string[] args)
   
  ![WatchExpressionError](../debugger/media/watchexpressionerror.png "WatchExpressionError")  
   
-##  <a name="bkmk_refreshWatch"></a> Aktualizace hodnot sledování, které jsou zastaralé  
+## <a name="bkmk_refreshWatch"></a> Aktualizace hodnot sledování, které jsou zastaralé  
  V některých případech může zobrazit ikona Aktualizovat (kroužek s dvěma šipkami nebo kroužek s dvěma vlnovky) při vyhodnocování výrazu v **Watch** okna.  Například, pokud máte vyhodnocení vlastností vypnout (**nástroje / Možnosti / ladění / povolit vyhodnocování vlastností a jiných implicitních volání funkcí**), a že máte následující kód:  
   
 ```csharp  
@@ -143,7 +143,7 @@ static void Main(string[] args)
   
   Pokud se zobrazí ikona, která je kroužek s dvěma vlnovkou řádky, které se podobají vlákna, výraz nebyl vyhodnocen z důvodu možných závislosti mezi vlákny. Jinými slovy vyhodnocování kód vyžaduje ostatní vlákna v aplikaci dočasně spustit. Pokud jste v režimu přerušení, zastaví se obvykle všechna vlákna ve vaší aplikaci. Umožňuje spustit dočasně jiných vláken může mít neočekávané účinky na stav programu a způsobí, že se ladicí program ignorovat události, například zarážky a výjimky vyvolané na tato vlákna.  
   
-##  <a name="bkmk_sideEffects"></a> Vedlejší efekty a výrazy  
+## <a name="bkmk_sideEffects"></a> Vedlejší efekty a výrazy  
  Hodnocení některých výrazů může změnit hodnotu proměnné nebo jinak ovlivnit stav programu. Například vyhodnocení následujícího výrazu změní hodnotu `var1`:  
   
 ```  
@@ -202,17 +202,17 @@ public class Program
   
  Můžete přidat odkaz na daný `Person` objekt **Watch** okno následujícím způsobem:  
   
-1.  Nastavte zarážku v kódu nějakou dobu, po vytvoření objektu.  
+1. Nastavte zarážku v kódu nějakou dobu, po vytvoření objektu.  
   
-2.  Spustit ladění a v zarážky zastaví provádění, najdete v proměnné **lokální** okně pravým tlačítkem myši a vyberte **Ujistěte se, ID objektu**.  
+2. Spustit ladění a v zarážky zastaví provádění, najdete v proměnné **lokální** okně pravým tlačítkem myši a vyberte **Ujistěte se, ID objektu**.  
   
-3.  Měli byste vidět **$** plus číslo v **místní hodnoty** okna. To je ID objektu.  
+3. Měli byste vidět **$** plus číslo v **místní hodnoty** okna. To je ID objektu.  
   
-4.  Přidáte ID objektu k oknu kukátka.  
+4. Přidáte ID objektu k oknu kukátka.  
   
-5.  Nastavte zarážku, ve které chcete sledovat chování objektu.  Ve výše uvedeném kódu, která by byla `DoSomething()` metody.  
+5. Nastavte zarážku, ve které chcete sledovat chování objektu.  Ve výše uvedeném kódu, která by byla `DoSomething()` metody.  
   
-6.  Pokračovat v ladění, a při provádění zastaví v `DoSomething()` metody **Watch** v okně se zobrazí `Person` objektu.  
+6. Pokračovat v ladění, a při provádění zastaví v `DoSomething()` metody **Watch** v okně se zobrazí `Person` objektu.  
   
 > [!NOTE]
 >  Pokud chcete zobrazit vlastnosti objektu, například `Person.Name` v předchozím příkladu musí mít povoleno vyhodnocování vlastnosti.  

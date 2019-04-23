@@ -8,19 +8,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 68250d8767910106ab7e6a3c3239beeb292bdfd8
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 9d6487f4a6021f36cecd490504075cdba2ac2293
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56620808"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061382"
 ---
 # <a name="troubleshoot-performance-tools-issues"></a>Řešení problémů s výkonem nástroje
 Při použití nástrojů pro profilaci setkat s jedním z následujících problémů:
 
--   [Nebyla shromážděna žádná data je pomocí nástrojů pro profilaci](#no-data-is-collected-by-the-profiling-tools)
+- [Nebyla shromážděna žádná data je pomocí nástrojů pro profilaci](#no-data-is-collected-by-the-profiling-tools)
 
--   [Zobrazení výkonu a sestavy zobrazit čísla pro názvy – funkce](#performance-views-and-reports-display-numbers-for-function-names)
+- [Zobrazení výkonu a sestavy zobrazit čísla pro názvy – funkce](#performance-views-and-reports-display-numbers-for-function-names)
 
 ## <a name="no-data-is-collected-by-the-profiling-tools"></a>Nebyla shromážděna žádná data je pomocí nástrojů pro profilaci
  Poté, co Profilovat aplikaci dat profilování (. *Vsp*) se vytvoří soubor a zobrazí se následující upozornění v **výstup** okna nebo v příkazovém okně:
@@ -29,7 +29,7 @@ Při použití nástrojů pro profilaci setkat s jedním z následujících prob
 
  Tento problém může být způsobeno několika problémy:
 
--   Proces, který profilované za použití vzorkování nebo metoda paměti .NET spustí podřízený proces, který je proces, který provádí aplikace. Například některé aplikace číst příkazový řádek pro zjištění, zda bylo zahájeno jako aplikace Windows nebo jako aplikace příkazového řádku. Pokud o to požádá o aplikaci Windows se spustí nový proces, který je nakonfigurován jako aplikace Windows se původní proces a následně původní proces skončí. Protože nástrojů pro profilaci nejsou shromažďovány automaticky data pro podřízené procesy, je nebyla shromážděna žádná data.
+- Proces, který profilované za použití vzorkování nebo metoda paměti .NET spustí podřízený proces, který je proces, který provádí aplikace. Například některé aplikace číst příkazový řádek pro zjištění, zda bylo zahájeno jako aplikace Windows nebo jako aplikace příkazového řádku. Pokud o to požádá o aplikaci Windows se spustí nový proces, který je nakonfigurován jako aplikace Windows se původní proces a následně původní proces skončí. Protože nástrojů pro profilaci nejsou shromažďovány automaticky data pro podřízené procesy, je nebyla shromážděna žádná data.
 
      Ke shromažďování dat profilace v této situaci, připojení profileru k podřízenému procesu namísto spuštění aplikace s profilerem. Další informace najdete v tématu [jak: Připojení a odpojení nástroje Sledování výkonu ke spuštěným procesům](../profiling/how-to-attach-and-detach-performance-tools-to-running-processes.md) a [připojit (VSPerfCmd)](../profiling/attach.md)
 
@@ -40,9 +40,9 @@ Při použití nástrojů pro profilaci setkat s jedním z následujících prob
 
  Problém můžete vyřešit jedním ze dvou způsobů:
 
--   Najít. *pdb* soubory a umístit je do stejného adresáře jako soubory aplikace.
+- Najít. *pdb* soubory a umístit je do stejného adresáře jako soubory aplikace.
 
--   Vložení informací o symbolu dat profilování (. *Vsp*) soubor. Další informace najdete v tématu [uložit informace o symbolech s výkonem datové soubory](../profiling/saving-symbol-information-with-performance-data-files.md).
+- Vložení informací o symbolu dat profilování (. *Vsp*) soubor. Další informace najdete v tématu [uložit informace o symbolech s výkonem datové soubory](../profiling/saving-symbol-information-with-performance-data-files.md).
 
 > [!NOTE]
 >  Analytický modul vyžaduje, aby. *pdb* soubor má stejnou verzi jako soubor kompilované aplikace. ODPOVĚĎ. *pdb* soubor z dřívější nebo pozdější sestavování souboru aplikace nebude fungovat.

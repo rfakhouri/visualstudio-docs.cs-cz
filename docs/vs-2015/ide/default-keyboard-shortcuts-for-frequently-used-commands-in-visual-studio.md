@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1d1b7b2ed25c5712f548266955aae5e94866ad0e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ac18bfbc06c6d9d3387c208cad7c83bbc21bb80b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54770492"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068870"
 ---
 # <a name="default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio"></a>Výchozí klávesové zkratky pro často používané příkazy v sadě Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Výběrem těchto výchozích klávesových zkratek získáte snadno přístup k
 |[Sestavení](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_build)|[Upravit](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_edit)|[Projekt](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_project)|[Nástroje](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_tools)|[Window](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_window)|
 |[Ladění](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_debug)|[Soubor](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_file)|[Refaktoring](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_refactor)|[Zobrazení](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_view)||
 
-##  <a name="bkmk_build"></a> Sestavení
+## <a name="bkmk_build"></a> Sestavení
 
 |Příkazy|Klávesové zkratky [kontexty]|
 |--------------|-------------------------------------|
@@ -40,7 +40,7 @@ Výběrem těchto výchozích klávesových zkratek získáte snadno přístup k
 |Build.Compile|Ctrl+F7 [Global]|
 |Build.RunCodeAnalysisonSolution|Alt+F11 [Global]|
 
-##  <a name="bkmk_debug"></a> Ladění
+## <a name="bkmk_debug"></a> Ladění
 
 |Příkazy|Klávesové zkratky [kontexty]|
 |--------------|-------------------------------------|
@@ -60,7 +60,7 @@ Výběrem těchto výchozích klávesových zkratek získáte snadno přístup k
 |Debug.StopDebugging|Shift+F5 [Global]|
 |Debug.ToggleBreakpoint|F9 [Global]|
 
-##  <a name="bkmk_edit"></a> Upravit
+## <a name="bkmk_edit"></a> Upravit
 
 |Příkazy|Klávesové zkratky [kontexty]|
 |--------------|-------------------------------------|
@@ -111,7 +111,7 @@ upravit. SurroundWith|Ctrl+K, Ctrl+S [Global]|
 |Edit.WordDeleteToEnd|Ctrl+Delete [Text Editor]|
 |Edit.WordDeleteToStart|Ctrl+Backspace [Text Editor]|
 
-##  <a name="bkmk_file"></a> Soubor
+## <a name="bkmk_file"></a> Soubor
 
 |Příkazy|Klávesové zkratky [kontexty]|
 |--------------|-------------------------------------|
@@ -127,26 +127,26 @@ upravit. SurroundWith|Ctrl+K, Ctrl+S [Global]|
 |File.SaveSelectedItems|Ctrl+S [Global]|
 |File.ViewinBrowser|Ctrl+Shift+W [Global]|
 
-##  <a name="bkmk_project"></a> Projekt
+## <a name="bkmk_project"></a> Projekt
 
 |Příkazy|Klávesové zkratky [kontexty]|
 |--------------|-------------------------------------|
 |Project.AddExistingItem|Shift+Alt+A [Global]|
 |Project.AddNewItem|Ctrl+Shift+A [Global]|
 
-##  <a name="bkmk_refactor"></a> Refaktoring
+## <a name="bkmk_refactor"></a> Refaktoring
 
 |Příkaz|Klávesová zkratka [Context]|
 |-------------|-----------------------------------|
 |Refactor.ExtractMethod|Ctrl+R, Ctrl+M [Global]|
 
-##  <a name="bkmk_tools"></a> Nástroje
+## <a name="bkmk_tools"></a> Nástroje
 
 |Příkaz|Klávesová zkratka [Context]|
 |-------------|-----------------------------------|
 |Tools.AttachtoProcess|Ctrl+Alt+P [Global]|
 
-##  <a name="bkmk_view"></a> Zobrazení
+## <a name="bkmk_view"></a> Zobrazení
 
 |Příkazy|Klávesové zkratky [kontexty]|
 |--------------|-------------------------------------|
@@ -167,7 +167,7 @@ tabulky. TfsTeamExplorer|CTRL +\\, Ctrl + M [Global]|
 |View.ViewCode|Enter [Class Diagram]<br /><br /> nebo F7 [Settings Designer]|
 |View.ViewDesigner|Shift+F7 [HTML Editor Source View]|
 
-##  <a name="bkmk_window"></a> Okno
+## <a name="bkmk_window"></a> Okno
 
 |Příkazy|Klávesové zkratky [kontexty]|
 |--------------|-------------------------------------|

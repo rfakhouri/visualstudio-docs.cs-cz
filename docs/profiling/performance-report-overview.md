@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 26cc1d8c0063d23b20c6c0a8938a67793a2a1532
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: c57b16ff9b866ffe36f89ed14b5353fd611a45b5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56632872"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073213"
 ---
 # <a name="performance-report-overview"></a>Sestava Přehled výkonu
 Můžete zobrazit data profilování relace výkonu v **sestavu výkonu** okno integrovaného vývojového prostředí (IDE) Visual Studio Team System Development Edition. Data profilace se uloží do souborů .vsp a .vsps. Zobrazení sestav systému windows umožňují zobrazit a analyzovat problémy s výkonem aplikací.
@@ -79,19 +79,19 @@ Můžete zobrazit data profilování relace výkonu v **sestavu výkonu** okno i
 ## <a name="customizable-filter-control"></a>Ovládací prvek filtru lze přizpůsobit
  Ovládací prvek přizpůsobitelné filtru obsahuje následující možnosti:
 
--   **Filtr pro import** -načte dříve uložený vlastní dotaz.
+- **Filtr pro import** -načte dříve uložený vlastní dotaz.
 
--   **Exportovat filtr** – uloží vlastní dotaz do zadaného umístění.
+- **Exportovat filtr** – uloží vlastní dotaz do zadaného umístění.
 
--   **Spuštění dotazu** – spustí dotaz, jak se zobrazuje v ovládacím prvku vlastní dotaz.
+- **Spuštění dotazu** – spustí dotaz, jak se zobrazuje v ovládacím prvku vlastní dotaz.
 
--   **Zastavit dotaz** -zastaví provádění dotazu, který je spuštěn. Toto tlačítko není k dispozici, pokud je spuštěn žádný dotaz.
+- **Zastavit dotaz** -zastaví provádění dotazu, který je spuštěn. Toto tlačítko není k dispozici, pokud je spuštěn žádný dotaz.
 
--   **Zobrazit dotaz** – zobrazí nebo skryje ovládacího prvku vlastní dotaz.
+- **Zobrazit dotaz** – zobrazí nebo skryje ovládacího prvku vlastní dotaz.
 
--   **Uložit Analyzed** – uloží zprávu společně s jeho aktuální analýzy jako soubor .vsps.
+- **Uložit Analyzed** – uloží zprávu společně s jeho aktuální analýzy jako soubor .vsps.
 
--   **Export** – uloží aktuální sestavu v. Ve formátu CSV nebo. XML soubor ve formátu, s možnostmi pro uložení různých zobrazení.
+- **Export** – uloží aktuální sestavu v. Ve formátu CSV nebo. XML soubor ve formátu, s možnostmi pro uložení různých zobrazení.
 
 ## <a name="see-also"></a>Viz také:
 - [Analýza dat nástrojů pro měření výkonu](../profiling/analyzing-performance-tools-data.md)

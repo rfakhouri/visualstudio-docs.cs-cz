@@ -1,5 +1,5 @@
 ---
-title: 'Průvodce: Vazba s daty v Návrháři XAML | Dokumentace Microsoftu'
+title: 'Návod: Vazba s daty v Návrháři XAML | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-designers
@@ -11,27 +11,27 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 74b628c1c3295cee94435c975f89420fcb097538
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a7a27b2744247bba78575b0387a958bda5990d8c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54802809"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071613"
 ---
-# <a name="walkthrough-binding-to-data-in-xaml-designer"></a>Průvodce: Vazba s daty v Návrháři XAML
+# <a name="walkthrough-binding-to-data-in-xaml-designer"></a>Návod: Vazba s daty v Návrháři XAML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 V Návrháři XAML můžete nastavit vlastnosti datové vazby pomocí návrhové ploše nebo v okně Vlastnosti. V příkladu v tomto návodu ukazuje, jak k vytvoření vazby dat k ovládacímu prvku. Konkrétně návodu ukazuje, jak vytvořit jednoduchou nákupního košíku třídu, která má [DependencyProperty](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.dependencyproperty.aspx) s názvem `ItemCount`a pak vytvoříte vazbu `ItemCount` vlastnost **Text** vlastnost nástroje [TextBlock](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.textblock.aspx) ovládacího prvku.  
   
 ### <a name="to-create-a-class-to-use-as-a-data-source"></a>Pro vytvoření třídy, který se použije jako zdroj dat  
   
-1.  Na **souboru** nabídce zvolte **nový**, **projektu**.  
+1. Na **souboru** nabídce zvolte **nový**, **projektu**.  
   
-2.  V **nový projekt** dialogového okna zvolte buď **Visual C#** nebo **jazyka Visual Basic** uzlu, rozbalte **Windows Desktop** uzel a pak Zvolte **aplikace WPF** šablony.  
+2. V **nový projekt** dialogového okna zvolte buď **Visual C#** nebo **jazyka Visual Basic** uzlu, rozbalte **Windows Desktop** uzel a pak Zvolte **aplikace WPF** šablony.  
   
-3.  Pojmenujte projekt **BindingTest**a klikněte na tlačítko **OK** tlačítko.  
+3. Pojmenujte projekt **BindingTest**a klikněte na tlačítko **OK** tlačítko.  
   
-4.  Otevřete soubor MainWindow.xaml.cs (nebo soubor MainWindow.xaml.vb) a přidejte následující kód. V jazyce C#, přidejte kód `BindingTest` obor názvů (před posledním pravou závorku v souboru). V jazyce Visual Basic přidejte novou třídu.  
+4. Otevřete soubor MainWindow.xaml.cs (nebo soubor MainWindow.xaml.vb) a přidejte následující kód. V jazyce C#, přidejte kód `BindingTest` obor názvů (před posledním pravou závorku v souboru). V jazyce Visual Basic přidejte novou třídu.  
   
     ```csharp  
     public class ShoppingCart : DependencyObject  
@@ -68,33 +68,33 @@ V Návrháři XAML můžete nastavit vlastnosti datové vazby pomocí návrhové
   
      Tento kód nastaví hodnotu 0 jako počet položek výchozí pomocí [třída PropertyMetadata](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.propertymetadata.aspx) objektu.  
   
-5.  Na **souboru** nabídce zvolte **sestavení**, **sestavit řešení**.  
+5. Na **souboru** nabídce zvolte **sestavení**, **sestavit řešení**.  
   
 ### <a name="to-bind-the-itemcount-property-to-a-textblock-control"></a>Vlastnost ItemCount vázat na ovládací prvek TextBlock  
   
-1.  V Průzkumníku řešení otevřete místní nabídku souboru mainwindow.XAML a zvolte **Návrhář zobrazení**.  
+1. V Průzkumníku řešení otevřete místní nabídku souboru mainwindow.XAML a zvolte **Návrhář zobrazení**.  
   
-2.  Na panelu nástrojů zvolte [mřížky](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.grid.aspx) ovládací prvek a přidat do formuláře.  
+2. Na panelu nástrojů zvolte [mřížky](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.grid.aspx) ovládací prvek a přidat do formuláře.  
   
-3.  S `Grid` vybrán, v okně Vlastnosti zvolte **nový** vedle **DataContext** vlastnost.  
+3. S `Grid` vybrán, v okně Vlastnosti zvolte **nový** vedle **DataContext** vlastnost.  
   
-4.  V **vybrat objekt** dialogové okno pole, ujistěte se, že **ukázat všechna sestavení** zrušeno zaškrtnutí políčka, zvolte **ShoppingCart** pod **BindingTest** obor názvů a klikněte na tlačítko **OK** tlačítko.  
+4. V **vybrat objekt** dialogové okno pole, ujistěte se, že **ukázat všechna sestavení** zrušeno zaškrtnutí políčka, zvolte **ShoppingCart** pod **BindingTest** obor názvů a klikněte na tlačítko **OK** tlačítko.  
   
      Je vidět na následujícím obrázku **vybrat objekt** dialogové okno s **ShoppingCart** vybrané.  
   
      ![Dialogové okno Vybrat objekt](../designers/media/blendselectobject.PNG "BlendSelectObject")  
   
-5.  V **nástrojů**, zvolte `TextBlock` ovládací prvek pro přidání do formuláře.  
+5. V **nástrojů**, zvolte `TextBlock` ovládací prvek pro přidání do formuláře.  
   
-6.  S `TextBlock` ovládací prvek vybrán, v okně Vlastnosti zvolte značku vlastnost napravo od **Text** vlastnost a klikněte na tlačítko **vytvořit datovou vazbu**. (Značka vlastnosti vypadá jako malé pole.)  
+6. S `TextBlock` ovládací prvek vybrán, v okně Vlastnosti zvolte značku vlastnost napravo od **Text** vlastnost a klikněte na tlačítko **vytvořit datovou vazbu**. (Značka vlastnosti vypadá jako malé pole.)  
   
-7.  V datech vytvořit vazby v dialogovém okně **cesta** zvolte **ItemCount: (int32)** vlastnosti a klikněte na tlačítko **OK** tlačítko.  
+7. V datech vytvořit vazby v dialogovém okně **cesta** zvolte **ItemCount: (int32)** vlastnosti a klikněte na tlačítko **OK** tlačítko.  
   
      Je vidět na následujícím obrázku **vytvořit datovou vazbu** dialogové okno s **ItemCount** vybrané vlastnosti.  
   
      ![Datové vazby dialogové okno vytvořit](../designers/media/xaml-create-data-binding.png "xaml_create_data_binding")  
   
-8.  Stisknutím klávesy F5 spusťte aplikaci.  
+8. Stisknutím klávesy F5 spusťte aplikaci.  
   
      `TextBlock` Ovládací prvek zobrazovat výchozí hodnotu 0 jako text.  
   

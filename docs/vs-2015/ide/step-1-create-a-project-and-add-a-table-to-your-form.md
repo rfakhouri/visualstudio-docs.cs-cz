@@ -9,12 +9,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f716c279bce14a2a262578de090ed59290890f57
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: bec6c539963d54bfa1d866ccc4811425bba9e3a4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54776028"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068571"
 ---
 # <a name="step-1-create-a-project-and-add-a-table-to-your-form"></a>Krok 1: Vytvoření projektu a přidání tabulky do formuláře
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,9 +31,9 @@ Prvním krokem při vytváření porovnávací hry je vytvořit projekt a přida
   
 4. V **vlastnosti** okno, nastavte následující vlastnosti formuláře.  
   
-   1.  Změna formuláře **Text** vlastnost z **Form1** k **Porovnávací hra**. Tento text se zobrazí v horní části herního okna.  
+   1. Změna formuláře **Text** vlastnost z **Form1** k **Porovnávací hra**. Tento text se zobrazí v horní části herního okna.  
   
-   2.  Nastavte velikost formuláře na šířku 550 pixelů a výšku 550 pixelů. Uděláte to buď tak, že nastavíte **velikost** vlastnost **550, 550**, nebo tažením rohu formuláře, dokud se nezobrazí správná velikost v pravém horním rohu na integrované vývojové prostředí ( INTEGROVANÉ VÝVOJOVÉ PROSTŘEDÍ).  
+   2. Nastavte velikost formuláře na šířku 550 pixelů a výšku 550 pixelů. Uděláte to buď tak, že nastavíte **velikost** vlastnost **550, 550**, nebo tažením rohu formuláře, dokud se nezobrazí správná velikost v pravém horním rohu na integrované vývojové prostředí ( INTEGROVANÉ VÝVOJOVÉ PROSTŘEDÍ).  
   
 5. Zobrazit panel nástrojů výběrem **nástrojů** karty na levé straně rozhraní IDE.  
   
@@ -60,19 +60,19 @@ Prvním krokem při vytváření porovnávací hry je vytvořit projekt a přida
   
     Zatímco kontejner TableLayoutPanel vybrán, otevřete sadu nástrojů a přidejte **popisek** ovládacího prvku (umístěný ve **běžné ovládací prvky** kategorie) na levou horní buňky kontejneru TableLayoutPanel. `Label` By měl nyní být vybrán ovládací prvek v integrovaném vývojovém prostředí. Nastavte pro něj následující vlastnosti.  
   
-   1.  Ujistěte se, že popisku **BackColor** je nastavena na **CornflowerBlue**.  
+   1. Ujistěte se, že popisku **BackColor** je nastavena na **CornflowerBlue**.  
   
-   2.  Nastavte **AutoSize** vlastnost **False**.  
+   2. Nastavte **AutoSize** vlastnost **False**.  
   
-   3.  Nastavte **Dock** vlastnost **vyplnit**.  
+   3. Nastavte **Dock** vlastnost **vyplnit**.  
   
-   4.  Nastavte **TextAlign** vlastnost **MiddleCenter** výběrem rozevírací tlačítko vedle vlastnosti a pak kliknutím na prostřední tlačítko. Ikona se tak zobrazí uprostřed buňky.  
+   4. Nastavte **TextAlign** vlastnost **MiddleCenter** výběrem rozevírací tlačítko vedle vlastnosti a pak kliknutím na prostřední tlačítko. Ikona se tak zobrazí uprostřed buňky.  
   
-   5.  Zvolte **písmo** vlastnost. Mělo by se zobrazit tlačítko tří teček (...).  
+   5. Zvolte **písmo** vlastnost. Mělo by se zobrazit tlačítko tří teček (...).  
   
-   6.  Vyberte tlačítko se třemi tečkami a nastavte hodnotu **písmo** hodnota, která se **Webdings**, **styl písma** k **tučné**a **velikost** k **72**.  
+   6. Vyberte tlačítko se třemi tečkami a nastavte hodnotu **písmo** hodnota, která se **Webdings**, **styl písma** k **tučné**a **velikost** k **72**.  
   
-   7.  Nastavte **Text** vlastnosti tohoto popisku na písmeno **c**.  
+   7. Nastavte **Text** vlastnosti tohoto popisku na písmeno **c**.  
   
         Levá horní buňka v kontejneru TableLayoutPanel by měla nyní obsahovat černé pole zarovnané na střed na modrém pozadí.  
   
@@ -91,6 +91,6 @@ Prvním krokem při vytváření porovnávací hry je vytvořit projekt a přida
   
 ### <a name="to-continue-or-review"></a>Chcete-li pokračovat nebo přezkoumat  
   
--   Přechod k dalšímu kroku výukového programu naleznete v tématu [krok 2: Přidejte náhodný objekt a seznam ikon](../ide/step-2-add-a-random-object-and-a-list-of-icons.md).  
+- Přechod k dalšímu kroku výukového programu naleznete v tématu [krok 2: Přidejte náhodný objekt a seznam ikon](../ide/step-2-add-a-random-object-and-a-list-of-icons.md).  
   
--   K návratu na téma přehledu přejděte [Tutorial 3: Vytvořit odpovídající her](../ide/tutorial-3-create-a-matching-game.md).
+- K návratu na téma přehledu přejděte [Tutorial 3: Vytvořit odpovídající her](../ide/tutorial-3-create-a-matching-game.md).

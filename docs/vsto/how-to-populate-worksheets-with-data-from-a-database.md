@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1169ea54ffbc0d0437204ed4491e2b8cc68a4a04
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 67c12843d00bf8d5af51fa7af3175077527afa58
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54865616"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079137"
 ---
 # <a name="how-to-populate-worksheets-with-data-from-a-database"></a>Postupy: Naplnění listů daty z databáze
 
@@ -35,17 +35,17 @@ Následující příklad ukazuje, jak přidat ovládací prvky vázané na data 
 
 ### <a name="to-populate-a-worksheet-with-data-from-a-database"></a>K naplnění listů daty z databáze
 
-1.  Otevřete úrovni dokumentu projektu aplikace Excel v sadě Visual Studio, otevřete sešit v návrháři.
+1. Otevřete úrovni dokumentu projektu aplikace Excel v sadě Visual Studio, otevřete sešit v návrháři.
 
-2.  Otevřít **zdroje dat** okna a vytvořte zdroj dat pro váš projekt. Další informace najdete v tématu [přidat nové připojení](../data-tools/add-new-connections.md).
+2. Otevřít **zdroje dat** okna a vytvořte zdroj dat pro váš projekt. Další informace najdete v tématu [přidat nové připojení](../data-tools/add-new-connections.md).
 
-3.  Přetáhněte pole nebo tabulku, kterou z **zdroje dat** okno do listu.
+3. Přetáhněte pole nebo tabulku, kterou z **zdroje dat** okno do listu.
 
 Jeden z následujících ovládacích prvků je vytvořena na listu:
 
--   Pokud přetáhnete pole, <xref:Microsoft.Office.Tools.Excel.NamedRange> ovládací prvek je vytvořen v listu. Další informace najdete v tématu [namedrange – ovládací prvek](../vsto/namedrange-control.md).
+- Pokud přetáhnete pole, <xref:Microsoft.Office.Tools.Excel.NamedRange> ovládací prvek je vytvořen v listu. Další informace najdete v tématu [namedrange – ovládací prvek](../vsto/namedrange-control.md).
 
--   Pokud přetáhnete tabulky <xref:Microsoft.Office.Tools.Excel.ListObject> ovládací prvek je vytvořen v listu. Další informace najdete v tématu [ListObject – ovládací prvek](../vsto/listobject-control.md).
+- Pokud přetáhnete tabulky <xref:Microsoft.Office.Tools.Excel.ListObject> ovládací prvek je vytvořen v listu. Další informace najdete v tématu [ListObject – ovládací prvek](../vsto/listobject-control.md).
 
 Můžete přidat jiného ovládacího prvku tak, že vyberete v tabulce nebo pole **zdroje dat** okno a následným výběrem jiného ovládacího prvku z rozevíracího seznamu.
 
@@ -53,19 +53,19 @@ Můžete přidat jiného ovládacího prvku tak, že vyberete v tabulce nebo pol
 
 Kromě ovládacího prvku jsou následující objekty související s daty automaticky přidány do projektu:
 
--   Typové datové sady, který zapouzdřuje tabulek dat, které jste se připojili v databázi. Další informace najdete v tématu [datovou sadu nástrojů v sadě Visual Studio](../data-tools/dataset-tools-in-visual-studio.md).
+- Typové datové sady, který zapouzdřuje tabulek dat, které jste se připojili v databázi. Další informace najdete v tématu [datovou sadu nástrojů v sadě Visual Studio](../data-tools/dataset-tools-in-visual-studio.md).
 
--   A <xref:System.Windows.Forms.BindingSource> ovládacího prvku, která se připojuje k typové datové sady. Další informace najdete v tématu [přehled komponenty BindingSource](/dotnet/framework/winforms/controls/bindingsource-component-overview).
+- A <xref:System.Windows.Forms.BindingSource> ovládacího prvku, která se připojuje k typové datové sady. Další informace najdete v tématu [přehled komponenty BindingSource](/dotnet/framework/winforms/controls/bindingsource-component-overview).
 
--   TableAdapter, který se připojuje k databázi typové datové sady. Další informace najdete v tématu [TableAdapter – přehled](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview).
+- TableAdapter, který se připojuje k databázi typové datové sady. Další informace najdete v tématu [TableAdapter – přehled](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview).
 
--   TableAdapterManager, který se používá ke koordinaci adaptéry tabulek v datové sadě, aby povolovala hierarchické aktualizace. Další informace najdete v tématu [hierarchické aktualizace](../data-tools/hierarchical-update.md) a [TableAdapterManager odkaz](../data-tools/fill-datasets-by-using-tableadapters.md#tableadaptermanager-reference).
+- TableAdapterManager, který se používá ke koordinaci adaptéry tabulek v datové sadě, aby povolovala hierarchické aktualizace. Další informace najdete v tématu [hierarchické aktualizace](../data-tools/hierarchical-update.md) a [TableAdapterManager odkaz](../data-tools/fill-datasets-by-using-tableadapters.md#tableadaptermanager-reference).
 
 Při spuštění projektu ovládací prvek zobrazí první záznam ve zdroji dat. Můžete použít <xref:System.Windows.Forms.BindingSource> umožňující uživatelům procházet záznamy.
 
 ### <a name="to-scroll-through-the-records"></a>Procházet záznamy
 
--   Použití <xref:System.Windows.Forms.BindingSource> metody jako <xref:System.Windows.Forms.BindingSource.MoveNext%2A> a <xref:System.Windows.Forms.BindingSource.MovePrevious%2A>.
+- Použití <xref:System.Windows.Forms.BindingSource> metody jako <xref:System.Windows.Forms.BindingSource.MoveNext%2A> a <xref:System.Windows.Forms.BindingSource.MovePrevious%2A>.
 
 Informace o tom, jak odesílat aktualizace do typové datové sady a databáze najdete v tématu [jak: Aktualizace zdroje dat s použitím dat z hostitelského ovládacího prvku](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md).
 

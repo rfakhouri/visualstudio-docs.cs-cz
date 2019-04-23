@@ -12,12 +12,12 @@ caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 53ee0dce825609c13622911d5836f16954fa7a06
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ee29135e659eff7e4965b6b1fb0d24de2c2e90cc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54769486"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078731"
 ---
 # <a name="how-to-open-messages-view-from-find-window"></a>Postupy: Zobrazení otevřít zpráv z vyhledávacího okna
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,31 +26,31 @@ Možná pro vás bude pohodlné používat ho **najít okno** dialogové okno Vy
   
 ### <a name="to-open-a-messages-view-window-using-the-find-window-dialog-box"></a>Chcete-li otevřít okno pro zobrazení zprávy pomocí dialogového okna Najít okno  
   
-1.  Uspořádejte windows tak, aby nástroje Spy ++ i cílové okno viditelné.  
+1. Uspořádejte windows tak, aby nástroje Spy ++ i cílové okno viditelné.  
   
-2.  Z **Spy** nabídce zvolte **najít okno**.  
+2. Z **Spy** nabídce zvolte **najít okno**.  
   
      [Dialogové okno hledání oken](../debugger/find-window-dialog-box.md) otevře.  
   
-3.  Z **Windows** kartu tak, že přetáhnete **tažením nástroje hledání** intervalu cíl. Při přetahování nástroj, **najít okno** dialogové okno zobrazí podrobnosti o vybrané okno.  
+3. Z **Windows** kartu tak, že přetáhnete **tažením nástroje hledání** intervalu cíl. Při přetahování nástroj, **najít okno** dialogové okno zobrazí podrobnosti o vybrané okno.  
   
      – nebo –  
   
      Pokud máte popisovač okna, které chcete prověřit (například zkopírovat z ladicího programu), můžete zadat do **zpracování** textového pole.  
   
-4.  V části **zobrazit**vyberte **zprávy**.  
+4. V části **zobrazit**vyberte **zprávy**.  
   
-5.  Stisknutím klávesy **OK**.  
+5. Stisknutím klávesy **OK**.  
   
      Prázdnou hodnotu [zobrazení zpráv](../debugger/messages-view.md) otevře se okno a **zprávy** nabídka se přidá na panel nástrojů nástroje Spy ++.  
   
-6.  Z **zprávy** nabídce zvolte **možnosti protokolování**.  
+6. Z **zprávy** nabídce zvolte **možnosti protokolování**.  
   
      [Dialogové okno možností zpráv](../debugger/message-options-dialog-box.md) otevře.  
   
-7.  Vyberte požadované možnosti pro zprávy, které chcete zobrazit.  
+7. Vyberte požadované možnosti pro zprávy, které chcete zobrazit.  
   
-8.  Stisknutím klávesy **OK** zahájíte protokolování zpráv.  
+8. Stisknutím klávesy **OK** zahájíte protokolování zpráv.  
   
      V závislosti na vybrané možnosti, zprávy začít Streamovat do aktivního okna zobrazení zprávy.  
   

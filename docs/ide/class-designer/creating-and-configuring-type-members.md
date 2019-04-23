@@ -29,12 +29,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 962b3ef149730772c01c8cfe3a3bf026d59fd3b0
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 39932fe8d4afa31c66d6daa4af33d963b5612eb2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58324237"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073837"
 ---
 # <a name="create-and-configure-type-members-in-class-designer"></a>Vytvoření a konfigurace členů typů v Návrháři tříd
 
@@ -86,41 +86,41 @@ Ve výchozím nastavení **podrobností třídy** okno se automaticky zobrazí p
 
 ### <a name="create-a-member-using-class-designer"></a>Vytvoření členu pomocí návrháře tříd
 
-1.  Klikněte pravým tlačítkem na typ, ke kterému chcete přidat člen, přejděte na **přidat**a pak zvolte typ člena, které chcete přidat.
+1. Klikněte pravým tlačítkem na typ, ke kterému chcete přidat člen, přejděte na **přidat**a pak zvolte typ člena, které chcete přidat.
 
      Vytvoří se nový podpis člena a přidá se k typu. Se klíči přiřadí výchozí název, který můžete změnit v **návrhář tříd**, **podrobností třídy** okna, nebo **vlastnosti** okna.
 
-2.  Volitelně můžete určit další detaily členu, například jeho typ.
+2. Volitelně můžete určit další detaily členu, například jeho typ.
 
 ### <a name="create-a-member-using-the-class-details-window-toolbar"></a>Vytvoření členu pomocí panelu nástrojů okna podrobností třídy
 
-1.  Na ploše diagramu vyberte typ, ke kterému chcete přidat člen.
+1. Na ploše diagramu vyberte typ, ke kterému chcete přidat člen.
 
      Typ získá fokus a jeho obsah se zobrazí v **podrobností třídy** okna.
 
-2.  V **podrobností třídy** panel nástrojů okna, klikněte na ikonu nahoře a vyberte **nový \<člena >** z rozevíracího seznamu.
+2. V **podrobností třídy** panel nástrojů okna, klikněte na ikonu nahoře a vyberte **nový \<člena >** z rozevíracího seznamu.
 
      Kurzor se přesune **název** pole na řádek pro typ členu, které chcete přidat. Například, pokud jste klikli na **novou vlastnost**, kurzor se přesune na nový řádek v **vlastnosti** část **podrobností třídy** okna.
 
-3.  Zadejte název členu, který chcete vytvořit, a stiskněte klávesu Enter (nebo jinak přesuňte fokus, například stisknutím klávesy Tab).
+3. Zadejte název členu, který chcete vytvořit, a stiskněte klávesu Enter (nebo jinak přesuňte fokus, například stisknutím klávesy Tab).
 
      Vytvoří se nový podpis člena a přidá se k typu. Člen nyní existuje v kódu a zobrazí se v **návrhář tříd**, **podrobností třídy** okna a okna Vlastnosti.
 
-4.  Volitelně můžete určit další detaily členu, například jeho typ.
+4. Volitelně můžete určit další detaily členu, například jeho typ.
 
 ### <a name="create-a-member-using-the-class-details-window"></a>Vytvoření členu pomocí okna podrobností třídy
 
-1.  Na ploše diagramu vyberte typ, ke kterému chcete přidat člen.
+1. Na ploše diagramu vyberte typ, ke kterému chcete přidat člen.
 
      Typ získá fokus a jeho obsah se zobrazí v **podrobností třídy** okna.
 
-2.  V **podrobností třídy** okno, v části, která obsahuje typ členu, které chcete přidat, klikněte na tlačítko  **\<přidat člen >**. Například pokud chcete přidat pole, klikněte na možnost  **\<přidat pole >**.
+2. V **podrobností třídy** okno, v části, která obsahuje typ členu, které chcete přidat, klikněte na tlačítko  **\<přidat člen >**. Například pokud chcete přidat pole, klikněte na možnost  **\<přidat pole >**.
 
-3.  Zadejte název členu, který chcete vytvořit, a stiskněte klávesu Enter.
+3. Zadejte název členu, který chcete vytvořit, a stiskněte klávesu Enter.
 
      Vytvoří se nový podpis člena a přidá se k typu. Člen nyní existuje v kódu a zobrazí se v **návrhář tříd**, **podrobností třídy** okna a okna Vlastnosti.
 
-4.  Volitelně můžete určit další detaily členu, například jeho typ.
+4. Volitelně můžete určit další detaily členu, například jeho typ.
 
      **Poznámka:** Klávesové zkratky můžete také použít k vytváření členů. Další informace najdete v tématu [klávesové zkratky a zkratky myši v diagramu tříd a podrobností třídy okna](keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window.md).
 
@@ -170,11 +170,11 @@ Každý řádek členu zobrazuje následující prvky:
 
 ### <a name="to-modify-a-type-member"></a>Změna členu typu
 
-1.  Pomocí Návrháře tříd vyberte typ.
+1. Pomocí Návrháře tříd vyberte typ.
 
-2.  Pokud **podrobností třídy** okno nezobrazí, klikněte na tlačítko **podrobností třídy** okno tlačítko na panelu nástrojů návrhář tříd.
+2. Pokud **podrobností třídy** okno nezobrazí, klikněte na tlačítko **podrobností třídy** okno tlačítko na panelu nástrojů návrhář tříd.
 
-3.  Upravte hodnoty v polích **podrobností třídy** mřížky okna okno. Po každé úpravě stiskněte klávesu ENTER nebo jinak přesuňte fokus z upravovaného pole, například stisknutím klávesy TAB. Úpravy se v kódu projeví okamžitě.
+3. Upravte hodnoty v polích **podrobností třídy** mřížky okna okno. Po každé úpravě stiskněte klávesu ENTER nebo jinak přesuňte fokus z upravovaného pole, například stisknutím klávesy TAB. Úpravy se v kódu projeví okamžitě.
 
     > [!NOTE]
     > Pokud chcete změnit pouze název členu, můžete to provést úpravou na místě.
@@ -217,35 +217,35 @@ Přidání parametrů do metody pomocí **podrobností třídy** okna. Parametry
 
 ### <a name="to-add-a-parameter-to-a-method"></a>Přidání parametru do metody
 
-1.  Na ploše diagramu klikněte na typ obsahující metodu, ke které chcete přidat parametr.
+1. Na ploše diagramu klikněte na typ obsahující metodu, ke které chcete přidat parametr.
 
      Typ získá fokus a jeho obsah se zobrazí v **podrobností třídy** okna.
 
-2.  V **podrobností třídy** okna rozbalte řádek metody, do které chcete přidat parametr.
+2. V **podrobností třídy** okna rozbalte řádek metody, do které chcete přidat parametr.
 
      Zobrazí se řádek parametru, který obsahuje pouze dvojici závorek a slova  **\<přidat parametr >.**
 
-3.  Klikněte na tlačítko  **\<přidat parametr >**, zadejte název nového parametru a stiskněte klávesu **Enter**.
+3. Klikněte na tlačítko  **\<přidat parametr >**, zadejte název nového parametru a stiskněte klávesu **Enter**.
 
      Nový parametr se přidá do metody a kódu metody. Zobrazí se v **podrobností třídy** okna a okna Vlastnosti.
 
-4.  Volitelně můžete určit další detaily parametru, například jeho typ.
+4. Volitelně můžete určit další detaily parametru, například jeho typ.
 
 ### <a name="to-add-an-optional-parameter-to-a-method"></a>Přidání volitelného parametru do metody
 
-1.  Na ploše diagramu klikněte na typ obsahující metodu, ke které chcete přidat volitelný parametr.
+1. Na ploše diagramu klikněte na typ obsahující metodu, ke které chcete přidat volitelný parametr.
 
      Typ získá fokus a jeho obsah se zobrazí v **podrobností třídy** okna.
 
-2.  V **podrobností třídy** okna rozbalte řádek metody, do které chcete přidat volitelný parametr.
+2. V **podrobností třídy** okna rozbalte řádek metody, do které chcete přidat volitelný parametr.
 
      Zobrazí se řádek parametru, který obsahuje pouze dvojici závorek a slova  **\<přidat parametr >.**
 
-3.  Klikněte na tlačítko  **\<přidat parametr >**, zadejte název nového parametru a stiskněte klávesu **Enter**.
+3. Klikněte na tlačítko  **\<přidat parametr >**, zadejte název nového parametru a stiskněte klávesu **Enter**.
 
      Nový parametr se přidá do metody a kódu metody. Zobrazí se v **podrobností třídy** okna a okna Vlastnosti.
 
-4.  V okně Vlastnosti zadejte hodnotu **volitelné výchozí** vlastnost. Nastavením vlastnosti Volitelné výchozí nastavíte daný parametr na volitelný.
+4. V okně Vlastnosti zadejte hodnotu **volitelné výchozí** vlastnost. Nastavením vlastnosti Volitelné výchozí nastavíte daný parametr na volitelný.
 
     > [!NOTE]
     > Volitelné parametry musí být posledními parametry v seznamu parametrů.

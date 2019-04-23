@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c38ebb717b351bacdb5704b72af25320fd98763c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 8674f0c8ed833ac8db80f30f616aa8b0dbf4cf9f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614113"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071002"
 ---
 # <a name="how-to-use-the-same-target-in-multiple-project-files"></a>Postupy: Použití stejného cíle ve více souborech projektu
 Pokud jste vytvořili několik [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] soubory projektu, jste možná zjistili, že budete muset použít stejné úlohy a cíle v různé soubory projektu. Namísto do každého souboru projektu, včetně úplný popis těchto úloh nebo cíle, můžete uložit cíl v souboru samostatný projekt a následným importem tohoto projektu do jiného projektu, kterou je potřeba použít cíl.
@@ -26,13 +26,13 @@ Pokud jste vytvořili několik [!INCLUDE[vstecmsbuild](../extensibility/internal
 
 #### <a name="to-import-a-project"></a>Chcete-li importovat projekt
 
-1.  Definujte v souboru importu projektu, všechny vlastnosti a položky, které se používají jako parametry pro vlastnosti, položky v importovaném projektu.
+1. Definujte v souboru importu projektu, všechny vlastnosti a položky, které se používají jako parametry pro vlastnosti, položky v importovaném projektu.
 
-2.  Použití `Import` prvek, který chcete importovat projekt. Příklad:
+2. Použití `Import` prvek, který chcete importovat projekt. Příklad:
 
      `<Import Project="MyCommon.targets"/>`
 
-3.  Následující `Import` elementu, definujte všechny vlastnosti a položky, které se musí přepsat výchozí definice vlastností a položek v importovaném projektu.
+3. Následující `Import` elementu, definujte všechny vlastnosti a položky, které se musí přepsat výchozí definice vlastností a položek v importovaném projektu.
 
 ## <a name="order-of-evaluation"></a>Pořadí vyhodnocení
  Když [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] dosáhne `Import` element importovaném projektu účinně vložený do importu projektu na umístění `Import` elementu. Proto umístění `Import` prvek může mít vliv na hodnoty vlastností a položek. Je důležité pochopit vlastnosti a položky, které určil institut NIST importovaném projektu a vlastnosti a položky, které používá importovaném projektu.
@@ -74,11 +74,11 @@ Pokud jste vytvořili několik [!INCLUDE[vstecmsbuild](../extensibility/internal
 
 #### <a name="use-the-following-approach-when-importing-projects"></a>Použijte následující postup při importu projektů
 
-1.  Definování v souboru projektu, všechny vlastnosti a položky, které se používají jako parametry pro vlastnosti, položky v importovaném projektu.
+1. Definování v souboru projektu, všechny vlastnosti a položky, které se používají jako parametry pro vlastnosti, položky v importovaném projektu.
 
-2.  Importujte projektu.
+2. Importujte projektu.
 
-3.  V souboru projektu definujte všechny vlastnosti a položky, které se musí přepsat výchozí definice vlastností a položek v importovaném projektu.
+3. V souboru projektu definujte všechny vlastnosti a položky, které se musí přepsat výchozí definice vlastností a položek v importovaném projektu.
 
 ## <a name="example"></a>Příklad
  Následující příklad kódu ukazuje *MyCommon.targets* soubor, který importuje druhý příklad kódu. *.Targets* soubor vyhodnotí jako vlastnosti z importu projektu ke konfiguraci sestavení.

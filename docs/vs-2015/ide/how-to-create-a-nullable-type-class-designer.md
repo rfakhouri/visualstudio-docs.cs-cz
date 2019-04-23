@@ -12,12 +12,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 683e9e6fdd6108ade3a991ce5280a2f8024fe496
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 3d5e74a4384cff0a68764ffe09a37ab28460d58b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54834914"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60058496"
 ---
 # <a name="how-to-create-a-nullable-type-class-designer"></a>Postupy: Vytvoření typu s možnou hodnotou Null (návrhář tříd)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,17 +42,17 @@ Některé typy hodnot ne vždy mají (nebo potřebujete) definovanou hodnotu. To
   
 ### <a name="to-add-a-nullable-type-by-using-the-class-designer"></a>Chcete-li přidat typ připouštějící hodnotu Null pomocí návrháře tříd  
   
-1.  V diagramu tříd rozšiřte existující třídy nebo vytvořte novou třídu.  
+1. V diagramu tříd rozšiřte existující třídy nebo vytvořte novou třídu.  
   
-2.  Přidání třídy do projektu, na **Diagram tříd** nabídky, klikněte na tlačítko **přidat**a potom klikněte na tlačítko **přidat třídu**.  
+2. Přidání třídy do projektu, na **Diagram tříd** nabídky, klikněte na tlačítko **přidat**a potom klikněte na tlačítko **přidat třídu**.  
   
-3.  Rozbalte obrazec třídy na **Diagram tříd** nabídky, klikněte na tlačítko **Rozbalit**.  
+3. Rozbalte obrazec třídy na **Diagram tříd** nabídky, klikněte na tlačítko **Rozbalit**.  
   
-4.  Vyberte obrazec třídy. Na **Diagram tříd** nabídky, klikněte na tlačítko **přidat**a potom klikněte na tlačítko **pole**. Nové pole, která má výchozí název **pole** se zobrazí na obrazec třídy a také **podrobností třídy** okna.  
+4. Vyberte obrazec třídy. Na **Diagram tříd** nabídky, klikněte na tlačítko **přidat**a potom klikněte na tlačítko **pole**. Nové pole, která má výchozí název **pole** se zobrazí na obrazec třídy a také **podrobností třídy** okna.  
   
-5.  V **název** sloupec **podrobností třídy** okna (nebo ve třídě obrazce samotné), změňte název nového pole na platný a smysluplný název.  
+5. V **název** sloupec **podrobností třídy** okna (nebo ve třídě obrazce samotné), změňte název nového pole na platný a smysluplný název.  
   
-6.  V **typ** sloupec **podrobností třídy** okna, deklarujte typ jako typ s možnou hodnotou Null, jak je znázorněno v následujícím kódu:  
+6. V **typ** sloupec **podrobností třídy** okna, deklarujte typ jako typ s možnou hodnotou Null, jak je znázorněno v následujícím kódu:  
   
     ```csharp  
     // Declare a nullable type in Visual C#:  
@@ -71,15 +71,15 @@ Některé typy hodnot ne vždy mají (nebo potřebujete) definovanou hodnotu. To
   
 ### <a name="to-add-a-nullable-type-by-using-the-code-editor"></a>Chcete-li přidat typ připouštějící hodnotu Null pomocí editoru kódu  
   
-1.  Přidání třídy do projektu. Vyberte uzel projektu v **Průzkumníku řešení**a dále **projektu** nabídky, klikněte na tlačítko **přidat třídu**.  
+1. Přidání třídy do projektu. Vyberte uzel projektu v **Průzkumníku řešení**a dále **projektu** nabídky, klikněte na tlačítko **přidat třídu**.  
   
-2.  V souboru .cs nebo .vb pro novou třídu přidejte jeden nebo více typů s povolenou hodnotou Null v této nové třídě do deklarace třídy.  
+2. V souboru .cs nebo .vb pro novou třídu přidejte jeden nebo více typů s povolenou hodnotou Null v této nové třídě do deklarace třídy.  
   
-3.  Ze zobrazení tříd přetáhněte přes novou ikonu třídy na návrhové ploše návrháře tříd. Tvar třídy se zobrazí v diagramu tříd.  
+3. Ze zobrazení tříd přetáhněte přes novou ikonu třídy na návrhové ploše návrháře tříd. Tvar třídy se zobrazí v diagramu tříd.  
   
-4.  Rozbalit podrobnosti pro třídu tvar a přesuňte ukazatel myši nad členy třídy. Popisek zobrazí deklarace každého člena.  
+4. Rozbalit podrobnosti pro třídu tvar a přesuňte ukazatel myši nad členy třídy. Popisek zobrazí deklarace každého člena.  
   
-5.  Pravým tlačítkem myši na obrazec třídy a klikněte na tlačítko **podrobností třídy**. Můžete zobrazit nebo upravit vlastnosti nového typu **podrobností třídy** okna.  
+5. Pravým tlačítkem myši na obrazec třídy a klikněte na tlačítko **podrobností třídy**. Můžete zobrazit nebo upravit vlastnosti nového typu **podrobností třídy** okna.  
   
 ## <a name="see-also"></a>Viz také  
  <xref:System.Nullable%601>   

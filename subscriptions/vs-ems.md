@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Další informace o Enterprise Mobility + Security výhodu součástí vašeho předplatného sady Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: 55c271f73f5859f39bbf6b430ffa19ca301591d2
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: d670db0d083c4b8f32f970c790859a7c82e5dff1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59652342"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073134"
 ---
 # <a name="enterprise-mobility--security-ems-in-visual-studio-subscriptions"></a>Enterprise Mobility + Security (EMS) v předplatných sady Visual Studio
 
@@ -70,7 +70,7 @@ Pokud chcete použít EMS, budete muset nastavit účet nebo se přihlaste pomoc
 Nejste si jistí které předplatné používáte?  Připojte se k [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) zobrazíte všechna předplatná, která jsou přiřazená e-mailovou adresu. Pokud se nezobrazí všechna předplatná, může mít jeden nebo více přiřazené na jinou e-mailovou adresu.  Bude potřeba přihlásit se přes tento e-mailovou adresu najdete v těchto předplatných.
 
 ## <a name="support-resources"></a>Informační zdroje podpory
--  Potřebujete pomoc s EMS?  Podívejte se na online [dokumentace k EMS](/enterprise-mobility-security/).
--  Pro technickou podporu pro všechny součásti EMS, navštivte prosím [nejčastější dotazy podpory EMS](https://docs.microsoft.com/enterprise-mobility-security/solutions/ems-support-faq) najít správné podpory pro váš dotaz.
--  Potřebujete pomoc se prodeje, předplatnými, účty a fakturací pro předplatná sady Visual Studio, obraťte se na Visual Studio [podpora předplatných](https://visualstudio.microsoft.com/subscriptions/support/).
--  Máte dotaz k Visual Studio IDE, DevOps služby Azure nebo jiných produktů Visual Studio nebo služeb?  Navštivte [Visual Studio – podpora](https://visualstudio.microsoft.com/support/).
+- Potřebujete pomoc s EMS?  Podívejte se na online [dokumentace k EMS](/enterprise-mobility-security/).
+- Pro technickou podporu pro všechny součásti EMS, navštivte prosím [nejčastější dotazy podpory EMS](https://docs.microsoft.com/enterprise-mobility-security/solutions/ems-support-faq) najít správné podpory pro váš dotaz.
+- Potřebujete pomoc se prodeje, předplatnými, účty a fakturací pro předplatná sady Visual Studio, obraťte se na Visual Studio [podpora předplatných](https://visualstudio.microsoft.com/subscriptions/support/).
+- Máte dotaz k Visual Studio IDE, DevOps služby Azure nebo jiných produktů Visual Studio nebo služeb?  Navštivte [Visual Studio – podpora](https://visualstudio.microsoft.com/support/).

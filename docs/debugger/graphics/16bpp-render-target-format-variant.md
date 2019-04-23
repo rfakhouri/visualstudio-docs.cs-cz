@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f3fd601b48489e7334013e1e9438c1b6a580457d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 94775b717a3095d54d3fa52e3d2a5325dc3d21c5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56698934"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075789"
 ---
 # <a name="16-bpp-render-target-format-variant"></a>16 bitů na pixel vykreslování cílového formátu typu Variant
 Nastaví formát pixelu DXGI_FORMAT_B5G6R5_UNORM pro všechny cíle vykreslování a zpět vyrovnávací paměti.
@@ -48,11 +48,11 @@ Aplikace, které jsou součástí řetězce přepnutí mít formát vyrovnávac�
 ## <a name="remarks"></a>Poznámky
  Cílový formát vykreslení se resetují na DXGI_FORMAT_B5G6R5_UNORM na všechna volání `ID3D11Device::CreateTexture2D` , který vytvoří cíl vykreslování. Konkrétně je formát přepsána při D3D11_TEXTURE2D_DESC objekt předaný v pDesc popisuje cíl vykreslování; To je:
 
--   Člen BindFlags má příznak D3D11_BIND_REDNER_TARGET nastavený.
+- Člen BindFlags má příznak D3D11_BIND_REDNER_TARGET nastavený.
 
--   Člen BindFlags má příznak D3D11_BIND_DEPTH_STENCIL vymazána.
+- Člen BindFlags má příznak D3D11_BIND_DEPTH_STENCIL vymazána.
 
--   Využití člen je nastavený na D3D11_USAGE_DEFAULT.
+- Využití člen je nastavený na D3D11_USAGE_DEFAULT.
 
 ## <a name="restrictions-and-limitations"></a>Omezení a omezení
  Protože formátu B5G6R5 nemá kanál alfa, nezachová se tato varianta alfa obsah. Pokud vaše aplikace vykreslování vyžaduje alfa kanál v vaše cíle vykreslování, nebudete moci přepnout jen na B5G6R5 formátu.

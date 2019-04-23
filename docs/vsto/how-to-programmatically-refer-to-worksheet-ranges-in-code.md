@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: be71d18b7fa0b3cc9dba8a27c6c462d5ea1a2434
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2e82b884965c5c7362951c7d94199f90c93fbfc3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56608433"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073693"
 ---
 # <a name="how-to-programmatically-refer-to-worksheet-ranges-in-code"></a>Postupy: Odkazování na oblasti listů v kódu programu
   Použijte podobný proces k odkazování na obsah <xref:Microsoft.Office.Tools.Excel.NamedRange> ovládací prvek nebo rozsah objekt nativní aplikace Excel.
@@ -32,7 +32,7 @@ ms.locfileid: "56608433"
 
 ### <a name="to-refer-to-a-namedrange-control"></a>O ovládacím prvkem namedrange
 
-1.  Přiřadit řetězec <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> vlastnost <xref:Microsoft.Office.Tools.Excel.NamedRange> ovládacího prvku. Tento kód musí být umístěn ve třídě list, není v `ThisWorkbook` třídy.
+1. Přiřadit řetězec <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> vlastnost <xref:Microsoft.Office.Tools.Excel.NamedRange> ovládacího prvku. Tento kód musí být umístěn ve třídě list, není v `ThisWorkbook` třídy.
 
      [!code-csharp[Trin_VstcoreExcelAutomation#46](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#46)]
      [!code-vb[Trin_VstcoreExcelAutomation#46](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#46)]
@@ -42,7 +42,7 @@ ms.locfileid: "56608433"
 
 ### <a name="to-refer-to-a-native-range-object"></a>Pro odkazování na objekt nativní rozsahu
 
-1.  Přiřadit řetězec <xref:Microsoft.Office.Interop.Excel.Range.Value2%2A> vlastnost rozsahu.
+1. Přiřadit řetězec <xref:Microsoft.Office.Interop.Excel.Range.Value2%2A> vlastnost rozsahu.
 
      [!code-csharp[Trin_VstcoreExcelAutomation#47](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#47)]
      [!code-vb[Trin_VstcoreExcelAutomation#47](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#47)]

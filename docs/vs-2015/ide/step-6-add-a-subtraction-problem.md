@@ -9,29 +9,29 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 500836281c1dba10bfdfe61b2442d30fb985fe38
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e846bc8dc8d3087c58d58ee91752abc713c5f66e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54796621"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064217"
 ---
 # <a name="step-6-add-a-subtraction-problem"></a>Krok 6: Přidání úlohy odčítání
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 V šesté části tohoto kurzu kurzu přidáte úlohu odčítání a zjistěte, jak provádět následující úlohy:  
   
--   Store hodnoty odčítání.  
+- Store hodnoty odčítání.  
   
--   Generovat náhodná čísla pro úlohu (a ujistěte se, že odpověď je od 0 do 100).  
+- Generovat náhodná čísla pro úlohu (a ujistěte se, že odpověď je od 0 do 100).  
   
--   Aktualizujte metodu, která kontroluje odpovědi, takže příliš zkontroluje nový problém s odčítáním.  
+- Aktualizujte metodu, která kontroluje odpovědi, takže příliš zkontroluje nový problém s odčítáním.  
   
--   Aktualizujte obslužné rutiny události cyklů časovače, aby obslužná rutina události vyplnila správnou odpověď, když vyprší čas.  
+- Aktualizujte obslužné rutiny události cyklů časovače, aby obslužná rutina události vyplnila správnou odpověď, když vyprší čas.  
   
 ### <a name="to-add-a-subtraction-problem"></a>Chcete-li přidat úlohu odčítání  
   
-1.  Přidáte dvě celočíselné proměnné pro odčítání do svého formuláře mezi celočíselné proměnné pro sčítání a časovač. Kód by měl vypadat nějak takto.  
+1. Přidáte dvě celočíselné proměnné pro odčítání do svého formuláře mezi celočíselné proměnné pro sčítání a časovač. Kód by měl vypadat nějak takto.  
   
      [!code-csharp[VbExpressTutorial3Step5_6#12](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial3step5_6/cs/form1.cs#12)]
      [!code-vb[VbExpressTutorial3Step5_6#12](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial3step5_6/vb/form1.vb#12)]  
@@ -40,7 +40,7 @@ V šesté části tohoto kurzu kurzu přidáte úlohu odčítání a zjistěte, 
   
      V dalším kroku upravíte `StartTheQuiz()` metodu pro poskytnutí náhodných hodnot pro problém s odčítáním.  
   
-2.  Přidejte následující kód za komentář "Vyplnění úlohy odčítání".  
+2. Přidejte následující kód za komentář "Vyplnění úlohy odčítání".  
   
      [!code-csharp[VbExpressTutorial3Step5_6#13](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial3step5_6/cs/form1.cs#13)]
      [!code-vb[VbExpressTutorial3Step5_6#13](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial3step5_6/vb/form1.vb#13)]  
@@ -62,19 +62,19 @@ Přetížení pro metodu Next() v IntelliSense
   
      V tomto případě chcete zvolit poslední přetížení, protože můžete určit minimální a maximální hodnoty.  
   
-3.  Upravit `CheckTheAnswer()` metodu ke kontrole správného odečtení odpovědí.  
+3. Upravit `CheckTheAnswer()` metodu ke kontrole správného odečtení odpovědí.  
   
      [!code-csharp[VbExpressTutorial3Step5_6#14](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial3step5_6/cs/form1.cs#14)]
      [!code-vb[VbExpressTutorial3Step5_6#14](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial3step5_6/vb/form1.vb#14)]  
   
      V jazyce Visual C# `&&` je `logical and` operátor. V jazyce Visual Basic je ekvivalentní operátor `AndAlso`. Tyto operátory označují "Pokud součet addend1 a addend2 je roven hodnotě součtu NumericUpDown a minuend mínus subtrahend je roven hodnotě rozdílu NumericUpDown." `CheckTheAnswer()` Vrátí metoda `true` pouze v případě, že odpovědi na sčítání a odčítání problémy jsou obě správné.  
   
-4.  Nahraďte poslední část obslužné rutiny události cyklů časovače následujícím kódem, tak, aby vyplnila správnou odpověď, když vyprší čas.  
+4. Nahraďte poslední část obslužné rutiny události cyklů časovače následujícím kódem, tak, aby vyplnila správnou odpověď, když vyprší čas.  
   
      [!code-csharp[VbExpressTutorial3Step5_6#22](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial3step5_6/cs/form1.cs#22)]
      [!code-vb[VbExpressTutorial3Step5_6#22](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial3step5_6/vb/form1.vb#22)]  
   
-5.  Uložte a spusťte váš kód.  
+5. Uložte a spusťte váš kód.  
   
      Váš program zahrnuje úlohu odčítání, jak ukazuje následující obrázek.  
   
@@ -83,6 +83,6 @@ Matematický kvíz s úlohou odečítání
   
 ### <a name="to-continue-or-review"></a>Chcete-li pokračovat nebo přezkoumat  
   
--   Přechod k dalšímu kroku výukového programu naleznete v tématu [krok 7: Přidejte problémy násobení a dělení](../ide/step-7-add-multiplication-and-division-problems.md).  
+- Přechod k dalšímu kroku výukového programu naleznete v tématu [krok 7: Přidejte problémy násobení a dělení](../ide/step-7-add-multiplication-and-division-problems.md).  
   
--   Chcete-li vrátit k předchozímu kroku tutoriálu, přečtěte si téma [krok 5: Přidání obslužné rutiny událostí Enter pro ovládací prvky NumericUpDown](../ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md).
+- Chcete-li vrátit k předchozímu kroku tutoriálu, přečtěte si téma [krok 5: Přidání obslužné rutiny událostí Enter pro ovládací prvky NumericUpDown](../ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md).

@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 49eed907e38c79a98e5604a96380efa5d7281c1d
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: fe8a05e193ffe621d28147389752ab56031cf499
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58415665"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080173"
 ---
 # <a name="how-to-add-a-drag-and-drop-handler"></a>Postupy: Přidání obslužné rutiny operace podporující přetahování
 
@@ -34,7 +34,7 @@ using System.Linq;
 
 V novém souboru definujte částečnou třídu pro obrazec ani diagram třídy, která by měla odpovídat operace přetažení. Přepište následující metody:
 
--   <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDragOver%2A>– Tato metoda je volána, pokud kurzor myši vstoupí na obrazec během operace přetažení. Metodu by měl zkontrolovat, že uživatel přetahuje položku a nastavte vlastnost účinek označující, zda uživatele lze přetáhnout položky v tomto tvaru. Vlastnost účinek určuje vzhled kurzor, zatímco je nad tímto obrazcem a také určuje, zda `OnDragDrop()` bude volána, když uživatel uvolní tlačítko myši.
+- <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDragOver%2A>– Tato metoda je volána, pokud kurzor myši vstoupí na obrazec během operace přetažení. Metodu by měl zkontrolovat, že uživatel přetahuje položku a nastavte vlastnost účinek označující, zda uživatele lze přetáhnout položky v tomto tvaru. Vlastnost účinek určuje vzhled kurzor, zatímco je nad tímto obrazcem a také určuje, zda `OnDragDrop()` bude volána, když uživatel uvolní tlačítko myši.
 
     ```csharp
     partial class MyShape // MyShape generated from DSL Definition.
@@ -50,7 +50,7 @@ V novém souboru definujte částečnou třídu pro obrazec ani diagram třídy,
         }
     ```
 
--   <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDragDrop%2A> – Tato metoda je volána, pokud uživatel uvolní tlačítko myši při umístění ukazatele myši stisknuté tento tvar nebo diagram, pokud `OnDragOver(DiagramDragEventArgs e)` předtím nastavili `e.Effect` hodnotu jinou než `None`.
+- <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDragDrop%2A> – Tato metoda je volána, pokud uživatel uvolní tlačítko myši při umístění ukazatele myši stisknuté tento tvar nebo diagram, pokud `OnDragOver(DiagramDragEventArgs e)` předtím nastavili `e.Effect` hodnotu jinou než `None`.
 
     ```csharp
     public override void OnDragDrop(DiagramDragEventArgs e)
@@ -66,7 +66,7 @@ V novém souboru definujte částečnou třídu pro obrazec ani diagram třídy,
     }
     ```
 
--   <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDoubleClick%2A> – Tato metoda je volána, když uživatel pokliká na tvar nebo diagram.
+- <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDoubleClick%2A> – Tato metoda je volána, když uživatel pokliká na tvar nebo diagram.
 
      Další informace najdete v tématu [jak: Zachycení kliknutí na obrazec či Dekorátor](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md).
 
@@ -80,9 +80,9 @@ MEF (Managed Extensibility Framework) umožňuje definovat součásti, které mo
 
 ### <a name="to-define-a-mef-gesture-handler"></a>Chcete-li definovat obslužnou rutinu gesta MEF
 
-1.  Přidat do vaší **Dsl** a **DslPackage** projektů **MefExtension** soubory, které jsou popsány v [rozšíření vašeho DSL pomocí MEF](../modeling/extend-your-dsl-by-using-mef.md).
+1. Přidat do vaší **Dsl** a **DslPackage** projektů **MefExtension** soubory, které jsou popsány v [rozšíření vašeho DSL pomocí MEF](../modeling/extend-your-dsl-by-using-mef.md).
 
-2.  Nyní je možné definovat obslužnou rutinu gesta jako komponentu MEF:
+2. Nyní je možné definovat obslužnou rutinu gesta jako komponentu MEF:
 
     ```csharp
     // This attribute is defined in the generated file
@@ -114,7 +114,7 @@ MEF (Managed Extensibility Framework) umožňuje definovat součásti, které mo
 
      Můžete vytvořit více než jedna komponenta obslužné rutiny gesta, například pokud máte různé typy přetažených objektů.
 
-3.  Přidat definicí částečné třídy pro tvar target, konektoru nebo diagramu třídy a definujte metody `IsAcceptableDropItem()` a `ProcessDragDropItem()`. Tyto metody musí začínat extrahováním přetaženou položku z argumentů události. Další informace najdete v tématu [jak získat odkaz na přetaženou položku](#to-send-an-object-from-a-source-dsl).
+3. Přidat definicí částečné třídy pro tvar target, konektoru nebo diagramu třídy a definujte metody `IsAcceptableDropItem()` a `ProcessDragDropItem()`. Tyto metody musí začínat extrahováním přetaženou položku z argumentů události. Další informace najdete v tématu [jak získat odkaz na přetaženou položku](#to-send-an-object-from-a-source-dsl).
 
 ## <a name="how-to-decode-the-dragged-item"></a>Dekódování přetaženou položku
 
@@ -124,17 +124,17 @@ Když uživatel přetáhne položku do diagramu, nebo z jedné části diagramu 
 
 Ke zjištění formátů, v nichž je k dispozici vaše informace o zdroji přetažení svůj kód spustit v režimu, nastavení zarážky na položce, aby ladění `OnDragOver()` nebo `CanDragDrop()`. Zkontrolovat hodnoty `DiagramDragEventArgs` parametru. Informace jsou poskytovány ve dvou formách:
 
--   <xref:System.Windows.Forms.IDataObject>  `Data` – Tato vlastnost představuje serializovaná verze zdrojových objektů, obvykle více než jeden formát. Jeho nejužitečnější funkce jsou:
+- <xref:System.Windows.Forms.IDataObject>  `Data` – Tato vlastnost představuje serializovaná verze zdrojových objektů, obvykle více než jeden formát. Jeho nejužitečnější funkce jsou:
 
-    -   diagramEventArgs.Data.GetDataFormats() - obsahuje seznam formátů, v které umí dekódovat přetahovaného objektu. Například pokud uživatel přetáhne soubor z plochy, dostupné formáty patří název souboru ("`FileNameW`").
+    - diagramEventArgs.Data.GetDataFormats() - obsahuje seznam formátů, v které umí dekódovat přetahovaného objektu. Například pokud uživatel přetáhne soubor z plochy, dostupné formáty patří název souboru ("`FileNameW`").
 
-    -   `diagramEventArgs.Data.GetData(format)` -Dekóduje přetahovaného objektu v zadaném formátu. Objekt na příslušný typ přetypování. Příklad:
+    - `diagramEventArgs.Data.GetData(format)` -Dekóduje přetahovaného objektu v zadaném formátu. Objekt na příslušný typ přetypování. Příklad:
 
          `string fileName = diagramEventArgs.Data.GetData("FileNameW") as string;`
 
          Objekty, jako jsou odkazy na Service bus model ze zdroje může taky přenášet v vlastní formát. Další informace najdete v tématu [jak odeslat odkazy na Model Service Bus v operace přetažení](#to-send-an-object-from-a-source-dsl).
 
--   <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> `Prototype` – Pomocí této vlastnosti, pokud chcete uživatelům přetáhněte položky z DSL nebo modelu UML. Prvku skupiny prototyp obsahuje jeden nebo více objektů, odkazy a jejich hodnot vlastností. Používá se také operace vložení a jsou při přidávání prvku z panelu nástrojů. V prototypu objektů a jejich typy jsou označeny identifikátorem Guid. Tento kód například umožňuje uživateli prvky třídu přetáhnout z Průzkumníku modelů UML nebo diagramu UML:
+- <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> `Prototype` – Pomocí této vlastnosti, pokud chcete uživatelům přetáhněte položky z DSL nebo modelu UML. Prvku skupiny prototyp obsahuje jeden nebo více objektů, odkazy a jejich hodnot vlastností. Používá se také operace vložení a jsou při přidávání prvku z panelu nástrojů. V prototypu objektů a jejich typy jsou označeny identifikátorem Guid. Tento kód například umožňuje uživateli prvky třídu přetáhnout z Průzkumníku modelů UML nebo diagramu UML:
 
     ```csharp
     private bool IsAcceptableDropItem(DiagramDragEventArgs e)
@@ -168,7 +168,7 @@ Zpřístupnění zdroje DSL pomocí sběrnice modelu Visual Studio:
 
 ### <a name="to-send-an-object-from-a-source-dsl"></a>Odesílat objekt ze zdroje DSL
 
-1.  Do vaší podtřídy ElementOperations přepsat `Copy()` tak, aby kóduje odkaz modelu Service Bus (MBR) do IDataObject. Tato metoda bude volána, když uživatel spustí přetáhněte ze zdrojového diagramu. Kódovaný MBR budou k dispozici v IDataObject, když uživatel v diagramu cíl.
+1. Do vaší podtřídy ElementOperations přepsat `Copy()` tak, aby kóduje odkaz modelu Service Bus (MBR) do IDataObject. Tato metoda bude volána, když uživatel spustí přetáhněte ze zdrojového diagramu. Kódovaný MBR budou k dispozici v IDataObject, když uživatel v diagramu cíl.
 
     ```csharp
     using Microsoft.VisualStudio.Modeling;
@@ -208,13 +208,13 @@ Zpřístupnění zdroje DSL pomocí sběrnice modelu Visual Studio:
 
 ### <a name="to-receive-a-model-bus-reference-from-a-dsl-in-a-target-dsl-or-uml-project"></a>Pro příjem z DSL v projektu DSL nebo UML Cílový odkaz modelu Service Bus
 
-1.  V projektu DSL target přidejte odkazy na:
+1. V projektu DSL target přidejte odkazy na:
 
-    -   Zdrojový projekt Dsl.
+    - Zdrojový projekt Dsl.
 
-    -   Zdrojový projekt ModelBus.
+    - Zdrojový projekt ModelBus.
 
-2.  V souboru kódu obslužné rutiny gesta přidejte následující odkazy na obor názvů:
+2. V souboru kódu obslužné rutiny gesta přidejte následující odkazy na obor názvů:
 
     ```csharp
     using Microsoft.VisualStudio.Modeling;
@@ -226,7 +226,7 @@ Zpřístupnění zdroje DSL pomocí sběrnice modelu Visual Studio:
     using SourceDslNamespace.ModelBusAdapters;
     ```
 
-3.  Následující příklad ukazuje, jak získat přístup k prvku modelu zdroje:
+3. Následující příklad ukazuje, jak získat přístup k prvku modelu zdroje:
 
     ```csharp
     partial class MyTargetShape // or diagram or connector
@@ -273,7 +273,7 @@ Zpřístupnění zdroje DSL pomocí sběrnice modelu Visual Studio:
 
 ### <a name="to-accept-an-element-sourced-from-a-uml-model"></a>Tak, aby přijímal element Source z modelu UML
 
--   Následující vzorový kód přijímá objekt v diagramu UML.
+- Následující vzorový kód přijímá objekt v diagramu UML.
 
     ```csharp
     using Microsoft.VisualStudio.ArchitectureTools.Extensibility;

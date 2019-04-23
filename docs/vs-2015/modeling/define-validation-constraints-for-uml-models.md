@@ -11,12 +11,12 @@ caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f7144f435c61bcf6cab03b55482962e55b02407e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 9591875b525d44e343f8326b7f5a145b04b57cff
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54780602"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071159"
 ---
 # <a name="define-validation-constraints-for-uml-models"></a>Definování omezení ověřování pro modely UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,9 +42,9 @@ Můžete definovat omezení ověření, které testují, zda model splňuje podm
 ## <a name="defining-a-validation-extension"></a>Definování ověřování rozšíření  
  Chcete-li vytvořit rozšíření ověření pro UML designer, musíte vytvořit třídu, která definuje omezení ověření a vložit tuto třídu v Visual Studio integrace rozšíření (VSIX). VSIX funguje jako kontejner, který může omezení nainstalovat. Existují dva alternativní způsoby definování rozšíření ověření:  
   
--   **Vytvoření rozšíření ověření ve vlastním souboru VSIX pomocí šablony projektu.** Toto je rychlejší metoda. Pokud nechcete vaše omezení ověření kombinovat s jinými typy rozšíření například příkazy nabídek, vlastními položkami panelu nástrojů nebo obslužnými rutinami gest, použijte ji. V jedné třídě lze definovat několik omezení.  
+- **Vytvoření rozšíření ověření ve vlastním souboru VSIX pomocí šablony projektu.** Toto je rychlejší metoda. Pokud nechcete vaše omezení ověření kombinovat s jinými typy rozšíření například příkazy nabídek, vlastními položkami panelu nástrojů nebo obslužnými rutinami gest, použijte ji. V jedné třídě lze definovat několik omezení.  
   
--   **Vytvoření samostatné třídy ověření a projektů VSIX.** Tuto metodu použijte, pokud chcete sloučit několik typů rozšíření do stejného VSIX. Například pokud váš příkaz nabídky očekává, že model bude dodržovat zvláštní omezení, můžete ho vložit do stejného VSIX jako metodu ověřování.  
+- **Vytvoření samostatné třídy ověření a projektů VSIX.** Tuto metodu použijte, pokud chcete sloučit několik typů rozšíření do stejného VSIX. Například pokud váš příkaz nabídky očekává, že model bude dodržovat zvláštní omezení, můžete ho vložit do stejného VSIX jako metodu ověřování.  
   
 #### <a name="to-create-a-validation-extension-in-its-own-vsix"></a>Chcete-li vytvořit rozšíření ověření ve vlastním souboru VSIX  
   
@@ -81,29 +81,29 @@ using Microsoft.VisualStudio.Uml.Classes;
   
 #### <a name="to-create-a-separate-validation-constraint-in-a-class-library-project"></a>K vytvoření zvláštního omezení ověření v projektu knihovny tříd  
   
-1.  Vytvořte projekt knihovny tříd, jeho přidání do existujícího VSIX řešení nebo vytvoření nového řešení.  
+1. Vytvořte projekt knihovny tříd, jeho přidání do existujícího VSIX řešení nebo vytvoření nového řešení.  
   
-    1.  Na **souboru** nabídce zvolte **nový**, **projektu**.  
+    1. Na **souboru** nabídce zvolte **nový**, **projektu**.  
   
-    2.  V části **nainstalované šablony**, rozbalte **Visual C#** nebo **jazyka Visual Basic**a potom v prostředním sloupci zvolte možnost **knihovny tříd**.  
+    2. V části **nainstalované šablony**, rozbalte **Visual C#** nebo **jazyka Visual Basic**a potom v prostředním sloupci zvolte možnost **knihovny tříd**.  
   
-2.  Pokud ho vaše řešení již neobsahuje, vytvořte projekt VSIX:  
+2. Pokud ho vaše řešení již neobsahuje, vytvořte projekt VSIX:  
   
-    1.  V **Průzkumníka řešení**, v místní nabídce řešení zvolte **přidat**, **nový projekt**.  
+    1. V **Průzkumníka řešení**, v místní nabídce řešení zvolte **přidat**, **nový projekt**.  
   
-    2.  V části **nainstalované šablony**, rozbalte **Visual C#** nebo **jazyka Visual Basic**, klikněte na tlačítko **rozšiřitelnost**. V prostředním sloupci klikněte na tlačítko **projekt VSIX**.  
+    2. V části **nainstalované šablony**, rozbalte **Visual C#** nebo **jazyka Visual Basic**, klikněte na tlačítko **rozšiřitelnost**. V prostředním sloupci klikněte na tlačítko **projekt VSIX**.  
   
-3.  Nastavte projekt VSIX jako projekt po spuštění řešení.  
+3. Nastavte projekt VSIX jako projekt po spuštění řešení.  
   
-    -   V Průzkumníku řešení v místní nabídce projektu VSIX zvolte **nastavit jako spouštěný projekt**.  
+    - V Průzkumníku řešení v místní nabídce projektu VSIX zvolte **nastavit jako spouštěný projekt**.  
   
-4.  V **source.extension.vsixmanifest**v části **obsahu**, přidejte projekt knihovny tříd jako komponentu MEF:  
+4. V **source.extension.vsixmanifest**v části **obsahu**, přidejte projekt knihovny tříd jako komponentu MEF:  
   
-    1.  Na **metadat** kartu, nastavte název souboru VSIX.  
+    1. Na **metadat** kartu, nastavte název souboru VSIX.  
   
-    2.  Na **cíle instalace** kartu, nastavte verze sady Visual Studio jako cíle.  
+    2. Na **cíle instalace** kartu, nastavte verze sady Visual Studio jako cíle.  
   
-    3.  Na **prostředky** kartě **nový**a v dialogovém okně nastavte:  
+    3. Na **prostředky** kartě **nový**a v dialogovém okně nastavte:  
   
          **Typ** = **Komponenta MEF**  
   
@@ -113,9 +113,9 @@ using Microsoft.VisualStudio.Uml.Classes;
   
 #### <a name="to-define-the-validation-class"></a>Do definice třídy validace  
   
-1.  Tento postup není nutné, pokud jste vytvořili třídu ověřování s vlastním souborem VSIX z šablony projektu ověřování.  
+1. Tento postup není nutné, pokud jste vytvořili třídu ověřování s vlastním souborem VSIX z šablony projektu ověřování.  
   
-2.  V ověření projektu třídy přidejte odkazy na následující [!INCLUDE[TLA2#tla_net](../includes/tla2sharptla-net-md.md)] sestavení:  
+2. V ověření projektu třídy přidejte odkazy na následující [!INCLUDE[TLA2#tla_net](../includes/tla2sharptla-net-md.md)] sestavení:  
   
      `Microsoft.VisualStudio.Modeling.Sdk.[version]`  
   
@@ -125,11 +125,11 @@ using Microsoft.VisualStudio.Uml.Classes;
   
      `System.ComponentModel.Composition`  
   
-3.  Přidejte soubor do projektu knihovny tříd obsahujícího kód, který se podobá následujícímu příkladu.  
+3. Přidejte soubor do projektu knihovny tříd obsahujícího kód, který se podobá následujícímu příkladu.  
   
-    -   Každé omezení ověření je součástí metody, která je označena určitým atributem. Metoda přijímá parametr typu prvku modelu. Při vyvolání ověření, rozhraní ověřování použije každou metodu ověřování na každý prvek modelu, který odpovídá jeho typu parametru.  
+    - Každé omezení ověření je součástí metody, která je označena určitým atributem. Metoda přijímá parametr typu prvku modelu. Při vyvolání ověření, rozhraní ověřování použije každou metodu ověřování na každý prvek modelu, který odpovídá jeho typu parametru.  
   
-    -   Tyto metody můžete umístit do libovolných tříd a obory názvů. Změňte je dle požadavků.  
+    - Tyto metody můžete umístit do libovolných tříd a obory názvů. Změňte je dle požadavků.  
   
     ```  
     using System.Collections.Generic;  
@@ -178,48 +178,48 @@ using Microsoft.VisualStudio.Uml.Classes;
     }  
     ```  
   
-##  <a name="Executing"></a> Provádění ověření omezení  
+## <a name="Executing"></a> Provádění ověření omezení  
  Pro účely testování spusťte metodu ověřování v režimu ladění.  
   
 #### <a name="to-test-the-validation-constraint"></a>Testování omezení ověření  
   
-1.  Stisknutím klávesy **F5**, nebo **ladění** nabídce zvolte **spustit ladění**.  
+1. Stisknutím klávesy **F5**, nebo **ladění** nabídce zvolte **spustit ladění**.  
   
      Experimentální instanci [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] spustí.  
   
      **Řešení potíží s**: Pokud se nová [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nespustí:  
   
-    -   Pokud máte více než jeden projekt, ujistěte se, že projekt VSIX je nastaven jako projekt po spuštění řešení.  
+    - Pokud máte více než jeden projekt, ujistěte se, že projekt VSIX je nastaven jako projekt po spuštění řešení.  
   
-    -   V Průzkumníku řešení zvolte v místní nabídce startupu nebo projektu, **vlastnosti**. V editoru vlastností projektu, vyberte **ladění** kartu. Ujistěte se, že řetězec v **externí program Start** pole je úplný název cesty [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], obvykle:  
+    - V Průzkumníku řešení zvolte v místní nabídce startupu nebo projektu, **vlastnosti**. V editoru vlastností projektu, vyberte **ladění** kartu. Ujistěte se, že řetězec v **externí program Start** pole je úplný název cesty [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], obvykle:  
   
          `C:\Program Files\Microsoft Visual Studio [version]\Common7\IDE\devenv.exe`  
   
-2.  V experimentální instanci [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]otevřete nebo vytvořte projekt modelování a otevřete nebo vytvořte diagram modelování.  
+2. V experimentální instanci [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]otevřete nebo vytvořte projekt modelování a otevřete nebo vytvořte diagram modelování.  
   
-3.  Nastavení testu pro testovací omezení uvedené v předchozí části:  
+3. Nastavení testu pro testovací omezení uvedené v předchozí části:  
   
-    1.  Otevřete diagram třídy.  
+    1. Otevřete diagram třídy.  
   
-    2.  Vytvořte třídu a přidejte dva atributy, které mají stejný název.  
+    2. Vytvořte třídu a přidejte dva atributy, které mají stejný název.  
   
-4.  V místní nabídce kdekoli v diagramu zvolte **ověřit**.  
+4. V místní nabídce kdekoli v diagramu zvolte **ověřit**.  
   
-5.  Všechny chyby v modelu budou hlášeny v okně chyb.  
+5. Všechny chyby v modelu budou hlášeny v okně chyb.  
   
-6.  Klikněte dvakrát na zprávy o chybách. Pokud jsou prvky uvedené v sestavě zobrazeny na obrazovce, budou zvýrazněny.  
+6. Klikněte dvakrát na zprávy o chybách. Pokud jsou prvky uvedené v sestavě zobrazeny na obrazovce, budou zvýrazněny.  
   
      **Řešení potíží s**: Pokud **ověřit** příkaz nezobrazí v nabídce, ujistěte se, že:  
   
-    -   Projekt ověření nabídky je uveden jako Komponenta MEF na **prostředky** kartu **source.extensions.manifest** v projektu VSIX.  
+    - Projekt ověření nabídky je uveden jako Komponenta MEF na **prostředky** kartu **source.extensions.manifest** v projektu VSIX.  
   
-    -   Správné `Export` a `ValidationMethod` jsou přiřazeny k ověřovacím metodám.  
+    - Správné `Export` a `ValidationMethod` jsou přiřazeny k ověřovacím metodám.  
   
-    -   `ValidationCategories.Menu` je součástí argumentu pro `ValidationMethod` atribut který je tvořena jinými hodnotami pomocí logického OR (&#124;).  
+    - `ValidationCategories.Menu` je součástí argumentu pro `ValidationMethod` atribut který je tvořena jinými hodnotami pomocí logického OR (&#124;).  
   
-    -   Parametry všech vlastností `Import` a `Export` jsou platné.  
+    - Parametry všech vlastností `Import` a `Export` jsou platné.  
   
-##  <a name="Implementing"></a> Vyhodnocování omezení  
+## <a name="Implementing"></a> Vyhodnocování omezení  
  Metoda ověření by měl určit, zda je omezení ověření, které chcete použít hodnotu true nebo false. Při hodnotě true by se neměla provádět žádnou akci. Pokud false, měli byste nahlásit chybu pomocí metod poskytovaných parametrem `ValidationContext` parametru.  
   
 > [!NOTE]
@@ -349,7 +349,7 @@ IUseCase useCase = useCaseShape.Element;
 context.LogError(... , usecase);  
 ```  
   
-###  <a name="ContextCache"></a> Koordinace více ověřování  
+### <a name="ContextCache"></a> Koordinace více ověřování  
  Při vyvolání ověření, například uživatelem v nabídce diagramu, každá metoda ověřování platí pro každý prvek modelu. To znamená, že v jednom vyvolání rozhraní ověření stejnou metodu může použít mnohokrát na různé prvky.  
   
  To představuje problém pro ověření, které se zabývají vztahy mezi elementy. Například můžete například napsat ověření, které začíná od, Řekněme, případu použití a překračuje **zahrnují** vztahy k ověření, že neexistují žádné smyčky. Ale když metoda platí pro každý případ použití v modelu, který má mnoho **zahrnují** odkazy, je pravděpodobné, že opakovaně zpracuje stejné oblasti modelu.  
@@ -363,26 +363,26 @@ context.LogError(... , usecase);
 |`context.GetValue<T>(name)`|Získáte hodnotu.|  
 |`Context.GetValue<T>()`|Získáte hodnotu zadaného typu.|  
   
-##  <a name="Installing"></a> Instalace a odinstalace rozšíření  
+## <a name="Installing"></a> Instalace a odinstalace rozšíření  
  Můžete nainstalovat [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] rozšíření ve vašem počítači i v jiných počítačích.  
   
 #### <a name="to-install-an-extension"></a>Instalace rozšíření  
   
-1.  V počítači, vyhledejte **VSIX** soubor, který byl vytvořen vaším projektem VSIX.  
+1. V počítači, vyhledejte **VSIX** soubor, který byl vytvořen vaším projektem VSIX.  
   
-    1.  V **Průzkumníka řešení**, v místní nabídce projektu VSIX zvolte **otevřít složku v Průzkumníku Windows**.  
+    1. V **Průzkumníka řešení**, v místní nabídce projektu VSIX zvolte **otevřít složku v Průzkumníku Windows**.  
   
-    2.  Vyhledejte soubor **bin\\\*\\**_YourProject_**VSIX.**  
+    2. Vyhledejte soubor **bin\\\*\\**_YourProject_**VSIX.**  
   
-2.  Kopírovat **VSIX** souboru k cílovému počítači, na kterém chcete nainstalovat rozšíření. To může být vlastní počítač nebo jiný.  
+2. Kopírovat **VSIX** souboru k cílovému počítači, na kterém chcete nainstalovat rozšíření. To může být vlastní počítač nebo jiný.  
   
-    -   Cílový počítač musí mít některou z edicí systému [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] , který jste zadali v **source.extension.vsixmanifest**.  
+    - Cílový počítač musí mít některou z edicí systému [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] , který jste zadali v **source.extension.vsixmanifest**.  
   
-3.  V cílovém počítači, otevřete **VSIX** souboru.  
+3. V cílovém počítači, otevřete **VSIX** souboru.  
   
      **Instalační program rozšíření sady Visual Studio** otevře a nainstaluje rozšíření.  
   
-4.  Spusťte nebo restartujte [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)].  
+4. Spusťte nebo restartujte [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)].  
   
 #### <a name="to-uninstall-an-extension"></a>Odinstalace rozšíření  
   
@@ -396,7 +396,7 @@ context.LogError(... , usecase);
   
    *%LocalAppData%* **\Microsoft\VisualStudio\\[version]\Extensions**  
   
-##  <a name="Example"></a> Příklad  
+## <a name="Example"></a> Příklad  
  Tento příklad vyhledá smyčky ve vztahu závislosti mezi prvky.  
   
  Ověří i na Uložit a v příkazu nabídky ověřit.  

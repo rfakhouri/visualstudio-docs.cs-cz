@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2dd787168d906ce90a50562e5147b45308c54ff5
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 53e36d993e72da759c87e7d2d2f908818b3d9024
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57868056"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068545"
 ---
 # <a name="deploy-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Nasazení rozšíření pro nástroje služby SharePoint v sadě Visual Studio
 
@@ -33,9 +33,9 @@ Další informace o vytváření balíčků VSIX a jejich nasazení [Visual Stud
 
 Můžete použít **projekt VSIX** šablony, které poskytuje Visual Studio SDK k vytváření balíčků VSIX pro rozšíření nástrojů SharePoint. Použití projektu VSIX nabízí několik výhod v porovnání s ruční vytvoření balíčku VSIX:
 
--   Visual Studio automaticky vygeneruje VSIX balíček při vytváření projektu. Úlohy, jako je přidání soubory nasazení balíčku a vytvoření souboru [Content_Types] .xml pro balíček jsou provede za vás.
+- Visual Studio automaticky vygeneruje VSIX balíček při vytváření projektu. Úlohy, jako je přidání soubory nasazení balíčku a vytvoření souboru [Content_Types] .xml pro balíček jsou provede za vás.
 
--   Můžete nakonfigurovat projekt VSIX pro zahrnutí výstupu sestavení projektu rozšíření a další soubory, jako jsou šablony projektů a šablon položek v balíčku souboru VSIX.
+- Můžete nakonfigurovat projekt VSIX pro zahrnutí výstupu sestavení projektu rozšíření a další soubory, jako jsou šablony projektů a šablon položek v balíčku souboru VSIX.
 
 Další informace o použití projektu VSIX, naleznete v tématu [šablonou projektu VSIX](../extensibility/vsix-project-template.md).
 
@@ -43,17 +43,17 @@ Další informace o použití projektu VSIX, naleznete v tématu [šablonou proj
 
 Ve výchozím nastavení generovat jenom projekty VSIX balíčků VSIX, není sestavení. Proto je obvykle neimplementují rozšíření nástrojů SharePoint v projektu VSIX. Obecně pracovat s alespoň dva projekty:
 
--   Projekt VSIX.
+- Projekt VSIX.
 
--   Projekt knihovny tříd, který implementuje rozšíření.
+- Projekt knihovny tříd, který implementuje rozšíření.
 
 Můžete také pracovat i s další projekty pro některé typy rozšíření:
 
--   Projekt knihovny tříd, který implementuje všechny příkazy služby SharePoint, které jsou používány rozšíření. Postup, který ukazuje tento scénář, najdete v části [názorný postup: Rozšíření Průzkumníka serveru pro zobrazení částí webu](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md).
+- Projekt knihovny tříd, který implementuje všechny příkazy služby SharePoint, které jsou používány rozšíření. Postup, který ukazuje tento scénář, najdete v části [názorný postup: Rozšíření Průzkumníka serveru pro zobrazení částí webu](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md).
 
--   Šabloně položky nebo šablony projektu projekt, který vytvoří šablonu položky nebo šablony projektu, pokud vaše rozšíření definuje nový typ položky projektu služby SharePoint. Postup, který ukazuje tento scénář, najdete v části [názorný postup: Vytvoření vlastní položky projektu akce pomocí šablony položky, část 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md).
+- Šabloně položky nebo šablony projektu projekt, který vytvoří šablonu položky nebo šablony projektu, pokud vaše rozšíření definuje nový typ položky projektu služby SharePoint. Postup, který ukazuje tento scénář, najdete v části [názorný postup: Vytvoření vlastní položky projektu akce pomocí šablony položky, část 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md).
 
--   Projekt knihovny tříd, který implementuje vlastního průvodce šablony položky nebo šablony projektu, pokud vaše rozšíření obsahuje šablony. Postup, který ukazuje tento scénář, najdete v části [názorný postup: Vytvoření vlastní položky projektu akce pomocí šablony položky, část 2](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md).
+- Projekt knihovny tříd, který implementuje vlastního průvodce šablony položky nebo šablony projektu, pokud vaše rozšíření obsahuje šablony. Postup, který ukazuje tento scénář, najdete v části [názorný postup: Vytvoření vlastní položky projektu akce pomocí šablony položky, část 2](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md).
 
 Pokud zahrnete všechny projekty ve stejném řešení sady Visual Studio, můžete upravit soubor source.extension.vsixmanifest v projektu VSIX pro zahrnutí výstupu sestavení projekty knihovny tříd.
 
@@ -63,77 +63,77 @@ Je nutné upravit soubor source.extension.vsixmanifest v projektu VSIX a zahrnuj
 
 Je nutné přidat položky do souboru source.extension.vsixmanifest pro následující položky:
 
--   Rozšíření sestavení.
+- Rozšíření sestavení.
 
--   Sestavení, který implementuje všechny příkazy služby SharePoint, které jsou používány rozšíření.
+- Sestavení, který implementuje všechny příkazy služby SharePoint, které jsou používány rozšíření.
 
--   Šablony projektů nebo šablony položek, které jsou spojeny s rozšíření.
+- Šablony projektů nebo šablony položek, které jsou spojeny s rozšíření.
 
--   Vlastní Průvodce pro šablony, který je přidružený k rozšíření.
+- Vlastní Průvodce pro šablony, který je přidružený k rozšíření.
 
 Následující postupy popisují, jak přidat položky do souboru .vsixmanifest pro každou z těchto položek.
 
 #### <a name="to-include-the-extension-assembly"></a>Zahrnout sestavení rozšíření
 
-1.  V projektu VSIX, otevřete místní nabídku pro soubor source.extension.vsixmanifest a klikněte na tlačítko **otevřete**.
+1. V projektu VSIX, otevřete místní nabídku pro soubor source.extension.vsixmanifest a klikněte na tlačítko **otevřete**.
 
      Soubor se otevře v Návrháři
 
-2.  Na **prostředky** kartu Editor, zvolte **nový** tlačítko.
+2. Na **prostředky** kartu Editor, zvolte **nový** tlačítko.
 
      **Přidat nové aktivum** zobrazí se dialogové okno.
 
-3.  V **typ** klikněte na položku **Microsoft.VisualStudio.MefComponent**.
+3. V **typ** klikněte na položku **Microsoft.VisualStudio.MefComponent**.
 
-4.  V **zdroj** seznamu, proveďte jednu z následujících kroků:
+4. V **zdroj** seznamu, proveďte jednu z následujících kroků:
 
-    -   Pokud se sestavení rozšíření je sestaven z projektu, který je ve stejném řešení jako projekt VSIX, zvolte **projekt v aktuálním řešení**. V **projektu** seznamu, vyberte název projektu.
+    - Pokud se sestavení rozšíření je sestaven z projektu, který je ve stejném řešení jako projekt VSIX, zvolte **projekt v aktuálním řešení**. V **projektu** seznamu, vyberte název projektu.
 
-    -   Pokud je sestavení rozšíření zahrnut jako soubor ve vašem projektu, zvolte **soubor v systému souborů**. V **cesta** seznamu, zadejte úplnou cestu k souboru sestavení rozšíření nebo použít **Procházet** tlačítko a vyhledejte a vyberte soubor sestavení.
+    - Pokud je sestavení rozšíření zahrnut jako soubor ve vašem projektu, zvolte **soubor v systému souborů**. V **cesta** seznamu, zadejte úplnou cestu k souboru sestavení rozšíření nebo použít **Procházet** tlačítko a vyhledejte a vyberte soubor sestavení.
 
-5.  Zvolte **OK** tlačítko.
+5. Zvolte **OK** tlačítko.
 
 #### <a name="to-include-a-sharepoint-command-assembly"></a>Zahrnout sestavení příkazu SharePoint
 
-1.  V projektu VSIX, otevřete místní nabídku pro soubor source.extension.vsixmanifest a klikněte na tlačítko **otevřete** tlačítko.
+1. V projektu VSIX, otevřete místní nabídku pro soubor source.extension.vsixmanifest a klikněte na tlačítko **otevřete** tlačítko.
 
      Soubor se otevře v návrháři.
 
-2.  V **prostředky** části editoru, zvolte **nový** tlačítko.
+2. V **prostředky** části editoru, zvolte **nový** tlačítko.
 
      **Přidat nové aktivum** zobrazí se dialogové okno.
 
-3.  V **typ** zadejte **SharePoint.Commands.v4**.
+3. V **typ** zadejte **SharePoint.Commands.v4**.
 
-4.  V **zdroj** seznamu, proveďte jednu z následujících kroků:
+4. V **zdroj** seznamu, proveďte jednu z následujících kroků:
 
-    -   Pokud příkaz sestavení je sestaven z projektu, který je ve stejném řešení jako projekt VSIX, zvolte **projekt v aktuálním řešení**. V **projektu** seznamu, vyberte název projektu.
+    - Pokud příkaz sestavení je sestaven z projektu, který je ve stejném řešení jako projekt VSIX, zvolte **projekt v aktuálním řešení**. V **projektu** seznamu, vyberte název projektu.
 
-    -   Pokud příkaz sestavení je zahrnut jako soubor ve vašem projektu, zvolte **soubor v systému souborů**. V **cesta** seznamu, zadejte úplnou cestu k souboru sestavení rozšíření nebo použít **Procházet** tlačítko a vyhledejte a vyberte soubor sestavení.
+    - Pokud příkaz sestavení je zahrnut jako soubor ve vašem projektu, zvolte **soubor v systému souborů**. V **cesta** seznamu, zadejte úplnou cestu k souboru sestavení rozšíření nebo použít **Procházet** tlačítko a vyhledejte a vyberte soubor sestavení.
 
-5.  Zvolte **OK** tlačítko.
+5. Zvolte **OK** tlačítko.
 
 #### <a name="to-include-a-template-that-you-create"></a>Zahrnout šablonu, kterou vytvoříte
 
-1.  V projektu VSIX, otevřete místní nabídku pro soubor source.extension.vsixmanifest a klikněte na tlačítko **otevřete** tlačítko.
+1. V projektu VSIX, otevřete místní nabídku pro soubor source.extension.vsixmanifest a klikněte na tlačítko **otevřete** tlačítko.
 
      Soubor se otevře v návrháři.
 
-2.  V **prostředky** části editoru, zvolte **nový** tlačítko.
+2. V **prostředky** části editoru, zvolte **nový** tlačítko.
 
      **Přidat nové aktivum** zobrazí se dialogové okno.
 
-3.  V **typ** klikněte na položku **Microsoft.VisualStudio.ProjectTemplate** nebo **Microsoft.VisualStudio.ItemTemplate**.
+3. V **typ** klikněte na položku **Microsoft.VisualStudio.ProjectTemplate** nebo **Microsoft.VisualStudio.ItemTemplate**.
 
-4.  V **zdroj** klikněte na položku **projekt v aktuálním řešení**.
+4. V **zdroj** klikněte na položku **projekt v aktuálním řešení**.
 
-5.  V **projektu** seznamu, vyberte název projektu a klikněte na tlačítko **OK** tlačítko.
+5. V **projektu** seznamu, vyberte název projektu a klikněte na tlačítko **OK** tlačítko.
 
-6.  V **Průzkumníka řešení**, otevřete místní nabídku pro projekt šablony nebo šablony položek projektu a klikněte na tlačítko **uvolnit projekt**.
+6. V **Průzkumníka řešení**, otevřete místní nabídku pro projekt šablony nebo šablony položek projektu a klikněte na tlačítko **uvolnit projekt**.
 
-7.  Znovu otevřete místní nabídku pro uzel projektu a klikněte na tlačítko **upravit**_YourTemplateProjectName_**.csproj** nebo **upravit**  _YourTemplateProjectName_**.vbproj**.
+7. Znovu otevřete místní nabídku pro uzel projektu a klikněte na tlačítko **upravit**_YourTemplateProjectName_**.csproj** nebo **upravit**  _YourTemplateProjectName_**.vbproj**.
 
-8.  Vyhledejte následující `VSTemplate` element v souboru projektu.
+8. Vyhledejte následující `VSTemplate` element v souboru projektu.
 
     ```xml
     <VSTemplate Include="YourTemplateName.vstemplate">
@@ -155,9 +155,9 @@ Následující postupy popisují, jak přidat položky do souboru .vsixmanifest 
 
 #### <a name="to-include-a-template-that-you-create-manually"></a>Zahrnout šablony, které ručně vytvoříte
 
-1.  V projektu VSIX přidejte do projektu tak, aby šablona obsahovala novou složku.
+1. V projektu VSIX přidejte do projektu tak, aby šablona obsahovala novou složku.
 
-2.  V této nové složky, vytvořte následující podsložky a pak přidejte soubor šablony (.zip), který má *ID národního prostředí* složky.
+2. V této nové složky, vytvořte následující podsložky a pak přidejte soubor šablony (.zip), který má *ID národního prostředí* složky.
 
      *YourTemplateFolder*
 
@@ -171,43 +171,43 @@ Následující postupy popisují, jak přidat položky do souboru .vsixmanifest 
 
      Například pokud máte šablony položky s názvem ContosoCustomAction.zip, který podporuje národní prostředí Angličtina (Spojené státy), úplná cesta může být *ItemTemplates\SharePoint\SharePoint14\1033\ContosoCustomAction.zip*.
 
-3.  V **Průzkumníka řešení**, zvolte soubor šablony (*YourTemplateName*.zip).
+3. V **Průzkumníka řešení**, zvolte soubor šablony (*YourTemplateName*.zip).
 
-4.  V **vlastnosti** okno, nastaveno **akce sestavení** vlastnost **obsahu**.
+4. V **vlastnosti** okno, nastaveno **akce sestavení** vlastnost **obsahu**.
 
-5.  Otevřete místní nabídku pro soubor source.extension.vsixmanifest a klikněte na tlačítko **otevřít**.
+5. Otevřete místní nabídku pro soubor source.extension.vsixmanifest a klikněte na tlačítko **otevřít**.
 
      Soubor se otevře v návrháři.
 
-6.  V **prostředky** části editoru, zvolte **nový** tlačítko.
+6. V **prostředky** části editoru, zvolte **nový** tlačítko.
 
      **Přidat nové aktivum** zobrazí se dialogové okno.
 
-7.  V **typ** klikněte na položku **Microsoft.VisualStudio.ItemTemplate** nebo **Microsoft.VisualStudio.ProjectTemplate**.
+7. V **typ** klikněte na položku **Microsoft.VisualStudio.ItemTemplate** nebo **Microsoft.VisualStudio.ProjectTemplate**.
 
-8.  V **zdroj** klikněte na položku **soubor v systému souborů**.
+8. V **zdroj** klikněte na položku **soubor v systému souborů**.
 
 9. V **cesta** zadejte úplnou cestu k sestavení (například *ItemTemplates\SharePoint\SharePoint14\1033\ContosoCustomAction.zip*, nebo použijte **Procházet**tlačítko vyhledejte a vyberte sestavení a klikněte na tlačítko **OK** tlačítko.
 
 #### <a name="to-include-a-wizard-for-a-project-template-or-item-template"></a>Zahrnout Průvodce pro šablony projektu nebo šablony položek
 
-1.  V projektu VSIX, otevřete místní nabídku pro soubor source.extension.vsixmanifest a klikněte na tlačítko **otevřete**.
+1. V projektu VSIX, otevřete místní nabídku pro soubor source.extension.vsixmanifest a klikněte na tlačítko **otevřete**.
 
      Soubor se otevře v návrháři.
 
-2.  V **prostředky** části editoru, zvolte **nový** tlačítko.
+2. V **prostředky** části editoru, zvolte **nový** tlačítko.
 
      **Přidat nové aktivum** zobrazí se dialogové okno.
 
-3.  V **typ** klikněte na položku **Microsoft.VisualStudio.Assembly**.
+3. V **typ** klikněte na položku **Microsoft.VisualStudio.Assembly**.
 
-4.  V **zdroj** seznamu, proveďte jednu z následujících kroků:
+4. V **zdroj** seznamu, proveďte jednu z následujících kroků:
 
-    -   Pokud Průvodce sestavení je sestaven z projektu, který je ve stejném řešení jako projekt VSIX, zvolte **projekt v aktuálním řešení**. V **projektu** seznamu, vyberte název projektu.
+    - Pokud Průvodce sestavení je sestaven z projektu, který je ve stejném řešení jako projekt VSIX, zvolte **projekt v aktuálním řešení**. V **projektu** seznamu, vyberte název projektu.
 
-    -   Pokud Průvodce sestavení je zahrnut jako soubor ve vašem projektu, zvolte **soubor v systému souborů**. V **cesta** pole, zadejte úplnou cestu k souboru sestavení nebo použít **Procházet** tlačítko a vyhledejte a vyberte sestavení.
+    - Pokud Průvodce sestavení je zahrnut jako soubor ve vašem projektu, zvolte **soubor v systému souborů**. V **cesta** pole, zadejte úplnou cestu k souboru sestavení nebo použít **Procházet** tlačítko a vyhledejte a vyberte sestavení.
 
-5.  Zvolte **OK** tlačítko.
+5. Zvolte **OK** tlačítko.
 
 ### <a name="related-walkthroughs"></a>Související návody
 
@@ -224,21 +224,21 @@ Následující tabulka uvádí postupy, které popisují způsob použití proje
 
 Pokud chcete ručně vytvořit balíčku VSIX pro rozšíření nástrojů služby SharePoint, proveďte následující kroky:
 
-1.  V nové složce vytvořte soubor extension.vsixmanifest a souboru [Content_Types] .xml. Další informace najdete v tématu [anatomie balíčku VSIX](../extensibility/anatomy-of-a-vsix-package.md).
+1. V nové složce vytvořte soubor extension.vsixmanifest a souboru [Content_Types] .xml. Další informace najdete v tématu [anatomie balíčku VSIX](../extensibility/anatomy-of-a-vsix-package.md).
 
-2.  V Průzkumníku Windows klikněte pravým tlačítkem na složku, která obsahuje příslušné dva soubory XML, klikněte na tlačítko Odeslat a pak klikněte na složku komprimované. Přejmenujte výsledný soubor ZIP na Filename.vsix, kde název_souboru je název redistribuovatelného souboru, který nainstaluje balíček.
+2. V Průzkumníku Windows klikněte pravým tlačítkem na složku, která obsahuje příslušné dva soubory XML, klikněte na tlačítko Odeslat a pak klikněte na složku komprimované. Přejmenujte výsledný soubor ZIP na Filename.vsix, kde název_souboru je název redistribuovatelného souboru, který nainstaluje balíček.
 
-3.  Rozšíření sestavení přidáte do balíčku VSIX. Pokud vaše rozšíření obsahuje příkaz SharePoint, přidejte také sestavení, který implementuje příkaz SharePoint balíčku VSIX.
+3. Rozšíření sestavení přidáte do balíčku VSIX. Pokud vaše rozšíření obsahuje příkaz SharePoint, přidejte také sestavení, který implementuje příkaz SharePoint balíčku VSIX.
 
-4.  Upravte soubor extension.vsixmanifest:
+4. Upravte soubor extension.vsixmanifest:
 
-    -   Přidat `Microsoft.VisualStudio.MefComponent` element v rámci `Assets` element a pak nastavte hodnotu nový prvek do relativní cestu sestavení, který implementuje rozšíření v balíčku souboru VSIX. Další informace najdete v tématu [MEFComponent – Element (VSX schéma)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).
+    - Přidat `Microsoft.VisualStudio.MefComponent` element v rámci `Assets` element a pak nastavte hodnotu nový prvek do relativní cestu sestavení, který implementuje rozšíření v balíčku souboru VSIX. Další informace najdete v tématu [MEFComponent – Element (VSX schéma)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).
 
-    -   Pokud vaše rozšíření obsahuje příkaz SharePoint, která volá do objektového modelu serveru pro službu SharePoint, přidejte `Microsoft.VisualStudio.Assembly` element v rámci `Assets` elementu. Nastavte hodnotu nového elementu na relativní cestu sestavení, který implementuje příkaz serveru SharePoint v balíčku souboru VSIX. Další informace najdete v tématu [Asset – Element (VSX schéma)](https://msdn.microsoft.com/9fcfc098-edc7-484b-9d4c-acd17829d737).
+    - Pokud vaše rozšíření obsahuje příkaz SharePoint, která volá do objektového modelu serveru pro službu SharePoint, přidejte `Microsoft.VisualStudio.Assembly` element v rámci `Assets` elementu. Nastavte hodnotu nového elementu na relativní cestu sestavení, který implementuje příkaz serveru SharePoint v balíčku souboru VSIX. Další informace najdete v tématu [Asset – Element (VSX schéma)](https://msdn.microsoft.com/9fcfc098-edc7-484b-9d4c-acd17829d737).
 
-    -   Pokud vaše rozšíření obsahuje šablonu projektu nebo šablony položky, přidejte `ProjectTemplate` nebo `ItemTemplate` element v rámci `Assets` elementu. Nastavte hodnotu nový prvek do relativní cesty ke složce, která obsahuje šablonu v balíčku souboru VSIX. Další informace najdete v tématu [ProjectTemplate – Element (VSX schéma)](/previous-versions/visualstudio/visual-studio-2010/dd393735\(v\=vs.100\)) a [ItemTemplate – Element (VSX schéma)](/previous-versions/visualstudio/visual-studio-2010/dd393681\(v\=vs.100\)).
+    - Pokud vaše rozšíření obsahuje šablonu projektu nebo šablony položky, přidejte `ProjectTemplate` nebo `ItemTemplate` element v rámci `Assets` elementu. Nastavte hodnotu nový prvek do relativní cesty ke složce, která obsahuje šablonu v balíčku souboru VSIX. Další informace najdete v tématu [ProjectTemplate – Element (VSX schéma)](/previous-versions/visualstudio/visual-studio-2010/dd393735\(v\=vs.100\)) a [ItemTemplate – Element (VSX schéma)](/previous-versions/visualstudio/visual-studio-2010/dd393681\(v\=vs.100\)).
 
-    -   Pokud vaše rozšíření obsahuje vlastního průvodce šablony projektu nebo šablony položky, přidejte `Assembly` element v rámci `Assets` elementu. Nastavte hodnotu nového elementu na relativní cesta k sestavení v balíčku souboru VSIX a potom nastavte `AssemblyName` atribut sestavení úplný název (včetně verze, jazykovou verzi a token veřejného klíče). Další informace najdete v tématu [Element Dependency (schéma VSX)](https://msdn.microsoft.com/1f63f60a-98ad-48ec-8e44-4eba383d3e37).
+    - Pokud vaše rozšíření obsahuje vlastního průvodce šablony projektu nebo šablony položky, přidejte `Assembly` element v rámci `Assets` elementu. Nastavte hodnotu nového elementu na relativní cesta k sestavení v balíčku souboru VSIX a potom nastavte `AssemblyName` atribut sestavení úplný název (včetně verze, jazykovou verzi a token veřejného klíče). Další informace najdete v tématu [Element Dependency (schéma VSX)](https://msdn.microsoft.com/1f63f60a-98ad-48ec-8e44-4eba383d3e37).
 
 ### <a name="example"></a>Příklad
 

@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 202640fbe484fc9b384e3e50484a1b4fee63bc4a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 00271d77cb5b172fbbbf02682eb7e23c6246ca23
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55914224"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064008"
 ---
 # <a name="bookmark-control"></a>Bookmark – ovládací prvek
   <xref:Microsoft.Office.Tools.Word.Bookmark> Ovládací prvek je záložku, která má jedinečný název, zpřístupní události a může být vázaný na data. Záložka může sloužit jako zástupný symbol pro označení položku nebo místo v dokumentu aplikace Microsoft Office Word. <xref:Microsoft.Office.Tools.Word.Bookmark> Ovládací prvek je kombinací identifikátoru <xref:Microsoft.Office.Interop.Word.Bookmark> objektu a <xref:Microsoft.Office.Interop.Word.Range> objektu.
@@ -95,19 +95,19 @@ Následující tabulka ukazuje, jak se věta "Toto je ukázkový text". sdílí 
 
 Tyto události jsou k dispozici pro <xref:Microsoft.Office.Tools.Word.Bookmark> ovládacího prvku:
 
--   <xref:Microsoft.Office.Tools.Word.Bookmark.BeforeDoubleClick>
+- <xref:Microsoft.Office.Tools.Word.Bookmark.BeforeDoubleClick>
 
--   <xref:Microsoft.Office.Tools.Word.Bookmark.BeforeRightClick>
+- <xref:Microsoft.Office.Tools.Word.Bookmark.BeforeRightClick>
 
--   <xref:Microsoft.Office.Tools.Word.Bookmark.BindingContextChanged>
+- <xref:Microsoft.Office.Tools.Word.Bookmark.BindingContextChanged>
 
--   <xref:Microsoft.Office.Tools.Word.Bookmark.Deselected>
+- <xref:Microsoft.Office.Tools.Word.Bookmark.Deselected>
 
--   <xref:System.ComponentModel.IComponent.Disposed>
+- <xref:System.ComponentModel.IComponent.Disposed>
 
--   <xref:Microsoft.Office.Tools.Word.Bookmark.Selected>
+- <xref:Microsoft.Office.Tools.Word.Bookmark.Selected>
 
--   <xref:Microsoft.Office.Tools.Word.Bookmark.SelectionChange>
+- <xref:Microsoft.Office.Tools.Word.Bookmark.SelectionChange>
 
 ## <a name="see-also"></a>Viz také:
 

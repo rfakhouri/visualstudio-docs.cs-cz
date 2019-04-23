@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 90a97097eed7b97ad96bfda1f5520d1a9b4f0203
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 7a383096d164f1b08e2411a7bc808e96f8a6262e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335399"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061304"
 ---
 # <a name="manage-project-loading-in-a-solution"></a>Správa načítání projektů v řešení
 Řešení sady Visual Studio může obsahovat velký počet projektů. Výchozí chování sady Visual Studio je načíst všechny projekty v řešení v době, kdy je otevřené řešení a nikoli do povolí uživateli přístup žádným z projektů, dokud všechny z nich dokončení načítání. Při procesu načítání projektu bude trvat více než dvě minuty, se zobrazí indikátor průběhu zobrazující počet projekty a celkovém počtu projektů. Uživatel může při práci v řešení s více projekty uvolnění projektů, ale tento postup má i určité nevýhody: jako součást příkazu znovu sestavit řešení nejsou sestaveny uvolněné projekty a popisy technologie IntelliSense typů a členů uzavřený projekty se nezobrazí.
@@ -59,17 +59,17 @@ pSolution.SetProperty((int)__VSPROPID4.VSPROPID_ActiveSolutionLoadManager, objLo
 ## <a name="handle-solution-load-events"></a>Zpracování událostí načtení řešení
  Chcete-li přihlásit k odběru řešení zatížení události, zavolejte <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.AdviseSolutionEvents%2A> při aktivaci správce zatížení vašeho řešení. Pokud se rozhodnete implementovat <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents>, můžete reagovat na události, které se vztahují k jinému projektu načítání vlastností.
 
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnBeforeOpenSolution%2A>: Tato událost je aktivována před otevřením řešení.
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnBeforeOpenSolution%2A>: Tato událost je aktivována před otevřením řešení.
 
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnBeforeBackgroundSolutionLoadBegins%2A>: Tato událost je aktivována po řešení, je zcela načten, ale před pozadí začne znovu načíst projekt.
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnBeforeBackgroundSolutionLoadBegins%2A>: Tato událost je aktivována po řešení, je zcela načten, ale před pozadí začne znovu načíst projekt.
 
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnAfterBackgroundSolutionLoadComplete%2A>: Tato událost je aktivována po načtení řešení je zpočátku plně, jestli správce zatížení řešení. Také aktivuje po načtení na pozadí nebo vyžádání načíst pokaždé, když se stane řešení plně načteno. Ve stejnou dobu <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExistsAndFullyLoaded_guid> se znovu aktivuje.
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnAfterBackgroundSolutionLoadComplete%2A>: Tato událost je aktivována po načtení řešení je zpočátku plně, jestli správce zatížení řešení. Také aktivuje po načtení na pozadí nebo vyžádání načíst pokaždé, když se stane řešení plně načteno. Ve stejnou dobu <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExistsAndFullyLoaded_guid> se znovu aktivuje.
 
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnQueryBackgroundLoadProjectBatch%2A>: Tato událost je aktivována před načtením projektu (nebo projektů). Ujistěte se, že ostatní procesy na pozadí se dokončila předtím, než se načtou projekty, nastavte `pfShouldDelayLoadToNextIdle` k **true**.
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnQueryBackgroundLoadProjectBatch%2A>: Tato událost je aktivována před načtením projektu (nebo projektů). Ujistěte se, že ostatní procesy na pozadí se dokončila předtím, než se načtou projekty, nastavte `pfShouldDelayLoadToNextIdle` k **true**.
 
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnBeforeLoadProjectBatch%2A>: Tato událost je aktivována, když dávku projekty se jej načíst. Pokud `fIsBackgroundIdleBatch` má hodnotu true, projekty, které se mají být načteny na pozadí; Pokud `fIsBackgroundIdleBatch` má hodnotu false, projekty, které mají být načteny synchronně jako výsledek požadavku na uživatele, například pokud je uživatel rozbalí čekajícího projektu v Průzkumníku řešení. Dokáže zpracovat tuto událost nákladné práci, v opačném případě by bylo potřeba udělat v <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterOpenProject%2A>.
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnBeforeLoadProjectBatch%2A>: Tato událost je aktivována, když dávku projekty se jej načíst. Pokud `fIsBackgroundIdleBatch` má hodnotu true, projekty, které se mají být načteny na pozadí; Pokud `fIsBackgroundIdleBatch` má hodnotu false, projekty, které mají být načteny synchronně jako výsledek požadavku na uživatele, například pokud je uživatel rozbalí čekajícího projektu v Průzkumníku řešení. Dokáže zpracovat tuto událost nákladné práci, v opačném případě by bylo potřeba udělat v <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterOpenProject%2A>.
 
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnAfterLoadProjectBatch%2A>: Tato událost je aktivována po načtení služby batch projektů.
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnAfterLoadProjectBatch%2A>: Tato událost je aktivována po načtení služby batch projektů.
 
 ## <a name="detect-and-manage-solution-and-project-loading"></a>Zjišťovat a spravovat řešení a načítání projektů
  Aby bylo možné zjistit stav načtení projekty a řešení, volání <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.GetProperty%2A> s použitím následujících hodnot:

@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f89db12596754630eddaf78b9429eb2983625481
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 1c24126f18cc55bdddcda97a750b1f443bb8b4d8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599833"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068935"
 ---
 # <a name="how-to-enable-clickonce-security-settings"></a>Postupy: Povolení nastavení zabezpečení ClickOnce
 Chcete-li publikovat aplikace musí být povoleno zabezpečení přístupu ke kódu pro aplikace ClickOnce. To se provádí automaticky při publikování aplikace pomocí Průvodce publikováním.
@@ -32,11 +32,11 @@ Chcete-li publikovat aplikace musí být povoleno zabezpečení přístupu ke k�
 
 ### <a name="to-enable-clickonce-security-settings"></a>Povolení nastavení zabezpečení ClickOnce
 
-1.  S projekt vybraný v **Průzkumníka řešení**na **projektu** nabídky, klikněte na tlačítko **vlastnosti**.
+1. S projekt vybraný v **Průzkumníka řešení**na **projektu** nabídky, klikněte na tlačítko **vlastnosti**.
 
-2.  Klikněte na tlačítko **zabezpečení** kartu.
+2. Klikněte na tlačítko **zabezpečení** kartu.
 
-3.  Vyberte **povolit nastavení zabezpečení ClickOnce** zaškrtávací políčko.
+3. Vyberte **povolit nastavení zabezpečení ClickOnce** zaškrtávací políčko.
 
      Teď můžete přizpůsobit nastavení zabezpečení pro vaši aplikaci na stránce zabezpečení.
 
@@ -45,11 +45,11 @@ Chcete-li publikovat aplikace musí být povoleno zabezpečení přístupu ke k�
 
 ### <a name="to-disable-clickonce-security-settings"></a>Chcete-li zakázat nastavení zabezpečení ClickOnce
 
-1.  S projekt vybraný v **Průzkumníka řešení**na **projektu** nabídky, klikněte na tlačítko **vlastnosti**.
+1. S projekt vybraný v **Průzkumníka řešení**na **projektu** nabídky, klikněte na tlačítko **vlastnosti**.
 
-2.  Klikněte na tlačítko **zabezpečení** kartu.
+2. Klikněte na tlačítko **zabezpečení** kartu.
 
-3.  Zrušte **povolit nastavení zabezpečení ClickOnce** zaškrtávací políčko.
+3. Zrušte **povolit nastavení zabezpečení ClickOnce** zaškrtávací políčko.
 
      Vaše aplikace bude spuštěna pomocí nastavení zabezpečení úplný vztah důvěryhodnosti. všechna nastavení **zabezpečení** stránky se bude ignorovat.
 

@@ -11,12 +11,12 @@ ms.assetid: 6e1ae9ec-e9b1-458a-bd96-0eb15e46f1d5
 caps.latest.revision: 24
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 459e7e00f1fc9602b4e003ec16394d9cdf06410a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5a6a3247ed53b6a84feb203ce0e9b480e7f9ce5d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54775083"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073888"
 ---
 # <a name="testing-a-large-application-with-multiple-ui-maps"></a>Testování rozsáhlé aplikace s více mapami uživatelského rozhraní
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,9 +42,9 @@ Toto téma popisuje, jak používat programové testy UI při testování rozsá
 ## <a name="do-you-need-multiple-ui-maps"></a>Potřebujete více mapami uživatelského rozhraní?  
  Vytvoření více mapami uživatelského rozhraní v každém z těchto typů situacích:  
   
--   Několik sad komplexní složených ovládacích prvků uživatelského rozhraní, které dohromady provádějí logické operace, jako je například na registrační stránce na webu nebo na stránce nákupní nákupního košíku.  
+- Několik sad komplexní složených ovládacích prvků uživatelského rozhraní, které dohromady provádějí logické operace, jako je například na registrační stránce na webu nebo na stránce nákupní nákupního košíku.  
   
--   Nezávislého sadu ovládacích prvků, které jsou přístupné z různých míst aplikaci, jako je průvodce se několik stránek operací. Pokud je obzvláště složité každou stránku průvodce, můžete vytvořit samostatné mapami uživatelského rozhraní pro každou stránku.  
+- Nezávislého sadu ovládacích prvků, které jsou přístupné z různých míst aplikaci, jako je průvodce se několik stránek operací. Pokud je obzvláště složité každou stránku průvodce, můžete vytvořit samostatné mapami uživatelského rozhraní pro každou stránku.  
   
 ## <a name="adding-multiple-ui-maps"></a>Přidání více mapami uživatelského rozhraní  
   

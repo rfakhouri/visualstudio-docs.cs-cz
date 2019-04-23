@@ -11,12 +11,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ab39de049b1ab3ff8054070b863380b66fd35018
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ccf7c3565925eb3fe55fe500a127c666515fb41a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54776236"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60058580"
 ---
 # <a name="creating-custom-t4-text-template-directive-processors"></a>Vytváření vlastních procesorů pro direktivy textových šablon T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,9 +42,9 @@ ms.locfileid: "54776236"
   
  Může být několik příkladů vlastní procesory direktiv:  
   
--   Procesor direktiv vrátit data z databáze, která přijímá jako parametry uživatelské jméno a heslo.  
+- Procesor direktiv vrátit data z databáze, která přijímá jako parametry uživatelské jméno a heslo.  
   
--   Procesoru direktiv pro otevírání a čtení souboru, který přijímá jako parametr názvu souboru.  
+- Procesoru direktiv pro otevírání a čtení souboru, který přijímá jako parametr názvu souboru.  
   
 ### <a name="principal-parts-of-a-custom-directive-processor"></a>Hlavní část vlastního procesoru direktiv  
  K vývoji procesor direktiv, musíte vytvořit třídu, která dědí buď z <xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> nebo <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor>.  

@@ -9,12 +9,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 247e1720a21c88f15a766fb948156e93ec55e308
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 84aa3400eb6b64e8904d95e0fce7b43ae9351ad8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59656320"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060862"
 ---
 # <a name="how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-or-designer"></a>Postupy: Přiřazení uložených procedur za účelem aktualizace, vložení a odstranění (O/R Designer)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,23 +34,23 @@ Uložené procedury lze přidat do Návrháře relací objektů a spustit jako t
   
 #### <a name="to-assign-stored-procedures-to-override-the-default-behavior-of-an-entity-class"></a>Přiřazení uložených procedur potlačit výchozí chování třídy entity  
   
-1.  Otevřít **technologie LINQ to SQL** soubor v návrháři. (Poklikejte na soubor .dbml v **Průzkumníka řešení**.)  
+1. Otevřít **technologie LINQ to SQL** soubor v návrháři. (Poklikejte na soubor .dbml v **Průzkumníka řešení**.)  
   
-2.  V **Průzkumníka serveru**/**Průzkumník databáze**, rozbalte **uložené procedury** a vyhledejte uložené procedury, které chcete použít pro vložení, aktualizace, a/nebo odstranit příkazy třídy entity.  
+2. V **Průzkumníka serveru**/**Průzkumník databáze**, rozbalte **uložené procedury** a vyhledejte uložené procedury, které chcete použít pro vložení, aktualizace, a/nebo odstranit příkazy třídy entity.  
   
-3.  Uložená procedura přetáhněte do Návrháře relací objektů.  
+3. Uložená procedura přetáhněte do Návrháře relací objektů.  
   
      Uložená procedura se přidá do podokna metody jako <xref:System.Data.Linq.DataContext> metody. Další informace najdete v tématu [metod DataContext (O/R Designer)](../data-tools/datacontext-methods-o-r-designer.md).  
   
-4.  Vyberte třídu entity, pro které chcete používat uložené procedury k provedení aktualizace.  
+4. Vyberte třídu entity, pro které chcete používat uložené procedury k provedení aktualizace.  
   
-5.  V **vlastnosti** okna, vyberte příkaz k přepsání (**vložit**, **aktualizace**, nebo **odstranit**).  
+5. V **vlastnosti** okna, vyberte příkaz k přepsání (**vložit**, **aktualizace**, nebo **odstranit**).  
   
-6.  Klikněte na tlačítko se třemi tečkami (...) vedle slov **používat Runtime** otevřít **konfigurace chování** dialogové okno.  
+6. Klikněte na tlačítko se třemi tečkami (...) vedle slov **používat Runtime** otevřít **konfigurace chování** dialogové okno.  
   
-7.  Vyberte **přizpůsobit**.  
+7. Vyberte **přizpůsobit**.  
   
-8.  Vyberte požadovanou uloženou proceduru v **vlastní** seznamu.  
+8. Vyberte požadovanou uloženou proceduru v **vlastní** seznamu.  
   
 9. Prohlédněte si seznam **argumenty metody** a **vlastnosti třídy** ověřit, jestli **argumenty metody** mapují na odpovídající **vlastnosti třídy**. Mapování původní argumenty metody (Original_*název argumentu ArgumentName*) na původní vlastnosti (*PropertyName* (původní)) pro příkazy Update a Delete.  
   

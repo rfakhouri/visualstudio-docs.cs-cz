@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2c38f28ae99c2fb70f811b9d6b85e3c771512b17
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 40217c1cfcc2c7ae946e36aadb7a251436023b0a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56723744"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078626"
 ---
 # <a name="how-to-provide-a-service"></a>Postupy: Poskytování služeb
 VSPackage může poskytovat služby, které můžete použít jiné balíčky VSPackages. Poskytování služeb, musíte VSPackage registraci služby pomocí sady Visual Studio a přidejte službu.
@@ -76,7 +76,7 @@ VSPackage může poskytovat služby, které můžete použít jiné balíčky VS
 
 ### <a name="register-a-service"></a>Registrace služby
 
-1.  Chcete-li zaregistrovat služby, přidejte <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute> VSPackage, která poskytuje služby. Tady je příklad:
+1. Chcete-li zaregistrovat služby, přidejte <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute> VSPackage, která poskytuje služby. Tady je příklad:
 
     ```csharp
     [ProvideService(typeof(SMyService))]
@@ -93,7 +93,7 @@ VSPackage může poskytovat služby, které můžete použít jiné balíčky VS
 
 ### <a name="add-a-service"></a>Přidat službu
 
-1.  V inicializátoru VSPackage přidat služby a přidejte metodu zpětného volání pro vytvoření služeb. Tady je změnit tak, aby <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> metody:
+1. V inicializátoru VSPackage přidat služby a přidejte metodu zpětného volání pro vytvoření služeb. Tady je změnit tak, aby <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> metody:
 
     ```csharp
     protected override void Initialize()
@@ -105,7 +105,7 @@ VSPackage může poskytovat služby, které můžete použít jiné balíčky VS
     }
     ```
 
-2.  Implementace metody zpětného volání, které by měl vytvořit a vrátit služby nebo hodnota null, pokud nelze vytvořit.
+2. Implementace metody zpětného volání, které by měl vytvořit a vrátit služby nebo hodnota null, pokud nelze vytvořit.
 
     ```csharp
     private object CreateService(IServiceContainer container, Type serviceType)
@@ -119,7 +119,7 @@ VSPackage může poskytovat služby, které můžete použít jiné balíčky VS
     > [!NOTE]
     >  Visual Studio může odmítnout žádost o poskytování služeb. Dělá to, pokud jiné VSPackage již poskytuje službu.
 
-3.  Nyní můžete získat službu a použijte její metody. Následující příklad ukazuje využití služby v inicializátoru, ale můžete získat službu kamkoli chcete používat službu.
+3. Nyní můžete získat službu a použijte její metody. Následující příklad ukazuje využití služby v inicializátoru, ale můžete získat službu kamkoli chcete používat službu.
 
     ```csharp
     protected override void Initialize()

@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5424e813c5f1e3908c02dbc63798f5891edb8131
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: 3beeb41d89f96cea8ab0f7f97bada815101f7e2f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526643"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079705"
 ---
 # <a name="graph-view"></a>Zobrazení grafu
 
@@ -120,11 +120,11 @@ Zobrazení grafu poskytuje grafické znázornění schématu globální uzlů a 
 
  Funkce Zpět/znovu je povolená v zobrazení grafu pro následující akce:
 
--   Přidání jednoho uzlu pomocí přetahování.
+- Přidání jednoho uzlu pomocí přetahování.
 
--   Přidání více uzlů z výsledků hledání v dotazech Průzkumník schémat nebo zobrazení Start.
+- Přidání více uzlů z výsledků hledání v dotazech Průzkumník schémat nebo zobrazení Start.
 
--   Odstraňuje se jeden nebo více uzlů.
+- Odstraňuje se jeden nebo více uzlů.
 
 ## <a name="zoom"></a>Lupa
 
@@ -132,9 +132,9 @@ Zobrazení grafu poskytuje grafické znázornění schématu globální uzlů a 
 
  Zvětšení lze řídit následujícími způsoby:
 
--   Tím, že se **Ctrl** klíč a na otáčejících se ukazatel myši kol, když myš je přesunutá na plochu grafu.
+- Tím, že se **Ctrl** klíč a na otáčejících se ukazatel myši kol, když myš je přesunutá na plochu grafu.
 
--   Pomocí posuvníku. Posuvník zobrazuje aktuální úroveň přiblížení.
+- Pomocí posuvníku. Posuvník zobrazuje aktuální úroveň přiblížení.
 
 Posuvník přiblížení je neprůhledný, když vyberte ho, najeďte myší nad ním nebo použijte **Ctrl** kolečkem myši pro přiblížení; v jinou dobu, je transparentní.
 

@@ -19,12 +19,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9a2d6420abc9b9d70ce23c1dc8dc1aab5941119f
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: a39a2ef42463bd781f6bb8a24e3cfbc10b937b90
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54798984"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056065"
 ---
 # <a name="identifying-and-customizing-keyboard-shortcuts-in-visual-studio"></a>Identifikování a přizpůsobení klávesových zkratek v sadě Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,48 +52,48 @@ Můžete určit klávesové zkratky pro příkazy sady Visual Studio, tyto zkrat
 > [!NOTE]
 >  Vaše nastavení a edice sady Visual Studio může změnit názvy a umístění příkazů nabídky a možnosti, které se zobrazí v dialogových oknech. Toto téma vychází **obecným vývojovým nastavením**.
 
-##  <a name="bkmk_identify"></a> Určení klávesové zkratky
+## <a name="bkmk_identify"></a> Určení klávesové zkratky
 
-1.  V panelu nabídky zvolte **nástroje**, **možnosti**.
+1. V panelu nabídky zvolte **nástroje**, **možnosti**.
 
-2.  Rozbalte **prostředí**a klikněte na tlačítko **klávesnice**.
+2. Rozbalte **prostředí**a klikněte na tlačítko **klávesnice**.
 
      ![Zobrazí klávesové zkratky v dialogovém okně Možnosti](../ide/media/optionskeyboard.png "OptionsKeyboard")
 
-3.  V **zobrazit příkazy obsahující** zadejte část nebo celý název příkazu bez mezer.
+3. V **zobrazit příkazy obsahující** zadejte část nebo celý název příkazu bez mezer.
 
      Můžete například najít příkazy pro **solutionexplorer**.
 
-4.  V seznamu zvolte správný příkaz.
+4. V seznamu zvolte správný příkaz.
 
      Například můžete použít **View.SolutionExplorer**.
 
-5.  Pokud příkaz nemá klávesovou zkratku, zobrazí se v **zkratky pro vybraný příkaz** seznamu.
+5. Pokud příkaz nemá klávesovou zkratku, zobrazí se v **zkratky pro vybraný příkaz** seznamu.
 
      ![Zobrazit klávesovou zkratku pro zadaný příkaz](../ide/media/viewshortcut.png "ViewShortcut")
 
-##  <a name="bkmk_assign"></a> Přizpůsobení klávesové zkratky
+## <a name="bkmk_assign"></a> Přizpůsobení klávesové zkratky
 
-1.  V panelu nabídky zvolte **nástroje**, **možnosti**.
+1. V panelu nabídky zvolte **nástroje**, **možnosti**.
 
-2.  Rozbalte **prostředí** složky a klikněte na tlačítko **klávesnice**.
+2. Rozbalte **prostředí** složky a klikněte na tlačítko **klávesnice**.
 
      ![Zobrazí klávesové zkratky v dialogovém okně Možnosti](../ide/media/optionskeyboard.png "OptionsKeyboard")
 
-3.  V **zobrazit příkazy obsahující** zadejte část nebo celý název příkazu bez mezer.
+3. V **zobrazit příkazy obsahující** zadejte část nebo celý název příkazu bez mezer.
 
      Můžete například najít příkazy pro **solutionexplorer**.
 
-4.  V seznamu vyberte příkaz, ke kterému chcete přiřadit klávesovou zkratku.
+4. V seznamu vyberte příkaz, ke kterému chcete přiřadit klávesovou zkratku.
 
-5.  V **použití nového zástupce v:** seznamu, vyberte oblast funkce, ve které chcete použít klávesovou zkratku.
+5. V **použití nového zástupce v:** seznamu, vyberte oblast funkce, ve které chcete použít klávesovou zkratku.
 
      Například můžete použít **globální** Pokud chcete, aby zkratka fungovala ve všech kontextech. Můžete použít jakoukoli zkratku, která není namapována (jako globální) v jiném editoru. V opačném případě editor zkratku přepíše.
 
     > [!NOTE]
     >  Následující klávesy nelze přiřadit jako součást klávesové zkratky v **globální**: Tisk navigátoru obrazovky/Sys Rq, Scroll Lock, Pause/Break, kartu, Caps Lock, Insert, domů, End, Page Up, Page Down, klávesu s logem Windows, klíč aplikace, klávesy se šipkami nebo Enter. Num Lock, Delete nebo Clear na numerické klávesnici; nebo Ctrl + Alt + Delete.
 
-6.  V **stiskněte klávesy zkratky** zadejte klávesovou zkratku, kterou chcete použít.
+6. V **stiskněte klávesy zkratky** zadejte klávesovou zkratku, kterou chcete použít.
 
     > [!NOTE]
     >  Můžete vytvořit zástupce, který kombinuje písmeno s klávesou Alt, klávesou Ctrl nebo oběma klávesami. Můžete také vytvořit zástupce, který kombinuje klávesu Shift a písmeno s klávesou Alt, klávesou Ctrl nebo oběma klávesami.
@@ -102,45 +102,45 @@ Můžete určit klávesové zkratky pro příkazy sady Visual Studio, tyto zkrat
 
      ![Zadat jinou zkratku pro příkaz](../ide/media/reassignshortcut.png "ReassignShortcut")
 
-7.  Zvolte **přiřadit** tlačítko.
+7. Zvolte **přiřadit** tlačítko.
 
     > [!NOTE]
     >  Pokud chcete zadat jinou zkratku pro příkaz, zvolte **přiřadit** tlačítko a klikněte na tlačítko **zrušit** tlačítko, dialog se zavře, ale změna se nevrátí.
 
-##  <a name="bkmk_transfer"></a> Sdílení vlastní klávesové zkratky
+## <a name="bkmk_transfer"></a> Sdílení vlastní klávesové zkratky
  Vlastní klávesové zkratky je možné sdílet exportováním do souboru a předáním souboru ostatním, aby data mohli importovat.
 
 #### <a name="to-export-only-keyboard-shortcuts"></a>Export pouze klávesových zkratek
 
-1.  V panelu nabídky zvolte **nástroje**, **nastavení importu a exportu**.
+1. V panelu nabídky zvolte **nástroje**, **nastavení importu a exportu**.
 
-2.  Zvolte **exportovat vybrané nastavení prostředí**a klikněte na tlačítko **Další** tlačítko.
+2. Zvolte **exportovat vybrané nastavení prostředí**a klikněte na tlačítko **Další** tlačítko.
 
-3.  V části **jaká nastavení chcete exportovat?**, zrušte zaškrtnutí políčka **všechna nastavení** zaškrtávací políčko, rozbalte **možnosti**a potom rozbalte **prostředí**.
+3. V části **jaká nastavení chcete exportovat?**, zrušte zaškrtnutí políčka **všechna nastavení** zaškrtávací políčko, rozbalte **možnosti**a potom rozbalte **prostředí**.
 
-4.  Vyberte **klávesnice** zaškrtněte políčko a klikněte na tlačítko **Další** tlačítko.
+4. Vyberte **klávesnice** zaškrtněte políčko a klikněte na tlačítko **Další** tlačítko.
 
      ![Export pouze klávesových zkratek přizpůsobit](../ide/media/exportshortcuts.png "ExportShortcuts")
 
-5.  V **co chcete pojmenovat soubor nastavení?** a **Store Můj soubor nastavení v tomto adresáři** polí, buď ponechte výchozí hodnoty nebo zadejte jiné hodnoty a klikněte na tlačítko  **Dokončit** tlačítko.
+5. V **co chcete pojmenovat soubor nastavení?** a **Store Můj soubor nastavení v tomto adresáři** polí, buď ponechte výchozí hodnoty nebo zadejte jiné hodnoty a klikněte na tlačítko  **Dokončit** tlačítko.
 
      Ve výchozím nastavení jsou klávesové zkratky ukládány do souboru ve složce USERPROFILE%\Documents\Visual Studio 2013\Settings. Název souboru zobrazuje datum, kdy jste nastavení exportovali, a přípona je .vssettings.
 
 #### <a name="to-import-only-keyboard-shortcuts"></a>Import pouze klávesových zkratek
 
-1.  V panelu nabídky zvolte **nástroje**, **nastavení importu a exportu**.
+1. V panelu nabídky zvolte **nástroje**, **nastavení importu a exportu**.
 
-2.  Zvolte **importovat vybrané nastavení prostředí** přepínač a klikněte na tlačítko **Další** tlačítko.
+2. Zvolte **importovat vybrané nastavení prostředí** přepínač a klikněte na tlačítko **Další** tlačítko.
 
-3.  Zvolte **Ne, importovat nové nastavení a přepsat současné nastavení** přepínač a klikněte na tlačítko **Další** tlačítko.
+3. Zvolte **Ne, importovat nové nastavení a přepsat současné nastavení** přepínač a klikněte na tlačítko **Další** tlačítko.
 
-4.  V části **má nastavení**, zvolte soubor, který obsahuje klávesové zkratky, které chcete importovat, nebo zvolte **Procházet** vyhledejte správný soubor.
+4. V části **má nastavení**, zvolte soubor, který obsahuje klávesové zkratky, které chcete importovat, nebo zvolte **Procházet** vyhledejte správný soubor.
 
-5.  Zvolte **Další** tlačítko.
+5. Zvolte **Další** tlačítko.
 
-6.  V části **nastavení, které chcete importovat?**, zrušte zaškrtnutí políčka **všechna nastavení** zaškrtávací políčko, rozbalte **možnosti**a potom rozbalte **prostředí**.
+6. V části **nastavení, které chcete importovat?**, zrušte zaškrtnutí políčka **všechna nastavení** zaškrtávací políčko, rozbalte **možnosti**a potom rozbalte **prostředí**.
 
-7.  Vyberte **klávesnice** zaškrtněte políčko a klikněte na tlačítko **Dokončit** tlačítko.
+7. Vyberte **klávesnice** zaškrtněte políčko a klikněte na tlačítko **Dokončit** tlačítko.
 
      ![Import pouze klávesových zkratek přizpůsobit](../ide/media/importshortcuts.png "ImportShortcuts")
 

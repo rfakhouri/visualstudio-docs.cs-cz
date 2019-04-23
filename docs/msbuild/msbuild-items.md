@@ -11,19 +11,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a1b9a6f602bd1e3fad2c07511f5899db3961907e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: e7000e8a95dbe115e5afe853c9dd55a797d23ec3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603401"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079432"
 ---
 # <a name="msbuild-items"></a>Položky nástroje MSBuild
 Položky nástroje MSBuild jsou vstupy do systému sestavení a obvykle představují soubory (soubory jsou určené v `Include` atributu). Položky jsou seskupeny do typů položek podle jejich názvy elementů. Seznam položek, které lze použít jako parametry pro úkoly jsou pojmenované typy položek. Úkoly pomocí hodnoty položek k provedení kroků procesu sestavení.
 
  Protože položky jsou pojmenovány podle typu položky, do které patří, podmínky "item" a "položky hodnotu" zaměnitelné.
 
-##  <a name="create-items-in-a-project-file"></a>Vytvoření položky v souboru projektu
+## <a name="create-items-in-a-project-file"></a>Vytvoření položky v souboru projektu
  Deklarujete položky v souboru projektu jako podřízené prvky [ItemGroup](../msbuild/itemgroup-element-msbuild.md) elementu. Název podřízeného prvku je typ položky. `Include` Atribut elementu, který určuje položky (soubory), které chcete být součástí tohoto typu položky. Například následující XML kód vytvoří typ položky, který je pojmenován `Compile`, který obsahuje dva soubory.
 
 ```xml
@@ -43,21 +43,21 @@ Položky nástroje MSBuild jsou vstupy do systému sestavení a obvykle předsta
 </ItemGroup>
 ```
 
-##  <a name="create-items-during-execution"></a>Vytvářet položky za běhu
+## <a name="create-items-during-execution"></a>Vytvářet položky za běhu
  Položky, které jsou mimo [cílové](../msbuild/target-element-msbuild.md) prvky jsou přiřazeny hodnoty během fáze vyhodnocení sestavení. Během následující fáze vykonávání můžou položky vytvořit nebo upravit následujícími způsoby:
 
--   Všechny úlohy lze generovat položky. Generovat položku, [úloh](../msbuild/task-element-msbuild.md) element musí mít podřízený [výstup](../msbuild/output-element-msbuild.md) element, který má `ItemName` atribut.
+- Všechny úlohy lze generovat položky. Generovat položku, [úloh](../msbuild/task-element-msbuild.md) element musí mít podřízený [výstup](../msbuild/output-element-msbuild.md) element, který má `ItemName` atribut.
 
--   [Createitem –](../msbuild/createitem-task.md) úloh lze generovat položky. Tento způsob využití je zastaralý.
+- [Createitem –](../msbuild/createitem-task.md) úloh lze generovat položky. Tento způsob využití je zastaralý.
 
--   Od verze rozhraní .NET Framework 3.5 `Target` prvky mohou obsahovat [ItemGroup](../msbuild/itemgroup-element-msbuild.md) prvky, které mohou obsahovat položky elementy.
+- Od verze rozhraní .NET Framework 3.5 `Target` prvky mohou obsahovat [ItemGroup](../msbuild/itemgroup-element-msbuild.md) prvky, které mohou obsahovat položky elementy.
 
-##  <a name="reference-items-in-a-project-file"></a>Odkaz na položky v souboru projektu
+## <a name="reference-items-in-a-project-file"></a>Odkaz na položky v souboru projektu
  Chcete-li odkazovat na typy položek v celém souboru projektu, použijte syntaxi @(\<ItemType >). Například typ položky v předchozím příkladu by odkazovat pomocí `@(Compile)`. Pomocí následující syntaxe můžete předat položek úkolů zadáním položky jako parametr dané úlohy. Další informace najdete v tématu [jak: Vyberte soubory, které chcete sestavit](../msbuild/how-to-select-the-files-to-build.md).
 
  Ve výchozím nastavení jsou položky Typ položky oddělené středníkem (;) při je rozbalený. Pomocí syntaxe @(\<ItemType >, "\<oddělovač >') Chcete-li určit oddělovač jiné než výchozí. Další informace najdete v tématu [jak: Zobrazení seznamu položek oddělených čárkami](../msbuild/how-to-display-an-item-list-separated-with-commas.md).
 
-##  <a name="use-wildcards-to-specify-items"></a>Pomocí zástupných znaků můžete zadat položky
+## <a name="use-wildcards-to-specify-items"></a>Pomocí zástupných znaků můžete zadat položky
 
 Můžete použít `**`, `*`, a `?` zástupné znaky jako vstupy pro sestavení namísto vypisování každého souboru zvlášť zadat skupiny souborů.
 
@@ -81,7 +81,7 @@ Pokud chcete zahrnout literálu `*` nebo `?` znaků položky bez rozšíření z
 
 Další informace o zástupných znacích naleznete v tématu [jak: Vyberte soubory, které chcete sestavit](../msbuild/how-to-select-the-files-to-build.md).
 
-##  <a name="use-the-exclude-attribute"></a>Použijte atribut vyloučení
+## <a name="use-the-exclude-attribute"></a>Použijte atribut vyloučení
  Může obsahovat prvky položky `Exclude` atribut, který vyloučí konkrétní položky (soubory) z tohoto typu položky. `Exclude` Atribut se obvykle používá spolu s zástupné znaky. Například následující kód XML přidá každý *.cs* souborů v adresáři CSFile typu položky, s výjimkou *DoNotBuild.cs* souboru.
 
 ```xml
@@ -99,7 +99,7 @@ Další informace o zástupných znacích naleznete v tématu [jak: Vyberte soub
 
  Další informace najdete v tématu [jak: Vyloučení souborů ze sestavení](../msbuild/how-to-exclude-files-from-the-build.md).
 
-##  <a name="item-metadata"></a>Metadata položky
+## <a name="item-metadata"></a>Metadata položky
  Položky mohou obsahovat metadata spolu s informacemi v `Include` a `Exclude` atributy. Tato metadata je možné podle úlohy, které vyžadují další informace o položkách nebo dávkové úlohy a cíle. Další informace najdete v tématu [dávkování](../msbuild/msbuild-batching.md).
 
  Metadata jsou kolekce párů klíč hodnota, které jsou deklarovány v souboru projektu jako podřízené prvky prvku položek. Název podřízeného elementu je název metadat a hodnota podřízeného elementu je hodnota metadat.
@@ -116,7 +116,7 @@ Další informace o zástupných znacích naleznete v tématu [jak: Vyberte soub
 
  Položka může mít nula nebo více hodnot metadat. Kdykoli můžete změnit hodnoty metadat. Pokud nastavíte metadat na prázdnou hodnotu, efektivně ho odeberete ze sestavení.
 
-###  <a name="BKMK_ReferencingItemMetadata"></a> Odkazuje na metadata položky v souboru projektu
+### <a name="BKMK_ReferencingItemMetadata"></a> Odkazuje na metadata položky v souboru projektu
  Metadata položek v celém souboru projektu můžete odkazovat pomocí syntaxe %(\<ItemMetadataName >). Pokud existuje nejednoznačnost kvalifikovat pomocí názvu typu položky odkazu. For example, můžete zadat %(\<ItemType.ItemMetaDataName >). Zobrazení metadat pro dávkové úlohy zprávy v následujícím příkladu. Další informace o tom, jak používat metadata položky pro dávkové zpracování, naleznete v tématu [metadata položek v dávkování úloh](../msbuild/item-metadata-in-task-batching.md).
 
 ```xml
@@ -135,10 +135,10 @@ Další informace o zástupných znacích naleznete v tématu [jak: Vyberte soub
 </Project>
 ```
 
-###  <a name="BKMK_WellKnownItemMetadata"></a> Metadata známé položky
+### <a name="BKMK_WellKnownItemMetadata"></a> Metadata známé položky
  Při přidání položky typů položek této položky je přiřazen některé známé metadat. For example, všechny položky mít dobře známý metadata %(\<název souboru >), jehož hodnota je název souboru položky. Další informace najdete v tématu [metadata známé položky](../msbuild/msbuild-well-known-item-metadata.md).
 
-###  <a name="BKMK_Transforming"></a> Transformace typy položek na základě metadat
+### <a name="BKMK_Transforming"></a> Transformace typy položek na základě metadat
  Seznamy položek můžete transformovat do nové seznamy položek na základě metadat. Například můžete převést typ položky `CppFiles` , který obsahuje položky, které představují *.cpp* soubory na odpovídající seznam *.obj* soubory pomocí výrazu `@(CppFiles -> '%(Filename).obj')`.
 
  Následující kód vytvoří `CultureResource` typ, který obsahuje všechny kopie položky `EmbeddedResource` položek se závislostmi `Culture` metadat. `Culture` Hodnota metadat se stane hodnota novými metadaty `CultureResource.TargetDirectory`.
@@ -156,7 +156,7 @@ Další informace o zástupných znacích naleznete v tématu [jak: Vyberte soub
 
  Další informace najdete v tématu [transformuje](../msbuild/msbuild-transforms.md).
 
-##  <a name="item-definitions"></a>Definice položek
+## <a name="item-definitions"></a>Definice položek
  Spuštění v rozhraní .NET Framework 3.5, můžete přidat výchozí metadat na libovolný typ položky pomocí [ItemDefinitionGroup – element](../msbuild/itemdefinitiongroup-element-msbuild.md). Jako známá metadata metadat výchozí souvisí se všemi položkami typu položky, který zadáte. Můžete explicitně přepsat výchozí metadat v definici položky. Například následující kód XML poskytuje `Compile` položky *one.cs* a *three.cs* metadata `BuildDay` s hodnotou "Pondělí". Kód poskytuje položku *two.cs* metadata `BuildDay` s hodnotou "Úterý".
 
 ```xml
@@ -175,10 +175,10 @@ Další informace o zástupných znacích naleznete v tématu [jak: Vyberte soub
 
  Další informace najdete v tématu [definice položek](../msbuild/item-definitions.md).
 
-##  <a name="attributes-for-items-in-an-itemgroup-of-a-target"></a>Atributy pro položky v ItemGroup cíl
+## <a name="attributes-for-items-in-an-itemgroup-of-a-target"></a>Atributy pro položky v ItemGroup cíl
  Od verze rozhraní .NET Framework 3.5 `Target` prvky mohou obsahovat [ItemGroup](../msbuild/itemgroup-element-msbuild.md) prvky, které mohou obsahovat položky elementy. Atributy v této části jsou platné, pokud jsou zadány pro položku v `ItemGroup` , který je ve `Target`.
 
-###  <a name="BKMK_RemoveAttribute"></a> Odebrat atribut
+### <a name="BKMK_RemoveAttribute"></a> Odebrat atribut
  `Remove` Atribut odebere konkrétní položky (soubory) z typu položky. Tento atribut byla zavedena v rozhraní .NET Framework 3.5, ale byla podporována pouze v rámci cíle do 15.0 nástroje MSBuild.
 
  Následující příklad odebere každý *.config* souboru z typu položky kompilace.
@@ -191,7 +191,7 @@ Další informace o zástupných znacích naleznete v tématu [jak: Vyberte soub
 </Target>
 ```
 
-###  <a name="BKMK_KeepMetadata"></a> Atribut KeepMetadata
+### <a name="BKMK_KeepMetadata"></a> Atribut KeepMetadata
  Pokud v rámci cíle je generována položka, může obsahovat prvek položky `KeepMetadata` atribut. Pokud tento atribut není zadán, pouze metadata, která je zadána v středníkem oddělený seznam názvů budou přeneseny z položky zdroje cílovou položku. Prázdná hodnota pro tento atribut je ekvivalentní bez zadání. `KeepMetadata` Atribut byla zavedena v rozhraní .NET Framework 4.5.
 
  Následující příklad ukazuje způsob použití `KeepMetadata` atribut.
@@ -233,7 +233,7 @@ Output:
 -->
 ```
 
-###  <a name="BKMK_RemoveMetadata"></a> Atribut RemoveMetadata
+### <a name="BKMK_RemoveMetadata"></a> Atribut RemoveMetadata
  Pokud v rámci cíle je generována položka, může obsahovat prvek položky `RemoveMetadata` atribut. Pokud tento atribut je zadán, všechna metadata je přeneseny z položky zdroje do cílové položky s výjimkou metadat jejichž názvy jsou obsaženy v seznam názvů oddělených středníkem. Prázdná hodnota pro tento atribut je ekvivalentní bez zadání. `RemoveMetadata` Atribut byla zavedena v rozhraní .NET Framework 4.5.
 
  Následující příklad ukazuje způsob použití `RemoveMetadata` atribut.
@@ -282,7 +282,7 @@ Output:
 -->
 ```
 
-###  <a name="BKMK_KeepDuplicates"></a> Atribut KeepDuplicates
+### <a name="BKMK_KeepDuplicates"></a> Atribut KeepDuplicates
  Pokud v rámci cíle je generována položka, může obsahovat prvek položky `KeepDuplicates` atribut. `KeepDuplicates` je `Boolean` atribut, který určuje, zda položka by měla přidat k cílové skupině, pokud je položka přesnou kopii existující položku.
 
  Pokud zdrojové a cílové položky mají stejnou hodnotu zahrnout ale rozdílná metadata, přidá se položka i v případě `KeepDuplicates` je nastavena na `false`. Prázdná hodnota pro tento atribut je ekvivalentní bez zadání. `KeepDuplicates` Atribut byla zavedena v rozhraní .NET Framework 4.5.

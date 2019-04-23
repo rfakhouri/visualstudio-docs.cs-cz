@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 608ba29c9f2068ce053fd6b92ba053eb45869ddd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 71d7dc0fc208fa3c108019f6324c3d053673e918
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54777433"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070833"
 ---
 # <a name="t4-template-directive"></a>T4 – direktiva Template
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,8 @@ A [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] textové šablony T4 obvykle zač
   
 ## <a name="debug-attribute"></a>Atribut debug  
  Příklad:  
- ```  
+
+```  
 debug="true"  
 ```  
   
@@ -70,7 +71,8 @@ debug="true"
   
 ## <a name="hostspecific-attribute"></a>Atribut hostspecific  
  Příklad:  
- ```  
+
+```  
 hostspecific="true"  
 ```  
   
@@ -144,7 +146,8 @@ Squares of numbers:
  Obvykleji se jako základní třída určuje jiná předzpracovaná šablona. Základní šablona poskytuje běžné bloky textu, které mohou být proloženy textem z odvozených šablon. Lze použít bloky funkcí tříd `<#+ ... #>` k definici metod obsahujících textové fragmenty. Do základní šablony lze například umístit rámec výstupního textu a poskytnout tak virtuální metody, které lze v odvozených třídách přepsat:  
   
  Textová šablona běhu (předzpracovaná) BaseTemplate.tt:  
- ```scr  
+
+```scr  
 This is the common header.  
 <#   
   SpecificFragment1();   
@@ -163,7 +166,8 @@ This is the common footer.
 ```  
   
  Textová šablona běhu (předzpracovaná) DerivedTemplate1.tt:  
- ```csharp  
+
+```csharp  
 <#@ template language="C#" inherits="BaseTemplate" #>  
 <#   
   // Run the base template:  
@@ -188,12 +192,14 @@ protected override void SpecificFragment2()
 ```  
   
  Kód aplikace pro vyvolání DerivedTemplate1:  
- ```csharp  
+
+```csharp  
 Console.WriteLine(new DerivedTemplate().TransformText());  
 ```  
   
  Výsledný výstup:  
- ```  
+
+```  
 This is the common header.  
    Fragment 1 for DerivedTemplate1  
 A common central text.  

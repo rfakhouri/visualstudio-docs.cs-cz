@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f9c5afe582c12f3f7e6a941030be1c94bcd1f5f
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 0afc0279a9f1f82a18d0e645f56add5da6b347a1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59650990"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063826"
 ---
 # <a name="how-to-create-a-profiling-tools-call-trace-report"></a>Postupy: Vytvoření sestavy trasování volání nástrojů pro profilaci
 *Zpráva sledování volání* pro [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] nástrojů pro profilaci sady uvádí informace o časování pro každý bod vstupu a výstupu funkcí aplikace a každé volání ostatních funkcí pomocí vaší funkce. Zprávy sledování volání jsou k dispozici pro data profilování pouze v případě, že byla shromážděna pomocí metody instrumentace.
@@ -26,9 +26,9 @@ ms.locfileid: "59650990"
 
 ### <a name="to-create-a-call-trace-report"></a>K vytvoření sestavy trasování volání
 
-1.  Otevřít **příkazového řádku** okna.
+1. Otevřít **příkazového řádku** okna.
 
-2.  V příkazovém řádku zadejte následující příkaz:
+2. V příkazovém řádku zadejte následující příkaz:
 
      *ToolsPath* **VSPerfReport** *VSPFile*  **/CallTrace [/Xml]**
 

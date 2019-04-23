@@ -22,12 +22,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3a80fa982da118db58abbc589136823d5c433ce3
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: e8a7bd540f5c8a99145b892d080d8cb54e57d968
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59657256"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061174"
 ---
 # <a name="display-related-data-in-wpf-applications"></a>Zobrazení souvisejících dat v aplikacích WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,23 +38,23 @@ V některých aplikacích můžete chtít pracovat s daty, která pochází z v�
   
 ## <a name="to-create-controls-that-display-related-records"></a>Chcete-li vytvořit ovládací prvky, které zobrazení souvisejících záznamů  
   
-1.  Na **Data** nabídky, klikněte na tlačítko **zobrazit zdroje dat** otevřít **zdroje dat** okna.  
+1. Na **Data** nabídky, klikněte na tlačítko **zobrazit zdroje dat** otevřít **zdroje dat** okna.  
   
-2.  Klikněte na tlačítko **přidat nový zdroj dat**a proveďte **konfigurace zdroje dat** průvodce.  
+2. Klikněte na tlačítko **přidat nový zdroj dat**a proveďte **konfigurace zdroje dat** průvodce.  
   
-3.  Otevření Návrháře WPF a ujistěte se, že návrhář obsahuje kontejner, který je platný cíl pro položky v **zdroje dat** okna.  
+3. Otevření Návrháře WPF a ujistěte se, že návrhář obsahuje kontejner, který je platný cíl pro položky v **zdroje dat** okna.  
   
      Další informace o platné cíle přetažení najdete v tématu [ovládací prvky WPF vytvoření vazby k datům v sadě Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).  
   
-4.  V **zdroje dat** okna, rozbalte uzel, který představuje nadřazené tabulky nebo objekt v relaci. Nadřazené tabulky nebo objektu je na straně "1" vztah jeden mnoho.  
+4. V **zdroje dat** okna, rozbalte uzel, který představuje nadřazené tabulky nebo objekt v relaci. Nadřazené tabulky nebo objektu je na straně "1" vztah jeden mnoho.  
   
-5.  Přetáhněte nadřazený uzel (nebo všechny jednotlivé položky v nadřazeném uzlu) z **zdroje dat** okna do cíle přetažení platný v návrháři.  
+5. Přetáhněte nadřazený uzel (nebo všechny jednotlivé položky v nadřazeném uzlu) z **zdroje dat** okna do cíle přetažení platný v návrháři.  
   
      Visual Studio generuje XAML, který vytvoří nové ovládací prvky vázané na data pro každou položku, která se při přetahování. XAML také přidá nový <xref:System.Windows.Data.CollectionViewSource> nadřazené tabulky nebo objektu k prostředkům cíl přetažení. U některých zdrojů dat sady Visual Studio také vygeneruje kód pro načtení dat do nadřazené tabulky nebo objektu. Další informace najdete v tématu [ovládací prvky WPF vytvoření vazby k datům v sadě Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).  
   
-6.  V **zdroje dat** okně vyhledejte související podřízené tabulky nebo objektu. Související podřízené tabulky a objekty se zobrazí jako rozbalovací uzly v dolní části seznamu nadřazený uzel data.  
+6. V **zdroje dat** okně vyhledejte související podřízené tabulky nebo objektu. Související podřízené tabulky a objekty se zobrazí jako rozbalovací uzly v dolní části seznamu nadřazený uzel data.  
   
-7.  Přetáhněte podřízený uzel (nebo všechny jednotlivé položky v podřízený uzel) z **zdroje dat** okna do cíle přetažení platný v návrháři.  
+7. Přetáhněte podřízený uzel (nebo všechny jednotlivé položky v podřízený uzel) z **zdroje dat** okna do cíle přetažení platný v návrháři.  
   
      Visual Studio generuje XAML, který vytvoří nové ovládací prvky vázané na data pro každou z položek, které při přetahování. XAML také přidá nový <xref:System.Windows.Data.CollectionViewSource> podřízené tabulky nebo objektu k prostředkům cíl přetažení. Tato nová <xref:System.Windows.Data.CollectionViewSource> vazba na vlastnost nadřazené tabulky nebo objekt, který jste právě přetáhli do návrháře. U některých zdrojů dat sady Visual Studio také vygeneruje kód pro načtení dat do podřízené tabulky nebo objektu.  
   

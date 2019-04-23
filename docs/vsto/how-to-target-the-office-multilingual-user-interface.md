@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a9af26cae55a9a13f7aaaeb2297b19c81105f438
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: c495f8a83b58c53404056befd2227b295c3324d5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56635680"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063982"
 ---
 # <a name="how-to-target-the-office-multilingual-user-interface"></a>Postupy: Cílení na vícejazyčné uživatelské rozhraní sady Office
   Multilingual User Interface (MUI) je funkce aplikace Microsoft Office, poskytující koncovému uživateli možnost měnit jazyk uživatelského rozhraní (UI). Práce s anglickou uživatelského rozhraní koncového uživatele můžete například změnit jazyk uživatelského rozhraní na španělštinu.
@@ -33,7 +33,7 @@ ms.locfileid: "56635680"
 
 ## <a name="to-check-the-current-office-ui-setting"></a>Pokud chcete zkontrolovat aktuální nastavení uživatelského rozhraní sady Office
 
-1.  Použití <xref:System.Threading.Thread.CurrentUICulture%2A> vlastnost aktuálního vlákna. Nastavte jazyk vašeho řetězce uživatelského rozhraní tak, aby odpovídaly jazyk používá verzi systému Office, který aktuálně běží na počítači uživatele.
+1. Použití <xref:System.Threading.Thread.CurrentUICulture%2A> vlastnost aktuálního vlákna. Nastavte jazyk vašeho řetězce uživatelského rozhraní tak, aby odpovídaly jazyk používá verzi systému Office, který aktuálně běží na počítači uživatele.
 
      [!code-vb[Trin_VstcoreCreatingExcel#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreCreatingExcelVB/Sheet1.vb#10)]
      [!code-csharp[Trin_VstcoreCreatingExcel#10](../vsto/codesnippet/CSharp/Trin_VstcoreCreatingExcelCS/Sheet1.cs#10)]

@@ -17,12 +17,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d6a315adb859445c5efa15df5b8366815bfc86d7
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 0b0587f6c1c5d7577d8fddffb73db31f09248fae
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54784784"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075646"
 ---
 # <a name="how-to-manage-build-configurations-with-visual-basic-developer-settings-applied"></a>Postupy: Správa konfigurací sestavení s použitými nastaveními vývojáře jazyka Visual Basic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,16 +34,16 @@ Ve výchozím nastavení jsou všechny možnosti rozšířené sestavení konfig
   
 #### <a name="to-enable-advanced-build-configurations"></a>Chcete-li povolit pokročilé konfigurace sestavení  
   
-1.  Na **nástroje** nabídky, klikněte na tlačítko **možnosti**.  
+1. Na **nástroje** nabídky, klikněte na tlačítko **možnosti**.  
   
-2.  Rozbalte **projekty a řešení**a klikněte na tlačítko **Obecné**.  
+2. Rozbalte **projekty a řešení**a klikněte na tlačítko **Obecné**.  
   
     > [!NOTE]
     >  **Obecné** uzlu je viditelný i v případě **zobrazit všechna nastavení** možnost není zaškrtnutá. Pokud chcete zobrazit všechny dostupné možnosti, klikněte na tlačítko **zobrazit všechna nastavení**.  
   
-3.  Klikněte na tlačítko **zobrazit pokročilé konfigurace sestavení**.  
+3. Klikněte na tlačítko **zobrazit pokročilé konfigurace sestavení**.  
   
-4.  Klikněte na **OK**.  
+4. Klikněte na **OK**.  
   
      Na **sestavení** nabídce **nástroje Configuration Manager** je nyní k dispozici a **konfigurace** a **platformy** seznamy jsou viditelné v Návrhář projektu.  
   

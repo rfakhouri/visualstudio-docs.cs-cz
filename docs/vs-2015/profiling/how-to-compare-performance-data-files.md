@@ -14,12 +14,12 @@ caps.latest.revision: 25
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ee0da10a6ac8786666aaf9dc041f6f198cff2d10
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 185494623e019ef666374bd46e52bca0d58738f4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54799561"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077665"
 ---
 # <a name="how-to-compare-performance-data-files"></a>Postupy: Porovnání datových souborů výkonu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,28 +34,28 @@ Porovnejte výsledky dva datové soubory jiný profiler (.vsp nebo .vsps) vytvo�
   
 ### <a name="to-create-comparison-file-view-for-a-project-in-performance-explorer"></a>Vytvořit zobrazení souboru porovnání pro projekt v prohlížeči výkonu  
   
-1.  V **prohlížeč výkonu**v části **sestavy**, vyberte soubor .vsp nebo .vsps soubor sestavy, kterou chcete použít jako hodnoty směrný plán pro porovnání.  
+1. V **prohlížeč výkonu**v části **sestavy**, vyberte soubor .vsp nebo .vsps soubor sestavy, kterou chcete použít jako hodnoty směrný plán pro porovnání.  
   
-2.  Vyberte soubor .vsp nebo .vsps soubory sestav, které chcete porovnat.  
+2. Vyberte soubor .vsp nebo .vsps soubory sestav, které chcete porovnat.  
   
-3.  Klikněte pravým tlačítkem na vybrané soubory a pak klikněte na tlačítko **porovnat sestavy**.  
+3. Klikněte pravým tlačítkem na vybrané soubory a pak klikněte na tlačítko **porovnat sestavy**.  
   
 ### <a name="to-compare-values"></a>Chcete-li porovnat hodnoty  
   
-1.  Vyberte **sestavy porovnání** karta v okně zobrazení sestavy.  
+1. Vyberte **sestavy porovnání** karta v okně zobrazení sestavy.  
   
-2.  V **tabulky** rozevírací seznam, vyberte funkci nebo moduly pro porovnání.  
+2. V **tabulky** rozevírací seznam, vyberte funkci nebo moduly pro porovnání.  
   
-3.  V **sloupec** rozevíracího seznamu vyberte hodnotu, kterou chcete porovnat.  
+3. V **sloupec** rozevíracího seznamu vyberte hodnotu, kterou chcete porovnat.  
   
-4.  (volitelné) Zadejte hodnotu pro **prahová hodnota**.  
+4. (volitelné) Zadejte hodnotu pro **prahová hodnota**.  
   
-5.  Klikněte na tlačítko **Použít**.  
+5. Klikněte na tlačítko **Použít**.  
   
 ### <a name="to-compare-report-files"></a>Chcete-li porovnat soubory sestav  
   
-1.  Na **analyzovat** nabídce vyberte možnost **porovnat sestavy výkonu**.  
+1. Na **analyzovat** nabídce vyberte možnost **porovnat sestavy výkonu**.  
   
-2.  V **vybrat soubory analýzy k porovnání** , procházet a vyberte **referenční soubor** souboru analýzy (.vsp nebo .vsps) a **porovnávaný soubor** (.vsp nebo .vsps).  
+2. V **vybrat soubory analýzy k porovnání** , procházet a vyberte **referenční soubor** souboru analýzy (.vsp nebo .vsps) a **porovnávaný soubor** (.vsp nebo .vsps).  
   
-3.  Klikněte na **OK**.
+3. Klikněte na **OK**.

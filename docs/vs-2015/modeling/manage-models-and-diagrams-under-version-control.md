@@ -11,12 +11,12 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c8ad8861e2c838de283b7971d7e985fe8a4c591a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2a7ba74c18097f7eb4b2f8ff50780dfd5ffb57df
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54794145"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080317"
 ---
 # <a name="manage-models-and-diagrams-under-version-control"></a>Správa modelů a diagramů pomocí správy verzí
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,84 +28,84 @@ Spravovat různé verze projekty modelování a diagramy, včetně mapy kódu (s
 > [!IMPORTANT]
 >  Buďte opatrní při práci více uživatelů na stejném projektu modelování. Zjistěte, jak můžete [uspořádat modely ve střední a velké projekty](../modeling/structure-your-modeling-solution.md).  
   
-##  <a name="ModelingProjects"></a> Soubory v projektu modelování  
+## <a name="ModelingProjects"></a> Soubory v projektu modelování  
  Více uživatelů může pracovat na projektu modelování ve stejnou dobu, pracují na různých souborech.  
   
  K zamezení nebo řešení konfliktů mezi změn provedenými různými uživateli, je důležité pochopit, jak je model uložen v souborech.  
   
--   Každý balíček je uložen ve zvláštním **.uml** soubor, který je uložen v **ModelDefinition** složky projektu. Model obsahuje také **.uml** souboru. Pokud některý z těchto souborů je odstraněn nebo poškozen, odpovídající balíček nebo model budou ztraceny.  
+- Každý balíček je uložen ve zvláštním **.uml** soubor, který je uložen v **ModelDefinition** složky projektu. Model obsahuje také **.uml** souboru. Pokud některý z těchto souborů je odstraněn nebo poškozen, odpovídající balíček nebo model budou ztraceny.  
   
--   Každý diagram je uložen ve dvou souborech. Diagram třídy má například:  
+- Každý diagram je uložen ve dvou souborech. Diagram třídy má například:  
   
-    -   **DiagramName.classdiagram** – Pokud je tento soubor odstraněn nebo poškozen, diagram budou ztraceny, ale třídy a přidružení, která ukazoval bude i nadále v modelu a lze je zobrazit v Průzkumníku modelů UML.  
+    - **DiagramName.classdiagram** – Pokud je tento soubor odstraněn nebo poškozen, diagram budou ztraceny, ale třídy a přidružení, která ukazoval bude i nadále v modelu a lze je zobrazit v Průzkumníku modelů UML.  
   
-    -   **DiagramName.classdiagram.layout** -li tento soubor odstraněn, tvary se nadále zobrazí v diagramu, ale dojde ke ztrátě jejich velikostí a umístění. Každý soubor rozložení je podřízený souboru diagramu. Zobrazíte ho kliknutím na [+] vedle souboru diagramu v Průzkumníku řešení.  
+    - **DiagramName.classdiagram.layout** -li tento soubor odstraněn, tvary se nadále zobrazí v diagramu, ale dojde ke ztrátě jejich velikostí a umístění. Každý soubor rozložení je podřízený souboru diagramu. Zobrazíte ho kliknutím na [+] vedle souboru diagramu v Průzkumníku řešení.  
   
 > [!NOTE]
 >  Je důležité zajistit konzistenci těchto souborů. Například pokud používáte správy zdrojového kódu vrátit zpět provedené změny v souboru s příponou UML, měli byste vrátit zpět odpovídající změny. * diagram a .layout soubory ve stejnou dobu. Elementy zastoupené v. \*soubor diagramu budou ztraceny, pokud nejsou také reprezentovány v souboru .uml.  
   
-##  <a name="Shared"></a> Práce na sdílených projektech modelování  
+## <a name="Shared"></a> Práce na sdílených projektech modelování  
  Chcete-li minimalizovat konflikty mezi souběžnou prací na různých částech projektu:  
   
--   Modelování projektu rozdělte do balíčků zastupujících různé oblasti činnosti. Přesuňte celý model do balíčků, namísto jeho ponechání v kořenovém modelu. Další informace najdete v tématu [definování balíčků a oborů názvů](../modeling/define-packages-and-namespaces.md).  
+- Modelování projektu rozdělte do balíčků zastupujících různé oblasti činnosti. Přesuňte celý model do balíčků, namísto jeho ponechání v kořenovém modelu. Další informace najdete v tématu [definování balíčků a oborů názvů](../modeling/define-packages-and-namespaces.md).  
   
--   Různí uživatelé by neměli pracovat na stejném balíčku nebo diagramu současně.  
+- Různí uživatelé by neměli pracovat na stejném balíčku nebo diagramu současně.  
   
--   Pokud používáte profily, ujistěte se, že všichni uživatelé nainstalovali stejné profily. Zobrazit [přizpůsobení modelu pomocí profilů a stereotypů](../modeling/customize-your-model-with-profiles-and-stereotypes.md).  
+- Pokud používáte profily, ujistěte se, že všichni uživatelé nainstalovali stejné profily. Zobrazit [přizpůsobení modelu pomocí profilů a stereotypů](../modeling/customize-your-model-with-profiles-and-stereotypes.md).  
   
--   Abyste zajistili, že změníte pouze balíček, na které pracujete:  
+- Abyste zajistili, že změníte pouze balíček, na které pracujete:  
   
-    -   Nastavte **LinkedPackage** vlastnost třídy UML, komponenty nebo diagramu případu použití.  
+    - Nastavte **LinkedPackage** vlastnost třídy UML, komponenty nebo diagramu případu použití.  
   
-    -   V Průzkumníku modelů UML přetáhněte aktivitu nebo interakci do balíčku ihned po jeho vytvoření. Tento prvek se zobrazí v Průzkumníku modelů UML při vytvoření prvního uzlu v činnosti nebo sekvenčním diagramu.  
+    - V Průzkumníku modelů UML přetáhněte aktivitu nebo interakci do balíčku ihned po jeho vytvoření. Tento prvek se zobrazí v Průzkumníku modelů UML při vytvoření prvního uzlu v činnosti nebo sekvenčním diagramu.  
   
--   Abyste mohli udržovat přehled o balíčky, přejmenujte soubory balíčku tak, aby odrážely skutečné názvy balíčku.  
+- Abyste mohli udržovat přehled o balíčky, přejmenujte soubory balíčku tak, aby odrážely skutečné názvy balíčku.  
   
--   V [!INCLUDE[esprscc](../includes/esprscc-md.md)], vždy provádět **vrátit se změnami** a **získat nejnovější verzi** operace na dokončeném projektu modelování, nikdy ne na jednotlivé soubory.  
+- V [!INCLUDE[esprscc](../includes/esprscc-md.md)], vždy provádět **vrátit se změnami** a **získat nejnovější verzi** operace na dokončeném projektu modelování, nikdy ne na jednotlivé soubory.  
   
--   Vždy provádět **získat** operace bezprostředně před vrácením projektu modelování.  
+- Vždy provádět **získat** operace bezprostředně před vrácením projektu modelování.  
   
--   Před provedením vždy zavřít všechny diagramy **získat** operace.  
+- Před provedením vždy zavřít všechny diagramy **získat** operace.  
   
     > [!NOTE]
     >  Pokud je soubor otevřen při provedení **získat**, a operace vyústí v místní změny, pak budete vyzváni k opětovnému načtení souboru. V tomto případě klikněte na tlačítko **ne**a pak znovu načtěte celý projekt. V **Průzkumníka řešení**, modelování klikněte pravým tlačítkem na uzel projektu, klikněte na tlačítko **uvolnit projekt**a potom klikněte na tlačítko **znovu načíst projekt**.  
   
-###  <a name="Exclusive"></a> Změny vyžadující výhradní přístup k modelu  
+### <a name="Exclusive"></a> Změny vyžadující výhradní přístup k modelu  
  Před provedením následující typy změn, ujistěte se, že máte zámek rezervování na celém projektu.  
   
--   Přejmenování nebo odstranění prvků, které jsou odkazovány z jiných balíčků.  
+- Přejmenování nebo odstranění prvků, které jsou odkazovány z jiných balíčků.  
   
--   Změna vlastností vztahů, které překračují hranice balíčku.  
+- Změna vlastností vztahů, které překračují hranice balíčku.  
   
--   Další informace o zámcích pro rezervaci, naleznete v tématu [zkontrolujte out a úpravy souborů](http://msdn.microsoft.com/library/eb404d63-c448-4994-9416-3e6d50ec554a).  
+- Další informace o zámcích pro rezervaci, naleznete v tématu [zkontrolujte out a úpravy souborů](http://msdn.microsoft.com/library/eb404d63-c448-4994-9416-3e6d50ec554a).  
   
 ##### <a name="to-move-a-diagram-file-in-or-out-of-a-project-folder"></a>Chcete-li přesunout soubor diagramu do nebo ze složky projektu  
   
-1.  Spustit **Developer Command prompt pro Visual Studio**.  
+1. Spustit **Developer Command prompt pro Visual Studio**.  
   
-2.  Použití **tf přejmenovat** přesunout soubor diagramu a jeho **.layout** souboru:  
+2. Použití **tf přejmenovat** přesunout soubor diagramu a jeho **.layout** souboru:  
   
      `tf rename sourcePath targetPath`  
   
-3.  V Průzkumníku řešení klikněte pravým tlačítkem myši na soubor a pak klikněte na tlačítko **vyjmout z projektu**.  
+3. V Průzkumníku řešení klikněte pravým tlačítkem myši na soubor a pak klikněte na tlačítko **vyjmout z projektu**.  
   
-4.  Přidejte soubor do cílové složky.  
+4. Přidejte soubor do cílové složky.  
   
      V Průzkumníku řešení klikněte pravým tlačítkem na cílovou složku nebo projekt, přejděte na **přidat**a potom klikněte na tlačítko **existující položku**. V dialogovém okně vyberte soubor diagramu a potom klikněte na tlačítko **přidat**. Soubor rozložení se přidají automaticky.  
   
     > [!NOTE]
     >  Soubor nelze přesunout do jiného projektu.  
   
-##  <a name="Merging"></a> Sloučení změn v souborech a diagramech modelů  
+## <a name="Merging"></a> Sloučení změn v souborech a diagramech modelů  
  Po více než jeden uživatel má na modelu pracovat současně, [!INCLUDE[esprscc](../includes/esprscc-md.md)] vás vyzve ke sloučení změn v souborech modelu. Práce na samostatných projektech jak je popsáno v předchozích částech zabrání většině sloučení. Obvykle další konflikty lze bezpečně sloučit automaticky. Následující typy změn by neměly způsobit žádné problémy:  
   
--   Typy životností. Když přidáte do interakce (sekvenční diagram) životnost, jeho typ je uložen do kořenového modelu, pokud jste nevytvořili životnost z existujícího typu.  
+- Typy životností. Když přidáte do interakce (sekvenční diagram) životnost, jeho typ je uložen do kořenového modelu, pokud jste nevytvořili životnost z existujícího typu.  
   
--   Nové aktivity a interakce musí být nejprve uloženy v kořenovém modelu.  
+- Nové aktivity a interakce musí být nejprve uloženy v kořenovém modelu.  
   
--   Přidání prvků a vztahů.  
+- Přidání prvků a vztahů.  
   
--   Přejmenování nebo odstranění prvků, které jsou uvedeny pouze v rámci vlastního balíčku.  
+- Přejmenování nebo odstranění prvků, které jsou uvedeny pouze v rámci vlastního balíčku.  
   
 ## <a name="see-also"></a>Viz také  
  [Analýza a modelování vaší architektury](../modeling/analyze-and-model-your-architecture.md)   

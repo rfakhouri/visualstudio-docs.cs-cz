@@ -11,12 +11,12 @@ ms.assetid: 8b73b341-a33a-4ab5-9390-178c9e563d2d
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 23dc268aad528e7a628b384f8931ccfcec2674fe
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3df1a4e61859aee4b27dccf5360e0ae99ad5aa8b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54757115"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077521"
 ---
 # <a name="checklist-creating-a-legacy-language-service"></a>Kontrolní seznam: Vytvoření služby starší verze jazyka
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -25,13 +25,13 @@ Následující kontrolní seznam obsahuje souhrn základní kroky nezbytné k vy
   
 ## <a name="steps-for-creating-a-language-service"></a>Kroky pro vytvoření služby jazyka  
   
-1.  Implementujte rozhraní <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage>.  
+1. Implementujte rozhraní <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage>.  
   
-    -   V VSPackage, implementovat <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> rozhraní k zajištění služeb jazyka.  
+    - V VSPackage, implementovat <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> rozhraní k zajištění služeb jazyka.  
   
-    -   Zpřístupnění služby jazyka pro integrované vývojové prostředí (IDE) v vaše <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> implementace.  
+    - Zpřístupnění služby jazyka pro integrované vývojové prostředí (IDE) v vaše <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> implementace.  
   
-2.  Implementace <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> rozhraní ve třídě služby hlavní jazyk.  
+2. Implementace <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> rozhraní ve třídě služby hlavní jazyk.  
   
      <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> Výchozí bod interakce mezi základní editor a služba jazyka je rozhraní.  
   
@@ -121,7 +121,7 @@ Následující kontrolní seznam obsahuje souhrn základní kroky nezbytné k vy
   
    Poskytuje kontext k editoru v jednom z následujících způsobů:  
   
-  -   Poskytuje kontext pro text značky implementací <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerContextProvider> rozhraní.  
+  - Poskytuje kontext pro text značky implementací <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerContextProvider> rozhraní.  
   
   Zadejte všechny uživatelský kontext implementací <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageContextProvider> rozhraní.  
   

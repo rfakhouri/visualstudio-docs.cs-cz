@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6ff7dfc9a83028b866f7601b9b41c685262356ac
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e82166ab336023812c63045c031b81d94dea67e0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55909598"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066244"
 ---
 # <a name="how-to-extend-code-generated-by-the-or-designer"></a>Postupy: Rozšíření kódu vygenerovaného návrhářem relací objektů
 Kód vygenerovaný **O/R Designer** je znovu vygenerovány, když dojde ke změně tříd entit a dalších objektů na návrhové ploše. Z důvodu této opětovné generování kódu veškerý kód, který přidáte do vytvořeného kódu je obvykle při přepsat návrháře znovu vygeneruje kód. **O/R Designer** poskytuje možnost Generovat částečné třídy soubory, které můžete přidat kód, který není přepsán. Jedním z příkladů přidání vlastního kódu pro kód vygenerovaný **O/R Designer** je přidání ověření dat na LINQ na třídy SQL (entita). Další informace najdete v tématu [jak: Přidání ověřování do tříd entit](../data-tools/how-to-add-validation-to-entity-classes.md).
@@ -24,25 +24,25 @@ Kód vygenerovaný **O/R Designer** je znovu vygenerovány, když dojde ke změn
 
 ### <a name="to-create-a-partial-class-and-add-code-to-an-entity-class"></a>Vytvořit částečné třídy a přidat kód do třídy entity
 
-1.  Otevřete nebo vytvořte novou LINQ na třídy SQL soubor (**dbml** souborů) v **O/R Designer**. (Dvakrát klikněte **dbml** ve **Průzkumníka řešení** nebo **Průzkumník databáze**.)
+1. Otevřete nebo vytvořte novou LINQ na třídy SQL soubor (**dbml** souborů) v **O/R Designer**. (Dvakrát klikněte **dbml** ve **Průzkumníka řešení** nebo **Průzkumník databáze**.)
 
-2.  V **O/R Designer**, klikněte pravým tlačítkem na třídu, pro který chcete přidat ověřování a pak klikněte na tlačítko **zobrazit kód**.
+2. V **O/R Designer**, klikněte pravým tlačítkem na třídu, pro který chcete přidat ověřování a pak klikněte na tlačítko **zobrazit kód**.
 
      Otevře se Editor kódu s částečnou třídu pro třídy vybranou entitu.
 
-3.  Přidejte svůj kód v deklaraci částečné třídy pro třídu entity.
+3. Přidejte svůj kód v deklaraci částečné třídy pro třídu entity.
 
 ## <a name="add-code-to-a-datacontext"></a>Přidání kódu do položkou DataContext
 
 ### <a name="to-create-a-partial-class-and-add-code-to-a-datacontext"></a>Vytvoření částečné třídy a přidat kód do položkou DataContext
 
-1.  Otevřete nebo vytvořte novou LINQ na třídy SQL soubor (**dbml** souborů) v **O/R Designer**. (Dvakrát klikněte **dbml** ve **Průzkumníka řešení** nebo **Průzkumník databáze**.)
+1. Otevřete nebo vytvořte novou LINQ na třídy SQL soubor (**dbml** souborů) v **O/R Designer**. (Dvakrát klikněte **dbml** ve **Průzkumníka řešení** nebo **Průzkumník databáze**.)
 
-2.  V **O/R Designer**, klikněte pravým tlačítkem na prázdnou oblast v návrháři a potom klikněte na tlačítko **zobrazit kód**.
+2. V **O/R Designer**, klikněte pravým tlačítkem na prázdnou oblast v návrháři a potom klikněte na tlačítko **zobrazit kód**.
 
      Otevře se Editor kódu s částečnou třídu pro DataContext.
 
-3.  Přidejte svůj kód v deklaraci částečné třídy pro DataContext.
+3. Přidejte svůj kód v deklaraci částečné třídy pro DataContext.
 
 ## <a name="see-also"></a>Viz také:
 

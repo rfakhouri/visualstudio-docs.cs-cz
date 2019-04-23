@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 234b2958fd3a5a533e881fc2589c275893326814
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 1cfd7c6c8543537f88bdf033068d2ae62c7a634a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602998"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071328"
 ---
 # <a name="web-project-essentials"></a>Základy webového projektu
 Webové projekty vytvářet webové aplikace. Webový projekt můžete použít k vytvoření webové aplikace, která obsahuje inteligentní webové stránky. Inteligentní webová stránka obsahuje kód na straně serveru, který vykreslí webovou stránku na vyžádání.
@@ -28,9 +28,9 @@ Webové projekty vytvářet webové aplikace. Webový projekt můžete použít 
 
 - Soubory další zdrojového kódu, jako je například tříd pomocných rutin, které nejsou spojeny s konkrétní webovou stránku, jsou umístěny ve složce /App_Code webu.
 
-  -   Projekt webu (soubor WSP) generuje jeden spustitelný soubor pro každé inteligentní webové stránky. Další spustitelné soubory jsou generovány z jakékoli soubory zdrojového kódu ve složce /App_Code.
+  - Projekt webu (soubor WSP) generuje jeden spustitelný soubor pro každé inteligentní webové stránky. Další spustitelné soubory jsou generovány z jakékoli soubory zdrojového kódu ve složce /App_Code.
 
-  -   Projekt webové aplikace (WAP) vytvoří jeden spustitelný soubor, který kombinuje kód pro všechny inteligentní webové stránky, jakož i všechny zdrojové soubory ve složce /App_Code.
+  - Projekt webové aplikace (WAP) vytvoří jeden spustitelný soubor, který kombinuje kód pro všechny inteligentní webové stránky, jakož i všechny zdrojové soubory ve složce /App_Code.
 
 - Soubor řešení pro webový projekt nachází odděleně od samotného webového serveru. Ve výchozím nastavení, řešení soubory jsou umístěny v \Documents and nastavení\\*Váš_účet*\My dokumenty\\*\<sady Visual Studio ### >* \Projects\\ *YourWebSite*.
 
@@ -53,9 +53,9 @@ Webové projekty vytvářet webové aplikace. Webový projekt můžete použít 
 
 - Inteligentní webové stránky kombinuje HTML s programovací jazyk na straně serveru. Jazyk na straně serveru se nazývá omezením jazyka. Pro podporu omezením jazyka, musí implementovat systém webového projektu <xref:Microsoft.VisualStudio.TextManager.Interop.IVsContainedLanguage> řady rozhraní.
 
-  -   Pro podporu jazyka obsažené v editoru, musíte odložit služba jazyka HTML zobrazení kódu s omezením jazyka službě omezením jazyka.
+  - Pro podporu jazyka obsažené v editoru, musíte odložit služba jazyka HTML zobrazení kódu s omezením jazyka službě omezením jazyka.
 
-  -   Označování chyb (červená squigglies) by měl vždycky vytvořit v primární vyrovnávací paměť editoru kódu.
+  - Označování chyb (červená squigglies) by měl vždycky vytvořit v primární vyrovnávací paměť editoru kódu.
 
 ## <a name="see-also"></a>Viz také
 - [Webové projekty](../../extensibility/internals/web-projects.md)

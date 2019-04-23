@@ -13,12 +13,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f0d67cc907155f3f5c6bc4b0f132f9045f7d698a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ea48e1807291e935081f01e821cffafa794104f5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54800872"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075756"
 ---
 # <a name="visual-c-intellisense"></a>Visual C# IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,13 +40,13 @@ Visual C# IntelliSense je k dispozici při psaní kódu v editoru a při laděn�
   
   Seznamu dokončení v jazyce C# je také dostatečně inteligentní, aby odfiltrovat irelevantní tokeny a předem vyberte token na základě kontextu. Další informace najdete v tématu [filtrované seznamy dokončení v jazyce C#](../misc/filtered-completion-lists-in-csharp.md) a [Pre-selected položky seznamu dokončení v jazyce C#](../misc/pre-selected-completion-list-items-in-csharp.md).  
   
-###  <a name="CodeSnippets"></a> Fragmenty kódu do seznamů dokončení  
+### <a name="CodeSnippets"></a> Fragmenty kódu do seznamů dokončení  
  V jazyce Visual C#, seznam pro doplňování zahrnuje fragmenty kódu můžete snadno vložit předdefinované obsahy kódu do vaší aplikace. Fragmenty kódu se zobrazí v seznamu pro doplňování jako fragment [zástupce – Element (fragmenty kódu technologie Intellisense)](http://msdn.microsoft.com/052cc97a-5c70-42f8-b398-4c3adf670cfa).  Další informace o fragmenty kódu, které jsou k dispozici v jazyce Visual C# ve výchozím nastavení najdete v tématu [fragmenty kódu Visual C#](../ide/visual-csharp-code-snippets.md).  
   
-###  <a name="Keywords"></a> Klíčová slova jazyka do seznamů dokončení  
+### <a name="Keywords"></a> Klíčová slova jazyka do seznamů dokončení  
  V jazyce Visual C#, seznam pro doplňování také obsahuje klíčová slova jazyka. Další informace o klíčových slovech jazyka C# najdete v tématu [klíčová slova jazyka C#](http://msdn.microsoft.com/library/e929b0f2-4b92-4d37-8060-23d323b098ad).  
   
-###  <a name="ExtensionMethods"></a> Rozšiřující metody do seznamů dokončení  
+### <a name="ExtensionMethods"></a> Rozšiřující metody do seznamů dokončení  
  V jazyce Visual C#, seznam pro doplňování obsahuje rozšiřující metody, které jsou v oboru.  
   
 > [!NOTE]
@@ -59,23 +59,23 @@ Visual C# IntelliSense je k dispozici při psaní kódu v editoru a při laděn�
   
  Visual C# filtry seznamy dokončení, které se zobrazují pro tyto položky:  
   
--   **Základní třídy a rozhraní.** Technologie IntelliSense automaticky odebere položky z rozhraní a základní třídy dokončení seznamů v deklaraci třídy base a interface seznamy a seznamy omezení. Například výčty nejsou uvedena v seznamu dokončení pro základní třídy, protože výčty nelze použít jako základní třídy. Dokončení seznamu základních tříd obsahuje pouze rozhraní a obory názvů. Pokud v seznamu vyberte položku a potom zadejte čárku, technologie IntelliSense odebere ze seznamu dokončení základní třídy, protože Visual C# nepodporuje vícenásobnou dědičnost. Stejné chování dochází k dispozici také pro klauzule omezení.  
+- **Základní třídy a rozhraní.** Technologie IntelliSense automaticky odebere položky z rozhraní a základní třídy dokončení seznamů v deklaraci třídy base a interface seznamy a seznamy omezení. Například výčty nejsou uvedena v seznamu dokončení pro základní třídy, protože výčty nelze použít jako základní třídy. Dokončení seznamu základních tříd obsahuje pouze rozhraní a obory názvů. Pokud v seznamu vyberte položku a potom zadejte čárku, technologie IntelliSense odebere ze seznamu dokončení základní třídy, protože Visual C# nepodporuje vícenásobnou dědičnost. Stejné chování dochází k dispozici také pro klauzule omezení.  
   
--   **Atributy**: Když použijte atribut na typ seznam pro doplňování se vyfiltruje tak, aby seznam obsahuje pouze ty typy, které sestup od obory názvů obsahují typy, jako třeba <xref:System.Attribute>.  
+- **Atributy**: Když použijte atribut na typ seznam pro doplňování se vyfiltruje tak, aby seznam obsahuje pouze ty typy, které sestup od obory názvů obsahují typy, jako třeba <xref:System.Attribute>.  
   
--   `as` a `is` operátory.  
+- `as` a `is` operátory.  
   
--   **Klauzule catch.**  
+- **Klauzule catch.**  
   
--   **Inicializátory objektů:** V seznamu dokončení se zobrazí pouze členy, které mohou být inicializovány.  
+- **Inicializátory objektů:** V seznamu dokončení se zobrazí pouze členy, které mohou být inicializovány.  
   
--   **New – klíčové slovo**: Po zadání `new` a pak stiskněte MEZERNÍK, zobrazí se seznam pro doplňování. Položka je automaticky vybrán v seznamu na základě kontextu ve vašem kódu. Položky jsou automaticky vybrán v seznamu pro doplňování deklarací a návratovými příkazy v metodách.  
+- **New – klíčové slovo**: Po zadání `new` a pak stiskněte MEZERNÍK, zobrazí se seznam pro doplňování. Položka je automaticky vybrán v seznamu na základě kontextu ve vašem kódu. Položky jsou automaticky vybrán v seznamu pro doplňování deklarací a návratovými příkazy v metodách.  
   
--   **jako a je operátory:** Při stisknutí mezerníku po zadání se automaticky zobrazí seznam filtrovaný dokončení `as` nebo `is` – klíčové slovo.  
+- **jako a je operátory:** Při stisknutí mezerníku po zadání se automaticky zobrazí seznam filtrovaný dokončení `as` nebo `is` – klíčové slovo.  
   
--   Události: Po zadání klíčového slova `event`, seznam pro doplňování obsahuje pouze typy delegátů.  
+- Události: Po zadání klíčového slova `event`, seznam pro doplňování obsahuje pouze typy delegátů.  
   
--   Parametr nápovědy automaticky řadí do první přetížení metody, která odpovídá parametrům, jak je zadáte. Pokud více přetížení metody jsou k dispozici, můžete nahoru a dolů šipkami přejít na další možné přetížení v seznamu.  
+- Parametr nápovědy automaticky řadí do první přetížení metody, která odpovídá parametrům, jak je zadáte. Pokud více přetížení metody jsou k dispozici, můžete nahoru a dolů šipkami přejít na další možné přetížení v seznamu.  
   
 ## <a name="most-recently-used-members"></a>Naposledy použité členy  
  Technologie IntelliSense si pamatuje členy, které jste zvolili nedávno v místní nabídce [seznam členů](../ide/using-intellisense.md) pole pro název dokončení automatický objekt. Při příštím použití seznam členů, naposledy použité členy se zobrazí v horní části. Historie naposledy použité členy se vymaže mezi každou relaci v integrovaném vývojovém prostředí.  

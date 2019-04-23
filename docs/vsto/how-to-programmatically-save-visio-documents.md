@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5542e1ddde595bd22b34d339fd422e003a0ef0e7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 08303b672fe45db4b6ccfcb5a64be5115e660186
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56618598"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069431"
 ---
 # <a name="how-to-programmatically-save-visio-documents"></a>Postupy: Ukládání dokumentů aplikace Visio prostřednictvím kódu programu
   Ukládání dokumentů aplikace Microsoft Office Visio několika způsoby:
@@ -35,7 +35,7 @@ ms.locfileid: "56618598"
 
 ### <a name="to-save-a-document"></a>Chcete-li uložit dokument
 
--   Volání `Microsoft.Office.Interop.Visio.Document.Save` metodu `Microsoft.Office.Tools.Visio.Document` třídy dokumentu, který dřív uložená.
+- Volání `Microsoft.Office.Interop.Visio.Document.Save` metodu `Microsoft.Office.Tools.Visio.Document` třídy dokumentu, který dřív uložená.
 
      Pokud chcete použít tento příklad kódu, spusťte jej z `ThisAddIn` třídu ve vašem projektu.
 
@@ -50,7 +50,7 @@ ms.locfileid: "56618598"
 
 ### <a name="to-save-the-active-visio-document-with-a-new-name"></a>Uložit aktivní dokument Visia s novým názvem.
 
--   Volání `Microsoft.Office.Interop.Visio.Document.SaveAs` metodu `Microsoft.Office.Tools.Visio.Document` , že chcete uložit pomocí plně kvalifikovanou cestu včetně názvu souboru. Pokud soubor s tímto názvem již existuje v této složce, je tiše přepsána.
+- Volání `Microsoft.Office.Interop.Visio.Document.SaveAs` metodu `Microsoft.Office.Tools.Visio.Document` , že chcete uložit pomocí plně kvalifikovanou cestu včetně názvu souboru. Pokud soubor s tímto názvem již existuje v této složce, je tiše přepsána.
 
      Pokud chcete použít tento příklad kódu, spusťte jej z `ThisAddIn` třídu ve vašem projektu.
 
@@ -62,7 +62,7 @@ ms.locfileid: "56618598"
 
 ### <a name="to-save-document-with-a-new-name-and-specified-arguments"></a>Uložit dokument s novým názvem a zadaných argumentů
 
--   Volání `Microsoft.Office.Interop.Visio.Document.SaveAsEx` metodu `Microsoft.Office.Tools.Visio.Document` , že chcete uložit pomocí plně kvalifikovanou cestu včetně názvu souboru. Pokud soubor s tímto názvem již existuje v této složce, je vyvolána výjimka.
+- Volání `Microsoft.Office.Interop.Visio.Document.SaveAsEx` metodu `Microsoft.Office.Tools.Visio.Document` , že chcete uložit pomocí plně kvalifikovanou cestu včetně názvu souboru. Pokud soubor s tímto názvem již existuje v této složce, je vyvolána výjimka.
 
      Následující příklad kódu uloží aktivní dokument s novým názvem, označí jako jen pro čtení dokumentu a zobrazí dokument v seznamu naposledy použitých dokumentů. Pokud chcete použít tento příklad kódu, spusťte jej z `ThisAddIn` třídu ve vašem projektu.
 
@@ -72,7 +72,7 @@ ms.locfileid: "56618598"
 ## <a name="compile-the-code"></a>Kompilace kódu
  Tento příklad kódu vyžaduje následující:
 
--   Uložit dokument s novým názvem, adresář s názvem `Test` se musí nacházet v *dokumenty* složky (pro Windows XP a starší) nebo *dokumenty* složku (pro Windows Vista).
+- Uložit dokument s novým názvem, adresář s názvem `Test` se musí nacházet v *dokumenty* složky (pro Windows XP a starší) nebo *dokumenty* složku (pro Windows Vista).
 
 ## <a name="see-also"></a>Viz také:
 - [Řešení pro aplikaci Visio](../vsto/visio-solutions.md)

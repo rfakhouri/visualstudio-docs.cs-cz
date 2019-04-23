@@ -7,12 +7,12 @@ ms.date: 05/06/2018
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 38FD2070-5151-482E-B0A9-993715128736
-ms.openlocfilehash: d728de52a159d058ecae48d48620547b6d8fcf4f
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: f1c619bbddd5116ad2d425909d80e30ca99e06c3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59652966"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074359"
 ---
 # <a name="tutorial-getting-started-with-azure-functions"></a>Kurz: Začínáme se službou Azure Functions
 
@@ -104,6 +104,7 @@ V tomto testovacím prostředí budete zjistěte, jak začít vytvářet funkce 
     using System.Web;
     using Microsoft.WindowsAzure.Storage.Table;
     ```
+
 1. Odeberte existující `Run` metoda a přidejte metodu pod třídu jako funkce Azure:
 
     ```csharp
@@ -119,6 +120,7 @@ V tomto testovacím prostředí budete zjistěte, jak začít vytvářet funkce 
         return x + y;
     }
     ```
+
 1. Projděme si definici metody jeden po druhém.
 
     První věc, kterou uvidíte je **FunctionName** atribut, který označí tuto metodu jako funkce Azure functions. Atribut označí veřejného názvu funkce. Název nemusí odpovídat názvu skutečné metoda.
@@ -180,6 +182,7 @@ V tomto testovacím prostředí budete zjistěte, jak začít vytvářet funkce 
 
     return x + y;
     ```
+
 1. Spusťte aplikaci.
 
 1. Vraťte se do okna prohlížeče a připojte řetězec `/?x=2&y=3` na adresu URL. Celá adresa URL by měla nyní být `http://localhost:7071/api/Add?x=2&y=3`. Přejděte na novou adresu URL.
@@ -190,7 +193,7 @@ V tomto testovacím prostředí budete zjistěte, jak začít vytvářet funkce 
 
 ## <a name="exercise-4-working-with-functionjson"></a>Cvičení 4: Práce s function.json
 
-1.  V předchozích cvičení jsme zmínili, že Visual Studio for Mac "generována" pracovní funkci pro funkci Azure, které jsou definovány v knihovně. Toto je vzhledem k tomu, že Azure Functions nepoužívá ve skutečnosti atributy metody za běhu, ale místo toho používá konvence systému kompilace souboru Pokud chcete nakonfigurovat umístění, kde a jak se Azure Functions jsou k dispozici. Z **oblasti řešení**klikněte pravým tlačítkem na uzel projektu a vyberte **zobrazit ve Finderu**.
+1. V předchozích cvičení jsme zmínili, že Visual Studio for Mac "generována" pracovní funkci pro funkci Azure, které jsou definovány v knihovně. Toto je vzhledem k tomu, že Azure Functions nepoužívá ve skutečnosti atributy metody za běhu, ale místo toho používá konvence systému kompilace souboru Pokud chcete nakonfigurovat umístění, kde a jak se Azure Functions jsou k dispozici. Z **oblasti řešení**klikněte pravým tlačítkem na uzel projektu a vyberte **zobrazit ve Finderu**.
 
      ![Zobrazit ve Finderu nabídky](media/azure-functions-lab-image23.png)
 
@@ -289,6 +292,7 @@ V tomto testovacím prostředí budete zjistěte, jak začít vytvářet funkce 
         return x + y;
     }
     ```
+
 1. Stisknutím klávesy **F5** sestavte a spusťte projekt.
 
 1. Dokončení sestavení a spuštění platformu, budou teď ukazují, že je k dispozici pro požadavky, které se mapují na nově přidaných metodu Druhá trasa:
@@ -315,6 +319,7 @@ Služby, které vytváříte často, může být mnohem složitější než co j
         public int Sum { get; set; }
     }
     ```
+
 1. V rámci **přidat** třídy, přidejte kód uvedený níže zavést jiné funkci. Upozorňujeme, že tato jedinečná zatím, nezahrnuje odpověď HTTP. Vrátí poslední řádek nový **řádků tabulky** vyplní klíčových informací, které budou usnadňují načíst později (**PartitionKey** a **RowKey**), stejně jako jeho parametry a součet. Kód v metodě také používá **TraceWriter** aby bylo snadnější zjistit, kdy je funkce spuštěná.
 
     ```csharp
@@ -340,6 +345,7 @@ Služby, které vytváříte často, může být mnohem složitější než co j
         };
     }
     ```
+
 1. Stisknutím klávesy **F5** sestavte a spusťte projekt.
 
 1. Na záložce prohlížeče, přejděte na **http://localhost:7071/api/Process/4/6**. To další zprávu zařadí do fronty, který by nakonec vést další řádek přidán do tabulky.
@@ -362,6 +368,7 @@ Služby, které vytváříte často, může být mnohem složitější než co j
     [Table("Results", "sums", "{x}_{y}")]
     TableRow tableRow,
     ```
+
 1. Na začátek metody přidejte následující kód. Pokud **řádků tabulky** není null, pak jsme již byly výsledky pro požadovanou operaci a může vrátit okamžitě. V opačném případě funkce stejně jako dřív dál. To nemusí být nejrobustnější způsob, jak vrátit data, ukazuje bodu, můžete orchestrovat mimořádně složité operace napříč několika úrovněmi škálovatelné s velmi malým množstvím kódu.
 
     ```csharp
@@ -371,6 +378,7 @@ Služby, které vytváříte často, může být mnohem složitější než co j
         return null;
     }
     ```
+
 1. Stisknutím klávesy **F5** sestavte a spusťte projekt.
 
 1. Na záložce prohlížeče, aktualizujte adresu URL na **http://localhost:7071/api/Process/4/6**. Vzhledem k tomu, že řádek tabulky pro tento záznam neexistuje, měla by vrátit okamžitě a bez chyb. Protože neexistuje žádný výstup protokolu HTTP, zobrazí se výstup, v terminálu.

@@ -12,12 +12,12 @@ ms.assetid: b6aec634-8533-476c-9ebd-36536a2288e2
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: a7650fc8a2ba297ccd3bc2a87be72a3f70062a18
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2b54c6ba8f3daefa53f00478c1d7e4573311cfb6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54782676"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061343"
 ---
 # <a name="project-property-user-interface"></a>Uživatelské rozhraní vlastností projektu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,11 +41,11 @@ Podtyp projektu pomocí položek v projektu **stránky vlastností** dialogové 
   
 - Podtyp projektu můžete určit odpovídající identifikátory CatID pro různé objekty Dal základního projektu za běhu načtením následujících <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2> hodnoty:  
   
-  -   <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2>  
+  - <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2>  
   
-  -   <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2>  
+  - <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2>  
   
-  -   <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2>  
+  - <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2>  
   
   Pokud chcete zjistit identifikátory CatID pro rozsahu projektu, načte podtyp projektu výše uvedené vlastnosti pro <xref:Microsoft.VisualStudio.VSConstants.VSITEMID> z `VSITEMID``typedef`. Podtyp projektu může být také vhodné určit, které **stránky vlastností** stránek dialogového okna se zobrazí pro projekt, závislé na konfiguraci a konfigurace, které jsou nezávislé. Některé podtypů projektů mohou muset odebrat integrované stránky a přidat konkrétní stránky podtyp projektu. Chcete-li povolit toto volání klienta spravovaného projektu <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> metoda pro následující vlastnosti:  
   

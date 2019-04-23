@@ -20,19 +20,19 @@ caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d77d06e720ebe9146f907d8868c46c94addd5d99
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2a527a103b72d0026a7732a53b45d03793769058
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54776609"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078704"
 ---
 # <a name="how-to-debug-the-onstart-method"></a>Postupy: Ladění metody OnStart
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Služba Windows můžete ladit spuštění služby a připojování ladicího programu k procesu služby. Další informace najdete v tématu [jak: Ladění aplikace služby Windows](http://msdn.microsoft.com/library/63ab0800-0f05-4f1e-88e6-94c73fd920a2). Ale chcete-li ladit <xref:System.ServiceProcess.ServiceBase.OnStart%2A?displayProperty=fullName> metody služby Windows, musíte spustit ladicí program z uvnitř metody.  
   
-1.  Přidejte volání do <xref:System.Diagnostics.Debugger.Launch%2A> na začátku `OnStart()`metody.  
+1. Přidejte volání do <xref:System.Diagnostics.Debugger.Launch%2A> na začátku `OnStart()`metody.  
   
     ```csharp  
     protected override void OnStart(string[] args)  
@@ -41,19 +41,19 @@ Služba Windows můžete ladit spuštění služby a připojování ladicího pr
      }  
     ```  
   
-2.  Spusťte službu (můžete použít `net start`, nebo jej spustit v **služby** okno).  
+2. Spusťte službu (můžete použít `net start`, nebo jej spustit v **služby** okno).  
   
      Zobrazí se dialogové okno vypadat asi takto:  
   
      ![OnStartDebug](../debugger/media/onstartdebug.png "OnStartDebug")  
   
-3.  Vyberte **Ano, ladit \<název služby >.**  
+3. Vyberte **Ano, ladit \<název služby >.**  
   
-4.  V okně ladicího programu za běhu vyberte verzi sady Visual Studio, kterou chcete použít pro ladění.  
+4. V okně ladicího programu za běhu vyberte verzi sady Visual Studio, kterou chcete použít pro ladění.  
   
      ![JustInTimeDebugger](../debugger/media/justintimedebugger.png "JustInTimeDebugger")  
   
-5.  Novou instanci třídy spustí aplikace Visual Studio a provedení je zastaveno `Debugger.Launch()` metody.  
+5. Novou instanci třídy spustí aplikace Visual Studio a provedení je zastaveno `Debugger.Launch()` metody.  
   
 ## <a name="see-also"></a>Viz také  
  [Zabezpečení ladicího programu](../debugger/debugger-security.md)   

@@ -12,23 +12,23 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 490a28e4f3fcd0b2bc2657a83a706090eafb16a8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b4c02c7dbce09383b5fc3cb1fd7f5eec6e9116b1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54796753"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079834"
 ---
 # <a name="browse-and-select-a-net-type-dialog-box"></a>Dialogové okno Procházet a vybrat typ .NET
 V **vlastnosti** oken, dialogových oknech nebo návrháře, jako je například Návrhář proměnných, když vyberete **vyhledat typy...** ze seznamu datových typů, je **Procházet a vybrat typ .NET** dialogové okno (uvedené ve zkrácené formě jako "typ prohlížeče"). V tomto dialogovém okně lze vybrat typ ze zobrazení stromové struktury projektů a sestavení.  
   
  Toto dialogové okno se použijí různými uživatelské scénáře, včetně následujících:  
   
--   Při nastavování typu proměnné nebo argumentu.  
+- Při nastavování typu proměnné nebo argumentu.  
   
--   Při výběru typu pro obecný aktivitu.  
+- Při výběru typu pro obecný aktivitu.  
   
--   Při přidávání v bloku catch <xref:System.Activities.Statements.TryCatch> aktivity.  
+- Při přidávání v bloku catch <xref:System.Activities.Statements.TryCatch> aktivity.  
   
 > [!NOTE]
 >  Typ prohlížeče můžete zobrazit typy jazyka Visual Basic Vícenásobná pole, ale není vícerozměrné pole typů. Zobrazit [Vícenásobná pole](http://go.microsoft.com/fwlink/?LinkId=195226) a [vícerozměrná pole](http://go.microsoft.com/fwlink/?LinkId=195227) podrobnosti.  
@@ -37,19 +37,19 @@ V **vlastnosti** oken, dialogových oknech nebo návrháře, jako je například
   
 #### <a name="to-select-a-value-or-reference-type-from-the-type-browser"></a>Vyberte typ hodnoty nebo odkazu z typu prohlížeče  
   
-1.  V **název typu** zadejte název typu, který chcete použít.  
+1. V **název typu** zadejte název typu, který chcete použít.  
   
-2.  Proveďte jednu z těchto akcí:  
+2. Proveďte jednu z těchto akcí:  
   
-    -   Jakmile se zobrazí název typu, který chcete použít ve stromu **název typu** pole, poklepejte na typ, vyberte ho.  
+    - Jakmile se zobrazí název typu, který chcete použít ve stromu **název typu** pole, poklepejte na typ, vyberte ho.  
   
-    -   Zadejte dost znaků **název typu** pole k jednoznačné identifikaci typ, který chcete použít, a stiskněte klávesu enter vyberte typ  
+    - Zadejte dost znaků **název typu** pole k jednoznačné identifikaci typ, který chcete použít, a stiskněte klávesu enter vyberte typ  
   
 #### <a name="to-select-a-generic-type-from-the-type-browser"></a>Chcete-li vybrat obecného typu z typu prohlížeče  
   
-1.  V **název typu** pole, zadejte název typu, který chcete použít.  
+1. V **název typu** pole, zadejte název typu, který chcete použít.  
   
-2.  Jakmile se zobrazí název typu, který chcete použít ve stromu **název typu** pole, klikněte na typ, který má vyberte ji a způsobit, že rozevírací seznamy se zobrazí.  
+2. Jakmile se zobrazí název typu, který chcete použít ve stromu **název typu** pole, klikněte na typ, který má vyberte ji a způsobit, že rozevírací seznamy se zobrazí.  
   
      Vyberte typ, který chcete použít zavřete obecné z rozevíracího seznamu polí a potom klikněte na tlačítko **OK**.  
   
@@ -63,9 +63,9 @@ V **vlastnosti** oken, dialogových oknech nebo návrháře, jako je například
   
  Příklad:  
   
-1.  Zadáním **operace** odpovídá <xref:System.OperationCanceledException> , ale ne <xref:System.InvalidOperationException>. Tak, aby odpovídaly <xref:System.InvalidOperationException>, začněte psát System.I nebo je neplatný.  
+1. Zadáním **operace** odpovídá <xref:System.OperationCanceledException> , ale ne <xref:System.InvalidOperationException>. Tak, aby odpovídaly <xref:System.InvalidOperationException>, začněte psát System.I nebo je neplatný.  
   
-2.  Zadáním **obecný** odpovídá <xref:System.GenericUriParser> , ale ne typy, které do <xref:System.Collections.Generic> oboru názvů. K vyhledání typů v <xref:System.Collections.Generic> obor názvů, typ plně kvalifikovaný název oboru názvů.  
+2. Zadáním **obecný** odpovídá <xref:System.GenericUriParser> , ale ne typy, které do <xref:System.Collections.Generic> oboru názvů. K vyhledání typů v <xref:System.Collections.Generic> obor názvů, typ plně kvalifikovaný název oboru názvů.  
   
 ## <a name="selecting-a-service-contract-using-the-type-browser-dialog"></a>Výběr pomocí dialogového okna prohlížeče typ kontraktu služby  
  Když vyberete typ kontraktu služby, typu prohlížeče zobrazuje pouze typy, které mají <xref:System.ServiceModel.ServiceContractAttribute> atribut.  

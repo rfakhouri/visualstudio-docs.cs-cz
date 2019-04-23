@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 27792aa1a8ca9edf1a85f4d607bbef926fb69027
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 6b4a727b078d55227b557621b673ea39b36d790f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56719019"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074593"
 ---
 # <a name="call-debugger-events"></a>Volání událostí ladicího programu
 Dojde k událostem v ladicími relacemi v určitém pořadí.
@@ -23,21 +23,21 @@ Dojde k událostem v ladicími relacemi v určitém pořadí.
 ## <a name="discussion"></a>Diskuse
  Pro pochopení způsobu volání mezi ladicího stroje (DE) a správce ladění relace (SDM), představuje následující pořadí volání události, ke kterým dochází v typické ladicí relace:
 
-1.  [Připojení a odpojení programu](../../extensibility/debugger/attaching-and-detaching-to-a-program.md)
+1. [Připojení a odpojení programu](../../extensibility/debugger/attaching-and-detaching-to-a-program.md)
 
-2.  [Spuštění ladicího programu](../../extensibility/debugger/launching-the-debugger.md)
+2. [Spuštění ladicího programu](../../extensibility/debugger/launching-the-debugger.md)
 
-3.  [Ukončení programu](../../extensibility/debugger/terminating-a-program.md)
+3. [Ukončení programu](../../extensibility/debugger/terminating-a-program.md)
 
-4.  [Vytvořením zarážky](../../extensibility/debugger/creating-a-breakpoint.md)
+4. [Vytvořením zarážky](../../extensibility/debugger/creating-a-breakpoint.md)
 
-5.  [Když vytvoří vazbu zarážky nebo stát nevázaných](../../extensibility/debugger/when-a-breakpoint-binds-or-becomes-unbound.md)
+5. [Když vytvoří vazbu zarážky nebo stát nevázaných](../../extensibility/debugger/when-a-breakpoint-binds-or-becomes-unbound.md)
 
-6.  [Chyby zarážky](../../extensibility/debugger/breakpoint-errors.md)
+6. [Chyby zarážky](../../extensibility/debugger/breakpoint-errors.md)
 
-7.  [Dosažení zarážky](../../extensibility/debugger/hitting-a-breakpoint.md)
+7. [Dosažení zarážky](../../extensibility/debugger/hitting-a-breakpoint.md)
 
-8.  [Odstranění zarážky](../../extensibility/debugger/deleting-a-breakpoint.md)
+8. [Odstranění zarážky](../../extensibility/debugger/deleting-a-breakpoint.md)
 
 9. [Přechod do režimu přerušení](../../extensibility/debugger/entering-break-mode.md)
 

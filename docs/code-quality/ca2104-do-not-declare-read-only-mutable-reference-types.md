@@ -1,5 +1,5 @@
 ---
-title: 'CA2104: Nedeklaruje proměnlivé odkazové typy pouze pro čtení'
+title: 'CA2104: Nedeklarujte jen pro čtení proměnlivé odkazové typy'
 ms.date: 11/01/2018
 ms.topic: reference
 f1_keywords:
@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: a033ed83d6d349ac3876a6f11a24570f3ff8f60c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 40fdeefc2d664b80bb6e17c109349cb5912b0516
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55945011"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077703"
 ---
 # <a name="ca2104-do-not-declare-read-only-mutable-reference-types"></a>CA2104: Nedeklaruje proměnlivé odkazové typy pouze pro čtení
 
@@ -35,9 +35,9 @@ ms.locfileid: "55945011"
 |Narušující změna|Nenarušující|
 
 > [!NOTE]
-> CA2104 pravidlo je zastaralá a v budoucí verzi systému Visual Studio se odebere.
+> CA2104 pravidlo je zastaralá a v budoucí verzi systému Visual Studio se odebere. Nebude možné implementovat jako [analyzátor](roslyn-analyzers-overview.md) kvůli složité analýzy, které je nutné určit skutečný neměnnosti typu.
 
-## <a name="cause"></a>příčina
+## <a name="cause"></a>Příčina
 
 Externě viditelný typ obsahuje externě viditelné pole měnitelného referenčního typu, které je určeno jen pro čtení.
 

@@ -20,12 +20,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 58058bf189cf65214ed7d3fe6083ef418107db4f
-ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
+ms.openlocfilehash: fa0472ae7ad7200ead372057f1dd778c077f764e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "58268535"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076026"
 ---
 # <a name="read-xml-data-into-a-dataset"></a>Načtení dat XML do datové sady
 
@@ -125,9 +125,9 @@ Uživatelské rozhraní pro tuto aplikaci se skládá z následujících akcí:
 
 ### <a name="to-add-controls-to-the-form"></a>Chcete-li přidat ovládací prvky do formuláře
 
-1.  Otevřít `Form1` v návrhovém zobrazení.
+1. Otevřít `Form1` v návrhovém zobrazení.
 
-2.  Z **nástrojů**, přetáhněte následující ovládací prvky na formuláři:
+2. Z **nástrojů**, přetáhněte následující ovládací prvky na formuláři:
 
     - Jeden <xref:System.Windows.Forms.DataGridView> ovládacího prvku
 
@@ -135,7 +135,7 @@ Uživatelské rozhraní pro tuto aplikaci se skládá z následujících akcí:
 
     - Dvě <xref:System.Windows.Forms.Button> ovládacích prvků
 
-3.  Nastavte následující vlastnosti:
+3. Nastavte následující vlastnosti:
 
     |Control|Vlastnost|Nastavení|
     |-------------|--------------|-------------|
@@ -150,44 +150,44 @@ Uživatelské rozhraní pro tuto aplikaci se skládá z následujících akcí:
 
 V tomto kroku vytvoříte novou datovou sadu s názvem `authors`. Další informace o datových sadách najdete v tématu [datovou sadu nástrojů v sadě Visual Studio](../data-tools/dataset-tools-in-visual-studio.md).
 
-1.  V **Průzkumníka řešení**, vyberte zdrojový soubor pro **Form1**a pak vyberte **Návrhář zobrazení** tlačítko **Průzkumníka řešení** panel nástrojů.
+1. V **Průzkumníka řešení**, vyberte zdrojový soubor pro **Form1**a pak vyberte **Návrhář zobrazení** tlačítko **Průzkumníka řešení** panel nástrojů.
 
-2.  Z [panel nástrojů, karta Data](../ide/reference/toolbox-data-tab.md), přetáhněte **datovou sadu** do **Form1**.
+2. Z [panel nástrojů, karta Data](../ide/reference/toolbox-data-tab.md), přetáhněte **datovou sadu** do **Form1**.
 
-3.  V **přidat datovou sadu** dialogu **netypovou datovou sadu**a pak vyberte **OK**.
+3. V **přidat datovou sadu** dialogu **netypovou datovou sadu**a pak vyberte **OK**.
 
      **DataSet1** se přidá do panelu komponent.
 
-4.  V **vlastnosti** okno, nastaveno **název** a <xref:System.Data.DataSet.DataSetName%2A> vlastnosti`AuthorsDataSet`.
+4. V **vlastnosti** okno, nastaveno **název** a <xref:System.Data.DataSet.DataSetName%2A> vlastnosti`AuthorsDataSet`.
 
 ## <a name="create-the-event-handler-to-read-the-xml-file-into-the-dataset"></a>Vytvořte obslužnou rutinu události ke čtení souboru XML do datové sady
 
 **XML pro čtení** tlačítko přečte soubor XML do datové sady. Potom nastaví vlastnosti pro <xref:System.Windows.Forms.DataGridView> ovládací prvek, který vázat na datovou sadu.
 
-1.  V **Průzkumníka řešení**vyberte **Form1**a pak vyberte **Návrhář zobrazení** tlačítko **Průzkumníka řešení** nástrojů.
+1. V **Průzkumníka řešení**vyberte **Form1**a pak vyberte **Návrhář zobrazení** tlačítko **Průzkumníka řešení** nástrojů.
 
-2.  Vyberte **XML pro čtení** tlačítko.
+2. Vyberte **XML pro čtení** tlačítko.
 
      **Editor kódu** se otevře na `ReadXmlButton_Click` obslužné rutiny události.
 
-3.  Zadejte následující kód do `ReadXmlButton_Click` obslužné rutiny události:
+3. Zadejte následující kód do `ReadXmlButton_Click` obslužné rutiny události:
 
      [!code-csharp[VbRaddataFillingAndExecuting#2](../data-tools/codesnippet/CSharp/read-xml-data-into-a-dataset_1.cs)]
      [!code-vb[VbRaddataFillingAndExecuting#2](../data-tools/codesnippet/VisualBasic/read-xml-data-into-a-dataset_1.vb)]
 
-4.  V `ReadXMLButton_Click` kód obslužné rutiny událostí, změnit `filepath =` položky na správnou cestu.
+4. V `ReadXMLButton_Click` kód obslužné rutiny událostí, změnit `filepath =` položky na správnou cestu.
 
 ## <a name="create-the-event-handler-to-display-the-schema-in-the-textbox"></a>Vytvořte obslužnou rutinu události pro zobrazení schématu do textového pole
 
 **Zobrazit schéma** tlačítko vytvoří <xref:System.IO.StringWriter> objekt, který je vyplněna schématu a zobrazí se v <xref:System.Windows.Forms.TextBox>ovládacího prvku.
 
-1.  V **Průzkumníka řešení**vyberte **Form1**a pak vyberte **Návrhář zobrazení** tlačítko.
+1. V **Průzkumníka řešení**vyberte **Form1**a pak vyberte **Návrhář zobrazení** tlačítko.
 
-2.  Vyberte **zobrazit schéma** tlačítko.
+2. Vyberte **zobrazit schéma** tlačítko.
 
      **Editor kódu** se otevře na `ShowSchemaButton_Click` obslužné rutiny události.
 
-3.  Vložte následující kód do `ShowSchemaButton_Click` obslužné rutiny události.
+3. Vložte následující kód do `ShowSchemaButton_Click` obslužné rutiny události.
 
      [!code-csharp[VbRaddataFillingAndExecuting#3](../data-tools/codesnippet/CSharp/read-xml-data-into-a-dataset_2.cs)]
      [!code-vb[VbRaddataFillingAndExecuting#3](../data-tools/codesnippet/VisualBasic/read-xml-data-into-a-dataset_2.vb)]
@@ -196,13 +196,13 @@ V tomto kroku vytvoříte novou datovou sadu s názvem `authors`. Další inform
 
 Teď můžete otestovat formulář, abyste měli jistotu, že se chová podle očekávání.
 
-1.  Vyberte **F5** ke spuštění aplikace.
+1. Vyberte **F5** ke spuštění aplikace.
 
-2.  Vyberte **XML pro čtení** tlačítko.
+2. Vyberte **XML pro čtení** tlačítko.
 
      Ovládací prvek DataGridView zobrazí obsah souboru XML.
 
-3.  Vyberte **zobrazit schéma** tlačítko.
+3. Vyberte **zobrazit schéma** tlačítko.
 
      Do textového pole zobrazuje schéma XML pro soubor XML.
 

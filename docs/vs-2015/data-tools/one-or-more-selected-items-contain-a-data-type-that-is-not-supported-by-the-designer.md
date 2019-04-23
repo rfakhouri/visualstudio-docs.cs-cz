@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b6e6c44895a022521899bdd0383ee71257b83fe3
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: ac5507722a62942dbca67518c2f6689bf29aacfc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59668818"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065705"
 ---
 # <a name="one-or-more-selected-items-contain-a-data-type-that-is-not-supported-by-the-designer"></a>Minimálně jedna vybraná položka obsahuje datový typ, který návrhář nepodporuje.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,9 +23,9 @@ Jeden nebo více položek přetáhnout z **Průzkumníka serveru**/**Průzkumní
   
 ### <a name="to-correct-this-error"></a>Oprava této chyby  
   
-1.  Vytvořit zobrazení, která je založena na požadovanou tabulku a nepodporovaný datový typ, který neobsahuje.  
+1. Vytvořit zobrazení, která je založena na požadovanou tabulku a nepodporovaný datový typ, který neobsahuje.  
   
-2.  Přetáhněte zobrazení z **Průzkumníka serveru**/**Průzkumník databáze** do návrháře.  
+2. Přetáhněte zobrazení z **Průzkumníka serveru**/**Průzkumník databáze** do návrháře.  
   
 ## <a name="see-also"></a>Viz také  
  [Nástroje LINQ to SQL v sadě Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   

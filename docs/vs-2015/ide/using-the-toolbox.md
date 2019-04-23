@@ -27,12 +27,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c8498397e45aad889d575c4ec337d107755b2dba
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 207beb085046748a4eaabdff025cd461c5ddba26
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54788262"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073356"
 ---
 # <a name="using-the-toolbox"></a>Používání sady nástrojů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,23 +48,23 @@ Panelu nástrojů můžete použít k přidání ovládacích prvků a dalších
   
  Můžete změnit pořadí položek na kartě panelu nástrojů nebo přidat vlastní karty a položek pomocí následujících příkazů v místní nabídce:  
   
--   **Přejmenovat položku** – přejmenuje na vybranou položku.  
+- **Přejmenovat položku** – přejmenuje na vybranou položku.  
   
--   **Zobrazit všechny** -zobrazí všechny možné ovládací prvky (nikoli pouze ty, které se vztahují k aktuální návrháře).  
+- **Zobrazit všechny** -zobrazí všechny možné ovládací prvky (nikoli pouze ty, které se vztahují k aktuální návrháře).  
   
--   **Zobrazení seznamu** – zobrazuje ovládací prvky v svislé seznamu. Pokud není zaškrtnuto, zobrazí ovládací prvky vodorovně.  
+- **Zobrazení seznamu** – zobrazuje ovládací prvky v svislé seznamu. Pokud není zaškrtnuto, zobrazí ovládací prvky vodorovně.  
   
--   **Výběr položek** -otevře **zvolit položky nástrojů** dialogové okno tak, aby můžete určit položky, které se zobrazují v **nástrojů**. Můžete zobrazit nebo skrýt položku zaškrtnutím nebo zrušením zaškrtnutí jejího políčka.  
+- **Výběr položek** -otevře **zvolit položky nástrojů** dialogové okno tak, aby můžete určit položky, které se zobrazují v **nástrojů**. Můžete zobrazit nebo skrýt položku zaškrtnutím nebo zrušením zaškrtnutí jejího políčka.  
   
--   **Řadit položky podle abecedy** -Seřadí položky podle názvu.  
+- **Řadit položky podle abecedy** -Seřadí položky podle názvu.  
   
--   **Resetovat nástrojů** – obnoví výchozí nastavení nástrojů a položky.  
+- **Resetovat nástrojů** – obnoví výchozí nastavení nástrojů a položky.  
   
--   **Přidat kartu** – přidá novou kartu panelu nástrojů.  
+- **Přidat kartu** – přidá novou kartu panelu nástrojů.  
   
--   **Přesunout nahoru** – Přesune vybrané položky nahoru.  
+- **Přesunout nahoru** – Přesune vybrané položky nahoru.  
   
--   **Přesunout dolů** – Přesune vybrané položky dolů.  
+- **Přesunout dolů** – Přesune vybrané položky dolů.  
   
 ## <a name="creating-and-distributing-custom-toolbox-controls"></a>Vytváření a distribuce ovládacích prvků vlastní panel nástrojů  
  Můžete vytvořit vlastní panel nástrojů ovládacího prvku v jazyce Visual Basic nebo Visual C# a může začít pomocí šablony projektu, který je založen na [Windows Presentation Foundation](../extensibility/creating-a-wpf-toolbox-control.md) nebo [Windows Forms](../misc/how-to-create-a-toolbox-control-that-uses-windows-forms.md). Potom můžete distribuovat ovládacího prvku do vašeho týmu nebo ji publikovat na webu s použitím [instalačního programu nástrojů ovládacích prvků](http://download.microsoft.com/download/8/3/6/836657BD-9CCB-4ED4-B9D2-FB769473B284/TCI_whitepaper.docx).

@@ -11,12 +11,12 @@ ms.assetid: ecd20da8-b04b-4141-a8f4-a2ef91dd597a
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: a54f319034bc22f4dfd0f61e2c4f50d6b7bf94d4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ec9bb626b44365dc27d46a235a1ee4895f3eb5c6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54770273"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074555"
 ---
 # <a name="vspackage-registration"></a>Registrace balíčku VSPackage
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -47,15 +47,15 @@ Rozšíření VSPackages musíte poradit [!INCLUDE[vsprvs](../../includes/vsprvs
   
  Při dobré teoreticky samoregistračního má několik chyby, které usnadňují nevhodný pro instalaci balíčku VSPackage:  
   
--   Správně podporuje instalaci, odinstalaci, vrácení instalace zpět a vrácení odinstalace je potřeba vytvořit čtyři vlastní akce pro každý spravovaný VSPackage, která se svým registruje voláním RegPkg.  
+- Správně podporuje instalaci, odinstalaci, vrácení instalace zpět a vrácení odinstalace je potřeba vytvořit čtyři vlastní akce pro každý spravovaný VSPackage, která se svým registruje voláním RegPkg.  
   
--   Váš přístup k podpoře vedle sebe může vyžadovat, že vytvoříte čtyři vlastní akce, které vyvolají RegSvr32 nebo RegPkg pro každou podporovanou verzi [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
+- Váš přístup k podpoře vedle sebe může vyžadovat, že vytvoříte čtyři vlastní akce, které vyvolají RegSvr32 nebo RegPkg pro každou podporovanou verzi [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
   
--   Instalace s místním registrované moduly nelze bezpečně vrátit zpět, protože neexistuje žádný způsob sdělit, pokud automaticky registrována klíče se používají jiné funkce nebo aplikace.  
+- Instalace s místním registrované moduly nelze bezpečně vrátit zpět, protože neexistuje žádný způsob sdělit, pokud automaticky registrována klíče se používají jiné funkce nebo aplikace.  
   
--   Automaticky registrována knihovny DLL někdy propojit pomocné knihovny DLL, které nejsou k dispozici nebo jsou nesprávné verze. Naproti tomu Instalační služby systému Windows můžete zaregistrovat knihovny DLL pomocí registru tabulky nejsou závislé na aktuální stav systému.  
+- Automaticky registrována knihovny DLL někdy propojit pomocné knihovny DLL, které nejsou k dispozici nebo jsou nesprávné verze. Naproti tomu Instalační služby systému Windows můžete zaregistrovat knihovny DLL pomocí registru tabulky nejsou závislé na aktuální stav systému.  
   
--   Samoregistračního kódu může být odepřen přístup k síťovým prostředkům, jako jsou knihovny typů, pokud komponenta je zadán jako spuštění ze zdroje i je uveden v tabulce SelfReg. To může způsobovat instalace součásti selhání během instalace pro správu.  
+- Samoregistračního kódu může být odepřen přístup k síťovým prostředkům, jako jsou knihovny typů, pokud komponenta je zadán jako spuštění ze zdroje i je uveden v tabulce SelfReg. To může způsobovat instalace součásti selhání během instalace pro správu.  
   
 ## <a name="see-also"></a>Viz také  
  [Windows Installer](http://msdn.microsoft.com/library/cc185688\(VS.85\).aspx)   

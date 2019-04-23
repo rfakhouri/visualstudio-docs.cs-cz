@@ -26,12 +26,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 000a036b90d1fa44f24a8340770790ab216c1d85
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 17ca737e0796230b9af207bf2f203700676ac630
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55945414"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078925"
 ---
 # <a name="build-office-solutions"></a>Vytváření řešení pro systém Office
   Obecně platí sestavování a ladění projektů Office je stejná jako sestavování a ladění ostatních typů projektů v sadě Visual Studio, jako jsou Windows Forms. Témata v této části popisují, které existují rozdíly. Obecné informace o tom, jak vytvářet aplikace, najdete v části [kompilace a sestavení v sadě Visual Studio](../ide/compiling-and-building-in-visual-studio.md).
@@ -45,15 +45,15 @@ ms.locfileid: "55945414"
 ### <a name="document-level-projects"></a>Projekty na úrovni dokumentu
  Při vytváření projektu úrovni dokumentu ve výstupu projektu zahrnuje následující položky:
 
--   Kopii dokumentu projektu.
+- Kopii dokumentu projektu.
 
--   Sestavení projektu se všemi odkazovanými sestaveními, které mají jejich **Kopírovat místně** vlastnost nastavena na hodnotu **true**.
+- Sestavení projektu se všemi odkazovanými sestaveními, které mají jejich **Kopírovat místně** vlastnost nastavena na hodnotu **true**.
 
--   Manifest aplikace, který má příponu názvu souboru *.manifest*. Další informace najdete v tématu [manifesty aplikace pro řešení Office](../vsto/application-manifests-for-office-solutions.md).
+- Manifest aplikace, který má příponu názvu souboru *.manifest*. Další informace najdete v tématu [manifesty aplikace pro řešení Office](../vsto/application-manifests-for-office-solutions.md).
 
--   Manifest nasazení, který má příponu názvu souboru *.vsto*. Další informace najdete v tématu [manifesty nasazení pro řešení Office](../vsto/deployment-manifests-for-office-solutions.md).
+- Manifest nasazení, který má příponu názvu souboru *.vsto*. Další informace najdete v tématu [manifesty nasazení pro řešení Office](../vsto/deployment-manifests-for-office-solutions.md).
 
--   Databáze programu (*PDB*) soubor.
+- Databáze programu (*PDB*) soubor.
 
 > [!NOTE]
 >  Pokud vytváříte úrovni dokumentu řešení do vzdáleného umístění, namísto místního počítače, přidejte plně kvalifikovanou cestu do seznamu důvěryhodných umístění v Centru zabezpečení aplikace. Další informace najdete v tématu části udělení vztah důvěryhodnosti s dokumenty v [řešení pro systém Office zabezpečení](../vsto/securing-office-solutions.md).

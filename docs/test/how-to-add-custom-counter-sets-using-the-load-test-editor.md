@@ -10,12 +10,12 @@ ms.assetid: 499aca80-1069-408d-ac68-326da6a50645
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8390808a8174d0abb2dec96beddb473a4fbc0e0b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 40ce0d5d4c1988e40a7b7530b61fcfbaa1f7131d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55932700"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078574"
 ---
 # <a name="how-to-add-custom-counter-sets-using-the-load-test-editor"></a>Postupy: Přidání vlastních sad čítačů pomocí editoru zátěžových testů
 
@@ -32,16 +32,16 @@ Můžete spravovat čítače v **editoru zátěžových testů**. Sady čítač�
 
 ## <a name="to-add-a-custom-counter-set-to-a-load-test"></a>Přidání vlastní sady čítačů k zátěžovému testu
 
-1.  Otevřete zátěžový test.
+1. Otevřete zátěžový test.
 
-2.  Rozbalte **sady čítačů** uzlu. Jsou zobrazeny všechny sady čítačů, které byly přidány do zátěžového testu.
+2. Rozbalte **sady čítačů** uzlu. Jsou zobrazeny všechny sady čítačů, které byly přidány do zátěžového testu.
 
-3.  Klikněte pravým tlačítkem myši **sady čítačů** uzel a vyberte možnost **přidat vlastní sadu čítačů**.
+3. Klikněte pravým tlačítkem myši **sady čítačů** uzel a vyberte možnost **přidat vlastní sadu čítačů**.
 
     > [!NOTE]
     > Sadě čítačů je přidělen výchozí název, jako například **vlastní1**. Název lze změnit pomocí **vlastnosti** okna. Stisknutím klávesy **F4** zobrazíte **vlastnosti** okna.
 
-4.  Chcete-li přidat čítače do vlastní počítadlo nastavit, klikněte pravým tlačítkem na novou sadu čítačů a klikněte na tlačítko **přidat čítače**. Další informace o přidávání čítačů naleznete v tématu [jak: Přidání čítačů do sad čítačů](../test/how-to-add-counters-to-counter-sets-using-the-load-test-editor.md).
+4. Chcete-li přidat čítače do vlastní počítadlo nastavit, klikněte pravým tlačítkem na novou sadu čítačů a klikněte na tlačítko **přidat čítače**. Další informace o přidávání čítačů naleznete v tématu [jak: Přidání čítačů do sad čítačů](../test/how-to-add-counters-to-counter-sets-using-the-load-test-editor.md).
 
     > [!NOTE]
     > Vlastní sadu čítačů lze také přidat kliknutím pravým tlačítkem myši na existující sadu čítačů, výběrem příkazu kopírování a následným vložením do uzlu sad čítačů. Další čítače, které jsou zkopírovány, ale nejsou vyžadovány, je možné odstranit. Můžete změnit název nové sady čítačů **vlastnosti** okna.

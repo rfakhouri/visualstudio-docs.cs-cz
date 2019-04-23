@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8060f17277a5e80a139ee8d6406fb40d0a84ec71
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 5c1a4f8db08ec80714fe2cd74e4d1300d68a56e5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55915876"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074528"
 ---
 # <a name="how-to-create-inheritance-between-types-in-class-designer"></a>Postupy: Vytvoření dědičnosti mezi typy v Návrháři tříd
 
@@ -26,21 +26,21 @@ Chcete-li vytvořit vztah dědičnosti mezi dvěma typy v diagramu třídy pomoc
 
 ## <a name="to-create-an-inheritance-between-types"></a>Vytvoření dědičnosti mezi typy
 
-1.  Z projektu v **Průzkumníka řešení**, otevřete soubor diagramu tříd (.cd).
+1. Z projektu v **Průzkumníka řešení**, otevřete soubor diagramu tříd (.cd).
 
      Pokud nemáte k dispozici diagramu tříd, vytvořte ho. Zobrazit [jak: Přidání diagramů tříd do projektů](how-to-add-class-diagrams-to-projects.md).
 
-2.  V **nástrojů**v části **návrhář tříd**, klikněte na tlačítko **dědičnosti**.
+2. V **nástrojů**v části **návrhář tříd**, klikněte na tlačítko **dědičnosti**.
 
-3.  V diagramu tříd kreslení čáru dědičnosti mezi typy, které potřebujete, od:
+3. V diagramu tříd kreslení čáru dědičnosti mezi typy, které potřebujete, od:
 
-    -   Odvozené třídy základní třídy
+    - Odvozené třídy základní třídy
 
-    -   Implementující třída s implementovaným rozhraním
+    - Implementující třída s implementovaným rozhraním
 
-    -   Rozšíření rozhraní pro rozšířené rozhraní
+    - Rozšíření rozhraní pro rozšířené rozhraní
 
-4.  Nebo pokud máte odvozeným typem od obecného typu, klikněte na čáru dědičnosti. V **vlastnosti** okno, nastavte **argumenty typu** vlastnost tak, aby odpovídaly typ, který chcete použít pro obecného typu.
+4. Nebo pokud máte odvozeným typem od obecného typu, klikněte na čáru dědičnosti. V **vlastnosti** okno, nastavte **argumenty typu** vlastnost tak, aby odpovídaly typ, který chcete použít pro obecného typu.
 
     > [!NOTE]
     > Nadřazené abstraktní třídy obsahuje alespoň jeden abstraktní člen, jsou všechny abstraktní členy implementovány jako neabstraktní dědičné třídy.

@@ -16,12 +16,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 95fa2a4146e151b689efbb82d933e05be698f62b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7b4d5e914566cc019a3882ed53923f84ecdddf85
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54798253"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069533"
 ---
 # <a name="how-to-retrieve-query-string-information-in-an-online-clickonce-application"></a>Postupy: Načtení informací řetězce dotazu do online aplikace ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,26 +49,26 @@ ms.locfileid: "54798253"
   
 ### <a name="to-obtain-query-string-information-from-a-clickonce-application"></a>K získání informací řetězce dotazu z aplikace ClickOnce  
   
-1.  Umístěte následující kód ve vašem projektu. Aby tento kód funkce, budete muset mít odkaz na System.Web a přidejte `using` nebo `Imports` příkazy pro System.Web System.Collections.Specialized a System.Deployment.Application.  
+1. Umístěte následující kód ve vašem projektu. Aby tento kód funkce, budete muset mít odkaz na System.Web a přidejte `using` nebo `Imports` příkazy pro System.Web System.Collections.Specialized a System.Deployment.Application.  
   
      [!code-csharp[ClickOnceQueryString#1](../snippets/csharp/VS_Snippets_Winforms/ClickOnceQueryString/CS/Form1.cs#1)]
      [!code-vb[ClickOnceQueryString#1](../snippets/visualbasic/VS_Snippets_Winforms/ClickOnceQueryString/VB/Form1.vb#1)]  
   
-2.  Volání funkce definované dříve k načtení <xref:System.Collections.DictionaryBase.Dictionary%2A> z parametrů řetězce dotazu, který je indexované podle názvu.  
+2. Volání funkce definované dříve k načtení <xref:System.Collections.DictionaryBase.Dictionary%2A> z parametrů řetězce dotazu, který je indexované podle názvu.  
   
 ### <a name="to-enable-query-string-passing-in-a-clickonce-application-with-mageuiexe"></a>Chcete-li povolit předávání do aplikace ClickOnce s MageUI.exe řetězce dotazů  
   
-1.  Otevřete okno příkazového řádku .NET a zadejte:  
+1. Otevřete okno příkazového řádku .NET a zadejte:  
   
     ```  
     MageUI  
     ```  
   
-2.  Z **souboru** nabídce vyberte možnost **otevřete**a otevřete manifest nasazení pro váš [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikace, což je soubor končící na `.application` rozšíření.  
+2. Z **souboru** nabídce vyberte možnost **otevřete**a otevřete manifest nasazení pro váš [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikace, což je soubor končící na `.application` rozšíření.  
   
-3.  Vyberte **možnosti nasazení** panelu v levém navigačním okně a vyberte **parametry povolit adresu URL, které se mají předat aplikaci** zaškrtávací políčko.  
+3. Vyberte **možnosti nasazení** panelu v levém navigačním okně a vyberte **parametry povolit adresu URL, které se mají předat aplikaci** zaškrtávací políčko.  
   
-4.  Z **souboru** nabídce vyberte možnost **Uložit**.  
+4. Z **souboru** nabídce vyberte možnost **Uložit**.  
   
 > [!NOTE]
 >  Alternativně můžete povolit předávání řetězce dotazů v [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]. Vyberte **parametry povolit adresu URL, které se mají předat aplikaci** zaškrtávací políčko, které lze najít otevřením **vlastnosti projektu**, vyberete **publikovat** kartu, kliknutím **Možnosti** tlačítko a pak vyberete **manifesty**.  

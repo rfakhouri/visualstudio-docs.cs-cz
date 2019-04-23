@@ -11,12 +11,12 @@ ms.assetid: 729b4c30-4bc3-4698-91b3-17a676897443
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 09a0b390299c354494ef29d177a4bd6c72f0548d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f570e2085bf9d0707bb5a8bfe33576466a6d7b41
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913064"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073238"
 ---
 # <a name="how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results"></a>Postupy: Přiblížení oblasti grafu ve výsledcích zátěžového testu
 
@@ -51,17 +51,17 @@ Před změnou zobrazení grafu přiblížení nebo oddálení nebo posouvání, 
 
 Chcete-li zobrazit grafy:
 
-1.  Spusťte zátěžový test, dokud se nedokončí.
+1. Spusťte zátěžový test, dokud se nedokončí.
 
-2.  Na konci zátěžového testu, zvolte **Ano** v dialogovém okně, které žádá o zobrazení výsledků z výsledků zátěžových testů úložiště.
+2. Na konci zátěžového testu, zvolte **Ano** v dialogovém okně, které žádá o zobrazení výsledků z výsledků zátěžových testů úložiště.
 
      \- nebo –
 
      Zobrazte podrobnosti o dříve spuštěném zátěžovém testu. Další informace najdete v tématu [jak: Přístup k výsledky zátěžového testu pro analýzu](../test/how-to-access-load-test-results-for-analysis.md).
 
-3.  Zvolte **grafy** Pokud vaše grafy nejsou zobrazeny.
+3. Zvolte **grafy** Pokud vaše grafy nejsou zobrazeny.
 
-4.  Pokud se nezobrazují přiblížení pruhy, zvolte **zobrazit ovládací prvky zvětšení**.
+4. Pokud se nezobrazují přiblížení pruhy, zvolte **zobrazit ovládací prvky zvětšení**.
 
      Dva panely přiblížení jsou k dispozici pro každý graf. Panel přiblížení, který řídí vertikální škálování se zobrazí nalevo od grafu. V grafu se zobrazí pruh zvětšení, které řídí horizontálního škálování.
 
@@ -73,21 +73,21 @@ Pokud máte více grafů, které se zobrazí, můžete zachovat jejich synchroni
 
 ### <a name="to-synchronize-zooming-and-scrolling"></a>Synchronizovat přibližování a posouvání
 
-1.  Na **Analyzéru zátěžového testu**, zvolte **synchronizovat vodorovné přiblížení ovládací prvky**.
+1. Na **Analyzéru zátěžového testu**, zvolte **synchronizovat vodorovné přiblížení ovládací prvky**.
 
      Když **synchronizovat vodorovné přiblížení ovládací prvky** vybere tlačítko, přibližování a posouvání časové měřítko grafu jednotlivé také přiblížení a zobrazení se posune časové měřítko další grafy.
 
-2.  Znovu, vyberte **synchronizovat vodorovné přiblížení ovládací prvky**.
+2. Znovu, vyberte **synchronizovat vodorovné přiblížení ovládací prvky**.
 
      Když **synchronizovat vodorovné přiblížení ovládací prvky** tlačítko není vybrané, přibližování a posouvání časové měřítko grafu jednotlivé ovlivní pouze tohoto grafu.
 
 ### <a name="to-zoom-and-scroll-to-a-region-of-the-graph"></a>Přiblížení a přejděte do oblasti grafu
 
-1.  Na panelu přiblížení pod graf přetažením úchytu levé straně na pravé straně.
+1. Na panelu přiblížení pod graf přetažením úchytu levé straně na pravé straně.
 
      To se přiblíží ve druhé části testovacího běhu. Podobně přetažením úchytu na pravé straně vlevo přiblíží v dřívější části testovacího běhu.
 
-2.  Přiblížit na určitou oblast snímků obou popisovače směrem do středu grafu.
+2. Přiblížit na určitou oblast snímků obou popisovače směrem do středu grafu.
 
      Čím blíž dva popisovače jsou k sobě navzájem, tím více přiblížit zobrazíte kratší, jemnější segmenty zátěžového testu.
 
@@ -107,9 +107,9 @@ Pokud máte více grafů, které se zobrazí, můžete zachovat jejich synchroni
 
 ### <a name="to-zoom-out"></a>Zmenšíte.
 
-1.  Klikněte pravým tlačítkem na graf přiblížené.
+1. Klikněte pravým tlačítkem na graf přiblížené.
 
-2.  V místní nabídce vyberte **zvětšení limitu vodorovné**.
+2. V místní nabídce vyberte **zvětšení limitu vodorovné**.
 
      To Oddálí zobrazíte spuštění celou dobu trvání zátěžového testu.
 

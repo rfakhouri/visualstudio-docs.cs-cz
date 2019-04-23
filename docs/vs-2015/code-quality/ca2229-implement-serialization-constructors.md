@@ -15,12 +15,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ee283e2e25958d497e00dad245bb69841196c65c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 41e296a979557a42a96c2f57ce49610d88b98a40
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54755829"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073161"
 ---
 # <a name="ca2229-implement-serialization-constructors"></a>CA2229: Implementujte serializační konstruktory
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,11 +35,11 @@ ms.locfileid: "54755829"
 ## <a name="cause"></a>Příčina
  Tento typ implementuje <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> rozhraní, delegáta nebo rozhraní a je splněna jedna z následujících podmínek:
 
--   Typ nemá konstruktor, který přijímá <xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName> objektu a <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName> objektu (podpis serializace konstruktoru).
+- Typ nemá konstruktor, který přijímá <xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName> objektu a <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName> objektu (podpis serializace konstruktoru).
 
--   Typ nezapečetěná a modifikátor přístupu pro jeho Serializační konstruktor není chráněné (řady).
+- Typ nezapečetěná a modifikátor přístupu pro jeho Serializační konstruktor není chráněné (řady).
 
--   Typ je zapečetěná a modifikátor přístupu pro jeho Serializační konstruktor není soukromý.
+- Typ je zapečetěná a modifikátor přístupu pro jeho Serializační konstruktor není soukromý.
 
 ## <a name="rule-description"></a>Popis pravidla
  Toto pravidlo platí pro typy, které podporují vlastní serializace. Typ podporuje vlastní serializace v případě, že implementuje <xref:System.Runtime.Serialization.ISerializable> rozhraní. Serializační konstruktor je potřeba deserializovat, nebo znovu vytvořit objekty, které byl serializován pomocí <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A?displayProperty=fullName> metody.

@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f68bd5803d418f674007fff34aa0fa016c1804a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 4e186bf0aa362f153ad3e6f57c39abc55c558270
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55918582"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073655"
 ---
 # <a name="how-to-search-for-topics"></a>Postupy: Vyhledávání témat
 
@@ -23,18 +23,18 @@ Otevřete **hledání** , vyberte **hledání** kartu **aplikace Help Viewer** o
 
 ## <a name="to-perform-a-full-text-search"></a>K provádění fulltextové vyhledávání
 
-1.  Do vyhledávacího pole zadejte slovo, které chcete najít.
+1. Do vyhledávacího pole zadejte slovo, které chcete najít.
 
-2.  Ve vyhledávacím dotazu zadejte které operátory logických nebo rozšířené vyhledávání má použít pro vyhledávání, pokud existuje. K vyhledání všech dostupnou nápovědu, nepoužívejte operátory.
+2. Ve vyhledávacím dotazu zadejte které operátory logických nebo rozšířené vyhledávání má použít pro vyhledávání, pokud existuje. K vyhledání všech dostupnou nápovědu, nepoužívejte operátory.
 
     > [!NOTE]
     > V **možnosti prohlížeče** dialogovém okně můžete zadat další předvolby, například maximální počet výsledků hledání pro zobrazení na čas a jestli se mají zahrnout obsah v angličtině, pokud vaše primární národní prostředí není anglické.
 
-3.  Zvolte **Enter** klíč.
+3. Zvolte **Enter** klíč.
 
      Hledání ve výchozím nastavení vrátí maximálně 200 záznamů a zobrazí je v oblasti hledání výsledků. Další informace o verzi pro každý výsledek se může zobrazit v závislosti na obsahu.
 
-4.  Chcete-li zobrazit téma, vyberte jeho záhlaví ze seznamu výsledků.
+4. Chcete-li zobrazit téma, vyberte jeho záhlaví ze seznamu výsledků.
 
 ## <a name="full-text-search-tips"></a>Tipy pro fulltextové vyhledávání
 
@@ -66,11 +66,11 @@ Výsledky hledání můžete omezit pomocí operátorů rozšířené vyhledáv�
 
 Vyhledávací algoritmus platí určitá kritéria umožňující řazení výsledků vyšší nebo nižší v seznamu výsledků hledání. Obecně platí:
 
-1.  Obsah, který zahrnuje hledaná slova v názvu je vyšší než obsah, který není řazením.
+1. Obsah, který zahrnuje hledaná slova v názvu je vyšší než obsah, který není řazením.
 
-2.  Obsah, který obsahuje hledaná slova v těsné blízkosti je vyšší než obsah, který není řazením.
+2. Obsah, který obsahuje hledaná slova v těsné blízkosti je vyšší než obsah, který není řazením.
 
-3.  Obsah, který obsahuje vyšší hustotu slova je vyšší než obsah, který má nižší hustotu slova řazením.
+3. Obsah, který obsahuje vyšší hustotu slova je vyšší než obsah, který má nižší hustotu slova řazením.
 
 ### <a name="stopwords"> Slova v hledání (nevýznamová slova) ignoruje. </a>
 

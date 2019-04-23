@@ -9,12 +9,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 555fe986267ce8cd88a5beea6f57cef2ba810156
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8735931e761f7d511615b5be7e93e0198a6b1a45
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54797534"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071717"
 ---
 # <a name="how-to-create-a-geometry-based-gradient-shader"></a>Postupy: Vytvoření shaderu přechodu na základě geometrie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,13 +23,13 @@ Tento dokument popisuje způsob použití návrháře shaderu a Directed Graph S
   
  Tento dokument vysvětluje tyto činnosti:  
   
--   Přidání uzlů do grafu shaderu  
+- Přidání uzlů do grafu shaderu  
   
--   Nastavení vlastnosti uzlu  
+- Nastavení vlastnosti uzlu  
   
--   Odpojuje se uzly  
+- Odpojuje se uzly  
   
--   Spojující uzly  
+- Spojující uzly  
   
 ## <a name="creating-a-geometry-based-gradient-shader"></a>Vytvoření přechodu shader geometrie podle  
  Začleňte do vašeho shaderu pozice pixelu můžete implementovat na základě geometry shader. V jazycích stínování pixel obsahuje více informace než jenom její barvu a umístění na obrazovce 2D. Pixel – označované jako *fragment* u některých systémů – je kolekce hodnot, které popisují, která odpovídá povrchu pixelu. Shader, který je popsaný v tomto dokumentu využívá výška každý pixel 3D objekt v prostoru světa ovlivní barvu závěrečný výstup fragmentu.  

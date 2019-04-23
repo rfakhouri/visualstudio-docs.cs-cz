@@ -8,20 +8,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dfbc41b24dd0e58dd24e0af99afe458d27f8ade6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b73d5c8acac211db09926acf0ba8009aa04ac0a8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55930854"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070894"
 ---
-# <a name="search-the-schema-set"></a>Hledání sadě schémat
+# <a name="search-the-schema-set"></a>Hledání v sadě schémat
 
 **Průzkumníka schémat XML** umožňuje hledat schéma nastavit následujícími způsoby:
 
--   Hledání klíčových slov.
+- Hledání klíčových slov.
 
--   Hledání podle schématu.
+- Hledání podle schématu.
 
 ## <a name="keyword-search"></a>Hledání klíčových slov
 
@@ -31,11 +31,11 @@ ms.locfileid: "55930854"
 
  **Průzkumníka schémat XML** vyhledá schéma, nastavte pro následující atributy:
 
--   Žádné `name` nebo `ref` atributy, které odpovídají zadané klíčové slovo. Elementy, atributy, typy a tak dále, můžete najít podle názvu.
+- Žádné `name` nebo `ref` atributy, které odpovídají zadané klíčové slovo. Elementy, atributy, typy a tak dále, můžete najít podle názvu.
 
--   `schemaLocation` Atributy #include.
+- `schemaLocation` Atributy #include.
 
--   `namespace` Atributy příkazy pro import.
+- `namespace` Atributy příkazy pro import.
 
 ## <a name="schema-specific-search"></a>Konkrétní schéma vyhledávání
 

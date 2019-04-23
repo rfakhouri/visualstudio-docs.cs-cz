@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 05164cf426c8156000377d980a40ae9f54d13c4b
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: 68482f9dcb88bd87c65f749c821f4afe92089a51
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57873512"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064060"
 ---
 # <a name="integrating-models-by-using-visual-studio-modelbus"></a>Integrace modelů pomocí Visual Studio Modelbus
 
@@ -25,9 +25,9 @@ ModelBus umožňuje vytvářet jedinečné odkazu na model nebo na konkrétní e
 
 Další informace a ukázky kódu najdete v tématu:
 
--   [Postupy: Přidání obslužné rutiny operace podporující přetahování](../modeling/how-to-add-a-drag-and-drop-handler.md)
+- [Postupy: Přidání obslužné rutiny operace podporující přetahování](../modeling/how-to-add-a-drag-and-drop-handler.md)
 
--   [Sada Modeling SDK pro Visual Studio](https://www.microsoft.com/download/details.aspx?id=48148)
+- [Sada Modeling SDK pro Visual Studio](https://www.microsoft.com/download/details.aspx?id=48148)
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
@@ -80,9 +80,9 @@ Chcete-li zajistit tento element jsou trvalé identifikátory:
 
    Případně pokud chcete použít k identifikaci prvků místo identifikátory GUID názvy elementů, můžete přepsat částmi generované adaptéry. Přepište následující metody ve třídě adaptér:
 
--   Přepsat `GetElementId` vrátit identifikátor, který chcete použít. Tato metoda se volá při vytváření odkazů.
+- Přepsat `GetElementId` vrátit identifikátor, který chcete použít. Tato metoda se volá při vytváření odkazů.
 
--   Přepsat `ResolveElementReference` najít správný element z odkazu sběrnice modelu.
+- Přepsat `ResolveElementReference` najít správný element z odkazu sběrnice modelu.
 
 ## <a name="editRef"></a> Přístup k DSL z jiného DSL
 
@@ -92,21 +92,21 @@ K povolení DSL použití odkazů na jiné DSL, měli byste nejprve si ho *pří
 
 ### <a name="to-enable-a-dsl-to-consume-references-to-an-exposed-dsl"></a>Chcete-li povolit DSL používat odkazy zveřejněné DSL
 
-1.  V definici DSL diagramu, klikněte pravým tlačítkem na hlavní část diagramu a potom klikněte na **povolit Modelbus**.
+1. V definici DSL diagramu, klikněte pravým tlačítkem na hlavní část diagramu a potom klikněte na **povolit Modelbus**.
 
-2.  V dialogovém okně vyberte **budu chtít povolit tento model k využívání reference na sběrnici modelu**.
+2. V dialogovém okně vyberte **budu chtít povolit tento model k využívání reference na sběrnici modelu**.
 
-3.  V projektu Dsl náročné DSL přidáte následující sestavení v odkazech projektu. Tato sestavení (soubory .dll) najdete v ModelBusAdapter\bin\\* adresáři vystavené DSL.
+3. V projektu Dsl náročné DSL přidáte následující sestavení v odkazech projektu. Tato sestavení (soubory .dll) najdete v ModelBusAdapter\bin\\* adresáři vystavené DSL.
 
-    -   Vystavené DSL sestavení, například **Fabrikam.FamilyTree.Dsl.dll**
+    - Vystavené DSL sestavení, například **Fabrikam.FamilyTree.Dsl.dll**
 
-    -   Vystavených modelu Service bus sestavení adaptéru, například **Fabrikam.FamilyTree.ModelBusAdapter.dll**
+    - Vystavených modelu Service bus sestavení adaptéru, například **Fabrikam.FamilyTree.ModelBusAdapter.dll**
 
-4.  Přidejte následující sestavení .NET do odkazů projektu náročné projektu DSL.
+4. Přidejte následující sestavení .NET do odkazů projektu náročné projektu DSL.
 
-    1.  **Microsoft.VisualStudio.Modeling.Sdk.Integration.11.0.dll**
+    1. **Microsoft.VisualStudio.Modeling.Sdk.Integration.11.0.dll**
 
-    2.  **Microsoft.VisualStudio.Modeling.Sdk.Integration.Shell.11.0.dll**
+    2. **Microsoft.VisualStudio.Modeling.Sdk.Integration.Shell.11.0.dll**
 
 ### <a name="to-store-a-model-bus-reference-in-a-domain-property"></a>K uložení odkazu sběrnice modelu ve vlastnosti domény
 
@@ -120,39 +120,39 @@ K povolení DSL použití odkazů na jiné DSL, měli byste nejprve si ho *pří
 
 ### <a name="to-allow-the-user-to-set-a-model-bus-reference-in-a-domain-property"></a>Aby uživatel mohl nastavit odkaz modelu Service Bus ve vlastnosti domény
 
-1.  Klikněte pravým tlačítkem na doménovou vlastnost a potom klikněte na tlačítko **upravit ModelBusReference specifické vlastnosti**. Otevře se dialogové okno. Toto je *Výběr modelu Service Bus*.
+1. Klikněte pravým tlačítkem na doménovou vlastnost a potom klikněte na tlačítko **upravit ModelBusReference specifické vlastnosti**. Otevře se dialogové okno. Toto je *Výběr modelu Service Bus*.
 
-2.  Vyberte příslušné **druh ModelBusReference**: model nebo na prvek v modelu.
+2. Vyberte příslušné **druh ModelBusReference**: model nebo na prvek v modelu.
 
-3.  V souboru řetězec filtru dialogové okno, zadejte řetězec `Family Tree files |*.ftree`. Nahraďte příponu vystavené DSL.
+3. V souboru řetězec filtru dialogové okno, zadejte řetězec `Family Tree files |*.ftree`. Nahraďte příponu vystavené DSL.
 
-4.  Pokud jste se rozhodli odkazovat na prvek v modelu, můžete přidat seznam typů, které uživatel může vybrat, například Company.FamilyTree.Person.
+4. Pokud jste se rozhodli odkazovat na prvek v modelu, můžete přidat seznam typů, které uživatel může vybrat, například Company.FamilyTree.Person.
 
-5.  Klikněte na tlačítko **OK**a potom klikněte na tlačítko **Transformovat všechny šablony** v **Průzkumníka řešení** nástrojů.
+5. Klikněte na tlačítko **OK**a potom klikněte na tlačítko **Transformovat všechny šablony** v **Průzkumníka řešení** nástrojů.
 
     > [!WARNING]
     > Pokud jste nevybrali platný model nebo entity, na tlačítko OK se neprojeví, i když může zobrazit povoleno.
 
-6.  Pokud zadáte seznam cílové typy, jako je například Company.FamilyTree.Person, pak je nutné přidat odkaz na sestavení do projektu DSL odkazování na knihovnu DLL cíle DSL, například Company.FamilyTree.Dsl.dll
+6. Pokud zadáte seznam cílové typy, jako je například Company.FamilyTree.Person, pak je nutné přidat odkaz na sestavení do projektu DSL odkazování na knihovnu DLL cíle DSL, například Company.FamilyTree.Dsl.dll
 
 ### <a name="to-test-a-model-bus-reference"></a>Otestovat odkaz modelu Service Bus
 
-1.  Vytvoření DSL vystavené a náročné.
+1. Vytvoření DSL vystavené a náročné.
 
-2.  Spusťte některý z DSL v experimentálním režimu stisknutím klávesy F5 nebo CTRL + F5.
+2. Spusťte některý z DSL v experimentálním režimu stisknutím klávesy F5 nebo CTRL + F5.
 
-3.  Ladění projektu v experimentální instanci sady Visual Studio přidejte soubory, které jsou instancemi každý DSL.
+3. Ladění projektu v experimentální instanci sady Visual Studio přidejte soubory, které jsou instancemi každý DSL.
 
     > [!NOTE]
     > Visual Studio ModelBus lze vyřešit pouze odkazy na modely, které jsou položky ve stejném řešení sady Visual Studio. Například nelze vytvořit odkaz na soubor modelu v jiné části systému souborů.
 
-4.  Vytvořte některé prvky a odkazy v instanci vystavené DSL a uložte ho.
+4. Vytvořte některé prvky a odkazy v instanci vystavené DSL a uložte ho.
 
-5.  Instance náročné DSL otevřete a vyberte prvku modelu, který má vlastnosti odkazu modelu Service bus.
+5. Instance náročné DSL otevřete a vyberte prvku modelu, který má vlastnosti odkazu modelu Service bus.
 
-6.  V okně Vlastnosti klikněte dvakrát na vlastnost referenčního modelu Service bus. Otevře se dialogové okno pro výběr.
+6. V okně Vlastnosti klikněte dvakrát na vlastnost referenčního modelu Service bus. Otevře se dialogové okno pro výběr.
 
-7.  Klikněte na tlačítko **Procházet** a vyberte instanci vystavené DSL.
+7. Klikněte na tlačítko **Procházet** a vyberte instanci vystavené DSL.
 
      Při výběru se vám také umožní zvolit položku v modelu, pokud zadaný typ elementu konkrétní referenční informace k modelu Service bus.
 
@@ -388,9 +388,9 @@ ModelBusReference elementReferenceRestored =
 
  Hlavní spouštěcí záznam deserializován ve dvou fázích:
 
--   `ModelBusReferencePropertySerializer` je standardní serializátoru, který se zabývá hlavičku MBR. Používá standardní DSL `SerializationContext` vlastnosti kontejneru objektů a dat, která je uložena v `ReferenceContext` pomocí klíče `ModelBusReferencePropertySerializer.ModelBusLoadContextKey`. Konkrétně se `SerializationContext` by měl obsahovat instanci `ModelBus`.
+- `ModelBusReferencePropertySerializer` je standardní serializátoru, který se zabývá hlavičku MBR. Používá standardní DSL `SerializationContext` vlastnosti kontejneru objektů a dat, která je uložena v `ReferenceContext` pomocí klíče `ModelBusReferencePropertySerializer.ModelBusLoadContextKey`. Konkrétně se `SerializationContext` by měl obsahovat instanci `ModelBus`.
 
--   Adaptér ModelBus se zabývá adaptér konkrétní součást hlavního spouštěcího záznamu. Další informace uložené v ReferenceContext hlavního spouštěcího záznamu může použít. Jednoduchý adaptér souborové udržuje kořenové cesty k souborům pomocí klíčů `FilePathLoadContextKey` a `FilePathSaveContextKey`.
+- Adaptér ModelBus se zabývá adaptér konkrétní součást hlavního spouštěcího záznamu. Další informace uložené v ReferenceContext hlavního spouštěcího záznamu může použít. Jednoduchý adaptér souborové udržuje kořenové cesty k souborům pomocí klíčů `FilePathLoadContextKey` a `FilePathSaveContextKey`.
 
      Odkaz na adaptér v souboru modelu je deserializovat pouze v případě, že se používá.
 

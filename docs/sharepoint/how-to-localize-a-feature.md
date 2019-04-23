@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0d811b27f810ac9becf23513a25937e1a265d305
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f6e796cc00478ee823c345fd02738f8677c36373
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56639086"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074633"
 ---
 # <a name="how-to-localize-a-feature"></a>Postupy: Lokalizace funkce
   Ve výchozím nastavení použijte funkci názvy a popisy pevně zakódované řetězcové hodnoty. Chcete-li lokalizovat funkci nadpis a popis, nahraďte řetězce výrazy, které odkazují na lokalizované prostředky.
@@ -27,21 +27,21 @@ ms.locfileid: "56639086"
 
 #### <a name="to-localize-a-feature"></a>Chcete-li lokalizovat funkci
 
-1.  V **Průzkumníka řešení**, otevřete místní nabídku **Feature1** uzel a klikněte na tlačítko **přidat prostředek funkce**.
+1. V **Průzkumníka řešení**, otevřete místní nabídku **Feature1** uzel a klikněte na tlačítko **přidat prostředek funkce**.
 
-2.  V **přidat prostředek** dialogového okna zvolte **neutrální jazyk** ze seznamu jako jazykovou verzi pro soubor prostředků výchozího jazyka funkce.
+2. V **přidat prostředek** dialogového okna zvolte **neutrální jazyk** ze seznamu jako jazykovou verzi pro soubor prostředků výchozího jazyka funkce.
 
-3.  Předchozí krok opakujte pro každý lokalizovaný jazyk, volba jazyků podle vašeho výběru pro funkci lokalizované soubory prostředků.
+3. Předchozí krok opakujte pro každý lokalizovaný jazyk, volba jazyků podle vašeho výběru pro funkci lokalizované soubory prostředků.
 
      Soubory prostředků samostatné funkce jsou vytvořeny: jeden pro výchozí jazyk a jeden pro každý lokalizovaný jazyk, který chcete podporovat.
 
-4.  Otevřete každý soubor prostředků v editoru prostředků a potom zadejte všechny identifikátory řetězce a jejich hodnot.
+4. Otevřete každý soubor prostředků v editoru prostředků a potom zadejte všechny identifikátory řetězce a jejich hodnot.
 
      Například v souboru prostředků výchozí funkci, zadejte ID řetězce **Title** s hodnotou **můj název funkce**, a druhý řetězec ID **popis** s hodnotou **Popis pro moje funkce**. Pro každý lokalizovaný soubor prostředků použijte stejná ID používaných pro výchozí funkce prostředek řetězce, ale zadat lokalizované řetězce pro hodnoty.
 
-5.  Po zadání všech hodnot prostředků, otevřete místní nabídku pro funkci (například *Feature1.feature*) a klikněte na tlačítko **Návrhář zobrazení** funkci Otevřít v Návrháři funkce.
+5. Po zadání všech hodnot prostředků, otevřete místní nabídku pro funkci (například *Feature1.feature*) a klikněte na tlačítko **Návrhář zobrazení** funkci Otevřít v Návrháři funkce.
 
-6.  Chcete-li lokalizovat **Title** a **popis** pole ve funkci, zadejte hodnoty do jejich polí použijte následující formát:
+6. Chcete-li lokalizovat **Title** a **popis** pole ve funkci, zadejte hodnoty do jejich polí použijte následující formát:
 
      `$Resources:` *Identifikátor řetězce*
 
@@ -49,9 +49,9 @@ ms.locfileid: "56639086"
 
      Řetězec ID musí odpovídat těm, které se používají v souborech prostředků.
 
-7.  Zvolte **F5** klíče pro sestavení a spuštění aplikace.
+7. Zvolte **F5** klíče pro sestavení a spuštění aplikace.
 
-8.  V Sharepointu, otevřete **Akce webu** nabídce zvolte **nastavení webu**a pak na **Akce webu** zvolte **spravovat funkce webu** odkaz.
+8. V Sharepointu, otevřete **Akce webu** nabídce zvolte **nastavení webu**a pak na **Akce webu** zvolte **spravovat funkce webu** odkaz.
 
 9. Ve službě SharePoint změňte jazyk zobrazení z výchozího.
 

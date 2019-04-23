@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f2ff75594cd3c1eb560f9cded5dad2a764198fb5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: c2498029b5570a1576f62bcf042a7b87f856f3de
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56598224"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076651"
 ---
 # <a name="how-to-programmatically-group-rows-in-a-worksheet"></a>Postupy: Seskupování řádků v listech prostřednictvím kódu programu
   Můžete seskupit nejméně jeden celý řádek. Chcete-li vytvořit skupinu na listu, použijte <xref:Microsoft.Office.Tools.Excel.NamedRange> ovládací prvek nebo rozsah objekt nativní aplikace Excel.
@@ -37,7 +37,7 @@ ms.locfileid: "56598224"
 
 ### <a name="to-create-a-group-of-namedrange-controls-on-a-worksheet"></a>Chcete-li vytvořit skupinu ovládacích prvků NamedRange do listu
 
-1.  Seskupit tři pojmenované oblasti voláním <xref:Microsoft.Office.Tools.Excel.NamedRange.Group%2A> metoda každého rozsahu. Tento kód musí být umístěn ve třídě list, není v `ThisWorkbook` třídy.
+1. Seskupit tři pojmenované oblasti voláním <xref:Microsoft.Office.Tools.Excel.NamedRange.Group%2A> metoda každého rozsahu. Tento kód musí být umístěn ve třídě list, není v `ThisWorkbook` třídy.
 
      [!code-csharp[Trin_VstcoreExcelAutomation#32](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#32)]
      [!code-vb[Trin_VstcoreExcelAutomation#32](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#32)]
@@ -50,7 +50,7 @@ ms.locfileid: "56598224"
 
 ### <a name="to-create-a-group-of-excel-ranges-in-a-worksheet"></a>Můžete vytvořit skupinu oblastí aplikace Excel na listu
 
-1.  Seskupit tři pojmenované oblasti voláním <xref:Microsoft.Office.Interop.Excel.Range.Group%2A> metoda každého rozsahu. V následujícím příkladu se předpokládá, že existují tři <xref:Microsoft.Office.Interop.Excel.Range> ovládací prvky s názvem `data2001`, `data2002`, a `dataAll` na stejném listu. Každý pojmenované oblasti odkazuje na celý řádek v listu.
+1. Seskupit tři pojmenované oblasti voláním <xref:Microsoft.Office.Interop.Excel.Range.Group%2A> metoda každého rozsahu. V následujícím příkladu se předpokládá, že existují tři <xref:Microsoft.Office.Interop.Excel.Range> ovládací prvky s názvem `data2001`, `data2002`, a `dataAll` na stejném listu. Každý pojmenované oblasti odkazuje na celý řádek v listu.
 
      [!code-csharp[Trin_VstcoreExcelAutomation#33](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#33)]
      [!code-vb[Trin_VstcoreExcelAutomation#33](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#33)]

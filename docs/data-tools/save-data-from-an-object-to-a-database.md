@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5e7762b50d486f50ed59f489ef45641908d61612
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c672103c0426f2d49eb47aa41014ee13ff0ecae9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55933103"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073432"
 ---
 # <a name="save-data-from-an-object-to-a-database"></a>Uložení dat z objektu do databáze
 
@@ -41,7 +41,7 @@ Ve výchozím nastavení `DBDirect` metody jsou vytvořeny v objektu typu TableA
 
 ## <a name="to-save-new-records-from-an-object-to-a-database"></a>Chcete-li uložit nové záznamy z objektu do databáze
 
--   Vytvořte záznamy předáním hodnoty tak, aby `TableAdapter.Insert` metody.
+- Vytvořte záznamy předáním hodnoty tak, aby `TableAdapter.Insert` metody.
 
      Následující příklad vytvoří nový záznam zákazníka v `Customers` předáním hodnoty v tabulce `currentCustomer` objektu `TableAdapter.Insert` metoda.
 
@@ -50,7 +50,7 @@ Ve výchozím nastavení `DBDirect` metody jsou vytvořeny v objektu typu TableA
 
 ## <a name="to-update-existing-records-from-an-object-to-a-database"></a>Chcete-li aktualizovat existující záznamy z objektu do databáze
 
--   Upravit záznamy voláním `TableAdapter.Update` metody předáním v nových hodnotách aktualizovat záznam a předáním v původní hodnoty, které mají vyhledejte záznam.
+- Upravit záznamy voláním `TableAdapter.Update` metody předáním v nových hodnotách aktualizovat záznam a předáním v původní hodnoty, které mají vyhledejte záznam.
 
     > [!NOTE]
     > Objekt je potřeba udržovat původní hodnoty. Chcete-li předat jim `Update` metody. Tento příklad používá vlastnosti `orig` předpona, která uložit původní hodnoty.
@@ -62,7 +62,7 @@ Ve výchozím nastavení `DBDirect` metody jsou vytvořeny v objektu typu TableA
 
 ## <a name="to-delete-existing-records-from-a-database"></a>Můžete z databáze odstranit existující záznamy
 
--   Odstranit záznamy voláním `TableAdapter.Delete` metoda a předáním původní hodnoty, které mají vyhledejte záznam.
+- Odstranit záznamy voláním `TableAdapter.Delete` metoda a předáním původní hodnoty, které mají vyhledejte záznam.
 
     > [!NOTE]
     > Objekt je potřeba udržovat původní hodnoty. Chcete-li předat jim `Delete` metody. Tento příklad používá vlastnosti `orig` předpona, která uložit původní hodnoty.

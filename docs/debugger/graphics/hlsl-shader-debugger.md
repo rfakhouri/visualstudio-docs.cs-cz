@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d97150a03e0862085f1eed512c538d4c86a6a59
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 794b9605664315e47e7ae2a778c76652c420a7f7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56702678"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066387"
 ---
 # <a name="hlsl-shader-debugger"></a>Ladicí program shaderu HLSL
 Ladicí program HLSL v analyzátoru grafiky sady Visual Studio vám pomůže porozumět fungování kódu shaderu HLSL aplikace skutečný podmínek.
@@ -50,9 +50,9 @@ Ladicí program HLSL v analyzátoru grafiky sady Visual Studio vám pomůže por
 
 #### <a name="to-start-the-hlsl-debugger-from-the-graphics-pipeline-stages-window"></a>Spuštění ladicího programu HLSL z okna Fáze zřetězení grafiky
 
-1.  V **fáze zřetězení grafiky** okně vyhledejte fázi spojenou se shaderem, který chcete ladit.
+1. V **fáze zřetězení grafiky** okně vyhledejte fázi spojenou se shaderem, který chcete ladit.
 
-2.  Pod názvem fáze zřetězení zvolte **spustit ladění**, která se zobrazí jako malá zelená šipka.
+2. Pod názvem fáze zřetězení zvolte **spustit ladění**, která se zobrazí jako malá zelená šipka.
 
     > [!NOTE]
     >  Tento vstupní bod do ladicího programu HLSL ladí pouze první vlákno shaderu pro odpovídající fázi, tedy první vrchol nebo pixel, který je zpracován. Historie pixelů můžete použít pro přístup k jiným vláknům těchto fází shaderu.

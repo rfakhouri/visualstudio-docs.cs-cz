@@ -15,35 +15,35 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cc400b4e9b504b512fc8ed3ec6c6dec3e676310e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: d275875b18941df63e0f6ee3c17f427334eab88a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56630662"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60058541"
 ---
 # <a name="how-to-set-custom-permissions-for-a-clickonce-application"></a>Postupy: Nastavení vlastních oprávnění pro aplikaci ClickOnce
 Můžete nasadit [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikaci, která používá výchozí oprávnění pro zóny Internetu a místního intranetu. Alternativně můžete vytvořit vlastní zónu pro konkrétní oprávnění, které aplikace potřebuje. Můžete to provést úpravou oprávnění zabezpečení na **zabezpečení** stránku **Návrháře projektu**.
 
 ### <a name="to-customize-a-permission"></a>Přizpůsobení oprávnění
 
-1.  S projekt vybraný v **Průzkumníka řešení**na **projektu** nabídky, klikněte na tlačítko **vlastnosti**.
+1. S projekt vybraný v **Průzkumníka řešení**na **projektu** nabídky, klikněte na tlačítko **vlastnosti**.
 
-2.  Klikněte na tlačítko **zabezpečení** kartu.
+2. Klikněte na tlačítko **zabezpečení** kartu.
 
-3.  Vyberte **povolit nastavení zabezpečení ClickOnce** zaškrtávací políčko.
+3. Vyberte **povolit nastavení zabezpečení ClickOnce** zaškrtávací políčko.
 
-4.  Vyberte **Toto je aplikace s částečnou důvěryhodností** přepínač.
+4. Vyberte **Toto je aplikace s částečnou důvěryhodností** přepínač.
 
      Ovládací prvky **oprávnění zabezpečení ClickOnce** oddílu jsou povolené.
 
-5.  Z **vaše aplikace bude provedena instalace ze zóny** rozevíracího seznamu, klikněte na tlačítko **(vlastní)**.
+5. Z **vaše aplikace bude provedena instalace ze zóny** rozevíracího seznamu, klikněte na tlačítko **(vlastní)**.
 
-6.  Klikněte na tlačítko **editovat XML soubor oprávnění**.
+6. Klikněte na tlačítko **editovat XML soubor oprávnění**.
 
      *App.manifest* soubor se otevře v editoru XML.
 
-7.  Před `</applicationRequestMinimum>` prvku, přidejte kód XML pro oprávnění, která vaše aplikace vyžaduje.
+7. Před `</applicationRequestMinimum>` prvku, přidejte kód XML pro oprávnění, která vaše aplikace vyžaduje.
 
     > [!NOTE]
     >  Můžete použít `ToXml` metoda oprávnění nastavená pro generování kódu XML pro manifest aplikace. Například pro generování kódu XML pro <xref:System.Security.Permissions.EnvironmentPermission> sadu oprávnění, volání <xref:System.Security.Permissions.EnvironmentPermission.ToXml%2A> metody.

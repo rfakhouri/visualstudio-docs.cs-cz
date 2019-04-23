@@ -1,5 +1,5 @@
 ---
-title: 'CA3004: Prohlédněte si kód pro zveřejnění informace o ohrožení zabezpečení'
+title: 'CA3004: Zkontrolujte ohrožení zabezpečení zpřístupněním informací v kódu'
 ms.date: 04/03/2019
 ms.topic: reference
 author: dotpaul
@@ -11,13 +11,13 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: 82f763d9a6b1ec27975aa80054456a6bbbaeaa2b
-ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/04/2019
-ms.locfileid: "59018802"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069025"
 ---
-# <a name="ca3004-review-code-for-information-disclosure-vulnerabilities"></a>CA3004: Prohlédněte si kód pro zveřejnění informace o ohrožení zabezpečení
+# <a name="ca3004-review-code-for-information-disclosure-vulnerabilities"></a>CA3004: Zkontrolujte ohrožení zabezpečení zpřístupněním informací v kódu
 
 |||
 |-|-|
@@ -26,7 +26,7 @@ ms.locfileid: "59018802"
 |Kategorie|Microsoft.Security|
 |Narušující změna|Pevné|
 
-## <a name="cause"></a>příčina
+## <a name="cause"></a>Příčina
 
 Zprávu výjimky, trasování zásobníku nebo řetězcové vyjádření dosáhne webové výstup.
 

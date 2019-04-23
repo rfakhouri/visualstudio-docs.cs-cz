@@ -14,12 +14,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1433d9ba1f207a0f86902d7afd56db6476b1fd56
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: dc5f69fee15d3dc67b31c54f0b397fbf039aa52a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54787089"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077339"
 ---
 # <a name="template-parameters"></a>Parametry šablony
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,19 +29,19 @@ Pomocí parametrů v šablonách lze při vytváření instance šablony nahradi
 ## <a name="declaring-and-enabling-template-parameters"></a>Deklarace a povolení parametry šablony  
  Parametry šablon jsou deklarovány ve formátu $*parametr*$. Příklad:  
   
--   $safeprojectname$  
+- $safeprojectname$  
   
--   $guid1$  
+- $guid1$  
   
--   $guid5$  
+- $guid5$  
   
 #### <a name="to-enable-parameter-substitution-in-templates"></a>Povolit nahrazení parametrů v šablonách  
   
-1.  V souboru .vstemplate šablony vyhledejte prvek `ProjectItem`, který odpovídá položce, pro kterou chcete povolit náhradu parametrů.  
+1. V souboru .vstemplate šablony vyhledejte prvek `ProjectItem`, který odpovídá položce, pro kterou chcete povolit náhradu parametrů.  
   
-2.  Nastavte `ReplaceParameters` atribut `ProjectItem` elementu `true`.  
+2. Nastavte `ReplaceParameters` atribut `ProjectItem` elementu `true`.  
   
-3.  V souboru kódu pro položku projektu zahrnují parametry, kde je to vhodné. Například následující parametr určuje, že název projektu bezpečně použít pro obor názvů v souboru:  
+3. V souboru kódu pro položku projektu zahrnují parametry, kde je to vhodné. Například následující parametr určuje, že název projektu bezpečně použít pro obor názvů v souboru:  
   
     ```  
     namespace $safeprojectname$  

@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: afa9be494aaaf79b7235cb9af2393406a6e49abf
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: b84d78426ccc3294d908e52ee87ce6d521da89cd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56634419"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070674"
 ---
 # <a name="msbuild-targets"></a>Cíle nástroje MSBuild
 Cíle seskupují úkoly v určitém pořadí a povolit procesu sestavení, abychom promítnout do menších jednotek. Například jeden cíl může odstranit všechny soubory ve výstupním adresáři připravit pro sestavení, zatímco jiné zkompiluje vstupy pro projekt a umístí je do prázdného adresáře. Další informace o úlohách najdete v části [úlohy](../msbuild/msbuild-tasks.md).
@@ -45,15 +45,15 @@ Cíle seskupují úkoly v určitém pořadí a povolit procesu sestavení, abych
 ## <a name="target-build-order"></a>Pořadí sestavení cílů
  Pokud vstup pro jeden cíl závisí na výstupu jiný cíl, musejí být seřazeny cíle. Existuje několik způsobů, jak určit pořadí, ve které cíle spuštění.
 
--   Počáteční cíle
+- Počáteční cíle
 
--   Výchozí cíle
+- Výchozí cíle
 
--   První cíl
+- První cíl
 
--   Závislosti cílů
+- Závislosti cílů
 
--   `BeforeTargets` a `AfterTargets` (MSBuild 4.0)
+- `BeforeTargets` a `AfterTargets` (MSBuild 4.0)
 
 Cíl se nikdy nespustí dvakrát během jednoho sestavení, i v případě, že na něm závisí následující cíl v sestavení. Jakmile se spustí cíl, jeho příspěvku k sestavení je dokončena.
 

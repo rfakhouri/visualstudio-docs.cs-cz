@@ -25,12 +25,12 @@ caps.latest.revision: 34
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2bd0fe7ca8b2a1f21ebcb6c3434348df9d2e66e5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 42d7c9798527498f2803d814515faefd62c3ace9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54803329"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077495"
 ---
 # <a name="how-to-use-the-disassembly-window"></a>Postupy: Použití okna zpětného překladu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,13 +64,13 @@ Tato funkce je dostupná jenom v případě, že je povoleno ladění na úrovni
   
 ### <a name="to-display-the-disassembly-window"></a>Chcete-li zobrazit okno zpětného překladu  
   
--   Na **ladění** nabídce zvolte **Windows**a klikněte na tlačítko **zpětný překlad**.  
+- Na **ladění** nabídce zvolte **Windows**a klikněte na tlačítko **zpětný překlad**.  
   
      Ladicí program musí být spuštěná nebo v režimu pozastavení.  
   
 ### <a name="to-turn-optional-information-on-or-off"></a>Chcete-li zapnout nebo vypnout volitelné informace  
   
--   Klikněte pravým tlačítkem myši **zpětný překlad** okna a nastavení nebo vymazat požadované možnosti v místní nabídce.  
+- Klikněte pravým tlačítkem myši **zpětný překlad** okna a nastavení nebo vymazat požadované možnosti v místní nabídce.  
   
      Žlutá šipka na levém okraji označuje umístění aktuální bod provádění. Pro nativní kód odpovídá čítač programu CPU. Toto umístění se zobrazí další instrukci, která se spustí ve svém programu.  
   

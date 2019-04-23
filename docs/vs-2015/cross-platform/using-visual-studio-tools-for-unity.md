@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: conceptdev
 ms.author: crdun
 manager: jillfra
-ms.openlocfilehash: 52c0ffe1c4261df6498cc03842d650360954eb44
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: eed341b5ae43f52e7df35d820012e760166e096f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59660616"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073424"
 ---
 # <a name="using-visual-studio-tools-for-unity"></a>Používání sady Visual Studio Tools for Unity
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ V této části se dozvíte, jak používat Visual Studio Tools pro Unity a inte
   
 ##### <a name="to-access-unity-documentation"></a>Pro přístup k dokumentaci k Unity  
   
--   V sadě Visual Studio, zvýrazněte nebo umístěte kurzor na slovo přes rozhraní API Unity chcete další informace o a poté stiskněte tlačítko **Ctrl + Alt + M, Ctrl + H**  
+- V sadě Visual Studio, zvýrazněte nebo umístěte kurzor na slovo přes rozhraní API Unity chcete další informace o a poté stiskněte tlačítko **Ctrl + Alt + M, Ctrl + H**  
   
 ### <a name="unity-monobehavior-scripting-wizard"></a>Průvodce skriptovací MonoBehavior Unity  
  V Unity Většina skriptů jsou implementované odvozování z třídy MonoBehavior a přepsáním některé z jeho metod. Průvodce MonoBehavior můžete použít k rychlému vytvoření prázdné definice MonoBehavior metod, které chcete přetížit. Pomocí tohoto průvodce, můžete zadat jednu nebo více metod, které chcete přetížit ze seznamu dostupných metod, zvolte, kde se vloží do kódu a rozhodnout, jestli se mají zahrnout poznámky o tom, jak jsou použity.  
@@ -59,13 +59,13 @@ V této části se dozvíte, jak používat Visual Studio Tools pro Unity a inte
   
 ###### <a name="to-create-an-empty-monobehavior-method-definition-by-using-the-quick-monobehavior-wizard"></a>Vytvoření definice prázdná metoda MonoBehavior pomocí Průvodce rychlé MonoBehavior  
   
-1.  V sadě Visual Studio, umístěte kurzor myši místo metody, která vkládá a potom stiskněte klávesu **kombinace kláves Ctrl + Shift + Q** spusťte rychlý MonoBehavior průvodce. Na rozdíl od jiných MonoBehavior průvodce musí umístění kurzoru záměrně při použití tohoto průvodce vzhledem k tomu, že se vždy vloží nové metody existuje.  
+1. V sadě Visual Studio, umístěte kurzor myši místo metody, která vkládá a potom stiskněte klávesu **kombinace kláves Ctrl + Shift + Q** spusťte rychlý MonoBehavior průvodce. Na rozdíl od jiných MonoBehavior průvodce musí umístění kurzoru záměrně při použití tohoto průvodce vzhledem k tomu, že se vždy vloží nové metody existuje.  
   
-2.  Ujistěte se, že verze rozhraní framework zobrazí v pravém horním rohu **vytvořit skript metodu** okno shoduje s verzí, které používáte. Pokud neodpovídá, změňte hodnotu z rozevíracího seznamu na verzi, kterou chcete použít.  
+2. Ujistěte se, že verze rozhraní framework zobrazí v pravém horním rohu **vytvořit skript metodu** okno shoduje s verzí, které používáte. Pokud neodpovídá, změňte hodnotu z rozevíracího seznamu na verzi, kterou chcete použít.  
   
-3.  Najdete metodu, kterou chcete přetížit. V okně vytvořit skript metoda začněte psát název metody, do textového pole. Zobrazí se seznam metod, jejichž názvy odpovídají, co jste zadali.  
+3. Najdete metodu, kterou chcete přetížit. V okně vytvořit skript metoda začněte psát název metody, do textového pole. Zobrazí se seznam metod, jejichž názvy odpovídají, co jste zadali.  
   
-4.  Zvolte metodu, kterou chcete přetížit. Pokud chcete, aby metoda se zobrazí v seznamu, vyberte ho pomocí myši nebo šipka klíčů, stiskněte klávesu **Enter**. Pokud je jedinou metodou v seznamu, můžete stačí stisknout **Enter**. Metoda je vložen do vašeho kódu.  
+4. Zvolte metodu, kterou chcete přetížit. Pokud chcete, aby metoda se zobrazí v seznamu, vyberte ho pomocí myši nebo šipka klíčů, stiskněte klávesu **Enter**. Pokud je jedinou metodou v seznamu, můžete stačí stisknout **Enter**. Metoda je vložen do vašeho kódu.  
   
 ### <a name="unity-project-explorer"></a>Průzkumník projektů Unity  
  Unity Project Exploreru můžete procházejte svým projektem Unity v sadě Visual Studio.  
@@ -103,16 +103,16 @@ V této části se dozvíte, jak používat Visual Studio Tools pro Unity a inte
 ## <a name="unity-debugging"></a>Ladění Unity  
  Visual Studio Tools for Unity umožňuje ladit editoru i herní skripty pro Unity projektu pomocí výkonný ladicí program sady Visual Studio.  
   
-###  <a name="connecting-visual-studio-to-unity"></a> Připojení sady Visual Studio Unity  
+### <a name="connecting-visual-studio-to-unity"></a> Připojení sady Visual Studio Unity  
  Visual Studio Tools for Unity komunikuje s Unity prostřednictvím připojení protokolu UDP. To znamená, zda se můžete připojit k instanci Unity spuštěné místně nebo kdekoli ve vaší síti stejným způsobem. Můžete připojit k libovolnému Unity instancí, uvidíte v síti s použitím **vybrat instanci Unity** dialogového okna.  
   
 ##### <a name="to-open-the-select-unity-instance-dialog"></a>Chcete-li otevřít dialogové okno Vybrat instanci Unity  
   
--   V sadě Visual Studio, zvolte v hlavní nabídce **ladění**, **připojit ladicí program Unity**.  
+- V sadě Visual Studio, zvolte v hlavní nabídce **ladění**, **připojit ladicí program Unity**.  
   
      ![Připojte ladicí program Unity. ](../cross-platform/media/vstu-debugging-attach-unity-debugger.png "vstu_debugging_attach_unity_debugger")  
   
--   *Nebo*, v sadě Visual Studio, na stavovém řádku, vyberte ikonu moduly v pravém dolním rohu sady Visual Studio.  
+- *Nebo*, v sadě Visual Studio, na stavovém řádku, vyberte ikonu moduly v pravém dolním rohu sady Visual Studio.  
   
      ![Tato ikona zobrazuje že VSTU je připojen k Unity. ](../cross-platform/media/vstu-connection-connected.png "vstu_connection_connected")  
   
@@ -138,7 +138,7 @@ V této části se dozvíte, jak používat Visual Studio Tools pro Unity a inte
 > [!IMPORTANT]
 >  Vzhledem k tomu, že Visual Studio Tools for Unity a instanci Unity komunikují přes soket sítě UDP, brány firewall může požádat o něm. Pokud k tomu dojde, budete muset autorizovat připojení tak, aby mohla komunikovat VSTU a Unity.  
   
-###  <a name="debugging-your-project-in-a-unity-player"></a> Ladění projektu v Unity Playeru  
+### <a name="debugging-your-project-in-a-unity-player"></a> Ladění projektu v Unity Playeru  
  Visual Studio Tools for Unity můžete připojit přímo k aplikaci spuštěné v samostatné player, když nejsou spuštěné Unity editoru nebo chcete-li ladit problémy, které je specifických pro platformu Unity.  
   
 ##### <a name="to-enable-script-debugging-in-a-unity-player"></a>K povolení ladění skriptu v Unity Playeru  

@@ -21,12 +21,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: aaaa9b5f30844e9d23b35ec9304a70edcd2b6139
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 303c19e8cb02b7c9db78d922f0591cb7ab5f3ed3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55933247"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089312"
 ---
 # <a name="hierarchical-update"></a>Hierarchická aktualizace
 
@@ -87,9 +87,9 @@ Uložit vygenerovaný kód také obsahuje jeden řádek kódu, který volá `Cus
 
 ### <a name="to-update-the-code-to-commit-changes-to-the-related-tables-before-saving"></a>Aktualizovat kód se zapsat změny do tabulky v relaci před uložením.
 
-1.  Dvakrát klikněte **Uložit** tlačítko <xref:System.Windows.Forms.BindingNavigator> otevřete **Form1** v editoru kódu.
+1. Dvakrát klikněte **Uložit** tlačítko <xref:System.Windows.Forms.BindingNavigator> otevřete **Form1** v editoru kódu.
 
-2.  Přidat řádek kódu pro volání `OrdersBindingSource.EndEdit` po řádek, který volá metodu `CustomersBindingSource.EndEdit` metody. Kód v **Uložit** klikněte na tlačítko události by měl vypadat takto:
+2. Přidat řádek kódu pro volání `OrdersBindingSource.EndEdit` po řádek, který volá metodu `CustomersBindingSource.EndEdit` metody. Kód v **Uložit** klikněte na tlačítko události by měl vypadat takto:
 
      [!code-vb[VSProDataOrcasHierarchicalUpdate#1](../data-tools/codesnippet/VisualBasic/hierarchical-update_1.vb)]
      [!code-csharp[VSProDataOrcasHierarchicalUpdate#1](../data-tools/codesnippet/CSharp/hierarchical-update_1.cs)]
@@ -101,11 +101,11 @@ Kromě potvrzení změn v související podřízené tabulce, před uložením d
 
 ### <a name="to-add-code-to-commit-parent-records-in-the-dataset-before-adding-new-child-records"></a>Přidat kód pro potvrzení nadřazené záznamy v sadě dat před přidáním nové podřízené záznamy
 
-1.  Vytvořte obslužnou rutinu události pro `OrdersBindingSource.AddingNew` událostí.
+1. Vytvořte obslužnou rutinu události pro `OrdersBindingSource.AddingNew` událostí.
 
-    -   Otevřít **Form1** v návrhovém zobrazení, vyberte **OrdersBindingSource** v panelu komponent vyberte **události** v **vlastnosti** okně a dvakrát klikněte **AddingNew** událostí.
+    - Otevřít **Form1** v návrhovém zobrazení, vyberte **OrdersBindingSource** v panelu komponent vyberte **události** v **vlastnosti** okně a dvakrát klikněte **AddingNew** událostí.
 
-2.  Přidat řádek kódu, který volá obslužná rutina události `CustomersBindingSource.EndEdit` metody. Kód v `OrdersBindingSource_AddingNew` obslužné rutiny události by měl vypadat takto:
+2. Přidat řádek kódu, který volá obslužná rutina události `CustomersBindingSource.EndEdit` metody. Kód v `OrdersBindingSource_AddingNew` obslužné rutiny události by měl vypadat takto:
 
      [!code-vb[VSProDataOrcasHierarchicalUpdate#2](../data-tools/codesnippet/VisualBasic/hierarchical-update_2.vb)]
      [!code-csharp[VSProDataOrcasHierarchicalUpdate#2](../data-tools/codesnippet/CSharp/hierarchical-update_2.cs)]

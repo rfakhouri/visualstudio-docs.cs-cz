@@ -1,5 +1,5 @@
 ---
-title: 'Průvodce: Vytváření a spouštění testů jednotek pro spravovaný kód | Dokumentace Microsoftu'
+title: 'Návod: Vytváření a spouštění testů jednotek pro spravovaný kód | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-test
@@ -14,14 +14,14 @@ ms.assetid: 2b018b18-b412-4e0e-b0ee-b580a2f3ba9c
 caps.latest.revision: 85
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9c74a4f4089fa2af5c7413f8c95076c6254ffa21
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ad9a30f5a54177a9df955cbe78d0ad0bc5d99ac3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54784657"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60058886"
 ---
-# <a name="walkthrough-creating-and-running-unit-tests-for-managed-code"></a>Průvodce: Vytváření a spouštění testů jednotek pro spravovaný kód
+# <a name="walkthrough-creating-and-running-unit-tests-for-managed-code"></a>Návod: Vytváření a spouštění testů jednotek pro spravovaný kód
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Tento návod vás postupně provede vytváření, spouštění a přizpůsobením série jednotkových testů pomocí rozhraní pro testování jednotek Microsoft pro spravovaný kód a Visual Studio Test Explorer. Spustit u projektu C#, která je ve vývoji, vytvoříte testy, které testují jeho kód, spusťte testy a podívejte se na výsledky. Můžete změnit kód projektu a znovu spusťte testy.  
@@ -54,9 +54,9 @@ Tento návod vás postupně provede vytváření, spouštění a přizpůsobení
   
 ## <a name="prerequisites"></a>Požadavky  
   
--   Projekt banky. Zobrazit [ukázkový projekt testování částí](../test/sample-project-for-creating-unit-tests.md).  
+- Projekt banky. Zobrazit [ukázkový projekt testování částí](../test/sample-project-for-creating-unit-tests.md).  
   
-##  <a name="BKMK_Prepare_the_walkthrough"></a> Příprava návodu  
+## <a name="BKMK_Prepare_the_walkthrough"></a> Příprava návodu  
   
 1. Otevřít Visual Studio.  
   
@@ -107,28 +107,28 @@ public void Debit(double amount)
   
 ```  
   
-##  <a name="BKMK_Create_a_unit_test_project"></a> Vytvořte projekt testu jednotek  
+## <a name="BKMK_Create_a_unit_test_project"></a> Vytvořte projekt testu jednotek  
  **Požadovaný**: Postupujte podle kroků v postupu [Příprava návodu](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Prepare_the_walkthrough).  
   
 #### <a name="to-create-a-unit-test-project"></a>Chcete-li vytvořit projekt testování částí  
   
-1.  Na **souboru** nabídce zvolte **přidat**a klikněte na tlačítko **nový projekt...** .  
+1. Na **souboru** nabídce zvolte **přidat**a klikněte na tlačítko **nový projekt...** .  
   
-2.  V dialogovém okně Nový projekt rozbalte **nainstalováno**, rozbalte **Visual C#** a klikněte na tlačítko **Test**.  
+2. V dialogovém okně Nový projekt rozbalte **nainstalováno**, rozbalte **Visual C#** a klikněte na tlačítko **Test**.  
   
-3.  V seznamu šablon vyberte **projekt testu jednotek**.  
+3. V seznamu šablon vyberte **projekt testu jednotek**.  
   
-4.  V **název** pole, zadejte hodnotu BankTest a potom zvolte **OK**.  
+4. V **název** pole, zadejte hodnotu BankTest a potom zvolte **OK**.  
   
      **BankTests** projekt je přidán do **Bank** řešení.  
   
-5.  V **BankTests** projektu, přidejte odkaz na **Bank** řešení.  
+5. V **BankTests** projektu, přidejte odkaz na **Bank** řešení.  
   
      V Průzkumníku řešení vyberte **odkazy** v **BankTests** projektu a klikněte na tlačítko **přidat odkaz...**  v místní nabídce.  
   
-6.  V dialogovém okně Správce odkazů rozbalte **řešení** a potom zaškrtněte políčko **Bank** položky.  
+6. V dialogovém okně Správce odkazů rozbalte **řešení** a potom zaškrtněte políčko **Bank** položky.  
   
-##  <a name="BKMK_Create_the_test_class"></a> Vytvoření testovací třídy  
+## <a name="BKMK_Create_the_test_class"></a> Vytvoření testovací třídy  
  Potřebujeme třídu testu pro ověření `BankAccount` třídy. Můžeme použít UnitTest1.cs vygenerovanou šablonu projektu, ale jsme měli dát souboru a třídě více popisné názvy. Můžeme to udělat v jednom kroku přejmenováním souboru v Průzkumníku řešení.  
   
  **Přejmenování souboru třídy**  
@@ -163,7 +163,7 @@ namespace BankTests
 using BankAccountNS;  
 ```  
   
-###  <a name="BKMK_Test_class_requirements"></a> Požadavky na testovací třídu  
+### <a name="BKMK_Test_class_requirements"></a> Požadavky na testovací třídu  
  Minimální požadavky na testovací třídu jsou následující:  
   
 - `[TestClass]` Atribut je požadován v testování části Microsoft framework pro spravovaný kód pro libovolnou třídu obsahující metody jednotkového testu, které chcete spustit v aplikaci Test Explorer.  
@@ -172,12 +172,12 @@ using BankAccountNS;
   
   Můžete mít další třídy v projektu testů jednotek, které nemají `[TestClass]` atribut který může mít jiné metody v testovacích třídách, které nemají `[TestMethod]` atribut. Ve vašich testovacích metodách můžete použít tyto třídy a metody.  
   
-##  <a name="BKMK_Create_the_first_test_method"></a> Vytvoření první testovací metody  
+## <a name="BKMK_Create_the_first_test_method"></a> Vytvoření první testovací metody  
  V tomto postupu, napíšeme v testování částí, metody, které ověří chování `Debit` metodu `BankAccount` třídy. Metoda je uvedena výše.  
   
  Analýzou testované metody ověříme, že existují aspoň tři typy chování, které je potřeba zkontrolovat:  
   
-1. Metoda vyvolá [ArgumentOutOfRangeException] (<!-- TODO: review code entity reference <xref:assetId:///ArgumentOutOfRangeException?qualifyHint=False&amp;autoUpgrade=True>  -->) Pokud je hodnota debetní větší než zůstatek na účtu.  
+1. Metoda vyvolá [ArgumentOutOfRangeException] ()<!-- TODO: review code entity reference <xref:assetId:///ArgumentOutOfRangeException?qualifyHint=False&amp;autoUpgrade=True>  -->) Pokud je hodnota debetní větší než zůstatek na účtu.  
   
 2. Vyvolá také `ArgumentOutOfRangeException` Pokud debetní velikost je menší než nula.  
   
@@ -213,28 +213,28 @@ using BankAccountNS;
   
    Metoda je velmi jednoduchá. Doporučujeme nastavit nový `BankAccount` objekt s počáteční zůstatek a potom zrušit platnou částku. Používáme rozhraní testování částí Microsoft pro spravovaný kód <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual%2A> metodu k ověření, že je konečný zůstatek, co očekávat.  
   
-###  <a name="BKMK_Test_method_requirements"></a> Požadavky na testovací metodu  
+### <a name="BKMK_Test_method_requirements"></a> Požadavky na testovací metodu  
  Testovací metoda musí splňovat následující požadavky:  
   
--   Metoda musí být doplněny pomocí `[TestMethod]` atribut.  
+- Metoda musí být doplněny pomocí `[TestMethod]` atribut.  
   
--   Metoda musí vracet `void`.  
+- Metoda musí vracet `void`.  
   
--   Metoda nemůže mít parametry.  
+- Metoda nemůže mít parametry.  
   
-##  <a name="BKMK_Build_and_run_the_test"></a> Sestavení a spuštění testu  
+## <a name="BKMK_Build_and_run_the_test"></a> Sestavení a spuštění testu  
   
 #### <a name="to-build-and-run-the-test"></a>Sestavte a spusťte test  
   
-1.  Na **sestavení** nabídce zvolte **sestavit řešení**.  
+1. Na **sestavení** nabídce zvolte **sestavit řešení**.  
   
      Pokud nejsou žádné chyby, zobrazí se okno UnitTestExplorer **Debit_WithValidAmount_UpdatesBalance** uvedené v **nespuštěné testy** skupiny. Pokud po úspěšném sestavení nezobrazí Průzkumník testů, zvolte **testovací** v nabídce klikněte na tlačítko **Windows**a klikněte na tlačítko **Průzkumník testů**.  
   
-2.  Zvolte **spustit všechny** pro spuštění testu. Je jako test běží na stavovém řádku v horní části okna animovaný. Na konci testovacího běhu stavový řádek zezelená, pokud všechny testovací metody proběhly úspěšně nebo red Pokud selže některý z testů.  
+2. Zvolte **spustit všechny** pro spuštění testu. Je jako test běží na stavovém řádku v horní části okna animovaný. Na konci testovacího běhu stavový řádek zezelená, pokud všechny testovací metody proběhly úspěšně nebo red Pokud selže některý z testů.  
   
-3.  V tomto případě test selhal. Testovací metoda je přesunuta do **neúspěšné testy**. Skupina. Vyberte metodu v Průzkumníku testů k zobrazení podrobností v dolní části okna.  
+3. V tomto případě test selhal. Testovací metoda je přesunuta do **neúspěšné testy**. Skupina. Vyberte metodu v Průzkumníku testů k zobrazení podrobností v dolní části okna.  
   
-##  <a name="BKMK_Fix_your_code_and_rerun_your_tests"></a> Oprava kódu a znovu spustit testy  
+## <a name="BKMK_Fix_your_code_and_rerun_your_tests"></a> Oprava kódu a znovu spustit testy  
  **Analýza výsledků testování**  
   
  Výsledek testu obsahuje zprávu s popisem chyby. Pro `AreEquals` metoda, zpráva zobrazí očekávaným ((<strong>očekávaná\<*XXX*></strong>parametr) a co vlastně přijatých ( **Skutečné\<*YYY* >** parametr). Očekávali jsme zůstatek zůstatku, ale místo toho se zvýšila množství stažení.  
@@ -259,7 +259,7 @@ m_balance -= amount;
   
  V Průzkumníku testů zvolte **spustit všechny** na opětovné spuštění testu. Červeného/zeleného stavového řádku se změní na zelenou a test je přesunut do **úspěšné testy** skupiny.  
   
-##  <a name="BKMK_Use_unit_tests_to_improve_your_code"></a> Použití jednotkových testů ke zlepšení kódu  
+## <a name="BKMK_Use_unit_tests_to_improve_your_code"></a> Použití jednotkových testů ke zlepšení kódu  
  Tato část popisuje, jak může iterativní proces analýzy, vývoj jednotkových testů a refaktoring pomoci vám robustnějšího a efektivnějšího produkčního kódu.  
   
  **Analýza problémů**  

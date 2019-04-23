@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f73ebb646c152509be9a7fbdd3287f2673ddadb
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1e5898a95f10875f0880e4b4799f17b78aa8e79b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55907513"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073329"
 ---
 # <a name="supported-visual-studio-editions-for-visualization--modeling-sdk"></a>Verze Visual Studia podporované pro Visualization & Modeling SDK
 
@@ -37,13 +37,13 @@ Pokud chcete definovat DSL, musíte mít nainstalovaný následující komponent
 
 [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] podporuje následující konfigurace pro jazyky specifické pro doménu, která bude sestavena nasazení:
 
--   Visual Studio Enterprise
+- Visual Studio Enterprise
 
--   Visual Studio Professional
+- Visual Studio Professional
 
--   Visual Studio Shell (integrovaný režim) redistributable package Distribuovatelný balíček
+- Visual Studio Shell (integrovaný režim) redistributable package Distribuovatelný balíček
 
--   Visual Studio Shell (izolovaný režim) redistributable package Distribuovatelný balíček
+- Visual Studio Shell (izolovaný režim) redistributable package Distribuovatelný balíček
 
 > [!NOTE]
 > Chcete-li DSL ke spuštění v prostředí produktu, je nutné nastavit **podporované edice VS** pole v manifestu rozšíření. Další informace najdete v tématu [nasazení řešení jazyka specifického pro doménu](../modeling/deploying-domain-specific-language-solutions.md).

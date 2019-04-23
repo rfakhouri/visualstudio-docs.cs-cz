@@ -23,12 +23,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c3c5a07a38982175466982b34ab0e4ddedcf31be
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 5576d1a7f66e11056240702f81e2f55edf65f5a0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55938897"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073901"
 ---
 # <a name="install-and-manage-local-content"></a>Instalace a Správa místního obsahu
 
@@ -42,18 +42,18 @@ Ve výchozím nastavení nainstaluje Help Viewer obsah s využitím online služ
 
 ### <a name="to-change-the-content-installation-source"></a>Změna zdroje instalace obsahu
 
-1.  Na **spravovat obsah** , vyberte **disku** přepínač.
+1. Na **spravovat obsah** , vyberte **disku** přepínač.
 
     > [!NOTE]
     > **Disku** možnost není k dispozici v případě, že správce má že nesmíte měnit zdroj instalace obsahu. Další informace najdete v tématu [Příručka pro správce aplikace Help Viewer](../help-viewer/administrator-guide.md).
 
-2.  Proveďte jeden z následujících kroků:
+2. Proveďte jeden z následujících kroků:
 
-    -   Zadejte cestu *.msha* soubor nebo adresa URL koncového bodu služby.
+    - Zadejte cestu *.msha* soubor nebo adresa URL koncového bodu služby.
 
-    -   Klikněte na tlačítko procházení (**...** ) tlačítko Přejít na *.msha* souboru.
+    - Klikněte na tlačítko procházení (**...** ) tlačítko Přejít na *.msha* souboru.
 
-    -   V seznamu vyberte položku, která byla naposledy použita.
+    - V seznamu vyberte položku, která byla naposledy použita.
 
 ## <a name="download-and-install-content-locally"></a>Stažení a instalace obsahu místně
 
@@ -67,13 +67,13 @@ Pokud stáhnete a nainstalujete obsah v místním počítači, můžete zobrazit
 
 ### <a name="to-download-and-install-content"></a>Ke stažení a nainstalování obsahu
 
-1.  Zvolte **spravovat obsah** kartu.
+1. Zvolte **spravovat obsah** kartu.
 
-2.  V seznamu obsahu zvolte **přidat** odkaz vedle knih, které chcete stáhnout a nainstalovat.
+2. V seznamu obsahu zvolte **přidat** odkaz vedle knih, které chcete stáhnout a nainstalovat.
 
      Kniha je přidána do **čekající změny** seznamu a odhadovaná velikost knih, které jste zadali, se zobrazí pod tímto seznamem. Vzhledem k tomu, že některé knihy témata sdílejí, může být celková stahovaná velikost při několika knih menší než výsledek sečtením velikosti jednotlivé knihy, které jste zadali.
 
-3.  Zvolte **aktualizace** tlačítko.
+3. Zvolte **aktualizace** tlačítko.
 
      Knihy, které jste zadali, jsou nainstalovány společně se všemi aktualizacemi pro knihy, které už máte ve vašem počítači. Časy instalace lišit, ale můžete zobrazit průběh ve stavovém řádku.
 
@@ -89,13 +89,13 @@ Odstraněním nežádoucího obsahu z počítače můžete ušetřit místo na d
 
 ### <a name="to-remove-content"></a>Chcete-li odebrat obsah
 
-1.  Zvolte **spravovat obsah** kartu.
+1. Zvolte **spravovat obsah** kartu.
 
-2.  V seznamu obsahu zvolte **odebrat** odkaz vedle knih, které chcete odebrat.
+2. V seznamu obsahu zvolte **odebrat** odkaz vedle knih, které chcete odebrat.
 
      Kniha je přidána do **čekající změny** seznamu.
 
-3.  Zvolte **aktualizace** tlačítko.
+3. Zvolte **aktualizace** tlačítko.
 
      Knihy, které jste zadali, se odeberou z vašeho počítače.
 
@@ -121,13 +121,13 @@ Přesunutím nainstalovaného obsahu z místního počítače do sdílené síť
 
 ### <a name="to-move-local-content"></a>Přesunutí místního obsahu
 
-1.  Na **spravovat obsah** , vyberte **přesunout** tlačítko **místní cesta Store**.
+1. Na **spravovat obsah** , vyberte **přesunout** tlačítko **místní cesta Store**.
 
      **Přesunout obsah** zobrazí se dialogové okno.
 
-2.  V **k** textového pole zadejte jiné umístění pro obsah a klikněte na tlačítko **OK** tlačítko.
+2. V **k** textového pole zadejte jiné umístění pro obsah a klikněte na tlačítko **OK** tlačítko.
 
-3.  Zvolte **Zavřít** tlačítko obsah byl přesunut.
+3. Zvolte **Zavřít** tlačítko obsah byl přesunut.
 
 ## <a name="see-also"></a>Viz také:
 

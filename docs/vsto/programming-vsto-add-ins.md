@@ -32,12 +32,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 304b61a7e0e11cf3b714fcc6f43855f5ded35713
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 6b9b809750e658b6a5e496e2d90b7b396157f87a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56641413"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079009"
 ---
 # <a name="program-vsto-add-ins"></a>Programování doplňků VSTO
   Při vytvoření doplňku VSTO můžete rozšířit aplikace Microsoft Office, můžete psát kód přímo `ThisAddIn` třídu ve vašem projektu. Tato třída slouží k provádění úloh, jako je například přístup k modelu objektu hostitelské aplikace Microsoft Office, přizpůsobení uživatelského rozhraní (UI) aplikace a zveřejnění objekty v doplňku VSTO pro ostatní řešení pro Office.
@@ -91,21 +91,21 @@ Excel.Workbook newWorkbook = Globals.ThisAddIn.Application.Workbooks.Add(System.
 
  Další informace o objektové modely z konkrétní aplikace Microsoft Office naleznete v následujících tématech:
 
--   [Přehled modelu objektů aplikace Excel](../vsto/excel-object-model-overview.md)
+- [Přehled modelu objektů aplikace Excel](../vsto/excel-object-model-overview.md)
 
--   [Přehled modelu objektů aplikace Word](../vsto/word-object-model-overview.md)
+- [Přehled modelu objektů aplikace Word](../vsto/word-object-model-overview.md)
 
--   [Přehled modelu objektů aplikace Outlook](../vsto/outlook-object-model-overview.md)
+- [Přehled modelu objektů aplikace Outlook](../vsto/outlook-object-model-overview.md)
 
--   [InfoPath – řešení](../vsto/infopath-solutions.md)
+- [InfoPath – řešení](../vsto/infopath-solutions.md)
 
--   [Řešení pro aplikaci PowerPoint](../vsto/powerpoint-solutions.md)
+- [Řešení pro aplikaci PowerPoint](../vsto/powerpoint-solutions.md)
 
--   [Projektová řešení](../vsto/project-solutions.md)
+- [Projektová řešení](../vsto/project-solutions.md)
 
--   [Přehled modelu objektů aplikace Visio](../vsto/visio-object-model-overview.md)
+- [Přehled modelu objektů aplikace Visio](../vsto/visio-object-model-overview.md)
 
-###  <a name="AccessingDocuments"></a> Přístup k dokumentu, při spuštění aplikace Office
+### <a name="AccessingDocuments"></a> Přístup k dokumentu, při spuštění aplikace Office
  Ne všechny [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] aplikace automaticky otevře při spuštění je a žádný z dokumentu [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] aplikace otevřete dokument, když je spustíte. Proto nepřidávejte kód `ThisAdd-In_Startup` obslužná rutina události, pokud kód vyžaduje dokument otevřen. Místo toho přidejte tento kód na událost, která aplikace Office se vyvolá, když uživatel vytvoří nebo otevře dokument. Tímto způsobem můžete zajistit, že je před váš kód provádí operace v něm otevřený dokument.
 
  Následující příklad kódu funguje s dokumentu ve Wordu, jenom když uživatel vytvoří dokument nebo otevře existující dokument.

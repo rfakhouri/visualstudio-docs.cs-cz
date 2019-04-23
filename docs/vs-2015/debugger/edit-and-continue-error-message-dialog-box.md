@@ -19,41 +19,41 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 73018dcdc34d3a824ff13da13fc12d03b8d13a7e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5437ef982309ef8595f08283f2685e93d346e764
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54788600"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076625"
 ---
 # <a name="edit-and-continue-error-message-dialog-box"></a>Dialogové okno chybových zpráv operace Upravit a pokračovat
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Toto dialogové okno se zobrazí při ladění v jazyce, který podporuje funkce upravit a pokračovat, ale **upravit a pokračovat** není k dispozici pro typ provedené změny kódu. Chybová zpráva uvnitř pole poskytuje podrobnější vysvětlení. Možné příčiny zobrazení dialogovému oknu patří:  
   
--   Pokusili jste se při ladění nespravovaného kódu bylo povoleno upravit spravovaný kód. Upravit a pokračovat nefunguje s ladění ve smíšeném režimu.  
+- Pokusili jste se při ladění nespravovaného kódu bylo povoleno upravit spravovaný kód. Upravit a pokračovat nefunguje s ladění ve smíšeném režimu.  
   
--   Pokusili jste se upravovat kód systému SQL Server.  
+- Pokusili jste se upravovat kód systému SQL Server.  
   
--   Pokusili jste se úpravy kódu během ladění zotavení po havárii. Watson s výpisem paměti.  
+- Pokusili jste se úpravy kódu během ladění zotavení po havárii. Watson s výpisem paměti.  
   
--   Jste se pokusili upravit kód následující po došlo k neošetřené výjimce a možnost "**vrátit zásobník volání v případě neošetřených výjimek**" nebyla vybrána.  
+- Jste se pokusili upravit kód následující po došlo k neošetřené výjimce a možnost "**vrátit zásobník volání v případě neošetřených výjimek**" nebyla vybrána.  
   
--   Pokusili jste se úpravy kódu během ladění aplikace vložený modul runtime.  
+- Pokusili jste se úpravy kódu během ladění aplikace vložený modul runtime.  
   
--   Pokusili jste se upravovat kód v programu v jazyce, který jste připojili nespouštět z **ladění** nabídky.  
+- Pokusili jste se upravovat kód v programu v jazyce, který jste připojili nespouštět z **ladění** nabídky.  
   
--   Pokusili jste se upravit optimalizovaný kód.  
+- Pokusili jste se upravit optimalizovaný kód.  
   
--   Pokusili jste se upravit spravovaný kód, pokud jsou cílem 64bitových aplikací. Pokud chcete k použití operace upravit a pokračovat, je nutné nastavit cíl na x86. (*Projektu* **vlastnosti**, **kompilaci** kartě **Advanced kompilátoru** nastavení.).  
+- Pokusili jste se upravit spravovaný kód, pokud jsou cílem 64bitových aplikací. Pokud chcete k použití operace upravit a pokračovat, je nutné nastavit cíl na x86. (*Projektu* **vlastnosti**, **kompilaci** kartě **Advanced kompilátoru** nastavení.).  
   
--   Pokusili jste se úpravy kódu v sestavení, která byla změněna během ladění a má znovu načten.  
+- Pokusili jste se úpravy kódu v sestavení, která byla změněna během ladění a má znovu načten.  
   
--   Pokusili jste se úpravy kódu v sestavení, který není načtený.  
+- Pokusili jste se úpravy kódu v sestavení, který není načtený.  
   
--   Spuštění ladění starší verzi aplikace (protože nová verze má chyby sestavení).  
+- Spuštění ladění starší verzi aplikace (protože nová verze má chyby sestavení).  
   
--   Pokusili jste se úpravy kódu byla spuštěna.  
+- Pokusili jste se úpravy kódu byla spuštěna.  
   
 ## <a name="uielement-list"></a>Seznam prvků uživatelského rozhraní  
  **OK**  

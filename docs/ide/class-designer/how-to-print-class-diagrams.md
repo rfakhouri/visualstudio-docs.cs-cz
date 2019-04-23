@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7cea673bdf0378c5ce2c5e3e1925139523b498a5
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: cdc03624b2260870ca43643caa995db5621dbec9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55925199"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071470"
 ---
 # <a name="how-to-print-class-diagrams"></a>Postupy: Tisk diagramů tříd
 
@@ -24,9 +24,9 @@ Můžete vytisknout diagram tříd pomocí funkce tisku sady Visual Studio.
 
 ## <a name="to-print-a-class-diagram"></a>Tisk diagramu tříd
 
-1.  Otevřete diagram tříd.
+1. Otevřete diagram tříd.
 
-2.  Klikněte na tlačítko **tisk** na **souboru** nabídky.
+2. Klikněte na tlačítko **tisk** na **souboru** nabídky.
 
 Vytiskne celého diagramu tříd. Může být potřeba upravit nastavení **vzhled stránky** dialogové okno pro tisk na odpovídající velikost.
 

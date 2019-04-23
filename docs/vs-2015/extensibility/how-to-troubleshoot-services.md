@@ -10,12 +10,12 @@ ms.assetid: 001551da-4847-4f59-a0b2-fcd327d7f5ca
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 47dad5f6b508356bde7570996127007b25b287b0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5311aa3ff390611942aa91cb1f2a53ca5a76258d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54766532"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074305"
 ---
 # <a name="how-to-troubleshoot-services"></a>Postupy: Řešení problémů se službami
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ if (log == null) return;
   
 ### <a name="to-troubleshoot-a-service"></a>Řešení potíží s služby  
   
-1.  Zkontrolujte, jestli služba správně zaregistrovaný do systémového registru. Další informace najdete v tématu [registrace služby](../misc/registering-services.md).  
+1. Zkontrolujte, jestli služba správně zaregistrovaný do systémového registru. Další informace najdete v tématu [registrace služby](../misc/registering-services.md).  
   
      Následující fragment souboru .reg ukazuje, jak může být služba SVsTextManager zaregistrovaná:  
   
@@ -52,17 +52,17 @@ if (log == null) return;
   
      V příkladu výše uvedené číslo verze je verze [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], například 12.0 nebo 14.0, klíč {F5E7E71D-1401-11d1-883B-0000F87579D2} je služba identifikátor (SID) služby, SVsTextManager a {výchozí hodnotu F5E7E720-1401-11D1-883B-0000F87579D2} je balíček GUID textový správce balíčku VSPackage, která poskytuje služby.  
   
-2.  Při volání GetService používejte typ služby a není typem rozhraní. Při žádosti o službu z [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], <xref:Microsoft.VisualStudio.Shell.Package> extrahuje identifikátor GUID z typu. Služba nebude nalezena při splnění následujících podmínek:  
+2. Při volání GetService používejte typ služby a není typem rozhraní. Při žádosti o službu z [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], <xref:Microsoft.VisualStudio.Shell.Package> extrahuje identifikátor GUID z typu. Služba nebude nalezena při splnění následujících podmínek:  
   
-    1.  Typ rozhraní je předán GetService místo typu služby.  
+    1. Typ rozhraní je předán GetService místo typu služby.  
   
-    2.  Žádný identifikátor GUID je explicitně přiřazeny rozhraní. Proto systém vytvoří výchozí identifikátor GUID objektu podle potřeby.  
+    2. Žádný identifikátor GUID je explicitně přiřazeny rozhraní. Proto systém vytvoří výchozí identifikátor GUID objektu podle potřeby.  
   
-3.  Ujistěte se, že byl umístěn VSPackage žádosti o službu. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] poté, co je vytvořen a před voláním lokality VSPackage <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>.  
+3. Ujistěte se, že byl umístěn VSPackage žádosti o službu. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] poté, co je vytvořen a před voláním lokality VSPackage <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>.  
   
      Máte kód v balíčku VSPackage konstruktor, který potřebuje služby, přesuňte ho do metody inicializace.  
   
-4.  Ujistěte se, že používáte správné služby poskytovatele.  
+4. Ujistěte se, že používáte správné služby poskytovatele.  
   
      Ne všichni poskytovatelé služby jsou stejné. Poskytovatel služeb, který [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] předá do panelu nástrojů se liší od ten pak předá VSPackage. Poskytovatel služeb okno nástroj ví o <xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection>, ale neví o <xref:Microsoft.VisualStudio.Shell.Interop.SVsRunningDocumentTable>. Můžete volat <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> zobrazíte poskytovatele služeb VSPackage z v rámci panelu nástrojů.  
   

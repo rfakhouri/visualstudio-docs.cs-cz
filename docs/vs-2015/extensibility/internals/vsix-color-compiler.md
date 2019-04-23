@@ -6,12 +6,12 @@ ms.assetid: 99395da7-ec34-491d-9baa-0590d23283ce
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c878eb55dbbdeacf0984b399949b2c3bbb7550b8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e1607ec4863c7e2b21cd69dd57ca4203e3cf4dbf
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54794550"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063670"
 ---
 # <a name="vsix-color-compiler"></a>Kompilátor barev VSIX
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -110,8 +110,8 @@ Je nástroj kompilátoru barva rozšíření Visual Studio konzolovou aplikaci, 
 |||  
 |-|-|  
 |**Atribut**|**Definice**|  
-|Typ|[Povinné] Typ barvy. Může být jeden z následujících akcí:<br /><br /> *CT_INVALID:* Barva je neplatný nebo není nastavená.<br /><br /> *CT_RAW:* Nezpracovaná hodnota ARGB.<br /><br /> *CT_COLORINDEX:* NEPOUŽÍVEJTE.<br /><br /> *CT_SYSCOLOR:* Barva systému Windows z SysColor.<br /><br /> *CT_VSCOLOR:* Visual Studio barvu z __VSSYSCOLOREX.<br /><br /> *CT_AUTOMATIC:* Automatická barva.<br /><br /> *CT_TRACK_FOREGROUND:* NEPOUŽÍVEJTE.<br /><br /> *CT_TRACK_BACKGROUND:* NEPOUŽÍVEJTE.|  
-|Zdroj|[Povinné] Hodnota barvy v šestnáctkovém|  
+|Type|[Povinné] Typ barvy. Může být jeden z následujících akcí:<br /><br /> *CT_INVALID:* Barva je neplatný nebo není nastavená.<br /><br /> *CT_RAW:* Nezpracovaná hodnota ARGB.<br /><br /> *CT_COLORINDEX:* NEPOUŽÍVEJTE.<br /><br /> *CT_SYSCOLOR:* Barva systému Windows z SysColor.<br /><br /> *CT_VSCOLOR:* Visual Studio barvu z __VSSYSCOLOREX.<br /><br /> *CT_AUTOMATIC:* Automatická barva.<br /><br /> *CT_TRACK_FOREGROUND:* NEPOUŽÍVEJTE.<br /><br /> *CT_TRACK_BACKGROUND:* NEPOUŽÍVEJTE.|  
+|Source|[Povinné] Hodnota barvy v šestnáctkovém|  
   
  Podporované výčtem __VSCOLORTYPE všechny hodnoty jsou podporovány na schéma v atributu typu. Doporučujeme však, že používáte pouze CT_RAW a CT_SYSCOLOR.  
   
@@ -149,15 +149,15 @@ Je nástroj kompilátoru barva rozšíření Visual Studio konzolovou aplikaci, 
   
  **Příklady**  
   
--   VsixColorCompiler D:\xml\colors.xml D:\pkgdef\colors.pkgdef  
+- VsixColorCompiler D:\xml\colors.xml D:\pkgdef\colors.pkgdef  
   
--   VsixColorCompiler D:\xml\colors.xml /noLogo  
+- VsixColorCompiler D:\xml\colors.xml /noLogo  
   
 ## <a name="notes"></a>Poznámky  
   
--   Tento nástroj vyžaduje instalaci nejnovější verze modulu runtime VC ++.  
+- Tento nástroj vyžaduje instalaci nejnovější verze modulu runtime VC ++.  
   
--   Podporují se jenom jeden soubory. Hromadné byl inicializován převod pomocí cesty ke složkám se nepodporuje.  
+- Podporují se jenom jeden soubory. Hromadné byl inicializován převod pomocí cesty ke složkám se nepodporuje.  
   
 ## <a name="sample-output"></a>Ukázkový výstup  
  Soubor .pkgdef generovaný nástrojem bude vypadat podobně jako následující klíče:  

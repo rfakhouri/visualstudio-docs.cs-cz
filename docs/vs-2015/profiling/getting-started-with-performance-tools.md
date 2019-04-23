@@ -12,12 +12,12 @@ caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f075f6a10e34080f6abf406a5f5828d2cf0ea444
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ee0cb763cdfcd049ac389b54a2348c0a733b907d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54770924"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078977"
 ---
 # <a name="getting-started-with-performance-tools"></a>Začínáme s nástroji výkonu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,9 +26,9 @@ Tato část obsahuje přehled konceptů a úlohy, které se použijí při shrom
   
  Tyto nástroje poskytují několik způsobů, jak shromažďovat a analyzovat data o výkonu. Ale v mnoha případech je nejlepší způsob, jak začít používat výchozí nastavení pro položky Průvodce výkonem, které umožňuje shromažďování statistik aplikace, který může odkazovat na problémy s výkonem v kódu.  
   
--   *Upozornění výkonu* upozorňování na běžné chyby v kódování. Upozornění se zobrazí v okně chyb sady Visual Studio. Z upozornění můžete přejít ke zdrojovému kódu a na možnosti podrobné témata nápovědy, která vám pomůže psát kód efektivnější.  
+- *Upozornění výkonu* upozorňování na běžné chyby v kódování. Upozornění se zobrazí v okně chyb sady Visual Studio. Z upozornění můžete přejít ke zdrojovému kódu a na možnosti podrobné témata nápovědy, která vám pomůže psát kód efektivnější.  
   
--   Sestavy o výkonu umožňují pohled na různé úrovně struktury vaší aplikace z zdrojové řádky kódu na procesy a data provádění programu z volající a volané funkce konkrétní funkce, která se strom volání celé aplikace.  
+- Sestavy o výkonu umožňují pohled na různé úrovně struktury vaší aplikace z zdrojové řádky kódu na procesy a data provádění programu z volající a volané funkce konkrétní funkce, která se strom volání celé aplikace.  
   
 ## <a name="common-tasks"></a>Obecné úlohy  
   

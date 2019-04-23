@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eed883703b333fc39039e9c063aeabbbc1709810
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 6ebd05843e5a80f95a6eb30809440e6e5a188d0e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924484"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076065"
 ---
 # <a name="best-practices-for-coded-ui-tests"></a>Osvědčené postupy pro programové testy uživatelského rozhraní
 
@@ -26,29 +26,29 @@ Toto téma popisuje několik doporučení pro vývoj programové testy uživatel
 
 Pomocí následujících pokynů k vytvoření flexibilní programový test uživatelského rozhraní.
 
--   Použití **Tvůrce programového testu UI** kdykoli je to možné.
+- Použití **Tvůrce programového testu UI** kdykoli je to možné.
 
--   Neprovádějte žádné změny *UIMap.designer.cs* přímo soubor. Pokud změníte soubor, změny do souboru budou přepsány.
+- Neprovádějte žádné změny *UIMap.designer.cs* přímo soubor. Pokud změníte soubor, změny do souboru budou přepsány.
 
--   Vytvoření testu jako posloupnost nahrané metody. Další informace o tom, jak zaznamenat metodu, najdete v části [vytváření programových testů UI](../test/use-ui-automation-to-test-your-code.md).
+- Vytvoření testu jako posloupnost nahrané metody. Další informace o tom, jak zaznamenat metodu, najdete v části [vytváření programových testů UI](../test/use-ui-automation-to-test-your-code.md).
 
--   Každý zaznamenanou metodu by měl fungovat na jednu stránku, formulář nebo dialogové okno. Vytvoření nové metody testu pro každou novou stránku, formulář nebo dialogové okno.
+- Každý zaznamenanou metodu by měl fungovat na jednu stránku, formulář nebo dialogové okno. Vytvoření nové metody testu pro každou novou stránku, formulář nebo dialogové okno.
 
--   Při vytváření metody, použijte název smysluplné metoda místo výchozí název. Smysluplný název pomáhá identifikovat cílem této metody.
+- Při vytváření metody, použijte název smysluplné metoda místo výchozí název. Smysluplný název pomáhá identifikovat cílem této metody.
 
--   Pokud je to možné, omezte každý zaznamenanou metodu na míň než 10 akce. Tento přístup modulární usnadňuje nahraďte metodu, pokud se změní uživatelské rozhraní.
+- Pokud je to možné, omezte každý zaznamenanou metodu na míň než 10 akce. Tento přístup modulární usnadňuje nahraďte metodu, pokud se změní uživatelské rozhraní.
 
--   Vytvoření s použitím každého kontrolního výrazu **Tvůrce programového testu UI**, která automaticky přidá metodu kontrolního výrazu k *UIMap.Designer.cs* souboru.
+- Vytvoření s použitím každého kontrolního výrazu **Tvůrce programového testu UI**, která automaticky přidá metodu kontrolního výrazu k *UIMap.Designer.cs* souboru.
 
--   Pokud se změní uživatelské rozhraní (UI), znovu nahrávat testovací metody nebo výrazu metody nebo znovu nahrávat ovlivněné oddíly stávající testovací metody.
+- Pokud se změní uživatelské rozhraní (UI), znovu nahrávat testovací metody nebo výrazu metody nebo znovu nahrávat ovlivněné oddíly stávající testovací metody.
 
--   Vytvořit samostatnou <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> soubor pro každý modul v testované aplikaci. Další informace najdete v tématu [testování rozsáhlé aplikace s více mapami uživatelského rozhraní](../test/testing-a-large-application-with-multiple-ui-maps.md).
+- Vytvořit samostatnou <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> soubor pro každý modul v testované aplikaci. Další informace najdete v tématu [testování rozsáhlé aplikace s více mapami uživatelského rozhraní](../test/testing-a-large-application-with-multiple-ui-maps.md).
 
--   V testované aplikaci, použijte smysluplné názvy při vytváření ovládacích prvků uživatelského rozhraní. Pomocí smysluplné názvy poskytuje větší přehlednost a použitelnost k automaticky vygenerovanému ovládacímu prvku názvy.
+- V testované aplikaci, použijte smysluplné názvy při vytváření ovládacích prvků uživatelského rozhraní. Pomocí smysluplné názvy poskytuje větší přehlednost a použitelnost k automaticky vygenerovanému ovládacímu prvku názvy.
 
--   Kontrolní výrazy při vytváření kódu pomocí rozhraní API, vytvořte metodu pro každého kontrolního výrazu v části <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> třídu, která je v *UIMap.cs* souboru. K provedení kontrolního výrazu, lze tuto metodu volejte z testovací metody.
+- Kontrolní výrazy při vytváření kódu pomocí rozhraní API, vytvořte metodu pro každého kontrolního výrazu v části <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> třídu, která je v *UIMap.cs* souboru. K provedení kontrolního výrazu, lze tuto metodu volejte z testovací metody.
 
--   Pokud píšete kód přímo s rozhraním API, použijte vlastnosti a metody do třídy vygenerované v *UIMap.Designer.cs* souborů ve vašem kódu tak, jak můžete. Tyto třídy provede svou práci, jednodušší a spolehlivější a vám pomohou být produktivnější.
+- Pokud píšete kód přímo s rozhraním API, použijte vlastnosti a metody do třídy vygenerované v *UIMap.Designer.cs* souborů ve vašem kódu tak, jak můžete. Tyto třídy provede svou práci, jednodušší a spolehlivější a vám pomohou být produktivnější.
 
 Programové testy uživatelského rozhraní automaticky přizpůsobit mnoho změn v uživatelském rozhraní. Pokud například prvek uživatelského rozhraní došlo ke změně umístění a barvy, ve většině případů programový test UI najít správný element.
 
@@ -58,15 +58,15 @@ Během testovacího běhu jsou umístěny ovládacích prvků uživatelského ro
 
 Uživatelské rozhraní se často měnit během vývoje. Tady jsou některé způsoby, aby se snížil dopad těchto změn:
 
--   Najít zaznamenanou metodu, která odkazuje na tento ovládací prvek a použít **Tvůrce programového testu UI** na opakovat záznam akce pro tuto metodu. Přepsat existující akce můžete použít stejný název pro metodu.
+- Najít zaznamenanou metodu, která odkazuje na tento ovládací prvek a použít **Tvůrce programového testu UI** na opakovat záznam akce pro tuto metodu. Přepsat existující akce můžete použít stejný název pro metodu.
 
--   Pokud má ovládací prvek, který již není platný kontrolní výraz:
+- Pokud má ovládací prvek, který již není platný kontrolní výraz:
 
-    -   Odstraníte metodu, která obsahuje kontrolní výraz.
+    - Odstraníte metodu, která obsahuje kontrolní výraz.
 
-    -   Odeberte volání této metody z testovací metody.
+    - Odeberte volání této metody z testovací metody.
 
-    -   Přidat kontrolní výraz nové přetažením nitkového kříže tlačítko na ovládací prvek uživatelského rozhraní, otevřete v mapování uživatelského rozhraní a přidat nový kontrolní výraz.
+    - Přidat kontrolní výraz nové přetažením nitkového kříže tlačítko na ovládací prvek uživatelského rozhraní, otevřete v mapování uživatelského rozhraní a přidat nový kontrolní výraz.
 
 Další informace o tom, jak zaznamenat programové testy UI, naleznete v tématu [automatizace uživatelského rozhraní k testování kódu](../test/use-ui-automation-to-test-your-code.md).
 

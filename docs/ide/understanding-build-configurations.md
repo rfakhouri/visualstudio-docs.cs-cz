@@ -26,12 +26,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3aa277cca1d4c655f2a2894ff9c8ffce83474016
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 030b581f44535c62b950b5b54c15aa36232711e2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58789858"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071392"
 ---
 # <a name="understand-build-configurations"></a>Principy konfigurací sestavení
 
@@ -72,20 +72,20 @@ Konfigurace aktivního řešení také poskytuje kontext do rozhraní IDE. Např
 ## <a name="how-visual-studio-assigns-project-configurations"></a>Přiřazování konfigurace projektu v sadě Visual Studio
  Při definování nové konfigurace řešení a nekopírujte nastavení z existující aplikace Visual Studio používá následující kritéria přiřadit výchozí konfigurace projektu. Kritéria jsou vyhodnocovány v uvedeném pořadí.
 
-1.  Pokud projekt obsahuje název konfigurace (*\<název konfigurace > \<název platformy >*), je přiřazen přesně odpovídá názvu nová konfigurace řešení, tuto konfiguraci. Názvy konfigurace nejsou malá a velká písmena.
+1. Pokud projekt obsahuje název konfigurace (*\<název konfigurace > \<název platformy >*), je přiřazen přesně odpovídá názvu nová konfigurace řešení, tuto konfiguraci. Názvy konfigurace nejsou malá a velká písmena.
 
-2.  Pokud projekt obsahuje název konfigurace, ve kterých části název konfigurace odpovídá nová konfigurace řešení, tato konfigurace je přiřazen, zda odpovídá platforma část nebo ne.
+2. Pokud projekt obsahuje název konfigurace, ve kterých části název konfigurace odpovídá nová konfigurace řešení, tato konfigurace je přiřazen, zda odpovídá platforma část nebo ne.
 
-3.  Pokud ještě není nalezena žádná shoda, přiřadí se první konfigurace, který je uveden v projektu.
+3. Pokud ještě není nalezena žádná shoda, přiřadí se první konfigurace, který je uveden v projektu.
 
 ## <a name="how-visual-studio-assigns-solution-configurations"></a>Přiřazování konfigurace řešení v sadě Visual Studio
  Při vytváření konfigurace projektu (v **nástroje Configuration Manager**, výběrem **nový** v rozevírací nabídce v **konfigurace** sloupce pro tento projekt) a Vyberte **vytvořit nové konfigurace řešení** zaškrtávací políčko, Visual Studio vyhledá konfigurace s názvem jako řešení pro sestavení projektu na jednotlivých platformách podporuje. V některých případech může Visual Studio přejmenuje existující konfigurace řešení nebo definuje nové značky.
 
  Visual Studio používá následující kritéria pro přiřazení konfigurací řešení.
 
--   Pokud konfigurace projektu neurčuje platformu nebo určuje jenom jednu platformu, pak konfigurace řešení, jehož název se shoduje s novou konfiguraci projektu je najít nebo přidat. Výchozí název této konfigurace řešení neobsahuje název platformy. má podobu  *\<název konfigurace projektu >*.
+- Pokud konfigurace projektu neurčuje platformu nebo určuje jenom jednu platformu, pak konfigurace řešení, jehož název se shoduje s novou konfiguraci projektu je najít nebo přidat. Výchozí název této konfigurace řešení neobsahuje název platformy. má podobu  *\<název konfigurace projektu >*.
 
--   Pokud projekt podporuje více platforem, konfigurace řešení je najít nebo přidat pro každou podporovanou platformu. Název každé konfigurace řešení obsahuje název konfigurace projektu a název platformy a má tvar  *\<název konfigurace projektu > \<název platformy >*.
+- Pokud projekt podporuje více platforem, konfigurace řešení je najít nebo přidat pro každou podporovanou platformu. Název každé konfigurace řešení obsahuje název konfigurace projektu a název platformy a má tvar  *\<název konfigurace projektu > \<název platformy >*.
 
 ## <a name="see-also"></a>Viz také:
 

@@ -7,12 +7,12 @@ ms.author: mblome
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 31de4178d5d6ab2e1798c0b881ceb0fcb6fb2366
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: ed4d024b7d10f4432c6a2326f07bb068075971f7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56954212"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073381"
 ---
 # <a name="how-to-use-boosttest-for-c-in-visual-studio"></a>Jak používat Boost.Test pro C++ v sadě Visual Studio
 
@@ -73,6 +73,7 @@ V sadě Visual Studio 2017 verze 15.5 jsou k dispozici pro Boost.Test žádná p
         <VcpkgEnabled>true</VcpkgEnabled>
     </PropertyGroup>
     ```
+
    c. Uložte a zavřete  *\*.vcxproj* souboru a pak znovu načtěte projekt.
 
    d. Chcete-li otevřít **stránky vlastností**, klikněte pravým tlačítkem na uzel projektu a zvolte **vlastnosti**.

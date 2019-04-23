@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5f6e9bea3d45249d847f2dccfe522f832d6a07b5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: c231aac3b78ddb5100cc06600059045fdc463e51
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56644520"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074005"
 ---
 # <a name="how-to-cache-data-in-a-password-protected-document"></a>Postupy: Data v mezipaměti v dokumentu chráněném heslem
   Pokud chcete přidat data do datové mezipaměti v dokumentu nebo sešitu, který je chráněný heslem, změny dat v mezipaměti nejsou uloženy automaticky. Změny můžete uložit do data uložená v mezipaměti tak, že přepíšete dvě metody ve vašem projektu.
@@ -30,13 +30,13 @@ ms.locfileid: "56644520"
 
 ### <a name="to-cache-data-in-a-word-document-that-is-protected-with-a-password"></a>Ukládání dat do mezipaměti ve Wordovém dokumentu, který je chráněný heslem
 
-1.  V `ThisDocument` třídy, označte veřejné pole nebo vlastnost ukládat do mezipaměti. Další informace najdete v tématu [ukládat data do mezipaměti](../vsto/caching-data.md).
+1. V `ThisDocument` třídy, označte veřejné pole nebo vlastnost ukládat do mezipaměti. Další informace najdete v tématu [ukládat data do mezipaměti](../vsto/caching-data.md).
 
-2.  Přepsat <xref:Microsoft.Office.Tools.Word.DocumentBase.UnprotectDocument%2A> metodu `ThisDocument` třídy a odebrat ochranu z dokumentu.
+2. Přepsat <xref:Microsoft.Office.Tools.Word.DocumentBase.UnprotectDocument%2A> metodu `ThisDocument` třídy a odebrat ochranu z dokumentu.
 
      Když je dokument uložen, [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] volá tuto metodu za účelem vám poskytnou příležitost k odemknutí dokumentu. To umožňuje uložení změn dat v mezipaměti.
 
-3.  Přepsat <xref:Microsoft.Office.Tools.Word.DocumentBase.ProtectDocument%2A> metodu `ThisDocument` třídy a znovu nastavit ochranu dokumentu.
+3. Přepsat <xref:Microsoft.Office.Tools.Word.DocumentBase.ProtectDocument%2A> metodu `ThisDocument` třídy a znovu nastavit ochranu dokumentu.
 
      Po uložení dokumentu [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] volá tuto metodu za účelem vám poskytnou příležitost k opětovnému použití ochrany v dokumentu.
 
@@ -54,13 +54,13 @@ ms.locfileid: "56644520"
 
 ### <a name="to-cache-data-in-an-excel-workbook-that-is-protected-with-a-password"></a>Ukládání dat do mezipaměti v Excelovém sešitu, který je chráněný heslem
 
-1.  V `ThisWorkbook` třídy nebo některé z `Sheet` *n* třídy, označte veřejné pole nebo vlastnost ukládat do mezipaměti. Další informace najdete v tématu [ukládat data do mezipaměti](../vsto/caching-data.md).
+1. V `ThisWorkbook` třídy nebo některé z `Sheet` *n* třídy, označte veřejné pole nebo vlastnost ukládat do mezipaměti. Další informace najdete v tématu [ukládat data do mezipaměti](../vsto/caching-data.md).
 
-2.  Přepsat <xref:Microsoft.Office.Tools.Excel.WorkbookBase.UnprotectDocument%2A> metodu `ThisWorkbook` třídy a odebrat ochranu ze sešitu.
+2. Přepsat <xref:Microsoft.Office.Tools.Excel.WorkbookBase.UnprotectDocument%2A> metodu `ThisWorkbook` třídy a odebrat ochranu ze sešitu.
 
      Při uložení sešitu [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] volá tuto metodu za účelem vám poskytnou příležitost k odemknutí sešitu. To umožňuje uložení změn dat v mezipaměti.
 
-3.  Přepsat <xref:Microsoft.Office.Tools.Excel.WorkbookBase.ProtectDocument%2A> metodu `ThisWorkbook` třídy a znovu nastavit ochranu dokumentu.
+3. Přepsat <xref:Microsoft.Office.Tools.Excel.WorkbookBase.ProtectDocument%2A> metodu `ThisWorkbook` třídy a znovu nastavit ochranu dokumentu.
 
      Po uložení sešitu [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] volá tuto metodu za účelem vám poskytnou příležitost k opětovnému použití ochrany v sešitu.
 

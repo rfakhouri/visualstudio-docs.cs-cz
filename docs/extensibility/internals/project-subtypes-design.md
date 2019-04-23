@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8ac7771e657b546fdfced7033067d6de26256b96
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 28cc20d00a9846fa119666b01aea2efab3a128ac
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335646"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066413"
 ---
 # <a name="project-subtypes-design"></a>Návrh podtypů projektů
 
@@ -23,11 +23,11 @@ Podtypy projektů umožní rozšířením VSPackages rozšířit projekty založ
 
  Následujících tématech jsou upřesněny o základním návrhu a implementace podtypů projektů:
 
--   Návrh podtyp projektu.
+- Návrh podtyp projektu.
 
--   Víceúrovňové agregace.
+- Víceúrovňové agregace.
 
--   Podpora rozhraní.
+- Podpora rozhraní.
 
 ## <a name="project-subtype-design"></a>Návrh podtyp projektu
 
@@ -73,11 +73,11 @@ Podtypy projektů můžete rozšířit systému základního projektu rozšíře
 
 Implementace podtyp projektu, která zabalí nižší úrovně projektu podtyp musí být naprogramovány kooperativně na povolit podtyp projektu vnitřní fungování. Obsahuje seznam programovacích odpovědnosti:
 
--   <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> Provádění podtyp projektu, který zahrnuje vnitřní podtypu musí delegovat <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> provádění podtyp vnitřní projektu pro obě <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Load%2A> a <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Save%2A> metody.
+- <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> Provádění podtyp projektu, který zahrnuje vnitřní podtypu musí delegovat <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> provádění podtyp vnitřní projektu pro obě <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Load%2A> a <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Save%2A> metody.
 
--   <xref:EnvDTE80.IInternalExtenderProvider> Provádění podtyp projektu obálky musí delegovat, jeho vnitřní projektu podtyp. Zejména provádění <xref:EnvDTE80.IInternalExtenderProvider.GetExtenderNames%2A> musí získat řetězec názvů podtypem vnitřní projektu a pak je zřetězí řetězce chce přidat jako zařízení Extender.
+- <xref:EnvDTE80.IInternalExtenderProvider> Provádění podtyp projektu obálky musí delegovat, jeho vnitřní projektu podtyp. Zejména provádění <xref:EnvDTE80.IInternalExtenderProvider.GetExtenderNames%2A> musí získat řetězec názvů podtypem vnitřní projektu a pak je zřetězí řetězce chce přidat jako zařízení Extender.
 
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfgProvider> Provádění podtyp projektu obálky musí vytvořit instanci <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFlavorCfg> objekt jeho vnitřní podtyp projektu a podržte ji jako soukromý delegát, protože pouze objekt konfigurace projektu základního projektu přímo ví, obálky objekt konfigurace podtyp projektu existuje. Podtyp vnější projektu může zpočátku zvolte chce zpracovat přímo rozhraní pro konfiguraci a následně delegovat klidovém stavu a podtyp projektu vnitřní implementace <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFlavorCfg.get_CfgType%2A>.
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfgProvider> Provádění podtyp projektu obálky musí vytvořit instanci <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFlavorCfg> objekt jeho vnitřní podtyp projektu a podržte ji jako soukromý delegát, protože pouze objekt konfigurace projektu základního projektu přímo ví, obálky objekt konfigurace podtyp projektu existuje. Podtyp vnější projektu může zpočátku zvolte chce zpracovat přímo rozhraní pro konfiguraci a následně delegovat klidovém stavu a podtyp projektu vnitřní implementace <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFlavorCfg.get_CfgType%2A>.
 
 ## <a name="supporting-interfaces"></a>Podpora rozhraní
 

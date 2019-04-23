@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2f37ed2819e1c5999c7d225e52f652ebef3bd7da
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 9466d067cd144f009f9c0a37d4ace5bacc12f8a2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56692109"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061045"
 ---
 # <a name="prepare-extensions-for-windows-installer-deployment"></a>Příprava rozšíření pro nasazení Instalační služby systému Windows
 Balíček Instalační služby systému Windows (MSI) nelze použít k nasazení balíčku VSIX. Můžete však extrahovat obsah balíčku VSIX pro nasazení MSI. Tento dokument ukazuje, jak připravit projektu, jehož výchozí výstup je balíčku VSIX pro zahrnutí do projektu instalace.
@@ -25,34 +25,34 @@ Balíček Instalační služby systému Windows (MSI) nelze použít k nasazení
 
 ### <a name="to-prepare-an-extension-project-for-windows-installer-deployment"></a>Příprava rozšíření projektu nasazení Instalační služby systému Windows
 
-1.  Vytvoření VSPackage, součást MEF, dalších úprav editoru nebo jiný typ projektu rozšiřitelnosti, který obsahuje VSIX manifest.
+1. Vytvoření VSPackage, součást MEF, dalších úprav editoru nebo jiný typ projektu rozšiřitelnosti, který obsahuje VSIX manifest.
 
-2.  VSIX manifest se otevře v editoru kódu.
+2. VSIX manifest se otevře v editoru kódu.
 
-3.  Nastavte `InstalledByMsi` elementu v manifestu VSIX do `true`. Další informace o manifestu VSIX, který najdete v tématu [VSIX extension schema 2.0 – referenční informace](../extensibility/vsix-extension-schema-2-0-reference.md).
+3. Nastavte `InstalledByMsi` elementu v manifestu VSIX do `true`. Další informace o manifestu VSIX, který najdete v tématu [VSIX extension schema 2.0 – referenční informace](../extensibility/vsix-extension-schema-2-0-reference.md).
 
      To zabrání instalátor VSIX pokusu o instalaci komponenty.
 
-4.  Klikněte pravým tlačítkem na projekt v **Průzkumníka řešení** a klikněte na tlačítko **vlastnosti**.
+4. Klikněte pravým tlačítkem na projekt v **Průzkumníka řešení** a klikněte na tlačítko **vlastnosti**.
 
-5.  Vyberte **VSIX** kartu.
+5. Vyberte **VSIX** kartu.
 
-6.  Zaškrtněte políčko **VSIX kopírování obsahu do následujícího umístění** a zadejte cestu, kde bude projekt instalace přinutili soubory.
+6. Zaškrtněte políčko **VSIX kopírování obsahu do následujícího umístění** a zadejte cestu, kde bude projekt instalace přinutili soubory.
 
 ## <a name="extract-files-from-an-existing-vsix-package"></a>Extrahujte soubory z existujícího balíčku VSIX
  Proveďte tyto kroky, které chcete přidat obsah existujícího balíčku VSIX k projektu instalace, když nemáte zdrojové soubory.
 
 ### <a name="to-extract-files-from-an-existing-vsix-package"></a>Extrahujte soubory z existujícího balíčku VSIX
 
-1.  Přejmenovat *. VSIX* soubor, který obsahuje rozšíření z *filename.vsix* k *filename.zip*.
+1. Přejmenovat *. VSIX* soubor, který obsahuje rozšíření z *filename.vsix* k *filename.zip*.
 
-2.  Zkopírujte obsah *ZIP* soubor do adresáře.
+2. Zkopírujte obsah *ZIP* soubor do adresáře.
 
-3.  Odstranit *[Content_types] .xml* soubor z adresáře.
+3. Odstranit *[Content_types] .xml* soubor z adresáře.
 
-4.  Upravte VSIX manifest, jak je znázorněno v předchozím postupu.
+4. Upravte VSIX manifest, jak je znázorněno v předchozím postupu.
 
-5.  Přidejte do projektu instalace zbývající soubory.
+5. Přidejte do projektu instalace zbývající soubory.
 
 ## <a name="see-also"></a>Viz také:
 - [Nasazení instalačního programu sady Visual Studio](https://msdn.microsoft.com/library/121be21b-b916-43e2-8f10-8b080516d2a0)

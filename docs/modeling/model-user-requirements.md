@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cda0284bd9ae4b0f68a8bb0fa779959f52650bdd
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d75bfd7634e068224b12168390193773c198957a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55937341"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60058522"
 ---
 # <a name="model-user-requirements"></a>Modelování uživatelských požadavků
 
@@ -56,7 +56,7 @@ Můžete vytvořit několik různých zobrazení podle požadavků uživatelů. 
 
 Všimněte si, že většina typů diagramu můžete používat pro jiné účely. Přehled typů diagramu, naleznete v tématu [vytváření modelů pro aplikaci](../modeling/create-models-for-your-app.md).
 
-##  <a name="BusinessRules"></a> Zobrazení obchodních pravidel
+## <a name="BusinessRules"></a> Zobrazení obchodních pravidel
 
 Obchodní pravidlo je požadavek, který není spojen s případem použití konkrétní a by měl v celém systému.
 
@@ -76,19 +76,19 @@ Další informace naleznete v následujících tématech:
 |-|-|
 |Postupy při vývoji kódu, který splňuje obchodní pravidla|[Modelování architektury aplikace](../modeling/model-your-app-s-architecture.md)|
 
-##  <a name="QoSRequirements"></a> Popisující kvality požadavků na služby
+## <a name="QoSRequirements"></a> Popisující kvality požadavků na služby
 
 Existuje několik kategorií kvality služby. Jsou to tyto země:
 
--   Výkon
+- Výkon
 
--   Zabezpečení
+- Zabezpečení
 
--   Použitelnosti
+- Použitelnosti
 
--   Spolehlivost
+- Spolehlivost
 
--   Robustnost
+- Robustnost
 
 Může obsahovat některé z těchto požadavků v popisech zvláštní případy. Další požadavky nejsou specifická pro případy použití a efektivní zapsány v samostatných dokumentu. Pokud je to možné, je vhodné dodržovat slovník určené model požadavků. V následujícím příkladu Všimněte si, že hlavní slova používaná požadavek na názvy objektů actor, případy použití a třídy v vidět na předchozím obrázku:
 
