@@ -7,12 +7,12 @@ ms.date: 02/21/2019
 ms.topic: conceptual
 ms.prod: visual-studio-mac
 ms.assetid: fd354fff-ce6b-4505-a815-84a2311e39ba
-ms.openlocfilehash: 65b44dddfdadcb7ef38332fa35443dbaeededb5d
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: a4a4f2f4fd4ce6cd88d11979a21e4e9184adfca8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58152912"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095188"
 ---
 # <a name="how-to-set-multiple-startup-projects"></a>Postupy: Nastavení více projektů po spuštění
 
@@ -20,7 +20,7 @@ Visual Studio for Mac můžete zadat více než jeden projekt je spuštěn při 
 
 ## <a name="to-set-multiple-startup-projects"></a>Chcete-li nastavit více projektů po spuštění
 
-1.  V **oblasti řešení**, vyberte řešení (na nejvyšší uzel).
+1. V **oblasti řešení**, vyberte řešení (na nejvyšší uzel).
 
 2. Vyberte uzel řešení nabídka (kliknutí pravým tlačítkem myši) a pak zvolte **nastavit projekty po spuštění...** .
 

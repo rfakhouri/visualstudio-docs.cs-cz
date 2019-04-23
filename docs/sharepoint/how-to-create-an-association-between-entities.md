@@ -21,12 +21,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5d8558745de7539350bde4f00673c99d23cd1def
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: ce6d0bad9da4f11b5fae1daf93657c6908cf5e95
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56645118"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092562"
 ---
 # <a name="how-to-create-an-association-between-entities"></a>Postupy: Vytvoření přidružení mezi entitami
   Je možné definovat vztahy mezi entitami v modelu obchodní Data připojení (BDC) tak, že vytvoříte přidružení. Visual Studio generuje metody, které poskytují příjemci modelu s informacemi o každé přidružení. Tyto metody mohou být spotřebovány webových částí služby SharePoint, seznamy nebo vlastní aplikace pro zobrazení relací mezi daty v uživatelském rozhraní (UI).
@@ -35,29 +35,29 @@ ms.locfileid: "56645118"
 
 ### <a name="to-create-an-association-between-entities"></a>Vytvoření přidružení mezi entitami
 
-1.  Na **služby Připojení obchodních dat** karty **nástrojů**, zvolte **přidružení** položky.
+1. Na **služby Připojení obchodních dat** karty **nástrojů**, zvolte **přidružení** položky.
 
-2.  V Návrháři služby BDC zvolte zdrojové entity a klikněte na tlačítko Cílová entita.
+2. V Návrháři služby BDC zvolte zdrojové entity a klikněte na tlačítko Cílová entita.
 
      **Editor asociace** se zobrazí.
 
-3.  Pokud chcete vytvořit přidružení cizího klíče na základě, vyberte **je přidružení cizího klíče** zaškrtávací políčko.
+3. Pokud chcete vytvořit přidružení cizího klíče na základě, vyberte **je přidružení cizího klíče** zaškrtávací políčko.
 
-    1.  V **ID zdroje** sloupec **identifikátor mapování** tabulky, zvolte identifikátor vedle každé odpovídající popisovač typu, který se zobrazí **pole** sloupce.
+    1. V **ID zdroje** sloupec **identifikátor mapování** tabulky, zvolte identifikátor vedle každé odpovídající popisovač typu, který se zobrazí **pole** sloupce.
 
          Například v **ID zdroje** sloupci vyberte `ContactID` vedle `ReadList.salesOrderList.SalesOrderList.SalesOrder.ContactID` popisovač typu a `ReadItem.salesOrder.SalesOrder.ContactID` popisovačem typu.
 
-4.  Pokud chcete vytvořit přidružení cizího bez klíčů, zrušte zaškrtnutí políčka **je přidružení cizího klíče** zaškrtávací políčko.
+4. Pokud chcete vytvořit přidružení cizího bez klíčů, zrušte zaškrtnutí políčka **je přidružení cizího klíče** zaškrtávací políčko.
 
-5.  Zvolte **OK** tlačítko.
+5. Zvolte **OK** tlačítko.
 
-6.  V Návrháři služby BDC zobrazí se řádek, který představuje přidružení mezi entitou zdrojové a cílové entity.
+6. V Návrháři služby BDC zobrazí se řádek, který představuje přidružení mezi entitou zdrojové a cílové entity.
 
      Visual Studio přidá metodu přidružení Navigátor třídu služby cílové entity a třídu služby zdrojové entity. Další informace o přidružení navigační metody, naleznete v tématu [podporované operace](http://go.microsoft.com/fwlink/?LinkId=169286).
 
-7.  Metoda přidružení Navigátor zdrojové entitě přidejte kód, který vrátí kolekce z cílové entity.
+7. Metoda přidružení Navigátor zdrojové entitě přidejte kód, který vrátí kolekce z cílové entity.
 
-8.  Metoda přidružení Navigátor Cílová entita přidejte kód, který vrátí související zdrojové entity.
+8. Metoda přidružení Navigátor Cílová entita přidejte kód, který vrátí související zdrojové entity.
 
      Příklady metod Navigátor přidružení, najdete v článku [vytvoření přidružení mezi entitami](../sharepoint/creating-an-association-between-entities.md).
 

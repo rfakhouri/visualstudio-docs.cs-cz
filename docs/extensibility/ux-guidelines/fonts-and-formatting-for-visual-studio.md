@@ -8,37 +8,37 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 56c7dc7557c91d82c89e612da7b78e3a889ad01e
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: c0f451ed2ddb6b619e896a664e5592496e4af4de
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796748"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096254"
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>Písma a formátování pro Visual Studio
-##  <a name="BKMK_TheEnvironmentFont"></a> Písmo prostředí
+## <a name="BKMK_TheEnvironmentFont"></a> Písmo prostředí
  Všechna písma v sadě Visual Studio musí být vystavené pro uživatele pro přizpůsobení. To probíhá primárně prostřednictvím **písma a barvy** stránku **nástroje > Možnosti** dialogového okna. Jsou tři hlavní kategorie nastavení písma:
 
--   **Písmo prostředí** – primární písmo integrované vývojové prostředí (IDE), použít pro všechny prvky rozhraní, včetně dialogová okna, nabídky, okna nástrojů a oken dokumentu. Ve výchozím nastavení písmo prostředí je vázán na systémové písmo, které se zobrazí jako 9 pt Segoe UI v aktuálních verzích Windows. Pomocí jednoho písma pro všechny prvky rozhraní pomáhá zajistit vzhled písma konzistentní v celém rozhraní IDE.
+- **Písmo prostředí** – primární písmo integrované vývojové prostředí (IDE), použít pro všechny prvky rozhraní, včetně dialogová okna, nabídky, okna nástrojů a oken dokumentu. Ve výchozím nastavení písmo prostředí je vázán na systémové písmo, které se zobrazí jako 9 pt Segoe UI v aktuálních verzích Windows. Pomocí jednoho písma pro všechny prvky rozhraní pomáhá zajistit vzhled písma konzistentní v celém rozhraní IDE.
 
--   **Textový editor** – prvky, že surface v kódu a dalších textových editorů je možné přizpůsobit v textovém editoru stránku **nástroje > Možnosti**.
+- **Textový editor** – prvky, že surface v kódu a dalších textových editorů je možné přizpůsobit v textovém editoru stránku **nástroje > Možnosti**.
 
--   **Konkrétní kolekce** – na stránce vlastní nastavení v zařízení surface návrháře windows, která nabízejí vlastní nastavení jejich prvky rozhraní může vystavit písma, které jsou specifické pro jejich návrhu **nástroje > Možnosti**.
+- **Konkrétní kolekce** – na stránce vlastní nastavení v zařízení surface návrháře windows, která nabízejí vlastní nastavení jejich prvky rozhraní může vystavit písma, které jsou specifické pro jejich návrhu **nástroje > Možnosti**.
 
 ### <a name="editor-font-customization-and-resizing"></a>Vlastní nastavení písma editoru a změnu velikosti
  Uživatelé budou často zvětšení nebo zvětšení velikosti a/nebo barvu textu v editoru podle jejich priority, nezávislé na obecné uživatelského rozhraní. Písmo prostředí, protože se používají u elementů, které se zobrazují v rámci nebo jako součást editoru nebo návrháře je důležité si uvědomit očekávané chování, pokud jeden z těchto písmo klasifikace se změnilo.
 
  Při vytváření prvky uživatelského rozhraní, které se zobrazí v editoru, ale jsou není součástí *obsah*, je důležité používat písmo prostředí a písmo textu, aby předvídatelnému změnit velikost elementů.
 
-1.  V editoru kódu text velikost s nastavením písmo textu kódu a reagovat na úroveň přiblížení editoru textu.
+1. V editoru kódu text velikost s nastavením písmo textu kódu a reagovat na úroveň přiblížení editoru textu.
 
-2.  Všechny ostatní prvky rozhraní by měl být svázané písma nastavení prostředí a reagovat na všechny globální změny v prostředí. To zahrnuje (ale není omezena pouze na):
+2. Všechny ostatní prvky rozhraní by měl být svázané písma nastavení prostředí a reagovat na všechny globální změny v prostředí. To zahrnuje (ale není omezena pouze na):
 
-    -   Text v kontextové nabídky
+    - Text v kontextové nabídky
 
-    -   Text dalších úprav editoru, jako jsou návrhy nabídky text podokna editoru rychle najít a přejděte do podokna
+    - Text dalších úprav editoru, jako jsou návrhy nabídky text podokna editoru rychle najít a přejděte do podokna
 
-    -   Popisek text v dialogových oknech, jako je **najít v souborech** nebo **Refaktorovat**
+    - Popisek text v dialogových oknech, jako je **najít v souborech** nebo **Refaktorovat**
 
 ### <a name="accessing-the-environment-font"></a>Přístup k prostředí písma
  V kódu nativní nebo WinForms písmo prostředí přístupná pomocí volání metody `IUIHostLocale::GetDialogFont` po dotazování rozhraní z `SID_SUIHostLocale` služby.
@@ -87,7 +87,7 @@ window.ShowModal()
 <Setter Property="FontSize" Value="{DynamicResource VsFont.EnvironmentFontSize}" />
 ```
 
-###  <a name="BKMK_Formatting"></a> Formátování odkaz (škálování/tučné)
+### <a name="BKMK_Formatting"></a> Formátování odkaz (škálování/tučné)
  Některá dialogová okna, aby konkrétní text, který má být tučného písma nebo velikost než písmo prostředí. Dříve bylo kódováno písma větší než písmo prostředí jako "`environment font +2`" nebo podobného. Používání fragmentů kódu zadaná podporu vysokých hodnot DPI monitorování a ujistěte se, že zobrazovaný text vždy se zobrazí v správnou velikost a váhy (jako jsou Light nebo Semilight).
 
 > **Poznámka: Než použijete schéma formátování, ujistěte se, jsou následující pokyny v [styl textu](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle).**
@@ -300,7 +300,7 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 
  Pokud chcete resetovat písma, klikněte na tlačítko "Použít výchozí hodnoty" v části **nástroje > Možnosti > prostředí > písma a barvy**.
 
-##  <a name="BKMK_TextStyle"></a> Styl textu
+## <a name="BKMK_TextStyle"></a> Styl textu
  Styl textu odkazuje na velikost písma, váha a malých a velkých písmen. Pokyny k implementaci, najdete v části [písmo prostředí](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TheEnvironmentFont).
 
 ### <a name="text-casing"></a>Text malých a velkých písmen
@@ -359,9 +359,9 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 ##### <a name="sentence-case"></a>Velké pouze první písmeno
  Věty je metoda standardní malá a velká písmena pro zápis, ve kterém je velké pouze první slovo věty, spolu s jakékoli podstatná jména správné a zastupovat "I." Obecně je snadnější po celém světě cílové skupiny, číst, zejména když obsah bude fungovat na počítači věty. Používejte velká písmena pro:
 
-1.  **Zprávy stavového řádku.** Tyto jsou jednoduché a krátké a poskytují jenom informace o stavu. Příklad: "Načítání souboru projektu"
+1. **Zprávy stavového řádku.** Tyto jsou jednoduché a krátké a poskytují jenom informace o stavu. Příklad: "Načítání souboru projektu"
 
-2.  **Všechny ostatní prvky uživatelského rozhraní**, včetně popisků, zaškrtávací políčka, přepínače a pole položky seznamu. Příklad: "Vybrat všechny položky v seznamu"
+2. **Všechny ostatní prvky uživatelského rozhraní**, včetně popisků, zaškrtávací políčka, přepínače a pole položky seznamu. Příklad: "Vybrat všechny položky v seznamu"
 
 ### <a name="text-formatting"></a>Formátování textu
  Výchozí formátování textu v sadě Visual Studio 2013 je řízen [písmo prostředí](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TheEnvironmentFont). Tato služba pomáhá zajistit vzhled písma konzistentní v celém rozhraní IDE (integrované vývojové prostředí) a je nutné je použít k zajištění konzistentního prostředí pro vaše uživatele.
@@ -373,36 +373,36 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 #### <a name="bold-text"></a>Tučný text
  Tučný text je používat střídmě, v sadě Visual Studio a by měl být vyhrazen pro:
 
--   dotaz popisky v průvodcích
+- dotaz popisky v průvodcích
 
--   určení aktivního projektu v Průzkumníku řešení
+- určení aktivního projektu v Průzkumníku řešení
 
--   přepsat hodnoty v okně nástroje Vlastnosti
+- přepsat hodnoty v okně nástroje Vlastnosti
 
--   Některé události v rozevíracích seznamech editoru jazyka Visual Basic
+- Některé události v rozevíracích seznamech editoru jazyka Visual Basic
 
--   obsah generovaný serverem osnovy dokumentu pro webové stránky
+- obsah generovaný serverem osnovy dokumentu pro webové stránky
 
--   oddíl hlavičky v komplexní dialogové okno nebo návrhář uživatelského rozhraní
+- oddíl hlavičky v komplexní dialogové okno nebo návrhář uživatelského rozhraní
 
 #### <a name="italics"></a>Kurzíva
  Visual Studio nepoužívá kurzívy nebo tučně formátovaný text kurzívou.
 
 #### <a name="color"></a>Barva
 
--   Modrá je vyhrazená pro hypertextové odkazy (navigaci a příkazů) a byste nikdy neměli používat pro orientaci.
+- Modrá je vyhrazená pro hypertextové odkazy (navigaci a příkazů) a byste nikdy neměli používat pro orientaci.
 
--   Větší záhlaví (písmo prostředí x 155 % nebo vyšší) můžou mít barvy pro tyto účely:
+- Větší záhlaví (písmo prostředí x 155 % nebo vyšší) můžou mít barvy pro tyto účely:
 
-    -   K poskytování vizuální vzhled podpis uživatelského rozhraní Visual Studio
+    - K poskytování vizuální vzhled podpis uživatelského rozhraní Visual Studio
 
-    -   Chcete-li upoutat pozornost na konkrétní oblasti
+    - Chcete-li upoutat pozornost na konkrétní oblasti
 
-    -   Nabízí osvobození od standardního prostředí tmavě šedé/Černá barva textu
+    - Nabízí osvobození od standardního prostředí tmavě šedé/Černá barva textu
 
--   Barva záhlaví by je měli využít stávající sady Visual Studio značkové barvy, především hlavní nachová #FF68217A.
+- Barva záhlaví by je měli využít stávající sady Visual Studio značkové barvy, především hlavní nachová #FF68217A.
 
--   Při použití barev v záhlaví, je nutné splnit [Windows barva pokyny](/windows/desktop/uxguide/vis-color), včetně kontrastní poměr a další věci ohledně přístupnosti.
+- Při použití barev v záhlaví, je nutné splnit [Windows barva pokyny](/windows/desktop/uxguide/vis-color), včetně kontrastní poměr a další věci ohledně přístupnosti.
 
 ### <a name="font-size"></a>Velikost písma
  Visual Studio UI návrh funkce světlejší vzhled více prázdnými znaky. Tam, kde je to možné, byly pruhy chrome a názvu nižší nebo odebrán. Požadavek v sadě Visual Studio při informace hustota Typografie i nadále být důležité, s důrazem na otevřenější řádkování a změna velikosti písma a váhy.
@@ -474,11 +474,11 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 ### <a name="padding-and-spacing"></a>Odsazení a mezery
  Záhlaví vyžadují prostor kolem nich jim poskytnout příslušné zvýraznění. Tento prostor se liší v závislosti na velikosti bodu a co dalšího je v záhlaví, jako je například vodorovná čára nebo řádek textu v prostředí písma.
 
--   Ideální odsazení pro nadpis sám o sobě by měl být 90 % prostoru výška velké znak. Například záhlaví Segoe UI Light 28 pt má limit výšku 26 pt a odsazení by měla být přibližně 23 pt nebo přibližně 31 pixelů.
+- Ideální odsazení pro nadpis sám o sobě by měl být 90 % prostoru výška velké znak. Například záhlaví Segoe UI Light 28 pt má limit výšku 26 pt a odsazení by měla být přibližně 23 pt nebo přibližně 31 pixelů.
 
--   Minimální místo kolem nadpis by měl být 50 % výšky velké znak. Při nadpis doplněny pravidlo nebo jiný prvek těsným lze méně místa.
+- Minimální místo kolem nadpis by měl být 50 % výšky velké znak. Při nadpis doplněny pravidlo nebo jiný prvek těsným lze méně místa.
 
--   Tučný text písmo prostředí by mělo vycházet výchozí výška řádkování a odsazení.
+- Tučný text písmo prostředí by mělo vycházet výchozí výška řádkování a odsazení.
 
 ## <a name="see-also"></a>Viz také:
 

@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 64c7bc0f5b9aa9b23aa940583cebcd3e202e6487
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 9c691eea7417e882ee3b73e9f2adc538714b486a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59653642"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094658"
 ---
 # <a name="xml-editor-intellisense-features"></a>Funkce IntelliSense editoru XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -85,26 +85,26 @@ XML Editor poskytuje úplné funkce IntelliSense srovnatelná s hodnotou jiné e
   
  XML editor se to dělá pro následující položky:  
   
--   Odpovídající počáteční a koncovou značku.  
+- Odpovídající počáteční a koncovou značku.  
   
--   Nějaká dvojice "\<" nebo ">" ostrých závorek.  
+- Nějaká dvojice "\<" nebo ">" ostrých závorek.  
   
--   Začátek a konec komentáře.  
+- Začátek a konec komentáře.  
   
--   Začátek a konec instrukce pro zpracování.  
+- Začátek a konec instrukce pro zpracování.  
   
--   Začátek a konec bloky CDATA.  
+- Začátek a konec bloky CDATA.  
   
--   Začátek a konec deklarace DTD.  
+- Začátek a konec deklarace DTD.  
   
--   Levé a pravé uvozovky u atributů.  
+- Levé a pravé uvozovky u atributů.  
   
 ## <a name="modifying-the-intellisense-options"></a>Úprava možnosti technologie IntelliSense  
  Ve výchozím nastavení jsou povoleny funkce IntelliSense a automatické dokončování. Můžete to však změnit úpravou nastavení možnosti nástrojů.  
   
  **Automatické vložení** část **různé** ovládací prvky stránek následující chování:  
   
-|Name|Popis|  
+|Název|Popis|  
 |----------|-----------------|  
 |Zavřít značky|Vloží uzavírací značky pro nové prvky.|  
 |Uvozovky atributu|Když zadáte nový název atributu, vloží uvozovky u hodnot atributů.|  
@@ -112,11 +112,11 @@ XML Editor poskytuje úplné funkce IntelliSense srovnatelná s hodnotou jiné e
   
 #### <a name="to-change-the-auto-completion-behavior"></a>Chcete-li změnit chování automatického dokončování  
   
-1.  Vyberte **možnosti** z **nástroje** nabídky.  
+1. Vyberte **možnosti** z **nástroje** nabídky.  
   
-2.  Rozbalte **textový Editor**, rozbalte **XML**a vyberte **různé**.  
+2. Rozbalte **textový Editor**, rozbalte **XML**a vyberte **různé**.  
   
-3.  Ujistěte se, všechny změny **automatické vkládání** části a klikněte na tlačítko **OK**.  
+3. Ujistěte se, všechny změny **automatické vkládání** části a klikněte na tlačítko **OK**.  
   
 ## <a name="see-also"></a>Viz také  
  [XML Editor](../xml-tools/xml-editor.md)   

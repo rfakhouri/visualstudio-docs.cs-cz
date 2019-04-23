@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 154e6058689d308f35fd969438d1964b9383f653
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a98ad657fd1664a71b0b07063615923af4b9db2d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56633964"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096046"
 ---
 # <a name="how-to-use-clickonce-to-deploy-applications-that-can-run-on-multiple-versions-of-the-net-framework"></a>Postupy: Použití ClickOnce k nasazení aplikací, které můžou běžet na více verzích rozhraní .NET framework
 Můžete nasadit aplikaci, která se zaměřuje na více verzí rozhraní .NET Framework pomocí nasazení technologie ClickOnce. To vyžaduje generovat a aktualizujte manifesty aplikace a nasazení.
@@ -31,27 +31,27 @@ Můžete nasadit aplikaci, která se zaměřuje na více verzí rozhraní .NET F
 
  Tento postup vyžaduje následující kroky:
 
-1.  Generovat manifesty aplikace a nasazení.
+1. Generovat manifesty aplikace a nasazení.
 
-2.  Změna manifestu nasazení, aby obsahoval více verzí rozhraní .NET Framework.
+2. Změna manifestu nasazení, aby obsahoval více verzí rozhraní .NET Framework.
 
-3.  Změnit *app.config* souboru do seznamu kompatibilní verze modulu runtime rozhraní .NET Framework.
+3. Změnit *app.config* souboru do seznamu kompatibilní verze modulu runtime rozhraní .NET Framework.
 
-4.  Změňte manifest aplikace k označení závislé sestavení jako sestavení rozhraní .NET Framework.
+4. Změňte manifest aplikace k označení závislé sestavení jako sestavení rozhraní .NET Framework.
 
-5.  Podepište manifest aplikace.
+5. Podepište manifest aplikace.
 
-6.  Aktualizace a podepsání manifestu nasazení.
+6. Aktualizace a podepsání manifestu nasazení.
 
 ### <a name="to-generate-the-application-and-deployment-manifests"></a>Pro generování manifestů aplikace a nasazení
 
--   Publikování aplikace a vytvářet aplikace a soubory manifestu nasazení pomocí Průvodce publikováním nebo publikovat stránku Návrháře projektu. Další informace najdete v tématu [jak: Publikování aplikace ClickOnce pomocí Průvodce publikováním](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md) nebo [publikovat stránku, Návrhář projektu](../ide/reference/publish-page-project-designer.md).
+- Publikování aplikace a vytvářet aplikace a soubory manifestu nasazení pomocí Průvodce publikováním nebo publikovat stránku Návrháře projektu. Další informace najdete v tématu [jak: Publikování aplikace ClickOnce pomocí Průvodce publikováním](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md) nebo [publikovat stránku, Návrhář projektu](../ide/reference/publish-page-project-designer.md).
 
 ### <a name="to-change-the-deployment-manifest-to-list-the-multiple-net-framework-versions"></a>Chcete-li změnit manifestu nasazení, aby obsahoval více verzí rozhraní .NET Framework
 
-1.  V adresáři pro publikování otevřete pomocí editoru XML v sadě Visual Studio manifest nasazení. Manifest nasazení má *.application* příponu názvu souboru.
+1. V adresáři pro publikování otevřete pomocí editoru XML v sadě Visual Studio manifest nasazení. Manifest nasazení má *.application* příponu názvu souboru.
 
-2.  Nahraďte kód XML mezi `<compatibleFrameworks xmlns="urn:schemas-microsoft-com:clickonce.v2">` a `</compatibleFrameworks>` elementy XML, který obsahuje seznam podporovaných verzí rozhraní .NET Framework pro vaši aplikaci.
+2. Nahraďte kód XML mezi `<compatibleFrameworks xmlns="urn:schemas-microsoft-com:clickonce.v2">` a `</compatibleFrameworks>` elementy XML, který obsahuje seznam podporovaných verzí rozhraní .NET Framework pro vaši aplikaci.
 
      V následující tabulce jsou uvedeny některé z dostupných verzí rozhraní .NET Framework a odpovídající kód XML, který můžete přidat do manifestu nasazení.
 
@@ -65,9 +65,9 @@ Můžete nasadit aplikaci, která se zaměřuje na více verzí rozhraní .NET F
 
 ### <a name="to-change-the-appconfig-file-to-list-the-compatible-net-framework-runtime-versions"></a>Chcete-li změnit soubor app.config seznam kompatibilní verze modulu runtime rozhraní .NET Framework
 
-1.  V Průzkumníku řešení otevřete *app.config* soubor pomocí editoru jazyka XML v sadě Visual Studio.
+1. V Průzkumníku řešení otevřete *app.config* soubor pomocí editoru jazyka XML v sadě Visual Studio.
 
-2.  Nahradit (nebo přidat) kód XML mezi `<startup>` a `</startup>` elementy XML, který uvádí podporované moduly runtime rozhraní .NET Framework pro vaši aplikaci.
+2. Nahradit (nebo přidat) kód XML mezi `<startup>` a `</startup>` elementy XML, který uvádí podporované moduly runtime rozhraní .NET Framework pro vaši aplikaci.
 
      V následující tabulce jsou uvedeny některé z dostupných verzí rozhraní .NET Framework a odpovídající kód XML, který můžete přidat do manifestu nasazení.
 
@@ -100,7 +100,7 @@ Můžete nasadit aplikaci, která se zaměřuje na více verzí rozhraní .NET F
 
 ### <a name="to-update-and-re-sign-the-application-and-deployment-manifests"></a>Aktualizace a opětovné podepisování aplikace a nasazení manifestů
 
--   Aktualizace a opětovné podepisování manifestů aplikace a nasazení. Další informace najdete v tématu [jak: Znovu podepište manifesty aplikace a nasazení](../deployment/how-to-re-sign-application-and-deployment-manifests.md).
+- Aktualizace a opětovné podepisování manifestů aplikace a nasazení. Další informace najdete v tématu [jak: Znovu podepište manifesty aplikace a nasazení](../deployment/how-to-re-sign-application-and-deployment-manifests.md).
 
 ## <a name="see-also"></a>Viz také:
 - [Publikování aplikací ClickOnce](../deployment/publishing-clickonce-applications.md)

@@ -15,12 +15,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 19191d8812d198b6a72ec8b6bdc8e75ef9d8f4ee
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3fb1a6255539ded989c5ad9638fc961d606a19f7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54773798"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097106"
 ---
 # <a name="ca1039-lists-are-strongly-typed"></a>CA1039: Seznamy jsou silného typu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,17 +35,17 @@ ms.locfileid: "54773798"
 ## <a name="cause"></a>Příčina
  Veřejný nebo chráněný typ implementuje <xref:System.Collections.IList?displayProperty=fullName> ale neposkytuje metodu silného typu pro jeden nebo více z následujících akcí:
 
--   IList.Item
+- IList.Item
 
--   IList.Add
+- IList.Add
 
--   IList.Contains
+- IList.Contains
 
--   IList.IndexOf
+- IList.IndexOf
 
--   IList.Insert
+- IList.Insert
 
--   IList.Remove
+- IList.Remove
 
 ## <a name="rule-description"></a>Popis pravidla
  Toto pravidlo vyžaduje <xref:System.Collections.IList> implementace důrazně poskytovaly členy typu tak, aby uživatelé nebudou muset přetypovávat argumenty na <xref:System.Object?displayProperty=fullName> zadejte při využívání funkčnosti poskytované rozhraní. <xref:System.Collections.IList> Rozhraní je implementováno kolekce objektů, které lze využívat pomocí indexu. Toto pravidlo předpokládá, že tento typ, který implementuje <xref:System.Collections.IList> to spravovat kolekci instancí typu silnějšího než <xref:System.Object>.

@@ -17,12 +17,12 @@ caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b42eecb5c620e911e448728678781ee32ccb5ca0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3faa57a0a2ca413898364c2d4ad1891df85f1ce8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54777912"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095097"
 ---
 # <a name="limitations-on-wcf-debugging"></a>Omezení ladění WCF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,13 +40,13 @@ Existují tři způsoby, můžete začít ladění služby WCF:
 ## <a name="limitations-on-stepping-into-a-service"></a>Omezení krokování s vnořením do služby  
  Chcete-li do služby z klientských aplikací, které ladíte, musí být splněny následující podmínky:  
   
--   Klient musí volat službu pomocí synchronního klientského objektu.  
+- Klient musí volat službu pomocí synchronního klientského objektu.  
   
--   Kontrakt operace nemůže být jednosměrná.  
+- Kontrakt operace nemůže být jednosměrná.  
   
--   Pokud je server asynchronní, nelze zobrazit úplného zásobníku volání, zatímco spouštíte kód uvnitř služby.  
+- Pokud je server asynchronní, nelze zobrazit úplného zásobníku volání, zatímco spouštíte kód uvnitř služby.  
   
--   Pomocí následujícího kódu v souboru Web.config nebo app.config musí být povoleno ladění:  
+- Pomocí následujícího kódu v souboru Web.config nebo app.config musí být povoleno ladění:  
   
     ```  
     <system.web>  
@@ -62,13 +62,13 @@ Existují tři způsoby, můžete začít ladění služby WCF:
 ## <a name="limitations-on-automatic-attach-to-a-service"></a>Omezení na automatické připojení ke službě  
  Automatické připojení ke službě má následující omezení:  
   
--   Služba musí být součástí [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] řešení ladění.  
+- Služba musí být součástí [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] řešení ladění.  
   
--   Musí být služba hostována. Může být součástí projektu webové stránky (systém souborů a HTTP), projekt webové aplikace (systém souborů a HTTP) nebo projekt knihovny služby WCF. Projekty knihovny služby WCF může být služba knihovny nebo knihovny služby pracovního postupu.  
+- Musí být služba hostována. Může být součástí projektu webové stránky (systém souborů a HTTP), projekt webové aplikace (systém souborů a HTTP) nebo projekt knihovny služby WCF. Projekty knihovny služby WCF může být služba knihovny nebo knihovny služby pracovního postupu.  
   
--   Služba musí být vyvolána z klienta WCF.  
+- Služba musí být vyvolána z klienta WCF.  
   
--   Pomocí následujícího kódu v souboru Web.config nebo app.config musí být povoleno ladění:  
+- Pomocí následujícího kódu v souboru Web.config nebo app.config musí být povoleno ladění:  
   
     ```  
     <system.web>  

@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e1d0a0cd2b82c16871e157e6f78c766895c34b3
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: 2d79c56cfeb2c1a5ef6f83ef64c005fd794c1f29
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58415041"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096904"
 ---
 # <a name="add-custom-architecture-validation-to-dependency-diagrams"></a>Přidání vlastního ověřování architektury do diagramů závislostí
 
@@ -83,9 +83,9 @@ Pokud chcete vytvořit jeden VSIX, který obsahuje validátory vrstvy, příkazy
 
 4. V **source.extension.vsixmanifest**v části **prostředky**, přidejte vrstvu ověřování projektu jako komponentu MEF:
 
-    1.  Zvolte **nové**.
+    1. Zvolte **nové**.
 
-    2.  V **přidat nové aktivum** dialogovém okně nastavení:
+    2. V **přidat nové aktivum** dialogovém okně nastavení:
 
          **Type** = **Microsoft.VisualStudio.MefComponent**
 
@@ -95,9 +95,9 @@ Pokud chcete vytvořit jeden VSIX, který obsahuje validátory vrstvy, příkazy
 
 5. Musíte taky přidat ji jako vrstvu ověřování:
 
-    1.  Zvolte **nové**.
+    1. Zvolte **nové**.
 
-    2.  V **přidat nové aktivum** dialogovém okně nastavení:
+    2. V **přidat nové aktivum** dialogovém okně nastavení:
 
          **Type** = **Microsoft.VisualStudio.ArchitectureTools.Layer.Validator**. To však není jednou z možností v rozevíracím seznamu. Je nutné zadat z klávesnice.
 
@@ -125,7 +125,7 @@ Pokud chcete vytvořit jeden VSIX, který obsahuje validátory vrstvy, příkazy
 
 9. Chcete-li nainstalovat VSIX v instanci hlavní aplikace Visual Studio nebo na jiném počítači, vyhledejte **VSIX** soubor **bin** adresáře projektu VSIX. Zkopírujte ho do počítače, ve které chcete nainstalovat VSIX. Poklikejte na soubor VSIX v Průzkumníku Windows.
 
-##  <a name="programming"></a> Ověření programování
+## <a name="programming"></a> Ověření programování
 
 K definování ověření přípony vrstvy definujete třídu, která má následující vlastnosti:
 
@@ -194,7 +194,7 @@ Každý uzel a každý odkaz má jednu nebo více kategorií, které určují ty
 
 Propojení z vrstev do prvků v kódu mají kategorii "Představuje".
 
-##  <a name="debugging"></a> Ladění ověřování
+## <a name="debugging"></a> Ladění ověřování
 
 Chcete-li ladit rozšíření ověřování vrstvy, stiskněte CTRL + F5. Otevře se experimentální instanci sady Visual Studio. V tomto případě otevřete nebo vytvořte model vrstev. Tento model musí být přidružen ke kódu a musí mít alespoň jednu závislost.
 
@@ -226,7 +226,7 @@ Experimentální instanci vždy spusťte stisknutím kombinace kláves CTRL + F5
 
 Chcete-li nainstalovat rozšíření ověřování v počítači, na kterém je nainstalován vhodnou verzi sady Visual Studio, otevřete soubor VSIX v cílovém počítači.
 
-##  <a name="example"></a> Příklad kódu
+## <a name="example"></a> Příklad kódu
 
 ```csharp
 using System;

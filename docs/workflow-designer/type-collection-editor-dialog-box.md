@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a6754c8264b68d8884f5e8ebaea763e004c71596
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 191635364c445bc3959ee2f5f63c7c72c71f171d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913912"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093121"
 ---
 # <a name="type-collection-editor-dialog-box"></a>Dialogové okno Editor typu kolekce
 
@@ -31,16 +31,16 @@ Následující tabulka popisuje prvky uživatelského rozhraní (UI) **kolekci t
 
 ## <a name="to-bring-up-the-type-collection-editor-for-the-send-and-receive-activities"></a>Funkce přineste si Editor typu kolekce pro odesílání a příjem aktivity
 
-1.  Vyberte **odeslat** nebo **Receive** aktivity v návrhovém zobrazení.
+1. Vyberte **odeslat** nebo **Receive** aktivity v návrhovém zobrazení.
 
-2.  Stisknutím klávesy **F4** zobrazíte **vlastnosti** okna.
+2. Stisknutím klávesy **F4** zobrazíte **vlastnosti** okna.
 
-3.  V **vlastnosti** okna, klikněte na tlačítko se třemi tečkami vedle **KnownTypes** vlastnost.
+3. V **vlastnosti** okna, klikněte na tlačítko se třemi tečkami vedle **KnownTypes** vlastnost.
 
 ## <a name="to-bring-up-the-type-collection-editor-for-the-invokemethod-activity"></a>Chcete-li přenést až Editor kolekce typu aktivity InvokeMethod
 
-1.  Vyberte **InvokeMethod** aktivity v návrhovém zobrazení.
+1. Vyberte **InvokeMethod** aktivity v návrhovém zobrazení.
 
-2.  Stisknutím klávesy **F4** zobrazíte **vlastnosti** okna.
+2. Stisknutím klávesy **F4** zobrazíte **vlastnosti** okna.
 
-3.  V **vlastnosti** okna, klikněte na tlačítko se třemi tečkami vedle **parametry GenericTypeArguments** vlastnost.
+3. V **vlastnosti** okna, klikněte na tlačítko se třemi tečkami vedle **parametry GenericTypeArguments** vlastnost.

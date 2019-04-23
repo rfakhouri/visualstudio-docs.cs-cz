@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eb8a9990c28d30d00efdfd98bd106dcd12b05c66
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 70960cc92d60ebbffa34dda75557dfcb9a1a0d67
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913376"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092718"
 ---
 # <a name="how-to-add-a-command-to-the-shortcut-menu"></a>Postupy: Přidání příkazu do místní nabídky
 
@@ -50,7 +50,7 @@ V tomto tématu použijte metodu, pokud:
 
    V opačném případě zvažte použití metody rozhraní MEF pro definovat příkazy. Další informace najdete v tématu [rozšíření vašeho DSL pomocí MEF](../modeling/extend-your-dsl-by-using-mef.md).
 
-##  <a name="VSCT"></a> Příkaz v Commands.Vsct deklarovat
+## <a name="VSCT"></a> Příkaz v Commands.Vsct deklarovat
  Příkazy nabídky jsou deklarovány v DslPackage\Commands.vsct. Tyto definice zadejte popisky, které položky nabídky a kde jsou uvedeny v nabídkách.
 
  Soubor, který upravíte, Commands.vsct, importuje definice z několika .h souborů, které jsou umístěné v adresáři *cesta pro instalaci sady Visual Studio SDK*\VisualStudioIntegration\Common\Inc. Zahrnuje také GeneratedVsct.vsct, který je generován z definice DSL.
@@ -59,9 +59,9 @@ V tomto tématu použijte metodu, pokud:
 
 ### <a name="to-add-the-command"></a>Chcete-li přidat příkaz
 
-1.  V **Průzkumníka řešení**v části **DslPackage** projektu, otevřete Commands.vsct.
+1. V **Průzkumníka řešení**v části **DslPackage** projektu, otevřete Commands.vsct.
 
-2.  V `Commands` elementu, definujte jedno nebo více tlačítek a skupinu. A *tlačítko* je položku v nabídce. A *skupiny* oddíl v nabídce. Pokud chcete definovat tyto položky, přidejte následující prvky:
+2. V `Commands` elementu, definujte jedno nebo více tlačítek a skupinu. A *tlačítko* je položku v nabídce. A *skupiny* oddíl v nabídce. Pokud chcete definovat tyto položky, přidejte následující prvky:
 
     ```xml
     <!-- Define a group - a section in the menu -->
@@ -90,7 +90,7 @@ V tomto tématu použijte metodu, pokud:
     > [!NOTE]
     > Každé tlačítko nebo skupiny je určený identifikátor GUID a identifikátor celé číslo. Můžete vytvořit několik skupin a tlačítka se stejným GUID. Musí však mít různé identifikátory. Názvy GUID a ID názvy jsou přeloženy na skutečné identifikátory GUID a číselné ID v `<Symbols>` uzlu.
 
-3.  Přidáte omezení viditelnosti pro příkaz tak, aby se načetl pouze v rámci jazyka specifického pro doménu. Další informace najdete v tématu [visibilityconstraints – Element](../extensibility/visibilityconstraints-element.md).
+3. Přidáte omezení viditelnosti pro příkaz tak, aby se načetl pouze v rámci jazyka specifického pro doménu. Další informace najdete v tématu [visibilityconstraints – Element](../extensibility/visibilityconstraints-element.md).
 
      Chcete-li to provést, přidejte následující prvky v `CommandTable` elementu po `Commands` elementu.
 
@@ -102,7 +102,7 @@ V tomto tématu použijte metodu, pokud:
     </VisibilityConstraints>
     ```
 
-4.  Definujte názvy, které jste použili pro identifikátory GUID a ID. Chcete-li to provést, přidejte `Symbols` element v `CommandTable` elementu po `Commands` elementu.
+4. Definujte názvy, které jste použili pro identifikátory GUID a ID. Chcete-li to provést, přidejte `Symbols` element v `CommandTable` elementu po `Commands` elementu.
 
     ```xml
     <Symbols>
@@ -115,37 +115,37 @@ V tomto tématu použijte metodu, pokud:
     </Symbols>
     ```
 
-5.  Nahraďte `{000...000}` s identifikátorem GUID, který identifikuje skupiny a položkami nabídky. Chcete-li získat nový identifikátor GUID, použijte **Create GUID** nástroj **nástroje** nabídky.
+5. Nahraďte `{000...000}` s identifikátorem GUID, který identifikuje skupiny a položkami nabídky. Chcete-li získat nový identifikátor GUID, použijte **Create GUID** nástroj **nástroje** nabídky.
 
     > [!NOTE]
     >  Pokud chcete přidat další skupiny nebo položky nabídky, můžete použít stejný identifikátor GUID. Ale musíte použít nové hodnoty `IDSymbols`.
 
-6.  V kódu, který jste zkopírovali z tohoto postupu nahraďte každý výskyt následující řetězce s vlastními řetězci:
+6. V kódu, který jste zkopírovali z tohoto postupu nahraďte každý výskyt následující řetězce s vlastními řetězci:
 
-    -   `grpidMyMenuGroup`
+    - `grpidMyMenuGroup`
 
-    -   `cmdidMyContextMenuCommand`
+    - `cmdidMyContextMenuCommand`
 
-    -   `guidCustomMenuCmdSet`
+    - `guidCustomMenuCmdSet`
 
-    -   `My Context Menu Command`
+    - `My Context Menu Command`
 
-##  <a name="version"></a> Aktualizace verze balíčku v Package.tt
+## <a name="version"></a> Aktualizace verze balíčku v Package.tt
  Kdykoli přidat nebo změnit příkazu, aktualizujte `version` parametr <xref:Microsoft.VisualStudio.Shell.ProvideMenuResourceAttribute> , která je použita na třídě balíčku ještě před vydáním nové verze jazyka specifického pro doménu.
 
  Protože třída balíčku je definováno ve vytvořeném souboru, aktualizujte atribut v souboru textové šablony, který generuje soubor Package.cs.
 
 ### <a name="to-update-the-packagett-file"></a>K aktualizaci souboru Package.tt
 
-1.  V **Průzkumníka řešení**v **DslPackage** v projektu **GeneratedCode** složku, otevřete soubor Package.tt.
+1. V **Průzkumníka řešení**v **DslPackage** v projektu **GeneratedCode** složku, otevřete soubor Package.tt.
 
-2.  Vyhledejte `ProvideMenuResource` atribut.
+2. Vyhledejte `ProvideMenuResource` atribut.
 
-3.  Přírůstek `version` parametr atributu, což je druhý parametr. Pokud chcete, můžete napsat název parametru explicitně na vás upozorní na její účel. Příklad:
+3. Přírůstek `version` parametr atributu, což je druhý parametr. Pokud chcete, můžete napsat název parametru explicitně na vás upozorní na její účel. Příklad:
 
      `[VSShell::ProvideMenuResource("1000.ctmenu", version: 2 )]`
 
-##  <a name="CommandSet"></a> Definuje chování příkazu
+## <a name="CommandSet"></a> Definuje chování příkazu
 
 Některé příkazy, které jsou implementovány v dílčí třídě, která je deklarována v DslPackage\GeneratedCode\CommandSet.cs již vašeho DSL. Přidání nových příkazů, musí tato třída rozšířit tak, že vytvoříte nový soubor, který obsahuje deklaraci částečné stejné třídy. Název třídy je obvykle  *\<YourDslName >*`CommandSet`. To je užitečné začněte tím, že název třídy ověření a zkontrolujete jeho obsah.
 
@@ -153,15 +153,15 @@ Třída set příkazu je odvozen z <xref:Microsoft.VisualStudio.Modeling.Shell.C
 
 ### <a name="extend-the-commandset-class"></a>Rozšíření třídy CommandSet
 
-1.  V Průzkumníku řešení v projektu DslPackage otevřete složku GeneratedCode a podívejte se do části CommandSet.tt a otevřete její vygenerovaný soubor CommandSet.cs. Poznámka: obor názvů a název první třídy, která je definována existuje. Například může se zobrazit:
+1. V Průzkumníku řešení v projektu DslPackage otevřete složku GeneratedCode a podívejte se do části CommandSet.tt a otevřete její vygenerovaný soubor CommandSet.cs. Poznámka: obor názvů a název první třídy, která je definována existuje. Například může se zobrazit:
 
      `namespace Company.Language1`
 
      `{ ...  internal partial class Language1CommandSet : ...`
 
-2.  V **DslPackage**, vytvořte složku s názvem **vlastní kód**. V této složce, vytvořte nový soubor třídy s názvem `CommandSet.cs`.
+2. V **DslPackage**, vytvořte složku s názvem **vlastní kód**. V této složce, vytvořte nový soubor třídy s názvem `CommandSet.cs`.
 
-3.  V novém souboru zápisu částečná deklarace, který má stejný obor názvů a název jako vygenerovanou dílčí třídu. Příklad:
+3. V novém souboru zápisu částečná deklarace, který má stejný obor názvů a název jako vygenerovanou dílčí třídu. Příklad:
 
      `namespace Company.Language1 /* Make sure this is correct */`
 
@@ -322,13 +322,13 @@ protected override IList<MenuCommand> GetMenuCommands()
 
 ### <a name="to-exercise-the-command"></a>K příkazu
 
-1.  Na **Průzkumníka řešení** nástrojů, klikněte na tlačítko **Transformovat všechny šablony**.
+1. Na **Průzkumníka řešení** nástrojů, klikněte na tlačítko **Transformovat všechny šablony**.
 
-2.  Stisknutím klávesy **F5** znovu sestavte řešení a spusťte ladění jazyka specifického pro doménu v experimentální sestavení.
+2. Stisknutím klávesy **F5** znovu sestavte řešení a spusťte ladění jazyka specifického pro doménu v experimentální sestavení.
 
-3.  V experimentální sestavení Otevřete diagram vzorku.
+3. V experimentální sestavení Otevřete diagram vzorku.
 
-4.  Klikněte pravým tlačítkem na jednotlivé položky v diagramu, chcete-li ověřit, že příkaz správně povolené nebo zakázané a odpovídajícím způsobem zobrazený nebo skrytý, v závislosti na vybrané položky.
+4. Klikněte pravým tlačítkem na jednotlivé položky v diagramu, chcete-li ověřit, že příkaz správně povolené nebo zakázané a odpovídajícím způsobem zobrazený nebo skrytý, v závislosti na vybrané položky.
 
 ## <a name="troubleshoot"></a>Řešení potíží
 
@@ -344,11 +344,11 @@ protected override IList<MenuCommand> GetMenuCommands()
 
 **Není volána metoda OnStatus**:
 
--   Ujistěte se, že identifikátory GUID a ID v kódu CommandSet shodovat s hodnotami v části symboly Commands.vsct.
+- Ujistěte se, že identifikátory GUID a ID v kódu CommandSet shodovat s hodnotami v části symboly Commands.vsct.
 
--   Commands.vsct Ujistěte se, že identifikátor GUID a ID v každé nadřazený uzel identifikovat správné nadřazené skupiny.
+- Commands.vsct Ujistěte se, že identifikátor GUID a ID v každé nadřazený uzel identifikovat správné nadřazené skupiny.
 
--   V příkazovém řádku aplikace Visual Studio zadejte devenv/Setup exp /rootsuffix. Potom restartujte instanci ladění aplikace Visual Studio.
+- V příkazovém řádku aplikace Visual Studio zadejte devenv/Setup exp /rootsuffix. Potom restartujte instanci ladění aplikace Visual Studio.
 
 - Projděte skrze OnStatus metodu k ověření tohoto příkazu. Viditelné a příkaz. Povolena je nastaveno na hodnotu true.
 

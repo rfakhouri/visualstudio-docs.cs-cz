@@ -6,12 +6,12 @@ ms.assetid: d22b5186-9e03-4e85-afc9-7cbe28522a6d
 caps.latest.revision: 14
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: add48cc007b9108e565ae89d987caf2797b897f0
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 96a4795d83c4ef4b5bad2d7dc2d5f06f2f3ab4cf
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59664634"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097229"
 ---
 # <a name="learn-app-building-basics-with-xamarinforms-in-visual-studio"></a>Základy vytváření aplikací s Xamarin.Forms v sadě Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,87 +22,87 @@ Jakmile jste udělali kroky [nastavení a instalaci](../cross-platform/setup-and
 
  Můžete udělat Tyhle věci na jejich vytváření:
 
--   [Nastavení řešení](#solution)
+- [Nastavení řešení](#solution)
 
--   [Zápis kódu služby sdílená data](#dataservice)
+- [Zápis kódu služby sdílená data](#dataservice)
 
--   [Začněte psát sdíleným kódem uživatelského rozhraní](#uicode)
+- [Začněte psát sdíleným kódem uživatelského rozhraní](#uicode)
 
--   [Testování aplikace pomocí emulátoru Visual Studia pro Android](#test)
+- [Testování aplikace pomocí emulátoru Visual Studia pro Android](#test)
 
--   [Dokončení uživatelského rozhraní pomocí přirozený vzhled a chování napříč platformami](#finish)
+- [Dokončení uživatelského rozhraní pomocí přirozený vzhled a chování napříč platformami](#finish)
 
 > [!TIP]
 >  Najdete kompletní zdrojový kód pro tento projekt v [ukázky xamarin forms úložišti na Githubu](https://github.com/xamarin/xamarin-forms-samples/tree/master/Weather).
 
-##  <a name="solution"></a> Nastavení řešení
+## <a name="solution"></a> Nastavení řešení
  Tyto kroky vytvoří řešení Xamarin.Forms, která obsahuje PCL pro sdílený kód a dva balíčky NuGet pro přidání.
 
-1.  V sadě Visual Studio vytvořte nový **prázdná aplikace (Xamarin.Forms přenosná)** řešení a pojmenujte ho **WeatherApp**. Tuto šablonu lze najít nejsnadněji tak, že zadáte **Xamarin.Forms** do vyhledávacího pole.
+1. V sadě Visual Studio vytvořte nový **prázdná aplikace (Xamarin.Forms přenosná)** řešení a pojmenujte ho **WeatherApp**. Tuto šablonu lze najít nejsnadněji tak, že zadáte **Xamarin.Forms** do vyhledávacího pole.
 
      Pokud tam není, bude pravděpodobně nutné nainstalujte si Xamarin, nebo povolte funkce sady Visual Studio 2015, najdete v článku [nastavení a instalaci](../cross-platform/setup-and-install.md).
 
      ![Vytvoření nové prázdné aplikace &#40;Xamarin.Forms Portable&#41; projektu](../cross-platform/media/crossplat-xamarin-formsguide-2.png "CrossPlat Xamarin FormsGuide 2")
 
-2.  Po kliknutí na tlačítko OK, abyste vytvořili řešení, budete mít několik jednotlivé projekty:
+2. Po kliknutí na tlačítko OK, abyste vytvořili řešení, budete mít několik jednotlivé projekty:
 
-    -   **WeatherApp (Portable)**: PCL, kde budete psát kód, který je sdílen napříč platformami, včetně běžné obchodní logiky a kód uživatelského rozhraní pomocí Xamarin.Forms.
+    - **WeatherApp (Portable)**: PCL, kde budete psát kód, který je sdílen napříč platformami, včetně běžné obchodní logiky a kód uživatelského rozhraní pomocí Xamarin.Forms.
 
-    -   **WeatherApp.Droid**: projekt obsahující kód nativní Android. To je nastaven jako výchozí projekt po spuštění.
+    - **WeatherApp.Droid**: projekt obsahující kód nativní Android. To je nastaven jako výchozí projekt po spuštění.
 
-    -   **WeatherApp.iOS**: projekt obsahující kód nativní aplikace pro iOS.
+    - **WeatherApp.iOS**: projekt obsahující kód nativní aplikace pro iOS.
 
-    -   **WeatherApp.UWP**: projekt, který obsahuje Windows 10 UPW kódu.
+    - **WeatherApp.UWP**: projekt, který obsahuje Windows 10 UPW kódu.
 
-    -   **WeatherApp.Windows (Windows 8.1)**: projekt obsahující nativní kód pro Windows 8.1.
+    - **WeatherApp.Windows (Windows 8.1)**: projekt obsahující nativní kód pro Windows 8.1.
 
-    -   **WeatherApp.WinPhone (Windows Phone 8.1)**: projekt obsahující nativní kód Windows Phone.
+    - **WeatherApp.WinPhone (Windows Phone 8.1)**: projekt obsahující nativní kód Windows Phone.
 
     > [!NOTE]
     >  Můžete odstranit kterýkoli z projektů pro platformu, která nejsou cílení zdarma. Pro účely tohoto návodu jsme budete odkazovat projekty Android, iOS a Windows Phone 8.1. Práce s UWP a Windows 8.1 projekty je velmi podobně jako při práci s projektem Windows Phone 8.1.
 
      V rámci každé nativní projektu mají přístup do nativní návrháře pro odpovídající platformu a můžete implementovat platformy jednotlivých obrazovek a funkčnosti podle potřeby.
 
-3.  Upgradujte balíček Xamarin.Forms NuGet v rámci vašeho řešení na nejnovější stabilní verzi následujícím způsobem. Doporučujeme, abyste to pokaždé, když vytvoříte nové řešení Xamarin:
+3. Upgradujte balíček Xamarin.Forms NuGet v rámci vašeho řešení na nejnovější stabilní verzi následujícím způsobem. Doporučujeme, abyste to pokaždé, když vytvoříte nové řešení Xamarin:
 
-    -   Vyberte **nástroje > Správce balíčků NuGet > spravovat balíčky NuGet pro řešení**.
+    - Vyberte **nástroje > Správce balíčků NuGet > spravovat balíčky NuGet pro řešení**.
 
-    -   V části **aktualizace** kartě **Xamarin.Forms** aktualizovat a zaškrtněte, pokud chcete aktualizovat všechny projekty v řešení. (Poznámka: nechat žádné aktualizace pro Xamarin.Android.Support nezaškrtnutou.)
+    - V části **aktualizace** kartě **Xamarin.Forms** aktualizovat a zaškrtněte, pokud chcete aktualizovat všechny projekty v řešení. (Poznámka: nechat žádné aktualizace pro Xamarin.Android.Support nezaškrtnutou.)
 
-    -   Aktualizace **verze** pole **poslední stabilní** verzi, která je k dispozici.
+    - Aktualizace **verze** pole **poslední stabilní** verzi, která je k dispozici.
 
-    -   Klikněte na tlačítko **aktualizace**.
+    - Klikněte na tlačítko **aktualizace**.
 
          ![Aktualizuje se balíček Xamarin.Forms NuGet](../cross-platform/media/crossplat-xamarin-formsguide-4.png "CrossPlat Xamarin FormsGuide 4")
 
-4.  Přidat **Newtonsoft.Json** a balíček NuGet do projektu PCL, které budete používat ke zpracování informace načtenými z datové služby weather:
+4. Přidat **Newtonsoft.Json** a balíček NuGet do projektu PCL, které budete používat ke zpracování informace načtenými z datové služby weather:
 
-    -   Ve správci balíčků NuGet (stále otevřen v kroku 3), vyberte **Procházet** kartu a vyhledejte **Newtonsoft**.
+    - Ve správci balíčků NuGet (stále otevřen v kroku 3), vyberte **Procházet** kartu a vyhledejte **Newtonsoft**.
 
-    -   Vyberte **Newtonsoft.Json**.
+    - Vyberte **Newtonsoft.Json**.
 
-    -   Zkontrolujte, **WeatherApp** projektu (jedná se o pouze projekt, ve které je potřeba nainstalovat balíček).
+    - Zkontrolujte, **WeatherApp** projektu (jedná se o pouze projekt, ve které je potřeba nainstalovat balíček).
 
-    -   Zkontrolujte **verze** pole se nastaví **nejnovější stabilní verze** verze.
+    - Zkontrolujte **verze** pole se nastaví **nejnovější stabilní verze** verze.
 
-    -   Klikněte na tlačítko **nainstalovat**.
+    - Klikněte na tlačítko **nainstalovat**.
 
-    -   ![Vyhledání a instalace balíčku Newtonsoft.Json NuGet](../cross-platform/media/crossplat-xamarin-formsguide-5.png "CrossPlat Xamarin FormsGuide 5")
+    - ![Vyhledání a instalace balíčku Newtonsoft.Json NuGet](../cross-platform/media/crossplat-xamarin-formsguide-5.png "CrossPlat Xamarin FormsGuide 5")
 
-5.  Opakujte krok 4 najít a nainstalovat **Microsoft.Net.Http** balíčku.
+5. Opakujte krok 4 najít a nainstalovat **Microsoft.Net.Http** balíčku.
 
-6.  Sestavte řešení a ověřte, že zde nejsou žádné chyby buildu.
+6. Sestavte řešení a ověřte, že zde nejsou žádné chyby buildu.
 
-##  <a name="dataservice"></a> Zápis kódu služby sdílená data
+## <a name="dataservice"></a> Zápis kódu služby sdílená data
  **WeatherApp (Portable)** projektu je, kde budete psát kód pro přenosné knihovny tříd (PCL), jež jsou sdílena mezi všemi platformami. V aplikaci je automaticky zahrnut PCL balíčky sestavení zařízení s iOS, Android a Windows Phone projektů.
 
  Ke spuštění této ukázky je nutné nejdřív zaregistrovat bezplatný klíč rozhraní API v [ http://openweathermap.org/appid ](http://openweathermap.org/appid).
 
  Takto přidejte pak kód PCL pro přístup a ukládání dat z této služby weather:
 
-1.  Klikněte pravým tlačítkem myši **WeatherApp** projektu a vyberte **Přidat > třída...** . V **přidat novou položku** dialogového okna, název souboru **Weather.cs**. Tato třída budete používat k ukládání dat ze služby data o počasí.
+1. Klikněte pravým tlačítkem myši **WeatherApp** projektu a vyberte **Přidat > třída...** . V **přidat novou položku** dialogového okna, název souboru **Weather.cs**. Tato třída budete používat k ukládání dat ze služby data o počasí.
 
-2.  Nahradí celý obsah **Weather.cs** následujícím kódem:
+2. Nahradí celý obsah **Weather.cs** následujícím kódem:
 
     ```csharp
     namespace WeatherApp
@@ -133,9 +133,9 @@ Jakmile jste udělali kroky [nastavení a instalaci](../cross-platform/setup-and
     }
     ```
 
-3.  Přidejte jinou třídu do projektu PCL s názvem **DataService.cs** ve které budete používat ke zpracování dat JSON z datové služby počasí.
+3. Přidejte jinou třídu do projektu PCL s názvem **DataService.cs** ve které budete používat ke zpracování dat JSON z datové služby počasí.
 
-4.  Nahradí celý obsah **DataService.cs** následujícím kódem:
+4. Nahradí celý obsah **DataService.cs** následujícím kódem:
 
     ```csharp
     using System.Threading.Tasks;
@@ -164,9 +164,9 @@ Jakmile jste udělali kroky [nastavení a instalaci](../cross-platform/setup-and
     }
     ```
 
-5.  Přidejte třídu třetí PCL s názvem **Core** místo, kam budete dáte sdílené obchodní logiku, jako jsou logiku, která tvoří řetězec dotazu s PSČ, volá službu data o počasí a naplní instance **počasí**třídy.
+5. Přidejte třídu třetí PCL s názvem **Core** místo, kam budete dáte sdílené obchodní logiku, jako jsou logiku, která tvoří řetězec dotazu s PSČ, volá službu data o počasí a naplní instance **počasí**třídy.
 
-6.  Nahraďte obsah **Core.cs** následujícím kódem:
+6. Nahraďte obsah **Core.cs** následujícím kódem:
 
     ```csharp
     using System;
@@ -210,18 +210,18 @@ Jakmile jste udělali kroky [nastavení a instalaci](../cross-platform/setup-and
     }
     ```
 
-7.  Sestavení **WeatherApp** projekt PCL, abyste měli jistotu, kód je správný.
+7. Sestavení **WeatherApp** projekt PCL, abyste měli jistotu, kód je správný.
 
-##  <a name="uicode"></a> Začněte psát sdíleným kódem uživatelského rozhraní
+## <a name="uicode"></a> Začněte psát sdíleným kódem uživatelského rozhraní
  Xamarin.Forms umožňuje implementovat v PCL sdíleným kódem uživatelského rozhraní. V tomto postupu přidáte obrazovku PCL s tlačítkem, jeho textu pomocí dat vrácených dat o počasí aktualizace služby kód přidaný v předchozí části:
 
-1.  Přidat **Forms Xaml Page** s názvem **WeatherPage.cs** kliknutím pravým tlačítkem myši **WeatherApp** projekt a výběrem **Přidat > Nová položka...** . V **přidat novou položku** dialogové okno hledání na "Formulářů," vyberte **Forms Xaml Page**a pojmenujte ho **WeatherPage.cs**.
+1. Přidat **Forms Xaml Page** s názvem **WeatherPage.cs** kliknutím pravým tlačítkem myši **WeatherApp** projekt a výběrem **Přidat > Nová položka...** . V **přidat novou položku** dialogové okno hledání na "Formulářů," vyberte **Forms Xaml Page**a pojmenujte ho **WeatherPage.cs**.
 
      Xamarin.Forms je založené na XAML, takže tento krok vytvoří **WeatherPage.xaml** soubor spolu se souborem vnořeného kódu **WeatherPage.xaml.cs**. To umožňuje generování uživatelského rozhraní XAML nebo kódu. Část v tomto názorném postupu budete používat.
 
      ![Přidání nové stránky XAML Xamarin.Forms](../cross-platform/media/crossplat-xamarin-formsguide-6.png "CrossPlat Xamarin FormsGuide 6")
 
-2.  Chcete-li přidat tlačítka na obrazovku WeatherPage, nahraďte obsah WeatherPage.xaml následujícími způsoby:
+2. Chcete-li přidat tlačítka na obrazovku WeatherPage, nahraďte obsah WeatherPage.xaml následujícími způsoby:
 
     ```xaml
     <?xml version="1.0" encoding="utf-8" ?>
@@ -234,7 +234,7 @@ Jakmile jste udělali kroky [nastavení a instalaci](../cross-platform/setup-and
 
      Všimněte si, že název tlačítka musí být definován pomocí **x: Name** atribut tak, aby toto tlačítko můžete odkazovat pomocí názvu z v rámci souboru kódu na pozadí.
 
-3.  Chcete-li přidat obslužnou rutinu události pro tlačítka **kliknutí na** událost aktualizace textu tlačítka, nahraďte obsah **WeatherPage.xaml.cs** níže uvedeného kódu. (Můžete změnit na jiný kód zip "60601".)
+3. Chcete-li přidat obslužnou rutinu události pro tlačítka **kliknutí na** událost aktualizace textu tlačítka, nahraďte obsah **WeatherPage.xaml.cs** níže uvedeného kódu. (Můžete změnit na jiný kód zip "60601".)
 
     ```csharp
     using System;
@@ -263,7 +263,7 @@ Jakmile jste udělali kroky [nastavení a instalaci](../cross-platform/setup-and
     }
     ```
 
-4.  Chcete-li otevřít **WeatherPage** jako první obrazovku při spuštění aplikace nahradí výchozí konstruktor v **App.cs** následujícím kódem:
+4. Chcete-li otevřít **WeatherPage** jako první obrazovku při spuštění aplikace nahradí výchozí konstruktor v **App.cs** následujícím kódem:
 
     ```csharp
     public App()
@@ -272,22 +272,22 @@ Jakmile jste udělali kroky [nastavení a instalaci](../cross-platform/setup-and
     }
     ```
 
-5.  Sestavte projekt WeatherApp PCL a ujistěte se, že kód je správný.
+5. Sestavte projekt WeatherApp PCL a ujistěte se, že kód je správný.
 
-##  <a name="test"></a> Testování aplikace pomocí emulátoru Visual Studia pro Android
+## <a name="test"></a> Testování aplikace pomocí emulátoru Visual Studia pro Android
  Nyní jste připraveni aplikaci spustit! Můžeme spustit jenom verze Androidu nyní chcete ověřit, že aplikace je získání dat ze služby počasí. Později je potřeba taky spustit na iOS a Windows Phone verze po přidání další prvky uživatelského rozhraní. (Poznámka: Pokud používáte Visual Studio ve Windows 7, budeme postupujte stejným způsobem, ale místo toho se Xamarin Playeru.)
 
-1.  Nastavte **WeatherApp.Droid** projekt jako spouštěný projekt tak, že pravým tlačítkem myši a vyberete **nastavit jako spouštěný projekt**.
+1. Nastavte **WeatherApp.Droid** projekt jako spouštěný projekt tak, že pravým tlačítkem myši a vyberete **nastavit jako spouštěný projekt**.
 
-2.  Na panelu nástrojů sady Visual Studio, zobrazí se vám **WeatherApp.Droid** uvedené jako cílový projekt. Vyberte jednu z emulátorů Androidu pro ladění a spuštění **F5**. Doporučujeme použít jeden z **emulátoru VS** možnosti, které se spustí aplikaci v emulátoru Visual Studia pro Android možnosti.
+2. Na panelu nástrojů sady Visual Studio, zobrazí se vám **WeatherApp.Droid** uvedené jako cílový projekt. Vyberte jednu z emulátorů Androidu pro ladění a spuštění **F5**. Doporučujeme použít jeden z **emulátoru VS** možnosti, které se spustí aplikaci v emulátoru Visual Studia pro Android možnosti.
 
      ![Výběr cíle ladění emulátoru VS](../cross-platform/media/crossplat-xamarin-formsguide-7.png "CrossPlat Xamarin FormsGuide 7")
 
-3.  Při spuštění aplikace se spustila v emulátoru, klikněte na tlačítko **získat počasí** tlačítko. Byste měli vidět text na tlačítko Aktualizovat, aby **Chicago, IL**, což je *název* vlastnost dat načtených z této služby počasí.
+3. Při spuštění aplikace se spustila v emulátoru, klikněte na tlačítko **získat počasí** tlačítko. Byste měli vidět text na tlačítko Aktualizovat, aby **Chicago, IL**, což je *název* vlastnost dat načtených z této služby počasí.
 
      ![Informace o počasí aplikace před a po klepnutí na tlačítko](../cross-platform/media/crossplat-xamarin-formsguide-8.png "CrossPlat Xamarin FormsGuide 8")
 
-##  <a name="finish"></a> Dokončení uživatelského rozhraní pomocí přirozený vzhled a chování napříč platformami
+## <a name="finish"></a> Dokončení uživatelského rozhraní pomocí přirozený vzhled a chování napříč platformami
  Xamarin.Forms vykreslí nativní ovládací prvky uživatelského rozhraní pro každou platformu, aby vaše aplikace automaticky nemá přirozený vzhled a chování. Tento údaj zobrazíte více jasně, Pojďme dokončení uživatelského rozhraní pomocí vstupního pole pro PSČ a pak zobrazí data o počasí, která je vrácena ze služby.
 
 1. Nahraďte obsah **WeatherPage.xaml** s následujícím kódem. Všimněte si, že každý prvek má název, pomocí **x: Name** atributu, jak je popsáno výše, aby element může odkazovat z kódu. Xamarin.Forms také nabízí celou řadu [možnosti rozložení](http://developer.xamarin.com/guides/xamarin-forms/controls/layouts/) (xamarin.com); tady, používá WeatherPage [StackLayout](http://developer.xamarin.com/api/type/Xamarin.Forms.StackLayout/) (xamarin.com).

@@ -10,12 +10,12 @@ ms.assetid: 8a4ba300-425d-447c-91d9-c53f4345feee
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: de44dde72e339a2afe4caff779e3468ae2b8601e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 197df09d54500e16ca4f904662693bdfc983f7b3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942892"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095110"
 ---
 # <a name="analyze-load-test-results-using-the-load-test-analyzer"></a>Analýza výsledků zátěžových testů pomocí Analyzéru zátěžového testu
 
@@ -25,11 +25,11 @@ Nalezení problémových míst, identifikovat chyby a měřit zlepšení ve vaš
 
 Analýza výsledků zátěžových testů v těchto způsobů:
 
--   Sledujte zátěžový test, když je spuštěn.
+- Sledujte zátěžový test, když je spuštěn.
 
--   Analyzujte test zatížení po jeho dokončení.
+- Analyzujte test zatížení po jeho dokončení.
 
--   Zobrazení výsledků z předchozího testu zatížení.
+- Zobrazení výsledků z předchozího testu zatížení.
 
 Můžete také vytvořit sestavy, které porovnávají dva nebo více sestav pro analýzu trendů sdílet se zúčastněnými stranami. Zobrazit [sestav zátěžové testy s výsledky pro porovnávání testů a analýzu trendů](../test/compare-load-test-results.md).
 

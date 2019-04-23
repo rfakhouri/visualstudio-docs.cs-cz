@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 45bd40d2261a30ea455132ba92841c33b968eac0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: eaf8982afb01ee07eb8c2d672f351c6e917620a6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614984"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094421"
 ---
 # <a name="when-to-create-project-types"></a>Kdy vytvořit typy projektů
 Vytváří se nový typ projektu poskytuje základ pro přizpůsobení [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] pro vaše uživatele. Ale vytváří se nový typ projektu se nevyžaduje pro všechny [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] vlastní nastavení. Následující pokyny vám měla pomoci určit, zda je nový typ projektu vyžaduje pro váš scénář.
@@ -23,26 +23,26 @@ Vytváří se nový typ projektu poskytuje základ pro přizpůsobení [!INCLUDE
 ## <a name="create-a-new-project-type"></a>Vytvořit nový typ projektu
  Pokud chcete přizpůsobit, je nutné vytvořit typ projektu [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] tak, aby fungoval v jedné nebo více z následujících způsobů:
 
--   Součástí sestavení, nasazení, konfigurace a Správa zdrojového kódu.
+- Součástí sestavení, nasazení, konfigurace a Správa zdrojového kódu.
 
--   Nabízí podporu ladění.
+- Nabízí podporu ladění.
 
--   Zobrazit položky projektu v **Průzkumníka řešení**.
+- Zobrazit položky projektu v **Průzkumníka řešení**.
 
--   Použití **otevřít projekt** nebo **nový projekt** dialogové okno.
+- Použití **otevřít projekt** nebo **nový projekt** dialogové okno.
 
--   Vnoření projektů podpory.
+- Vnoření projektů podpory.
 
 ## <a name="extend-an-existing-project-type"></a>Rozšířit existující typ projektu
  Můžete chtít vytvořit nový typ projektu, můžete použít [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] následujícím způsobem upravit nebo rozšířit existující typ projektu chování, například úprava procesu sestavení pro [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] projekty:
 
--   Pracovat s více soubory jako jeden celek.
+- Pracovat s více soubory jako jeden celek.
 
--   Zobrazte jeden soubor jako hierarchii podřízené položky.
+- Zobrazte jeden soubor jako hierarchii podřízené položky.
 
--   Zobrazte příkaz kontextu kolem editory.
+- Zobrazte příkaz kontextu kolem editory.
 
--   Zobrazte kontext služby pro editory.
+- Zobrazte kontext služby pro editory.
 
 ## <a name="use-an-existing-project-type"></a>Použít existující typ projektu
  Vytvoření nového projektu je někdy nezbytné. V následující tabulce jsou uvedeny úlohy, které nemají typ projektu pro vytvoření.

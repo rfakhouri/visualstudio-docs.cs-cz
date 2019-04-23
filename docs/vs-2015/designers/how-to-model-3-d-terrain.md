@@ -9,12 +9,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7935176505e535c35b1c864e56cd314a75e7897c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3c9d088be89e2cf963df65a0163713c297615121
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54764113"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097476"
 ---
 # <a name="how-to-model-3-d-terrain"></a>Postupy: Model 3D terénu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,15 +23,15 @@ Tento dokument popisuje způsob použití Editoru modelů a vytvořte model 3D t
   
  Tento dokument vysvětluje tyto činnosti:  
   
--   Přidání objektů do scény  
+- Přidání objektů do scény  
   
--   Výběrem tváří a body  
+- Výběrem tváří a body  
   
--   Možnosti překladu  
+- Možnosti překladu  
   
--   Použití **rozdělit plochu** nástroj  
+- Použití **rozdělit plochu** nástroj  
   
--   Rámců objekt návrhové ploše  
+- Rámců objekt návrhové ploše  
   
 ## <a name="creating-a-3-d-terrain-model"></a>Vytvoření modelu 3D terénu  
  Můžete vytvořit 3D terénu rozdělení roviny provést další tváře a potom manipulace s jejich vrcholy pro vytvoření zajímavých funkcí terénu.  

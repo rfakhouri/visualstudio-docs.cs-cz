@@ -11,12 +11,12 @@ ms.assetid: b6c82167-e2a5-4cff-8c8b-2d72e2a9092c
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 3ef6037220337f0dc5005952849c9700703709f2
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: e8bc80e28979a1adf86f4b0490f84cc393450521
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57872731"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096128"
 ---
 # <a name="vsix-project-template"></a>Šablona projektu VSIX
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,37 +48,37 @@ Použijte šablonu projektu VSIX zabalit jeden nebo více rozšíření sady Vis
   
 #### <a name="to-package-an-extension-by-using-a-vsix-project"></a>Balíček rozšíření pomocí projektu VSIX  
   
-1.  Sestavení projektů, které tvoří rozšíření.  
+1. Sestavení projektů, které tvoří rozšíření.  
   
-2.  Vytvořte projekt VSIX s použitím **projekt VSIX** šablony.  
+2. Vytvořte projekt VSIX s použitím **projekt VSIX** šablony.  
   
      Source.extension.vsixmanifest se otevře v **Manifest Designer**.  
   
-3.  Na **prostředky** , vyberte **nový** tlačítko.  
+3. Na **prostředky** , vyberte **nový** tlačítko.  
   
      **Přidat nové aktivum** zobrazí se dialogové okno.  
   
-4.  V **typ** , zvolte typ rozšíření přidat.  
+4. V **typ** , zvolte typ rozšíření přidat.  
   
-5.  Chcete-li přidat rozšíření nebo obsah elementu, který je součástí aktuálního řešení (například šablonu položky nebo zkompilovaného sestavení), postupujte následovně:  
+5. Chcete-li přidat rozšíření nebo obsah elementu, který je součástí aktuálního řešení (například šablonu položky nebo zkompilovaného sestavení), postupujte následovně:  
   
-    1.  V **zdroj** klikněte na položku **projekt v aktuálním řešení**.  
+    1. V **zdroj** klikněte na položku **projekt v aktuálním řešení**.  
   
-    2.  V **projektu** , zvolte název rozšíření.  
+    2. V **projektu** , zvolte název rozšíření.  
   
-    3.  V **vložit do této složky** zadejte název složky, do které se má prostředek pro vložení a klikněte na tlačítko **OK** tlačítko.  
+    3. V **vložit do této složky** zadejte název složky, do které se má prostředek pro vložení a klikněte na tlačítko **OK** tlačítko.  
   
-6.  Přidání rozšíření nebo element content, který není součástí aktuálního řešení, proveďte následující kroky:  
+6. Přidání rozšíření nebo element content, který není součástí aktuálního řešení, proveďte následující kroky:  
   
-    1.  V **zdroj** seznamu, zvolte **soubor v systému souborů**.  
+    1. V **zdroj** seznamu, zvolte **soubor v systému souborů**.  
   
-    2.  V **cesta** pole, zadejte úplnou cestu k souboru rozšíření zkompilovaných nebo komprimované nebo použít **Procházet** tlačítko, přejděte k souboru.  
+    2. V **cesta** pole, zadejte úplnou cestu k souboru rozšíření zkompilovaných nebo komprimované nebo použít **Procházet** tlačítko, přejděte k souboru.  
   
-    3.  V **vložit do této složky** zadejte název složky, do které se má prostředek pro vložení a klikněte na tlačítko **OK** tlačítko.  
+    3. V **vložit do této složky** zadejte název složky, do které se má prostředek pro vložení a klikněte na tlačítko **OK** tlačítko.  
   
-7.  Pokud chcete, aby váš balíček zahrnout další rozšíření, je přidáte stejným způsobem.  
+7. Pokud chcete, aby váš balíček zahrnout další rozšíření, je přidáte stejným způsobem.  
   
-8.  Sestavte řešení.  
+8. Sestavte řešení.  
   
      [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] : sestavení souboru .vsix, který obsahuje soubor manifestu VSIX, souboru [Content_Types] .xml a všechny prostředky rozšíření, které jste přidali do projektu.  
   

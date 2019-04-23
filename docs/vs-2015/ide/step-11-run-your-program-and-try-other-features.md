@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e0fe2ce712e4322eb9ebe83549ff485f0e2615f2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: de301a380eb93cd1f4dd27150f631be58f59b3eb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54790381"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093901"
 ---
 # <a name="step-11-run-your-program-and-try-other-features"></a>Krok 11: Spuštění programu a vyzkoušení dalších funkcí
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,38 +27,38 @@ Aplikace je dokončené a připravené ke spuštění. Můžete spustit váš pr
   
 ### <a name="to-run-your-program-and-set-the-background-color"></a>Spusťte program a nastavit barvu pozadí  
   
-1.  Vyberte tlačítko F5 nebo na panelu nabídek zvolte **ladění**, **spustit ladění**.  
+1. Vyberte tlačítko F5 nebo na panelu nabídek zvolte **ladění**, **spustit ladění**.  
   
-2.  Před otevřením obrázku vyberte **nastavit barvu pozadí** tlačítko. **Barva** zobrazí se dialogové okno.  
+2. Před otevřením obrázku vyberte **nastavit barvu pozadí** tlačítko. **Barva** zobrazí se dialogové okno.  
   
      ![Dialogové okno barev](../ide/media/express-colordialog.png "Express_ColorDialog")  
 Dialogové okno barvy  
   
-3.  Zvolte barvu, kterou chcete nastavit barvu pozadí ovládacího prvku PictureBox. Prohlédněte si blíže `backgroundButton_Click()` metoda pochopit, jak to funguje.  
+3. Zvolte barvu, kterou chcete nastavit barvu pozadí ovládacího prvku PictureBox. Prohlédněte si blíže `backgroundButton_Click()` metoda pochopit, jak to funguje.  
   
     > [!NOTE]
     >  Načíst obrázek z Internetu vložením jeho URL do **otevřít soubor** dialogové okno. Pokuste se najít obrázek s průhledným pozadím, takže se zobrazí barva pozadí.  
   
-4.  Zvolte **Vymazat obrázek** tlačítko, abyste měli jistotu, že se vymaže. Ukončete program výběrem **Zavřít** tlačítko.  
+4. Zvolte **Vymazat obrázek** tlačítko, abyste měli jistotu, že se vymaže. Ukončete program výběrem **Zavřít** tlačítko.  
   
 ### <a name="to-try-other-features"></a>Vyzkoušení dalších funkcí  
   
--   Změňte barvu formuláře a tlačítek pomocí **BackColor** vlastnost.  
+- Změňte barvu formuláře a tlačítek pomocí **BackColor** vlastnost.  
   
--   Přizpůsobte si tlačítka a zaškrtávací políčko pomocí **písmo** a **ForeColor** vlastnosti.  
+- Přizpůsobte si tlačítka a zaškrtávací políčko pomocí **písmo** a **ForeColor** vlastnosti.  
   
--   Změna formuláře **FormBorderStyle** a **ControlBox** vlastnosti.  
+- Změna formuláře **FormBorderStyle** a **ControlBox** vlastnosti.  
   
--   Pomocí formuláře **AcceptButton** a **CancelButton** vlastností tohoto tlačítka je automaticky kliknuto, když uživatel stiskne klávesu ENTER nebo ESC. Nechejte program otevřít **otevřít soubor** dialogové okno když uživatel vybere klávesu ENTER a zavřít okno, když uživatel vybere klávesu ESC.  
+- Pomocí formuláře **AcceptButton** a **CancelButton** vlastností tohoto tlačítka je automaticky kliknuto, když uživatel stiskne klávesu ENTER nebo ESC. Nechejte program otevřít **otevřít soubor** dialogové okno když uživatel vybere klávesu ENTER a zavřít okno, když uživatel vybere klávesu ESC.  
   
 ### <a name="to-continue-or-review"></a>Chcete-li pokračovat nebo přezkoumat  
   
--   Další informace o programování v sadě Visual Studio najdete v tématu [koncepty programování](http://msdn.microsoft.com/library/65c12cca-af4f-4017-886e-2dbc00a189d6).  
+- Další informace o programování v sadě Visual Studio najdete v tématu [koncepty programování](http://msdn.microsoft.com/library/65c12cca-af4f-4017-886e-2dbc00a189d6).  
   
--   Další informace o jazyce Visual Basic, naleznete v tématu [vývoj aplikací pomocí jazyka Visual Basic](http://msdn.microsoft.com/library/1e1c0c81-6d95-4167-a98b-44b1efb6d25f).  
+- Další informace o jazyce Visual Basic, naleznete v tématu [vývoj aplikací pomocí jazyka Visual Basic](http://msdn.microsoft.com/library/1e1c0c81-6d95-4167-a98b-44b1efb6d25f).  
   
--   Další informace o jazyce Visual C# najdete v tématu [Úvod do jazyka C# a rozhraní .NET Framework](http://msdn.microsoft.com/library/0a2dff4e-cd84-42ff-8141-e89889b24081).  
+- Další informace o jazyce Visual C# najdete v tématu [Úvod do jazyka C# a rozhraní .NET Framework](http://msdn.microsoft.com/library/0a2dff4e-cd84-42ff-8141-e89889b24081).  
   
--   Chcete-li přejít k dalšímu kurzu, přečtěte si téma [kurz 2: Vytvoření matematického kvízu](../ide/tutorial-2-create-a-timed-math-quiz.md).  
+- Chcete-li přejít k dalšímu kurzu, přečtěte si téma [kurz 2: Vytvoření matematického kvízu](../ide/tutorial-2-create-a-timed-math-quiz.md).  
   
--   Chcete-li vrátit k předchozímu kroku tutoriálu, přečtěte si téma [krok 10: Napsat kód pro přídavná tlačítka a zaškrtávací políčko](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md).
+- Chcete-li vrátit k předchozímu kroku tutoriálu, přečtěte si téma [krok 10: Napsat kód pro přídavná tlačítka a zaškrtávací políčko](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md).

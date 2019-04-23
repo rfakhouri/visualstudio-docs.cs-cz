@@ -8,14 +8,14 @@ ms.assetid: a608bfba-1a43-4a60-b73a-1fe53ef58098
 caps.latest.revision: 10
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5adef222f42c3dc2b6035bfa7ab25441051597e0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ca472a8db08f337d873f0e43475a9231f2999b13
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54804343"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096618"
 ---
-# <a name="create-a-unit-test-project"></a>Vytvoření projektu testů jednotek
+# <a name="create-a-unit-test-project"></a>Vytvoření projektu testování částí
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Testy jednotek často zrcadlí struktury kódu v rámci testu. Pro každého kódu projektu v produktu by například vytvořit projekt testování částí. Projekt testů může být ve stejném řešení jako produkční kód nebo může být v samostatném řešení. Můžete mít více jednotek testování projektů v řešení.  
@@ -25,21 +25,21 @@ Testy jednotek často zrcadlí struktury kódu v rámci testu. Pro každého kó
   
 ## <a name="to-create-a-unit-test-project"></a>Chcete-li vytvořit projekt testování částí:  
   
-1.  Na **souboru** nabídce zvolte **nový** a klikněte na tlačítko **projektu** (klávesnice: Ctrl + Shift + N).  
+1. Na **souboru** nabídce zvolte **nový** a klikněte na tlačítko **projektu** (klávesnice: Ctrl + Shift + N).  
   
-2.  V dialogovém okně Nový projekt rozbalte **nainstalováno** uzlu, vyberte jazyk, který chcete použít pro testovací projekt a pak zvolte **testování**.  
+2. V dialogovém okně Nový projekt rozbalte **nainstalováno** uzlu, vyberte jazyk, který chcete použít pro testovací projekt a pak zvolte **testování**.  
   
-3.  Chcete-li použít jeden z rozhraní pro testování částí Microsoft, zvolte **projekt testů jednotek** ze seznamu šablon projektu. V opačném případě vyberte šablonu projektu jednotky testů, který chcete použít. Otestování projektu účty našeho příkladu, by pojmenujte projekt AccountsTests.  
+3. Chcete-li použít jeden z rozhraní pro testování částí Microsoft, zvolte **projekt testů jednotek** ze seznamu šablon projektu. V opačném případě vyberte šablonu projektu jednotky testů, který chcete použít. Otestování projektu účty našeho příkladu, by pojmenujte projekt AccountsTests.  
   
-4.  V projektu testování částí přidejte odkaz na testovaný kód.  Tady je postup pro vytvoření odkazu na projekt kódu ve stejném řešení:  
+4. V projektu testování částí přidejte odkaz na testovaný kód.  Tady je postup pro vytvoření odkazu na projekt kódu ve stejném řešení:  
   
-    1.  Vyberte projekt v Průzkumníku řešení.  
+    1. Vyberte projekt v Průzkumníku řešení.  
   
-    2.  Na **projektu** nabídce zvolte **přidat odkaz...** .  
+    2. Na **projektu** nabídce zvolte **přidat odkaz...** .  
   
-    3.  V dialogovém okně Správce odkazů otevřete **řešení** uzlu a zvolte **projekty**. Zkontrolujte název projektu kódu a zavřete dialogové okno.  
+    3. V dialogovém okně Správce odkazů otevřete **řešení** uzlu a zvolte **projekty**. Zkontrolujte název projektu kódu a zavřete dialogové okno.  
   
-5.  Pokud je kód, který chcete testovat v jiném umístění, přečtěte si téma [Správa odkazů v projektu](../ide/managing-references-in-a-project.md) informace o přidávání odkazů.  
+5. Pokud je kód, který chcete testovat v jiném umístění, přečtěte si téma [Správa odkazů v projektu](../ide/managing-references-in-a-project.md) informace o přidávání odkazů.  
   
 ## <a name="next-steps"></a>Další kroky  
  **Zápis testů jednotek**  

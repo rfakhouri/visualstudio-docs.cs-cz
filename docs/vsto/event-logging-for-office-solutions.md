@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3501c963a3fdc97151fdacce723942ca4e4bc93f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 480a355ee2af321341c54b90edcc582d49102186
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628881"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092861"
 ---
 # <a name="event-logging-for-office-solutions"></a>Protokolování události u řešení pro systém Office
   Můžete v prohlížeči událostí ve Windows najdete v článku zprávy o výjimkách, které jsou zachyceny [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] při instalaci nebo odinstalaci řešení Office. Tyto zprávy z protokolování událostí můžete použít k vyřešení instalace a problémů s nasazením.
@@ -32,19 +32,19 @@ ms.locfileid: "56628881"
 
 ### <a name="to-read-the-event-log-in-windows-server-2003-and-windows-xp"></a>Přečíst protokol událostí systému Windows Server 2003 a Windows XP
 
-1.  V Ovládacích panelech otevřete **nástroje pro správu**.
+1. V Ovládacích panelech otevřete **nástroje pro správu**.
 
-2.  Spustit **Prohlížeč událostí**.
+2. Spustit **Prohlížeč událostí**.
 
-3.  Vyberte v seznamu protokolů událostí **aplikace**.
+3. Vyberte v seznamu protokolů událostí **aplikace**.
 
-4.  Na **zobrazení** nabídky, klikněte na tlačítko **filtr**.
+4. Na **zobrazení** nabídky, klikněte na tlačítko **filtr**.
 
-5.  V **zdroj události** seznamu vyberte **VSTO 4.0**.
+5. V **zdroj události** seznamu vyberte **VSTO 4.0**.
 
-6.  Pro instalaci události v **ID události** zadejte **4096**.
+6. Pro instalaci události v **ID události** zadejte **4096**.
 
-7.  Klikněte na tlačítko **OK** zobrazíte filtrované zobrazení.
+7. Klikněte na tlačítko **OK** zobrazíte filtrované zobrazení.
 
 ### <a name="to-read-the-event-log-in-windows-7-windows-vista-and-windows-server-2008"></a>Přečíst protokol událostí ve Windows 7, Windows Vista a Windows Server 2008
 
@@ -84,17 +84,17 @@ ms.locfileid: "56628881"
 
 ### <a name="to-disable-the-event-log"></a>Chcete-li zakázat protokol událostí
 
-1.  V Ovládacích panelech otevřete **systému**.
+1. V Ovládacích panelech otevřete **systému**.
 
-2.  Na **Upřesnit** klikněte na tlačítko **proměnné prostředí**.
+2. Na **Upřesnit** klikněte na tlačítko **proměnné prostředí**.
 
-3.  V **systémové proměnné** podokně klikněte na tlačítko **nový**.
+3. V **systémové proměnné** podokně klikněte na tlačítko **nový**.
 
-4.  V **nová systémová proměnná** dialogovém okně **VSTO_EVENTLOGDISABLED** v **název proměnné** pole.
+4. V **nová systémová proměnná** dialogovém okně **VSTO_EVENTLOGDISABLED** v **název proměnné** pole.
 
-5.  V **hodnotu proměnné** zadejte **1**.
+5. V **hodnotu proměnné** zadejte **1**.
 
-6.  Klikněte na **OK**.
+6. Klikněte na **OK**.
 
 ## <a name="see-also"></a>Viz také:
 - [Nasazení řešení Office](../vsto/deploying-an-office-solution.md)

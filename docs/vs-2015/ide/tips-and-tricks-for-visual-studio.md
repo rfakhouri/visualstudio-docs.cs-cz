@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6eb3e77c8d84f7603828c39b637bb49a8310a269
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 24c876edafaee848a050099fdb031f4637436f22
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54771176"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096566"
 ---
 # <a name="tips-and-tricks-for-visual-studio"></a>Tipy a triky pro Visual Studio
 
@@ -22,23 +22,23 @@ ms.locfileid: "54771176"
 
 Můžete přejít v sadě Visual Studio snadněji pomocí zástupců v tomto tématu. Další obecné informace najdete v tématu [klávesové zkratky v sadě Visual Studio](default-keyboard-shortcuts-in-visual-studio.md). Informace o tom, jak optimalizovat pro usnadnění přístupu sady Visual Studio najdete v tématu [a tipy k přístupnosti](../ide/reference/accessibility-tips-and-tricks.md).
 
--   [Správa oken](../ide/tips-and-tricks-for-visual-studio.md#BKMK_WindowMgmt)
+- [Správa oken](../ide/tips-and-tricks-for-visual-studio.md#BKMK_WindowMgmt)
 
--   [Zkratky používané v okně](../ide/tips-and-tricks-for-visual-studio.md#BKMK_WindowShortcuts)
+- [Zkratky používané v okně](../ide/tips-and-tricks-for-visual-studio.md#BKMK_WindowShortcuts)
 
--   [Hledání Visual Studio](../ide/tips-and-tricks-for-visual-studio.md#BKMK_Search)
+- [Hledání Visual Studio](../ide/tips-and-tricks-for-visual-studio.md#BKMK_Search)
 
--   [Editor najít](../ide/tips-and-tricks-for-visual-studio.md#BKMK_EditorFind)
+- [Editor najít](../ide/tips-and-tricks-for-visual-studio.md#BKMK_EditorFind)
 
--   [Editor kódu](../ide/tips-and-tricks-for-visual-studio.md#BKMK_CodeEditor)
+- [Editor kódu](../ide/tips-and-tricks-for-visual-studio.md#BKMK_CodeEditor)
 
--   [Panely nástrojů](../ide/tips-and-tricks-for-visual-studio.md#BKMK_Toolbars)
+- [Panely nástrojů](../ide/tips-and-tricks-for-visual-studio.md#BKMK_Toolbars)
 
--   [Ladění](../ide/tips-and-tricks-for-visual-studio.md#BKMK_Debugging)
+- [Ladění](../ide/tips-and-tricks-for-visual-studio.md#BKMK_Debugging)
 
--   [Správa životního cyklu aplikací](../ide/tips-and-tricks-for-visual-studio.md#BKMK_ALM)
+- [Správa životního cyklu aplikací](../ide/tips-and-tricks-for-visual-studio.md#BKMK_ALM)
 
-##  <a name="BKMK_WindowMgmt"></a> Správa oken
+## <a name="BKMK_WindowMgmt"></a> Správa oken
 
 |||
 |-|-|
@@ -49,7 +49,7 @@ Můžete přejít v sadě Visual Studio snadněji pomocí zástupců v tomto té
 |Zobrazit seznam otevřených souborů|Ctrl + Alt + Šipka dolů|
 |Zobrazit všechny Windows s plovoucí desetinnou čárkou|Ctrl+Shift+M|
 
-##  <a name="BKMK_WindowShortcuts"></a> Zkratky používané v okně
+## <a name="BKMK_WindowShortcuts"></a> Zkratky používané v okně
 
 |||
 |-|-|
@@ -59,7 +59,7 @@ Můžete přejít v sadě Visual Studio snadněji pomocí zástupců v tomto té
 |Spustit novou instanci|Win+Shift+n|
 |Přepínání mezi Windows|Win + n|
 
-##  <a name="BKMK_Search"></a> Hledání Visual Studio
+## <a name="BKMK_Search"></a> Hledání Visual Studio
 
 |||
 |-|-|
@@ -69,7 +69,7 @@ Můžete přejít v sadě Visual Studio snadněji pomocí zástupců v tomto té
 |Výsledky v rozsahu snadného spuštění|- @opt Možnosti<br />- @cmd Příkazy<br />- @mru Naposledy použitých<br />- @doc Otevřených dokumentech|
 |Hledání v možnostech nástrojů|CTRL + E|
 
-##  <a name="BKMK_EditorFind"></a> Editor najít
+## <a name="BKMK_EditorFind"></a> Editor najít
 
 |||
 |-|-|
@@ -84,7 +84,7 @@ Můžete přejít v sadě Visual Studio snadněji pomocí zástupců v tomto té
 |Najít v souborech|Ctrl+Shift+F|
 |Nahradit v souborech|Ctrl+Shift+H|
 
-##  <a name="BKMK_CodeEditor"></a> Editor kódu
+## <a name="BKMK_CodeEditor"></a> Editor kódu
 
 |||
 |-|-|
@@ -109,7 +109,7 @@ Můžete přejít v sadě Visual Studio snadněji pomocí zástupců v tomto té
 |Navigace mezi více výsledky operace Peek|F8 a Shift+F8|
 |Přepnout mezi oknem editoru kódu a oknem Náhled definice|Shift+Esc|
 
-##  <a name="BKMK_Toolbars"></a> Panely nástrojů
+## <a name="BKMK_Toolbars"></a> Panely nástrojů
 
 |||
 |-|-|
@@ -118,7 +118,7 @@ Můžete přejít v sadě Visual Studio snadněji pomocí zástupců v tomto té
 |Najít režim příkazů textového pole|Typ ">"|
 |Vytvořit nový alias|> příkaz aliasu NewAlias|
 
-##  <a name="BKMK_Debugging"></a> Ladění
+## <a name="BKMK_Debugging"></a> Ladění
 
 |||
 |-|-|
@@ -137,7 +137,7 @@ Můžete přejít v sadě Visual Studio snadněji pomocí zástupců v tomto té
 |Vymazání mezipaměti příkazového podokna|> kompatibilní se specifikací|
 |Tisk hodnoty příkazového podokna|?varname|
 
-##  <a name="BKMK_ALM"></a> Správa životního cyklu aplikací
+## <a name="BKMK_ALM"></a> Správa životního cyklu aplikací
 
 Zobrazit [klávesové zkratky: Visual Studio Online a TFS web portal a Průzkumník týmových projektů](/azure/devops/project/navigation/keyboard-shortcuts?view=vsts).
 

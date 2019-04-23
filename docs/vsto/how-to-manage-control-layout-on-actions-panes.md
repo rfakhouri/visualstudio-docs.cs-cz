@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 62e8a2c44fd25119493a52d8276af0b0886cf2d0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 94e3ccc30507ccd7995c4d4fad548fe5ff425365
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56636252"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094605"
 ---
 # <a name="how-to-manage-control-layout-on-actions-panes"></a>Postupy: Správa rozložení ovládacích prvků v podoknech akcí
   Podokna akcí je ukotven na pravém rohu dokumentu nebo sešitu ve výchozím nastavení; ale ho lze ukotvit vlevo, horní nebo dolní. Pokud používáte více uživatelských ovládacích prvků, můžete napsat kód správně zásobníku uživatelské ovládací prvky v podokně Akce. Další informace najdete v tématu [přehled podokna akcí](../vsto/actions-pane-overview.md).
@@ -36,25 +36,25 @@ ms.locfileid: "56636252"
 
 ## <a name="to-set-the-stack-order-of-the-actions-pane-controls"></a>K nastavení pořadí zásobníku ovládacích prvků podokna akce
 
-1.  Otevřete projekt úrovni dokumentu pro aplikaci Microsoft Office Word, který zahrnuje podokna akcí s více uživatelských ovládacích prvků nebo vnořené akce podokna ovládacích prvků. Další informace najdete v tématu [jak: Přidání podokna akcí do dokumentů aplikace Word nebo sešitů aplikace Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md).
+1. Otevřete projekt úrovni dokumentu pro aplikaci Microsoft Office Word, který zahrnuje podokna akcí s více uživatelských ovládacích prvků nebo vnořené akce podokna ovládacích prvků. Další informace najdete v tématu [jak: Přidání podokna akcí do dokumentů aplikace Word nebo sešitů aplikace Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md).
 
-2.  Klikněte pravým tlačítkem na **ThisDocument.cs** nebo **ThisDocument.vb** v **Průzkumníka řešení** a potom klikněte na tlačítko **zobrazit kód**.
+2. Klikněte pravým tlačítkem na **ThisDocument.cs** nebo **ThisDocument.vb** v **Průzkumníka řešení** a potom klikněte na tlačítko **zobrazit kód**.
 
-3.  V <xref:Microsoft.Office.Tools.ActionsPane.OrientationChanged> obslužná rutina události z podokna akcí, zkontrolujte, jestli je vodorovné orientaci ovládacího prvku podokna akcí.
+3. V <xref:Microsoft.Office.Tools.ActionsPane.OrientationChanged> obslužná rutina události z podokna akcí, zkontrolujte, jestli je vodorovné orientaci ovládacího prvku podokna akcí.
 
      [!code-csharp[Trin_VstcoreActionsPaneWord#30](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#30)]
      [!code-vb[Trin_VstcoreActionsPaneWord#30](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#30)]
 
-4.  Při vodorovné orientace zásobníku v podokně Akce řídí z levé strany; v opačném případě z horní části zásobníku je.
+4. Při vodorovné orientace zásobníku v podokně Akce řídí z levé strany; v opačném případě z horní části zásobníku je.
 
      [!code-csharp[Trin_VstcoreActionsPaneWord#31](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#31)]
      [!code-vb[Trin_VstcoreActionsPaneWord#31](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#31)]
 
-5.  V C#, je nutné přidat obslužnou rutinu události pro `ActionsPane` k <xref:Microsoft.Office.Tools.Word.Document.Startup> obslužné rutiny události. Informace o vytváření obslužných rutin událostí, naleznete v tématu [jak: Vytváření obslužných rutin událostí v projektech pro systém Office](../vsto/how-to-create-event-handlers-in-office-projects.md).
+5. V C#, je nutné přidat obslužnou rutinu události pro `ActionsPane` k <xref:Microsoft.Office.Tools.Word.Document.Startup> obslužné rutiny události. Informace o vytváření obslužných rutin událostí, naleznete v tématu [jak: Vytváření obslužných rutin událostí v projektech pro systém Office](../vsto/how-to-create-event-handlers-in-office-projects.md).
 
      [!code-csharp[Trin_VstcoreActionsPaneWord#32](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#32)]
 
-6.  Spusťte projekt a ověřte, že jsou ovládací prvky podokna akce při podokna akcí je ukotven v horní části dokumentu a ovládací prvky jsou skládané shora dolů, když v podokně Akce je ukotven na pravé straně dokumentu skládaný zleva doprava.
+6. Spusťte projekt a ověřte, že jsou ovládací prvky podokna akce při podokna akcí je ukotven v horní části dokumentu a ovládací prvky jsou skládané shora dolů, když v podokně Akce je ukotven na pravé straně dokumentu skládaný zleva doprava.
 
 ## <a name="example"></a>Příklad
  [!code-csharp[Trin_VstcoreActionsPaneWord#29](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#29)]
@@ -63,7 +63,7 @@ ms.locfileid: "56636252"
 ## <a name="compile-the-code"></a>Kompilace kódu
  Tento příklad vyžaduje:
 
--   Určuje projekt úrovni dokumentu aplikace Word se podokna akcí, která obsahuje více uživatelských ovládacích prvků nebo podokně vnořená akce.
+- Určuje projekt úrovni dokumentu aplikace Word se podokna akcí, která obsahuje více uživatelských ovládacích prvků nebo podokně vnořená akce.
 
 ## <a name="see-also"></a>Viz také:
 - [Přehled podokna akcí](../vsto/actions-pane-overview.md)

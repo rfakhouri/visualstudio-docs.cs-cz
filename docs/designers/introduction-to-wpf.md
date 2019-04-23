@@ -11,12 +11,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: bc943fe059850b024a5067d36bcc14d258ca5565
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: d15f0e8e5c5cbdac5a130804977adf90385adfe1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56635069"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093680"
 ---
 # <a name="wpf-overview"></a>Přehled grafického subsystému WPF (Windows Presentation Foundation)
 
@@ -224,9 +224,9 @@ Následující obrázek ukazuje výsledek z kódu XAML v předchozím příkladu
 
 Většina aplikací se vytvoří uživatelům poskytnout způsob, jak zobrazit a upravit data. Pro aplikace WPF práci při ukládání a přístup k datům je již podle technologie, jako je SQL Server a ADO .NET. Po přístupu k datům a načtena do aplikací spravovaných objektů, začne těžkou práci pro aplikace WPF. V podstatě to zahrnuje dvě věci:
 
-1.  Kopírování dat ze spravovaných objektů do ovládacích prvků, kde můžete zobrazit a upravovat data.
+1. Kopírování dat ze spravovaných objektů do ovládacích prvků, kde můžete zobrazit a upravovat data.
 
-2.  Zajištění, že změny dat s použitím ovládacích prvků jsou zkopírovány zpět na spravované objekty.
+2. Zajištění, že změny dat s použitím ovládacích prvků jsou zkopírovány zpět na spravované objekty.
 
 Pro zjednodušení vývoje aplikací poskytuje WPF modul vazby dat automaticky provádět tyto kroky. Je základní jednotkou modul vazby dat <xref:System.Windows.Data.Binding> třídy, jehož úkolem je vytvoření vazby ovládacího prvku (cíl vazby) na datový objekt (zdroje připojení). Tento vztah je znázorněn v následujícím obrázku:
 
@@ -575,11 +575,11 @@ Následující příklad definuje běžnou barvu pozadí, které jsou sdíleny <
 
 V tomto příkladu implementuje pomocí prostředek barvy pozadí `Window.Resources` element vlastnosti. Tento prostředek je k dispozici pro všechny podřízené objekty <xref:System.Windows.Window>. Existuje řada různých prostředků obory, včetně následujících, uvedeny v pořadí, ve kterém jsou vyřešeny:
 
-1.  Jednotlivé ovládací prvky (použití zděděnou <xref:System.Windows.FrameworkElement.Resources%2A?displayProperty=fullName> vlastnost).
+1. Jednotlivé ovládací prvky (použití zděděnou <xref:System.Windows.FrameworkElement.Resources%2A?displayProperty=fullName> vlastnost).
 
-2.  A <xref:System.Windows.Window> nebo <xref:System.Windows.Controls.Page> (také pomocí zděděnou <xref:System.Windows.FrameworkElement.Resources%2A?displayProperty=fullName> vlastnost).
+2. A <xref:System.Windows.Window> nebo <xref:System.Windows.Controls.Page> (také pomocí zděděnou <xref:System.Windows.FrameworkElement.Resources%2A?displayProperty=fullName> vlastnost).
 
-3.  <xref:System.Windows.Application> (Pomocí <xref:System.Windows.Application.Resources%2A?displayProperty=fullName> vlastnost).
+3. <xref:System.Windows.Application> (Pomocí <xref:System.Windows.Application.Resources%2A?displayProperty=fullName> vlastnost).
 
 Řadu oborů poskytuje flexibilitu s ohledem na způsob, ve kterém můžete definovat a sdílení vašich prostředků.
 

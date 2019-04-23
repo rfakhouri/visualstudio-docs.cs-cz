@@ -8,12 +8,12 @@ ms.assetid: 0e384ea1-4d9e-4307-8884-6e183900732c
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 10d0ada1ba86f57b9b40a40b6ffc560379d411dc
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 257c5944ee1939849c4163fef518abf513183998
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59670092"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095812"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Barvy a styly pro sadu Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -79,7 +79,7 @@ ms.locfileid: "59670092"
 
  **Nástroje > dialogové okno Možnosti**
 
-##  <a name="BKMK_TheVSColorService"></a> Služba VSColor
+## <a name="BKMK_TheVSColorService"></a> Služba VSColor
  Visual Studio poskytuje službu barva prostředí, označovaný taky jako služba VSColor nebo služba barva prostředí. Tato služba umožňuje svázat nastavení barev pro každý motiv obsahující název hodnota barvy barevných prvků uživatelského rozhraní. Službu VSColor musí použít pro všechny prvky uživatelského rozhraní tak, aby barvy automaticky změnit tak, aby odrážela aktuální uživatel vybral motiv a tak, aby uživatelské rozhraní svázaná se službou barva prostředí se bude integrovat s nové motivy v budoucích verzích sady Visual Studio.
 
 ### <a name="how-the-service-works"></a>Jak služba funguje
@@ -256,18 +256,18 @@ protected override void Dispose(bool disposing)
 }
 ```
 
-##  <a name="BKMK_ChoosingHighContrastColors"></a> Výběr vysoký kontrast – barvy
+## <a name="BKMK_ChoosingHighContrastColors"></a> Výběr vysoký kontrast – barvy
 
 ### <a name="overview"></a>Přehled
  Windows používá několik motivů vysokého kontrastu úrovni systému, které zvyšují barevný kontrast textu, pozadí a obrázků, provádění prvky se zobrazí na obrazovce zřetelný. Z důvodu usnadnění je důležité, že prvky rozhraní sady Visual Studio nereaguje správně uživatelé přepněte motiv s vysokým kontrastem.
 
  Vysoký kontrast – motivy lze použít pouze na několik systémových barev. Pokud zvolíte, že váš systém názvy barev, mějte na paměti následující tipy:
 
-1.  **Zvolte systémové barvy, které mají stejný význam sémantické** jako element, který se barevné zvýrazňování. Například pokud zvolíte vysoký kontrast pro text v rámci časového období, použijte WindowText a není ControlText.
+1. **Zvolte systémové barvy, které mají stejný význam sémantické** jako element, který se barevné zvýrazňování. Například pokud zvolíte vysoký kontrast pro text v rámci časového období, použijte WindowText a není ControlText.
 
-2.  **Vybrat dvojice popředí nebo pozadí** společně nebo nesmí být jistí, že v všechny Vysokokontrastních motivech bude fungovat výběr barvy.
+2. **Vybrat dvojice popředí nebo pozadí** společně nebo nesmí být jistí, že v všechny Vysokokontrastních motivech bude fungovat výběr barvy.
 
-3.  **Určit, jaké části uživatelského rozhraní jsou nejdůležitější a ujistěte se, že se zvýraznění oblasti obsahu.** Velké množství podrobností, která by obvykle rozlišit lišila odstín barvy, dojde ke ztrátě, takže použití barvy ohraničení silné je společné pro definování oblasti obsahu, protože nejsou žádné varianty barev pro různé oblasti obsahu.
+3. **Určit, jaké části uživatelského rozhraní jsou nejdůležitější a ujistěte se, že se zvýraznění oblasti obsahu.** Velké množství podrobností, která by obvykle rozlišit lišila odstín barvy, dojde ke ztrátě, takže použití barvy ohraničení silné je společné pro definování oblasti obsahu, protože nejsou žádné varianty barev pro různé oblasti obsahu.
 
 ### <a name="system-color-set"></a>Sada barev systému
  V tabulce v [WPF Blog týmu: Odkaz na SystemColors](http://blogs.msdn.com/b/wpf/archive/2010/11/30/systemcolors-reference.aspx) označuje kompletní sadu názvy barev systému a odpovídající odstíny zobrazí v každé motiv.
@@ -323,7 +323,7 @@ protected override void Dispose(bool disposing)
 |WindowFrame|– Integrované vývojové prostředí ohraničení|
 |WindowText|-Automatického schovávání kartu popředí<br />– Vybraný nástroj okno Karta popředí<br />– Bez fokusu nebo nevybraný prozatímní kartě popředí a na kartě okna dokumentu bez fokusu<br />-Popředí výchozí zobrazení a strom při najetí myší nad nevybrané glyfů<br />– Okraj vybraná karta okna nástroj<br />-Pozadí thumb posuvník, ohraničení a piktogram|
 
-##  <a name="BKMK_ExposingColorsForEndUsers"></a> Vystavení barvy pro koncové uživatele
+## <a name="BKMK_ExposingColorsForEndUsers"></a> Vystavení barvy pro koncové uživatele
 
 ### <a name="overview"></a>Přehled
  Někdy budete chtít povolit koncovému uživateli umožňují upravit uživatelské rozhraní, jako je například při vytváření editoru kódu nebo návrhovou plochu. Nejběžnější způsob je pomocí **nástroje > Možnosti** dialogového okna. Pokud měli vysoce specializované uživatelské rozhraní, které vyžaduje speciální ovládací prvky, je nejjednodušší způsob, jak k dispozici přizpůsobení prostřednictvím **písma a barvy** stránky v rámci **prostředí** části dialogového okna. Pro každý prvek, který zveřejníte pro přizpůsobení uživatel může zvolit změnit barvu popředí, pozadí nebo obojí.
@@ -335,13 +335,13 @@ protected override void Dispose(bool disposing)
 
  Pokud chcete implementovat vlastní kategorie nebo zobrazit položky, musí VSPackage:
 
--   **Vytvořte nebo Identifikujte kategorií v registru.** Implementace rozhraní IDE **písma a barvy** stránku vlastností používá tyto informace se správně dotázat služba podporující dané kategorie.
+- **Vytvořte nebo Identifikujte kategorií v registru.** Implementace rozhraní IDE **písma a barvy** stránku vlastností používá tyto informace se správně dotázat služba podporující dané kategorie.
 
--   **Vytvořte nebo Identifikujte skupiny v registru (volitelné).** Může být užitečné k definování skupiny, která představuje sjednocení dvou nebo více kategorií. Pokud skupina je definována, rozhraní IDE automaticky sloučí podkategorie a distribuuje zobrazení položek v rámci skupiny.
+- **Vytvořte nebo Identifikujte skupiny v registru (volitelné).** Může být užitečné k definování skupiny, která představuje sjednocení dvou nebo více kategorií. Pokud skupina je definována, rozhraní IDE automaticky sloučí podkategorie a distribuuje zobrazení položek v rámci skupiny.
 
--   **Implementace podpora integrované vývojové prostředí.**
+- **Implementace podpora integrované vývojové prostředí.**
 
--   **Zpracování změn písma a barvy.**
+- **Zpracování změn písma a barvy.**
 
 #### <a name="to-create-or-identify-categories"></a>K vytvoření nebo určení kategorie
  Vytvořit zvláštní druh položky registru kategorie v části [HKLM\SOFTWARE\Microsoft \Visual Studio\\< verze sady Visual Studio\>\FontAndColors\\< kategorie\>]. \<Kategorie > je nelokalizovaný název kategorie.
@@ -426,11 +426,11 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\FontAndColors\CSharp T
 
  **POZNÁMKA:**
 
--   "NameID" = ID prostředku název lokalizované kategorie v balíčku
+- "NameID" = ID prostředku název lokalizované kategorie v balíčku
 
--   "ToolWindowPackage" = identifikátor GUID balíčku
+- "ToolWindowPackage" = identifikátor GUID balíčku
 
--   "Kategorie" = "{9FF46859-A47E-47bf-8AC5-EC3DBE69D1FE}" je uvedené jenom jako příklad a skutečná hodnota může být poskytované implementátora nový identifikátor GUID.
+- "Kategorie" = "{9FF46859-A47E-47bf-8AC5-EC3DBE69D1FE}" je uvedené jenom jako příklad a skutečná hodnota může být poskytované implementátora nový identifikátor GUID.
 
 ### <a name="set-the-font-and-color-property-category-guid"></a>Nastavit vlastnost kategorii písma a barvy GUID
  Následující příklad kódu ukazuje nastavení kategorie identifikátory GUID.

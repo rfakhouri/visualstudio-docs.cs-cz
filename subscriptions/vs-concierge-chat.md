@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Další informace o benefitech specialistou součástí předplatných sady Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: 8ad38cb22b00a0be1c68a0368dbdb22ca621ba58
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: fd190dbd22f25dd14e18d11f73ee17327fc8c27d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59664528"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093888"
 ---
 # <a name="concierge-chat"></a>Komunikace se specialistou
 
@@ -60,5 +60,5 @@ Nejste si jistí které předplatné používáte?  Připojte se k [ https://my.
    O: Pomoc s problémy s účty, fakturace a předplatných je dostupná v několika jazycích.  Pomoc při hledání informací o produktu a technické dokumentace je k dispozici v angličtině.
 
 ## <a name="support-resources"></a>Informační zdroje podpory
--  Potřebujete pomoc se prodeje, předplatnými, účty a fakturací pro předplatná sady Visual Studio, obraťte se na Visual Studio [podpora předplatných](https://visualstudio.microsoft.com/subscriptions/support/).
--  Máte dotaz k Visual Studio IDE, DevOps služby Azure nebo jiných produktů Visual Studio nebo služeb?  Navštivte [Visual Studio – podpora](https://visualstudio.microsoft.com/support/).
+- Potřebujete pomoc se prodeje, předplatnými, účty a fakturací pro předplatná sady Visual Studio, obraťte se na Visual Studio [podpora předplatných](https://visualstudio.microsoft.com/subscriptions/support/).
+- Máte dotaz k Visual Studio IDE, DevOps služby Azure nebo jiných produktů Visual Studio nebo služeb?  Navštivte [Visual Studio – podpora](https://visualstudio.microsoft.com/support/).

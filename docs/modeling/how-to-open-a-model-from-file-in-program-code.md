@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e4884aba3deb3a450b373a6d19abd9c7cf5bdbff
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 18956cd3f4fa1a550808577f9e7fec9c9b193b4c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55945284"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095858"
 ---
 # <a name="how-to-open-a-model-from-file-in-program-code"></a>Postupy: Otevření modelu ze souboru v kódu programu
 DSL modely můžete otevřít v libovolné aplikaci.
@@ -24,11 +24,11 @@ DSL modely můžete otevřít v libovolné aplikaci.
 
 #### <a name="to-set-the-target-framework"></a>Chcete-li nastavit cílové rozhraní
 
-1.  Otevřete projekt sady Visual Studio pro aplikace, ve kterém chcete číst modelu DSL.
+1. Otevřete projekt sady Visual Studio pro aplikace, ve kterém chcete číst modelu DSL.
 
-2.  V **Průzkumníka řešení**, klikněte pravým tlačítkem na projekt a potom klikněte na tlačítko **vlastnosti**.
+2. V **Průzkumníka řešení**, klikněte pravým tlačítkem na projekt a potom klikněte na tlačítko **vlastnosti**.
 
-3.  V okně Vlastnosti projektu na **aplikace** kartu, nastavte **Cílová architektura** pole **rozhraní .NET Framework 4**.
+3. V okně Vlastnosti projektu na **aplikace** kartu, nastavte **Cílová architektura** pole **rozhraní .NET Framework 4**.
 
 > [!NOTE]
 >  Můžete potřebovat k tomu i v případě, že jste vybrali **rozhraní .NET Framework 4** v dialogovém okně vytvoření projektu. Cílová architektura, která by neměla být **rozhraní .NET Framework 4 Client Profile**.
@@ -36,22 +36,22 @@ DSL modely můžete otevřít v libovolné aplikaci.
 ## <a name="references"></a>Odkazy
  Je nutné přidat tyto odkazy do projektu aplikace Visual Studio:
 
--   `Microsoft.VisualStudio.Modeling.Sdk.11.0`
+- `Microsoft.VisualStudio.Modeling.Sdk.11.0`
 
-    -   Pokud nevidíte příkazem **.NET** kartu **Add References** dialogovém okně klikněte na tlačítko **Procházet** kartu a přejít na `%Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Common\Assemblies\`.
+    - Pokud nevidíte příkazem **.NET** kartu **Add References** dialogovém okně klikněte na tlačítko **Procházet** kartu a přejít na `%Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Common\Assemblies\`.
 
--   Sestavení DSL, který najdete ve složce bin projektu DSL. Její název je obvykle ve formátu: *Společnost*. *YourProject*`.Dsl.dll`.
+- Sestavení DSL, který najdete ve složce bin projektu DSL. Její název je obvykle ve formátu: *Společnost*. *YourProject*`.Dsl.dll`.
 
 ## <a name="important-classes-in-the-dsl"></a>Důležité třídy v DSL
  Předtím, než můžete napsat kód, který čte vašeho DSL, byste měli znát názvy některých prostor tříd vygenerovaných podle vašeho DSL. Ve vašem řešení DSL, otevřete **Dsl** projektu a podívejte se **GeneratedCode** složky. Případně, poklepejte na sestavení DSL ve vašem projektu **odkazy**a otevřete obor názvů DSL v **prohlížeče objektů**.
 
  Jedná se o třídy, které byste měli identifikovat:
 
--   *YourDslRootClass* – jde o název kořenové třídy ve vašich `DslDefinition.dsl`.
+- *YourDslRootClass* – jde o název kořenové třídy ve vašich `DslDefinition.dsl`.
 
--   *YourDslName* `SerializationHelper` – Tato třída je definována v `SerializationHelper.cs` ve vašem projektu DSL.
+- *YourDslName* `SerializationHelper` – Tato třída je definována v `SerializationHelper.cs` ve vašem projektu DSL.
 
--   *YourDslName* `DomainModel` – Tato třída je definována v `DomainModel.cs` ve vašem projektu DSL.
+- *YourDslName* `DomainModel` – Tato třída je definována v `DomainModel.cs` ve vašem projektu DSL.
 
 ## <a name="reading-from-a-file"></a>Čtení ze souboru
  Následující příklad je určen ke čtení DSL, ve kterém jsou důležité třídy následujícím způsobem:

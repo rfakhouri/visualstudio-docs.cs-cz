@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c8d86c206eca3ecb1e1fc43e9540485cd83f93a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 95e42442e8dce5db1ef6b670043bf1f26e554773
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55918426"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094660"
 ---
 # <a name="keyboard-shortcuts-in-the-workflow-designer"></a>Klávesové zkratky v návrháři postupu provádění
 
@@ -57,13 +57,13 @@ Následující seznam uvádí gesta použitý k vytvoření vývojový diagram p
 
 - Připojení aktivity:
 
-    1.  Vyberte zdrojová aktivita tabulátor do aktivity.
+    1. Vyberte zdrojová aktivita tabulátor do aktivity.
 
-    2.  Stiskněte kombinaci kláves CTRL + E, M tolikrát, kolikrát podle potřeby přesuňte fokus klávesnice na cílovou aktivitu.
+    2. Stiskněte kombinaci kláves CTRL + E, M tolikrát, kolikrát podle potřeby přesuňte fokus klávesnice na cílovou aktivitu.
 
-    3.  Stiskněte kombinaci kláves CTRL + E, S přidat cílová aktivita do výběru.
+    3. Stiskněte kombinaci kláves CTRL + E, S přidat cílová aktivita do výběru.
 
-    4.  Stiskněte kombinaci kláves CTRL + E, F, přidání konektoru ze zdroje do cíle.
+    4. Stiskněte kombinaci kláves CTRL + E, F, přidání konektoru ze zdroje do cíle.
 
 Poznámky o připojení pomocí klávesnice aktivity:
 

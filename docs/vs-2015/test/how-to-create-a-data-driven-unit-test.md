@@ -15,12 +15,12 @@ ms.assetid: a0322bc5-02c8-4f9f-af43-100a60b1bd28
 caps.latest.revision: 35
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 02f55f39a045dcc0cc0b8eddf46134d4a380c9f1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: cdc38967a229424badac0cb6b887f44820b71284
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54779159"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095760"
 ---
 # <a name="how-to-create-a-data-driven-unit-test"></a>Postupy: Vytvoření testu částí řízeného daty
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,23 +37,23 @@ Pomocí rozhraní pro testování jednotek Microsoft pro spravovaný kód, můž
   
 - [Zápis testovací metody](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Writing_the_test_method)  
   
-  -   [Zadání atribut](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Specifying_the_DataSourceAttribute)  
+  - [Zadání atribut](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Specifying_the_DataSourceAttribute)  
   
-  -   [Pomocí TestContext.DataRow pro přístup k datům](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Using_TestContext_DataRow_to_access_the_data)  
+  - [Pomocí TestContext.DataRow pro přístup k datům](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Using_TestContext_DataRow_to_access_the_data)  
   
 - [Spuštění testu a zobrazení výsledků](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Running_the_test_and_viewing_results)  
   
   Vytvoření testu jednotek řízené daty zahrnuje následující kroky:  
   
-1.  Vytvořte zdroj dat, který obsahuje hodnoty, které můžete použít testovací metody. Zdroj dat může být libovolný typ, který je registrován v počítači, na kterém běží test.  
+1. Vytvořte zdroj dat, který obsahuje hodnoty, které můžete použít testovací metody. Zdroj dat může být libovolný typ, který je registrován v počítači, na kterém běží test.  
   
-2.  Přidat soukromé <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> pole a veřejnou `TestContext` vlastnost testovací třídy.  
+2. Přidat soukromé <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> pole a veřejnou `TestContext` vlastnost testovací třídy.  
   
-3.  Vytvořit metodu testovací jednotky a přidejte <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute> atribut k němu.  
+3. Vytvořit metodu testovací jednotky a přidejte <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute> atribut k němu.  
   
-4.  Použít <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.DataRow%2A> vlastnost indexeru pro načtení hodnoty, které můžete použít v rámci testu.  
+4. Použít <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.DataRow%2A> vlastnost indexeru pro načtení hodnoty, které můžete použít v rámci testu.  
   
-##  <a name="BKMK_The_method_under_test"></a> Testované metody  
+## <a name="BKMK_The_method_under_test"></a> Testované metody  
  Jako příklad předpokládejme, že jsme vytvořili:  
   
 1. Volá se řešení `MyBank` , který přijme a zpracuje transakce pro různé typy účtů.  
@@ -80,7 +80,7 @@ public int AddIntegers(int first, int second)
 }  
 ```  
   
-##  <a name="BKMK_Creating_a_data_source"></a> Vytvoření zdroje dat  
+## <a name="BKMK_Creating_a_data_source"></a> Vytvoření zdroje dat  
  K testování `AddIntegers` metoda, vytvoříme zdroj dat, která určuje rozsah hodnot pro parametry a součet, který očekáváte, že má být vrácen. V našem příkladu vytvoříme s názvem databáze Sql Compact `MathsData` a tabulku s názvem `AddIntegersData` , který obsahuje následující názvy sloupců a hodnot  
   
 |Prvníčíslo|Druhéčíslo|Součet|  
@@ -89,7 +89,7 @@ public int AddIntegers(int first, int second)
 |1|1|2|  
 |2|-3|-1|  
   
-##  <a name="BKMK_Adding_a_TestContext_to_the_test_class"></a> Přidání TestContext pro třídu testu  
+## <a name="BKMK_Adding_a_TestContext_to_the_test_class"></a> Přidání TestContext pro třídu testu  
  Vytvoří rozhraní testování částí `TestContext` objekt pro uložení informace o zdroji dat pro test řízený daty. Tento objekt rozhraní pak nastaví jako hodnotu `TestContext` vlastnost, kterou vytvoříme.  
   
 ```  
@@ -105,7 +105,7 @@ public TestContext TestContext
   
  V testovací metodě, získáte přístup k datům prostřednictvím `DataRow` vlastnost indexer `TestContext`.  
   
-##  <a name="BKMK_Writing_the_test_method"></a> Zápis testovací metody  
+## <a name="BKMK_Writing_the_test_method"></a> Zápis testovací metody  
  Testovací metody pro `AddIntegers` je docela jednoduché. Pro každý řádek ve zdroji dat, říkáme `AddIntegers` s **Prvníčíslo** a **Druhéčíslo** sloupec hodnoty jako parametry a ověříme návratovou hodnotu proti **součet**hodnota sloupce:  
   
 ```  
@@ -131,7 +131,7 @@ public void AddIntegers_FromDataSourceTest()
   
  Všimněte si, že `Assert` metoda obsahuje zprávu, která se zobrazí `x` a `y` hodnoty selhání iterace. Ve výchozím nastavení s potvrzením hodnoty `expected` a `actual`, jsou již zahrnuty podrobnosti o selhání testu.  
   
-###  <a name="BKMK_Specifying_the_DataSourceAttribute"></a> Zadání atribut  
+### <a name="BKMK_Specifying_the_DataSourceAttribute"></a> Zadání atribut  
  `DataSource` Atribut určuje připojovací řetězec pro zdroj dat a název tabulky, který používáte v testovací metodě. Přesné informace v připojovacím řetězci se liší v závislosti na tom, jaký druh zdroje dat, kterou používáte. V tomto příkladu jsme použili SqlServerCe databáze.  
   
 ```  
@@ -165,7 +165,7 @@ public void AddIntegers_FromDataSourceTest()
     )]  
 ```  
   
-###  <a name="BKMK_Using_TestContext_DataRow_to_access_the_data"></a> Pomocí TestContext.DataRow pro přístup k datům  
+### <a name="BKMK_Using_TestContext_DataRow_to_access_the_data"></a> Pomocí TestContext.DataRow pro přístup k datům  
  Pro přístup k datům v `AddIntegersData` tabulky, použijte `TestContext.DataRow` indexeru. `DataRow` je <xref:System.Data.DataRow> objektu, tak se nám načíst hodnoty sloupců podle názvů index nebo sloupec. Protože hodnoty jsou vráceny jako objekty, potřebujeme je převést na typ odpovídající:  
   
 ```  
@@ -173,7 +173,7 @@ int x = Convert.ToInt32(TestContext.DataRow["FirstNumber"]);
   
 ```  
   
-##  <a name="BKMK_Running_the_test_and_viewing_results"></a> Spuštění testu a zobrazení výsledků  
+## <a name="BKMK_Running_the_test_and_viewing_results"></a> Spuštění testu a zobrazení výsledků  
  Po dokončení zápisu testovací metody vytvoření testovacího projektu. Testovací metoda se zobrazí v okně Průzkumníka testů v **nespuštěné testy** skupiny. Jak spustit, zápis a znovu spouštěny, zobrazuje Průzkumník testů výsledky ve skupinách **neúspěšné testy**, **úspěšné testy**, a **nespuštěné testy**. Můžete zvolit **spustit všechny** chcete spustit všechny testy, nebo zvolte **spuštění...**  vybrat podmnožinu testů ke spuštění.  
   
  Panel výsledků testu v horní části stránky Průzkumníka je animovaný při spuštění testu. Na konci testovacího běhu panelu budou zelené, pokud všechny testy prošly nebo red Pokud některé testy selhaly. Přehled testovacího běhu se zobrazí v podokně podrobností v dolní části okna Průzkumníka testů. Vyberte test, chcete-li zobrazit podrobnosti o testu v dolním podokně.  

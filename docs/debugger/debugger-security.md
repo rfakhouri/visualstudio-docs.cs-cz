@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d23f3c2677f1e99a80b5a3f05d1f6f4f69294e27
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 384d7b3488e6ef90994e24e95fbe7a516428e2bd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56707364"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092354"
 ---
 # <a name="debugger-security"></a>Zabezpečení ladicího programu
 Možnost ladit jiným procesem poskytuje velmi široký mocniny, ke kterým by jinak máte, zejména v případě vzdáleného ladění. Škodlivý ladicí program může způsobit poškození rozšířených na počítači, který se právě ladí.
@@ -59,11 +59,11 @@ Možnost ladit jiným procesem poskytuje velmi široký mocniny, ke kterým by j
 ### <a name="web-services-debugging-security"></a>Ladění zabezpečení webových služeb
  Je bezpečnější, chcete-li ladit místně, ale od té doby budete pravděpodobně nemají [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] nainstalovaný na webovém serveru, místní ladění nemusí být praktické. Obecně platí ladění webových služeb se prováděla vzdáleně, s výjimkou během vývoje, tak doporučení pro zabezpečení vzdálené ladění také použít k ladění webových služeb. Tady jsou některé další osvědčené postupy. Další informace najdete v tématu [ladění webových služeb XML](https://msdn.microsoft.com/library/c900b137-9fbd-4f59-91b5-9c2c6ce06f00).
 
--   Nepovolujte ladění na webovém serveru, který byl napaden.
+- Nepovolujte ladění na webovém serveru, který byl napaden.
 
--   Ujistěte se, že víte, že je před její ladění zabezpečený webový server. Pokud si nejste jisti, že je zabezpečené, není ho ladit.
+- Ujistěte se, že víte, že je před její ladění zabezpečený webový server. Pokud si nejste jisti, že je zabezpečené, není ho ladit.
 
--   Buďte opatrní hlavně Pokud ladíte webové služby, který je přístupný na Internetu.
+- Buďte opatrní hlavně Pokud ladíte webové služby, který je přístupný na Internetu.
 
 ### <a name="external-components"></a>Externí komponenty
  Mějte na paměti ze stavu důvěryhodnosti externí komponenty, které aplikace komunikuje se službou, zejména v případě, že nezapsal kód. Také být vědomi komponenty, která [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] nebo použít ladicí program.

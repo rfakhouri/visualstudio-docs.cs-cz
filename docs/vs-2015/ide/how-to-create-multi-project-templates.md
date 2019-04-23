@@ -13,12 +13,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1059e4035e620d9feb0498bacf5516eed99b5ba3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 394c9adf6794ae6e6c547a46e1fe469e0c642ba8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54755336"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096449"
 ---
 # <a name="how-to-create-multi-project-templates"></a>Postupy: Vytváření šablon vícenásobného projektu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -79,15 +79,15 @@ ms.locfileid: "54755336"
   
 ### <a name="to-create-a-multi-project-template"></a>K vytváření šablon vícenásobného projektu  
   
-1.  Vytváření projektů zahrnout ve víceprojektové šabloně.  
+1. Vytváření projektů zahrnout ve víceprojektové šabloně.  
   
-2.  Vytvoří soubory .vstemplate pro každý projekt. Další informace najdete v tématu [jak: Vytváření šablon projektu](../ide/how-to-create-project-templates.md).  
+2. Vytvoří soubory .vstemplate pro každý projekt. Další informace najdete v tématu [jak: Vytváření šablon projektu](../ide/how-to-create-project-templates.md).  
   
-3.  Vytvořte kořenový soubor .vstemplate, který obsahuje metadata pro víceprojektové šabloně. Další informace najdete v prvním příkladu v následující části.  
+3. Vytvořte kořenový soubor .vstemplate, který obsahuje metadata pro víceprojektové šabloně. Další informace najdete v prvním příkladu v následující části.  
   
-4.  Vyberte soubory a složky, které chcete do šablony zahrnout, klikněte pravým tlačítkem na výběr, klikněte na tlačítko **odeslat**a potom klikněte na tlačítko **komprimovaná složka (metoda ZIP)**. Komprimování souborů a složek do souboru .zip.  
+4. Vyberte soubory a složky, které chcete do šablony zahrnout, klikněte pravým tlačítkem na výběr, klikněte na tlačítko **odeslat**a potom klikněte na tlačítko **komprimovaná složka (metoda ZIP)**. Komprimování souborů a složek do souboru .zip.  
   
-5.  Vložit soubor ZIP šablony [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] adresář šablon projektu. Ve výchozím nastavení je tento adresář Documents\Visual Studio *verze*\Templates\ProjectTemplates\\.  
+5. Vložit soubor ZIP šablony [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] adresář šablon projektu. Ve výchozím nastavení je tento adresář Documents\Visual Studio *verze*\Templates\ProjectTemplates\\.  
   
 ## <a name="example"></a>Příklad  
  Tento příklad ukazuje základní víceprojektové kořenový soubor .vstemplate. V tomto příkladu obsahuje šablona dva projekty `My Windows Application` a `My Class Library`. `ProjectName` Atribut na `ProjectTemplateLink` nastaví název elementu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] tomuto projektu přiřadí. Pokud `ProjectName` atribut neexistuje, název souboru .vstemplate slouží jako název projektu.  

@@ -17,21 +17,21 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 806a2a2165dc604969e2bd8f35a0eb9c1cf07556
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: dbae3a1e003c0d9381b80fc24227e65a18c1c8f1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56636707"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096553"
 ---
 # <a name="visio-object-model-overview"></a>Přehled modelu objektů aplikace Visio
   K vývoji řešení pro systém Office pro aplikaci Microsoft Office Visio, můžete pracovat s modelu objektů aplikace Visio. Tento objektový model se skládá z třídy a rozhraní, které jsou k dispozici ve primárního spolupracujícího sestavení pro aplikaci Visio a jsou definovány v `Microsoft.Office.Interop.Visio` oboru názvů.
 
  Toto téma nabízí stručný přehled modelu objektů aplikace Visio. Informace o provádění úloh v projektech pro systém Office pomocí modelu objektů aplikace Visio naleznete v následujících tématech:
 
--   [Práce s dokumenty aplikace Visio](../vsto/working-with-visio-documents.md)
+- [Práce s dokumenty aplikace Visio](../vsto/working-with-visio-documents.md)
 
--   [Práce s obrazci aplikace Visio](../vsto/working-with-visio-shapes.md)
+- [Práce s obrazci aplikace Visio](../vsto/working-with-visio-shapes.md)
 
 ## <a name="understand-the-visio-object-model"></a>Pochopení modelu objektů aplikace Visio
  Visio poskytuje mnoho objektů, se kterými můžete pracovat. Tyto objekty jsou uspořádány do hierarchie, která přesně dodržuje uživatelského rozhraní. V horní části hierarchie [Microsoft.Office.Interop.Visio.Application](/office/vba/api/Visio.Application) objektu. Tento objekt představuje aktuální instanci aplikace Visio. `Microsoft.Office.Interop.Visio.Application` Obsahuje objekt `Microsoft.Office.Interop.Visio.Document` a `Microsoft.Office.Interop.Visio.Page` objekty také `Microsoft.Office.Interop.Visio.Documents` a `Microsoft.Office.Interop.Visio.Pages` kolekce. Každá z těchto objektů a kolekcí obsahuje mnoho metod a vlastností, ke kterým může přistupovat k manipulaci a pracovat s ním.
@@ -40,11 +40,11 @@ ms.locfileid: "56636707"
 
  Následující části stručně popisují nejvyšší úrovně objektů a jejich vzájemné interakce mezi sebou. Mezi tyto objekty patří následující objekty:
 
--   Objekt aplikace
+- Objekt aplikace
 
--   Objekt dokumentu
+- Objekt dokumentu
 
--   objekt stránky
+- objekt stránky
 
 ### <a name="application-object"></a>Objekt aplikace
  Objekt Microsoft.Office.Interop.Visio.Application představuje aplikaci Visio a je nadřazeného člena všechny ostatní objekty. Jeho členy obvykle platí pro Visio jako celek. Můžete použít vlastnosti a metody Microsoft.Office.Interop.Visio.Application a `Microsoft.Office.Interop.Visio.ApplicationSettings` objekty k řízení prostředí aplikace Visio.

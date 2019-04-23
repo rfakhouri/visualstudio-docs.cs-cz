@@ -25,12 +25,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fde858615894967dea83239388925851f342c3aa
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 193afeddd553dfda54de568c92b4697e3f1a2a93
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54781031"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095539"
 ---
 # <a name="how-to-manage-editor-modes"></a>Postupy: Správa režimů editoru
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,22 +45,22 @@ Editoru kódu sady Visual Studio můžete zobrazit v různých režimech zobraze
   
 #### <a name="to-enable-full-screen-mode"></a>Pokud chcete povolit režim zobrazení na celé obrazovce  
   
--   Stisknutím klávesy ALT + SHIFT + ENTER a zadejte skript nebo ukončit **zobrazení na celé obrazovce** režimu.  
+- Stisknutím klávesy ALT + SHIFT + ENTER a zadejte skript nebo ukončit **zobrazení na celé obrazovce** režimu.  
   
      --nebo--  
   
--   Příkaz `View.Fullscreen` v **příkaz** okna.  
+- Příkaz `View.Fullscreen` v **příkaz** okna.  
   
 ## <a name="enabling-virtual-space-mode"></a>Povolení režim virtuálního prostoru  
  V **virtuální prostor** režimu, budou vkládány mezery na konci každého řádku kódu. Vyberte tuto možnost na pozici poznámky na bod konzistentní vzhledem k vedle vašeho kódu.  
   
 #### <a name="to-enable-virtual-space-mode"></a>Pokud chcete povolit režim virtuálního prostoru  
   
-1.  Vyberte **možnosti** z **nástroje** nabídky.  
+1. Vyberte **možnosti** z **nástroje** nabídky.  
   
-2.  Rozbalte **textový Editor** složky a zvolte **všechny jazyky** a tuto možnost nastavte, globálně nebo zvolte konkrétní jazykovou složku. (Například pokud chcete zapnout čísla řádků pouze v jazyce Visual Basic, zvolte základní, Možnosti textového editoru.)  
+2. Rozbalte **textový Editor** složky a zvolte **všechny jazyky** a tuto možnost nastavte, globálně nebo zvolte konkrétní jazykovou složku. (Například pokud chcete zapnout čísla řádků pouze v jazyce Visual Basic, zvolte základní, Možnosti textového editoru.)  
   
-3.  Vyberte **Obecné** možnosti a v části **nastavení**vyberte **povolit virtuální prostor**.  
+3. Vyberte **Obecné** možnosti a v části **nastavení**vyberte **povolit virtuální prostor**.  
   
     > [!NOTE]
     >  **Virtuální prostor** je povolený v **výběr sloupce** režimu. Když **virtuální prostor** není povolen režim, kurzor se přesune z konce jeden řádek přímo na první znak na další.  

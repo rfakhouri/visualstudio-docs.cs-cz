@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ad065db8871696fe1068e85be1c06f4a5b99d1c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 529adc66ece75219e71d7ae8b17857f5036e1668
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56624786"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097281"
 ---
 # <a name="localize-clickonce-applications"></a>Lokalizace aplikací ClickOnce
 Lokalizace je proces zpřístupnění aplikace vhodné pro konkrétní jazykovou verzi. Tento proces zahrnuje text uživatelského rozhraní (UI) pro jazyk specifický pro oblast, pomocí správné datum a formátování měny, nastavení velikosti ovládacích prvků ve formuláři, překlad a zrcadlení ovládací prvky zprava doleva v případě potřeby.
@@ -35,11 +35,11 @@ Lokalizace je proces zpřístupnění aplikace vhodné pro konkrétní jazykovou
 
  Toto téma popisuje tři způsoby, jak nasadit [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikací pro jiné jazykové verze:
 
--   Zahrňte všechny satelitní sestavení v jednom nasazení.
+- Zahrňte všechny satelitní sestavení v jednom nasazení.
 
--   Generovat jedno nasazení pro jednotlivé jazykové verze, s jediným satelitním sestavením v každém.
+- Generovat jedno nasazení pro jednotlivé jazykové verze, s jediným satelitním sestavením v každém.
 
--   Stáhněte si satelitních sestavení na vyžádání.
+- Stáhněte si satelitních sestavení na vyžádání.
 
 ## <a name="including-all-satellite-assemblies-in-a-deployment"></a>V nasazení včetně všech satelitních sestavení
  Místo publikování více [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] nasazení, můžete publikovat jediné [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] nasazení, které obsahuje všechny satelitní sestavení.

@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 91462511f5de22c51dd1d6fd07c192a72e69e541
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 5f17be088d27e473af0c45a950541fe0f5b77085
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59232694"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60098646"
 ---
 # <a name="intellitrace-for-visual-studio-enterprise-c-visual-basic-c"></a>IntelliTrace for Visual Studio Enterprise (C#, Visual Basic, C++)
 
@@ -59,7 +59,7 @@ Můžete použít nástroj IntelliTrace v sadě Visual Studio Enterprise edition
 > [!NOTE]
 > Pokud chcete ladit proces, který je již spuštěna, lze shromažďovat pouze události IntelliTrace (žádné informace volání). Můžete připojit k 32bitové nebo 64bitové proces v místním počítači. Shromažďují se události, ke kterým dojde před připojit k procesu.
 
-##  <a name="IntelliTraceVSTraditional"></a> Proč ladit pomocí nástroje IntelliTrace?
+## <a name="IntelliTraceVSTraditional"></a> Proč ladit pomocí nástroje IntelliTrace?
 
 Tradiční nebo *live* ladění zobrazuje pouze aplikace aktuální stav, s omezenými daty o minulých událostech. Buď musíte odvodit tyto události na základě aktuálního stavu aplikace, nebo musíte znovu vyvolat tyto události opětovného spuštění aplikace.
 
@@ -97,7 +97,7 @@ Zde je několik příkladů, jak nástroj IntelliTrace může pomoci s laděním
 
      To je užitečné, pokud chcete diagnostikovat problémy s aplikacemi v nasazení. Zobrazit [použití samostatného kolektoru IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md).
 
-##  <a name="WhatData"></a> Jaká data shromažďuje nástroj IntelliTrace?
+## <a name="WhatData"></a> Jaká data shromažďuje nástroj IntelliTrace?
 
 **Shromažďování informací o události**
 

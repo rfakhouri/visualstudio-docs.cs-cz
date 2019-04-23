@@ -24,12 +24,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a6e52c9a34b5fc6ea487cffd1728a525dc5a0984
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: c549beaf58e64d8026b3f6bd39a3b69922d6b7f6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54766221"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097411"
 ---
 # <a name="install-and-manage-local-content"></a>Instalace a správa místního obsahu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,18 +43,18 @@ Pomocí Microsoft Help Viewer můžete přidat, odebrat, aktualizovat a přesuno
   
 #### <a name="to-change-the-content-installation-source"></a>Změna zdroje instalace obsahu  
   
-1.  Na **spravovat obsah** , vyberte **disku** přepínač.  
+1. Na **spravovat obsah** , vyberte **disku** přepínač.  
   
     > [!NOTE]
     >  **Disku** možnost nebude dostupná, pokud správce má že nesmíte měnit zdroj instalace obsahu. Další informace najdete v tématu [pomáhají Příručka pro správce prohlížeč](../ide/help-viewer-administrator-guide.md).  
   
-2.  Proveďte jeden z následujících kroků:  
+2. Proveďte jeden z následujících kroků:  
   
-    -   Zadejte cestu k souboru .msha nebo adresu URL koncového bodu služby.  
+    - Zadejte cestu k souboru .msha nebo adresu URL koncového bodu služby.  
   
-    -   Klikněte na tlačítko procházení (**...** ) tlačítko přejděte k souboru .msha.  
+    - Klikněte na tlačítko procházení (**...** ) tlačítko přejděte k souboru .msha.  
   
-    -   V seznamu vyberte položku, která byla naposledy použita.  
+    - V seznamu vyberte položku, která byla naposledy použita.  
   
 ## <a name="download-and-install-content-locally"></a>Stažení a instalace obsahu místně  
  Pokud si stáhnete a nainstalujete obsah v místním počítači, můžete zobrazit témata bez připojení k Internetu.  
@@ -66,13 +66,13 @@ Pomocí Microsoft Help Viewer můžete přidat, odebrat, aktualizovat a přesuno
   
 #### <a name="to-download-and-install-content"></a>Ke stažení a nainstalování obsahu  
   
-1.  Zvolte **spravovat obsah** kartu.  
+1. Zvolte **spravovat obsah** kartu.  
   
-2.  V seznamu obsahu zvolte **přidat** odkaz vedle knih, které chcete stáhnout a nainstalovat.  
+2. V seznamu obsahu zvolte **přidat** odkaz vedle knih, které chcete stáhnout a nainstalovat.  
   
      Kniha je přidána do **čekající změny** seznamu a odhadovaná velikost knih, které jste zadali, se zobrazí pod tímto seznamem. Vzhledem k tomu, že některé knihy témata sdílejí, může být celková stahovaná velikost při několika knih menší než výsledek sečtením velikosti jednotlivé knihy, které jste zadali.  
   
-3.  Zvolte **aktualizace** tlačítko.  
+3. Zvolte **aktualizace** tlačítko.  
   
      Knihy, které jste zadali, jsou nainstalovány společně se všemi aktualizacemi pro knihy, které už máte ve vašem počítači. Časy instalace lišit, ale můžete zobrazit průběh ve stavovém řádku.  
   
@@ -86,13 +86,13 @@ Pomocí Microsoft Help Viewer můžete přidat, odebrat, aktualizovat a přesuno
   
 #### <a name="to-remove-content"></a>Chcete-li odebrat obsah  
   
-1.  Zvolte **spravovat obsah** kartu.  
+1. Zvolte **spravovat obsah** kartu.  
   
-2.  V seznamu obsahu zvolte **odebrat** odkaz vedle knih, které chcete odebrat.  
+2. V seznamu obsahu zvolte **odebrat** odkaz vedle knih, které chcete odebrat.  
   
      Kniha je přidána do **čekající změny** seznamu.  
   
-3.  Zvolte **aktualizace** tlačítko.  
+3. Zvolte **aktualizace** tlačítko.  
   
      Knihy, které jste zadali, se odeberou z vašeho počítače.  
   
@@ -116,13 +116,13 @@ Pomocí Microsoft Help Viewer můžete přidat, odebrat, aktualizovat a přesuno
   
 #### <a name="to-move-local-content"></a>Přesunutí místního obsahu  
   
-1.  Na **spravovat obsah** , vyberte **přesunout** tlačítko **místní cesta Store**.  
+1. Na **spravovat obsah** , vyberte **přesunout** tlačítko **místní cesta Store**.  
   
      **Přesunout obsah** zobrazí se dialogové okno.  
   
-2.  V **k** textového pole zadejte jiné umístění pro obsah a klikněte na tlačítko **OK** tlačítko.  
+2. V **k** textového pole zadejte jiné umístění pro obsah a klikněte na tlačítko **OK** tlačítko.  
   
-3.  Zvolte **Zavřít** tlačítko obsah byl přesunut.  
+3. Zvolte **Zavřít** tlačítko obsah byl přesunut.  
   
 ## <a name="see-also"></a>Viz také  
  [Microsoft Help Viewer 2.2](../ide/microsoft-help-viewer.md)

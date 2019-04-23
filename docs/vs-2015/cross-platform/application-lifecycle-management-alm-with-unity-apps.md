@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: conceptdev
 ms.author: crdun
 manager: jillfra
-ms.openlocfilehash: c4f431dba7f9732333812f64b44db52358071996
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 6c572d76389c5914f4a9b01b82677449ec1db28b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59658796"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097164"
 ---
 # <a name="application-lifecycle-management-alm-with-unity-apps"></a>Application Lifecycle Management (ALM) s aplikacemi Unity
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,11 +66,11 @@ Vývoj aplikací pro moderní platformy zahrnuje mnoho aktivit více než jen ps
   
  Zvláštní upozornění pro správu verzí pomocí Unity:  
   
-1.  Unity sleduje metadata o herních prostředků v jedné, neprůhledný knihovnu, která je ve výchozím nastavení skrytá. Pro synchronizaci souborů a metadat, je nezbytné, chcete-li zobrazit metadata a jeho uložení do více spravovatelných blocích. Podrobnosti najdete v [pomocí externích systémů pro správu verzí pomocí Unity](http://docs.unity3d.com/Manual/ExternalVersionControlSystemSupport.html) (dokumentace k Unity).  
+1. Unity sleduje metadata o herních prostředků v jedné, neprůhledný knihovnu, která je ve výchozím nastavení skrytá. Pro synchronizaci souborů a metadat, je nezbytné, chcete-li zobrazit metadata a jeho uložení do více spravovatelných blocích. Podrobnosti najdete v [pomocí externích systémů pro správu verzí pomocí Unity](http://docs.unity3d.com/Manual/ExternalVersionControlSystemSupport.html) (dokumentace k Unity).  
   
-2.  Ne všechny soubory a složky v Unity projektu jsou vhodné pro správu zdrojového kódu, jako je také popsáno v výše uvedený odkaz. Prostředky a ProjectSettings složky by měly být přidány, ale knihovny a dočasné složky by neměla. Další seznam generovaných souborů, které by přejít do správy zdrojového kódu, viz diskuze [jak používat Git pro správu zdrojového kódu enginy Unity3D?](http://stackoverflow.com/questions/18225126/how-to-use-git-for-unity3d-source-control) na StackOverflow. Mnoho vývojářů mají také blozích máte k tomuto tématu nezávisle na sobě.  
+2. Ne všechny soubory a složky v Unity projektu jsou vhodné pro správu zdrojového kódu, jako je také popsáno v výše uvedený odkaz. Prostředky a ProjectSettings složky by měly být přidány, ale knihovny a dočasné složky by neměla. Další seznam generovaných souborů, které by přejít do správy zdrojového kódu, viz diskuze [jak používat Git pro správu zdrojového kódu enginy Unity3D?](http://stackoverflow.com/questions/18225126/how-to-use-git-for-unity3d-source-control) na StackOverflow. Mnoho vývojářů mají také blozích máte k tomuto tématu nezávisle na sobě.  
   
-3.  Binární prostředky v Unity projektu – například textury nebo zvukové soubory, může trvat až velké množství úložiště. Různé systémy správy zdrojového kódu jako je Git uložit kopii soubor pro každé změny, který je vytvořen, jedinečný i v případě, že tato změna má vliv pouze malou část souboru. To může způsobit opakovaném úložiště Git. Z toho vývojářům Unity často se je rozhodnete pouze konečný prostředky přidejte do své úložiště a použít jiný způsob uchování historie pracovní svých prostředků, jako je například OneDrive, DropBox nebo git přílohy. Tento přístup funguje, protože tyto prostředky většinou nemusí být označené verzí společně se změnami zdrojového kódu. Vývojáři také běžně nastaven režim serializace Asset editoru projektu na platnost Text k ukládání souborů scény v textu, nikoli binární formát, který umožňuje sloučení ve správě zdrojového kódu. Podrobnosti najdete v tématu [nastavení editoru](http://docs.unity3d.com/Manual/class-EditorManager.html) (dokumentace k Unity).  
+3. Binární prostředky v Unity projektu – například textury nebo zvukové soubory, může trvat až velké množství úložiště. Různé systémy správy zdrojového kódu jako je Git uložit kopii soubor pro každé změny, který je vytvořen, jedinečný i v případě, že tato změna má vliv pouze malou část souboru. To může způsobit opakovaném úložiště Git. Z toho vývojářům Unity často se je rozhodnete pouze konečný prostředky přidejte do své úložiště a použít jiný způsob uchování historie pracovní svých prostředků, jako je například OneDrive, DropBox nebo git přílohy. Tento přístup funguje, protože tyto prostředky většinou nemusí být označené verzí společně se změnami zdrojového kódu. Vývojáři také běžně nastaven režim serializace Asset editoru projektu na platnost Text k ukládání souborů scény v textu, nikoli binární formát, který umožňuje sloučení ve správě zdrojového kódu. Podrobnosti najdete v tématu [nastavení editoru](http://docs.unity3d.com/Manual/class-EditorManager.html) (dokumentace k Unity).  
   
 ## <a name="build"></a>Sestavení  
  Referenční odkaz: **[Sestavení](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)**  

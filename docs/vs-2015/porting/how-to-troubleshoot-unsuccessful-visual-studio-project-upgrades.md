@@ -18,12 +18,12 @@ caps.latest.revision: 31
 author: kraigb
 ms.author: kraigb
 manager: jillfra
-ms.openlocfilehash: 7d5c30c9b61707f9ac4a32d49613b46416a8d881
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 194dae93e3a013da366d454582b531a2cc4ff8b6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54804260"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096332"
 ---
 # <a name="how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades"></a>Postupy: Řešení potíží s upgrady projektu úspěšné sady Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,11 +35,11 @@ Někdy Visual Studio nemůže převést plně projektu ze starší verze [!INCLU
 
 #### <a name="to-resolve-incorrect-file-paths"></a>Chcete-li vyřešit nesprávné cesty k souborům
 
-1.  V textovém editoru otevřete soubor projektu.
+1. V textovém editoru otevřete soubor projektu.
 
-2.  Vyhledání cesty k souborům, které může být nesprávný, zejména těch, které obsahují [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] číslo verze.
+2. Vyhledání cesty k souborům, které může být nesprávný, zejména těch, které obsahují [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] číslo verze.
 
-3.  Úprava cesty k souboru tak, aby ukazovaly na novou cíle.
+3. Úprava cesty k souboru tak, aby ukazovaly na novou cíle.
 
 ## <a name="the-project-does-not-build-because-references-are-not-valid"></a>Projekt sestavit, protože odkazy nejsou platné
  Při upgradu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], může také být upgradu [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] verze. Pokud váš projekt obsahuje odkazy, které jsou zrušeny ve verzi novější [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] verze, se nemůže vyřešit správně. To je zvláště pravděpodobné odkazy, které zahrnují číslo verze, například `Microsoft.VisualStudio.Shell.Interop.8.0`.

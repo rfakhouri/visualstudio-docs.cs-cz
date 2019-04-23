@@ -33,12 +33,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d143bd6ea48150ec8a2515eafc016786a8d3e33e
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 2d14077ff7547a1b8009ce6621c111174c582a5c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59665126"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095032"
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Služby Windows Communication Foundation a služby WCF Data Services v sadě Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -124,9 +124,9 @@ Visual Studio poskytuje nástroje pro práci s Windows Communication Foundation 
 
 #### <a name="to-select-a-service-endpoint"></a>Chcete-li vybrat koncový bod služby
 
-1.  Přidat odkaz na službu WCF tak, že kliknete pravým tlačítkem na uzel projektu v Průzkumníku řešení a zvolíte **přidat odkaz na službu**
+1. Přidat odkaz na službu WCF tak, že kliknete pravým tlačítkem na uzel projektu v Průzkumníku řešení a zvolíte **přidat odkaz na službu**
 
-2.  V editoru kódu přidejte konstruktor pro odkaz na službu:
+2. V editoru kódu přidejte konstruktor pro odkaz na službu:
 
     ```vb
     Dim proxy As New ServiceReference.Service1Client(
@@ -139,24 +139,24 @@ Visual Studio poskytuje nástroje pro práci s Windows Communication Foundation 
     > [!NOTE]
     >  Nahraďte *ServiceReference* s oborem názvů pro odkaz na službu a nahraďte *Service1Client* s názvem služby.
 
-3.  Zobrazí se seznam technologie IntelliSense pomocí přetížení konstruktoru. Vyberte `endpointConfigurationName As String` přetížení.
+3. Zobrazí se seznam technologie IntelliSense pomocí přetížení konstruktoru. Vyberte `endpointConfigurationName As String` přetížení.
 
-4.  Po přetížení, zadejte `=` *ConfigurationName*, kde *ConfigurationName* je název koncového bodu, který chcete použít.
+4. Po přetížení, zadejte `=` *ConfigurationName*, kde *ConfigurationName* je název koncového bodu, který chcete použít.
 
     > [!NOTE]
     >  Pokud si nejste jisti názvy dostupné koncové body, najdete je v souboru app.config.
 
 #### <a name="to-find-the-available-endpoints-for-a-wcf-service"></a>Chcete-li najít dostupné koncové body služby WCF
 
-1.  V **Průzkumníka řešení**, klikněte pravým tlačítkem na soubor app.config pro projekt, který obsahuje odkaz na službu a pak klikněte na tlačítko **otevřít**. Soubor se zobrazí v editoru kódu.
+1. V **Průzkumníka řešení**, klikněte pravým tlačítkem na soubor app.config pro projekt, který obsahuje odkaz na službu a pak klikněte na tlačítko **otevřít**. Soubor se zobrazí v editoru kódu.
 
-2.  Hledat `<Client>` značky v souboru.
+2. Hledat `<Client>` značky v souboru.
 
-3.  Vyhledejte pod `<Client>` značky pro značky začínající `<Endpoint>`.
+3. Vyhledejte pod `<Client>` značky pro značky začínající `<Endpoint>`.
 
      Pokud odkaz na službu poskytuje několik koncových bodů, bude existovat dva nebo více `<Endpoint` značky.
 
-4.  Uvnitř `<EndPoint>` značky vás bude `name="` *SomeService* `"` parametr (kde *SomeService* představuje název koncového bodu). Toto je název koncového bodu, který lze předat `endpointConfigurationName As String` přetížení konstruktoru pro odkaz na službu.
+4. Uvnitř `<EndPoint>` značky vás bude `name="` *SomeService* `"` parametr (kde *SomeService* představuje název koncového bodu). Toto je název koncového bodu, který lze předat `endpointConfigurationName As String` přetížení konstruktoru pro odkaz na službu.
 
 ## <a name="how-to-call-a-service-method-asynchronously"></a>Postupy: Asynchronní volání metody služby
  Většina metod služby Windows Communication Foundation (WCF) může volat synchronně nebo asynchronně. Asynchronní volání metody umožňuje vaší aplikaci a pokračujte v práci, zatímco metoda je volána při práci s pomalým připojením.
@@ -170,42 +170,42 @@ Visual Studio poskytuje nástroje pro práci s Windows Communication Foundation 
 
 #### <a name="to-call-a-service-method-asynchronously"></a>Asynchronně volat metodu služby
 
-1.  V **Průzkumníka řešení**, vyberte odkaz na službu.
+1. V **Průzkumníka řešení**, vyberte odkaz na službu.
 
-2.  Na **projektu** nabídky, klikněte na tlačítko **nastavit odkaz na službu**.
+2. Na **projektu** nabídky, klikněte na tlačítko **nastavit odkaz na službu**.
 
-3.  V **nastavit odkaz na službu** dialogové okno, vyberte **Generovat asynchronní operace** zaškrtávací políčko.
+3. V **nastavit odkaz na službu** dialogové okno, vyberte **Generovat asynchronní operace** zaškrtávací políčko.
 
 ## <a name="how-to-bind-data-returned-by-a-service"></a>Postupy: Vytvoření vazby dat vrácených službou
  Můžete vytvořit vazbu dat vrácené službou Windows Communication Foundation (WCF) na ovládací prvek, stejně jako kterýkoli jiný zdroj dat. můžete svázat do ovládacího prvku. Když přidáte odkaz na službu WCF, pokud služba obsahuje složené typy, které nevracejí data, se automaticky přidají do **zdroje dat** okna.
 
 #### <a name="to-bind-a-control-to-single-data-field-returned-by-a-wcf-service"></a>K vytvoření vazby ovládacího prvku do jednoho datového pole vrácené službou WCF
 
-1.  Na **Data** nabídky, klikněte na tlačítko **zobrazit zdroje dat**. **Zdroje dat** otevře se okno.
+1. Na **Data** nabídky, klikněte na tlačítko **zobrazit zdroje dat**. **Zdroje dat** otevře se okno.
 
-2.  V **zdroje dat** okna, rozbalte uzel pro odkaz na službu. Zobrazí se všechny složené typy vrácené službou.
+2. V **zdroje dat** okna, rozbalte uzel pro odkaz na službu. Zobrazí se všechny složené typy vrácené službou.
 
-3.  Rozbalte uzel typu. Datová pole pro tento typ se zobrazí.
+3. Rozbalte uzel typu. Datová pole pro tento typ se zobrazí.
 
-4.  Vyberte pole a klikněte na šipku rozevíracího seznamu a zobrazte seznam ovládacích prvků, které jsou k dispozici pro datový typ.
+4. Vyberte pole a klikněte na šipku rozevíracího seznamu a zobrazte seznam ovládacích prvků, které jsou k dispozici pro datový typ.
 
-5.  Klikněte na typ ovládacího prvku, který chcete vytvořit vazbu.
+5. Klikněte na typ ovládacího prvku, který chcete vytvořit vazbu.
 
-6.  Přetáhněte pole do formuláře. Přidá se ovládací prvek na formuláři spolu s <xref:System.Windows.Forms.BindingSource> komponenty a <xref:System.Windows.Forms.BindingNavigator> komponenty.
+6. Přetáhněte pole do formuláře. Přidá se ovládací prvek na formuláři spolu s <xref:System.Windows.Forms.BindingSource> komponenty a <xref:System.Windows.Forms.BindingNavigator> komponenty.
 
-7.  Opakujte kroky 4 až 6 pro jakékoli jiné pole, které chcete vytvořit vazbu.
+7. Opakujte kroky 4 až 6 pro jakékoli jiné pole, které chcete vytvořit vazbu.
 
 #### <a name="to-bind-a-control-to-composite-type-returned-by-a-wcf-service"></a>K vytvoření vazby ovládacího prvku na složený typ vrácené službou WCF
 
-1.  Na **Data** nabídce vyberte možnost **zobrazit zdroje dat**. **Zdroje dat** otevře se okno.
+1. Na **Data** nabídce vyberte možnost **zobrazit zdroje dat**. **Zdroje dat** otevře se okno.
 
-2.  V **zdroje dat** okna, rozbalte uzel pro odkaz na službu. Zobrazí se všechny složené typy vrácené službou.
+2. V **zdroje dat** okna, rozbalte uzel pro odkaz na službu. Zobrazí se všechny složené typy vrácené službou.
 
-3.  Vyberte uzel pro typ a klikněte na šipku rozevíracího seznamu a zobrazte seznam dostupných možností.
+3. Vyberte uzel pro typ a klikněte na šipku rozevíracího seznamu a zobrazte seznam dostupných možností.
 
-4.  Klikněte na možnost **DataGridView** k zobrazení dat v mřížce nebo **podrobnosti** k zobrazení dat v jednotlivých ovládacích prvků.
+4. Klikněte na možnost **DataGridView** k zobrazení dat v mřížce nebo **podrobnosti** k zobrazení dat v jednotlivých ovládacích prvků.
 
-5.  Přetáhněte uzel na formuláři. Přidá se ovládací prvky na formuláři spolu s <xref:System.Windows.Forms.BindingSource> komponenty a <xref:System.Windows.Forms.BindingNavigator> komponenty.
+5. Přetáhněte uzel na formuláři. Přidá se ovládací prvky na formuláři spolu s <xref:System.Windows.Forms.BindingSource> komponenty a <xref:System.Windows.Forms.BindingNavigator> komponenty.
 
 ## <a name="how-to-configure-a-service-to-reuse-existing-types"></a>Postupy: Nakonfigurujte službu znovu použít existující typy
  Při odkazu na službu se přidá do projektu, jsou generovány všechny typy definované v rámci služby v místním projektu. V mnoha případech to vytvoří duplicitní typy, když služba používá běžné [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] typy nebo když jsou definovány typy ve sdílené knihovně.
@@ -214,21 +214,21 @@ Visual Studio poskytuje nástroje pro práci s Windows Communication Foundation 
 
 #### <a name="to-disable-type-sharing-in-a-single-assembly"></a>Zakázat sdílení do jednoho sestavení typu
 
-1.  V **Průzkumníka řešení**, vyberte odkaz na službu.
+1. V **Průzkumníka řešení**, vyberte odkaz na službu.
 
-2.  Na **projektu** nabídky, klikněte na tlačítko **nastavit odkaz na službu**.
+2. Na **projektu** nabídky, klikněte na tlačítko **nastavit odkaz na službu**.
 
-3.  V **nakonfigurovat odkazy na služby** dialogu **znovu použít typy v zadaných odkazovaných sestaveních**.
+3. V **nakonfigurovat odkazy na služby** dialogu **znovu použít typy v zadaných odkazovaných sestaveních**.
 
-4.  Zaškrtněte políčko pro každé sestavení, ve kterém chcete povolit typ sdílení. Zakázat sdílení pro sestavení typu, ponechejte políčko zaškrtnuto.
+4. Zaškrtněte políčko pro každé sestavení, ve kterém chcete povolit typ sdílení. Zakázat sdílení pro sestavení typu, ponechejte políčko zaškrtnuto.
 
 #### <a name="to-disable-type-sharing-in-all-assemblies"></a>Zakázat sdílení ve všech sestaveních typu
 
-1.  V **Průzkumníka řešení**, vyberte odkaz na službu.
+1. V **Průzkumníka řešení**, vyberte odkaz na službu.
 
-2.  Na **projektu** nabídky, klikněte na tlačítko **nastavit odkaz na službu**.
+2. Na **projektu** nabídky, klikněte na tlačítko **nastavit odkaz na službu**.
 
-3.  V **nakonfigurovat odkazy na služby** dialogové okno, zrušte **znovu použít typy v odkazovaných sestaveních** zaškrtávací políčko.
+3. V **nakonfigurovat odkazy na služby** dialogové okno, zrušte **znovu použít typy v odkazovaných sestaveních** zaškrtávací políčko.
 
 ## <a name="related-topics"></a>Související témata
 

@@ -12,12 +12,12 @@ caps.latest.revision: 24
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: c4eb2b40d6f61cefe0b8d80cafba84ebdf0dcedc
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 2223ab7dfbf37a0be1c9600065ddaad8ea4dfd19
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54793936"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60098725"
 ---
 # <a name="how-to-locate-the-visual-studio-product-key"></a>Postupy: Vyhledejte kód Product Key sady Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,13 +26,13 @@ Možná budete chtít vyhledat kód product key pro [!INCLUDE[vsprvs](../include
 
 ### <a name="to-find-the-product-key-for-visual-studio"></a>Chcete-li najít kód product key pro Visual Studio
 
--   Vyhledejte kód Product Key v jednom z těchto umístění:
+- Vyhledejte kód Product Key v jednom z těchto umístění:
 
-    -   Na instalačním médiu nástroje (pokud existuje).
+    - Na instalačním médiu nástroje (pokud existuje).
 
-    -   Na [My.VisualStudio.com](https://my.visualstudio.com/productkeys) webu.
+    - Na [My.VisualStudio.com](https://my.visualstudio.com/productkeys) webu.
 
-    -   Dokumentace nebo jiné sdělení od dodavatele, od kterého jste software zakoupili.
+    - Dokumentace nebo jiné sdělení od dodavatele, od kterého jste software zakoupili.
 
 ## <a name="see-also"></a>Viz také
  [Postupy: Upgrade ze zkušební edice sady Visual Studio](../install/how-to-upgrade-from-a-trial-edition-of-visual-studio.md) [instalaci sady Visual Studio](../install/install-visual-studio-2015.md) [Visual Studio a dokument White Paper správy licencí MSDN](http://go.microsoft.com/fwlink/?LinkId=191417)

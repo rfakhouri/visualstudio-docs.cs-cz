@@ -11,19 +11,19 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8e90b66288d15abdaf85c519bd89deb6262e4363
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 48d70901a2d616031eeed197b639f3a7bb7336c3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54758672"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092991"
 ---
 # <a name="read-a-uml-model-in-program-code"></a>Čtení modelu UML v programovém kódu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Můžete načíst UML model a jeho diagramy pomocí rozhraní API UML.  
   
-##  <a name="Reading"></a> Čtení modelu v programovém kódu  
+## <a name="Reading"></a> Čtení modelu v programovém kódu  
  Přístup k obsahu modelu, aniž by se zobrazil v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] okno, použijte `ModelingProject.LoadReadOnly()`.  
   
  Příklad:  
@@ -70,7 +70,7 @@ foreach (string diagramFile in projectReader. DiagramFileNames)
   
  Modely a diagramy můžete také otevřít v uživatelském rozhraní pomocí [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozhraní API. Další informace najdete v tématu [otevření modelu UML pomocí rozhraní API sady Visual Studio](../modeling/open-a-uml-model-by-using-the-visual-studio-api.md).  
   
-##  <a name="Standalone"></a> Samostatné aplikace  
+## <a name="Standalone"></a> Samostatné aplikace  
  Příklad v předchozím oddílu bude fungovat v rozšíření sady Visual Studio. Je možné číst model v samostatné aplikaci, ale je nutné přidat některé odkazy na vaše [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] projektu.  
   
 > [!NOTE]
@@ -82,9 +82,9 @@ foreach (string diagramFile in projectReader. DiagramFileNames)
   
 2. Přidat [!INCLUDE[TLA2#tla_net](../includes/tla2sharptla-net-md.md)] odkazy, které potřebujete pro přístup k modelů UML, obvykle:  
   
-   -   Microsoft.VisualStudio.Uml.Interfaces.dll  
+   - Microsoft.VisualStudio.Uml.Interfaces.dll  
   
-   -   Microsoft.VisualStudio.ArchitectureTools.Extensibility.dll  
+   - Microsoft.VisualStudio.ArchitectureTools.Extensibility.dll  
   
 3. Kromě odkazů uvedených v předchozích částech přidejte následující odkazy projektu z **\Program Files\Microsoft sady Visual Studio [verze] \Common7\IDE\PrivateAssemblies**:  
   

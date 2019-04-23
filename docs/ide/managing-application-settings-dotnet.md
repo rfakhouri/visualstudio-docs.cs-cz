@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 91d3004edc39b2fd4f9cc6be72407fd6a46274d1
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: dad84145200b09cfbddab63bd9994096d0ba3e17
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323568"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096930"
 ---
 # <a name="manage-application-settings-net"></a>Správa nastavení aplikace (.NET)
 
@@ -84,9 +84,9 @@ Pokud nastavení rozsahu uživatele se změní za běhu, třeba při testování
 
 Důrazně doporučujeme používat `My.Settings` objektu a ve výchozím nastavení *.settings* souboru pro přístup k nastavení. Důvodem je, že můžete použít **návrháře nastavení** k přiřazení vlastností do nastavení a kromě toho také uživatelské nastavení je automaticky uloženo před vypnutím aplikace. Ale aplikace Visual Basic můžete přístup k nastavení přímo. V takovém případě budete muset získat přístup `MySettings` třídy a používat vlastní *.settings* souboru v kořenovém adresáři projektu. Musíte uložit nastavení uživatele před ukončením aplikace, jako byste to udělali pro aplikaci v C#; je to popsané v následující části.
 
-<!-- markdownlint-disable MD003 -->
+<!-- markdownlint-disable MD003 MD020 -->
 ## <a name="access-or-change-application-settings-at-run-time-in-c"></a>Přístup nebo změna nastavení aplikace za běhu v jazyce C#
-<!-- markdownlint-enable MD003 -->
+<!-- markdownlint-enable MD003 MD020 -->
 
 V jiných jazycích než jazyka Visual Basic, jako je C#, je nutné přejít `Settings` třídy přímo, jak je znázorněno v následujícím [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] příklad.
 

@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3eb9e8035dd8fa4b6a3143341e7be9959254452e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 8a24b934b0ffe4cc22dc7be01aca19910ee3c768
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927656"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096865"
 ---
 # <a name="separate-datasets-and-tableadapters-into-different-projects"></a>Rozdělování datových sad a objektů TableAdapter do různých projektů
 Vylepšili jsme typové datové sady, aby [objekty TableAdapter](create-and-configure-tableadapters.md) a do samostatné projekty se můžou generovat třídy datové sady. To umožňuje rychle samostatné aplikace a generovat vícevrstvých datových aplikací.
@@ -30,25 +30,25 @@ Když oddělíte datové sady kód z třídy TableAdapter kódu projektu, který
 
 #### <a name="to-separate-the-dataset-into-a-different-project"></a>Chcete rozdělit datovou sadu do jiného projektu
 
-1.  Otevřete řešení, která obsahuje datovou sadu (*XSD* souboru).
+1. Otevřete řešení, která obsahuje datovou sadu (*XSD* souboru).
 
     > [!NOTE]
     >  Pokud řešení obsahuje projekt, do kterého chcete rozdělení kódu datovou sadu, vytvořte projekt nebo přidat existující projekt do řešení.
 
-2.  Poklikejte na soubor typové datové sady ( *XSD* souborů) v **Průzkumníku řešení** otevření datové sady v **Návrhář Dataset**.
+2. Poklikejte na soubor typové datové sady ( *XSD* souborů) v **Průzkumníku řešení** otevření datové sady v **Návrhář Dataset**.
 
-3.  Vyberte prázdnou oblast **Návrhář Dataset**.
+3. Vyberte prázdnou oblast **Návrhář Dataset**.
 
-4.  V **vlastnosti** okna, vyhledejte **projektu DataSet** uzlu.
+4. V **vlastnosti** okna, vyhledejte **projektu DataSet** uzlu.
 
-5.  V **projektu DataSet** vyberte název projektu, do které chcete generovat kód datové sady.
+5. V **projektu DataSet** vyberte název projektu, do které chcete generovat kód datové sady.
 
      Jakmile vyberete projekt, do které chcete generovat kód datovou sadu **soubor datové sady** vlastnost se vyplní výchozí název souboru. Tento název lze změnit v případě potřeby. Kromě toho pokud chcete generovat kód datovou sadu do konkrétního adresáře, můžete nastavit **složky projektu** nastavte na název složky.
 
     > [!NOTE]
     >  Když oddělíte datové sady a objekty TableAdapter (nastavením **projektu DataSet** vlastnost), existující částečné třídy v projektu nebudou automaticky přesunuty. Existující částečné třídy je nutné ručně přesunout do projektu datové sady.
 
-6.  Uložte datovou sadu.
+6. Uložte datovou sadu.
 
      Generování kódu datovou sadu do vybraného projektu v **projektu DataSet** vlastnost a **TableAdapter** do aktuálního projektu bude vygenerován kód.
 

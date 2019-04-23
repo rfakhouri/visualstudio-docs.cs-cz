@@ -1,5 +1,5 @@
 ---
-title: 'Průvodce: Ladění paralelní aplikace | Dokumentace Microsoftu'
+title: 'Návod: Ladění paralelní aplikace | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -22,29 +22,29 @@ caps.latest.revision: 31
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d499cbf20fe60540329b51fb5b0f8565022b199b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3e2140f15000b3ba270605af29ee36665c0137ee
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54771316"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092972"
 ---
-# <a name="walkthrough-debugging-a-parallel-application"></a>Průvodce: Ladění paralelní aplikace
+# <a name="walkthrough-debugging-a-parallel-application"></a>Návod: Ladění paralelní aplikace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Tento návod ukazuje, jak používat **paralelní úlohy** a **paralelní zásobníky** ladění paralelní aplikace systému windows. Tato okna vám pomůžou pochopit a chování za běhu kódu, který se používá ověření [Task Parallel Library (TPL)](http://msdn.microsoft.com/library/b8f99f43-9104-45fd-9bff-385a20488a23) nebo [Concurrency Runtime](http://msdn.microsoft.com/library/874bc58f-8dce-483e-a3a1-4dcc9e52ed2c). Tento názorný postup obsahuje ukázkový kód, který má integrovanou zarážky. Poté, co kód přestane fungovat, návodu ukazuje způsob použití **paralelní úlohy** a **paralelní zásobníky** windows jej prozkoumat.  
   
  Tento návod vás naučí tyto úlohy:  
   
--   Jak zobrazit zásobníky volání všech vláken v jednom zobrazení.  
+- Jak zobrazit zásobníky volání všech vláken v jednom zobrazení.  
   
--   Postup zobrazení seznamu `System.Threading.Tasks.Task` instancí, které jsou vytvořeny ve vaší aplikaci.  
+- Postup zobrazení seznamu `System.Threading.Tasks.Task` instancí, které jsou vytvořeny ve vaší aplikaci.  
   
--   Jak zobrazit skutečné volání zásobníků úkolů místo vlákna.  
+- Jak zobrazit skutečné volání zásobníků úkolů místo vlákna.  
   
--   Jak se orientovat na kód z **paralelní úlohy** a **paralelní zásobníky** systému windows.  
+- Jak se orientovat na kód z **paralelní úlohy** a **paralelní zásobníky** systému windows.  
   
--   Jak windows zvládnout škálování prostřednictvím seskupování, přibližování a další související funkce.  
+- Jak windows zvládnout škálování prostřednictvím seskupování, přibližování a další související funkce.  
   
 ## <a name="prerequisites"></a>Požadavky  
  Tento návod předpokládá, že **pouze můj kód** je povolená. Na **nástroje** nabídky, klikněte na tlačítko **možnosti**, rozbalte **ladění** uzlu, vyberte **Obecné**a pak vyberte **povolit Pouze můj kód (pouze spravované)**. Pokud tato funkce není nastavený, můžete nadále používat Tento názorný postup, ale vaše výsledky můžou lišit od ilustrací.  
@@ -88,15 +88,15 @@ Tento návod ukazuje, jak používat **paralelní úlohy** a **paralelní zásob
   
 #### <a name="to-view-the-call-stack-of-a-single-thread"></a>Chcete-li zobrazit zásobník volání z jednoho vlákna  
   
-1.  Na **ladění** nabídky, přejděte k **Windows** a potom klikněte na tlačítko **vlákna**. Ukotvit **vlákna** okno v dolní části sady Visual Studio.  
+1. Na **ladění** nabídky, přejděte k **Windows** a potom klikněte na tlačítko **vlákna**. Ukotvit **vlákna** okno v dolní části sady Visual Studio.  
   
-2.  Na **ladění** nabídky, přejděte k **Windows** a potom klikněte na tlačítko **zásobník volání**. Ukotvit **zásobník volání** okno v dolní části sady Visual Studio.  
+2. Na **ladění** nabídky, přejděte k **Windows** a potom klikněte na tlačítko **zásobník volání**. Ukotvit **zásobník volání** okno v dolní části sady Visual Studio.  
   
-3.  Klikněte dvakrát na vlákno v **vlákna** okna, aby byl aktuální. Aktuální vlákna mají žlutá šipka. Při změně aktuálního vlákna, zobrazí se jeho zásobník volání v **zásobník volání** okna.  
+3. Klikněte dvakrát na vlákno v **vlákna** okna, aby byl aktuální. Aktuální vlákna mají žlutá šipka. Při změně aktuálního vlákna, zobrazí se jeho zásobník volání v **zásobník volání** okna.  
   
 #### <a name="to-examine-the-parallel-stacks-window"></a>Prozkoumat okna paralelní zásobníky  
   
-1.  Na **ladění** nabídky, přejděte k **Windows** a potom klikněte na tlačítko **paralelní zásobníky**. Ujistěte se, že **vlákna** je vybraná pole v levém horním rohu.  
+1. Na **ladění** nabídky, přejděte k **Windows** a potom klikněte na tlačítko **paralelní zásobníky**. Ujistěte se, že **vlákna** je vybraná pole v levém horním rohu.  
   
      S použitím **paralelní zásobníky** můžete zobrazit více zásobníky volání ve stejnou dobu v jednom zobrazení. Je vidět na následujícím obrázku **paralelní zásobníky** okno výše **zásobník volání** okna.  
   
@@ -118,7 +118,7 @@ Tento návod ukazuje, jak používat **paralelní úlohy** a **paralelní zásob
   
 #### <a name="to-resume-execution-until-the-second-breakpoint"></a>Chcete-li pokračovat v provádění, dokud druhý zarážku  
   
-1.  Provádění pokračovat, dokud druhý dosažení zarážky, na **ladění** nabídky, klikněte na tlačítko **pokračovat**. Následující obrázek znázorňuje strom vlákno na druhý zarážce.  
+1. Provádění pokračovat, dokud druhý dosažení zarážky, na **ladění** nabídky, klikněte na tlačítko **pokračovat**. Následující obrázek znázorňuje strom vlákno na druhý zarážce.  
   
      ![Paralelní zásobníky okno, které ukazuje mnoho větví](../debugger/media/pdb-walkthrough-2.png "PDB_Walkthrough_2")  
   
@@ -178,7 +178,7 @@ Tento návod ukazuje, jak používat **paralelní úlohy** a **paralelní zásob
   
 #### <a name="to-resume-execution-until-the-fourth-breakpoint"></a>Chcete-li pokračovat v provádění, dokud čtvrtý zarážku  
   
-1.  Chcete-li obnovit spuštění, dokud čtvrtý dosažení zarážky, na **ladění** nabídky, klikněte na **pokračovat**.  
+1. Chcete-li obnovit spuštění, dokud čtvrtý dosažení zarážky, na **ladění** nabídky, klikněte na **pokračovat**.  
   
      Všimněte si, že jak autoscrolled zobrazení na místě. Přepnout vlákna v **vlákna** okno nebo přepínač zásobník snímků v **zásobník volání** okno a Všimněte si, že jak zobrazení vždy autoscrolls správný snímek. Vypnout **automaticky přejít na aktuální rámec nástroj** možnost a zobrazit rozdíl.  
   
@@ -196,22 +196,22 @@ Tento návod ukazuje, jak používat **paralelní úlohy** a **paralelní zásob
   
      Můžete také zobrazit zásobníky shora dolů směrem místo zdola nahoru, kliknutím **nástroje** nabídky, kliknutím na **možnosti**a poté zaškrtněte nebo zrušte zaškrtnutí možnosti v části **ladění** uzlu.  
   
-2.  Než budete pokračovat, na **ladění** nabídky, klikněte na tlačítko **Zastavit ladění** k ukončení provádění.  
+2. Než budete pokračovat, na **ladění** nabídky, klikněte na tlačítko **Zastavit ladění** k ukončení provádění.  
   
 ## <a name="using-the-parallel-tasks-window-and-the-tasks-view-of-the-parallel-stacks-window"></a>Použití okna paralelní úlohy a úkoly zobrazení okna paralelní zásobníky  
  Doporučujeme dokončení předchozích postupů, než budete pokračovat.  
   
 #### <a name="to-restart-the-application-until-the-first-breakpoint-is-hit"></a>Restartujte aplikaci až k první zarážce přístupů  
   
-1.  Na **ladění** nabídky, klikněte na tlačítko **spustit ladění** a počkejte první zarážce.  
+1. Na **ladění** nabídky, klikněte na tlačítko **spustit ladění** a počkejte první zarážce.  
   
-2.  Na **ladění** nabídky, přejděte k **Windows** a potom klikněte na tlačítko **vlákna**. Ukotvit **vlákna** okno v dolní části sady Visual Studio.  
+2. Na **ladění** nabídky, přejděte k **Windows** a potom klikněte na tlačítko **vlákna**. Ukotvit **vlákna** okno v dolní části sady Visual Studio.  
   
-3.  Na **ladění** nabídky, přejděte k **Windows** a klikněte na tlačítko **zásobník volání**. Ukotvit **zásobník volání** okno v dolní části sady Visual Studio.  
+3. Na **ladění** nabídky, přejděte k **Windows** a klikněte na tlačítko **zásobník volání**. Ukotvit **zásobník volání** okno v dolní části sady Visual Studio.  
   
-4.  Klikněte dvakrát na vlákno v **vlákna** okna je aktuální. Aktuální vlákna mají žlutou šipkou. Při změně aktuální vlákno, se aktualizují ostatní okna. V dalším kroku prozkoumáme úlohy.  
+4. Klikněte dvakrát na vlákno v **vlákna** okna je aktuální. Aktuální vlákna mají žlutou šipkou. Při změně aktuální vlákno, se aktualizují ostatní okna. V dalším kroku prozkoumáme úlohy.  
   
-5.  Na **ladění** nabídky, přejděte k **Windows** a potom klikněte na tlačítko **paralelní úlohy**. Je vidět na následujícím obrázku **paralelní úlohy** okna.  
+5. Na **ladění** nabídky, přejděte k **Windows** a potom klikněte na tlačítko **paralelní úlohy**. Je vidět na následujícím obrázku **paralelní úlohy** okna.  
   
      ![Čtyři spouštění úloh v okno paralelní úkoly](../debugger/media/pdw-walkthrough-6.png "PDW_Walkthrough_6")  
   
@@ -225,7 +225,7 @@ Tento návod ukazuje, jak používat **paralelní úlohy** a **paralelní zásob
   
 #### <a name="to-resume-execution-until-the-second-breakpoint"></a>Chcete-li pokračovat v provádění, dokud druhý zarážku  
   
-1.  Provádění pokračovat, dokud druhý dosažení zarážky, na **ladění** nabídky, klikněte na tlačítko **pokračovat**.  
+1. Provádění pokračovat, dokud druhý dosažení zarážky, na **ladění** nabídky, klikněte na tlačítko **pokračovat**.  
   
      Dříve **stav** sloupec jsme si ukázali, všechny úlohy jako spuštění, ale teď dvě úlohy čekají na přiřazení. Úkoly mohou být blokovány mnoho různých důvodů. V **stav** sloupce, podržte ukazatel myši nad úkol čekání se dozvíte, proč je zablokovaný. Na následujícím obrázku je například úloha 3 čekání na úloha 4.  
   
@@ -253,7 +253,7 @@ Tento návod ukazuje, jak používat **paralelní úlohy** a **paralelní zásob
   
 #### <a name="to-resume-execution-until-the-third-breakpoint"></a>Chcete-li pokračovat v provádění, dokud třetí zarážku  
   
-1.  Provádění pokračovat, dokud třetí dosažení zarážky, na **ladění** nabídky, klikněte na tlačítko **pokračovat**.  
+1. Provádění pokračovat, dokud třetí dosažení zarážky, na **ladění** nabídky, klikněte na tlačítko **pokračovat**.  
   
      Nový úkol, úloha 5, je nyní spuštěna a úloha 4 je nyní čekání. Můžete zobrazit důvod, proč tak, že najedete myší úkol čekání v **stav** okna. V **nadřazené** sloupce, Všimněte si, že úloha 4 je nadřazená úloha 5.  
   
@@ -273,7 +273,7 @@ Tento návod ukazuje, jak používat **paralelní úlohy** a **paralelní zásob
   
 #### <a name="to-resume-execution-until-the-fourth-breakpoint"></a>Chcete-li pokračovat v provádění, dokud čtvrtý zarážku  
   
-1.  Provádění pokračovat, dokud třetí dosažení zarážky, na **ladění** nabídky, klikněte na tlačítko **pokračovat**. Klikněte na tlačítko **ID** záhlaví sloupce seřadíte položky podle ID. Měli byste vidět na následujícím obrázku.  
+1. Provádění pokračovat, dokud třetí dosažení zarážky, na **ladění** nabídky, klikněte na tlačítko **pokračovat**. Klikněte na tlačítko **ID** záhlaví sloupce seřadíte položky podle ID. Měli byste vidět na následujícím obrázku.  
   
      ![Čtyři úlohy státy v okna paralelní zásobníky](../debugger/media/pdb-walkthrough-10.png "PDB_Walkthrough_10")  
   

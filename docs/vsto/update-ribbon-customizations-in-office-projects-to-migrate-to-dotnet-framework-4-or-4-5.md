@@ -12,32 +12,32 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ee1dcd72e80b38eb4dd31603b0133b7ee7f7636b
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 0fae2dc72c44b90068212c09086c63c9e00fd2d0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58324679"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096540"
 ---
 # <a name="update-ribbon-customizations-in-office-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>Aktualizace vlastních nastavení pásu karet v projektech Office při migraci na rozhraní .NET Framework 4 nebo .NET Framework 4.5
   Pokud váš projekt obsahuje vlastní nastavení pásu karet, který byl vytvořen pomocí **pás karet (vizuální návrhář)** položku projektu, musíte proveďte následující změny do projektu kódu, pokud Cílová architektura, která se změní na [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] nebo později.
 
--   Upravte vygenerovaný kód pásu karet.
+- Upravte vygenerovaný kód pásu karet.
 
--   Upravte veškerý kód, který vytvoří instanci ovládacích prvků pásu karet za běhu, zpracovává události pásu karet nebo nastavuje pozici komponentu pásu karet prostřednictvím kódu programu.
+- Upravte veškerý kód, který vytvoří instanci ovládacích prvků pásu karet za běhu, zpracovává události pásu karet nebo nastavuje pozici komponentu pásu karet prostřednictvím kódu programu.
 
 ## <a name="update-the-generated-ribbon-code"></a>Aktualizace generovaného kódu pásu karet
  Pokud cílové rozhraní projektu se změní na [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] nebo novější, je nutné změnit generovaného kódu pro položku pásu karet provedením následujících kroků. Soubory kódu, které je potřeba aktualizovat v závislosti na programovacím jazyce a jak vytvořit projekt:
 
--   V projektech Visual Basicu nebo v projektech Visual C#, které jste vytvořili v některém [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)] nebo [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)] všechny následující kroky proveďte v soubor kódu pásu karet (*YourRibbonItem*. Designer.cs nebo *YourRibbonItem*. Designer.vb). Soubor kódu na pozadí v projektech Visual Basicu zobrazíte kliknutím **zobrazit všechny soubory** tlačítko **Průzkumníku řešení**.
+- V projektech Visual Basicu nebo v projektech Visual C#, které jste vytvořili v některém [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)] nebo [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)] všechny následující kroky proveďte v soubor kódu pásu karet (*YourRibbonItem*. Designer.cs nebo *YourRibbonItem*. Designer.vb). Soubor kódu na pozadí v projektech Visual Basicu zobrazíte kliknutím **zobrazit všechny soubory** tlačítko **Průzkumníku řešení**.
 
--   V projektech Visual C#, které jste vytvořili v sadě Visual Studio 2008 a potom upgradovali na [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)], proveďte první dva kroky v soubor kódu pásu karet (*YourRibbonItem*.cs nebo *YourRibbonItem*.vb), a Proveďte zbývající kroky v soubor kódu pásu karet.
+- V projektech Visual C#, které jste vytvořili v sadě Visual Studio 2008 a potom upgradovali na [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)], proveďte první dva kroky v soubor kódu pásu karet (*YourRibbonItem*.cs nebo *YourRibbonItem*.vb), a Proveďte zbývající kroky v soubor kódu pásu karet.
 
 ### <a name="to-change-the-generated-ribbon-code"></a>Chcete-li změnit generovaného kódu pásu karet
 
-1.  Upravit deklarace třídy pásu karet, takže je odvozena z <xref:Microsoft.Office.Tools.Ribbon.RibbonBase> místo `Microsoft.Office.Tools.Ribbon.OfficeRibbon`.
+1. Upravit deklarace třídy pásu karet, takže je odvozena z <xref:Microsoft.Office.Tools.Ribbon.RibbonBase> místo `Microsoft.Office.Tools.Ribbon.OfficeRibbon`.
 
-2.  Upravte konstruktor třídy pásu karet, jak je znázorněno níže. Pokud jste přidali vlastní kód do konstruktoru, neměňte váš kód. V projektech Visual Basicu upravte pouze konstruktor bez parametrů. Ignorujte jiných konstruktoru.
+2. Upravte konstruktor třídy pásu karet, jak je znázorněno níže. Pokud jste přidali vlastní kód do konstruktoru, neměňte váš kód. V projektech Visual Basicu upravte pouze konstruktor bez parametrů. Ignorujte jiných konstruktoru.
 
      Následující příklad kódu ukazuje výchozí konstruktor třídy pásu karet v projektu, který cílí rozhraní .NET Framework 3.5.
 
@@ -72,7 +72,7 @@ ms.locfileid: "58324679"
     }
     ```
 
-3.  V `InitializeComponent` metody upravit veškerý kód, který vytvoří ovládací prvek pásu karet tak, aby kód místo toho používá jednu z metod helper <xref:Microsoft.Office.Tools.Ribbon.RibbonFactory> objektu.
+3. V `InitializeComponent` metody upravit veškerý kód, který vytvoří ovládací prvek pásu karet tak, aby kód místo toho používá jednu z metod helper <xref:Microsoft.Office.Tools.Ribbon.RibbonFactory> objektu.
 
     > [!NOTE]
     >  V projektech Visual C#, je třeba rozbalit oblast s názvem `Component Designer generated code` zobrazíte `InitializeComponent` metody.
@@ -99,7 +99,7 @@ ms.locfileid: "58324679"
 
      Úplný seznam pomocné metody pro ovládací prvky pásu karet, najdete v části [ovládací prvky pásu karet vytvořit instanci](#ribboncontrols).
 
-4.  V projektech Visual C#, upravte libovolném řádku kódu v `InitializeComponent` metodu, která se používá <xref:System.EventHandler%601> delegáta místo toho použít konkrétní delegáta pásu karet.
+4. V projektech Visual C#, upravte libovolném řádku kódu v `InitializeComponent` metodu, která se používá <xref:System.EventHandler%601> delegáta místo toho použít konkrétní delegáta pásu karet.
 
      Předpokládejme například, že soubor obsahuje následující řádek kódu, který zpracovává <xref:Microsoft.Office.Tools.Ribbon.RibbonButton.Click> události v projektu, který cílí na rozhraní .NET Framework 3.5.
 
@@ -107,9 +107,9 @@ ms.locfileid: "58324679"
 
     \<CodeContentPlaceHolder > 9</CodeContentPlaceHolder> úplný seznam delegátů pásu karet najdete v tématu [zpracování pás karet událostí](#ribbonevents).
 
-5.  V projektech Visual Basicu, vyhledejte `ThisRibbonCollection` třídy na konci souboru. Upravte deklaraci této třídy, aby už nebude dědit z `Microsoft.Office.Tools.Ribbon.RibbonReadOnlyCollection`.
+5. V projektech Visual Basicu, vyhledejte `ThisRibbonCollection` třídy na konci souboru. Upravte deklaraci této třídy, aby už nebude dědit z `Microsoft.Office.Tools.Ribbon.RibbonReadOnlyCollection`.
 
-##  <a name="ribboncontrols"></a> Vytvoření instance ovládacích prvků pásu karet
+## <a name="ribboncontrols"></a> Vytvoření instance ovládacích prvků pásu karet
  Je třeba upravit jakýkoli kód, který dynamicky vytvoří instanci ovládacích prvků pásu karet. V projektech, které se zaměřují rozhraní .NET Framework 3.5, ovládací prvky pásu karet jsou třídy, které lze vytvořit instanci přímo v některých scénářích. V projektech, které se zaměřují [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] nebo novější, jsou tyto ovládací prvky rozhraní, které nelze přímo vytvořit instanci. Musíte vytvořit ovládací prvky pomocí metod, které jsou poskytovány <xref:Microsoft.Office.Tools.Ribbon.RibbonFactory> objektu.
 
  Existují dva způsoby přístupu k <xref:Microsoft.Office.Tools.Ribbon.RibbonFactory> objektu:
@@ -142,7 +142,7 @@ ms.locfileid: "58324679"
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonTab>|<xref:Microsoft.Office.Tools.Ribbon.RibbonFactory.CreateRibbonTab%2A>|
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton>|<xref:Microsoft.Office.Tools.Ribbon.RibbonFactory.CreateRibbonToggleButton%2A>|
 
-##  <a name="ribbonevents"></a> Zpracování události pásu karet
+## <a name="ribbonevents"></a> Zpracování události pásu karet
  Je třeba upravit jakýkoli kód, který zpracovává události ovládacích prvků pásu karet. V projektech cílených rozhraní .NET Framework 3.5, jsou tyto události zpracovat Obecné <xref:System.EventHandler%601> delegovat. V projektech, které se zaměřují [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] nebo později, jsou tyto události nyní zpracovat jiných delegátů.
 
  Následující tabulka uvádí události pásu karet a delegáty, které jsou spojeny s nimi v projektech cílených [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] nebo novější.

@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f2869e76b0b5fd70515701352d257530480f0920
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 9ec30f3200b5a1df587713a2ee2394f52e3fb333
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56618130"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093212"
 ---
 # <a name="how-to-configure-the-clickonce-trust-prompt-behavior"></a>Postupy: Konfigurace chování výzvy důvěryhodnosti ClickOnce
 Vztahu důvěryhodnosti ClickOnce pro ovládací prvek můžete nakonfigurovat, jestli koncovým uživatelům se zobrazí možnost instalace aplikace ClickOnce, jako je například aplikace Windows Forms, aplikace Windows Presentation Foundation, konzolové aplikace a prohlížeč WPF – aplikace a řešení pro systém Office. Konfigurace potvrzení důvěryhodnosti nastavením klíčů registru v počítači koncového uživatele.
@@ -53,21 +53,21 @@ Vztahu důvěryhodnosti ClickOnce pro ovládací prvek můžete nakonfigurovat, 
 
 #### <a name="to-enable-the-clickonce-trust-prompt-by-using-the-registry-editor"></a>Povolení vztahu důvěryhodnosti ClickOnce pomocí Editoru registru
 
-1.  Otevřete editor registru:
+1. Otevřete editor registru:
 
-    1.  Klikněte na tlačítko **Start**a potom klikněte na tlačítko **spustit**.
+    1. Klikněte na tlačítko **Start**a potom klikněte na tlačítko **spustit**.
 
-    2.  V **otevřít** zadejte `regedit`a potom klikněte na tlačítko **OK**.
+    2. V **otevřít** zadejte `regedit`a potom klikněte na tlačítko **OK**.
 
-2.  Vyhledejte následující klíč registru:
+2. Vyhledejte následující klíč registru:
 
      **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\.NETFramework\Security\TrustManager\PromptingLevel**
 
      Pokud klíč neexistuje, vytvořte ho.
 
-3.  Přidejte následující podklíče jako **řetězcovou hodnotu**, pokud ještě neexistují, s přiřazenými hodnotami, které jsou uvedeny v následující tabulce.
+3. Přidejte následující podklíče jako **řetězcovou hodnotu**, pokud ještě neexistují, s přiřazenými hodnotami, které jsou uvedeny v následující tabulce.
 
-    |Hodnota řetězce podklíče|Hodnota|
+    |Hodnota řetězce podklíče|Value|
     |-------------------------|-----------|
     |`Internet`|`Enabled`|
     |`UntrustedSites`|`Disabled`|
@@ -79,9 +79,9 @@ Vztahu důvěryhodnosti ClickOnce pro ovládací prvek můžete nakonfigurovat, 
 
 #### <a name="to-enable-the-clickonce-trust-prompt-programmatically"></a>Povolení vztahu důvěryhodnosti ClickOnce prostřednictvím kódu programu
 
-1.  Vytvoření konzolové aplikace v jazyce Visual Basic nebo Visual C# v sadě Visual Studio.
+1. Vytvoření konzolové aplikace v jazyce Visual Basic nebo Visual C# v sadě Visual Studio.
 
-2.  Otevřít *soubor Program.vb* nebo *Program.cs* pro úpravy a přidejte následující kód.
+2. Otevřít *soubor Program.vb* nebo *Program.cs* pro úpravy a přidejte následující kód.
 
     ```vb
     Dim key As Microsoft.Win32.RegistryKey
@@ -105,26 +105,26 @@ Vztahu důvěryhodnosti ClickOnce pro ovládací prvek můžete nakonfigurovat, 
     key.Close();
     ```
 
-3.  Sestavte a spusťte aplikaci.
+3. Sestavte a spusťte aplikaci.
 
 ## <a name="restrict-the-clickonce-trust-prompt"></a>Omezení vztahu důvěryhodnosti ClickOnce
  Omezení výzvu vztahu důvěryhodnosti, takže řešení musí být podepsány pomocí technologie Authenticode certifikáty, které mají známé identity, než se uživatelům zobrazí výzva rozhodnutí důvěryhodnosti.
 
 #### <a name="to-restrict-the-clickonce-trust-prompt-by-using-the-registry-editor"></a>Omezení vztahu důvěryhodnosti ClickOnce pomocí Editoru registru
 
-1.  Otevřete editor registru:
+1. Otevřete editor registru:
 
-    1.  Klikněte na tlačítko **Start**a potom klikněte na tlačítko **spustit**.
+    1. Klikněte na tlačítko **Start**a potom klikněte na tlačítko **spustit**.
 
-    2.  V **otevřít** zadejte `regedit`a potom klikněte na tlačítko **OK**.
+    2. V **otevřít** zadejte `regedit`a potom klikněte na tlačítko **OK**.
 
-2.  Vyhledejte následující klíč registru:
+2. Vyhledejte následující klíč registru:
 
      **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\.NETFramework\Security\TrustManager\PromptingLevel**
 
      Pokud klíč neexistuje, vytvořte ho.
 
-3.  Přidejte následující podklíče jako **řetězcovou hodnotu**, pokud ještě neexistují, s přiřazenými hodnotami, které jsou uvedeny v následující tabulce.
+3. Přidejte následující podklíče jako **řetězcovou hodnotu**, pokud ještě neexistují, s přiřazenými hodnotami, které jsou uvedeny v následující tabulce.
 
     |Hodnota řetězce podklíče|Hodnota|
     |-------------------------|-----------|
@@ -136,9 +136,9 @@ Vztahu důvěryhodnosti ClickOnce pro ovládací prvek můžete nakonfigurovat, 
 
 #### <a name="to-restrict-the-clickonce-trust-prompt-programmatically"></a>Omezení vztahu důvěryhodnosti ClickOnce prostřednictvím kódu programu
 
-1.  Vytvoření konzolové aplikace v jazyce Visual Basic nebo Visual C# v sadě Visual Studio.
+1. Vytvoření konzolové aplikace v jazyce Visual Basic nebo Visual C# v sadě Visual Studio.
 
-2.  Otevřít *soubor Program.vb* nebo *Program.cs* pro úpravy a přidejte následující kód.
+2. Otevřít *soubor Program.vb* nebo *Program.cs* pro úpravy a přidejte následující kód.
 
     ```vb
     Dim key As Microsoft.Win32.RegistryKey
@@ -162,28 +162,28 @@ Vztahu důvěryhodnosti ClickOnce pro ovládací prvek můžete nakonfigurovat, 
     key.Close();
     ```
 
-3.  Sestavte a spusťte aplikaci.
+3. Sestavte a spusťte aplikaci.
 
 ## <a name="disable-the-clickonce-trust-prompt"></a>Zakázat výzvy důvěryhodnosti ClickOnce
  Výzvu vztahu důvěryhodnosti můžete zakázat, aby koncovým uživatelům se zobrazí možnost instalace řešení, které nejsou v jejich zásady zabezpečení již důvěryhodné.
 
 #### <a name="to-disable-the-clickonce-trust-prompt-by-using-the-registry-editor"></a>Chcete-li zakázat výzvy důvěryhodnosti ClickOnce pomocí Editoru registru
 
-1.  Otevřete editor registru:
+1. Otevřete editor registru:
 
-    1.  Klikněte na tlačítko **Start**a potom klikněte na tlačítko **spustit**.
+    1. Klikněte na tlačítko **Start**a potom klikněte na tlačítko **spustit**.
 
-    2.  V **otevřít** zadejte `regedit`a potom klikněte na tlačítko **OK**.
+    2. V **otevřít** zadejte `regedit`a potom klikněte na tlačítko **OK**.
 
-2.  Vyhledejte následující klíč registru:
+2. Vyhledejte následující klíč registru:
 
      **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\.NETFramework\Security\TrustManager\PromptingLevel**
 
      Pokud klíč neexistuje, vytvořte ho.
 
-3.  Přidejte následující podklíče jako **řetězcovou hodnotu**, pokud ještě neexistují, s přiřazenými hodnotami, které jsou uvedeny v následující tabulce.
+3. Přidejte následující podklíče jako **řetězcovou hodnotu**, pokud ještě neexistují, s přiřazenými hodnotami, které jsou uvedeny v následující tabulce.
 
-    |Hodnota řetězce podklíče|Hodnota|
+    |Hodnota řetězce podklíče|Value|
     |-------------------------|-----------|
     |`UntrustedSites`|`Disabled`|
     |`Internet`|`Disabled`|
@@ -193,9 +193,9 @@ Vztahu důvěryhodnosti ClickOnce pro ovládací prvek můžete nakonfigurovat, 
 
 #### <a name="to-disable-the-clickonce-trust-prompt-programmatically"></a>Chcete-li zakázat výzvy důvěryhodnosti ClickOnce prostřednictvím kódu programu
 
-1.  Vytvoření konzolové aplikace v jazyce Visual Basic nebo Visual C# v sadě Visual Studio.
+1. Vytvoření konzolové aplikace v jazyce Visual Basic nebo Visual C# v sadě Visual Studio.
 
-2.  Otevřít *soubor Program.vb* nebo *Program.cs* pro úpravy a přidejte následující kód.
+2. Otevřít *soubor Program.vb* nebo *Program.cs* pro úpravy a přidejte následující kód.
 
     ```vb
     Dim key As Microsoft.Win32.RegistryKey
@@ -220,7 +220,7 @@ Vztahu důvěryhodnosti ClickOnce pro ovládací prvek můžete nakonfigurovat, 
 
     ```
 
-3.  Sestavte a spusťte aplikaci.
+3. Sestavte a spusťte aplikaci.
 
 ## <a name="see-also"></a>Viz také:
 - [Zabezpečení aplikací ClickOnce](../deployment/securing-clickonce-applications.md)

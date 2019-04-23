@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 34a9a97e018642660d7424b0bfce2a1bbbc9c073
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: 6a7bf7d49430923652ece66fc566ee75af1884d0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57983517"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093343"
 ---
 # <a name="walkthrough-publish-a-visual-studio-extension"></a>Návod: Publikování rozšíření sady Visual Studio
 
@@ -80,27 +80,27 @@ Tento článek používá výchozí rozšíření VSPackage, ale postup je platn
 
     * **VSIX ID** je jedinečný identifikátor, který sada Visual Studio používá pro rozšíření. Tento identifikátor je vyžadována, pokud by měl mít rozšíření automaticky aktualizovat. Tento identifikátor se vyplní automaticky z *source.extension.vsixmanifest* souboru.
 
-   * **Logo** , který se používá pro rozšíření. Toto logo se vyplní automaticky z *source.extension.vsixmanifest* souboru, pokud je k dispozici.
+    * **Logo** , který se používá pro rozšíření. Toto logo se vyplní automaticky z *source.extension.vsixmanifest* souboru, pokud je k dispozici.
 
-     * **Krátký popis** toho, co dělá rozšíření. Tento popis se vyplní automaticky z *source.extension.vsixmanifest* souboru.
+    * **Krátký popis** toho, co dělá rozšíření. Tento popis se vyplní automaticky z *source.extension.vsixmanifest* souboru.
 
-     * **Přehled** je vhodné místo zahrnout snímky obrazovky a podrobné informace o co dělá rozšíření.
+    * **Přehled** je vhodné místo zahrnout snímky obrazovky a podrobné informace o co dělá rozšíření.
 
-     * **Podporované verze sady Visual Studio** umožní vybrat, které verze sady Visual Studio rozšíření bude fungovat na. Rozšíření je nainstalované jenom do těchto verzí.
+    * **Podporované verze sady Visual Studio** umožní vybrat, které verze sady Visual Studio rozšíření bude fungovat na. Rozšíření je nainstalované jenom do těchto verzí.
 
-     * ** Podporované edice umožňuje zvolit, jaké edice sady Visual Studio bude vaše rozšíření fungovat v sadě Visual Studio. Rozšíření je nainstalované jenom na tyto edice.
+    * ** Podporované edice umožňuje zvolit, jaké edice sady Visual Studio bude vaše rozšíření fungovat v sadě Visual Studio. Rozšíření je nainstalované jenom na tyto edice.
 
-     * **Typ**. Jsou nejběžnějším typem rozšíření **nástroje**.
+    * **Typ**. Jsou nejběžnějším typem rozšíření **nástroje**.
 
-     * **Kategorie**. Můžete si vyberte až tři, které jsou nejvhodnější pro vaše rozšíření.
+    * **Kategorie**. Můžete si vyberte až tři, které jsou nejvhodnější pro vaše rozšíření.
 
-     * **Značky** jsou klíčová slova, které pomáhají uživatelům najít rozšíření. Značky pomáhají zvýšit relevanci vyhledávání rozšíření na webu Marketplace.
+    * **Značky** jsou klíčová slova, které pomáhají uživatelům najít rozšíření. Značky pomáhají zvýšit relevanci vyhledávání rozšíření na webu Marketplace.
 
-     * **Cenové kategorie** jsou náklady na vaše rozšíření.
+    * **Cenové kategorie** jsou náklady na vaše rozšíření.
 
-     * **Úložiště zdrojového kódu** vám umožní sdílet odkaz na váš zdrojový kód s komunitou.
+    * **Úložiště zdrojového kódu** vám umožní sdílet odkaz na váš zdrojový kód s komunitou.
 
-     * **Povolit Q & A pro své rozšíření** umožňuje uživatelům ponechte dotazy na stránce rozšíření položky.
+    * **Povolit Q & A pro své rozšíření** umožňuje uživatelům ponechte dotazy na stránce rozšíření položky.
 
 9. Klikněte na tlačítko **uložit a nahrajte**. Tato možnost má zpět do vašeho vydavatele spravovat stránky. Rozšíření ještě nebyla publikována. Publikování rozšíření, klikněte pravým tlačítkem na rozšíření a vyberte **zveřejnit**. Můžete zobrazit, jak se vaše rozšíření bude vypadat na webu Marketplace výběrem **rozšíření zobrazení**. Získání čísel, klikněte na **sestavy**. Pokud chcete provést změny rozšíření, klikněte na **upravit**.
 

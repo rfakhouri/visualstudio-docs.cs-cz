@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: conceptdev
 ms.author: crdun
 manager: jillfra
-ms.openlocfilehash: d2be08b563c67b210f8e70df36f49b9fa4c68316
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 6e1b34cbc2497bd70f65021c83db4f59480519f1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59660642"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095955"
 ---
 # <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>Odstraňování potíží a známé problémy (Visual Studio Tools for Unity)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,11 +29,11 @@ V této části vám najít řešení běžných potíží s nástroji Visual St
   
 ##### <a name="to-migrate-your-unity-project-from-unityvs-18-to-visual-studio-tools-for-unity-19"></a>K migraci z UnityVS 1.8 svým projektem Unity pro Visual Studio Tools pro Unity 1.9  
   
-1.  Odstraňte staré soubory řešení a projektu z Unity projektu. V kořenovém adresáři vašeho projektu Unity, vyhledejte Visual Studio .sln a. * proj soubory a odstraňte je všechny.  
+1. Odstraňte staré soubory řešení a projektu z Unity projektu. V kořenovém adresáři vašeho projektu Unity, vyhledejte Visual Studio .sln a. * proj soubory a odstraňte je všechny.  
   
-2.  Visual Studio Tools for Unity balíček naimportujte Unity projektu. Informace o tom, jak importovat balíček VSTU najdete v tématu Konfigurace Visual Studio Tools for Unity na [Začínáme](../cross-platform/getting-started-with-visual-studio-tools-for-unity.md) stránky.  
+2. Visual Studio Tools for Unity balíček naimportujte Unity projektu. Informace o tom, jak importovat balíček VSTU najdete v tématu Konfigurace Visual Studio Tools for Unity na [Začínáme](../cross-platform/getting-started-with-visual-studio-tools-for-unity.md) stránky.  
   
-3.  Generovat nové soubory řešení a projektu. Pokud chcete vygenerovat teď v Unity editoru v hlavní nabídce zvolte **Visual Studio Tools**, **Generovat soubory projektu**. V opačném případě můžete tento krok přeskočit, pokud chcete zjistit. Visual Studio Tools for Unity vygeneruje nové soubory automaticky při výběru **Visual Studio Tools**, **otevřít v sadě Visual Studio**.  
+3. Generovat nové soubory řešení a projektu. Pokud chcete vygenerovat teď v Unity editoru v hlavní nabídce zvolte **Visual Studio Tools**, **Generovat soubory projektu**. V opačném případě můžete tento krok přeskočit, pokud chcete zjistit. Visual Studio Tools for Unity vygeneruje nové soubory automaticky při výběru **Visual Studio Tools**, **otevřít v sadě Visual Studio**.  
   
 ### <a name="visual-studio-wont-load-the-solution-that-visual-studio-tools-for-unity-created"></a>Visual Studio se nenačte řešení, které vytvoří Visual Studio Tools for Unity  
  Další informace najdete v tématu [odpověď na tuto otázku stackoverflow](http://stackoverflow.com/a/24035907/36702).  
@@ -44,11 +44,11 @@ V této části vám najít řešení běžných potíží s nástroji Visual St
 ## <a name="known-issues"></a>Známé problémy  
  Jsou známy problémy ve Visual Studio Tools for Unity, které jsou výsledkem způsobu interakce ladicí program Unity a starší verzi kompilátoru jazyka C#. Pracujeme na řešení těchto problémů, ale do té doby může dojít k následujícím problémům.  
   
--   Při ladění Unity někdy dojde k chybě.  
+- Při ladění Unity někdy dojde k chybě.  
   
--   Při ladění, se zablokuje někdy Unity.  
+- Při ladění, se zablokuje někdy Unity.  
   
--   Krokování do proměnné a z metody v některých případech se chová nesprávně, zejména v iterátory nebo v rámci příkazů přepínače.  
+- Krokování do proměnné a z metody v některých případech se chová nesprávně, zejména v iterátory nebo v rámci příkazů přepínače.  
   
 ## <a name="reporting-errors"></a>Hlášení chyb  
  Pomozte nám zlepšovat kvalitu Visual Studio Tools for Unity odesíláním zpráv o chybách, když dochází k chybám, zablokuje nebo jiné chyby. To pomáhá nám prozkoumat a řešit problémy ve Visual Studio Tools for Unity. Děkuju!  

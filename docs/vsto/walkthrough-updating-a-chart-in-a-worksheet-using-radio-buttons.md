@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c65e064452d307727e1c19578f7a660451f49c70
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: f07987a0c7debdb44c2da442ce6b598f8a78dea0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59651887"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097216"
 ---
 # <a name="walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons"></a>Návod: Aktualizace grafu na listu s použitím přepínačů
   Tento návod ukazuje základy používání přepínací tlačítka na list aplikace Microsoft Office Excel poskytnout způsob, jak rychle přepínat mezi možnostmi uživatele. V takovém případě možnosti změnit styl grafu.
@@ -30,9 +30,9 @@ ms.locfileid: "59651887"
 
  Tento návod znázorňuje následující úlohy:
 
--   Přidání skupiny přepínačů na list.
+- Přidání skupiny přepínačů na list.
 
--   Změna stylu grafu, pokud je vybrána možnost.
+- Změna stylu grafu, pokud je vybrána možnost.
 
 > [!NOTE]
 >  Váš počítač může v následujících pokynech zobrazovat odlišné názvy nebo umístění některých prvků uživatelského rozhraní sady Visual Studio. Tyto prvky jsou určeny edicí sady Visual Studio a použitým nastavením. Další informace najdete v tématu [přizpůsobení integrovaného vývojového prostředí sady Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
@@ -40,9 +40,9 @@ ms.locfileid: "59651887"
 ## <a name="prerequisites"></a>Požadavky
  K dokončení tohoto návodu budete potřebovat následující komponenty:
 
--   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
+- [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
--   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] nebo [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].
+- [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] nebo [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].
 
 ## <a name="add-a-chart-to-a-worksheet"></a>Přidání grafu na listu
  Můžete vytvořit projekt Excelový sešit, který upravuje existující sešit. V tomto názorném postupu se přidat graf sešitu a pak použít tento sešit v novém řešení aplikace Excel. Zdroj dat v tomto návodu je to list s názvem **Data grafu**.
@@ -68,21 +68,21 @@ ms.locfileid: "59651887"
 
 ### <a name="to-add-a-chart-in-excel"></a>Přidání grafu v aplikaci Excel
 
-1.  Na **vložit** kartě **grafy** klikněte na možnost **sloupec**a potom klikněte na tlačítko **všechny typy grafů**.
+1. Na **vložit** kartě **grafy** klikněte na možnost **sloupec**a potom klikněte na tlačítko **všechny typy grafů**.
 
-2.  V **vložit graf** dialogové okno, klikněte na tlačítko **OK**.
+2. V **vložit graf** dialogové okno, klikněte na tlačítko **OK**.
 
-3.  Na **návrhu** kartě **Data** klikněte na možnost **vybrat Data**.
+3. Na **návrhu** kartě **Data** klikněte na možnost **vybrat Data**.
 
-4.  V **vybrat zdroj dat** dialogové okno, kliknutím na webu **Chartdata rozsah** a zrušte všechny výchozí výběr.
+4. V **vybrat zdroj dat** dialogové okno, kliknutím na webu **Chartdata rozsah** a zrušte všechny výchozí výběr.
 
-5.  V **Data grafu** listu, vyberte blok buněk, který obsahuje čísla, která zahrnuje A4 v horním levém rohu E8 v pravém dolním rohu.
+5. V **Data grafu** listu, vyberte blok buněk, který obsahuje čísla, která zahrnuje A4 v horním levém rohu E8 v pravém dolním rohu.
 
-6.  V **vybrat zdroj dat** dialogové okno, klikněte na tlačítko **OK**.
+6. V **vybrat zdroj dat** dialogové okno, klikněte na tlačítko **OK**.
 
-7.  Změna umístění grafu tak, aby pravém horním rohu v souladu s buňky **E2**.
+7. Změna umístění grafu tak, aby pravém horním rohu v souladu s buňky **E2**.
 
-8.  Uložte soubor na jednotce C a pojmenujte ho **ExcelChart.xlsx**.
+8. Uložte soubor na jednotce C a pojmenujte ho **ExcelChart.xlsx**.
 
 9. Ukončete aplikaci Excel.
 
@@ -91,13 +91,13 @@ ms.locfileid: "59651887"
 
 ### <a name="to-create-a-new-project"></a>Chcete-li vytvořit nový projekt
 
-1.  Vytvořte projekt sešitu aplikace Excel s názvem **Můj Excelový graf**. V průvodci vyberte **zkopírovat existující dokument**.
+1. Vytvořte projekt sešitu aplikace Excel s názvem **Můj Excelový graf**. V průvodci vyberte **zkopírovat existující dokument**.
 
      Další informace najdete v tématu [jak: Vytvářet projekty pro Office v sadě Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
-2.  Klikněte na tlačítko **Procházet** tlačítko a přejděte do sešitu, který jste vytvořili dříve v tomto návodu.
+2. Klikněte na tlačítko **Procházet** tlačítko a přejděte do sešitu, který jste vytvořili dříve v tomto návodu.
 
-3.  Klikněte na **OK**.
+3. Klikněte na **OK**.
 
      Visual Studio otevře nový sešit aplikace Excel v návrháři a přidá **Můj Excelový graf** projektu **Průzkumníka řešení**.
 
@@ -106,9 +106,9 @@ ms.locfileid: "59651887"
 
 ### <a name="to-change-the-name-of-the-chart-control"></a>Chcete-li změnit název ovládacího prvku grafu
 
-1.  Vyberte <xref:Microsoft.Office.Tools.Excel.Chart> ovládací prvek v návrháři a změnit následující vlastnosti v **vlastnosti** okna.
+1. Vyberte <xref:Microsoft.Office.Tools.Excel.Chart> ovládací prvek v návrháři a změnit následující vlastnosti v **vlastnosti** okna.
 
-    |Vlastnost|Value|
+    |Vlastnost|Hodnota|
     |--------------|-----------|
     |**Název**|**dataChart**|
     |**HasLegend**|**false**|
@@ -120,11 +120,11 @@ ms.locfileid: "59651887"
 
 ### <a name="to-add-a-user-control"></a>Chcete-li přidat uživatelský ovládací prvek
 
-1.  Vyberte **Můj Excelový graf** projekt **Průzkumníka řešení**.
+1. Vyberte **Můj Excelový graf** projekt **Průzkumníka řešení**.
 
-2.  Na **projektu** nabídky, klikněte na tlačítko **přidat novou položku**.
+2. Na **projektu** nabídky, klikněte na tlačítko **přidat novou položku**.
 
-3.  V **přidat novou položku** dialogové okno, klikněte na tlačítko **uživatelský ovládací prvek**, ovládací prvek pojmenujte **ChartOptions,** a klikněte na tlačítko **přidat**.
+3. V **přidat novou položku** dialogové okno, klikněte na tlačítko **uživatelský ovládací prvek**, ovládací prvek pojmenujte **ChartOptions,** a klikněte na tlačítko **přidat**.
 
 ### <a name="to-add-radio-buttons-to-the-user-control"></a>Přidání přepínačů uživatelského ovládacího prvku
 
@@ -139,21 +139,21 @@ ms.locfileid: "59651887"
 
 3. Přidejte druhé tlačítko přepínače do uživatelského ovládacího prvku a změňte následující vlastnosti.
 
-   | Vlastnost | Value |
+   | Vlastnost | Hodnota |
    |----------|---------------|
    | **Název** | **barChart** |
    | **Text** | **Pruhový graf** |
 
 4. Přidejte třetí přepínač uživatelského ovládacího prvku a změňte následující vlastnosti.
 
-   | Vlastnost | Hodnota |
+   | Vlastnost | Value |
    |----------|----------------|
    | **Název** | **lineChart** |
    | **Text** | **Spojnicový graf** |
 
 5. Přidejte čtvrtý přepínač uživatelského ovládacího prvku a změňte následující vlastnosti.
 
-   |Vlastnost|Value|
+   |Vlastnost|Hodnota|
    |--------------|-----------|
    |**Název**|**areaBlockChart**|
    |**Text**|**Plošný graf bloku**|
@@ -165,36 +165,36 @@ ms.locfileid: "59651887"
 
 ### <a name="to-create-an-event-and-property-on-a-user-control"></a>Vytvoření události a vlastnost na uživatelský ovládací prvek
 
-1.  V **Průzkumníka řešení**, klikněte pravým tlačítkem na uživatelský ovládací prvek a potom klikněte na tlačítko **zobrazit kód**.
+1. V **Průzkumníka řešení**, klikněte pravým tlačítkem na uživatelský ovládací prvek a potom klikněte na tlačítko **zobrazit kód**.
 
-2.  Přidejte kód, který `ChartOptions` třídy za účelem vytvoření `SelectionChanged` událostí a `Selection` vlastnost.
+2. Přidejte kód, který `ChartOptions` třídy za účelem vytvoření `SelectionChanged` událostí a `Selection` vlastnost.
 
      [!code-vb[Trin_VstcoreProgrammingControlsExcel#13](../vsto/codesnippet/VisualBasic/my excel chart/ChartOptions.vb#13)]
      [!code-cs[Trin_VstcoreProgrammingControlsExcel#13](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/ChartOptions.cs#13)]
 
 ### <a name="to-handle-the-checkedchanged-event-of-the-radio-buttons"></a>Chcete zpracovat událost CheckedChanged přepínačů
 
-1.  Nastavit typ grafu `CheckedChanged` obslužná rutina události `areaBlockChart` přepínač a následně vyvolání události.
+1. Nastavit typ grafu `CheckedChanged` obslužná rutina události `areaBlockChart` přepínač a následně vyvolání události.
 
      [!code-vb[Trin_VstcoreProgrammingControlsExcel#14](../vsto/codesnippet/VisualBasic/my excel chart/ChartOptions.vb#14)]
      [!code-cs[Trin_VstcoreProgrammingControlsExcel#14](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/ChartOptions.cs#14)]
 
-2.  Nastavit typ grafu `CheckedChanged` obslužná rutina události `barChart` přepínač.
+2. Nastavit typ grafu `CheckedChanged` obslužná rutina události `barChart` přepínač.
 
      [!code-vb[Trin_VstcoreProgrammingControlsExcel#15](../vsto/codesnippet/VisualBasic/my excel chart/ChartOptions.vb#15)]
      [!code-cs[Trin_VstcoreProgrammingControlsExcel#15](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/ChartOptions.cs#15)]
 
-3.  Nastavit typ grafu `CheckedChanged` obslužná rutina události `columnChart` přepínač.
+3. Nastavit typ grafu `CheckedChanged` obslužná rutina události `columnChart` přepínač.
 
      [!code-vb[Trin_VstcoreProgrammingControlsExcel#16](../vsto/codesnippet/VisualBasic/my excel chart/ChartOptions.vb#16)]
      [!code-cs[Trin_VstcoreProgrammingControlsExcel#16](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/ChartOptions.cs#16)]
 
-4.  Nastavit typ grafu `CheckedChanged` obslužná rutina události `lineChart` přepínač.
+4. Nastavit typ grafu `CheckedChanged` obslužná rutina události `lineChart` přepínač.
 
      [!code-vb[Trin_VstcoreProgrammingControlsExcel#17](../vsto/codesnippet/VisualBasic/my excel chart/ChartOptions.vb#17)]
      [!code-cs[Trin_VstcoreProgrammingControlsExcel#17](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/ChartOptions.cs#17)]
 
-5.  V jazyce C# je nutné přidat obslužné rutiny událostí pro přepínací tlačítka. Můžete přidat kód, který `ChartOptions` konstruktor pod volání `InitializeComponent`. Informace o tom, jak vytváření obslužných rutin událostí, naleznete v tématu [jak: Vytváření obslužných rutin událostí v projektech pro systém Office](../vsto/how-to-create-event-handlers-in-office-projects.md).
+5. V jazyce C# je nutné přidat obslužné rutiny událostí pro přepínací tlačítka. Můžete přidat kód, který `ChartOptions` konstruktor pod volání `InitializeComponent`. Informace o tom, jak vytváření obslužných rutin událostí, naleznete v tématu [jak: Vytváření obslužných rutin událostí v projektech pro systém Office](../vsto/how-to-create-event-handlers-in-office-projects.md).
 
      [!code-cs[Trin_VstcoreProgrammingControlsExcel#18](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/ChartOptions.cs#18)]
 
@@ -203,29 +203,29 @@ ms.locfileid: "59651887"
 
 ### <a name="to-add-the-user-control-your-worksheet"></a>Chcete-li přidat uživatelský ovládací prvek list
 
-1.  Na **sestavení** nabídky, klikněte na tlačítko **sestavit řešení**.
+1. Na **sestavení** nabídky, klikněte na tlačítko **sestavit řešení**.
 
      **ChartOptions** uživatelský ovládací prvek je přidán do **nástrojů**.
 
-2.  V **Průzkumníka řešení**, klikněte pravým tlačítkem na **Sheet1.vb** nebo **Sheet1.cs**a potom klikněte na tlačítko **Návrhář zobrazení**.
+2. V **Průzkumníka řešení**, klikněte pravým tlačítkem na **Sheet1.vb** nebo **Sheet1.cs**a potom klikněte na tlačítko **Návrhář zobrazení**.
 
-3.  Přetáhněte **ChartOptions** ovládacího prvku **nástrojů** do listu.
+3. Přetáhněte **ChartOptions** ovládacího prvku **nástrojů** do listu.
 
      Nový ovládací prvek s názvem `my_Excel_Chart_ChartOptions1` se přidá do vašeho projektu.
 
-4.  Změňte název ovládacího prvku na **ChartOptions1**.
+4. Změňte název ovládacího prvku na **ChartOptions1**.
 
 ## <a name="change-the-chart-type"></a>Změnit typ grafu
  Chcete-li změnit typ grafu, vytvořte obslužnou rutinu události, která nastavuje styl podle možnosti vybrané v uživatelského ovládacího prvku.
 
 ### <a name="to-change-the-type-of-chart-that-is-displayed-in-the-worksheet"></a>Chcete-li změnit typ grafu, který se zobrazí v listu
 
-1.  Přidejte následující obslužnou rutinu události pro `Sheet1` třídy.
+1. Přidejte následující obslužnou rutinu události pro `Sheet1` třídy.
 
      [!code-vb[Trin_VstcoreProgrammingControlsExcel#19](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#19)]
      [!code-cs[Trin_VstcoreProgrammingControlsExcel#19](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#19)]
 
-2.  V jazyce C#, musíte přidat obslužnou rutinu události pro uživatelský ovládací prvek <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> události, jak je znázorněno níže. Informace o tom, jak vytváření obslužných rutin událostí, naleznete v tématu [jak: Vytváření obslužných rutin událostí v projektech pro systém Office](../vsto/how-to-create-event-handlers-in-office-projects.md).
+2. V jazyce C#, musíte přidat obslužnou rutinu události pro uživatelský ovládací prvek <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> události, jak je znázorněno níže. Informace o tom, jak vytváření obslužných rutin událostí, naleznete v tématu [jak: Vytváření obslužných rutin událostí v projektech pro systém Office](../vsto/how-to-create-event-handlers-in-office-projects.md).
 
      [!code-cs[Trin_VstcoreProgrammingControlsExcel#20](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#20)]
 
@@ -234,20 +234,20 @@ ms.locfileid: "59651887"
 
 ### <a name="to-test-your-workbook"></a>K otestování vašeho sešitu
 
-1.  Stisknutím klávesy **F5** ke spuštění projektu.
+1. Stisknutím klávesy **F5** ke spuštění projektu.
 
-2.  Vyberte různé přepínače.
+2. Vyberte různé přepínače.
 
-3.  Potvrďte, že styl grafu se změní tak, aby odpovídaly výběr.
+3. Potvrďte, že styl grafu se změní tak, aby odpovídaly výběr.
 
 ## <a name="next-steps"></a>Další kroky
  Tento návod ukazuje základy používání přepínacích tlačítek a styly grafu na listech. Tady jsou některé úlohy, které by mohl pocházet Další:
 
--   Nasazení projektu. Další informace najdete v tématu [nasazení řešení Office](../vsto/deploying-an-office-solution.md).
+- Nasazení projektu. Další informace najdete v tématu [nasazení řešení Office](../vsto/deploying-an-office-solution.md).
 
--   Pomocí tlačítka k naplnění textové pole. Další informace najdete v tématu [názorný postup: Zobrazení textu v textovém poli na listu s použitím tlačítka](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-worksheet-using-a-button.md).
+- Pomocí tlačítka k naplnění textové pole. Další informace najdete v tématu [názorný postup: Zobrazení textu v textovém poli na listu s použitím tlačítka](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-worksheet-using-a-button.md).
 
--   Změna formátování v listu pomocí zaškrtávacích políček. Další informace najdete v tématu [názorný postup: Změna formátování listů s použitím ovládacích prvků CheckBox](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md).
+- Změna formátování v listu pomocí zaškrtávacích políček. Další informace najdete v tématu [názorný postup: Změna formátování listů s použitím ovládacích prvků CheckBox](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md).
 
 ## <a name="see-also"></a>Viz také:
 - [Návody pro aplikaci Excel](../vsto/walkthroughs-using-excel.md)

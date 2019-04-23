@@ -25,12 +25,12 @@ caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6cb3b1f0d1c21a7cde53f8b3eecf1cd25c26b394
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 684738fd2180a3c5bf269b2a30efd970bcf9ab08
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54772651"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092198"
 ---
 # <a name="how-to-step-out-of-managed-code-when-native-frames-are-missing-from-the-call-stack-window"></a>Postupy: Vystoupení ze spravovaného kódu, pokud v okně zásobník volání chybějí nativní rámce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,9 +42,9 @@ Pokud má váš kód nativní rámce, které jsou viditelné ve **zásobník vol
   
 ### <a name="to-step-out-of-managed-code-when-native-frames-are-missing-from-the-call-stack-display"></a>Chcete-li vystoupení ze spravovaného kódu, pokud zobrazení zásobníku volání chybějí nativní rámce  
   
-1.  V nativním kódu nastavte zarážku umístění po volání spravovaného kódu.  
+1. V nativním kódu nastavte zarážku umístění po volání spravovaného kódu.  
   
-2.  Na **ladění** nabídce zvolte **pokračovat**.  
+2. Na **ladění** nabídce zvolte **pokračovat**.  
   
      Po dokončení spravovaných volání provádění zastaví na zarážce v nativním kódu.  
   

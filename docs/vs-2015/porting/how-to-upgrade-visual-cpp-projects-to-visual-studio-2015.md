@@ -12,12 +12,12 @@ caps.latest.revision: 26
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: 047cb8733e1f1fa32e67b2fc7b6c53edb6174fcb
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 5b0153560173cf8b10ab5e20ebffd47d40baf735
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54797048"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095740"
 ---
 # <a name="how-to-upgrade-visual-c-projects-to-visual-studio-2015"></a>Postupy: Upgrade projektů Visual C++ pro Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,13 +32,13 @@ Při prvním otevření projektu Visual C++, který byl vytvořen v dřívějš�
 
  Pokud se zobrazí výzva k aktualizaci projektu, nemáte k ničemu upgradovat projekt.
 
--   Pokud byl projekt (.vcproj) byl vytvořen ve verzi [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , která je starší než [!INCLUDE[vs2010](../includes/vs2010-md.md)], je nutné aktualizovat projekt.
+- Pokud byl projekt (.vcproj) byl vytvořen ve verzi [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , která je starší než [!INCLUDE[vs2010](../includes/vs2010-md.md)], je nutné aktualizovat projekt.
 
--   Pokud byl projekt (.vcxproj) vytvořen v [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], nebo [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] máte dvě možnosti:
+- Pokud byl projekt (.vcxproj) vytvořen v [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], nebo [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] máte dvě možnosti:
 
-    -   Aktualizaci můžete přeskočit. [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] načte projekt bez provedení změn, pokud má přístup k nástrojům aplikace Visual C++ v [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] s aktualizací SP1, [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], nebo [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]. Tento přístup můžete poskytnout instalací verze Visual Studio, která projekt byl vytvořen s ve stejném počítači, který má [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)]. Další informace najdete v tématu [instalaci verzí sady Visual Studio Side-by-Side](../install/install-visual-studio-versions-side-by-side.md).
+    - Aktualizaci můžete přeskočit. [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] načte projekt bez provedení změn, pokud má přístup k nástrojům aplikace Visual C++ v [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] s aktualizací SP1, [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], nebo [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]. Tento přístup můžete poskytnout instalací verze Visual Studio, která projekt byl vytvořen s ve stejném počítači, který má [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)]. Další informace najdete v tématu [instalaci verzí sady Visual Studio Side-by-Side](../install/install-visual-studio-versions-side-by-side.md).
 
-    -   Můžete aktualizovat projekt tím, že [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] provést změny, které jsou popsány dále v tomto tématu. Pokud máte více než jeden projekt Visual C++ ve vašem řešení, musíte aktualizovat všechny z nich.
+    - Můžete aktualizovat projekt tím, že [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] provést změny, které jsou popsány dále v tomto tématu. Pokud máte více než jeden projekt Visual C++ ve vašem řešení, musíte aktualizovat všechny z nich.
 
         > [!NOTE]
         >  Pokud aktualizaci odmítnete při první výzvě, můžete aktualizovat projekt později výběrem **aktualizovat projekt VC ++** na **projektu** nabídky. Pokud tento příkaz nezobrazí, není aktualizace požadována.
@@ -46,9 +46,9 @@ Při prvním otevření projektu Visual C++, který byl vytvořen v dřívějš�
 ## <a name="upgrading-a-visual-c-project"></a>Upgrade projektu Visual C++
  Pokud je povoleno [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] automaticky aktualizovat projekt, budou provedeny tyto změny:
 
--   Změní projekt tak, aby používala [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] kompilátor a knihovny (PlatformToolset = VisualStudio v140).
+- Změní projekt tak, aby používala [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] kompilátor a knihovny (PlatformToolset = VisualStudio v140).
 
--   Pro [!INCLUDE[cppcli](../includes/cppcli-md.md)] projekty, změní TargetFrameworkVersion na .NET Framework 4.5.2.
+- Pro [!INCLUDE[cppcli](../includes/cppcli-md.md)] projekty, změní TargetFrameworkVersion na .NET Framework 4.5.2.
 
 ## <a name="continuing-to-work-with-a-custom-platformtoolset"></a>Pokračovat v práci s vlastní sadou PlatformToolset
  Pokud chcete pokračovat v práci s vlastním parametrem PlatformToolset v [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)], sada nástrojů se musí nacházet v části %ProgramFiles%\MSBuild\Microsoft.Cpp\v4.0\Platforms\Win32\PlatformToolsets\ v x x86 strojově, nebo v umístění % ProgramFiles (x86)%\MSBuild\ Microsoft.Cpp\v4.0\Platforms\Win32\PlatformToolsets\ x x64 počítače. Informace o tom, jak vytvořit vlastní PlatformToolset naleznete v tématu [cílení na více verzí v nativním C++](http://go.microsoft.com/fwlink/?LinkId=248587) na blogu týmu Visual C++.

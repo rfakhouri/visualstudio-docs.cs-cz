@@ -8,12 +8,12 @@ ms.assetid: 51b53778-469c-4cc9-854c-4e4992d6389b
 caps.latest.revision: 32
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6f512ac0788128db87269407c10ae400268283f5
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 229893e13da06253398da32cfef4a85402a4787a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57873541"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094551"
 ---
 # <a name="testing-sharepoint-2010-applications-with-coded-ui-tests"></a>Testování aplikací pro SharePoint 2010 pomocí programových testů uživatelského rozhraní
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,16 +22,16 @@ Zahrnutí programových testů UI v aplikaci SharePoint slouží k ověření, �
   
  **Požadavky**  
   
--   Visual Studio Enterprise  
+- Visual Studio Enterprise  
   
 ## <a name="what-else-should-i-know-about-coded-ui-tests"></a>Co dalšího byste vědět o programové testy UI?  
  Další informace o výhodách používání programové testy UI, naleznete v tématu [pomocí uživatelského rozhraní automatizace k testu kódu](../test/use-ui-automation-to-test-your-code.md) a [testování pro nepřetržité dodávky s Visual Studio 2012 – kapitola 5 automatizace systémových testů](http://go.microsoft.com/fwlink/?LinkID=255196).  
   
  **Poznámky**  
   
--   ![Prerequsite](../test/media/prereq.png "požadavky") programové testy uživatelského rozhraní pro aplikace SharePoint jsou podporovány pouze s SharePoint 2010.  
+- ![Prerequsite](../test/media/prereq.png "požadavky") programové testy uživatelského rozhraní pro aplikace SharePoint jsou podporovány pouze s SharePoint 2010.  
   
--   ![Prerequsite](../test/media/prereq.png "požadavky") není dostupná podpora pro ovládací prvky v aplikaci SharePoint Visio a PowerPoint 2010.  
+- ![Prerequsite](../test/media/prereq.png "požadavky") není dostupná podpora pro ovládací prvky v aplikaci SharePoint Visio a PowerPoint 2010.  
   
 ## <a name="creating-a-coded-ui-test-for-your-sharepoint-app"></a>Vytvoření programového testu UI pro aplikace SharePoint  
  [Vytvoření programové testy UI](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate) pro aplikace SharePoint 2010 je stejný jako vytváření testů pro ostatní typy aplikací. Záznam a přehrávání se podporuje pro všechny ovládací prvky na rozhraní webových úprav. Rozhraní pro výběr kategorie a webové části jsou všechny standardní webové ovládací prvky.  
@@ -62,14 +62,14 @@ uiGridKeyboardInputEdit.Text=value;
   
  Pokud se nahrávání akcí na prázdné buňky, pak záznam získá o něco složitější, protože v okamžiku, přidejte text do buňky, nový \<div > ovládací prvek je přidán jako podřízený objekt buňky. Nové \<div > ovládací prvek obsahuje text, který jste právě zadali. Záznam je potřeba zaznamenat akce na novém \<div > ovládací prvek; ale není toho schopen, protože nový \<div > ovládací prvek neexistuje až po zadání testu. Musíte ručně provést následující změny kódu tak, aby vyhovovaly tento problém.  
   
-1.  Přejděte do buňky inicializace a ujistěte se, `RowIndex` a `ColumnIndex` primární vlastnosti:  
+1. Přejděte do buňky inicializace a ujistěte se, `RowIndex` a `ColumnIndex` primární vlastnosti:  
   
     ```csharp  
     this.mUIItemCell.SearchProperties[HtmlCell.PropertyNames. RowIndex] = "3";   
     this.mUIItemCell.SearchProperties[HtmlCell.PropertyNames. ColumnIndex] = "3";  
     ```  
   
-2.  Najít `HtmlDiv` podřízené buňky:  
+2. Najít `HtmlDiv` podřízené buňky:  
   
     ```csharp  
     private UITestControl getControlToDoubleClick(HtmlCell cell)   
@@ -85,13 +85,13 @@ uiGridKeyboardInputEdit.Text=value;
   
     ```  
   
-3.  Přidejte kód pro myši dvakrát klikněte na akci na `HtmlDiv`:  
+3. Přidejte kód pro myši dvakrát klikněte na akci na `HtmlDiv`:  
   
     ```csharp  
     Mouse.DoubleClick(uIItemPane, new Point(31, 14)); )  
     ```  
   
-4.  Přidejte kód pro nastavení na text `TextArea`:  
+4. Přidejte kód pro nastavení na text `TextArea`:  
   
     ```csharp  
     uIGridKeyboardInputEdit.Text = value; }  
@@ -114,15 +114,15 @@ uiGridKeyboardInputEdit.Text=value;
   
 #### <a name="testing-silverlight-web-parts"></a>Testování webové části Silverlight  
   
-1.  Spusťte aplikaci Fiddler.  
+1. Spusťte aplikaci Fiddler.  
   
-2.  Vymažte mezipaměť prohlížeče. To je nezbytné, protože soubor XAP, který obsahuje DLL pomocné rutiny automatizace uživatelského rozhraní Silverlight, je obvykle ukládají do mezipaměti. Máme, abyste měli jistotu, že se vybere upravený soubor XAP, proto jsme vymazat mezipaměť prohlížeče.  
+2. Vymažte mezipaměť prohlížeče. To je nezbytné, protože soubor XAP, který obsahuje DLL pomocné rutiny automatizace uživatelského rozhraní Silverlight, je obvykle ukládají do mezipaměti. Máme, abyste měli jistotu, že se vybere upravený soubor XAP, proto jsme vymazat mezipaměť prohlížeče.  
   
-3.  Otevřete webovou stránku.  
+3. Otevřete webovou stránku.  
   
-4.  Spuštěním záznamu a generování kódu, jako byste to udělali pro běžný webový testování aplikací.  
+4. Spuštěním záznamu a generování kódu, jako byste to udělali pro běžný webový testování aplikací.  
   
-5.  By měl potvrďte, že generovaný kód odkazuje Microsoft.VisualStudio.TestTools.UITest.Extension.Silverlight.dll.  
+5. By měl potvrďte, že generovaný kód odkazuje Microsoft.VisualStudio.TestTools.UITest.Extension.Silverlight.dll.  
   
      Další informace najdete v tématu [uživatelského rozhraní testování SharePoint 2010 v sadě Visual Studio 2012](http://blogs.msdn.com/b/visualstudioalm/archive/2012/11/01/ui-testing-sharepoint-2010-with-visual-studio-2012.aspx)  
   

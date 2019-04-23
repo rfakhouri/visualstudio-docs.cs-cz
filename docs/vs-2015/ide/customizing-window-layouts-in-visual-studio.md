@@ -24,12 +24,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c02bd6bfdbb11a42688bb434cecfd5748e072d96
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 337c57c79e55c5113bb4411a091d2c29a954c342
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54802026"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60098581"
 ---
 # <a name="customizing-window-layouts-in-visual-studio"></a>Přizpůsobení rozložení oken v sadě Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -120,11 +120,11 @@ V sadě Visual Studio můžete přizpůsobit pozici, velikost a chování systé
 ### <a name="reset-name-and-switch-between-window-layouts"></a>Resetování, název a přepínání rozložení oken
  Rozhraní IDE může vrátit do původního rozložení okna pro kolekci nastavení pomocí **resetovat rozložení okna** příkazu. Když spustíte tento příkaz, provedou se tyto akce:
 
--   Všechna okna jsou přesunuta do jejich výchozích poloh.
+- Všechna okna jsou přesunuta do jejich výchozích poloh.
 
--   Windows, které jsou uzavřeny ve výchozím rozložení okna, jsou zavřena.
+- Windows, které jsou uzavřeny ve výchozím rozložení okna, jsou zavřena.
 
--   Windows, které jsou otevřeny v výchozí rozložení okna jsou otevřené.
+- Windows, které jsou otevřeny v výchozí rozložení okna jsou otevřené.
 
 ### <a name="create-and-save-custom-layouts"></a>Vytvoření a uložení vlastní rozložení
  Visual Studio 2015 můžete uložit až 10 vlastní rozložení oken a rychle přepínat mezi nimi. Následující kroky ukazují, jak vytvořit, uložit, vyvolat a spravovat vlastní rozložení, které budou využívat více monitorů s obou oken nástrojů ukotvených a s plovoucí desetinnou čárkou.
@@ -133,29 +133,29 @@ V sadě Visual Studio můžete přizpůsobit pozici, velikost a chování systé
 
 ##### <a name="create-a-ui-project-and-customize-the-layout"></a>Vytvořte projekt uživatelského rozhraní a přizpůsobení rozložení
 
-1.  V **nový projekt** dialogové okno, vytvořte Visual C# WPF aplikace klasické pracovní plochy a volat libovolně. Předstírají, že je projekt kde budeme pracovat v uživatelském rozhraní, proto jsme pro maximalizaci místa pro okna návrháře a eliminuje přesunout jiné nástroje systému windows.
+1. V **nový projekt** dialogové okno, vytvořte Visual C# WPF aplikace klasické pracovní plochy a volat libovolně. Předstírají, že je projekt kde budeme pracovat v uživatelském rozhraní, proto jsme pro maximalizaci místa pro okna návrháře a eliminuje přesunout jiné nástroje systému windows.
 
-2.  Pokud máte více monitorů, o přijetí změn **Průzkumníka řešení** okno a **vlastnosti** okna přes druhý monitor. V systému jednoho monitoru zavřete všechna okna s výjimkou návrháře.
+2. Pokud máte více monitorů, o přijetí změn **Průzkumníka řešení** okno a **vlastnosti** okna přes druhý monitor. V systému jednoho monitoru zavřete všechna okna s výjimkou návrháře.
 
-3.  Stisknutím klávesy **Ctrl + Alt + X** zobrazíte panelu nástrojů. Pokud je toto okno ukotveno, přetáhněte ho tak, aby ho čísel s plovoucí čárkou někde, kde byste chtěli, umístěte na buď monitoru.
+3. Stisknutím klávesy **Ctrl + Alt + X** zobrazíte panelu nástrojů. Pokud je toto okno ukotveno, přetáhněte ho tak, aby ho čísel s plovoucí čárkou někde, kde byste chtěli, umístěte na buď monitoru.
 
-4.  Stisknutím klávesy F5 do sady Visual Studio v režimu ladění. Upravte polohu příkazu automatické hodnoty, zásobník volání a výstup ladění systému windows, jak je potřebujete. Rozložení, který se chystáte vytvořit, platit pro úpravy režimu i režimu ladění.
+4. Stisknutím klávesy F5 do sady Visual Studio v režimu ladění. Upravte polohu příkazu automatické hodnoty, zásobník volání a výstup ladění systému windows, jak je potřebujete. Rozložení, který se chystáte vytvořit, platit pro úpravy režimu i režimu ladění.
 
-5.  Když vašich rozložení v režimu ladění i v režimu úprav jsou, jak chcete, z hlavní nabídky zvolte **okna > Uložit rozložení oken**. Volání toto rozložení "Designer".
+5. Když vašich rozložení v režimu ladění i v režimu úprav jsou, jak chcete, z hlavní nabídky zvolte **okna > Uložit rozložení oken**. Volání toto rozložení "Designer".
 
      Všimněte si, že vaše nové rozložení je přiřazena další klávesovou zkratku ze seznamu vyhrazené klávesy Ctrl + Alt + 1... 0.
 
 ##### <a name="create-a-database-project-and-layout"></a>Vytvořte projekt databáze a rozložení
 
-1.  Přidat nový **databázi systému SQL Server** projektu do řešení.
+1. Přidat nový **databázi systému SQL Server** projektu do řešení.
 
-2.  Klikněte pravým tlačítkem na nový projekt v Průzkumníku řešení a zvolte **zobrazení v Průzkumníku objektů**. Zobrazí se **Průzkumník objektů systému SQL Server** okna, která umožňuje přístup k tabulkám, zobrazení a dalších objektů v databázi. Můžete buď uvolnění toto okno nebo necháte ukotven. Jiné nástroje systému windows upravte požadovaným způsobem. Pro přidání realitu můžete přidat databázi aplikace skutečný, ale není nutné v tomto návodu.
+2. Klikněte pravým tlačítkem na nový projekt v Průzkumníku řešení a zvolte **zobrazení v Průzkumníku objektů**. Zobrazí se **Průzkumník objektů systému SQL Server** okna, která umožňuje přístup k tabulkám, zobrazení a dalších objektů v databázi. Můžete buď uvolnění toto okno nebo necháte ukotven. Jiné nástroje systému windows upravte požadovaným způsobem. Pro přidání realitu můžete přidat databázi aplikace skutečný, ale není nutné v tomto návodu.
 
-3.  Když rozložení je, jak chcete, z hlavní nabídky zvolte **okna > Uložit rozložení oken**. Volání toto rozložení "DB projektu." (Budeme se zabývat rozložení režimu ladění pro tento projekt.)
+3. Když rozložení je, jak chcete, z hlavní nabídky zvolte **okna > Uložit rozložení oken**. Volání toto rozložení "DB projektu." (Budeme se zabývat rozložení režimu ladění pro tento projekt.)
 
 ##### <a name="switch-between-the-layouts"></a>Přepínání rozložení
 
-1.  Přepínat mezi rozložením, pomocí klávesové zkratky nebo v hlavní nabídce zvolte **okna > použít rozložení oken**.
+1. Přepínat mezi rozložením, pomocí klávesové zkratky nebo v hlavní nabídce zvolte **okna > použít rozložení oken**.
 
      ![Použít rozložení nabídka okna](../ide/media/vs2015-applywindowlayout.png "VS2015_ApplyWindowLayout")
 
@@ -167,7 +167,7 @@ V sadě Visual Studio můžete přizpůsobit pozici, velikost a chování systé
 
 ##### <a name="manage-and-roam-your-layouts"></a>Spravovat a zpřístupnit vaše rozložení
 
-1.  Můžete odebrat, přejmenovat nebo změnit pořadí vlastních rozložení výběrem **okna > Spravovat rozložení oken**. Pokud přesunete rozložení, vazba klíče se automaticky upraví tak, aby odrážely novou pozici v seznamu. Vazby nemůže být jinak upravit, a tak může ukládat maximálně 10 rozložení v čase.
+1. Můžete odebrat, přejmenovat nebo změnit pořadí vlastních rozložení výběrem **okna > Spravovat rozložení oken**. Pokud přesunete rozložení, vazba klíče se automaticky upraví tak, aby odrážely novou pozici v seznamu. Vazby nemůže být jinak upravit, a tak může ukládat maximálně 10 rozložení v čase.
 
      ![Spravovat rozložení oken](../ide/media/managewindowlayouts.png "ManageWindowLayouts")
 

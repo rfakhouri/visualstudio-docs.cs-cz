@@ -20,12 +20,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d6b6428681815f20951b090075e859959a4e3180
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 82ef77884d4ade77e8d940df6c37d8336c2a1dbf
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59660858"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097010"
 ---
 # <a name="create-and-configure-tableadapters"></a>Vytvoření a konfigurace objektů TableAdapter
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,18 +51,18 @@ Objekty TableAdapter umožňují komunikaci mezi aplikací a databází. Připo
   
  Pokud přetáhnete nového TableAdapter z panelu nástrojů při **Návrhář Dataset** je aktivní, výzev průvodce lze určit, které zdroj dat objektu TableAdapter se má připojit k a jaký druh příkazy by měl používat pro komunikaci se databáze, příkazy SQL nebo úložné procedury. Pokud konfigurujete, který je už přidružený zdroj dat objektu TableAdapter to neuvidíte.  
   
--   Použití **vytvořit metody k odeslání aktualizací přímo do databáze** možnost je ekvivalentní k nastavení `GenerateDBDirectMethods` vlastnost na hodnotu true. Možnost není dostupná, když původní příkaz jazyka SQL neposkytuje dostatek informací, nebo dotaz není možné aktualizovat dotaz. Tato situace může nastat, například v **připojení** dotazy a dotazy, které vracejí hodnotu single (skalární).  
+- Použití **vytvořit metody k odeslání aktualizací přímo do databáze** možnost je ekvivalentní k nastavení `GenerateDBDirectMethods` vlastnost na hodnotu true. Možnost není dostupná, když původní příkaz jazyka SQL neposkytuje dostatek informací, nebo dotaz není možné aktualizovat dotaz. Tato situace může nastat, například v **připojení** dotazy a dotazy, které vracejí hodnotu single (skalární).  
   
--   Máte možnost vytvořit novou úložnou proceduru v podkladové databázi, pokud máte správná oprávnění pro databázi. Pokud tato oprávnění nemáte, to nebude možné.  
+- Máte možnost vytvořit novou úložnou proceduru v podkladové databázi, pokud máte správná oprávnění pro databázi. Pokud tato oprávnění nemáte, to nebude možné.  
   
--   Můžete také spouštět existující uložené procedury pro **vyberte**, **vložit**, **aktualizace**, a **odstranit** příkazy TableAdapter. Uloženou proceduru, která je přiřazena **aktualizace** příkazu, například se spustí, když `TableAdapter.Update()` metoda je volána.  
+- Můžete také spouštět existující uložené procedury pro **vyberte**, **vložit**, **aktualizace**, a **odstranit** příkazy TableAdapter. Uloženou proceduru, která je přiřazena **aktualizace** příkazu, například se spustí, když `TableAdapter.Update()` metoda je volána.  
   
      Mapování parametrů z vybranou úložnou proceduru na odpovídající sloupce v datové tabulce. Například, pokud uložená procedura přijme parametr s názvem `@CompanyName` , který předá do `CompanyName` sloupec v tabulce, nastaven **zdrojový sloupec** z `@CompanyName` parametr `CompanyName`.  
   
     > [!NOTE]
     >  Uložené procedury, která je přiřazena k příkazu SELECT se spustí zavoláním metody TableAdapter s názvy v dalším kroku v průvodci. Výchozí metodou je `Fill`, takže je kód, který se obvykle používá ke spuštění procedury SELECT `TableAdapter.Fill(tableName)`. Pokud změníte výchozí název z `Fill`, nahraďte `Fill` s názvem přiřadit a "TableAdapter" nahraďte skutečným názvem objektu TableAdapter (například `CustomersTableAdapter`).  
   
--   **Rozšířené možnosti** v průvodci umožňují vytvořit příkazy INSERT, UPDATE a DELETE založené na příkazu SELECT, který je definován na **generovat SQL příkazy** stránky. Použít optimistické řízení souběžnosti a určete, jestli Pokud chcete aktualizovat datovou tabulku po INSERT, UPDATE a příkazy jsou spustit.  
+- **Rozšířené možnosti** v průvodci umožňují vytvořit příkazy INSERT, UPDATE a DELETE založené na příkazu SELECT, který je definován na **generovat SQL příkazy** stránky. Použít optimistické řízení souběžnosti a určete, jestli Pokud chcete aktualizovat datovou tabulku po INSERT, UPDATE a příkazy jsou spustit.  
   
 ## <a name="configure-a-tableadapters-fill-method"></a>Konfigurace metody Fill objektu TableAdapter  
  Někdy můžete chtít změna schématu tabulky objektu TableAdapter. K tomuto účelu upravit primární objektu TableAdapter `Fill` metody. Objekty TableAdapter jsou vytvářeny s primární `Fill` metody, která definuje schématu přidružené tabulky dat. Primární `Fill` je založena na dotazu nebo uložené procedury, které jste zadali při původně nakonfigurován TableAdapter. Jedná se o první (nejvyššího) metodu pod tabulkou dat v návrháři datových sad.  
@@ -75,37 +75,37 @@ Objekty TableAdapter umožňují komunikaci mezi aplikací a databází. Připo
   
 #### <a name="to-start-the-tableadapter-query-configuration-wizard-with-a-new-query"></a>Spusťte Průvodce konfigurací dotazu TableAdapter s nový dotaz  
   
-1.  Otevřete svou datovou sadu v **Návrhář Dataset**.  
+1. Otevřete svou datovou sadu v **Návrhář Dataset**.  
   
-2.  Pokud vytváříte nový dotaz, přetáhněte **dotazu** objektu z **datovou sadu** kartě **nástrojů** na <xref:System.Data.DataTable>, nebo vyberte **přidat dotaz**z místní nabídky objektu TableAdapter. Můžete také přetáhnout **dotazu** objektu na prázdnou oblast **Návrhář Dataset**, vytváří TableAdapter bez přidruženého <xref:System.Data.DataTable>. Tyto dotazy můžete pouze vrátí jednu hodnotu (skalární) nebo spuštění UPDATE, INSERT nebo odstranit příkazů na databázi.  
+2. Pokud vytváříte nový dotaz, přetáhněte **dotazu** objektu z **datovou sadu** kartě **nástrojů** na <xref:System.Data.DataTable>, nebo vyberte **přidat dotaz**z místní nabídky objektu TableAdapter. Můžete také přetáhnout **dotazu** objektu na prázdnou oblast **Návrhář Dataset**, vytváří TableAdapter bez přidruženého <xref:System.Data.DataTable>. Tyto dotazy můžete pouze vrátí jednu hodnotu (skalární) nebo spuštění UPDATE, INSERT nebo odstranit příkazů na databázi.  
   
-3.  Na **vyberte datové připojení** obrazovky, vyberte nebo vytvořte připojení, které budou používat dotaz.  
+3. Na **vyberte datové připojení** obrazovky, vyberte nebo vytvořte připojení, které budou používat dotaz.  
   
     > [!NOTE]
     >  Tato obrazovka se zobrazí, pouze když návrháře nelze určit správné připojení se má používat, nebo když jsou k dispozici žádná připojení.  
   
-4.  Na **zvolit typ příkazu** obrazovky, vyberte z následujících metod načítání dat z databáze:  
+4. Na **zvolit typ příkazu** obrazovky, vyberte z následujících metod načítání dat z databáze:  
   
-    -   **Použití SQL** umožňuje typ příkazu SQL vyberte data z databáze.  
+    - **Použití SQL** umožňuje typ příkazu SQL vyberte data z databáze.  
   
-    -   **Vytvořit novou úložnou proceduru** umožňuje má průvodce vytvoříte nový uložené procedury (databáze) na základě zadaného příkazu SELECT.  
+    - **Vytvořit novou úložnou proceduru** umožňuje má průvodce vytvoříte nový uložené procedury (databáze) na základě zadaného příkazu SELECT.  
   
-    -   **Použití stávajících uložených procedur** umožňuje spouštět stávající úložnou proceduru při spuštění dotazu.  
+    - **Použití stávajících uložených procedur** umožňuje spouštět stávající úložnou proceduru při spuštění dotazu.  
   
 #### <a name="to-start-the-tableadapter-query-configuration-wizard-on-an-existing-query"></a>Spusťte Průvodce konfigurací dotazu TableAdapter na existující dotaz  
   
--   Pokud upravujete stávající dotazu TableAdapter, klikněte pravým tlačítkem na dotaz a klikněte na tlačítko **konfigurovat** z místní nabídky.  
+- Pokud upravujete stávající dotazu TableAdapter, klikněte pravým tlačítkem na dotaz a klikněte na tlačítko **konfigurovat** z místní nabídky.  
   
     > [!NOTE]
     >  Pravým tlačítkem myši na hlavním dotazu objektu TableAdapter rekonfiguruje TableAdapter a <xref:System.Data.DataTable> schématu. Pravým tlačítkem myši dalšího dotazu pro TableAdapter, ale nakonfiguruje pouze vybraný dotaz. **Průvodce nastavením TableAdapter** změní konfiguraci definici třídy TableAdapter, zatímco Průvodce konfigurací dotazu TableAdapter změní konfiguraci vybraného dotazu.  
   
 #### <a name="to-add-a-global--query-to-a-tableadapter"></a>Chcete-li přidat globální dotaz TableAdapter  
   
--   *Globální dotazy* jsou dotazy SQL, které vrací jedinou hodnotu (skalární) nebo žádnou hodnotu. Globální funkce obvykle provádění databázových operací, jako je vložení, aktualizace, odstraní. Také se agregují informace, jako je počet zákazníků v tabulce nebo celkové poplatky pro všechny položky v určitém pořadí.  
+- *Globální dotazy* jsou dotazy SQL, které vrací jedinou hodnotu (skalární) nebo žádnou hodnotu. Globální funkce obvykle provádění databázových operací, jako je vložení, aktualizace, odstraní. Také se agregují informace, jako je počet zákazníků v tabulce nebo celkové poplatky pro všechny položky v určitém pořadí.  
   
      Přidávání globálních dotazů přetažením **dotazu** objektu z **datovou sadu** karty **nástrojů** na prázdnou oblast **Návrhář Dataset**.  
   
--   Zadejte dotaz, který provede požadovanou úlohu, například `SELECT COUNT(*) AS CustomerCount FROM Customers`.  
+- Zadejte dotaz, který provede požadovanou úlohu, například `SELECT COUNT(*) AS CustomerCount FROM Customers`.  
   
     > [!NOTE]
     >  Přetahování **dotazu** objekt přímo **Návrhář Dataset** vytvoří metodu, která vrací pouze skalární hodnoty (single). Při dotazu nebo uložené procedury, které jste vybrali může vrátit více než jednu hodnotu, vrátí metoda, která se vytvoří pomocí Průvodce pouze jednu hodnotu. Dotaz může například vrátit první sloupec prvního řádku vracená data.  

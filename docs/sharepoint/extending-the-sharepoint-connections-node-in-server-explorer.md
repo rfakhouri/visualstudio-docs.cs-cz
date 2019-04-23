@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e8b63b5a14319a86dc561a0c6068286cdc70a472
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 6b1d461419497a0a45f50f12589cf3ac978a7666
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56595121"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092637"
 ---
 # <a name="extend-the-sharepoint-connections-node-in-server-explorer"></a>Rozšíření uzlu připojení služby SharePoint v Průzkumníku serveru
   V sadě Visual Studio, můžete připojit k místní weby služby SharePoint ve vývojovém počítači s použitím **připojení služby SharePoint** uzlu **Průzkumníka serveru** okna. Tento uzel zobrazuje řadu součástí místní weby služby SharePoint v hierarchickém stromovém zobrazení. Například můžete zobrazit seznamy, knihovny dokumentů a typy obsahu na místních serverech. Další informace o používání **Průzkumníka serveru** pro připojení k místním webům služby SharePoint, naleznete v tématu [připojení SharePoint procházet pomocí Průzkumníka serveru](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md).
@@ -36,9 +36,9 @@ ms.locfileid: "56595121"
 
  Existují dva typy vlastních vlastností, které přidáte do uzlu:
 
--   Vlastnosti, které zobrazují sadu jen pro čtení dat z webu služby SharePoint. Popisuje data součást služby SharePoint, která představuje uzel. Názorný postup ukazuje, jak to provést, najdete v části [názorný postup: Rozšíření Průzkumníka serveru pro zobrazení částí webu](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md).
+- Vlastnosti, které zobrazují sadu jen pro čtení dat z webu služby SharePoint. Popisuje data součást služby SharePoint, která představuje uzel. Názorný postup ukazuje, jak to provést, najdete v části [názorný postup: Rozšíření Průzkumníka serveru pro zobrazení částí webu](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md).
 
--   Vlastnosti, které zobrazují data vlastní čtení a zápisu. Příklad kódu ukazuje, jak to provést, najdete v části [jak: Rozšíření uzlu služby SharePoint v Průzkumníku serveru](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md).
+- Vlastnosti, které zobrazují data vlastní čtení a zápisu. Příklad kódu ukazuje, jak to provést, najdete v části [jak: Rozšíření uzlu služby SharePoint v Průzkumníku serveru](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md).
 
 ## <a name="get-data-for-built-in-nodes"></a>Získání dat pro integrované uzly
  Všechny integrované uzly poskytovaný sadou Visual Studio obsahují některá data o součást služby SharePoint, které představují. Například uzel, který představuje seznam na webu služby SharePoint poskytuje data o seznamu, jako jsou název a adresu URL výchozí zobrazení seznamu.

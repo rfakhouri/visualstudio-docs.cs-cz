@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Další informace o benefitech CloudPilot k dispozici ve vybraných předplatných sady Visual Studio
 searchscope: VS Subscription
-ms.openlocfilehash: 3a77287b9a5d26cc74bddbefb24600d73cce2fdc
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: f251073337c862e0d96fb3550b163da29ce8f42e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59655644"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094252"
 ---
 # <a name="the-cloudpilot-benefit-in-visual-studio-subscriptions"></a>CloudPilot výhoda v předplatných sady Visual Studio
 
@@ -44,14 +44,14 @@ CloudPilot, podle UnifyCloud, slouží k což vývojářům umožňuje rychle a 
    > [!NOTE]
    > Počet aktivací výhody CloudPilot jsou omezené na deset na organizaci, uplatnit z libovolnou kombinací těchto předplatných sady Visual Studio Enterprise nebo Visual Studio Professional.  Pokud jste už byl využitý vaší organizace desetkrát, nebude možné CloudPilot výhodou, aktivujte a obdržíte e-mailu z UnifyCloud s další informace.
 
- 0. Dále uvidíte na stránce produktu navržené tak, aby vám seznámit se s CloudPilot.  Klikněte na tlačítko **přejít na CloudPilot** v pravém horním rohu přejdete na portál CloudPilot.
+0. Dále uvidíte na stránce produktu navržené tak, aby vám seznámit se s CloudPilot.  Klikněte na tlačítko **přejít na CloudPilot** v pravém horním rohu přejdete na portál CloudPilot.
 
     > [!div class="mx-imgBorder"]
     > ![CloudPilot stránky produktu](_img/vs-cloudpilot/vs-cloudpilot-navigate.png)
 
-0.  A to je vše!  Zobrazí se vám na portálu CloudPilot a budete mít začít využívat předplatného CloudPilot přesunout vaše aplikace do Microsoft Azure.
+0. A to je vše!  Zobrazí se vám na portálu CloudPilot a budete mít začít využívat předplatného CloudPilot přesunout vaše aplikace do Microsoft Azure.
 
-0.  Poté, co váš účet je úspěšně vytvořen, obdržíte e-mailu z podpory služby VSS UnifyCloud potvrzení úspěšné vytvoření vašeho účtu.
+0. Poté, co váš účet je úspěšně vytvořen, obdržíte e-mailu z podpory služby VSS UnifyCloud potvrzení úspěšné vytvoření vašeho účtu.
 
     > [!div class="mx-imgBorder"]
     > ![CloudPilot Confirmation Email](_img/vs-cloudpilot/vs-cloudpilot-email.png)
@@ -76,13 +76,13 @@ CloudPilot, podle UnifyCloud, slouží k což vývojářům umožňuje rychle a 
 Nejste si jistí které předplatné používáte?  Připojte se k [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) zobrazíte všechna předplatná, která jsou přiřazená e-mailovou adresu. Pokud se nezobrazí všechna předplatná, může mít jeden nebo více přiřazené na jinou e-mailovou adresu.  Bude potřeba přihlásit se přes tento e-mailovou adresu najdete v těchto předplatných.
 
 ## <a name="support-resources"></a>Informační zdroje podpory
--  Potřebujete pomoc s používáním CloudPilot?  Projděte si tyto prostředky:
+- Potřebujete pomoc s používáním CloudPilot?  Projděte si tyto prostředky:
     - [Obraťte se na UnifyCloud](https://www.unifycloud.com/contacts/) pro dotazy týkající se produktů UnifyCloud.
     - [CloudPilot uživatelská příručka](https://www.cloudatlasinc.com/cloudpilot/doc/CloudPilot-User-Manual.pdf )
     - [Odeslat žádost o podporu](https://support.datacamp.com/hc/requests/new)
 
--  Potřebujete pomoc se prodeje, předplatnými, účty a fakturací pro předplatná sady Visual Studio, obraťte se na Visual Studio [podpora předplatných](https://visualstudio.microsoft.com/subscriptions/support/).
--  Máte dotaz k Visual Studio IDE, DevOps služby Azure nebo jiných produktů Visual Studio nebo služeb?  Navštivte [Visual Studio – podpora](https://visualstudio.microsoft.com/support/).
+- Potřebujete pomoc se prodeje, předplatnými, účty a fakturací pro předplatná sady Visual Studio, obraťte se na Visual Studio [podpora předplatných](https://visualstudio.microsoft.com/subscriptions/support/).
+- Máte dotaz k Visual Studio IDE, DevOps služby Azure nebo jiných produktů Visual Studio nebo služeb?  Navštivte [Visual Studio – podpora](https://visualstudio.microsoft.com/support/).
 
 ## <a name="next-steps"></a>Další kroky
 

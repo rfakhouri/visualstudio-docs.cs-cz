@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1edc2182b475fca2cb641a2b7598ea5164db368d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 3a25411449c1b13b12f05819061847c252a76c9c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56680422"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094083"
 ---
 # <a name="bc-texture-compression-variant"></a>Varianta komprese textur BC
 Umožňuje zablokovat kompresi na textury, které mají žádnému pixelovému formátu, který je varianta B8G8R8X8, B8G8R8A8 nebo R8G8B8A8.
@@ -28,13 +28,13 @@ Umožňuje zablokovat kompresi na textury, které mají žádnému pixelovému f
 
 - `D3D11_TEXTURE2D_DESC` Objekt předaný v `pDesc` popisuje neměnné prostředek shaderu; který je:
 
-  -   Člen BindFlags má pouze D3D11_BIND_SHADER_RESOURCE příznak nastaven.
+  - Člen BindFlags má pouze D3D11_BIND_SHADER_RESOURCE příznak nastaven.
 
-  -   Využití člen je nastavený na D3D11_USAGE_DEFAULT nebo D3D11_USAGE_IMMUTABLE.
+  - Využití člen je nastavený na D3D11_USAGE_DEFAULT nebo D3D11_USAGE_IMMUTABLE.
 
-  -   Člen CPUAccessFlags je nastavený na hodnotu 0 (žádný přístup procesoru).
+  - Člen CPUAccessFlags je nastavený na hodnotu 0 (žádný přístup procesoru).
 
-  -   Člen SamplerDesc má jeho Count – člen nastavena na hodnotu 1 (žádné více ukázka Anti-Aliasing (MSAA)).
+  - Člen SamplerDesc má jeho Count – člen nastavena na hodnotu 1 (žádné více ukázka Anti-Aliasing (MSAA)).
 
 - Nejsou k dispozici počáteční data volání `CreateTexture2D`.
 

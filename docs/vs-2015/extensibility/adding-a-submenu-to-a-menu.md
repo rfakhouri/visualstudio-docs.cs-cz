@@ -13,12 +13,12 @@ ms.assetid: 692600cb-d052-40e2-bdae-4354ae7c6c84
 caps.latest.revision: 44
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: d90aecf98bf09d9d4312e28d1bdca055cf9792a3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f458d46395c3a902e62ba5dd4ac7d624c326700c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54771289"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096462"
 ---
 # <a name="adding-a-submenu-to-a-menu"></a>Přidání podnabídky do nabídky
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,9 +34,9 @@ Tento návod vychází ukázku v [přidání nabídky do řádku nabídek sady V
   
 ## <a name="adding-a-submenu-to-a-menu"></a>Přidání podnabídky do nabídky  
   
-1.  Postupujte podle kroků v [přidání nabídky do řádku nabídek sady Visual Studio](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md) vytvoření položky projektu a nabídky. Kroky v tomto názorném postupu se předpokládá, že je název projektu VSIX `TopLevelMenu`.  
+1. Postupujte podle kroků v [přidání nabídky do řádku nabídek sady Visual Studio](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md) vytvoření položky projektu a nabídky. Kroky v tomto názorném postupu se předpokládá, že je název projektu VSIX `TopLevelMenu`.  
   
-2.  Open TestCommandPackage.vsct. V `<Symbols>` části, přidejte `<IDSymbol>` – element pro podnabídky, jednu pro skupinu podnabídku a jednu pro příkaz, vše v `<GuidSymbol>` uzel s názvem "guidTopLevelMenuCmdSet." Toto je stejný uzel, který obsahuje `<IDSymbol>` – element pro nabídek nejvyšší úrovně.  
+2. Open TestCommandPackage.vsct. V `<Symbols>` části, přidejte `<IDSymbol>` – element pro podnabídky, jednu pro skupinu podnabídku a jednu pro příkaz, vše v `<GuidSymbol>` uzel s názvem "guidTopLevelMenuCmdSet." Toto je stejný uzel, který obsahuje `<IDSymbol>` – element pro nabídek nejvyšší úrovně.  
   
     ```xml  
     <IDSymbol name="SubMenu" value="0x1100"/>  
@@ -44,7 +44,7 @@ Tento návod vychází ukázku v [přidání nabídky do řádku nabídek sady V
     <IDSymbol name="cmdidTestSubCommand" value="0x0105"/>  
     ```  
   
-3.  Přidání podnabídky nově vytvořený `<Menus>` oddílu.  
+3. Přidání podnabídky nově vytvořený `<Menus>` oddílu.  
   
     ```xml  
     <Menu guid="guidTestCommandPackageCmdSet" id="SubMenu" priority="0x0100" type="Menu">  
@@ -58,7 +58,7 @@ Tento návod vychází ukázku v [přidání nabídky do řádku nabídek sady V
   
      Určuje pár GUID a ID nadřazené skupiny nabídek, který byl vygenerován v [přidání nabídky do řádku nabídek sady Visual Studio](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md), a je podřízeným prvkem nabídek nejvyšší úrovně.  
   
-4.  Přidání skupiny nabídek definovaný v kroku 2 `<Groups>` části a udělat podřízeným podnabídky.  
+4. Přidání skupiny nabídek definovaný v kroku 2 `<Groups>` části a udělat podřízeným podnabídky.  
   
     ```xml  
     <Group guid="guidTestCommandPackageCmdSet" id="SubMenuGroup" priority="0x0000">  
@@ -66,7 +66,7 @@ Tento návod vychází ukázku v [přidání nabídky do řádku nabídek sady V
     </Group>  
     ```  
   
-5.  Přidat nový `<Button>` elementu `<Buttons>` oddíl pro definování příkazu, který jste vytvořili v kroku 2 jako položka v podnabídce.  
+5. Přidat nový `<Button>` elementu `<Buttons>` oddíl pro definování příkazu, který jste vytvořili v kroku 2 jako položka v podnabídce.  
   
     ```xml  
     <Button guid="guidTestCommandPackageCmdSet" id="cmdidTestSubCommand" priority="0x0000" type="Button">  
@@ -79,19 +79,19 @@ Tento návod vychází ukázku v [přidání nabídky do řádku nabídek sady V
     </Button>  
     ```  
   
-6.  Sestavte řešení a spusťte ladění. Měli byste vidět experimentální instanci aplikace.  
+6. Sestavte řešení a spusťte ladění. Měli byste vidět experimentální instanci aplikace.  
   
-7.  Klikněte na tlačítko **TestMenu** zobrazíte nové podnabídky s názvem **podnabídka**. Klikněte na tlačítko **podnabídka** otevřete podnabídku a zobrazte nový příkaz **Test dílčí příkaz**. Všimněte si, že kliknete na **Test dílčí příkaz** nemá žádný účinek.  
+7. Klikněte na tlačítko **TestMenu** zobrazíte nové podnabídky s názvem **podnabídka**. Klikněte na tlačítko **podnabídka** otevřete podnabídku a zobrazte nový příkaz **Test dílčí příkaz**. Všimněte si, že kliknete na **Test dílčí příkaz** nemá žádný účinek.  
   
 ## <a name="adding-a-command"></a>Přidání příkazu  
   
-1.  Otevřete TestCommand.cs a přidejte následující ID příkazu za stávající ID příkazu.  
+1. Otevřete TestCommand.cs a přidejte následující ID příkazu za stávající ID příkazu.  
   
     ```csharp  
     public const int cmdidTestSubCmd = 0x105;  
     ```  
   
-2.  Přidáte dílčí příkaz. Přejděte na příkaz konstruktor. Přidejte následující řádky bezprostředně po volání `AddCommand` metody.  
+2. Přidáte dílčí příkaz. Přejděte na příkaz konstruktor. Přidejte následující řádky bezprostředně po volání `AddCommand` metody.  
   
     ```csharp  
     CommandID subCommandID = new CommandID(CommandSet, (int)TestCommandPackageGuids.cmdidTestSubCmd);  
@@ -126,7 +126,7 @@ Tento návod vychází ukázku v [přidání nabídky do řádku nabídek sady V
                 }  
     ```  
   
-3.  Přidáte SubItemCallback(). Toto je metoda, která je volána, když dojde ke kliknutí na nový příkaz v podnabídce.  
+3. Přidáte SubItemCallback(). Toto je metoda, která je volána, když dojde ke kliknutí na nový příkaz v podnabídce.  
   
     ```csharp  
     private void SubItemCallback(object sender, EventArgs e)  
@@ -152,9 +152,9 @@ Tento návod vychází ukázku v [přidání nabídky do řádku nabídek sady V
     }  
     ```  
   
-4.  Sestavte projekt a spusťte ladění. Experimentální instanci aplikace by se zobrazit.  
+4. Sestavte projekt a spusťte ladění. Experimentální instanci aplikace by se zobrazit.  
   
-5.  Na **TestMenu** nabídky, klikněte na tlačítko **podnabídka** a potom klikněte na tlačítko **Test dílčí příkaz**. Okno se zprávou by měla objevit a zobrazit text "Test příkaz uvnitř TestCommand.SubItemCallback()".  
+5. Na **TestMenu** nabídky, klikněte na tlačítko **podnabídka** a potom klikněte na tlačítko **Test dílčí příkaz**. Okno se zprávou by měla objevit a zobrazit text "Test příkaz uvnitř TestCommand.SubItemCallback()".  
   
 ## <a name="see-also"></a>Viz také  
  [Přidání nabídky do řádku nabídek sady Visual Studio](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md)   

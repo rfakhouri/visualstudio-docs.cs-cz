@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: df0d6c25bad57550fcfc9ce475dcc9da488f195f
-ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
+ms.openlocfilehash: 7a464103d38a9ba0d2215f53a593809b6136aa3d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58647411"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096735"
 ---
 # <a name="unit-test-basics"></a>Základní informace o testování částí
 
@@ -82,9 +82,12 @@ Je často rychlejší generování projektu testování částí a zástupných 
 
 ### <a name="generate-unit-test-project-and-unit-test-stubs"></a>Generovat projekt testování částí a zástupné procedury pro testování částí
 
-1. V okně editoru kódu, klikněte pravým tlačítkem a zvolte **vytvořit testy jednotek** v místní nabídce.
+1. V okně editoru kódu, klikněte pravým tlačítkem a zvolte [ **vytvořit testy jednotek** ](create-unit-tests-menu.md) v místní nabídce.
 
-    ![V okně editoru zobrazte kontextovou nabídku](../test/media/createunittestsrightclick.png)
+   ![V okně editoru zobrazte kontextovou nabídku](../test/media/createunittestsrightclick.png)
+
+   > [!NOTE]
+   > **Vytvořit testy jednotek** příkazu nabídky je dostupná pouze pro spravovaný kód, který cílí na rozhraní .NET Framework (ale ne .NET Core).
 
 2. Klikněte na tlačítko **OK** přijměte výchozí hodnoty pro vytváření testů jednotek nebo změnu hodnoty použité k vytvoření a pojmenujte projekt testování částí a testy jednotek. Můžete vybrat kód, který se ve výchozím nastavení přidá do metody jednotkového testu.
 
@@ -127,17 +130,17 @@ Projekt testování částí obvykle zrcadlí strukturu projektu jeden kód. V t
 
    Chcete-li vytvořit odkaz na projekt kódu:
 
-   1.  Vyberte projekt v **Průzkumníka řešení**.
+   1. Vyberte projekt v **Průzkumníka řešení**.
 
-   2.  Na **projektu** nabídce zvolte **přidat odkaz**.
+   2. Na **projektu** nabídce zvolte **přidat odkaz**.
 
-   3.  Na **správce odkazů** dialogovém okně Otevřít **řešení** uzlu a zvolte **projekty**. Vyberte název projektu kódu a zavřete dialogové okno.
+   3. Na **správce odkazů** dialogovém okně Otevřít **řešení** uzlu a zvolte **projekty**. Vyberte název projektu kódu a zavřete dialogové okno.
 
 Každý projekt jednotkového testu obsahuje třídy, které zrcadlí názvy tříd v projektu kódu. V našem příkladu `AccountsTests` projekt bude obsahovat následující třídy:
 
--   `AccountInfoTests` Třída obsahující metody jednotkového testu pro `AccountInfo` třídy v `Accounts` projektu
+- `AccountInfoTests` Třída obsahující metody jednotkového testu pro `AccountInfo` třídy v `Accounts` projektu
 
--   `CheckingAccountTests` Třída obsahující metody jednotkového testu pro `CheckingAccount` třídy.
+- `CheckingAccountTests` Třída obsahující metody jednotkového testu pro `CheckingAccount` třídy.
 
 ## <a name="write-your-tests"></a>Zápis testů
 
@@ -185,11 +188,11 @@ Všimněte si, že `Withdraw_ValidAmount_ChangesBalance` používá explicitní 
 
 Další informace o rozhraní testování částí Microsoft naleznete v následujících tématech:
 
--   [Testování částí kódu](unit-test-your-code.md)
+- [Testování částí kódu](unit-test-your-code.md)
 
--   [Zápis testů jednotek pro C/C++](writing-unit-tests-for-c-cpp.md)
+- [Zápis testů jednotek pro C/C++](writing-unit-tests-for-c-cpp.md)
 
--   [Použití rozhraní MSTest při testech jednotek](using-microsoft-visualstudio-testtools-unittesting-members-in-unit-tests.md)
+- [Použití rozhraní MSTest při testech jednotek](using-microsoft-visualstudio-testtools-unittesting-members-in-unit-tests.md)
 
 ## <a name="set-timeouts-for-unit-tests"></a>Nastavit vypršení časového limitu pro testování částí
 
@@ -260,12 +263,12 @@ Další informace najdete v tématu [spouštění testů jednotek pomocí Průzk
 
 **ODPOVĚĎ:** Použití **Průzkumník testů** spustíte relaci ladění pro testy. Krokování kódu s ladicím programem Visual Studio bez problémů přejdete vpřed a zpět mezi testováním částí a testovaný projekt. Spuštění ladění:
 
-1.  V editoru sady Visual Studio nastavte zarážku v jedné nebo více testovacích metod, které chcete ladit.
+1. V editoru sady Visual Studio nastavte zarážku v jedné nebo více testovacích metod, které chcete ladit.
 
     > [!NOTE]
     > Vzhledem k tomu, že zkušební metody lze spustit v libovolném pořadí, nastavte zarážky v všechny testovací metody, které chcete ladit.
 
-2.  V **Průzkumníka testů**, vyberte testovací metody a pak zvolte **ladit vybrané testy** z místní nabídky.
+2. V **Průzkumníka testů**, vyberte testovací metody a pak zvolte **ladit vybrané testy** z místní nabídky.
 
 Přečtěte si další podrobnosti o [ladění testů jednotek](../debugger/debugger-feature-tour.md).
 
@@ -327,9 +330,9 @@ Další informace o [pokrytí kódu](../test/using-code-coverage-to-determine-ho
 
 Microsoft Fakes používá dva přístupy k vytvoření náhradní třídy u externích závislostí:
 
-1.  *Zástupné procedury* generovat náhradní třídy odvozené od nadřazené rozhraní cílovou třídu závislostí. Veřejné virtuální metody cílové třídy mohou být nahrazeny metody zástupných procedur.
+1. *Zástupné procedury* generovat náhradní třídy odvozené od nadřazené rozhraní cílovou třídu závislostí. Veřejné virtuální metody cílové třídy mohou být nahrazeny metody zástupných procedur.
 
-2.  *Překrytí* použít k rozdělení volání cílové metody k metodě náhradní překrytí pro nevirtuální metody instrumentace modulu runtime.
+2. *Překrytí* použít k rozdělení volání cílové metody k metodě náhradní překrytí pro nevirtuální metody instrumentace modulu runtime.
 
 V oba přístupy pomocí generovaného delegáti volání metody závislostí můžete určit chování, které chcete v testovací metodě.
 

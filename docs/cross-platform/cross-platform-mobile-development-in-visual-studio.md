@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: 2144ebd4725532d3dbbf4685f6629cbbbdd7c73e
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: fcf28d844124b7a2ae8a0b380739433261c5a3ef
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "58069681"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093836"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Vývoj multiplatformních mobilních řešení v sadě Visual Studio
 
@@ -40,7 +40,7 @@ Pomocí Visual Studio Tools for Xamarin můžete cílit Android, iOS a Windows v
 |[Přečtěte si o Universal Windows apps v sadě Visual Studio](https://visualstudio.microsoft.com/vs/universal-windows-platform/) (VisualStudio.com)|
 |[Další informace o podobnosti mezi Swift a C#](https://aka.ms/scposter) (download.microsoft.com)|
 
-###  <a name="AndroidHTML"></a> Cíl Android, iOS a Windows z jediného základu kódu
+### <a name="AndroidHTML"></a> Cíl Android, iOS a Windows z jediného základu kódu
 
  Můžete vytvářet nativní aplikace pro Android, iOS a Windows s použitím C# nebo F# (Visual Basic není podporován v tuto chvíli).  Abyste mohli začít, nainstalujte sadu Visual Studio 2017, vyberte **vývoj mobilních aplikací pomocí .NET** možnost v instalačním programu.
 
@@ -56,7 +56,7 @@ Pomocí Visual Studio Tools for Xamarin můžete cílit Android, iOS a Windows v
 
  V závislosti na složitosti návrhu aplikace, můžete zvážit, vytvářet pomocí *Xamarin.Forms* šablony v **Mobile Apps** skupiny šablon projektu. Xamarin.Forms je sada nástrojů uživatelského rozhraní, které vám umožní vytvářet jednotné rozhraní, které můžete sdílet mezi Android, iOS a Windows.  Při kompilaci řešení Xamarin.Forms, získáte aplikaci pro Android, aplikace pro iOS a Windows app. Další podrobnosti najdete v tématu [přečtěte si víc o vývoj mobilních řešení s využitím kódu Xamarin](/xamarin/cross-platform/get-started/introduction-to-mobile-development/) a [Xamarin.Forms dokumentaci](/xamarin/xamarin-forms/).
 
-####  <a name="ShareHTML"></a> Sdílení kódu mezi platformami Android, iOS a aplikace Windows
+#### <a name="ShareHTML"></a> Sdílení kódu mezi platformami Android, iOS a aplikace Windows
 
  Pokud nepoužíváte Xamarin.Forms a zvolit návrh pro každou platformu samostatně, můžete sdílet většinu svého kódu bez uživatelského rozhraní mezi projekty platformy (Android, iOS a Windows). To zahrnuje veškeré obchodní logiky, integrace cloudu, přístup k databázi nebo jakýkoli jiný kód, který cílí na .NET Framework. Je pouze kód, který nelze sdílet kód, který cílí na konkrétní platformu.
 
@@ -69,7 +69,7 @@ Pomocí Visual Studio Tools for Xamarin můžete cílit Android, iOS a Windows v
 |[Kód – možnosti pro sdílení obsahu](/xamarin/cross-platform/app-fundamentals/code-sharing/) (Xamarin) |
 |[Kód možnosti pro sdílení obsahu s využitím .NET](/dotnet/standard/cross-platform/) |
 
-###  <a name="WindowsHTML"></a> Cílové zařízení s Windows 10
+### <a name="WindowsHTML"></a> Cílové zařízení s Windows 10
 
  ![Zařízení Windows](../cross-platform/media/windowsdevices.png "zařízení Windows")
 
@@ -84,7 +84,7 @@ Pomocí Visual Studio Tools for Xamarin můžete cílit Android, iOS a Windows v
 |[Vývoj aplikací pro Univerzální platformu Windows (UWP)](../cross-platform/develop-apps-for-the-universal-windows-platform-uwp.md)|
 |[Migrace aplikace pro Universal Windows Platform (UWP)](https://msdn.microsoft.com/library/mt148501.aspx)|
 
-##  <a name="HTML"></a> Vytváření aplikací pro Android, iOS a Windows (HTML/JavaScript)
+## <a name="HTML"></a> Vytváření aplikací pro Android, iOS a Windows (HTML/JavaScript)
 
  ![Windows, iOS a androidem](../cross-platform/media/homedevices.png "zařízení Android, iOS a Windows")
 

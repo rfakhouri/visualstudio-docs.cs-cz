@@ -15,12 +15,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: f82714ad03fc84f7112657aeafdbd257f426fc82
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 50375390b3a09ec18fcccd45e4eaee7e9fe102e2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54794924"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094785"
 ---
 # <a name="ca1816-call-gcsuppressfinalize-correctly"></a>CA1816: Volejte správně GC.SuppressFinalize
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,16 +34,16 @@ ms.locfileid: "54794924"
 
 ## <a name="cause"></a>Příčina
 
--   Metoda, která je implementací <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> nevolá <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName>.
+- Metoda, která je implementací <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> nevolá <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName>.
 
--   Metoda, která není implementací <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> volání <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName>.
+- Metoda, která není implementací <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> volání <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName>.
 
--   Volá metodu <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName> a předává něco jiného (Me v jazyce Visual Basic).
+- Volá metodu <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName> a předává něco jiného (Me v jazyce Visual Basic).
 
 ## <a name="rule-description"></a>Popis pravidla
  <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> Metoda umožňuje uživatelům uvolnění prostředků kdykoli před objektu poté jsou dostupné pro uvolnění paměti. Pokud <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> metoda je volána, uvolnění prostředků objektu. Díky tomu finalizace zbytečné. <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> by měly volat <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName> tak systému uvolňování paměti volat finalizační metodu objektu.
 
- Chcete-li zabránit odvozené typy s finalizační metody by bylo nutné znovu implementovat [System.IDisposable] (<!-- TODO: review code entity reference <xref:assetId:///System.IDisposable?qualifyHint=True&amp;autoUpgrade=False>  -->) a pro její zavolání, měla by volat stále nezapečetěné typy bez finalizačních metod <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName>.
+ Aby se zabránilo odvozené typy s finalizační metody nemusíte znovu implementovat () [System.IDisposable]<!-- TODO: review code entity reference <xref:assetId:///System.IDisposable?qualifyHint=True&amp;autoUpgrade=False>  -->) a pro její zavolání, měla by volat stále nezapečetěné typy bez finalizačních metod <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName>.
 
 ## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
  Chcete-li opravit porušení tohoto pravidla:

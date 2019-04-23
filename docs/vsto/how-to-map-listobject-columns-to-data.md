@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cf6e693bf216cedf2734d78ca13662739981f235
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a37c0f12943d60f67ee0d17b15315ac85af509d5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56639892"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092692"
 ---
 # <a name="how-to-map-listobject-columns-to-data"></a>Postupy: Mapování sloupců objektu ListObject na data
   Po vytvoření vazby <xref:Microsoft.Office.Tools.Excel.ListObject> mít pod kontrolou <xref:System.Data.DataTable>, možná nebudete chtít zobrazit všechny sloupce v seznamu, nebo může být některé sloupce, které nejsou vázány na data. Můžete namapovat sloupce, které chcete zobrazit v <xref:Microsoft.Office.Tools.Excel.ListObject> při volání <xref:Microsoft.Office.Tools.Excel.ListObject.SetDataBinding%2A> metody.
@@ -31,17 +31,17 @@ ms.locfileid: "56639892"
 
 ### <a name="to-map-a-data-table-to-columns-in-a-list"></a>K mapování tabulky dat na sloupce v seznamu
 
-1.  Vytvořte <xref:System.Data.DataTable> na úrovni třídy.
+1. Vytvořte <xref:System.Data.DataTable> na úrovni třídy.
 
      [!code-csharp[Trin_VstcoreHostControlsExcel#16](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet3.cs#16)]
      [!code-vb[Trin_VstcoreHostControlsExcel#16](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet3.vb#16)]
 
-2.  Přidejte příklad sloupců a data v `Startup` obslužná rutina události `Sheet1` třídy (v projektu úrovni dokumentu) nebo `ThisAddIn` třídy (v projektu doplňku VSTO).
+2. Přidejte příklad sloupců a data v `Startup` obslužná rutina události `Sheet1` třídy (v projektu úrovni dokumentu) nebo `ThisAddIn` třídy (v projektu doplňku VSTO).
 
      [!code-csharp[Trin_VstcoreHostControlsExcel#17](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet3.cs#17)]
      [!code-vb[Trin_VstcoreHostControlsExcel#17](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet3.vb#17)]
 
-3.  Volání <xref:Microsoft.Office.Tools.Excel.ListObject.SetDataBinding%2A> a předáte do názvů sloupce v pořadí, by měla objevit. Objekt seznamu bude vázán na nově vytvořený <xref:System.Data.DataTable>, ale pořadí sloupců v objektu seznamu se bude lišit od pořadí, jsou uvedeny v <xref:System.Data.DataTable>.
+3. Volání <xref:Microsoft.Office.Tools.Excel.ListObject.SetDataBinding%2A> a předáte do názvů sloupce v pořadí, by měla objevit. Objekt seznamu bude vázán na nově vytvořený <xref:System.Data.DataTable>, ale pořadí sloupců v objektu seznamu se bude lišit od pořadí, jsou uvedeny v <xref:System.Data.DataTable>.
 
      [!code-csharp[Trin_VstcoreHostControlsExcel#18](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet3.cs#18)]
      [!code-vb[Trin_VstcoreHostControlsExcel#18](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet3.vb#18)]
@@ -51,7 +51,7 @@ ms.locfileid: "56639892"
 
 ### <a name="to-specify-an-unmapped-column-when-mapping-listobject-columns"></a>Chcete-li určit Nemapovaný sloupec při mapování sloupců objektu ListObject
 
-1.  Volání <xref:Microsoft.Office.Tools.Excel.ListObject.SetDataBinding%2A> a předáte do názvů sloupce v pořadí, by měla objevit. Označuje, kde je přidat Nemapovaný sloupec; použijte prázdný řetězec v tomto případě mezi sloupci title a poslední sloupec názvu.
+1. Volání <xref:Microsoft.Office.Tools.Excel.ListObject.SetDataBinding%2A> a předáte do názvů sloupce v pořadí, by měla objevit. Označuje, kde je přidat Nemapovaný sloupec; použijte prázdný řetězec v tomto případě mezi sloupci title a poslední sloupec názvu.
 
      [!code-csharp[Trin_VstcoreHostControlsExcel#19](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet3.cs#19)]
      [!code-vb[Trin_VstcoreHostControlsExcel#19](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet3.vb#19)]

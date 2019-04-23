@@ -10,12 +10,12 @@ ms.assetid: a208d38e-9bea-41c9-9fe2-38bd86a359cb
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4cbce5c13c51747a08b3832440ef91ace3d6a89c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0bb90723a72c10dbf6cfda5edd4aa68f71f1c6b9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54753819"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60098127"
 ---
 # <a name="adapting-legacy-code-to-the-editor"></a>Přizpůsobení starší verze kódu pro Editor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ internal IVsEditorAdaptersFactoryService editorFactory;
 ## <a name="switching-between-the-new-editor-api-and-the-legacy-api"></a>Přepínání mezi nové rozhraní API editoru a rozhraní API pro starší verze  
  Pomocí následující metody můžete přepínat mezi objektem editoru a starší verze rozhraní.  
   
-|Metoda|Převod|  
+|Metoda|Konverze|  
 |------------|----------------|  
 |<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService.GetBufferAdapter%2A>|Převede <xref:Microsoft.VisualStudio.Text.ITextBuffer> do <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>.|  
 |<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService.GetDataBuffer%2A>|Převede <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> do <xref:Microsoft.VisualStudio.Text.ITextBuffer>.|  
@@ -51,7 +51,7 @@ internal IVsEditorAdaptersFactoryService editorFactory;
 ## <a name="creating-adapters"></a>Vytváření adaptérů  
  Použijte následující metody k vytvoření adaptérů pro starší verze rozhraní.  
   
-|Metoda|Převod|  
+|Metoda|Konverze|  
 |------------|----------------|  
 |<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService.CreateVsCodeWindowAdapter%2A>|Vytvoří <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow>.|  
 |<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService.CreateVsTextBufferAdapter%2A>|Vytvoří <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> pro určitou vlastnost <xref:Microsoft.VisualStudio.Utilities.IContentType>.|  
@@ -75,9 +75,9 @@ VsLocalCreateInstance(CLSID_VsTextBuffer, NULL, CLSCTX_INPROC_SERVER, IID_IVsTex
   
 #### <a name="to-create-an-adapter-for-ivstextview"></a>Chcete-li vytvořit adaptér pro IVsTextView  
   
-1.  Přidejte odkaz na Microsoft.VisualStudio.Editor.dll. Ujistěte se, že `CopyLocal` je nastavena na `false`.  
+1. Přidejte odkaz na Microsoft.VisualStudio.Editor.dll. Ujistěte se, že `CopyLocal` je nastavena na `false`.  
   
-2.  Vytvoření instance <xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService>, následujícím způsobem.  
+2. Vytvoření instance <xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService>, následujícím způsobem.  
   
     ```  
     using Microsoft.VisualStudio.Editor;  
@@ -85,7 +85,7 @@ VsLocalCreateInstance(CLSID_VsTextBuffer, NULL, CLSCTX_INPROC_SERVER, IID_IVsTex
     IVsEditorAdaptersFactoryService adapterFactoryService = ComponentModel.GetService<IVsEditorAdaptersFactoryService>();  
     ```  
   
-3.  Volání `CreateX()` metody.  
+3. Volání `CreateX()` metody.  
   
     ```  
     adapterFactoryService.CreateTextViewAdapter(textView);  
@@ -96,9 +96,9 @@ VsLocalCreateInstance(CLSID_VsTextBuffer, NULL, CLSCTX_INPROC_SERVER, IID_IVsTex
   
 #### <a name="to-get-an-ivxtextbuffer"></a>Chcete-li získat IVxTextBuffer  
   
-1.  Definice rozhraní IVx * jsou v souboru VSEditor.h... \VisualStudioIntegration\Common\Inc\ složce instalace sady Visual Studio SDK.  
+1. Definice rozhraní IVx * jsou v souboru VSEditor.h... \VisualStudioIntegration\Common\Inc\ složce instalace sady Visual Studio SDK.  
   
-2.  Následující kód vytvoří instanci vyrovnávací paměť textu s použitím `IVsUserData->GetData()` metody. V následujícím kódu `pData` je ukazatel `IVsUserData` objektu.  
+2. Následující kód vytvoří instanci vyrovnávací paměť textu s použitím `IVsUserData->GetData()` metody. V následujícím kódu `pData` je ukazatel `IVsUserData` objektu.  
   
     ```  
     #include <textmgr.h>  
@@ -125,9 +125,9 @@ VsLocalCreateInstance(CLSID_VsTextBuffer, NULL, CLSCTX_INPROC_SERVER, IID_IVsTex
   
 #### <a name="to-consume-visual-studio-editor-components-from-a-non-mef-component"></a>Pro zpracování součástí editoru sady Visual Studio z komponenty – rozhraní MEF  
   
-1.  Přidat odkaz na sestavení Microsoft.VisualStudio.ComponentModelHost.dll v... \Common7\IDE\ složce instalace sady Visual Studio. Ujistěte se, že `CopyLocal` je nastavena na `false`.  
+1. Přidat odkaz na sestavení Microsoft.VisualStudio.ComponentModelHost.dll v... \Common7\IDE\ složce instalace sady Visual Studio. Ujistěte se, že `CopyLocal` je nastavena na `false`.  
   
-2.  Přidat soukromé `IComponentModel` člena třídy, ve které chcete použít editor služby Visual Studio, následujícím způsobem.  
+2. Přidat soukromé `IComponentModel` člena třídy, ve které chcete použít editor služby Visual Studio, následujícím způsobem.  
   
     ```  
     using Microsoft.VisualStudio.ComponentModelHost;  
@@ -135,14 +135,14 @@ VsLocalCreateInstance(CLSID_VsTextBuffer, NULL, CLSCTX_INPROC_SERVER, IID_IVsTex
     private IComponentModel componentModel;  
     ```  
   
-3.  Vytvoření instance komponenty modelu v metodě inicializace pro komponentu.  
+3. Vytvoření instance komponenty modelu v metodě inicializace pro komponentu.  
   
     ```  
     componentModel =  
      (IComponentModel)Package.GetGlobalService(typeof(SComponentModel));  
     ```  
   
-4.  Potom můžete získat kterékoli služby editoru sady Visual Studio voláním `IComponentModel.GetService<T>()` metody pro požadovanou službu.  
+4. Potom můžete získat kterékoli služby editoru sady Visual Studio voláním `IComponentModel.GetService<T>()` metody pro požadovanou službu.  
   
     ```  
     textBufferFactoryService =  

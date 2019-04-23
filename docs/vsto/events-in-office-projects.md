@@ -32,12 +32,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 63329433204af7c7fe7ae40366a376c9da16fdcd
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 6318108523f072beaae85c51604dbb45982a244f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56627737"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094850"
 ---
 # <a name="events-in-office-projects"></a>Události v projektech pro systém Office
   Každá šablona projektu Office automaticky vygeneruje několik obslužných rutin událostí. Obslužné rutiny událostí pro přizpůsobení na úrovni dokumentu se mírně liší od obslužné rutiny událostí pro doplňky VSTO.
@@ -52,34 +52,34 @@ ms.locfileid: "56627737"
 
  Při vytváření projektu úrovni dokumentu, sada Visual Studio vytvoří obslužné rutiny událostí pro **spuštění** události v souborech generovaného kódu:
 
--   Pro projekty Microsoft Office Word je obslužná rutina události s názvem `ThisDocument_Startup`.
+- Pro projekty Microsoft Office Word je obslužná rutina události s názvem `ThisDocument_Startup`.
 
--   Obslužné rutiny událostí pro projekty Microsoft Office Excel, mají následující názvy:
+- Obslužné rutiny událostí pro projekty Microsoft Office Excel, mají následující názvy:
 
-    -   `Sheet1_Startup`
+    - `Sheet1_Startup`
 
-    -   `Sheet2_Startup`
+    - `Sheet2_Startup`
 
-    -   `Sheet3_Startup`
+    - `Sheet3_Startup`
 
-    -   `ThisWorkbook_Startup`
+    - `ThisWorkbook_Startup`
 
 ### <a name="shutdown-event"></a>událost vypnutí
  **Vypnutí** událost se vyvolá pro každou z položek hostitele (dokumentu nebo listu), když je doména aplikace, který váš kód je načten v Chystáte se odinstalovat. Je to poslední věcí, kterou má být volána ve třídě, jako je uvolněn.
 
  Při vytváření projektu úrovni dokumentu, sada Visual Studio vytvoří obslužné rutiny událostí pro **vypnutí** události v souborech generovaného kódu:
 
--   Pro projekty Microsoft Office Word je obslužná rutina události s názvem `ThisDocument_Shutdown`.
+- Pro projekty Microsoft Office Word je obslužná rutina události s názvem `ThisDocument_Shutdown`.
 
--   Obslužné rutiny událostí pro projekty Microsoft Office Excel, mají následující názvy:
+- Obslužné rutiny událostí pro projekty Microsoft Office Excel, mají následující názvy:
 
-    -   `Sheet1_Shutdown`
+    - `Sheet1_Shutdown`
 
-    -   `Sheet2_Shutdown`
+    - `Sheet2_Shutdown`
 
-    -   `Sheet3_Shutdown`
+    - `Sheet3_Shutdown`
 
-    -   `ThisWorkbook_Shutdown`
+    - `ThisWorkbook_Shutdown`
 
 > [!NOTE]
 >  Neodebírejte ovládacích prvků při prostřednictvím kódu programu **vypnutí** obslužná rutina události dokumentu. Prvky uživatelského rozhraní dokumentu již nejsou k dispozici při **vypnutí** dojde k události. Pokud chcete odebrání ovládacích prvků, než aplikaci zavře, přidejte svůj kód na jinou obslužnou rutinu události, jako například **BeforeClose** nebo **BeforeSave**.
@@ -145,9 +145,9 @@ ms.locfileid: "56627737"
 #### <a name="shutdown-event-in-outlook-vsto-add-ins"></a>Událost vypnutí v doplňcích VSTO pro Outlook
  <xref:Microsoft.Office.Tools.AddInBase.Shutdown> Událost se vyvolá pouze v případě, že uživatel zakáže doplňku VSTO pomocí dialogového okna Doplňky modelu COM v Outlooku. Není vyvolána při ukončení aplikace Outlook. Pokud máte kód, který musí být spuštěn při ukončení aplikace Outlook, zpracujte jeden z následujících událostí:
 
--   <xref:Microsoft.Office.Interop.Outlook.ApplicationEvents_11_Event.Quit> Událost <xref:Microsoft.Office.Interop.Outlook.Application> objektu.
+- <xref:Microsoft.Office.Interop.Outlook.ApplicationEvents_11_Event.Quit> Událost <xref:Microsoft.Office.Interop.Outlook.Application> objektu.
 
--   <xref:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.Close> Událost <xref:Microsoft.Office.Interop.Outlook.Explorer> objektu.
+- <xref:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.Close> Událost <xref:Microsoft.Office.Interop.Outlook.Explorer> objektu.
 
 > [!NOTE]
 >  Můžete vynutit, Outlook, aby se vyvolala <xref:Microsoft.Office.Tools.AddInBase.Shutdown> událostí při jejím ukončení úpravou registru. Nicméně pokud toto nastavení se vrátí správcem, libovolný kód přidat do `ThisAddIn_Shutdown` metoda už nespouští při ukončení aplikace Outlook. Další informace najdete v tématu [vypnutí změní pro aplikaci Outlook 2010](http://go.microsoft.com/fwlink/?LinkID=184614).

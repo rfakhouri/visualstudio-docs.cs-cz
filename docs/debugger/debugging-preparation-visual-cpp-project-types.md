@@ -19,19 +19,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4d1346b27cc805f1db1cdbb0c31e266b1d32966f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 250fa110b43aad38e6fc4323d6214bfb5fc7b5cc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56714098"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094036"
 ---
 # <a name="debugging-preparation-visual-c-project-types"></a>Příprava ladění: Typy projektů Visual C++
 Tato část popisuje, jak ladit základního projektu typy vytvořené [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] šablony projektu.
 
  Všimněte si, že tyto typy projektů, které vytvářejí knihovny DLL jako jejich výstup, byly seskupeny do [ladění projektů knihovny DLL](../debugger/debugging-dll-projects.md) z důvodu běžné funkce sdílejí.
 
-##  <a name="BKMK_In_this_topic"></a> V tomto tématu
+## <a name="BKMK_In_this_topic"></a> V tomto tématu
  [Doporučené nastavení vlastností](#BKMK_Recommended_Property_Settings)
 
  [Projekty Win32](#BKMK_Win32_Projects)
@@ -42,7 +42,7 @@ Tato část popisuje, jak ladit základního projektu typy vytvořené [!INCLUDE
 
   [Aplikace Windows Forms (.NET)](#BKMK_Windows_Forms_Applications___NET_)
 
-##  <a name="BKMK_Recommended_Property_Settings"></a> Doporučené nastavení vlastností
+## <a name="BKMK_Recommended_Property_Settings"></a> Doporučené nastavení vlastností
  Určité vlastnosti měly být nastaveny stejným způsobem jako pro všechny nespravované ladění scénářů. Následující tabulky obsahují doporučené nastavení vlastností. Nastavení, které tu nejsou uvedené, mohou lišit mezi typy nespravovaného jiného projektu. Další informace najdete v tématu [nastavení projektu pro konfiguraci ladění jazyka C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)
 
 ### <a name="configuration-properties-124-cc-124-optimization-node"></a>Vlastnosti konfigurace &#124; C/C++ &#124; optimalizace uzlu
@@ -59,22 +59,22 @@ Tato část popisuje, jak ladit základního projektu typy vytvořené [!INCLUDE
 
  [V tomto tématu](../debugger/debugging-preparation-visual-cpp-project-types.md#BKMK_In_this_topic)
 
-##  <a name="BKMK_Win32_Projects"></a> Projekty Win32
+## <a name="BKMK_Win32_Projects"></a> Projekty Win32
  Win32 – aplikace se tradiční Windows programy napsané v jazyce C nebo C++. Ladění tohoto typu aplikace v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] je jednoduché.
 
  Win32 – aplikace patří aplikace knihovny MFC a ATL projekty. Pomocí rozhraní Windows API a mohou používat knihovny MFC nebo ATL, ale nepoužívají common language runtime (CLR). Může, ale volání spravovaného kódu, který používá modul CLR.
 
  Následující postup vysvětluje, jak ladit projekt Win32 v rámci [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Dalším způsobem, jak ladit aplikaci Win32 je a spusťte tak aplikaci mimo [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] a připojit se k němu. Další informace najdete v tématu [připojení k běžící procesy](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).
 
-###  <a name="BKMK_To_debug_a_C_or_C___Win32_application"></a> Chcete-li ladit aplikace jazyka C nebo C++ Win32
+### <a name="BKMK_To_debug_a_C_or_C___Win32_application"></a> Chcete-li ladit aplikace jazyka C nebo C++ Win32
 
-1.  Otevřete projekt v sadě Visual Studio.
+1. Otevřete projekt v sadě Visual Studio.
 
-2.  Na **ladění** nabídce zvolte **Start**.
+2. Na **ladění** nabídce zvolte **Start**.
 
-3.  Ladění pomocí technik popsaných v [nejdřív se podívejte na ladicí program](../debugger/debugger-feature-tour.md).
+3. Ladění pomocí technik popsaných v [nejdřív se podívejte na ladicí program](../debugger/debugger-feature-tour.md).
 
-###  <a name="BKMK_To_manually_set_a_Debug_configuration"></a> K ručnímu nastavení konfigurace ladění
+### <a name="BKMK_To_manually_set_a_Debug_configuration"></a> K ručnímu nastavení konfigurace ladění
 
 1. Na **zobrazení** nabídky, klikněte na tlačítko **stránky vlastností**.
 
@@ -96,7 +96,7 @@ Tato část popisuje, jak ladit základního projektu typy vytvořené [!INCLUDE
 
    [V tomto tématu](../debugger/debugging-preparation-visual-cpp-project-types.md#BKMK_In_this_topic)
 
-##  <a name="BKMK_Windows_Forms_Applications___NET_"></a> Aplikace Windows Forms (.NET)
+## <a name="BKMK_Windows_Forms_Applications___NET_"></a> Aplikace Windows Forms (.NET)
  **Windows Forms aplikace (.NET)** šablona vytvoří [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] aplikace Windows Forms. Další informace najdete v tématu [jak: Vytvoření projektu aplikace Windows](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/42wc9kk5(v=vs.100)).
 
  Ladění tohoto typu aplikace v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] je podobná ve spravovaných aplikacích Windows Forms.

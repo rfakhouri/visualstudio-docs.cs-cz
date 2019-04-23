@@ -9,12 +9,12 @@ caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c13472fc1322701fefada53ee3e94156f35e8072
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c2d5fdd068894434c170c2525499a41c7c14b4e2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54757968"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095838"
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Nástroje pro výkon v aplikacích Windows 8 a Windows Server 2012
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ Rozšířené funkce zabezpečení v systému Windows 8 a Windows Server 2012 po
 > [!NOTE]
 >  Sada Performance tools for ostatní podporované verze Windows (Windows 7, Windows Server 2008 R2) se nezměnily.  
   
-##  <a name="BKMK_In_this_topic"></a> V tomto tématu  
+## <a name="BKMK_In_this_topic"></a> V tomto tématu  
  [Shromažďování dat pro aplikace z Windows Store z integrovaného vývojového prostředí sady Visual Studio](#BKMK_Profiling_Windows_Store_apps_from_the_Visual_Studio_IDE)  
   
  [Shromažďování dat na aplikace, které běží na ploše systému Windows 8 nebo Windows serveru 2012 z integrovaného vývojového prostředí sady Visual Studio](#BKMK_Profiling_apps_running_on_the_Windows_8_desktop_or_on_Windows_Server_2012_from_the_Visual_Studio_IDE)  
@@ -35,7 +35,7 @@ Rozšířené funkce zabezpečení v systému Windows 8 a Windows Server 2012 po
   
   [Shromažďování dat (TIP) interakce vrstev](#BKMK_Collecting_tier_interaction__TIP__data)  
   
-##  <a name="BKMK_Profiling_Windows_Store_apps_from_the_Visual_Studio_IDE"></a> Shromažďování dat pro aplikace z Windows Store z integrovaného vývojového prostředí sady Visual Studio  
+## <a name="BKMK_Profiling_Windows_Store_apps_from_the_Visual_Studio_IDE"></a> Shromažďování dat pro aplikace z Windows Store z integrovaného vývojového prostředí sady Visual Studio  
  Při profilování aplikace Windows Store, který je napsán v jazyce JavaScript a HTML 5, shromažďování dat instrumentace pro kód jazyka JavaScript. Při profilování aplikace Windows Store nebo součásti, která je napsána v jazyce Visual C++, Visual C# nebo Visual Basic, shromažďování dat vzorkování pro nativního a spravovaného kódu. Aplikace můžete Profilovat, místně nebo ve vzdáleném počítači.  
   
  Tyto profilování funkce a možnosti nejsou podporovány při profilování aplikací Windows Store:  
@@ -76,19 +76,19 @@ Rozšířené funkce zabezpečení v systému Windows 8 a Windows Server 2012 po
   
   [V tomto tématu](#BKMK_In_this_topic)  
   
-##  <a name="BKMK_Profiling_apps_running_on_the_Windows_8_desktop_or_on_Windows_Server_2012_from_the_Visual_Studio_IDE"></a> Shromažďování dat na aplikace, které běží na ploše systému Windows 8 nebo Windows serveru 2012 z integrovaného vývojového prostředí sady Visual Studio  
+## <a name="BKMK_Profiling_apps_running_on_the_Windows_8_desktop_or_on_Windows_Server_2012_from_the_Visual_Studio_IDE"></a> Shromažďování dat na aplikace, které běží na ploše systému Windows 8 nebo Windows serveru 2012 z integrovaného vývojového prostředí sady Visual Studio  
  Profilace pomocí metody instrumentace nedošlo ke změně pro systém Windows 8.  
   
  Interakce vrstev (TIP) profilace není podporováno pomocí metody vzorkování.  
   
-###  <a name="BKMK_Profiling_apps_running_on_the_Windows_8_desktop_or_on_Windows_Server_2012_by_using_sampling_from_the_Visual_Studio_IDE"></a> Shromažďování dat na aplikace, které běží na ploše systému Windows 8 nebo Windows Server 2012 s použitím vzorkování z integrovaného vývojového prostředí sady Visual Studio  
+### <a name="BKMK_Profiling_apps_running_on_the_Windows_8_desktop_or_on_Windows_Server_2012_by_using_sampling_from_the_Visual_Studio_IDE"></a> Shromažďování dat na aplikace, které běží na ploše systému Windows 8 nebo Windows Server 2012 s použitím vzorkování z integrovaného vývojového prostředí sady Visual Studio  
  Tyto profilování funkce a možnosti nejsou podporovány při profilování desktopových aplikací Windows 8 nebo Windows Server 2012 aplikace pomocí metody vzorkování:  
   
--   Profilace sledováním interakce vrstev (TIP). Shromažďování dat TIP je podporován pomocí instrumentace.  
+- Profilace sledováním interakce vrstev (TIP). Shromažďování dat TIP je podporován pomocí instrumentace.  
   
--   Možnosti, jako je nastavení událost odběru vzorků a interval časování nebo shromažďování dat čítače výkonu Další vzorkování.  
+- Možnosti, jako je nastavení událost odběru vzorků a interval časování nebo shromažďování dat čítače výkonu Další vzorkování.  
   
-##  <a name="BKMK_Profiling_from_the_command_line"></a> Profilace z příkazového řádku  
+## <a name="BKMK_Profiling_from_the_command_line"></a> Profilace z příkazového řádku  
  Ke shromažďování dat profilace na zařízeních s Windows 8 a Windows Server 2012, včetně zařízení, která není nutné instalaci sady Visual Studio, použijte dva nástroje příkazového řádku:  
   
 |Název nástroje|Popis|  
@@ -100,22 +100,22 @@ Rozšířené funkce zabezpečení v systému Windows 8 a Windows Server 2012 po
   
  Do profilu aplikace na zařízeních, které nemají nainstalované, Visual Studio proveďte jednu z následujících akcí:  
   
--   Stáhněte si nástroje jako součást nástrojů Remote Tools for Visual Studio z [webu MSDN](http://go.microsoft.com/fwlink/?LinkID=219549).  
+- Stáhněte si nástroje jako součást nástrojů Remote Tools for Visual Studio z [webu MSDN](http://go.microsoft.com/fwlink/?LinkID=219549).  
   
--   Kopírování a spusťte instalační program nástroje samostatného profileru z počítače Visual Studio. Instalační programy jsou v *VSInstallDir %* **\Team Tools\Performance Tools\Setups** složky. Zvolte instalační program pro operační systém (x86/x64) vzdáleného počítače.  
+- Kopírování a spusťte instalační program nástroje samostatného profileru z počítače Visual Studio. Instalační programy jsou v *VSInstallDir %* **\Team Tools\Performance Tools\Setups** složky. Zvolte instalační program pro operační systém (x86/x64) vzdáleného počítače.  
   
 > [!NOTE]
 >  Chcete-li shromažďovat data profilování TIP, musí instalace samostatného profileru z vašeho počítače Visual Studio na vzdáleném počítači.  
   
  Tyto profilování funkce a možnosti nejsou podporovány při profilování aplikací Windows 8 a Windows Server 2012 z příkazového řádku:  
   
--   Shromažďování dat z webových aplikací systému Windows 8 a Windows Server 2012 pomocí režimu vzorkování s [VSPerfASPNetCmd](../profiling/vsperfaspnetcmd.md).  
+- Shromažďování dat z webových aplikací systému Windows 8 a Windows Server 2012 pomocí režimu vzorkování s [VSPerfASPNetCmd](../profiling/vsperfaspnetcmd.md).  
   
--   Shromažďování dat vzorkování pomocí VsPerfCmd.exe.  
+- Shromažďování dat vzorkování pomocí VsPerfCmd.exe.  
   
--   Možnosti, jako je nastavení událost odběru vzorků a interval časování nebo shromažďování dat čítače výkonu Další vzorkování.  
+- Možnosti, jako je nastavení událost odběru vzorků a interval časování nebo shromažďování dat čítače výkonu Další vzorkování.  
   
-##  <a name="BKMK_Collecting_tier_interaction__TIP__data"></a> Shromažďování dat (TIP) interakce vrstev  
+## <a name="BKMK_Collecting_tier_interaction__TIP__data"></a> Shromažďování dat (TIP) interakce vrstev  
  Profilování interakce vrstev poskytuje další informace o spuštění s úspěšností funkce víceúrovňových aplikací, které komunikují s databázemi prostřednictvím služeb ADO.NET. Data se shromažďují pouze pro synchronní volání.  
   
  **Visual Studio editions**  

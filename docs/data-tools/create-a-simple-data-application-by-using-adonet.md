@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 36fc5dd306782779f553d4144c272c91c7e0f0af
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 4e7f99f646d2a93878ec0a78f75cdc6ae1fb0d1c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55929398"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095682"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>Vytvoření jednoduché datové aplikace pomocí ADO.NET
 
@@ -31,9 +31,9 @@ Tento článek ukazuje jednoduchý způsob, jak získat data z databáze v podob
 
 Chcete-li vytvořit aplikaci, budete potřebovat:
 
--   Visual Studio.
+- Visual Studio.
 
--   SQL Server Express LocalDB. Pokud nemáte SQL Server Express LocalDB, můžete ho nainstalovat [SQL Server Express stránku pro stažení](https://www.microsoft.com/sql-server/sql-server-editions-express).
+- SQL Server Express LocalDB. Pokud nemáte SQL Server Express LocalDB, můžete ho nainstalovat [SQL Server Express stránku pro stažení](https://www.microsoft.com/sql-server/sql-server-editions-express).
 
 Toto téma předpokládá, že ovládáte základní funkce integrovaného vývojového prostředí sady Visual Studio a můžete vytvořit aplikaci Windows Forms, přidat formuláře do projektu, Vložit tlačítka a další ovládací prvky ve formulářích, nastavte vlastnosti ovládacích prvků a kódovat jednoduché události. Pokud si nejste seznámení s těmito úkoly, doporučujeme provést [Začínáme s Vizuálem C# a Visual Basic](../ide/quickstart-visual-basic-console.md) tématu před zahájením tohoto návodu.
 
@@ -69,11 +69,11 @@ Vytvoření ukázkové databáze pomocí následujících kroků:
 
 2. Přidejte do projektu dva formuláře Windows, tak, aby měl tři formuláře a dejte jim následující názvy:
 
-   -   **Navigace**
+   - **Navigace**
 
-   -   **NewCustomer**
+   - **NewCustomer**
 
-   -   **FillOrCancel**
+   - **FillOrCancel**
 
 3. U každého formuláře přidejte textová pole, tlačítka a další ovládací prvky, které se zobrazují na následujících obrázcích. Pro každý ovládací prvek nastavte vlastnosti, které jsou popsány v tabulce.
 
@@ -124,21 +124,21 @@ Vytvoření ukázkové databáze pomocí následujících kroků:
 
  Připojovací řetězec můžete najít kliknutím pravým tlačítkem na **Sales** datové připojení v **Průzkumníka serveru** a zvolíte **vlastnosti**. Vyhledejte **ConnectionString** vlastnost, pak použijte **Ctrl**+**A**, **Ctrl**+**C**  vyberte a zkopírujte řetězec do schránky.
 
-1.  Pokud používáte C#v **Průzkumníka řešení**, rozbalte **vlastnosti** uzlu v rámci projektu a potom otevřete **Settings.settings** souboru.
+1. Pokud používáte C#v **Průzkumníka řešení**, rozbalte **vlastnosti** uzlu v rámci projektu a potom otevřete **Settings.settings** souboru.
     Pokud používáte Visual Basic v **Průzkumníka řešení**, klikněte na tlačítko **zobrazit všechny soubory**, rozbalte **Můj projekt** uzlu a pak otevřete **Settings.settings** souboru.
 
-2.  V **název** sloupce, zadejte `connString`.
+2. V **název** sloupce, zadejte `connString`.
 
-3.  V **typ** seznamu vyberte **(připojovací řetězec)**.
+3. V **typ** seznamu vyberte **(připojovací řetězec)**.
 
-4.  V **oboru** seznamu vyberte **aplikace**.
+4. V **oboru** seznamu vyberte **aplikace**.
 
-5.  V **hodnotu** sloupce, zadejte svůj připojovací řetězec (bez jakékoli mimo uvozovky) a pak uložte provedené změny.
+5. V **hodnotu** sloupce, zadejte svůj připojovací řetězec (bez jakékoli mimo uvozovky) a pak uložte provedené změny.
 
 > [!NOTE]
 > V reálné aplikaci byste měli uložit připojovací řetězec bezpečně, jak je popsáno v [připojovací řetězce a konfigurační soubory](/dotnet/framework/data/adonet/connection-strings-and-configuration-files).
 
-##  <a name="write-the-code-for-the-forms"></a>Napište kód pro formuláře
+## <a name="write-the-code-for-the-forms"></a>Napište kód pro formuláře
 
 Tato část obsahuje stručný přehled, co dělá každý formulář. Také poskytuje kód, který definuje logiku, když dojde ke kliknutí na tlačítko na formuláři.
 
@@ -180,6 +180,7 @@ Dokončete logiky formuláře NewCustomer postupujte podle těchto kroků.
      ```csharp
      using System.Data.SqlClient;
      ```
+
      ```vb
      Imports System.Data.SqlClient
      ```
@@ -212,6 +213,7 @@ Dokončete logiky formuláře FillOrCancel postupujte podle těchto kroků.
      using System.Data.SqlClient;
      using System.Text.RegularExpressions;
      ```
+
      ```vb
      Imports System.Data.SqlClient
      Imports System.Text.RegularExpressions

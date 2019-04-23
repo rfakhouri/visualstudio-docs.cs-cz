@@ -11,12 +11,12 @@ caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ebbb10f0c317e79e22c8eb49b59e4e58a82b9d77
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: cd93ddb6e1d574460593f992f880ccd53d800842
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54789249"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097333"
 ---
 # <a name="graphics-pipeline-stages"></a>Fáze zřetězení grafiky
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,14 +46,14 @@ V okně fáze zřetězení grafiky pomáhá pochopit, jak je transformovat volá
   
 ##### <a name="to-view-a-shaders-source-code"></a>Chcete-li zobrazit zdrojový kód shaderu  
   
--   V **fáze zřetězení grafiky** okně vyhledejte fázi shaderu, který odpovídá shaderu chcete prověřit. Pak níže image ve verzi preview použijte odkaz na název fázi shaderu – například pomocí následujícího odkazu **Vertex Shader obj:30** Chcete-li zobrazit zdrojový kód shaderu vrcholu.  
+- V **fáze zřetězení grafiky** okně vyhledejte fázi shaderu, který odpovídá shaderu chcete prověřit. Pak níže image ve verzi preview použijte odkaz na název fázi shaderu – například pomocí následujícího odkazu **Vertex Shader obj:30** Chcete-li zobrazit zdrojový kód shaderu vrcholu.  
   
     > [!TIP]
     >  Číslo objektu **obj:30**, identifikuje tento shader v celém rozhraní analyzátoru grafiky sady například v okně objekt tabulky a pixel historie.  
   
 ##### <a name="to-debug-a-shader"></a>K ladění shaderu  
   
--   V **fáze zřetězení grafiky** okně vyhledejte fázi shaderu, který odpovídá shaderu chcete ladit. Zvolte níže obrázek náhledu **spustit ladění**. Tento vstupní bod do výchozí nastavení ladicího programu HLSL, aby před prvním vyvoláním služby shaderu pro odpovídající fázi, tedy první pixel, vrchol nebo primitivní hodnota, která zpracovává shaderu během volání příkazu pro vykreslení. Vyvolání tento shader pro konkrétní pixelů nebo vrchol je přístupná prostřednictvím **historie pixelů grafiky**.  
+- V **fáze zřetězení grafiky** okně vyhledejte fázi shaderu, který odpovídá shaderu chcete ladit. Zvolte níže obrázek náhledu **spustit ladění**. Tento vstupní bod do výchozí nastavení ladicího programu HLSL, aby před prvním vyvoláním služby shaderu pro odpovídající fázi, tedy první pixel, vrchol nebo primitivní hodnota, která zpracovává shaderu během volání příkazu pro vykreslení. Vyvolání tento shader pro konkrétní pixelů nebo vrchol je přístupná prostřednictvím **historie pixelů grafiky**.  
   
 ### <a name="the-pipeline-stages"></a>Fáze zřetězení  
  V okně fáze zřetězení vizualizuje pouze fáze kanálu, které byly aktivní během volání draw. Každá fáze zřetězení grafiky transformuje vstupu z předchozí fáze a předá výsledek do další fáze. Úplně první fáze – vstupního assembleru – přebírá index a vrcholu data z vaší aplikace jako vstup; poslední fáze – slučovací modul výstupu – kombinuje nově vykresleny spolu s aktuálním obsahu framebuffer pixelů nebo cíl vykreslování jako jeho výstup, chcete-li vytvořit finální image se zobrazí na obrazovce.  

@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 90fd7beabb14163558afe4b957d95635e91f904a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 3d0f5c17fc0dd12cf8ecb184b667880462548877
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56719545"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093277"
 ---
 # <a name="idebugstackframe2getlanguageinfo"></a>IDebugStackFrame2::GetLanguageInfo
 Získá jazyk přidružené k tento rámec zásobníku.
@@ -47,17 +47,17 @@ int GetLanguageInfo ( 
 
  [out] Vrátí `GUID` jazyka. Pro [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] jazyků, například následující mohou být vráceny:
 
--   `guidVBScriptLang`
+- `guidVBScriptLang`
 
--   `guidJScriptLang`
+- `guidJScriptLang`
 
--   `guidCPPLang`
+- `guidCPPLang`
 
--   `guidVBLang`
+- `guidVBLang`
 
--   `guidSQLLang`
+- `guidSQLLang`
 
--   `guidScriptLang`
+- `guidScriptLang`
 
 ## <a name="return-value"></a>Návratová hodnota
  Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.

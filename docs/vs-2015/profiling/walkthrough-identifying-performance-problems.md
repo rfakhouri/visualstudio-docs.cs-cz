@@ -1,5 +1,5 @@
 ---
-title: 'Průvodce: Identifikace problémů s výkonem | Dokumentace Microsoftu'
+title: 'Návod: Identifikace problémů s výkonem | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,14 +14,14 @@ caps.latest.revision: 58
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2f903ddbf82686846298e21765e405d939f11e1b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e0ac9d085a837ab3ab05754ce70d853112bc48d6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54754815"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096514"
 ---
-# <a name="walkthrough-identifying-performance-problems"></a>Průvodce: Identifikace problémů s výkonem
+# <a name="walkthrough-identifying-performance-problems"></a>Návod: Identifikace problémů s výkonem
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Tento návod ukazuje, jak chcete-li Profilovat aplikaci identifikovat problémy s výkonem.  
@@ -30,13 +30,13 @@ Tento návod ukazuje, jak chcete-li Profilovat aplikaci identifikovat problémy 
   
  V tomto podrobném návodu postupujte podle těchto kroků:  
   
--   Profilovat aplikaci pomocí metody vzorkování.  
+- Profilovat aplikaci pomocí metody vzorkování.  
   
--   Analýza vzorky výsledků profilace účelem vypátrání a opravení problému s výkonem.  
+- Analýza vzorky výsledků profilace účelem vypátrání a opravení problému s výkonem.  
   
--   Profilovat aplikaci pomocí metody instrumentace.  
+- Profilovat aplikaci pomocí metody instrumentace.  
   
--   Analýza výsledků instrumentovaná profilace účelem vypátrání a opravení problému s výkonem.  
+- Analýza výsledků instrumentovaná profilace účelem vypátrání a opravení problému s výkonem.  
   
 ## <a name="prerequisites"></a>Požadavky  
   
@@ -51,29 +51,29 @@ Tento návod ukazuje, jak chcete-li Profilovat aplikaci identifikovat problémy 
   
 #### <a name="to-profile-an-application-by-using-the-sampling-method"></a>Chcete-li Profilovat aplikaci pomocí metody vzorkování  
   
-1.  Otevřít [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] s oprávněními správce. Přihlášení jako správce se vyžaduje pro profilování.  
+1. Otevřít [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] s oprávněními správce. Přihlášení jako správce se vyžaduje pro profilování.  
   
-2.  Otevřete řešení PeopleTrax.  
+2. Otevřete řešení PeopleTrax.  
   
      Peopletrax – řešení nyní naplní Průzkumníku řešení.  
   
-3.  Nastavte na hodnotu konfigurace projektu **vydání**.  
+3. Nastavte na hodnotu konfigurace projektu **vydání**.  
   
      Ke zjištění problémů s výkonem v aplikaci, měli byste použít sestavení pro vydání. Sestavení pro vydání se doporučuje pro profilaci, protože sestavení pro ladění obsahuje další informace kompilovány do něj může nepříznivě ovlivnit výkon a není ilustrují přesně problémy s výkonem.  
   
-4.  Na **analyzovat** nabídky, klikněte na tlačítko **spustit Průvodce výkonem**.  
+4. Na **analyzovat** nabídky, klikněte na tlačítko **spustit Průvodce výkonem**.  
   
      Zobrazí se Průvodce výkonu.  
   
-5.  Ujistěte se, že **vzorkování procesoru (doporučeno)** je vybrána a potom klikněte na tlačítko **Další**.  
+5. Ujistěte se, že **vzorkování procesoru (doporučeno)** je vybrána a potom klikněte na tlačítko **Další**.  
   
-6.  V **kterou aplikaci chcete Profilovat**vyberte peopletrax – a pak klikněte na tlačítko **Další**.  
+6. V **kterou aplikaci chcete Profilovat**vyberte peopletrax – a pak klikněte na tlačítko **Další**.  
   
      [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] Vytvoří projekt a spustí do profilu aplikace. **PeopleTrax** se zobrazí okno aplikace.  
   
-7.  Klikněte na tlačítko **získá osoby**.  
+7. Klikněte na tlačítko **získá osoby**.  
   
-8.  Klikněte na tlačítko **ExportData**.  
+8. Klikněte na tlačítko **ExportData**.  
   
      Poznámkový blok se otevře a zobrazí nový soubor, který obsahuje data exportovaná z **PeopleTrax**.  
   
@@ -83,23 +83,23 @@ Tento návod ukazuje, jak chcete-li Profilovat aplikaci identifikovat problémy 
   
 #### <a name="to-analyze-sampled-profiling-results"></a>K analýze vzorkovány výsledky profilace  
   
-1.  Souhrnné zobrazení zobrazuje časová osa využití procesoru v průběhu běhu, profilování **kritickou cestu** seznam, který představuje větev stromu volání aplikace, která byla nejaktivnější a seznam  **Funkce provádějící nejvíce samostatné práce** , která zobrazuje funkce, které byly vzorkovány nejčastěji při provádění kódu v těle vlastní funkce.  
+1. Souhrnné zobrazení zobrazuje časová osa využití procesoru v průběhu běhu, profilování **kritickou cestu** seznam, který představuje větev stromu volání aplikace, která byla nejaktivnější a seznam  **Funkce provádějící nejvíce samostatné práce** , která zobrazuje funkce, které byly vzorkovány nejčastěji při provádění kódu v těle vlastní funkce.  
   
      Zkontrolujte **kritickou cestu** seznamu a Všimněte si, že metoda PeopleNS.People.GetNames je nejblíže konci seznamu PeopleTrax funkce. Jeho pozice je vhodným kandidátem pro analýzu. Klikněte na název funkce k zobrazení podrobností o GetNames v **podrobnosti o funkci** zobrazení.  
   
-2.  **Podrobnosti o funkci** zobrazení obsahuje dvě okna. Okno rozdělení nákladů poskytuje grafické zobrazení práci prováděnou funkci práce dokončené pomocí funkcí, které ji volaly a příspěvek funkce, které volaly funkce, která se počet instancí, které byly vzorkovány. Můžete změnit funkci, která je zaměření pro zobrazení kliknutím na název funkce. Například můžete kliknout na PeopleNS.People.GetPeople aby GetPeople vybrané funkce.  
+2. **Podrobnosti o funkci** zobrazení obsahuje dvě okna. Okno rozdělení nákladů poskytuje grafické zobrazení práci prováděnou funkci práce dokončené pomocí funkcí, které ji volaly a příspěvek funkce, které volaly funkce, která se počet instancí, které byly vzorkovány. Můžete změnit funkci, která je zaměření pro zobrazení kliknutím na název funkce. Například můžete kliknout na PeopleNS.People.GetPeople aby GetPeople vybrané funkce.  
   
      **Zobrazení kódu funkce** okně se zobrazí zdrojový kód pro funkci, pokud je k dispozici a jsou zvýrazněné nejdražší řádky ve vybrané funkce. Pokud je vybrána GetNames, uvidíte, že tato funkce přečte řetězce ze zdrojů aplikace a pak používá <xref:System.IO.StringReader> přidáte každý řádek v řetězec, který se <xref:System.Collections.ArrayList>. Neexistuje žádný zřejmý způsob, jak optimalizovat této funkce.  
   
-3.  Protože PeopleNS.People.GetPeople je pouze volající GetNames, klikněte na tlačítko GetPeople v okně rozdělení nákladů pro zjištění jeho kód. Tato metoda vrátí <xref:System.Collections.ArrayList> PersonInformationNS.PersonInformation objektů z jmen osob a testovaným GetNames společnosti. GetNames však je volána dvakrát pokaždé, když je vytvořen objekt PersonInformation. Uvidíte, že metoda lze snadno optimalizovat vytváření seznamů jenom jednou na začátku metody a indexování do těchto seznamů během smyčky změnil PersonInformation vytváření.  
+3. Protože PeopleNS.People.GetPeople je pouze volající GetNames, klikněte na tlačítko GetPeople v okně rozdělení nákladů pro zjištění jeho kód. Tato metoda vrátí <xref:System.Collections.ArrayList> PersonInformationNS.PersonInformation objektů z jmen osob a testovaným GetNames společnosti. GetNames však je volána dvakrát pokaždé, když je vytvořen objekt PersonInformation. Uvidíte, že metoda lze snadno optimalizovat vytváření seznamů jenom jednou na začátku metody a indexování do těchto seznamů během smyčky změnil PersonInformation vytváření.  
   
-4.  Alternativní verze GetPeople je součástí ukázkového kódu aplikace a může volat funkci optimalizované tak, že přidáte symbol podmíněné kompilace na sestavení vlastnosti. V okně Průzkumník řešení klikněte pravým tlačítkem na projekt lidí a potom klikněte na tlačítko **vlastnosti**. Klikněte na tlačítko **sestavení** v nabídce stránky vlastností a pak zadejte **OPTIMIZED_GETPEOPLE** v textovém poli symbol podmíněné kompilace. Optimalizovaná verze GetPeople nahradí původní metodu v další sestavení.  
+4. Alternativní verze GetPeople je součástí ukázkového kódu aplikace a může volat funkci optimalizované tak, že přidáte symbol podmíněné kompilace na sestavení vlastnosti. V okně Průzkumník řešení klikněte pravým tlačítkem na projekt lidí a potom klikněte na tlačítko **vlastnosti**. Klikněte na tlačítko **sestavení** v nabídce stránky vlastností a pak zadejte **OPTIMIZED_GETPEOPLE** v textovém poli symbol podmíněné kompilace. Optimalizovaná verze GetPeople nahradí původní metodu v další sestavení.  
   
-5.  Znovu spusťte relaci výkonu. Na panelu nástrojů prohlížeče výkonu, klikněte na tlačítko **spustit s nástrojem pro profilaci**. Klikněte na tlačítko **lidem získat** a potom klikněte na tlačítko **exportovat Data**. Zavřete okno Poznámkový blok, který se zobrazí a pak ukončete aplikaci Trax lidí.  
+5. Znovu spusťte relaci výkonu. Na panelu nástrojů prohlížeče výkonu, klikněte na tlačítko **spustit s nástrojem pro profilaci**. Klikněte na tlačítko **lidem získat** a potom klikněte na tlačítko **exportovat Data**. Zavřete okno Poznámkový blok, který se zobrazí a pak ukončete aplikaci Trax lidí.  
   
      Vygenerování nového datového souboru profilování a **Souhrn** zobrazení, kde se zobrazí nová data v [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] hlavního okna.  
   
-6.  Chcete-li porovnat dvě spuštění profilování, vyberte dva datové soubory v prohlížeči výkonu, klikněte pravým tlačítkem na soubor a klikněte na **porovnat sestavy výkonu**. Zobrazí okno sestavy porovnání [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] hlavního okna. **Delta** sloupci se zobrazuje změnu v hodnotě výkonu funkce z dříve **směrného plánu** hodnota, která má později **porovnání** hodnotu. Můžete vybrat k porovnání z **sloupec** rozevírací seznam. Vyberte **% celkových vzorků**.  
+6. Chcete-li porovnat dvě spuštění profilování, vyberte dva datové soubory v prohlížeči výkonu, klikněte pravým tlačítkem na soubor a klikněte na **porovnat sestavy výkonu**. Zobrazí okno sestavy porovnání [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] hlavního okna. **Delta** sloupci se zobrazuje změnu v hodnotě výkonu funkce z dříve **směrného plánu** hodnota, která má později **porovnání** hodnotu. Můžete vybrat k porovnání z **sloupec** rozevírací seznam. Vyberte **% celkových vzorků**.  
   
      Všimněte si, že metody GetPeople a GetNames zobrazit zvýšení značné výkonu.  
   
@@ -110,25 +110,25 @@ Tento návod ukazuje, jak chcete-li Profilovat aplikaci identifikovat problémy 
   
 #### <a name="to-profile-an-existing-application-by-using-the-instrumentation-method"></a>Chcete-li Profilovat existující aplikace pomocí metody instrumentace  
   
-1.  V případě potřeby otevřete aplikaci peopletrax – v sadě Visual Studio.  
+1. V případě potřeby otevřete aplikaci peopletrax – v sadě Visual Studio.  
   
      Ujistěte se, že jej spouštíte jako správce a že konfigurace sestavení řešení je nastavena na **vydání**.  
   
-2.  V prohlížeči výkonu, klikněte na tlačítko **instrumentace**.  
+2. V prohlížeči výkonu, klikněte na tlačítko **instrumentace**.  
   
-3.  Na panelu nástrojů prohlížeče výkonu, klikněte na tlačítko **spustit s nástrojem pro profilaci**.  
+3. Na panelu nástrojů prohlížeče výkonu, klikněte na tlačítko **spustit s nástrojem pro profilaci**.  
   
      Profiler sestaví projekt a začne profilování aplikace. Zobrazí se okno PeopleTrax aplikace.  
   
-4.  Klikněte na tlačítko **získá osoby**.  
+4. Klikněte na tlačítko **získá osoby**.  
   
      Datová mřížka PeopleTrax naplní daty.  
   
-5.  Počkejte asi 10 sekund a pak klikněte na tlačítko **exportovat Data**.  
+5. Počkejte asi 10 sekund a pak klikněte na tlačítko **exportovat Data**.  
   
      **Poznámkový blok** spustí a zobrazí nový soubor, který obsahuje seznam lidí z PeopleTrax. Čekání na umožňuje snadněji identifikovat data exportovat postup pro filtrování.  
   
-6.  Zavřete **Poznámkový blok**a pak zavřete **PeopleTrax** aplikace.  
+6. Zavřete **Poznámkový blok**a pak zavřete **PeopleTrax** aplikace.  
   
      [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] generuje sestavu relace výkonu (*.vsp).  
   

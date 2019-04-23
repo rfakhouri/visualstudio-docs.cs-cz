@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 68ad2e66a4cecff01005f49aa6304a515a010170
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: e6ad8a11e736595912b1b6c8757bd75dca1e53e6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355575"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097424"
 ---
 # <a name="walkthrough-design-an-outlook-form-region"></a>Návod: Návrh oblasti formuláře Outlooku
   Vlastní formulář oblastech rozšířit standardní nebo vlastní formuláře aplikace Microsoft Office Outlook. V tomto návodu bude navrhovat vlastní formulář regionu, který se zobrazí v okně Inspektor kontaktní položky na novou stránku. Tato oblast formuláře zobrazí se mapa s každou adresu, která je uvedena u kontaktu, posíláním informací o adresy na Windows Live místní vyhledávací web. Informace o oblasti formuláře, naleznete v tématu [oblastí formulářů aplikace Outlook vytvořit](../vsto/creating-outlook-form-regions.md).
@@ -26,15 +26,15 @@ ms.locfileid: "58355575"
 
  Tento návod znázorňuje následující úlohy:
 
--   Vytvoření nového projektu doplňku VSTO v Outlooku.
+- Vytvoření nového projektu doplňku VSTO v Outlooku.
 
--   Přidání oblasti formuláře do projektu doplňku VSTO.
+- Přidání oblasti formuláře do projektu doplňku VSTO.
 
--   Návrh rozložení oblasti formuláře.
+- Návrh rozložení oblasti formuláře.
 
--   Přizpůsobení chování oblasti formuláře.
+- Přizpůsobení chování oblasti formuláře.
 
--   Testuje se oblast formuláře Outlooku.
+- Testuje se oblast formuláře Outlooku.
 
 > [!NOTE]
 >  Váš počítač může v následujících pokynech zobrazovat odlišné názvy nebo umístění některých prvků uživatelského rozhraní sady Visual Studio. Tyto prvky jsou určeny edicí sady Visual Studio a použitým nastavením. Další informace najdete v tématu [přizpůsobení integrovaného vývojového prostředí sady Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
@@ -53,11 +53,11 @@ ms.locfileid: "58355575"
 
 ### <a name="to-create-a-new-outlook-vsto-add-in-project"></a>Chcete-li vytvořit nový projekt doplňku VSTO pro Outlook
 
-1.  V [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], vytvoření projektu doplňku VSTO pro Outlook s názvem **MapItAddIn**.
+1. V [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], vytvoření projektu doplňku VSTO pro Outlook s názvem **MapItAddIn**.
 
-2.  V **nový projekt** dialogu **vytvořit adresář pro řešení**.
+2. V **nový projekt** dialogu **vytvořit adresář pro řešení**.
 
-3.  Uložte projekt do libovolného adresáře.
+3. Uložte projekt do libovolného adresáře.
 
      Další informace najdete v tématu [jak: Vytvářet projekty pro Office v sadě Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
@@ -66,27 +66,27 @@ ms.locfileid: "58355575"
 
 ### <a name="to-add-a-form-region-to-the-outlook-vsto-add-in-project"></a>Přidání oblasti formuláře do projektu doplňku VSTO pro Outlook
 
-1.  V **Průzkumníka řešení**, vyberte **MapItAddIn** projektu.
+1. V **Průzkumníka řešení**, vyberte **MapItAddIn** projektu.
 
-2.  Na **projektu** nabídky, klikněte na tlačítko **přidat novou položku**.
+2. Na **projektu** nabídky, klikněte na tlačítko **přidat novou položku**.
 
-3.  V **přidat novou položku** dialogu **oblast formuláře Outlooku**, pojmenujte soubor **MapIt**a potom klikněte na tlačítko **přidat**.
+3. V **přidat novou položku** dialogu **oblast formuláře Outlooku**, pojmenujte soubor **MapIt**a potom klikněte na tlačítko **přidat**.
 
      **Oblasti formuláře NewOutlook** spustí se průvodce.
 
-4.  Na **vyberte způsob vytvoření oblasti formuláře** klikněte na **navrhnout novou oblast formuláře**a potom klikněte na tlačítko **Další**.
+4. Na **vyberte způsob vytvoření oblasti formuláře** klikněte na **navrhnout novou oblast formuláře**a potom klikněte na tlačítko **Další**.
 
-5.  Na **výběr typu oblasti formuláře chcete vytvořit** klikněte na **samostatné**a potom klikněte na tlačítko **Další**.
+5. Na **výběr typu oblasti formuláře chcete vytvořit** klikněte na **samostatné**a potom klikněte na tlačítko **Další**.
 
      A *samostatné* oblasti formuláře přidá novou stránku do formuláře aplikace Outlook. Další informace o oblasti formuláře typu naleznete v tématu [oblastí formulářů aplikace Outlook vytvořit](../vsto/creating-outlook-form-regions.md).
 
-6.  Na **zadání popisného textu a výběr předvoleb zobrazení** zadejte **mapy ho** v **název** pole.
+6. Na **zadání popisného textu a výběr předvoleb zobrazení** zadejte **mapy ho** v **název** pole.
 
      Tento název se zobrazí na pásu karet v okně Inspektor při otevření položky kontaktu.
 
-7.  Vyberte **kontroly, které jsou v režimu vytváření** a **kontroly, které jsou v režimu čtení**a potom klikněte na tlačítko **Další**.
+7. Vyberte **kontroly, které jsou v režimu vytváření** a **kontroly, které jsou v režimu čtení**a potom klikněte na tlačítko **Další**.
 
-8.  Na **identifikování tříd zpráv, které budou zobrazovat tuto oblast formuláře** zrušte **e-mailovou zprávu**vyberte **kontakt**a potom klikněte na tlačítko **Dokončit**.
+8. Na **identifikování tříd zpráv, které budou zobrazovat tuto oblast formuláře** zrušte **e-mailovou zprávu**vyberte **kontakt**a potom klikněte na tlačítko **Dokončit**.
 
      A *MapIt.cs* nebo *MapIt.vb* přidá soubor do projektu.
 
@@ -95,17 +95,17 @@ ms.locfileid: "58355575"
 
 ### <a name="to-design-the-layout-of-the-form-region"></a>Návrh rozložení oblasti formuláře
 
-1.  V **Průzkumníka řešení**, rozbalte **MapItAddIn** projektu a potom dvakrát klikněte na panel *MapIt.cs* nebo *MapIt.vb* otevřete oblast formuláře Návrhář.
+1. V **Průzkumníka řešení**, rozbalte **MapItAddIn** projektu a potom dvakrát klikněte na panel *MapIt.cs* nebo *MapIt.vb* otevřete oblast formuláře Návrhář.
 
-2.  Pravým tlačítkem myši klepněte Návrhář a potom klikněte na **vlastnosti**.
+2. Pravým tlačítkem myši klepněte Návrhář a potom klikněte na **vlastnosti**.
 
-3.  V **vlastnosti** okno, nastavte **velikost** k **664, 469**.
+3. V **vlastnosti** okno, nastavte **velikost** k **664, 469**.
 
      Tím se zajistí, že bude dostatečně velký pro zobrazení mapě oblasti formuláře.
 
-4.  Na **zobrazení** nabídky, klikněte na tlačítko **nástrojů**.
+4. Na **zobrazení** nabídky, klikněte na tlačítko **nástrojů**.
 
-5.  Z **běžné ovládací prvky** kartě **nástrojů**, přidejte **WebBrowser** na oblast formuláře.
+5. Z **běžné ovládací prvky** kartě **nástrojů**, přidejte **WebBrowser** na oblast formuláře.
 
      **WebBrowser** zobrazí mapu každou adresu, která je uvedena u kontaktu.
 
@@ -143,13 +143,13 @@ ms.locfileid: "58355575"
 
 ### <a name="to-test-the-map-it-form-region"></a>K otestování oblasti formuláře mapy ho
 
-1.  Stisknutím klávesy **F5** spusťte projekt.
+1. Stisknutím klávesy **F5** spusťte projekt.
 
      Otevře se aplikace Outlook.
 
-2.  V aplikaci Outlook na **Domů** klikněte na tlačítko **nové položky**a potom klikněte na tlačítko **kontakt**.
+2. V aplikaci Outlook na **Domů** klikněte na tlačítko **nové položky**a potom klikněte na tlačítko **kontakt**.
 
-3.  Zadejte kontaktní formulář **Ann Beebe** jako kontakt pojmenujte a pak zadejte následující tři adresy.
+3. Zadejte kontaktní formulář **Ann Beebe** jako kontakt pojmenujte a pak zadejte následující tři adresy.
 
     |Typ adresy|Adresa|
     |------------------|-------------|
@@ -157,20 +157,20 @@ ms.locfileid: "58355575"
     |**Domovská stránka**|**1234 North St. Buffalo, NY**|
     |**Jiné**|**3456 hlavní St. Seattle, WA**|
 
-4.  Uložte a zavřete položky kontaktu.
+4. Uložte a zavřete položky kontaktu.
 
-5.  Znovu otevřít **Ann Beebe** kontakt.
+5. Znovu otevřít **Ann Beebe** kontakt.
 
     V aplikaci Outlook, to lze provést **najít** skupiny pomocí otevřete adresář pro kontakty nebo zadáním Ann Beebe do **hledat lidi**.
 
-6.  V **zobrazit** skupiny pásu karet položky, klikněte na tlačítko **mapy ho** oblasti formuláře mapy ho otevřete.
+6. V **zobrazit** skupiny pásu karet položky, klikněte na tlačítko **mapy ho** oblasti formuláře mapy ho otevřete.
 
      Oblast formuláře mapování se zobrazí se místní vyhledávací web. **Obchodní**, **Domů**, a **jiných** adresy se zobrazí v oblasti začátku. V oblasti začátku vyberte adresu, kterou chcete namapovat.
 
 ## <a name="next-steps"></a>Další kroky
  Další informace o tom, jak přizpůsobit uživatelské rozhraní aplikace Outlook z těchto témat:
 
--   Další informace o tom, jak přizpůsobit na pásu karet položky Outlooku, naleznete v tématu [přizpůsobte pás karet pro aplikaci Outlook](../vsto/customizing-a-ribbon-for-outlook.md).
+- Další informace o tom, jak přizpůsobit na pásu karet položky Outlooku, naleznete v tématu [přizpůsobte pás karet pro aplikaci Outlook](../vsto/customizing-a-ribbon-for-outlook.md).
 
 ## <a name="see-also"></a>Viz také:
 - [Přístup k oblasti formuláře za běhu](../vsto/accessing-a-form-region-at-run-time.md)

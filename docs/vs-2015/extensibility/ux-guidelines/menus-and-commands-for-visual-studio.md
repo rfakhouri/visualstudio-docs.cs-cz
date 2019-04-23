@@ -8,12 +8,12 @@ ms.assetid: 0a1ed675-2bd1-4603-ba3a-f40dfb5cfb69
 caps.latest.revision: 5
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: b0fa441c6dc56210c11a0007eb2662b3c08910ba
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 681df08c02813e209738e629495190ad889caf31
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867862"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095799"
 ---
 # <a name="menus-and-commands-for-visual-studio"></a>Nabídek a příkazů pro sadu Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,11 +35,11 @@ ms.locfileid: "57867862"
 ##### <a name="do-not-create-icons-for-every-command"></a>Nevytvářejte ikony pro každý příkaz.
  Pečlivě před vytvořením ikona příkazu. Ikony by měl být vytvořen pouze pro příkazy, které:
 
--   se zobrazí na panelu nástrojů výchozí.
+- se zobrazí na panelu nástrojů výchozí.
 
--   mohou uživatelé přidat do panelu nástrojů prostřednictvím **vlastní...** Dialogové okno.
+- mohou uživatelé přidat do panelu nástrojů prostřednictvím **vlastní...** Dialogové okno.
 
--   máte ikony přidružené k stejnou akci v jiném produktu společnosti Microsoft.
+- máte ikony přidružené k stejnou akci v jiném produktu společnosti Microsoft.
 
 ##### <a name="limit-the-addition-of-keyboard-shortcuts"></a>Limit přidání klávesových zkratek
  Většinu uživatelů využívají zlomek všech dostupných klávesových zkratek. V případě pochybností si nechcete vytvořit vazbu vaši funkci klávesové zkratky. Práce s vaší uživatelské prostředí tým před přidáním nové klávesové zkratky.
@@ -77,65 +77,65 @@ ms.locfileid: "57867862"
 
 ##### <a name="core-menus"></a>Základní nabídky
 
--   Soubor
+- Soubor
 
--   Upravit
+- Upravit
 
--   Zobrazit
+- Zobrazit
 
--   Nástroje
+- Nástroje
 
--   Okno
+- Okno
 
--   Nápověda
+- Nápověda
 
 ##### <a name="project-specific-menus"></a>Specifické pro projekt nabídky
 
--   Projekt
+- Projekt
 
--   Sestavení
+- Sestavení
 
--   Ladit
+- Ladit
 
 ##### <a name="context-specific-menus"></a>Kontextové nabídky
 
--   Tým
+- Tým
 
--   Data
+- Data
 
--   Test
+- Test
 
--   Architektura
+- Architektura
 
--   Analyzovat
+- Analyzovat
 
 ##### <a name="document-specific-menus"></a>Konkrétní dokumenty nabídky
 
--   Formát
+- Formát
 
--   Tabulka
+- Tabulka
 
 ##### <a name="when-designing-main-menus-adhere-to-these-rules"></a>Při navrhování hlavní nabídky, dodržujte tato pravidla:
 
--   Není delší než 25 položky nejvyšší úrovně v daném kontextu
+- Není delší než 25 položky nejvyšší úrovně v daném kontextu
 
--   Nabídky by nikdy nepřekročí 600 pixelů na výšku.
+- Nabídky by nikdy nepřekročí 600 pixelů na výšku.
 
--   Vyhodnoťte hlavní nabídky v několika kontextech, například Ultimate SKU a profilu Obecné.
+- Vyhodnoťte hlavní nabídky v několika kontextech, například Ultimate SKU a profilu Obecné.
 
--   Kontextová nabídka nabídky jsou přijatelné.
+- Kontextová nabídka nabídky jsou přijatelné.
 
--   Kontextová nabídka nabídky by měl obsahovat alespoň tři položky a více než sedm.
+- Kontextová nabídka nabídky by měl obsahovat alespoň tři položky a více než sedm.
 
--   Kontextová nabídka nabídky by měly patřit pouze jednu úroveň hlouběji – některé položky nabídky sady Visual Studio obsahují šablony podnabídky, ale tento model není podporováno.
+- Kontextová nabídka nabídky by měly patřit pouze jednu úroveň hlouběji – některé položky nabídky sady Visual Studio obsahují šablony podnabídky, ale tento model není podporováno.
 
--   Použití více než šest oddělovače. Seskupení by měl splňovat následující obrázek:
+- Použití více než šest oddělovače. Seskupení by měl splňovat následující obrázek:
 
      ![Pokyny pro seskupení hlavní nabídky](../../extensibility/ux-guidelines/media/0501-b-mainmenus.png "0501 b_MainMenus")
 
--   Když to není vyžadováno jednotlivá seskupení na obrázku, přidání dalších seskupení je omezen.
+- Když to není vyžadováno jednotlivá seskupení na obrázku, přidání dalších seskupení je omezen.
 
--   Jednotlivá seskupení musí mít ze dvou sedm položek nabídky.
+- Jednotlivá seskupení musí mít ze dvou sedm položek nabídky.
 
 #### <a name="main-menu-ordering"></a>Hlavní nabídka řazení
  Před přidáním nové položky nejvyšší úrovně, zvažte umístění příkazu v existující nabídek nejvyšší úrovně. Při přidávání nových nabídek nejvyšší úrovně, je nutné umístit do správného umístění. Rozhodněte, jestli je specifické pro projekt, místní nebo dokumentu v nabídce. Zachovat název nabídek nejvyšší úrovně stručné a používat pouze jedno slovo.
@@ -147,30 +147,30 @@ ms.locfileid: "57867862"
 
  Při navrhování kontextové nabídky, dodržujte stejná pravidla jako hlavní nabídky a navíc:
 
--   Není delší než 25 položek nabídek nejvyšší úrovně.
+- Není delší než 25 položek nabídek nejvyšší úrovně.
 
--   Kontextová nabídka nabídky jsou přijatelné, ale musí není delší než jednu úroveň – nikdy nepoužívejte kaskádové kontextové nabídky.
+- Kontextová nabídka nabídky jsou přijatelné, ale musí není delší než jednu úroveň – nikdy nepoužívejte kaskádové kontextové nabídky.
 
--   Použití více než šest oddělovače.
+- Použití více než šest oddělovače.
 
 ### <a name="command-placement-in-toolbars"></a>Umístění příkazového v panelech nástrojů
 
 #### <a name="general-toolbars"></a>Obecné panelů nástrojů
  Při navrhování a uspořádání panelů nástrojů, postupujte podle těchto standardů:
 
--   Nepoužívejte více než jeden příkaz na tlačítko. Jedno tlačítko = jednu akci.
+- Nepoužívejte více než jeden příkaz na tlačítko. Jedno tlačítko = jednu akci.
 
--   Použití textu vedle ikony pouze v případě, že je potřeba posílit s popiskem.
+- Použití textu vedle ikony pouze v případě, že je potřeba posílit s popiskem.
 
--   Pole se seznamem použijte výhradně pro vlastnosti, které bude možné přepnout v jedné relaci více než jednou. Jinak zpřístupnit vlastnost jinde.
+- Pole se seznamem použijte výhradně pro vlastnosti, které bude možné přepnout v jedné relaci více než jednou. Jinak zpřístupnit vlastnost jinde.
 
--   Šířka pole se seznamem by se měl rovnat šířku nejdelší položky v rámci pole + 30 %. Například pokud je nejdelší položka 200 pixelů, pak pole se seznamem mělo 260 pixelů na šířku.
+- Šířka pole se seznamem by se měl rovnat šířku nejdelší položky v rámci pole + 30 %. Například pokud je nejdelší položka 200 pixelů, pak pole se seznamem mělo 260 pixelů na šířku.
 
--   Omezte použití oddělovače. Použití oddělovače vedle rozevíracího seznamu je odolné proti vzorek, protože tvar z rozevíracího seznamu sám funguje jako vizuálního oddělovače.
+- Omezte použití oddělovače. Použití oddělovače vedle rozevíracího seznamu je odolné proti vzorek, protože tvar z rozevíracího seznamu sám funguje jako vizuálního oddělovače.
 
--   Ikona skupiny by měl obsahovat na tři až šest ikony.
+- Ikona skupiny by měl obsahovat na tři až šest ikony.
 
--   Pokud kvalifikátory za následek více užitečné příkazů, použijte tlačítko rozdělení, který uchovává poslední nastavení:
+- Pokud kvalifikátory za následek více užitečné příkazů, použijte tlačítko rozdělení, který uchovává poslední nastavení:
 
      ![Rozdělit tlačítka v sadě Visual Studio](../../extensibility/ux-guidelines/media/0501-c-splitbuttons.png "0501 c_SplitButtons")
 
@@ -231,13 +231,13 @@ ms.locfileid: "57867862"
 
 #### <a name="when-naming-commands"></a>Pojmenování příkazy, pokud:
 
--   Vytvořte text tak, aby se snadno lokalizovatelný. Další informace o lokalizaci textu, naleznete v tématu [doporučené postupy pro lokalizaci](/dotnet/standard/globalization-localization/best-practices-for-developing-world-ready-apps#localization-best-practices).
+- Vytvořte text tak, aby se snadno lokalizovatelný. Další informace o lokalizaci textu, naleznete v tématu [doporučené postupy pro lokalizaci](/dotnet/standard/globalization-localization/best-practices-for-developing-world-ready-apps#localization-best-practices).
 
--   Být stručné. Příkazy by měl používat více než tří slov.
+- Být stručné. Příkazy by měl používat více než tří slov.
 
--   Použít první velká písmena malá a velká písmena: první písmeno každého slova musí být velkými písmeny. Další informace o formátování textu v sadě Visual Studio najdete v tématu [styl textu](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle).
+- Použít první velká písmena malá a velká písmena: první písmeno každého slova musí být velkými písmeny. Další informace o formátování textu v sadě Visual Studio najdete v tématu [styl textu](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle).
 
--   Vzít v úvahu umístění příkazu. Je v nejvyšší úrovni nabídky nebo vyskakovacího informačního rámečku? Například při seskupení příkazů pro zarovnání v informační rámeček nejvyšší úrovně příkazu by měl být "Zarovnat" a kontextová nabídka příkazy by měl být "Vlevo" "Vpravo", "Centra", "bloku" a tak dále. By bylo nadbytečné název informační rámeček příkazy "Zarovnat doleva" nebo "Align Right."
+- Vzít v úvahu umístění příkazu. Je v nejvyšší úrovni nabídky nebo vyskakovacího informačního rámečku? Například při seskupení příkazů pro zarovnání v informační rámeček nejvyšší úrovně příkazu by měl být "Zarovnat" a kontextová nabídka příkazy by měl být "Vlevo" "Vpravo", "Centra", "bloku" a tak dále. By bylo nadbytečné název informační rámeček příkazy "Zarovnat doleva" nebo "Align Right."
 
      ![Visual Studio formátu nabídky](../../extensibility/ux-guidelines/media/0502-a-formatmenu.png "0502 a_FormatMenu")
 
@@ -246,20 +246,20 @@ ms.locfileid: "57867862"
 
 #### <a name="use-an-icon-with-a-command-only-if"></a>Použijte ikonu s pouze pokud příkaz:
 
--   Ten samý příkaz má ikonu s ním spojená v jiné viditelného produktu společnosti Microsoft, jako jsou například aplikace Microsoft Office.
+- Ten samý příkaz má ikonu s ním spojená v jiné viditelného produktu společnosti Microsoft, jako jsou například aplikace Microsoft Office.
 
--   Příkaz budou umístěny na panelu nástrojů, výchozí.
+- Příkaz budou umístěny na panelu nástrojů, výchozí.
 
--   Příkaz je příkaz zaměření, které uživatelé můžou přidat do panelu nástrojů pomocí **"Upravit..."** Dialogové okno.
+- Příkaz je příkaz zaměření, které uživatelé můžou přidat do panelu nástrojů pomocí **"Upravit..."** Dialogové okno.
 
 ## <a name="access-and-shortcut-keys"></a>Přístup a místní klíče
 
 ### <a name="overview"></a>Přehled
  Existují dva typy přiřazení klávesových zkratek:
 
--   **Přístupové klíče** (označované také jako akcelerátory) povolit přístup klávesnice prostřednictvím nabídky příkazů a každému popisku v dialogovém okně uživatelského rozhraní. Přístupové klíče jsou určeny pro účely usnadnění přístupu, jsou přiřazeny všechny nabídky a většina ovládací prvky dialogového okna, neměly by být zvyklí, vliv pouze na aktuální okno a jsou lokalizovány.
+- **Přístupové klíče** (označované také jako akcelerátory) povolit přístup klávesnice prostřednictvím nabídky příkazů a každému popisku v dialogovém okně uživatelského rozhraní. Přístupové klíče jsou určeny pro účely usnadnění přístupu, jsou přiřazeny všechny nabídky a většina ovládací prvky dialogového okna, neměly by být zvyklí, vliv pouze na aktuální okno a jsou lokalizovány.
 
--   **Klávesové zkratky** většinou používat ovládací prvek (Ctrl) a klíče sekvence – funkce (Fn). Jsou určeny více pro zkušené uživatele a podpory produktivity. Tyto jsou přiřazeny pouze pro většinu často používané příkazy a povolení rychlého přístupu při obcházení v hlavní nabídce. Klávesové zkratky jsou určeny k být zapamatovaných a k tomu třeba je přiřadit důvod konzistentní se schématem profilu. Místní klíčových systémů se můžou lišit profilu z profilu. Uživatel může přizpůsobení klávesových zkratek prostřednictvím **nástroje > Možnosti > klávesnice**.
+- **Klávesové zkratky** většinou používat ovládací prvek (Ctrl) a klíče sekvence – funkce (Fn). Jsou určeny více pro zkušené uživatele a podpory produktivity. Tyto jsou přiřazeny pouze pro většinu často používané příkazy a povolení rychlého přístupu při obcházení v hlavní nabídce. Klávesové zkratky jsou určeny k být zapamatovaných a k tomu třeba je přiřadit důvod konzistentní se schématem profilu. Místní klíčových systémů se můžou lišit profilu z profilu. Uživatel může přizpůsobení klávesových zkratek prostřednictvím **nástroje > Možnosti > klávesnice**.
 
 ### <a name="assigning-access-keys"></a>Přiřazení přístupových kláves
  Přístupové klíče se skládají z klávesy Alt a alfanumerické znaky. Přiřaďte přístupový klíč pro každou položku nabídky bez výjimky. Postupujte podle Windows a běžné konvence pro přiřazení přístupových kláves. například přístupový klíč pro **soubor > Nový** by měla být vždy **Alt, F, N**.
@@ -287,6 +287,6 @@ ms.locfileid: "57867862"
 
   Není k dispozici jednoduchý způsob, jak zkontrolovat dostupnost místní. Pokud chcete přidat zástupce, postupujte podle těchto kroků:
 
-1.  Zkontrolujte seznam [klávesové zkratky v sadě Visual Studio 2013](http://visualstudioshortcuts.com/2013/) k určení, jestli jsou podobné příkazy do skupiny jenom s.
+1. Zkontrolujte seznam [klávesové zkratky v sadě Visual Studio 2013](http://visualstudioshortcuts.com/2013/) k určení, jestli jsou podobné příkazy do skupiny jenom s.
 
-2.  Přejděte na **nástroje > Možnosti > prostředí > klávesnice** a otestovat zástupce. Zkontrolujte, že každý schéma mapování klávesnice uvedené v části "Platí následující dodatečné schéma mapování klávesnice." Zkontrolujte profily Obecné, C#, VB a C++, jako jsou sdílené složky jedinečný klávesové zkratky. Zástupce je k dispozici, pokud není namapována v některém z těchto míst.
+2. Přejděte na **nástroje > Možnosti > prostředí > klávesnice** a otestovat zástupce. Zkontrolujte, že každý schéma mapování klávesnice uvedené v části "Platí následující dodatečné schéma mapování klávesnice." Zkontrolujte profily Obecné, C#, VB a C++, jako jsou sdílené složky jedinečný klávesové zkratky. Zástupce je k dispozici, pokud není namapována v některém z těchto míst.

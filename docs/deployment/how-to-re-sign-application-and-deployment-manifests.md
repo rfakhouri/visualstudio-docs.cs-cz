@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 03606c1844ba058c5129affb5776cdc0a89849be
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: e934832f20ea7ab11484cdeb345f989aa842e06d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56610642"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097014"
 ---
 # <a name="how-to-re-sign-application-and-deployment-manifests"></a>Postupy: Znovu podepište manifesty aplikace a nasazení
 Když provedete změny vlastnosti nasazení v manifestu aplikace pro aplikace Windows Forms, aplikace Windows Presentation Foundation (xbap) nebo řešení pro systém Office, musíte znovu podepsat obě aplikace a manifesty nasazení se certifikát. Tento proces pomáhá zajistit, že zmanipulovanou soubory nejsou nainstalované v počítačích koncových uživatelů.
@@ -35,11 +35,11 @@ Když provedete změny vlastnosti nasazení v manifestu aplikace pro aplikace Wi
 
 #### <a name="to-re-sign-the-application-and-deployment-manifests-with-mageexe"></a>K opětovnému podepsání aplikace a nasazení manifestů s Mage.exe
 
-1.  Otevřít **příkazový řádek sady Visual Studio** okna.
+1. Otevřít **příkazový řádek sady Visual Studio** okna.
 
-2.  Přejděte do složky, která obsahuje soubory manifestu, které chcete podepsat.
+2. Přejděte do složky, která obsahuje soubory manifestu, které chcete podepsat.
 
-3.  Zadejte následující příkaz k podepsání souboru manifestu aplikace. Nahraďte *manifestu* s názvem souboru manifestu a rozšíření. Nahraďte *certifikát* úplnou nebo relativní cestou k souboru certifikátu a nahraďte *heslo* se heslo pro certifikát.
+3. Zadejte následující příkaz k podepsání souboru manifestu aplikace. Nahraďte *manifestu* s názvem souboru manifestu a rozšíření. Nahraďte *certifikát* úplnou nebo relativní cestou k souboru certifikátu a nahraďte *heslo* se heslo pro certifikát.
 
     ```cmd
     mage -sign ManifestFileName.manifest -CertFile Certificate -Password Password
@@ -53,7 +53,7 @@ Když provedete změny vlastnosti nasazení v manifestu aplikace pro aplikace Wi
     mage -sign WpfBrowserApplication1.exe.manifest -CertFile ..\WpfBrowserApplication1_TemporaryKey.pfx
     ```
 
-4.  Zadejte následující příkaz k aktualizaci a podepsat soubor manifestu nasazení, nahraďte zástupné názvy jako v předchozím kroku.
+4. Zadejte následující příkaz k aktualizaci a podepsat soubor manifestu nasazení, nahraďte zástupné názvy jako v předchozím kroku.
 
     ```cmd
     mage -update DeploymentManifest -appmanifest ApplicationManifest -CertFile Certificate -Password Password
@@ -67,20 +67,20 @@ Když provedete změny vlastnosti nasazení v manifestu aplikace pro aplikace Wi
     mage -update WpfBrowserApplication1.xbap -appmanifest WpfBrowserApplication1.exe.manifest -CertFile ..\WpfBrowserApplication1_TemporaryKey.pfx
     ```
 
-5.  Volitelně můžete zkopírovat hlavní manifest nasazení (*publikovat\\\<název_aplikace > .application*) do adresáře nasazení vaší verze (*publish\Application soubory\\ \<název_aplikace > _\<verze >*).
+5. Volitelně můžete zkopírovat hlavní manifest nasazení (*publikovat\\\<název_aplikace > .application*) do adresáře nasazení vaší verze (*publish\Application soubory\\ \<název_aplikace > _\<verze >*).
 
 ## <a name="update-and-re-sign-the-application-and-deployment-manifests"></a>Aktualizace a opětovné podepisování manifestů aplikace a nasazení
  Tento postup předpokládá, že jste už provedli změny do souboru manifestu aplikace (*.manifest*), ale, že existují další soubory, které byly aktualizovány. Když jsou aktualizovány soubory, je nutné aktualizovat také-the-hash, který představuje soubor.
 
 #### <a name="to-update-and-re-sign-the-application-and-deployment-manifests-with-mageexe"></a>Aktualizace a opětovné podepisování aplikace a nasazení manifestů s Mage.exe
 
-1.  Otevřít **příkazový řádek sady Visual Studio** okna.
+1. Otevřít **příkazový řádek sady Visual Studio** okna.
 
-2.  Přejděte do složky, která obsahuje soubory manifestu, které chcete podepsat.
+2. Přejděte do složky, která obsahuje soubory manifestu, které chcete podepsat.
 
-3.  Odeberte *.deploy* přípona souboru ze souborů v okně Publikovat výstupní složka.
+3. Odeberte *.deploy* přípona souboru ze souborů v okně Publikovat výstupní složka.
 
-4.  Zadejte následující příkaz k aktualizaci manifestu aplikace se nové hodnoty hash pro aktualizované soubory a podepsání souboru manifestu aplikace. Nahraďte *manifestu* s názvem souboru manifestu a rozšíření. Nahraďte *certifikát* úplnou nebo relativní cestou k souboru certifikátu a nahraďte *heslo* se heslo pro certifikát.
+4. Zadejte následující příkaz k aktualizaci manifestu aplikace se nové hodnoty hash pro aktualizované soubory a podepsání souboru manifestu aplikace. Nahraďte *manifestu* s názvem souboru manifestu a rozšíření. Nahraďte *certifikát* úplnou nebo relativní cestou k souboru certifikátu a nahraďte *heslo* se heslo pro certifikát.
 
     ```cmd
     mage -update ManifestFileName.manifest -CertFile Certificate -Password Password
@@ -94,7 +94,7 @@ Když provedete změny vlastnosti nasazení v manifestu aplikace pro aplikace Wi
     mage -update WpfBrowserApplication1.exe.manifest -CertFile ..\WpfBrowserApplication1_TemporaryKey.pfx
     ```
 
-5.  Zadejte následující příkaz k aktualizaci a podepsat soubor manifestu nasazení, nahraďte zástupné názvy jako v předchozím kroku.
+5. Zadejte následující příkaz k aktualizaci a podepsat soubor manifestu nasazení, nahraďte zástupné názvy jako v předchozím kroku.
 
     ```cmd
     mage -update DeploymentManifest -appmanifest ApplicationManifest -CertFile Certificate -Password Password
@@ -108,9 +108,9 @@ Když provedete změny vlastnosti nasazení v manifestu aplikace pro aplikace Wi
     mage -update WpfBrowserApplication1.xbap -appmanifest WpfBrowserApplication1.exe.manifest -CertFile ..\WpfBrowserApplication1_TemporaryKey.pfx
     ```
 
-6.  Přidat *.deploy* příponu souboru zpět k souborům, s výjimkou souborů manifestů aplikace a nasazení.
+6. Přidat *.deploy* příponu souboru zpět k souborům, s výjimkou souborů manifestů aplikace a nasazení.
 
-7.  Volitelně můžete zkopírovat hlavní manifest nasazení (*publikovat\\\<název_aplikace > .application*) do adresáře nasazení vaší verze (*publish\Application soubory\\ \<název_aplikace > _\<verze >*).
+7. Volitelně můžete zkopírovat hlavní manifest nasazení (*publikovat\\\<název_aplikace > .application*) do adresáře nasazení vaší verze (*publish\Application soubory\\ \<název_aplikace > _\<verze >*).
 
 ## <a name="see-also"></a>Viz také:
 - [Zabezpečení aplikací ClickOnce](../deployment/securing-clickonce-applications.md)

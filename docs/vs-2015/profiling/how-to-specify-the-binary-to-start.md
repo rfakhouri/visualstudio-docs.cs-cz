@@ -15,12 +15,12 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 45b5e3ba98c526ffea1ab63f58ef9193a3eaae75
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 919e84393cf4aef929a504aadbefe905afe24bfb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54759890"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60098425"
 ---
 # <a name="how-to-specify-the-binary-to-start"></a>Postupy: Určení binárního souboru ke spuštění
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,23 +29,23 @@ Pro binární soubory profilu například knihovny DLL, je třeba zadat informac
   
  **Požadavky**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
 ### <a name="to-specify-the-executable-to-start"></a>K určení spustitelného souboru spusťte  
   
-1.  V **prohlížeč výkonu**, klikněte pravým tlačítkem na cílový binární soubor a potom klikněte na tlačítko **vlastnosti**.  
+1. V **prohlížeč výkonu**, klikněte pravým tlačítkem na cílový binární soubor a potom klikněte na tlačítko **vlastnosti**.  
   
-2.  V **stránky vlastností** dialogové okno, klikněte na tlačítko **spuštění** vlastnosti.  
+2. V **stránky vlastností** dialogové okno, klikněte na tlačítko **spuštění** vlastnosti.  
   
-3.  Vyberte **přepsat vlastnosti projektu** zaškrtávací políčko.  
+3. Vyberte **přepsat vlastnosti projektu** zaškrtávací políčko.  
   
-4.  V **spustitelný soubor ke spuštění** textové pole, zadejte umístění souboru.  
+4. V **spustitelný soubor ke spuštění** textové pole, zadejte umístění souboru.  
   
-5.  V **argumenty** textové pole, zadejte argumenty, které jsou vyžadovány pro spuštění aplikace.  
+5. V **argumenty** textové pole, zadejte argumenty, které jsou vyžadovány pro spuštění aplikace.  
   
-6.  V **pracovní adresář** textové pole, zadejte umístění adresáře.  
+6. V **pracovní adresář** textové pole, zadejte umístění adresáře.  
   
-7.  Klikněte na **OK**.  
+7. Klikněte na **OK**.  
   
 ## <a name="see-also"></a>Viz také  
  [Konfigurace výkonnostních relací](../profiling/configuring-performance-sessions.md)

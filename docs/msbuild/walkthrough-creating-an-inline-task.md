@@ -1,5 +1,5 @@
 ---
-title: 'Průvodce: Vytvoření vložené úlohy | Dokumentace Microsoftu'
+title: 'Návod: Vytvoření vložené úlohy | Dokumentace Microsoftu'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,48 +11,48 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cad3d554ff62c3d9a3d295efbf10fde403176b94
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 967727fce010c38e2ef44a0b7e73ec10b257cce0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56597264"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096228"
 ---
-# <a name="walkthrough-create-an-inline-task"></a>Průvodce: Vytvoření vložené úlohy
+# <a name="walkthrough-create-an-inline-task"></a>Návod: Vytvoření vložené úlohy
 Úlohy nástroje MSBuild se obvykle vytvářejí kompilováním třídy, která implementuje <xref:Microsoft.Build.Framework.ITask> rozhraní. Od verze rozhraní .NET Framework verze 4, můžete vytvořit úlohy vložené v souboru projektu. Není nutné vytvořit samostatné sestavení pro hostování úkolu. Další informace najdete v tématu [vložené úlohy](../msbuild/msbuild-inline-tasks.md).
 
  Tento návod ukazuje, jak vytvářet a spouštět tyto vložené úlohy:
 
--   Úloha, která nemá žádné vstupní nebo výstupní parametry.
+- Úloha, která nemá žádné vstupní nebo výstupní parametry.
 
--   Úloha, která má jeden vstupní parametr a žádné výstupní parametry.
+- Úloha, která má jeden vstupní parametr a žádné výstupní parametry.
 
--   Úloha, která má dva vstupní parametry a jednu výstupní parametr, který vrátí vlastnost MSBuild.
+- Úloha, která má dva vstupní parametry a jednu výstupní parametr, který vrátí vlastnost MSBuild.
 
--   Úloha, která má dva vstupní parametry a jednu výstupní parametr, který vrací položky nástroje MSBuild.
+- Úloha, která má dva vstupní parametry a jednu výstupní parametr, který vrací položky nástroje MSBuild.
 
 Vytvoření a spuštění úloh, pomocí sady Visual Studio a **Visual Studio okno příkazového řádku**, následujícím způsobem:
 
-1.   Vytvoření souboru projektu MSBuild pomocí sady Visual Studio.
+1. Vytvoření souboru projektu MSBuild pomocí sady Visual Studio.
 
-2.   Upravte soubor projektu v sadě Visual Studio k vytvoření vložené úlohy.
+2. Upravte soubor projektu v sadě Visual Studio k vytvoření vložené úlohy.
 
-3.   Použití **okno příkazového řádku** se projekt sestavil a podívejte se na výsledky.
+3. Použití **okno příkazového řádku** se projekt sestavil a podívejte se na výsledky.
 
 ## <a name="create-and-modify-an-msbuild-project"></a>Vytvoření a úprava projektu MSBuild
  Systém projektu sady Visual Studio je založen na MSBuild. Proto můžete vytvořit soubor projektu sestavení s použitím sady Visual Studio. V této části vytvoříte soubor projektu Visual C#. (Místo toho je můžete vytvořit soubor projektu jazyka Visual Basic. V rámci tohoto kurzu rozdíl mezi dvěma projektu soubory je menší.)
 
 #### <a name="to-create-and-modify-a-project-file"></a>K vytvoření a úprava souboru projektu
 
-1.  V sadě Visual Studio na **souboru** nabídky, klikněte na tlačítko **nový** a potom klikněte na tlačítko **projektu**.
+1. V sadě Visual Studio na **souboru** nabídky, klikněte na tlačítko **nový** a potom klikněte na tlačítko **projektu**.
 
-2.  V **nový projekt** dialogové okno, vyberte **Visual C#** typ projektu a pak vyberte **formulářová aplikace Windows** šablony. V **název** zadejte `InlineTasks`. Zadejte **umístění** pro řešení, například *D:\\*. Ujistěte se, že **vytvořit adresář pro řešení** je vybrána, **přidat do správy zdrojových kódů** zaškrtnuté není, a **název řešení** je **InlineTasks**.
+2. V **nový projekt** dialogové okno, vyberte **Visual C#** typ projektu a pak vyberte **formulářová aplikace Windows** šablony. V **název** zadejte `InlineTasks`. Zadejte **umístění** pro řešení, například *D:\\*. Ujistěte se, že **vytvořit adresář pro řešení** je vybrána, **přidat do správy zdrojových kódů** zaškrtnuté není, a **název řešení** je **InlineTasks**.
 
-3.  Klikněte na tlačítko **OK** k vytvoření souboru projektu.
+3. Klikněte na tlačítko **OK** k vytvoření souboru projektu.
 
-3.  V **Průzkumníka řešení**, klikněte pravým tlačítkem myši **InlineTasks** uzel projektu a pak klikněte na tlačítko **uvolnit projekt**.
+3. V **Průzkumníka řešení**, klikněte pravým tlačítkem myši **InlineTasks** uzel projektu a pak klikněte na tlačítko **uvolnit projekt**.
 
-4.  Znovu klikněte pravým tlačítkem na uzel projektu a pak klikněte na tlačítko **upravit InlineTasks.csproj**.
+4. Znovu klikněte pravým tlačítkem na uzel projektu a pak klikněte na tlačítko **upravit InlineTasks.csproj**.
 
      Soubor projektu se zobrazí v editoru kódu.
 

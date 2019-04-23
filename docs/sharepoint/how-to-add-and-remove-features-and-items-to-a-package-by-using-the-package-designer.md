@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f76abaaa1210320c14175be2bb47828b7bd06aa9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 654773f5a5e46960f8c015cc6f731e16332fcdd7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56608094"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094317"
 ---
 # <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer"></a>Postupy: Přidání nebo odebrání funkcí a položek z balíku pomocí návrháře balíčků
   Když vytvoříte řešení služby SharePoint, Visual Studio přidá výchozí funkce služby SharePoint do balíčku v řešení. Před posledním nasazení můžete přidávat a odebírat položky Sharepointového projektu a funkce, které chcete upravit balíček Sharepointu.
@@ -52,7 +52,7 @@ ms.locfileid: "56608094"
 
 #### <a name="to-remove-sharepoint-features-with-the-package-designer"></a>Chcete-li odebrat funkce služby SharePoint pomocí návrháře balíčků
 
-1.  V **položek v balíčku** seznamu, zvolte položku, kterou chcete odebrat a klikněte na tlačítko **odebrat** (<) tlačítko, nebo zvolte **odebrat všechny** tlačítko (<<) k odebrání všechny položky.
+1. V **položek v balíčku** seznamu, zvolte položku, kterou chcete odebrat a klikněte na tlačítko **odebrat** (<) tlačítko, nebo zvolte **odebrat všechny** tlačítko (<<) k odebrání všechny položky.
 
      Položky služby SharePoint se zobrazí v **položky v řešení** seznamu.
 

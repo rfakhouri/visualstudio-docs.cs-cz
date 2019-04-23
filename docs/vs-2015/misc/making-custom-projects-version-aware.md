@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.assetid: 5233d3ff-6e89-4401-b449-51b4686becca
 caps.latest.revision: 33
 manager: jillfra
-ms.openlocfilehash: 5b2cfb51ad13ed28e1f021b19b52153bf4c09f62
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3118ce72cd75baaf15fc66eedc5f2cd48c6f43d6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54768042"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096592"
 ---
 # <a name="making-custom-projects-version-aware"></a>Vytváření vlastních projektů s ohledem na verzi
 Ve vaší vlastní projektový systém můžete povolit projektech tohoto typu se načíst ve více verzích sady Visual Studio. Můžete také zabránit projektech tohoto typu načítání v dřívější verzi sady Visual Studio. Můžete také povolit tento projekt v případě, že projekt vyžaduje opravu, převod nebo vyřazení identifikovat na novější verzi.  
@@ -24,17 +24,17 @@ Ve vaší vlastní projektový systém můžete povolit projektech tohoto typu s
   
  Autor bude systém projektu implementujete `UpgradeProject_CheckOnly` (z `IVsProjectUpgradeViaFactory4` rozhraní) poskytovat uživatelům systému projektu kontrola upgradu. Když uživatelé otevřou projektu, tato metoda je volána k určení, zda projekt musíte opravit předtím, než je načten. Jsou uvedené možné požadavky na upgrade na `VSPUVF_REPAIRFLAGS`, a zahrnují tyto možnosti:  
   
-1.  `SPUVF_PROJECT_NOREPAIR`: Vyžaduje žádná oprava.  
+1. `SPUVF_PROJECT_NOREPAIR`: Vyžaduje žádná oprava.  
   
-2.  `VSPUVF_PROJECT_SAFEREPAIR`: Díky projektu kompatibilní s dřívější verzí bez problémů, které bude pravděpodobně dojde v předchozích verzích produktu.  
+2. `VSPUVF_PROJECT_SAFEREPAIR`: Díky projektu kompatibilní s dřívější verzí bez problémů, které bude pravděpodobně dojde v předchozích verzích produktu.  
   
-3.  `VSPUVF_PROJECT_UNSAFEREPAIR`: Projekt je zpětně kompatibilní, ale může představovat riziko problémy, které se pravděpodobně setkali s předchozími verzemi tohoto produktu. Například projekt nebudou kompatibilní, pokud závisí na různé verze sady SDK.  
+3. `VSPUVF_PROJECT_UNSAFEREPAIR`: Projekt je zpětně kompatibilní, ale může představovat riziko problémy, které se pravděpodobně setkali s předchozími verzemi tohoto produktu. Například projekt nebudou kompatibilní, pokud závisí na různé verze sady SDK.  
   
-4.  `VSPUVF_PROJECT_ONEWAYUPGRADE`: Vytvoří projekt není kompatibilní s dřívější verzí.  
+4. `VSPUVF_PROJECT_ONEWAYUPGRADE`: Vytvoří projekt není kompatibilní s dřívější verzí.  
   
-5.  `VSPUVF_PROJECT_INCOMPATIBLE`: Označuje, že aktuální verze nepodporuje tento projekt.  
+5. `VSPUVF_PROJECT_INCOMPATIBLE`: Označuje, že aktuální verze nepodporuje tento projekt.  
   
-6.  `VSPUVF_PROJECT_DEPRECATED`: Označuje, že tento projekt už není podporovaná.  
+6. `VSPUVF_PROJECT_DEPRECATED`: Označuje, že tento projekt už není podporovaná.  
   
 > [!NOTE]
 >  Aby nedocházelo k záměně, není kombinovat upgradu příznaky, při jejich nastavení. Například nejednoznačný stav upgradu, jako Nevytvářejte `VSPUVF_PROJECT_SAFEREPAIR | VSPUVF_PROJECT_DEPRECATED`.  
@@ -49,18 +49,18 @@ Ve vaší vlastní projektový systém můžete povolit projektech tohoto typu s
   
  Tady je příklad pomohou shrnout kompatibility uživatelské prostředí. Pokud projekt byl vytvořen v dřívější verzi a aktuální verze Určuje, že upgrade je vyžadována, Visual Studio zobrazí dialogové okno požádat uživatele o souhlas provést změny. Pokud uživatel souhlasí, projekt upravit a pak načíst. Pokud toto řešení je pak zavřít a znovu otevřít ve starší verzi, jednoho-way-upgradovat projekt se nekompatibilní a nelze načíst. Pokud projekt měl pouze požadované opravy (ne upgradu), se nadále otevře opravený projektu v obou verzích.  
   
-##  <a name="BKMK_Incompat"></a> Označí projekt jako nekompatibilní  
+## <a name="BKMK_Incompat"></a> Označí projekt jako nekompatibilní  
  Můžete označit jako kompatibilní s dřívějšími verzemi sady Visual Studio projekt.  Předpokládejme například, že vytvoříte projekt, který používá funkce rozhraní .NET Framework 4.5. Protože tento projekt nejde sestavit [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)], lze ji označit jako kompatibilní, aby se zabránilo verze v pokusu o načtení.  
   
  Komponenta, která přidá funkci nekompatibilní zodpovídá za označí projekt jako nekompatibilní. Komponenta musí mít přístup k <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> rozhraní, které představuje projekty, které vás zajímají.  
   
 #### <a name="to-mark-a-project-as-incompatible"></a>Označit jako kompatibilní projektu  
   
-1.  V komponentě, získat `IVsAppCompat` rozhraní z globální služby SVsSolution.  
+1. V komponentě, získat `IVsAppCompat` rozhraní z globální služby SVsSolution.  
   
      Další informace naleznete v tématu <xref:Microsoft.VisualStudio.Shell.Interop.SVsSolution>.  
   
-2.  V komponentě, volání `IVsAppCompat.AskForUserConsentToBreakAssetCompat`a předat jí pole `IVsHierarchy` rozhraní, které představují projekty, které vás zajímají.  
+2. V komponentě, volání `IVsAppCompat.AskForUserConsentToBreakAssetCompat`a předat jí pole `IVsHierarchy` rozhraní, které představují projekty, které vás zajímají.  
   
      Tato metoda má následující podpis:  
   
@@ -74,9 +74,9 @@ Ve vaší vlastní projektový systém můžete povolit projektech tohoto typu s
     > [!WARNING]
     >  V nejběžnějších scénářů `IVsHierarchy` pole bude obsahovat pouze jednu položku.  
   
-3.  Pokud `AskForUserConsentToBreakAssetCompat` vrátí `S_OK`, součást netelefonuje, ani přijímá změny, které porušit kompatibilitu.  
+3. Pokud `AskForUserConsentToBreakAssetCompat` vrátí `S_OK`, součást netelefonuje, ani přijímá změny, které porušit kompatibilitu.  
   
-4.  V komponentě, zavolejte `IVsAppCompat.BreakAssetCompatibility` metodu pro každý projekt, který chcete označit jako kompatibilní. Hodnotu parametru lze nastavit komponentu `lpszMinimumVersion` na konkrétní minimální verzi namísto toho, aby aplikace Visual Studio vyhledat řetězec s aktuální verzí v registru. Tento přístup minimalizuje se riziko zneužití neúmyslně nastavení vyšší hodnotu v budoucnosti, podle toho, co je v registru v daném čase komponenty. Pokud byla nastavena tato hodnota vyšší, Visual Studio nelze otevřít projekt.  
+4. V komponentě, zavolejte `IVsAppCompat.BreakAssetCompatibility` metodu pro každý projekt, který chcete označit jako kompatibilní. Hodnotu parametru lze nastavit komponentu `lpszMinimumVersion` na konkrétní minimální verzi namísto toho, aby aplikace Visual Studio vyhledat řetězec s aktuální verzí v registru. Tento přístup minimalizuje se riziko zneužití neúmyslně nastavení vyšší hodnotu v budoucnosti, podle toho, co je v registru v daném čase komponenty. Pokud byla nastavena tato hodnota vyšší, Visual Studio nelze otevřít projekt.  
   
      Tato metoda má následující podpis:  
   
@@ -133,21 +133,21 @@ IVsProjectUpgradeViaFactory::UpgradeProject_CheckOnly(
   
  Například pokud `UpgradeProject_CheckOnly` a `CreateProject` metody, které jsou určeny pro [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] s SP1 projektový systém zkontrolujte soubor projektu a zjistíte, že `<MinimumVisualStudioVersion>` vlastnost sestavení je "11.0", Visual Studio 2010 s aktualizací SP1 nebudou načtení projektu. Kromě toho **řešení Navigátor** by označoval, že projekt je "nekompatibilní" a nebude načten.  
   
-##  <a name="BKMK_UpgradeLogger"></a> Upgrade protokolovací nástroj  
+## <a name="BKMK_UpgradeLogger"></a> Upgrade protokolovací nástroj  
  Volání `IVsProjectUpgradeViaFactory::UpgradeProject` obsahuje `IVsUpgradeLogger` protokolovacího nástroje, které systémů projektů a typů by měl použít poskytnout podrobné trasování upgradu pro řešení potíží. Pokud je přihlášení upozornění nebo chybu, sada Visual Studio zobrazí zprávu o upgradu.  
   
  Při zápisu do upgradu protokolovač, vezměte v úvahu následující pokyny:  
   
--   Visual Studio bude volat vyprázdnění po dokončení upgradu všech projektů. Nevolejte ji v systému projektu.  
+- Visual Studio bude volat vyprázdnění po dokončení upgradu všech projektů. Nevolejte ji v systému projektu.  
   
--   LogMessage funkce má následující hodnoty parametru ERRORLEVEL při:  
+- LogMessage funkce má následující hodnoty parametru ERRORLEVEL při:  
   
-    -   pro všechny informace, které byste chtěli trasování je 0.  
+    - pro všechny informace, které byste chtěli trasování je 0.  
   
-    -   1 je pro upozornění.  
+    - 1 je pro upozornění.  
   
-    -   2 je pro chybu  
+    - 2 je pro chybu  
   
-    -   3 je pro formátování sestav. Při upgradu projektu protokolu slovo "Převedený" jednou a lokalizaci slovo.  
+    - 3 je pro formátování sestav. Při upgradu projektu protokolu slovo "Převedený" jednou a lokalizaci slovo.  
   
--   Pokud projekt nevyžaduje žádné opravy nebo upgrade, Visual Studio vygeneruje soubor protokolu pouze v případě, že systém projektu měl protokoluje upozornění nebo chybu během UpgradeProject_CheckOnly nebo UpgradeProjectFlavor_CheckOnly metody.
+- Pokud projekt nevyžaduje žádné opravy nebo upgrade, Visual Studio vygeneruje soubor protokolu pouze v případě, že systém projektu měl protokoluje upozornění nebo chybu během UpgradeProject_CheckOnly nebo UpgradeProjectFlavor_CheckOnly metody.

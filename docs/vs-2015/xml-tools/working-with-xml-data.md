@@ -9,12 +9,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7ce412da98d05d70864a6932021912a6f03f6a7b
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 536e3a2aa6254004fb34eb243583184e5ab0279e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59662969"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092172"
 ---
 # <a name="working-with-xml-data"></a>Práce s daty XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,17 +26,17 @@ XML a jeho souvisejících technologiích hrát velké roli ve způsobu zpracov�
   
  Další funkce zahrnují:  
   
--   Podporu fragment kódu jazyka XML, včetně generované schématu fragmentů kódu.  
+- Podporu fragment kódu jazyka XML, včetně generované schématu fragmentů kódu.  
   
--   Zdokumentujte sbalování tak, aby prvky můžete rozbalit a sbalit.  
+- Zdokumentujte sbalování tak, aby prvky můžete rozbalit a sbalit.  
   
--   Možnost provedení transformace XSLT a zobrazit výsledky jako text, XML nebo HTML.  
+- Možnost provedení transformace XSLT a zobrazit výsledky jako text, XML nebo HTML.  
   
--   Možnost generování schémat schématu XML definice jazyk (XSD) z instance dokumentu XML.  
+- Možnost generování schémat schématu XML definice jazyk (XSD) z instance dokumentu XML.  
   
--   Podpora pro úpravy šablon stylů XSLT, včetně podporu technologie IntelliSense.  
+- Podpora pro úpravy šablon stylů XSLT, včetně podporu technologie IntelliSense.  
   
--   Průzkumník schémat XML  
+- Průzkumník schémat XML  
   
 ## <a name="xml-schema-designer"></a>Návrhář schématu XML  
  Návrhář schémat XML je integrovaná s Microsoft Visual Studio 2010 a Editor souborů XML umožňují pracovat s schémat schématu XML definice jazyk (XSD).  

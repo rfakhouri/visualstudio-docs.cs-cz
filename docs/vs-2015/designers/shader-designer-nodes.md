@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 659ac2dadd5500ef3cd4a4a3e7c3b36b91e9cc49
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: cde6b6a44649f3a9e100a0ff10e3dda21f2d6f3c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54793261"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096280"
 ---
 # <a name="shader-designer-nodes"></a>Uzly návrháře shaderů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,15 +30,15 @@ ms.locfileid: "54793261"
 ### <a name="promotion-of-inputs"></a>Povýšení vstupy  
  Protože Shader Designer musí nakonec HLSL zdrojový kód tak, aby efekt je možné ve hře nebo aplikaci, podléhají uzlech návrháře shaderu propagace typu pravidla, která používá HLSL. Vzhledem k tomu, že grafický hardware primárně pracuje hodnoty s plovoucí desetinnou čárkou, zadejte povýšení mezi různými typy – třeba z `int` k `float`, nebo z `float` k `double`– neobvyklé. Místo toho protože hardwarovou akceleraci používá stejnou operaci i u více kusů informace najednou, jiný druh propagační akce může dojít, ve kterém je tak, aby odpovídala velikosti nejdelší vstupní posunut kratší počet vstupů. Jak je posunut závisí na typ vstupu a také na samotný operace:  
   
--   **Pokud je menší typu skalární hodnota, pak:**  
+- **Pokud je menší typu skalární hodnota, pak:**  
   
      Hodnota skalárních se replikují do vektoru, který se rovná velikosti větší vstup. Například skalární vstupní 5.0 stane vektor (5.0, 5.0, 5.0) po třech prvcích vektoru, bez ohledu na to, co je operace největší vstupu operace.  
   
--   **Pokud je menší typ vektoru a je operace násobení (\*, /, % a tak dále), pak:**  
+- **Pokud je menší typ vektoru a je operace násobení (\*, /, % a tak dále), pak:**  
   
      Hodnota vektoru se zkopíruje do přední elementů vektoru, který se rovná velikosti větší vstup a koncové prvky jsou nastaveny na 1.0. Například zadání vektorové (5.0, 5.0) bude vektor (5.0, 5.0, 1.0; 1,0) Pokud se násobí hodnotou vektor čtyřech prvcích. Toto nastavení zachovává třetí a čtvrtá prvky výstupu pomocí násobení identity 1.0.  
   
--   **Pokud menší typ vektoru a je operace sčítání (+,-, a tak dále), pak:**  
+- **Pokud menší typ vektoru a je operace sčítání (+,-, a tak dále), pak:**  
   
      Hodnota vektoru je zkopírována do přední prvky vektoru, který se rovná velikosti větší vstup a koncové prvky jsou nastaveny na 0,0. Například zadání vektorové (5.0, 5.0) bude vektor (5.0, 5.0, 0.0, 0.0) při přidání na čtyřech prvcích vektoru. Toto nastavení zachovává třetí a čtvrtá prvky výstupu pomocí additive identity 0,0.  
   

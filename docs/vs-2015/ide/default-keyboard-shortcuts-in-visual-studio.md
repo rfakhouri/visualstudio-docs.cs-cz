@@ -15,12 +15,12 @@ caps.latest.revision: 59
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 79c7e4fd86223938a1d38436eb767c86b2cf583d
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 2a0aa54cd3fa6456d2a41e5418c497b284d01547
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54760910"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095448"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Výchozí klávesové zkratky v sadě Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,22 +58,22 @@ Výběrem příslušné klávesové zkratky máte v sadě Visual Studio snazší
 |[Zobrazení návrhu editoru HTML](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_HTMLeditorDesign)|[Návrhář sestav](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_ReportDesigner)|[Editor akcelerátorů VC](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_vcaccelerator)|[Editor (textový) XML](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_xmlTextEditor)|
 |[Zobrazení zdroje editoru HTML](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_HTMLeditorSource)|[Sekvenční Diagram](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_SequenceDiagram)|[Editor dialogových oken VC](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_vcdialogeditor)|[Návrhář schémat XML](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_xmlSchemaDesigner)|
 
-##  <a name="bkmk_global"></a> Globální
+## <a name="bkmk_global"></a> Globální
 
-###  <a name="bkmk_analyze"></a> Analýza
+### <a name="bkmk_analyze"></a> Analýza
 
 |Příkazy|Klávesové zkratky|
 |--------------|------------------------|
 |Analyze.NavigateBackward|Shift+Alt+3|
 |Analyze.NavigateForward|Shift+Alt+4|
 
-###  <a name="bkmk_architecture"></a> Architektura
+### <a name="bkmk_architecture"></a> Architektura
 
 |Příkazy|Klávesové zkratky|
 |--------------|------------------------|
 |Architecture.NewDiagram|CTRL +\\, Ctrl + N|
 
-###  <a name="bkmk_build"></a> Sestavení
+### <a name="bkmk_build"></a> Sestavení
 
 |Příkazy|Klávesové zkratky|
 |--------------|------------------------|
@@ -82,13 +82,13 @@ Výběrem příslušné klávesové zkratky máte v sadě Visual Studio snazší
 |Build.Compile|Ctrl+F7|
 |Build.RunCodeAnalysisonSolution|Alt+F11|
 
-###  <a name="bkmk_classview"></a> Zobrazení tříd – kontextové nabídky
+### <a name="bkmk_classview"></a> Zobrazení tříd – kontextové nabídky
 
 |Příkazy|Klávesové zkratky|
 |--------------|------------------------|
 |ClassViewContextMenus.ClassViewMultiselectProjectreferencesItems.Properties|Alt+Enter|
 
-###  <a name="bkmk_debug"></a> Ladění
+### <a name="bkmk_debug"></a> Ladění
 
 |Příkazy|Klávesové zkratky|
 |--------------|------------------------|
@@ -156,7 +156,7 @@ Výběrem příslušné klávesové zkratky máte v sadě Visual Studio snazší
 |Debug.Watch3|Ctrl + Alt + W, 3|
 |Debug.Watch4|Ctrl + Alt + W, 4|
 
-###  <a name="bkmk_debugger"></a> Kontextové nabídky ladicího programu
+### <a name="bkmk_debugger"></a> Kontextové nabídky ladicího programu
 
 |Příkazy|Klávesové zkratky|
 |--------------|------------------------|
@@ -164,13 +164,13 @@ Výběrem příslušné klávesové zkratky máte v sadě Visual Studio snazší
 |DebuggerContextMenus.BreakpointsWindow.GoToDisassembly|Alt+F9, A|
 |DebuggerContextMenus.BreakpointsWindow.GoToSourceCode|Alt+F9, S|
 
-###  <a name="bkmk_diagnostics"></a> Centrum diagnostiky
+### <a name="bkmk_diagnostics"></a> Centrum diagnostiky
 
 |Příkaz|Klávesová zkratka|
 |-------------|-----------------------|
 |DiagnosticsHub.StopCollection|Ctrl+Alt+F2|
 
-###  <a name="bkmk_edit"></a> Upravit
+### <a name="bkmk_edit"></a> Upravit
 
 |Příkazy||
 |--------------|-|
@@ -229,7 +229,7 @@ Výběrem příslušné klávesové zkratky máte v sadě Visual Studio snazší
 |Edit.SurroundWith|Ctrl+K, Ctrl+S|
 |Edit.Undo|Ctrl+Z<br /><br /> or<br /><br /> Alt+Backspace|
 
-###  <a name="bkmk_editorContext"></a> Kontextové nabídky editoru
+### <a name="bkmk_editorContext"></a> Kontextové nabídky editoru
 
 |Příkazy|Klávesové zkratky|
 |--------------|------------------------|
@@ -240,7 +240,7 @@ Výběrem příslušné klávesové zkratky máte v sadě Visual Studio snazší
 |EditorContextMenus.CodeWindow.ToggleHeaderCodeFile|Ctrl+K, Ctrl+O|
 |EditorContextMenus.CodeWindow.ViewCallHierarchy|Ctrl+K, Ctrl+T<br /><br /> or<br /><br /> Ctrl+K, T|
 
-###  <a name="bkmk_file"></a> Soubor
+### <a name="bkmk_file"></a> Soubor
 
 |Příkazy|Klávesové zkratky|
 |--------------|------------------------|
@@ -256,7 +256,7 @@ Výběrem příslušné klávesové zkratky máte v sadě Visual Studio snazší
 |File.SaveSelectedItems|Ctrl+S|
 |File.ViewinBrowser|Ctrl+Shift+W|
 
-###  <a name="bkmk_help"></a> Pomoc
+### <a name="bkmk_help"></a> Pomoc
 
 |Příkazy|Klávesové zkratky|
 |--------------|------------------------|
@@ -265,19 +265,19 @@ Výběrem příslušné klávesové zkratky máte v sadě Visual Studio snazší
 |Help.ViewHelp|Ctrl+F1|
 |Help.WindowHelp|Shift+F1|
 
-###  <a name="bkmk_loadtest"></a> Zátěžový Test
+### <a name="bkmk_loadtest"></a> Zátěžový Test
 
 |Příkaz|Klávesová zkratka|
 |-------------|-----------------------|
 |LoadTest.JumpToCounterPane|Ctrl+R, Q|
 
-###  <a name="bkmk_otherContext"></a> Ostatní kontextové nabídky
+### <a name="bkmk_otherContext"></a> Ostatní kontextové nabídky
 
 |Příkaz|Klávesová zkratka|
 |-------------|-----------------------|
 |OtherContextMenus.MicrosoftDataEntityDesignContext.AddNewDiagram|Insert|
 
-###  <a name="bkmk_project"></a> Projekt
+### <a name="bkmk_project"></a> Projekt
 
 |Příkazy|Klávesové zkratky|
 |--------------|------------------------|
@@ -289,14 +289,14 @@ Výběrem příslušné klávesové zkratky máte v sadě Visual Studio snazší
 |Project.Publishselectedfiles|Alt+;, Alt+P|
 |Project.Replaceselectedfilesfromserver|Alt+;, Alt+R|
 
-###  <a name="bkmk_projectContext"></a> Kontextové nabídky řešení a projektu
+### <a name="bkmk_projectContext"></a> Kontextové nabídky řešení a projektu
 
 |Příkazy|Klávesové zkratky|
 |--------------|------------------------|
 |ProjectandSolutionContextMenus.Item.MoveDown|Alt + šipka dolů|
 |ProjectandSolutionContextMenus.Item.MoveUp|Alt + šipka nahoru|
 
-###  <a name="bkmk_refactor"></a> Refaktoring
+### <a name="bkmk_refactor"></a> Refaktoring
 
 |Příkazy|Klávesové zkratky|
 |--------------|------------------------|
@@ -307,7 +307,7 @@ Výběrem příslušné klávesové zkratky máte v sadě Visual Studio snazší
 |Refactor.Rename|Ctrl+R, Ctrl+R|
 |Refactor.ReorderParameters|Ctrl+R, Ctrl+O|
 
-###  <a name="bkmk_solutionexplorerGLOBAL"></a> Průzkumník řešení
+### <a name="bkmk_solutionexplorerGLOBAL"></a> Průzkumník řešení
 
 |Příkazy|Klávesové zkratky|
 |--------------|------------------------|
@@ -315,7 +315,7 @@ Výběrem příslušné klávesové zkratky máte v sadě Visual Studio snazší
 |SolutionExplorer.PendingChangesFilter|Ctrl+[, P<br /><br /> or<br /><br /> Ctrl+[, Ctrl+P|
 |SolutionExplorer.SyncWithActiveDocument|Ctrl+[, S<br /><br /> or<br /><br /> Ctrl+[, Ctrl+S|
 
-###  <a name="bkmk_team"></a> Tým
+### <a name="bkmk_team"></a> Tým
 
 |Příkazy|Klávesové zkratky|
 |--------------|------------------------|
@@ -324,7 +324,7 @@ Výběrem příslušné klávesové zkratky máte v sadě Visual Studio snazší
 |Team.Git.GoToGitCommits|Ctrl+0, Ctrl+O<br /><br /> or<br /><br /> Ctrl+0, O|
 |Team.TeamExplorerSearch|Ctrl+'|
 
-###  <a name="bkmk_TFcontext"></a> Kontextové nabídky Team Foundation
+### <a name="bkmk_TFcontext"></a> Kontextové nabídky Team Foundation
 
 |Příkazy|Klávesové zkratky|
 |--------------|------------------------|
@@ -339,14 +339,14 @@ Výběrem příslušné klávesové zkratky máte v sadě Visual Studio snazší
 |TeamFoundationContextMenus.Commands.GoToWebAccess|Ctrl+0, Ctrl+A<br /><br /> or<br /><br /> Ctrl+0, A|
 |TeamFoundationContextMenus.Commands.GoToWorkItems|Ctrl+0, Ctrl+W<br /><br /> or<br /><br /> Ctrl+0, W|
 
-###  <a name="bkmk_test"></a> Test
+### <a name="bkmk_test"></a> Test
 
 |Příkazy|Klávesové zkratky|
 |--------------|------------------------|
 |Test.UseCodedUITestBuilder|CTRL +\\, Ctrl + C|
 |Test.UseExistingActionRecording|CTRL +\\, Ctrl + A|
 
-###  <a name="bkmk_testexplorerGLOBAL"></a> Průzkumník testů
+### <a name="bkmk_testexplorerGLOBAL"></a> Průzkumník testů
 
 |Příkazy|Klávesové zkratky|
 |--------------|------------------------|
@@ -356,7 +356,7 @@ Výběrem příslušné klávesové zkratky máte v sadě Visual Studio snazší
 |TestExplorer.RunAllTests|Ctrl+R, A|
 |TestExplorer.RunAllTestsInContext|Ctrl+R, T|
 
-###  <a name="bkmk_tools"></a> Nástroje
+### <a name="bkmk_tools"></a> Nástroje
 
 |Příkazy|Klávesové zkratky|
 |--------------|------------------------|
@@ -365,7 +365,7 @@ Výběrem příslušné klávesové zkratky máte v sadě Visual Studio snazší
 |Tools.ForceGC|Ctrl+Shift+Alt+F12, Ctrl+Shift+Alt+F12|
 |Tools.GoToCommandLine|Ctrl+/|
 
-###  <a name="bkmk_view"></a> Zobrazení
+### <a name="bkmk_view"></a> Zobrazení
 
 |Příkazy|Klávesové zkratky|
 |--------------|------------------------|
@@ -414,7 +414,7 @@ Výběrem příslušné klávesové zkratky máte v sadě Visual Studio snazší
 |View.ZoomIn|Ctrl+Shift+.|
 |View.ZoomOut|Ctrl+Shift+,|
 
-###  <a name="bkmk_window"></a> Okno
+### <a name="bkmk_window"></a> Okno
 
 |Příkazy|Klávesové zkratky|
 |--------------|------------------------|
@@ -445,14 +445,14 @@ Výběrem příslušné klávesové zkratky máte v sadě Visual Studio snazší
 |Window.SolutionExplorerSearch|Ctrl+;|
 |Window.WindowSearch|Alt+`|
 
-###  <a name="bkmk_windowsazure"></a> Azure
+### <a name="bkmk_windowsazure"></a> Azure
 
 |Příkazy|Klávesové zkratky|
 |--------------|------------------------|
 |WindowsAzure.RetryMobileServiceScriptOperation|Ctrl+Num *, Ctrl+R|
 |WindowsAzure.ShowMobileServiceScriptErrorDetails|Ctrl+Num *, Ctrl+D|
 
-##  <a name="bkmk_ADONET"></a> ADO.NET Entity Data Model Designer
+## <a name="bkmk_ADONET"></a> ADO.NET Entity Data Model Designer
 
 |Příkazy|Klávesové zkratky|
 |--------------|------------------------|
@@ -467,7 +467,7 @@ Výběrem příslušné klávesové zkratky máte v sadě Visual Studio snazší
 |View.EntityDataModelBrowser|Ctrl+1|
 |View.EntityDataModelMappingDetails|Ctrl+2|
 
-##  <a name="bkmk_classDiagram"></a> Diagram tříd
+## <a name="bkmk_classDiagram"></a> Diagram tříd
 
 |Příkazy|Klávesové zkratky|
 |--------------|------------------------|
@@ -479,7 +479,7 @@ Výběrem příslušné klávesové zkratky máte v sadě Visual Studio snazší
 |Edit.RemovefromDiagram|Odstranit|
 |View.ViewCode|Enter|
 
-##  <a name="bkmk_codedUItest"></a> Editor programového testu UI
+## <a name="bkmk_codedUItest"></a> Editor programového testu UI
 
 |Příkazy|Klávesové zkratky|
 |--------------|------------------------|
@@ -490,14 +490,14 @@ Výběrem příslušné klávesové zkratky máte v sadě Visual Studio snazší
 |OtherContextMenus.UITestEditorContextMenu.Movecode|Ctrl+Alt+C|
 |OtherContextMenus.UITestEditorContextMenu.Splitintoanewmethod|Ctrl+Shift+T|
 
-##  <a name="bkmk_dataset"></a> DataSet Editor
+## <a name="bkmk_dataset"></a> DataSet Editor
 
 |Příkazy|Klávesové zkratky|
 |--------------|------------------------|
 |OtherContextMenus.ColumnContext.InsertColumn|Insert|
 |OtherContextMenus.DbTableContext.Add.Column|Ctrl+L|
 
-##  <a name="bkmk_diff"></a> Prohlížeč rozdílů
+## <a name="bkmk_diff"></a> Prohlížeč rozdílů
 
 |||
 |-|-|
@@ -514,7 +514,7 @@ Výběrem příslušné klávesové zkratky máte v sadě Visual Studio snazší
 |EditorContextMenus.CodeWindow.AddComment|Ctrl+Shift+K|
 |EditorContextMenus.CodeWindow.EditLocalFile|Ctrl+Shift+P|
 
-##  <a name="bkmk_DOM"></a> Průzkumník modelu DOM
+## <a name="bkmk_DOM"></a> Průzkumník modelu DOM
 
 |Příkazy|Klávesové zkratky|
 |--------------|------------------------|
@@ -522,13 +522,13 @@ Výběrem příslušné klávesové zkratky máte v sadě Visual Studio snazší
 |DOMExplorer.SelectElement|Ctrl+B|
 |DOMExplorer.ShowLayout|Ctrl+Shift+I|
 
-##  <a name="bkmk_FSharp"></a> F#Interaktivní
+## <a name="bkmk_FSharp"></a> F#Interaktivní
 
 |Příkaz|Klávesová zkratka|
 |-------------|-----------------------|
 |OtherContextMenus.FSIConsoleContext.CancelInteractiveEvaluation|Ctrl+Break|
 
-##  <a name="bkmk_graphDoc"></a> Editor dokumentu grafu
+## <a name="bkmk_graphDoc"></a> Editor dokumentu grafu
 
 |Příkazy|Klávesové zkratky|
 |--------------|------------------------|
@@ -540,7 +540,7 @@ Výběrem příslušné klávesové zkratky máte v sadě Visual Studio snazší
 |ArchitectureContextMenus.DirectedGraphContextMenu.Remove|Odstranit|
 |ArchitectureContextMenus.DirectedGraphContextMenu.Rename|F2|
 
-##  <a name="bkmk_graphicsDebugger"></a> Diagnostika grafiky
+## <a name="bkmk_graphicsDebugger"></a> Diagnostika grafiky
 
 |Příkazy|Klávesové zkratky|
 |--------------|------------------------|
@@ -554,13 +554,13 @@ Výběrem příslušné klávesové zkratky máte v sadě Visual Studio snazší
 |Graphics.ZoomIn|Shift+Alt+=|
 |Graphics.ZoomOut|Shift+Alt+-|
 
-##  <a name="bkmk_HTMLeditor"></a> HTML Editor
+## <a name="bkmk_HTMLeditor"></a> HTML Editor
 
 |Příkaz|Klávesová zkratka|
 |-------------|-----------------------|
 |OtherContextMenus.HTMLContext.GoToController|Ctrl+M, Ctrl+G|
 
-##  <a name="bkmk_HTMLeditorDesign"></a> Zobrazení návrhu editoru HTML
+## <a name="bkmk_HTMLeditorDesign"></a> Zobrazení návrhu editoru HTML
 
 |Příkazy|Klávesové zkratky|
 |--------------|------------------------|
@@ -583,7 +583,7 @@ Výběrem příslušné klávesové zkratky máte v sadě Visual Studio snazší
 |View.ViewMarkup|Shift+F7|
 |Window.PreviousTab|Ctrl+PgUp|
 
-##  <a name="bkmk_HTMLeditorSource"></a> Zobrazení zdroje editoru HTML
+## <a name="bkmk_HTMLeditorSource"></a> Zobrazení zdroje editoru HTML
 
 |Příkazy|Klávesové zkratky|
 |--------------|------------------------|
@@ -593,13 +593,13 @@ Výběrem příslušné klávesové zkratky máte v sadě Visual Studio snazší
 |View.ViewDesigner|Shift+F7|
 |Window.PreviousTab|Ctrl+PgUp|
 
-##  <a name="bkmk_layerDiagram"></a> Diagram vrstvy
+## <a name="bkmk_layerDiagram"></a> Diagram vrstvy
 
 |Příkaz|Klávesová zkratka|
 |-------------|-----------------------|
 |Edit.Delete|Shift+Delete|
 
-##  <a name="bkmk_managedResources"></a> Editor spravovaných prostředků
+## <a name="bkmk_managedResources"></a> Editor spravovaných prostředků
 
 |Příkazy|Klávesové zkratky|
 |--------------|------------------------|
@@ -614,7 +614,7 @@ Výběrem příslušné klávesové zkratky máte v sadě Visual Studio snazší
 |Resources.Other|Ctrl+6|
 |Resources.Strings|Ctrl+1|
 
-##  <a name="bkmk_MergeEditor"></a> Okno Editor slučování
+## <a name="bkmk_MergeEditor"></a> Okno Editor slučování
 
 |Příkazy|Klávesové zkratky|
 |--------------|------------------------|
@@ -622,7 +622,7 @@ Výběrem příslušné klávesové zkratky máte v sadě Visual Studio snazší
 |TeamFoundationContextMenus.MergeContextMenu.SetFocusonResultWindow|Alt+2|
 |TeamFoundationContextMenus.MergeContextMenu.SetFocusonRightWindow|Alt+3|
 
-##  <a name="bkmk_SchemaCompare"></a> Datové nástroje Microsoft SQL Server, porovnání schématu
+## <a name="bkmk_SchemaCompare"></a> Datové nástroje Microsoft SQL Server, porovnání schématu
 
 |Příkazy|Klávesové zkratky|
 |--------------|------------------------|
@@ -633,7 +633,7 @@ Výběrem příslušné klávesové zkratky máte v sadě Visual Studio snazší
 |SQL.SSDTSchemaCompareStop|Alt+Break|
 |SQL.SSDTSchemaCompareWriteUpdates|Shift+Alt+U|
 
-##  <a name="bkmk_TableDesigner"></a> Microsoft SQL Server Data Tools, Návrhář tabulky
+## <a name="bkmk_TableDesigner"></a> Microsoft SQL Server Data Tools, Návrhář tabulky
 
 |Příkazy|Klávesové zkratky|
 |--------------|------------------------|
@@ -644,7 +644,7 @@ Výběrem příslušné klávesové zkratky máte v sadě Visual Studio snazší
 |SQL.Rename|F2<br /><br /> or<br /><br /> Ctrl+R, R<br /><br /> or<br /><br /> Ctrl+R, Ctrl+R|
 |ViewFileInScriptPanel|Shift+Alt+PgDn|
 
-##  <a name="bkmk_TSQLeditor"></a> Datové nástroje Microsoft SQL Server, Editor T-SQL
+## <a name="bkmk_TSQLeditor"></a> Datové nástroje Microsoft SQL Server, Editor T-SQL
 
 |Příkazy|Klávesové zkratky|
 |--------------|------------------------|
@@ -665,7 +665,7 @@ Výběrem příslušné klávesové zkratky máte v sadě Visual Studio snazší
 |TSqlEditorCloneQuery|Ctrl+Alt+N|
 |TSqlEditorDatabaseCombo|Shift+Alt+PgDn|
 
-##  <a name="bkmk_linkfix"></a> Datové nástroje Microsoft SQL Server, Editor T-SQL PDW
+## <a name="bkmk_linkfix"></a> Datové nástroje Microsoft SQL Server, Editor T-SQL PDW
 
 |Příkazy|Klávesové zkratky|
 |--------------|------------------------|
@@ -680,13 +680,13 @@ Výběrem příslušné klávesové zkratky máte v sadě Visual Studio snazší
 |TSqlEditorCloneQuery|Ctrl+Alt+N|
 |TSqlEditorDatabaseCombo|Shift+Alt+PgDn|
 
-##  <a name="bkmk_PageInspector"></a> Nástroj Page Inspector
+## <a name="bkmk_PageInspector"></a> Nástroj Page Inspector
 
 |Příkaz|Klávesová zkratka|
 |-------------|-----------------------|
 |PageInspector.Minimize|F12|
 
-##  <a name="bkmk_QueryDesigner"></a> Návrhář dotazu
+## <a name="bkmk_QueryDesigner"></a> Návrhář dotazu
 
 |Příkazy|Klávesové zkratky|
 |--------------|------------------------|
@@ -699,7 +699,7 @@ Výběrem příslušné klávesové zkratky máte v sadě Visual Studio snazší
 |QueryDesigner.Results|Ctrl+4|
 |QueryDesigner.SQL|Ctrl+3|
 
-##  <a name="bkmk_QueryResults"></a> Výsledky dotazu
+## <a name="bkmk_QueryResults"></a> Výsledky dotazu
 
 |Příkazy|Klávesové zkratky|
 |--------------|------------------------|
@@ -707,7 +707,7 @@ Výběrem příslušné klávesové zkratky máte v sadě Visual Studio snazší
 |SQL.QueryResultsRefresh|Shift+Alt+R|
 |SQL.QueryResultsStop|Alt+Break|
 
-##  <a name="bkmk_ReportDesigner"></a> Návrhář sestav
+## <a name="bkmk_ReportDesigner"></a> Návrhář sestav
 
 |Příkazy|Klávesové zkratky|
 |--------------|------------------------|
@@ -733,14 +733,14 @@ Výběrem příslušné klávesové zkratky máte v sadě Visual Studio snazší
 |Edit.TabLeft|Shift+Tab|
 |View.ReportData|Ctrl+Alt+D|
 
-##  <a name="bkmk_SequenceDiagram"></a> Sekvenční Diagram
+## <a name="bkmk_SequenceDiagram"></a> Sekvenční Diagram
 
 |Příkazy|Klávesové zkratky|
 |--------------|------------------------|
 |ArchitectureDesigner.Sequence.NavigateToCode|F12|
 |Edit.Delete|Shift+Del|
 
-##  <a name="bkmk_SettingsDesigner"></a> Návrhář nastavení
+## <a name="bkmk_SettingsDesigner"></a> Návrhář nastavení
 
 |Příkazy|Klávesové zkratky|
 |--------------|------------------------|
@@ -749,13 +749,13 @@ Výběrem příslušné klávesové zkratky máte v sadě Visual Studio snazší
 |Edit.SelectionCancel|Esc|
 |View.ViewCode|F7|
 
-##  <a name="bkmk_SolutionExplorer"></a> Průzkumník řešení
+## <a name="bkmk_SolutionExplorer"></a> Průzkumník řešení
 
 |Příkaz|Klávesová zkratka|
 |-------------|-----------------------|
 |ClassViewContextMenus.ClassViewProject.View.ViewinPageInspector|Ctrl+K, Ctrl+G|
 
-##  <a name="bkmk_TeamExplorer"></a> Team Explorer
+## <a name="bkmk_TeamExplorer"></a> Team Explorer
 
 |Příkaz|Klávesová zkratka|
 |-------------|-----------------------|
@@ -780,19 +780,19 @@ Výběrem příslušné klávesové zkratky máte v sadě Visual Studio snazší
 |TeamFoundationContextMenus.MyWorkPageInProgress.TfsContextMyWorkPageNewLinkedWI|Shift+Alt+L|
 |View.Refresh|F5|
 
-##  <a name="bkmk_TFBuild"></a> Editor podrobností Team Foundation Build
+## <a name="bkmk_TFBuild"></a> Editor podrobností Team Foundation Build
 
 |Příkaz|Klávesová zkratka|
 |-------------|-----------------------|
 |View.Refresh|F5|
 
-##  <a name="bkmk_TestExplorer"></a> Průzkumník testů
+## <a name="bkmk_TestExplorer"></a> Průzkumník testů
 
 |Příkaz|Klávesová zkratka|
 |-------------|-----------------------|
 |TestExplorer.OpenTest|F12|
 
-##  <a name="bkmk_TextEditor"></a> Textový Editor
+## <a name="bkmk_TextEditor"></a> Textový Editor
 
 |                             Příkazy                              |                  Klávesové zkratky                   |
 |-------------------------------------------------------------------|-------------------------------------------------------|
@@ -902,38 +902,38 @@ Výběrem příslušné klávesové zkratky máte v sadě Visual Studio snazší
 |   TeamFoundationContextMenus.Annotate.TfsAnnotateMoveNextRegion   |                       Alt+PgDn                        |
 | TeamFoundationContextMenus.Annotate.TfsAnnotateMovePreviousRegion |                       Alt+PgUp                        |
 
-##  <a name="bkmk_UMLactivityDiagram"></a> Diagram činností UML
+## <a name="bkmk_UMLactivityDiagram"></a> Diagram činností UML
 
 |Příkaz|Klávesová zkratka|
 |-------------|-----------------------|
 |Edit.Delete|Shift+Del|
 
-##  <a name="bkmk_UMLclassDiagram"></a> Diagram tříd UML
+## <a name="bkmk_UMLclassDiagram"></a> Diagram tříd UML
 
 |Příkaz|Klávesová zkratka|
 |-------------|-----------------------|
 |Edit.DeleteFromModel|Shift+Del|
 
-##  <a name="bkmk_UMLcomponentDiagram"></a> Diagram komponenty UML
+## <a name="bkmk_UMLcomponentDiagram"></a> Diagram komponenty UML
 
 |Příkaz|Klávesová zkratka|
 |-------------|-----------------------|
 |Edit.DeleteFromModel|Shift+Del|
 
-##  <a name="bkmk_UMLusecaseDiagram"></a> Diagram případu použití UML
+## <a name="bkmk_UMLusecaseDiagram"></a> Diagram případu použití UML
 
 |Příkaz|Klávesová zkratka|
 |-------------|-----------------------|
 |Edit.DeleteFromModel|Shift+Del|
 
-##  <a name="bkmk_vcaccelerator"></a> Editor akcelerátorů VC
+## <a name="bkmk_vcaccelerator"></a> Editor akcelerátorů VC
 
 |Příkazy|Klávesové zkratky|
 |--------------|------------------------|
 |Edit.NewAccelerator|Insert|
 |Edit.NextKeyTyped|Ctrl+W|
 
-##  <a name="bkmk_vcdialogeditor"></a> Editor dialogových oken VC
+## <a name="bkmk_vcdialogeditor"></a> Editor dialogových oken VC
 
 |Příkazy|Klávesové zkratky|
 |--------------|------------------------|
@@ -967,7 +967,7 @@ Výběrem příslušné klávesové zkratky máte v sadě Visual Studio snazší
 |Format.TestDialog|Ctrl+T|
 |Format.ToggleGuides|Ctrl+G|
 
-##  <a name="bkmk_vcimageeditor"></a> Editor obrázků VC
+## <a name="bkmk_vcimageeditor"></a> Editor obrázků VC
 
 |Příkazy|Klávesové zkratky|
 |--------------|------------------------|
@@ -1009,13 +1009,13 @@ Výběrem příslušné klávesové zkratky máte v sadě Visual Studio snazší
 |Image.ZoomIn|Ctrl+Shift+.<br /><br /> or<br /><br /> Ctrl + šipka nahoru|
 |Image.ZoomOut|Ctrl+Shift+,<br /><br /> or<br /><br /> Ctrl + šipka dolů|
 
-##  <a name="bkmk_vcstringeditor"></a> Editor řetězců VC
+## <a name="bkmk_vcstringeditor"></a> Editor řetězců VC
 
 |Příkaz|Klávesová zkratka|
 |-------------|-----------------------|
 |Edit.NewString|Insert|
 
-##  <a name="bkmk_viewDesigner"></a> Návrhář zobrazení
+## <a name="bkmk_viewDesigner"></a> Návrhář zobrazení
 
 |Příkazy|Klávesové zkratky|
 |--------------|------------------------|
@@ -1028,13 +1028,13 @@ Výběrem příslušné klávesové zkratky máte v sadě Visual Studio snazší
 |QueryDesigner.Results|Ctrl+4|
 |QueryDesigner.SQL|Ctrl+3|
 
-##  <a name="bkmk_visualstudio"></a> Visual Studio
+## <a name="bkmk_visualstudio"></a> Visual Studio
 
 |Příkaz|Klávesová zkratka|
 |-------------|-----------------------|
 |OtherContextMenus.ORDesignerContext.HideMethodsPane|Ctrl+1|
 
-##  <a name="bkmk_wfdesigner"></a> Návrhář formulářů Windows
+## <a name="bkmk_wfdesigner"></a> Návrhář formulářů Windows
 
 |Příkazy|Klávesové zkratky|
 |--------------|------------------------|
@@ -1063,7 +1063,7 @@ Výběrem příslušné klávesové zkratky máte v sadě Visual Studio snazší
 |Edit.SizeControlUp|Ctrl + Shift + šipka nahoru|
 |Edit.TabLeft|Shift+Tab|
 
-##  <a name="bkmk_workItemEditor"></a> Editor pracovních položek
+## <a name="bkmk_workItemEditor"></a> Editor pracovních položek
 
 |Příkazy|Klávesové zkratky|
 |--------------|------------------------|
@@ -1071,7 +1071,7 @@ Výběrem příslušné klávesové zkratky máte v sadě Visual Studio snazší
 |Edit.RefreshWorkItem|F5|
 |Team.NewLinkedWorkItem|Shift+Alt+L|
 
-##  <a name="bkmk_WIqueryview"></a> Zobrazení dotazu pracovní položky
+## <a name="bkmk_WIqueryview"></a> Zobrazení dotazu pracovní položky
 
 |Příkazy|Klávesové zkratky|
 |--------------|------------------------|
@@ -1082,7 +1082,7 @@ Výběrem příslušné klávesové zkratky máte v sadě Visual Studio snazší
 |Team.Refresh|F5|
 |Window.Toggle|Shift+Alt+V|
 
-##  <a name="bkmk_WIresultsview"></a> Zobrazení výsledků pracovních položek
+## <a name="bkmk_WIresultsview"></a> Zobrazení výsledků pracovních položek
 
 |Příkazy|Klávesové zkratky|
 |--------------|------------------------|
@@ -1095,7 +1095,7 @@ Výběrem příslušné klávesové zkratky máte v sadě Visual Studio snazší
 |Team.Refresh|F5|
 |Window.Toggle|Shift+Alt+V|
 
-##  <a name="bkmk_workflowdesigner"></a> Návrhář postupu provádění
+## <a name="bkmk_workflowdesigner"></a> Návrhář postupu provádění
 
 |Příkazy|Klávesové zkratky|
 |--------------|------------------------|
@@ -1123,7 +1123,7 @@ Výběrem příslušné klávesové zkratky máte v sadě Visual Studio snazší
 |WorkflowDesigner.ZoomIn|Ctrl+Num +|
 |WorkflowDesigner.ZoomOut|Ctrl+Num -|
 
-##  <a name="bkmk_xamluidesigner"></a> Návrhář v jazyce XAML
+## <a name="bkmk_xamluidesigner"></a> Návrhář v jazyce XAML
 
 |Příkazy|Klávesové zkratky|
 |--------------|------------------------|
@@ -1139,14 +1139,14 @@ Výběrem příslušné klávesové zkratky máte v sadě Visual Studio snazší
 |View.EdgeRightMoveRight|Ctrl+Shift+Alt+.|
 |Spuštění kódu projektu|Ctrl+F9|
 
-##  <a name="bkmk_xmlTextEditor"></a> Editor (textový) XML
+## <a name="bkmk_xmlTextEditor"></a> Editor (textový) XML
 
 |Příkazy|Klávesové zkratky|
 |--------------|------------------------|
 |XML.StartXSLTDebugging|Alt+F5|
 |XML.StartXSLTWithoutDebugging|Ctrl+Alt+F5|
 
-##  <a name="bkmk_xmlSchemaDesigner"></a> Návrhář schémat XML
+## <a name="bkmk_xmlSchemaDesigner"></a> Návrhář schémat XML
 
 |Příkazy|Klávesové zkratky|
 |--------------|------------------------|

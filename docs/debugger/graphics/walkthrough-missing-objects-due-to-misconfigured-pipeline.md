@@ -1,5 +1,5 @@
 ---
-title: 'Průvodce: Chybějící objekty z důvodu nesprávné konfigurace zřetězení | Dokumentace Microsoftu'
+title: 'Návod: Chybějící objekty z důvodu nesprávné konfigurace zřetězení | Dokumentace Microsoftu'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: ed8ac02d-b38f-4055-82fb-67757c2ccbb9
@@ -8,25 +8,25 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b32b76a4f063cd15d5f36db6ea8b672dbeda4d54
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: edffb60e59d2f8a9c8c9fe417bedb4d578215c9c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56698050"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097606"
 ---
-# <a name="walkthrough-missing-objects-due-to-misconfigured-pipeline"></a>Průvodce: Chybějící objekty z důvodu nesprávné konfigurace zřetězení
+# <a name="walkthrough-missing-objects-due-to-misconfigured-pipeline"></a>Návod: Chybějící objekty z důvodu nesprávné konfigurace zřetězení
 Tento návod ukazuje, jak používat [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] nástrojů diagnostiky grafiky k prozkoumání objekt, který nebyl nalezen kvůli nenastavené pixel shader.
 
  Tento návod ilustruje tyto úkoly:
 
--   Použití **seznam událostí grafiky** k vyhledání potenciálních zdrojů problému.
+- Použití **seznam událostí grafiky** k vyhledání potenciálních zdrojů problému.
 
--   Použití **fáze zřetězení grafiky** okno prozkoumat účinek `DrawIndexed` volání rozhraní API Direct3D.
+- Použití **fáze zřetězení grafiky** okno prozkoumat účinek `DrawIndexed` volání rozhraní API Direct3D.
 
--   Kontroluje se kontext zařízení potvrďte, že nebyla nastavena fázi shaderu.
+- Kontroluje se kontext zařízení potvrďte, že nebyla nastavena fázi shaderu.
 
--   Použití **fáze zřetězení grafiky** okno spolu s **zásobník volání událostí grafiky** vám pomohou najít zdroje nenastavené pixel shader.
+- Použití **fáze zřetězení grafiky** okno spolu s **zásobník volání událostí grafiky** vám pomohou najít zdroje nenastavené pixel shader.
 
 ## <a name="scenario"></a>Scénář
  Pokud objekt chybí v 3D aplikaci, je to někdy protože jeden z těchto fází shaderu není nastaven před vykreslením objektu. V aplikacích, které mají jednoduchý vykreslování potřebám příčiny této chyby je obvykle někde umístěn v zásobníku volání objektu volání draw. Ale rámci Optimalizace aplikací batch společně objekty, které jsou programy shaderu, textury a další data v běžných, chcete-li minimalizovat – změnu stavu režie. V těchto aplikacích zdroje chyby může být schovaný v systému dávkování, spíše než umístěný v zásobníku volání daného volání vykreslování. Scénář v tomto návodu ukazuje aplikace, který má jednoduchý vykreslování potřebám a proto zdroje chyby najdete v zásobníku volání.

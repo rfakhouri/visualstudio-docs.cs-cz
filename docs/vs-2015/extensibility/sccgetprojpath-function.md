@@ -12,23 +12,23 @@ ms.assetid: 1079847e-d45f-4cb8-9d92-1e01ce5d08f6
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 053d8ff8f7e75224b05b1a722ba1bce03cd53a59
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 4c7a4af5928f1d7b803e882c1826e451982389bc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54765277"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093927"
 ---
 # <a name="sccgetprojpath-function"></a>SccGetProjPath – funkce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Tato funkce se zobrazí výzva pro cestu k projektu, což je řetězec, který má smysl pouze na modul plug-in správy zdrojového kódu. Je volána, když se uživatel:  
   
--   Vytvoření nového projektu  
+- Vytvoření nového projektu  
   
--   Přidat existující projekt do správy verzí  
+- Přidat existující projekt do správy verzí  
   
--   Pokouším se najít existující projekt ovládacího prvku verze  
+- Pokouším se najít existující projekt ovládacího prvku verze  
   
 ## <a name="syntax"></a>Syntaxe  
   

@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 615b9bc4974a0483dec5e9c39727ebae50039a1f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: deba5e493f58a99e672e362977406670e1eee0e1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596526"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094343"
 ---
 # <a name="how-to-create-an-event-receiver-for-a-specific-list-instance"></a>Postupy: Vytvoření přijímače událostí pro specifickou instanci seznamu
   Příjemce událostí instance seznamu jsou reaguje na události, ke kterým dochází v žádné instanci definice seznamu. I když šablony příjemce události není povoleno zaměření na specifickou instanci seznamu, můžete upravit přijímače událostí, které působí na definici seznamu pro reakci na události v specifickou instanci seznamu.
@@ -30,24 +30,24 @@ ms.locfileid: "56596526"
 
 #### <a name="to-modify-an-event-receiver-to-respond-to-a-specific-list-instance"></a>Chcete-li změnit přijímače událostí na specifickou instanci seznamu
 
-1.  V prohlížeči otevřete web služby SharePoint.
+1. V prohlížeči otevřete web služby SharePoint.
 
-2.  V navigačním podokně **uvádí** odkaz.
+2. V navigačním podokně **uvádí** odkaz.
 
-3.  V **veškerý obsah webu** zvolte **vytvořit** odkaz.
+3. V **veškerý obsah webu** zvolte **vytvořit** odkaz.
 
-4.  V **vytvořit** dialogového okna zvolte **oznámení** zadejte, zadejte název oznámení **TestAnnouncements**a klikněte na tlačítko **vytvořit**tlačítko.
+4. V **vytvořit** dialogového okna zvolte **oznámení** zadejte, zadejte název oznámení **TestAnnouncements**a klikněte na tlačítko **vytvořit**tlačítko.
 
-5.  V [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], vytvoření projektu příjemce událostí.
+5. V [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], vytvoření projektu příjemce událostí.
 
-6.  V **jaký typ příjemce událostí požadujete?** klikněte na položku **události položky seznamu**.
+6. V **jaký typ příjemce událostí požadujete?** klikněte na položku **události položky seznamu**.
 
     > [!NOTE]
     >  Můžete také vybrat jakýkoli jiný typ příjemce událostí, které obory, například s definicí seznamu **e-mailové události seznamu** nebo **události pracovního postupu seznamu**.
 
-7.  V **jaká položka by měla být zdroj událostí?** klikněte na položku **oznámení**.
+7. V **jaká položka by měla být zdroj událostí?** klikněte na položku **oznámení**.
 
-8.  V **zpracovávat následující události** seznamu, vyberte **přidání položky** zaškrtněte políčko a klikněte na tlačítko **Dokončit** tlačítko.
+8. V **zpracovávat následující události** seznamu, vyberte **přidání položky** zaškrtněte políčko a klikněte na tlačítko **Dokončit** tlačítko.
 
 9. V **Průzkumníka řešení**, v části EventReceiver1, otevřete *Elements.xml*.
 

@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 42cba18e3b02bb1bb4a8316f82c62ae50700ca8f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 2e62fa58d3f0678c8784cb8584a95d8475238ce0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955411"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092536"
 ---
 # <a name="write-code-to-customize-a-domain-specific-language"></a>Zápis kódu pro úpravu jazyka specifického pro doménu
 
@@ -22,15 +22,15 @@ Tato část ukazuje, jak použít vlastní kód pro přístup, upravit nebo vytv
 
 Existuje několik kontextech, ve kterých můžete napsat kód, který funguje s DSL:
 
--   **Vlastní příkazy.** Můžete vytvořit příkaz, že uživatelé můžete vyvolat kliknutím pravým tlačítkem myši v diagramu a které můžete měnit model. Další informace najdete v tématu [jak: Přidání příkazu do místní nabídky](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).
+- **Vlastní příkazy.** Můžete vytvořit příkaz, že uživatelé můžete vyvolat kliknutím pravým tlačítkem myši v diagramu a které můžete měnit model. Další informace najdete v tématu [jak: Přidání příkazu do místní nabídky](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).
 
--   **Ověření.** Můžete napsat kód, který ověřuje, že model je ve správném stavu. Další informace najdete v tématu [ověřování v jazyka specifického pro doménu](../modeling/validation-in-a-domain-specific-language.md).
+- **Ověření.** Můžete napsat kód, který ověřuje, že model je ve správném stavu. Další informace najdete v tématu [ověřování v jazyka specifického pro doménu](../modeling/validation-in-a-domain-specific-language.md).
 
--   **Přepisování výchozího chování.** Můžete upravit mnoho aspektů kód, který je generován z DslDefinition.dsl. Další informace najdete v tématu [přepisování a rozšiřování třídy generované v](../modeling/overriding-and-extending-the-generated-classes.md).
+- **Přepisování výchozího chování.** Můžete upravit mnoho aspektů kód, který je generován z DslDefinition.dsl. Další informace najdete v tématu [přepisování a rozšiřování třídy generované v](../modeling/overriding-and-extending-the-generated-classes.md).
 
--   **Transformace textu.** Můžete napsat textových šablon, které obsahují kód, který má přístup k modelu a vytváří textový soubor, třeba když chcete generovat kód programu. Další informace najdete v tématu [generování kódu z jazyka specifického pro doménu](../modeling/generating-code-from-a-domain-specific-language.md).
+- **Transformace textu.** Můžete napsat textových šablon, které obsahují kód, který má přístup k modelu a vytváří textový soubor, třeba když chcete generovat kód programu. Další informace najdete v tématu [generování kódu z jazyka specifického pro doménu](../modeling/generating-code-from-a-domain-specific-language.md).
 
--   **Další rozšíření sady Visual Studio.** Můžete napsat samostatné rozšíření VSIX, které čtení a úpravy modelů. Další informace najdete v tématu [jak: Otevření modelu ze souboru v kódu programu](../modeling/how-to-open-a-model-from-file-in-program-code.md)
+- **Další rozšíření sady Visual Studio.** Můžete napsat samostatné rozšíření VSIX, které čtení a úpravy modelů. Další informace najdete v tématu [jak: Otevření modelu ze souboru v kódu programu](../modeling/how-to-open-a-model-from-file-in-program-code.md)
 
 Instance tříd, které definujete v DslDefinition.dsl uchovávají do datové struktury, volá se, *Store v paměti* (IMS) nebo *Store*. Třídy, které definujete DSL, vždy provést Store jako argument konstruktoru. Pokud například vaše DSL definuje třídu s názvem příkladu:
 
@@ -38,7 +38,7 @@ Instance tříd, které definujete v DslDefinition.dsl uchovávají do datové s
 
 uchování objektů v Store (namísto stejně jako normální objekty) poskytuje několik výhod.
 
--   **Transakce**. Můžete seskupit řadu souvisejících změn do transakce:
+- **Transakce**. Můžete seskupit řadu souvisejících změn do transakce:
 
      `using (Transaction t = store.TransactionManager.BeginTransaction("updates"))`
 
@@ -52,7 +52,7 @@ uchování objektů v Store (namísto stejně jako normální objekty) poskytuje
 
      Pokud dojde k výjimce během změny, tak, aby konečná Commit() neprovádí, Store se resetuje do předchozího stavu. Díky tomu můžete zajistit, že chyby nenechala modelu v nekonzistentním stavu. Další informace najdete v tématu [navigace a aktualizace modelu v programovém kódu](../modeling/navigating-and-updating-a-model-in-program-code.md).
 
--   **Binární vztahy**. Při definování vztahu mezi dvěma třídami, instance na obou koncích mají vlastnost, která přejde na druhém konci. Dva elementy jsou vždy synchronizované. Například pokud definujete rodičovství vztah s rolí s názvem nadřazené a podřízené položky, můžete napsat:
+- **Binární vztahy**. Při definování vztahu mezi dvěma třídami, instance na obou koncích mají vlastnost, která přejde na druhém konci. Dva elementy jsou vždy synchronizované. Například pokud definujete rodičovství vztah s rolí s názvem nadřazené a podřízené položky, můžete napsat:
 
      `John.Children.Add(Mary)`
 
@@ -68,9 +68,9 @@ uchování objektů v Store (namísto stejně jako normální objekty) poskytuje
 
      Další informace najdete v tématu [navigace a aktualizace modelu v programovém kódu](../modeling/navigating-and-updating-a-model-in-program-code.md).
 
--   **Pravidla a události**. Můžete definovat pravidla, která se aktivuje vždy, když dojde ke změně zadané. Se používají pravidla, třeba udržovat tvary v diagramu stavu s prvky modelu, které jsou k dispozici. Další informace najdete v tématu [šířící změny a reakce na](../modeling/responding-to-and-propagating-changes.md).
+- **Pravidla a události**. Můžete definovat pravidla, která se aktivuje vždy, když dojde ke změně zadané. Se používají pravidla, třeba udržovat tvary v diagramu stavu s prvky modelu, které jsou k dispozici. Další informace najdete v tématu [šířící změny a reakce na](../modeling/responding-to-and-propagating-changes.md).
 
--   **Serializace**. Store poskytuje standardní způsob, jak serializovat objekty, které obsahuje do souboru. Můžete přizpůsobit pravidla pro serializaci a deserializaci. Další informace najdete v tématu [přizpůsobení souborového úložiště a serializace XML](../modeling/customizing-file-storage-and-xml-serialization.md).
+- **Serializace**. Store poskytuje standardní způsob, jak serializovat objekty, které obsahuje do souboru. Můžete přizpůsobit pravidla pro serializaci a deserializaci. Další informace najdete v tématu [přizpůsobení souborového úložiště a serializace XML](../modeling/customizing-file-storage-and-xml-serialization.md).
 
 ## <a name="see-also"></a>Viz také
 

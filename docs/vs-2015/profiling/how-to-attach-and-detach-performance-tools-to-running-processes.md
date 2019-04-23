@@ -17,12 +17,12 @@ caps.latest.revision: 35
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2357993f6f0d814bc2383564cafe16bb2e21225a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 873f4735cd1be2525b8b009dc94787b4eed394ad
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54762432"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095736"
 ---
 # <a name="how-to-attach-and-detach-performance-tools-to-running-processes"></a>Postupy: Připojení a odpojení nástroje Sledování výkonu ke spuštěným procesům
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ Profiler slouží k připojení nebo odpojení od spuštěného procesu pro usna
   
 ### <a name="to-attach-to-a-running-process"></a>Připojit ke spuštěnému procesu  
   
-1.  Na **analyzovat** nabídky, přejděte k **Profiler** a potom klikněte na tlačítko **Attach/Detach**.  
+1. Na **analyzovat** nabídky, přejděte k **Profiler** a potom klikněte na tlačítko **Attach/Detach**.  
   
      \- nebo –  
   
@@ -52,13 +52,13 @@ Profiler slouží k připojení nebo odpojení od spuštěného procesu pro usna
   
      **Připojit Profiler k procesu** zobrazí se dialogové okno.  
   
-2.  Klikněte na název, který chcete připojit k procesu.  
+2. Klikněte na název, který chcete připojit k procesu.  
   
-3.  Klikněte na tlačítko **připojit**.  
+3. Klikněte na tlačítko **připojit**.  
   
 ### <a name="to-detach-from-a-running-process"></a>Chcete-li odpojit od spuštěného procesu  
   
-1.  Na **analyzovat** nabídky, přejděte k **Profiler** a potom klikněte na tlačítko **Attach/Detach**.  
+1. Na **analyzovat** nabídky, přejděte k **Profiler** a potom klikněte na tlačítko **Attach/Detach**.  
   
      \- nebo –  
   
@@ -66,9 +66,9 @@ Profiler slouží k připojení nebo odpojení od spuštěného procesu pro usna
   
      **Připojit Profiler k procesu** zobrazí se dialogové okno.  
   
-2.  Klikněte na název image, ze kterého se má odpojit.  
+2. Klikněte na název image, ze kterého se má odpojit.  
   
-3.  Klikněte na tlačítko **odpojit**.  
+3. Klikněte na tlačítko **odpojit**.  
   
 ## <a name="see-also"></a>Viz také  
  [Řízení sběru dat](../profiling/controlling-data-collection.md)   

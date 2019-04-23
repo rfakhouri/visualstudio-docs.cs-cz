@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 496328eb8911ad03d34c02e17d92f9a782b149da
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: e218cfb3514333e48f2c5d59d55664de1bbd906a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599191"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095853"
 ---
 # <a name="how-to-retrieve-query-string-information-in-an-online-clickonce-application"></a>Postupy: Načtení informací řetězce dotazu do online aplikace ClickOnce
 *Řetězec dotazu* je část adresy URL začínající otazník (?), který obsahuje libovolné informace ve formě *název = hodnota*. Předpokládejme, že máte [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikaci s názvem `WindowsApp1` , která hostujete na `servername`, a vy chcete předávat hodnotu pro proměnnou `username` při spuštění aplikace. Vaše adresa URL může vypadat nějak takto:
@@ -46,12 +46,12 @@ ms.locfileid: "56599191"
 
 ### <a name="to-obtain-query-string-information-from-a-clickonce-application"></a>K získání informací řetězce dotazu z aplikace ClickOnce
 
-1.  Umístěte následující kód ve vašem projektu. Aby tento kód funkce, budete muset mít odkaz na System.Web a přidejte `using` nebo `Imports` příkazy pro System.Web System.Collections.Specialized a System.Deployment.Application.
+1. Umístěte následující kód ve vašem projektu. Aby tento kód funkce, budete muset mít odkaz na System.Web a přidejte `using` nebo `Imports` příkazy pro System.Web System.Collections.Specialized a System.Deployment.Application.
 
      [!code-csharp[ClickOnceQueryString#1](../deployment/codesnippet/CSharp/how-to-retrieve-query-string-information-in-an-online-clickonce-application_1.cs)]
      [!code-vb[ClickOnceQueryString#1](../deployment/codesnippet/VisualBasic/how-to-retrieve-query-string-information-in-an-online-clickonce-application_1.vb)]
 
-2.  Volání funkce definované dříve k načtení <xref:System.Collections.DictionaryBase.Dictionary%2A> z parametrů řetězce dotazu, který je indexované podle názvu.
+2. Volání funkce definované dříve k načtení <xref:System.Collections.DictionaryBase.Dictionary%2A> z parametrů řetězce dotazu, který je indexované podle názvu.
 
 ### <a name="to-enable-query-string-passing-in-a-clickonce-application-with-mageuiexe"></a>Chcete-li povolit předávání do aplikace ClickOnce s MageUI.exe řetězce dotazů
 

@@ -17,12 +17,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bbb215efc6ddeabda860b3f0cc218f388f8eaeee
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 398d92065b1ff1b5447017c7a21fc0def1e0da52
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59652446"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093134"
 ---
 # <a name="project-devenvexe"></a>/Project (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -63,11 +63,11 @@ devenv SolutionName {/build|/clean|/rebuild|/deploy} SolnConfigName
   
 ## <a name="remarks"></a>Poznámky  
   
--   Musí být použita součástí `devenv /build`, /`clean`, `/rebuild`, nebo `/deploy` příkazu.  
+- Musí být použita součástí `devenv /build`, /`clean`, `/rebuild`, nebo `/deploy` příkazu.  
   
--   Uzavření řetězců, které obsahují mezery v dvojitých uvozovkách.  
+- Uzavření řetězců, které obsahují mezery v dvojitých uvozovkách.  
   
--   Souhrnné informace o sestavení, včetně chyb, lze zobrazit v **příkaz** okna, nebo do jakéhokoli souboru protokolu zadaný `/out` přepnout.  
+- Souhrnné informace o sestavení, včetně chyb, lze zobrazit v **příkaz** okna, nebo do jakéhokoli souboru protokolu zadaný `/out` přepnout.  
   
 ## <a name="example"></a>Příklad  
  Tento příklad vytvoří projekt `CSharpConsoleApp`, použije `Debug` konfigurace sestavení projektu v rámci `Debug` konfigurace řešení `MySolution`.  

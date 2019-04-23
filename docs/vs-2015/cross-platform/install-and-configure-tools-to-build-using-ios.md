@@ -11,12 +11,12 @@ caps.latest.revision: 13
 author: corob-msft
 ms.author: corob
 manager: jillfra
-ms.openlocfilehash: 3ca198b88a8e42ba937ceb2426edd23793765b03
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: cdde44b5d960a3f9ef462e06b55260477a8933c0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59656203"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097073"
 ---
 # <a name="install-and-configure-tools-to-build-using-ios"></a>Instalace a konfigurace nástrojů pro vytváření pomocí iOS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,47 +42,47 @@ Visual C++ pro vývoj mobilních řešení napříč platformami můžete použ�
   
  [Konfigurace vzdáleného agenta na počítači Mac](#ConfigureMac)  
   
-##  <a name="Prerequisites"></a> Požadované součásti  
+## <a name="Prerequisites"></a> Požadované součásti  
  Chcete-li nainstalovat a používat vzdálený agent pro vývoj kódu pro iOS, musíte nejprve mít tyto požadavky:  
   
--   Počítač Mac se systémem OS X Mavericks nebo vyšší  
+- Počítač Mac se systémem OS X Mavericks nebo vyšší  
   
--   [Apple ID](https://appleid.apple.com/)  
+- [Apple ID](https://appleid.apple.com/)  
   
--   Aktivní [iOS Developer Program](https://developer.apple.com/programs/ios/) účtu Apple  
+- Aktivní [iOS Developer Program](https://developer.apple.com/programs/ios/) účtu Apple  
   
--   [Xcode 6](https://developer.apple.com/xcode/downloads/)  
+- [Xcode 6](https://developer.apple.com/xcode/downloads/)  
   
      Xcode 6 si můžete stáhnout z App Store.  
   
--   Nástroje příkazového řádku Xcode  
+- Nástroje příkazového řádku Xcode  
   
      Instalace nástrojů příkazového řádku Xcode, otevřete aplikaci terminál na počítači Mac a zadejte následující příkaz:  
   
      `xcode-select --install`  
   
--   Podpisová identita nakonfigurované v prostředí Xcode pro iOS  
+- Podpisová identita nakonfigurované v prostředí Xcode pro iOS  
   
      Podrobné informace o získání identitu podepisování pro iOS najdete v tématu [zachování identity Your podepisování a certifikáty](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/MaintainingCertificates/MaintainingCertificates.html) v knihovně iOS Developer Library. Chcete-li zobrazit nebo nastavit podpisové identity v Xcode, otevřete **Xcode** nabídku a zvolte **Předvolby**. Vyberte **účty** a vyberte svoje Apple ID a klikněte na tlačítko **zobrazit podrobnosti o** tlačítko.  
   
--   Pokud používáte zařízení s Iosem pro vývoj, zřizovací profil nakonfigurovaný v Xcode pro vaše zařízení  
+- Pokud používáte zařízení s Iosem pro vývoj, zřizovací profil nakonfigurovaný v Xcode pro vaše zařízení  
   
      Podrobné informace o vytváření zřizovací profily, najdete v části [vytváření zřizování profilů pomocí centra](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/MaintainingProfiles/MaintainingProfiles.html#//apple_ref/doc/uid/TP40012582-CH30-SW24) v knihovně iOS Developer Library.  
   
--   [Node.js](http://nodejs.org/)  
+- [Node.js](http://nodejs.org/)  
   
--   Najít aktualizovanou verzi npm  
+- Najít aktualizovanou verzi npm  
   
      Tato verze npm, která se dodává s využitím Node.js nemusí být dostatečně nová, aby instalace vcremote. Pokud chcete aktualizovat npm, otevřete aplikaci terminál na počítači Mac a zadejte následující příkaz:  
   
      `sudo npm install -g npm@latest`  
   
-##  <a name="Install"></a> Instalace vzdáleného agenta pro iOS  
+## <a name="Install"></a> Instalace vzdáleného agenta pro iOS  
  Při instalaci Visual C++ pro vývoj Multiplatformních mobilních řešení pro Visual Studio může komunikovat s [vcremote](http://go.microsoft.com/fwlink/p/?LinkId=534988), vzdáleného agenta spuštěného na počítači Mac, přenos souborů, sestavte a spusťte aplikaci pro iOS a odeslat příkazy ladění.  
   
  Před instalací vzdáleného agenta, ujistěte se, že jste splnili [požadavky](#Prerequisites) a nainstalované [Visual C++ pro vývoj mobilních řešení napříč platformami](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md#InstallTheTools).  
   
-###  <a name="DownloadInstall"></a> Stažení a instalace vzdáleného agenta  
+### <a name="DownloadInstall"></a> Stažení a instalace vzdáleného agenta  
   
 - Z terminálu aplikace na počítači Mac zadejte:  
   
@@ -97,10 +97,10 @@ Visual C++ pro vývoj mobilních řešení napříč platformami můžete použ�
   
   Pokud aktualizujete na novou verzi sady Visual Studio, je třeba aktualizovat na aktuální verzi vzdáleného agenta. Aktualizace vzdáleného agenta, opakujte postup stažení a instalace vzdáleného agenta.  
   
-##  <a name="Start"></a> Spuštění vzdáleného agenta  
+## <a name="Start"></a> Spuštění vzdáleného agenta  
  Vzdálený agent musí být spuštěná sada Visual Studio sestavte a spusťte váš kód s Iosem. Visual Studio musí být párována s vzdáleného agenta předtím, než může komunikovat. Ve výchozím nastavení se vzdálený agent spouští v režimu zabezpečené připojení, která vyžaduje kód PIN spárovat se sadou Visual Studio.  
   
-###  <a name="RemoteAgentStartServer"></a> Spuštění vzdáleného agenta  
+### <a name="RemoteAgentStartServer"></a> Spuštění vzdáleného agenta  
   
 - Z terminálu aplikace na počítači Mac zadejte:  
   
@@ -120,7 +120,7 @@ Visual C++ pro vývoj mobilních řešení napříč platformami můžete použ�
   
 #### <a name="to-disable-secured-connection-mode"></a>Chcete-li zakázat režim zabezpečené připojení  
   
--   Chcete-li zakázat režim zabezpečených připojení v vcremote, zadejte tento příkaz v aplikaci terminál na počítači Mac:  
+- Chcete-li zakázat režim zabezpečených připojení v vcremote, zadejte tento příkaz v aplikaci terminál na počítači Mac:  
   
      `vcremote --secure false`  
   
@@ -134,9 +134,9 @@ Visual C++ pro vývoj mobilních řešení napříč platformami můžete použ�
   
 #### <a name="to-stop-the-remote-agent"></a>Chcete-li zastavit vzdáleného agenta  
   
--   V terminálu okno vcremote běží v, zadejte `Control+C`.  
+- V terminálu okno vcremote běží v, zadejte `Control+C`.  
   
-##  <a name="ConfigureVS"></a> Konfigurace vzdáleného agenta v sadě Visual Studio  
+## <a name="ConfigureVS"></a> Konfigurace vzdáleného agenta v sadě Visual Studio  
  Pro připojení ke vzdálenému agentu ze sady Visual Studio, musíte zadat konfigurace vzdáleného v možnostech sady Visual Studio.  
   
 #### <a name="to-configure-the-remote-agent-from-visual-studio"></a>Konfigurace vzdáleného agenta ze sady Visual Studio  
@@ -172,68 +172,68 @@ Visual C++ pro vývoj mobilních řešení napříč platformami můžete použ�
   
    Visual Studio používá stejné informace pro připojení k vzdáleného agenta na počítači Mac pokaždé, když ho používáte. Nepotřebujete spárovat sady Visual Studio se vzdáleným agentem znovu není-li vygenerovat nový certifikát zabezpečení na počítači Mac, nebo jeho název hostitele nebo IP adresu změny.  
   
-##  <a name="GeneratePIN"></a> Vygenerovat nový bezpečnostní kód PIN  
+## <a name="GeneratePIN"></a> Vygenerovat nový bezpečnostní kód PIN  
  Při prvním spuštění vzdáleného agenta vygenerovaný PIN kód je platný po omezenou dobu – ve výchozím nastavení, 10 minut. Pokud před vypršení časového limitu, nepárují sady Visual Studio se vzdáleným agentem, je potřeba vygenerovat nový kód PIN.  
   
 #### <a name="to-generate-a-new-pin"></a>Chcete-li vygenerovat nový kód PIN  
   
-1.  Zastavte agenta, nebo otevřete druhou okna aplikace na terminálu na svém počítači Mac a, který slouží k zadání příkazu.  
+1. Zastavte agenta, nebo otevřete druhou okna aplikace na terminálu na svém počítači Mac a, který slouží k zadání příkazu.  
   
-2.  V aplikaci terminál, zadejte tento příkaz:  
+2. V aplikaci terminál, zadejte tento příkaz:  
   
      `vcremote generateClientCert`  
   
      Vzdálený agent vygeneruje nový dočasný PIN kód. Visual Studio spárovat s použitím nového kódu PIN, opakujte kroky v [konfigurace vzdáleného agenta v sadě Visual Studio](#ConfigureVS).  
   
-##  <a name="GenerateCert"></a> Vytvoření nového certifikátu serveru  
+## <a name="GenerateCert"></a> Vytvoření nového certifikátu serveru  
  Z bezpečnostních důvodů certifikáty serveru tento pár Visual Studio se vzdáleným agentem jsou svázány se IP adresa nebo název hostitele vašeho macu. Pokud tyto hodnoty změnit, musíte vygenerovat nový certifikát serveru a potom znovu nakonfigurovat sady Visual Studio s novými hodnotami.  
   
 #### <a name="to-generate-a-new-server-certificate"></a>Pro vytvoření nového certifikátu serveru  
   
-1.  Zastavte agenta vcremote.  
+1. Zastavte agenta vcremote.  
   
-2.  V aplikaci terminál, zadejte tento příkaz:  
+2. V aplikaci terminál, zadejte tento příkaz:  
   
      `vcremote resetServerCert`  
   
-3.  Po zobrazení výzvy k potvrzení, zadejte `Y`.  
+3. Po zobrazení výzvy k potvrzení, zadejte `Y`.  
   
-4.  V aplikaci terminál, zadejte tento příkaz:  
+4. V aplikaci terminál, zadejte tento příkaz:  
   
      `vcremote generateClientCert`  
   
      Tím se vygeneruje nový dočasný PIN kód.  
   
-5.  Visual Studio spárovat s použitím nového kódu PIN, opakujte kroky v [konfigurace vzdáleného agenta v sadě Visual Studio](#ConfigureVS).  
+5. Visual Studio spárovat s použitím nového kódu PIN, opakujte kroky v [konfigurace vzdáleného agenta v sadě Visual Studio](#ConfigureVS).  
   
-##  <a name="ConfigureMac"></a> Konfigurace vzdáleného agenta na počítači Mac  
+## <a name="ConfigureMac"></a> Konfigurace vzdáleného agenta na počítači Mac  
  Můžete nakonfigurovat pomocí různých možností příkazového řádku vzdáleného agenta. Můžete například zadat port pro naslouchání požadavkům na sestavení a zadejte maximální počet buildů udržovat v systému souborů. Výchozí limit je 10 buildů. Vzdálený agent odebere sestavení, které překračují maximální na vypnutí.  
   
 #### <a name="to-configure-the-remote-agent"></a>Konfigurace vzdáleného agenta  
   
--   Pokud chcete zobrazit úplný seznam příkazů vzdáleného agenta, v terminálu aplikaci, zadejte:  
+- Pokud chcete zobrazit úplný seznam příkazů vzdáleného agenta, v terminálu aplikaci, zadejte:  
   
      `vcremote --help`  
   
--   Zabezpečený režim zakázání a povolení jednoduché připojení na základě protokolu HTTP, zadejte:  
+- Zabezpečený režim zakázání a povolení jednoduché připojení na základě protokolu HTTP, zadejte:  
   
      `vcremote --secure false`  
   
      Když použijete tuto možnost, zrušte **Secure** zaškrtávací políčko a nechat **Pin** prázdné pole při konfiguraci agenta v sadě Visual Studio.  
   
--   Chcete-li zadat umístění pro soubory vzdáleného agenta, zadejte:  
+- Chcete-li zadat umístění pro soubory vzdáleného agenta, zadejte:  
   
      `vcremote --serverDir directory_path`  
   
      kde *directory_path* je umístění na počítači Mac chcete umístit soubory protokolů, sestavení a certifikáty serveru. Ve výchozím nastavení je toto umístění: /Users/*uživatelské jméno*/vcremote. Sestavení jsou uspořádané podle čísla sestavení v tomto umístění.  
   
--   Použití proces na pozadí k zachycení `stdout` a `stderr` do souboru s názvem server.log, zadejte:  
+- Použití proces na pozadí k zachycení `stdout` a `stderr` do souboru s názvem server.log, zadejte:  
   
      `vcremote > server.log 2>&1 &`  
   
      Soubor server.log může být užitečné při řešení potíží s problémy se sestavením.  
   
--   Chcete-li spustit agenta pomocí konfiguračního souboru namísto parametrů příkazového řádku, zadejte:  
+- Chcete-li spustit agenta pomocí konfiguračního souboru namísto parametrů příkazového řádku, zadejte:  
   
      `vcremote --config config_file_path`  
   

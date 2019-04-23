@@ -8,12 +8,12 @@ ms.assetid: a793cf7a-f230-43ce-88d0-fa5d6f1aa9c7
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 02abe8858f928e5f3fb036b212e0a1ca777259a9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5f3ed2d3f8bc52b21f6a87ac7d6da00f665f6b28
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54758806"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096527"
 ---
 # <a name="ux-essentials-for-visual-studio"></a>Základy uživatelského prostředí pro Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -22,35 +22,35 @@ ms.locfileid: "54758806"
 
 ### <a name="1-be-consistent-within-the-visual-studio-environment"></a>1. Být konzistentní prostředí sady Visual Studio.
 
--   Použijte existující vzory interakcí v rámci prostředí.
+- Použijte existující vzory interakcí v rámci prostředí.
 
--   Návrh funkcí, které bylo v souladu s požadavky visual jazyka a řemeslné ruční práce k prostředí.
+- Návrh funkcí, které bylo v souladu s požadavky visual jazyka a řemeslné ruční práce k prostředí.
 
--   Používat sdílený příkazy a ovládací prvky, pokud existují.
+- Používat sdílený příkazy a ovládací prvky, pokud existují.
 
--   Zjistěte, hierarchie sady Visual Studio a jak vytváří kontextu a řídí uživatelské rozhraní.
+- Zjistěte, hierarchie sady Visual Studio a jak vytváří kontextu a řídí uživatelské rozhraní.
 
 ### <a name="2-use-the-environment-service-for-fonts-and-colors"></a>2. Pomocí služby prostředí písem a barev.
 
--   Uživatelské rozhraní by měly dodržovat aktuální nastavení písma prostředí, pokud je přístupný pro vlastní nastavení na stránce písma a barev v dialogovém okně Možnosti.
+- Uživatelské rozhraní by měly dodržovat aktuální nastavení písma prostředí, pokud je přístupný pro vlastní nastavení na stránce písma a barev v dialogovém okně Možnosti.
 
--   Prvky uživatelského rozhraní musí používat službu VSColor pomocí tokenů sdílená prostředí nebo konkrétních funkcí tokeny.
+- Prvky uživatelského rozhraní musí používat službu VSColor pomocí tokenů sdílená prostředí nebo konkrétních funkcí tokeny.
 
 ### <a name="3-make-all-imagery-consistent-with-the-new-vs-style"></a>3. Ujistěte se, všechna trénováním konzistentní s nový styl VS.
 
--   Pomocí sady Visual Studio Principy návrhu pro ikon, glyfy a jiných grafických.
+- Pomocí sady Visual Studio Principy návrhu pro ikon, glyfy a jiných grafických.
 
--   Neumísťujte text v grafické prvky.
+- Neumísťujte text v grafické prvky.
 
 ### <a name="4-design-from-a-user-centric-perspective"></a>4. Návrh z pohledu zaměřenou na uživatele.
 
--   Vytvořte tok úkolů před jednotlivých funkcí v něm.
+- Vytvořte tok úkolů před jednotlivých funkcí v něm.
 
--   Se seznámit s vašimi uživateli a proveďte explicitní v vaše specifikace dané znalosti.
+- Se seznámit s vašimi uživateli a proveďte explicitní v vaše specifikace dané znalosti.
 
--   Při kontrole uživatelského rozhraní, vyhodnoťte plně funkční, jakož i podrobnosti.
+- Při kontrole uživatelského rozhraní, vyhodnoťte plně funkční, jakož i podrobnosti.
 
--   Návrh uživatelského rozhraní tak, aby zůstane funkční a atraktivní bez ohledu na to, národní prostředí nebo jazyk.
+- Návrh uživatelského rozhraní tak, aby zůstane funkční a atraktivní bez ohledu na to, národní prostředí nebo jazyk.
 
 ## <a name="screen-resolution"></a>Rozlišení obrazovky
 
@@ -69,9 +69,9 @@ ms.locfileid: "54758806"
 
 #### <a name="feature-team-goals"></a>Funkce cílů týmu
 
--   Upozornit uživatele, aby vložili element, který musí být nakonfigurované.
+- Upozornit uživatele, aby vložili element, který musí být nakonfigurované.
 
--   Upozornit uživatele na oblasti, které vyžadují vstup.
+- Upozornit uživatele na oblasti, které vyžadují vstup.
 
 #### <a name="anti-pattern-solution"></a>Řešení ochrany proti vzor
  Poté, co uživatel inicioval akci a předtím, než nebude dokončena úloha okamžitě umístíte kritické zastavení ikony vedle oblastí, které vyžadují konfiguraci.
@@ -88,11 +88,11 @@ ms.locfileid: "54758806"
 #### <a name="alternatives"></a>Alternativy
  Mnohem lepší řešení tohoto problému může být:
 
--   Umožní uživateli přidat deklarace bez upozornění a poté přesuňte okamžitě můžete nastavit vlastnosti v položce.
+- Umožní uživateli přidat deklarace bez upozornění a poté přesuňte okamžitě můžete nastavit vlastnosti v položce.
 
--   Přidat ikonu upozornění (gold trojúhelník) když fokus přesunete z položky, například přidat další deklarace do seznamu nebo pokusí změnit karet v návrháři.
+- Přidat ikonu upozornění (gold trojúhelník) když fokus přesunete z položky, například přidat další deklarace do seznamu nebo pokusí změnit karet v návrháři.
 
--   Pokud uživatel se pokusí změnit karty před nastavením vlastností pro všechny deklarace, vyvolat přes pop dialogové okno s vysvětlením, že nebude možné sestavit aplikaci (nebo libovolné důsledky) až do vyřešení upozornění. Pokud uživatel zavře dialogové okno a změní karty přesto pak ikonu (kritický nebo varování, podle potřeby) se přidá na kartu deklarace.
+- Pokud uživatel se pokusí změnit karty před nastavením vlastností pro všechny deklarace, vyvolat přes pop dialogové okno s vysvětlením, že nebude možné sestavit aplikaci (nebo libovolné důsledky) až do vyřešení upozornění. Pokud uživatel zavře dialogové okno a změní karty přesto pak ikonu (kritický nebo varování, podle potřeby) se přidá na kartu deklarace.
 
 ### <a name="forcing-the-user-to-read-text-before-dismissing-ui"></a>Vynucení uživateli číst text před zavření uživatelského rozhraní
 
@@ -173,9 +173,9 @@ ms.locfileid: "54758806"
 
    **Lepším řešením:** Představuje dotaz, který by se ptáte uživatel kliknutím na odkaz.
 
--   Jak fungují služby Windows Azure?
+- Jak fungují služby Windows Azure?
 
--   Kdy potřebuji projekt Windows Azure Mobile Services?
+- Kdy potřebuji projekt Windows Azure Mobile Services?
 
 #### <a name="using-click-here-for-links"></a>Použití "Kliknutím sem" pro odkazy
  Hypertextové odkazy by měl být samopopisných. Je proti vzor, který se má použít, "Klikněte sem" nebo libovolný podobné změny.

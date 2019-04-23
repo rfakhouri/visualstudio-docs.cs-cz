@@ -8,27 +8,27 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1aa69501dac4a74c154a07c9cdc86df50959fc13
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 6eb94423150a8a3a43183020ee87d52494355aed
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55917386"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096150"
 ---
 # <a name="step-6-add-a-subtraction-problem"></a>Krok 6: Přidejte problém odečtení
 V šesté části tohoto kurzu kurzu přidáte úlohu odčítání a zjistěte, jak provádět následující úlohy:
 
--   Store hodnoty odčítání.
+- Store hodnoty odčítání.
 
--   Generovat náhodná čísla pro úlohu (a ujistěte se, že odpověď je od 0 do 100).
+- Generovat náhodná čísla pro úlohu (a ujistěte se, že odpověď je od 0 do 100).
 
--   Aktualizujte metodu, která kontroluje odpovědi, takže příliš zkontroluje nový problém s odčítáním.
+- Aktualizujte metodu, která kontroluje odpovědi, takže příliš zkontroluje nový problém s odčítáním.
 
--   Aktualizovat časovače <xref:System.Windows.Forms.Timer.Tick> obslužná rutina události tak, aby obslužná rutina události vyplnila správnou odpověď, když vyprší čas.
+- Aktualizovat časovače <xref:System.Windows.Forms.Timer.Tick> obslužná rutina události tak, aby obslužná rutina události vyplnila správnou odpověď, když vyprší čas.
 
 ## <a name="to-add-a-subtraction-problem"></a>Chcete-li přidat úlohu odčítání
 
-1.  Přidáte dvě celočíselné proměnné pro odčítání do svého formuláře mezi celočíselné proměnné pro sčítání a časovač. Kód by měl vypadat nějak takto.
+1. Přidáte dvě celočíselné proměnné pro odčítání do svého formuláře mezi celočíselné proměnné pro sčítání a časovač. Kód by měl vypadat nějak takto.
 
      [!code-vb[VbExpressTutorial3Step5_6#12](../ide/codesnippet/VisualBasic/step-6-add-a-subtraction-problem_1.vb)]
      [!code-csharp[VbExpressTutorial3Step5_6#12](../ide/codesnippet/CSharp/step-6-add-a-subtraction-problem_1.cs)]
@@ -37,7 +37,7 @@ V šesté části tohoto kurzu kurzu přidáte úlohu odčítání a zjistěte, 
 
      V dalším kroku upravíte `StartTheQuiz()` metodu pro poskytnutí náhodných hodnot pro problém s odčítáním.
 
-2.  Přidejte následující kód za komentář "Vyplnění úlohy odčítání".
+2. Přidejte následující kód za komentář "Vyplnění úlohy odčítání".
 
      [!code-vb[VbExpressTutorial3Step5_6#13](../ide/codesnippet/VisualBasic/step-6-add-a-subtraction-problem_2.vb)]
      [!code-csharp[VbExpressTutorial3Step5_6#13](../ide/codesnippet/CSharp/step-6-add-a-subtraction-problem_2.cs)]
@@ -58,19 +58,19 @@ V šesté části tohoto kurzu kurzu přidáte úlohu odčítání a zjistěte, 
 
      V tomto případě chcete zvolit poslední přetížení, protože můžete určit minimální a maximální hodnoty.
 
-3.  Upravit `CheckTheAnswer()` metodu ke kontrole správného odečtení odpovědí.
+3. Upravit `CheckTheAnswer()` metodu ke kontrole správného odečtení odpovědí.
 
      [!code-vb[VbExpressTutorial3Step5_6#14](../ide/codesnippet/VisualBasic/step-6-add-a-subtraction-problem_4.vb)]
      [!code-csharp[VbExpressTutorial3Step5_6#14](../ide/codesnippet/CSharp/step-6-add-a-subtraction-problem_4.cs)]
 
      V jazyce Visual C# `&&` je `logical and` operátor. V jazyce Visual Basic je ekvivalentní operátor `AndAlso`. Tyto operátory označují "Pokud součet addend1 a addend2 je roven hodnotě součtu NumericUpDown a minuend mínus subtrahend je roven hodnotě rozdílu NumericUpDown." `CheckTheAnswer()` Vrátí metoda `true` pouze v případě, že odpovědi na sčítání a odčítání problémy jsou obě správné.
 
-4.  Nahraďte poslední část obslužné rutiny události cyklů časovače následujícím kódem, tak, aby vyplnila správnou odpověď, když vyprší čas.
+4. Nahraďte poslední část obslužné rutiny události cyklů časovače následujícím kódem, tak, aby vyplnila správnou odpověď, když vyprší čas.
 
      [!code-vb[VbExpressTutorial3Step5_6#22](../ide/codesnippet/VisualBasic/step-6-add-a-subtraction-problem_5.vb)]
      [!code-csharp[VbExpressTutorial3Step5_6#22](../ide/codesnippet/CSharp/step-6-add-a-subtraction-problem_5.cs)]
 
-5.  Uložte a spusťte váš kód.
+5. Uložte a spusťte váš kód.
 
      Váš program zahrnuje úlohu odčítání, jako je vidět na následujícím obrázku:
 
@@ -79,6 +79,6 @@ V šesté části tohoto kurzu kurzu přidáte úlohu odčítání a zjistěte, 
 
 ## <a name="to-continue-or-review"></a>Chcete-li pokračovat nebo přezkoumat
 
--   Přechod k dalšímu kroku výukového programu naleznete v tématu [krok 7: Přidejte problémy násobení a dělení](../ide/step-7-add-multiplication-and-division-problems.md).
+- Přechod k dalšímu kroku výukového programu naleznete v tématu [krok 7: Přidejte problémy násobení a dělení](../ide/step-7-add-multiplication-and-division-problems.md).
 
--   Chcete-li vrátit k předchozímu kroku tutoriálu, přečtěte si téma [krok 5: Přidání obslužné rutiny událostí Enter pro ovládací prvky NumericUpDown](../ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md).
+- Chcete-li vrátit k předchozímu kroku tutoriálu, přečtěte si téma [krok 5: Přidání obslužné rutiny událostí Enter pro ovládací prvky NumericUpDown](../ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md).

@@ -11,12 +11,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 043d6e743df1069e268e63e8ef8acb52555ce659
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0a6e551dd2f045684168947d2c5a4e63089928c1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54800416"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60098438"
 ---
 # <a name="model-your-app39s-architecture"></a>Modelování aplikace&#39;s architektury
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,28 +32,28 @@ K zajištění, že softwarový systém nebo aplikace splňuje uživatelů potř
   
  Architektura systému je možné rozdělit do dvou oblastí:  
   
--   [Podrobný návrh](#Structure). Popisuje hlavní součásti a jejich vzájemné interakce mezi sebou ke splnění každý požadavek. Pokud systém je velká, může být jednotlivé komponenty vlastní hlavnímu návrhu, který ukazuje, jak se skládají z menších komponent.  
+- [Podrobný návrh](#Structure). Popisuje hlavní součásti a jejich vzájemné interakce mezi sebou ke splnění každý požadavek. Pokud systém je velká, může být jednotlivé komponenty vlastní hlavnímu návrhu, který ukazuje, jak se skládají z menších komponent.  
   
--   [Vzory návrhu](#Patterns) a pravidla týkající se používají v návrzích komponenty. Vzor popisuje konkrétní přístup k dosažení cíle programování. Pomocí stejné vzorce v celém návrh váš tým může snížit náklady na provedení změn a vývoji nového softwaru.  
+- [Vzory návrhu](#Patterns) a pravidla týkající se používají v návrzích komponenty. Vzor popisuje konkrétní přístup k dosažení cíle programování. Pomocí stejné vzorce v celém návrh váš tým může snížit náklady na provedení změn a vývoji nového softwaru.  
   
-##  <a name="Structure"></a> Návrh vysoké úrovně  
+## <a name="Structure"></a> Návrh vysoké úrovně  
  Návrh vysoké úrovně popisuje hlavní součásti systému a jejich vzájemné interakce mezi sebou k dosažení cíle návrhu. Aktivity v následujícím seznamu jsou součástí vývoje nejvyšší úrovni návrhu, i když nemusí nutně jít v určitém pořadí.  
   
  Pokud aktualizujete existující kód, může začít popisuje hlavní součásti. Ujistěte se, že pochopit změny s požadavky uživatele a pak přidat nebo upravit interakce mezi komponentami. Pokud vyvíjíte na nový systém, začněte tím, že vysvětlení si hlavní funkce potřebám uživatelů. Můžete pak prozkoumejte sekvence interakcí pro případy použití hlavní a pak sloučit sekvence na návrh komponent.  
   
  Ve všech případech je užitečné pro vývoj různé aktivity paralelně a pro vývoj kódu a testy v rané fázi. Vyhněte se pokusům o proveďte jeden z těchto aspektů před spuštěním jiného. Obvykle požadavky a pochopíte nejlepší způsob, jak navrhnout systému se změní při psaní a testování kódu. Proto měli byste začít tak, že porozumění a psaní kódu si hlavní funkce požadavky a návrhu. Vyplňte podrobnosti v pozdější iterace projektu.  
   
--   [Principy požadavky](#Requirements). Výchozí bod jakékoli návrhu je pochopili, že potřebám uživatelů.  
+- [Principy požadavky](#Requirements). Výchozí bod jakékoli návrhu je pochopili, že potřebám uživatelů.  
   
--   [Vzorech architektury](#BigDecisions). Volby, které jste provedli o základních technologií a prvky architektury systému.  
+- [Vzorech architektury](#BigDecisions). Volby, které jste provedli o základních technologií a prvky architektury systému.  
   
--   [Komponenty a jejich rozhraní](#Components). Můžete kreslit diagramy komponent k zobrazení hlavních částí systému a zobrazit rozhraní, pomocí kterých se vzájemně spolupracují. Rozhraní jednotlivé součásti zahrnují všechny zprávy, které jste identifikovali v sekvenčních diagramech.  
+- [Komponenty a jejich rozhraní](#Components). Můžete kreslit diagramy komponent k zobrazení hlavních částí systému a zobrazit rozhraní, pomocí kterých se vzájemně spolupracují. Rozhraní jednotlivé součásti zahrnují všechny zprávy, které jste identifikovali v sekvenčních diagramech.  
   
--   [Interakce mezi komponentami](#Interactions). Pro každý případ použití, události nebo příchozí zprávy můžete nakreslit sekvenční diagram, který znázorňuje interakci hlavní součásti systému zajistit požadované odpovědi.  
+- [Interakce mezi komponentami](#Interactions). Pro každý případ použití, události nebo příchozí zprávy můžete nakreslit sekvenční diagram, který znázorňuje interakci hlavní součásti systému zajistit požadované odpovědi.  
   
--   [Datový Model rozhraní a komponenty](#Data). Je-li nakreslit diagramy tříd k popisu informace, které se ukládají v součásti a předány mezi komponentami.  
+- [Datový Model rozhraní a komponenty](#Data). Je-li nakreslit diagramy tříd k popisu informace, které se ukládají v součásti a předány mezi komponentami.  
   
-##  <a name="Requirements"></a> Vysvětlení požadavků  
+## <a name="Requirements"></a> Vysvětlení požadavků  
  Hlavnímu návrhu dokončené aplikace je efektivní vyvinutý spolu s modelem požadavky nebo jiný popis potřebám uživatelů. Další informace o modelech požadavky najdete v části [modelování uživatelských požadavků](../modeling/model-user-requirements.md).  
   
  Pokud systém, který vyvíjíte je součástí větší systému, může být část nebo všechny vaše požadavky shrnuta v programových rozhraní.  
@@ -78,7 +78,7 @@ K zajištění, že softwarový systém nebo aplikace splňuje uživatelů potř
   
   Množství podrobností, které byste měli umístit do požadavky nebo Architektonický model závisí na škálování projektu a velikost a rozmístění týmu. Malý tým na krátké projektu je možné dát další než zobrazení diagramu tříd obchodních konceptů a některé vzory návrhu; velký projekt distribuovat napříč více než jedné oblasti, bude nutné výrazně více podrobností.  
   
-##  <a name="BigDecisions"></a> Vzorech architektury  
+## <a name="BigDecisions"></a> Vzorech architektury  
  V rané fázi vývoje budete muset zvolit hlavní technologie a prvky, na kterých závisí návrhu. Oblasti, ve kterých se musí provádět tyto možnosti patří:  
   
 - Základní technologické volby, jako je například výběr mezi databází a systém souborů a možností volby mezi aplikace v síti a webovému klientovi a tak dále.  
@@ -91,7 +91,7 @@ K zajištění, že softwarový systém nebo aplikace splňuje uživatelů potř
   
   Vámi provedeném výběru vliv na způsob používání a interpretace Architektonický model. Například v systému, která používá databázi, asociace v diagramu tříd může představovat vztahů nebo cizí klíče v databázi, že v systému, který je založen na soubory XML, přidružení může znamenat křížové odkazy, které používají XPath. V distribuovaném systému může představovat zprávy v sekvenčním diagramu zprávy v přenosové; samostatná aplikace může představovat volání funkce.  
   
-##  <a name="Components"></a> Komponenty a jejich rozhraní  
+## <a name="Components"></a> Komponenty a jejich rozhraní  
  Hlavní doporučení v této části jsou následující:  
   
 - Vytvoření diagramů komponent k zobrazení hlavních částí systému.  
@@ -111,17 +111,17 @@ K zajištění, že softwarový systém nebo aplikace splňuje uživatelů potř
   
  Diagram typické komponent pro velké systém může zahrnovat komponenty, jako jsou tyto:  
   
--   Prezentace. Komponenta, která poskytuje přístup pro uživatele, obvykle běží ve webovém prohlížeči.  
+- Prezentace. Komponenta, která poskytuje přístup pro uživatele, obvykle běží ve webovém prohlížeči.  
   
--   Součásti webové služby. Poskytuje připojení mezi klienty a servery.  
+- Součásti webové služby. Poskytuje připojení mezi klienty a servery.  
   
--   Použijte velká řadiči. Chování uživatele provede kroky pro každý scénář.  
+- Použijte velká řadiči. Chování uživatele provede kroky pro každý scénář.  
   
--   Základní firmy. Obsahuje třídy, které jsou založeny na třídách v modelu požadavky, implementuje klíčové operace a ukládá obchodních omezení.  
+- Základní firmy. Obsahuje třídy, které jsou založeny na třídách v modelu požadavky, implementuje klíčové operace a ukládá obchodních omezení.  
   
--   Databáze. Ukládá objekty firmy.  
+- Databáze. Ukládá objekty firmy.  
   
--   Protokolování a komponent pro zpracování chyb.  
+- Protokolování a komponent pro zpracování chyb.  
   
 ### <a name="dependencies-between-components"></a>Závislosti mezi komponentami  
  Kromě komponent sami můžete zobrazit závislosti mezi nimi. Šipky závislostí mezi dvě součásti ukazuje, že změny v návrhu jeden můžou ovlivnit návrh druhé. To obvykle dochází, protože jedna komponenta využívá služby nebo funkce, které jsou k dispozici jinou součástí, buď přímo nebo nepřímo.  
@@ -178,7 +178,7 @@ K zajištění, že softwarový systém nebo aplikace splňuje uživatelů potř
   
   Použití požadovaná rozhraní je obvykle vhodnější použít části. I když návrhu může trvat déle, výsledný systému je flexibilnější. Je také usnadňuje testování součástí samostatně. To umožňuje méně párování v jejich vývojových plánů.  
   
-##  <a name="Interactions"></a> Interakce mezi součástmi  
+## <a name="Interactions"></a> Interakce mezi součástmi  
  Hlavní doporučení v této části jsou následující:  
   
 - Identifikování případů použití vašeho systému.  
@@ -196,11 +196,11 @@ K zajištění, že softwarový systém nebo aplikace splňuje uživatelů potř
 ### <a name="identifying-the-initiating-events"></a>Identifikace zahájení události  
  Práci prováděnou Většina softwarových systémů můžete pohodlně rozdělit podle odpovědi, které poskytuje různé vstupy nebo události. Zahájení události může být jeden z následujících událostí:  
   
--   První akcí v případu použití. Může zobrazit v modelu požadavky jako krok v případu použití nebo akce v diagramu činnosti. Další informace najdete [diagramy případů použití UML: Pokyny pro](../modeling/uml-use-case-diagrams-guidelines.md) a [diagramy činnosti UML: Pokyny pro](../modeling/uml-activity-diagrams-guidelines.md).  
+- První akcí v případu použití. Může zobrazit v modelu požadavky jako krok v případu použití nebo akce v diagramu činnosti. Další informace najdete [diagramy případů použití UML: Pokyny pro](../modeling/uml-use-case-diagrams-guidelines.md) a [diagramy činnosti UML: Pokyny pro](../modeling/uml-activity-diagrams-guidelines.md).  
   
--   Zpráva v programové rozhraní. Pokud systém, který vyvíjíte je součástí větší systému, musí být popsány jako operaci v jednom z rozhraní komponenty. Zobrazit [komponent a jejich rozhraní](#Components).  
+- Zpráva v programové rozhraní. Pokud systém, který vyvíjíte je součástí větší systému, musí být popsány jako operaci v jednom z rozhraní komponenty. Zobrazit [komponent a jejich rozhraní](#Components).  
   
--   Konkrétní podmínky, který je monitorován pomocí vašeho systému nebo normální událost, jako je například denní dobu.  
+- Konkrétní podmínky, který je monitorován pomocí vašeho systému nebo normální událost, jako je například denní dobu.  
   
 ### <a name="describe-the-computations"></a>Popište výpočtů  
  Nakreslete sekvenční diagramy zobrazit, jak komponenty reagují na počáteční událost.  
@@ -218,14 +218,14 @@ K zajištění, že softwarový systém nebo aplikace splňuje uživatelů potř
   
  Je užitečné k přidání komentářů do diagramů aktivit nebo pořadí vědět, co bylo dosaženo po každé operaci. Můžete je zapsat také vliv jednotlivých operací ve své **místní neplatná následná** vlastnost.  
   
-###  <a name="Data"></a> Datový Model rozhraní a komponenty  
+### <a name="Data"></a> Datový Model rozhraní a komponenty  
  Definovat parametry a návratové hodnoty pro každou operaci v rozhraní komponenty. Pokud operace představují volání, jako jsou žádosti webové služby, parametry jsou tyto údaje, které jsou odeslány jako součást požadavku. Několik hodnoty jsou vráceny z operace, můžete použít parametry **směr** vlastnost nastavena na hodnotu **si**.  
   
  Každý parametr a návratová hodnota je typu. Můžete definovat tyto typy používání diagramů tříd UML. Nemáte k reprezentaci podrobnosti implementace v těchto diagramů. Například pokud jako XML přenášená data jsou s popisem, můžete použít přidružení pro reprezentaci jakéhokoli vztahu křížových odkazů mezi uzly XML a použít třídy představující uzly.  
   
  Komentáře lze použít k popisu obchodní omezení pro přidružení a atributy. Například pokud prostřednictvím položky z objednávky zákazníka musí pocházet ze stejného dodavatele, je to popisují s odkazem na přidružení mezi pořadí položek a položky v katalogu produktů a mezi položka katalogu a jeho dodavatele.  
   
-##  <a name="Patterns"></a> Vzory návrhu  
+## <a name="Patterns"></a> Vzory návrhu  
  Vzor návrhu je přehled toho, jak navrhnout konkrétní aspekt software, hlavně jeden, který se opakuje v různých součástí systému. Přijetím jednotný přístup napříč projektu můžete snížit náklady na návrh, zajistit konzistenci v uživatelském rozhraní a snížit náklady na principy a změny kódu.  
   
  Některé obecné návrhové vzory, třeba pozorovatel jsou dobře známé a široce použitelné. Kromě toho jsou vzorce, které se dají použít jenom pro váš projekt. Například v systému prodejní Web, bude existovat několik operací v kódu ve kterém se změny provedly pořadí na základě. Aby bylo zajištěno, že se v každé fázi přesně zobrazí stav objednávky, musí všechny tyto operace postupujte podle konkrétní protokol k aktualizaci databáze.  
@@ -236,25 +236,25 @@ K zajištění, že softwarový systém nebo aplikace splňuje uživatelů potř
   
  Vzor návrhu je popsaný v dokumentu a obvykle zahrnuje tyto části:  
   
--   Jméno.  
+- Jméno.  
   
--   Popis kontext, ve které se vztahuje. Jakých kritérií by měl vytvořit vývojář, jestli nebude lepší uplatňovat tento model?  
+- Popis kontext, ve které se vztahuje. Jakých kritérií by měl vytvořit vývojář, jestli nebude lepší uplatňovat tento model?  
   
--   Stručné vysvětlení problému, který řeší.  
+- Stručné vysvětlení problému, který řeší.  
   
--   Model hlavních částí a jejich vztahy. Může se jednat třídy nebo součásti a rozhraní se přidružení a závislostí mezi nimi. Elementy obvykle spadají do dvou kategorií:  
+- Model hlavních částí a jejich vztahy. Může se jednat třídy nebo součásti a rozhraní se přidružení a závislostí mezi nimi. Elementy obvykle spadají do dvou kategorií:  
   
-    -   Elementy, které vývojář musí replikovat v každé části kódu, kde se používá vzor. Typy šablon můžete použít k popisu tyto. Další informace najdete v tématu [diagramy případů použití UML: Referenční dokumentace](../modeling/uml-use-case-diagrams-reference.md).  
+    - Elementy, které vývojář musí replikovat v každé části kódu, kde se používá vzor. Typy šablon můžete použít k popisu tyto. Další informace najdete v tématu [diagramy případů použití UML: Referenční dokumentace](../modeling/uml-use-case-diagrams-reference.md).  
   
-    -   Prvky, který popisuje třídy rozhraní framework, které vývojář by měl používat.  
+    - Prvky, který popisuje třídy rozhraní framework, které vývojář by měl používat.  
   
--   Model interakcí mezi částmi, pomocí pořadí nebo aktivita diagramů.  
+- Model interakcí mezi částmi, pomocí pořadí nebo aktivita diagramů.  
   
--   Zásady vytváření názvů.  
+- Zásady vytváření názvů.  
   
--   Popis jak vzoru byl problém vyřešen.  
+- Popis jak vzoru byl problém vyřešen.  
   
--   Popis změn, která se můžou vývojáři moci přijmout.  
+- Popis změn, která se můžou vývojáři moci přijmout.  
   
 ## <a name="see-also"></a>Viz také  
  [Úpravy modelů a diagramů UML](../modeling/edit-uml-models-and-diagrams.md)   

@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c8a9661673adf6cdab2d9a880ce27197a4e53127
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: b2aff8e1b515f460e6fdc31a528e6730971b7853
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796553"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092277"
 ---
 # <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>Ladění pomocí ladicího programu za běhu v sadě Visual Studio
 
@@ -26,7 +26,7 @@ Ladění Just-In-Time funguje pro aplikace klasické pracovní plochy Windows. T
 > [!TIP]
 > Pokud chcete zastavit ladicí program za běhu dialogových oken povolí, ale není nainstalované Visual Studio, naleznete v tématu [zakázat ladění za běhu](../debugger/just-in-time-debugging-in-visual-studio.md). Pokud jste měli jednou nainstalovanou sadu Visual Studio, budete muset [zakázání Just-In-Time ladění z registru Windows](#disable-just-in-time-debugging-from-the-windows-registry).
 
-##  <a name="BKMK_Enabling"></a> Povolení nebo zakázání Just-In-Time ladění v sadě Visual Studio
+## <a name="BKMK_Enabling"></a> Povolení nebo zakázání Just-In-Time ladění v sadě Visual Studio
 
 >[!NOTE]
 >K povolení nebo zakázání Just-In-Time ladění, musíte používat Visual Studio jako správce. Povolení nebo zakázání Just-In-Time ladění nastaví klíč registru, a chcete-li změnit tento klíč může být nutná oprávnění správce. Otevřít Visual Studio jako správce, klikněte pravým tlačítkem na aplikaci Visual Studio a zvolte **spustit jako správce**.
@@ -51,25 +51,25 @@ Ladění Just-In-Time může být stále povoleno i v případě, že ve vašem 
 
 **Chcete-li zakázat Just-In-Time ladění pomocí úpravy registru:**
 
-1.  Z Windows **Start** nabídky, spusťte **Editor registru** (*regedit.exe*).
+1. Z Windows **Start** nabídky, spusťte **Editor registru** (*regedit.exe*).
 
-2.  V **Editor registru** okna, vyhledejte a odstraňte následující položky registru:
+2. V **Editor registru** okna, vyhledejte a odstraňte následující položky registru:
 
-    -   **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\\.NETFramework\DbgManagedDebugger**
+    - **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\\.NETFramework\DbgManagedDebugger**
 
-    -   **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AeDebug\Debugger**
+    - **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AeDebug\Debugger**
 
     ![Klíč registru JIT](../debugger/media/dbg-jit-registry.png "klíč registru JIT")
 
-3.  Pokud počítač používá 64bitový operační systém, odstraňte také následující položky registru:
+3. Pokud počítač používá 64bitový operační systém, odstraňte také následující položky registru:
 
-    -   **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\.NETFramework\DbgManagedDebugger**
+    - **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\.NETFramework\DbgManagedDebugger**
 
-    -   **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows NT\CurrentVersion\AeDebug\Debugger**
+    - **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows NT\CurrentVersion\AeDebug\Debugger**
 
     Zajistěte, aby odstranění nebo změně jiných klíčů registru.
 
-5.  Zavřít **Editor registru** okna.
+5. Zavřít **Editor registru** okna.
 
 ## <a name="enable-just-in-time-debugging-of-a-windows-form"></a>Povolit Just-In-Time ladění formuláře Windows
 
@@ -79,7 +79,7 @@ Ve výchozím nastavení mají aplikace formuláře Windows obslužnou rutinu v�
 
 Pokud chcete povolit Just-In-Time ladění místo standard pro zpracování chyb formuláře Windows, přidejte tato nastavení:
 
--  V `system.windows.forms` část *machine.config* nebo  *\<název aplikace >. exe.config* souboru `jitDebugging` hodnota, která se `true`:
+- V `system.windows.forms` část *machine.config* nebo  *\<název aplikace >. exe.config* souboru `jitDebugging` hodnota, která se `true`:
 
     ```xml
     <configuration>
@@ -87,7 +87,7 @@ Pokud chcete povolit Just-In-Time ladění místo standard pro zpracování chyb
     </configuration>
     ```
 
--  V aplikaci C++ formuláře Windows, také nastavit `DebuggableAttribute` k `true` v *.config* souboru nebo ve vašem kódu. Pokud kompilujete s [/zi](/cpp/build/reference/z7-zi-zi-debug-information-format) a bez [/og](/cpp/build/reference/og-global-optimizations), kompilátor nastaví tento atribut za vás. Pokud chcete ladit neoptimalizované verzi sestavení, ale je nutné nastavit `DebuggableAttribute` přidáním následujícího řádku ve vaší aplikaci *AssemblyInfo.cpp* souboru:
+- V aplikaci C++ formuláře Windows, také nastavit `DebuggableAttribute` k `true` v *.config* souboru nebo ve vašem kódu. Pokud kompilujete s [/zi](/cpp/build/reference/z7-zi-zi-debug-information-format) a bez [/og](/cpp/build/reference/og-global-optimizations), kompilátor nastaví tento atribut za vás. Pokud chcete ladit neoptimalizované verzi sestavení, ale je nutné nastavit `DebuggableAttribute` přidáním následujícího řádku ve vaší aplikaci *AssemblyInfo.cpp* souboru:
 
    ```cpp
    [assembly:System::Diagnostics::DebuggableAttribute(true, true)];
@@ -96,11 +96,11 @@ Pokud chcete povolit Just-In-Time ladění místo standard pro zpracování chyb
    Další informace naleznete v tématu <xref:System.Diagnostics.DebuggableAttribute>.
 
 ## <a name="BKMK_Using_JIT"></a>Použití Just-In-Time ladění
- Tento příklad vás provede Just-In-Time ladění, když aplikace vyvolá chybu.
+Tento příklad vás provede Just-In-Time ladění, když aplikace vyvolá chybu.
 
- - Musíte mít Visual Studio nainstalovali postupovat podle následujících kroků. Pokud nemáte Visual Studio, si můžete stáhnout bezplatnou [Visual Studio Community Edition](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=15).
+- Musíte mít Visual Studio nainstalovali postupovat podle následujících kroků. Pokud nemáte Visual Studio, si můžete stáhnout bezplatnou [Visual Studio Community Edition](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=15).
 
- - Ujistěte se, že Just-In-Time je ladění [povolené](#BKMK_Enabling) v **nástroje** > **možnosti** > **ladění**  >  **Just-In-Time**.
+- Ujistěte se, že Just-In-Time je ladění [povolené](#BKMK_Enabling) v **nástroje** > **možnosti** > **ladění**  >  **Just-In-Time**.
 
 V tomto příkladu provede konzolovou aplikaci C# v sadě Visual Studio, který vyvolá [NullReferenceException](/dotnet/api/system.nullreferenceexception).
 

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 50ca0b96ecee2c3537ce88c4468efee48c7cd732
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: cd02491b42e9e6a5d677eca35ccde2aa559352c4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55940774"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096878"
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>Obslužné rutiny události šíří změny mimo model
 
@@ -25,21 +25,21 @@ Grafické plochu a jiných prvcích uživatelského rozhraní jsou příkladem e
 
 ### <a name="to-define-a-store-event"></a>Chcete-li definovat událost úložiště
 
-1.  Vyberte typ události, ke které chcete monitorovat. Chcete-li zobrazit úplný seznam, podívejte se na vlastnosti <xref:Microsoft.VisualStudio.Modeling.EventManagerDirectory>. Každou vlastnost odpovídá typu události. Nejčastěji používané události, které typy jsou:
+1. Vyberte typ události, ke které chcete monitorovat. Chcete-li zobrazit úplný seznam, podívejte se na vlastnosti <xref:Microsoft.VisualStudio.Modeling.EventManagerDirectory>. Každou vlastnost odpovídá typu události. Nejčastěji používané události, které typy jsou:
 
-    -   `ElementAdded` -aktivuje, pokud prvek modelu, vztah odkazu, obrazec nebo spojnici se vytvoří.
+    - `ElementAdded` -aktivuje, pokud prvek modelu, vztah odkazu, obrazec nebo spojnici se vytvoří.
 
-    -   ElementPropertyChanged – aktivuje, když hodnota `Normal` doménovou vlastnost se změní. Událost se aktivuje jenom v případě, že novém i starém hodnoty nejsou shodné. Události nejde použít u vypočtené a vlastní vlastnosti úložiště.
+    - ElementPropertyChanged – aktivuje, když hodnota `Normal` doménovou vlastnost se změní. Událost se aktivuje jenom v případě, že novém i starém hodnoty nejsou shodné. Události nejde použít u vypočtené a vlastní vlastnosti úložiště.
 
          Ho nejde použít u vlastnosti rolí, které odpovídají vztah odkazy. Místo toho použijte `ElementAdded` monitorování doménového vztahu.
 
-    -   `ElementDeleted` -aktivovat po prvku modelu, relace, obrazec nebo spojnici byl odstraněn. Budete k němu přístup hodnoty vlastností elementu, ale nebude mít žádné vztahy s ostatními prvky.
+    - `ElementDeleted` -aktivovat po prvku modelu, relace, obrazec nebo spojnici byl odstraněn. Budete k němu přístup hodnoty vlastností elementu, ale nebude mít žádné vztahy s ostatními prvky.
 
-2.  Přidat definici částečné třídy pro _YourDsl_**DocData** v samostatném souboru kódu v **DslPackage** projektu.
+2. Přidat definici částečné třídy pro _YourDsl_**DocData** v samostatném souboru kódu v **DslPackage** projektu.
 
-3.  Psaní kódu události jako metody, jako v následujícím příkladu. Může to být `static`, pokud chcete získat přístup k `DocData`.
+3. Psaní kódu události jako metody, jako v následujícím příkladu. Může to být `static`, pokud chcete získat přístup k `DocData`.
 
-4.  Přepsat `OnDocumentLoaded()` zaregistrovat obslužnou rutinu. Pokud máte více než jednu obslužnou rutinu, můžete je zaregistrovat vše na jednom místě.
+4. Přepsat `OnDocumentLoaded()` zaregistrovat obslužnou rutinu. Pokud máte více než jednu obslužnou rutinu, můžete je zaregistrovat vše na jednom místě.
 
 Umístění registrační kód není důležité. `DocView.LoadView()` je alternativního umístění.
 
@@ -160,11 +160,11 @@ private static void AlbumTitleAdjuster(object sender,
 
 Pokud píšete událost, která aktualizuje ve storu:
 
--   Použití `store.InUndoRedoOrRollback` vyhnout se provádění změn k prvkům modelu v vrácení zpět. Správce transakcí všechno, co nastavíte v úložišti zpět do původního stavu.
+- Použití `store.InUndoRedoOrRollback` vyhnout se provádění změn k prvkům modelu v vrácení zpět. Správce transakcí všechno, co nastavíte v úložišti zpět do původního stavu.
 
--   Použití `store.InSerializationTransaction` pro vyvarování změny při načítání modelu ze souboru.
+- Použití `store.InSerializationTransaction` pro vyvarování změny při načítání modelu ze souboru.
 
--   Změny způsobí další události, které mají být aktivované. Ujistěte se, že byste se vyhnout nekonečnou smyčku.
+- Změny způsobí další události, které mají být aktivované. Ujistěte se, že byste se vyhnout nekonečnou smyčku.
 
 ## <a name="store-event-types"></a>Typy událostí Store
 

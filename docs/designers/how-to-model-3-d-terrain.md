@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a18f986b64a58f4b5d9a8cad74ce118985b06c96
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 41974aee19cf1e4919028d5ef0f0e9b53c6b369e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55909372"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095162"
 ---
 # <a name="how-to-model-3d-terrain"></a>Postupy: Modelování 3D terénu
 
@@ -29,22 +29,22 @@ Jakmile budete hotovi, model by měl vypadat nějak takto:
 
 Než začnete, ujistěte se, že **vlastnosti** okno a **nástrojů** jsou zobrazeny.
 
-1.  Vytvoření 3D modelu, se kterým chcete pracovat. Informace o tom, jak přidat modelu do projektu naleznete v části Začínáme v [editoru modelů](../designers/model-editor.md).
+1. Vytvoření 3D modelu, se kterým chcete pracovat. Informace o tom, jak přidat modelu do projektu naleznete v části Začínáme v [editoru modelů](../designers/model-editor.md).
 
-2.  Přidáte do roviny do scény. V **nástrojů**v části **tvary**vyberte **roviny** a přesuňte jej na návrhovou plochu.
+2. Přidáte do roviny do scény. V **nástrojů**v části **tvary**vyberte **roviny** a přesuňte jej na návrhovou plochu.
 
     > [!TIP]
     > Pro usnadnění práce s objekt roviny, můžete ho rámce v návrhové ploše. V **vyberte** režimu, vyberte objekt roviny a pak na panelu nástrojů editoru modelů, zvolte **orámovat objekt** tlačítko.
 
-3.  Zadejte režimu výběru ploch. Na panelu nástrojů editoru modelů **tváří vybrat**.
+3. Zadejte režimu výběru ploch. Na panelu nástrojů editoru modelů **tváří vybrat**.
 
-4.  Rozdělit plochy. V režimu výběru ploch zvolte jednou rovinou aktivace pro výběr a klikněte na tlačítko ho znovu a vyberte jeho pouze pro rozpoznávání tváře. Na panelu nástrojů editoru modelů **rozdělit plochu**. Tento postup přidá nové vrcholy k rovině ho rozdělit do čtyř oddílů stejně velké.
+4. Rozdělit plochy. V režimu výběru ploch zvolte jednou rovinou aktivace pro výběr a klikněte na tlačítko ho znovu a vyberte jeho pouze pro rozpoznávání tváře. Na panelu nástrojů editoru modelů **rozdělit plochu**. Tento postup přidá nové vrcholy k rovině ho rozdělit do čtyř oddílů stejně velké.
 
-5.  Vytvořte další dělení. Pomocí nových ploch stále vybranou, zvolte **rozdělit plochu** ještě dvakrát. Tím se vytvoří celkem 64 tváří. Vytvořením další dělení můžete udělit terénu více podrobností.
+5. Vytvořte další dělení. Pomocí nových ploch stále vybranou, zvolte **rozdělit plochu** ještě dvakrát. Tím se vytvoří celkem 64 tváří. Vytvořením další dělení můžete udělit terénu více podrobností.
 
-6.  Zadejte režim výběru bodu. Na panelu nástrojů editoru modelů **vybrat bod**.
+6. Zadejte režim výběru bodu. Na panelu nástrojů editoru modelů **vybrat bod**.
 
-7.  Změna bodu, aby vytvořil terénu funkci. V režimu výběru bodu, vyberte jednu z bodů a pak na panelu nástrojů editoru modelů, zvolte **přeložit** nástroj. Pole, který představuje bod se zobrazí na návrhové ploše. Použijte na zelenou šipku a přesunout do pole a změna výšky bodu. Opakujte tento krok pro různých fázích pro vytvoření zajímavých funkcí terénu.
+7. Změna bodu, aby vytvořil terénu funkci. V režimu výběru bodu, vyberte jednu z bodů a pak na panelu nástrojů editoru modelů, zvolte **přeložit** nástroj. Pole, který představuje bod se zobrazí na návrhové ploše. Použijte na zelenou šipku a přesunout do pole a změna výšky bodu. Opakujte tento krok pro různých fázích pro vytvoření zajímavých funkcí terénu.
 
     > [!TIP]
     > Můžete vybrat několik bodů najednou k jejich úpravě jednotným způsobem.

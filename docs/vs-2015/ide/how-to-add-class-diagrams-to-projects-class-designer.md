@@ -12,12 +12,12 @@ caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3ab062ea6f7dfac6001d016704d627c716079989
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 09d423ab5f46f27e9dee4ce15f4b6dbec74d0124
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54760263"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097749"
 ---
 # <a name="how-to-add-class-diagrams-to-projects-class-designer"></a>Postupy: Přidání diagramů tříd do projektů (návrhář tříd)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,17 +28,17 @@ Přidání diagramu tříd do projektu Visual C# .NET, Visual Basic .NET nebo C+
   
 ### <a name="to-add-a-blank-class-diagram-to-a-project"></a>Přidání prázdného diagramu tříd do projektu  
   
-1.  V Průzkumníku řešení klikněte pravým tlačítkem myši na název projektu. Klikněte na tlačítko **přidat novou položku** nebo **přidat**, **nová položka**.  
+1. V Průzkumníku řešení klikněte pravým tlačítkem myši na název projektu. Klikněte na tlačítko **přidat novou položku** nebo **přidat**, **nová položka**.  
   
-2.  Ze seznamu šablon vyberte **Diagram tříd**. Pro projekty Visual C++, podívejte se do části **šablony**a potom v části **nástroj** vyhledejte tuto šablonu.  
+2. Ze seznamu šablon vyberte **Diagram tříd**. Pro projekty Visual C++, podívejte se do části **šablony**a potom v části **nástroj** vyhledejte tuto šablonu.  
   
      Diagram tříd se otevře v Návrháři tříd a zobrazí se jako soubor s příponou .cd v hierarchii projektu v Průzkumníku řešení. Pomocí sady nástrojů Návrháře tříd přetáhněte do diagramu tvary a čáry.  
   
-3.  Chcete-li přidat více diagramů tříd, opakujte kroky v tomto postupu.  
+3. Chcete-li přidat více diagramů tříd, opakujte kroky v tomto postupu.  
   
 ### <a name="to-add-a-class-diagram-based-on-existing-types"></a>Přidání diagramu tříd založeného na existujících typech  
   
-1.  V Průzkumníku řešení otevřete místní nabídku souboru třídy a pak zvolte **zobrazit Diagram tříd**.  
+1. V Průzkumníku řešení otevřete místní nabídku souboru třídy a pak zvolte **zobrazit Diagram tříd**.  
   
      -nebo-  
   
@@ -46,7 +46,7 @@ Přidání diagramu tříd do projektu Visual C# .NET, Visual Basic .NET nebo C+
   
 ### <a name="to-display-the-contents-of-a-complete-project-in-a-class-diagram"></a>Chcete-li zobrazit obsah dokončený projekt v diagramu tříd  
   
-1.  V Průzkumníku řešení nebo zobrazení tříd, klikněte pravým tlačítkem na projekt a zvolte **zobrazení**, klikněte na tlačítko **zobrazit Diagram tříd**.  
+1. V Průzkumníku řešení nebo zobrazení tříd, klikněte pravým tlačítkem na projekt a zvolte **zobrazení**, klikněte na tlačítko **zobrazit Diagram tříd**.  
   
      Vytvoří se automaticky vyplněný diagram tříd.  
   

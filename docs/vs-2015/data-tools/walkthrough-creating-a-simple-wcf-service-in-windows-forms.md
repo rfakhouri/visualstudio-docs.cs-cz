@@ -14,12 +14,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c2c5fba8914ba3b5404412c0cbc55af36fe15c21
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: f5137464f253469e62bf4a22c415906a4a3f352a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59661035"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096085"
 ---
 # <a name="walkthrough-creating-a-simple-wcf-service-in-windows-forms"></a>Návod: Vytvoření jednoduché služby WCF ve Windows Forms
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,16 +32,16 @@ Tento návod ukazuje, jak vytvořit jednoduchou [!INCLUDE[vsindigo](../includes/
   
 #### <a name="to-create-a-wcf-service"></a>Vytvoření služby WCF  
   
-1.  Na **souboru** nabídky, přejděte k **nový** a potom klikněte na tlačítko **projektu**.  
+1. Na **souboru** nabídky, přejděte k **nový** a potom klikněte na tlačítko **projektu**.  
   
-2.  V **nový projekt** dialogového okna rozbalte **jazyka Visual Basic** nebo **Visual C#** uzel a klikněte na tlačítko **WCF**následovaný **WCF Knihovna služby**. Klikněte na tlačítko **OK** pro otevření projektu.  
+2. V **nový projekt** dialogového okna rozbalte **jazyka Visual Basic** nebo **Visual C#** uzel a klikněte na tlačítko **WCF**následovaný **WCF Knihovna služby**. Klikněte na tlačítko **OK** pro otevření projektu.  
   
      ![Projekt knihovny služby WCF](../data-tools/media/wcf1.PNG "wcf1")  
   
     > [!NOTE]
     >  Tím se vytvoří funkční služba, která můžete otestovat a získat přístup. Následující kroky ukazují, jak je možné změnit výchozí metodu chcete použít jiný datový typ. V reálné aplikaci byste také přidat vašich vlastních funkcích ve službě.  
   
-3.  ![Soubor IService1](../data-tools/media/wcf2.png "wcf2")  
+3. ![Soubor IService1](../data-tools/media/wcf2.png "wcf2")  
   
      V **Průzkumníka řešení**, dvakrát klikněte na panel IService1.vb nebo IService1.cs a vyhledejte následující řádek:  
   
@@ -54,7 +54,7 @@ Tento návod ukazuje, jak vytvořit jednoduchou [!INCLUDE[vsindigo](../includes/
   
      Ve výše uvedeném kódu, Všimněte si, `<OperationContract()>` nebo `[OperationContract]` atributy. Tyto atributy jsou požadovány pro libovolnou metodu určeného službou.  
   
-4.  ![Soubor Service1](../data-tools/media/wcf3.png "wcf3")  
+4. ![Soubor Service1](../data-tools/media/wcf3.png "wcf3")  
   
      V **Průzkumníka řešení**, dvakrát klikněte na panel Service1.vb nebo Service1.cs a vyhledejte následující řádek:  
   
@@ -69,58 +69,58 @@ Tento návod ukazuje, jak vytvořit jednoduchou [!INCLUDE[vsindigo](../includes/
   
 #### <a name="to-test-a-wcf-service"></a>K otestování služby WCF  
   
-1.  Stisknutím klávesy **F5** ke spuštění služby. A **testovací klient WCF** zobrazí formulář a načte službu.  
+1. Stisknutím klávesy **F5** ke spuštění služby. A **testovací klient WCF** zobrazí formulář a načte službu.  
   
-2.  V **testovací klient WCF** formuláře, dvakrát klikněte **GetData()** metody **IService1**. **GetData** kartě se zobrazí.  
+2. V **testovací klient WCF** formuláře, dvakrát klikněte **GetData()** metody **IService1**. **GetData** kartě se zobrazí.  
   
      ![GetData&#40; &#41; metoda](../data-tools/media/wcf4.png "wcf4")  
   
-3.  V **žádosti** vyberte **hodnotu** pole a zadejte `Hello`.  
+3. V **žádosti** vyberte **hodnotu** pole a zadejte `Hello`.  
   
      ![Pole hodnoty](../data-tools/media/wcf5.png "wcf5")  
   
-4.  Klikněte na tlačítko **Invoke** tlačítko. Pokud **upozornění zabezpečení** dialogové okno se zobrazí, klikněte na tlačítko **OK**. Výsledek se zobrazí v **odpovědi** pole.  
+4. Klikněte na tlačítko **Invoke** tlačítko. Pokud **upozornění zabezpečení** dialogové okno se zobrazí, klikněte na tlačítko **OK**. Výsledek se zobrazí v **odpovědi** pole.  
   
      ![Výsledek v poli odpovědi](../data-tools/media/wcf6.png "wcf6")  
   
-5.  Na **souboru** nabídky, klikněte na tlačítko **ukončovací** testovací formulář zavřete.  
+5. Na **souboru** nabídky, klikněte na tlačítko **ukončovací** testovací formulář zavřete.  
   
 ## <a name="accessing-the-service"></a>Přístupu ke službě  
   
 #### <a name="to-reference-a-wcf-service"></a>K odkazu na službu WCF  
   
-1.  Na **souboru** nabídky, přejděte k **přidat** a potom klikněte na tlačítko **nový projekt**.  
+1. Na **souboru** nabídky, přejděte k **přidat** a potom klikněte na tlačítko **nový projekt**.  
   
-2.  V **nový projekt** dialogového okna rozbalte **jazyka Visual Basic** nebo **Visual C#** uzel a vyberte možnost **Windows**a pak vyberte **Aplikaci Windows Forms**. Klikněte na tlačítko **OK** pro otevření projektu.  
+2. V **nový projekt** dialogového okna rozbalte **jazyka Visual Basic** nebo **Visual C#** uzel a vyberte možnost **Windows**a pak vyberte **Aplikaci Windows Forms**. Klikněte na tlačítko **OK** pro otevření projektu.  
   
      ![Projekt aplikace Windows Forms](../data-tools/media/wcf7.png "wcf7")  
   
-3.  Klikněte pravým tlačítkem na **WindowsApplication1** a klikněte na tlačítko **přidat odkaz na službu**. **Přidat odkaz na službu** se zobrazí dialogové okno.  
+3. Klikněte pravým tlačítkem na **WindowsApplication1** a klikněte na tlačítko **přidat odkaz na službu**. **Přidat odkaz na službu** se zobrazí dialogové okno.  
   
-4.  V **přidat odkaz na službu** dialogové okno, klikněte na tlačítko **Discover**.  
+4. V **přidat odkaz na službu** dialogové okno, klikněte na tlačítko **Discover**.  
   
      ![V dialogovém okně Přidat odkaz na službu](../data-tools/media/wcf8.png "wcf8")  
   
      **Service1** se zobrazí v **služby** podokně.  
   
-5.  Klikněte na tlačítko **OK** přidáte odkaz na službu.  
+5. Klikněte na tlačítko **OK** přidáte odkaz na službu.  
   
 #### <a name="to-build-a-client-application"></a>K vytvoření klientské aplikace  
   
-1.  V **Průzkumníka řešení**, dvakrát klikněte na panel **Form1.vb** nebo **Form1.cs** otevřete návrhář formulářů Windows, pokud ještě není otevřený.  
+1. V **Průzkumníka řešení**, dvakrát klikněte na panel **Form1.vb** nebo **Form1.cs** otevřete návrhář formulářů Windows, pokud ještě není otevřený.  
   
-2.  Z **nástrojů**, přetáhněte `TextBox` ovládací prvek, `Label` ovládacího prvku a `Button` ovládací prvek na formuláři.  
+2. Z **nástrojů**, přetáhněte `TextBox` ovládací prvek, `Label` ovládacího prvku a `Button` ovládací prvek na formuláři.  
   
      ![Přidání ovládacích prvků na formuláři](../data-tools/media/wcf9.png "wcf9")  
   
-3.  Dvakrát klikněte `Button`a přidejte následující kód `Click` obslužné rutiny události:  
+3. Dvakrát klikněte `Button`a přidejte následující kód `Click` obslužné rutiny události:  
   
      [!code-csharp[WCFWalkthrough#3](../snippets/csharp/VS_Snippets_VBCSharp/wcfwalkthrough/cs/form1.cs#3)]
      [!code-vb[WCFWalkthrough#3](../snippets/visualbasic/VS_Snippets_VBCSharp/wcfwalkthrough/vb/form1.vb#3)]  
   
-4.  V **Průzkumníka řešení**, klikněte pravým tlačítkem na **WindowsApplication1** a klikněte na tlačítko **nastavit jako spouštěný projekt**.  
+4. V **Průzkumníka řešení**, klikněte pravým tlačítkem na **WindowsApplication1** a klikněte na tlačítko **nastavit jako spouštěný projekt**.  
   
-5.  Stisknutím klávesy **F5** spusťte projekt. Zadejte nějaký text a klikněte na tlačítko. Popisek se zobrazí "zadali jste:" a text, který jste zadali.  
+5. Stisknutím klávesy **F5** spusťte projekt. Zadejte nějaký text a klikněte na tlačítko. Popisek se zobrazí "zadali jste:" a text, který jste zadali.  
   
      ![Formulář, který zobrazuje výsledek](../data-tools/media/wcf10.png "wcf10")  
   

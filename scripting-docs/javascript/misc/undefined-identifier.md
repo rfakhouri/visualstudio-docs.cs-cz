@@ -14,25 +14,25 @@ ms.assetid: 8c8000d9-dd14-487e-922d-98430024a0f6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 33d659b1c5dddc05d08088e876cb5661c1694766
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: ee928a945081d1ac1369a71d11f74f2c5db2b365
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56840508"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097100"
 ---
 # <a name="undefined-identifier"></a>Nedefinovaný identifikátor
 Pokusili jste se použít identifikátor, který [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] kompilátoru nebylo rozpoznáno. Nedefinovaná hodnota se vrátí při každém použití:  
   
--   Proměnná, která neexistuje,  
+- Proměnná, která neexistuje,  
   
--   Proměnná, která byla deklarována, ale nebyla nikdy hodnotu přiřazenou  
+- Proměnná, která byla deklarována, ale nebyla nikdy hodnotu přiřazenou  
   
--   vlastnosti objektu, který neexistuje.  
+- vlastnosti objektu, který neexistuje.  
   
 ### <a name="to-correct-this-error"></a>Oprava této chyby  
   
--   Deklarujte proměnnou **var** – příkaz (jako v `var` x;).  
+- Deklarujte proměnnou **var** – příkaz (jako v `var` x;).  
   
 ## <a name="see-also"></a>Viz také  
  [Proměnné](../../javascript/variables-javascript.md)   

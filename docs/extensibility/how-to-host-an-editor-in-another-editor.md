@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5dffffd8f2857dbb048b829cec0d2e7847a05c5f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 95e48f6ab7ea6603308f4d6b9fb547e25901a398
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55021137"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097450"
 ---
 # <a name="how-to-host-an-editor-in-another-editor"></a>Postupy: Hostitel editoru v jiném editoru
 
@@ -23,17 +23,17 @@ V sadě Visual Studio můžete hostovat jeden editor uvnitř jiného tak, že za
 
 ## <a name="to-set-up-the-window-frame-to-host-an-editor"></a>Nastavit okno rámce pro hostování editoru
 
-1.  Určení editoru jako hostované editor vytvořením podřízené podokno okna.
+1. Určení editoru jako hostované editor vytvořením podřízené podokno okna.
 
      Toto podokno je, kam se obrátit textového editoru.
 
-2.  Vytvoření hostujícím editorem pomocí <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> nebo <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenSpecificEditor%2A> metody.
+2. Vytvoření hostujícím editorem pomocí <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> nebo <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenSpecificEditor%2A> metody.
 
-3.  Nastavte <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID2.VSFPROPID_ParentHwnd> a <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID2.VSFPROPID_ParentFrame> vlastnosti v implementaci rámce okna editoru prostředí tím, že předáte tyto vlastnosti jako parametry <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.SetProperty%2A> metoda, v uvedeném pořadí.
+3. Nastavte <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID2.VSFPROPID_ParentHwnd> a <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID2.VSFPROPID_ParentFrame> vlastnosti v implementaci rámce okna editoru prostředí tím, že předáte tyto vlastnosti jako parametry <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.SetProperty%2A> metoda, v uvedeném pořadí.
 
      Pokud potřebujete načíst tyto parametry, předat vlastnosti tak, aby <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.GetProperty%2A> metody.
 
-4.  Volání <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.Show%2A> metody pro editor omezením.
+4. Volání <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.Show%2A> metody pro editor omezením.
 
      Editoru se zobrazí v podokně prostředí obsahující editoru.
 

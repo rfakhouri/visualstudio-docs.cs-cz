@@ -1,5 +1,5 @@
 ---
-title: 'Průvodce: Zaznamenání grafických informací | Dokumentace Microsoftu'
+title: 'Návod: Zaznamenání grafických informací | Dokumentace Microsoftu'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 48f12f6e-57b4-48ec-a145-89fa71a42424
@@ -8,21 +8,21 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24ddbcef7c4ebfaa61dfd225c2d1fa13a23b3344
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: fd7136367bfb883cfc5d962a1373fec738413fc6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56711771"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092250"
 ---
-# <a name="walkthrough-capturing-graphics-information"></a>Průvodce: Zaznamenání grafických informací
+# <a name="walkthrough-capturing-graphics-information"></a>Návod: Zaznamenání grafických informací
 Tento návod ukazuje, jak používat [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] diagnostiky grafiky k ručně zachytit informace grafiky z aplikace Direct3D.
 
  Tento návod ilustruje tyto úkoly:
 
--   Zachycení diagnostiky grafiky do vaší aplikace
+- Zachycení diagnostiky grafiky do vaší aplikace
 
--   Zachycení informací grafiky
+- Zachycení informací grafiky
 
 ## <a name="capturing-graphics-information"></a>Zachycení informací grafiky
  Použití nástrojů diagnostiky grafiky, je nejprve nutné zachytit informace grafiky, která ho využívá. K povolení funkce capture, použijte **spustit diagnostiku** příkaz, který připojí nástroj Diagnostika grafiky do vaší aplikace při spuštění.
@@ -56,7 +56,7 @@ Tento návod ukazuje, jak používat [!INCLUDE[vsprvs](../../code-quality/includ
 ## <a name="next-steps"></a>Další kroky
  Tento názorný postup ukázal, jak lze zachytit informace grafiky ručně. V dalším kroku vezměte v úvahu tuto možnost:
 
--   Zjistěte, jak analyzovat zachycené informace grafiky pomocí nástrojů diagnostiky grafiky. Zobrazit [přehled](overview-of-visual-studio-graphics-diagnostics.md).
+- Zjistěte, jak analyzovat zachycené informace grafiky pomocí nástrojů diagnostiky grafiky. Zobrazit [přehled](overview-of-visual-studio-graphics-diagnostics.md).
 
 ## <a name="see-also"></a>Viz také
 - [Zaznamenání grafických informací](capturing-graphics-information.md)

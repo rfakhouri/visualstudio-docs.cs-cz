@@ -10,12 +10,12 @@ ms.assetid: e0f666a0-92a7-4f9c-ba79-d05b13fb7f11
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4739565408a16ecaeee668264595ec48620ec847
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: fe6870046d1dd15c7bc5795dd82d393272ca6b1e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54761012"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097359"
 ---
 # <a name="migrating-a-legacy-language-service"></a>Migrace služby starší verze jazyka
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -39,9 +39,9 @@ Služby starší verze jazyka můžete migrovat na novější verzi sady Visual 
   
 #### <a name="to-migrate-a-visual-studio-2008-language-service-to-a-later-version"></a>Migrovat na novější verzi jazyka služby Visual Studio 2008  
   
-1.  Nainstalujte novější verze sady Visual Studio a Visual Studio SDK. Další informace o způsobech instalace sady SDK najdete v tématu [instalace sady Visual Studio SDK](../../extensibility/installing-the-visual-studio-sdk.md).  
+1. Nainstalujte novější verze sady Visual Studio a Visual Studio SDK. Další informace o způsobech instalace sady SDK najdete v tématu [instalace sady Visual Studio SDK](../../extensibility/installing-the-visual-studio-sdk.md).  
   
-2.  Upravte soubor RegExLangServ.csproj (bez načtení jeho v sadě Visual Studio.  
+2. Upravte soubor RegExLangServ.csproj (bez načtení jeho v sadě Visual Studio.  
   
      V `Import` uzel, který odkazuje na soubor Microsoft.VsSDK.targets nahraďte hodnotu s následujícím textem.  
   
@@ -49,29 +49,29 @@ Služby starší verze jazyka můžete migrovat na novější verzi sady Visual 
     $(MSBuildExtensionsPath)\Microsoft\VisualStudio\v14.0\VSSDK\Microsoft.VsSDK.targets  
     ```  
   
-3.  Soubor uložte a zavřete jej.  
+3. Soubor uložte a zavřete jej.  
   
-4.  Otevřete řešení RegExLangServ.sln.  
+4. Otevřete řešení RegExLangServ.sln.  
   
-5.  **Jednosměrnou aktualizaci** zobrazí se okno. Klikněte na **OK**.  
+5. **Jednosměrnou aktualizaci** zobrazí se okno. Klikněte na **OK**.  
   
-6.  Aktualizujte vlastnosti projektu. Otevřít **vlastnosti projektu** tak, že vyberete uzel projektu v okně **Průzkumníku řešení**, pravým tlačítkem myši a vyberete **vlastnosti**.  
+6. Aktualizujte vlastnosti projektu. Otevřít **vlastnosti projektu** tak, že vyberete uzel projektu v okně **Průzkumníku řešení**, pravým tlačítkem myši a vyberete **vlastnosti**.  
   
-    -   Na **aplikace** kartu, změňte **Cílová architektura** k **4.6.1**.  
+    - Na **aplikace** kartu, změňte **Cílová architektura** k **4.6.1**.  
   
-    -   Na **ladění** kartě **externí program Start** zadejte  **\<cestu instalace sady Visual Studio > \Common7\IDE\devenv.exe.**.  
+    - Na **ladění** kartě **externí program Start** zadejte  **\<cestu instalace sady Visual Studio > \Common7\IDE\devenv.exe.**.  
   
          V **argumenty příkazového řádku** zadejte /**rootsuffix Exp**.  
   
-7.  Aktualizujte tyto odkazy:  
+7. Aktualizujte tyto odkazy:  
   
-    -   Odeberte odkaz na Microsoft.VisualStudio.Shell.9.0.dll a pak přidejte odkazy na Microsoft.VisualStudio.Shell.14.0.dll a Microsoft.VisualStudio.Shell.Immutable.11.0.dll.  
+    - Odeberte odkaz na Microsoft.VisualStudio.Shell.9.0.dll a pak přidejte odkazy na Microsoft.VisualStudio.Shell.14.0.dll a Microsoft.VisualStudio.Shell.Immutable.11.0.dll.  
   
-    -   Odeberte odkaz na Microsoft.VisualStudio.Package.LanguageService.9.0.dll a pak přidejte odkaz na Microsoft.VisualStudio.Package.LanguageService.14.0.dll.  
+    - Odeberte odkaz na Microsoft.VisualStudio.Package.LanguageService.9.0.dll a pak přidejte odkaz na Microsoft.VisualStudio.Package.LanguageService.14.0.dll.  
   
-    -   Přidejte odkaz na Microsoft.VisualStudio.Shell.Interop.10.0.dll.  
+    - Přidejte odkaz na Microsoft.VisualStudio.Shell.Interop.10.0.dll.  
   
-8.  Otevřete soubor VsPkg.cs a změňte hodnotu `DefaultRegistryRoot` atribut  
+8. Otevřete soubor VsPkg.cs a změňte hodnotu `DefaultRegistryRoot` atribut  
   
     ```  
     "Software\\Microsoft\\VisualStudio\\14.0Exp"  
@@ -85,25 +85,25 @@ Služby starší verze jazyka můžete migrovat na novější verzi sady Visual 
   
 10. Musíte přidat soubor source.extension.vsixmanifest.  
   
-    -   Zkopírujte tento soubor do adresáře vašeho projektu z existujícího rozšíření. (Jedním ze způsobů, jak tento soubor je vytvoření projektu VSIX (v části **souboru**, klikněte na tlačítko **nový**, pak klikněte na tlačítko **projektu**. V jazyce Visual Basic nebo C# kliknutím **rozšiřitelnost**a pak vyberte **projekt VSIX**.)  
+    - Zkopírujte tento soubor do adresáře vašeho projektu z existujícího rozšíření. (Jedním ze způsobů, jak tento soubor je vytvoření projektu VSIX (v části **souboru**, klikněte na tlačítko **nový**, pak klikněte na tlačítko **projektu**. V jazyce Visual Basic nebo C# kliknutím **rozšiřitelnost**a pak vyberte **projekt VSIX**.)  
   
-    -   Přidejte soubor do projektu.  
+    - Přidejte soubor do projektu.  
   
-    -   V souboru **vlastnosti**, nastavte **akce sestavení** k **žádný**.  
+    - V souboru **vlastnosti**, nastavte **akce sestavení** k **žádný**.  
   
-    -   Otevře soubor **editoru manifestu VSIX**.  
+    - Otevře soubor **editoru manifestu VSIX**.  
   
-    -   Změňte následující pole:  
+    - Změňte následující pole:  
   
-    -   **ID**: RegExLangServ  
+    - **ID**: RegExLangServ  
   
-    -   **Název produktu**: RegExLangServ  
+    - **Název produktu**: RegExLangServ  
   
-    -   **Popis**: Služba jazyka regulárních výrazů.  
+    - **Popis**: Služba jazyka regulárních výrazů.  
   
-    -   V části **prostředky**, klikněte na tlačítko **nový**, vyberte **typ** k **Microsoft.VisualStudio.VsPackage**, nastavte **zdroj** k **projekt v aktuálním řešení**a pak nastavte **projektu** k **RegExLangServ**.  
+    - V části **prostředky**, klikněte na tlačítko **nový**, vyberte **typ** k **Microsoft.VisualStudio.VsPackage**, nastavte **zdroj** k **projekt v aktuálním řešení**a pak nastavte **projektu** k **RegExLangServ**.  
   
-    -   Soubor uložte a zavřete.  
+    - Soubor uložte a zavřete.  
   
 11. Sestavte řešení. Vytvořené soubory, které jsou nasazené na **%USERPROFILE%\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\MSIT\ RegExLangServ\\**.  
   

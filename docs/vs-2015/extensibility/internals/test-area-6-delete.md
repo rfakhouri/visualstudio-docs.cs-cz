@@ -11,12 +11,12 @@ ms.assetid: 6f2e872c-5ba2-4303-9f50-a90cef9a6225
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 206835d92a2fca27bed2cbb8a96b99e6b7c8a082
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3ffe786b5bc5f6d0bb0233fbb431988e0145611d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54764058"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094865"
 ---
 # <a name="test-area-6-delete"></a>Testovací oblast 6: Odstranit
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,20 +31,20 @@ Tato oblast testovací modul plug-in správy zdrojového kódu zahrnuje akce ods
   
 - Složky  
   
-- Projekt  
+- Project  
   
   V závislosti na typu projektu, může mít možnost **odebrat** projektu (ponechá soubory na disku) nebo **odstranit** projektu (odebere soubory na disku). Obě akce odebere projekt nebo položku z **Průzkumníka řešení**.  
   
 ## <a name="expected-behavior"></a>Očekávané chování  
  Očekávané chování u testovací případy v testovací oblast odstranění je:  
   
--   Odstraněné položky už nejsou viditelné v rámci **Průzkumníka řešení**.  
+- Odstraněné položky už nejsou viditelné v rámci **Průzkumníka řešení**.  
   
--   Nadřazený odstraněný projekt nebo položku je rezervován podle potřeby (případně s výzvou.)  
+- Nadřazený odstraněný projekt nebo položku je rezervován podle potřeby (případně s výzvou.)  
   
--   Po odstranění rezervovaný nebo položka se přidala, se nezobrazí v **čekající vrácení se změnami** okna.  
+- Po odstranění rezervovaný nebo položka se přidala, se nezobrazí v **čekající vrácení se změnami** okna.  
   
--   Položka stále existuje v rámci úložiště správy zdrojových kódů, i po jejím odstranění a musí být ručně odstraněna.  
+- Položka stále existuje v rámci úložiště správy zdrojových kódů, i po jejím odstranění a musí být ručně odstraněna.  
   
 |Akce|Testovací kroky|Chcete-li ověřit očekávané výsledky|  
 |------------|----------------|--------------------------------|  

@@ -6,12 +6,12 @@ ms.assetid: e970d936-1df4-4c0c-96e3-ef6191295882
 caps.latest.revision: 14
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 4d75c93f2ff1678b1d9790462bc816ea35f8acd9
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 346cc2b68193a72d532ba0542cc406e4afa75234
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59662072"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097385"
 ---
 # <a name="learn-about-mobile-development-with-xamarin"></a>Informace o vývoji pro mobilní zařízení v Xamarinu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,9 +26,9 @@ Toto téma vás přesměruje na přehled materiál, který vám pomůže pochopi
 ## <a name="essentials-introduction-to-xamarin"></a>Základy: Úvod do Xamarin  
  *10-20 minut*  
   
-1.  [Mobile Apps v sadě Visual Studio s Xamarinem](https://www.visualstudio.com/explore/xamarin-vs) (visualstudio.com) poskytuje velmi krátké doběhu primární charakteristiky Xamarin.  
+1. [Mobile Apps v sadě Visual Studio s Xamarinem](https://www.visualstudio.com/explore/xamarin-vs) (visualstudio.com) poskytuje velmi krátké doběhu primární charakteristiky Xamarin.  
   
-2.  [Vytváření Cross-Platform Mobile Apps pomocí jazyka C# a Visual Studio](https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2015-Final-Release-Event/Building-cross-platform-mobile-apps-using-C-and-Visual-Studio-2015) (Channel9, 15m16s) s Xamarin evangelista, James Montemagno. První tři minuty se přehled Xamarin, za nímž následuje ukázky kódu.  
+2. [Vytváření Cross-Platform Mobile Apps pomocí jazyka C# a Visual Studio](https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2015-Final-Release-Event/Building-cross-platform-mobile-apps-using-C-and-Visual-Studio-2015) (Channel9, 15m16s) s Xamarin evangelista, James Montemagno. První tři minuty se přehled Xamarin, za nímž následuje ukázky kódu.  
   
 ## <a name="essentials-overview-of-the-visual-studio-and-xamarin-environment"></a>Základy: Přehled sady Visual Studio a Xamarin prostředí  
  *5 – 15 minutách*  
@@ -44,9 +44,9 @@ Toto téma vás přesměruje na přehled materiál, který vám pomůže pochopi
 ## <a name="essentials-how-projects-are-structured"></a>Základy: Strukturování projektů  
  *10 – 30 minut*  
   
-1.  [Kód – možnosti pro sdílení obsahu](http://developer.xamarin.com/guides/cross-platform/application_fundamentals/building_cross_platform_applications/sharing_code_options/) (xamarin.com). Doporučujeme, abyste pomocí možnosti knihovny přenosných tříd, jako to nejlepší podporuje používání pouze rozhraní .NET API, které jsou podporovány v rámci všechny cílové platformy. Většina kódu obchodní logiky se bude nacházet v PCL, včetně přístupu k databázím, volání rozhraní REST API a volání přenosné komponent Xamarin (viz [dozvědět více o: Komponenty Xamarin](#components) na konci tohoto tématu). Společný kód uživatelského rozhraní napsané pomocí Xamarin.Forms může také nacházet v PCL.  
+1. [Kód – možnosti pro sdílení obsahu](http://developer.xamarin.com/guides/cross-platform/application_fundamentals/building_cross_platform_applications/sharing_code_options/) (xamarin.com). Doporučujeme, abyste pomocí možnosti knihovny přenosných tříd, jako to nejlepší podporuje používání pouze rozhraní .NET API, které jsou podporovány v rámci všechny cílové platformy. Většina kódu obchodní logiky se bude nacházet v PCL, včetně přístupu k databázím, volání rozhraní REST API a volání přenosné komponent Xamarin (viz [dozvědět více o: Komponenty Xamarin](#components) na konci tohoto tématu). Společný kód uživatelského rozhraní napsané pomocí Xamarin.Forms může také nacházet v PCL.  
   
-2.  (Volitelné) [Případová studie: Tasky](http://developer.xamarin.com/guides/cross-platform/application_fundamentals/building_cross_platform_applications/case_study-tasky/) (xamarin.com) popisuje některé osvědčené postupy pro návrh a struktura plně funkčních aplikací, jako je například strukturování projektu s PCL pro sdílený kód, který odděluje dat, přístup k datům a obchodní vrstvy.  
+2. (Volitelné) [Případová studie: Tasky](http://developer.xamarin.com/guides/cross-platform/application_fundamentals/building_cross_platform_applications/case_study-tasky/) (xamarin.com) popisuje některé osvědčené postupy pro návrh a struktura plně funkčních aplikací, jako je například strukturování projektu s PCL pro sdílený kód, který odděluje dat, přístup k datům a obchodní vrstvy.  
   
 ## <a name="essentials-native-and-xamarinforms-ui-layers"></a>Essentials: nativní a vrstvy uživatelského rozhraní Xamarin.Forms  
  *10-40 minut*  
@@ -69,32 +69,32 @@ Toto téma vás přesměruje na přehled materiál, který vám pomůže pochopi
   
   Další informace:  
   
-1.  [Xamarin.Forms](http://developer.xamarin.com/guides/cross-platform/xamarin-forms/) (xamarin.com) poskytuje stručný přehled a výhody a nevýhody Xamarin.Forms oproti nativní vrstvy uživatelského rozhraní (to znamená, Xamarin.iOS a Xamarin.Android).  
+1. [Xamarin.Forms](http://developer.xamarin.com/guides/cross-platform/xamarin-forms/) (xamarin.com) poskytuje stručný přehled a výhody a nevýhody Xamarin.Forms oproti nativní vrstvy uživatelského rozhraní (to znamená, Xamarin.iOS a Xamarin.Android).  
   
-2.  První tři minuty James Montemagno video [Xamarin.Forms: Nativní aplikace pro iOS, Android a Windows aplikací s využitím C# & XAML](https://channel9.msdn.com/events/Visual-Studio/Connect-event-2015/704) (Channel9, 13m3s) poskytuje další přehled a můžete pokračovat ve sledování pro ukázky.  
+2. První tři minuty James Montemagno video [Xamarin.Forms: Nativní aplikace pro iOS, Android a Windows aplikací s využitím C# & XAML](https://channel9.msdn.com/events/Visual-Studio/Connect-event-2015/704) (Channel9, 13m3s) poskytuje další přehled a můžete pokračovat ve sledování pro ukázky.  
   
-3.  (Volitelné) [Úvod do Xamarin.Forms](http://developer.xamarin.com/guides/cross-platform/xamarin-forms/getting-started/introduction-to-xamarin-forms/) (xamarin.com)  
+3. (Volitelné) [Úvod do Xamarin.Forms](http://developer.xamarin.com/guides/cross-platform/xamarin-forms/getting-started/introduction-to-xamarin-forms/) (xamarin.com)  
   
-4.  (Volitelné) Použití OnPlatform pro přizpůsobení v příklady [třídu zařízení](http://developer.xamarin.com/guides/xamarin-forms/platform-features/device/) dokumentaci (xamarin.com)  
+4. (Volitelné) Použití OnPlatform pro přizpůsobení v příklady [třídu zařízení](http://developer.xamarin.com/guides/xamarin-forms/platform-features/device/) dokumentaci (xamarin.com)  
   
-5.  (Volitelné) [Různé platformy – sdílené složky uživatelského rozhraní kódu napříč mobilní platformy Xamarin.Forms](https://msdn.microsoft.com/magazine/dn904669.aspx) podle Jason Smith (Zpravodaj MSDN Magazine) jsou podrobněji popsány dále různé možnosti přizpůsobení možností v Xamarin.Forms, pro které jsou zahrnuty podrobnosti na [ Přizpůsobení ovládacích prvků na jednotlivých platformách](http://developer.xamarin.com/guides/xamarin-forms/custom-renderer/) (xamarin.com).  
+5. (Volitelné) [Různé platformy – sdílené složky uživatelského rozhraní kódu napříč mobilní platformy Xamarin.Forms](https://msdn.microsoft.com/magazine/dn904669.aspx) podle Jason Smith (Zpravodaj MSDN Magazine) jsou podrobněji popsány dále různé možnosti přizpůsobení možností v Xamarin.Forms, pro které jsou zahrnuty podrobnosti na [ Přizpůsobení ovládacích prvků na jednotlivých platformách](http://developer.xamarin.com/guides/xamarin-forms/custom-renderer/) (xamarin.com).  
   
 ## <a name="deeper-dive-debugging-with-emulators"></a>Podrobnější informace: Ladění pomocí emulátorů  
  *10 až 15 minut*  
   
  Chcete-li ladit aplikace pro víc platforem bez nutnosti použít fyzické zařízení, budete muset použít tento příkaz:  
   
-1.  **Emulátoru Androidu.** V závislosti na tom, kterou verzi Windows, který používáte doporučujeme, abyste buď Microsoft Visual Studio Emulator pro Android nebo Xamarin Playeru, které nabízejí rychlý výkon a podporu celé řady funkcí zařízení:  
+1. **Emulátoru Androidu.** V závislosti na tom, kterou verzi Windows, který používáte doporučujeme, abyste buď Microsoft Visual Studio Emulator pro Android nebo Xamarin Playeru, které nabízejí rychlý výkon a podporu celé řady funkcí zařízení:  
   
-    -   **Počítače s Windows 8 +:** Důrazně doporučujeme použití společnosti Microsoft [Visual Studio Emulator for Android](https://www.visualstudio.com/features/msft-android-emulator-vs.aspx), která se instaluje s aplikací Visual Studio.  [Visual Studio Emulator for Android](https://channel9.msdn.com/events/Visual-Studio/Connect-event-2015/711) video (webu Channel 9, 5m55s) poskytuje přehled a ukázka.  
+    - **Počítače s Windows 8 +:** Důrazně doporučujeme použití společnosti Microsoft [Visual Studio Emulator for Android](https://www.visualstudio.com/features/msft-android-emulator-vs.aspx), která se instaluje s aplikací Visual Studio.  [Visual Studio Emulator for Android](https://channel9.msdn.com/events/Visual-Studio/Connect-event-2015/711) video (webu Channel 9, 5m55s) poskytuje přehled a ukázka.  
   
-    -   **Windows 7 nebo dřívější Windows/Mac OS X a systémem**: použijte [přehrávač Xamarin Android](http://developer.xamarin.com/guides/android/getting_started/installation/android-player) (xamarin.com).  
+    - **Windows 7 nebo dřívější Windows/Mac OS X a systémem**: použijte [přehrávač Xamarin Android](http://developer.xamarin.com/guides/android/getting_started/installation/android-player) (xamarin.com).  
   
-2.  **Simulátor Iosu společnosti Apple.** Další informace najdete v článku [Začínáme se simulátorem Iosu](https://developer.apple.com/library/prerelease/content/documentation/IDEs/Conceptual/iOS_Simulator_Guide/GettingStartedwithiOSSimulator/GettingStartedwithiOSSimulator.html#//apple_ref/doc/uid/TP40012848-CH5-SW1) (apple.com).  
+2. **Simulátor Iosu společnosti Apple.** Další informace najdete v článku [Začínáme se simulátorem Iosu](https://developer.apple.com/library/prerelease/content/documentation/IDEs/Conceptual/iOS_Simulator_Guide/GettingStartedwithiOSSimulator/GettingStartedwithiOSSimulator.html#//apple_ref/doc/uid/TP40012848-CH5-SW1) (apple.com).  
   
-3.  **Emulátor Windows Phone od Microsoftu.** Další informace najdete v článku [Windows Phone emulátor pro Windows Phone 8](https://msdn.microsoft.com/library/dn632391.aspx).  
+3. **Emulátor Windows Phone od Microsoftu.** Další informace najdete v článku [Windows Phone emulátor pro Windows Phone 8](https://msdn.microsoft.com/library/dn632391.aspx).  
   
-##  <a name="components"></a> Podrobnější informace: Komponenty Xamarin  
+## <a name="components"></a> Podrobnější informace: Komponenty Xamarin  
  *10 minut*  
   
  Mnoho rozšířené možnosti jsou k dispozici pro aplikace Xamarin pomocí komponenty Xamarin. Můžete najít úplném katalogu, které jsou k dispozici ke stažení na [ http://components.xamarin.com/ ](http://components.xamarin.com/), která obsahuje součásti pro další ovládací prvky uživatelského rozhraní, ověřování, různých cloudových služeb, jako je například Microsoft Azure a spoustu dalších věcí.

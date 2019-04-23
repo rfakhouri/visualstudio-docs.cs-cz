@@ -18,12 +18,12 @@ caps.latest.revision: 28
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 8d5bf89a4f4b33306176b1fe5e33fa91fb1d325d
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: ff4faf3fdd6bd4b9398e3448a63e4c6061d79cfb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54776919"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096501"
 ---
 # <a name="microsoft-language-interface-packs-lips-and-visual-studio"></a>Sady LIP (Microsoft Language Interface Pack) a Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,46 +43,46 @@ S použitím Windows Language Interface Pack (LIP), můžete nainstalovat jazyko
 ### <a name="support-for-code-pages"></a>Podpora znakové stránky
  Některé nástroje Visual Studio nezobrazují text správně, když text obsahuje znaky, které nejsou v aktuální znakové stránce. Místo toho zobrazí otazníky nebo text je poškozený. Jsou ovlivněny následující nástroje nebo oblastech:
 
--   Servery nasazené s použitím FTP.
+- Servery nasazené s použitím FTP.
 
--   Názvy počítačů ne-ASCII v některé ovládací prvky.
+- Názvy počítačů ne-ASCII v některé ovládací prvky.
 
--   Nástroje příkazového řádku, která spustí mimo sadu Visual Studio.
+- Nástroje příkazového řádku, která spustí mimo sadu Visual Studio.
 
--   Průvodce migrací jazyka Visual Basic.
+- Průvodce migrací jazyka Visual Basic.
 
--   Kontejner testů ovládacích prvků ActiveX.
+- Kontejner testů ovládacích prvků ActiveX.
 
--   Prohlížeč objektů OLE/COM.
+- Prohlížeč objektů OLE/COM.
 
--   Nástroj pro ladění webové rozhraní ISAPI.
+- Nástroj pro ladění webové rozhraní ISAPI.
 
--   Projekty aplikace knihovny MFC, které mají obsah nápovědy HTML.
+- Projekty aplikace knihovny MFC, které mají obsah nápovědy HTML.
 
--   Aplikace Visual SourceSafe / uživatelského rozhraní SCCI spadne zpět na angličtinu po kompatibilní znakovou stránku.
+- Aplikace Visual SourceSafe / uživatelského rozhraní SCCI spadne zpět na angličtinu po kompatibilní znakovou stránku.
 
--   Aplikace Visual SourceSafe nepodporuje názvy souborů Unicode.
+- Aplikace Visual SourceSafe nepodporuje názvy souborů Unicode.
 
--   Koncový uživatel definované znaků (soukromé použití zóny) nelze použít jako tokeny/identifikátory.
+- Koncový uživatel definované znaků (soukromé použití zóny) nelze použít jako tokeny/identifikátory.
 
--   Znaky latinky Extended-B nelze zobrazit v některé aplikaci Visual Studio oknům, když Windows znaková stránka nastavena na východoasijské jazyky.
+- Znaky latinky Extended-B nelze zobrazit v některé aplikaci Visual Studio oknům, když Windows znaková stránka nastavena na východoasijské jazyky.
 
--   Toky textu, které se skládají ze znaků několik skriptů jazyka se může zobrazit glyfu některé znaky.
+- Toky textu, které se skládají ze znaků několik skriptů jazyka se může zobrazit glyfu některé znaky.
 
--   Kopírování a vkládání složitým řetězců do běžných ovládacích prvků může způsobit znak tvarování ztratí. Místo toho použijte odpovídající klávesnice jazyka se vstupním textem.
+- Kopírování a vkládání složitým řetězců do běžných ovládacích prvků může způsobit znak tvarování ztratí. Místo toho použijte odpovídající klávesnice jazyka se vstupním textem.
 
 ##### <a name="to-correctly-display-characters-that-are-not-included-in-the-current-code-page"></a>Pro správné zobrazení znaky, které nejsou zahrnuté v aktuální znakové stránce
 
-1.  Klikněte na tlačítko **Start**, klikněte na tlačítko **ovládací panely**a pak otevřete **místní a jazykové nastavení** (nebo **oblasti** v [!INCLUDE[win8](../includes/win8-md.md)]).
+1. Klikněte na tlačítko **Start**, klikněte na tlačítko **ovládací panely**a pak otevřete **místní a jazykové nastavení** (nebo **oblasti** v [!INCLUDE[win8](../includes/win8-md.md)]).
 
     > [!NOTE]
     >  Musíte být správcem počítače, postupujte podle těchto kroků.
 
-2.  Klikněte na tlačítko **Upřesnit** kartu.
+2. Klikněte na tlačítko **Upřesnit** kartu.
 
-3.  V **vyberte jazyk odpovídající jazykovou verzi kódování Unicode programy, které chcete použít** seznamu, vyberte jazyk, které právě používáte.
+3. V **vyberte jazyk odpovídající jazykovou verzi kódování Unicode programy, které chcete použít** seznamu, vyberte jazyk, které právě používáte.
 
-4.  Klikněte na tlačítko **OK**.
+4. Klikněte na tlačítko **OK**.
 
 ## <a name="changing-the-language-used-for-the-ui-text-in-visual-studio"></a>Změna jazyk používaný pro Text uživatelského rozhraní v sadě Visual Studio
  Když nainstalujete více jazykových verzí sady [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ve stejném počítači, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] uživatelského rozhraní výchozí hodnota je **totéž jako Windows Microsoft**. Toto nastavení znamená, že [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] se zobrazí text uživatelského rozhraní v jazyce, který je zadán jako jazyk operačního systému.

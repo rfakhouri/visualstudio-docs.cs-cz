@@ -17,23 +17,25 @@ caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6e0fd75d45d42fb4216e96c29d1403e89eb44353
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 51a8e43268718421a90d051f0d4d9b6afa96980e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54765305"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092367"
 ---
-# <a name="debugging-f"></a>Ladění F# #
+# <a name="debugging-f"></a>Ladění F\#
+
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Ladění F# je podobné ladění jakékoli spravovaného jazyka, s několika výjimkami:  
-  
--   **Automatické hodnoty** okno nezobrazí F# proměnné.  
-  
--   Upravit a pokračovat není podporována pro F#. Úpravy F# kódu během relace ladění je možné, ale mělo by se vyhnout. Protože během relace ladění se nepoužijí změny kódu, úpravy F# kódu během ladění způsobí neshodu mezi zdrojový kód a kód, který se právě ladí.  
-  
--   Ladicí program nemůže rozpoznat F# výrazy. Zadání výrazu v okně ladicího programu nebo dialogového okna průběhu F# ladění, musí přeložit výraz, který C# syntaxe. Při překladu F# výraz, který C#, ujistěte se, že si zapamatovat, že C# používá == jako operátor porovnání rovnosti a který F# používá jeden =.  
-  
-## <a name="see-also"></a>Viz také  
- [Ladění spravovaného kódu](../debugger/debugging-managed-code.md)
+Ladění F# je podobné ladění jakékoli spravovaného jazyka, s několika výjimkami:
+
+- **Automatické hodnoty** okno nezobrazí F# proměnné.
+
+- Upravit a pokračovat není podporována pro F#. Úpravy F# kódu během relace ladění je možné, ale mělo by se vyhnout. Protože během relace ladění se nepoužijí změny kódu, úpravy F# kódu během ladění způsobí neshodu mezi zdrojový kód a kód, který se právě ladí.
+
+- Ladicí program nemůže rozpoznat F# výrazy. Zadání výrazu v okně ladicího programu nebo dialogového okna průběhu F# ladění, musí přeložit výraz, který C# syntaxe. Při překladu F# výraz, který C#, ujistěte se, že si zapamatovat, že C# používá == jako operátor porovnání rovnosti a který F# používá jeden =.
+
+## <a name="see-also"></a>Viz také
+
+- [Ladění spravovaného kódu](../debugger/debugging-managed-code.md)

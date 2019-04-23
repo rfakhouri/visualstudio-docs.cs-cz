@@ -9,12 +9,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6171ca233af1ec2af71f11d3248a9d2e670c156b
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 9ab9315c428944de0b047192a789eac6aa654073
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59665854"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60098620"
 ---
 # <a name="how-to-turn-pluralization-on-and-off-or-designer"></a>Postupy: Pluralizace zapnutí a vypnutí (O/R Designer)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,18 +28,18 @@ Ve výchozím nastavení se při přetažení databázových objektů, které ma
   
 ### <a name="to-turn-pluralization-on-and-off"></a>K zapnutí a vypnutí pluralizace  
   
-1.  Na **nástroje** nabídky, klikněte na tlačítko **možnosti**.  
+1. Na **nástroje** nabídky, klikněte na tlačítko **možnosti**.  
   
-2.  V **možnosti** dialogového okna rozbalte **databázové nástroje**.  
+2. V **možnosti** dialogového okna rozbalte **databázové nástroje**.  
   
 > [!NOTE]
 >  Vyberte **zobrazit všechna nastavení** Pokud **databázové nástroje** uzel není viditelný.  
   
-1.  Klikněte na tlačítko **O/R Designer**.  
+1. Klikněte na tlačítko **O/R Designer**.  
   
-2.  Nastavte **Pluralizaci názvů** k **povoleno** = **False** nastavit [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] tak, aby neměnil názvy tříd.  
+2. Nastavte **Pluralizaci názvů** k **povoleno** = **False** nastavit [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] tak, aby neměnil názvy tříd.  
   
-3.  Nastavte **Pluralizaci názvů** k **povoleno** = **True** použít pluralizace pravidla pro názvy tříd objektů, které jsou přidány do [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].  
+3. Nastavte **Pluralizaci názvů** k **povoleno** = **True** použít pluralizace pravidla pro názvy tříd objektů, které jsou přidány do [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].  
   
 ## <a name="see-also"></a>Viz také  
  [Nástroje LINQ to SQL v sadě Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   

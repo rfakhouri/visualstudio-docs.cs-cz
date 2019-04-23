@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bb47aa94dbf444e27fd149e2e16c723677f973eb
-ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
+ms.openlocfilehash: 8b4c763ff31c6c62a177c77f8886f1de305a5170
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59537556"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097320"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>Další tipy pro vyšší produktivitu a triky pro ladicí program v sadě Visual Studio
 
@@ -74,17 +74,17 @@ Lze snadno zobrazit proměnné pomocí ladicího programu systému windows, stej
 
 #### <a name="to-create-an-object-id"></a>Chcete-li vytvořit ID objektu
 
-1.  Nastavte zarážku v proměnné, které chcete sledovat.
+1. Nastavte zarážku v proměnné, které chcete sledovat.
 
-2.  Spuštění ladicího programu (**F5**) a zastavení na zarážce.
+2. Spuštění ladicího programu (**F5**) a zastavení na zarážce.
 
 3. Vyhledejte proměnnou v **místní hodnoty** okno (**ladění > Windows > místní hodnoty**), klikněte pravým tlačítkem na proměnnou a vyberte **Ujistěte se, ID objektu**.
 
     ![Vytvoření ID objektu](../debugger/media/dbg-tips-watch-create-object-id.png "CreateObjectID")
 
-4.  Měli byste vidět **$** plus číslo v **místní hodnoty** okna. Tato proměnná je ID objektu.
+4. Měli byste vidět **$** plus číslo v **místní hodnoty** okna. Tato proměnná je ID objektu.
 
-5.  Klikněte pravým tlačítkem na ID proměnné objektu a zvolte **Přidat kukátko**.
+5. Klikněte pravým tlačítkem na ID proměnné objektu a zvolte **Přidat kukátko**.
 
 Další informace najdete v tématu [vytvořit ID objektu](../debugger/watch-and-quickwatch-windows.md#bkmk_objectIds).
 
@@ -126,13 +126,13 @@ Pokud musíte ladit druhy problémů, které jsou společné pro vícevláknové
 
 #### <a name="to-show-threads-in-your-source-code"></a>Chcete-li zobrazit vlákna ve zdrojovém kódu
 
-1.  Při ladění, klikněte na tlačítko **zobrazit vlákna ve zdroji** tlačítko ![zobrazit vlákna ve zdroji](../debugger/media/dbg-multithreaded-show-threads.png "ThreadMarker") v **ladění** nástrojů.
+1. Při ladění, klikněte na tlačítko **zobrazit vlákna ve zdroji** tlačítko ![zobrazit vlákna ve zdroji](../debugger/media/dbg-multithreaded-show-threads.png "ThreadMarker") v **ladění** nástrojů.
 
-2.  Podívejte se na ovládací prvek na levé straně okna. Na tomto řádku se zobrazí *značky vlákna* ikonu ![značky vlákna](../debugger/media/dbg-thread-marker.png "ThreadMarker") , který se podobá dvěma vlákny látky. Značky vlákna označuje, že je vlákno zastavené v tomto umístění.
+2. Podívejte se na ovládací prvek na levé straně okna. Na tomto řádku se zobrazí *značky vlákna* ikonu ![značky vlákna](../debugger/media/dbg-thread-marker.png "ThreadMarker") , který se podobá dvěma vlákny látky. Značky vlákna označuje, že je vlákno zastavené v tomto umístění.
 
     Všimněte si, že značky vlákna mohou být částečně zakryty podle zarážku.
 
-3.  Ukazatel myši značky vlákna. Zobrazí se DataTip. DataTip zjistíte číslo ID názvu a vlákna pro každé vlákno zastavené.
+3. Ukazatel myši značky vlákna. Zobrazí se DataTip. DataTip zjistíte číslo ID názvu a vlákna pro každé vlákno zastavené.
 
     Můžete také zobrazit umístění vlákna [okna paralelní zásobníky](../debugger/get-started-debugging-multithreaded-apps.md).
 

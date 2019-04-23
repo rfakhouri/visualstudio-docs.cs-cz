@@ -15,12 +15,12 @@ dev_langs:
 - VB
 ms.workload:
 - vssdk
-ms.openlocfilehash: d45d402287443e3cdd643a76853e62c11c64e3d3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0277d0f04042b6d7ed4cb8b6233d8b0ccec464f7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54951154"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095487"
 ---
 # <a name="add-and-remove-property-pages"></a>Přidávat a odebírat stránky vlastností
 
@@ -32,7 +32,7 @@ Podtyp projektu je často potřeba zobrazí další stránky vlastností v Návr
 
 ### <a name="remove-a-property-page"></a>Odebrání stránky vlastností
 
-1.  Přepsat `GetProperty(uint itemId, int propId, out object property)` metoda k filtrování stránky vlastností a získat `clsids` seznamu.
+1. Přepsat `GetProperty(uint itemId, int propId, out object property)` metoda k filtrování stránky vlastností a získat `clsids` seznamu.
 
     ```vb
     Protected Overrides int GetProperty(uint itemId, int propId, out object property)
@@ -77,7 +77,7 @@ Podtyp projektu je často potřeba zobrazí další stránky vlastností v Návr
     }
     ```
 
-2.  Odeberte **události sestavení** stránky získané `clsids` seznamu.
+2. Odeberte **události sestavení** stránky získané `clsids` seznamu.
 
     ```vb
     Private buildEventsPageGuid As String = "{1E78F8DB-6C07-4D61-A18F-7514010ABD56}"
@@ -113,7 +113,7 @@ Podtyp projektu je často potřeba zobrazí další stránky vlastností v Návr
 
 ### <a name="add-a-property-page"></a>Přidání stránky vlastností
 
-1.  Vytvoření stránky vlastností, které chcete přidat.
+1. Vytvoření stránky vlastností, které chcete přidat.
 
     ```vb
     Class DeployPropertyPage
@@ -158,7 +158,7 @@ Podtyp projektu je často potřeba zobrazí další stránky vlastností v Návr
     }
     ```
 
-2.  Zaregistrujte nové stránky vlastností.
+2. Zaregistrujte nové stránky vlastností.
 
     ```vb
     <MSVSIP.ProvideObject(GetType(DeployPropertyPage), RegisterUsing = RegistrationMethod.CodeBase)>
@@ -168,7 +168,7 @@ Podtyp projektu je často potřeba zobrazí další stránky vlastností v Návr
     [MSVSIP.ProvideObject(typeof(DeployPropertyPage), RegisterUsing = RegistrationMethod.CodeBase)]
     ```
 
-3.  Přepsat `GetProperty(uint itemId, int propId, out object property)` metoda k filtrování stránky vlastností, získání `clsids` seznamu a přidat nové stránky vlastností.
+3. Přepsat `GetProperty(uint itemId, int propId, out object property)` metoda k filtrování stránky vlastností, získání `clsids` seznamu a přidat nové stránky vlastností.
 
     ```vb
     Protected Overrides Function GetProperty(ByVal itemId As UInteger, ByVal propId As Integer, ByRef [property] As Object) As Integer

@@ -13,18 +13,18 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 87f8f60985f9dfe8629cfd96bcffc9926b8a56e1
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 38a4ea987a1b7514d19433f3da75e269fcaf50ec
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59662007"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093758"
 ---
 # <a name="accessibility-for-people-with-disabilities"></a>Možnosti usnadnění pro osoby s postižením
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Microsoft usiluje o usnadnění svých produktů a služeb pro každodenní použití. Následující témata obsahují informace o funkcích, produktech a službách, které usnadňují Microsoft [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] přístupnější pro osoby s postižením.  
   
--   [Funkce sady Visual Studio pro usnadnění přístupu](../../ide/reference/accessibility-features-of-visual-studio.md)  
+- [Funkce sady Visual Studio pro usnadnění přístupu](../../ide/reference/accessibility-features-of-visual-studio.md)  
   
--   [Funkce usnadnění programu Help Viewer](../../ide/accessibility-features-of-the-help-viewer.md)
+- [Funkce usnadnění programu Help Viewer](../../ide/accessibility-features-of-the-help-viewer.md)

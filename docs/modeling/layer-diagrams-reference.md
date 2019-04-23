@@ -20,12 +20,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f0a13f6355b868292d7d2867e54a8e62cb87c0f
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 1e592b6d5da908b71aa5af9bae7afe495944301a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223010"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093485"
 ---
 # <a name="dependency-diagrams-reference"></a>Diagramy závislostí: referenční dokumentace
 
@@ -40,13 +40,13 @@ Můžete určit zamýšlené nebo existující závislosti mezi vrstvami. Tyto z
 
 Použijte diagram závislostí můžete provádět následující úlohy:
 
--   Komunikaci existující, nebo určený logickou architekturu systému.
+- Komunikaci existující, nebo určený logickou architekturu systému.
 
--   Zjištění konfliktu mezi váš stávající kód a zamýšlenou architekturu.
+- Zjištění konfliktu mezi váš stávající kód a zamýšlenou architekturu.
 
--   Vizualizujte dopad změn na zamýšlenou architekturu. při refaktorování, aktualizovat nebo vyvíjí vašeho systému.
+- Vizualizujte dopad změn na zamýšlenou architekturu. při refaktorování, aktualizovat nebo vyvíjí vašeho systému.
 
--   Posílení zamýšlenou architekturu během vývoje a údržba kódu včetně ověření pomocí vrácení se změnami a operací sestavení.
+- Posílení zamýšlenou architekturu během vývoje a údržba kódu včetně ověření pomocí vrácení se změnami a operací sestavení.
 
 Toto téma popisuje elementy, které můžete použít na diagram závislostí. Podrobné informace o tom, jak vytvořit a kreslit diagramy závislostí, přečtěte si [diagramy závislostí: Pokyny pro](../modeling/layer-diagrams-guidelines.md). Další informace o vzorech vrstev najdete [vzory a postupy site](http://go.microsoft.com/fwlink/?LinkId=145794).
 
@@ -68,17 +68,17 @@ Následující tabulka popisuje prvky, které můžete použít na diagram závi
 
 Můžete propojit s každou vrstvu artefaktů ve vašem řešení, jako jsou projekty, třídy, obory názvů, soubory projektu a jiné části vašeho softwaru. Číslo ve vrstvě zobrazuje počet artefaktů, které jsou spojeny s vrstvou. Ale při čtení počtu artefaktů ve vrstvě mějte na paměti následující:
 
--   Pokud vrstva odkazuje na artefakt, který obsahuje jiné artefakty, ale vrstva není propojena přímo s jiným artefaktem, pak číslo obsahuje pouze propojené artefakty. Jiné artefakty jsou však zahrnuty do analýzy během ověřování vrstvy.
+- Pokud vrstva odkazuje na artefakt, který obsahuje jiné artefakty, ale vrstva není propojena přímo s jiným artefaktem, pak číslo obsahuje pouze propojené artefakty. Jiné artefakty jsou však zahrnuty do analýzy během ověřování vrstvy.
 
      Pokud je vrstva například spojena s jedním oborem názvů, pak počet propojených artefaktů je 1, přestože obor názvů obsahuje třídy. Pokud vrstva obsahuje rovněž propojení s jednotlivými třídami v oboru názvů, bude počet zahrnovat propojené třídy.
 
--   Pokud například vrstva obsahuje jiné vrstvy, které jsou spojeny s artefakty, pak je vrstva kontejneru také propojena s těmito artefakty, i když číslo vrstvy kontejneru tyto artefakty neobsahuje.
+- Pokud například vrstva obsahuje jiné vrstvy, které jsou spojeny s artefakty, pak je vrstva kontejneru také propojena s těmito artefakty, i když číslo vrstvy kontejneru tyto artefakty neobsahuje.
 
 Další informace o propojení vrstvami a artefakty naleznete v tématu:
 
--   [Diagramy závislostí: Pokyny](../modeling/layer-diagrams-guidelines.md)
+- [Diagramy závislostí: Pokyny](../modeling/layer-diagrams-guidelines.md)
 
--   [Vytváření diagramů závislostí z kódu](../modeling/create-layer-diagrams-from-your-code.md)
+- [Vytváření diagramů závislostí z kódu](../modeling/create-layer-diagrams-from-your-code.md)
 
 ### <a name="examine-the-linked-artifacts"></a>Prozkoumejte propojených artefaktů
 

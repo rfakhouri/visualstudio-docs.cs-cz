@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c77b95b05409adf7c5e4c9a81136ca9143cec03
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: f7d74b90fc0bcbe67b13cffadb2793bc15213b9f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56688053"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094135"
 ---
 # <a name="getting-started-with-visual-studio-graphics-diagnostics"></a>Začínáme s diagnostikou grafiky sady Visual Studio
 V této části budete připravit k použití diagnostiky grafiky poprvé, pak budete moct zachytit snímků z aplikace Direct3D a kontrole v analyzátoru grafiky.
@@ -28,7 +28,7 @@ V této části budete připravit k použití diagnostiky grafiky poprvé, pak b
 
  Informace o instalaci nástrojů grafiky, naleznete v tématu [instalace nástrojů grafiky pro Windows 10](#InstallGraphicsTools).
 
-##  <a name="InstallGraphicsTools"></a> Instalace nástrojů grafiky pro systém Windows 10
+## <a name="InstallGraphicsTools"></a> Instalace nástrojů grafiky pro systém Windows 10
  Ve Windows 10, infrastruktury Diagnostika grafiky poskytuje volitelnou funkcí Windows volá *nástroje grafiky*. Tato funkce se vyžaduje pro zachytávání a přehrávání grafické informace ve Windows 10 bez ohledu na to, jestli aplikace zachytí cíle předchozí verze systému windows nebo používá verze rozhraní Direct3D. Můžete také nainstalovat součást nástroje grafiky předem; v opačném případě bude nainstalovaná na vyžádání první čas spuštění relace diagnostiky grafiky v sadě Visual Studio.
 
 #### <a name="to-install-graphics-tools-for-windows-10"></a>Instalace nástrojů grafiky pro Windows 10
@@ -70,7 +70,7 @@ V této části budete připravit k použití diagnostiky grafiky poprvé, pak b
 
 #### <a name="to-capture-single-frames"></a>K zachycení snímků jedné
 
--   V sadě Visual Studio, zvolte **zachytit snímek** tlačítko z okna nástrojů nebo diagnostiky grafiky relace. Nebo, pokud vaše aplikace má fokus, stačí stisknout kombinaci kláves **Print Screen** kláves na klávesnici.
+- V sadě Visual Studio, zvolte **zachytit snímek** tlačítko z okna nástrojů nebo diagnostiky grafiky relace. Nebo, pokud vaše aplikace má fokus, stačí stisknout kombinaci kláves **Print Screen** kláves na klávesnici.
 
 #### <a name="to-capture-a-sequence-of-frames"></a>K zachycení sekvence rámce
 

@@ -11,12 +11,12 @@ ms.assetid: 747d1a47-b8b3-4e8b-93c0-768724be48f2
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 13ec970b309c09bdbd0bffbc0a10c42b862ebe9b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 093690c293ff6857eedc50d5eccc793d7d5bb114
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54783723"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097398"
 ---
 # <a name="servicing-guidelines-for-isolated-shell-applications"></a>Pokyny pro údržbu aplikací izolovaného prostředí
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,11 +34,11 @@ Při distribuci aplikace Visual Studio izolované prostředí musí být schopn�
   
  Pokud používáte vlastní akce v instalačním programu, musíte zajistit, že každá vlastní akce, čas instalace musí mít odpovídající vlastní akce vrátit zpět akce, když uživatel odinstaluje aplikaci. Pokud váš program instalace se nezdaří kvůli odpovídající vlastní akce odinstalace, odebírá se vaše aplikace bude necháte částečně nainstalováno.  
   
--   Vlastní akce, která závisí na konkrétní verzi souboru nebo hodnoty hash hodnoty se nezdaří, pokud změnit tyto verze aktualizací softwaru nebo hodnoty hash. Vlastní akce v tomto případě musíte ručně aktualizovat tyto hodnoty. Další problém nastane, pokud verze souboru nebo hodnoty hash hodnoty jsou sdílené mezi verzemi tohoto produktu. Vyhněte se tato závislost, kdykoli je to možné.  
+- Vlastní akce, která závisí na konkrétní verzi souboru nebo hodnoty hash hodnoty se nezdaří, pokud změnit tyto verze aktualizací softwaru nebo hodnoty hash. Vlastní akce v tomto případě musíte ručně aktualizovat tyto hodnoty. Další problém nastane, pokud verze souboru nebo hodnoty hash hodnoty jsou sdílené mezi verzemi tohoto produktu. Vyhněte se tato závislost, kdykoli je to možné.  
   
 ### <a name="accounting-for-shared-files"></a>Monitorování účtů pro sdílené soubory  
  Sdílené soubory mají stejné názvy a jsou nainstalovány do stejného umístění ve více produktů. Tyto produkty se může lišit v verze nebo akcie udržování jednotky (SKU) a produktů mohou existovat vedle sebe v daném počítači. Sdílené soubory však vytvořit údržby problémy z několika důvodů:  
   
--   Aktualizace sdílených souborů může způsobit problémy s kompatibilitou aplikace, protože aktualizaci jedné aplikace může změnit verzi souboru používaný druhou aplikaci, která ještě není aktualizovaný. Instalační programy pro produkty, které sdílejí soubory počet odkazů na sdílené soubory. Proto se odinstalace produktu nemá vliv na sdílené soubory nad rámec dekrementace počet nainstalovaných instancí.  
+- Aktualizace sdílených souborů může způsobit problémy s kompatibilitou aplikace, protože aktualizaci jedné aplikace může změnit verzi souboru používaný druhou aplikaci, která ještě není aktualizovaný. Instalační programy pro produkty, které sdílejí soubory počet odkazů na sdílené soubory. Proto se odinstalace produktu nemá vliv na sdílené soubory nad rámec dekrementace počet nainstalovaných instancí.  
   
--   Instalační program Quick Fix Engineering (QFE) se vrátí verze souborů na verze produktů, které obsluhují QFE Instalační služby. Přeruší potenciálně aplikaci, která má doručit aktualizované sdílený soubor.
+- Instalační program Quick Fix Engineering (QFE) se vrátí verze souborů na verze produktů, které obsluhují QFE Instalační služby. Přeruší potenciálně aplikaci, která má doručit aktualizované sdílený soubor.

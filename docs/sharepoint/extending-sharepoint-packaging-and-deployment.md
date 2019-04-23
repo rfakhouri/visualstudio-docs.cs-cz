@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1f18c88e72a40d3070d9a366e0c6c4e0f3888565
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4bb98e2b1c83ff06570a77dc84ce6a7bf690f81d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628387"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096995"
 ---
 # <a name="extend-sharepoint-packaging-and-deployment"></a>Rozšíření balení a nasazení SharePoint
   Balení a nasazení procesu pro projekty SharePoint můžete rozšířit.
@@ -35,9 +35,9 @@ ms.locfileid: "56628387"
 ## <a name="run-code-when-a-sharepoint-solution-is-deployed-or-retracted"></a>Spuštění kódu pokud je řešení služby SharePoint nasazen nebo stažen
  Můžete zpracovávat události provádět další úkoly při řešení služby SharePoint nasazen nebo stažen. Visual Studio vyvolává události, které dokáže zpracovat v následujících scénářích:
 
--   Před a po každém nasazení provádí se krok pro položku Sharepointového projektu. Další informace najdete v tématu [jak: Spuštění kódu při provádění kroků nasazení](../sharepoint/how-to-run-code-when-deployment-steps-are-executed.md).
+- Před a po každém nasazení provádí se krok pro položku Sharepointového projektu. Další informace najdete v tématu [jak: Spuštění kódu při provádění kroků nasazení](../sharepoint/how-to-run-code-when-deployment-steps-are-executed.md).
 
--   Před a po je projekt SharePoint nasazen nebo stažen. Další informace najdete v tématu [jak: Spuštění kódu pokud je projekt SharePoint nasazen nebo stažen](../sharepoint/how-to-run-code-when-a-sharepoint-project-is-deployed-or-retracted.md).
+- Před a po je projekt SharePoint nasazen nebo stažen. Další informace najdete v tématu [jak: Spuštění kódu pokud je projekt SharePoint nasazen nebo stažen](../sharepoint/how-to-run-code-when-a-sharepoint-project-is-deployed-or-retracted.md).
 
 ## <a name="handle-deployment-conflicts"></a>Zpracování konfliktů nasazení
  Některé typy položek projektu služby SharePoint, včetně modulů, webové části, seznam instancí a typy obsahu, poskytují nasazení integrovaných řešení konfliktů. Při nasazení řešení, které obsahuje jeden z těchto položek projektu sady Visual Studio nejprve zkontroluje, zda soubor již existuje na webu služby SharePoint se stejným názvem, adresa URL nebo ID jako soubor v položce, kterou nasazujete. Pokud došlo ke konfliktu, Visual Studio může automaticky vyřešit konflikt nebo můžete vyzvat, můžete určit, jestli chcete mít Visual Studio konflikt vyřešit nebo zrušení nasazení. Další informace najdete v tématu [řešení potíží s balení a nasazení SharePoint](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md).

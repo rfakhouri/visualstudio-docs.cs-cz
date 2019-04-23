@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5adc9574fa36fd77c1d30d6045795953c37349bc
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d693113db28acc456625f7c22b671006ed17038b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928670"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096982"
 ---
 # <a name="edit-data-in-datasets"></a>Úpravy dat v datových sadách
 Můžete upravovat data v datových tabulkách stejně, jako úprava dat v tabulce v jakékoli databázi. Proces může obsahovat, vkládání, aktualizaci a odstranění záznamů v tabulce. Ve formě vázané na data můžete určit, která pole se uživatel upravovat. V těchto případech se datové vazby infrastruktury zpracovává všechny řešení change tracking, aby změny lze odeslat zpět do databáze později. Pokud provedete úpravy prostřednictvím kódu programu k datům a chcete odeslat změny zpět do databáze, musíte použít objekty a metody, které udělal za vás sledování změn.
@@ -53,7 +53,7 @@ Pokud aplikace nepotřebuje k odeslání aktualizací zpět do zdroje dat, je mo
 
 #### <a name="to-delete-records-from-a-data-table"></a>K odstranění záznamů z tabulky dat
 
--   Volání <xref:System.Data.DataRow.Delete%2A> metodu <xref:System.Data.DataRow>.
+- Volání <xref:System.Data.DataRow.Delete%2A> metodu <xref:System.Data.DataRow>.
 
      Tato metoda neodebere fyzicky záznamu. Místo toho označí záznamy pro odstranění.
 
@@ -70,15 +70,15 @@ Při změně záznamů v datové sadě, informace o tyto změny jsou uloženy, d
 
 Změny sledované dvěma způsoby v každém řádku dat:
 
--   Každý řádek dat obsahuje informace související s jeho <xref:System.Data.DataRow.RowState%2A> (například <xref:System.Data.DataRowState.Added>, <xref:System.Data.DataRowState.Modified>, <xref:System.Data.DataRowState.Deleted>, nebo <xref:System.Data.DataRowState.Unchanged>).
+- Každý řádek dat obsahuje informace související s jeho <xref:System.Data.DataRow.RowState%2A> (například <xref:System.Data.DataRowState.Added>, <xref:System.Data.DataRowState.Modified>, <xref:System.Data.DataRowState.Deleted>, nebo <xref:System.Data.DataRowState.Unchanged>).
 
--   Každý řádek změněných dat obsahuje více verzí tohoto řádku (<xref:System.Data.DataRowVersion>), původní verze (před změnami) a aktuální verze (po změnách). Během doby, kdy změna čeká (čas, kdy můžete reagovat na <xref:System.Data.DataTable.RowChanging> událostí), třetí verze – navrhovaná verze – je k dispozici také.
+- Každý řádek změněných dat obsahuje více verzí tohoto řádku (<xref:System.Data.DataRowVersion>), původní verze (před změnami) a aktuální verze (po změnách). Během doby, kdy změna čeká (čas, kdy můžete reagovat na <xref:System.Data.DataTable.RowChanging> událostí), třetí verze – navrhovaná verze – je k dispozici také.
 
 <xref:System.Data.DataSet.HasChanges%2A> Vrátí metoda objekt dataset `true` Pokud byly provedeny změny v datové sadě. Jakmile určíte, že existují změněné řádky, můžete volat `GetChanges` metodu <xref:System.Data.DataSet> nebo <xref:System.Data.DataTable> vrátit sadu změněných řádků.
 
 #### <a name="to-determine-if-changes-have-been-made-to-any-rows"></a>Chcete-li zjistit, jestli byly provedené změny nějakých řádků
 
--   Volání <xref:System.Data.DataSet.HasChanges%2A> metoda datovou sadu vyhledat změněných řádků.
+- Volání <xref:System.Data.DataSet.HasChanges%2A> metoda datovou sadu vyhledat změněných řádků.
 
 Následující příklad ukazuje, jak zkontrolovat návratovou hodnotu z <xref:System.Data.DataSet.HasChanges%2A> metoda ke zjištění, zda existují nějaké změněné řádky v datové sadě s názvem `NorthwindDataset1`:
 
@@ -90,7 +90,7 @@ Můžete také zkontrolovat, pokud chcete zobrazit, jaký typ změny byly proved
 
 #### <a name="to-determine-what-type-of-changes-have-been-made-to-a-row"></a>K určení jaké změny byly provedeny na řádek
 
--   Předat <xref:System.Data.DataRowState> hodnota, která se <xref:System.Data.DataSet.HasChanges%2A> metody.
+- Předat <xref:System.Data.DataRowState> hodnota, která se <xref:System.Data.DataSet.HasChanges%2A> metody.
 
 Následující příklad ukazuje, jak zkontrolovat datovou sadu s názvem `NorthwindDataset1` k určení, pokud k němu byly přidány nějaké nové řádky:
 
@@ -100,9 +100,9 @@ Následující příklad ukazuje, jak zkontrolovat datovou sadu s názvem `North
 ## <a name="to-locate-rows-that-have-errors"></a>K vyhledání řádků s chybami
 Při práci s jednotlivé sloupce a řádky dat, mohou se vyskytnout chyby. Můžete zkontrolovat `HasErrors` a určí, pokud existují v chyby <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, nebo <xref:System.Data.DataRow>.
 
-1.  Zkontrolujte, `HasErrors` vlastnosti chcete zobrazit, pokud nejsou žádné chyby v datové sadě.
+1. Zkontrolujte, `HasErrors` vlastnosti chcete zobrazit, pokud nejsou žádné chyby v datové sadě.
 
-2.  Pokud `HasErrors` vlastnost `true`, iteraci v rámci kolekce tabulek a pak přes řádky k vyhledání řádků s chybou.
+2. Pokud `HasErrors` vlastnost `true`, iteraci v rámci kolekce tabulek a pak přes řádky k vyhledání řádků s chybou.
 
 [!code-csharp[VbRaddataEditing#23](../data-tools/codesnippet/CSharp/edit-data-in-datasets_7.cs)]
 [!code-vb[VbRaddataEditing#23](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_7.vb)]

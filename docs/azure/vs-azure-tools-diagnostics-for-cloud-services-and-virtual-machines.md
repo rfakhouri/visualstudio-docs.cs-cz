@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.workload: azure-vs
 ms.date: 06/28/2018
 ms.author: mikejo
-ms.openlocfilehash: 0dbeccece261a347a2de5218910eddca8b2d715c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 45e0eca12ecde6c6ede2e290f109ef04ce2035ff
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55908723"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095968"
 ---
 # <a name="set-up-diagnostics-for-azure-cloud-services-and-virtual-machines"></a>Nastavení diagnostiky pro službu Azure Cloud Services a virtuální počítače
 Když budete potřebovat k řešení cloudové služby Azure nebo na virtuálním počítači, můžete použít Visual Studio snadněji nastavení Azure Diagnostics. Diagnostika zaznamená systémová data a data protokolování na virtuální počítače a instance virtuálních počítačů, na kterých běží vaše Cloudová služba. Diagnostická data se přenesou do účtu úložiště, kterou zvolíte. Další informace o diagnostice protokolování v Azure, najdete v článku [povolit protokolování diagnostiky pro webové aplikace ve službě Azure App Service](/azure/app-service/web-sites-enable-diagnostic-log).
@@ -154,6 +154,7 @@ Pokud používáte Azure SDK 2.5 a chcete zadat vlastní zdroj dat, můžete ji 
    <DataSource name="CustomDataSource!*" />
 </WindowsEventLog>
 ```
+
 ### <a name="performance-counters"></a>Čítače výkonu
 Informace o čítači výkonu můžete najít odhalit kritická místa systému a doladit výkon systému a aplikací. Další informace najdete v tématu [vytvoření a použití čítačů výkonu v aplikaci Azure](https://msdn.microsoft.com/library/azure/hh411542.aspx). Chcete-li zachytit čítače výkonu, vyberte **povolit přenos čítačů výkonu** zaškrtávací políčko. Chcete-li zvýšit nebo snížit interval mezi přenos protokolů událostí do účtu úložiště, změňte **doba přenosu (min)** hodnotu. Zaškrtněte políčka pro čítače výkonu, které chcete sledovat.
 

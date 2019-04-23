@@ -17,12 +17,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 289ef1825e8034566e2a9595a46919a3c498108d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5c34b2fdf2b6400ffe88f9e9ff08cbe6e4b41daa
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54755947"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092783"
 ---
 # <a name="how-to-examine-system-code-after-an-exception"></a>Postupy: Kontrola systémového kódu po výjimce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,19 +31,19 @@ Když dojde k výjimce, bude pravděpodobně pro zkoumání kódu uvnitř do sys
   
 ### <a name="to-examine-system-code-following-an-exception"></a>Chcete-li kontrola systémového kódu po výjimce  
   
-1.  V **zásobník volání** okna, klikněte pravým tlačítkem, poté klikněte na tlačítko **zobrazit externí kód**.  
+1. V **zásobník volání** okna, klikněte pravým tlačítkem, poté klikněte na tlačítko **zobrazit externí kód**.  
   
      Pokud není povolena funkce pouze můj kód, tato možnost není k dispozici v místní nabídce a ve výchozím nastavení se zobrazí kód systému.  
   
-2.  Klikněte pravým tlačítkem na externí kód snímky, které se teď zobrazují v **zásobník volání** okna.  
+2. Klikněte pravým tlačítkem na externí kód snímky, které se teď zobrazují v **zásobník volání** okna.  
   
-3.  Přejděte na **načíst symboly z** a potom klikněte na tlačítko **Microsoft Symbol Servers**.  
+3. Přejděte na **načíst symboly z** a potom klikněte na tlačítko **Microsoft Symbol Servers**.  
   
-    1.  Pokud byla povolena funkce pouze můj kód, zobrazí se dialogové okno. Uvádí, že nyní byla zakázána funkce pouze můj kód. To je nezbytné pro krokování s vnořením do systémových volání.  
+    1. Pokud byla povolena funkce pouze můj kód, zobrazí se dialogové okno. Uvádí, že nyní byla zakázána funkce pouze můj kód. To je nezbytné pro krokování s vnořením do systémových volání.  
   
-    2.  **Stahování veřejných symbolů** zobrazí se dialogové okno. Zmizí při stahování dokončí.  
+    2. **Stahování veřejných symbolů** zobrazí se dialogové okno. Zmizí při stahování dokončí.  
   
-4.  Nyní můžete prozkoumat kód v systému **zásobník volání** okno a dalších oknech. Například dvojitým kliknutím na rámec zásobníku volání a zobrazte kód ve zdroji nebo **zpětný překlad** okna.  
+4. Nyní můžete prozkoumat kód v systému **zásobník volání** okno a dalších oknech. Například dvojitým kliknutím na rámec zásobníku volání a zobrazte kód ve zdroji nebo **zpětný překlad** okna.  
   
 ## <a name="see-also"></a>Viz také  
  [Správa výjimek pomocí ladicího programu](../debugger/managing-exceptions-with-the-debugger.md)

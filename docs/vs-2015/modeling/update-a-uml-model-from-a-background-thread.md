@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cd0707ec7838ffb2dcebc8a176c79810f2614133
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d5a7ad318b5bd9fac41d5e8835169e4075d1da67
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54796461"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093004"
 ---
 # <a name="update-a-uml-model-from-a-background-thread"></a>Aktualizace modelu UML z vlákna na pozadí
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,9 +23,9 @@ V některých případech může být užitečné provést změny modelu ve vlá
   
  Však musí být vědomi, že úložiště UML není bezpečné pro vlákna. Důležitá jsou následující opatření:  
   
--   Všechny aktualizace modelu nebo diagramu se musí provádět ve vlákně uživatelského rozhraní (UI). Vlákno na pozadí musí používat <xref:System.Windows.Forms.Control.Invoke%2A> nebo `Dispatcher.` <xref:System.Windows.Threading.Dispatcher.Invoke%2A> mít vlákno uživatelského rozhraní provedlo skutečné aktualizace.  
+- Všechny aktualizace modelu nebo diagramu se musí provádět ve vlákně uživatelského rozhraní (UI). Vlákno na pozadí musí používat <xref:System.Windows.Forms.Control.Invoke%2A> nebo `Dispatcher.` <xref:System.Windows.Threading.Dispatcher.Invoke%2A> mít vlákno uživatelského rozhraní provedlo skutečné aktualizace.  
   
--   Pokud seskupíte řady změn do jediné transakce, doporučujeme zabránit uživateli v úpravě modelu, když transakce probíhá. V opačném případě se veškeré úpravy provedené uživatelem stanou součástí stejné transakce. Uživatel můžete zabránit v provádění změn tím zobrazením modálního dialogového okna. Pokud chcete, můžete zadat tlačítko Storno v dialogovém okně. Uživatel můžete zobrazit změny při jejich provádění.  
+- Pokud seskupíte řady změn do jediné transakce, doporučujeme zabránit uživateli v úpravě modelu, když transakce probíhá. V opačném případě se veškeré úpravy provedené uživatelem stanou součástí stejné transakce. Uživatel můžete zabránit v provádění změn tím zobrazením modálního dialogového okna. Pokud chcete, můžete zadat tlačítko Storno v dialogovém okně. Uživatel můžete zobrazit změny při jejich provádění.  
   
 ## <a name="example"></a>Příklad  
  Tento příklad používá vlákna na pozadí pro provedení několika změn do modelu. Dialogové okno se používá k vyloučení uživatele, když je spuštěn podproces. V tomto jednoduchém příkladu je k dispozici žádné tlačítko Storno v dialogovém okně. Ale bylo by snadno přidat funkci.  
@@ -36,17 +36,17 @@ V některých případech může být užitečné provést změny modelu ve vlá
   
 2. Ujistěte se, že projekt obsahuje odkazy na tato sestavení:  
   
-   -   Microsoft.VisualStudio.ArchitectureTools.Extensibility  
+   - Microsoft.VisualStudio.ArchitectureTools.Extensibility  
   
-   -   Microsoft.VisualStudio.Modeling.Sdk.[version]  
+   - Microsoft.VisualStudio.Modeling.Sdk.[version]  
   
-   -   Microsoft.VisualStudio.Modeling.Sdk.Diagrams.[version]  
+   - Microsoft.VisualStudio.Modeling.Sdk.Diagrams.[version]  
   
-   -   Microsoft.VisualStudio.Uml.Interfaces  
+   - Microsoft.VisualStudio.Uml.Interfaces  
   
-   -   System.ComponentModel.Composition  
+   - System.ComponentModel.Composition  
   
-   -   System.Windows.Forms  
+   - System.Windows.Forms  
   
 3. Přidejte do projektu formuláře Windows s názvem **ProgressForm**. By se zobrazit zpráva s oznámením, probíhají aktualizace. Nemusí mít další ovládací prvky.  
   
@@ -162,9 +162,9 @@ namespace BackgroundThreadProgressUI // CHANGE TO YOUR NAMESPACE
   
 #### <a name="to-allow-the-user-to-cancel-the-thread-in-the-example"></a>Umožnění uživateli zrušit vlákno v tomto příkladu  
   
-1.  Přidejte tlačítko Storno do dialogového okna průběhu.  
+1. Přidejte tlačítko Storno do dialogového okna průběhu.  
   
-2.  Přidejte následující kód do dialogového okna průběhu:  
+2. Přidejte následující kód do dialogového okna průběhu:  
   
      `public event MethodInvoker Cancel;`  
   
@@ -176,7 +176,7 @@ namespace BackgroundThreadProgressUI // CHANGE TO YOUR NAMESPACE
   
      `}`  
   
-3.  Metoda Execute() vloží tento řádek po konstrukci formuláře:  
+3. Metoda Execute() vloží tento řádek po konstrukci formuláře:  
   
      `form.Cancel += delegate() { worker.CancelAsync(); };`  
   

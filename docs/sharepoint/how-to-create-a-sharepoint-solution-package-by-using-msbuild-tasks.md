@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6f6fd87a9c666e3373515cf8df59d7cd9fd7c717
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 91cef3ad04ca7b1713f7e48f87dbefe1a84d8fca
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56624396"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093459"
 ---
 # <a name="how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks"></a>Postupy: Vytvoření balíčku řešení SharePoint pomocí úloh nástroje MSBuild
   Sestavení, vyčištění a ověřit balíček Sharepointu (*.wsp*) pomocí příkazového řádku MSBuild úkoly na vývojovém počítači. Tyto příkazy můžete také použít k automatizaci procesu sestavení s použitím serveru Team Foundation Server na počítači sestavení.
@@ -26,11 +26,11 @@ ms.locfileid: "56624396"
 
 #### <a name="to-build-a-sharepoint-package"></a>Chcete-li vytvořit balíček služby SharePoint
 
-1.  V Windows **Start** nabídce zvolte **všechny programy** > **Příslušenství** > **příkazový řádek**.
+1. V Windows **Start** nabídce zvolte **všechny programy** > **Příslušenství** > **příkazový řádek**.
 
-2.  Přejděte do adresáře, kde se nachází váš Sharepointový projekt.
+2. Přejděte do adresáře, kde se nachází váš Sharepointový projekt.
 
-3.  Zadejte následující příkaz pro vytvoření balíčku pro projekt. Nahraďte *ProjectFileName* s názvem projektu.
+3. Zadejte následující příkaz pro vytvoření balíčku pro projekt. Nahraďte *ProjectFileName* s názvem projektu.
 
     ```cmd
     msbuild /t:Package ProjectFileName
@@ -47,11 +47,11 @@ ms.locfileid: "56624396"
 
 #### <a name="to-clean-a-sharepoint-package"></a>Chcete-li vyčistit balíček Sharepointu
 
-1.  Otevřete okno příkazového řádku.
+1. Otevřete okno příkazového řádku.
 
-2.  Přejděte do adresáře, kde se nachází váš Sharepointový projekt.
+2. Přejděte do adresáře, kde se nachází váš Sharepointový projekt.
 
-3.  Zadejte následující příkaz k vyčištění balíčků pro projekt. Nahraďte *ProjectFileName* s názvem projektu.
+3. Zadejte následující příkaz k vyčištění balíčků pro projekt. Nahraďte *ProjectFileName* s názvem projektu.
 
     ```cmd
     msbuild /t:CleanPackage ProjectFileName
@@ -68,11 +68,11 @@ ms.locfileid: "56624396"
 
 #### <a name="to-validate-a-sharepoint-package"></a>Chcete-li ověřit balíček Sharepointu
 
-1.  Otevřete okno příkazového řádku.
+1. Otevřete okno příkazového řádku.
 
-2.  Přejděte do adresáře, kde se nachází váš Sharepointový projekt.
+2. Přejděte do adresáře, kde se nachází váš Sharepointový projekt.
 
-3.  Zadejte následující příkaz k ověření balíčku pro projekt. Nahraďte *ProjectFileName* s názvem projektu.
+3. Zadejte následující příkaz k ověření balíčku pro projekt. Nahraďte *ProjectFileName* s názvem projektu.
 
     ```cmd
     msbuild /t:ValidatePackage ProjectFileName
@@ -89,11 +89,11 @@ ms.locfileid: "56624396"
 
 #### <a name="to-set-a-property-in-a-sharepoint-package"></a>Nastavení vlastnosti v balíčku služby SharePoint
 
-1.  Otevřete okno příkazového řádku.
+1. Otevřete okno příkazového řádku.
 
-2.  Přejděte do adresáře, kde se nachází váš Sharepointový projekt.
+2. Přejděte do adresáře, kde se nachází váš Sharepointový projekt.
 
-3.  Zadejte následující příkaz pro nastavení vlastnosti v balíčku pro projekt. Nahraďte *PropertyName* s vlastností, které chcete nastavit.
+3. Zadejte následující příkaz pro nastavení vlastnosti v balíčku pro projekt. Nahraďte *PropertyName* s vlastností, které chcete nastavit.
 
     ```cmd
     msbuild /property:PropertyName=Value

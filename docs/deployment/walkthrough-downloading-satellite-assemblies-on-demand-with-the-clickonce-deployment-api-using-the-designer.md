@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c70782190bbfd76f5536a68eb597dbf3d122e773
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: 3af25c298970d9fe7f4a1442dedaf3af9f0172d1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323825"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095435"
 ---
 # <a name="walkthrough-download-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>Návod: Stahování satelitních sestavení na vyžádání pomocí nasazení ClickOnce pomocí návrháře rozhraní API
 Aplikace Windows Forms lze nastavit pro více jazykových verzí pomocí satelitních sestavení. A *satelitní sestavení* je sestavení obsahující prostředky aplikací pro jazykovou verzi, než je výchozí jazykovou verzi aplikace.
@@ -39,39 +39,39 @@ Aplikace Windows Forms lze nastavit pro více jazykových verzí pomocí satelit
 
 ### <a name="to-mark-satellite-assemblies-as-optional"></a>K označení satelitní sestavení jako volitelný
 
-1.  Sestavte projekt. Tím se vygeneruje satelitní sestavení pro všechny jazykové verze, které jsou k lokalizaci.
+1. Sestavte projekt. Tím se vygeneruje satelitní sestavení pro všechny jazykové verze, které jsou k lokalizaci.
 
-2.  Klikněte pravým tlačítkem na název vašeho projektu v Průzkumníku řešení a klikněte na tlačítko **vlastnosti**.
+2. Klikněte pravým tlačítkem na název vašeho projektu v Průzkumníku řešení a klikněte na tlačítko **vlastnosti**.
 
-3.  Klikněte na tlačítko **publikovat** kartu a potom klikněte na tlačítko **soubory aplikace**.
+3. Klikněte na tlačítko **publikovat** kartu a potom klikněte na tlačítko **soubory aplikace**.
 
-4.  Vyberte **zobrazit všechny soubory** zaškrtnutím políčka Zobrazit satelitní sestavení. Všechny satelitní sestavení ve výchozím nastavení, budou zahrnuty ve vašem nasazení a bude viditelný v tomto dialogovém.
+4. Vyberte **zobrazit všechny soubory** zaškrtnutím políčka Zobrazit satelitní sestavení. Všechny satelitní sestavení ve výchozím nastavení, budou zahrnuty ve vašem nasazení a bude viditelný v tomto dialogovém.
 
      Satelitní sestavení bude mít název ve tvaru  *\<isoCode > \ApplicationName.resources.dll*, kde \<isoCode > je ve formátu RFC 1766 identifikátor jazyka.
 
-5.  Klikněte na tlačítko **nový** v **skupina pro stažení** seznamu pro každý identifikátor jazyka. Po zobrazení výzvy pro název skupiny stažení, zadejte identifikátor jazyka. Například by pro japonské satelitní sestavení, zadejte název skupiny stažení `ja-JP`.
+5. Klikněte na tlačítko **nový** v **skupina pro stažení** seznamu pro každý identifikátor jazyka. Po zobrazení výzvy pro název skupiny stažení, zadejte identifikátor jazyka. Například by pro japonské satelitní sestavení, zadejte název skupiny stažení `ja-JP`.
 
-6.  Zavřít **soubory aplikace** dialogové okno.
+6. Zavřít **soubory aplikace** dialogové okno.
 
 ### <a name="to-download-satellite-assemblies-on-demand-in-c"></a>Chcete-li stáhnout satelitních sestavení na vyžádání v jazyce C\#
 
-1.  Otevřít *Program.cs* souboru. Pokud se tento soubor v Průzkumníku řešení, vyberte svůj projekt nezobrazí a na **projektu** nabídky, klikněte na tlačítko **zobrazit všechny soubory**.
+1. Otevřít *Program.cs* souboru. Pokud se tento soubor v Průzkumníku řešení, vyberte svůj projekt nezobrazí a na **projektu** nabídky, klikněte na tlačítko **zobrazit všechny soubory**.
 
-2.  Pomocí následujícího kódu ke stažení příslušného satelitního sestavení a spuštění aplikace.
+2. Pomocí následujícího kódu ke stažení příslušného satelitního sestavení a spuštění aplikace.
 
      [!code-csharp[ClickOnce.SatelliteAssemblies#1](../deployment/codesnippet/CSharp/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer_1.cs)]
 
 ### <a name="to-download-satellite-assemblies-on-demand-in-visual-basic"></a>Chcete-li stáhnout satelitních sestavení na vyžádání v jazyce Visual Basic
 
-1.  V **vlastnosti** okno pro aplikace, klikněte **aplikace** kartu.
+1. V **vlastnosti** okno pro aplikace, klikněte **aplikace** kartu.
 
-2.  V dolní části stránky karty, klikněte na tlačítko **zobrazení události aplikace**.
+2. V dolní části stránky karty, klikněte na tlačítko **zobrazení události aplikace**.
 
-3.  Přidejte následující importy do začátku *ApplicationEvents.VB* souboru.
+3. Přidejte následující importy do začátku *ApplicationEvents.VB* souboru.
 
      [!code-vb[ClickOnce.SatelliteAssembliesVB#1](../deployment/codesnippet/VisualBasic/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer_2.vb)]
 
-4.  Přidejte následující kód, který `MyApplication` třídy.
+4. Přidejte následující kód, který `MyApplication` třídy.
 
      [!code-vb[ClickOnce.SatelliteAssembliesVB#2](../deployment/codesnippet/VisualBasic/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer_3.vb)]
 

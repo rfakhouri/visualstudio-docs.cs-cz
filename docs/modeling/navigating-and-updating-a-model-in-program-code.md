@@ -9,18 +9,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: af0bd2c315114444057ca05e9bb85691fe72e966
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: 15725508059dbd1c11d9abe1dfcd42d170d24b47
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416233"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097762"
 ---
 # <a name="navigate-and-update-a-model-in-program-code"></a>Procházení a aktualizace modelu v programovém kódu
 
 Můžete napsat kód, vytvářet a odstraňovat prvky modelu, nastavit jejich vlastnosti a vytvářet a odstraňovat vazeb mezi prvky. Všechny změny se musí provádět v rámci transakce. Pokud prvky jsou zobrazeny v diagramu, diagram bude je "Opravit" automaticky na konci transakce.
 
-##  <a name="example"></a> Příklad definice DSL
+## <a name="example"></a> Příklad definice DSL
  Toto je hlavní část DslDefinition.dsl příklady v tomto tématu:
 
  ![Diagramem definice DSL &#45; řady stromu modelu](../modeling/media/familyt_person.png)
@@ -40,7 +40,7 @@ Můžete napsat kód, vytvářet a odstraňovat prvky modelu, nastavit jejich vl
 
  Kromě toho pokud píšete kód v jiném projektu než ten, ve kterém je definována vašeho DSL, importujte sestavení, který je sestaven projektem Dsl.
 
-##  <a name="navigation"></a> Navigace modelu
+## <a name="navigation"></a> Navigace modelu
 
 ### <a name="properties"></a>Vlastnosti
  Vlastnosti domény, které definujete v definici DSL stát vlastnosti, ke kterým můžete přistupovat v programovém kódu:
@@ -107,7 +107,7 @@ Můžete napsat kód, vytvářet a odstraňovat prvky modelu, nastavit jejich vl
 
  `store.ElementDirectory.GetElement(elementId);`
 
-##  <a name="metadata"></a> Přístup k informacím o třídě
+## <a name="metadata"></a> Přístup k informacím o třídě
  Můžete získat informace o třídách, relace a další aspekty definici DSL. Příklad:
 
  `DomainClassInfo personClass = henry.GetDomainClass();`
@@ -124,11 +124,11 @@ Můžete napsat kód, vytvářet a odstraňovat prvky modelu, nastavit jejich vl
 
  Třídy předchůdce prvků modelu jsou následující:
 
--   ModelElement – všechny prvky a vztahy jsou ModelElements
+- ModelElement – všechny prvky a vztahy jsou ModelElements
 
--   ElementLink – všechny vztahy jsou ElementLinks
+- ElementLink – všechny vztahy jsou ElementLinks
 
-##  <a name="transaction"></a> Proveďte změny v transakci
+## <a name="transaction"></a> Proveďte změny v transakci
  Pokaždé, když se změní váš kód programu cokoli Store, se musí provést v transakci. To platí pro všechny prvky modelu, relace, tvary, diagramy a jejich vlastnosti. Další informace naleznete v tématu <xref:Microsoft.VisualStudio.Modeling.Transaction>.
 
  Je nejpohodlnější způsob správy transakce s `using` ohraničeno příkaz `try...catch` – příkaz:
@@ -161,7 +161,7 @@ catch (Exception ex)
 
  Aby byly provedené změny trvalé, měli byste `Commit` transakce před jejich likvidace. Pokud dojde k výjimce, která není zachycena uvnitř transakce, Store obnoví do stavu před změny.
 
-##  <a name="elements"></a> Vytváření elementů modelu
+## <a name="elements"></a> Vytváření elementů modelu
  Tento příklad přidá prvek na existující model:
 
 ```
@@ -194,38 +194,38 @@ using (Transaction t =
 
   Při vytváření elementu tímto způsobem obrazce se automaticky vytvoří (Pokud DSL neobsahuje diagram). Zobrazí se v umístění služby automaticky přiřazený, výchozí tvar, barvu a další funkce. Pokud chcete určit, kde a jak se zobrazí související tvar, přečtěte si téma [vytváření elementu a jeho tvar](#merge).
 
-##  <a name="links"></a> Vytváření vztahů propojení
+## <a name="links"></a> Vytváření vztahů propojení
  Existují dva vztahy definované v příkladu definici DSL. Definuje každou relaci *vlastnosti role* ve třídě na každém konci vztahu.
 
  Existují tři způsoby, ve kterých můžete vytvořit instanci relace. Každá z těchto tří metod má stejný účinek:
 
 - Nastavte vlastnost aktéra zdrojové role. Příklad:
 
-  -   `familyTree.People.Add(edward);`
+  - `familyTree.People.Add(edward);`
 
-  -   `edward.Parents.Add(henry);`
+  - `edward.Parents.Add(henry);`
 
 - Nastavte vlastnost Aktér cílové role. Příklad:
 
-  -   `edward.familyTreeModel = familyTree;`
+  - `edward.familyTreeModel = familyTree;`
 
        Násobnost tato role je `1..1`, takže můžeme přiřadit hodnotu.
 
-  -   `henry.Children.Add(edward);`
+  - `henry.Children.Add(edward);`
 
        Násobnost tato role je `0..*`, takže můžeme přidat do kolekce.
 
 - Explicitně vytvořte instanci relace. Příklad:
 
-  -   `FamilyTreeHasPeople edwardLink = new FamilyTreeHasPeople(familyTreeModel, edward);`
+  - `FamilyTreeHasPeople edwardLink = new FamilyTreeHasPeople(familyTreeModel, edward);`
 
-  -   `ParentsHaveChildren edwardHenryLink = new ParentsHaveChildren(henry, edward);`
+  - `ParentsHaveChildren edwardHenryLink = new ParentsHaveChildren(henry, edward);`
 
   Poslední metoda je užitečná, pokud chcete nastavit vlastnosti v relaci sama.
 
   Při vytváření elementu tímto způsobem je automaticky vytvořen konektor v diagramu, ale má výchozí tvar, barvu a další funkce. Pokud chcete řídit způsob vytvoření konektoru přidružené, naleznete v tématu [vytváření elementu a jeho tvar](#merge).
 
-##  <a name="deleteelements"></a> Odstranění prvků
+## <a name="deleteelements"></a> Odstranění prvků
 
 Odstranit element voláním `Delete()`:
 
@@ -249,7 +249,7 @@ Může způsobit odstranění pravidla chcete vynechat, nechte konkrétní ší�
 
 V některých případech je odstranění bráněno existenci zámek, který je v elementu nebo na element, který se odstraní podle šíření. Můžete použít `element.CanDelete()` ke kontrole, jestli je možné odstranit prvek.
 
-##  <a name="deletelinks"></a> Odstranění vztahů propojení
+## <a name="deletelinks"></a> Odstranění vztahů propojení
  Vztah odkazu můžete odstranit tak, že odeberete element z vlastnosti role:
 
  `henry.Children.Remove(edward); // or:`
@@ -268,7 +268,7 @@ V některých případech je odstranění bráněno existenci zámek, který je 
 
  `edward.FamilyTreeModel = anotherFamilyTree;`
 
-##  <a name="reorder"></a> Změna řazení odkazy tohoto vztahu
+## <a name="reorder"></a> Změna řazení odkazy tohoto vztahu
  Odkazy konkrétního vztahu, které jsou zdrojem nebo zaměřený na konkrétním modelu element mají konkrétní pořadí. Zobrazí se v pořadí, ve kterém byly přidány. Tento příkaz například budou vždy poskytovat podřízené objekty ve stejném pořadí:
 
  `foreach (Person child in henry.Children) ...`
@@ -285,12 +285,12 @@ V některých případech je odstranění bráněno existenci zámek, který je 
 
  `link.MoveBefore(role, nextLink);`
 
-##  <a name="locks"></a> Zámky
+## <a name="locks"></a> Zámky
  Provedené změny mohou být bráněno zámek. Zámky můžete nastavit na jednotlivé prvky, oddíly a úložišti. Pokud některé z těchto úrovní má zámek, který brání druh změn, které nechcete se ujistit, může při pokusu o je vyvolána výjimka. Můžete zjistit, jestli jsou nastavené zámky pomocí elementu. GetLocks(), což je rozšiřující metodu, která je definována v oboru názvů <xref:Microsoft.VisualStudio.Modeling.Immutability>.
 
  Další informace najdete v tématu [definování zásady zamykání pro vytváření segmentů jen pro čtení](../modeling/defining-a-locking-policy-to-create-read-only-segments.md).
 
-##  <a name="copy"></a> Kopírování a vkládání
+## <a name="copy"></a> Kopírování a vkládání
  Můžete zkopírovat elementy nebo skupiny prvků, které se <xref:System.Windows.Forms.IDataObject>:
 
 ```
@@ -315,7 +315,7 @@ using (Transaction t = targetDiagram.Store.
 
  `Merge ()` Můžete buď přijmout `PresentationElement` nebo `ModelElement`. Pokud je jí `PresentationElement`, můžete také určit pozici v diagramu cíl jako třetí parametr.
 
-##  <a name="diagrams"></a> Procházení a aktualizace diagramů
+## <a name="diagrams"></a> Procházení a aktualizace diagramů
  V DSL doménový element modelu, který představuje koncept jako osoba nebo skladby, je oddělený od elementu obrazce, který reprezentuje, co se zobrazí v diagramu. Prvek modelu domény ukládá důležité vlastnosti a vztahy koncepty. Prvek tvaru ukládá velikost, umístění a barvy zobrazení objektu v diagramu a rozložení jeho součásti.
 
 ### <a name="presentation-elements"></a>Elementy prezentace
@@ -337,7 +337,7 @@ using (Transaction t = targetDiagram.Store.
 
  Obrazce mohou mít podřízené obrazce ve dvou sad. Tvar v `NestedChildShapes` sada je omezena na ohraničující rámeček svého nadřazeného objektu. Tvar v `RelativeChildShapes` seznamu mohou vyskytovat mimo nebo částečně mimo hranice nadřazený – například popisku nebo port. Diagram nemá žádné `RelativeChildShapes` a ne `Parent`.
 
-###  <a name="views"></a> Přecházení mezi tvary a elementy
+### <a name="views"></a> Přecházení mezi tvary a elementy
  Elementy modelu domény a elementy obrazce se vztahují <xref:Microsoft.VisualStudio.Modeling.Diagrams.PresentationViewsSubject> vztah.
 
 ```csharp
@@ -409,30 +409,30 @@ FamilyTreeDiagram diagram =
 
  --------- *YourConnector*
 
-###  <a name="shapeProperties"></a> Vlastnosti obrazců a konektorů
+### <a name="shapeProperties"></a> Vlastnosti obrazců a konektorů
  Ve většině případů není nutné provést explicitní změny obrazce. Pokud jste změnili prvky modelu, pravidla "Opravit" aktualizace obrazců a konektorů. Další informace najdete v tématu [šířící změny a reakce na](../modeling/responding-to-and-propagating-changes.md).
 
  Je však vhodné udělat nějaké změny explicitní obrazce ve vlastnosti, které jsou nezávislé na prvky modelu. Můžete například změnit tyto vlastnosti:
 
--   <xref:Microsoft.VisualStudio.Modeling.Diagrams.NodeShape.Size%2A> -Určuje výšku a šířku tvaru.
+- <xref:Microsoft.VisualStudio.Modeling.Diagrams.NodeShape.Size%2A> -Určuje výšku a šířku tvaru.
 
--   <xref:Microsoft.VisualStudio.Modeling.Diagrams.NodeShape.Location%2A> -pozice relativně vzhledem k nadřazený obrazec ani diagram
+- <xref:Microsoft.VisualStudio.Modeling.Diagrams.NodeShape.Location%2A> -pozice relativně vzhledem k nadřazený obrazec ani diagram
 
--   <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.StyleSet%2A> -sadu pera a použité pro kreslení obrazec nebo spojnici štětce
+- <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.StyleSet%2A> -sadu pera a použité pro kreslení obrazec nebo spojnici štětce
 
--   <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.Hide%2A> -je neviditelné tvar
+- <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.Hide%2A> -je neviditelné tvar
 
--   <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.Show%2A> – Po zviditelní obrazec `Hide()`
+- <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.Show%2A> – Po zviditelní obrazec `Hide()`
 
-###  <a name="merge"></a> Vytvoření elementu a jeho tvar
+### <a name="merge"></a> Vytvoření elementu a jeho tvar
 
 Při vytváření elementu a připojit ho do stromu relace vkládání, je automaticky vytvořen a přidružen obrazce. To se provádí pomocí pravidel "opravy", které jsou spouštěny na konci transakce. Ale tvar se zobrazí v automaticky přiřazená umístění a jeho tvar, barvu a další funkce budou mít výchozí hodnoty. K řízení, jak vytvořit tvar, můžete použít funkci sloučení. Musíte nejprve přidat prvky, které chcete přidat do skupina ElementGroup a pak sloučit skupiny do diagramu.
 
 Tuto metodu:
 
--   Nastaví název, pokud jste přiřadili vlastnost jako název elementu.
+- Nastaví název, pokud jste přiřadili vlastnost jako název elementu.
 
--   Dodržuje všechny direktivy sloučení elementů, který jste zadali v definici DSL.
+- Dodržuje všechny direktivy sloučení elementů, který jste zadali v definici DSL.
 
 Tento příklad vytvoří obrazec pod kurzor myši, když uživatel pokliká na diagramu. V definici DSL v tomto příkladu `FillColor` vlastnost `ExampleShape` byl zpřístupněn.
 
@@ -476,7 +476,7 @@ partial class MyDiagram
 ### <a name="use-transactions"></a>Použití transakcí
  Tvary, konektory a diagramy jsou podtypy <xref:Microsoft.VisualStudio.Modeling.ModelElement> tak pro živé v Store. Proto je třeba provést změny k nim jen v transakci. Další informace najdete v tématu [jak: Používání transakcí k aktualizaci modelu](../modeling/how-to-use-transactions-to-update-the-model.md).
 
-##  <a name="docdata"></a> Zobrazení dokumentů a dat dokumentu
+## <a name="docdata"></a> Zobrazení dokumentů a dat dokumentu
  ![Diagram tříd typů standardní diagramu](../modeling/media/dsldiagramsanddocs.png)
 
 ## <a name="store-partitions"></a>Oddíly Store

@@ -12,12 +12,12 @@ ms.assetid: da2474fa-f92d-4e9e-b8bf-67c61bf249c2
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: b028250c53ccf0d5af09671bca82848a626d3129
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 4741059410e052c571d77088b9cbe109fb651642
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54802800"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095060"
 ---
 # <a name="changing-the-appearance-of-a-command"></a>Změna vzhledu příkazu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,21 +36,21 @@ Změnou vzhledu příkazu můžete poskytnou zpětnou vazbu uživatelů. Napří
   
 ### <a name="to-change-the-appearance-of-a-menu-command"></a>Chcete-li změnit vzhled příkazu nabídky  
   
-1.  Postupujte podle pokynů v [Změna textu příkazu nabídky](../extensibility/changing-the-text-of-a-menu-command.md) vytvořit položku nabídky s názvem `New Text`.  
+1. Postupujte podle pokynů v [Změna textu příkazu nabídky](../extensibility/changing-the-text-of-a-menu-command.md) vytvořit položku nabídky s názvem `New Text`.  
   
-2.  V souboru ChangeMenuText.cs, přidejte následující příkaz using:  
+2. V souboru ChangeMenuText.cs, přidejte následující příkaz using:  
   
     ```csharp  
     using System.Security.Permissions;  
     ```  
   
-3.  V souboru ChangeMenuTextPackageGuids.cs přidejte následující řádek:  
+3. V souboru ChangeMenuTextPackageGuids.cs přidejte následující řádek:  
   
     ```csharp  
     public const string guidChangeMenuTextPackageCmdSet= "00000000-0000-0000-0000-00000000";  // get the GUID from the .vsct file  
     ```  
   
-4.  V souboru ChangeMenuText.cs nahraďte kód v metodě ShowMessageBox následujícími způsoby:  
+4. V souboru ChangeMenuText.cs nahraďte kód v metodě ShowMessageBox následujícími způsoby:  
   
     ```csharp  
     private void ShowMessageBox(object sender, EventArgs e)  
@@ -61,7 +61,7 @@ Změnou vzhledu příkazu můžete poskytnou zpětnou vazbu uživatelů. Napří
     }  
     ```  
   
-5.  Získat příkaz, který chcete aktualizovat z <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService> objekt a potom nastavte příslušné vlastnosti v objektu command. Například následující metoda provede zadaný příkaz z příkazu VSPackage nastavení k dispozici nebo není k dispozici. Následující kód vytvoří položka nabídky s názvem `New Text` není k dispozici, až se kliklo.  
+5. Získat příkaz, který chcete aktualizovat z <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService> objekt a potom nastavte příslušné vlastnosti v objektu command. Například následující metoda provede zadaný příkaz z příkazu VSPackage nastavení k dispozici nebo není k dispozici. Následující kód vytvoří položka nabídky s názvem `New Text` není k dispozici, až se kliklo.  
   
     ```csharp  
     public bool ChangeMyCommand(int cmdID, bool enableCmd)  
@@ -80,11 +80,11 @@ Změnou vzhledu příkazu můžete poskytnou zpětnou vazbu uživatelů. Napří
     }  
     ```  
   
-6.  Sestavte projekt a spusťte ladění. Experimentální instanci sady Visual Studio by se zobrazit.  
+6. Sestavte projekt a spusťte ladění. Experimentální instanci sady Visual Studio by se zobrazit.  
   
-7.  Na **nástroje** nabídky, klikněte na tlačítko **vyvolat ChangeMenuText** příkazu. V tomto okamžiku je název příkazu **vyvolat ChangeMenuText**, takže obslužná rutina příkazu nevolá ChangeMyCommand().  
+7. Na **nástroje** nabídky, klikněte na tlačítko **vyvolat ChangeMenuText** příkazu. V tomto okamžiku je název příkazu **vyvolat ChangeMenuText**, takže obslužná rutina příkazu nevolá ChangeMyCommand().  
   
-8.  Na **nástroje** nabídky, měli byste vidět **nový Text**. Klikněte na tlačítko **nový Text**. Příkaz by měl nyní být zobrazena šedě.  
+8. Na **nástroje** nabídky, měli byste vidět **nový Text**. Klikněte na tlačítko **nový Text**. Příkaz by měl nyní být zobrazena šedě.  
   
 ## <a name="see-also"></a>Viz také  
  [Příkazy, nabídky a panely nástrojů](../extensibility/internals/commands-menus-and-toolbars.md)   

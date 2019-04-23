@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ab40302e7b92f0cb3789c7510ba80904b45f5afe
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: daf131fd6d7940458252e734ab0cc222f2e3a357
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596721"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096127"
 ---
 # <a name="guids-and-ids-of-visual-studio-commands"></a>Příkazy identifikátory GUID a ID sady Visual Studio
 Hodnoty GUID a ID příkazů součástí integrovaného vývojového prostředí (IDE) sady Visual Studio jsou definovány v souborech .vsct, které se instalují jako součást sady Visual Studio SDK. Další informace najdete v tématu [příkazy definované prostředím IDE, nabídky a skupiny](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).
@@ -52,11 +52,11 @@ Hodnoty GUID a ID příkazů součástí integrovaného vývojového prostředí
 ### <a name="special-cases"></a>Zvláštní případy
  V následujících případech text nabídky nebo text popisku nemusí přesně odpovídat co je v definici příkazu.
 
--   Položky nabídky, které obsahují podrženého znaku, například **tisk** příkaz **souboru** nabídka, ve kterém *P* podtržené.
+- Položky nabídky, které obsahují podrženého znaku, například **tisk** příkaz **souboru** nabídka, ve kterém *P* podtržené.
 
      Znaky, které předchází znak ampersand (&) znaků v názvech položek nabídky se zobrazí jako podtržené. Ale *.vsct* soubory jsou zapsány ve formátu XML, který používá znak ampersand (&) k označení speciální znaky a vyžaduje, že musí být zadán znak ampersand, který se má zobrazit jako  *&amp;amp;*. Proto v *.vsct* souboru **tisk** příkazu se zobrazí jako  *&amp;amp; Tisk*.
 
--   Příkazy, které mají dynamický text, například **Uložit** \<aktuální Filename\>a dynamicky generované položky nabídky, jako je například položky na **poslední soubory** seznamu.
+- Příkazy, které mají dynamický text, například **Uložit** \<aktuální Filename\>a dynamicky generované položky nabídky, jako je například položky na **poslední soubory** seznamu.
 
      Neexistuje žádný spolehlivý způsob pro vyhledávání na dynamický text. Místo toho najít skupinu, který je hostitelem požadovaného příkazu v součinnosti s [identifikátory GUID a ID sady Visual Studio nabídky](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md) nebo [identifikátory GUID a ID sady Visual Studio panely nástrojů](../../extensibility/internals/guids-and-ids-of-visual-studio-toolbars.md)a vyhledat ID této skupiny. Pokud definice příkazu nemá žádné skupiny jako jeho [nadřazeného elementu](../../extensibility/parent-element.md), hledání *SharedCmdPlace.vsct* a *ShellCmdPlace.vsct* (nebo  *VsDbgCmdPlace.vsct* pro příkazy ladicího programu) pro `<CommandPlacement>` element, který nastaví nadřazeného tohoto příkazu. *SharedCmdPlace.vsct*, *ShellCmdPlace.vsct*, a *VsDbgCmdPlace.vsct* v *\<cestu instalace sady Visual Studio SDK\>\ VisualStudioIntegration\Common\Inc\\* složky.
 

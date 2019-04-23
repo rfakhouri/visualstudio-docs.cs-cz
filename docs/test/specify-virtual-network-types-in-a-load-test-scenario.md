@@ -12,12 +12,12 @@ ms.assetid: 3c4f7874-081a-4ec4-9510-4d6d7d863a11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 896a493701f0fff2c5ecf6057831e9092cd28a1d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 8444fa5910658ab92643b2110483efc059560674
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55925490"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094356"
 ---
 # <a name="specify-virtual-network-types-in-a-load-test-scenario"></a>Určení typů virtuálních sítí ve scénáři zátěžového testu
 
@@ -41,17 +41,17 @@ Další informace najdete v tématu [o ovládacím prvku kombinace](../test/spec
 
 Visual Studio používá softwarových skutečná emulace sítě pro všechny typy testu včetně zátěžových testů. Skutečná emulace sítě simuluje stavy sítě prostřednictvím přímé manipulace se síťovými pakety. Emulátor skutečné sítě může emulovat chování drátové i bezdrátové sítě pomocí spolehlivého fyzického propojení, jako je Ethernet. Následující atributy sítě jsou začleněny do emulace sítě:
 
--   Časem přenosu v síti (čekací doba)
+- Časem přenosu v síti (čekací doba)
 
--   Množství dostupné šířky pásma
+- Množství dostupné šířky pásma
 
--   Chování řízení front
+- Chování řízení front
 
--   Ztráta paketů
+- Ztráta paketů
 
--   Změna pořadí paketů
+- Změna pořadí paketů
 
--   Šíření chyb.
+- Šíření chyb.
 
 Skutečná emulace sítě také poskytuje flexibilitu při filtrování síťových paketů na základě IP adresy nebo protokoly, například TCP, UDP a ICMP.
 
@@ -59,30 +59,30 @@ Skutečná emulace sítě je možné aplikace založené na síti vývojářům 
 
 ## <a name="to-add-new-networks-to-a-scenario"></a>Přidání nových sítí do scénáře
 
-1.  Během procesu určení kombinace sítě pro scénáře, zvolte **přidat**.
+1. Během procesu určení kombinace sítě pro scénáře, zvolte **přidat**.
 
      Nová položka sítě je přidané do mřížky.
 
     > [!NOTE]
     > Pro zobrazení **upravit kombinaci sítí** dialogového okna, klikněte pravým tlačítkem na existující scénář a pak vyberte **upravit kombinaci sítí**.
 
-2.  V **typ sítě** sloupce, klikněte na šipku pro novou položku. Zvolte typ požadované síti.
+2. V **typ sítě** sloupce, klikněte na šipku pro novou položku. Zvolte typ požadované síti.
 
-3.  (Volitelné) Upravte poměr ovládacího prvku k určení distribuci testů. Další informace najdete v tématu [o ovládacím prvku kombinace](../test/specify-virtual-network-types-in-a-load-test-scenario.md).
+3. (Volitelné) Upravte poměr ovládacího prvku k určení distribuci testů. Další informace najdete v tématu [o ovládacím prvku kombinace](../test/specify-virtual-network-types-in-a-load-test-scenario.md).
 
-4.  Po dokončení přidávání sítí, zvolte **OK**.
+4. Po dokončení přidávání sítí, zvolte **OK**.
 
 ## <a name="to-remove-networks-from-a-scenario"></a>Chcete-li odebrat sítě ze scénáře
 
-1.  Otevřete zátěžový test.
+1. Otevřete zátěžový test.
 
-2.  Klikněte pravým tlačítkem na scénář, ze kterého chcete odebrat síť a zvolte **upravit kombinaci sítí**. **Upravit kombinaci sítí** se zobrazí dialogové okno.
+2. Klikněte pravým tlačítkem na scénář, ze kterého chcete odebrat síť a zvolte **upravit kombinaci sítí**. **Upravit kombinaci sítí** se zobrazí dialogové okno.
 
-3.  Vyberte síť v mřížce a potom zvolte **odebrat**.
+3. Vyberte síť v mřížce a potom zvolte **odebrat**.
 
-4.  (Volitelné) Upravte poměr ovládacího prvku k určení distribuci testů. Další informace najdete v tématu [o ovládacím prvku kombinace](../test/specify-virtual-network-types-in-a-load-test-scenario.md).
+4. (Volitelné) Upravte poměr ovládacího prvku k určení distribuci testů. Další informace najdete v tématu [o ovládacím prvku kombinace](../test/specify-virtual-network-types-in-a-load-test-scenario.md).
 
-5.  Po dokončení odebírání sítí, zvolte **OK**.
+5. Po dokončení odebírání sítí, zvolte **OK**.
 
 ## <a name="about-the-mix-control"></a>O ovládacím prvku kombinace
 

@@ -9,12 +9,12 @@ caps.latest.revision: 32
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7bc0d040c899e137910449faeb14c8e241fad812
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2dc0d0bf4efd8c30d874a24e94d3933d2eef713a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54800070"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097180"
 ---
 # <a name="overview-of-visual-studio-graphics-diagnostics"></a>Přehled diagnostiky grafiky sady Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,7 +65,7 @@ Visual Studio *diagnostiky grafiky* je sada nástrojů pro nahrávání a pak an
 
 ##### <a name="to-open-the-directx-control-panel"></a>Otevření ovládacího panelu rozhraní DirectX
 
--   V panelu nabídky zvolte **ladění**, **grafiky**, **ovládací Panel rozhraní DirectX**.
+- V panelu nabídky zvolte **ladění**, **grafiky**, **ovládací Panel rozhraní DirectX**.
 
 ## <a name="graphics-analyzer"></a>Analyzátor grafiky
  Visual Studio Graphics Analyzer je vyhrazený rozhraní pro zkoumání problémů vykreslování a výkonu v snímky, které jste zaznamenali. V analyzátoru grafiky sady najdete několik nástrojů, které vám pomůžou prozkoumat a pochopit chování vykreslování vaší aplikace. Každý nástroj zpřístupňuje jiný druh informací o rámec, který je kontrolován a nástroje jsou navrženy pro použití ve vzájemné součinnosti intuitivně úzký-v na zdroji problému vykreslování, počínaje její vzhled v framebuffer.

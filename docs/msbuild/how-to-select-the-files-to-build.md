@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9942c680f93614a84da3502de4b3a26a08576fb7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 03a10e75ce50441b8c32ff734e6f2d30e9604bc1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56610538"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097463"
 ---
 # <a name="how-to-select-the-files-to-build"></a>Postupy: Výběr souborů pro sestavení
 Při vytváření projektu, který obsahuje několik souborů, můžete vytvořit seznam každý soubor samostatně v souboru projektu nebo k zahrnutí všech souborů v jednom adresáři nebo vnořenou sadu adresáře můžete použít zástupné znaky.
@@ -42,7 +42,7 @@ Chcete-li zahrnout soubory pro sestavení, musí být obsažena v seznamu polož
 
 #### <a name="to-declare-multiple-items"></a>Chcete-li deklarovat více položek
 
--   Použití `Include` atributy podobně jako následující:
+- Použití `Include` atributy podobně jako následující:
 
     `<CSFile Include="form1.cs;form2.cs"/>`
 

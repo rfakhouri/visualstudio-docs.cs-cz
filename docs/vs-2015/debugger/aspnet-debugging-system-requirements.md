@@ -17,25 +17,25 @@ caps.latest.revision: 41
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a6f50584c5e01b97eb00a0e7f62998670d033553
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 523764ae5cd787fd4b52650e894eb086ae4adb0c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54759110"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097125"
 ---
 # <a name="aspnet-debugging-system-requirements"></a>Ladění ASP.NET: Požadavky na systém
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Toto téma popisuje požadavky na software a zabezpečení pro [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] ladění scénářů:  
   
--   Místní ladění, ve kterém [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] a webovou aplikaci spustit ve stejném počítači. Existují dvě verze tohoto scénáře:  
+- Místní ladění, ve kterém [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] a webovou aplikaci spustit ve stejném počítači. Existují dvě verze tohoto scénáře:  
   
-    -   [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Kód se nachází v systému souborů.  
+    - [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Kód se nachází v systému souborů.  
   
-    -   [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Kód se nachází na webu služby IIS.  
+    - [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Kód se nachází na webu služby IIS.  
   
--   Vzdálené ladění, ve kterém [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] běží na klientském počítači a ladí webovou aplikaci, která běží na vzdáleném serveru.  
+- Vzdálené ladění, ve kterém [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] běží na klientském počítači a ladí webovou aplikaci, která běží na vzdáleném serveru.  
   
 ## <a name="security-requirements"></a>Požadavky na zabezpečení  
  Pro vzdálené ladění, místních i vzdálených počítačů musí být v nastavení domény nebo pracovní skupiny nastavení.  
