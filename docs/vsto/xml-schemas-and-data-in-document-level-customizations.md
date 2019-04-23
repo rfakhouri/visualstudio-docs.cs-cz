@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d2959707048cb3223b6866c3c8aa4c04cc146077
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: eb56d2f9b6d2d5c08956d48f4f53a46305d9fd26
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54875447"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117926"
 ---
 # <a name="xml-schemas-and-data-in-document-level-customizations"></a>Schémata XML a data v přizpůsobeních na úrovni dokumentu
   **Důležité** informace uvedené v tomto tématu týkající se Microsoft Word je zobrazené výhradně pro výhod a užívání o jednotlivci i organizacemi, kteří se nacházejí mimo Spojené státy a jeho území nebo kteří používají nebo vývoj programy, které běží na produkty Microsoft Word, které byly licencovaných společností Microsoft před 2010 dne, kdy Microsoft odebrána implementace konkrétní funkce související s vlastní XML z aplikace Microsoft Word. Tyto informace týkající se Microsoft Word nemusí být přečteny nebo používány jednotlivcům i organizacím v USA nebo v jeho území, které používáte, nebo vývoji programů, které běží na produkty Microsoft Word, které byly licencovaných společností Microsoft po 10. ledna 2010 ; tyto produkty se chovají stejně jako produkty licenci před tímto datem nebo zakoupených a licencovaná pro použití mimo území Spojených států.
@@ -40,16 +40,16 @@ ms.locfileid: "54875447"
 
  Existují dva hlavní objekty:
 
--   Schématu XML (soubor XSD). Pro každé schéma v sešitu Visual Studio přidá schéma do projektu. Se zobrazuje jako položka projektu s příponou XSD v **Průzkumníka řešení**.
+- Schématu XML (soubor XSD). Pro každé schéma v sešitu Visual Studio přidá schéma do projektu. Se zobrazuje jako položka projektu s příponou XSD v **Průzkumníka řešení**.
 
--   Zadaný <xref:System.Data.DataSet> třídy. Tato třída se vytvoří podle schématu. Tato třída dataset je viditelný v **zobrazení tříd**.
+- Zadaný <xref:System.Data.DataSet> třídy. Tato třída se vytvoří podle schématu. Tato třída dataset je viditelný v **zobrazení tříd**.
 
 ## <a name="objects-created-when-schema-elements-are-mapped-to-excel-worksheets"></a>Objekty vytvořené při elementy schématu jsou namapovány na listech aplikace Excel
  Při mapování element schématu z **XML použitého jako zdroj** podokna úloh do listu, Visual Studio automaticky vytvoří několik objektů a přidá je do projektu:
 
--   Ovládací prvky. Pro každý mapovaných objektů v sešitu <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> ovládacího prvku (pro elementy schématu bez opakování) nebo <xref:Microsoft.Office.Tools.Excel.ListObject> ovládacího prvku (pro opakující se elementy schématu) se vytvoří v programovacím modelu. <xref:Microsoft.Office.Tools.Excel.ListObject> Ovládací prvek lze odstranit pouze tak, že odstraníte mapování a mapovaných objektů ze sešitu. Další informace o ovládacích prvcích najdete v tématu [hostovat položky a hostujte Přehled ovládacích prvků](../vsto/host-items-and-host-controls-overview.md).
+- Ovládací prvky. Pro každý mapovaných objektů v sešitu <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> ovládacího prvku (pro elementy schématu bez opakování) nebo <xref:Microsoft.Office.Tools.Excel.ListObject> ovládacího prvku (pro opakující se elementy schématu) se vytvoří v programovacím modelu. <xref:Microsoft.Office.Tools.Excel.ListObject> Ovládací prvek lze odstranit pouze tak, že odstraníte mapování a mapovaných objektů ze sešitu. Další informace o ovládacích prvcích najdete v tématu [hostovat položky a hostujte Přehled ovládacích prvků](../vsto/host-items-and-host-controls-overview.md).
 
--   BindingSource. Při vytváření <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> mapováním neopakujícími element schématu na listu <xref:System.Windows.Forms.BindingSource> se vytvoří a <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> ovládací prvek vázán na <xref:System.Windows.Forms.BindingSource>. Je třeba svázat <xref:System.Windows.Forms.BindingSource> do instance zdroje dat, která odpovídá schématu namapované na dokument, jako je například instance zadaného objektu <xref:System.Data.DataSet> třídu, která byla vytvořena. Vytvoření vazby tak, že nastavíte <xref:System.Windows.Forms.BindingSource.DataSource%2A> a <xref:System.Windows.Forms.BindingSource.DataMember%2A> vlastnosti, které jsou přístupné **vlastnosti** okna.
+- BindingSource. Při vytváření <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> mapováním neopakujícími element schématu na listu <xref:System.Windows.Forms.BindingSource> se vytvoří a <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> ovládací prvek vázán na <xref:System.Windows.Forms.BindingSource>. Je třeba svázat <xref:System.Windows.Forms.BindingSource> do instance zdroje dat, která odpovídá schématu namapované na dokument, jako je například instance zadaného objektu <xref:System.Data.DataSet> třídu, která byla vytvořena. Vytvoření vazby tak, že nastavíte <xref:System.Windows.Forms.BindingSource.DataSource%2A> a <xref:System.Windows.Forms.BindingSource.DataMember%2A> vlastnosti, které jsou přístupné **vlastnosti** okna.
 
     > [!NOTE]
     >  <xref:System.Windows.Forms.BindingSource> Není vytvořena pro <xref:Microsoft.Office.Tools.Excel.ListObject> objekty. Musíte ručně vytvořit vazbu <xref:Microsoft.Office.Tools.Excel.ListObject> ke zdroji dat tím, že nastavíte <xref:System.Windows.Forms.BindingSource.DataSource%2A> a <xref:System.Windows.Forms.BindingSource.DataMember%2A> vlastnosti v **vlastnosti** okna.

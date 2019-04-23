@@ -11,12 +11,12 @@ caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: dc91bff6819cc5a1ed1e22864157143843f88ba9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 71593496613c75485fd30481777d0fcc1102c11c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54790426"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117808"
 ---
 # <a name="how-to-configure-performance-rules"></a>Postupy: Konfigurace pravidel výkonu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,18 +25,18 @@ Upozornění výkonu th Visual Studio nástrojů pro profilaci sady signalizují
   
 ### <a name="to-configure-profiler-performance-warnings"></a>Konfigurace upozornění profileru výkonu  
   
-1.  Na **nástroje** nabídky, klikněte na tlačítko **možnosti**.  
+1. Na **nástroje** nabídky, klikněte na tlačítko **možnosti**.  
   
-2.  Rozbalte **nástroje pro měření výkonu**a potom klikněte na tlačítko **pravidla**.  
+2. Rozbalte **nástroje pro měření výkonu**a potom klikněte na tlačítko **pravidla**.  
   
-3.  Pokud chcete povolit nebo zakázat upozornění, zaškrtněte nebo zrušte zaškrtnutí políčka u upozornění **ID** a název.  
+3. Pokud chcete povolit nebo zakázat upozornění, zaškrtněte nebo zrušte zaškrtnutí políčka u upozornění **ID** a název.  
   
-4.  K určení úrovně warring pravidla, klikněte na tlačítko **akce** buňka vedle pravidlo a pak klikněte na úroveň pro upozornění.  
+4. K určení úrovně warring pravidla, klikněte na tlačítko **akce** buňka vedle pravidlo a pak klikněte na úroveň pro upozornění.  
   
-    -   **Zakázané** – zakáže pravidlo (to je stejný jako zrušením zaškrtnutí políčka vedle ID pravidla).  
+    - **Zakázané** – zakáže pravidlo (to je stejný jako zrušením zaškrtnutí políčka vedle ID pravidla).  
   
-    -   **Upozornění** -pravidlo zobrazí jako varování.  
+    - **Upozornění** -pravidlo zobrazí jako varování.  
   
-    -   **Chyba** – zastaví spuštění profilace a zobrazí pravidlo jako chyba.  
+    - **Chyba** – zastaví spuštění profilace a zobrazí pravidlo jako chyba.  
   
-    -   **Informace o** -zobrazí pravidlo jako pouze informace.
+    - **Informace o** -zobrazí pravidlo jako pouze informace.

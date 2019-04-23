@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e6530f5f2856953041039171b2604236706bfd3
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: 5539f698ba4b4c0998d23e413d2d71ac14e810e7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57525137"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117769"
 ---
 # <a name="how-to-get-an-overview-of-a-schema-set-using-the-graph-view"></a>Postupy: Získejte přehled o schéma, nastavte pomocí zobrazení grafu
 
@@ -21,20 +21,20 @@ Toto téma popisuje způsob použití [zobrazení grafu](../xml-tools/graph-view
 
 ## <a name="to-create-a-new-xsd-file-and-display-the-root-element-in-the-content-model-view"></a>Vytvořte nový soubor XSD a zobrazte kořenový element v zobrazení modelu obsahu
 
-1.  Vytvořte nový soubor XML schéma a soubor uložte jako *Relationships.xsd*.
+1. Vytvořte nový soubor XML schéma a soubor uložte jako *Relationships.xsd*.
 
-2.  Klikněte na tlačítko **editoru XML použijte k zobrazení a úpravě základního souboru schématu XML** odkaz na zobrazení spuštění.
+2. Klikněte na tlačítko **editoru XML použijte k zobrazení a úpravě základního souboru schématu XML** odkaz na zobrazení spuštění.
 
-3.  Zkopírujte ukázkový kód XML schéma z [ukázky XML schématu: relace](../xml-tools/sample-xsd-file-relationships.md) a vložte ji nahradit kód, který byl přidán do nového souboru XSD ve výchozím nastavení.
+3. Zkopírujte ukázkový kód XML schéma z [ukázky XML schématu: relace](../xml-tools/sample-xsd-file-relationships.md) a vložte ji nahradit kód, který byl přidán do nového souboru XSD ve výchozím nastavení.
 
-4.  Klikněte pravým tlačítkem na libovolné místo v editoru XML a vyberte **Návrhář zobrazení**.
+4. Klikněte pravým tlačítkem na libovolné místo v editoru XML a vyberte **Návrhář zobrazení**.
 
-5.  Vyberte zobrazení grafu z **XSD nástrojů**.
+5. Vyberte zobrazení grafu z **XSD nástrojů**.
 
-6.  Vyberte **schématu nastavení** uzlu **Průzkumníka schémat XML** a přetáhněte uzel na návrhové ploše zobrazení grafu. Měli byste vidět všechny globální uzly a šipky spojující uzly, které mají relace.
+6. Vyberte **schématu nastavení** uzlu **Průzkumníka schémat XML** a přetáhněte uzel na návrhové ploše zobrazení grafu. Měli byste vidět všechny globální uzly a šipky spojující uzly, které mají relace.
 
      ![Zobrazení grafu](../xml-tools/media/relationshipingraphview.gif)
 
-7.  Klikněte na libovolný uzel na návrhové ploše a podívejte se na panelu s popisem cesty chcete zobrazit, kde se nachází na vybraný uzel v sadě schémat.
+7. Klikněte na libovolný uzel na návrhové ploše a podívejte se na panelu s popisem cesty chcete zobrazit, kde se nachází na vybraný uzel v sadě schémat.
 
-8.  Rick klepněte na žádný uzel prvku na návrhové ploše a vyberte **generovat ukázkové XML** zobrazíte instance dokumentu XML.
+8. Rick klepněte na žádný uzel prvku na návrhové ploše a vyberte **generovat ukázkové XML** zobrazíte instance dokumentu XML.

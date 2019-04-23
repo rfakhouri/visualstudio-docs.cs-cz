@@ -8,12 +8,12 @@ ms.assetid: 585b0a3a-f85b-4f92-81bb-9ca499bb8a89
 caps.latest.revision: 6
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f07cb45d6b77fc554475558fddba34792c0d8a55
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 94c8335b8d723ef20c04cfffe6b3788d71ecaa4f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54774147"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60118120"
 ---
 # <a name="creating-an-extension-with-a-tool-window"></a>Vytváření rozšíření pomocí panelu nástrojů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,15 +25,15 @@ V tomto postupu se dozvíte, jak použít šablonu projektu VSIX a **vlastního 
   
 ### <a name="creating-a-tool-window"></a>Vytvoření okna nástroje  
   
-1.  Vytvořte projekt VSIX s názvem **FirstWindow**. Můžete najít šablonu projektu VSIX v **nový projekt** dialogového okna v části **Visual C# / rozšíření**.  
+1. Vytvořte projekt VSIX s názvem **FirstWindow**. Můžete najít šablonu projektu VSIX v **nový projekt** dialogového okna v části **Visual C# / rozšíření**.  
   
-2.  Po otevření projektu přidat šablonu položky okna nástroje s názvem **FirstWindow**. V **Průzkumníka řešení**, klikněte pravým tlačítkem na uzel projektu a vyberte **Add / nová položka**. V **přidat novou položku** dialogové okno, přejděte na **Visual C# / rozšíření** a vyberte **vlastního panelu nástrojů**. V **název** pole v dolní části okna, změňte název souboru okna nástroje, aby **FirstWindow.cs**.  
+2. Po otevření projektu přidat šablonu položky okna nástroje s názvem **FirstWindow**. V **Průzkumníka řešení**, klikněte pravým tlačítkem na uzel projektu a vyberte **Add / nová položka**. V **přidat novou položku** dialogové okno, přejděte na **Visual C# / rozšíření** a vyberte **vlastního panelu nástrojů**. V **název** pole v dolní části okna, změňte název souboru okna nástroje, aby **FirstWindow.cs**.  
   
-3.  Sestavte projekt a spusťte ladění.  
+3. Sestavte projekt a spusťte ladění.  
   
      Experimentální instanci sady Visual Studio se zobrazí. Další informace o experimentální instanci najdete v tématu [experimentální instanci](../extensibility/the-experimental-instance.md).  
   
-4.  V experimentální instanci aplikace, přejděte na **zobrazení / ostatní Windows**.  
+4. V experimentální instanci aplikace, přejděte na **zobrazení / ostatní Windows**.  
   
      Měli byste vidět položku nabídky pro **FirstWindow**. Klikněte na něj.  
   

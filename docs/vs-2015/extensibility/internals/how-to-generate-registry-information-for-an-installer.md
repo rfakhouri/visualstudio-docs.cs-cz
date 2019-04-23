@@ -12,12 +12,12 @@ ms.assetid: b1b41012-a777-4ccf-81a6-3b41f0e96583
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: b9a1d8e18802c91d1669d709d6236d69a4a7444c
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 63dd7f96e1d7af81b81a1b9d6a445356bb8de27e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57869935"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117730"
 ---
 # <a name="how-to-generate-registry-information-for-an-installer"></a>Postupy: Vygenerování informací registru pro instalační program
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Nástroj RegPkg.exe lze použít ke generování manifestu registrace pro spravo
   
 ### <a name="to-create-a-registration-manifest"></a>K vytvoření manifestu registrace  
   
--   Spustit RegPkg s **/RegFile** přepnout. Zadejte další přepínače, název výstupního souboru a cestu sady VSPackage.  
+- Spustit RegPkg s **/RegFile** přepnout. Zadejte další přepínače, název výstupního souboru a cestu sady VSPackage.  
   
      Například na příkazovém řádku zadejte přibližně takto:  
   
@@ -39,7 +39,7 @@ Nástroj RegPkg.exe lze použít ke generování manifestu registrace pro spravo
   
 ### <a name="to-view-a-registration-manifest"></a>Chcete-li zobrazit registrace manifestu  
   
--   Otevření manifestu registrace v libovolném textovém editoru.  
+- Otevření manifestu registrace v libovolném textovém editoru.  
   
      V následujícím příkladu se registrace manifestu a vytvoří RegPkg pro IronPython jazyková služba:  
   
@@ -100,7 +100,7 @@ Nástroj RegPkg.exe lze použít ke generování manifestu registrace pro spravo
   
 ### <a name="to-create-a-windows-installer-xml-toolset-include-file"></a>Chcete-li vytvořit sadu nástrojů XML Instalační služby systému Windows soubor k zahrnutí  
   
--   Spustit RegPkg s **/wixfile** přepnout. Zadejte další přepínače, název výstupního souboru a cestu sady VSPackage.  
+- Spustit RegPkg s **/wixfile** přepnout. Zadejte další přepínače, název výstupního souboru a cestu sady VSPackage.  
   
      Například na příkazovém řádku zadejte přibližně takto:  
   
@@ -110,7 +110,7 @@ Nástroj RegPkg.exe lze použít ke generování manifestu registrace pro spravo
   
 ### <a name="to-view-a-windows-installer-xml-toolset-include-file"></a>Chcete-li zobrazit sadu nástrojů XML Instalační služby systému Windows soubor k zahrnutí  
   
--   Otevřít sada nástrojů XML Instalační služby systému Windows zahrnout soubor do libovolného textového editoru.  
+- Otevřít sada nástrojů XML Instalační služby systému Windows zahrnout soubor do libovolného textového editoru.  
   
      V následujícím příkladu je zahrnout soubor, který vytvoří RegPkg pro IronPython jazyková služba:  
   

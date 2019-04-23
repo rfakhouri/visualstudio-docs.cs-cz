@@ -13,12 +13,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 02608d5bc1b2c03560b5d954084d84059c34224a
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: 07f7c91c74961fa846abb70637f358de59d0eb94
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57324322"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117093"
 ---
 # <a name="code-generation-in-a-build-process"></a>Generování kódu v procesu sestavení
 
@@ -28,7 +28,7 @@ V závislosti na tom, který stroj sestavení používáte, jsou určité rozd�
 
 To znamená, že můžete mít přístup k věci, jako jsou názvy souborů projektu v stejným způsobem jako při sestavování textové šablony v nástroji MSBuild. Můžete však [předání informací o prostředí do textových šablon a procesorů pro direktivy použít parametry sestavení](#parameters).
 
-##  <a name="buildserver"></a> Konfigurace počítačů
+## <a name="buildserver"></a> Konfigurace počítačů
 
 Pokud chcete povolit úlohy sestavení na vašem vývojovém počítači, instalace Modeling SDK pro Visual Studio.
 
@@ -216,7 +216,7 @@ $(IncludeFolders);$(MSBuildProjectDirectory)\Include;AnotherFolder;And\Another</
 </PropertyGroup>
 ```
 
-##  <a name="parameters"></a> Předání kontextových dat sestavení do šablon
+## <a name="parameters"></a> Předání kontextových dat sestavení do šablon
 
 Hodnoty parametru lze nastavit v souboru projektu. Můžete například předat [sestavení](../msbuild/msbuild-properties.md) vlastnosti a [proměnné prostředí](../msbuild/how-to-use-environment-variables-in-a-build.md):
 
@@ -250,7 +250,7 @@ Dim value = Host.ResolveParameterValue("-", "-", "parameterName")
 > [!NOTE]
 > `ResolveParameterValue` získá data z `T4ParameterValues` pouze při použití nástroje MSBuild. Při transformaci šablony pomocí sady Visual Studio budou mít parametry výchozí hodnoty.
 
-##  <a name="msbuild"></a> Používání vlastností projektu v sestavení a direktiv
+## <a name="msbuild"></a> Používání vlastností projektu v sestavení a direktiv
 
 Makra sady Visual Studio, jako jsou **$ (SolutionDir)** nefungují v nástroji MSBuild. Místo toho můžete použít vlastnosti projektu.
 

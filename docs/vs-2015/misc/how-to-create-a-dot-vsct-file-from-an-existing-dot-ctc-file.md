@@ -9,29 +9,29 @@ helpviewer_keywords:
 ms.assetid: 700e80a4-c1e1-4178-af53-45e86dd2c08b
 caps.latest.revision: 9
 manager: jillfra
-ms.openlocfilehash: fd041724eaf13395ad2e85427de35faa86374abd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2d5ba5a271cd7132d9750fc0569b801022aeb932
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54797099"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117849"
 ---
 # <a name="how-to-create-a-vsct-file-from-an-existing-ctc-file"></a>Postupy: Vytvoření. Vsct soubor z existující. Soubor CTC
 Můžete vytvořit souboru .vsct založený na formátu XML z existujícího souboru zdrojové tabulky .ctc příkazu. Díky tomu mohou využít výhod nového založený na formátu XML [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] formátu kompilátoru příkaz tabulky (VSCT).  
   
 ### <a name="to-create-a-vsct-file-from-a-ctc-file"></a>Vytvoření souboru .vsct ze souboru .ctc  
   
-1.  Získejte kopii souboru jazyka Perl.  
+1. Získejte kopii souboru jazyka Perl.  
   
-2.  Získejte kopii souboru skriptu jazyka Perl ConvertCTCToVSCT.pl, obvykle nachází v  *\<Visual Studio SDK instalační_cesta >* \VisualStudioIntegration\Tools\bin složky.  
+2. Získejte kopii souboru skriptu jazyka Perl ConvertCTCToVSCT.pl, obvykle nachází v  *\<Visual Studio SDK instalační_cesta >* \VisualStudioIntegration\Tools\bin složky.  
   
-3.  Získejte kopii souboru .ctc zdrojového souboru, který chcete převést.  
+3. Získejte kopii souboru .ctc zdrojového souboru, který chcete převést.  
   
-4.  Soubory umístíte do stejného adresáře.  
+4. Soubory umístíte do stejného adresáře.  
   
-5.  V [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] okna příkazového řádku, přejděte do adresáře.  
+5. V [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] okna příkazového řádku, přejděte do adresáře.  
   
-6.  Typ  
+6. Type  
   
     ```  
     perl.exe ConvertCTCtoVSCT.pl PkgCmd.ctc PkgCmd.vsct  

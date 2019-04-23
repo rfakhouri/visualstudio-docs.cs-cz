@@ -11,12 +11,12 @@ ms.assetid: 7d1ed528-4e7a-4d8f-87b4-162440644a75
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: fcbf6c3908460ce9d0f34b31c9a815c652de8031
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ba059cc1c5546bc437c7ea83a08aa8dca0a56f98
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54797611"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117678"
 ---
 # <a name="evaluating-locals"></a>Vyhodnocení místních hodnot
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -28,13 +28,13 @@ ms.locfileid: "54797611"
   
  Tato funkce načítání hodnoty místní, je zapouzdřena v pomocná funkce, která provede následující úlohy:  
   
-1.  Vytvoří vazbu `IDebugField` objektu do paměti k získání `IDebugObject` objektu.  
+1. Vytvoří vazbu `IDebugField` objektu do paměti k získání `IDebugObject` objektu.  
   
-2.  Získá hodnotu z paměti. Tato hodnota je vyjádřena jako řadu bajtů.  
+2. Získá hodnotu z paměti. Tato hodnota je vyjádřena jako řadu bajtů.  
   
-3.  Naformátuje hodnotu na základě typu na místní.  
+3. Naformátuje hodnotu na základě typu na místní.  
   
-4.  Vrátí obecný objekt, který obsahuje hodnotu na místní. V jazyce C#, je to `object`, a v jazyce C++ je to `VARIANT`.  
+4. Vrátí obecný objekt, který obsahuje hodnotu na místní. V jazyce C#, je to `object`, a v jazyce C++ je to `VARIANT`.  
   
 ## <a name="managed-code"></a>Spravovaný kód  
  Toto je implementace funkce, která načte hodnotu místní ve spravovaném kódu.  

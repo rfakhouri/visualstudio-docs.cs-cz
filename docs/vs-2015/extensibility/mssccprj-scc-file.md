@@ -11,12 +11,12 @@ ms.assetid: 6f2e39d6-b79d-407e-976f-b62a3cedd378
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8bff060ed373c4158afe8848ac248e8d28da38b1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 705e0fa821000716dc9cd729901fbb7db5fd759c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54779916"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117717"
 ---
 # <a name="mssccprjscc-file"></a>Soubor MSSCCPRJ.SCC
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,19 +27,19 @@ Visual Studio řešení nebo projektu při umístění pod správou zdrojového 
   
  Zdrojový ovládací prvek modulu plug-in, který podporuje MSSCCPRJ. Soubor SCC musí dodržovat následující pokyny:  
   
--   Může existovat pouze jeden MSSCCPRJ. Soubor SCC jednotlivých adresářích.  
+- Může existovat pouze jeden MSSCCPRJ. Soubor SCC jednotlivých adresářích.  
   
--   MSSCCPRJ. SCC soubor může obsahovat "AuxPath" a "Název_projektu" pro více souborů, které jsou pod správou zdrojových kódů v rámci zadaného adresáře.  
+- MSSCCPRJ. SCC soubor může obsahovat "AuxPath" a "Název_projektu" pro více souborů, které jsou pod správou zdrojových kódů v rámci zadaného adresáře.  
   
--   Řetězec "AuxPath" nesmí obsahovat uvozovky uvnitř. To může mít kolem něj uvozovky jako oddělovače (například pár dvojitých uvozovek slouží k označení prázdný řetězec). Integrované vývojové prostředí odstraní všechny nabídky z řetězce "AuxPath" přečtení z MSSCCPRJ. SCC souboru.  
+- Řetězec "AuxPath" nesmí obsahovat uvozovky uvnitř. To může mít kolem něj uvozovky jako oddělovače (například pár dvojitých uvozovek slouží k označení prázdný řetězec). Integrované vývojové prostředí odstraní všechny nabídky z řetězce "AuxPath" přečtení z MSSCCPRJ. SCC souboru.  
   
--   Řetězec "Název_projektu" MSSCCPRJ. Soubor SCC musí odpovídat přesně řetězec vrácený z `SccGetProjPath` funkce. Pokud řetězec vrácený funkcí nemá uvozovky kolem něj zobrazí řetězec MSSCCPRJ. Soubor SCC musí mít uvozovky kolem něj a naopak.  
+- Řetězec "Název_projektu" MSSCCPRJ. Soubor SCC musí odpovídat přesně řetězec vrácený z `SccGetProjPath` funkce. Pokud řetězec vrácený funkcí nemá uvozovky kolem něj zobrazí řetězec MSSCCPRJ. Soubor SCC musí mít uvozovky kolem něj a naopak.  
   
--   MSSCCPRJ. Vytvoří nebo aktualizuje pokaždé, když je umístěn soubor pod správou zdrojových kódů SCC soubor.  
+- MSSCCPRJ. Vytvoří nebo aktualizuje pokaždé, když je umístěn soubor pod správou zdrojových kódů SCC soubor.  
   
--   Pokud MSSCCPRJ. Soubor SCC odstraní, poskytovatel by měl znovu při příštím provádí operaci správy zdrojových kódů týkající se tohoto adresáře.  
+- Pokud MSSCCPRJ. Soubor SCC odstraní, poskytovatel by měl znovu při příštím provádí operaci správy zdrojových kódů týkající se tohoto adresáře.  
   
--   MSSCCPRJ. Soubor SCC musí striktně řídit definovaném formátu.  
+- MSSCCPRJ. Soubor SCC musí striktně řídit definovaném formátu.  
   
 ## <a name="an-illustration-of-the-mssccprjscc-file-format"></a>Obrázek MSSCCPRJ. Formát souboru SCC  
  Tady je ukázka MSSCCPRJ. Formát souboru SCC (čísla řádků jsou k dispozici pouze jako vodítko a by neměly být obsažené v těle souboru):  

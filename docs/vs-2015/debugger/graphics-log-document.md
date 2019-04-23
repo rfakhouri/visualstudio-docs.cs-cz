@@ -13,12 +13,12 @@ caps.latest.revision: 34
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9f1d5d706bb3ce738fc8c820e6ffd0600b9a98ef
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 430c321c14226228b46bfb0e43f372851fb2a232
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54797791"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117600"
 ---
 # <a name="graphics-log-document"></a>Dokument grafických protokolů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,11 +36,11 @@ Dokumentu protokol grafiky je záznam událostí grafiky, ke kterým došlo, kdy
   
 #### <a name="to-inspect-a-frame"></a>Chcete-li prověřit blok  
   
--   V **seznam snímků**, vyberte snímek, který chcete zkontrolovat. Výstup cíle vykreslení v horní části dokumentu protokol grafiky se aktualizuje a zobrazí vybraný rámec.  
+- V **seznam snímků**, vyberte snímek, který chcete zkontrolovat. Výstup cíle vykreslení v horní části dokumentu protokol grafiky se aktualizuje a zobrazí vybraný rámec.  
   
 #### <a name="to-inspect-a-pixel"></a>Chcete-li prověřit pixel  
   
--   V horní části dokumentu protokol grafiky vyberte pixel, který chcete výstup cíle vykreslení. Když je vybraný pixel, můžete **historie pixelů grafiky** okno k zobrazení podrobných informací o vybraný pixel. Další informace najdete v tématu [historie pixelů](../debugger/graphics-pixel-history.md).  
+- V horní části dokumentu protokol grafiky vyberte pixel, který chcete výstup cíle vykreslení. Když je vybraný pixel, můžete **historie pixelů grafiky** okno k zobrazení podrobných informací o vybraný pixel. Další informace najdete v tématu [historie pixelů](../debugger/graphics-pixel-history.md).  
   
 ## <a name="playback-machine"></a>Počítač pro přehrávání  
  Zobrazí také v pravém horním rohu **seznam snímků** je **počítač pro přehrávání**. Počítač pro přehrávání je počítač nebo zařízení, které slouží k přehrání událostí grafiky z grafického protokolu souboru během novější relace diagnostiky grafiky. Pomocí jiného zařízení místo svého vývojového počítače k přehrání zachycené události může přesněji reprodukovat spouštěcí prostředí, ve kterém dochází k problému – například můžete použít počítač, který má jiný grafický hardware nebo ovladače než ty, které používá vývojovém počítači, nebo jiných typů zařízení, například tablety Windows RT založené na ARM nebo zařízení Windows Phone.  

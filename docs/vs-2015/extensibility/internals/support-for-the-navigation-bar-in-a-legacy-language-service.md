@@ -11,12 +11,12 @@ ms.assetid: 2d301ee6-4523-4b82-aedb-be43f352978e
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 714e4a24ae6dc2c345b97bbd6e080b0c987f65f7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6cef18951a6ac5494f74c150c4251bafd9597686
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54781382"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117938"
 ---
 # <a name="support-for-the-navigation-bar-in-a-legacy-language-service"></a>Podpora navigačního panelu ve službě starší verze jazyka
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -70,24 +70,24 @@ namespace TestLanguagePackage
   
   Implementace <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> metoda obvykle provádí následující kroky:  
   
-1.  Získání seznamu sad aktuální deklarace pro zdrojový soubor.  
+1. Získání seznamu sad aktuální deklarace pro zdrojový soubor.  
   
      Existuje mnoho způsobů, jak naplnit seznamy. Jedním z přístupů je vytvořit vlastní metodu do vaší verze <xref:Microsoft.VisualStudio.Package.LanguageService> třídu, která volá <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> metodu parse vlastní důvod, který vrátí seznam všech deklarací. Další možností je pravděpodobně volání <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> metody přímo z <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> metodu parse vlastní důvod. Třetí přístup může být pro ukládání do mezipaměti deklarace v <xref:Microsoft.VisualStudio.Package.AuthoringScope> třídy vrácený poslední operaci úplné analýzy v <xref:Microsoft.VisualStudio.Package.LanguageService> třídy a načíst z <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> metody.  
   
-2.  Naplnění nebo aktualizujte seznam typů.  
+2. Naplnění nebo aktualizujte seznam typů.  
   
      Seznam typů může aktualizovat při změně zdroje nebo pokud jste se rozhodli změnit styl textu typy založené na aktuální pozici blikajícího kurzoru. Všimněte si, že tuto pozici je předán <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> metody.  
   
-3.  Určení typů na výběr v seznamu typy založené na aktuální pozici blikajícího kurzoru.  
+3. Určení typů na výběr v seznamu typy založené na aktuální pozici blikajícího kurzoru.  
   
      Můžete hledat deklarace, které jste získali v kroku 1, abyste našli typ, který vloží aktuální pozici blikajícího kurzoru a pak vyhledejte typy seznamu pro daný typ k určení jeho index do seznamu typů.  
   
-4.  Naplnění nebo aktualizaci seznamu členů podle vybraného typu.  
+4. Naplnění nebo aktualizaci seznamu členů podle vybraného typu.  
   
      Seznam členů odráží, co se nyní zobrazí **členy** rozevíracího seznamu. Obsah seznamu členů může třeba aktualizovat, pokud došlo ke změně zdroje nebo pokud zobrazujete pouze členy vybraného typu a vybraný typ se změnil. Pokud budete chtít zobrazit všechny členy ve zdrojovém souboru, styl textu každého člena v seznamu musí aktualizovat, pokud došlo ke změně aktuálně vybraného typu.  
   
-5.  Zjistěte člena vyberte v seznamu členů podle aktuální pozici blikajícího kurzoru.  
+5. Zjistěte člena vyberte v seznamu členů podle aktuální pozici blikajícího kurzoru.  
   
      Hledání deklarací, které jste získali v kroku 1 pro člena, který obsahuje aktuální pozici blikajícího kurzoru a potom najděte seznam členů pro tento člen k určení jeho index do seznamu členů.  
   
-6.  Vrátí `true` Pokud seznamy nebo výběrů v seznamech byly provedeny žádné změny.
+6. Vrátí `true` Pokud seznamy nebo výběrů v seznamech byly provedeny žádné změny.

@@ -16,12 +16,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e59864cabf638f4525165ed4f31c42fff748bf26
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 55b24facd3a9ec935277a42c211a64d824ed6d7f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54773807"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116742"
 ---
 # <a name="extract-interface-refactoring-c"></a>Refaktoring pro extrahování rozhraní (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Extrahování rozhraní se operaci refaktoringu, která poskytuje snadný způso
   
 ### <a name="to-use-extract-interface"></a>Chcete-li použít extrahování rozhraní  
   
-1.  Vytvořte konzolovou aplikaci s názvem `ExtractInterface`a potom nahraďte `Program` následujícím kódem  
+1. Vytvořte konzolovou aplikaci s názvem `ExtractInterface`a potom nahraďte `Program` následujícím kódem  
   
     ```csharp  
     // Invoke Extract Interface on ProtoA.  
@@ -45,7 +45,7 @@ Extrahování rozhraní se operaci refaktoringu, která poskytuje snadný způso
     }  
     ```  
   
-2.  S kurzorem umístěným v `MethodB`a klikněte na tlačítko **extrahování rozhraní** na **Refaktorovat** nabídky.  
+2. S kurzorem umístěným v `MethodB`a klikněte na tlačítko **extrahování rozhraní** na **Refaktorovat** nabídky.  
   
      **Extrahování rozhraní** zobrazí se dialogové okno.  
   
@@ -53,9 +53,9 @@ Extrahování rozhraní se operaci refaktoringu, která poskytuje snadný způso
   
      Můžete také kliknout pravým tlačítkem myši, přejděte na **Refaktorovat**a potom klikněte na tlačítko **extrahování rozhraní** zobrazíte **extrahování rozhraní** dialogové okno.  
   
-3.  Klikněte na tlačítko **Vybrat vše**.  
+3. Klikněte na tlačítko **Vybrat vše**.  
   
-4.  Klikněte na **OK**.  
+4. Klikněte na **OK**.  
   
      Zobrazí se nový soubor, IProtoA.cs a následující kód:  
   

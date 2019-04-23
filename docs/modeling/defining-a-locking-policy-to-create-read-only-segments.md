@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e53c91a641606f0ab4b29f9ce0357f4e9ee87022
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b38f81b3269d0a456c077023d23861a55ac06a4c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55944624"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117186"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>Definování zásady zamykání pro vytváření segmentů jen pro čtení
 Rozhraní API neměnnosti sady Visual Studio Visualization and Modeling SDK umožňuje aplikaci uzamknout část nebo celý model jazyka specifického pro doménu (DSL), aby ji lze číst, ale nebyl změněn. Tato možnost jen pro čtení může použít, třeba tak, aby uživatel požádat o vaši kolegové mohli opatřit poznámkami a zkontrolujte modelu DSL, ale můžete zakázat možnost měnit původní.
@@ -56,15 +56,15 @@ partition.SetLocks(Locks.Delete);
 ### <a name="using-locks"></a>Použití zámků
  Zámky můžete použít k implementaci systémů, jako jsou následující příklady:
 
--   Zakáže změny na všechny prvky a vztahy s výjimkou těch, které představují komentáře. To umožňuje uživatelům umožňuje anotaci modelu bez provedení změn.
+- Zakáže změny na všechny prvky a vztahy s výjimkou těch, které představují komentáře. To umožňuje uživatelům umožňuje anotaci modelu bez provedení změn.
 
--   Zakáže změny v oddílu výchozí, ale povolit změny v oddílu diagramu. Uživatel může změnit uspořádání diagramu, ale základní model nelze změnit.
+- Zakáže změny v oddílu výchozí, ale povolit změny v oddílu diagramu. Uživatel může změnit uspořádání diagramu, ale základní model nelze změnit.
 
--   Zakáže změny Store s výjimkou skupinu uživatelů, kteří jsou registrovány v samostatné databáze. Pro ostatní uživatele jsou v diagramu a modelu jen pro čtení.
+- Zakáže změny Store s výjimkou skupinu uživatelů, kteří jsou registrovány v samostatné databáze. Pro ostatní uživatele jsou v diagramu a modelu jen pro čtení.
 
--   Zakáže změny modelu, pokud vlastnost typu Boolean diagramu je nastavena na hodnotu true. Zadejte příkaz, který tuto vlastnost změnit. Díky tomu uživatelé, kteří jsou Nedovolte, aby byly změny omylem.
+- Zakáže změny modelu, pokud vlastnost typu Boolean diagramu je nastavena na hodnotu true. Zadejte příkaz, který tuto vlastnost změnit. Díky tomu uživatelé, kteří jsou Nedovolte, aby byly změny omylem.
 
--   Zakažte přidání a odstranění prvků a vztahů určité třídy, ale umožňují změny vlastností. To uživatelům poskytuje pevné formuláře, ve které probírají vlastnosti.
+- Zakažte přidání a odstranění prvků a vztahů určité třídy, ale umožňují změny vlastností. To uživatelům poskytuje pevné formuláře, ve které probírají vlastnosti.
 
 ## <a name="lock-values"></a>Zámku hodnoty
  Zámky lze nastavit na Store, oddílu nebo jednotlivé ModelElement. Je na zámků `Flags` výčet: zkombinováním hodnot pomocí "&#124;".
@@ -75,9 +75,9 @@ partition.SetLocks(Locks.Delete);
 
   Nelze nastavit zámek na oddíl nebo úložiště a současně zakázat zámek na jednotlivý element.
 
-|Hodnota|To znamená pokud `IsLocked(Value)` má hodnotu true|
+|Value|To znamená pokud `IsLocked(Value)` má hodnotu true|
 |-|-|
-|Žádná|Bez omezení.|
+|Žádné|Bez omezení.|
 |Vlastnost|Vlastnosti domény prvků nelze změnit. To se nevztahuje na vlastnosti, které jsou generovány podle role doménové třídy v relaci.|
 |Přidejte|Nelze vytvořit nové prvky a odkazy v oddílu nebo úložiště.<br /><br /> Nevztahuje se na `ModelElement`.|
 |Přesunout|Element nelze přesouvat mezi oddíly, pokud `element.IsLocked(Move)` má hodnotu true, nebo pokud `targetPartition.IsLocked(Move)` má hodnotu true.|
@@ -95,9 +95,9 @@ partition.SetLocks(Locks.Delete);
 
  K definování zásady zamykání, budete muset:
 
--   Vytvořte třídu, která implementuje <xref:Microsoft.VisualStudio.Modeling.Immutability.ILockingPolicy>.
+- Vytvořte třídu, která implementuje <xref:Microsoft.VisualStudio.Modeling.Immutability.ILockingPolicy>.
 
--   Přidejte tuto třídu do služby, které jsou k dispozici prostřednictvím DocData tohoto kódu DSL.
+- Přidejte tuto třídu do služby, které jsou k dispozici prostřednictvím DocData tohoto kódu DSL.
 
 ### <a name="to-define-a-locking-policy"></a>K definování zásady zamykání
  <xref:Microsoft.VisualStudio.Modeling.Immutability.ILockingPolicy> obsahuje následující definice:

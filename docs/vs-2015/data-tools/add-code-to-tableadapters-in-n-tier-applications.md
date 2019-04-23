@@ -17,12 +17,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ed2a999fc3480bda8aa534d3dd32a00f5ff5c039
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 3c3ddcb99163fe3548f020094647566c1779f5d9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59651916"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60115364"
 ---
 # <a name="add-code-to-tableadapters-in-n-tier-applications"></a>Přidávání kódu do objektů TableAdapter ve vícevrstvých aplikacích
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,17 +43,17 @@ Můžete rozšířit funkce `TableAdapter` tak, že vytvoříte soubor částeč
   
 ### <a name="to-add-user-code-to-a-tableadapter-in-an-n-tier-application"></a>Chcete-li přidat uživatelský kód do objektu TableAdapter v n vrstvou aplikaci  
   
-1.  Najděte projekt, který obsahuje soubor XSD (datová sada).  
+1. Najděte projekt, který obsahuje soubor XSD (datová sada).  
   
-2.  Dvakrát klikněte **XSD** soubor otevřete datovou sadu.  
+2. Dvakrát klikněte **XSD** soubor otevřete datovou sadu.  
   
-3.  Klikněte pravým tlačítkem myši `TableAdapter` , který chcete přidat kód a pak vyberte**zobrazit kód**.  
+3. Klikněte pravým tlačítkem myši `TableAdapter` , který chcete přidat kód a pak vyberte**zobrazit kód**.  
   
      Částečné třídy se vytvoří a otevře v editoru kódu.  
   
-4.  Přidejte kód do částečné deklarace třídy.  
+4. Přidejte kód do částečné deklarace třídy.  
   
-5.  Následující příklad ukazuje, kde přidat kód pro `CustomersTableAdapter` v `NorthwindDataSet`:  
+5. Následující příklad ukazuje, kde přidat kód pro `CustomersTableAdapter` v `NorthwindDataSet`:  
   
     ```vb  
     Partial Public Class CustomersTableAdapter  

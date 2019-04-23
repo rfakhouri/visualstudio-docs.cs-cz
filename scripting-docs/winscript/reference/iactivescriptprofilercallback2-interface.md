@@ -13,12 +13,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d95c3db11551eb6551f509b4afbe52a70ff55ab9
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 3e292dad6c6b633d5f30f263f388d8e85bb6c541
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58145731"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60115273"
 ---
 # <a name="iactivescriptprofilercallback2-interface"></a>IActiveScriptProfilerCallback2 – rozhraní
 Poskytuje metody, které jsou používány skriptovací stroj objekt profileru upozornit, pokud dojde k událostem Document Object Model (DOM). Toto rozhraní je implementováno v objektu profileru.  
@@ -39,7 +39,7 @@ Poskytuje metody, které jsou používány skriptovací stroj objekt profileru u
 >  Chcete-li přidat možnost spuštění a zastavení profilování při spuštění skriptu, volání těchto metod. Pomocí těchto metod můžete získat úplný zásobník volání, pokud [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] je spuštěna při spuštění nebo zastavení profilování.  
 > 
 > - Volání [IActiveScriptProfilerControl2::CompleteProfilerStart](../../winscript/reference/iactivescriptprofilercontrol2-completeprofilerstart.md) pro oznámení profileru, které jste spustili profilace.  
->   -   Volání [IActiveScriptProfilerControl2::PrepareProfilerStop](../../winscript/reference/iactivescriptprofilercontrol2-prepareprofilerstop.md) pro oznámení profileru, že vám brzy ukončí profilaci.  
+>   - Volání [IActiveScriptProfilerControl2::PrepareProfilerStop](../../winscript/reference/iactivescriptprofilercontrol2-prepareprofilerstop.md) pro oznámení profileru, že vám brzy ukončí profilaci.  
   
 ## <a name="see-also"></a>Viz také  
  [Rozhraní profileru aktivních skriptů](../../winscript/reference/active-script-profiler-interfaces.md)

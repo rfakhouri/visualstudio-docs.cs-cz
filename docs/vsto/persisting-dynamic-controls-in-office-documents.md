@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 48b2cc1402243bfedb7b22280b4a161235cb9957
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 8fd44d535cd8a9920ebc3de37d0c483a19dac8f8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54863510"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117977"
 ---
 # <a name="persist-dynamic-controls-in-office-documents"></a>Uchování dynamických ovládacích prvků v dokumentech Office
 
@@ -76,11 +76,11 @@ V doplňcích VSTO jsou odebrány ovládací prvky, ale zůstávají obálky Act
 
 Můžete znovu vytvořit odstraněný ovládacích prvků Windows Forms, když uživatel otevře dokument. Chcete-li to provést, musí vaše řešení provádět následující úlohy:
 
-1.  Informace o velikost, umístění a stav ovládacích prvků Store, když je dokument uložen nebo uzavřený. V přizpůsobení na úrovni dokumentu můžete uložit data do datové mezipaměti v dokumentu. VSTO Add-in můžete data uložit na vlastní část XML v dokumentu.
+1. Informace o velikost, umístění a stav ovládacích prvků Store, když je dokument uložen nebo uzavřený. V přizpůsobení na úrovni dokumentu můžete uložit data do datové mezipaměti v dokumentu. VSTO Add-in můžete data uložit na vlastní část XML v dokumentu.
 
-2.  Vytvořte ovládací prvky na událost, která se vyvolá, když je dokument otevřít znovu. V projektech na úrovni dokumentu, musíte `Sheet` *n* `_Startup` nebo `ThisDocument_Startup` obslužných rutin událostí. V doplňku VSTO projekty můžete dělat v tomto události obslužné rutiny <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookOpen> nebo <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentOpen> události.
+2. Vytvořte ovládací prvky na událost, která se vyvolá, když je dokument otevřít znovu. V projektech na úrovni dokumentu, musíte `Sheet` *n* `_Startup` nebo `ThisDocument_Startup` obslužných rutin událostí. V doplňku VSTO projekty můžete dělat v tomto události obslužné rutiny <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookOpen> nebo <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentOpen> události.
 
-###  <a name="removingActiveX"></a> Odebrat obálky ActiveX v doplňku
+### <a name="removingActiveX"></a> Odebrat obálky ActiveX v doplňku
 
 Při přidání dynamických ovládacích prvků Windows Forms do dokumentů s použitím doplňku VSTO je lze zabránit obálky ActiveX pro ovládací prvky v dokumentu při příštím otevření následujícími způsoby.
 

@@ -12,12 +12,12 @@ ms.assetid: 47f295b5-1ca5-4e7b-bb52-7b926b136622
 caps.latest.revision: 37
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4194ed3bac4d027b2bbf3cadd574f67343c0ae80
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0b7b9e352c3042e5175b7420a9d4203ca7f59e7f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54789011"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117134"
 ---
 # <a name="exposing-properties-to-the-properties-window"></a>Vystavení vlastností v okně Vlastnosti
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,11 +32,11 @@ Tento návod poskytuje veřejné vlastnosti objektu **vlastnosti** okna. Změny 
   
 #### <a name="to-expose-properties-to-the-properties-window"></a>K vystavení vlastností v okně Vlastnosti  
   
-1.  Každé rozšíření sady Visual Studio spustí nasazení projektu VSIX, který bude obsahovat rozšíření prostředků. Vytvoření [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] VSIX projekt s názvem `MyObjectPropertiesExtension`. Můžete najít šablonu projektu VSIX v **nový projekt** dialogového okna v části **Visual C# / rozšíření**.  
+1. Každé rozšíření sady Visual Studio spustí nasazení projektu VSIX, který bude obsahovat rozšíření prostředků. Vytvoření [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] VSIX projekt s názvem `MyObjectPropertiesExtension`. Můžete najít šablonu projektu VSIX v **nový projekt** dialogového okna v části **Visual C# / rozšíření**.  
   
-2.  Přidání panelu nástrojů přidejte šablonu vlastního panelu nástrojů položku s názvem `MyToolWindow`. V **Průzkumníka řešení**, klikněte pravým tlačítkem na uzel projektu a vyberte **Add / nová položka**. V **dialogového okna Přidat novou položku**, přejděte na stránku **položky Visual C# / rozšíření** a vyberte **vlastního panelu nástrojů**. V **název** pole v dolní části dialogového okna, změňte název souboru, aby `MyToolWindow.cs`. Další informace o tom, jak vytvořit vlastního okna nástroje najdete v tématu [vytváření rozšíření pomocí panelu nástrojů](../extensibility/creating-an-extension-with-a-tool-window.md).  
+2. Přidání panelu nástrojů přidejte šablonu vlastního panelu nástrojů položku s názvem `MyToolWindow`. V **Průzkumníka řešení**, klikněte pravým tlačítkem na uzel projektu a vyberte **Add / nová položka**. V **dialogového okna Přidat novou položku**, přejděte na stránku **položky Visual C# / rozšíření** a vyberte **vlastního panelu nástrojů**. V **název** pole v dolní části dialogového okna, změňte název souboru, aby `MyToolWindow.cs`. Další informace o tom, jak vytvořit vlastního okna nástroje najdete v tématu [vytváření rozšíření pomocí panelu nástrojů](../extensibility/creating-an-extension-with-a-tool-window.md).  
   
-3.  Otevřete MyToolWindow.cs a přidejte následující příkaz using:  
+3. Otevřete MyToolWindow.cs a přidejte následující příkaz using:  
   
     ```  
     using System.Collections;  
@@ -44,7 +44,7 @@ Tento návod poskytuje veřejné vlastnosti objektu **vlastnosti** okna. Změny 
     using Microsoft.VisualStudio.Shell.Interop;  
     ```  
   
-4.  Nyní přidejte následující pole na `MyToolWindow` třídy.  
+4. Nyní přidejte následující pole na `MyToolWindow` třídy.  
   
     ```csharp  
     private ITrackSelection trackSel;  
@@ -52,7 +52,7 @@ Tento návod poskytuje veřejné vlastnosti objektu **vlastnosti** okna. Změny 
   
     ```  
   
-5.  Přidejte následující kód do třídy MyToolWindow.  
+5. Přidejte následující kód do třídy MyToolWindow.  
   
     ```csharp  
     private ITrackSelection TrackSelection  
@@ -91,11 +91,11 @@ Tento návod poskytuje veřejné vlastnosti objektu **vlastnosti** okna. Změny 
   
      `TrackSelection` Používá vlastnost `GetService` získat `STrackSelection` službu, která poskytuje <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection> rozhraní. `OnToolWindowCreated` Obslužné rutiny události a `SelectList` metoda společně vytvoření seznamu vybrané objekty, který obsahuje pouze nástroj okno podokna samotného objektu. `UpdateSelection` Metoda říká **vlastnosti** okno k zobrazení veřejné vlastnosti podokno okna nástrojů.  
   
-6.  Sestavte projekt a spusťte ladění. Experimentální instanci sady Visual Studio by se zobrazit.  
+6. Sestavte projekt a spusťte ladění. Experimentální instanci sady Visual Studio by se zobrazit.  
   
-7.  Pokud **vlastnosti** okno se nezobrazuje, otevřete ho stisknutím klávesy F4.  
+7. Pokud **vlastnosti** okno se nezobrazuje, otevřete ho stisknutím klávesy F4.  
   
-8.  Otevřít **MyToolWindow** okna. Najdete ho v **zobrazení / ostatní Windows**.  
+8. Otevřít **MyToolWindow** okna. Najdete ho v **zobrazení / ostatní Windows**.  
   
      Otevře se okno a veřejné vlastnosti podokno okna se zobrazí v **vlastnosti** okna.  
   
@@ -108,7 +108,7 @@ Tento návod poskytuje veřejné vlastnosti objektu **vlastnosti** okna. Změny 
   
 #### <a name="to-expose-tool-window-properties"></a>Vystavení vlastností okna nástroje  
   
-1.  Otevřete MyToolWindow.cs a přidejte veřejnou logickou vlastnost IsChecked MyToolWindow třídy.  
+1. Otevřete MyToolWindow.cs a přidejte veřejnou logickou vlastnost IsChecked MyToolWindow třídy.  
   
     ```csharp  
     [Category("My Properties")]  
@@ -127,7 +127,7 @@ Tento návod poskytuje veřejné vlastnosti objektu **vlastnosti** okna. Změny 
   
      Tato vlastnost získá stavu od zaškrtávacího políčka WPF, kterou vytvoříte později.  
   
-2.  Otevřete MyToolWindowControl.xaml.cs a konstruktoru MyToolWindowControl nahraďte následujícím kódem.  
+2. Otevřete MyToolWindowControl.xaml.cs a konstruktoru MyToolWindowControl nahraďte následujícím kódem.  
   
     ```vb  
     private MyToolWindow pane;  
@@ -141,19 +141,19 @@ Tento návod poskytuje veřejné vlastnosti objektu **vlastnosti** okna. Změny 
   
      Díky tomu `MyToolWindowControl` přístup k `MyToolWindow` podokně.  
   
-3.  V MyToolWindow.cs, změňte `MyToolWindow` konstruktor následujícím způsobem:  
+3. V MyToolWindow.cs, změňte `MyToolWindow` konstruktor následujícím způsobem:  
   
     ```csharp  
     base.Content = new MyToolWindowControl(this);  
     ```  
   
-4.  Přejděte do zobrazení návrhu MyToolWindowControl.  
+4. Přejděte do zobrazení návrhu MyToolWindowControl.  
   
-5.  Tlačítko Odstranit a přidáte zaškrtávací políčko z **nástrojů** do levého horního rohu.  
+5. Tlačítko Odstranit a přidáte zaškrtávací políčko z **nástrojů** do levého horního rohu.  
   
-6.  Přidání událostí zaškrtnuto a nezaškrtnuto. Zaškrtněte políčko v návrhovém zobrazení. V **vlastnosti** okna, klikněte na tlačítko obslužné rutiny události (v horní části vpravo **vlastnosti** okno). Najít **Checked** a typ **checkbox_Checked** v textovém poli vyhledejte **Unchecked** a typ **checkbox_Unchecked** v textovém poli.  
+6. Přidání událostí zaškrtnuto a nezaškrtnuto. Zaškrtněte políčko v návrhovém zobrazení. V **vlastnosti** okna, klikněte na tlačítko obslužné rutiny události (v horní části vpravo **vlastnosti** okno). Najít **Checked** a typ **checkbox_Checked** v textovém poli vyhledejte **Unchecked** a typ **checkbox_Unchecked** v textovém poli.  
   
-7.  Přidejte obslužné rutiny událostí zaškrtávací políčko:  
+7. Přidejte obslužné rutiny událostí zaškrtávací políčko:  
   
     ```csharp  
     private void checkbox_Checked(object sender, RoutedEventArgs e)  
@@ -168,7 +168,7 @@ Tento návod poskytuje veřejné vlastnosti objektu **vlastnosti** okna. Změny 
     }  
     ```  
   
-8.  Sestavte projekt a spusťte ladění.  
+8. Sestavte projekt a spusťte ladění.  
   
 9. V experimentální instanci aplikace, otevřete **MyToolWindow** okna.  
   
@@ -184,7 +184,7 @@ Tento návod poskytuje veřejné vlastnosti objektu **vlastnosti** okna. Změny 
   
 #### <a name="to-change-selection-lists"></a>Chcete-li změnit seznam výběru  
   
-1.  Otevřete MyToolWindow.cs a přidejte veřejnou třídu s názvem `Simple`.  
+1. Otevřete MyToolWindow.cs a přidejte veřejnou třídu s názvem `Simple`.  
   
     ```csharp  
     public class Simple  
@@ -209,7 +209,7 @@ Tento návod poskytuje veřejné vlastnosti objektu **vlastnosti** okna. Změny 
     }  
     ```  
   
-2.  Přidání vlastnosti SimpleObject do třídy MyToolWindow plus dvě metody pro přepnutí **vlastnosti** okno Výběr mezi podokno okna a `Simple` objektu.  
+2. Přidání vlastnosti SimpleObject do třídy MyToolWindow plus dvě metody pro přepnutí **vlastnosti** okno Výběr mezi podokno okna a `Simple` objektu.  
   
     ```csharp  
     private Simple simpleObject = null;  
@@ -237,7 +237,7 @@ Tento návod poskytuje veřejné vlastnosti objektu **vlastnosti** okna. Změny 
     }  
     ```  
   
-3.  V MyToolWindowControl.cs nahraďte obslužné rutiny zaškrtávacího políčka tyto řádky kódu:  
+3. V MyToolWindowControl.cs nahraďte obslužné rutiny zaškrtávacího políčka tyto řádky kódu:  
   
     ```csharp  
     private void checkbox_Checked(object sender, RoutedEventArgs e)  
@@ -254,11 +254,11 @@ Tento návod poskytuje veřejné vlastnosti objektu **vlastnosti** okna. Změny 
     }  
     ```  
   
-4.  Sestavte projekt a spusťte ladění.  
+4. Sestavte projekt a spusťte ladění.  
   
-5.  V experimentální instanci aplikace, otevřete **MyToolWindow** okna.  
+5. V experimentální instanci aplikace, otevřete **MyToolWindow** okna.  
   
-6.  Zaškrtněte políčko v **MyToolWindow** okna. **Vlastnosti** v okně se zobrazí `Simple` vlastnosti, objektu **SomeText** a **jen pro čtení**. Zrušte zaškrtnutí políčka. Veřejné vlastnosti v okně se zobrazí v **vlastnosti** okna.  
+6. Zaškrtněte políčko v **MyToolWindow** okna. **Vlastnosti** v okně se zobrazí `Simple` vlastnosti, objektu **SomeText** a **jen pro čtení**. Zrušte zaškrtnutí políčka. Veřejné vlastnosti v okně se zobrazí v **vlastnosti** okna.  
   
     > [!NOTE]
     >  Zobrazovaný název **SomeText** je **tento Text**.  

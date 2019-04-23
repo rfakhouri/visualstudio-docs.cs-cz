@@ -10,12 +10,12 @@ ms.assetid: 12df4d06-df6b-4eaf-a7bf-c83655a0c683
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8a74acbcf3da16d7b8e2ac68e761719a6192a2b4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e5900d5c818883ffc78b2399b937c80307b52c36
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54761799"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116514"
 ---
 # <a name="how-to-provide-context-for-editors"></a>Postupy: Poskytuje kontext pro editory
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,44 +32,44 @@ Pro editor kontext je aktivní, pouze v případě, že je editor má právě fo
   
 ### <a name="to-create-a-context-bag-for-an-editor-or-a-designer"></a>Chcete-li vytvořit kontejner kontextu editoru nebo návrháře  
   
-1.  Volání `QueryService` na vaše <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> rozhraní <xref:Microsoft.VisualStudio.Shell.Interop.SVsMonitorUserContext> služby.  
+1. Volání `QueryService` na vaše <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> rozhraní <xref:Microsoft.VisualStudio.Shell.Interop.SVsMonitorUserContext> služby.  
   
      Ukazatel <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorUserContext> rozhraní se vrátí.  
   
-2.  Volání <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorUserContext.CreateEmptyContext%2A> metodu pro vytvoření nového kontejneru kontextu nebo kontext.  
+2. Volání <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorUserContext.CreateEmptyContext%2A> metodu pro vytvoření nového kontejneru kontextu nebo kontext.  
   
      Ukazatel <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext> rozhraní se vrátí.  
   
-3.  Volání <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.AddAttribute%2A> způsob, jak přidat atributy, klíčová slova pro vyhledávání nebo klíčová slova F1 do kontejneru objektů a dat kontextu nebo kontext.  
+3. Volání <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.AddAttribute%2A> způsob, jak přidat atributy, klíčová slova pro vyhledávání nebo klíčová slova F1 do kontejneru objektů a dat kontextu nebo kontext.  
   
-4.  Pokud vytvoříte kontejner kontext, zavolejte <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.AddSubcontext%2A> metoda propojení kontejner kontext do nadřazené místní kontejner objektů a dat.  
+4. Pokud vytvoříte kontejner kontext, zavolejte <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.AddSubcontext%2A> metoda propojení kontejner kontext do nadřazené místní kontejner objektů a dat.  
   
-5.  Volání <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.AdviseUpdate%2A> pro příjem oznámení při **dynamická Nápověda** okna je aktualizovat.  
+5. Volání <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.AdviseUpdate%2A> pro příjem oznámení při **dynamická Nápověda** okna je aktualizovat.  
   
      Máte **dynamická Nápověda** volání okno editoru až to bude hotové, chcete-li aktualizovat vám dává příležitost pro odložené změny kontextu, až proběhne aktualizace. Tím lze vylepšit výkon, protože umožňuje zpoždění spuštění časově náročné algoritmy, dokud nečinnost systému je k dispozici.  
   
 ### <a name="to-publish-the-context-bag-to-the-seid"></a>Publikovat SEID kontextu kontejneru  
   
-1.  Volání `QueryService` na <xref:Microsoft.VisualStudio.Shell.Interop.SVsTrackSelectionEx> služby a vrátí ukazatel na <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx> rozhraní.  
+1. Volání `QueryService` na <xref:Microsoft.VisualStudio.Shell.Interop.SVsTrackSelectionEx> služby a vrátí ukazatel na <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx> rozhraní.  
   
-2.  Volání <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx.OnElementValueChange%2A>, určující identifikátor elementu (`elementid` parametr) hodnotu SEID_UserContext k označení, že předáváte kontext na globální úrovni.  
+2. Volání <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx.OnElementValueChange%2A>, určující identifikátor elementu (`elementid` parametr) hodnotu SEID_UserContext k označení, že předáváte kontext na globální úrovni.  
   
-3.  Když stane aktivním editoru nebo návrháře, hodnot v jeho <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx> objektu se rozšíří do globálního výběru. Je potřeba jenom to provést jednou na relaci a potom uložte ukazatele na globální kontext vytvoří, když jste volali <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx.OnElementValueChange%2A>.  
+3. Když stane aktivním editoru nebo návrháře, hodnot v jeho <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx> objektu se rozšíří do globálního výběru. Je potřeba jenom to provést jednou na relaci a potom uložte ukazatele na globální kontext vytvoří, když jste volali <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx.OnElementValueChange%2A>.  
   
 ### <a name="to-maintain-the-context-bag"></a>Udržovat kontextu kontejneru  
   
-1.  Implementace <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext> zajistit, aby **dynamická Nápověda** volá okno editoru nebo návrháře předtím, než se aktualizuje.  
+1. Implementace <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext> zajistit, aby **dynamická Nápověda** volá okno editoru nebo návrháře předtím, než se aktualizuje.  
   
      Pro každý místní kontejner objektů a dat, které se nazývá <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.AdviseUpdate%2A> po vytvoření kontejneru objektů a dat kontextu a implementoval <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContextUpdate>, volání IDE <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContextUpdate.UpdateUserContext%2A> upozornit poskytovatele kontextu zaktualizuje kontejner kontextu. Chcete-li změnit atributy a klíčová slova v kontejneru a kontextu a jakékoli kontext kontejnery objektů a dat, než můžete použít toto volání **dynamická Nápověda** Probíhá aktualizace okna.  
   
-2.  Volání <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.SetDirty%2A> na kontejner objektů a dat kontext k označení, že editoru nebo návrháře má nový kontext.  
+2. Volání <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.SetDirty%2A> na kontejner objektů a dat kontext k označení, že editoru nebo návrháře má nový kontext.  
   
      Když **dynamická Nápověda** volání okno <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContextUpdate.UpdateUserContext%2A> k označení, že se aktualizuje, editoru nebo návrháře v tu chvíli můžete aktualizovat kontext odpovídajícím způsobem pro nadřazené místní kontejner objektů a dat a všechny kontejnery objektů a dat kontext.  
   
     > [!NOTE]
     >  `SetDirty` Příznak je automaticky nastaven na `true` vždy, když přidá nebo odebere z kontejneru objektů a dat rámci kontextu. **Dynamická Nápověda** okno jen volá <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContextUpdate.UpdateUserContext%2A> na kontejner a kontext dat pokud `SetDirty` příznak je nastaven na `true`. Resetuje na `false` po aktualizaci.  
   
-3.  Volání <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.AddAttribute%2A> k přidání kontextu do kolekce aktivní kontext nebo <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.RemoveAttribute%2A> odebrat kontext.  
+3. Volání <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.AddAttribute%2A> k přidání kontextu do kolekce aktivní kontext nebo <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.RemoveAttribute%2A> odebrat kontext.  
   
 ## <a name="robust-programming"></a>Robustní programování  
  Pokud vytváříte vlastní editor, je třeba provést všechny tři postupy v tomto tématu pro poskytnutí kontextu editoru.  

@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b0c197a15962d12e101e0d3ab164d706375620d9
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 74f8fdd738c613977a73cc3d79b5ba880c7e6e74
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59648244"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116092"
 ---
 # <a name="proxy-authorization-required"></a>Vyžaduje se autorizace proxy
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -23,29 +23,29 @@ K této chybě obvykle dochází, když jsou uživatelé připojeni ke službě 
   
 ## <a name="to-correct-this-error"></a>Oprava této chyby  
   
--   Restartujte sadu Visual Studio. By se zobrazit dialogové okno ověřování proxy serveru. V dialogovém okně zadejte svoje přihlašovací údaje.  
+- Restartujte sadu Visual Studio. By se zobrazit dialogové okno ověřování proxy serveru. V dialogovém okně zadejte svoje přihlašovací údaje.  
   
--   Pokud předchozí krok problém nevyřeší, může to být vzhledem k tomu, že váš proxy server zobrazovat výzvu k zadání pověření pro http://go.microsoft.com řeší, ale provádí se *. visualStudio.com adresy. Pro tyto servery potřebujete na seznam povolených v následujícím seznamu pro odblokování všech scénářů přihlašování v aplikaci Visual Studio:  
+- Pokud předchozí krok problém nevyřeší, může to být vzhledem k tomu, že váš proxy server zobrazovat výzvu k zadání pověření pro http://go.microsoft.com řeší, ale provádí se *. visualStudio.com adresy. Pro tyto servery potřebujete na seznam povolených v následujícím seznamu pro odblokování všech scénářů přihlašování v aplikaci Visual Studio:  
   
-    -   *.windows.net  
+    - *.windows.net  
   
-    -   *.microsoftonline.com  
+    - *.microsoftonline.com  
   
-    -   *.visualstudio.com  
+    - *.visualstudio.com  
   
-    -   *.microsoft.com  
+    - *.microsoft.com  
   
-    -   *.live.com  
+    - *.live.com  
   
--   V opačném případě můžete odebrat http://go.microsoft.com adresy, ze seznamu povolených, aby se zobrazí dialogové okno ověřování proxy serveru pro obě http://go.microsoft.com adresy a koncové body serveru při restartování sady Visual Studio.  
+- V opačném případě můžete odebrat http://go.microsoft.com adresy, ze seznamu povolených, aby se zobrazí dialogové okno ověřování proxy serveru pro obě http://go.microsoft.com adresy a koncové body serveru při restartování sady Visual Studio.  
   
--   NEBO  
+- NEBO  
   
--   Pokud chcete použít výchozí pověření s proxy serverem, máte následující:  
+- Pokud chcete použít výchozí pověření s proxy serverem, máte následující:  
   
-    1.  Hledání devenv.exe.config (konfigurační soubor devenv.exe): **%ProgramFiles%\Microsoft Visual Studio 14.0\Common7\IDE** (nebo **% ProgramFiles (x86) %\Microsoft Visual Studio 14.0\Common7\IDE**) .  
+    1. Hledání devenv.exe.config (konfigurační soubor devenv.exe): **%ProgramFiles%\Microsoft Visual Studio 14.0\Common7\IDE** (nebo **% ProgramFiles (x86) %\Microsoft Visual Studio 14.0\Common7\IDE**) .  
   
-    2.  V konfiguračním souboru najít `<system.net>` blokovat a přidejte tento kód:  
+    2. V konfiguračním souboru najít `<system.net>` blokovat a přidejte tento kód:  
   
         ```xml  
         <defaultProxy enabled="true" useDefaultCredentials="true">  
@@ -56,6 +56,6 @@ K této chybě obvykle dochází, když jsou uživatelé připojeni ke službě 
   
          Je třeba vložit adresu proxy serveru správná pro vaši síť v `proxyaddress="<http://<yourproxy:port#>`.  
   
--   NEBO  
+- NEBO  
   
--   Můžete také postupujte podle pokynů v [tento příspěvek](http://blogs.msdn.com/b/rido/archive/2010/05/06/how-to-connect-to-tfs-through-authenticated-web-proxy.aspx) přidáte kód, který vám umožní používat proxy server.
+- Můžete také postupujte podle pokynů v [tento příspěvek](http://blogs.msdn.com/b/rido/archive/2010/05/06/how-to-connect-to-tfs-through-authenticated-web-proxy.aspx) přidáte kód, který vám umožní používat proxy server.

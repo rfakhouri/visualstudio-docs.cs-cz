@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7d11fa85073c9bf1ed9657fbb47705953c7593d1
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 5f98061cbc25bc4b4b7ef54a7027f40c9f780c6c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54772057"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117587"
 ---
 # <a name="refactoring-in-visual-studio"></a>Refaktoring v sadě Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Refaktoring je proces upravovat kód, aby byla jednodušší udržovat, pochopit
 
    Protože logiku Refaktoring je úzce vázané na syntaxi jazyka, každá služba jazyka v sadě Visual Studio poskytuje své vlastní nástroje pro refaktoring. Další informace naleznete na následujících stránkách:
 
-### <a name="refactoring-in-c"></a>Refaktoring v jazyce C#
+### <a name="refactoring-in-c"></a>Refaktoring v jazyce C\#
  [Refaktoring (C#)](../csharp-ide/refactoring-csharp.md)
 
 ### <a name="refactoring-in-visual-basic"></a>Refaktoring v jazyce Visual Basic
@@ -40,7 +40,7 @@ Refaktoring je proces upravovat kód, aby byla jednodušší udržovat, pochopit
 ### <a name="refactoring-in-c"></a>Refaktoring v jazyce C++
  [Psaní a refaktoring kódu (C++)](http://msdn.microsoft.com/library/56ffb9e9-514f-41f4-a3cf-fd9ce2daf3b6)
 
-### <a name="refactoring-in-f"></a>Refaktoring vF#
+### <a name="refactoring-in-f"></a>Refaktoring v F\#
  Podporu refaktoringu pro F# je k dispozici v [Visual F# Power Tools](https://visualstudiogallery.msdn.microsoft.com/136b942e-9f2c-4c0b-8bac-86d774189cff), rozšíření sady Visual Studio třetích stran.
 
 ## <a name="see-also"></a>Viz také

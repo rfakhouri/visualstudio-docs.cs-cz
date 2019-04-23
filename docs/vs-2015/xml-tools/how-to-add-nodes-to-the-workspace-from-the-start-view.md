@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 280ae52056d188c1959355c1d7521d1c7e744997
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: a8ed63e532bd8ba3977757a51ee494d671e7683a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59654734"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117834"
 ---
 # <a name="how-to-add-nodes-to-the-workspace-from-the-start-view"></a>Postupy: Přidání uzlů do pracovního prostoru z počátečního zobrazení
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,14 +23,14 @@ Toto téma popisuje, jak přidat globální uzlů [pracovní prostor návrháře
   
 ### <a name="to-add-nodes-to-the-workspace-from-the-start-view"></a>K přidání uzlů do pracovního prostoru z počáteční zobrazení  
   
-1.  Postupujte podle kroků v [jak: Vytvoření a úprava souboru schématu XSD](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).  
+1. Postupujte podle kroků v [jak: Vytvoření a úprava souboru schématu XSD](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).  
   
-2.  Klikněte pravým tlačítkem v editoru XML a vyberte **Návrhář zobrazení**.  
+2. Klikněte pravým tlačítkem v editoru XML a vyberte **Návrhář zobrazení**.  
   
      Počáteční zobrazení se zobrazí.  
   
      V **podrobnosti o nastavení schématu** části, Všimněte si, že jsou dva (**2**) **globální komplexní typy**.  
   
-3.  Klikněte na **přidat** odkaz na pravé straně **globální komplexní typy** záhlaví.  
+3. Klikněte na **přidat** odkaz na pravé straně **globální komplexní typy** záhlaví.  
   
      `USAddress` a `PurchaseOrderType` komplexní typ uzly se zobrazí na návrhové ploše zobrazení grafu.

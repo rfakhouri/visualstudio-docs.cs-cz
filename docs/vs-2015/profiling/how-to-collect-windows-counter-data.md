@@ -16,12 +16,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2c3e4a9cffd81561af39cef5eb88f4a7745b2dad
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 4fb88d4db82bde5f93d33716b65e2e8a4b48305a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54753413"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60115663"
 ---
 # <a name="how-to-collect-windows-counter-data"></a>Postupy: Shromažďování dat čítačů Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,28 +30,28 @@ ms.locfileid: "54753413"
   
  **Požadavky**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
 > [!NOTE]
 >  Rozšířené funkce zabezpečení v systému Windows 8 a Windows Server 2012 vyžadují významné změny ve způsobu, jakým profiler systému Visual Studio na těchto platformách shromažďuje data. Aplikace Windows Store také vyžadují nové techniky kolekce. Zobrazit [nástroje pro výkon v aplikacích Windows 8 a Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
   
 ### <a name="to-collect-windows-counter-data"></a>Ke shromažďování dat čítačů Windows  
   
-1.  V prohlížeči výkonu, klikněte pravým tlačítkem na relaci, pro kterou chcete konfigurovat čítače Windows a vyberte **vlastnosti**.  
+1. V prohlížeči výkonu, klikněte pravým tlačítkem na relaci, pro kterou chcete konfigurovat čítače Windows a vyberte **vlastnosti**.  
   
-2.  V **stránky vlastností**, klikněte na tlačítko **čítače Windows**.  
+2. V **stránky vlastností**, klikněte na tlačítko **čítače Windows**.  
   
-3.  Vyberte **shromáždit čítače Windows** zaškrtávací políčko.  
+3. Vyberte **shromáždit čítače Windows** zaškrtávací políčko.  
   
-4.  V **intervalem sběru hodnot (MS)** textové pole, zadejte časový interval.  
+4. V **intervalem sběru hodnot (MS)** textové pole, zadejte časový interval.  
   
-5.  Vybrat kategorii z **kategorie čítače** rozevíracího seznamu.  
+5. Vybrat kategorii z **kategorie čítače** rozevíracího seznamu.  
   
-6.  Vyberte instanci, ze **Instance** rozevíracího seznamu.  
+6. Vyberte instanci, ze **Instance** rozevíracího seznamu.  
   
-7.  Vyberte čítače, které chcete použít při profilování aplikace.  
+7. Vyberte čítače, které chcete použít při profilování aplikace.  
   
-8.  Klikněte na tlačítko **použít.**  
+8. Klikněte na tlačítko **použít.**  
   
 ## <a name="see-also"></a>Viz také  
  [Konfigurace výkonnostních relací](../profiling/configuring-performance-sessions.md)   

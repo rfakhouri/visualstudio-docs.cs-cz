@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fee9738cfce003ef19d311856304d87f6a4b2f15
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ce46f1db900aa5c37b49a1cc228290d7d99d29a2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55918907"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117249"
 ---
 # <a name="how-to-use-the-expression-editor"></a>Postupy: Používání editoru výrazů
 
@@ -36,18 +36,18 @@ Výrazy jsou literálními hodnotami nebo kódu jazyka Visual Basic vázán na a
 
 ## <a name="use-the-expression-editor"></a>Používání editoru výrazů
 
-1.  V sadě Visual Studio otevřete projekt nového nebo existujícího pracovního postupu.
+1. V sadě Visual Studio otevřete projekt nového nebo existujícího pracovního postupu.
 
-2.  Přidání, například <xref:System.Activities.Statements.Assign> aktivitu do pracovního postupu.
+2. Přidání, například <xref:System.Activities.Statements.Assign> aktivitu do pracovního postupu.
 
     > [!NOTE]
     > Více aktivit pracovního postupu mít editory výrazu. Výraz objekty TextBlock se také zobrazují v Návrhář proměnných, Návrhář argumentů a Návrhář dynamických argumentů. <xref:System.Activities.Statements.Assign> Aktivita slouží jako příklad.
 
-3.  Klikněte na levý výraz editoru v Návrháři aktivit pro <xref:System.Activities.Statements.Assign> aktivity.
+3. Klikněte na levý výraz editoru v Návrháři aktivit pro <xref:System.Activities.Statements.Assign> aktivity.
 
      Šedé vodoznak řetězce  **\<k >** a  **\<zadejte výraz jazyka VB. >** jsou výchozí text řetězce pro výraz editory v <xref:System.Activities.Statements.Assign> aktivity.
 
-4.  Při zadávání výrazu. Pokud zadáte řetězec, ujistěte se, že chcete vložit řetězec v uvozovkách. Pokud budete chtít vázat argument výrazu na proměnnou, ponechte uvozovky.
+4. Při zadávání výrazu. Pokud zadáte řetězec, ujistěte se, že chcete vložit řetězec v uvozovkách. Pokud budete chtít vázat argument výrazu na proměnnou, ponechte uvozovky.
 
      Jakmile budete hotovi, vyberte oblast nebo oblasti mimo Editor výrazů přesune fokus na jiné části návrháře. Přesun fokusu způsobí, že kompilátor ověření výrazu, jak je popsáno výše.
 

@@ -19,12 +19,12 @@ caps.latest.revision: 183
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: ddc63faae9a23485badb57f0e50ae8d46dd94b91
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 8e6f39e420981615f391103c6cee431f930190bf
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57873691"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60118094"
 ---
 # <a name="install-visual-studio-2015"></a>Nainstalovat sadu Visual Studio 2015
 
@@ -45,7 +45,7 @@ Předtím, než jsme proniknout do podrobností, tady je seznam našich nejčast
 |![Vyhledání kódu Product Key](../install/media/product-keys.png "kódy Product Key") |**Kódy Product Key**: Vyhledání kódu product key, najdete v článku [jak: Vyhledejte Visual Studio Product Key](../install/how-to-locate-the-visual-studio-product-key.md) tématu.|
 |![Přečtěte si informace o licencování](../install/media/licensing.png "licencování") |**Licencování**: Přečtěte si informace o licencování možnosti pro jednotlivce nebo podnikových zákazníků, najdete v článku [licence Visual Studio a MSDN](https://www.microsoft.com/download/details.aspx?id=13350) dokument white paper.|
 
-##  <a name="custom"></a> Výchozí vs. Vlastní instalace
+## <a name="custom"></a> Výchozí vs. Vlastní instalace
  Když nainstalujete sadu Visual Studio 2015, můžete zahrnout nebo vyloučit součásti, které byste použili každý den. To znamená, že výchozí instalaci se často menší a rychleji než vlastní instalace nainstalovat. Také znamená, že spousta komponent, které byly nainstalované ve výchozím nastavení v předchozích verzích, nyní jsou považovány za vlastních komponent, které je nutné explicitně vybrat v této verzi.
 
  ![Visual Studio 2015 instalačním programu](../ide/media/vs2015-setup-screen.png "VS2015_Setup_screen")
@@ -66,7 +66,7 @@ Předtím, než jsme proniknout do podrobností, tady je seznam našich nejčast
 |**Běžné nástroje a Software Development Kit**|Android Native Development Kit (3. stran)<br /> Sada SDK pro Android [3. stran]<br />Rozhraní API instalace sady Android SDK (3. stran)<br />Apache Ant (3. stran)<br /> Java SE Development Kit (3. stran)<br /> Joyent Node.js (3. stran)|
 |**Běžné nástroje**|Git pro Windows (3. stran)<br />Rozšíření GitHub pro Visual Studio (3. stran)<br /> Visual Studio Extensibility Tools|
 
-##  <a name="installing"></a> Instalace sady Visual Studio
+## <a name="installing"></a> Instalace sady Visual Studio
  Visual Studio můžete nainstalovat pomocí instalačního média (DVD), pomocí služby předplatného sady Visual Studio z [My.VisualStudio.com](https://my.visualstudio.com/downloads?q=visual%20studio%20enterprise%202015) webu, stáhněte si instalační program, který web z [sady Visual Studio Soubory ke stažení](http://go.microsoft.com/fwlink/?LinkId=517106) webu, nebo tak, že vytvoříte rozložení pro offline instalaci (najdete v článku [vytvořit Offline instalace sady Visual Studio](../install/create-an-offline-installation-of-visual-studio.md) stránky pro další podrobnosti).
 
 > [!IMPORTANT]
@@ -82,7 +82,7 @@ Předtím, než jsme proniknout do podrobností, tady je seznam našich nejčast
 
  Další informace o tomto požadavku účet místního správce, najdete v článku znalostní báze Knowledge Base, [instalace systému SQL Server selže, pokud účet použitý k instalaci nemá určitá uživatelská oprávnění](https://support.microsoft.com/kb/2000257).
 
-###  <a name="BKMK_Media"></a> Pomocí instalačního média
+### <a name="BKMK_Media"></a> Pomocí instalačního média
  Chcete-li nainstalovat [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], v kořenovém adresáři [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] instalačním médiu, spusťte instalační soubor pro vydání chcete:
 
 |Edice|Instalační soubor|
@@ -91,19 +91,19 @@ Předtím, než jsme proniknout do podrobností, tady je seznam našich nejčast
 |Visual Studio Professional|vs_professional.exe|
 |Visual Studio Community|vs_community.exe|
 
-###  <a name="BKMK_Website"></a> Stahování z webu produktu
+### <a name="BKMK_Website"></a> Stahování z webu produktu
  Přejděte [stahování sady Visual Studio](http://go.microsoft.com/fwlink/?LinkId=517106) stránky a zvolte edici sady Visual Studio, kterou chcete.
 
 ### <a name="downloading-from-your-subscription-service"></a>Stahuje se z předplatného služby
  Přejděte [My.VisualStudio.com](https://my.visualstudio.com/downloads?q=visual%20studio%20enterprise%202015) stránky a zvolte edici sady Visual Studio, kterou chcete.
 
-###  <a name="BKMK_Offline"></a> Vytvoření rozvržení aplikace offline instalaci
+### <a name="BKMK_Offline"></a> Vytvoření rozvržení aplikace offline instalaci
  Pokud nemáte [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] instalační médium, nebo nemáte předplatné sady Visual Studio, nebo nechcete nainstalovat [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] použít webovou Instalační službu, můžete provést "odpojené" instalaci tak, že vytvoříte, která se označuje jako offline Instalace rozložení. Další informace najdete v tématu [vytvoření v režimu Offline instalace sady Visual Studio](../install/create-an-offline-installation-of-visual-studio.md) stránky.
 
-##  <a name="enterprise"></a> Nasazení sady Visual Studio v podniku
+## <a name="enterprise"></a> Nasazení sady Visual Studio v podniku
  Informace o tom, jak nasadit [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] přes síť, najdete v článku [Visual Studio Administrator Guide](../install/visual-studio-administrator-guide.md).
 
-###  <a name="BKMK_Virtualized"></a> Instalace sady Visual Studio ve virtualizovaném prostředí
+### <a name="BKMK_Virtualized"></a> Instalace sady Visual Studio ve virtualizovaném prostředí
  **Video problémy s Hyper-V**
 
  Pokud používáte systém Windows Server 2008 R2 s technologií Hyper-V a urychlování pomocí grafického adaptéru, může docházet ke zpomalování systému.
@@ -114,18 +114,18 @@ Předtím, než jsme proniknout do podrobností, tady je seznam našich nejčast
 
  Při instalaci sady Visual Studio 2015 na skutečný hardware bez virtualizace, můžete funkce, které umožňují emulace systému Windows a zařízení s Androidem pomocí technologie Hyper-V. Pokud instalujete do technologie Hyper-V, nebudete mít k emulaci Windows nebo zařízení s Androidem. Je to proto, že samotné virtuální počítače jsou emulátorů a nelze aktuálně hostování virtuálních počítačů uvnitř jiného virtuálního počítače. Alternativním řešením je, aby skutečné Windows nebo zařízení s Androidem, na které můžete přímo nasadit a ladit aplikaci.
 
-##  <a name="optionalComponents"></a> Instalaci volitelné součásti
+## <a name="optionalComponents"></a> Instalaci volitelné součásti
  Pokud chcete nainstalovat součásti, které jste možná vybrali při původní instalaci, použijte následující postup.
 
 #### <a name="to-install-optional-components"></a>K instalaci volitelné součásti
 
-1.  V **ovládací panely**na **programy a funkce** zvolte edici produktu, ke kterému chcete přidat jednu nebo více komponent a pak zvolte **změnu**.
+1. V **ovládací panely**na **programy a funkce** zvolte edici produktu, ke kterému chcete přidat jednu nebo více komponent a pak zvolte **změnu**.
 
-2.  V Průvodci instalací zvolte **změnit**a poté vyberte komponenty, které chcete nainstalovat.
+2. V Průvodci instalací zvolte **změnit**a poté vyberte komponenty, které chcete nainstalovat.
 
-3.  Zvolte **Další**a pak postupujte podle zbývajících pokynů.
+3. Zvolte **Další**a pak postupujte podle zbývajících pokynů.
 
-##  <a name="helpContent"></a> Instalace offline obsah nápovědy
+## <a name="helpContent"></a> Instalace offline obsah nápovědy
  Po instalaci [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], další obsah nápovědy si můžete stáhnout tak, že bude k dispozici v režimu offline.
 
 #### <a name="to-install-or-uninstall-help-content"></a>Instalace nebo odinstalace obsahu nápovědy
@@ -142,47 +142,47 @@ Předtím, než jsme proniknout do podrobností, tady je seznam našich nejčast
 
    Další informace o tom, jak nainstalovat nebo nasadit offline nápovědu najdete v článku [pomáhají Příručka pro správce prohlížeč](../ide/help-viewer-administrator-guide.md).
 
-##  <a name="serviceReleases"></a> Kontrola aktualizací Service Release a aktualizací produktů
+## <a name="serviceReleases"></a> Kontrola aktualizací Service Release a aktualizací produktů
  Vzhledem k tomu, že ne všechna rozšíření jsou kompatibilní, Visual Studio neprovádí automatický upgrade rozšíření při upgradu z předchozí verze. Je třeba přeinstalovat rozšíření od [Visual Studio Marketplace](https://marketplace.visualstudio.com/) nebo od vydavatele softwaru.
 
 #### <a name="to-automatically-check-for-service-releases"></a>Automatické zjišťování aktualizací Service Release
 
-1.  V panelu nabídky zvolte **nástroje**, **možnosti**.
+1. V panelu nabídky zvolte **nástroje**, **možnosti**.
 
-2.  V **možnosti** dialogového okna rozbalte **prostředí**a pak vyberte **rozšíření a aktualizace**. Ujistěte se, **automaticky vyhledávat aktualizace** zaškrtávací políčko zaškrtnuto a klikněte na tlačítko **OK**.
+2. V **možnosti** dialogového okna rozbalte **prostředí**a pak vyberte **rozšíření a aktualizace**. Ujistěte se, **automaticky vyhledávat aktualizace** zaškrtávací políčko zaškrtnuto a klikněte na tlačítko **OK**.
 
 ## <a name="registering-visual-studio"></a>Registrace aplikace Visual Studio
 
-1.  V panelu nabídky zvolte **pomáhají**, **o**.
+1. V panelu nabídky zvolte **pomáhají**, **o**.
 
      **o** identifikační číslo produktu (PID) se zobrazí dialogové okno. Identifikátor PID a účet Windows přihlašovací údaje (například Hotmail nebo Outlook.com e-mailovou adresu a heslo) budete potřebovat k registraci produktu.
 
-2.  V panelu nabídky zvolte **pomáhají**, **registrovat produkt**.
+2. V panelu nabídky zvolte **pomáhají**, **registrovat produkt**.
 
-##  <a name="repair"></a> Oprava sady Visual Studio
+## <a name="repair"></a> Oprava sady Visual Studio
 
 #### <a name="to-repair-visual-studio"></a>Oprava aplikace Visual Studio
 
-1.  V **ovládací panely**na **programy a funkce** zvolte edici produktu, kterou chcete opravit a klikněte na tlačítko **změnu**.
+1. V **ovládací panely**na **programy a funkce** zvolte edici produktu, kterou chcete opravit a klikněte na tlačítko **změnu**.
 
-2.  V Průvodci instalací zvolte **opravit**, zvolte **Další**a pak postupujte podle zbývajících pokynů.
+2. V Průvodci instalací zvolte **opravit**, zvolte **Další**a pak postupujte podle zbývajících pokynů.
 
 #### <a name="to-repair-visual-studio-in-silent-or-passive-modes-that-is-to-repair-from-source"></a>Oprava aplikace Visual Studio v tichém nebo pasivním režimu (tedy oprava ze zdroje)
 
-1.  V počítači s nainstalovanou sadou Visual Studio otevřete okno příkazového řádku systému Windows.
+1. V počítači s nainstalovanou sadou Visual Studio otevřete okno příkazového řádku systému Windows.
 
-2.  Zadejte následující parametry:
+2. Zadejte následující parametry:
 
      *DVDRoot* \\< Instalační_soubor\> \</quiet&#124;/passive > [/ norestart] / opravit
 
-##  <a name="troubleshooting"></a> Řešení potíží instalace
+## <a name="troubleshooting"></a> Řešení potíží instalace
  Tyto prostředky použijte k získání nápovědy pro problémy s instalací a instalací:
 
--   [Visual Studio nastavení a instalace](http://go.microsoft.com/fwlink/?LinkID=151190) fóra. Přečtěte si otázky a odpovědi od jiných uživatelů z komunity systému Visual Studio. Pokud nenajdete, co potřebujete, můžete zadat vlastní otázky.
+- [Visual Studio nastavení a instalace](http://go.microsoft.com/fwlink/?LinkID=151190) fóra. Přečtěte si otázky a odpovědi od jiných uživatelů z komunity systému Visual Studio. Pokud nenajdete, co potřebujete, můžete zadat vlastní otázky.
 
--   [Microsoft Support for Visual Studio](http://go.microsoft.com/fwlink/?LinkID=251019) webu. Přečtěte si články znalostní báze a naučte se, jak kontaktovat podporu společnosti Microsoft za účelem získání informací o problémech s instalací systému Visual Studio.
+- [Microsoft Support for Visual Studio](http://go.microsoft.com/fwlink/?LinkID=251019) webu. Přečtěte si články znalostní báze a naučte se, jak kontaktovat podporu společnosti Microsoft za účelem získání informací o problémech s instalací systému Visual Studio.
 
-##  <a name="relatedTopics"></a> Související témata
+## <a name="relatedTopics"></a> Související témata
 
 |Název|Popis|
 |-----------|-----------------|

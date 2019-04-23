@@ -19,12 +19,12 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2446320f1cbf0551fdfb1532df4fea23631b1131
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 048307c6c8117a77a57da6dc20f2615ae82feb0c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649261"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117496"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Integrace sady Visual Studio (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,20 +69,20 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 ## <a name="in-process-compilers"></a>Vnitroprocesové kompilátory  
  Pokud je to možné, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] se pokusí použít verzi v procesu [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] kompilátoru pro zajištění zvýšeného výkonu. (Nevztahuje se na [!INCLUDE[csprcs](../includes/csprcs-md.md)].) Aby to fungovalo správně musí být splněny následující podmínky:  
   
--   V cíli projektu, musí být úkol s názvem `Vbc` pro [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] projekty.  
+- V cíli projektu, musí být úkol s názvem `Vbc` pro [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] projekty.  
   
--   `UseHostCompilerIfAvailable` Parametr úkolu musí být nastaven na hodnotu true.  
+- `UseHostCompilerIfAvailable` Parametr úkolu musí být nastaven na hodnotu true.  
   
 ## <a name="design-time-intellisense"></a>Technologie IntelliSense v době návrhu  
  Chcete-li získat podporu technologie IntelliSense [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] předtím, než sestavení vygeneruje výstupné sestavení, musí být splněny následující podmínky:  
   
--   Musí existovat cíl s názvem `Compile`.  
+- Musí existovat cíl s názvem `Compile`.  
   
--   Buď `Compile` cíl nebo některá z jeho závislostí musí volat úkol kompilátoru pro projekt, jako například `Csc` nebo `Vbc`.  
+- Buď `Compile` cíl nebo některá z jeho závislostí musí volat úkol kompilátoru pro projekt, jako například `Csc` nebo `Vbc`.  
   
--   Buď `Compile` cíl nebo některá z jeho závislostí musí způsobit, že kompilátor získá všechny potřebné parametry pro technologii IntelliSense, zvláště všechny odkazy.  
+- Buď `Compile` cíl nebo některá z jeho závislostí musí způsobit, že kompilátor získá všechny potřebné parametry pro technologii IntelliSense, zvláště všechny odkazy.  
   
--   Musí být splněny podmínky uvedené v části "Vnitroprocesové kompilátory".  
+- Musí být splněny podmínky uvedené v části "Vnitroprocesové kompilátory".  
   
 ## <a name="building-solutions"></a>Sestavování řešení  
  V rámci [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], soubor řešení a pořadí sestavení projektu řízeno pomocí [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] samotný. Při sestavování řešení s msbuild.exe na příkazovém řádku [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] analyzuje soubor řešení a příkazy sestavení projektu. V obou případech jsou projekty sestaveny jednotlivě v pořadí závislosti a z odkazů typu projekt na projekt nejsou provázány. Naopak pokud jednotlivé projekty jsou sestaveny pomocí msbuild.exe, odkazy typu projekt na projekt Procházet.  
@@ -127,22 +127,22 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 ## <a name="design-time-target-execution"></a>Provádění cílů v době návrhu  
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pokusy o spuštění cílů s některými názvy při načítání projektu. Tyto cíle zahrnují `Compile`, `ResolveAssemblyReferences`, `ResolveCOMReferences`, `GetFrameworkPaths`, a `CopyRunEnvironmentFiles`. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Spustí tyto cíle, tak, aby kompilátor může být inicializován k zajištění technologie IntelliSense, ladicí program může být inicializována a zobrazení odkazů v Průzkumníku řešení může být vyřešený. Pokud tyto cíle nejsou přítomny, projekt se načtou a sestaví správně ale možnosti času návrhu v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nebudou plně funkční.  
   
-##  <a name="BKMK_EditingProjects"></a> Úpravy souborů projektu v sadě Visual Studio  
+## <a name="BKMK_EditingProjects"></a> Úpravy souborů projektu v sadě Visual Studio  
  Chcete-li upravit [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] projektu přímo, můžete otevřít soubor projektu v editoru XML pro Visual Studio.  
   
 #### <a name="to-unload-and-edit-a-project-file-in-visual-studio"></a>Uvolnění projektu a jeho úprava v sadě Visual Studio  
   
-1.  V **Průzkumníka řešení**, otevřete místní nabídku pro projekt a klikněte na tlačítko **uvolnit projekt**.  
+1. V **Průzkumníka řešení**, otevřete místní nabídku pro projekt a klikněte na tlačítko **uvolnit projekt**.  
   
      Projekt je označen **(není k dispozici)**.  
   
-2.  V **Průzkumníka řešení**, otevřete místní nabídku pro nedostupný projekt a klikněte na tlačítko **upravit \<soubor projektu >**.  
+2. V **Průzkumníka řešení**, otevřete místní nabídku pro nedostupný projekt a klikněte na tlačítko **upravit \<soubor projektu >**.  
   
      Soubor projektu se otevře v editoru XML sady Visual Studio.  
   
-3.  Upravte, uložte a zavřete soubor projektu.  
+3. Upravte, uložte a zavřete soubor projektu.  
   
-4.  V **Průzkumníka řešení**, otevřete místní nabídku pro nedostupný projekt a klikněte na tlačítko **znovu načíst projekt**.  
+4. V **Průzkumníka řešení**, otevřete místní nabídku pro nedostupný projekt a klikněte na tlačítko **znovu načíst projekt**.  
   
 ## <a name="intellisense-and-validation"></a>Technologie IntelliSense a ověřování  
  Při použití editoru XML k úpravám souborů projektu, technologie IntelliSense a ověřování řízeno souborem [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] soubory schémat. Tyto jsou nainstalovány v mezipaměti schématu, který se nachází v  *\<instalačního adresáře sady Visual Studio >* \Xml\Schemas\1033\MSBuild.  
@@ -158,21 +158,21 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 ## <a name="reference-resolution"></a>Překlad odkazů  
  Referenční řešení je proces vyhledání skutečných sestavení pomocí referenčních položek uložených v souboru projektu. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] musí spustit řešení odkazu pro zobrazení detailních vlastnosti pro každý odkaz v **vlastnosti** okna. Následující seznam popisuje tři typy odkazů a jejich výsledek.  
   
--   Odkazy na sestavení:  
+- Odkazy na sestavení:  
   
      Projektový systém volá cíl s dobře známým názvem `ResolveAssemblyReferences`. Tento cíl by měl vytvářet položky s názvem položky typu `ReferencePath`. Každá z těchto položek by měla mít specifikaci položky (hodnota `Include` atribut položky) obsahující úplnou cestu k odkazu. Položky by měly mít všechna metadata ze vstupních položek prošla kromě následujících nových metadat:  
   
-    -   `CopyLocal`, která udává, zda sestavení má být zkopírováno do výstupní složky, nastavte na hodnotu true nebo false.  
+    - `CopyLocal`, která udává, zda sestavení má být zkopírováno do výstupní složky, nastavte na hodnotu true nebo false.  
   
-    -   `OriginalItemSpec`, obsahující specifikace původní položky odkazu.  
+    - `OriginalItemSpec`, obsahující specifikace původní položky odkazu.  
   
-    -   `ResolvedFrom`, pokud bylo vyřešeno z nastavte na "{TargetFrameworkDirectory}" [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] adresáře.  
+    - `ResolvedFrom`, pokud bylo vyřešeno z nastavte na "{TargetFrameworkDirectory}" [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] adresáře.  
   
--   Odkazy modelu COM:  
+- Odkazy modelu COM:  
   
      Projektový systém volá cíl s dobře známým názvem `ResolveCOMReferences`. Tento cíl by měl vytvářet položky s názvem položky typu `ComReferenceWrappers`. Každá z těchto položek by měla mít specifikaci obsahující úplnou cestu ke zprostředkovatelům sestavení pro odkaz COM. Položky by měly mít všechna metadata ze vstupních položek předaných, kromě nových metadat s názvem `CopyLocal`, která udává, zda sestavení má být zkopírováno do výstupní složky, nastavte na hodnotu true nebo false  
   
--   Nativní odkazy  
+- Nativní odkazy  
   
      Projektový systém volá cíl s dobře známým názvem `ResolveNativeReferences`. Tento cíl by měl vytvářet položky s názvem položky typu `NativeReferenceFile`. Položky by měly mít všechna metadata ze vstupních položek prošla kromě nových metadat s názvem `OriginalItemSpec`, obsahující specifikace původní položky odkazu.  
   

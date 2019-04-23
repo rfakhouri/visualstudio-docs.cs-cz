@@ -10,12 +10,12 @@ ms.assetid: 90458fdd-2d34-4f10-82dc-6d8f31b66d8b
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 80e9e34547580560e79d408935fd10f17b577037
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6b03e69892da217d84d56b39b7df61784907d2b0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54771652"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117691"
 ---
 # <a name="choosing-a-debug-engine-implementation-strategy"></a>Výběr strategie implementace ladicího stroje
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,9 +29,9 @@ Určení strategie implementace ladicí stroj (DE) pomocí architektury za běhu
   
  V opačném případě můžete zvolit vytváření DE v rámci procesu SDM nebo v rámci procesu ladění programu. Je důležité vzít v úvahu, jestli vyhodnocovač výrazů DE potřebuje časté přístup k úložišti symbolů programu a určuje, zda úložiště symbolů je možné načíst do paměti pro rychlý přístup. Zvažte také následující:  
   
--   Pokud nejsou k dispozici mnoho volání mezi vyhodnocovací filtr výrazů a úložiště symbolů nebo úložiště symbolů lze načíst do paměti SDM, vytvořte DE v rámci procesu SDM. Identifikátor CLSID ladicí stroj musí vrátit SDM při připojování vašeho programu. K vytvoření instance v procesu je DE SDM používá tento identifikátor CLSID.  
+- Pokud nejsou k dispozici mnoho volání mezi vyhodnocovací filtr výrazů a úložiště symbolů nebo úložiště symbolů lze načíst do paměti SDM, vytvořte DE v rámci procesu SDM. Identifikátor CLSID ladicí stroj musí vrátit SDM při připojování vašeho programu. K vytvoření instance v procesu je DE SDM používá tento identifikátor CLSID.  
   
--   Pokud DE musí volat program pro přístup k úložišti symbolů, vytvořte program DE v rámci procesu. V takovém případě program vytvoří instance DE.  
+- Pokud DE musí volat program pro přístup k úložišti symbolů, vytvořte program DE v rámci procesu. V takovém případě program vytvoří instance DE.  
   
 ## <a name="see-also"></a>Viz také  
  [Rozšiřitelnost programu Visual Studio Debugger](../../extensibility/debugger/visual-studio-debugger-extensibility.md)

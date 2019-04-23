@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5350c4cad7acf936d90698a99299757e13a7de3a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 6a6c94382bd797b4c24057f623b334b2f2cd2983
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59658824"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60115572"
 ---
 # <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>Postupy: Generování fragmentu XML ze schématu XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,11 +27,11 @@ XML Editor má schopnost generovat fragmentů XML ze schématu XML definice jazy
   
 - Aktuální element v editoru musí být prázdný s žádné atributy. Například následující jsou všechny platné  
   
-  -   `<Account`  
+  - `<Account`  
   
-  -   `<Account>`  
+  - `<Account>`  
   
-  -   `<Account></Account>`  
+  - `<Account></Account>`  
   
 - Kurzor musí být umístěné bezprostředně napravo od názvu elementu.  
   
@@ -51,31 +51,31 @@ XML Editor má schopnost generovat fragmentů XML ze schématu XML definice jazy
   
 #### <a name="to-create-a-new-xml-file-and-associate-it-with-an-xml-schema"></a>Vytvořte nový soubor XML a přidružte jej k schématu XML  
   
-1.  Na **souboru** nabídky, přejděte k **nový**a klikněte na tlačítko **souboru**.  
+1. Na **souboru** nabídky, přejděte k **nový**a klikněte na tlačítko **souboru**.  
   
-2.  Vyberte **soubor XML** v **šablony** podokně a klepněte na **otevřít**.  
+2. Vyberte **soubor XML** v **šablony** podokně a klepněte na **otevřít**.  
   
      Nový soubor je otevřen v editoru. Tento soubor obsahuje deklaraci XML výchozí `<?xml version="1.0" encoding="utf-8">`.  
   
-3.  V okně Vlastnosti dokumentu, klikněte na tlačítko Procházet (**...** ) na **schémata** pole.  
+3. V okně Vlastnosti dokumentu, klikněte na tlačítko Procházet (**...** ) na **schémata** pole.  
   
      **Schémata XSD** se zobrazí dialogové okno.  
   
-4.  Klikněte na **Přidat**.  
+4. Klikněte na **Přidat**.  
   
      **Otevřít schéma XSD** se zobrazí dialogové okno.  
   
-5.  Vyberte soubor schématu a klikněte na tlačítko **otevřít**.  
+5. Vyberte soubor schématu a klikněte na tlačítko **otevřít**.  
   
-6.  Klikněte na **OK**.  
+6. Klikněte na **OK**.  
   
      Schéma XML je teď přidružený k dokumentu XML.  
   
 #### <a name="to-generate-an-xml-snippet"></a>Ke generování fragmentu XML  
   
-1.  Typ `<` podokna editoru.  
+1. Typ `<` podokna editoru.  
   
-2.  Seznam členů obsahuje položky, je to možné:  
+2. Seznam členů obsahuje položky, je to možné:  
   
      **! –** a přidejte komentář.  
   
@@ -85,11 +85,11 @@ XML Editor má schopnost generovat fragmentů XML ze schématu XML definice jazy
   
      **Kontakt** přidat kořenový element.  
   
-3.  Vyberte **kontakt** ze seznamu členů a potom stiskněte klávesu ENTER.  
+3. Vyberte **kontakt** ze seznamu členů a potom stiskněte klávesu ENTER.  
   
      Editor přidá počáteční značce `<Contact` a umístí kurzor po názvu elementu.  
   
-4.  Stiskněte klávesu TAB pro generování dat XML pro `Contact` element podle jeho informace o schématu.  
+4. Stiskněte klávesu TAB pro generování dat XML pro `Contact` element podle jeho informace o schématu.  
   
 ### <a name="input"></a>Vstup  
  Následující soubor schématu je používán návodu.  

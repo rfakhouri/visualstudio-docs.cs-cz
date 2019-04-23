@@ -13,12 +13,12 @@ ms.assetid: 64315c2f-a0b2-4378-be16-0774b99beef5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ae61b261e9a613a2eee9ca8baca24773253a6df8
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 4ca910038e35ee65e6d97999f08013f398eaec9e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936028"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117028"
 ---
 # <a name="how-to-manage-counter-sets-using-the-load-test-editor"></a>Postupy: Správa sad čítačů pomocí editoru zátěžových testů
 
@@ -35,9 +35,9 @@ Správa sad čítačů zahrnuje sadu počítačů, které chcete shromažďovat 
 
 ## <a name="to-manage-counter-sets"></a>Spravovat sady čítačů
 
-1.  Otevřete zátěžový test.
+1. Otevřete zátěžový test.
 
-2.  Zvolte **spravovat sady čítačů** tlačítko.
+2. Zvolte **spravovat sady čítačů** tlačítko.
 
      – nebo –
 
@@ -45,20 +45,20 @@ Správa sad čítačů zahrnuje sadu počítačů, které chcete shromažďovat 
 
      **Spravovat sady čítačů** se zobrazí dialogové okno.
 
-3.  (Volitelné) V **vybrané počítače a sady čítačů budou přidány pod následující nastavení spuštění** seznamu, vyberte jiný parametr spuštění.
+3. (Volitelné) V **vybrané počítače a sady čítačů budou přidány pod následující nastavení spuštění** seznamu, vyberte jiný parametr spuštění.
 
     > [!NOTE]
     > To platí, pouze pokud máte více než jeden parametr spuštění zátěžového testu.
 
-4.  (Volitelné) Zvolte **přidat počítač** k přidání nového počítače do monitorování. Zobrazí se výzva k zadání názvu. Zadejte název počítače a zobrazí se uzly pod novou položku. Například **ASP.NET**, **IIS**, **SQL**a další. Zaškrtněte políčka u uzlů, které chcete vybrat. Nové čítače joinkind **náhled vybrané možnosti** podokně.
+4. (Volitelné) Zvolte **přidat počítač** k přidání nového počítače do monitorování. Zobrazí se výzva k zadání názvu. Zadejte název počítače a zobrazí se uzly pod novou položku. Například **ASP.NET**, **IIS**, **SQL**a další. Zaškrtněte políčka u uzlů, které chcete vybrat. Nové čítače joinkind **náhled vybrané možnosti** podokně.
 
-5.  (Volitelné) V **značky počítače** textového pole zadejte značku pro přiřazení k počítači. Například "TestMachine12 v lab3."
+5. (Volitelné) V **značky počítače** textového pole zadejte značku pro přiřazení k počítači. Například "TestMachine12 v lab3."
 
      Značky počítače umožňují určit počítač s názvem snadno rozpoznat.
 
      Značky jsou zobrazeny v **mapování sady čítačů** uzel ve stromu v editoru zátěžového testu. Důležitější, značky se zobrazí v sestavách aplikace Excel, které pomáhají identifikovat účastníky jakou roli má počítač v zátěžovém testu. Například "Web Server1 v lab2" nebo "SQL Server2 Phoenixu". Další informace najdete v tématu [sestavy zátěžové testy s výsledky pro porovnávání testů a analýzu trendů](../test/compare-load-test-results.md).
 
-6.  Zvolte **OK**.
+6. Zvolte **OK**.
 
 ## <a name="see-also"></a>Viz také:
 

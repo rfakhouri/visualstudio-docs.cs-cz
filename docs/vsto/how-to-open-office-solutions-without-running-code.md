@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3074e019a0b18880cd2188868ef86b7ed2b1fb76
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 9b9a88aff9cd587f695ace56c44eaf9c8fcb8875
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616128"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117197"
 ---
 # <a name="how-to-open-office-solutions-without-running-code"></a>Postupy: Otevření řešení pro systém Office bez spuštění kódu
   Řešení Microsoft Office vytvořené pomocí rozšíření spravovaného kódu spustí i v případě, že nastavení zabezpečení aplikace Office koncového uživatele je nastavena na hodnotu Vysoká. Je to proto, že spravuje zabezpečení kódu .NET sestavení rozhraní Microsoft .NET Framework, ne společnost Microsoft Office.
@@ -36,7 +36,7 @@ ms.locfileid: "56616128"
 
 ## <a name="to-bypass-the-assembly-by-using-the-shift-key"></a>Obejít sestavení pomocí klávesy Shift
 
--   Otevřít dokumenty a sešity **souboru** nabídky při podržení **Shift** klíč zabránit vyvolávání událostí inicializace při otevírání dokumentů aplikace Word a Excel.
+- Otevřít dokumenty a sešity **souboru** nabídky při podržení **Shift** klíč zabránit vyvolávání událostí inicializace při otevírání dokumentů aplikace Word a Excel.
 
     > [!NOTE]
     >  Pokud otevřete dokumentu nebo sešitu z **Začínáme** podokna úloh, podržte **Shift** nepoužívat kód. Navíc podržíte stisknutou klávesu SHIFT nebrání událostí vyvolaných po otevření dokumentu.
@@ -45,7 +45,7 @@ ms.locfileid: "56616128"
 
 ## <a name="to-bypass-an-assembly-by-renaming-or-removing-it"></a>Obejít sestavení tak, přejmenování nebo neodebrali.
 
--   Pokud máte potřebná oprávnění na počítači, kde je umístěné sestavení, můžete přejmenovat nebo odebrat sestavení, aby dokumentem nebo sešitem, nejde ho najít. Výsledkem je chyba se vyvolá při každém otevření dokumentu Office.
+- Pokud máte potřebná oprávnění na počítači, kde je umístěné sestavení, můžete přejmenovat nebo odebrat sestavení, aby dokumentem nebo sešitem, nejde ho najít. Výsledkem je chyba se vyvolá při každém otevření dokumentu Office.
 
      Pokud řešení používá více lidí, tato metoda řešení zabraňuje spuštění pro všechny z nich. To může být užitečné, pokud je nalezen problém v kódu nebo odkazovaného serveru a zabráníte všem uživatelům, ale jeho spuštění.
 

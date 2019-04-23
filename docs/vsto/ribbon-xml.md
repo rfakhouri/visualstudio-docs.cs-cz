@@ -23,12 +23,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6ad84f5a0db677ca9efa9d24b1963959010f25e3
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 77fa9442289851aff91d8d9bfc55e581edfa774a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602020"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117536"
 ---
 # <a name="ribbon-xml"></a>Pás karet – XML
   Položky pásu karet (XML) umožňuje přizpůsobit pás karet pomocí XML. Pomocí položky pásu karet (XML), pokud chcete přizpůsobit pás karet tak, aby položky pásu karet (vizuální návrhář) nepodporuje. Porovnání můžete dělat s každou položku najdete v tématu [přehled pásu karet](../vsto/Ribbon-overview.md).
@@ -55,9 +55,9 @@ ms.locfileid: "56602020"
 ## <a name="define-the-behavior-of-the-custom-ribbon"></a>Definuje chování vlastní pás karet
  Může reagovat na akce uživatele, jako je kliknutí na tlačítko na pásu karet, tak, že vytvoříte *metody zpětného volání*. Metody zpětného volání vypadat podobně jako události v ovládacích prvcích Windows Forms, ale jsou označeny atribut v jazyce XML prvku uživatelského rozhraní. Zápis metod ve třídě pásu karet a ovládacího prvku volá metody, která má stejný název jako hodnota atributu. Můžete například vytvořit metodu zpětného volání, která je volána, když uživatel klikne na tlačítko na pásu karet. Vytvořte metody zpětného volání je potřeba provést dva kroky:
 
--   Přiřaďte atribut ovládacího prvku v souboru XML pásu karet, který identifikuje metodu zpětného volání ve vašem kódu.
+- Přiřaďte atribut ovládacího prvku v souboru XML pásu karet, který identifikuje metodu zpětného volání ve vašem kódu.
 
--   Definujte metodu zpětného volání ve třídě pásu karet.
+- Definujte metodu zpětného volání ve třídě pásu karet.
 
 > [!NOTE]
 >  Outlook vyžaduje další krok. Další informace najdete v tématu [přizpůsobte pás karet pro aplikaci Outlook](../vsto/customizing-a-ribbon-for-outlook.md).
@@ -77,7 +77,7 @@ ms.locfileid: "56602020"
 
  Existuje mnoho různých typů metod zpětného volání, které můžete přiřadit ovládacích prvků pásu karet. Úplný seznam metod zpětného volání k dispozici pro každý ovládací prvek, naleznete v tématu technického článku [přizpůsobení uživatelského rozhraní pásu karet Office (2007) pro vývojáře (část 3 ze 3)](/previous-versions/office/developer/office-2007/aa722523(v=office.12)).
 
-###  <a name="CallBackMethods"></a> Definování metod zpětného volání
+### <a name="CallBackMethods"></a> Definování metod zpětného volání
  Definujte svoje metody zpětného volání ve třídě pásu karet v soubor kódu pásu karet. Metoda zpětného volání má několik požadavků:
 
 - Musí být deklarován jako veřejná.
@@ -93,7 +93,7 @@ ms.locfileid: "56602020"
   [!code-csharp[Trin_RibbonOutlookBasic#2](../vsto/codesnippet/CSharp/Trin_RibbonOutlookBasic/Ribbon1.cs#2)]
   [!code-vb[Trin_RibbonOutlookBasic#2](../vsto/codesnippet/VisualBasic/Trin_RibbonOutlookBasic/Ribbon1.vb#2)]
 
-##  <a name="RibbonDescriptorFile"></a> Odkaz na soubor XML pásu karet
+## <a name="RibbonDescriptorFile"></a> Odkaz na soubor XML pásu karet
  Můžete definovat vaše vlastní pás karet tak, že přidání prvků a atributů do souboru XML pásu karet. Ve výchozím souboru XML pásu karet obsahuje následující kód XML.
 
 ```xml
@@ -132,7 +132,7 @@ ms.locfileid: "56602020"
 
  Výchozí prvky a atributy v souboru XML pásu karet jsou malou podmnožinu prvky a atributy, které jsou k dispozici. Úplný seznam dostupných prvky a atributy, naleznete v tématu technického článku [přizpůsobení uživatelského rozhraní pásu karet Office (2007) pro vývojáře (část 2 ze 3)](/previous-versions/office/developer/office-2007/aa338199(v=office.12)).
 
-##  <a name="RibbonExtensionClass"></a> Referenční třídy pásu karet
+## <a name="RibbonExtensionClass"></a> Referenční třídy pásu karet
  Visual Studio vygeneruje třídy pásu karet v soubor kódu pásu karet. Přidáte do této třídy, metody zpětného volání pro ovládací prvky na pásu karet. Tato třída implementuje <xref:Microsoft.Office.Core.IRibbonExtensibility> rozhraní.
 
  Následující tabulka popisuje výchozí metody této třídy.

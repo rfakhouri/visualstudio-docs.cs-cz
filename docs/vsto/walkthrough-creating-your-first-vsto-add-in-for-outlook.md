@@ -1,5 +1,5 @@
 ---
-title: 'Průvodce: Vytvoření vašeho prvního doplňku VSTO pro Outlook'
+title: 'Návod: Vytvoření vašeho prvního doplňku VSTO pro Outlook'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,14 +15,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: eb7a65bab25f632e3f41e808e9f6d911f0159220
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: aceab3fba1020c08382c31a2de32368e8ba12a05
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56641140"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116116"
 ---
-# <a name="walkthrough-create-your-first-vsto-add-in-for-outlook"></a>Průvodce: Vytvoření vašeho prvního doplňku VSTO pro Outlook
+# <a name="walkthrough-create-your-first-vsto-add-in-for-outlook"></a>Návod: Vytvoření vašeho prvního doplňku VSTO pro Outlook
   Tento návod ukazuje, jak k vytvoření doplňku VSTO pro aplikaci Microsoft Office Outlook. Funkce, které vytvoříte v tento druh řešení jsou k dispozici aplikace samostatně, bez ohledu na to, který je otevřený položky aplikace Outlook. Další informace najdete v tématu [přehled vývoje řešení pro Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
@@ -42,36 +42,36 @@ ms.locfileid: "56641140"
 ## <a name="prerequisites"></a>Požadavky
  K dokončení tohoto návodu budete potřebovat následující komponenty:
 
--   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
+- [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
--   Microsoft Outlook
+- Microsoft Outlook
 
 ## <a name="create-the-project"></a>Vytvoření projektu
 
 ### <a name="to-create-a-new-outlook-project-in-visual-studio"></a>Chcete-li vytvořit nový projekt aplikace Outlook v sadě Visual Studio
 
-1.  Spustit [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
+1. Spustit [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
-2.  Na **souboru** nabídky, přejděte k **nový**a potom klikněte na tlačítko **projektu**.
+2. Na **souboru** nabídky, přejděte k **nový**a potom klikněte na tlačítko **projektu**.
 
-3.  V podokně šablony rozbalte **Visual C#** nebo **jazyka Visual Basic**a potom rozbalte **Office/SharePoint**.
+3. V podokně šablony rozbalte **Visual C#** nebo **jazyka Visual Basic**a potom rozbalte **Office/SharePoint**.
 
-4.  V rozbalených **Office/SharePoint** uzlu, vyberte **Office Add-ins** uzlu.
+4. V rozbalených **Office/SharePoint** uzlu, vyberte **Office Add-ins** uzlu.
 
-5.  V seznamu šablon projektu vyberte projekt doplňku VSTO pro Outlook.
+5. V seznamu šablon projektu vyberte projekt doplňku VSTO pro Outlook.
 
-6.  V **název** zadejte **FirstOutlookAddIn**.
+6. V **název** zadejte **FirstOutlookAddIn**.
 
-7.  Klikněte na **OK**.
+7. Klikněte na **OK**.
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] vytvoří **FirstOutlookAddIn** projekt a otevře **ThisAddIn** souboru kódu v editoru.
 
 ## <a name="write-code-that-adds-text-to-each-new-mail-message"></a>Napsat kód, který přidá text pro každou novou e-mailovou zprávu
  V dalším kroku přidejte kód do soubor kódu ThisAddIn. Nový kód používá model objektu aplikace Outlook přidat text do každé nové e-mailovou zprávu. Ve výchozím nastavení obsahuje soubor kódu ThisAddIn následující generovaného kódu:
 
--   Částečnou definici `ThisAddIn` třídy. Tato třída představuje vstupní bod pro kód a poskytuje přístup k modelu objektů aplikace Outlook. Další informace najdete v tématu [doplňků Program VSTO](../vsto/programming-vsto-add-ins.md). Zbývající část `ThisAddIn` třída je definována v souboru skryté kódu, který byste neměli měnit.
+- Částečnou definici `ThisAddIn` třídy. Tato třída představuje vstupní bod pro kód a poskytuje přístup k modelu objektů aplikace Outlook. Další informace najdete v tématu [doplňků Program VSTO](../vsto/programming-vsto-add-ins.md). Zbývající část `ThisAddIn` třída je definována v souboru skryté kódu, který byste neměli měnit.
 
--   `ThisAddIn_Startup` a `ThisAddIn_Shutdown` obslužných rutin událostí. Tyto obslužné rutiny událostí se volá, když aplikace Outlook načte a uvolní doplňku VSTO. Pomocí těchto obslužných rutin událostí k inicializaci doplňku VSTO, když je načten a chcete vyčistit prostředky využívané třídou doplňku VSTO, když je uvolněn. Další informace najdete v tématu [události v projektech pro systém Office](../vsto/events-in-office-projects.md).
+- `ThisAddIn_Startup` a `ThisAddIn_Shutdown` obslužných rutin událostí. Tyto obslužné rutiny událostí se volá, když aplikace Outlook načte a uvolní doplňku VSTO. Pomocí těchto obslužných rutin událostí k inicializaci doplňku VSTO, když je načten a chcete vyčistit prostředky využívané třídou doplňku VSTO, když je uvolněn. Další informace najdete v tématu [události v projektech pro systém Office](../vsto/events-in-office-projects.md).
 
 ### <a name="to-add-text-to-the-subject-and-body-of-each-new-mail-message"></a>Chcete-li přidat text pro předmět a text každého nového e-mailovou zprávu
 
@@ -94,46 +94,46 @@ ms.locfileid: "56641140"
 
    V předchozích příkladech kódu upravit každé nové e-mailovou zprávu, použijte následující objekty:
 
--   `Application` Pole `ThisAddIn` třídy. `Application` Pole vrátí <xref:Microsoft.Office.Interop.Outlook.Application> objektu, který představuje aktuální instanci aplikace Outlook.
+- `Application` Pole `ThisAddIn` třídy. `Application` Pole vrátí <xref:Microsoft.Office.Interop.Outlook.Application> objektu, který představuje aktuální instanci aplikace Outlook.
 
--   `Inspector` Parametr obslužné rutiny události pro <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> událostí. `Inspector` Parametr je <xref:Microsoft.Office.Interop.Outlook.Inspector> objektu, který představuje okně Inspektor novou e-mailovou zprávu. Další informace najdete v tématu [řešení pro aplikaci Outlook](../vsto/outlook-solutions.md).
+- `Inspector` Parametr obslužné rutiny události pro <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> událostí. `Inspector` Parametr je <xref:Microsoft.Office.Interop.Outlook.Inspector> objektu, který představuje okně Inspektor novou e-mailovou zprávu. Další informace najdete v tématu [řešení pro aplikaci Outlook](../vsto/outlook-solutions.md).
 
 ## <a name="test-the-project"></a>Testování projektu
  Při sestavení a spuštění projektu, ověřte, že text se zobrazí v řádku předmětu a textu novou e-mailovou zprávu.
 
 ### <a name="to-test-the-project"></a>Otestování projektu
 
-1.  Stisknutím klávesy **F5** sestavení a spuštění projektu.
+1. Stisknutím klávesy **F5** sestavení a spuštění projektu.
 
      Při sestavování projektu kód je zkompilován do sestavení, která je zahrnutá ve výstupní složce sestavení pro projekt. Visual Studio také vytvoří sadu položky registru, které umožňují Outlook zjišťovat a načíst doplněk VSTO, a nakonfiguruje nastavení zabezpečení na vývojovém počítači povolit doplňku VSTO pro spuštění. Další informace najdete v tématu [přehled procesu sestavení řešení Office](../vsto/walkthrough-creating-your-first-vsto-add-in-for-outlook.md).
 
-2.  V Outlooku vytvořte novou e-mailovou zprávu.
+2. V Outlooku vytvořte novou e-mailovou zprávu.
 
-3.  Ověřte, že následující text je přidán řádek předmětu a těla zprávy.
+3. Ověřte, že následující text je přidán řádek předmětu a těla zprávy.
 
      **Tento text byl přidán s použitím kódu.**
 
-4.  Zavřete aplikaci Outlook.
+4. Zavřete aplikaci Outlook.
 
 ## <a name="clean-up-the-project"></a>Vyčistěte projekt
  Po dokončení vývoje projektu doplňku VSTO sestavení, položky registru a nastavení zabezpečení odeberte z vývojového počítače. V opačném případě doplňku VSTO se spustí při každém otevření aplikace Outlook na vývojovém počítači.
 
 ### <a name="to-clean-up-your-project"></a>Chcete-li vyčistit projekt
 
-1.  V sadě Visual Studio na **sestavení** nabídky, klikněte na tlačítko **Vyčistit řešení**.
+1. V sadě Visual Studio na **sestavení** nabídky, klikněte na tlačítko **Vyčistit řešení**.
 
 ## <a name="next-steps"></a>Další kroky
  Teď, když jste vytvořili základní doplňku VSTO pro Outlook, můžete další informace o tom, jak vývoj doplňků VSTO z těchto témat:
 
--   Obecné programovacích úloh, které můžete provést s použitím doplňků VSTO pro Outlook Další informace najdete v tématu [doplňků Program VSTO](../vsto/programming-vsto-add-ins.md).
+- Obecné programovacích úloh, které můžete provést s použitím doplňků VSTO pro Outlook Další informace najdete v tématu [doplňků Program VSTO](../vsto/programming-vsto-add-ins.md).
 
--   Použití objektového modelu aplikace Outlook. Další informace najdete v tématu [řešení pro aplikaci Outlook](../vsto/outlook-solutions.md).
+- Použití objektového modelu aplikace Outlook. Další informace najdete v tématu [řešení pro aplikaci Outlook](../vsto/outlook-solutions.md).
 
--   Přizpůsobení uživatelského rozhraní Outlooku například přidat vlastní kartu na pás karet nebo vytvořením vlastní vlastního podokna úloh. Další informace najdete v tématu [přizpůsobení uživatelského rozhraní Office](../vsto/office-ui-customization.md).
+- Přizpůsobení uživatelského rozhraní Outlooku například přidat vlastní kartu na pás karet nebo vytvořením vlastní vlastního podokna úloh. Další informace najdete v tématu [přizpůsobení uživatelského rozhraní Office](../vsto/office-ui-customization.md).
 
--   Sestavování a ladění doplňků VSTO pro Outlook. Další informace najdete v tématu [řešení pro systém Office sestavení](../vsto/building-office-solutions.md).
+- Sestavování a ladění doplňků VSTO pro Outlook. Další informace najdete v tématu [řešení pro systém Office sestavení](../vsto/building-office-solutions.md).
 
--   Nasazení doplňků VSTO pro Outlook. Další informace najdete v tématu [nasazení řešení Office](../vsto/deploying-an-office-solution.md).
+- Nasazení doplňků VSTO pro Outlook. Další informace najdete v tématu [nasazení řešení Office](../vsto/deploying-an-office-solution.md).
 
 ## <a name="see-also"></a>Viz také:
 - [Programování doplňků VSTO](../vsto/programming-vsto-add-ins.md)

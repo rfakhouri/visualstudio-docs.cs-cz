@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.assetid: 694ffb31-132c-4d63-b930-8254e7c50c25
 ms.reviewer: Jamie.Young
 manager: jillfra
-ms.openlocfilehash: 20fbe41bef16527ee66d0e87de8456ed1c65b865
-ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
+ms.openlocfilehash: 64d2396215ab8c27607e5d1734cdc8cdfe675db6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57428827"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60118081"
 ---
 # <a name="color-value-reference-for-visual-studio"></a>Odkaz na hodnotu barvy pro sadu Visual Studio
 
@@ -26,13 +26,13 @@ Barva tokeny pro použití s existující uživatelské rozhraní, naleznete v t
 
 Při použití této referenční příručce, mějte na paměti:
 
--   **Vždy kopírovat popředí a pozadí bubliny společně.** Neklikejte popředí z jednoho prvku uživatelského rozhraní a na pozadí z jiného to, že chcete odstíny.
+- **Vždy kopírovat popředí a pozadí bubliny společně.** Neklikejte popředí z jednoho prvku uživatelského rozhraní a na pozadí z jiného to, že chcete odstíny.
 
--   **Jedná se o šestnáctkových kódů, nikoli barva tokeny.** Vlastní barva token názvy tyto prvky uživatelského rozhraní nelze použít, protože nelze určit, jak může v budoucnu změnit tokeny. Místo toho vytvářet tokeny v rámci vlastní kategorie a použít hue hodnoty uvedené v tabulkách. Barva tokeny pro existující uživatelského rozhraní lze nalézt v [sdílené barvy pro sadu Visual Studio](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md).
+- **Jedná se o šestnáctkových kódů, nikoli barva tokeny.** Vlastní barva token názvy tyto prvky uživatelského rozhraní nelze použít, protože nelze určit, jak může v budoucnu změnit tokeny. Místo toho vytvářet tokeny v rámci vlastní kategorie a použít hue hodnoty uvedené v tabulkách. Barva tokeny pro existující uživatelského rozhraní lze nalézt v [sdílené barvy pro sadu Visual Studio](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md).
 
 - **Vysoký kontrast vzorník jsou uvedeny pouze porovnání.** Použijte název barvy systému pro vysoký kontrast – uživatelské rozhraní a nepoužívejte kapátko nebo barvu výběr na tyto barvy. Vysoký kontrast vzorník v tomto tématu odpovídají motiv Vysoký kontrast 1 ve Windows. V jiných Vysokokontrastních motivech změní vzhled barvy.
 
--   **Nejlepších výsledků dosáhnete barva pár nastaví s uživatelským rozhraním podobně jako v příkladu.**
+- **Nejlepších výsledků dosáhnete barva pár nastaví s uživatelským rozhraním podobně jako v příkladu.**
 
 ## <a name="properties-window"></a>Vlastnosti – okno
 
@@ -96,7 +96,7 @@ Při použití této referenční příručce, mějte na paměti:
 | Popředí: při najetí myší | ![#FF1E1E1E vzorníku](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E vzorníku")<br />`#FF1E1E1E` | ![#FFF1F1F1 vzorníku](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 vzorníku")<br />`#FFF1F1F1` | ![#FF1E1E1E vzorníku](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E vzorníku")<br />`#FF1E1E1E` | ![Vzorník HighlightText](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText vzorníku")<br />`HighlightText` |
 | Pozadí | ![#FFEEEEF2 vzorníku](../../extensibility/ux-guidelines/media/EEEEF2.png "#FFEEEEF2 vzorníku")<br />`#FFEEEEF2` | ![#FF292929 vzorníku](../../extensibility/ux-guidelines/media/292929.png "#FF292929 vzorníku")<br />`#FF292929` | ![#FFEEEEF2 vzorníku](../../extensibility/ux-guidelines/media/EEEEF2.png "#FFEEEEF2 vzorníku")<br />`#FFEEEEF2` | ![Ovládací prvek vzorníku](../../extensibility/ux-guidelines/media/HCControl.png "vzorníku ovládacího prvku")<br />`Control` |
 | Na pozadí: při najetí myší | ![#FFC9DEF5 vzorníku](../../extensibility/ux-guidelines/media/C9DEF5.png "#FFC9DEF5 vzorníku")<br />`#FFC9DEF5` | ![#FF3E3E40 vzorníku](../../extensibility/ux-guidelines/media/3E3E40.png "#FF3E3E40 vzorníku")<br />`#FF3E3E40` | ![#FFFFFCF4 vzorníku](../../extensibility/ux-guidelines/media/FFFCF4.png "#FFFFFCF4 vzorníku")<br />`#FFFFFCF4` | ![Zvýrazněte vzorníku](../../extensibility/ux-guidelines/media/HCHighlight.png "zvýraznění vzorníku")<br />`Highlight` |
-| Ohraničení | Žádná | Žádný | Žádný | Žádná |
+| Ohraničení | Žádné | Žádný | Žádný | Žádné |
 | Ohraničení: při najetí myší | ![#FFC9DEF5 vzorníku](../../extensibility/ux-guidelines/media/C9DEF5.png "#FFC9DEF5 vzorníku")<br />`#FFC9DEF5` | ![#FF3E3E40 vzorníku](../../extensibility/ux-guidelines/media/3E3E40.png "#FF3E3E40 vzorníku")<br />`#FF3E3E40` | ![#FFE5C365 vzorníku](../../extensibility/ux-guidelines/media/E5C365.png "## FFE5C365 vzorníku")<br />`#FFE5C365` | ![Vzorník WindowFrame](../../extensibility/ux-guidelines/media/HCWindowFrame.png "WindowFrame vzorníku")<br />`WindowFrame` |
 
 ### <a name="category-group"></a>Skupiny kategorií

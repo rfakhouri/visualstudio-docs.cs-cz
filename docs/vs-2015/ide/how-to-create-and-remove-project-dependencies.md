@@ -18,12 +18,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e4ce804664f78bd4ec329f7e4e66008053291c77
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 26857824cac478936837a125068bd610dfc4c837
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54799769"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117626"
 ---
 # <a name="how-to-create-and-remove-project-dependencies"></a>Postupy: Vytváření a odebírání závislostí projektu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,18 +49,18 @@ Při sestavování řešení, které obsahuje více projektů, může být nezby
   
 ### <a name="to-remove-dependencies-from-projects"></a>Chcete-li odebrat závislosti z projektů  
   
-1.  V Průzkumníku řešení vyberte projekt.  
+1. V Průzkumníku řešení vyberte projekt.  
   
-2.  Na **projektu** nabídce zvolte **závislosti projektu**.  
+2. Na **projektu** nabídce zvolte **závislosti projektu**.  
   
      **Závislosti projektu** zobrazí se dialogové okno.  
   
     > [!NOTE]
     >  **Závislosti projektu** možnost dostupná jenom v řešení s více než jeden projekt.  
   
-3.  Na **závislosti** kartu, vyberte projekt z **projektu** rozevírací nabídky.  
+3. Na **závislosti** kartu, vyberte projekt z **projektu** rozevírací nabídky.  
   
-4.  V **závisí na** pole, zrušte zaškrtnutí políček vedle jiné projekty, které už nejsou závislosti tohoto projektu.  
+4. V **závisí na** pole, zrušte zaškrtnutí políček vedle jiné projekty, které už nejsou závislosti tohoto projektu.  
   
 ## <a name="see-also"></a>Viz také  
  [Sestavování a čištění projektů a řešení v sadě Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)   

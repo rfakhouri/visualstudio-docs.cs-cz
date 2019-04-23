@@ -14,12 +14,12 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 520113d97bdf41d750cad340c0ab8868eb85f603
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 73b4350a2e7f277a11f4d6650d8089df0f87fe4d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54805219"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116391"
 ---
 # <a name="deploy-windows-store-apps-from-visual-studio"></a>Nasazení aplikací pro Windows Store ze sady Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ Platí pouze pro Windows] (.. /Image/windows_only_content.png "windows_only_cont
 
 - Nasazení aplikace, která bude laděn, kdy byla spuštěna jiná aplikace nebo metody.
 
-##  <a name="BKMK_In_this_topic"></a> V tomto tématu
+## <a name="BKMK_In_this_topic"></a> V tomto tématu
  V tomto tématu se dozvíte:
 
  [Jak nasadit aplikaci Windows Store](#BKMK_How_to_deploy_a_Windows_Store_app)
@@ -49,25 +49,25 @@ Platí pouze pro Windows] (.. /Image/windows_only_content.png "windows_only_cont
 
  [Možnosti nasazení](#BKMK_Deployment_options)
 
-##  <a name="BKMK_How_to_deploy_a_Windows_Store_app"></a> Jak nasadit aplikaci Windows Store
+## <a name="BKMK_How_to_deploy_a_Windows_Store_app"></a> Jak nasadit aplikaci Windows Store
  Ruční nasazení aplikace je jednoduchý proces:
 
-1.  Pokud provádíte nasazení na vzdáleném zařízení, zadejte název nebo IP adresa zařízení, na stránce vlastností projektu z projektu po spuštění aplikace. (Tento postup jsou uvedeny níže v tomto tématu.).
+1. Pokud provádíte nasazení na vzdáleném zařízení, zadejte název nebo IP adresa zařízení, na stránce vlastností projektu z projektu po spuštění aplikace. (Tento postup jsou uvedeny níže v tomto tématu.).
 
-2.  Na panelu nástrojů ladicího programu sady Visual Studio, zvolte cíl nasazení z rozevíracího seznamu vedle položky **spustit ladění** tlačítko.
+2. Na panelu nástrojů ladicího programu sady Visual Studio, zvolte cíl nasazení z rozevíracího seznamu vedle položky **spustit ladění** tlačítko.
 
      ![Spustit na místním počítači](../debugger/media/vsrun-f5-local.png "VSRUN_F5_Local")
 
-3.  Na **sestavení** nabídce zvolte **nasazení**
+3. Na **sestavení** nabídce zvolte **nasazení**
 
-##  <a name="BKMK_How_to_specify_a_remote_device"></a> Určení vzdáleného zařízení
+## <a name="BKMK_How_to_specify_a_remote_device"></a> Určení vzdáleného zařízení
  **Požadované součásti**
 
  Chcete-li nasadit aplikaci do vzdáleného zařízení:
 
--   Licence vývojáře musí být nainstalována na vzdáleném zařízení.
+- Licence vývojáře musí být nainstalována na vzdáleném zařízení.
 
--   Visual Studio Remote Tools musí být nainstalovaný na vzdáleném zařízení a sledování vzdáleného ladění musí být spuštěna.
+- Visual Studio Remote Tools musí být nainstalovaný na vzdáleném zařízení a sledování vzdáleného ladění musí být spuštěna.
 
      Nasazení používá síťový kanál. vzdálený ladicí program ke vzdálenému zařízení odesílat soubory aplikace.
 
@@ -101,7 +101,7 @@ Platí pouze pro Windows] (.. /Image/windows_only_content.png "windows_only_cont
 
 8. Zadejte síťový název vzdáleného zařízení **vzdálený počítač** pole nebo klikněte na tlačítko **najít** pro výběr zařízení z **vyberte připojení vzdáleného ladicího programu** dialogové okno.
 
-##  <a name="BKMK_Deployment_options"></a> Možnosti nasazení
+## <a name="BKMK_Deployment_options"></a> Možnosti nasazení
  Můžete nastavit následující možnosti nasazení na stránky vlastnosti ladění projektu při spuštění.
 
  **Povolit zpětnou smyčku sítě** z bezpečnostních důvodů [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] není povoleno volat síťových zařízení, je nainstalovaná na aplikaci, která je nainstalovaná standardním způsobem. Ve výchozím nastavení nasazení sady Visual Studio vytvoří výjimku z tohoto pravidla pro aplikace nasazené. Tato výjimka umožňuje testovat postupy komunikace na jednom počítači. Před odesláním aplikace do [!INCLUDE[win8_appstore_long](../includes/win8-appstore-long-md.md)], měli byste otestovat vaši aplikaci bez výjimky.

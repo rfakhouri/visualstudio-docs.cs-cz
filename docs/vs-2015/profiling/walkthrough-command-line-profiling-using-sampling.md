@@ -1,5 +1,5 @@
 ---
-title: 'Průvodce: Profilace z příkazového řádku pomocí vzorkování | Dokumentace Microsoftu'
+title: 'Návod: Profilace z příkazového řádku pomocí vzorkování | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -13,14 +13,14 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1b2261641f1883830e60785dda1460f0f4202f21
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6e9c8f14fbec74b353550a1420a5ff3e119d6dce
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54783531"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117431"
 ---
-# <a name="walkthrough-command-line-profiling-using-sampling"></a>Průvodce: Příkazový řádek profilování pomocí vzorkování
+# <a name="walkthrough-command-line-profiling-using-sampling"></a>Návod: Příkazový řádek profilování pomocí vzorkování
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Tento návod ukazuje, jak chcete-li Profilovat aplikaci pomocí nástroje příkazového řádku a vzorkování identifikovat problémy s výkonem.  
@@ -29,21 +29,21 @@ Tento návod ukazuje, jak chcete-li Profilovat aplikaci pomocí nástroje přík
   
  V tomto podrobném návodu postupujte podle těchto kroků:  
   
--   Profilovat aplikaci pomocí nástrojů příkazového řádku a vzorkování.  
+- Profilovat aplikaci pomocí nástrojů příkazového řádku a vzorkování.  
   
--   Analýza vzorky profilování výsledků k vyhledání a opravě problémů s výkonem.  
+- Analýza vzorky profilování výsledků k vyhledání a opravě problémů s výkonem.  
   
 ## <a name="prerequisites"></a>Požadavky  
   
--   [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], nebo [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], nebo [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
--   Zprostředkující znalost [!INCLUDE[csharp_current_short](../includes/csharp-current-short-md.md)]  
+- Zprostředkující znalost [!INCLUDE[csharp_current_short](../includes/csharp-current-short-md.md)]  
   
--   Zprostředkující znalost práce pomocí nástrojů příkazového řádku  
+- Zprostředkující znalost práce pomocí nástrojů příkazového řádku  
   
--   Kopie [peopletrax – ukázka](../profiling/peopletrax-sample-profiling-tools.md)  
+- Kopie [peopletrax – ukázka](../profiling/peopletrax-sample-profiling-tools.md)  
   
--   Pro práci s profilace na základě informací poskytnutých, je nejlepší mít ladění k dispozici informace o symbolech.  
+- Pro práci s profilace na základě informací poskytnutých, je nejlepší mít ladění k dispozici informace o symbolech.  
   
 ## <a name="command-line-profiling-using-the-sampling-method"></a>Příkazového řádku pro profilaci pomocí metody vzorkování  
  Vzorkování je metodě profilování pomocí kterého konkrétní proces pravidelně dotazovaní určit aktivní funkce. Výsledná data poskytuje přehled o četnosti funkce byla vrcholu zásobníku volání při procesu vzorkováno.  
@@ -53,19 +53,19 @@ Tento návod ukazuje, jak chcete-li Profilovat aplikaci pomocí nástroje přík
   
 #### <a name="to-profile-the-peopletrax-application-by-using-the-sampling-method"></a>Chcete-li Profilovat aplikaci PeopleTrax pomocí metody vzorkování  
   
-1.  Nainstalovat ukázkovou aplikaci peopletrax – a vytvářet verze aplikace.  
+1. Nainstalovat ukázkovou aplikaci peopletrax – a vytvářet verze aplikace.  
   
-2.  Otevřete okno příkazového řádku a přidejte adresář nástrojů profilování do místní proměnné prostředí Path.  
+2. Otevřete okno příkazového řádku a přidejte adresář nástrojů profilování do místní proměnné prostředí Path.  
   
-3.  Změňte pracovní adresář na adresář, který obsahují PeopleTrax binární soubory.  
+3. Změňte pracovní adresář na adresář, který obsahují PeopleTrax binární soubory.  
   
-4.  Zadejte následující příkaz nastavit příslušné proměnné prostředí:  
+4. Zadejte následující příkaz nastavit příslušné proměnné prostředí:  
   
     ```  
     VSPerfCLREnv /sampleon  
     ```  
   
-5.  Spusťte profilování spuštěním VSPerfCmd.exe, což je nástroj příkazového řádku, který řídí profileru. Následující příkaz spustí v režimu vzorkování aplikace a profiler:  
+5. Spusťte profilování spuštěním VSPerfCmd.exe, což je nástroj příkazového řádku, který řídí profileru. Následující příkaz spustí v režimu vzorkování aplikace a profiler:  
   
     ```  
     VsPerfCmd /start:sample /output:PeopleTraxReport.vsp /launch:PeopleTrax.exe  
@@ -73,13 +73,13 @@ Tento návod ukazuje, jak chcete-li Profilovat aplikaci pomocí nástroje přík
   
      Profiler proces spustí a připojí se k procesu PeopleTrax.exe. Spustí se proces profiler zapisovat shromážděná data profilování do souboru sestavy.  
   
-6.  Klikněte na tlačítko **získá osoby**.  
+6. Klikněte na tlačítko **získá osoby**.  
   
-7.  Klikněte na tlačítko **ExportData**.  
+7. Klikněte na tlačítko **ExportData**.  
   
      Poznámkový blok se otevře a zobrazí nový soubor, který obsahuje data exportovaná z **PeopleTrax**.  
   
-8.  Zavřete poznámkový blok a pak **PeopleTrax** aplikace.  
+8. Zavřete poznámkový blok a pak **PeopleTrax** aplikace.  
   
 9. Vypněte profiler. Zadejte následující příkaz:  
   
@@ -95,11 +95,11 @@ Tento návod ukazuje, jak chcete-li Profilovat aplikaci pomocí nástroje přík
   
 11. Data profilování jsou uloženy v souboru the.vsp analyzovat výsledky pomocí jedné z následujících metod:  
   
-    -   Otevřete soubor the.vsp v integrovaném vývojovém prostředí sady Visual Studio.  
+    - Otevřete soubor the.vsp v integrovaném vývojovém prostředí sady Visual Studio.  
   
          – nebo –  
   
-    -   Vygenerujte soubor hodnot oddělených čárkami (CSV) s použitím nástroje příkazového řádku VSPerfReport.exe. Ke generování sestav pro použití mimo [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] integrovaného vývojového prostředí pomocí následujícího příkazu:  
+    - Vygenerujte soubor hodnot oddělených čárkami (CSV) s použitím nástroje příkazového řádku VSPerfReport.exe. Ke generování sestav pro použití mimo [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] integrovaného vývojového prostředí pomocí následujícího příkazu:  
   
         ```  
         VSPerfReport <dir> PeopleTraxReport.vsp /output:<dir> /summary:all  

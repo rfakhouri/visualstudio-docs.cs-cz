@@ -12,12 +12,12 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d39f9da4d421591f6a45b4e3dcdccf73d3e1798c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 67429131e87aa414957bf01847e03af44468d0ab
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54805458"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116809"
 ---
 # <a name="shader-designer"></a>Návrhář shaderů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,13 +41,13 @@ Tento dokument popisuje, jak pracovat [!INCLUDE[vsprvs](../includes/vsprvs-md.md
   
 #### <a name="to-add-a-dgsl-shader-to-your-project"></a>Chcete-li přidat do projektu DGSL shader  
   
-1.  V **Průzkumníka řešení**, otevřete místní nabídku pro projekt, který chcete přidat shader tak a klikněte na tlačítko **přidat**, **nová položka**.  
+1. V **Průzkumníka řešení**, otevřete místní nabídku pro projekt, který chcete přidat shader tak a klikněte na tlačítko **přidat**, **nová položka**.  
   
-2.  V **přidat novou položku** dialogovém okně **nainstalováno**vyberte **grafiky**a pak vyberte **vizuální graf shaderu (.dgsl)**.  
+2. V **přidat novou položku** dialogovém okně **nainstalováno**vyberte **grafiky**a pak vyberte **vizuální graf shaderu (.dgsl)**.  
   
-3.  Zadejte **název** souboru shaderu a **umístění** místo se má vytvořit.  
+3. Zadejte **název** souboru shaderu a **umístění** místo se má vytvořit.  
   
-4.  Zvolte **přidat** tlačítko.  
+4. Zvolte **přidat** tlačítko.  
   
 ### <a name="the-default-shader"></a>Výchozí shader  
  Pokaždé, když vytvořte DGSL shader, začne jako minimální shader, který má právě **barva bodu** uzel, který je připojený k **konečnou barvu** uzlu. I když tento shader je úplné a funkční, mnoho neprovádí. Proto je prvním krokem při vytváření shaderu pracovní často odstranit **barva bodu** uzlu nebo odpojte ho od **konečnou barvu** uzel, aby uvolnil prostor pro další uzly.  
@@ -91,19 +91,19 @@ Tento dokument popisuje, jak pracovat [!INCLUDE[vsprvs](../includes/vsprvs-md.md
   
 ##### <a name="to-perform-basic-operations-in-select-mode"></a>K provádění základních operací v režim výběru  
   
--   Tady je způsob:  
+- Tady je způsob:  
   
-    -   Pokud chcete přidat uzel do grafu, vyberte ji v **nástrojů** a přesuňte jej na návrhovou plochu.  
+    - Pokud chcete přidat uzel do grafu, vyberte ji v **nástrojů** a přesuňte jej na návrhovou plochu.  
   
-    -   Odebrání uzlu z grafu, vyberte ji a stiskněte klávesu Delete.  
+    - Odebrání uzlu z grafu, vyberte ji a stiskněte klávesu Delete.  
   
-    -   Chcete-li změnit umístění uzlu, vyberte ho a přesuňte ho do nového umístění.  
+    - Chcete-li změnit umístění uzlu, vyberte ho a přesuňte ho do nového umístění.  
   
-    -   Pro připojení dvou uzlů, přesuňte výstupní terminál jednoho z uzlů do vstupní terminálu z jiného uzlu. Můžete připojit pouze terminály, které mají nekompatibilní typy. Čáry mezi terminály zobrazuje připojení.  
+    - Pro připojení dvou uzlů, přesuňte výstupní terminál jednoho z uzlů do vstupní terminálu z jiného uzlu. Můžete připojit pouze terminály, které mají nekompatibilní typy. Čáry mezi terminály zobrazuje připojení.  
   
-    -   Chcete-li odebrat připojení, na místní nabídku pro jednu z připojených terminály, zvolte **přerušit odkazy**.  
+    - Chcete-li odebrat připojení, na místní nabídku pro jednu z připojených terminály, zvolte **přerušit odkazy**.  
   
-    -   Chcete-li konfigurovat vlastnosti uzlu, vyberte uzel a pak na **vlastnosti** okno, zadejte nové hodnoty pro vlastnosti.  
+    - Chcete-li konfigurovat vlastnosti uzlu, vyberte uzel a pak na **vlastnosti** okno, zadejte nové hodnoty pro vlastnosti.  
   
 ### <a name="previewing-shaders"></a>Zobrazení náhledu shaderů  
  Na vám pomohou pochopit, jak bude vypadat shaderu ve vaší aplikaci, můžete nakonfigurovat, jak je zobrazen váš vliv. K odhadu vaší aplikace, zvolte jeden z několika obrazců vykreslení textury a další parametry materiálu, povolit animace založené na čase efekty a konfigurovat zkontrolujte ve verzi preview z různých úhlů.  
@@ -113,9 +113,9 @@ Tento dokument popisuje, jak pracovat [!INCLUDE[vsprvs](../includes/vsprvs-md.md
   
 ###### <a name="to-choose-a-preview-shape"></a>Zvolit tvar náhled  
   
--   Na **režimy návrháře shaderu** nástrojů, zvolte na tvar, který chcete.  
+- Na **režimy návrháře shaderu** nástrojů, zvolte na tvar, který chcete.  
   
-####  <a name="WWS_MaterialParameters"></a> Textury a materiálu parametry  
+#### <a name="WWS_MaterialParameters"></a> Textury a materiálu parametry  
  Mnoho shadery využívají textury a vlastností materiálu vytvořit jedinečný vzhled pro každý druh objektu ve vaší aplikaci. Zobrazíte vašeho shaderu bude vypadat ve vaší aplikaci můžete nastavit textury a vlastností materiálu, které slouží k vykreslení náhledu tak, aby odpovídaly textury a parametry, které můžete použít ve vaší aplikaci.  
   
 ###### <a name="to-bind-a-different-texture-to-a-texture-register-or-to-modify-other-material-parameters"></a>Svázat různé textury registr textur, nebo upravte ostatní parametry materiálu  
@@ -140,14 +140,14 @@ Tento dokument popisuje, jak pracovat [!INCLUDE[vsprvs](../includes/vsprvs-md.md
   
 ###### <a name="to-enable-real-time-rendering"></a>Chcete povolit vykreslování v reálném čase  
   
--   Na panelu nástrojů návrháře shaderu zvolte **vykreslování v reálném čase**.  
+- Na panelu nástrojů návrháře shaderu zvolte **vykreslování v reálném čase**.  
   
 #### <a name="examining-the-effect"></a>Zkoumání efekt  
  Mnoho shadery jsou ovlivněny proměnných, například zobrazení úhel nebo směrové světlo. Prozkoumat, jak reagovat účinek se tyto proměnné, můžete volně Otočení tvaru ve verzi preview a sledujte chování shaderu.  
   
 ###### <a name="to-rotate-the-shape"></a>Který tvar otočí  
   
--   Stiskněte a podržte klávesu Alt a potom vyberte libovolného bodu na povrchu návrhu a přesuňte ho.  
+- Stiskněte a podržte klávesu Alt a potom vyberte libovolného bodu na povrchu návrhu a přesuňte ho.  
   
 ### <a name="exporting-shaders"></a>Export shaderů  
  Před použitím shaderu ve vaší aplikaci, musíte ho exportovat ve formátu, který se rozumí rozhraní DirectX.  

@@ -19,12 +19,12 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dffe803bc0b082f4f14c9010e165bd6b169674fe
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 3c9902080ae501c1d77a59f152d7d272462d2264
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59657451"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60115416"
 ---
 # <a name="set-the-control-to-be-created-when-dragging-from-the-data-sources-window"></a>Nastavení ovládacího prvku, který má být vytvořen při přetažení z okna zdrojů dat
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,13 +57,13 @@ Můžete vytvořit ovládací prvky vázané na data přetažením položek z **
   
 #### <a name="to-set-the-controls-to-be-created-for-columns-or-properties"></a>Chcete-li nastavit ovládací prvky mají být vytvořeny pro sloupce nebo vlastnosti  
   
-1.  Ujistěte se, že je otevřený Návrhář WPF nebo Návrhář formulářů Windows.  
+1. Ujistěte se, že je otevřený Návrhář WPF nebo Návrhář formulářů Windows.  
   
-2.  V **zdroje dat** okna, rozbalte položku požadovanou tabulku nebo objektu zobrazíte její sloupce nebo vlastnosti.  
+2. V **zdroje dat** okna, rozbalte položku požadovanou tabulku nebo objektu zobrazíte její sloupce nebo vlastnosti.  
   
-3.  Vyberte každý sloupec nebo vlastnost, pro kterou chcete nastavit ovládací prvek, který se má vytvořit.  
+3. Vyberte každý sloupec nebo vlastnost, pro kterou chcete nastavit ovládací prvek, který se má vytvořit.  
   
-4.  Klikněte na rozevírací nabídku pro sloupec nebo vlastnost a potom vyberte ovládací prvek, který chcete vytvořit, když je položku přetáhli do návrháře.  
+4. Klikněte na rozevírací nabídku pro sloupec nebo vlastnost a potom vyberte ovládací prvek, který chcete vytvořit, když je položku přetáhli do návrháře.  
   
      Seznam dostupných ovládacích prvků, závisí na návrháře, který máte otevřený, kterou verzi rozhraní .NET Framework váš projekt cílí, a který vlastní ovládací prvky, které podporují vytváření datových vazeb, které jste přidali do **nástrojů**. Pokud je ovládací prvek, který chcete vytvořit seznam dostupných ovládacích prvků, můžete přidat ovládací prvek do seznamu. Další informace najdete v tématu [přidání vlastních ovládacích prvků do okna zdroje dat](../data-tools/add-custom-controls-to-the-data-sources-window.md).  
   

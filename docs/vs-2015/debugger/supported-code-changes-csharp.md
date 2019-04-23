@@ -16,12 +16,12 @@ caps.latest.revision: 30
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5c464c63f7e5059e98cb12e4dfed06c60330160b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: cc1c6183eece2799d99907cd5f5ec9489a268542
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54798148"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117652"
 ---
 # <a name="supported-code-changes-c"></a>Podporované změny kódu (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,21 +30,21 @@ Upravit a pokračovat zpracovává většinu typů změn kódu uvnitř těla met
   
  Následující změny nejde použít u kódu jazyka C# během relace ladění:  
   
--   Změny aktuálního příkazu nebo jiné aktivní příkaz.  
+- Změny aktuálního příkazu nebo jiné aktivní příkaz.  
   
      Aktivní příkazy zahrnout všechny příkazy, funkce v zásobníku volání, které byly volány zobrazíte aktuální příkaz.  
   
      Aktuální příkaz je označena žlutým pozadím v okně zdroje. Jiné aktivní příkazy jsou označené nástrojem pozadí označeno šedou barvou a jsou jen pro čtení. Tyto výchozí barvy lze změnit v **možnosti** dialogové okno.  
   
--   Změna podpisu typu.  
+- Změna podpisu typu.  
   
--   Přidání anonymní metody, který explicitně zaznamenává proměnnou, která se nezachytila dřív.  
+- Přidání anonymní metody, který explicitně zaznamenává proměnnou, která se nezachytila dřív.  
   
--   Přidání, odebrání nebo změna atributů.  
+- Přidání, odebrání nebo změna atributů.  
   
--   Přidání, odebrání nebo změna `using` direktivy.  
+- Přidání, odebrání nebo změna `using` direktivy.  
   
--   Přidávání `foreach`, `using`, nebo `lock` kolem aktivního příkazu.  
+- Přidávání `foreach`, `using`, nebo `lock` kolem aktivního příkazu.  
   
 ## <a name="unsafe-code"></a>Nezabezpečený kód  
  Změny nezabezpečený kód mají stejná omezení jako změny bezpečný kód, jeden další omezení: Upravit a pokračovat nepodporuje změny nebezpečný kód, který ukončí v rámci metody, která obsahuje `stackalloc` operátor.  
@@ -55,35 +55,35 @@ Upravit a pokračovat zpracovává většinu typů změn kódu uvnitř těla met
 ## <a name="unsupported-scenarios"></a>Nepodporované scénáře  
  Upravit a pokračovat není k dispozici v následujících scénářích ladění:  
   
--   Ladění LINQ kódu za určitých okolností. Další informace najdete v tématu [ladění LINQ](../debugger/debugging-linq.md).  
+- Ladění LINQ kódu za určitých okolností. Další informace najdete v tématu [ladění LINQ](../debugger/debugging-linq.md).  
   
-    -   Zachycení proměnné, která se nezachytila dřív.  
+    - Zachycení proměnné, která se nezachytila dřív.  
   
-    -   Změna typu výrazu dotazu (například vyberte a = > vyberte nový {A =};)  
+    - Změna typu výrazu dotazu (například vyberte a = > vyberte nový {A =};)  
   
-    -   Odebrání `where` , který obsahuje aktivní příkaz.  
+    - Odebrání `where` , který obsahuje aktivní příkaz.  
   
-    -   Odebrání `let` , který obsahuje aktivní příkaz.  
+    - Odebrání `let` , který obsahuje aktivní příkaz.  
   
-    -   Odebrání `join` , který obsahuje aktivní příkaz.  
+    - Odebrání `join` , který obsahuje aktivní příkaz.  
   
-    -   Odebrání `orderby` , který obsahuje aktivní příkaz.  
+    - Odebrání `orderby` , který obsahuje aktivní příkaz.  
   
--   Ladění ve smíšeném režimu (nativní a spravovaná).  
+- Ladění ve smíšeném režimu (nativní a spravovaná).  
   
--   Ladění SQL.  
+- Ladění SQL.  
   
--   Ladění zotavení po havárii. Watson s výpisem paměti.  
+- Ladění zotavení po havárii. Watson s výpisem paměti.  
   
--   Úprava kódu po neošetřené výjimky, když "**vrátit zásobník volání v případě neošetřených výjimek**" není vybraná možnost.  
+- Úprava kódu po neošetřené výjimky, když "**vrátit zásobník volání v případě neošetřených výjimek**" není vybraná možnost.  
   
--   Ladění aplikace vložený modul runtime.  
+- Ladění aplikace vložený modul runtime.  
   
--   Ladění aplikace, která má **připojit k** místo spouštění aplikace výběrem **Start** z **ladění** nabídky.  
+- Ladění aplikace, která má **připojit k** místo spouštění aplikace výběrem **Start** z **ladění** nabídky.  
   
--   Ladění optimalizovaného kódu.  
+- Ladění optimalizovaného kódu.  
   
--   Ladění starou verzi kódu po nové verze se nepovedlo sestavit kvůli chybám sestavení.  
+- Ladění starou verzi kódu po nové verze se nepovedlo sestavit kvůli chybám sestavení.  
   
 ## <a name="see-also"></a>Viz také  
  [Upravit a pokračovat (Visual C#)](../debugger/edit-and-continue-visual-csharp.md)   

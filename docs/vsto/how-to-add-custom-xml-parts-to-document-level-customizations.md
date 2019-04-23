@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 22c4a3346de4dac78fd4fcb7c566827cd6ed5a79
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 23d423314653a6b5ae1bea899b6931d188667a30
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602738"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117106"
 ---
 # <a name="how-to-add-custom-xml-parts-to-document-level-customizations"></a>Postupy: Přidání vlastních částí XML do přizpůsobení na úrovni dokumentu
   V dokumentu aplikace Microsoft Office Word a sešit aplikace Microsoft Office Excel můžete ukládat XML data tak, že vytvoříte vlastní část XML do přizpůsobení na úrovni dokumentu. Další informace najdete v tématu [přehled částí XML vlastní](../vsto/custom-xml-parts-overview.md).
@@ -34,25 +34,25 @@ ms.locfileid: "56602738"
 
 ### <a name="to-add-a-custom-xml-part-to-an-excel-workbook"></a>Chcete-li přidat vlastní část XML k Excelovému sešitu
 
-1.  Přidat nový <xref:Microsoft.Office.Core.CustomXMLPart> objektu <xref:Microsoft.Office.Core.CustomXMLParts> kolekce v sešitu. <xref:Microsoft.Office.Core.CustomXMLPart> Obsahuje řetězec XML, který chcete uložit v sešitu.
+1. Přidat nový <xref:Microsoft.Office.Core.CustomXMLPart> objektu <xref:Microsoft.Office.Core.CustomXMLParts> kolekce v sešitu. <xref:Microsoft.Office.Core.CustomXMLPart> Obsahuje řetězec XML, který chcete uložit v sešitu.
 
      [!code-csharp[Trin_AddCustomXmlPartExcelDocLevel#1](../vsto/codesnippet/CSharp/Trin_AddCustomXmlPartExcelDocLevel/ThisWorkbook.cs#1)]
      [!code-vb[Trin_AddCustomXmlPartExcelDocLevel#1](../vsto/codesnippet/VisualBasic/Trin_AddCustomXmlPartExcelDocLevel/ThisWorkbook.vb#1)]
 
-2.  Přidat `AddCustomXmlPartToWorkbook` metodu `ThisWorkbook` třídy v projektu úrovni dokumentu pro Excel.
+2. Přidat `AddCustomXmlPartToWorkbook` metodu `ThisWorkbook` třídy v projektu úrovni dokumentu pro Excel.
 
-3.  Volejte metodu od jiného kódu ve vašem projektu. Například pokud chcete vytvořit vlastní část XML, když uživatel otevře sešit, volejte metodu z `ThisWorkbook_Startup` obslužné rutiny události.
+3. Volejte metodu od jiného kódu ve vašem projektu. Například pokud chcete vytvořit vlastní část XML, když uživatel otevře sešit, volejte metodu z `ThisWorkbook_Startup` obslužné rutiny události.
 
 ### <a name="to-add-a-custom-xml-part-to-a-word-document"></a>Chcete-li přidat vlastní část XML do Wordového dokumentu
 
-1.  Přidat nový <xref:Microsoft.Office.Core.CustomXMLPart> objektu <xref:Microsoft.Office.Core.CustomXMLParts> kolekce v dokumentu. <xref:Microsoft.Office.Core.CustomXMLPart> Obsahuje řetězec XML, který chcete uložit v dokumentu.
+1. Přidat nový <xref:Microsoft.Office.Core.CustomXMLPart> objektu <xref:Microsoft.Office.Core.CustomXMLParts> kolekce v dokumentu. <xref:Microsoft.Office.Core.CustomXMLPart> Obsahuje řetězec XML, který chcete uložit v dokumentu.
 
      [!code-vb[Trin_AddCustomXmlPartWordDocLevel#1](../vsto/codesnippet/VisualBasic/Trin_AddCustomXmlPartWordDocLevel/ThisDocument.vb#1)]
      [!code-csharp[Trin_AddCustomXmlPartWordDocLevel#1](../vsto/codesnippet/CSharp/Trin_AddCustomXmlPartWordDocLevel/ThisDocument.cs#1)]
 
-2.  Přidat `AddCustomXmlPartToDocument` metodu `ThisDocument` třídy v projektu úrovni dokumentu pro aplikaci Word.
+2. Přidat `AddCustomXmlPartToDocument` metodu `ThisDocument` třídy v projektu úrovni dokumentu pro aplikaci Word.
 
-3.  Volejte metodu od jiného kódu ve vašem projektu. Například pokud chcete vytvořit vlastní část XML, když uživatel otevře dokument, volejte metodu z `ThisDocument_Startup` obslužné rutiny události.
+3. Volejte metodu od jiného kódu ve vašem projektu. Například pokud chcete vytvořit vlastní část XML, když uživatel otevře dokument, volejte metodu z `ThisDocument_Startup` obslužné rutiny události.
 
 ## <a name="robust-programming"></a>Robustní programování
  Pro zjednodušení tento příklad používá řetězec jazyka XML, který je definován jako místní proměnná v metodě. Obvykle byste měli získat XML z externího zdroje, jako je například soubor nebo databáze.

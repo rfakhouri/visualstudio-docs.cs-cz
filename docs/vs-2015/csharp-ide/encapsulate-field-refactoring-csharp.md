@@ -16,12 +16,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ee56c4588bbbd3ec5cfca03bbd18c6dec1732fbf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a2c8d54b1625a4097d6b5a0acf6555d74fe83001
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54766890"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116599"
 ---
 # <a name="encapsulate-field-refactoring-c"></a>Refaktoring pro zapouzdření polí (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "54766890"
   
 ### <a name="to-create-a-property-from-a-field"></a>Pro vytvoření vlastnosti z pole  
   
-1.  Vytvořte konzolovou aplikaci s názvem `EncapsulateFieldExample`a potom nahraďte `Program` pomocí následujícího ukázkového kódu.  
+1. Vytvořte konzolovou aplikaci s názvem `EncapsulateFieldExample`a potom nahraďte `Program` pomocí následujícího ukázkového kódu.  
   
     ```csharp  
     class Square  
@@ -58,13 +58,13 @@ ms.locfileid: "54766890"
     }  
     ```  
   
-2.  V [Editor kódu](../ide/writing-code-in-the-code-and-text-editor.md), umístěte kurzor na slovo v deklaraci na název pole, které chcete k zapouzdření. V následujícím příkladu, umístěte kurzor na slovo `width`:  
+2. V [Editor kódu](../ide/writing-code-in-the-code-and-text-editor.md), umístěte kurzor na slovo v deklaraci na název pole, které chcete k zapouzdření. V následujícím příkladu, umístěte kurzor na slovo `width`:  
   
     ```csharp  
     public int width, height;  
     ```  
   
-3.  Na **Refaktorovat** nabídky, klikněte na tlačítko **zapouzdřit pole**.  
+3. Na **Refaktorovat** nabídky, klikněte na tlačítko **zapouzdřit pole**.  
   
      **Zapouzdřit pole** zobrazí se dialogové okno.  
   
@@ -72,11 +72,11 @@ ms.locfileid: "54766890"
   
      Můžete také kliknout pravým tlačítkem kurzor, přejděte na **Refaktorovat**a potom klikněte na tlačítko **zapouzdřit pole** zobrazíte **zapouzdřit pole** dialogové okno.  
   
-4.  Zadejte nastavení.  
+4. Zadejte nastavení.  
   
-5.  Stisknutím klávesy ENTER nebo kliknutím **OK** tlačítko.  
+5. Stisknutím klávesy ENTER nebo kliknutím **OK** tlačítko.  
   
-6.  Pokud jste vybrali **náhled změn odkazu** možnost, pak bude **náhled změn odkazu** otevře se okno. Klikněte na tlačítko **použít** tlačítko.  
+6. Pokud jste vybrali **náhled změn odkazu** možnost, pak bude **náhled změn odkazu** otevře se okno. Klikněte na tlačítko **použít** tlačítko.  
   
      Následující `get` a `set` ve zdrojovém souboru se zobrazí kód přístupového kódu:  
   

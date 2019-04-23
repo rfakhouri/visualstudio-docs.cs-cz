@@ -9,12 +9,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b1e202f84fb3b4e0e865e2cebb96b6728289ff6b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d6c3410468a53b978165dfcae228b71985fcbe51
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54774111"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117756"
 ---
 # <a name="how-to-create-a-basic-color-shader"></a>Postupy: Vytvoření shaderu základní barvy
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,13 +23,13 @@ Tento dokument ukazuje způsob použití návrháře shaderu a orientovaného gr
   
  Tento dokument vysvětluje tyto činnosti:  
   
--   Odebrání uzlů z grafu  
+- Odebrání uzlů z grafu  
   
--   Přidání uzlů do grafu  
+- Přidání uzlů do grafu  
   
--   Nastavení vlastnosti uzlu  
+- Nastavení vlastnosti uzlu  
   
--   Spojující uzly  
+- Spojující uzly  
   
 ## <a name="creating-a-flat-color-shader"></a>Vytváření shaderu plochý barvy  
  Můžete implementovat shaderu plochý barvy napsáním hodnota barvy RGB konstanty barvu na barvu závěrečný výstup.  

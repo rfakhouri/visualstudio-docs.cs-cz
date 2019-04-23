@@ -10,12 +10,12 @@ ms.assetid: cf4e8164-3546-441d-b465-e8a836ae7216
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: fbf30d1fdb4fcce1e28a3c10c9949f1a11eae529
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 2de1fc8440bd33a526da62dbb4c7937800484aaa
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54834711"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117873"
 ---
 # <a name="editor-factories"></a>Objekty pro vytváření editoru
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,13 +45,13 @@ Objekt pro vytváření editoru vytvoří objekty editoru a umístí je do okna 
 ## <a name="the-editor-factory-registration-process"></a>Proces registrace Factory editoru  
  Když Visual Studio načte objekt pro vytváření editoru pomocí editoru se spustí následující proces:  
   
-1.  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Projektu systémových volání <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>.  
+1. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Projektu systémových volání <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>.  
   
-2.  Tato metoda vrátí objekt pro vytváření editoru. Načítání balíčku editoru, ale dokud bude systém projektu skutečně potřebuje editoru sady Visual Studio zpoždění.  
+2. Tato metoda vrátí objekt pro vytváření editoru. Načítání balíčku editoru, ale dokud bude systém projektu skutečně potřebuje editoru sady Visual Studio zpoždění.  
   
-3.  Když bude systém projektu potřebuje editoru, Visual Studio volá <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A>, specializované metodu, která vrátí zobrazení dokumentu a dokument datové objekty.  
+3. Když bude systém projektu potřebuje editoru, Visual Studio volá <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A>, specializované metodu, která vrátí zobrazení dokumentu a dokument datové objekty.  
   
-4.  Pokud volání pomocí sady Visual Studio pomocí objekt pro vytváření editoru <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> vrátit datový objekt dokumentu a objekt zobrazení dokument, Visual Studio pak vytvoří okno dokumentu, umístí objekt zobrazení dokumentu a vytvoří položku do spuštěného dokumentu Tabulka (r...) pro datový objekt dokumentu.  
+4. Pokud volání pomocí sady Visual Studio pomocí objekt pro vytváření editoru <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> vrátit datový objekt dokumentu a objekt zobrazení dokument, Visual Studio pak vytvoří okno dokumentu, umístí objekt zobrazení dokumentu a vytvoří položku do spuštěného dokumentu Tabulka (r...) pro datový objekt dokumentu.  
   
 ## <a name="see-also"></a>Viz také  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>   

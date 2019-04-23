@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 02/15/2018
 ms.assetid: E992FA1D-B2AD-4A28-ADC6-47E4FC471060
-ms.openlocfilehash: 17067e9b19a36f198a6653f0c354e6ce3004eaeb
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: ca216f3f2a65e1c17e2ab8cc1ca17f6f707afb79
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317345"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60118068"
 ---
 # <a name="set-up-a-git-repository"></a>Nastavení úložiště Git
 
@@ -44,7 +44,7 @@ Nastavení úložiště Git, proveďte následující kroky:
 
 Pokud už máte existující projekt, který _není_ již ve správě verzí, následujícím postupem ji nastavit v Gitu:
 
-1.  Vyberte název řešení v oblasti řešení v sadě Visual Studio pro Mac.
+1. Vyberte název řešení v oblasti řešení v sadě Visual Studio pro Mac.
 
 2. V panelu nabídek vyberte **verzí > Publikovat ve správě verzí** zobrazíte **vyberte úložiště** dialogové okno:
 

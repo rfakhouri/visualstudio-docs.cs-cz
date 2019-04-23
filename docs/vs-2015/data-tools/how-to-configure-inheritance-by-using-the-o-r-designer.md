@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ff50d721b55c4035b636f40d6ccb55cbbd6d79b6
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 9c4c8cea0b29994bb880dd0d93832da0e875cc56
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59662267"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60115598"
 ---
 # <a name="how-to-configure-inheritance-by-using-the-or-designer"></a>Postupy: Konfigurace dědičnosti pomocí Návrháře relací objektů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,27 +27,27 @@ ms.locfileid: "59662267"
   
 ### <a name="to-create-inherited-data-classes"></a>Chcete-li vytvořit zděděné datových tříd  
   
-1.  Otevřít [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] tak, že přidáte **třídy LINQ to SQL** položky do existujícího projektu jazyka Visual Basic nebo C#.  
+1. Otevřít [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] tak, že přidáte **třídy LINQ to SQL** položky do existujícího projektu jazyka Visual Basic nebo C#.  
   
-2.  Přetáhněte tabulku, kterou chcete použít jako základní třídy na [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].  
+2. Přetáhněte tabulku, kterou chcete použít jako základní třídy na [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].  
   
-3.  Přetáhněte kopii tabulky do druhé [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] a přejmenujte jej. Jedná se o odvozené třídy nebo podtřídy.  
+3. Přetáhněte kopii tabulky do druhé [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] a přejmenujte jej. Jedná se o odvozené třídy nebo podtřídy.  
   
-4.  Klikněte na tlačítko **dědičnosti** v **Návrhář relací objektů** karty **nástrojů**a potom klikněte na podtřídu (tabulky, které jste přejmenovali) a připojte ho k základní třídy.  
+4. Klikněte na tlačítko **dědičnosti** v **Návrhář relací objektů** karty **nástrojů**a potom klikněte na podtřídu (tabulky, které jste přejmenovali) a připojte ho k základní třídy.  
   
     > [!NOTE]
     >  Klikněte na tlačítko **dědičnosti** položky v **nástrojů** a uvolněte tlačítko myši, klikněte na druhé kopie třídy, kterou jste vytvořili v kroku 3 a pak klikněte na první třídy, kterou jste vytvořili v kroku 2. První třídy bude odkazovat na šipku v linii dědičnosti.  
   
-5.  V každé třídě odstraňte všechny vlastnosti objektu, které nechcete zobrazit a které nejsou používány pro přidružení. Pokud se pokusíte odstranit vlastnosti objektu použité pro přidružení, dojde k chybě: [Vlastnost \<název vlastnosti > nejde odstranit, protože se účastní asociace \<název přidružení >](../data-tools/the-property-property-name-cannot-be-deleted-because-it-is-participating-in-the-association-association-name.md).  
+5. V každé třídě odstraňte všechny vlastnosti objektu, které nechcete zobrazit a které nejsou používány pro přidružení. Pokud se pokusíte odstranit vlastnosti objektu použité pro přidružení, dojde k chybě: [Vlastnost \<název vlastnosti > nejde odstranit, protože se účastní asociace \<název přidružení >](../data-tools/the-property-property-name-cannot-be-deleted-because-it-is-participating-in-the-association-association-name.md).  
   
     > [!NOTE]
     >  Protože odvozené třídy dědí vlastnosti definované v její základní třídě, stejné sloupce se nedá definovat v každé třídě. (Sloupce jsou implementovány jako vlastnosti). Vytvoření sloupce v odvozené třídě můžete povolit tak, že nastavíte modifikátor dědičnosti na vlastnost v základní třídě. Další informace najdete v tématu [NOT IN sestavení: Přepsání metod a vlastností](http://msdn.microsoft.com/2167e8f5-1225-4b13-9ebd-02591ba90213).  
   
-6.  Vybrat čáru dědičnosti v [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].  
+6. Vybrat čáru dědičnosti v [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].  
   
-7.  V **vlastnosti** okno, nastaveno **vlastnost diskriminátoru** název sloupce, který se používá k rozlišení záznamy ve třídách.  
+7. V **vlastnosti** okno, nastaveno **vlastnost diskriminátoru** název sloupce, který se používá k rozlišení záznamy ve třídách.  
   
-8.  Nastavte **hodnota diskriminátoru odvozené třídy** k hodnotě v databázi, která se označí jako zděděný typ záznamu. (Toto je hodnota, která je uložena v sloupec diskriminátoru, která slouží k určení zděděné třídy.)  
+8. Nastavte **hodnota diskriminátoru odvozené třídy** k hodnotě v databázi, která se označí jako zděděný typ záznamu. (Toto je hodnota, která je uložena v sloupec diskriminátoru, která slouží k určení zděděné třídy.)  
   
 9. Nastavte **hodnota diskriminátoru základní třídy** vlastnost na hodnotu, která se označí jako základní typ záznamu. (Toto je hodnota, která je uložena v sloupec diskriminátoru, která slouží k určení základní třídy.)  
   

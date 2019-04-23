@@ -8,12 +8,12 @@ ms.assetid: d1ac9188-d79f-407e-9f3a-80dbefa66317
 caps.latest.revision: 10
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4315e4008c3a4f14e8d9124da5d7ff83c8275a65
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 02b33bfbb0e7de3007de9e36691fa1524f69b21b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54796925"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117795"
 ---
 # <a name="using-microsoftvisualstudiotesttoolscppunittestframework"></a>Používání atributu Microsoft.VisualStudio.TestTools.CppUnitTestFramework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,18 +24,18 @@ Toto téma obsahuje seznam veřejných členů náležících `Microsoft::Visual
   
  Lib – soubory jsou umístěny v _VisualStudio2012 [x 86] InstallFolder_**\VC\UnitTest\lib** složky.  
   
-##  <a name="BKMK_In_this_topic"></a> V tomto tématu  
+## <a name="BKMK_In_this_topic"></a> V tomto tématu  
  [CppUnitTest.h](#BKMK_CppUnitTest_h)  
   
 - [Vytvoření testovací třídy a metody](#BKMK_Create_test_classes_and_methods)  
   
 - [Inicializace a vyčištění](#BKMK_Initialize_and_cleanup)  
   
-  -   [Testovací metody](#BKMK_Test_methods)  
+  - [Testovací metody](#BKMK_Test_methods)  
   
-  -   [Testovací třídy](#BKMK_Test_classes)  
+  - [Testovací třídy](#BKMK_Test_classes)  
   
-  -   [Test moduly](#BKMK_Test_modules)  
+  - [Test moduly](#BKMK_Test_modules)  
   
 - [Vytvořte atributy testu](#BKMK_Create_test_attributes)  
   
@@ -51,37 +51,37 @@ Toto téma obsahuje seznam veřejných členů náležících `Microsoft::Visual
   
   - [Obecné nepodmíněné výrazy](#BKMK_General_Asserts)  
   
-    -   [Jsou si rovny](#BKMK_General_Are_Equal)  
+    - [Jsou si rovny](#BKMK_General_Are_Equal)  
   
-    -   [Nejsou stejné](#BKMK_General_Are_Not_Equal)  
+    - [Nejsou stejné](#BKMK_General_Are_Not_Equal)  
   
-    -   [Stejné](#BKMK_General_Are_Same)  
+    - [Stejné](#BKMK_General_Are_Same)  
   
-    -   [Se neshodují](#BKMK_General_Are_Not_Same)  
+    - [Se neshodují](#BKMK_General_Are_Not_Same)  
   
-    -   [Má hodnotu Null.](#BKMK_General_Is_Null)  
+    - [Má hodnotu Null.](#BKMK_General_Is_Null)  
   
-    -   [Není rovno hodnotě Null](#BKMK_General_Is_Not_Null)  
+    - [Není rovno hodnotě Null](#BKMK_General_Is_Not_Null)  
   
-    -   [Má hodnotu True](#BKMK_General_Is_True)  
+    - [Má hodnotu True](#BKMK_General_Is_True)  
   
-    -   [Má hodnotu False](#BKMK_General_Is_False)  
+    - [Má hodnotu False](#BKMK_General_Is_False)  
   
-    -   [Selhání](#BKMK_General_Fail)  
+    - [Selhání](#BKMK_General_Fail)  
   
   - [Kontrolních příkazů prostředí Windows Runtime](#BKMK_WinRT_Asserts)  
   
-    -   [Jsou si rovny](#BKMK_WinRT_Are_Equal)  
+    - [Jsou si rovny](#BKMK_WinRT_Are_Equal)  
   
-    -   [Stejné](#BKMK_WinRT_Are_Same)  
+    - [Stejné](#BKMK_WinRT_Are_Same)  
   
-    -   [Nejsou stejné](#BKMK_WinRT_Are_Not_Equal)  
+    - [Nejsou stejné](#BKMK_WinRT_Are_Not_Equal)  
   
-    -   [Se neshodují](#BKMK_WinRT_Are_Not_Same)  
+    - [Se neshodují](#BKMK_WinRT_Are_Not_Same)  
   
-    -   [Má hodnotu Null.](#BKMK_WinRT_Is_Null)  
+    - [Má hodnotu Null.](#BKMK_WinRT_Is_Null)  
   
-    -   [Není rovno hodnotě Null](#BKMK_WinRT_Is_Not_Null)  
+    - [Není rovno hodnotě Null](#BKMK_WinRT_Is_Not_Null)  
   
   - [Výjimka nepodmíněné výrazy](#BKMK_Exception_Asserts)  
   
@@ -93,9 +93,9 @@ Toto téma obsahuje seznam veřejných členů náležících `Microsoft::Visual
   
     - [Zapsat zprávu](#BKMK_Write_Message)  
   
-##  <a name="BKMK_CppUnitTest_h"></a> CppUnitTest.h  
+## <a name="BKMK_CppUnitTest_h"></a> CppUnitTest.h  
   
-###  <a name="BKMK_Create_test_classes_and_methods"></a> Vytvoření testovací třídy a metody  
+### <a name="BKMK_Create_test_classes_and_methods"></a> Vytvoření testovací třídy a metody  
   
 ```cpp  
 TEST_CLASS(className)  
@@ -113,9 +113,9 @@ TEST_METHOD(methodName)
   
  Definuje *methodName* jako testovací metody. `TEST_METHOD` musí být deklarována v rámci metody třídy.  
   
-###  <a name="BKMK_Initialize_and_cleanup"></a> Inicializace a vyčištění  
+### <a name="BKMK_Initialize_and_cleanup"></a> Inicializace a vyčištění  
   
-####  <a name="BKMK_Test_methods"></a> Testovací metody  
+#### <a name="BKMK_Test_methods"></a> Testovací metody  
   
 ```cpp  
 TEST_METHOD_INITIALIZE(methodName)   
@@ -137,7 +137,7 @@ TEST_METHOD_CLEANUP(methodName)
   
  Definuje *methodName* jako metodu, která se spustí po spuštění jednotlivých testovacích metod. `TEST_METHOD_CLEANUP` můžete definovat pouze jednou v testovací třídě a musí být definován v oboru třídy testu.  
   
-####  <a name="BKMK_Test_classes"></a> Testovací třídy  
+#### <a name="BKMK_Test_classes"></a> Testovací třídy  
   
 ```cpp  
 TEST_CLASS_INITIALIZE(methodName)   
@@ -159,7 +159,7 @@ TEST_CLASS_CLEANUP(methodName)
   
  Definuje *methodName* jako metodu, která se spustí po vytvoření každé testovací třídy. `TEST_CLASS_CLEANUP` můžete definovat pouze jednou v testovací třídě a musí být definován v oboru třídy testu.  
   
-####  <a name="BKMK_Test_modules"></a> Test moduly  
+#### <a name="BKMK_Test_modules"></a> Test moduly  
   
 ```cpp  
 TEST_MODULE_INITIALIZE(methodName)  
@@ -176,9 +176,9 @@ TEST_MODULE_CLEANUP(methodName)
   
  Definuje metodu *methodName* , která se spustí, jakmile modul je uvolněna. `TEST_MODULE_CLEANUP` lze definovat pouze jednou v testu modulu a musí být deklarovány v oboru názvů.  
   
-###  <a name="BKMK_Create_test_attributes"></a> Vytvořte atributy testu  
+### <a name="BKMK_Create_test_attributes"></a> Vytvořte atributy testu  
   
-####  <a name="BKMK_Test_method_attributes"></a> Atributy testovací metody  
+#### <a name="BKMK_Test_method_attributes"></a> Atributy testovací metody  
   
 ```cpp  
 BEGIN_TEST_METHOD_ATTRIBUTE(testMethodName)   
@@ -191,7 +191,7 @@ END_TEST_METHOD_ATTRIBUTE()
   
  A `TEST_METHOD_ATTRIBUTE` makra definuje atribut s názvem *attributeName* a hodnota *: vlastnost attributeValue*.  
   
-####  <a name="BKMK_Test_class_attributes"></a> Atributy třídy testu  
+#### <a name="BKMK_Test_class_attributes"></a> Atributy třídy testu  
   
 ```cpp  
 BEGIN_TEST_CLASS_ATTRIBUTE(testClassName)   
@@ -204,7 +204,7 @@ END_TEST_CLASS_ATTRIBUTE()
   
  A `TEST_CLASS_ATTRIBUTE` makra definuje atribut s názvem *attributeName* a hodnota *: vlastnost attributeValue*.  
   
-####  <a name="BKMK_Test_module_attributes"></a> Atributy modulu testu  
+#### <a name="BKMK_Test_module_attributes"></a> Atributy modulu testu  
   
 ```cpp  
 BEGIN_TEST_MODULE_ATTRIBUTE(testModuleName)   
@@ -217,7 +217,7 @@ END_TEST_MODULE_ATTRIBUTE()
   
  A `TEST_MODULE_ATTRIBUTE` makra definuje atribut s názvem *attributeName* a hodnota *: vlastnost attributeValue*.  
   
-####  <a name="BKMK_Pre_defined_attributes"></a> Předem definované atributy  
+#### <a name="BKMK_Pre_defined_attributes"></a> Předem definované atributy  
  Tyto předdefinované atributy a makra lze nahrazuje makra `TEST_METHOD_ATTRIBUTE`, `TEST_CLASS_ATTRIBUTE`, nebo `TEST_MODULE_ATTRIBUTE` popsané výše.  
   
 ```cpp  
@@ -250,11 +250,11 @@ TEST_IGNORE()
   
  Definuje atribut s názvem `Ignore` a hodnota atributu `true`.  
   
-##  <a name="BKMK_CppUnitTestAssert_h"></a> CppUnitTestAssert.h  
+## <a name="BKMK_CppUnitTestAssert_h"></a> CppUnitTestAssert.h  
   
-###  <a name="BKMK_General_Asserts"></a> Obecné nepodmíněné výrazy  
+### <a name="BKMK_General_Asserts"></a> Obecné nepodmíněné výrazy  
   
-####  <a name="BKMK_General_Are_Equal"></a> Jsou si rovny  
+#### <a name="BKMK_General_Are_Equal"></a> Jsou si rovny  
  Ověřte, že jsou oba objekty stejné  
   
 ```cpp  
@@ -310,7 +310,7 @@ static void AreEqual(
     const __LineInfo* pLineInfo = NULL)  
 ```  
   
-####  <a name="BKMK_General_Are_Not_Equal"></a> Nejsou stejné  
+#### <a name="BKMK_General_Are_Not_Equal"></a> Nejsou stejné  
  Ověřte, že dvě Double nejsou stejné  
   
 ```cpp  
@@ -366,7 +366,7 @@ static void AreNotEqual(
     const __LineInfo* pLineInfo = NULL)  
 ```  
   
-####  <a name="BKMK_General_Are_Same"></a> Stejné  
+#### <a name="BKMK_General_Are_Same"></a> Stejné  
  Ověřte, že dva odkazy odkazují na stejnou instanci objektu (identity).  
   
 ```cpp  
@@ -378,7 +378,7 @@ static void AreSame(
     const __LineInfo* pLineInfo = NULL)  
 ```  
   
-####  <a name="BKMK_General_Are_Not_Same"></a> Se neshodují  
+#### <a name="BKMK_General_Are_Not_Same"></a> Se neshodují  
  Ověřte, že dva odkazy neodkazují na stejnou instanci objektu (identity).  
   
 ```cpp  
@@ -390,7 +390,7 @@ static void AreNotSame (
     const __LineInfo* pLineInfo = NULL)  
 ```  
   
-####  <a name="BKMK_General_Is_Null"></a> Má hodnotu Null.  
+#### <a name="BKMK_General_Is_Null"></a> Má hodnotu Null.  
  Ověřte, že je ukazatel s hodnotou NULL.  
   
 ```cpp  
@@ -401,7 +401,7 @@ static void IsNull(
     const __LineInfo* pLineInfo = NULL)  
 ```  
   
-####  <a name="BKMK_General_Is_Not_Null"></a> Není rovno hodnotě Null  
+#### <a name="BKMK_General_Is_Not_Null"></a> Není rovno hodnotě Null  
  Ověřte, že ukazatel není NULL  
   
 ```cpp  
@@ -412,7 +412,7 @@ static void IsNotNull(
     const __LineInfo* pLineInfo = NULL)  
 ```  
   
-####  <a name="BKMK_General_Is_True"></a> Má hodnotu True  
+#### <a name="BKMK_General_Is_True"></a> Má hodnotu True  
  Ověřte, zda je podmínka pravdivá  
   
 ```cpp  
@@ -422,7 +422,7 @@ static void IsTrue(
     const __LineInfo* pLineInfo = NULL)  
 ```  
   
-####  <a name="BKMK_General_Is_False"></a> Má hodnotu False  
+#### <a name="BKMK_General_Is_False"></a> Má hodnotu False  
  Ověřte, zda je podmínka NEPRAVDA  
   
 ```cpp  
@@ -432,7 +432,7 @@ static void IsFalse(
     const __LineInfo* pLineInfo = NULL)  
 ```  
   
-####  <a name="BKMK_General_Fail"></a> Selhání  
+#### <a name="BKMK_General_Fail"></a> Selhání  
  Vynucení bylo možné provést výsledek testovacího případu  
   
 ```cpp  
@@ -441,9 +441,9 @@ static void Fail(
     const __LineInfo* pLineInfo = NULL)  
 ```  
   
-###  <a name="BKMK_WinRT_Asserts"></a> Kontrolních příkazů prostředí Windows Runtime  
+### <a name="BKMK_WinRT_Asserts"></a> Kontrolních příkazů prostředí Windows Runtime  
   
-####  <a name="BKMK_WinRT_Are_Equal"></a> Jsou si rovny  
+#### <a name="BKMK_WinRT_Are_Equal"></a> Jsou si rovny  
  Ověřuje, že dva ukazatele modulu Windows Runtime jsou stejné.  
   
 ```  
@@ -466,7 +466,7 @@ static void AreEqual(
     const __LineInfo* pLineInfo= nullptr)  
 ```  
   
-####  <a name="BKMK_WinRT_Are_Same"></a> Stejné  
+#### <a name="BKMK_WinRT_Are_Same"></a> Stejné  
  Ověřuje, že dva odkazy modulu Windows Runtime odkazují na stejný objekt.  
   
 ```  
@@ -478,7 +478,7 @@ static void AreSame(
     const __LineInfo* pLineInfo= nullptr)  
 ```  
   
-####  <a name="BKMK_WinRT_Are_Not_Equal"></a> Nejsou stejné  
+#### <a name="BKMK_WinRT_Are_Not_Equal"></a> Nejsou stejné  
  Ověřuje, že dva ukazatele modulu Windows Runtime nejsou stejné.  
   
 ```  
@@ -501,7 +501,7 @@ static void AreNotEqual(
     const __LineInfo* pLineInfo= nullptr)  
 ```  
   
-####  <a name="BKMK_WinRT_Are_Not_Same"></a> Se neshodují  
+#### <a name="BKMK_WinRT_Are_Not_Same"></a> Se neshodují  
  Ověřuje, že dva odkazy modulu Windows Runtime není odkazují na stejný objekt.  
   
 ```  
@@ -513,7 +513,7 @@ static void AreNotSame(
     const __LineInfo* pLineInfo= nullptr)  
 ```  
   
-####  <a name="BKMK_WinRT_Is_Null"></a> Má hodnotu Null.  
+#### <a name="BKMK_WinRT_Is_Null"></a> Má hodnotu Null.  
  Ověří, zda ukazatel modulu Windows Runtime nullptr.  
   
 ```  
@@ -524,7 +524,7 @@ static void IsNull(
     const __LineInfo* pLineInfo= nullptr)  
 ```  
   
-####  <a name="BKMK_WinRT_Is_Not_Null"></a> Není rovno hodnotě Null  
+#### <a name="BKMK_WinRT_Is_Not_Null"></a> Není rovno hodnotě Null  
  Ověřuje, že ukazatel modulu Windows Runtime není nullptr.  
   
 ```  
@@ -535,9 +535,9 @@ static void IsNotNull(
     const __LineInfo* pLineInfo= nullptr)  
 ```  
   
-###  <a name="BKMK_Exception_Asserts"></a> Výjimka nepodmíněné výrazy  
+### <a name="BKMK_Exception_Asserts"></a> Výjimka nepodmíněné výrazy  
   
-####  <a name="BKMK_Expect_Exception"></a> Očekávané výjimky  
+#### <a name="BKMK_Expect_Exception"></a> Očekávané výjimky  
  Ověřte, že funkce vyvolá výjimku:  
   
 ```  
@@ -558,16 +558,16 @@ template<typename _EXPECTEDEXCEPTION, typename _RETURNTYPE>
     const __LineInfo* pLineInfo = NULL)  
 ```  
   
-##  <a name="BKMK_CppUnitTestLogger_h"></a> CppUnitTestLogger.h  
+## <a name="BKMK_CppUnitTestLogger_h"></a> CppUnitTestLogger.h  
   
-###  <a name="BKMK_Logger"></a> Protokolovací nástroj  
+### <a name="BKMK_Logger"></a> Protokolovací nástroj  
  Třída protokolovacího nástroje obsahuje statické metody zapsat do  
   
 ```  
 class Logger  
 ```  
   
-###  <a name="BKMK_Write_Message"></a> Zapsat zprávu  
+### <a name="BKMK_Write_Message"></a> Zapsat zprávu  
   
 ```  
 static void   

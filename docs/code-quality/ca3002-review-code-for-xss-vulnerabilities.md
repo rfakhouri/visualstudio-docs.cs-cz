@@ -1,5 +1,5 @@
 ---
-title: 'CA3002: Revize kódu XSS ohrožení zabezpečení'
+title: 'CA3002: Zkontrolujte ohrožení zabezpečení proti XSS v kódu'
 ms.date: 04/03/2019
 ms.topic: reference
 author: dotpaul
@@ -11,13 +11,13 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: a10f72297746a1e7bda3c69f8f7daf0efacd20bc
-ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/04/2019
-ms.locfileid: "59018856"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60115611"
 ---
-# <a name="ca3002-review-code-for-xss-vulnerabilities"></a>CA3002: Revize kódu XSS ohrožení zabezpečení
+# <a name="ca3002-review-code-for-xss-vulnerabilities"></a>CA3002: Zkontrolujte ohrožení zabezpečení proti XSS v kódu
 
 |||
 |-|-|
@@ -26,7 +26,7 @@ ms.locfileid: "59018856"
 |Kategorie|Microsoft.Security|
 |Narušující změna|Pevné|
 
-## <a name="cause"></a>příčina
+## <a name="cause"></a>Příčina
 
 Potenciálně nedůvěryhodný vstup požadavku HTTP dosáhne nezpracovaného výstupu HTML.
 

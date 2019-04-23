@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fa5206ea42385cb716c522504648e1d8fd5879ae
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: d4ba0106a1494c7e7e8d56c3e902a3436f657712
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57525115"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60115351"
 ---
 # <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>Postupy: Vytvoření dokumentu XML na základě schématu XSD
 
@@ -21,29 +21,29 @@ ms.locfileid: "57525115"
 
  Tuto možnost můžete použít v následujících scénářích:
 
--   Abyste pochopili použití různých konstrukcí ve schématu.
+- Abyste pochopili použití různých konstrukcí ve schématu.
 
--   Potvrďte, že schéma co dělá jeho účelem je provádět.
+- Potvrďte, že schéma co dělá jeho účelem je provádět.
 
 **Generovat ukázkové XML** funkce je dostupná pouze na globální prvky a vyžaduje platnou sadu schémat XML.
 
 Tato funkce generuje obvykle platný dokumentů XML. Nicméně pokud schéma obsahuje jeden nebo více z následujících akcí, ukázka nemusí být platné:
 
--   `xs:key`, `xs:keyref`, A `xs:unique` omezení identity.
+- `xs:key`, `xs:keyref`, A `xs:unique` omezení identity.
 
--   `xs:pattern` omezující vlastnosti.
+- `xs:pattern` omezující vlastnosti.
 
--   Výčty `xs:QName` typu.
+- Výčty `xs:QName` typu.
 
--   `xs:ENTITY`, `xs:ENTITIES`, a `xs:NOTATION` typy.
+- `xs:ENTITY`, `xs:ENTITIES`, a `xs:NOTATION` typy.
 
 Všimněte si také, že `xs:base64Binary` obsah se bude generovat jenom v případě, že dojde k vyčíslení ve schématu pro daný typ.
 
 ## <a name="to-generate-an-xml-instance-document-based-on-the-xsd-file"></a>Generovat dokument XML instance na základě souboru XSD
 
-1.  Postupujte podle kroků v [jak: Vytvoření a úprava souboru schématu XSD](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).
+1. Postupujte podle kroků v [jak: Vytvoření a úprava souboru schématu XSD](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).
 
-2.  V [Průzkumníka schémat XML](../xml-tools/xml-schema-explorer.md), klikněte pravým tlačítkem myši `PurchaseOrder` globální element. Vyberte **generovat ukázkový soubor XML**.
+2. V [Průzkumníka schémat XML](../xml-tools/xml-schema-explorer.md), klikněte pravým tlačítkem myši `PurchaseOrder` globální element. Vyberte **generovat ukázkový soubor XML**.
 
      Když vyberete tuto možnost, PurchaseOrder. *xml* soubor s následujícím obsahem XML ukázky bude vygenerována a otevřené v editoru XML:
 

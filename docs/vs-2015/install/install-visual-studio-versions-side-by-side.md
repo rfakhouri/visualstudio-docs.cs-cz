@@ -13,12 +13,12 @@ caps.latest.revision: 48
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 67a564b789d24b11b92b218c2a30673c6bd7baad
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 48d77b77367faa1ea1f59c1de7fdbad96d574e1b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54834858"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117639"
 ---
 # <a name="install-visual-studio-versions-side-by-side"></a>Instalace sady Visual Studio verze vedle sebe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,17 +30,17 @@ Tuto verzi sady Visual Studio můžete nainstalovat na počítači s již nainst
 
  Před instalací verzí vedle sebe, zkontrolujte následující podmínky:
 
--   Pokud používáte Visual Studio 2015 otevřete řešení, který byl vytvořen v [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], můžete později otevřít a upravit toto řešení znovu ve starší verzi, dokud jste neimplementovali žádné funkce, které jsou specifické pro Visual Studio 2015.
+- Pokud používáte Visual Studio 2015 otevřete řešení, který byl vytvořen v [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], můžete později otevřít a upravit toto řešení znovu ve starší verzi, dokud jste neimplementovali žádné funkce, které jsou specifické pro Visual Studio 2015.
 
--   Pokud se pokusíte použít Visual Studio 2015 otevřete řešení, který byl vytvořen v [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] nebo starší verzi, možná budete muset upravit projekty a soubory kompatibilní s Visual Studiem 2015. Další informace najdete v tématu [Port, migrace a Upgrade projektů sady Visual Studio](/visualstudio/porting/port-migrate-and-upgrade-visual-studio-projects?view=vs-2015) stránky.
+- Pokud se pokusíte použít Visual Studio 2015 otevřete řešení, který byl vytvořen v [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] nebo starší verzi, možná budete muset upravit projekty a soubory kompatibilní s Visual Studiem 2015. Další informace najdete v tématu [Port, migrace a Upgrade projektů sady Visual Studio](/visualstudio/porting/port-migrate-and-upgrade-visual-studio-projects?view=vs-2015) stránky.
 
--   Pokud odinstalujete verzi [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] na počítači, který má více než jedna verze nainstalovaná, přidružení souborů pro [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] se odeberou pro všechny verze. Přiřazení těchto souborů můžete přemapovat pomocí **obnovit přidružení souborů** tlačítko **prostředí**, **Obecné** stránku [možnosti](../ide/reference/general-environment-options-dialog-box.md) dialogové okno.
+- Pokud odinstalujete verzi [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] na počítači, který má více než jedna verze nainstalovaná, přidružení souborů pro [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] se odeberou pro všechny verze. Přiřazení těchto souborů můžete přemapovat pomocí **obnovit přidružení souborů** tlačítko **prostředí**, **Obecné** stránku [možnosti](../ide/reference/general-environment-options-dialog-box.md) dialogové okno.
 
--   Visual Studio neprovádí automatický upgrade rozšíření vzhledem k tomu, že ne všechna rozšíření jsou kompatibilní. Je třeba přeinstalovat rozšíření od [Visual Studio Marketplace](http://go.microsoft.com/fwlink/?LinkId=178891) nebo vydavatele softwaru.
+- Visual Studio neprovádí automatický upgrade rozšíření vzhledem k tomu, že ne všechna rozšíření jsou kompatibilní. Je třeba přeinstalovat rozšíření od [Visual Studio Marketplace](http://go.microsoft.com/fwlink/?LinkId=178891) nebo vydavatele softwaru.
 
 ## <a name="net-framework-versions-and-side-by-side-installations"></a>Verze rozhraní .NET framework a instalacemi nevyžádaného vedle sebe
 
--   Visual Basic, Visual C#a vizuální F# projekty použití **cílovou architekturu** možnost **Návrhář projektu** k určení, kterou verzi rozhraní .NET Framework projekt používá. Pro projekt jazyka C++ můžete ručně změnit cílové rozhraní úpravou souboru .vcxproj. Další informace najdete v tématu [Kompatibilita verzí](http://msdn.microsoft.com/library/2f25e522-456a-48c3-8a53-e5f39275649f).
+- Visual Basic, Visual C#a vizuální F# projekty použití **cílovou architekturu** možnost **Návrhář projektu** k určení, kterou verzi rozhraní .NET Framework projekt používá. Pro projekt jazyka C++ můžete ručně změnit cílové rozhraní úpravou souboru .vcxproj. Další informace najdete v tématu [Kompatibilita verzí](http://msdn.microsoft.com/library/2f25e522-456a-48c3-8a53-e5f39275649f).
 
      Když vytvoříte projekt, můžete určit, kterou verzi rozhraní .NET Framework je projekt cílen v **rozhraní .NET Framework** v seznamu **nový projekt** dialogové okno.
 

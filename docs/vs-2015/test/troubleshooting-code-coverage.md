@@ -8,12 +8,12 @@ ms.assetid: 26de91b8-45e3-4976-a20e-a3bd1942ddcb
 caps.latest.revision: 13
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5af016c0ef1e38a4ae7ca42d79ed2030821d0369
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8faf41bb838880b1f0f747f1feb9d3a318b2f1c4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54797363"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117405"
 ---
 # <a name="troubleshooting-code-coverage"></a>Poradce při potížích s pokrytím kódu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,15 +39,15 @@ Analytické nástroje pokrytí kódu v aplikaci Visual Studio shromažďují dat
  Vysvětlení  
  Analýza pokrytí kódu se provádí v průběhu testů. Zahrnuje pouze sestavení, která jsou načtena do paměti v průběhu testů. Jestliže nebyl proveden žádný z testů, pak nejsou k dispozici žádné informace pro hlášení o pokrytí kódu.  
   
- Rozlišení  
+ Řešení  
  V Průzkumníku testů, zvolte **spustit všechny** k ověření, že testy se spustily úspěšně. Opravte všechny chyby před použitím **analyzovat pokrytí kódu**.  
   
 ### <a name="youre-looking-at-a-previous-result"></a>Je zobrazen předchozí výsledek  
  Při úpravě a opětovném spuštění testů může být stále zobrazen předchozí výsledek pokrytí kódu včetně barevného zvýraznění kódu z minulého spuštění testu.  
   
-1.  Spusťte analýzu pokrytí kódu.  
+1. Spusťte analýzu pokrytí kódu.  
   
-2.  Ujistěte se, že jste v okně Výsledky pokrytí kódu vybrali nejaktuálnější sadu výsledků.  
+2. Ujistěte se, že jste v okně Výsledky pokrytí kódu vybrali nejaktuálnější sadu výsledků.  
   
 ### <a name="pdb-symbol-files-are-unavailable"></a>Nejsou k dispozici soubory typu .pdb (symbol)  
  Analýza  
@@ -58,7 +58,7 @@ Analytické nástroje pokrytí kódu v aplikaci Visual Studio shromažďují dat
   
  Soubor typu .pdb je nutné vygenerovat ze stejného sestavení jako soubory typu .dll nebo .exe.  
   
- Rozlišení  
+ Řešení  
  Ujistěte se, že nastavení sestavení generuje soubor typu .pdb. Pokud se po sestavení projektu nejsou aktualizovány soubory typu .pdb, potom otevřete vlastnosti projektu, vyberte **sestavení** zvolte **Upřesnit** a zkontrolujte **ladicí informace**.  
   
  Pokud jsou soubory typu .pdb a .dll nebo .exe na různých místech, zkopírujte soubor typu .pdb do stejného adresáře. Je také možné nakonfigurovat nástroj pokrytí kódu tak, aby hledal soubory typu .pdb v jiném umístění. Další informace najdete v tématu [přizpůsobení analýzy pokrytí kódu](../test/customizing-code-coverage-analysis.md).  
@@ -72,7 +72,7 @@ Analytické nástroje pokrytí kódu v aplikaci Visual Studio shromažďují dat
   
  Analýza pokrytí kódu nemůže být na takovýchto sestavení provedena.  
   
- Rozlišení  
+ Řešení  
  Vypněte optimalizaci a použijte nové sestavení.  
   
 ### <a name="code-is-not-managed-net-or-native-c-code"></a>Kód není spravovaný (.NET) nebo nativní (C++) kód  
@@ -82,7 +82,7 @@ Analytické nástroje pokrytí kódu v aplikaci Visual Studio shromažďují dat
  Vysvětlení  
  Analýza pokrytí kódu v sadě Visual Studio je dostupná pouze pro spravovaný a nativní (C++) kód. Při práci s nástroji třetích stran může být část kódu nebo veškerý kód proveden na jiné platformě.  
   
- Rozlišení  
+ Řešení  
  Žádný k dispozici.  
   
 ### <a name="assembly-has-been-installed-by-ngen"></a>Sestavení bylo nainstalováno pomocí technologie NGen  
@@ -92,7 +92,7 @@ Analytické nástroje pokrytí kódu v aplikaci Visual Studio shromažďují dat
  Vysvětlení  
  Z důvodů výkonu nejsou sestavení nativní bitové kopie analyzovány. Další informace najdete v tématu [Ngen.exe (Generátor nativních obrázků)](http://msdn.microsoft.com/library/44bf97aa-a9a4-4eba-9a0d-cfaa6fc53a66).  
   
- Rozlišení  
+ Řešení  
  Použijte verzi sestavení v jazyce MSIL. Nezpracovávejte jej pomocí technologie NGen.  
   
 ### <a name="custom-runsettings-file-with-bad-syntax"></a>Chybná syntaxe vlastního souboru .runsettings  
@@ -104,20 +104,20 @@ Analytické nástroje pokrytí kódu v aplikaci Visual Studio shromažďují dat
  Vysvětlení  
  Můžete spustit testování částí s vlastním souborem .runsettings pro nakonfigurování možností pokrytí kódu. Možnosti umožňují zahrnout nebo vyloučit soubory. Další informace najdete v tématu [přizpůsobení analýzy pokrytí kódu](../test/customizing-code-coverage-analysis.md).  
   
- Rozlišení  
+ Řešení  
  Existují dva typy možných chyb:  
   
--   **XML došlo k chybě**  
+- **XML došlo k chybě**  
   
      Otevřete soubor .runsettings v editoru jazyka XML sady Visual Studio. Hledejte označení chyb.  
   
--   **Chyba regulárního výrazu**  
+- **Chyba regulárního výrazu**  
   
      Každý řetězec v souboru je regulární výraz. Zkontrolujte všechny, zda v nich nejsou chyby, a hledejte zejména:  
   
-    -   Neshoda závorek (...) nebo závorky \\(...) \\). Pokud ve vyhledávacím řetězci chcete najít závorky, musíte je přeskočit. Chcete-li například funkci, použijte: `.*MyFunction\(double\)`  
+    - Neshoda závorek (...) nebo závorky \\(...) \\). Pokud ve vyhledávacím řetězci chcete najít závorky, musíte je přeskočit. Chcete-li například funkci, použijte: `.*MyFunction\(double\)`  
   
-    -   Hvězdička nebo plus na začátku výrazu. Pro vyhledání libovolného řetězce znaků, použijte tečku následovanou hvězdičkou: `.*`  
+    - Hvězdička nebo plus na začátku výrazu. Pro vyhledání libovolného řetězce znaků, použijte tečku následovanou hvězdičkou: `.*`  
   
 ### <a name="custom-runsettings-file-with-incorrect-exclusions"></a>Nesprávná vyloučení ve vlastním souboru .runsettings  
  Analýza  
@@ -126,7 +126,7 @@ Analytické nástroje pokrytí kódu v aplikaci Visual Studio shromažďují dat
  Vysvětlení  
  Můžete spustit testování částí s vlastním souborem .runsettings pro nakonfigurování možností pokrytí kódu. Možnosti umožňují zahrnout nebo vyloučit soubory. Další informace najdete v tématu [přizpůsobení analýzy pokrytí kódu](../test/customizing-code-coverage-analysis.md).  
   
- Rozlišení  
+ Řešení  
  Odebrat vše `Include` ze souboru s příponou .runsettings a potom odeberte všechny uzly `Exclude` uzly. Pokud to vyřeší daný problém, vracejte je zpět ve fázích.  
   
  Zkontrolujte, že uzel DataCollectors určuje pokrytí kódu. Porovnejte jej s ukázkou v [přizpůsobení analýzy pokrytí kódu](../test/customizing-code-coverage-analysis.md).  
@@ -142,7 +142,7 @@ Analytické nástroje pokrytí kódu v aplikaci Visual Studio shromažďují dat
   
  Obvykle to platí pro staticky načtená sestavení.  
   
- Rozlišení  
+ Řešení  
  Žádné  
   
 ## <a name="see-also"></a>Viz také  

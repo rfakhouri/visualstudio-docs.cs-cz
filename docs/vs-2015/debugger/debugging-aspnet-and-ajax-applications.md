@@ -19,21 +19,21 @@ caps.latest.revision: 34
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d1322300992359f386a43c7feef41053611bb866
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2547c9edb501ac8536b06548ab23a5262515ca78
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54765169"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116781"
 ---
 # <a name="debugging-aspnet-and-ajax-applications"></a>Ladění aplikací ASP.NET a AJAX
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Ladění [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] webových aplikací je podobné ladění formuláře Windows nebo jakékoli jiné aplikace Windows, protože oba typy aplikací zahrnují ovládací prvky a události. Existují však také základní rozdíly mezi těmito dvěma typy aplikací:  
   
--   Udržování přehledu o stavu je složitější ve webové aplikaci.  
+- Udržování přehledu o stavu je složitější ve webové aplikaci.  
   
--   V aplikaci Windows kódu k ladění je většinou na jednom místě; ve webové aplikaci může být kód na straně klienta a na serveru. Zatímco [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] kód je všechny na serveru, může také být taktéž jazyk JavaScript nebo [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] kód na straně klienta.  
+- V aplikaci Windows kódu k ladění je většinou na jednom místě; ve webové aplikaci může být kód na straně klienta a na serveru. Zatímco [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] kód je všechny na serveru, může také být taktéž jazyk JavaScript nebo [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] kód na straně klienta.  
   
 ## <a name="in-this-section"></a>V tomto oddílu  
  [Příprava na ladění technologie ASP.NET](../debugger/preparing-to-debug-aspnet.md)  

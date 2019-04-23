@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 36a91875d2964bf952f039a699da6ed165afa090
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: e4caede15b17478bb9649f09d9341931511b655f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56638527"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117886"
 ---
 # <a name="how-to-programmatically-automatically-fill-ranges-with-incrementally-changing-data"></a>Postupy: Prostřednictvím kódu programu automaticky vyplnit oblastí s přírůstkově se měnícími daty
   <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> Metodu <xref:Microsoft.Office.Interop.Excel.Range> objektu umožňuje automaticky vyplnit rozsah v listu s hodnotami. Nejčastěji <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> metoda se používá k ukládání postupně zvýšením nebo snížením hodnoty v rozsahu. Můžete určit chování zadáním volitelné konstanta z <xref:Microsoft.Office.Interop.Excel.XlAutoFillType> výčtu.
@@ -29,9 +29,9 @@ ms.locfileid: "56638527"
 
  Při použití, je nutné zadat dvě oblasti <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A>:
 
--   Oblast, která volá <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> metodu, která určuje počáteční bod výplně a obsahuje počáteční hodnotu.
+- Oblast, která volá <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> metodu, která určuje počáteční bod výplně a obsahuje počáteční hodnotu.
 
--   Rozsah, který chcete vyplnit, předán jako parametr <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> metody. Tento cílový rozsah musí obsahovat oblast, která obsahuje počáteční hodnotu.
+- Rozsah, který chcete vyplnit, předán jako parametr <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> metody. Tento cílový rozsah musí obsahovat oblast, která obsahuje počáteční hodnotu.
 
     > [!NOTE]
     >  Nelze předat <xref:Microsoft.Office.Tools.Excel.NamedRange> řízení místo <xref:Microsoft.Office.Interop.Excel.Range>. Další informace najdete v tématu [programová omezení hostitelských položek a hostitelských ovládacích prvků](../vsto/programmatic-limitations-of-host-items-and-host-controls.md).
@@ -45,11 +45,11 @@ ms.locfileid: "56638527"
 
  V příkladu vyžaduje vyplnění tří oblastí:
 
--   Sloupce B se zahrnou pět dní v týdnu. Pro původní hodnotu zadejte **pondělí** do buňky B1.
+- Sloupce B se zahrnou pět dní v týdnu. Pro původní hodnotu zadejte **pondělí** do buňky B1.
 
--   Sloupec C se zahrnou pěti měsíců. Pro původní hodnotu zadejte **ledna** v buňce C1.
+- Sloupec C se zahrnou pěti měsíců. Pro původní hodnotu zadejte **ledna** v buňce C1.
 
--   Sloupec D je zahrnují řadu čísla a narůstajících o dvou pro každý řádek. Počáteční hodnoty, zadejte **4** v buňce D1 a **6** v buňce D2.
+- Sloupec D je zahrnují řadu čísla a narůstajících o dvou pro každý řádek. Počáteční hodnoty, zadejte **4** v buňce D1 a **6** v buňce D2.
 
 ## <a name="see-also"></a>Viz také:
 - [Práce s oblastmi](../vsto/working-with-ranges.md)

@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e334ee23a68a4fbbb481765997ea1668daede13f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b9e50736e5d9bc55eadf0aab7e7f00d26eb03249
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55940682"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117236"
 ---
 # <a name="how-to-add-activities-to-the-toolbox"></a>Postupy: Přidání aktivit do panelu nástrojů
 
@@ -21,11 +21,11 @@ Aktivity mohou být přidány do **nástrojů** ve vašem řešení v několika 
 
 ## <a name="to-add-an-activity-from-within-your-current-project"></a>Chcete-li přidat aktivitu z v rámci aktuálního projektu
 
-1.  Přidáte novou vlastní aktivitu do aktuálního projektu pracovního postupu. Další informace o přidání do projektu novou vlastní aktivitu, naleznete v tématu [jak: Přidat novou položku do projektu pracovního postupu](../workflow-designer/how-to-add-a-new-item-to-a-workflow-project.md).
+1. Přidáte novou vlastní aktivitu do aktuálního projektu pracovního postupu. Další informace o přidání do projektu novou vlastní aktivitu, naleznete v tématu [jak: Přidat novou položku do projektu pracovního postupu](../workflow-designer/how-to-add-a-new-item-to-a-workflow-project.md).
 
-2.  Přidáte vlastní logiku aktivity.
+2. Přidáte vlastní logiku aktivity.
 
-3.  Sestavte projekt. Pokud bylo sestavení úspěšné, novou kategorii v **nástrojů** s názvem "\<*název projektu*>" se zobrazí s vlastní aktivity zahrnuté do této kategorie spadají.
+3. Sestavte projekt. Pokud bylo sestavení úspěšné, novou kategorii v **nástrojů** s názvem "\<*název projektu*>" se zobrazí s vlastní aktivity zahrnuté do této kategorie spadají.
 
     > [!NOTE]
     > Pokud panel nástrojů se vynuluje, vlastní aktivity se odebere, i v případě, řešení je vybudováno znovu. Naplnit panel nástrojů s vlastní aktivity po byla obnovena, restartujte Visual Studio.
@@ -38,25 +38,25 @@ Aktivity mohou být přidány do **nástrojů** ve vašem řešení v několika 
 
 ## <a name="to-add-an-activity-from-within-a-different-project"></a>Chcete-li přidat aktivitu z v rámci jiného projektu
 
-1.  Otevřete řešení, která obsahuje alespoň jeden projekt pracovního postupu a projektu knihovny vlastní aktivity nebo jiný projekt pracovního postupu, který definuje vlastní aktivity.
+1. Otevřete řešení, která obsahuje alespoň jeden projekt pracovního postupu a projektu knihovny vlastní aktivity nebo jiný projekt pracovního postupu, který definuje vlastní aktivity.
 
-2.  Vytvářejte obou projektů. Je-li sestavení úspěšné, novou kategorii v **nástrojů** s názvem "\<*název projektu*>" se zobrazí s vlastní aktivity zahrnuté do této kategorie spadají.
+2. Vytvářejte obou projektů. Je-li sestavení úspěšné, novou kategorii v **nástrojů** s názvem "\<*název projektu*>" se zobrazí s vlastní aktivity zahrnuté do této kategorie spadají.
 
 ## <a name="to-add-an-activity-to-the-toolbox-from-an-assembly"></a>Chcete-li přidat aktivitu do panelu nástrojů ze sestavení
 
-1.  Otevřete řešení pracovního postupu.
+1. Otevřete řešení pracovního postupu.
 
-2.  Z **nástroje** nabídce vyberte možnost **zvolit položky nástrojů**.
+2. Z **nástroje** nabídce vyberte možnost **zvolit položky nástrojů**.
 
-3.  V **zvolit položky nástrojů** dialogové okno, vyberte **komponenty System.Activities** kartu a potom klikněte na **Procházet** přejít na sestavení, který obsahuje vlastní aktivity, které chcete přidat.
+3. V **zvolit položky nástrojů** dialogové okno, vyberte **komponenty System.Activities** kartu a potom klikněte na **Procházet** přejít na sestavení, který obsahuje vlastní aktivity, které chcete přidat.
 
-4.  Vyberte sestavení a klikněte na tlačítko **OK**. Komponentu vlastní aktivity se přidá do seznamu součástí a se vybere automaticky.
+4. Vyberte sestavení a klikněte na tlačítko **OK**. Komponentu vlastní aktivity se přidá do seznamu součástí a se vybere automaticky.
 
-    1.  Klikněte na tlačítko **OK** zavřete dialogové okno.
+    1. Klikněte na tlačítko **OK** zavřete dialogové okno.
 
-5.  Chcete-li zobrazit panel nástrojů, vyberte **nástrojů** z **zobrazení** nabídky.
+5. Chcete-li zobrazit panel nástrojů, vyberte **nástrojů** z **zobrazení** nabídky.
 
-6.  Vlastní aktivity se zobrazí v **nástrojů** v kategorii, která byla aktivní před byla položka přidána. Například pokud **Obecné** kategorie vybraného v **nástrojů** před přidáním položku sady nástrojů, tato aktivita se zobrazí v části **Obecné** kategorie.
+6. Vlastní aktivity se zobrazí v **nástrojů** v kategorii, která byla aktivní před byla položka přidána. Například pokud **Obecné** kategorie vybraného v **nástrojů** před přidáním položku sady nástrojů, tato aktivita se zobrazí v části **Obecné** kategorie.
 
 ## <a name="see-also"></a>Viz také:
 

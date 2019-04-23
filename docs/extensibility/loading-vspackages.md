@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9878fea72c83cd6a466f2743f44d3eddca0bdba7
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: ce0f09c1749621838729e1e4f64feb3ca8b07628
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56702054"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117561"
 ---
 # <a name="load-vspackages"></a>Načtení rozšíření VSPackages
 Rozšíření VSPackages se načtou do sady Visual Studio pouze v případě jejich funkce je povinný. Například VSPackage se načte, když Visual Studio používá objekt pro vytváření projektu nebo služba, která implementuje sady VSPackage. Tato funkce je volána opožděné načtení, který se používá vždy, když je možné zvýšit výkon.
@@ -28,7 +28,7 @@ Rozšíření VSPackages se načtou do sady Visual Studio pouze v případě jej
 
 ### <a name="autoload-a-vspackage-in-a-specific-context"></a>AutoLoad VSPackage v určitém kontextu
 
--   Přidat `ProvideAutoLoad` atribut VSPackage atributy:
+- Přidat `ProvideAutoLoad` atribut VSPackage atributy:
 
     ```csharp
     [DefaultRegistryRoot(@"Software\Microsoft\VisualStudio\14.0")]
@@ -41,11 +41,11 @@ Rozšíření VSPackages se načtou do sady Visual Studio pouze v případě jej
 
      Zobrazit výčet pole <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80> seznam kontexty uživatelského rozhraní a jejich hodnoty identifikátor GUID.
 
--   Nastavit zarážku <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> metody.
+- Nastavit zarážku <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> metody.
 
--   Sestavení sady VSPackage a spusťte ladění.
+- Sestavení sady VSPackage a spusťte ladění.
 
--   Načítání řešení nebo vytvořit novou.
+- Načítání řešení nebo vytvořit novou.
 
      Sady VSPackage načte a zastaví na zarážce.
 
@@ -54,7 +54,7 @@ Rozšíření VSPackages se načtou do sady Visual Studio pouze v případě jej
 
  Můžete použít <xref:Microsoft.VisualStudio.Shell.Interop.IVsShell.LoadPackage%2A> metoda přinutit VSPackage načíst.
 
--   Vložte tento kód do <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> metoda sady VSPackage, která vynutí jiného VSPackage načíst:
+- Vložte tento kód do <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> metoda sady VSPackage, která vynutí jiného VSPackage načíst:
 
     ```csharp
     IVsShell shell = GetService(typeof(SVsShell)) as IVsShell;

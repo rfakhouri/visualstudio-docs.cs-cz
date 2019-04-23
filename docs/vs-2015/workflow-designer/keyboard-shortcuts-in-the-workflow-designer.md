@@ -11,12 +11,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 41774d09b72430aafc50794cd3d356baa4b565ab
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b1a03463d292fa1d4d980c62daa74b291d6a8cb1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54803634"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117301"
 ---
 # <a name="keyboard-shortcuts-in-the-workflow-designer"></a>Klávesové zkratky v návrháři postupu provádění
 Všechny základní funkce [!INCLUDE[wfd1](../includes/wfd1-md.md)] přístupná pomocí klávesnice.  
@@ -54,13 +54,13 @@ Všechny základní funkce [!INCLUDE[wfd1](../includes/wfd1-md.md)] přístupná
   
 - Připojení aktivity:  
   
-  1.  Vyberte zdrojová aktivita tabulátor do aktivity.  
+  1. Vyberte zdrojová aktivita tabulátor do aktivity.  
   
-  2.  Stiskněte kombinaci kláves CTRL + E, M tolikrát, kolikrát podle potřeby přesuňte fokus klávesnice na cílovou aktivitu.  
+  2. Stiskněte kombinaci kláves CTRL + E, M tolikrát, kolikrát podle potřeby přesuňte fokus klávesnice na cílovou aktivitu.  
   
-  3.  Stiskněte kombinaci kláves CTRL + E, S přidat cílová aktivita do výběru.  
+  3. Stiskněte kombinaci kláves CTRL + E, S přidat cílová aktivita do výběru.  
   
-  4.  Stiskněte kombinaci kláves CTRL + E, F, přidání konektoru ze zdroje do cíle.  
+  4. Stiskněte kombinaci kláves CTRL + E, F, přidání konektoru ze zdroje do cíle.  
   
   Poznámky o připojení pomocí klávesnice aktivity:  
   
@@ -73,18 +73,18 @@ Všechny základní funkce [!INCLUDE[wfd1](../includes/wfd1-md.md)] přístupná
 ### <a name="expression-editing"></a>Úpravy výrazů  
  Ve výchozím nastavení, výchozí klávesové zkratky pro [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] úprav textu v editoru výrazů v použít [!INCLUDE[wfd2](../includes/wfd2-md.md)], s těmito omezeními:  
   
--   Přemapování klávesové zkratky pro následující příkazy nemá žádný vliv. Výchozí klávesové zkratky můžete použít pouze přístup k těmto příkazům při úpravě výrazu.  
+- Přemapování klávesové zkratky pro následující příkazy nemá žádný vliv. Výchozí klávesové zkratky můžete použít pouze přístup k těmto příkazům při úpravě výrazu.  
   
-    1.  Vyjmout  
+    1. Vyjmout  
   
-    2.  Kopírovat  
+    2. Kopírovat  
   
-    3.  Vložit  
+    3. Vložit  
   
-    4.  Vybrat vše  
+    4. Vybrat vše  
   
-    5.  Vrácení zpět  
+    5. Vrácení zpět  
   
-    6.  Znovu:  
+    6. Znovu:  
   
--   Přemapování klávesové zkratky pro úpravu příkazů uvnitř výrazu [!INCLUDE[wfd2](../includes/wfd2-md.md)] v [!INCLUDE[vs2010](../includes/vs2010-md.md)], upravte klávesové zkratky v [!INCLUDE[wfd2](../includes/wfd2-md.md)] oboru. Změny provedené v textovém editoru oboru se nevztahují automaticky [!INCLUDE[wfd2](../includes/wfd2-md.md)]. Pokud chcete přemapovat klávesové zkratky na obou místech, musíte použít změny dvakrát (jednou pro každý obor).
+- Přemapování klávesové zkratky pro úpravu příkazů uvnitř výrazu [!INCLUDE[wfd2](../includes/wfd2-md.md)] v [!INCLUDE[vs2010](../includes/vs2010-md.md)], upravte klávesové zkratky v [!INCLUDE[wfd2](../includes/wfd2-md.md)] oboru. Změny provedené v textovém editoru oboru se nevztahují automaticky [!INCLUDE[wfd2](../includes/wfd2-md.md)]. Pokud chcete přemapovat klávesové zkratky na obou místech, musíte použít změny dvakrát (jednou pro každý obor).

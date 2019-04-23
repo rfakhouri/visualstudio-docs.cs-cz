@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 35e292d5fcaaea4f70154cf6febfc26bc20f1318
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 8667c55eed6de6b2b3c76af2ef45a5357a254516
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59648962"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60115988"
 ---
 # <a name="schema-cache"></a>Mezipaměť schémat
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -109,21 +109,21 @@ XML Editor obsahuje schéma mezipaměti umístěné v adresáři %InstallRoot%\X
 
 #### <a name="to-change-the-schema-cache-location"></a>Chcete-li změnit umístění mezipaměti schémat  
 
-1.  Z **nástroje** nabídce vyberte možnost **možnosti**.  
+1. Z **nástroje** nabídce vyberte možnost **možnosti**.  
 
-2.  Rozbalte **textový Editor**, rozbalte **XML**a potom klikněte na tlačítko **různé**.  
+2. Rozbalte **textový Editor**, rozbalte **XML**a potom klikněte na tlačítko **různé**.  
 
-3.  Klikněte na tlačítko **Procházet** tlačítko **schémata** pole.  
+3. Klikněte na tlačítko **Procházet** tlačítko **schémata** pole.  
 
-4.  Vyberte složku pro ukládání do mezipaměti schématu a klikněte na tlačítko **OK**.  
+4. Vyberte složku pro ukládání do mezipaměti schématu a klikněte na tlačítko **OK**.  
 
 #### <a name="to-add-another-directory-of-common-schemas"></a>Chcete-li přidat jiného adresáře běžných schémat  
 
-1.  Upravte soubor catalog.xml v adresáři mezipaměti schématu XML editor.  
+1. Upravte soubor catalog.xml v adresáři mezipaměti schématu XML editor.  
 
-2.  Přidat nový `<Catalog href="…"/>` element, který odkazuje na adresář další schémata.  
+2. Přidat nový `<Catalog href="…"/>` element, který odkazuje na adresář další schémata.  
 
-3.  Uložte provedené změny.  
+3. Uložte provedené změny.  
 
      Katalog se automaticky znovu načte.  
 
