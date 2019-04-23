@@ -9,12 +9,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a63234a820c4f3cffae65342bad0b7fd439edfff
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ba6262ef3174428dc14c5f747c4346b5f04e35ee
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54769950"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077625"
 ---
 # <a name="l2dbformxamlcs-source-code"></a>Zdrojový kód L2DBForm.XAML.cs
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,9 +24,9 @@ Toto téma obsahuje obsah a popis zdrojový kód C# v souboru L2DBForm.xaml.cs. 
 ## <a name="data-members"></a>Datové členy  
  Pro tuto třídu do okna prostředků používaných v L2DBForm.xaml přidružení se používají dva soukromé datové členy.  
   
--   Proměnná oboru názvů `myBooks` je inicializován na `"http://www.mybooks.com"`.  
+- Proměnná oboru názvů `myBooks` je inicializován na `"http://www.mybooks.com"`.  
   
--   Člen `bookList` je inicializována v konstruktoru na řetězec CDATA v L2DBForm.xaml tento řádek:  
+- Člen `bookList` je inicializována v konstruktoru na řetězec CDATA v L2DBForm.xaml tento řádek:  
   
     ```  
     bookList = (XElement)((ObjectDataProvider)Resources["LoadedBooks"]).Data;  
@@ -35,11 +35,11 @@ Toto téma obsahuje obsah a popis zdrojový kód C# v souboru L2DBForm.xaml.cs. 
 ## <a name="onaddbook-event-handler"></a>Obslužná rutina události OnAddBook  
  Tato metoda obsahuje následující tři příkazy:  
   
--   První podmíněný příkaz se používá k ověření vstupu.  
+- První podmíněný příkaz se používá k ověření vstupu.  
   
--   Druhý příkaz vytvoří novou <xref:System.Xml.Linq.XElement> z řetězce hodnoty zadané v uživatelem **přidat nová kniha** části uživatelského rozhraní (UI).  
+- Druhý příkaz vytvoří novou <xref:System.Xml.Linq.XElement> z řetězce hodnoty zadané v uživatelem **přidat nová kniha** části uživatelského rozhraní (UI).  
   
--   Poslední příkaz přidá tento nový prvek book na poskytovatele dat v L2DBForm.xaml. V důsledku toho vázání dat dynamického automaticky aktualizuje uživatelské rozhraní s touto novou položkou; není vyžadován žádný extra uživatelský kód.  
+- Poslední příkaz přidá tento nový prvek book na poskytovatele dat v L2DBForm.xaml. V důsledku toho vázání dat dynamického automaticky aktualizuje uživatelské rozhraní s touto novou položkou; není vyžadován žádný extra uživatelský kód.  
   
 ## <a name="onremove-event-handler"></a>Obslužná rutina události OnRemove  
  `OnRemove` Obslužná rutina je složitější než `OnAddBook` obslužné rutiny pro dva důvody. Protože nezpracovaném kódu XML obsahuje mezeru zachovaných, odpovídající vložení znaků newline musí také být nejprve odebrány s položku v seznamu. Za druhé, usnadnění výběru, která byla v odstraněné položky, resetuje na předchozí objektem v seznamu.  

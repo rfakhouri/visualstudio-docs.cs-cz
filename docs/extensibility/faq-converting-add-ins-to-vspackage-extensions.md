@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d1abb79bc8d982ba36091bfcbc6ec4c84c5df4a2
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.openlocfilehash: 255b49d3bf07a5a91896d2aff87001f1c68f3afe
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58789527"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077417"
 ---
 # <a name="faq-converting-add-ins-to-vspackage-extensions"></a>Nejčastější dotazy: Převádění doplňků na rozšíření VSPackage
 Nyní jsou zastaralé doplňky. Chcete-li nové rozšíření sady Visual Studio, je potřeba vytvořit rozšíření VSIX. Tady najdete odpovědi na některé nejčastější dotazy o tom, jak převést doplněk Visual Studio k rozšíření VSIX.
@@ -37,7 +37,7 @@ Nyní jsou zastaralé doplňky. Chcete-li nové rozšíření sady Visual Studio
 ## <a name="can-i-convert-my-add-in-project-to-a-vsix-project"></a>Můžete převést projekt doplňku do projektu VSIX
  Projekt doplňku nelze převést přímo do projektu VSIX, protože mechanismus používaný v projektů VSIX není stejné jako ty v projektech doplňků. Šablonou projektu VSIX šablony položek projektu správný a máte velké množství kódu, který usnadňuje relativně ke zprovoznění a spuštěné jako rozšíření VSIX.
 
-##  <a name="BKMK_StartDeveloping"></a> Jak můžu začít vyvíjet rozšíření VSIX?
+## <a name="BKMK_StartDeveloping"></a> Jak můžu začít vyvíjet rozšíření VSIX?
  Zde je, jak vytvořit rozšíření VSIX, který obsahuje příkaz nabídky:
 
 ### <a name="to-make-a-vsix-extension-that-has-a-menu-command"></a>Aby bylo rozšíření VSIX, který obsahuje příkaz nabídky
@@ -52,7 +52,7 @@ Nyní jsou zastaralé doplňky. Chcete-li nové rozšíření sady Visual Studio
 
    Na **nástroje** nabídky (v experimentální instanci) byste měli vidět tlačítko s názvem **název mé příkazu**. Když vyberete toto tlačítko, by měla zobrazit zpráva: **Inside TestVSPackagePackage.MenuItemCallback()**.
 
-##  <a name="BKMK_RunAddin"></a> Jak mohu spustit kód doplňku v sadě VSPackage?
+## <a name="BKMK_RunAddin"></a> Jak mohu spustit kód doplňku v sadě VSPackage?
 
 Přidejte kód se obvykle běží v jednom ze dvou způsobů:
 
@@ -158,24 +158,24 @@ Můžete provádět stejné akce v sadě VSPackage. Tady je postup pro přidán�
 
 #### <a name="to-insert-window-management-code-from-an-add-in-into-a-vspackage"></a>Vložit kód pro správu okna z doplňku na VSPackage
 
-1.  Vytvoření balíčku VSPackage, která obsahuje příkaz nabídky, stejně jako [Jak můžu začít vyvíjet rozšíření VSIX?](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_StartDeveloping) části.
+1. Vytvoření balíčku VSPackage, která obsahuje příkaz nabídky, stejně jako [Jak můžu začít vyvíjet rozšíření VSIX?](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_StartDeveloping) části.
 
-2.  Otevřete soubor, který obsahuje definici sady VSPackage. (V projektu jazyka C#, má  *\<název projektu > Package.cs*.)
+2. Otevřete soubor, který obsahuje definici sady VSPackage. (V projektu jazyka C#, má  *\<název projektu > Package.cs*.)
 
-3.  Přidejte tyto `using` příkazy:
+3. Přidejte tyto `using` příkazy:
 
     ```csharp
     using EnvDTE;
     using EnvDTE80;
     ```
 
-4.  Najít `MenuItemCallback` metody. Přidejte volání do <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> zobrazíte <xref:EnvDTE80.DTE2> objektu:
+4. Najít `MenuItemCallback` metody. Přidejte volání do <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> zobrazíte <xref:EnvDTE80.DTE2> objektu:
 
     ```csharp
     DTE2 dte = (DTE2)GetService(typeof(DTE));
     ```
 
-5.  Přidejte kód z tohoto doplňku. Například tady je kód, který přidá nový úkol **seznamu úkolů**uvádí počet úloh a odstraní jeden úkol.
+5. Přidejte kód z tohoto doplňku. Například tady je kód, který přidá nový úkol **seznamu úkolů**uvádí počet úloh a odstraní jeden úkol.
 
     ```csharp
     private void MenuItemCallback(object sender, EventArgs e)
@@ -206,24 +206,24 @@ Můžete provádět stejné akce v sadě VSPackage. Tady je postup pro přidán�
 ## <a name="how-do-i-manage-projects-and-solutions-in-a-vspackage"></a>Jak můžu spravovat projekty a řešení v sadě VSPackage?
  Pokud váš doplněk spravuje projekty a řešení, měl by kód doplňku fungovat v sadě VSPackage. Například tento postup ukazuje, jak přidat kód, který získá spouštěný projekt.
 
-1.  Vytvoření balíčku VSPackage, která obsahuje příkaz nabídky, stejně jako [Jak můžu začít vyvíjet rozšíření VSIX?](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_StartDeveloping) části.
+1. Vytvoření balíčku VSPackage, která obsahuje příkaz nabídky, stejně jako [Jak můžu začít vyvíjet rozšíření VSIX?](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_StartDeveloping) části.
 
-2.  Otevřete soubor, který obsahuje definici sady VSPackage. (V projektu jazyka C#, má  *\<název projektu > Package.cs*.)
+2. Otevřete soubor, který obsahuje definici sady VSPackage. (V projektu jazyka C#, má  *\<název projektu > Package.cs*.)
 
-3.  Přidejte tyto `using` příkazy:
+3. Přidejte tyto `using` příkazy:
 
     ```csharp
     using EnvDTE;
     using EnvDTE80;
     ```
 
-4.  Najít `MenuItemCallback` metody. Přidejte volání do <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> zobrazíte <xref:EnvDTE80.DTE2> objektu:
+4. Najít `MenuItemCallback` metody. Přidejte volání do <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> zobrazíte <xref:EnvDTE80.DTE2> objektu:
 
     ```csharp
     DTE2 dte = (DTE2)GetService(typeof(DTE));
     ```
 
-5.  Přidejte kód z tohoto doplňku. Například následující kód získá název projektu při spuštění v řešení. (Řešení vícenásobného projektu musí být otevřený po spuštění tohoto balíčku.)
+5. Přidejte kód z tohoto doplňku. Například následující kód získá název projektu při spuštění v řešení. (Řešení vícenásobného projektu musí být otevřený po spuštění tohoto balíčku.)
 
     ```csharp
     private void MenuItemCallback(object sender, EventArgs e)

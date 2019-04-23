@@ -9,12 +9,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: be57c5d8a298f37f9cffc7cc4b363651efbc9c2b
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 3e44a2c9b5fab120432f412e7c70f35c8e1ecafd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59665646"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077469"
 ---
 # <a name="how-to-change-the-return-type-of-a-datacontext-method-or-designer"></a>Postupy: Změnu návratového typu metody DataContext (O/R Designer)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,19 +28,19 @@ Návratový typ <xref:System.Data.Linq.DataContext> – metoda (založeno na ulo
   
 ### <a name="to-change-the-return-type-of-a-datacontext-method-from-the-auto-generated-type-to-an-entity-class"></a>Změna návratového typu metody DataContext z automaticky generovaný typ pro třídu entity  
   
-1.  Vyberte <xref:System.Data.Linq.DataContext> metoda v podokně metody.  
+1. Vyberte <xref:System.Data.Linq.DataContext> metoda v podokně metody.  
   
-2.  Vyberte **návratový typ** v **vlastnosti** okna a pak vyberte dostupné entity třídy v **návratový typ** seznamu. Pokud třída požadované entity není v seznamu, přidejte ji tak nebo jej vytvořit v [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] ho přidat do seznamu.  
+2. Vyberte **návratový typ** v **vlastnosti** okna a pak vyberte dostupné entity třídy v **návratový typ** seznamu. Pokud třída požadované entity není v seznamu, přidejte ji tak nebo jej vytvořit v [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] ho přidat do seznamu.  
   
-3.  Uložte soubor .dbml.  
+3. Uložte soubor .dbml.  
   
 ### <a name="to-change-the-return-type-of-a-datacontext-method-from-an-entity-class-back-to-the-auto-generated-type"></a>Chcete-li změnit zpět na automaticky generovaný typ návratového typu metody DataContext z třídy entity  
   
-1.  Vyberte <xref:System.Data.Linq.DataContext> metoda v podokně metody a odstraňte ho.  
+1. Vyberte <xref:System.Data.Linq.DataContext> metoda v podokně metody a odstraňte ho.  
   
-2.  Přetáhněte objekt databáze z **Průzkumníka serveru**/**Průzkumník databáze** na prázdnou oblast Návrháře relací objektů.  
+2. Přetáhněte objekt databáze z **Průzkumníka serveru**/**Průzkumník databáze** na prázdnou oblast Návrháře relací objektů.  
   
-3.  Uložte soubor .dbml.  
+3. Uložte soubor .dbml.  
   
 ## <a name="see-also"></a>Viz také  
  [Nástroje LINQ to SQL v sadě Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   

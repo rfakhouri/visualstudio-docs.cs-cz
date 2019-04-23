@@ -12,12 +12,12 @@ caps.latest.revision: 47
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0bda440c463082d62568bcdfd0525eebe2a17c61
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 08fd0d6e33de0c032ab63f013fca7ee3174b260e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54768300"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077378"
 ---
 # <a name="image-editor"></a>Editor obrázků
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,13 +44,13 @@ Tento dokument popisuje, jak pracovat [!INCLUDE[vsprvs](../includes/vsprvs-md.md
   
 #### <a name="to-add-an-image-to-your-project"></a>Chcete-li přidat bitovou kopii do svého projektu  
   
-1.  V **Průzkumníka řešení**, otevřete místní nabídku pro projekt, který chcete přidat obrázek a klikněte na tlačítko **přidat**, **nová položka**.  
+1. V **Průzkumníka řešení**, otevřete místní nabídku pro projekt, který chcete přidat obrázek a klikněte na tlačítko **přidat**, **nová položka**.  
   
-2.  V **přidat novou položku** dialogovém okně **nainstalováno**vyberte **grafiky**a pak vyberte příslušný formát pro bitovou kopii. Informace o tom, jak vybrat formát souboru na základě vašich požadavků najdete v následující části.  
+2. V **přidat novou položku** dialogovém okně **nainstalováno**vyberte **grafiky**a pak vyberte příslušný formát pro bitovou kopii. Informace o tom, jak vybrat formát souboru na základě vašich požadavků najdete v následující části.  
   
-3.  Zadejte **název** souboru obrázku a **umístění** místo se má vytvořit.  
+3. Zadejte **název** souboru obrázku a **umístění** místo se má vytvořit.  
   
-4.  Zvolte **přidat** tlačítko.  
+4. Zvolte **přidat** tlačítko.  
   
 ### <a name="choosing-the-image-format"></a>Výběr formátu image  
  V závislosti na tom, jak budete chtít použít bitovou kopii může být vhodnější než jiné určité formáty souborů. Například některé formáty nemusí podporovat funkce, která potřebujete – například průhlednost nebo konkrétní barvu formátu – nebo nemusí poskytnout vhodný komprese pro typ obsahu bitové kopie, které jste naplánovali.  
@@ -146,7 +146,7 @@ Tento dokument popisuje, jak pracovat [!INCLUDE[vsprvs](../includes/vsprvs-md.md
 |**Tužky**, **štětce**, **rozprašovač**, **řádku**, **obdélník**, **zaoblený obdélník** , **Elipsa**, **Text**|Pro výběr aktivního spolu s bitovou kopii, v blendu **vlastnosti** okna, rozbalte **kanály** skupiny vlastností a nastavte **nakreslit** zaškrtávací políčko na  **Systém Alpha** channel a následně nakreslete normálně.<br /><br /> Kreslení pomocí aktivního výběru a ponechte hodnotu alfa bitové kopie na místě, zrušte **nakreslit** zaškrtávací políčko z **alfa** channel a následně nakreslete normálně.|  
 |**Výplň**|Přizpůsobte výběr aktivního spolu s bitovou kopii, prostě vyberte oblasti tak, aby vyplnil.<br /><br /> Chcete-li použít výběr aktivního – včetně hodnoty alfa kanál – přepsat bitovou kopii, stiskněte a podržte klávesu Shift a klikněte na tlačítko oblasti tak, aby vyplnil.|  
   
-###  <a name="ImageProperties"></a> Vlastnosti bitové kopie  
+### <a name="ImageProperties"></a> Vlastnosti bitové kopie  
  Můžete použít **vlastnosti** okno zadat různé vlastnosti bitové kopie. Například můžete nastavit vlastnosti šířku a výšku obrázku.  
   
  Následující tabulka popisuje vlastnosti bitové kopie.  
@@ -171,9 +171,9 @@ Tento dokument popisuje, jak pracovat [!INCLUDE[vsprvs](../includes/vsprvs-md.md
 #### <a name="resizing-images"></a>Změna velikosti obrázků  
  Tady jsou dva způsoby, jak změnit velikost obrázku. Editor obrázků v obou případech se používá bi lineární interpolace k Převzorkovat na obrázku.  
   
--   V **vlastnosti** okno, zadejte nové hodnoty **šířka** a **výška** vlastnosti.  
+- V **vlastnosti** okno, zadejte nové hodnoty **šířka** a **výška** vlastnosti.  
   
--   Vyberte celého obrázku a můžete změnit velikost obrázku ohraničení značky.  
+- Vyberte celého obrázku a můžete změnit velikost obrázku ohraničení značky.  
   
 ### <a name="working-with-tools"></a>Práce s nástroji  
   
@@ -207,7 +207,7 @@ Tento dokument popisuje, jak pracovat [!INCLUDE[vsprvs](../includes/vsprvs-md.md
 |Ctrl|||Zkopíruje a pak změní velikost obsahu vybrané oblasti.|  
 |Ctrl|SHIFT||Zkopíruje a proporcionálně změní obsah vybrané oblasti.|  
   
-####  <a name="ToolProperties"></a> Vlastnosti nástroje  
+#### <a name="ToolProperties"></a> Vlastnosti nástroje  
  Nástroj je vybraná, ale můžete použít **vlastnosti** okno a zadejte podrobnosti o tom, jak ovlivňuje bitovou kopii. Například můžete nastavit tloušťku **tužky** nástroje nebo barvu **štětce** nástroj.  
   
  Můžete nastavit barvu popředí a barvu pozadí. Obě podporují alfa kanálu poskytnout uživatelský neprůhlednosti. Bude nastavení platit pro všechny nástroje. Pokud používáte myš, levým tlačítkem myši odpovídá barvu popředí a odpovídá pravým tlačítkem myši na barvu pozadí.  
