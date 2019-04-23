@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9a896a5b850887b36a4fb6596923e742429c44dc
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: d49c062540b50e442f2ac32e69ee37934c53bf2c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56714124"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068610"
 ---
 # <a name="how-to-implement-undo-management"></a>Postupy: Implementace správy zpět
 Primární rozhraní používá ke správě vrácení zpět se ale <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager>, která je implementována pomocí prostředí. Pro podporu správy vrácení zpět, implementovat samostatné zpět jednotky (tedy <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoUnit>, který může obsahovat více jednotlivé kroky.
@@ -27,9 +27,9 @@ Primární rozhraní používá ke správě vrácení zpět se ale <xref:Microso
 
 ### <a name="to-support-undo-management-for-a-single-view-editor"></a>Pro podporu zpět správy jedním zobrazením editoru
 
-1.  Volání `QueryInterface` na `IServiceProvider` rozhraní okna rámce pro `IOleUndoManager`, z objektu zobrazení dokumentu k tomuto správci vrácení zpět (`IID_IOLEUndoManager`).
+1. Volání `QueryInterface` na `IServiceProvider` rozhraní okna rámce pro `IOleUndoManager`, z objektu zobrazení dokumentu k tomuto správci vrácení zpět (`IID_IOLEUndoManager`).
 
-2.  Při zobrazení je umístěna do okna rámce, získá lokality ukazatel, který můžete použít k volání `QueryInterface` pro `IServiceProvider`.
+2. Při zobrazení je umístěna do okna rámce, získá lokality ukazatel, který můžete použít k volání `QueryInterface` pro `IServiceProvider`.
 
 ## <a name="cases-where-an-editor-supports-multiple-views"></a>Případy, kdy editor podporuje více zobrazení
  Pokud už máte dokument a zobrazení oddělení, je obvykle jeden vhodný program přidružený k samotný dokument. Všechny jednotky akcí zpět se umístí na jeden vhodný program přidružený k objektu data dokumentu.
@@ -46,17 +46,17 @@ Primární rozhraní používá ke správě vrácení zpět se ale <xref:Microso
 
 3. Propojení vašich <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> a <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> volání do uložených `IOleCommandTarget` rozhraní pro následující příkazy StandardCommandSet97:
 
-   -   cmdidUndo
+   - cmdidUndo
 
-   -   cmdidMultiLevelUndo
+   - cmdidMultiLevelUndo
 
-   -   cmdidRedo
+   - cmdidRedo
 
-   -   cmdidMultiLevelRedo
+   - cmdidMultiLevelRedo
 
-   -   cmdidMultiLevelUndoList
+   - cmdidMultiLevelUndoList
 
-   -   cmdidMultiLevelRedoList
+   - cmdidMultiLevelRedoList
 
 4. Volání `QueryInterface` na `IOleUndoManager` pro `IID_IVsChangeTrackingUndoManager`. Ukazatel na Store <xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager>.
 

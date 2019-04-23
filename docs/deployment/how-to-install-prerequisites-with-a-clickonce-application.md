@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eadf78a2d72d94fa7d1f613e26b8fadc36a1c805
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: b0535ec606722ec162804718e7ee14bdd4714f4b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56633418"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077007"
 ---
 # <a name="how-to-install-prerequisites-with-a-clickonce-application"></a>Postupy: Instalace předpokladů s aplikací ClickOnce
 Všechny [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace vyžadují v počítači je nainstalována správná verze rozhraní .NET Framework, než budou moci spustit; mnohé aplikace mají také další požadavky. Při publikování [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace, můžete použít sadu součásti, které mají být zabaleny spolu s vaší aplikace. Při instalaci se provede kontrola pro každý požadavek k určení, zda je již existuje; Pokud nebude třeba nainstalovat před instalací [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace.
@@ -38,31 +38,31 @@ Všechny [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplik
 
 ### <a name="to-specify-prerequisites-to-install-with-a-clickonce-application"></a>Chcete-li určit požadavky pro instalaci s aplikací ClickOnce
 
-1.  S projekt vybraný v **Průzkumníka řešení**na **projektu** klikněte na nabídku **vlastnosti**.
+1. S projekt vybraný v **Průzkumníka řešení**na **projektu** klikněte na nabídku **vlastnosti**.
 
-2.  Vyberte **publikovat** podokně.
+2. Vyberte **publikovat** podokně.
 
-3.  Klikněte na tlačítko **požadavky** tlačítko Otevřít **požadavky** dialogové okno.
+3. Klikněte na tlačítko **požadavky** tlačítko Otevřít **požadavky** dialogové okno.
 
-4.  V **požadavky** dialogové okno pole, ujistěte se, že **vytvořit instalační program pro nainstalování nezbytných součástí** je zaškrtnuto políčko.
+4. V **požadavky** dialogové okno pole, ujistěte se, že **vytvořit instalační program pro nainstalování nezbytných součástí** je zaškrtnuto políčko.
 
-5.  V **požadavky** seznamu, zkontrolujte součásti, které chcete nainstalovat a potom klikněte na **OK**.
+5. V **požadavky** seznamu, zkontrolujte součásti, které chcete nainstalovat a potom klikněte na **OK**.
 
      Vybrané součásti se zabalit a publikovat spolu s vaší aplikace.
 
 ### <a name="to-specify-a-different-download-location-for-prerequisites"></a>Chcete-li určit různá umístění pro nainstalování součástí
 
-1.  S projekt vybraný v **Průzkumníka řešení**na **projektu** klikněte na nabídku **vlastnosti**.
+1. S projekt vybraný v **Průzkumníka řešení**na **projektu** klikněte na nabídku **vlastnosti**.
 
-2.  Vyberte **publikovat** podokně.
+2. Vyberte **publikovat** podokně.
 
-3.  Klikněte na tlačítko **požadavky** tlačítko Otevřít **požadavky** dialogové okno.
+3. Klikněte na tlačítko **požadavky** tlačítko Otevřít **požadavky** dialogové okno.
 
-4.  V **požadavky** dialogové okno pole, ujistěte se, že **vytvořit instalační program pro nainstalování nezbytných součástí** je zaškrtnuto políčko.
+4. V **požadavky** dialogové okno pole, ujistěte se, že **vytvořit instalační program pro nainstalování nezbytných součástí** je zaškrtnuto políčko.
 
-5.  V **Zadejte prosím umístění pro nainstalování součástí** vyberte **stáhnout nezbytné součásti z následujícího umístění**.
+5. V **Zadejte prosím umístění pro nainstalování součástí** vyberte **stáhnout nezbytné součásti z následujícího umístění**.
 
-6.  Z rozevíracího seznamu vyberte umístění nebo zadejte adresu URL, cestu k souboru nebo umístění FTP a klikněte na **OK.**
+6. Z rozevíracího seznamu vyberte umístění nebo zadejte adresu URL, cestu k souboru nebo umístění FTP a klikněte na **OK.**
 
     > [!NOTE]
     >  Ujistěte se, že existují instalační programy pro zadanou součástí v zadaném umístění.

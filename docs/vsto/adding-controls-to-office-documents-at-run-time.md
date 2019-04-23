@@ -22,12 +22,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7b09e658c896f4f3e864c46dbd02d65a871da318
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: c7fa5073fca476159aa756b7a5527dd1007ab66b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56600838"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075802"
 ---
 # <a name="add-controls-to-office-documents-at-runtime"></a>Přidání ovládacích prvků do dokumentů Office za běhu
   Můžete přidat ovládací prvky do dokumentu Microsoft Office Word a sešit aplikace Microsoft Office Excel za běhu. Můžete také odebrat je za běhu. Ovládací prvky, které můžete přidat nebo odebrat za běhu se nazývají *dynamické ovládací prvky*.
@@ -44,16 +44,16 @@ ms.locfileid: "56600838"
 
   ![odkaz na video](../vsto/media/playvideo.gif "odkaz na video") související video ukázku naleznete v tématu [postup: Přidání ovládacích prvků na plochu dokumentu za běhu? ](http://go.microsoft.com/fwlink/?LinkId=132782).
 
-##  <a name="ControlsCollection"></a> Spravovat ovládacích prvků za běhu pomocí kolekce ovládacích prvků
+## <a name="ControlsCollection"></a> Spravovat ovládacích prvků za běhu pomocí kolekce ovládacích prvků
  Pokud chcete přidat, získat nebo odebrání ovládacích prvků za běhu, použijte pomocné metody <xref:Microsoft.Office.Tools.Excel.ControlCollection> a <xref:Microsoft.Office.Tools.Word.ControlCollection> objekty.
 
  Přístup k těmto objektům způsob závisí na typu projektu, který vyvíjíte:
 
--   V projektu na úrovni dokumentu pro Excel, použijte <xref:Microsoft.Office.Tools.Excel.Worksheet.Controls%2A> vlastnost `Sheet1`, `Sheet2`, a `Sheet3` třídy. Další informace o těchto tříd naleznete v tématu [hostitelská položka Worksheet](../vsto/worksheet-host-item.md).
+- V projektu na úrovni dokumentu pro Excel, použijte <xref:Microsoft.Office.Tools.Excel.Worksheet.Controls%2A> vlastnost `Sheet1`, `Sheet2`, a `Sheet3` třídy. Další informace o těchto tříd naleznete v tématu [hostitelská položka Worksheet](../vsto/worksheet-host-item.md).
 
--   V projektu na úrovni dokumentu pro Word, použijte <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> vlastnost `ThisDocument` třídy. Další informace o této třídy najdete v tématu [hostitelská položka Document](../vsto/document-host-item.md).
+- V projektu na úrovni dokumentu pro Word, použijte <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> vlastnost `ThisDocument` třídy. Další informace o této třídy najdete v tématu [hostitelská položka Document](../vsto/document-host-item.md).
 
--   V projekt doplňku VSTO pro Excel nebo Word použít `Controls` vlastnost <xref:Microsoft.Office.Tools.Excel.Worksheet> nebo <xref:Microsoft.Office.Tools.Word.Document> , který vygenerujete v době běhu. Další informace o generování těchto objektů za běhu, naleznete v tématu [rozšíření Wordových dokumentů a Excelových sešitů v doplňcích VSTO za běhu](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).
+- V projekt doplňku VSTO pro Excel nebo Word použít `Controls` vlastnost <xref:Microsoft.Office.Tools.Excel.Worksheet> nebo <xref:Microsoft.Office.Tools.Word.Document> , který vygenerujete v době běhu. Další informace o generování těchto objektů za běhu, naleznete v tématu [rozšíření Wordových dokumentů a Excelových sešitů v doplňcích VSTO za běhu](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).
 
 ### <a name="add-controls"></a>Přidání ovládacích prvků
  <xref:Microsoft.Office.Tools.Excel.ControlCollection> a <xref:Microsoft.Office.Tools.Word.ControlCollection> typy zahrnují pomocné metody, které vám umožní přidat hostitelské ovládací prvky a běžných ovládacích prvků Windows Forms do dokumentů a listy nástroje. Každý název metody má formát `Add` *třídu ovládacího prvku*, kde *třídu ovládacího prvku* je název třídy ovládacího prvku, který chcete přidat. Například, chcete-li přidat <xref:Microsoft.Office.Tools.Excel.NamedRange> ovládacího prvku do dokumentu, použijte <xref:Microsoft.Office.Tools.Excel.ControlCollection.AddNamedRange%2A> metody.
@@ -76,7 +76,7 @@ ms.locfileid: "56600838"
 > [!NOTE]
 >  Neodebírejte programově ovládacích prvků v `Shutdown` obslužná rutina události dokumentu. Prvky uživatelského rozhraní dokumentu již nejsou k dispozici při `Shutdown` událost se vyvolá. Pokud chcete odebrat ovládací prvky před zavřením dokumentu, přidejte svůj kód obslužné rutiny události pro jiné události, jako například <xref:Microsoft.Office.Tools.Word.Document.BeforeClose> nebo <xref:Microsoft.Office.Tools.Word.Document.BeforeSave> pro Word, nebo <xref:Microsoft.Office.Tools.Excel.Workbook.BeforeClose>, nebo <xref:Microsoft.Office.Tools.Excel.Workbook.BeforeSave> pro aplikaci Excel.
 
-##  <a name="HostControls"></a> Přidání hostitelských ovládacích prvků do dokumentů
+## <a name="HostControls"></a> Přidání hostitelských ovládacích prvků do dokumentů
 
 Když přidáte do dokumentů prostřednictvím kódu programu hostitelské ovládací prvky je nutné zadat název, který jednoznačně identifikuje ovládací prvek a musíte určit, kde chcete-li přidat ovládací prvek v dokumentu. Konkrétní pokyny naleznete v následujících tématech:
 
@@ -97,7 +97,7 @@ Po uložení a pak zavření dokumentu z jejich události jsou odpojené všechn
 > [!NOTE]
 > Nejsou zadány pomocné metody pro následující hostování ovládacích prvků, protože tyto ovládací prvky nemohou být přidány do dokumentů prostřednictvím kódu programu: <xref:Microsoft.Office.Tools.Excel.XmlMappedRange>, <xref:Microsoft.Office.Tools.Word.XMLNode>, a <xref:Microsoft.Office.Tools.Word.XMLNodes>.
 
-##  <a name="WindowsForms"></a> Přidání ovládacích prvků Windows Forms do dokumentů
+## <a name="WindowsForms"></a> Přidání ovládacích prvků Windows Forms do dokumentů
  Při přidávání ovládacího prvku Windows Forms se prostřednictvím kódu programu k dokumentu, je nutné zadat umístění ovládacího prvku a název, který jednoznačně identifikuje ovládací prvek. [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Poskytuje pomocné metody pro každý ovládací prvek. Tyto metody jsou přetěžované, takže můžete předat rozsah nebo konkrétní souřadnice pro umístění ovládacího prvku.
 
  Po uložení a pak zavření dokumentu, se odeberou všechny dynamicky vytvořený ovládací prvky Windows Forms z dokumentu. Přidejte kód do svého řešení k opětovnému vytvoření ovládacích prvků, když znovu otevřete dokument. Pokud vytvoříte dynamické ovládací prvky Windows Forms pomocí doplňku VSTO, jsou ponechána obálky ActiveX pro ovládací prvky v dokumentu. Další informace najdete v tématu [uchování dynamických ovládacích prvků v dokumentech systému Office](../vsto/persisting-dynamic-controls-in-office-documents.md).

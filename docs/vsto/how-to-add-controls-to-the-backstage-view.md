@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bb038fdebdfefeb5f401860c17b5567028c3bb77
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: c4241464fe8a43af882fbdbad0f898838e8fd897
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56621341"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068363"
 ---
 # <a name="how-to-add-controls-to-the-backstage-view"></a>Postupy: Přidání ovládacích prvků do zobrazení Backstage
   Návrhář pásu karet můžete použít k přidávání ovládacích prvků do nabídky, které se otevře po kliknutí **souboru** kartu. Při spuštění aplikace, ovládací prvky, které přidáte **souboru** karta se skupina s názvem **Add-ins**.
@@ -36,31 +36,31 @@ ms.locfileid: "56621341"
 
 ### <a name="to-add-controls-to-backstage-view"></a>Přidání ovládacích prvků do zobrazení Backstage
 
-1.  V návrhovém zobrazení otevřete položku pásu karet.
+1. V návrhovém zobrazení otevřete položku pásu karet.
 
      Informace o tom, jak přidat **pás karet (vizuální návrhář)** položky do projektu, přečtěte si téma [jak: Začínáme s přizpůsobením pásu karet](../vsto/how-to-get-started-customizing-the-ribbon.md).
 
-2.  V Návrháři pásu karet klikněte na tlačítko **souboru** kartu.
+2. V Návrháři pásu karet klikněte na tlačítko **souboru** kartu.
 
      Otevře se Návrhář nabídek. Tuto návrhovou plochu neobsahuje žádné ovládací prvky.
 
-3.  Z **ovládací prvky Ribbon Office** karty **nástrojů**, přetáhněte kterýkoli z následujících ovládacích prvků na nabídce Návrhář:
+3. Z **ovládací prvky Ribbon Office** karty **nástrojů**, přetáhněte kterýkoli z následujících ovládacích prvků na nabídce Návrhář:
 
-    -   Tlačítko
+    - Tlačítko
 
-    -   CheckBox
+    - CheckBox
 
-    -   Galerie
+    - Galerie
 
-    -   Nabídka
+    - Nabídka
 
-    -   Oddělovač
+    - Oddělovač
 
-    -   SplitButton
+    - SplitButton
 
-    -   ToggleButton
+    - ToggleButton
 
-4.  Přetáhněte ovládací prvky a přesunout jej do nového umístění v nabídce.
+4. Přetáhněte ovládací prvky a přesunout jej do nového umístění v nabídce.
 
 ## <a name="see-also"></a>Viz také:
 - [Přehled pásu karet](../vsto/ribbon-overview.md)

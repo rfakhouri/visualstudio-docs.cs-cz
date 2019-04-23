@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6664bf9ed0e77b99b7d5482907fe07f155fe6162
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: bb12d80c581b0ea0b605932083cf4f62fe764e30
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54758339"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073485"
 ---
 # <a name="generate-and-configure-your-app-from-models"></a>Generování a konfigurace aplikace z modelů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,27 +54,27 @@ Můžete vytvořit nebo nakonfigurovat částí aplikace z modelu. Model může 
 ## <a name="developing-a-derived-application"></a>Vývoj odvozené aplikace  
  Můžou být užitečné následující obecné pokyny.  
   
--   **Spustit konkrétní a generalizace.** Nejprve napište konkrétní verzi vaší aplikace. Tato verze by měla fungovat v jedné sadě podmínek. Jakmile budete spokojeni se pracuje správně, můžete provést některé z jeho odvození z modelu. Rozšiřte odvozené části postupně.  
+- **Spustit konkrétní a generalizace.** Nejprve napište konkrétní verzi vaší aplikace. Tato verze by měla fungovat v jedné sadě podmínek. Jakmile budete spokojeni se pracuje správně, můžete provést některé z jeho odvození z modelu. Rozšiřte odvozené části postupně.  
   
      Třeba návrh webové stránky, která má specifickou sadu webových stránek, než bude možné navrhnout webové aplikace, která představuje stránek, které jsou definovány v modelu.  
   
--   **Model variant aspekty.** Identifikujte aspekty, které se liší, buď mezi jedno nasazení a další, nebo v čase jako požadavky změnit. Jedná se o jejich aspekty, které by měla být odvozena z modelu.  
+- **Model variant aspekty.** Identifikujte aspekty, které se liší, buď mezi jedno nasazení a další, nebo v čase jako požadavky změnit. Jedná se o jejich aspekty, které by měla být odvozena z modelu.  
   
      Pokud sadu webových stránek a odkazů mezi jejich změny ale styl a formátování stránek je vždy stejný, a měl by popisovat odkazy modelu, ale nemá k popisu formátu stránky.  
   
--   **Zvláštní aspekty.** Pokud proměnné aspekty je možné rozdělit do nezávislých oblasti, použití samostatných modelů pro každou oblast. Pomocí ModelBus, můžete definovat operace, které ovlivňují modely a omezení mezi nimi.  
+- **Zvláštní aspekty.** Pokud proměnné aspekty je možné rozdělit do nezávislých oblasti, použití samostatných modelů pro každou oblast. Pomocí ModelBus, můžete definovat operace, které ovlivňují modely a omezení mezi nimi.  
   
      Například definovat navigaci mezi webových stránek a jiný model, pokud chcete definovat rozložení stránek pomocí jeden model. Další informace najdete v tématu [modely UML integrovat s jinými modely a nástroji](../modeling/integrate-uml-models-with-other-models-and-tools.md).  
   
--   **Model požadavku, nikoli řešení.** Návrh DSL nebo přizpůsobit UML, tak, aby popisuje požadavky uživatelů. Naopak nenavrhujte zápis podle proměnné aspekty implementace.  
+- **Model požadavku, nikoli řešení.** Návrh DSL nebo přizpůsobit UML, tak, aby popisuje požadavky uživatelů. Naopak nenavrhujte zápis podle proměnné aspekty implementace.  
   
      Například model navigace webové by měla představovat webových stránek a hypertextových odkazů mezi nimi. Model navigace webové by neměla představovat fragmenty kódu HTML nebo tříd v aplikaci.  
   
--   **Generovat nebo interpretace?** Pokud požadavky pro konkrétní nasazení se jen zřídka mění, generování programového kódu z modelu. Pokud požadavky můžou často měnit, nebo může existovat vedle sebe ve více než jednu hodnotu typu variant v jednom nasazení, zapište aplikaci tak, aby může číst a interpretovat modelu.  
+- **Generovat nebo interpretace?** Pokud požadavky pro konkrétní nasazení se jen zřídka mění, generování programového kódu z modelu. Pokud požadavky můžou často měnit, nebo může existovat vedle sebe ve více než jednu hodnotu typu variant v jednom nasazení, zapište aplikaci tak, aby může číst a interpretovat modelu.  
   
      Například pokud používáte model vašeho webu pro vývoj řadě různých webů a samostatně instalovaný webů, pak by měl vygenerujete kód lokality z modelu. Ale ho použijete model k řízení lokality, která se každý den mění, je lepší pro zápis webový server, který čte model a odpovídajícím způsobem zobrazí webu.  
   
--   **UML nebo DSL?** Zvažte vytvoření zápis modelování s využitím Stereotypy pro rozšíření UML. Definice DSL, pokud neexistuje žádný diagram UML, která odpovídá účel. Ale vyhnuli narušení funkčnosti standardní sémantiku UML.  
+- **UML nebo DSL?** Zvažte vytvoření zápis modelování s využitím Stereotypy pro rozšíření UML. Definice DSL, pokud neexistuje žádný diagram UML, která odpovídá účel. Ale vyhnuli narušení funkčnosti standardní sémantiku UML.  
   
      Diagram tříd UML je například kolekce polí a šipky; v tomto zápisu můžete teoreticky definovat cokoli. Ale nedoporučujeme používat s výjimkou případů, ve kterém jsou ve skutečnosti popisující sadu typů diagramu tříd. Může například přizpůsobení diagramů tříd k popisu různých typů webových stránek.  
   

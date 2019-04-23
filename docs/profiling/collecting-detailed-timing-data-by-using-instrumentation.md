@@ -11,23 +11,23 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9bd897d6b986b1d0c7a06a36a58eb88ba929bfc4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a58a5a1431dbb8ddbc9b23d93928f615e945b3b3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56617571"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074044"
 ---
 # <a name="collect-detailed-timing-data-by-using-instrumentation"></a>Shromažďování podrobných dat časování pomocí instrumentace
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Metody nástroje pro profilaci instrumentace vkládá kód profilování do kopie modulu. Kód zaznamenává každou položku, ukončení a volání funkce funkce v modulu během profilování. Metody instrumentace je užitečná pro shromažďování podrobných informací o časování o části kódu a k pochopení dopadu vstupních a výstupních operací na výkon aplikace.
 
  Metoda instrumentace můžete zadat pomocí jedné z následujících postupů:
 
--   Na první stránce průvodce Profilováním, vyberte **instrumentace**.
+- Na první stránce průvodce Profilováním, vyberte **instrumentace**.
 
--   Na **prohlížeč výkonu** nástrojů v **metoda** klikněte na možnost **instrumentace**.
+- Na **prohlížeč výkonu** nástrojů v **metoda** klikněte na možnost **instrumentace**.
 
--   Na **Obecné** stránky dialogové okno Vlastnosti relace výkonu, vyberte **instrumentace**.
+- Na **Obecné** stránky dialogové okno Vlastnosti relace výkonu, vyberte **instrumentace**.
 
 ## <a name="common-tasks"></a>Běžné úkoly
  Můžete zadat další možnosti v _relace výkonu_**stránky vlastností** dialogovému oknu relace výkonu. Chcete-li otevřít toto dialogové okno:

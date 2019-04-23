@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b7583a25e000478e473cce61fd85e0158bad4212
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 7fab8a42d5559c23ce6816d5a247561a4376a7fe
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56609551"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075828"
 ---
 # <a name="manifest-to-code"></a>Manifest do kódu
 Manifest pro nástroj kódu je konzolová aplikace, která přijímá soubor .imagemanifest Image služby Visual Studio a generuje soubory pro odkazování na image manifest hodnoty v jazyce C++, nebo soubor souhrnného C#, VB nebo .vsct soubory pro sadu Visual Studio rozšíření. Tento nástroj generuje obálky soubory, které lze použít pro žádost o Image z Image ve službě Visual Studio přímo, nebo pro předávání manifestu hodnot prostřednictvím rozhraní API, pokud kód zpracovává všechny své vlastní uživatelské rozhraní a vykreslování.
@@ -40,17 +40,17 @@ Manifest pro nástroj kódu je konzolová aplikace, která přijímá soubor .im
 
  **Příklady**
 
--   ManifestToCode /manifest:D:\MyManifest.imagemanifest /language:CSharp
+- ManifestToCode /manifest:D:\MyManifest.imagemanifest /language:CSharp
 
--   ManifestToCode /manifest:D:\MyManifest.imagemanifest /language:C++/namespace: Moje:: Namespace /imageIdClass:MyImageIds /monikerClass:MyMonikers /classAccess:friend
+- ManifestToCode /manifest:D:\MyManifest.imagemanifest /language:C++/namespace: Moje:: Namespace /imageIdClass:MyImageIds /monikerClass:MyMonikers /classAccess:friend
 
--   ManifestToCode /manifest:D:\MyManifest.imagemanifest                /language:VSCT                /imageIdClass:MyImageIds
+- ManifestToCode /manifest:D:\MyManifest.imagemanifest                /language:VSCT                /imageIdClass:MyImageIds
 
 ## <a name="notes"></a>Poznámky
 
--   Doporučujeme použít tento nástroj se image manifestů, které byly vytvořeny podle Manifest z prostředků nástroje.
+- Doporučujeme použít tento nástroj se image manifestů, které byly vytvořeny podle Manifest z prostředků nástroje.
 
--   Nástroj zjistí pouze položky symbolů ke generování kódu obálky. Pokud image manifest obsahuje žádné symboly, obálky vygenerovaný kód bude prázdný. Pokud je obrázek nebo sadu bitových kopií v manifestu obrázků, které nepoužívají symboly, budou vyloučeny z obálku kódu.
+- Nástroj zjistí pouze položky symbolů ke generování kódu obálky. Pokud image manifest obsahuje žádné symboly, obálky vygenerovaný kód bude prázdný. Pokud je obrázek nebo sadu bitových kopií v manifestu obrázků, které nepoužívají symboly, budou vyloučeny z obálku kódu.
 
 ## <a name="sample-output"></a>Ukázkový výstup
  **C# – obálky**

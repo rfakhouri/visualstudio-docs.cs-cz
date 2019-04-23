@@ -18,12 +18,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 94629a2e64d154313711b3e8968b28959d3341e8
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 269b6bba8c832d240813641317b8f0aa61fa0f34
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54805416"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069508"
 ---
 # <a name="how-to-move-around-in-the-visual-studio-ide"></a>Postupy: Pohyb v integrovaném vývojovém prostředí sady Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,20 +63,20 @@ Integrované vývojové prostředí (IDE) byla navržená tak, aby bylo možné 
 
 #### <a name="to-switch-to-specific-files-in-the-editor"></a>Přepnout na konkrétní soubory v editoru
 
--   Stisknutím kláves CTRL + TAB zobrazíte **IDE Navigátor**. Podržte stisknutou klávesu CTRL a stiskněte klávesu TAB ve opakovaně, dokud nevyberete soubor, který máte v úmyslu přepnout na.
+- Stisknutím kláves CTRL + TAB zobrazíte **IDE Navigátor**. Podržte stisknutou klávesu CTRL a stiskněte klávesu TAB ve opakovaně, dokud nevyberete soubor, který máte v úmyslu přepnout na.
 
     > [!TIP]
     >  Pořadí, ve kterém můžete projít **aktivních souborů** seznamu, podržte klávesu CTRL + SHIFT – klávesy a stisknutím klávesy TAB.
 
      \- nebo –
 
--   V pravém horním rohu editoru zvolte **aktivních souborů** tlačítko a pak vyberte soubor ze seznamu přepnout na.
+- V pravém horním rohu editoru zvolte **aktivních souborů** tlačítko a pak vyberte soubor ze seznamu přepnout na.
 
      \- nebo –
 
--   V panelu nabídky zvolte **okno**, **Windows**.
+- V panelu nabídky zvolte **okno**, **Windows**.
 
--   V seznamu, vyberte soubor, který chcete zobrazit a pak zvolte **aktivovat**.
+- V seznamu, vyberte soubor, který chcete zobrazit a pak zvolte **aktivovat**.
 
 ## <a name="navigating-among-tool-windows-in-the-ide"></a>Procházení mezi nástroji Windows v prostředí IDE
  **IDE Navigátor** také umožňuje cyklicky procházet okna nástrojů, je nutné otevřít v integrovaném vývojovém prostředí. Můžete použít buď dva příkazy pro přístup k **IDE Navigátor** budete cyklicky procházet okna nástrojů, v závislosti na pořadí, ve kterém chcete procházet. `Window.PreviousToolWindowNav` Umožňuje přesunout do posledního přístupu k souboru a `Window.NextToolWindowNav` vám umožní přesunout v obráceném pořadí. Obecné vývojové nastavení přiřadí SHIFT + ALT + F7 `Window.PreviousDocumentWindowNav` a ALT + F7 `Window.NextDocumentWindowNav`.
@@ -86,7 +86,7 @@ Integrované vývojové prostředí (IDE) byla navržená tak, aby bylo možné 
 
 #### <a name="to-switch-to-a-specific-tool-window-in-the-ide"></a>Přejděte do okna konkrétní nástroje v integrovaném vývojovém prostředí
 
--   Stisknutím klávesy ALT + F7 zobrazíte **IDE Navigátor**. Podržte stisknutou klávesu ALT a stisknutím klávesy F7 ve opakovaně, dokud nevyberete, kterou chcete přepnout do okna.
+- Stisknutím klávesy ALT + F7 zobrazíte **IDE Navigátor**. Podržte stisknutou klávesu ALT a stisknutím klávesy F7 ve opakovaně, dokud nevyberete, kterou chcete přepnout do okna.
 
     > [!TIP]
     >  Pořadí, ve kterém můžete projít **aktivní nástroj Windows** seznamu, podržte klávesu SHIFT + ALT – klávesy a stisknutím klávesy F7.

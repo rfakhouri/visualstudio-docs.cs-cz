@@ -9,12 +9,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c3201d1c22ac718497b2e355ccf02047ee82a7aa
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3c1e6aa853d2f8202ed42652a0d0f70a7300c0b5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54804366"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077164"
 ---
 # <a name="customizing-text-and-image-fields"></a>Přizpůsobení textových a obrazových polí
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -188,13 +188,13 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
   
 #### <a name="to-create-a-subclass-of-imagefield"></a>Chcete-li vytvořit podtřídu třídy ImageField  
   
-1.  Nastavte **Generates Double Derived** vlastnost nadřazené třídy tvar v definici DSL.  
+1. Nastavte **Generates Double Derived** vlastnost nadřazené třídy tvar v definici DSL.  
   
-2.  Přepsat `InitializeShapeFields` metoda třídy obrazce.  
+2. Přepsat `InitializeShapeFields` metoda třídy obrazce.  
   
-    -   Vytvořte nový soubor kódu v projektu DSL a zapsat definice částečné třídy pro třídu tvaru. Přepište definici metody existuje.  
+    - Vytvořte nový soubor kódu v projektu DSL a zapsat definice částečné třídy pro třídu tvaru. Přepište definici metody existuje.  
   
-3.  Zkontrolujte kód `InitializeShapeFields` v DSL\GeneratedCode\Shapes.cs.  
+3. Zkontrolujte kód `InitializeShapeFields` v DSL\GeneratedCode\Shapes.cs.  
   
      Ve své metodě přepsání volat základní metodu a poté vytvořit instanci třídy pole vlastní image. Tato možnost slouží k nahrazení běžné imagi pole v `shapeFields` seznamu.  
   

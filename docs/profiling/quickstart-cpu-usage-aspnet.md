@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: b21e9b1735f7d6e631d25cecb2923662625400c0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2026767778f1e060ccff4a05af2649a40c1d984f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56634055"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60058860"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-aspnet"></a>Rychlý start: Analýza dat o využití procesoru v aplikaci Visual Studio (ASP.NET)
 
@@ -153,30 +153,30 @@ Windows 8 a novější se vyžaduje pro spuštění nástrojů pro profilaci s l
     }
     ```
 
-##  <a name="step-1-collect-profiling-data"></a>Krok 1: Shromažďovat data vytváření profilů
+## <a name="step-1-collect-profiling-data"></a>Krok 1: Shromažďovat data vytváření profilů
 
-1.  Nejprve nastavte zarážku v aplikaci na tomto řádku kódu v `Simple` konstruktor:
+1. Nejprve nastavte zarážku v aplikaci na tomto řádku kódu v `Simple` konstruktor:
 
     `for (int i = 0; i < 200; i++)`
 
     Po kliknutí na ovládací prvek vlevo od řádku kódu, nastavte zarážku.
 
-1.  Dále nastavte zarážku druhý na pravou složenou závorku na konci `Simple` konstruktor:
+1. Dále nastavte zarážku druhý na pravou složenou závorku na konci `Simple` konstruktor:
 
      ![Nastavení zarážek pro profilaci](../profiling/media/quickstart-cpu-usage-breakpoints-aspnet.png)
 
     > [!TIP]
     > Nastavením dvou zarážek omezíte shromažďování dat jenom na analyzovanou část kódu.
 
-1.  **Diagnostické nástroje** okno již viditelné, pokud jste ji vypnuli. Otevřete okno znovu, klikněte na tlačítko **ladění** > **Windows** > **zobrazit diagnostické nástroje**.
+1. **Diagnostické nástroje** okno již viditelné, pokud jste ji vypnuli. Otevřete okno znovu, klikněte na tlačítko **ladění** > **Windows** > **zobrazit diagnostické nástroje**.
 
-1.  Klikněte na tlačítko **ladění** > **spustit ladění** (nebo **Start** na panelu nástrojů nebo **F5**).
+1. Klikněte na tlačítko **ladění** > **spustit ladění** (nebo **Start** na panelu nástrojů nebo **F5**).
 
-1.  Po dokončení načítání aplikace klikněte na tlačítko **o** odkazu v horní části webové stránky spustit nový kód.
+1. Po dokončení načítání aplikace klikněte na tlačítko **o** odkazu v horní části webové stránky spustit nový kód.
 
-1.  Podívejte se na **Souhrn** zobrazí diagnostické nástroje.
+1. Podívejte se na **Souhrn** zobrazí diagnostické nástroje.
 
-1.  Když ladicí program je pozastavený, Povolit shromažďování dat o využití procesoru výběrem **profil CPU záznam**a pak otevřete **využití procesoru** kartu.
+1. Když ladicí program je pozastavený, Povolit shromažďování dat o využití procesoru výběrem **profil CPU záznam**a pak otevřete **využití procesoru** kartu.
 
      ![Diagnostické nástroje povolit profilaci procesoru](../profiling/media/quickstart-cpu-usage-summary.png)
 
@@ -184,7 +184,7 @@ Windows 8 a novější se vyžaduje pro spuštění nástrojů pro profilaci s l
 
      Při výběru **profil CPU záznam**, Visual Studio bude nahráváním vašich funkcí a jak dlouho jim trvá spuštění a také obsahuje graf časové osy vám umožní zaměřit se na určité segmenty relace odběru vzorků. Tato shromážděná data můžete zobrazit pouze, když vaše aplikace je zastaven na zarážce.
 
-6.  Stiskněte klávesu F5, kterou spustíte aplikaci až ke druhé zarážce.
+6. Stiskněte klávesu F5, kterou spustíte aplikaci až ke druhé zarážce.
 
      Teď máte údaje o výkonu aplikace přesně pro oblast kódu spuštěnou mezi dvěma zarážkami.
 

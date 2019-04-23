@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0cc194adc37c8f9f0309780a4c8ef6f9a780223b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ecc310896f7b938025d42e06ac5ef0ec8bac3d35
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54776212"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063621"
 ---
 # <a name="how-to-add-a-new-item-to-a-workflow-project"></a>Postupy: Přidání nové položky do projektu pracovního postupu
 Po vytvoření projektu pracovního postupu můžete přidat aktivit pracovního postupu, návrháře a další známé [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] položky do projektu.  
@@ -30,17 +30,17 @@ Po vytvoření projektu pracovního postupu můžete přidat aktivit pracovního
   
 ### <a name="to-add-a-new-item-to-a-workflow-project"></a>Chcete-li přidat novou položku do projektu pracovního postupu  
   
-1.  Na **projektu** nabídky, klikněte na tlačítko **přidat novou položku...** .  
+1. Na **projektu** nabídky, klikněte na tlačítko **přidat novou položku...** .  
   
      **Přidat novou položku** zobrazí se dialogové okno.  
   
-2.  V **nainstalované šablony** vyberte **pracovního postupu** skupiny.  
+2. V **nainstalované šablony** vyberte **pracovního postupu** skupiny.  
   
-3.  Vyberte jednu z čtyři položky. V předchozí tabulce jsou uvedeny možnosti, které jsou k dispozici.  
+3. Vyberte jednu z čtyři položky. V předchozí tabulce jsou uvedeny možnosti, které jsou k dispozici.  
   
-4.  Zadejte vhodný název pro položku v **název** políčko v dolní části dialogového okna.  
+4. Zadejte vhodný název pro položku v **název** políčko v dolní části dialogového okna.  
   
-5.  Klikněte na tlačítko **přidat** přidat položku do aktuálního projektu pracovního postupu.  
+5. Klikněte na tlačítko **přidat** přidat položku do aktuálního projektu pracovního postupu.  
   
 ## <a name="see-also"></a>Viz také  
  [Vytvoření projektu pracovního postupu](../workflow-designer/creating-a-workflow-project.md)

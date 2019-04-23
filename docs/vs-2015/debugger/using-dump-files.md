@@ -25,19 +25,19 @@ caps.latest.revision: 56
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 756b2791e5cc41ef934037ba3a680792db658591
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 11a3dc0e144ef49f6dcfbe6d8ea0c6dfbc4bca40
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57868238"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071769"
 ---
 # <a name="using-dump-files"></a>Použití souborů výpisu paměti
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Soubory s výpisem paměti s nebo bez haldy –vytvořte soubor s výpisem, otevřete jej, vyhledejte binární soubory, PDB a zdrojový soubor souboru s výpisem. 
   
-##  <a name="BKMK_Contents"></a> Obsah  
+## <a name="BKMK_Contents"></a> Obsah  
  [Co je soubor s výpisem paměti?](#BKMK_What_is_a_dump_file_)  
   
  [Soubory s výpisem paměti s haldou nebo bez haldy](#BKMK_Dump_files__with_or_without_heaps)  
@@ -50,14 +50,14 @@ Soubory s výpisem paměti s nebo bez haldy –vytvořte soubor s výpisem, otev
   
  [Najít binární soubory, soubory symbolů (PDB) a zdrojové soubory](#BKMK_Find_binaries__symbol___pdb__files__and_source_files)  
   
-##  <a name="BKMK_What_is_a_dump_file_"></a> Co je soubor s výpisem paměti?  
+## <a name="BKMK_What_is_a_dump_file_"></a> Co je soubor s výpisem paměti?  
  A *soubor s výpisem paměti* je snímek aplikace v bodě v čase je výpis paměti pořízen. Ukazuje, jaký proces probíhal a které moduly byly načteny. Pokud byl výpis paměti uložen s informacemi o haldě, soubor s výpisem paměti obsahuje snímek toho, co bylo v paměti aplikace v daném okamžiku. Otevření souboru s výpisem paměti pomocí haldy v sadě Visual Studio odpovídá zastavení na zarážce v ladicí relaci. Ačkoli nelze pokračovat v provádění, můžete zkoumat zásobníky, vlákna a proměnné hodnoty aplikace v době, kdy došlo k výpisu paměti.  
   
  Výpisy paměti se používají především pro ladění problémů, ke kterým dochází v počítačích, ke kterým nemá vývojář přístup. Můžete například použít soubor s výpisem paměti z počítače zákazníka, pokud nelze ve vašem počítači reprodukovat situaci, kdy produkt zákazníka selže nebo přestane reagovat. Výpisy paměti jsou vytvářeny také testery, kteří v nich ukládají data o zhroucení nebo zablokování, aby bylo možné testovací počítač použít pro další testování. Ladicí program Visual Studio může uložit soubory s výpisem paměti pro spravovaný nebo nativní kód. Ladicí program můžete načíst soubory s výpisem paměti, které byly vytvořeny pomocí sady Visual Studio nebo jinými programy, které ukládají soubory ve *s minimálním výpisem* formátu.  
   
  ![Zpět na začátek](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [obsah](#BKMK_Contents)  
   
-##  <a name="BKMK_Dump_files__with_or_without_heaps"></a> Soubory s výpisem paměti s haldou nebo bez haldy  
+## <a name="BKMK_Dump_files__with_or_without_heaps"></a> Soubory s výpisem paměti s haldou nebo bez haldy  
  Můžete vytvořit soubory s výpisem paměti s informacemi o haldě nebo bez nich.  
   
 - **Soubory s haldou výpisu paměti** obsahují snímek paměti aplikace. Zahrnuje hodnoty proměnných v době, kdy byl vytvořen výpis paměti. Pokud načtete soubor s výpisem paměti, který byl uložen s haldou, sada Visual Studio může načíst symboly i v případě, že binární soubor aplikace není nalezen. Visual Studio také ukládá binární verze načtených nativních modulů v souboru s výpisem paměti, díky čemu může být ladění mnohem snazší.  
@@ -66,7 +66,7 @@ Soubory s výpisem paměti s nebo bez haldy –vytvořte soubor s výpisem, otev
   
   ![Zpět na začátek](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [obsah](#BKMK_Contents)  
   
-##  <a name="BKMK_Requirements_and_limitations"></a> Požadavky a omezení  
+## <a name="BKMK_Requirements_and_limitations"></a> Požadavky a omezení  
   
 - Ladění souborů s výpisem paměti pro optimalizaci kódu může být matoucí. Například vkládání funkcí kompilátoru může mít za následek neočekávané volání zásobníků a další optimalizace může upravit délku platnosti proměnných.  
   
@@ -84,7 +84,7 @@ Soubory s výpisem paměti s nebo bez haldy –vytvořte soubor s výpisem, otev
   
   ![Zpět na začátek](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [obsah](#BKMK_Contents)  
   
-##  <a name="BKMK_Create_a_dump_file"></a> Vytvoření souboru výpisu paměti  
+## <a name="BKMK_Create_a_dump_file"></a> Vytvoření souboru výpisu paměti  
  Vytvoření souboru s výpisem paměti pomocí aplikace Visual Studio:  
   
 - Při ladění procesu v aplikaci Visual Studio, můžete uložit soubor s výpisem paměti, když se ladicí program zastaví na výjimce nebo v bodu přerušení. Zvolte **uložit výpis paměti jako**, **ladění**. V **uložit výpis paměti jako** v dialogu **uložit jako typ** seznamu můžete vybrat **s minimálním výpisem** nebo **minimální výpis s haldou** (výchozí).  
@@ -95,19 +95,19 @@ Soubory s výpisem paměti s nebo bez haldy –vytvořte soubor s výpisem, otev
   
   ![Zpět na začátek](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [obsah](#BKMK_Contents)  
   
-##  <a name="BKMK_Open_a_dump_file"></a> Otevřete souboru výpisu paměti  
+## <a name="BKMK_Open_a_dump_file"></a> Otevřete souboru výpisu paměti  
   
-1.  V sadě Visual Studio, zvolte **souboru**, **otevřít**, **souboru**.  
+1. V sadě Visual Studio, zvolte **souboru**, **otevřít**, **souboru**.  
   
-2.  V **otevřít soubor** dialogového okna, vyhledejte a vyberte soubor s výpisem paměti. Obvykle má příponu .dmp. Klikněte na tlačítko **OK**.  
+2. V **otevřít soubor** dialogového okna, vyhledejte a vyberte soubor s výpisem paměti. Obvykle má příponu .dmp. Klikněte na tlačítko **OK**.  
   
-3.  **Souhrn souborů výpisu paměti** zobrazí se okno. V tomto okně můžete zobrazit souhrnné informace o ladění pro soubor s výpisem paměti, nastavit cestu symbolů, spustit ladění a souhrnné informace zkopírovat do schránky.  
+3. **Souhrn souborů výpisu paměti** zobrazí se okno. V tomto okně můžete zobrazit souhrnné informace o ladění pro soubor s výpisem paměti, nastavit cestu symbolů, spustit ladění a souhrnné informace zkopírovat do schránky.  
   
      ![Minidump summary page](../debugger/media/dbg-dump-summarypage.png "DBG_DUMP_SummaryPage")  
   
-4.  Chcete-li spustit ladění, přejděte **akce** a zvolte buď **ladit pouze nativní** nebo **ladit s různými typy**.  
+4. Chcete-li spustit ladění, přejděte **akce** a zvolte buď **ladit pouze nativní** nebo **ladit s různými typy**.  
   
-##  <a name="BKMK_Find_binaries__symbol___pdb__files__and_source_files"></a> Najít binární soubory, soubory symbolů (PDB) a zdrojové soubory  
+## <a name="BKMK_Find_binaries__symbol___pdb__files__and_source_files"></a> Najít binární soubory, soubory symbolů (PDB) a zdrojové soubory  
  Chcete-li používat úplné funkce aplikace Visual Studio pro ladění souboru s výpisem paměti, potřebujete přístup k:  
   
 - Soubor .exe, pro který byl pořízen výpis paměti přijatých a další binárních souborů (knihovny DLL, atd.), které byly použity v procesu s výpisem paměti.  

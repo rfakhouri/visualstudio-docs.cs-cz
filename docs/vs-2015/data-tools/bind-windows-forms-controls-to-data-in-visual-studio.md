@@ -23,12 +23,12 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 866b2b824735ed96615880350343d17adfeecefc
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 0f2bd51570c8ad1976b6fc9eb5674177f9342833
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59653993"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069455"
 ---
 # <a name="bind-windows-forms-controls-to-data-in-visual-studio"></a>Vytvoření vazby ovládacích prvků Windows Forms k datům v sadě Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,21 +41,21 @@ Uživatelům vaší aplikace můžete zobrazit data pomocí vazby dat do formul�
 
 ## <a name="in-this-section"></a>V tomto oddílu
 
--   [Vytvoření vazby ovládacích prvků modelu Windows Forms k datům](../data-tools/bind-windows-forms-controls-to-data.md)
+- [Vytvoření vazby ovládacích prvků modelu Windows Forms k datům](../data-tools/bind-windows-forms-controls-to-data.md)
 
--   [Potvrzení úprav v procesu v ovládacích prvcích vázaných na data před uložením dat](../data-tools/commit-in-process-edits-on-data-bound-controls-before-saving-data.md)
+- [Potvrzení úprav v procesu v ovládacích prvcích vázaných na data před uložením dat](../data-tools/commit-in-process-edits-on-data-bound-controls-before-saving-data.md)
 
--   [Vytváření vyhledávacích tabulek v aplikacích modelu Windows Forms](../data-tools/create-lookup-tables-in-windows-forms-applications.md)
+- [Vytváření vyhledávacích tabulek v aplikacích modelu Windows Forms](../data-tools/create-lookup-tables-in-windows-forms-applications.md)
 
--   [Vytvoření formuláře Windows k vyhledávání dat](../data-tools/create-a-windows-form-to-search-data.md)
+- [Vytvoření formuláře Windows k vyhledávání dat](../data-tools/create-a-windows-form-to-search-data.md)
 
--   [Vytvoření uživatelského ovládacího prvku modelu Windows Forms, který podporuje jednoduchou datovou vazbu](../data-tools/create-a-windows-forms-user-control-that-supports-simple-data-binding.md)
+- [Vytvoření uživatelského ovládacího prvku modelu Windows Forms, který podporuje jednoduchou datovou vazbu](../data-tools/create-a-windows-forms-user-control-that-supports-simple-data-binding.md)
 
--   [Vytvoření uživatelského ovládacího prvku modelu Windows Forms, který podporuje složitou datovou vazbu](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md)
+- [Vytvoření uživatelského ovládacího prvku modelu Windows Forms, který podporuje složitou datovou vazbu](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md)
 
--   [Vytvoření uživatelského ovládacího prvku modelu Windows Forms, který podporuje vazbu vyhledávacích dat](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md)
+- [Vytvoření uživatelského ovládacího prvku modelu Windows Forms, který podporuje vazbu vyhledávacích dat](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md)
 
--   [Předávání dat mezi formuláři](../data-tools/pass-data-between-forms.md)
+- [Předávání dat mezi formuláři](../data-tools/pass-data-between-forms.md)
 
 ## <a name="bindingsource-component"></a>BindingSource – komponenta
  <xref:System.Windows.Forms.BindingSource> Komponenta má dva účely. Nejprve poskytuje abstrakční vrstvu při vytvoření vazby ovládacích prvků na formuláři na data. Ovládací prvky ve formuláři je vázána na <xref:System.Windows.Forms.BindingSource> komponentu (namísto svázaný se přímo ke zdroji dat).
@@ -64,11 +64,11 @@ Uživatelům vaší aplikace můžete zobrazit data pomocí vazby dat do formul�
 
  Další informace o <xref:System.Windows.Forms.BindingSource> komponenty, naleznete v tématu:
 
--   [Komponenta BindingSource](http://msdn.microsoft.com/library/3e2faf4c-f5b8-4fa6-9fbc-f59c37ec2fb9)
+- [Komponenta BindingSource](http://msdn.microsoft.com/library/3e2faf4c-f5b8-4fa6-9fbc-f59c37ec2fb9)
 
--   [Přehled komponenty BindingSource](http://msdn.microsoft.com/library/be838caf-fcb0-4b68-827f-58b2c04b747f)
+- [Přehled komponenty BindingSource](http://msdn.microsoft.com/library/be838caf-fcb0-4b68-827f-58b2c04b747f)
 
--   [Architektura komponenty BindingSource](http://msdn.microsoft.com/library/7bc69c90-8a11-48b1-9336-3adab5b41591)
+- [Architektura komponenty BindingSource](http://msdn.microsoft.com/library/7bc69c90-8a11-48b1-9336-3adab5b41591)
 
 ## <a name="bindingnavigator-control"></a>BindingNavigator – ovládací prvek
  Tato součást poskytuje uživatelské rozhraní pro procházení dat zobrazených v aplikaci Windows. Další informace najdete v tématu [BindingNavigator – ovládací prvek](http://msdn.microsoft.com/library/18c1e2a5-9834-40d3-9b2e-2b545e4e769e).

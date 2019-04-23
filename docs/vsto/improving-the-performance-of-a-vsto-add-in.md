@@ -10,12 +10,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a06022075086ad4792d35761c3af0e14f8f96e56
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: df17245a398c71e7ae9ce0077352f47b0b70ab9b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54867465"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071818"
 ---
 # <a name="improve-the-performance-of-a-vsto-add-in"></a>Zvýšení výkonu doplňku VSTO
   Může dát uživatelům lepší prostředí pomocí optimalizace doplňků VSTO, které vytvoříte pro Office, aplikace tak, aby jejich rychlé spuštění, vypnutí, otevřete položky a provádět další úlohy. Pokud váš doplněk VSTO pro Outlook, může snížit pravděpodobnost, že váš doplněk VSTO bude zakázána z důvodu nízký výkon. Můžete zvýšit výkon vašeho doplňku VSTO pomocí implementace následujících strategií:
@@ -30,7 +30,7 @@ ms.locfileid: "54867465"
 
   Další informace o tom, jak optimalizovat doplňku VSTO pro Outlook, naleznete v tématu [kritéria výkonu zachovat doplňků VSTO povolené](http://go.microsoft.com/fwlink/?LinkID=266503).
 
-##  <a name="Load"></a> Načtení doplňků VSTO na vyžádání
+## <a name="Load"></a> Načtení doplňků VSTO na vyžádání
  Můžete nakonfigurovat doplňku VSTO pro načtení pouze za následujících okolností:
 
 - Když se poprvé uživatel spustí aplikaci, která po instalaci doplňku VSTO.
@@ -41,23 +41,23 @@ ms.locfileid: "54867465"
 
 ### <a name="to-configure-a-clickonce-solution-to-load-vsto-add-ins-on-demand"></a>Konfigurace řešení ClickOnce k načtení doplňků VSTO na vyžádání
 
-1.  V **Průzkumníka řešení**, zvolte uzel projektu.
+1. V **Průzkumníka řešení**, zvolte uzel projektu.
 
-2.  V panelu nabídky zvolte **zobrazení** > **stránky vlastností**.
+2. V panelu nabídky zvolte **zobrazení** > **stránky vlastností**.
 
-3.  Na **publikovat** , vyberte **možnosti** tlačítko.
+3. Na **publikovat** , vyberte **možnosti** tlačítko.
 
-4.  V **možnosti publikování** dialogového okna zvolte **nastavení Office** položky seznamu, zvolte **načíst na požádání** možnost a klikněte na tlačítko **OK**tlačítko.
+4. V **možnosti publikování** dialogového okna zvolte **nastavení Office** položky seznamu, zvolte **načíst na požádání** možnost a klikněte na tlačítko **OK**tlačítko.
 
 ### <a name="to-configure-a-windows-installer-solution-to-load-vsto-add-ins-on-demand"></a>Konfigurace řešení Instalační služby systému Windows pro načtení doplňků VSTO na vyžádání
 
-1.  V registru, nastavte `LoadBehavior` vstupu **_kořenové_\Software\Microsoft\Office\\_ApplicationName_\Addins\\  _ID doplňku_** klíč **0x10**.
+1. V registru, nastavte `LoadBehavior` vstupu **_kořenové_\Software\Microsoft\Office\\_ApplicationName_\Addins\\  _ID doplňku_** klíč **0x10**.
 
      Další informace najdete v tématu [položky registru pro doplňky VSTO](../vsto/registry-entries-for-vsto-add-ins.md).
 
 ### <a name="to-configure-a-solution-to-load-vsto-add-ins-on-demand-while-you-debug-the-solution"></a>Konfigurace řešení načítá doplňků VSTO na vyžádání při ladění řešení
 
-1.  Vytvořit skript, který nastaví `LoadBehavior` vstupu **_kořenové_\Software\Microsoft\Office\\_ApplicationName_\Addins\\  _ID doplňku_** klíč **0x10**.
+1. Vytvořit skript, který nastaví `LoadBehavior` vstupu **_kořenové_\Software\Microsoft\Office\\_ApplicationName_\Addins\\  _ID doplňku_** klíč **0x10**.
 
      Následující kód ukazuje příklad tohoto skriptu.
 
@@ -70,7 +70,7 @@ ms.locfileid: "54867465"
 
     ```
 
-2.  Vytvořte událost po sestavení, která aktualizuje registr pomocí skriptu.
+2. Vytvořte událost po sestavení, která aktualizuje registr pomocí skriptu.
 
      Následující kód ukazuje příklad příkazu řetězec, který můžete přidat událost po sestavení.
 
@@ -83,7 +83,7 @@ ms.locfileid: "54867465"
 
      Informace o tom, jak vytvořit událost po sestavení v projektu jazyka Visual Basic najdete v tématu [jak: Určení událostí sestavení &#40;jazyka Visual Basic&#41;](../ide/how-to-specify-build-events-visual-basic.md).
 
-##  <a name="Publish"></a> Publikování řešení pro systém Office pomocí Instalační služby systému Windows
+## <a name="Publish"></a> Publikování řešení pro systém Office pomocí Instalační služby systému Windows
  Pokud publikujete vašeho řešení pomocí Instalační služby systému Windows, Visual Studio 2010 Tools for Office runtime obchází následující kroky při načtení doplňku VSTO.
 
 - Ověření schématu manifestu.
@@ -97,7 +97,7 @@ ms.locfileid: "54867465"
 
   Další informace najdete v tématu [nasazení řešení Office s použitím Instalační služby systému Windows](../vsto/deploying-an-office-solution-by-using-windows-installer.md).
 
-##  <a name="Bypass"></a> Obejít reflexe pásu karet
+## <a name="Bypass"></a> Obejít reflexe pásu karet
  Při sestavování řešení s použitím [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)], ujistěte se, že vaši uživatelé nainstalovali nejnovější verzi aplikace Visual Studio 2010 Tools for Office runtime při nasazení řešení. Starší verze tohoto modulu runtime projeví do řešení sestavení k vyhledání vlastních nastavení pásu karet. Tento proces může způsobit doplňku VSTO pro načítají se pomaleji.
 
  Jako alternativu můžete zabránit všechny verze sady Visual Studio 2010 Tools for Office runtime k identifikaci vlastních nastavení pásu karet pomocí operace reflection. Pokud chcete postupovat podle této strategie, přepsat `CreateRibbonExtensibility` metoda a explicitně návratových objektů pásu karet. Pokud váš doplněk VSTO neobsahuje všechna vlastní nastavení pásu karet, vrátí `null` uvnitř metody.
@@ -107,7 +107,7 @@ ms.locfileid: "54867465"
  [!code-vb[Trin_Ribbon_Choose_Ribbon#1](../vsto/codesnippet/VisualBasic/trin_ribbon_choose_ribbon_4/ThisWorkbook.vb#1)]
  [!code-csharp[Trin_Ribbon_Choose_Ribbon#1](../vsto/codesnippet/CSharp/trin_ribbon_choose_ribbon_4/ThisWorkbook.cs#1)]
 
-##  <a name="Perform"></a> Provádět nákladné operace v samostatných prováděcího vlákna
+## <a name="Perform"></a> Provádět nákladné operace v samostatných prováděcího vlákna
  Vezměte v úvahu provádění časově náročných úloh (jako je například dlouhotrvající úlohy, připojení k databázi nebo jiné druhy volání sítě) v samostatném vlákně. Další informace najdete v tématu [podpora v systému Office práce s vlákny](../vsto/threading-support-in-office.md).
 
 > [!NOTE]

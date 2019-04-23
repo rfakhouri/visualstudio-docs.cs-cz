@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0e8a4e1c44928663d0d055d84899c60b968f90a0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 965f8d9661d30d23365fe324f7102e15fafec77c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56636460"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056273"
 ---
 # <a name="how-to-programmatically-save-documents"></a>Postupy: Ukládání dokumentů prostřednictvím kódu programu
   Existuje několik způsobů k uložení dokumentů Microsoft Office Word. Dokument lze uložit beze změny název dokumentu nebo ukládáte dokument s novým názvem.
@@ -29,7 +29,7 @@ ms.locfileid: "56636460"
 
 ### <a name="to-save-the-document-associated-with-a-document-level-customization"></a>Chcete-li uložit dokument přidružený k přizpůsobení úrovni dokumentu
 
-1.  Volání <xref:Microsoft.Office.Tools.Word.Document.Save%2A> metodu <xref:Microsoft.Office.Tools.Word.Document> třídy. Pokud chcete použít tento příklad kódu, spusťte jej z `ThisDocument` třídu ve vašem projektu.
+1. Volání <xref:Microsoft.Office.Tools.Word.Document.Save%2A> metodu <xref:Microsoft.Office.Tools.Word.Document> třídy. Pokud chcete použít tento příklad kódu, spusťte jej z `ThisDocument` třídu ve vašem projektu.
 
      [!code-vb[Trin_VstcoreWordAutomation#7](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#7)]
      [!code-csharp[Trin_VstcoreWordAutomation#7](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#7)]
@@ -45,7 +45,7 @@ ms.locfileid: "56636460"
 
 ### <a name="to-save-a-document-specified-by-name"></a>Chcete-li uložit dokument určený název
 
-1.  Použít jako argument název dokumentu <xref:Microsoft.Office.Interop.Word.Documents> kolekce. Pokud chcete použít tento příklad kódu, spusťte jej z `ThisDocument` nebo `ThisAddIn` třídu ve vašem projektu.
+1. Použít jako argument název dokumentu <xref:Microsoft.Office.Interop.Word.Documents> kolekce. Pokud chcete použít tento příklad kódu, spusťte jej z `ThisDocument` nebo `ThisAddIn` třídu ve vašem projektu.
 
      [!code-vb[Trin_VstcoreWordAutomation#9](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#9)]
      [!code-csharp[Trin_VstcoreWordAutomation#9](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#9)]
@@ -58,7 +58,7 @@ ms.locfileid: "56636460"
 
 ### <a name="to-save-the-document-associated-with-a-document-level-customization-with-a-new-name"></a>Chcete-li uložit dokument přidružený k přizpůsobení úrovni dokumentu s novým názvem.
 
-1.  Volání <xref:Microsoft.Office.Tools.Word.Document.SaveAs%2A> metodu `ThisDocument` třídu ve vašem projektu, pomocí plně kvalifikovaný název a cesta k souboru. Pokud soubor s tímto názvem již existuje v této složce, je tiše přepsána. Pokud chcete použít tento příklad kódu, spusťte jej z `ThisDocument` třídy.
+1. Volání <xref:Microsoft.Office.Tools.Word.Document.SaveAs%2A> metodu `ThisDocument` třídu ve vašem projektu, pomocí plně kvalifikovaný název a cesta k souboru. Pokud soubor s tímto názvem již existuje v této složce, je tiše přepsána. Pokud chcete použít tento příklad kódu, spusťte jej z `ThisDocument` třídy.
 
     > [!NOTE]
     >  <xref:Microsoft.Office.Tools.Word.Document.SaveAs%2A> Metoda vyvolá výjimku, pokud cílový adresář neexistuje, nebo jestli neexistují nějaké jiné problémy uložení souboru. Je vhodné použít **try... catch** blokovat kolem <xref:Microsoft.Office.Tools.Word.Document.SaveAs%2A> metoda nebo uvnitř volání metody.
@@ -68,7 +68,7 @@ ms.locfileid: "56636460"
 
 ### <a name="to-save-a-native-document-with-a-new-name"></a>Uložení nativní dokumentu s novým názvem.
 
-1.  Volání <xref:Microsoft.Office.Interop.Word._Document.SaveAs%2A> metodu <xref:Microsoft.Office.Interop.Word.Document> , který chcete uložit, pomocí plně kvalifikovaný název a cesta k souboru. Pokud soubor s tímto názvem již existuje v této složce, je tiše přepsána.
+1. Volání <xref:Microsoft.Office.Interop.Word._Document.SaveAs%2A> metodu <xref:Microsoft.Office.Interop.Word.Document> , který chcete uložit, pomocí plně kvalifikovaný název a cesta k souboru. Pokud soubor s tímto názvem již existuje v této složce, je tiše přepsána.
 
      Následující příklad kódu uloží aktivní dokument s novým názvem. Pokud chcete použít tento příklad kódu, spusťte jej z `ThisDocument` nebo `ThisAddIn` třídu ve vašem projektu.
 
@@ -81,9 +81,9 @@ ms.locfileid: "56636460"
 ## <a name="compile-the-code"></a>Kompilace kódu
  Tento příklad kódu vyžaduje následující:
 
--   Uložení dokumentu podle názvu, dokumentu s názvem *NewDocument.doc* musí existovat v adresáři s názvem *Test* na jednotce C.
+- Uložení dokumentu podle názvu, dokumentu s názvem *NewDocument.doc* musí existovat v adresáři s názvem *Test* na jednotce C.
 
--   Chcete-li uložit dokument s novým názvem, adresář s názvem *Test* , musí existovat v jednotce C.
+- Chcete-li uložit dokument s novým názvem, adresář s názvem *Test* , musí existovat v jednotce C.
 
 ## <a name="see-also"></a>Viz také:
 - [Postupy: Zavírání dokumentů prostřednictvím kódu programu](../vsto/how-to-programmatically-close-documents.md)

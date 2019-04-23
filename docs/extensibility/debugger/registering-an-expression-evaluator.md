@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a2b30a3b1ee02a6ac64c66aa7d80a35dc45a683a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: dd3d58b61683c2b25da3e988d307effc28d61dc9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56715307"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073362"
 ---
 # <a name="register-an-expression-evaluator"></a>Registrace vyhodnocovače výrazů
 > [!IMPORTANT]
@@ -106,9 +106,9 @@ namespace EEMC
 ### <a name="dll-server-process"></a>Proces serveru knihovny DLL
  Při registraci EE, server knihovny DLL:
 
-1.  Zaregistruje jeho objekt pro vytváření tříd `CLSID` podle konvence normální COM.
+1. Zaregistruje jeho objekt pro vytváření tříd `CLSID` podle konvence normální COM.
 
-2.  Zavolá pomocnou funkci `SetEEMetric` k registraci ve službě Visual Studio EE metrik zobrazených v následující tabulce. Funkce `SetEEMetric` a metriky zadaný následujícím způsobem jsou součástí *dbgmetric.lib* knihovny. Zobrazit [Pomocníci sad SDK pro ladění](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) podrobnosti.
+2. Zavolá pomocnou funkci `SetEEMetric` k registraci ve službě Visual Studio EE metrik zobrazených v následující tabulce. Funkce `SetEEMetric` a metriky zadaný následujícím způsobem jsou součástí *dbgmetric.lib* knihovny. Zobrazit [Pomocníci sad SDK pro ladění](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) podrobnosti.
 
     |Metrika|Popis|
     |------------|-----------------|
@@ -120,7 +120,7 @@ namespace EEMC
     > [!NOTE]
     >  `metricLanguage``GUID` Určuje jazyk podle názvu, ale je `guidLang` argument `SetEEMetric` , který vybere jazyk. Když kompilátor generuje soubor s informacemi o ladění, by měl napsat odpovídající `guidLang` tak, aby DE ví, které EE určený. Poskytovatel symbolů DE obvykle vyzve k zadání tohoto jazyka `GUID`, který je uložen v souboru ladicí informace.
 
-3.  Zaregistruje pomocí sady Visual Studio tak, že vytvoříte klíče HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*X.Y*, kde *X.Y* je verze sady Visual Studio k registraci ve službě.
+3. Zaregistruje pomocí sady Visual Studio tak, že vytvoříte klíče HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*X.Y*, kde *X.Y* je verze sady Visual Studio k registraci ve službě.
 
 ### <a name="example"></a>Příklad
  Následující funkce ukazuje, jak nespravovaný kód (C++) EE zaregistruje a samotné zruší registraci pomocí sady Visual Studio.

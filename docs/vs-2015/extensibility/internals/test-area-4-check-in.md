@@ -11,14 +11,14 @@ ms.assetid: d0329fa8-7a8d-4d30-b67b-6f2a97b75a30
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 130d1b6b783a07261b9825c37e21fa2eeb008954
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 738b2608d5afa188cad38d92ed613307d2919ca0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54771425"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068727"
 ---
-# <a name="test-area-4-check-in"></a>Testovací oblast 4: Vrátit se změnami
+# <a name="test-area-4-check-in"></a>Testovací oblast 4: Vrácení se změnami
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Tento modul plug-in testu oblast správy zdrojového kódu obsahuje informace o odesílání aktualizované položky k úložišti verzí prostřednictvím **vrátit se změnami** příkazu.  
@@ -35,11 +35,11 @@ Tento modul plug-in testu oblast správy zdrojového kódu obsahuje informace o 
   
 ## <a name="common-expected-behavior"></a>Běžné očekávané chování  
   
--   Projekty a soubory přidané do řešení nebo projekt pod správou zdrojového kódu se zobrazí v **vrátit se změnami** dialogové okno a **čekající vrácení se změnami** okna.  
+- Projekty a soubory přidané do řešení nebo projekt pod správou zdrojového kódu se zobrazí v **vrátit se změnami** dialogové okno a **čekající vrácení se změnami** okna.  
   
--   Po vrácení se změnami přidané položky se zobrazí ve správě zdrojového kódu.  
+- Po vrácení se změnami přidané položky se zobrazí ve správě zdrojového kódu.  
   
--   Po vrácení se změnami jsou aktualizované položky správně označené verzí v úložišti.  
+- Po vrácení se změnami jsou aktualizované položky správně označené verzí v úložišti.  
   
 ## <a name="test-cases"></a>Testovací případy  
  Tady jsou konkrétní testovací případy pro testovací oblast vrácení se změnami.  

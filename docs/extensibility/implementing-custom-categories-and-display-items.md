@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 81deac9f46c03cac997f555f817bba5831409bca
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 60ad63bd5a6fa3b8cca2a288e1c42b1a2ab326bd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54968697"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075880"
 ---
 # <a name="implement-custom-categories-and-display-items"></a>Implementovat vlastní kategorie a zobrazení položek
 VSPackage může poskytnout kontrolu nad písma a barvy jeho textu, aby [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] integrované vývojové prostředí (IDE) prostřednictvím vlastní kategorie a zobrazit položky.
@@ -81,11 +81,11 @@ VSPackage může poskytnout kontrolu nad písma a barvy jeho textu, aby [!INCLUD
 
 - Metody implementovány pomocí <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults> nezajistil integrované vývojové prostředí s:
 
-  -   Seznamy **zobrazení položek** v **kategorie.**
+  - Seznamy **zobrazení položek** v **kategorie.**
 
-  -   Lokalizovatelné názvy **zobrazení položek**.
+  - Lokalizovatelné názvy **zobrazení položek**.
 
-  -   Zobrazení informací pro každého člena **kategorie**.
+  - Zobrazení informací pro každého člena **kategorie**.
 
   > [!NOTE]
   >  Každý **kategorie** musí obsahovat alespoň jeden **položky zobrazení**.
@@ -94,11 +94,11 @@ VSPackage může poskytnout kontrolu nad písma a barvy jeho textu, aby [!INCLUD
 
    Jeho implementace poskytuje integrované vývojové prostředí s:
 
-  -   Seznam **kategorie** , která tvoří danou skupinu.
+  - Seznam **kategorie** , která tvoří danou skupinu.
 
-  -   Přístup k instancím typu <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults> podporuje každý **kategorie** v rámci skupiny.
+  - Přístup k instancím typu <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults> podporuje každý **kategorie** v rámci skupiny.
 
-  -   Názvy zdrojů lokalizovatelných skupin.
+  - Názvy zdrojů lokalizovatelných skupin.
 
 - Aktualizuje se rozhraní IDE:
 
@@ -109,13 +109,13 @@ VSPackage může poskytnout kontrolu nad písma a barvy jeho textu, aby [!INCLUD
 ## <a name="to-handle-font-and-color-changes"></a>Pro případ změn písma a barvy
  Pro podporu správně zabarvení textu, který zobrazí VSPackage, zabarvení služba podporující sady VSPackage musí odpovědět na uživatelem iniciované změny provedené **písma a barvy** stránku vlastností. VSPackage provádí toto:
 
--   Zpracování událostí generovaných IDE implementací <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> rozhraní.
+- Zpracování událostí generovaných IDE implementací <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> rozhraní.
 
      Integrované vývojové prostředí volá metodu odpovídající následující úpravy uživatele **písma a barvy** stránky. Například volání <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents.OnFontChanged%2A> metody, pokud je vybrána nového písma.
 
      -nebo-
 
--   Dotazování rozhraní IDE pro změny.
+- Dotazování rozhraní IDE pro změny.
 
      To lze provést prostřednictvím systému implementované <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> rozhraní. I když především pro podporu trvalost, <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetItem%2A> metodu je možné získat informace o písma a barvy pro **zobrazení položek**. Další informace najdete v tématu [přístup uložená nastavení písem a barev](../extensibility/accessing-stored-font-and-color-settings.md).
 

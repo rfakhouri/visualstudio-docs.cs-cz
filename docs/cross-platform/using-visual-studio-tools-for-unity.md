@@ -10,12 +10,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 72160388114cd3c4860d9b22cd6c75535a4819dc
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: abae34aad980d42018c217e150ea72b5896e436e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59669084"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073798"
 ---
 # <a name="use-visual-studio-tools-for-unity"></a>Používání Visual Studio Tools for Unity
 
@@ -200,7 +200,7 @@ Všimněte si, že podle scénáře popsaného zde předpokládá, že máte zdr
 
    - Upravit nastavení sestavení vašeho projektu knihovny DLL a nastavte jeho výstupní složka bude **prostředky** složce Unity projektu. V budou umístěné soubory DLL a soubor PDB **prostředky** složky.
 
-   Soubory PDB jsou potřeba pro ladění, protože mohou obsahovat symboly pro ladění knihovny DLL a mapování kód knihovny DLL na jeho formě zdrojového kódu. Pokud se zaměřujete na starší verzi modulu runtime, Visual Studio Tools for Unity použije k vytvoření knihovny DLL informace z knihovny DLL a soubor PDB. Používá soubor MDB, což je formát symbolů ladění starší verzi skriptování herní engine Unity. Pokud cílíte na nový modul runtime a pomocí Portable PDB, Visual Studio Tools for Unity se nebude pokoušet provést jakýkoli převod symbolů je nativně využívat Portable PDB nový modul runtime Unity.
+   Soubory PDB jsou potřeba pro ladění, protože mohou obsahovat symboly pro ladění knihovny DLL a mapování kód knihovny DLL na jeho formě zdrojového kódu. Pokud se zaměřujete na starší verzi modulu runtime, Visual Studio Tools for Unity použije k vytvoření knihovny DLL informace z knihovny DLL a soubor PDB. Soubor MDB, což je formát symbolů ladění používá starší verzi Unity skriptovací stroj. Pokud cílíte na nový modul runtime a pomocí Portable PDB, Visual Studio Tools for Unity se nebude pokoušet provést jakýkoli převod symbolů je nativně využívat Portable PDB nový modul runtime Unity.
    
    Další informace o generování souborů PDB může najít [tady](https://docs.microsoft.com/en-us/visualstudio/debugger/how-to-set-debug-and-release-configurations?view=vs-2019). Pokud se zaměřujete na nový modul runtime, ujistěte se prosím, že "Informace o ladění" je nastavena na "Přenosná", aby bylo možné správně generovat Portable PDB. Pokud se zaměřujete na starší verzi modulu runtime, budete muset použít "Úplné".
 

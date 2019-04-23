@@ -17,12 +17,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 82b58cc0287644a4ca21bf6333bf791b3c02e924
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1990e781b5793b05166c6ff5b6e9c14141ffdd69
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54785420"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60058599"
 ---
 # <a name="ca2140-transparent-code-must-not-reference-security-critical-items"></a>CA2140: Transparentní kód nesmí odkazovat na položky kritické pro zabezpečení
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,21 +37,21 @@ ms.locfileid: "54785420"
 ## <a name="cause"></a>Příčina
  Transparentní metoda:
 
--   zpracovává typ výjimky pro kritické bezpečnostní zabezpečení
+- zpracovává typ výjimky pro kritické bezpečnostní zabezpečení
 
--   parametr, který je označen jako typ kritický pro zabezpečení
+- parametr, který je označen jako typ kritický pro zabezpečení
 
--   má obecný parametr důležité omezení zabezpečení
+- má obecný parametr důležité omezení zabezpečení
 
--   má místní proměnnou typ kritický pro zabezpečení
+- má místní proměnnou typ kritický pro zabezpečení
 
--   odkazuje na typ, který je označen jako zabezpečení kritická
+- odkazuje na typ, který je označen jako zabezpečení kritická
 
--   volá metodu, která je označena jako zabezpečení kritická
+- volá metodu, která je označena jako zabezpečení kritická
 
--   odkazuje na pole, která je označena jako zabezpečení kritická
+- odkazuje na pole, která je označena jako zabezpečení kritická
 
--   Vrátí typ, který je označen jako zabezpečení kritická
+- Vrátí typ, který je označen jako zabezpečení kritická
 
 ## <a name="rule-description"></a>Popis pravidla
  Prvek kódu označeného atributem <xref:System.Security.SecurityCriticalAttribute> atribut je kritický pro zabezpečení. Transparentní metoda nemůže použít prvek kritický pro zabezpečení. Pokud se transparentní typ pokusí použít typ kritický pro zabezpečení <xref:System.TypeAccessException>, <xref:System.MethodAccessException> , nebo <xref:System.FieldAccessException> je vyvolána.
@@ -59,11 +59,11 @@ ms.locfileid: "54785420"
 ## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
  Chcete-li opravit porušení tohoto pravidla, proveďte jednu z následujících akcí:
 
--   Označení prvku kód, který používá zabezpečení kritického kódu s <xref:System.Security.SecurityCriticalAttribute> atribut
+- Označení prvku kód, který používá zabezpečení kritického kódu s <xref:System.Security.SecurityCriticalAttribute> atribut
 
      \- nebo –
 
--   Odeberte <xref:System.Security.SecurityCriticalAttribute> atribut z prvků kódu, které jsou označeny jako zabezpečení důležité a místo toho je s označit <xref:System.Security.SecuritySafeCriticalAttribute> nebo <xref:System.Security.SecurityTransparentAttribute> atribut.
+- Odeberte <xref:System.Security.SecurityCriticalAttribute> atribut z prvků kódu, které jsou označeny jako zabezpečení důležité a místo toho je s označit <xref:System.Security.SecuritySafeCriticalAttribute> nebo <xref:System.Security.SecurityTransparentAttribute> atribut.
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
  Nepotlačujte upozornění na toto pravidlo.

@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ee555376a2943cb29344aad2ed94da2b8ab2ae36
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: dc6492b52cb739c49bdba9f231ebcda313a66105
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56617779"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068662"
 ---
 # <a name="how-to-add-a-filter-descriptor-to-a-finder-method"></a>Postupy: Přidání deskriptoru filtru do vyhledávací metody
   Deskriptory filtrů povolení příjemcům modelu předat hodnoty metody předtím, než se provedou. Další informace najdete v tématu [navrhování modelu připojení obchodních dat](../sharepoint/designing-a-business-data-connectivity-model.md).
@@ -29,25 +29,25 @@ ms.locfileid: "56617779"
 
 ### <a name="to-add-a-filter-descriptor-to-a-finder-method"></a>Přidání deskriptoru filtru do vyhledávací metody
 
-1.  V **podrobnosti metody služby BDC** okna, rozbalte uzel vyhledávací metody, rozbalte **parametry** uzel a pak přidejte vstupní parametr. Další informace najdete v tématu [jak: Přidání parametru k metodě](../sharepoint/how-to-add-a-parameter-to-a-method.md).
+1. V **podrobnosti metody služby BDC** okna, rozbalte uzel vyhledávací metody, rozbalte **parametry** uzel a pak přidejte vstupní parametr. Další informace najdete v tématu [jak: Přidání parametru k metodě](../sharepoint/how-to-add-a-parameter-to-a-method.md).
 
-2.  V **podrobnosti metody** okna, vyberte typ popisovače parametru.
+2. V **podrobnosti metody** okna, vyberte typ popisovače parametru.
 
-3.  V panelu nabídky zvolte **zobrazení** > **okno vlastností**.
+3. V panelu nabídky zvolte **zobrazení** > **okno vlastností**.
 
-4.  V **vlastnosti** okno, nastaveno **název typu** vlastnost na datový typ, který je vhodný pro filtr.
+4. V **vlastnosti** okno, nastaveno **název typu** vlastnost na datový typ, který je vhodný pro filtr.
 
      Například filtr použít data objednávky a omezit počet prodejních objednávek vrácený metodou. Pro podporu tohoto filtru, **název typu** musí být nastavena vlastnost popisovače typu **System.DateTime**.
 
-5.  V **podrobnosti metody** okna, rozbalte **deskriptory filtrů** uzlu.
+5. V **podrobnosti metody** okna, rozbalte **deskriptory filtrů** uzlu.
 
-6.  V **přidání deskriptoru filtru** klikněte na položku **vytvořit popisovač filtru**.
+6. V **přidání deskriptoru filtru** klikněte na položku **vytvořit popisovač filtru**.
 
      Nový popisovač filtru se zobrazí pod **deskriptory filtrů** uzlu.
 
-7.  V panelu nabídky zvolte **zobrazení** > **okno vlastností**.
+7. V panelu nabídky zvolte **zobrazení** > **okno vlastností**.
 
-8.  V **vlastnosti** okna, vyberte **typ** vlastnost.
+8. V **vlastnosti** okna, vyberte **typ** vlastnost.
 
 9. V seznamu, který se zobrazí pro **typ** vlastnost, zvolte možnost filtrování vzor, který chcete.
 

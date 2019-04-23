@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: efc9fa354ab7dfc119efd747c54091d2426b257b
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 19f426d60ea8ee3d9326fa9b13adfff115c169d5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59666582"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061317"
 ---
 # <a name="how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager"></a>Postupy: Zveřejnění seznamů symbolů poskytovaných knihovnou správci objektů
 Nástroje procházení symbolů **zobrazení tříd**, **prohlížeče objektů**, **volání prohlížeče** a **výsledky hledáni symbolu**, předat požadavky na nová data [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] object Manageru. Správci objektů najde odpovídající knihovny a vyžaduje nový seznam symbolů. Knihovny reakce díky na požadovaná data [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] object Manageru prostřednictvím <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> rozhraní. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Object Manageru volá metody <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> rozhraní na získání dat a použije ho k naplnění nebo aktualizovat zobrazení nástroje procházení symbolů.
@@ -33,7 +33,7 @@ Nástroje procházení symbolů **zobrazení tříd**, **prohlížeče objektů*
 
 ## <a name="to-provide-lists-of-symbols-to-the-object-manager"></a>Seznam symbolů poskytovat správci objektů
 
-1.  Získat počet položek v seznamu symboly implementací <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetItemCount%2A> metody. Následující příklad ukazuje, jak objekt manager získá informace o počtu položek v seznamu.
+1. Získat počet položek v seznamu symboly implementací <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetItemCount%2A> metody. Následující příklad ukazuje, jak objekt manager získá informace o počtu položek v seznamu.
 
     ```vb
     Protected m_Methods As System.Collections.Generic.SortedList(Of String, Method) = New System.Collections.Generic.SortedList(Of String, Method)()
@@ -55,7 +55,7 @@ Nástroje procházení symbolů **zobrazení tříd**, **prohlížeče objektů*
 
     ```
 
-2.  Získejte informace o kategorii a atributů dané položky implementací <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetCategoryField2%2A> metody. Kategorie položek jsou určené v <xref:Microsoft.VisualStudio.Shell.Interop.LIB_CATEGORY> výčtu. Následující příklad ukazuje, jak správci objektů získá atributy položek pro danou kategorii.
+2. Získejte informace o kategorii a atributů dané položky implementací <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetCategoryField2%2A> metody. Kategorie položek jsou určené v <xref:Microsoft.VisualStudio.Shell.Interop.LIB_CATEGORY> výčtu. Následující příklad ukazuje, jak správci objektů získá atributy položek pro danou kategorii.
 
     ```vb
     Public Function GetCategoryField2(ByVal index As UInteger, ByVal Category As Integer, ByRef pfCatField As UInteger) As Integer
@@ -150,7 +150,7 @@ Nástroje procházení symbolů **zobrazení tříd**, **prohlížeče objektů*
 
     ```
 
-3.  Získat textovou reprezentaci položky daného seznamu implementací <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetTextWithOwnership%2A> metody. Následující příklad ukazuje, jak získat úplný název dané položky.
+3. Získat textovou reprezentaci položky daného seznamu implementací <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetTextWithOwnership%2A> metody. Následující příklad ukazuje, jak získat úplný název dané položky.
 
     ```vb
     Public Function GetTextWithOwnership(<System.Runtime.InteropServices.ComAliasNameAttribute("Microsoft.VisualStudio.OLE.Interop.ULONG")> ByVal index As UInteger, <System.Runtime.InteropServices.ComAliasNameAttribute("Microsoft.VisualStudio.Shell.Interop.VSTREETEXTOPTIONS")> ByVal tto As Microsoft.VisualStudio.Shell.Interop.VSTREETEXTOPTIONS, <System.Runtime.InteropServices.ComAliasNameAttribute("Microsoft.VisualStudio.OLE.Interop.WCHAR")> ByRef ppszText As String) As Integer
@@ -168,7 +168,7 @@ Nástroje procházení symbolů **zobrazení tříd**, **prohlížeče objektů*
 
     ```
 
-4.  Získejte informace o ikonu pro položku daného seznamu implementací <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetDisplayData%2A> metody. Ikona představuje typ (třídy, metody a tak dále) a přístupnosti (privátní, veřejný a tak dále) položky seznamu. Následující příklad ukazuje, jak získat informace o ikonu na základě atributů dané položky.
+4. Získejte informace o ikonu pro položku daného seznamu implementací <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetDisplayData%2A> metody. Ikona představuje typ (třídy, metody a tak dále) a přístupnosti (privátní, veřejný a tak dále) položky seznamu. Následující příklad ukazuje, jak získat informace o ikonu na základě atributů dané položky.
 
     ```vb
     Public Overridable Function GetDisplayData(ByVal index As UInteger, ByVal pData As Microsoft.VisualStudio.Shell.Interop.VSTREEDISPLAYDATA()) As Integer
@@ -250,7 +250,7 @@ Nástroje procházení symbolů **zobrazení tříd**, **prohlížeče objektů*
 
     ```
 
-5.  Získejte informace o Určuje, zda je položka daného seznamu rozšiřitelné implementací <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetExpandable3%2A> metody. Následující příklad ukazuje, jak získat informace o tom, jestli se daná položka rozšířit.
+5. Získejte informace o Určuje, zda je položka daného seznamu rozšiřitelné implementací <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetExpandable3%2A> metody. Následující příklad ukazuje, jak získat informace o tom, jestli se daná položka rozšířit.
 
     ```vb
     Public Function GetExpandable(ByVal index As UInteger, ByRef pfExpandable As Integer) As Integer
@@ -277,7 +277,7 @@ Nástroje procházení symbolů **zobrazení tříd**, **prohlížeče objektů*
 
     ```
 
-6.  Získání seznamu podřízených symboly položky daného seznamu implementací <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetList2%2A> metody. Následující příklad ukazuje, jak získat podřízený seznam symbolů pro danou položku **volání** nebo **volající** grafy.
+6. Získání seznamu podřízených symboly položky daného seznamu implementací <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetList2%2A> metody. Následující příklad ukazuje, jak získat podřízený seznam symbolů pro danou položku **volání** nebo **volající** grafy.
 
     ```vb
     ' Call graph list.

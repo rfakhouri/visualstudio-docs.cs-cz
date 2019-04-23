@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0138ec1e2a36ce20b80982103ec408077502993a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 4ff63e6cca9deebbfcfa5960b41d85f9425f7a73
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913821"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063917"
 ---
 # <a name="how-to-change-between-member-notation-and-association-notation-in-class-designer"></a>Postupy: Změna mezi zápisem člena a zápisem asociace v Návrháři tříd
 
@@ -29,9 +29,9 @@ V **návrhář tříd**, můžete změnit způsob, jakým diagram tříd repreze
 
 ## <a name="to-change-member-notation-to-association-notation"></a>Chcete-li změnit zápisem člena zápisem asociace
 
-1.  Z uzlu projektu v Průzkumníku řešení otevřete soubor diagramu tříd (.cd).
+1. Z uzlu projektu v Průzkumníku řešení otevřete soubor diagramu tříd (.cd).
 
-2.  V obrazci typu v diagramu tříd, klikněte pravým tlačítkem na člen vlastnost nebo pole představující přidružení a zvolte **zobrazit jako přidružení**.
+2. V obrazci typu v diagramu tříd, klikněte pravým tlačítkem na člen vlastnost nebo pole představující přidružení a zvolte **zobrazit jako přidružení**.
 
     > [!TIP]
     > Pokud jsou viditelné ve tvaru typu žádné vlastnosti nebo pole, jsou sbaleny oddílů ve tvaru. Pokud chcete rozšířit tvar typu, dvakrát klikněte na název oddílu nebo pravým tlačítkem myši na tvar typu a zvolte **Rozbalit**.

@@ -8,12 +8,12 @@ ms.assetid: 73519dd9-f3d5-49b6-a634-38881b459ea4
 caps.latest.revision: 19
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7d0165c0a774ba53e5ce4798cdcd4bc4755d1ebd
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 5ed075cbc5bdc49159024a81cfcf1c3afb04cc6a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58145158"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076874"
 ---
 # <a name="using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing"></a>Vzájemná izolace částí aplikace pomocí zástupných procedury za účelem testování částí
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,11 +32,11 @@ Typy zástupných procedur * jsou jedním ze dvou technologií, které rozhraní
   
  **Požadavky**  
   
--   Visual Studio Enterprise
+- Visual Studio Enterprise
   
-##  <a name="How"></a> Jak používat zástupné procedury  
+## <a name="How"></a> Jak používat zástupné procedury  
   
-###  <a name="Dependency"></a> Návrh pro vkládání závislostí  
+### <a name="Dependency"></a> Návrh pro vkládání závislostí  
  Abyste mohli používat zástupné procedury, musí být vaše aplikace navržena tak, aby různé součásti nebyly závislé navzájem, ale byly závislé pouze na definicích rozhraní. Místo toho, aby byly součásti vázány v době kompilace, jsou propojeny v době běhu. Tento způsob napomáhá vytvářet software, který je robustní a snadno aktualizovatelný, protože změny nejsou obvykle přenášeny přes hranice součástí. Doporučujeme jej dodržovat, i pokud nepoužíváte zástupné procedury. Pokud píšete nový kód, je snadné sledovat [injektáž závislostí](http://en.wikipedia.org/wiki/Dependency_injection) vzor. Při psaní testů pro stávající software jej můžete chtít refaktorovat. V případě, že by to bylo nepraktické, můžete místo toho zvážit použití překrytí.  
   
  Začněme tuto diskusi motivačním příkladem, který je uveden na obrázku. Třída StockAnalyzer čte ceny akcií a vytváří některé zajímavé výsledky. Má některé veřejné metody, které chceme otestovat. Abychom si to nekomplikovali, podívejme se na jednu z těchto metod, která je velmi jednoduchá a vytváří sestavy s aktuální cenou určité akcie. Chceme napsat jednotkový test této metody. Zde je první návrh testu:  
@@ -144,7 +144,7 @@ analyzer = new StockAnalyzer(new StockFeed())
   
  Existují flexibilnější způsoby provedení tohoto připojení. Součást StockAnalyzer by například mohla přijmout objekt factory, který může vytvořit instanci různými implementacemi součásti IStockFeed v různých podmínkách.  
   
-###  <a name="GeneratingStubs"></a> Generování zástupných procedur  
+### <a name="GeneratingStubs"></a> Generování zástupných procedur  
  Oddělili jste třídu, kterou chcete testovat, od ostatních součástí, které používá. Oddělení umožňuje vytvořit robustnější a flexibilnější aplikaci a také propojit testovanou součást s implementacemi zástupných procedur rozhraní pro testovací účely.  
   
  Můžete jednoduše zapsat zástupné procedury jako třídy obvyklým způsobem. Ale rozhraní Microsoft Fakes vám nabízí dynamičtější způsob vytváření nejvhodnější zástupné procedury pro každý test.  
@@ -153,15 +153,15 @@ analyzer = new StockAnalyzer(new StockFeed())
   
 ##### <a name="adding-a-fakes-assembly"></a>Přidání napodobeniny sestavení  
   
-1.  V Průzkumníku řešení rozbalte uzel projektu jednotkového testu **odkazy**.  
+1. V Průzkumníku řešení rozbalte uzel projektu jednotkového testu **odkazy**.  
   
-    -   Pokud pracujete v jazyce Visual Basic, musíte vybrat **zobrazit všechny soubory** v panelu nástrojů Průzkumníka řešení, chcete-li zobrazit seznam odkazů.  
+    - Pokud pracujete v jazyce Visual Basic, musíte vybrat **zobrazit všechny soubory** v panelu nástrojů Průzkumníka řešení, chcete-li zobrazit seznam odkazů.  
   
-2.  Vyberte sestavení, které obsahuje definice rozhraní, pro které chcete vytvořit zástupné procedury.  
+2. Vyberte sestavení, které obsahuje definice rozhraní, pro které chcete vytvořit zástupné procedury.  
   
-3.  V místní nabídce zvolte **přidat napodobeniny sestavení**.  
+3. V místní nabídce zvolte **přidat napodobeniny sestavení**.  
   
-###  <a name="WriteTest"></a> Psaní testu se zástupnými procedurami  
+### <a name="WriteTest"></a> Psaní testu se zástupnými procedurami  
   
 ```csharp  
 [TestClass]  
@@ -223,7 +223,7 @@ End Class
   
  Zástupné procedury jsou také generovány pro mechanismy získání a nastavení vlastností, pro události a pro obecné metody.  
   
-###  <a name="mocks"></a> Ověření hodnot parametrů  
+### <a name="mocks"></a> Ověření hodnot parametrů  
  Můžete ověřit, že pokud vaše součást volá jinou součást, jsou předány správné hodnoty. Výraz můžete přidat buď do zástupné procedury, nebo můžete hodnotu uložit a ověřit ji v hlavní části testu. Příklad:  
   
 ```csharp  
@@ -301,9 +301,9 @@ Class TestMyComponent
 End Class  
 ```  
   
-##  <a name="BKMK_Stub_basics"></a> Zástupné procedury pro různé druhy členů typu  
+## <a name="BKMK_Stub_basics"></a> Zástupné procedury pro různé druhy členů typu  
   
-###  <a name="BKMK_Methods"></a> Metody  
+### <a name="BKMK_Methods"></a> Metody  
  Jak je popsáno v příkladu, mohou být metody zastoupeny připojením delegáta k instanci zástupné třídy. Název typu zástupné procedury je odvozen z názvu metody a parametrů. Mějme například následující `IMyInterface` rozhraní a metoda `MyMethod`:  
   
 ```csharp  
@@ -325,7 +325,7 @@ interface IMyInterface
   
  Pokud neposkytnete zástupnou proceduru pro funkci, vygeneruje rozhraní Fakes funkci, která vrátí výchozí hodnotu návratového typu. Pro čísla, výchozí hodnota je 0, a pro typy tříd je `null` (C#) nebo `Nothing` (Visual Basic).  
   
-###  <a name="BKMK_Properties"></a> Vlastnosti  
+### <a name="BKMK_Properties"></a> Vlastnosti  
  Funkce pro nastavení a získání vlastnosti jsou vystaveny jako samostatní delegáti a mohou být samostatně zastoupeny. Představme si třeba, `Value` vlastnost `IMyInterface`:  
   
 ```csharp  
@@ -350,7 +350,7 @@ stub.ValueSet = (value) => i = value;
   
  Pokud neposkytnete metody zástupných procedur pro funkci nastavení nebo získání vlastnosti, vygeneruje rozhraní Fakes zástupnou proceduru, která ukládá hodnoty, takže zástupná vlastnost funguje jako jednoduchá proměnná.  
   
-###  <a name="BKMK_Events"></a> Události  
+### <a name="BKMK_Events"></a> Události  
  Události jsou vystaveny jako pole delegáta. Výsledkem je, že jakoukoli zastoupenou událost lze jednoduše aktivovat vyvoláním pole zálohování události. Zvažte následující rozhraní pro zastoupení:  
   
 ```csharp  
@@ -371,7 +371,7 @@ interface IWithEvents
   
 ```  
   
-###  <a name="BKMK_Generic_methods"></a> Obecné metody  
+### <a name="BKMK_Generic_methods"></a> Obecné metody  
  Poskytnutím delegáta pro každou požadovanou instanci metody je možné zastoupit obecné metody. Mějme například následující rozhraní obsahující obecnou metodu:  
   
 ```csharp  
@@ -399,7 +399,7 @@ public void TestGetValue()
   
  Pokud kód volat `GetValue<T>` s kteroukoli další instancí, by zástupná procedura jednoduše volala chování.  
   
-###  <a name="BKMK_Partial_stubs"></a> Zástupné procedury virtuálních tříd  
+### <a name="BKMK_Partial_stubs"></a> Zástupné procedury virtuálních tříd  
  V předchozích příkladech byly zástupné procedury vytvořeny z rozhraní. Můžete také vygenerovat zástupné procedury z třídy, která má virtuální nebo abstraktní členy. Příklad:  
   
 ```csharp  
@@ -438,16 +438,16 @@ stub.CallBase = true;
 Assert.AreEqual(43,stub.DoVirtual(1));  
 ```  
   
-##  <a name="BKMK_Debugging_stubs"></a> Ladění zástupných procedur  
+## <a name="BKMK_Debugging_stubs"></a> Ladění zástupných procedur  
  Typy zástupných procedur jsou navrženy pro zajištění plynulého ladění. Standardně má ladicí program pokyn, aby přešel přes jakýkoli generovaný kód. Měl by tedy vstoupit přímo do vlastních implementací člena, které byly připojeny k zástupné proceduře.  
   
-##  <a name="BKMK_Stub_limitation"></a> Omezení zástupných procedur  
+## <a name="BKMK_Stub_limitation"></a> Omezení zástupných procedur  
   
-1.  Signatury metody s ukazateli nejsou podporovány.  
+1. Signatury metody s ukazateli nejsou podporovány.  
   
-2.  Zapečetěné třídy nebo statické metody nemohou být zastoupeny, protože jsou typy zástupných procedur závislé na odbavení virtuální metody. Pro tyto případy použijte typy překrytí, jak je popsáno v [izolace aplikace od ostatních sestavení pro testování částí pomocí Překryvné ovladače](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md)  
+2. Zapečetěné třídy nebo statické metody nemohou být zastoupeny, protože jsou typy zástupných procedur závislé na odbavení virtuální metody. Pro tyto případy použijte typy překrytí, jak je popsáno v [izolace aplikace od ostatních sestavení pro testování částí pomocí Překryvné ovladače](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md)  
   
-##  <a name="BKMK_Changing_the_default_behavior_of_stubs"></a> Změna výchozího chování zástupných procedur  
+## <a name="BKMK_Changing_the_default_behavior_of_stubs"></a> Změna výchozího chování zástupných procedur  
  Každý generovaný typ zástupné procedury obsahuje instanci `IStubBehavior` rozhraní (až `IStub.InstanceBehavior` vlastnost). Chování je voláno pokaždé, když klient volá člen bez připojeného vlastního delegáta. Pokud chování nebylo nastaveno, bude používat instanci vrácenou `StubsBehaviors.Current` vlastnost. Ve výchozím nastavení, vrátí tato vlastnost chování, které se vyvolá `NotImplementedException` výjimky.  
   
  Chování můžete kdykoli změnit tak, že nastavíte `InstanceBehavior` vlastnost na jakékoli zástupné instanci. Například následující fragment kódu změní chování, které nic nedělá nebo vrací výchozí hodnotu návratového typu: `default(T)`:  

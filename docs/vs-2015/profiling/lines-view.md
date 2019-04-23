@@ -15,12 +15,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e27194d830e880fd9ae28065e69fa140d9201dc2
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: ccdb211312a6f53e7f519b7fac0e3ac28aab2429
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54762010"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60058627"
 ---
 # <a name="lines-view"></a>Zobrazení řádků
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,17 +33,17 @@ Zobrazení řádků je k dispozici pouze pro data profileru, která byla shromá
   
  Příkaz je identifikován následující:  
   
--   Zdrojový soubor, který obsahuje Function – příkaz  
+- Zdrojový soubor, který obsahuje Function – příkaz  
   
--   Funkce, která obsahuje příkaz.  
+- Funkce, která obsahuje příkaz.  
   
--   Zdrojový řádek, ve kterém se spustí příkaz.  
+- Zdrojový řádek, ve kterém se spustí příkaz.  
   
--   Znak ve zdrojovém řádku, ve kterém se spustí příkaz.  
+- Znak ve zdrojovém řádku, ve kterém se spustí příkaz.  
   
--   Řádku zdroje, u které končí příkaz.  
+- Řádku zdroje, u které končí příkaz.  
   
--   Znak ve zdrojovém řádku, kdy příkaz skončí.  
+- Znak ve zdrojovém řádku, kdy příkaz skončí.  
   
 ## <a name="see-also"></a>Viz také  
  [Zobrazení řádků](../profiling/lines-view-sampling-data.md)   

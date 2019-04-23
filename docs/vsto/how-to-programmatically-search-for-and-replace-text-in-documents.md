@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 01e3254c3716cd1c3aaeaa6ca76b33c95f525186
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 9799e958903c56f5a3423f86736668a2affd87da
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56610629"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071444"
 ---
 # <a name="how-to-programmatically-search-for-and-replace-text-in-documents"></a>Postupy: Programově hledání a nahrazování textu v dokumentech
   <xref:Microsoft.Office.Interop.Word.Find> Objektu je členem obou <xref:Microsoft.Office.Interop.Word.Selection> a <xref:Microsoft.Office.Interop.Word.Range> objektů a vy můžete použít buď pro hledání textu v dokumentech aplikace Microsoft Office Word. Příkaz replace je rozšířením najít příkaz.
@@ -101,20 +101,20 @@ ms.locfileid: "56610629"
 
 ### <a name="to-search-for-and-replace-text-in-documents"></a>K hledání a nahrazování textu v dokumentech
 
-1.  Následující příklad kódu pro přidání `ThisDocument` nebo `ThisAddIn` třídu ve vašem projektu.
+1. Následující příklad kódu pro přidání `ThisDocument` nebo `ThisAddIn` třídu ve vašem projektu.
 
      [!code-vb[Trin_VstcoreWordAutomation#75](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#75)]
      [!code-csharp[Trin_VstcoreWordAutomation#75](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#75)]
 
      <xref:Microsoft.Office.Interop.Word.Find> Třída má <xref:Microsoft.Office.Interop.Word.Find.ClearFormatting%2A> metoda a <xref:Microsoft.Office.Interop.Word.Replacement> třídy také mají svůj vlastní <xref:Microsoft.Office.Interop.Word.Replacement.ClearFormatting%2A> metoda. Při provádění operace hledání a nahrazování, musíte použít metodu ClearFormatting oba objekty. Když ho používáte jenom na <xref:Microsoft.Office.Interop.Word.Find> objektu, může se zobrazit neočekávané výsledky v Nahrazovací text.
 
-2.  Použití <xref:Microsoft.Office.Interop.Word.Find.Execute%2A> metodu <xref:Microsoft.Office.Interop.Word.Find> a nahraďte každé nalezené položky. K určení položek k nahrazení, použijte *nahradit* parametru. Tento parametr může být jeden z následujících <xref:Microsoft.Office.Interop.Word.WdReplace> hodnoty:
+2. Použití <xref:Microsoft.Office.Interop.Word.Find.Execute%2A> metodu <xref:Microsoft.Office.Interop.Word.Find> a nahraďte každé nalezené položky. K určení položek k nahrazení, použijte *nahradit* parametru. Tento parametr může být jeden z následujících <xref:Microsoft.Office.Interop.Word.WdReplace> hodnoty:
 
-    -   <xref:Microsoft.Office.Interop.Word.WdReplace.wdReplaceAll> nahradí všechny nalezené položky.
+    - <xref:Microsoft.Office.Interop.Word.WdReplace.wdReplaceAll> nahradí všechny nalezené položky.
 
-    -   <xref:Microsoft.Office.Interop.Word.WdReplace.wdReplaceNone> nahradí žádná z nalezených položek.
+    - <xref:Microsoft.Office.Interop.Word.WdReplace.wdReplaceNone> nahradí žádná z nalezených položek.
 
-    -   <xref:Microsoft.Office.Interop.Word.WdReplace.wdReplaceOne> nahradí první nalezené položky.
+    - <xref:Microsoft.Office.Interop.Word.WdReplace.wdReplaceOne> nahradí první nalezené položky.
 
 ## <a name="see-also"></a>Viz také:
 - [Postupy: Nastavování možností hledání v aplikaci Word](../vsto/how-to-programmatically-set-search-options-in-word.md)

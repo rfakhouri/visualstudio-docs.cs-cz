@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4359b863da56242bbe612fa0055690d9923a9ec4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 66f5510ae63507aebb97a7f8bdfd3e367f1afc85
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56600472"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074658"
 ---
 # <a name="how-to-enable-autostart-for-cd-installations"></a>Postupy: Povolení funkce AutoStart pro instalace z disku CD
 Při nasazování [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace pomocí vyměnitelného média jako je například disk CD-ROM nebo DVD-ROM, můžete povolit `AutoStart` tak, aby [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace se automaticky spustí, když je médium je vloženo.
@@ -30,17 +30,17 @@ Při nasazování [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.m
 
 ### <a name="to-enable-autostart"></a>Povolit automatické spuštění
 
-1.  S projekt vybraný v **Průzkumníka řešení**na **projektu** klikněte na nabídku **vlastnosti**.
+1. S projekt vybraný v **Průzkumníka řešení**na **projektu** klikněte na nabídku **vlastnosti**.
 
-2.  Klikněte na tlačítko **publikovat** kartu.
+2. Klikněte na tlačítko **publikovat** kartu.
 
-3.  Klikněte na tlačítko **možnosti** tlačítko.
+3. Klikněte na tlačítko **možnosti** tlačítko.
 
      **Možnosti publikování** zobrazí se dialogové okno.
 
-4.  Klikněte na tlačítko **nasazení**.
+4. Klikněte na tlačítko **nasazení**.
 
-5.  Vyberte **pro instalace z CD automaticky spustit instalační program po vložení disku CD** zaškrtávací políčko.
+5. Vyberte **pro instalace z CD automaticky spustit instalační program po vložení disku CD** zaškrtávací políčko.
 
      *Autorun.inf* soubor bude zkopírován do umístění pro publikování, když je aplikace publikována.
 

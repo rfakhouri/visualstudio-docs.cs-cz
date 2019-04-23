@@ -1,5 +1,5 @@
 ---
-title: 'Průvodce: Zobrazení textu v textovém poli v dokumentu s použitím tlačítka'
+title: 'Návod: Zobrazení textu v textovém poli v dokumentu s použitím tlačítka'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,14 +12,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: df33470ea76ac29626459c1240873068180b0860
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f6a9b62c62b863448bb1333b162c6706c48cd72b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56600981"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071756"
 ---
-# <a name="walkthrough-display-text-in-a-text-box-in-a-document-using-a-button"></a>Průvodce: Zobrazení textu v textovém poli v dokumentu s použitím tlačítka
+# <a name="walkthrough-display-text-in-a-text-box-in-a-document-using-a-button"></a>Návod: Zobrazení textu v textovém poli v dokumentu s použitím tlačítka
   Tento návod ukazuje, jak pomocí tlačítka a textová pole v přizpůsobení na úrovni dokumentu pro aplikaci Microsoft Office Word.
 
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]
@@ -35,16 +35,16 @@ ms.locfileid: "56600981"
 ## <a name="prerequisites"></a>Požadavky
  K dokončení tohoto návodu budete potřebovat následující komponenty:
 
--   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
+- [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
--   Microsoft Word
+- Microsoft Word
 
 ## <a name="create-the-project"></a>Vytvoření projektu
  Prvním krokem je vytvoření projektu dokumentu aplikace Word.
 
 ### <a name="to-create-a-new-project"></a>Chcete-li vytvořit nový projekt
 
-1.  Vytvoření projektu Wordového dokumentu s názvem **tlačítko Moje slovo**. V průvodci vyberte **vytvoříte nový textový dokument**.
+1. Vytvoření projektu Wordového dokumentu s názvem **tlačítko Moje slovo**. V průvodci vyberte **vytvoříte nový textový dokument**.
 
      Další informace najdete v tématu [jak: Vytvářet projekty pro Office v sadě Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
@@ -68,7 +68,7 @@ ms.locfileid: "56600981"
 
 5. Přetáhněte **tlačítko** ovládací prvek v dokumentu a změnit následující vlastnosti.
 
-   |Vlastnost|Hodnota|
+   |Vlastnost|Value|
    |--------------|-----------|
    |**Název**|**insertText**|
    |**Text**|**Vložit Text**|
@@ -80,14 +80,14 @@ ms.locfileid: "56600981"
 
 ### <a name="to-write-to-the-text-box-when-the-button-is-clicked"></a>Po kliknutí na tlačítko zapsat do textového pole
 
-1.  V **Průzkumníka řešení**, klikněte pravým tlačítkem na **ThisDocument**a potom klikněte na tlačítko **zobrazit kód** v místní nabídce.
+1. V **Průzkumníka řešení**, klikněte pravým tlačítkem na **ThisDocument**a potom klikněte na tlačítko **zobrazit kód** v místní nabídce.
 
-2.  Přidejte následující kód, který <xref:System.Windows.Forms.Control.Click> obslužná rutina události tlačítka.
+2. Přidejte následující kód, který <xref:System.Windows.Forms.Control.Click> obslužná rutina události tlačítka.
 
      [!code-vb[Trin_VstcoreProgrammingControlsWord#7](../vsto/codesnippet/VisualBasic/my chart options/ThisDocument.vb#7)]
      [!code-csharp[Trin_VstcoreProgrammingControlsWord#7](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ThisDocument.cs#7)]
 
-3.  V C#, je nutné přidat obslužnou rutinu události pro tlačítko <xref:Microsoft.Office.Tools.Word.Document.Startup> událostí. Informace o vytváření obslužných rutin událostí, naleznete v tématu [jak: Vytváření obslužných rutin událostí v projektech pro systém Office](../vsto/how-to-create-event-handlers-in-office-projects.md).
+3. V C#, je nutné přidat obslužnou rutinu události pro tlačítko <xref:Microsoft.Office.Tools.Word.Document.Startup> událostí. Informace o vytváření obslužných rutin událostí, naleznete v tématu [jak: Vytváření obslužných rutin událostí v projektech pro systém Office](../vsto/how-to-create-event-handlers-in-office-projects.md).
 
      [!code-csharp[Trin_VstcoreProgrammingControlsWord#8](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ThisDocument.cs#8)]
 
@@ -96,18 +96,18 @@ ms.locfileid: "56600981"
 
 ### <a name="to-test-your-document"></a>K otestování vašeho dokumentu
 
-1.  Stisknutím klávesy **F5** ke spuštění projektu.
+1. Stisknutím klávesy **F5** ke spuštění projektu.
 
-2.  Klikněte na tlačítko.
+2. Klikněte na tlačítko.
 
-3.  Ujistěte se, že **Hello World!** Zobrazí se v textovém poli.
+3. Ujistěte se, že **Hello World!** Zobrazí se v textovém poli.
 
 ## <a name="next-steps"></a>Další kroky
  Tento návod ukazuje základy používání tlačítka a textová pole v dokumentech aplikace Word. Tady jsou některé úlohy, které by mohl pocházet Další:
 
--   Chcete-li změnit formátování pomocí pole se seznamem. Další informace najdete v tématu [názorný postup: Změna formátování dokumentů s použitím ovládacích prvků CheckBox](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md).
+- Chcete-li změnit formátování pomocí pole se seznamem. Další informace najdete v tématu [názorný postup: Změna formátování dokumentů s použitím ovládacích prvků CheckBox](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md).
 
--   Pomocí přepínačů vyberte styly grafu. Další informace najdete v tématu [názorný postup: Aktualizace grafu v dokumentu s použitím přepínačů](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md).
+- Pomocí přepínačů vyberte styly grafu. Další informace najdete v tématu [názorný postup: Aktualizace grafu v dokumentu s použitím přepínačů](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md).
 
 ## <a name="see-also"></a>Viz také:
 - [Ovládací prvky Windows Forms na dokumenty Office – přehled](../vsto/windows-forms-controls-on-office-documents-overview.md)

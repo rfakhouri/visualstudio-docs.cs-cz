@@ -17,37 +17,37 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ffefb9f6542bbbb44d732116a348045660cf78b3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 71fdd358c03604b196b0a57a9667f40dfb92b049
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54780993"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073966"
 ---
 # <a name="developing-applications-with-the-workflow-designer"></a>Vývoj aplikací pomocí návrháře postupu provádění
 [!INCLUDE[wfd1](../includes/wfd1-md.md)] Vizuálního návrháře a ladicí program pro grafický procesu vytváření a ladění [!INCLUDE[wf](../includes/wf-md.md)] aplikací v [!INCLUDE[netfx40_long](../includes/netfx40-long-md.md)] , která je hostována v [!INCLUDE[vs2010](../includes/vs2010-md.md)] vývojové prostředí. Umožňuje sestavit aplikace složený pracovního postupu, knihovna aktivit nebo [!INCLUDE[indigo1](../includes/indigo1-md.md)] službu pomocí šablony a návrháři aktivit. [!INCLUDE[crabout](../includes/crabout-md.md)] pracovní postupy, najdete v článku [Windows Workflow Foundation &#91;rozhraní .NET Framework 4&#93;](http://msdn.microsoft.com/library/9a23ea6b-d600-483e-89cd-8889cfec5f66).  
   
  Následuje několik nových funkcí návrhu, které tuto novou verzi nastavit [!INCLUDE[wfd2](../includes/wfd2-md.md)] kromě starší verze [!INCLUDE[wfd2](../includes/wfd2-md.md)]:  
   
--   [!INCLUDE[wfd2](../includes/wfd2-md.md)] Se vytvořil pomocí [!INCLUDE[avalon1](../includes/avalon1-md.md)]. To vylepšuje možnosti návrháře aktivit a zvyšuje výkon u velkých a složitých pracovních postupů.  
+- [!INCLUDE[wfd2](../includes/wfd2-md.md)] Se vytvořil pomocí [!INCLUDE[avalon1](../includes/avalon1-md.md)]. To vylepšuje možnosti návrháře aktivit a zvyšuje výkon u velkých a složitých pracovních postupů.  
   
--   Vlastní aktivity jsou teď navržené s [!INCLUDE[avalon2](../includes/avalon2-md.md)], pomocí XAML a programovací model pro vytváření návrháři aktivit je zjednodušené.  
+- Vlastní aktivity jsou teď navržené s [!INCLUDE[avalon2](../includes/avalon2-md.md)], pomocí XAML a programovací model pro vytváření návrháři aktivit je zjednodušené.  
   
--   Vývojový diagram aktivity byl implementován, takže teď můžete zobrazit tok programu pomocí známých vývojový diagram modelování style.  
+- Vývojový diagram aktivity byl implementován, takže teď můžete zobrazit tok programu pomocí známých vývojový diagram modelování style.  
   
--   [!INCLUDE[wfd2](../includes/wfd2-md.md)] Má nové proměnné návrháře, který umožňuje deklarovat a nastavovat jejich obory proměnné v rámci své pracovní postupy jejich vazbu na aktivity.  
+- [!INCLUDE[wfd2](../includes/wfd2-md.md)] Má nové proměnné návrháře, který umožňuje deklarovat a nastavovat jejich obory proměnné v rámci své pracovní postupy jejich vazbu na aktivity.  
   
--   V [!INCLUDE[vs2010](../includes/vs2010-md.md)], [!INCLUDE[wfd2](../includes/wfd2-md.md)] poskytuje úplné funkce IntelliSense při vytváření výrazy jazyka Visual Basic v rámci vaší [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] pracovních postupů.  
+- V [!INCLUDE[vs2010](../includes/vs2010-md.md)], [!INCLUDE[wfd2](../includes/wfd2-md.md)] poskytuje úplné funkce IntelliSense při vytváření výrazy jazyka Visual Basic v rámci vaší [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] pracovních postupů.  
   
--   Možnosti ladění teď rozšíří do XAML, což vám umožní nastavit zarážky v definici pracovního postupu XAML a krokování s vnořením do kódu XAML za běhu, který poskytuje podobné ve spravovaném kódu.  
+- Možnosti ladění teď rozšíří do XAML, což vám umožní nastavit zarážky v definici pracovního postupu XAML a krokování s vnořením do kódu XAML za běhu, který poskytuje podobné ve spravovaném kódu.  
   
--   Změna hostování [!INCLUDE[wfd2](../includes/wfd2-md.md)] mimo [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] je výrazně zjednodušené porovnání s předchozími verzemi současnosti vyžaduje jenom pár řádků kódu.  
+- Změna hostování [!INCLUDE[wfd2](../includes/wfd2-md.md)] mimo [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] je výrazně zjednodušené porovnání s předchozími verzemi současnosti vyžaduje jenom pár řádků kódu.  
   
--   Nové <xref:System.Activities.Statements.Flowchart> aktivita a její [vývojový diagram](../workflow-designer/flowchart-activity-designer.md) můžete vizualizovat váš tok programu pomocí známých vývojový diagram modelování style.  
+- Nové <xref:System.Activities.Statements.Flowchart> aktivita a její [vývojový diagram](../workflow-designer/flowchart-activity-designer.md) můžete vizualizovat váš tok programu pomocí známých vývojový diagram modelování style.  
   
--   Byly vylepšeny zasílání zpráv aktivity díky tomu umožňuje zapisovat plně deklarativního (žádný kód) [!INCLUDE[indigo1](../includes/indigo1-md.md)] služby.  
+- Byly vylepšeny zasílání zpráv aktivity díky tomu umožňuje zapisovat plně deklarativního (žádný kód) [!INCLUDE[indigo1](../includes/indigo1-md.md)] služby.  
   
--   **Přidat odkaz na službu...** funkce umožňuje generovat aktivity automaticky, které k webovým službám.  
+- **Přidat odkaz na službu...** funkce umožňuje generovat aktivity automaticky, které k webovým službám.  
   
 ## <a name="in-this-section"></a>V tomto oddílu  
  [Používání návrháře postupu provádění](../workflow-designer/using-the-workflow-designer.md)  

@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e9f39c45382fc55144f8200c3951fb4a229b7a43
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: fa5c02fc28e7ffec4765d94758c838ab149e7ac3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867368"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064190"
 ---
 # <a name="add-extensions-to-dsl-definitions"></a>Přidání rozšíření do definic DSL
 
@@ -20,15 +20,15 @@ Rozšíření definice DSL umožňuje vytvořit balíček rozšíření jazyka s
 
 Rozšíření DSL může obsahovat následující funkce:
 
--   Vlastnosti elementů modelu a prezentace
+- Vlastnosti elementů modelu a prezentace
 
--   Dekoratéry pro obrazců a konektorů
+- Dekoratéry pro obrazců a konektorů
 
--   Třídy, relace, obrazců a konektorů
+- Třídy, relace, obrazců a konektorů
 
--   Omezení ověření
+- Omezení ověření
 
--   Položky panelu nástrojů a karty
+- Položky panelu nástrojů a karty
 
 Uživatel rozšířené DSL můžete vytvořit a uložit model, který obsahuje instance další funkce. Model lze číst jinými uživateli, kteří nainstalovali odpovídající rozšíření. Uživatelé, kteří nejsou nainstalované rozšíření nemůže používat další funkce, ale můžete aktualizovat a uložit model bez ztráty další funkce.
 

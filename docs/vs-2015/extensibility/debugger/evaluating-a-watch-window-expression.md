@@ -12,12 +12,12 @@ ms.assetid: b07e72c7-60d3-4b30-8e3f-6db83454c348
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: fb60ec9d471c99b24e07eef11014ce82a18d50b4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6b5ea8cbdfa9644e103f32d49ea0964bbb90bad8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54783882"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075854"
 ---
 # <a name="evaluating-a-watch-window-expression"></a>Vyhodnocení výrazu okna kukátka
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,19 +29,19 @@ ms.locfileid: "54783882"
   
  Tady je přehled způsob vyhodnocení výrazu kukátka seznamu:  
   
-1.  Volání sady Visual Studio je DE [GetExpressionContext](../../extensibility/debugger/reference/idebugstackframe2-getexpressioncontext.md) získat výraz kontext, který lze použít k vyhodnocení výrazů.  
+1. Volání sady Visual Studio je DE [GetExpressionContext](../../extensibility/debugger/reference/idebugstackframe2-getexpressioncontext.md) získat výraz kontext, který lze použít k vyhodnocení výrazů.  
   
-2.  Pro každý výraz v seznamu sledování volání sady Visual Studio [ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) převést na výraz analyzovaného textu výrazu.  
+2. Pro každý výraz v seznamu sledování volání sady Visual Studio [ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) převést na výraz analyzovaného textu výrazu.  
   
-3.  `IDebugExpressionContext2::ParseText` volání [analyzovat](../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) k vykonávají samotnou práci při analýze textu a produktů [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md) objektu.  
+3. `IDebugExpressionContext2::ParseText` volání [analyzovat](../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) k vykonávají samotnou práci při analýze textu a produktů [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md) objektu.  
   
-4.  `IDebugExpressionContext2::ParseText` vytvoří [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) objektu a vloží `IDebugParsedExpression` objektu do něj. Tato můžu`DebugExpression2` objekt je pak vrácen do sady Visual Studio.  
+4. `IDebugExpressionContext2::ParseText` vytvoří [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) objektu a vloží `IDebugParsedExpression` objektu do něj. Tato můžu`DebugExpression2` objekt je pak vrácen do sady Visual Studio.  
   
-5.  Visual Studio volání [EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) analyzovaný vyhodnotit.  
+5. Visual Studio volání [EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) analyzovaný vyhodnotit.  
   
-6.  `IDebugExpression2::EvaluateSync` předává volání [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) skutečné hodnocení a vytvářet [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) objekt, který je vrácen do sady Visual Studio.  
+6. `IDebugExpression2::EvaluateSync` předává volání [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) skutečné hodnocení a vytvářet [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) objekt, který je vrácen do sady Visual Studio.  
   
-7.  Visual Studio volání [GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) k získání hodnoty výraz, který se následně zobrazí v seznamu sledování.  
+7. Visual Studio volání [GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) k získání hodnoty výraz, který se následně zobrazí v seznamu sledování.  
   
 ## <a name="parse-then-evaluate"></a>Analyzovat a vyhodnocení  
  Protože parsování složitý výraz může trvat déle než vyhodnocení, proces vyhodnocení výrazu je rozdělený do dvou kroků: ((1) analýzy výraz a 2) analyzovaný výraz vyhodnotit. Tímto způsobem vyhodnocení může dojít v mnoha případech ale výraz musí být pouze jednou analyzována. Zprostředkující analyzovaný výraz vrátí EE v [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md) objekt, který je pak zapouzdřen a byla vrácena z DE jako [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) objektu. `IDebugExpression` Objekt odloží všechny vyhodnocení `IDebugParsedExpression` objektu.  

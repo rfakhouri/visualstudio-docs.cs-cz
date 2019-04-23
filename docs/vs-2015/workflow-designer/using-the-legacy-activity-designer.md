@@ -16,12 +16,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e083da3dce7ed6b69309557d9e960a302f5b3d60
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5755c6a3b4ece5b40c7799d83bdf33966d5c2b3e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54790547"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070781"
 ---
 # <a name="using-the-legacy-activity-designer"></a>Používání starší verze návrháře aktivit
 Toto téma popisuje způsob použití návrháře aktivit v starší [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Použít starší verzi návrháře při cílení [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] nebo [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
@@ -35,9 +35,9 @@ Toto téma popisuje způsob použití návrháře aktivit v starší [!INCLUDE[w
   
 2. Vyberte **aktivity** nebo **aktivita (s rozdělením kódu)** šablony.  
   
-   1.  Použití **aktivity** šablony k vytvoření aktivity se definici aktivity a kódem uživatele ve stejném souboru kódu.  
+   1. Použití **aktivity** šablony k vytvoření aktivity se definici aktivity a kódem uživatele ve stejném souboru kódu.  
   
-   2.  Použití **aktivita (s rozdělením kódu)** šablony k vytvoření aktivity s aktivity definicí vyjádřenou jako značka pracovního postupu a kód uživatele v samostatném souboru kódu.  
+   2. Použití **aktivita (s rozdělením kódu)** šablony k vytvoření aktivity s aktivity definicí vyjádřenou jako značka pracovního postupu a kód uživatele v samostatném souboru kódu.  
   
 3. Zadejte název aktivity nebo Ponecháme výchozí název a potom klikněte na tlačítko **přidat**.  
   

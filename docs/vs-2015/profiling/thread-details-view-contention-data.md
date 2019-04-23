@@ -13,12 +13,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5d8ecbeca226d558774c12f4bec45ac26f66a808
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 16ee86e69cb3a150a98de5077aa0c545545833e8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54762121"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069104"
 ---
 # <a name="thread-details-view---contention-data"></a>Zobrazení podrobností o vláknu – data kolizí
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,19 +31,19 @@ Zobrazení podrobností vláken představuje graf časové osy blokujících ud�
   
 #### <a name="to-zoom-in-on-a-timeline-segment"></a>Přiblížit na segment časové osy  
   
--   Klikněte a tažením ukazatele myši a vyberte oblast na časové ose.  
+- Klikněte a tažením ukazatele myši a vyberte oblast na časové ose.  
   
      Když uvolníte tlačítko myši, přiblížení zobrazení vybraného časového úseku. Postup přiblížení podrobněji, můžete opakovat. Posuvníku na posuvníku čas představuje relativní velikost časového úseku, který se zobrazí v zobrazení.  
   
 #### <a name="to-zoom-out-on-a-timeline"></a>Chcete-li oddálení časové osy  
   
--   Klikněte na tlačítko **Oddálit** se vraťte na předchozí úroveň přiblížení.  
+- Klikněte na tlačítko **Oddálit** se vraťte na předchozí úroveň přiblížení.  
   
--   Klikněte na tlačítko **přiblížení resetování** zobrazíte celý časové osy v zobrazení.  
+- Klikněte na tlačítko **přiblížení resetování** zobrazíte celý časové osy v zobrazení.  
   
 #### <a name="to-view-the-call-stack-of-an-event"></a>Chcete-li zobrazit zásobník volání události  
   
--   Časová osa grafu klikněte na svislý pruh, který představuje událost...  
+- Časová osa grafu klikněte na svislý pruh, který představuje událost...  
   
 #### <a name="to-view-or-edit-the-source-code-of-a-function-in-the-call-stack"></a>Chcete-li zobrazit nebo upravit zdrojový kód funkce v zásobníku volání  
   
@@ -53,12 +53,12 @@ Zobrazení podrobností vláken představuje graf časové osy blokujících ud�
   
 #### <a name="to-view-the-contention-events-of-a-resource-in-all-threads-in-the-profiling-run"></a>Chcete-li zobrazit kolizní události z prostředku ve všech vláknech při spuštění profilace  
   
--   Časová osa grafu klikněte na název nebo id prostředku.  
+- Časová osa grafu klikněte na název nebo id prostředku.  
   
      [Zobrazení podrobností o prostředku](../profiling/resource-details-view-contention-data.md) se zobrazí pro vybraný prostředek.  
   
 #### <a name="to-view-the-thread-contention-data-in-the-processes-window"></a>Chcete-li zobrazit data kolize vlákna v okně procesy  
   
--   Časová osa grafu, klikněte na tlačítko **celkový**.  
+- Časová osa grafu, klikněte na tlačítko **celkový**.  
   
      [Zobrazení procesu](../profiling/process-view-contention-data.md) se zobrazí s vláknem vybrali.

@@ -11,12 +11,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c02e700eaa17f29726d9e3ddee83bfbc4874fdda
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 20c449148b98c89f1eb64beb61588661f02ab74a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54766162"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073524"
 ---
 # <a name="read-models-and-diagrams-in-other-visual-studio-editions"></a>Čtení modelů a diagramů v jiných edicích sady Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,16 +35,16 @@ Při otevření modelu ve verzi sady Visual Studio, který nepodporuje vytvořen
   
  Další UML diagram nebo diagramu vrstvy, je minimální sadu souborů, které budete potřebovat:  
   
--   Dva soubory pro diagram, který si chcete přečíst, například diagramů **MyDiagram.classdiagram a MyDiagram.classdiagram.layout**.  
+- Dva soubory pro diagram, který si chcete přečíst, například diagramů **MyDiagram.classdiagram a MyDiagram.classdiagram.layout**.  
   
     > [!NOTE]
     >  Pro diagramy vrstev, také byste měli mít soubor s názvem _MyDiagram_**. layerdiagram.suppressions**.  
   
--   Soubor projektu modelování (**MyModel.modelproj**)  
+- Soubor projektu modelování (**MyModel.modelproj**)  
   
--   V kořenovém souboru modelu (**ModelDefinition\MyModel.uml**)  
+- V kořenovém souboru modelu (**ModelDefinition\MyModel.uml**)  
   
--   Soubory balíčku pro všechny balíčky odkazované v diagramu (**ModelDefinition\MyPackage.uml**)  
+- Soubory balíčku pro všechny balíčky odkazované v diagramu (**ModelDefinition\MyPackage.uml**)  
   
 ## <a name="changes-that-you-can-make-in-read-only-mode"></a>Změny provedené v režimu jen pro čtení  
  Pokud otevřete modelu a jeho diagramy v verzi sady Visual Studio, která nepodporuje vytváření modelu, nelze změnit model. To znamená nelze změnit na prvky a vztahy, které jsou zobrazeny v diagramech nebo v Průzkumníku modelů. Můžete ale proveďte nějaké změny rozložení diagramy:  
@@ -55,7 +55,7 @@ Při otevření modelu ve verzi sady Visual Studio, který nepodporuje vytvořen
   
   Je-li uložit tyto změny. Pokud chcete provádět změny viditelné pro ostatní uživatele, minimálně, odešlete aktualizovaný **.layout** soubory.  
   
-##  <a name="RelatedTopics"></a> Související témata  
+## <a name="RelatedTopics"></a> Související témata  
   
 |Název|Popis|  
 |-----------|-----------------|  

@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0bf16f79401f4b8df3bafff0f92963510110dff1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 40de16290e52755ab92d09edf0c90c045ad4dc86
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56622758"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061031"
 ---
 # <a name="test-guide-for-source-control-plug-ins"></a>Testovací příručka pro moduly plug-in správy zdrojového kódu
 Tato část obsahuje pokyny pro testování vašich plug-in správy zdrojových kódů s [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Je k dispozici rozsáhlý přehled nejběžnějších oblastí testování, jakož i některé komplikovanější oblastí, které může být problematické. Tento přehled není určena k tudíž nepředstavuje kompletní seznam testovacích případů.
@@ -51,55 +51,55 @@ Tato část obsahuje pokyny pro testování vašich plug-in správy zdrojových 
 
 ## <a name="test-areas-covered-in-this-section"></a>Oblasti testů, které jsou popsané v této části
 
--   [Testovací oblast 1: Přidat / otevřít ze správy zdrojového kódu](../../extensibility/internals/test-area-1-add-to-open-from-source-control.md)
+- [Testovací oblast 1: Přidat / otevřít ze správy zdrojového kódu](../../extensibility/internals/test-area-1-add-to-open-from-source-control.md)
 
-    -   Případu 1a: Přidat řešení do správy zdrojového kódu
+    - Případu 1a: Přidat řešení do správy zdrojového kódu
 
-    -   Případu 1b: Otevřít řešení ze správy zdrojového kódu
+    - Případu 1b: Otevřít řešení ze správy zdrojového kódu
 
-    -   Případ 1c: Přidat řešení ze správy zdrojového kódu
+    - Případ 1c: Přidat řešení ze správy zdrojového kódu
 
--   [Testovací oblast 2: Získat ze správy zdrojového kódu](../../extensibility/internals/test-area-2-get-from-source-control.md)
+- [Testovací oblast 2: Získat ze správy zdrojového kódu](../../extensibility/internals/test-area-2-get-from-source-control.md)
 
--   [Testovací oblast 3: Podívejte se na / Zrušit rezervaci](../../extensibility/internals/test-area-3-check-out-undo-checkout.md)
+- [Testovací oblast 3: Podívejte se na / Zrušit rezervaci](../../extensibility/internals/test-area-3-check-out-undo-checkout.md)
 
-    -   Případ 3: Podívejte se na / Zrušit rezervaci
+    - Případ 3: Podívejte se na / Zrušit rezervaci
 
-    -   Případu 3a: Rezervovat
+    - Případu 3a: Rezervovat
 
-    -   Případu 3b: Odpojené rezervace
+    - Případu 3b: Odpojené rezervace
 
-    -   Případ 3c: Query Edit/Query Save (QEQS)
+    - Případ 3c: Query Edit/Query Save (QEQS)
 
-    -   Malá a velká 3d: Bezobslužné ověření
+    - Malá a velká 3d: Bezobslužné ověření
 
-    -   Případu 3e: Vrátit zpět rezervaci
+    - Případu 3e: Vrátit zpět rezervaci
 
--   [Testovací oblast 4: Přihlásit se](../../extensibility/internals/test-area-4-check-in.md)
+- [Testovací oblast 4: Přihlásit se](../../extensibility/internals/test-area-4-check-in.md)
 
-    -   Případu 4a: Změněné položky
+    - Případu 4a: Změněné položky
 
-    -   Případu 4b: Přidávání souborů
+    - Případu 4b: Přidávání souborů
 
-    -   Případ 4c: Přidávání projektů
+    - Případ 4c: Přidávání projektů
 
--   [Testovací oblast 5: Změnit správu zdrojového kódu](../../extensibility/internals/test-area-5-change-source-control.md)
+- [Testovací oblast 5: Změnit správu zdrojového kódu](../../extensibility/internals/test-area-5-change-source-control.md)
 
-    -   Případu 5a: Vytvoření vazby
+    - Případu 5a: Vytvoření vazby
 
-    -   Případu 5b: Zrušení vazby
+    - Případu 5b: Zrušení vazby
 
-    -   Případ 5c: obnovení vazby
+    - Případ 5c: obnovení vazby
 
--   [Testovací oblast 6: Odstranit](../../extensibility/internals/test-area-6-delete.md)
+- [Testovací oblast 6: Odstranit](../../extensibility/internals/test-area-6-delete.md)
 
--   [Testovací oblast 7: sdílené složky](../../extensibility/internals/test-area-7-share.md)
+- [Testovací oblast 7: sdílené složky](../../extensibility/internals/test-area-7-share.md)
 
--   [Testovací oblast 8: Přepínání modulu plug-in](../../extensibility/internals/test-area-8-plug-in-switching.md)
+- [Testovací oblast 8: Přepínání modulu plug-in](../../extensibility/internals/test-area-8-plug-in-switching.md)
 
-    -   Případu 8a: Automaticky změnit
+    - Případu 8a: Automaticky změnit
 
-    -   Případu 8b: Řešení na základě změn
+    - Případu 8b: Řešení na základě změn
 
 ## <a name="see-also"></a>Viz také
 - [Moduly plug-in správy zdrojového kódu](../../extensibility/source-control-plug-ins.md)

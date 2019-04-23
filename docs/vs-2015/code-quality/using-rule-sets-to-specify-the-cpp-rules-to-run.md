@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: 55ce3ac93f280d5b5cd29fdc533035dc32cbaa8c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e8361ec9f93ff150d3fd29bce315f635bd00048b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54773894"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068636"
 ---
 # <a name="using-rule-sets-to-specify-the-c-rules-to-run"></a>Použití sad pravidel k určování pravidel C++ pro spuštění
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,13 +43,13 @@ V [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] a [!INCLUDE[vsUltShort](.
   
 #### <a name="to-modify-a-rule-set-in-the-rule-set-editor"></a>Chcete-li upravit pravidlo nastavte v editoru sad pravidel  
   
--   Chcete-li změnit zobrazovaný název sady pravidel na **zobrazení** nabídce zvolte **okno vlastností**. Zadejte zobrazovaný název v **název** pole. Všimněte si, že zobrazované jméno se může lišit od názvu souboru.  
+- Chcete-li změnit zobrazovaný název sady pravidel na **zobrazení** nabídce zvolte **okno vlastností**. Zadejte zobrazovaný název v **název** pole. Všimněte si, že zobrazované jméno se může lišit od názvu souboru.  
   
--   Chcete-li přidat do vlastní sady pravidel všechna pravidla skupiny, zaškrtněte políčko skupiny. Pokud chcete odebrat všechna pravidla skupiny, zrušte zaškrtnutí políčka.  
+- Chcete-li přidat do vlastní sady pravidel všechna pravidla skupiny, zaškrtněte políčko skupiny. Pokud chcete odebrat všechna pravidla skupiny, zrušte zaškrtnutí políčka.  
   
--   Chcete-li přidat konkrétní pravidlo do sady vlastních pravidel, zaškrtněte políčko pravidla. Chcete-li odebrat pravidlo ze sady pravidel, zrušte zaškrtnutí políčka.  
+- Chcete-li přidat konkrétní pravidlo do sady vlastních pravidel, zaškrtněte políčko pravidla. Chcete-li odebrat pravidlo ze sady pravidel, zrušte zaškrtnutí políčka.  
   
--   Chcete-li změnit akce provedená v případě porušení pravidla analýzy kódu, zvolte **akce** pole pro pravidlo a pak vyberte jednu z následujících hodnot:  
+- Chcete-li změnit akce provedená v případě porušení pravidla analýzy kódu, zvolte **akce** pole pro pravidlo a pak vyberte jednu z následujících hodnot:  
   
      **Upozornit** – vygeneruje upozornění.  
   
@@ -59,20 +59,20 @@ V [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] a [!INCLUDE[vsUltShort](.
   
 #### <a name="to-group-filter-or-change-the-fields-in-the-rule-set-editor-by-using-the-rule-set-editor-toolbar"></a>Do skupiny, filtrování nebo změně polí v editoru sad pravidel pomocí panelu nástrojů editoru sady pravidel  
   
--   Chcete-li rozbalit pravidla ve všech skupinách, zvolte **Rozbalit vše**.  
+- Chcete-li rozbalit pravidla ve všech skupinách, zvolte **Rozbalit vše**.  
   
--   Chcete-li sbalit pravidla ve všech skupinách, zvolte **Sbalit vše**.  
+- Chcete-li sbalit pravidla ve všech skupinách, zvolte **Sbalit vše**.  
   
--   Chcete-li změnit pole, pravidla se seskupují podle, zvolte na pole **Group** seznamu. Chcete-li zobrazit pravidla neseskupené, zvolte  **\<žádný >**.  
+- Chcete-li změnit pole, pravidla se seskupují podle, zvolte na pole **Group** seznamu. Chcete-li zobrazit pravidla neseskupené, zvolte  **\<žádný >**.  
   
--   Chcete-li přidat nebo odebrat pole ve sloupcích pravidlo, zvolte **možnosti sloupce**.  
+- Chcete-li přidat nebo odebrat pole ve sloupcích pravidlo, zvolte **možnosti sloupce**.  
   
--   Chcete-li skrýt pravidla, která se nevztahují na aktuální řešení, zvolte **skrýt pravidla, která se nevztahují na aktuální řešení**.  
+- Chcete-li skrýt pravidla, která se nevztahují na aktuální řešení, zvolte **skrýt pravidla, která se nevztahují na aktuální řešení**.  
   
--   Chcete-li přepnout mezi zobrazení a skrytí pravidla, které jsou přiřazeny akce chyby, zvolte **zobrazit pravidla, která mohou generovat chyby analýzy kódu**.  
+- Chcete-li přepnout mezi zobrazení a skrytí pravidla, které jsou přiřazeny akce chyby, zvolte **zobrazit pravidla, která mohou generovat chyby analýzy kódu**.  
   
--   Chcete-li přepnout mezi zobrazení a skrytí pravidla, které jsou přiřazeny akce upozornění, zvolte **zobrazit pravidla, která mohou generovat upozornění analýzy kódu**.  
+- Chcete-li přepnout mezi zobrazení a skrytí pravidla, které jsou přiřazeny akce upozornění, zvolte **zobrazit pravidla, která mohou generovat upozornění analýzy kódu**.  
   
--   Pro přepínání zobrazení a skrytí pravidla, které jsou přiřazeny **žádný** akce, zvolte **zobrazit pravidla, která nejsou povolena**.  
+- Pro přepínání zobrazení a skrytí pravidla, které jsou přiřazeny **žádný** akce, zvolte **zobrazit pravidla, která nejsou povolena**.  
   
--   Chcete-li přidat nebo odebrat Microsoft výchozí pravidlo se nastaví na aktuální sadu pravidel, zvolte **přidat nebo odebrat podřízené sady pravidel**.
+- Chcete-li přidat nebo odebrat Microsoft výchozí pravidlo se nastaví na aktuální sadu pravidel, zvolte **přidat nebo odebrat podřízené sady pravidel**.

@@ -10,12 +10,12 @@ ms.assetid: 666b9116-8550-4bdd-bc15-55fc57de87df
 caps.latest.revision: 25
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 68ab00c03f435ce479c1fe41074509a67a458061
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 94703f13eba0c58aad24597bc65beeea862e79e5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54783954"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076822"
 ---
 # <a name="core-interfaces"></a>Základní rozhraní
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -67,7 +67,7 @@ Následující rozhraní jsou základní rozhraní pro rozšíření ladicího p
   
 - Visual Studio (VS)  
   
-##  <a name="Breakpoints"></a> Zarážky  
+## <a name="Breakpoints"></a> Zarážky  
  Tato rozhraní se vztahují k provádění a sledování zarážky.  
   
 |Rozhraní|Implementováno|Popis|  
@@ -88,7 +88,7 @@ Následující rozhraní jsou základní rozhraní pro rozšíření ladicího p
 |[IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md)|DE|Představuje výčet v rámci sady vazby zarážky.|  
 |[IEnumDebugErrorBreakpoints2](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md)|DE|Představuje výčet v rámci sady zarážek, které nebylo možné svázat do umístění v paměti.|  
   
-##  <a name="Contexts"></a> Kontexty  
+## <a name="Contexts"></a> Kontexty  
  Tato rozhraní představují různé druhy kontextech v rámci programu, který se právě ladí.  
   
 |Rozhraní|Implementováno|Popis|  
@@ -102,7 +102,7 @@ Následující rozhraní jsou základní rozhraní pro rozšíření ladicího p
 |[IDebugStackFrame3](../../../extensibility/debugger/reference/idebugstackframe3.md)|DE|Představuje kontext rámce zásobníku v zarážky nebo výjimky.|  
 |[IEnumDebugCodeContexts2](../../../extensibility/debugger/reference/ienumdebugcodecontexts2.md)|DE|V rámci sady kontexty kód představuje výčet.|  
   
-##  <a name="CoreServer"></a> Jádro serveru  
+## <a name="CoreServer"></a> Jádro serveru  
  Tato rozhraní představovat počítač, na kterém je program laděn. Jsou implementovány pomocí [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] ale může volat do ladicí stroj.  
   
 |Rozhraní|Implementováno|Popis|  
@@ -110,7 +110,7 @@ Následující rozhraní jsou základní rozhraní pro rozšíření ladicího p
 |[IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)|sada VS|Poskytuje přístup k porty a dodavatelé portů, jakož i informace o počítači.|  
 |[IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)|sada VS|Představuje [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md) , který podporuje vzdálené ladění.|  
   
-##  <a name="DebugEngines"></a> Ladicí stroje  
+## <a name="DebugEngines"></a> Ladicí stroje  
  Tato rozhraní představují ladění modulů a jejich související události.  
   
 |Rozhraní|Implementováno|Popis|  
@@ -122,7 +122,7 @@ Následující rozhraní jsou základní rozhraní pro rozšíření ladicího p
 |[IDebugProgramEngines2](../../../extensibility/debugger/reference/idebugprogramengines2.md)|DE, PS|Představuje uzel program, který zpracovává více ladicí stroj.|  
 |[IDebugQueryEngine2](../../../extensibility/debugger/reference/idebugqueryengine2.md)|DE|Poskytuje způsob, jakým SDM získat rozhraní k ladicímu stroji z vlákna, programu nebo blok zásobníku.|  
   
-##  <a name="Documents"></a> Dokumenty  
+## <a name="Documents"></a> Dokumenty  
  Tato rozhraní představují dokumentů (zdrojové soubory) a jejich přidružených prvků.  
   
 |Rozhraní|Implementováno|Popis|  
@@ -137,7 +137,7 @@ Následující rozhraní jsou základní rozhraní pro rozšíření ladicího p
 |[IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md)|VS, DE|Reprezentuje textový dokument poskytnutých DE (odvozený od [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)), zadání vlastní text.|  
 |[IDebugDocumentTextEvents2](../../../extensibility/debugger/reference/idebugdocumenttextevents2.md)|DE|Odeslaný DE a zadejte změny do zdrojového souboru, který je v paměti.|  
   
-##  <a name="Events"></a> Události  
+## <a name="Events"></a> Události  
  Tato rozhraní představují všechny události, které jsou odeslány mezi DE a správce ladění relace (SDM).  
   
 |Rozhraní|Implementováno|Popis|  
@@ -182,7 +182,7 @@ Následující rozhraní jsou základní rozhraní pro rozšíření ladicího p
 |[IDebugThreadDestroyEvent2](../../../extensibility/debugger/reference/idebugthreaddestroyevent2.md)|DE|Odeslaný DE při zlikvidování vlákno.|  
 |[IDebugThreadNameChangedEvent2](../../../extensibility/debugger/reference/idebugthreadnamechangedevent2.md)|DE|Odeslaný DE vlákno se při změně jeho názvu.|  
   
-##  <a name="Expressions"></a> Výrazy  
+## <a name="Expressions"></a> Výrazy  
  Tato rozhraní představují výrazů, který se má vyhodnotit v konkrétním kontextu.  
   
 |Rozhraní|Implementováno|Popis|  
@@ -191,7 +191,7 @@ Následující rozhraní jsou základní rozhraní pro rozšíření ladicího p
 |[IDebugExpressionContext2](../../../extensibility/debugger/reference/idebugexpressioncontext2.md)|DE|Představuje kontext, ve kterém je výraz vyhodnocen. Získané [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) rozhraní.|  
 |[IDebugExpressionEvaluationCompleteEvent2](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md)|DE|Po dokončení vyhodnocení výrazu asynchronní odesílaných DE.|  
   
-##  <a name="Memory"></a> Paměť  
+## <a name="Memory"></a> Paměť  
  Tato rozhraní představují sekvence bajtů v paměti.  
   
 |Rozhraní|Implementováno|Popis|  
@@ -199,7 +199,7 @@ Následující rozhraní jsou základní rozhraní pro rozšíření ladicího p
 |[IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md)|DE|Představuje posloupnost bajtů v paměti, který může číst nebo zapisovat do.|  
 |[IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)|DE|Představuje umístění v paměti pořadí bajtů.|  
   
-##  <a name="Modules"></a> Moduly  
+## <a name="Modules"></a> Moduly  
  Tato rozhraní představuje modul, který odpovídá spustitelný soubor nebo. Soubor knihovny DLL.  
   
 |Rozhraní|Implementováno|Popis|  
@@ -210,7 +210,7 @@ Následující rozhraní jsou základní rozhraní pro rozšíření ladicího p
 |[IDebugSourceServerModule](../../../extensibility/debugger/reference/idebugsourceservermodule.md)|DE|Představuje informace o zdrojovém serveru, který je obsažen v souboru PDB.|  
 |[IEnumDebugModules2](../../../extensibility/debugger/reference/ienumdebugmodules2.md)|DE|Představuje výčet v rámci sady modulů, které jsou známé podle [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md).|  
   
-##  <a name="Ports"></a> Porty  
+## <a name="Ports"></a> Porty  
  Tato rozhraní představují porty a dodavatelé portů.  
   
 |Rozhraní|Implementováno|Popis|  
@@ -230,7 +230,7 @@ Následující rozhraní jsou základní rozhraní pro rozšíření ladicího p
 |[IEnumDebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md)|VS, PS|Výčet představuje sadu portů.|  
 |[IEnumDebugPortSuppliers2](../../../extensibility/debugger/reference/ienumdebugportsuppliers2.md)|sada VS|Představuje výčet v rámci sady dodavatelé portů.|  
   
-##  <a name="Processes"></a> Procesy  
+## <a name="Processes"></a> Procesy  
  Tato rozhraní představují procesy, jeden spustitelný soubor, který obsahuje jeden nebo více programů.  
   
 |Rozhraní|Implementováno|Popis|  
@@ -242,7 +242,7 @@ Následující rozhraní jsou základní rozhraní pro rozšíření ladicího p
 |[IDebugProcessEx2](../../../extensibility/debugger/reference/idebugprocessex2.md)|PS|Představuje proces, který musí sledovat relace je k němu připojené.|  
 |[IEnumDebugProcesses2](../../../extensibility/debugger/reference/ienumdebugprocesses2.md)|PS|Představuje Výčtový objekt sadu procesů na portu.|  
   
-##  <a name="Programs"></a> Programy  
+## <a name="Programs"></a> Programy  
  Tato rozhraní představují programy, logické jednotky spuštění, které neodpovídají nutně fyzické spustitelného souboru nebo modulu.  
   
 |Rozhraní|Implementováno|Popis|  
@@ -261,7 +261,7 @@ Následující rozhraní jsou základní rozhraní pro rozšíření ladicího p
 |[IDebugProviderProgramNode2](../../../extensibility/debugger/reference/idebugproviderprogramnode2.md)|DE, PS|Představuje [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) , který by mohl zařazovat rozhraní hranice vlákna nebo procesu.|  
 |[IEnumDebugPrograms2](../../../extensibility/debugger/reference/ienumdebugprograms2.md)|DE, PS|Představuje Výčtový objekt řadu programů.|  
   
-##  <a name="Properties"></a> Vlastnosti  
+## <a name="Properties"></a> Vlastnosti  
  Tato rozhraní představují vlastnosti, hodnoty související s konkrétním kontextu, obvykle výsledkem vyhodnocení výrazu.  
   
 |Rozhraní|Implementováno|Popis|  
@@ -275,7 +275,7 @@ Následující rozhraní jsou základní rozhraní pro rozšíření ladicího p
 |[IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md)|DE|Představuje výčet přes sadu [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) struktury, které popisují proměnné, registry, parametry a výrazy.|  
 |[IEnumDebugReferenceInfo2](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2.md)|DE|Představuje výčet přes sadu [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) struktury.|  
   
-##  <a name="StackFrames"></a> Rámce zásobníku  
+## <a name="StackFrames"></a> Rámce zásobníku  
  Tato rozhraní představují rámec zásobníku, kontext v které zarážky nebo výjimky došlo k chybě.  
   
 |Rozhraní|Implementováno|Popis|  
@@ -285,7 +285,7 @@ Následující rozhraní jsou základní rozhraní pro rozšíření ladicího p
 |[IEnumCodePaths2](../../../extensibility/debugger/reference/ienumcodepaths2.md)|DE|Představuje výčet přes sadu [CODE_PATH](../../../extensibility/debugger/reference/code-path.md) struktury, které určují funkce sekvence použít můžete přejít na konkrétní rámec zásobníku volání.|  
 |[IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md)|DE|Představuje výčet přes sadu [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) struktury, které popisují rámce zásobníku.|  
   
-##  <a name="Threads"></a> Vlákna  
+## <a name="Threads"></a> Vlákna  
  Tato rozhraní představují vlákna a jejich související události.  
   
 |Rozhraní|Implementováno|Popis|  
@@ -296,7 +296,7 @@ Následující rozhraní jsou základní rozhraní pro rozšíření ladicího p
 |[IDebugThreadNameChangedEvent2](../../../extensibility/debugger/reference/idebugthreadnamechangedevent2.md)|DE|Odeslaný DE vlákno se při změně jeho názvu.|  
 |[IEnumDebugThreads2](../../../extensibility/debugger/reference/ienumdebugthreads2.md)|DE|V rámci sady vláken představuje výčet.|  
   
-##  <a name="TypeVisualizers"></a> Vizualizérů typů  
+## <a name="TypeVisualizers"></a> Vizualizérů typů  
  Tato rozhraní podporují vizualizérů typů. Tato rozhraní jsou obvykle implementovány vyhodnocovače výrazů.  
   
 |Rozhraní|Implementováno|Popis|  

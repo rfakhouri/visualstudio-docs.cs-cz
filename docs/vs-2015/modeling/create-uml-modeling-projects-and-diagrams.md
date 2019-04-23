@@ -25,12 +25,12 @@ caps.latest.revision: 50
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9b36c038194f20cecf1be59775c2261497a0fda8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a302feda3e6254667df797cdbef5d199886a4c0c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54764817"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068324"
 ---
 # <a name="create-uml-modeling-projects-and-diagrams"></a>Vytváření projektů a diagramů pomocí modelování UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ Modely UML pomůžou pochopit, popisují a návrh softwarové systémy. Visual S
 > [!NOTE]
 >  Existuje jiný typ diagramu, diagram tříd .NET, který slouží k vizualizaci kódu programu. Další informace najdete v tématu [navrhování a zobrazování tříd a typů](http://go.microsoft.com/fwlink/?LinkId=142231).  
   
-##  <a name="CreatingModelingDiagrams"></a> Vytvoření diagramu v projektu modelování  
+## <a name="CreatingModelingDiagrams"></a> Vytvoření diagramu v projektu modelování  
  Tuto funkci podporovat kterou verzí sady Visual Studio najdete v tématu [podporované verze pro nástroje architektury a modelování](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
 #### <a name="to-create-a-diagram-and-add-it-to-a-project"></a>Vytvoření diagramu a přidat do projektu  
@@ -61,9 +61,9 @@ Modely UML pomůžou pochopit, popisují a návrh softwarové systémy. Visual S
   
      \- nebo –  
   
-   1.  Vyberte **vytvořte nový projekt modelování**a potom klikněte na tlačítko **OK**.  
+   1. Vyberte **vytvořte nový projekt modelování**a potom klikněte na tlačítko **OK**.  
   
-   2.  V **vytvořit nový projekt modelování** dialogové okno, zadejte název a umístění nového projektu a pak klikněte na tlačítko **OK**.  
+   2. V **vytvořit nový projekt modelování** dialogové okno, zadejte název a umístění nového projektu a pak klikněte na tlačítko **OK**.  
   
         ![Vytvoření dialogového okna Nový projekt modelování](../modeling/media/uml-createmodel.png "UML_CreateModel")  
   
@@ -73,16 +73,16 @@ Modely UML pomůžou pochopit, popisují a návrh softwarové systémy. Visual S
   
 #### <a name="to-add-a-diagram-to-an-existing-modeling-project"></a>Přidání diagramu do existujícího projektu modelování  
   
-1.  V **Průzkumníka řešení**, modelování klikněte na uzel projektu.  
+1. V **Průzkumníka řešení**, modelování klikněte na uzel projektu.  
   
     > [!NOTE]
     >  Projekt modelování obsahuje definici modelu složku s názvem **ModelDefinition**.  
   
-2.  Na **projektu** nabídky, klikněte na tlačítko **přidat novou položku**.  
+2. Na **projektu** nabídky, klikněte na tlačítko **přidat novou položku**.  
   
-3.  V **přidat novou položku -**  *\<název projektu >* dialogovém okně **šablony**, klikněte na tlačítko modelování diagram typu, například **UML Diagram komponent**.  
+3. V **přidat novou položku -**  *\<název projektu >* dialogovém okně **šablony**, klikněte na tlačítko modelování diagram typu, například **UML Diagram komponent**.  
   
-4.  Zadejte název diagramu a potom klikněte na tlačítko **přidat**.  
+4. Zadejte název diagramu a potom klikněte na tlačítko **přidat**.  
   
      Diagram modelování se otevře a zobrazí se v projektu modelování.  
   
@@ -91,22 +91,22 @@ Modely UML pomůžou pochopit, popisují a návrh softwarové systémy. Visual S
   
 #### <a name="to-create-a-blank-modeling-project"></a>Chcete-li vytvořit prázdný projekt pro modelování  
   
-1.  Na **souboru** nabídky, přejděte k **nový**a potom klikněte na tlačítko **projektu**.  
+1. Na **souboru** nabídky, přejděte k **nový**a potom klikněte na tlačítko **projektu**.  
   
-2.  V **nový projekt** dialogovém okně **nainstalované šablony**, klikněte na tlačítko **projekty modelování**.  
+2. V **nový projekt** dialogovém okně **nainstalované šablony**, klikněte na tlačítko **projekty modelování**.  
   
-3.  V prostředním okna, klikněte na tlačítko **projekt modelování**.  
+3. V prostředním okna, klikněte na tlačítko **projekt modelování**.  
   
-4.  Pojmenujte projekt a zadejte umístění v **název** a **umístění** polí.  
+4. Pojmenujte projekt a zadejte umístění v **název** a **umístění** polí.  
   
-5.  V **řešení** vyberte **přidat do řešení** přidat nový projekt do řešení již otevřeného; nebo **vytvořit nové řešení** zavřete všechny otevřené řešení a přidat projekt k novému řešení.  
+5. V **řešení** vyberte **přidat do řešení** přidat nový projekt do řešení již otevřeného; nebo **vytvořit nové řešení** zavřete všechny otevřené řešení a přidat projekt k novému řešení.  
   
-##  <a name="RemovingModelingDiagrams"></a> Odebrání diagramů z projektu modelování  
+## <a name="RemovingModelingDiagrams"></a> Odebrání diagramů z projektu modelování  
  Můžete trvale odstranit diagramu, nebo můžete dočasně vyloučit diagramu z projektu a jeho následnému obnovení.  
   
 #### <a name="to-permanently-delete-a-diagram-from-a-project"></a>Diagram trvale odstranit z projektu  
   
--   V **Průzkumníka řešení**, klikněte pravým tlačítkem na hlavní soubor, který představuje diagramu a potom klikněte na tlačítko **odstranit**.  
+- V **Průzkumníka řešení**, klikněte pravým tlačítkem na hlavní soubor, který představuje diagramu a potom klikněte na tlačítko **odstranit**.  
   
      Diagram se odebere z projektu a systému souborů. Prvky zobrazené v diagramu nejsou odebrány z **Průzkumníku modelů UML**.  
   
@@ -115,7 +115,7 @@ Modely UML pomůžou pochopit, popisují a návrh softwarové systémy. Visual S
   
 #### <a name="to-temporarily-exclude-a-diagram-from-a-project"></a>Dočasné vyloučit diagramu z projektu  
   
--   V **Průzkumníka řešení**, klikněte pravým tlačítkem na soubor diagramu a potom klikněte na tlačítko **vyjmout z projektu**.  
+- V **Průzkumníka řešení**, klikněte pravým tlačítkem na soubor diagramu a potom klikněte na tlačítko **vyjmout z projektu**.  
   
      Diagram se odebere z projektu. Odebere se ze systému souborů.  
   
@@ -124,30 +124,30 @@ Modely UML pomůžou pochopit, popisují a návrh softwarové systémy. Visual S
   
 #### <a name="to-restore-a-temporarily-excluded-diagram-to-a-project"></a>Chcete-li obnovit dočasně vyloučené diagram do projektu  
   
-1.  V **Průzkumníka řešení**, modelování klikněte na uzel projektu.  
+1. V **Průzkumníka řešení**, modelování klikněte na uzel projektu.  
   
     > [!NOTE]
     >  Projekt modelování obsahuje definici modelu složku s názvem **ModelDefinition**.  
   
-2.  Na **projektu** nabídky, klikněte na tlačítko **přidat existující položku**.  
+2. Na **projektu** nabídky, klikněte na tlačítko **přidat existující položku**.  
   
-3.  V **přidat existující položku** dialogovém okně vyhledejte soubor diagramu, vyberte soubor a potom klikněte na tlačítko **přidat**.  
+3. V **přidat existující položku** dialogovém okně vyhledejte soubor diagramu, vyberte soubor a potom klikněte na tlačítko **přidat**.  
   
      Diagram modelování se otevře a zobrazí se v projektu modelování.  
   
     > [!NOTE]
     >  Každý diagram nemá dvojici souborů v systému souborů. Nesmí být zvolen soubor, který má příponu `.layout`. Visual Studio navíc nepodporuje přidávání existujících diagramů UML do více projektů modelování. Každý diagram soubor musí být otevřen v rámci projektu modelování, ve kterém byla vytvořena. Je to proto diagramu UML se teď zobrazují modelu, který je vlastněn svůj projekt modelování.  
   
-##  <a name="NonModelDiagrams"></a> Diagramy, které nevyžadují žádné projekty modelování  
+## <a name="NonModelDiagrams"></a> Diagramy, které nevyžadují žádné projekty modelování  
  Následující typy diagramů nejsou součástí projektu modelování:  
   
--   Diagramy tříd, které jsou vytvořeny jako zobrazení zdrojového kódu. Tyto nesouvisejí s diagramy tříd UML. Další informace najdete v tématu [navrhování a zobrazování tříd a typů](../ide/designing-and-viewing-classes-and-types.md).  
+- Diagramy tříd, které jsou vytvořeny jako zobrazení zdrojového kódu. Tyto nesouvisejí s diagramy tříd UML. Další informace najdete v tématu [navrhování a zobrazování tříd a typů](../ide/designing-and-viewing-classes-and-types.md).  
   
--   Mapy kódu. Zobrazit [mapování závislostí napříč vaším řešením](../modeling/map-dependencies-across-your-solutions.md).  
+- Mapy kódu. Zobrazit [mapování závislostí napříč vaším řešením](../modeling/map-dependencies-across-your-solutions.md).  
   
--   Diagramy, které nejsou v diagramech UML nebo diagramy vrstev, jako je například konkrétní jazyky domény.  
+- Diagramy, které nejsou v diagramech UML nebo diagramy vrstev, jako je například konkrétní jazyky domény.  
   
-##  <a name="TroubleshootingModelingProjects"></a> Řešení potíží s projekty modelování a diagramy  
+## <a name="TroubleshootingModelingProjects"></a> Řešení potíží s projekty modelování a diagramy  
  Následující tabulka popisuje problémy, které mohou nastat u projektů nebo diagramy a způsob jejich řešení modelování:  
   
 |**Problém**|**Způsobí, že**|**Řešení**|  
