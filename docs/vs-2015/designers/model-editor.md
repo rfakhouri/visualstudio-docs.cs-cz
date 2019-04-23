@@ -12,12 +12,12 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9247eae19d32ecc21069836d52192e7d466de1b7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 370f6992fb044f5bd7f3593e63afeab46c82830b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54802837"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072289"
 ---
 # <a name="model-editor"></a>Editor modelů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,13 +40,13 @@ Tento dokument popisuje, jak pracovat [!INCLUDE[vsprvs](../includes/vsprvs-md.md
   
 #### <a name="to-add-a-3-d-model-to-your-project"></a>Přidání 3D modelu do projektu  
   
-1.  V **Průzkumníka řešení**, otevřete místní nabídku pro projekt, který chcete přidat obrázek a klikněte na tlačítko **přidat**, **nová položka**.  
+1. V **Průzkumníka řešení**, otevřete místní nabídku pro projekt, který chcete přidat obrázek a klikněte na tlačítko **přidat**, **nová položka**.  
   
-2.  V **přidat novou položku** dialogovém okně **nainstalováno**vyberte **grafiky**a pak vyberte **3D Scéna (.fbx)**.  
+2. V **přidat novou položku** dialogovém okně **nainstalováno**vyberte **grafiky**a pak vyberte **3D Scéna (.fbx)**.  
   
-3.  Zadejte **název** souboru modelu a **umístění** místo se má vytvořit.  
+3. Zadejte **název** souboru modelu a **umístění** místo se má vytvořit.  
   
-4.  Zvolte **přidat** tlačítko.  
+4. Zvolte **přidat** tlačítko.  
   
 ### <a name="axis-orientation"></a>Orientace osy  
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] podporuje všechny orientace 3D osy a načítá informace o orientaci OS z formátů souboru modelu, které ho podporují. Pokud není zadána žádná orientace osy, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ve výchozím nastavení používá pravoruký systém souřadnic. **Indikátor osy** zobrazuje aktuální orientaci osy v pravém dolním rohu návrhové plochy. Na **indikátor osy**, představuje červená osu x, zelená představuje osy y a modrá osu z.  
@@ -132,7 +132,7 @@ Tento dokument popisuje, jak pracovat [!INCLUDE[vsprvs](../includes/vsprvs-md.md
 ### <a name="viewing-additional-geometry-details"></a>Zobrazení dalších podrobností o geometrii  
  Pro lepší pochopení 3D objektu nebo scény můžete zobrazit další podrobnosti geometrie, jako jsou normály pro každý vrchol, normály pro každou plochu, body otáčení aktivního výběru a další podrobnosti. Povolit nebo zakázat, na **editoru modelů** nástrojů, zvolte **skripty**, **zobrazení**a pak zvolte ten, který chcete.  
   
-###  <a name="Adding3DObjects"></a> Vytváření a import 3D objektů  
+### <a name="Adding3DObjects"></a> Vytváření a import 3D objektů  
  Přidat předdefinovaný 3D tvar do scény v **nástrojů**, vybrat ta, kterou chcete a přesuňte jej na návrhovou plochu. Nové tvary jsou umístěny v počátku scény. Editor modelů obsahuje sedm tvarů: **Kužel**, **datové krychle**, **válcový**, **disk**, **roviny**, **Sphere**a **Čajovou konvici**.  
   
  Pro import 3D objekt ze souboru, na **editoru modelů** nástrojů, zvolte **Upřesnit**, **Správa scén**, **importovat**a poté zadejte soubor, který chcete importovat.  
@@ -144,11 +144,11 @@ Tento dokument popisuje, jak pracovat [!INCLUDE[vsprvs](../includes/vsprvs-md.md
   
 ##### <a name="to-transform-an-object-by-using-modeling-tools"></a>Transformace objektu pomocí nástrojů pro modelování  
   
-1.  V **vyberte** režimu, vyberte objekt, který chcete transformovat. Překrytí wireframe udává, že objekt je vybrán.  
+1. V **vyberte** režimu, vyberte objekt, který chcete transformovat. Překrytí wireframe udává, že objekt je vybrán.  
   
-2.  Na **editoru modelů** nástrojů, zvolte **přeložit**, **škálování**, nebo **otočit** nástroj. Pro vybraný objekt se zobrazí otočení, změna velikosti nebo manipulátor otočení.  
+2. Na **editoru modelů** nástrojů, zvolte **přeložit**, **škálování**, nebo **otočit** nástroj. Pro vybraný objekt se zobrazí otočení, změna velikosti nebo manipulátor otočení.  
   
-3.  K provedení transformace použijte manipulátor. Pro transformace otočení a změny velikosti je manipulátor indikátorem osy. Najednou můžete změnit jen jednu osu nebo všechny osy současně pomocí bílé krychle ve středu indikátoru. Pro otáčení je manipulátor koule tvořená kruhy s kódováním barev, které odpovídají osám x (červená), y (zelená) a z (modrá). K vytvoření požadovaného otočení je třeba změnit každou osu jednotlivě.  
+3. K provedení transformace použijte manipulátor. Pro transformace otočení a změny velikosti je manipulátor indikátorem osy. Najednou můžete změnit jen jednu osu nebo všechny osy současně pomocí bílé krychle ve středu indikátoru. Pro otáčení je manipulátor koule tvořená kruhy s kódováním barev, které odpovídají osám x (červená), y (zelená) a z (modrá). K vytvoření požadovaného otočení je třeba změnit každou osu jednotlivě.  
   
 ##### <a name="to-transform-an-object-by-setting-its-properties"></a>Transformace objektu nastavením jeho vlastností  
   
@@ -173,16 +173,16 @@ Tento dokument popisuje, jak pracovat [!INCLUDE[vsprvs](../includes/vsprvs-md.md
 ### <a name="world-and-local-modes"></a>Globální a místní režimy  
  Posunutí a otočení lze provést buď v místním souřadnicovém systému (nebo *místní snímek referenčního*) objektu, nebo systém souřadnic světa (nebo *world rámce referenčního*). Otáčení globálního referenčního snímku je nezávislé na otáčení objektu. Výchozí nastavení je místní režim. Chcete-li povolit (nebo zakázat) globální režim na **režim editoru modelů** nástrojů, zvolte **WorldLocal** tlačítko.  
   
-###  <a name="ModifyingObjects"></a> Změny objektů  
+### <a name="ModifyingObjects"></a> Změny objektů  
  Tvar 3D objektu můžete změnit přesunutím nebo odstraněním jeho vrcholů, hran a ploch. Ve výchozím nastavení je Editor modelů v *režimu objektu*, takže můžete vybírat a transformovat celé objekty. Pokud chcete vybrat body, okraje nebo plochy, zvolte příslušný režim výběru. Na **režim editoru modelů** nástrojů, zvolte **režimy výběru**a pak zvolte režim, ve kterém chcete.  
   
  Vyloučením nebo dělením můžete vytvořit další vrcholy. Vyloučení duplikuje vrcholy plochy (koplanární sadu vrcholů), které zůstávají spojeny duplikovanými vrcholy. Dělení přidá vrcholy pro vytvoření několika ploch tam, kde byla dříve jen jedna. Pro vytvoření nových ploch se přidají nové vrcholy – jeden uprostřed původní plochy a jeden uprostřed každé hrany – které jsou poté spojeny s původními vrcholy. Počet přidaných ploch se rovná počtu hran původní plochy. V obou případech můžete nové vrcholy posunout, otočit a změnit jejich velikost, čímž změníte geometrii celého objektu.  
   
 ##### <a name="to-extrude-a-face-from-an-object"></a>Vyloučení plochy z objektu  
   
-1.  V režimu výběru plochy vyberte plochu, kterou chcete vyloučit.  
+1. V režimu výběru plochy vyberte plochu, kterou chcete vyloučit.  
   
-2.  Na **editoru modelů** nástrojů, zvolte **skripty**, **nástroje**, **vyloučit**.  
+2. Na **editoru modelů** nástrojů, zvolte **skripty**, **nástroje**, **vyloučit**.  
   
 ##### <a name="to-subdivide-faces"></a>Rozdělení ploch  
   
@@ -194,21 +194,21 @@ Tento dokument popisuje, jak pracovat [!INCLUDE[vsprvs](../includes/vsprvs-md.md
   
 ##### <a name="to-triangulate-a-face"></a>Postup triangulace plochy  
   
-1.  V režimu výběru plochy vyberte plochu, kterou chcete triangulovat.  
+1. V režimu výběru plochy vyberte plochu, kterou chcete triangulovat.  
   
-2.  Na **editoru modelů** nástrojů, zvolte **skripty**, **nástroje**, **Triangulovat**.  
+2. Na **editoru modelů** nástrojů, zvolte **skripty**, **nástroje**, **Triangulovat**.  
   
 ##### <a name="to-merge-objects"></a>Sloučení objektů  
   
-1.  V režimu výběru objektů vyberte objekty, které chcete sloučit.  
+1. V režimu výběru objektů vyberte objekty, které chcete sloučit.  
   
-2.  Na **editoru modelů** nástrojů, zvolte **skripty**, **nástroje**, **sloučit objekty**.  
+2. Na **editoru modelů** nástrojů, zvolte **skripty**, **nástroje**, **sloučit objekty**.  
   
 ##### <a name="to-create-an-object-from-a-polygon-selection"></a>Vytvoření objektu z mnohoúhelníkového výběru  
   
-1.  V režimu výběru plochy vyberte plochy, ze kterých chcete vytvořit nový objekt.  
+1. V režimu výběru plochy vyberte plochy, ze kterých chcete vytvořit nový objekt.  
   
-2.  Na **editoru modelů** nástrojů, zvolte **skripty**, **nástroje**, **vytvořit nový objekt z mnohoúhelníkového výběru**.  
+2. Na **editoru modelů** nástrojů, zvolte **skripty**, **nástroje**, **vytvořit nový objekt z mnohoúhelníkového výběru**.  
   
 ### <a name="working-with-materials-and-shaders"></a>Práce s materiály a shadery  
  Vzhled objektu je určen interakcí osvětlení scény a materiálu objektu. Materiály jsou definovány vlastnostmi, které popisují, jak povrch reaguje na různé typy světla, a programem shader, který vypočítá konečnou barvu každého obrazového bodu na povrchu objektu na základě informací o osvětlení, map textur, map normál a dalších dat.  
@@ -248,9 +248,9 @@ Tento dokument popisuje, jak pracovat [!INCLUDE[vsprvs](../includes/vsprvs-md.md
   
 ##### <a name="to-create-a-hierarchy-that-has-a-parent-object"></a>Vytvoření hierarchie, která má nadřazený objekt  
   
-1.  V **vyberte** režimu, vyberte dvě nebo více objektů. První, který vyberete, bude nadřazený objekt.  
+1. V **vyberte** režimu, vyberte dvě nebo více objektů. První, který vyberete, bude nadřazený objekt.  
   
-2.  Na **editoru modelů** nástrojů, zvolte **skripty**, **Správa scén**, **připojit k nadřazenému**.  
+2. Na **editoru modelů** nástrojů, zvolte **skripty**, **Správa scén**, **připojit k nadřazenému**.  
   
 ##### <a name="to-create-a-hierarchy-of-sibling-objects"></a>Vytvoření hierarchie objektů na stejné úrovni  
   
@@ -299,7 +299,7 @@ Tento dokument popisuje, jak pracovat [!INCLUDE[vsprvs](../includes/vsprvs-md.md
 |Přepnout do režimu výběru ploch|Ctrl+L, Ctrl+3|  
 |Přepnout do režimu výběru objektů|Ctrl+L, Ctrl+4|  
 |Přepnout do režimu (kamera) orbit|Ctrl+G, Ctrl+O|  
-|Vybrat další objekt na scéně|Tabulátor|  
+|Vybrat další objekt na scéně|Karta|  
 |Vybrat předchozí objekt na scéně|Shift+Tab|  
 |Manipulovat s vybraným objektem na základě aktuálního nástroje|Klávesy se šipkami|  
 |Deaktivovat aktuální manipulátor|Q|  

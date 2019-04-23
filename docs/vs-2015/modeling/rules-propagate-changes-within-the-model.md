@@ -12,12 +12,12 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 32aff234b5b45df4154d47f94c975828f31b71fe
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 581d6d1f6e5923569f4d98705226d2336978bfc5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59668337"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067557"
 ---
 # <a name="rules-propagate-changes-within-the-model"></a>Pravidla šířící změny v modelu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -87,7 +87,7 @@ namespace ExampleNamespace
 
 ### <a name="to-define-a-rule-on-a-domain-class"></a>Chcete-li definovat pravidla na doménovou třídu  
 
--   V souboru vlastního kódu, definovat třídu a prefix <xref:Microsoft.VisualStudio.Modeling.RuleOnAttribute> atribut:  
+- V souboru vlastního kódu, definovat třídu a prefix <xref:Microsoft.VisualStudio.Modeling.RuleOnAttribute> atribut:  
 
     ```  
     [RuleOn(typeof(ExampleElement),   
@@ -97,19 +97,19 @@ namespace ExampleNamespace
 
     ```  
 
--   Typ subjektu v prvním parametru může být doménovou třídou, doménového vztahu, tvaru, konektoru nebo diagramu. Obvykle použít pravidla pro doménovými třídami a vztahy.  
+- Typ subjektu v prvním parametru může být doménovou třídou, doménového vztahu, tvaru, konektoru nebo diagramu. Obvykle použít pravidla pro doménovými třídami a vztahy.  
 
      `FireTime` Je obvykle `TopLevelCommit`. Tím se zajistí, že se provede pouze po provedení všech primární změny transakce. Alternativ jsou vložené, která spustí pravidlo brzy po provedení změny; a LocalCommit, která spustí pravidlo na konci aktuální transakce (která nemusí být nejkrajnější). Můžete také nastavit prioritu pravidlo, které ovlivňují pořadí řazení ve frontě, ale jedná o metodu nespolehlivé dosažení výsledků podle svých požadavků.  
 
--   Abstraktní třídy můžete zadat jako typy předmětů.  
+- Abstraktní třídy můžete zadat jako typy předmětů.  
 
--   Toto pravidlo se vztahuje na všechny instance třídy předmět.  
+- Toto pravidlo se vztahuje na všechny instance třídy předmět.  
 
--   Výchozí hodnota pro `FireTime` je TimeToFire.TopLevelCommit. To způsobí, že pravidlo se spustí při nejkrajnější transakce se potvrzeny. Alternativou je TimeToFire.Inline. To způsobí, že pravidlo se spustí ihned po aktivační událost.  
+- Výchozí hodnota pro `FireTime` je TimeToFire.TopLevelCommit. To způsobí, že pravidlo se spustí při nejkrajnější transakce se potvrzeny. Alternativou je TimeToFire.Inline. To způsobí, že pravidlo se spustí ihned po aktivační událost.  
 
 ### <a name="to-register-the-rule"></a>Pravidla registrace  
 
--   Přidat třídu pravidlo do seznamu typů vrácených `GetCustomDomainModelTypes` v doménovém modelu:  
+- Přidat třídu pravidlo do seznamu typů vrácených `GetCustomDomainModelTypes` v doménovém modelu:  
 
     ```  
     public partial class ExampleDomainModel  
@@ -125,9 +125,9 @@ namespace ExampleNamespace
 
     ```  
 
--   Pokud si nejste jisti názvem třídy modelu domény, vyhledejte v souboru **Dsl\GeneratedCode\DomainModel.cs**  
+- Pokud si nejste jisti názvem třídy modelu domény, vyhledejte v souboru **Dsl\GeneratedCode\DomainModel.cs**  
 
--   Tento kód napište vlastní kód souboru ve vašem projektu DSL.  
+- Tento kód napište vlastní kód souboru ve vašem projektu DSL.  
 
 ### <a name="to-write-the-code-of-the-rule"></a>Psaní kódu pravidla  
 
@@ -150,19 +150,19 @@ namespace ExampleNamespace
 
   Všimněte si následujících o pravidlech:  
 
-1.  Sadu změn v rámci transakce, které může aktivovat více pravidel. Pravidla jsou obvykle spouštěny, když nejkrajnější transakce se potvrzeny. Jsou prováděna v nespecifikovaném pořadí.  
+1. Sadu změn v rámci transakce, které může aktivovat více pravidel. Pravidla jsou obvykle spouštěny, když nejkrajnější transakce se potvrzeny. Jsou prováděna v nespecifikovaném pořadí.  
 
-2.  Pravidlo je vždy spuštěn v transakci. Proto není muset vytvořit novou transakci provést změny.  
+2. Pravidlo je vždy spuštěn v transakci. Proto není muset vytvořit novou transakci provést změny.  
 
-3.  Pravidla nejsou provedeny, když transakce je vrácena zpět, nebo když se provádí operace vrácení zpět nebo znovu. Tyto operace obnovit veškerý obsah Store do předchozího stavu. Proto pokud vaše pravidlo změní stav něco mimo Store, se nemusí mějte synchronism s Store obsahu. Pokud chcete aktualizovat stav mimo Store, je vhodnější použít události. Další informace najdete v tématu [obslužné rutiny rozšíření změny mimo the Model událostí](../modeling/event-handlers-propagate-changes-outside-the-model.md).  
+3. Pravidla nejsou provedeny, když transakce je vrácena zpět, nebo když se provádí operace vrácení zpět nebo znovu. Tyto operace obnovit veškerý obsah Store do předchozího stavu. Proto pokud vaše pravidlo změní stav něco mimo Store, se nemusí mějte synchronism s Store obsahu. Pokud chcete aktualizovat stav mimo Store, je vhodnější použít události. Další informace najdete v tématu [obslužné rutiny rozšíření změny mimo the Model událostí](../modeling/event-handlers-propagate-changes-outside-the-model.md).  
 
-4.  Některá pravidla jsou spouštěny, když je model načtenou ze souboru. Chcete-li zjistit, jestli je v průběhu načítání nebo ukládání, použijte `store.TransactionManager.CurrentTransaction.IsSerializing`.  
+4. Některá pravidla jsou spouštěny, když je model načtenou ze souboru. Chcete-li zjistit, jestli je v průběhu načítání nebo ukládání, použijte `store.TransactionManager.CurrentTransaction.IsSerializing`.  
 
-5.  Pokud vaše pravidlo vytvoří další pravidlo aktivuje, se přidá na konec seznamu jeho spuštění a budou spuštěny před dokončením transakce. DeletedRules jsou spuštěny za všemi ostatními pravidly. Jedno pravidlo můžete spustit v mnoha případech v transakci, jednou pro každou změnu.  
+5. Pokud vaše pravidlo vytvoří další pravidlo aktivuje, se přidá na konec seznamu jeho spuštění a budou spuštěny před dokončením transakce. DeletedRules jsou spuštěny za všemi ostatními pravidly. Jedno pravidlo můžete spustit v mnoha případech v transakci, jednou pro každou změnu.  
 
-6.  K předávání informací do a z pravidel, můžete ukládat informace `TransactionContext`. Toto je jenom slovník, který je udržován během transakce. To je uvolněna při transakci skončí. Argumenty události z každé pravidlo poskytnutí přístupu k němu. Mějte na paměti, že pravidla nejsou provedeny v předvídatelné pořadí.  
+6. K předávání informací do a z pravidel, můžete ukládat informace `TransactionContext`. Toto je jenom slovník, který je udržován během transakce. To je uvolněna při transakci skončí. Argumenty události z každé pravidlo poskytnutí přístupu k němu. Mějte na paměti, že pravidla nejsou provedeny v předvídatelné pořadí.  
 
-7.  Použijte pravidla po zvážení další možnosti. Pokud chcete aktualizovat při změně hodnoty vlastnosti, představte si třeba použití počítané vlastnosti. Pokud chcete omezit velikost nebo umístění obrazce, použijte `BoundsRule`. Pokud chcete reagovat na změnu v hodnotě vlastnosti, přidejte `OnValueChanged` obslužné rutiny vlastnosti. Další informace najdete v tématu [šířící změny a reakce na](../modeling/responding-to-and-propagating-changes.md).  
+7. Použijte pravidla po zvážení další možnosti. Pokud chcete aktualizovat při změně hodnoty vlastnosti, představte si třeba použití počítané vlastnosti. Pokud chcete omezit velikost nebo umístění obrazce, použijte `BoundsRule`. Pokud chcete reagovat na změnu v hodnotě vlastnosti, přidejte `OnValueChanged` obslužné rutiny vlastnosti. Další informace najdete v tématu [šířící změny a reakce na](../modeling/responding-to-and-propagating-changes.md).  
 
 ## <a name="example"></a>Příklad  
  Následující příklad aktualizuje vlastnosti při vytváření instance vztah domény propojení dvou prvků. Toto pravidlo se aktivuje, nikoli pouze v případě, že uživatel vytvoří odkaz v diagramu, ale i pokud programového kódu vytvoří odkaz.  

@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5f4f2f5e44ea95137f53019f52de94a5389fa6d8
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ce3658f93df11b83f89e89931d03f35b0fa801a1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913493"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070235"
 ---
 # <a name="how-to-add-validation-to-entity-classes"></a>Postupy: Přidání ověřování do tříd entit
 *Ověřování* tříd entit je proces ověření, že hodnoty zadané do datových objektů v souladu s omezeními ve schématu objektu a také pravidel stanovených pro aplikaci. Ověřování dat před odesláním aktualizace do podkladové databáze je dobrým zvykem, která snižuje chyby. Také snižuje potenciální počet výměn mezi aplikací a databáze.
@@ -33,23 +33,23 @@ ms.locfileid: "55913493"
 
 ### <a name="to-validate-data-during-a-columns-value-change"></a>Ověření dat při změně hodnoty sloupce.
 
-1.  Otevřete nebo vytvořte novou LINQ na třídy SQL soubor (**dbml** souborů) v **O/R Designer**. (Dvakrát klikněte **dbml** ve **Průzkumníka řešení**.)
+1. Otevřete nebo vytvořte novou LINQ na třídy SQL soubor (**dbml** souborů) v **O/R Designer**. (Dvakrát klikněte **dbml** ve **Průzkumníka řešení**.)
 
-2.  V **O/R Designer**, klikněte pravým tlačítkem na třídu, pro který chcete přidat ověřování a pak klikněte na tlačítko **zobrazit kód**.
+2. V **O/R Designer**, klikněte pravým tlačítkem na třídu, pro který chcete přidat ověřování a pak klikněte na tlačítko **zobrazit kód**.
 
      Otevře se Editor kódu s částečnou třídu pro třídy vybranou entitu.
 
-3.  Umístěte kurzor do částečné třídy.
+3. Umístěte kurzor do částečné třídy.
 
-4.  Pro projekty jazyka Visual Basic:
+4. Pro projekty jazyka Visual Basic:
 
-    1.  Rozbalte **název metody** seznamu.
+    1. Rozbalte **název metody** seznamu.
 
-    2.  Vyhledejte **OnCOLUMNNAMEChanging** metodu pro sloupec, který chcete přidat k ověření.
+    2. Vyhledejte **OnCOLUMNNAMEChanging** metodu pro sloupec, který chcete přidat k ověření.
 
-    3.  `OnCOLUMNNAMEChanging` Metoda je přidána do částečné třídy.
+    3. `OnCOLUMNNAMEChanging` Metoda je přidána do částečné třídy.
 
-    4.  Přidejte následující kód, který nejprve ověřte, zda byla zadána hodnota, a pak zajistit, aby hodnota zadaná pro sloupec je přijatelné pro vaši aplikaci. `value` Argument obsahuje navrhovanou hodnotu, takže přidání logiky pro potvrzení, že se jedná o platnou hodnotu:
+    4. Přidejte následující kód, který nejprve ověřte, zda byla zadána hodnota, a pak zajistit, aby hodnota zadaná pro sloupec je přijatelné pro vaši aplikaci. `value` Argument obsahuje navrhovanou hodnotu, takže přidání logiky pro potvrzení, že se jedná o platnou hodnotu:
 
         ```vb
         If value.HasValue Then
@@ -79,23 +79,23 @@ ms.locfileid: "55913493"
 
 ### <a name="to-validate-data-during-an-update-to-an-entity-class"></a>Ověření dat během aktualizace do třídy entity
 
-1.  Otevřete nebo vytvořte novou LINQ na třídy SQL soubor (**dbml** souborů) v **O/R Designer**. (Dvakrát klikněte **dbml** ve **Průzkumníka řešení**.)
+1. Otevřete nebo vytvořte novou LINQ na třídy SQL soubor (**dbml** souborů) v **O/R Designer**. (Dvakrát klikněte **dbml** ve **Průzkumníka řešení**.)
 
-2.  Klikněte pravým tlačítkem na prázdnou oblast na **O/R Designer** a klikněte na tlačítko **zobrazit kód**.
+2. Klikněte pravým tlačítkem na prázdnou oblast na **O/R Designer** a klikněte na tlačítko **zobrazit kód**.
 
      Otevře se Editor kódu s částečnou třídu `DataContext`.
 
-3.  Umístěte kurzor do částečné třídy pro `DataContext`.
+3. Umístěte kurzor do částečné třídy pro `DataContext`.
 
-4.  Pro projekty jazyka Visual Basic:
+4. Pro projekty jazyka Visual Basic:
 
-    1.  Rozbalte **název metody** seznamu.
+    1. Rozbalte **název metody** seznamu.
 
-    2.  Klikněte na tlačítko **UpdateENTITYCLASSNAME**.
+    2. Klikněte na tlačítko **UpdateENTITYCLASSNAME**.
 
-    3.  `UpdateENTITYCLASSNAME` Metoda je přidána do částečné třídy.
+    3. `UpdateENTITYCLASSNAME` Metoda je přidána do částečné třídy.
 
-    4.  Přístup s použitím hodnot jednotlivých sloupců `instance` argument, jak je znázorněno v následujícím kódu:
+    4. Přístup s použitím hodnot jednotlivých sloupců `instance` argument, jak je znázorněno v následujícím kódu:
 
         ```vb
         If (instance.COLUMNNAME = x) And (instance.COLUMNNAME = y) Then

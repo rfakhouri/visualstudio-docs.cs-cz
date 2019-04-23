@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Přihlaste se k odběru předplatného MSDN Magazine součástí vašeho předplatného sady Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: f0bc688f20b249b86c3a3d5512569feb47789c05
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 2710295390318dfa2e31b31a6a4aeaf3805b3647
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649912"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066972"
 ---
 # <a name="the-msdn-magazine-benefit-in-visual-studio-subscriptions"></a>Výhoda MSDN Magazine v předplatných sady Visual Studio
 
@@ -24,8 +24,8 @@ Postup výhodu si aktivujete závisí na edici, kterou zvolíte.
 ### <a name="digital-edition"></a>Digitální vydání
 Digitální edice je k dispozici pro členy programu Visual Studio Dev Essentials.
 
-1.  Pro přístup k digitální verzi MSDN Magazine, přihlaste se k [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
-2.  Vyhledejte dlaždici Zpravodaj MSDN Magazine v části vývoj Professional a klikněte na tlačítko **přístup**.
+1. Pro přístup k digitální verzi MSDN Magazine, přihlaste se k [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
+2. Vyhledejte dlaždici Zpravodaj MSDN Magazine v části vývoj Professional a klikněte na tlačítko **přístup**.
 
 ### <a name="printed-edition"></a>Tištěné vydání
 1. Vaše předplatné MSDN Magazine dostávat, přihlaste se k [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)
@@ -66,5 +66,5 @@ Digitální edice je k dispozici pro členy programu Visual Studio Dev Essential
 Nejste si jistí které předplatné používáte?  Připojte se k [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) zobrazíte všechna předplatná, která jsou přiřazená e-mailovou adresu. Pokud se nezobrazí všechna předplatná, může mít jeden nebo více přiřazené na jinou e-mailovou adresu.  Bude potřeba přihlásit se přes tento e-mailovou adresu najdete v těchto předplatných.
 
 ## <a name="support-resources"></a>Informační zdroje podpory
--  Potřebujete pomoc se prodeje, předplatnými, účty a fakturací pro předplatná sady Visual Studio, obraťte se na Visual Studio [podpora předplatných](https://visualstudio.microsoft.com/subscriptions/support/).
--  Máte dotaz k Visual Studio IDE, DevOps služby Azure nebo jiných produktů Visual Studio nebo služeb?  Navštivte [Visual Studio – podpora](https://visualstudio.microsoft.com/support/).
+- Potřebujete pomoc se prodeje, předplatnými, účty a fakturací pro předplatná sady Visual Studio, obraťte se na Visual Studio [podpora předplatných](https://visualstudio.microsoft.com/subscriptions/support/).
+- Máte dotaz k Visual Studio IDE, DevOps služby Azure nebo jiných produktů Visual Studio nebo služeb?  Navštivte [Visual Studio – podpora](https://visualstudio.microsoft.com/support/).

@@ -26,12 +26,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: 49ee21943f63cee3fff35d2bb92817294169c61f
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: b0a10d720e911f80aa5ef7b4a42f521bfd9c31bd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223582"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070405"
 ---
 # <a name="how-to-enable-and-disable-edit-and-continue-c-vb-c"></a>Postupy: Povolení a zákaz operace upravit a pokračovat (C#, VB, C++)
 
@@ -41,14 +41,14 @@ Pro nativní kód C++ **upravit a pokračovat** vyžaduje použití `/INCREMENTA
 
 **K povolení nebo zakázání funkce upravit a pokračovat:**
 
-1.  Pokud jste v relaci ladění, zastavte ladění (**ladění** > **Zastavit ladění** nebo **Shift**+**F5**) .
+1. Pokud jste v relaci ladění, zastavte ladění (**ladění** > **Zastavit ladění** nebo **Shift**+**F5**) .
 
-1.  V **nástroje** > **možnosti** > (nebo **ladění** > **možnosti**) > **ladění**  >  **Obecné**vyberte **upravit a pokračovat** v pravém podokně.
+1. V **nástroje** > **možnosti** > (nebo **ladění** > **možnosti**) > **ladění**  >  **Obecné**vyberte **upravit a pokračovat** v pravém podokně.
 
     > [!NOTE]
     >  Pokud je povolená technologie IntelliTrace a shromažďovat události IntelliTrace a informace o volání, upravit a pokračovat je zakázané. Další informace najdete v tématu [IntelliTrace](../debugger/intellitrace.md).
 
-1.  Pro kód jazyka C++, ujistěte se, že **Povolit nativní editovat a pokračovat** je vybraná a nastavit další možnosti:
+1. Pro kód jazyka C++, ujistěte se, že **Povolit nativní editovat a pokračovat** je vybraná a nastavit další možnosti:
     - **Použít změny při pokračování (jenom nativní)**
 
       Pokud vybraná, Visual Studio automaticky zkompiluje a platí změn kódu, pokud budete pokračovat v ladění ze stavu pozastavení. V opačném případě můžete také použít změny pomocí **ladění** > **použít změny kódu**.
@@ -57,4 +57,4 @@ Pro nativní kód C++ **upravit a pokračovat** vyžaduje použití `/INCREMENTA
 
       Pokud je vybrána, poskytuje upozornění na starý kód.
 
-1.  Klikněte na tlačítko **OK**.
+1. Klikněte na tlačítko **OK**.

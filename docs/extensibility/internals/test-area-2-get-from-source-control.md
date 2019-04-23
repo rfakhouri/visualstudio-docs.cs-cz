@@ -11,14 +11,14 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e6e6a9f71a1ebda6e6366096881fb681a864ce31
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 0d7942aa658208143aea3c3ae3a09eb677568f17
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56630870"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067180"
 ---
-# <a name="test-area-2-get-from-source-control"></a>Testovací oblast 2: Získat ze správy zdrojového kódu
+# <a name="test-area-2-get-from-source-control"></a>Testovací oblast 2: Získání ze správy zdrojového kódu
 Tento test oblast obsahuje informace o testovacích případů pro načítání položek ze úložiště verzí pomocí příkazu Get. Tyto testovací případy můžete použít pro oba místní a pro webové projekty.
 
 ## <a name="command-menu-access"></a>Přístup do příkazu nabídky
@@ -26,13 +26,13 @@ Tento test oblast obsahuje informace o testovacích případů pro načítání 
 
 ##### <a name="get-latest-version"></a>Načíst nejnovější verzi:
 
--   **Soubor**, **správy zdrojového kódu**, **načíst nejnovější verzi**.
+- **Soubor**, **správy zdrojového kódu**, **načíst nejnovější verzi**.
 
--   **Soubor**, **načíst nejnovější verzi**.
+- **Soubor**, **načíst nejnovější verzi**.
 
--   Místní nabídka **získat nejnovější verzi**.
+- Místní nabídka **získat nejnovější verzi**.
 
--   Získáte: **Soubor**, **správy zdrojového kódu**, **získat**.
+- Získáte: **Soubor**, **správy zdrojového kódu**, **získat**.
 
 ## <a name="expected-behavior"></a>Očekávané chování
 

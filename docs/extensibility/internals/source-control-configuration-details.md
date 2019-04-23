@@ -10,21 +10,21 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c01c71673640814006fe6771aa841852c247fd54
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: db9a8abb2b1013a7d11a4013d602e33592beff70
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54965312"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070092"
 ---
 # <a name="source-control-configuration-details"></a>Podrobnosti konfigurace správy zdrojového kódu
 Kvůli implementaci správy zdrojového kódu, musíte správně nakonfigurovat systém projektu nebo editor provést následující kroky:
 
--   Požádat o oprávnění k přechodu na změny stavu
+- Požádat o oprávnění k přechodu na změny stavu
 
--   Požádat o oprávnění k uložení souboru
+- Požádat o oprávnění k uložení souboru
 
--   Požádat o oprávnění, které chcete přidat, odebrat nebo přejmenovat soubory v projektu
+- Požádat o oprávnění, které chcete přidat, odebrat nebo přejmenovat soubory v projektu
 
 ## <a name="request-permission-to-transition-to-changed-state"></a>Požádat o oprávnění k přechodu na změny stavu
  Projekt nebo editor musí požádat o oprávnění k přechodu na změny stavu (dirty) voláním <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>. Každý editor, který implementuje <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData.IsDocDataDirty%2A> musí volat <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> a schválení změna dokumentu z prostředí před vrácením `True` pro <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData.IsDocDataDirty%2A>. Projekt je v podstatě editor pro soubor projektu a proto má stejnou odpovědnost za implementace změnil stav sledování pro soubor projektu jako textového editoru pro jeho soubory. Prostředí zpracovává změny stavu řešení, ale je třeba ošetřit změna stavu libovolného objektu, odkazuje na řešení, ale neukládá, jako je soubor projektu nebo jeho položek. Obecně platí Pokud projekt nebo editor zodpovídá za správu trvalosti pro položku, pak je zodpovědná za implementace změnil stav sledování.

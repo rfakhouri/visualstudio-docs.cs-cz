@@ -26,12 +26,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 908500a333303857ac88d27c76b285464913ff1c
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: 53ffc893b63447ab75a439ea1e093ddaf4b75645
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526292"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067128"
 ---
 # <a name="error-unable-to-start-debugging-on-the-web-server"></a>Chyba: Nepodařilo se zahájit ladění na webovém serveru
 
@@ -104,7 +104,7 @@ Navíc pokud použijete soubor HOSTITELŮ, ujistěte se, že je správně nakonf
 
 - Pokud to nepomůže, nebo ladíte vzdáleně, postupujte podle kroků v [Zkontrolujte konfiguraci služby IIS](#vxtbshttpservererrorsthingstocheck).
 
-##  <a name="vxtbshttpservererrorsthingstocheck"></a> Zkontrolujte konfiguraci služby IIS
+## <a name="vxtbshttpservererrorsthingstocheck"></a> Zkontrolujte konfiguraci služby IIS
 
 Až provedete kroky popsané tady řešení tohoto problému a před dalším pokusem o ladění může být také potřeba resetovat služby IIS. Můžete to udělat otevřením příkazového řádku se zvýšenými oprávněními a zadáním `iisreset`.
 

@@ -12,12 +12,12 @@ ms.assetid: 926de536-eead-415b-9451-f1ddc8c44630
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: d83f26183c422d39e69dfe106443dae54f576899
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 86e250c5a5922df52acea7445c97862a00cdc826
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54799884"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066830"
 ---
 # <a name="using-the-managed-package-framework-to-implement-a-project-type-c"></a>Použití rozhraní MPF (Managed Package Framework) k implementaci typu projektu (C#)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,9 +29,9 @@ Managed Package Framework (MPF) poskytuje třídy jazyka C# můžete použít ne
   
  Chcete-li přidat tento projekt do řešení sady VSPackage, postupujte takto:  
   
-1.  Stáhnout soubory MPFProj *MPFProjectDir*.  
+1. Stáhnout soubory MPFProj *MPFProjectDir*.  
   
-2.  V *MPFProjectDir*\Dev10\Src\CSharp\ProjectBase.file, změnit následující blok:  
+2. V *MPFProjectDir*\Dev10\Src\CSharp\ProjectBase.file, změnit následující blok:  
   
 ```  
 <!-- Provide a default value for $(ProjectBasePath) -->  
@@ -40,11 +40,11 @@ Managed Package Framework (MPF) poskytuje třídy jazyka C# můžete použít ne
   </PropertyGroup>  
 ```  
   
-1.  Vytvořte projekt VSPackage.  
+1. Vytvořte projekt VSPackage.  
   
-2.  Uvolněte projekt VSPackage.  
+2. Uvolněte projekt VSPackage.  
   
-3.  Upravit soubor .csproj VSPackage tak, že přidáte následující blok před druhou `<Import>` bloků:  
+3. Upravit soubor .csproj VSPackage tak, že přidáte následující blok před druhou `<Import>` bloků:  
   
 ```  
 <Import Project="MPFProjectDir\Dev10\Src\CSharp\ProjectBase.files" />  
@@ -56,17 +56,17 @@ Managed Package Framework (MPF) poskytuje třídy jazyka C# můžete použít ne
   </PropertyGroup>  
 ```  
   
-1.  Uložte projekt.  
+1. Uložte projekt.  
   
-2.  Zavřete a znovu otevřete řešení VSPackage.  
+2. Zavřete a znovu otevřete řešení VSPackage.  
   
-3.  Znovu otevřete projekt VSPackage. Měli byste vidět nový adresář s názvem ProjectBase.  
+3. Znovu otevřete projekt VSPackage. Měli byste vidět nový adresář s názvem ProjectBase.  
   
-4.  Přidejte následující odkaz na projekt VSPackage:  
+4. Přidejte následující odkaz na projekt VSPackage:  
   
      Microsoft.Build.Tasks.4.0  
   
-5.  Sestavte projekt.  
+5. Sestavte projekt.  
   
 ## <a name="hierarchy-classes"></a>Hierarchie tříd  
  Následující tabulka shrnuje třídy v MPFProj, které podporují hierarchie projektu. Další informace najdete v tématu [hierarchie a výběr](../../extensibility/internals/hierarchies-and-selection.md).  

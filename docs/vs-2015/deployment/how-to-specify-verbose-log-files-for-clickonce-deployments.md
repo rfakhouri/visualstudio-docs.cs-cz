@@ -16,12 +16,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0efd71b38d3fcd8ae8241e31e721bd48e857d3bd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e200d0918e3d346f71da6ec2184e07e7d8433174
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54754171"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069767"
 ---
 # <a name="how-to-specify-verbose-log-files-for-clickonce-deployments"></a>Postupy: Určení souborů podrobného protokolování pro nasazení ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,13 +35,13 @@ ms.locfileid: "54754171"
   
 ### <a name="to-specify-verbose-log-files"></a>K určení souborů podrobného protokolování  
   
-1.  Otevřít **Regedit.exe**.  
+1. Otevřít **Regedit.exe**.  
   
-2.  Přejděte na uzel `HKEY_CURRENT_USER\Software\Classes\Software\Microsoft\Windows\CurrentVersion\Deployment`.  
+2. Přejděte na uzel `HKEY_CURRENT_USER\Software\Classes\Software\Microsoft\Windows\CurrentVersion\Deployment`.  
   
-3.  V případě potřeby vytvořte novou řetězcovou hodnotu s názvem `LogVerbosityLevel`.  
+3. V případě potřeby vytvořte novou řetězcovou hodnotu s názvem `LogVerbosityLevel`.  
   
-4.  Nastavte `LogVerbosityLevel` hodnota, která se `1`.  
+4. Nastavte `LogVerbosityLevel` hodnota, která se `1`.  
   
 ## <a name="see-also"></a>Viz také  
  [Řešení potíží s nasazením ClickOnce](../deployment/troubleshooting-clickonce-deployments.md)

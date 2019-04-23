@@ -11,14 +11,14 @@ ms.assetid: ffc89814-a7df-44fc-aef5-dd3dfeb28a9b
 caps.latest.revision: 49
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1b419568490e41b135c2c7c801154f6550c546e9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d93d14383ec755f14619f4d126c7f676acafc6c2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54771462"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070105"
 ---
-# <a name="unit-tests-for-generic-methods"></a>Testy jednotek pro obecné metody
+# <a name="unit-tests-for-generic-methods"></a>Testování částí pro obecné metody
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Testování částí pro obecné metody můžete generovat stejným způsobem jako vy, další způsoby, jak je popsáno v [jak: Vytváření a spouštění testování částí](http://msdn.microsoft.com/5e0f43cf-5e51-48e2-9c98-0eb9324bdc48). Následující části obsahují informace a příklady vytváření testů jednotek pro obecné metody.  
@@ -29,20 +29,20 @@ Testování částí pro obecné metody můžete generovat stejným způsobem ja
 ## <a name="examples"></a>Příklady  
  Následující příklady znázorňují testů jednotek pro obecné typy:  
   
--   [Úpravy generovaný kód testu](#EditingGeneratedTestCode). V tomto příkladu má dvě části, vygeneruje kód testu a upravit testovací kód. Ukazuje, jak upravit nezpracovaná testovací kód, který je generován z obecné metody do užitečné testovací metodu.  
+- [Úpravy generovaný kód testu](#EditingGeneratedTestCode). V tomto příkladu má dvě části, vygeneruje kód testu a upravit testovací kód. Ukazuje, jak upravit nezpracovaná testovací kód, který je generován z obecné metody do užitečné testovací metodu.  
   
--   [Pomocí omezení typu](#TypeConstraintNotSatisfied). Tento příklad ukazuje testování částí pro obecné metody, která používá omezení typu. V tomto příkladu není splněná omezení typu.  
+- [Pomocí omezení typu](#TypeConstraintNotSatisfied). Tento příklad ukazuje testování částí pro obecné metody, která používá omezení typu. V tomto příkladu není splněná omezení typu.  
   
-###  <a name="EditingGeneratedTestCode"></a> Příklad 1: Úprava kódu vygenerovaného testu  
+### <a name="EditingGeneratedTestCode"></a> Příklad 1: Úprava kódu vygenerovaného testu  
  Testuje testovací kód v této části kódu v rámci testovací metodu s názvem `SizeOfLinkedList()`. Tato metoda vrátí celé číslo určující počet uzlů v propojeném seznamu.  
   
  První ukázce kódu, v části vygenerované testovací kód ukazuje neupravenou testovací kód jako byla generována pomocí sady Visual Studio Enterprise. Druhý příklad, v části upravovaný testovací kód ukazuje, jak vám může usnadnit otestovat fungování SizeOfLinkedList metodu pro dvě různé datové typy, `int` a `char`.  
   
  Tento kód ukazuje dvě metody:  
   
--   testovací metodu helper, `SizeOfLinkedListTestHelper<T>()`. Pomocná metoda testu má ve výchozím nastavení "TestHelper" v názvu.  
+- testovací metodu helper, `SizeOfLinkedListTestHelper<T>()`. Pomocná metoda testu má ve výchozím nastavení "TestHelper" v názvu.  
   
--   testovací metoda `SizeOfLinkedListTest()`. Každý testovací metoda je označena atributem TestMethod.  
+- testovací metoda `SizeOfLinkedListTest()`. Každý testovací metoda je označena atributem TestMethod.  
   
 #### <a name="generated-test-code"></a>Kód generovaný Test  
  Následující testovací kód byl generován ze `SizeOfLinkedList()` metody. Vzhledem k tomu, že toto je neupravenou generovaný test, musíte ho upravit tak, aby správně testovací metoda SizeOfLinkedList.  
@@ -74,22 +74,22 @@ public void SizeOfLinkedListTest()
 ##### <a name="test-helper-method"></a>Testovací metoda pomocné rutiny  
  Pomocná metoda testu provede následující kroky, které odpovídají řádky v kódu s názvem kroky 1 až 5.  
   
-1.  Vytvořte obecný propojeného seznamu.  
+1. Vytvořte obecný propojeného seznamu.  
   
-2.  Čtyři uzly připojí k propojeného seznamu. Datový typ obsahu z těchto uzlů neznámý.  
+2. Čtyři uzly připojí k propojeného seznamu. Datový typ obsahu z těchto uzlů neznámý.  
   
-3.  Přiřadit očekávané velikosti odkazovaného seznamu do proměnné `expected`.  
+3. Přiřadit očekávané velikosti odkazovaného seznamu do proměnné `expected`.  
   
-4.  Vypočítat skutečnou velikost propojeného seznamu a přiřaďte ho k proměnné `actual`.  
+4. Vypočítat skutečnou velikost propojeného seznamu a přiřaďte ho k proměnné `actual`.  
   
-5.  Porovnání `actual` s `expected` v příkazu Assert. Pokud skutečnou není roven očekávané, test se nezdaří.  
+5. Porovnání `actual` s `expected` v příkazu Assert. Pokud skutečnou není roven očekávané, test se nezdaří.  
   
 ##### <a name="test-method"></a>Test – metoda  
  Testovací metoda je zkompilován do kódu, která je volána při spuštění testu s názvem SizeOfLinkedListTest. Provede následující kroky, které odpovídají řádky v kódu s názvem kroky 6 a 7.  
   
-1.  Zadejte `<int>` při volání testovací pomocnou metodu, chcete-li ověřit, že test pracuje `integer` proměnné.  
+1. Zadejte `<int>` při volání testovací pomocnou metodu, chcete-li ověřit, že test pracuje `integer` proměnné.  
   
-2.  Zadejte `<char>` při volání testovací pomocnou metodu, chcete-li ověřit, že test pracuje `char` proměnné.  
+2. Zadejte `<char>` při volání testovací pomocnou metodu, chcete-li ověřit, že test pracuje `char` proměnné.  
   
 ```  
   
@@ -119,7 +119,7 @@ public void SizeOfLinkedListTest()
 > [!NOTE]
 >  Pokaždé, když SizeOfLinkedListTest testovací běhy, jeho TestHelper metoda je volána dvakrát. Příkaz kontrolní výraz se musí vyhodnotit na hodnotu true. pokaždé, když pro test proběhl úspěšně. Pokud se test nezdaří, nemusí být jasné, jestli volání, které zadané `<int>` nebo volání, které zadaná `<char>` způsobil, že k selhání. Odpovědi, může prozkoumat zásobník volání, nebo můžete nastavit zarážky v testovací metodě a ladění při spouštění testu. Další informace najdete v tématu [jak: Ladění během zpracování testu v řešení technologie ASP.NET](http://msdn.microsoft.com/library/de4d7aa1-4a1e-467e-a19b-4a85ec245b8b).  
   
-###  <a name="TypeConstraintNotSatisfied"></a> Příklad 2: Pomocí omezení typu  
+### <a name="TypeConstraintNotSatisfied"></a> Příklad 2: Pomocí omezení typu  
  Tento příklad ukazuje testování částí pro obecné metody, která používá omezení typu, který není splněná. První část ukazuje kód z kódu v rámci testovacího projektu. Omezení typu je zvýrazněn.  
   
  Druhá část zobrazuje kód z testovacího projektu.  

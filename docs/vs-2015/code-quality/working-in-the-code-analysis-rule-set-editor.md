@@ -11,12 +11,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 0dd83a2b2d613d6d9ef73097bca4d2f9f1c6cd39
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 57d3c21371cc824573e29657d0b41253e556f4c3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54755880"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072250"
 ---
 # <a name="working-in-the-code-analysis-rule-set-editor"></a>Práce s Editorem sad pravidel nástroje Analýza kódu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,11 +31,11 @@ Editor sad pravidel analýzy kódu umožňuje určit pravidla, které jsou souč
   
  Editor zobrazí pravidla ve stromové struktuře, která skupiny pravidla pomocí pravidla nastavena pole, které určíte. Chcete-li přidat nebo odebrat pravidla sadu pravidel, proveďte jeden nebo více z následujících kroků:  
   
--   Zaškrtněte nebo zrušte zaškrtnutí políček u uzlu skupiny pro přidání nebo odebrání všech pravidel ve skupině. Když vyberete skupinu, všechna pravidla jsou nastaveny na **upozornění** akce.  
+- Zaškrtněte nebo zrušte zaškrtnutí políček u uzlu skupiny pro přidání nebo odebrání všech pravidel ve skupině. Když vyberete skupinu, všechna pravidla jsou nastaveny na **upozornění** akce.  
   
--   Klikněte na tlačítko **akce** pole skupiny a pak zadejte akce, která platí pro všechna pravidla ve skupině.  
+- Klikněte na tlačítko **akce** pole skupiny a pak zadejte akce, která platí pro všechna pravidla ve skupině.  
   
--   Zaškrtněte nebo zrušte zaškrtnutí políčka u jednotlivých pravidel. Vyberete-li zaškrtnutí políčka pro pravidlo, je pravidlo nastavené na akci upozornění.  
+- Zaškrtněte nebo zrušte zaškrtnutí políčka u jednotlivých pravidel. Vyberete-li zaškrtnutí políčka pro pravidlo, je pravidlo nastavené na akci upozornění.  
   
 ## <a name="rule-set-editor-toolbar"></a>Panel nástrojů editoru sady pravidel  
  Na panelu nástrojů editoru sad pravidel slouží k seskupení, filtrovat a vyhledávat data, která se zobrazí v mřížce sady pravidel.  
@@ -73,6 +73,6 @@ Editor sad pravidel analýzy kódu umožňuje určit pravidla, které jsou souč
 ## <a name="sorting-and-filtering-rule-sets"></a>Řazení a filtrování sady pravidel  
  V záhlaví sloupců mřížky sadu pravidel můžete řadit a filtrovat pravidla podle hodnot pole.  
   
--   Seřadit seznamy sadu pravidel, klikněte na záhlaví sloupce pole, podle kterého chcete řadit. Pokud jsou seskupené sady pravidel, každou skupinu je seřazen jednotlivě.  
+- Seřadit seznamy sadu pravidel, klikněte na záhlaví sloupce pole, podle kterého chcete řadit. Pokud jsou seskupené sady pravidel, každou skupinu je seřazen jednotlivě.  
   
--   Sady pravidel filtrování podle hodnoty pole, klikněte na tlačítko filtru na záhlaví sloupce pole, podle kterého chcete filtrovat. Vyberte zaškrtávací pole hodnot, které chcete zobrazit a zrušte zaškrtnutí políček hodnot, které chcete skrýt.
+- Sady pravidel filtrování podle hodnoty pole, klikněte na tlačítko filtru na záhlaví sloupce pole, podle kterého chcete filtrovat. Vyberte zaškrtávací pole hodnot, které chcete zobrazit a zrušte zaškrtnutí políček hodnot, které chcete skrýt.

@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 03ea220bf886352a05cc67bdd44a9504dcd86964
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a8a08b58871652cea6332f4239e9da98b28f28e0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56600851"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070053"
 ---
 # <a name="automate-excel-by-using-extended-objects"></a>Automatizace aplikace Excel s použitím rozšířených objektů
   Při vývoji řešení pro aplikaci Excel v sadě Visual Studio, můžete použít *hostovat položky* a *hostování ovládacího prvku*s ve vašich řešeních. Jedná se o objekty, které rozšiřují některé běžně používané objekty v objektovém modelu (to znamená, objektový model, který je zveřejněný prostřednictvím sestavení primární spolupráce pro aplikace Excel), Excel, jako <xref:Microsoft.Office.Interop.Excel.Worksheet> a <xref:Microsoft.Office.Interop.Excel.Range> objekty. Rozšířené objekty se chovají jako objekty aplikace Excel, které jsou založeny na, ale přidávají další funkce, jako je nové události a možnosti vázání dat na objekty.
@@ -37,11 +37,11 @@ ms.locfileid: "56600851"
 ## <a name="excel-host-items"></a>Excel hostitelské položky
  Projekty aplikace Excel poskytují přístup k několika hostitelské položky:
 
--   <xref:Microsoft.Office.Tools.Excel.Worksheet>. Tato položka hostitele obsahuje a představuje listu v projektu. Taky funguje jako kontejner pro spravované ovládací prvky, včetně hostitelské ovládací prvky a ovládací prvky Windows Forms, a udržuje informace o ovládacích prvcích na svém povrchu. Další informace najdete v tématu [hostitelská položka Worksheet](../vsto/worksheet-host-item.md).
+- <xref:Microsoft.Office.Tools.Excel.Worksheet>. Tato položka hostitele obsahuje a představuje listu v projektu. Taky funguje jako kontejner pro spravované ovládací prvky, včetně hostitelské ovládací prvky a ovládací prvky Windows Forms, a udržuje informace o ovládacích prvcích na svém povrchu. Další informace najdete v tématu [hostitelská položka Worksheet](../vsto/worksheet-host-item.md).
 
--   <xref:Microsoft.Office.Tools.Excel.Workbook>. Tato položka hostitele představuje sešitu ve vašem projektu a funguje jako kontejner pro komponenty, které jsou sdíleny ve všech listů v sešitu. Další informace najdete v tématu [hostitelská položka Workbook](../vsto/workbook-host-item.md).
+- <xref:Microsoft.Office.Tools.Excel.Workbook>. Tato položka hostitele představuje sešitu ve vašem projektu a funguje jako kontejner pro komponenty, které jsou sdíleny ve všech listů v sešitu. Další informace najdete v tématu [hostitelská položka Workbook](../vsto/workbook-host-item.md).
 
--   <xref:Microsoft.Office.Tools.Excel.ChartSheet>. Tento hostitel položka sešitu v Excelu, který obsahuje pouze grafu a zpřístupní události.
+- <xref:Microsoft.Office.Tools.Excel.ChartSheet>. Tento hostitel položka sešitu v Excelu, který obsahuje pouze grafu a zpřístupní události.
 
      Když přidáte list s grafem v době návrhu jako nový list ve vašem projektu přizpůsobení na úrovni dokumentu aplikace Microsoft Office Excel, sada Visual Studio automaticky vytvoří <xref:Microsoft.Office.Tools.Excel.ChartSheet> hostitelský objekt.
 
@@ -52,13 +52,13 @@ ms.locfileid: "56600851"
 
  Další informace o hostitelské ovládací prvky, které můžete použít v projektech aplikace Excel naleznete v následujících tématech:
 
--   [Graf – ovládací prvek](../vsto/chart-control.md)
+- [Graf – ovládací prvek](../vsto/chart-control.md)
 
--   [ListObject – ovládací prvek](../vsto/listobject-control.md)
+- [ListObject – ovládací prvek](../vsto/listobject-control.md)
 
--   [Namedrange – ovládací prvek](../vsto/namedrange-control.md)
+- [Namedrange – ovládací prvek](../vsto/namedrange-control.md)
 
--   [Xmlmappedrange – ovládací prvek](../vsto/xmlmappedrange-control.md)
+- [Xmlmappedrange – ovládací prvek](../vsto/xmlmappedrange-control.md)
 
 ## <a name="see-also"></a>Viz také:
 - [Postupy: Vyplnění ovládacích prvků ListObject daty](../vsto/how-to-fill-listobject-controls-with-data.md)

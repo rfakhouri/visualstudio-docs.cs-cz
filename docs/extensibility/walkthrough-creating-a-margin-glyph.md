@@ -1,5 +1,5 @@
 ---
-title: 'Průvodce: Vytvoření okrajového piktogramu | Dokumentace Microsoftu'
+title: 'Návod: Vytvoření okrajového piktogramu | Dokumentace Microsoftu'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,14 +10,14 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 745e54856f1859857877eab18c18b2ee9eb62ead
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 02bc8d858f28799020b958978845c0994accd554
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56721934"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067414"
 ---
-# <a name="walkthrough-create-a-margin-glyph"></a>Průvodce: Vytvoření okrajového piktogramu
+# <a name="walkthrough-create-a-margin-glyph"></a>Návod: Vytvoření okrajového piktogramu
 Přizpůsobení vzhledu okraje editoru pomocí rozšíření vlastní editor. Tento názorný postup vloží vlastní piktogram na okraj indikátoru pokaždé, když se slova "todo" uveden v komentáři kódu.
 
 ## <a name="prerequisites"></a>Požadavky
@@ -25,45 +25,45 @@ Přizpůsobení vzhledu okraje editoru pomocí rozšíření vlastní editor. Te
 
 ## <a name="create-a-mef-project"></a>Vytvořit projekt rozhraní MEF
 
-1.  Vytvořte projekt VSIX C#. (V **nový projekt** dialogového okna, vyberte **Visual C# / rozšíření**, pak **projekt VSIX**.) Pojmenujte řešení `TodoGlyphTest`.
+1. Vytvořte projekt VSIX C#. (V **nový projekt** dialogového okna, vyberte **Visual C# / rozšíření**, pak **projekt VSIX**.) Pojmenujte řešení `TodoGlyphTest`.
 
-2.  Přidání položky projektu Editor třídění. Další informace najdete v tématu [vytváření rozšíření pomocí šablony položky editoru](../extensibility/creating-an-extension-with-an-editor-item-template.md).
+2. Přidání položky projektu Editor třídění. Další informace najdete v tématu [vytváření rozšíření pomocí šablony položky editoru](../extensibility/creating-an-extension-with-an-editor-item-template.md).
 
-3.  Odstraníte existující soubory tříd.
+3. Odstraníte existující soubory tříd.
 
 ## <a name="define-the-glyph"></a>Definování glyf
  Definování piktogram spuštěním <xref:Microsoft.VisualStudio.Text.Editor.IGlyphFactory> rozhraní.
 
 ### <a name="to-define-the-glyph"></a>Chcete-li definovat glyf
 
-1.  Přidejte soubor třídy a pojmenujte ho `TodoGlyphFactory`.
+1. Přidejte soubor třídy a pojmenujte ho `TodoGlyphFactory`.
 
-2.  Přidejte následující kód pomocí deklarace.
+2. Přidejte následující kód pomocí deklarace.
 
      [!code-csharp[VSSDKTodoGlyphTest#1](../extensibility/codesnippet/CSharp/walkthrough-creating-a-margin-glyph_1.cs)]
      [!code-vb[VSSDKTodoGlyphTest#1](../extensibility/codesnippet/VisualBasic/walkthrough-creating-a-margin-glyph_1.vb)]
 
-3.  Přidejte třídu pojmenovanou `TodoGlyphFactory` , který implementuje <xref:Microsoft.VisualStudio.Text.Editor.IGlyphFactory>.
+3. Přidejte třídu pojmenovanou `TodoGlyphFactory` , který implementuje <xref:Microsoft.VisualStudio.Text.Editor.IGlyphFactory>.
 
      [!code-csharp[VSSDKTodoGlyphTest#2](../extensibility/codesnippet/CSharp/walkthrough-creating-a-margin-glyph_2.cs)]
      [!code-vb[VSSDKTodoGlyphTest#2](../extensibility/codesnippet/VisualBasic/walkthrough-creating-a-margin-glyph_2.vb)]
 
-4.  Přidáte soukromé pole, která definuje rozměry glyf.
+4. Přidáte soukromé pole, která definuje rozměry glyf.
 
      [!code-csharp[VSSDKTodoGlyphTest#3](../extensibility/codesnippet/CSharp/walkthrough-creating-a-margin-glyph_3.cs)]
      [!code-vb[VSSDKTodoGlyphTest#3](../extensibility/codesnippet/VisualBasic/walkthrough-creating-a-margin-glyph_3.vb)]
 
-5.  Implementace `GenerateGlyph` definováním prvek piktogram uživatelského rozhraní (UI). `TodoTag` dále v tomto návodu je definována.
+5. Implementace `GenerateGlyph` definováním prvek piktogram uživatelského rozhraní (UI). `TodoTag` dále v tomto návodu je definována.
 
      [!code-csharp[VSSDKTodoGlyphTest#4](../extensibility/codesnippet/CSharp/walkthrough-creating-a-margin-glyph_4.cs)]
      [!code-vb[VSSDKTodoGlyphTest#4](../extensibility/codesnippet/VisualBasic/walkthrough-creating-a-margin-glyph_4.vb)]
 
-6.  Přidejte třídu pojmenovanou `TodoGlyphFactoryProvider` , který implementuje <xref:Microsoft.VisualStudio.Text.Editor.IGlyphFactoryProvider>. Export této třídy s <xref:Microsoft.VisualStudio.Utilities.NameAttribute> z "TodoGlyph" <xref:Microsoft.VisualStudio.Utilities.OrderAttribute> z po VsTextMarker <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> "kód" a <xref:Microsoft.VisualStudio.Text.Tagging.TagTypeAttribute> z TodoTag.
+6. Přidejte třídu pojmenovanou `TodoGlyphFactoryProvider` , který implementuje <xref:Microsoft.VisualStudio.Text.Editor.IGlyphFactoryProvider>. Export této třídy s <xref:Microsoft.VisualStudio.Utilities.NameAttribute> z "TodoGlyph" <xref:Microsoft.VisualStudio.Utilities.OrderAttribute> z po VsTextMarker <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> "kód" a <xref:Microsoft.VisualStudio.Text.Tagging.TagTypeAttribute> z TodoTag.
 
      [!code-csharp[VSSDKTodoGlyphTest#5](../extensibility/codesnippet/CSharp/walkthrough-creating-a-margin-glyph_5.cs)]
      [!code-vb[VSSDKTodoGlyphTest#5](../extensibility/codesnippet/VisualBasic/walkthrough-creating-a-margin-glyph_5.vb)]
 
-7.  Implementace <xref:Microsoft.VisualStudio.Text.Editor.IGlyphFactoryProvider.GetGlyphFactory%2A> metoda po vytvoření instance `TodoGlyphFactory`.
+7. Implementace <xref:Microsoft.VisualStudio.Text.Editor.IGlyphFactoryProvider.GetGlyphFactory%2A> metoda po vytvoření instance `TodoGlyphFactory`.
 
      [!code-csharp[VSSDKTodoGlyphTest#6](../extensibility/codesnippet/CSharp/walkthrough-creating-a-margin-glyph_6.cs)]
      [!code-vb[VSSDKTodoGlyphTest#6](../extensibility/codesnippet/VisualBasic/walkthrough-creating-a-margin-glyph_6.vb)]
@@ -73,39 +73,39 @@ Přizpůsobení vzhledu okraje editoru pomocí rozšíření vlastní editor. Te
 
 ### <a name="to-define-a-todo-tag-and-tagger"></a>Chcete-li definovat todo značku a označovatel
 
-1.  Přidejte nový soubor třídy do projektu a pojmenujte ho `TodoTagger`.
+1. Přidejte nový soubor třídy do projektu a pojmenujte ho `TodoTagger`.
 
-2.  Přidejte následující importy.
+2. Přidejte následující importy.
 
      [!code-csharp[VSSDKTodoGlyphTest#7](../extensibility/codesnippet/CSharp/walkthrough-creating-a-margin-glyph_7.cs)]
      [!code-vb[VSSDKTodoGlyphTest#7](../extensibility/codesnippet/VisualBasic/walkthrough-creating-a-margin-glyph_7.vb)]
 
-3.  Přidejte třídu pojmenovanou `TodoTag`.
+3. Přidejte třídu pojmenovanou `TodoTag`.
 
      [!code-csharp[VSSDKTodoGlyphTest#8](../extensibility/codesnippet/CSharp/walkthrough-creating-a-margin-glyph_8.cs)]
      [!code-vb[VSSDKTodoGlyphTest#8](../extensibility/codesnippet/VisualBasic/walkthrough-creating-a-margin-glyph_8.vb)]
 
-4.  Upravte třídu s názvem `TodoTagger` , který implementuje <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601> typu `TodoTag`.
+4. Upravte třídu s názvem `TodoTagger` , který implementuje <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601> typu `TodoTag`.
 
      [!code-csharp[VSSDKTodoGlyphTest#9](../extensibility/codesnippet/CSharp/walkthrough-creating-a-margin-glyph_9.cs)]
      [!code-vb[VSSDKTodoGlyphTest#9](../extensibility/codesnippet/VisualBasic/walkthrough-creating-a-margin-glyph_9.vb)]
 
-5.  K `TodoTagger` třídy, přidejte privátní pole pro <xref:Microsoft.VisualStudio.Text.Classification.IClassifier> a text k vyhledání v příslušné klasifikaci zahrnuje.
+5. K `TodoTagger` třídy, přidejte privátní pole pro <xref:Microsoft.VisualStudio.Text.Classification.IClassifier> a text k vyhledání v příslušné klasifikaci zahrnuje.
 
      [!code-csharp[VSSDKTodoGlyphTest#10](../extensibility/codesnippet/CSharp/walkthrough-creating-a-margin-glyph_10.cs)]
      [!code-vb[VSSDKTodoGlyphTest#10](../extensibility/codesnippet/VisualBasic/walkthrough-creating-a-margin-glyph_10.vb)]
 
-6.  Přidáte konstruktor, který nastaví třídění.
+6. Přidáte konstruktor, který nastaví třídění.
 
      [!code-csharp[VSSDKTodoGlyphTest#11](../extensibility/codesnippet/CSharp/walkthrough-creating-a-margin-glyph_11.cs)]
      [!code-vb[VSSDKTodoGlyphTest#11](../extensibility/codesnippet/VisualBasic/walkthrough-creating-a-margin-glyph_11.vb)]
 
-7.  Implementace <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601.GetTags%2A> metoda tím, že hledá všechny klasifikace zahrnuje, jejichž názvy obsahují slovo "komentář" a jejichž text obsahuje hledaný text. Pokaždé, když se hledaný text nenajde, yield zpět nový <xref:Microsoft.VisualStudio.Text.Tagging.TagSpan%601> typu `TodoTag`.
+7. Implementace <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601.GetTags%2A> metoda tím, že hledá všechny klasifikace zahrnuje, jejichž názvy obsahují slovo "komentář" a jejichž text obsahuje hledaný text. Pokaždé, když se hledaný text nenajde, yield zpět nový <xref:Microsoft.VisualStudio.Text.Tagging.TagSpan%601> typu `TodoTag`.
 
      [!code-csharp[VSSDKTodoGlyphTest#12](../extensibility/codesnippet/CSharp/walkthrough-creating-a-margin-glyph_12.cs)]
      [!code-vb[VSSDKTodoGlyphTest#12](../extensibility/codesnippet/VisualBasic/walkthrough-creating-a-margin-glyph_12.vb)]
 
-8.  Deklarace `TagsChanged` událostí.
+8. Deklarace `TagsChanged` událostí.
 
      [!code-csharp[VSSDKTodoGlyphTest#13](../extensibility/codesnippet/CSharp/walkthrough-creating-a-margin-glyph_13.cs)]
      [!code-vb[VSSDKTodoGlyphTest#13](../extensibility/codesnippet/VisualBasic/walkthrough-creating-a-margin-glyph_13.vb)]
@@ -130,12 +130,12 @@ Přizpůsobení vzhledu okraje editoru pomocí rozšíření vlastní editor. Te
 
 ### <a name="to-build-and-test-the-todoglyphtest-solution"></a>Pro vytváření a testování TodoGlyphTest řešení
 
-1.  Sestavte řešení.
+1. Sestavte řešení.
 
-2.  Spusťte projekt stisknutím kombinace kláves **F5**. Druhou instanci aplikace Visual Studio spustí.
+2. Spusťte projekt stisknutím kombinace kláves **F5**. Druhou instanci aplikace Visual Studio spustí.
 
-3.  Ujistěte se, že je zobrazen indikátor okraje. (Na **nástroje** nabídky, klikněte na tlačítko **možnosti**. Na **textový Editor** stránky, ujistěte se, že **okraj indikátoru** je vybrán.)
+3. Ujistěte se, že je zobrazen indikátor okraje. (Na **nástroje** nabídky, klikněte na tlačítko **možnosti**. Na **textový Editor** stránky, ujistěte se, že **okraj indikátoru** je vybrán.)
 
-4.  Otevřete soubor kódu, který má komentáře. Přidáte slovo "todo" do jedné ze Poznámka částí.
+4. Otevřete soubor kódu, který má komentáře. Přidáte slovo "todo" do jedné ze Poznámka částí.
 
-5.  Světle modrý kroužek s tmavě modrou osnovy se zobrazí v okraj indikátoru nalevo od okna kódu.
+5. Světle modrý kroužek s tmavě modrou osnovy se zobrazí v okraj indikátoru nalevo od okna kódu.

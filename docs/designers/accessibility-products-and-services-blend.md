@@ -8,23 +8,23 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d9a442c976538ae47a3ea95795ebb82ca2cbb5f2
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 2e5b43ddfea6a7392c2e2c6c6bc1467740d25043
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55920428"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066725"
 ---
 # <a name="accessibility-products-and-services-blend"></a>Produkty a služby (Blend)
 Microsoft usiluje o usnadnění svých produktů a služeb pro každodenní použití. V následujících oddílech jsou uvedeny informace o funkcích, produktech a službách, které usnadňují používání systému Microsoft Windows tělesně postiženým uživatelům:
 
--   Funkce pro usnadnění přístupu v systému Windows
+- Funkce pro usnadnění přístupu v systému Windows
 
--   Dokumentace v alternativních formátech
+- Dokumentace v alternativních formátech
 
--   Zákaznický servis pro osoby s poškozením sluchu
+- Zákaznický servis pro osoby s poškozením sluchu
 
--   Další informace
+- Další informace
 
 > [!NOTE]
 >  Informace v této části mohou platit pouze pro uživatele, kteří licencují produkty společnosti Microsoft ve Spojených státech. Pokud jste získali mimo Spojené státy tento produkt, můžete použít kartu s informacemi o pobočkách, která byla součástí vašeho softwarového balíčku, nebo navštívit [společnosti Microsoft pro usnadnění](http://go.microsoft.com/fwlink/?LinkID=75069) seznam Microsoft telefonní číslo služby odborné pomoci čísel a adres. Můžete se obrátit na pobočku společnosti a zjistěte, zda typu produktů a služeb popsaných v této části jsou k dispozici ve vaší oblasti. Informace o usnadnění jsou k dispozici v dalších jazycích včetně japonštiny a francouzštiny.
@@ -45,7 +45,7 @@ Microsoft usiluje o usnadnění svých produktů a služeb pro každodenní pou�
 ## <a name="documentation-in-alternative-formats"></a>Dokumentace v alternativních formátech
  Pokud máte potíže se čtením či používáním tištěných materiálů, získáte v dokumentaci k různým produktům Microsoft v dostupnějších formátech. Můžete zobrazit rejstřík dostupné produktové dokumentace naleznete na [společnosti Microsoft pro usnadnění](http://go.microsoft.com/fwlink/?LinkID=75069).
 
- Navíc lze získat další publikace společnosti Microsoft od společnosti Recording for the Blind & Dyslexic, Inc (RFB&D). Společnost RFB&D distribuuje tyto dokumenty registrovaným a kvalifikovaným členům své distribuční služby. Informace o dostupnosti dokumentace produktů společnosti Microsoft a knihy z nakladatelství Microsoft Press obraťte se na:
+ Kromě toho můžete opatřit další publikace Microsoft od nahrávání pro the Blind & Dyslexic, Inc (RFB & D). Organizace RFB & D distribuuje tyto dokumenty registrovaným oprávněným členům své distribuční služby. Informace o dostupnosti dokumentace produktů společnosti Microsoft a knihy z nakladatelství Microsoft Press obraťte se na:
 
  **Learning Ally**
 

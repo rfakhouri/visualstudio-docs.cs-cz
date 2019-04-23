@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e35819371a751aa8047adbacd77f55ea257831a1
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a54c9d5322b35092d635edd00e3b200ee67997a9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55944972"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070040"
 ---
 # <a name="accessibility-in-office-projects"></a>Usnadnění v projektech pro systém Office
 
@@ -40,21 +40,21 @@ Ve většině případů splňovat projektech pro systém Office v sadě Visual 
 
 #### <a name="to-view-shortcut-keys-for-ribbon-tabs-and-controls-in-the-designer"></a>Chcete-li zobrazit klávesové zkratky pro pás karet a ovládacích prvků v Návrháři
 
-1.  V sadě Visual Studio na **nástroje** nabídky, klikněte na tlačítko **možnosti**.
+1. V sadě Visual Studio na **nástroje** nabídky, klikněte na tlačítko **možnosti**.
 
-2.  Rozbalte **nástroje Office** uzel a vyberte možnost **klávesnice Microsoft Office Excel** nebo **klávesnice Microsoft Office Word**podle potřeby.
+2. Rozbalte **nástroje Office** uzel a vyberte možnost **klávesnice Microsoft Office Excel** nebo **klávesnice Microsoft Office Word**podle potřeby.
 
-3.  Vyberte **chéma dynamické klávesnice**.
+3. Vyberte **chéma dynamické klávesnice**.
 
      Zobrazí se zpráva s oznámením, že je třeba restartovat Visual Studio tato změna projevila.
 
-4.  Klikněte na **OK**.
+4. Klikněte na **OK**.
 
-5.  Restartujte Visual Studio a znovu otevřete projekt.
+5. Restartujte Visual Studio a znovu otevřete projekt.
 
-6.  Otevření dokumentu nebo sešitu Návrháře projektu.
+6. Otevření dokumentu nebo sešitu Návrháře projektu.
 
-7.  Stisknutím klávesy **F6** zobrazíte klávesové zkratky pro pás karet.
+7. Stisknutím klávesy **F6** zobrazíte klávesové zkratky pro pás karet.
 
 ## <a name="accessibility-at-runtime"></a>Usnadnění přístupu za běhu
 

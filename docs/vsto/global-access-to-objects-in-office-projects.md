@@ -30,12 +30,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5dbe3c5810de40e19ab5abc3698a791388508283
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: 6e5b27eaff0b462e257d1d972c5b950cd1f5ab1a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57525194"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066764"
 ---
 # <a name="global-access-to-objects-in-office-projects"></a>Globální přístup k objektům v projektech pro systém Office
   Při vytváření projektu aplikace Office, Visual Studio automaticky vygeneruje třídu pojmenovanou `Globals` v projektu. Můžete použít `Globals` pro přístup k několika položek jiného projektu za běhu v žádném kódu v projektu.
@@ -57,13 +57,13 @@ ms.locfileid: "57525194"
 
 - Objekt factory, který vám umožní vytvořit ovládací prvky pásu karet a hostovat položky v době běhu v projektech, které se zaměřují [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] nebo [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]. Můžete přístup k tomuto objektu pomocí `Globals.Factory` vlastnost. Tento objekt je instancí třídy, která implementuje jednu následujících rozhraní:
 
-  -   <xref:Microsoft.Office.Tools.Factory>
+  - <xref:Microsoft.Office.Tools.Factory>
 
-  -   <xref:Microsoft.Office.Tools.Excel.Factory>
+  - <xref:Microsoft.Office.Tools.Excel.Factory>
 
-  -   <xref:Microsoft.Office.Tools.Outlook.Factory>
+  - <xref:Microsoft.Office.Tools.Outlook.Factory>
 
-  -   <xref:Microsoft.Office.Tools.Word.Factory>
+  - <xref:Microsoft.Office.Tools.Word.Factory>
 
   Například můžete použít `Globals.Sheet1` vlastnost vložit text do <xref:Microsoft.Office.Tools.Excel.NamedRange> ovládání na `Sheet1` když uživatel klikne na tlačítko v podokně akcí v projektu úrovni dokumentu pro Excel.
 

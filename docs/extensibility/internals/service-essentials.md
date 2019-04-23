@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ff3fc897c0b413d6882584671f9cebe1ef73d316
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 6e867c9e83bf353e57d75ee611fe1074efcc9cfe
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335308"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070378"
 ---
 # <a name="service-essentials"></a>Základy služeb
 Služba je kontrakt mezi dvěma rozšíření VSPackages. Jeden VSPackage poskytuje určitou sadu rozhraní pro jiné VSPackage využívat. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] je kolekce rozšíření VSPackages, která poskytuje služby do jiné balíků VSPackages.
@@ -68,15 +68,15 @@ Většina služeb Visual Studio můžete získat voláním statické <xref:Micro
 
 Naštěstí <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> ve většině případů funguje správně.
 
--   Pokud VSPackage poskytuje službu znáte jenom jiné VSPackage, VSPackage žádosti o služby je umístěn před VSPackage za předpokladu, že načtení služby.
+- Pokud VSPackage poskytuje službu znáte jenom jiné VSPackage, VSPackage žádosti o služby je umístěn před VSPackage za předpokladu, že načtení služby.
 
--   Pokud VSPackage vytvoří panel nástrojů, sady VSPackage je umístěn před vytvořením okna nástrojů.
+- Pokud VSPackage vytvoří panel nástrojů, sady VSPackage je umístěn před vytvořením okna nástrojů.
 
--   Pokud kontejneru ovládacího prvku je hostitelem nástroje okna vytvořeného rozhraním VSPackage, sady VSPackage je umístěn před vytvořením kontejneru ovládacího prvku.
+- Pokud kontejneru ovládacího prvku je hostitelem nástroje okna vytvořeného rozhraním VSPackage, sady VSPackage je umístěn před vytvořením kontejneru ovládacího prvku.
 
 ### <a name="to-get-a-service-from-within-a-tool-window-or-control-container"></a>Chcete-li získat službu z v rámci nástroje okna nebo ovládací prvek kontejneru
 
--   Vložte tento kód v konstruktoru, okno nástroje nebo kontejneru ovládacího prvku:
+- Vložte tento kód v konstruktoru, okno nástroje nebo kontejneru ovládacího prvku:
 
     ```csharp
     IVsActivityLog log = Package.GetGlobalService(typeof(SVsActivityLog)) as IVsActivityLog;

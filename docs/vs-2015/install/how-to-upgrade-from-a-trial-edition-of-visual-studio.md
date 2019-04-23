@@ -9,12 +9,12 @@ caps.latest.revision: 28
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 6740755567c24ceb9b70d0e63e159e5d74b7955b
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: c4d1e6436d8f0fdeb80ad0e0c8a2631ba338d50c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54785954"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069897"
 ---
 # <a name="how-to-upgrade-from-a-trial-edition-of-visual-studio"></a>Postupy: Upgrade ze zkušební edice sady Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,13 +32,13 @@ Můžete si vyzkoušet předběžnou verzi sady Visual Studio za 14 dní bez reg
 
 ### <a name="to-upgrade-from-a-trial-edition-of-visual-studio-professional-or-enterprise"></a>Upgrade ze zkušební edice sady Visual Studio Professional nebo Enterprise
 
-1.  Spusťte sadu Visual Studio **spustit jako správce** režimu.
+1. Spusťte sadu Visual Studio **spustit jako správce** režimu.
 
-2.  V panelu nabídky zvolte **pomáhají**, **registrovat produkt**.
+2. V panelu nabídky zvolte **pomáhají**, **registrovat produkt**.
 
-3.  Zvolte **změnit licenci na produkt** odkaz.
+3. Zvolte **změnit licenci na produkt** odkaz.
 
-4.  Zadejte platný kód product key a klikněte na tlačítko **použít** tlačítko.
+4. Zadejte platný kód product key a klikněte na tlačítko **použít** tlačítko.
 
     > [!NOTE]
     >  K registraci a odemknutí všech edic sady Visual Studio je vyžadováno připojení k internetu. Po registraci sady Visual Studio je však připojení k internetu volitelné.

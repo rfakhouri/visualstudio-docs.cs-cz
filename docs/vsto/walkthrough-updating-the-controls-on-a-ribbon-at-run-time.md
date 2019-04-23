@@ -1,5 +1,5 @@
 ---
-title: 'Průvodce: Aktualizace ovládacích prvků na pásu karet za běhu'
+title: 'Návod: Aktualizace ovládacích prvků na pásu karet za běhu'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,14 +17,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4bad52a02cb87f611293283deb3743c6e148e688
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: e293a0136e6ae2d8b6a6747201e484fdea43f91e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54875911"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067232"
 ---
-# <a name="walkthrough-update-the-controls-on-a-ribbon-at-runtime"></a>Průvodce: Aktualizace ovládacích prvků na pásu karet za běhu
+# <a name="walkthrough-update-the-controls-on-a-ribbon-at-runtime"></a>Návod: Aktualizace ovládacích prvků na pásu karet za běhu
 
 Tento návod ukazuje, jak použít model objektu pásu karet po načtení pásu do aplikace sady Office aktualizace ovládacích prvků na pásu karet.
 
@@ -34,13 +34,13 @@ V příkladu si vyžádá data z ukázkové databáze Northwind k naplnění pol
 
 Tento návod znázorňuje následující úlohy:
 
--   Vytvoření nového projektu doplňku VSTO v Outlooku.
+- Vytvoření nového projektu doplňku VSTO v Outlooku.
 
--   Navrhněte vlastní skupiny pásu karet.
+- Navrhněte vlastní skupiny pásu karet.
 
--   Přidáte vlastní skupinu k předdefinované kartě.
+- Přidáte vlastní skupinu k předdefinované kartě.
 
--   Aktualizujte ovládací prvky na pásu karet za běhu.
+- Aktualizujte ovládací prvky na pásu karet za běhu.
 
 > [!NOTE]
 > Váš počítač může v následujících pokynech zobrazovat odlišné názvy nebo umístění některých prvků uživatelského rozhraní sady Visual Studio. Tyto prvky jsou určeny edicí sady Visual Studio a použitým nastavením. Další informace najdete v tématu [přizpůsobení integrovaného vývojového prostředí sady Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
@@ -49,9 +49,9 @@ Tento návod znázorňuje následující úlohy:
 
 K dokončení tohoto návodu budete potřebovat následující komponenty:
 
--   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
+- [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
--   Microsoft Outlook
+- Microsoft Outlook
 
 ## <a name="create-a-new-outlook-vsto-add-in-project"></a>Vytvoření nového projektu doplňku VSTO pro Outlook
 
@@ -59,11 +59,11 @@ Nejprve vytvořte projekt doplňku VSTO v Outlooku.
 
 ### <a name="to-create-a-new-outlook-vsto-add-in-project"></a>Chcete-li vytvořit nový projekt doplňku VSTO pro Outlook
 
-1.  V [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], vytvoření projektu doplňku VSTO pro Outlook s názvem **Ribbon_Update_At_Runtime**.
+1. V [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], vytvoření projektu doplňku VSTO pro Outlook s názvem **Ribbon_Update_At_Runtime**.
 
-2.  V **nový projekt** dialogu **vytvořit adresář pro řešení**.
+2. V **nový projekt** dialogu **vytvořit adresář pro řešení**.
 
-3.  Uložte projekt do výchozí adresář projektu.
+3. Uložte projekt do výchozí adresář projektu.
 
      Další informace najdete v tématu [jak: Vytvářet projekty pro Office v sadě Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
@@ -73,25 +73,25 @@ Na pásu karet v tomto příkladu se zobrazí, když uživatel vytvoří novou e
 
 ### <a name="to-design-a-custom-group"></a>Chcete-li navrhnout vlastní skupiny
 
-1.  Na **projektu** nabídky, klikněte na tlačítko **přidat novou položku**.
+1. Na **projektu** nabídky, klikněte na tlačítko **přidat novou položku**.
 
-2.  V **přidat novou položku** dialogu **pás karet (vizuální návrhář)**.
+2. V **přidat novou položku** dialogu **pás karet (vizuální návrhář)**.
 
-3.  Změňte název nového pásu karet na **CustomerRibbon**a potom klikněte na tlačítko **přidat**.
+3. Změňte název nového pásu karet na **CustomerRibbon**a potom klikněte na tlačítko **přidat**.
 
      *CustomerRibbon.cs* nebo *CustomerRibbon.vb* soubor se otevře v Návrháři pásu karet a zobrazí výchozí kartu a skupinu.
 
-4.  Klikněte na Návrhář pásu karet vyberte.
+4. Klikněte na Návrhář pásu karet vyberte.
 
-5.  V **vlastnosti** okna, klikněte na šipku rozevíracího seznamu vedle položky **RibbonType** vlastnosti a pak klikněte na tlačítko **Microsoft.Outlook.Mail.Compose**.
+5. V **vlastnosti** okna, klikněte na šipku rozevíracího seznamu vedle položky **RibbonType** vlastnosti a pak klikněte na tlačítko **Microsoft.Outlook.Mail.Compose**.
 
      To umožňuje pásu karet a zobrazí, když uživatel vytvoří novou e-mailovou zprávu v Outlooku.
 
-6.  V Návrháři pásu karet klikněte na tlačítko **Group1** ji vyberte.
+6. V Návrháři pásu karet klikněte na tlačítko **Group1** ji vyberte.
 
-7.  V **vlastnosti** okno, nastavte **popisek** k **nákupech zákazníků**.
+7. V **vlastnosti** okno, nastavte **popisek** k **nákupech zákazníků**.
 
-8.  Z **ovládací prvky Ribbon Office** karty **nástrojů**, přetáhněte **– pole se seznamem** na **nákupech zákazníků** skupiny.
+8. Z **ovládací prvky Ribbon Office** karty **nástrojů**, přetáhněte **– pole se seznamem** na **nákupech zákazníků** skupiny.
 
 9. Klikněte na tlačítko **ComboBox1** ji vyberte.
 
@@ -111,17 +111,17 @@ Vestavěná karta je kartu, která je již na pásu karet Outlooku Průzkumníka
 
 ### <a name="to-add-the-custom-group-to-a-built-in-tab"></a>Chcete-li přidat vlastní skupiny k předdefinované kartě
 
-1.  Klikněte na tlačítko **TabAddins (vestavěné)** kartu a vyberte ji.
+1. Klikněte na tlačítko **TabAddins (vestavěné)** kartu a vyberte ji.
 
-2.  V **vlastnosti** okna, rozbalte **ControlId** vlastnost a poté nastavte **OfficeId** k **TabNewMailMessage**.
+2. V **vlastnosti** okna, rozbalte **ControlId** vlastnost a poté nastavte **OfficeId** k **TabNewMailMessage**.
 
      Tím se přidá **nákupech zákazníků** do **zprávy** kartu pásu karet, který se zobrazí nové e-mailovou zprávu.
 
-3.  Klikněte na tlačítko **nákupech zákazníků** skupina a vyberte ji.
+3. Klikněte na tlačítko **nákupech zákazníků** skupina a vyberte ji.
 
-4.  V **vlastnosti** okna, rozbalte **pozice** vlastnosti, klikněte na šipku rozevíracího seznamu vedle položky **PositionType** vlastnosti a pak klikněte na tlačítko  **BeforeOfficeId**.
+4. V **vlastnosti** okna, rozbalte **pozice** vlastnosti, klikněte na šipku rozevíracího seznamu vedle položky **PositionType** vlastnosti a pak klikněte na tlačítko  **BeforeOfficeId**.
 
-5.  Nastavte **OfficeId** vlastnost **GroupClipboard**.
+5. Nastavte **OfficeId** vlastnost **GroupClipboard**.
 
      To umístí **nákupech zákazníků** skupiny před **schránky** skupinu **zprávy** kartu.
 
@@ -131,31 +131,31 @@ Použití **zdroje dat** okno pro přidání typové datové sady do projektu.
 
 ### <a name="to-create-the-data-source"></a>Vytvoření zdroje dat
 
-1.  Na **Data** nabídky, klikněte na tlačítko **přidat nový zdroj dat**.
+1. Na **Data** nabídky, klikněte na tlačítko **přidat nový zdroj dat**.
 
      Tím se spustí **Průvodce konfigurací zdroje dat**.
 
-2.  Vyberte **databáze**a potom klikněte na tlačítko **Další**.
+2. Vyberte **databáze**a potom klikněte na tlačítko **Další**.
 
-3.  Vyberte **datovou sadu**a potom klikněte na tlačítko **Další**.
+3. Vyberte **datovou sadu**a potom klikněte na tlačítko **Další**.
 
-4.  Vyberte datové připojení k Microsoft SQL Server Compact 4.0 ukázkové databáze Northwind, nebo přidejte nové připojení s použitím **nové připojení** tlačítko.
+4. Vyberte datové připojení k Microsoft SQL Server Compact 4.0 ukázkové databáze Northwind, nebo přidejte nové připojení s použitím **nové připojení** tlačítko.
 
-5.  Po připojení se vyberete nebo vytvoříte, klikněte na tlačítko **Další**.
+5. Po připojení se vyberete nebo vytvoříte, klikněte na tlačítko **Další**.
 
-6.  Klikněte na tlačítko **Další** uložit připojovací řetězec.
+6. Klikněte na tlačítko **Další** uložit připojovací řetězec.
 
-7.  Na **zvolte vaše databázové objekty** stránce, rozbalte **tabulky**.
+7. Na **zvolte vaše databázové objekty** stránce, rozbalte **tabulky**.
 
-8.  Zaškrtněte políčko vedle každého z následujících tabulek:
+8. Zaškrtněte políčko vedle každého z následujících tabulek:
 
-    1.  **Zákazníci**
+    1. **Zákazníci**
 
-    2.  **Podrobnosti objednávky**
+    2. **Podrobnosti objednávky**
 
-    3.  **Objednávky**
+    3. **Objednávky**
 
-    4.  **Produkty**
+    4. **Produkty**
 
 9. Klikněte na tlačítko **Dokončit**.
 
@@ -163,11 +163,11 @@ Použití **zdroje dat** okno pro přidání typové datové sady do projektu.
 
 Pomocí modelu objektů pásu karet provádět následující úlohy:
 
--   Přidání názvů zákazníka k **zákazníkům** – pole se seznamem.
+- Přidání názvů zákazníka k **zákazníkům** – pole se seznamem.
 
--   Přidání ovládacích prvků do nabídky a tlačítko **zakoupených produktů** nabídky, která představují prodejních objednávek a produkty prodávané.
+- Přidání ovládacích prvků do nabídky a tlačítko **zakoupených produktů** nabídky, která představují prodejních objednávek a produkty prodávané.
 
--   Naplnění Komu, předmět a text pole s použitím dat z nového e-mailové zprávy **zákazníkům** – pole se seznamem a **zakoupených produktů** nabídky.
+- Naplnění Komu, předmět a text pole s použitím dat z nového e-mailové zprávy **zákazníkům** – pole se seznamem a **zakoupených produktů** nabídky.
 
 ### <a name="to-update-controls-in-the-custom-group-by-using-the-ribbon-object-model"></a>Aktualizace ovládacích prvků ve vlastní skupině pomocí objektového modelu pásu karet
 
@@ -257,31 +257,31 @@ K vytvoření zprávy e-maily s reakcí zákazníků, vyberte zákazníka a pak 
 
 ### <a name="to-test-the-controls-in-the-custom-group"></a>Pro testování ovládacích prvků do vlastní skupiny
 
-1.  Stisknutím klávesy **F5** ke spuštění projektu.
+1. Stisknutím klávesy **F5** ke spuštění projektu.
 
      Spuštění aplikace Outlook.
 
-2.  V aplikaci Outlook na **souboru** nabídky, přejděte na **nový**a potom klikněte na tlačítko **e-mailovou zprávu**.
+2. V aplikaci Outlook na **souboru** nabídky, přejděte na **nový**a potom klikněte na tlačítko **e-mailovou zprávu**.
 
      Dojde k následujícím akcím:
 
-    -   Zobrazí se nové okno inspektoru zprávy e-mailu.
+    - Zobrazí se nové okno inspektoru zprávy e-mailu.
 
-    -   Na **zpráva** kartu na pásu karet **nákupech zákazníků** skupiny se zobrazí před **schránky** skupiny.
+    - Na **zpráva** kartu na pásu karet **nákupech zákazníků** skupiny se zobrazí před **schránky** skupiny.
 
-    -   **Zákazníkům** – pole se seznamem ve skupině se aktualizuje s názvy zákazníků v databázi Northwind.
+    - **Zákazníkům** – pole se seznamem ve skupině se aktualizuje s názvy zákazníků v databázi Northwind.
 
-3.  Na **zpráva** kartu na pásu karet v **nákupech zákazníků** skupiny, vyberte zákazníka z **zákazníkům** – pole se seznamem.
+3. Na **zpráva** kartu na pásu karet v **nákupech zákazníků** skupiny, vyberte zákazníka z **zákazníkům** – pole se seznamem.
 
      Dojde k následujícím akcím:
 
-    -   **Zakoupených produktů** nabídky se aktualizuje a zobrazí jednotlivé prodejní objednávky pro vybraného zákazníka.
+    - **Zakoupených produktů** nabídky se aktualizuje a zobrazí jednotlivé prodejní objednávky pro vybraného zákazníka.
 
-    -   Každé podnabídky prodejní objednávky se aktualizuje a zobrazí produkty zakoupené v tomto pořadí.
+    - Každé podnabídky prodejní objednávky se aktualizuje a zobrazí produkty zakoupené v tomto pořadí.
 
-    -   Vybraného zákazníka e-mailová adresa se přidá do **k** zaplnění řádek e-mailovou zprávu a předmět a text e-mailovou zprávu s textem.
+    - Vybraného zákazníka e-mailová adresa se přidá do **k** zaplnění řádek e-mailovou zprávu a předmět a text e-mailovou zprávu s textem.
 
-4.  Klikněte na tlačítko **nákup produktů** nabídky, přejděte na příkaz všechny prodejní objednávky a klikněte na produkt z prodejní objednávku.
+4. Klikněte na tlačítko **nákup produktů** nabídky, přejděte na příkaz všechny prodejní objednávky a klikněte na produkt z prodejní objednávku.
 
      Název produktu je přidat k tělu e-mailové zprávě.
 
@@ -289,11 +289,11 @@ K vytvoření zprávy e-maily s reakcí zákazníků, vyberte zákazníka a pak 
 
 Další informace o tom, jak přizpůsobit uživatelské rozhraní sady Office naleznete v těchto tématech:
 
--   Přidejte uživatelské rozhraní založené na kontextu do jakéhokoli přizpůsobení úrovni dokumentu. Další informace najdete v tématu [přehled podokna akcí](../vsto/actions-pane-overview.md).
+- Přidejte uživatelské rozhraní založené na kontextu do jakéhokoli přizpůsobení úrovni dokumentu. Další informace najdete v tématu [přehled podokna akcí](../vsto/actions-pane-overview.md).
 
--   Rozšiřte standardní nebo vlastní formulář aplikace Microsoft Office Outlook. Další informace najdete v tématu [názorný postup: Návrh oblasti formuláře Outlooku](../vsto/walkthrough-designing-an-outlook-form-region.md).
+- Rozšiřte standardní nebo vlastní formulář aplikace Microsoft Office Outlook. Další informace najdete v tématu [názorný postup: Návrh oblasti formuláře Outlooku](../vsto/walkthrough-designing-an-outlook-form-region.md).
 
--   Přidání vlastního podokna úloh do aplikace Outlook. Další informace najdete v tématu [vlastní podokna úloh](../vsto/custom-task-panes.md).
+- Přidání vlastního podokna úloh do aplikace Outlook. Další informace najdete v tématu [vlastní podokna úloh](../vsto/custom-task-panes.md).
 
 ## <a name="see-also"></a>Viz také:
 

@@ -10,14 +10,14 @@ ms.assetid: a80ba9cd-4575-483c-b957-af7ed8dc7e20
 caps.latest.revision: 29
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9d86834b82dbc130c9e2e4b3cf712b4d23a27e5e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 43521b940d786902f4d502c93b5c0eb54922422f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54801180"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069910"
 ---
-# <a name="unit-test-basics"></a>Základní informace o testech jednotek
+# <a name="unit-test-basics"></a>Základní informace o testování částí
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Zkontrolujte, že je váš kód funguje podle očekávání tím vytváření a spouštění testování částí. Je volána testování, protože můžete rozdělit podle funkce programu do samostatných testovatelného chování, které můžete testovat jako jednotlivé *jednotky*. Visual Studio Test Explorer poskytuje flexibilní a efektivní způsob, jak spustit testování částí a zobrazit jejich výsledky v sadě Visual Studio. Visual Studio nainstaluje testování části Microsoft rozhraní pro spravovaný a nativní kód. Použití *jednotkových testů* vytvořit testy jednotek, je spustit a ohlásí výsledky těchto testů. Pokud provedete změny k testování, že váš kód stále pracuje správně testů jednotek spusťte znovu. Pokud používáte Visual Studio Enterprise, můžete spustit testy automaticky po každém sestavení.  
@@ -28,30 +28,30 @@ Zkontrolujte, že je váš kód funguje podle očekávání tím vytváření a 
   
  Průzkumník testů také můžete spustit třetích stran a open source rozhraní pro testování částí, které mají implementované rozhraní doplněk Průzkumníka testů. Můžete přidat řadu tyto architektury prostřednictvím Správce rozšíření sady Visual Studio a v galerii sady Visual Studio. Zobrazit [nainstalovat rozhraní pro testování jednotky třetí strany](../test/install-third-party-unit-test-frameworks.md)  
   
--   [Rychlé starty](#BKMK_Quick_starts)  
+- [Rychlé starty](#BKMK_Quick_starts)  
   
--   [Příklad MyBank řešení](#BKMK_The_MyBank_Solution_example)  
+- [Příklad MyBank řešení](#BKMK_The_MyBank_Solution_example)  
   
--   [Vytvoření projektů jednotkových testů a testovací metody](#BKMK_Creating_the_unit_test_projects)  
+- [Vytvoření projektů jednotkových testů a testovací metody](#BKMK_Creating_the_unit_test_projects)  
   
--   [Zápis testů](#BKMK_Writing_your_tests)  
+- [Zápis testů](#BKMK_Writing_your_tests)  
   
--   [Spustit testy v Průzkumníku testů](#BKMK_Running_tests_in_Test_Explorer)  
+- [Spustit testy v Průzkumníku testů](#BKMK_Running_tests_in_Test_Explorer)  
   
--   [Spustit a zobrazit testy](#BKMK_Running_and_viewing_tests_from_the_Test_Explorer_toolbar)  
+- [Spustit a zobrazit testy](#BKMK_Running_and_viewing_tests_from_the_Test_Explorer_toolbar)  
   
-##  <a name="BKMK_Unit_testing_overview"></a> Přehled testování jednotek  
+## <a name="BKMK_Unit_testing_overview"></a> Přehled testování jednotek  
   
-###  <a name="BKMK_Quick_starts"></a> Rychlé starty  
+### <a name="BKMK_Quick_starts"></a> Rychlé starty  
  Úvod do testování částí, která vás přesměruje přímo do psaní kódu naleznete v těchto tématech:  
   
--   [Návod: Vytváření a spouštění testů jednotek pro spravovaný kód](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)  
+- [Návod: Vytváření a spouštění testů jednotek pro spravovaný kód](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)  
   
--   [Rychlý Start: Vývoj řízený testy s použitím Průzkumníka testů](../test/quick-start-test-driven-development-with-test-explorer.md)  
+- [Rychlý Start: Vývoj řízený testy s použitím Průzkumníka testů](../test/quick-start-test-driven-development-with-test-explorer.md)  
   
--   [Testování částí nativního kódu pomocí Průzkumníka testů](http://msdn.microsoft.com/8a09d6d8-3613-49d8-9ffe-11375ac4736c)  
+- [Testování částí nativního kódu pomocí Průzkumníka testů](http://msdn.microsoft.com/8a09d6d8-3613-49d8-9ffe-11375ac4736c)  
   
-##  <a name="BKMK_The_MyBank_Solution_example"></a> Příklad MyBank řešení  
+## <a name="BKMK_The_MyBank_Solution_example"></a> Příklad MyBank řešení  
  V tomto tématu, používáme vývoj fiktivní aplikaci s názvem `MyBank` jako příklad. Není nutné skutečný kód a postupujte v tomto tématu vysvětlené v částech. Testovací metody jsou napsané v jazyce C# a zobrazí s použitím Microsoft Unit Testing Framework pro spravovaný kód, ale koncepty snadno přenést do jiných jazyků a architektur.  
   
  ![MyBank Solution](../test/media/ute-mybanksolution.png "UTE_MyBankSolution")  
@@ -92,7 +92,7 @@ public void Withdraw(double amount)
   
  Když teď máme nějaký kód, je čas pro testování.  
   
-##  <a name="BKMK_Creating_the_unit_test_projects"></a> Vytvoření projektů jednotkových testů a testovací metody  
+## <a name="BKMK_Creating_the_unit_test_projects"></a> Vytvoření projektů jednotkových testů a testovací metody  
  Je často rychlejší generování projektu testování částí a zástupných procedur testu jednotek z vašeho kódu. Nebo můžete vytvořit projekt testů jednotek a testů ručně v závislosti na vašich požadavcích.  
   
  **Generovat projekt testování částí a zástupné procedury pro testování částí**  
@@ -130,19 +130,19 @@ public void Withdraw(double amount)
   
     Chcete-li vytvořit odkaz na projekt kódu:  
   
-   1.  Vyberte projekt v Průzkumníku řešení.  
+   1. Vyberte projekt v Průzkumníku řešení.  
   
-   2.  Na **projektu** nabídce zvolte **přidat odkaz**.  
+   2. Na **projektu** nabídce zvolte **přidat odkaz**.  
   
-   3.  V dialogovém okně Správce odkazů otevřete **řešení** uzlu a zvolte **projekty**. Vyberte název projektu kódu a zavřete dialogové okno.  
+   3. V dialogovém okně Správce odkazů otevřete **řešení** uzlu a zvolte **projekty**. Vyberte název projektu kódu a zavřete dialogové okno.  
   
    Každý projekt jednotkového testu obsahuje třídy, které zrcadlí názvy tříd v projektu kódu. V našem příkladu `AccountsTests` projekt bude obsahovat následující třídy:  
   
--   `AccountInfoTests` Třída obsahující metody jednotkového testu pro `AccountInfo` třídy v `BankAccount` projektu  
+- `AccountInfoTests` Třída obsahující metody jednotkového testu pro `AccountInfo` třídy v `BankAccount` projektu  
   
--   `CheckingAccountTests` Třída obsahující metody jednotkového testu pro `CheckingAccount` třídy.  
+- `CheckingAccountTests` Třída obsahující metody jednotkového testu pro `CheckingAccount` třídy.  
   
-##  <a name="BKMK_Writing_your_tests"></a> Zápis testů  
+## <a name="BKMK_Writing_your_tests"></a> Zápis testů  
  Testy jednotek, který používáte a IntelliSense ve Visual Studio vás provede zápis kódu pro testování částí pro kód projektu. Spustit v Průzkumníku testů, většina architektur vyžaduje přidání specifických atributů k identifikaci metody jednotkového testu. Rozhraní také poskytují způsob – obvykle prostřednictvím Assert – příkazy nebo atributy metody – označuje, zda má testovací metoda předané nebo se nezdařilo. Ostatní atributy Identifikujte volitelné nastavení metody, které jsou při inicializaci třídy a před každou metodu testu a metody jejich vyřazování z provozu, které jsou spuštěny po jednotlivých zkušebních metod a zničen třídy.  
   
  Vzor AAA (Assert uspořádat, Act) je běžný způsob psaní testů jednotek pro metody v rámci testu.  
@@ -188,9 +188,9 @@ public void Withdraw_AmountMoreThanBalance_Throws()
   
  Další informace o rozhraní testování částí Microsoft naleznete v následujících tématech:  
   
--   [Zápis testů částí pro rozhraní .NET Framework s infrastrukturou pro testování částí Microsoft Unit Test Framework pro spravovaný kód](../test/writing-unit-tests-for-the-dotnet-framework-with-the-microsoft-unit-test-framework-for-managed-code.md)  
+- [Zápis testů částí pro rozhraní .NET Framework s infrastrukturou pro testování částí Microsoft Unit Test Framework pro spravovaný kód](../test/writing-unit-tests-for-the-dotnet-framework-with-the-microsoft-unit-test-framework-for-managed-code.md)  
   
--   [Zápis testů jednotek pro C/C++ s infrastrukturou testování částí Microsoft Unit Testing Framework pro C++](../test/writing-unit-tests-for-c-cpp-with-the-microsoft-unit-testing-framework-for-cpp.md)  
+- [Zápis testů jednotek pro C/C++ s infrastrukturou testování částí Microsoft Unit Testing Framework pro C++](../test/writing-unit-tests-for-c-cpp-with-the-microsoft-unit-testing-framework-for-cpp.md)  
   
 ## <a name="set-timeouts-for-unit-tests"></a>Nastavit vypršení časového limitu pro testování částí  
  Nastavení časového limitu na jednotlivé testovací metody:  
@@ -217,7 +217,7 @@ public void My_Test ()
 }  
 ```  
   
-##  <a name="BKMK_Running_tests_in_Test_Explorer"></a> Spustit testy v Průzkumníku testů  
+## <a name="BKMK_Running_tests_in_Test_Explorer"></a> Spustit testy v Průzkumníku testů  
  Když sestavíte testovací projekt, testy se zobrazí v Průzkumníku testů. Pokud se nezobrazí Průzkumník testů, zvolte **testovací** v nabídce sady Visual Studio, zvolte **Windows**a klikněte na tlačítko **Průzkumník testů**.  
   
  ![Průzkumník testu jednotek](../ide/media/ute-failedpassednotrunsummary.png "UTE_FailedPassedNotRunSummary")  
@@ -226,7 +226,7 @@ public void My_Test ()
   
  Můžete také filtrovat testy ve všech zobrazeních odpovídající text do vyhledávacího pole na globální úrovni nebo výběrem jedné z předdefinovaných filtrů. Kdykoli můžete spustit libovolných vybraných testů. Výsledky testovacího běhu se okamžitě zřejmý v panel úspěšný/selhání v horní části okna Průzkumníka. Podrobnosti výsledku testu metody se zobrazí, když vyberete testu.  
   
-###  <a name="BKMK_Running_and_viewing_tests_from_the_Test_Explorer_toolbar"></a> Spustit a zobrazit testy  
+### <a name="BKMK_Running_and_viewing_tests_from_the_Test_Explorer_toolbar"></a> Spustit a zobrazit testy  
  Panel nástrojů Průzkumník testů umožňuje zjišťovat, uspořádání a spuštění testů, které vás zajímají.  
   
  ![Spuštění testů z panelu nástrojů Průzkumník testování](../test/media/ute-toolbar.png "UTE_ToolBar")  
@@ -235,7 +235,7 @@ public void My_Test ()
   
  Je-li jednotlivé testy nemají žádné závislosti, které brání spuštění v libovolném pořadí, zapněte paralelní provádění testů s ![USTIT&#95;parallelicon&#45;malé](../test/media/ute-parallelicon-small.png "UTE_parallelicon malé") přepínací tlačítko na panelu nástrojů. To může výrazně snížit čas potřebný ke spuštění všech testů.  
   
-###  <a name="BKMK_Running_tests_after_every_build"></a> Spustit testy po každém sestavení  
+### <a name="BKMK_Running_tests_after_every_build"></a> Spustit testy po každém sestavení  
   
 > [!WARNING]
 >  Spuštění testů jednotky po každém sestavení je podporováno pouze v sadě Visual Studio Enterprise.  
@@ -244,7 +244,7 @@ public void My_Test ()
 |-|-|  
 |![Spustit po sestavení](../test/media/ute-runafterbuild-btn.png "UTE_RunAfterBuild_btn")|Chcete-li spouštět testy jednotek po každém místním sestavení, zvolte **testovací** ve standardní nabídce zvolte **spustit testy po sestavení** na panelu nástrojů Průzkumník testů.|  
   
-###  <a name="BKMK_Filtering_and_grouping_the_test_list"></a> Filtr a seskupení seznamu testů  
+### <a name="BKMK_Filtering_and_grouping_the_test_list"></a> Filtr a seskupení seznamu testů  
  Pokud máte velký počet testů, můžete zadat v Průzkumníku testů vyhledávacího pole filtrovat seznam podle zadaného řetězce. Můžete omezit další výběrem ze seznamu filtrů filtr události.  
   
  ![Hledat filtr kategorií](../test/media/ute-searchfilter.png "UTE_SearchFilter")  

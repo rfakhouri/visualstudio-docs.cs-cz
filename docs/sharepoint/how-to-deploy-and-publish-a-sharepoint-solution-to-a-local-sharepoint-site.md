@@ -13,31 +13,31 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6911c237f5994e809900fcf3bd49e3b9cf83e31c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 9537b3eef0d5da445d9456b414c89bbaac08ae87
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56635225"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067752"
 ---
 # <a name="how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site"></a>Postupy: Nasazení a publikování řešení služby SharePoint na lokální stránce SharePoint
   Můžete nasadit nebo publikování řešení služby SharePoint na místní server SharePoint ve svém vývojovém počítači. Tyto kopie procesu nasazení *.wsp* souboru na SharePoint serveru nainstaluje řešení a potom aktivuje funkce. Publikování zpracovat pouze kopie *.wsp* soubor na server SharePoint a nainstaluje ho. Musíte ručně aktivovat ji a povolte v Sharepointu.
 
 ## <a name="to-deploy-a-sharepoint-solution-to-the-local-sharepoint-server"></a>K nasazení řešení služby SharePoint k místnímu serveru SharePoint
 
-1.  V **Průzkumníka řešení**, vyberte projekt, který chcete nasadit.
+1. V **Průzkumníka řešení**, vyberte projekt, který chcete nasadit.
 
-2.  V panelu nabídky zvolte **sestavení**, **nasadit řešení**.
+2. V panelu nabídky zvolte **sestavení**, **nasadit řešení**.
 
      *.Wsp* soubor je vytvořen a nainstalován na místním serveru SharePoint. Kromě toho jsou aktivované funkce.
 
 ## <a name="to-publish-a-sharepoint-solution-to-a-local-sharepoint-server"></a>Publikování řešení služby SharePoint na místní server služby SharePoint
 
-1.  V **Průzkumníka řešení**, otevřete místní nabídku pro projekt služby SharePoint, kterou chcete publikovat a pak zvolte **publikovat**.
+1. V **Průzkumníka řešení**, otevřete místní nabídku pro projekt služby SharePoint, kterou chcete publikovat a pak zvolte **publikovat**.
 
-2.  V **publikovat** dialogového okna zvolte **publikování do souborového systému** přepínač.
+2. V **publikovat** dialogového okna zvolte **publikování do souborového systému** přepínač.
 
-3.  V **cílové umístění** textové pole, zadejte místní cestu a klikněte na tlačítko **publikovat** tlačítko.
+3. V **cílové umístění** textové pole, zadejte místní cestu a klikněte na tlačítko **publikovat** tlačítko.
 
      V sadě Visual Studio se zobrazí průběh publikování **výstup** okna. Po dokončení procesu, řešení (*.wsp*) je soubor nainstalovat na místním serveru SharePoint. Nicméně je nutné stále ho aktivovat pro použití v Sharepointu. Pokud soubor řešení již existuje, dojde k chybě a zeptá, jestli chcete přepsat existující soubor. Informace o upgradu balíčku najdete v části o upgradu vzdálené balíčky v [jak: Nasazení, publikování a upgradování řešení služby SharePoint na vzdáleném serveru](../sharepoint/how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server.md).
 

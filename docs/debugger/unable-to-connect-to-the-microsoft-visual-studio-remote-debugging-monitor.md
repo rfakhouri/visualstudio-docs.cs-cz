@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c58e6531847d7694d9bde0f4520a3e21de6ce23f
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: e5c5f6d73f3606813fd9a1954cdc10bb562baf34
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59665620"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070261"
 ---
 # <a name="unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor"></a>Nepodařilo se připojit ke sledování Microsoft Visual Studio Remote Debugging Monitor.
 Tato zpráva může dojít, protože sledování vzdáleného ladění není správně nastavena na vzdáleném počítači nebo vzdálený počítač není dostupný kvůli potížím se sítí nebo přítomnost brány firewall.
@@ -130,16 +130,16 @@ Vzdálený ladicí program, ve výchozím nastavení, přijímal pouze připojen
 
 Tento problém můžete vyřešit jedním z následujících způsobů:
 
--   Přidejte uživatele sady Visual Studio na oprávnění vzdáleného ladicího programu (v okně vzdáleného ladícího programu zvolte **nástroje > oprávnění**).
+- Přidejte uživatele sady Visual Studio na oprávnění vzdáleného ladicího programu (v okně vzdáleného ladícího programu zvolte **nástroje > oprávnění**).
 
--   Na vzdáleném počítači restartujte vzdálený ladicí program v rámci stejného uživatelského účtu a heslo, které používáte na počítači aplikace Visual Studio.
+- Na vzdáleném počítači restartujte vzdálený ladicí program v rámci stejného uživatelského účtu a heslo, které používáte na počítači aplikace Visual Studio.
 
     > [!NOTE]
     > Pokud používáte vzdálený ladicí program na vzdáleném serveru, klikněte pravým tlačítkem na aplikaci vzdálený ladicí program a zvolte **spustit jako správce** (nebo můžete spustit vzdálený ladicí program jako službu). Pokud vy nespouštíte na vzdáleném serveru, stačí spusťte normálně.
 
--   Vzdálený ladicí program lze spustit z příkazového řádku pomocí **/ allow \<uživatelské jméno >** parametr: `msvsmon /allow <username@computer>`.
+- Vzdálený ladicí program lze spustit z příkazového řádku pomocí **/ allow \<uživatelské jméno >** parametr: `msvsmon /allow <username@computer>`.
 
--   Alternativně můžete povolit všem uživatelům provádět vzdálené ladění. V okně vzdáleného ladicího programu, pokračujte **nástroje > Možnosti** dialogového okna. Když vyberete **bez ověřování**, můžete zkontrolovat **dovolit ladění jakémukoliv uživateli**. Tato možnost však doporučujeme jenom v případě selhání další možnosti, nebo pokud jste v privátní síti.
+- Alternativně můžete povolit všem uživatelům provádět vzdálené ladění. V okně vzdáleného ladicího programu, pokračujte **nástroje > Možnosti** dialogového okna. Když vyberete **bez ověřování**, můžete zkontrolovat **dovolit ladění jakémukoliv uživateli**. Tato možnost však doporučujeme jenom v případě selhání další možnosti, nebo pokud jste v privátní síti.
 
 ### <a name="firewall"></a> Brány firewall na vzdáleném počítači nebude povolovat příchozí připojení vzdáleného ladicího programu
  Brány firewall na počítači aplikace Visual Studio a brány firewall na vzdáleném počítači musí být nakonfigurovány umožňujícím komunikaci mezi Visual Studio a vzdálený ladicí program. Informace o portech používá vzdálený ladicí program najdete v tématu [přiřazení portů vzdáleného ladicího programu](../debugger/remote-debugger-port-assignments.md). Informace o konfiguraci brány Windows firewall najdete v tématu [konfigurace brány Windows Firewall pro vzdálené ladění](../debugger/configure-the-windows-firewall-for-remote-debugging.md).

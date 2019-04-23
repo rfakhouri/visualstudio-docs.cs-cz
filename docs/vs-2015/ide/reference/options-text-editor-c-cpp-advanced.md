@@ -15,12 +15,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a4f7da520c1659ebb75b777c031f171d1465493e
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: ca10710d87777cdaeead42015d46cc6d489c907e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59660772"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072633"
 ---
 # <a name="options-text-editor-cc-advanced"></a>Možnosti, textový editor, C/C++, upřesnit
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -73,19 +73,19 @@ Změnou tyto možnosti můžete změnit chování související se technologie I
   
  Nastavení s použitím součet některý z následujících možností:  
   
--   0 – žádný  
+- 0 – žádný  
   
--   1 - Obecné  
+- 1 - Obecné  
   
--   2 – nečinné  
+- 2 – nečinné  
   
--   4 – pracovní položky  
+- 4 – pracovní položky  
   
--   8 – technologie IntelliSense  
+- 8 – technologie IntelliSense  
   
--   16 - ACPerf  
+- 16 - ACPerf  
   
--   32 - ClassView  
+- 32 - ClassView  
   
 ## <a name="fallback-location"></a>Záložní umístění  
  Záložní umístění je, kde jsou umístěny podpůrné soubory SDF a technologii IntelliSense (například iPCH), když primární umístění (stejného adresáře jako řešení) se nepoužívá. Tato situace může nastat, uživatel nemá oprávnění k zápisu do adresáře řešení nebo řešení adresář je na pomalé zařízení. Výchozí umístění pro použití náhradní lokality je v adresáři temp uživatele.  

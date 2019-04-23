@@ -21,12 +21,12 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ad3dddec84ac8afc00681171bf59d13205229ca7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 533ad333923edf2e3f55ed5c4e85b42f422a573a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54754240"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072367"
 ---
 # <a name="how-to-specify-a-link-for-technical-support"></a>Postupy: Určení odkazu na technickou podporu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,15 +37,15 @@ Při publikování [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplika
   
 ### <a name="to-specify-a-support-url"></a>Chcete-li určit adresu URL podpory  
   
-1.  S projekt vybraný v **Průzkumníka řešení**na **projektu** nabídky, klikněte na tlačítko **vlastnosti**.  
+1. S projekt vybraný v **Průzkumníka řešení**na **projektu** nabídky, klikněte na tlačítko **vlastnosti**.  
   
-2.  Klikněte na tlačítko **publikovat** kartu.  
+2. Klikněte na tlačítko **publikovat** kartu.  
   
-3.  Klikněte na tlačítko **možnosti** tlačítko Otevřít **možnosti publikování** dialogové okno.  
+3. Klikněte na tlačítko **možnosti** tlačítko Otevřít **možnosti publikování** dialogové okno.  
   
-4.  Klikněte na tlačítko **popis**.  
+4. Klikněte na tlačítko **popis**.  
   
-5.  V **adresu URL podpory** pole, zadejte plně kvalifikovanou cestu k webové stránky, webové stránky nebo UNC sdílené složky.  
+5. V **adresu URL podpory** pole, zadejte plně kvalifikovanou cestu k webové stránky, webové stránky nebo UNC sdílené složky.  
   
 ## <a name="see-also"></a>Viz také  
  [Publikování aplikací ClickOnce](../deployment/publishing-clickonce-applications.md)   

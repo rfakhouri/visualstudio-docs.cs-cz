@@ -1,5 +1,5 @@
 ---
-title: 'Průvodce: Vytváření DataTable v návrháři datových sad'
+title: 'Návod: Vytváření DataTable v návrháři datových sad'
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +12,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 7a01a249df088d2a89e64f1c04c69e80d69b111c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1126117cb1fc26c4f61bfb0f6ed0e19e86ce9323
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55926746"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072666"
 ---
-# <a name="walkthrough-create-a-datatable-in-the-dataset-designer"></a>Průvodce: Vytvoření datové tabulky v návrháři datových sad
+# <a name="walkthrough-create-a-datatable-in-the-dataset-designer"></a>Návod: Vytvoření datové tabulky v návrháři datových sad
 
 Tento návod popisuje, jak vytvořit <xref:System.Data.DataTable> (bez objektu TableAdapter) pomocí **Návrhář Dataset**. Informace o vytváření tabulek dat, které obsahují objekty TableAdapter najdete v tématu [vytvoření a konfigurace objektů TableAdapter](../data-tools/create-and-configure-tableadapters.md).
 
@@ -37,33 +37,33 @@ Tento návod popisuje, jak vytvořit <xref:System.Data.DataTable> (bez objektu T
 
 ## <a name="add-a-new-dataset-to-the-application"></a>Přidat novou datovou sadu do aplikace
 
-1.  Na **projektu** nabídce vyberte možnost **přidat novou položku**.
+1. Na **projektu** nabídce vyberte možnost **přidat novou položku**.
 
      Zobrazí se dialogové okno **Přidat novou položku**.
 
-2.  V levém podokně vyberte **Data**a pak vyberte **datovou sadu** v prostředním podokně.
+2. V levém podokně vyberte **Data**a pak vyberte **datovou sadu** v prostředním podokně.
 
-3.  Zvolte **přidat**.
+3. Zvolte **přidat**.
 
      Visual Studio přidá soubor s názvem **DataSet1.xsd** do projektu a otevře jej v **Návrhář Dataset**.
 
 ## <a name="add-a-new-datatable-to-the-dataset"></a>Přidat nové datové tabulky do datové sady
 
-1.  Přetáhněte **DataTable** z **datovou sadu** kartě **nástrojů** na **Návrhář Dataset**.
+1. Přetáhněte **DataTable** z **datovou sadu** kartě **nástrojů** na **Návrhář Dataset**.
 
      Tabulku s názvem **DataTable1** se přidá do datové sady.
 
-2.  Klikněte na záhlaví **DataTable1** a přejmenujte jej `Music`.
+2. Klikněte na záhlaví **DataTable1** a přejmenujte jej `Music`.
 
 ## <a name="add-columns-to-the-datatable"></a>Přidání sloupců do DataTable
 
-1.  Klikněte pravým tlačítkem myši **Hudba** tabulky. Přejděte na **přidat**a potom klikněte na tlačítko **sloupec**.
+1. Klikněte pravým tlačítkem myši **Hudba** tabulky. Přejděte na **přidat**a potom klikněte na tlačítko **sloupec**.
 
-2.  Název sloupce `SongID`.
+2. Název sloupce `SongID`.
 
-3.  V **vlastnosti** okno, nastaveno <xref:System.Data.DataColumn.DataType%2A> vlastnost <xref:System.Int16?displayProperty=fullName>.
+3. V **vlastnosti** okno, nastaveno <xref:System.Data.DataColumn.DataType%2A> vlastnost <xref:System.Int16?displayProperty=fullName>.
 
-4.  Tento postup opakujte a přidejte následující sloupce:
+4. Tento postup opakujte a přidejte následující sloupce:
 
      `SongTitle`: <xref:System.String?displayProperty=fullName>
 

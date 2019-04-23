@@ -11,25 +11,25 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2e7b07d6433bbec7e0afb871931fdf3be314c86d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 29ee2b487299351b2d71a9b495257a939fb59f6c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56715385"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070144"
 ---
 # <a name="register-the-program"></a>Registrace programu
 Po ladicí stroj získal port, reprezentovaný [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) rozhraní, je dalším krokem při povolení ladění programu registrace s portem. Po registraci do programu je k dispozici pro ladění pomocí jedné z následujících způsobů:
 
--   Proces připojení, která umožňuje ladicího programu k získání úplné kontroly ladění běžící aplikace.
+- Proces připojení, která umožňuje ladicího programu k získání úplné kontroly ladění běžící aplikace.
 
--   Just-in-time (JIT) ladění, která umožňuje za fakt ladění programu, který se spustí bez ohledu na jejich ladicí program. Za běhu architektury zachytí chyba, ladicí program se upozornění před operačního systému nebo běhové prostředí uvolní paměť a prostředky neškodné programu.
+- Just-in-time (JIT) ladění, která umožňuje za fakt ladění programu, který se spustí bez ohledu na jejich ladicí program. Za běhu architektury zachytí chyba, ladicí program se upozornění před operačního systému nebo běhové prostředí uvolní paměť a prostředky neškodné programu.
 
 ## <a name="registering-procedure"></a>Postup registrace
 
 ### <a name="to-register-your-program"></a>Registrace aplikace
 
-1.  Volání [AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md) metoda implementovaná port.
+1. Volání [AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md) metoda implementovaná port.
 
      `IDebugPortNotify2::AddProgramNode` vyžaduje ukazatel [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) rozhraní.
 

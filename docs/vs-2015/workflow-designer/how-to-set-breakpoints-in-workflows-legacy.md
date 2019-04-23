@@ -14,12 +14,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1e3f7e4ffefcd6dc8509cf4c787af67c9a03305f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 92950247420f49c4a5295d25aec2c8697efb3534
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54803575"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069962"
 ---
 # <a name="how-to-set-breakpoints-in-workflows-legacy"></a>Postupy: Nastavení zarážek v pracovních postupech (starší verze)
 Toto téma popisuje, jak nastavit zarážky [!INCLUDE[wf](../includes/wf-md.md)] sestavení aplikace pomocí starší verze [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Použijte starší [!INCLUDE[wfd2](../includes/wfd2-md.md)] při vaší [!INCLUDE[wf2](../includes/wf2-md.md)] aplikace musí cílit na platformu [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] nebo [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
@@ -30,11 +30,11 @@ Toto téma popisuje, jak nastavit zarážky [!INCLUDE[wf](../includes/wf-md.md)]
   
  Pro aktivitu na povrchu návrhu pracovního postupu můžete nastavit zarážky následujícími způsoby:  
   
--   Klikněte pravým tlačítkem na aktivitu a vyberte **zarážku \ vložit zarážku**.  
+- Klikněte pravým tlačítkem na aktivitu a vyberte **zarážku \ vložit zarážku**.  
   
--   Vyberte aktivitu a stiskněte klávesu F9.  
+- Vyberte aktivitu a stiskněte klávesu F9.  
   
--   Vyberte **Nová zarážka** z **ladění** nabídky.  
+- Vyberte **Nová zarážka** z **ladění** nabídky.  
   
      Tuto možnost můžete použít také pro nastavení nového zarážky během ladění, když se ladicí program zastaví na zarážce.  
   
@@ -43,24 +43,24 @@ Toto téma popisuje, jak nastavit zarážky [!INCLUDE[wf](../includes/wf-md.md)]
   
 ### <a name="to-set-a-breakpoint-using-the-new-breakpoint-option-on-the-debug-menu"></a>Nastavení zarážky pomocí možnosti Nová zarážka v nabídce ladění  
   
-1.  Na **ladění** nabídce vyberte možnost **Nová zarážka**.  
+1. Na **ladění** nabídce vyberte možnost **Nová zarážka**.  
   
-2.  Klikněte na tlačítko **zarážku funkce**.  
+2. Klikněte na tlačítko **zarážku funkce**.  
   
      **Nová zarážka** zobrazí se dialogové okno.  
   
-3.  Zadejte název aktivity v **funkce** textového pole s použitím této syntaxe: `QualifiedActivityId[:[FullClassName][:InstanceId]]`.  
+3. Zadejte název aktivity v **funkce** textového pole s použitím této syntaxe: `QualifiedActivityId[:[FullClassName][:InstanceId]]`.  
   
     > [!NOTE]
     >  Volitelně můžete místo názvu aktivity v **funkce** textového pole, můžete nastavit zarážku tak, že zadáte absolutní cestu aktivity pracovního postupu. Předpokládejme například, že máte řešení pracovního postupu s názvem **WorkflowConsoleApplication1** a pracovní postup v řešení s názvem **Workflow1** , která používá aktivitu volá **Delay1**. Můžete použít název aktivity **Delay1** nebo zadejte cestu jako **Delay1:WorkflowConsoleApplication1.Workflow1** nebo **Delay1:WorkflowConsoleApplication1.Workflow1: { 6614886A-608E-412B-BF98-99FF1559DDDF}**.  
   
-4.  Vyberte **použití IntelliSense** zaškrtávací políčko, chcete-li ověřit název funkce.  
+4. Vyberte **použití IntelliSense** zaškrtávací políčko, chcete-li ověřit název funkce.  
   
      Pokud toto políčko není zaškrtnuto, se neprovádí žádné ověření názvu zarážku.  
   
-5.  Vyberte **pracovního postupu** z **jazyk** seznamu.  
+5. Vyberte **pracovního postupu** z **jazyk** seznamu.  
   
-6.  Klikněte na **OK**.  
+6. Klikněte na **OK**.  
   
 ## <a name="see-also"></a>Viz také  
  [Ladění starších verzí pracovních postupů](../workflow-designer/debugging-legacy-workflows.md)   

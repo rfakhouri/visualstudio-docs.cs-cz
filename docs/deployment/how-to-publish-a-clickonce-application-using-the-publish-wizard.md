@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 53a0d26e5eba40a0e089055ad2c3bf69404f4db7
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 5937a54c43cf972dcebb25c12cddf6b76b2cb4bc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55016548"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069860"
 ---
 # <a name="how-to-publish-a-clickonce-application-using-the-publish-wizard"></a>Postupy: Publikování aplikace ClickOnce pomocí Průvodce publikováním
 Pro aplikaci ClickOnce zpřístupnit uživatelům, je nutné ji publikovat na sdílené složce nebo cestu, FTP server nebo vyměnitelná média. Aplikaci můžete publikovat pomocí Průvodce publikováním; Další vlastnosti týkající se publikování jsou k dispozici na **publikovat** stránku **Návrháře projektu**. Další informace najdete v tématu [publikování ClickOnce applications](../deployment/publishing-clickonce-applications.md).
@@ -47,11 +47,11 @@ Před spuštěním Průvodce publikováním byste měli odpovídajícím způsob
 
 4. V **jak budou uživatelé aplikaci instalovat?** vyberte umístění, odkud budou uživatelé instalovat aplikaci:
 
-   -   Pokud budou uživatelé instalovat z webového serveru, klikněte na tlačítko **z webu** a zadejte adresu URL, která odpovídá cestu souboru zadanou v předchozím kroku. Klikněte na **Další**. (Tato možnost se obvykle používá při zadání adresy FTP jako umístění pro publikování. Přímé stažení ze serveru FTP není podporováno. Proto je nutné zadat adresu URL zde.)
+   - Pokud budou uživatelé instalovat z webového serveru, klikněte na tlačítko **z webu** a zadejte adresu URL, která odpovídá cestu souboru zadanou v předchozím kroku. Klikněte na **Další**. (Tato možnost se obvykle používá při zadání adresy FTP jako umístění pro publikování. Přímé stažení ze serveru FTP není podporováno. Proto je nutné zadat adresu URL zde.)
 
-   -   Pokud uživatelé nainstalují aplikace přímo ze sdílené složky, klikněte na tlačítko **ze sdílené složky UNC cestu nebo sdílená složka**a potom klikněte na tlačítko **Další**. (To je pro umístění formuláře publikování *c:\deploy\myapp* nebo  *\\\server\myapp*.)
+   - Pokud uživatelé nainstalují aplikace přímo ze sdílené složky, klikněte na tlačítko **ze sdílené složky UNC cestu nebo sdílená složka**a potom klikněte na tlačítko **Další**. (To je pro umístění formuláře publikování *c:\deploy\myapp* nebo  *\\\server\myapp*.)
 
-   -   Pokud budou uživatelé instalovat z vyměnitelných médií, klikněte na tlačítko **z disku CD-ROM nebo DVD-ROM**a potom klikněte na tlačítko **Další**.
+   - Pokud budou uživatelé instalovat z vyměnitelných médií, klikněte na tlačítko **z disku CD-ROM nebo DVD-ROM**a potom klikněte na tlačítko **Další**.
 
 5. Na **bude aplikace dostupná offline?** klikněte na příslušnou možnost:
 

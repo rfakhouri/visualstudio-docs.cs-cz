@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ddf2d14d8241f35ac0d83cb0a7f4dab0dd3f6f32
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: e54d2dc388ca308e037fb8ff918f521ee16e9092
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56618182"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067258"
 ---
 # <a name="how-to-customize-a-sharepoint-feature"></a>Postupy: Přizpůsobení funkce služby SharePoint
   Můžete vytvořit a přizpůsobit funkce služby SharePoint pomocí návrháře funkcí v sadě Visual Studio. Můžete například nastavit obor funkce a přidat další funkce jako závislosti. Ve výchozím nastavení je otevřený Návrhář funkce při přidání nové funkce v Průzkumníku řešení nebo Průzkumníku balíčků služby SharePoint.
@@ -31,22 +31,22 @@ ms.locfileid: "56618182"
 
 #### <a name="to-open-the-feature-designer"></a>Chcete-li otevřít návrháře funkcí
 
-1.  V **Průzkumníka řešení**, rozbalte **funkce**.
+1. V **Průzkumníka řešení**, rozbalte **funkce**.
 
-2.  Dvakrát klikněte *Feature1* položku nebo otevřete místní nabídku pro *Feature1* položku a pak zvolte **Návrhář zobrazení**.
+2. Dvakrát klikněte *Feature1* položku nebo otevřete místní nabídku pro *Feature1* položku a pak zvolte **Návrhář zobrazení**.
 
 ## <a name="view-the-packaged-manifest-file"></a>Zobrazení souboru manifestu balíčku
  Můžete použít Návrháře funkcí upravit a generovat souboru manifestu balíčku pro funkci (*feature.xml*). Kód XML pro tento soubor pak můžete zobrazit v sadě Visual Studio.
 
 #### <a name="to-view-the-packaged-manifest-file"></a>Chcete-li zobrazit souboru manifestu balíčku
 
-1.  V **návrháře funkcí**, zvolte **Manifest** kartu.
+1. V **návrháře funkcí**, zvolte **Manifest** kartu.
 
 #### <a name="to-view-the-packaged-manifest-file-by-using-solution-explorer"></a>Chcete-li zobrazit souboru manifestu balíčku pomocí Průzkumníka řešení
 
-1.  V **Průzkumníka řešení**, zvolte **zobrazit všechny soubory** ikonu.
+1. V **Průzkumníka řešení**, zvolte **zobrazit všechny soubory** ikonu.
 
-2.  Rozbalte funkce, rozbalte FeatureName, rozbalte FeatureName.feature a pak otevřete  *\<FeatureName >. Template.xml* souboru.
+2. Rozbalte funkce, rozbalte FeatureName, rozbalte FeatureName.feature a pak otevřete  *\<FeatureName >. Template.xml* souboru.
 
     > [!NOTE]
     >  Když otevřete soubor manifestu XML funkce šablony, soubory se automaticky ověří a upozornění, která se zobrazí v okně Seznam chyb můžete ignorovat.
@@ -56,13 +56,13 @@ ms.locfileid: "56618182"
 
 #### <a name="to-change-the-manifest-template-by-using-the-xml-editor"></a>Chcete-li změnit šablonu manifestu pomocí editoru XML
 
-1.  V **návrháře funkcí**, zvolte **Manifest** kartu, rozbalte **upravit možnosti** uzel a klikněte na tlačítko **otevřené v editoru XML** odkaz.
+1. V **návrháře funkcí**, zvolte **Manifest** kartu, rozbalte **upravit možnosti** uzel a klikněte na tlačítko **otevřené v editoru XML** odkaz.
 
      Změny do souboru XML jsou sloučeny do souboru manifestu balíčku.
 
 #### <a name="to-change-the-manifest-template-by-using-the-manifest-template-pane"></a>Chcete-li změnit šablonu manifestu pomocí podokna manifestu šablony
 
-1.  V **návrháře funkcí**, zvolte **Manifest** kartu, rozbalte **upravit možnosti** uzel a poté změňte kód XML, který se zobrazí v podokně šablony manifestu.
+1. V **návrháře funkcí**, zvolte **Manifest** kartu, rozbalte **upravit možnosti** uzel a poté změňte kód XML, který se zobrazí v podokně šablony manifestu.
 
      Změny v souboru XML se zobrazí v **ve verzi Preview ze zabalené Manifest** podokně.
 
@@ -74,9 +74,9 @@ ms.locfileid: "56618182"
 
 #### <a name="to-overwrite-packaged-manifest-file-by-disabling-the-designer"></a>K přepsání souboru manifestu balíčku zakázáním návrháře
 
-1.  V **návrháře funkcí**, zvolte **Manifest** kartu.
+1. V **návrháře funkcí**, zvolte **Manifest** kartu.
 
-2.  Rozbalte **upravit možnosti** uzlu, vyberte **přepsat vygenerovaný kód XML a upravit manifest v editoru XML** propojit a klikněte na tlačítko **Ano** tlačítko.
+2. Rozbalte **upravit možnosti** uzlu, vyberte **přepsat vygenerovaný kód XML a upravit manifest v editoru XML** propojit a klikněte na tlačítko **Ano** tlačítko.
 
      Šablona se aktualizuje aktuální soubor manifestu balíčku.
 
@@ -85,9 +85,9 @@ ms.locfileid: "56618182"
 
 #### <a name="to-re-enable-the-designer"></a>Chcete-li znovu povolí návrháře
 
-1.  V **návrháře funkcí**, zvolte **zahodit úpravy manifestu a znovu povolí návrháře** propojit a klikněte na tlačítko **Ano** tlačítko.
+1. V **návrháře funkcí**, zvolte **zahodit úpravy manifestu a znovu povolí návrháře** propojit a klikněte na tlačítko **Ano** tlačítko.
 
-2.  Šablona se aktualizuje s původním textem a budou ztraceny všechny změny do souboru XML.
+2. Šablona se aktualizuje s původním textem a budou ztraceny všechny změny do souboru XML.
 
 ## <a name="see-also"></a>Viz také:
 - [Zabalení a nasazení řešení služby SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

@@ -12,12 +12,12 @@ ms.assetid: 1043eb95-4f0d-4861-be21-2a25395b3b3c
 caps.latest.revision: 34
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 80d5a3dc3bfd3c0751596c3a7ba5969e4339f0f7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 303947c2299601e68ae830b13e6b6753c5e0dd79
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54759821"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067921"
 ---
 # <a name="using-visual-studio-interop-assemblies"></a>Používání definičních sestavení sady Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -89,17 +89,17 @@ else
 > [!NOTE]
 >  Následující metody se ví, předejte `IUnknown` objektu ukazatele jako typ <xref:System.IntPtr>. Jejich zpracování, jak je popsáno v této části.
 
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A>
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A>
 
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsOwnedProjectFactory.InitializeForOwner%2A>
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsOwnedProjectFactory.InitializeForOwner%2A>
 
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetNestedHierarchy%2A>
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetNestedHierarchy%2A>
 
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.CreateProject%2A>
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.CreateProject%2A>
 
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.QueryViewInterface%2A>
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.QueryViewInterface%2A>
 
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2.get_CfgType%2A>
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2.get_CfgType%2A>
 
 ## <a name="optional-out-parameters"></a>Volitelné [parametry out]
  Vyhledejte parametry, které jsou definovány jako [out] datový typ (`int`, `object`, a tak dále) v modelu COM rozhraní, ale které jsou definovány jako pole stejného datového typu v [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] prototyp metody sestavení vzájemné spolupráce.

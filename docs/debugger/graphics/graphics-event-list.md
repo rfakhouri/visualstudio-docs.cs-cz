@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e71239755cf7cf5d38f6e71568a0cd7be0f0d98
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 6af97740302d5e7053323b54ef11cbf1a279dd94
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649989"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066777"
 ---
 # <a name="graphics-event-list"></a>Seznam událostí grafiky
 Použijte seznam událostí grafiky v analyzátoru grafiky sady Visual Studio zkoumat události rozhraní Direct3D, které byly zaznamenány při vykreslování rámce hru nebo aplikaci.
@@ -49,7 +49,7 @@ Použijte seznam událostí grafiky v analyzátoru grafiky sady Visual Studio zk
 
 ##### <a name="to-change-the-event-list-view-mode"></a>Chcete-li změnit režim zobrazení seznamu událostí
 
--   V **seznam událostí grafiky** okno nad seznam událostí, vyhledejte **zobrazení** rozevírací seznam a vyberte buď **časová osa** zobrazení nebo **práce GPU** zobrazení.
+- V **seznam událostí grafiky** okno nad seznam událostí, vyhledejte **zobrazení** rozevírací seznam a vyberte buď **časová osa** zobrazení nebo **práce GPU** zobrazení.
 
 ### <a name="filtering-events"></a>Filtrování událostí
  Můžete použít vyhledávací pole – nachází v pravém horním rohu **seznam událostí grafiky** okno – k filtrování seznamu událostí zahrnout pouze události, jejichž názvy obsahují určitá klíčová slova. Můžete zadat jeden klíčová slova, jako jsou `Vertex`– jak je znázorněno na předchozím obrázku – nebo více klíčových slov s využitím středníkem oddělený seznam podobný `Draw;Primitive`– což odpovídá události, které mají buď `Draw` nebo `Primitive` v jejich názvy. Hledání jsou citlivé na prázdné znaky, například `VSSet` a `VS Set` jsou různé hledání – proto ujistěte se, že do formuláře hledání pečlivě.

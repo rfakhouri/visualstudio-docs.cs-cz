@@ -11,12 +11,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e934d071a8b26db29f2b9450939fc895efa1e5d4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 673b6bda444fd097b2ce4f4eee87c9f558e64c08
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54766323"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069611"
 ---
 # <a name="calculated-and-custom-storage-properties"></a>Vypočtené a vlastní vlastnosti úložiště
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,30 +37,30 @@ Všechny vlastnosti domény v jazyka specifického pro doménu (DSL) je možné 
   
 #### <a name="to-define-a-calculated-or-custom-storage-property"></a>Chcete-li definovat počítané nebo vlastní vlastnosti úložiště  
   
-1.  V DslDefinition.dsl, vyberte vlastnost domény v diagramu nebo v **Průzkumník DSL**.  
+1. V DslDefinition.dsl, vyberte vlastnost domény v diagramu nebo v **Průzkumník DSL**.  
   
-2.  V **vlastnosti** okno, nastavte **druh** pole **vypočtené** nebo **vlastní úložiště**.  
+2. V **vlastnosti** okno, nastavte **druh** pole **vypočtené** nebo **vlastní úložiště**.  
   
      Ujistěte se, že jste také nastavili své **typ** na co chcete.  
   
-3.  Klikněte na tlačítko **Transformovat všechny šablony** na panelu nástrojů **Průzkumníka řešení**.  
+3. Klikněte na tlačítko **Transformovat všechny šablony** na panelu nástrojů **Průzkumníka řešení**.  
   
-4.  Na **sestavení** nabídky, klikněte na tlačítko **sestavit řešení**.  
+4. Na **sestavení** nabídky, klikněte na tlačítko **sestavit řešení**.  
   
      Zobrazí se tato chybová zpráva: "*YourClass* neobsahuje definici pro Get*YourProperty*."  
   
-5.  Klikněte dvakrát na chybovou zprávu.  
+5. Klikněte dvakrát na chybovou zprávu.  
   
      Dsl\GeneratedCode\DomainClasses.cs nebo DomainRelationships.cs otevře. Nad volání metody zvýrazněný, komentář vás vyzve k zadání implementace u metody Get*YourProperty*().  
   
     > [!NOTE]
     >  Tento soubor je vygenerován z DslDefinition.dsl. Pokud jste tento soubor upravit, vaše změny budou ztraceny při příštím kliknutí na **Transformovat všechny šablony**. Místo toho přidejte požadovanou metodu v samostatném souboru.  
   
-6.  Vytvořte nebo otevřete soubor třídy do samostatné složky, například CustomCode\\*YourDomainClass*. cs.  
+6. Vytvořte nebo otevřete soubor třídy do samostatné složky, například CustomCode\\*YourDomainClass*. cs.  
   
      Ujistěte se, že obor názvů je stejný jako v generovaném kódu.  
   
-7.  Napište částečnou implementaci doménové třídy v souboru třídy. Ve třídě, zapsat definice pro chybějící `Get` metodu, která se podobá následujícímu příkladu:  
+7. Napište částečnou implementaci doménové třídy v souboru třídy. Ve třídě, zapsat definice pro chybějící `Get` metodu, která se podobá následujícímu příkladu:  
   
     ```  
     namespace Company.FamilyTree  
@@ -70,7 +70,7 @@ Všechny vlastnosti domény v jazyka specifického pro doménu (DSL) je možné 
     }  }  
     ```  
   
-8.  Pokud nastavíte **druh** k **vlastní úložiště**, budete taky muset zadat `Set` metoda. Příklad:  
+8. Pokud nastavíte **druh** k **vlastní úložiště**, budete taky muset zadat `Set` metoda. Příklad:  
   
     ```  
     void SetAgeValue(int value)  
@@ -85,7 +85,7 @@ Všechny vlastnosti domény v jazyka specifického pro doménu (DSL) je možné 
   
 10. Otestujte vlastnost. Ujistěte se, že zkusíte **zpět** a **znovu**.  
   
-##  <a name="setters"></a> Transakce a vlastní nastavení  
+## <a name="setters"></a> Transakce a vlastní nastavení  
  Metoda Set vlastnosti vlastní úložiště není nutné spustíte transakci, protože je obvykle volána metoda v aktivní transakci.  
   
  Ale metodu Set může také volat Pokud uživatel vyvolá zpět nebo znovu, nebo pokud transakce je vrácena zpět. Když <xref:Microsoft.VisualStudio.Modeling.Store.InUndoRedoOrRollback%2A> má hodnotu true, metodu Set by se měly chovat následovně:  

@@ -12,12 +12,12 @@ caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cbdffb9a1d2ec2631f87d47ae8146735296c0613
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b32966dd8a64c4688878ab2843893a1f2a9a3cff
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54756955"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069663"
 ---
 # <a name="how-to-install-the-stand-alone-profiler"></a>Postupy: Instalovat samostatný Profiler
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,28 +29,28 @@ ms.locfileid: "54756955"
   
 ### <a name="to-install-the-stand-alone-profiler"></a>Instalace samostatného profileru  
   
-1.  Vyhledejte instalační program samostatné profilu (vs_profiler.exe) na [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] instalačního média do adresáře, který obsahuje cestu \Standalone Profiler a spustíme ji.  
+1. Vyhledejte instalační program samostatné profilu (vs_profiler.exe) na [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] instalačního média do adresáře, který obsahuje cestu \Standalone Profiler a spustíme ji.  
   
-2.  Přidání cesty pro vsintr.exe a msdis150.dll do systémové cesty.  
+2. Přidání cesty pro vsintr.exe a msdis150.dll do systémové cesty.  
   
     > [!NOTE]
     >  Ve výchozí instalaci [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], vsinstr.exe a msdis150.dll se nacházejí v \Program Files\Visual nástroje Studio 10\Team nástroje.  
   
-3.  Na příkazovém řádku zadejte **VSInstr**.  
+3. Na příkazovém řádku zadejte **VSInstr**.  
   
     > [!NOTE]
     >  Pokud se zobrazí informace o využití pro vsinstr.exe, všechno je správně nastavené. Pokud se zobrazí chyba s oznámením vsinstr.exe nebo některá z jeho závislostí nebyla nalezena, ujistěte se, že máte vaší cesty nastavena správně, jak je popsáno v kroku 2.  
   
-4.  Nastavit server symbolů tak, že nastavíte váš **_NT_SYMBOL_PATH** proměnnou **symsrv\*symsrv.dll\*c:\localcache\*http://msdl.microsoft.com/download/symbols**  
+4. Nastavit server symbolů tak, že nastavíte váš **_NT_SYMBOL_PATH** proměnnou **symsrv\*symsrv.dll\*c:\localcache\*http://msdl.microsoft.com/download/symbols**  
   
-5.  Po nastavení serveru symbolů pomocí proměnných prostředí systému spuštění příkazového řádku profileru nástroje z nového příkazového řádku. To umožňuje nové proměnné prostředí se projeví. V okně příkazového řádku zadejte následující příkaz:  
+5. Po nastavení serveru symbolů pomocí proměnných prostředí systému spuštění příkazového řádku profileru nástroje z nového příkazového řádku. To umožňuje nové proměnné prostředí se projeví. V okně příkazového řádku zadejte následující příkaz:  
   
      **spuštění COMSPEC %**  
   
     > [!NOTE]
     >  Podrobné pokyny o tom, jak nastavit server balíčku symbolů najdete v tématu [jak: Informace o symbolech Windows odkaz](../profiling/how-to-reference-windows-symbol-information.md).  
   
-6.  Použití [VSPerfReport](../profiling/vsperfreport.md) nástroj pro serializaci symbolů do souboru dat profilování (.vsp). Použití **Summary VSPerfReport/packsymbols** přepínače. Pokud nemáte symboly vložen do vašeho datového souboru, ujistěte se, že máte nastavení proměnné prostředí _NT_SYMBOL_PATH.  
+6. Použití [VSPerfReport](../profiling/vsperfreport.md) nástroj pro serializaci symbolů do souboru dat profilování (.vsp). Použití **Summary VSPerfReport/packsymbols** přepínače. Pokud nemáte symboly vložen do vašeho datového souboru, ujistěte se, že máte nastavení proměnné prostředí _NT_SYMBOL_PATH.  
   
 ## <a name="see-also"></a>Viz také  
  [Profilace z příkazového řádku](../profiling/using-the-profiling-tools-from-the-command-line.md)   

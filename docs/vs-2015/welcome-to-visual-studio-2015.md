@@ -13,12 +13,12 @@ ms.assetid: ba237712-f8c4-4d13-854b-ab4a16afa309
 caps.latest.revision: 128
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9f175e8870795374ab35058ef163f4752115d5be
-ms.sourcegitcommit: b7f25ae08e45fcaa84a84276b588cf6799cc7620
+ms.openlocfilehash: 05fd28e6b47d74c28edc491458b73b487d282a45
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57567244"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067726"
 ---
 # <a name="welcome-to-visual-studio-2015"></a>Vítá vás Visual Studio 2015
 [!INCLUDE[vs2017banner](includes/vs2017banner.md)]
@@ -54,24 +54,24 @@ Vítá vás Visual Studio! Máme všechno, co potřebujete k vytváření skvěl
 
  Zvolte nástroje, které potřebujete podle požadavků vaší aplikace a jazyk, který chcete použít.
 
-1.  [Xamarin for Visual Studio](./cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md): Společný kód v základní C# pro všechna zařízení
+1. [Xamarin for Visual Studio](./cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md): Společný kód v základní C# pro všechna zařízení
 
-2.  [Apache Cordova pomocí sady Visual Studio](http://msdn.microsoft.com/library/db446f2c-6ba4-4c76-aac5-4c66f43b8c42): Společný kód základní pro HTML, CSS a JavaScript nebo Typescript
+2. [Apache Cordova pomocí sady Visual Studio](http://msdn.microsoft.com/library/db446f2c-6ba4-4c76-aac5-4c66f43b8c42): Společný kód základní pro HTML, CSS a JavaScript nebo Typescript
 
-3.  [Visual Studio Tools for Unity](./cross-platform/visual-studio-tools-for-unity.md): Vývoj pro 2D a 3D her vC#
+3. [Visual Studio Tools for Unity](./cross-platform/visual-studio-tools-for-unity.md): Vývoj pro 2D a 3D her vC#
 
-4.  [Jazyk C++ pro vývoj pro různé platformy](./cross-platform/visual-cpp-for-cross-platform-mobile-development.md): Sdílený kód knihovny a aplikace v jazyce C++
+4. [Jazyk C++ pro vývoj pro různé platformy](./cross-platform/visual-cpp-for-cross-platform-mobile-development.md): Sdílený kód knihovny a aplikace v jazyce C++
 
-5.  [Visual Studio Emulator for Android](./cross-platform/visual-studio-emulator-for-android.md): Visual Studio Emulator for Android: Ladění a testování svých aplikací pro Android bez ohledu na to integrovaného vývojového prostředí
+5. [Visual Studio Emulator for Android](./cross-platform/visual-studio-emulator-for-android.md): Visual Studio Emulator for Android: Ladění a testování svých aplikací pro Android bez ohledu na to integrovaného vývojového prostředí
 
 ## <a name="connect-your-apps-to-services"></a>Připojení aplikací ke službám
  Můžete připojit k těmto službám úprav (za předpokladu, že máte účet pro každou službu):
 
--   [Azure Mobile Services](http://azure.microsoft.com/documentation/services/mobile-services/)
+- [Azure Mobile Services](http://azure.microsoft.com/documentation/services/mobile-services/)
 
--   [Azure Storage](http://azure.microsoft.com/documentation/services/storage/)
+- [Azure Storage](http://azure.microsoft.com/documentation/services/storage/)
 
--   Integrace rozhraní API REST pro Office 365 do vlastní aplikace pro připojení k datům uloženým v cloudu. Další informace najdete v tématu [tyto ukázky](https://github.com/OfficeDev/?utf8=%E2%9C%93&query=o365).
+- Integrace rozhraní API REST pro Office 365 do vlastní aplikace pro připojení k datům uloženým v cloudu. Další informace najdete v tématu [tyto ukázky](https://github.com/OfficeDev/?utf8=%E2%9C%93&query=o365).
 
 ## <a name="write-great-web-apps-with-aspnet"></a>Zápis skvělé webové aplikace pomocí ASP.NET
  [ASP.NET 5](http://www.asp.net/vnext/overview/aspnet-vnext/aspnet-5-overview) je hlavní aktualizace MVC, WebAPI a technologie SignalR a běží na Windows, Mac a Linux.  ASP.NET 5 byly navržené zdola nahoru zajistit, že jste s využitím .NET štíhlý a sestavitelný zásobník pro vývoj moderních webových cloudových aplikací a služeb.
@@ -102,32 +102,32 @@ Vítá vás Visual Studio! Máme všechno, co potřebujete k vytváření skvěl
 
 ## <a name="in-this-section"></a>V tomto oddílu
 
--   [Novinky v sadě Visual Studio 2015](./what-s-new-in-visual-studio-2015.md)
+- [Novinky v sadě Visual Studio 2015](./what-s-new-in-visual-studio-2015.md)
 
--   [Instalace sady Visual Studio 2015](./install/install-visual-studio-2015.md)
+- [Instalace sady Visual Studio 2015](./install/install-visual-studio-2015.md)
 
--   [Přenosy, migrace a upgrade projektů sady Visual Studio](./porting/porting-migrating-and-upgrading-visual-studio-projects.md)
+- [Přenosy, migrace a upgrade projektů sady Visual Studio](./porting/porting-migrating-and-upgrading-visual-studio-projects.md)
 
--   [Integrované vývojové prostředí sady Visual Studio](./ide/visual-studio-ide.md)
+- [Integrované vývojové prostředí sady Visual Studio](./ide/visual-studio-ide.md)
 
--   [Rozšiřitelnost v sadě Visual Studio](./extensibility/extensibility-in-visual-studio.md)
+- [Rozšiřitelnost v sadě Visual Studio](./extensibility/extensibility-in-visual-studio.md)
 
--   [Přístup k datům v sadě Visual Studio](./data-tools/accessing-data-in-visual-studio.md)
+- [Přístup k datům v sadě Visual Studio](./data-tools/accessing-data-in-visual-studio.md)
 
--   [Vývoj mobilních řešení napříč platformami](./cross-platform/cross-platform-mobile-development-in-visual-studio.md)
+- [Vývoj mobilních řešení napříč platformami](./cross-platform/cross-platform-mobile-development-in-visual-studio.md)
 
--   [C# a Visual Basic sdílí koncepty programování](http://msdn.microsoft.com/library/fa9bf5e6-07c8-4b5b-b1ae-8a22816a63c6)
+- [C# a Visual Basic sdílí koncepty programování](http://msdn.microsoft.com/library/fa9bf5e6-07c8-4b5b-b1ae-8a22816a63c6)
 
--   [Visual C++](http://msdn.microsoft.com/library/e8dcc44c-a3e2-4ffe-887c-fd15b18dc458)
+- [Visual C++](http://msdn.microsoft.com/library/e8dcc44c-a3e2-4ffe-887c-fd15b18dc458)
 
--   [JavaScript](./javascript/javascript-in-visual-studio.md)
+- [JavaScript](./javascript/javascript-in-visual-studio.md)
 
--   [Python](./python/getting-started-with-python.md)
+- [Python](./python/getting-started-with-python.md)
 
--   [Visual F#](http://msdn.microsoft.com/library/66f52f8a-a034-4c32-bb83-fa5b030faa4d)
+- [Visual F#](http://msdn.microsoft.com/library/66f52f8a-a034-4c32-bb83-fa5b030faa4d)
 
--   [Visual Studio LightSwitch](http://msdn.microsoft.com/library/2021a2cf-f684-493f-8d1b-4cdf39bc6eb3)
+- [Visual Studio LightSwitch](http://msdn.microsoft.com/library/2021a2cf-f684-493f-8d1b-4cdf39bc6eb3)
 
--   [DevOps a správa životního cyklu aplikací](http://msdn.microsoft.com/library/74a1f71d-7f23-4c71-8fd7-89ede614fab6)
+- [DevOps a správa životního cyklu aplikací](http://msdn.microsoft.com/library/74a1f71d-7f23-4c71-8fd7-89ede614fab6)
 
--   [Kontaktujte nás](./ide/talk-to-us.md)
+- [Kontaktujte nás](./ide/talk-to-us.md)

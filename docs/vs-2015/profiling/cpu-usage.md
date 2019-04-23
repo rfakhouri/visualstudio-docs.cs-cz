@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 46d2005ae22828a01a03141a870acec4e23a785d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a78025bd11e56b001514f580acca18b7d21d5424
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54755354"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067050"
 ---
 # <a name="cpu-usage"></a>Využití procesoru
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,19 +27,19 @@ Když budete potřebovat zjistit problémy s výkonem ve vaší aplikaci, je dob
   
  centru pro výkon a diagnostiku vám nabízí spoustu dalších možností spouštění a správu diagnostickou relaci. Například můžete spustit **využití procesoru** nástroj na místních nebo vzdálených počítačích nebo na simulátoru nebo emulátoru. Můžete analyzovat výkon otevřít projekt v sadě Visual Studio, připojit k běžící aplikaci, nebo spusťte aplikaci, která se instaluje z Windows Store. Další informace najdete v tématu [spustit profilovací nástroje bez ladění](http://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)  
   
-##  <a name="BKMK_Collect_CPU_usage_data"></a> Shromažďování dat o využití procesoru  
+## <a name="BKMK_Collect_CPU_usage_data"></a> Shromažďování dat o využití procesoru  
   
 1. V sadě Visual Studio, nastavte konfigurace řešení na **vydání** a zvolte cíl nasazení.  
   
     ![Vyberte verzi a místní počítač](../profiling/media/cpuuse-selectreleaselocalmachine.png "CPUUSE_SelectReleaseLocalMachine")  
   
-   -   Spuštění aplikace **vydání** režim poskytuje lepší přehled aplikace skutečný výkon vaší aplikace.  
+   - Spuštění aplikace **vydání** režim poskytuje lepší přehled aplikace skutečný výkon vaší aplikace.  
   
-   -   Spuštění aplikace v místním počítači nejlépe replikuje provádění nainstalované aplikace.  
+   - Spuštění aplikace v místním počítači nejlépe replikuje provádění nainstalované aplikace.  
   
-   -   Pokud shromažďujete data ze vzdáleného zařízení, spusťte aplikaci přímo v zařízení a ne pomocí připojení ke vzdálené ploše.  
+   - Pokud shromažďujete data ze vzdáleného zařízení, spusťte aplikaci přímo v zařízení a ne pomocí připojení ke vzdálené ploše.  
   
-   -   Pro aplikace Windows Phone, shromažďovat data přímo z **zařízení** poskytuje nejaktuálnější data.  
+   - Pro aplikace Windows Phone, shromažďovat data přímo z **zařízení** poskytuje nejaktuálnější data.  
   
 2. Na **ladění** nabídce zvolte **Profiler výkonu...** .  
   
@@ -59,10 +59,10 @@ Když budete potřebovat zjistit problémy s výkonem ve vaší aplikaci, je dob
   
 ## <a name="analyze-the-cpu-usage-report"></a>Analýza sestavy využití procesoru  
   
-###  <a name="BKMK_The_CPU_Usage_call_tree"></a> Využití procesoru strom volání  
+### <a name="BKMK_The_CPU_Usage_call_tree"></a> Využití procesoru strom volání  
  Abyste mohli začít Principy informace o volání stromu, klikněte `GetMaxNumberButton_Click` segmentovat a podívejte se na Podrobnosti stromu volání.  
   
-####  <a name="BKMK_Call_tree_structure"></a> Struktura stromu volání  
+#### <a name="BKMK_Call_tree_structure"></a> Struktura stromu volání  
  ![GetMaxNumberButton&#95;klikněte na tlačítko volání stromu](../profiling/media/cpu-use-wt-getmaxnumbercalltree-annotated.png "CPU_USE_WT_GetMaxNumberCallTree_annotated")  
   
 |||  
@@ -72,7 +72,7 @@ Když budete potřebovat zjistit problémy s výkonem ve vaší aplikaci, je dob
 |![3. krok](../profiling/media/procguid-3.png "ProcGuid_3")|Uzlu druhé úrovně jsou podřízeny metody uživatelského kódu a asynchronní rutiny, které volá nebo vytváří systémový kód a kód architektury druhé úrovně.|  
 |![4. krok](../profiling/media/procguid-4.png "ProcGuid_4")|Podřízené uzly metody obsahují jenom data pro volání nadřízené metody. Pokud zakážete **Zobrazit externí kód**, mohou metody aplikace obsahovat také uzel **[Externí kód]**.|  
   
-####  <a name="BKMK_External_Code"></a> Externí kód  
+#### <a name="BKMK_External_Code"></a> Externí kód  
  Funkce v systému a komponenty rozhraní jsou externí kód, který kód při psaní. Externí kód zahrnuje funkce, které spouštějí a zastavují aplikaci, vykreslují uživatelské rozhraní, řídí dělení na podprocesy a na nejnižší úrovni zajišťuje pro aplikaci další služby. Ve většině případů nebudete zájem o externí kód, a proto využití procesoru volání stromu shromáždí externí funkce metody uživatele do jednoho **[externí kód]** uzlu.  
   
  Pokud chcete zobrazit volání cesty z externího kódu, zvolte **zobrazit externí kód** z **filtrovat zobrazení** seznamu a klikněte na tlačítko **použít**.  
@@ -87,7 +87,7 @@ Když budete potřebovat zjistit problémy s výkonem ve vaší aplikaci, je dob
   
  ![Hledat vnořené externí kód](../profiling/media/cpu-use-wt-showexternalcodetoowide-found.png "CPU_USE_WT_ShowExternalCodeTooWide_Found")  
   
-###  <a name="BKMK_Call_tree_data_columns"></a> Volání stromu datové sloupce  
+### <a name="BKMK_Call_tree_data_columns"></a> Volání stromu datové sloupce  
   
 |||  
 |-|-|  
@@ -97,7 +97,7 @@ Když budete potřebovat zjistit problémy s výkonem ve vaší aplikaci, je dob
 |**Vlastní čas procesoru (ms)**|Počet milisekund strávený ve volání funkce ve vybraném časovém rozsahu a funkce, které byly volány funkce.|  
 |**Modul**|Název modulu, který obsahuje funkce, nebo počet modulů, který obsahuje funkce v uzlu [externí kód].|  
   
-###  <a name="BKMK_Asynchronous_functions_in_the_CPU_Usage_call_tree"></a> Strom volání asynchronní funkce v využití procesoru  
+### <a name="BKMK_Asynchronous_functions_in_the_CPU_Usage_call_tree"></a> Strom volání asynchronní funkce v využití procesoru  
  Když kompilátor narazí na asynchronní metodu, vytvoří třídu skryté k řízení provádění metody. Třída je koncepčně stavového stroje, který obsahuje seznam vygenerovaný kompilátorem funkce, které volají operace původní metody asynchronně, a zpětná volání, Plánovač a iterátory, které jsou nutné k nim správně. Při původní metody je volána metodou nadřazeného, modul runtime odebere z kontextu spuštění nadřazené metody a metody třídy skryté běží v kontextu systému a rozhraní framework kód, který řídí spuštění aplikace. Asynchronní metody jsou často, ale ne vždy spouštěny na jeden nebo více různých vláken. Tento kód se zobrazí ve stromu volání procesoru jako podřízené objekty **[externí kód]** uzel bezprostředně pod nejvyšší uzel stromu.  
   
  Tento údaj zobrazíte v našem příkladu, znovu vyberte `GetMaxNumberAsyncButton_Click` segment na časové ose.  
@@ -108,8 +108,8 @@ Když budete potřebovat zjistit problémy s výkonem ve vaší aplikaci, je dob
   
  ![Rozbalit GetMaxNumberAsyncButton&#95;klikněte na tlačítko volání stromu](../profiling/media/cpu-use-wt-getmaxnumberasync-expandedcalltree.png "CPU_USE_WT_GetMaxNumberAsync_ExpandedCallTree")  
   
--   `MainPage::GetMaxNumberAsyncButton_Click` velmi malý; nemá spravuje seznam hodnot úloh, vypočítá maximální počet výsledků a zobrazí výstup.  
+- `MainPage::GetMaxNumberAsyncButton_Click` velmi malý; nemá spravuje seznam hodnot úloh, vypočítá maximální počet výsledků a zobrazí výstup.  
   
--   `MainPage+<GetMaxNumberAsyncButton_Click>d__3::MoveNext` ukazuje aktivit potřebných k naplánování a spuštění 48 úkoly, které obalují volání `GetNumberAsync`.  
+- `MainPage+<GetMaxNumberAsyncButton_Click>d__3::MoveNext` ukazuje aktivit potřebných k naplánování a spuštění 48 úkoly, které obalují volání `GetNumberAsync`.  
   
--   `MainPage::<GetNumberAsync>b__b` ukazuje aktivitu úloh, které volají `GetNumber`.
+- `MainPage::<GetNumberAsync>b__b` ukazuje aktivitu úloh, které volají `GetNumber`.

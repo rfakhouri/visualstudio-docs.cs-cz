@@ -10,37 +10,37 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8876cebf5851454aa3140f6a3269fa0d3ecbbc95
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 05153b7829281684ff9f27f2b5ac708903982b57
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54774540"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072549"
 ---
 # <a name="how-to-unlock-visual-studio"></a>Jak odemknout Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Můžete si vyzkoušet Visual Studio zdarma až po dobu 30 dnů. Při přihlašování do integrovaného vývojového prostředí můžete rozšířit 90 dnů zkušebního období. Chcete-li pokračovat pomocí sady Visual Studio můžete odemknout rozhraní IDE podle
 
-1.  prostřednictvím online předplatného.
+1. prostřednictvím online předplatného.
 
-2.  zadání kódu product key.
+2. zadání kódu product key.
 
 ## <a name="to-unlock-visual-studio-using-an-online-subscription"></a>Pro odemknutí prostřednictvím online předplatného Visual Studio.
  K odemknutí sady Visual Studio prostřednictvím online předplatného MSDN nebo Visual Studio přidružené k účtu Microsoft nebo pracovní nebo školní účet:
 
-1.  Klikněte na tlačítko "Sign in" v pravém horním rohu integrovaného vývojového prostředí (nebo přejděte na soubor > Nastavení účtu a otevřete dialogové okno nastavení účtu a klikněte na tlačítko "Sign in".)
+1. Klikněte na tlačítko "Sign in" v pravém horním rohu integrovaného vývojového prostředí (nebo přejděte na soubor > Nastavení účtu a otevřete dialogové okno nastavení účtu a klikněte na tlačítko "Sign in".)
 
-2.  Zadejte přihlašovací údaje pro účet Microsoft nebo pracovní nebo školní účet. Visual Studio najdete předplatné MSDN nebo Visual Studio Team Services předplatné spojené s vaším účtem.
+2. Zadejte přihlašovací údaje pro účet Microsoft nebo pracovní nebo školní účet. Visual Studio najdete předplatné MSDN nebo Visual Studio Team Services předplatné spojené s vaším účtem.
 
 > [!IMPORTANT]
 >  Visual Studio online přidružených předplatných automaticky vyhledá, když se připojíte k účtu Visual Studio Team Services z okna nástroje Průzkumník týmových projektů. Když se připojíte k účtu Visual Studio Team Services, můžete přihlásit pomocí Microsoft a pracovní nebo školní účty. Pokud pro tento uživatelský účet existuje s online předplatným, sada Visual Studio automaticky odemknout rozhraní IDE za vás.
 
 ## <a name="to-unlock-visual-studio-with-a-product-key"></a>K odemknutí sady Visual Studio s kódem product key
 
-1.  Vyberte **soubor > Nastavení účtu** otevřete dialogové okno nastavení účtu a klikněte na "**licence s kódem Product Key**" propojení.
+1. Vyberte **soubor > Nastavení účtu** otevřete dialogové okno nastavení účtu a klikněte na "**licence s kódem Product Key**" propojení.
 
-2.  Zadejte kód product key v poskytnutém prostoru.
+2. Zadejte kód product key v poskytnutém prostoru.
 
 > [!TIP]
 >  Předběžné verze sady Visual Studio nemají žádné kódy product key. Musíte se přihlásit k prostředí IDE používat předběžné verze.
@@ -68,9 +68,9 @@ Můžete si vyzkoušet Visual Studio zdarma až po dobu 30 dnů. Při přihlašo
 ### <a name="updating-expired-licenses"></a>Aktualizuje se licence s vypršenou platností
  Pokud vaše předplatné vypršelo úplně a už nebude mít přístupová práva ke službě Visual Studio, musíte mít:
 
-1.  Prodlužte platnost vašeho předplatného. Pokud chcete zobrazit další informace o licenci, kterou používáte, přejděte na soubor > dialogové okno nastavení účtu a podívejte se na informace o licenci na pravé straně dialogového okna.
+1. Prodlužte platnost vašeho předplatného. Pokud chcete zobrazit další informace o licenci, kterou používáte, přejděte na soubor > dialogové okno nastavení účtu a podívejte se na informace o licenci na pravé straně dialogového okna.
 
-2.  Pokud máte jiné předplatné přidružené k jinému účtu, tento účet přidat do seznamu všech účtů na levé straně soubor > Nastavení účtu dialogové okno kliknutím na "Přidat účet..." odkaz.
+2. Pokud máte jiné předplatné přidružené k jinému účtu, tento účet přidat do seznamu všech účtů na levé straně soubor > Nastavení účtu dialogové okno kliknutím na "Přidat účet..." odkaz.
 
 ## <a name="see-also"></a>Viz také
  [Přihlášení k sadě Visual Studio](../ide/signing-in-to-visual-studio.md)

@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dfa7ed62276e63e80158a86165b59e367d7a88f4
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: a2c7a993bca55f1224661e15f9a7ecbf0a967e31
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56715593"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066985"
 ---
 # <a name="querychangesfunc"></a>QUERYCHANGESFUNC
 Toto je funkce zpětného volání používané [sccquerychanges –](../extensibility/sccquerychanges-function.md) operace vytvoření výčtu kolekce názvů souborů a určit stav každého souboru.
@@ -46,13 +46,13 @@ typedef BOOL (*QUERYCHANGESFUNC)(
 ## <a name="return-value"></a>Návratová hodnota
  Rozhraní IDE vrátí odpovídající chybový kód:
 
-|Hodnota|Popis|
+|Value|Popis|
 |-----------|-----------------|
 |SCC_OK|Pokračujte ve zpracování.|
 |SCC_I_OPERATIONCANCELED|Zastavte zpracování.|
 |SCC_E_xxx|Všechny příslušné chyby SCC by se měla zastavit zpracování.|
 
-##  <a name="LinkQUERYCHANGESDATA"></a> Struktura QUERYCHANGESDATA
+## <a name="LinkQUERYCHANGESDATA"></a> Struktura QUERYCHANGESDATA
  Struktura předaná pro každý soubor bude vypadat nějak takto:
 
 ```cpp

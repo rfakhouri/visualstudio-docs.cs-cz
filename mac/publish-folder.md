@@ -9,12 +9,12 @@ author: sayedihashimi
 ms.author: sayedha
 manager: unniravindranathan
 ms.prod: visual-studio-mac
-ms.openlocfilehash: 0ab1b01900077fdbad5dec3fb968abcf46db62d8
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: 8bff4b6079818a7e6d4e3500830a036ae6ab28cd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58856525"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072732"
 ---
 # <a name="publish-a-web-app-to-a-folder-using-visual-studio-for-mac"></a>Publikování webové aplikace do složky pomocí sady Visual Studio pro Mac
 
@@ -22,10 +22,10 @@ Nástroj publikování můžete použít k publikování aplikace ASP.NET Core d
 
 ## <a name="prerequisites"></a>Požadavky
 
- - [2019 Visual Studio pro Mac](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs4mac2019) nainstalované s ASP.NET Core povolena.
- - Projekt ASP.NET Core. Pokud projekt ještě nemáte, můžete si [vytvořte novou](https://docs.microsoft.com/visualstudio/mac/create-new-projects?view=vsmac-2019).
+- [2019 Visual Studio pro Mac](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs4mac2019) nainstalované s ASP.NET Core povolena.
+- Projekt ASP.NET Core. Pokud projekt ještě nemáte, můžete si [vytvořte novou](https://docs.microsoft.com/visualstudio/mac/create-new-projects?view=vsmac-2019).
 
-## <a name="publish-to-folder"></a>Publikovat do složky
+## <a name="publish-to-folder"></a>Publikování do složky
 
 Pomocí sady Visual Studio for Mac můžete publikovat projekty ASP.NET Core do složky pomocí nástroje Publish. Po publikování do složky můžete převést soubory na webový server se dá stáhnout do jiného prostředí. Chcete-li publikovat do složky postupujte podle těchto kroků.
 

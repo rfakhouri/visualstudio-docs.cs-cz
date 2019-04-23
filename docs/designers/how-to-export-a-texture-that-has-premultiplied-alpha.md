@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a228b3f69730eee5fb1672e07a6eea74d18c71e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 64c336db07eab794a6595cb2de9026c1269a33c4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55946870"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072199"
 ---
 # <a name="how-to-export-a-texture-that-has-premultiplied-alpha"></a>Postupy: Export textury s přednásobenou hodnotou alfa
 
@@ -21,20 +21,20 @@ Kanál s obsahem obrazu může generovat vynásobené alfa textury ze zdrojovéh
 
 Tento dokument vysvětluje tyto činnosti:
 
--   Konfigurace zdrojového obrazu pro zpracování obsahu kanálu obrázku.
+- Konfigurace zdrojového obrazu pro zpracování obsahu kanálu obrázku.
 
--   Konfigurace obsahu kanálu obrázku ke generování předem vynásobených hodnot alfa.
+- Konfigurace obsahu kanálu obrázku ke generování předem vynásobených hodnot alfa.
 
 ## <a name="premultiplied-alpha"></a>Předem vynásobený prvek alfa
  Předem vynásobený prvek alfa nabízí několik výhod oproti konvenčním, předem alfa, protože lépe představuje skutečných interakci světla s fyzickými materiály oddělením podílu barvy texelu (barvy, který přidá do scény) z jeho průsvitnosti (podíl základní barvy, která umožní průnik částka). Některé výhody použití předem vynásobených hodnot alfa jsou:
 
--   Prolnutí s předem vynásobených hodnot alfa je asociativní operace; Výsledek prolnutí více průhledných textur je stejný, bez ohledu na pořadí, ve kterém jsou textury prolnuty.
+- Prolnutí s předem vynásobených hodnot alfa je asociativní operace; Výsledek prolnutí více průhledných textur je stejný, bez ohledu na pořadí, ve kterém jsou textury prolnuty.
 
--   Vzhledem k asociativnímu charakteru prolnutí s předem vynásobených hodnot alfa je vícenásobné vykreslení s více průchody průsvitných objektů zjednodušeno.
+- Vzhledem k asociativnímu charakteru prolnutí s předem vynásobených hodnot alfa je vícenásobné vykreslení s více průchody průsvitných objektů zjednodušeno.
 
--   Pomocí předem vynásobené hodnoty alfa čiré aditivní prolnutí (podle nastavení alfa nula) i lineárně interpolované prolnutí lze dosáhnout současně. Například v systému částic směsi částic ohně přeměnit na průsvitné částice kouře, které jsou prolnuty pomocí lineární interpolace. Bez předem vynásobené hodnoty alfa je třeba nakreslit částice ohně odděleně od kouřových částic a měnit stav vykreslení mezi voláními výkresu.
+- Pomocí předem vynásobené hodnoty alfa čiré aditivní prolnutí (podle nastavení alfa nula) i lineárně interpolované prolnutí lze dosáhnout současně. Například v systému částic směsi částic ohně přeměnit na průsvitné částice kouře, které jsou prolnuty pomocí lineární interpolace. Bez předem vynásobené hodnoty alfa je třeba nakreslit částice ohně odděleně od kouřových částic a měnit stav vykreslení mezi voláními výkresu.
 
--   Textury, které používají předem vynásobenou hodnotu alpha mají vyšší kvalitu než ty, které ji nemají komprese a nevykazují zabarvené hrany – nebo "halo efekt", který může být výsledkem prolnutí textur, které nepoužívají vynásobenou hodnotu alpha.
+- Textury, které používají předem vynásobenou hodnotu alpha mají vyšší kvalitu než ty, které ji nemají komprese a nevykazují zabarvené hrany – nebo "halo efekt", který může být výsledkem prolnutí textur, které nepoužívají vynásobenou hodnotu alpha.
 
 #### <a name="to-create-a-texture-that-uses-premultiplied-alpha"></a>Vytvoření textury, která používá předem vynásobené hodnoty alfa
 

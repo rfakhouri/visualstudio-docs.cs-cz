@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f3f3537a56b746c9104898d68e40038fcd545910
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: a01f08d430e9812283c3f5179e08d20f98a687a4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58856457"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072264"
 ---
 # <a name="get-started-with-unit-testing"></a>Začínáme s testováním částí
 
@@ -24,10 +24,19 @@ Visual Studio používejte k definování a spouštění testů jednotek Údržb
 
 Tato část popisuje jak vytvořit projekt testování částí na vysoké úrovni.
 
-> [!TIP]
-> Projekt v rámci testu, "HelloWorldCore", je příklad projektu a použití žádný kód pro něj není zobrazený. Pokud chcete vytvořit projekt "Hello World" k otestování najdete v tématu [první vytvoření C# konzolovou aplikaci](../ide/quickstart-csharp-console.md). Kompletní postup článku, najdete v části [vytvoření a spuštění jednotky testů pro spravovaný kód](walkthrough-creating-and-running-unit-tests-for-managed-code.md).
-
 1. Otevřete projekt, který chcete testovat v sadě Visual Studio.
+
+   Pro účely demonstrace testu jednotek příklad v tomto článku testuje Jednoduchý projekt "Hello World". Ukázkový kód pro takový projekt vypadá takto:
+
+   ```csharp
+   public class Program
+   {
+       public static void Main()
+       {
+           Console.WriteLine("Hello World!");
+       }
+   }
+   ```
 
 1. V **Průzkumníka řešení**, vyberte uzel řešení. Potom v horní nabídce vyberte **souboru** > **přidat** > **nový projekt**.
 
@@ -62,6 +71,9 @@ Tato část popisuje jak vytvořit projekt testování částí na vysoké úrov
 1. Přidejte kód do metody testu jednotek.
 
    ![Přidejte kód pro metodu testu jednotek v sadě Visual Studio](media/vs-2019/unit-test-method.png)
+
+> [!TIP]
+> Detailní postup vytváření testů jednotek, najdete v části [vytvoření a spuštění jednotky testů pro spravovaný kód](walkthrough-creating-and-running-unit-tests-for-managed-code.md).
 
 ## <a name="run-unit-tests"></a>Spouštění testů jednotek
 

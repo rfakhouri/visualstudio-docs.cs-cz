@@ -13,12 +13,12 @@ ms.assetid: ce00c5a5-d472-4f45-8776-d77a1fbe9d37
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4f0fa6e59b8baa32fefffea7aa4810d688340467
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ab4389c936b71ba8ccbb21b22d0a5e533282026d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54796744"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067440"
 ---
 # <a name="test-area-3-check-outundo-checkout"></a>Testovací oblast 3: Podívejte se na / Zrušit rezervaci
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,21 +34,21 @@ Tato oblast testovací modul plug-in správy zdrojového kódu pokrývá úprav 
   
 ##### <a name="check-out"></a>Mrkni se:  
   
--   **Soubor**, **správy zdrojového kódu**, **rezervovat**.  
+- **Soubor**, **správy zdrojového kódu**, **rezervovat**.  
   
--   **Soubor**, **rezervovat**.  
+- **Soubor**, **rezervovat**.  
   
--   Místní nabídka **rezervovat**.  
+- Místní nabídka **rezervovat**.  
   
--   Vrátit zpět rezervaci: **Soubor**, **správy zdrojového kódu**, **rezervace**.  
+- Vrátit zpět rezervaci: **Soubor**, **správy zdrojového kódu**, **rezervace**.  
   
 ## <a name="common-expected-behavior"></a>Běžné očekávané chování  
   
--   Po rezervaci operace jsou cílové soubory nebo složky označena jako kontrolovaná navýšení kapacity v úložišti verzí.  
+- Po rezervaci operace jsou cílové soubory nebo složky označena jako kontrolovaná navýšení kapacity v úložišti verzí.  
   
--   Úložiště verzí atributy rezervace pro správné uživatele.  
+- Úložiště verzí atributy rezervace pro správné uživatele.  
   
--   Čas a datum rezervaci správnost (podle nastavení uživatele).  
+- Čas a datum rezervaci správnost (podle nastavení uživatele).  
   
 ## <a name="test-cases"></a>Testovací případy  
  Tady jsou konkrétní testovací případy pro testovací oblast rezervace a zrušení rezervace.  
@@ -72,11 +72,11 @@ Tato oblast testovací modul plug-in správy zdrojového kódu pokrývá úprav 
   
 #### <a name="expected-behavior"></a>Očekávané chování  
   
--   Nelze použít **zkontrolujte si výhradně** příkaz odpojené od úložiště verzí.  
+- Nelze použít **zkontrolujte si výhradně** příkaz odpojené od úložiště verzí.  
   
--   Nelze použít **vrátit zpět rezervaci** příkaz odpojené od úložiště verzí.  
+- Nelze použít **vrátit zpět rezervaci** příkaz odpojené od úložiště verzí.  
   
--   **Sdílené rezervovat** příkaz funguje.  
+- **Sdílené rezervovat** příkaz funguje.  
   
 |Akce|Testovací kroky|Chcete-li ověřit očekávané výsledky|  
 |------------|----------------|--------------------------------|  
@@ -87,13 +87,13 @@ Tato oblast testovací modul plug-in správy zdrojového kódu pokrývá úprav 
   
 #### <a name="expected-behavior"></a>Očekávané chování  
   
--   Po rezervaci operace jsou cílové soubory nebo složky označena jako kontrolovaná navýšení kapacity v úložišti verzí.  
+- Po rezervaci operace jsou cílové soubory nebo složky označena jako kontrolovaná navýšení kapacity v úložišti verzí.  
   
--   Úložiště verzí atributy rezervaci pro správné uživatele.  
+- Úložiště verzí atributy rezervaci pro správné uživatele.  
   
--   Čas a datum rezervaci správnost (podle nastavení uživatele).  
+- Čas a datum rezervaci správnost (podle nastavení uživatele).  
   
--   Místní kopie na cílový soubor nebo složku je zapisovatelný.  
+- Místní kopie na cílový soubor nebo složku je zapisovatelný.  
   
 |Akce|Testovací kroky|Chcete-li ověřit očekávané výsledky|  
 |------------|----------------|--------------------------------|  
@@ -106,13 +106,13 @@ Tato oblast testovací modul plug-in správy zdrojového kódu pokrývá úprav 
   
 #### <a name="expected-behavior"></a>Očekávané chování  
   
--   Po rezervaci operace jsou cílové soubory nebo složky označena jako kontrolovaná navýšení kapacity v úložišti verzí.  
+- Po rezervaci operace jsou cílové soubory nebo složky označena jako kontrolovaná navýšení kapacity v úložišti verzí.  
   
--   Úložiště verzí atributy rezervaci pro správné uživatele.  
+- Úložiště verzí atributy rezervaci pro správné uživatele.  
   
--   Čas a datum rezervaci je správný (podle nastavení uživatele).  
+- Čas a datum rezervaci je správný (podle nastavení uživatele).  
   
--   Místní kopie na cílový soubor nebo složku je zapisovatelný.  
+- Místní kopie na cílový soubor nebo složku je zapisovatelný.  
   
 |Akce|Testovací kroky|Chcete-li ověřit očekávané výsledky|  
 |------------|----------------|--------------------------------|  
@@ -124,9 +124,9 @@ Tato oblast testovací modul plug-in správy zdrojového kódu pokrývá úprav 
   
 #### <a name="expected-behavior"></a>Očekávané chování  
   
--   Výchozí hodnota je založena na uživatele **podívejte se na místní verze** nastavení. Pokud uživatel se rozhodl rezervovat místní verze, je výchozí nastavení pro zrušení rezervace se vždycky vrátit k verzi rezervován.  
+- Výchozí hodnota je založena na uživatele **podívejte se na místní verze** nastavení. Pokud uživatel se rozhodl rezervovat místní verze, je výchozí nastavení pro zrušení rezervace se vždycky vrátit k verzi rezervován.  
   
--   Po přijetí zpět na ikony v **Průzkumníka řešení** jsou aktualizované pro vliv na soubory a položka se odebere z **čekající vrácení se změnami** okna.  
+- Po přijetí zpět na ikony v **Průzkumníka řešení** jsou aktualizované pro vliv na soubory a položka se odebere z **čekající vrácení se změnami** okna.  
   
 |Akce|Testovací kroky|Chcete-li ověřit očekávané výsledky|  
 |------------|----------------|--------------------------------|  

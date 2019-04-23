@@ -12,12 +12,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: f6f9f2ad3d9eb1e9aca68250c2d9e0702027f687
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 2ee368224eb4991a2f1f167d565bd2b07f85d4c6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867323"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072173"
 ---
 # <a name="walkthrough-add-custom-xaml-to-the-start-page"></a>Návod: Přidat vlastní XAML na úvodní stránku
 
@@ -25,11 +25,11 @@ Tento návod ukazuje, jak vytvořit vlastní úvodní stránku sady Visual Studi
 
 ## <a name="add-custom-xaml"></a>Přidat vlastní XAML
 
-1.  Vytvořit podle pokynů v úvodní stránku [vytvořit vlastní úvodní stránku](../extensibility/creating-a-custom-start-page.md).
+1. Vytvořit podle pokynů v úvodní stránku [vytvořit vlastní úvodní stránku](../extensibility/creating-a-custom-start-page.md).
 
-2.  V *souboru MainWindow.xaml* souboru, vyhledejte \<mřížky > oddílu.
+2. V *souboru MainWindow.xaml* souboru, vyhledejte \<mřížky > oddílu.
 
-3.  Přidat \<TabControl > element a \<TabItem > uvnitř \< mřížky > element, jak je znázorněno v následujícím příkladu.
+3. Přidat \<TabControl > element a \<TabItem > uvnitř \< mřížky > element, jak je znázorněno v následujícím příkladu.
 
     ```xml
     <Grid>
@@ -41,7 +41,7 @@ Tento návod ukazuje, jak vytvořit vlastní úvodní stránku sady Visual Studi
     </Grid>
     ```
 
-4.  Přidejte druhý \<TabItem >, pomocí \<tlačítko > element, který se otevře nový projekt:
+4. Přidejte druhý \<TabItem >, pomocí \<tlačítko > element, který se otevře nový projekt:
 
     ```xml
     <Grid>
@@ -61,25 +61,25 @@ Tento návod ukazuje, jak vytvořit vlastní úvodní stránku sady Visual Studi
 
 ## <a name="test-the-custom-start-page"></a>Testování vlastní úvodní stránky
 
-1.  Stisknutím klávesy **F5**.
+1. Stisknutím klávesy **F5**.
 
      Otevře se experimentální instanci sady Visual Studio, s vlastní úvodní stránku nainstalované, ale nejsou vybrány.
 
-2.  V experimentální instanci sady Visual Studio, otevřete **Tools/Options / prostředí** stránky.
+2. V experimentální instanci sady Visual Studio, otevřete **Tools/Options / prostředí** stránky.
 
-3.  Vyberte **spuštění**. Na **přizpůsobit úvodní stránku** seznamu vyberte vaše *.xaml* souboru a klikněte na tlačítko **OK**.
+3. Vyberte **spuštění**. Na **přizpůsobit úvodní stránku** seznamu vyberte vaše *.xaml* souboru a klikněte na tlačítko **OK**.
 
-4.  Na **zobrazení** nabídky, klikněte na tlačítko **úvodní stránka**.
+4. Na **zobrazení** nabídky, klikněte na tlačítko **úvodní stránka**.
 
-5.  Klikněte na tlačítko **Bingu** kartu.
+5. Klikněte na tlačítko **Bingu** kartu.
 
      Měli byste vidět Bingu webové stránky.
 
-6.  Klikněte na tlačítko **MyButton** kartu.
+6. Klikněte na tlačítko **MyButton** kartu.
 
      Měli byste vidět **MyProject** tlačítko, které se otevře **nový projekt** dialogového okna.
 
-7.  Ukončete experimentální instanci.
+7. Ukončete experimentální instanci.
 
 Chcete-li použít vlastní úvodní stránky v **nástroje** > **možnosti** > **prostředí**vyberte **spuštění**. Na **přizpůsobit úvodní stránku** seznamu vyberte vaše *.xaml* souboru a klikněte na tlačítko **OK**.
 

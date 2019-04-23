@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Další informace o benefitech komunity Azure zahrnuté ve vybraných předplatných sady Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: 5e40621afe4d4211660064c52f97bdbcb96effe1
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 154c0164f5126fc38d0e0af5ec5703faacb9f94f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59653943"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072783"
 ---
 # <a name="azure-community"></a>Komunita Azure
 
@@ -40,7 +40,7 @@ Začínáme s komunitou Azure je snadné.
     > [!div class="mx-imgBorder"]
     > ![Fóra komunity Azure](_img/vs-azure-community/vs-azure-community-forums.png)
 
-4.  V rámci fóra můžete zobrazit témata a odpovědi, hledat odpovědi na svou otázku nebo odeslat nový dotaz.
+4. V rámci fóra můžete zobrazit témata a odpovědi, hledat odpovědi na svou otázku nebo odeslat nový dotaz.
     > [!div class="mx-imgBorder"]
     > ![Příklad komunity Azure](_img/vs-azure-community/vs-azure-community-example.png)
 
@@ -65,7 +65,7 @@ Dostupnost ve prospěch komunity Azure závisí na vaší úrovně předplatnéh
 Nejste si jistí které předplatné používáte?  Připojte se k [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) zobrazíte všechna předplatná, která jsou přiřazená e-mailovou adresu. Pokud se nezobrazí všechna předplatná, může mít jeden nebo více přiřazené na jinou e-mailovou adresu.  Bude potřeba přihlásit se přes tento e-mailovou adresu najdete v těchto předplatných.
 
 ## <a name="support-resources"></a>Informační zdroje podpory
--  Komunita Azure prostředky, najdete v komunitě Azure [stránku podpory](https://azure.microsoft.com/support/forums/).
--  [Dokumentace ke službě Azure](/azure/).
--  Potřebujete pomoc s prodeje, předplatnými, účty a fakturací předplatných sady Visual Studio?  Obraťte se na Visual Studio [podpora předplatných](https://visualstudio.microsoft.com/subscriptions/support/).
--  Máte dotaz k Visual Studio IDE, DevOps služby Azure nebo jiných produktů Visual Studio nebo služeb?  Navštivte [Visual Studio – podpora](https://visualstudio.microsoft.com/support/).
+- Komunita Azure prostředky, najdete v komunitě Azure [stránku podpory](https://azure.microsoft.com/support/forums/).
+- [Dokumentace ke službě Azure](/azure/).
+- Potřebujete pomoc s prodeje, předplatnými, účty a fakturací předplatných sady Visual Studio?  Obraťte se na Visual Studio [podpora předplatných](https://visualstudio.microsoft.com/subscriptions/support/).
+- Máte dotaz k Visual Studio IDE, DevOps služby Azure nebo jiných produktů Visual Studio nebo služeb?  Navštivte [Visual Studio – podpora](https://visualstudio.microsoft.com/support/).

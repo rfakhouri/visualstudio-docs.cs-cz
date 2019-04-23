@@ -12,12 +12,12 @@ caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3ecd6f6210fdc219f7d1ca493f15beed74e9b5e2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 653c2760c369381162f519223b75ce8a7468c507
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54778848"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067011"
 ---
 # <a name="define-a-gesture-handler-on-a-modeling-diagram"></a>Definování obslužné rutiny gest v diagramu modelování
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,9 +34,9 @@ V sadě Visual Studio můžete definovat příkazy, které jsou prováděny, kdy
 ## <a name="creating-a-gesture-handler"></a>Vytvoření obslužné rutiny gesta  
  Chcete-li definovat obslužnou rutinu gesta pro UML designer, musíte vytvořit třídu, která definuje chování obslužné rutiny gesta a vložit tuto třídu v Visual Studio integrace rozšíření (VSIX). VSIX funguje jako kontejner, který můžete nainstalovat obslužnou rutinu. Existují dva alternativní způsoby definování obslužné rutiny gesta:  
   
--   **Vytvořte obslužnou rutinu gesta ve vlastním souboru VSIX pomocí šablony projektu.** Toto je rychlejší metoda. Pokud nechcete vaši obslužnou rutinu kombinovat s jinými typy rozšíření například rozšířeními ověřování, položky vlastního panelu nástrojů nebo příkazy nabídek, použijte ji.  
+- **Vytvořte obslužnou rutinu gesta ve vlastním souboru VSIX pomocí šablony projektu.** Toto je rychlejší metoda. Pokud nechcete vaši obslužnou rutinu kombinovat s jinými typy rozšíření například rozšířeními ověřování, položky vlastního panelu nástrojů nebo příkazy nabídek, použijte ji.  
   
--   **Vytvořte obslužnou rutinu samostatného gesta a projekty VSIX.** Tuto metodu použijte, pokud chcete sloučit několik typů rozšíření do stejného VSIX. Například pokud vaše obslužná rutina gesta očekává, že model bude dodržovat zvláštní omezení, můžete ho vložit do stejného VSIX jako metodu ověřování.  
+- **Vytvořte obslužnou rutinu samostatného gesta a projekty VSIX.** Tuto metodu použijte, pokud chcete sloučit několik typů rozšíření do stejného VSIX. Například pokud vaše obslužná rutina gesta očekává, že model bude dodržovat zvláštní omezení, můžete ho vložit do stejného VSIX jako metodu ověřování.  
   
 #### <a name="to-create-a-gesture-handler-in-its-own-vsix"></a>Chcete-li vytvořit obslužnou rutinu gesta ve vlastním souboru VSIX  
   
@@ -56,9 +56,9 @@ V sadě Visual Studio můžete definovat příkazy, které jsou prováděny, kdy
   
 1. Vytvořte projekt knihovny tříd v novém [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] řešení, nebo v existujícím řešení.  
   
-   1.  Na **souboru** nabídce zvolte **nový**, **projektu**.  
+   1. Na **souboru** nabídce zvolte **nový**, **projektu**.  
   
-   2.  V části **nainstalované šablony**, rozbalte **Visual C#** nebo **jazyka Visual Basic**, potom v prostředním sloupci zvolte možnost **knihovny tříd**.  
+   2. V části **nainstalované šablony**, rozbalte **Visual C#** nebo **jazyka Visual Basic**, potom v prostředním sloupci zvolte možnost **knihovny tříd**.  
   
 2. Přidejte následující odkazy do projektu.  
   
@@ -204,25 +204,25 @@ V sadě Visual Studio můžete definovat příkazy, které jsou prováděny, kdy
   
 #### <a name="to-add-a-separate-gesture-handler-to-a-vsix-project"></a>Přidání zvláštní obslužné rutiny gesta do projektu VSIX  
   
-1.  Tento postup není nutné, pokud jste vytvořili obslužnou rutinu gesta s vlastním souborem VSIX.  
+1. Tento postup není nutné, pokud jste vytvořili obslužnou rutinu gesta s vlastním souborem VSIX.  
   
-2.  Vytvořte projekt VSIX, pokud vaše řešení již existuje.  
+2. Vytvořte projekt VSIX, pokud vaše řešení již existuje.  
   
-    1.  V **Průzkumníka řešení**, v místní nabídce řešení zvolte **přidat**, **nový projekt**.  
+    1. V **Průzkumníka řešení**, v místní nabídce řešení zvolte **přidat**, **nový projekt**.  
   
-    2.  V části **nainstalované šablony**, rozbalte **Visual C#** nebo **jazyka Visual Basic**a pak vyberte **rozšiřitelnost**. V prostředním sloupci zvolte **projekt VSIX**.  
+    2. V části **nainstalované šablony**, rozbalte **Visual C#** nebo **jazyka Visual Basic**a pak vyberte **rozšiřitelnost**. V prostředním sloupci zvolte **projekt VSIX**.  
   
-3.  Nastavte projekt VSIX jako projekt po spuštění řešení.  
+3. Nastavte projekt VSIX jako projekt po spuštění řešení.  
   
-    -   V Průzkumníku řešení v místní nabídce projektu VSIX zvolte **nastavit jako spouštěný projekt**.  
+    - V Průzkumníku řešení v místní nabídce projektu VSIX zvolte **nastavit jako spouštěný projekt**.  
   
-4.  V **source.extension.vsixmanifest**, přidejte projekt knihovny tříd obslužné rutiny gesta jako komponentu MEF:  
+4. V **source.extension.vsixmanifest**, přidejte projekt knihovny tříd obslužné rutiny gesta jako komponentu MEF:  
   
-    1.  Na **metadat** kartu, nastavte název souboru VSIX.  
+    1. Na **metadat** kartu, nastavte název souboru VSIX.  
   
-    2.  Na **cíle instalace** kartu, nastavte verze sady Visual Studio jako cíle.  
+    2. Na **cíle instalace** kartu, nastavte verze sady Visual Studio jako cíle.  
   
-    3.  Na **prostředky** kartě **nový**a v dialogovém okně nastavte:  
+    3. Na **prostředky** kartě **nový**a v dialogovém okně nastavte:  
   
          **Typ** = **Komponenta MEF**  
   
@@ -230,7 +230,7 @@ V sadě Visual Studio můžete definovat příkazy, které jsou prováděny, kdy
   
          **Projekt** = *váš projekt knihovny tříd*  
   
-##  <a name="Executing"></a> Spuštění obslužné rutiny gesta  
+## <a name="Executing"></a> Spuštění obslužné rutiny gesta  
  Pro účely testování spusťte obslužnou rutina gesta v režimu ladění.  
   
 #### <a name="to-test-the-gesture-handler"></a>Testování obslužné rutiny gesta  
@@ -241,9 +241,9 @@ V sadě Visual Studio můžete definovat příkazy, které jsou prováděny, kdy
   
     **Řešení potíží s**: Pokud se nová [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nespustí:  
   
-   -   Pokud máte více než jeden projekt, ujistěte se, že projekt VSIX je nastaven jako projekt po spuštění řešení.  
+   - Pokud máte více než jeden projekt, ujistěte se, že projekt VSIX je nastaven jako projekt po spuštění řešení.  
   
-   -   V Průzkumníku řešení v místní nabídce startupu nebo projektu, zvolte Vlastnosti. V editoru vlastností projektu, zvolte **ladění** kartu. Ujistěte se, že řetězec v **externí program Start** pole je úplný název cesty [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], obvykle:  
+   - V Průzkumníku řešení v místní nabídce startupu nebo projektu, zvolte Vlastnosti. V editoru vlastností projektu, zvolte **ladění** kartu. Ujistěte se, že řetězec v **externí program Start** pole je úplný název cesty [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], obvykle:  
   
         `C:\Program Files\Microsoft Visual Studio [version]\Common7\IDE\devenv.exe`  
   
@@ -255,17 +255,17 @@ V sadě Visual Studio můžete definovat příkazy, které jsou prováděny, kdy
   
    **Řešení potíží s**: Pokud obslužná rutina gesta nefunguje, ujistěte se, že:  
   
--   Projekt obslužné rutiny gest je uveden jako Komponenta MEF na **prostředky** kartu **source.extensions.manifest** v projektu VSIX.  
+- Projekt obslužné rutiny gest je uveden jako Komponenta MEF na **prostředky** kartu **source.extensions.manifest** v projektu VSIX.  
   
--   Parametry všech vlastností `Import` a `Export` jsou platné.  
+- Parametry všech vlastností `Import` a `Export` jsou platné.  
   
--   `CanDragDrop` Metoda nevrací `false`.  
+- `CanDragDrop` Metoda nevrací `false`.  
   
--   Typ modelu diagram používáte (UML třídy, sekvence a tak dále) je uveden jako jeden z gesta atributů třídy obslužné rutiny [ClassDesignerExtension], [SequenceDesignerExtension] a tak dále.  
+- Typ modelu diagram používáte (UML třídy, sekvence a tak dále) je uveden jako jeden z gesta atributů třídy obslužné rutiny [ClassDesignerExtension], [SequenceDesignerExtension] a tak dále.  
   
--   Neexistuje žádná vestavěná funkce již definovaná pro tento typ cíle a vynechaného prvku.  
+- Neexistuje žádná vestavěná funkce již definovaná pro tento typ cíle a vynechaného prvku.  
   
-##  <a name="Implementing"></a> Implementace obslužné rutiny gesta  
+## <a name="Implementing"></a> Implementace obslužné rutiny gesta  
   
 ### <a name="the-gesture-handler-methods"></a>Metody obslužné rutiny gesta  
  Třída obslužné rutiny gesta implementuje a exportuje <xref:Microsoft.VisualStudio.Modeling.Diagrams.ExtensionEnablement.IGestureExtension>. Metody, které je třeba definovat jsou následující:  
@@ -280,17 +280,17 @@ V sadě Visual Studio můžete definovat příkazy, které jsou prováděny, kdy
   
  Parametry těchto metod jsou:  
   
--   `ShapeElement target`. Tvar nebo diagram, do kterého uživatel něco přetáhl.  
+- `ShapeElement target`. Tvar nebo diagram, do kterého uživatel něco přetáhl.  
   
      `ShapeElement` je třída implementace, které je základem UML v modelovacích nástrojích. Aby se snížilo riziko uvedení modelu a diagramů do nekonzistentního stavu, doporučujeme vám, že je velmi riskantní používat metody této třídy přímo. Místo toho zabalte prvek do `IShape`a pak použijte metody popsané v [zobrazení modelu UML v diagramech](../modeling/display-a-uml-model-on-diagrams.md).  
   
-    -   Získat `IShape`:  
+    - Získat `IShape`:  
   
         ```  
         IShape targetIShape = target.CreateIShape(target);  
         ```  
   
-    -   Chcete-li získat prvek modelu, který je cílen operací přetažení nebo poklepání:  
+    - Chcete-li získat prvek modelu, který je cílen operací přetažení nebo poklepání:  
   
         ```  
         IElement target = targetIShape.Element;  
@@ -298,20 +298,20 @@ V sadě Visual Studio můžete definovat příkazy, které jsou prováděny, kdy
   
          Můžete přetypovat na konkrétnější typ prvku.  
   
-    -   Získání úložiště modelu UML, který obsahuje UML model:  
+    - Získání úložiště modelu UML, který obsahuje UML model:  
   
         ```  
         IModelStore modelStore =   
           targetIShape.Element.GetModelStore();   
         ```  
   
-    -   Chcete-li získat přístup k hostiteli a poskytovateli služby:  
+    - Chcete-li získat přístup k hostiteli a poskytovateli služby:  
   
         ```  
         target.Store.GetService(typeof(EnvDTE.DTE)) as EnvDTE.DTE  
         ```  
   
--   `DiagramDragEventArgs eventArgs`. Tento parametr provede serializovanou formu zdrojového objektu operace přetažení:  
+- `DiagramDragEventArgs eventArgs`. Tento parametr provede serializovanou formu zdrojového objektu operace přetažení:  
   
     ```  
     System.Windows.Forms.IDataObject data = eventArgs.Data;    
@@ -348,26 +348,26 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>) {...}
   
  Další informace najdete v tématu [procházení modelu UML](../modeling/navigate-the-uml-model.md).  
   
-##  <a name="Installing"></a> Instalace a odinstalace rozšíření  
+## <a name="Installing"></a> Instalace a odinstalace rozšíření  
  Můžete nainstalovat [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] rozšíření ve vašem počítači i v jiných počítačích.  
   
 #### <a name="to-install-an-extension"></a>Instalace rozšíření  
   
-1.  V počítači, vyhledejte **VSIX** soubor, který byl vytvořen vaším projektem VSIX.  
+1. V počítači, vyhledejte **VSIX** soubor, který byl vytvořen vaším projektem VSIX.  
   
-    1.  V **Průzkumníka řešení**, v místní nabídce projektu VSIX zvolte **otevřít složku v Průzkumníku Windows**.  
+    1. V **Průzkumníka řešení**, v místní nabídce projektu VSIX zvolte **otevřít složku v Průzkumníku Windows**.  
   
-    2.  Vyhledejte soubor **bin\\\*\\**_YourProject_**VSIX.**  
+    2. Vyhledejte soubor **bin\\\*\\**_YourProject_**VSIX.**  
   
-2.  Kopírovat **VSIX** souboru k cílovému počítači, na kterém chcete nainstalovat rozšíření. To může být vlastní počítač nebo jiný.  
+2. Kopírovat **VSIX** souboru k cílovému počítači, na kterém chcete nainstalovat rozšíření. To může být vlastní počítač nebo jiný.  
   
      Cílový počítač musí mít některou z edicí systému [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] , který jste zadali v **source.extension.vsixmanifest**.  
   
-3.  V cílovém počítači, otevřete **VSIX** souboru.  
+3. V cílovém počítači, otevřete **VSIX** souboru.  
   
      **Instalační program rozšíření sady Visual Studio** otevře a nainstaluje rozšíření.  
   
-4.  Spusťte nebo restartujte [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)].  
+4. Spusťte nebo restartujte [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)].  
   
 #### <a name="to-uninstall-an-extension"></a>Odinstalace rozšíření  
   
@@ -381,7 +381,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>) {...}
   
    *%LocalAppData%* **\Local\Microsoft\VisualStudio\\[version]\Extensions**  
   
-##  <a name="DragExample"></a> Příklad  
+## <a name="DragExample"></a> Příklad  
  Následující příklad ukazuje, jak vytvořit životnosti v sekvenčním diagramu podle částí a portů komponentu přetažených z diagramu komponent.  
   
  Chcete-li ho otestovat, stiskněte klávesu F5. Otevře se experimentální instanci sady Visual Studio. V tomto případě otevřete UML model a vytvořte komponentu v diagramu komponent. Přidejte tuto komponentu do některých rozhraní a částí vnitřních komponent. Vyberte rozhraní a části. Potom přetáhněte rozhraní a části do sekvenčního diagramu. (Táhněte od diagramu komponent až po kartu pro sekvenční diagram a potom dolů do sekvenčního diagramu.) Životnost se zobrazí pro každé rozhraní a části.  

@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: bb3daab1196e151a4fea57ae120b2ec280e2e23a
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: 9e92cbdca3ac2c5c366ec054ba79f2e7324986c1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "58070214"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067609"
 ---
 # <a name="how-to-use-the-xml-schema-designer-with-xml-literals"></a>Postupy: Používání Návrháře schémat XML s literály XML
 
@@ -23,7 +23,7 @@ Toto téma popisuje postup zobrazení schématu přidružené k literálu v proj
 
 ## <a name="create-a-new-visual-basic-project"></a>Vytvoření nového projektu jazyka Visual Basic
 
-1.  Otevřít Visual Studio.
+1. Otevřít Visual Studio.
 
 2. Vytvořit nový jazyka Visual Basic **konzolovou aplikaci** projekt s názvem **XMLLiterals**.
 
@@ -31,11 +31,11 @@ Toto téma popisuje postup zobrazení schématu přidružené k literálu v proj
 
 ## <a name="add-an-existing-xsd-file"></a>Přidání stávajícího souboru XSD
 
-1.  Otevřete nový textový soubor v poznámkovém bloku. Zkopírujte ukázkový kód XML schéma z [nákupní pořadí schématu](../xml-tools/sample-xsd-file-simple-schema.md) a vložte ji do souboru.
+1. Otevřete nový textový soubor v poznámkovém bloku. Zkopírujte ukázkový kód XML schéma z [nákupní pořadí schématu](../xml-tools/sample-xsd-file-simple-schema.md) a vložte ji do souboru.
 
-2.  Uložte soubor do umístění s názvem *PurchaseOrderSchema.xsd*.
+2. Uložte soubor do umístění s názvem *PurchaseOrderSchema.xsd*.
 
-3.  V **Průzkumníka řešení**, klikněte pravým tlačítkem na název projektu, vyberte **přidat**a pak vyberte **existující položku**. **AddExisting položky** zobrazí se dialogové okno. Přejděte *PurchaseOrderSchema.xsd* souboru, vyberte ho a pak klikněte na tlačítko **přidat**.
+3. V **Průzkumníka řešení**, klikněte pravým tlačítkem na název projektu, vyberte **přidat**a pak vyberte **existující položku**. **AddExisting položky** zobrazí se dialogové okno. Přejděte *PurchaseOrderSchema.xsd* souboru, vyberte ho a pak klikněte na tlačítko **přidat**.
 
      Projekt XMLLiterals teď obsahuje dva soubory: *Module1.vb* a *PurchaseOrderSchema.xsd*.
 

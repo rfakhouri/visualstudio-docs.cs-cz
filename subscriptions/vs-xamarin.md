@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Další informace o předplatném školení na Xamarin University součástí vybraného předplatného sady Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: 21fd09f6c3b33b00abb377dad14409c138edcf00
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: faddafcc9c1bbc77a6d6c91b72bdb2865552583a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59664286"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066869"
 ---
 # <a name="xamarin-university-training-benefit-in-visual-studio-subscriptions"></a>Xamarin University školení výhoda v předplatných sady Visual Studio
 
@@ -29,9 +29,9 @@ Zobrazit [Xamarin University nejčastější dotazy k](https://university.xamari
 21. prosince 2018 Visual Studio Enterprise předplatitelé získají neomezený přístup k plné katalogové Xamarin University za šest měsíců.  Předplatitelé sady Visual Studio Professional přijímat tří měsíců od přístupu.
 
 ## <a name="support-resources"></a>Informační zdroje podpory
--  Potřebujete pomoc s Xamarin University?  Můžete najít širokou škálu zdrojů podpory na [ https://university.xamarin.com/support ](https://university.xamarin.com/support).
--  Potřebujete pomoc se prodeje, předplatnými, účty a fakturací pro předplatná sady Visual Studio, obraťte se na Visual Studio [podpora předplatných](https://visualstudio.microsoft.com/subscriptions/support/).
--  Máte dotaz k Visual Studio IDE, DevOps služby Azure nebo jiných produktů Visual Studio nebo služeb?  Navštivte [Visual Studio – podpora](https://visualstudio.microsoft.com/support/).
+- Potřebujete pomoc s Xamarin University?  Můžete najít širokou škálu zdrojů podpory na [ https://university.xamarin.com/support ](https://university.xamarin.com/support).
+- Potřebujete pomoc se prodeje, předplatnými, účty a fakturací pro předplatná sady Visual Studio, obraťte se na Visual Studio [podpora předplatných](https://visualstudio.microsoft.com/subscriptions/support/).
+- Máte dotaz k Visual Studio IDE, DevOps služby Azure nebo jiných produktů Visual Studio nebo služeb?  Navštivte [Visual Studio – podpora](https://visualstudio.microsoft.com/support/).
 
 ## <a name="frequently-asked-questions"></a>Nejčastější dotazy
 ### <a name="q--if-ive-already-activated-my-xamarin-university-benefit-by-december-21-2018-what-happens-after-that-date"></a>DOTAZ:  Pokud I po dokončení aktivace už Moje aplikace na Xamarin University výhodu ve 21. prosince 2018, co se stane po tomto datu?

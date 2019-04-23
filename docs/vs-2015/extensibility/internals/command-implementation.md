@@ -10,12 +10,12 @@ ms.assetid: c782175c-cce4-4bd0-8374-4a897ceb1b3d
 caps.latest.revision: 25
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8cd48e7338823c94ad9a16f1b087daac6abe8f6e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a208fabd3d205793763698cde0f6fe367c7bb8b5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54768294"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067830"
 ---
 # <a name="command-implementation"></a>Implementace příkazu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -69,23 +69,23 @@ if ( null != mcs )
   
 - Pokud vaše implementace některé z metod rozpozná GUID a příkaz, pak metoda by měla nastavit pole příznaků příkazů každý příkaz (v `prgCmds` parametr) pomocí následujících příznaků:  
   
-  -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Pokud příkaz je podporován.  
+  - <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Pokud příkaz je podporován.  
   
-  -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Pokud příkaz by neměly být viditelné.  
+  - <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Pokud příkaz by neměly být viditelné.  
   
-  -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Pokud příkaz je zapnutá a byly vráceny se zobrazí.  
+  - <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Pokud příkaz je zapnutá a byly vráceny se zobrazí.  
   
-  -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Pokud je příkaz povolen.  
+  - <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Pokud je příkaz povolen.  
   
-  -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Pokud příkaz by měl být skrytý, pokud se zobrazí v místní nabídce.  
+  - <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Pokud příkaz by měl být skrytý, pokud se zobrazí v místní nabídce.  
   
-  -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Pokud příkaz je kontroleru nabídky a není povolené, ale jeho seznamu rozevírací nabídky není prázdný a je stále k dispozici. (Tento příznak se používá jen zřídka.)  
+  - <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Pokud příkaz je kontroleru nabídky a není povolené, ale jeho seznamu rozevírací nabídky není prázdný a je stále k dispozici. (Tento příznak se používá jen zřídka.)  
   
 - Pokud příkaz bylo definováno v souboru .vsct `TextChanges` příznak, nastavte následující parametry:  
   
-  -   Nastavte `rgwz` elementu `pCmdText` parametr nový text příkazu.  
+  - Nastavte `rgwz` elementu `pCmdText` parametr nový text příkazu.  
   
-  -   Nastavte `cwActual` elementu `pCmdText` parametr velikosti řetězec příkazu.  
+  - Nastavte `cwActual` elementu `pCmdText` parametr velikosti řetězec příkazu.  
   
   Ujistěte se také, že aktuálním kontextu není funkce automatizace, pokud váš příkaz je určený speciálně pro zpracování funkcí automatizace.  
   

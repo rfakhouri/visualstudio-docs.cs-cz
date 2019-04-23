@@ -1,5 +1,5 @@
 ---
-title: 'Průvodce: Vytvoření datové sady pomocí návrháře datových sad'
+title: 'Návod: Vytvoření datové sady pomocí návrháře datových sad'
 ms.date: 09/11/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,14 +13,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: d706ab0cf179a4a4efefa8f60143ea8ce9800ef9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f91c24885cc6817889671dd7a1a6e7e1686ce93f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927669"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070522"
 ---
-# <a name="walkthrough-create-a-dataset-with-the-dataset-designer"></a>Průvodce: Vytvoření datové sady pomocí návrháře datových sad
+# <a name="walkthrough-create-a-dataset-with-the-dataset-designer"></a>Návod: Vytvoření datové sady pomocí návrháře datových sad
 
 V tomto návodu vytvoříte datovou sadu pomocí **Návrhář Dataset**. Tento článek vás provede procesem vytvoření nového projektu a přidání nové **datovou sadu** položku do ní. Se dozvíte, jak vytvořit tabulky na základě tabulek v databázi bez použití průvodce.
 
@@ -28,9 +28,9 @@ V tomto návodu vytvoříte datovou sadu pomocí **Návrhář Dataset**. Tento �
 
 Tento návod používá SQL Server Express LocalDB a ukázkové databáze Northwind.
 
-1.  Pokud nemáte SQL Server Express LocalDB, nainstalujte ji z [SQL Server Express stránku pro stažení](https://www.microsoft.com/sql-server/sql-server-editions-express), nebo prostřednictvím **instalační program sady Visual Studio**. V aplikaci Visual Studio Instalační služby systému SQL Server Express LocalDB lze nainstalovat jako součást **ukládání a zpracování dat** úlohy, nebo jako jednotlivých komponent.
+1. Pokud nemáte SQL Server Express LocalDB, nainstalujte ji z [SQL Server Express stránku pro stažení](https://www.microsoft.com/sql-server/sql-server-editions-express), nebo prostřednictvím **instalační program sady Visual Studio**. V aplikaci Visual Studio Instalační služby systému SQL Server Express LocalDB lze nainstalovat jako součást **ukládání a zpracování dat** úlohy, nebo jako jednotlivých komponent.
 
-2.  Instalace ukázkové databáze Northwind pomocí následujících kroků:
+2. Instalace ukázkové databáze Northwind pomocí následujících kroků:
 
     1. V sadě Visual Studio, otevřete **Průzkumník objektů systému SQL Server** okna. (Průzkumník objektů systému SQL Server je nainstalován jako součást **ukládání a zpracování dat** úlohy v instalačním programu sady Visual Studio.) Rozbalte **systému SQL Server** uzlu. Klikněte pravým tlačítkem na instanci LocalDB a vyberte **nový dotaz**.
 
@@ -56,23 +56,23 @@ Tento návod používá SQL Server Express LocalDB a ukázkové databáze Northw
 
 ## <a name="add-a-new-dataset-to-the-application"></a>Přidat novou datovou sadu do aplikace
 
-1.  Na **projektu** nabídce vyberte možnost **přidat novou položku**.
+1. Na **projektu** nabídce vyberte možnost **přidat novou položku**.
 
      Zobrazí se dialogové okno **Přidat novou položku**.
 
-2.  V levém podokně vyberte **Data**a pak vyberte **datovou sadu** v prostředním podokně.
+2. V levém podokně vyberte **Data**a pak vyberte **datovou sadu** v prostředním podokně.
 
-3.  Zadejte název datové sady **NorthwindDataset**a klikněte na tlačítko **přidat**.
+3. Zadejte název datové sady **NorthwindDataset**a klikněte na tlačítko **přidat**.
 
      Visual Studio přidá soubor s názvem **NorthwindDataset.xsd** do projektu a otevře jej v **Návrhář Dataset**.
 
 ## <a name="create-a-data-connection-in-server-explorer"></a>Vytvoření datového připojení v Průzkumníku serveru
 
-1.  Na **zobrazení** nabídky, klikněte na tlačítko **Průzkumníka serveru**.
+1. Na **zobrazení** nabídky, klikněte na tlačítko **Průzkumníka serveru**.
 
-2.  V **Průzkumníka serveru**, klikněte na tlačítko **připojit k databázi** tlačítko.
+2. V **Průzkumníka serveru**, klikněte na tlačítko **připojit k databázi** tlačítko.
 
-3.  Vytvořte připojení ke vzorové databázi Northwind.
+3. Vytvořte připojení ke vzorové databázi Northwind.
 
 ## <a name="create-the-tables-in-the-dataset"></a>Vytvoření tabulek v datové sadě
 
@@ -80,33 +80,33 @@ Tato část vysvětluje postup přidávání tabulek do datové sady.
 
 ### <a name="to-create-the-customers-table"></a>Vytvoření tabulky Zákazníci
 
-1.  Rozbalte datová připojení, kterou jste vytvořili v **Průzkumníka serveru**a potom rozbalte **tabulky** uzlu.
+1. Rozbalte datová připojení, kterou jste vytvořili v **Průzkumníka serveru**a potom rozbalte **tabulky** uzlu.
 
-2.  Přetáhněte **zákazníkům** tabulce **Průzkumníka serveru** na **Návrhář Dataset**.
+2. Přetáhněte **zákazníkům** tabulce **Průzkumníka serveru** na **Návrhář Dataset**.
 
      A **zákazníkům** tabulka dat a **CustomersTableAdapter** jsou přidány do datové sady.
 
 ### <a name="to-create-the-orders-table"></a>Vytvoření tabulky objednávek
 
--   Přetáhněte **objednávky** tabulce **Průzkumníka serveru** na **Návrhář Dataset**.
+- Přetáhněte **objednávky** tabulce **Průzkumníka serveru** na **Návrhář Dataset**.
 
      **Objednávky** tabulka dat **OrdersTableAdapter**a datová relace mezi **zákazníkům** a **objednávky** tabulky jsou přidány do Datová sada.
 
 ### <a name="to-create-the-orderdetails-table"></a>Postup vytvoření tabulky OrderDetails
 
--   Přetáhněte **OrderDetails** tabulce **Průzkumníka serveru** na **Návrhář Dataset**.
+- Přetáhněte **OrderDetails** tabulce **Průzkumníka serveru** na **Návrhář Dataset**.
 
      **OrderDetails** tabulka dat **OrderDetailsTableAdapter**a datová relace mezi **objednávky** a **OrderDetails** tabulky jsou přidány do datové sady.
 
 ## <a name="next-steps"></a>Další kroky
 
--   Uložte datovou sadu.
+- Uložte datovou sadu.
 
--   Vyberte položky v **zdroje dat** okno a přetáhněte je na formuláři. Další informace najdete v tématu [ovládací prvky vazby Windows Forms k datům v sadě Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md).
+- Vyberte položky v **zdroje dat** okno a přetáhněte je na formuláři. Další informace najdete v tématu [ovládací prvky vazby Windows Forms k datům v sadě Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md).
 
--   Do instancí TableAdapter přidejte další dotazy.
+- Do instancí TableAdapter přidejte další dotazy.
 
--   Přidejte logiku ověřování k událostem <xref:System.Data.DataTable.ColumnChanging> nebo <xref:System.Data.DataTable.RowChanging> tabulek dat v datové sadě. Další informace najdete v tématu [ověření dat v datových sadách](../data-tools/validate-data-in-datasets.md).
+- Přidejte logiku ověřování k událostem <xref:System.Data.DataTable.ColumnChanging> nebo <xref:System.Data.DataTable.RowChanging> tabulek dat v datové sadě. Další informace najdete v tématu [ověření dat v datových sadách](../data-tools/validate-data-in-datasets.md).
 
 ## <a name="see-also"></a>Viz také:
 

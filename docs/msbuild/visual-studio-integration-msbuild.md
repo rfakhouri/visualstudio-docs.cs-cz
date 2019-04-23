@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c5e3881bc346c5074c7fd4277708a16e22d4acd7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: fc915136f64000da94132c0d10e153a206ed1ec0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56597852"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072528"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Integrace se sadou Visual Studio (MSBuild)
 Visual Studio hostuje [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] k načtení a sestavení spravovaných projektů. Protože [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] je zodpovědné za projekt, téměř každý projekt ve [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] formát může být úspěšně použit v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], i když byl autorem jiný nástroj a má vlastní proces sestavení projektu.
@@ -75,13 +75,13 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 ## <a name="design-time-intellisense"></a>Technologie IntelliSense v době návrhu
  Chcete-li získat podporu technologie IntelliSense [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] předtím, než sestavení vygeneruje výstupné sestavení, musí být splněny následující podmínky:
 
--   Musí existovat cíl s názvem `Compile`.
+- Musí existovat cíl s názvem `Compile`.
 
--   Buď `Compile` cíl nebo některá z jeho závislostí musí volat úkol kompilátoru pro projekt, jako například `Csc` nebo `Vbc`.
+- Buď `Compile` cíl nebo některá z jeho závislostí musí volat úkol kompilátoru pro projekt, jako například `Csc` nebo `Vbc`.
 
--   Buď `Compile` cíl nebo některá z jeho závislostí musí způsobit, že kompilátor získá všechny potřebné parametry pro technologii IntelliSense, zvláště všechny odkazy.
+- Buď `Compile` cíl nebo některá z jeho závislostí musí způsobit, že kompilátor získá všechny potřebné parametry pro technologii IntelliSense, zvláště všechny odkazy.
 
--   Podmínky uvedené v [vnitroprocesové kompilátory](#in-process-compilers) oddílu musí být splněny.
+- Podmínky uvedené v [vnitroprocesové kompilátory](#in-process-compilers) oddílu musí být splněny.
 
 ## <a name="build-solutions"></a>Vytváření řešení
  V rámci [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], soubor řešení a pořadí sestavení projektu řízeno pomocí [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] samotný. Při sestavování řešení s *msbuild.exe* na příkazovém řádku [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] analyzuje soubor řešení a příkazy sestavení projektu. V obou případech jsou projekty sestaveny jednotlivě v pořadí závislosti a z odkazů typu projekt na projekt nejsou provázány. Naopak pokud jednotlivé projekty jsou vybaveny *msbuild.exe*, z odkazů typu projekt na projekt jsou provázány.
@@ -126,22 +126,22 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 ## <a name="design-time-target-execution"></a>Provádění cílů v době návrhu
  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pokusy o spuštění cílů s některými názvy při načítání projektu. Tyto cíle zahrnují `Compile`, `ResolveAssemblyReferences`, `ResolveCOMReferences`, `GetFrameworkPaths`, a `CopyRunEnvironmentFiles`. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Spustí tyto cíle, tak, aby kompilátor může být inicializován k zajištění technologie IntelliSense, ladicí program může být inicializována a zobrazení odkazů v Průzkumníku řešení může být vyřešený. Pokud tyto cíle nejsou přítomny, projekt se načtou a sestaví správně ale možnosti času návrhu v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] nebudou plně funkční.
 
-##  <a name="edit-project-files-in-visual-studio"></a>Upravit soubory projektu v sadě Visual Studio
+## <a name="edit-project-files-in-visual-studio"></a>Upravit soubory projektu v sadě Visual Studio
  Chcete-li upravit [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] projektu přímo, můžete otevřít soubor projektu v editoru XML pro Visual Studio.
 
 #### <a name="to-unload-and-edit-a-project-file-in-visual-studio"></a>Uvolnění projektu a jeho úprava v sadě Visual Studio
 
-1.  V **Průzkumníka řešení**, otevřete místní nabídku pro projekt a klikněte na tlačítko **uvolnit projekt**.
+1. V **Průzkumníka řešení**, otevřete místní nabídku pro projekt a klikněte na tlačítko **uvolnit projekt**.
 
      Projekt je označen **(není k dispozici)**.
 
-2.  V **Průzkumníka řešení**, otevřete místní nabídku pro nedostupný projekt a klikněte na tlačítko **upravit \<soubor projektu >**.
+2. V **Průzkumníka řešení**, otevřete místní nabídku pro nedostupný projekt a klikněte na tlačítko **upravit \<soubor projektu >**.
 
      Soubor projektu se otevře v editoru XML sady Visual Studio.
 
-3.  Upravte, uložte a zavřete soubor projektu.
+3. Upravte, uložte a zavřete soubor projektu.
 
-4.  V **Průzkumníka řešení**, otevřete místní nabídku pro nedostupný projekt a klikněte na tlačítko **znovu načíst projekt**.
+4. V **Průzkumníka řešení**, otevřete místní nabídku pro nedostupný projekt a klikněte na tlačítko **znovu načíst projekt**.
 
 ## <a name="intellisense-and-validation"></a>Technologie IntelliSense a ověřování
  Při použití editoru XML k úpravám souborů projektu, technologie IntelliSense a ověřování řízeno souborem [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] soubory schémat. Tyto jsou nainstalovány v mezipaměti schématu, který se nachází v  *\<instalačního adresáře sady Visual Studio > \Xml\Schemas\1033\MSBuild*.

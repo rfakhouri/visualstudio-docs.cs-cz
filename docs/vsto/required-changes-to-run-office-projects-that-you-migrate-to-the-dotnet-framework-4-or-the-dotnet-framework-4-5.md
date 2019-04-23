@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0f4add2a01a9fd26fe5479bbf6ba54f25e8b2e14
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f24b86f51d658ea2f228f1e72d18394fcba4b47b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56625696"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072816"
 ---
 # <a name="required-changes-to-run-office-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>Požadované změny pro spouštění projektů Office migrovaných na rozhraní .NET Framework 4 nebo .NET Framework 4.5
   Pokud cílové rozhraní projektu pro Office se změní na [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] nebo později z dřívější verze rozhraní .NET Framework, je třeba provést následující úkoly a ujistěte se, že můžete řešení spustit na vývojovém počítači a v počítačích koncových uživatelů:
@@ -39,14 +39,14 @@ ms.locfileid: "56625696"
 
 #### <a name="to-remove-the-securitytransparentattribute"></a>Chcete-li odebrat atributu SecurityTransparentAttribute
 
-1.  V sadě Visual Studio po otevření projektu otevřete **Průzkumníka řešení**.
+1. V sadě Visual Studio po otevření projektu otevřete **Průzkumníka řešení**.
 
-2.  V části **vlastnosti** uzel (pro C#) nebo **Můj projekt** uzel (Visual Basic), poklikejte na soubor AssemblyInfo kódu a otevře se v editoru kódu.
+2. V části **vlastnosti** uzel (pro C#) nebo **Můj projekt** uzel (Visual Basic), poklikejte na soubor AssemblyInfo kódu a otevře se v editoru kódu.
 
     > [!NOTE]
     >  V projektech Visual Basic, musíte kliknout na **zobrazit všechny soubory** tlačítko **Průzkumníka řešení** zobrazíte kód souboru AssemblyInfo.
 
-3.  Vyhledejte <xref:System.Security.SecurityTransparentAttribute> a odeberte ze souboru nebo ji komentář.
+3. Vyhledejte <xref:System.Security.SecurityTransparentAttribute> a odeberte ze souboru nebo ji komentář.
 
     ```vb
     <Assembly: SecurityTransparent()>

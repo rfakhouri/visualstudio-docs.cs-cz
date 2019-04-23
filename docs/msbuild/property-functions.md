@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8474bd6550bb57a51bfb6e2c585a333f05d3c1d9
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: c94b33fad50cb5e271615629641ea7307f669255
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59652407"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072562"
 ---
 # <a name="property-functions"></a>Funkce vlastností
 
@@ -177,7 +177,7 @@ Tady je seznam funkcí vlastností MSBuild:
 |řetězec MakeRelative (basePath řetězec, řetězec cesty)|Díky `path` vzhledem k `basePath`. `basePath` musí být absolutní adresáře. Pokud `path` nemůže být proveden relativní, je vrácena verbatim. Podobně jako `Uri.MakeRelativeUri`.|
 |řetězec ValueOrDefault (conditionValue řetězec, výchozí hodnota řetězec)|Vrátí řetězec v parametru "Výchozí" pouze v případě, že parametr 'conditionValue' je prázdný, jinak, vraťte hodnotu conditionValue.|
 
-##  <a name="nested-property-functions"></a>Vnořené vlastnosti funkce
+## <a name="nested-property-functions"></a>Vnořené vlastnosti funkce
 
 Můžete kombinovat funkce vlastností formuláře složitější funguje, jak ukazuje následující příklad.
 

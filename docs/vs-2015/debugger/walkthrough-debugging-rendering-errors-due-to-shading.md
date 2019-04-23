@@ -1,5 +1,5 @@
 ---
-title: 'Průvodce: Ladění chyb stínováním při vykreslování | Dokumentace Microsoftu'
+title: 'Návod: Ladění chyb stínováním při vykreslování | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -9,25 +9,25 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 42627b336bb83d915b2af96f0ee569a305212f6d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b4c158c4ce6762b69f73a55915cc459f84cd7fff
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54775379"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067154"
 ---
-# <a name="walkthrough-debugging-rendering-errors-due-to-shading"></a>Průvodce: Ladění chyb stínováním při vykreslování
+# <a name="walkthrough-debugging-rendering-errors-due-to-shading"></a>Návod: Ladění chyb stínováním při vykreslování
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Tento návod ukazuje, jak používat [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] diagnostiky grafiky k prozkoumání objekt, který je nesprávně barevný z důvodu chyby shaderu.  
   
  Tento návod ukazuje, jak:  
   
--   Zkontrolujte dokument grafických protokolů k identifikaci pixelů, které ukazují problém.  
+- Zkontrolujte dokument grafických protokolů k identifikaci pixelů, které ukazují problém.  
   
--   Použití **historie pixelů grafiky** okno, aby lépe zkoumat stav pixelů.  
+- Použití **historie pixelů grafiky** okno, aby lépe zkoumat stav pixelů.  
   
--   Použití **ladicí program HLSL** prozkoumat pixelů a vertex shader.  
+- Použití **ladicí program HLSL** prozkoumat pixelů a vertex shader.  
   
 ## <a name="scenario"></a>Scénář  
  Nesprávný barevné zvýrazňování u objektů běžně nastane, pokud se předá vertex shader pixel shader nesprávných nebo neúplných informací.  

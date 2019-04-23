@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ee3e0b6f06e25fdefbcf6decdd64c5de7cd94273
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2cc909828dc77c0f1dbe31c79255f2c93d2a95b3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56597579"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066839"
 ---
 # <a name="how-to-add-namedrange-controls-to-worksheets"></a>Postupy: Přidání ovládacích prvků NamedRange do listů
   Můžete přidat <xref:Microsoft.Office.Tools.Excel.NamedRange> ovládacích prvků na list aplikace Microsoft Office Excel v době návrhu a za běhu v projektech na úrovni dokumentu.
@@ -38,57 +38,57 @@ ms.locfileid: "56597579"
 
   Další informace o <xref:Microsoft.Office.Tools.Excel.NamedRange> ovládacích prvků, naleznete v tématu [namedrange – ovládací prvek](../vsto/namedrange-control.md).
 
-##  <a name="designtime"></a> Přidání ovládacích prvků NamedRange v době návrhu
+## <a name="designtime"></a> Přidání ovládacích prvků NamedRange v době návrhu
  Existuje několik způsobů, jak přidat <xref:Microsoft.Office.Tools.Excel.NamedRange> ovládacích prvků na list v projektu úrovni dokumentu v době návrhu: z aplikace Excel v sadě Visual Studio **nástrojů**a od **zdroje dat** okna.
 
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
 ### <a name="to-add-a-namedrange-control-to-a-worksheet-using-the-name-box-in-excel"></a>Chcete-li přidat namedrange – ovládací prvek na listu s použitím pole názvu v aplikaci Excel
 
-1.  Vyberte buňku nebo buňky, které chcete zahrnout v pojmenovaném rozsahu.
+1. Vyberte buňku nebo buňky, které chcete zahrnout v pojmenovaném rozsahu.
 
-2.  V **pole název**, zadejte název rozsahu a stiskněte klávesu **Enter**.
+2. V **pole název**, zadejte název rozsahu a stiskněte klávesu **Enter**.
 
      **Pole název** se nachází vedle řádku vzorců nad sloupci **A** listu.
 
 ### <a name="to-add-a-namedrange-control-to-a-worksheet-using-the-toolbox"></a>Přidání ovládacího prvku NamedRange do listu pomocí panelu nástrojů
 
-1.  Otevřít **nástrojů** a klikněte na tlačítko **ovládací prvky Excelu** kartu.
+1. Otevřít **nástrojů** a klikněte na tlačítko **ovládací prvky Excelu** kartu.
 
-2.  Klikněte na tlačítko <xref:Microsoft.Office.Tools.Excel.NamedRange> a přetáhněte ji do listu.
+2. Klikněte na tlačítko <xref:Microsoft.Office.Tools.Excel.NamedRange> a přetáhněte ji do listu.
 
      **Přidat pojmenované rozsah** zobrazí se dialogové okno.
 
-3.  Vyberte buňku nebo buňky, které chcete zahrnout v pojmenovaném rozsahu.
+3. Vyberte buňku nebo buňky, které chcete zahrnout v pojmenovaném rozsahu.
 
-4.  Klikněte na **OK**.
+4. Klikněte na **OK**.
 
      Pokud nechcete, aby výchozí název, který je přiřazen do ovládacího prvku, můžete změnit název v **vlastnosti** okna.
 
 ### <a name="to-add-a-namedrange-control-to-a-worksheet-using-the-data-sources-window"></a>Přidání ovládacího prvku NamedRange do listu pomocí okna zdrojů dat
 
-1.  Otevřít **zdroje dat** okna a vytvořte zdroj dat pro váš projekt. Další informace najdete v tématu [přidat nové připojení](../data-tools/add-new-connections.md).
+1. Otevřít **zdroje dat** okna a vytvořte zdroj dat pro váš projekt. Další informace najdete v tématu [přidat nové připojení](../data-tools/add-new-connections.md).
 
-2.  Přetáhněte jedno pole z **zdroje dat** okno do listu.
+2. Přetáhněte jedno pole z **zdroje dat** okno do listu.
 
      Vázaný na data <xref:Microsoft.Office.Tools.Excel.NamedRange> ovládací prvek je přidán do listu. Další informace najdete v tématu [a datové vazby Windows Forms](/dotnet/framework/winforms/data-binding-and-windows-forms).
 
-##  <a name="runtimedoclevel"></a> Přidání ovládacích prvků NamedRange za běhu v projektu úrovni dokumentu
+## <a name="runtimedoclevel"></a> Přidání ovládacích prvků NamedRange za běhu v projektu úrovni dokumentu
  Můžete přidat <xref:Microsoft.Office.Tools.Excel.NamedRange> řízení prostřednictvím kódu programu na list za běhu. To umožňuje vytvářet hostitelské ovládací prvky v reakci na události. Dynamicky generovaný pojmenované oblasti nejsou zachované v listu jako hostitele Určuje, kdy je uzavřen do listu. Další informace najdete v tématu [přidání ovládacích prvků do dokumentů Office za běhu](../vsto/adding-controls-to-office-documents-at-run-time.md).
 
 ### <a name="to-add-a-namedrange-control-to-a-worksheet-programmatically"></a>Přidání ovládacího prvku NamedRange do listu prostřednictvím kódu programu
 
-1.  V <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> obslužná rutina události `Sheet1`, vložte následující kód pro přidání <xref:Microsoft.Office.Tools.Excel.NamedRange> ovládacího prvku do buňky **A1** a nastavte jeho <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> vlastnost `Hello world!`
+1. V <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> obslužná rutina události `Sheet1`, vložte následující kód pro přidání <xref:Microsoft.Office.Tools.Excel.NamedRange> ovládacího prvku do buňky **A1** a nastavte jeho <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> vlastnost `Hello world!`
 
      [!code-csharp[Trin_VstcoreHostControlsExcel#3](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#3)]
      [!code-vb[Trin_VstcoreHostControlsExcel#3](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#3)]
 
-##  <a name="runtimeaddin"></a> Přidání ovládacích prvků NamedRange za běhu v projektu doplňku VSTO
+## <a name="runtimeaddin"></a> Přidání ovládacích prvků NamedRange za běhu v projektu doplňku VSTO
  Můžete přidat <xref:Microsoft.Office.Tools.Excel.NamedRange> řízení prostřednictvím kódu programu k žádné otevřené listu v projektu doplňku VSTO. Dynamicky generovaný pojmenované oblasti nejsou zachované v listu jako hostitele Určuje, kdy je uzavřen do listu. Další informace najdete v tématu [rozšíření Wordových dokumentů a Excelových sešitů v doplňcích VSTO za běhu](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).
 
 ### <a name="to-add-a-namedrange-control-to-a-worksheet-programmatically"></a>Přidání ovládacího prvku NamedRange do listu prostřednictvím kódu programu
 
-1.  Následující kód vygeneruje hostitelská položka worksheet, která je založená na open listu a potom přidá <xref:Microsoft.Office.Tools.Excel.NamedRange> ovládacího prvku do buňky **A1** a nastaví její <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> vlastnost `Hello world`.
+1. Následující kód vygeneruje hostitelská položka worksheet, která je založená na open listu a potom přidá <xref:Microsoft.Office.Tools.Excel.NamedRange> ovládacího prvku do buňky **A1** a nastaví její <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> vlastnost `Hello world`.
 
      [!code-csharp[Trin_Excel_Dynamic_Controls#7](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/ThisAddIn.cs#7)]
      [!code-vb[Trin_Excel_Dynamic_Controls#7](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/ThisAddIn.vb#7)]

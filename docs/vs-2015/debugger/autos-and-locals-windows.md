@@ -21,12 +21,12 @@ caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 612ed741e373b27c3564c185cc3e9bacffcb7739
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 261c0c0bd8b48634c8d24d56ee4df7ea3bbcf135
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54775744"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072848"
 ---
 # <a name="autos-and-locals-windows"></a>Automatické hodnoty a místní hodnoty Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -84,7 +84,7 @@ void main() {
   
  Můžete také zobrazit návratové hodnoty funkce a metody v některých případech. Zobrazit [zobrazení návratových hodnot volání metod](#bkmk_returnValue) níže.  
   
-##  <a name="bkmk_returnValue"></a> Zobrazení návratových hodnot volání metod  
+## <a name="bkmk_returnValue"></a> Zobrazení návratových hodnot volání metod  
  V kódu rozhraní .NET a C++ může Kontrola návratových hodnot při kroku přes nebo mimo volání metody. Tato funkce je užitečná, když výsledek volání metody není uložen v místní proměnné, například při použití metody jako parametr nebo návratovou hodnotu metody jiné.  
   
  Následující kód jazyka C# přidává návratové hodnoty dvou funkcí:  
@@ -133,11 +133,11 @@ private static int subtractVars(int i, int j)
   
  Však opatrně při změně hodnoty. Mohlo dojít k některému z následujících problémů:  
   
--   Hodnocení některých výrazů může změnit hodnotu proměnné nebo jinak ovlivnit stav programu. Například vyhodnocení `var1 = ++var2` změní hodnotu `var1` a `var2`.  
+- Hodnocení některých výrazů může změnit hodnotu proměnné nebo jinak ovlivnit stav programu. Například vyhodnocení `var1 = ++var2` změní hodnotu `var1` a `var2`.  
   
      Výrazy, které mění data mají často [vedlejší účinky](https://en.wikipedia.org/wiki/Side_effect_\(computer_science\)), které mohou způsobit neočekávané výsledky, pokud si nejste vědomi. Ujistěte se, že chápete důsledky takové změny, před jeho provedením.  
   
--   Úpravy hodnot s plovoucí desetinnou čárkou mohou díky převodu komponenty zlomku z desítkové do binární soustavy způsobit drobné nepřesnosti. I zdánlivě neškodné úpravy mohou v proměnné s plovoucí desetinnou čárkou způsobit změny některých nejméně významných bitů.  
+- Úpravy hodnot s plovoucí desetinnou čárkou mohou díky převodu komponenty zlomku z desítkové do binární soustavy způsobit drobné nepřesnosti. I zdánlivě neškodné úpravy mohou v proměnné s plovoucí desetinnou čárkou způsobit změny některých nejméně významných bitů.  
   
 ## <a name="debug-location-toolbar"></a>panel nástrojů Ladit umístění  
  Můžete použít **umístění ladění** nástrojů a vyberte požadované funkce, vlákna nebo procesu. Nastavte zarážku a spusťte ladění. (Pokud nevidíte tento panel nástrojů, můžete ji povolit kliknutím na prázdnou část oblasti panelu nástrojů. Zobrazí se seznam panely nástrojů; Vyberte **umístění ladění**). Při dosažení zarážky zastaví provádění zobrazíte panelu nástrojů umístění ladění, což je dolní řádek na následujícím obrázku:  

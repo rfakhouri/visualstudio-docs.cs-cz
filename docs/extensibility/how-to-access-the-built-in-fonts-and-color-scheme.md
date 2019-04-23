@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 831123caead6593fdbb548fd6e69a63646790d8a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 58d5fd0bfe1c8d5f5896d365a7b0ecfdb8da25b3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54969087"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068220"
 ---
 # <a name="how-to-access-the-built-in-fonts-and-color-ccheme"></a>Postupy: Přístup k vestavěné písma a barev ccheme
 Integrovaného vývojového prostředí (IDE) sady Visual Studio obsahuje schéma písma a barvy, který je spojen s okno editoru. Toto schéma prostřednictvím můžete přistupovat <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> rozhraní.
@@ -34,26 +34,26 @@ Integrovaného vývojového prostředí (IDE) sady Visual Studio obsahuje schém
 
 ## <a name="to-define-a-category-using-built-in-fonts-and-colors"></a>Chcete-li definovat kategorie pomocí integrované písmo a barvy
 
-1.  Vytvořte libovolný identifikátor GUID.
+1. Vytvořte libovolný identifikátor GUID.
 
      Tento identifikátor GUID slouží k jednoznačné identifikaci kategorii. Rozhraní IDE výchozí písma a barvy specifikace opětovně používá tuto kategorii.
 
     > [!NOTE]
     >  Při načítání dat písma a barvy s <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> nebo jiných rozhraní rozšíření VSPackages použít tento identifikátor GUID k odkazování předdefinované informace.
 
-2.  Název kategorie musí přidat do tabulky řetězců uvnitř sady VSPackage prostředky (*.rc*) souboru, takže může být lokalizována, podle potřeby při zobrazení v rozhraní IDE.
+2. Název kategorie musí přidat do tabulky řetězců uvnitř sady VSPackage prostředky (*.rc*) souboru, takže může být lokalizována, podle potřeby při zobrazení v rozhraní IDE.
 
      Další informace najdete v tématu [přidání nebo odstranění řetězce](/cpp/windows/adding-or-deleting-a-string).
 
 ### <a name="to-register-a-category-using-built-in-fonts-and-colors"></a>K registraci kategorie pomocí integrované písmo a barvy
 
-1.  Vytvořte zvláštní druh položky registru kategorie v následujícím umístění:
+1. Vytvořte zvláštní druh položky registru kategorie v následujícím umístění:
 
      *[HKLM\SOFTWARE\Microsoft \Visual Studio\\\<Visual Studio version>\FontAndColors\\\<Category>*]
 
      *\<Kategorie >* je nelokalizovaný název kategorie.
 
-2.  Naplnění registru uložených písma a barvy schéma pomocí čtyři hodnoty:
+2. Naplnění registru uložených písma a barvy schéma pomocí čtyři hodnoty:
 
     |Název|Typ|Data|Popis|
     |----------|----------|----------|-----------------|

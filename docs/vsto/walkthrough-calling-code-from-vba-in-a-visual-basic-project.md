@@ -1,5 +1,5 @@
 ---
-title: 'Průvodce: Volání kódu z jazyka VBA v projektu jazyka Visual Basic'
+title: 'Návod: Volání kódu z jazyka VBA v projektu jazyka Visual Basic'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -19,14 +19,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 85cb5377ee679cd44a0a8120af9febcff447e444
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: ca0c160cb9a1cb6f76f64293db7858c0609d2d5d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56636941"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069975"
 ---
-# <a name="walkthrough-call-code-from-vba-in-a-visual-basic-project"></a>Průvodce: Volání kódu z jazyka VBA v projektu jazyka Visual Basic
+# <a name="walkthrough-call-code-from-vba-in-a-visual-basic-project"></a>Návod: Volání kódu z jazyka VBA v projektu jazyka Visual Basic
   Tento návod ukazuje, jak volat metodu v přizpůsobení úrovni dokumentu pro aplikaci Microsoft Office Word v prostředí Visual Basic pro kód Applications (VBA) v dokumentu. Postup zahrnuje tři základní kroky: Přidejte metodu k `ThisDocument` hostování třída položek, zveřejňují metodu pro kód VBA a poté zavolejte metodu z kód VBA v dokumentu.
 
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
@@ -35,15 +35,15 @@ ms.locfileid: "56636941"
 
  Tento návod znázorňuje následující úlohy:
 
--   Vytvoření dokumentu, který obsahuje kód VBA.
+- Vytvoření dokumentu, který obsahuje kód VBA.
 
--   Důvěřující umístění dokumentu pomocí Centra zabezpečení v aplikaci Word.
+- Důvěřující umístění dokumentu pomocí Centra zabezpečení v aplikaci Word.
 
--   Přidání metody do `ThisDocument` hostovat třída položek.
+- Přidání metody do `ThisDocument` hostovat třída položek.
 
--   Vystavení metodu pro kód VBA.
+- Vystavení metodu pro kód VBA.
 
--   Volání metody z jazyka VBA kód.
+- Volání metody z jazyka VBA kód.
 
 > [!NOTE]
 >  Váš počítač může v následujících pokynech zobrazovat odlišné názvy nebo umístění některých prvků uživatelského rozhraní sady Visual Studio. Tyto prvky jsou určeny edicí sady Visual Studio a použitým nastavením. Další informace najdete v tématu [přizpůsobení integrovaného vývojového prostředí sady Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
@@ -51,9 +51,9 @@ ms.locfileid: "56636941"
 ## <a name="prerequisites"></a>Požadavky
  K dokončení tohoto návodu budete potřebovat následující komponenty:
 
--   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
+- [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
--   Microsoft Word
+- Microsoft Word
 
 ## <a name="create-a-document-that-contains-vba-code"></a>Vytvoření dokumentu, který obsahuje kód VBA
  Prvním krokem je vytvoření dokumentu s podporou maker, která obsahuje jednoduché – makro VBA. Dokument musí obsahovat projekt VBA, než vytvoříte projekt sady Visual Studio, který je založen na tento dokument. V opačném případě sady Visual Studio nelze změnit projekt VBA umožňující kód VBA, chcete-li volat vlastního nastavení sestavení.
@@ -62,54 +62,54 @@ ms.locfileid: "56636941"
 
 ### <a name="to-create-a-document-that-contains-vba-code"></a>Vytvoření dokumentu, který obsahuje kód VBA
 
-1.  Spuštění aplikace Word.
+1. Spuštění aplikace Word.
 
-2.  Uložit aktivní dokument jako slovo **dokument s podporou maker (\*DOCM)** s názvem **DocumentWithVBA**. Uložte ho na místě, například na plochu.
+2. Uložit aktivní dokument jako slovo **dokument s podporou maker (\*DOCM)** s názvem **DocumentWithVBA**. Uložte ho na místě, například na plochu.
 
-3.  Na pásu karet klikněte na tlačítko **Developer** kartu.
+3. Na pásu karet klikněte na tlačítko **Developer** kartu.
 
     > [!NOTE]
     >  Pokud **Developer** karta není zobrazena, musíte ji nejdříve zobrazit. Další informace najdete v tématu [jak: Zobrazení karty Vývojář na pásu karet](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
 
-4.  V **kód** klikněte na možnost **jazyka Visual Basic**.
+4. V **kód** klikněte na možnost **jazyka Visual Basic**.
 
      Otevře se Editor jazyka Visual Basic.
 
-5.  V **projektu** okna, dvakrát klikněte na panel **ThisDocument**.
+5. V **projektu** okna, dvakrát klikněte na panel **ThisDocument**.
 
      V souboru kódu `ThisDocument` objektu se otevře.
 
-6.  Přidejte následující kód VBA do souboru kódu. Tento kód definuje jednoduchou funkci, která nemá žádný účinek. Jediným účelem této funkce je zajistit, že existuje projekt VBA v dokumentu. Toto je nezbytné pro pozdější kroky v tomto názorném postupu.
+6. Přidejte následující kód VBA do souboru kódu. Tento kód definuje jednoduchou funkci, která nemá žádný účinek. Jediným účelem této funkce je zajistit, že existuje projekt VBA v dokumentu. Toto je nezbytné pro pozdější kroky v tomto názorném postupu.
 
     ```vb
     Sub EmptySub()
     End Sub
     ```
 
-7.  Dokument uložte a ukončete Word.
+7. Dokument uložte a ukončete Word.
 
 ## <a name="create-the-project"></a>Vytvoření projektu
  Nyní můžete vytvořit projekt úrovni dokumentu pro Word, který používá s podporou maker dokument, který jste vytvořili dříve.
 
 ### <a name="to-create-a-new-project"></a>Chcete-li vytvořit nový projekt
 
-1.  Spustit [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
+1. Spustit [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
-2.  Na **souboru** nabídky, přejděte k **nový**a potom klikněte na tlačítko **projektu**. Pokud vaše rozhraní IDE nastaveno pro použití vývojového nastavení jazyka Visual Basic, na **souboru** nabídky, klikněte na tlačítko **nový projekt**.
+2. Na **souboru** nabídky, přejděte k **nový**a potom klikněte na tlačítko **projektu**. Pokud vaše rozhraní IDE nastaveno pro použití vývojového nastavení jazyka Visual Basic, na **souboru** nabídky, klikněte na tlačítko **nový projekt**.
 
-3.  V podokně šablony rozbalte **jazyka Visual Basic**a potom rozbalte **Office/SharePoint**.
+3. V podokně šablony rozbalte **jazyka Visual Basic**a potom rozbalte **Office/SharePoint**.
 
-4.  Vyberte **Office Add-ins** uzlu.
+4. Vyberte **Office Add-ins** uzlu.
 
-5.  V seznamu šablon projektu vyberte **dokument aplikace Word 2010** nebo **dokument aplikace Word 2013** projektu.
+5. V seznamu šablon projektu vyberte **dokument aplikace Word 2010** nebo **dokument aplikace Word 2013** projektu.
 
-6.  V **název** zadejte **CallingCodeFromVBA**.
+6. V **název** zadejte **CallingCodeFromVBA**.
 
-7.  Klikněte na **OK**.
+7. Klikněte na **OK**.
 
      **Visual Studio Tools for Office Project Wizard** otevře.
 
-8.  Vyberte **zkopírovat existující dokument**a v **úplnou cestu k existujícímu dokumentu** zadejte umístění **DocumentWithVBA** dokument, který jste vytvořili dříve . Pokud používáte s podporou maker dokumentu, zadejte umístění tohoto dokumentu.
+8. Vyberte **zkopírovat existující dokument**a v **úplnou cestu k existujícímu dokumentu** zadejte umístění **DocumentWithVBA** dokument, který jste vytvořili dříve . Pokud používáte s podporou maker dokumentu, zadejte umístění tohoto dokumentu.
 
 9. Klikněte na tlačítko **Dokončit**.
 
@@ -120,21 +120,21 @@ ms.locfileid: "56636941"
 
 ### <a name="to-trust-the-location-of-the-document"></a>Důvěřovat umístění dokumentu
 
-1.  Spuštění aplikace Word.
+1. Spuštění aplikace Word.
 
-2.  Klikněte na tlačítko **souboru** kartu.
+2. Klikněte na tlačítko **souboru** kartu.
 
-3.  Klikněte na tlačítko **možnosti v aplikaci Word** tlačítko.
+3. Klikněte na tlačítko **možnosti v aplikaci Word** tlačítko.
 
-4.  V podokně kategorie, klikněte na tlačítko **centrum**.
+4. V podokně kategorie, klikněte na tlačítko **centrum**.
 
-5.  V podokně podrobností klikněte na tlačítko **nastavení Centra zabezpečení**.
+5. V podokně podrobností klikněte na tlačítko **nastavení Centra zabezpečení**.
 
-6.  V podokně kategorie, klikněte na tlačítko **důvěryhodná umístění**.
+6. V podokně kategorie, klikněte na tlačítko **důvěryhodná umístění**.
 
-7.  V podokně podrobností klikněte na tlačítko **přidat nové umístění**.
+7. V podokně podrobností klikněte na tlačítko **přidat nové umístění**.
 
-8.  V **Microsoft Office důvěryhodné umístění** dialogové okno, přejděte do složky, která obsahuje **CallingCodeFromVBA** projektu.
+8. V **Microsoft Office důvěryhodné umístění** dialogové okno, přejděte do složky, která obsahuje **CallingCodeFromVBA** projektu.
 
 9. Vyberte **podsložky tohoto umístění jsou také důvěryhodné**.
 
@@ -151,30 +151,30 @@ ms.locfileid: "56636941"
 
 ### <a name="to-add-a-method-to-the-thisdocument-class"></a>Přidání metody ThisDocument – třída
 
-1.  V **Průzkumníka řešení**, klikněte pravým tlačítkem na **ThisDocument.vb**a potom klikněte na tlačítko **zobrazit kód**.
+1. V **Průzkumníka řešení**, klikněte pravým tlačítkem na **ThisDocument.vb**a potom klikněte na tlačítko **zobrazit kód**.
 
      **ThisDocument.vb** soubor se otevře v editoru kódu.
 
-2.  Přidejte následující metodu do `ThisDocument` třídy. Tato metoda vytvoří tabulku se dvěma řádky a dva sloupce na začátku dokumentu. Parametry zadejte text, který se zobrazí v prvním řádku. Později v tomto návodu bude tuto metodu volat z kódu jazyka VBA v dokumentu.
+2. Přidejte následující metodu do `ThisDocument` třídy. Tato metoda vytvoří tabulku se dvěma řádky a dva sloupce na začátku dokumentu. Parametry zadejte text, který se zobrazí v prvním řádku. Později v tomto návodu bude tuto metodu volat z kódu jazyka VBA v dokumentu.
 
      [!code-vb[Trin_CallingVBCustomizationFromVBA#1](../vsto/codesnippet/VisualBasic/CallingCodeFromVBA/ThisDocument.vb#1)]
 
-3.  Sestavte projekt.
+3. Sestavte projekt.
 
 ## <a name="expose-the-method-to-vba-code"></a>Vystavit metodu pro kód VBA
  Zveřejnit `CreateTable` metodu pro kód VBA v dokumentu, nastavte **EnableVbaCallers** vlastnost `ThisDocument` položka hostitele na **True**.
 
 ### <a name="to-expose-the-method-to-vba-code"></a>Vystavit metodu pro kód VBA
 
-1.  V **Průzkumníka řešení**, dvakrát klikněte na panel **ThisDocument.vb**.
+1. V **Průzkumníka řešení**, dvakrát klikněte na panel **ThisDocument.vb**.
 
      **DocumentWithVBA** soubor se otevře v návrháři.
 
-2.  V **vlastnosti** okna, vyberte **EnableVbaCallers** vlastnost a změňte hodnotu na **True**.
+2. V **vlastnosti** okna, vyberte **EnableVbaCallers** vlastnost a změňte hodnotu na **True**.
 
-3.  Klikněte na tlačítko **OK** ve zprávě, která se zobrazí.
+3. Klikněte na tlačítko **OK** ve zprávě, která se zobrazí.
 
-4.  Sestavte projekt.
+4. Sestavte projekt.
 
 ## <a name="call-the-method-from-vba-code"></a>Volání metody z jazyka VBA kód
  Nyní můžete volat `CreateTable` metodu z kód VBA v dokumentu.
@@ -184,15 +184,15 @@ ms.locfileid: "56636941"
 
 ### <a name="to-call-the-method-from-vba-code"></a>Volat metodu z jazyka VBA kód
 
-1.  Stisknutím klávesy **F5** ke spuštění projektu.
+1. Stisknutím klávesy **F5** ke spuštění projektu.
 
-2.  Na **Developer** kartě **kód** klikněte na možnost **jazyka Visual Basic**.
+2. Na **Developer** kartě **kód** klikněte na možnost **jazyka Visual Basic**.
 
      Otevře se Editor jazyka Visual Basic.
 
-3.  Na **vložit** nabídky, klikněte na tlačítko **modulu**.
+3. Na **vložit** nabídky, klikněte na tlačítko **modulu**.
 
-4.  Přidejte následující kód do nového modulu.
+4. Přidejte následující kód do nového modulu.
 
      Tento kód volá `CreateTable` metoda v vlastního nastavení sestavení. Makro přistupuje pomocí této metody `CallVSTOAssembly` vlastnost `ThisDocument` objektu. Tato vlastnost se vygeneroval automaticky při nastavení **EnableVbaCallers** vlastnost dříve v tomto návodu.
 
@@ -202,18 +202,18 @@ ms.locfileid: "56636941"
     End Sub
     ```
 
-5.  Stisknutím klávesy **F5**.
+5. Stisknutím klávesy **F5**.
 
-6.  Ověřte, že nová tabulka byl přidán do dokumentu.
+6. Ověřte, že nová tabulka byl přidán do dokumentu.
 
-7.  Ukončete Word bez uložení změn.
+7. Ukončete Word bez uložení změn.
 
 ## <a name="next-steps"></a>Další kroky
  Další informace o volání kódu v řešeních pro systém Office z jazyka VBA v těchto tématech:
 
--   Volání kódu v přizpůsobení jazyka Visual C# z jazyka VBA. Tento proces se liší od procesu jazyka Visual Basic. Další informace najdete v tématu [názorný postup: Volání kódu z jazyka VBA v aplikaci Visual C&#35; projektu](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md).
+- Volání kódu v přizpůsobení jazyka Visual C# z jazyka VBA. Tento proces se liší od procesu jazyka Visual Basic. Další informace najdete v tématu [názorný postup: Volání kódu z jazyka VBA v aplikaci Visual C&#35; projektu](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md).
 
--   Volání kódu v doplňku VSTO z jazyka VBA. Další informace najdete v tématu [názorný postup: Volání kódu v doplňku VSTO z jazyka VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md).
+- Volání kódu v doplňku VSTO z jazyka VBA. Další informace najdete v tématu [názorný postup: Volání kódu v doplňku VSTO z jazyka VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md).
 
 ## <a name="see-also"></a>Viz také:
 - [Kombinování přizpůsobení na úrovni dokumentu a VBA](../vsto/combining-vba-and-document-level-customizations.md)

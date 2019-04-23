@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fe707f1b779978b26a53d11c32e92341e667be04
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 99109376c6c0279bcdd3852bd5bbadd8795c8564
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54867121"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067271"
 ---
 # <a name="how-to-build-sharepoint-solutions"></a>Postupy: Sestavení řešení služby SharePoint
 
@@ -27,11 +27,11 @@ Sestavení služby SharePoint řešení se nijak neliší od dalších aplikací
 
 ## <a name="to-build-sharepoint-solutions"></a>K sestavení řešení služby SharePoint
 
-1.  Rozhodněte, jestli provádíte ladění nebo sestavení pro vydání. Další informace najdete v tématu [nastavení projektu ladicího programu](../debugger/debugger-project-settings.md).
+1. Rozhodněte, jestli provádíte ladění nebo sestavení pro vydání. Další informace najdete v tématu [nastavení projektu ladicího programu](../debugger/debugger-project-settings.md).
 
-2.  Vyberte příslušnou možnost pro vytváření nebo opětovném sestavení vašeho řešení nebo projektu. Další informace najdete v tématu [kompilaci a vytváření ve Visual Studiu](../ide/compiling-and-building-in-visual-studio.md).
+2. Vyberte příslušnou možnost pro vytváření nebo opětovném sestavení vašeho řešení nebo projektu. Další informace najdete v tématu [kompilaci a vytváření ve Visual Studiu](../ide/compiling-and-building-in-visual-studio.md).
 
-3.  V panelu nabídky zvolte **sestavení** > **sestavit řešení**.
+3. V panelu nabídky zvolte **sestavení** > **sestavit řešení**.
 
 ## <a name="see-also"></a>Viz také:
 

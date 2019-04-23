@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 04922b703fd2c1158a98fc4574ad217cccd5016e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a2c0a6f7c2203e7b3a37f974d916010dbe70b31f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55907448"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067388"
 ---
 # <a name="how-to-change-text-case-in-the-editor"></a>Postupy: Změna velikosti písmen v editoru
 
@@ -27,11 +27,11 @@ Příkazy nabídky nebo klávesové zkratky můžete použít k převodu přípa
 
 ## <a name="to-switch-text-to-upper-case"></a>Chcete-li přepnout text na velká písmena
 
-1.  Vyberte text, který má být převeden.
+1. Vyberte text, který má být převeden.
 
-2.  Na **upravit** nabídce vyberte možnost **Upřesnit**.
+2. Na **upravit** nabídce vyberte možnost **Upřesnit**.
 
-3.  Chcete-li převést text na velká písmena, zvolte **Ujistěte se, velká písmena**, nebo stiskněte klávesu **Ctrl**+**Shift**+**U**.
+3. Chcete-li převést text na velká písmena, zvolte **Ujistěte se, velká písmena**, nebo stiskněte klávesu **Ctrl**+**Shift**+**U**.
 
     – nebo –
 

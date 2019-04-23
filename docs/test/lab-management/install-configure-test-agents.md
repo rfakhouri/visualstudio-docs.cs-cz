@@ -1,6 +1,6 @@
 ---
 title: Instalace testovacích agentů a kontrolerů testů
-ms.date: 10/24/2018
+ms.date: 04/17/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - configure test agents, test lab
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 04111b7a408b2378e0067ce1e3dd4e5ffd23ee48
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: c6597c47fd272beec2c82f7d4c2644291b168b5f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223023"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072315"
 ---
 # <a name="install-test-agents-and-test-controllers"></a>Instalace testovacích agentů a kontrolerů testů
 
@@ -34,9 +34,9 @@ V následující tabulce jsou uvedeny požadavky na systém pro instalaci testov
 
 ## <a name="install-the-test-controller-and-test-agents"></a>Nainstalujte testovací kontrolér a testovací agenty
 
-Můžete si stáhnout agenty pro Visual Studio z [visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads/?q=agents). Vyhledejte *Agents for Visual Studio 2017*, vyberte buď *agenta* nebo *řadič*a klikněte na tlačítko *Stáhnout*. Spouštění staženého spustitelného souboru k instalaci testovacího agenta nebo kontroler.
+Můžete si stáhnout agenty pro Visual Studio z [visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads/?q=agents). Vyhledejte *Agents for Visual Studio 2019*, vyberte buď *agenta* nebo *řadič*a klikněte na tlačítko *Stáhnout*. Spouštění staženého spustitelného souboru k instalaci testovacího agenta nebo kontroler.
 
-Agenty si můžete stáhnout pro Visual Studio 2015 a Visual Studio 2013 z [starší soubory ke stažení](https://visualstudio.microsoft.com/vs/older-downloads/) stránky.
+Agenty si můžete stáhnout pro Visual Studio 2017, Visual Studio 2015 a Visual Studio 2013 z [starší soubory ke stažení](https://visualstudio.microsoft.com/vs/older-downloads/) stránky.
 
 Tyto instalační programy jsou dostupné jako soubory ISO pro snadnou instalaci na virtuálních počítačích.
 

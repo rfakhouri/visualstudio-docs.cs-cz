@@ -13,12 +13,12 @@ caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 509e0988d07bb22fc8d3180cc65db1a12092de08
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 530123a7f9417ce9f12a0314a96eafad1c69cf7f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54763294"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069708"
 ---
 # <a name="no-thread-activity-to-show-threads-view"></a>Žádná aktivita vláken k zobrazení (Zobrazení vláken)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,13 +27,13 @@ Tato oblast se zobrazí data o zobrazí vlákna v současném viditelném časov
   
  Pokud žádné informace nejsou viditelné, zkontrolujte následující nastavení:  
   
--   Úroveň zvětšení je vysoká? Některé pixely zobrazují mimo nebo posouvání zpřístupnit další aktivita vláken v rozsahu.  
+- Úroveň zvětšení je vysoká? Některé pixely zobrazují mimo nebo posouvání zpřístupnit další aktivita vláken v rozsahu.  
   
--   Jsou skryté příliš mnoho vláken Pokud ano, zkuste zobrazuje všechna vlákna  
+- Jsou skryté příliš mnoho vláken Pokud ano, zkuste zobrazuje všechna vlákna  
   
--   Pokud **pouze můj kód** je vybraná, můžete zobrazit pouze data o svém kódu. Zkuste zrušit zaškrtnutí nastavení pro ověření, zda je jakékoli vlákno aktivitu systému.  
+- Pokud **pouze můj kód** je vybraná, můžete zobrazit pouze data o svém kódu. Zkuste zrušit zaškrtnutí nastavení pro ověření, zda je jakékoli vlákno aktivitu systému.  
   
--   Ujistěte se, že snížení šumu nastavený na nízké prahové hodnoty.  
+- Ujistěte se, že snížení šumu nastavený na nízké prahové hodnoty.  
   
 ## <a name="see-also"></a>Viz také  
  [Zobrazení vláken](../profiling/threads-view-parallel-performance.md)

@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f62318da0fc60a0fa9200d8ec11bdc4bb567ad86
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: f6cd0ac349d332f7e07d4f0ce6e5567cb5deb63c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56954384"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067063"
 ---
 # <a name="manage-side-by-side-file-associations"></a>Správa přidružení souborů vedle sebe
 
@@ -51,7 +51,7 @@ Pokud chcete, aby více rozšíření VSPackages vedle sebe používat stejnou p
 
   **CustomAction řádky tabulky, které určují nejnovější verzi sady Visual Studio**
 
-  |Akce|Typ|Zdroj|Target|
+  |Akce|Type|Source|Target|
   |------------|----------|------------|------------|
   |CA_SetDevenvLatest_2002|51|DEVENV_EXE_LATEST|[DEVENV_EXE_2002]|
   |CA_SetDevenvLatest_2003|51|DEVENV_EXE_LATEST|[DEVENV_EXE_2003]|
@@ -81,9 +81,9 @@ Odinstalace balíčku VSPackage, která zapisuje položky registru pro přidruž
 
 - Pokyny pro uživatele, chcete-li spustit opravu verze sady VSPackage, která chce uživatel vlastní přidružení souboru.
 
--   Zadejte samostatný spustitelný program, který přepíše položky registru.
+- Zadejte samostatný spustitelný program, který přepíše položky registru.
 
--   Zadejte konfigurační možnosti stránky nebo dialogové okno pole, která umožňuje uživatelům zvolit přidružení souborů a získat zpět ke ztrátě přidružení. Dáte pokyn, aby uživatelé spouštěli po odinstalaci.
+- Zadejte konfigurační možnosti stránky nebo dialogové okno pole, která umožňuje uživatelům zvolit přidružení souborů a získat zpět ke ztrátě přidružení. Dáte pokyn, aby uživatelé spouštěli po odinstalaci.
 
 ## <a name="see-also"></a>Viz také:
 

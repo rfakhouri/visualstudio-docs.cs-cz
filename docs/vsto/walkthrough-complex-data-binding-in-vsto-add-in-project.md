@@ -1,5 +1,5 @@
 ---
-title: 'Průvodce: Rozšířené datové vazby v projektu doplňku VSTO'
+title: 'Návod: Rozšířené datové vazby v projektu doplňku VSTO'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,14 +14,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f9346b448a64e6e1e89081d628865911897e37eb
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 0cb4fc7b43ab3ae48f83f4497fe6fd0042d0c51a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54867556"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070612"
 ---
-# <a name="walkthrough-complex-data-binding-in-vsto-add-in-project"></a>Průvodce: Rozšířené datové vazby v projektu doplňku VSTO
+# <a name="walkthrough-complex-data-binding-in-vsto-add-in-project"></a>Návod: Rozšířené datové vazby v projektu doplňku VSTO
   Vytvoření vazby dat k hostitelské ovládací prvky a ovládacích prvků Windows Forms v projekty doplňku VSTO. Tento návod ukazuje, jak přidat ovládací prvky na list aplikace Microsoft Office Excel a vytvoření vazby ovládacích prvků k datům v době běhu.
 
  [!INCLUDE[appliesto_xlallapp](../vsto/includes/appliesto-xlallapp-md.md)]
@@ -37,22 +37,22 @@ ms.locfileid: "54867556"
 ## <a name="prerequisites"></a>Požadavky
  K dokončení tohoto návodu budete potřebovat následující komponenty:
 
--   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
+- [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
--   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] nebo [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].
+- [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] nebo [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].
 
--   Přístup ke spuštěné instanci systému SQL Server 2005 nebo SQL Server 2005 Express, který má `AdventureWorksLT` ukázkovou databázi k němu připojená. Můžete stáhnout `AdventureWorksLT` databáze z [webu CodePlex](http://go.microsoft.com/fwlink/?LinkId=115611). Další informace o připojení databáze naleznete v následujících tématech:
+- Přístup ke spuštěné instanci systému SQL Server 2005 nebo SQL Server 2005 Express, který má `AdventureWorksLT` ukázkovou databázi k němu připojená. Můžete stáhnout `AdventureWorksLT` databáze z [webu CodePlex](http://go.microsoft.com/fwlink/?LinkId=115611). Další informace o připojení databáze naleznete v následujících tématech:
 
-    -   Připojení databáze pomocí SQL Server Management Studio nebo SQL Server Management Studio Express, naleznete v tématu [jak: Připojení databáze (SQL Server Management Studio)](/sql/relational-databases/databases/attach-a-database).
+    - Připojení databáze pomocí SQL Server Management Studio nebo SQL Server Management Studio Express, naleznete v tématu [jak: Připojení databáze (SQL Server Management Studio)](/sql/relational-databases/databases/attach-a-database).
 
-    -   Připojení databáze pomocí příkazového řádku, naleznete v tématu [jak: Připojit soubor databáze pro SQL Server Express](/previous-versions/sql/).
+    - Připojení databáze pomocí příkazového řádku, naleznete v tématu [jak: Připojit soubor databáze pro SQL Server Express](/previous-versions/sql/).
 
 ## <a name="create-a-new-project"></a>Vytvoření nového projektu
  Prvním krokem je vytvoření projektu doplňku VSTO v Excelu.
 
 ### <a name="to-create-a-new-project"></a>Chcete-li vytvořit nový projekt
 
-1.  Vytvoření projektu doplňku VSTO pro Excel s názvem **naplnění listů z databáze**, buď ve Visual Basicu nebo C#.
+1. Vytvoření projektu doplňku VSTO pro Excel s názvem **naplnění listů z databáze**, buď ve Visual Basicu nebo C#.
 
      Další informace najdete v tématu [jak: Vytvářet projekty pro Office v sadě Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
@@ -94,27 +94,27 @@ ms.locfileid: "54867556"
 
 ### <a name="to-add-the-list-object-dataset-and-table-adapter"></a>Chcete-li přidat objekt seznamu, datová sada a tabulky adaptéru
 
-1.  V `ThisAddIn` třídy, deklarujte následující ovládacích prvků pro zobrazení `Address` tabulku `AdventureWorksLTDataSet` datové sady.
+1. V `ThisAddIn` třídy, deklarujte následující ovládacích prvků pro zobrazení `Address` tabulku `AdventureWorksLTDataSet` datové sady.
 
      [!code-csharp[Trin_ExcelAddInDatabase#1](../vsto/codesnippet/CSharp/Trin_ExcelAddInDatabase_O12/ThisAddIn.cs#1)]
      [!code-vb[Trin_ExcelAddInDatabase#1](../vsto/codesnippet/VisualBasic/Trin_ExcelAddInDatabase_O12/ThisAddIn.vb#1)]
 
-2.  V `ThisAddIn_Startup` metodu, přidejte následující kód k inicializaci datovou sadu a datovou sadu naplnit informace z `AdventureWorksLTDataSet` datové sady.
+2. V `ThisAddIn_Startup` metodu, přidejte následující kód k inicializaci datovou sadu a datovou sadu naplnit informace z `AdventureWorksLTDataSet` datové sady.
 
      [!code-csharp[Trin_ExcelAddInDatabase#2](../vsto/codesnippet/CSharp/Trin_ExcelAddInDatabase_O12/ThisAddIn.cs#2)]
      [!code-vb[Trin_ExcelAddInDatabase#2](../vsto/codesnippet/VisualBasic/Trin_ExcelAddInDatabase_O12/ThisAddIn.vb#2)]
 
-3.  Přidejte následující kód, který `ThisAddIn_Startup` metody. Tím se vygeneruje hostitelská položka, která rozšiřuje listu. Další informace najdete v tématu [rozšíření Wordových dokumentů a Excelových sešitů v doplňcích VSTO za běhu](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).
+3. Přidejte následující kód, který `ThisAddIn_Startup` metody. Tím se vygeneruje hostitelská položka, která rozšiřuje listu. Další informace najdete v tématu [rozšíření Wordových dokumentů a Excelových sešitů v doplňcích VSTO za běhu](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).
 
      [!code-csharp[Trin_ExcelAddInDatabase#3](../vsto/codesnippet/CSharp/Trin_ExcelAddInDatabase_O12/ThisAddIn.cs#3)]
      [!code-vb[Trin_ExcelAddInDatabase#3](../vsto/codesnippet/VisualBasic/Trin_ExcelAddInDatabase_O12/ThisAddIn.vb#3)]
 
-4.  Vytvořit rozsah a přidejte <xref:Microsoft.Office.Tools.Excel.ListObject> ovládacího prvku.
+4. Vytvořit rozsah a přidejte <xref:Microsoft.Office.Tools.Excel.ListObject> ovládacího prvku.
 
      [!code-csharp[Trin_ExcelAddInDatabase#4](../vsto/codesnippet/CSharp/Trin_ExcelAddInDatabase_O12/ThisAddIn.cs#4)]
      [!code-vb[Trin_ExcelAddInDatabase#4](../vsto/codesnippet/VisualBasic/Trin_ExcelAddInDatabase_O12/ThisAddIn.vb#4)]
 
-5.  Vytvoření vazby objektem seznamu k `AdventureWorksLTDataSet` pomocí <xref:System.Windows.Forms.BindingSource>. Předejte názvy sloupců, které chcete svázat s objektem seznamu.
+5. Vytvoření vazby objektem seznamu k `AdventureWorksLTDataSet` pomocí <xref:System.Windows.Forms.BindingSource>. Předejte názvy sloupců, které chcete svázat s objektem seznamu.
 
      [!code-csharp[Trin_ExcelAddInDatabase#5](../vsto/codesnippet/CSharp/Trin_ExcelAddInDatabase_O12/ThisAddIn.cs#5)]
      [!code-vb[Trin_ExcelAddInDatabase#5](../vsto/codesnippet/VisualBasic/Trin_ExcelAddInDatabase_O12/ThisAddIn.vb#5)]
@@ -124,7 +124,7 @@ ms.locfileid: "54867556"
 
 ### <a name="to-test-the-vsto-add-in"></a>K otestování doplňku VSTO
 
--   Stisknutím klávesy **F5**.
+- Stisknutím klávesy **F5**.
 
      A <xref:Microsoft.Office.Tools.Excel.ListObject> ovládací prvek s názvem `addressListObject` se vytvoří v listu. Současně, objekt datovou sadu s názvem `adventureWorksLTDataSet` a <xref:System.Windows.Forms.BindingSource> s názvem `addressBindingSource` jsou přidány do projektu. <xref:Microsoft.Office.Tools.Excel.ListObject> Je vázán na <xref:System.Windows.Forms.BindingSource>, která je dále vázán na objektu dataset.
 

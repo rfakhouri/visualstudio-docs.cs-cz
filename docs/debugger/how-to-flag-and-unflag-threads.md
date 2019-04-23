@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d106260aab40707aeb04f37df05a9d1ffb26a1b
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: e63f081ff54a18bb4b5ca5c1cbdf947670f10a7e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58324413"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069637"
 ---
 # <a name="how-to-flag-and-unflag-threads-c-visual-basic-c"></a>Postupy: Označení a odstranění označení vlákna (C#, Visual Basic, C++)
 
@@ -35,30 +35,30 @@ Vlákna s příznaky také přijímat zvláštní zacházení v **vlákna** sezn
 
 ### <a name="to-unflag-all-threads"></a>Chcete-li odznačit všechna vlákna
 
--   V **vlákna** okna, klikněte pravým tlačítkem na libovolného vlákna a pak klikněte na **odznačit všechna vlákna**.
--   V **paralelní sledování** okna, vyberte všechny vlákna označená příznakem, klikněte pravým tlačítkem a vyberte **Unflag**.
+- V **vlákna** okna, klikněte pravým tlačítkem na libovolného vlákna a pak klikněte na **odznačit všechna vlákna**.
+- V **paralelní sledování** okna, vyberte všechny vlákna označená příznakem, klikněte pravým tlačítkem a vyberte **Unflag**.
 
 ### <a name="to-display-only-flagged-threads"></a>Chcete-li zobrazit pouze vlákna označená příznakem
 
--   Zvolte **zobrazit vlákna pouze s příznakem** tlačítko v jednom z vícevláknové ladění systému windows.
+- Zvolte **zobrazit vlákna pouze s příznakem** tlačítko v jednom z vícevláknové ladění systému windows.
 
 ### <a name="to-flag-just-my-code"></a>Chcete-li označit jen můj kód
 
-1.  Na panelu nástrojů v horní části **vlákna** okna, klikněte na ikonu vlajky.
+1. Na panelu nástrojů v horní části **vlákna** okna, klikněte na ikonu vlajky.
 
-2.  V rozevíracím seznamu, klikněte na tlačítko **příznak funkce pouze můj kód**.
+2. V rozevíracím seznamu, klikněte na tlačítko **příznak funkce pouze můj kód**.
 
 ### <a name="to-flag-threads-that-are-associated-with-selected-modules"></a>K nastavení příznaku vláken, které jsou spojeny s vybrané moduly
 
-1.  Na panelu nástrojů **vlákna** okna, klikněte na ikonu vlajky.
+1. Na panelu nástrojů **vlákna** okna, klikněte na ikonu vlajky.
 
-2.  V rozevíracím seznamu, klikněte na tlačítko **volba vlastního modulu příznaků**.
+2. V rozevíracím seznamu, klikněte na tlačítko **volba vlastního modulu příznaků**.
 
-3.  V **vyberte moduly** dialogového okna, vyberte moduly, které chcete.
+3. V **vyberte moduly** dialogového okna, vyberte moduly, které chcete.
 
-4.  (Volitelné) V **hledání** zadejte řetězec k vyhledání konkrétních modulů.
+4. (Volitelné) V **hledání** zadejte řetězec k vyhledání konkrétních modulů.
 
-5.  Klikněte na **OK**.
+5. Klikněte na **OK**.
 
 ## <a name="see-also"></a>Viz také
 - [Ladění vícevláknových aplikací](../debugger/debug-multithreaded-applications-in-visual-studio.md)

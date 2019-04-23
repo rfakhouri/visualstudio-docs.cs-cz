@@ -21,12 +21,12 @@ caps.latest.revision: 104
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3518f691109348cfbb75404e94dde66dccd04efc
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: 7dd7afa571b83cb5d1b12018da2f1e812a3a5fbd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57870283"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068155"
 ---
 # <a name="quickstart-debug-html-and-css"></a>Rychlý start: Ladění kódu HTML a CSS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +57,7 @@ Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "wi
   
   Informace o dalších funkcí, jako je například používání okna konzoly jazyka JavaScript a nastavovat zarážky, ladění jazyka JavaScript naleznete v tématu [rychlý start: Ladění JavaScriptu](../debugger/quickstart-debug-javascript-using-the-console.md) a [ladění aplikací v sadě Visual Studio](../debugger/debug-store-apps-in-visual-studio.md).  
   
-##  <a name="InspectingDOM"></a> Kontrola live DOM  
+## <a name="InspectingDOM"></a> Kontrola live DOM  
  Průzkumník modelu DOM se dozvíte, zobrazení vykreslené stránky a Průzkumníka modelu DOM můžete změnit hodnoty a hned vidět výsledky. To umožňuje testovat změny bez zastavení a restartování ladicího programu. Zdrojový kód v projektu nemění, když pracujete s stránce tímto způsobem, takže když najdete odpovídající kód opravy provedete změny zdrojového kódu.  
   
 > [!TIP]
@@ -249,17 +249,17 @@ Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "wi
   
 #### <a name="to-refresh-your-app-while-debugging"></a>Chcete-li aktualizovat vaše aplikace během ladění  
   
-1.  Zatímco aplikace stále běží, přepněte do sady Visual Studio.  
+1. Zatímco aplikace stále běží, přepněte do sady Visual Studio.  
   
-2.  Otevřete soubor default.html a upravit zdrojový kód tak, že změníte výšku a šířku `"fView"` elementu DIV na 100 %.  
+2. Otevřete soubor default.html a upravit zdrojový kód tak, že změníte výšku a šířku `"fView"` elementu DIV na 100 %.  
   
-3.  Zvolte **aktualizovat Windows app** tlačítko na panelu nástrojů ladění (nebo stisknutím klávesy F4). Tlačítko vypadá takto: ![Aktualizovat aplikaci Windows](../debugger/media/js-refresh.png "JS_Refresh").  
+3. Zvolte **aktualizovat Windows app** tlačítko na panelu nástrojů ladění (nebo stisknutím klávesy F4). Tlačítko vypadá takto: ![Aktualizovat aplikaci Windows](../debugger/media/js-refresh.png "JS_Refresh").  
   
      Znovu načíst stránky aplikace a simulátor nebo emulátor telefonu vrátí do popředí.  
   
      Další informace o funkci aktualizace najdete v tématu [aktualizace aplikace (JavaScript)](../debugger/refresh-an-app-javascript.md).  
   
-##  <a name="SelectingElements"></a> Výběr elementů  
+## <a name="SelectingElements"></a> Výběr elementů  
  Při ladění aplikace, můžete vybrat prvky modelu DOM třemi způsoby:  
   
 - Po kliknutí na prvky přímo v okně Průzkumníka modelu DOM (nebo pomocí kláves se šipkami).  
@@ -285,7 +285,7 @@ Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "wi
   
  Příklad, který ukazuje, jak vybrat prvky pomocí **Select element** tlačítko, naleznete v tématu [styly ladění šablon stylů CSS pomocí Průzkumníka modelu DOM](../debugger/debug-css-styles-using-dom-explorer.md).  
   
-##  <a name="BrowserSupport"></a> Prohlížeče a Platformní podpory  
+## <a name="BrowserSupport"></a> Prohlížeče a Platformní podpory  
  Nástroje sady Visual Studio pro jazyk JavaScript, Průzkumníka modelu DOM a okna konzoly jazyka JavaScript jsou podporované na následujících platformách:  
   
 - [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] a aplikací pro Windows Phone Store v jazyce JavaScript a HTML  

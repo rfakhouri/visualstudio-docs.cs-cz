@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b1428b4c5a54b901ca3e21ffc2b23d71763e7804
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 65f3090c6b96290527d2508ba47c899c81d6e6dd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56613281"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067076"
 ---
 # <a name="visual-studio-shell"></a>Visual Studio Shell
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Prostředí je primární agenta integrace v [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Prostředí obsahuje potřebné funkce, které umožňují rozšíření VSPackages sdílení společných služeb. Protože architektury cílem [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] je vzor průmyslovému primární funkce v balíčcích VSPackage, prostředí je rámec, který poskytuje základní funkce a podporují různé komunikaci mezi komponenty rozšíření VSPackages.
@@ -38,17 +38,17 @@ ms.locfileid: "56613281"
 
 - Sledování prostředí celý výběr, kontextu a měny. Prostředí sleduje následující typy položek:
 
-  -   Aktuální projekt
+  - Aktuální projekt
 
-  -   Aktuální položku projektu nebo ID aktuální položky <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>
+  - Aktuální položku projektu nebo ID aktuální položky <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>
 
-  -   Aktuální výběr **vlastnosti** okno nebo `SelectionContainer`
+  - Aktuální výběr **vlastnosti** okno nebo `SelectionContainer`
 
-  -   Kontextu uživatelského rozhraní ID nebo CmdUIGuids, které řídí, zda se příkazy, nabídky a panely nástrojů
+  - Kontextu uživatelského rozhraní ID nebo CmdUIGuids, které řídí, zda se příkazy, nabídky a panely nástrojů
 
-  -   Aktuálně aktivní prvky, jako jsou aktivní okno, dokument a vhodný
+  - Aktuálně aktivní prvky, jako jsou aktivní okno, dokument a vhodný
 
-  -   Atributy kontextu uživatele, které řídí, dynamická Nápověda
+  - Atributy kontextu uživatele, které řídí, dynamická Nápověda
 
   Prostředí také zprostředkovává komunikaci mezi nainstalovaných rozšíření VSPackages a službami. Podporuje základní funkce prostředí a je zpřístupní pro všechny balíčky VSPackages integrováno v [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Tyto základní funkce zahrnují následující položky:
 

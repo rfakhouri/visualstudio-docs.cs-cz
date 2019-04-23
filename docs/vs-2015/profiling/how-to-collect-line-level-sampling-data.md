@@ -11,12 +11,12 @@ caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a2ba4c8a58a2969ced066c6211fd9faa7326cbcf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 65890bf31a1257c3a41bc1fd7ed3f732c50eda14
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54779021"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068096"
 ---
 # <a name="how-to-collect-line-level-sampling-data"></a>Postupy: Shromažďování dat vzorkování na úrovni řádků
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,11 +52,11 @@ Vzorkování na úrovni řádku je schopnost profiler k určení, kde v kódu fu
 ### <a name="turn-off-line-level-sampling-for-managed-code"></a>Vypnutí vzorkování na úrovni řádku pro spravovaný kód  
  Vzorkování na úrovni řádku je ve výchozím nastavení zapnutá. Můžete vypnout shromažďování dat na úrovni řádku pro spravovaný kód pomocí jedné z následujících akcí:  
   
--   Před profilací, zadejte **VSPerfCLREnv /samplelineoff**. Tímto je ovlivněn aplikací a služeb.  
+- Před profilací, zadejte **VSPerfCLREnv /samplelineoff**. Tímto je ovlivněn aplikací a služeb.  
   
      – nebo –  
   
--   Při spuštění aplikace, zadejte **VSPerfCmd/lineoff \<ostatních argumentů >**.  
+- Při spuštění aplikace, zadejte **VSPerfCmd/lineoff \<ostatních argumentů >**.  
   
 ## <a name="see-also"></a>Viz také  
  [Konfigurace výkonnostních relací](../profiling/configuring-performance-sessions.md)   

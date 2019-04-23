@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: edeb59f08dba3328c464782dd685b24c6bcda852
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: eef55dd0e5af443379b2685ccab9bd2de8074e0d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54771647"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066705"
 ---
 # <a name="gpu-usage"></a>Využití GPU
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -117,11 +117,11 @@ Pomocí nástroje využití GPU ve výkon sady Visual Studio a centra diagnostik
   
 #### <a name="to-postpone-profiling-from-the-start-of-the-app"></a>Chcete-li odložit, profilace od začátku aplikace:  
   
-1.  V hlavní nabídce zvolte **ladění**, pak **výkon a Diagnostika** (klávesnice: Stisknutím klávesy Alt + F2).  
+1. V hlavní nabídce zvolte **ladění**, pak **výkon a Diagnostika** (klávesnice: Stisknutím klávesy Alt + F2).  
   
-2.  V Centru pro výkon a diagnostiku, postupujte **nastavení** odkaz **využití GPU**.  
+2. V Centru pro výkon a diagnostiku, postupujte **nastavení** odkaz **využití GPU**.  
   
-3.  V části **konfigurace profilace GPU**na **Obecné** stránky vlastností, zrušte **zahájíte profilaci na začátku aplikace** zaškrtávací políčko odložit profilace.  
+3. V části **konfigurace profilace GPU**na **Obecné** stránky vlastností, zrušte **zahájíte profilaci na začátku aplikace** zaškrtávací políčko odložit profilace.  
   
      ![Konfigurace při spuštění shromažďování využití GPU](../debugger/media/gfx-diag-gpu-usage-config.png "gfx_diag_gpu_usage_config")  
   
@@ -130,7 +130,7 @@ Pomocí nástroje využití GPU ve výkon sady Visual Studio a centra diagnostik
   
  Při shromažďování informací profilování odložení pomocí tohoto nastavení, bude k dispozici v dolní části okna nástroje využití GPU dodatečný odkaz, při spuštění aplikace v systému pomocí nástroje využití GPU. Aby začal shromažďovat analytické informace, zvolte **Start** odkaz v **zahájení shromažďování dalších podrobných dat o využití GPU** zprávy.  
   
-##  <a name="hwsupport"></a> Hardware a podpoře ovladačů  
+## <a name="hwsupport"></a> Hardware a podpoře ovladačů  
  Jsou podporovány následující hardwarové GPU a ovladače:  
   
 |Dodavatele|Popis GPU|Požadovaná verze ovladače|  
@@ -143,10 +143,10 @@ Pomocí nástroje využití GPU ve výkon sady Visual Studio a centra diagnostik
   
 ## <a name="see-also"></a>Viz také:  
   
--   [Vyřešit Palčivé problémy s grafikou nástroje pro vaše hry pomocí DirectX (video)](http://channel9.msdn.com/Events/GDC/GDC-2015/Solve-the-Tough-Graphics-Problems-with-your-Game-Using-DirectX-Tools)  
+- [Vyřešit Palčivé problémy s grafikou nástroje pro vaše hry pomocí DirectX (video)](http://channel9.msdn.com/Events/GDC/GDC-2015/Solve-the-Tough-Graphics-Problems-with-your-Game-Using-DirectX-Tools)  
   
--   [Nástroj využití GPU v sadě Visual Studio (video)](http://channel9.msdn.com/Events/Visual-Studio/Connect-event-2014/715)  
+- [Nástroj využití GPU v sadě Visual Studio (video)](http://channel9.msdn.com/Events/Visual-Studio/Connect-event-2014/715)  
   
--   [Nástroj využití GPU ve Visual Studio 2013 Update 4 CTP1 (blog)](http://blogs.msdn.com/b/vcblog/archive/2014/09/05/gpu-usage-tool-in-visual-studio-2013-update-4-ctp1.aspx)  
+- [Nástroj využití GPU ve Visual Studio 2013 Update 4 CTP1 (blog)](http://blogs.msdn.com/b/vcblog/archive/2014/09/05/gpu-usage-tool-in-visual-studio-2013-update-4-ctp1.aspx)  
   
--   [Využití GPU pro DirectX v sadě Visual Studio (blog)](http://blogs.msdn.com/b/ianhu/archive/2014/12/16/gpu-usage-for-directx-in-visual-studio.aspx)
+- [Využití GPU pro DirectX v sadě Visual Studio (blog)](http://blogs.msdn.com/b/ianhu/archive/2014/12/16/gpu-usage-for-directx-in-visual-studio.aspx)

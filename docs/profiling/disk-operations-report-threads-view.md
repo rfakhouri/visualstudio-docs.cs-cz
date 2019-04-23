@@ -12,35 +12,35 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c890ac9dbd3b542a400fc2a5b6db7ee2eb8f5db2
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 69cbef53bcca74cceba4f9409b578fca45a58806
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56613853"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072354"
 ---
 # <a name="disk-operations-report-threads-view"></a>Sestava diskových operací (Zobrazení vláken)
 Sestava diskových operací ukazuje vstupně-výstupních operací disku v kanálech disku.
 
  Pro každý přístup na disk, který se nachází jménem proces, který je právě profilována v současném viditelném časovém okně se použije v hlášení tyto informace:
 
--   Název a identifikátor PID procesu, který provádí přístup k disku
+- Název a identifikátor PID procesu, který provádí přístup k disku
 
--   ID vlákna, která využívají disku
+- ID vlákna, která využívají disku
 
--   Název souboru, která se použila
+- Název souboru, která se použila
 
--   Počet čtení na souboru
+- Počet čtení na souboru
 
--   Počet přečtených bajtů
+- Počet přečtených bajtů
 
--   Latence čtení v milisekundách
+- Latence čtení v milisekundách
 
--   Počet zápisů
+- Počet zápisů
 
--   Počet zapsaných bajtů
+- Počet zapsaných bajtů
 
--   Latence zápisu, v milisekundách
+- Latence zápisu, v milisekundách
 
 ## <a name="see-also"></a>Viz také:
 - [Zobrazení vláken](../profiling/threads-view-parallel-performance.md)

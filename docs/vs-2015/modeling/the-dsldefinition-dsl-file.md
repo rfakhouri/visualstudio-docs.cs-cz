@@ -11,12 +11,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1c62483ad8edac88fe3d14c6590dfb7e6d17285f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c7294a0a835b4797424d1f736405a0488db28587
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54800499"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070183"
 ---
 # <a name="the-dsldefinitiondsl-file"></a>Soubor DslDefinition.dsl
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -154,27 +154,27 @@ Toto téma popisuje strukturu soubor DslDefinition.dsl v projektu Dsl [!INCLUDE[
   
  Každá třída domény (včetně relací, tvary, konektory a diagramy) může mít tyto atributy a podřízené uzly:  
   
--   **Id.** Tento atribut je identifikátor GUID. Pokud nezadáte hodnotu v souboru, návrháře jazyka specifického pro doménu vytvoří hodnotu. (V obrázcích v tomto dokumentu, tento atribut je obvykle vynechána, pro úsporu místa.)  
+- **Id.** Tento atribut je identifikátor GUID. Pokud nezadáte hodnotu v souboru, návrháře jazyka specifického pro doménu vytvoří hodnotu. (V obrázcích v tomto dokumentu, tento atribut je obvykle vynechána, pro úsporu místa.)  
   
--   **Název a Namespace.** Tyto atributy zadejte název a obor názvů, třídy v generovaném kódu. Společně musí být jedinečný v rámci jazyka specifického pro doménu.  
+- **Název a Namespace.** Tyto atributy zadejte název a obor názvů, třídy v generovaném kódu. Společně musí být jedinečný v rámci jazyka specifického pro doménu.  
   
--   **InheritanceModifier.** Tento atribut je "abstraktní", "sealed" nebo žádný.  
+- **InheritanceModifier.** Tento atribut je "abstraktní", "sealed" nebo žádný.  
   
--   **DisplayName.** Tento atribut je název, který se zobrazí **vlastnosti** okna. Atribut DisplayName může obsahovat mezery a interpunkční.  
+- **DisplayName.** Tento atribut je název, který se zobrazí **vlastnosti** okna. Atribut DisplayName může obsahovat mezery a interpunkční.  
   
--   **GeneratesDoubleDerived.** Pokud tento atribut je nastaven na hodnotu true, jsou generovány dvě třídy a jeden je podtřídou třídy druhé. Generované metody jsou v základní třídě a konstruktory jsou v podtřídy. Tento atribut nastavíte, můžete přepsat všechny generované metody ve vlastním kódu.  
+- **GeneratesDoubleDerived.** Pokud tento atribut je nastaven na hodnotu true, jsou generovány dvě třídy a jeden je podtřídou třídy druhé. Generované metody jsou v základní třídě a konstruktory jsou v podtřídy. Tento atribut nastavíte, můžete přepsat všechny generované metody ve vlastním kódu.  
   
--   **HasCustomConstructor**. Pokud tento atribut je nastaven na hodnotu true, konstruktor je vynecháno z generovaného kódu tak, aby můžete napsat vlastní verzi.  
+- **HasCustomConstructor**. Pokud tento atribut je nastaven na hodnotu true, konstruktor je vynecháno z generovaného kódu tak, aby můžete napsat vlastní verzi.  
   
--   **Atributy**. Tento atribut obsahuje atributy CLR generované třídy.  
+- **Atributy**. Tento atribut obsahuje atributy CLR generované třídy.  
   
--   **BaseClass**. Pokud zadáte základní třídu, musí být stejného typu. Například doménová třída musí mít jiné doménové třídy jako svůj základ a obrazce oddílu musí mít obrazce oddílu. Pokud nezadáte základní třídy, je odvozena z standardní třídy třídy v generovaném kódu. Například doménová třída je odvozena z `ModelElement`.  
+- **BaseClass**. Pokud zadáte základní třídu, musí být stejného typu. Například doménová třída musí mít jiné doménové třídy jako svůj základ a obrazce oddílu musí mít obrazce oddílu. Pokud nezadáte základní třídy, je odvozena z standardní třídy třídy v generovaném kódu. Například doménová třída je odvozena z `ModelElement`.  
   
--   **Vlastnosti**. Tento atribut obsahuje vlastnosti, které udržuje pod kontrolou transakce a trvalé při uložení modelu.  
+- **Vlastnosti**. Tento atribut obsahuje vlastnosti, které udržuje pod kontrolou transakce a trvalé při uložení modelu.  
   
--   **ElementMergeDirectives**. Každé direktivě sloučení elementů řídí, jak se jinou instancí jiné třídy přidá do instance nadřazené třídy. Další podrobnosti o direktivy sloučení elementů najdete dále v tomto tématu.  
+- **ElementMergeDirectives**. Každé direktivě sloučení elementů řídí, jak se jinou instancí jiné třídy přidá do instance nadřazené třídy. Další podrobnosti o direktivy sloučení elementů najdete dále v tomto tématu.  
   
--   Třída jazyka C# je vygenerována pro každý doménové třídy, který je uveden v `Classes` oddílu. Třídy jazyka C# jsou generovány v Dsl\GeneratedCode\DomainClasses.cs.  
+- Třída jazyka C# je vygenerována pro každý doménové třídy, který je uveden v `Classes` oddílu. Třídy jazyka C# jsou generovány v Dsl\GeneratedCode\DomainClasses.cs.  
   
 ### <a name="properties"></a>Vlastnosti  
  Každá vlastnost domény má název a typ. Název musí být jedinečný v rámci třídy domény a jeho tranzitivní základních tříd.  
@@ -191,17 +191,17 @@ Toto téma popisuje strukturu soubor DslDefinition.dsl v projektu Dsl [!INCLUDE[
   
  Každou vlastnost domény mohou také mít tyto atributy:  
   
--   **IsBrowsable**. Tento atribut určuje, zda vlastnost se zobrazí v **vlastnosti** okno při kliknutí na objekt nadřazené třídy.  
+- **IsBrowsable**. Tento atribut určuje, zda vlastnost se zobrazí v **vlastnosti** okno při kliknutí na objekt nadřazené třídy.  
   
--   **IsUIReadOnly**. Tento atribut určuje, jestli uživatel může změnit vlastnost **vlastnosti** okno nebo prostřednictvím dekoratér, ve kterém se zobrazí vlastnosti.  
+- **IsUIReadOnly**. Tento atribut určuje, jestli uživatel může změnit vlastnost **vlastnosti** okno nebo prostřednictvím dekoratér, ve kterém se zobrazí vlastnosti.  
   
--   **Druh**. Tento atribut nastavíte na normální, vypočtená nebo hodnotu CustomStorage. Pokud tento atribut nastavíte na vypočtené, je nutné zadat vlastní kód, který určuje hodnotu a bude hodnota vlastnosti jen pro čtení. Pokud tento atribut nastavíte na hodnotu CustomStorage, je nutné zadat kód, který získá a nastaví hodnoty.  
+- **Druh**. Tento atribut nastavíte na normální, vypočtená nebo hodnotu CustomStorage. Pokud tento atribut nastavíte na vypočtené, je nutné zadat vlastní kód, který určuje hodnotu a bude hodnota vlastnosti jen pro čtení. Pokud tento atribut nastavíte na hodnotu CustomStorage, je nutné zadat kód, který získá a nastaví hodnoty.  
   
--   **IsElementName**. Pokud tento atribut je nastaven na hodnotu true, jeho hodnota se automaticky nastaví na jedinečnou hodnotu při vytvoření instance třídy nadřazené. Tento atribut lze nastavit hodnotu true pro pouze jednu vlastnost v každé třídě musí mít typ řetězce. V příkladu Diagram komponent `Name` vlastnost `NamedElement` má `IsElementName` nastavenou na hodnotu true. Vždy, když uživatel vytvoří `Component` – element (který dědí z `NamedElement`), název je automaticky inicializován na něco jako "Component6."  
+- **IsElementName**. Pokud tento atribut je nastaven na hodnotu true, jeho hodnota se automaticky nastaví na jedinečnou hodnotu při vytvoření instance třídy nadřazené. Tento atribut lze nastavit hodnotu true pro pouze jednu vlastnost v každé třídě musí mít typ řetězce. V příkladu Diagram komponent `Name` vlastnost `NamedElement` má `IsElementName` nastavenou na hodnotu true. Vždy, když uživatel vytvoří `Component` – element (který dědí z `NamedElement`), název je automaticky inicializován na něco jako "Component6."  
   
--   `DefaultValue`. Pokud zadáte tento atribut, hodnota, která jste zadali přiřazen tento atribut pro nové instance této třídy. Pokud `IsElementName` má hodnotu DefaultValue – atribut určuje počáteční součástí nového řetězce.  
+- `DefaultValue`. Pokud zadáte tento atribut, hodnota, která jste zadali přiřazen tento atribut pro nové instance této třídy. Pokud `IsElementName` má hodnotu DefaultValue – atribut určuje počáteční součástí nového řetězce.  
   
--   **Kategorie** je záhlavím, pod kterým se zobrazí vlastnosti v **vlastnosti** okna.  
+- **Kategorie** je záhlavím, pod kterým se zobrazí vlastnosti v **vlastnosti** okna.  
   
 ## <a name="relationships"></a>Relace  
  `Relationships` Části jsou uvedené všechny relace jazyka specifického pro doménu. Každý `Domain Relationship` je binární a přímé propojení členy třídy zdroje pro členy cílové třídy. Zdrojové a cílové třídy jsou obvykle doménové třídy, ale vztahy k jiné vztahy jsou také povoleny.  
@@ -211,11 +211,11 @@ Toto téma popisuje strukturu soubor DslDefinition.dsl v projektu Dsl [!INCLUDE[
 ### <a name="source-and-target-roles"></a>Zdrojové a cílové role  
  Každý vztah obsahuje zdrojové a cílové role, které mají následující atributy:  
   
--   `RolePlayer` Atribut odkazuje na třídu domény propojených instancí: OutPort zdroje InPort pro cíl.  
+- `RolePlayer` Atribut odkazuje na třídu domény propojených instancí: OutPort zdroje InPort pro cíl.  
   
--   `Multiplicity` Atribut má čtyři možných hodnot (hodnotu ZeroMany, ZeroOne, jeden a OneMany). Tento atribut odkazuje na počet odkazy tohoto vztahu, který může být přidružený jeden aktéra role.  
+- `Multiplicity` Atribut má čtyři možných hodnot (hodnotu ZeroMany, ZeroOne, jeden a OneMany). Tento atribut odkazuje na počet odkazy tohoto vztahu, který může být přidružený jeden aktéra role.  
   
--   `PropertyName` Atribut určuje název, který se používá v rolí datedim třídy pro přístup k objektům na druhém konci. Tento název se používá v šabloně nebo vlastní kód pro přechod relaci. Například `PropertyName` atribut zdrojová role je nastaven na `Targets`. Proto bude fungovat následující kód:  
+- `PropertyName` Atribut určuje název, který se používá v rolí datedim třídy pro přístup k objektům na druhém konci. Tento název se používá v šabloně nebo vlastní kód pro přechod relaci. Například `PropertyName` atribut zdrojová role je nastaven na `Targets`. Proto bude fungovat následující kód:  
   
     ```  
     OutPort op = …; foreach (InPort ip in op.Targets) ...  
@@ -229,13 +229,13 @@ Toto téma popisuje strukturu soubor DslDefinition.dsl v projektu Dsl [!INCLUDE[
     ComponentPort p = …; Component c = p.Component; if (c != null) …  
     ```  
   
--   Role `Name` je název, který se používá v rámci třídy vztahu k odkazování za tímto účelem odkaz. Podle konvence názvu role je vždy jednotném čísle, protože každý odkaz má pouze jednu instanci na každém konci. Následující kód bude fungovat:  
+- Role `Name` je název, který se používá v rámci třídy vztahu k odkazování za tímto účelem odkaz. Podle konvence názvu role je vždy jednotném čísle, protože každý odkaz má pouze jednu instanci na každém konci. Následující kód bude fungovat:  
   
     ```  
     Connection connectionLink = …; OutPort op = connectionLink.Source;  
     ```  
   
--   Ve výchozím nastavení `IsPropertyGenerator` atribut je nastaven na hodnotu true. Pokud je nastavena na hodnotu false, žádná vlastnost je vytvořena na třídy aktéra Role. (V takovém případě `op.Targets`, například nebude fungovat). Je však stále možné použití vlastního kódu pro přechod relaci nebo získat přístup k odkazy sami, pokud vlastní kód explicitně používá relace:  
+- Ve výchozím nastavení `IsPropertyGenerator` atribut je nastaven na hodnotu true. Pokud je nastavena na hodnotu false, žádná vlastnost je vytvořena na třídy aktéra Role. (V takovém případě `op.Targets`, například nebude fungovat). Je však stále možné použití vlastního kódu pro přechod relaci nebo získat přístup k odkazy sami, pokud vlastní kód explicitně používá relace:  
   
     ```  
     OutPort op = …; foreach (InPort ip in Connection.GetTargets(op)) …  
@@ -245,9 +245,9 @@ Toto téma popisuje strukturu soubor DslDefinition.dsl v projektu Dsl [!INCLUDE[
 ### <a name="relationship-attributes"></a>Relace atributů  
  Kromě atributy a podřízené uzly, které jsou k dispozici pro všechny třídy má každý vztah těchto atributů:  
   
--   **IsEmbedding**. Tento logický atribut určuje, zda vztah je součástí stromu vkládání. Každý model musí tvořit stromu s jeho vkládání vztahy. Každé doménové třídy musí být cílem alespoň jeden vztah obsažení, proto, pokud není kořenu modelu.  
+- **IsEmbedding**. Tento logický atribut určuje, zda vztah je součástí stromu vkládání. Každý model musí tvořit stromu s jeho vkládání vztahy. Každé doménové třídy musí být cílem alespoň jeden vztah obsažení, proto, pokud není kořenu modelu.  
   
--   **AllowsDuplicates**. Tento logický atribut, který je ve výchozím nastavení hodnotu false, se vztahuje pouze na vztahy, které mají na zdrojovém i cílovém násobnost n ":". To určuje, zda jazyk uživatele může připojit jedné dvojice zdrojové a cílové elementy ve stejné relaci více než jedno propojení.  
+- **AllowsDuplicates**. Tento logický atribut, který je ve výchozím nastavení hodnotu false, se vztahuje pouze na vztahy, které mají na zdrojovém i cílovém násobnost n ":". To určuje, zda jazyk uživatele může připojit jedné dvojice zdrojové a cílové elementy ve stejné relaci více než jedno propojení.  
   
 ## <a name="designer-and-toolbox-tabs"></a>Návrhář a karty panelu nástrojů  
  Hlavní část **návrháře** část soubor DslDefinition.dsl je **karta panelu nástrojů** elementy. Jeden návrhář může mít několik z těchto elementů, z nichž každý představuje zelí oddíl ve vygenerovaném návrháři **nástrojů**. Každý **karta panelu nástrojů** element může obsahovat jeden nebo více **nástroj elementu** prvky, **ConnectionTool** elementy nebo obojí.  
@@ -342,23 +342,23 @@ Toto téma popisuje strukturu soubor DslDefinition.dsl v projektu Dsl [!INCLUDE[
   
  Každý `XmlClassData` uzel obsahuje tyto podřízené uzly a atributy:  
   
--   Zástupný název uzlu, který odkazuje na třídu, na které se vztahují data.  
+- Zástupný název uzlu, který odkazuje na třídu, na které se vztahují data.  
   
--   **XmlPropertyData** pro každou vlastnost, která je definovaná ve třídě.  
+- **XmlPropertyData** pro každou vlastnost, která je definovaná ve třídě.  
   
--   **XmlRelationshipData** pro každý vztah, který pochází třída. (Relace také mít své vlastní XmlClassData uzly.)  
+- **XmlRelationshipData** pro každý vztah, který pochází třída. (Relace také mít své vlastní XmlClassData uzly.)  
   
--   **TypeName** atribut řetězce, který určuje název třídy pomocné rutiny serializace v generovaném kódu.  
+- **TypeName** atribut řetězce, který určuje název třídy pomocné rutiny serializace v generovaném kódu.  
   
--   **Třída ElementName** řetězec, který určuje značky XML serializovaných instancí této třídy. Podle konvence ElementName je obvykle stejný jako název třídy s výjimkou první písmena jsou malá písmena. Například ukázkový soubor modelu začíná takto:  
+- **Třída ElementName** řetězec, který určuje značky XML serializovaných instancí této třídy. Podle konvence ElementName je obvykle stejný jako název třídy s výjimkou první písmena jsou malá písmena. Například ukázkový soubor modelu začíná takto:  
   
     ```  
     <componentModel …  
     ```  
   
--   **Název elementu Monikeru** v souborech serializovaný model uživatele. Tento atribut zavádí monikeru, který odkazuje na tuto třídu.  
+- **Název elementu Monikeru** v souborech serializovaný model uživatele. Tento atribut zavádí monikeru, který odkazuje na tuto třídu.  
   
--   **Název atributu Monikeru**, který identifikuje název atributu XML v monikeru. V tomto fragmentu serializovaný soubor uživatele Autor jazyka specifického pro doménu definované **název elementu Monikeru** jako "inPortMoniker" a **název atributu Monikeru** jako "cesty":  
+- **Název atributu Monikeru**, který identifikuje název atributu XML v monikeru. V tomto fragmentu serializovaný soubor uživatele Autor jazyka specifického pro doménu definované **název elementu Monikeru** jako "inPortMoniker" a **název atributu Monikeru** jako "cesty":  
   
     ```  
     <inPortMoniker path="//Component2/InPort1" />  
@@ -454,9 +454,9 @@ Toto téma popisuje strukturu soubor DslDefinition.dsl v projektu Dsl [!INCLUDE[
 ### <a name="serialization-of-a-domain-specific-language-definition"></a>Serializace definice jazyka specifického pro doménu  
  Soubor DslDefinition.dsl je samotný soubor serializovaná a odpovídá do definice jazyka specifického pro doménu. Následují příklady definice serializace XML:  
   
--   **DSL** je kořenovou třídu uzel a diagramu třídy. Doménová třída doménového vztahu a další prvky jsou vložené v rámci `Dsl`.  
+- **DSL** je kořenovou třídu uzel a diagramu třídy. Doménová třída doménového vztahu a další prvky jsou vložené v rámci `Dsl`.  
   
--   **Třídy** je **RoleElementName** vztahu mezi jazyka specifického pro doménu a doménovou třídou.  
+- **Třídy** je **RoleElementName** vztahu mezi jazyka specifického pro doménu a doménovou třídou.  
   
 ```  
 <Dsl Name="CmptDsl5" …>  
@@ -464,7 +464,7 @@ Toto téma popisuje strukturu soubor DslDefinition.dsl v projektu Dsl [!INCLUDE[
     <DomainClass Name="NamedElement" InheritanceModifier="Abstract" …  
 ```  
   
--   **XmlSerializationBehavior** atribut je vložený v části `Dsl` atribut, ale **možnost OmitElement** vztah obsažení byl nastaven atribut. Proto, ne `RoleElementName` zasahující atribut. Naopak **tříd** atribut je `RoleElementName` atribut vztah obsažení mezi **XmlSerializationBehavior** atribut a **XmlClassData** atribut.  
+- **XmlSerializationBehavior** atribut je vložený v části `Dsl` atribut, ale **možnost OmitElement** vztah obsažení byl nastaven atribut. Proto, ne `RoleElementName` zasahující atribut. Naopak **tříd** atribut je `RoleElementName` atribut vztah obsažení mezi **XmlSerializationBehavior** atribut a **XmlClassData** atribut.  
   
 ```  
 <Dsl Name="CmptDsl5" …> …  
@@ -474,7 +474,7 @@ Toto téma popisuje strukturu soubor DslDefinition.dsl v projektu Dsl [!INCLUDE[
       <XmlClassData …>…</XmlClassData>  
 ```  
   
--   ConnectorHasDecorators je vztah obsažení mezi `Connector` a `Decorator`. `UseFullForm` je nastavená tak, aby zobrazil název relace s její seznam vlastností pro každý odkaz z objektu konektoru. Ale `OmitElement` má také nastavit tak, aby žádné `RoleElementName` obklopuje více odkazy, které jsou vložené v `Connector`:  
+- ConnectorHasDecorators je vztah obsažení mezi `Connector` a `Decorator`. `UseFullForm` je nastavená tak, aby zobrazil název relace s její seznam vlastností pro každý odkaz z objektu konektoru. Ale `OmitElement` má také nastavit tak, aby žádné `RoleElementName` obklopuje více odkazy, které jsou vložené v `Connector`:  
   
 ```  
 <Connector Name="AssociationLink" …>  
@@ -490,11 +490,11 @@ Toto téma popisuje strukturu soubor DslDefinition.dsl v projektu Dsl [!INCLUDE[
 ## <a name="shapes-and-connectors"></a>Obrazců a konektorů  
  Definice obrazců a konektorů zdědí atributy a podřízené uzly z doménové třídy, kromě následujících akcí:  
   
--   `Color` a `Line``Style` atributy.  
+- `Color` a `Line``Style` atributy.  
   
--   **ExposesFillColorAsProperty** a několik podobných atributů. Tyto logické atributy provést odpovídající vlastnost proměnnou tímto uživatelem. Obecně platí, po kliknutí jazyk obrazec v diagramu, vlastnosti, která se zobrazují **vlastnosti** okna jsou instance třídy domény, ke kterému je namapována na obrazec. Pokud `ExposesFillColorAsProperty` je nastavena na hodnotu true, vlastnost obrazce, samotné se také zobrazí.  
+- **ExposesFillColorAsProperty** a několik podobných atributů. Tyto logické atributy provést odpovídající vlastnost proměnnou tímto uživatelem. Obecně platí, po kliknutí jazyk obrazec v diagramu, vlastnosti, která se zobrazují **vlastnosti** okna jsou instance třídy domény, ke kterému je namapována na obrazec. Pokud `ExposesFillColorAsProperty` je nastavena na hodnotu true, vlastnost obrazce, samotné se také zobrazí.  
   
--   **ShapeHasDecorators**. Pro každý text, ikony nebo dekorátoru Rozbalit/sbalit dojde k instanci tohoto atributu. (V souboru DslDefinition.dsl `ShapeHasDecorators` je vztah s `UseFullForm` nastavenou na hodnotu true.)  
+- **ShapeHasDecorators**. Pro každý text, ikony nebo dekorátoru Rozbalit/sbalit dojde k instanci tohoto atributu. (V souboru DslDefinition.dsl `ShapeHasDecorators` je vztah s `UseFullForm` nastavenou na hodnotu true.)  
   
 ## <a name="shape-maps"></a>Mapy obrazců  
  Mapy obrazců určují vzhled instancí třídy danou doménu na obrazovce, reprezentovaný obrazce. Map obrazců a konektorů se zobrazí v rámci `Diagram` část soubor DslDefinition.dsl.  

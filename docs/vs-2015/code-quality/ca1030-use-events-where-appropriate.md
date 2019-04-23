@@ -15,12 +15,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 90605152607f403a089d59727d155cd154f7032e
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 9d00db6f9a00a273198cc50704d65ed6d2e4bb33
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54835074"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072094"
 ---
 # <a name="ca1030-use-events-where-appropriate"></a>CA1030: Použijte události, kde je to vhodné
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,13 +35,13 @@ ms.locfileid: "54835074"
 ## <a name="cause"></a>Příčina
  Metoda public, protected nebo private název začíná na jednu z následujících akcí:
 
--   Doplněk
+- Doplněk
 
--   RemoveOn
+- RemoveOn
 
--   Oheň
+- Oheň
 
--   Raise
+- Raise
 
 ## <a name="rule-description"></a>Popis pravidla
  Toto pravidlo zjišťuje metody, které mají názvy obvykle používané pro události. Události podle návrhový vzor pozorovatel nebo publikování a odběru; používají se při změně stavu do jednoho objektu musí sdělí další objekty. Pokud metoda volána jako odpověď jednoznačně definovanou změnu stavu, by měl vyvolat metodu obslužné rutiny události. Objekty volající tuto metodu by měly místo přímého volání metody vyvolat událost.

@@ -13,12 +13,12 @@ ms.assetid: b935fc82-9d6b-4a8d-9b70-e9a5c5ad4a55
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c818023d50b733a4818c87e67d0b49abde518ad2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a9a6b5f86f0cfbb71f6264bdc74df72ad9209c9d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54765794"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070157"
 ---
 # <a name="rdtreadlock-usage"></a>Využití RDT_ReadLock
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -27,9 +27,9 @@ ms.locfileid: "54765794"
   
  Obecně byste použili <xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS> při je splněna jedna z následujících akcí:  
   
--   Pokud chcete otevřít dokument transparentně a jen pro čtení, ale je ještě není vytvořeno, který <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> by vlastnit.  
+- Pokud chcete otevřít dokument transparentně a jen pro čtení, ale je ještě není vytvořeno, který <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> by vlastnit.  
   
--   Když chcete uživateli výzva k uložení dokumentu, kterou jste otevřeli nezaregistroval předtím, než uživatel zobrazí v uživatelském rozhraní a pak se pokusila zavřít ho.  
+- Když chcete uživateli výzva k uložení dokumentu, kterou jste otevřeli nezaregistroval předtím, než uživatel zobrazí v uživatelském rozhraní a pak se pokusila zavřít ho.  
   
 ## <a name="how-to-manage-visible-and-invisible-documents"></a>Jak spravovat viditelné a neviditelné dokumenty  
  Když uživatel otevře dokument v Uživatelském rozhraní <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> vlastník dokumentu musí být stanovena a <xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS> musí být nastaven příznak. Pokud ne <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> vlastníka je možné navázat, pak dokument se neuloží, když uživatel klikne **Uložit vše** nebo ukončí rozhraní IDE. To znamená, že pokud je otevřený dokument nezaregistroval tam, kde je změněný v paměti a uživatel je vyzván k uložení dokumentu na vypnutí nebo uložit, pokud **Uložit vše** je vybrán, pak `RDT_ReadLock` nelze použít. Místo toho je nutné použít `RDT_EditLock` a registrovat <xref:Microsoft.VisualStudio.Shell.Interop.IVsDocumentLockHolder> při <xref:Microsoft.VisualStudio.Shell.Interop.__VSREGDOCLOCKHOLDER> příznak.  

@@ -12,12 +12,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 04d67f90006d4e11b2cbe16f6dacd3ba02cde7a6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7694f0f725af8a20ff3a5a01753b0669c0fd5d9f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54779446"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067349"
 ---
 # <a name="compiling-and-building-in-visual-studio"></a>Kompilování a sestavování v sadě Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,17 +40,17 @@ Systém Visual Studio lze použít k vytváření aplikací a k vytváření ses
 
  V rozhraní IDE lze provádět následující dodatečné úkoly:
 
--   [Změna výstupního adresáře sestavení](../ide/how-to-change-the-build-output-directory.md).
+- [Změna výstupního adresáře sestavení](../ide/how-to-change-the-build-output-directory.md).
 
--   [Identifikovat projekty, které jsou závislé na výstupu z jiného projektu, aby se sestavily správně](../ide/how-to-create-and-remove-project-dependencies.md).
+- [Identifikovat projekty, které jsou závislé na výstupu z jiného projektu, aby se sestavily správně](../ide/how-to-create-and-remove-project-dependencies.md).
 
--   [Změnit množství informací o zahrnutých v protokolu sestavení nebo v okně výstupu sestavení](../ide/how-to-view-save-and-configure-build-log-files.md).
+- [Změnit množství informací o zahrnutých v protokolu sestavení nebo v okně výstupu sestavení](../ide/how-to-view-save-and-configure-build-log-files.md).
 
--   [Skrýt upozornění kompilátoru specifické pro jazyk Visual C#, Visual C++ nebo Visual Basic](../ide/how-to-suppress-compiler-warnings.md).
+- [Skrýt upozornění kompilátoru specifické pro jazyk Visual C#, Visual C++ nebo Visual Basic](../ide/how-to-suppress-compiler-warnings.md).
 
--   [Zadejte vlastní před kompilací a po kompilaci akce sestavení](../ide/specifying-custom-build-events-in-visual-studio.md).
+- [Zadejte vlastní před kompilací a po kompilaci akce sestavení](../ide/specifying-custom-build-events-in-visual-studio.md).
 
--   Zvýšit výkon sestavení pomocí paralelních sestavení Další informace najdete v tématu [sestavování více projektů současně](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md) nebo blogový příspěvek [paralelního sestavení ladění jazyka C++](http://blogs.msdn.com/b/msbuild/archive/2010/03/08/tuning-c-build-parallelism-in-vs2010.aspx).
+- Zvýšit výkon sestavení pomocí paralelních sestavení Další informace najdete v tématu [sestavování více projektů současně](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md) nebo blogový příspěvek [paralelního sestavení ladění jazyka C++](http://blogs.msdn.com/b/msbuild/archive/2010/03/08/tuning-c-build-parallelism-in-vs2010.aspx).
 
 ## <a name="see-also"></a>Viz také
- [Návod: Sestavení aplikace](../ide/walkthrough-building-an-application.md) [Principy konfigurace sestavení](../ide/understanding-build-configurations.md) [platformy sestavení Principy](../ide/understanding-build-platforms.md) [sestavování projektů (kompilace) webu](http://msdn.microsoft.com/library/a9cbb88c-8fff-4c67-848b-98fbfd823193) [ Jak: Vytváření a odebrání závislostí projektu](../ide/how-to-create-and-remove-project-dependencies.md)
+ [Návod: Sestavení aplikace](../ide/walkthrough-building-an-application.md) [Principy konfigurace sestavení](../ide/understanding-build-configurations.md) [platformy sestavení Principy](../ide/understanding-build-platforms.md) [sestavování projektů (kompilace) webu](http://msdn.microsoft.com/library/a9cbb88c-8fff-4c67-848b-98fbfd823193) [ Jak: Vytváření a odebírání závislostí projektu](../ide/how-to-create-and-remove-project-dependencies.md)

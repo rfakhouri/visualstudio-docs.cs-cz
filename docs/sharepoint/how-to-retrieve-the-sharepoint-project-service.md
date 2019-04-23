@@ -12,21 +12,21 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ce7b6705fcbafaf713faed6f937fcfa29bd013d6
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 75caa29d90b41dc696ce586d50928b2adb0875f9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56597372"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067518"
 ---
 # <a name="how-to-retrieve-the-sharepoint-project-service"></a>Postupy: Načtení služby projektu SharePoint
   Můžete přistupovat k projektu služby SharePoint v následujících typů řešení:
 
--   Rozšíření systému projektu služby SharePoint, jako je například rozšíření projektu, rozšíření položky projektu nebo definice typu položky projektu. Další informace o těchto typech rozšíření najdete v tématu [rozšíření systému projektu služby SharePoint](../sharepoint/extending-the-sharepoint-project-system.md).
+- Rozšíření systému projektu služby SharePoint, jako je například rozšíření projektu, rozšíření položky projektu nebo definice typu položky projektu. Další informace o těchto typech rozšíření najdete v tématu [rozšíření systému projektu služby SharePoint](../sharepoint/extending-the-sharepoint-project-system.md).
 
--   Rozšíření **připojení služby SharePoint** uzel v **Průzkumníka serveru**. Další informace o těchto typech rozšíření najdete v tématu [rozšíření uzlu připojení služby SharePoint v Průzkumníku serveru](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).
+- Rozšíření **připojení služby SharePoint** uzel v **Průzkumníka serveru**. Další informace o těchto typech rozšíření najdete v tématu [rozšíření uzlu připojení služby SharePoint v Průzkumníku serveru](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).
 
--   Jiný typ rozšíření sady Visual Studio, jako je například VSPackage.
+- Jiný typ rozšíření sady Visual Studio, jako je například VSPackage.
 
 ## <a name="retrieve-the-service-in-project-system-extensions"></a>Načtení služby v rozšíření systému projektu
  V rozšíření systému projektu služby SharePoint, dostanete služba projektu s použitím <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject.ProjectService%2A> vlastnost <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject> objektu.
@@ -35,9 +35,9 @@ ms.locfileid: "56597372"
 
 #### <a name="to-retrieve-the-service-in-a-project-extension"></a>Načtení služby projektu rozšíření
 
-1.  Ve vaší implementaci <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension> rozhraní, vyhledejte <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension.Initialize%2A> metody.
+1. Ve vaší implementaci <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension> rozhraní, vyhledejte <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension.Initialize%2A> metody.
 
-2.  Použití *projectService* parametr přístup k této službě.
+2. Použití *projectService* parametr přístup k této službě.
 
      Následující příklad kódu ukazuje, jak použít službu projekt k zápisu zprávy do **výstup** okno a **seznam chyb** okna Jednoduchý projekt rozšíření.
 
@@ -48,9 +48,9 @@ ms.locfileid: "56597372"
 
 #### <a name="to-retrieve-the-service-in-a-project-item-extension"></a>Načtení služby v rozšíření položky projektu
 
-1.  Ve vaší implementaci <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension> rozhraní, vyhledejte <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension.Initialize%2A> metody.
+1. Ve vaší implementaci <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension> rozhraní, vyhledejte <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension.Initialize%2A> metody.
 
-2.  Použití <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemType.ProjectService%2A> vlastnost *projectItemType* parametr načtení služby.
+2. Použití <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemType.ProjectService%2A> vlastnost *projectItemType* parametr načtení služby.
 
      Následující příklad kódu ukazuje, jak použít službu projekt k zápisu zprávy do **výstup** okno a **seznam chyb** okna jednoduché rozšíření **definice seznamu** položky projektu.
 
@@ -61,9 +61,9 @@ ms.locfileid: "56597372"
 
 #### <a name="to-retrieve-the-service-in-a-project-item-type-definition"></a>Načtení služby v definici typu položky projektu
 
-1.  Ve vaší implementaci <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider> rozhraní, vyhledejte <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider.InitializeType%2A> metody.
+1. Ve vaší implementaci <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider> rozhraní, vyhledejte <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider.InitializeType%2A> metody.
 
-2.  Použití <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition.ProjectService%2A> vlastnost *typeDefinition* parametr načtení služby.
+2. Použití <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition.ProjectService%2A> vlastnost *typeDefinition* parametr načtení služby.
 
      Následující příklad kódu ukazuje, jak použít službu projekt k zápisu zprávy do **výstup** okno a **seznam chyb** okna v definici typu položky Jednoduchý projekt.
 
@@ -77,9 +77,9 @@ ms.locfileid: "56597372"
 
 #### <a name="to-retrieve-the-service-in-a-server-explorer-extension"></a>Načtení služby v rozšíření Průzkumníka serveru
 
-1.  Získat <xref:System.IServiceProvider> objektu z <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNode.ServiceProvider%2A> vlastnost <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNode> objektu v rozšíření.
+1. Získat <xref:System.IServiceProvider> objektu z <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNode.ServiceProvider%2A> vlastnost <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNode> objektu v rozšíření.
 
-2.  Použití <xref:System.IServiceProvider.GetService%2A> metodu pro žádost o <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService> objektu.
+2. Použití <xref:System.IServiceProvider.GetService%2A> metodu pro žádost o <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService> objektu.
 
      Následující příklad kódu ukazuje, jak použít službu projekt k zápisu zprávy do **výstup** okno a **seznam chyb** okna z místní nabídky, která toto rozšíření přidá do seznamu uzlů v **Průzkumníka serveru**.
 

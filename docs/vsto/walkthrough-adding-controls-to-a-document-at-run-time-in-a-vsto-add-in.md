@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bdfd80818e88af8e2907c982e75628627bcac5e9
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: f226f65e493ced3a33dcfe7514633992cce158d0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59648547"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070066"
 ---
 # <a name="walkthrough-add-controls-to-a-document-at-runtime-in-a-vsto-add-in"></a>Návod: Přidání ovládacích prvků do dokumentu za běhu v doplňku VSTO
   Můžete přidat ovládací prvky do libovolného otevřeného dokumentu aplikace Microsoft Office Word s použitím doplňku VSTO. Tento návod ukazuje, jak používat na pásu karet umožňující uživatelům přidávat <xref:Microsoft.Office.Tools.Word.Controls.Button> nebo <xref:Microsoft.Office.Tools.Word.RichTextContentControl> do dokumentu.
@@ -42,18 +42,18 @@ ms.locfileid: "59648547"
 ## <a name="prerequisites"></a>Požadavky
  K dokončení tohoto návodu budete potřebovat následující komponenty:
 
--   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
+- [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
--   [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] nebo [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].
+- [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] nebo [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].
 
 ## <a name="create-a-new-word-add-in-project"></a>Vytvoření nového projektu doplňku aplikace Word
  Začněte vytvořením projektu doplňku VSTO pro Word.
 
 ### <a name="to-create-a-new-word-vsto-add-in-project"></a>Chcete-li vytvořit nový projekt doplňku VSTO pro Word
 
-1.  Vytvoření projektu doplňku VSTO pro Word s názvem **WordDynamicControls**. Další informace najdete v tématu [jak: Vytvářet projekty pro Office v sadě Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
+1. Vytvoření projektu doplňku VSTO pro Word s názvem **WordDynamicControls**. Další informace najdete v tématu [jak: Vytvářet projekty pro Office v sadě Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
-2.  Přidejte odkaz na **Microsoft.Office.Tools.Word.v4.0.Utilities.dll** sestavení. Tento odkaz je potřeba programové přidání ovládacího prvku Windows Forms do dokumentů později v tomto názorném postupu.
+2. Přidejte odkaz na **Microsoft.Office.Tools.Word.v4.0.Utilities.dll** sestavení. Tento odkaz je potřeba programové přidání ovládacího prvku Windows Forms do dokumentů později v tomto názorném postupu.
 
 ## <a name="provide-a-ui-to-add-controls-to-a-document"></a>Zadejte uživatelské rozhraní k přidávání ovládacích prvků do dokumentu
  Přidáte vlastní kartu na pás karet v aplikaci Word. Uživatelé mohou vybrat zaškrtávací políčka na kartě k přidávání ovládacích prvků do dokumentu.
@@ -107,19 +107,19 @@ ms.locfileid: "59648547"
 
 ### <a name="to-add-and-remove-controls-on-the-active-document"></a>K přidání a odebrání ovládacích prvků na aktivní dokument
 
-1.  V **Průzkumníka řešení**, dvakrát klikněte na panel *ThisAddIn.cs* nebo *ThisAddIn.vb* k otevření souboru v editoru kódu.
+1. V **Průzkumníka řešení**, dvakrát klikněte na panel *ThisAddIn.cs* nebo *ThisAddIn.vb* k otevření souboru v editoru kódu.
 
-2.  Přidejte následující kód, který `ThisAddIn` třídy. Tento kód deklaruje <xref:Microsoft.Office.Tools.Word.Controls.Button> a <xref:Microsoft.Office.Tools.Word.RichTextContentControl> objekty, které představují ovládací prvky, které se přidají do dokumentu.
+2. Přidejte následující kód, který `ThisAddIn` třídy. Tento kód deklaruje <xref:Microsoft.Office.Tools.Word.Controls.Button> a <xref:Microsoft.Office.Tools.Word.RichTextContentControl> objekty, které představují ovládací prvky, které se přidají do dokumentu.
 
      [!code-vb[Trin_WordAddInDynamicControlsWalkthrough#1](../vsto/codesnippet/VisualBasic/Trin_WordAddInDynamicControlsWalkthrough/ThisAddIn.vb#1)]
      [!code-csharp[Trin_WordAddInDynamicControlsWalkthrough#1](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControlsWalkthrough/ThisAddIn.cs#1)]
 
-3.  Přidejte následující metodu do `ThisAddIn` třídy. Pokud uživatel klikne **přidat tlačítko** zaškrtávací políčko na pásu karet, tato metoda přidá <xref:Microsoft.Office.Tools.Word.Controls.Button> do aktuálního výběru dokumentu, pokud se zaškrtávací políčko zaškrtnuto nebo odebere <xref:Microsoft.Office.Tools.Word.Controls.Button> Pokud není zaškrtnuto zaškrtávací políčko.
+3. Přidejte následující metodu do `ThisAddIn` třídy. Pokud uživatel klikne **přidat tlačítko** zaškrtávací políčko na pásu karet, tato metoda přidá <xref:Microsoft.Office.Tools.Word.Controls.Button> do aktuálního výběru dokumentu, pokud se zaškrtávací políčko zaškrtnuto nebo odebere <xref:Microsoft.Office.Tools.Word.Controls.Button> Pokud není zaškrtnuto zaškrtávací políčko.
 
      [!code-vb[Trin_WordAddInDynamicControlsWalkthrough#2](../vsto/codesnippet/VisualBasic/Trin_WordAddInDynamicControlsWalkthrough/ThisAddIn.vb#2)]
      [!code-csharp[Trin_WordAddInDynamicControlsWalkthrough#2](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControlsWalkthrough/ThisAddIn.cs#2)]
 
-4.  Přidejte následující metodu do `ThisAddIn` třídy. Pokud uživatel klikne **přidat ovládací prvek Text ve formátu RTF** zaškrtávací políčko na pásu karet, tato metoda přidá <xref:Microsoft.Office.Tools.Word.RichTextContentControl> do aktuálního výběru dokumentu, pokud se zaškrtávací políčko zaškrtnuto nebo odebere <xref:Microsoft.Office.Tools.Word.RichTextContentControl> Pokud není zaškrtnuto zaškrtávací políčko.
+4. Přidejte následující metodu do `ThisAddIn` třídy. Pokud uživatel klikne **přidat ovládací prvek Text ve formátu RTF** zaškrtávací políčko na pásu karet, tato metoda přidá <xref:Microsoft.Office.Tools.Word.RichTextContentControl> do aktuálního výběru dokumentu, pokud se zaškrtávací políčko zaškrtnuto nebo odebere <xref:Microsoft.Office.Tools.Word.RichTextContentControl> Pokud není zaškrtnuto zaškrtávací políčko.
 
      [!code-vb[Trin_WordAddInDynamicControlsWalkthrough#3](../vsto/codesnippet/VisualBasic/Trin_WordAddInDynamicControlsWalkthrough/ThisAddIn.vb#3)]
      [!code-csharp[Trin_WordAddInDynamicControlsWalkthrough#3](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControlsWalkthrough/ThisAddIn.cs#3)]
@@ -129,12 +129,12 @@ ms.locfileid: "59648547"
 
 ### <a name="to-remove-the-button-control-when-the-document-is-saved"></a>Chcete-li odebrat ovládací prvek tlačítka, když je dokument uložen
 
-1.  V *ThisAddIn.cs* nebo *ThisAddIn.vb* soubor kódu, přidejte následující metodu do `ThisAddIn` třídy. Tato metoda je obslužná rutina události <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> událostí. Pokud má uložené dokumenty <xref:Microsoft.Office.Tools.Word.Document> hostitelský objekt, který je spojen s ní obslužná rutina události načte položku hostitele a odebere <xref:Microsoft.Office.Tools.Word.Controls.Button> ovládací prvek, pokud existuje.
+1. V *ThisAddIn.cs* nebo *ThisAddIn.vb* soubor kódu, přidejte následující metodu do `ThisAddIn` třídy. Tato metoda je obslužná rutina události <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> událostí. Pokud má uložené dokumenty <xref:Microsoft.Office.Tools.Word.Document> hostitelský objekt, který je spojen s ní obslužná rutina události načte položku hostitele a odebere <xref:Microsoft.Office.Tools.Word.Controls.Button> ovládací prvek, pokud existuje.
 
      [!code-vb[Trin_WordAddInDynamicControlsWalkthrough#4](../vsto/codesnippet/VisualBasic/Trin_WordAddInDynamicControlsWalkthrough/ThisAddIn.vb#4)]
      [!code-csharp[Trin_WordAddInDynamicControlsWalkthrough#4](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControlsWalkthrough/ThisAddIn.cs#4)]
 
-2.  V jazyce C#, přidejte následující kód, který `ThisAddIn_Startup` obslužné rutiny události. Tento kód je vyžadován v jazyce C# pro připojení `Application_DocumentBeforeSave` obslužné rutině události <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> událostí.
+2. V jazyce C#, přidejte následující kód, který `ThisAddIn_Startup` obslužné rutiny události. Tento kód je vyžadován v jazyce C# pro připojení `Application_DocumentBeforeSave` obslužné rutině události <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> událostí.
 
      [!code-csharp[Trin_WordAddInDynamicControlsWalkthrough#5](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControlsWalkthrough/ThisAddIn.cs#5)]
 
@@ -143,7 +143,7 @@ ms.locfileid: "59648547"
 
 ### <a name="to-add-or-remove-controls-when-the-user-clicks-the-check-boxes-on-the-ribbon"></a>Přidání nebo odebrání řídí, když uživatel klepne zaškrtávací políčka na pásu karet
 
-1.  V *MyRibbon.cs* nebo *MyRibbon.vb* soubor kódu, nahraďte generované `addButtonCheckBox_Click` a `addRichTextCheckBox_Click` obslužné rutiny události s následujícím kódem. Tento kód předefinuje těchto obslužných rutin událostí k volání `ToggleButtonOnDocument` a `ToggleRichTextControlOnDocument` metody, které jste přidali do `ThisAddIn` třídy dříve v tomto návodu.
+1. V *MyRibbon.cs* nebo *MyRibbon.vb* soubor kódu, nahraďte generované `addButtonCheckBox_Click` a `addRichTextCheckBox_Click` obslužné rutiny události s následujícím kódem. Tento kód předefinuje těchto obslužných rutin událostí k volání `ToggleButtonOnDocument` a `ToggleRichTextControlOnDocument` metody, které jste přidali do `ThisAddIn` třídy dříve v tomto návodu.
 
      [!code-vb[Trin_WordAddInDynamicControlsWalkthrough#6](../vsto/codesnippet/VisualBasic/Trin_WordAddInDynamicControlsWalkthrough/MyRibbon.vb#6)]
      [!code-csharp[Trin_WordAddInDynamicControlsWalkthrough#6](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControlsWalkthrough/MyRibbon.cs#6)]
@@ -153,34 +153,34 @@ ms.locfileid: "59648547"
 
 ### <a name="to-test-the-solution"></a>Otestování řešení.
 
-1.  Stisknutím klávesy **F5** ke spuštění projektu.
+1. Stisknutím klávesy **F5** ke spuštění projektu.
 
-2.  V aktivním dokumentu, stiskněte klávesu **Enter** několikrát, chcete-li přidat nový prázdný odstavce do dokumentu.
+2. V aktivním dokumentu, stiskněte klávesu **Enter** několikrát, chcete-li přidat nový prázdný odstavce do dokumentu.
 
-3.  Vyberte první odstavec.
+3. Vyberte první odstavec.
 
-4.  Klikněte na tlačítko **Add-Ins** kartu.
+4. Klikněte na tlačítko **Add-Ins** kartu.
 
-5.  V **přidat ovládací prvky** klikněte na možnost **přidat tlačítko**.
+5. V **přidat ovládací prvky** klikněte na možnost **přidat tlačítko**.
 
      Tlačítko se zobrazí v prvním odstavci.
 
-6.  Vyberte poslední odstavce.
+6. Vyberte poslední odstavce.
 
-7.  V **přidat ovládací prvky** klikněte na možnost **přidat ovládací prvek Text ve formátu RTF**.
+7. V **přidat ovládací prvky** klikněte na možnost **přidat ovládací prvek Text ve formátu RTF**.
 
      Ovládací prvek obsahu formátovaného textu se přidá na posledním odstavci.
 
-8.  Uložte dokument.
+8. Uložte dokument.
 
      Tlačítko se odebere z dokumentu.
 
 ## <a name="next-steps"></a>Další kroky
  Další informace o ovládacích prvcích v doplňcích VSTO z těchto témat:
 
--   Příklad, který ukazuje, jak přidat mnoho typů ovládacích prvků do dokumentu za běhu a znovu vytvořte ovládací prvky, když znovu otevřete dokument, naleznete v tématu slova Add-In dynamické ovládací prvky ukázce kódu na [Office Ukázky a návody vývoje](../vsto/office-development-samples-and-walkthroughs.md).
+- Příklad, který ukazuje, jak přidat mnoho typů ovládacích prvků do dokumentu za běhu a znovu vytvořte ovládací prvky, když znovu otevřete dokument, naleznete v tématu slova Add-In dynamické ovládací prvky ukázce kódu na [Office Ukázky a návody vývoje](../vsto/office-development-samples-and-walkthroughs.md).
 
--   Názorný postup ukazuje, jak přidat ovládací prvky do listu pomocí doplňku VSTO pro Excel, naleznete v tématu [názorný postup: Přidání ovládacích prvků na list za běhu v projektu doplňku VSTO](../vsto/walkthrough-adding-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project.md).
+- Názorný postup ukazuje, jak přidat ovládací prvky do listu pomocí doplňku VSTO pro Excel, naleznete v tématu [názorný postup: Přidání ovládacích prvků na list za běhu v projektu doplňku VSTO](../vsto/walkthrough-adding-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project.md).
 
 ## <a name="see-also"></a>Viz také:
 - [Řešení aplikace Word](../vsto/word-solutions.md)

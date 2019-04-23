@@ -9,12 +9,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d4a93dfca4681f93d0d2a5c45b189fd34c8dccca
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 676ea11188b7b55f3e929280d2b1c67166e37fdc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54782246"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067245"
 ---
 # <a name="step-3-set-your-form-properties"></a>Krok 3: Nastavení vlastností formuláře
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,14 +64,14 @@ Dále použijete **vlastnosti** okno a změně vzhledu formuláře.
   
 7. Před přechodem k dalšímu kroku zastavte program, protože rozhraní IDE neumožní změníte program během jejího běhu. Mějte na paměti, můžete použít některý z následujících metod k zastavení programu.  
   
-   -   Na panelu nástrojů **Zastavit ladění** tlačítko.  
+   - Na panelu nástrojů **Zastavit ladění** tlačítko.  
   
-   -   V panelu nabídky zvolte **ladění**, **Zastavit ladění**.  
+   - V panelu nabídky zvolte **ladění**, **Zastavit ladění**.  
   
-   -   Výběrem tlačítka X v horním rohu **Form1** okna.  
+   - Výběrem tlačítka X v horním rohu **Form1** okna.  
   
 ### <a name="to-continue-or-review"></a>Chcete-li pokračovat nebo přezkoumat  
   
--   Přechod k dalšímu kroku výukového programu naleznete v tématu [krok 4: Rozvrhněte svůj formulář pomocí ovládacího prvku TableLayoutPanel](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md).  
+- Přechod k dalšímu kroku výukového programu naleznete v tématu [krok 4: Rozvrhněte svůj formulář pomocí ovládacího prvku TableLayoutPanel](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md).  
   
--   Chcete-li vrátit k předchozímu kroku tutoriálu, přečtěte si téma [krok 2: Spusťte svůj Program](../ide/step-2-run-your-program.md).
+- Chcete-li vrátit k předchozímu kroku tutoriálu, přečtěte si téma [krok 2: Spusťte svůj Program](../ide/step-2-run-your-program.md).

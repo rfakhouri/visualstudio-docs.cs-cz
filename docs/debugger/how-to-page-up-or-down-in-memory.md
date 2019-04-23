@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b554a197afe2deef3619551af2d45d4a80708afe
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 4b8452100eb744d019c0f4c8d5e62566ac761210
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56715359"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072745"
 ---
 # <a name="how-to-page-up-or-down-in-memory"></a>Postupy: Stránku nahoru nebo dolů v paměti
 
@@ -44,7 +44,7 @@ Při prohlížení obsah paměti **paměti** okno nebo **zpětný překlad** mů
 
 #### <a name="to-move-up-or-down-one-instruction"></a>Chcete-li přesunout nahoru nebo dolů jedna instrukce
 
--   Klikněte na šipku v horní nebo dolní svislý posuvník.
+- Klikněte na šipku v horní nebo dolní svislý posuvník.
 
 ## <a name="see-also"></a>Viz také
 - [Okna paměti](../debugger/memory-windows.md)
