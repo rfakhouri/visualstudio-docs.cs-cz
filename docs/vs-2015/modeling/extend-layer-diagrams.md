@@ -12,12 +12,12 @@ caps.latest.revision: 41
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 219f850ed73104357766ffc4333da55647fb9d40
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: af191c929b88f1bda76896061359b7315517beb5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843744"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066075"
 ---
 # <a name="extend-layer-diagrams"></a>Rozšíření diagramů vrstev
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,15 +26,15 @@ Můžete napsat kód k vytvoření a aktualizaci diagramy vrstev a k ověření 
   
  Další informace o diagramech vrstev naleznete v tématu:  
   
--   [Diagramy vrstev: Referenční dokumentace](../modeling/layer-diagrams-reference.md)  
+- [Diagramy vrstev: Referenční dokumentace](../modeling/layer-diagrams-reference.md)  
   
--   [Diagramy vrstev: Pokyny](../modeling/layer-diagrams-guidelines.md)  
+- [Diagramy vrstev: Pokyny](../modeling/layer-diagrams-guidelines.md)  
   
--   [Vytváření diagramů vrstev z kódu](../modeling/create-layer-diagrams-from-your-code.md)  
+- [Vytváření diagramů vrstev z kódu](../modeling/create-layer-diagrams-from-your-code.md)  
   
--   [Ověřování kódu pomocí diagramů vrstev](../modeling/validate-code-with-layer-diagrams.md)  
+- [Ověřování kódu pomocí diagramů vrstev](../modeling/validate-code-with-layer-diagrams.md)  
   
-##  <a name="prereqs"></a> Požadavky  
+## <a name="prereqs"></a> Požadavky  
  Musí být nainstalovaný na počítači, kde chcete vyvíjet rozšíření vrstvy:  
   
 - Visual Studio  

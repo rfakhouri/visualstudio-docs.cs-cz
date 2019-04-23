@@ -9,12 +9,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8485885cbba43ea9eaef76616607861c44c2ab24
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: b395b396ab182ca03be35cddc8d237506b43e39c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59668779"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066608"
 ---
 # <a name="how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-or-designer"></a>Postupy: Vytvoření metod DataContext namapovaných na uložené procedury a funkce (O/R Designer)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,17 +34,17 @@ Uložených procedur a funkcí lze přidat do [!INCLUDE[vs_ordesigner_short](../
   
 #### <a name="to-create-datacontext-methods-that-return-automatically-generated-types"></a>Chcete-li vytvořit DataContext metody, které vracejí automaticky vygenerovaných typů  
   
-1.  V **Průzkumníka serveru**/**Průzkumník databáze**, rozbalte **uložené procedury** uzel databáze pracujete.  
+1. V **Průzkumníka serveru**/**Průzkumník databáze**, rozbalte **uložené procedury** uzel databáze pracujete.  
   
-2.  Vyhledejte požadovanou uložené procedury a přetáhněte ji na prázdnou oblast [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].  
+2. Vyhledejte požadovanou uložené procedury a přetáhněte ji na prázdnou oblast [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].  
   
      <xref:System.Data.Linq.DataContext> Metoda se vytvoří s automaticky generovanou návratový typ a zobrazí se v **metody** podokně.  
   
 #### <a name="to-create-datacontext-methods-that-have-the-return-type-of-an-entity-class"></a>Vytvoření metod DataContext, které mají návratový typ třídy entity  
   
-1.  V **Průzkumníka serveru**/**Průzkumník databáze**, rozbalte **uložené procedury** uzel databáze pracujete.  
+1. V **Průzkumníka serveru**/**Průzkumník databáze**, rozbalte **uložené procedury** uzel databáze pracujete.  
   
-2.  Vyhledejte požadovanou uložené procedury a přetáhněte ji na existující třídu entity v [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].  
+2. Vyhledejte požadovanou uložené procedury a přetáhněte ji na existující třídu entity v [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].  
   
      <xref:System.Data.Linq.DataContext> Metoda s návratovým typem třídy vybranou entitu a je zahrnut v **metody** podokně.  
   

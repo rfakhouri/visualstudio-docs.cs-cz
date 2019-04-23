@@ -14,12 +14,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8e26cbc2a4c49f09f41e16287cef75beecdf4fdf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 442181aa78e539471aa35feb96ec7503e09a97ec
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54781047"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065828"
 ---
 # <a name="how-to-customize-class-diagrams-class-designer"></a>Postupy: Přizpůsobení diagramů tříd (návrhář tříd)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,29 +35,29 @@ Můžete změnit způsob, jak diagramy tříd zobrazují informace. Můžete př
   
  **V tomto tématu**  
   
--   [Přiblížení a oddálení diagramu tříd](../ide/how-to-customize-class-diagrams-class-designer.md#ZoomInOut)  
+- [Přiblížení a oddálení diagramu tříd](../ide/how-to-customize-class-diagrams-class-designer.md#ZoomInOut)  
   
--   [Přizpůsobení seskupování a řazení členů typu](../ide/how-to-customize-class-diagrams-class-designer.md#CustomizeGroupingSorting)  
+- [Přizpůsobení seskupování a řazení členů typu](../ide/how-to-customize-class-diagrams-class-designer.md#CustomizeGroupingSorting)  
   
--   [Skrytí oddílů typu](../ide/how-to-customize-class-diagrams-class-designer.md#HideCompartments)  
+- [Skrytí oddílů typu](../ide/how-to-customize-class-diagrams-class-designer.md#HideCompartments)  
   
--   [Skrytí jednotlivých členů typu](../ide/how-to-customize-class-diagrams-class-designer.md#HideMembers)  
+- [Skrytí jednotlivých členů typu](../ide/how-to-customize-class-diagrams-class-designer.md#HideMembers)  
   
--   [Zobrazení skrytých oddílů a členů typu](../ide/how-to-customize-class-diagrams-class-designer.md#DisplayHiddenCompartmentsAndMemberrs)  
+- [Zobrazení skrytých oddílů a členů typu](../ide/how-to-customize-class-diagrams-class-designer.md#DisplayHiddenCompartmentsAndMemberrs)  
   
--   [Skrytí vztahů](../ide/how-to-customize-class-diagrams-class-designer.md#HideAssociationAndInheritance)  
+- [Skrytí vztahů](../ide/how-to-customize-class-diagrams-class-designer.md#HideAssociationAndInheritance)  
   
--   [Zobrazení skrytých vztahů](../ide/how-to-customize-class-diagrams-class-designer.md#DisplayAssociationAndInheritance)  
+- [Zobrazení skrytých vztahů](../ide/how-to-customize-class-diagrams-class-designer.md#DisplayAssociationAndInheritance)  
   
--   [Odebrání tvaru z diagramu tříd](../ide/how-to-customize-class-diagrams-class-designer.md#RemoveCodeAndShape)  
+- [Odebrání tvaru z diagramu tříd](../ide/how-to-customize-class-diagrams-class-designer.md#RemoveCodeAndShape)  
   
--   [Odstranění tvaru typu a jeho základního kódu](../ide/how-to-customize-class-diagrams-class-designer.md#DeleteTypeShapeAndCode)  
+- [Odstranění tvaru typu a jeho základního kódu](../ide/how-to-customize-class-diagrams-class-designer.md#DeleteTypeShapeAndCode)  
   
-##  <a name="ZoomInOut"></a> Přiblížení a oddálení diagramu tříd  
+## <a name="ZoomInOut"></a> Přiblížení a oddálení diagramu tříd  
   
-1.  Otevřete a vyberte soubor diagramu tříd v Návrháři tříd.  
+1. Otevřete a vyberte soubor diagramu tříd v Návrháři tříd.  
   
-2.  Na panelu nástrojů návrháře tříd klikněte na tlačítko **přiblížit** nebo **Oddálit** tlačítko a změňte úroveň přiblížení návrhové ploše.  
+2. Na panelu nástrojů návrháře tříd klikněte na tlačítko **přiblížit** nebo **Oddálit** tlačítko a změňte úroveň přiblížení návrhové ploše.  
   
      or  
   
@@ -66,63 +66,63 @@ Můžete změnit způsob, jak diagramy tříd zobrazují informace. Můžete př
     > [!NOTE]
     >  Změna úrovně přiblížení neovlivní měřítko výtisku vašeho diagramu tříd.  
   
-##  <a name="CustomizeGroupingSorting"></a> Přizpůsobení seskupování a řazení členů typu  
+## <a name="CustomizeGroupingSorting"></a> Přizpůsobení seskupování a řazení členů typu  
   
-1.  Otevřete a vyberte soubor diagramu tříd v Návrháři tříd.  
+1. Otevřete a vyberte soubor diagramu tříd v Návrháři tříd.  
   
-2.  Klikněte pravým tlačítkem na prázdnou oblast na návrhové ploše a přejděte na **členy skupiny**.  
+2. Klikněte pravým tlačítkem na prázdnou oblast na návrhové ploše a přejděte na **členy skupiny**.  
   
-3.  Vyberte jednu z dostupných možností:  
+3. Vyberte jednu z dostupných možností:  
   
-    1.  **Seskupit podle druhu** odděluje jednotlivé členy typu do seskupeného seznamu vlastností, metod, událostí a polí. Jednotlivé skupiny závisí na definici entit: třída například nebude zobrazovat žádnou skupinu událostí, pokud pro danou třídu zatím nebyly definovány žádné události.  
+    1. **Seskupit podle druhu** odděluje jednotlivé členy typu do seskupeného seznamu vlastností, metod, událostí a polí. Jednotlivé skupiny závisí na definici entit: třída například nebude zobrazovat žádnou skupinu událostí, pokud pro danou třídu zatím nebyly definovány žádné události.  
   
-    2.  **Seskupit podle přístupu ke** modifikátorů přístupu odděluje jednotlivé členy typu do seskupeného seznamu na základě tohoto členu. Například veřejné a soukromé.  
+    2. **Seskupit podle přístupu ke** modifikátorů přístupu odděluje jednotlivé členy typu do seskupeného seznamu na základě tohoto členu. Například veřejné a soukromé.  
   
-    3.  **Seřadit podle abecedy** zobrazuje položky, které tvoří entitu, jako jeden abecední seznam. Seznam je seřazen vzestupně.  
+    3. **Seřadit podle abecedy** zobrazuje položky, které tvoří entitu, jako jeden abecední seznam. Seznam je seřazen vzestupně.  
   
-##  <a name="HideCompartments"></a> Skrytí oddílů typu  
+## <a name="HideCompartments"></a> Skrytí oddílů typu  
   
-1.  Otevřete a vyberte soubor diagramu tříd v Návrháři tříd.  
+1. Otevřete a vyberte soubor diagramu tříd v Návrháři tříd.  
   
-2.  Klikněte pravým tlačítkem myši klikněte na kategorii členu v typu, který chcete přizpůsobit (například, vyberte **metody** uzlu ve třídě.  
+2. Klikněte pravým tlačítkem myši klikněte na kategorii členu v typu, který chcete přizpůsobit (například, vyberte **metody** uzlu ve třídě.  
   
-3.  Klikněte na tlačítko **skrýt oddíl**.  
+3. Klikněte na tlačítko **skrýt oddíl**.  
   
      Vybraný oddíl zmizí z kontejneru typu.  
   
-##  <a name="HideMembers"></a> Skrytí jednotlivých členů typu  
+## <a name="HideMembers"></a> Skrytí jednotlivých členů typu  
   
-1.  Otevřete a vyberte soubor diagramu tříd v Návrháři tříd.  
+1. Otevřete a vyberte soubor diagramu tříd v Návrháři tříd.  
   
-2.  Klikněte pravým tlačítkem myši na člen v typu, který chcete skrýt.  
+2. Klikněte pravým tlačítkem myši na člen v typu, který chcete skrýt.  
   
-3.  Klikněte na tlačítko **skrýt**.  
+3. Klikněte na tlačítko **skrýt**.  
   
      Vybraný člen zmizí z kontejneru typu.  
   
-##  <a name="DisplayHiddenCompartmentsAndMemberrs"></a> Zobrazení skrytých oddílů a členů typu  
+## <a name="DisplayHiddenCompartmentsAndMemberrs"></a> Zobrazení skrytých oddílů a členů typu  
   
-1.  Otevřete a vyberte soubor diagramu tříd v Návrháři tříd.  
+1. Otevřete a vyberte soubor diagramu tříd v Návrháři tříd.  
   
-2.  Klikněte pravým tlačítkem na název typu se skrytým oddílem.  
+2. Klikněte pravým tlačítkem na název typu se skrytým oddílem.  
   
-3.  Klikněte na tlačítko **zobrazit všechny členy**.  
-  
-     Všechny skryté oddíly a členy se zobrazí v kontejneru typu.  
-  
-##  <a name="HideAssociationAndInheritance"></a> Skrytí vztahů  
-  
-1.  Otevřete a vyberte soubor diagramu tříd v Návrháři tříd.  
-  
-2.  Klikněte pravým tlačítkem myši na asociační čáru nebo čáru dědičnosti, kterou chcete skrýt.  
-  
-3.  Klikněte na tlačítko **skrýt** pro Asociační čáry a klikněte na **Skrýt čáru dědičnosti** u čar dědičnosti.  
-  
-4.  Klikněte na tlačítko **zobrazit všechny členy**.  
+3. Klikněte na tlačítko **zobrazit všechny členy**.  
   
      Všechny skryté oddíly a členy se zobrazí v kontejneru typu.  
   
-##  <a name="DisplayAssociationAndInheritance"></a> Zobrazení skrytých vztahů  
+## <a name="HideAssociationAndInheritance"></a> Skrytí vztahů  
+  
+1. Otevřete a vyberte soubor diagramu tříd v Návrháři tříd.  
+  
+2. Klikněte pravým tlačítkem myši na asociační čáru nebo čáru dědičnosti, kterou chcete skrýt.  
+  
+3. Klikněte na tlačítko **skrýt** pro Asociační čáry a klikněte na **Skrýt čáru dědičnosti** u čar dědičnosti.  
+  
+4. Klikněte na tlačítko **zobrazit všechny členy**.  
+  
+     Všechny skryté oddíly a členy se zobrazí v kontejneru typu.  
+  
+## <a name="DisplayAssociationAndInheritance"></a> Zobrazení skrytých vztahů  
   
 1. Otevřete a vyberte soubor diagramu tříd v Návrháři tříd.  
   
@@ -130,20 +130,20 @@ Můžete změnit způsob, jak diagramy tříd zobrazují informace. Můžete př
   
    Klikněte na tlačítko **zobrazit všechny členy** pro Asociační čáry a klikněte na **zobrazit základní třídu** nebo **Zobrazit odvozené třídy** u čar dědičnosti.  
   
-##  <a name="RemoveCodeAndShape"></a> Odebrání tvaru z diagramu tříd  
+## <a name="RemoveCodeAndShape"></a> Odebrání tvaru z diagramu tříd  
  Můžete odebrat tvar typu z diagramu tříd bez ovlivnění základního kódu typu. Odebrání tvarů typu z diagramu tříd ovlivní pouze tento diagram: základní kód definující typ a ostatní diagramy, které typ zobrazují, ovlivněny nejsou.  
   
-1.  V diagramu tříd vyberte tvar typu, který chcete z diagramu odebrat.  
+1. V diagramu tříd vyberte tvar typu, který chcete z diagramu odebrat.  
   
-2.  Na **upravit** nabídce zvolte **odebrat z diagramu**.  
+2. Na **upravit** nabídce zvolte **odebrat z diagramu**.  
   
      Tvar typu a čáry přidružení nebo dědičnosti spojené s tvarem se již v diagramu nezobrazí.  
   
-##  <a name="DeleteTypeShapeAndCode"></a> Odstranění tvaru typu a jeho základního kódu  
+## <a name="DeleteTypeShapeAndCode"></a> Odstranění tvaru typu a jeho základního kódu  
   
-1.  Klikněte pravým tlačítkem myši na tvar na návrhové ploše.  
+1. Klikněte pravým tlačítkem myši na tvar na návrhové ploše.  
   
-2.  Vyberte **smazat kód** v místní nabídce.  
+2. Vyberte **smazat kód** v místní nabídce.  
   
      Tvar je odstraněn z diagramu a jeho základní kód je odstraněn z projektu.  
   
