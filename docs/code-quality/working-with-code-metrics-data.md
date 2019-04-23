@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8bcaa3688486831f83712dc0cf0ee3e4a17c4a22
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: bbe2c216a9293ddc8c5c1212957c2987924d14e1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55918374"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089286"
 ---
 # <a name="use-the-code-metrics-results-window"></a>Použijte okno výsledků metrik kódu
 
@@ -48,15 +48,15 @@ Můžete filtrovat výsledky, které jsou zobrazeny v **výsledků metrik kódu*
 
 ### <a name="to-filter-the-code-metrics-results"></a>K filtrování výsledků metrik kódu
 
-1.  Z **filtr** seznamu, vyberte název sloupce.
+1. Z **filtr** seznamu, vyberte název sloupce.
 
-2.  V **Min**, zadejte minimální hodnotu, který se má zobrazit.
+2. V **Min**, zadejte minimální hodnotu, který se má zobrazit.
 
-3.  V **maximální**, zadejte maximální hodnotu, který se má zobrazit.
+3. V **maximální**, zadejte maximální hodnotu, který se má zobrazit.
 
-4.  Klikněte na tlačítko **použít filtr** tlačítko.
+4. Klikněte na tlačítko **použít filtr** tlačítko.
 
-5.  Pokud chcete zobrazit podrobnosti výsledku, rozbalte stromovou strukturu hierarchie.
+5. Pokud chcete zobrazit podrobnosti výsledku, rozbalte stromovou strukturu hierarchie.
 
 ## <a name="add-remove-and-rearrange-data-columns"></a>Přidání, odebrání a změna uspořádání dat sloupců
 
@@ -88,23 +88,23 @@ Další informace o Azure panelů pracovní položky, naleznete v tématu [praco
 
 ### <a name="to-create-a-work-item-based-on-a-result"></a>Chcete-li vytvořit pracovní položku podle výsledku
 
-1.  Klikněte pravým tlačítkem na výsledek.
+1. Klikněte pravým tlačítkem na výsledek.
 
-2.  Přejděte na **vytvořit pracovní položku**a potom klikněte na typ pracovní položky, kterou chcete vytvořit (**chyb**, **úloh**a tak dále).
+2. Přejděte na **vytvořit pracovní položku**a potom klikněte na typ pracovní položky, kterou chcete vytvořit (**chyb**, **úloh**a tak dále).
 
-3.  Vyplňte formulář pracovní položky vyplnění všech povinných polích.
+3. Vyplňte formulář pracovní položky vyplnění všech povinných polích.
 
-4.  Na **souboru** nabídky, klikněte na tlačítko **Uložit vše** k uložení pracovní položky.
+4. Na **souboru** nabídky, klikněte na tlačítko **Uložit vše** k uložení pracovní položky.
 
 ### <a name="to-create-a-bug-based-on-a-result"></a>Vytvořit chybu na základě výsledku
 
-1.  Klikněte na výsledek a vyberte ji.
+1. Klikněte na výsledek a vyberte ji.
 
-2.  Klikněte na tlačítko **vytvořit pracovní položku** tlačítko.
+2. Klikněte na tlačítko **vytvořit pracovní položku** tlačítko.
 
-3.  Vyplňte formulář pracovní položky vyplnění všech povinných polích.
+3. Vyplňte formulář pracovní položky vyplnění všech povinných polích.
 
-4.  Na **souboru** nabídky, klikněte na tlačítko **Uložit vše** k uložení pracovní položky.
+4. Na **souboru** nabídky, klikněte na tlačítko **Uložit vše** k uložení pracovní položky.
 
 ## <a name="see-also"></a>Viz také:
 

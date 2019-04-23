@@ -8,12 +8,12 @@ ms.assetid: 11232a83-73ea-46bd-bc0c-46f74f6e3a42
 caps.latest.revision: 35
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 54ccd9ad0cfefe33be7c51d44e9adb6c15717a7a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 58bfe0a2a6c337081ebb96464a701decb73cc022
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54803624"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080693"
 ---
 # <a name="upgrading-coded-ui-tests-from-visual-studio-2010"></a>Upgrade programových testů UI z produktu Visual Studio 2010
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ Testovací projekty obsahující programové testy uživatelského rozhraní, kt
 
  **Požadavky**
 
--   Visual Studio Enterprise
+- Visual Studio Enterprise
 
 > [!NOTE]
 >  Visual Studio obsahuje více než jeden typ testovacího projektu. Pokud vytvoříte nový kódovaný test uživatelského rozhraní, vytvoří se v typu projektu programového testu uživatelského rozhraní. Další informace najdete v tématu [upgradování testů ze starších verzí sady Visual Studio](http://msdn.microsoft.com/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52).
@@ -46,7 +46,7 @@ Testovací projekty obsahující programové testy uživatelského rozhraní, kt
 |Nový kód uživatelského rozhraní testování rozhraní API se přidaly do [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]|**Sestavení se nezdaří**<br /><br /> Pokud vytvoříte programové testy uživatelského rozhraní pomocí nového uživatelského rozhraní testování rozhraní API v [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], nelze tyto projekty otevřít v [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)].|Projektů pomocí nového rozhraní API se mají spravovat v [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] pouze.|
 |V [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)], byly přidány odkazy uvnitř příkazu "Zvolit" v souboru csproj. V [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], používáme soubor cílů zpětnou vazbu odkazy programového sestavení uživatelského rozhraní testu.|V [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], programový Test uživatelského rozhraní nelze přidat do projektu testů vytvořené v [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] (nebo s aktualizací SP1), která neobsahovala programový Test uživatelského rozhraní.<br /><br /> Proces opravy přidá soubor cílů a zvolit příkaz. Pokud programový Test uživatelského rozhraní není v projektu testu a projekt je označen jako opravit a příslušných odkazů nebudou přidány, při přidávání programový Test uživatelského rozhraní v [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)].|Budete muset vytvořit nový testovací projekt ve stejném řešení pomocí [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] a přidat váš nový programový Test uživatelského rozhraní. Alternativně můžete přidat programové testy uživatelského rozhraní do testovacího projektu ve [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] SP1 a otevřete projekt, který v [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)].|
 
-##  <a name="UpgradingCodedUIFromVS2010_Update"></a> Visual Studio 2010 SP1 Update
+## <a name="UpgradingCodedUIFromVS2010_Update"></a> Visual Studio 2010 SP1 Update
  Aktualizace [!INCLUDE[vs2010](../includes/vs2010-md.md)] SP1 s podporou kompatibility pro Visual Studio 2012 a Windows 8 je k dispozici ke stažení na [Microsoft Download Center](http://www.microsoft.com/download/details.aspx?id=34677) a aktualizovat také jako sady Visual Studio.
 
  Po instalaci aktualizace, následující [!INCLUDE[vs2010](../includes/vs2010-md.md)] lepší programové funkce nástroj pro testování uživatelského rozhraní pro Windows 8 s aktualizací SP1:
