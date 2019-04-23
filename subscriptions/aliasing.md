@@ -7,12 +7,12 @@ ms.date: 01/02/2018
 ms.topic: conceptual
 description: Přihlášení může selhat, pokud se používají aliasy nebo popisné názvy
 searchscope: VS Subscription
-ms.openlocfilehash: cef5c71a62088fdef410dccb22b93eb0d7ad025d
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: ac3f9df365e0b7924b615c2ae8cbb70d93d04948
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59668532"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041382"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-may-fail-when-using-aliases"></a>Přihlášení k předplatná sady Visual Studio může selhat, pokud aliasy using
 
@@ -81,21 +81,23 @@ Postupujte prosím podle následujících kroků aktualizujte stávající před
 
 Protože Uvítacího e-mailu úspěšně nedostanou vaše odběratele, zkopírujte a vložte níže zpráv do e-mailu a odeslat do vašich odběratele. Nahraďte odpovídajícími informacemi pro každý předplatitel % slova.
 
----Kopírování níže (Ctrl + C)---
+```
+----------- Copy Below (Ctrl+C) -----------
 
-Hello % odběratele názvem %
+Hello %SUBSCRIBER NAME%
 
-Máte přiřazené předplatné sady Visual Studio. Navštivte prosím https://my.visualstudio.coma přihlaste se pomocí % % adresu adresáře a aktivovat přístup k vašemu předplatnému.
+You have been assigned a Visual Studio subscription. Please visit https://my.visualstudio.com, and log in with your %DIRECTORY ADDRESS% address to activate and access your subscription.
 
-Pokud máte potíže, kontaktujte prosím tým podpory (https://visualstudio.microsoft.com/subscriptions/support/).
+If you’re having trouble, please contact the support team (https://visualstudio.microsoft.com/subscriptions/support/).
 
-V dolní části stránky vyberte následující položky:
-   - Účtů, předplatných a podpora pro fakturaci
-   - Od vydání zvolit přihlašovací předplatné podpory
-   - Zvolte odpovídající zemi
-   - Vyberte požadovanou možnost podpory s asistencí
+At the bottom of the page, select the following:
+   - Accounts, Subscriptions, and Billing Support
+   - From Issue, choose Subscription sign in support
+   - Choose the appropriate Country
+   - Select the desired Assisted Support option
 
----Konec zkopírování---
+----------- End Copy -----------
+```
 
 ## <a name="defining-a-work-or-school-account-as-a-personal-account"></a>Definování pracovního nebo školního účtu jako osobní účet
 
@@ -126,35 +128,37 @@ Po přiřazení předplatného je k odběrateli, dostanou e-mail s požadavkem n
 
 Ve scénáři uvedeném výše vaši předplatitelé dostanou "Uvítací E-mail", ale kvůli aliasy, které se můžou vyskytnout, že se že nebudou moct přihlásit.  Můžete použít následující text, který má upozornit vaši předplatitelé výše uvedené kroky a doporučuje možnosti podpory v případě potřeby.  Nahraďte odpovídajícími informacemi pro každý předplatitel % slova.
 
----Kopírování níže (Ctrl + C)---
+```
+----------- Copy Below (Ctrl+C) -----------
 
-Hello % odběratele názvem %
+Hello %SUBSCRIBER NAME%
 
-Bylo přiřazeno předplatné sady Visual Studio a mohou směrováni pro přihlášení k https://my.visualstudio.com podle Uvítacího e-mailu.  Když je správný webu pro využívání výhod, naše organizace vyžaduje, abyste provést několik kroků navíc pro přístup k webu.  Postupujte prosím podle následujících pokynů, které vám pomohou vytvořit "Account Microsoft", který se váže na našich firemních e-mailovou adresu.  Po dokončení těchto kroků se použije pro přístup k výhodám předplatného e-mailovou adresu.
-1. Navštivte web https://my.visualstudio.com
+You have been assigned a Visual Studio subscription, and may have been directed to log into https://my.visualstudio.com based on your Welcome email.  While this is the correct website for consuming benefits, our organization requires you to take a few extra steps before you can access the site.  Please follow the below instructions to help you create a “Microsoft Account” that is tied to our corporate email address.  Once these steps are completed, you will use your email address to access the Subscription benefits.
+1. Visit https://my.visualstudio.com
 
-2. Klikněte na tlačítko Vytvořit nový Account Microsoft na pravé straně
+2. Click Create new Microsoft Account on the right hand side
 
-3. Vyplňte formulář:
-   - Použijte váš firemní e-mailovou adresu v someone@example.com pole
-   - Zadejte heslo
-   - Vyberte preferovaný propagační akce
-   - Klikněte na tlačítko Další
+3. Complete the Form:
+   - Use your corporate email address in the someone@example.com box
+   - Enter a password
+   - Select your promotional preference
+   - Click Next
 
-4. Dokončete ověření účtu
+4. Complete the account validation steps
 
-5. V případě potřeby vyplnit profil pro Visual Studio
+5. If necessary, complete the Visual Studio profile
 
-6. Teď byste měli vidět vaše výhody
+6. You should now see your benefits
 
-Poznámka:  Při návštěvě https://my.visualstudio.com v budoucnu, můžete být vyzváni k výběru účtu, který chcete použít (např.) "Pracovní nebo školní účet" nebo "Osobní účet").  Po provedení výše uvedených kroků, bude muset využít možnost osobní účet.".
+Note:  When visiting https://my.visualstudio.com in the future, you may be prompted to select which account you’d like to use (e.g. “Work or School Account” or “Personal Account”).  After following the steps above, you will need to leverage the “Personal Account” option.
 
-Pokud máte potíže, kontaktujte prosím tým podpory (https://visualstudio.microsoft.com/subscriptions/support/).
+If you’re having trouble, please contact the support team (https://visualstudio.microsoft.com/subscriptions/support/).
 
-V dolní části stránky vyberte následující položky:
-   - Účtů, předplatných a podpora pro fakturaci
-   - Od vydání zvolit přihlašovací předplatné podpory
-   - Zvolte odpovídající zemi
-   - Vyberte požadovanou možnost podpory s asistencí
+At the bottom of the page, select the following:
+   - Accounts, Subscriptions, and Billing Support
+   - From Issue, choose Subscription sign in support
+   - Choose the appropriate Country
+   - Select the desired Assisted Support option
 
----Konec zkopírování---
+----------- End Copy -----------
+```

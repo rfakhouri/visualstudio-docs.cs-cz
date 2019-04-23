@@ -9,12 +9,12 @@ caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7dac95cd91e6dd2ba20b9cdee216aeedb8d8c39a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: ca0b64b112e149404b2ee8861103b25fd6780ccc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59668415"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040247"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-service-to-collect-application-statistics-by-using-the-command-line"></a>Postupy: Připojit Profiler ke službě .NET ke shromažďování statistik aplikace pomocí příkazového řádku
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,9 +44,9 @@ Toto téma popisuje způsob použití [!INCLUDE[vsprvs](../includes/vsprvs-md.md
 
     **Vsperfclrenv – /globalsampleon** [**/samplelineoff**]  
 
-   -   **/globalsampleon** umožňuje vzorkování.  
+   - **/globalsampleon** umožňuje vzorkování.  
 
-   -   **/samplelineoff** zakáže přiřazení shromážděných dat ke konkrétnímu zdroji řádků kódu. Pokud je tato možnost zadána, data přiřazena pouze funkcí.  
+   - **/samplelineoff** zakáže přiřazení shromážděných dat ke konkrétnímu zdroji řádků kódu. Pokud je tato možnost zadána, data přiřazena pouze funkcí.  
 
 4. Restartujte počítač.  
 
@@ -90,14 +90,14 @@ Toto téma popisuje způsob použití [!INCLUDE[vsprvs](../includes/vsprvs-md.md
    |[/ sys](../profiling/sys-vsperfcmd.md)[`:``Interval`]|Změní událost odběru vzorků na volání systému z procesu do jádra operačního systému (syscalls). Pokud `Interval` je určen, nastaví počet volání mezi vzorky. Výchozí hodnota je 10.|  
    |[/ Čítač](../profiling/counter.md) **:** `Config`|Změní událost a interval vzorkování na čítač výkonu a interval procesoru určený parametrem `Config`.|  
 
-   -   **targetclr:** `Version` Určuje verzi modulu common language runtime (CLR) do profilu je do aplikace načtena více než jedna verze modulu runtime. Volitelné.  
+   - **targetclr:** `Version` Určuje verzi modulu common language runtime (CLR) do profilu je do aplikace načtena více než jedna verze modulu runtime. Volitelné.  
 
 ## <a name="controlling-data-collection"></a>Řízení shromažďování dat  
  Pokud je služba spuštěna, můžete použít **VSPerfCmd.exe** možnosti spuštění a zastavení zápisu dat do datového souboru profilování. Řízení sběru dat umožňuje shromažďovat data pro určitou část provádění programu, například spouštění či ukončování aplikace.  
 
 #### <a name="to-start-and-stop-data-collection"></a>Spuštění a zastavení shromažďování dat  
 
--   Následující páry **VSPerfCmd** možností spouští a zastavují sběr dat. Každou možnost zadejte na samostatný příkazový řádek. Sběr dat lze zapnout a vypnout několikrát.  
+- Následující páry **VSPerfCmd** možností spouští a zastavují sběr dat. Každou možnost zadejte na samostatný příkazový řádek. Sběr dat lze zapnout a vypnout několikrát.  
 
     |Možnost|Popis|  
     |------------|-----------------|  
@@ -112,23 +112,23 @@ Toto téma popisuje způsob použití [!INCLUDE[vsprvs](../includes/vsprvs-md.md
 
 #### <a name="to-end-a-profiling-session"></a>Chcete-li ukončit relaci profilování  
 
-1.  Proveďte jednu z následujících-li odpojit profiler od cílové aplikace:  
+1. Proveďte jednu z následujících-li odpojit profiler od cílové aplikace:  
 
-    -   Zastavte službu.  
+    - Zastavte službu.  
 
          -nebo-  
 
-    -   Typ **VSPerfCmd / odpojení**  
+    - Typ **VSPerfCmd / odpojení**  
 
-2.  Vypněte profiler. Typ:  
+2. Vypněte profiler. Typ:  
 
      **/ Shutdown VSPerfCmd**  
 
-3.  (Volitelné) Vyčistěte proměnné prostředí profilování. Typ:  
+3. (Volitelné) Vyčistěte proměnné prostředí profilování. Typ:  
 
      **Vsperfclrenv – /globaloff**  
 
-4.  Restartujte počítač.  
+4. Restartujte počítač.  
 
 ## <a name="see-also"></a>Viz také  
  [Profilace služeb](../profiling/command-line-profiling-of-services.md)   

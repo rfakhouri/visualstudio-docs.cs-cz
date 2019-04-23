@@ -17,12 +17,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e0290fa7c83b36c19663aef85c0179fb9458ddcf
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 88644f3bf768f1b3467467a31edbd83e8e5f151c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58193909"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039874"
 ---
 # <a name="how-to-debug-with-code-center-premium-source"></a>Postupy: Ladění se zdrojem webu Code Center Premium
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -78,21 +78,21 @@ S [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] ladicího programu,
   
 ### <a name="to-debug-your-source-code-using-attach-to-process"></a>Chcete-li ladit váš zdrojový kód pomocí připojit k procesu  
   
-1.  Připojte čtečky čipových karet a vložte kartu, kterou jste získali z Shared Source Initiative.  
+1. Připojte čtečky čipových karet a vložte kartu, kterou jste získali z Shared Source Initiative.  
   
-2.  Spusťte sadu Visual Studio.  
+2. Spusťte sadu Visual Studio.  
   
-3.  Otevřete projekt sady Visual Studio.  
+3. Otevřete projekt sady Visual Studio.  
   
-4.  Na **nástroje** nabídky, klikněte na tlačítko **připojit k procesu**.  
+4. Na **nástroje** nabídky, klikněte na tlačítko **připojit k procesu**.  
   
-5.  V **připojit k procesu** dialogové okno, klikněte na tlačítko **vyberte**.  
+5. V **připojit k procesu** dialogové okno, klikněte na tlačítko **vyberte**.  
   
-6.  V **vybrat typ kódu** dialogovém okně **rozpoznat tyto typy kódu**vyberte **nativní**, **spravované**, a **Managed () V4.0)**.  
+6. V **vybrat typ kódu** dialogovém okně **rozpoznat tyto typy kódu**vyberte **nativní**, **spravované**, a **Managed () V4.0)**.  
   
-7.  Klikněte na tlačítko **OK** zrušíte **vybrat typ kódu** dialogové okno.  
+7. Klikněte na tlačítko **OK** zrušíte **vybrat typ kódu** dialogové okno.  
   
-8.  V **procesy k dispozici** vyberte proces, který chcete ladit.  
+8. V **procesy k dispozici** vyberte proces, který chcete ladit.  
   
 9. Klikněte na tlačítko **připojit**.  
   
@@ -117,27 +117,27 @@ S [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] ladicího programu,
   
 4. Pro každý spravovaný projekt ve vašem řešení proveďte následující  
   
-   1.  V Průzkumníku řešení otevřete místní nabídku pro projekt a klikněte na tlačítko **vlastnosti**.  
+   1. V Průzkumníku řešení otevřete místní nabídku pro projekt a klikněte na tlačítko **vlastnosti**.  
   
-   2.  Vyberte **ladění** a klikněte na tlačítko **povolit ladění kódu unmanged**.  
+   2. Vyberte **ladění** a klikněte na tlačítko **povolit ladění kódu unmanged**.  
   
 ### <a name="to-debug-your-solution-with-code-center-premium-source"></a>Chcete-li ladit vaše řešení se zdrojem webu Code Center Premium  
   
-1.  Ve vaší `Package` třídy, nastavte zarážku v konstruktoru balíčku.  
+1. Ve vaší `Package` třídy, nastavte zarážku v konstruktoru balíčku.  
   
-2.  V `Debug` nabídky, klikněte na tlačítko **spustit ladění**.  
+2. V `Debug` nabídky, klikněte na tlačítko **spustit ladění**.  
   
-3.  Až se dostanete k zarážce v konstruktoru balíčku, přejděte **zásobník volání** okno a klikněte pravým tlačítkem na rámec zásobníku sestavení, který chcete načíst symboly z, pak klikněte na tlačítko **načíst symboly**.  
+3. Až se dostanete k zarážce v konstruktoru balíčku, přejděte **zásobník volání** okno a klikněte pravým tlačítkem na rámec zásobníku sestavení, který chcete načíst symboly z, pak klikněte na tlačítko **načíst symboly**.  
   
      Klikněte dvakrát na rámec volání se načíst zdroj.  
   
 ### <a name="to-browse-source-code-on-code-center-premium"></a>K procházení zdrojového kódu na Code Center Premium  
   
-1.  Připojte čtečky čipových karet a vložte kartu, kterou jste získali z Shared Source Initiative.  
+1. Připojte čtečky čipových karet a vložte kartu, kterou jste získali z Shared Source Initiative.  
   
-2.  Spuštění aplikace Internet Explorer zadejte následující adresu URL: `https://codepremium.msdn.microsoft.com`  
+2. Spuštění aplikace Internet Explorer zadejte následující adresu URL: `https://codepremium.msdn.microsoft.com`  
   
-3.  Procházením vyhledejte požadovaný zdroj.  
+3. Procházením vyhledejte požadovaný zdroj.  
   
 ## <a name="see-also"></a>Viz také  
  [Nastavení ladicího programu a příprava](../debugger/debugger-settings-and-preparation.md)   

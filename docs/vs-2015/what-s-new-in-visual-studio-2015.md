@@ -14,12 +14,12 @@ caps.latest.revision: 364
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 18e5effdd2398ce3532c73c1d9f9941554b2043b
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: bd06e1b6eb74a6a356c085bdade2733e29d54023
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58195161"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041832"
 ---
 # <a name="what39s-new-in-visual-studio-2015"></a>Co&#39;nového v sadě Visual Studio 2015
 [!INCLUDE[vs2017banner](./includes/vs2017banner.md)]
@@ -123,15 +123,15 @@ Další informace o řadě vylepšení a nových funkcí v prostředí Visual St
 ## <a name="cross-platform-debugging-support"></a>Podpora ladění pro různé platformy
  Visual Studio můžete použít k vytváření a ladění nativních mobilních aplikací, které běží na Windows, iOS a androidem. Použití [Visual Studio Emulator for Android](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/12/introducing-visual-studio-s-emulator-for-android.aspx), nebo připojte zařízení a ladění kódu přímo v sadě Visual Studio.
 
--   **JavaScript / Cordova**. Použití [Visual Studio Tools for Apache Cordova](http://msdn.microsoft.com/library/dn879821\(v=vs.140\).aspx) můžete vytvářet nativní aplikace pro Windows, iOS a Android s použitím jazyka JavaScript.
+- **JavaScript / Cordova**. Použití [Visual Studio Tools for Apache Cordova](http://msdn.microsoft.com/library/dn879821\(v=vs.140\).aspx) můžete vytvářet nativní aplikace pro Windows, iOS a Android s použitím jazyka JavaScript.
 
      [Ladění aplikace](http://msdn.microsoft.com/library/c2a4a1d4-a4e8-47ec-811f-ad207c54f4d1) v knihovně MSDN je podrobný pohled na podpora pro Cordova ladění sady Visual Studio.
 
--   **C# a Xamarin**. Použití [Xamarin](http://msdn.microsoft.com/library/dn879698\(v=vs.140\).aspx) můžete vytvářet nativní aplikace pro Windows, iOS a Android v sadě Visual Studio s C#.
+- **C# a Xamarin**. Použití [Xamarin](http://msdn.microsoft.com/library/dn879698\(v=vs.140\).aspx) můžete vytvářet nativní aplikace pro Windows, iOS a Android v sadě Visual Studio s C#.
 
      [Ladění](http://developer.xamarin.com/guides/ios/deployment,_testing,_and_metrics/debugging_in_xamarin_ios/) (iOS) a [ladění na zařízení](http://developer.xamarin.com/guides/android/deployment,_testing,_and_metrics/debugging_with_xamarin_android/) v [příručky pro vývojáře Xamarinu](http://developer.xamarin.com/guides) popisují možnosti ladění.
 
--   **C++ / Android**. Použití [Visual C++ pro vývoj mobilních řešení napříč platformami](cross-platform/visual-cpp-for-cross-platform-mobile-development.md) šablony společně s nástroji třetích stran, jako jsou [sady Android NDK](https://developer.android.com/tools/sdk/ndk/index.html) vytvářet nativní aplikace pro Windows a Android.
+- **C++ / Android**. Použití [Visual C++ pro vývoj mobilních řešení napříč platformami](cross-platform/visual-cpp-for-cross-platform-mobile-development.md) šablony společně s nástroji třetích stran, jako jsou [sady Android NDK](https://developer.android.com/tools/sdk/ndk/index.html) vytvářet nativní aplikace pro Windows a Android.
 
 ## <a name="debugging-and-diagnostics"></a>Ladění a diagnostika
 

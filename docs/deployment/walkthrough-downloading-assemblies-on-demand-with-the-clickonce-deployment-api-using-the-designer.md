@@ -1,5 +1,5 @@
 ---
-title: 'Průvodce: Stahování sestavení na vyžádání pomocí nasazení ClickOnce pomocí návrháře rozhraní API | Dokumentace Microsoftu'
+title: 'Návod: Stahování sestavení na vyžádání pomocí nasazení ClickOnce pomocí návrháře rozhraní API | Dokumentace Microsoftu'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,14 +17,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 47eed859b0969289a78f4eb13314241e89982f5d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c2c1591e3d859bd768e39d0db461cc0402c57258
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54919301"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042507"
 ---
-# <a name="walkthrough-download-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>Průvodce: Stáhnout sestavení na vyžádání pomocí rozhraní API pomocí návrháře nasazení ClickOnce
+# <a name="walkthrough-download-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>Návod: Stáhnout sestavení na vyžádání pomocí rozhraní API pomocí návrháře nasazení ClickOnce
 Ve výchozím nastavení, všechna sestavení součástí [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace se stáhne při prvním spuštění aplikace. Ale může být součástí vaší aplikace, které jsou používány malého počtu uživatelů. V takovém případě budete chtít stáhnout sestavení pouze v případě, že můžete vytvořit jeden z jeho typy. Následující návod ukazuje, jak označit určité sestavení v aplikaci jako "volitelné", a jak si je stáhnout pomocí tříd v <xref:System.Deployment.Application> obor názvů, když je modul common language runtime požaduje.
 
 > [!NOTE]
@@ -71,15 +71,15 @@ Ve výchozím nastavení, všechna sestavení součástí [!INCLUDE[ndptecclick]
 
 ### <a name="to-mark-assemblies-as-optional-in-your-clickonce-application-by-using-visual-studio"></a>Označit sestavení jako volitelný v aplikaci ClickOnce pomocí sady Visual Studio
 
-1.  Klikněte pravým tlačítkem na projekt Windows Forms v **Průzkumníka řešení** a klikněte na tlačítko **vlastnosti**. Vyberte **publikovat** kartu.
+1. Klikněte pravým tlačítkem na projekt Windows Forms v **Průzkumníka řešení** a klikněte na tlačítko **vlastnosti**. Vyberte **publikovat** kartu.
 
-2.  Klikněte na tlačítko **soubory aplikace** tlačítko.
+2. Klikněte na tlačítko **soubory aplikace** tlačítko.
 
-3.  Vyhledejte výpis pro *ClickOnceLibrary.dll*. Nastavte **stav publikování** rozevíracího seznamu na **zahrnout**.
+3. Vyhledejte výpis pro *ClickOnceLibrary.dll*. Nastavte **stav publikování** rozevíracího seznamu na **zahrnout**.
 
-4.  Rozbalte **skupiny** rozevíracího seznamu a vyberte **nový**. Zadejte název `ClickOnceLibrary` jako název nové skupiny.
+4. Rozbalte **skupiny** rozevíracího seznamu a vyberte **nový**. Zadejte název `ClickOnceLibrary` jako název nové skupiny.
 
-5.  Pokračovat v publikování vaší aplikace, jak je popsáno v [jak: Publikování aplikace ClickOnce pomocí Průvodce publikováním](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).
+5. Pokračovat v publikování vaší aplikace, jak je popsáno v [jak: Publikování aplikace ClickOnce pomocí Průvodce publikováním](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).
 
 ### <a name="to-mark-assemblies-as-optional-in-your-clickonce-application-by-using-manifest-generation-and-editing-tool--graphical-client-mageuiexe"></a>Označit sestavení jako volitelný v aplikaci ClickOnce pomocí Manifest Generation and Editing Tool, grafický klient (MageUI.exe)
 

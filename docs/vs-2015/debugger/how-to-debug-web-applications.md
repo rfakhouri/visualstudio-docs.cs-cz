@@ -19,12 +19,12 @@ caps.latest.revision: 40
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 39c5c5062841dd0a9c5c34e86d96c5d2fc6ac2be
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: cd3cbbcd740c0f124b8ab4379204a9d425cd541c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54805042"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039541"
 ---
 # <a name="how-to-debug-web-applications"></a>Postupy: Ladění webových aplikací
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,25 +33,25 @@ ms.locfileid: "54805042"
   
  Chcete-li ladit [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] aplikace:  
   
--   Musíte mít požadovaná oprávnění. Další informace najdete v tématu [požadavky na systém](../debugger/aspnet-debugging-system-requirements.md).  
+- Musíte mít požadovaná oprávnění. Další informace najdete v tématu [požadavky na systém](../debugger/aspnet-debugging-system-requirements.md).  
   
--   [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] musí být povoleno ladění v **vlastnosti projektu**.  
+- [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] musí být povoleno ladění v **vlastnosti projektu**.  
   
--   Konfigurační soubor aplikace (Web.config) musí být nastaven na režim ladění. Ladění způsobí, že režim [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] generuje dynamicky generované soubory a umožňují připojení k ladicímu programu [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] aplikace. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Tuto hodnotu nastaví automaticky při spuštění ladění, pokud jste vytvořili projekt ze šablony webových projektů.  
+- Konfigurační soubor aplikace (Web.config) musí být nastaven na režim ladění. Ladění způsobí, že režim [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] generuje dynamicky generované soubory a umožňují připojení k ladicímu programu [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] aplikace. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Tuto hodnotu nastaví automaticky při spuštění ladění, pokud jste vytvořili projekt ze šablony webových projektů.  
   
--   Další informace najdete v tématu [jak: Povolit ladění pro aplikace ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md).  
+- Další informace najdete v tématu [jak: Povolit ladění pro aplikace ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md).  
   
 ### <a name="to-debug-a-web-application-during-development"></a>Chcete-li ladit webové aplikace během vývoje  
   
-1.  Na **ladění** nabídky, klikněte na tlačítko **Start** pro zahájení ladění webové aplikace.  
+1. Na **ladění** nabídky, klikněte na tlačítko **Start** pro zahájení ladění webové aplikace.  
   
      [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] sestavení projektu webové aplikace, nasadí aplikaci v případě potřeby spustí vývojový Server ASP.NET, Jestliže ladíte místně a připojí se k [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] pracovní proces.  
   
-2.  Pomocí ladicího programu a zrušte zarážky kroku a provádět jiné operace ladění, jako byste to udělali pro každou aplikaci.  
+2. Pomocí ladicího programu a zrušte zarážky kroku a provádět jiné operace ladění, jako byste to udělali pro každou aplikaci.  
   
      Další informace najdete v tématu [základy ladicího programu](../debugger/debugger-basics.md).  
   
-3.  Na **ladění** nabídky, klikněte na tlačítko **Zastavit ladění** ukončení relace ladění nebo na **souboru** klikněte na tlačítko nabídky v aplikaci Internet Explorer **Zavřít**.  
+3. Na **ladění** nabídky, klikněte na tlačítko **Zastavit ladění** ukončení relace ladění nebo na **souboru** klikněte na tlačítko nabídky v aplikaci Internet Explorer **Zavřít**.  
   
 ## <a name="see-also"></a>Viz také  
  [Ladění webových aplikací a skriptu](../debugger/debugging-web-applications-and-script.md)   

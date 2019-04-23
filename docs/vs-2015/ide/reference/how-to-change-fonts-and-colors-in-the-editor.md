@@ -15,43 +15,43 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8ce14dacb805839a1e61d8cf56753cedd312c162
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: c7d57643661edec90f12a54a2482b59d83bbb3c8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59661864"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040947"
 ---
 # <a name="how-to-change-fonts-and-colors-in-the-editor"></a>Postupy: Změna písma a barev v editoru
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Můžete změnit výchozí řez písma, nastavit velikost písma a změnit barvy popředí a pozadí pro různé textové **zobrazení položek** v editoru kódu. Když měnit nastavení písma mějte na paměti následující informace:  
   
--   Nastavení pro **písmo** a **velikost** jsou globální pro všechny elementy textu ve všech [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] editory.  
+- Nastavení pro **písmo** a **velikost** jsou globální pro všechny elementy textu ve všech [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] editory.  
   
--   Názvy neproporcionální písma jsou uvedené tučným písmem.  
+- Názvy neproporcionální písma jsou uvedené tučným písmem.  
   
--   **Popředí položky**, **položky pozadí**, a **tučné** možnosti můžete nastavit pro každý typ textu elementu. Například, pokud změna barev a vyberte **tučné** pro **komentář** a **záložky**, nebude mít jiné typy textových prvků.  
+- **Popředí položky**, **položky pozadí**, a **tučné** možnosti můžete nastavit pro každý typ textu elementu. Například, pokud změna barev a vyberte **tučné** pro **komentář** a **záložky**, nebude mít jiné typy textových prvků.  
   
 > [!NOTE]
 >  Dialogová okna a příkazy nabídek, zobrazí se mohou lišit od těch popsaných v **pomáhají** v závislosti na aktivních nastaveních nebo edici. Chcete-li změnit nastavení, zvolte **nastavení importu a exportu** na **nástroje** nabídky. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ### <a name="to-change-the-default-font-face-size-and-colors"></a>Chcete-li změnit výchozí řez písma, velikosti a barvy  
   
-1.  Vyberte **možnosti** z **nástroje** nabídky a **prostředí** složky, vyberte **písma a barvy**.  
+1. Vyberte **možnosti** z **nástroje** nabídky a **prostředí** složky, vyberte **písma a barvy**.  
   
      [Písma a barvy, prostředí, dialogové okno Možnosti](../../ide/reference/fonts-and-colors-environment-options-dialog-box.md) otevře.  
   
-2.  V **zobrazit nastavení pro**vyberte **textový Editor**.  
+2. V **zobrazit nastavení pro**vyberte **textový Editor**.  
   
-3.  Upravit **písmo** a **velikost** možnosti, jak změnit vzhled písma a velikost pro všechny elementy textu v editoru všechny.  
+3. Upravit **písmo** a **velikost** možnosti, jak změnit vzhled písma a velikost pro všechny elementy textu v editoru všechny.  
   
-4.  Vyberte odpovídající položku v **zobrazení položek**a potom změňte **popředí položky** a **položky pozadí** možnosti.  
+4. Vyberte odpovídající položku v **zobrazení položek**a potom změňte **popředí položky** a **položky pozadí** možnosti.  
   
     > [!TIP]
     >  Klikněte na tlačítko **použít výchozí hodnoty** obnovíte výchozí nastavení.  
   
-5.  Klikněte na **OK**.  
+5. Klikněte na **OK**.  
   
 ## <a name="see-also"></a>Viz také  
  [Vlastní nastavení editoru](../../ide/customizing-the-editor.md)   

@@ -8,21 +8,21 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0ed137354ee43b923c5d1508a8c2d5ebe4f754f4
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: fe38bf84510ea247c737477e421db8dbb15f63c0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56699415"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042639"
 ---
 # <a name="get-service-information-from-the-settings-store"></a>Získat informace o službě z úložiště nastavení
 Nastavení úložiště můžete použít k vyhledání všech dostupných služeb nebo k určení, zda je nainstalován konkrétní službu. Typ třídy služeb, musíte znát.
 
 ## <a name="to-list-the-available-services"></a>Seznam dostupných služeb
 
-1.  Vytvořte projekt VSIX s názvem `FindServicesExtension` a pak přidejte vlastní příkaz s názvem `FindServicesCommand`. Další informace o tom, jak vytvořit vlastní příkaz najdete v tématu [vytváření rozšíření pomocí příkazu nabídky](../extensibility/creating-an-extension-with-a-menu-command.md)
+1. Vytvořte projekt VSIX s názvem `FindServicesExtension` a pak přidejte vlastní příkaz s názvem `FindServicesCommand`. Další informace o tom, jak vytvořit vlastní příkaz najdete v tématu [vytváření rozšíření pomocí příkazu nabídky](../extensibility/creating-an-extension-with-a-menu-command.md)
 
-2.  V *FindServicesCommand.cs*, přidejte následující příkazy using:
+2. V *FindServicesCommand.cs*, přidejte následující příkazy using:
 
     ```vb
     using System.Collections.Generic;
@@ -31,7 +31,7 @@ Nastavení úložiště můžete použít k vyhledání všech dostupných služ
     using System.Windows.Forms;
     ```
 
-3.  Získat úložiště nastavení konfigurace a pak najít podřízenou kolekci s názvem služby. Tato kolekce obsahuje všechny dostupné služby. V `MenuItemCommand` metoda, odeberte existující kód a nahraďte následujícím kódem:
+3. Získat úložiště nastavení konfigurace a pak najít podřízenou kolekci s názvem služby. Tato kolekce obsahuje všechny dostupné služby. V `MenuItemCommand` metoda, odeberte existující kód a nahraďte následujícím kódem:
 
     ```
     private void MenuItemCallback(object sender, EventArgs e)
@@ -50,9 +50,9 @@ Nastavení úložiště můžete použít k vyhledání všech dostupných služ
     }
     ```
 
-4.  Sestavte projekt a spusťte ladění. Zobrazí se experimentální instance.
+4. Sestavte projekt a spusťte ladění. Zobrazí se experimentální instance.
 
-5.  V experimentální instanci na **nástroje** nabídky, klikněte na tlačítko **vyvolat FindServicesCommand**.
+5. V experimentální instanci na **nástroje** nabídky, klikněte na tlačítko **vyvolat FindServicesCommand**.
 
      Měli byste vidět okno se zprávou výpis všech služeb.
 
@@ -61,7 +61,7 @@ Nastavení úložiště můžete použít k vyhledání všech dostupných služ
 ## <a name="find-a-specific-service"></a>Vyhledání konkrétní služby
  Můžete také použít <xref:Microsoft.VisualStudio.Settings.SettingsStore.CollectionExists%2A> metodou ke zjištění, zda je nainstalován konkrétní službu. Typ třídy služeb, musíte znát.
 
-1.  V MenuItemCallback projektu, kterou jste vytvořili v předchozím postupu, vyhledejte v obchodě nastavení konfigurace `Services` kolekce, která obsahuje podřízenou složku s názvem podle identifikátoru GUID služby. Podíváme se v tomto případě pro službu nápovědy.
+1. V MenuItemCallback projektu, kterou jste vytvořili v předchozím postupu, vyhledejte v obchodě nastavení konfigurace `Services` kolekce, která obsahuje podřízenou složku s názvem podle identifikátoru GUID služby. Podíváme se v tomto případě pro službu nápovědy.
 
     ```
     private void MenuItemCallback(object sender, EventArgs e)
@@ -76,8 +76,8 @@ Nastavení úložiště můžete použít k vyhledání všech dostupných služ
     }
     ```
 
-2.  Sestavte projekt a spusťte ladění.
+2. Sestavte projekt a spusťte ladění.
 
-3.  V experimentální instanci na **nástroje** nabídky, klikněte na tlačítko **vyvolat FindServicesCommand**.
+3. V experimentální instanci na **nástroje** nabídky, klikněte na tlačítko **vyvolat FindServicesCommand**.
 
      Měla zobrazit zpráva s textem **Nápověda služby k dispozici:** následovaný **True** nebo **False**. Pokud chcete ověřit toto nastavení, můžete pomocí Editoru registru, jak je znázorněno v předchozích krocích.

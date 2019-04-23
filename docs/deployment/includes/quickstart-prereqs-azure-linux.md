@@ -1,20 +1,20 @@
 ---
-ms.openlocfilehash: 447dd56d27c29136b7eb72f30564156ca56f2a74
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: 29aedc73173de34723f0db846a26c82cbde64f41
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "58051807"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59736975"
 ---
 ## <a name="prerequisites"></a>Požadavky
 
 ::: moniker range=">=vs-2019"
 
-* [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/) nainstalované s odpovídající úlohy pro váš jazyk podle vlastní volby:
+* [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) nainstalované s odpovídající úlohy pro váš jazyk podle vlastní volby:
   * ASP.NET: **Vývoj pro ASP.NET a web**
 ::: moniker-end
 ::: moniker range="vs-2017"
-* [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/) nainstalované s odpovídající úlohy pro váš jazyk podle vlastní volby:
+* [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) nainstalované s odpovídající úlohy pro váš jazyk podle vlastní volby:
   * ASP.NET: **Vývoj pro ASP.NET a web**
 ::: moniker-end
 

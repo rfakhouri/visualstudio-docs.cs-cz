@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 387ec5814e0b5a2a8c2169198a3ceebad47e10d4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: c2d06098d1643f4c9b5e64206cdf94362a2c97b4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599477"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040143"
 ---
 # <a name="ribbon-overview"></a>Přehled pásu karet
   Na pásu karet je způsob, jak uspořádat příkazy související tak, aby byly snadněji najít. Příkazy se zobrazují jako ovládací prvky na pásu karet. Ovládací prvky jsou uspořádány do *skupiny* podél horizontální pruh v horním okrajem jeho okna aplikace. Související skupiny jsou uspořádány na kartách.
@@ -93,12 +93,12 @@ ms.locfileid: "56599477"
 ## <a name="add-multiple-ribbon-items-to-a-project"></a>Přidání více položek pásu karet do projektu
  Můžete přidat více než jednu položku pásu karet do jednoho projektu. To je užitečné, pokud chcete provést jednu z následujících akcí:
 
--   Vytváření pásů karet pro aplikaci Outlook *kontroly*. Další informace najdete v tématu [přizpůsobte pás karet pro aplikaci Outlook](../vsto/customizing-a-ribbon-for-outlook.md).
+- Vytváření pásů karet pro aplikaci Outlook *kontroly*. Další informace najdete v tématu [přizpůsobte pás karet pro aplikaci Outlook](../vsto/customizing-a-ribbon-for-outlook.md).
 
     > [!NOTE]
     >  Je kontrola je okno, které se otevře, když uživatelé provedou určité úlohy, jako je například vytváření e-mailové zprávy.
 
--   Vyberte, které pásu karet za běhu zobrazit.
+- Vyberte, které pásu karet za běhu zobrazit.
 
 ### <a name="select-which-ribbons-to-display-at-runtime"></a>Vyberte které pásů karet zobrazíte za běhu
  Vzhledem k tomu, že projekt může obsahovat více než jeden pásu karet, můžete vybrat, které pásu karet za běhu zobrazit.

@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d4cac8341adb61a6644e7e331f00584c5c341471
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 49e4618e2262575ffaa642d55ae140529f86942b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58325233"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60038467"
 ---
 # <a name="overview-of-the-programming-model-of-sharepoint-tools-extensions"></a>Přehled programovacího modelu SharePoint rozšíření nástrojů
   Při vytváření rozšíření pro nástroje služby SharePoint v sadě Visual Studio, můžete začít implementací jeden nebo více rozhraní rozšíření, které jsou vystaveny nástroje služby SharePoint. Ve většině případů bude také použít jiné typy poskytované nástroje služby SharePoint k implementaci funkcí v rozšíření. V některých scénářích můžete také použít typy v jiné objektové modely, které poskytuje Visual Studio a SharePoint. Musí pochopit účel každé z těchto objektové modely a vědět, jak pomocí nich mezi sebou můžete vytvořit rozšíření pro nástroje služby SharePoint.
@@ -45,14 +45,14 @@ ms.locfileid: "58325233"
 ## <a name="understand-the-object-models-that-you-use-in-sharepoint-tools-extensions"></a>Vysvětlení objektové modely, které můžete použít rozšíření nástrojů SharePoint
  Existuje několik objektové modely, které můžete použít při vytváření rozšíření pro nástroje služby SharePoint:
 
--   *Nástroje služby SharePoint objektu modelu*. Tento objektový model poskytuje rozhraní rozšíření, které můžete implementovat pro vytvoření rozšíření nástrojů služby SharePoint a dalších souvisejících typů.
+- *Nástroje služby SharePoint objektu modelu*. Tento objektový model poskytuje rozhraní rozšíření, které můžete implementovat pro vytvoření rozšíření nástrojů služby SharePoint a dalších souvisejících typů.
 
--   *Visual Studio automatizace a integrace objektové modely*. Tyto modely objektů použijte pro přístup k Visual Studio funkce, které jsou nad rámec objektového modelu SharePoint tools.
+- *Visual Studio automatizace a integrace objektové modely*. Tyto modely objektů použijte pro přístup k Visual Studio funkce, které jsou nad rámec objektového modelu SharePoint tools.
 
     > [!NOTE]
     >  Můžete převést některé objekty v objektového modelu SharePoint tools na objekty v sadě Visual Studio automatizaci a integraci objektové modely a naopak, použití služby projektu služby SharePoint. Další informace najdete v tématu [převod mezi systémovými typy projektů SharePoint a jinými typy projektů Visual Studio](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md).
 
--   *SharePoint server a klienta objektové modely*. Tyto modely objektů použijte k úpravě webu služby SharePoint nebo k načtení dat z webu služby SharePoint z kontextu rozšíření nástrojů služby SharePoint.
+- *SharePoint server a klienta objektové modely*. Tyto modely objektů použijte k úpravě webu služby SharePoint nebo k načtení dat z webu služby SharePoint z kontextu rozšíření nástrojů služby SharePoint.
 
 ### <a name="sharepoint-tools-object-model"></a>Nástroje objektového modelu SharePoint
  Každé rozšíření nástrojů SharePoint používá typy v objektovém modelu serveru SharePoint nástroje k určení základní chování a funkce rozšíření. Následující tabulky popisují obory názvů, které jsou zahrnuty v tomto modelu objektu sestavení, který je obsahuje.

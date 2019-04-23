@@ -11,12 +11,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c75b2aa7d4796a97370f414f0b7286c271b4c977
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: d9b93f8cb6422a3c9e2cf589924c2028db3dd6c4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842683"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60038405"
 ---
 # <a name="use-models-in-your-development-process"></a>Použití modelů ve vývojových procesech
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,25 +52,25 @@ V sadě Visual Studio vám pomůže modelu vám pomůžou pochopit a změnit sys
   
  Další aspekty specifikace, které se běžně používají společně s modely patří. V závislosti na rozsahu a styl projektu můžete použít některé z těchto aspektů nebo není žádný vůbec používat:  
   
--   Uživatelské scénáře. Uživatelský scénář je krátký popis, popsané s uživateli a další zainteresované uživatele určitý aspekt systému chování, které budou doručeny v jednom projektu iterací. Typické uživatelský scénář začíná "zákazník bude moct..." Uživatelský scénář může způsobit skupinu případy použití, nebo můžete definovat rozšíření případy použití, které byly dříve vytvořeny. Definování nebo rozšíření případy použití pomáhá vytvářet jasnější uživatelský scénář.  
+- Uživatelské scénáře. Uživatelský scénář je krátký popis, popsané s uživateli a další zainteresované uživatele určitý aspekt systému chování, které budou doručeny v jednom projektu iterací. Typické uživatelský scénář začíná "zákazník bude moct..." Uživatelský scénář může způsobit skupinu případy použití, nebo můžete definovat rozšíření případy použití, které byly dříve vytvořeny. Definování nebo rozšíření případy použití pomáhá vytvářet jasnější uživatelský scénář.  
   
--   Žádosti o změnu. Žádost o změnu v formálnější projektu je velmi podobný uživatelského scénáře v projektu aplikace agile. Agilní přístup považuje za všechny požadavky na změny pro co byl vyvinut v předchozími iteracemi.  
+- Žádosti o změnu. Žádost o změnu v formálnější projektu je velmi podobný uživatelského scénáře v projektu aplikace agile. Agilní přístup považuje za všechny požadavky na změny pro co byl vyvinut v předchozími iteracemi.  
   
--   Popis případu použití. Případ použití představuje jeden ze způsobů, ve kterém uživatel pracuje se systémem k dosažení určitého cíle. Úplný popis obsahuje cíl, hlavní a alternativní pořadí událostí a mimořádných výsledků. Diagram případu použití pomáhá shrnout a poskytnout přehled o případy použití.  
+- Popis případu použití. Případ použití představuje jeden ze způsobů, ve kterém uživatel pracuje se systémem k dosažení určitého cíle. Úplný popis obsahuje cíl, hlavní a alternativní pořadí událostí a mimořádných výsledků. Diagram případu použití pomáhá shrnout a poskytnout přehled o případy použití.  
   
--   Scénáře. Scénář je poměrně podrobný popis posloupnost událostí znázorňující, jak v systému, uživatelů a jiných systémů společně poskytují hodnotu pro zúčastněné strany. Může trvat formu slide show uživatelského rozhraní nebo prototypu uživatelského rozhraní. To lze popsat jeden případ použití nebo posloupnost případy použití.  
+- Scénáře. Scénář je poměrně podrobný popis posloupnost událostí znázorňující, jak v systému, uživatelů a jiných systémů společně poskytují hodnotu pro zúčastněné strany. Může trvat formu slide show uživatelského rozhraní nebo prototypu uživatelského rozhraní. To lze popsat jeden případ použití nebo posloupnost případy použití.  
   
--   Glosář. Glosář požadavky projektu popisuje slova, se kterými zákazníci diskutovat o jejich světa. Uživatelské rozhraní a požadavků na modely také používali tyto podmínky. Diagram tříd může pomoci objasnit vztahy mezi většinu těchto podmínek. Vytváření diagramů a glosář pouze snižuje nedorozuměním mezi uživatele a vývojáře, ale také téměř vždy zpřístupňuje nedorozuměním mezi různými obchodními zúčastněnými stranami.  
+- Glosář. Glosář požadavky projektu popisuje slova, se kterými zákazníci diskutovat o jejich světa. Uživatelské rozhraní a požadavků na modely také používali tyto podmínky. Diagram tříd může pomoci objasnit vztahy mezi většinu těchto podmínek. Vytváření diagramů a glosář pouze snižuje nedorozuměním mezi uživatele a vývojáře, ale také téměř vždy zpřístupňuje nedorozuměním mezi různými obchodními zúčastněnými stranami.  
   
--   Obchodní pravidla. Řada obchodních pravidel může být vyjádřena jako výchozí omezení na přidružení a atributy v třídě modelu požadavky a jako omezení u sekvenčních diagramů.  
+- Obchodní pravidla. Řada obchodních pravidel může být vyjádřena jako výchozí omezení na přidružení a atributy v třídě modelu požadavky a jako omezení u sekvenčních diagramů.  
   
--   Návrh vysoké úrovně. Popisuje hlavní části a jak je umístit společně. Komponenty, pořadí a interface diagramy jsou hlavní součástí návrhu vysoké úrovně.  
+- Návrh vysoké úrovně. Popisuje hlavní části a jak je umístit společně. Komponenty, pořadí a interface diagramy jsou hlavní součástí návrhu vysoké úrovně.  
   
--   Vzory návrhu. Popis pravidla návrhu, které jsou sdíleny napříč různými částmi systému.  
+- Vzory návrhu. Popis pravidla návrhu, které jsou sdíleny napříč různými částmi systému.  
   
--   Otestujte specifikace. Testovací skripty a návrhy pro testovací kód můžete velice diagramy činnosti a sekvence pro popis sekvencí testovací kroky. Testy systému by měl být vyjádřen jako model požadavků tak, aby se lze snadno změnit při změně požadavků.  
+- Otestujte specifikace. Testovací skripty a návrhy pro testovací kód můžete velice diagramy činnosti a sekvence pro popis sekvencí testovací kroky. Testy systému by měl být vyjádřen jako model požadavků tak, aby se lze snadno změnit při změně požadavků.  
   
--   Plán projektu. Plánu projektu nebo nevyřízené položky definuje, kdy budou doručeny jednotlivé funkce. Jednotlivé funkce můžete definovat uvedením, co použijete, případy a obchodní pravidla implementuje nebo rozšiřuje. Můžete buď odkazujete i na případy použití a obchodní pravidla přímo v plánu nebo můžete definovat sadu funkcí v samostatných dokumentu a použít názvy funkcí v plánu.  
+- Plán projektu. Plánu projektu nebo nevyřízené položky definuje, kdy budou doručeny jednotlivé funkce. Jednotlivé funkce můžete definovat uvedením, co použijete, případy a obchodní pravidla implementuje nebo rozšiřuje. Můžete buď odkazujete i na případy použití a obchodní pravidla přímo v plánu nebo můžete definovat sadu funkcí v samostatných dokumentu a použít názvy funkcí v plánu.  
   
 ### <a name="use-models-in-iteration-planning"></a>Používání modelů v plánování iterace  
  I když se všechny projekty se liší v jejich škálování a organizaci, obvyklou pro projekty, plánujeme přidat jako řadu iterací mezi dvěma až šest týdnů. Je důležité mít plán dostatek iterace povolit zpětnou vazbu od počáteční iterace, který se má použít k nastavení oboru a plány pro vyšší počet iterací.  
@@ -80,28 +80,28 @@ V sadě Visual Studio vám pomůže modelu vám pomůžou pochopit a změnit sys
 #### <a name="sharpen-focus-as-each-iteration-approaches"></a>Zdokonalení fokus přístupy každé iterace  
  Při každém blížícím se opakování pomocí modely definovat, co je doručit na konci iterace.  
   
--   Model není vše podrobně v počátečních iteracích. V první iteraci vytvoření diagramu tříd pro hlavní položky v glosáři uživatele, nakreslit diagram případy použití hlavní a nakreslete obrázek hlavní součásti. Nepopisují všechny z nich najdete v úplných podrobností, protože později v projektu se změní podrobnosti. Pomocí podmínky definované v tomto modelu vytvořit seznam funkcí nebo hlavní uživatelské scénáře. Funkce přiřadíte k iteracím tak, aby přibližně vyvážit zatížení odhadované během celého projektu. Tato přiřazení se změní později v projektu.  
+- Model není vše podrobně v počátečních iteracích. V první iteraci vytvoření diagramu tříd pro hlavní položky v glosáři uživatele, nakreslit diagram případy použití hlavní a nakreslete obrázek hlavní součásti. Nepopisují všechny z nich najdete v úplných podrobností, protože později v projektu se změní podrobnosti. Pomocí podmínky definované v tomto modelu vytvořit seznam funkcí nebo hlavní uživatelské scénáře. Funkce přiřadíte k iteracím tak, aby přibližně vyvážit zatížení odhadované během celého projektu. Tato přiřazení se změní později v projektu.  
   
--   Zkuste implementovat zjednodušená verze všech vašich nejdůležitějších případy použití v rané fázi iterace. Rozšíření jsou případy použití ve vyšším počtu iterací. Tento přístup pomáhá snížit riziko zjistit chyby v požadavcích nebo na architekturu příliš pozdě v projektu se nic dělat.  
+- Zkuste implementovat zjednodušená verze všech vašich nejdůležitějších případy použití v rané fázi iterace. Rozšíření jsou případy použití ve vyšším počtu iterací. Tento přístup pomáhá snížit riziko zjistit chyby v požadavcích nebo na architekturu příliš pozdě v projektu se nic dělat.  
   
--   Na konci každé iterace stiskněte a podržte požadavky na seminář k definování podrobně požadavky nebo uživatelskými scénáři, které budou vytvořeny v další iteraci. Pozvěte uživatele a zúčastněné obchodní strany, kteří se můžete rozhodnout, priority, jakož i vývojářům a testerům systému. Umožňují definovat požadavky pro iterace 2 týden tři hodiny.  
+- Na konci každé iterace stiskněte a podržte požadavky na seminář k definování podrobně požadavky nebo uživatelskými scénáři, které budou vytvořeny v další iteraci. Pozvěte uživatele a zúčastněné obchodní strany, kteří se můžete rozhodnout, priority, jakož i vývojářům a testerům systému. Umožňují definovat požadavky pro iterace 2 týden tři hodiny.  
   
--   Cílem tohoto pracoviště je pro každého souhlas, co všechno zvládneme na konci další iteraci. Abychom to osvětlili požadavky použijte modely jako jeden z nástrojů. Iterace backlogu je výstup seminář: to znamená, že seznam vývoj úkoly v [!INCLUDE[esprfound](../includes/esprfound-md.md)] a testovací sady v [!INCLUDE[TCMext](../includes/tcmext-md.md)].  
+- Cílem tohoto pracoviště je pro každého souhlas, co všechno zvládneme na konci další iteraci. Abychom to osvětlili požadavky použijte modely jako jeden z nástrojů. Iterace backlogu je výstup seminář: to znamená, že seznam vývoj úkoly v [!INCLUDE[esprfound](../includes/esprfound-md.md)] a testovací sady v [!INCLUDE[TCMext](../includes/tcmext-md.md)].  
   
--   Workshop požadavky diskutovat o návrhu, pouze pokud podle musíte určit odhady pro úlohy vývoje. Jinak použijte diskusi chování systému, který uživatelé budou moci využívat přímo. Zachovat model požadavků nezávisle na architektuře modelu.  
+- Workshop požadavky diskutovat o návrhu, pouze pokud podle musíte určit odhady pro úlohy vývoje. Jinak použijte diskusi chování systému, který uživatelé budou moci využívat přímo. Zachovat model požadavků nezávisle na architektuře modelu.  
   
--   Běžné uživatele zúčastněné strany mají obvykle bez problémů Principy diagramy UML, s pokyny od vás.  
+- Běžné uživatele zúčastněné strany mají obvykle bez problémů Principy diagramy UML, s pokyny od vás.  
   
 #### <a name="link-model-to-work-items"></a>Odkaz modelu s pracovními položkami  
  Po seminář požadavky vypracování podrobností model požadavků a propojit úkoly vývoje modelu. Můžete to provést pomocí propojení pracovních položek v [!INCLUDE[esprfound](../includes/esprfound-md.md)] na prvky v modelu. Zjistěte, jak to provést, najdete v článku [propojení prvků modelu a pracovních položek](../modeling/link-model-elements-and-work-items.md).  
   
  Můžete propojit libovolný prvek s pracovními položkami, ale jsou nejužitečnější prvky následujícím způsobem:  
   
--   Případy použití. Propojení případu použití pro vývoj pro úkoly, které provede.  
+- Případy použití. Propojení případu použití pro vývoj pro úkoly, které provede.  
   
--   Použití rozšíření případu. Pokud pouze jeden aspekt jejich případu použití se provádí v iteraci, můžete ho rozdělte do případu základní použití spolu s jedno nebo více rozšíření. Rozšíření jsou případy použití, které jsou připojeny na základní případ "rozšíření" vztah. Další informace o rozšíření případu použití, naleznete v tématu [diagramy případu použití UML: Referenční dokumentace](../modeling/uml-use-case-diagrams-reference.md).  
+- Použití rozšíření případu. Pokud pouze jeden aspekt jejich případu použití se provádí v iteraci, můžete ho rozdělte do případu základní použití spolu s jedno nebo více rozšíření. Rozšíření jsou případy použití, které jsou připojeny na základní případ "rozšíření" vztah. Další informace o rozšíření případu použití, naleznete v tématu [diagramy případu použití UML: Referenční dokumentace](../modeling/uml-use-case-diagrams-reference.md).  
   
--   Komentář popisující obchodních pravidel nebo kvality požadavků na služby. Další informace najdete v tématu [modelování uživatelských požadavků](../modeling/model-user-requirements.md).  
+- Komentář popisující obchodních pravidel nebo kvality požadavků na služby. Další informace najdete v tématu [modelování uživatelských požadavků](../modeling/model-user-requirements.md).  
   
 #### <a name="link-model-to-tests"></a>Odkaz modelu testů  
  Pomocí modelu požadavky na návrh předávací testy. Vytvořte tyto testy současně vývojové práce.  

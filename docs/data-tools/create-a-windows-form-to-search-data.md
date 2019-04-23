@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: aa8b91ccdf4aaa5b46f167673007723938fc62ef
-ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
+ms.openlocfilehash: ecbdd8b9f1fb1696986672bb621567944910660f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "58268773"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041676"
 ---
 # <a name="create-a-windows-form-to-search-data"></a>Vytvoření formuláře Windows k vyhledávání dat
 
@@ -69,25 +69,25 @@ Vytvořte nový **aplikace Windows Forms** projektu buď C# nebo Visual Basic. P
 
 Tento krok vytváří zdroj dat z databáze pomocí **konfigurace zdroje dat** průvodce:
 
-1.  Chcete-li otevřít **zdroje dat** okno na **Data** nabídky, klikněte na tlačítko **zobrazit zdroje dat**.
+1. Chcete-li otevřít **zdroje dat** okno na **Data** nabídky, klikněte na tlačítko **zobrazit zdroje dat**.
 
-2.  V **zdroje dat** okně **přidat nový zdroj dat** spustit **konfigurace zdroje dat** průvodce.
+2. V **zdroje dat** okně **přidat nový zdroj dat** spustit **konfigurace zdroje dat** průvodce.
 
-3.  Vyberte **databáze** na **zvolte typ zdroje dat** stránce a potom klikněte na tlačítko **Další**.
+3. Vyberte **databáze** na **zvolte typ zdroje dat** stránce a potom klikněte na tlačítko **Další**.
 
-4.  Na **vyberte datové připojení** stránka provádění, jednu z následujících akcí:
+4. Na **vyberte datové připojení** stránka provádění, jednu z následujících akcí:
 
     - Pokud je připojení dat k ukázkové databázi Northwind k dispozici v rozevíracím seznamu, vyberte je.
 
     - Vyberte **nové připojení** ke spuštění **přidat/změnit připojení** dialogové okno.
 
-5.  Pokud vaše databáze vyžaduje heslo, vyberte možnost zahrnutí důvěrných osobních údajů a pak klikněte na tlačítko **Další**.
+5. Pokud vaše databáze vyžaduje heslo, vyberte možnost zahrnutí důvěrných osobních údajů a pak klikněte na tlačítko **Další**.
 
-6.  Na **uložit připojovací řetězec do konfiguračního souboru aplikace** klikněte na **Další**.
+6. Na **uložit připojovací řetězec do konfiguračního souboru aplikace** klikněte na **Další**.
 
-7.  Na **zvolte vaše databázové objekty** stránce, rozbalte **tabulky** uzlu.
+7. Na **zvolte vaše databázové objekty** stránce, rozbalte **tabulky** uzlu.
 
-8.  Vyberte **zákazníkům** tabulku a pak klikněte na tlačítko **Dokončit**.
+8. Vyberte **zákazníkům** tabulku a pak klikněte na tlačítko **Dokončit**.
 
      **NorthwindDataSet** se přidá do vašeho projektu a **zákazníkům** tabulky se zobrazí v **zdroje dat** okna.
 
@@ -95,9 +95,9 @@ Tento krok vytváří zdroj dat z databáze pomocí **konfigurace zdroje dat** p
 
 Můžete vytvořit ovládací prvky vázané na data přetažením položek z **zdroje dat** okna do formuláře:
 
-1.  Rozbalte **zákazníkům** uzlu **zdroje dat** okno.
+1. Rozbalte **zákazníkům** uzlu **zdroje dat** okno.
 
-2.  Přetáhněte **zákazníkům** uzlu z **zdroje dat** okna do formuláře.
+2. Přetáhněte **zákazníkům** uzlu z **zdroje dat** okna do formuláře.
 
      A <xref:System.Windows.Forms.DataGridView> a pruh nástrojů (<xref:System.Windows.Forms.BindingNavigator>) pro procházení záznamů se zobrazí ve formuláři. A [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), CustomersTableAdapter, <xref:System.Windows.Forms.BindingSource>, a <xref:System.Windows.Forms.BindingNavigator> zobrazují v panelu komponent.
 
@@ -105,11 +105,11 @@ Můžete vytvořit ovládací prvky vázané na data přetažením položek z **
 
 Můžete přidat klauzuli WHERE dotazu na původní pomocí **Tvůrce kritérií vyhledávání** dialogové okno:
 
-1.  Vyberte <xref:System.Windows.Forms.DataGridView> ovládací prvek a klikněte na tlačítko **přidat dotaz** na **Data** nabídky.
+1. Vyberte <xref:System.Windows.Forms.DataGridView> ovládací prvek a klikněte na tlačítko **přidat dotaz** na **Data** nabídky.
 
-2.  Typ **FillByCity** v **nový název dotazu** oblast na **Tvůrce kritérií vyhledávání** dialogové okno.
+2. Typ **FillByCity** v **nový název dotazu** oblast na **Tvůrce kritérií vyhledávání** dialogové okno.
 
-3.  Přidat `WHERE City = @City` do dotazu v **Text dotazu** oblasti.
+3. Přidat `WHERE City = @City` do dotazu v **Text dotazu** oblasti.
 
      Dotaz by měl vypadat přibližně takto:
 
@@ -123,7 +123,7 @@ Můžete přidat klauzuli WHERE dotazu na původní pomocí **Tvůrce kritérií
     > [!NOTE]
     > Přístup a technologie OLE DB zdroje dat používat otazník ("?") k označení parametrů, takže v klauzuli WHERE bude vypadat takto: `WHERE City = ?`.
 
-4.  Klikněte na tlačítko **OK** zavřete **Tvůrce kritérií vyhledávání** dialogové okno.
+4. Klikněte na tlačítko **OK** zavřete **Tvůrce kritérií vyhledávání** dialogové okno.
 
      A **FillByCityToolStrip** je přidán do formuláře.
 
@@ -131,9 +131,9 @@ Můžete přidat klauzuli WHERE dotazu na původní pomocí **Tvůrce kritérií
 
 Spuštění aplikace otevře formulář a zpřístupňuje je připraven přijmout parametr jako vstup:
 
-1.  Stisknutím klávesy **F5** ke spuštění aplikace.
+1. Stisknutím klávesy **F5** ke spuštění aplikace.
 
-2.  Typ **Londýn** do **Město** textové pole a pak klikněte na tlačítko **FillByCity**.
+2. Typ **Londýn** do **Město** textové pole a pak klikněte na tlačítko **FillByCity**.
 
      Datové mřížce se vyplní zákazníky, kteří splňují kritéria. V tomto příkladu datové mřížky se zobrazí pouze zákazníci, kteří mají hodnotu **Londýn** v jejich **Město** sloupce.
 

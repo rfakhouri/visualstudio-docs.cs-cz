@@ -23,12 +23,12 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 829ccc02f9532e62bfb62ec21c8188f313c98e59
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ca7e19925288b1509fec08235f546b84b4afffef
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54770142"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039126"
 ---
 # <a name="lttrustinfogt-element-clickonce-application"></a>&lt;trustInfo&gt; – Element (aplikace ClickOnce)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,28 +81,28 @@ Popisuje minimální oprávnění požadovaná pro aplikaci, aby běžela v klie
 ## <a name="permissionset"></a>PermissionSet  
  Povinný parametr. Tento element je podřízeným prvkem `applicationRequestMinimum` elementu a obsahuje `IPermission` elementu. Tento element má následující atributy.  
   
--   `ID`  
+- `ID`  
   
      Povinný parametr. Určuje sadu oprávnění. Tento atribut může být libovolná hodnota. ID odkazuje `defaultAssemblyRequest` a `assemblyRequest` atributy.  
   
--   `version`  
+- `version`  
   
      Povinný parametr. Určuje verzi oprávnění. Obvykle je tato hodnota `1`.  
   
 ## <a name="ipermission"></a>Rozhraní IPermission.  
  Volitelné. Tento element je podřízeným prvkem `PermissionSet` elementu. `IPermission` Plně identifikuje třída oprávnění v elementu [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. `IPermission` Element má následující atributy, ale mohou mít další atributy, které odpovídají vlastnosti třídy oprávnění. Syntaxe pro konkrétní oprávnění najdete příklady uvedené v souboru Security.config.  
   
--   `class`  
+- `class`  
   
      Povinný parametr. Určuje třídu oprávnění pomocí silného názvu. Například následující kód označuje `FileDialogPermission` typu.  
   
      `System.Security.Permissions.FileDialogPermission, mscorlib, Version=1.2.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089`  
   
--   `version`  
+- `version`  
   
      Povinný parametr. Určuje verzi oprávnění. Tato hodnota je obvykle `1`.  
   
--   `Unrestricted`  
+- `Unrestricted`  
   
      Povinný parametr. Označuje, zda aplikace potřebuje neomezená oprávnění. Pokud `true`, udělení oprávnění Nepodmíněný. Pokud `false`, nebo pokud tento atribut není definován, je omezen atributy specifické pro oprávnění definované na `IPermission` značky. Proveďte následující oprávnění:  
   
@@ -122,18 +122,18 @@ Popisuje minimální oprávnění požadovaná pro aplikaci, aby běžela v klie
 ## <a name="defaultassemblyrequest"></a>defaultAssemblyRequest  
  Volitelné. Identifikuje sadu oprávnění udělená všechna sestavení. Tento element je podřízeným prvkem `applicationRequestMinimum` elementu a nemá tento atribut.  
   
--   `permissionSetReference`  
+- `permissionSetReference`  
   
      Povinný parametr. Určuje ID sady oprávnění, která je výchozí oprávnění. Sada oprávnění je deklarován v `PermissionSet` elementu.  
   
 ## <a name="assemblyrequest"></a>assemblyRequest  
  Volitelné. Určuje oprávnění pro konkrétní sestavení. Tento element je podřízeným prvkem `applicationRequestMinimum` prvek a má následující atributy.  
   
--   `Name`  
+- `Name`  
   
      Povinný parametr. Určuje název sestavení.  
   
--   `permissionSetReference`  
+- `permissionSetReference`  
   
      Povinný parametr. Určuje ID sady oprávnění, která toto sestavení vyžaduje. Sada oprávnění je deklarován v `PermissionSet` elementu.  
   
@@ -143,7 +143,7 @@ Popisuje minimální oprávnění požadovaná pro aplikaci, aby běžela v klie
 ## <a name="requestedexecutionlevel"></a>requestedExecutionLevel  
  Volitelné. Určuje úroveň zabezpečení, ve kterém aplikace požádá o který se spustí. Tento element nemá žádné podřízené položky a má následující atributy.  
   
--   `Level`  
+- `Level`  
   
      Povinný parametr. Označuje, že úroveň zabezpečení aplikace požaduje. Možné hodnoty jsou:  
   
@@ -155,7 +155,7 @@ Popisuje minimální oprávnění požadovaná pro aplikaci, aby běžela v klie
   
      [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikace bude instalovat pouze s hodnotou `asInvoker`. Instalace s jakoukoli jinou hodnotu se nezdaří.  
   
--   `uiAccess`  
+- `uiAccess`  
   
      Volitelné. Určuje, jestli aplikace vyžaduje přístup k prvkům chráněného uživatelského rozhraní. Hodnoty jsou buď `true` nebo `false`, a výchozí hodnota je false. Pouze podepsané aplikace by měla mít hodnotu true.  
   

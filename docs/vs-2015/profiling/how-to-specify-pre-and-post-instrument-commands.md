@@ -15,12 +15,12 @@ caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b548265959ed2be10feb1096d7dc92d95a6cfed0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1485ee6f0737363bc6ab9105b70c93acef866c82
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54792828"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60038340"
 ---
 # <a name="how-to-specify-pre--and-post-instrument-commands"></a>Postupy: Určení příkazů k provedení před instrumentací a po instrumentaci
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,39 +53,39 @@ Můžete zadat příkazy, které spustit před nebo po jsou instrumentované bin
   
 ### <a name="to-specify-pre-instrument-commands"></a>Chcete-li určit příkazy před instrumentací  
   
-1.  Proveďte jeden z následujících kroků:  
+1. Proveďte jeden z následujících kroků:  
   
-    -   Pokud chcete zadat příkazy před instrumentací pro všechny binární soubory do relace výkonu, vyberte uzel relace výkonu v **prohlížeč výkonu**a pak klikněte pravým tlačítkem a vyberte **vlastnosti**.  
+    - Pokud chcete zadat příkazy před instrumentací pro všechny binární soubory do relace výkonu, vyberte uzel relace výkonu v **prohlížeč výkonu**a pak klikněte pravým tlačítkem a vyberte **vlastnosti**.  
   
-    -   Pokud chcete zadat příkazy před instrumentací pro konkrétní binární soubor, klikněte pravým tlačítkem na název binárního souboru v **cíle** seznam výkonnostní relaci a pak vyberte **vlastnosti**.  
+    - Pokud chcete zadat příkazy před instrumentací pro konkrétní binární soubor, klikněte pravým tlačítkem na název binárního souboru v **cíle** seznam výkonnostní relaci a pak vyberte **vlastnosti**.  
   
-2.  V **stránky vlastností**, klikněte na tlačítko **instrumentace**.  
+2. V **stránky vlastností**, klikněte na tlačítko **instrumentace**.  
   
-3.  Zadejte příkaz v **příkazového řádku** textového pole pod **události před Instrumentací**.  
+3. Zadejte příkaz v **příkazového řádku** textového pole pod **události před Instrumentací**.  
   
     > [!NOTE]
     >  Můžete kliknout na tlačítko se třemi tečkami **(...)**  , který je vedle **příkazového řádku** pole vyhledejte a vyberte příslušný soubor .exe, .cmd nebo. bat.  
   
-4.  Klikněte na **OK**.  
+4. Klikněte na **OK**.  
   
      Chcete-li zakázat spouštění příkazu ale neodebrali, vyberte **vyloučit z instrumentace** zaškrtávací políčko. Pokud chcete upravit kompilátoru nebo linkeru, nastavení, použijte stránky vlastností projektu.  
   
 ### <a name="to-specify-post-instrument-commands"></a>Chcete-li určit příkazy po instrumentaci  
   
-1.  Proveďte jeden z následujících kroků:  
+1. Proveďte jeden z následujících kroků:  
   
-    -   Pokud chcete zadat příkazy po instrumentaci pro všechny binární soubory do relace výkonu, vyberte uzel relace výkonu v **prohlížeč výkonu**a pak klikněte pravým tlačítkem a vyberte **vlastnosti**.  
+    - Pokud chcete zadat příkazy po instrumentaci pro všechny binární soubory do relace výkonu, vyberte uzel relace výkonu v **prohlížeč výkonu**a pak klikněte pravým tlačítkem a vyberte **vlastnosti**.  
   
-    -   Pokud chcete zadat příkazy po instrumentaci pro konkrétní binární soubor, klikněte pravým tlačítkem na název binárního souboru v **cíle** seznam výkonnostní relaci a pak vyberte **vlastnosti**.  
+    - Pokud chcete zadat příkazy po instrumentaci pro konkrétní binární soubor, klikněte pravým tlačítkem na název binárního souboru v **cíle** seznam výkonnostní relaci a pak vyberte **vlastnosti**.  
   
-2.  V **stránky vlastností**, klikněte na tlačítko **instrumentace**.  
+2. V **stránky vlastností**, klikněte na tlačítko **instrumentace**.  
   
-3.  Zadejte příkaz v **příkazového řádku** textového pole pod **události po instrumentaci**.  
+3. Zadejte příkaz v **příkazového řádku** textového pole pod **události po instrumentaci**.  
   
     > [!NOTE]
     >  Můžete kliknout na tlačítko se třemi tečkami **(...)**  , který je vedle **příkazového řádku** pole vyhledejte a vyberte příslušný soubor .exe, .cmd nebo. bat.  
   
-4.  Klikněte na **OK**.  
+4. Klikněte na **OK**.  
   
      Chcete-li zakázat spouštění příkazu ale neodebrali, vyberte **vyloučit z instrumentace** zaškrtávací políčko. Pokud chcete upravit kompilátoru nebo linkeru, nastavení, použijte stránky vlastností projektu.  
   

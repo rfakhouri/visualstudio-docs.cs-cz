@@ -11,12 +11,12 @@ ms.assetid: 4a7eb360-de83-41d5-be53-3cfb160d19f9
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: dcf653654005b75a889bcafd668fbb9313572ff2
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 1cdd172c2960024da8b12735764161d36498c4e2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867114"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039139"
 ---
 # <a name="deploying-custom-start-pages"></a>Nasazení vlastních úvodních stránek
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,9 +57,9 @@ Vlastní úvodní stránky můžete nasadit pomocí nasazení VSIX nebo kopírov
   
 ##### <a name="to-create-an-all-users-deployment"></a>Pro vytvoření nasazení všech uživatelů  
   
-1.  Otevřete soubor extension.vsixmanifest v zobrazení kódu.  
+1. Otevřete soubor extension.vsixmanifest v zobrazení kódu.  
   
-2.  V `Identifier` elementu v manifestu vsix, přidejte `AllUsers` element, který má hodnotu `true`.  
+2. V `Identifier` elementu v manifestu vsix, přidejte `AllUsers` element, který má hodnotu `true`.  
   
     ```  
     <AllUsers>true</AllUsers>  
@@ -67,9 +67,9 @@ Vlastní úvodní stránky můžete nasadit pomocí nasazení VSIX nebo kopírov
   
      To způsobí, že vsix instalátor výzvu k zadání oprávnění správce a potom nainstalujte soubory \Common7\IDE\Extensions.  
   
-3.  Otevřete soubor .pkgdef.  
+3. Otevřete soubor .pkgdef.  
   
-4.  Upravit .pkgdef nastavit výchozí úvodní stránky v části HKLM přidáním následujícího kódu, kde *MyStartPage.xaml* je název souboru XAML, který obsahuje úvodní stránku.  
+4. Upravit .pkgdef nastavit výchozí úvodní stránky v části HKLM přidáním následujícího kódu, kde *MyStartPage.xaml* je název souboru XAML, který obsahuje úvodní stránku.  
   
      [$RootKey$\StartPage\Default]  
   
@@ -84,11 +84,11 @@ Vlastní úvodní stránky můžete nasadit pomocí nasazení VSIX nebo kopírov
   
 #### <a name="to-manually-install-a-custom-start-page"></a>Pro ruční instalaci vlastní úvodní stránky  
   
-1.  Soubor .xaml, který obsahuje značky úvodní stránka, spolu s všechny podpůrné soubory jiné než sestavení, zkopírujte a vložte je do složky \StartPages\ uživatele.  
+1. Soubor .xaml, který obsahuje značky úvodní stránka, spolu s všechny podpůrné soubory jiné než sestavení, zkopírujte a vložte je do složky \StartPages\ uživatele.  
   
-2.  Pokud úvodní stránka vyžaduje sestavení, je zkopírujte a vložte je do... \\ *Instalační složky sady visual Studio*\Common7\IDE\PrivateAssemblies\\.  
+2. Pokud úvodní stránka vyžaduje sestavení, je zkopírujte a vložte je do... \\ *Instalační složky sady visual Studio*\Common7\IDE\PrivateAssemblies\\.  
   
-3.  V **přizpůsobit úvodní stránku** seznamu **spuštění** možnosti vyberte nová úvodní stránka. Další informace najdete v tématu [přizpůsobení úvodní stránky](../ide/customizing-the-start-page-for-visual-studio.md).  
+3. V **přizpůsobit úvodní stránku** seznamu **spuštění** možnosti vyberte nová úvodní stránka. Další informace najdete v tématu [přizpůsobení úvodní stránky](../ide/customizing-the-start-page-for-visual-studio.md).  
   
 ## <a name="see-also"></a>Viz také  
  [Přizpůsobení úvodní stránky](../ide/customizing-the-start-page-for-visual-studio.md)   

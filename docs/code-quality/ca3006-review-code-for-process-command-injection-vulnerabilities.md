@@ -1,5 +1,5 @@
 ---
-title: 'CA3006: Prohlédněte si kód pro proces příkaz vkládání ohrožení zabezpečení'
+title: 'CA3006: Zkontrolujte ohrožení zabezpečení injektáží příkazu procesu v kódu'
 ms.date: 04/03/2019
 ms.topic: reference
 author: dotpaul
@@ -11,13 +11,13 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: da161e611ca1d802c8da16370907029233bfd785
-ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/04/2019
-ms.locfileid: "59018805"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60037982"
 ---
-# <a name="ca3006-review-code-for-process-command-injection-vulnerabilities"></a>CA3006: Prohlédněte si kód pro proces příkaz vkládání ohrožení zabezpečení
+# <a name="ca3006-review-code-for-process-command-injection-vulnerabilities"></a>CA3006: Zkontrolujte ohrožení zabezpečení injektáží příkazu procesu v kódu
 
 |||
 |-|-|
@@ -26,7 +26,7 @@ ms.locfileid: "59018805"
 |Kategorie|Microsoft.Security|
 |Narušující změna|Pevné|
 
-## <a name="cause"></a>příčina
+## <a name="cause"></a>Příčina
 
 Potenciálně nedůvěryhodný vstup požadavku HTTP dosáhne příkazu procesu.
 

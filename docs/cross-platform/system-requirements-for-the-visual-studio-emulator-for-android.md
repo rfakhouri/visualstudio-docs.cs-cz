@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c34bd47dc3909fd165db265eb5a5a79920a03f9
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 4e5f7f21206953b8d99306a9b1da6935604c88b8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57869067"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042896"
 ---
 # <a name="system-requirements-for-the-visual-studio-emulator-for-android"></a>Požadavky na systém pro emulátor sady Visual Studio pro Android
 
@@ -26,7 +26,7 @@ Instalační program se pokusí o konfiguraci těchto předpokladů pro vás ti�
 > [!IMPORTANT]
 > Instalační program pro emulátor zkontroluje požadavky pro spuštění emulátoru Visual Studia pro Android. Pokud požadavky nejsou k dispozici, ale nevyžaduje je zobrazí upozornění.
 
-##  <a name="Checklist"></a> Rychlé kontrolního seznamu
+## <a name="Checklist"></a> Rychlé kontrolního seznamu
 
 Tady je rychlý kontrolní seznam požadavky na spuštění emulátoru Visual Studia pro Android. Podrobnější informace najdete v tématu v následujících oddílech v tomto tématu.
 
@@ -50,11 +50,11 @@ Požadavky technologie Hyper-V
 
 - V systému BIOS musí být podporovány následující funkce:
 
-  -   Hardwarově řízenou virtualizaci
+  - Hardwarově řízenou virtualizaci
 
-  -   Druhý překlad adres úrovně (SLAT)
+  - Druhý překlad adres úrovně (SLAT)
 
-  -   Zabránění spuštění dat založené na hardwaru (DEP)
+  - Zabránění spuštění dat založené na hardwaru (DEP)
 
 - Ve Windows Hyper-V musí být povolený a spuštěný.
 

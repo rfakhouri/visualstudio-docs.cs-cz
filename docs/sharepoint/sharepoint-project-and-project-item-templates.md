@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6250577a5a1b6793001b1d4b732c3b3101690aad
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: b457bf6491a9b82fc981c66722f4c6e19a517065
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867870"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040335"
 ---
 # <a name="sharepoint-project-and-project-item-templates"></a>A šablony položek projektu služby SharePoint
   Následující části popisují dostupné projektu služby SharePoint a položky projektu, šablony a způsobu jejich použití.
@@ -41,17 +41,17 @@ ms.locfileid: "57867870"
 ### <a name="sharepoint-2010-project"></a>Projekt SharePoint 2010
  Obsah *projektu služby SharePoint 2010* jsou zahrnuty v každé šabloně projektu služby SharePoint. Projekt služby SharePoint 2010 obsahuje:
 
--   Soubor projektu.
+- Soubor projektu.
 
--   Stránce vlastností projektu.
+- Stránce vlastností projektu.
 
--   A **odkazy** složky obsahující všechny odkazy na sestavení v projektu.
+- A **odkazy** složky obsahující všechny odkazy na sestavení v projektu.
 
--   A **funkce** složku, která obsahuje *.feature* konfigurační soubor, použít k nasazení funkcí na SharePoint server.
+- A **funkce** složku, která obsahuje *.feature* konfigurační soubor, použít k nasazení funkcí na SharePoint server.
 
--   A **balíčku** složku, která obsahuje *Package.package* soubor používá k nasazení řešení služby SharePoint.
+- A **balíčku** složku, která obsahuje *Package.package* soubor používá k nasazení řešení služby SharePoint.
 
--   Soubor klíč.snk (klíč se silným názvem), který se používá k podepsání sestavení silným názvem pro zvýšené zabezpečení.
+- Soubor klíč.snk (klíč se silným názvem), který se používá k podepsání sestavení silným názvem pro zvýšené zabezpečení.
 
 ### <a name="sharepoint-2010-silverlight-web-part"></a>Webové části technologie Silverlight v Sharepointu 2010
  *Webové části služby SharePoint 2010 Silverlight* projektů vám umožní vytvořit webové části pro SharePoint, která se zobrazí aplikace Silverlight. Když vytvoříte tento projekt, můžete určit, zda chcete přidat novou aplikaci Silverlight k němu nebo odkazovat na existující. Další informace najdete v tématu [vytvořit webové části pro SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md) a [názorný postup: Vytvoření webové části Silverlight, která zobrazuje data OData pro službu SharePoint](../sharepoint/walkthrough-creating-a-silverlight-web-part-that-displays-odata-for-sharepoint.md).

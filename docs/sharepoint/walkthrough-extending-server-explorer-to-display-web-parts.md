@@ -1,5 +1,5 @@
 ---
-title: 'Průvodce: Rozšíření Průzkumníka serveru pro zobrazení částí webu | Dokumentace Microsoftu'
+title: 'Návod: Rozšíření Průzkumníka serveru pro zobrazení částí webu | Dokumentace Microsoftu'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,29 +15,29 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0d46c5e074da8fefa8dc3d7cf370689ad89ad937
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 29fcd40a2fc64a12ed7b29845b0a9f0ea3db5589
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56606331"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040569"
 ---
-# <a name="walkthrough-extend-server-explorer-to-display-web-parts"></a>Průvodce: Rozšíření Průzkumníka serveru pro zobrazení částí webu
+# <a name="walkthrough-extend-server-explorer-to-display-web-parts"></a>Návod: Rozšíření Průzkumníka serveru pro zobrazení částí webu
   V sadě Visual Studio, můžete použít **připojení služby SharePoint** uzlu **Průzkumníka serveru** zobrazíte komponenty na webech služby SharePoint. Ale **Průzkumníka serveru** nezobrazí některé součásti ve výchozím nastavení. V tomto návodu budete rozšíříte **Průzkumníka serveru** tak, aby zobrazil galerii webových částí na každý z nich připojený web služby SharePoint.
 
  Tento návod demonstruje následující úkoly:
 
--   Vytváření rozšíření pro Visual Studio, který rozšiřuje **Průzkumníka serveru** následujícími způsoby:
+- Vytváření rozšíření pro Visual Studio, který rozšiřuje **Průzkumníka serveru** následujícími způsoby:
 
-    -   Přidá rozšíření **Galerie webových částí** uzel za každý uzel webu služby SharePoint v **Průzkumníka serveru**. Tento nový uzel obsahuje podřízené uzly, které představují jednotlivé webové části v galerii webových částí na webu.
+    - Přidá rozšíření **Galerie webových částí** uzel za každý uzel webu služby SharePoint v **Průzkumníka serveru**. Tento nový uzel obsahuje podřízené uzly, které představují jednotlivé webové části v galerii webových částí na webu.
 
-    -   Rozšíření definuje nový typ uzlu, který představuje instanci webové části. Tento nový typ uzlu je základem pro podřízené uzly pod novou **Galerie webových částí** uzlu. Nový typ uzlu webovou část se zobrazí informace v **vlastnosti** okno o webové části, který představuje. Typ uzlu je také položky vlastní místní nabídky, který slouží jako výchozí bod pro provádění další úloh, které se týkají webové části.
+    - Rozšíření definuje nový typ uzlu, který představuje instanci webové části. Tento nový typ uzlu je základem pro podřízené uzly pod novou **Galerie webových částí** uzlu. Nový typ uzlu webovou část se zobrazí informace v **vlastnosti** okno o webové části, který představuje. Typ uzlu je také položky vlastní místní nabídky, který slouží jako výchozí bod pro provádění další úloh, které se týkají webové části.
 
--   Vytvoření dvou vlastních příkazů služby SharePoint, která volá sestavení rozšíření. SharePoint – příkazy jsou metody, které je možné vyvolat v sestavení rozšíření, které chcete používat rozhraní API v objektovém modelu serveru SharePoint. V tomto návodu vytvoříte příkazy, které načítají informace webové části z místního webu služby SharePoint ve vývojovém počítači. Další informace najdete v tématu [volání do objektových modelů služby SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).
+- Vytvoření dvou vlastních příkazů služby SharePoint, která volá sestavení rozšíření. SharePoint – příkazy jsou metody, které je možné vyvolat v sestavení rozšíření, které chcete používat rozhraní API v objektovém modelu serveru SharePoint. V tomto návodu vytvoříte příkazy, které načítají informace webové části z místního webu služby SharePoint ve vývojovém počítači. Další informace najdete v tématu [volání do objektových modelů služby SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).
 
--   Vytváření balíčku rozšíření Visual Studio (VSIX) k nasazení rozšíření.
+- Vytváření balíčku rozšíření Visual Studio (VSIX) k nasazení rozšíření.
 
--   Ladění a testování rozšíření.
+- Ladění a testování rozšíření.
 
 > [!NOTE]
 >  Alternativní verze tohoto názorného postupu, který používá namísto jeho objektový model serveru objektového modelu klienta pro službu SharePoint, naleznete v tématu [názorný postup: Volání do objektového modelu klienta SharePoint v rozšíření Průzkumníka serveru](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md).
@@ -68,107 +68,107 @@ ms.locfileid: "56606331"
 
 #### <a name="to-create-the-vsix-project"></a>Vytvoření projektu VSIX
 
-1.  Spustit [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
+1. Spustit [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
-2.  V panelu nabídky zvolte **souboru** > **nový** > **projektu**.
+2. V panelu nabídky zvolte **souboru** > **nový** > **projektu**.
 
-3.  V **nový projekt** dialogového okna rozbalte **Visual C#** nebo **jazyka Visual Basic** uzly a klikněte na tlačítko **rozšiřitelnost** uzlu.
+3. V **nový projekt** dialogového okna rozbalte **Visual C#** nebo **jazyka Visual Basic** uzly a klikněte na tlačítko **rozšiřitelnost** uzlu.
 
     > [!NOTE]
     >  **Rozšiřitelnost** uzel je dostupný jenom v případě, že nainstalujete Visual Studio SDK. Další informace najdete v oddílu požadavky dříve v tomto tématu.
 
-4.  V horní části dialogového okna zvolte **rozhraní .NET Framework 4.5** v seznam verzí rozhraní .NET Framework.
+4. V horní části dialogového okna zvolte **rozhraní .NET Framework 4.5** v seznam verzí rozhraní .NET Framework.
 
-5.  Zvolte **projekt VSIX** šablony, pojmenujte projekt **WebPartNode**a klikněte na tlačítko **OK** tlačítko.
+5. Zvolte **projekt VSIX** šablony, pojmenujte projekt **WebPartNode**a klikněte na tlačítko **OK** tlačítko.
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Přidá **WebPartNode** projektu **Průzkumníka řešení**.
 
 #### <a name="to-create-the-extension-project"></a>Chcete-li vytvořit projekt rozšíření
 
-1.  V **Průzkumníka řešení**, otevřete místní nabídku pro uzel řešení, zvolte **přidat**a klikněte na tlačítko **nový projekt**.
+1. V **Průzkumníka řešení**, otevřete místní nabídku pro uzel řešení, zvolte **přidat**a klikněte na tlačítko **nový projekt**.
 
-2.  V **nový projekt** dialogového okna rozbalte **Visual C#** uzlu nebo **jazyka Visual Basic** uzel a pak zvolte **Windows** uzlu.
+2. V **nový projekt** dialogového okna rozbalte **Visual C#** uzlu nebo **jazyka Visual Basic** uzel a pak zvolte **Windows** uzlu.
 
-3.  V horní části dialogového okna zvolte **rozhraní .NET Framework 4.5** v seznam verzí rozhraní .NET Framework.
+3. V horní části dialogového okna zvolte **rozhraní .NET Framework 4.5** v seznam verzí rozhraní .NET Framework.
 
-4.  V seznamu šablon projektu vyberte **knihovny tříd**, pojmenujte projekt **WebPartNodeExtension**a klikněte na tlačítko **OK** tlačítko.
+4. V seznamu šablon projektu vyberte **knihovny tříd**, pojmenujte projekt **WebPartNodeExtension**a klikněte na tlačítko **OK** tlačítko.
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Přidá **WebPartNodeExtension** projektu do řešení a otevře soubor výchozího kódu Class1.
 
-5.  Odstraňte soubor kódu Class1 z projektu.
+5. Odstraňte soubor kódu Class1 z projektu.
 
 #### <a name="to-create-the-sharepoint-commands-project"></a>Chcete-li vytvořit příkazy projektu služby SharePoint
 
-1.  V **Průzkumníka řešení**, otevřete místní nabídku pro uzel řešení, zvolte **přidat**a klikněte na tlačítko **nový projekt**.
+1. V **Průzkumníka řešení**, otevřete místní nabídku pro uzel řešení, zvolte **přidat**a klikněte na tlačítko **nový projekt**.
 
-2.  V **nový projekt** dialogového okna rozbalte **Visual C#** uzlu nebo **jazyka Visual Basic** uzel a klikněte na tlačítko **Windows** uzlu.
+2. V **nový projekt** dialogového okna rozbalte **Visual C#** uzlu nebo **jazyka Visual Basic** uzel a klikněte na tlačítko **Windows** uzlu.
 
-3.  V horní části dialogového okna zvolte **rozhraní .NET Framework 3.5** v seznam verzí rozhraní .NET Framework.
+3. V horní části dialogového okna zvolte **rozhraní .NET Framework 3.5** v seznam verzí rozhraní .NET Framework.
 
-4.  V seznamu šablon projektu vyberte **knihovny tříd**, pojmenujte projekt **WebPartCommands**a klikněte na tlačítko **OK** tlačítko.
+4. V seznamu šablon projektu vyberte **knihovny tříd**, pojmenujte projekt **WebPartCommands**a klikněte na tlačítko **OK** tlačítko.
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Přidá **WebPartCommands** projektu do řešení a otevře soubor výchozího kódu Class1.
 
-5.  Odstraňte soubor kódu Class1 z projektu.
+5. Odstraňte soubor kódu Class1 z projektu.
 
 ## <a name="configure-the-projects"></a>Konfigurace projektů
  Než napíšete kód pro vytvoření rozšíření, musíte přidat soubory kódu a odkazy na sestavení a konfigurace nastavení projektu.
 
 #### <a name="to-configure-the-webpartnodeextension-project"></a>Ke konfiguraci projektu WebPartNodeExtension
 
-1.  V projektu WebPartNodeExtension přidání čtyři souborů s kódy, které mají následující názvy:
+1. V projektu WebPartNodeExtension přidání čtyři souborů s kódy, které mají následující názvy:
 
-    -   SiteNodeExtension
+    - SiteNodeExtension
 
-    -   WebPartNodeTypeProvider
+    - WebPartNodeTypeProvider
 
-    -   WebPartNodeInfo
+    - WebPartNodeInfo
 
-    -   WebPartCommandIds
+    - WebPartCommandIds
 
-2.  Otevřete místní nabídku **WebPartNodeExtension** projektu a klikněte na tlačítko **přidat odkaz**.
+2. Otevřete místní nabídku **WebPartNodeExtension** projektu a klikněte na tlačítko **přidat odkaz**.
 
-3.  V **správce odkazů - WebPartNodeExtension** dialogového okna zvolte **Framework** kartu a potom zaškrtněte políčko pro každé následující sestavení:
+3. V **správce odkazů - WebPartNodeExtension** dialogového okna zvolte **Framework** kartu a potom zaškrtněte políčko pro každé následující sestavení:
 
-    -   System.ComponentModel.Composition
+    - System.ComponentModel.Composition
 
-    -   System.Windows.Forms
+    - System.Windows.Forms
 
-4.  Zvolte **rozšíření** kartu, zaškrtněte políčko pro sestavení Microsoft.VisualStudio.SharePoint a klikněte na tlačítko **OK** tlačítko.
+4. Zvolte **rozšíření** kartu, zaškrtněte políčko pro sestavení Microsoft.VisualStudio.SharePoint a klikněte na tlačítko **OK** tlačítko.
 
-5.  V **Průzkumníka řešení**, otevřete místní nabídku **WebPartNodeExtension** uzel projektu a klikněte na tlačítko **vlastnosti**.
+5. V **Průzkumníka řešení**, otevřete místní nabídku **WebPartNodeExtension** uzel projektu a klikněte na tlačítko **vlastnosti**.
 
      **Návrháře projektu** otevře.
 
-6.  Zvolte **aplikace** kartu.
+6. Zvolte **aplikace** kartu.
 
-7.  V **výchozí obor názvů** pole (C#) nebo **kořenový obor názvů** pole ([!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)]), zadejte **ServerExplorer.SharePointConnections.WebPartNode**.
+7. V **výchozí obor názvů** pole (C#) nebo **kořenový obor názvů** pole ([!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)]), zadejte **ServerExplorer.SharePointConnections.WebPartNode**.
 
 #### <a name="to-configure-the-webpartcommands-project"></a>Ke konfiguraci projektu webpartcommands
 
-1.  V projektu WebPartCommands přidejte soubor kódu, který je pojmenován WebPartCommands.
+1. V projektu WebPartCommands přidejte soubor kódu, který je pojmenován WebPartCommands.
 
-2.  V **Průzkumníka řešení**, otevřete místní nabídku **WebPartCommands** uzel projektu, zvolte **přidat**a klikněte na tlačítko **existující položku**.
+2. V **Průzkumníka řešení**, otevřete místní nabídku **WebPartCommands** uzel projektu, zvolte **přidat**a klikněte na tlačítko **existující položku**.
 
-3.  V **přidat existující položku** dialogové okno, přejděte do složky, která obsahuje soubory kódu pro projekt WebPartNodeExtension a klikněte na tlačítko WebPartNodeInfo a WebPartCommandIds soubory kódu.
+3. V **přidat existující položku** dialogové okno, přejděte do složky, která obsahuje soubory kódu pro projekt WebPartNodeExtension a klikněte na tlačítko WebPartNodeInfo a WebPartCommandIds soubory kódu.
 
-4.  Klikněte na šipku vedle položky **přidat** tlačítko a pak zvolte **přidat jako odkaz** v zobrazené nabídce.
+4. Klikněte na šipku vedle položky **přidat** tlačítko a pak zvolte **přidat jako odkaz** v zobrazené nabídce.
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Přidá soubory kódu do projektu WebPartCommands jako odkazy. V důsledku toho kód soubory jsou umístěny v projektu WebPartNodeExtension, ale kód v souborech jsou také zkompilovány v projektu WebPartCommands.
 
-5.  Otevřete místní nabídku **WebPartCommands** znovu projekt a zvolte **přidat odkaz**.
+5. Otevřete místní nabídku **WebPartCommands** znovu projekt a zvolte **přidat odkaz**.
 
-6.  V **správce odkazů - WebPartCommands** dialogového okna zvolte **rozšíření** kartu, zaškrtněte políčko pro každé následující sestavení a klikněte na tlačítko **OK** tlačítko:
+6. V **správce odkazů - WebPartCommands** dialogového okna zvolte **rozšíření** kartu, zaškrtněte políčko pro každé následující sestavení a klikněte na tlačítko **OK** tlačítko:
 
-    -   Microsoft.SharePoint
+    - Microsoft.SharePoint
 
-    -   Microsoft.VisualStudio.SharePoint.Commands
+    - Microsoft.VisualStudio.SharePoint.Commands
 
-7.  V **Průzkumníka řešení**, otevřete místní nabídku **WebPartCommands** projekt znovu a klikněte na tlačítko **vlastnosti**.
+7. V **Průzkumníka řešení**, otevřete místní nabídku **WebPartCommands** projekt znovu a klikněte na tlačítko **vlastnosti**.
 
      **Návrháře projektu** otevře.
 
-8.  Zvolte **aplikace** kartu.
+8. Zvolte **aplikace** kartu.
 
 9. V **výchozí obor názvů** pole (C#) nebo **kořenový obor názvů** pole ([!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)]), zadejte **ServerExplorer.SharePointConnections.WebPartNode**.
 
@@ -177,25 +177,25 @@ ms.locfileid: "56606331"
 
 #### <a name="to-create-icons-for-the-nodes"></a>Vytvoření ikony uzlů
 
-1.  V **Průzkumníka řešení**, otevřete místní nabídku **WebPartNodeExtension** projektu a klikněte na tlačítko **vlastnosti**.
+1. V **Průzkumníka řešení**, otevřete místní nabídku **WebPartNodeExtension** projektu a klikněte na tlačítko **vlastnosti**.
 
-2.  **Návrháře projektu** otevře.
+2. **Návrháře projektu** otevře.
 
-3.  Zvolte **prostředky** kartu a klikněte na tlačítko **tento projekt neobsahuje soubor výchozích prostředků. Kliknutím sem vytvoříte jeden** odkaz.
+3. Zvolte **prostředky** kartu a klikněte na tlačítko **tento projekt neobsahuje soubor výchozích prostředků. Kliknutím sem vytvoříte jeden** odkaz.
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Vytvoří soubor prostředků a otevře v návrháři.
 
-4.  V horní části návrháře, klikněte na šipku vedle položky **přidat prostředek** nabídky příkazů a klikněte na tlačítko **přidat novou ikonu** v zobrazené nabídce.
+4. V horní části návrháře, klikněte na šipku vedle položky **přidat prostředek** nabídky příkazů a klikněte na tlačítko **přidat novou ikonu** v zobrazené nabídce.
 
-5.  V **přidat nový prostředek** dialogové okno, název přes novou ikonu **WebPartsNode**a klikněte na tlačítko **přidat** tlačítko.
+5. V **přidat nový prostředek** dialogové okno, název přes novou ikonu **WebPartsNode**a klikněte na tlačítko **přidat** tlačítko.
 
      Nová ikona se otevře v **Editor obrázků**.
 
-6.  Ikona verzi 16 x 16 upravte tak, aby byly k návrhu, který můžete snadno rozpoznat.
+6. Ikona verzi 16 x 16 upravte tak, aby byly k návrhu, který můžete snadno rozpoznat.
 
-7.  Otevřete místní nabídku pro verzi 32 x 32 ikony a klikněte na tlačítko **odstranit typ obrázku**.
+7. Otevřete místní nabídku pro verzi 32 x 32 ikony a klikněte na tlačítko **odstranit typ obrázku**.
 
-8.  Opakujte kroky 5 až 8 přidejte druhou ikonu do projektu prostředků a název tuto ikonu **webové části**.
+8. Opakujte kroky 5 až 8 přidejte druhou ikonu do projektu prostředků a název tuto ikonu **webové části**.
 
 9. V **Průzkumníka řešení**v části **prostředky** složku **WebPartNodeExtension** projektu, otevřete místní nabídku pro **WebPartsNode.ico**.
 
@@ -208,7 +208,7 @@ ms.locfileid: "56606331"
 
 #### <a name="to-add-the-web-part-gallery-node-to-server-explorer"></a>Chcete-li přidat uzel galerie webových částí do Průzkumníka serveru
 
-1.  V projektu WebPartNodeExtension otevřete soubor kódu SiteNodeExtension a vložte následující kód do něj.
+1. V projektu WebPartNodeExtension otevřete soubor kódu SiteNodeExtension a vložte následující kód do něj.
 
     > [!NOTE]
     >  Po přidání tohoto kódu, bude mít projekt několik chyb kompilace, ale zmizí při vložení kódu v dalších krocích.
@@ -223,7 +223,7 @@ ms.locfileid: "56606331"
 
 #### <a name="to-define-the-web-part-node-type"></a>Chcete-li definovat typ uzlu webové části
 
-1.  V projektu WebPartNodeExtension otevřete soubor kódu WebPartNodeTypeProvder a vložte následující kód do něj.
+1. V projektu WebPartNodeExtension otevřete soubor kódu WebPartNodeTypeProvder a vložte následující kód do něj.
 
      [!code-vb[SPExtensibility.SPExplorer.WebPartNodeWithCommands#2](../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnodewithcommands.webpartnode/webpartnodeextension/webpartnodetypeprovider.vb#2)]
      [!code-csharp[SPExtensibility.SPExplorer.WebPartNodeWithCommands#2](../sharepoint/codesnippet/CSharp/WebPartNode/webpartnodeextension/webpartnodetypeprovider.cs#2)]
@@ -233,7 +233,7 @@ ms.locfileid: "56606331"
 
 #### <a name="to-define-the-web-part-data-class"></a>Definice třídy dat webové části
 
-1.  V projektu WebPartNodeExtension otevřete soubor kódu WebPartNodeInfo a vložte následující kód do něj.
+1. V projektu WebPartNodeExtension otevřete soubor kódu WebPartNodeInfo a vložte následující kód do něj.
 
      [!code-vb[SPExtensibility.SPExplorer.WebPartNodeWithCommands#3](../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnodewithcommands.webpartnode/webpartnodeextension/webpartnodeinfo.vb#3)]
      [!code-csharp[SPExtensibility.SPExplorer.WebPartNodeWithCommands#3](../sharepoint/codesnippet/CSharp/WebPartNode/webpartnodeextension/webpartnodeinfo.cs#3)]
@@ -243,7 +243,7 @@ ms.locfileid: "56606331"
 
 #### <a name="to-define-the-command-ids"></a>Chcete-li definovat identifikátory příkazů
 
-1.  V projektu WebPartNodeExtension otevřete soubor kódu WebPartCommandIds a vložte následující kód do něj.
+1. V projektu WebPartNodeExtension otevřete soubor kódu WebPartCommandIds a vložte následující kód do něj.
 
      [!code-csharp[SPExtensibility.SPExplorer.WebPartNodeWithCommands#4](../sharepoint/codesnippet/CSharp/WebPartNode/webpartnodeextension/webpartcommandids.cs#4)]
      [!code-vb[SPExtensibility.SPExplorer.WebPartNodeWithCommands#4](../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnodewithcommands.webpartnode/webpartnodeextension/webpartcommandids.vb#4)]
@@ -253,7 +253,7 @@ ms.locfileid: "56606331"
 
 #### <a name="to-define-the-sharepoint-commands"></a>Chcete-li definovat příkazů služby SharePoint
 
-1.  V projektu WebPartCommands otevřete soubor kódu WebPartCommands a vložte následující kód do něj.
+1. V projektu WebPartCommands otevřete soubor kódu WebPartCommands a vložte následující kód do něj.
 
      [!code-csharp[SPExtensibility.SPExplorer.WebPartNodeWithCommands#6](../sharepoint/codesnippet/CSharp/WebPartNode/WebPartCommands/WebPartCommands.cs#6)]
      [!code-vb[SPExtensibility.SPExplorer.WebPartNodeWithCommands#6](../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnodewithcommands.webpartnode/webpartcommands/webpartcommands.vb#6)]
@@ -263,7 +263,7 @@ ms.locfileid: "56606331"
 
 #### <a name="to-build-the-solution"></a>Abyste mohli sestavit řešení
 
-1.  V panelu nabídky zvolte **sestavení** > **sestavit řešení**.
+1. V panelu nabídky zvolte **sestavení** > **sestavit řešení**.
 
     > [!WARNING]
     >  V tomto okamžiku WebPartNode projektu může mít k chybě sestavení, protože soubor manifestu VSIX nemá hodnotu pro autora. Tato chyba zmizí při přidání hodnoty v dalších krocích.
@@ -273,28 +273,28 @@ ms.locfileid: "56606331"
 
 #### <a name="to-configure-the-vsix-package"></a>Konfigurace balíčku VSIX
 
-1.  V **Průzkumníka řešení**, v rámci WebPartNode projektu, otevřete **source.extension.vsixmanifest** souboru v editoru manifestu.
+1. V **Průzkumníka řešení**, v rámci WebPartNode projektu, otevřete **source.extension.vsixmanifest** souboru v editoru manifestu.
 
      Soubor source.extension.vsixmanifest je základem pro soubor extension.vsixmanifest, které vyžadují všechny balíčky VSIX. Další informace o tomto souboru najdete v tématu [odkaz 1.0 schématu rozšíření VSIX](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).
 
-2.  V **název produktu** zadejte **uzel galerie webových částí pro Průzkumníka serveru**.
+2. V **název produktu** zadejte **uzel galerie webových částí pro Průzkumníka serveru**.
 
-3.  V **Autor** zadejte **Contoso**.
+3. V **Autor** zadejte **Contoso**.
 
-4.  V **popis** zadejte **přidá vlastní galerie webových částí uzlu k uzlu připojení služby SharePoint v Průzkumníku serveru. Toto rozšíření používá vlastní příkaz služby SharePoint pro volání do objektového modelu serveru.**
+4. V **popis** zadejte **přidá vlastní galerie webových částí uzlu k uzlu připojení služby SharePoint v Průzkumníku serveru. Toto rozšíření používá vlastní příkaz služby SharePoint pro volání do objektového modelu serveru.**
 
-5.  Zvolte **prostředky** karta editoru a klikněte na tlačítko **nový** tlačítko.
+5. Zvolte **prostředky** karta editoru a klikněte na tlačítko **nový** tlačítko.
 
      **Přidat nové aktivum** zobrazí se dialogové okno.
 
-6.  V **typ** klikněte na položku **Microsoft.VisualStudio.MefComponent**.
+6. V **typ** klikněte na položku **Microsoft.VisualStudio.MefComponent**.
 
     > [!NOTE]
     >  Tato hodnota odpovídá `MefComponent` element v souboru extension.vsixmanifest. Tento prvek určuje název sestavení rozšíření v balíčku souboru VSIX. Další informace najdete v tématu [MEFComponent – Element (VSX schéma)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).
 
-7.  V **zdroj** klikněte na položku **projekt v aktuálním řešení**.
+7. V **zdroj** klikněte na položku **projekt v aktuálním řešení**.
 
-8.  V **projektu** klikněte na položku **WebPartNodeExtension** a klikněte na tlačítko **OK** tlačítko.
+8. V **projektu** klikněte na položku **WebPartNodeExtension** a klikněte na tlačítko **OK** tlačítko.
 
 9. V editoru manifestu vyberte **nový** tlačítko znovu.
 
@@ -320,37 +320,37 @@ ms.locfileid: "56606331"
 
 #### <a name="to-start-debugging-the-extension"></a>Chcete-li začít ladit rozšíření
 
-1.  Restartujte [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] s přihlašovacími údaji správce a pak otevřete WebPartNode řešení.
+1. Restartujte [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] s přihlašovacími údaji správce a pak otevřete WebPartNode řešení.
 
-2.  V projektu WebPartNodeExtension otevřete soubor kódu SiteNodeExtension a na první řádek kódu přidejte zarážku `NodeChildrenRequested` a `CreateWebPartNodes` metody.
+2. V projektu WebPartNodeExtension otevřete soubor kódu SiteNodeExtension a na první řádek kódu přidejte zarážku `NodeChildrenRequested` a `CreateWebPartNodes` metody.
 
-3.  Zvolte **F5** klíč pro spuštění ladění.
+3. Zvolte **F5** klíč pro spuštění ladění.
 
      Visual Studio nainstaluje rozšíření do %UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0Exp\Extensions\Contoso\Web uzel rozšíření Galerie částí pro Server Explorer\1. 0 a spustí experimentální instanci sady Visual Studio. Položku projektu budete testovat v této instanci aplikace Visual Studio.
 
 #### <a name="to-test-the-extension"></a>Chcete-li testovat rozšíření
 
-1.  V experimentální instanci [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], na panelu nabídek zvolte **zobrazení** > **Průzkumníka serveru**.
+1. V experimentální instanci [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], na panelu nabídek zvolte **zobrazení** > **Průzkumníka serveru**.
 
-2.  Proveďte následující kroky, pokud se web služby SharePoint, kterou chcete použít pro testování nezobrazí v části **připojení služby SharePoint** uzel v **Průzkumníka serveru**:
+2. Proveďte následující kroky, pokud se web služby SharePoint, kterou chcete použít pro testování nezobrazí v části **připojení služby SharePoint** uzel v **Průzkumníka serveru**:
 
-    1.  V **Průzkumníka serveru**, otevřete místní nabídku pro **připojení služby SharePoint**a klikněte na tlačítko **přidat připojení**.
+    1. V **Průzkumníka serveru**, otevřete místní nabídku pro **připojení služby SharePoint**a klikněte na tlačítko **přidat připojení**.
 
-    2.  V **přidat připojení k Sharepointu** dialogového okna zadejte adresu URL pro Sharepointový web, ke kterému chcete připojit a klikněte na tlačítko **OK** tlačítko.
+    2. V **přidat připojení k Sharepointu** dialogového okna zadejte adresu URL pro Sharepointový web, ke kterému chcete připojit a klikněte na tlačítko **OK** tlačítko.
 
          Chcete-li určit web služby SharePoint ve svém vývojovém počítači, zadejte **http://localhost**.
 
-3.  Rozbalte uzel připojení serveru (který zobrazuje adresu URL vašeho webu) a potom rozbalte uzel serveru podřízený (například **týmový web**).
+3. Rozbalte uzel připojení serveru (který zobrazuje adresu URL vašeho webu) a potom rozbalte uzel serveru podřízený (například **týmový web**).
 
-4.  Ověřte, že kód ve druhé instanci aplikace [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] zastaví na zarážce, kterou jste nastavili dříve v `NodeChildrenRequested` metoda a klikněte na tlačítko **F5** a pokračujte v ladění projektu.
+4. Ověřte, že kód ve druhé instanci aplikace [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] zastaví na zarážce, kterou jste nastavili dříve v `NodeChildrenRequested` metoda a klikněte na tlačítko **F5** a pokračujte v ladění projektu.
 
-5.  V experimentální instanci sady Visual Studio, ověřte, že nový uzel s názvem **Galerie webových částí** se zobrazí v lokalitě nejvyšší úrovně uzlu a potom rozbalte **Galerie webových částí** uzlu.
+5. V experimentální instanci sady Visual Studio, ověřte, že nový uzel s názvem **Galerie webových částí** se zobrazí v lokalitě nejvyšší úrovně uzlu a potom rozbalte **Galerie webových částí** uzlu.
 
-6.  Ověřte, že kód ve druhé instanci aplikace Visual Studio zastaví na zarážce, kterou jste nastavili dříve v `CreateWebPartNodes` metoda a klikněte na tlačítko **F5** klíč a pokračujte v ladění projektu.
+6. Ověřte, že kód ve druhé instanci aplikace Visual Studio zastaví na zarážce, kterou jste nastavili dříve v `CreateWebPartNodes` metoda a klikněte na tlačítko **F5** klíč a pokračujte v ladění projektu.
 
-7.  V experimentální instanci sady Visual Studio, ověřte, že všechny webové části na připojený web se zobrazí pod **Galerie webových částí** uzel v **Průzkumníka serveru**.
+7. V experimentální instanci sady Visual Studio, ověřte, že všechny webové části na připojený web se zobrazí pod **Galerie webových částí** uzel v **Průzkumníka serveru**.
 
-8.  V **Průzkumníka serveru**, otevřete místní nabídku pro jednu z webové části a klikněte na tlačítko **vlastnosti**.
+8. V **Průzkumníka serveru**, otevřete místní nabídku pro jednu z webové části a klikněte na tlačítko **vlastnosti**.
 
 9. V instanci [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] , kterou ladíte, ověřte, že v zobrazují podrobnosti o webové části **vlastnosti** okna.
 
@@ -359,15 +359,15 @@ ms.locfileid: "56606331"
 
 #### <a name="to-uninstall-the-extension"></a>Chcete-li odinstalovat rozšíření
 
-1.  V experimentální instanci [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], na panelu nabídek zvolte **nástroje** > **rozšíření a aktualizace**.
+1. V experimentální instanci [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], na panelu nabídek zvolte **nástroje** > **rozšíření a aktualizace**.
 
      **Rozšíření a aktualizace** zobrazí se dialogové okno.
 
-2.  V seznamu rozšíření zvolte **uzel rozšíření Galerie webových částí pro Průzkumníka serveru**a klikněte na tlačítko **odinstalovat** tlačítko.
+2. V seznamu rozšíření zvolte **uzel rozšíření Galerie webových částí pro Průzkumníka serveru**a klikněte na tlačítko **odinstalovat** tlačítko.
 
-3.  V dialogovém okně, které se zobrazí, zvolte **Ano** potvrďte, že chcete odinstalovat rozšíření a klikněte na tlačítko **restartovat nyní** tlačítko pro dokončení odinstalace.
+3. V dialogovém okně, které se zobrazí, zvolte **Ano** potvrďte, že chcete odinstalovat rozšíření a klikněte na tlačítko **restartovat nyní** tlačítko pro dokončení odinstalace.
 
-4.  Zavřete obě instance programu Visual Studio (experimentální instanci a instanci sady Visual Studio, ve kterém je otevřen WebPartNode řešení).
+4. Zavřete obě instance programu Visual Studio (experimentální instanci a instanci sady Visual Studio, ve kterém je otevřen WebPartNode řešení).
 
 ## <a name="see-also"></a>Viz také:
 - [Rozšíření uzlu připojení služby SharePoint v Průzkumníku serveru](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)

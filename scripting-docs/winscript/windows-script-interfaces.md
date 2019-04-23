@@ -11,12 +11,12 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: acb62f3dc5774ef8574fded3c0537e97611049c2
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 0aebd0857ba847d5c5eba5e3a4a8a01da73ec159
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58154423"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60038222"
 ---
 # <a name="windows-script-interfaces"></a>Skriptovací rozhraní systému Windows
 
@@ -62,21 +62,21 @@ Následující obrázek ukazuje interakci mezi Windows Script host a modul skrip
 
 V následujícím seznamu jsou uvedeny kroky interakce mezi hostitelem a modul.
 
-1.  Vytvoření projektu. Hostitel načítá projektu nebo dokumentu. (Tento krok není konkrétní do skriptu Windows, ale je zde uveden pro úplnost.)
+1. Vytvoření projektu. Hostitel načítá projektu nebo dokumentu. (Tento krok není konkrétní do skriptu Windows, ale je zde uveden pro úplnost.)
 
-2.  Vytvořte modul skriptu Windows. Volání hostitele `CoCreateInstance` Pokud chcete vytvořit nový modul skriptu Windows, zadání konkrétní skriptovací stroje používat identifikátor třídy (CLSID). Například ve formátu HTML prohlížeče Internet Explorer obdrží identifikátor třídy skriptovací stroj prostřednictvím identifikátor CLSID = atributu HTML \<objektu > značky.
+2. Vytvořte modul skriptu Windows. Volání hostitele `CoCreateInstance` Pokud chcete vytvořit nový modul skriptu Windows, zadání konkrétní skriptovací stroje používat identifikátor třídy (CLSID). Například ve formátu HTML prohlížeče Internet Explorer obdrží identifikátor třídy skriptovací stroj prostřednictvím identifikátor CLSID = atributu HTML \<objektu > značky.
 
-3.  Načítání skriptu. Pokud byly trvale zaznamenány obsah skriptu, hostitel zavolá skriptovací stroj `IPersist*::Load` metoda informačního kanálu kontejner úložiště, datového proudu nebo vlastnosti skriptu. V opačném případě hostitel používá. buď `IPersist*::InitNew` nebo [IActiveScriptParse::InitNew](../winscript/reference/iactivescriptparse-initnew.md) metodu pro vytvoření skriptu hodnotu null. Hostitele, který udržuje skript jako text můžete použít [IActiveScriptParse::ParseScriptText](../winscript/reference/iactivescriptparse-parsescripttext.md) ke kanálu skriptovací stroj text skriptu po volání `IActiveScriptParse::InitNew`.
+3. Načítání skriptu. Pokud byly trvale zaznamenány obsah skriptu, hostitel zavolá skriptovací stroj `IPersist*::Load` metoda informačního kanálu kontejner úložiště, datového proudu nebo vlastnosti skriptu. V opačném případě hostitel používá. buď `IPersist*::InitNew` nebo [IActiveScriptParse::InitNew](../winscript/reference/iactivescriptparse-initnew.md) metodu pro vytvoření skriptu hodnotu null. Hostitele, který udržuje skript jako text můžete použít [IActiveScriptParse::ParseScriptText](../winscript/reference/iactivescriptparse-parsescripttext.md) ke kanálu skriptovací stroj text skriptu po volání `IActiveScriptParse::InitNew`.
 
-4.  Přidáte pojmenovanou položky. Pro každou položku nejvyšší úrovně s názvem (například stránek a formulářů) importovat do oboru názvů skriptovací stroj, volá hostitele [IActiveScript::AddNamedItem](../winscript/reference/iactivescript-addnameditem.md) metodu pro vytvoření položky v oboru názvů stroje. Tento krok není nutné v případě nejvyšší úrovně s názvem položky jsou již součástí trvalého stavu skriptu načteny v kroku 3. Hostitel nepoužívá `IActiveScript::AddNamedItem` přidat dílčí úkoly s názvem položky (například ovládacích prvků na stránku HTML); místo toho modul nepřímo získá položky z dílčích úkolů z položky nejvyšší úrovně s použitím hostitele `ITypeInfo` a `IDispatch` rozhraní.
+4. Přidáte pojmenovanou položky. Pro každou položku nejvyšší úrovně s názvem (například stránek a formulářů) importovat do oboru názvů skriptovací stroj, volá hostitele [IActiveScript::AddNamedItem](../winscript/reference/iactivescript-addnameditem.md) metodu pro vytvoření položky v oboru názvů stroje. Tento krok není nutné v případě nejvyšší úrovně s názvem položky jsou již součástí trvalého stavu skriptu načteny v kroku 3. Hostitel nepoužívá `IActiveScript::AddNamedItem` přidat dílčí úkoly s názvem položky (například ovládacích prvků na stránku HTML); místo toho modul nepřímo získá položky z dílčích úkolů z položky nejvyšší úrovně s použitím hostitele `ITypeInfo` a `IDispatch` rozhraní.
 
-5.  Spusťte skript. Hostitel způsobí, že spustíte skript nastavením příznaku SCRIPTSTATE_CONNECTED modulu [IActiveScript::SetScriptState](../winscript/reference/iactivescript-setscriptstate.md) metody. Toto volání by pravděpodobně provádět každé skriptovací modul konstrukce dílo, včetně statických vazby, zapojování k událostem (viz níže) a spouští kód, tak nějak skriptované `main()` funkce.
+5. Spusťte skript. Hostitel způsobí, že spustíte skript nastavením příznaku SCRIPTSTATE_CONNECTED modulu [IActiveScript::SetScriptState](../winscript/reference/iactivescript-setscriptstate.md) metody. Toto volání by pravděpodobně provádět každé skriptovací modul konstrukce dílo, včetně statických vazby, zapojování k událostem (viz níže) a spouští kód, tak nějak skriptované `main()` funkce.
 
-6.  Získejte informace o položce. Pokaždé, když skriptovací stroj je potřeba přidružit symbol položku nejvyšší úrovně, které volá [IActiveScriptSite::GetItemInfo](../winscript/reference/iactivescriptsite-getiteminfo.md) metodu, která vrátí informace o dané položky.
+6. Získejte informace o položce. Pokaždé, když skriptovací stroj je potřeba přidružit symbol položku nejvyšší úrovně, které volá [IActiveScriptSite::GetItemInfo](../winscript/reference/iactivescriptsite-getiteminfo.md) metodu, která vrátí informace o dané položky.
 
-7.  Připojení událostí. Před spuštěním vlastního skriptu, skriptovací stroj připojí k události souvisejících objektů prostřednictvím `IConnectionPoint` rozhraní.
+7. Připojení událostí. Před spuštěním vlastního skriptu, skriptovací stroj připojí k události souvisejících objektů prostřednictvím `IConnectionPoint` rozhraní.
 
-8.  Vyvolání vlastnosti a metody. Po spuštění skriptu, skriptovací stroj realizuje odkazy na metody a vlastnosti na pojmenované objekty prostřednictvím `IDispatch::Invoke` nebo jiných mechanismů standardní vazbu OLE.
+8. Vyvolání vlastnosti a metody. Po spuštění skriptu, skriptovací stroj realizuje odkazy na metody a vlastnosti na pojmenované objekty prostřednictvím `IDispatch::Invoke` nebo jiných mechanismů standardní vazbu OLE.
 
 ## <a name="windows-script-terms"></a>Windows Script podmínky
 

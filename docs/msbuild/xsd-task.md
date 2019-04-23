@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 78fe110ee6abf70d091f9d7c1f67b56608f82c27
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: 742b2b1660b5a1776edca0a4b64c56222cd1c163
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57982984"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60038261"
 ---
 # <a name="xsd-task"></a>XSD – úloha
 Zabalí nástroj definici schématu XML (*xsd.exe*), který generuje schématu nebo třída soubory ze zdroje.
@@ -36,13 +36,13 @@ Zabalí nástroj definici schématu XML (*xsd.exe*), který generuje schématu n
 ## <a name="parameters"></a>Parametry
  Následující tabulka popisuje parametry **XSD** úloh.
 
--   **AdditionalOptions**
+- **AdditionalOptions**
 
      Volitelné **řetězec** parametru.
 
      Seznam možností, jak je uvedeno na příkazovém řádku. Třeba /\<možnost1 > /\<možnost2 > /\<možnost #>. Tento parametr použijte k určení možností, které nejsou reprezentovány jakýkoli jiný **XSD** parametr úlohy.
 
--   **GenerateFromSchema**
+- **GenerateFromSchema**
 
      Volitelné **řetězec** parametru.
 
@@ -50,11 +50,11 @@ Zabalí nástroj definici schématu XML (*xsd.exe*), který generuje schématu n
 
      Zadejte jednu z následujících hodnot, z nichž každý odpovídá možnost XSD.
 
-    -   **třídy** -   **/třídy**
+    - **třídy** -   **/třídy**
 
-    -   **dataset** - **/dataset**
+    - **dataset** - **/dataset**
 
--   **Jazyk**
+- **Jazyk**
 
      Volitelné **řetězec** parametru.
 
@@ -62,25 +62,25 @@ Zabalí nástroj definici schématu XML (*xsd.exe*), který generuje schématu n
 
      Vyberte si z **CS** (C#, což je výchozí hodnota), **VB** (Visual Basic), nebo **JS** (JScript). Můžete také zadat plně kvalifikovaný název pro třídu, která implementuje `System.CodeDom.Compiler.CodeDomProvider Class`.
 
--   **Namespace**
+- **Namespace**
 
      Volitelné **řetězec** parametru.
 
      Určuje runtime obor názvů pro generovaný typy.
 
--   **Zdroje**
+- **Zdroje**
 
      Vyžaduje `ITaskItem[]` parametru.
 
      Definuje pole objektů položky nástroje MSBuild zdrojových souborů, které lze používat a, protože ho vygeneroval úlohy.
 
--   **SuppressStartupBanner**
+- **SuppressStartupBanner**
 
      Volitelné **logická** parametru.
 
      Pokud `true`, zabraňuje zobrazování čísel zprávu o autorských právech a verze při spuštění úlohy.
 
--   **TrackerLogDirectory**
+- **TrackerLogDirectory**
 
      Volitelné **řetězec** parametru.
 

@@ -9,12 +9,12 @@ ms.assetid: b7fae849-0538-40d1-ab35-2bb3a0fe4393
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 25e44e9b05a34cbcd245debc87dfbe23c5772a3c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 87161a4d58411f5f1bbe0347d093a39f17742bd6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55948924"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042064"
 ---
 # <a name="emulate-expected-real-world-usage-of-a-website-or-application-in-a-load-test-using-a-test-mix-model"></a>Emulovat očekávaného reálného využití webu nebo aplikace v rámci zátěžového testu pomocí modelu kombinace testů
 
@@ -28,18 +28,18 @@ Pomocí editoru zátěžových testů nebo v Průvodci modelů poměru testů, m
 
 Můžete určit jednu z následujících možností model kombinace testů pro vašeho scénáře zkušebního zatížení:
 
--   **Na základě celkového počtu testů:** Určuje, který webového výkonu nebo Jednotkový test se spustí, když virtuální uživatel spustí iteraci testu. Na konci zátěžového testu odpovídá počet případů, kdy se spuštěním určitého testu rozdělení přiřazeného testu. Použijte tento model kombinace testů, pokud vytváříte poměru testů podílu transakcí v protokolu služby IIS nebo v údajích o produkci. Další informace najdete v tématu [procento podle spuštěných testů](#BasedOnTestsStarted).
+- **Na základě celkového počtu testů:** Určuje, který webového výkonu nebo Jednotkový test se spustí, když virtuální uživatel spustí iteraci testu. Na konci zátěžového testu odpovídá počet případů, kdy se spuštěním určitého testu rozdělení přiřazeného testu. Použijte tento model kombinace testů, pokud vytváříte poměru testů podílu transakcí v protokolu služby IIS nebo v údajích o produkci. Další informace najdete v tématu [procento podle spuštěných testů](#BasedOnTestsStarted).
 
--   **Podle počtu virtuálních uživatelů:** Určuje procentuální podíl virtuálních uživatelů, kteří budou používat konkrétního webového výkonu nebo Jednotkový test. Kdykoli během zátěžového testu odpovídá počet uživatelů, kteří jsou spuštěn určitý test přiřazené distribuce. Použijte tento model kombinace testů, pokud vytváříte poměr testů na procento uživatelů, kteří jsou spuštěn určitý test. Další informace najdete v tématu [virtuálních uživatelů na základě procento](#PercentageBasedonVirtualUsers).
+- **Podle počtu virtuálních uživatelů:** Určuje procentuální podíl virtuálních uživatelů, kteří budou používat konkrétního webového výkonu nebo Jednotkový test. Kdykoli během zátěžového testu odpovídá počet uživatelů, kteří jsou spuštěn určitý test přiřazené distribuce. Použijte tento model kombinace testů, pokud vytváříte poměr testů na procento uživatelů, kteří jsou spuštěn určitý test. Další informace najdete v tématu [virtuálních uživatelů na základě procento](#PercentageBasedonVirtualUsers).
 
--   **Založený na kroku uživatele:** V průběhu zátěžového testu je každý test webového výkonu nebo Jednotkový test spustit zadaný počet opakování za uživatele za hodinu. Použijte tento model kombinace testů, když potřebujete virtuálních uživatelů pro spuštění testu v určitém tempu zátěžového testu. Další informace najdete v tématu [poměru testů Pacing](#PacingTestMix).
+- **Založený na kroku uživatele:** V průběhu zátěžového testu je každý test webového výkonu nebo Jednotkový test spustit zadaný počet opakování za uživatele za hodinu. Použijte tento model kombinace testů, když potřebujete virtuálních uživatelů pro spuštění testu v určitém tempu zátěžového testu. Další informace najdete v tématu [poměru testů Pacing](#PacingTestMix).
 
     > [!TIP]
     > Pokud zvolíte **procentuální poměr testů** a pokud zvolíte **virtuálních uživatelů na základě procento**? Rozdíl mezi tyto dvě možnosti je důležité, pokud některé testy v kombinaci testů mnohem delší dobu než jiné testy. V takovém případě byste měli pravděpodobně zvolit **virtuálních uživatelů na základě procento**. Tato volba pomáhá zabránit spuštění testu, ve které pravděpodobnost zvyšuje, že příliš mnoho uživatelů poběží testy dlouhé doby trvání. Nicméně pokud všechny testy mají podobné doby trvání, bezpečně můžete **procentuální poměr testů**.
 
--   **Podle pořadí:** Každý virtuální uživatel spouští testy webového výkonu nebo Jednotkový v pořadí, že testy jsou definovány ve scénáři. Virtuální uživatel pokračuje procházením testy v tomto pořadí, dokud není dokončen zátěžový test. Další informace najdete v tématu [pořadí](#SequentialOrder).
+- **Podle pořadí:** Každý virtuální uživatel spouští testy webového výkonu nebo Jednotkový v pořadí, že testy jsou definovány ve scénáři. Virtuální uživatel pokračuje procházením testy v tomto pořadí, dokud není dokončen zátěžový test. Další informace najdete v tématu [pořadí](#SequentialOrder).
 
-###  <a name="BasedOnTestsStarted"></a> Procento podle spuštěných testů
+### <a name="BasedOnTestsStarted"></a> Procento podle spuštěných testů
  Pro každý test v kombinaci můžete určit procento, která určuje, jak často testu jako další test vybrané ke spuštění. Například může přiřadit následující hodnoty procento tři testy:
 
 - TestA (50%)
@@ -50,10 +50,10 @@ Můžete určit jednu z následujících možností model kombinace testů pro v
 
   Pokud použijete toto nastavení, následující test spuštění je založená na přiřazené procenta. Můžete to provést bez ohledu na počet virtuálních uživatelů, kteří jsou aktuálně spuštěním každého testu.
 
-###  <a name="PercentageBasedonVirtualUsers"></a> Procento podle virtuálních uživatelů
+### <a name="PercentageBasedonVirtualUsers"></a> Procento podle virtuálních uživatelů
  Model poměru testů Určuje procentuální podíl virtuálních uživatelů, kteří se spuštěním určitého testu. Pokud používáte model kombinace testů, další test spustit je založena pouze na přiřazené procenta, ale také na procentuální podíl virtuálních uživatelů, kteří jsou aktuálně spuštěný určitý test. Kdykoli během zátěžového testu odpovídá počet uživatelů, kteří jsou spuštěn určitý test co nejpřesněji přiřazené distribuce.
 
-###  <a name="PacingTestMix"></a> Interval poměru testů
+### <a name="PacingTestMix"></a> Interval poměru testů
  Pokud zadáte nemusely kombinace testů, nastavte počet spuštění testu pro jednotlivé virtuální uživatele pro každý test v kombinaci testů. Pro každý test je tato sazba vyjádřené jako testy spuštěny na virtuálního uživatele za hodinu. Například můžete přiřadit následující nemusely poměr testů na následující testy:
 
 - TestA: 4 testů na uživatele za hodinu
@@ -79,7 +79,7 @@ Můžete určit jednu z následujících možností model kombinace testů pro v
 
   Další informace najdete v tématu [jak: Použít rozdělení na zpoždění stimulace, když model kombinace testů se stimulací podle uživatele](../test/how-to-apply-distribution-to-pacing-delay-when-using-a-user-pace-test-mix-model.md).
 
-###  <a name="SequentialOrder"></a> Pořadí
+### <a name="SequentialOrder"></a> Pořadí
  Výběr založený na možnost pořadí sekvenčního testu díky jednotlivé virtuální uživatele spouštět všechny testy ve scénáři v pořadí, že testy nebyly definovány.
 
 ## <a name="test-iterations-property"></a>Vlastnost iterace testu

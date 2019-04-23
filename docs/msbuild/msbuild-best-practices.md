@@ -11,17 +11,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ae4390632dc9c1ce0cb47d5733145739719ae87c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 6ad0bd131251259b375a4300807825205da2c6ea
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56617350"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042675"
 ---
 # <a name="msbuild-best-practices"></a>Doporučené postupy nástroje MSBuild
 Doporučujeme následující osvědčené postupy pro psaní skriptů nástroje MSBuild:
 
--   Výchozí hodnoty vlastností jsou nejlépe odstraníte pomocí `Condition` atribut a ne pomocí deklarace vlastnost, jejíž výchozí hodnota se dá přepsat v příkazovém řádku. Například použít
+- Výchozí hodnoty vlastností jsou nejlépe odstraníte pomocí `Condition` atribut a ne pomocí deklarace vlastnost, jejíž výchozí hodnota se dá přepsat v příkazovém řádku. Například použít
 
 ```xml
 <MyProperty Condition="'$(MyProperty)' == ''">
@@ -29,7 +29,7 @@ Doporučujeme následující osvědčené postupy pro psaní skriptů nástroje 
 </MyProperty>
 ```
 
--   Při výběru položek, vyhněte se zástupné znaky. Místo toho zadejte soubory explicitně. To usnadňuje sledování chyb, které mohou nastat při přidání nebo odstranění souborů.
+- Při výběru položek, vyhněte se zástupné znaky. Místo toho zadejte soubory explicitně. To usnadňuje sledování chyb, které mohou nastat při přidání nebo odstranění souborů.
 
 ## <a name="see-also"></a>Viz také:
 - [Rozšířené koncepty](../msbuild/msbuild-advanced-concepts.md)

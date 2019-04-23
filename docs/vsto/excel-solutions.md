@@ -26,12 +26,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f96543c3f2cca5c067eea4af4b14bc67d7d129c7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 69616c4406e6a608e406e479e5fc2de2dcbc2844
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56600537"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041514"
 ---
 # <a name="excel-solutions"></a>řešení pro aplikaci Excel
   Visual Studio obsahuje šablony projektů, které lze použít k vytvoření přizpůsobení na úrovni dokumentu a doplňky VSTO pro aplikaci Microsoft Office Excel. Tato řešení můžete použít k automatizaci aplikace Excel, rozšíření funkcí aplikace Excel a přizpůsobení uživatelského rozhraní (UI) aplikace Excel. Další informace o rozdílech mezi přizpůsobení na úrovni dokumentu a doplňky VSTO najdete v tématu [přehled vývoje řešení pro Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).
@@ -43,20 +43,20 @@ ms.locfileid: "56600537"
 
  Toto téma poskytuje následující informace:
 
--   [Automatizace aplikace Excel](#automating).
+- [Automatizace aplikace Excel](#automating).
 
--   [Vývoj přizpůsobení na úrovni dokumentu pro Excel](#doclevel).
+- [Vývoj přizpůsobení na úrovni dokumentu pro Excel](#doclevel).
 
--   [Vývoj doplňků VSTO pro Excel](#applevel).
+- [Vývoj doplňků VSTO pro Excel](#applevel).
 
--   [Přizpůsobení uživatelského rozhraní aplikace Excel](#UI).
+- [Přizpůsobení uživatelského rozhraní aplikace Excel](#UI).
 
-##  <a name="automating"></a> Automatizace aplikace Excel
+## <a name="automating"></a> Automatizace aplikace Excel
  Model objektů aplikace Excel poskytuje mnoho typů, které můžete použít k automatizaci aplikace Excel. Například můžete programově vytvářet grafy, formátování listů a nastavte hodnoty rozsahů a buněk. Další informace najdete v tématu [přehled modelu objektů aplikace Excel](../vsto/excel-object-model-overview.md).
 
  Při vývoji řešení pro aplikaci Excel v sadě Visual Studio, můžete použít také *hostovat položky* a *hostování ovládacích prvků* ve vašich řešeních. Jedná se o objekty, které rozšiřují některé běžně používané objekty v objektovém modelu Excelu, jako <xref:Microsoft.Office.Interop.Excel.Worksheet> a <xref:Microsoft.Office.Interop.Excel.Range> objekty. Rozšířené objekty se chovají jako objekty aplikace Excel, které jsou založeny na, ale přidávají další události a možnosti vázání dat na objekty. Další informace najdete v tématu [automatizace aplikace Excel s použitím rozšířených objektů](../vsto/automating-excel-by-using-extended-objects.md).
 
-##  <a name="doclevel"></a> Vývoj přizpůsobení na úrovni dokumentu pro Excel
+## <a name="doclevel"></a> Vývoj přizpůsobení na úrovni dokumentu pro Excel
  Přizpůsobení úrovni dokumentu pro aplikaci Microsoft Office Excel se skládá ze sestavení, který je spojen s konkrétním sešitu. Sestavení obvykle rozšiřuje sešit přizpůsobením uživatelského rozhraní a automatizací aplikace Excel. Na rozdíl od doplňku VSTO, které je spojeno s Excelem, sama, funkce, kterou implementujete ve vlastním nastavení je k dispozici pouze v případě, že je přidružený sešit otevřít v aplikaci Excel.
 
  Vytvoření projektu přizpůsobení na úrovni dokumentu pro Excel, použijte Excelový sešit nebo šablony projektů šablona aplikace Excel v **nový projekt** dialogové okno sady Visual Studio. Další informace najdete v tématu [jak: Vytvářet projekty pro Office v sadě Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
@@ -68,7 +68,7 @@ ms.locfileid: "56600537"
 
  Další informace o těchto generované třídy a další funkce můžete použít v projektu úrovni dokumentu naleznete v tématu [programování přizpůsobení na úrovni dokumentu](../vsto/programming-document-level-customizations.md).
 
-##  <a name="applevel"></a> Vývoj doplňků VSTO pro Excel
+## <a name="applevel"></a> Vývoj doplňků VSTO pro Excel
  Doplňku VSTO pro Microsoft Office Excelu obsahuje sestavení, který je načten v Excelu. Sestavení obvykle rozšiřuje aplikaci Excel, přizpůsobením uživatelského rozhraní a automatizací aplikace Excel. Na rozdíl od přizpůsobení úrovni dokumentu, který je přidružen konkrétní sešitu, není omezen na libovolný jednoho sešit funkce, kterou implementujete v doplňku VSTO.
 
  Vytvoření projektu doplňku VSTO pro Excel, použijte Excelový sešit nebo šablony projektů šablona aplikace Excel v **nový projekt** dialogové okno sady Visual Studio. Další informace najdete v tématu [jak: Vytvářet projekty pro Office v sadě Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
@@ -80,7 +80,7 @@ ms.locfileid: "56600537"
 
  Další informace o `ThisAddIn` třídy a dalšími funkcemi sady Visual Studio můžete použít v VSTO Add-in, naleznete v tématu [Program doplňků VSTO](../vsto/programming-vsto-add-ins.md).
 
-##  <a name="UI"></a> Přizpůsobení uživatelského rozhraní aplikace Excel
+## <a name="UI"></a> Přizpůsobení uživatelského rozhraní aplikace Excel
  Existuje několik různých způsobů přizpůsobení uživatelského rozhraní aplikace Excel. Některé možnosti jsou dostupné pro všechny typy projektů a další možnosti jsou k dispozici pouze pro doplňky VSTO nebo přizpůsobení na úrovni dokumentu.
 
 ### <a name="options-for-all-project-types"></a>Možnosti pro všechny typy projektů

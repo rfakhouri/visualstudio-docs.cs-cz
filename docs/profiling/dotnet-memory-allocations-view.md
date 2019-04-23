@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c70845547da5f16aa0744f522448880605ec2ff9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 7e6bead46c52ed2bc33572e0eacc6f3f0219e72e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56626801"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040379"
 ---
 # <a name="net-memory-allocations-view"></a>Přidělení paměti .NET – zobrazení
 Zobrazení přidělení jsou uvedeny typy, které byly vytvořeny během spuštění profilování. Každý typ je kořenový uzel stromu volání, která zobrazuje cesty spuštění funkce, z kterých vzniklo přidělení typu.
@@ -36,7 +36,7 @@ Zobrazení přidělení jsou uvedeny typy, které byly vytvořeny během spušt�
 ## <a name="highlight-the-execution-hot-path"></a>Zvýrazněte provádění kritickou cestu
  Můžete najít cestu provádění volání stromu, který vytvořili většinu objektů z nadřazeného typu.
 
--   Zobrazení Nejaktivnější cesty, klikněte pravým tlačítkem na typ nebo funkci a pak klikněte na **rozbalit kritickou cestu**.
+- Zobrazení Nejaktivnější cesty, klikněte pravým tlačítkem na typ nebo funkci a pak klikněte na **rozbalit kritickou cestu**.
 
 |Sloupec|Popis|
 |------------|-----------------|

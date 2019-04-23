@@ -9,12 +9,12 @@ ms.assetid: 3b864c75-2699-48c1-a2b4-9651f108c267
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dfd565deb8336346e127e084b720f391440dc6e4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a82479fabda0cd64e977af01f87492563a02853f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928800"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60037839"
 ---
 # <a name="how-to-manually-create-a-load-test-performance-report-using-microsoft-word"></a>Postupy: Ruční vytvoření sestavy výkonu zátěžového testu pomocí aplikace Microsoft Word
 
@@ -30,27 +30,27 @@ Sestavy zátěžového testu aplikace Microsoft Word můžete vytvořit ručně 
 
 ## <a name="copy-summary-view-data"></a>Kopírování dat souhrnného zobrazení
 
-1.  V **výsledky zátěžového testu**, pokud se souhrnné zobrazení aktuálně nezobrazí, klikněte na tlačítko **souhrnu** na panelu nástrojů.
+1. V **výsledky zátěžového testu**, pokud se souhrnné zobrazení aktuálně nezobrazí, klikněte na tlačítko **souhrnu** na panelu nástrojů.
 
-2.  V souhrnném zobrazení klikněte pravým tlačítkem a vyberte **Vybrat vše**.
+2. V souhrnném zobrazení klikněte pravým tlačítkem a vyberte **Vybrat vše**.
 
-3.  V souhrnném zobrazení klikněte pravým tlačítkem a vyberte **kopírování**. Tím zkopírujete data souhrnného zobrazení ve formátu HTML do schránky.
+3. V souhrnném zobrazení klikněte pravým tlačítkem a vyberte **kopírování**. Tím zkopírujete data souhrnného zobrazení ve formátu HTML do schránky.
 
-4.  V aplikaci Microsoft Word vložte data souhrnného zobrazení do požadovaného umístění.
+4. V aplikaci Microsoft Word vložte data souhrnného zobrazení do požadovaného umístění.
 
-5.  Nyní lze upravit, formátovat a mazat aspekty zkopírovaného obsahu podle potřeb vytváření sestav.
+5. Nyní lze upravit, formátovat a mazat aspekty zkopírovaného obsahu podle potřeb vytváření sestav.
 
 ## <a name="copy-graph-view-data"></a>Kopírování dat zobrazení grafu
 
-1.  V **výsledky zátěžového testu**, pokud se rozhodnou grafy zobrazení není zobrazen, **grafy** na panelu nástrojů.
+1. V **výsledky zátěžového testu**, pokud se rozhodnou grafy zobrazení není zobrazen, **grafy** na panelu nástrojů.
 
-2.  (Volitelné) Přibližte konkrétní graf, který chcete zkopírovat do dokumentu Microsoft Wordu, jak je znázorněno na následujícím obrázku. Další informace najdete v tématu [jak: Přiblížení oblasti grafu](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md).
+2. (Volitelné) Přibližte konkrétní graf, který chcete zkopírovat do dokumentu Microsoft Wordu, jak je znázorněno na následujícím obrázku. Další informace najdete v tématu [jak: Přiblížení oblasti grafu](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md).
 
      ![Ovládací prvek lupy grafu zobrazit](../test/media/ltest_zoomcontrol.png)
 
-3.  V grafu, který chcete zkopírovat do dokumentu aplikace Microsoft Word, klikněte pravým tlačítkem a vyberte **kopírování**.
+3. V grafu, který chcete zkopírovat do dokumentu aplikace Microsoft Word, klikněte pravým tlačítkem a vyberte **kopírování**.
 
-4.  V aplikaci Microsoft Word vložte graf a přidružená tabulková data do požadovaného umístění.
+4. V aplikaci Microsoft Word vložte graf a přidružená tabulková data do požadovaného umístění.
 
     > [!WARNING]
     > Graf nelze zkopírovat ze vzdálené plochy a vložit jej do jiného počítače, protože budou zkopírovány pouze informace o tabulce, která je přidružena ke grafu, a nikoli obraz grafu. Obraz grafu je uložen v dočasném adresáři v počítači, ze kterého byl zkopírován, a druhý počítač nemůže přes ukazatel přistoupit k tomuto adresáři.

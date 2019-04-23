@@ -10,12 +10,12 @@ ms.assetid: 6b151891-c06d-40b1-9867-42298caa8492
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e247192b19e8ae2e2037281f4f89631d2ea78605
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 4695e5f866ce9161ca9f90a0f39be441f5d71a44
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54795754"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039211"
 ---
 # <a name="getting-started-with-language-service-and-editor-extensions"></a>Začínáme s rozšířeními pro služby jazyka a editor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -84,9 +84,9 @@ Rozšíření editoru slouží k přidání služby jazykové vlastnosti zahrnuj
   
  Můžete také vytvořit editor komponent MEF z rozšíření sady Visual Studio balíček. Najdete v následujících návodech podrobnosti:  
   
--   [Návod: Použití příkazů prostředí s rozšířením editoru](../extensibility/walkthrough-using-a-shell-command-with-an-editor-extension.md)  
+- [Návod: Použití příkazů prostředí s rozšířením editoru](../extensibility/walkthrough-using-a-shell-command-with-an-editor-extension.md)  
   
--   [Návod: Pomocí klávesové zkratky s rozšířením editoru](../extensibility/walkthrough-using-a-shortcut-key-with-an-editor-extension.md)  
+- [Návod: Pomocí klávesové zkratky s rozšířením editoru](../extensibility/walkthrough-using-a-shortcut-key-with-an-editor-extension.md)  
   
 ## <a name="see-also"></a>Viz také  
  [Rozšiřovací body služeb jazyka a editoru](../extensibility/language-service-and-editor-extension-points.md)

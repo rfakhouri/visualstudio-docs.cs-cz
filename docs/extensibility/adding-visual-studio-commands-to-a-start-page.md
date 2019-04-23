@@ -12,12 +12,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 7533d2217682b7be2b48c7aa3a5943c270de5a1a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 8461fdd3fd0aaedbbdd770a4e2762c4912c3ce0d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56722418"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040156"
 ---
 # <a name="add-visual-studio-commands-to-a-start-page"></a>Přidání příkazů sady Visual Studio pro úvodní stránku
 
@@ -73,15 +73,15 @@ Můžete použít `vscom:` alias vytvoření vazby mezi příkazy sady Visual St
 
 ### <a name="to-call-a-command-from-an-assembly"></a>Volání příkazu ze sestavení
 
-1.  Ve vašem řešení přidejte odkaz na sestavení.
+1. Ve vašem řešení přidejte odkaz na sestavení.
 
-2.  V horní části *StartPage.xaml* souboru přidejte direktivu oboru názvů pro sestavení, jak je znázorněno v následujícím příkladu.
+2. V horní části *StartPage.xaml* souboru přidejte direktivu oboru názvů pro sestavení, jak je znázorněno v následujícím příkladu.
 
     ```xml
     xmlns:vsc="clr-namespace:WebUserControl;assembly=WebUserControl"
     ```
 
-3.  Vyvolat příkaz tak, že nastavíte `Command` vlastnosti objektu XAML, jak je znázorněno v následujícím příkladu.
+3. Vyvolat příkaz tak, že nastavíte `Command` vlastnosti objektu XAML, jak je znázorněno v následujícím příkladu.
 
      Xaml
 

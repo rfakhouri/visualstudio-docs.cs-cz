@@ -33,12 +33,12 @@ caps.latest.revision: 40
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: da57824eb467bf1691175a80d74cc61b8f181617
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2a8bc2e1f4c78e32db6fa5e09ec50bdd182f4fa6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54790904"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040961"
 ---
 # <a name="managing-exceptions-with-the-debugger"></a>Správa výjimek pomocí ladicího programu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,11 +47,11 @@ Výjimkou je údaj o chybovém stavu, ke které dojde při spuštění programu.
   
  Když dojde k výjimce, ladicí program zapíše zprávu o výjimce do okna výstup. To může přerušit provádění, v následujících případech:  
   
--   Výjimku při vyvolání a není zpracována.  
+- Výjimku při vyvolání a není zpracována.  
   
--   Pokud ladicí program nastavená na přerušit běh, okamžitě, když je vyvolána výjimka, před vyvoláním libovolné obslužné rutiny.  
+- Pokud ladicí program nastavená na přerušit běh, okamžitě, když je vyvolána výjimka, před vyvoláním libovolné obslužné rutiny.  
   
--   Pokud jste nastavili [pouze můj kód](../debugger/just-my-code.md), a ladicí program na přerušení na jakékoli výjimce, která není ošetřena v uživatelském kódu.  
+- Pokud jste nastavili [pouze můj kód](../debugger/just-my-code.md), a ladicí program na přerušení na jakékoli výjimce, která není ošetřena v uživatelském kódu.  
   
 > [!NOTE]
 >  Technologie ASP.NET obsahuje obslužnou rutinu výjimky nejvyšší úrovně, která se zobrazí chybové stránky v prohlížeči. To není přerušit provádění, není-li **pouze můj kód** zapnutý. Příklad najdete v tématu [nastavení ladicího programu, pokračujte na uživatelem neošetřené výjimky](../debugger/managing-exceptions-with-the-debugger.md#BKMK_UserUnhandled) níže.  
@@ -141,7 +141,7 @@ Výjimkou je údaj o chybovém stavu, ke které dojde při spuštění programu.
   
    ![Obnovit výchozí nastavení v nastavení výjimek](../debugger/media/restoredefaultexceptions.png "RestoreDefaultExceptions")  
   
-###  <a name="BKMK_UserUnhandled"></a> Nastavení ladicího programu, pokračujte na výjimkách neošetřených uživatelem  
+### <a name="BKMK_UserUnhandled"></a> Nastavení ladicího programu, pokračujte na výjimkách neošetřených uživatelem  
  Pokud ladíte kód .NET nebo JavaScript s [pouze můj kód](../debugger/just-my-code.md), můžete říct, aby ladicí program není pozastavte běh při výjimkách, které nejsou zpracovány v uživatelském kódu, ale jsou zpracovány někde jinde.  
   
 1. V **nastavení výjimek** okno, otevřete místní nabídku v okně pravým tlačítkem a výběrem **zobrazit sloupce**. (Pokud jste nevypnuli **pouze můj kód**, tento příkaz nezobrazí.)  

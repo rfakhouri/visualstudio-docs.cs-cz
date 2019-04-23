@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be702dcd19506e6da8fb1e291aa5262dbf4399b2
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 5a904bfcf147d72dde16ffe0fbf9e754c2c356bb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55018446"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60037817"
 ---
 # <a name="how-to-display-and-hide-register-groups-c-c-visual-basic-f"></a>Postupy: Zobrazení a skrytí nabídky registrovat skupiny (C#, C++, Visual Basic, F#)
 
@@ -37,9 +37,9 @@ Pro přehlednost, **zaregistruje** okno uspořádá registry do skupiny. Pokud k
 
 ## <a name="display-or-hide-register-groups"></a>Zobrazení nebo skrytí nabídky registrovat skupiny
 
-1.  Klikněte pravým tlačítkem myši **zaregistruje** okna.
+1. Klikněte pravým tlačítkem myši **zaregistruje** okna.
 
-2.  V místní nabídce vyberte registrovat skupiny, které chcete zobrazit nebo skrýt.
+2. V místní nabídce vyberte registrovat skupiny, které chcete zobrazit nebo skrýt.
 
      Registrovat skupiny, které nejsou podporované, kterou ladíte na hardware jsou zakázané v místní nabídce, nelze vybrat.
 

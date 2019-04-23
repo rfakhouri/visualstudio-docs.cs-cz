@@ -11,12 +11,12 @@ helpviewer_keywords:
 ms.assetid: a0df5b9c-0932-4e54-86f0-28530ad9d684
 caps.latest.revision: 22
 manager: jillfra
-ms.openlocfilehash: 001af82f976728b55d2f3b2c3f47d3f39a9e2e73
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 662ee0ba4659e09b02f120bac5b3eaa728add6d9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57869309"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60037892"
 ---
 # <a name="creating-your-own-start-page"></a>Vytvoření vlastní úvodní stránky
 Pomocí šablony projektu stránka Start nebo tak, že vytvoříte prázdnou stránku spuštění můžete vytvořit vlastní úvodní stránky.  
@@ -28,22 +28,22 @@ Pomocí šablony projektu stránka Start nebo tak, že vytvoříte prázdnou str
   
 #### <a name="to-create-a-custom-start-page-by-using-the-start-page-project-template"></a>Chcete-li vytvořit vlastní úvodní stránky pomocí šablony projektu úvodní stránka  
   
-1.  Stáhněte a nainstalujte [šablonu projektu úvodní stránka](http://go.microsoft.com/fwlink/?LinkId=186204) z Galerie sady Visual Studio.  
+1. Stáhněte a nainstalujte [šablonu projektu úvodní stránka](http://go.microsoft.com/fwlink/?LinkId=186204) z Galerie sady Visual Studio.  
   
     > [!WARNING]
     >  V tuto chvíli se neupgradovala šablony projektů Visual Studio 2010 úvodní stránku. Informace o tom, jak upgradovat tuto šablonu naleznete v tématu [jak: Vlastní úvodní stránku sady Visual Studio upgradovat](../misc/how-to-upgrade-a-visual-studio-custom-start-page.md).  
   
-2.  Po instalaci šablony, vytvořte nový projekt úvodní stránka s ním.  
+2. Po instalaci šablony, vytvořte nový projekt úvodní stránka s ním.  
   
-3.  V levém podokně dialogového okna Nový projekt v rámci **nainstalované šablony**, rozbalte **ostatní typy projektů** uzlu a pak klikněte na tlačítko **rozšiřitelnost**.  
+3. V levém podokně dialogového okna Nový projekt v rámci **nainstalované šablony**, rozbalte **ostatní typy projektů** uzlu a pak klikněte na tlačítko **rozšiřitelnost**.  
   
-4.  V prostředním podokně klikněte na tlačítko **vlastní úvodní stránku**a poté pojmenujte svůj projekt a klikněte na tlačítko **OK**.  
+4. V prostředním podokně klikněte na tlačítko **vlastní úvodní stránku**a poté pojmenujte svůj projekt a klikněte na tlačítko **OK**.  
   
      Visual Studio vytvoří projekt úvodní stránku, který je kompletní kopie sady Visual Studio úvodní stránky.  
   
-5.  Z **Průzkumníka řešení**, otevřete **StartPage.xaml**.  
+5. Z **Průzkumníka řešení**, otevřete **StartPage.xaml**.  
   
-6.  Edit StartPage.xaml.  
+6. Edit StartPage.xaml.  
   
      Práci můžete zobrazit stisknutím klávesy F5 spustíte experimentální instanci sady Visual Studio s vlastní úvodní stránky nainstalované.  
   

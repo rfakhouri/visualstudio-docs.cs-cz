@@ -11,12 +11,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f5aa84c4f7a39a5e5b7a1ee3458c09397bc81f37
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1cd9619eae1f0c74cb7b8096d6c51163157d934c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54799282"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042051"
 ---
 # <a name="develop-tests-from-a-model"></a>Vývoj testů z modelu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,17 +46,17 @@ Požadavky a architektury modely můžete pomoci vám organizovat testy systému
   
  Tyto pokyny mohou být užitečné:  
   
--   Každý případ použití by měl mít několik testů pro hlavní cesty a mimořádných výsledků.  
+- Každý případ použití by měl mít několik testů pro hlavní cesty a mimořádných výsledků.  
   
--   Když popíšete případ použití v modelu požadavky, je důležitější k definování jeho neplatná následná, to znamená, cíl, který je dosaženo, než k podrobnému popisu, postupy uživatel sleduje, aby bylo možné dosáhnout. Neplatná následná objednávky pokrmu může být například, který restaurace připravuje pokrmu zákazníka a že má zákazník zaplatí. Neplatná následná je kritérium, které testy by měly ověřit.  
+- Když popíšete případ použití v modelu požadavky, je důležitější k definování jeho neplatná následná, to znamená, cíl, který je dosaženo, než k podrobnému popisu, postupy uživatel sleduje, aby bylo možné dosáhnout. Neplatná následná objednávky pokrmu může být například, který restaurace připravuje pokrmu zákazníka a že má zákazník zaplatí. Neplatná následná je kritérium, které testy by měly ověřit.  
   
--   Základní samostatných testů na samostatné klauzulí neplatná následná. Například vytvořte samostatné testy pro oznamování restaurace pořadí a pro provádění platby od zákazníka. Toto oddělení má tyto výhody:  
+- Základní samostatných testů na samostatné klauzulí neplatná následná. Například vytvořte samostatné testy pro oznamování restaurace pořadí a pro provádění platby od zákazníka. Toto oddělení má tyto výhody:  
   
-    -   Změny v různých aspektů požadavky dochází často nezávisle na sobě. Oddělením testů na různé aspekty tímto způsobem můžete usnadnit Neaktualizovat testy při změně požadavků.  
+    - Změny v různých aspektů požadavky dochází často nezávisle na sobě. Oddělením testů na různé aspekty tímto způsobem můžete usnadnit Neaktualizovat testy při změně požadavků.  
   
-    -   Pokud plán vývoje implementuje jeden aspekt jejich případu použití dříve než jiné, můžete povolit testy samostatně v průběhu vývoje.  
+    - Pokud plán vývoje implementuje jeden aspekt jejich případu použití dříve než jiné, můžete povolit testy samostatně v průběhu vývoje.  
   
--   Při návrhu testy oddělte od kódu nebo skript, který určuje, zda bylo dosaženo neplatná následná volba testovací data. Například může být testovací jednoduché aritmetické funkce: Vstup 4; Ověřte, zda výstup je 2. Místo toho navrhněte skript jako: Zvolte vstupní; vynásobit výstup samostatně a ověřte, že výsledek je původní vstup. Tento styl umožňuje měnit testovací vstupy beze změny hlavní části testu.  
+- Při návrhu testy oddělte od kódu nebo skript, který určuje, zda bylo dosaženo neplatná následná volba testovací data. Například může být testovací jednoduché aritmetické funkce: Vstup 4; Ověřte, zda výstup je 2. Místo toho navrhněte skript jako: Zvolte vstupní; vynásobit výstup samostatně a ověřte, že výsledek je původní vstup. Tento styl umožňuje měnit testovací vstupy beze změny hlavní části testu.  
   
 #### <a name="linking-tests-to-use-cases"></a>Propojení testy s případy použití  
  Pokud používáte [!INCLUDE[TCMlong](../includes/tcmlong-md.md)] k navrhování a spuštění testů, můžete uspořádat testy v rámci požadavků, případu použití nebo uživatelské scénáře pracovních položek. Můžete propojit tyto pracovní položky s případy použití v modelu. To vám umožní rychle trasování požadavky na změny na testy a umožňuje sledovat průběh každého případu použití.  
@@ -147,32 +147,32 @@ Assert (countAfter == countBefore = 1);
   
  Z testování pohledu se dají považovat za zkratka pro testy model požadavků. Proto je důležité zachovat vztah mezi testy a modelu v celém projektu.  
   
-##  <a name="Attaching"></a> Připojení testovací případy k elementům modelu  
+## <a name="Attaching"></a> Připojení testovací případy k elementům modelu  
  Pokud váš projekt používá [!INCLUDE[TCMlong](../includes/tcmlong-md.md)], testy můžete propojit s prvky v modelu. To vám umožní rychle najít testy ovlivněné změnou v požadavcích a umožňuje sledovat v rozsahu, do které byl proveden požadavek.  
   
  Testy můžete propojit všechny druhy elementu. Následuje několik příkladů:  
   
--   Propojení případu použití s testy výkonu.  
+- Propojení případu použití s testy výkonu.  
   
--   Zápis klauzule neplatná následná případu použití, nebo cílem, do komentářů, které jsou propojeny s případu použití a propojit testy se všechny komentáře.  
+- Zápis klauzule neplatná následná případu použití, nebo cílem, do komentářů, které jsou propojeny s případu použití a propojit testy se všechny komentáře.  
   
--   Zápis invariantní pravidla v komentářích v diagramech tříd nebo diagramy činnosti a propojují se s testy.  
+- Zápis invariantní pravidla v komentářích v diagramech tříd nebo diagramy činnosti a propojují se s testy.  
   
--   Propojit testy do diagramu činnosti nebo do jednotlivých aktivit.  
+- Propojit testy do diagramu činnosti nebo do jednotlivých aktivit.  
   
--   Součásti či subsystém, který ověřuje propojte testovací sady.  
+- Součásti či subsystém, který ověřuje propojte testovací sady.  
   
 #### <a name="to-link-tests-to-a-model-element-or-relationship"></a>Propojení prvku modelu nebo vztah testy  
   
-1.  V [!INCLUDE[TCMlong](../includes/tcmlong-md.md)], vytvořit požadavek a základní sadu testů v něm. Další informace o to udělat najdete v tématu [testování aplikace](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac).  
+1. V [!INCLUDE[TCMlong](../includes/tcmlong-md.md)], vytvořit požadavek a základní sadu testů v něm. Další informace o to udělat najdete v tématu [testování aplikace](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac).  
   
      Je požadavek, který vytvoříte pracovní položku v [!INCLUDE[vstsTfsShort](../includes/vststfsshort-md.md)]. Může být uživatelský scénář, požadavek nebo případ použití pracovní položky, v závislosti na šabloně procesu, který váš projekt používá s [!INCLUDE[esprfound](../includes/esprfound-md.md)]. Další informace najdete v tématu [sledování práce pomocí Visual Studio Team Services nebo Team Foundation Server](http://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503).  
   
-2.  Propojte pracovní položky požadavku na jeden nebo více prvků ve vašem modelu.  
+2. Propojte pracovní položky požadavku na jeden nebo více prvků ve vašem modelu.  
   
      V diagramu modelování, klikněte pravým tlačítkem na elementu, komentáře nebo relaci a potom klikněte na **odkaz na pracovní položku**. Další informace najdete v tématu [propojení prvků modelu a pracovních položek](../modeling/link-model-elements-and-work-items.md).  
   
-3.  Přidejte do testovací sady, testovací případy, které ověřují požadavek vyjádřené v elementu modelu.  
+3. Přidejte do testovací sady, testovací případy, které ověřují požadavek vyjádřené v elementu modelu.  
   
 ## <a name="see-also"></a>Viz také  
  [Vytváření modelů pro aplikaci](../modeling/create-models-for-your-app.md)   

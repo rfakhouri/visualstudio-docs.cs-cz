@@ -11,12 +11,12 @@ ms.date: 11/11/2016
 ms.author: ghogen
 ms.prod: visual-studio-dev14
 ms.technology: vs-azure
-ms.openlocfilehash: ab9a645ac5bb656336ff38114987ff3838c416f9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f9f81b91e0593d42e7792d7596648dc53afd8dd6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54774443"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039398"
 ---
 # <a name="optimizing-your-azure-code"></a>Optimalizace kódu Azure
 Pokud programujete aplikace, které využívají Microsoft Azure, existují některé postupy psaní kódu, které byste měli postupovat, která pomáhá zabránit problémům s aplikací škálovatelnost, chování a výkon v cloudovém prostředí. Společnost Microsoft poskytuje nástroj Azure analýzy kódu, který rozpozná a některé z těchto problémů obvykle zjistil identifikuje a pomáhá vám je vyřešit. Můžete stáhnout nástroj v sadě Visual Studio prostřednictvím balíčku NuGet.
@@ -216,6 +216,7 @@ while (true)
    }
 }
 ```
+
 ## <a name="consider-using-asynchronous-service-bus-methods"></a>Zvažte použití asynchronních metod služby Service Bus
 ### <a name="id"></a>ID
 AP2003

@@ -6,19 +6,19 @@ ms.author: ghogen
 ms.date: 02/01/2019
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: 5f309813c64bdb8009623847ca66721c63e7ba91
-ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
+ms.openlocfilehash: 0555aeb722132ba7b9628be9096847d45efb66ef
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59537955"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59736974"
 ---
 Pomocí sady Visual Studio můžete snadno vytvářet, ladit a spouštění kontejnerizovaných aplikací ASP.NET Core a publikujte je na Azure Container Registry (ACR), Docker Hub, Azure App Service nebo vlastního registru kontejneru. V tomto článku budeme publikovat do služby ACR.
 
 ## <a name="prerequisites"></a>Požadavky
 
 * [Desktop dockeru](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
-* [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) s **vývoj pro Web**, **nástroje Azure** úlohy, a/nebo **vývoj pro různé platformy .NET Core** nainstalovaná úloha
+* [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) s **vývoj pro Web**, **nástroje Azure** úlohy, a/nebo **vývoj pro různé platformy .NET Core** nainstalovaná úloha
 * Chcete-li publikovat do služby Azure Container Registry, předplatné Azure. [Zaregistrujte si bezplatnou zkušební verzi](https://azure.microsoft.com/offers/ms-azr-0044p/).
 
 ## <a name="installation-and-setup"></a>Instalace a nastavení

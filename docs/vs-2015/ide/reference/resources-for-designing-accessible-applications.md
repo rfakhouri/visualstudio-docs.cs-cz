@@ -14,12 +14,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0ed7f7106b22cabc2e30c4f979aacda1823ea7d8
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 140aaa93272f6c10bb85a405cb2f875f2b6b464a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59651929"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60037522"
 ---
 # <a name="resources-for-designing-accessible-applications"></a>Prostředky pro navržení aplikací usnadňujících přístup
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -28,33 +28,33 @@ Použijte na následujících odkazech najdete informace o technologiích, kter�
   
 ## <a name="technologies"></a>Technologie  
   
--   **Microsoft Active Accessibility** založený na modelu COM A technologie, která usnadňuje přístupnost způsob pomůcky práce k aplikacím běžícím v Microsoft Windows. Umožňuje dynamické knihovny, které jsou součástí operačního systému, jakož i rozhraní modelu COM a programovací prvky aplikace, které poskytují spolehlivé metody pro odhalení informací o prvky uživatelského rozhraní. Další informace najdete na webu [http://msdn.microsoft.com/library/windows/desktop/dd373592(v=vs.85).aspx](http://msdn.microsoft.com/library/windows/desktop/dd373592\(v=vs.85\).aspx).  
+- **Microsoft Active Accessibility** založený na modelu COM A technologie, která usnadňuje přístupnost způsob pomůcky práce k aplikacím běžícím v Microsoft Windows. Umožňuje dynamické knihovny, které jsou součástí operačního systému, jakož i rozhraní modelu COM a programovací prvky aplikace, které poskytují spolehlivé metody pro odhalení informací o prvky uživatelského rozhraní. Další informace najdete na webu [http://msdn.microsoft.com/library/windows/desktop/dd373592(v=vs.85).aspx](http://msdn.microsoft.com/library/windows/desktop/dd373592\(v=vs.85\).aspx).  
   
--   **Technologie Microsoft .NET řeči** sadou SDK pro řeč Microsoft .NET je sada Microsoft [!INCLUDE[vstecasp](../../includes/vstecasp-md.md)] ovládací prvky, doplněk Microsoft Internet Explorer řeči, ukázkové aplikace a dokumentace, která umožňuje vývojářům vytvářet, ladit a nasazení podporou hlasových [!INCLUDE[vstecasp](../../includes/vstecasp-md.md)] aplikací. Nástroje jsou bezproblémově integrovány do aplikace Microsoft Visual Studio, umožní vývojářům využít v dobře známém prostředí. Další informace najdete na webu [http://msdn.microsoft.com/library/ms950383.aspx](http://msdn.microsoft.com/library/ms950383.aspx).  
+- **Technologie Microsoft .NET řeči** sadou SDK pro řeč Microsoft .NET je sada Microsoft [!INCLUDE[vstecasp](../../includes/vstecasp-md.md)] ovládací prvky, doplněk Microsoft Internet Explorer řeči, ukázkové aplikace a dokumentace, která umožňuje vývojářům vytvářet, ladit a nasazení podporou hlasových [!INCLUDE[vstecasp](../../includes/vstecasp-md.md)] aplikací. Nástroje jsou bezproblémově integrovány do aplikace Microsoft Visual Studio, umožní vývojářům využít v dobře známém prostředí. Další informace najdete na webu [http://msdn.microsoft.com/library/ms950383.aspx](http://msdn.microsoft.com/library/ms950383.aspx).  
   
--   **Principy SÁMŠTINA 1.0** technologie Microsoft synchronizované přístupné média Interchange (SAMI) umožňuje vývojářům titulek zvukový obsah pro PC multimédia. Další informace najdete na webu [http://msdn.microsoft.com/library/ms971327.aspx](http://msdn.microsoft.com/library/ms971327.aspx).  
+- **Principy SÁMŠTINA 1.0** technologie Microsoft synchronizované přístupné média Interchange (SAMI) umožňuje vývojářům titulek zvukový obsah pro PC multimédia. Další informace najdete na webu [http://msdn.microsoft.com/library/ms971327.aspx](http://msdn.microsoft.com/library/ms971327.aspx).  
   
 ## <a name="windows-applications"></a>Aplikace Windows  
   
--   [Návod: Vytvoření aplikace založené na Windows přístupné](http://msdn.microsoft.com/library/654c7f2f-1586-480b-9f12-9d9b8f5cc32b) Toto téma obsahuje podrobné pokyny, včetně pět požadavků usnadnění přístupu pro logo Certified pro Windows v ukázkové aplikaci Windows.  
+- [Návod: Vytvoření aplikace založené na Windows přístupné](http://msdn.microsoft.com/library/654c7f2f-1586-480b-9f12-9d9b8f5cc32b) Toto téma obsahuje podrobné pokyny, včetně pět požadavků usnadnění přístupu pro logo Certified pro Windows v ukázkové aplikaci Windows.  
   
--   **Pokyny pro návrh uživatelského rozhraní klávesnice** Tento technický článek popisuje, jak můžete návrhu uživatel aplikace Windows rozhraní, které uživatelé přecházejí z klávesnice. Další informace najdete na webu [http://msdn2.microsoft.com/library/ms971323.aspx](http://msdn2.microsoft.com/library/ms971323.aspx).  
+- **Pokyny pro návrh uživatelského rozhraní klávesnice** Tento technický článek popisuje, jak můžete návrhu uživatel aplikace Windows rozhraní, které uživatelé přecházejí z klávesnice. Další informace najdete na webu [http://msdn2.microsoft.com/library/ms971323.aspx](http://msdn2.microsoft.com/library/ms971323.aspx).  
   
--   **Konzole usnadnění** Tento technický článek popisuje rozhraní API a události použité k vystavení konzoly ve Windows XP pro usnadnění. Další informace najdete na webu [http://msdn2.microsoft.com/library/ms971319.aspx](http://msdn2.microsoft.com/library/ms971319.aspx).  
+- **Konzole usnadnění** Tento technický článek popisuje rozhraní API a události použité k vystavení konzoly ve Windows XP pro usnadnění. Další informace najdete na webu [http://msdn2.microsoft.com/library/ms971319.aspx](http://msdn2.microsoft.com/library/ms971319.aspx).  
   
 ## <a name="web-sites"></a>Weby  
   
--   [Návod: Pokyny pro usnadnění přístupu pomocí ovládacích prvků obrázek, ovládací prvky nabídky a AutoPostBack](http://msdn.microsoft.com/library/ff7b5021-48b3-46bf-921f-9fe1e0e32202) Toto téma obsahuje podrobné pokyny, včetně dostupné ovládací prvky v ukázkové webové stránky, jakož i některé tipy k usnadnění přístupu návrhu pro Web.  
+- [Návod: Pokyny pro usnadnění přístupu pomocí ovládacích prvků obrázek, ovládací prvky nabídky a AutoPostBack](http://msdn.microsoft.com/library/ff7b5021-48b3-46bf-921f-9fe1e0e32202) Toto téma obsahuje podrobné pokyny, včetně dostupné ovládací prvky v ukázkové webové stránky, jakož i některé tipy k usnadnění přístupu návrhu pro Web.  
   
--   **Zpřístupnění webové stránky více** Tento technický článek obsahuje seznam prvků jazyka HTML 3.2, které jsou k dispozici a prvky, které můžou být přístupné pro použití při vývoji webu. Další informace najdete na webu [http://msdn2.microsoft.com/library/ms971309.aspx](http://msdn2.microsoft.com/library/ms971309.aspx).  
+- **Zpřístupnění webové stránky více** Tento technický článek obsahuje seznam prvků jazyka HTML 3.2, které jsou k dispozici a prvky, které můžou být přístupné pro použití při vývoji webu. Další informace najdete na webu [http://msdn2.microsoft.com/library/ms971309.aspx](http://msdn2.microsoft.com/library/ms971309.aspx).  
   
--   **Vytvoření přístupných webových stránek pomocí DHTML** Tento technický článek obsahuje seznam prvků jazyka HTML 4.0, které jsou přístupné a dostupné tipy pro návrh webu. Další informace najdete na webu [http://msdn2.microsoft.com/library/ms528445.aspx](http://msdn2.microsoft.com/library/ms528445.aspx).  
+- **Vytvoření přístupných webových stránek pomocí DHTML** Tento technický článek obsahuje seznam prvků jazyka HTML 4.0, které jsou přístupné a dostupné tipy pro návrh webu. Další informace najdete na webu [http://msdn2.microsoft.com/library/ms528445.aspx](http://msdn2.microsoft.com/library/ms528445.aspx).  
   
--   **Alternativy text do nedostupný webové stránky** Tento technický článek popisuje, jak můžete zadat několik zobrazení stejné webové stránky, jako je například verze pouze text XML a XSLT. Další informace najdete na webu [http://msdn2.microsoft.com/library/aa468593.aspx](http://msdn2.microsoft.com/library/aa468593.aspx).  
+- **Alternativy text do nedostupný webové stránky** Tento technický článek popisuje, jak můžete zadat několik zobrazení stejné webové stránky, jako je například verze pouze text XML a XSLT. Další informace najdete na webu [http://msdn2.microsoft.com/library/aa468593.aspx](http://msdn2.microsoft.com/library/aa468593.aspx).  
   
 ### <a name="third-party-resources"></a>Materiály třetích stran  
   
--   **Web usnadnění iniciativy World Wide Web Consortium (W3C)** tento web obsahuje pokyny a postupy pro vývoj přístupný webový server. Další informace najdete na webu [http://www.w3.org/WAI/GL/](http://www.w3.org/WAI/GL/).  
+- **Web usnadnění iniciativy World Wide Web Consortium (W3C)** tento web obsahuje pokyny a postupy pro vývoj přístupný webový server. Další informace najdete na webu [http://www.w3.org/WAI/GL/](http://www.w3.org/WAI/GL/).  
   
 ## <a name="see-also"></a>Viz také  
  [Funkce sady Visual Studio pro usnadnění přístupu](../../ide/reference/accessibility-features-of-visual-studio.md)

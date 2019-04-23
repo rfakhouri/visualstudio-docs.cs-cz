@@ -13,12 +13,12 @@ author: bowdenk7
 ms.author: wilkelly
 manager: jillfra
 monikerRange: vs-2017
-ms.openlocfilehash: 88de2703db119f4124eb02658efb327df2ae899f
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 58de705d90567723f98bfb472f808da7101a624e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58790469"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041245"
 ---
 # <a name="javascript-in-visual-studio-2017"></a>JavaScript v sadě Visual Studio 2017
 
@@ -52,14 +52,14 @@ Pro kompilaci souborů JavaScript `tsconfig.json` soubor musí být přidán, a 
 
 Požadovaná nastavení pro souboru tsconfig jsou následující:
 
- - `allowJs`: Tato hodnota musí být nastavená na `true` pro soubory jazyka JavaScript, chcete-li rozpoznán. Výchozí hodnota je `false`, protože zkompiluje TypeScript pro JavaScript a kompilátor by neměl obsahovat soubory, které je zkompilován.
- - `outDir`: Tato hodnota měla nastavit na umístění není zahrnutý v projektu, aby emitovaný souborů JavaScriptu nejsou zjištěny a pak zahrnutý v projektu (viz `exclude`).
- - `module`: Pokud používáte moduly, toto nastavení instruuje kompilátor, který formát modulu emitovaný kód by měl používat (třeba `commonjs` pro uzel nebo to software instalující například Browserify).
- - `exclude`: Toto nastavení stavy které složky nechcete zahrnout do projektu.
- Umístění výstupu, jakož i mimo projekt složky jako `node_modules` nebo `temp`, by se měl přidat k tomuto nastavení.
- - `enableAutoDiscovery`: Toto nastavení umožňuje automatické zjišťování a stahování souborů definice, jak je uvedeno dříve.
- - `compileOnSave`: Toto nastavení instruuje kompilátor, pokud by měl znovu zkompilovat pokaždé, když zdrojový soubor je uložen v sadě Visual Studio.
- - `typeAcquisition`: Tuto sadu nastavení řídí chování získání automatické typu (dále vysvětlili v [v této části](/visualstudio/ide/javascript-intellisense#Auto))
+- `allowJs`: Tato hodnota musí být nastavená na `true` pro soubory jazyka JavaScript, chcete-li rozpoznán. Výchozí hodnota je `false`, protože zkompiluje TypeScript pro JavaScript a kompilátor by neměl obsahovat soubory, které je zkompilován.
+- `outDir`: Tato hodnota měla nastavit na umístění není zahrnutý v projektu, aby emitovaný souborů JavaScriptu nejsou zjištěny a pak zahrnutý v projektu (viz `exclude`).
+- `module`: Pokud používáte moduly, toto nastavení instruuje kompilátor, který formát modulu emitovaný kód by měl používat (třeba `commonjs` pro uzel nebo to software instalující například Browserify).
+- `exclude`: Toto nastavení stavy které složky nechcete zahrnout do projektu.
+Umístění výstupu, jakož i mimo projekt složky jako `node_modules` nebo `temp`, by se měl přidat k tomuto nastavení.
+- `enableAutoDiscovery`: Toto nastavení umožňuje automatické zjišťování a stahování souborů definice, jak je uvedeno dříve.
+- `compileOnSave`: Toto nastavení instruuje kompilátor, pokud by měl znovu zkompilovat pokaždé, když zdrojový soubor je uložen v sadě Visual Studio.
+- `typeAcquisition`: Tuto sadu nastavení řídí chování získání automatické typu (dále vysvětlili v [v této části](/visualstudio/ide/javascript-intellisense#Auto))
 
 Aby bylo možné převést soubory jazyka JavaScript na moduly CommonJS a umístit je do `./out` složky, můžete použít následující `tsconfig.json` souboru:
 

@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f5164ca6795811efa528db01aacf79aea250aff
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 19fbcc3db88cd020e1a4541f6cfb7f5f3acd18b3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55956685"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60037966"
 ---
 # <a name="how-to-copy-class-diagram-elements-to-a-microsoft-office-document"></a>Postupy: Kopírování elementů diagramu tříd do dokumentu Microsoft Office
 
@@ -28,15 +28,15 @@ Klikněte pravým tlačítkem myši na obrazec a zvolte **Kopírovat obrázek**.
 
 ## <a name="copy-several-elements"></a>Kopírování několik elementů
 
-1.  Vyberte tvary v diagramu, který chcete zkopírovat.
+1. Vyberte tvary v diagramu, který chcete zkopírovat.
 
-2.  Klikněte pravým tlačítkem na svůj výběr a zvolte **Kopírovat obrázek**.
+2. Klikněte pravým tlačítkem na svůj výběr a zvolte **Kopírovat obrázek**.
 
 ## <a name="copy-all-the-elements-in-a-class-diagram"></a>Zkopírování všech prvků v diagramu tříd
 
-1.  Klikněte pravým tlačítkem na plochu diagramu a zvolte **Vybrat vše**, nebo stiskněte klávesu **Ctrl + A**.
+1. Klikněte pravým tlačítkem na plochu diagramu a zvolte **Vybrat vše**, nebo stiskněte klávesu **Ctrl + A**.
 
-2.  Na **upravit** nabídce vyberte možnost **Kopírovat obrázek**.
+2. Na **upravit** nabídce vyberte možnost **Kopírovat obrázek**.
 
 Můžete také zvolit **kopírování** místo **Kopírovat obrázek**. **Kopírování** zkopíruje bitové kopie jako regulární rastrový obrázek. **Kopírovat obrázek** zkopíruje image jako vektor obrázek, který je lepší pro většinu aplikací Office.
 

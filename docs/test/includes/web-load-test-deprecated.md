@@ -1,11 +1,11 @@
 ---
 ms.topic: include
-ms.openlocfilehash: 57e03003412adf654157c635ee8fbbc9b9796f13
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: a2ceafbbd204083fc421a05488dd67185f68d9d8
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896910"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59736976"
 ---
 > [!NOTE]
-> Funkce webového výkonu a zátěžového testu je zastaralý. Visual Studio 2019 je poslední verze ve výkonu webu a zátěžové testování bude k dispozici.
+> Funkce webového výkonu a zátěžového testu je zastaralý. Visual Studio 2019 je poslední verze ve výkonu webu a zátěžové testování bude k dispozici. Další informace najdete v tématu [cloudového zátěžového testování služby konci životnosti](https://devblogs.microsoft.com/devops/cloud-based-load-testing-service-eol/) blogový příspěvek.

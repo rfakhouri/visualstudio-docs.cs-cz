@@ -1,5 +1,5 @@
 ---
-title: 'Průvodce: Vytvoření vazby ovládacích prvků obsahu do vlastní části XML'
+title: 'Návod: Vytvoření vazby ovládacích prvků obsahu do vlastní části XML'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,14 +17,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 118b97b3d8bd07eecf129b41d74785a37eae72b9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 65cadbde0cde939d45161e3b8dc69685ae31fa69
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56632924"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041615"
 ---
-# <a name="walkthrough-bind-content-controls-to-custom-xml-parts"></a>Průvodce: Vytvoření vazby ovládacích prvků obsahu do vlastní části XML
+# <a name="walkthrough-bind-content-controls-to-custom-xml-parts"></a>Návod: Vytvoření vazby ovládacích prvků obsahu do vlastní části XML
   Tento návod ukazuje, jak svázat ovládací prvky obsahu v přizpůsobení na úrovni dokumentu pro Word XML data, která je uložena v dokumentu.
 
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]
@@ -50,16 +50,16 @@ ms.locfileid: "56632924"
 ## <a name="prerequisites"></a>Požadavky
  K dokončení tohoto návodu budete potřebovat následující komponenty:
 
--   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
+- [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
--   Microsoft Word.
+- Microsoft Word.
 
 ## <a name="create-a-new-word-document-project"></a>Vytvoření nového projektu dokumentu aplikace Word
  Vytvořte dokument aplikace Word, který budete používat v tomto návodu.
 
 ### <a name="to-create-a-new-word-document-project"></a>K vytvoření nového projektu dokumentu aplikace Word
 
-1.  Vytvoření projektu dokumentu aplikace Word s názvem **EmployeeControls**. Vytvoření nového dokumentu pro řešení. Další informace najdete v tématu [jak: Vytvářet projekty pro Office v sadě Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
+1. Vytvoření projektu dokumentu aplikace Word s názvem **EmployeeControls**. Vytvoření nového dokumentu pro řešení. Další informace najdete v tématu [jak: Vytvářet projekty pro Office v sadě Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Otevře se nový dokument aplikace Word v návrháři a přidá **EmployeeControls** projektu **Průzkumníku řešení**.
 
@@ -104,17 +104,17 @@ ms.locfileid: "56632924"
 
 #### <a name="to-create-the-data-file"></a>Vytvoření datového souboru
 
-1.  Na **projektu** nabídce zvolte **přidat novou položku**.
+1. Na **projektu** nabídce zvolte **přidat novou položku**.
 
      Zobrazí se dialogové okno **Přidat novou položku**.
 
-2.  V **šablony** vyberte **soubor XML**.
+2. V **šablony** vyberte **soubor XML**.
 
-3.  Název souboru **employees.xml**a klikněte na tlačítko **přidat** tlačítko.
+3. Název souboru **employees.xml**a klikněte na tlačítko **přidat** tlačítko.
 
      **Employees.xml** soubor se otevře v editoru kódu.
 
-4.  Nahraďte obsah **employees.xml** soubor s následujícím textem.
+4. Nahraďte obsah **employees.xml** soubor s následujícím textem.
 
     ```xml
     <?xml version="1.0" encoding="utf-8" ?>
@@ -127,9 +127,9 @@ ms.locfileid: "56632924"
     </employees>
     ```
 
-5.  V **Průzkumníka řešení**, zvolte **employees.xml** souboru.
+5. V **Průzkumníka řešení**, zvolte **employees.xml** souboru.
 
-6.  V **vlastnosti** okna, vyberte **akce sestavení** vlastnost a potom změňte hodnotu na **integrovaný prostředek**.
+6. V **vlastnosti** okna, vyberte **akce sestavení** vlastnost a potom změňte hodnotu na **integrovaný prostředek**.
 
      Tento krok vloží soubor XML jako prostředek v sestavení při vytváření projektu. Umožňuje získat přístup k obsahu souboru XML v době běhu.
 
@@ -138,19 +138,19 @@ ms.locfileid: "56632924"
 
 #### <a name="to-create-an-xml-schema"></a>Vytvoření schématu XML
 
-1.  Na **projektu** nabídce zvolte **přidat novou položku**.
+1. Na **projektu** nabídce zvolte **přidat novou položku**.
 
      Zobrazí se dialogové okno **Přidat novou položku**.
 
-2.  V **šablony** vyberte **schématu XML**.
+2. V **šablony** vyberte **schématu XML**.
 
-3.  Název schématu **employees.xsd** a zvolte **přidat** tlačítko.
+3. Název schématu **employees.xsd** a zvolte **přidat** tlačítko.
 
      Otevře se Návrhář schémat.
 
-4.  V **Průzkumníka řešení**, otevřete místní nabídku pro **employees.xsd**a klikněte na tlačítko **zobrazit kód**.
+4. V **Průzkumníka řešení**, otevřete místní nabídku pro **employees.xsd**a klikněte na tlačítko **zobrazit kód**.
 
-5.  Nahraďte obsah **employees.xsd** soubor s následujícím schématu.
+5. Nahraďte obsah **employees.xsd** soubor s následujícím schématu.
 
     ```xml
     <?xml version="1.0" encoding="utf-8" ?>
@@ -181,63 +181,63 @@ ms.locfileid: "56632924"
     </xs:schema>
     ```
 
-6.  Na **souboru** nabídky, klikněte na tlačítko **Uložit vše** uložte provedené změny do **employees.xml** a **employees.xsd** soubory.
+6. Na **souboru** nabídky, klikněte na tlačítko **Uložit vše** uložte provedené změny do **employees.xml** a **employees.xsd** soubory.
 
 ## <a name="attach-the-xml-schema-to-the-document"></a>Připojit schéma XML v dokumentu
  Schéma XML musí připojit k dokumentu, vytvoření vazby <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> na platné hodnoty `title` elementu.
 
 ### <a name="to-attach-the-xml-schema-to-the-document--includeword15shortvstoincludesword-15-short-mdmd"></a>Připojit k tomuto dokumentu schématu XML ( [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)])
 
-1.  Aktivovat **EmployeeControls.docx** v návrháři.
+1. Aktivovat **EmployeeControls.docx** v návrháři.
 
-2.  Na pásu karet, zvolte **Developer** kartu a klikněte na tlačítko **Add-Ins** tlačítko.
+2. Na pásu karet, zvolte **Developer** kartu a klikněte na tlačítko **Add-Ins** tlačítko.
 
-3.  V **šablon a doplňků** dialogového okna zvolte **schématu XML** kartu a klikněte na tlačítko **přidat schéma** tlačítko.
+3. V **šablon a doplňků** dialogového okna zvolte **schématu XML** kartu a klikněte na tlačítko **přidat schéma** tlačítko.
 
-4.  Přejděte **employees.xsd** schématu jste vytvořili dříve, který je umístěn v adresáři projektu a klikněte na tlačítko **otevřít** tlačítko.
+4. Přejděte **employees.xsd** schématu jste vytvořili dříve, který je umístěn v adresáři projektu a klikněte na tlačítko **otevřít** tlačítko.
 
-5.  Zvolte **OK** tlačítko **schéma – nastavení** dialogové okno.
+5. Zvolte **OK** tlačítko **schéma – nastavení** dialogové okno.
 
-6.  Zvolte **OK** tlačítko pro uzavření **šablon a doplňků** dialogové okno.
+6. Zvolte **OK** tlačítko pro uzavření **šablon a doplňků** dialogové okno.
 
 ### <a name="to-attach-the-xml-schema-to-the-document-word-2010"></a>Připojit schéma XML v dokumentu (Wordu 2010)
 
-1.  Aktivovat **EmployeeControls.docx** v návrháři.
+1. Aktivovat **EmployeeControls.docx** v návrháři.
 
-2.  Na pásu karet, zvolte **Developer** kartu.
+2. Na pásu karet, zvolte **Developer** kartu.
 
-3.  V **XML** skupině, zvolte **schématu** tlačítko.
+3. V **XML** skupině, zvolte **schématu** tlačítko.
 
-4.  V **šablon a doplňků** dialogového okna zvolte **schématu XML** kartu a klikněte na tlačítko **přidat schéma** tlačítko.
+4. V **šablon a doplňků** dialogového okna zvolte **schématu XML** kartu a klikněte na tlačítko **přidat schéma** tlačítko.
 
-5.  Přejděte **employees.xsd** schématu, který jste vytvořili dříve, který je umístěn v adresáři projektu a zvolte **otevřít** tlačítko.
+5. Přejděte **employees.xsd** schématu, který jste vytvořili dříve, který je umístěn v adresáři projektu a zvolte **otevřít** tlačítko.
 
-6.  Zvolte **OK** tlačítko **schéma – nastavení** dialogové okno.
+6. Zvolte **OK** tlačítko **schéma – nastavení** dialogové okno.
 
-7.  Zvolte **OK** tlačítko pro uzavření **šablon a doplňků** dialogové okno.
+7. Zvolte **OK** tlačítko pro uzavření **šablon a doplňků** dialogové okno.
 
      **Struktura XML** otevře se podokno úloh.
 
-8.  Zavřít **struktura XML** podokna úloh.
+8. Zavřít **struktura XML** podokna úloh.
 
 ## <a name="add-a-custom-xml-part-to-the-document"></a>Přidat vlastní část XML v dokumentu
  Než ovládacích prvků obsahu můžete vázat na prvky v souboru XML, musíte přidat obsah souboru XML do nové vlastní část XML v dokumentu.
 
 ### <a name="to-add-a-custom-xml-part-to-the-document"></a>Chcete-li přidat vlastní část XML v dokumentu
 
-1.  V **Průzkumníka řešení**, otevřete místní nabídku pro **ThisDocument.cs** nebo **ThisDocument.vb**a klikněte na tlačítko **zobrazit kód**.
+1. V **Průzkumníka řešení**, otevřete místní nabídku pro **ThisDocument.cs** nebo **ThisDocument.vb**a klikněte na tlačítko **zobrazit kód**.
 
-2.  Přidejte následující deklarace do `ThisDocument` třídy. Tento kód deklaruje několik objektů, které použijete k přidání vlastních částí XML v dokumentu.
+2. Přidejte následující deklarace do `ThisDocument` třídy. Tento kód deklaruje několik objektů, které použijete k přidání vlastních částí XML v dokumentu.
 
      [!code-csharp[Trin_ContentControlXmlPartWalkthrough#1](../vsto/codesnippet/CSharp/EmployeeControls/ThisDocument.cs#1)]
      [!code-vb[Trin_ContentControlXmlPartWalkthrough#1](../vsto/codesnippet/VisualBasic/EmployeeControls/ThisDocument.vb#1)]
 
-3.  Přidejte následující metodu do `ThisDocument` třídy. Tato metoda načte obsah datového souboru XML, který je vložený jako prostředek v sestavení a vrátí obsah jako řetězec XML.
+3. Přidejte následující metodu do `ThisDocument` třídy. Tato metoda načte obsah datového souboru XML, který je vložený jako prostředek v sestavení a vrátí obsah jako řetězec XML.
 
      [!code-csharp[Trin_ContentControlXmlPartWalkthrough#3](../vsto/codesnippet/CSharp/EmployeeControls/ThisDocument.cs#3)]
      [!code-vb[Trin_ContentControlXmlPartWalkthrough#3](../vsto/codesnippet/VisualBasic/EmployeeControls/ThisDocument.vb#3)]
 
-4.  Přidejte následující metodu do `ThisDocument` třídy. `AddCustomXmlPart` Metoda vytvoří novou vlastní část XML, který obsahuje řetězec XML, který je předán metodě.
+4. Přidejte následující metodu do `ThisDocument` třídy. `AddCustomXmlPart` Metoda vytvoří novou vlastní část XML, který obsahuje řetězec XML, který je předán metodě.
 
      Ujistěte se, že vlastní část XML je vytvořen pouze jednou, kterou metoda vytvoří vlastní XML část jenom v případě, že vlastní část XML s odpovídajícím identifikátorem GUID již neexistuje v dokumentu. Tato metoda je volána, poprvé ji uloží hodnotu <xref:Microsoft.Office.Core._CustomXMLPart.Id%2A> vlastnost `employeeXMLPartID` řetězec. Hodnota `employeeXMLPartID` řetězce je trvalá v dokumentu, protože byla deklarovaná příkazem using <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute> atribut.
 
@@ -249,7 +249,7 @@ ms.locfileid: "56632924"
 
 ### <a name="to-bind-the-content-controls-to-elements-in-the-custom-xml-part"></a>K vytvoření vazby ovládacích prvků obsahu k elementům ve vlastní část XML
 
-1.  Přidejte následující metodu do `ThisDocument` třídy. Tato metoda váže každý ovládací prvek k prvku v vlastní část XML a nastaví formát zobrazení data <xref:Microsoft.Office.Tools.Word.DatePickerContentControl>.
+1. Přidejte následující metodu do `ThisDocument` třídy. Tato metoda váže každý ovládací prvek k prvku v vlastní část XML a nastaví formát zobrazení data <xref:Microsoft.Office.Tools.Word.DatePickerContentControl>.
 
      [!code-csharp[Trin_ContentControlXmlPartWalkthrough#5](../vsto/codesnippet/CSharp/EmployeeControls/ThisDocument.cs#5)]
      [!code-vb[Trin_ContentControlXmlPartWalkthrough#5](../vsto/codesnippet/VisualBasic/EmployeeControls/ThisDocument.vb#5)]
@@ -259,7 +259,7 @@ ms.locfileid: "56632924"
 
 ### <a name="to-run-your-code-when-the-document-is-opened"></a>Ke spuštění kódu při otevření dokumentu
 
-1.  Přidejte následující kód, který `ThisDocument_Startup` metodu `ThisDocument` třídy. Tento kód získá řetězec XML z **employees.xml** soubor, přidá řetězec XML do nové vlastní část XML v dokumentu a naváže ovládací prvky obsahu na prvky ve vlastní část XML.
+1. Přidejte následující kód, který `ThisDocument_Startup` metodu `ThisDocument` třídy. Tento kód získá řetězec XML z **employees.xml** soubor, přidá řetězec XML do nové vlastní část XML v dokumentu a naváže ovládací prvky obsahu na prvky ve vlastní část XML.
 
      [!code-csharp[Trin_ContentControlXmlPartWalkthrough#2](../vsto/codesnippet/CSharp/EmployeeControls/ThisDocument.cs#2)]
      [!code-vb[Trin_ContentControlXmlPartWalkthrough#2](../vsto/codesnippet/VisualBasic/EmployeeControls/ThisDocument.vb#2)]
@@ -269,9 +269,9 @@ ms.locfileid: "56632924"
 
 ### <a name="to-test-the-content-controls"></a>Pro testování ovládacích prvků obsahu
 
-1.  Stisknutím klávesy **F5** spusťte projekt.
+1. Stisknutím klávesy **F5** spusťte projekt.
 
-2.  Ověřte, že v tabulce v dokumentu, vypadá podobně jako v následující tabulce. Každý z řetězců v druhém sloupci je získat z prvku v vlastní část XML v dokumentu.
+2. Ověřte, že v tabulce v dokumentu, vypadá podobně jako v následující tabulce. Každý z řetězců v druhém sloupci je získat z prvku v vlastní část XML v dokumentu.
 
     |||
     |-|-|
@@ -279,17 +279,17 @@ ms.locfileid: "56632924"
     |**Datum přijetí**|**1. dubna 1999**|
     |**Název**|**Manager**|
 
-3.  Vyberte buňku napravo od **jméno zaměstnance** buňky a zadejte jiný název.
+3. Vyberte buňku napravo od **jméno zaměstnance** buňky a zadejte jiný název.
 
-4.  Vyberte buňku napravo od **datum přijetí** buňku a vyberte jiné datum v prvku Výběr data.
+4. Vyberte buňku napravo od **datum přijetí** buňku a vyberte jiné datum v prvku Výběr data.
 
-5.  Vyberte buňku napravo od **název** buňku a vyberte novou položku z rozevíracího seznamu.
+5. Vyberte buňku napravo od **název** buňku a vyberte novou položku z rozevíracího seznamu.
 
-6.  Uložte a zavřete dokument.
+6. Uložte a zavřete dokument.
 
-7.  V Průzkumníku souborů otevřete *\bin\Debug* složku v umístění projektu.
+7. V Průzkumníku souborů otevřete *\bin\Debug* složku v umístění projektu.
 
-8.  Otevřete místní nabídku pro **EmployeeControls.docx** a klikněte na tlačítko **přejmenovat**.
+8. Otevřete místní nabídku pro **EmployeeControls.docx** a klikněte na tlačítko **přejmenovat**.
 
 9. Název souboru **EmployeeControls.docx.zip**.
 
@@ -310,11 +310,11 @@ ms.locfileid: "56632924"
 ## <a name="next-steps"></a>Další kroky
  Další informace o tom, jak používat ovládací prvky obsahu naleznete v těchto tématech:
 
--   Použijte všechny dostupné ovládací prvky obsahu k vytvoření šablony. Další informace najdete v tématu [názorný postup: Vytvoření šablony s použitím ovládacích prvků obsahu](../vsto/walkthrough-creating-a-template-by-using-content-controls.md).
+- Použijte všechny dostupné ovládací prvky obsahu k vytvoření šablony. Další informace najdete v tématu [názorný postup: Vytvoření šablony s použitím ovládacích prvků obsahu](../vsto/walkthrough-creating-a-template-by-using-content-controls.md).
 
--   Upravte data ve vlastních částí XML při zavření dokumentu. Při příštím otevření dokumentu a ovládací prvky obsahu, které jsou vázány na prvky XML se zobrazí nová data.
+- Upravte data ve vlastních částí XML při zavření dokumentu. Při příštím otevření dokumentu a ovládací prvky obsahu, které jsou vázány na prvky XML se zobrazí nová data.
 
--   Použití ovládacích prvků obsahu s ochrana částí dokumentů. Další informace najdete v tématu [jak: Ochrana částí dokumentů pomocí ovládacích prvků obsahu](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md).
+- Použití ovládacích prvků obsahu s ochrana částí dokumentů. Další informace najdete v tématu [jak: Ochrana částí dokumentů pomocí ovládacích prvků obsahu](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md).
 
 ## <a name="see-also"></a>Viz také:
 - [Automatizace aplikace Word s použitím rozšířených objektů](../vsto/automating-word-by-using-extended-objects.md)

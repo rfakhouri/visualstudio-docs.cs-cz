@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 645346098b954fb57f5bb09f5ee97cfa48302150
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8c02dbf550ca1621a17d2b674a522e1e4f4bcc1c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54766159"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60038903"
 ---
 # <a name="how-to-extend-the-domain-specific-language-designer"></a>Postupy: Rozšíření Návrháře DSL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,25 +28,25 @@ Můžete provést rozšíření návrháře, který použijete k úpravám defin
   
 #### <a name="to-create-a-dsl-designer-extension-solution"></a>K vytvoření řešení rozšíření návrháře DSL  
   
-1.  Vytvoření nového projektu pomocí šablony projektu knihovny tříd. V **nový projekt** dialogové okno, klikněte na tlačítko **Visual C#** a v prostřední okna klikněte na **knihovny tříd**.  
+1. Vytvoření nového projektu pomocí šablony projektu knihovny tříd. V **nový projekt** dialogové okno, klikněte na tlačítko **Visual C#** a v prostřední okna klikněte na **knihovny tříd**.  
   
      Tento projekt bude obsahovat kódu rozšíření.  
   
-2.  Vytvoření nového projektu pomocí šablony projektu VSIX. V **nový projekt** dialogového okna rozbalte **Visual C#**, klikněte na tlačítko **rozšiřitelnost**a potom v prostředním okně vyberte **projekt VSIX**.  
+2. Vytvoření nového projektu pomocí šablony projektu VSIX. V **nový projekt** dialogového okna rozbalte **Visual C#**, klikněte na tlačítko **rozšiřitelnost**a potom v prostředním okně vyberte **projekt VSIX**.  
   
      Vyberte **přidat do řešení**.  
   
      Source.extension.vsixmanifest se otevře v editoru manifestu VSIX.  
   
-3.  Nad pole obsahu, klikněte na tlačítko **přidat obsah**.  
+3. Nad pole obsahu, klikněte na tlačítko **přidat obsah**.  
   
-4.  V **přidat obsah** dialogové okno, nastavte **vyberte typ obsahu** k **Komponenta MEF**a nastavte **projektu** do projektu knihovny tříd.  
+4. V **přidat obsah** dialogové okno, nastavte **vyberte typ obsahu** k **Komponenta MEF**a nastavte **projektu** do projektu knihovny tříd.  
   
-5.  Klikněte na tlačítko **vybrat vydání** a ujistěte se, že **Visual Studio Enterprise** je zaškrtnuté políčko.  
+5. Klikněte na tlačítko **vybrat vydání** a ujistěte se, že **Visual Studio Enterprise** je zaškrtnuté políčko.  
   
-6.  Ujistěte se, že projekt VSIX je projekt při spuštění řešení.  
+6. Ujistěte se, že projekt VSIX je projekt při spuštění řešení.  
   
-7.  V projektu knihovny tříd přidejte odkazy na následující sestavení:  
+7. V projektu knihovny tříd přidejte odkazy na následující sestavení:  
   
      Microsoft.VisualStudio.CoreUtility  
   

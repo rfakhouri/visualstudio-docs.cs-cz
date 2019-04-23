@@ -11,32 +11,32 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2c68089615fd38276e428df6ffaa906d0b3f6742
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 31181cd3dd70d3767bce65fe338d8dc152ec311c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54770664"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042350"
 ---
 # <a name="display-a-uml-model-on-diagrams"></a>Zobrazení modelu UML v diagramech
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 V programovém kódu pro rozšíření pro Visual Studio můžete řídit způsob zobrazení prvků modelu v diagramech. Pokud chcete zobrazit, které verze sady Visual Studio podporují modelech UML, naleznete v tématu [podporované verze pro nástroje architektury a modelování](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
- V tomto tématu:  
- -   [K zobrazení elementu v diagramu](#Display)  
+V tomto tématu:  
+- [K zobrazení elementu v diagramu](#Display)  
   
--   [Přístup k obrazce, které reprezentují element](#GetShapes)  
+- [Přístup k obrazce, které reprezentují element](#GetShapes)  
   
--   [Přesunutí a změna velikosti obrazce](#Moving)  
+- [Přesunutí a změna velikosti obrazce](#Moving)  
   
--   [Odebrání tvaru z diagramu](#Removing)  
+- [Odebrání tvaru z diagramu](#Removing)  
   
--   [Otevření a vytváření diagramů](#Opening)  
+- [Otevření a vytváření diagramů](#Opening)  
   
--   [Příklad: Příkaz pro zarovnání tvarů](#AlignCommand)  
+- [Příklad: Příkaz pro zarovnání tvarů](#AlignCommand)  
   
-##  <a name="Display"></a> K zobrazení elementu v diagramu  
+## <a name="Display"></a> K zobrazení elementu v diagramu  
  Při vytváření elementu například případ použití nebo akci uživatel můžete zobrazit v Průzkumníku modelů UML, ale zřejmě není vždy automaticky v diagramu. V některých případech musíte napsat kód pro jeho zobrazení. Následující tabulka shrnuje alternativ.  
   
 |Typ prvku|Příklad|Chcete-li zobrazit tuto aplikaci, musí váš kód|  
@@ -47,7 +47,7 @@ V programovém kódu pro rozšíření pro Visual Studio můžete řídit způso
 |Podřízené chování|Životností, zpráv, akce, uzly objektu|Automaticky – bez potřeby jakéhokoli kódu.<br /><br /> Pokud nadřazená je vázán na diagramu se zobrazí.|  
 |Relace|Asociace, generalizace, tok, závislost|Automaticky – bez potřeby jakéhokoli kódu.<br /><br /> Zobrazí se na každý diagram, ve kterém se zobrazí oba konce.|  
   
-##  <a name="GetShapes"></a> Přístup k obrazce, které reprezentují element  
+## <a name="GetShapes"></a> Přístup k obrazce, které reprezentují element  
  Obrazec, který reprezentuje element patří do typů:  
   
  `IShape`  
@@ -68,7 +68,7 @@ V programovém kódu pro rozšíření pro Visual Studio můžete řídit způso
 |`IShape iShape = ...;`<br /><br /> `IShape<IClass> classShape = iShape.ToIShape<IClass>();`<br /><br /> `IClass aClass = classShape.Element;`|Přetypování obecný `IShape` k silného typu `IShape<IElement>`.|  
 |`IShape<IClassifier> classifierShape;`<br /><br /> `IShape<IUseCase> usecaseShape =`<br /><br /> `classifierShape.ToIShape<IUseCase>();`|Přetypování typu jeden tvar parametrizované obrazec.|  
   
-##  <a name="Moving"></a> Přesunutí a změna velikosti obrazce  
+## <a name="Moving"></a> Přesunutí a změna velikosti obrazce  
   
 |||  
 |-|-|  
@@ -77,7 +77,7 @@ V programovém kódu pro rozšíření pro Visual Studio můžete řídit způso
   
  Příklad najdete v tématu [definování příkazu k zarovnání](#AlignCommand).  
   
-##  <a name="Removing"></a> Odebrání tvaru z diagramu  
+## <a name="Removing"></a> Odebrání tvaru z diagramu  
  Tvary některé typy prvků můžete odstranit bez odstranění prvku.  
   
 |Prvek modelu|Odebrání tvaru|  
@@ -86,7 +86,7 @@ V programovém kódu pro rozšíření pro Visual Studio můžete řídit způso
 |Chování: aktivitu nebo interakci|Diagram lze odstranit z projektu. Použití `IDiagram.FileName` k získání cesty.<br /><br /> Toto chování neodstraní z modelu.|  
 |Žádný obrazec|Jiné tvary nelze explicitně odstranit z diagramu. Tvar automaticky zavře, pokud prvek je odstraněn z modelu, nebo pokud je nadřazený obrazec odstraněn z diagramu.|  
   
-##  <a name="Opening"></a> Otevření a vytváření diagramů  
+## <a name="Opening"></a> Otevření a vytváření diagramů  
   
 ### <a name="to-access-the-users-current-diagram-from-a-command-or-gesture-extension"></a>Pro přístup k aktuálnímu diagramu uživatele z rozšíření příkazu nebo gesta  
  Deklarujte tento importovanou vlastnost ve třídě:  
@@ -162,7 +162,7 @@ foreach (ProjectItem item in project.ProjectItems)
 IModelStore modelStore = (project as IModelingProject).Store;  
 ```  
   
-##  <a name="AlignCommand"></a> Příklad: Příkaz pro zarovnání tvarů  
+## <a name="AlignCommand"></a> Příklad: Příkaz pro zarovnání tvarů  
  Následující kód implementuje příkaz nabídky, který elegantně zarovná obrazce. Uživatel musí nejprve umístěte dva nebo více obrazců v přibližné zarovnání, vertikálně nebo horizontálně. Potom příkaz Zarovnat slouží k zarovnání jejich centra.  
   
  Zpřístupnění příkazu, tento kód vložte do projekt příkazu nabídky a pak nasadit výsledné rozšíření pro vaše uživatele. Další informace najdete v tématu [definování příkazu nabídky v diagramu modelování](../modeling/define-a-menu-command-on-a-modeling-diagram.md).  

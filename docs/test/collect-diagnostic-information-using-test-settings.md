@@ -8,26 +8,26 @@ ms.assetid: 0c86918b-cd63-4468-8f49-6d547a1276dc
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cdaa86e2eb7562f4a3347c942e193da22a9e256e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c378cea12ba749ee9131d13130fdbb7def84ea66
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55948833"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039082"
 ---
 # <a name="collect-diagnostic-information-using-test-settings"></a>Shromažďování diagnostických údajů pomocí nastavení testů
 
 Můžete použít *nastavení testu* v sadě Visual Studio ke sběru dat navíc při spuštění testů. Například můžete chtít vytvořit nahrávání při spuštění testu videa. Existují adaptéry diagnostických dat:
 
--   Shromažďovat každý krok akce uživatelského rozhraní v textovém formátu
+- Shromažďovat každý krok akce uživatelského rozhraní v textovém formátu
 
--   Záznam každé akce uživatelského rozhraní pro přehrávání
+- Záznam každé akce uživatelského rozhraní pro přehrávání
 
--   Shromáždění systémových informací
+- Shromáždění systémových informací
 
--   Shromažďování dat protokolu událostí
+- Shromažďování dat protokolu událostí
 
--   Shromažďovat data IntelliTrace pro izolování nereprodukovatelných chyb
+- Shromažďovat data IntelliTrace pro izolování nereprodukovatelných chyb
 
 Adaptéry diagnostických dat lze také použít ke změně chování testovacího počítače. Test nastavení v sadě Visual Studio, například může emulovat různá problémová místa síťové topologie a vyhodnotit výkon aplikace vašeho týmu.
 

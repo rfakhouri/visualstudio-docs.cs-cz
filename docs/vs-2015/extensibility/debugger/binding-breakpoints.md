@@ -10,12 +10,12 @@ ms.assetid: 70737387-c52f-4dae-8865-77d4b203bf25
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: b94960130ef0b384a7e3a946dcbd2a4e4794252f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: fc7f68093432c96d496921ea593b6e936bad8302
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54795889"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039701"
 ---
 # <a name="binding-breakpoints"></a>Vytváření vazeb zarážek
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -25,15 +25,15 @@ Pokud uživatel nastaví zarážku, třeba stisknutím kombinace kláves F9, roz
 ## <a name="setting-a-breakpoint"></a>Nastavením zarážky  
  Nastavením zarážky je dvoustupňový proces, protože kód nebo data ovlivněná zarážky nemusí být ještě k dispozici. Nejprve musí být popsány zarážku a pak, jako kód nebo data k dispozici, se musí být vázán na tento kód nebo data, následujícím způsobem:  
   
-1.  Zarážka je požadován z odpovídající ladicí stroj (DEs) a pak je zarážka vázána na kód nebo data, jakmile je k dispozici.  
+1. Zarážka je požadován z odpovídající ladicí stroj (DEs) a pak je zarážka vázána na kód nebo data, jakmile je k dispozici.  
   
-2.  Požadavek zarážky se odešle na relaci ladění, která odešle do všech relevantních DEs. Žádné DE, který vybere pro zpracování zarážka vytvoří odpovídající čekajících zarážek.  
+2. Požadavek zarážky se odešle na relaci ladění, která odešle do všech relevantních DEs. Žádné DE, který vybere pro zpracování zarážka vytvoří odpovídající čekajících zarážek.  
   
-3.  Ladicí relaci čekajících zarážek shromažďuje a odesílá zpět do balíčku pro ladění (ladění součástí aplikace Visual Studio).  
+3. Ladicí relaci čekajících zarážek shromažďuje a odesílá zpět do balíčku pro ladění (ladění součástí aplikace Visual Studio).  
   
-4.  Ladění balíčku zobrazí výzvu k relaci ladění pro vazbu čekající zarážka kódu nebo data. Ladicí relaci odešle tento požadavek na všechny relevantní DEs.  
+4. Ladění balíčku zobrazí výzvu k relaci ladění pro vazbu čekající zarážka kódu nebo data. Ladicí relaci odešle tento požadavek na všechny relevantní DEs.  
   
-5.  Pokud je DE je schopen navázat zarážku, odešle, že zarážku vázán události zpět do relace ladění. Pokud ne, místo toho odešle událost chyby zarážky.  
+5. Pokud je DE je schopen navázat zarážku, odešle, že zarážku vázán události zpět do relace ladění. Pokud ne, místo toho odešle událost chyby zarážky.  
   
 ## <a name="pending-breakpoints"></a>Čekajících zarážek  
  Čekající zarážkou můžete svázat do víc umístění kódu. Například řádek zdrojového kódu pro šablony jazyka C++ lze svázat pořadí každý kód generován ze šablony. Relace ladění můžete použít vázané událost zarážky se vytvořit výčet kód kontexty vázán na zarážku v době, kdy byla vyslána události. Kontexty více kódu mohou být vázány později, tak DE mohou odesílat že více zarážka vázána události pro každý požadavek vazby. Zavedenými však má odeslat jenom jednu událost chyby zarážky každý požadavek vazby.  

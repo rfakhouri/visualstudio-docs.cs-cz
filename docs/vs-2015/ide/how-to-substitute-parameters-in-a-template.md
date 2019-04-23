@@ -12,12 +12,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 97a8a99e160e4d488e44cc9e084789fe3a005eb1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: be004820967f85de41b11c38031722b87a5af375
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54780288"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039411"
 ---
 # <a name="how-to-substitute-parameters-in-a-template"></a>Postupy: Nahrazení parametrů v šabloně
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Můžete nahradit parametry šablony, jako jsou názvy tříd a obory názvů, k
   
 #### <a name="to-use-a-parameter-to-replace-namespace-name-with-the-project-name"></a>Pomocí parametru nahradit název oboru názvů s názvem projektu  
   
-1.  Vložte parametr v jednom nebo více souborů s kódem v šabloně. Příklad:  
+1. Vložte parametr v jednom nebo více souborů s kódem v šabloně. Příklad:  
   
     ```  
     namespace $safeprojectname$  
@@ -38,9 +38,9 @@ Můžete nahradit parametry šablony, jako jsou názvy tříd a obory názvů, k
     > [!NOTE]
     >  Parametry šablony jsou napsané ve formátu $*parametr*$.  
   
-2.  V souboru .vstemplate šablony vyhledejte `ProjectItem` element, který obsahuje tento soubor.  
+2. V souboru .vstemplate šablony vyhledejte `ProjectItem` element, který obsahuje tento soubor.  
   
-3.  Nastavte `ReplaceParameters` atribut `true` pro `ProjectItem` elementu. Příklad:  
+3. Nastavte `ReplaceParameters` atribut `true` pro `ProjectItem` elementu. Příklad:  
   
     ```  
     <ProjectItem ReplaceParameters="true">Class1.cs</ProjectItem>  

@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ac6ea6f45446b35d9b65d9665ede5b2e76b387e3
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 2a703c7d4e28dd2287dff301727872b64e40b9ce
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55940708"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041414"
 ---
 # <a name="step-3-add-a-countdown-timer"></a>Krok 3: Přidejte časovač odpočítávání
 Ve třetí části tohoto kurzu přidáte časovač odpočítávání ke sledování počtu sekund pro dokončení kvízu.
@@ -23,26 +23,26 @@ Ve třetí části tohoto kurzu přidáte časovač odpočítávání ke sledov�
 
 ## <a name="to-add-a-countdown-timer"></a>Chcete-li přidat časovač odpočítávání
 
-1.  Přidejte celočíselnou proměnnou s názvem **timeLeft**, stejně jako v předchozím postupu. Váš kód by měl vypadat nějak takto.
+1. Přidejte celočíselnou proměnnou s názvem **timeLeft**, stejně jako v předchozím postupu. Váš kód by měl vypadat nějak takto.
 
      [!code-vb[VbExpressTutorial3Step3#5](../ide/codesnippet/VisualBasic/step-3-add-a-countdown-timer_1.vb)]
      [!code-csharp[VbExpressTutorial3Step3#5](../ide/codesnippet/CSharp/step-3-add-a-countdown-timer_1.cs)]
 
      Teď budete potřebovat metodu, která ve skutečnosti vrátí počet sekund, jako je například časovač, což vyvolá událost po dobu, kterou zadáte.
 
-2.  V okně návrhu přesuňte <xref:System.Windows.Forms.Timer> řízení z **součásti** kategorii **nástrojů** do formuláře.
+2. V okně návrhu přesuňte <xref:System.Windows.Forms.Timer> řízení z **součásti** kategorii **nástrojů** do formuláře.
 
      Ovládací prvek se zobrazí v šedé oblasti v dolní části okna návrhu.
 
-3.  Ve formuláři, zvolte **timer1** ikonu, která jste právě přidali a nastavte jeho **Interval** vlastnost **1000**.
+3. Ve formuláři, zvolte **timer1** ikonu, která jste právě přidali a nastavte jeho **Interval** vlastnost **1000**.
 
      Vzhledem k tomu, že hodnota intervalu jsou milisekund, hodnota 1000 způsobí, že <xref:System.Windows.Forms.Timer.Tick> událost vyvolána každou sekundu.
 
-4.  Ve formuláři, dvakrát klikněte **časovače** ovládací prvek, nebo jej vyberte a klikněte na tlačítko **Enter** klíč.
+4. Ve formuláři, dvakrát klikněte **časovače** ovládací prvek, nebo jej vyberte a klikněte na tlačítko **Enter** klíč.
 
      Zobrazí se editor kódu a metoda obslužné rutiny události Tick, kterou jste právě přidali.
 
-5.  Přidejte následující příkazy do nové metody obslužné rutiny události.
+5. Přidejte následující příkazy do nové metody obslužné rutiny události.
 
      [!code-vb[VbExpressTutorial3Step3#6](../ide/codesnippet/VisualBasic/step-3-add-a-countdown-timer_2.vb)]
      [!code-csharp[VbExpressTutorial3Step3#6](../ide/codesnippet/CSharp/step-3-add-a-countdown-timer_2.cs)]
@@ -88,14 +88,14 @@ Ve třetí části tohoto kurzu přidáte časovač odpočítávání ke sledov�
 
      Uživatelé vyplňující kvíz mohou zadávat čísla snadněji pomocí <xref:System.Windows.Forms.NumericUpDown> ovládací prvek, který je důvod, proč ho použijete pro odpovědi na matematické úlohy. Všechny možné odpovědi jsou celá čísla od 0 do 100. Ponechte výchozí hodnoty **minimální**, **maximální**, a **počet desetinných míst** , zajistíte, že uživatelům vyplňujícím kvíz nelze zadat desetinná čísla, záporná čísla, nebo čísla, která jsou příliš vysoká. (Pokud jste chtěli povolit uživatelům vyplňujícím kvíz zadání hodnoty 3,141, ale nikoli 3,1415, můžete nastavit **počet desetinných míst** vlastnost na 3.)
 
-6.  Přidejte tři řádky na konec objektu `StartTheQuiz()` metoda, takže kód vypadá následovně.
+6. Přidejte tři řádky na konec objektu `StartTheQuiz()` metoda, takže kód vypadá následovně.
 
      [!code-vb[VbExpressTutorial3Step3#7](../ide/codesnippet/VisualBasic/step-3-add-a-countdown-timer_4.vb)]
      [!code-csharp[VbExpressTutorial3Step3#7](../ide/codesnippet/CSharp/step-3-add-a-countdown-timer_4.cs)]
 
      Teď, když spustíte kvíz, **timeLeft** proměnná je nastavená na 30 a **Text** vlastnost **timeLabel** řízení je nastavené na 30 sekund. Pak bude <xref:System.Windows.Forms.Timer.Start> metoda ovládacím prvku časovač spustí odpočítávání. (Kvíz zatím kontrolu odpovědi –, který obsahuje další.)
 
-7.  Uložte program, spusťte ho a klikněte na tlačítko **Start** tlačítko na formuláři.
+7. Uložte program, spusťte ho a klikněte na tlačítko **Start** tlačítko na formuláři.
 
      Časovač spustí odpočet. Když čas vyprší, kvíz skončí a zobrazí se odpověď. Následující obrázek znázorňuje probíhající kvíz.
 
@@ -103,6 +103,6 @@ Ve třetí části tohoto kurzu přidáte časovač odpočítávání ke sledov�
 
 ## <a name="to-continue-or-review"></a>Chcete-li pokračovat nebo přezkoumat
 
--   Přechod k dalšímu kroku výukového programu naleznete v tématu [krok 4: Přidejte metodu CheckTheAnswer()](../ide/step-4-add-the-checktheanswer-parens-method.md).
+- Přechod k dalšímu kroku výukového programu naleznete v tématu [krok 4: Přidejte metodu CheckTheAnswer()](../ide/step-4-add-the-checktheanswer-parens-method.md).
 
--   Chcete-li vrátit k předchozímu kroku tutoriálu, přečtěte si téma [krok 2: Vytvořit náhodnou úlohu sčítání](../ide/step-2-create-a-random-addition-problem.md).
+- Chcete-li vrátit k předchozímu kroku tutoriálu, přečtěte si téma [krok 2: Vytvořit náhodnou úlohu sčítání](../ide/step-2-create-a-random-addition-problem.md).

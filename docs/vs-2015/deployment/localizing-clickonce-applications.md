@@ -22,12 +22,12 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 281ce4ed9f56121ab607aeb49c3ee5b20d5ebe02
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c22989b48c05884bc92eeb017f3a5e124fbc1fec
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54755498"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039861"
 ---
 # <a name="localizing-clickonce-applications"></a>Lokalizace aplikací ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,11 +38,11 @@ Lokalizace je proces zpřístupnění aplikace vhodné pro konkrétní jazykovou
   
  Toto téma popisuje tři způsoby, jak nasadit [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikací pro jiné jazykové verze:  
   
--   Zahrňte všechny satelitní sestavení v jednom nasazení.  
+- Zahrňte všechny satelitní sestavení v jednom nasazení.  
   
--   Generovat jedno nasazení pro jednotlivé jazykové verze, s jediným satelitním sestavením v každém.  
+- Generovat jedno nasazení pro jednotlivé jazykové verze, s jediným satelitním sestavením v každém.  
   
--   Stáhněte si satelitních sestavení na vyžádání.  
+- Stáhněte si satelitních sestavení na vyžádání.  
   
 ## <a name="including-all-satellite-assemblies-in-a-deployment"></a>V nasazení včetně všech satelitních sestavení  
  Místo publikování více [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] nasazení, můžete publikovat jediné [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] nasazení, které obsahuje všechny satelitní sestavení.  
@@ -77,9 +77,9 @@ Lokalizace je proces zpřístupnění aplikace vhodné pro konkrétní jazykovou
   
  Existují tři možnosti pro testování předtím, než je vaše aplikace je možné zákazníkům zpřístupnit lokalizovaných nasazení:  
   
--   Můžete spustit váš [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikace na příslušný lokalizovaných verzích Windows.  
+- Můžete spustit váš [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikace na příslušný lokalizovaných verzích Windows.  
   
--   Můžete nastavit <xref:System.Threading.Thread.CurrentUICulture%2A> vlastnost prostřednictvím kódu programu ve vaší aplikaci. (Tato vlastnost musí být nastavena dříve než zavoláte <xref:System.Windows.Forms.Application.Run%2A> metoda.)  
+- Můžete nastavit <xref:System.Threading.Thread.CurrentUICulture%2A> vlastnost prostřednictvím kódu programu ve vaší aplikaci. (Tato vlastnost musí být nastavena dříve než zavoláte <xref:System.Windows.Forms.Application.Run%2A> metoda.)  
   
 ## <a name="see-also"></a>Viz také  
  [\<Vlastnost assemblyIdentity > – Element](../deployment/assemblyidentity-element-clickonce-deployment.md)   

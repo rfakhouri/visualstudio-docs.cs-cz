@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a57f94758d4289981740ed9c1a8a463a8a97887d
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 97a36c38eb0c4a96cb7182300c2f9aca6da68e8a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59661591"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042745"
 ---
 # <a name="datacontext-methods-or-designer"></a>Metody DataContext (O/R Designer)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,11 +32,11 @@ DataContext] (assetId:///T:System.Data.Linq.DataContext?qualifyHint=False & auto
 ## <a name="two-types-of-datacontext-methods"></a>Dva typy metod DataContext  
  Metody DataContext jsou tyto metody, které se mapují na uložené procedury a funkce v databázi. Můžete vytvořit a přidat jednu metodu DataContext v podokně metody [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]. Existují dva odlišné typy <xref:System.Data.Linq.DataContext> metody; ty, které vrátí jeden nebo více sad výsledků dotazu a ty, které nejsou:  
   
--   <xref:System.Data.Linq.DataContext> metody, které vrací jeden nebo více sad výsledků dotazu:  
+- <xref:System.Data.Linq.DataContext> metody, které vrací jeden nebo více sad výsledků dotazu:  
   
      Vytvořit tento druh <xref:System.Data.Linq.DataContext> metodu, když vaše aplikace potřebuje pouze pro spouštění uložených procedur a funkcí v databázi a výsledky jsou vráceny. Další informace najdete v tématu [jak: Vytvoření metod DataContext namapovaných na uložené procedury a funkce (O/R Designer)](../data-tools/how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-o-r-designer.md), System.Data.Linq.ISingleResult\<T >, a <xref:System.Data.Linq.IMultipleResults>.  
   
--   <xref:System.Data.Linq.DataContext> metody, které nevracejí sad výsledků dotazu: například vloží aktualizace a odstraní pro konkrétní entitu třídu.  
+- <xref:System.Data.Linq.DataContext> metody, které nevracejí sad výsledků dotazu: například vloží aktualizace a odstraní pro konkrétní entitu třídu.  
   
      Vytvořit tento druh <xref:System.Data.Linq.DataContext> metodu, pokud má vaše aplikace pro spuštění uložené procedury místo použití výchozí [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] chování při ukládání změněných dat mezi třídu entity a databází. Další informace najdete v tématu [jak: Přiřazení uložených procedur za účelem aktualizace, vložení a odstranění (O/R Designer)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md).  
   

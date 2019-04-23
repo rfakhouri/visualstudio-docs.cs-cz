@@ -16,12 +16,12 @@ caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c52540c8e639adcd8ceec6b4da79fb87cff18386
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3095bccd25548e55f750ee11f26d20fdc9fe603d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54775000"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042776"
 ---
 # <a name="how-to-use-edit-and-continue-c"></a>Postupy: Použití operace Upravit a pokračovat (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,19 +35,19 @@ Pomocí funkce upravit a pokračovat pro jazyk C# můžete provést změny kódu
   
 ### <a name="to-invoke-edit-and-continue-automatically"></a>Vyvolání funkce upravit a pokračovat automaticky  
   
-1.  V režimu pozastavení změňte zdrojový kód.  
+1. V režimu pozastavení změňte zdrojový kód.  
   
-2.  Z **ladění** nabídky, klikněte na tlačítko **pokračovat**, **krok**, nebo **nastavit další příkaz** nebo vyhodnotíte funkci v okně ladicího programu.  
+2. Z **ladění** nabídky, klikněte na tlačítko **pokračovat**, **krok**, nebo **nastavit další příkaz** nebo vyhodnotíte funkci v okně ladicího programu.  
   
      Nový kód je zkompilován a ladění pokračuje s novým kódem. Některé změny nejsou podporovány funkcemi upravit a pokračovat. Další informace najdete v tématu [podporované změny kódu (C#)](../debugger/supported-code-changes-csharp.md).  
   
 ### <a name="to-enabledisable-edit-and-continue"></a>Povolení nebo zakázání funkce upravit a pokračovat  
   
-1.  Na **nástroje** nabídky, klikněte na tlačítko **možnosti**.  
+1. Na **nástroje** nabídky, klikněte na tlačítko **možnosti**.  
   
-2.  V **možnosti** dialogového okna rozbalte **ladění** uzel a vyberte možnost **upravit a pokračovat**.  
+2. V **možnosti** dialogového okna rozbalte **ladění** uzel a vyberte možnost **upravit a pokračovat**.  
   
-3.  V **možnosti** dialogové okno **upravit a pokračovat** stránce, zaškrtněte nebo zrušte zaškrtnutí **Povolit Editovat a pokračovat** zaškrtávací políčko.  
+3. V **možnosti** dialogové okno **upravit a pokračovat** stránce, zaškrtněte nebo zrušte zaškrtnutí **Povolit Editovat a pokračovat** zaškrtávací políčko.  
   
      Nastavení se projeví po restartování relace ladění.  
   

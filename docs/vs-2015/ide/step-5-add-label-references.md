@@ -9,12 +9,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: baae597f606b6333f15ba114d31af2cb0cf28836
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 3f062b48edfbe87fb97d94b3ea852486f66a19d1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54833662"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041870"
 ---
 # <a name="step-5-add-label-references"></a>Krok 5: Přidání odkazů popisků
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ Program potřebuje udržovat přehled o tom, který ovládací prvek popisku hr�
   
 ### <a name="to-add-label-references"></a>Přidání odkazů popisků  
   
-1.  Pomocí následujícího kódu přidejte do formuláře odkazy popisku.  
+1. Pomocí následujícího kódu přidejte do formuláře odkazy popisku.  
   
      [!code-csharp[VbExpressTutorial4Step5#5](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial4step5/cs/form1.cs#5)]
      [!code-vb[VbExpressTutorial4Step5#5](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial4step5/vb/form1.vb#5)]  
@@ -32,14 +32,14 @@ Program potřebuje udržovat přehled o tom, který ovládací prvek popisku hr�
   
      Pokud proměnná není udržování přehledu o objektu, je nastavena na speciální vyhrazenou hodnotu: `null` v jazyce Visual C# a `Nothing` v jazyce Visual Basic. Proto při spuštění programu, obě `firstClicked` a `secondClicked` jsou nastaveny na `null` nebo `Nothing`, což znamená, že proměnné neudržují přehled o ničem.  
   
-2.  Upravit vaší obslužné rutiny události kliknutí na použití nové `firstClicked` odkaz na proměnnou. Odebrat poslední příkaz v `label_Click()` metoda obslužné rutiny události (`clickedLabel.ForeColor = Color.Black;`) a nahraďte ho hodnotou `if` příkazu, který následuje. (Nezapomeňte zahrnout komentář a celý `if` příkazu.)  
+2. Upravit vaší obslužné rutiny události kliknutí na použití nové `firstClicked` odkaz na proměnnou. Odebrat poslední příkaz v `label_Click()` metoda obslužné rutiny události (`clickedLabel.ForeColor = Color.Black;`) a nahraďte ho hodnotou `if` příkazu, který následuje. (Nezapomeňte zahrnout komentář a celý `if` příkazu.)  
   
      [!code-csharp[VbExpressTutorial4Step5#6](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial4step5/cs/form1.cs#6)]
      [!code-vb[VbExpressTutorial4Step5#6](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial4step5/vb/form1.vb#6)]  
   
-3.  Uložte program a spusťte jej. Vyberte jeden z ovládacích prvků popisku a zobrazí se jeho ikona.  
+3. Uložte program a spusťte jej. Vyberte jeden z ovládacích prvků popisku a zobrazí se jeho ikona.  
   
-4.  Vyberte další ovládací prvek popisku a všimněte si, že se nic nestane. Program je již udržuje přehled o prvním popisku, který hráč vybral, takže `firstClicked` není roven `null` v jazyce Visual C# nebo `Nothing` v jazyce Visual Basic. Při vaší `if` příkaz kontroly `firstClicked` k určení, zda je rovna `null` nebo `Nothing`, zjistí, že není a neprovede příkazy v `if` příkazu. Takže pouze první ikona, která je vybrána, zčerná a další ikony jsou skryté, jak je znázorněno na následujícím obrázku.  
+4. Vyberte další ovládací prvek popisku a všimněte si, že se nic nestane. Program je již udržuje přehled o prvním popisku, který hráč vybral, takže `firstClicked` není roven `null` v jazyce Visual C# nebo `Nothing` v jazyce Visual Basic. Při vaší `if` příkaz kontroly `firstClicked` k určení, zda je rovna `null` nebo `Nothing`, zjistí, že není a neprovede příkazy v `if` příkazu. Takže pouze první ikona, která je vybrána, zčerná a další ikony jsou skryté, jak je znázorněno na následujícím obrázku.  
   
      ![Porovnávací hra zobrazující jednu ikonu](../ide/media/express-tut4step5.png "Express_Tut4Step5")  
 Porovnávací hra zobrazující jednu ikonu  
@@ -48,6 +48,6 @@ Porovnávací hra zobrazující jednu ikonu
   
 ### <a name="to-continue-or-review"></a>Chcete-li pokračovat nebo přezkoumat  
   
--   Přechod k dalšímu kroku výukového programu naleznete v tématu [krok 6: Přidejte časovač](../ide/step-6-add-a-timer.md).  
+- Přechod k dalšímu kroku výukového programu naleznete v tématu [krok 6: Přidejte časovač](../ide/step-6-add-a-timer.md).  
   
--   Chcete-li vrátit k předchozímu kroku tutoriálu, přečtěte si téma [krok 4: Přidejte k jednotlivým jmenovkám obslužnou rutinu události Click](../ide/step-4-add-a-click-event-handler-to-each-label.md).
+- Chcete-li vrátit k předchozímu kroku tutoriálu, přečtěte si téma [krok 4: Přidejte k jednotlivým jmenovkám obslužnou rutinu události Click](../ide/step-4-add-a-click-event-handler-to-each-label.md).

@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.assetid: d25990e0-e782-4a79-9d9a-1caf3c56c6a2
 caps.latest.revision: 10
 manager: jillfra
-ms.openlocfilehash: 3537879481430490d32ab30f8f6a2f9f7353659b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 81bf6c5ef975d7ce154c1d8bb987e962dfdf4ec2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54773587"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040738"
 ---
 # <a name="how-to-manually-package-an-extension-vsix-deployment"></a>Postupy: Ručně balíček rozšíření (VSIX nasazení)
 Můžete vytvořit balíček VSIX zabalit [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozšíření pro nasazení. Existují tři způsoby, jak vytvořit balíček:  
@@ -33,25 +33,25 @@ Můžete vytvořit balíček VSIX zabalit [!INCLUDE[vsprvs](../includes/vsprvs-m
   
 #### <a name="to-manually-create-a-vsix-package"></a>Ruční vytvoření balíčku VSIX  
   
-1.  Vytvoření rozšíření sady Visual Studio typu, který je podporován schématu VSIX.  
+1. Vytvoření rozšíření sady Visual Studio typu, který je podporován schématu VSIX.  
   
-2.  Vytvořte soubor XML s názvem `extension.vsixmanifest`.  
+2. Vytvořte soubor XML s názvem `extension.vsixmanifest`.  
   
-3.  Zadejte soubor extension.vsixmanifest podle schématu VSIX. Manifest příklad naleznete v tématu [PackageManifest – Element (kořenový Element, schéma VSX)](http://msdn.microsoft.com/f8ae42ba-775a-4d2b-976a-f556e147f187).  
+3. Zadejte soubor extension.vsixmanifest podle schématu VSIX. Manifest příklad naleznete v tématu [PackageManifest – Element (kořenový Element, schéma VSX)](http://msdn.microsoft.com/f8ae42ba-775a-4d2b-976a-f556e147f187).  
   
-4.  Vytvořte druhý soubor XML s názvem `[Content_Types].xml`.  
+4. Vytvořte druhý soubor XML s názvem `[Content_Types].xml`.  
   
-5.  Vyplňte souboru [Content_Types] .xml uvedená v [struktura Content_types\]XML soubor](../extensibility/the-structure-of-the-content-types-dot-xml-file.md).  
+5. Vyplňte souboru [Content_Types] .xml uvedená v [struktura Content_types\]XML soubor](../extensibility/the-structure-of-the-content-types-dot-xml-file.md).  
   
-6.  Vložte oba soubory XML adresáře spolu s příponou k nasazení.  
+6. Vložte oba soubory XML adresáře spolu s příponou k nasazení.  
   
      V případě šablona projektu nebo šablony položky umístěte soubor .zip, který obsahuje šablonu ve stejné složce jako soubor XML. Neumisťujte soubory XML v souboru ZIP.  
   
      Soubory XML ve všech ostatních případech lze umístěte do stejného adresáře jako výstup sestavení.  
   
-7.  V Průzkumníku Windows, klikněte pravým tlačítkem na složku, která obsahuje rozšíření obsahu a dva soubory XML, klikněte na tlačítko **odeslat**a potom klikněte na tlačítko **komprimovaná složka (metoda ZIP)**.  
+7. V Průzkumníku Windows, klikněte pravým tlačítkem na složku, která obsahuje rozšíření obsahu a dva soubory XML, klikněte na tlačítko **odeslat**a potom klikněte na tlačítko **komprimovaná složka (metoda ZIP)**.  
   
-8.  Přejmenovat výsledný soubor ZIP do *Filename*VSIX, kde *Filename* je název redistribuovatelného souboru, který nainstaluje balíček.  
+8. Přejmenovat výsledný soubor ZIP do *Filename*VSIX, kde *Filename* je název redistribuovatelného souboru, který nainstaluje balíček.  
   
 ## <a name="see-also"></a>Viz také  
  [Přesouvání rozšíření sady Visual Studio](../extensibility/shipping-visual-studio-extensions.md)   

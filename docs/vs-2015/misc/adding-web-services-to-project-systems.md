@@ -10,23 +10,23 @@ helpviewer_keywords:
 ms.assetid: 8efa078b-68b2-45a2-9be2-44f807bc0d7f
 caps.latest.revision: 8
 manager: jillfra
-ms.openlocfilehash: 8143db95d2f892c7e3438f240aa5f22cdda53c7f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f5b192be8e5f68ad9314fe08fff963c032013cb0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54766064"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042298"
 ---
 # <a name="adding-web-services-to-project-systems"></a>Přidání webové služby do systémů projektů
 Webové služby XML jsou obecně platí, adresa URL bajtově adresovatelného prostředky, které vracejí prostřednictvím kódu programu informace k systému projektů pomocí protokolu SOAP (Simple Object Access Protocol). Webové služby můžete integrovat do vašeho systému projektu VSPackage pomocí <xref:Microsoft.VisualStudio.Shell.Interop.IVsAddProjectItemDlg2> rozhraní.  
   
 ### <a name="to-add-a-web-service-to-your-project-system"></a>Chcete-li přidat webovou službu v systému projektu  
   
-1.  Volání `QueryService` pro <xref:Microsoft.VisualStudio.Shell.Interop.IVsAddProjectItemDlg2> rozhraní prostřednictvím <xref:Microsoft.VisualStudio.Shell.Interop.SVsAddWebReferenceDlg> služby.  
+1. Volání `QueryService` pro <xref:Microsoft.VisualStudio.Shell.Interop.IVsAddProjectItemDlg2> rozhraní prostřednictvím <xref:Microsoft.VisualStudio.Shell.Interop.SVsAddWebReferenceDlg> služby.  
   
-2.  Volání <xref:Microsoft.VisualStudio.Shell.Interop.IVsAddWebReferenceDlg2.AddWebReferenceDlg%2A> metody. Pokud předáte v `pDiscoverySession` parametr `NULL`, je pro vás vytvořením relace zjišťování a relace se ukládá do mezipaměti tak, aby byly k dispozici pro následné použití <xref:Microsoft.VisualStudio.Shell.Interop.IVsAddWebReferenceDlg2> rozhraní. <xref:Microsoft.VisualStudio.Shell.Interop.IVsAddWebReferenceDlg2.AddWebReferenceDlg%2A> metoda vrací ukazatel na <xref:Microsoft.VisualStudio.Shell.Interop.IDiscoveryResult2>.  
+2. Volání <xref:Microsoft.VisualStudio.Shell.Interop.IVsAddWebReferenceDlg2.AddWebReferenceDlg%2A> metody. Pokud předáte v `pDiscoverySession` parametr `NULL`, je pro vás vytvořením relace zjišťování a relace se ukládá do mezipaměti tak, aby byly k dispozici pro následné použití <xref:Microsoft.VisualStudio.Shell.Interop.IVsAddWebReferenceDlg2> rozhraní. <xref:Microsoft.VisualStudio.Shell.Interop.IVsAddWebReferenceDlg2.AddWebReferenceDlg%2A> metoda vrací ukazatel na <xref:Microsoft.VisualStudio.Shell.Interop.IDiscoveryResult2>.  
   
-3.  Volání <xref:Microsoft.VisualStudio.Shell.Interop.IDiscoveryResult.AddWebReference%2A> metody. Předat objekt automatizace pro složku webových odkazů služby, jako `pUnkWebReferenceFolder` parametru. Prostředí sady Visual Studio pak ověří, zda webová služba již existuje. Pokud webová služba není k dispozici, prostředí se stáhne a přidá webovou službu do složky a další soubory (například soubory WSDL) do složky podřízené uzly.  
+3. Volání <xref:Microsoft.VisualStudio.Shell.Interop.IDiscoveryResult.AddWebReference%2A> metody. Předat objekt automatizace pro složku webových odkazů služby, jako `pUnkWebReferenceFolder` parametru. Prostředí sady Visual Studio pak ověří, zda webová služba již existuje. Pokud webová služba není k dispozici, prostředí se stáhne a přidá webovou službu do složky a další soubory (například soubory WSDL) do složky podřízené uzly.  
   
 ## <a name="see-also"></a>Viz také  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsAddWebReferenceDlg2>   

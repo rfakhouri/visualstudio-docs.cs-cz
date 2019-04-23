@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 07212350ab95c3f9ee3d00fb2ac33768964555e8
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 8721d85c7fb3aba513a15fe276adbb2b17496351
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55935599"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041205"
 ---
 # <a name="troubleshoot-code-coverage"></a>Řešení problémů s pokrytím kódu
 
@@ -43,9 +43,9 @@ Rozlišení&mdash;v Průzkumníku testů, zvolte **spustit všechny** k ověřen
 
 Když změníte a znovu spustit testy, můžete se předchozí výsledek pokrytí kódu dál zobrazovat, včetně barevného zvýraznění kódu z minulého spuštění testu.
 
-1.  Spusťte analýzu pokrytí kódu.
+1. Spusťte analýzu pokrytí kódu.
 
-2.  Ujistěte se, zda jste vybrali nejnovější sadu výsledků **výsledky pokrytí kódu** okna.
+2. Ujistěte se, zda jste vybrali nejnovější sadu výsledků **výsledky pokrytí kódu** okna.
 
 ### <a name="pdb-symbol-files-are-unavailable"></a>Nejsou k dispozici soubory typu .pdb (symbol)
 
@@ -91,17 +91,17 @@ Vysvětlení&mdash;můžete spustit testování částí s vlastním *s přípon
 
 Rozlišení&mdash;existují dva typy možných chyb:
 
--   **XML došlo k chybě**
+- **XML došlo k chybě**
 
      Otevřít *s příponou .runsettings* souboru v editoru XML pro Visual Studio. Hledejte označení chyb.
 
--   **Chyba regulárního výrazu**
+- **Chyba regulárního výrazu**
 
      Každý řetězec v souboru je regulární výraz. Zkontrolujte každé z nich nejsou chyby a hledejte zejména:
 
-    -   Neshoda závorek (...) nebo závorky \\(...) \\). Pokud ve vyhledávacím řetězci chcete najít závorky, musíte je přeskočit. Chcete-li například funkci, použijte: `.*MyFunction\(double\)`
+    - Neshoda závorek (...) nebo závorky \\(...) \\). Pokud ve vyhledávacím řetězci chcete najít závorky, musíte je přeskočit. Chcete-li například funkci, použijte: `.*MyFunction\(double\)`
 
-    -   Hvězdička nebo plus na začátku výrazu. Pro vyhledání libovolného řetězce znaků, použijte tečku následovanou hvězdičkou: `.*`
+    - Hvězdička nebo plus na začátku výrazu. Pro vyhledání libovolného řetězce znaků, použijte tečku následovanou hvězdičkou: `.*`
 
 ### <a name="custom-runsettings-file-with-incorrect-exclusions"></a>Nesprávná vyloučení ve vlastním souboru .runsettings
 

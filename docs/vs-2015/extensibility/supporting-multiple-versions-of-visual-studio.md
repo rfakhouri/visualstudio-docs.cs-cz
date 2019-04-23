@@ -12,12 +12,12 @@ ms.assetid: 0047aa90-1ed4-40d3-8772-622b2719a4b1
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 1a4ad8b128ea614ba60a19c3526d20af80aab937
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 377a7eceff134211371c17ac14903cba0fb8daa6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54785578"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042137"
 ---
 # <a name="supporting-multiple-versions-of-visual-studio"></a>Podpora více verzí sady Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,15 +26,15 @@ Termín *vedle sebe* znamená, že můžete nainstalovat a spravovat více verz�
 
  Než provedete vašeho balíčku VSPackage moci být načtena do vedle sebe verzích sady Visual Studio, zvažte následující:
 
--   Je nutné určit strategii implementace vedle sebe, kterou chcete sledovat.
+- Je nutné určit strategii implementace vedle sebe, kterou chcete sledovat.
 
      Další informace najdete v tématu [výběr mezi sdílené a vyvíjených balíčků VSPackage](../extensibility/choosing-between-shared-and-versioned-vspackages.md).
 
--   Řešení a projektu formátů souborů se musí vejít strategie implementace.
+- Řešení a projektu formátů souborů se musí vejít strategie implementace.
 
      Další informace najdete v tématu [upgrade projektů vlastní](../misc/upgrading-custom-projects.md) a [registrace přípony názvů souborů pro nasazení vedle sebe](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md).
 
--   Instalační program musí umět zpracovat strategie implementace tak, aby se systémovou správou verzí komponenty a komponenty sdílené mezi všemi verzemi správně nainstalovaný a zaregistrovaný.
+- Instalační program musí umět zpracovat strategie implementace tak, aby se systémovou správou verzí komponenty a komponenty sdílené mezi všemi verzemi správně nainstalovaný a zaregistrovaný.
 
      Další informace najdete v tématu [instalace rozšíření VSPackages s Windows Installer](../extensibility/internals/installing-vspackages-with-windows-installer.md) a také [Správa komponent](../extensibility/internals/component-management.md).
 

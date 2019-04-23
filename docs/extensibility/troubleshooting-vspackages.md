@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c04afe2d739b172e74da4ae38bd122468643e6e6
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 64ebe3bc2d4d406d6144305b368d37613aef0158
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56706987"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039730"
 ---
 # <a name="troubleshooting-vspackages"></a>Řešení potíží s rozšířením VSPackages
 Tady jsou běžné problémy, které může mít s vaší VSPackage a tipy pro řešení problémů.
@@ -56,7 +56,7 @@ Tady jsou běžné problémy, které může mít s vaší VSPackage a tipy pro �
 
 ### <a name="to-troubleshoot-a-vspackage-that-does-not-register"></a>Řešení potíží s VSPackage, která nezaregistruje
 
-1.  Ujistěte se, že VSPackage sestavení se nachází v důvěryhodném umístění. RegPkg nejde zaregistrovat sestavení v částečně důvěryhodných nebo nedůvěryhodných umístění, například sdílené síťové složky ve výchozí konfiguraci zabezpečení rozhraní .net. I když se upozornění zobrazí vždycky, když uživatel vytvoří projekt v nedůvěryhodném umístění, můžete toto upozornění nevyskytla zabránit zaškrtávací políčko "tuto zprávu znovu nezobrazovat".
+1. Ujistěte se, že VSPackage sestavení se nachází v důvěryhodném umístění. RegPkg nejde zaregistrovat sestavení v částečně důvěryhodných nebo nedůvěryhodných umístění, například sdílené síťové složky ve výchozí konfiguraci zabezpečení rozhraní .net. I když se upozornění zobrazí vždycky, když uživatel vytvoří projekt v nedůvěryhodném umístění, můžete toto upozornění nevyskytla zabránit zaškrtávací políčko "tuto zprávu znovu nezobrazovat".
 
 ### <a name="to-troubleshoot-a-command-that-is-not-visible-or-that-generates-an-error-when-you-click-a-command"></a>Řešení potíží s příkaz, který není viditelný, nebo po kliknutí na příkaz, který generuje chybu
 
@@ -64,44 +64,44 @@ Tady jsou běžné problémy, které může mít s vaší VSPackage a tipy pro �
 
 2. Ujistěte se, že [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] UI.dll vyhledat vašeho balíčku VSPackage.
 
-   1.  Identifikátor CLSID sady VSPackage najdete v části balíčků z registru:
+   1. Identifikátor CLSID sady VSPackage najdete v části balíčků z registru:
 
         HKLM\Software\Microsoft\Visual Studio\\*\<version>* \Packages
 
-   2.  Ověřte správnost cesty Dal podklíč SatelliteDll.
+   2. Ověřte správnost cesty Dal podklíč SatelliteDll.
 
 ### <a name="to-troubleshoot-a-vspackage-that-behaves-unexpectedly"></a>Řešení potíží s, který se chová neočekávaně VSPackage
 
-1.  Nastavte zarážky v kódu.
+1. Nastavte zarážky v kódu.
 
      Dobrým výchozím bodem pro ladění jsou konstruktor a inicializační metoda. Můžete také nastavit zarážky v oblasti, kterou chcete vyhodnotit, například příkaz nabídky. Pokud chcete povolit zarážky, je nutné spustit v ladicím programu.
 
-    1.  Na **projektu** nabídky, klikněte na tlačítko **vlastnosti**.
+    1. Na **projektu** nabídky, klikněte na tlačítko **vlastnosti**.
 
-    2.  Na **stránky vlastností** dialogové okno, vyberte **ladění** kartu.
+    2. Na **stránky vlastností** dialogové okno, vyberte **ladění** kartu.
 
-    3.  V **argumenty příkazového řádku** zadejte příponu kořenové vývojového prostředí, které vaše cíle VSPackage. Pokud chcete vybrat experimentální sestavení, zadejte například: **RootSuffix Exp**.
+    3. V **argumenty příkazového řádku** zadejte příponu kořenové vývojového prostředí, které vaše cíle VSPackage. Pokud chcete vybrat experimentální sestavení, zadejte například: **RootSuffix Exp**.
 
-    4.  Na **ladění** nabídky, klikněte na tlačítko **spustit ladění** nebo stiskněte klávesu F5.
+    4. Na **ladění** nabídky, klikněte na tlačítko **spustit ladění** nebo stiskněte klávesu F5.
 
         > [!NOTE]
         >  Když provádíte ladění projektu, vytvořit nebo načíst existující instanci projektu nyní.
 
-2.  Použití protokolu aktivit.
+2. Použití protokolu aktivit.
 
      Sledujte chování balíčku VSPackage pomocí zápisu informací do protokolu aktivit se zapsaly klíčové body. Tato technika je užitečná při spuštění v prostředí maloobchodu VSPackage. Další informace najdete v tématu [jak: Použití protokolu aktivit](../extensibility/how-to-use-the-activity-log.md).
 
-3.  Použití veřejných symbolů.
+3. Použití veřejných symbolů.
 
      Aby se zlepšila čitelnost při ladění, můžete připojit symboly v ladicím programu.
 
-    1.  Z **Nástroje/možnosti** nabídky, přejděte **ladění/symboly** dialogové okno.
+    1. Z **Nástroje/možnosti** nabídky, přejděte **ladění/symboly** dialogové okno.
 
-    2.  Přidejte tuto **Symbol umístění souboru souborů (.pdb)**:
+    2. Přidejte tuto **Symbol umístění souboru souborů (.pdb)**:
 
          [http://msdl.microsoft.com/download/symbols](http://msdl.microsoft.com/download/symbols)
 
-    3.  Ke zlepšení výkonu, zadejte složku mezipaměti symbolů, například:
+    3. Ke zlepšení výkonu, zadejte složku mezipaměti symbolů, například:
 
         ```
         C:\symbols
@@ -111,9 +111,9 @@ Tady jsou běžné problémy, které může mít s vaší VSPackage a tipy pro �
 
 1. Pro spravovaný kód Ujistěte se, že cesty odkazů jsou správné.
 
-   1.  Na **projektu** nabídky, klikněte na tlačítko **vlastnosti**.
+   1. Na **projektu** nabídky, klikněte na tlačítko **vlastnosti**.
 
-   2.  Vyberte **odkazy** kartu **stránky vlastností** dialogové okno a ujistěte se, že všechny cesty mají správný. Alternativně můžete použít **prohlížeče objektů** a vyhledejte odkazované objekty.
+   2. Vyberte **odkazy** kartu **stránky vlastností** dialogové okno a ujistěte se, že všechny cesty mají správný. Alternativně můžete použít **prohlížeče objektů** a vyhledejte odkazované objekty.
 
         Pro spravovaný kód, můžete použít [Fuslogvw.exe (Assembly Binding Log Viewer)](/dotnet/framework/tools/fuslogvw-exe-assembly-binding-log-viewer) zobrazíte podrobnosti o načtení sestavení se nezdařilo.
 

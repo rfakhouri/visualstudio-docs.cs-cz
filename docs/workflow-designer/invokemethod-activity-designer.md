@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 32e595247b147d9a775fcea0299c291d9027aea9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: eed5d81cce05b316ef7593639e868936e7f2fa69
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942983"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039250"
 ---
 # <a name="invokemethod-activity-designer"></a>Návrhář aktivity InvokeMethod
 
@@ -49,11 +49,11 @@ Metody s argumenty volat **TargetObject** nebo **výsledek** nelze volat pomocí
 
 Algoritmus pro registraci parametry v <xref:System.Activities.Activity.CacheMetadata%2A> je znázorněno v následujícím seznamu:
 
-1.  Zaregistrujte <xref:System.Activities.Statements.InvokeMethod.TargetObject%2A> argument.
+1. Zaregistrujte <xref:System.Activities.Statements.InvokeMethod.TargetObject%2A> argument.
 
-2.  Zaregistrujte <xref:System.Activities.Statements.InvokeMethod.Result%2A> argument.
+2. Zaregistrujte <xref:System.Activities.Statements.InvokeMethod.Result%2A> argument.
 
-3.  Iterovat přes <xref:System.Activities.Statements.InvokeMethod.Parameters%2A> kolekce a zaregistrovat každý argument.
+3. Iterovat přes <xref:System.Activities.Statements.InvokeMethod.Parameters%2A> kolekce a zaregistrovat každý argument.
 
 Výsledný výjimka je typu <xref:System.Activities.InvalidWorkflowException> s následující zprávou: 'InvokeMethod': Proměnná argumentu RuntimeArgument nebo DelegateArgument již existuje s názvem "TargetObject". Názvy musí být v rámci oboru prostředí jedinečné.
 

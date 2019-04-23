@@ -14,25 +14,25 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 297fefddd45b080af236da0b4fe53649e7d630cf
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 4c187865518c9556d63d9e5e632ec5c658fc3e0f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867561"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040841"
 ---
 # <a name="package-and-deploy-sharepoint-solutions"></a>Zabalení a nasazení řešení služby SharePoint
   Obvykle nasazuje řešení služby SharePoint na SharePoint server s použitím souboru balíčku (.wsp) řešení. Visual Studio můžete použít k uspořádání položek projektu služby SharePoint do funkcí a chcete-li vytvořit balíček pro nasazení vašich funkcí služby SharePoint.
 
  Toto téma poskytuje následující informace:
 
--   [Vytváření funkcí a balíčků](#create-features-and-packages)
+- [Vytváření funkcí a balíčků](#create-features-and-packages)
 
--   [Funkce a podpora nástroje balení](#feature-and-packaging-tool-support)
+- [Funkce a podpora nástroje balení](#feature-and-packaging-tool-support)
 
--   [Nasazení řešení služby SharePoint](#deploy-sharepoint-solutions)
+- [Nasazení řešení služby SharePoint](#deploy-sharepoint-solutions)
 
--   [Nasazení souborů v řešení služby SharePoint](#deploy-files-in-sharepoint-solutions)
+- [Nasazení souborů v řešení služby SharePoint](#deploy-files-in-sharepoint-solutions)
 
 ## <a name="create-features-and-packages"></a>Vytváření funkcí a balíčků
  Visual Studio můžete použít k seskupení souvisejících prvků SharePoint do *funkce*. Funkce pro definici seznamu kontaktů mohou být například instanci seznamu a definice seznamu. Tyto dva prvky můžete zkombinovat do jedné funkce pro účely nasazení. Další informace o funkcích najdete v tématu [stavebních bloků: Funkce](http://go.microsoft.com/fwlink/?LinkID=169183).
@@ -42,11 +42,11 @@ ms.locfileid: "57867561"
 ## <a name="feature-and-packaging-tool-support"></a>Funkce a podpora nástroje balení
  Nástroje pro vývoj služby SharePoint v sadě Visual Studio můžete použít k rychlé uspořádání souborů služby SharePoint do funkce a řešení balíčky pro nasazení. Nakonfigurování funkce a řešení můžete použít následující nástroje.
 
--   Funkce návrháře a návrháři balíčku.
+- Funkce návrháře a návrháři balíčku.
 
--   Průzkumník balení, panel nástrojů.
+- Průzkumník balení, panel nástrojů.
 
--   Průzkumník řešení.
+- Průzkumník řešení.
 
 ### <a name="feature-designer-and-package-designer"></a>Funkce návrháře a návrháři balíčku
  Můžete vytvořit funkce, nastavit obory a označit jiné funkce jako závislosti pomocí návrháře funkcí. Návrhář zobrazí také konečný soubor XML, který popisuje každou funkci. Další informace najdete v tématu [funkcí služby SharePoint vytvořit](../sharepoint/creating-sharepoint-features.md).

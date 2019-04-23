@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: d4243bcedea1699ba02b3c3715cab7f61ba62281
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 026b670deb5beff42c927894ee9851ddb3ccc3ad
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55950016"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042808"
 ---
 # <a name="create-and-configure-tableadapters"></a>Vytvoření a konfigurace objektů TableAdapter
 
@@ -80,16 +80,16 @@ Následující příklad ukazuje, jak volat další dotaz s názvem `FillByCity`
 
 ### <a name="to-start-the-tableadapter-query-configuration-wizard-with-a-new-query"></a>Spusťte Průvodce konfigurací dotazu TableAdapter s nový dotaz
 
-1.  Otevřete svou datovou sadu v **Návrhář Dataset**.
+1. Otevřete svou datovou sadu v **Návrhář Dataset**.
 
-2.  Pokud vytváříte nový dotaz, přetáhněte **dotazu** objektu z **datovou sadu** kartě **nástrojů** na <xref:System.Data.DataTable>, nebo vyberte **přidat dotaz**z místní nabídky objektu TableAdapter. Můžete také přetáhnout **dotazu** objektu na prázdnou oblast **Návrhář Dataset**, vytváří TableAdapter bez přidruženého <xref:System.Data.DataTable>. Tyto dotazy můžete pouze vrátí jednu hodnotu (skalární) nebo spuštění UPDATE, INSERT nebo odstranit příkazů na databázi.
+2. Pokud vytváříte nový dotaz, přetáhněte **dotazu** objektu z **datovou sadu** kartě **nástrojů** na <xref:System.Data.DataTable>, nebo vyberte **přidat dotaz**z místní nabídky objektu TableAdapter. Můžete také přetáhnout **dotazu** objektu na prázdnou oblast **Návrhář Dataset**, vytváří TableAdapter bez přidruženého <xref:System.Data.DataTable>. Tyto dotazy můžete pouze vrátí jednu hodnotu (skalární) nebo spuštění UPDATE, INSERT nebo odstranit příkazů na databázi.
 
-3.  Na **vyberte datové připojení** obrazovky, vyberte nebo vytvořte připojení, které budou používat dotaz.
+3. Na **vyberte datové připojení** obrazovky, vyberte nebo vytvořte připojení, které budou používat dotaz.
 
     > [!NOTE]
     > Tato obrazovka se zobrazí, pouze když návrháře nelze určit správné připojení se má používat, nebo když jsou k dispozici žádná připojení.
 
-4.  Na **zvolit typ příkazu** obrazovky, vyberte z následujících metod načítání dat z databáze:
+4. Na **zvolit typ příkazu** obrazovky, vyberte z následujících metod načítání dat z databáze:
 
     - **Použití SQL** umožňuje typ příkazu SQL vyberte data z databáze.
 

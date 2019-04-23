@@ -8,12 +8,12 @@ ms.assetid: 51cbe7d6-5dfd-4842-bca3-f7f8a665dc84
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f349308a1f4877a79a933e32269f262e1a58dc40
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c1e94bb6da2786b989208ea1104d509883bc0724
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55939447"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042194"
 ---
 # <a name="how-to-specify-the-sample-rate-for-a-load-test-run-setting"></a>Postupy: Určení vzorkovací frekvence pro spuštění zátěžového testu
 
@@ -36,19 +36,19 @@ Zde jsou uvedeny pokyny pro vzorkovací frekvence:
 
 ## <a name="to-specify-performance-counter-sampling-rate-in-a-run-setting"></a>Chcete-li určit míry vzorkování čítače výkonu v nastavení spuštění
 
-1.  Otevřete zátěžový test.
+1. Otevřete zátěžový test.
 
      **Editoru zátěžových testů** se zobrazí. Zobrazí se strom zátěžového testu.
 
-2.  V zátěžového testování stromu v **parametrů běhu** složky, zvolte, kterou chcete určení vzorkovací frekvence pro parametr spuštění.
+2. V zátěžového testování stromu v **parametrů běhu** složky, zvolte, kterou chcete určení vzorkovací frekvence pro parametr spuštění.
 
-3.  Na **zobrazení** nabídce vyberte možnost **okno vlastností**.
+3. Na **zobrazení** nabídce vyberte možnost **okno vlastností**.
 
      Spuštění načtení nastavení uživatele kategorie a vlastnosti jsou zobrazeny v **vlastnosti** okna.
 
-4.  V **vzorkovací frekvence** vlastnost, zadejte hodnotu času, která určuje četnost, kdy bude zátěžový test shromažďovat data čítačů výkonu.
+4. V **vzorkovací frekvence** vlastnost, zadejte hodnotu času, která určuje četnost, kdy bude zátěžový test shromažďovat data čítačů výkonu.
 
-5.  Po dokončení změn vlastnosti, zvolte **Uložit** na **souboru** nabídky. Potom můžete spustit zátěžový test pomocí nového **vzorkovací frekvence** hodnotu.
+5. Po dokončení změn vlastnosti, zvolte **Uložit** na **souboru** nabídky. Potom můžete spustit zátěžový test pomocí nového **vzorkovací frekvence** hodnotu.
 
 ## <a name="see-also"></a>Viz také:
 

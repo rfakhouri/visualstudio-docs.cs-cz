@@ -1,5 +1,5 @@
 ---
-title: 'Průvodce: Vytvoření jednoduché aplikace s Vizuálem C# nebo Visual Basic | Dokumentace Microsoftu'
+title: 'Návod: Vytvoření jednoduché aplikace s Vizuálem C# nebo Visual Basic | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -9,14 +9,14 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6c45b62e2fb1d6e104621a7fdc285ca208364a22
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 5286f79f55f2a09122fb551911162bd609ce3bb2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54802613"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040556"
 ---
-# <a name="walkthrough-create-a-simple-application-with-visual-c-or-visual-basic"></a>Průvodce: Vytvoření jednoduché aplikace s Vizuálem C# nebo Visual Basic
+# <a name="walkthrough-create-a-simple-application-with-visual-c-or-visual-basic"></a>Návod: Vytvoření jednoduché aplikace s Vizuálem C# nebo Visual Basic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 V tomto návodu se seznámíte s mnoha nástroji, dialogovými okny a návrháři, které lze použít při vývoji aplikací pomocí systému Visual Studio. Vytvoříte jednoduchou aplikaci ve stylu „Hello World“, navrhnete uživatelské rozhraní (UI), vložíte kód a budete ladit chyby. A přitom získáte zkušenosti s prací v integrovaném vývojovém prostředí (IDE).  
@@ -32,7 +32,7 @@ V tomto návodu se seznámíte s mnoha nástroji, dialogovými okny a návrh�
 > [!NOTE]
 >  Tento návod vychází ze systému Visual Studio Professional, který nabízí šablonu aplikace WPF, na které vytvoříte projekt pro tento návod. Visual Studio Express pro stolní počítače se systémem Windows tuto šablonu nabízí také, ale Visual Studio Express pro Windows a Visual Studio Express pro Web nikoli. Úvodní informace o tom, jak používat Visual Studio Express pro Windows, najdete v článku [středisko pro vývojáře pro Windows Store apps](http://msdn.microsoft.com/windows/apps/br229519). Úvodní informace o tom, jak používat Visual Studio Express for Web [Začínáme s rozhraním ASP.NET](http://www.asp.net/get-started). Vaše verze aplikace Visual Studio a nastavení, která používáte, určují také názvy a umístění některých prvků uživatelského rozhraní. Zobrazit [přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
-##  <a name="BKMK_ConfigureIDE"></a> Konfigurace integrovaného vývojového prostředí  
+## <a name="BKMK_ConfigureIDE"></a> Konfigurace integrovaného vývojového prostředí  
  Při prvním spuštění aplikace Visual Studio, Visual Studio vás vyzve k přihlášení pomocí služba účtu Microsoft (MSA), [Přihlaste se k sadě Visual Studio](http://blogs.msdn.com/b/visualstudio/archive/2013/06/28/welcome-sign-in-to-visual-studio.aspx). Není nutné se přihlásit a můžete provést později.  
   
  Při spuštění vaší aplikace Visual Studio dále musíte vybrat kombinaci nastavení, která aplikuje sadu předdefinovaných nastavení rozhraní IDE. Každá kombinace nastavení byla navržena za účelem usnadnění vývoje aplikací.  
@@ -69,7 +69,7 @@ V tomto návodu se seznámíte s mnoha nástroji, dialogovými okny a návrh�
   
    Barevný motiv použit pro obrázky ve zbývající části tohoto návodu je světlý motiv. Další informace o úpravách rozhraní IDE naleznete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
-##  <a name="BKMK_CreateApp"></a> Vytvoření jednoduché aplikace  
+## <a name="BKMK_CreateApp"></a> Vytvoření jednoduché aplikace  
   
 ### <a name="create-the-project"></a>Vytvoření projektu  
  Při vytváření aplikace v systému Visual Studio je třeba nejprve vytvořit projekt a řešení. V tomto příkladu vytvoříte projekt Windows Presentation Foundation (WPF).  
@@ -199,7 +199,7 @@ V tomto návodu se seznámíte s mnoha nástroji, dialogovými okny a návrh�
   
 ##### <a name="add-code-to-display-message-boxes"></a>Přidání kódu pro zobrazení oken se zprávami  
   
-1.  Na návrhové ploše, poklikejte **zobrazení** tlačítko.  
+1. Na návrhové ploše, poklikejte **zobrazení** tlačítko.  
   
      Otevře se okno s obsahem souboru Greetings.xaml.vb, případně Greetings.xaml.cs, s kurzorem umístěným v události Button_Click. Obslužnou rutinu události click můžete také přidat takto (Pokud vloženého kódu červená vlnovka pod názvy, pravděpodobně není vybrat ovládací prvky RadioButton na návrhové ploše a je přejmenovat):  
   
@@ -220,7 +220,7 @@ V tomto návodu se seznámíte s mnoha nástroji, dialogovými okny a návrh�
     }  
     ```  
   
-2.  Pro jazyk Visual Basic zadejte následující kód:  
+2. Pro jazyk Visual Basic zadejte následující kód:  
   
     ```vb  
     If RadioButton1.IsChecked = True Then  
@@ -245,9 +245,9 @@ V tomto návodu se seznámíte s mnoha nástroji, dialogovými okny a návrh�
     }  
     ```  
   
-3.  Uložte aplikaci.  
+3. Uložte aplikaci.  
   
-##  <a name="BKMK_DebugTest"></a> Ladění a testování aplikace  
+## <a name="BKMK_DebugTest"></a> Ladění a testování aplikace  
  Dále budeme ladit aplikaci, abychom vyhledali chyby a vyzkoušeli, zda se obě okna se zprávami zobrazila správně. V následujících pokynech se dozvíte, jak sestavit a spustit ladicí program, ale později si může přečíst [vytváření aplikací WPF (WPF)](http://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c) a [ladění WPF](../debugger/debugging-wpf.md) Další informace.  
   
 ### <a name="find-and-fix-errors"></a>Vyhledání a oprava chyb  
@@ -280,29 +280,29 @@ V tomto návodu se seznámíte s mnoha nástroji, dialogovými okny a návrh�
   
 ##### <a name="to-add-breakpoints"></a>Přidání zarážek  
   
-1.  Otevřete soubor Greetings.xaml.vb, případně Greetings.xaml.cs a vyberte následující řádek: `MessageBox.Show("Hello.")`  
+1. Otevřete soubor Greetings.xaml.vb, případně Greetings.xaml.cs a vyberte následující řádek: `MessageBox.Show("Hello.")`  
   
-2.  Přidáte zarážku z nabídky vyberte **ladění**, pak **Přepnout zarážku**.  
+2. Přidáte zarážku z nabídky vyberte **ladění**, pak **Přepnout zarážku**.  
   
      ![Přepnout zarážku – příkaz v nabídce ladění](../ide/media/exploreide-togglebreakpoint.png "ExploreIDE togglebreakpoint –")  
   
      Na levém okraji okna editoru se vedle řádku kódu zobrazí červený kruh.  
   
-3.  Vyberte následující řádek: `MessageBox.Show("Goodbye.")`.  
+3. Vyberte následující řádek: `MessageBox.Show("Goodbye.")`.  
   
-4.  Stiskněte klávesu F9 pro přidání zarážky a potom stiskněte klávesu F5 pro spuštění ladění.  
+4. Stiskněte klávesu F9 pro přidání zarážky a potom stiskněte klávesu F5 pro spuštění ladění.  
   
-5.  V **Greetings** okna, vyberte **Hello** přepínač a klikněte na tlačítko **zobrazení** tlačítko.  
+5. V **Greetings** okna, vyberte **Hello** přepínač a klikněte na tlačítko **zobrazení** tlačítko.  
   
      Na řádku `MessageBox.Show("Hello.")` je zvýrazněn žlutě. V dolní části rozhraní IDE, automatické hodnoty, místní hodnoty a sledování systému windows jsou ukotveny na levé straně a okna zásobník volání, zarážky, příkaz, okamžité a výstup jsou ukotveny na pravé straně.  
   
-6.  V panelu nabídky zvolte **ladění**, **Krokovat s Vystoupením**.  
+6. V panelu nabídky zvolte **ladění**, **Krokovat s Vystoupením**.  
   
      Aplikace bude pokračovat v provádění a zobrazí se okno se zprávou obsahující slovo „Hello“.  
   
-7.  Zvolte **OK** tlačítko na okno zpráv zavřete ho.  
+7. Zvolte **OK** tlačítko na okno zpráv zavřete ho.  
   
-8.  V **Greetings** okna, vyberte **Goodbye** přepínač a klikněte na tlačítko **zobrazení** tlačítko.  
+8. V **Greetings** okna, vyberte **Goodbye** přepínač a klikněte na tlačítko **zobrazení** tlačítko.  
   
      Na řádku `MessageBox.Show("Goodbye.")` je zvýrazněn žlutě.  
   

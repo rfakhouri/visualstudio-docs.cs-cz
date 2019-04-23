@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 6a72f78e89af41509711c94a00c8ab11b11fc549
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 006a3fa3d41799a87449b8f9e111ca341a698bf5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59018217"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041644"
 ---
 # <a name="tools-for-detecting-and-managing-visual-studio-instances"></a>Nástroje pro zjišťování a správu instancí sady Visual Studio
 
@@ -44,6 +44,7 @@ Kromě toho [rozhraní API pro konfiguraci nastavení](<xref:Microsoft.VisualStu
 ```cmd
 C:\Program Files (x86)\Microsoft Visual Studio\Installer> vswhere.exe -legacy -prerelease -format json
 ```
+
 ::: moniker range="vs-2017"
 
 > [!TIP]
@@ -64,6 +65,7 @@ Protože tyto položky nejsou uložené v registru globální, existují zvláš
 1. Vyberte `HKEY_LOCAL_MACHINE` uzlu.
 
 1. V hlavní nabídce Regedit vyberte **souboru** > **načíst Hive...**  a potom vyberte soubor privátního registru, který je uložený v **AppData\Local** složky. Příklad:
+
    ```
    %localappdata%\Microsoft\VisualStudio\<config>\privateregistry.bin
    ```

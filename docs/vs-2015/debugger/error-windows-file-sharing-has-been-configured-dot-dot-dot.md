@@ -16,12 +16,12 @@ caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7664c94f626b639f4d0330b938777d545128847d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 96d65ae615522bcee43ddf5e8181e96eecc0d958
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54800036"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040854"
 ---
 # <a name="error-windows-file-sharing-has-been-configured"></a>Chyba: Sdílení souborů systému Windows bylo nakonfigurováno...
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,16 +36,16 @@ Sdílení souborů Windows nakonfigurovaný tak, aby se připojit ke vzdáleném
   
 ### <a name="to-correct-this-error"></a>Oprava této chyby  
   
-1.  Přihlaste se na místním počítači, počítač, který ladíte, které pomocí jiných názvu účtu.  
+1. Přihlaste se na místním počítači, počítač, který ladíte, které pomocí jiných názvu účtu.  
   
      —nebo—  
   
      . Odpojit od vzdáleného počítače a překonfigurujte sdílení souborů pro připojení k počítači, pomocí názvu účtu:  
   
-    1.  Na **Start** nabídky, přejděte k **Příslušenství**a potom klikněte na tlačítko **příkazový řádek**.  
+    1. Na **Start** nabídky, přejděte k **Příslušenství**a potom klikněte na tlačítko **příkazový řádek**.  
   
-    2.  Na příkazovém řádku Windows zadejte:  
+    2. Na příkazovém řádku Windows zadejte:  
   
          `net use /delete computer_name`  
   
-    3.  Změňte nastavení sdílení souborů pomocí libovolné metody popsané v nápovědě k Windows.
+    3. Změňte nastavení sdílení souborů pomocí libovolné metody popsané v nápovědě k Windows.

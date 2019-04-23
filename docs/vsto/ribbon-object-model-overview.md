@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c1bf4f23ffc6d06313c39f0ffe25b9f1a6ffe595
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 5958eb6fb8fd14dd510fa87d900efa76cb6f6a87
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56601033"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040713"
 ---
 # <a name="ribbon-object-model-overview"></a>Přehled modelu objektů pásu karet
   [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Poskytuje model silně typovaných objektů, které můžete použít k získání a nastavení vlastností ovládacích prvků pásu karet za běhu. Například můžete dynamicky naplnit ovládací prvky nabídky nebo zobrazení a skrytí ovládacích prvků kontextově. Také můžete přidat karty, skupiny a ovládací prvky na pás karet, ale pouze před načtení aplikací Office. Informace najdete v tématu [nastavit vlastnosti, které budou jen pro čtení](#SettingReadOnlyProperties).
@@ -26,12 +26,12 @@ ms.locfileid: "56601033"
 
  Tento objektový model pásu karet se skládá převážně [pásu karet třídy](#RibbonClass), [pás karet událostí](#RibbonEvents), a [třídy ovládacích prvků pásu karet](#RibbonControlClasses).
 
-##  <a name="RibbonClass"></a> Třídě pásu karet
+## <a name="RibbonClass"></a> Třídě pásu karet
  Když přidáte nový **pás karet (vizuální návrhář)** položky do projektu, Visual Studio přidá **pásu karet** třídy do projektu. **Pásu karet** třída dědí z <xref:Microsoft.Office.Tools.Ribbon.RibbonBase> třídy.
 
  Tato třída se zobrazí jako částečné třídy, která je rozdělená mezi soubor kódu pásu karet a soubor kódu Návrháře pásu karet.
 
-##  <a name="RibbonEvents"></a> Pás karet událostí
+## <a name="RibbonEvents"></a> Pás karet událostí
  **Pásu karet** třída obsahuje následující tři události:
 
 |Událost|Popis|
@@ -40,7 +40,7 @@ ms.locfileid: "56601033"
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonBase.LoadImage>|Umožní vám mezipaměť imagí v přizpůsobení pásu karet při načtení pásu karet. Pokud píšete kód k ukládání do mezipaměti imagí pásu karet v této obslužné rutiny události můžete získat zisk snížený výkon. Další informace naleznete v tématu <xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.LoadImage>.|
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonBase.Close>|Vyvolá se při zavření instance pásu karet.|
 
-##  <a name="RibbonControlClasses"></a> Ovládací prvky pásu karet
+## <a name="RibbonControlClasses"></a> Ovládací prvky pásu karet
  <xref:Microsoft.Office.Tools.Ribbon> Obor názvů obsahuje typ pro každý ovládací prvek, který se zobrazí v **ovládací prvky Ribbon Office** skupinu **nástrojů**.
 
  V následující tabulce jsou uvedeny typ pro každou `Ribbon` ovládacího prvku. Popis každého ovládacího prvku, naleznete v tématu [přehled pásu karet](../vsto/ribbon-overview.md).
@@ -89,7 +89,7 @@ ms.locfileid: "56601033"
 |Získat skupiny <xref:Microsoft.Office.Tools.Ribbon.RibbonTab>.|Použití <xref:Microsoft.Office.Tools.Ribbon.RibbonTab.Groups%2A> vlastnost.|
 |Zadejte počet řádků a sloupců, které se zobrazují v <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>.|Použití <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.RowCount%2A> a <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.ColumnCount%2A> vlastnosti.|
 
-##  <a name="SettingReadOnlyProperties"></a> Nastavit vlastnosti, které budou jen pro čtení
+## <a name="SettingReadOnlyProperties"></a> Nastavit vlastnosti, které budou jen pro čtení
  Některé vlastnosti lze nastavit pouze před na pásu karet. Chcete-li nastavit tyto vlastnosti třech místech:
 
 - V sadě Visual Studio **vlastnosti** okna.
@@ -126,7 +126,7 @@ ms.locfileid: "56601033"
  [!code-vb[Trin_Ribbon_ObjectModel#2](../vsto/codesnippet/VisualBasic/trin_Ribbon_objectmodel_dotnet4/ThisWorkbook.vb#2)]
  [!code-csharp[Trin_Ribbon_ObjectModel#2](../vsto/codesnippet/CSharp/trin_Ribbon_objectmodel_dotnet4/ThisWorkbook.cs#2)]
 
-###  <a name="ReadOnlyProperties"></a> Vlastnosti, které budou jen pro čtení
+### <a name="ReadOnlyProperties"></a> Vlastnosti, které budou jen pro čtení
  V následující tabulce jsou uvedeny vlastnosti, které lze nastavit pouze před na pásu karet.
 
 > [!NOTE]

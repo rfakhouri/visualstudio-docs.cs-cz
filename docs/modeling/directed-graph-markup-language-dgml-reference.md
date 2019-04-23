@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c18c9537358cd40d574bed47e9a7d357ee3dacb7
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b473dc706cd7183835c5d84091fb53e45337c013
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955203"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040215"
 ---
 # <a name="directed-graph-markup-language-dgml-reference"></a>Referenční dokumentace jazyka přímého značení grafů (DGML)
 
@@ -23,7 +23,7 @@ Všimněte si, že některých verzích sady Visual Studio podporují pouze podm
 > [!NOTE]
 > Při úpravách souboru .dgml usnadňuje technologie IntelliSense určení atributů, které jsou k dispozici pro každý prvek, a jejich hodnot. Pro určení barvy v atributu použijte názvy pro běžné barvy, například „Blue“ (modrá) nebo šestnáctkové hodnoty ARGB, jako je například „#ffa0b1c3“. Jazyk DGML používá malou podmnožinu formátů definice barev Windows Presentation Foundation (WPF). Další informace najdete v tématu [třída barvy](http://go.microsoft.com/fwlink/?LinkId=182345).
 
-##  <a name="DGML"></a> Syntaxe jazyka DGML
+## <a name="DGML"></a> Syntaxe jazyka DGML
 
 Následující tabulka popisuje typy prvků, které se používají v jazyce DGML:
 
@@ -300,7 +300,7 @@ Následující tabulka popisuje typy prvků, které se používají v jazyce DGM
   </DirectedGraph>
   ```
 
-###  <a name="AddAlias"></a> Aliasy pro běžně používané cesty
+### <a name="AddAlias"></a> Aliasy pro běžně používané cesty
 
 Nahrazení běžně používaných cest aliasy pomáhá zmenšit velikost souboru .dgml a snižuje čas potřebný k načtení nebo uložení souboru. Chcete-li vytvořit alias, přidejte `<Paths></Paths>` část na konec souboru .dgml. V této části, přidejte `<Path/>` prvek, který chcete definovat jako alias pro cestu:
 

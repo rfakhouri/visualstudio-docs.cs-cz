@@ -11,12 +11,12 @@ ms.assetid: 8fe5e2ab-a424-4173-9d39-dd082c4d58d0
 caps.latest.revision: 30
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 03c9ebb2a2c84c400b4fb2d3aea4c3ec121fbf27
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 6d8050ea7447a67f50f42157d57c17d3f1f8a329
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57870280"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60038629"
 ---
 # <a name="starting-to-develop-visual-studio-extensions"></a>Začínáme s vývojem rozšíření sady Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,23 +42,23 @@ Pokud jste nikdy napsali před rozšíření sady Visual Studio, pravděpodobně
 
  V praxi jsme našli, funkce, které většinu lidí by rádi rozšířili jsou příkazy, nabídky a panely nástrojů, windows, technologie IntelliSense a projekty. Tady jsou odkazy na relevantní části:
 
--   [Rozšiřování nabídek a příkazů](../extensibility/extending-menus-and-commands.md): Přidat vlastní položky do sady Visual Studio nabídek a panelů nástrojů. Můžete využít k otevření nové funkce sady Visual Studio nebo vlastních aplikací externí pomocné rutiny. Můžete také zadat vlastní klávesové zkratky pro vaše položky nabídky.
+- [Rozšiřování nabídek a příkazů](../extensibility/extending-menus-and-commands.md): Přidat vlastní položky do sady Visual Studio nabídek a panelů nástrojů. Můžete využít k otevření nové funkce sady Visual Studio nebo vlastních aplikací externí pomocné rutiny. Můžete také zadat vlastní klávesové zkratky pro vaše položky nabídky.
 
--   [Rozšíření a přizpůsobení nástrojů Windows](../extensibility/extending-and-customizing-tool-windows.md): rozšíření existujícími okny nástrojů nebo vytvořit vlastní panel nástrojů. Například můžete přidat nové vlastnosti **vlastnosti**, nebo můžete vytvořit nového okna nástroje pro přidání dalších funkcí.
+- [Rozšíření a přizpůsobení nástrojů Windows](../extensibility/extending-and-customizing-tool-windows.md): rozšíření existujícími okny nástrojů nebo vytvořit vlastní panel nástrojů. Například můžete přidat nové vlastnosti **vlastnosti**, nebo můžete vytvořit nového okna nástroje pro přidání dalších funkcí.
 
--   [Editor a rozšíření služeb jazyka](../extensibility/editor-and-language-service-extensions.md): Přidat vlastní přizpůsobení informace IntelliSense poskytované pro jazyky Visual Studio, nebo vytvoří podpora pro nový programovací jazyky. Můžete vytvořit nový příkaz dokončování, nabízení návrhů a nové popisky rychlé informace. Pomocí žárovek můžete přidat refaktoringu návrhy a opravy kódu pro podporu nové programovací jazyky.
+- [Editor a rozšíření služeb jazyka](../extensibility/editor-and-language-service-extensions.md): Přidat vlastní přizpůsobení informace IntelliSense poskytované pro jazyky Visual Studio, nebo vytvoří podpora pro nový programovací jazyky. Můžete vytvořit nový příkaz dokončování, nabízení návrhů a nové popisky rychlé informace. Pomocí žárovek můžete přidat refaktoringu návrhy a opravy kódu pro podporu nové programovací jazyky.
 
--   [Rozšíření projektů](../extensibility/extending-projects.md)
+- [Rozšíření projektů](../extensibility/extending-projects.md)
 
--   [Rozšíření uživatelských nastavení a možností](../extensibility/extending-user-settings-and-options.md)
+- [Rozšíření uživatelských nastavení a možností](../extensibility/extending-user-settings-and-options.md)
 
--   [Rozšíření vlastností a okno Vlastnosti](../extensibility/extending-properties-and-the-property-window.md)
+- [Rozšíření vlastností a okno Vlastnosti](../extensibility/extending-properties-and-the-property-window.md)
 
--   [Rozšíření dalších částí sady Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)
+- [Rozšíření dalších částí sady Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)
 
--   [Izolované prostředí sady Visual Studio](../extensibility/visual-studio-isolated-shell.md)
+- [Izolované prostředí sady Visual Studio](../extensibility/visual-studio-isolated-shell.md)
 
-##  <a name="BKMK_ProjectTemplate"></a> Jaké šablony projektu jsou poskytovány VSSDK?
+## <a name="BKMK_ProjectTemplate"></a> Jaké šablony projektu jsou poskytovány VSSDK?
  Dva hlavní typy rozšíření jsou rozšíření VSPackages a rozhraní MEF. Rozšíření VSPackage se obecně používají pro rozšíření, které používají nebo rozšířit příkazů, nástrojů oken a projekty. Rozšíření rozhraní MEF umožňují rozšířit nebo upravit editoru sady Visual Studio.
 
  Pro rozšíření jazyka Visual C# a Visual Basic poskytuje VSSDK prázdná šablona projektu VSIX, které můžete použít společně s nové šablony položky, které vytvářejí, příkazy nabídky, panely nástrojů a rozšíření editoru. Další informace najdete v tématu [co je nového ve službě Visual Studio 2015 SDK](../extensibility/what-s-new-in-the-visual-studio-2015-sdk.md). Můžete také pomocí této šablony balíček šablony projektů, fragmenty kódu a další artefakty pro distribuci ostatním uživatelům.
@@ -67,17 +67,17 @@ Pokud jste nikdy napsali před rozšíření sady Visual Studio, pravděpodobně
 
  Šablona izolovaného prostředí slouží k rozšíření v prostředí nástroje Visual Studio, kterou můžete značku a distribuovat jako vlastní verzi balíčku. Následující témata ukazují, jak začít pracovat s jednotlivými typy rozšíření:
 
--   Příkazy nabídky: [Vytváření rozšíření pomocí příkazu nabídky](../extensibility/creating-an-extension-with-a-menu-command.md)
+- Příkazy nabídky: [Vytváření rozšíření pomocí příkazu nabídky](../extensibility/creating-an-extension-with-a-menu-command.md)
 
--   Nástroje systému windows: [Vytváření rozšíření pomocí panelu nástrojů](../extensibility/creating-an-extension-with-a-tool-window.md)
+- Nástroje systému windows: [Vytváření rozšíření pomocí panelu nástrojů](../extensibility/creating-an-extension-with-a-tool-window.md)
 
--   Rozšíření editoru: [Vytváření rozšíření pomocí šablony položky editoru](../extensibility/creating-an-extension-with-an-editor-item-template.md)
+- Rozšíření editoru: [Vytváření rozšíření pomocí šablony položky editoru](../extensibility/creating-an-extension-with-an-editor-item-template.md)
 
--   Základní rozšíření VSPackages: [Vytváření rozšíření pomocí VSPackage](../extensibility/creating-an-extension-with-a-vspackage.md)
+- Základní rozšíření VSPackages: [Vytváření rozšíření pomocí VSPackage](../extensibility/creating-an-extension-with-a-vspackage.md)
 
--   Šablona projektu VSIX: [Začínáme se šablonou projektu VSIX](../extensibility/getting-started-with-the-vsix-project-template.md)
+- Šablona projektu VSIX: [Začínáme se šablonou projektu VSIX](../extensibility/getting-started-with-the-vsix-project-template.md)
 
--   Visual Studio izolované prostředí: [Návod: Vytváření základní aplikace izolovaného prostředí](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)
+- Visual Studio izolované prostředí: [Návod: Vytváření základní aplikace izolovaného prostředí](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)
 
 ## <a name="how-do-i-get-my-extension-to-look-like-visual-studio"></a>Jak získám mého rozšíření, aby vypadala jako Visual Studio?
  Skvělé tipy k návrhu uživatelského rozhraní pro rozšíření v [Visual Studio zkušenosti uživatelů](../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md).

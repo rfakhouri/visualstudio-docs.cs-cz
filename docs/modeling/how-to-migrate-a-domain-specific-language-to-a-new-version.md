@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 46fa0dbcc5ab80ce567d4e0afd64d8990006204b
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: d8ca2366111e0e87e8e95db66f9bdb146016adb8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59663242"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040129"
 ---
 # <a name="how-to-migrate-a-domain-specific-language-to-a-new-version"></a>Postupy: Migrace jazyka specifického pro doménu na novou verzi
 Můžete migrovat projekty, které definice a používání jazyka specifického pro doménu na [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] oproti verzi [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] , který byl distribuován s [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)].
@@ -28,9 +28,9 @@ Můžete migrovat projekty, které definice a používání jazyka specifického
 
 #### <a name="to-prepare-projects-for-migration"></a>Příprava migrace projektů.
 
--   Ujistěte se, **.csproj** a **.sln** lze zapisovat soubory. Pokud jsou pod správou zdrojových kódů, ujistěte se, že jsou rezervovány.
+- Ujistěte se, **.csproj** a **.sln** lze zapisovat soubory. Pokud jsou pod správou zdrojových kódů, ujistěte se, že jsou rezervovány.
 
--   Vytvořte kopii složky, které máte v úmyslu migrovat.
+- Vytvořte kopii složky, které máte v úmyslu migrovat.
 
 ## <a name="migrating-a-collection-of-projects"></a>Migrace kolekce projektů
 
@@ -38,7 +38,7 @@ Můžete migrovat projekty, které definice a používání jazyka specifického
 
 1. Spusťte nástroj pro migraci DSL.
 
-   -   Můžete dvakrát klikněte na panel nástrojů v Průzkumníku Windows (nebo Průzkumníka souborů) nebo spusťte nástroj z příkazového řádku. Tento nástroj je v tomto umístění:
+   - Můžete dvakrát klikněte na panel nástrojů v Průzkumníku Windows (nebo Průzkumníka souborů) nebo spusťte nástroj z příkazového řádku. Tento nástroj je v tomto umístění:
 
         **%ProgramFiles%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Tools\DSLTools\DslProjectsMigrationTool.exe**
 
@@ -50,37 +50,37 @@ Můžete migrovat projekty, které definice a používání jazyka specifického
 
 3. Kontrola stromu projektů a zrušte zaškrtnutí políčka projekty, které nechcete převést.
 
-   -   Vyberte projekt nebo řešení zobrazíte seznam změn, které způsobí, že nástroj.
+   - Vyberte projekt nebo řešení zobrazíte seznam změn, které způsobí, že nástroj.
 
        > [!NOTE]
        >  Zaškrtávací políčka, které se zobrazují vedle názvu složky nemají žádný vliv. Je třeba rozbalit složky ke kontrole projekty a řešení.
 
 4. Převod projektů.
 
-   1.  Klikněte na tlačítko **převést**.
+   1. Klikněte na tlačítko **převést**.
 
         Před každý soubor projektu je převést, kopie _projektu_**.csproj** budou uloženy jako _projektu_**. vs2008.csproj**
 
         Kopírování jednotlivých _řešení_**.sln** budou uloženy jako _řešení_**. vs2008.sln**
 
-   2.  Prozkoumejte všechny neúspěšné převody, které jsou hlášeny.
+   2. Prozkoumejte všechny neúspěšné převody, které jsou hlášeny.
 
         V textovém okně jsou hlášeny chyby. Kromě toho stromové zobrazení ukazuje rvená vlaječka v každém uzlu, který se nepovedlo převést. Můžete kliknout na uzel, který má získat další informace o této chybě.
 
 5. **Transformovat všechny šablony** v řešení obsahující úspěšně převeden projekty.
 
-   1.  Otevřete řešení.
+   1. Otevřete řešení.
 
-   2.  Klikněte na tlačítko **Transformovat všechny šablony** tlačítko v hlavičce Průzkumníku řešení.
+   2. Klikněte na tlačítko **Transformovat všechny šablony** tlačítko v hlavičce Průzkumníku řešení.
 
        > [!NOTE]
        >  Tento krok můžete provést zbytečné. Další informace najdete v tématu [jak automatizovat Transformovat všechny šablony](/previous-versions/visualstudio/visual-studio-2012/ff521399\(v\=vs.110\)).
 
 6. Aktualizujte váš vlastní kód v projektech převedený.
 
-   -   Pokus o sestavení projektů a prozkoumejte všechny chyby.
+   - Pokus o sestavení projektů a prozkoumejte všechny chyby.
 
-   -   Otestujte návrháře.
+   - Otestujte návrháře.
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 

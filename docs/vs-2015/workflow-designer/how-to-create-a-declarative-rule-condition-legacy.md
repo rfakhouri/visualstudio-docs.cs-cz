@@ -13,12 +13,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ba2db8f1accafab1bdb20eacab73b2a963391075
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: dbdcc268b71f2926307b500126840391dd5308fd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54758875"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039527"
 ---
 # <a name="how-to-create-a-declarative-rule-condition-legacy"></a>Postupy: Vytvoření podmínky deklarativního pravidla (starší verze)
 Toto téma popisuje, jak deklarovat podmínku pravidla, která pomocí starší verze [!INCLUDE[wfd1](../includes/wfd1-md.md)] , který cílí [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] nebo [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
@@ -27,37 +27,37 @@ Toto téma popisuje, jak deklarovat podmínku pravidla, která pomocí starší 
   
  Podmínky deklarativního pravidla se používají v následujících aktivit Windows Workflow Foundation out-of-box:  
   
--   [ConditionedActivityGroup](http://go.microsoft.com/fwlink?LinkID=65017)  
+- [ConditionedActivityGroup](http://go.microsoft.com/fwlink?LinkID=65017)  
   
--   [IfElseBranchActivity](http://go.microsoft.com/fwlink?LinkID=65034)  
+- [IfElseBranchActivity](http://go.microsoft.com/fwlink?LinkID=65034)  
   
--   [Aktivitou typu ReplicatorActivity](http://go.microsoft.com/fwlink?LinkID=65039)  
+- [Aktivitou typu ReplicatorActivity](http://go.microsoft.com/fwlink?LinkID=65039)  
   
--   [Aktivita typu WhileActivity](http://go.microsoft.com/fwlink?LinkID=65049)  
+- [Aktivita typu WhileActivity](http://go.microsoft.com/fwlink?LinkID=65049)  
   
--   [SequentialWorkflowActivity](http://go.microsoft.com/fwlink?LinkID=65040)  
+- [SequentialWorkflowActivity](http://go.microsoft.com/fwlink?LinkID=65040)  
   
--   [StateMachineWorkflowActivity](http://go.microsoft.com/fwlink?LinkID=65045)  
+- [StateMachineWorkflowActivity](http://go.microsoft.com/fwlink?LinkID=65045)  
   
 ### <a name="to-create-a-declarative-rule-condition-using-the-rule-condition-editor"></a>K vytvoření podmínky deklarativního pravidla pomocí Editor podmínek pravidla  
   
-1.  V rámci aktivity **vlastnosti** okna, klikněte na tlačítko **podmínku** vlastnost nebo **UntilCondition** vlastnost, v závislosti na aktivitě.  
+1. V rámci aktivity **vlastnosti** okna, klikněte na tlačítko **podmínku** vlastnost nebo **UntilCondition** vlastnost, v závislosti na aktivitě.  
   
-2.  Vyberte **Podmínka deklarativního pravidla** ze seznamu pro vlastnost.  
+2. Vyberte **Podmínka deklarativního pravidla** ze seznamu pro vlastnost.  
   
-3.  Rozbalte **podmínku** nebo **UntilCondition** vlastnost.  
+3. Rozbalte **podmínku** nebo **UntilCondition** vlastnost.  
   
-4.  Klikněte na tlačítko **ConditionName** vlastnost.  
+4. Klikněte na tlačítko **ConditionName** vlastnost.  
   
-5.  Klikněte na tlačítko **ConditionName** symbol tří teček **[...]**  otevřít **vyberte podmínku** dialogové okno.  
+5. Klikněte na tlačítko **ConditionName** symbol tří teček **[...]**  otevřít **vyberte podmínku** dialogové okno.  
   
-6.  Klikněte na tlačítko **novou podmínku** otevřít **Editor podmínek pravidla** dialogové okno.  
+6. Klikněte na tlačítko **novou podmínku** otevřít **Editor podmínek pravidla** dialogové okno.  
   
-7.  Zadejte výraz podmínky v **podmínku** textového pole.  
+7. Zadejte výraz podmínky v **podmínku** textového pole.  
   
      Informace o tom, jak vytvořit podmínku výrazů naleznete v tématu [dialogové okno pravidla podmínky editoru (starší verze)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md).  
   
-8.  Po dokončení vytváření výraz podmínky, klikněte na tlačítko **OK** a zavřete dialogové okno Vytvořit podmínka pro pravidlo s názvem přiřazené.  
+8. Po dokončení vytváření výraz podmínky, klikněte na tlačítko **OK** a zavřete dialogové okno Vytvořit podmínka pro pravidlo s názvem přiřazené.  
   
      **Vyberte podmínku** zobrazí se dialogové okno.  
   

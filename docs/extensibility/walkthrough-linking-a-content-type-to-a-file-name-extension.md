@@ -1,5 +1,5 @@
 ---
-title: 'Průvodce: Propojení typu obsahu příponu názvu souboru | Dokumentace Microsoftu'
+title: 'Návod: Propojení typu obsahu příponu názvu souboru | Dokumentace Microsoftu'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,14 +10,14 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e55c06ab5ae07c9b84f9d6462d1a535537e5f69b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 16f3a33ff273b62c701eae66d8fda1ff7178c5c9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56692837"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042391"
 ---
-# <a name="walkthrough-link-a-content-type-to-a-file-name-extension"></a>Průvodce: Typ obsahu propojit příponu názvu souboru
+# <a name="walkthrough-link-a-content-type-to-a-file-name-extension"></a>Návod: Typ obsahu propojit příponu názvu souboru
 Můžete definovat vlastní typ obsahu a odkaz na něj příponu názvu souboru s použitím rozšíření editoru Managed Extensibility Framework (MEF). V některých případech přípona souboru už definuje služba jazyka. Ale na jeho použití s MEF, je třeba stále propojit ho typu obsahu.
 
 ## <a name="prerequisites"></a>Požadavky
@@ -25,23 +25,23 @@ Můžete definovat vlastní typ obsahu a odkaz na něj příponu názvu souboru 
 
 ## <a name="create-a-mef-project"></a>Vytvořit projekt rozhraní MEF
 
-1.  Vytvořte projekt VSIX C#. (V **nový projekt** dialogového okna, vyberte **Visual C# / rozšíření**, pak **projekt VSIX**.) Pojmenujte řešení `ContentTypeTest`.
+1. Vytvořte projekt VSIX C#. (V **nový projekt** dialogového okna, vyberte **Visual C# / rozšíření**, pak **projekt VSIX**.) Pojmenujte řešení `ContentTypeTest`.
 
-2.  V **source.extension.vsixmanifest** souboru, přejděte na **prostředky** kartu a nastavit **typ** pole **Microsoft.VisualStudio.MefComponent**, **zdroj** pole **projekt v aktuálním řešení**a **projektu** pole pro název projektu.
+2. V **source.extension.vsixmanifest** souboru, přejděte na **prostředky** kartu a nastavit **typ** pole **Microsoft.VisualStudio.MefComponent**, **zdroj** pole **projekt v aktuálním řešení**a **projektu** pole pro název projektu.
 
 ## <a name="define-the-content-type"></a>Typ obsahu definovat
 
-1.  Přidejte soubor třídy a pojmenujte ho `FileAndContentTypes`.
+1. Přidejte soubor třídy a pojmenujte ho `FileAndContentTypes`.
 
-2.  Přidejte odkazy na následující sestavení:
+2. Přidejte odkazy na následující sestavení:
 
-    1.  System.ComponentModel.Composition
+    1. System.ComponentModel.Composition
 
-    2.  Microsoft.VisualStudio.Text.Logic
+    2. Microsoft.VisualStudio.Text.Logic
 
-    3.  Microsoft.VisualStudio.CoreUtility
+    3. Microsoft.VisualStudio.CoreUtility
 
-3.  Přidejte následující `using` direktivy.
+3. Přidejte následující `using` direktivy.
 
     ```csharp
     using System.ComponentModel.Composition;
@@ -50,14 +50,14 @@ Můžete definovat vlastní typ obsahu a odkaz na něj příponu názvu souboru 
 
     ```
 
-4.  Deklarujte statickou třídu, která obsahuje definice.
+4. Deklarujte statickou třídu, která obsahuje definice.
 
     ```csharp
     internal static class FileAndContentTypeDefinitions
     {. . .}
     ```
 
-5.  V této třídě exportovat <xref:Microsoft.VisualStudio.Utilities.ContentTypeDefinition> s názvem "hid" a deklarovat jeho základní definici, aby se "text".
+5. V této třídě exportovat <xref:Microsoft.VisualStudio.Utilities.ContentTypeDefinition> s názvem "hid" a deklarovat jeho základní definici, aby se "text".
 
     ```csharp
     internal static class FileAndContentTypeDefinitions
@@ -71,7 +71,7 @@ Můžete definovat vlastní typ obsahu a odkaz na něj příponu názvu souboru 
 
 ## <a name="link-a-file-name-extension-to-a-content-type"></a>Odkaz na typ obsahu příponu názvu souboru
 
--   Pokud chcete namapovat příponu názvu souboru tohoto typu obsahu, exportovat <xref:Microsoft.VisualStudio.Utilities.FileExtensionToContentTypeDefinition> , který má příponu *HID* a typu obsahu "hid".
+- Pokud chcete namapovat příponu názvu souboru tohoto typu obsahu, exportovat <xref:Microsoft.VisualStudio.Utilities.FileExtensionToContentTypeDefinition> , který má příponu *HID* a typu obsahu "hid".
 
     ```csharp
     internal static class FileAndContentTypeDefinitions
@@ -90,11 +90,11 @@ Můžete definovat vlastní typ obsahu a odkaz na něj příponu názvu souboru 
 
 ## <a name="add-the-content-type-to-an-editor-export"></a>Přidat typ obsahu k editoru export
 
-1.  Vytvoření rozšíření editoru. Například můžete použít rozšíření piktogram okraj, je popsáno v [názorný postup: Vytvoření okrajového piktogramu](../extensibility/walkthrough-creating-a-margin-glyph.md).
+1. Vytvoření rozšíření editoru. Například můžete použít rozšíření piktogram okraj, je popsáno v [názorný postup: Vytvoření okrajového piktogramu](../extensibility/walkthrough-creating-a-margin-glyph.md).
 
-2.  Přidání třídy, které jste definovali v tomto postupu.
+2. Přidání třídy, které jste definovali v tomto postupu.
 
-3.  Při exportu rozšíření třídy, přidejte <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> typu "hid" k němu.
+3. Při exportu rozšíření třídy, přidejte <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> typu "hid" k němu.
 
     ```csharp
     [Export]

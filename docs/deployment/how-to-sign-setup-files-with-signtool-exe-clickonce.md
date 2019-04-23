@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: edc6630bfe8dd5ee1fc48fe0d5abe189a63ab330
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2f31ebeb18790ddf76c42585868aea8a04547bfb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56619963"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041064"
 ---
 # <a name="how-to-sign-setup-files-with-signtoolexe-clickonce"></a>Postupy: Podepsání souborů instalace pomocí SignTool.exe (ClickOnce)
 Můžete použít *SignTool.exe* podepsat instalační program (*setup.exe*). Tento proces pomáhá zajistit, že zmanipulovanou soubory nejsou nainstalované v počítačích koncových uživatelů.
@@ -34,23 +34,23 @@ Můžete použít *SignTool.exe* podepsat instalační program (*setup.exe*). Te
 
 ### <a name="to-generate-an-unsigned-setup-program-and-sign-later"></a>Generovat nepodepsané instalační program a podepsání později
 
-1.  Ve vývojovém počítači, nainstalujte certifikát, který chcete podepsat manifesty s.
+1. Ve vývojovém počítači, nainstalujte certifikát, který chcete podepsat manifesty s.
 
-2.  Vyberte projekt v **Průzkumníka řešení**.
+2. Vyberte projekt v **Průzkumníka řešení**.
 
-3.  Na **projektu** nabídky, klikněte na tlačítko *ProjectName* **vlastnosti**.
+3. Na **projektu** nabídky, klikněte na tlačítko *ProjectName* **vlastnosti**.
 
-4.  V **podepisování** zrušte **podepsat manifesty ClickOnce**.
+4. V **podepisování** zrušte **podepsat manifesty ClickOnce**.
 
-5.  V **publikovat** klikněte na **požadavky**.
+5. V **publikovat** klikněte na **požadavky**.
 
-6.  Ověřte, zda jsou vybrány všechny požadavky a klikněte na **OK**.
+6. Ověřte, zda jsou vybrány všechny požadavky a klikněte na **OK**.
 
-7.  V **publikovat** stránce, ověřte nastavení publikování a pak klikněte na tlačítko **publikovat**.
+7. V **publikovat** stránce, ověřte nastavení publikování a pak klikněte na tlačítko **publikovat**.
 
      Řešení publikuje manifestu nepodepsané aplikace, manifest nasazení bez znaménka, specifické pro verzi soubory a bez znaménka instalační program do umístění složky pro publikování.
 
-8.  V **publikovat** klikněte na **požadavky**.
+8. V **publikovat** klikněte na **požadavky**.
 
 9. V **požadavky** dialogové okno, zrušte zaškrtnutí **vytvořit instalační program pro nainstalování nezbytných součástí**.
 

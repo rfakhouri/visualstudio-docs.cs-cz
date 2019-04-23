@@ -8,17 +8,17 @@ ms.assetid: 8ed68602-4e28-46fe-b39f-f41979b308a2
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4f71a2f7b316c8257c5741e903bd54cb0288fdcb
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: cc14aadfafb16fcae571ab66e5811ea465cb55a9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54797800"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040991"
 ---
 # <a name="application-patterns-for-visual-studio"></a>Modely aplikací pro sadu Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-##  <a name="BKMK_WindowInteractions"></a> Okno interakce
+## <a name="BKMK_WindowInteractions"></a> Okno interakce
 
 ### <a name="overview"></a>Přehled
  Dva hlavní okno typy používané v sadě Visual Studio jsou editory dokumentu a okna nástrojů. Rare, ale možné, jsou velké nemodální dialogová okna. I když jsou všechny nemodální v prostředí, jaké se používají modely jsou fundamentálně odlišný způsob. Toto téma popisuje rozdíl mezi okny dokumentů, oken nástrojů a nemodální dialogová okna. Modální dialogové okno vzorce jsou popsané v [dialogů](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_Dialogs).
@@ -40,24 +40,24 @@ ms.locfileid: "54797800"
 |**Instance**|*Více instancemi*<br /><br /> Několik editory je možné otevřít ve stejný čas a úpravy různé soubory, zatímco některé editory umožňují stejný soubor otevřen v editoru více než jeden (pomocí **okno > nové okno** příkaz).<br /><br /> Jeden editor může v době, (Návrhář projektu) úpravy jeden nebo více souborů.|*Jeden nebo více instance*<br /><br /> Obsah změnit odrážejí kontextu (stejně jako v prohlížeči vlastností) nebo nabízených zaměření/kontextu ostatní okna (seznam úkolů, Průzkumník řešení).<br /><br /> Okna nástrojů jednou instancí a s více instancemi by měly být přidružené aktivního okna dokumentu, pokud není k dispozici pádný důvod, proč k.|*Jednou instancí*|
 |**Příklady**|**Textových editorů**, jako je například editor kódu<br /><br /> **Návrh povrchy**, jako je například Návrhář formulářů nebo povrchu modelování<br /><br /> **Ovládací prvek rozložení, podobně jako dialogová okna**, jako je například Nástroj Manifest Designer|**Průzkumníka řešení** poskytuje řešení a projekty, které jsou obsaženy v rámci řešení<br /><br /> **Průzkumníka serveru** obsahuje hierarchické zobrazení připojení serverů a dat, které uživatel vybere možnost otevření v okně. Otevření objektu z hierarchie databáze, jako je například dotazu, otevře se okno dokumentu a umožňuje uživateli upravit dotaz.<br /><br /> **Prohlížeč vlastností** zobrazí vlastnosti objektu vybraného v okně dokumentu nebo jiného panelu nástrojů. Vlastnosti se zobrazí v zobrazení hierarchického tabulky nebo v složitějšími ovládacími prvky jako dialogové okno a umožní uživateli nastavit hodnoty těchto vlastností.||
 
-##  <a name="BKMK_ToolWindows"></a> Nástroje systému windows
+## <a name="BKMK_ToolWindows"></a> Nástroje systému windows
 
 ### <a name="overview"></a>Přehled
  Okna nástrojů podporují uživatelova pracovní, ke které dochází v dokumentu systému windows. Jejich slouží k zobrazení hierarchie, která představuje základní kořenovým objektem, který poskytuje Visual Studio a můžete pracovat s.
 
  Při zvažování nové okno nástroje v integrovaném vývojovém prostředí, měli Autoři:
 
--   Použít příslušné úlohy existujícími okny nástrojů a ne vytvořit nové s podobnými funkcemi. Nový nástroj windows musí být vytvořené jenom Pokud nabízejí výrazně odlišné "nástroje" nebo funkce, které nelze integrovat do podobné okna, nebo to zapnutím existujícímu oknu přesouvání rozbočovači.
+- Použít příslušné úlohy existujícími okny nástrojů a ne vytvořit nové s podobnými funkcemi. Nový nástroj windows musí být vytvořené jenom Pokud nabízejí výrazně odlišné "nástroje" nebo funkce, které nelze integrovat do podobné okna, nebo to zapnutím existujícímu oknu přesouvání rozbočovači.
 
--   V případě potřeby v horní části okna nástroje, použijte panel standardních příkazů.
+- V případě potřeby v horní části okna nástroje, použijte panel standardních příkazů.
 
--   Bylo v souladu s vzory již existuje v jiné nástroje systému windows pro ovládací prvek prezentace a navigace klávesnicí.
+- Bylo v souladu s vzory již existuje v jiné nástroje systému windows pro ovládací prvek prezentace a navigace klávesnicí.
 
--   Bylo v souladu s prezentace ovládací prvek v jiné nástroje systému windows.
+- Bylo v souladu s prezentace ovládací prvek v jiné nástroje systému windows.
 
--   Nástroj pro konkrétní dokumenty systém windows bude auto zobrazené, pokud je to možné, takže se zobrazí, pouze když se aktivuje nadřazený dokument.
+- Nástroj pro konkrétní dokumenty systém windows bude auto zobrazené, pokud je to možné, takže se zobrazí, pouze když se aktivuje nadřazený dokument.
 
--   Zkontrolujte, že je jejich obsah okna navigaci pomocí klávesnice (klávesy se šipkami podpory).
+- Zkontrolujte, že je jejich obsah okna navigaci pomocí klávesnice (klávesy se šipkami podpory).
 
 #### <a name="tool-window-states"></a>Stavy okno nástroje
  Okna nástrojů Visual Studio mají různé stavy, z nichž některé jsou uživatel aktivoval (jako je funkce automatického skrytí). Ostatní stavy, jako například automatické viditelné, povolit okna nástrojů ve správném kontextu se zobrazí a skryje, když nejsou potřeba. Celkem existuje pět stavů okno nástroje.
@@ -131,7 +131,7 @@ ms.locfileid: "54797800"
 |**Ladicí program:** skupiny systému windows, které jsou specifické pro úlohy ladění a monitorování aktivit|Zaregistruje||
 |**Ladicí program:** skupiny systému windows, které jsou specifické pro úlohy ladění a monitorování aktivit|Vlákna||
 
-##  <a name="BKMK_DocumentEditorConventions"></a> Konvence pro dokumenty editoru
+## <a name="BKMK_DocumentEditorConventions"></a> Konvence pro dokumenty editoru
 
 ### <a name="document-interactions"></a>Interakce dokumentu
  "Dokumentu a" je největší prostor v rámci rozhraní IDE a je, kde uživatel obecně se zaměřuje jejich pozornost k dokončení úloh jsou nápomocen doplňkové nástroje systému windows. Editory dokumentu představují základní jednotky práce, kterou uživatel otevře a uloží v rámci sady Visual Studio. Zachování silné představu o výběr vázané na Průzkumníka řešení nebo jiných oknech aktivní hierarchii. Uživatel by měl být odkazoval na jeden z těchto oken hierarchie a vědět, kde se dokument nachází a jeho vztah k řešení, projektu nebo jiné kořenový objekt poskytovaný balíček sady Visual Studio.
@@ -140,21 +140,21 @@ ms.locfileid: "54797800"
 
 #### <a name="common-interactions-for-the-document-well"></a>Běžné interakce dobře dokumentu
 
--   Udržovat konzistentní interakce modelu společné **nový soubor** a **otevřít soubor** prostředí.
+- Udržovat konzistentní interakce modelu společné **nový soubor** a **otevřít soubor** prostředí.
 
--   Související funkce do nabídky a související windows aktualizujte, když se otevře okno dokumentu.
+- Související funkce do nabídky a související windows aktualizujte, když se otevře okno dokumentu.
 
--   Příkazy nabídky jsou odpovídajícím způsobem integrovaná v běžných nabídkách, jako **upravit**, **formátu**, a **zobrazení** nabídky. Vyžadovat značné množství specializované příkazy jsou k dispozici, mohou být vytvořeny nové nabídky který se zobrazí, pouze pokud dokument má fokus.
+- Příkazy nabídky jsou odpovídajícím způsobem integrovaná v běžných nabídkách, jako **upravit**, **formátu**, a **zobrazení** nabídky. Vyžadovat značné množství specializované příkazy jsou k dispozici, mohou být vytvořeny nové nabídky který se zobrazí, pouze pokud dokument má fokus.
 
--   Integrovaném panelu nástrojů můžete umístit v horní části editoru. Je to vhodnější než s tím, že samostatných nástrojů, které se zobrazí mimo editor.
+- Integrovaném panelu nástrojů můžete umístit v horní části editoru. Je to vhodnější než s tím, že samostatných nástrojů, které se zobrazí mimo editor.
 
--   Vždy zachovat výběr v Průzkumníku řešení nebo podobné aktivní okno hierarchie.
+- Vždy zachovat výběr v Průzkumníku řešení nebo podobné aktivní okno hierarchie.
 
--   Dvojitým kliknutím dokumentů v Průzkumníku řešení by provedly to stejné jako **otevřít**.
+- Dvojitým kliknutím dokumentů v Průzkumníku řešení by provedly to stejné jako **otevřít**.
 
--   Pokud více než jeden editor lze použít na typ dokumentu, uživatel by měl možné přepsat nebo obnovit výchozí akce na typ daného dokumentu pomocí **otevřít v** dialogové okno tak, že kliknete pravým tlačítkem na soubor a vyberete **otevřít S** z místní nabídky.
+- Pokud více než jeden editor lze použít na typ dokumentu, uživatel by měl možné přepsat nebo obnovit výchozí akce na typ daného dokumentu pomocí **otevřít v** dialogové okno tak, že kliknete pravým tlačítkem na soubor a vyberete **otevřít S** z místní nabídky.
 
--   Nezačleňujte průvodce v dokumentu kontejneru.
+- Nezačleňujte průvodce v dokumentu kontejneru.
 
 ### <a name="user-expectations-for-specific-document-types"></a>Očekávání uživatele pro určité typy dokumentů
  Existuje několik různých typů základní editory dokumentu a každý má sadu interakcí, které jsou konzistentní s ostatními stejného typu.
@@ -175,71 +175,71 @@ ms.locfileid: "54797800"
 
 #### <a name="text-based-editors"></a>Textové editory
 
--   Dokument se podílí na kartě modelu ve verzi preview, umožňuje zobrazení náhledu dokumentu bez jeho otevření.
+- Dokument se podílí na kartě modelu ve verzi preview, umožňuje zobrazení náhledu dokumentu bez jeho otevření.
 
--   Strukturu dokumentu může být reprezentován v rámci časového období doprovodný nástroj, jako je například Osnova dokumentu.
+- Strukturu dokumentu může být reprezentován v rámci časového období doprovodný nástroj, jako je například Osnova dokumentu.
 
--   IntelliSense (v případě potřeby) se chovají konzistentně s dalšími editory kódu.
+- IntelliSense (v případě potřeby) se chovají konzistentně s dalšími editory kódu.
 
--   Automaticky otevíraná okna nebo usnadnění uživatelského rozhraní postupujte podle podobných styly a vzory pro existující podobným uživatelským rozhraním, jako je třeba CodeLens.
+- Automaticky otevíraná okna nebo usnadnění uživatelského rozhraní postupujte podle podobných styly a vzory pro existující podobným uživatelským rozhraním, jako je třeba CodeLens.
 
--   Zprávy týkající se stavu dokumentu se zobrazí v ovládacím prvku informačním panelu v horní části dokumentu nebo ve stavovém řádku.
+- Zprávy týkající se stavu dokumentu se zobrazí v ovládacím prvku informačním panelu v horní části dokumentu nebo ve stavovém řádku.
 
--   Uživatel musí být možné přizpůsobit vzhled písma a barvy s použitím **nástroje > Možnosti** stránce sdílené písma a barvy stránky nebo jeden konkrétní do editoru.
+- Uživatel musí být možné přizpůsobit vzhled písma a barvy s použitím **nástroje > Možnosti** stránce sdílené písma a barvy stránky nebo jeden konkrétní do editoru.
 
 #### <a name="design-surfaces"></a>Návrhové ploše
 
--   Prázdný návrháře by měl mít vodoznak na povrchu, jak začít pracovat.
+- Prázdný návrháře by měl mít vodoznak na povrchu, jak začít pracovat.
 
--   Přepínání zobrazení mechanismy bude následovat existující vzorů, jako je například dvojitým kliknutím otevřete editor kódu nebo karty v okně dokumentu, umožní interakci s oběma podokny.
+- Přepínání zobrazení mechanismy bude následovat existující vzorů, jako je například dvojitým kliknutím otevřete editor kódu nebo karty v okně dokumentu, umožní interakci s oběma podokny.
 
--   Přidání prvků na návrhové ploše by to udělat pomocí nástrojů, pokud není vyžadována možnost vysoce specifické nástrojů.
+- Přidání prvků na návrhové ploše by to udělat pomocí nástrojů, pokud není vyžadována možnost vysoce specifické nástrojů.
 
--   Položky na povrchu se řídí modelem konzistentní výběr.
+- Položky na povrchu se řídí modelem konzistentní výběr.
 
--   Panely nástrojů vložený obsahovat konkrétní dokumenty příkazy pouze, není běžné příkazy, jako například **Uložit**.
+- Panely nástrojů vložený obsahovat konkrétní dokumenty příkazy pouze, není běžné příkazy, jako například **Uložit**.
 
 #### <a name="dialog-style-editors"></a>Dialogové okno – vizuální styl editory
 
--   Rozložení ovládacích prvků by měly dodržovat konvence rozložení normální dialogového okna.
+- Rozložení ovládacích prvků by měly dodržovat konvence rozložení normální dialogového okna.
 
--   Karty v editoru by neměly odpovídat vzhled karty dokumentů, by měl odpovídat jedné ze dvou styly povolené vnitřní kartu.
+- Karty v editoru by neměly odpovídat vzhled karty dokumentů, by měl odpovídat jedné ze dvou styly povolené vnitřní kartu.
 
--   Uživatelé musí být schopen komunikovat s ovládacími prvky pomocí klávesnice. buď aktivace v editoru a procházení tabulátorem přes ovládací prvky nebo pomocí standardních klávesových zkratek.
+- Uživatelé musí být schopen komunikovat s ovládacími prvky pomocí klávesnice. buď aktivace v editoru a procházení tabulátorem přes ovládací prvky nebo pomocí standardních klávesových zkratek.
 
--   Návrháři používali společné uložit model. Žádné celkové uložit nebo tlačítka potvrzení musí být umístěny na povrchu, i když může být vhodné další tlačítka.
+- Návrháři používali společné uložit model. Žádné celkové uložit nebo tlačítka potvrzení musí být umístěny na povrchu, i když může být vhodné další tlačítka.
 
 #### <a name="model-designers"></a>Návrháře modelů
 
--   Prázdný návrháře by měl mít vodoznak na povrchu, jak začít pracovat.
+- Prázdný návrháře by měl mít vodoznak na povrchu, jak začít pracovat.
 
--   Přidání prvků na návrhové ploše by to udělat pomocí panelu nástrojů.
+- Přidání prvků na návrhové ploše by to udělat pomocí panelu nástrojů.
 
--   Položky na povrchu se řídí modelem konzistentní výběr.
+- Položky na povrchu se řídí modelem konzistentní výběr.
 
--   Panely nástrojů vložený obsahovat konkrétní dokumenty příkazy pouze, není běžné příkazy, jako například **Uložit**.
+- Panely nástrojů vložený obsahovat konkrétní dokumenty příkazy pouze, není běžné příkazy, jako například **Uložit**.
 
--   Legenda se můžou objevit na ploše buď orientační nebo vodoznak.
+- Legenda se můžou objevit na ploše buď orientační nebo vodoznak.
 
--   Uživatel musí být možné přizpůsobit vzhled písma a barvy s použitím **nástroje > Možnosti** stránce sdílené písma a barvy stránky nebo jeden konkrétní do editoru.
+- Uživatel musí být možné přizpůsobit vzhled písma a barvy s použitím **nástroje > Možnosti** stránce sdílené písma a barvy stránky nebo jeden konkrétní do editoru.
 
 #### <a name="reports"></a>Sestavy
 
--   Sestavy jsou obvykle jen informace a není součástí modelu uložit. Však mohou zahrnovat interakcí, jako například odkazy na další relevantní informace nebo oddíly, které rozbalit nebo sbalit.
+- Sestavy jsou obvykle jen informace a není součástí modelu uložit. Však mohou zahrnovat interakcí, jako například odkazy na další relevantní informace nebo oddíly, které rozbalit nebo sbalit.
 
--   Většina příkazů na ploše by měl být hypertextové odkazy, ne tlačítka.
+- Většina příkazů na ploše by měl být hypertextové odkazy, ne tlačítka.
 
--   Rozložení by zahrnout hlavičku a postupujte podle pokynů na standardní sestavy rozložení.
+- Rozložení by zahrnout hlavičku a postupujte podle pokynů na standardní sestavy rozložení.
 
 #### <a name="dashboards"></a>Řídicí panely
 
--   Řídicí panely nemají modelu interakce sami, ale sloužit jako znamená, že nabízí celou řadu dalších nástrojů.
+- Řídicí panely nemají modelu interakce sami, ale sloužit jako znamená, že nabízí celou řadu dalších nástrojů.
 
--   Není součástí modelu uložit.
+- Není součástí modelu uložit.
 
--   Uživatelé musí být schopen komunikovat s ovládacími prvky pomocí klávesnice, aktivuje se v editoru a procházíte ovládací prvky nebo pomocí standardních klávesových zkratek.
+- Uživatelé musí být schopen komunikovat s ovládacími prvky pomocí klávesnice, aktivuje se v editoru a procházíte ovládací prvky nebo pomocí standardních klávesových zkratek.
 
-##  <a name="BKMK_Dialogs"></a> Dialogová okna
+## <a name="BKMK_Dialogs"></a> Dialogová okna
 
 ### <a name="introduction"></a>Úvod
  Dialogová okna v sadě Visual Studio by měl obvykle podporují jeden samostatná jednotka práce uživatele a potom zrušit.
@@ -276,33 +276,33 @@ ms.locfileid: "54797800"
 ### <a name="dialog-design"></a>Dialogové okno návrhu
  Dobře navržené dialogová okna vzít v úvahu následující prvky:
 
--   Úlohy uživatele se nepodporuje
+- Úlohy uživatele se nepodporuje
 
--   Styl textu dialogového okna, jazyk a terminologie
+- Styl textu dialogového okna, jazyk a terminologie
 
--   Ovládací prvek výběru a pravidla týkající se uživatelského rozhraní
+- Ovládací prvek výběru a pravidla týkající se uživatelského rozhraní
 
--   Zarovnání specifikaci a řízení rozložení vizuálu
+- Zarovnání specifikaci a řízení rozložení vizuálu
 
--   Použití klávesnice
+- Použití klávesnice
 
 #### <a name="content-organization"></a>Uspořádání obsahu
  Zvažte rozdíly mezi těmito základní typy dialogová okna:
 
--   [Jednoduché dialogová okna](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_SimpleDialogs) prezentovat ovládacích prvků v jedné modální okno. Prezentace mohou zahrnovat odchylky vzory komplexní ovládacích prvků, včetně ovládacího prvku pro výběr pole nebo panel nástrojů.
+- [Jednoduché dialogová okna](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_SimpleDialogs) prezentovat ovládacích prvků v jedné modální okno. Prezentace mohou zahrnovat odchylky vzory komplexní ovládacích prvků, včetně ovládacího prvku pro výběr pole nebo panel nástrojů.
 
--   [Dialogová okna na základě úrovní](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_LayeredDialogs) se používají k výběru z plochy obrazovky při každé uživatelské rozhraní se skládá z více skupin ovládacích prvků. Dialogové okno seskupení jsou "vrstvy" prostřednictvím ovládací prvky karet, ovládací prvky seznamu nebo tlačítka tak, aby uživatel může zvolit seskupení, které chcete zobrazit v kterémkoli daném okamžiku.
+- [Dialogová okna na základě úrovní](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_LayeredDialogs) se používají k výběru z plochy obrazovky při každé uživatelské rozhraní se skládá z více skupin ovládacích prvků. Dialogové okno seskupení jsou "vrstvy" prostřednictvím ovládací prvky karet, ovládací prvky seznamu nebo tlačítka tak, aby uživatel může zvolit seskupení, které chcete zobrazit v kterémkoli daném okamžiku.
 
--   [Průvodci](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_Wizards) jsou užitečné pro směruje uživatele provede Logická posloupnost kroků směrem k dokončení úlohy. Sekvenční panelů, někdy Úvod do různých pracovních postupů ("větve") závisí na zvolené v předchozí panel nabízí řadu možností.
+- [Průvodci](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_Wizards) jsou užitečné pro směruje uživatele provede Logická posloupnost kroků směrem k dokončení úlohy. Sekvenční panelů, někdy Úvod do různých pracovních postupů ("větve") závisí na zvolené v předchozí panel nabízí řadu možností.
 
-####  <a name="BKMK_SimpleDialogs"></a> Jednoduché dialogová okna
+#### <a name="BKMK_SimpleDialogs"></a> Jednoduché dialogová okna
  Dialogové okno s jednoduchou je prezentace ovládacích prvků v jedné modální okno. Tato prezentace mohou zahrnovat odchylky vzory komplexní ovládacích prvků, jako je například pole ovládacího prvku pro výběr. Jednoduché dialogová okna postupujte podle standardní Obecné rozložení, jakož i všechny konkrétní rozložení potřebné pro komplexní řízení seskupení.
 
  ![Jednoduché dialogového okna v sadě Visual Studio](../../extensibility/ux-guidelines/media/0704-01-createstrongnamekey.png "0704 01_CreateStrongNameKey")
 
  **Vytvořit klíč se silným názvem je příkladem jednoduché dialogového okna v sadě Visual Studio.**
 
-####  <a name="BKMK_LayeredDialogs"></a> Vrstvené dialogová okna
+#### <a name="BKMK_LayeredDialogs"></a> Vrstvené dialogová okna
  Vrstvené dialogová okna zahrnutí karty, řídicích panelů a vložené stromové struktury. Používají se pro maximalizaci nemovitosti, pokud existuje více skupin ovládacích prvků, které nabízí v každé uživatelské rozhraní. Seskupení jsou rozloženy do vrstev, takže uživatel může určit, které seskupení zobrazíte v daný okamžik.
 
  V nejjednodušší případ je mechanismus pro přepínání mezi seskupení ovládacím prvkem karta. Nejsou k dispozici několik alternativ. Podívejte se Upřednostňování pořadí a vrstvení pro výběr nejvhodnější style.
@@ -313,18 +313,18 @@ ms.locfileid: "54797800"
 
  **Nástroje > Možnosti je příkladem dialogové okno s vrstvami v sadě Visual Studio.**
 
-####  <a name="BKMK_Wizards"></a> Průvodce
+#### <a name="BKMK_Wizards"></a> Průvodce
  Průvodců jsou užitečné pro směruje uživatele provede Logická posloupnost kroků při dokončení úkolu. Sekvenční panelů nabízí řadu možností, a uživatel musí pokračovat až do každého kroku, než budete pokračovat k dalšímu. Jakmile jsou k dispozici, výchozí hodnoty dostatečné **Dokončit** tlačítko je povolené.
 
  Modální průvodci se používají pro úlohy, které:
 
--   Obsahují větvení, pokrytím různých cest v závislosti na volbu uživatele
+- Obsahují větvení, pokrytím různých cest v závislosti na volbu uživatele
 
--   Obsahuje závislosti mezi kroky, ve kterém následné kroky jsou závislé na uživatelský vstup z předchozích kroků
+- Obsahuje závislosti mezi kroky, ve kterém následné kroky jsou závislé na uživatelský vstup z předchozích kroků
 
--   Jsou dostatečně složité, uživatelské rozhraní by měla sloužit k vysvětlení volby, které nabízí a možné výsledky v každém kroku
+- Jsou dostatečně složité, uživatelské rozhraní by měla sloužit k vysvětlení volby, které nabízí a možné výsledky v každém kroku
 
--   Jsou transakční vyžaduje sadu kroků dokončit v celém rozsahu, než se změny potvrdí
+- Jsou transakční vyžaduje sadu kroků dokončit v celém rozsahu, než se změny potvrdí
 
 ### <a name="common-conventions"></a>Běžné konvence
  K zajištění optimální řešení a funkcí pomocí vaší dialogová okna, postupujte podle těchto konvence na velikost dialogového okna, pozici, standardy, konfigurace ovládacích prvků a zarovnání, uživatelského rozhraní text, záhlaví, ovládací prvek tlačítka a přístupové klíče.
@@ -336,9 +336,9 @@ ms.locfileid: "54797800"
 
  Existují dva doporučení pro dialogová okna možností změny velikosti:
 
-1.  Minimální velikost je definovaný v dialogovém okně, který bude optimalizovat pro sada ovládacích prvků bez oříznutí a upravit tak, aby vyhovovaly přiměřené lokalizace růstu.
+1. Minimální velikost je definovaný v dialogovém okně, který bude optimalizovat pro sada ovládacích prvků bez oříznutí a upravit tak, aby vyhovovaly přiměřené lokalizace růstu.
 
-2.  Že ukládá velikost škálovaných uživatele pro relaci. Například pokud uživatel škáluje dialogové okno pro 150 %, pak následné spuštění dialogového okna se zobrazí na 150 %.
+2. Že ukládá velikost škálovaných uživatele pro relaci. Například pokud uživatel škáluje dialogové okno pro 150 %, pak následné spuštění dialogového okna se zobrazí na 150 %.
 
 #### <a name="position"></a>Pozice
  Dialogová okna musí být uvedena na střed v rámci rozhraní IDE při prvním spuštění. U jiných možností změny velikosti dialogová okna, není povinné, že poslední pozice dialogové okno nastavit jako trvalý, takže se zobrazí na střed na následné spuštění. Velikost pro dialogová okna umožňující změnu velikosti, by měl nastavit jako trvalý v následné spuštění. Pro umožňující změnu velikosti dialogová okna, které jsou modální není potřeba pozice nastavit jako trvalý. Zobrazení je umístěn na střed v integrovaném vývojovém prostředí eliminuje možnost dialogového okna zobrazuje v nepředvídatelné nebo nepoužitelné pozice, pokud došlo ke změně konfigurace zobrazení uživatele. Pro nemodální dialogová okna, které lze přesunout pozici uživatele by se měl zachovat na následné spuštění, protože dialogového okna lze často jako součást rozsáhlejšího pracovního postupu.
@@ -394,7 +394,7 @@ ms.locfileid: "54797800"
 #### <a name="imagery"></a>Obrázek
  Nepoužívejte imagí v dialogových oknech. Nepoužívejte velké ikony v dialogových oknech kladené čistě kvůli použít místo. Použití imagí pouze v případě, že jsou důležitou součástí takzvané zprávu pro uživatele, například ikon upozornění nebo stavu animace.
 
-###  <a name="BKMK_PrioritizingAndLayering"></a> Nastavení priority a vrstvení
+### <a name="BKMK_PrioritizingAndLayering"></a> Nastavení priority a vrstvení
 
 #### <a name="prioritizing-your-ui"></a>Nastavení priority uživatelského rozhraní
  Může být potřeba převést některé prvky uživatelského rozhraní na špici a umístěte pokročilejší chování a možnosti (včetně skrytého příkazů) do dialogových oknech. Přeneste běžně používané funkce na špici podle místa a tím, že je viditelná ve výchozím nastavení v uživatelském rozhraní se popisek s textem když se zobrazí dialogové okno.
@@ -425,7 +425,7 @@ ms.locfileid: "54797800"
 ##### <a name="adaptive-ui"></a>Adaptivní uživatelského rozhraní
  Zobrazení nebo skrytí uživatelského rozhraní na základě využití nebo místním nahlášené v uživatelském prostředí je jiný způsob prezentace uživatelského rozhraní nezbytné při skrytí další části. To se nedoporučuje v sadě Visual Studio, protože algoritmy pro rozhodování o tom, kdy se má zobrazit nebo skrýt uživatelské rozhraní může být velmi obtížné a pravidla budou vždy chybné některé sady případy.
 
-##  <a name="BKMK_Projects"></a> Projekty
+## <a name="BKMK_Projects"></a> Projekty
 
 ### <a name="projects-in-the-solution-explorer"></a>Projekty v Průzkumníkovi řešení
  Většina projektů jsou klasifikovány jako odkaz na základě, na základě directory nebo smíšený. Všechny tři typy projektů se nepodporuje současně v Průzkumníku řešení. Kořenové uživatelské prostředí při práci s projekty probíhá v tomto okně. I když jsou uzly jiného projektu odkaz, adresáře nebo projekty ve smíšeném režimu typu, je běžný vzor interakce, které bude použito jako výchozí bod před Rozbíhající se do uživatelské specifické pro projekt vzory.

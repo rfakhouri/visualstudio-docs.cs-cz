@@ -16,12 +16,12 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 21e16823d664b927008e43f8bfc6972ac284eac7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8337fa86173b62a6576be6d3abe8d76dbef427d7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54761777"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040066"
 ---
 # <a name="accessing-local-and-remote-data-in-clickonce-applications"></a>Přístup k lokálním a vzdáleným datům v aplikacích ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,11 +31,11 @@ Většina aplikací spotřebovávají nebo vytvářejí data. [!INCLUDE[ndpteccl
 ## <a name="local-data"></a>Místní Data  
  S [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)], můžete načíst a ukládat data místně pomocí jedné z následujících metod:  
   
--   [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Datový adresář  
+- [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Datový adresář  
   
--   Izolované úložiště  
+- Izolované úložiště  
   
--   Další místní soubory  
+- Další místní soubory  
   
 ### <a name="clickonce-data-directory"></a>Adresář dat ClickOnce  
  Každý [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikace je nainstalovaná na místním počítači má datový adresář, který je uložený ve složce Dokumenty a nastavení uživatele. Všechny soubory součástí [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikace a označena jako "data" soubor zkopírován do tohoto adresáře, když je nainstalovaná určitá aplikace. Datové soubory mohou být libovolného typu souboru, nejčastěji používané text, XML a soubory databáze, jako jsou například aplikace Microsoft Access .mdb soubory.  

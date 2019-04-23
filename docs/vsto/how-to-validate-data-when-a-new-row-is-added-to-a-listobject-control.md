@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a78674a0738c0b7a0f69e04decd70fbbf1d1e367
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: d8aefab319b9b197b9b7df0e23fec71aa3cb64d1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56615855"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039308"
 ---
 # <a name="how-to-validate-data-when-a-new-row-is-added-to-a-listobject-control"></a>Postupy: Ověření dat při přidání nového řádku do ovládacího prvku ListObject
   Uživatelé můžou přidávat nové řádky <xref:Microsoft.Office.Tools.Excel.ListObject> ovládací prvek, který je vázán na data. Před potvrzením změny do zdroje dat. můžete ověřit data uživatele.
@@ -34,17 +34,17 @@ ms.locfileid: "56615855"
 
 ### <a name="to-validate-data-when-a-new-row-is-added-to-data-bound-listobject"></a>Ověření dat při nový řádek je přidat do vázané na data ListObject
 
-1.  Vytvoření proměnné pro ID a <xref:System.Data.DataTable> na úrovni třídy.
+1. Vytvoření proměnné pro ID a <xref:System.Data.DataTable> na úrovni třídy.
 
      [!code-csharp[Trin_VstcoreHostControlsExcel#8](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#8)]
      [!code-vb[Trin_VstcoreHostControlsExcel#8](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#8)]
 
-2.  Vytvořte nový <xref:System.Data.DataTable> a přidejte ukázkový sloupce a data v `Startup` obslužná rutina události `Sheet1` třídy (v projektu úrovni dokumentu) nebo `ThisAddIn` třídy (v projektu doplňku VSTO).
+2. Vytvořte nový <xref:System.Data.DataTable> a přidejte ukázkový sloupce a data v `Startup` obslužná rutina události `Sheet1` třídy (v projektu úrovni dokumentu) nebo `ThisAddIn` třídy (v projektu doplňku VSTO).
 
      [!code-csharp[Trin_VstcoreHostControlsExcel#9](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#9)]
      [!code-vb[Trin_VstcoreHostControlsExcel#9](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#9)]
 
-3.  Přidejte kód, který `list1_BeforeAddDataBoundRow` obslužná rutina události ke kontrole, jestli stáří zadali spadá do přijatelný rozsah.
+3. Přidejte kód, který `list1_BeforeAddDataBoundRow` obslužná rutina události ke kontrole, jestli stáří zadali spadá do přijatelný rozsah.
 
      [!code-csharp[Trin_VstcoreHostControlsExcel#10](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#10)]
      [!code-vb[Trin_VstcoreHostControlsExcel#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#10)]

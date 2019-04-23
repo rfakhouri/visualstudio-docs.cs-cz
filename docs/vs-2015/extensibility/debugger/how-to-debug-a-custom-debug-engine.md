@@ -11,12 +11,12 @@ ms.assetid: df27a8d6-3938-45ff-b47f-b684e80b38a0
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 5292d2cde8a75a239f7a905d8cf5d80b09a8f61e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7effa937a8faa0a238f8be2505ddf47223010bc1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54753907"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039946"
 ---
 # <a name="how-to-debug-a-custom-debug-engine"></a>Postupy: Ladění vlastního ladicího stroje
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,21 +31,21 @@ Typ projektu spustí ladicí stroj (DE) z <xref:Microsoft.VisualStudio.Shell.Int
   
 ### <a name="debugging-a-custom-debug-engine"></a>Ladění vlastního ladicího stroje  
   
-1.  Spuštění msvsmon.exe, sledování vzdáleného ladění.  
+1. Spuštění msvsmon.exe, sledování vzdáleného ladění.  
   
-2.  Z **nástroje** msvsmon.exe, vyberte možnost nabídky **možnosti** otevřít **možnosti** dialogové okno.  
+2. Z **nástroje** msvsmon.exe, vyberte možnost nabídky **možnosti** otevřít **možnosti** dialogové okno.  
   
-3.  Vyberte možnost "bez ověřování" a klikněte na tlačítko **OK**.  
+3. Vyberte možnost "bez ověřování" a klikněte na tlačítko **OK**.  
   
-4.  Spustit instanci [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] a otevřete svůj vlastní projekt DE.  
+4. Spustit instanci [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] a otevřete svůj vlastní projekt DE.  
   
-5.  Spusťte druhou instanci [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] a otevřete svůj vlastní projekt, který spustí DE (pro vývoj, obvykle je to v experimentální podregistru, který je nastavený při instalaci VSIP).  
+5. Spusťte druhou instanci [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] a otevřete svůj vlastní projekt, který spustí DE (pro vývoj, obvykle je to v experimentální podregistru, který je nastavený při instalaci VSIP).  
   
-6.  V této druhé instance [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], načíst zdrojový soubor z vašich vlastních projektů a spusťte program k ladění. Chvíli počkejte, než aby DE k načtení, nebo počkejte, dokud nebude dosaženo zarážky.  
+6. V této druhé instance [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], načíst zdrojový soubor z vašich vlastních projektů a spusťte program k ladění. Chvíli počkejte, než aby DE k načtení, nebo počkejte, dokud nebude dosaženo zarážky.  
   
-7.  V první instance [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] (s projektem DE), vyberte **připojit k procesu** z **ladění** nabídky.  
+7. V první instance [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] (s projektem DE), vyberte **připojit k procesu** z **ladění** nabídky.  
   
-8.  V **připojit k procesu** dialogovém okně Změnit **přenosu** k **vzdálený (nativní pouze bez ověřování)**.  
+8. V **připojit k procesu** dialogovém okně Změnit **přenosu** k **vzdálený (nativní pouze bez ověřování)**.  
   
 9. Změnit **kvalifikátor** na název vašeho počítače (Poznámka: historie položek, je proto třeba tento název zadat jen jednou).  
   
@@ -57,21 +57,21 @@ Typ projektu spustí ladicí stroj (DE) z <xref:Microsoft.VisualStudio.Shell.Int
   
 ### <a name="debugging-a-custom-project-type"></a>Ladění do vlastního typu projektu  
   
-1.  Spustit [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] normální podregistru a zatížení projektu zadejte projekt (to je, zdroje pro váš typ projektu není instancí typu projektu).  
+1. Spustit [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] normální podregistru a zatížení projektu zadejte projekt (to je, zdroje pro váš typ projektu není instancí typu projektu).  
   
-2.  Otevřete vlastnosti projektu a přejděte **ladění** stránky. Pro **příkaz**, zadejte cestu k [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] integrovaného vývojového prostředí (ve výchozím nastavení je to *[jednotka]* \Program Files\Microsoft [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 8\Common7\IDE\devenv.exe).  
+2. Otevřete vlastnosti projektu a přejděte **ladění** stránky. Pro **příkaz**, zadejte cestu k [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] integrovaného vývojového prostředí (ve výchozím nastavení je to *[jednotka]* \Program Files\Microsoft [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 8\Common7\IDE\devenv.exe).  
   
-3.  Pro **argumenty příkazu**, typ `/rootsuffix exp` pro experimentální podregistru (vytvořené při instalaci VSIP).  
+3. Pro **argumenty příkazu**, typ `/rootsuffix exp` pro experimentální podregistru (vytvořené při instalaci VSIP).  
   
-4.  Klikněte na tlačítko **OK** změny uložte.  
+4. Klikněte na tlačítko **OK** změny uložte.  
   
-5.  Stisknutím klávesy F5 spusťte váš typ projektu. Tím spustíte druhou instanci [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
+5. Stisknutím klávesy F5 spusťte váš typ projektu. Tím spustíte druhou instanci [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
   
-6.  V tomto okamžiku můžete umístit zarážky ve zdrojovém kódu typ projektu.  
+6. V tomto okamžiku můžete umístit zarážky ve zdrojovém kódu typ projektu.  
   
-7.  V druhé instance [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], načíst nebo vytvořit novou instanci typu projektu. Při tvorbě nebo zatížení vaší může zarážky.  
+7. V druhé instance [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], načíst nebo vytvořit novou instanci typu projektu. Při tvorbě nebo zatížení vaší může zarážky.  
   
-8.  Ladění vašeho typu projektu.  
+8. Ladění vašeho typu projektu.  
   
 9. Pokud budete chtít ladit proces spuštění Zavedenými, provedením kroků v postupu "Ladění vlastní Debug Engine" připojení k vaší DE po jeho spuštění. Budete mít tři instance [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] systémem: jedno pro typ zdroje projektu, druhý pro typ instance projektu a třetí připojené k vaší DE.  
   

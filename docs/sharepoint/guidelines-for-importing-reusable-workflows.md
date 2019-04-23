@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7e32ba1641b084f1240e2a3f872a07e410b6c507
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: bb386a2d80931ece415b0b3939f2947678808261
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56641517"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041218"
 ---
 # <a name="guidelines-for-importing-reusable-workflows"></a>Pokyny pro import opakovaně použitelných pracovních postupů
   Pro import opakovaně použitelných pracovních postupů, které jsou vytvořeny v aplikaci SharePoint Designer, použijte šablonu projektu Import opakovaně použitelného Sharepointu 2010 pracovního postupu v [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Importuje šabloně *deklarativní* *pracovního postupu* ([!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]– pouze) a převede ho na *kód pracovního postupu*, což je pracovní postup, který můžete zvýšit s oběma [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] nebo [!INCLUDE[csprcs](../sharepoint/includes/csprcs-md.md)] kódu. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [Návod: Import opakovaně použitelného pracovního postupu návrháře služby SharePoint do sady Visual Studio](../sharepoint/walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio.md).
@@ -36,13 +36,13 @@ ms.locfileid: "56641517"
 ## <a name="import-reusable-workflows-by-using-the-import-sharepoint-2010-solution-package-template"></a>Import opakovaně použitelných pracovních postupů s použitím šablony importovat balíček řešení služby SharePoint 2010
  Pokud importujete opakovaně použitelného pracovního postupu pomocí šablony importovat balíček řešení služby SharePoint 2010, je potřeba zvážit následující problémy:
 
--   Po importu pracovního postupu, můžete okamžitě nasadit a spustit ho v [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] výběrem **F5** klíč. Ale pokud něco v pracovním postupu v importované řešení změnit, budete muset ručně vyřešit prvky v projektu bylo možné nasadit a spustit pracovní postup.
+- Po importu pracovního postupu, můžete okamžitě nasadit a spustit ho v [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] výběrem **F5** klíč. Ale pokud něco v pracovním postupu v importované řešení změnit, budete muset ručně vyřešit prvky v projektu bylo možné nasadit a spustit pracovní postup.
 
--   Protože pracovní postup je deklarativní, kód nelze přidat k němu. Převést pracovní postup do kódu pracovního postupu, je nutné naimportovat ho do [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] pomocí šablony Import opakovaně použitelného 2010 pracovního postupu služby SharePoint.
+- Protože pracovní postup je deklarativní, kód nelze přidat k němu. Převést pracovní postup do kódu pracovního postupu, je nutné naimportovat ho do [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] pomocí šablony Import opakovaně použitelného 2010 pracovního postupu služby SharePoint.
 
--   Když upravíte soubor návrháře (XOML) pracovního postupu v návrhovém zobrazení, se doporučuje upravit v zobrazení zdroje, protože návrháře postupu provádění zobrazí falešné chyby.
+- Když upravíte soubor návrháře (XOML) pracovního postupu v návrhovém zobrazení, se doporučuje upravit v zobrazení zdroje, protože návrháře postupu provádění zobrazí falešné chyby.
 
--   Ladění pracovního postupu pro deklarativní obsah nefunguje. Zarážky nastavené v [!INCLUDE[wfd2](../sharepoint/includes/wfd2-md.md)] nejsou přístupů.
+- Ladění pracovního postupu pro deklarativní obsah nefunguje. Zarážky nastavené v [!INCLUDE[wfd2](../sharepoint/includes/wfd2-md.md)] nejsou přístupů.
 
 ## <a name="import-globally-reusable-workflow-solutions"></a>Import řešení globálně opakovaně použitelného pracovního postupu
  Nelze importovat globálně opakovaně použitelných pracovních postupů s použitím šablony Import opakovaně použitelného pracovního postupu 2010 SharePoint. Chcete-li importovat globální opakovaně použitelného pracovního postupu, budete muset převést globálně opakovaně použitelného pracovního postupu nebo je nutné použít šablonu importovat balíček řešení služby SharePoint 2010.

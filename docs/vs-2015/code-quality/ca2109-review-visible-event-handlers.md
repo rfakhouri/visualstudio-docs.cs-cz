@@ -15,12 +15,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 45e741882e8da2b5ed419540e40f3be40278d540
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f5bd94892a0321346adeacbcad2655a4ab62c6a1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54779717"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60038327"
 ---
 # <a name="ca2109-review-visible-event-handlers"></a>CA2109: Zkontrolujte viditelné obslužné rutiny událostí
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,18 +42,18 @@ ms.locfileid: "54779717"
 
  Požadavek nelze spolehlivě chránit metoda vyvolá obslužnou rutinu události. Pomoc se požadavky na zabezpečení chránit kódu z nedůvěryhodných volajících prozkoumáním volající v zásobníku volání. Kód, který přidá obslužnou rutinu události pro událost se nutně nenachází v zásobníku volání při spuštění metody obslužné rutiny události. Proto zásobník volání může mít pouze vysoce důvěryhodné volající při vyvolání metody obslužné rutiny události. To způsobí, že požadavky metodu obslužné rutiny události úspěšné. Požadované oprávnění může být také, uplatněna při vyvolání metody. Z těchto důvodů riziko není opravit porušení tohoto pravidla lze pouze použit k vyhodnocení po kontrole metody zpracování událostí. Při kontrole kódu, zvažte následující skutečnosti:
 
--   Obslužnou rutinu události provádět žádné operace, které jsou nebezpečné nebo zneužitelné, jako je například potvrzující oprávnění nebo potlačení oprávnění nespravovaného kódu?
+- Obslužnou rutinu události provádět žádné operace, které jsou nebezpečné nebo zneužitelné, jako je například potvrzující oprávnění nebo potlačení oprávnění nespravovaného kódu?
 
--   Co jsou bezpečnostní hrozby na a z vašeho kódu, protože může probíhat kdykoli bez pouze vysoce důvěryhodné volající v zásobníku?
+- Co jsou bezpečnostní hrozby na a z vašeho kódu, protože může probíhat kdykoli bez pouze vysoce důvěryhodné volající v zásobníku?
 
 ## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
  Chcete-li opravit porušení tohoto pravidla, zkontrolujte metodu a vyhodnoťte následující:
 
--   Budete moct nastavit metodu zpracování událostí neveřejné?
+- Budete moct nastavit metodu zpracování událostí neveřejné?
 
--   Můžete přesunout všechny funkce nebezpečné mimo obslužnou rutinu události?
+- Můžete přesunout všechny funkce nebezpečné mimo obslužnou rutinu události?
 
--   Pokud je zavedena požadavku zabezpečení, můžete to provést jiným způsobem?
+- Pokud je zavedena požadavku zabezpečení, můžete to provést jiným způsobem?
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
  Potlačení upozornění tohoto pravidla až po přezkoumání pečlivé ověření zabezpečení, abyste měli jistotu, že váš kód nepředstavuje bezpečnostní hrozbu.

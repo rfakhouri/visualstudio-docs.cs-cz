@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ed282ba7f3c26aafe9cd2c97be0bfa843cb0103
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 071077c54abe3126febdc098b6860a65ce0fd792
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56601483"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041703"
 ---
 # <a name="how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications"></a>Postupy: Přidání důvěryhodného vydavatele na klientský počítač pro aplikace ClickOnce
 Pomocí nasazení důvěryhodné aplikace, můžete nakonfigurovat klientské počítače tak, aby vaše [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace spouštět s vyšší úroveň důvěryhodnosti bez výzvy pro uživatele. Následující postupy ukazují, jak používat nástroj příkazového řádku CertMgr.exe přidání vydavatele certifikátu do úložiště důvěryhodných vydavatelů v klientském počítači.
@@ -36,21 +36,21 @@ Pomocí nasazení důvěryhodné aplikace, můžete nakonfigurovat klientské po
 
 ### <a name="to-add-a-certificate-to-the-trusted-publishers-store-under-the-trusted-root"></a>Přidání do úložiště důvěryhodných vydavatelů v rámci důvěryhodného kořenového certifikátu
 
-1.  Získáte digitální certifikát od certifikační Autority.
+1. Získáte digitální certifikát od certifikační Autority.
 
-2.  Exportujte certifikát do formátu Base64 X.509 (*.cer*) formát. Další informace o formátech certifikátu, naleznete v tématu [exportování certifikátu](http://go.microsoft.com/fwlink/?LinkId=164793).
+2. Exportujte certifikát do formátu Base64 X.509 (*.cer*) formát. Další informace o formátech certifikátu, naleznete v tématu [exportování certifikátu](http://go.microsoft.com/fwlink/?LinkId=164793).
 
-3.  Z příkazového řádku na klientské počítače spusťte následující příkaz:
+3. Z příkazového řádku na klientské počítače spusťte následující příkaz:
 
      **certmgr.exe -add certificate.cer -c -s -r localMachine TrustedPublisher**
 
 ### <a name="to-add-a-certificate-to-the-trusted-publishers-store-under-a-different-root"></a>Přidání certifikátu do úložiště důvěryhodných vydavatelů v rámci různých kořenové
 
-1.  Získáte digitální certifikát od certifikační Autority.
+1. Získáte digitální certifikát od certifikační Autority.
 
-2.  Exportujte certifikát do formátu Base64 X.509 (*.cer*) formát. Další informace o formátech certifikátu, naleznete v tématu [exportování certifikátu](http://go.microsoft.com/fwlink/?LinkId=164793).
+2. Exportujte certifikát do formátu Base64 X.509 (*.cer*) formát. Další informace o formátech certifikátu, naleznete v tématu [exportování certifikátu](http://go.microsoft.com/fwlink/?LinkId=164793).
 
-3.  Z příkazového řádku na klientské počítače spusťte následující příkaz:
+3. Z příkazového řádku na klientské počítače spusťte následující příkaz:
 
      **certmgr.exe -add good.cer -c -s -r localMachine Root**
 

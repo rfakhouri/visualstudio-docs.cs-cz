@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: df23a6e2a4288c6370a339d37d151283fe3afa8f
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 79e7b2a406338e5ecfacf41f9c0485a35c2d97d0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59655553"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043026"
 ---
 # <a name="one-or-more-selected-database-objects-return-a-schema-that-does-not-match-the-schema-of-the-target-class"></a>Minimálně jeden vybraný databázový objekt vrací schéma, které neodpovídá schématu cílové třídy.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,9 +25,9 @@ Jeden nebo více vybraných databázových objektů vrací schéma, které neodp
   
 ### <a name="to-correct-this-error"></a>Oprava této chyby  
   
-1.  Klikněte na tlačítko **OK** zavřete dialogové okno.  
+1. Klikněte na tlačítko **OK** zavřete dialogové okno.  
   
-2.  Vyberte databázový objekt, který vrací data, která odpovídá schématu cílové třídy (třídy, které databázový objekt je vyřazována do Návrháře relací objektů).  
+2. Vyberte databázový objekt, který vrací data, která odpovídá schématu cílové třídy (třídy, které databázový objekt je vyřazována do Návrháře relací objektů).  
   
 ## <a name="see-also"></a>Viz také  
  [Nástroje LINQ to SQL v sadě Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   

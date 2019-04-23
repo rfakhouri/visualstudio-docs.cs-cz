@@ -13,12 +13,12 @@ dev_langs:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 14dce2ee3ea073e8ef3db6956af0eb56daa94fe0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1111b659e1c88f219258b73045d0ce0d0f420ae7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55923444"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041704"
 ---
 # <a name="code-a-custom-extraction-rule-for-a-web-performance-test"></a>Kód vlastního pravidla extrakce pro test výkonnosti webu
 
@@ -31,24 +31,24 @@ Můžete vytvořit vlastní pravidla pro extrakci, a to odvozením vlastních pr
 
 ## <a name="to-create-a-custom-extraction-rule"></a>Vytvoření vlastního pravidla pro extrakci
 
-1.  Otevřete projekt testů obsahující test výkonnosti webu.
+1. Otevřete projekt testů obsahující test výkonnosti webu.
 
-2.  (Volitelné) Vytvořte samostatný projekt knihovny tříd, do které bude uloženo pravidlo pro extrakci.
+2. (Volitelné) Vytvořte samostatný projekt knihovny tříd, do které bude uloženo pravidlo pro extrakci.
 
     > [!IMPORTANT]
     > Třídu lze vytvořit ve stejném projektu, ve kterém jsou testy. Nicméně pokud chcete pravidlo znovu použít, je vhodnější vytvořit samostatný projekt knihovny tříd, do které pravidlo uložíte. Pokud vytvoříte samostatný projekt, je nutné provést volitelné kroky v tomto postupu.
 
-3.  (Volitelné) Do projektu knihovny tříd přidejte odkaz na knihovnu dll Microsoft.VisualStudio.QualityTools.WebTestFramework.
+3. (Volitelné) Do projektu knihovny tříd přidejte odkaz na knihovnu dll Microsoft.VisualStudio.QualityTools.WebTestFramework.
 
-4.  Vytvořte třídu, která je odvozena od třídy <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule>. Implementujte členy <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule.Extract*> a <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule.RuleName*>.
+4. Vytvořte třídu, která je odvozena od třídy <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule>. Implementujte členy <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule.Extract*> a <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule.RuleName*>.
 
-5.  (Volitelné) Vytvořte nový projekt knihovny tříd.
+5. (Volitelné) Vytvořte nový projekt knihovny tříd.
 
-6.  (Volitelné) V testovacím projektu přidejte odkaz na projekt knihovny tříd, který obsahuje vlastní pravidlo pro extrakci.
+6. (Volitelné) V testovacím projektu přidejte odkaz na projekt knihovny tříd, který obsahuje vlastní pravidlo pro extrakci.
 
-7.  V projektu testů otevřete test výkonnosti webu v **editoru testu výkonnosti webu**.
+7. V projektu testů otevřete test výkonnosti webu v **editoru testu výkonnosti webu**.
 
-8.  Chcete-li přidat vlastní pravidlo pro extrakci, klikněte pravým tlačítkem na požadavek testu výkonnosti webu a vyberte **přidat pravidlo pro extrakci**.
+8. Chcete-li přidat vlastní pravidlo pro extrakci, klikněte pravým tlačítkem na požadavek testu výkonnosti webu a vyberte **přidat pravidlo pro extrakci**.
 
      **Přidat pravidlo pro extrakci** zobrazí se dialogové okno. Zobrazí se vlastní ověřovací pravidlo v **vyberte pravidlo** seznamu, společně s předdefinovanými ověřovacími pravidly. Vyberte vlastní pravidlo pro extrakci a klikněte na tlačítko **OK**.
 

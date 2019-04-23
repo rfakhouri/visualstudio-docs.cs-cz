@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a145907ad76016802e0547fc251b929b913253d5
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: afb835c883050064d96c32c80de75d58299892f7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55945674"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040687"
 ---
 # <a name="accessing-models-from-text-templates"></a>Přístup k modelům z textových šablon
 Pomocí textových šablon, můžete vytvořit sestavy soubory, soubory se zdrojovým kódem a jiné textové soubory, které jsou založeny na modely jazyka specifického pro doménu. Základní informace o textových šablonách naleznete v tématu [generování kódu a textové šablony T4](../modeling/code-generation-and-t4-text-templates.md). Textové šablony budou fungovat v experimentálním režimu při ladění vašeho DSL a budou fungovat i v počítači, na které jste nasadili DSL.
@@ -75,9 +75,9 @@ Here is a list of elements in the model:
 
  Procesor direktiv DSL provádí dvě hlavní úlohy:
 
--   Vloží efektivně direktivy sestavení a importovat do šablony, která odkazuje na vaše DSL. To vám umožní používat doménové třídy v kódu šablony.
+- Vloží efektivně direktivy sestavení a importovat do šablony, která odkazuje na vaše DSL. To vám umožní používat doménové třídy v kódu šablony.
 
--   Načte soubor, který zadáte `requires` parametr a nastaví vlastnost `this` , který odkazuje na kořenový element načíst model.
+- Načte soubor, který zadáte `requires` parametr a nastaví vlastnost `this` , který odkazuje na kořenový element načíst model.
 
 ## <a name="validating-the-model-before-running-the-template"></a>Ověření modelu před spuštěním šablony
  Může způsobit modelu na ověření. před provedením šablony.

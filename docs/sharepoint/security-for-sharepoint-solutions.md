@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 982a2387ae0e21304fb9726fabdf05554c982fd5
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 31bcd41dc1a6fd7f314c7d701f52c3728dd2ee8c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54862939"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040451"
 ---
 # <a name="security-for-sharepoint-solutions"></a>Zabezpečení pro řešení služby SharePoint
   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] zahrnuje následující funkce, které pomáhají zvýšit zabezpečení aplikací služby SharePoint.
@@ -46,42 +46,42 @@ ms.locfileid: "54862939"
 ## <a name="sharepoint-permissions-considerations"></a>Důležité informace o oprávnění služby SharePoint
  Pro vývoj řešení služby SharePoint, musí mít dostatečná oprávnění ke spouštění a ladění řešení služby SharePoint. Před otestováním řešení služby SharePoint, proveďte následující kroky k zajištění, že máte potřebná oprávnění:
 
-1.  Přidáte uživatelský účet s oprávněními správce na systému.
+1. Přidáte uživatelský účet s oprávněními správce na systému.
 
-2.  Přidáte uživatelský účet jako správce farmy pro SharePoint server.
+2. Přidáte uživatelský účet jako správce farmy pro SharePoint server.
 
-    1.  V Centrální správy služby SharePoint 2010, zvolte **spravovat skupinu správců farmy** odkaz.
+    1. V Centrální správy služby SharePoint 2010, zvolte **spravovat skupinu správců farmy** odkaz.
 
-    2.  Na **správci farmy** zvolte **nový** nabídky
+    2. Na **správci farmy** zvolte **nový** nabídky
 
-3.  Přidejte svůj uživatelský účet ke skupině WSS_ADMIN_WPG.
+3. Přidejte svůj uživatelský účet ke skupině WSS_ADMIN_WPG.
 
 ## <a name="additional-security-resources"></a>Zvýšení zabezpečení prostředků
  Další informace o problémy se zabezpečením naleznete v následujících tématech.
 
 ### <a name="visual-studio-security"></a>zabezpečení produktu Visual Studio
 
--   [Zabezpečení a uživatelských oprávnění](http://go.microsoft.com/fwlink/?LinkId=177503)
+- [Zabezpečení a uživatelských oprávnění](http://go.microsoft.com/fwlink/?LinkId=177503)
 
--   [Zabezpečení v nativním kódu a kódu rozhraní .NET Framework](http://go.microsoft.com/fwlink/?LinkId=177504)
+- [Zabezpečení v nativním kódu a kódu rozhraní .NET Framework](http://go.microsoft.com/fwlink/?LinkId=177504)
 
--   [Zabezpečení v rozhraní .NET Framework](http://go.microsoft.com/fwlink/?LinkId=177502)
+- [Zabezpečení v rozhraní .NET Framework](http://go.microsoft.com/fwlink/?LinkId=177502)
 
 ### <a name="sharepoint-security"></a>Zabezpečení služby SharePoint
 
--   [Správa služby SharePoint Foundation a zabezpečení](http://go.microsoft.com/fwlink/?LinkId=177501)
+- [Správa služby SharePoint Foundation a zabezpečení](http://go.microsoft.com/fwlink/?LinkId=177501)
 
--   [Centrum zabezpečení prostředků služby SharePoint](http://go.microsoft.com/fwlink/?LinkId=177498)
+- [Centrum zabezpečení prostředků služby SharePoint](http://go.microsoft.com/fwlink/?LinkId=177498)
 
--   [Zabezpečení webové části SharePoint Foundation](http://go.microsoft.com/fwlink/?LinkId=177511)
+- [Zabezpečení webové části SharePoint Foundation](http://go.microsoft.com/fwlink/?LinkId=177511)
 
--   [Zlepšení zabezpečení webové aplikace: Hrozby a opatření](http://go.microsoft.com/fwlink/?LinkID=140080)
+- [Zlepšení zabezpečení webové aplikace: Hrozby a opatření](http://go.microsoft.com/fwlink/?LinkID=140080)
 
 ### <a name="general-security"></a>Obecné zabezpečení
 
--   [MSDN Security Development Lifecycle](http://go.microsoft.com/fwlink/?LinkID=147149)
+- [MSDN Security Development Lifecycle](http://go.microsoft.com/fwlink/?LinkID=147149)
 
--   [Vytváření aplikací ASP.NET zabezpečení: Ověřování, autorizaci a zabezpečenou komunikaci](http://go.microsoft.com/fwlink/?LinkId=177494)
+- [Vytváření aplikací ASP.NET zabezpečení: Ověřování, autorizaci a zabezpečenou komunikaci](http://go.microsoft.com/fwlink/?LinkId=177494)
 
 ## <a name="see-also"></a>Viz také:
 

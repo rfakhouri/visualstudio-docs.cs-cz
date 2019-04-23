@@ -20,12 +20,12 @@ caps.latest.revision: 47
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2467bce94a9f9de3df87ab1c05fd4b84a7e68ee4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 45da81c91cf654fe41fb903314dce662beac7a23
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54780001"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042014"
 ---
 # <a name="debug-css-styles-using-dom-explorer"></a>Ladění stylů CSS pomocí průzkumníka modelu DOM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,14 +38,14 @@ Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "wi
   
  **Styly**, **vypočítané**, a **změny** karty poskytují různá zobrazení informací o stylu.  
   
--   Použití **styly** kartu k zobrazení pravidel uspořádaných podle názvu selektoru šablon stylů CSS, jako například `html, body`. Tuto kartu lze také použít pro povolení nebo zakázání určitých stylů, manuální nastavení hodnot nebo okamžité zobrazení výsledků těchto změn.  
+- Použití **styly** kartu k zobrazení pravidel uspořádaných podle názvu selektoru šablon stylů CSS, jako například `html, body`. Tuto kartu lze také použít pro povolení nebo zakázání určitých stylů, manuální nastavení hodnot nebo okamžité zobrazení výsledků těchto změn.  
   
--   Použití **vypočítané** kartu pro zobrazení vypočtených hodnot stylu. Pokud například nastavíte velikost na 1em, hodnota vypočítaná aplikací Internet Explorer může být 16px. Styly na této kartě jsou uspořádány podle názvu stylu, například `height`. Tuto kartu lze také použít pro povolení nebo zakázání určitých stylů, manuální nastavení hodnot nebo okamžité zobrazení výsledků těchto změn.  
+- Použití **vypočítané** kartu pro zobrazení vypočtených hodnot stylu. Pokud například nastavíte velikost na 1em, hodnota vypočítaná aplikací Internet Explorer může být 16px. Styly na této kartě jsou uspořádány podle názvu stylu, například `height`. Tuto kartu lze také použít pro povolení nebo zakázání určitých stylů, manuální nastavení hodnot nebo okamžité zobrazení výsledků těchto změn.  
   
     > [!NOTE]
     >  Ve Visual Studio 2013 Update 2, informace uvedené **trasování** kartu byl sloučen s **vypočítané** kartu a **trasování** byla odebrána.  
   
--   Použití **změny** kartě (pouze aplikace Windows Store a Windows Phone Store) k identifikaci a sledování stylů CSS, které byly změněny během relace ladění.  
+- Použití **změny** kartě (pouze aplikace Windows Store a Windows Phone Store) k identifikaci a sledování stylů CSS, které byly změněny během relace ladění.  
   
 > [!TIP]
 >  Změny provedené na styly **styly** a **vypočítané** karty nejsou trvalé. Jsou ztraceny, jakmile zastavíte ladění. Pokud chcete změnit zdrojový kód a znovu načíst stránky bez zastavení a restartování ladicího programu, aktualizujte aplikaci pomocí ![tlačítko Aktualizovat Windows app](../debugger/media/js-refresh.png "JS_Refresh") tlačítko (**aplikace aktualizovat Windows** ) na **ladění** nástrojů (pouze aplikace Windows Store a Windows Phone Store). Další informace najdete v tématu [aktualizace aplikace (JavaScript)](../debugger/refresh-an-app-javascript.md).  
@@ -58,11 +58,11 @@ Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "wi
   
 #### <a name="to-view-and-change-css-rules"></a>Zobrazení nebo změna pravidel šablon stylů CSS  
   
-1.  V sadě Visual Studio, vytvořit [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] aplikace pomocí jazyků JavaScript a HTML v šabloně projektu rozdělené aplikace.  
+1. V sadě Visual Studio, vytvořit [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] aplikace pomocí jazyků JavaScript a HTML v šabloně projektu rozdělené aplikace.  
   
-2.  V **Průzkumníka řešení**, otevřete items.css. (Items.css najdete ve složce stránky.)  
+2. V **Průzkumníka řešení**, otevřete items.css. (Items.css najdete ve složce stránky.)  
   
-3.  Nahraďte následující kód šablony stylů CSS:  
+3. Nahraďte následující kód šablony stylů CSS:  
   
     ```css  
     .itemspage .itemslist .item {  
@@ -89,30 +89,30 @@ Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "wi
   
      Přidáte tak styl, který určuje barvu #ff6a00 (oranžová) pro každou položku v seznamu. Selektor šablon stylů CSS `.itemspage .itemslist .item`, označuje sadu názvů tříd pro prvky elementů DIV v items.html, které se zobrazí jako vnořené elementy v živém `item` DIV element specifikuje položky seznamu.  
   
-4.  Vyberte **simulátor** v rozevíracím seznamu na **ladění** nástrojů (**místního počítače** je výchozí hodnota).  
+4. Vyberte **simulátor** v rozevíracím seznamu na **ladění** nástrojů (**místního počítače** je výchozí hodnota).  
   
      ![Seznam cílů ladění vyberte](../debugger/media/js-select-target.png "JS_Select_Target")  
   
-5.  Stisknutím klávesy F5 spusťte aplikaci v režimu ladění.  
+5. Stisknutím klávesy F5 spusťte aplikaci v režimu ladění.  
   
      Po dokončení načítání aplikace, vyhledejte záhlaví položek seznamu, jako například **název skupiny: 1**. Barva se nezměnila, takže pokus o použití oranžové barvy v názvech selhal. S pomocí karet šablon stylů CSS v průzkumníku modelu DOM zjistíme, co bylo špatně, a chybu napravíme.  
   
     > [!TIP]
     >  Jakmile se aplikace objeví v simulátoru, umístěte simulátor vpravo vedle okna aplikace Visual Studio, okamžitě tak uvidíte výsledky výběru a provedené změny stylů CSS.  
   
-6.  Přepněte do aplikace Visual Studio a klikněte na tlačítko **vybrat Element** v Průzkumníku modelu DOM (nebo stiskněte kombinaci kláves Ctrl + B). Změní se režim výběru, takže budete moci kliknutím vybrat položku a aplikace se zobrazí v popředí. Po kliknutí se režim přepne zpět. Tady je **vybrat Element** tlačítko. ![Vybrat Element v Průzkumníku modelu DOM](../debugger/media/js-dom-select-element-button.png "JS_DOM_Select_Element_Button")  
+6. Přepněte do aplikace Visual Studio a klikněte na tlačítko **vybrat Element** v Průzkumníku modelu DOM (nebo stiskněte kombinaci kláves Ctrl + B). Změní se režim výběru, takže budete moci kliknutím vybrat položku a aplikace se zobrazí v popředí. Po kliknutí se režim přepne zpět. Tady je **vybrat Element** tlačítko. ![Vybrat Element v Průzkumníku modelu DOM](../debugger/media/js-dom-select-element-button.png "JS_DOM_Select_Element_Button")  
   
     > [!TIP]
     >  Můžete také vybrat elementy HTML přímo v průzkumníku modelu DOM. Další informace o výběru elementů naleznete v tématu [rychlý start: Ladění kódu HTML a CSS](../debugger/quickstart-debug-html-and-css.md).  
   
-7.  V simulátoru, umístěte kurzor na název první položky v seznamu **název skupiny: 1**, v levém panelu domovské stránky. Název je zvýrazněn, jak je znázorněno zde:  
+7. V simulátoru, umístěte kurzor na název první položky v seznamu **název skupiny: 1**, v levém panelu domovské stránky. Název je zvýrazněn, jak je znázorněno zde:  
   
      ![Pomocí tlačítka Vybrat Element](../debugger/media/js-css-select-element.png "JS_CSS_Select_Element")  
   
     > [!NOTE]
     >  Emulátor Windows Phone jen částečně podporuje zvýrazňování elementů podržením ukazatele.  
   
-8.  Klikněte na vyznačený název. Průzkumník modelu DOM automaticky vybere odpovídající element HTML, který vypadá podobně jako tento.  
+8. Klikněte na vyznačený název. Průzkumník modelu DOM automaticky vybere odpovídající element HTML, který vypadá podobně jako tento.  
   
     ```html  
     <h4 class="item-title">Group Title: 1</h4>  
@@ -124,12 +124,12 @@ Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "wi
   
      Toto zobrazení obsahuje užitečné informace o pravidlech, která jsou přidružené k `color` styl, jako je následující:  
   
-    -   Selektor šablon stylů CSS, který je upraven v items.css, `.itemspage .itemslist .item`, se nepoužívá v konečném výpočtu stylu (zobrazí se jako přeškrtnutý text). Několik dalších výskytů `color` stylu nepoužívá se ani.  
+    - Selektor šablon stylů CSS, který je upraven v items.css, `.itemspage .itemslist .item`, se nepoužívá v konečném výpočtu stylu (zobrazí se jako přeškrtnutý text). Několik dalších výskytů `color` stylu nepoužívá se ani.  
   
         > [!TIP]
         >  U delších názvů selektoru se plný název zobrazí v popisu tlačítka.  
   
-    -   Konečná vypočítaná hodnota šablon stylů CSS, `rgba(255, 255, 255, 0.87)`, je nastavena speciálně pro následující selektor šablon stylů CSS: `.itemspage .itemslist .item .item-overlay .item-title`, který je definován také v items.css.  
+    - Konečná vypočítaná hodnota šablon stylů CSS, `rgba(255, 255, 255, 0.87)`, je nastavena speciálně pro následující selektor šablon stylů CSS: `.itemspage .itemslist .item .item-overlay .item-title`, který je definován také v items.css.  
   
         > [!TIP]
         >  Teď, když víme, kde nastavit barvu názvu, víme také, kde ji můžeme změnit. Změny v průzkumníku modelu DOM však můžeme otestovat také bez obnovení aplikace, jak je popsáno ve zbývajících krocích.  

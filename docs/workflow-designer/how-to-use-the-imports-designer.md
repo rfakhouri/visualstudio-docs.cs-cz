@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: df041111bb452462c969995bacee97b08488d1c6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 11c0c959964fee21f2cdfe098907ab2dfe184f7e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55931959"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60038454"
 ---
 # <a name="how-to-use-the-imports-designer"></a>Postupy: Používání návrháře importů
 
@@ -33,14 +33,14 @@ Návrhář importů jsou reaguje na obě změny v uživatelském rozhraní a zm�
 
 ## <a name="to-add-a-namespace-to-the-list-of-imported-namespaces"></a>Přidání nového oboru názvů na seznam importovaných oborů názvů
 
-1.  Otevření aplikace služeb pracovního postupu WCF, konzolová aplikace pracovního postupu nebo projektu knihovny aktivity v sadě Visual Studio nebo aplikace pracovního postupu změněným hostováním.
+1. Otevření aplikace služeb pracovního postupu WCF, konzolová aplikace pracovního postupu nebo projektu knihovny aktivity v sadě Visual Studio nebo aplikace pracovního postupu změněným hostováním.
 
-2.  Klikněte na tlačítko **importy** v dolní části hlavního plátna. Zobrazí se Návrhář importů.
+2. Klikněte na tlačítko **importy** v dolní části hlavního plátna. Zobrazí se Návrhář importů.
 
-3.  Zadejte nebo vyberte z rozevíracího seznamu ovládacího prvku v horní části návrháře importů oboru názvů.
+3. Zadejte nebo vyberte z rozevíracího seznamu ovládacího prvku v horní části návrháře importů oboru názvů.
 
      Při psaní se zobrazí seznam platný obory názvů, které odpovídají zadané znaky.
 
-4.  Stisknutím klávesy **Enter** do seznamu přidat obor názvů.
+4. Stisknutím klávesy **Enter** do seznamu přidat obor názvů.
 
-5.  Pokud chcete odebrat obor názvů v seznamu, vyberte obor názvů a potom stiskněte klávesu **odstranit** kláves na klávesnici. Všimněte si, že obor názvů můžete být odstraněno pouze tehdy, pokud obor názvů je neplatný z nějakého důvodu, například pokud sestavení, který obsahuje obor názvů je již odkazuje na projekt.
+5. Pokud chcete odebrat obor názvů v seznamu, vyberte obor názvů a potom stiskněte klávesu **odstranit** kláves na klávesnici. Všimněte si, že obor názvů můžete být odstraněno pouze tehdy, pokud obor názvů je neplatný z nějakého důvodu, například pokud sestavení, který obsahuje obor názvů je již odkazuje na projekt.

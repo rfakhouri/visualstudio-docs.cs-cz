@@ -14,12 +14,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 021cad5a1da76dec7f1bbe169a7b3677170798f1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 031d764b95aa0f292702dde6167e0be9826270bf
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54753741"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60038616"
 ---
 # <a name="run-windows-store-apps-on-the-local-machine"></a>Spusťte Windows Store apps na místním počítači
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,14 +28,14 @@ Platí pouze pro Windows] (.. /Image/windows_only_content.png "windows_only_cont
   
  Chcete-li ladit, testovat nebo spouštět analýzu výkonu v aplikaci Windows Store, můžete spustit aplikaci na stejném počítači, který je hostitelem aplikace Visual Studio. Je-li zobrazovat na zařízení dotykově ovládaný, můžete také vyzkoušet všechny funkce aplikace. v opačném případě bude omezená na gesta myš a klávesnici.  
   
-##  <a name="BKMK_In_this_topic"></a> V tomto tématu  
+## <a name="BKMK_In_this_topic"></a> V tomto tématu  
  Další:  
   
  [Jak spustit na místním počítači](#BKMK_How_to_run_on_a_local_machine)  
   
  [Jak přepínat mezi aplikací Windows Store a sady Visual Studio na jednoho monitoru](#BKMK_How_to_switch_between_a_Windows_Store_app_and_Visual_Studio_on_a_single_monitor)  
   
-##  <a name="BKMK_How_to_run_on_a_local_machine"></a> Jak spustit na místním počítači  
+## <a name="BKMK_How_to_run_on_a_local_machine"></a> Jak spustit na místním počítači  
  Chcete-li spustit aplikaci na místním počítači, vyberte **místního počítače** z rozevíracího seznamu vedle tlačítka Spustit ladění na ladicí program **standardní** nástrojů.  
   
  ![Spustit na místním počítači](../debugger/media/vsrun-f5-local.png "VSRUN_F5_Local")  
@@ -46,15 +46,15 @@ Platí pouze pro Windows] (.. /Image/windows_only_content.png "windows_only_cont
   
  Spuštění cíle můžete také nastavit přímo v souboru vlastnosti projektu. Klikněte pravým tlačítkem na název projektu v **Průzkumníka řešení** a klikněte na tlačítko **vlastnosti**. Udělejte jednu z následujících akcí:  
   
--   V projektech C# a Visual Basic, klikněte na tlačítko **ladění** a pak vyberte **místního počítače** z **cílové zařízení** rozevíracího seznamu.  
+- V projektech C# a Visual Basic, klikněte na tlačítko **ladění** a pak vyberte **místního počítače** z **cílové zařízení** rozevíracího seznamu.  
   
      ![C&#35; a stránky vlastností projektu jazyka Visual Basic](../debugger/media/vsrun-cs-vb-projprop-local.png "VSRUN_CS_VB_ProjProp_Local")  
   
--   V projektech C++ a JavaScript, rozbalte **vlastnosti konfigurace** uzel, klikněte na tlačítko **ladění**a pak vyberte **místní ladicí program** z **ladicího programu ke spuštění** seznamu.  
+- V projektech C++ a JavaScript, rozbalte **vlastnosti konfigurace** uzel, klikněte na tlačítko **ladění**a pak vyberte **místní ladicí program** z **ladicího programu ke spuštění** seznamu.  
   
      ![C&#43; &#43; a stránky vlastností projektu JavaScript](../debugger/media/vsrun-cpp-js-projprop-local.png "VSRUN_CPP_JS_ProjProp_Local")  
   
-##  <a name="BKMK_How_to_switch_between_a_Windows_Store_app_and_Visual_Studio_on_a_single_monitor"></a> Jak přepínat mezi aplikací Windows Store a sady Visual Studio na jednoho monitoru  
+## <a name="BKMK_How_to_switch_between_a_Windows_Store_app_and_Visual_Studio_on_a_single_monitor"></a> Jak přepínat mezi aplikací Windows Store a sady Visual Studio na jednoho monitoru  
  **Chcete-li přepnout z běžící instance aplikace pro Windows Store se sadou Visual Studio**  
   
  Při spuštění aplikace Windows Store v místním počítači a používat pouze jednoho monitoru, můžete chtít přepněte zpět do sady Visual Studio a ponechání spuštěné aplikace. Například aplikace může být ve stavu, který nelze dosáhnout, zarážky, jako je například čekání na událost nebo zachycena v dlouhé nebo nekonečné smyčce. Pokud chcete vrátit do sady Visual Studio, stiskněte ALT + TAB.

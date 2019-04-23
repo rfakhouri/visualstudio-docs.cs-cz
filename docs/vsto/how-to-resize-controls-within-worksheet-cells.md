@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d039de309e1e9d5ec80d469d4d1329aad7118e71
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: b51f26a4ea2dec50c5ee90c38f49412866b6f866
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56625462"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041899"
 ---
 # <a name="how-to-resize-controls-within-worksheet-cells"></a>Postupy: Změna velikosti ovládacích prvků v buňkách listu
   Při změně velikosti sloupce nebo řádky v listu, změnit velikost hostitelských ovládacích prvků v buňkách automaticky na výšku nebo šířku na buňku, která se změnila. Ovládací prvky Windows Forms se velikost automaticky ve výchozím nastavení.
@@ -35,13 +35,13 @@ ms.locfileid: "56625462"
 
 ### <a name="to-make-controls-resize-with-cells-at-design-time"></a>Chcete-li ovládací prvky, změna velikosti buněk v době návrhu
 
-1.  Z **nástrojů**, přetáhněte ovládací prvek Windows Forms do listu.
+1. Z **nástrojů**, přetáhněte ovládací prvek Windows Forms do listu.
 
-2.  Klikněte pravým tlačítkem na ovládací prvek a potom klikněte na tlačítko **formát ovládacího prvku**.
+2. Klikněte pravým tlačítkem na ovládací prvek a potom klikněte na tlačítko **formát ovládacího prvku**.
 
-3.  V **formát ovládacího prvku** dialogové okno, klikněte na tlačítko **vlastnosti** kartu.
+3. V **formát ovládacího prvku** dialogové okno, klikněte na tlačítko **vlastnosti** kartu.
 
-4.  V části **umístění objektu**, vyberte **přesunutí a změna velikosti buněk** možnost a potom klikněte na tlačítko **OK**.
+4. V části **umístění objektu**, vyberte **přesunutí a změna velikosti buněk** možnost a potom klikněte na tlačítko **OK**.
 
      Když změníte velikost buňky, která obsahuje ovládací prvek, ovládací prvek přizpůsobí svou velikost buňky.
 
@@ -50,7 +50,7 @@ ms.locfileid: "56625462"
 
 ### <a name="to-make-controls-resize-with-cells-at-run-time"></a>Aby se změna velikosti buněk v době běhu ovládací prvky
 
-1.  Přidání ovládacího prvku na rozsah A1.
+1. Přidání ovládacího prvku na rozsah A1.
 
      [!code-vb[Trin_VstcoreProgrammingControlsExcel#5](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#5)]
      [!code-csharp[Trin_VstcoreProgrammingControlsExcel#5](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#5)]
@@ -60,15 +60,15 @@ ms.locfileid: "56625462"
 ## <a name="reset-control-placement"></a>Obnovení umístění ovládacího prvku
  Můžete resetovat, umístění a změnu velikosti ovládacího prvku tak, že nastavíte `Placement` vlastnost na jednu z následujících <xref:Microsoft.Office.Interop.Excel.XlPlacement> hodnoty:
 
--   <xref:Microsoft.Office.Interop.Excel.XlPlacement.xlFreeFloating>
+- <xref:Microsoft.Office.Interop.Excel.XlPlacement.xlFreeFloating>
 
--   <xref:Microsoft.Office.Interop.Excel.XlPlacement.xlMove>
+- <xref:Microsoft.Office.Interop.Excel.XlPlacement.xlMove>
 
--   <xref:Microsoft.Office.Interop.Excel.XlPlacement.xlMoveAndSize>
+- <xref:Microsoft.Office.Interop.Excel.XlPlacement.xlMoveAndSize>
 
 ### <a name="to-change-the-behavior-of-a-control-so-that-it-does-not-resize-or-move-with-the-cell"></a>Chcete-li změnit chování ovládacího prvku tak, aby nepodporuje velikost ani přesunout s buňky
 
-1.  Třeba volat vlastnost umístění ovládacího prvku a nastavte hodnotu na <xref:Microsoft.Office.Interop.Excel.XlPlacement.xlFreeFloating>.
+1. Třeba volat vlastnost umístění ovládacího prvku a nastavte hodnotu na <xref:Microsoft.Office.Interop.Excel.XlPlacement.xlFreeFloating>.
 
      [!code-vb[Trin_VstcoreProgrammingControlsExcel#6](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#6)]
      [!code-csharp[Trin_VstcoreProgrammingControlsExcel#6](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#6)]

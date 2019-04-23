@@ -10,12 +10,12 @@ ms.assetid: 54846779-8290-48de-90ab-81011559d9a5
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 697565600ef37024abde3acd8f2092c690f31e32
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8d22e61d88b5f6e3959a369f6957efbc824384b2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54801946"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042038"
 ---
 # <a name="how-to-register-editor-file-types"></a>Postupy: Typy souborů Editor registru
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ Nejjednodušší způsob, jak zaregistrovat editor typů souborů se s použití
   
 #### <a name="to-register-editor-file-types-using-mpf-classes"></a>Editor typů souborů pomocí třídy MPF registrace  
   
-1.  Zadejte <xref:Microsoft.VisualStudio.Shell.ProvideEditorExtensionAttribute> třídy s příslušnými parametry pro editor ve třídě vašeho balíčku VSPackage.  
+1. Zadejte <xref:Microsoft.VisualStudio.Shell.ProvideEditorExtensionAttribute> třídy s příslušnými parametry pro editor ve třídě vašeho balíčku VSPackage.  
   
     ```  
     [Microsoft.VisualStudio.Shell.ProvideEditorExtensionAttribute(typeof(EditorFactory), ".Sample", 32,   
@@ -43,7 +43,7 @@ Nejjednodušší způsob, jak zaregistrovat editor typů souborů se s použití
   
      `NameResourceID` je definována v souboru Resources.h BasicEditorUI projektu a identifikuje editor jako "Moje editoru".  
   
-2.  Přepsat <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> metody.  
+2. Přepsat <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> metody.  
   
      Ve vaší implementaci <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> metody, volání <xref:Microsoft.VisualStudio.Shell.Package.RegisterEditorFactory%2A> a předáte instanci továrna pro editaci jako znázorněno níže.  
   
@@ -61,7 +61,7 @@ Nejjednodušší způsob, jak zaregistrovat editor typů souborů se s použití
   
      Tento krok zaregistruje objekt factory editoru a přípony souborů editoru.  
   
-3.  Zrušit registraci objekty pro vytváření editoru.  
+3. Zrušit registraci objekty pro vytváření editoru.  
   
      Objekty pro vytváření editoru jsou automaticky odregistrovat při uvolnění sady VSPackage. Pokud objekt factory editoru, který implementuje <xref:System.IDisposable> rozhraní, jeho `Dispose` metoda se volá, když byla Neregistrovaný objekt pro vytváření [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
@@ -70,7 +70,7 @@ Nejjednodušší způsob, jak zaregistrovat editor typů souborů se s použití
   
 #### <a name="to-register-editor-file-types-using-a-registry-script"></a>K registraci skripty registru typy souborů editoru  
   
-1.  Ve vašem skriptu registru definovat objekt pro vytváření editoru a objektu pro vytváření editoru řetězec GUID jak je znázorněno `GUID_BscEditorFactory` část tento skript registru. Navíc definujte rozšíření a prioritu rozšíření editoru:  
+1. Ve vašem skriptu registru definovat objekt pro vytváření editoru a objektu pro vytváření editoru řetězec GUID jak je znázorněno `GUID_BscEditorFactory` část tento skript registru. Navíc definujte rozšíření a prioritu rozšíření editoru:  
   
     ```  
   
@@ -92,9 +92,9 @@ Nejjednodušší způsob, jak zaregistrovat editor typů souborů se s použití
   
      Přípona souboru editoru v tomto příkladu je označen jako ".rtf" a jeho priorita je "50". Identifikátor GUID řetězce jsou definovány v souboru Resource.h BscEdit ukázkového projektu.  
   
-2.  Registrace sady VSPackage.  
+2. Registrace sady VSPackage.  
   
-3.  Zaregistrujte objekt pro vytváření editoru.  
+3. Zaregistrujte objekt pro vytváření editoru.  
   
      Objekt factory editoru je registrován v <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterEditors.RegisterEditor%2A> implementace.  
   

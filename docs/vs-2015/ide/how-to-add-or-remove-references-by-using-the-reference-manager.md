@@ -23,12 +23,12 @@ caps.latest.revision: 48
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4a73beba7ee41c52c60a4aaa3864a7ef112784dd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c7161d8115f8cc99f830293cdf5f957a2264f5a0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54756983"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041179"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Postupy: Přidání nebo odebrání odkazů pomocí Správce odkazů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,13 +45,13 @@ Můžete použít **správce odkazů** dialogové okno Přidat a spravovat odkaz
   
    **Správce odkazů** otevře a zobrazí seznam dostupných odkazů seřazených ve skupinách. Typ projektu určuje, které z těchto skupin se zobrazí:  
   
--   Skupina Sestavení s podskupinami Rozhraní a Rozšíření  
+- Skupina Sestavení s podskupinami Rozhraní a Rozšíření  
   
--   Skupina Řešení s podskupinou Projekty  
+- Skupina Řešení s podskupinou Projekty  
   
--   Skupina Windows s podskupinami Jádro a Rozšíření. Odkazy v sadě Windows SDK nebo rozšiřujících sadách SDK můžete prozkoumat pomocí **prohlížeče objektů**.  
+- Skupina Windows s podskupinami Jádro a Rozšíření. Odkazy v sadě Windows SDK nebo rozšiřujících sadách SDK můžete prozkoumat pomocí **prohlížeče objektů**.  
   
--   Skupina Procházení s podskupinou Nedávné  
+- Skupina Procházení s podskupinou Nedávné  
   
 ## <a name="assemblies-tab"></a>Karta Sestavení  
  **Sestavení** karta obsahuje seznam všech sestavení rozhraní .NET Framework, které jsou k dispozici pro odkazování. **Sestavení** kartu neobsahuje žádná sestavení z globální mezipaměti sestavení (GAC), protože sestavení v GAC jsou součástí běhového prostředí. Pokud nasadíte nebo zkopírujete aplikaci, která obsahuje odkaz na sestavení registrované v GAC, nebude toto sestavení nasazeno nebo zkopírováno spolu s aplikací, a to bez ohledu na nastavení Kopírovat místní. Další informace najdete v tématu [odkazy na projekt](http://go.microsoft.com/fwlink/?LinkId=238512).  
@@ -66,13 +66,13 @@ Můžete použít **správce odkazů** dialogové okno Přidat a spravovat odkaz
   
 1. Karta Rozhraní obsahuje všechna sestavení, která tvoří cílené rozhraní.  
   
-   -   Inzerovaná sestavení se nacházejí v plné verzi rozhraní a jejich výčet je uveden v seznamu rozhraní, jestliže váš projekt cílí na profil cíleného rozhraní. Inzerovaná sestavení jsou zobrazena šedou barvou z důvodu odlišení od sestavení, která existují v cíleném profilu Rozhraní daného projektu. Pokud například projekt cílí na rozhraní .NET Framework 4 Client, seznam rozhraní obsahuje inzerovaná sestavení z rozhraní .NET Framework 4. Při přidání inzerovaného sestavení, je mu oznámeno, že po **správce odkazů** zavření okna, projekt se změní cílení na rozhraní .NET Framework 4 a přidá dané inzerované sestavení.  
+   - Inzerovaná sestavení se nacházejí v plné verzi rozhraní a jejich výčet je uveden v seznamu rozhraní, jestliže váš projekt cílí na profil cíleného rozhraní. Inzerovaná sestavení jsou zobrazena šedou barvou z důvodu odlišení od sestavení, která existují v cíleném profilu Rozhraní daného projektu. Pokud například projekt cílí na rozhraní .NET Framework 4 Client, seznam rozhraní obsahuje inzerovaná sestavení z rozhraní .NET Framework 4. Při přidání inzerovaného sestavení, je mu oznámeno, že po **správce odkazů** zavření okna, projekt se změní cílení na rozhraní .NET Framework 4 a přidá dané inzerované sestavení.  
   
-   -   Projekty pro [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] aplikace obsahují odkazy na všechna sestavení v cíleném [!INCLUDE[net_win8_profile](../includes/net-win8-profile-md.md)] ve výchozím nastavení při vytvoření projektu. Ve spravovaných projektech, uzel jen pro čtení ve složce odkazy v **Průzkumníka řešení** označuje odkaz na celé rozhraní. Karta rozhraní proto nebude žádná sestavení z rozhraní a místo toho zobrazí následující zpráva: "Všechna sestavení rozhraní je již odkazováno. Použijte prohlížeč objektů pro prozkoumání odkazů rozhraní Framework." Pro desktopové projekty karta rozhraní zobrazuje sestavení z cíleného rozhraní a uživatel musí přidat odkazy, které aplikace vyžaduje.  
+   - Projekty pro [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] aplikace obsahují odkazy na všechna sestavení v cíleném [!INCLUDE[net_win8_profile](../includes/net-win8-profile-md.md)] ve výchozím nastavení při vytvoření projektu. Ve spravovaných projektech, uzel jen pro čtení ve složce odkazy v **Průzkumníka řešení** označuje odkaz na celé rozhraní. Karta rozhraní proto nebude žádná sestavení z rozhraní a místo toho zobrazí následující zpráva: "Všechna sestavení rozhraní je již odkazováno. Použijte prohlížeč objektů pro prozkoumání odkazů rozhraní Framework." Pro desktopové projekty karta rozhraní zobrazuje sestavení z cíleného rozhraní a uživatel musí přidat odkazy, které aplikace vyžaduje.  
   
 2. Karta Rozšíření obsahuje seznam všech sestavení, která vyvinuli externí dodavatelé součástí a ovládacích prvků za účelem rozšíření cíleného rozhraní. Podle účelu dané aplikace mohou být tato sestavení potřebná.  
   
-   -   Karta Rozšíření zobrazuje výčet sestavení, která jsou zaregistrována v následujících umístěních:  
+   - Karta Rozšíření zobrazuje výčet sestavení, která jsou zaregistrována v následujících umístěních:  
   
        ```  
        32-bit machine:  
@@ -88,17 +88,17 @@ Můžete použít **správce odkazů** dialogové okno Přidat a spravovat odkaz
   
    Některé součásti v seznamu se nemusí zobrazit, v závislosti na tom [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] verzi vašeho projektu. Tato situace může nastat za následujících podmínek:  
   
--   Komponenta, která používá nejnovější verzi rozhraní .NET Framework je nekompatibilní s projektem, který se zaměřuje na starší verzi rozhraní .NET Framework.  
+- Komponenta, která používá nejnovější verzi rozhraní .NET Framework je nekompatibilní s projektem, který se zaměřuje na starší verzi rozhraní .NET Framework.  
   
      Informace o tom, jak změnit cílovou verzi rozhraní .NET Framework pro projekt, naleznete v tématu [jak: Cílení na určitou verzi rozhraní .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).  
   
--   Komponenty, která používá [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)] je nekompatibilní s projektem, který se zaměřuje [!INCLUDE[net_v45](../includes/net-v45-md.md)].  
+- Komponenty, která používá [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)] je nekompatibilní s projektem, který se zaměřuje [!INCLUDE[net_v45](../includes/net-v45-md.md)].  
   
      Když vytvoříte novou aplikaci, některé projekty zaměřují [!INCLUDE[net_v45](../includes/net-v45-md.md)] ve výchozím nastavení. Další informace najdete v tématu [rozhraní .NET Framework Client Profile](http://msdn.microsoft.com/library/f0219919-1f02-4588-8704-327a62fd91f1).  
   
--   Můžete byste se vyhnout přidávání odkazů na soubory do výstupů jiného projektu ve stejném řešení, protože to může způsobit chyby kompilace. Místo toho použijte **projekty** karty **přidat odkaz** dialogové okno k vytvoření odkazů typu projekt projekt. Toto usnadňuje vývoj v týmu povolením lepší správy knihoven tříd, které vytvoříte ve svých projektech. Další informace najdete v tématu [řešení potíží s nefunkční odkazy](../ide/troubleshooting-broken-references.md).  
+- Můžete byste se vyhnout přidávání odkazů na soubory do výstupů jiného projektu ve stejném řešení, protože to může způsobit chyby kompilace. Místo toho použijte **projekty** karty **přidat odkaz** dialogové okno k vytvoření odkazů typu projekt projekt. Toto usnadňuje vývoj v týmu povolením lepší správy knihoven tříd, které vytvoříte ve svých projektech. Další informace najdete v tématu [řešení potíží s nefunkční odkazy](../ide/troubleshooting-broken-references.md).  
   
--   > [!NOTE]
+- > [!NOTE]
     >  V sadě Visual Studio 2015 je odkaz na soubor místo odkazu na projekt vytvořen, pokud cílová verze rozhraní .NET Framework jednoho projektu je verze 4.5 a cílová verze jiného projektu je verze 2, 3, 3.5 nebo 4.0.  
   
 #### <a name="to-display-an-assembly-in-the-add-reference-dialog-box"></a>Zobrazení sestavení v dialogovém okně Přidat odkaz  
@@ -196,9 +196,9 @@ Můžete použít **správce odkazů** dialogové okno Přidat a spravovat odkaz
   
  Při provádění odkaz na soubor na o soubor WinMD je očekávané rozložení je, že *FileName*.winmd, *FileName*.dll, a *FileName*soubory .pri jsou umístěny spolu. Pokud odkazujete na soubor WinMD v následujících scénářích, do výstupního adresáře projektu budou zkopírovány neúplné sady souborů a v důsledku toho dojde k chybám při sestavení a za běhu.  
   
--   **Nativní součást**: nativní projekt vytvoří jeden soubor WinMD pro každou sadu nesouvislých oborů názvů a jednu knihovnu DLL, který se skládá z implementace. Soubory WinMDs budou mít nesouvislé názvy. Při odkazování na tento soubor nativní součásti nástroj MSBuild nerozpozná, že tyto různě nazvané soubory WinMD tvoří jednu součást. V důsledku toho pouze identicky pojmenované *FileName*.dll a *FileName*zkopírují .winmd a dojde k chybám za běhu. Chcete-li tento problém vyřešit, vytvořte rozšiřující sadu SDK. Další informace najdete v tématu [vytváření Software Development Kit](../extensibility/creating-a-software-development-kit.md).  
+- **Nativní součást**: nativní projekt vytvoří jeden soubor WinMD pro každou sadu nesouvislých oborů názvů a jednu knihovnu DLL, který se skládá z implementace. Soubory WinMDs budou mít nesouvislé názvy. Při odkazování na tento soubor nativní součásti nástroj MSBuild nerozpozná, že tyto různě nazvané soubory WinMD tvoří jednu součást. V důsledku toho pouze identicky pojmenované *FileName*.dll a *FileName*zkopírují .winmd a dojde k chybám za běhu. Chcete-li tento problém vyřešit, vytvořte rozšiřující sadu SDK. Další informace najdete v tématu [vytváření Software Development Kit](../extensibility/creating-a-software-development-kit.md).  
   
--   **Využívající ovládací prvky**:, ovládací prvek XAML přinejmenším z *FileName*.winmd, *FileName*.dll, *FileName*.pri, *XamlName* .xaml a *ImageName*.jpg. Při sestavení projektu nebudou soubory prostředků, které jsou spojeny s odkaz na soubor získat zkopírovány do výstupního adresáře projektu a to jenom *FileName*.winmd, *FileName*.dll a *FileName*.pri budou zkopírovány. Bude zaznamenána chyba sestavení informovat uživatele, který prostředky *XamlName*.xaml a *ImageName*.jpg nebyly nalezeny. Aby sestavení proběhlo úspěšně, bude uživatel muset ručně zkopírovat tyto soubory prostředků do výstupního adresáře projektu pro sestavení a ladění/dobu běhu. Chcete-li tento problém obejít, buď vytvořte rozšiřující sadu SDK pomocí kroků v [vytváření Software Development Kit](../extensibility/creating-a-software-development-kit.md) nebo upravit soubor projektu a přidejte následující vlastnost:  
+- **Využívající ovládací prvky**:, ovládací prvek XAML přinejmenším z *FileName*.winmd, *FileName*.dll, *FileName*.pri, *XamlName* .xaml a *ImageName*.jpg. Při sestavení projektu nebudou soubory prostředků, které jsou spojeny s odkaz na soubor získat zkopírovány do výstupního adresáře projektu a to jenom *FileName*.winmd, *FileName*.dll a *FileName*.pri budou zkopírovány. Bude zaznamenána chyba sestavení informovat uživatele, který prostředky *XamlName*.xaml a *ImageName*.jpg nebyly nalezeny. Aby sestavení proběhlo úspěšně, bude uživatel muset ručně zkopírovat tyto soubory prostředků do výstupního adresáře projektu pro sestavení a ladění/dobu běhu. Chcete-li tento problém obejít, buď vytvořte rozšiřující sadu SDK pomocí kroků v [vytváření Software Development Kit](../extensibility/creating-a-software-development-kit.md) nebo upravit soubor projektu a přidejte následující vlastnost:  
   
     ```  
     <PropertyGroup>  

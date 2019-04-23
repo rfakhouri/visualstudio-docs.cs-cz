@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 409ae07d9632bdd54be3e32f48cc50fdade5c3c0
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: e1de8b942b64de56b93b2fece3f46b23413b6981
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56710133"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60038278"
 ---
 # <a name="debugging-gpu-code"></a>Ladění kódu GPU
 Můžete ladit kód jazyka C++, na kterém běží na grafický procesor (GPU). Podpora v sadě Visual Studio pro ladění GPU zahrnuje závodu detekce spouštění procesů a připojení, a integraci do ladění systému windows.
@@ -32,9 +32,9 @@ Můžete ladit kód jazyka C++, na kterém běží na grafický procesor (GPU). 
 ## <a name="configuring-gpu-debugging"></a>Konfigurace ladění GPU
  Ladicí program nelze přerušit na kód CPU a GPU kódu v rámci stejné aplikace. Ve výchozím nastavení ladicí program přeruší na procesoru kódu. Ladění kódu GPU, použijte jeden z následujících dvou kroků:
 
--   V **ladění typu** seznamu **standardní** nástrojů, zvolte **pouze GPU**.
+- V **ladění typu** seznamu **standardní** nástrojů, zvolte **pouze GPU**.
 
--   V **Průzkumníka řešení**, v místní nabídce projektu zvolte **vlastnosti**. V **stránky vlastností** dialogu **ladění**a pak vyberte **pouze GPU** v **typ ladicího programu** seznamu.
+- V **Průzkumníka řešení**, v místní nabídce projektu zvolte **vlastnosti**. V **stránky vlastností** dialogu **ladění**a pak vyberte **pouze GPU** v **typ ladicího programu** seznamu.
 
 ## <a name="launching-and-attaching-to-applications"></a>Spuštění a připojení k aplikacím
  Příkazy ladění sady Visual Studio můžete použít ke spuštění a zastavení ladění GPU. Další informace najdete v tématu [procházení kódu s ladicím programem](../debugger/navigating-through-code-with-the-debugger.md). Ladicí program GPU můžete také připojit ke spuštěnému procesu, ale pouze pokud tento proces spouští kód GPU. Další informace najdete v tématu [připojení k běžící procesy](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).
@@ -42,22 +42,22 @@ Můžete ladit kód jazyka C++, na kterém běží na grafický procesor (GPU). 
 ## <a name="run-current-tile-to-cursor-and-run-to-cursor"></a>Spustit aktuální blok ke kurzoru a spustit ke kurzoru
  Při ladění na GPU, máte dvě možnosti, provést do pozice kurzoru. Příkazy pro obě možnosti jsou dostupné v místní nabídce editoru kódu.
 
-1.  **Spustit ke kurzoru** příkaz spustí vaši aplikaci, až dosáhne umístění kurzoru a poté se přeruší. To neznamená, že aktuální vlákno je spuštěn na kurzoru; Místo toho, znamená to, že první vlákno, kterou půjde používat bod kurzor aktivuje přerušení. Zobrazit [procházení kódu s ladicím programem](../debugger/navigating-through-code-with-the-debugger.md)
+1. **Spustit ke kurzoru** příkaz spustí vaši aplikaci, až dosáhne umístění kurzoru a poté se přeruší. To neznamená, že aktuální vlákno je spuštěn na kurzoru; Místo toho, znamená to, že první vlákno, kterou půjde používat bod kurzor aktivuje přerušení. Zobrazit [procházení kódu s ladicím programem](../debugger/navigating-through-code-with-the-debugger.md)
 
-2.  **Spustit aktuální dlaždici ke kurzoru** příkaz spustí vaši aplikaci, dokud všechna vlákna v aktuálním bloku nedosáhnou kurzoru a konce.
+2. **Spustit aktuální dlaždici ke kurzoru** příkaz spustí vaši aplikaci, dokud všechna vlákna v aktuálním bloku nedosáhnou kurzoru a konce.
 
 ## <a name="debugging-windows"></a>Ladění Windows
  S použitím určitých ladění systému windows, můžete zkoumat, příznak a zablokovat vlákna GPU. Další informace naleznete v tématu:
 
--   [Použití okna Paralelní zásobníky](../debugger/using-the-parallel-stacks-window.md)
+- [Použití okna Paralelní zásobníky](../debugger/using-the-parallel-stacks-window.md)
 
--   [Použití okna úloh](../debugger/using-the-tasks-window.md)
+- [Použití okna úloh](../debugger/using-the-tasks-window.md)
 
--   [Postupy: Použití okna Paralelní sledování](../debugger/how-to-use-the-parallel-watch-window.md)
+- [Postupy: Použití okna Paralelní sledování](../debugger/how-to-use-the-parallel-watch-window.md)
 
--   [Ladění vláken a procesů](../debugger/debug-threads-and-processes.md) (panelu nástrojů umístění ladění)
+- [Ladění vláken a procesů](../debugger/debug-threads-and-processes.md) (panelu nástrojů umístění ladění)
 
--   [Postupy: Použití okna vláken GPU](../debugger/how-to-use-the-gpu-threads-window.md)
+- [Postupy: Použití okna vláken GPU](../debugger/how-to-use-the-gpu-threads-window.md)
 
 ## <a name="data-synchronization-exceptions"></a>Výjimky synchronizace dat
  Ladicí program můžete identifikovat několik podmínek synchronizace dat během provádění. Když se zjistí podmínku, ladicí program přejde do stavu přerušení. Máte dvě možnosti –**přerušit** nebo **pokračovat**. S použitím **výjimky** dialogovém okně můžete nakonfigurovat, zda ladicí program zjistí tyto podmínky a také jakých podmínek se přeruší pro. Další informace najdete v tématu [Správa výjimek pomocí ladicího programu](../debugger/managing-exceptions-with-the-debugger.md). Můžete také použít **možnosti** dialogové okno k určení, že ladicí program by měl Ignorovat výjimky, pokud se data, která je napsána nemění hodnotu data. Další informace najdete v tématu [Obecné, ladění, dialogové okno Možnosti](../debugger/general-debugging-options-dialog-box.md).
@@ -65,7 +65,7 @@ Můžete ladit kód jazyka C++, na kterém běží na grafický procesor (GPU). 
 ## <a name="troubleshooting"></a>Poradce při potížích
 
 ### <a name="specifying-an-accelerator"></a>Určení akcelerátoru
- Zarážky v kódu GPU jsou pouze přístupů, pokud je kód spuštěn [Accelerator::direct3d_ref –](/cpp/parallel/amp/reference/accelerator-class#direct3d_ref) akcelerátorů (odkaz). Pokud nezadáte akcelerátoru ve vašem kódu, je automaticky vybrán jako akcelerátor REF **typ akcelerátoru ladění** ve vlastnostech projektu. Pokud váš kód explicitně vybere akcelerátoru, akcelerátor REF se nepoužije během ladění a nebudou fungovat zarážky, pokud váš hardware GPU neobsahuje podporu ladění. Můžete to napravit napsáním kódu tak, aby používala akcelerátor REF během ladění. Další informace najdete ve vlastnostech projektu a [používání akcelerátoru a objektů accelerator_view](/cpp/parallel/amp/using-accelerator-and-accelerator-view-objects) a [nastavení projektu pro konfiguraci ladění jazyka C++](../debugger/project-settings-for-a-cpp-debug-configuration.md).
+ Zarážky v kódu GPU jsou pouze přístupů, pokud je kód spuštěn [Accelerator::direct3d_ref –](/cpp/parallel/amp/reference/accelerator-class#direct3d_ref) akcelerátorů (odkaz). Pokud nezadáte akcelerátoru ve vašem kódu, je automaticky vybrán jako akcelerátor REF **typ akcelerátoru ladění** ve vlastnostech projektu. Pokud váš kód explicitně vybere akcelerátoru, akcelerátor REF se nepoužije během ladění a nebudou fungovat zarážky, pokud váš hardware GPU neobsahuje podporu ladění. Můžete to napravit napsáním kódu tak, aby používala akcelerátor REF během ladění. Další informace najdete ve vlastnostech projektu a [používání akcelerátoru a objektů accelerator_view](/cpp/parallel/amp/using-accelerator-and-accelerator-view-objects) a [nastavení projektu pro C++ konfiguraci ladění](../debugger/project-settings-for-a-cpp-debug-configuration.md).
 
 ### <a name="conditional-breakpoints"></a>Podmíněné zarážky
  Podmíněné zarážky v kódu GPU jsou podporované, ale ne každý výraz lze vyhodnotit na zařízení. Výraz nejde vyhodnotit na zařízení, se vyhodnotí na ladicí program. Ladicí program je pravděpodobně poběží pomaleji než zařízení.

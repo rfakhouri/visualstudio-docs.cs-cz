@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 57c5516c70819f8f86d56e93f78ec5d877c72a78
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 838e057fd0063df6a1c592dfefee759b56b9f89b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56640373"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041192"
 ---
 # <a name="parameter-info-in-a-legacy-language-service"></a>Informace o parametrech ve službě starší verze jazyka
 Informace o parametru technologie IntelliSense je popisek, který zobrazuje podpis metody, když uživatel zadá seznamu parametrů počáteční znak (obvykle otevřena závorka) pro seznam parametrů metody. Každý parametr je zadána a je zadán parametr oddělovač (obvykle čárku), popisek se aktualizuje a zobrazí další parametr tučným písmem.
@@ -111,10 +111,10 @@ testfunc("a string",3);
 
  Níže jsou uvedené kroky, které analyzátor přebírá:
 
-1.  Volání analyzátor <xref:Microsoft.VisualStudio.Package.AuthoringSink.StartName%2A> s textem "testfunc".
+1. Volání analyzátor <xref:Microsoft.VisualStudio.Package.AuthoringSink.StartName%2A> s textem "testfunc".
 
-2.  Volání analyzátor <xref:Microsoft.VisualStudio.Package.AuthoringSink.StartParameters%2A>.
+2. Volání analyzátor <xref:Microsoft.VisualStudio.Package.AuthoringSink.StartParameters%2A>.
 
-3.  Volání analyzátor <xref:Microsoft.VisualStudio.Package.AuthoringSink.NextParameter%2A>.
+3. Volání analyzátor <xref:Microsoft.VisualStudio.Package.AuthoringSink.NextParameter%2A>.
 
-4.  Volání analyzátor <xref:Microsoft.VisualStudio.Package.AuthoringSink.EndParameters%2A>.
+4. Volání analyzátor <xref:Microsoft.VisualStudio.Package.AuthoringSink.EndParameters%2A>.

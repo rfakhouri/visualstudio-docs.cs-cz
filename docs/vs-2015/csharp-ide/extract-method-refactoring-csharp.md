@@ -16,12 +16,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b2d38c46d630f7deccaec8c093c2c4e75456eec0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5a889250e641e004bdb0d89f6965c43c3d6b8e2a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54754826"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041395"
 ---
 # <a name="extract-method-refactoring-c"></a>Refaktoring pro extrahování metody (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,19 +32,19 @@ ms.locfileid: "54754826"
   
  **Extrahovat metodu** má následující výhody:  
   
--   Kdy se klade důraz diskrétní, opakovatelně použitelných metody může vést ke vzniku doporučenými postupy psaní kódu.  
+- Kdy se klade důraz diskrétní, opakovatelně použitelných metody může vést ke vzniku doporučenými postupy psaní kódu.  
   
--   Může vést ke vzniku svým dokumentování kódu pomocí vhodné organizace.  
+- Může vést ke vzniku svým dokumentování kódu pomocí vhodné organizace.  
   
      Po popisné názvy metod používaných, vysoké úrovně můžete další informace, jako jsou řadu komentáře.  
   
--   Podporuje vytváření citlivější metody pro zjednodušení přepsání.  
+- Podporuje vytváření citlivější metody pro zjednodušení přepsání.  
   
--   Snižuje dojde k duplikaci kódu.  
+- Snižuje dojde k duplikaci kódu.  
   
 ### <a name="to-use-extract-method"></a>Extrahování metody  
   
-1.  Vytvořte konzolovou aplikaci s názvem `ExtractMethod`a potom nahraďte `Program` pomocí následujícího ukázkového kódu.  
+1. Vytvořte konzolovou aplikaci s názvem `ExtractMethod`a potom nahraďte `Program` pomocí následujícího ukázkového kódu.  
   
     ```csharp  
     class A  
@@ -68,13 +68,13 @@ ms.locfileid: "54754826"
     }  
     ```  
   
-2.  Vyberte fragment kódu, které mají být extrahovány:  
+2. Vyberte fragment kódu, které mají být extrahovány:  
   
     ```csharp  
     double area = PI * radius * radius;  
     ```  
   
-3.  Na **Refaktorovat** nabídky, klikněte na tlačítko **extrahovat metodu**.  
+3. Na **Refaktorovat** nabídky, klikněte na tlačítko **extrahovat metodu**.  
   
      **Extrahovat metodu** zobrazí se dialogové okno.  
   
@@ -82,11 +82,11 @@ ms.locfileid: "54754826"
   
      Je můžete také kliknout pravým tlačítkem vybrané kódu, přejděte na **Refaktorovat**a potom klikněte na tlačítko **extrahovat metodu** zobrazíte **extrahovat metodu** dialogové okno.  
   
-4.  Zadejte název nové metody, jako například `CircleArea`v **nový název metody** pole.  
+4. Zadejte název nové metody, jako například `CircleArea`v **nový název metody** pole.  
   
      Ve verzi preview nové podpis metody se zobrazí v části **náhled signatury metody**.  
   
-5.  Klikněte na **OK**.  
+5. Klikněte na **OK**.  
   
 ## <a name="remarks"></a>Poznámky  
  Při použití **extrahovat metodu** příkazu novou metodu disku do mechaniky následující člen zdroje ve stejné třídě.  

@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: c1a2d2a60b6875cf4257c0b5bfb3e09c27865c17
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 6f4ec35c79bd71351d830428cce39b41b7308cf7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55943386"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040481"
 ---
 # <a name="enable-coded-ui-testing-of-your-controls"></a>Povolení programového testování uživatelského rozhraní pro vaše ovládací prvky
 
@@ -37,7 +37,7 @@ Tvůrce programového testu uživatelského rozhraní shromažďuje informace o 
 
  ![CUIT&#95;přístupné](../test/media/cuit_accessible.png)
 
-1.  Implementace, která je odvozena z třídy <xref:System.Windows.Forms.Control.ControlAccessibleObject>a přepsat <xref:System.Windows.Forms.Control.AccessibilityObject%2A> vlastnost k vrácení objektu vaší třídy.
+1. Implementace, která je odvozena z třídy <xref:System.Windows.Forms.Control.ControlAccessibleObject>a přepsat <xref:System.Windows.Forms.Control.AccessibilityObject%2A> vlastnost k vrácení objektu vaší třídy.
 
     ```csharp
     public partial class ChartControl : UserControl
@@ -62,11 +62,11 @@ Tvůrce programového testu uživatelského rozhraní shromažďuje informace o 
     }
     ```
 
-2.  Přepsat přístupný objekt <xref:System.Windows.Forms.AccessibleObject.Role%2A>, <xref:System.Windows.Forms.AccessibleObject.State%2A>, <xref:System.Windows.Forms.AccessibleObject.GetChild%2A> a <xref:System.Windows.Forms.AccessibleObject.GetChildCount%2A> vlastnosti a metody.
+2. Přepsat přístupný objekt <xref:System.Windows.Forms.AccessibleObject.Role%2A>, <xref:System.Windows.Forms.AccessibleObject.State%2A>, <xref:System.Windows.Forms.AccessibleObject.GetChild%2A> a <xref:System.Windows.Forms.AccessibleObject.GetChildCount%2A> vlastnosti a metody.
 
-3.  Implementovat jiný objekt usnadnění pro podřízený ovládací prvek a přepsat podřízený ovládací prvek <xref:System.Windows.Forms.Control.AccessibilityObject%2A> vlastnost vrátí objekt usnadnění.
+3. Implementovat jiný objekt usnadnění pro podřízený ovládací prvek a přepsat podřízený ovládací prvek <xref:System.Windows.Forms.Control.AccessibilityObject%2A> vlastnost vrátí objekt usnadnění.
 
-4.  Přepsat <xref:System.Windows.Forms.AccessibleObject.Bounds%2A>, <xref:System.Windows.Forms.AccessibleObject.Name%2A>, <xref:System.Windows.Forms.AccessibleObject.Parent%2A>, <xref:System.Windows.Forms.AccessibleObject.Role%2A>, <xref:System.Windows.Forms.AccessibleObject.State%2A>, <xref:System.Windows.Forms.AccessibleObject.Navigate%2A>, a <xref:System.Windows.Forms.AccessibleObject.Select%2A> vlastnosti a metody pro objekt usnadnění podřízený ovládací prvek.
+4. Přepsat <xref:System.Windows.Forms.AccessibleObject.Bounds%2A>, <xref:System.Windows.Forms.AccessibleObject.Name%2A>, <xref:System.Windows.Forms.AccessibleObject.Parent%2A>, <xref:System.Windows.Forms.AccessibleObject.Role%2A>, <xref:System.Windows.Forms.AccessibleObject.State%2A>, <xref:System.Windows.Forms.AccessibleObject.Navigate%2A>, a <xref:System.Windows.Forms.AccessibleObject.Select%2A> vlastnosti a metody pro objekt usnadnění podřízený ovládací prvek.
 
 > [!NOTE]
 > Toto téma začíná ukázka usnadnění přístupu v <xref:System.Windows.Forms.AccessibleObject>a poté sestaví na této ukázce v zbývající postupy. Pokud chcete vytvořit pracovní verzi vzorku přístupnost, vytvořte konzolovou aplikaci a pak nahraďte kód v *Program.cs* se vzorovým kódem. Přidáte odkazy na dostupnost, System.Drawing a System.Windows.Forms. Změnit **Embed Interop Types** pro usnadnění přístupu k **False** k vyloučení upozornění sestavení. Můžete změnit typ výstupu projektu z **konzolovou aplikaci** k **aplikace Windows** tak, aby se nezobrazí okno konzoly při spuštění aplikace.
@@ -182,19 +182,19 @@ Vlastnost filtru poskytovatele a akce jsou implementované v balíčku rozšíř
 
 ### <a name="to-debug-your-property-provider-or-action-filter"></a>Chcete-li ladit vlastnosti zprostředkovatele nebo akce filtru
 
-1.  Sestavení ladicí verze kopii balíčku rozšíření *.dll* a *PDB* soubory *%ProgramFiles%\Common Files\Microsoft Shared\VSTT\10.0\UITestExtensionPackages*.
+1. Sestavení ladicí verze kopii balíčku rozšíření *.dll* a *PDB* soubory *%ProgramFiles%\Common Files\Microsoft Shared\VSTT\10.0\UITestExtensionPackages*.
 
-2.  Spusťte aplikaci (ne v ladicím programu).
+2. Spusťte aplikaci (ne v ladicím programu).
 
-3.  Spusťte Tvůrce programového testu uživatelského rozhraní.
+3. Spusťte Tvůrce programového testu uživatelského rozhraní.
 
      `codedUITestBuilder.exe  /standalone`
 
-4.  Připojte ladicí program k procesu codedUITestBuilder.
+4. Připojte ladicí program k procesu codedUITestBuilder.
 
-5.  Nastavte zarážky v kódu.
+5. Nastavte zarážky v kódu.
 
-6.  Vytvořte v Tvůrce programového testu uživatelského rozhraní, nepodmíněné výrazy pro výkon poskytovatele vlastnost a zaznamenejte akce vykonávat filtry akce.
+6. Vytvořte v Tvůrce programového testu uživatelského rozhraní, nepodmíněné výrazy pro výkon poskytovatele vlastnost a zaznamenejte akce vykonávat filtry akce.
 
 ## <a name="see-also"></a>Viz také:
 

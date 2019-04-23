@@ -11,12 +11,12 @@ ms.assetid: 254a88e7-d3a7-447a-bd0c-8985e73d85cf
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 422a641455d6b706250ca34e3857c3e8d21920ca
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 4da225417724f1de39f25a1527bdf980f3d369cd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54833789"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039196"
 ---
 # <a name="enumerating-locals"></a>Vytváření výčtů pro místní hodnoty
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -28,19 +28,19 @@ ms.locfileid: "54833789"
   
  Tato implementace `IDebugProperty2::EnumChildren` provádí následující úlohy:  
   
-1.  Zajišťuje, že to je představující metodu.  
+1. Zajišťuje, že to je představující metodu.  
   
-2.  Používá `guidFilter` argument určit, která metoda se má volat [IDebugMethodField](../../extensibility/debugger/reference/idebugmethodfield.md) objektu. Pokud `guidFilter` rovná:  
+2. Používá `guidFilter` argument určit, která metoda se má volat [IDebugMethodField](../../extensibility/debugger/reference/idebugmethodfield.md) objektu. Pokud `guidFilter` rovná:  
   
-    1.  `guidFilterLocals`, volání [EnumLocals](../../extensibility/debugger/reference/idebugmethodfield-enumlocals.md) získat [IEnumDebugFields](../../extensibility/debugger/reference/ienumdebugfields.md) objektu.  
+    1. `guidFilterLocals`, volání [EnumLocals](../../extensibility/debugger/reference/idebugmethodfield-enumlocals.md) získat [IEnumDebugFields](../../extensibility/debugger/reference/ienumdebugfields.md) objektu.  
   
-    2.  `guidFilterArgs`, volání [EnumArguments](../../extensibility/debugger/reference/idebugmethodfield-enumarguments.md) získat `IEnumDebugFields` objektu.  
+    2. `guidFilterArgs`, volání [EnumArguments](../../extensibility/debugger/reference/idebugmethodfield-enumarguments.md) získat `IEnumDebugFields` objektu.  
   
-    3.  `guidFilterLocalsPlusArgs`, syntetizace výčet, který kombinuje výsledky z `IDebugMethodField::EnumLocals` a `IDebugMethodField::EnumArguments`. Tato syntézu je reprezentován třídou `CEnumMethodField`.  
+    3. `guidFilterLocalsPlusArgs`, syntetizace výčet, který kombinuje výsledky z `IDebugMethodField::EnumLocals` a `IDebugMethodField::EnumArguments`. Tato syntézu je reprezentován třídou `CEnumMethodField`.  
   
-3.  Vytvoří instanci třídy (volá `CEnumPropertyInfo` v tomto příkladu), který implementuje `IEnumDebugPropertyInfo2` rozhraní a obsahuje `IEnumDebugFields` objektu.  
+3. Vytvoří instanci třídy (volá `CEnumPropertyInfo` v tomto příkladu), který implementuje `IEnumDebugPropertyInfo2` rozhraní a obsahuje `IEnumDebugFields` objektu.  
   
-4.  Vrátí `IEnumDebugProperty2Info2` rozhraní z `CEnumPropertyInfo` objektu.  
+4. Vrátí `IEnumDebugProperty2Info2` rozhraní z `CEnumPropertyInfo` objektu.  
   
 ## <a name="managed-code"></a>Spravovaný kód  
  Tento příklad ukazuje implementaci `IDebugProperty2::EnumChildren` ve spravovaném kódu.  

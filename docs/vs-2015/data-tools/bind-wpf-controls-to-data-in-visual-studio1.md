@@ -22,12 +22,12 @@ caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d34b973043cf5147fa28c08a37945610a7030268
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 3546da7508767c6766b2caa0c96e6238f4cc6e90
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59663008"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039015"
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>Vytvoření vazby ovládacích prvků WPF k datům v sadě Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -90,9 +90,9 @@ Uživatelům vaší aplikace můžete zobrazit data pomocí vazby dat na [!INCLU
 
  Sada Visual Studio generuje jazyk XAML, který provede následující akce:
 
--   Přidá nový <xref:System.Windows.Data.CollectionViewSource> k prostředkům kontejneru, který jste položku přetáhli. <xref:System.Windows.Data.CollectionViewSource> Je objekt, který můžete použít k procházení a zobrazení dat v objektu, která je vrácena službou.
+- Přidá nový <xref:System.Windows.Data.CollectionViewSource> k prostředkům kontejneru, který jste položku přetáhli. <xref:System.Windows.Data.CollectionViewSource> Je objekt, který můžete použít k procházení a zobrazení dat v objektu, která je vrácena službou.
 
--   Vytvoří datové vazby pro ovládací prvek. Pokud přetáhnete položku na existující ovládací prvek v návrháři [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] naváže ovládací prvek na položku. Pokud přetáhnete položku do kontejneru, [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] vytvoří ovládací prvek, který byl vybrán pro přetaženou položku a naváže ovládací prvek na položku. Ovládací prvek je vytvořen uvnitř nové <xref:System.Windows.Controls.Grid>.
+- Vytvoří datové vazby pro ovládací prvek. Pokud přetáhnete položku na existující ovládací prvek v návrháři [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] naváže ovládací prvek na položku. Pokud přetáhnete položku do kontejneru, [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] vytvoří ovládací prvek, který byl vybrán pro přetaženou položku a naváže ovládací prvek na položku. Ovládací prvek je vytvořen uvnitř nové <xref:System.Windows.Controls.Grid>.
 
 ### <a name="objects"></a>Objekty
  Při přetažení objektu nebo vlastnosti z **zdroje dat** do okna návrháře, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] generuje [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] , která vytvoří ovládací prvek vázaný na data (nebo naváže existující ovládací prvek na objekt či vlastnost). Ale [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] negeneruje kód pro vyplnění objektu daty. Tento kód musíte napsat sami.
@@ -102,9 +102,9 @@ Uživatelům vaší aplikace můžete zobrazit data pomocí vazby dat na [!INCLU
 
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] generuje [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] , který provede následující akce:
 
--   Přidá nový <xref:System.Windows.Data.CollectionViewSource> k prostředkům kontejneru, který jste položku přetáhli. <xref:System.Windows.Data.CollectionViewSource> Je objekt, který můžete použít k procházení a zobrazení dat v objektu.
+- Přidá nový <xref:System.Windows.Data.CollectionViewSource> k prostředkům kontejneru, který jste položku přetáhli. <xref:System.Windows.Data.CollectionViewSource> Je objekt, který můžete použít k procházení a zobrazení dat v objektu.
 
--   Vytvoří datové vazby pro ovládací prvek. Pokud přetáhnete položku na existující ovládací prvek v návrháři, XAML naváže ovládací prvek na položku. Pokud přetáhnete položku do kontejneru XAML vytvoří ovládací prvek, který byl vybrán pro přetaženou položku a naváže ovládací prvek na položku. Ovládací prvek je vytvořen uvnitř nové <xref:System.Windows.Controls.Grid>.
+- Vytvoří datové vazby pro ovládací prvek. Pokud přetáhnete položku na existující ovládací prvek v návrháři, XAML naváže ovládací prvek na položku. Pokud přetáhnete položku do kontejneru XAML vytvoří ovládací prvek, který byl vybrán pro přetaženou položku a naváže ovládací prvek na položku. Ovládací prvek je vytvořen uvnitř nové <xref:System.Windows.Controls.Grid>.
 
 ## <a name="see-also"></a>Viz také
  [Vytvoření vazby ovládacích prvků k datům v sadě Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)

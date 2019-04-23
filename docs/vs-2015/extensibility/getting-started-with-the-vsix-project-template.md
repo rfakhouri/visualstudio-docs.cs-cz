@@ -10,12 +10,12 @@ ms.assetid: 89fac33e-9380-4723-9b45-048a6e16f0ed
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 9f5db7f20cf77df72a8c103eea68b3e64cc148b4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: cc3f461c9e7dbdea1fd8481594292a0a247d2173
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54797731"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60038663"
 ---
 # <a name="getting-started-with-the-vsix-project-template"></a>Začínáme se šablonou projektu VSIX
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,39 +29,39 @@ ms.locfileid: "54797731"
 ## <a name="deploying-a-custom-project-template-using-the-vsix-project-template"></a>Nasazení vlastní šablony projektu pomocí šablony projektu VSIX  
  Následující kroky ukazují, jak pomocí projektu VSIX balíček šablony projektu, který můžete sdílet s jinými vývojáři nebo odeslat do Galerie Visual Studio.  
   
-1.  Vytvořte šablonu projektu.  
+1. Vytvořte šablonu projektu.  
   
-    1.  Otevřete projekt, ze kterého chcete vytvořit šablonu. Tento projekt může být libovolným typem projektu.  
+    1. Otevřete projekt, ze kterého chcete vytvořit šablonu. Tento projekt může být libovolným typem projektu.  
   
-    2.  Na **souboru** nabídky, klikněte na tlačítko **exportovat šablonu**. Postupujte podle pokynů průvodce.  
+    2. Na **souboru** nabídky, klikněte na tlačítko **exportovat šablonu**. Postupujte podle pokynů průvodce.  
   
          Vytvoří soubor ZIP v %USERPROFILE%\My Documents\Visual Studio  *\<verze >* \My exportované šablony\\.  
   
-2.  Vytvoření prázdného projektu VSIX.  
+2. Vytvoření prázdného projektu VSIX.  
   
      Na **souboru** nabídky, klikněte na tlačítko **nový** a potom klikněte na tlačítko **projektu**. Vyberte buď **jazyka Visual Basic** nebo **Visual C#**. V části vybraného uzlu, vyberte **rozšiřitelnost**a pak vyberte **projekt VSIX**.  
   
-3.  Přidejte do projektu soubor .zip. Nastavte jeho **kopírovat do výstupního adresáře** vlastnost `Copy Always`.  
+3. Přidejte do projektu soubor .zip. Nastavte jeho **kopírovat do výstupního adresáře** vlastnost `Copy Always`.  
   
-4.  V **Průzkumníku řešení**, dvakrát klikněte `source.extension.vsixmanifest` soubor otevřít v **Návrhář manifestu VSIX**a pak proveďte následující změny:  
+4. V **Průzkumníku řešení**, dvakrát klikněte `source.extension.vsixmanifest` soubor otevřít v **Návrhář manifestu VSIX**a pak proveďte následující změny:  
   
-    -   Nastavte **název produktu** pole **moje šablona projektu**.  
+    - Nastavte **název produktu** pole **moje šablona projektu**.  
   
-    -   Nastavte **ID produktu** pole **MyProjectTemplate - 1**.  
+    - Nastavte **ID produktu** pole **MyProjectTemplate - 1**.  
   
-    -   Nastavte **Autor** pole **Fabrikam**.  
+    - Nastavte **Autor** pole **Fabrikam**.  
   
-    -   Nastavte **popis** pole **šablonu moje šablona projektu**.  
+    - Nastavte **popis** pole **šablonu moje šablona projektu**.  
   
-    -   V **prostředky** části, přidejte **Microsoft.VisualStudio.ProjectTemplate** zadejte a nastavte jeho cesty na název souboru .zip.  
+    - V **prostředky** části, přidejte **Microsoft.VisualStudio.ProjectTemplate** zadejte a nastavte jeho cesty na název souboru .zip.  
   
-5.  Uložte a zavřete soubor source.extension.vsixmanifest.  
+5. Uložte a zavřete soubor source.extension.vsixmanifest.  
   
-6.  Sestavte projekt.  
+6. Sestavte projekt.  
   
-7.  Ve výstupním adresáři poklikejte na soubor .vsix.  
+7. Ve výstupním adresáři poklikejte na soubor .vsix.  
   
-8.  A **instalátor VSIX** se zobrazí okno se zprávou. Postupujte podle pokynů k instalaci rozšíření.  
+8. A **instalátor VSIX** se zobrazí okno se zprávou. Postupujte podle pokynů k instalaci rozšíření.  
   
 9. Zavřete sadu Visual Studio a potom ho znovu otevřete.  
   
@@ -71,18 +71,18 @@ ms.locfileid: "54797731"
   
 #### <a name="to-specify-the-location-of-the-template-in-the-new-project-dialog-box"></a>K určení umístění šablony v dialogovém okně Nový projekt  
   
-1.  Složky šablony jsou umístěny v *Visual Studio Instalační cesta*\Common7\IDE\ProjectTemplates a *Visual Studio Instalační cesta*\Common7\IDE\ItemTemplates adresáře. Názvy oddílů nejvyšší úrovně v dialogovém okně Nový projekt přesně shodovat s názvy složek šablony. Pokud se liší, použijte název složky šablony.  
+1. Složky šablony jsou umístěny v *Visual Studio Instalační cesta*\Common7\IDE\ProjectTemplates a *Visual Studio Instalační cesta*\Common7\IDE\ItemTemplates adresáře. Názvy oddílů nejvyšší úrovně v dialogovém okně Nový projekt přesně shodovat s názvy složek šablony. Pokud se liší, použijte název složky šablony.  
   
      Změňte příponu souboru .vsix na .zip a potom otevřete soubor.  
   
-2.  Vytvořte novou složku se stejným názvem jako v části dialogového okna Nový projekt, by se zobrazit v šabloně.  
+2. Vytvořte novou složku se stejným názvem jako v části dialogového okna Nový projekt, by se zobrazit v šabloně.  
   
-3.  Pokud se zobrazí v dílčí část je šablona, vytvořte podsložku se stejným názvem.  
+3. Pokud se zobrazí v dílčí část je šablona, vytvořte podsložku se stejným názvem.  
   
-4.  Přesuňte soubor ZIP šablony do nové složky.  
+4. Přesuňte soubor ZIP šablony do nové složky.  
   
-5.  Změňte příponu .zip na .vsix.  
+5. Změňte příponu .zip na .vsix.  
   
-6.  Otevření manifestu VSIX.  
+6. Otevření manifestu VSIX.  
   
-7.  V manifestu VSIX, aktualizujte **Asset** cestu k šabloně tak, že odkazuje na kořen stromu adresářů, který obsahuje soubor šablony. Například pokud je šablona v \CSharp\Windows, odkaz by měl odkazovat na \CSharp.
+7. V manifestu VSIX, aktualizujte **Asset** cestu k šabloně tak, že odkazuje na kořen stromu adresářů, který obsahuje soubor šablony. Například pokud je šablona v \CSharp\Windows, odkaz by měl odkazovat na \CSharp.

@@ -12,19 +12,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 695ca538a872677f5ed24b7fef9b7c3b8ee5641c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 53ce05490ac46d7a4f01010e5709364f5d35222d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56610447"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040420"
 ---
 # <a name="how-to-build-specific-targets-in-solutions-by-using-msbuildexe"></a>Postupy: Sestavování specifických cílů v řešení pomocí MSBuild.exe
 Můžete použít *MSBuild.exe* k sestavování specifických cílů konkrétní projekty v řešení.
 
 #### <a name="to-build-a-specific-target-of-a-specific-project-in-a-solution"></a>K sestavení specifické cílem určitého projektu v řešení
 
-1.  Na příkazovém řádku zadejte `MSBuild.exe <SolutionName>.sln`, kde `<SolutionName>` odpovídá názvu souboru řešení, která obsahuje cíl, který chcete spustit.
+1. Na příkazovém řádku zadejte `MSBuild.exe <SolutionName>.sln`, kde `<SolutionName>` odpovídá názvu souboru řešení, která obsahuje cíl, který chcete spustit.
 
 2. Zadejte cíl po `-target:` přepnout ve formátu \<ProjectName >:\<TargetName >. Pokud název projektu obsahuje některý ze znaků `%`, `$`, `@`, `;`, `.`, `(`, `)`, nebo `'`, nahraďte pomocí `_` v zadaném Název cíle.
 

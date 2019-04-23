@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: be5140fda673b85991d2a9247cff5bd53329944d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 04af0f7a24cc4fc50cb65ac75f085ebf3385eeca
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56702457"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042116"
 ---
 # <a name="how-to-update-a-visual-studio-extension"></a>Postupy: Aktualizace rozšíření sady Visual Studio
 Rozšíření sady Visual Studio můžete aktualizovat v systému s použitím **rozšíření a aktualizace** k instalaci aktualizované verze. Pokud vytvoříte aktualizovanou verzi rozšíření, můžete ho místo při aktualizaci zvyšující číslo verze v manifestu VSIX.
@@ -28,30 +28,30 @@ Rozšíření sady Visual Studio můžete aktualizovat v systému s použitím *
 
 ## <a name="to-update-an-extension-on-your-system"></a>Chcete-li aktualizovat rozšíření ve vašem systému
 
-1.  Na **nástroje** nabídky, klikněte na tlačítko **rozšíření a aktualizace**.
+1. Na **nástroje** nabídky, klikněte na tlačítko **rozšíření a aktualizace**.
 
-2.  V levém podokně klikněte na tlačítko **aktualizace**.
+2. V levém podokně klikněte na tlačítko **aktualizace**.
 
-3.  V prostředním podokně klikněte na aktualizaci, kterou chcete nainstalovat.
+3. V prostředním podokně klikněte na aktualizaci, kterou chcete nainstalovat.
 
      Číslo verze aktualizované rozšíření se zobrazí v pravém podokně, společně s další informace.
 
-4.  Dole v pravém podokně klikněte na tlačítko **aktualizace**.
+4. Dole v pravém podokně klikněte na tlačítko **aktualizace**.
 
 ## <a name="to-publish-an-update-of-an-extension"></a>Chcete-li publikovat aktualizace rozšíření
 
-1.  V sadě Visual Studio otevřete řešení rozšíření, které chcete aktualizovat. Proveďte požadované změny.
+1. V sadě Visual Studio otevřete řešení rozšíření, které chcete aktualizovat. Proveďte požadované změny.
 
     > [!IMPORTANT]
     >  Hodnota bez znaménka že všechna rozšíření uživatele aktualizován automaticky. Měli byste vždy podepsat vaše rozšíření.
 
-2.  V **Průzkumníka řešení**, otevřete *source.extension.manifest*.
+2. V **Průzkumníka řešení**, otevřete *source.extension.manifest*.
 
-3.  V Návrháři manifestu zvýšit hodnotu čísla v **verze** pole.
+3. V Návrháři manifestu zvýšit hodnotu čísla v **verze** pole.
 
-4.  Uložte řešení a sestavte ho.
+4. Uložte řešení a sestavte ho.
 
-5.  Nahrát nový *VSIX* souboru (v * \bin\Debug\* složka projektu) k [Visual Studio Marketplace](https://marketplace.visualstudio.com/vs) webu.
+5. Nahrát nový *VSIX* souboru (v * \bin\Debug\* složka projektu) k [Visual Studio Marketplace](https://marketplace.visualstudio.com/vs) webu.
 
      Když se otevře uživatel, který má starší verzi rozšíření **rozšíření a aktualizace**, nová verze zobrazí v **aktualizace** seznamu, za předpokladu, že nástroj je nastavena automaticky vyhledat aktualizace.
 

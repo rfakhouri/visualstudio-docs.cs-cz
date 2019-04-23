@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 34175d2e53e897160e601f29bc2279f226fb5d11
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 8ae3d06b2f031ed2deede1a80bec356a0abd939e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56601249"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040222"
 ---
 # <a name="powerpoint-solutions"></a>Řešení pro aplikaci PowerPoint
   Visual Studio poskytuje šablony projektu, které slouží k vytváření doplňků VSTO pro Microsoft Office PowerPoint. Doplňky VSTO slouží k automatizaci aplikace PowerPoint, rozšířit funkce aplikace nebo přizpůsobení uživatelského rozhraní (UI) aplikace PowerPoint.
@@ -49,7 +49,7 @@ ms.locfileid: "56601249"
 
   Při volání do objektového modelu aplikace PowerPoint, použijte typy, které jsou k dispozici ve primárního spolupracujícího sestavení pro aplikaci PowerPoint. Primární spolupracující sestavení funguje jako most mezi spravovaného kódu v doplňku VSTO a com – objektový model v PowerPointu. Všechny typy v primární spolupracující sestavení PowerPoint jsou definovány v <xref:Microsoft.Office.Interop.PowerPoint> oboru názvů. Další informace o primárních sestavení vzájemné spolupráce naleznete v tématu [přehled vývoje řešení pro Office &#40;VSTO&#41; ](../vsto/office-solutions-development-overview-vsto.md) a [primární spolupracující sestavení Office](../vsto/office-primary-interop-assemblies.md).
 
-##  <a name="WordOMDocumentation"></a> Pomocí dokumentace modelu objektu aplikace PowerPoint
+## <a name="WordOMDocumentation"></a> Pomocí dokumentace modelu objektu aplikace PowerPoint
  Úplné informace o objektovém modelu aplikace PowerPoint mohou odkazovat na primární sestavení vzájemné spolupráce (PIA) odkaz na aplikaci PowerPoint a referenční dokumentace objektového modelu VBA.
 
 ### <a name="primary-interop-assembly-reference"></a>Odkaz na primární spolupracující sestavení

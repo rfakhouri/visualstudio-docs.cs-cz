@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 46b7a159fb2d15f817cad47817262202397d3981
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: c2d337a1ed97524dc04c8154fe2b074baf0921ca
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59654318"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042378"
 ---
 # <a name="troubleshoot-specific-errors-in-clickonce-deployments"></a>Řešení konkrétních chyb v nasazeních ClickOnce
 Tento článek uvádí následující běžné chyby, které se mohou vyskytnout při nasazení [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace a popisuje kroky k vyřešení jednotlivých problémů.
@@ -81,9 +81,9 @@ Tento článek uvádí následující běžné chyby, které se mohou vyskytnout
 
  Měli byste provést následující:
 
--   Ověřte, zda jsou všechny jedinečné identity v manifestu nasazení, identita manifestu aplikace a identitu hlavní aplikace EXE.
+- Ověřte, zda jsou všechny jedinečné identity v manifestu nasazení, identita manifestu aplikace a identitu hlavní aplikace EXE.
 
--   Ověřte, že vaše cesty k souborům nejsou delší než 100 znaků. Pokud vaše aplikace obsahuje, které jsou příliš dlouhé cesty k souborům, může být delší než omezení na maximální délku cesty, které můžete ukládat. Zkuste, zkrácení cesty a znovu nainstalujte.
+- Ověřte, že vaše cesty k souborům nejsou delší než 100 znaků. Pokud vaše aplikace obsahuje, které jsou příliš dlouhé cesty k souborům, může být delší než omezení na maximální délku cesty, které můžete ukládat. Zkuste, zkrácení cesty a znovu nainstalujte.
 
 #### <a name="privatepath-settings-in-application-config-file-are-not-honored"></a>Nastavení PrivatePath v konfiguračním souboru aplikace se neuplatňují.
  Pokud chcete použít nastavení PrivatePath (definovaných cest Fusion), musíte aplikaci požádat o oprávnění úplný vztah důvěryhodnosti. Zkuste změnit manifestu aplikace k vyžádání úplný vztah důvěryhodnosti a pak to zkuste znovu.
@@ -112,9 +112,9 @@ Tento článek uvádí následující běžné chyby, které se mohou vyskytnout
 #### <a name="you-tried-to-sign-with-a-certificate-in-your-certificate-store-and-a-received-blank-message-box"></a>Pokusili jste se přihlásit pomocí certifikátu v úložišti certifikátů a přijatou zprávu prázdné pole
  V **podepisování** dialogové okno, musíte:
 
--   Vyberte **přihlašování pomocí uloženého certifikátu**, a
+- Vyberte **přihlašování pomocí uloženého certifikátu**, a
 
--   Vyberte certifikát ze seznamu. první certifikát není výchozí výběr.
+- Vyberte certifikát ze seznamu. první certifikát není výchozí výběr.
 
 #### <a name="clicking-the-dont-sign-button-causes-an-exception"></a>Kliknutím na tlačítko "Není znak" způsobí výjimku
  Tento problém se o známý problém. Všechny [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] jsou vyžadovány k podpisu manifestů. Stačí vybrat jednu z možností podepisování a potom klikněte na tlačítko **OK**.

@@ -13,12 +13,12 @@ ms.assetid: c2afe36b-d061-4f0e-9580-c18569ec08f9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5e351ccaa6dddcf4773169a1e0a3f8e074002f2d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f37edcadb1d8800cb784771f9cc4f93d885bea65
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936119"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041726"
 ---
 # <a name="how-to-delete-load-test-results-from-a-repository"></a>Postupy: Odstranění z úložiště výsledků zátěžového testu
 
@@ -30,21 +30,21 @@ Výsledky zátěžového testu můžete spravovat z editoru zátěžového testu
 
 ## <a name="to-delete-results-from-a-repository"></a>Chcete-li odstranit z úložiště výsledků
 
-1.  Z webového výkonu a zátěžové testování projektu, otevřete zátěžový test.
+1. Z webového výkonu a zátěžové testování projektu, otevřete zátěžový test.
 
-2.  Na panelu nástrojů themeroller vložený **otevřít a spravovat výsledky**.
+2. Na panelu nástrojů themeroller vložený **otevřít a spravovat výsledky**.
 
      **Otevřít a spravovat výsledky zátěžového testu** se zobrazí dialogové okno.
 
-3.  V **zadat název kontroléru pro vyhledání výsledků zátěžového testu**, vyberte řadič. Vyberte  **\<místní – žádný kontrolér >** pro přístup k výsledkům, které se ukládají místně.
+3. V **zadat název kontroléru pro vyhledání výsledků zátěžového testu**, vyberte řadič. Vyberte  **\<místní – žádný kontrolér >** pro přístup k výsledkům, které se ukládají místně.
 
-4.  V **zobrazit výsledky pro následující zátěžový test**, vyberte test zatížení, jejichž výsledky chcete zobrazit. Vyberte  **\<zobrazit výsledky všech testů >** zobrazíte všechny výsledky pro všechny testy.
+4. V **zobrazit výsledky pro následující zátěžový test**, vyberte test zatížení, jejichž výsledky chcete zobrazit. Vyberte  **\<zobrazit výsledky všech testů >** zobrazíte všechny výsledky pro všechny testy.
 
      Pokud výsledky zátěžového testu jsou k dispozici, jsou uvedeny v **výsledky zátěžového testu** seznamu. Sloupce jsou **čas**, **doba trvání**, **uživatele**, **výsledek**, **testovací**, a  **Popis**. **Testování** obsahuje název testu, a **popis** obsahuje volitelný popis, který je přidán před spuštěním testu. **Popis** sloupec zobrazuje krátké popisy, které byly zadány v **komentáře analýzy** pro tento výsledek testu.
 
-5.  V **výsledky zátěžového testu** seznamu, vyberte výsledek. Můžete použít **Shift** klíč, **Ctrl** klíč, nebo obojí a vyberte více než jeden výsledek.
+5. V **výsledky zátěžového testu** seznamu, vyberte výsledek. Můžete použít **Shift** klíč, **Ctrl** klíč, nebo obojí a vyberte více než jeden výsledek.
 
-6.  Zvolte **odebrat**.
+6. Zvolte **odebrat**.
 
      Výsledky se odeberou z úložiště.
 

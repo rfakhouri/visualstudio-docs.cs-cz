@@ -16,12 +16,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 49bc9f56a07319c9edad1522c5e44b0bb35e92a2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1576dfc54622f42e87ff2e9a951eed321300b1e4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54785543"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039285"
 ---
 # <a name="create-parameterized-tableadapter-queries"></a>Vytvoření parametrizovaných dotazů TableAdapter
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,11 +46,11 @@ Vytvoření parametrizovaných dotazů TableAdapter v návrháři datových sad.
   
 ### <a name="create-a-parameterized-query-while-designing-a-data-bound-form"></a>Vytvoření parametrického dotazu při návrhu formuláře vázané na data  
   
-1.  Vyberte ovládací prvek na formuláři, který je již vázán na datovou sadu. Další informace najdete v tématu [ovládací prvky vazby Windows Forms k datům v sadě Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md).  
+1. Vyberte ovládací prvek na formuláři, který je již vázán na datovou sadu. Další informace najdete v tématu [ovládací prvky vazby Windows Forms k datům v sadě Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md).  
   
-2.  Na **Data** nabídce vyberte možnost**přidat dotaz**.  
+2. Na **Data** nabídce vyberte možnost**přidat dotaz**.  
   
-3.  Dokončení **Tvůrce kritérií vyhledávání** dialogovém okně Přidání klauzuli WHERE se požadované parametry pro příkaz jazyka SQL.  
+3. Dokončení **Tvůrce kritérií vyhledávání** dialogovém okně Přidání klauzuli WHERE se požadované parametry pro příkaz jazyka SQL.  
   
 ### <a name="add-a-query-to-an-existing-data-bound-form"></a>Přidat dotaz do existujícího formuláře vázané na data  
   
@@ -91,11 +91,11 @@ Pokud tento dotaz na objektu typu TableAdapter, můžete dotazovat na pro všech
   
 ### <a name="enable-a-query-to-accept-null-values"></a>Povolit dotaz tak, aby přijímal hodnoty null  
   
-1.  V **Návrhář Dataset**, vyberte dotaz TableAdapter, které je potřeba přijmout hodnoty null parametrů.  
+1. V **Návrhář Dataset**, vyberte dotaz TableAdapter, které je potřeba přijmout hodnoty null parametrů.  
   
-2.  V **vlastnosti** okně **parametry**. Stiskněte klávesu se třemi tečkami (**...** ) tlačítko Otevřít **Editor kolekce parametrů**.  
+2. V **vlastnosti** okně **parametry**. Stiskněte klávesu se třemi tečkami (**...** ) tlačítko Otevřít **Editor kolekce parametrů**.  
   
-3.  Vyberte parametr, který povoluje hodnoty null a nastavte **AllowDbNull** vlastnost `true`.  
+3. Vyberte parametr, který povoluje hodnoty null a nastavte **AllowDbNull** vlastnost `true`.  
   
 ## <a name="see-also"></a>Viz také:
 

@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 610ba4b805f2e8737f7b142e02158b80f51c529d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 92a0b432e75cb8df6318be0961cc587257869b27
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56635966"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041944"
 ---
 # <a name="word-object-model-overview"></a>Přehled modelu objektů aplikace Word
   Při vývoji řešení aplikace Word v sadě Visual Studio, budete moct používat objektovému modelu Wordu. Tento objektový model se skládá z třídy a rozhraní, které jsou k dispozici ve primárního spolupracujícího sestavení pro aplikaci Word a jsou definovány v <xref:Microsoft.Office.Interop.Word> oboru názvů.
@@ -33,13 +33,13 @@ ms.locfileid: "56635966"
 
  Informace o používání objektovému modelu Wordu k provádění konkrétních úkolů naleznete v následujících tématech:
 
--   [Práce s dokumenty](../vsto/working-with-documents.md)
+- [Práce s dokumenty](../vsto/working-with-documents.md)
 
--   [Práce s textem v dokumentech](../vsto/working-with-text-in-documents.md)
+- [Práce s textem v dokumentech](../vsto/working-with-text-in-documents.md)
 
--   [Práce s tabulkami](../vsto/working-with-tables.md)
+- [Práce s tabulkami](../vsto/working-with-tables.md)
 
-##  <a name="understanding"></a> Pochopení modelu objektů aplikace Word
+## <a name="understanding"></a> Pochopení modelu objektů aplikace Word
  Aplikace Word poskytuje stovky objektů, se kterými můžete pracovat. Tyto objekty jsou uspořádány do hierarchie, která přesně dodržuje uživatelského rozhraní. V horní části hierarchie <xref:Microsoft.Office.Interop.Word.Application> objektu. Tento objekt představuje aktuální instanci aplikace Word. <xref:Microsoft.Office.Interop.Word.Application> Obsahuje objekt <xref:Microsoft.Office.Interop.Word.Document>, <xref:Microsoft.Office.Interop.Word.Selection>, <xref:Microsoft.Office.Interop.Word.Bookmark>, a <xref:Microsoft.Office.Interop.Word.Range> objekty. Každý z těchto objektů má mnoho metod a vlastností, kterým můžete přistupovat k manipulaci s a interaktivně pracovat s objektem.
 
  Následující obrázek znázorňuje jedno zobrazení těchto objektů v hierarchii objektovému modelu Wordu.
@@ -115,7 +115,7 @@ ms.locfileid: "56635966"
 
   Visual Studio rozšiřuje <xref:Microsoft.Office.Interop.Word.Bookmark> objekt tím, že poskytuje <xref:Microsoft.Office.Tools.Word.Bookmark> hostování ovládacího prvku. <xref:Microsoft.Office.Tools.Word.Bookmark> Hostitelského ovládacího prvku se chová stejně jako nativní <xref:Microsoft.Office.Interop.Word.Bookmark>, ale platí další události a datové vazby funkce. Data lze svázat ovládací prvek bookmark dokumentu stejným způsobem jako svázat data s ovládacího prvku textového pole ve formuláři Windows. Další informace najdete v tématu [Bookmark – ovládací prvek](../vsto/bookmark-control.md).
 
-##  <a name="WordOMDocumentation"></a> Pomocí dokumentace modelu objektu aplikace Word
+## <a name="WordOMDocumentation"></a> Pomocí dokumentace modelu objektu aplikace Word
  Podrobnější informace o objektovému modelu Wordu mohou odkazovat na referenční primární sestavení vzájemné spolupráce (PIA) aplikace Word a Visual Basic for Applications (VBA) referenční dokumentace modelu objektu.
 
 ### <a name="primary-interop-assembly-reference"></a>Odkaz na primární spolupracující sestavení

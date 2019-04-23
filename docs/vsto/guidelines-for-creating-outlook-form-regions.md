@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c3ac40bc4ac163b6ab1a6d05b4bec3cedd429aa7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: d48a3ad24d094d0ebc822b572f2521eaefae5356
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56643090"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039919"
 ---
 # <a name="guidelines-to-create-outlook-form-regions"></a>Pokyny pro vytváření oblastí formulářů aplikace Outlook
   Můžou pomoct následující informace, optimalizace vaší oblasti formuláře a vyhnout se potenciální problémy:
@@ -37,7 +37,7 @@ ms.locfileid: "56643090"
 
   [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
-##  <a name="UsingFormRegions"></a> Použít názvy oblastí formuláře
+## <a name="UsingFormRegions"></a> Použít názvy oblastí formuláře
  Existuje několik názvů používaných k popisu oblasti formuláře. Je důležité porozumět rozdílu mezi těmito názvy a jaký vliv mají oblasti formuláře. Následující tabulka popisuje každý název.
 
 |Název oblasti formuláře|Popis|
@@ -46,19 +46,19 @@ ms.locfileid: "56643090"
 |<xref:Microsoft.Office.Tools.Outlook.FormRegionManifest.FormRegionName%2A> Vlastnost|Zadejte tento název **zadání popisného textu a výběr předvoleb zobrazení** stránku **novou oblast formuláře Outlooku** průvodce. Tento název se zobrazí jako **FormRegionName** vlastnost **vlastnosti** okna.<br /><br /> Použití <xref:Microsoft.Office.Tools.Outlook.FormRegionManifest.FormRegionName%2A> vlastnosti a určit tak popisek, který identifikuje oblasti formuláře v uživatelském rozhraní (UI) aplikace Outlook. Tento název se zobrazí jako tlačítko na pásu karet položky Outlooku pro oblasti samostatné formuláře.<br /><br /> Tento název se zobrazí jako text záhlaví nad oblasti formuláře pro sousední oblasti formuláře.|
 |`Microsoft.Office.Tools.Outlook.FormRegionName` Atribut|Když přidáte **oblast formuláře Outlooku** položky do projektu, Visual Studio nastaví tuto vlastnost na plně kvalifikovaný název oblasti formuláře. Výchozí plně kvalifikovaný název je název doplňku VSTO připojeným k názvu oblasti formuláře tečkou, třeba `OutlookAddIn1.FormRegion1`.<br /><br /> Tento plně kvalifikovaný název se zobrazí také jako atribut v horní části třídy objekt pro vytváření oblasti formuláře.<br /><br /> Použití `Microsoft.Office.Tools.Outlook.FormRegionName` atribut jednoznačně identifikuje oblasti formuláře na všech doplňků VSTO pro Outlook. Nelze změnit hodnotu `Microsoft.Office.Tools.Outlook.FormRegionName` atribut přejmenování položky oblasti formuláře nebo změnou <xref:Microsoft.Office.Tools.Outlook.FormRegionManifest.FormRegionName%2A> vlastnost. Chcete-li změnit tento název, je třeba upravit `Microsoft.Office.Tools.Outlook.FormRegionName` atributu v souboru kódu oblasti formuláře.|
 
-##  <a name="DisablingInheritance"></a> Zakázat dědičnost oblasti formuláře
+## <a name="DisablingInheritance"></a> Zakázat dědičnost oblasti formuláře
  Ve výchozím nastavení vlastní třídu zpráv dědí všechna přidružení oblasti formuláře třídy základní zprávy. Například třída zprávy s názvem `IPM.Task.Contoso` je odvozena z `IPM.Task`. Proto `IPM.Task.Contoso` dědí přidružení oblasti formuláře `IPM.Task`.
 
  Pokud nechcete, aby se oblast formuláře, který se má přidružit žádné odvozené třídy zpráv, nastavte <xref:Microsoft.Office.Tools.Outlook.FormRegionManifest.ExactMessageClass%2A> vlastnost oblasti formuláře k **true**. Například, pokud přiřadíte sousední oblasti formuláře s `IPM.Task` a nastavit <xref:Microsoft.Office.Tools.Outlook.FormRegionManifest.ExactMessageClass%2A> vlastnost **true**, oblast formuláře bude připojen pouze k dolnímu okraji formuláři standardní úlohy. Oblast formuláře se nepřipojí k dolnímu okraji libovolné upravené verze formuláři standardní úlohy.
 
-##  <a name="ClassNames"></a> Pochopení typů a názvů tříd zpráv
+## <a name="ClassNames"></a> Pochopení typů a názvů tříd zpráv
  Název typu položky aplikace Outlook se liší od názvu třídy zpráv položky aplikace Outlook. Například, že název typu položky RSS je `Microsoft.Office.Interop.Outlook.PostItem`. Název třídy zpráv položky RSS je `IPM.Post.RSS`.
 
  Odkažte na položku aplikace Outlook v kódu pomocí názvu typu. Seznam názvů typů najdete v tématu [přidružení oblasti formuláře k třídě zpráv aplikace Outlook](../vsto/associating-a-form-region-with-an-outlook-message-class.md).
 
  Použijte název třídy zpráv Outlooku položek v **novou oblast formuláře Outlooku** průvodce k položce přidružení oblasti formuláře. Seznam názvů tříd zpráv najdete v tématu [přidružení oblasti formuláře k třídě zpráv aplikace Outlook](../vsto/associating-a-form-region-with-an-outlook-message-class.md).
 
-##  <a name="ReadingPane"></a> Návrh sousední oblasti formuláře pro podokno čtení
+## <a name="ReadingPane"></a> Návrh sousední oblasti formuláře pro podokno čtení
  V podokně čtení Outlook můžete bez otevření položky ve verzi preview položky aplikace Outlook. V podokně čtení je určen jen pro čtení. Proto vstupních ovládacích prvků přidaných na sousední oblasti formuláře, jako je textové pole, nemusí se chovat dle očekávání při položky a formulář oblasti jsou otevřeny v podokně čtení.
 
  Například pokud položka, která má sousední oblasti formuláře je otevřen v podokně čtení, následující situaci je možné:
@@ -73,7 +73,7 @@ ms.locfileid: "56643090"
 
    Alternativně můžete nastavit <xref:Microsoft.Office.Tools.Outlook.FormRegionManifest.ShowInspectorRead%2A> vlastnost oblasti formuláře k **False**. Tímto způsobem oblasti formuláře nelze použít v podokně čtení.
 
-##  <a name="UsingOptimal"></a> Použijte ikonu optimální velikosti
+## <a name="UsingOptimal"></a> Použijte ikonu optimální velikosti
  Můžete určit, které ikony má oblast formuláře zobrazit ikonu nastavením vlastností v **ikony** skupina vlastností **vlastnosti** okna. K dosažení nejlepší vizuální kvality pomocí následujících pokynů:
 
 - Pro **stránky** ikonu, použijte soubor Portable Network Graphics (PNG).

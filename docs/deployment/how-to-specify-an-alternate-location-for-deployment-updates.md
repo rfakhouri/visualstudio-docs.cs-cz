@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d44750783ecc7253480750fce10b65e07b2f5fd2
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 14a1c072cb8415e8e0a20615c0c963e683f48b56
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56630675"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041351"
 ---
 # <a name="how-to-specify-an-alternate-location-for-deployment-updates"></a>Postupy: Zadejte alternativní umístění pro aktualizace nasazení
 Můžete nainstalovat vaše [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace zpočátku z disku CD-ROM nebo sdílené složky, ale aplikace musíte hledat pravidelné aktualizace na webu. Můžete zadat alternativní umístění pro aktualizace v manifestu nasazení, tak, aby vaše aplikace můžete aktualizovat přímo z webu po počáteční instalaci.
@@ -30,17 +30,17 @@ Můžete nainstalovat vaše [!INCLUDE[ndptecclick](../deployment/includes/ndptec
 
 ### <a name="specify-an-alternate-location-for-updates-by-using-mageuiexe-windows-forms-based-utility"></a>Zadejte alternativní umístění pro aktualizace pomocí MageUI.exe (nástroj založený na Windows Forms)
 
-1.  Otevřete příkazový řádek rozhraní .NET Framework a zadejte:
+1. Otevřete příkazový řádek rozhraní .NET Framework a zadejte:
 
      **mageui.exe**
 
-2.  Na **souboru** nabídce zvolte **otevřete** pro otevření manifestu nasazení vaší aplikace.
+2. Na **souboru** nabídce zvolte **otevřete** pro otevření manifestu nasazení vaší aplikace.
 
-3.  Vyberte **možnosti nasazení** kartu.
+3. Vyberte **možnosti nasazení** kartu.
 
-4.  V textovém poli s názvem **umístění spuštění**, zadejte adresu URL k adresáři, který bude obsahovat manifest nasazení pro aktualizace aplikace.
+4. V textovém poli s názvem **umístění spuštění**, zadejte adresu URL k adresáři, který bude obsahovat manifest nasazení pro aktualizace aplikace.
 
-5.  Uložte manifest nasazení.
+5. Uložte manifest nasazení.
 
 ### <a name="specify-an-alternate-location-for-updates-by-using-mageexe"></a>Zadejte alternativní umístění pro aktualizace pomocí Mage.exe
 

@@ -15,12 +15,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 2722286af0d4c95fec30593047bedf1fe0ba4d2d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: dd0372ca3264bedd6fbb17ef3c8326471cb6e99f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54785411"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60037865"
 ---
 # <a name="ca1810-initialize-reference-type-static-fields-inline"></a>CA1810: Inicializujte odkazový typ statického pole vloženě
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,9 +42,9 @@ ms.locfileid: "54785411"
 
  Kontroly statického konstruktoru mohou snížit výkon. Statický konstruktor se často slouží jenom k inicializaci statická pole, ve kterých je jenom nutné, že statická inicializace v tomto případě před první přístup statické pole. `beforefieldinit` Chování je vhodné pro tyto a většinu ostatních typů. Je jenom nevhodný při Statická inicializace má vliv na globální stav a je splněna jedna z následujících akcí:
 
--   Vliv na globální stav je nákladné a není potřeba, pokud typ není použit.
+- Vliv na globální stav je nákladné a není potřeba, pokud typ není použit.
 
--   Globální stav účinky lze přistupovat bez přístupu k jakékoli statická pole typu.
+- Globální stav účinky lze přistupovat bez přístupu k jakékoli statická pole typu.
 
 ## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
  Chcete-li opravit porušení tohoto pravidla, inicializujte všechna statická data při deklaraci a statický konstruktor odeberte.

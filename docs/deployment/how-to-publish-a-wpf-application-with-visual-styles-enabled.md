@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ef6250e9e413d91c218634e90fe67a4f04b83bce
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: 4ed9a9a349f2496343a9a9828cd436d8d4015aa9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953914"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60038124"
 ---
 # <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>Postupy: Publikování aplikace WPF s povolenými vizuálními styly
 
@@ -31,7 +31,7 @@ Vizuální styly povolit vzhled běžných ovládacích prvků do měnit v závi
 
   Potom můžete přesunout publikované soubory do umístění, ze kterého chcete, aby koncoví uživatelé k instalaci aplikace.
 
-##  <a name="publish-the-solution-without-visual-styles-enabled"></a>Publikování řešení bez povolenými vizuálními styly
+## <a name="publish-the-solution-without-visual-styles-enabled"></a>Publikování řešení bez povolenými vizuálními styly
 
 1. Ujistěte se, že váš projekt nemá povolenými vizuálními styly. Nejprve zkontrolujte soubor manifestu projektu následující kód XML. Potom Pokud kód XML je k dispozici, uzavřete s značka komentáře XML.
 

@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: eb021b5222c0c89d15ca9be9c9c155152118df5f
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: f79b57d01a091e3617e7470297aa6205aa4e20e0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59658770"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041857"
 ---
 # <a name="the-designer-cannot-be-modified-while-debugging"></a>Návrháře nemůžete změnit během ladění.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ Tato zpráva se zobrazí, když je proveden pokus o upravovat položky na O/R De
   
 ### <a name="to-correct-this-error"></a>Oprava této chyby  
   
--   Klikněte na tlačítko **Zastavit ladění** na **ladění** nabídky.  
+- Klikněte na tlačítko **Zastavit ladění** na **ladění** nabídky.  
   
      Aplikace se zastaví ladění a je možné upravit položky v Návrháře relací objektů.  
   
