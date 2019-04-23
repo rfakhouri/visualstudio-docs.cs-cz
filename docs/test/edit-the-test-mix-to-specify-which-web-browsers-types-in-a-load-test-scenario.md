@@ -11,12 +11,12 @@ ms.assetid: 47f981d9-3038-45cc-a486-82b9daf9a9a1
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ed7c90e292b2ed77eeae4096e967f10068664659
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 4da3fc51593cc877e09ca6f46db70303186b293e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955554"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087076"
 ---
 # <a name="edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario"></a>Úpravy poměru testů určující typy webových prohlížečů ve scénáři zátěžového testu
 
@@ -34,34 +34,34 @@ Po zadání kombinace prohlížečů, můžete později přidat a odebrat typy w
 
 ### <a name="to-add-new-browsers-to-a-scenario"></a>Chcete-li přidat nové prohlížeče do scénáře
 
-1.  Zatímco probíhá zadání kombinace prohlížečů pro scénáře vyberte **přidat**.
+1. Zatímco probíhá zadání kombinace prohlížečů pro scénáře vyberte **přidat**.
 
      Přidání nové položky prohlížeče do mřížky.
 
     > [!NOTE]
     > Chcete-li zobrazit **upravit poměr prohlížečů** dialogové okno, klikněte pravým tlačítkem na existující scénář a pak vyberte **upravit poměr prohlížečů**.
 
-2.  V **typ prohlížeče** sloupce, klikněte na šipku pro novou položku a zvolte typ požadované prohlížeče.
+2. V **typ prohlížeče** sloupce, klikněte na šipku pro novou položku a zvolte typ požadované prohlížeče.
 
-3.  (Volitelné) Upravte poměr ovládacího prvku k určení distribuci testů.
+3. (Volitelné) Upravte poměr ovládacího prvku k určení distribuci testů.
 
-4.  Po dokončení přidávání prohlížečů, zvolte **OK**.
+4. Po dokončení přidávání prohlížečů, zvolte **OK**.
 
-##  <a name="remove-browsers-from-a-scenario"></a>Odebrání scénáři prohlížeče
+## <a name="remove-browsers-from-a-scenario"></a>Odebrání scénáři prohlížeče
 
 ### <a name="to-remove-browsers-from-a-scenario"></a>Chcete-li odebrat prohlížečů ze scénáře
 
-1.  Otevřete zátěžový test.
+1. Otevřete zátěžový test.
 
-2.  Klikněte pravým tlačítkem na scénář, ze kterého chcete odebrat prohlížeče a klikněte na tlačítko **upravit poměr prohlížečů**.
+2. Klikněte pravým tlačítkem na scénář, ze kterého chcete odebrat prohlížeče a klikněte na tlačítko **upravit poměr prohlížečů**.
 
      **Upravit poměr prohlížečů** se zobrazí dialogové okno.
 
-3.  Vyberte prohlížeče v mřížce a potom zvolte **odebrat**.
+3. Vyberte prohlížeče v mřížce a potom zvolte **odebrat**.
 
-4.  (Volitelné) Upravte poměr ovládacího prvku k určení distribuci testů.
+4. (Volitelné) Upravte poměr ovládacího prvku k určení distribuci testů.
 
-5.  Po dokončení odebírání prohlížečů, zvolte **OK**.
+5. Po dokončení odebírání prohlížečů, zvolte **OK**.
 
 ## <a name="about-the-mix-control"></a>O ovládacím prvku kombinace
 

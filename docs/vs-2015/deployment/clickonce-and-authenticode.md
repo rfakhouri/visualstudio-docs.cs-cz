@@ -19,12 +19,12 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6057aa437aa4fc0d14bd21f20e3fa657f5c5c15d
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 0732a5f867b357bddf3ff9f9d83bcfd7dd1f0573
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54834770"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089078"
 ---
 # <a name="clickonce-and-authenticode"></a>ClickOnce a kód Authenticode
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,11 +40,11 @@ Authenticode * je technologie společnosti Microsoft, které používá standard
   
  Certifikát pro podepisování v jednom ze tří způsobů kódu můžete získat:  
   
--   Zakupte od dodavatele certifikátu.  
+- Zakupte od dodavatele certifikátu.  
   
--   Zobrazí se jedna ze skupiny ve vaší organizaci, který je zodpovědný za vytváření digitálních certifikátů.  
+- Zobrazí se jedna ze skupiny ve vaší organizaci, který je zodpovědný za vytváření digitálních certifikátů.  
   
--   Generovat vlastní certifikát s MakeCert.exe, který je součástí [!INCLUDE[winsdklong](../includes/winsdklong-md.md)].  
+- Generovat vlastní certifikát s MakeCert.exe, který je součástí [!INCLUDE[winsdklong](../includes/winsdklong-md.md)].  
   
 ### <a name="how-using-certificate-authorities-helps-users"></a>Jak používat certifikační autority pomáhá uživatelům  
  Certifikát vytvořený pomocí nástroje MakeCert.exe se tomu říká *samoobslužného cert* nebo *testovacího certifikátu*. Tento druh certifikátu funguje mnohem stejným způsobem, který .snk soubor bude fungovat v rozhraní .NET Framework. Se skládá pouze z dvojice veřejného/soukromého kryptografických klíčů a neobsahuje žádné ověřitelné informace o vydavateli. Vlastní certifikáty můžete použít k nasazení [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikací s vysokou důvěryhodností na intranetu. Ale pokud tyto aplikace se spouštějí na klientském počítači, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] bude identifikovat jako pocházející od neznámého vydavatele. Ve výchozím nastavení [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikace podepsána s vlastní certifikáty a nasazení přes Internet nelze využít Trusted Application Deployment.  
@@ -61,15 +61,15 @@ Authenticode * je technologie společnosti Microsoft, které používá standard
 ### <a name="updating-expired-certificates"></a>Aktualizuje se certifikáty s vypršenou platností  
  V dřívějších verzích rozhraní .NET Framework aktualizace prošlou platností certifikátu aplikace může způsobit, že aplikace přestane fungovat. Chcete-li tento problém vyřešit, použijte jednu z následujících metod:  
   
--   Aktualizace rozhraní .NET Framework verze 2.0 SP1 nebo později se systémem Windows XP, verze 3.5 nebo později na Windows Vista.  
+- Aktualizace rozhraní .NET Framework verze 2.0 SP1 nebo později se systémem Windows XP, verze 3.5 nebo později na Windows Vista.  
   
--   Tuto aplikaci odinstalujte a znovu nainstalujte novou verzi s platným certifikátem.  
+- Tuto aplikaci odinstalujte a znovu nainstalujte novou verzi s platným certifikátem.  
   
--   Vytvořte sestavení příkazového řádku, která aktualizuje certifikát. Podrobné informace o tomto procesu najdete v [článku technické podpory Microsoftu 925521](http://go.microsoft.com/fwlink/?LinkId=179454).  
+- Vytvořte sestavení příkazového řádku, která aktualizuje certifikát. Podrobné informace o tomto procesu najdete v [článku technické podpory Microsoftu 925521](http://go.microsoft.com/fwlink/?LinkId=179454).  
   
 ### <a name="storing-certificates"></a>Ukládání certifikátů  
   
--   Certifikáty můžete uložit jako soubor .pfx v systému souborů a uložit je v kontejneru klíčů. Uživatel v doméně Windows může mít několik kontejnerů klíčů. Ve výchozím nastavení MakeCert.exe uloží certifikáty v kontejnerech osobního klíče, pokud určíte, že ji by měl uložte ho do soubor .pfx místo. Mage.exe a MageUI.exe, [!INCLUDE[winsdkshort](../includes/winsdkshort-md.md)] nástroje pro vytváření [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] nasazení, umožňují používat certifikáty uložené v obou způsobem.  
+- Certifikáty můžete uložit jako soubor .pfx v systému souborů a uložit je v kontejneru klíčů. Uživatel v doméně Windows může mít několik kontejnerů klíčů. Ve výchozím nastavení MakeCert.exe uloží certifikáty v kontejnerech osobního klíče, pokud určíte, že ji by měl uložte ho do soubor .pfx místo. Mage.exe a MageUI.exe, [!INCLUDE[winsdkshort](../includes/winsdkshort-md.md)] nástroje pro vytváření [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] nasazení, umožňují používat certifikáty uložené v obou způsobem.  
   
 ## <a name="see-also"></a>Viz také  
  [ClickOnce – zabezpečení a nasazení](../deployment/clickonce-security-and-deployment.md)   

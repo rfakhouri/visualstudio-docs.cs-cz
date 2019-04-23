@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 37cdbc07f5defe0c6f8d5613795d2a9c6142521f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 44be83e21a5e3cd94a1db2b7edce3e8484353f88
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56644702"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082877"
 ---
 # <a name="how-to-map-schemas-to-word-documents-inside-visual-studio"></a>Postupy: Mapování schémat na dokumenty aplikace Word v sadě Visual Studio
   **Důležité** informace uvedené v tomto tématu týkající se Microsoft Word je zobrazené výhradně pro výhod a užívání o jednotlivci i organizacemi, kteří se nacházejí mimo Spojené státy a jeho území nebo kteří používají nebo vývoj programy, které běží na produkty Microsoft Word, které byly licencovaných společností Microsoft před 2010 dne, kdy Microsoft odebrána implementace konkrétní funkce související s vlastní XML z aplikace Microsoft Word. Tyto informace týkající se Microsoft Word nemusí být přečteny nebo používány jednotlivcům i organizacím v USA nebo v jeho území, které používáte, nebo vývoji programů, které běží na produkty Microsoft Word, které byly licencovaných společností Microsoft po 10. ledna 2010 ; tyto produkty se chovají stejně jako produkty licenci před tímto datem nebo zakoupených a licencovaná pro použití mimo území Spojených států.
@@ -32,30 +32,30 @@ ms.locfileid: "56644702"
 
 ## <a name="to-map-an-xml-schema-to-a-word-document-in-visual-studio"></a>K mapování schématu XML do dokumentů aplikace Word v sadě Visual Studio
 
-1.  Otevřete projekt dokumentu nebo šabloně aplikace Word v sadě Visual Studio.
+1. Otevřete projekt dokumentu nebo šabloně aplikace Word v sadě Visual Studio.
 
-2.  Klikněte na tlačítko v dokumentu, abychom přesunutí výběru do návrháře.
+2. Klikněte na tlačítko v dokumentu, abychom přesunutí výběru do návrháře.
 
-3.  Na pásu karet klikněte na tlačítko **Developer** kartu.
+3. Na pásu karet klikněte na tlačítko **Developer** kartu.
 
     > [!NOTE]
     >  Pokud **Developer** karta není zobrazena, musíte ji nejdříve zobrazit. Další informace najdete v tématu [jak: Zobrazení karty Vývojář na pásu karet](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
 
-4.  V **XML** klikněte na možnost **schématu**.
+4. V **XML** klikněte na možnost **schématu**.
 
      **Šablon a doplňků** zobrazí se dialogové okno.
 
-5.  Klikněte na tlačítko **schématu XML** kartu.
+5. Klikněte na tlačítko **schématu XML** kartu.
 
-6.  Klikněte na tlačítko **přidat schéma**.
+6. Klikněte na tlačítko **přidat schéma**.
 
      **Přidat schéma** zobrazí se dialogové okno.
 
-7.  Přejděte do souboru schématu, vyberte ji a pak klikněte na tlačítko **otevřít**.
+7. Přejděte do souboru schématu, vyberte ji a pak klikněte na tlačítko **otevřít**.
 
      **Schéma – nastavení** zobrazí se dialogové okno.
 
-8.  Přiřadit alias nebo klikněte na tlačítko **OK** přidat schéma bez aliasu.
+8. Přiřadit alias nebo klikněte na tlačítko **OK** přidat schéma bez aliasu.
 
 9. Klikněte na **OK**.
 

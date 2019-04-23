@@ -1,5 +1,5 @@
 ---
-title: 'Průvodce: Použití konfiguračního souboru k definování zdroje dat'
+title: 'Návod: Použití konfiguračního souboru k definování zdroje dat'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,14 +11,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cfad5fbf5e6a4105926fe0293093749b4cecaf57
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a64d6e46a674ad068c2a90eaf6b011a038d2e46e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55935430"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080784"
 ---
-# <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>Průvodce: Použití konfiguračního souboru k definování zdroje dat
+# <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>Návod: Použití konfiguračního souboru k definování zdroje dat
 
 Tento návod ukazuje, jak používat zdroj dat definované v *app.config* soubor pro testování částí. Se dozvíte, jak vytvořit *app.config* soubor, který definuje zdroje dat, který mohou využívat <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute> třídy. Úkoly uvedené v tomto návodu zahrnují následující:
 
@@ -52,7 +52,7 @@ K dokončení tohoto návodu budete potřebovat:
 
 3. Vyberte **konfiguračního souboru aplikace** šablonu a klikněte na tlačítko **přidat**.
 
-##  <a name="define-a-custom-configuration-section"></a>Definování vlastního konfiguračního oddílu
+## <a name="define-a-custom-configuration-section"></a>Definování vlastního konfiguračního oddílu
 
 Zkontrolujte *app.config* souboru. Obsahuje nejméně deklarace XML a kořenový element.
 

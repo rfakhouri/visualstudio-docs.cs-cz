@@ -11,12 +11,12 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3a256a13d1840d2bf5f26635c5e572dce30434ae
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: f03c7260899db9e463282e45ef5bc76badb8a483
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59655007"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082799"
 ---
 # <a name="walkthrough-using-msbuild"></a>Návod: Použití nástroje MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,11 +36,11 @@ Nástroj MSBuild je platforma sestavení pro společnost Microsoft a sady Visual
   
 #### <a name="to-create-a-project-file"></a>K vytvoření souboru projektu  
   
-1.  Otevřít Visual Studio.  
+1. Otevřít Visual Studio.  
   
-2.  Na **souboru** nabídky, přejděte k **nový**a potom klikněte na tlačítko **projektu**.  
+2. Na **souboru** nabídky, přejděte k **nový**a potom klikněte na tlačítko **projektu**.  
   
-3.  V **nový projekt** dialogovém okně Visual C# typ projektu a pak vyberte **formulářová aplikace Windows** šablony. V **název** zadejte `BuildApp`. Zadejte **umístění** pro řešení, například `D:\`. Přijměte výchozí hodnoty pro **vytvořit adresář pro řešení** (vybrané), **přidat do správy zdrojových kódů** (nevybráno), a **název řešení** (`BuildApp`).  
+3. V **nový projekt** dialogovém okně Visual C# typ projektu a pak vyberte **formulářová aplikace Windows** šablony. V **název** zadejte `BuildApp`. Zadejte **umístění** pro řešení, například `D:\`. Přijměte výchozí hodnoty pro **vytvořit adresář pro řešení** (vybrané), **přidat do správy zdrojových kódů** (nevybráno), a **název řešení** (`BuildApp`).  
   
      Klikněte na tlačítko **OK** k vytvoření souboru projektu.  
   
@@ -49,13 +49,13 @@ Nástroj MSBuild je platforma sestavení pro společnost Microsoft a sady Visual
   
 #### <a name="to-examine-the-project-file"></a>K prozkoumání souboru projektu  
   
-1.  V **Průzkumníka řešení**, klikněte na uzel projektu BuildApp.  
+1. V **Průzkumníka řešení**, klikněte na uzel projektu BuildApp.  
   
-2.  V **vlastnosti** prohlížeče, Všimněte si, že **soubor projektu** BuildApp.csproj je vlastnost. Všechny soubory projektu jsou pojmenovány s příponou "proj". Pokud jste vytvořili projekt jazyka Visual Basic, název souboru projektu by BuildApp.vbproj.  
+2. V **vlastnosti** prohlížeče, Všimněte si, že **soubor projektu** BuildApp.csproj je vlastnost. Všechny soubory projektu jsou pojmenovány s příponou "proj". Pokud jste vytvořili projekt jazyka Visual Basic, název souboru projektu by BuildApp.vbproj.  
   
-3.  Klikněte pravým tlačítkem na uzel projektu a pak klikněte na **uvolnit projekt**.  
+3. Klikněte pravým tlačítkem na uzel projektu a pak klikněte na **uvolnit projekt**.  
   
-4.  Znovu klikněte pravým tlačítkem na uzel projektu a pak klikněte na **upravit BuildApp.csproj**.  
+4. Znovu klikněte pravým tlačítkem na uzel projektu a pak klikněte na **upravit BuildApp.csproj**.  
   
      Soubor projektu se zobrazí v editoru kódu.  
   
@@ -136,17 +136,17 @@ Nástroj MSBuild je platforma sestavení pro společnost Microsoft a sady Visual
   
 #### <a name="to-build-the-target"></a>K sestavení cíle  
   
-1.  Klikněte na tlačítko **Start**, pak klikněte na tlačítko **všechny programy**. Vyhledejte a klikněte **příkazový řádek sady Visual Studio** v **Visual Studio Tools** složky.  
+1. Klikněte na tlačítko **Start**, pak klikněte na tlačítko **všechny programy**. Vyhledejte a klikněte **příkazový řádek sady Visual Studio** v **Visual Studio Tools** složky.  
   
-2.  V příkazovém řádku přejděte do složky obsahující soubor projektu v tomto případě D:\BuildApp\BuildApp.  
+2. V příkazovém řádku přejděte do složky obsahující soubor projektu v tomto případě D:\BuildApp\BuildApp.  
   
-3.  Spusťte nástroj msbuild s /t:HelloWorld příkazu switch. To vybere a sestavuje cílový HelloWorld:  
+3. Spusťte nástroj msbuild s /t:HelloWorld příkazu switch. To vybere a sestavuje cílový HelloWorld:  
   
     ```  
     msbuild buildapp.csproj /t:HelloWorld  
     ```  
   
-4.  Prohlédněte si výstup v **příkazové okno**. Měli byste vidět dva řádky "Hello" a "World":  
+4. Prohlédněte si výstup v **příkazové okno**. Měli byste vidět dva řádky "Hello" a "World":  
   
     ```  
     Hello  
@@ -202,7 +202,7 @@ $(PropertyName)
   
 #### <a name="to-examine-a-property-value"></a>Chcete-li zkontrolovat hodnotu vlastnosti  
   
-1.  Z editoru kódu nahraďte HelloWorld cíl s tímto kódem:  
+1. Z editoru kódu nahraďte HelloWorld cíl s tímto kódem:  
   
     ```  
     <Target Name="HelloWorld">  
@@ -211,15 +211,15 @@ $(PropertyName)
     </Target>  
     ```  
   
-2.  Uložte soubor projektu.  
+2. Uložte soubor projektu.  
   
-3.  Z **příkazové okno**, zadejte a spusťte tento řádek:  
+3. Z **příkazové okno**, zadejte a spusťte tento řádek:  
   
     ```  
     msbuild buildapp.csproj /t:HelloWorld  
     ```  
   
-4.  Zkontrolujte výstup příkazu. Zobrazí se tyto dva řádky (.NET Framework verze se může lišit):  
+4. Zkontrolujte výstup příkazu. Zobrazí se tyto dva řádky (.NET Framework verze se může lišit):  
   
     ```  
     Configuration is Debug  
@@ -366,19 +366,19 @@ $(PropertyName)
   
 #### <a name="to-display-item-type-values-one-per-line"></a>Chcete-li zobrazit položky typu hodnoty na jeden řádek  
   
-1.  Z editoru kódu nahraďte tento řádek úloha zprávy:  
+1. Z editoru kódu nahraďte tento řádek úloha zprávy:  
   
     ```  
     <Message Text="Compile item type contains @(Compile, '%0A%0D')" />  
     ```  
   
-2.  Uložte soubor projektu.  
+2. Uložte soubor projektu.  
   
-3.  Z **příkazové okno**, zadejte a spusťte tento řádek:  
+3. Z **příkazové okno**, zadejte a spusťte tento řádek:  
   
      `msbuild buildapp.csproj /t:HelloWorld`  
   
-4.  Zkontrolujte výstup příkazu. Měli byste vidět tyto řádky:  
+4. Zkontrolujte výstup příkazu. Měli byste vidět tyto řádky:  
   
     ```  
     Compile item type contains Form1.cs  
@@ -436,13 +436,13 @@ $(PropertyName)
   
 ##### <a name="to-include-and-exclude-items"></a>Chcete zahrnout a vyloučit položky  
   
-1.  Z editoru kódu nahraďte tento řádek úloha zprávy:  
+1. Z editoru kódu nahraďte tento řádek úloha zprávy:  
   
     ```  
     <Message Text="Compile item type contains @(XFiles)" />  
     ```  
   
-2.  Tato skupina položek přidejte hned za importovaný prvek:  
+2. Tato skupina položek přidejte hned za importovaný prvek:  
   
     ```  
     <ItemGroup>  
@@ -450,15 +450,15 @@ $(PropertyName)
     </ItemGroup>  
     ```  
   
-3.  Uložte soubor projektu.  
+3. Uložte soubor projektu.  
   
-4.  Z **příkazové okno**, zadejte a spusťte tento řádek:  
+4. Z **příkazové okno**, zadejte a spusťte tento řádek:  
   
     ```  
     msbuild buildapp.csproj /t:HelloWorld  
     ```  
   
-5.  Zkontrolujte výstup příkazu. Zobrazí se tento řádek:  
+5. Zkontrolujte výstup příkazu. Zobrazí se tento řádek:  
   
     ```  
     Compile item type contains Form1.cs;Program.cs;Properties/Resources.resx  

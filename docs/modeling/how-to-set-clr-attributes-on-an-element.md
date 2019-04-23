@@ -11,31 +11,31 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b890a5d3d5c48ad3841075a8ae818d2d37d44f98
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 8954aa6a42e743617080bb6918508273c1dd9528
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55946623"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089104"
 ---
 # <a name="how-to-set-clr-attributes-on-an-element"></a>Postupy: Nastavování atributů CLR v elementu
 Vlastní atributy jsou speciální atributy, které lze přidat do domény prvky, tvary, konektory a diagramy. Můžete přidat všechny atributy, které dědí z `System.Attribute` třídy.
 
 ### <a name="to-add-a-custom-attribute"></a>Chcete-li přidat vlastní atribut
 
-1.  V **Průzkumník DSL**, vyberte požadovaný prvek, ke kterému chcete přidat vlastní atribut.
+1. V **Průzkumník DSL**, vyberte požadovaný prvek, ke kterému chcete přidat vlastní atribut.
 
-2.  V **vlastnosti** okna, další **vlastní atributy** vlastnosti, klikněte na tlačítko Procházet (**...** ) ikonu.
+2. V **vlastnosti** okna, další **vlastní atributy** vlastnosti, klikněte na tlačítko Procházet (**...** ) ikonu.
 
      **Upravit atributy** zobrazí se dialogové okno.
 
-3.  V **název** sloupce, klikněte na tlačítko  **\<přidat atribut >** a zadejte název atributu. Stiskněte klávesu ENTER.
+3. V **název** sloupce, klikněte na tlačítko  **\<přidat atribut >** a zadejte název atributu. Stiskněte klávesu ENTER.
 
-4.  Řádek pod názvem atributu zobrazuje závorky. Na tomto řádku zadejte typ parametru atributu (například `string`), a potom stiskněte klávesu ENTER.
+4. Řádek pod názvem atributu zobrazuje závorky. Na tomto řádku zadejte typ parametru atributu (například `string`), a potom stiskněte klávesu ENTER.
 
-5.  V **vlastnost Name** sloupce, zadejte vhodný název, například `MyString`.
+5. V **vlastnost Name** sloupce, zadejte vhodný název, například `MyString`.
 
-6.  Klikněte na **OK**.
+6. Klikněte na **OK**.
 
      **Vlastní atributy** vlastnost se nyní zobrazí atribut v následujícím formátu:
 

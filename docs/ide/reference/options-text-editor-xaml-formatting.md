@@ -29,12 +29,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: f5459da813de289eb4e3c86a298128c2abb42363
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 3ed364d9c8995a93acb0de8002bafefd603c2d71
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59661721"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089091"
 ---
 # <a name="options-text-editor-xaml-formatting"></a>Možnosti, textový editor, XAML, formátování
 
@@ -44,13 +44,13 @@ Použití **formátování** stránky vlastností k určení, jak jsou formátov
 
 Automatické formátování může dojít, když se zjistí některý z následujících událostí.
 
--   Dokončení koncové značky nebo jednoduché značky.
+- Dokončení koncové značky nebo jednoduché značky.
 
--   Dokončení počáteční značky.
+- Dokončení počáteční značky.
 
--   Vložení ze schránky.
+- Vložení ze schránky.
 
--   Formátování klávesových příkazů.
+- Formátování klávesových příkazů.
 
 Můžete určit, které události způsobit automatické formátování.
 

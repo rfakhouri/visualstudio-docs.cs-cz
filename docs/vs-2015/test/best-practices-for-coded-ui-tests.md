@@ -10,12 +10,12 @@ ms.assetid: d5aef766-a24c-4f1f-ac9b-e5462b6627d4
 caps.latest.revision: 41
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 192d97d8d2096b37d2dd52d2ed942ccb595456d0
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 37e0ae51589d85ac52ec962fb3cb193fc37a7ad4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54795789"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60081252"
 ---
 # <a name="best-practices-for-coded-ui-tests"></a>Doporučené postupy pro programové testy UI
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ Toto téma popisuje doporučené postupy při vývoji programové testy uživate
   
  **Požadavky**  
   
--   Visual Studio Enterprise  
+- Visual Studio Enterprise  
   
 ## <a name="best-practices"></a>Doporučené postupy  
  Pomocí následujících pokynů k vytvoření flexibilní programový test uživatelského rozhraní.  
@@ -64,11 +64,11 @@ Toto téma popisuje doporučené postupy při vývoji programové testy uživate
   
 - Pokud má ovládací prvek, který již není platný kontrolní výraz:  
   
-  -   Odstraníte metodu, která obsahuje kontrolní výraz.  
+  - Odstraníte metodu, která obsahuje kontrolní výraz.  
   
-  -   Odeberte volání této metody z testovací metody.  
+  - Odeberte volání této metody z testovací metody.  
   
-  -   Přidat kontrolní výraz nové přetažením nitkového kříže tlačítko na ovládací prvek uživatelského rozhraní, otevřete v mapování uživatelského rozhraní a přidat nový kontrolní výraz.  
+  - Přidat kontrolní výraz nové přetažením nitkového kříže tlačítko na ovládací prvek uživatelského rozhraní, otevřete v mapování uživatelského rozhraní a přidat nový kontrolní výraz.  
   
   Další informace o tom, jak zaznamenat programové testy UI, naleznete v tématu [pomocí uživatelského rozhraní automatizace k testu kódu](../test/use-ui-automation-to-test-your-code.md).  
   

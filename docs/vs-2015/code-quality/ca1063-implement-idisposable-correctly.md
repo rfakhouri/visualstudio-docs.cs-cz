@@ -15,12 +15,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 52e77762900a321cf547709d98d9856088580789
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 822ad7bea622400bfabd5a96a42d81ed4eabf0c4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54785469"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60081395"
 ---
 # <a name="ca1063-implement-idisposable-correctly"></a>CA1063: Implementuje správně IDisposable
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,23 +59,23 @@ ms.locfileid: "54785469"
 ## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
  Prozkoumat kód a určete, které z následujících řešení opraví toto porušení.
 
--   Odeberte IDisposable ze seznamu rozhraní, které jsou implementované pomocí {0} a místo toho přepište implementaci Dispose základní třídy.
+- Odeberte IDisposable ze seznamu rozhraní, které jsou implementované pomocí {0} a místo toho přepište implementaci Dispose základní třídy.
 
--   Odeberte finalizační metodu z typu {0}, přepište Dispose (bool disposing) a vložte finalizační logiku do cesty kódu, kde je 'disposing ' hodnoty false.
+- Odeberte finalizační metodu z typu {0}, přepište Dispose (bool disposing) a vložte finalizační logiku do cesty kódu, kde je 'disposing ' hodnoty false.
 
--   Odebrat {0}, přepište Dispose (bool disposing) a vložte finalizační logiku do cesty kódu, kde je 'disposing ' hodnoty true.
+- Odebrat {0}, přepište Dispose (bool disposing) a vložte finalizační logiku do cesty kódu, kde je 'disposing ' hodnoty true.
 
--   Ujistěte se, že {0} je deklarován jako veřejná a zapečetěná.
+- Ujistěte se, že {0} je deklarován jako veřejná a zapečetěná.
 
--   Přejmenovat {0} na 'Dispose' a ujistěte se, že je deklarována jako veřejná a zapečetěná.
+- Přejmenovat {0} na 'Dispose' a ujistěte se, že je deklarována jako veřejná a zapečetěná.
 
--   Ujistěte se, že {0} je deklarována jako chráněná, virtuální a nezapečetěné.
+- Ujistěte se, že {0} je deklarována jako chráněná, virtuální a nezapečetěné.
 
--   Upravit {0} tak, že volá Dispose(true), poté volá uvolňování paměti. SuppressFinalize na aktuální instanci objektu ('this' nebo 'Me' v [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]) a potom se vrací.
+- Upravit {0} tak, že volá Dispose(true), poté volá uvolňování paměti. SuppressFinalize na aktuální instanci objektu ('this' nebo 'Me' v [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]) a potom se vrací.
 
--   Upravit {0} tak, že volá Dispose(false) a potom se vrací.
+- Upravit {0} tak, že volá Dispose(false) a potom se vrací.
 
--   Pokud vytváříte třídu nezapečetěné kořenové IDisposable, ujistěte se, že implementace IDisposable má následující formát, který je popsaný výše v této části.
+- Pokud vytváříte třídu nezapečetěné kořenové IDisposable, ujistěte se, že implementace IDisposable má následující formát, který je popsaný výše v této části.
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
  Nepotlačujte upozornění na toto pravidlo.

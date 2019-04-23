@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: caeab08d6032bd8c88d35a62da56e3dc8015da9a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ef2882fec8d213c38a2e125d4e3f0c3f22d1d581
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55923901"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087259"
 ---
 # <a name="how-to-view-existing-types-in-class-designer"></a>Postupy: Zobrazení existujících typů v Návrháři tříd
 
@@ -31,9 +31,9 @@ Navrhování nových typů v diagramech tříd, naleznete v tématu [jak: Vytvá
 
 ## <a name="to-see-types-in-a-project-on-a-class-diagram"></a>Zobrazení typů v projektu v diagramu tříd
 
-1.  Z projektu v **Průzkumníka řešení**, otevřete existující soubor diagramu tříd (.cd). Nebo pokud neexistuje žádný diagram tříd, přidejte do projektu nový diagram tříd. Zobrazit [jak: Přidání diagramů tříd do projektů](how-to-add-class-diagrams-to-projects.md).
+1. Z projektu v **Průzkumníka řešení**, otevřete existující soubor diagramu tříd (.cd). Nebo pokud neexistuje žádný diagram tříd, přidejte do projektu nový diagram tříd. Zobrazit [jak: Přidání diagramů tříd do projektů](how-to-add-class-diagrams-to-projects.md).
 
-2.  Z projektu v **Průzkumníka řešení**, přetáhněte soubor zdrojového kódu do diagramu tříd.
+2. Z projektu v **Průzkumníka řešení**, přetáhněte soubor zdrojového kódu do diagramu tříd.
 
     > [!NOTE]
     > Pokud má vaše řešení projekt, které sdílejí kód mezi více aplikacemi, můžete přetáhnout soubory nebo kód do diagramu tříd pouze z těchto zdrojů:

@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bcb24742a4387a84bba0b52763cdb559280c24c4
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 25ed4c8032133f08b975a22d56de4911efbd50a7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59232772"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60081356"
 ---
 # <a name="measure-memory-usage-in-visual-studio"></a>Míra využití paměti v aplikaci Visual Studio
 
@@ -41,22 +41,22 @@ V tomto kurzu se naučíte:
 
 ## <a name="collect-memory-usage-data"></a>Shromažďování dat o využití paměti
 
-1.  Otevřete projekt, který chcete ladit v sadě Visual Studio a nastavte zarážku ve vaší aplikaci v místě, kde chcete začít, zkoumání využití paměti.
+1. Otevřete projekt, který chcete ladit v sadě Visual Studio a nastavte zarážku ve vaší aplikaci v místě, kde chcete začít, zkoumání využití paměti.
 
     Pokud máte oblasti, kde máte podezření na chybu paměti, nastavte k první zarážce, předtím, než dojde k problému paměti.
 
     > [!TIP]
     >  Vzhledem k tomu může být náročné k zaznamenání profilu paměti operace, která vás zajímá, když aplikace často přiděluje a zrušení přidělení paměti, nastavte zarážky na začátku a konci operace (nebo krokovat operaci) k vyhledání konkrétní bod paměť změněna.
 
-2.  Nastavení druhé zarážky na konci funkce nebo kód, který chcete analyzovat oblasti (nebo když dojde k problému podezřelý paměti).
+2. Nastavení druhé zarážky na konci funkce nebo kód, který chcete analyzovat oblasti (nebo když dojde k problému podezřelý paměti).
 
-3.  Okno **Diagnostické nástroje** se zobrazí automaticky (pokud jste ho nevypnuli). Otevřete okno znovu, klikněte na tlačítko **ladění** > **Windows** > **zobrazit diagnostické nástroje**.
+3. Okno **Diagnostické nástroje** se zobrazí automaticky (pokud jste ho nevypnuli). Otevřete okno znovu, klikněte na tlačítko **ladění** > **Windows** > **zobrazit diagnostické nástroje**.
 
-4.  Zvolte **využití paměti** s **vyberte nástroje** nastavení na panelu nástrojů.
+4. Zvolte **využití paměti** s **vyberte nástroje** nastavení na panelu nástrojů.
 
      ![Zobrazení diagnostických nástrojů](../profiling/media/diag-tools-select-tool-2.png "DiagToolsSelectTool")
 
-5.  Klikněte na **Ladit / Spustit ladění** (nebo na panelu nástrojů stiskněte **Start** nebo **F5**).
+5. Klikněte na **Ladit / Spustit ladění** (nebo na panelu nástrojů stiskněte **Start** nebo **F5**).
 
      Jakmile se aplikace načte, zobrazí se souhrnný přehled diagnostických nástrojů.
 
@@ -69,20 +69,20 @@ V tomto kurzu se naučíte:
      >
      >  Zastavit (Klávesová zkratka: **Posunout**+**F5**) a znovu spusťte ladění.
 
-6.  K vytvoření snímku na začátku ladicí relaci, zvolte **pořídit snímek** na **využití paměti** souhrnný panel nástrojů. (To může pomoct s nastavte zarážku zde také).
+6. K vytvoření snímku na začátku ladicí relaci, zvolte **pořídit snímek** na **využití paměti** souhrnný panel nástrojů. (To může pomoct s nastavte zarážku zde také).
 
     ![Pořídit snímek](../profiling/media/dbgdiag_mem_mixedtoolbar_takesnapshot.png "DBGDIAG_MEM_MixedToolbar_TakeSnapshot")
 
      > [!TIP]
      >  Pokud chcete vytvořit standardní hodnoty pro porovnání paměti, vezměte v úvahu pořízení snímku na začátku vaší relace ladění.
 
-6.  Spusťte scénář, který se zastaví u první zarážky.
+6. Spusťte scénář, který se zastaví u první zarážky.
 
-7.  Když ladicí program je pozastaveno k první zarážce, zvolte **pořídit snímek** na **využití paměti** souhrnný panel nástrojů.
+7. Když ladicí program je pozastaveno k první zarážce, zvolte **pořídit snímek** na **využití paměti** souhrnný panel nástrojů.
 
-8.  Stisknutím klávesy **F5** ke spuštění aplikace na druhém zarážku.
+8. Stisknutím klávesy **F5** ke spuštění aplikace na druhém zarážku.
 
-9.  Teď vytvořte nový snímek.
+9. Teď vytvořte nový snímek.
 
      Teď můžete začít analyzovat data.
 
@@ -93,9 +93,9 @@ V tomto kurzu se naučíte:
 
  Název sloupce, které závisí na režim ladění zvolte ve vlastnostech projektu: .NET, nativní nebo smíšený (.NET a nativní).
 
--   **Objekty (rozdíl)** a **přidělení (rozdíl)** sloupce zobrazují počet objektů v rozhraní .NET a nativní paměť při pořízení snímku.
+- **Objekty (rozdíl)** a **přidělení (rozdíl)** sloupce zobrazují počet objektů v rozhraní .NET a nativní paměť při pořízení snímku.
 
--   **Velikost haldy (rozdíl)** sloupec zobrazuje počet bajtů v rozhraní .NET a nativní haldy
+- **Velikost haldy (rozdíl)** sloupec zobrazuje počet bajtů v rozhraní .NET a nativní haldy
 
 Pokud jste provedli několik snímků, buňky ovládacího prvku souhrnnou tabulku zahrnují změnu hodnoty mezi řádek snímek a předchozí snímek.
 
@@ -136,13 +136,13 @@ Analýza využití paměti, klikněte na jeden z odkazů, které se otevře podr
 
  **Zobrazení typů** zobrazuje počet a velikost typů ve snímku.
 
--   Zvolte ikonu instance (![ikonu instance ve sloupci Typ objektu](../profiling/media/dbg_mma_instancesicon.png "DBG_MMA_InstancesIcon")) z vybraného typu k zobrazení informací o objektech vybraného typu ve snímku.
+- Zvolte ikonu instance (![ikonu instance ve sloupci Typ objektu](../profiling/media/dbg_mma_instancesicon.png "DBG_MMA_InstancesIcon")) z vybraného typu k zobrazení informací o objektech vybraného typu ve snímku.
 
      **Instance** zobrazení zobrazí každou instanci daného typu. Výběr instance zobrazí, které vedlo k vytvoření instance v zásobníku volání **zásobník volání přidělení** podokně.
 
      ![Zobrazení instancí](../profiling/media/dbgdiag_mem_native_instances.png "DBGDIAG_MEM_Native_Instances")
 
--   Zvolte **zobrazení zásobníků** v **režim zobrazení** seznamu zobrazíte zásobník přidělení pro vybraný typ.
+- Zvolte **zobrazení zásobníků** v **režim zobrazení** seznamu zobrazíte zásobník přidělení pro vybraný typ.
 
      ![Stacks View](../profiling/media/dbgdiag_mem_native_stacksview.png "DBGDIAG_MEM_Native_StacksView")
 

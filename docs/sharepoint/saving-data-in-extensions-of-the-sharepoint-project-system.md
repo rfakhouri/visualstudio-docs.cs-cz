@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: eba3f66e55c06efad2a540b1be7d3ad66ddfa3d0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 52b04490a646c7ced27d4a2d7f2344e27cbbae8b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599672"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082760"
 ---
 # <a name="save-data-in-extensions-of-the-sharepoint-project-system"></a>Ukládání dat do rozšíření systému projektu služby SharePoint
   Když rozšíříte systému Sharepointových projektů, můžete uložit data řetězce, který bude zachován po zavření projektu služby SharePoint. Data jsou obvykle související s položkou konkrétního projektu nebo pomocí samotného projektu.
@@ -35,9 +35,9 @@ ms.locfileid: "56599672"
 ## <a name="save-data-that-is-associated-with-a-project"></a>Ukládání dat, který je spojen s projektem
  Až budete mít data na úrovni projektu, jako je například hodnota vlastnosti, které přidáte do projektů služby SharePoint, můžete data uložit do souboru projektu ( *.csproj* souboru nebo *.vbproj* souboru), nebo možnost uživatele projektu soubor ( *. csproj.user* souboru nebo *. vbproj.user* souboru). Soubor, který můžete uložit data v závisí na způsobu dat, který se má použít:
 
--   Pokud chcete data, která mají být dostupné pro všechny vývojáře, kteří spustí projektu služby SharePoint, uložte data do souboru projektu. Tento soubor je vždy změnami do zdrojové databáze ovládací prvek, takže data v tomto souboru jsou k dispozici s ostatními vývojáři, kteří projekt rezervovat.
+- Pokud chcete data, která mají být dostupné pro všechny vývojáře, kteří spustí projektu služby SharePoint, uložte data do souboru projektu. Tento soubor je vždy změnami do zdrojové databáze ovládací prvek, takže data v tomto souboru jsou k dispozici s ostatními vývojáři, kteří projekt rezervovat.
 
--   Pokud chcete data, která mají být k dispozici pouze pro aktuální vývojář, který má SharePoint projekt otevřít v sadě Visual Studio, uložte tato data do možnost uživatelského souboru projektu. Tento soubor se změnami obvykle do zdrojové databáze ovládacího prvku, tak data v tomto souboru nejsou k dispozici s ostatními vývojáři, kteří projekt rezervovat.
+- Pokud chcete data, která mají být k dispozici pouze pro aktuální vývojář, který má SharePoint projekt otevřít v sadě Visual Studio, uložte tato data do možnost uživatelského souboru projektu. Tento soubor se změnami obvykle do zdrojové databáze ovládacího prvku, tak data v tomto souboru nejsou k dispozici s ostatními vývojáři, kteří projekt rezervovat.
 
 ### <a name="save-data-to-the-project-file"></a>Ukládání dat do souboru projektu
  K ukládání dat do souboru projektu, převést <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject> objektu <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage> a poté pomocí <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetPropertyValue%2A> metoda. Následující příklad kódu ukazuje, jak použít tuto metodu pro uložení hodnoty vlastnosti projektu do souboru projektu. Tento příklad v rámci větší ukázky najdete v tématu [jak: Přidání vlastnosti do projektů služby SharePoint](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md).

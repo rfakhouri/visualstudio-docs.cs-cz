@@ -11,12 +11,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 80c8d385e0c78461df5b7938d356ec43a481e46e
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 8fe6377de1be51ac0fc48904687b60ed8bbc95b1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59670417"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082955"
 ---
 # <a name="creating-a-ui-by-using-blend-for-visual-studio"></a>Vytvoření uživatelského rozhraní pomocí nástroje Blend for Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,15 +32,15 @@ Blend for Visual Studio vám pomůže navrhnout založené na XAML Windows deskt
 
  **V tomto tématu**:
 
--   [Přehled panelu nástrojů](#Tools)
+- [Přehled panelu nástrojů](#Tools)
 
--   [Přehled panelu aktiva](#Assets)
+- [Přehled panelu aktiva](#Assets)
 
--   [Prohlídka objekty a časová osa panel](#Objects)
+- [Prohlídka objekty a časová osa panel](#Objects)
 
--   [Průvodce panelu Vlastnosti](#Properties)
+- [Průvodce panelu Vlastnosti](#Properties)
 
-##  <a name="Tools"></a> Přehled panelu nástrojů
+## <a name="Tools"></a> Přehled panelu nástrojů
  Můžete použít **nástroje** panelu v Blendu pro Visual Studio k vytvoření a úprava objektů ve vaší aplikaci. Vytvoření objektů výběrem nástroj a vykreslení na návrhovou plochu pomocí myši.
 
  ![Panel nástrojů](../designers/media/blend5toolspanel.png "Blend5Toolspanel")
@@ -56,7 +56,7 @@ Blend for Visual Studio vám pomůže navrhnout založené na XAML Windows deskt
 
  **Podívejte se na krátké video:** ![Konfigurovat nainstalované funkce](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [panelu nástrojů](https://www.youtube.com/watch?v=VkdUJcvoo54&list=PLBDF977B2F1DAB358&index=4).
 
-##  <a name="Assets"></a> Přehled panelu aktiva
+## <a name="Assets"></a> Přehled panelu aktiva
  Můžete najít všechny ovládací prvky v **prostředky** panelu, podobně jako **nástrojů** v sadě Visual Studio. Kromě ovládací prvky, najdete všechno, co můžete přidat do vaší návrhovou plochu v **prostředky** panelu, včetně styly, média, chování a efekty.
 
  ![Panel aktiva](../designers/media/blend5-assets-panel.png "Blend5_Assets_panel")
@@ -69,7 +69,7 @@ Blend for Visual Studio vám pomůže navrhnout založené na XAML Windows deskt
 |![](../designers/media/b1-4.png "B1_4")|**Styly** zobrazit všechny styly, které jsou obsaženy ve slovníku prostředků.|
 |![](../designers/media/b1-5.png "B1_5")|**Popis** zobrazení popisu vybrané kategorie nebo podkategorie prostředků.|
 
-##  <a name="Objects"></a> Prohlídka objekty a časová osa panel
+## <a name="Objects"></a> Prohlídka objekty a časová osa panel
  Pomocí tohoto panelu uspořádání objektů na kreslicí ploše a, pokud chcete, animovat je.
 
  ![Objekt a časová osa panel v režimu animace](../designers/media/b5-object-timeline-animation.png "b5_object_timeline_animation")
@@ -93,7 +93,7 @@ Blend for Visual Studio vám pomůže navrhnout založené na XAML Windows deskt
 |![](../designers/media/b1-15.png "B1_15")|**Osy** nastavit rozlišení rozsahu časové osy. Přiblížení umožňuje upravovat animaci s více detaily a oddálení zobrazení ukáže větší přehled o tom, co se děje během delšího časového období. Pokud přiblížíte, ale nemůžete nastavit klíčový snímek na pozici v čase, který chcete, ověřte, zda je hodnota rozlišení intervalu klíčových snímků dostatečně vysoká.|
 |![Popisek 16](../designers/media/b5-label-16.png "b5_label_16")|**Oblast kompozice časové osy** zobrazit časovou osu a přesouvat klíčové snímky nebo pomocí jejich místní nabídky.|
 
-##  <a name="Properties"></a> Průvodce panelu Vlastnosti
+## <a name="Properties"></a> Průvodce panelu Vlastnosti
  Pomocí tohoto panelu zobrazení a úprav vlastností objektu. Můžete je také nastavit přímo na návrhové ploše. Pokud tak učiníte, vlastnost změny se projeví v **vlastnosti** panelu.
 
  ![Panel vlastnosti](../designers/media/blend5-properties-panel.png "Blend5_properties_panel")

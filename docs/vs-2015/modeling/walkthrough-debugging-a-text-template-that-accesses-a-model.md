@@ -1,5 +1,5 @@
 ---
-title: 'Průvodce: Ladění textové šablony přistupující k modelu | Dokumentace Microsoftu'
+title: 'Návod: Ladění textové šablony přistupující k modelu | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -9,14 +9,14 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4d6b759f62c4faa7e2f75f53f85cb04ba4484a7f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: eb5a9e6806c76cbb072090c35444d936ce50bb79
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54792127"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087115"
 ---
-# <a name="walkthrough-debugging-a-text-template-that-accesses-a-model"></a>Průvodce: Ladění textové šablony přistupující k modelu
+# <a name="walkthrough-debugging-a-text-template-that-accesses-a-model"></a>Návod: Ladění textové šablony přistupující k modelu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Při úpravě nebo přidat textové šablony řešení jazyka specifického pro doménu, může docházet k chybám při modul transformace šablony zdrojový kód nebo při kompilaci vygenerovaného kódu. Následující návod znázorňuje některé z akcí, které vám pomůžou ladění textové šablony.  
@@ -42,11 +42,11 @@ Při úpravě nebo přidat textové šablony řešení jazyka specifického pro 
   
 #### <a name="to-create-a-text-template"></a>Vytvoření textové šablony  
   
-1.  Sestavte řešení a začít spouštět v ladicím programu. (Na **sestavení** nabídky, klikněte na tlačítko **znovu sestavit řešení**a pak na **ladění** nabídky, klikněte na tlačítko **spustit ladění**.) Novou instanci sady Visual Studio otevře ladění projektu.  
+1. Sestavte řešení a začít spouštět v ladicím programu. (Na **sestavení** nabídky, klikněte na tlačítko **znovu sestavit řešení**a pak na **ladění** nabídky, klikněte na tlačítko **spustit ladění**.) Novou instanci sady Visual Studio otevře ladění projektu.  
   
-2.  Přidání textového souboru s názvem `DebugTest.tt` k ladění projektu.  
+2. Přidání textového souboru s názvem `DebugTest.tt` k ladění projektu.  
   
-3.  Ujistěte se, že **Custom Tool** vlastnost DebugTest.tt je nastavena na `TextTemplatingFileGenerator`.  
+3. Ujistěte se, že **Custom Tool** vlastnost DebugTest.tt je nastavena na `TextTemplatingFileGenerator`.  
   
 ## <a name="debugging-directives-that-access-a-model-from-a-text-template"></a>Ladění direktivy, které přístup k modelu z textové šablony  
  Pro přístup k modelu z příkazy a výrazy v textové šabloně, je třeba nejprve zavolat procesoru vygenerovaných direktiv. Volání procesoru vygenerovaných direktiv zpřístupní třídami v modelu kód textové šablony jako vlastnosti. Další informace najdete v tématu [přístup k modelům z textových šablon](../modeling/accessing-models-from-text-templates.md).  
@@ -55,7 +55,7 @@ Při úpravě nebo přidat textové šablony řešení jazyka specifického pro 
   
 #### <a name="to-debug-an-incorrect-directive-name"></a>Chcete-li ladit nesprávný název direktivy  
   
-1.  Nahraďte kód v DebugTest.tt následujícím kódem:  
+1. Nahraďte kód v DebugTest.tt následujícím kódem:  
   
     > [!NOTE]
     >  Kód obsahuje chybu. Představujete chyby, aby bylo možné ladit.  
@@ -91,7 +91,7 @@ Při úpravě nebo přidat textové šablony řešení jazyka specifického pro 
     #>  
     ```  
   
-2.  V **Průzkumníka řešení**, klikněte pravým tlačítkem na DebugTest.tt a potom klikněte na tlačítko **spustit vlastní nástroj**.  
+2. V **Průzkumníka řešení**, klikněte pravým tlačítkem na DebugTest.tt a potom klikněte na tlačítko **spustit vlastní nástroj**.  
   
      **Seznam chyb** v okně se zobrazí tato chyba:  
   
@@ -99,9 +99,9 @@ Při úpravě nebo přidat textové šablony řešení jazyka specifického pro 
   
      V takovém případě direktiv volání obsahuje nesprávný název direktivy. Zadali jste `modelRoot` je název direktivy, ale správný název direktivy `DebuggingTestLanguage`.  
   
-3.  Klikněte dvakrát na chybu v **seznam chyb** okna můžete přejít ke kódu.  
+3. Klikněte dvakrát na chybu v **seznam chyb** okna můžete přejít ke kódu.  
   
-4.  Chcete-li kód, změňte název direktivy k `DebuggingTestLanguage`.  
+4. Chcete-li kód, změňte název direktivy k `DebuggingTestLanguage`.  
   
      Tato změna se zvýrazní.  
   
@@ -113,13 +113,13 @@ Při úpravě nebo přidat textové šablony řešení jazyka specifického pro 
     <#@ DebuggingTestLanguage processor="DebuggingTestLanguageDirectiveProcessor" requires="fileName='Sample.ddd'" provides="ExampleModel=ExampleModel" #>  
     ```  
   
-5.  V **Průzkumníka řešení**, klikněte pravým tlačítkem na DebugTest.tt a potom klikněte na tlačítko **spustit vlastní nástroj**.  
+5. V **Průzkumníka řešení**, klikněte pravým tlačítkem na DebugTest.tt a potom klikněte na tlačítko **spustit vlastní nástroj**.  
   
      Systém nyní transformace textové šablony a generuje odpovídající soubor výstup. Neuvidíte všechny chyby **seznam chyb** okna.  
   
 #### <a name="to-debug-an-incorrect-property-name"></a>Chcete-li ladit s názvem nesprávná vlastnost  
   
-1.  Nahraďte kód v DebugTest.tt následujícím kódem:  
+1. Nahraďte kód v DebugTest.tt následujícím kódem:  
   
     > [!NOTE]
     >  Kód obsahuje chybu. Představujete chyby, aby bylo možné ladit.  
@@ -155,7 +155,7 @@ Při úpravě nebo přidat textové šablony řešení jazyka specifického pro 
     #>  
     ```  
   
-2.  V **Průzkumníka řešení**, klikněte pravým tlačítkem na DebugTest.tt a potom klikněte na tlačítko **spustit vlastní nástroj**.  
+2. V **Průzkumníka řešení**, klikněte pravým tlačítkem na DebugTest.tt a potom klikněte na tlačítko **spustit vlastní nástroj**.  
   
      **Seznam chyb** okno se zobrazí a zobrazí se jedné z následujících chyb:  
   
@@ -173,9 +173,9 @@ Při úpravě nebo přidat textové šablony řešení jazyka specifického pro 
     <#@ DebuggingTestLanguage processor="DebuggingTestLanguageDirectiveProcessor" requires="fileName='Sample.ddd'" provides="ExampleModel=LibraryModel" #>  
     ```  
   
-3.  Klikněte dvakrát na chybu v okně Seznam chyb pro přechod na kód.  
+3. Klikněte dvakrát na chybu v okně Seznam chyb pro přechod na kód.  
   
-4.  Chcete-li kód, změňte vlastnost název na `LibraryModel` v kód textové šablony.  
+4. Chcete-li kód, změňte vlastnost název na `LibraryModel` v kód textové šablony.  
   
      Změny jsou zvýrazněné.  
   
@@ -210,6 +210,6 @@ Při úpravě nebo přidat textové šablony řešení jazyka specifického pro 
     #>  
     ```  
   
-5.  V **Průzkumníka řešení**, klikněte pravým tlačítkem na DebugTest.tt a potom klikněte na tlačítko **spustit vlastní nástroj**.  
+5. V **Průzkumníka řešení**, klikněte pravým tlačítkem na DebugTest.tt a potom klikněte na tlačítko **spustit vlastní nástroj**.  
   
      Systém nyní transformace textové šablony a generuje odpovídající soubor výstup. Neuvidíte všechny chyby **seznam chyb** okna.

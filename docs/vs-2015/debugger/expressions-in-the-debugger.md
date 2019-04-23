@@ -27,12 +27,12 @@ caps.latest.revision: 30
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0a284fc35a5a792171e5102518bcfa553337dd15
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3999737a2fad04c9b513722ae11608574a72c410
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54761211"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080734"
 ---
 # <a name="expressions-in-the-debugger"></a>Výrazy v ladicím programu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -94,7 +94,7 @@ int main()
   
 ```  
   
-###  <a name="BKMK_Using_debugger_intrinisic_functions_to_maintain_state"></a> Pomocí vnitřní funkce ladicího programu pro uchování stavu  
+### <a name="BKMK_Using_debugger_intrinisic_functions_to_maintain_state"></a> Pomocí vnitřní funkce ladicího programu pro uchování stavu  
  Vnitřní funkce ladicího programu poskytují způsob, jak volat určité funkce jazyka C/C++ ve výrazech beze změny stavu aplikace.  
   
  Vnitřní funkce ladicího programu:  
@@ -116,17 +116,17 @@ int main()
 |**Windows 8**|WindowsGetStringLen(), WindowsGetStringRawBuffer()<br /><br /> Tyto funkce vyžadují proces, který je právě laděna, aby byla spuštěna v systému Windows 8. Ladění s výpisem paměti soubory vygenerované ze zařízení s Windows 8 také vyžaduje, aby Visual Studio počítače s Windows 8. Nicméně pokud zařízení s Windows 8 ladíte vzdáleně, počítač Visual Studio může běžet Windows 7.|  
 |**Různé**|__log2<br /><br /> Vrátí základní 2 zadané celé číslo, zaokrouhlí na nejbližší menší celé číslo v protokolu.|  
   
-## <a name="ccli---unsupported-expressions"></a>C + +/ CLI - nepodporované výrazy  
+## <a name="ccli---unsupported-expressions"></a>C++/ CLI - nepodporované výrazy  
   
--   Přetypování, které se týkají ukazatele nebo uživatelem definované přetypování, nejsou podporovány.  
+- Přetypování, které se týkají ukazatele nebo uživatelem definované přetypování, nejsou podporovány.  
   
--   Porovnání objektu a přiřazení nejsou podporovány.  
+- Porovnání objektu a přiřazení nejsou podporovány.  
   
--   Přetížené operátory a přetížené funkce nejsou podporovány.  
+- Přetížené operátory a přetížené funkce nejsou podporovány.  
   
--   Zabalení a rozbalení nejsou podporovány.  
+- Zabalení a rozbalení nejsou podporovány.  
   
--   `Sizeof` operátor není podporován.  
+- `Sizeof` operátor není podporován.  
   
 ## <a name="c---unsupported-expressions"></a>C# – nepodporované výrazy  
   
@@ -135,19 +135,19 @@ int main()
   
  Nejsou podporovány následující funkce dynamické objekty:  
   
--   Složené operátory `+=`, `-=`, `%=`, `/=`, a `*=`  
+- Složené operátory `+=`, `-=`, `%=`, `/=`, a `*=`  
   
--   Mnoho přetypování, včetně číselné přetypování a argument typu přetypování  
+- Mnoho přetypování, včetně číselné přetypování a argument typu přetypování  
   
--   Volání metody s více než dva argumenty  
+- Volání metody s více než dva argumenty  
   
--   Gettery vlastností s více než dva argumenty  
+- Gettery vlastností s více než dva argumenty  
   
--   Nastavením vlastností s argumenty  
+- Nastavením vlastností s argumenty  
   
--   Přiřazení k indexeru  
+- Přiřazení k indexeru  
   
--   Logické operátory `&&` a `||`  
+- Logické operátory `&&` a `||`  
   
 ### <a name="anonymous-methods"></a>Anonymní metody  
  Vytvoření nové anonymní metody není podporováno.  
@@ -159,19 +159,19 @@ int main()
   
  Nejsou podporovány následující funkce dynamické objekty:  
   
--   Složené operátory `+=`, `-=`, `%=`, `/=`, a `*=`  
+- Složené operátory `+=`, `-=`, `%=`, `/=`, a `*=`  
   
--   Mnoho přetypování, včetně číselné přetypování a argument typu přetypování  
+- Mnoho přetypování, včetně číselné přetypování a argument typu přetypování  
   
--   Volání metody s více než dva argumenty  
+- Volání metody s více než dva argumenty  
   
--   Gettery vlastností s více než dva argumenty  
+- Gettery vlastností s více než dva argumenty  
   
--   Nastavením vlastností s argumenty  
+- Nastavením vlastností s argumenty  
   
--   Přiřazení k indexeru  
+- Přiřazení k indexeru  
   
--   Logické operátory `&&` a `||`  
+- Logické operátory `&&` a `||`  
   
 ### <a name="local-constants"></a>Místní konstanty  
  Nepodporují se místní konstanty.  
@@ -184,35 +184,35 @@ int main()
   
 ### <a name="unsupported-keywords"></a>Nepodporovaná klíčová slova  
   
--   `AddressOf`  
+- `AddressOf`  
   
--   `End`  
+- `End`  
   
--   `Error`  
+- `Error`  
   
--   `Exit`  
+- `Exit`  
   
--   `Goto`  
+- `Goto`  
   
--   `On Error`  
+- `On Error`  
   
--   `Resume`  
+- `Resume`  
   
--   `Return`  
+- `Return`  
   
--   `Select/Case`  
+- `Select/Case`  
   
--   `Stop`  
+- `Stop`  
   
--   `SyncLock`  
+- `SyncLock`  
   
--   `Throw`  
+- `Throw`  
   
--   `Try/Catch/Finally`  
+- `Try/Catch/Finally`  
   
--   `With`  
+- `With`  
   
--   Namespace nebo modul úroveň klíčová slova, jako například `End Sub` nebo `Module`.  
+- Namespace nebo modul úroveň klíčová slova, jako například `End Sub` nebo `Module`.  
   
 ## <a name="see-also"></a>Viz také  
  [Specifikátory formátu v jazyce C++](../debugger/format-specifiers-in-cpp.md)   

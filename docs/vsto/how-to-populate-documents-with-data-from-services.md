@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 137755ae4e1bfab97cbaec063a29a95caa1d9cd6
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 6239bc351872dc7a945c3fbff8ad1ed13817c3ef
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54865018"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082786"
 ---
 # <a name="how-to-populate-documents-with-data-from-services"></a>Postupy: Naplnění dokumentů daty ze služeb
 
@@ -33,21 +33,21 @@ Následující příklad ukazuje, jak přidat ovládací prvky vázaných dat na
 
 ## <a name="to-populate-a-document-level-project-with-data-from-a-web-service"></a>K naplnění úrovni dokumentu projektu s daty z webové služby
 
-1.  Otevřít **zdroje dat** okna a vytvořte zdroj dat služby pro váš projekt. Další informace najdete v tématu [přidat nové zdroje dat](../data-tools/add-new-data-sources.md).
+1. Otevřít **zdroje dat** okna a vytvořte zdroj dat služby pro váš projekt. Další informace najdete v tématu [přidat nové zdroje dat](../data-tools/add-new-data-sources.md).
 
-2.  Přetáhněte tabulku nebo chcete, aby z pole **zdroje dat** okno dokumentu.
+2. Přetáhněte tabulku nebo chcete, aby z pole **zdroje dat** okno dokumentu.
 
      Vytvoření ovládacího prvku na dokument, <xref:System.Windows.Forms.BindingSource> se vytvoří, který je vázán na objekt třídy ve vašem projektu a třídy jsou generovány pro službu.
 
-3.  Ve vašem kódu vytvoření instance třídy webové služby, který jste se připojili v kroku 1.
+3. Ve vašem kódu vytvoření instance třídy webové služby, který jste se připojili v kroku 1.
 
-4.  Pokud jsou vlastnosti, které jsou nutné pro komunikaci s webovou službou, vytváření instancí těchto vlastností.
+4. Pokud jsou vlastnosti, které jsou nutné pro komunikaci s webovou službou, vytváření instancí těchto vlastností.
 
-5.  Vytvoření a odeslání požadavku na data pomocí metody vystavené objektem webové služby a všechny instance vlastnost, že kterou jste vytvořili v kroku 4.
+5. Vytvoření a odeslání požadavku na data pomocí metody vystavené objektem webové služby a všechny instance vlastnost, že kterou jste vytvořili v kroku 4.
 
      Metody, které použijete, závisí na jaké webové služby nabízí.
 
-6.  Přiřadit data odpovědi z webové služby <xref:System.Windows.Forms.BindingSource.DataSource%2A> vlastnost <xref:System.Windows.Forms.BindingSource>.
+6. Přiřadit data odpovědi z webové služby <xref:System.Windows.Forms.BindingSource.DataSource%2A> vlastnost <xref:System.Windows.Forms.BindingSource>.
 
 Při spuštění projektu ovládací prvky zobrazí první záznam ve zdroji dat. Posouvání záznamů se zpracováním událostí měny pomocí objektů v můžete povolit <xref:System.Windows.Forms.BindingSource>.
 

@@ -13,39 +13,39 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a415a1021514a4d8b962e4a65a22b691edc66d9d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 1be553955abdc42c2a9b4d09ff857e9236b1a002
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56635147"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60081903"
 ---
 # <a name="how-to-import-a-master-page-or-theme"></a>Postupy: Import stránky předlohy nebo motivu
   Můžete zadat stránky na webu služby SharePoint jednotný vzhled vytvořením a použitím stránky předlohy a motivů. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] neposkytuje šablon pro tyto elementy, ale můžete vytvořit v aplikaci SharePoint Designer a importujte je do [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Další informace najdete v tématu [stavebních bloků: Stránky a uživatelské rozhraní](http://go.microsoft.com/fwlink/?LinkID=182095) na webu společnosti Microsoft.
 
 ### <a name="to-import-a-master-page-or-theme"></a>Chcete-li import stránky předlohy nebo motivu
 
-1.  V [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], vytvořte nebo otevřete projekt služby SharePoint.
+1. V [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], vytvořte nebo otevřete projekt služby SharePoint.
 
      Informace o tom, jak vytvořit projekt služby SharePoint, naleznete v tématu [SharePoint šablony položek projektu a projekt](../sharepoint/sharepoint-project-and-project-item-templates.md).
 
-2.  V panelu nabídky zvolte **projektu** > **přidat novou položku**.
+2. V panelu nabídky zvolte **projektu** > **přidat novou položku**.
 
-3.  V **přidat novou položku** dialogového okna rozbalte **SharePoint** uzel a klikněte na tlačítko **2010** uzlu.
+3. V **přidat novou položku** dialogového okna rozbalte **SharePoint** uzel a klikněte na tlačítko **2010** uzlu.
 
-4.  V seznamu šablon služby SharePoint, zvolte **modulu** šablony a pak zadejte název modulu.
+4. V seznamu šablon služby SharePoint, zvolte **modulu** šablony a pak zadejte název modulu.
 
      Modul obsahuje soubory (například stránky předlohy nebo motivu souborů) pro nasazení do umístění, které zadáte v Sharepointu.
 
-5.  V modulu, odstraňte výchozí soubor, který se nazývá *ukázka.txt*.
+5. V modulu, odstraňte výchozí soubor, který se nazývá *ukázka.txt*.
 
-6.  Vyberte uzel modulu.
+6. Vyberte uzel modulu.
 
-7.  V panelu nabídky zvolte **projektu** > **přidat existující položku**a klikněte na tlačítko souboru hlavní stránky nebo motivu.
+7. V panelu nabídky zvolte **projektu** > **přidat existující položku**a klikněte na tlačítko souboru hlavní stránky nebo motivu.
 
      Hlavní stránka soubory mají příponu .master a motivu soubory mají příponu .thmx.
 
-8.  Pokud jste přidali na stránku předlohy, změňte jeho **řešení konfliktů při nasazení** nastavení **automatické** ve vlastnostech modulu.
+8. Pokud jste přidali na stránku předlohy, změňte jeho **řešení konfliktů při nasazení** nastavení **automatické** ve vlastnostech modulu.
 
     > [!NOTE]
     >  Pokud název hlavní stránky je stejná jako název existující stránky předlohy, která je označena jako výchozí stránky předlohy nebo vlastní stránky předlohy, může dojít k chybám. Informace o tom, jak tento problém vyřešit, najdete v části [názorný postup: Import vlastní stránky předlohy a stránky webu s obrázkem](../sharepoint/walkthrough-import-a-custom-master-page-and-site-page-with-an-image.md).

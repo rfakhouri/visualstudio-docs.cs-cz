@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a5c195697a94462ce1239318a309160220117b8e
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: c19b623efca921e7557a818c3915faf6ea158641
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58146523"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087311"
 ---
 # <a name="project-persistence"></a>Trvalost projektu
 Trvalost se v úvahu důležité pro váš projekt. Většina projektů pomocí položky projektu, které představují soubory. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] také podporuje projekty, jejichž data jsou v jiných souborech založené. Musíte nastavit jako trvalý, soubory vlastněné projektu a souboru projektu. Rozhraní IDE nastaví projekt tak, aby uložit samotné nebo položky projektu.
@@ -25,9 +25,9 @@ Trvalost se v úvahu důležité pro váš projekt. Většina projektů pomocí 
 
  Položky projektu může být založené na souboru nebo jiné file-based:
 
--   Souborové položky může být místní nebo vzdálené. Ve webové projekty v jazyce C# například připojení k souborům ve vzdáleném systému zachovat místně, zatímco podotknout zachovat ve vzdáleném systému.
+- Souborové položky může být místní nebo vzdálené. Ve webové projekty v jazyce C# například připojení k souborům ve vzdáleném systému zachovat místně, zatímco podotknout zachovat ve vzdáleném systému.
 
--   Non-file-based položky uložit položky databáze nebo úložiště.
+- Non-file-based položky uložit položky databáze nebo úložiště.
 
 ## <a name="commit-models"></a>Potvrdit modelů
  Po rozhodnutí, kde jsou umístěné položky projektu, je nutné zvolit model příslušné potvrzení. Například v modelu na základě souboru s místními soubory, každý může být projekt uložen samostatně. V modelu úložiště můžete uložit několik položek v rámci jedné transakce. Další informace najdete v tématu [rozhodnutí o návrhu typu projektu](../../extensibility/internals/project-type-design-decisions.md).

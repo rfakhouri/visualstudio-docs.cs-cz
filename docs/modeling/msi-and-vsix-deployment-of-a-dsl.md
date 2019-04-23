@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 664d323976692d20a3f9f9bb8a7e66c0aa4f9761
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: e881ef4a016fa44bbb1e38e2bc3145fb11974c56
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "58069603"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087362"
 ---
 # <a name="msi-and-vsix-deployment-of-a-dsl"></a>Nasazení DSL v MSI a VSIX
 Jazyka specifického pro doménu můžete nainstalovat na vlastním počítači nebo v jiných počítačích. Visual Studio musí být nainstalována na cílovém počítači.
@@ -33,9 +33,9 @@ Při instalaci vašeho DSL pomocí této metody může uživatel otevřít soubo
 
 1. Vyhledejte **VSIX** soubor, který byl vytvořen vaším projektem DSL balíčku:
 
-   1.  V **Průzkumníku řešení**, klikněte pravým tlačítkem myši **DslPackage** projektu a pak klikněte na tlačítko **otevřít složku v Průzkumníku souborů**.
+   1. V **Průzkumníku řešení**, klikněte pravým tlačítkem myši **DslPackage** projektu a pak klikněte na tlačítko **otevřít složku v Průzkumníku souborů**.
 
-   2.  Vyhledejte soubor **bin\\\*\\**_YourProject_**. DslPackage.vsix**
+   2. Vyhledejte soubor **bin\\\*\\**_YourProject_**. DslPackage.vsix**
 
 2. Kopírovat **VSIX** souboru k cílovému počítači, na kterém chcete nainstalovat DSL. To může být vlastní počítač nebo jiný.
 
@@ -74,9 +74,9 @@ Při instalaci vašeho DSL pomocí této metody může uživatel otevřít soubo
 
 1. Nastavte `InstalledByMsi` v manifestu rozšíření. To brání VSX nainstalovat a odinstalovat s výjimkou MSI. To je důležité, pokud bude obsahovat jiné komponenty v MSI.
 
-   1.  Open DslPackage\source.extension.tt
+   1. Open DslPackage\source.extension.tt
 
-   2.  Vložte následující řádek před `<SupportedProducts>`:
+   2. Vložte následující řádek před `<SupportedProducts>`:
 
        ```xml
        <InstalledByMsi>true</InstalledByMsi>
@@ -86,15 +86,15 @@ Při instalaci vašeho DSL pomocí této metody může uživatel otevřít soubo
 
 3. Ujistěte se, že správnost tohoto kódu DSL následující atributy:
 
-   -   V Průzkumníku DSL klikněte na kořenový uzel a v okně Vlastnosti zkontrolujte:
+   - V Průzkumníku DSL klikněte na kořenový uzel a v okně Vlastnosti zkontrolujte:
 
-       -   Popis
+       - Popis
 
-       -   Version
+       - Version
 
-   -   Klikněte na tlačítko **Editor** uzlu a v okně Vlastnosti klikněte na tlačítko **ikonu**. Nastavte hodnotu na odkazovat na soubor ikony v **DslPackage\Resources**, jako například **File.ico**
+   - Klikněte na tlačítko **Editor** uzlu a v okně Vlastnosti klikněte na tlačítko **ikonu**. Nastavte hodnotu na odkazovat na soubor ikony v **DslPackage\Resources**, jako například **File.ico**
 
-   -   Na **sestavení** nabídce otevřete **nástroje Configuration Manager**a vyberte konfiguraci, kterou chcete sestavit, například **vydání** nebo **ladění** .
+   - Na **sestavení** nabídce otevřete **nástroje Configuration Manager**a vyberte konfiguraci, kterou chcete sestavit, například **vydání** nebo **ladění** .
 
 4. Přejděte na [Visualization and Modeling SDK domovskou stránku](http://go.microsoft.com/fwlink/?LinkID=186128)a od **stáhne** kartu, stáhněte si **CreateMsiSetupProject.tt**.
 
@@ -122,16 +122,16 @@ Při instalaci vašeho DSL pomocí této metody může uživatel otevřít soubo
 
 11. V cílovém počítači vytvořte nový soubor, který má příponu souboru tohoto kódu DSL. Ověřte, že:
 
-    -   Soubor se v zobrazení seznamu Windows Explorer, zobrazí ikonu a popis, který jste definovali.
+    - Soubor se v zobrazení seznamu Windows Explorer, zobrazí ikonu a popis, který jste definovali.
 
-    -   Když dvakrát klikněte na soubor, spustí aplikace Visual Studio a otevře soubor DSL v editoru DSL.
+    - Když dvakrát klikněte na soubor, spustí aplikace Visual Studio a otevře soubor DSL v editoru DSL.
 
     Pokud dáváte přednost, můžete vytvořit projekt instalace ručně, namísto použití textové šablony. Návod, který zahrnuje tento postup najdete v kapitole 5 [Visualization and Modeling SDK Lab](http://go.microsoft.com/fwlink/?LinkId=208878).
 
 ### <a name="to-uninstall-a-dsl-that-was-installed-from-an-msi"></a>Chcete-li odinstalovat DSL, která byla nainstalovaná z MSI
 
-1.  Ve Windows, otevřete **programy a funkce** ovládacích panelech.
+1. Ve Windows, otevřete **programy a funkce** ovládacích panelech.
 
-2.  Odinstalujte DSL.
+2. Odinstalujte DSL.
 
-3.  Restartujte sadu Visual Studio.
+3. Restartujte sadu Visual Studio.

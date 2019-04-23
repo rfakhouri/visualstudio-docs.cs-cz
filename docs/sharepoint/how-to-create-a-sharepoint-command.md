@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4ac6e63bf0f669364e3011360fa74b7d8fde8662
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 49d253b63b682d81903003d6bdd148922989f274
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56645105"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082318"
 ---
 # <a name="how-to-create-a-sharepoint-command"></a>Postupy: Vytvoření příkazu SharePoint
   Pokud chcete použít objektový model serveru v rozšíření nástrojů služby SharePoint, je třeba vytvořit vlastní *příkaz serveru SharePoint* pro volání rozhraní API. Příkaz serveru SharePoint definujete v sestavení, které můžete volat přímo do objektového modelu serveru.
@@ -26,36 +26,36 @@ ms.locfileid: "56645105"
 
 ### <a name="to-create-a-sharepoint-command"></a>Vytvoření příkazu SharePoint
 
-1.  Vytvořte projekt knihovny tříd, který má následující konfiguraci:
+1. Vytvořte projekt knihovny tříd, který má následující konfiguraci:
 
-    -   Cílí na .NET Framework 3.5. Další informace o výběru cílové architektury, najdete v části [jak: Cílení na určitou verzi rozhraní .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
+    - Cílí na .NET Framework 3.5. Další informace o výběru cílové architektury, najdete v části [jak: Cílení na určitou verzi rozhraní .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
 
-    -   Cílí AnyCPU nebo x64 platformy. Ve výchozím nastavení cílovou platformu pro projekty knihovny tříd je AnyCPU. Další informace o výběru cílové platformy najdete v tématu [jak: Konfigurace projektů pro cílové platformy](../ide/how-to-configure-projects-to-target-platforms.md).
+    - Cílí AnyCPU nebo x64 platformy. Ve výchozím nastavení cílovou platformu pro projekty knihovny tříd je AnyCPU. Další informace o výběru cílové platformy najdete v tématu [jak: Konfigurace projektů pro cílové platformy](../ide/how-to-configure-projects-to-target-platforms.md).
 
     > [!NOTE]
     >  Příkaz serveru SharePoint nemůže implementovat ve stejném projektu, který definuje rozšíření nástrojů SharePoint, protože příkazů služby SharePoint cílí na rozhraní .NET Framework 3.5 a SharePoint cíl rozšíření nástroje [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]. Je nutné definovat všechny příkazy služby SharePoint, které jsou používány rozšíření testovacího projektu. Další informace najdete v tématu [nasadit rozšíření pro nástroje služby SharePoint v sadě Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).
 
-2.  Přidejte odkazy na následující sestavení:
+2. Přidejte odkazy na následující sestavení:
 
-    -   Microsoft.VisualStudio.SharePoint.Commands
+    - Microsoft.VisualStudio.SharePoint.Commands
 
-    -   Microsoft.SharePoint
+    - Microsoft.SharePoint
 
-3.  Ve třídě v projektu vytvořte metodu, která definuje váš příkaz služby SharePoint. Metoda musí splňovat následující pokyny:
+3. Ve třídě v projektu vytvořte metodu, která definuje váš příkaz služby SharePoint. Metoda musí splňovat následující pokyny:
 
-    -   Může mít jeden nebo dva parametry.
+    - Může mít jeden nebo dva parametry.
 
          První parametr musí být <xref:Microsoft.VisualStudio.SharePoint.Commands.ISharePointCommandContext> objektu. Tento objekt obsahuje Microsoft.SharePoint.SPSite nebo Microsoft.SharePoint.SPWeb spuštění příkazu. Poskytuje také <xref:Microsoft.VisualStudio.SharePoint.Commands.ISharePointCommandLogger> objekt, který můžete použít k zápisu zprávy do **výstup** okno nebo **seznam chyb** okna v sadě Visual Studio.
 
          Druhý parametr může být typ podle vašeho výběru, ale tento parametr je nepovinný. Tento parametr můžete přidat do příkazu SharePoint, pokud potřebujete předat data z rozšíření nástrojů služby SharePoint k příkazu.
 
-    -   Může mít návratovou hodnotu, ale tato položka je nepovinná.
+    - Může mít návratovou hodnotu, ale tato položka je nepovinná.
 
-    -   Druhý parametr a návratová hodnota musí být typ, který lze serializovat pomocí Windows Communication Foundation (WCF). Další informace najdete v tématu [typy podporované serializátorem kontraktu dat](/dotnet/framework/wcf/feature-details/types-supported-by-the-data-contract-serializer) a [horizontálních oddílů pomocí třídy XmlSerializer](/dotnet/framework/wcf/feature-details/using-the-xmlserializer-class).
+    - Druhý parametr a návratová hodnota musí být typ, který lze serializovat pomocí Windows Communication Foundation (WCF). Další informace najdete v tématu [typy podporované serializátorem kontraktu dat](/dotnet/framework/wcf/feature-details/types-supported-by-the-data-contract-serializer) a [horizontálních oddílů pomocí třídy XmlSerializer](/dotnet/framework/wcf/feature-details/using-the-xmlserializer-class).
 
-    -   Metoda může mít libovolný viditelnost (**veřejné**, **interní**, nebo **privátní**), a může být statické nebo nestatické.
+    - Metoda může mít libovolný viditelnost (**veřejné**, **interní**, nebo **privátní**), a může být statické nebo nestatické.
 
-4.  Použít <xref:Microsoft.VisualStudio.SharePoint.Commands.SharePointCommandAttribute> metody. Tento atribut určuje jedinečný identifikátor pro příkaz; Tento identifikátor nemusí odpovídat názvu metody.
+4. Použít <xref:Microsoft.VisualStudio.SharePoint.Commands.SharePointCommandAttribute> metody. Tento atribut určuje jedinečný identifikátor pro příkaz; Tento identifikátor nemusí odpovídat názvu metody.
 
      Při volání příkazu z rozšíření nástrojů služby SharePoint, musíte zadat stejný jedinečný identifikátor. Další informace najdete v tématu [jak: Provedení příkazu SharePoint](../sharepoint/how-to-execute-a-sharepoint-command.md).
 
@@ -70,9 +70,9 @@ ms.locfileid: "56645105"
 ## <a name="compiling-the-code"></a>Kompilování kódu
  Tento příklad vyžaduje odkazy na následující sestavení:
 
--   Microsoft.VisualStudio.SharePoint.Commands
+- Microsoft.VisualStudio.SharePoint.Commands
 
--   Microsoft.SharePoint
+- Microsoft.SharePoint
 
 ## <a name="deploying-the-command"></a>Nasazení příkazu
  Nasazení příkazu, patří příkaz sestavení ve stejném [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] rozšíření (*vsix*) balíček se sestavení rozšíření, které používá příkaz. Také je nutné přidat záznam pro příkaz sestavení v souboru extension.vsixmanifest. Další informace najdete v tématu [nasadit rozšíření pro nástroje služby SharePoint v sadě Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).

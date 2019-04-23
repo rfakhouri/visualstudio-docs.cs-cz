@@ -14,19 +14,19 @@ ms.assetid: c51c66a4-a543-4e95-b18d-2cfbcb3d1fdd
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0c6e536047aaebb9bd3a06e38574330937817748
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 39f2720efbcd8defffb9d0c77047a50e57939e95
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56840789"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082344"
 ---
 # <a name="array-length-must-be-assigned-a-finite-positive-number"></a>Délce pole musí být přiřazeno konečné kladné číslo.
 Při nastavení **délka** vlastnosti existujícího **pole** objektu, jste zadali délka pole, která nebyla kladné číslo nebo nula. K této chybě dochází, když přiřadíte hodnotu, která **délka** vlastnost `Array` objekt, který je záporný nebo nečíselné (`NaN`). Všimněte si, že [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] automaticky převede desetinná čísla na celý celých čísel.  
   
 ### <a name="to-correct-this-error"></a>Oprava této chyby  
   
--   Vlastnost length přiřadíte kladné celé číslo. Neexistuje žádná horní mez pro velikost pole, než je maximální celočíselnou hodnotu (přibližně 4 miliardy). Následující příklad ukazuje správný způsob, jak nastavit **délka** vlastnost **pole** objektu.  
+- Vlastnost length přiřadíte kladné celé číslo. Neexistuje žádná horní mez pro velikost pole, než je maximální celočíselnou hodnotu (přibližně 4 miliardy). Následující příklad ukazuje správný způsob, jak nastavit **délka** vlastnost **pole** objektu.  
   
     ```JavaScript  
     var my_array = new Array();  

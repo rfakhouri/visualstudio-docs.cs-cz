@@ -30,12 +30,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d459f641983960fdd7c4c1ded3b90c0a578c42b3
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 253f86f83805d11d7a1a6475fcbaf4eb76bfbc50
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57873665"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60081239"
 ---
 # <a name="analyze-and-model-your-architecture"></a>Analýza a modelování vaší architektury
 
@@ -69,39 +69,39 @@ Mapy kódu vám umožní zjistit, organizaci a vztahy v kódu.
 
 **Obvyklá využití:**
 
--   Zkontrolujte kód programu to vám umožní lépe pochopit jeho strukturu a její závislosti, jak ji aktualizovat a odhad nákladů na navrhované změny.
+- Zkontrolujte kód programu to vám umožní lépe pochopit jeho strukturu a její závislosti, jak ji aktualizovat a odhad nákladů na navrhované změny.
 
 **Přejděte na téma:**
 
--   [Mapování závislostí napříč vaším řešením](../modeling/map-dependencies-across-your-solutions.md)
--   [Použití map kódu k ladění aplikací](../modeling/use-code-maps-to-debug-your-applications.md)
--   [Nalezení potenciálních problémů pomocí analyzátorů mapy kódu](../modeling/find-potential-problems-using-code-map-analyzers.md)
+- [Mapování závislostí napříč vaším řešením](../modeling/map-dependencies-across-your-solutions.md)
+- [Použití map kódu k ladění aplikací](../modeling/use-code-maps-to-debug-your-applications.md)
+- [Nalezení potenciálních problémů pomocí analyzátorů mapy kódu](../modeling/find-potential-problems-using-code-map-analyzers.md)
 
 ### <a name="dependency-diagram"></a>Diagram závislostí
 Diagramy závislostí umožňují definovat strukturu aplikace jako sada vrstvy nebo bloky s explicitní závislosti. Můžete spustit ověření ke zjišťování konfliktů mezi závislostmi v kódu a závislostmi je popsaný na diagram závislostí.
 
 **Obvyklá využití:**
 
--   Stabilizace struktury aplikace pomocí množství změn průběhu své životnosti.
--   Zjišťování konfliktů nechtěné závislosti před vrácením se změnami kódu.
+- Stabilizace struktury aplikace pomocí množství změn průběhu své životnosti.
+- Zjišťování konfliktů nechtěné závislosti před vrácením se změnami kódu.
 
 **Přejděte na téma:**
 
--   [Vytváření diagramů závislostí z kódu](../modeling/create-layer-diagrams-from-your-code.md)
--   [Diagramy závislostí: Referenční dokumentace](../modeling/layer-diagrams-reference.md)
--   [Ověřování kódu pomocí diagramů závislostí](../modeling/validate-code-with-layer-diagrams.md)
+- [Vytváření diagramů závislostí z kódu](../modeling/create-layer-diagrams-from-your-code.md)
+- [Diagramy závislostí: Referenční dokumentace](../modeling/layer-diagrams-reference.md)
+- [Ověřování kódu pomocí diagramů závislostí](../modeling/validate-code-with-layer-diagrams.md)
 
 ### <a name="domain-specific-language-dsl"></a>Jazyka specifického pro doménu (DSL)
 DSL je zápis, který návrh pro konkrétní účel. V sadě Visual Studio má obvykle grafickou podobu.
 
 **Obvyklá využití:**
 
--   Vytvořit nebo nakonfigurovat částí aplikace. Práce je vyžadována k vývoji zápisem a nástroje. Výsledkem může být lepší vhodný k vaší doméně než přizpůsobení UML.
--   Pro velké projekty nebo řádky produktů, kde se investice do vývoje DSL a jeho nástrojů vrácený jeho použití ve více než jeden projekt.
+- Vytvořit nebo nakonfigurovat částí aplikace. Práce je vyžadována k vývoji zápisem a nástroje. Výsledkem může být lepší vhodný k vaší doméně než přizpůsobení UML.
+- Pro velké projekty nebo řádky produktů, kde se investice do vývoje DSL a jeho nástrojů vrácený jeho použití ve více než jeden projekt.
 
 **Přejděte na téma:**
 
--   [Sada Modeling SDK pro Visual Studio – jazyky specifické pro doménu](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)
+- [Sada Modeling SDK pro Visual Studio – jazyky specifické pro doménu](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)
 
 ## <a name="where-can-i-get-more-information"></a>Kde lze získat další informace?
 

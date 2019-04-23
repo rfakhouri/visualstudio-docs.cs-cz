@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c6e696211cd5a0260d16c3034307a8d3fce50abd
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: c1a814e71563f8b31c54fb9caaeb062a505c186e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56646106"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087247"
 ---
 # <a name="update-excel-and-word-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>Aktualizace projektů Excel a Word, které při migraci na rozhraní .NET Framework 4 nebo .NET Framework 4.5
   Pokud máte projekt aplikace Excel nebo Word, který používá některou z následujících funkcí, je třeba upravit kód, pokud Cílová architektura, která se změní na [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] nebo novější:
@@ -43,14 +43,14 @@ ms.locfileid: "56646106"
 
 ### <a name="to-remove-the-excellocale1033attribute"></a>Chcete-li odebrat ExcelLocale1033Attribute
 
-1.  V sadě Visual Studio po otevření projektu otevřete **Průzkumníka řešení**.
+1. V sadě Visual Studio po otevření projektu otevřete **Průzkumníka řešení**.
 
-2.  V části **vlastnosti** uzel (pro C#) nebo **Můj projekt** uzel (Visual Basic), poklikejte na soubor AssemblyInfo kódu a otevře se v editoru kódu.
+2. V části **vlastnosti** uzel (pro C#) nebo **Můj projekt** uzel (Visual Basic), poklikejte na soubor AssemblyInfo kódu a otevře se v editoru kódu.
 
     > [!NOTE]
     >  V projektech Visual Basic, musíte kliknout na **zobrazit všechny soubory** tlačítko **Průzkumníka řešení** zobrazíte kód souboru AssemblyInfo.
 
-3.  Vyhledejte `Microsoft.Office.Tools.Excel.ExcelLocale1033Attribute` a odeberte ze souboru nebo ji komentář.
+3. Vyhledejte `Microsoft.Office.Tools.Excel.ExcelLocale1033Attribute` a odeberte ze souboru nebo ji komentář.
 
     ```vb
     <Assembly: ExcelLocale1033Proxy(True)>
@@ -65,11 +65,11 @@ ms.locfileid: "56646106"
 
 ### <a name="to-remove-the-reference-to-the-excellocal1033proxy-class"></a>Chcete-li odebrat odkaz na třídu ExcelLocal1033Proxy
 
-1.  Otevřete projekt v sadě Visual Studio a pak otevřete **Průzkumníka řešení**.
+1. Otevřete projekt v sadě Visual Studio a pak otevřete **Průzkumníka řešení**.
 
-2.  V **Průzkumníka řešení**, otevřete místní nabídku pro *ThisAddin.cs* (pro C#) nebo *ThisAddin.vb* (pro jazyk Visual Basic) a klikněte na tlačítko **zobrazit kód** .
+2. V **Průzkumníka řešení**, otevřete místní nabídku pro *ThisAddin.cs* (pro C#) nebo *ThisAddin.vb* (pro jazyk Visual Basic) a klikněte na tlačítko **zobrazit kód** .
 
-3.  V editoru kódu v `VSTO generated code` oblasti, odstranit nebo okomentovat následující řádek kódu.
+3. V editoru kódu v `VSTO generated code` oblasti, odstranit nebo okomentovat následující řádek kódu.
 
     ```vb
     Me.Application = CType(Microsoft.Office.Tools.Excel.ExcelLocale1033Proxy.Wrap(GetType(Excel.Application), Me.Application), Excel.Application)
@@ -81,7 +81,7 @@ ms.locfileid: "56646106"
 
     ```
 
-##  <a name="GetVstoObject"></a> Aktualizujte kód, který používá metody GetVstoObject a HasVstoObject
+## <a name="GetVstoObject"></a> Aktualizujte kód, který používá metody GetVstoObject a HasVstoObject
  V projektech cílených rozhraní .NET Framework 3.5 `GetVstoObject` nebo `HasVstoObject` metody jsou k dispozici jako metody rozšíření v jednom z následujících nativních objektů v projektu: <xref:Microsoft.Office.Interop.Word.Document>, <xref:Microsoft.Office.Interop.Excel.Workbook>, <xref:Microsoft.Office.Interop.Excel.Worksheet>, nebo <xref:Microsoft.Office.Interop.Excel.ListObject>. Při volání těchto metod, není potřeba předat parametr. Následující příklad kódu ukazuje, jak použít metodu GetVstoObject VSTO pro Word Add-in, který cílí na rozhraní .NET Framework 3.5.
 
 ```vb
@@ -122,7 +122,7 @@ Microsoft.Office.Tools.Word.Document vstoDocument =
 
   Další informace najdete v tématu [rozšíření Wordových dokumentů a Excelových sešitů v doplňcích VSTO za běhu](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).
 
-##  <a name="generatedclasses"></a> Aktualizujte kód, který používá výskyty vygenerovaných tříd v projektech na úrovni dokumentu
+## <a name="generatedclasses"></a> Aktualizujte kód, který používá výskyty vygenerovaných tříd v projektech na úrovni dokumentu
  Projekty na úrovni dokumentu, které jsou cíleny rozhraní .NET Framework 3.5, odvozovat vygenerovaných tříd v projektech následující třídy v [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]:
 
 - `ThisDocument`: <xref:Microsoft.Office.Tools.Word.Document>
@@ -162,7 +162,7 @@ private void DoSomethingToSheet(Microsoft.Office.Tools.Excel.Worksheet worksheet
 
  Výsledkem změny cílení projekt tak, aby [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] nebo novější, je nutné provést jednu z následujících změn kódu:
 
--   Upravit veškerý kód, který volá `DoSomethingToSheet` metoda k předání <xref:Microsoft.Office.Tools.Excel.WorksheetBase.Base%2A> vlastnost <xref:Microsoft.Office.Tools.Excel.WorksheetBase> ve vašem projektu. Tato vlastnost vrátí <xref:Microsoft.Office.Tools.Excel.Worksheet> objektu.
+- Upravit veškerý kód, který volá `DoSomethingToSheet` metoda k předání <xref:Microsoft.Office.Tools.Excel.WorksheetBase.Base%2A> vlastnost <xref:Microsoft.Office.Tools.Excel.WorksheetBase> ve vašem projektu. Tato vlastnost vrátí <xref:Microsoft.Office.Tools.Excel.Worksheet> objektu.
 
     ```vb
     DoSomethingToSheet(Globals.Sheet1.Base)
@@ -172,7 +172,7 @@ private void DoSomethingToSheet(Microsoft.Office.Tools.Excel.Worksheet worksheet
     DoSomethingToSheet(Globals.Sheet1.Base);
     ```
 
--   Upravit `DoSomethingToSheet` parametr metody očekávat <xref:Microsoft.Office.Tools.Excel.WorksheetBase> namísto toho objekt.
+- Upravit `DoSomethingToSheet` parametr metody očekávat <xref:Microsoft.Office.Tools.Excel.WorksheetBase> namísto toho objekt.
 
     ```vb
     Private Sub DoSomethingToSheet(ByVal worksheet As Microsoft.Office.Tools.Excel.WorksheetBase)
@@ -187,7 +187,7 @@ private void DoSomethingToSheet(Microsoft.Office.Tools.Excel.Worksheet worksheet
     }
     ```
 
-##  <a name="winforms"></a> Aktualizujte kód, který používá ovládací prvky Windows Forms v dokumentech
+## <a name="winforms"></a> Aktualizujte kód, který používá ovládací prvky Windows Forms v dokumentech
  Je nutné přidat **pomocí** (C#) nebo **importy** – příkaz (Visual Basic) pro <xref:Microsoft.Office.Tools.Excel> nebo <xref:Microsoft.Office.Tools.Word> oboru názvů k hornímu okraji jakýkoli soubor s kódem, který používá vlastnost ovládací prvky pro přidání Windows Ovládací prvky k dokumentu nebo listu Forms prostřednictvím kódu programu.
 
  V projektech cílených rozhraní .NET Framework 3.5, metody, které přidávají ovládací prvky Windows Forms (například `AddButton` metoda) jsou definovány v <xref:Microsoft.Office.Tools.Excel.ControlCollection> a <xref:Microsoft.Office.Tools.Word.ControlCollection> třídy.
@@ -196,7 +196,7 @@ private void DoSomethingToSheet(Microsoft.Office.Tools.Excel.Worksheet worksheet
 
  Další informace najdete v tématu [přidání ovládacích prvků do dokumentů Office za běhu](../vsto/adding-controls-to-office-documents-at-run-time.md).
 
-##  <a name="ccevents"></a> Aktualizujte kód, který zpracovává události ovládacích prvků obsahu aplikace Word
+## <a name="ccevents"></a> Aktualizujte kód, který zpracovává události ovládacích prvků obsahu aplikace Word
  V projektech cílených rozhraní .NET Framework 3.5, jsou zpracovávány událostí ovládacích prvků obsahu aplikace Word Obecné <xref:System.EventHandler%601> delegovat. V projektech, které se zaměřují [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] nebo později, tyto události jsou zpracovávány jiných delegátů.
 
  Následující tabulka uvádí události ovládacího prvku obsahu aplikace Word a delegáty, které jsou spojeny s nimi v projektech cílených [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] nebo novější.
@@ -210,21 +210,21 @@ private void DoSomethingToSheet(Microsoft.Office.Tools.Excel.Worksheet worksheet
 |<xref:Microsoft.Office.Tools.Word.ContentControlBase.Exiting>|<xref:Microsoft.Office.Tools.Word.ContentControlExitingEventHandler>|
 |<xref:Microsoft.Office.Tools.Word.ContentControlBase.StoreUpdating>|<xref:Microsoft.Office.Tools.Word.ContentControlStoreUpdatingEventHandler>|
 
-##  <a name="ole"></a> Aktualizujte kód, který používá objekt OLE a OLEControl třídy
+## <a name="ole"></a> Aktualizujte kód, který používá objekt OLE a OLEControl třídy
  V projektech cílených rozhraní .NET Framework 3.5, můžete přidat vlastní ovládací prvky (například uživatelské ovládací prvky Windows Forms) k dokumentu nebo sešitu pomocí `Microsoft.Office.Tools.Excel.OLEObject` a `Microsoft.Office.Tools.Word.OLEControl` třídy.
 
  V projektech, které se zaměřují [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] nebo později, tyto třídy byly nahrazeny <xref:Microsoft.Office.Tools.Excel.ControlSite> a <xref:Microsoft.Office.Tools.Word.ControlSite> rozhraní. Je třeba upravit kód, který odkazuje na `Microsoft.Office.Tools.Excel.OLEObject` a `Microsoft.Office.Tools.Word.OLEControl` místo o <xref:Microsoft.Office.Tools.Excel.ControlSite> a <xref:Microsoft.Office.Tools.Word.ControlSite>. Tyto ovládací prvky než nové názvy se chovají stejně, jako v projektech cílených rozhraní .NET Framework 3.5.
 
  Další informace najdete v tématu [přidání ovládacích prvků do dokumentů Office za běhu](../vsto/adding-controls-to-office-documents-at-run-time.md).
 
-##  <a name="itemproperty"></a> Aktualizujte kód, který používá vlastnost Controls.Item(Object)
+## <a name="itemproperty"></a> Aktualizujte kód, který používá vlastnost Controls.Item(Object)
  V projektech cílených rozhraní .NET Framework 3.5, můžete použít vlastnost Item(Object) Microsoft.Office.Tools.Word.Document.Controls nebo `Microsoft.Office.Tools.Excel.Worksheet.Controls` kolekce slouží k určení, zda zadaný ovládací prvek má dokumentu nebo sešitu.
 
  V projektech, které se zaměřují [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] nebo později, byla odebrána vlastnost Item(Object) z těchto kolekcí. Pokud chcete zjistit, zda dokumentu nebo sešitu obsahuje zadaný ovládací prvek, použijte metodu Contains(System.Object) <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> nebo <xref:Microsoft.Office.Tools.Excel.Worksheet.Controls%2A> kolekce místo.
 
  Další informace o kolekci ovládacích prvků dokumentů a listy, naleznete v tématu [přidání ovládacích prvků do dokumentů Office za běhu](../vsto/adding-controls-to-office-documents-at-run-time.md).
 
-##  <a name="collections"></a> Aktualizujte kód, který používá kolekce, které jsou odvozeny z CollectionBase
+## <a name="collections"></a> Aktualizujte kód, který používá kolekce, které jsou odvozeny z CollectionBase
  V projektech cílených rozhraní .NET Framework 3.5, napíše několik kolekcí [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] odvozovat <xref:System.Collections.CollectionBase> třídy, jako například `Microsoft.Office.Tools.SmartTagCollection`, `Microsoft.Office.Tools.Excel.ControlCollection`, a `Microsoft.Office.Tools.Word.ControlCollection`.
 
  V projektech, které se zaměřují [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] nebo novější, jsou tyto typy kolekcí nyní rozhraní, která není odvozena od <xref:System.Collections.CollectionBase>. Některé členy už nejsou k dispozici na tyto typy kolekcí, jako například <xref:System.Collections.CollectionBase.Capacity%2A>, <xref:System.Collections.CollectionBase.List%2A>, a <xref:System.Collections.CollectionBase.InnerList%2A>.

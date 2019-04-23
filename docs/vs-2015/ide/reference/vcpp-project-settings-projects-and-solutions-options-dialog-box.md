@@ -19,12 +19,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 67a35b8987cc9f4f06cc93df2462a4dee326d7e7
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 66110f6544bc19476bb4ecdfd6929fb4e26f0b52
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59664015"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082431"
 ---
 # <a name="vc-project-settings-projects-and-solutions-options-dialog-box"></a>Nastavení projektu VC++, projekty a řešení, dialogové okno Možnosti
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,9 +33,9 @@ Toto dialogové okno umožňuje definovat [!INCLUDE[vcprvc](../../includes/vcprv
   
 ### <a name="to-access-this-dialog-box"></a>Pro přístup k tomuto dialogovému oknu  
   
-1.  Na **nástroje** nabídky, klikněte na tlačítko **možnosti**.  
+1. Na **nástroje** nabídky, klikněte na tlačítko **možnosti**.  
   
-2.  Vyberte **projekty a řešení**a pak vyberte **nastavení projektu VC ++**.  
+2. Vyberte **projekty a řešení**a pak vyberte **nastavení projektu VC ++**.  
   
 ## <a name="build-customization-search-path"></a>Cesty pro hledání vlastního nastavení sestavení  
  Určuje seznam adresářů, které obsahují .rules soubory, které vám pomůžou definovat pravidla sestavení pro vaše projekty.  

@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b1a40fe9329061b457fb2038399324818ec69e43
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 5c59824594a783ad952a7b15c47ee3f781aba79d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56629076"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60081317"
 ---
 # <a name="specific-security-considerations-for-office-solutions"></a>Specifické aspekty zabezpečení pro řešení pro systém Office
   Funkce zabezpečení poskytované rozhraní Microsoft .NET Framework a Microsoft Office může pomoct chránit vaše řešení pro systém Office proti možné bezpečnostní hrozby. Toto téma vysvětluje některé z těchto hrozeb a poskytuje doporučení, která pomáhá chránit před nimi. Obsahuje také informace o vlivu řešení pro systém Office v nastavení zabezpečení systému Microsoft Office.
@@ -39,13 +39,13 @@ ms.locfileid: "56629076"
 
 ### <a name="recommendations"></a>Doporučení
 
--   Vždy ověřte vstup a data, ať už pochází od uživatele, dokument, databáze, webová služba nebo kterýkoli jiný zdroj.
+- Vždy ověřte vstup a data, ať už pochází od uživatele, dokument, databáze, webová služba nebo kterýkoli jiný zdroj.
 
--   Buďte opatrní vystavení konkrétní typy funkcí, jako je například privileged data jménem uživatele a jejich zařazení do nechráněné listu.
+- Buďte opatrní vystavení konkrétní typy funkcí, jako je například privileged data jménem uživatele a jejich zařazení do nechráněné listu.
 
--   V závislosti na typu aplikace může mít smysl ověřte, zda je spuštěna v původním dokumentu před spuštěním jakéhokoli kódu. Ověřte například, že je spuštěná z dokumentu uloženou v známých a zabezpečené umístění.
+- V závislosti na typu aplikace může mít smysl ověřte, zda je spuštěna v původním dokumentu před spuštěním jakéhokoli kódu. Ověřte například, že je spuštěná z dokumentu uloženou v známých a zabezpečené umístění.
 
--   Může být vhodné zobrazit upozornění, když dokument se otevře, pokud aplikace provádí všechny privilegované akce. Například může vytvořit úvodní obrazovky nebo spuštění dialogové okno oznamující, že aplikace bude přístup k osobním informacím a mít uživatele, vyberte pokračovat nebo zrušit. Pokud koncový uživatel získá takové upozornění z zdánlivě nevinnosti dokumentu, budou moct ukončit aplikaci předtím, než dojde k ohrožení cokoli.
+- Může být vhodné zobrazit upozornění, když dokument se otevře, pokud aplikace provádí všechny privilegované akce. Například může vytvořit úvodní obrazovky nebo spuštění dialogové okno oznamující, že aplikace bude přístup k osobním informacím a mít uživatele, vyberte pokračovat nebo zrušit. Pokud koncový uživatel získá takové upozornění z zdánlivě nevinnosti dokumentu, budou moct ukončit aplikaci předtím, než dojde k ohrožení cokoli.
 
 ## <a name="code-is-blocked-by-the-outlook-object-model-guard"></a>Kód je blokována ochrana modelů objektů aplikace Outlook
  Microsoft Office můžete zabránit pomocí určité vlastnosti, metody a objekty v objektovém modelu kódu. Omezením přístupu k těmto objektům Outlook pomáhá zabránit jsou červi, kteří e-mailu a viry pomocí objektového modelu ke škodlivým účelům. Tuto funkci zabezpečení se označuje jako ochrana modelů objektů aplikace Outlook. Pokud doplňku VSTO pokusí použít s omezeným přístupem vlastnosti nebo metody, když je povolená ochrana modelů objektů, zobrazí se upozornění zabezpečení, který umožňuje uživateli zastavení operace nebo umožňuje uživateli udělit přístup k vlastnosti nebo metody po omezenou dobu t Editor IME. Pokud uživatel zastaví prováděnou operaci, vyvolá výjimku Outlook doplňků VSTO vytvořené pomocí řešení pro systém Office v sadě Visual Studio <xref:System.Runtime.InteropServices.COMException>.
@@ -103,17 +103,17 @@ ms.locfileid: "56629076"
 
 #### <a name="to-disable-vsto-add-ins-in-microsoft-office-2010-and-microsoft-includeoffice15shortvstoincludesoffice-15-short-mdmd-applications"></a>Chcete-li zakázat doplňků VSTO v Microsoft Office 2010 a Microsoft [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] aplikací
 
-1.  Zvolte **souboru** kartu.
+1. Zvolte **souboru** kartu.
 
-2.  Zvolte *ApplicationName* **možnosti** tlačítko.
+2. Zvolte *ApplicationName* **možnosti** tlačítko.
 
-3.  V podokně Kategorie vyberte **centrum**.
+3. V podokně Kategorie vyberte **centrum**.
 
-4.  V podokně podrobností vyberte **nastavení Centra zabezpečení**.
+4. V podokně podrobností vyberte **nastavení Centra zabezpečení**.
 
-5.  V podokně Kategorie vyberte **Add-ins**.
+5. V podokně Kategorie vyberte **Add-ins**.
 
-6.  V podokně podrobností vyberte **doplňky vyžadují aplikace podepsané důvěryhodným vydavatelem** nebo **zakázat všechny doplňky aplikací**.
+6. V podokně podrobností vyberte **doplňky vyžadují aplikace podepsané důvěryhodným vydavatelem** nebo **zakázat všechny doplňky aplikací**.
 
 ## <a name="see-also"></a>Viz také:
 - [Zabezpečení řešení pro systém Office](../vsto/securing-office-solutions.md)
