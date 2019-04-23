@@ -1,5 +1,5 @@
 ---
-title: 'Průvodce: Ruční nasazení aplikace ClickOnce | Dokumentace Microsoftu'
+title: 'Návod: Ruční nasazení aplikace ClickOnce | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -21,14 +21,14 @@ caps.latest.revision: 51
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b9086edb3dd70946bb988bda7b933b010c045da3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: df11af5dee9ce510af01dab037a47a1bdd2f2880
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54764162"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082201"
 ---
-# <a name="walkthrough-manually-deploying-a-clickonce-application"></a>Průvodce: Ruční nasazení aplikace ClickOnce
+# <a name="walkthrough-manually-deploying-a-clickonce-application"></a>Návod: Ruční nasazení aplikace ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Pokud Visual Studio nelze použít k nasazení vaší [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikace, nebo potřebujete používat funkce pokročilého nasazení, jako je například nasazení důvěryhodné aplikace by měla použít nástroj příkazového řádku Mage.exe k vytvoření vašeho [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifesty. Tento návod popisuje, jak vytvořit [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] nasazení pomocí rozhraní příkazového řádku verze (Mage.exe) nebo grafický verze (MageUI.exe) Manifest Generation and Editing Tool.  
@@ -36,53 +36,53 @@ Pokud Visual Studio nelze použít k nasazení vaší [!INCLUDE[ndptecclick](../
 ## <a name="prerequisites"></a>Požadavky  
  Tento názorný postup obsahuje některé požadavky a možnosti, které je nutné zvolit před vytvořením nasazení.  
   
--   Nainstalujte Mage.exe a MageUI.exe.  
+- Nainstalujte Mage.exe a MageUI.exe.  
   
      Mage.exe a MageUI.exe jsou součástí [!INCLUDE[winsdklong](../includes/winsdklong-md.md)]. Musí mít buď [!INCLUDE[winsdkshort](../includes/winsdkshort-md.md)] nainstalované nebo verzi [!INCLUDE[winsdkshort](../includes/winsdkshort-md.md)] součástí sady Visual Studio. Další informace najdete v tématu [sady Windows SDK](http://go.microsoft.com/fwlink/?LinkId=158044) na webové stránce MSDN.  
   
--   Poskytují aplikace k nasazení.  
+- Poskytují aplikace k nasazení.  
   
      Tento názorný průvodce předpokládá, že budete mít aplikaci Windows, který jste připraveni k nasazení. Tato aplikace bude uvedené jako AppToDeploy.  
   
--   Zjistěte, jak se bude distribuovat nasazení.  
+- Zjistěte, jak se bude distribuovat nasazení.  
   
      Možnosti distribuce patří: Web, sdílenou složku nebo disk CD. Další informace najdete v tématu [ClickOnce – zabezpečení a nasazení](../deployment/clickonce-security-and-deployment.md).  
   
--   Určete, jestli aplikace vyžaduje zvýšenou úroveň vztahu důvěryhodnosti.  
+- Určete, jestli aplikace vyžaduje zvýšenou úroveň vztahu důvěryhodnosti.  
   
      Pokud vaše aplikace vyžaduje úplný vztah důvěryhodnosti – například úplný přístup k systému uživatele, můžete použít `-TrustLevel` – možnost nástroje Mage.exe nastavit. Pokud chcete definovat vlastní sadu pro vaši aplikaci oprávnění, kopírovat části oprávnění Internetu nebo intranetu z jiného manifestu, ho upravit tak, aby odpovídala vašim potřebám a přidejte ho do manifestu aplikace pomocí textového editoru nebo MageUI.exe. Další informace najdete v tématu [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md).  
   
--   Získání certifikátu pomocí technologie Authenticode.  
+- Získání certifikátu pomocí technologie Authenticode.  
   
      Předplatné nasazení s certifikátem Authenticode. Testovací certifikát můžete vygenerovat pomocí nástrojů sady Visual Studio, MageUI.exe, nebo MakeCert.exe a Pvk2Pfx.exe, nebo můžete získat certifikát z certifikační autority (CA). Pokud budete chtít použít nasazení důvěryhodné aplikace, musíte také provést jednorázová instalace certifikátu do všech klientských počítačů. Další informace najdete v tématu [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md).  
   
     > [!NOTE]
     >  Můžete se přihlásit taky nasazení certifikátem CNG, který můžete získat od certifikační autority.  
   
--   Ujistěte se, že aplikace nemá manifest s informacemi o nástroji Řízení uživatelských účtů.  
+- Ujistěte se, že aplikace nemá manifest s informacemi o nástroji Řízení uživatelských účtů.  
   
      Je potřeba určit, jestli vaše aplikace obsahuje manifest s informacemi řízení uživatelských účtů (UAC), například `<dependentAssembly>` elementu. Prozkoumat manifest aplikace, můžete použít Windows Sysinternals [Sigcheck](http://go.microsoft.com/fwlink/?LinkId=158035) nástroj.  
   
      Pokud vaše aplikace obsahuje manifest s podrobnostmi o nástroji Řízení uživatelských účtů, je nutné znovu vytvořit bez informace o nástroji Řízení uživatelských účtů. Pro projekt C# v sadě Visual Studio otevřete vlastnosti projektu a vyberte kartu aplikace. V **Manifest** rozevíracího seznamu vyberte **vytvořit aplikaci bez manifestu**. Pro projekt jazyka Visual Basic v sadě Visual Studio, otevřete vlastnosti projektu, vyberte kartu aplikace a klikněte na tlačítko **nastavení nástroje Řízení uživatelských účtů zobrazení**. V otevřeném souboru manifestu, odeberte všechny prvky v rámci jednoho `<asmv1:assembly>` elementu.  
   
--   Zjistěte, jestli aplikace vyžaduje požadavky na klientském počítači.  
+- Zjistěte, jestli aplikace vyžaduje požadavky na klientském počítači.  
   
      [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikace nasazené v sadě Visual Studio můžete zahrnout instalace nezbytné součásti zaváděcí nástroj (setup.exe) v rámci vašeho nasazení. Tento návod vytvoří dva vyžadované pro manifesty [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] nasazení. Zaváděcí můžete vytvořit pomocí [GenerateBootstrapper – úloha](../msbuild/generatebootstrapper-task.md).  
   
 ### <a name="to-deploy-an-application-with-the-mageexe-command-line-tool"></a>K nasazení aplikace pomocí nástroje příkazového řádku Mage.exe  
   
-1.  Vytvoření adresáře, ve kterém budete ukládat vaše [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] soubory nasazení.  
+1. Vytvoření adresáře, ve kterém budete ukládat vaše [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] soubory nasazení.  
   
-2.  V adresáři nasazení, který jste právě vytvořili vytvořte podadresář s verzí. Pokud je to poprvé, že nasazujete aplikace, název podadresáře verze **1.0.0.0**.  
+2. V adresáři nasazení, který jste právě vytvořili vytvořte podadresář s verzí. Pokud je to poprvé, že nasazujete aplikace, název podadresáře verze **1.0.0.0**.  
   
     > [!NOTE]
     >  Verze vašeho nasazení může být liší od verze vaší aplikace.  
   
-3.  Zkopírujte všechny soubory aplikace do podadresáře verze, včetně spustitelných souborů, sestavení, prostředky a datové soubory. V případě potřeby můžete vytvořit další podadresářů, které obsahují další soubory.  
+3. Zkopírujte všechny soubory aplikace do podadresáře verze, včetně spustitelných souborů, sestavení, prostředky a datové soubory. V případě potřeby můžete vytvořit další podadresářů, které obsahují další soubory.  
   
-4.  Otevřít [!INCLUDE[winsdkshort](../includes/winsdkshort-md.md)] nebo Visual Studio příkazového řádku a změňte verzi podadresář.  
+4. Otevřít [!INCLUDE[winsdkshort](../includes/winsdkshort-md.md)] nebo Visual Studio příkazového řádku a změňte verzi podadresář.  
   
-5.  Vytvořte manifest aplikace pomocí volání Mage.exe. Následující příkaz vytvoří manifest aplikace pro kód zkompilovaný ke spuštění na procesor Intel x86.  
+5. Vytvořte manifest aplikace pomocí volání Mage.exe. Následující příkaz vytvoří manifest aplikace pro kód zkompilovaný ke spuštění na procesor Intel x86.  
   
     ```  
     mage -New Application -Processor x86 -ToFile AppToDeploy.exe.manifest -name "My App" -Version 1.0.0.0 -FromDirectory .   
@@ -91,7 +91,7 @@ Pokud Visual Studio nelze použít k nasazení vaší [!INCLUDE[ndptecclick](../
     > [!NOTE]
     >  Nezapomeňte použít tečku (.) po `-FromDirectory` možnost, která označuje aktuální adresář. Pokud neuvedete, tečky, musíte zadat cestu k souborům aplikace.  
   
-6.  Podepsat manifest aplikace certifikátem Authenticode. Nahraďte *mycert.pfx* s cestou k souboru certifikátu. Nahraďte *hesel* heslem pro váš soubor certifikátu.  
+6. Podepsat manifest aplikace certifikátem Authenticode. Nahraďte *mycert.pfx* s cestou k souboru certifikátu. Nahraďte *hesel* heslem pro váš soubor certifikátu.  
   
     ```  
     mage -Sign AppToDeploy.exe.manifest -CertFile mycert.pfx -Password passwd  
@@ -103,9 +103,9 @@ Pokud Visual Studio nelze použít k nasazení vaší [!INCLUDE[ndptecclick](../
     mage -Sign AppToDeploy.exe.manifest -CertFile cngCert.pfx  
     ```  
   
-7.  Přejděte do kořenového adresáře nasazení.  
+7. Přejděte do kořenového adresáře nasazení.  
   
-8.  Generovat manifest nasazení pomocí volání Mage.exe. Ve výchozím nastavení, Mage.exe označí vaši [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] nasazení jako nainstalovaná aplikace, takže ji můžete spustit online a offline. Aby byla aplikace k dispozici pouze v případě, že uživatel je online, použijte `-Install` možnost s hodnotou `false`. Pokud použijete výchozí nastavení a budou uživatelé instalovat aplikace z webové stránky nebo sdílené složky, ujistěte se, že hodnota `-ProviderUrl` možnost odkazuje na umístění aplikace manifestu na webovém serveru nebo sdílené složky.  
+8. Generovat manifest nasazení pomocí volání Mage.exe. Ve výchozím nastavení, Mage.exe označí vaši [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] nasazení jako nainstalovaná aplikace, takže ji můžete spustit online a offline. Aby byla aplikace k dispozici pouze v případě, že uživatel je online, použijte `-Install` možnost s hodnotou `false`. Pokud použijete výchozí nastavení a budou uživatelé instalovat aplikace z webové stránky nebo sdílené složky, ujistěte se, že hodnota `-ProviderUrl` možnost odkazuje na umístění aplikace manifestu na webovém serveru nebo sdílené složky.  
   
     ```  
     mage -New Deployment -Processor x86 -Install true -Publisher "My Co." -ProviderUrl "\\myServer\myShare\AppToDeploy.application" -AppManifest 1.0.0.0\AppToDeploy.exe.manifest -ToFile AppToDeploy.application  
@@ -129,28 +129,28 @@ Pokud Visual Studio nelze použít k nasazení vaší [!INCLUDE[ndptecclick](../
   
 ### <a name="to-deploy-an-application-with-the-mageuiexe-graphical-tool"></a>K nasazení aplikace pomocí grafického nástroje MageUI.exe  
   
-1.  Vytvoření adresáře, ve kterém budete ukládat vaše [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] soubory nasazení.  
+1. Vytvoření adresáře, ve kterém budete ukládat vaše [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] soubory nasazení.  
   
-2.  V adresáři nasazení, který jste právě vytvořili vytvořte podadresář s verzí. Pokud je to poprvé, že nasazujete aplikace, název podadresáře verze **1.0.0.0**.  
+2. V adresáři nasazení, který jste právě vytvořili vytvořte podadresář s verzí. Pokud je to poprvé, že nasazujete aplikace, název podadresáře verze **1.0.0.0**.  
   
     > [!NOTE]
     >  Verze vašeho nasazení je pravděpodobně odlišná od verze aplikace.  
   
-3.  Zkopírujte všechny soubory aplikace do podadresáře verze, včetně spustitelných souborů, sestavení, prostředky a datové soubory. V případě potřeby můžete vytvořit další podadresářů, které obsahují další soubory.  
+3. Zkopírujte všechny soubory aplikace do podadresáře verze, včetně spustitelných souborů, sestavení, prostředky a datové soubory. V případě potřeby můžete vytvořit další podadresářů, které obsahují další soubory.  
   
-4.  Spuštění grafického nástroje MageUI.exe.  
+4. Spuštění grafického nástroje MageUI.exe.  
   
     ```  
     MageUI.exe  
     ```  
   
-5.  Vytvořit nový manifest aplikace tak, že vyberete **souboru**, **nový**, **Manifest aplikace** z nabídky.  
+5. Vytvořit nový manifest aplikace tak, že vyberete **souboru**, **nový**, **Manifest aplikace** z nabídky.  
   
-6.  Ve výchozím **název** kartu, zadejte název a verzi číslo tohoto nasazení. Také určit, **procesoru** , která je sestavená vaše aplikace, jako je například x86.  
+6. Ve výchozím **název** kartu, zadejte název a verzi číslo tohoto nasazení. Také určit, **procesoru** , která je sestavená vaše aplikace, jako je například x86.  
   
-7.  Vyberte **soubory** kartě a klikněte na tlačítko se třemi tečkami (**...** ) vedle **adresáře aplikace** textového pole. Zobrazí se dialogové okno Vyhledat složku.  
+7. Vyberte **soubory** kartě a klikněte na tlačítko se třemi tečkami (**...** ) vedle **adresáře aplikace** textového pole. Zobrazí se dialogové okno Vyhledat složku.  
   
-8.  Vyberte verzi podadresář obsahující soubory aplikace a pak klikněte na tlačítko **OK**.  
+8. Vyberte verzi podadresář obsahující soubory aplikace a pak klikněte na tlačítko **OK**.  
   
 9. Pokud nasazujete z Internetové informační služby (IIS), vyberte **při sestavování přidat příponu .deploy odstraní do souboru, která není nutné** zaškrtávací políčko.  
   

@@ -15,12 +15,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 425a7363e03dcc8a967853bbe574f29678df11a4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7de14898c5fb2bb6f8e95a2af5fd6b39a54cdb1d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54772460"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082149"
 ---
 # <a name="ca2107-review-deny-and-permit-only-usage"></a>CA2107: Zkontrolujte použití čistého odepření a povolení
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,15 +42,15 @@ ms.locfileid: "54772460"
 
  Kód, který závisí na tyto akce by pečlivě vyhodnotit pro ohrožení zabezpečení z důvodu jejich užitečnost omezené a drobným chování. Zvažte použití těchto zdrojů:
 
--   [Požadavky na propojení](http://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) nejsou ovlivněny Deny nebo PermitOnly.
+- [Požadavky na propojení](http://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) nejsou ovlivněny Deny nebo PermitOnly.
 
--   Dojde-li Deny nebo PermitOnly v rámci zásobníku jako požadavek, který způsobí, že procházení zásobníku, akce zabezpečení nemají žádný vliv.
+- Dojde-li Deny nebo PermitOnly v rámci zásobníku jako požadavek, který způsobí, že procházení zásobníku, akce zabezpečení nemají žádný vliv.
 
--   Hodnoty, které se používají k vytvoření oprávnění na základě cest lze obvykle zadat několika způsoby. Odepření přístupu pro jednu formu cesty není odepření přístupu pro všechny formuláře. Například, pokud sdílenou složku \\\Server\Share je namapována na síťovou jednotku X: k odepření přístupu k souboru ve sdílené složce, musíte zakázat \\\Server\Share\File, X:\File a každá cesta, která přistupuje k souboru.
+- Hodnoty, které se používají k vytvoření oprávnění na základě cest lze obvykle zadat několika způsoby. Odepření přístupu pro jednu formu cesty není odepření přístupu pro všechny formuláře. Například, pokud sdílenou složku \\\Server\Share je namapována na síťovou jednotku X: k odepření přístupu k souboru ve sdílené složce, musíte zakázat \\\Server\Share\File, X:\File a každá cesta, která přistupuje k souboru.
 
--   <xref:System.Security.CodeAccessPermission.Assert%2A?displayProperty=fullName> Můžete ukončit procházení zásobníku, předtím, než je dosaženo Deny nebo PermitOnly.
+- <xref:System.Security.CodeAccessPermission.Assert%2A?displayProperty=fullName> Můžete ukončit procházení zásobníku, předtím, než je dosaženo Deny nebo PermitOnly.
 
--   Pokud odepřít nemá žádný vliv, konkrétně, pokud volající nemá oprávnění, které zablokovaly odepřít, volající přístup chráněných prostředků přímo, bez použití odepřít. Podobně pokud volající nemá oprávnění k odepření, procházení zásobníku selže bez odepřít.
+- Pokud odepřít nemá žádný vliv, konkrétně, pokud volající nemá oprávnění, které zablokovaly odepřít, volající přístup chráněných prostředků přímo, bez použití odepřít. Podobně pokud volající nemá oprávnění k odepření, procházení zásobníku selže bez odepřít.
 
 ## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
  Jakékoli použití tyto bezpečnostní akce způsobí, že je porušení pravidel. Chcete-li opravit porušení, nepoužívejte tyto bezpečnostní akce.

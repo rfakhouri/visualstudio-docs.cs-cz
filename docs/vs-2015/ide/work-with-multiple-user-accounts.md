@@ -9,12 +9,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5d269cdb4fe84820174ded9c477fc3c9f917b0b5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d4f53d723ca9249386027264038df6c5895b7d03
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54802639"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60081226"
 ---
 # <a name="work-with-multiple-user-accounts"></a>Práce s několika uživatelskými účty
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ Pokud máte více účtů Microsoft a/nebo pracovní nebo školní účty, můž
   
 #### <a name="sign-in-to-visual-studio"></a>Přihlášení k sadě Visual Studio  
   
-1.  Visual Studio 2015 se přihlaste pomocí účtu Microsoft nebo účtu organizace. Měli byste vidět vaše uživatelské jméno v pravém horním rohu okna, podobně jako tato:  
+1. Visual Studio 2015 se přihlaste pomocí účtu Microsoft nebo účtu organizace. Měli byste vidět vaše uživatelské jméno v pravém horním rohu okna, podobně jako tato:  
   
      ![Currentlly přihlášeného uživatele](../ide/media/vs2015-username.png "VS2015_UserName")  
   
@@ -44,14 +44,14 @@ Pokud máte více účtů Microsoft a/nebo pracovní nebo školní účty, můž
   
 ### <a name="access-your-azure-account-via-add-connected-service-dialog"></a>Přístup k vašemu účtu Azure přes dialogové okno Přidat připojenou službu  
   
-1.  Vytvoření projektu univerzální aplikace v jazyce C#.  
+1. Vytvoření projektu univerzální aplikace v jazyce C#.  
   
-2.  Klikněte pravým tlačítkem na uzel projektu v Průzkumníku řešení a zvolte **Přidat > připojenou službu**. ID přidat připojenou službu průvodce se zobrazí a zobrazí seznam služeb v účtu Azure, která souvisí s váš účet Visual Studio. Všimněte si, že není muset přihlašovat samostatně do Azure. Však nutné se přihlásit na jiné účty při prvním pokusu o přístup k jejich prostředkům z daného počítače.  
+2. Klikněte pravým tlačítkem na uzel projektu v Průzkumníku řešení a zvolte **Přidat > připojenou službu**. ID přidat připojenou službu průvodce se zobrazí a zobrazí seznam služeb v účtu Azure, která souvisí s váš účet Visual Studio. Všimněte si, že není muset přihlašovat samostatně do Azure. Však nutné se přihlásit na jiné účty při prvním pokusu o přístup k jejich prostředkům z daného počítače.  
   
     > [!WARNING]
     >  Pokud je to první vytváříte Store app v sadě Visual Studio 2015 v určitém počítači, zobrazí se výzva k aktivovat zařízení pro vývoj režimu tak, že přejdete do **nastavení &#124; . Aktualizace a zabezpečení &#124; pro vývojáře** ve vašem počítači. Další informace najdete v tématu [povolit zařízení pro vývoj](https://msdn.microsoft.com/library/windows/apps/dn706236.aspx).  
   
-###  <a name="access_azure"></a> Přístup k Azure Active Directory ve webovém projektu  
+### <a name="access_azure"></a> Přístup k Azure Active Directory ve webovém projektu  
  Azure AD umožňuje podporu pro koncového uživatele jednotné přihlašování ve webových aplikacích ASP.NET MVC nebo ověřování AD v rámci služeb webových rozhraní API. Ověření domény se liší od účtu ověřování jednotlivých uživatelů Uživatelé, kteří mají přístup k vaší doméně služby Active Directory můžete pomocí svých existujících účtů v Azure AD pro připojení k webovým aplikacím. Aplikace Office 365 můžete také použít ověřování domény. Tento údaj zobrazíte v akci, vytvořte webovou aplikaci (**soubor > Nový Projekt > C# > Cloud > Webová aplikace ASP.NET**). V dialogovém okně Nový projekt ASP.NET zvolte **změna ověřování**. Průvodce ověřením se zobrazí a můžete zvolit jaký typ ověřování, který má použít v aplikaci.  
   
  ![Změna ověřování dialogové okno pro technologii ASP.NET](../ide/media/vs2015-change-authentication.png "VS2015_change_authentication")  

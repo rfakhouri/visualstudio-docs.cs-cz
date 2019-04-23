@@ -16,12 +16,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f7aade658b3fbc70c244e99a6537746bdd4f3c88
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b8c2bc30814af9cdc6181d08b313df20146f855e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54786356"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080946"
 ---
 # <a name="how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications"></a>Postupy: Přidání důvěryhodného vydavatele na klientský počítač pro aplikace ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,21 +39,21 @@ Pomocí nasazení důvěryhodné aplikace, můžete nakonfigurovat klientské po
   
 ### <a name="to-add-a-certificate-to-the-trusted-publishers-store-under-the-trusted-root"></a>Přidání do úložiště důvěryhodných vydavatelů v rámci důvěryhodného kořenového certifikátu  
   
-1.  Získáte digitální certifikát od certifikační Autority.  
+1. Získáte digitální certifikát od certifikační Autority.  
   
-2.  Exportujte certifikát do formátu Base64 X.509 (.cer). Další informace o formátech certifikátu, naleznete v tématu [exportování certifikátu](http://go.microsoft.com/fwlink/?LinkId=164793).  
+2. Exportujte certifikát do formátu Base64 X.509 (.cer). Další informace o formátech certifikátu, naleznete v tématu [exportování certifikátu](http://go.microsoft.com/fwlink/?LinkId=164793).  
   
-3.  Z příkazového řádku na klientské počítače spusťte následující příkaz:  
+3. Z příkazového řádku na klientské počítače spusťte následující příkaz:  
   
      **certmgr.exe -add certificate.cer -c -s -r localMachine TrustedPublisher**  
   
 ### <a name="to-add-a-certificate-to-the-trusted-publishers-store-under-a-different-root"></a>Přidání certifikátu do úložiště důvěryhodných vydavatelů v rámci různých kořenové  
   
-1.  Získáte digitální certifikát od certifikační Autority.  
+1. Získáte digitální certifikát od certifikační Autority.  
   
-2.  Exportujte certifikát do formátu Base64 X.509 (.cer). Další informace o formátech certifikátu, naleznete v tématu [exportování certifikátu](http://go.microsoft.com/fwlink/?LinkId=164793).  
+2. Exportujte certifikát do formátu Base64 X.509 (.cer). Další informace o formátech certifikátu, naleznete v tématu [exportování certifikátu](http://go.microsoft.com/fwlink/?LinkId=164793).  
   
-3.  Z příkazového řádku na klientské počítače spusťte následující příkaz:  
+3. Z příkazového řádku na klientské počítače spusťte následující příkaz:  
   
      **certmgr.exe -add good.cer -c -s -r localMachine Root**  
   

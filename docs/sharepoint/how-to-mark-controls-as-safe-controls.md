@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 850670e9d7994b754839c4fb0b1a8ccd07be5b24
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 0d2dfe0da64abb9540724c05d13b84715a684af0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56646418"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082032"
 ---
 # <a name="how-to-mark-controls-as-safe-controls"></a>Postupy: Označení ovládacích prvků jako bezpečných
   Pro zabezpečení SharePoint rozlišuje mezi webové ovládací prvky, které jsou chráněné proti injektáži skriptu a webové ovládací prvky, které nejsou. Ovládací prvky, chráněné nebo *bezpečné ovládací prvky*, je přístupný nedůvěryhodným uživatelům. Můžete označit ovládacích prvků jako bezpečných ve vlastnosti položky bezpečných ovládacích prvků položky Sharepointového projektu nebo v **návrháři balíčku** při přidávání sestavení do balíčku. Další informace naleznete v tématu
@@ -33,47 +33,47 @@ ms.locfileid: "56646418"
 
 #### <a name="to-mark-controls-as-safe-or-unsafe-in-the-safe-control-entries-property"></a>K označení ovládacích prvků jako bezpečných nebo nebezpečné ve vlastnosti položky bezpečného řízení
 
-1.  Vytvoření řešení služby SharePoint pomocí projektu vizuální webové části.
+1. Vytvoření řešení služby SharePoint pomocí projektu vizuální webové části.
 
-2.  Přidejte dva ovládací prvky webové části: textové pole a tlačítko. Ponechte názvy výchozích hodnotách TextBox1 a Button1, v uvedeném pořadí.
+2. Přidejte dva ovládací prvky webové části: textové pole a tlačítko. Ponechte názvy výchozích hodnotách TextBox1 a Button1, v uvedeném pořadí.
 
-3.  Přidat dvě položky do webové části **položky bezpečných ovládacích prvků** vlastnost. Chcete-li to provést, zvolte tři tečky (![elipsa ASP.NET – Návrhář mobilních řešení](../sharepoint/media/mwellipsis.gif "elipsa ASP.NET – Návrhář mobilních řešení")) vedle **položky bezpečných ovládacích prvků** vlastnost  **Vlastnosti** okna.
+3. Přidat dvě položky do webové části **položky bezpečných ovládacích prvků** vlastnost. Chcete-li to provést, zvolte tři tečky (![elipsa ASP.NET – Návrhář mobilních řešení](../sharepoint/media/mwellipsis.gif "elipsa ASP.NET – Návrhář mobilních řešení")) vedle **položky bezpečných ovládacích prvků** vlastnost  **Vlastnosti** okna.
 
      **Položky bezpečných ovládacích prvků** zobrazí se dialogové okno.
 
-4.  V **položky bezpečných ovládacích prvků** dialogového okna zvolte **přidat** dvakrát a přidejte dvě položky bezpečného řízení k **členy** podokně: jeden pro tlačítka a jeden pro textové pole.
+4. V **položky bezpečných ovládacích prvků** dialogového okna zvolte **přidat** dvakrát a přidejte dvě položky bezpečného řízení k **členy** podokně: jeden pro tlačítka a jeden pro textové pole.
 
-5.  Zvolte první položky bezpečného řízení a potom změňte hodnotu z jeho **bezpečné** vlastnost **False**, jeho **název typu** vlastnost **Button1**a jeho **bezpečné skriptu proti** vlastnost **False**.
+5. Zvolte první položky bezpečného řízení a potom změňte hodnotu z jeho **bezpečné** vlastnost **False**, jeho **název typu** vlastnost **Button1**a jeho **bezpečné skriptu proti** vlastnost **False**.
 
      Tento krok identifikuje ovládací prvek tlačítko jako ovládací prvek unsafe.
 
-6.  V seznamu vyberte druhou položku bezpečný ovládací prvek. Ponechte hodnotu jeho **bezpečné** vlastnost jako **True** a nastavte jeho **název typu** vlastnost **TextBox1** a jeho **bezpečné Proti skriptům** vlastnost **True**.
+6. V seznamu vyberte druhou položku bezpečný ovládací prvek. Ponechte hodnotu jeho **bezpečné** vlastnost jako **True** a nastavte jeho **název typu** vlastnost **TextBox1** a jeho **bezpečné Proti skriptům** vlastnost **True**.
 
      Ovládací prvek textové pole je nyní označena jako ovládací prvek, který je zabezpečený proti injektáži skriptu.
 
-7.  Zvolte **OK** tlačítka zavřete dialogové okno.
+7. Zvolte **OK** tlačítka zavřete dialogové okno.
 
 ## <a name="marking-safe-controls-in-the-package-designer"></a>Označení bezpečné ovládací prvky v Návrháři balíčku
 
 #### <a name="to-mark-controls-as-safe-or-unsafe-in-the-package-designer"></a>Označit ovládacích prvků jako bezpečných nebo nebezpečných v Návrháři balíčku
 
-1.  Vytvoření řešení služby SharePoint pomocí projektu vizuální webové části.
+1. Vytvoření řešení služby SharePoint pomocí projektu vizuální webové části.
 
-2.  Přidejte dva ovládací prvky webové části: textové pole a tlačítko. Ponechte názvy výchozích hodnotách TextBox1 a Button1, v uvedeném pořadí.
+2. Přidejte dva ovládací prvky webové části: textové pole a tlačítko. Ponechte názvy výchozích hodnotách TextBox1 a Button1, v uvedeném pořadí.
 
      Poznamenejte si obor názvů ovládacího prvku vzhledem k tomu, že se později používá.
 
-3.  V panelu nabídky zvolte **sestavení** > **sestavit řešení** k sestavení projektu.
+3. V panelu nabídky zvolte **sestavení** > **sestavit řešení** k sestavení projektu.
 
-4.  Vytvořte jiné řešení služby SharePoint.
+4. Vytvořte jiné řešení služby SharePoint.
 
-5.  V **Průzkumníka řešení**, otevřete místní nabídku *Package.Package* souboru a klikněte na tlačítko **otevřete** otevřete **návrháři balíčku**.
+5. V **Průzkumníka řešení**, otevřete místní nabídku *Package.Package* souboru a klikněte na tlačítko **otevřete** otevřete **návrháři balíčku**.
 
-6.  V **návrháři balíčku**, zvolte **Upřesnit** kartu.
+6. V **návrháři balíčku**, zvolte **Upřesnit** kartu.
 
-7.  V části **dodatečná sestavení**, zvolte **přidat** tlačítko a pak zvolte **přidat existující sestavení** ze seznamu.
+7. V části **dodatečná sestavení**, zvolte **přidat** tlačítko a pak zvolte **přidat existující sestavení** ze seznamu.
 
-8.  V **přidat existující sestavení** dialogového okna zvolte tři tečky (![elipsa ASP.NET – Návrhář mobilních řešení](../sharepoint/media/mwellipsis.gif "elipsa ASP.NET – Návrhář mobilních řešení")) vedle  **Zdrojová cesta**.
+8. V **přidat existující sestavení** dialogového okna zvolte tři tečky (![elipsa ASP.NET – Návrhář mobilních řešení](../sharepoint/media/mwellipsis.gif "elipsa ASP.NET – Návrhář mobilních řešení")) vedle  **Zdrojová cesta**.
 
 9. Vybrat sestavení z řešení SharePoint, kterou jste vytvořili v kroku 1 a klikněte na tlačítko **otevřít** tlačítko.
 

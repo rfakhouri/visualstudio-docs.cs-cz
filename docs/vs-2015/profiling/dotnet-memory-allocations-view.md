@@ -16,12 +16,12 @@ caps.latest.revision: 32
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 563826c63d851e412b7c74a99f5b8a9ad1c1556e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a3c24d8aa984ddc947d3c532020974a196192940
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54798804"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082383"
 ---
 # <a name="net-memory-allocations-view"></a>Přidělení paměti .NET – zobrazení
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ Zobrazení přidělení jsou uvedeny typy, které byly vytvořeny během spušt�
 ## <a name="highlighting-the-execution-hot-path"></a>Zvýraznění provádění kritickou cestu  
  Můžete najít cestu provádění volání stromu, který vytvořili většinu objektů z nadřazeného typu.  
   
--   Zobrazení Nejaktivnější cesty, klikněte pravým tlačítkem na typ nebo funkci a pak klikněte na **rozbalit kritickou cestu**.  
+- Zobrazení Nejaktivnější cesty, klikněte pravým tlačítkem na typ nebo funkci a pak klikněte na **rozbalit kritickou cestu**.  
   
 |Sloupec|Popis|  
 |------------|-----------------|  

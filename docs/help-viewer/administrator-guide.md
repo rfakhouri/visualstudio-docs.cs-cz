@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 21497404d6cdad3f55bffd97fd0329d76418b313
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 8fe194e11edf0a3f825303137b9bdcc755135eee
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841572"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078652"
 ---
 # <a name="help-viewer-administrator-guide"></a>Příručka pro správce Prohlížeč nápovědy
 
@@ -45,13 +45,13 @@ Další informace o *HlpCtntMgr.exe* řádku syntaxe příkazu naleznete v téma
 
 Požadavky:
 
--   Klientské počítače musí mít přístup k Internetu.
+- Klientské počítače musí mít přístup k Internetu.
 
--   Uživatelé musí mít práva správce k aktualizaci, přidání nebo odebrání místního obsahu nápovědy po jeho instalaci.
+- Uživatelé musí mít práva správce k aktualizaci, přidání nebo odebrání místního obsahu nápovědy po jeho instalaci.
 
 Upozornění:
 
--   Výchozí zdroj pro nápovědu bude stále online.
+- Výchozí zdroj pro nápovědu bude stále online.
 
 ### <a name="example"></a>Příklad
 
@@ -59,13 +59,13 @@ Následující příklad instaluje obsah v angličtině pro sadu Visual Studio k
 
 #### <a name="to-install-english-content-from-the-internet"></a>Instalace anglického obsahu z Internetu
 
-1.  Zvolte **Start** a klikněte na tlačítko **spustit**.
+1. Zvolte **Start** a klikněte na tlačítko **spustit**.
 
-2.  Zadejte následující příkaz:
+2. Zadejte následující příkaz:
 
      `C:\Program Files (x86)\Microsoft Help Viewer\v2.3\hlpctntmgr.exe /operation install /catalogname VisualStudio15 /locale en-us`
 
-3.  Stisknutím klávesy **zadejte**.
+3. Stisknutím klávesy **zadejte**.
 
 ## <a name="deploy-pre-installed-local-help-content-on-client-computers"></a>Nasadit předem nainstalované místní obsah nápovědy v klientských počítačích
 
@@ -73,16 +73,16 @@ Můžete nainstalovat sadu obsahu z online na jeden počítač a potom zkopírov
 
 Požadavky:
 
--   Na počítači, který nainstaluje sadu obsahu musí mít přístup k Internetu.
+- Na počítači, který nainstaluje sadu obsahu musí mít přístup k Internetu.
 
--   Uživatelé musí mít práva správce k aktualizaci, přidání nebo odebrání místního obsahu nápovědy po jeho instalaci.
+- Uživatelé musí mít práva správce k aktualizaci, přidání nebo odebrání místního obsahu nápovědy po jeho instalaci.
 
     > [!TIP]
     > Pokud uživatelé nemají oprávnění správce, doporučuje se, že zakážete **spravovat obsah** kartě v aplikaci Help Viewer. Další informace najdete v tématu [aplikaci Help Content Manager přepíše](../help-viewer/behavior-overrides.md).
 
 Upozornění:
 
--   Výchozí zdroj pro nápovědu bude stále online.
+- Výchozí zdroj pro nápovědu bude stále online.
 
 ### <a name="create-the-content-set"></a>Vytvoření sady obsahu
 
@@ -104,23 +104,23 @@ Než budete moct vytvořit základní sadu obsahu, musíte nejprve odinstalovat 
 
 #### <a name="to-download-the-content"></a>Ke stažení obsahu
 
-1.  V okně Help Viewer zvolte **spravovat obsah** kartu.
+1. V okně Help Viewer zvolte **spravovat obsah** kartu.
 
-2.  V části **doporučená dokumentace** nebo **dostupná dokumentace**, přejděte do sad dokumentace, kterou chcete stáhnout a klikněte na tlačítko **přidat**.
+2. V části **doporučená dokumentace** nebo **dostupná dokumentace**, přejděte do sad dokumentace, kterou chcete stáhnout a klikněte na tlačítko **přidat**.
 
-3.  Zvolte **aktualizace**.
+3. Zvolte **aktualizace**.
 
 Dále je třeba zabalit obsah balíčku, takže je možné nasadit do klientských počítačů.
 
 #### <a name="to-package-the-content"></a>Do balíčku obsahu
 
-1.  Vytvořte složku pro zkopírování obsahu pro pozdější nasazení. Příklad: *C:\VSHelp*.
+1. Vytvořte složku pro zkopírování obsahu pro pozdější nasazení. Příklad: *C:\VSHelp*.
 
-2.  Otevřít *cmd.exe* s oprávněními správce.
+2. Otevřít *cmd.exe* s oprávněními správce.
 
-3.  Přejděte do složky, kterou jste vytvořili v kroku 1.
+3. Přejděte do složky, kterou jste vytvořili v kroku 1.
 
-4.  Zadejte následující příkaz:
+4. Zadejte následující příkaz:
 
      `Xcopy %ProgramData%\Microsoft\HelpLibrary2 \<*foldername*>\ /y /e /k /o`
 
@@ -128,11 +128,11 @@ Dále je třeba zabalit obsah balíčku, takže je možné nasadit do klientský
 
 ### <a name="deploy-the-content"></a>Nasazení obsahu
 
-1.  Vytvoření sdílené síťové složky a zkopírujte obsah nápovědy do daného umístění.
+1. Vytvoření sdílené síťové složky a zkopírujte obsah nápovědy do daného umístění.
 
      Například zkopírujte obsah *C:\VSHelp* k  *\\\myserver\VSHelp*.
 
-2.  Vytvoření *.bat* soubor obsahující skript nasazení pro obsah nápovědy. Vzhledem k tomu, klient může mít případně zámek pro čtení na kterýkoliv ze souborů, které jsou mazány jako součást nasdílení změn, měli byste vypnout před řízením aktualizací klienta. Příklad:
+2. Vytvoření *.bat* soubor obsahující skript nasazení pro obsah nápovědy. Vzhledem k tomu, klient může mít případně zámek pro čtení na kterýkoliv ze souborů, které jsou mazány jako součást nasdílení změn, měli byste vypnout před řízením aktualizací klienta. Příklad:
 
     ```cmd
     REM - copy pre-ripped content to ProgramData
@@ -140,7 +140,7 @@ Dále je třeba zabalit obsah balíčku, takže je možné nasadit do klientský
     if ERRORLEVEL 1 ECHO *** ERROR COPYING Help Library files to ProgramData (%ERRORLEVEL%)
     ```
 
-3.  Spustit *.bat* soubor v místních počítačích, které chcete nainstalovat obsah nápovědy.
+3. Spustit *.bat* soubor v místních počítačích, které chcete nainstalovat obsah nápovědy.
 
 ## <a name="see-also"></a>Viz také:
 

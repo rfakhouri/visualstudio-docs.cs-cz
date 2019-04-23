@@ -19,12 +19,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 532781a2e816120dabfe2bec61059955cd0c82a6
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: bc6bc7e6e7d11b1b5b77cd90b86a6a6167702872
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59658120"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082175"
 ---
 # <a name="n-tier-data-applications-overview"></a>Přehled vícevrstvých datových aplikací
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,11 +35,11 @@ N-úroveň * datové aplikace jsou datové aplikace, které jsou rozděleny do n
   
  Aplikace Visual Studio obsahuje několik funkcí, které usnadní vývojářům vytvářet n-vrstvé aplikace:  
   
--   Poskytuje návrháři datových sad **projektu DataSet** vlastnost, která umožňuje oddělit dataset (Datová vrstva entity) a `TableAdapter`s (vrstva přístupu k datům) do samostatných projektů.  
+- Poskytuje návrháři datových sad **projektu DataSet** vlastnost, která umožňuje oddělit dataset (Datová vrstva entity) a `TableAdapter`s (vrstva přístupu k datům) do samostatných projektů.  
   
--   [LINQ to SQL nástroje v sadě Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) poskytuje nastavení pro generování třídy DataContext a dat do samostatných oborů názvů. Tato skutečnost umožňuje logické rozdělení přístupu k datům a vrstev datové entity.  
+- [LINQ to SQL nástroje v sadě Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) poskytuje nastavení pro generování třídy DataContext a dat do samostatných oborů názvů. Tato skutečnost umožňuje logické rozdělení přístupu k datům a vrstev datové entity.  
   
--   [Technologie LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) poskytuje <xref:System.Data.Linq.Table%601.Attach%2A> metodu, která umožňuje sloučit DataContext z různých vrstev v aplikaci. Další informace najdete v tématu [N-vrstvé a vzdálené aplikace s LINQ to SQL](http://msdn.microsoft.com/library/854a1cdd-53cb-45f5-83ca-63962a9b3598).  
+- [Technologie LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) poskytuje <xref:System.Data.Linq.Table%601.Attach%2A> metodu, která umožňuje sloučit DataContext z různých vrstev v aplikaci. Další informace najdete v tématu [N-vrstvé a vzdálené aplikace s LINQ to SQL](http://msdn.microsoft.com/library/854a1cdd-53cb-45f5-83ca-63962a9b3598).  
   
 ## <a name="presentation-tier"></a>Prezentační vrstva  
  *Prezentační vrstvy* je vrstva, ve které uživatelé komunikují s aplikací. Často také obsahuje další aplikační logiku. Mezi typické komponenty prezentační vrstvy patří:  
@@ -57,11 +57,11 @@ N-úroveň * datové aplikace jsou datové aplikace, které jsou rozděleny do n
   
 - Komponenty datového přístupu a logiky, jako je například:  
   
-  -   [Objekty TableAdapter](http://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364) a [adaptéry a čtečky dat](http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74).  
+  - [Objekty TableAdapter](http://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364) a [adaptéry a čtečky dat](http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74).  
   
-  -   Objektové reprezentace dat, jako například [technologie LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) tříd entit.  
+  - Objektové reprezentace dat, jako například [technologie LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) tříd entit.  
   
-  -   Běžné služby aplikací, jako je například ověření, autorizace a přizpůsobení.  
+  - Běžné služby aplikací, jako je například ověření, autorizace a přizpůsobení.  
   
   Následující obrázek znázorňuje funkce a technologie, které jsou k dispozici v aplikaci Visual Studio a které je možné v rámci n-vrstvé aplikace umístit do střední vrstvy.  
   

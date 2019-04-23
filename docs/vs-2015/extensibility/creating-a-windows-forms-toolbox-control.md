@@ -12,12 +12,12 @@ ms.assetid: 0be6ffc1-8afd-4d02-9a5d-e27dde05fde6
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4cdb411abc52cd6a23b9401166fde1de98231ece
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 769a2243cd43eb085db081b7087731a8135f839b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867833"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082214"
 ---
 # <a name="creating-a-windows-forms-toolbox-control"></a>Vytvoření ovládacího prvku panelu nástrojů modelu Windows Forms
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,26 +32,26 @@ ms.locfileid: "57867833"
   
 #### <a name="create-an-extension-with-a-windows-forms-toolbox-control"></a>Vytvoření rozšíření pomocí ovládacího prvku Windows Forms panel nástrojů  
   
-1.  Vytvořte projekt VSIX s názvem `MyWinFormsControl`. Můžete najít šablonu projektu VSIX v **nový projekt** dialogového okna v části **Visual C# / rozšíření**.  
+1. Vytvořte projekt VSIX s názvem `MyWinFormsControl`. Můžete najít šablonu projektu VSIX v **nový projekt** dialogového okna v části **Visual C# / rozšíření**.  
   
-2.  Po otevření projektu, přidejte **ovládacího prvku Windows Forms panel nástrojů** šablony položky s názvem `Counter`. V **Průzkumníka řešení**, klikněte pravým tlačítkem na uzel projektu a vyberte **Add / nová položka**. V **přidat novou položku** dialogové okno, přejděte na **Visual C# / rozšíření** a vyberte **ovládacího prvku Windows Forms panelu nástrojů**  
+2. Po otevření projektu, přidejte **ovládacího prvku Windows Forms panel nástrojů** šablony položky s názvem `Counter`. V **Průzkumníka řešení**, klikněte pravým tlačítkem na uzel projektu a vyberte **Add / nová položka**. V **přidat novou položku** dialogové okno, přejděte na **Visual C# / rozšíření** a vyberte **ovládacího prvku Windows Forms panelu nástrojů**  
   
-3.  Tento postup přidá uživatelský ovládací prvek, `ProvideToolboxControlAttribute` <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute> umístit ovládacího prvku **nástrojů**a **Microsoft.VisualStudio.ToolboxControl** položku prostředku v manifestu VSIX pro nasazení.  
+3. Tento postup přidá uživatelský ovládací prvek, `ProvideToolboxControlAttribute` <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute> umístit ovládacího prvku **nástrojů**a **Microsoft.VisualStudio.ToolboxControl** položku prostředku v manifestu VSIX pro nasazení.  
   
 ### <a name="building-a-user-interface-for-the-control"></a>Vytváření pro ovládací prvek uživatelského rozhraní  
  `Counter` Ovládací prvek požaduje dva podřízené ovládací prvky: <xref:System.Windows.Forms.Label> zobrazíte aktuální počet a <xref:System.Windows.Forms.Button> obnovit počet na hodnotu 0. Žádné další podřízené ovládací prvky jsou povinné, protože volající, zvýší čítač prostřednictvím kódu programu.  
   
 ##### <a name="to-build-the-user-interface"></a>K vytvoření uživatelského rozhraní  
   
-1.  V **Průzkumníka řešení**, dvakrát klikněte na panel Counter.cs ho otevřete v návrháři.  
+1. V **Průzkumníka řešení**, dvakrát klikněte na panel Counter.cs ho otevřete v návrháři.  
   
-2.  Odeberte "klikněte sem!" **Tlačítko** , která je zahrnuta ve výchozím nastavení při přidání šablony položky ovládacího prvku Windows Forms panelu nástrojů.  
+2. Odeberte "klikněte sem!" **Tlačítko** , která je zahrnuta ve výchozím nastavení při přidání šablony položky ovládacího prvku Windows Forms panelu nástrojů.  
   
-3.  Z **nástrojů**, přetáhněte `Label` ovládací prvek a potom `Button` ovládacího prvku pod ním na návrhové ploše.  
+3. Z **nástrojů**, přetáhněte `Label` ovládací prvek a potom `Button` ovládacího prvku pod ním na návrhové ploše.  
   
-4.  Změnit velikost celkového uživatelského ovládacího prvku na 150, 50 pixelů a změnu velikosti panelu ovládacího prvku na 50, 20 pixelů.  
+4. Změnit velikost celkového uživatelského ovládacího prvku na 150, 50 pixelů a změnu velikosti panelu ovládacího prvku na 50, 20 pixelů.  
   
-5.  V **vlastnosti** okno, nastavte následující hodnoty pro ovládací prvky na návrhové ploše.  
+5. V **vlastnosti** okno, nastavte následující hodnoty pro ovládací prvky na návrhové ploše.  
   
     |Control|Vlastnost|Hodnota|  
     |-------------|--------------|-----------|  
@@ -64,16 +64,16 @@ ms.locfileid: "57867833"
   
 ##### <a name="to-code-the-user-control"></a>Do kódu uživatelského ovládacího prvku  
   
-1.  Poklepejte na formulář v okně kódu otevřete své obslužné rutině události load.  
+1. Poklepejte na formulář v okně kódu otevřete své obslužné rutině události load.  
   
-2.  Nad metodu obslužné rutiny události vytvoření ve třídě ovládacího prvku celé číslo k uložení hodnota čítače a řetězec pro uložení zobrazení textu, jak je znázorněno v následujícím příkladu.  
+2. Nad metodu obslužné rutiny události vytvoření ve třídě ovládacího prvku celé číslo k uložení hodnota čítače a řetězec pro uložení zobrazení textu, jak je znázorněno v následujícím příkladu.  
   
     ```csharp  
     int currentValue;  
     string displayText;  
     ```  
   
-3.  Vytvořte následující veřejnou vlastnost deklarace.  
+3. Vytvořte následující veřejnou vlastnost deklarace.  
   
     ```csharp  
     public int Value {  
@@ -94,7 +94,7 @@ ms.locfileid: "57867833"
   
      Volající může zobrazit tyto vlastnosti k získání a nastavení zobrazení textu čítače a chcete zobrazit nebo skrýt `Reset` tlačítko. Volající může získat aktuální hodnotu jen pro čtení `Value` vlastností, ale nelze nastavit hodnotu přímo.  
   
-4.  Vložte následující kód `Load` události pro ovládací prvek.  
+4. Vložte následující kód `Load` události pro ovládací prvek.  
   
     ```csharp  
     private void Counter_Load(object sender, EventArgs e)  
@@ -107,7 +107,7 @@ ms.locfileid: "57867833"
   
      Nastavení **popisek** text <xref:System.Windows.Forms.UserControl.Load> událostí umožňuje vlastnosti cíle pro načtení před jejich hodnoty se použijí. Nastavení **popisek** text v konstruktoru by mělo za následek prázdnou **popisek**.  
   
-5.  Vytvořte následující veřejnou metodu pro zvýšení čítače.  
+5. Vytvořte následující veřejnou metodu pro zvýšení čítače.  
   
     ```csharp  
     public void Increment()  
@@ -119,7 +119,7 @@ ms.locfileid: "57867833"
   
     ```  
   
-6.  Přidat deklaraci `Incremented` událostí na třídě ovládacího prvku.  
+6. Přidat deklaraci `Incremented` událostí na třídě ovládacího prvku.  
   
     ```csharp  
     public event EventHandler Incremented;  
@@ -127,7 +127,7 @@ ms.locfileid: "57867833"
   
      Volající může přidat obslužné rutiny na tuto událost reakce na změny v hodnotě čítače.  
   
-7.  Vraťte se do návrhového zobrazení a dvakrát klikněte `Reset` pro vygenerování `btnReset_Click` obslužná rutina události a vyplňte v, jak je znázorněno v následujícím příkladu.  
+7. Vraťte se do návrhového zobrazení a dvakrát klikněte `Reset` pro vygenerování `btnReset_Click` obslužná rutina události a vyplňte v, jak je znázorněno v následujícím příkladu.  
   
     ```csharp  
     private void btnReset_Click(object sender, EventArgs e)  
@@ -138,7 +138,7 @@ ms.locfileid: "57867833"
   
     ```  
   
-8.  Přímo nad definici třídy v `ProvideToolboxControl` atribut deklarace, změňte hodnotu z prvního parametru `"MyWinFormsControl.Counter"` k `"General"`. Tím se nastaví na název skupiny položky, který bude hostitelem ovládacího prvku **nástrojů**.  
+8. Přímo nad definici třídy v `ProvideToolboxControl` atribut deklarace, změňte hodnotu z prvního parametru `"MyWinFormsControl.Counter"` k `"General"`. Tím se nastaví na název skupiny položky, který bude hostitelem ovládacího prvku **nástrojů**.  
   
      Následující příklad ukazuje `ProvideToolboxControl` atribut a definice upravené třídy.  
   
@@ -152,23 +152,23 @@ ms.locfileid: "57867833"
   
 ##### <a name="to-test-the-control"></a>Testování ovládacího prvku  
   
-1.  Stiskněte klávesu F5.  
+1. Stiskněte klávesu F5.  
   
      To vytvoří projekt a otevře se druhá experimentální instanci sady Visual Studio, který má ovládací prvek nainstalovaný.  
   
-2.  V experimentální instanci sady Visual Studio, vytvořit **formulářová aplikace Windows** projektu.  
+2. V experimentální instanci sady Visual Studio, vytvořit **formulářová aplikace Windows** projektu.  
   
-3.  V **Průzkumníka řešení**, poklikejte na soubor Form1.cs otevřete v návrháři, pokud ještě není otevřený.  
+3. V **Průzkumníka řešení**, poklikejte na soubor Form1.cs otevřete v návrháři, pokud ještě není otevřený.  
   
-4.  V **nástrojů**, `Counter` ovládací prvek má být zobrazen v **Obecné** oddílu.  
+4. V **nástrojů**, `Counter` ovládací prvek má být zobrazen v **Obecné** oddílu.  
   
-5.  Přetáhněte `Counter` do svého formuláře ovládací prvek a vyberte ji. `Value`, `Message`, A `ShowReset` vlastnosti se zobrazí v **vlastnosti** okno spolu s vlastnostmi, která jsou zděděna z <xref:System.Windows.Forms.UserControl>.  
+5. Přetáhněte `Counter` do svého formuláře ovládací prvek a vyberte ji. `Value`, `Message`, A `ShowReset` vlastnosti se zobrazí v **vlastnosti** okno spolu s vlastnostmi, která jsou zděděna z <xref:System.Windows.Forms.UserControl>.  
   
-6.  Nastavte `Message` vlastnost `Count:`.  
+6. Nastavte `Message` vlastnost `Count:`.  
   
-7.  Přetáhněte <xref:System.Windows.Forms.Button> ovládací prvek na formuláři a potom nastavte vlastnosti name a text tlačítka `Test`.  
+7. Přetáhněte <xref:System.Windows.Forms.Button> ovládací prvek na formuláři a potom nastavte vlastnosti name a text tlačítka `Test`.  
   
-8.  Dvakrát klikněte na tlačítko Otevřít v zobrazení kódu Form1.cs a vytvořit obslužnou rutinu kliknutí.  
+8. Dvakrát klikněte na tlačítko Otevřít v zobrazení kódu Form1.cs a vytvořit obslužnou rutinu kliknutí.  
   
 9. Obslužné rutiny kliknutí, volejte `counter1.Increment()`.  
   

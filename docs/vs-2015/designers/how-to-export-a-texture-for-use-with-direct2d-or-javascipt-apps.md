@@ -9,12 +9,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5d5858df00057298f961189173a3943f3e23d2b6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 29ee765bfc11362a870d359ff0a9cdc3f633e464
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54781477"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080797"
 ---
 # <a name="how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps"></a>Postupy: Export textury pro použití s rozhraním Direct2D nebo aplikacemi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,30 +23,30 @@ Kanál s obsahem obrazu může generovat textury, které jsou kompatibilní s Di
   
  Tento dokument vysvětluje tyto činnosti:  
   
--   Konfigurace zdrojového obrazu pro zpracování obsahu kanálu obrázku.  
+- Konfigurace zdrojového obrazu pro zpracování obsahu kanálu obrázku.  
   
--   Konfigurace obsahu kanálu obrázku ke generování textur, který vám pomůže v aplikaci Direct2D nebo JavaScript.  
+- Konfigurace obsahu kanálu obrázku ke generování textur, který vám pomůže v aplikaci Direct2D nebo JavaScript.  
   
-    -   Vygenerujte soubor komprimovanými .dds.  
+    - Vygenerujte soubor komprimovanými .dds.  
   
-    -   Generoval vynásobený kanál alfa.  
+    - Generoval vynásobený kanál alfa.  
   
-    -   Zakážete generování mipmap.  
+    - Zakážete generování mipmap.  
   
 ## <a name="rendering-conventions-in-direct2d"></a>Vykreslování konvence v Direct2D  
  Textury, které se používají v souvislosti s Direct2D musí splňovat tyto vnitřní konvence Direct2D vykreslování:  
   
--   Direct2D implementuje průhlednost a průsvitnost pomocí předem vynásobené hodnoty alfa. Textury použité v rámci Direct2D musí obsahovat předem vynásobenou hodnotu alpha, i když textury nepoužívají průhlednost nebo průsvitnost. Další informace o přednásobeném kanálu alfa naleznete v tématu [jak: Export textury s Přednásobeným alfa](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md).  
+- Direct2D implementuje průhlednost a průsvitnost pomocí předem vynásobené hodnoty alfa. Textury použité v rámci Direct2D musí obsahovat předem vynásobenou hodnotu alpha, i když textury nepoužívají průhlednost nebo průsvitnost. Další informace o přednásobeném kanálu alfa naleznete v tématu [jak: Export textury s Přednásobeným alfa](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md).  
   
--   Textura musí být poskytována ve formátu .dds pomocí jednoho z těchto formátů komprese bloku:  
+- Textura musí být poskytována ve formátu .dds pomocí jednoho z těchto formátů komprese bloku:  
   
-    -   Komprese BC1_UNORM  
+    - Komprese BC1_UNORM  
   
-    -   BC2_UNORM komprese  
+    - BC2_UNORM komprese  
   
-    -   BC3_UNORM komprese  
+    - BC3_UNORM komprese  
   
--   Mipmapy nejsou podporovány.  
+- Mipmapy nejsou podporovány.  
   
 #### <a name="to-create-a-texture-thats-compatible-with-direct2d-rendering-conventions"></a>Vytvoření textury, který je kompatibilní s konvencemi vykreslování Direct2D  
   

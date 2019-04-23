@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: f124dd91c3b5229423af171db2d8c99b0e1d56e5
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 2ef6761222f9dd2396d5a3f72bd2bef5ac47971f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59670248"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082188"
 ---
 # <a name="how-to-instrument-a-net-framework-service-and-collect-memory-data-by-using-the-profiler-command-line"></a>Postupy: Instrumentace služby rozhraní .NET Framework a shromažďování dat paměti pomocí příkazového řádku profileru
 Tento článek popisuje způsob použití [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] příkazového řádku nástrojů pro profilaci k instrumentaci [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] služby a shromažďování dat o využití paměti. Můžete shromažďovat data o přidělování paměti, nebo můžete shromažďovat přidělení paměti a životnosti objektů.
@@ -47,7 +47,7 @@ Tento článek popisuje způsob použití [!INCLUDE[vsprvs](../code-quality/incl
 
     **VSPerfClrEnv** {**/globaltracegc** &#124; **/globaltracegclife**}
 
-   -   **/globaltracegc** a **/globaltracegclife** Povolit shromažďování dat paměti přidělení a objekt životnosti.
+   - **/globaltracegc** a **/globaltracegclife** Povolit shromažďování dat paměti přidělení a objekt životnosti.
 
        |Možnost|Popis|
        |------------|-----------------|
@@ -88,14 +88,14 @@ Tento článek popisuje způsob použití [!INCLUDE[vsprvs](../code-quality/incl
 
      **Nástroj VSPerfCmd / připojit:**`PID`&#124;`ProcessName`
 
-    -   Zadejte ID procesu nebo názvem procesu služby. ID procesů a názvy všech spuštěných procesů lze zobrazit ve Správci úloh Windows.
+    - Zadejte ID procesu nebo názvem procesu služby. ID procesů a názvy všech spuštěných procesů lze zobrazit ve Správci úloh Windows.
 
 ## <a name="control-data-collection"></a>Řízení shromažďování dat
  Zatímco je služba spuštěna, lze sběr dat řídit spouštěním či pozastavováním zápisu dat do souboru s *VSPerfCmd.exe* možnosti. Řízení sběru dat umožňuje shromažďovat data pro určitou část provádění programu, například spouštění či ukončování aplikace.
 
 #### <a name="to-start-and-stop-data-collection"></a>Spuštění a zastavení shromažďování dat
 
--   Následující páry **VSPerfCmd** možností spouští a zastavují sběr dat. Každou možnost zadejte na samostatný příkazový řádek. Sběr dat lze zapnout a vypnout několikrát.
+- Následující páry **VSPerfCmd** možností spouští a zastavují sběr dat. Každou možnost zadejte na samostatný příkazový řádek. Sběr dat lze zapnout a vypnout několikrát.
 
     |Možnost|Popis|
     |------------|-----------------|
@@ -108,19 +108,19 @@ Tento článek popisuje způsob použití [!INCLUDE[vsprvs](../code-quality/incl
 
 #### <a name="to-end-a-profiling-session"></a>Chcete-li ukončit relaci profilování
 
-1.  Zastavte službu ze Správce řízení služeb.
+1. Zastavte službu ze Správce řízení služeb.
 
-2.  Vypněte profiler. Typ:
+2. Vypněte profiler. Typ:
 
      **/ Shutdown VSPerfCmd**
 
-3.  Po dokončení veškerého profilování vyčistěte proměnné prostředí profilování. Zadejte:
+3. Po dokončení veškerého profilování vyčistěte proměnné prostředí profilování. Zadejte:
 
      **Vsperfclrenv – /globaloff**
 
      Nahraďte instrumentovaný modul původní. V případě potřeby znovu nakonfigurujte typ spouštění služby.
 
-4.  Restartujte počítač.
+4. Restartujte počítač.
 
 ## <a name="see-also"></a>Viz také:
 - [Profil služby](../profiling/command-line-profiling-of-services.md)

@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4a3fa4013a5fa9b3fb6ec17ee07277f5e4b7d996
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 206cd77ae3c648add62b17c86a4966e6174c345c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56645144"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082578"
 ---
 # <a name="import-items-from-an-existing-sharepoint-site"></a>Import položek z existující stránky SharePoint
   Šablona projektu importovat balíček řešení služby SharePoint, můžete znovu použít prvky, jako jsou typy obsahu a pole z existujících webů služby SharePoint v novém [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] řešení služby SharePoint. Ačkoli můžete spustit nejvíce importované řešení bez jakýchkoli úprav, existují určitá omezení a problémy, které byste měli zvážit, zejména v případě, že upravíte všechny položky po importu.
@@ -119,9 +119,9 @@ ms.locfileid: "56645144"
 
  Když se zobrazí tato chyba, není tato položka vytvořena. K tomuto problému dochází nejčastěji se importované moduly. K tomuto problému vyhnout, postupujte takto:
 
--   Používejte krátké názvy pro váš projekt, zadejte je **přidat nový projekt** dialogové okno.
+- Používejte krátké názvy pro váš projekt, zadejte je **přidat nový projekt** dialogové okno.
 
--   Vytvoření projektu v umístění jako blízko kořenové složce co nejrychleji, aby zkrácení cesty.
+- Vytvoření projektu v umístění jako blízko kořenové složce co nejrychleji, aby zkrácení cesty.
 
 ## <a name="the-sharepointproductversion-attribute"></a>Atribut SharePointProductVersion
  Při importu řešení vytvořené ve starší verzi služby SharePoint, jako [!INCLUDE[winshare3](../sharepoint/includes/winshare3-md.md)] nebo [!INCLUDE[offshare7](../sharepoint/includes/offshare7-md.md)], změňte hodnotu atributu SharePointProductVersion v manifestu balíčku 12.0 nebo vložit ovládací prvek správce skriptů do všech importovaných Web stránky a nechte SharePointProductVersion nastaven na 14.0. V opačném případě importované webových formulářů nezobrazí v Sharepointu.
