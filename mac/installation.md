@@ -7,12 +7,12 @@ ms.date: 04/02/2019
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
-ms.openlocfilehash: 52f9e5f5d21fe69cde613d8e05b365fc8d795dd8
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: b56d7d97ec49bf4c83f2d26a38648cd22cdcfe6a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58857317"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099699"
 ---
 # <a name="install-visual-studio-2019-for-mac"></a>Install Visual Studio 2019 for Mac
 
@@ -24,7 +24,7 @@ Jak začít s vývojem nativní a multiplatformní aplikace .NET v systému macO
 
 K vytváření aplikací Xamarin pro iOS nebo macOS, budete také potřebovat:
 
-- Xcode 11.0 nebo novější. Nejnovější stabilní verze je obvykle vhodné.
+- Xcode 10.0 nebo vyšší. Nejnovější stabilní verze je obvykle vhodné.
 - Apple ID. Pokud ještě nemáte Apple ID můžete vytvořit nový na https://appleid.apple.com. Je potřeba mít Apple ID, instalace a přihlášení do Xcode.
 
 ## <a name="installation-instructions"></a>Pokyny k instalaci

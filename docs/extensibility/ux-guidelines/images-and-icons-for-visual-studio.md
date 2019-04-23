@@ -8,32 +8,32 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 272d9bd9b1e54c6ff97b522375b773002e93dd49
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: d57c06cbc465537e0ac523c8133a718369b5ea69
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56683139"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087791"
 ---
 # <a name="images-and-icons-for-visual-studio"></a>Obrázky a ikony pro sadu Visual Studio
-##  <a name="BKMK_ImageUseInVisualStudio"></a> Použití obrázků v sadě Visual Studio
+## <a name="BKMK_ImageUseInVisualStudio"></a> Použití obrázků v sadě Visual Studio
  Před vytvořením obrázky, zvažte provedení použití imagí 1 000 + v [knihovna obrázků Visual Studio](http://www.microsoft.com/en-my/download/details.aspx?id=35825).
 
 ### <a name="types-of-images"></a>Typy imagí
 
--   **Ikony**. Malé obrázky, které se zobrazují v příkazech, hierarchie, šablon a tak dále. Výchozí velikost ikona používaná v sadě Visual Studio je PNG 16 x 16. Ikony vytvářených služba bitových kopií automaticky generovat formátu XAML pro podporu HDPI.
+- **Ikony**. Malé obrázky, které se zobrazují v příkazech, hierarchie, šablon a tak dále. Výchozí velikost ikona používaná v sadě Visual Studio je PNG 16 x 16. Ikony vytvářených služba bitových kopií automaticky generovat formátu XAML pro podporu HDPI.
 
      **POZNÁMKA:** Zatímco Image se používají v nabídce systému, nevytvářejte ikonu pro každý příkaz. Poraďte [nabídek a příkazů pro sadu Visual Studio](../../extensibility/ux-guidelines/menus-and-commands-for-visual-studio.md) chcete zobrazit, zda váš příkaz by měl získat ikonu.
 
--   **Thumbnails.** Obrázky používané v části dialogového okna, jako je například dialogové okno Nový projekt ve verzi preview.
+- **Thumbnails.** Obrázky používané v části dialogového okna, jako je například dialogové okno Nový projekt ve verzi preview.
 
--   **Dialogové okno imagí.** Bitové kopie, které se zobrazí v dialogových oknech nebo průvodce, buď jako zprávy ukazatele nebo popisný grafiky. Použijte jen zřídka a pouze v případě potřeby k objasnění konceptu obtížné nebo k získání pozornosti uživatele (upozornění, upozornění).
+- **Dialogové okno imagí.** Bitové kopie, které se zobrazí v dialogových oknech nebo průvodce, buď jako zprávy ukazatele nebo popisný grafiky. Použijte jen zřídka a pouze v případě potřeby k objasnění konceptu obtížné nebo k získání pozornosti uživatele (upozornění, upozornění).
 
--   **Animovaný bitové kopie.** Použít indikátory průběhu, stavovém řádku a dialogů operace.
+- **Animovaný bitové kopie.** Použít indikátory průběhu, stavovém řádku a dialogů operace.
 
--   **Kurzory.** Umožňuje určit, zda je povolena operace pomocí myši, kde objekt může být zrušená a tak dále.
+- **Kurzory.** Umožňuje určit, zda je povolena operace pomocí myši, kde objekt může být zrušená a tak dále.
 
-##  <a name="BKMK_IconDesign"></a> Ikona návrhu
+## <a name="BKMK_IconDesign"></a> Ikona návrhu
 
 ### <a name="overview"></a>Přehled
  Visual Studio používá moderní styl ikony, které čisté geometrie a rozdělení 50/50 zůstatek pozitivní nebo negativní (světlý/tmavý) a použijte metaphors s přímým přístupem, srozumitelné. Zásadní ikona center body návrhu kolem přehlednost zjednodušení a kontext.
@@ -210,19 +210,19 @@ ms.locfileid: "56683139"
 
 #### <a name="file-types"></a>Typy souborů
 
--   **32-bit PNG:** preferovaném formátu ikon. Formát souboru komprese beze ztrát dat, který může ukládat bitové kopie jedné rastrových (v pixelech). 32-bit soubory PNG podporují průhlednost alfa kanálu, gama korekce a prokládání.
+- **32-bit PNG:** preferovaném formátu ikon. Formát souboru komprese beze ztrát dat, který může ukládat bitové kopie jedné rastrových (v pixelech). 32-bit soubory PNG podporují průhlednost alfa kanálu, gama korekce a prokládání.
 
--   **32-bit BMP:** pro ovládací prvky bez WPF. Označovaný taky jako XP nebo vysokou color, 32-bit BMP je RGB/A image ve formátu, true color image s transparentnost alfa kanálu. Kanál alfa je vrstva průhlednosti určené v aplikaci Adobe Photoshop, která se pak uloží v rámci rastrového obrázku jako další (čtvrté) barevného kanálu. Černé pozadí se přidá během kresby produkční na všechny soubory BMP 32-bit zajistit rychlé vizuální upozornění o barevnou hloubku. Tato černé pozadí představuje oblasti, ke které zamaskuje v uživatelském rozhraní.
+- **32-bit BMP:** pro ovládací prvky bez WPF. Označovaný taky jako XP nebo vysokou color, 32-bit BMP je RGB/A image ve formátu, true color image s transparentnost alfa kanálu. Kanál alfa je vrstva průhlednosti určené v aplikaci Adobe Photoshop, která se pak uloží v rámci rastrového obrázku jako další (čtvrté) barevného kanálu. Černé pozadí se přidá během kresby produkční na všechny soubory BMP 32-bit zajistit rychlé vizuální upozornění o barevnou hloubku. Tato černé pozadí představuje oblasti, ke které zamaskuje v uživatelském rozhraní.
 
--   **32-bit ICO:** ikony projektu a přidejte položku. 32bitové true barvy s alfa kanálu transparentnosti jsou všechny soubory ICO (RGB/A). Protože více velikostí a barev hlubin můžete ukládat soubory ICO, Vista ikony jsou často ve formátu ICO obsahující 16 x 16, 32 x 32, 48 x 48 a velikost 256 x 256. Aby bylo možné zobrazit správně v Průzkumníku Windows, ICO, soubory musí být uložit dolů do hlubin 24 bitů a 8 bitů barev pro velikost každého obrázku.
+- **32-bit ICO:** ikony projektu a přidejte položku. 32bitové true barvy s alfa kanálu transparentnosti jsou všechny soubory ICO (RGB/A). Protože více velikostí a barev hlubin můžete ukládat soubory ICO, Vista ikony jsou často ve formátu ICO obsahující 16 x 16, 32 x 32, 48 x 48 a velikost 256 x 256. Aby bylo možné zobrazit správně v Průzkumníku Windows, ICO, soubory musí být uložit dolů do hlubin 24 bitů a 8 bitů barev pro velikost každého obrázku.
 
--   **XAML:** pro návrhové plochy a doplňky Windows. Ikony XAML jsou vektorové obrázky, které podporují škálování, otáčení, archivace a transparentnost. Nejsou běžné v sadě Visual Studio ještě dnes, ale jsou stále oblíbenější z důvodu jejich flexibilitu.
+- **XAML:** pro návrhové plochy a doplňky Windows. Ikony XAML jsou vektorové obrázky, které podporují škálování, otáčení, archivace a transparentnost. Nejsou běžné v sadě Visual Studio ještě dnes, ale jsou stále oblíbenější z důvodu jejich flexibilitu.
 
--   **SVG**
+- **SVG**
 
--   **BMP – 24 bitů:** pro panel příkazů sady Visual Studio. Formát obrázku RGB true-color, BMP 24-bit je ikona konvence, která vytvoří vrstvu transparentnosti pomocí Purpurová (R = 255, G = 0, B = 255) jako barevný kód pro vrstvu navýšením kapacity knock průhlednosti. Ve 24-bit BMP jsou zobrazeny všechny plochy purpurová barvou pozadí.
+- **BMP – 24 bitů:** pro panel příkazů sady Visual Studio. Formát obrázku RGB true-color, BMP 24-bit je ikona konvence, která vytvoří vrstvu transparentnosti pomocí Purpurová (R = 255, G = 0, B = 255) jako barevný kód pro vrstvu navýšením kapacity knock průhlednosti. Ve 24-bit BMP jsou zobrazeny všechny plochy purpurová barvou pozadí.
 
--   **GIF – 24 bitů:** pro panel příkazů sady Visual Studio. True – barva RGB bitové kopie formátu, který podporuje průhlednost. Soubory GIF se často používají v kresbě průvodce a animací ve formátu GIF.
+- **GIF – 24 bitů:** pro panel příkazů sady Visual Studio. True – barva RGB bitové kopie formátu, který podporuje průhlednost. Soubory GIF se často používají v kresbě průvodce a animací ve formátu GIF.
 
 ### <a name="icon-construction"></a>Ikona konstrukce
  Nejmenší velikost ikony v sadě Visual Studio je 16 x 16. Největší v běžných použití je 32 x 32. Mějte na paměti nechcete zaplní celý 16 x 16, 24 × 24 nebo 32 x 32 rámce při navrhování ikonu. Ikona čitelné, jednotné konstrukce je nezbytné pro rozpoznávání uživatele. Při vytváření ikony proto zavázala dodržovat následující body.
@@ -244,18 +244,18 @@ ms.locfileid: "56683139"
 
  Další informace o použití barev v sadě Visual Studio ikony, naleznete v tématu [použití barev v obrázcích](../../extensibility/ux-guidelines/images-and-icons-for-visual-studio.md#BKMK_UsingColorInImages).
 
-##  <a name="BKMK_UsingColorInImages"></a> Použití barev v obrázcích
+## <a name="BKMK_UsingColorInImages"></a> Použití barev v obrázcích
 
 ### <a name="overview"></a>Přehled
  Ikony v sadě Visual Studio jsou primárně Monochromatický. Barva je vyhrazená k předání konkrétních informací a nikdy pro dekoraci. Barva se používá:
 
--   označuje akci
+- označuje akci
 
--   Upozornit uživatele na oznámení o stavu
+- Upozornit uživatele na oznámení o stavu
 
--   Chcete-li určit jazyk přidružení
+- Chcete-li určit jazyk přidružení
 
--   k rozlišení položek v rámci technologie IntelliSense
+- k rozlišení položek v rámci technologie IntelliSense
 
 ### <a name="accessibility"></a>Usnadnění
  Zásady dodržování předpisů Visual Studio vyžadují, že všechny ikony zapsány do produktu průchod požadavků usnadnění přístupu pro barvy a kontrast. Barev v paletě vizuálního jazyka byly testovány a tyto požadavky splňují.

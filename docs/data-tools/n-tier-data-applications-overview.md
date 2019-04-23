@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 00bd9dff41e6c57fc6969f4198f96d0e209e2a77
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 35b882914deacafae46f2470c49efe1d6ace00f6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55943685"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109930"
 ---
 # <a name="n-tier-data-applications-overview"></a>Přehled vícevrstvých datových aplikací
 *N-vrstvá* datové aplikace jsou datové aplikace, které jsou rozděleny do několika *úrovně*. Nazývají se také „distribuované aplikace“ a „vícevrstvé aplikace“. N-vrstvé aplikace oddělují zpracování do samostatných vrstev, které jsou distribuovány mezi klientem a serverem. Při vývoji aplikací s přístupem k datům by mělo být cíleno na rozdělení mezi různými úrovněmi, které aplikaci tvoří.
@@ -27,33 +27,33 @@ Typická n-vrstvá aplikace obsahuje prezentační vrstvu, střední vrstvu a d
 
 Aplikace Visual Studio obsahuje několik funkcí, které usnadní vývojářům vytvářet n-vrstvé aplikace:
 
--   Poskytuje datovou sadu **projektu DataSet** vlastnost, která umožňuje oddělit datovou sadu (Datová vrstva entity) a TableAdapter (vrstva přístupu k datům) do samostatných projektů.
+- Poskytuje datovou sadu **projektu DataSet** vlastnost, která umožňuje oddělit datovou sadu (Datová vrstva entity) a TableAdapter (vrstva přístupu k datům) do samostatných projektů.
 
--   [Technologie LINQ to SQL nástroje v sadě Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) poskytuje nastavení pro generování třídy DataContext a dat do samostatných oborů názvů. Tato skutečnost umožňuje logické rozdělení přístupu k datům a vrstev datové entity.
+- [Technologie LINQ to SQL nástroje v sadě Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) poskytuje nastavení pro generování třídy DataContext a dat do samostatných oborů názvů. Tato skutečnost umožňuje logické rozdělení přístupu k datům a vrstev datové entity.
 
--   [Technologie LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index) poskytuje <xref:System.Data.Linq.Table%601.Attach%2A> metodu, která umožňuje sloučit DataContext z různých vrstev v aplikaci. Další informace najdete v tématu [N-vrstvé a vzdálené aplikace s LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/n-tier-and-remote-applications-with-linq-to-sql).
+- [Technologie LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index) poskytuje <xref:System.Data.Linq.Table%601.Attach%2A> metodu, která umožňuje sloučit DataContext z různých vrstev v aplikaci. Další informace najdete v tématu [N-vrstvé a vzdálené aplikace s LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/n-tier-and-remote-applications-with-linq-to-sql).
 
 ## <a name="presentation-tier"></a>Prezentační vrstva
 *Prezentační vrstvy* je vrstva, ve které uživatelé komunikují s aplikací. Často také obsahuje další aplikační logiku. Mezi typické komponenty prezentační vrstvy patří:
 
--   Komponenty datové vazby, jako je například <xref:System.Windows.Forms.BindingSource> a <xref:System.Windows.Forms.BindingNavigator>.
+- Komponenty datové vazby, jako je například <xref:System.Windows.Forms.BindingSource> a <xref:System.Windows.Forms.BindingNavigator>.
 
--   Objektové reprezentace dat, jako například [technologie LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index) tříd entit pro použití v prezentační vrstvě.
+- Objektové reprezentace dat, jako například [technologie LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index) tříd entit pro použití v prezentační vrstvě.
 
 Prezentační vrstva obvykle přistupuje střední vrstvě pomocí odkazu na službu (například [služby Windows Communication Foundation a služby WCF Data Services v sadě Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md) aplikace). Prezentační vrstva obvykle nepřistupuje přímo k datové vrstvě. Prezentační vrstva komunikuje s datovou vrstvou prostřednictvím součásti datového přístupu v rámci střední vrstvy.
 
 ## <a name="middle-tier"></a>Střední vrstva
 *Střední vrstvy* je vrstva, která prezentační vrstva a datová vrstva používají ke komunikaci mezi sebou. Mezi typické komponenty střední vrstvy patří:
 
--   Obchodní logika, jako jsou obchodní pravidla a ověření dat.
+- Obchodní logika, jako jsou obchodní pravidla a ověření dat.
 
--   Komponenty datového přístupu a logiky, jako je například:
+- Komponenty datového přístupu a logiky, jako je například:
 
-    -   [Objekty TableAdapter](create-and-configure-tableadapters.md) a [adaptéry a čtečky dat](/dotnet/framework/data/adonet/dataadapters-and-datareaders).
+    - [Objekty TableAdapter](create-and-configure-tableadapters.md) a [adaptéry a čtečky dat](/dotnet/framework/data/adonet/dataadapters-and-datareaders).
 
-    -   Objektové reprezentace dat, jako například [technologie LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index) tříd entit.
+    - Objektové reprezentace dat, jako například [technologie LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index) tříd entit.
 
-    -   Běžné služby aplikací, jako je například ověření, autorizace a přizpůsobení.
+    - Běžné služby aplikací, jako je například ověření, autorizace a přizpůsobení.
 
 Následující obrázek znázorňuje funkce a technologie, které jsou k dispozici v aplikaci Visual Studio a které je možné v rámci n-vrstvé aplikace umístit do střední vrstvy.
 

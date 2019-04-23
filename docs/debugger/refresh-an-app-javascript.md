@@ -19,12 +19,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: 751deec205eabb8bc6e4a492c7242095b2d67475
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 1a0b90e5d863d41c46057e38c5f87bdad2481581
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58790287"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088025"
 ---
 # <a name="refresh-a-uwp-app-in-visual-studio"></a>Aktualizace aplikace pro UPW v sadě Visual Studio
 
@@ -32,34 +32,34 @@ ms.locfileid: "58790287"
 
  Aktualizaci nelze udržovat stav vaší aplikace nebo zahrnují následující změny do vaší aplikace:
 
--   Změny souboru manifestu balíčku, včetně změn imagí v manifestu balíčku.
+- Změny souboru manifestu balíčku, včetně změn imagí v manifestu balíčku.
 
--   Odkaz na změny, jako je například přidávání nebo odebírání odkaz na sadu SDK nebo změny součástí prostředí Windows Runtime (soubory .winmd).
+- Odkaz na změny, jako je například přidávání nebo odebírání odkaz na sadu SDK nebo změny součástí prostředí Windows Runtime (soubory .winmd).
 
--   Změny zdrojů, jako jsou například změny v souborech .resjson řetězce.
+- Změny zdrojů, jako jsou například změny v souborech .resjson řetězce.
 
--   Soubor projektu se změní výsledek ve změně názvu cesty, nové soubory projektu nebo odstraněné soubory.
+- Soubor projektu se změní výsledek ve změně názvu cesty, nové soubory projektu nebo odstraněné soubory.
 
--   Projektů a položek změny vlastností, jako jsou například změny vybrané ladění zařízení, nebo změny akce balíčku souboru (v okně Vlastnosti).
+- Projektů a položek změny vlastností, jako jsou například změny vybrané ladění zařízení, nebo změny akce balíčku souboru (v okně Vlastnosti).
 
 > [!IMPORTANT]
 >  Pokud změníte odkazy, změňte manifest balíčku nebo provést další změny, které uvedli v předchozím seznamu, budete muset zastavit a restartovat ladicí program k aktualizaci zdrojové soubory HTML, CSS a JavaScriptu.
 
 ### <a name="to-refresh-an-app"></a>Chcete-li aktualizovat aplikaci
 
-1.  Otevřít v sadě Visual Studio projektu UPW, vyberte **místního počítače** jako cíl ladění.
+1. Otevřít v sadě Visual Studio projektu UPW, vyberte **místního počítače** jako cíl ladění.
 
      ![Seznam cílů ladění vyberte](../debugger/media/js_select_target.png "JS_Select_Target")
 
-3.  Stisknutím klávesy F5 spusťte aplikaci v režimu ladění.
+3. Stisknutím klávesy F5 spusťte aplikaci v režimu ladění.
 
-4.  Přepněte do aplikace Visual Studio.
+4. Přepněte do aplikace Visual Studio.
 
-5.  Na domovské stránce vaší aplikace pro UPW upravte některé HTML.
+5. Na domovské stránce vaší aplikace pro UPW upravte některé HTML.
 
-7.  Klikněte na tlačítko **aktualizovat Windows app** tlačítka, která vypadá přibližně takto: ![Aktualizovat aplikaci Windows](../debugger/media/js_refresh.png "JS_Refresh"). (Nebo stisknutím klávesy F4).
+7. Klikněte na tlačítko **aktualizovat Windows app** tlačítka, která vypadá přibližně takto: ![Aktualizovat aplikaci Windows](../debugger/media/js_refresh.png "JS_Refresh"). (Nebo stisknutím klávesy F4).
 
-8.  Přepněte do aplikace. Aplikace je znovu načíst a aktualizované HTML se použije k vykreslení aplikace.
+8. Přepněte do aplikace. Aplikace je znovu načíst a aktualizované HTML se použije k vykreslení aplikace.
 
 ## <a name="see-also"></a>Viz také
 - [Rychlý start: Ladění kódu HTML a CSS](../debugger/quickstart-debug-html-and-css.md)

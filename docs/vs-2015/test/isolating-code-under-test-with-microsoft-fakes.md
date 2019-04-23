@@ -8,12 +8,12 @@ ms.assetid: a03c2e83-a41f-4854-bcf2-fcaa277a819d
 caps.latest.revision: 18
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1fe4adb6e70027cae239cf9fafe605aa03431ff3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 97f238b51e3f4ad3bbb32bdbdc134089c0cb7e99
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54766622"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099101"
 ---
 # <a name="isolating-code-under-test-with-microsoft-fakes"></a>Izolace testovaného kódu pomocí zástupného rozhraní Microsoft
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,10 +51,10 @@ Microsoft Fakes může pomoci izolovat testovaný nahrazením ostatních část�
   
  Obecně doporučujeme používat typy zástupných procedur k izolaci od závislostí v rámci vašeho základu kódu. To lze provést skrytím součástí za rozhraní. Typy překrytí lze použít k izolaci od součástí třetích stran, které neposkytují testovatelné rozhraní API.  
   
-##  <a name="stubs"></a> Začínáme se zástupnými procedurami  
+## <a name="stubs"></a> Začínáme se zástupnými procedurami  
  Podrobnější popis najdete v tématu [pomocí zástupných procedury k izolování částí aplikace pro testování částí od sebe navzájem](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md).  
   
-1.  **Vložení rozhraní**  
+1. **Vložení rozhraní**  
   
      Chcete-li použít zástupné procedury, musíte kód, který chcete otestovat, napsat takovým způsobem, aby explicitně nezmiňoval třídy v jiné součásti aplikace. „Součást“ představuje třídu nebo třídy, které jsou vyvíjeny a aktualizovány společně a obvykle jsou obsaženy v jednom projektu sady Visual Studio. Proměnné a parametry by měly být deklarovány pomocí rozhraní a instance ostatních součástí by měly být předány nebo vytvořeny pomocí továrny. Například pokud je součást StockFeed třídou v jiné součásti aplikace, pak toto bude považováno za chybné:  
   
@@ -75,15 +75,15 @@ Microsoft Fakes může pomoci izolovat testovaný nahrazením ostatních část�
   
     ```  
   
-2.  **Přidání napodobenin sestavení**  
+2. **Přidání napodobenin sestavení**  
   
-    1.  V Průzkumníku řešení rozbalte seznam odkazů testového projektu. Pokud pracujete v jazyce Visual Basic, musíte zvolit **zobrazit všechny soubory** Chcete-li zobrazit seznam odkazů.  
+    1. V Průzkumníku řešení rozbalte seznam odkazů testového projektu. Pokud pracujete v jazyce Visual Basic, musíte zvolit **zobrazit všechny soubory** Chcete-li zobrazit seznam odkazů.  
   
-    2.  Vyberte odkaz na sestavení, ve kterém je definováno rozhraní (například IStockFeed). V místní nabídce tento odkaz, zvolte **přidat napodobeniny sestavení**.  
+    2. Vyberte odkaz na sestavení, ve kterém je definováno rozhraní (například IStockFeed). V místní nabídce tento odkaz, zvolte **přidat napodobeniny sestavení**.  
   
-    3.  Znovu sestavte řešení.  
+    3. Znovu sestavte řešení.  
   
-3.  Ve vašich testech vytvořte instance zástupné procedury a zadejte kód pro jeho metody:  
+3. Ve vašich testech vytvořte instance zástupné procedury a zadejte kód pro jeho metody:  
   
     ```csharp  
     [TestClass]  
@@ -145,7 +145,7 @@ Microsoft Fakes může pomoci izolovat testovaný nahrazením ostatních část�
   
      Zástupné procedury jsou také generovány pro mechanismy získání a nastavení vlastností, pro události a pro obecné metody. Další informace najdete v tématu [pomocí zástupných procedury k izolování částí aplikace pro testování částí od sebe navzájem](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md).  
   
-##  <a name="shims"></a> Začínáme s překrytími  
+## <a name="shims"></a> Začínáme s překrytími  
  (Podrobnější popis najdete v tématu [izolace aplikace od ostatních sestavení pro testování částí pomocí Překryvné ovladače](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md).)  
   
  Předpokládejme, že vaše komponenta obsahuje volání `DateTime.Now`:  

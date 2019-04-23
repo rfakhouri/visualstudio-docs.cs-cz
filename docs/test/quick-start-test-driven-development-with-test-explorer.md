@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 4b0692a790955c537c00e35be97d52583862e5a3
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: cd80739f887a42c62af55bc06cfb65704f4755ef
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649573"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109241"
 ---
 # <a name="quickstart-test-driven-development-with-test-explorer"></a>Rychlý start: Testování vývoj řízený testy s použitím Průzkumníka testů
 
@@ -94,15 +94,15 @@ Tento návod ukazuje, jak vyvinout testovanou metodu v jazyce C# pomocí rozhran
 
 4. Generovat metodu testu.
 
-   1.  Umístěte kurzor na `Rooter`a pak v místní nabídce zvolte **generovat** > **nový typ**.
+   1. Umístěte kurzor na `Rooter`a pak v místní nabídce zvolte **generovat** > **nový typ**.
 
-   2.  V **generovat nový typ** dialogové okno, nastavte **projektu** do projektu knihovny tříd. V tomto příkladu je `MyMath`.
+   2. V **generovat nový typ** dialogové okno, nastavte **projektu** do projektu knihovny tříd. V tomto příkladu je `MyMath`.
 
-   3.  Umístěte kurzor na `SquareRoot`a pak v místní nabídce zvolte **generovat** > **Pahýl metody**.
+   3. Umístěte kurzor na `SquareRoot`a pak v místní nabídce zvolte **generovat** > **Pahýl metody**.
 
 5. Spusťte Jednotkový test.
 
-   1.  Na **testovací** nabídce zvolte **spustit jednotkové testy** > **všechny testy**.
+   1. Na **testovací** nabídce zvolte **spustit jednotkové testy** > **všechny testy**.
 
         Toto řešení je sestaveno a spuštěno.
 
@@ -122,7 +122,7 @@ Tento návod ukazuje, jak vyvinout testovanou metodu v jazyce C# pomocí rozhran
 
 #### <a name="after-every-change-make-all-the-tests-pass"></a>Po každé změně Ujistěte se, všechny testy úspěšné.
 
-1.  V *MyMath\Rooter.cs*, Vylepšete kód `SquareRoot`:
+1. V *MyMath\Rooter.cs*, Vylepšete kód `SquareRoot`:
 
     ```csharp
     public double SquareRoot(double input)
@@ -131,7 +131,7 @@ Tento návod ukazuje, jak vyvinout testovanou metodu v jazyce C# pomocí rozhran
      }
     ```
 
-2.  V Průzkumníku testů, zvolte **spustit všechny**.
+2. V Průzkumníku testů, zvolte **spustit všechny**.
 
      Kód sestavení a spuštění testu.
 
@@ -141,7 +141,7 @@ Tento návod ukazuje, jak vyvinout testovanou metodu v jazyce C# pomocí rozhran
 
 #### <a name="add-tests-to-extend-the-range-of-inputs"></a>Přidat testy do Rozšiřte rozsah vstupů
 
-1.  Pokud chcete zlepšit si být jistější, který váš kód funguje ve všech případech, přidejte testy, které zkoušejí širší rozsah vstupních hodnot.
+1. Pokud chcete zlepšit si být jistější, který váš kód funguje ve všech případech, přidejte testy, které zkoušejí širší rozsah vstupních hodnot.
 
     > [!TIP]
     > Neupravujte existující testy, které předávají. Místo toho přidejte nové testy. Existující testy měňte pouze v případě, že se změní požadavky uživatele. Tato zásada umožňuje zajistit, aby neztratili stávajících funkcí během rozšiřování kódu.
@@ -172,13 +172,13 @@ Tento návod ukazuje, jak vyvinout testovanou metodu v jazyce C# pomocí rozhran
     }
     ```
 
-2.  V Průzkumníku testů, zvolte **spustit všechny**.
+2. V Průzkumníku testů, zvolte **spustit všechny**.
 
      Nový test se nezdaří, i když se první test stále úspěšný.
 
      K hledání bodu selhání, zvolte test obsahující a potom v dolní části Průzkumníku testů vyberte položku nejvýše **trasování zásobníku**.
 
-3.  Zkontrolujte, zda chcete zobrazit, co mohlo způsobit chybu testované metody. V `MyMath.Rooter` třídy, revize kódu:
+3. Zkontrolujte, zda chcete zobrazit, co mohlo způsobit chybu testované metody. V `MyMath.Rooter` třídy, revize kódu:
 
     ```csharp
     public double SquareRoot(double input)
@@ -194,13 +194,13 @@ Tento návod ukazuje, jak vyvinout testovanou metodu v jazyce C# pomocí rozhran
     }
     ```
 
-4.  V Průzkumníku testů, zvolte **spustit všechny**.
+4. V Průzkumníku testů, zvolte **spustit všechny**.
 
      Oba testy jsou nyní úspěšné.
 
 #### <a name="add-tests-for-exceptional-cases"></a>Přidejte testy výjimečných případů
 
-1.  Přidejte test záporných vstupů:
+1. Přidejte test záporných vstupů:
 
     ```csharp
     [TestMethod]
@@ -219,15 +219,15 @@ Tento návod ukazuje, jak vyvinout testovanou metodu v jazyce C# pomocí rozhran
      }
     ```
 
-2.  V Průzkumníku testů, zvolte **spustit všechny**.
+2. V Průzkumníku testů, zvolte **spustit všechny**.
 
      Metoda v rámci testu smyčky a musí být ukončena ručně.
 
-3.  Zvolte **zrušit**.
+3. Zvolte **zrušit**.
 
      Test se ukončí po 10 sekundách.
 
-4.  Opravte kód metody:
+4. Opravte kód metody:
 
     ```csharp
 
@@ -240,13 +240,13 @@ Tento návod ukazuje, jak vyvinout testovanou metodu v jazyce C# pomocí rozhran
     ...
     ```
 
-5.  V Průzkumníku testů, zvolte **spustit všechny**.
+5. V Průzkumníku testů, zvolte **spustit všechny**.
 
      Všechny testy jsou úspěšné.
 
 #### <a name="refactor-without-changing-tests"></a>Refaktorujte beze změn testů
 
-1.  Zjednodušte kód, ale neměňte testy.
+1. Zjednodušte kód, ale neměňte testy.
 
     > [!TIP]
     > A *refaktoring* je změna, která slouží k provádění kódu líp fungovat nebo k srozumitelnější kód. Refaktorování není zamýšleno změnit chování kódu, a proto testy zůstávají nezměněny.
@@ -275,7 +275,7 @@ Tento návod ukazuje, jak vyvinout testovanou metodu v jazyce C# pomocí rozhran
     }
     ```
 
-2.  Zvolte **spustit všechny**.
+2. Zvolte **spustit všechny**.
 
      Všechny testy jsou stále úspěšné.
 

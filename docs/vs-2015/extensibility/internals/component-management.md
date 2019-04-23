@@ -11,12 +11,12 @@ ms.assetid: 029bffa2-6841-4caa-a41a-442467e1aedc
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c4667bd26db80c005605214eeca9e852a7705bdf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 56a110f382d0b182eed0ea1a95cd4dabf2877037
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54766725"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60090443"
 ---
 # <a name="component-management"></a>Správa komponent
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,23 +29,23 @@ Jednotky úloh v instalačním programu sady Windows se označují jako součás
   
 ## <a name="guidelines-of-authoring-setup-for-side-by-side-installation"></a>Pokyny k vytváření nastavení pro instalaci vedle sebe  
   
--   Autor soubory a klíče registru, které jsou odkazy sdíleny mezi verzí do jejich vlastních složek.  
+- Autor soubory a klíče registru, které jsou odkazy sdíleny mezi verzí do jejich vlastních složek.  
   
      To umožňuje snadno je můžou využívat v budoucí verzi. Knihovny typů, které jsou registrovány globálně, například souboru rozšíření, další položky, registrované v HKEY_CLASSES_ROOT a tak dále.  
   
--   Sdílené součásti pro seskupení samostatné slučovací moduly.  
+- Sdílené součásti pro seskupení samostatné slučovací moduly.  
   
      To pomáhá Autor správně pro side-by-side v budoucnu.  
   
--   Nainstalujte sdíleným souborům a klíčům registru pomocí stejné komponenty Instalační služby systému Windows ve verzích.  
+- Nainstalujte sdíleným souborům a klíčům registru pomocí stejné komponenty Instalační služby systému Windows ve verzích.  
   
      Pokud používáte jiné součásti, soubory a položky registru jsou odinstalovat, pokud jeden označené verzí balíčku VSPackage je odinstalována, ale jiné VSPackage je nainstalovaná.  
   
--   Nekombinujte čísly verzí a sdílené položky pod stejnou komponentou.  
+- Nekombinujte čísly verzí a sdílené položky pod stejnou komponentou.  
   
      To znemožňuje nainstalovat do globální umístění a verzované položky, které chcete izolované umístění sdílené položky.  
   
--   Není nutné klíče sdíleného registru, které odkazují na soubory označené verzí.  
+- Není nutné klíče sdíleného registru, které odkazují na soubory označené verzí.  
   
      Pokud tak učiníte, při instalaci jinou verzí balíčku VSPackage se přepíše sdílené klíče. Po odebrání druhou verzi souboru, ke kterému bude ukazovat klíč je pryč.  
   

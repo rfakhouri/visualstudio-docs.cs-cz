@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 74ccafda4600e08436e88bc66f8fd9177cc73401
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d66162b740aa9c6fbd284f44d5f93c88ebe8974d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55915702"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107571"
 ---
 # <a name="find-topics-by-using-the-help-viewer-index"></a>Hledání témat pomocí indexu aplikace Help Viewer
 
@@ -30,14 +30,14 @@ Index obsahuje seznam klíčových slov, které jsou spojeny s tématy v nainsta
 
 Na **Index** kartu, proveďte některý z následujících úloh:
 
--   Zadejte klíčové slovo chcete vyhledat v textovém poli. Zadejte například "" aktualizace a najděte témata s klíčovými slovy, jako je například "aktualizace," "aktualizace," a "aktualizace."
+- Zadejte klíčové slovo chcete vyhledat v textovém poli. Zadejte například "" aktualizace a najděte témata s klíčovými slovy, jako je například "aktualizace," "aktualizace," a "aktualizace."
 
     Kliknutím na tlačítko filtru v horní části karty můžete zobrazit všechny položky, které obsahují text, který zadáte, nebo pouze ty položky, které začínaly textem, který zadáte.
 
     > [!NOTE]
     > Jakmile se zobrazí tlačítko Filtr na tmavší pozadí s ohraničením, se musí _obsahovat_ text, který zadáte. Pokud se nezobrazují na pozadí a ohraničení, se musí _začínat_ text, který zadáte.
 
--   Projděte si index a zvolte klíčové slovo.
+- Projděte si index a zvolte klíčové slovo.
 
     Pokud je přidruženo pouze jedno téma klíčové slovo, které zadáte, zobrazí se. V opačném případě se zobrazí seznam všech témat, které jsou spojeny s tímto klíčovým slovem.
 
@@ -47,33 +47,33 @@ Pomocí indexu je procesu přímočaré. ale vědět, jak se nejlépe zadejte kl
 
 ### <a name="general-guidelines"></a>Obecné pokyny
 
--   Projděte si index položky. Ne všechna témata jsou indexovány stejným způsobem, a ten, který nejvíce může pomoci při může být vyšší nebo nižší v seznamu, než jste očekávali.
+- Projděte si index položky. Ne všechna témata jsou indexovány stejným způsobem, a ten, který nejvíce může pomoci při může být vyšší nebo nižší v seznamu, než jste očekávali.
 
--   Vynechte články, jako je například "e" nebo "the", protože je index ignoruje.
+- Vynechte články, jako je například "e" nebo "the", protože je index ignoruje.
 
--   Reverse slova, která zadáte Pokud nenajdete položky, které jste očekávali.
+- Reverse slova, která zadáte Pokud nenajdete položky, které jste očekávali.
 
     Pokud žádné odpovídající položky "ladění kódu vnořeného sestavení" nezobrazovala, zkuste například zadat, "sestavení kódu, ladění vloženého".
 
--   Použití filtrů s **Index** kartu ke snížení počtu výsledků.
+- Použití filtrů s **Index** kartu ke snížení počtu výsledků.
 
 ### <a name="syntax-tips"></a>Syntaxe tipy
 
 Pokud nenajdete položku slovo nebo frázi, které jste zadali, zkuste následující:
 
--   Zadejte první několik písmen, nebo kořenový slova. Zadáním dílčí řetězec můžete získat na témata, která byla indexované klíčová slova, která jsou množného nebo jednotného čísla.
+- Zadejte první několik písmen, nebo kořenový slova. Zadáním dílčí řetězec můžete získat na témata, která byla indexované klíčová slova, která jsou množného nebo jednotného čísla.
 
     Zadejte například "vlastnosti" spusťte hledání nad vlastnosti a vlastnosti.
 
--   Zadejte gerund (-ing) formy akce pro úlohu chcete provést. Chcete-li najít konkrétnější index položky, přidejte slovo, které popisuje přesně to, co chcete.
+- Zadejte gerund (-ing) formy akce pro úlohu chcete provést. Chcete-li najít konkrétnější index položky, přidejte slovo, které popisuje přesně to, co chcete.
 
     Zadejte například "spuštěno", chcete-li získat další položky nebo "spuštěné programy" získat méně.
 
--   Zadejte přídavných samostatné jmen. Chcete-li zúžit výsledky, přidejte slovo, které popisuje přesně to, co chcete.
+- Zadejte přídavných samostatné jmen. Chcete-li zúžit výsledky, přidejte slovo, které popisuje přesně to, co chcete.
 
     Zadejte například "Modelu COM +" získat širokou škálu položky nebo "komponenty modelu COM +" získat méně.
 
--   Zadejte synonymum aplikace word nebo příkaz, který hledáte.
+- Zadejte synonymum aplikace word nebo příkaz, který hledáte.
 
     Pokud zadáte termín "sestavení", zkuste například "vytváření" místo.
 

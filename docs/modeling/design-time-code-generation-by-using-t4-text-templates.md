@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8187fbfce9492623df5d998acd0bb4279b7ce0d2
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: b4cfca45d2ad1979b091c668854990ce9a7c0311
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59657464"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60090417"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>Vytvoření kódu v době návrhu pomocí textových šablon T4
 Textové šablony T4 návrhu umožňují generování programového kódu a další soubory v projektu sady Visual Studio. Obvykle píšete šablony tak, aby se lišily kód, který se generují podle dat z *modelu*. Model je soubor nebo databázi, která obsahuje základní informace o podle požadavků vaší aplikace.
@@ -141,9 +141,9 @@ Textové šablony umožňují odlišit obsah generovaný soubor pomocí kódu pr
 
 #### <a name="to-generate-program-code-or-resources"></a>Ke generování programového kódu nebo prostředkům
 
-1.  Změňte – direktiva output vygenerovat soubor příslušného typu, například cs, VB, .resx nebo XML.
+1. Změňte – direktiva output vygenerovat soubor příslušného typu, například cs, VB, .resx nebo XML.
 
-2.  Vložte kód, který bude generování kódu řešení, která požadujete. Například, pokud chcete generovat tři deklarace pole celé číslo v třídě:
+2. Vložte kód, který bude generování kódu řešení, která požadujete. Například, pokud chcete generovat tři deklarace pole celé číslo v třídě:
 
     ```csharp
 
@@ -176,7 +176,7 @@ Textové šablony umožňují odlišit obsah generovaný soubor pomocí kódu pr
 
     ```
 
-3.  Uložte soubor a zkontrolujte vygenerovaný soubor, který nyní obsahuje následující kód:
+3. Uložte soubor a zkontrolujte vygenerovaný soubor, který nyní obsahuje následující kód:
 
     ```csharp
     class MyGeneratedClass {

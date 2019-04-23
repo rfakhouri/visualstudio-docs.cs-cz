@@ -11,12 +11,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 03b2cf5b03ea7f2cfc2d8fa90346ac47c1e4ae84
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0d58a8b98cb27527f3d4c464119fb5543f88e8ed
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54755260"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088974"
 ---
 # <a name="generate-files-from-a-uml-model"></a>Generování souborů z modelu UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Z modelu UML můžete generovat kód programu, schémata, dokumenty, prostředky
   
   Toto téma končí diskusi o [použití generování textu](#What). Další informace najdete v tématu [generování kódu a textové šablony T4](../modeling/code-generation-and-t4-text-templates.md).  
   
-##  <a name="Command"></a> Generování souborů z příkazu nabídky  
+## <a name="Command"></a> Generování souborů z příkazu nabídky  
  Můžete použít předzpracování textové šablony v rámci příkazu nabídky UML. V rámci kódu textové šablony, nebo v samostatné částečné třídy si můžete přečíst model, který je zobrazit v diagramu.  
   
  Další informace o těchto funkcích najdete v následujících tématech:  
@@ -134,37 +134,37 @@ Type Class2 ::
           Attribute3 : string   
 ```  
   
-##  <a name="Application"></a> Generování souborů z aplikace  
+## <a name="Application"></a> Generování souborů z aplikace  
  Generování souborů z aplikace, který čte UML model. Pro tento účel je nejvíce pružnější a odolnější metoda přístupu k modelu a jeho prvky [Visual Studio Modelbus](../modeling/integrate-uml-models-with-other-models-and-tools.md).  
   
  Můžete také použít rozhraní API základní načíst model a být model předán do textových šablon pomocí stejné postupy jako v předchozí části. Další informace o načtení modelu najdete v tématu [čtení modelu UML v programovém kódu](../modeling/read-a-uml-model-in-program-code.md).  
   
-##  <a name="Design"></a> Generování souborů v době návrhu  
+## <a name="Design"></a> Generování souborů v době návrhu  
  Pokud má váš projekt standardní způsob interpretace UML jako kód, můžete vytvořit textových šablon, které vám umožňují generování kódu v rámci svého projektu z modelu UML. Obvykle by mít řešení, které obsahuje projekt modelu UML a jeden nebo více projektů pro kód aplikace. Každý Kódový projekt může obsahovat několik šablon, které generují program kód, prostředky a konfigurační soubory, na základě obsahu modelu. Vývojář můžete spustit všechny šablony kliknutím **Transformovat všechny šablony** v panelu nástrojů Průzkumníka řešení. Kód programu je obvykle generují v podobě částečné třídy, aby byl snadno integrovat ručně psanou částí.  
   
  A [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] projektu tento typ lze distribuovat ve formě šablonu, tak, aby každý člen týmu je schopna vytvářet projekty, které generují kód z modelu stejným způsobem. Šablona je obvykle součást rozšíření balíčku, který obsahuje omezení ověření v modelu, který má Ujistěte se, že jsou splněné předpoklady generování kódu.  
   
 ### <a name="outline-procedure-for-generating-files"></a>Popisují postup pro generování souborů  
   
--   Chcete-li přidat šablonu do projektu, **textové šablony** v dialogovém okně Přidat nový soubor. Přidat šablonu pro většinu typů projektu, ale ne projekty modelování.  
+- Chcete-li přidat šablonu do projektu, **textové šablony** v dialogovém okně Přidat nový soubor. Přidat šablonu pro většinu typů projektu, ale ne projekty modelování.  
   
--   Nástroje pro vlastní vlastnost souboru šablony by měla být **TextTemplatingFileGenerator**, a příponu názvu souboru by měla být .tt.  
+- Nástroje pro vlastní vlastnost souboru šablony by měla být **TextTemplatingFileGenerator**, a příponu názvu souboru by měla být .tt.  
   
--   Šablona by měla obsahovat alespoň – direktiva output:  
+- Šablona by měla obsahovat alespoň – direktiva output:  
   
      `<#@ output extension=".cs" #>`  
   
      Nastavte pole rozšíření podle jazyka vašeho projektu.  
   
--   Chcete-li povolit generování kódu v šabloně pro přístup k modelu, napište `<#@ assembly #>` direktivy pro sestavení potřebná pro čtení modelu UML. Použití `ModelingProject.LoadReadOnly()` a otevřete model. Další informace najdete v tématu [čtení modelu UML v programovém kódu](../modeling/read-a-uml-model-in-program-code.md).  
+- Chcete-li povolit generování kódu v šabloně pro přístup k modelu, napište `<#@ assembly #>` direktivy pro sestavení potřebná pro čtení modelu UML. Použití `ModelingProject.LoadReadOnly()` a otevřete model. Další informace najdete v tématu [čtení modelu UML v programovém kódu](../modeling/read-a-uml-model-in-program-code.md).  
   
--   Šablona se spustí, až uložíte a po kliknutí na **Transformovat všechny šablony** v panelu nástrojů Průzkumníka řešení.  
+- Šablona se spustí, až uložíte a po kliknutí na **Transformovat všechny šablony** v panelu nástrojů Průzkumníka řešení.  
   
--   Další informace o tomto typu šablony najdete v tématu [vytvoření kódu v době návrhu pomocí textových šablon T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md).  
+- Další informace o tomto typu šablony najdete v tématu [vytvoření kódu v době návrhu pomocí textových šablon T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md).  
   
--   Obvyklou pro projekty je třeba několik šablon, které generují různé soubory ze stejného modelu. První část každé šablony budou stejné. Snížit tyto duplikace, přesuňte společné části do samostatných textového souboru a pak ho vyvolat pomocí direktivy `<#@include file="common.txt"#>` v každé šabloně.  
+- Obvyklou pro projekty je třeba několik šablon, které generují různé soubory ze stejného modelu. První část každé šablony budou stejné. Snížit tyto duplikace, přesuňte společné části do samostatných textového souboru a pak ho vyvolat pomocí direktivy `<#@include file="common.txt"#>` v každé šabloně.  
   
--   Můžete také definovat specializované procesoru direktiv, který umožňuje zadat parametry pro proces generování textu. Další informace najdete v tématu [přizpůsobení transformace textu T4](../modeling/customizing-t4-text-transformation.md).  
+- Můžete také definovat specializované procesoru direktiv, který umožňuje zadat parametry pro proces generování textu. Další informace najdete v tématu [přizpůsobení transformace textu T4](../modeling/customizing-t4-text-transformation.md).  
   
 ### <a name="example"></a>Příklad  
  Tento příklad vygeneruje třídy C# pro každou třídu modelu UML v modelu zdroje.  
@@ -173,19 +173,19 @@ Type Class2 ::
   
 1. Vytvoření diagramu tříd UML v projektu modelování v novém řešení.  
   
-   1.  V **architektura** nabídky, klikněte na tlačítko **nový Diagram**.  
+   1. V **architektura** nabídky, klikněte na tlačítko **nový Diagram**.  
   
-   2.  Vyberte **Diagram tříd UML**.  
+   2. Vyberte **Diagram tříd UML**.  
   
-   3.  Postupujte podle pokynů k vytvoření nového řešení a modelování projektu.  
+   3. Postupujte podle pokynů k vytvoření nového řešení a modelování projektu.  
   
-   4.  Přidáte některé třídy do diagramu přetažením nástroj třída UML z panelu nástrojů.  
+   4. Přidáte některé třídy do diagramu přetažením nástroj třída UML z panelu nástrojů.  
   
-   5.  Uložte soubor.  
+   5. Uložte soubor.  
   
 2. Vytvoření projektu jazyka C# nebo Visual Basic ve stejném řešení.  
   
-   -   V Průzkumníku řešení klikněte pravým tlačítkem na řešení, přejděte na **přidat**a potom klikněte na tlačítko **nový projekt**. V části **nainstalované šablony**, klikněte na tlačítko **jazyka Visual Basic** nebo **Visual C#,** a pak vyberte typ projektu, jako je například **konzolovou aplikaci**.  
+   - V Průzkumníku řešení klikněte pravým tlačítkem na řešení, přejděte na **přidat**a potom klikněte na tlačítko **nový projekt**. V části **nainstalované šablony**, klikněte na tlačítko **jazyka Visual Basic** nebo **Visual C#,** a pak vyberte typ projektu, jako je například **konzolovou aplikaci**.  
   
 3. C# nebo Visual Basic projektu přidáte soubor s prostým textem. Tento soubor bude obsahovat kód, který je sdílen, pokud chcete zadat několik textových šablon.  
   
@@ -203,9 +203,9 @@ Type Class2 ::
   
 6. Prozkoumejte kód v souboru pobočkách. Měl by obsahovat třídu pro každou třídu modelu UML v modelu.  
   
-   1.  V projektu jazyka Visual Basic, klikněte na tlačítko **zobrazit všechny soubory** v panelu nástrojů Průzkumníka řešení.  
+   1. V projektu jazyka Visual Basic, klikněte na tlačítko **zobrazit všechny soubory** v panelu nástrojů Průzkumníka řešení.  
   
-   2.  Rozbalte uzel soubor šablony v Průzkumníku řešení.  
+   2. Rozbalte uzel soubor šablony v Průzkumníku řešení.  
   
 #### <a name="content-of-the-shared-text-file"></a>Obsah sdílený textového souboru  
  V tomto příkladu soubor se nazývá SharedTemplateCode.txt a je ve stejné složce jako textové šablony.  
@@ -296,23 +296,23 @@ namespace Test{
 }  
 ```  
   
-##  <a name="What"></a> Jak používat generování textu  
+## <a name="What"></a> Jak používat generování textu  
  Skutečná síla modelování získáte při použití modelů pro návrh na úrovni požadavků nebo architektury. Textové šablony můžete provést určitou část práce převodu vysoké úrovně své nápady do kódu. V mnoha případech to nenastane shoda mezi prvky v modelech UML a třídy nebo jiných částí kódu programu.  
   
  Kromě toho transformace závisí na vaší domény problém. neexistuje žádný univerzální mapování mezi modely a kódu.  
   
  Tady jsou některé příklady generování kódu z modelů:  
   
--   **Produktové řady**. Fabrikam, Inc. vytvoří a nainstaluje letiště sobě systémy zpracování. Velká část softwaru je velmi podobné mezi jedna instalace a další, ale konfigurace softwaru závisí na jaké kontejner objektů a dat zpracování strojů je nainstalován, a jak tyto části jsou propojeny pomocí dopravní pásy. Na začátku kontrakt analytici společnosti Fabrikam požadavky se správou letišti a zachycení plán hardwaru pomocí diagram činností UML. Z tohoto modelu vývojový tým generuje konfigurační soubory, programový kód, plány a dokumenty uživatele. Dokončení práce podle ruční přidání a úpravy kódu. Jak získávají prostředí z jednoho projektu do druhého, jejich rozšíření oboru generované materiálu.  
+- **Produktové řady**. Fabrikam, Inc. vytvoří a nainstaluje letiště sobě systémy zpracování. Velká část softwaru je velmi podobné mezi jedna instalace a další, ale konfigurace softwaru závisí na jaké kontejner objektů a dat zpracování strojů je nainstalován, a jak tyto části jsou propojeny pomocí dopravní pásy. Na začátku kontrakt analytici společnosti Fabrikam požadavky se správou letišti a zachycení plán hardwaru pomocí diagram činností UML. Z tohoto modelu vývojový tým generuje konfigurační soubory, programový kód, plány a dokumenty uživatele. Dokončení práce podle ruční přidání a úpravy kódu. Jak získávají prostředí z jednoho projektu do druhého, jejich rozšíření oboru generované materiálu.  
   
--   **Vzory**. Vývojáři ve společnosti Contoso, Ltd často vytvářet weby a navrhnout navigační schéma používání diagramů tříd UML. Každá webová stránka je reprezentován třídou a asociace reprezentují navigační odkazy. Vývojáři generovat velkou část kódu webové stránky z modelu. Každé webové stránky odpovídá několik tříd a položkách souboru prostředků.  Tato metoda má výhody, které konstrukce každou stránku odpovídá jedné vzor, spolehlivé a flexibilní než ručně psanou kódu. Vzor je v generování šablon, ale model se používá k zachycení proměnné aspekty.  
+- **Vzory**. Vývojáři ve společnosti Contoso, Ltd často vytvářet weby a navrhnout navigační schéma používání diagramů tříd UML. Každá webová stránka je reprezentován třídou a asociace reprezentují navigační odkazy. Vývojáři generovat velkou část kódu webové stránky z modelu. Každé webové stránky odpovídá několik tříd a položkách souboru prostředků.  Tato metoda má výhody, které konstrukce každou stránku odpovídá jedné vzor, spolehlivé a flexibilní než ručně psanou kódu. Vzor je v generování šablon, ale model se používá k zachycení proměnné aspekty.  
   
--   **Schémata**. ABC pojištění obsahuje tisíce systémy po celém světě. Tyto systémy pomocí různých databází, jazyků a rozhraní. Centrální architektura týmu publikuje interně modely obchodních konceptů a procesů. Z těchto modelů místní týmy generovat část jejich databáze a výměnu schémata, deklarace v programovém kódu a tak dále. Grafické znázornění modely pomáhá týmům projednat návrhy. Týmy vytvořit více diagramů, které ukazují podmnožiny modelu, které se vztahují na různé obchodní oblasti. Také používají barevné zvýraznění oblastí může změnit.  
+- **Schémata**. ABC pojištění obsahuje tisíce systémy po celém světě. Tyto systémy pomocí různých databází, jazyků a rozhraní. Centrální architektura týmu publikuje interně modely obchodních konceptů a procesů. Z těchto modelů místní týmy generovat část jejich databáze a výměnu schémata, deklarace v programovém kódu a tak dále. Grafické znázornění modely pomáhá týmům projednat návrhy. Týmy vytvořit více diagramů, které ukazují podmnožiny modelu, které se vztahují na různé obchodní oblasti. Také používají barevné zvýraznění oblastí může změnit.  
   
 ## <a name="important-techniques-for-generating-artifacts"></a>Důležité technik pro generování artefaktů  
  V předchozích příkladech se používají modely pro různé účely závislé na obchodní a výklad modelování prvků, jako jsou třídy a aktivity se liší od jedné aplikace do jiné. Následující postupy jsou užitečné při generování artefakty z modelů.  
   
--   **Profily**. Dokonce i v rámci jednoho pracovního prostoru se může lišit výklad typ elementu. Například v diagramu webu některé třídy může představovat webových stránek a dalších představují bloky obsahu. Chcete-li usnadnit uživatelům zaznamenat tyto rozdíly, definujte stereotypy. Stereotypy také umožňují připojit další vlastnosti, které se vztahují na elementy tohoto typu. V rámci profily jsou zabaleny stereotypy. Další informace najdete v tématu [definování profilu pro rozšíření UML](../modeling/define-a-profile-to-extend-uml.md).  
+- **Profily**. Dokonce i v rámci jednoho pracovního prostoru se může lišit výklad typ elementu. Například v diagramu webu některé třídy může představovat webových stránek a dalších představují bloky obsahu. Chcete-li usnadnit uživatelům zaznamenat tyto rozdíly, definujte stereotypy. Stereotypy také umožňují připojit další vlastnosti, které se vztahují na elementy tohoto typu. V rámci profily jsou zabaleny stereotypy. Další informace najdete v tématu [definování profilu pro rozšíření UML](../modeling/define-a-profile-to-extend-uml.md).  
   
      V kódu šablony se snadno k datům Stereotypy, které jsou definovány pro objekt. Příklad:  
   
@@ -322,14 +322,14 @@ namespace Test{
        (s => s.Profile == profile && s.Name == stereo ); }  
     ```  
   
--   **Omezené modely**. Ne všechny modely, které můžete vytvořit jsou platné pro všechny účely. Například v modelech sobě letiště společnosti Fabrikam, je nesprávná mít helpdesku vrácení se změnami bez odchozí dopravní. Můžete definovat ověřovací funkce, které pomáhají uživatelům dodržovat těchto omezení. Další informace najdete v tématu [definovat omezení ověření pro modely UML](../modeling/define-validation-constraints-for-uml-models.md).  
+- **Omezené modely**. Ne všechny modely, které můžete vytvořit jsou platné pro všechny účely. Například v modelech sobě letiště společnosti Fabrikam, je nesprávná mít helpdesku vrácení se změnami bez odchozí dopravní. Můžete definovat ověřovací funkce, které pomáhají uživatelům dodržovat těchto omezení. Další informace najdete v tématu [definovat omezení ověření pro modely UML](../modeling/define-validation-constraints-for-uml-models.md).  
   
--   **Zachovat ruční změny**. Pouze některé soubory řešení mohou být generovány z modelu. Ve většině případů musíte být schopni přidat nebo upravit vygenerovaný obsah ručně. Je ale důležité, že tyto ručních změn by měla být zachována při dalším spuštění transformace šablony.  
+- **Zachovat ruční změny**. Pouze některé soubory řešení mohou být generovány z modelu. Ve většině případů musíte být schopni přidat nebo upravit vygenerovaný obsah ručně. Je ale důležité, že tyto ručních změn by měla být zachována při dalším spuštění transformace šablony.  
   
      Pokud vaše šablony generování kódu v [!INCLUDE[TLA2#tla_net](../includes/tla2sharptla-net-md.md)] jazyky, by měl generovat částečné třídy tak, aby vývojáři mohou přidat, metody a kódu. Je také užitečné vygenerovat každá třída jako dvojice: abstraktní základní třídu obsahující metody a dědičné třídě, která obsahuje pouze konstruktor. To umožňuje vývojářům přepsání metod. Povolit pro inicializaci přepsání, to se provádí v samostatné metodě, místo v konstruktory.  
   
      Pokud šablonu generuje XML a další typy výstupu, může být obtížné zachovat ruční obsah odděleně od vygenerovaný obsah. Jedním ze způsobů je k vytvoření úlohy v procesu sestavení, která kombinuje dva soubory. Jinou metodou je pro vývojáře, chcete-li upravit místní kopii generování šablony.  
   
--   **Přesunout kód do samostatné sestavení**. Nedoporučujeme zápis velké části kódu v šablonách. Doporučuje se oddělovat generovaný obsah z výpočtu a textové šablony nejsou podporovány také pro úpravy kódu.  
+- **Přesunout kód do samostatné sestavení**. Nedoporučujeme zápis velké části kódu v šablonách. Doporučuje se oddělovat generovaný obsah z výpočtu a textové šablony nejsou podporovány také pro úpravy kódu.  
   
      Místo toho pokud je nutné provést značné výpočty vygenerování textu, vytvoření těchto funkcí v samostatném sestavení a volat jeho metody ze šablony.

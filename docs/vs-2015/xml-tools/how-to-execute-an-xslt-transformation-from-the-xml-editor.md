@@ -9,12 +9,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cf4696827f0c94e9eb9dfbd88a5e814298f823e1
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: ec546997d5c6ff75a3ccba1e60e9fe7a4b5b7c74
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649521"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112595"
 ---
 # <a name="how-to-execute-an-xslt-transformation-from-the-xml-editor"></a>Postupy: Provedení transformace XSLT z editoru XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,17 +27,17 @@ XML Editor lze přidružit k dokumentu XML, šablony stylů XSLT provedení tran
   
 ### <a name="to-execute-an-xslt-transformation-from-an-xml-document"></a>K provedení transformace XSLT z dokumentu XML  
   
-1.  Otevřete dokument XML v editoru XML.  
+1. Otevřete dokument XML v editoru XML.  
   
-2.  Šablony stylů XSLT přidružte k dokumentu XML.  
+2. Šablony stylů XSLT přidružte k dokumentu XML.  
   
-    -   Přidat `xml-stylesheet` zpracování instrukcí v dokumentu XML. Například přidejte následující řádek `<?xml-stylesheet type='text/xsl' href='filename.xsl'?>` do kódu prologu dokumentu.  
+    - Přidat `xml-stylesheet` zpracování instrukcí v dokumentu XML. Například přidejte následující řádek `<?xml-stylesheet type='text/xsl' href='filename.xsl'?>` do kódu prologu dokumentu.  
   
          -nebo-  
   
-    -   Přidat list Styl XSLT pomocí **vlastnosti** okna. V dokumentu **okno vlastností**, klikněte na tlačítko **Procházet** tlačítko pro **šablony stylů** pole, vyberte šablony stylů XSLT a klikněte na tlačítko **otevřete**.  
+    - Přidat list Styl XSLT pomocí **vlastnosti** okna. V dokumentu **okno vlastností**, klikněte na tlačítko **Procházet** tlačítko pro **šablony stylů** pole, vyberte šablony stylů XSLT a klikněte na tlačítko **otevřete**.  
   
-3.  Klikněte na tlačítko **ShowXSL výstup** tlačítko **editoru XML** nástrojů.  
+3. Klikněte na tlačítko **ShowXSL výstup** tlačítko **editoru XML** nástrojů.  
   
     > [!NOTE]
     >  Pokud není k dispozici žádné šablony stylů přidružené k dokumentu XML, dialogové okno zobrazí výzvu k zadání šablony stylů k použití.  
@@ -46,22 +46,22 @@ XML Editor lze přidružit k dokumentu XML, šablony stylů XSLT provedení tran
   
 ### <a name="to-execute-an-xslt-transformation-from-an-xslt-style-sheet"></a>K provedení transformace XSLT z šablony stylů XSLT  
   
-1.  Otevření šablony stylů XSLT v editoru XML.  
+1. Otevření šablony stylů XSLT v editoru XML.  
   
-2.  Zadejte v dokumentu XML **vstup** pole dokumentu **vlastnosti** okna.  
+2. Zadejte v dokumentu XML **vstup** pole dokumentu **vlastnosti** okna.  
   
     > [!NOTE]
     >  Dokument XML je vstupní dokument použitý pro transformaci. Pokud dokument není zadán při spuštění transformace XSLT **otevřít soubor** zobrazí se dialogové okno a zadáte dokumentu v daném čase.  
   
-3.  Klikněte na tlačítko **ShowXSLT výstup** tlačítko **editoru XML** nástrojů.  
+3. Klikněte na tlačítko **ShowXSLT výstup** tlačítko **editoru XML** nástrojů.  
   
      Výsledný výstup z transformace XSLT se zobrazí v novém okně dokumentu.  
   
 ### <a name="to-provide-a-different-output-file-name"></a>Jako název jiný výstupní soubor  
   
-1.  Zadejte název souboru v **výstup** pole dokumentu **vlastnosti** okna.  
+1. Zadejte název souboru v **výstup** pole dokumentu **vlastnosti** okna.  
   
-2.  Klikněte na tlačítko **ShowXSLT výstup** tlačítko **editoru XML** nástrojů.  
+2. Klikněte na tlačítko **ShowXSLT výstup** tlačítko **editoru XML** nástrojů.  
   
      Výsledný výstup z transformace XSLT se zobrazí v novém okně dokumentu a editor používaný v okně výstupu závisí na příponu souboru vaší **výstup** vlastnost dokumentu.  
   

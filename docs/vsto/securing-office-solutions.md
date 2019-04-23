@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8e2f164135ab6b7f187b2b5967eca4faf747f37e
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 31a17fdf51e838405c93efca79d7994cd40ece5c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54871179"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107616"
 ---
 # <a name="secure-office-solutions"></a>Zabezpečení řešení pro systém Office
   Model zabezpečení pro Office řešení zahrnuje několik technologií: [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)], [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)], v Centru zabezpečení v Microsoft Office a zónu lokalit s omezeným přístupem aplikace Internet Explorer. Následující části popisují, jak fungují různé funkce zabezpečení:
@@ -38,7 +38,7 @@ ms.locfileid: "54871179"
 
   [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
-##  <a name="GrantingTrustToSolutions"></a> Zajistit jeho důvěryhodnost do řešení pro systém Office
+## <a name="GrantingTrustToSolutions"></a> Zajistit jeho důvěryhodnost do řešení pro systém Office
  Muselo důvěřovat řešení pro systém Office znamená, že úprava zásady zabezpečení jednotlivých koncových uživatelů důvěřovat řešení pro Office podle následujících informací:
 
 - Certifikát použitý k podepsání manifestu nasazení.
@@ -47,16 +47,16 @@ ms.locfileid: "54871179"
 
   Další informace najdete v tématu [zajištění důvěryhodnosti řešení pro systém Office](../vsto/granting-trust-to-office-solutions.md).
 
-##  <a name="GrantingTrustToDocuments"></a> Zajistit jeho důvěryhodnost do dokumentů
+## <a name="GrantingTrustToDocuments"></a> Zajistit jeho důvěryhodnost do dokumentů
  Přizpůsobení úrovni dokumentu vyžaduje, aby v adresáři, který je určený jako důvěryhodné umístění dokumentu. Další informace najdete v tématu [udělit důvěryhodnost dokumenty](../vsto/granting-trust-to-documents.md).
 
-##  <a name="GrantingTrustWindowsInstaller"></a> Zajistit jeho důvěryhodnost při použití Instalační služby systému Windows
+## <a name="GrantingTrustWindowsInstaller"></a> Zajistit jeho důvěryhodnost při použití Instalační služby systému Windows
  Instalační služby systému Windows slouží k vytvoření soubor MSI, který chcete nainstalovat řešení pro systém Office v adresáři Program Files, což vyžaduje oprávnění správce. Pro řešení pro systém Office v adresáři Program Files Visual Studio 2010 Tools for Office runtime bere v úvahu tyto řešení Office na důvěryhodné a nezobrazuje výzvy důvěryhodnosti ClickOnce.
 
-##  <a name="Security"></a> Specifické aspekty zabezpečení pro řešení pro systém Office
+## <a name="Security"></a> Specifické aspekty zabezpečení pro řešení pro systém Office
  Funkcích zabezpečení poskytovaných [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)], [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)], a Microsoft Office může pomoct chránit proti různým druhům možné bezpečnostní hrozby v řešeních pro systém Office. Další informace najdete v tématu [specifické aspekty zabezpečení pro řešení Office](../vsto/specific-security-considerations-for-office-solutions.md).
 
-##  <a name="SecurityDuringDeployment"></a> Zabezpečení během vývoje.
+## <a name="SecurityDuringDeployment"></a> Zabezpečení během vývoje.
  Abychom usnadnili vašeho vývojového procesu, Visual Studio nastaví zásady zabezpečení, které je potřeba spustit a ladit vaše řešení ve vašem počítači pokaždé, když sestavení projektu. V některých případech můžete potřebovat udělat dodatečné zabezpečení k vývoji projektu.
 
 ### <a name="document-level-solutions"></a>Řešení na úrovni dokumentu
@@ -75,7 +75,7 @@ ms.locfileid: "54871179"
 
  Po chvíli se může být velký počet certifikátů dočasné tak dočasné certifikáty byste měli vymazat čas od času.
 
-##  <a name="VisualStudioToolsForOfficeRuntime"></a> Visual Studio Tools for Office runtime
+## <a name="VisualStudioToolsForOfficeRuntime"></a> Visual Studio Tools for Office runtime
  [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Obsahuje funkce, které chcete ověřit identitu vydavatele a oprávnění, která jsou udělena pro přizpůsobení. Ověřuje tato oprávnění pomocí sekvence kontroly zabezpečení.
 
 ### <a name="security-during-customization-loading"></a>Zabezpečení během načítání vlastního nastavení

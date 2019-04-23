@@ -5,12 +5,12 @@ ms.topic: conceptual
 ms.assetid: dedf0173-197e-4258-ae5a-807eb3abc952
 caps.latest.revision: 9
 ms.author: gregvanl
-ms.openlocfilehash: 7de79fbbd5221a75bec1e168c22e687ddc9c7ffa
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f59838913ed3f9bc6679336393f6db9181291e3d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54771851"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091665"
 ---
 # <a name="how-to-use-asyncpackage-to-load-vspackages-in-the-background"></a>Postupy: Použití AsyncPackage k načtení rozšíření VSPackages na pozadí
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,11 +75,11 @@ public sealed class TestPackage : AsyncPackage
 ## <a name="convert-an-existing-vspackage-to-asyncpackage"></a>Převod existujícího balíčku VSPackage AsyncPackage  
  Většina práce je stejné jako vytvoření nového **AsyncPackage**. Budete muset postupovat podle kroků 1 až 5 výše. Také je potřeba provést další upozornění na následující:  
   
-1.  Nezapomeňte odebrat **inicializovat** přepsání, které jste měli v balíčku.  
+1. Nezapomeňte odebrat **inicializovat** přepsání, které jste měli v balíčku.  
   
-2.  Zabránilo zablokování: To může být skrytá RPC ve vašem kódu, který teď provádělo na vlákně na pozadí. Je třeba Ujistěte se, že pokud provádíte vzdáleného volání Procedur (například **GetService**), budete muset buď (1) přepněte na hlavním vlákně, nebo (2), použijte asynchronní verze rozhraní API, pokud existuje (například **GetServiceAsync**).  
+2. Zabránilo zablokování: To může být skrytá RPC ve vašem kódu, který teď provádělo na vlákně na pozadí. Je třeba Ujistěte se, že pokud provádíte vzdáleného volání Procedur (například **GetService**), budete muset buď (1) přepněte na hlavním vlákně, nebo (2), použijte asynchronní verze rozhraní API, pokud existuje (například **GetServiceAsync**).  
   
-3.  Přepnutí mezi vlákny příliš často. Došlo k pokusu o lokalizaci práci, kterou může dojít ve vlákně na pozadí. To snižuje čas načítání.  
+3. Přepnutí mezi vlákny příliš často. Došlo k pokusu o lokalizaci práci, kterou může dojít ve vlákně na pozadí. To snižuje čas načítání.  
   
 ## <a name="querying-services-from-asyncpackage"></a>Dotazování služby z AsyncPackage  
  **AsyncPackage** může nebo nemusí načíst asynchronně v závislosti na volajícího. Pro instanci  

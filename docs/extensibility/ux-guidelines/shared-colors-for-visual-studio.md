@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 89c4a4a25c2dfdeb33bfadcf8416a0cbc4726658
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 5ce63a9f5ab04748975521c225d207bee2b0937b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649951"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089550"
 ---
 # <a name="shared-colors-for-visual-studio"></a>Sdílené barvy pro Visual Studio
 Když vytváříte uživatelské rozhraní, které používá běžné prvky prostředí Visual Studio nebo prvek rozhraní konzistentní s podobnými funkcemi, například, vybrat a přiřadit barvy pomocí existující token názvy v souborech s definicí balíčku. Tím se zajistí, že vaše uživatelské rozhraní zůstane konzistentní s celkové prostředí sady Visual Studio a že se automaticky aktualizuje při přidávání nebo aktualizaci motivy.
@@ -22,11 +22,11 @@ Tento článek popisuje obecné prvky uživatelského rozhraní a token názvy, 
 
 Nezapomeňte použít token názvy správně:
 
--   **Používejte token názvy založené na funkce, nikoli na vlastní barvu.** Společné sdílené barvy jsou spojeny s prvky určité rozhraní a jsou určeny pouze pro stejné nebo podobné funkce. Například nepoužívejte soubory Barva při stisknutí tlačítka pole se seznamem pro animace průběhu pokryjte pouze z důvodu jako barva. Funkce pole se seznamem a animace jsou různé a pokud barvu přidružené změny pole se seznamem, může již být vhodnou barvu pro prvek animace. Konzistentní použití barev pomůže zorientovat uživatelům a zabránit nejasnostem.
+- **Používejte token názvy založené na funkce, nikoli na vlastní barvu.** Společné sdílené barvy jsou spojeny s prvky určité rozhraní a jsou určeny pouze pro stejné nebo podobné funkce. Například nepoužívejte soubory Barva při stisknutí tlačítka pole se seznamem pro animace průběhu pokryjte pouze z důvodu jako barva. Funkce pole se seznamem a animace jsou různé a pokud barvu přidružené změny pole se seznamem, může již být vhodnou barvu pro prvek animace. Konzistentní použití barev pomůže zorientovat uživatelům a zabránit nejasnostem.
 
--   **Barvy textu a pozadí pomocí správné kombinace.** Barvy pozadí, které jsou určeny pro použití s textem bude mít k přidružené textového barvu. Nepoužívejte barvy textu, než který je určen pro pozadí. Pokud není k dispozici barva příslušný text, nepoužívejte tuto barvu pozadí svého povrchu, kdy očekáváte, že k zobrazení textu. Nečitelný rozhraní může způsobit jiné kombinace barev textu a pozadí.
+- **Barvy textu a pozadí pomocí správné kombinace.** Barvy pozadí, které jsou určeny pro použití s textem bude mít k přidružené textového barvu. Nepoužívejte barvy textu, než který je určen pro pozadí. Pokud není k dispozici barva příslušný text, nepoužívejte tuto barvu pozadí svého povrchu, kdy očekáváte, že k zobrazení textu. Nečitelný rozhraní může způsobit jiné kombinace barev textu a pozadí.
 
--   **Pomocí řízení barvy, které jsou vhodné pro jejich umístění.** V některých státech některé ovládací prvky Visual Studio nemají samostatné ohraničení a barvy pozadí. Místo toho že sbírání tyto barvy z plochy za nimi stojí. Ujistěte se, že vždy používáte token názvy, které jsou vhodné pro umístění, ve kterém jsou umístění ovládacího prvku.
+- **Pomocí řízení barvy, které jsou vhodné pro jejich umístění.** V některých státech některé ovládací prvky Visual Studio nemají samostatné ohraničení a barvy pozadí. Místo toho že sbírání tyto barvy z plochy za nimi stojí. Ujistěte se, že vždy používáte token názvy, které jsou vhodné pro umístění, ve kterém jsou umístění ovládacího prvku.
 
 > [!IMPORTANT]
 > Nepoužívejte tokeny, které jsou nalezeny v kategoriích "Úvodní stránka" nebo "Jablečného."
@@ -307,7 +307,7 @@ Záhlaví sloupců se skládají z na pozadí, ohraničení, text nadpisu a voli
 | --- | --- |
 | Pozadí | `TreeView.SelectedItemActive` |
 | Popředí (Text) | `TreeView.SelectedItemActiveText` |
-| Ohraničení | Žádný |
+| Ohraničení | Žádné |
 
 **Seznam položek k zobrazení: neaktivním stavu**
 
@@ -623,13 +623,13 @@ Kdykoli je to možné, použijte běžný ovládací prvek vyhledávání poskyt
 
 Vyhledávací pole může být jedna z několika státy, z nichž některé se vzájemně vylučují:
 
--   "Zaměřuje" nebo "bez fokusu" odkazuje na Určuje, jestli je kurzor v textovém poli.
+- "Zaměřuje" nebo "bez fokusu" odkazuje na Určuje, jestli je kurzor v textovém poli.
 
--   "Aktivní" nebo "neaktivní" odkazuje na tom, jestli uživatel zadal vyhledávací dotaz v textovém poli.
+- "Aktivní" nebo "neaktivní" odkazuje na tom, jestli uživatel zadal vyhledávací dotaz v textovém poli.
 
--   "Při najetí myší" znamená, že uživatel má moused prostřednictvím vyhledávacího pole pomocí myši (Tento stav potlačí všechny ostatní stavy).
+- "Při najetí myší" znamená, že uživatel má moused prostřednictvím vyhledávacího pole pomocí myši (Tento stav potlačí všechny ostatní stavy).
 
--   "Zakázáno" znamená, že funkce vyhledávání je vypnuté pro aktuální kontext.
+- "Zakázáno" znamená, že funkce vyhledávání je vypnuté pro aktuální kontext.
 
 ![Vyhledávací pole (červená značka)](../../extensibility/ux-guidelines/media/0303-110_searchboxredline.png "0303 110_SearchBoxRedline")<br />Vyhledávací pole (červená linka)
 
@@ -854,7 +854,7 @@ Rozevírací nabídky pole hledání se může být poněkud složitější než
 | Odkaz na pozadí | `SearchControl.PopupButtonMouseDownBackgroundGradientBegin`<br />(Ukončení přechodu pro tento token není používán s motivy uživatelského rozhraní.) |
 | Popředí (text odkazu) | `SearchControl.PopupButtonMouseDownText` |
 
-###  <a name="BKMK_TreeView"></a> Zobrazení stromu
+### <a name="BKMK_TreeView"></a> Zobrazení stromu
 Hierarchické organizační schéma, jehož barvy jsou řízeny názvy barev v provedení několika nástroj pro windows, včetně řešení aplikace Explorer, Průzkumník serveru a zobrazení tříd `TreeView` kategorii. Barvy textu a pozadí mají všechny položky ve stromovém zobrazení. Položky, které mají vnořené podřízené prvky mají také glyfy označující, zda položka rozbalená nebo sbalená.
 
 ![Zobrazení stromové struktury (červená značka)](../../extensibility/ux-guidelines/media/0303-147_treeviewredline.png "0303 147_TreeViewRedline")<br />Zobrazení stromové struktury (červená linka)
@@ -873,7 +873,7 @@ Hierarchické organizační schéma, jehož barvy jsou řízeny názvy barev v p
 | Pozadí | `TreeView.Background` |
 | Popředí (Text) | `TreeView.Background` |
 | Popředí (piktogram) | `TreeView.Glyph` |
-| Ohraničení | Žádné |
+| Ohraničení | Žádný |
 
 **Položky zobrazení stromu: ukazatel stavu**
 
@@ -884,7 +884,7 @@ Hierarchické organizační schéma, jehož barvy jsou řízeny názvy barev v p
 | Pozadí | `TreeView.Background` |
 | Popředí (Text) | `TreeView.Background` |
 | Popředí (piktogram) | `TreeView.GlyphMouseOver` |
-| Ohraničení | Žádný |
+| Ohraničení | Žádné |
 
 **Položky zobrazení stromu: přetáhněte přes stát**
 
@@ -895,7 +895,7 @@ Hierarchické organizační schéma, jehož barvy jsou řízeny názvy barev v p
 | Pozadí | `TreeView.DragOverItem` |
 | Popředí (Text) | `TreeView.DragOverItem` |
 | Popředí (piktogram) | `TreeView.DragOverItemGlyph` |
-| Ohraničení | Žádný |
+| Ohraničení | Žádné |
 
 **Položky zobrazení stromu: vybrané, zaměřený stav**
 
@@ -917,7 +917,7 @@ Hierarchické organizační schéma, jehož barvy jsou řízeny názvy barev v p
 | Pozadí | `TreeView.SelectedItemInactive` |
 | Popředí (Text) | `TreeView.SelectedItemInactive` |
 | Popředí (piktogram) | `TreeView.SelectedItemInactiveGlyph` |
-| Ohraničení | Žádný |
+| Ohraničení | Žádné |
 
 **Položky zobrazení stromu: při přechodu myší, vybrali a zaměřena stavu**
 
@@ -1008,7 +1008,7 @@ Nástroj Manifest Designer je navržená jako způsob, jak bylo snazší upravit
 | Prvek | Název tokenu: Category.Color |
 | --- | --- |
 | Pozadí | `ManifestDesigner.TabActive` |
-| Ohraničení | Žádné |
+| Ohraničení | Žádný |
 
 **Podokno vybrané popis manifestu Designer: výchozí stav**
 
@@ -1037,7 +1037,7 @@ Nástroj Manifest Designer je navržená jako způsob, jak bylo snazší upravit
 
 ## <a name="command-structures"></a>Příkaz struktury
 
-###  <a name="BKMK_CommandMenus"></a> Nabídky
+### <a name="BKMK_CommandMenus"></a> Nabídky
 Nabídek může dojít v několika místech v rámci sady Visual Studio: hlavní nabídek vložený v dokumentu nebo nástroje systému windows, nebo klikněte pravým tlačítkem na různých místech v celém rozhraní IDE. Implementace nabídky spojené s další prvky uživatelského rozhraní jsou popsány v části pro odpovídající prvek. Vždy byste měli používat standardní nabídky implementace poskytovaných prostředím sady Visual Studio. V některých výjimečných případech ale nebudete mít přístup k standardní nabídky sady Visual Studio. V těchto situacích nepoužívejte následující názvy token k zajištění, že vaše uživatelské rozhraní je v souladu s jiným nabídkám v sadě Visual Studio.
 
 ![Visual Studio nabídky (červená značka)](../../extensibility/ux-guidelines/media/0303-000_menuredline.png "0303 000_MenuRedline")<br />Visual Studio nabídky (červená linka)
@@ -1068,7 +1068,7 @@ Názvy nabídek se skládají z na pozadí, ohraničení a text nadpisu, jakož 
 | Pozadí | Žádné |
 | Popředí (text) | `Environment.CommandBarTextActive` |
 | Popředí (piktogramy) | `Environment.CommandBarMenuGlyph` |
-| Ohraničení | Žádný |
+| Ohraničení | Žádné |
 
 **Název nabídky: ukazatel stavu**
 
@@ -1278,7 +1278,7 @@ Příkaz pruhový graf se skládá ze sady související ovládací prvky stavov
 | Popředí (Text) | `Environment.CommandBarTextInactive` |
 | Ohraničení | Není k dispozici |
 
-####  <a name="BKMK_CommandComboBox"></a> Příkaz panel se seznamem
+#### <a name="BKMK_CommandComboBox"></a> Příkaz panel se seznamem
 
 > [!IMPORTANT]
 > Pole se seznamem se podobají rozevírací seznamy, ale zahrnují určitá oblast upravitelný text. Pokud rozevírací seznam na oblast upravitelný text neobsahuje, použít tokeny barvu pro [příkazový řádek rozevírací nabídky](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandDropDown).
@@ -1410,7 +1410,7 @@ Příkaz pruhový graf se skládá ze sady související ovládací prvky stavov
 | Pozadí | Žádné |
 | Popředí (piktogram) | `Environment.ComboBoxDisabledGlyph` |
 
-####  <a name="BKMK_CommandDropDown"></a> Příkaz panel rozevírací seznamy
+#### <a name="BKMK_CommandDropDown"></a> Příkaz panel rozevírací seznamy
 
 > [!IMPORTANT]
 >  Rozevírací seznamy jsou podobné polích se seznamem, ale nemají upravitelný text oblastech. Pokud rozevírací seznam obsahuje na oblast upravitelný text, použijte pro tokeny barvu [příkazový řádek se seznamem](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandComboBox).
@@ -1713,9 +1713,9 @@ Karty dokumentů se nacházejí v kanálu kartu označující dokumenty, které 
 #### <a name="open-document-tabs"></a>Karty otevřených dokumentů
 Každý otevřený dokument obsahuje kartu v kanálu kartu dokumentu, který se zobrazí její název. Dokumenty, můžete buď vybrat nebo otevřete na pozadí a jejich karty, aby odrážela tyto stavy:
 
--   Vybraná karta představuje dokument, který je dobře zobrazeno v dokumentu. Vybraná karta má ohraničení dokumentu, který rozšiřuje dobře mezi horním okrajem dokumentu.
+- Vybraná karta představuje dokument, který je dobře zobrazeno v dokumentu. Vybraná karta má ohraničení dokumentu, který rozšiřuje dobře mezi horním okrajem dokumentu.
 
--   Karty na pozadí jsou všechny karty dokumentů, které nejsou aktuálně vybraná karta. Po kliknutí na stát vybraná karta a získat všechny barvy ohraničení, textu a pozadí z těchto tokenů názvy.
+- Karty na pozadí jsou všechny karty dokumentů, které nejsou aktuálně vybraná karta. Po kliknutí na stát vybraná karta a získat všechny barvy ohraničení, textu a pozadí z těchto tokenů názvy.
 
 ![Karta otevřeného dokumentu (červená značka)](../../extensibility/ux-guidelines/media/0303-073_opendocumenttabredline.png "0303 073_OpenDocumentTabRedline")<br />Otevřít dokument karta (červená linka)
 

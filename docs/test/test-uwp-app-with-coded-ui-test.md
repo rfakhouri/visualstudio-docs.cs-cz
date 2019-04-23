@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - uwp
-ms.openlocfilehash: 11fc95978690e98d496f539d4e98acf58104be3b
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: d50972ccb68ba43e8ebefa0d69fdfff8f7fc5be4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416120"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60103251"
 ---
 # <a name="create-a-coded-ui-test-to-test-a-uwp-app"></a>Vytvoření programového uživatelského rozhraní testu aplikace pro UPW
 
@@ -136,6 +136,7 @@ Prvním krokem je vytvoření jednoduché aplikace pro UPW pro spuštění testu
         Assert.AreEqual(Me.AssertMethod1ExpectedValues.UITextBoxEditText, uITextBoxEdit.Text, "Textbox value is unexpected.")
     End Sub
     ```
+
 1. Dále musíme získat **AutomationId** aplikace UPW [aplikace](#create-a-uwp-app-to-test) , které chceme otestovat. Otevřete Windows **Start** nabídku zobrazte dlaždici aplikace. Tažením nástroje vlasového kříže ![cílovou ikonu](media/target-icon.png) z **Tvůrce programového testu UI** dialogového okna na dlaždici pro vaši aplikaci. Když modrá úchyty na dlaždici, uvolněte myší.
 
    ![Nástroj nitkového kříže](media/cross-hair-tool.png)

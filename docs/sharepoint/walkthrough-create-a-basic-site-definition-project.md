@@ -1,5 +1,5 @@
 ---
-title: 'Průvodce: Vytvoření projektu definice základního webu | Dokumentace Microsoftu'
+title: 'Návod: Vytvoření projektu definice základního webu | Dokumentace Microsoftu'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,14 +13,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 078fcc4d30613e4fe19b493150ce4570196b73ac
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: d781b2fe3ab597760a397c6ff0ec3c946bbe7653
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56608874"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60083371"
 ---
-# <a name="walkthrough-create-a-basic-site-definition-project"></a>Průvodce: Vytvoření základního projektu definice webu
+# <a name="walkthrough-create-a-basic-site-definition-project"></a>Návod: Vytvoření základního projektu definice webu
   Tento návod ukazuje, jak vytvořit základní definici webu obsahující vizuální webovou část s některými ovládacími prvky na něj. Vizuální webové části, který vytvoříte přehlednosti má několik ovládacích prvků. Můžete však vytvořit složitější definic webu služby SharePoint, které zahrnují další funkce.
 
  Tento návod demonstruje následující úkoly:
@@ -38,9 +38,9 @@ ms.locfileid: "56608874"
 ## <a name="prerequisites"></a>Požadavky
  K dokončení tohoto návodu budete potřebovat následující komponenty:
 
--   Podporované vydání systému Microsoft Windows a SharePoint. Další informace najdete v tématu požadavky na vývoj řešení služby SharePoint.
+- Podporované vydání systému Microsoft Windows a SharePoint. Další informace najdete v tématu požadavky na vývoj řešení služby SharePoint.
 
--   Visual Studio.
+- Visual Studio.
 
 ## <a name="create-a-site-definition-solution"></a>Vytvoření řešení definice webu
  Vytvoření projektu definice webu v [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
@@ -80,19 +80,19 @@ ms.locfileid: "56608874"
 
 #### <a name="to-create-a-visual-web-part"></a>Chcete-li vytvořit vizuální webové části
 
-1.  V **Průzkumníka řešení**, zvolte **zobrazit všechny soubory** tlačítko.
+1. V **Průzkumníka řešení**, zvolte **zobrazit všechny soubory** tlačítko.
 
-2.  Zvolte **SiteDefinition1** uzel projektu a pak na panelu nabídek zvolte **projektu** > **přidat novou položku**.
+2. Zvolte **SiteDefinition1** uzel projektu a pak na panelu nabídek zvolte **projektu** > **přidat novou položku**.
 
      Zobrazí se dialogové okno **Přidat novou položku**.
 
-3.  Rozbalte **Visual C#**  uzlu nebo **jazyka Visual Basic** uzlu, rozbalte **SharePoint** uzel a klikněte na tlačítko **2010** uzlu.
+3. Rozbalte **Visual C#**  uzlu nebo **jazyka Visual Basic** uzlu, rozbalte **SharePoint** uzel a klikněte na tlačítko **2010** uzlu.
 
-4.  V seznamu šablon vyberte **vizuální webové části** šablony, ponechat výchozí název VisualWebPart1 a klikněte na tlačítko **přidat** tlačítko.
+4. V seznamu šablon vyberte **vizuální webové části** šablony, ponechat výchozí název VisualWebPart1 a klikněte na tlačítko **přidat** tlačítko.
 
      *VisualWebPart1.ascx* soubor otevře.
 
-5.  V dolní části *VisualWebPart1.ascx*, přidejte následující kód k přidejte tři ovládací prvky do formuláře: textové pole, tlačítko a popisek:
+5. V dolní části *VisualWebPart1.ascx*, přidejte následující kód k přidejte tři ovládací prvky do formuláře: textové pole, tlačítko a popisek:
 
     ```aspx-csharp
     <table>
@@ -110,7 +110,7 @@ ms.locfileid: "56608874"
     </table>
     ```
 
-6.  V části *VisualWebPart1.ascx*, otevřete *VisualWebPart1.ascx.cs* souboru (pro [!INCLUDE[csprcs](../sharepoint/includes/csprcs-md.md)]) nebo *VisualWebPart1.ascx.vb* (pro [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)]) a pak přidejte Následující kód:
+6. V části *VisualWebPart1.ascx*, otevřete *VisualWebPart1.ascx.cs* souboru (pro [!INCLUDE[csprcs](../sharepoint/includes/csprcs-md.md)]) nebo *VisualWebPart1.ascx.vb* (pro [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)]) a pak přidejte Následující kód:
 
      [!code-vb[SP_SimpleSiteDef#1](../sharepoint/codesnippet/VisualBasic/testsitedefvb/sitedefinition/visualwebpart1/visualwebpart1usercontrol.ascx.vb#1)]
      [!code-csharp[SP_SimpleSiteDef#1](../sharepoint/codesnippet/CSharp/testsitedef/sitedefinition/visualwebpart1/visualwebpart1usercontrol.ascx.cs#1)]
@@ -122,7 +122,7 @@ ms.locfileid: "56608874"
 
 #### <a name="to-add-a-visual-web-part-to-the-default-aspx-page"></a>Přidání vizuální webové části na výchozí stránku ASPX
 
-1.  Otevřete stránku default.aspx a poté přidejte následující řádek pod `WebPartPages` značky:
+1. Otevřete stránku default.aspx a poté přidejte následující řádek pod `WebPartPages` značky:
 
     ```aspx-csharp
     <%@ Register Tagprefix="MyWebPartControls" Namespace="TestSiteDef.VisualWebPart1" Assembly="$SharePoint.Project.AssemblyFullName$" %>
@@ -130,7 +130,7 @@ ms.locfileid: "56608874"
 
      Tento řádek přiřadí název MyWebPartControls webové části a jeho kód. *Namespace* parametr shoduje se obor názvů, který je používán *VisualWebPart1.ascx* soubor kódu.
 
-2.  Po `</asp:Content>` elementu, nahraďte celý `ContentPlaceHolderId="PlaceHolderMain"` oddílu a jeho obsah následujícím kódem:
+2. Po `</asp:Content>` elementu, nahraďte celý `ContentPlaceHolderId="PlaceHolderMain"` oddílu a jeho obsah následujícím kódem:
 
     ```aspx-csharp
     <asp:Content ID="Content1" ContentPlaceHolderId="PlaceHolderMain" runat="server">
@@ -140,16 +140,16 @@ ms.locfileid: "56608874"
 
      Tento kód vytvoří odkaz na vizuální webové části, který jste vytvořili dříve.
 
-3.  V **Průzkumníka řešení**, otevřete místní nabídku **SiteDefinition1** uzel a klikněte na tlačítko **nastavit jako položku při spuštění**.
+3. V **Průzkumníka řešení**, otevřete místní nabídku **SiteDefinition1** uzel a klikněte na tlačítko **nastavit jako položku při spuštění**.
 
 ## <a name="deploy-and-run-the-site-definition-solution"></a>Nasazení a spuštění řešení definice webu
  V dalším kroku nasaďte projekt do služby SharePoint a spusťte projekt.
 
 #### <a name="to-deploy-and-run-the-site-definition"></a>Nasazení a spuštění definice webu
 
--   V panelu nabídky zvolte **sestavení** > **nasazení TestSiteDef**.
+- V panelu nabídky zvolte **sestavení** > **nasazení TestSiteDef**.
 
--   Zvolte **F5** klíč.
+- Zvolte **F5** klíč.
 
      Visual Studio kompiluje kód, přidá jeho funkce, všechny soubory balíčků do souboru řešení (soubor WSP) pro SharePoint a nasadí soubor WSP na SharePoint Server. SharePoint pak nainstaluje soubory a potom aktivuje funkce.
 
@@ -158,17 +158,17 @@ ms.locfileid: "56608874"
 
 #### <a name="to-create-a-site-by-using-the-site-definition"></a>Vytvoření webu s použitím definice webu
 
-1.  Na webu služby SharePoint se zobrazí stránka Nový web Sharepointu.
+1. Na webu služby SharePoint se zobrazí stránka Nový web Sharepointu.
 
-2.  V **nadpis a popis** části, zadejte **Moje nové lokality** název a popis lokality.
+2. V **nadpis a popis** části, zadejte **Moje nové lokality** název a popis lokality.
 
-3.  V **adresa webu** části, zadejte **Nový_server** v **název adresy URL** pole.
+3. V **adresa webu** části, zadejte **Nový_server** v **název adresy URL** pole.
 
-4.  V **šablony** zvolte **přizpůsobení Sharepointu** kartu.
+4. V **šablony** zvolte **přizpůsobení Sharepointu** kartu.
 
-5.  V **vyberte šablonu** klikněte na položku **SiteDefinition1**.
+5. V **vyberte šablonu** klikněte na položku **SiteDefinition1**.
 
-6.  Ostatní nastavení ponechte jejich výchozí hodnoty a klikněte na tlačítko **vytvořit** tlačítko.
+6. Ostatní nastavení ponechte jejich výchozí hodnoty a klikněte na tlačítko **vytvořit** tlačítko.
 
      Zobrazí se nový web.
 
@@ -177,7 +177,7 @@ ms.locfileid: "56608874"
 
 #### <a name="to-test-the-new-site"></a>Otestování nového webu
 
--   Na výchozí stránku ASPX, zadejte nějaký text a klikněte na tlačítko **změnit Text popisku** tlačítko vedle textového pole.
+- Na výchozí stránku ASPX, zadejte nějaký text a klikněte na tlačítko **změnit Text popisku** tlačítko vedle textového pole.
 
      Text se zobrazí v popisku na pravé straně tlačítka.
 

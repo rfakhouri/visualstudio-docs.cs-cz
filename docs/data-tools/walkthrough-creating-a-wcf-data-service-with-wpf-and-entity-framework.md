@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: d9e41de9fc395b673f38fa1f7b343594bf905a8d
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 726d0f7e4254f4d9d4210d4b64627cd97c98a430
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223166"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60081382"
 ---
 # <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>Návod: Vytvoření datové služby WCF s WPF a Entity Framework
 Tento návod ukazuje, jak vytvořit jednoduchou [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)] , která je hostována v [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] webovou aplikaci a pak k němu přístup z aplikace Windows Forms.
@@ -90,11 +90,11 @@ V dalším kroku vytvoříte [!INCLUDE[adonet_edm](../data-tools/includes/adonet
 
 5. Na **vyberte datové připojení** stránce, proveďte jednu z následujících kroků:
 
-    -   Pokud je datové připojení k ukázkové databázi Northwind k dispozici v rozevíracím seznamu, vyberte je.
+    - Pokud je datové připojení k ukázkové databázi Northwind k dispozici v rozevíracím seznamu, vyberte je.
 
          -nebo-
 
-    -   Zvolte **nové připojení** tlačítko a nakonfigurujte nové datové připojení. Další informace najdete v tématu [přidat nové připojení](../data-tools/add-new-connections.md).
+    - Zvolte **nové připojení** tlačítko a nakonfigurujte nové datové připojení. Další informace najdete v tématu [přidat nové připojení](../data-tools/add-new-connections.md).
 
 6. Pokud databáze vyžaduje heslo, zvolte **Ano, zahrnout citlivá data v připojovacím řetězci** přepínač a klikněte na tlačítko **Další** tlačítko.
 

@@ -8,12 +8,12 @@ ms.assetid: a859595f-6517-43f2-9d61-c706cb55a388
 caps.latest.revision: 25
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c7245af090cfdaa8e4282677c8b5a052d63b63e2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5289804eb85b9af4fff090f98cc97f8d2c9ec676
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54805531"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100401"
 ---
 # <a name="using-different-web-browsers-with-coded-ui-tests"></a>Používání jiných webových prohlížečů v programových testech uživatelského rozhraní
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,19 +26,19 @@ Programové testy UI mohou automatizovat testování webových aplikací tím, �
   
 - Operační systémy:  
   
-  -   Microsoft Windows 7  
+  - Microsoft Windows 7  
   
-  -   Microsoft Windows 8  
+  - Microsoft Windows 8  
   
-  -   Microsoft Windows Server 2008 R2 SP1  
+  - Microsoft Windows Server 2008 R2 SP1  
   
 - Verze webového prohlížeče:  
   
-  -   Windows Internet Explorer 9  
+  - Windows Internet Explorer 9  
   
-  -   Windows Internet Explorer 10  
+  - Windows Internet Explorer 10  
   
-  -   Podporované verze prohlížečů Mozilla Firefox a Google Chrome, přejděte [zde](http://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d/)  
+  - Podporované verze prohlížečů Mozilla Firefox a Google Chrome, přejděte [zde](http://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d/)  
   
 - Nainstalujte [součásti Selenium pro programové testování uživatelského rozhraní pro různé prohlížeče](http://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d/).  
   
@@ -83,19 +83,19 @@ Programové testy UI mohou automatizovat testování webových aplikací tím, �
 ### <a name="enable-debugging"></a>Povolení ladění  
  Chcete-li povolit ladění webové aplikace, je nutné dokončit následující možnosti konfigurace:  
   
-1.  Povolit volbu Pouze vlastní kód:  
+1. Povolit volbu Pouze vlastní kód:  
   
-    1.  Na **nástroje** nabídce zvolte **možnosti** a klikněte na tlačítko **ladění**.  
+    1. Na **nástroje** nabídce zvolte **možnosti** a klikněte na tlačítko **ladění**.  
   
-    2.  Vyberte **povolit volbu pouze vlastní kód**.  
+    2. Vyberte **povolit volbu pouze vlastní kód**.  
   
-2.  Zakázání výjimek CLR:  
+2. Zakázání výjimek CLR:  
   
-    1.  Na **ladění** nabídce zvolte **výjimky**.  
+    1. Na **ladění** nabídce zvolte **výjimky**.  
   
-    2.  Pro **výjimky modulu Common Language Runtime**, zrušte zaškrtnutí políčka **uživatelem neošetřené**.  
+    2. Pro **výjimky modulu Common Language Runtime**, zrušte zaškrtnutí políčka **uživatelem neošetřené**.  
   
-##  <a name="generate"></a> *Nevidím možnost změnit atribut BrowserWindow.CurrentBrowser v programovém testu uživatelského rozhraní.*  
+## <a name="generate"></a> *Nevidím možnost změnit atribut BrowserWindow.CurrentBrowser v programovém testu uživatelského rozhraní.*  
  Používáte verzi [!INCLUDE[vs2011_first](../includes/vs2011-first-md.md)] nepodporující programové testy UI pomocí různých webových prohlížečů. Pokud chcete použít tyto programové testy UI, musíte použít Visual Studio Enterprise.  
   
  *Co dalšího mohu vědět?*  

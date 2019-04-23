@@ -10,19 +10,19 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1b47db7802a6e174d8efff054fe9a6454fa6ef73
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 06844e8723cc118d6cc10c44c5c788e48c206684
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56643675"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60101025"
 ---
 # <a name="properties-window-overview"></a>Přehled okna Vlastnosti
 **Vlastnosti** okno se používá k zobrazení vlastností objektů vybraných v dva hlavní typy dostupné v systému windows [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrované vývojové prostředí (IDE). Jsou tyto dva typy systému windows:
 
--   Okna nástrojů, jako je například Průzkumník řešení, zobrazení tříd a objektů prohlížeče
+- Okna nástrojů, jako je například Průzkumník řešení, zobrazení tříd a objektů prohlížeče
 
--   Okna dokumentu obsahující takové editory a návrháře jako Návrháře formulářů, editoru XML a editoru HTML
+- Okna dokumentu obsahující takové editory a návrháře jako Návrháře formulářů, editoru XML a editoru HTML
 
 ## <a name="using-the-properties-window"></a>Pomocí okna Vlastnosti
  **Vlastnosti** okně zobrazí vlastnosti jednoho nebo více vybraných položek. Pokud je vybráno více položek, zobrazí se průnik všechny vlastnosti pro všechny vybrané objekty.

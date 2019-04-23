@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fa5d123048b819c2b0b92951582bd9348cbdbab6
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: b447225580505959697e14f0c85855452906aa18
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56713162"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108851"
 ---
 # <a name="visual-studio-template-manifest-schema-reference"></a>Odkaz na schéma manifestu šablony Visual Studio
 Toto schéma popisuje formát manifestu šablony sady Visual Studio (*.vstman*) souborů, které jsou generovány pro šablony sady Visual Studio projekt nebo položku. Schéma také popisuje umístění a další důležité informace o šabloně.
@@ -28,15 +28,15 @@ Toto schéma popisuje formát manifestu šablony sady Visual Studio (*.vstman*) 
 
 ### <a name="attributes"></a>Atributy
 
--   **Verze**: Řetězec představující verze manifestu šablony. Povinný parametr.
+- **Verze**: Řetězec představující verze manifestu šablony. Povinný parametr.
 
--   **Národní prostředí**: Řetězec představující národního prostředí nebo národní prostředí manifestu šablony. Hodnota národního prostředí platí pro všechny šablony. Je nutné použít samostatné manifestu pro každé národní prostředí. Volitelné.
+- **Národní prostředí**: Řetězec představující národního prostředí nebo národní prostředí manifestu šablony. Hodnota národního prostředí platí pro všechny šablony. Je nutné použít samostatné manifestu pro každé národní prostředí. Volitelné.
 
 ### <a name="child-elements"></a>Podřízené prvky
 
--   **VSTemplateContainer** volitelné.
+- **VSTemplateContainer** volitelné.
 
--   **VSTemplateDir** volitelné.
+- **VSTemplateDir** volitelné.
 
 ### <a name="parent-element"></a>Nadřazený element
  Žádné
@@ -49,9 +49,9 @@ Toto schéma popisuje formát manifestu šablony sady Visual Studio (*.vstman*) 
 
 ### <a name="child-elements"></a>Podřízené prvky
 
--   **RelativePathOnDisk**:  Relativní cesta souboru šablony na disku. Toto umístění také definuje umístění šablony ve stromové struktuře šablony je znázorněno **nový projekt** nebo **nová položka** dialogového okna. Pro šablony nasadit jako jednotlivé soubory a adresáře Tato cesta odkazuje na adresář obsahující soubory šablon. Pro šablony nasadit jako *ZIP* soubor, tato cesta musí být cesta k *ZIP* souboru.
+- **RelativePathOnDisk**:  Relativní cesta souboru šablony na disku. Toto umístění také definuje umístění šablony ve stromové struktuře šablony je znázorněno **nový projekt** nebo **nová položka** dialogového okna. Pro šablony nasadit jako jednotlivé soubory a adresáře Tato cesta odkazuje na adresář obsahující soubory šablon. Pro šablony nasadit jako *ZIP* soubor, tato cesta musí být cesta k *ZIP* souboru.
 
--   **VSTemplateHeader: A [TemplateData](../extensibility/templatedata-element-visual-studio-templates.md) element, který popisuje záhlaví.
+- **VSTemplateHeader: A [TemplateData](../extensibility/templatedata-element-visual-studio-templates.md) element, který popisuje záhlaví.
 
 ### <a name="parent-element"></a>Nadřazený element
  **VSTemplateManifest**
@@ -66,13 +66,13 @@ Toto schéma popisuje formát manifestu šablony sady Visual Studio (*.vstman*) 
 
 ### <a name="child-elements"></a>Podřízené prvky
 
--   **RelativePath**: Cesta k šabloně. Může existovat jenom jeden záznam za cestu, takže první z nich vyhraje u všech manifestů.
+- **RelativePath**: Cesta k šabloně. Může existovat jenom jeden záznam za cestu, takže první z nich vyhraje u všech manifestů.
 
--   **LocalizedName**: A **NameDescriptionIcon** prvek, který určuje lokalizovaný název. Volitelné.
+- **LocalizedName**: A **NameDescriptionIcon** prvek, který určuje lokalizovaný název. Volitelné.
 
--   **SortOrder –**: Řetězec, který určuje pořadí řazení. Volitelné.
+- **SortOrder –**: Řetězec, který určuje pořadí řazení. Volitelné.
 
--   **ParentFolderOverrideName**: Přepsané název nadřazené složky. Volitelné. Tento element nemá **název** atribut, který je hodnota řetězce, který určuje název.
+- **ParentFolderOverrideName**: Přepsané název nadřazené složky. Volitelné. Tento element nemá **název** atribut, který je hodnota řetězce, který určuje název.
 
 ### <a name="parent-element"></a>Nadřazený element
  **VSTemplateManifest**
@@ -82,9 +82,9 @@ Toto schéma popisuje formát manifestu šablony sady Visual Studio (*.vstman*) 
 
 ### <a name="attributes"></a>Atributy
 
--   **Balíček**: Řetězcovou hodnotu, která určuje balíček. Volitelné.
+- **Balíček**: Řetězcovou hodnotu, která určuje balíček. Volitelné.
 
--   **ID**: Hodnotu řetězce, která určuje ID. Volitelné.
+- **ID**: Hodnotu řetězce, která určuje ID. Volitelné.
 
 ### <a name="child-elements"></a>Podřízené prvky
  Žádné

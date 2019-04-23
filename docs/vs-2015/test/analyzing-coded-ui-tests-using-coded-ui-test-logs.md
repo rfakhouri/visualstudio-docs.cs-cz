@@ -8,12 +8,12 @@ ms.assetid: 7e795873-1d4b-4a13-a52a-a411d87fb759
 caps.latest.revision: 15
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: baf26fb00a53e4680d44caf5fb8b2f2c5bd5f4c4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 18dbd175ddbf01a826d2a24b5d750cb00b64d28b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54773373"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60098884"
 ---
 # <a name="analyzing-coded-ui-tests-using-coded-ui-test-logs"></a>Analýza programových testů uživatelského rozhraní pomocí protokolů z těchto testů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ Programového uživatelského rozhraní testu protokoly filtr a záznam, který 
   
  **Požadavky**  
   
--   Visual Studio Enterprise  
+- Visual Studio Enterprise  
   
 ## <a name="why-should-i-do-this"></a>Proč to mám dělat?  
  Protokoly jsou uvedeny ve formátu, který umožňuje ladění problémů rychle.  
@@ -32,19 +32,9 @@ Programového uživatelského rozhraní testu protokoly filtr a záznam, který 
 ### <a name="step-1-enable-logging"></a>Krok 1: Povolit protokolování  
  V závislosti na scénáři použijte jednu z následujících metod k povolení protokolu.  
   
--   Cílová verze rozhraní .NET Framework 4 s soubor App.config nacházejí v projektu testu  
+- Cílová verze rozhraní .NET Framework 4 s soubor App.config nacházejí v projektu testu  
   
-    -   Otevřít **QTAgent32_40.exe.config** souboru.  
-  
-         Ve výchozím nastavení je tento soubor umístěn ve  **\<drvie >: \Program soubory (x86) \Microsoft Visual Studio 12.0\Common7\IDE**.  
-  
-         Upravte hodnotu EqtTraceLevel na požadovanou úroveň protokolu.  
-  
-         Uložte soubor.  
-  
--   Cílová verze rozhraní .NET Framework 4.5 s soubor App.config nacházejí v projektu testu  
-  
-    -   Otevřít **QTAgent32.exe.config** souboru.  
+    - Otevřít **QTAgent32_40.exe.config** souboru.  
   
          Ve výchozím nastavení je tento soubor umístěn ve  **\<drvie >: \Program soubory (x86) \Microsoft Visual Studio 12.0\Common7\IDE**.  
   
@@ -52,33 +42,43 @@ Programového uživatelského rozhraní testu protokoly filtr a záznam, který 
   
          Uložte soubor.  
   
--   K dispozici v testovacím projektu souboru app.config  
+- Cílová verze rozhraní .NET Framework 4.5 s soubor App.config nacházejí v projektu testu  
   
-    -   Otevřete soubor App.config v projektu.  
+    - Otevřít **QTAgent32.exe.config** souboru.  
+  
+         Ve výchozím nastavení je tento soubor umístěn ve  **\<drvie >: \Program soubory (x86) \Microsoft Visual Studio 12.0\Common7\IDE**.  
+  
+         Upravte hodnotu EqtTraceLevel na požadovanou úroveň protokolu.  
+  
+         Uložte soubor.  
+  
+- K dispozici v testovacím projektu souboru app.config  
+  
+    - Otevřete soubor App.config v projektu.  
   
          Přidejte následující kód v uzlu Konfigurace:  
   
          `<system.diagnostics>     <switches>       <add name="EqtTraceLevel" value="4" />     </switches>  </system.diagnostics>`  
   
--   Povolení protokolování z samotný kód testu  
+- Povolení protokolování z samotný kód testu  
   
-    -   <xref:Microsoft.VisualStudio.TestTools.UITesting.PlaybackSettings.LoggerOverrideState%2A> = HtmlLoggerState.AllActionSnapshot;  
+    - <xref:Microsoft.VisualStudio.TestTools.UITesting.PlaybackSettings.LoggerOverrideState%2A> = HtmlLoggerState.AllActionSnapshot;  
   
 ### <a name="step-2-run-your-coded-ui-test-and-view-the-log"></a>Krok 2: Spustit programový test uživatelského rozhraní a zobrazit protokol  
  Při spuštění programového testu uživatelského rozhraní pomocí změny **QTAgent32.exe.config** soubor na místě, se zobrazí ve výsledcích Průzkumníka testů není odkaz na výstup. Soubory protokolů jsou vytvářeny, ne jenom v případě, že se test nezdaří, ale také u úspěšných testů, pokud je úroveň trasování nastavena na "podrobné."  
   
-1.  Na **testovací** nabídce zvolte **Windows** a pak vyberte **Průzkumník testů**.  
+1. Na **testovací** nabídce zvolte **Windows** a pak vyberte **Průzkumník testů**.  
   
-2.  Na **sestavení** nabídce zvolte **sestavit řešení**.  
+2. Na **sestavení** nabídce zvolte **sestavit řešení**.  
   
-3.  V Průzkumníku testů vyberte programový test uživatelského rozhraní, kterou chcete spustit, otevřete místní nabídku a klikněte na tlačítko **spustit vyberte testy**.  
+3. V Průzkumníku testů vyberte programový test uživatelského rozhraní, kterou chcete spustit, otevřete místní nabídku a klikněte na tlačítko **spustit vyberte testy**.  
   
      Automatizované testy spustí a označení pokud úspěšný nebo neúspěšný.  
   
     > [!TIP]
     >  Chcete-li zobrazit Průzkumník testování z **nabídka testu**, přejděte na **Windows** a klikněte na tlačítko **Průzkumník testů**.  
   
-4.  Zvolte **výstup** odkaz v Průzkumníku testů výsledky.  
+4. Zvolte **výstup** odkaz v Průzkumníku testů výsledky.  
   
      ![Výstup odkaz v Průzkumníku testů](../test/media/cuit-htmlactionlog1.png "CUIT_HTMLActionLog1")  
   
@@ -86,7 +86,7 @@ Programového uživatelského rozhraní testu protokoly filtr a záznam, který 
   
      ![Výsledky a odkazy na výstup z programového testu uživatelského rozhraní](../test/media/cuit-htmlactionlog2.png "CUIT_HTMLActionLog2")  
   
-5.  Zvolte odkaz UITestActionLog.html.  
+5. Zvolte odkaz UITestActionLog.html.  
   
      Protokol se zobrazí ve webovém prohlížeči.  
   

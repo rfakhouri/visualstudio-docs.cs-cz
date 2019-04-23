@@ -23,12 +23,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: f120f29494b8c519253c98f889496189e7e2594f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 26bcab8d589c1fedcbbc4eb1f8b06bb1c04cac53
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55931621"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113297"
 ---
 # <a name="directly-access-the-database-with-a-tableadapter"></a>Přímý přístup k databázi pomocí objektu TableAdapter
 
@@ -42,7 +42,7 @@ Volání objektu TableAdapter `DbDirect` metodu, která provádí úlohy se poko
 
 ### <a name="to-insert-new-records-directly-into-a-database"></a>Chcete-li vkládání nových záznamů přímo do databáze
 
--   Volání objektu TableAdapter `Insert` metodu předáním hodnoty pro každý sloupec jako parametry. Následující postup používá `Region` tabulky v databázi Northwind jako příklad.
+- Volání objektu TableAdapter `Insert` metodu předáním hodnoty pro každý sloupec jako parametry. Následující postup používá `Region` tabulky v databázi Northwind jako příklad.
 
     > [!NOTE]
     > Pokud nemáte k dispozici instance, vytvořte instanci objektu TableAdapter, který chcete použít.
@@ -52,7 +52,7 @@ Volání objektu TableAdapter `DbDirect` metodu, která provádí úlohy se poko
 
 ### <a name="to-update-records-directly-in-a-database"></a>K aktualizaci záznamů přímo do databáze
 
--   Volání objektu TableAdapter `Update` předejte jako původní a nové hodnoty pro každý sloupec jako parametry.
+- Volání objektu TableAdapter `Update` předejte jako původní a nové hodnoty pro každý sloupec jako parametry.
 
     > [!NOTE]
     > Pokud nemáte k dispozici instance, vytvořte instanci objektu TableAdapter, který chcete použít.
@@ -62,7 +62,7 @@ Volání objektu TableAdapter `DbDirect` metodu, která provádí úlohy se poko
 
 ### <a name="to-delete-records-directly-from-a-database"></a>Můžete přímo z databáze odstranit záznamy
 
--   Volání objektu TableAdapter `Delete` metodu předáním hodnoty pro každý sloupec jako parametry `Delete` metody. Následující postup používá `Region` tabulky v databázi Northwind jako příklad.
+- Volání objektu TableAdapter `Delete` metodu předáním hodnoty pro každý sloupec jako parametry `Delete` metody. Následující postup používá `Region` tabulky v databázi Northwind jako příklad.
 
     > [!NOTE]
     > Pokud nemáte k dispozici instance, vytvořte instanci objektu TableAdapter, který chcete použít.

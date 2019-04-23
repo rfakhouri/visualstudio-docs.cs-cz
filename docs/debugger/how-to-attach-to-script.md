@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2402cbc4f4a1fa37c4317c6616fc02e4fa34e59d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 72ae0ff0b4958e831f96a0eb62b4a1a4a453ece7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56686077"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60084905"
 ---
 # <a name="how-to-attach-to-script"></a>Postupy: Připojení ke skriptu
 Toto téma vysvětluje, jak ručně připojit ladicí program sady Visual Studio do souboru skriptu pro ladění.
@@ -34,21 +34,21 @@ Toto téma vysvětluje, jak ručně připojit ladicí program sady Visual Studio
 
 2. V **připojit k procesu** dialogové okno, podívejte se **procesy k dispozici** seznam a vyhledejte zpracovat skript, můžete ke kterému chcete připojit k. Procesy skriptu můžete identifikovat pohledem **typ** sloupce.
 
-   1.  Pokud je proces, který chcete ladit spuštěn na jiném počítači, musíte nejprve vybrat vzdálený počítač.
+   1. Pokud je proces, který chcete ladit spuštěn na jiném počítači, musíte nejprve vybrat vzdálený počítač.
 
-   2.  Pokud je proces spuštěn pod účtem jiného uživatele, vyberte **Zobrazit procesy všech uživatelů** zaškrtávací políčko.
+   2. Pokud je proces spuštěn pod účtem jiného uživatele, vyberte **Zobrazit procesy všech uživatelů** zaškrtávací políčko.
 
-   3.  Pokud jste připojeni přes **připojení ke vzdálené ploše**, vyberte **Zobrazit procesy ve všech relacích** zaškrtávací políčko.
+   3. Pokud jste připojeni přes **připojení ke vzdálené ploše**, vyberte **Zobrazit procesy ve všech relacích** zaškrtávací políčko.
 
 3. Klikněte na tlačítko, které chcete připojit k procesu.
 
 4. V **připojit k** pole, měli byste vidět **kód skriptu** nebo **automatické: Kód skriptu**. Pokud se zobrazí cokoli jiného, postupujte podle těchto kroků:
 
-   1.  Klikněte na tlačítko **vyberte**.
+   1. Klikněte na tlačítko **vyberte**.
 
-   2.  V **vybrat typ kódu** dialogové okno, klikněte na tlačítko **ladit tyto typy kódu** a vyberte **skript**.
+   2. V **vybrat typ kódu** dialogové okno, klikněte na tlačítko **ladit tyto typy kódu** a vyberte **skript**.
 
-   3.  Klikněte na **OK**.
+   3. Klikněte na **OK**.
 
 5. Klikněte na tlačítko **připojit**.
 

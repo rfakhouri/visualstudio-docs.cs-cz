@@ -17,12 +17,12 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 34d643d3a5966ac287773b2d01d88596d51239f9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0b8081946da2053d257691c8ec5dc2b1302e4d75
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54804966"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105835"
 ---
 # <a name="trusted-application-deployment-overview"></a>Přehled nasazení důvěryhodných aplikací
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,15 +58,15 @@ Toto téma obsahuje přehled o tom, jak nasadit [!INCLUDE[ndptecclick](../includ
   
   Musíte následujícím postupem využít výhod nasazení důvěryhodné aplikace:  
   
-1.  Získání certifikátu pro vydavatele.  
+1. Získání certifikátu pro vydavatele.  
   
-2.  Do úložiště Důvěryhodní vydavatelé na všechny klienty přidejte vydavatele.  
+2. Do úložiště Důvěryhodní vydavatelé na všechny klienty přidejte vydavatele.  
   
-3.  Vytvoření vašeho [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikace.  
+3. Vytvoření vašeho [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikace.  
   
-4.  Podepsat manifest nasazení pomocí certifikátu vydavatele.  
+4. Podepsat manifest nasazení pomocí certifikátu vydavatele.  
   
-5.  Publikování nasazení aplikace do klientských počítačů.  
+5. Publikování nasazení aplikace do klientských počítačů.  
   
 ### <a name="obtain-a-certificate-for-the-publisher"></a>Získání certifikátu pro vydavatele  
  Digitální certifikáty jsou základní součástí Microsoft Authenticode ověřování a zabezpečení systému. Authenticode je standardní součástí operačního systému Windows. Všechny [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikace musí být podepsané digitálním certifikátem, bez ohledu na to, zda se účastní v Trusted Application Deployment. Úplné vysvětlení fungování Authenticode s [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)], naleznete v tématu [ClickOnce and Authenticode](../deployment/clickonce-and-authenticode.md).  
@@ -78,9 +78,9 @@ Toto téma obsahuje přehled o tom, jak nasadit [!INCLUDE[ndptecclick](../includ
   
  Pokud se nasazení aplikace ve spravovaném prostředí klasické pracovní plochy, máte následující možnosti pro přidání certifikátu do úložiště důvěryhodných vydavatelů:  
   
--   <xref:System.Security.Cryptography?displayProperty=fullName> Oboru názvů.  
+- <xref:System.Security.Cryptography?displayProperty=fullName> Oboru názvů.  
   
--   CertMgr.exe, která je součástí aplikace Internet Explorer a proto existuje ve Windows 98 a všech novějších verzích. Další informace najdete v tématu [Certmgr.exe (nástroj Certificate Manager)](http://msdn.microsoft.com/library/7e953b43-1374-4bbc-814f-53ca1b6b52bb).  
+- CertMgr.exe, která je součástí aplikace Internet Explorer a proto existuje ve Windows 98 a všech novějších verzích. Další informace najdete v tématu [Certmgr.exe (nástroj Certificate Manager)](http://msdn.microsoft.com/library/7e953b43-1374-4bbc-814f-53ca1b6b52bb).  
   
 ### <a name="create-a-clickonce-application"></a>Vytvoření aplikace ClickOnce  
  A [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikace je [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] klientská aplikace spolu se soubory manifestu, které popisují aplikace a zadat parametry instalace. Můžete zapnout program do [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikace s použitím **publikovat** v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Alternativně můžete generovat všechny soubory potřebné pro [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] nasazení pomocí nástrojů, které jsou součástí [!INCLUDE[winsdklong](../includes/winsdklong-md.md)]. Podrobné pokyny o [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] nasazení, najdete v článku [názorný postup: Ruční nasazení aplikace ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  

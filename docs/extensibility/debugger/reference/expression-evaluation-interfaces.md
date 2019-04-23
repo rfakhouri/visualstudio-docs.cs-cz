@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: da46fc4309be1575ffde3d42f8b2c984986ce15b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 1a2dab234f56b9d6ab1368ac87f4da9c5fae4125
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56720052"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113128"
 ---
 # <a name="expression-evaluation-interfaces"></a>Rozhraní pro vyhodnocení výrazu
 > [!IMPORTANT]
@@ -28,11 +28,11 @@ ms.locfileid: "56720052"
 
  Každé rozhraní v tabulce ukazuje komponenta, která můžete implementovat z následujícího seznamu:
 
--   Ladicí stroj (DE)
+- Ladicí stroj (DE)
 
--   Chyba při vyhodnocování výrazu (EE)
+- Chyba při vyhodnocování výrazu (EE)
 
--   Visual Studio (VS)
+- Visual Studio (VS)
 
 |Rozhraní|Implementováno|Popis|
 |---------------|--------------------|-----------------|

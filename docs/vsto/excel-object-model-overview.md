@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3db6031a7934d72a3784f08ff7c6c3e5018d26c9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: bfee8d6183a8292f5c39140ada9d4787e4f027ac
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628582"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104538"
 ---
 # <a name="excel-object-model-overview"></a>Přehled modelu objektů aplikace Excel
   K vývoji řešení, která používají Microsoft Office Excel, můžete pracovat s objekty poskytované objektovému modelu Excelu. Toto téma představuje nejdůležitější objekty:
@@ -99,7 +99,7 @@ ms.locfileid: "56628582"
 
  Visual Studio rozšiřuje <xref:Microsoft.Office.Interop.Excel.Range> objekt tím, že poskytuje <xref:Microsoft.Office.Tools.Excel.NamedRange> a <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> typy. Tyto typy mají stejné funkce jako většina <xref:Microsoft.Office.Interop.Excel.Range> objektu, jakož i nové funkce, jako jsou datové vazby funkce a nové události. Další informace najdete v tématu [namedrange – ovládací prvek](../vsto/namedrange-control.md) a [xmlmappedrange – ovládací prvek](../vsto/xmlmappedrange-control.md).
 
-##  <a name="ExcelOMDocumentation"></a> Použijte dokumentaci modelu objektů aplikace Excel
+## <a name="ExcelOMDocumentation"></a> Použijte dokumentaci modelu objektů aplikace Excel
  Podrobnější informace o objektu modelu Excelu mohou odkazovat na referenční primární sestavení vzájemné spolupráce (PIA) aplikace Excel a referenční dokumentace objektového modelu VBA.
 
 ### <a name="primary-interop-assembly-reference"></a>Odkaz na primární spolupracující sestavení

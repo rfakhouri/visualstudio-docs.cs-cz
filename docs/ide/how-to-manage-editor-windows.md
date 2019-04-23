@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 90c762e07ac57da0b9abf41c8eb99cdcdbb57922
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: be0c11509dc72baf8ab34cf2ef850fec352a9877
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55949262"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106108"
 ---
 # <a name="how-to-manage-editor-windows"></a>Postupy: Správa oken editoru
 
@@ -33,9 +33,9 @@ Instance okno editoru je možné rozdělit na dvě samostatné zobrazení pro ú
 
 ### <a name="to-split-a-pane"></a>Pro rozdělení na stavového řádku
 
-1.  Klikněte v okně editoru aktivovat.
+1. Klikněte v okně editoru aktivovat.
 
-2.  Z **okno** nabídce vyberte možnost **rozdělení**.
+2. Z **okno** nabídce vyberte možnost **rozdělení**.
 
      Oblast úprav rozdělí dvě podokna oddělené rozdělovač. Posuňte se na těchto podoken můžete vizualizaci nezávisle k zobrazení a úpravám různých součástí aktivního dokumentu ve stejnou dobu. V druhém se projeví všechny změny provedené v jedno podokno.
 
@@ -44,7 +44,7 @@ Instance okno editoru je možné rozdělit na dvě samostatné zobrazení pro ú
 
 ### <a name="to-return-to-single-pane-view"></a>Se vrátíte do zobrazení jednoduché
 
--   Z **okno** nabídce vyberte možnost **odebrat rozdělení**.
+- Z **okno** nabídce vyberte možnost **odebrat rozdělení**.
 
 ## <a name="create-new-windows"></a>Vytvoření nového systému windows
 

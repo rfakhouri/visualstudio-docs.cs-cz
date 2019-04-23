@@ -14,12 +14,12 @@ ms.assetid: 2ea4bee2-0259-4675-8e65-2023b312b516
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 598daccecbd2b03d0df117262571f6f511e2a247
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2feef3cbe72b7eb8db96052236fe483733e22273
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54798514"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107746"
 ---
 # <a name="guids-and-ids-of-visual-studio-commands"></a>Identifikátory GUID a ID příkazů sady Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -54,11 +54,11 @@ Hodnoty GUID a ID příkazů součástí integrovaného vývojového prostředí
 ### <a name="special-cases"></a>Zvláštní případy
  V následujících případech text nabídky nebo text popisku nemusí přesně odpovídat co je v definici příkazu.
 
--   Položky nabídky, které obsahují podrženého znaku, například **tisk** příkaz **souboru** nabídka, ve které je podtrženo P.
+- Položky nabídky, které obsahují podrženého znaku, například **tisk** příkaz **souboru** nabídka, ve které je podtrženo P.
 
      Znaky, které předchází znak '&' v názvech položek nabídky se zobrazí jako podtržené. Ale .vsct soubory jsou zapsány ve formátu XML, který používá znak 'a' označuje speciální znaky a vyžaduje, že musí být zadán znak, který je zobrazený jako&amp;". Proto se v souboru .vsct **tisk** příkazu se zobrazí jako "&amp;tisk".
 
--   Příkazy, které mají dynamický text, například **Uložit** *aktuální Filename*a dynamicky generované položky nabídky, jako je například položky na **poslední soubory** seznamu.
+- Příkazy, které mají dynamický text, například **Uložit** *aktuální Filename*a dynamicky generované položky nabídky, jako je například položky na **poslední soubory** seznamu.
 
      Neexistuje žádný spolehlivý způsob pro vyhledávání na dynamický text. Místo toho najít skupinu, který je hostitelem požadovaného příkazu v součinnosti s [identifikátory GUID a ID sady Visual Studio nabídky](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md) nebo [identifikátory GUID a ID sady Visual Studio panely nástrojů](../../extensibility/internals/guids-and-ids-of-visual-studio-toolbars.md)a vyhledat ID této skupiny. Pokud definice příkazu nemá žádné skupiny jako jeho [nadřazeného elementu](../../extensibility/parent-element.md), vyhledejte SharedCmdPlace.vsct a ShellCmdPlace.vsct (nebo VsDbgCmdPlace.vsct pro příkazy ladicího programu) `<CommandPlacement>` element, který nastaví nadřazeného tohoto příkaz. AndVsDbgCmdPlace.vsct SharedCmdPlace.vsct ShellCmdPlace.vsct, jsou v *cestu instalace sady Visual Studio SDK*\VisualStudioIntegration\Common\Inc\ složky.
 

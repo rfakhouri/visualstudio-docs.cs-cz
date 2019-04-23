@@ -11,12 +11,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 42137beead40c0e032942116bc92a3b9a456fbc6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: becc123cab729aff7d1306bb0ee13aee521444ec
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54770755"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105042"
 ---
 # <a name="define-a-custom-modeling-toolbox-item"></a>Definování vlastní položky sady nástrojů pro modelování
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,38 +27,38 @@ K usnadnění vytváření elementu nebo skupiny prvků podle vzoru, který čas
   
  Vlastní nástroj vytvoří jednu nebo více nových prvků v diagramu. Například může vytvořit vlastní nástroj k vytváření prvků, jako jsou tyto:  
   
--   Balíček spojené s profil .NET a třída s atributem stereotyp ".NET".  
+- Balíček spojené s profil .NET a třída s atributem stereotyp ".NET".  
   
--   Dvojice propojené přidružení k reprezentaci vzor pozorovatel třídy.  
+- Dvojice propojené přidružení k reprezentaci vzor pozorovatel třídy.  
   
 > [!NOTE]
 >  Tato metoda slouží k vytvoření nástroje pro element. To znamená můžete vytvořit nástroje, které můžete přetáhnout z panelu nástrojů do diagramu. Nelze vytvořit konektor nástroje.  
   
-##  <a name="DefineTool"></a> Definování vlastního nástroje modelování  
+## <a name="DefineTool"></a> Definování vlastního nástroje modelování  
   
 #### <a name="to-define-a-custom-modeling-tool"></a>Chcete-li definovat vlastní modelování nástroj  
   
-1.  Vytvoření diagramu UML, který obsahuje prvek nebo skupiny prvků.  
+1. Vytvoření diagramu UML, který obsahuje prvek nebo skupiny prvků.  
   
-    -   Tyto prvky mohou mít vztahy mezi nimi a může mít pomocné prvky, jako jsou porty, atributy, operace nebo kódy PIN.  
+    - Tyto prvky mohou mít vztahy mezi nimi a může mít pomocné prvky, jako jsou porty, atributy, operace nebo kódy PIN.  
   
-2.  Diagram pomocí názvu, který chcete přiřadit nový nástroj uložte. Na **souboru** nabídky, použijte **uložit... Jako**.  
+2. Diagram pomocí názvu, který chcete přiřadit nový nástroj uložte. Na **souboru** nabídky, použijte **uložit... Jako**.  
   
-3.  Pomocí Průzkumníka Windows, zkopírujte soubory dvě diagramu do následující složky nebo jakoukoli podsložku:  
+3. Pomocí Průzkumníka Windows, zkopírujte soubory dvě diagramu do následující složky nebo jakoukoli podsložku:  
   
      *YourDocuments* **položky panelu nástrojů Tools\Custom \Visual Studio\Architecture**  
   
-    -   Pokud ještě neexistuje, vytvořte tuto složku. Možná budete muset vytvořit i **nástroje pro architekturu** a **vlastní položky sady nástrojů**.  
+    - Pokud ještě neexistuje, vytvořte tuto složku. Možná budete muset vytvořit i **nástroje pro architekturu** a **vlastní položky sady nástrojů**.  
   
-    -   Zkopírujte oba soubory diagramu, jeden s názvem, který končí "... **diagram**"a druhý s názvem, který končí"... **diagram.layout**"  
+    - Zkopírujte oba soubory diagramu, jeden s názvem, který končí "... **diagram**"a druhý s názvem, který končí"... **diagram.layout**"  
   
-    -   Můžete vytvořit libovolný počet vlastních nástrojů, jak potřebujete. Použijte pouze jeden diagram pro jednotlivé nástroje.  
+    - Můžete vytvořit libovolný počet vlastních nástrojů, jak potřebujete. Použijte pouze jeden diagram pro jednotlivé nástroje.  
   
-4.  (Volitelné) Vytvoření **.tbxinfo** sdílené, jak je popsáno v [jak definovat vlastnosti vlastního nástroje](#tbxinfo)a přidejte ho do stejného adresáře. To umožňuje definovat panelu nástrojů ikonu, popisek a tak dále.  
+4. (Volitelné) Vytvoření **.tbxinfo** sdílené, jak je popsáno v [jak definovat vlastnosti vlastního nástroje](#tbxinfo)a přidejte ho do stejného adresáře. To umožňuje definovat panelu nástrojů ikonu, popisek a tak dále.  
   
-    -   Jediný **.tbxinfo** soubor lze použít k definování několika nástrojů. Může odkazovat na diagramu soubory, které jsou v podsložkách.  
+    - Jediný **.tbxinfo** soubor lze použít k definování několika nástrojů. Může odkazovat na diagramu soubory, které jsou v podsložkách.  
   
-5.  Restartujte sadu Visual Studio. Další nástroje se zobrazí na panelu nástrojů pro příslušný typ diagramu.  
+5. Restartujte sadu Visual Studio. Další nástroje se zobrazí na panelu nástrojů pro příslušný typ diagramu.  
   
 ### <a name="what-the-custom-tool-will-replicate"></a>Co bude replikovat Custom Tool  
  Vlastní nástroj bude replikovat většinu funkcí zdrojového diagramu:  
@@ -83,7 +83,7 @@ K usnadnění vytváření elementu nebo skupiny prvků podle vzoru, který čas
   
 - Konektor směrování. Pokud ručně směrování konektory směrování se nezachová při nástroj se používá. Pozice některé vnořeným obrazcům, jako je například porty, nejsou zachovány vzhledem k jejich vlastníky.  
   
-##  <a name="tbxinfo"></a> Definování vlastnosti vlastního nástroje  
+## <a name="tbxinfo"></a> Definování vlastnosti vlastního nástroje  
  Informace o panelu nástrojů (**.tbxinfo**) soubor umožňuje zadat název panelu nástrojů, ikonu, popisek, karty a klíčové slovo pro jeden nebo více vlastních nástrojů nápovědy. Přiřadit libovolný název, jako například **MyTools.tbxinfo**.  
   
  Obecný tvar souboru je následující:  
@@ -138,35 +138,35 @@ K usnadnění vytváření elementu nebo skupiny prvků podle vzoru, který čas
 > [!NOTE]
 >  Pokud začnete používat soubor .tbxinfo po pomocí diagramu soubory sami, můžete zjistit, že sada nástrojů obsahuje původní a nové verze položku sady nástrojů. To může také dojít, pokud název souboru diagramu bylo zadáno chybně v souboru .tbxinfo. Pokud k tomu dojde, v místní nabídce na panelu nástrojů zvolte **resetování nástrojů**. Položky vlastního panelu nástrojů zmizí. Restartujte Visual Studio a správné vlastní položky se zobrazí.  
   
-##  <a name="Extension"></a> Jak se bude distribuovat položky panelu nástrojů v rozšíření sady Visual Studio  
+## <a name="Extension"></a> Jak se bude distribuovat položky panelu nástrojů v rozšíření sady Visual Studio  
  Můžete distribuovat položky panelu nástrojů na jiné [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] uživatelů podle jejich balení do rozšíření aplikace Visual Studio (VSIX). Příkazy, profily a další rozšíření můžete zabalit do stejného souboru VSIX. Další informace najdete v tématu [nasazení rozšíření sady Visual Studio](http://go.microsoft.com/fwlink/?LinkId=160780).  
   
  Obvyklým způsobem k sestavení rozšíření sady Visual Studio je použití šablony projektu VSIX. Chcete-li to provést, musíte mít nainstalovaný [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)].  
   
 #### <a name="to-add-a-toolbox-item-to-a-visual-studio-extension"></a>Chcete-li přidat položku sady nástrojů do rozšíření aplikace Visual Studio  
   
-1.  [Vytvoření a otestování jeden nebo více vlastních nástrojů](#DefineTool).  
+1. [Vytvoření a otestování jeden nebo více vlastních nástrojů](#DefineTool).  
   
-2.  [Vytvořte soubor .tbxinfo](#tbxinfo) , která odkazuje na nástroje.  
+2. [Vytvořte soubor .tbxinfo](#tbxinfo) , která odkazuje na nástroje.  
   
-3.  Otevřete existující projekt rozšíření Visual Studio.  
+3. Otevřete existující projekt rozšíření Visual Studio.  
   
      \- nebo –  
   
      Definujte nový projekt rozšíření Visual Studio.  
   
-    1.  Na **souboru** nabídce zvolte **nový**, **projektu**.  
+    1. Na **souboru** nabídce zvolte **nový**, **projektu**.  
   
-    2.  V **nový projekt** dialogovém okně **nainstalované šablony**, zvolte **Visual C#**, **rozšiřitelnost**, **VSIX projekt**.  
+    2. V **nový projekt** dialogovém okně **nainstalované šablony**, zvolte **Visual C#**, **rozšiřitelnost**, **VSIX projekt**.  
   
-4.  Vaše definice panelu nástrojů přidejte do projektu. Zahrnout **.tbxinfo** souborů, souborů diagramu, rastrové soubory a soubory prostředků a ujistěte se, že jsou obsažené ve VSIX.  
+4. Vaše definice panelu nástrojů přidejte do projektu. Zahrnout **.tbxinfo** souborů, souborů diagramu, rastrové soubory a soubory prostředků a ujistěte se, že jsou obsažené ve VSIX.  
   
-    -   V Průzkumníku řešení v místní nabídce projektu VSIX zvolte **přidat**, **existující položku**. V dialogovém okně nastavte **objekty typu: Všechny soubory**. Vyhledejte soubory, vyberte je všechny a zvolte **přidat**.  
+    - V Průzkumníku řešení v místní nabídce projektu VSIX zvolte **přidat**, **existující položku**. V dialogovém okně nastavte **objekty typu: Všechny soubory**. Vyhledejte soubory, vyberte je všechny a zvolte **přidat**.  
   
         > [!NOTE]
         >  V tomto projektu nemůže otevřít soubory diagramu v editoru modelů.  
   
-5.  Nastavte následující vlastnosti všech souborů, které jste právě přidali. Můžete nastavit jejich vlastnosti ve stejnou dobu tak, že je vyberete v Průzkumníku řešení. Dejte pozor, abyste změnit vlastnosti další soubory v projektu.  
+5. Nastavte následující vlastnosti všech souborů, které jste právě přidali. Můžete nastavit jejich vlastnosti ve stejnou dobu tak, že je vyberete v Průzkumníku řešení. Dejte pozor, abyste změnit vlastnosti další soubory v projektu.  
   
      **Kopírovat do výstupního adresáře** = **vždy kopírovat**  
   
@@ -174,24 +174,24 @@ K usnadnění vytváření elementu nebo skupiny prvků podle vzoru, který čas
   
      **Zahrnout do VSIX** = **true**  
   
-6.  Otevřít **source.extension.vsixmanifest**. Otevře se v editoru manifestu rozšíření.  
+6. Otevřít **source.extension.vsixmanifest**. Otevře se v editoru manifestu rozšíření.  
   
-7.  V části **metadat**, zadejte popis vlastního nástroje.  
+7. V části **metadat**, zadejte popis vlastního nástroje.  
   
      V části **prostředky**, zvolte **nový** a pak nastavte pole v dialogovém okně následujícím způsobem:  
   
-    -   **Typ** = **typ vlastního rozšíření**  
+    - **Typ** = **typ vlastního rozšíření**  
   
-    -   Typ = `Microsoft.VisualStudio.ArchitectureTools.CustomToolboxItems`  
+    - Typ = `Microsoft.VisualStudio.ArchitectureTools.CustomToolboxItems`  
   
         > [!NOTE]
         >  To však není jednou z možností v rozevíracím seznamu. Je nutné zadat pomocí klávesnice.  
   
-    -   **Zdroj** = **soubor v systému souborů**.  
+    - **Zdroj** = **soubor v systému souborů**.  
   
-    -   **Cesta** = vaše **.tbxinfo** souboru, například **MyTools.tbxinfo**  
+    - **Cesta** = vaše **.tbxinfo** souboru, například **MyTools.tbxinfo**  
   
-8.  Sestavte projekt.  
+8. Sestavte projekt.  
   
 9. **Chcete-li ověřit, že toto rozšíření funguje**, stiskněte klávesu F5. Spustí se experimentální instanci sady Visual Studio.  
   
@@ -201,11 +201,11 @@ K usnadnění vytváření elementu nebo skupiny prvků podle vzoru, který čas
   
 #### <a name="to-install-custom-tools-from-a-visual-studio-extension"></a>Instalace vlastních nástrojů z rozšíření sady Visual Studio  
   
-1.  Otevřít `.vsix` souboru v Průzkumníku Windows nebo v sadě Visual Studio.  
+1. Otevřít `.vsix` souboru v Průzkumníku Windows nebo v sadě Visual Studio.  
   
-2.  Zvolte **nainstalovat** v dialogovém okně, které se zobrazí.  
+2. Zvolte **nainstalovat** v dialogovém okně, které se zobrazí.  
   
-3.  Chcete-li odinstalovat nebo dočasně zakázat rozšíření, otevřete **rozšíření a aktualizace** z **nástroje** nabídky.  
+3. Chcete-li odinstalovat nebo dočasně zakázat rozšíření, otevřete **rozšíření a aktualizace** z **nástroje** nabídky.  
   
 ## <a name="localization"></a>Lokalizace  
  Můžete vytvořit rozšíření, která, pokud je nainstalovaný na jiném počítači, zobrazí nástroj názvy a popisy tlačítek v jazyce, který cílový počítač.  

@@ -14,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 08cd7867ab3f0c85597076fd6ce53a987fce9a3d
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: d1fcb7b139e374f49df84fe17b8e12ea6aa6b625
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59662561"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111061"
 ---
 # <a name="tutorial-create-a-simple-application-with-visual-basic"></a>Kurz: Vytvoření jednoduché aplikace pomocí jazyka Visual Basic
 
@@ -116,7 +116,7 @@ Do této aplikace přidáme tři typy ovládacích prvků: <xref:System.Windows.
 
 ### <a name="add-a-textblock-control"></a>Přidejte ovládací prvek TextBlock
 
-1.  Zadejte **Ctrl**+**Q** aktivovat vyhledávacího pole a typ **nástrojů**. Zvolte **zobrazení > Sada nástrojů** ze seznamu výsledků.
+1. Zadejte **Ctrl**+**Q** aktivovat vyhledávacího pole a typ **nástrojů**. Zvolte **zobrazení > Sada nástrojů** ze seznamu výsledků.
 
 2. V **nástrojů**, rozbalte **běžných ovládacích prvků WPF** uzel zobrazíte ovládací prvek TextBlock.
 

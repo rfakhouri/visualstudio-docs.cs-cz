@@ -16,12 +16,12 @@ ms.assetid: 2025c969-e3c7-4cf4-a5c5-099d342895ea
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 5006fb95b2afbe67fd4420caff5885322067eacd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f14942ffd59ce2c6eacf7da2d0d1ab252d58e2cb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54779431"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100505"
 ---
 # <a name="lptextoutproc"></a>LPTEXTOUTPROC
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ typedef LONG (*LPTEXTOUTPROC) (
  mesg_type  
  Typ zprávy. Následující tabulka uvádí podporované hodnoty pro tento parametr.  
   
-|Hodnota|Popis|  
+|Value|Popis|  
 |-----------|-----------------|  
 |`SCC_MSG_INFO, SCC_MSG_WARNING, SCC_MSG_ERROR`|Zpráva se považuje za informace, varování nebo chyba.|  
 |`SCC_MSG_STATUS`|Zpráva se zobrazuje stav a mohou být zobrazeny ve stavovém řádku.|  
@@ -61,7 +61,7 @@ typedef LONG (*LPTEXTOUTPROC) (
   
 ## <a name="return-value"></a>Návratová hodnota  
   
-|Hodnota|Popis|  
+|Value|Popis|  
 |-----------|-----------------|  
 |SCC_MSG_RTN_OK|Řetězec se zobrazí nebo operace byla úspěšně dokončena.|  
 |SCC_MSG_RTN_CANCEL|Uživatel chce, aby na zrušení operace.|  
@@ -71,7 +71,7 @@ typedef LONG (*LPTEXTOUTPROC) (
   
 ## <a name="structures"></a>Struktury  
   
-###  <a name="LinkSccMsgDataIsCancelled"></a> SccMsgDataIsCancelled  
+### <a name="LinkSccMsgDataIsCancelled"></a> SccMsgDataIsCancelled  
   
 ```cpp#  
 typedef struct {  
@@ -81,7 +81,7 @@ typedef struct {
   
  Tato struktura se neposílají `SCC_MSG_BACKGROUND_IS_CANCELLED` zprávy. Používá se pro komunikaci ID operace na pozadí, která byla zrušena.  
   
-###  <a name="LinkSccMsgDataOnBeforeGetFile"></a> SccMsgDataOnBeforeGetFile  
+### <a name="LinkSccMsgDataOnBeforeGetFile"></a> SccMsgDataOnBeforeGetFile  
   
 ```cpp#  
 typedef struct {  
@@ -92,7 +92,7 @@ typedef struct {
   
  Tato struktura se neposílají `SCC_MSG_BACKGROUND_ON_BEFORE_GET_FILE` zprávy. Používá se pro komunikaci název souboru, o který se má načíst a ID operace na pozadí, který provádí načítání.  
   
-###  <a name="LinkSccMsgDataOnAfterGetFile"></a> SccMsgDataOnAfterGetFile  
+### <a name="LinkSccMsgDataOnAfterGetFile"></a> SccMsgDataOnAfterGetFile  
   
 ```cpp#  
 typedef struct {  
@@ -104,7 +104,7 @@ typedef struct {
   
  Tato struktura se neposílají `SCC_MSG_BACKGROUND_ON_AFTER_GET_FILE` zprávy. Používá se pro komunikaci výsledek načtení souboru zadané jak ID operace na pozadí, který nebyl načítání. Zobrazit návratové hodnoty pro [sccget –](../extensibility/sccget-function.md) pro co mohou být zadány ve výsledku.  
   
-###  <a name="LinkSccMsgDataOnMessage"></a> SccMsgDataOnMessage  
+### <a name="LinkSccMsgDataOnMessage"></a> SccMsgDataOnMessage  
  [C++]  
   
 ```  

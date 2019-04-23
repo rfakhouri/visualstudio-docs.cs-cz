@@ -9,12 +9,12 @@ ms.assetid: 175d1d58-f09a-4449-b132-a29a394a7c8e
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e022eec099682581f244ad426500a512c63035d4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 466ea9a7e0b877af55219be497eefde963e80853
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936158"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114155"
 ---
 # <a name="how-to-select-a-load-test-run-setting-to-use-from-the-command-line"></a>Postupy: Vyberte nastavení, můžete používat z příkazového řádku pro spuštění zátěžového testu
 
@@ -26,11 +26,11 @@ Pokud zátěžový test obsahuje pouze jeden parametr spuštění, jedná se vž
 
 ## <a name="to-change-the-run-setting-from-the-command-line"></a>Chcete-li změnit nastavení spuštění z příkazového řádku
 
-1.  Pokud chcete použít různé parametry spuštění z příkazového řádku využít tak strategii kontextových parametrů, použijte následující příkaz:
+1. Pokud chcete použít různé parametry spuštění z příkazového řádku využít tak strategii kontextových parametrů, použijte následující příkaz:
 
     `Set Test.UseRunSetting= CorporateStagingWebServer`
 
-2.  Spusťte zátěžový test pomocí nástroje mstest:
+2. Spusťte zátěžový test pomocí nástroje mstest:
 
     `mstest /testcontainer:loadtest1.loadtest`
 

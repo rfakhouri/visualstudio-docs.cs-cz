@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0bdc530656ef7e7a57b8e637aeca562eb483e0d9
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: c8d396efdc615ae954ef16453c9c5459f0685650
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59667622"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107228"
 ---
 # <a name="how-to-switch-between-views-and-the-xml-editor"></a>Postupy: Přepínání mezi zobrazeními a editorem XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,18 +23,18 @@ Toto téma ukazuje, jak přepínat mezi zobrazeními Návrhář schématu XML (X
   
 ### <a name="to-switch-between-the-views-and-the-xml-editor"></a>Chcete-li přepnout mezi zobrazeními a editorem XML  
   
-1.  Chcete-li vytvořit a upravit nový soubor schématu XML, postupujte podle kroků v [jak: Vytvoření a úprava souboru schématu XSD](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).  
+1. Chcete-li vytvořit a upravit nový soubor schématu XML, postupujte podle kroků v [jak: Vytvoření a úprava souboru schématu XSD](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).  
   
-2.  Chcete-li přepnout do návrháře schémat XML z editoru XML, klikněte pravým tlačítkem kamkoli v editoru XML a vyberte **Návrhář zobrazení**.  
+2. Chcete-li přepnout do návrháře schémat XML z editoru XML, klikněte pravým tlačítkem kamkoli v editoru XML a vyberte **Návrhář zobrazení**.  
   
-3.  Chcete-li přepnout do zobrazení grafu pomocí vodoznak, klikněte na tlačítko **pomocí zobrazení grafu si prohlédnout vztah mezi uzly** odkaz na zobrazení spuštění.  
+3. Chcete-li přepnout do zobrazení grafu pomocí vodoznak, klikněte na tlačítko **pomocí zobrazení grafu si prohlédnout vztah mezi uzly** odkaz na zobrazení spuštění.  
   
-4.  Přetáhněte `USAddress` uzlu z Průzkumníka schémat XML do zobrazení grafu. Klikněte pravým tlačítkem myši `USAddress` uzel v zobrazení grafu a výběr **zobrazit v zobrazení modelu obsahu** v místní nabídce.  
+4. Přetáhněte `USAddress` uzlu z Průzkumníka schémat XML do zobrazení grafu. Klikněte pravým tlačítkem myši `USAddress` uzel v zobrazení grafu a výběr **zobrazit v zobrazení modelu obsahu** v místní nabídce.  
   
      Zobrazení modelu obsahu s podrobnostmi o `USAddress` uzel se objeví.  
   
-5.  K přepnutí na zobrazení spuštění ze zobrazení modelu obsahu pomocí panelu nástrojů, klikněte na tlačítko Start zobrazení na panelu nástrojů XSD.  
+5. K přepnutí na zobrazení spuštění ze zobrazení modelu obsahu pomocí panelu nástrojů, klikněte na tlačítko Start zobrazení na panelu nástrojů XSD.  
   
-6.  Chcete-li přepnout mezi zobrazeními pomocí klávesových zkratek, stiskněte klávesy CTRL + 1 pro počáteční zobrazení, CTRL + 2 pro zobrazení grafu a CTRL + 3 pro zobrazení modelu obsahu.  
+6. Chcete-li přepnout mezi zobrazeními pomocí klávesových zkratek, stiskněte klávesy CTRL + 1 pro počáteční zobrazení, CTRL + 2 pro zobrazení grafu a CTRL + 3 pro zobrazení modelu obsahu.  
   
-7.  Přejděte do editoru XML ze zobrazení modelu obsahu, klikněte pravým tlačítkem na uzel a vyberte **zobrazit kód** v místní nabídce.
+7. Přejděte do editoru XML ze zobrazení modelu obsahu, klikněte pravým tlačítkem na uzel a vyberte **zobrazit kód** v místní nabídce.

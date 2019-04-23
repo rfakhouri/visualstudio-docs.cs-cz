@@ -10,12 +10,12 @@ ms.assetid: f8d68c3d-9134-4a8f-b566-485956cd321e
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: cea41ee70001d32bb003a6ccefe033d42274f682
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3a95b7da718f050357f6ecd79c90c389dd6085d5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54789554"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106602"
 ---
 # <a name="elements-of-the-isolated-shell"></a>Prvky izolovaného prostředí
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,15 +27,15 @@ Můžete upravit nastavení registru, nastavení za běhu a vstupní bod aplikac
   
  Při spuštění aplikace, nastavení registru jsou definované v následujícím pořadí:  
   
-1.  Vytvoří se klíč registru pro aplikaci.  
+1. Vytvoří se klíč registru pro aplikaci.  
   
-2.  Registr se aktualizuje ze souboru .pkgdef aplikace tak, že definujete zadaného klíče a položky.  
+2. Registr se aktualizuje ze souboru .pkgdef aplikace tak, že definujete zadaného klíče a položky.  
   
-3.  Pro každý balíček, který je součástí vaší aplikace se aktualizuje registr ze souboru .pkgdef tohoto balíčku. Každý balíček je definován v souboru .pkgdef aplikace $RootKey$ \Packages\\{*vsPackageGuid*} klíče pro balíček.  
+3. Pro každý balíček, který je součástí vaší aplikace se aktualizuje registr ze souboru .pkgdef tohoto balíčku. Každý balíček je definován v souboru .pkgdef aplikace $RootKey$ \Packages\\{*vsPackageGuid*} klíče pro balíček.  
   
-4.  Registr se aktualizuje z AppEnvConfig.pkgdef a BaseConfig.pkgdef v *cestu instalace sady Visual Studio SDK*\Common7\IDE\ShellExtensions\Platform adresáře. Tyto soubory jsou součástí sady Visual Studio a také součástí Distribuovatelný balíček prostředí Visual Studio Shell (izolovaný režim).  
+4. Registr se aktualizuje z AppEnvConfig.pkgdef a BaseConfig.pkgdef v *cestu instalace sady Visual Studio SDK*\Common7\IDE\ShellExtensions\Platform adresáře. Tyto soubory jsou součástí sady Visual Studio a také součástí Distribuovatelný balíček prostředí Visual Studio Shell (izolovaný režim).  
   
-5.  Registr se aktualizuje ze souboru .pkgundef aplikace tak, že odeberete zadaného klíče a položky.  
+5. Registr se aktualizuje ze souboru .pkgundef aplikace tak, že odeberete zadaného klíče a položky.  
   
 ## <a name="run-time-settings"></a>Nastavení za běhu  
  Když uživatel spustí aplikaci, která izolovaného prostředí, volá vstupní bod spuštění z prostředí sady Visual Studio. Nastavení aplikace jsou definovány při spuštění aplikace, následujícím způsobem:  

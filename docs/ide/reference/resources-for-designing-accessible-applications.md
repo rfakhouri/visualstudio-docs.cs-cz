@@ -14,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b79d1f95b6aab700de060a3749374e9ecb48c229
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 7fe2a4b57fda3ab861b5471e1af70cd4bfcc55e6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55952660"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60086140"
 ---
 # <a name="resources-for-designing-accessible-applications"></a>Prostředky pro navržení aplikací usnadňujících přístup
 
@@ -43,13 +43,13 @@ Použijte na následujících odkazech najdete informace o technologiích, kter�
 
 ## <a name="websites"></a>Weby
 
--   [Návod: Pokyny pro usnadnění přístupu pomocí ovládacích prvků obrázek, ovládací prvky nabídky a AutoPostBack](https://msdn.microsoft.com/Library/ff7b5021-48b3-46bf-921f-9fe1e0e32202) Tento článek obsahuje podrobné pokyny, včetně dostupné ovládací prvky v ukázkové webové stránky. Dává také některé usnadnění tipů pro Web.
+- [Návod: Pokyny pro usnadnění přístupu pomocí ovládacích prvků obrázek, ovládací prvky nabídky a AutoPostBack](https://msdn.microsoft.com/Library/ff7b5021-48b3-46bf-921f-9fe1e0e32202) Tento článek obsahuje podrobné pokyny, včetně dostupné ovládací prvky v ukázkové webové stránky. Dává také některé usnadnění tipů pro Web.
 
--   **Vytvoření přístupných webových stránek pomocí DHTML** Tento technický článek obsahuje seznam prvků jazyka HTML 4.0, které jsou k dispozici a také tipy pro návrh přístupné webu. Další informace najdete v tématu [vytvářet přístupné webové stránky s DHTML](https://msdn.microsoft.com/library/ms528445.aspx).
+- **Vytvoření přístupných webových stránek pomocí DHTML** Tento technický článek obsahuje seznam prvků jazyka HTML 4.0, které jsou k dispozici a také tipy pro návrh přístupné webu. Další informace najdete v tématu [vytvářet přístupné webové stránky s DHTML](https://msdn.microsoft.com/library/ms528445.aspx).
 
 ### <a name="third-party-resources"></a>Materiály třetích stran
 
--   **Web usnadnění iniciativy World Wide Web Consortium (W3C)** tento web obsahuje pokyny a postupy pro vývoj pro web přístupný. Další informace najdete na webu [https://www.w3.org/WAI/GL/](https://www.w3.org/WAI/GL/).
+- **Web usnadnění iniciativy World Wide Web Consortium (W3C)** tento web obsahuje pokyny a postupy pro vývoj pro web přístupný. Další informace najdete na webu [https://www.w3.org/WAI/GL/](https://www.w3.org/WAI/GL/).
 
 ## <a name="see-also"></a>Viz také:
 

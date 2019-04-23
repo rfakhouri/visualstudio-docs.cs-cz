@@ -11,12 +11,12 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 678e7a9c32f8c69e9f0bac5ebc3a077e7e625771
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f8de4432f1d0b4ab4bf24159744d20708d732fbd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54805452"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108697"
 ---
 # <a name="understanding-models-classes-and-relationships"></a>Porozumění modelům, třídám a vztahům
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,13 +65,13 @@ Jazyka specifického pro doménu (DSL) je definován v jeho souboru definice DSL
   
  Chcete-li uspořádat diagramem definice DSL, můžete:  
   
--   Zaměnit hlavní a odkazovat pomocí zobrazení **přenést stromu zde** a **rozdělit strom** příkazy. Klikněte pravým tlačítkem na jednu doménovou třídu najdete v těchto příkazů.  
+- Zaměnit hlavní a odkazovat pomocí zobrazení **přenést stromu zde** a **rozdělit strom** příkazy. Klikněte pravým tlačítkem na jednu doménovou třídu najdete v těchto příkazů.  
   
--   Změnit pořadí doménové třídy a třídy tvar stisknutím kombinace kláves Ctrl + šipka nahoru a Ctrl + šipka dolů.  
+- Změnit pořadí doménové třídy a třídy tvar stisknutím kombinace kláves Ctrl + šipka nahoru a Ctrl + šipka dolů.  
   
--   Sbalit či rozbalit třídy pomocí ikony v pravém horním rohu každé obrazce.  
+- Sbalit či rozbalit třídy pomocí ikony v pravém horním rohu každé obrazce.  
   
--   Kliknutím na znaménko minus (-) v dolní části doménovou třídu sbalení části stromu.  
+- Kliknutím na znaménko minus (-) v dolní části doménovou třídu sbalení části stromu.  
   
 ## <a name="inheritance"></a>Dědičnost  
  Doménové třídy lze definovat pomocí dědičnosti. Chcete-li vytvořit odvození dědičnosti, klikněte na nástroj dědičnosti, klikněte na tlačítko odvozené třídy a pak klikněte na základní třídu. Prvek modelu má všechny vlastnosti, které jsou definovány ve třídě vlastní domény, společně se všemi vlastnostmi zděděné ze základní třídy. Také dědí její role ve vztazích.  

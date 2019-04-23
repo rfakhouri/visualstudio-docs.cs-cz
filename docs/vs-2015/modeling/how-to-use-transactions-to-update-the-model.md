@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7ff4aba08b4eaa1d508c3371a3da80b8cac48534
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: bbc09543d0ee0297678d3f205becc55a6b6d7714
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54800146"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085920"
 ---
 # <a name="how-to-use-transactions-to-update-the-model"></a>Postupy: Používání transakcí k aktualizaci modelu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,9 +61,9 @@ catch (Exception ex)
 ## <a name="rolling-back-a-transaction"></a>Vrácení transakce zpět  
  Aby se zajistilo, že Store zůstává ve nebo se vrátí do stavu před transakce, můžete použít některý z těchto taktika:  
   
-1.  Vyvolat výjimku, která není zachycena uvnitř oboru transakce.  
+1. Vyvolat výjimku, která není zachycena uvnitř oboru transakce.  
   
-2.  Explicitně navrátit transakci:  
+2. Explicitně navrátit transakci:  
   
     ```  
     this.Store.TransactionManager.CurrentTransaction.Rollback();  

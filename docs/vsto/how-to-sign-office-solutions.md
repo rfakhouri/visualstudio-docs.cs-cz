@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 25c5388c1b1d14efad9e76b2494f8da423d28979
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 1fff7555c17f4fdac43de2690f8e133cc32881db
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54871660"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60101227"
 ---
 # <a name="how-to-sign-office-solutions"></a>Postupy: Podepisování řešení pro Office
   Pokud podepíšete řešení, můžete udělit důvěryhodnosti řešení pomocí certifikátu prokázat. Můžete použít stejný certifikát pro více řešení, a všechna řešení budou důvěryhodné žádné další aktualizace zásad.
@@ -35,15 +35,15 @@ ms.locfileid: "54871660"
 
 ### <a name="to-sign-an-office-solution-by-using-a-certificate"></a>K podepisování řešení pro Office s použitím certifikátu
 
-1.  Na **projektu** nabídky, klikněte na tlačítko _SolutionName_**vlastnosti**.
+1. Na **projektu** nabídky, klikněte na tlačítko _SolutionName_**vlastnosti**.
 
-2.  Klikněte na tlačítko **podepisování** kartu.
+2. Klikněte na tlačítko **podepisování** kartu.
 
-3.  Vyberte **podepsat manifesty ClickOnce**.
+3. Vyberte **podepsat manifesty ClickOnce**.
 
-4.  Vyhledejte certifikát kliknutím **vybírat Store** nebo **vybrat ze souboru** a přejdete k certifikátu.
+4. Vyhledejte certifikát kliknutím **vybírat Store** nebo **vybrat ze souboru** a přejdete k certifikátu.
 
-5.  Chcete-li ověřit, jestli se používá správný certifikát, klikněte na tlačítko **další podrobnosti** zobrazíte informace o certifikátu.
+5. Chcete-li ověřit, jestli se používá správný certifikát, klikněte na tlačítko **další podrobnosti** zobrazíte informace o certifikátu.
 
 ## <a name="see-also"></a>Viz také:
 

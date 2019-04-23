@@ -23,12 +23,12 @@ caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a7548b100e5bbcccd75a3cd5e7d94d6e7f72ed48
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3552ff1ffb5d6b3e3789aebd3a8903bf82a66b16
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54786128"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088311"
 ---
 # <a name="how-to-debug-com-servers"></a>Postupy: Ladění serverů modelu COM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,11 +39,11 @@ Ladění aplikace modelu COM serveru představuje jedinečnou sadu problémy, kt
   
 ### <a name="to-debug-a-server-application-without-container-information"></a>Chcete-li ladit serverové aplikace bez informací o kontejneru  
   
-1.  Spusťte ladění na server jako normální aplikace.  
+1. Spusťte ladění na server jako normální aplikace.  
   
-2.  Nastavte zarážky podle potřeby.  
+2. Nastavte zarážky podle potřeby.  
   
-3.  Spuštění aplikace typu kontejner.  
+3. Spuštění aplikace typu kontejner.  
   
 ## <a name="see-also"></a>Viz také  
  [COM a ActiveX ladění](../debugger/com-and-activex-debugging.md)   

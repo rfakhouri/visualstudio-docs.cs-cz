@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 04a3a45af932a34b89feb2726e7a137ceea2ac5a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6a0b46a4aaa780357faa38a9ee4b01d04b1a0ba1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54780123"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110924"
 ---
 # <a name="how-to-exclude-projects-from-a-build"></a>Postupy: Vyloučení projektů ze sestavení
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,29 +31,29 @@ Vytvoření řešení bez nutnosti všechny projekty, které obsahuje. Napříkl
   
 ### <a name="to-temporarily-remove-a-project-from-the-active-solution-configuration"></a>K dočasnému odstranění projektu z konfigurace aktivního řešení  
   
-1.  V panelu nabídky zvolte **sestavení**, **nástroje Configuration Manager**.  
+1. V panelu nabídky zvolte **sestavení**, **nástroje Configuration Manager**.  
   
-2.  V **projektu kontexty** tabulky, najděte projektu, které chcete vyloučit ze sestavení.  
+2. V **projektu kontexty** tabulky, najděte projektu, které chcete vyloučit ze sestavení.  
   
-3.  V **sestavení** sloupec pro projekt, zrušte zaškrtnutí políčka.  
+3. V **sestavení** sloupec pro projekt, zrušte zaškrtnutí políčka.  
   
-4.  Zvolte **Zavřít** tlačítko a pak znovu sestavte řešení.  
+4. Zvolte **Zavřít** tlačítko a pak znovu sestavte řešení.  
   
 ### <a name="to-create-a-solution-configuration-that-excludes-a-project"></a>Pro vytvoření konfigurace řešení, která nezahrnuje projektu  
   
-1.  V panelu nabídky zvolte **sestavení**, **nástroje Configuration Manager**.  
+1. V panelu nabídky zvolte **sestavení**, **nástroje Configuration Manager**.  
   
-2.  V **konfigurace aktivního řešení** klikněte na položku  **\<nový >**.  
+2. V **konfigurace aktivního řešení** klikněte na položku  **\<nový >**.  
   
-3.  V **název** pole, zadejte název konfigurace řešení.  
+3. V **název** pole, zadejte název konfigurace řešení.  
   
-4.  V **Kopírovat nastavení z:** klikněte na položku konfigurace řešení, na kterém chcete vytvořit novou konfiguraci (například **ladění**) a klikněte na tlačítko **OK** tlačítko .  
+4. V **Kopírovat nastavení z:** klikněte na položku konfigurace řešení, na kterém chcete vytvořit novou konfiguraci (například **ladění**) a klikněte na tlačítko **OK** tlačítko .  
   
-5.  V **nástroje Configuration Manager** dialogové okno, zrušte zaškrtnutí políčka v **sestavení** sloupec pro projekt, který chcete vyloučit a klikněte na tlačítko **Zavřít** tlačítko.  
+5. V **nástroje Configuration Manager** dialogové okno, zrušte zaškrtnutí políčka v **sestavení** sloupec pro projekt, který chcete vyloučit a klikněte na tlačítko **Zavřít** tlačítko.  
   
-6.  Na **standardní** nástrojů, ověřte, zda je nová konfigurace řešení v aktivní konfiguraci **konfigurace řešení** pole.  
+6. Na **standardní** nástrojů, ověřte, zda je nová konfigurace řešení v aktivní konfiguraci **konfigurace řešení** pole.  
   
-7.  V panelu nabídky zvolte **sestavení**, **znovu sestavit řešení**.  
+7. V panelu nabídky zvolte **sestavení**, **znovu sestavit řešení**.  
   
 ## <a name="see-also"></a>Viz také  
  [Principy konfigurací sestavení](../ide/understanding-build-configurations.md)   

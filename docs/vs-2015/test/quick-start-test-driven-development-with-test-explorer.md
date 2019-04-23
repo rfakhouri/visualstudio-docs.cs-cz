@@ -8,12 +8,12 @@ ms.assetid: 5161b533-2127-4172-b473-d4ffc76ff05b
 caps.latest.revision: 17
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: af763149df8997e711677d978468a57d276cb636
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: f45e9c466bcb99dd0fecb00702441d3d97899a52
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57868921"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108981"
 ---
 # <a name="quick-start-test-driven-development-with-test-explorer"></a>Rychlý start: Vývoj řízený testy s použitím Průzkumníka testů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,11 +22,11 @@ Doporučujeme vytvořit jednotkové testy zajistit, aby byl váš kód správně
   
  Průzkumník testů nahrazuje okna jednotkových testů starších vydání sady Visual Studio. Mezi její výhody patří:  
   
--   Spustit .NET, nespravovaných, databázových a jiných testů pomocí jednoho rozhraní.  
+- Spustit .NET, nespravovaných, databázových a jiných testů pomocí jednoho rozhraní.  
   
--   Použití jednotky testovacího rozhraní dle vlastního výběru, jako je například NUnit nebo rozhraní MSTest.  
+- Použití jednotky testovacího rozhraní dle vlastního výběru, jako je například NUnit nebo rozhraní MSTest.  
   
--   Zobrazit v jednom okně všechny informace, které potřebujete.  
+- Zobrazit v jednom okně všechny informace, které potřebujete.  
   
 ## <a name="using-test-explorer"></a>Pomocí Průzkumníka testů  
  ![Spustit všechny tlačítko zobrazuje Průzkumník testů jednotek](../test/media/unittestexplorer-beta.png "UnitTestExplorer(beta)")  
@@ -37,13 +37,13 @@ Doporučujeme vytvořit jednotkové testy zajistit, aby byl váš kód správně
   
     Například vytvořit test používající rozhraní MSTest:  
   
-   1.  Vytvoření testovacího projektu.  
+   1. Vytvoření testovacího projektu.  
   
         V **nový projekt** dialogového okna rozbalte **jazyka Visual Basic**, **Visual C#**, nebo **Visual C++** a klikněte na tlačítko **Test**.  
   
         Vyberte **projekt testu jednotek**.  
   
-   2.  Zapište každý Jednotkový test jako metodu. Předpona každou metodu testu `[TestMethod]` atribut.  
+   2. Zapište každý Jednotkový test jako metodu. Předpona každou metodu testu `[TestMethod]` atribut.  
   
 2. Je-li jednotlivé testy nemají žádné závislosti, které brání spuštění v libovolném pořadí, zapněte paralelní provádění testů s ![USTIT&#95;parallelicon&#45;malé](../test/media/ute-parallelicon-small.png "UTE_parallelicon malé") přepínací tlačítko na panelu nástrojů. To může výrazně snížit čas potřebný ke spuštění všech testů.  
   
@@ -67,7 +67,7 @@ Doporučujeme vytvořit jednotkové testy zajistit, aby byl váš kód správně
 > [!NOTE]
 >  Je-li zobrazen žádný test, ujistěte se, že máte nainstalován adaptér pro připojení Průzkumníku testů pro testovací rozhraní, kterou používáte. Další informace najdete v tématu [použití různých testovacích rozhraní](/visualstudio/test/getting-started-with-unit-testing#use-a-different-unit-test-framework).  
   
-##  <a name="walkthrough"></a> Návod: Použití jednotkových testů pro vývoj metody  
+## <a name="walkthrough"></a> Návod: Použití jednotkových testů pro vývoj metody  
  Tento návod ukazuje, jak vyvinout testovanou metodu v jazyce C# pomocí rozhraní Microsoft Unit Test framework. Můžete snadno přizpůsobit ho pro ostatní jazyky a použití jiných testovacích architektur, jako je například NUnit. Další informace najdete v tématu [Usa různých testovacích rozhraní](/visualstudio/test/getting-started-with-unit-testing#use-a-different-unit-test-framework).  
   
 #### <a name="creating-the-test-and-method"></a>Vytvoření testu a – metoda  
@@ -76,7 +76,7 @@ Doporučujeme vytvořit jednotkové testy zajistit, aby byl váš kód správně
   
 2. Vytvoření testovacího projektu.  
   
-   -   V **nový projekt** dialogovém okně zvolte **Visual C#**, **testovací** a klikněte na tlačítko **projekt testu jednotek**.  
+   - V **nový projekt** dialogovém okně zvolte **Visual C#**, **testovací** a klikněte na tlačítko **projekt testu jednotek**.  
   
         ![Nové projekty kódu a testování](../test/media/unittestexplorerwalk1.png "UnitTestExplorerWalk1")  
   
@@ -102,15 +102,15 @@ Doporučujeme vytvořit jednotkové testy zajistit, aby byl váš kód správně
   
 4. Generovat metodu testu.  
   
-   1.  Umístěte kurzor na `Rooter`a pak v místní nabídce zvolte **generovat**, **nový typ**.  
+   1. Umístěte kurzor na `Rooter`a pak v místní nabídce zvolte **generovat**, **nový typ**.  
   
-   2.  V **generovat nový typ** dialogové okno, nastavte **projektu** do projektu knihovny tříd. V tomto příkladu je to `MyMath`.  
+   2. V **generovat nový typ** dialogové okno, nastavte **projektu** do projektu knihovny tříd. V tomto příkladu je to `MyMath`.  
   
-   3.  Umístěte kurzor na `SquareRoot`a pak v místní nabídce zvolte **generovat**, **Pahýl metody**.  
+   3. Umístěte kurzor na `SquareRoot`a pak v místní nabídce zvolte **generovat**, **Pahýl metody**.  
   
 5. Spusťte Jednotkový test.  
   
-   1.  Na **testovací** nabídce zvolte **spustit jednotkové testy**, **všechny testy**.  
+   1. Na **testovací** nabídce zvolte **spustit jednotkové testy**, **všechny testy**.  
   
         Toto řešení je sestaveno a spuštěno.  
   
@@ -130,7 +130,7 @@ Doporučujeme vytvořit jednotkové testy zajistit, aby byl váš kód správně
   
 #### <a name="after-every-change-make-all-the-tests-pass"></a>Po každé změně Ujistěte se, všechny testy úspěšné.  
   
-1.  V `MyMath\Rooter.cs`, Vylepšete kód `SquareRoot`:  
+1. V `MyMath\Rooter.cs`, Vylepšete kód `SquareRoot`:  
   
     ```csharp  
     public double SquareRoot(double input)  
@@ -139,7 +139,7 @@ Doporučujeme vytvořit jednotkové testy zajistit, aby byl váš kód správně
      }  
     ```  
   
-2.  V Průzkumníku testů, zvolte **spustit všechny**.  
+2. V Průzkumníku testů, zvolte **spustit všechny**.  
   
      Kód sestavení a spuštění testu.  
   
@@ -149,7 +149,7 @@ Doporučujeme vytvořit jednotkové testy zajistit, aby byl váš kód správně
   
 #### <a name="add-tests-to-extend-the-range-of-inputs"></a>Přidat testy do Rozšiřte rozsah vstupů  
   
-1.  Pokud chcete zlepšit si být jistější, který váš kód funguje ve všech případech, přidejte testy, které zkoušejí širší rozsah vstupních hodnot.  
+1. Pokud chcete zlepšit si být jistější, který váš kód funguje ve všech případech, přidejte testy, které zkoušejí širší rozsah vstupních hodnot.  
   
     > [!TIP]
     >  Neupravujte existující testy, které předávají. Místo toho přidejte nové testy. Existující testy měňte pouze v případě, že se změní požadavky uživatele. Tato zásada umožňuje zajistit, aby neztratili stávajících funkcí během rozšiřování kódu.  
@@ -180,13 +180,13 @@ Doporučujeme vytvořit jednotkové testy zajistit, aby byl váš kód správně
     }  
     ```  
   
-2.  V Průzkumníku testů, zvolte **spustit všechny**.  
+2. V Průzkumníku testů, zvolte **spustit všechny**.  
   
      Nový test se nezdaří, i když se první test stále úspěšný.  
   
      K hledání bodu selhání, zvolte test obsahující a potom v dolní části Průzkumníku testů vyberte položku nejvýše **trasování zásobníku**.  
   
-3.  Zkontrolujte, zda chcete zobrazit, co mohlo způsobit chybu testované metody. V `MyMath.Rooter` třídy, revize kódu:  
+3. Zkontrolujte, zda chcete zobrazit, co mohlo způsobit chybu testované metody. V `MyMath.Rooter` třídy, revize kódu:  
   
     ```  
     public double SquareRoot(double input)  
@@ -202,13 +202,13 @@ Doporučujeme vytvořit jednotkové testy zajistit, aby byl váš kód správně
     }  
     ```  
   
-4.  V Průzkumníku testů, zvolte **spustit všechny**.  
+4. V Průzkumníku testů, zvolte **spustit všechny**.  
   
      Oba testy jsou nyní úspěšné.  
   
 #### <a name="add-tests-for-exceptional-cases"></a>Přidejte testy výjimečných případů  
   
-1.  Přidejte test záporných vstupů:  
+1. Přidejte test záporných vstupů:  
   
     ```csharp  
     [TestMethod]  
@@ -227,15 +227,15 @@ Doporučujeme vytvořit jednotkové testy zajistit, aby byl váš kód správně
      }  
     ```  
   
-2.  V Průzkumníku testů, zvolte **spustit všechny**.  
+2. V Průzkumníku testů, zvolte **spustit všechny**.  
   
      Metoda v rámci testu smyčky a musí být ukončena ručně.  
   
-3.  Zvolte **zrušit**.  
+3. Zvolte **zrušit**.  
   
      Test se ukončí po 10 sekundách.  
   
-4.  Opravte kód metody:  
+4. Opravte kód metody:  
   
     ```csharp  
   
@@ -248,13 +248,13 @@ Doporučujeme vytvořit jednotkové testy zajistit, aby byl váš kód správně
     ...  
     ```  
   
-5.  V Průzkumníku testů, zvolte **spustit všechny**.  
+5. V Průzkumníku testů, zvolte **spustit všechny**.  
   
      Všechny testy jsou úspěšné.  
   
 #### <a name="refactor-without-changing-tests"></a>Refaktorujte beze změn testů  
   
-1.  Zjednodušte kód, ale neměňte testy.  
+1. Zjednodušte kód, ale neměňte testy.  
   
     > [!TIP]
     >  A *refaktoring* je změna, která slouží k provádění kódu líp fungovat nebo k srozumitelnější kód. Refaktorování není zamýšleno změnit chování kódu, a proto testy zůstávají nezměněny.  
@@ -283,7 +283,7 @@ Doporučujeme vytvořit jednotkové testy zajistit, aby byl váš kód správně
     }  
     ```  
   
-2.  Zvolte **spustit všechny**.  
+2. Zvolte **spustit všechny**.  
   
      Všechny testy jsou stále úspěšné.  
   

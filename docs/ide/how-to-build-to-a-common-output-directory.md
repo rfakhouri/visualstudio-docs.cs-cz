@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 40a8ea93075294bb4419cfe4178965a8a4808cfc
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 373a70c3a33258be6b9f618fa190fde4b9b80b0e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55949705"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088987"
 ---
 # <a name="how-to-build-to-a-common-output-directory"></a>Postupy: Sestavení do společného výstupního adresáře
 
@@ -26,13 +26,13 @@ Ve výchozím nastavení [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md
 
 ## <a name="to-place-all-solution-outputs-in-a-common-directory"></a>Umístit všechna řešení výstupy společný adresář
 
-1.  Klikněte na jeden projekt v řešení.
+1. Klikněte na jeden projekt v řešení.
 
-2.  Na **projektu** nabídky, klikněte na tlačítko **vlastnosti**.
+2. Na **projektu** nabídky, klikněte na tlačítko **vlastnosti**.
 
-3.  V závislosti na typu projektu, klikněte na buď **kompilaci** kartu nebo **sestavení** kartu a nastavit **výstupní cesta** do složky pro všechny projekty v řešení.
+3. V závislosti na typu projektu, klikněte na buď **kompilaci** kartu nebo **sestavení** kartu a nastavit **výstupní cesta** do složky pro všechny projekty v řešení.
 
-4.  Opakujte kroky 1-3 pro všechny projekty v řešení.
+4. Opakujte kroky 1-3 pro všechny projekty v řešení.
 
 ## <a name="see-also"></a>Viz také:
 

@@ -12,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: abe8be0804877b4836a766f2c4fec37321534b5f
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 342d3288d647018af7faf42ab3e669bb8a62594f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318586"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107811"
 ---
 # <a name="accessibility-features-of-visual-studio"></a>Funkce pro usnadnění přístupu sady Visual Studio
 
@@ -26,15 +26,15 @@ ms.locfileid: "56318586"
 
 Kromě funkcí a nástrojů usnadnění v Windows následující funkce Ujistěte se, Visual Studio přístupnější pro osoby s postižením:
 
--   Rozšíření nástrojů tlačítko a text
+- Rozšíření nástrojů tlačítko a text
 
--   Možnosti změnit velikost textu v editorech
+- Možnosti změnit velikost textu v editorech
 
--   Přizpůsobení barev v editorech
+- Přizpůsobení barev v editorech
 
--   Přizpůsobení klávesové zkratky
+- Přizpůsobení klávesové zkratky
 
--   Automatické dokončování pro metody a parametrů
+- Automatické dokončování pro metody a parametrů
 
 > [!NOTE]
 > Toto téma se vztahuje k sadě Visual Studio ve Windows. Visual Studio pro Mac, najdete v části [usnadnění pro Visual Studio for Mac](/visualstudio/mac/accessibility).
@@ -44,15 +44,15 @@ Kromě funkcí a nástrojů usnadnění v Windows následující funkce Ujistět
 
 Další informace naleznete v následujících tématech:
 
--   [Postupy: Nastavení možností usnadnění přístupu IDE](../../ide/reference/how-to-set-ide-accessibility-options.md)
+- [Postupy: Nastavení možností usnadnění přístupu IDE](../../ide/reference/how-to-set-ide-accessibility-options.md)
 
--   [Postupy: Výhradní používání klávesnice](../../ide/reference/how-to-use-the-keyboard-exclusively.md)
+- [Postupy: Výhradní používání klávesnice](../../ide/reference/how-to-use-the-keyboard-exclusively.md)
 
--   [Výchozí klávesové zkratky](../../ide/default-keyboard-shortcuts-in-visual-studio.md)
+- [Výchozí klávesové zkratky](../../ide/default-keyboard-shortcuts-in-visual-studio.md)
 
--   [A tipy k přístupnosti](../../ide/reference/accessibility-tips-and-tricks.md)
+- [A tipy k přístupnosti](../../ide/reference/accessibility-tips-and-tricks.md)
 
--   [Postupy: Změna písma a barvy](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
+- [Postupy: Změna písma a barvy](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
 
 ## <a name="see-also"></a>Viz také:
 

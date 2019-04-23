@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: da54bae8c1a688e4708a71476e6654132708a511
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 3ff626078296c61d5f2588434942d4016cba0c1e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56607470"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111945"
 ---
 # <a name="msbuild-target-framework-and-target-platform"></a>MSBuild cílová rozhraní framework a cílová platforma
 Projekt se dají spouštět na *Cílová architektura*, což je konkrétní verzi rozhraní .NET Framework a *cílovou platformu*, což je zejména softwarovou architekturu.  Například můžete zacílit aplikaci pro spuštění v rozhraní .NET Framework 2.0 na 32bitové platformě, která je kompatibilní s 802 x 86 procesorů ("x86"). Kombinace Cílová architektura a cílová platforma se označuje jako *cílový kontext*.
@@ -61,11 +61,11 @@ Cílová architektura, která je zadána v `TargetFrameworkVersion` vlastnost v 
 ## <a name="target-platform"></a>Cílová platforma
  A *platformy* je kombinaci hardwaru a softwaru, který definuje konkrétní běhového prostředí. Například
 
--   `x86` Určuje 32bitová verze operačního systému Windows, který je spuštěn na procesoru Intel 80 x 86 nebo jeho ekvivalent.
+- `x86` Určuje 32bitová verze operačního systému Windows, který je spuštěn na procesoru Intel 80 x 86 nebo jeho ekvivalent.
 
--   `x64` Určuje 64bitová verze operačního systému Windows, který je spuštěn na procesoru Intel x64 nebo jeho ekvivalent.
+- `x64` Určuje 64bitová verze operačního systému Windows, který je spuštěn na procesoru Intel x64 nebo jeho ekvivalent.
 
--   `Xbox` Určuje platformu Microsoft Xbox 360.
+- `Xbox` Určuje platformu Microsoft Xbox 360.
 
 A *cílovou platformu* je konkrétní platformu, kterou váš projekt se vytvořil pro spuštění na. Cílová platforma je zvolena v `PlatformTarget` vlastnost v souboru projektu sestavení. Pomocí stránky vlastností projektu můžete změnit cílovou platformu nebo **nástroje Configuration Manager** v integrovaném vývojovém prostředí.
 

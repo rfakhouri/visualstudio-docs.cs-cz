@@ -13,12 +13,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ab42cd9466561f64ecb35e65621bcbb91004f8f3
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 8e424078580ff4a739046b2555c3fb94ee17dafa
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54775914"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089654"
 ---
 # <a name="visual-studio-ide-64-bit-support"></a>Podpora pro 64bitové integrované vývojové prostředí sady Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,23 +28,23 @@ ms.locfileid: "54775914"
 ## <a name="deploying-a-64-bit-application"></a>Zavádění 64bitové aplikace
  Následující témata se zabývají nasazením 64bitových aplikací.
 
--   [Nasazení nezbytných součástí pro 64bitové aplikace](../deployment/deploying-prerequisites-for-64-bit-applications.md)
+- [Nasazení nezbytných součástí pro 64bitové aplikace](../deployment/deploying-prerequisites-for-64-bit-applications.md)
 
--   [Postupy: Vytvoření instalačního programu Windows pro 64bitové platformě](http://msdn.microsoft.com/232bfc64-f99a-4cc6-9806-ba70bb9a09ff)
+- [Postupy: Vytvoření instalačního programu Windows pro 64bitové platformě](http://msdn.microsoft.com/232bfc64-f99a-4cc6-9806-ba70bb9a09ff)
 
 ## <a name="configuring-projects-as-64-bit-applications"></a>Konfigurace projektů jako 64bitové aplikace
  Následující témata popisují konfiguraci projektů, které mají být sestaveny pro 64bitové aplikace.
 
--   [Postupy: Konfigurace projektů pro cílové platformy](../ide/how-to-configure-projects-to-target-platforms.md)
+- [Postupy: Konfigurace projektů pro cílové platformy](../ide/how-to-configure-projects-to-target-platforms.md)
 
 ## <a name="debugging-a-64-bit-application"></a>Ladění 64bitové aplikace
  Upravit a pokračovat není funkční v případě [!INCLUDE[vsprvslong](../includes/vsprvslong-md.md)] běží v operačním systému Windows 64-bit. Následující témata se zabývají laděním 64bitových aplikací.
 
--   [Postupy: Ladění na 64bitové platformy](http://msdn.microsoft.com/27495e23-a624-46fb-996f-043d0a816dd5)
+- [Postupy: Ladění na 64bitové platformy](http://msdn.microsoft.com/27495e23-a624-46fb-996f-043d0a816dd5)
 
--   [Ladění 64bitových aplikací](../debugger/debug-64-bit-applications.md)
+- [Ladění 64bitových aplikací](../debugger/debug-64-bit-applications.md)
 
--   [Použití souborů výpisu paměti](../debugger/using-dump-files.md)
+- [Použití souborů výpisu paměti](../debugger/using-dump-files.md)
 
 ## <a name="see-also"></a>Viz také
  [Postupy: Konfigurace projektů pro cílové platformy](../ide/how-to-configure-projects-to-target-platforms.md)

@@ -29,12 +29,12 @@ caps.latest.revision: 245
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c9ff6901db602a812c06c6d8cc08ce55ef6d1d7e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1601853a99ebea5ef687fbe5679fd74b45d5c381
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54792198"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107694"
 ---
 # <a name="map-dependencies-across-your-solutions"></a>Mapování závislostí napříč vaším řešením
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,18 +45,18 @@ Pokud chcete pochopit závislosti ve vašem kódu, Vizualizujte si je vytvořen�
   
  **Tady jsou některé videa**:  
   
--   [Pochopení závislostí kódu pomocí vizualizace](http://go.microsoft.com/fwlink/?LinkID=252065)  
+- [Pochopení závislostí kódu pomocí vizualizace](http://go.microsoft.com/fwlink/?LinkID=252065)  
   
--   [Vizualizujte dopad změny](http://go.microsoft.com/fwlink/?LinkID=252068)  
+- [Vizualizujte dopad změny](http://go.microsoft.com/fwlink/?LinkID=252068)  
   
--   [Porozumění komplexnímu kódu pomocí map kódu](http://go.microsoft.com/fwlink/?LinkID=259869)  
+- [Porozumění komplexnímu kódu pomocí map kódu](http://go.microsoft.com/fwlink/?LinkID=259869)  
   
-##  <a name="GetStarted"></a> Začínáme s map kódu  
+## <a name="GetStarted"></a> Začínáme s map kódu  
  **Použití map kódu musíte buď**:  
   
--   Visual Studio Enterprise: Vytváření map kódu z editoru kódu, Průzkumník řešení, zobrazení tříd nebo prohlížeči objektů.  
+- Visual Studio Enterprise: Vytváření map kódu z editoru kódu, Průzkumník řešení, zobrazení tříd nebo prohlížeči objektů.  
   
--   Visual Studio Professional: Otevření kódových map, provádění omezené úprav a vyhledání kódu.  
+- Visual Studio Professional: Otevření kódových map, provádění omezené úprav a vyhledání kódu.  
   
 > [!WARNING]
 >  Než budete sdílet mapy vytvořené v sadě Visual Studio Enterprise s jinými uživateli, kteří používají Visual Studio Professional, ujistěte se, že všechny položky na mapě (jako jsou skryté položky, rozšířené skupiny a propojení mezi skupinami) jsou nastavena jako viditelná.  
@@ -73,51 +73,51 @@ Pokud chcete pochopit závislosti ve vašem kódu, Vizualizujte si je vytvořen�
   
 #### <a name="to-see-the-overall-dependencies-across-your-solution"></a>K zobrazení celkové závislostí ve vašem řešení  
   
-1.  Otevřít **architektura** nabídky.  
+1. Otevřít **architektura** nabídky.  
   
-2.  Pokud právě otevřeli řešení a nebyly dosud sestaven, nebo pokud váš kód se změnil od posledního jste sestavili, zvolte **Generovat mapu kódu pro řešení**.  
+2. Pokud právě otevřeli řešení a nebyly dosud sestaven, nebo pokud váš kód se změnil od posledního jste sestavili, zvolte **Generovat mapu kódu pro řešení**.  
   
-3.  Pokud váš kód nebyl změněn od posledního vytvořené, vyberte **Generovat mapu kódu pro řešení bez vytváření** získat vyšší výkon při vytváření mapy.  
+3. Pokud váš kód nebyl změněn od posledního vytvořené, vyberte **Generovat mapu kódu pro řešení bez vytváření** získat vyšší výkon při vytváření mapy.  
   
-4.  [Zobrazit celkové závislosti](#SeeOverviewSource) pochopit, jak můžete map kódu k zobrazení celkového závislostí ve vašem řešení.  
+4. [Zobrazit celkové závislosti](#SeeOverviewSource) pochopit, jak můžete map kódu k zobrazení celkového závislostí ve vašem řešení.  
   
 #### <a name="to-see-specific-dependencies-within-your-solution"></a>Pokud chcete zobrazit konkrétní závislosti v rámci vašeho řešení  
   
-1.  V rámci řešení pro načtení, otevřete **Průzkumníka řešení**.  
+1. V rámci řešení pro načtení, otevřete **Průzkumníka řešení**.  
   
-2.  Vyberte všechny projekty, odkazy na sestavení, složky, soubory, typy nebo členy, které chcete propojit.  
+2. Vyberte všechny projekty, odkazy na sestavení, složky, soubory, typy nebo členy, které chcete propojit.  
   
-3.  Na **Průzkumníka řešení** nástrojů, zvolte **zobrazit na mapě kódu**![vytvořit nový graf z vybrané uzly tlačítko](../modeling/media/createnewgraphfromselectedbutton.gif "CreateNewGraphFromSelectedButton "). Nebo otevřete místní nabídku a zvolte **zobrazit na mapě kódu**. Můžete také přetáhnout položky ze zobrazení tříd nebo prohlížeči objektů do nové nebo existující mapy kódu.  
+3. Na **Průzkumníka řešení** nástrojů, zvolte **zobrazit na mapě kódu**![vytvořit nový graf z vybrané uzly tlačítko](../modeling/media/createnewgraphfromselectedbutton.gif "CreateNewGraphFromSelectedButton "). Nebo otevřete místní nabídku a zvolte **zobrazit na mapě kódu**. Můžete také přetáhnout položky ze zobrazení tříd nebo prohlížeči objektů do nové nebo existující mapy kódu.  
   
-4.  [Zobrazit konkrétní závislosti](#SeeSpecificSource) pochopit, jak můžete map kódu k zobrazení určitých závislostí v rámci vašeho řešení.  
+4. [Zobrazit konkrétní závislosti](#SeeSpecificSource) pochopit, jak můžete map kódu k zobrazení určitých závislostí v rámci vašeho řešení.  
   
-###  <a name="CreateEmptyMap"></a> Chcete-li přidat mapu s novým prázdný kód do vašeho řešení  
+### <a name="CreateEmptyMap"></a> Chcete-li přidat mapu s novým prázdný kód do vašeho řešení  
   
-1.  V **Průzkumníka řešení**, otevřete místní nabídku pro uzel nejvyšší úrovně řešení. Zvolte **přidat** klikněte na tlačítko **nová položka**.  
+1. V **Průzkumníka řešení**, otevřete místní nabídku pro uzel nejvyšší úrovně řešení. Zvolte **přidat** klikněte na tlačítko **nová položka**.  
   
-2.  V části **nainstalováno**, zvolte **Obecné**.  
+2. V části **nainstalováno**, zvolte **Obecné**.  
   
-3.  V pravém podokně vyberte **dokument orientovaného grafu** a klikněte na tlačítko **přidat**.  
+3. V pravém podokně vyberte **dokument orientovaného grafu** a klikněte na tlačítko **přidat**.  
   
      Teď máte prázdné mapy, která se zobrazí ve vašem řešení **položky řešení** složky.  
   
 #### <a name="to-create-a-new-empty-code-map-without-adding-it-to-your-solution"></a>Chcete-li vytvořit mapu s novým prázdný kód bez jeho přidání do řešení  
   
-1.  Otevřít **architektura** nabídku a zvolte **novou mapu kódu**.  
+1. Otevřít **architektura** nabídku a zvolte **novou mapu kódu**.  
   
      \- nebo –  
   
-2.  Otevřít **souboru** nabídku a zvolte **nový** klikněte na tlačítko **souboru**.  
+2. Otevřít **souboru** nabídku a zvolte **nový** klikněte na tlačítko **souboru**.  
   
-3.  V části **nainstalováno**, zvolte **Obecné**.  
+3. V části **nainstalováno**, zvolte **Obecné**.  
   
-4.  V pravém podokně vyberte **dokument orientovaného grafu** a klikněte na tlačítko **otevřít**.  
+4. V pravém podokně vyberte **dokument orientovaného grafu** a klikněte na tlačítko **otevřít**.  
   
      Teď máte prázdné mapy, která se nezobrazují v složky vašeho řešení.  
   
-##  <a name="SeeOverviewSource"></a> Zobrazit celkové závislosti  
+## <a name="SeeOverviewSource"></a> Zobrazit celkové závislosti  
   
-###  <a name="OverviewSource"></a> Zobrazení závislostí ve vašem řešení  
+### <a name="OverviewSource"></a> Zobrazení závislostí ve vašem řešení  
   
 1. Na **architektura** nabídce zvolte **Generovat mapu kódu pro řešení**.  
   
@@ -183,35 +183,35 @@ Pokud chcete pochopit závislosti ve vašem kódu, Vizualizujte si je vytvořen�
   
     Viz také:  
   
--   [Procházení a změna uspořádání map kódu](../modeling/browse-and-rearrange-code-maps.md)  
+- [Procházení a změna uspořádání map kódu](../modeling/browse-and-rearrange-code-maps.md)  
   
--   [Přizpůsobení map kódu úpravou souborů DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md)  
+- [Přizpůsobení map kódu úpravou souborů DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md)  
   
--   Vyhledávání potenciálních problémů v kódu podle [spuštěna analyzátor](../modeling/find-potential-problems-using-code-map-analyzers.md).  
+- Vyhledávání potenciálních problémů v kódu podle [spuštěna analyzátor](../modeling/find-potential-problems-using-code-map-analyzers.md).  
   
-###  <a name="OverviewCompiled"></a> Zobrazit závislosti mezi sestavení nebo binární soubory  
+### <a name="OverviewCompiled"></a> Zobrazit závislosti mezi sestavení nebo binární soubory  
   
-1.  [Vytvořte mapu kódu prázdný](#GetStarted), nebo otevřete existující mapy kódu (soubor .dgml).  
+1. [Vytvořte mapu kódu prázdný](#GetStarted), nebo otevřete existující mapy kódu (soubor .dgml).  
   
-2.  Přetáhněte sestavení nebo binární soubory, které chcete namapovat mimo aplikaci Visual Studio do mapy. Například přetáhněte sestavení nebo binární soubory z Průzkumníka Windows nebo Průzkumníka souborů.  
+2. Přetáhněte sestavení nebo binární soubory, které chcete namapovat mimo aplikaci Visual Studio do mapy. Například přetáhněte sestavení nebo binární soubory z Průzkumníka Windows nebo Průzkumníka souborů.  
   
 > [!NOTE]
 >  Sestavení nebo binární soubory můžete přetáhnout z Průzkumníka Windows nebo Průzkumníka souborů pouze v případě, že spustíte ho a sady Visual Studio na stejné úrovni oprávnění řízení přístupu uživatele (UAC). Například pokud je zapnutý nástroj Řízení uživatelských účtů a používáte Visual Studio jako správce, Průzkumník Windows nebo Průzkumníka souborů zablokuje možnost přetahování. Chcete-li tento problém obejít, ujistěte se, jak běží se stejnou úrovní oprávnění, nebo vypněte nástroj Řízení uživatelských účtů.  
   
-##  <a name="SeeSpecificSource"></a> Zobrazit konkrétní závislosti  
+## <a name="SeeSpecificSource"></a> Zobrazit konkrétní závislosti  
  Předpokládejme například, že máte přezkoumání kódu provést některé soubory s probíhající změny. Zobrazení závislostí v tyto změny, můžete vytvořit mapu kódu z těchto souborů.  
   
  ![Zobrazit konkrétní závislosti v mapě kódu](../modeling/media/codemapsspecificdependenciesintro.png "CodeMapsSpecificDependenciesIntro")  
   
 ### <a name="see-specific-dependencies-in-your-solution"></a>Zobrazit specifické závislosti ve vašem řešení  
   
-1.  Otevřít **Průzkumníka řešení**. Vyberte projekty, odkazy na sestavení, složky, soubory, typy a členy, které vás zajímají. Chcete-li najít položky se závislostmi na typech nebo členech, otevřete typ nebo člena nabídku z **Průzkumníka řešení**. Vyberte typ závislosti a pak vyberte výsledky.  
+1. Otevřít **Průzkumníka řešení**. Vyberte projekty, odkazy na sestavení, složky, soubory, typy a členy, které vás zajímají. Chcete-li najít položky se závislostmi na typech nebo členech, otevřete typ nebo člena nabídku z **Průzkumníka řešení**. Vyberte typ závislosti a pak vyberte výsledky.  
   
-2.  Mapování položek a jejich členy. Na **Průzkumníka řešení** klikněte na panel nástrojů **zobrazit na mapě kódu**![vytvořit nový graf z vybrané uzly tlačítko](../modeling/media/createnewgraphfromselectedbutton.gif "CreateNewGraphFromSelectedButton").  
+2. Mapování položek a jejich členy. Na **Průzkumníka řešení** klikněte na panel nástrojů **zobrazit na mapě kódu**![vytvořit nový graf z vybrané uzly tlačítko](../modeling/media/createnewgraphfromselectedbutton.gif "CreateNewGraphFromSelectedButton").  
   
      ![Vyberte položky, které chcete namapovat](../modeling/media/codemapsselectinsolutionexplorer.png "CodeMapsSelectInSolutionExplorer")  
   
-3.  Mapa zobrazuje vybrané položky v rámci jeho obsahujícího sestavení.  
+3. Mapa zobrazuje vybrané položky v rámci jeho obsahujícího sestavení.  
   
      ![Vybrané položky zobrazené jako skupiny na mapě](../modeling/media/codemapsshowitemsfromsolnexplorer.png "CodeMapsShowItemsFromSolnExplorer")  
   
@@ -220,19 +220,19 @@ Pokud chcete pochopit závislosti ve vašem kódu, Vizualizujte si je vytvořen�
     > [!NOTE]
     >  Když přidáváte položky z projektu, který je sdílen napříč více aplikacemi, jako jsou Windows Phone nebo Windows Store, tyto položky se zobrazí na mapě s aktuálně aktivním projektem aplikace. Pokud změníte kontext na jiný projekt aplikace a přidáte další položky ze sdíleného projektu, tyto položky se nyní zobrazí s nově aktivním projektem aplikace. Operace, které provádíte s položkou na mapě, se vztahují pouze na ty položky, které sdílejí stejný kontext.  
   
-4.  Chcete-li procházet položky, je rozbalte. Přesuňte ukazatel myši nad položku a pak klikněte na ikonu dvojité šipky (šipka) dolů, když se objeví.  
+4. Chcete-li procházet položky, je rozbalte. Přesuňte ukazatel myši nad položku a pak klikněte na ikonu dvojité šipky (šipka) dolů, když se objeví.  
   
      ![Rozbalení uzlu na mapě kódu](../modeling/media/dependencygraph-containment.png "DependencyGraph_Containment")  
   
      Chcete-li rozbalit všechny položky, vyberte je pomocí **CTRL + A**, otevřete místní nabídku pro mapy a zvolte **skupiny**, **Rozbalit**. Ale tato možnost není k dispozici v případě, že rozšíření všech skupin vytvoří mapu nepoužitelná nebo problémy s pamětí.  
   
-5.  Rozbalte položky, které vás zajímají, přímo na úrovni třídy a člena v případě potřeby i nadále.  
+5. Rozbalte položky, které vás zajímají, přímo na úrovni třídy a člena v případě potřeby i nadále.  
   
      ![Rozbalit skupiny na úrovni třídy a člena](../modeling/media/codemapsexpandtoclassandmember.png "CodeMapsExpandToClassAndMember")  
   
      Členové, kteří jsou v kódu, ale nejsou zobrazeny na mapě zobrazíte kliknutím **znovu načíst podřízené** ikonu ![znovu načíst podřízené položky ikonu](../modeling/media/dependencygraph-deletednodesicon.png "DependencyGraph_DeletedNodesIcon") v horní části levém horním rohu skupiny.  
   
-6.  Pokud chcete zobrazit další položky související s nastavením na mapu, vyberte jeden a zvolte **zobrazit související** na panelu nástrojů Mapa kódu, vyberte typ související položky a přidejte do mapy. Můžete také vybrat jednu nebo více položek, otevřete místní nabídku a klikněte na tlačítko **zobrazení...** možnost typu související položky pro přidání do mapy. Příklad:  
+6. Pokud chcete zobrazit další položky související s nastavením na mapu, vyberte jeden a zvolte **zobrazit související** na panelu nástrojů Mapa kódu, vyberte typ související položky a přidejte do mapy. Můžete také vybrat jednu nebo více položek, otevřete místní nabídku a klikněte na tlačítko **zobrazení...** možnost typu související položky pro přidání do mapy. Příklad:  
   
      Pro **sestavení**, zvolte možnost:  
   
@@ -275,30 +275,30 @@ Pokud chcete pochopit závislosti ve vašem kódu, Vizualizujte si je vytvořen�
   
      ![Zobrazit metody volané tento člen](../modeling/media/codemapsshowrelatedmethods.png "CodeMapsShowRelatedMethods")  
   
-7.  Mapa znázorňuje vztahy. V tomto příkladu volá metody `Find` metoda a jejich umístění v řešení nebo externě.  
+7. Mapa znázorňuje vztahy. V tomto příkladu volá metody `Find` metoda a jejich umístění v řešení nebo externě.  
   
      ![Zobrazit konkrétní závislosti v mapě kódu](../modeling/media/codemapsspecificdependenciesintro.png "CodeMapsSpecificDependenciesIntro")  
   
-8.  Pro zjednodušení mapy a zaměřte se na jednotlivé části, zvolte **filtry** na panelu nástrojů Mapa kódu a vyberte jenom typy uzlů a propojení se zajímáte. Například vypněte zobrazení složek řešení, sestavení a obory názvů.  
+8. Pro zjednodušení mapy a zaměřte se na jednotlivé části, zvolte **filtry** na panelu nástrojů Mapa kódu a vyberte jenom typy uzlů a propojení se zajímáte. Například vypněte zobrazení složek řešení, sestavení a obory názvů.  
   
      ![Pomocí podokna filtru pro zjednodušení zobrazení](../modeling/media/almcodemapfilterpane.png "ALMCodeMapFilterPane")  
   
-##  <a name="SeeSourceHeader"></a> Zobrazení závislostí mezi zdrojovými soubory C a C++ a soubory hlaviček  
+## <a name="SeeSourceHeader"></a> Zobrazení závislostí mezi zdrojovými soubory C a C++ a soubory hlaviček  
  Pokud chcete vytvořit podrobnější mapy pro projekty C++, nastavte možnost Procházet informace kompilátoru (**/FR**) na těchto projektech. Zobrazit [/FR, /Fr (vytvořit. Soubor SBR)](http://msdn.microsoft.com/library/3fd8f88b-3924-4feb-9393-287036a28896). Jinak se objeví zpráva s dotazem, zda chcete tuto možnost nastavit. Pokud vyberete **OK**, tím se nastaví možnost pouze aktuální mapování. Můžete skrýt zprávu pro všechny pozdější mapy. Pokud je skrýt tuto zprávu, můžete si je znovu zobrazí. Nastavte následující klíč registru na `0` nebo klíč odstraňte:  
   
  **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0\NativeProvider : AutoEnableSbr**  
   
  Když otevřete řešení, které obsahuje projekty Visual C++, může trvat nějakou dobu, než se aktualizuje databáze technologie IntelliSense. Během této doby nebudete moct vytváření map kódu pro záhlaví (.h nebo `#include`) soubory, dokud se nedokončí aktualizace databáze IntelliSense. Na stavovém řádku v dolní části sady Visual Studio můžete sledovat průběh aktualizace. Chcete-li vyřešit problémy nebo zprávy, které jsou zobrazeny, protože jsou zakázány některá nastavení technologie IntelliSense, přečtěte si téma [Poradce při potížích s mapování pro kód jazyka C a C++](#Troubleshooting).  
   
--   Zobrazení závislostí mezi všechny zdrojové soubory a soubory hlaviček ve vašem řešení na **architektura** nabídce zvolte **Generovat graf vložených souborů**.  
+- Zobrazení závislostí mezi všechny zdrojové soubory a soubory hlaviček ve vašem řešení na **architektura** nabídce zvolte **Generovat graf vložených souborů**.  
   
      ![Graf závislosti pro nativní kód](../modeling/media/dependencygraphgeneral-nativecode.png "DependencyGraphGeneral_NativeCode")  
   
--   Pokud chcete zobrazit závislosti mezi aktuálně otevřený soubor a související zdrojové soubory a soubory hlaviček, otevřete zdrojový soubor nebo soubor hlaviček. Otevřete místní nabídku souboru kdekoli v souboru. Zvolte **Generovat graf souborů zahrnutí**.  
+- Pokud chcete zobrazit závislosti mezi aktuálně otevřený soubor a související zdrojové soubory a soubory hlaviček, otevřete zdrojový soubor nebo soubor hlaviček. Otevřete místní nabídku souboru kdekoli v souboru. Zvolte **Generovat graf souborů zahrnutí**.  
   
      ![První&#45;grafu závislostí na úrovni souboru .h](../modeling/media/dependencygraph-native-firstlevel.png "DependencyGraph_Native_FirstLevel")  
   
-###  <a name="Troubleshooting"></a> Řešení potíží s mapování pro kód jazyka C a C++  
+### <a name="Troubleshooting"></a> Řešení potíží s mapování pro kód jazyka C a C++  
  Tyto položky nejsou podporovány pro kód jazyka C a C++:  
   
 - Základní typy se nezobrazují na mapách, které obsahují nadřazené hierarchie.  
@@ -318,7 +318,7 @@ Pokud chcete pochopit závislosti ve vašem kódu, Vizualizujte si je vytvořen�
 ||Informace o ladění byly ze souboru .pdb odstraněny.|Pokud **/PDBSTRIPPED** byla v nástroji linker použita možnost, místo toho zahrňte kompletní soubor .pdb.<br /><br /> Zobrazit [/PDBSTRIPPED (odstranění privátních symbolů)](http://msdn.microsoft.com/library/9b9e0070-6a13-4142-8180-19c003fbbd55).|  
 ||Volající není funkcí a je převodní rutinou v binárním souboru nebo ukazatelem v datové sekci.|Pokud je volající převodní rutinou, zkuste použít `_declspec(dllimport)` aby se zabránilo jiné bitové šířce.<br /><br /> Další informace:<br /><br /> -   [Obecná pravidla a omezení](http://msdn.microsoft.com/library/6c48902d-4259-4761-95d4-e421d69aa050)<br />-   [Import volání funkcí pomocí deklarace __declspec(dllimport)](http://msdn.microsoft.com/library/6b53c616-0c6d-419a-8e2a-d2fff20510b3)<br />-   [dllexport, dllimport](http://msdn.microsoft.com/library/ff95b645-ef55-4e72-b848-df44657b3208)|  
   
-##  <a name="RenderMoreQuickly"></a> Ujistěte se, kód, který rychleji vykreslení mapy  
+## <a name="RenderMoreQuickly"></a> Ujistěte se, kód, který rychleji vykreslení mapy  
  Při prvním generování mapu, Visual Studio indexuje všechny závislosti, které nalezne. Tento proces může trvat nějakou dobu, zvláště pro velká řešení, ale zlepší výkon později. Pokud se změní kód, sada Visual Studio znovu indexuje pouze aktualizovaný kód. Chcete-li minimalizovat čas potřebný pro mapování na dokončení vykreslování, zvažte následující:  
   
 - [Mapování závislostí, které vás zajímají.](#SeeSpecificSource)  
@@ -339,7 +339,7 @@ Pokud chcete pochopit závislosti ve vašem kódu, Vizualizujte si je vytvořen�
   
   Dokončení mapování se zobrazí závislosti pouze pro kód úspěšně sestaven. Pokud dojde k chybám sestavení některých součástí, tyto chyby se zobrazí na mapě. Ujistěte se, že součást skutečně sestaví a má závislosti, než provedete rozhodnutí o architektuře založené na mapě.  
   
-##  <a name="SavingExporting"></a> Sdílet mapy kódu  
+## <a name="SavingExporting"></a> Sdílet mapy kódu  
   
 ### <a name="share-the-map-with-other-visual-studio-users"></a>Sdílet mapu s ostatními uživateli aplikace Visual Studio  
  Použití **souboru** nabídky Uložit na mapě.  
@@ -363,26 +363,26 @@ Pokud chcete pochopit závislosti ve vašem kódu, Vizualizujte si je vytvořen�
   
 ### <a name="export-the-map-as-an-image-so-you-can-copy-it-into-other-applications-such-as-microsoft-word-or-powerpoint"></a>Exportovat mapu jako bitovou kopii, aby jej bylo možné zkopírovat do jiných aplikací, jako je například Microsoft Word nebo PowerPoint  
   
-1.  Na panelu nástrojů Mapa kódu, zvolte **sdílenou složku**, **e-mailu jako obrázek** nebo **Kopírovat obrázek**.  
+1. Na panelu nástrojů Mapa kódu, zvolte **sdílenou složku**, **e-mailu jako obrázek** nebo **Kopírovat obrázek**.  
   
-2.  Vložte obrázek do jiné aplikace.  
+2. Vložte obrázek do jiné aplikace.  
   
 ### <a name="export-the-map-as-an-xps-file-so-you-can-see-it-in-xml-or-xaml-viewers-like-internet-explorer"></a>Exportovat mapu jako souboru XPS, abyste viděli v XML nebo XAML prohlížeče jako třeba Internet Explorer  
   
-1.  Na panelu nástrojů Mapa kódu, zvolte **sdílenou složku**, **e-mailu jako přenosný formát XPS** nebo **uložit jako přenosný formát XPS**.  
+1. Na panelu nástrojů Mapa kódu, zvolte **sdílenou složku**, **e-mailu jako přenosný formát XPS** nebo **uložit jako přenosný formát XPS**.  
   
-2.  Přejděte na požadované místo pro uložení souboru.  
+2. Přejděte na požadované místo pro uložení souboru.  
   
-3.  Název mapy kódu. Ujistěte se, že **uložit jako typ** pole nastavena na **soubory XPS (\*XPS)**. Zvolte **Uložit**.  
+3. Název mapy kódu. Ujistěte se, že **uložit jako typ** pole nastavena na **soubory XPS (\*XPS)**. Zvolte **Uložit**.  
   
 ## <a name="what-else-can-i-do"></a>Co dalšího mohu udělat?  
   
--   [Použití map kódu k ladění aplikací](../modeling/use-code-maps-to-debug-your-applications.md)  
+- [Použití map kódu k ladění aplikací](../modeling/use-code-maps-to-debug-your-applications.md)  
   
--   [Mapování metod v zásobníku volání při ladění](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)  
+- [Mapování metod v zásobníku volání při ladění](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)  
   
--   [Nalezení potenciálních problémů pomocí analyzátorů mapy kódu](../modeling/find-potential-problems-using-code-map-analyzers.md)  
+- [Nalezení potenciálních problémů pomocí analyzátorů mapy kódu](../modeling/find-potential-problems-using-code-map-analyzers.md)  
   
--   [Procházení a změna uspořádání map kódu](../modeling/browse-and-rearrange-code-maps.md)  
+- [Procházení a změna uspořádání map kódu](../modeling/browse-and-rearrange-code-maps.md)  
   
--   [Přizpůsobení map kódu úpravou souborů DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md)
+- [Přizpůsobení map kódu úpravou souborů DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md)

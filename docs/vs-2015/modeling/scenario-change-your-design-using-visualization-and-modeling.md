@@ -17,12 +17,12 @@ caps.latest.revision: 63
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9adab2cbf429860840e60b88065cf445c882fd2c
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 7bca2a98ba4df4294d401e2cd5f5b6e80e5d31c4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56844020"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099673"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Scénář: Změna návrhu pomocí vizualizace a modelování
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ Ujistěte se, že softwarový systém vyhovuje potřebám uživatelů pomocí vi
   
 - [Vytváření modelů pro aplikaci](../modeling/create-models-for-your-app.md)  
   
-##  <a name="ScenarioOverview"></a> Přehled scénářů  
+## <a name="ScenarioOverview"></a> Přehled scénářů  
  Tento scénář popisuje epizody z životního cyklu vývoje softwaru dvou fiktivních společností: Společnost dinner Now a Lucerne publikování. Společnost dinner Now poskytuje služby pro doručování webového pokrmů v Seattlu. Zákazníci mohou objednat jídlo a zaplatit za ně na webu Dinner Now Web. Objednávky jsou potom odeslány příslušné místní restauraci pro dodání. Společnost Lucerne Publishing, společnost působící v New Yorku, provozuje několik podniků, vypnout a na webu. Například spuštění webové stránky kde můžou zákazníci posílat své recenze na restauraci.  
   
  Společnost Lucerne nedávno odkoupila web Dinner Now a chce provést následující změny:  
@@ -78,7 +78,7 @@ Ujistěte se, že softwarový systém vyhovuje potřebám uživatelů pomocí vi
   
 - [Testování, ověřování a vrácení kódu se změnami](#TestValidateCheckInCode)  
   
-##  <a name="ModelingDiagramsTools"></a> Role architektury a modelování diagramů při vývoji softwaru  
+## <a name="ModelingDiagramsTools"></a> Role architektury a modelování diagramů při vývoji softwaru  
  Následující tabulka popisuje role, které tyto nástroje mohou hrát při více a v různých fázích životního cyklu vývoje softwaru:  
   
 ||**Modelování požadavků uživatelů**|**Modelování obchodních procesů**|**Architektura systému a Design**|**Vizualizace kódu & průzkum**|**Ověření**|  
@@ -103,7 +103,7 @@ Ujistěte se, že softwarový systém vyhovuje potřebám uživatelů pomocí vi
   
 - [Mapování závislostí napříč vaším řešením](../modeling/map-dependencies-across-your-solutions.md)  
   
-- [Postupy: Přidání diagramů tříd do projektů (návrhář tříd)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)  
+- [Postupy: Přidání diagramů tříd do projektů (Návrhář tříd)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)  
   
 - [Sada Modeling SDK pro Visual Studio – jazyky specifické pro doménu](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)  
   
@@ -122,7 +122,7 @@ Ujistěte se, že softwarový systém vyhovuje potřebám uživatelů pomocí vi
   > [!NOTE]
   >  Některé verze sady Visual Studio podporují ověřování vrstev a verze jen pro čtení z mapy kódu a diagramy UML pro vizualizaci a modelování. Tuto funkci podporovat kterou verzí sady Visual Studio najdete v tématu [podporované verze pro nástroje architektury a modelování](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
-##  <a name="UnderstandingCommunicating"></a> Pochopení a sdělování informací o systému  
+## <a name="UnderstandingCommunicating"></a> Pochopení a sdělování informací o systému  
  Neexistuje žádné předepsané pořadí pro použití sady Visual Studio modelování diagramů, takže je můžete využít podle jejich potřeb s vašim potřebám a přístupu. Obvykle týmy opravují své modely opakovaně a často v průběhu projektu. Každý diagram nabízí určité výhody, které umožňují porozumět, popsat a sdělit různé aspekty vyvíjeného systému.  
   
  Společnost dinner Now a Lucerne komunikují vzájemně a se zúčastněnými stranami pro projekt s použitím diagramů jako jejich společný jazyk. Například web Dinner Now používá diagramy k provádění těchto úkolů:  
@@ -165,7 +165,7 @@ Ujistěte se, že softwarový systém vyhovuje potřebám uživatelů pomocí vi
   
 - [Testování, ověřování a vrácení kódu se změnami](#TestValidateCheckInCode)  
   
-###  <a name="UnderstandingBPMandSystemDesign"></a> Principy Role systému v obchodním procesu  
+### <a name="UnderstandingBPMandSystemDesign"></a> Principy Role systému v obchodním procesu  
  Společnost Lucerne se chce dozvědět více o obchodním procesu webu Dinner Now. Vytvářejí následující diagramy ke snadnější vyjasnění svého pochopení systému Dinner Now:  
   
 |**Diagram**|**Popisuje**|  
@@ -192,7 +192,7 @@ Ujistěte se, že softwarový systém vyhovuje potřebám uživatelů pomocí vi
   
  **Diagram tříd UML**  
   
-###  <a name="DescribingURM"></a> Popisuje nové nebo aktualizované uživatelské požadavky  
+### <a name="DescribingURM"></a> Popisuje nové nebo aktualizované uživatelské požadavky  
  Společnost Lucerne chce přidat funkce do systému Dinner Now tak, aby mohli zákazníci číst a přidávat recenze restaurací. Aktualizují následující diagramy, takže mohou popsat a diskutovat o tomto novém požadavku s aplikací večeře nyní:  
   
 |**Diagram**|**Popisuje**|  
@@ -219,7 +219,7 @@ Ujistěte se, že softwarový systém vyhovuje potřebám uživatelů pomocí vi
   
  **Diagram tříd UML**  
   
-###  <a name="CreatingTests"></a> Vytváření testů z modelů  
+### <a name="CreatingTests"></a> Vytváření testů z modelů  
  Oba týmy se dohodly, že potřebují úplnou sadu testů pro systému a jeho komponenty předtím, než provedou jakékoli změny. Společnost Lucerne má specializovaný tým, který provádí systému a testování na úrovni součásti. Jsou-li znovu použít testy vytvořené aplikací večeře nyní a strukturují tyto testy pomocí UML diagramů:  
   
 - Každý případ použití je reprezentován jedním nebo více testy. Prvky na odkazu diagramu případu použití k testovacímu případu pracovní položky v Team Foundation Server.  
@@ -236,7 +236,7 @@ Ujistěte se, že softwarový systém vyhovuje potřebám uživatelů pomocí vi
   
 - [Ověření modelu UML](../modeling/validate-your-uml-model.md)  
   
-###  <a name="DeterminingChanges"></a> Určení změn ve stávajícím systému  
+### <a name="DeterminingChanges"></a> Určení změn ve stávajícím systému  
  Společnost dinner Now musí odhadnout náklady na splnění nového požadavku. To zčásti závisí na tom, jak moc tato změna ovlivní ostatní části systému. Aby pomohl ostatním pochopit, jeden z vývojářů aplikace večeře nyní z existujícího kódu vytvoří tyto mapy a diagramy:  
   
 |**Mapování nebo diagramu**|**Shows**|  
@@ -280,7 +280,7 @@ Ujistěte se, že softwarový systém vyhovuje potřebám uživatelů pomocí vi
   
  **Sekvenční diagram UML**  
   
-###  <a name="ValidatingCode"></a> Udržování kódu v souladu s návrhem  
+### <a name="ValidatingCode"></a> Udržování kódu v souladu s návrhem  
  Společnost dinner Now musí zajistit, že aktualizovaný kód zůstane konzistentní s návrhem. Vytvářejí diagramy vrstvy, které popisují vrstvy funkčnosti v systému, určují povolené závislosti mezi nimi a přidružují řešení artefakty k těmto vrstvám.  
   
 |**Diagram**|**Popisuje**|  
@@ -297,13 +297,13 @@ Ujistěte se, že softwarový systém vyhovuje potřebám uživatelů pomocí vi
   
  Další informace:  
   
--   [Definování procesu sestavení](http://msdn.microsoft.com/library/61593e10-d24b-492f-b19a-af4d85abea6b)  
+- [Definování procesu sestavení](http://msdn.microsoft.com/library/61593e10-d24b-492f-b19a-af4d85abea6b)  
   
--   [Použít proces sestavení hlídaného vrácení se změnami pro ověření změn](http://msdn.microsoft.com/library/9cfc8b9c-1023-40fd-8ab5-1b1bd9c172ec)  
+- [Použít proces sestavení hlídaného vrácení se změnami pro ověření změn](http://msdn.microsoft.com/library/9cfc8b9c-1023-40fd-8ab5-1b1bd9c172ec)  
   
--   [Přizpůsobení šablony procesu sestavení](http://msdn.microsoft.com/library/b94c58f2-ae6f-4245-bedb-82cd114f6039)  
+- [Přizpůsobení šablony procesu sestavení](http://msdn.microsoft.com/library/b94c58f2-ae6f-4245-bedb-82cd114f6039)  
   
-###  <a name="GeneralTips"></a> Obecné tipy pro vytváření a použití modelů  
+### <a name="GeneralTips"></a> Obecné tipy pro vytváření a použití modelů  
   
 - Většina diagramů se skládá z uzlů, které jsou spojeny čarami. Pro každý typ diagramu obsahuje panel nástrojů různé druhy uzlů a řádků.  
   
@@ -323,7 +323,7 @@ Ujistěte se, že softwarový systém vyhovuje potřebám uživatelů pomocí vi
   
   Zobrazit [vytváření modelů pro aplikaci](../modeling/create-models-for-your-app.md).  
   
-###  <a name="PlanningTracking"></a> Plánování a sledování práce  
+### <a name="PlanningTracking"></a> Plánování a sledování práce  
  Diagramy modelování Visual Studio jsou integrovány se serverem Team Foundation Server tak, že můžete plánovat, řídit a sledovat svou práci snadněji. Oba týmy používat modely k identifikaci testových případů a vývojářských úloh a k odhadu hotové práce. Společnost Lucerne vytvoří a propojí Team Foundation Server pracovní položky k prvkům modelu, jako jsou případy použití nebo komponenty. To pomáhá sledovat jejich průběh a trasovat jejich práci zpět podle požadavků uživatelů. Pomáhá se ujistit, že jejich změny nadále splňují tyto požadavky.  
   
  Jak jejich práce postupuje, týmy aktualizují své pracovní položky tak, aby odrážely čas strávený na úkolech. Také sledují a hlásí stav své práce pomocí následujících funkcí Team Foundation Server:  
@@ -344,7 +344,7 @@ Ujistěte se, že softwarový systém vyhovuje potřebám uživatelů pomocí vi
   
 - [Vytvoření nevyřízených položek a úkolů pomocí aplikace Project](http://msdn.microsoft.com/library/be5cef4f-755f-4ffe-8dd7-876d1e02c330)  
   
-###  <a name="TestValidateCheckInCode"></a> Testování, ověřování a vrácení kódu se změnami  
+### <a name="TestValidateCheckInCode"></a> Testování, ověřování a vrácení kódu se změnami  
  Jak týmy dokončují jednotlivé úkoly, vraťte jejich kód do správy verzí Team Foundation a přijměte připomenutí z Team Foundation Server, v případě, že zapomenete. Předtím, než Team Foundation Server přijme jejich vrácení se změnami, týmy spustí jednotkové testy a ověření vrstvy za účelem ověření kódu proti testovacím případům a návrhu. Používají Team Foundation Server pro sestavení, spouštět automatizované testy jednotky a pravidelné validaci vrstev. To pomáhá se ujistit, že kód splňuje následující kritéria:  
   
 - To funguje.  
@@ -367,7 +367,7 @@ Ujistěte se, že softwarový systém vyhovuje potřebám uživatelů pomocí vi
   
 - [Sestavení aplikace](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)  
   
-##  <a name="UpdatingSystem"></a> Aktualizace systému pomocí vizualizace a modelování  
+## <a name="UpdatingSystem"></a> Aktualizace systému pomocí vizualizace a modelování  
  Společnost Lucerne a Dinner Now musí integrovat své platební systémy. Následující oddíly zobrazují že diagramy modelování v sadě Visual Studio pomáhat při provedení této úlohy:  
   
 - [Pochopte požadavky uživatelů: Diagramy případů použití](#UnderstandUseCases)  
@@ -396,7 +396,7 @@ Ujistěte se, že softwarový systém vyhovuje potřebám uživatelů pomocí vi
   
 - [Modelování architektury aplikace](../modeling/model-your-app-s-architecture.md)  
   
-###  <a name="UnderstandUseCases"></a> Pochopte požadavky uživatelů: Diagramy případů použití  
+### <a name="UnderstandUseCases"></a> Pochopte požadavky uživatelů: Diagramy případů použití  
  Použijte diagramy případu pro shrnutí činností, že systém podporuje, a kdo provádí tyto činnosti. Společnost Lucerne používá diagram případu použití ke zjištění následujících o systému Dinner Now:  
   
 - Zákazníci vytváří objednávky.  
@@ -447,13 +447,13 @@ Ujistěte se, že softwarový systém vyhovuje potřebám uživatelů pomocí vi
 #### <a name="summary-strengths-of-use-case-diagrams"></a>Shrnutí: Silné stránky diagramů případů používání  
  Použijte diagramy případu pro lepší vizualizaci:  
   
--   Aktivity, které systém podporuje nebo nepodporuje  
+- Aktivity, které systém podporuje nebo nepodporuje  
   
--   Osoby a externí systémy, které provádějí tyto činnosti  
+- Osoby a externí systémy, které provádějí tyto činnosti  
   
--   Hlavní součásti systému, které podporují jednotlivé aktivity, které mohou představovat jako podsystémy vnořené uvnitř nadřazeného systému  
+- Hlavní součásti systému, které podporují jednotlivé aktivity, které mohou představovat jako podsystémy vnořené uvnitř nadřazeného systému  
   
--   Jak může být případ použití rozdělit do menších případů nebo jejich variant  
+- Jak může být případ použití rozdělit do menších případů nebo jejich variant  
   
 #### <a name="relationship-to-other-diagrams"></a>Vztah k jiným diagramům  
   
@@ -463,7 +463,7 @@ Ujistěte se, že softwarový systém vyhovuje potřebám uživatelů pomocí vi
 |Sekvenční diagram|Sekvence interakcí mezi účastníky v případu použití.<br /><br /> Další informace:<br /><br /> -   [Sekvenční diagramy UML: Referenční dokumentace](../modeling/uml-sequence-diagrams-reference.md)<br />-   [Sekvenční diagramy UML: Pokyny](../modeling/uml-sequence-diagrams-guidelines.md)|  
 |Diagram tříd (UML)|Subjekty nebo typy, které se účastní případu použití.<br /><br /> Další informace:<br /><br /> -   [Diagramy tříd UML: Referenční dokumentace](../modeling/uml-class-diagrams-reference.md)<br />-   [Diagramy tříd UML: Pokyny](../modeling/uml-class-diagrams-guidelines.md)|  
   
-###  <a name="UnderstandActivities"></a> Pochopte obchodní proces: Diagramy činností  
+### <a name="UnderstandActivities"></a> Pochopte obchodní proces: Diagramy činností  
  Diagramy činnosti popisují tok kroků v procesu podnikání a poskytují jednoduchý způsob, jak komunikovat pracovní postup. Projekt vývoje může mít více diagramů činnosti. Činnost obvykle zahrnuje všechny akce, které vyplývají z jedné externí akce, jako je například pokrmu, aktualizace menu nebo přidání nové restaurace do podnikání. Aktivita může také popisovat podrobnosti složité akce.  
   
  Společnost Lucerne aktualizuje následující diagram činnosti aby, že společnost Lucerne zpracuje platbu a zaplatí restauraci. Nahraďte, systém platby Lucerne, jak je zdůrazněno platební systém Dinner Now:  
@@ -480,9 +480,9 @@ Ujistěte se, že softwarový systém vyhovuje potřebám uživatelů pomocí vi
   
  Další informace:  
   
--   [Diagramy činnosti UML: Referenční dokumentace](../modeling/uml-activity-diagrams-reference.md)  
+- [Diagramy činnosti UML: Referenční dokumentace](../modeling/uml-activity-diagrams-reference.md)  
   
--   [Diagramy činnosti UML: Pokyny](../modeling/uml-activity-diagrams-guidelines.md)  
+- [Diagramy činnosti UML: Pokyny](../modeling/uml-activity-diagrams-guidelines.md)  
   
 #### <a name="drawing-an-activity-diagram"></a>Náčrt diagramu aktivit  
  Diagram aktivity má následující hlavní funkce:  
@@ -519,7 +519,7 @@ Ujistěte se, že softwarový systém vyhovuje potřebám uživatelů pomocí vi
 |Použití diagramu případu|Souhrn činností, které provádí každý objekt actor.<br /><br /> Další informace:<br /><br /> -   [Diagramy případů použití UML: Referenční dokumentace](../modeling/uml-use-case-diagrams-reference.md)<br />-   [Diagramy případů použití UML: Pokyny](../modeling/uml-use-case-diagrams-guidelines.md)|  
 |Diagram součásti|Vizualizujte systém jako kolekci znovu použitelných částí, které poskytují nebo využívají chování prostřednictvím kvalitně definované sady rozhraní.<br /><br /> Další informace:<br /><br /> -   [Diagramy komponent UML: Referenční dokumentace](../modeling/uml-component-diagrams-reference.md)<br />-   [Diagramy komponent UML: Pokyny](../modeling/uml-component-diagrams-guidelines.md)|  
   
-###  <a name="DescribeComponents"></a> Popište strukturu systému: Diagramy komponent  
+### <a name="DescribeComponents"></a> Popište strukturu systému: Diagramy komponent  
  Diagramy součástí popisují systém jako kolekci oddělitelných částí, které poskytují nebo využívají chování prostřednictvím kvalitně definované sady rozhraní. Části mohou být v libovolném měřítku a lze připojit libovolným způsobem.  
   
  Aby pomohli aplikacím Lucerne a večeře nyní vizualizovat a projednat systémové součásti a jejich rozhraní, vytvářejí následující diagramy komponent:  
@@ -582,9 +582,9 @@ Ujistěte se, že softwarový systém vyhovuje potřebám uživatelů pomocí vi
 #### <a name="summary-strengths-of-component-diagrams"></a>Shrnutí: Silné stránky diagramů komponent  
  Diagramy součástí umožňují vizualizaci:  
   
--   Systém jako kolekci oddělitelných částí bez ohledu na jejich implementaci jazyka nebo stylu.  
+- Systém jako kolekci oddělitelných částí bez ohledu na jejich implementaci jazyka nebo stylu.  
   
--   Součásti s kvalitně definovanými rozhraními, které usnadní orientaci a aktualizaci při změně požadavků.  
+- Součásti s kvalitně definovanými rozhraními, které usnadní orientaci a aktualizaci při změně požadavků.  
   
 #### <a name="relationship-to-other-diagrams"></a>Vztah k jiným diagramům  
   
@@ -596,7 +596,7 @@ Ujistěte se, že softwarový systém vyhovuje potřebám uživatelů pomocí vi
 |Diagram vrstvy|Popište logickou architekturu systému, protože se týká komponent. Abyste měli jistotu, že kód zůstane konzistentní s návrhem použijte ověření vrstev.<br /><br /> Další informace:<br /><br /> -   [Vytváření diagramů vrstev z kódu](../modeling/create-layer-diagrams-from-your-code.md)<br />-   [Diagramy vrstev: Referenční dokumentace](../modeling/layer-diagrams-reference.md)<br />-   [Diagramy vrstev: Pokyny](../modeling/layer-diagrams-guidelines.md)<br />-   [Ověřování kódu pomocí diagramů vrstev](../modeling/validate-code-with-layer-diagrams.md)|  
 |Diagram činnosti|Vizualizujte vnitřní zpracování, které provedou komponenty jako odpověď na příchozí zprávy.<br /><br /> Další informace:<br /><br /> -   [Diagramy činnosti UML: Referenční dokumentace](../modeling/uml-activity-diagrams-reference.md)<br />-   [Diagramy činnosti UML: Pokyny](../modeling/uml-activity-diagrams-guidelines.md)|  
   
-###  <a name="VisualizeCode"></a> Vizualizujte existující kód: Mapy kódu  
+### <a name="VisualizeCode"></a> Vizualizujte existující kód: Mapy kódu  
  Mapy kódu zobrazit aktuální organizaci a vztahy v kódu. Položky jsou představovány *uzly* na mapě, a vztahy jsou reprezentovány *odkazy*. Mapy kódu vám může pomoct provádět následující druhy úloh:  
   
 - Prozkoumejte neznámý kód.  
@@ -637,26 +637,26 @@ Ujistěte se, že softwarový systém vyhovuje potřebám uživatelů pomocí vi
   
 #### <a name="creating-a-code-map"></a>Vytvořením mapy kódu  
   
--   Získejte rychlý přehled zdrojového kódu použijte následující postup Generovat mapu kódu:  
+- Získejte rychlý přehled zdrojového kódu použijte následující postup Generovat mapu kódu:  
   
      Na **architektura** nabídky, klikněte na tlačítko **Generovat mapu kódu pro řešení**.  
   
      A získejte rychlý přehled kompilovaného kódu vytvořte mapu kódu prázdné a pak přetáhněte soubory sestavení nebo binární soubory do mapy povrchu.  
   
--   Chcete-li prozkoumat určitý kód nebo řešení položky, vyberte položky a vztahy, které chcete zobrazit pomocí Průzkumníka řešení. Potom můžete buď vygenerovat mapu s novým nebo přidat vybrané položky do existující mapování. Zobrazit [mapování závislostí napříč vaším řešením](../modeling/map-dependencies-across-your-solutions.md).  
+- Chcete-li prozkoumat určitý kód nebo řešení položky, vyberte položky a vztahy, které chcete zobrazit pomocí Průzkumníka řešení. Potom můžete buď vygenerovat mapu s novým nebo přidat vybrané položky do existující mapování. Zobrazit [mapování závislostí napříč vaším řešením](../modeling/map-dependencies-across-your-solutions.md).  
   
--   Můžete prozkoumat na mapě, změňte rozložení tak, aby vyhovovalo typům úkolů, které chcete provést.  
+- Můžete prozkoumat na mapě, změňte rozložení tak, aby vyhovovalo typům úkolů, které chcete provést.  
   
      Například pro vizualizaci rozvrstvení v kódu, vyberte rozložení stromové struktury. Zobrazit [Procházet a uspořádání map kódu](../modeling/browse-and-rearrange-code-maps.md).  
   
 #### <a name="summary-strengths-of-code-maps"></a>Shrnutí: Silné map kódu  
  Mapy kódu vám pomůže:  
   
--   Další informace o organizaci a vztahy v existujícím kódu.  
+- Další informace o organizaci a vztahy v existujícím kódu.  
   
--   Identifikujte oblasti, které mohou být postiženy navrhovanou změnou.  
+- Identifikujte oblasti, které mohou být postiženy navrhovanou změnou.  
   
--   Vyhledejte oblasti složitosti, vzorky, vrstvy nebo další oblasti, které lze zlepšit a usnadnit údržbu, změnit a opakovaně používat kód.  
+- Vyhledejte oblasti složitosti, vzorky, vrstvy nebo další oblasti, které lze zlepšit a usnadnit údržbu, změnit a opakovaně používat kód.  
   
 #### <a name="relationship-to-other-diagrams"></a>Vztah k jiným diagramům  
   
@@ -667,7 +667,7 @@ Ujistěte se, že softwarový systém vyhovuje potřebám uživatelů pomocí vi
 |Diagram tříd (UML)|Třídy, jejich atributy a operace a jejich vztahy.<br /><br /> Chcete-li usnadnit identifikaci těchto prvků, vytvoření diagramu tříd UML, který obsahuje tyto prvky.<br /><br /> Další informace:<br /><br /> -   [Diagramy tříd UML: Referenční dokumentace](../modeling/uml-class-diagrams-reference.md)<br />-   [Diagramy tříd UML: Pokyny](../modeling/uml-class-diagrams-guidelines.md)|  
 |Diagram tříd (založený na kódu)|Existující třídy v kódu pro konkrétní projekt.<br /><br /> Chcete-li vizualizovat a upravit existující třídu v kódu, použijte nástroj Návrhář tříd.<br /><br /> Zobrazit [jak: Přidání diagramů tříd do projektů (návrhář tříd)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md).|  
   
-###  <a name="DescribeSequence"></a> Popište interakce: Sekvenční diagramy  
+### <a name="DescribeSequence"></a> Popište interakce: Sekvenční diagramy  
  Sekvenční diagramy popisují řadu interakcí mezi částmi systému. Části mohou být libovolného rozsahu. Například se můžete v rozsahu od jednotlivých objektů v programu velké podsystémy nebo externí aktéry. Interakce může být libovolného rozsahu a typu. Například může být v rozsahu od jednotlivých zpráv po rozšířené operace a může být volání funkce nebo zprávami webové služby.  
   
  Aby pomohli aplikacím Lucerne a Večeř nyní popsat a projednat kroky v případu použití zpracování platby, vytvářejí následující sekvenční diagram z diagramu komponent. Životnosti zrcadlení součásti webu Dinner Now a jejích částí. Zprávy, které se objeví mezi životnosti následujícího připojení v diagramech komponent:  
@@ -682,11 +682,11 @@ Ujistěte se, že softwarový systém vyhovuje potřebám uživatelů pomocí vi
   
  Další informace:  
   
--   [Sekvenční diagramy UML: Referenční dokumentace](../modeling/uml-sequence-diagrams-reference.md)  
+- [Sekvenční diagramy UML: Referenční dokumentace](../modeling/uml-sequence-diagrams-reference.md)  
   
--   [Sekvenční diagramy UML: Pokyny](../modeling/uml-sequence-diagrams-guidelines.md)  
+- [Sekvenční diagramy UML: Pokyny](../modeling/uml-sequence-diagrams-guidelines.md)  
   
--   [Mapování závislostí napříč vaším řešením](../modeling/map-dependencies-across-your-solutions.md)  
+- [Mapování závislostí napříč vaším řešením](../modeling/map-dependencies-across-your-solutions.md)  
   
 #### <a name="drawing-a-sequence-diagram"></a>Náčrt diagramu sekvence  
  Diagram sekvence má následující hlavní funkce:  
@@ -710,9 +710,9 @@ Ujistěte se, že softwarový systém vyhovuje potřebám uživatelů pomocí vi
 #### <a name="summary-strengths-of-sequence-diagrams"></a>Shrnutí: Silné stránky sekvenčních diagramů  
  Sekvenční diagramy umožňují vizualizaci:  
   
--   Tok řízení, který přenáší mezi objekty actor nebo objekty během zpracování případu použití.  
+- Tok řízení, který přenáší mezi objekty actor nebo objekty během zpracování případu použití.  
   
--   Implementace metody volání nebo zprávy.  
+- Implementace metody volání nebo zprávy.  
   
 #### <a name="relationship-to-other-diagrams"></a>Vztah k jiným diagramům  
   
@@ -722,7 +722,7 @@ Ujistěte se, že softwarový systém vyhovuje potřebám uživatelů pomocí vi
 |Diagram součásti|Popište komponenty, které představují životnost a rozhraní, které poskytuje a využívá chování reprezentované zprávami.<br /><br /> Vytvořit životnosti z diagramu komponent, klikněte pravým tlačítkem na komponentu a potom klikněte na tlačítko **vytvořit životnost**.<br /><br /> Další informace:<br /><br /> -   [Diagramy komponent UML: Referenční dokumentace](../modeling/uml-component-diagrams-reference.md)<br />-   [Diagramy komponent UML: Pokyny](../modeling/uml-component-diagrams-guidelines.md)|  
 |Použití diagramu případu|Interakce mezi uživateli a komponenty v sekvenčním diagramu Shrňte jako případ použití, který představuje cíl uživatele.<br /><br /> Další informace:<br /><br /> -   [Diagramy případů použití UML: Referenční dokumentace](../modeling/uml-use-case-diagrams-reference.md)<br />-   [Diagramy případů použití UML: Pokyny](../modeling/uml-use-case-diagrams-guidelines.md)|  
   
-###  <a name="DefineClasses"></a> Definice glosáře typů: Diagramy tříd  
+### <a name="DefineClasses"></a> Definice glosáře typů: Diagramy tříd  
  Diagramy tříd definují entity, podmínky nebo koncepty, které jsou součástí systému a jejich vztahy mezi sebou. Tyto diagramy můžete použít například během vývoje pro popis atributů a operací pro každou třídu, bez ohledu na jejich implementaci jazyka nebo stylu.  
   
  Aby usnadnili aplikaci Lucerne popsat a diskutovat subjekty, které se účastní případu použití zpracování platby, nakreslí následující diagram tříd:  
@@ -741,20 +741,20 @@ Ujistěte se, že softwarový systém vyhovuje potřebám uživatelů pomocí vi
   
  Další informace:  
   
--   [Diagramy tříd UML: Referenční dokumentace](../modeling/uml-class-diagrams-reference.md)  
+- [Diagramy tříd UML: Referenční dokumentace](../modeling/uml-class-diagrams-reference.md)  
   
--   [Diagramy tříd UML: Pokyny](../modeling/uml-class-diagrams-guidelines.md)  
+- [Diagramy tříd UML: Pokyny](../modeling/uml-class-diagrams-guidelines.md)  
   
 #### <a name="drawing-a-class-diagram"></a>Náčrt diagramu třídy  
  Diagram třídy má následující hlavní funkce:  
   
 - Typy, jako jsou třídy, rozhraní a výčty:  
   
-  -   A *třídy* je definice objektů, které sdílejí určité strukturální nebo behaviorální charakteristiky.  
+  - A *třídy* je definice objektů, které sdílejí určité strukturální nebo behaviorální charakteristiky.  
   
-  -   *Rozhraní* definuje část externě viditelného chování objektu.  
+  - *Rozhraní* definuje část externě viditelného chování objektu.  
   
-  -   *Výčet* je klasifikátor, který obsahuje seznam hodnot literálů.  
+  - *Výčet* je klasifikátor, který obsahuje seznam hodnot literálů.  
   
 - *Atributy* jsou hodnoty určitého typu, které popisují každý výskyt *třídění*. Klasifikátor je obecný název pro typy, komponenty, případy použití a dokonce aktéry.  
   
@@ -784,16 +784,16 @@ Ujistěte se, že softwarový systém vyhovuje potřebám uživatelů pomocí vi
   
 - [Diagramy tříd UML: Pokyny](../modeling/uml-class-diagrams-guidelines.md)  
   
-- [Postupy: Přidání diagramů tříd do projektů (návrhář tříd)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)  
+- [Postupy: Přidání diagramů tříd do projektů (Návrhář tříd)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)  
   
 #### <a name="summary-strengths-of-class-diagrams"></a>Shrnutí: Silné stránky diagramů tříd  
  Diagramy tříd umožňují definovat:  
   
--   Společný glosář termínů pro použití při projednávání potřeb uživatelů a entit, které jsou součástí systému. Zobrazit [modelování uživatelských požadavků](../modeling/model-user-requirements.md).  
+- Společný glosář termínů pro použití při projednávání potřeb uživatelů a entit, které jsou součástí systému. Zobrazit [modelování uživatelských požadavků](../modeling/model-user-requirements.md).  
   
--   Typy, které jsou používány součástmi systému, například komponenty bez ohledu na jejich implementaci. Zobrazit [modelování architektury aplikace](../modeling/model-your-app-s-architecture.md).  
+- Typy, které jsou používány součástmi systému, například komponenty bez ohledu na jejich implementaci. Zobrazit [modelování architektury aplikace](../modeling/model-your-app-s-architecture.md).  
   
--   Vztahy, například závislosti mezi typy. Například můžete zobrazit, že jeden typ může být přiřazen k více instancím jiného typu.  
+- Vztahy, například závislosti mezi typy. Například můžete zobrazit, že jeden typ může být přiřazen k více instancím jiného typu.  
   
 #### <a name="relationship-to-other-diagrams"></a>Vztah k jiným diagramům  
   
@@ -806,7 +806,7 @@ Ujistěte se, že softwarový systém vyhovuje potřebám uživatelů pomocí vi
 |Sekvenční diagram|Definujte typy životnosti a operace, parametry a návratové hodnoty pro všechny zprávy, které můžou přijímat životnost.<br /><br /> Vytvořte životnost z typu v diagramu tříd, klikněte pravým tlačítkem na typ a potom klikněte na tlačítko **vytvořit životnost**.<br /><br /> Další informace:<br /><br /> -   [Sekvenční diagramy UML: Referenční dokumentace](../modeling/uml-sequence-diagrams-reference.md)<br />-   [Sekvenční diagramy UML: Pokyny](../modeling/uml-sequence-diagrams-guidelines.md)|  
 |Mapy kódu|Vizualizujte organizaci a vztahy v existujícím kódu.<br /><br /> K identifikaci tříd, jejich vztahy a jejich metod, vytvořte mapu kódu, který obsahuje tyto prvky.<br /><br /> Další informace:<br /><br /> -   [Mapování závislostí napříč vaším řešením](../modeling/map-dependencies-across-your-solutions.md)|  
   
-###  <a name="DescribeLayers"></a> Popište logickou architekturu: Diagramy vrstev  
+### <a name="DescribeLayers"></a> Popište logickou architekturu: Diagramy vrstev  
  Diagramy vrstev popisují logickou architekturu systému organizací artefaktů ve vašem řešení do abstraktních skupin nebo *vrstvy*. Artefakty mohou být mnoho věcí, například obory názvů, projekty, třídy, metody a tak dále. Vrstvy představují a popisují role a úlohy, které tyto artefakty provádějí v systému. Můžete také zahrnout ověřování vrstvy v sestavení a operace vrácení se změnami zajistit, že kód zůstane konzistentní s návrhem.  
   
  Chcete-li byl kód zachován konzistentní s návrhem, použijte web Dinner Now a Lucerne následující diagram vrstvy k ověřování svého kódu, jak se vyvíjí:  
@@ -867,9 +867,9 @@ Ujistěte se, že softwarový systém vyhovuje potřebám uživatelů pomocí vi
 #### <a name="summary-strengths-of-layer-diagrams"></a>Shrnutí: Silné stránky diagramů vrstev  
  Diagramy vrstev vám pomohou:  
   
--   Popište logickou architekturu systému podle funkcí jeho artefaktů.  
+- Popište logickou architekturu systému podle funkcí jeho artefaktů.  
   
--   Ujistěte se, že kód ve vývoji odpovídá zadanému návrhu.  
+- Ujistěte se, že kód ve vývoji odpovídá zadanému návrhu.  
   
 #### <a name="relationship-to-other-diagrams"></a>Vztah k jiným diagramům  
   

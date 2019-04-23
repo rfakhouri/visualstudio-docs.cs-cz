@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8ca75f06a72cf3da9dcbbd97ad6559772928152d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4c0792871835d8adea52c1e4adfdfd2c38f7d617
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596851"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107785"
 ---
 # <a name="test-area-7-share"></a>Testovací oblast 7: Sdílet
 Tento test oblast obsahuje informace o sdílení položek mezi umístěními prostřednictvím **sdílené složky** příkazu.
@@ -25,13 +25,13 @@ Tento test oblast obsahuje informace o sdílení položek mezi umístěními pro
 
  Sdílení do složek, které funguje, pokud vyberete složku s alespoň jeden soubor pod správou zdrojových kódů v ní. Příkaz Sdílená složka je zakázán za následujících podmínek:
 
--   Pokud se do vybrané složky je prázdné složce.
+- Pokud se do vybrané složky je prázdné složce.
 
--   Pokud je skutečná složka, ale neobsahuje žádné zdrojové soubory ovládacího prvku.
+- Pokud je skutečná složka, ale neobsahuje žádné zdrojové soubory ovládacího prvku.
 
--   Pokud existuje virtuální složka, jestli jsou soubory pod správou zdrojových kódů v ní nebo ne.
+- Pokud existuje virtuální složka, jestli jsou soubory pod správou zdrojových kódů v ní nebo ne.
 
--   Pokud je vzdálené lokality webového projektu.
+- Pokud je vzdálené lokality webového projektu.
 
 ## <a name="command-menu-access"></a>Přístup do příkazu nabídky
  Následující [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrované vývojové prostředí nabídky cesty se používají v testovacích procesech.
@@ -40,11 +40,11 @@ Tento test oblast obsahuje informace o sdílení položek mezi umístěními pro
 
 ## <a name="expected-behavior"></a>Očekávané chování
 
--   Sdílený soubor se zobrazí ve sdíleném umístění.
+- Sdílený soubor se zobrazí ve sdíleném umístění.
 
--   Zobrazení zdroje ovládací prvek verze úložiště historie zobrazí, že jsou sdílené soubory.
+- Zobrazení zdroje ovládací prvek verze úložiště historie zobrazí, že jsou sdílené soubory.
 
--   Úpravy sdílený soubor upravuje i umístění souboru.
+- Úpravy sdílený soubor upravuje i umístění souboru.
 
 ## <a name="test-cases"></a>Testovací případy
  Tady jsou konkrétní testovací případy pro oblasti testovací sdílené složky.

@@ -56,12 +56,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 62cd0007a2dd231bcfc0e99f64ac76d20d415263
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: fb5877bccdc60d031e6ccd799eb6536df15fda38
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56643427"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088768"
 ---
 # <a name="additional-support-for-errors-in-office-solutions"></a>Další podpora pro chyby v řešeních pro systém Office
 
@@ -71,11 +71,11 @@ Můžete použít následující zdroje vám pomůžou najít odpovědi na probl
 
 Potřebujete pomoc se některé běžné chyby v řešeních pro systém Office naleznete v následujících tématech:
 
--   [Řešení potíží s chybami v řešeních pro systém Office](../vsto/troubleshooting-errors-in-office-solutions.md)
+- [Řešení potíží s chybami v řešeních pro systém Office](../vsto/troubleshooting-errors-in-office-solutions.md)
 
--   [Řešení potíží se zabezpečením řešení pro systém Office](../vsto/troubleshooting-office-solution-security.md)
+- [Řešení potíží se zabezpečením řešení pro systém Office](../vsto/troubleshooting-office-solution-security.md)
 
--   [Řešení potíží s nasazením řešení pro systém Office](../vsto/troubleshooting-office-solution-deployment.md)
+- [Řešení potíží s nasazením řešení pro systém Office](../vsto/troubleshooting-office-solution-deployment.md)
 
 ## <a name="other-resources"></a>Další zdroje
 

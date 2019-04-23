@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2d814576c4f071c9e90dd71d56c3bde8da43260f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: ed19972fb2f71104357977554984ae43f886c950
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56609914"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60084359"
 ---
 # <a name="expose-project-objects"></a>Vystavení objektů projektu
 
@@ -28,7 +28,7 @@ Je běžné konvence pro projekty vystavit do kolekce projektů vlastní, specif
 
 ## <a name="to-contribute-a-vspackage-specific-object-for-a-project"></a>Abyste mohli přispívat objekt VSPackage specifické pro projekt
 
-1.  Přidejte příslušné klíče, abyste *.pkgdef* soubor vašeho balíčku VSPackage.
+1. Přidejte příslušné klíče, abyste *.pkgdef* soubor vašeho balíčku VSPackage.
 
      Tady jsou například *.pkgdef* nastavení pro projekt jazyka C++:
 
@@ -39,7 +39,7 @@ Je běžné konvence pro projekty vystavit do kolekce projektů vlastní, specif
     "VCProjectEngineEventsObject"=""
     ```
 
-2.  Implementujte kód v <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> metody, jako v následujícím příkladu.
+2. Implementujte kód v <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> metody, jako v následujícím příkladu.
 
     ```cpp
     STDMETHODIMP CVsPackage::GetAutomationObject(

@@ -16,12 +16,12 @@ caps.latest.revision: 51
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ca4c3e5016377758e8910c15bf992e629778c0e9
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 1f2d3f0bd70a4c7be82b991eb5397065fe3d4ee7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57868191"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116164"
 ---
 # <a name="just-in-time-debugging-in-visual-studio"></a>Ladění za běhu v sadě Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +52,7 @@ Akce, které byste měli provést, když se zobrazí sadě Visual Studio Just-in
 
 - Musíte mít [nainstalovanou sadu Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/) Chcete-li zobrazit podrobné informace o této chybě a zkuste ho ladit. Zobrazit [pomocí JIT](#BKMK_Using_JIT) podrobné pokyny. Pokud nelze vyřešit chyby a opravit aplikaci, obraťte se na vlastníka aplikace tuto chybu napravíme.
 
-##  <a name="BKMK_Enabling"></a> Povolení nebo zakázání Just-In-Time ladění
+## <a name="BKMK_Enabling"></a> Povolení nebo zakázání Just-In-Time ladění
  Můžete povolit nebo zakázat Just-In-Time ladění ze sady Visual Studio **Nástroje / možnosti** dialogové okno.
 
 #### <a name="to-enable-or-disable-just-in-time-debugging"></a>Povolení nebo zakázání Just-In-Time ladění
@@ -73,36 +73,36 @@ Akce, které byste měli provést, když se zobrazí sadě Visual Studio Just-in
 
 #### <a name="to-disable-just-in-time-debugging-by-editing-the-registry"></a>Chcete-li zakázat Just-In-Time ladění pomocí úpravy registru
 
-1.  Na **Start** nabídky, vyhledejte a spusťte `regedit.exe`
+1. Na **Start** nabídky, vyhledejte a spusťte `regedit.exe`
 
-2.  V **Editor registru** okna, vyhledejte a odstraňte položky registru postupujte podle:
+2. V **Editor registru** okna, vyhledejte a odstraňte položky registru postupujte podle:
 
-    -   HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AeDebug\Debugger
+    - HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AeDebug\Debugger
 
-    -   HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\\. NETFramework\DbgManagedDebugger
+    - HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\\. NETFramework\DbgManagedDebugger
 
-3.  Pokud počítač používá 64bitový operační systém, odstraňte také následující položky registru:
+3. Pokud počítač používá 64bitový operační systém, odstraňte také následující položky registru:
 
-    -   HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows NT\CurrentVersion\AeDebug\Debugger
+    - HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows NT\CurrentVersion\AeDebug\Debugger
 
-    -   HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\. NETFramework\DbgManagedDebugger
+    - HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\. NETFramework\DbgManagedDebugger
 
-4.  Je třeba dbát na náhodnému odstranění nebo změně jiných klíčů registru.
+4. Je třeba dbát na náhodnému odstranění nebo změně jiných klíčů registru.
 
-5.  Zavřít **Editor registru** okna.
+5. Zavřít **Editor registru** okna.
 
 > [!NOTE]
 >  Pokud chcete zakázat Just-In-Time ladění pro aplikace na straně serveru a tyto kroky nepomohly problém vyřešit, vypněte ladění na straně serveru v nastavení aplikace služby IIS a zkuste to znovu.
 
 #### <a name="to-enable-just-in-time-debugging-of-a-windows-form"></a>Chcete-li povolit Just-In-Time ladění formuláře Windows
 
-1.  Ve výchozím nastavení mají aplikace Windows Forms obslužnou rutinu výjimky nejvyšší úrovně, která umožňuje program nadále spouštět, pokud jej lze obnovit. Například pokud aplikace Windows Forms vyvolá neošetřenou výjimku, zobrazí se dialogové okno vypadat asi takto:
+1. Ve výchozím nastavení mají aplikace Windows Forms obslužnou rutinu výjimky nejvyšší úrovně, která umožňuje program nadále spouštět, pokud jej lze obnovit. Například pokud aplikace Windows Forms vyvolá neošetřenou výjimku, zobrazí se dialogové okno vypadat asi takto:
 
      ![WindowsFormsUnhandledException](../debugger/media/windowsformsunhandledexception.png "WindowsFormsUnhandledException")
 
      K povolení Just-In-Time ladění aplikace modelu Windows Forms, je třeba provést následující kroky:
 
-2.  Nastavte `jitDebugging` hodnota, která se `true` v `system.windows.form` část souboru machine.config nebo  *\<název_aplikace >*. exe.config souboru:
+2. Nastavte `jitDebugging` hodnota, která se `true` v `system.windows.form` část souboru machine.config nebo  *\<název_aplikace >*. exe.config souboru:
 
     ```
     <configuration>
@@ -110,7 +110,7 @@ Akce, které byste měli provést, když se zobrazí sadě Visual Studio Just-in
     </configuration>
     ```
 
-3.  V aplikaci C++ formuláře Windows, musíte taky nastavit `DebuggableAttribute` v souboru .config nebo ve vašem kódu. Pokud kompilujete s [/zi](http://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8) a bez [/og](http://msdn.microsoft.com/library/d10630cc-b9cf-4e97-bde3-8d7ee79e9435), kompilátor nastaví tento atribut za vás. Pokud chcete ladit neoptimalizované verzi sestavení, ale musíte nastavit sami. Můžete to udělat tak, že přidáte následující řádek, který jste už souboru AssemblyInfo.cpp aplikace:
+3. V aplikaci C++ formuláře Windows, musíte taky nastavit `DebuggableAttribute` v souboru .config nebo ve vašem kódu. Pokud kompilujete s [/zi](http://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8) a bez [/og](http://msdn.microsoft.com/library/d10630cc-b9cf-4e97-bde3-8d7ee79e9435), kompilátor nastaví tento atribut za vás. Pokud chcete ladit neoptimalizované verzi sestavení, ale musíte nastavit sami. Můžete to udělat tak, že přidáte následující řádek, který jste už souboru AssemblyInfo.cpp aplikace:
 
     ```
     [assembly:System::Diagnostics::DebuggableAttribute(true, true)];
@@ -178,19 +178,19 @@ static void Main(string[] args)
 
  Může se zobrazit následující chybové zprávy, které jsou spojeny s Just-In-Time ladění.
 
--   **Nelze se připojit k havarujícímu procesu. Uvedený program není program Windows nebo MS-DOS.**
+- **Nelze se připojit k havarujícímu procesu. Uvedený program není program Windows nebo MS-DOS.**
 
      K této chybě dochází, když se pokusíte připojit k procesu spuštěnému jako jiný uživatel.
 
      Chcete-li tento problém vyřešit, spusťte aplikaci Visual Studio, otevřete **připojit k procesu** dialogové **ladění** nabídky a najděte proces, který chcete ladit v **procesy k dispozici**seznamu. Pokud neznáte název procesu, podívejte se na **ladicí program za běhu sady Visual Studio** dialogové okno a poznamenejte si ID procesu. Vyberte proces v **procesy k dispozici** seznamu a klikněte na tlačítko **připojit**. V **ladicí program za běhu sady Visual Studio** dialogového okna, klikněte na tlačítko **ne** zavřete dialogové okno.
 
--   **Ladicí program nelze spustit, protože není přihlášen žádný uživatel.**
+- **Ladicí program nelze spustit, protože není přihlášen žádný uživatel.**
 
      Tato chyba nastane, pokud Just-In-Time ladění pokusí o spuštění sady Visual Studio na počítači tam, kde neexistuje žádný uživatel přihlášený ke konzole. Protože je přihlášen žádný uživatel, neexistuje žádná uživatelská relace k zobrazení Just-In-Time ladění, dialogové okno.
 
      Chcete-li tento problém vyřešit, přihlaste se do počítače.
 
--   **Třída není zaregistrována.**
+- **Třída není zaregistrována.**
 
      Tato chyba označuje, že ladicí program se pokusil vytvořit třídu COM, která není registrována, pravděpodobně z důvodu potíží při instalaci.
 

@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: alexhomer1
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1ca823598f490703cc1b370d1dccfe806594a630
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 309dbfcac8e5c4c38e65f8901c699dc2fa51c7a1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54771160"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104173"
 ---
 # <a name="run-unit-tests-for-store-apps-in-visual-studio"></a>Spuštění testů jednotek pro aplikace pro Store v sadě Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,11 +25,11 @@ Toto téma popisuje, jak spustit testování částí pomocí Průzkumníka test
 >  Témata v této části popisují funkce Visual Studio Express pro Windows 8. Visual Studio Community, Enterprise a Professional poskytují další funkce pro testování částí.
 >
 > - Použijte libovolné rozhraní testování částí třetích stran nebo open zdroj, který byl vytvořen adaptér doplněk pro aplikaci Microsoft Test Explorer. Můžete také analyzovat a zobrazit informace o pokrytí kódu pro vaše testy.
->   -   Spusťte testy po každém sestavení. Můžete také použít Microsoft Fakes, izolované rozhraní pro spravovaný kód testy zaměřit se na váš vlastní kód nahrazením testovací kód pro systém a funkce třetích stran.
+>   - Spusťte testy po každém sestavení. Můžete také použít Microsoft Fakes, izolované rozhraní pro spravovaný kód testy zaměřit se na váš vlastní kód nahrazením testovací kód pro systém a funkce třetích stran.
 >
 >   Další informace najdete v tématu [svůj kód testu jednotek](../test/unit-test-your-code.md) v knihovně MSDN.
 
-##  <a name="BKMK_In_this_topic"></a> V tomto tématu
+## <a name="BKMK_In_this_topic"></a> V tomto tématu
  [Rozhraní pro testování částí a Testovací projekty](#BKMK_Unit_test_frameworks_and_test_projects)
 
  [Spouštění testů v Průzkumníku testů](#BKMK_Running_tests_in_Test_Explorer)
@@ -50,10 +50,10 @@ Toto téma popisuje, jak spustit testování částí pomocí Průzkumníka test
 
   [Ladění testů jednotek](#BKMK_Debugging_unit_tests)
 
-##  <a name="BKMK_Unit_test_frameworks_and_test_projects"></a> Rozhraní pro testování částí a Testovací projekty
+## <a name="BKMK_Unit_test_frameworks_and_test_projects"></a> Rozhraní pro testování částí a Testovací projekty
  Visual Studio Express for Windows Store Apps obsahuje rozhraní testování částí Microsoft pro spravovaný a nativní kód C++. Průzkumník testů může spouštět testy z více zkušebních projektů v řešení a z testů tříd, které jsou součástí výroby kódu projektů. Projekty testů může být libovolná kombinace Visual C++ nebo rozhraní testování částí Visual C# a Visual Basic. Pokud testovaný kód je určené pro rozhraní .NET Framework, testovací projekt lze zapsat v libovolném jazyce rozhraní .NET Framework, bez ohledu na jazyk cílového kódu. Nativní projekty kódu C/C++ musí být testovány pomocí rozhraní testování částí C++.
 
-##  <a name="BKMK_Running_tests_in_Test_Explorer"></a> Spouštění testů v Průzkumníku testů
+## <a name="BKMK_Running_tests_in_Test_Explorer"></a> Spouštění testů v Průzkumníku testů
  Když sestavíte testovací projekt, testy se zobrazí v Průzkumníku testů. Pokud se nezobrazí Průzkumník testů, zvolte **testovací** v nabídce sady Visual Studio, zvolte **Windows**a klikněte na tlačítko **Průzkumník testů**.
 
  ![Průzkumník testu jednotek](../ide/media/ute-failedpassednotrunsummary.png "UTE_FailedPassedNotRunSummary")
@@ -64,7 +64,7 @@ Toto téma popisuje, jak spustit testování částí pomocí Průzkumníka test
 
  ![Spuštění testů z panelu nástrojů Průzkumník testování](../test/media/ute-toolbar.png "UTE_ToolBar")
 
-###  <a name="BKMK_Running_tests"></a> Spouštění testů
+### <a name="BKMK_Running_tests"></a> Spouštění testů
  Spustit všechny testy v řešení, všechny testy ve skupině nebo sadu testů, které jste vybrali. Proveďte jednu z těchto akcí:
 
 - Chcete-li spustit všechny testy v řešení, zvolte **spustit všechny**.
@@ -75,10 +75,10 @@ Toto téma popisuje, jak spustit testování částí pomocí Průzkumníka test
 
   Panel úspěšný/selhání v horní části okna Průzkumníka testů je animovaný během spuštění testů. V závěru testovacího běhu panel úspěšný/selhání se změní na zelenou Pokud všechny testy předat, nebo zčervená, pokud některé testy selhaly.
 
-##  <a name="BKMK_Viewing_test_results"></a> Zobrazení výsledků testu
+## <a name="BKMK_Viewing_test_results"></a> Zobrazení výsledků testu
  Jak spustit, zápis a znovu spouštěny, zobrazuje Průzkumník testů výsledky ve skupinách **neúspěšné testy**, **úspěšné testy**, **přeskočené testy** a **není spuštěn Testy**. V podokně podrobností v dolní části Průzkumníku testů zobrazí shrnutí testu spusťte.
 
-###  <a name="BKMK_Viewing_test_details"></a> Zobrazení Podrobnosti o testu
+### <a name="BKMK_Viewing_test_details"></a> Zobrazení Podrobnosti o testu
  Chcete-li zobrazit podrobnosti o konkrétním testu, vyberte test.
 
  Podokno podrobností testu zobrazí následující informace:
@@ -95,24 +95,24 @@ Toto téma popisuje, jak spustit testování částí pomocí Průzkumníka test
 
 - Trasování zásobníku v době testu se nezdařilo.
 
-###  <a name="BKMK_Viewing_the_source_code_of_a_test_method"></a> Zobrazení zdrojového kódu testovací metody
+### <a name="BKMK_Viewing_the_source_code_of_a_test_method"></a> Zobrazení zdrojového kódu testovací metody
  Chcete-li zobrazit zdrojový kód pro testovací metodu v editoru sady Visual Studio, vyberte test a zvolte **otevřít Test** v místní nabídce (klávesnice: F12).
 
-##  <a name="BKMK_Organizing_the_test_list"></a> Uspořádání seznamu testů
+## <a name="BKMK_Organizing_the_test_list"></a> Uspořádání seznamu testů
 
-###  <a name="BKMK_Grouping_tests"></a> Seskupení testů
+### <a name="BKMK_Grouping_tests"></a> Seskupení testů
  Ve výchozím nastavení, zobrazuje Průzkumník testů testy jako podřízené uzly **neúspěšné testy**, **úspěšné testy**, **přeskočené testy** a **nespuštěné testy**.
 
 |||
 |-|-|
 |![Tlačítko Test Explorer skupiny](../test/media/ute-groupby-btn.png "UTE_GroupBy_btn")|Pro seskupení testů časem potřebným ke spuštění je, otevřete **Group** seznam a zvolte **doba trvání**. Zvolte **výsledek testu** přepněte do původní seskupení.|
 
-###  <a name="BKMK_Searching_and_filtering_the_test_list"></a> Vyhledávání a filtrování seznamu testů
+### <a name="BKMK_Searching_and_filtering_the_test_list"></a> Vyhledávání a filtrování seznamu testů
  Pokud máte velký počet testů, můžete zadat do vyhledávacího pole Průzkumníka testů můžete filtrovat seznam podle zadaného řetězce. Filtr můžete omezit na konkrétní typy řetězců výběrem ze seznamu filtru před zadejte hledaný řetězec.
 
  ![Hledat filtr kategorií](../test/media/ute-searchfilter.png "UTE_SearchFilter")
 
-##  <a name="BKMK_Debugging_unit_tests"></a> Ladění testů jednotek
+## <a name="BKMK_Debugging_unit_tests"></a> Ladění testů jednotek
  Průzkumník testů můžete použít ke spuštění relace ladění pro testy. Krokování kódu s ladicím programem Visual Studio bez problémů přejdete vpřed a zpět mezi testováním částí a testovaný projekt. Spuštění ladění:
 
 1. V editoru sady Visual Studio nastavte zarážku v jedné nebo více testovacích metod, které chcete ladit.

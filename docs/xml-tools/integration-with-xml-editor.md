@@ -8,20 +8,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: faad46c6ac2686de69fcb33f2fb482bdb0f4fe00
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: b8a233c0a1bbd456e08fe5343adae8328c5cb774
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57525129"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106319"
 ---
 # <a name="integration-with-xml-editor"></a>Integrace s editorem XML
 
 Návrhář schémat XML je integrovaná v editoru XML. Pokud upravíte soubor XSD v editoru XML, změna se projeví ve [Průzkumníka schémat XML](../xml-tools/xml-schema-explorer.md). Pokud máte [zobrazení grafu](../xml-tools/graph-view.md) nebo [zobrazení modelu obsahu](../xml-tools/content-model-view.md) otevřete, změnu se také projeví existuje. Můžete procházet Průzkumníka schémat XML a editor souborů XML následujícími způsoby:
 
--   V editoru XML, klikněte pravým tlačítkem na uzel a vyberte **zobrazit v Průzkumníkovi schémat XML**.
+- V editoru XML, klikněte pravým tlačítkem na uzel a vyberte **zobrazit v Průzkumníkovi schémat XML**.
 
--   V zobrazení grafu a **Průzkumníka schémat XML**, dvakrát klikněte na uzel, nebo klikněte pravým tlačítkem na uzel a vyberte **zobrazit kód**. V zobrazení modelu obsahu, klikněte pravým tlačítkem na uzel a vyberte **zobrazit kód**.
+- V zobrazení grafu a **Průzkumníka schémat XML**, dvakrát klikněte na uzel, nebo klikněte pravým tlačítkem na uzel a vyberte **zobrazit kód**. V zobrazení modelu obsahu, klikněte pravým tlačítkem na uzel a vyberte **zobrazit kód**.
 
 Následující snímek obrazovky ukazuje schématu XML otevřít v **Průzkumníka schémat XML**. **Průzkumníka schémat XML** zobrazí schéma, nastavte ve stromovém zobrazení. XML editor obsahuje zobrazení text uzlu, který je v současné době aktivní **Průzkumníka schémat XML**.
 

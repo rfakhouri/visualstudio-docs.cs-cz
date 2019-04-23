@@ -26,25 +26,25 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 01dca60a19adcf27652bccd096d6e1596ec2fc15
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: a4cd55ff42bc4ba81df881045d06362b469f009b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56688040"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112699"
 ---
 # <a name="how-to-debug-com-clients-and-servers-using-rpc-debugging"></a>Postupy: Ladění modelu COM klientů a serverů pomocí ladění RPC
 Ladění vzdáleného volání (procedur RPC) můžete použít k ladění aplikace modelu COM klient/server. Je nutné povolit RPC Ladění ji používat. S povoleným laděním RPC, při krokování s vnořením volání serveru z klienta, ladicí program připojí k serveru a umožňuje ladit svůj kód. Když je připojen ladicí program, můžete použít všechny funkce ladicího programu s klientem a serverem procesy.
 
 ### <a name="to-enable-rpc-debugging"></a>Pokud chcete povolit ladění RPC
 
-1.  Na **nástroje** nabídky, klikněte na tlačítko **možnosti**.
+1. Na **nástroje** nabídky, klikněte na tlačítko **možnosti**.
 
-2.  V **možnosti** dialogové okno, klikněte na tlačítko **ladění** složky.
+2. V **možnosti** dialogové okno, klikněte na tlačítko **ladění** složky.
 
-3.  Klikněte na tlačítko **nativní** stránky.
+3. Klikněte na tlačítko **nativní** stránky.
 
-4.  Vyberte **RPC Ladění** zaškrtávací políčko.
+4. Vyberte **RPC Ladění** zaškrtávací políčko.
 
     > [!NOTE]
     >  Chcete-li ladit volání RPC, musí mít oprávnění správce nebo Power Users.

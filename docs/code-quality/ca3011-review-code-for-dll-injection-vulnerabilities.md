@@ -1,5 +1,5 @@
 ---
-title: 'CA3011: Revize kódu pro knihovnu DLL vkládání ohrožení zabezpečení'
+title: 'CA3011: Zkontrolujte ohrožení zabezpečení injektáží knihovny DLL v kódu'
 ms.date: 04/03/2019
 ms.topic: reference
 author: dotpaul
@@ -11,13 +11,13 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: a6f3a2db89e35408a19cec47c971821fedf5f85a
-ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/04/2019
-ms.locfileid: "59018807"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089525"
 ---
-# <a name="ca3011-review-code-for-dll-injection-vulnerabilities"></a>CA3011: Revize kódu pro knihovnu DLL vkládání ohrožení zabezpečení
+# <a name="ca3011-review-code-for-dll-injection-vulnerabilities"></a>CA3011: Zkontrolujte ohrožení zabezpečení injektáží knihovny DLL v kódu
 
 |||
 |-|-|
@@ -26,7 +26,7 @@ ms.locfileid: "59018807"
 |Kategorie|Microsoft.Security|
 |Narušující změna|Pevné|
 
-## <a name="cause"></a>příčina
+## <a name="cause"></a>Příčina
 
 Vstup dosáhne metodu, která potenciálně nedůvěryhodné požadavku HTTP načte sestavení.
 

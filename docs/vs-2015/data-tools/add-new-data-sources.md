@@ -19,27 +19,27 @@ caps.latest.revision: 60
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1131f6d569d01787d26bea7dde1c993401ce9580
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: db550b2a99f12190cac0bde74859191c2943b2d5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59670170"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102754"
 ---
 # <a name="add-new-data-sources"></a>Přidat nové zdroje dat
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 V kontextu dat nástroje .NET v sadě Visual Studio termín *zdroj dat* odkazují na objekty .NET, které se připojit k úložišti dat a zpřístupnit data pro aplikace .NET. Návrháři aplikace Visual Studio může spotřebovat výstup zdroje dat vygenerujte často používaný kód, který váže data formuláře, když přetahujete databázových objektů z **zdroje dat** okna. Tento druh zdroje dat může být:  
   
--   Třída v modelu Entity Framework, která souvisí s nějaký druh databáze.  
+- Třída v modelu Entity Framework, která souvisí s nějaký druh databáze.  
   
--   Datová sada, která souvisí s nějaký druh databáze.  
+- Datová sada, která souvisí s nějaký druh databáze.  
   
--   Třída, která představuje síťovou službu jako je například data služby Windows Communication Foundation (WCF) nebo službu REST.  
+- Třída, která představuje síťovou službu jako je například data služby Windows Communication Foundation (WCF) nebo službu REST.  
   
--   Třída zastupující služby SharePoint.  
+- Třída zastupující služby SharePoint.  
   
--   Třída nebo kolekce ve vašem řešení.  
+- Třída nebo kolekce ve vašem řešení.  
   
 > [!NOTE]
 >  Pokud nepoužíváte funkce vázání dat, datové sady, Entity Framework, LINQ to SQL, WCF nebo SharePoint, pojmu "zdroj dat" neplatí. Stačí se připojit přímo k databázi pomocí objektů třídy SQLCommand a komunikují přímo s databází.  
@@ -77,11 +77,11 @@ V kontextu dat nástroje .NET v sadě Visual Studio termín *zdroj dat* odkazuj�
   
  Vytvořit zdroj dat z následujících typů služeb:  
   
--   Služby WCF Data Services. Další informace najdete v tématu [přehled](http://msdn.microsoft.com/library/7924cf94-c9a6-4015-afc9-f5d22b1743bb).  
+- Služby WCF Data Services. Další informace najdete v tématu [přehled](http://msdn.microsoft.com/library/7924cf94-c9a6-4015-afc9-f5d22b1743bb).  
   
--   Služby WCF data services. Další informace najdete v tématu [služby Windows Communication Foundation a služby WCF Data Services v sadě Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md).  
+- Služby WCF data services. Další informace najdete v tématu [služby Windows Communication Foundation a služby WCF Data Services v sadě Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md).  
   
--   Webové služby.  
+- Webové služby.  
   
     > [!NOTE]
     >  Položky, které se zobrazují v **zdroje dat** okna jsou závislé na datech, která služba vrací. Některé služby nemusí poskytnout dostatek informací, **Průvodce konfigurací zdroje dat** vytvořil objekty. Například pokud služba vrátí netypovou datovou sadu, se nezobrazí žádné položky v **zdroje dat** okno po dokončení průvodce. Toto je vzhledem k tomu, že netypové datové sady neposkytují schéma, a proto Průvodce nemá dostatek informací pro vytvoření zdroje dat.  

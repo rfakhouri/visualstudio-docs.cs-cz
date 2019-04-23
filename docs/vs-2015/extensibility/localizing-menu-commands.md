@@ -15,12 +15,12 @@ ms.assetid: b04ee0f6-82ea-47e6-853a-72382267d6da
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 27be664fb035af2c97f0536026b590c468b68b9e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 681a529b33fc2342168ba1fbe1df57746dc8bd7d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54771422"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60101701"
 ---
 # <a name="localizing-menu-commands"></a>Lokalizace příkazů nabídky
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -78,19 +78,19 @@ Můžete zadat lokalizovaný text nabídky a panelu nástrojů příkazy ve vytv
 ## <a name="localizing-other-text-resources"></a>Lokalizace prostředků jiných Text  
  Text prostředků než názvy příkazů jsou definovány v souborech prostředky (RESX).  
   
-1.  Přejmenujte VSPackage.resx VSPackage.en US.resx.  
+1. Přejmenujte VSPackage.resx VSPackage.en US.resx.  
   
-2.  Vytvořte kopii souboru VSPackage.en US.resx pro každý lokalizovaný jazyk.  
+2. Vytvořte kopii souboru VSPackage.en US.resx pro každý lokalizovaný jazyk.  
   
      Název každé kopie balíčku VSPackage. *Národní prostředí*.resx, kde *národní prostředí* je název konkrétní jazykové verze.  
   
-3.  Přejmenujte na názvy Resources.en US.resx Resources.resx.  
+3. Přejmenujte na názvy Resources.en US.resx Resources.resx.  
   
-4.  Vytvořte kopii souboru názvy Resources.en US.resx pro každý lokalizovaný jazyk.  
+4. Vytvořte kopii souboru názvy Resources.en US.resx pro každý lokalizovaný jazyk.  
   
      Název každé kopie prostředků. *Národní prostředí*.resx, kde *národní prostředí* je název konkrétní jazykové verze.  
   
-5.  Otevřete oba soubory .resx a upravit hodnoty řetězce podle potřeby pro konkrétní jazyk a jazykovou verzi. Následující příklad ukazuje definici lokalizovaný prostředek pro záhlaví panelu nástrojů.  
+5. Otevřete oba soubory .resx a upravit hodnoty řetězce podle potřeby pro konkrétní jazyk a jazykovou verzi. Následující příklad ukazuje definici lokalizovaný prostředek pro záhlaví panelu nástrojů.  
   
      [Resources.en-US.resx]  
   
@@ -112,9 +112,9 @@ Můžete zadat lokalizovaný text nabídky a panelu nástrojů příkazy ve vytv
 ## <a name="incorporating-localized-resources-into-the-project"></a>Začlenění lokalizované prostředky do projektu  
  Je třeba upravit soubor assemblyinfo.cs a soubor projektu a začlenit lokalizované prostředky.  
   
-1.  Z **vlastnosti** uzel v **Průzkumníka řešení**, otevřete soubor assemblyinfo.cs nebo assemblyinfo.vb v editoru.  
+1. Z **vlastnosti** uzel v **Průzkumníka řešení**, otevřete soubor assemblyinfo.cs nebo assemblyinfo.vb v editoru.  
   
-2.  Přidejte následující položku.  
+2. Přidejte následující položku.  
   
     ```csharp  
     [assembly: NeutralResourcesLanguage("en-US", UltimateResourceFallbackLocation.Satellite)]  
@@ -122,13 +122,13 @@ Můžete zadat lokalizovaný text nabídky a panelu nástrojů příkazy ve vytv
   
      Tím se nastaví Angličtina (USA) jako výchozí jazyk.  
   
-3.  Uvolněte projekt.  
+3. Uvolněte projekt.  
   
-4.  Otevřete soubor projektu v editoru.  
+4. Otevřete soubor projektu v editoru.  
   
-5.  Vyhledejte `ItemGroup` element, který obsahuje `EmbeddedResource` elementy.  
+5. Vyhledejte `ItemGroup` element, který obsahuje `EmbeddedResource` elementy.  
   
-6.  V `EmbeddedResource` nahraďte element, který volá VSPackage.en-US.resx `ManifestResourceName` element s `LogicalName` elementu, nastavte na `VSPackage.en-US.Resources`, následujícím způsobem.  
+6. V `EmbeddedResource` nahraďte element, který volá VSPackage.en-US.resx `ManifestResourceName` element s `LogicalName` elementu, nastavte na `VSPackage.en-US.Resources`, následujícím způsobem.  
   
     ```xml  
     <EmbeddedResource Include="VSPackage.en-US.resx">  
@@ -137,9 +137,9 @@ Můžete zadat lokalizovaný text nabídky a panelu nástrojů příkazy ve vytv
     </EmbeddedResource>  
     ```  
   
-7.  Pro každý lokalizovaný jazyk, zkopírujte `EmbeddedResource` – element pro VsPackage.en-US a nastavte **zahrnout** atribut a **LogicalName** element kopírovat do cílového národního prostředí, jak je znázorněno v následujícím Příklad.  
+7. Pro každý lokalizovaný jazyk, zkopírujte `EmbeddedResource` – element pro VsPackage.en-US a nastavte **zahrnout** atribut a **LogicalName** element kopírovat do cílového národního prostředí, jak je znázorněno v následujícím Příklad.  
   
-8.  Pro každý lokalizovaný `VSCTCompile` elementu, přidejte `ResourceName` element, který odkazuje na `Menus.ctmenu`, jak je znázorněno v následujícím příkladu.  
+8. Pro každý lokalizovaný `VSCTCompile` elementu, přidejte `ResourceName` element, který odkazuje na `Menus.ctmenu`, jak je znázorněno v následujícím příkladu.  
   
     ```xml  
     <ItemGroup>  

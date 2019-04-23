@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9f655979e010ea7aa0dafee78648a970cb2e3229
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 499e6c2b34fcc5261ab8fb3a87a24e2cc0959d8c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56704771"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113739"
 ---
 # <a name="extend-the-status-bar"></a>Rozšíření stavového řádku
 Stavový řádek sady Visual Studio můžete v dolní části rozhraní IDE zobrazíte informace.
@@ -32,9 +32,9 @@ Stavový řádek sady Visual Studio můžete v dolní části rozhraní IDE zobr
 
 ### <a name="read-and-write-to-the-status-bar"></a>Čtení a zápis do stavového řádku
 
-1.  Vytvořte projekt VSIX s názvem **TestStatusBarExtension** a přidání příkazu nabídky s názvem **TestStatusBarCommand**.
+1. Vytvořte projekt VSIX s názvem **TestStatusBarExtension** a přidání příkazu nabídky s názvem **TestStatusBarCommand**.
 
-2.  V *TestStatusBarCommand.cs*, nahraďte kód metody obslužné rutiny příkazu (`MenuItemCallback`) následujícím kódem:
+2. V *TestStatusBarCommand.cs*, nahraďte kód metody obslužné rutiny příkazu (`MenuItemCallback`) následujícím kódem:
 
     ```csharp
     private void MenuItemCallback(object sender, EventArgs e)
@@ -68,17 +68,17 @@ Stavový řádek sady Visual Studio můžete v dolní části rozhraní IDE zobr
     }
     ```
 
-3.  Zkompilování kódu a spuštění ladění.
+3. Zkompilování kódu a spuštění ladění.
 
-4.  Otevřít **nástroje** nabídky v experimentální instanci sady Visual Studio. Klikněte na tlačítko **vyvolat TestStatusBarCommand** tlačítko.
+4. Otevřít **nástroje** nabídky v experimentální instanci sady Visual Studio. Klikněte na tlačítko **vyvolat TestStatusBarCommand** tlačítko.
 
      Měli byste vidět, který text ve stavovém řádku nyní čtení **jsme teď napsali stavový řádek.** a, který se zobrazí okno se zprávou nemá stejný text.
 
 ### <a name="update-the-progress-bar"></a>Aktualizace indikátor průběhu
 
-1.  V tomto postupu vám ukážeme, jak inicializovat a aktualizovat indikátor průběhu.
+1. V tomto postupu vám ukážeme, jak inicializovat a aktualizovat indikátor průběhu.
 
-2.  Otevřít *TestStatusBarCommand.cs* soubor a nahradit `MenuItemCallback` metodu s následujícím kódem:
+2. Otevřít *TestStatusBarCommand.cs* soubor a nahradit `MenuItemCallback` metodu s následujícím kódem:
 
     ```csharp
     private void MenuItemCallback(object sender, EventArgs e)
@@ -102,21 +102,21 @@ Stavový řádek sady Visual Studio můžete v dolní části rozhraní IDE zobr
     }
     ```
 
-3.  Zkompilování kódu a spuštění ladění.
+3. Zkompilování kódu a spuštění ladění.
 
-4.  Otevřít **nástroje** nabídky v experimentální instanci sady Visual Studio. Klikněte na tlačítko **vyvolat TestStatusBarCommand** tlačítko.
+4. Otevřít **nástroje** nabídky v experimentální instanci sady Visual Studio. Klikněte na tlačítko **vyvolat TestStatusBarCommand** tlačítko.
 
      Měli byste vidět, který text ve stavovém řádku nyní čtení **zápisu do indikátor průběhu.** Také byste měli vidět indikátor průběhu aktualizovat každou sekundu po dobu 20 sekund. Následně se vymažou stavový řádek a indikátor průběhu.
 
 ### <a name="display-an-animation"></a>Zobrazit animace
 
-1.  Stavový řádek zobrazuje opakování animace, která označuje dlouhotrvající operace (například sestavování více projektů v řešení). Pokud nevidíte tuto animaci, ujistěte se, že máte správnou **nástroje** > **možnosti** nastavení:
+1. Stavový řádek zobrazuje opakování animace, která označuje dlouhotrvající operace (například sestavování více projektů v řešení). Pokud nevidíte tuto animaci, ujistěte se, že máte správnou **nástroje** > **možnosti** nastavení:
 
      Přejděte **nástroje** > **možnosti** > **Obecné** kartu a zrušte zaškrtnutí políčka **automaticky upravit vzhled na základě klienta výkon**. Zaškrtněte možnost dílčí **povolit vzhled plně funkčního klienta**. Teď by měl být vidět animace při sestavování projektu v experimentální instanci sady Visual Studio.
 
      V tomto postupu zobrazují standardní sady Visual Studio animace, která představuje sestavování projektu nebo řešení.
 
-2.  Otevřít *TestStatusBarCommand.cs* soubor a nahradit `MenuItemCallback` metodu s následujícím kódem:
+2. Otevřít *TestStatusBarCommand.cs* soubor a nahradit `MenuItemCallback` metodu s následujícím kódem:
 
     ```csharp
     private void MenuItemCallback(object sender, EventArgs e)
@@ -137,8 +137,8 @@ Stavový řádek sady Visual Studio můžete v dolní části rozhraní IDE zobr
     }
     ```
 
-3.  Zkompilování kódu a spuštění ladění.
+3. Zkompilování kódu a spuštění ladění.
 
-4.  Otevřít **nástroje** nabídky v experimentální instanci sady Visual Studio a klikněte na tlačítko **vyvolat TestStatusBarCommand**.
+4. Otevřít **nástroje** nabídky v experimentální instanci sady Visual Studio a klikněte na tlačítko **vyvolat TestStatusBarCommand**.
 
      Když se zobrazí okno se zprávou, měli byste také vidět animace ve stavovém řádku úplně vpravo. Při zavírání okna se zprávou, animace zmizí.

@@ -11,12 +11,12 @@ ms.assetid: 66a2e00a-f558-4e87-96b8-5ecf5509e04c
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: af718d5fe5038a2baa62093078aaed9a3cccb14b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ab81718837f6af8a230348d5e0a34f1da0a2c7bb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54778021"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092042"
 ---
 # <a name="sample-implementation-of-locals"></a>Ukázková implementace místních hodnot
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -26,21 +26,21 @@ ms.locfileid: "54778021"
   
  Tady je přehled o způsobu, jakým Visual Studio získává místních hodnot pro metodu vyhodnocovací filtr výrazů (EE):  
   
-1.  Visual Studio volá stroje ladění (DE) [GetDebugProperty](../../extensibility/debugger/reference/idebugstackframe2-getdebugproperty.md) zobrazíte [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) objekt, který reprezentuje všechny vlastnosti rámce zásobníku, včetně oknech místní hodnoty.  
+1. Visual Studio volá stroje ladění (DE) [GetDebugProperty](../../extensibility/debugger/reference/idebugstackframe2-getdebugproperty.md) zobrazíte [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) objekt, který reprezentuje všechny vlastnosti rámce zásobníku, včetně oknech místní hodnoty.  
   
-2.  `IDebugStackFrame2::GetDebugProperty` volání [GetMethodProperty](../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty.md) získat objekt, který popisuje způsob, ve kterém došlo k zarážce. DE dodá poskytovatel symbolů ([IDebugSymbolProvider](../../extensibility/debugger/reference/idebugsymbolprovider.md)), adresu ([IDebugAddress](../../extensibility/debugger/reference/idebugaddress.md)) a vazač ([IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md)).  
+2. `IDebugStackFrame2::GetDebugProperty` volání [GetMethodProperty](../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty.md) získat objekt, který popisuje způsob, ve kterém došlo k zarážce. DE dodá poskytovatel symbolů ([IDebugSymbolProvider](../../extensibility/debugger/reference/idebugsymbolprovider.md)), adresu ([IDebugAddress](../../extensibility/debugger/reference/idebugaddress.md)) a vazač ([IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md)).  
   
-3.  `IDebugExpressionEvaluator::GetMethodProperty` volání [GetContainerField](../../extensibility/debugger/reference/idebugsymbolprovider-getcontainerfield.md) pomocí zadané `IDebugAddress` můžete získat [IDebugContainerField](../../extensibility/debugger/reference/idebugcontainerfield.md) představující metodu obsahující zadanou adresu.  
+3. `IDebugExpressionEvaluator::GetMethodProperty` volání [GetContainerField](../../extensibility/debugger/reference/idebugsymbolprovider-getcontainerfield.md) pomocí zadané `IDebugAddress` můžete získat [IDebugContainerField](../../extensibility/debugger/reference/idebugcontainerfield.md) představující metodu obsahující zadanou adresu.  
   
-4.  `IDebugContainerField` Rozhraní se dotázali [IDebugMethodField](../../extensibility/debugger/reference/idebugmethodfield.md) rozhraní. Je toto rozhraní, která poskytuje přístup k místní hodnoty metody.  
+4. `IDebugContainerField` Rozhraní se dotázali [IDebugMethodField](../../extensibility/debugger/reference/idebugmethodfield.md) rozhraní. Je toto rozhraní, která poskytuje přístup k místní hodnoty metody.  
   
-5.  `IDebugExpressionEvaluator::GetMethodProperty` vytvoří instanci třídy (volá `CFieldProperty` v ukázce), který implementuje `IDebugProperty2` rozhraní pro reprezentaci metody místních hodnot. `IDebugMethodField` Objektu je umístěn v tomto `CFieldProperty` objektů spolu s `IDebugSymbolProvider`, `IDebugAddress` a `IDebugBinder` objekty.  
+5. `IDebugExpressionEvaluator::GetMethodProperty` vytvoří instanci třídy (volá `CFieldProperty` v ukázce), který implementuje `IDebugProperty2` rozhraní pro reprezentaci metody místních hodnot. `IDebugMethodField` Objektu je umístěn v tomto `CFieldProperty` objektů spolu s `IDebugSymbolProvider`, `IDebugAddress` a `IDebugBinder` objekty.  
   
-6.  Při `CFieldProperty` objekt je inicializován, [GetInfo](../../extensibility/debugger/reference/idebugfield-getinfo.md) je volán na `IDebugMethodField` objektu získat [FIELD_INFO](../../extensibility/debugger/reference/field-info.md) strukturu, která obsahuje všechny zobrazitelné informace o metodě, samotný .  
+6. Při `CFieldProperty` objekt je inicializován, [GetInfo](../../extensibility/debugger/reference/idebugfield-getinfo.md) je volán na `IDebugMethodField` objektu získat [FIELD_INFO](../../extensibility/debugger/reference/field-info.md) strukturu, která obsahuje všechny zobrazitelné informace o metodě, samotný .  
   
-7.  `IDebugExpressionEvaluator::GetMethodProperty` Vrátí `CFieldProperty` objektu jako `IDebugProperty2` objektu.  
+7. `IDebugExpressionEvaluator::GetMethodProperty` Vrátí `CFieldProperty` objektu jako `IDebugProperty2` objektu.  
   
-8.  Visual Studio volání [EnumChildren](../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) na vrácený `IDebugProperty2` objektu s filtrem `guidFilterLocalsPlusArgs`. Tím se vrátí [IEnumDebugPropertyInfo2](../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) objekt, který obsahuje místní hodnoty metody. Tento výčet je vyplněn volání [EnumLocals](../../extensibility/debugger/reference/idebugmethodfield-enumlocals.md) a [EnumArguments](../../extensibility/debugger/reference/idebugmethodfield-enumarguments.md).  
+8. Visual Studio volání [EnumChildren](../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) na vrácený `IDebugProperty2` objektu s filtrem `guidFilterLocalsPlusArgs`. Tím se vrátí [IEnumDebugPropertyInfo2](../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) objekt, který obsahuje místní hodnoty metody. Tento výčet je vyplněn volání [EnumLocals](../../extensibility/debugger/reference/idebugmethodfield-enumlocals.md) a [EnumArguments](../../extensibility/debugger/reference/idebugmethodfield-enumarguments.md).  
   
 9. Visual Studio volání [Další](../../extensibility/debugger/reference/ienumdebugpropertyinfo2-next.md) získat [DEBUG_PROPERTY_INFO](../../extensibility/debugger/reference/debug-property-info.md) strukturu pro každý místní. Tato struktura obsahuje ukazatel `IDebugProperty2` rozhraní pro místní.  
   

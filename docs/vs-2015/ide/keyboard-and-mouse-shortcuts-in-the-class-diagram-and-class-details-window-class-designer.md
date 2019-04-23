@@ -14,12 +14,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b3ae815bb0f9a11b19c711a3a860f8734701cc39
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 3fc21eb85c46d74fabc777147b14575babd9be8b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54775824"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113011"
 ---
 # <a name="keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer"></a>Klávesové zkratky a zkratky myši v diagramu tříd a okně podrobností třídy (návrhář tříd)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,15 +28,15 @@ Klávesnice kromě myši můžete použít k provádění akcí navigace v Návr
   
  **V tomto tématu**  
   
--   [Pomocí myši v Návrháři tříd](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#MouseClassDesigner)  
+- [Pomocí myši v Návrháři tříd](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#MouseClassDesigner)  
   
--   [Pomocí myši v okně podrobností třídy](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#MouseClassDetails)  
+- [Pomocí myši v okně podrobností třídy](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#MouseClassDetails)  
   
--   [Pomocí klávesnice v Návrháři tříd](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#KeyboardClassDesigner)  
+- [Pomocí klávesnice v Návrháři tříd](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#KeyboardClassDesigner)  
   
--   [Pomocí klávesnice v okně podrobností třídy](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#KeyboardClassDetails)  
+- [Pomocí klávesnice v okně podrobností třídy](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#KeyboardClassDetails)  
   
-##  <a name="MouseClassDesigner"></a> Pomocí myši v Návrháři tříd  
+## <a name="MouseClassDesigner"></a> Pomocí myši v Návrháři tříd  
  Tyto akce myši, jsou podporovány v diagramech tříd:  
   
 |Kombinace myši|Kontext|Popis|  
@@ -49,20 +49,20 @@ Klávesnice kromě myši můžete použít k provádění akcí navigace v Návr
 |CTRL + kolečko myši|Diagram tříd|Přiblížení.|  
 |CTRL + Shift + kliknutí|Diagram tříd|Přiblížení.|  
   
-##  <a name="MouseClassDetails"></a> Pomocí myši v okně podrobností třídy  
+## <a name="MouseClassDetails"></a> Pomocí myši v okně podrobností třídy  
  Pomocí myši, můžete změnit vzhled v okně podrobností třídy a data, která se zobrazí takto:  
   
--   Kliknutím na libovolnou buňku upravitelné umožňuje upravovat obsah buňky. Vaše změny se projeví na všech místech, že data uložená nebo zobrazena, včetně v okně Vlastnosti ve zdrojovém kódu.  
+- Kliknutím na libovolnou buňku upravitelné umožňuje upravovat obsah buňky. Vaše změny se projeví na všech místech, že data uložená nebo zobrazena, včetně v okně Vlastnosti ve zdrojovém kódu.  
   
--   Kliknutím na libovolnou buňku řádku způsobí, že v okně Vlastnosti k zobrazení vlastností pro element reprezentovaný daném řádku.  
+- Kliknutím na libovolnou buňku řádku způsobí, že v okně Vlastnosti k zobrazení vlastností pro element reprezentovaný daném řádku.  
   
--   Chcete-li změnit šířku sloupce přetáhněte okraj na pravé straně záhlaví sloupce sloupec je požadovanou šířku.  
+- Chcete-li změnit šířku sloupce přetáhněte okraj na pravé straně záhlaví sloupce sloupec je požadovanou šířku.  
   
--   Můžete rozbalit nebo sbalit oddíl nebo vlastnost uzly kliknutím na šipky vlevo od řádku.  
+- Můžete rozbalit nebo sbalit oddíl nebo vlastnost uzly kliknutím na šipky vlevo od řádku.  
   
--   V okně podrobností třídy nabízí několik tlačítka pro vytvoření nové členy v aktuální třídě a pro procházení mezi oddíly členů v mřížce okno podrobností třídy. Další informace najdete v tématu tlačítka okna podrobností třídy.  
+- V okně podrobností třídy nabízí několik tlačítka pro vytvoření nové členy v aktuální třídě a pro procházení mezi oddíly členů v mřížce okno podrobností třídy. Další informace najdete v tématu tlačítka okna podrobností třídy.  
   
-##  <a name="KeyboardClassDesigner"></a> Pomocí klávesnice v Návrháři tříd  
+## <a name="KeyboardClassDesigner"></a> Pomocí klávesnice v Návrháři tříd  
  Podporovány jsou následující akce klávesnice v diagramech tříd:  
   
 |Key|Kontext|Popis|  
@@ -89,7 +89,7 @@ Klávesnice kromě myši můžete použít k provádění akcí navigace v Návr
 |SHIFT+TAB|Všechny kontexty|Přejde na předchozí podřízenou položku v rámci stejnou nadřazenou položku (zabalení podporuje).|  
 |MÍSTO|Všechny kontexty|Přepne výběr u aktuálního elementu.|  
   
-##  <a name="KeyboardClassDetails"></a> Pomocí klávesnice v okně podrobností třídy  
+## <a name="KeyboardClassDetails"></a> Pomocí klávesnice v okně podrobností třídy  
   
 > [!NOTE]
 >  Následující klávesové zkratky byly rozhodli konkrétně tak, aby napodoboval prostředí psaní kódu.  

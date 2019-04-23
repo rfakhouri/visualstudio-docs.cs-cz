@@ -25,12 +25,12 @@ caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1b822ed97b2f31b6838fcfc9ee2b6ea32760c54d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f8dea98b05f5350f581128f18f38ec5f095505a5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54761261"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105659"
 ---
 # <a name="how-to-debug-an-activex-control"></a>Postupy: Ladění ovládacího prvku ActiveX
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,19 +42,19 @@ POZNÁMKA:]
   
 ### <a name="to-specify-a-container-for-the-debug-session"></a>K určení kontejneru se pro relaci ladění  
   
-1.  V Průzkumníku řešení vyberte projekt.  
+1. V Průzkumníku řešení vyberte projekt.  
   
-2.  Z **zobrazení** nabídce zvolte **stránky vlastností**.  
+2. Z **zobrazení** nabídce zvolte **stránky vlastností**.  
   
-3.  V **stránky vlastností projektu** dialogovém okně Otevřít **vlastnosti konfigurace** a pak zvolte položku **ladění**.  
+3. V **stránky vlastností projektu** dialogovém okně Otevřít **vlastnosti konfigurace** a pak zvolte položku **ladění**.  
   
-4.  V části **ladění** kategorie, vyhledejte **příkaz** vlastnost.  
+4. V části **ladění** kategorie, vyhledejte **příkaz** vlastnost.  
   
-5.  Zadejte název cesty pro kontejner. Například C:\Program Files\Internet Explorer\IEXPLORE. SOUBOR EXE.  
+5. Zadejte název cesty pro kontejner. Například C:\Program Files\Internet Explorer\IEXPLORE. SOUBOR EXE.  
   
-6.  Pokud zadáte jako kontejner aplikace Internet Explorer a používáte aktivní plochu, zadejte `/new` v **argumenty příkazu** pole.  
+6. Pokud zadáte jako kontejner aplikace Internet Explorer a používáte aktivní plochu, zadejte `/new` v **argumenty příkazu** pole.  
   
-7.  Klikněte na **OK**.  
+7. Klikněte na **OK**.  
   
      Pokud nezadáte kontejner ve službě **stránky vlastností projektu** dialogovém okně můžete zadat kontejner při zahájení ladění. Po výběru příkazu ke spuštění pro spuštění ladění, [spustitelný soubor pro dialogové okno ladění relace](../debugger/executable-for-debugging-session-dialog-box.md) se zobrazí. V dialogovém okně zadejte název cesty kontejneru.  
   

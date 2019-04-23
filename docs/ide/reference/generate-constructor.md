@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: aa3d347c08ee73054d4b229d7d2598331e44c1d7
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: faef5f2420f4abd30ecec9151212b8a731736886
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55941371"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60083826"
 ---
 # <a name="generate-a-constructor-in-visual-studio"></a>Generovat konstruktor v sadě Visual Studio
 
@@ -30,11 +30,11 @@ Tato generace kód platí pro:
 
 **Jak:** Generovat konstruktor několika způsoby:
 
-   - [Generovat konstruktor a vyberte členy, kteří](#pick)
-   - [Generovat konstruktor z vybraných polí](#selection)
-   - [Generovat konstruktor nové využití](#usage)
-   - [Přidat parametr do konstruktoru existující](#addparameter)
-   - [Vytváření a inicializace pole nebo vlastnost z parametru konstruktoru](#create)
+- [Generovat konstruktor a vyberte členy, kteří](#pick)
+- [Generovat konstruktor z vybraných polí](#selection)
+- [Generovat konstruktor nové využití](#usage)
+- [Přidat parametr do konstruktoru existující](#addparameter)
+- [Vytváření a inicializace pole nebo vlastnost z parametru konstruktoru](#create)
 
 ## <a id = "pick"></a> Generovat konstruktor a vyberte členy, kteří (C# jenom)
 

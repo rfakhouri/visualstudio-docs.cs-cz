@@ -9,12 +9,12 @@ caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5177add88897a838b95b6ca2aff94e03bc9e3509
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 85df0daced767311692213e0a0fb0b9c4cbd5836
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54763490"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108032"
 ---
 # <a name="perftips"></a>Tipy pro výkon
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,24 +35,24 @@ Ladicí program sady Visual Studio *tipy pro výkon* a integrovaný ladicí prog
   
  ![DiagnosticTools&#45;Update1](../profiling/media/diagnostictools-update1.png "DiagnosticTools-Update1")  
   
--   **Události přerušení** časová osa označit zarážky, které se dosáhlo v relaci ladění. Klikněte na událost, která ho vyberte **ladicí program** seznam podrobností.  
+- **Události přerušení** časová osa označit zarážky, které se dosáhlo v relaci ladění. Klikněte na událost, která ho vyberte **ladicí program** seznam podrobností.  
   
--   **Využití výkonu procesoru** graf zobrazuje změnu ve využití procesoru ze všech jader procesoru v relaci ladění.  
+- **Využití výkonu procesoru** graf zobrazuje změnu ve využití procesoru ze všech jader procesoru v relaci ladění.  
   
--   **Události** seznam **ladicí program** v podokně podrobností zahrnují položky pro každou událost přerušení.  
+- **Události** seznam **ladicí program** v podokně podrobností zahrnují položky pro každou událost přerušení.  
   
--   **Doba trvání** sloupec události přerušení Zobrazí uplynulý čas mezi událostí a předchozí zarážky.  
+- **Doba trvání** sloupec události přerušení Zobrazí uplynulý čas mezi událostí a předchozí zarážky.  
   
 ## <a name="turn-perftips-on-or-off"></a>Zapnout nebo vypnout tipy pro výkon  
  K povolení nebo zakázání tipy pro výkon:  
   
-1.  Na **ladění** nabídce zvolte **možnosti**.  
+1. Na **ladění** nabídce zvolte **možnosti**.  
   
-2.  Zaškrtněte nebo zrušte zaškrtnutí **zobrazit vypršel PerfTip při ladění**.  
+2. Zaškrtněte nebo zrušte zaškrtnutí **zobrazit vypršel PerfTip při ladění**.  
   
 ## <a name="turn-the-diagnostic-tools-window-on-or-off"></a>Zapnout nebo vypnout v okně diagnostické nástroje  
  Povolit nebo zakázat v okně diagnostické nástroje:  
   
-1.  Na **ladění** nabídce zvolte **možnosti**.  
+1. Na **ladění** nabídce zvolte **možnosti**.  
   
-2.  Zaškrtněte nebo zrušte zaškrtnutí **při ladění povolit diagnostické nástroje**.
+2. Zaškrtněte nebo zrušte zaškrtnutí **při ladění povolit diagnostické nástroje**.

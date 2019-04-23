@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 10b0f05e758f71830d5377c738ff9dee683022b8
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 3dcbfbe7b6e6ac5bacb9e8e36e43d780d3051903
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56641621"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108968"
 ---
 # <a name="how-to-programmatically-move-items-in-outlook"></a>Postupy: Přesouvání položek v aplikaci Outlook prostřednictvím kódu programu
   V tomto příkladu se přesune nepřečtených e-mailové zprávy z **doručené pošty** do složky s názvem **Test**. Příkladu se přesune pouze zprávy, které obsahují slovo **testovací** v `Subject` pole.
@@ -30,9 +30,9 @@ ms.locfileid: "56641621"
 ## <a name="compile-the-code"></a>Kompilace kódu
  Tento příklad vyžaduje:
 
--   Složku pošty aplikace Outlook s názvem **Test**.
+- Složku pošty aplikace Outlook s názvem **Test**.
 
--   E-mailovou zprávu, která dorazí slovo **testovací** v `Subject` pole.
+- E-mailovou zprávu, která dorazí slovo **testovací** v `Subject` pole.
 
 ## <a name="see-also"></a>Viz také:
 - [Práce se složkami](../vsto/working-with-folders.md)

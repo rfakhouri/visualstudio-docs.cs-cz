@@ -12,12 +12,12 @@ ms.assetid: 7490325b-acee-4c2d-ac56-1cd5db1a1083
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: d0ca68c9d95f0b2b511ece0ecafbd9bdcacf328d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8a96e6b10b68fc3b3275fbadb07de310c224da8c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54759818"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104902"
 ---
 # <a name="support-for-code-snippets-in-a-legacy-language-service"></a>Podpora pro fragmenty kódu ve službě starší verze jazyka
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,11 +41,11 @@ Fragment kódu je část kódu, který je vložen do zdrojového souboru. Samotn
 ## <a name="providing-support-for-code-snippets"></a>Poskytuje podporu pro fragmenty kódu  
  Povolení podpory pro fragmenty kódu, je nutné zadat nebo nainstalovat fragmenty kódu a je nutné zadat znamená, že uživatel chce vložit tyto fragmenty kódu. Existují tři kroky pro povolení podpory pro fragmenty kódu:  
   
-1.  Instalují se soubory fragmentu kódu.  
+1. Instalují se soubory fragmentu kódu.  
   
-2.  Povolení fragmenty kódu pro vaši službu jazyka.  
+2. Povolení fragmenty kódu pro vaši službu jazyka.  
   
-3.  Volání <xref:Microsoft.VisualStudio.Package.ExpansionProvider> objektu.  
+3. Volání <xref:Microsoft.VisualStudio.Package.ExpansionProvider> objektu.  
   
 ### <a name="installing-the-snippet-files"></a>Instalují se soubory fragmentu kódu  
  Všechny fragmenty kódu pro jazyk se ukládají jako šablony v souboru XML, obvykle jedna šablona fragmentu na soubor. Informace o schématu XML pro šablony fragmentu kódu, naleznete v tématu [fragmenty kódu – odkaz schématu](../../ide/code-snippets-schema-reference.md). Každá šablona fragmentu kódu se určuje podle ID jazyka. Tento jazyk ID je uvedený v registru a přejde do `Language` atribut \<kód > značky v šabloně.  
@@ -117,9 +117,9 @@ Fragment kódu je část kódu, který je vložen do zdrojového souboru. Samotn
 ### <a name="inserting-a-code-snippet-by-using-a-menu-command"></a>Vložení fragmentu kódu s použitím příkazu nabídky  
  Pomocí příkazu nabídky zobrazit v prohlížeči fragment, přidání příkazu nabídky a pak zavolat <xref:Microsoft.VisualStudio.Package.ExpansionProvider.DisplayExpansionBrowser%2A> metodu <xref:Microsoft.VisualStudio.Package.ExpansionProvider> rozhraní v reakci na příkaz nabídky.  
   
-1.  Přidejte do souboru .vsct příkazu a tlačítko. Proto v postupu můžete najít [názorný postup: Vytvoření příkazu nabídky s použitím šablony sady Visual Studio balíček](http://msdn.microsoft.com/library/1985fa7d-aad4-4866-b356-a125b6a246de).  
+1. Přidejte do souboru .vsct příkazu a tlačítko. Proto v postupu můžete najít [názorný postup: Vytvoření příkazu nabídky s použitím šablony sady Visual Studio balíček](http://msdn.microsoft.com/library/1985fa7d-aad4-4866-b356-a125b6a246de).  
   
-2.  Odvodit třídu z <xref:Microsoft.VisualStudio.Package.ViewFilter> třídy a přepsat <xref:Microsoft.VisualStudio.Package.ViewFilter.QueryCommandStatus%2A> indikace podporu pro nový příkaz nabídky. Tento příklad povolí vždy příkazu nabídky.  
+2. Odvodit třídu z <xref:Microsoft.VisualStudio.Package.ViewFilter> třídy a přepsat <xref:Microsoft.VisualStudio.Package.ViewFilter.QueryCommandStatus%2A> indikace podporu pro nový příkaz nabídky. Tento příklad povolí vždy příkazu nabídky.  
   
     ```csharp  
     using Microsoft.VisualStudio.Package;  
@@ -155,7 +155,7 @@ Fragment kódu je část kódu, který je vložen do zdrojového souboru. Samotn
     }  
     ```  
   
-3.  Přepsat <xref:Microsoft.VisualStudio.Package.ViewFilter.HandlePreExec%2A> metoda ve <xref:Microsoft.VisualStudio.Package.ViewFilter> třídy získat <xref:Microsoft.VisualStudio.Package.ExpansionProvider> objektu a volání <xref:Microsoft.VisualStudio.Package.ExpansionProvider.DisplayExpansionBrowser%2A> metoda k tomuto objektu.  
+3. Přepsat <xref:Microsoft.VisualStudio.Package.ViewFilter.HandlePreExec%2A> metoda ve <xref:Microsoft.VisualStudio.Package.ViewFilter> třídy získat <xref:Microsoft.VisualStudio.Package.ExpansionProvider> objektu a volání <xref:Microsoft.VisualStudio.Package.ExpansionProvider.DisplayExpansionBrowser%2A> metoda k tomuto objektu.  
   
     ```csharp  
     using Microsoft.VisualStudio.Package;  
@@ -207,15 +207,15 @@ Fragment kódu je část kódu, který je vložen do zdrojového souboru. Samotn
   
      Následující metody u <xref:Microsoft.VisualStudio.Package.ExpansionProvider> třídy jsou volány pomocí sady Visual Studio v uvedeném pořadí během procesu vložení fragmentu kódu:  
   
-4.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnItemChosen%2A>  
+4. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnItemChosen%2A>  
   
-5.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.IsValidKind%2A>  
+5. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.IsValidKind%2A>  
   
-6.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnBeforeInsertion%2A>  
+6. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnBeforeInsertion%2A>  
   
-7.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.FormatSpan%2A>  
+7. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.FormatSpan%2A>  
   
-8.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnAfterInsertion%2A>  
+8. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnAfterInsertion%2A>  
   
      Po <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnAfterInsertion%2A> metoda je volána, fragment kódu byl vložen a <xref:Microsoft.VisualStudio.Package.ExpansionProvider> objekt je ve speciální úpravy režim používaný pro úpravu fragment kódu, který právě byl vložen.  
   

@@ -13,21 +13,21 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d03ab4df7a41fe6513a18446d26e33e9856d1183
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: d6152e374aee2eac273e0feca28c068c666e23d0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58149611"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110983"
 ---
 # <a name="active-script-profiling-overview"></a>Přehled profilace aktivních skriptů
 [Aktivní rozhraní Profiler skriptů](../winscript/reference/active-script-profiler-interfaces.md) povolit profilaci skriptovací stroje. Aktivní profilace skriptu se skládá z následujících částí:  
   
--   Modul jazyka  
+- Modul jazyka  
   
--   Hostitel  
+- Hostitel  
   
--   profiler  
+- profiler  
   
 ## <a name="language-engine"></a>Modul jazyka  
  Modul jazyka spustí skript. Poskytuje metody, které umožní profilování kód skriptu, jak se spouští. Když je povolená profilace, jazyk modul přijímá identifikátor třídy (CLSID) profileru objekt modelu COM jako argument. Vytvoří instanci objektu COM profileru a pak zavolá do profileru, pokud dojde k různým událostem.  

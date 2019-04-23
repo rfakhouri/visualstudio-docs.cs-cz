@@ -14,12 +14,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4308fb0aa39120704c5537188407a9686e9b13a4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 078230c2b80d364b68fb127f18fc21a0b931cbce
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54762146"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106667"
 ---
 # <a name="add-code-to-datasets-in-n-tier-applications"></a>Přidávání kódu do datových sad ve vícevrstvých aplikacích
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,15 +38,15 @@ Ve výchozím nastavení po oddělíte datové sady a `TableAdapter` kód, výsl
 
 ## <a name="add-code-to-datasets-in-n-tier-applications"></a>Přidávání kódu do datových sad ve vícevrstvých aplikacích
 
-1.  Najděte projekt, který obsahuje soubor XSD (datová sada).
+1. Najděte projekt, který obsahuje soubor XSD (datová sada).
 
-2.  Vyberte **XSD** soubor otevřete datovou sadu.
+2. Vyberte **XSD** soubor otevřete datovou sadu.
 
-3.  Klikněte pravým tlačítkem na tabulky dat, ke kterému chcete přidat kód (název tabulky v záhlaví okna) a pak vyberte **zobrazit kód**.
+3. Klikněte pravým tlačítkem na tabulky dat, ke kterému chcete přidat kód (název tabulky v záhlaví okna) a pak vyberte **zobrazit kód**.
 
      Částečné třídy se vytvoří a otevře v editoru kódu.
 
-4.  Přidejte kód do částečné deklarace třídy.
+4. Přidejte kód do částečné deklarace třídy.
 
      Následující příklad ukazuje, kde přidat kód CustomersDataTable v NorthwindDataSet:
 

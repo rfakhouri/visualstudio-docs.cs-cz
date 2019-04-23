@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f9f5586fee54a3e50f9485b520e092255e57359c
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: d6202a8287232c0226104be59bdab6a15fd00d95
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796657"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110963"
 ---
 # <a name="create-a-data-driven-coded-ui-test"></a>Vytvoření datově řízeného programového testu UI
 
@@ -98,11 +98,11 @@ Tato ukázka vytvoří programový test uživatelského rozhraní, která běž�
 
 ### <a name="step-2---create-a-data-set"></a>Krok 2: vytvoření datové sady
 
-1.  Přidání textového souboru s názvem projektu dataDrivenSample *data.csv*.
+1. Přidání textového souboru s názvem projektu dataDrivenSample *data.csv*.
 
      ![Přidejte do projektu soubor hodnota oddělených čárkami](../test/media/cuit_datadriven_addcsvfile.png)
 
-2.  Naplnění *CSV* souborů s následujícími údaji:
+2. Naplnění *CSV* souborů s následujícími údaji:
 
     |Num1|Num2|Součet|
     |-|-|-|
@@ -114,9 +114,9 @@ Tato ukázka vytvoří programový test uživatelského rozhraní, která běž�
 
      ![Naplnění souboru .csv s daty](../test/media/cuit_datadriven_adddatatocsvfile.png)
 
-3.  Je potřeba uložit *CSV* soubor pomocí správné kódování. Na **souboru** nabídce zvolte **pokročilé nastavení uložení** a zvolte **kódování Unicode (UTF-8 bez podpisu) - znaková stránka 65001** jako kódování.
+3. Je potřeba uložit *CSV* soubor pomocí správné kódování. Na **souboru** nabídce zvolte **pokročilé nastavení uložení** a zvolte **kódování Unicode (UTF-8 bez podpisu) - znaková stránka 65001** jako kódování.
 
-4.  *CSV* soubor, musí být zkopírován do výstupního adresáře, nebo nelze spustit test. Použití **vlastnosti** okna zkopírujte.
+4. *CSV* soubor, musí být zkopírován do výstupního adresáře, nebo nelze spustit test. Použití **vlastnosti** okna zkopírujte.
 
      ![Nasadit soubor CSV](../test/media/cuit_datadriven_deploycsvfile.png)
 
@@ -124,7 +124,7 @@ Tato ukázka vytvoří programový test uživatelského rozhraní, která běž�
 
 ### <a name="step-3---add-data-source-binding"></a>Krok 3 – Přidání datového zdroje vazby
 
-1.  K vytvoření vazby zdroje dat, přidejte `DataSource` atribut do existujícího `[TestMethod]` atribut, který je hned nad testovací metody.
+1. K vytvoření vazby zdroje dat, přidejte `DataSource` atribut do existujícího `[TestMethod]` atribut, který je hned nad testovací metody.
 
     ```csharp
     [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", "|DataDirectory|\\data.csv", "data#csv", DataAccessMethod.Sequential), DeploymentItem("data.csv"), TestMethod]
@@ -140,7 +140,7 @@ Tato ukázka vytvoří programový test uživatelského rozhraní, která běž�
     > [!TIP]
     > Zobrazit [ukázky atribut zdroje dat](#CreateDataDrivenCUIT_QA_DataSourceAttributes) v Q & části ukázky použití jiných typů zdrojů dat, jako jsou XML, SQL Express a Excel.
 
-2.  Spusťte test.
+2. Spusťte test.
 
      Všimněte si, že test běží až tři iterace. Je to proto tří řádků dat obsahuje zdroj dat, která byla vázána. Ale také si povšimněte, že test se pořád používá hodnoty parametrů konstantní a přidává 1 + 2 s součet 3 pokaždé, když.
 
@@ -179,19 +179,19 @@ Tato ukázka vytvoří programový test uživatelského rozhraní, která běž�
 
      Chcete-li zjistit vlastnosti vyhledávání, které chcete data na kódu, použijte Editor programového testu uživatelského rozhraní.
 
-    -   Otevřít *UIMap.uitest* souboru.
+    - Otevřít *UIMap.uitest* souboru.
 
          ![Otevřít editoru programového testu UI](../test/media/cuit_datadriven_opentesteditor.png)
 
-    -   Zvolte akce uživatelského rozhraní a sledovat odpovídající mapování ovládacích prvků uživatelského rozhraní. Všimněte si, jak mapování odpovídá kódu, například `this.UIMap.UICalculatorWindow.UIItemWindow.UIItem1Button`.
+    - Zvolte akce uživatelského rozhraní a sledovat odpovídající mapování ovládacích prvků uživatelského rozhraní. Všimněte si, jak mapování odpovídá kódu, například `this.UIMap.UICalculatorWindow.UIItemWindow.UIItem1Button`.
 
          ![Pomocí editoru programového testu uživatelského rozhraní pro účely pomoci s kódem](../test/media/cuit_datadriven_testeditor.png)
 
-    -   V **vlastnosti** okno Otevřít **vlastnosti hledání**. Vlastnosti hledání **název** co je právě zpracováván v kódu pomocí zdroje dat je hodnota. Například `SearchProperties` jsou přiřazeny hodnoty v prvním sloupci každý řádek dat: `UIItem1Button.SearchProperties[WinButton.PropertyNames.Name] = TestContext.DataRow["Num1"].ToString();`. Pro tři iterace, tento test změní **název** hodnotu pro vlastnost vyhledávání na 3, pak 5 a nakonec 6.
+    - V **vlastnosti** okno Otevřít **vlastnosti hledání**. Vlastnosti hledání **název** co je právě zpracováván v kódu pomocí zdroje dat je hodnota. Například `SearchProperties` jsou přiřazeny hodnoty v prvním sloupci každý řádek dat: `UIItem1Button.SearchProperties[WinButton.PropertyNames.Name] = TestContext.DataRow["Num1"].ToString();`. Pro tři iterace, tento test změní **název** hodnotu pro vlastnost vyhledávání na 3, pak 5 a nakonec 6.
 
          ![Pomocí vlastnosti hledání pomoci při psaní kódu](../test/media/cuit_datadriven_searchproperties.png)
 
-3.  Uložte řešení.
+3. Uložte řešení.
 
 ### <a name="step-5---run-the-data-driven-test"></a>Krok 5: spuštění testu s daty
 
@@ -207,23 +207,23 @@ Měla by se zobrazit testovací běh prostřednictvím tři iterace pomocí hodn
 
 **Typy zdrojů dat a atributy**
 
--   SDÍLENÝ SVAZEK CLUSTERU
+- SDÍLENÝ SVAZEK CLUSTERU
 
      `[DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", "|DataDirectory|\\data.csv", "data#csv", DataAccessMethod.Sequential), DeploymentItem("data.csv"), TestMethod]`
 
--   Excel
+- Excel
 
      `DataSource("System.Data.Odbc", "Dsn=ExcelFiles;Driver={Microsoft Excel Driver (*.xls)};dbq=|DataDirectory|\\Data.xls;defaultdir=.;driverid=790;maxbuffersize=2048;pagetimeout=5;readonly=true", "Sheet1$", DataAccessMethod.Sequential), DeploymentItem("Sheet1.xls"), TestMethod]`
 
--   Testovací případ v Team Foundation Server
+- Testovací případ v Team Foundation Server
 
      `[DataSource("Microsoft.VisualStudio.TestTools.DataSource.TestCase", "http://vlm13261329:8080/tfs/DefaultCollection;Agile", "30", DataAccessMethod.Sequential), TestMethod]`
 
--   XML
+- XML
 
      `[DataSource("Microsoft.VisualStudio.TestTools.DataSource.XML", "|DataDirectory|\\data.xml", "Iterations", DataAccessMethod.Sequential), DeploymentItem("data.xml"), TestMethod]`
 
--   SQL Express
+- SQL Express
 
      `[DataSource("System.Data.SqlClient", "Data Source=.\\sqlexpress;Initial Catalog=tempdb;Integrated Security=True", "Data", DataAccessMethod.Sequential), TestMethod]`
 

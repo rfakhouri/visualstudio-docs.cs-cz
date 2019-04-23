@@ -20,12 +20,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 07bd9e469d090ffb97e166ce943397b51aedd497
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: fcac3461d0c6dc1c05671eed1ac641c7da6790ef
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59647672"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105016"
 ---
 # <a name="save-data-in-a-transaction"></a>Ukládání dat do transakce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,11 +40,11 @@ Tento návod ukazuje, jak uložit data v transakci pomocí <xref:System.Transact
   
 #### <a name="to-create-the-new-windows-project"></a>Vytvoření nového projektu Windows  
   
-1.  V sadě Visual Studio na **souboru** nabídky, vytvořte nový **projektu**.  
+1. V sadě Visual Studio na **souboru** nabídky, vytvořte nový **projektu**.  
   
-2.  Pojmenujte projekt **SavingDataInATransactionWalkthrough**.  
+2. Pojmenujte projekt **SavingDataInATransactionWalkthrough**.  
   
-3.  Vyberte **aplikace Windows**a pak vyberte **OK**. Další informace najdete v tématu [klientské aplikace](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
+3. Vyberte **aplikace Windows**a pak vyberte **OK**. Další informace najdete v tématu [klientské aplikace](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
   
      **SavingDataInATransactionWalkthrough** projekt je vytvořen a přidán do **Průzkumníka řešení**.  
   
@@ -53,27 +53,27 @@ Tento návod ukazuje, jak uložit data v transakci pomocí <xref:System.Transact
   
 #### <a name="to-create-the-data-source"></a>Vytvoření zdroje dat  
   
-1.  Na **Data** nabídce vyberte možnost**zobrazit zdroje dat**.  
+1. Na **Data** nabídce vyberte možnost**zobrazit zdroje dat**.  
   
-2.  V **zdroje dat** okně **přidat nový zdroj dat** spustit **Průvodce konfigurací zdroje dat**.  
+2. V **zdroje dat** okně **přidat nový zdroj dat** spustit **Průvodce konfigurací zdroje dat**.  
   
-3.  Na **zvolte typ zdroje dat**obrazovky, vyberte **databáze**a pak vyberte **Další**.  
+3. Na **zvolte typ zdroje dat**obrazovky, vyberte **databáze**a pak vyberte **Další**.  
   
-4.  Na **vyberte datové připojení**obrazovky proveďte následující:  
+4. Na **vyberte datové připojení**obrazovky proveďte následující:  
   
-    -   Pokud je připojení dat k ukázkové databázi Northwind k dispozici v rozevíracím seznamu, vyberte je.  
+    - Pokud je připojení dat k ukázkové databázi Northwind k dispozici v rozevíracím seznamu, vyberte je.  
   
          -nebo-  
   
-    -   Vyberte **nové připojení** ke spuštění **přidat/změnit připojení** dialogové okno a vytvořte připojení k databázi Northwind.  
+    - Vyberte **nové připojení** ke spuštění **přidat/změnit připojení** dialogové okno a vytvořte připojení k databázi Northwind.  
   
-5.  Pokud vaše databáze vyžaduje heslo, vyberte možnost zahrnutí důvěrných osobních údajů a pak vyberte **Další**.  
+5. Pokud vaše databáze vyžaduje heslo, vyberte možnost zahrnutí důvěrných osobních údajů a pak vyberte **Další**.  
   
-6.  Na **uložit připojovací řetězec do konfiguračního souboru aplikace** obrazovky, vyberte **Další**.  
+6. Na **uložit připojovací řetězec do konfiguračního souboru aplikace** obrazovky, vyberte **Další**.  
   
-7.  Na **zvolte vaše databázové objekty** obrazovky, rozbalte **tabulky** uzlu.  
+7. Na **zvolte vaše databázové objekty** obrazovky, rozbalte **tabulky** uzlu.  
   
-8.  Vyberte `Customers` a `Orders` tabulky a pak vyberte **Dokončit**.  
+8. Vyberte `Customers` a `Orders` tabulky a pak vyberte **Dokončit**.  
   
      **NorthwindDataSet** se přidá do vašeho projektu a `Customers` a `Orders` tabulky se zobrazí v **zdroje dat** okna.  
   
@@ -82,13 +82,13 @@ Tento návod ukazuje, jak uložit data v transakci pomocí <xref:System.Transact
   
 #### <a name="to-create-data-bound-controls-on-the-windows-form"></a>Vytvoření dat vázané ovládací prvky na formuláři Windows  
   
--   V **zdroje dat** okna, rozbalte **zákazníkům** uzlu.  
+- V **zdroje dat** okna, rozbalte **zákazníkům** uzlu.  
   
--   Přetáhněte hlavní **zákazníkům** uzlu z **zdroje dat** okna do **Form1**.  
+- Přetáhněte hlavní **zákazníkům** uzlu z **zdroje dat** okna do **Form1**.  
   
      A <xref:System.Windows.Forms.DataGridView> ovládacího prvku a pruh nástrojů (<xref:System.Windows.Forms.BindingNavigator>) pro procházení záznamů se zobrazí ve formuláři. A [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), CustomersTableAdapter, <xref:System.Windows.Forms.BindingSource>, a <xref:System.Windows.Forms.BindingNavigator> zobrazují v panelu komponent.  
   
--   Přetáhněte související **objednávky** uzlu (není hlavním **objednávky** uzlu, ale následující související podřízené tabulky uzlu **Fax** sloupce) do níže uvedeného formuláře  **CustomersDataGridView**.  
+- Přetáhněte související **objednávky** uzlu (není hlavním **objednávky** uzlu, ale následující související podřízené tabulky uzlu **Fax** sloupce) do níže uvedeného formuláře  **CustomersDataGridView**.  
   
      A <xref:System.Windows.Forms.DataGridView> se zobrazí ve formuláři. OrdersTableAdapter a <xref:System.Windows.Forms.BindingSource> zobrazují v panelu komponent.  
   
@@ -97,9 +97,9 @@ Tento návod ukazuje, jak uložit data v transakci pomocí <xref:System.Transact
   
 #### <a name="to-add-a-reference-to-the-systemtransactions-dll-file"></a>Chcete-li přidat odkaz na soubor System.Transactions DLL  
   
-1.  Na **projektu** nabídce vyberte možnost**přidat odkaz**.  
+1. Na **projektu** nabídce vyberte možnost**přidat odkaz**.  
   
-2.  Vyberte **System.Transactions**(na **.NET** kartu) a pak vyberte **OK**.  
+2. Vyberte **System.Transactions**(na **.NET** kartu) a pak vyberte **OK**.  
   
      Odkaz na **System.Transactions** se přidá do projektu.  
   
@@ -117,38 +117,38 @@ Tento návod ukazuje, jak uložit data v transakci pomocí <xref:System.Transact
   
    Sjednocování změn na související data pořadí vypadá takto:  
   
--   Odstraňte podřízené záznamy. (V tomto případě odstranit záznamy `Orders` tabulky.)  
+- Odstraňte podřízené záznamy. (V tomto případě odstranit záznamy `Orders` tabulky.)  
   
--   Odstraňte nadřazené záznamy. (V tomto případě odstranit záznamy `Customers` tabulky.)  
+- Odstraňte nadřazené záznamy. (V tomto případě odstranit záznamy `Customers` tabulky.)  
   
--   Vložte nadřazené záznamy. (V tomto případě vkládání záznamů v `Customers` tabulky.)  
+- Vložte nadřazené záznamy. (V tomto případě vkládání záznamů v `Customers` tabulky.)  
   
--   Vložte podřízené záznamy. (V tomto případě vkládání záznamů v `Orders` tabulky.)  
+- Vložte podřízené záznamy. (V tomto případě vkládání záznamů v `Orders` tabulky.)  
   
 #### <a name="to-delete-existing-orders"></a>Chcete-li odstranit existující objednávky  
   
--   Přidejte následující `DeleteOrders` metodu **Form1**:  
+- Přidejte následující `DeleteOrders` metodu **Form1**:  
   
      [!code-csharp[VbRaddataSaving#5](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form2.cs#5)]
      [!code-vb[VbRaddataSaving#5](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form2.vb#5)]  
   
 #### <a name="to-delete-existing-customers"></a>Chcete-li odstranit stávající zákazníci  
   
--   Přidejte následující `DeleteCustomers` metodu **Form1**:  
+- Přidejte následující `DeleteCustomers` metodu **Form1**:  
   
      [!code-csharp[VbRaddataSaving#6](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form2.cs#6)]
      [!code-vb[VbRaddataSaving#6](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form2.vb#6)]  
   
 #### <a name="to-add-new-customers"></a>Chcete-li přidat nové zákazníky  
   
--   Přidejte následující `AddNewCustomers` metodu **Form1**:  
+- Přidejte následující `AddNewCustomers` metodu **Form1**:  
   
      [!code-csharp[VbRaddataSaving#7](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form2.cs#7)]
      [!code-vb[VbRaddataSaving#7](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form2.vb#7)]  
   
 #### <a name="to-add-new-orders"></a>Chcete-li přidat nové objednávky  
   
--   Přidejte následující `AddNewOrders` metodu **Form1**:  
+- Přidejte následující `AddNewOrders` metodu **Form1**:  
   
      [!code-csharp[VbRaddataSaving#8](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form2.cs#8)]
      [!code-vb[VbRaddataSaving#8](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form2.vb#8)]  
@@ -157,7 +157,7 @@ Tento návod ukazuje, jak uložit data v transakci pomocí <xref:System.Transact
   
 #### <a name="to-run-the-application"></a>Ke spuštění aplikace  
   
--   Vyberte **F5** ke spuštění aplikace.  
+- Vyberte **F5** ke spuštění aplikace.  
   
 ## <a name="see-also"></a>Viz také  
  [Ukládání dat zpět do databáze](../data-tools/save-data-back-to-the-database.md)

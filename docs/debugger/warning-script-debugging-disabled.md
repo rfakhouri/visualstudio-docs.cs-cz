@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2543ad00b2065f7659a89e165c2d4df990403667
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 50fe457e2b66a4c1ddafc9fc24658f58f6f753d2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56687039"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114642"
 ---
 # <a name="warning-script-debugging-disabled"></a>Upozornění: Ladění skriptů zakázáno
 V aplikaci Internet Explorer je aktuálně zakázáno ladění skriptu
@@ -29,17 +29,17 @@ V aplikaci Internet Explorer je aktuálně zakázáno ladění skriptu
 
 ### <a name="to-enable-script-debugging-in-internet-explorer"></a>K povolení ladění skriptu v aplikaci Internet Explorer
 
-1.  V Internet Exploreru **nástroje** nabídce zvolte **Možnosti Internetu**.
+1. V Internet Exploreru **nástroje** nabídce zvolte **Možnosti Internetu**.
 
-2.  V **Možnosti Internetu** dialogové okno, klikněte na tlačítko **Upřesnit** kartu.
+2. V **Možnosti Internetu** dialogové okno, klikněte na tlačítko **Upřesnit** kartu.
 
-3.  Na **Upřesnit** kartu, podívejte se **nastavení** pole **procházení** kategorie.
+3. Na **Upřesnit** kartu, podívejte se **nastavení** pole **procházení** kategorie.
 
-4.  Vymazat **zakázat ladění skriptů (aplikace Internet Explorer)**.
+4. Vymazat **zakázat ladění skriptů (aplikace Internet Explorer)**.
 
-5.  Klikněte na **OK**.
+5. Klikněte na **OK**.
 
-6.  Ukončete a restartujte aplikaci Internet Explorer.
+6. Ukončete a restartujte aplikaci Internet Explorer.
 
      Nová nastavení, nyní nebudou platit.
 

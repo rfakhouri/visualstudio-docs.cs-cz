@@ -20,12 +20,12 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bb94438a17fdc718b28503c8e258b959a16a90ff
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 10b4efd574dd5829e4717b168dc4e565476e9b52
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54766924"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102948"
 ---
 # <a name="connect-to-data-in-an-access-database-windows-forms"></a>Připojení k datům v databázi aplikace Access (Windows Forms)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,30 +40,30 @@ Pomocí sady Visual Studio se můžete připojit k databázi aplikace Access (so
   
 #### <a name="to-create-the-dataset"></a>Vytvoření datové sady  
   
-1.  Otevřete aplikaci Windows Forms, ke kterému chcete připojit data.  
+1. Otevřete aplikaci Windows Forms, ke kterému chcete připojit data.  
   
-2.  Na **zobrazení** nabídce vyberte možnost **ostatní Windows** > **zdroje dat**.  
+2. Na **zobrazení** nabídce vyberte možnost **ostatní Windows** > **zdroje dat**.  
   
      ![Zobrazení zdrojů dat Windows](../data-tools/media/viewdatasources.png "ViewDataSources")  
   
-3.  V **zdroje dat** okna, klikněte na tlačítko **přidat nový zdroj dat**.  
+3. V **zdroje dat** okna, klikněte na tlačítko **přidat nový zdroj dat**.  
   
      ![Přidat nový zdroj dat](../data-tools/media/dataaddnewdatasource.png "dataAddNewDataSource")  
   
-4.  Vyberte **databáze** na **zvolte typ zdroje dat** stránce a pak vyberte **Další**.  
+4. Vyberte **databáze** na **zvolte typ zdroje dat** stránce a pak vyberte **Další**.  
   
-5.  Vyberte **datovou sadu** na **vyberte databázový Model** stránce a pak vyberte **Další**.  
+5. Vyberte **datovou sadu** na **vyberte databázový Model** stránce a pak vyberte **Další**.  
   
-6.  Na **vyberte datové připojení** stránce **nové připojení** konfigurace nové datové připojení.  
+6. Na **vyberte datové připojení** stránce **nové připojení** konfigurace nové datové připojení.  
   
-7.  Změnit **zdroj dat** k **zprostředkovatele dat .NET Framework pro OLE DB**.  
+7. Změnit **zdroj dat** k **zprostředkovatele dat .NET Framework pro OLE DB**.  
   
      ![Změňte zprostředkovatele dat OLE DB](../data-tools/media/datachangedatasourceoledb.png "dataChangeDataSourceOLEDB")  
   
     > [!IMPORTANT]
     >  I když zdroj dat **soubor databáze Microsoft Access (OLE DB)** může jevit tou správnou volbou, použijete tento typ zdroje dat pouze pro soubory databáze .mdb.  
   
-8.  V **zprostředkovatele OLE DB**vyberte **Office 12.0 Access Database modulu zprostředkovatele Microsoft OLE DB**.  
+8. V **zprostředkovatele OLE DB**vyberte **Office 12.0 Access Database modulu zprostředkovatele Microsoft OLE DB**.  
   
      ![OLE DB poskytovatele Microsoft Office 12.0 Access](../data-tools/media/dataoledbprovideroffice12access.png "dataOLEDBProviderOffice12Access")  
   
@@ -87,23 +87,23 @@ Pomocí sady Visual Studio se můžete připojit k databázi aplikace Access (so
   
 #### <a name="to-create-the-dataset"></a>Vytvoření datové sady  
   
-1.  Otevřete aplikaci Windows Forms, ke kterému chcete připojit data.  
+1. Otevřete aplikaci Windows Forms, ke kterému chcete připojit data.  
   
-2.  Na **zobrazení** nabídce vyberte možnost **ostatní Windows** > **zdroje dat**.  
+2. Na **zobrazení** nabídce vyberte možnost **ostatní Windows** > **zdroje dat**.  
   
      ![Zobrazení zdrojů dat Windows](../data-tools/media/viewdatasources.png "ViewDataSources")  
   
-3.  V **zdroje dat** okna, klikněte na tlačítko **přidat nový zdroj dat**.  
+3. V **zdroje dat** okna, klikněte na tlačítko **přidat nový zdroj dat**.  
   
-4.  Vyberte **databáze** na **zvolte typ zdroje dat** stránce a pak vyberte **Další**.  
+4. Vyberte **databáze** na **zvolte typ zdroje dat** stránce a pak vyberte **Další**.  
   
-5.  Vyberte **datovou sadu** na **vyberte databázový Model** stránce a pak vyberte **Další**.  
+5. Vyberte **datovou sadu** na **vyberte databázový Model** stránce a pak vyberte **Další**.  
   
-6.  Na **vyberte datové připojení** stránce **nové připojení** konfigurace nové datové připojení.  
+6. Na **vyberte datové připojení** stránce **nové připojení** konfigurace nové datové připojení.  
   
-7.  Pokud zdroj dat není **soubor databáze Microsoft Access (OLE DB)** vyberte **změnu** otevřít **změnit zdroj dat** dialogové okno a vyberte **Microsoft Přístup k souboru databáze**a pak vyberte **OK**.  
+7. Pokud zdroj dat není **soubor databáze Microsoft Access (OLE DB)** vyberte **změnu** otevřít **změnit zdroj dat** dialogové okno a vyberte **Microsoft Přístup k souboru databáze**a pak vyberte **OK**.  
   
-8.  V **název souboru databáze**, zadejte cestu a název souboru .mdb, ke kterému chcete připojit a pak vyberte **OK**.  
+8. V **název souboru databáze**, zadejte cestu a název souboru .mdb, ke kterému chcete připojit a pak vyberte **OK**.  
   
      ![Přidat připojení souboru databáze aplikace Access](../data-tools/media/dataaddconnectionaccessmdb.png "dataAddConnectionAccessMDB")  
   
@@ -123,11 +123,11 @@ Pomocí sady Visual Studio se můžete připojit k databázi aplikace Access (so
 ## <a name="next-steps"></a>Další kroky  
  Je teď dostupná v datové sadě, kterou jste právě vytvořili **zdroje dat** okna. Nyní můžete provést kteroukoli z následujících úloh:  
   
--   Vyberte položky v **zdroje dat** okno a přetáhněte je na svůj formulář (naleznete v tématu [ovládací prvky vazby Windows Forms k datům v sadě Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)).  
+- Vyberte položky v **zdroje dat** okno a přetáhněte je na svůj formulář (naleznete v tématu [ovládací prvky vazby Windows Forms k datům v sadě Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)).  
   
--   Otevřete zdroj dat v návrháři datových sad můžete přidat nebo upravit objekty, které tvoří datové sady.  
+- Otevřete zdroj dat v návrháři datových sad můžete přidat nebo upravit objekty, které tvoří datové sady.  
   
--   Přidejte logiku ověřování k <xref:System.Data.DataTable.ColumnChanging> nebo <xref:System.Data.DataTable.RowChanging> události tabulek dat v datové sadě (naleznete v tématu [ověření dat v datových sadách](../data-tools/validate-data-in-datasets.md)).  
+- Přidejte logiku ověřování k <xref:System.Data.DataTable.ColumnChanging> nebo <xref:System.Data.DataTable.RowChanging> události tabulek dat v datové sadě (naleznete v tématu [ověření dat v datových sadách](../data-tools/validate-data-in-datasets.md)).  
   
 ## <a name="see-also"></a>Viz také
 

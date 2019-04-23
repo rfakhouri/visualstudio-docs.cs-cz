@@ -9,12 +9,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b9592605a25c76b4ea17b6efe91363d59585f56e
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: dd366f6bc572798e1115991afccb2b39eb8f9f6d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59660967"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091574"
 ---
 # <a name="cannot-create-an-association-ltassociation-namegt---property-listed-twice"></a>Nelze vytvořit přidružení &lt;název přidružení&gt; – vlastnost je uvedená dvakrát
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,13 +27,13 @@ Nelze vytvořit přidružení \<název přidružení >. Stejná vlastnost je uve
   
 ### <a name="to-resolve-this-condition"></a>Chcete-li tento problém vyřešit  
   
--   Zkontrolujte zprávy a poznamenejte si vlastnost určená ve zprávě.  
+- Zkontrolujte zprávy a poznamenejte si vlastnost určená ve zprávě.  
   
--   Klikněte na tlačítko **OK** zavřete okno se zprávou.  
+- Klikněte na tlačítko **OK** zavřete okno se zprávou.  
   
--   Zkontrolujte **vlastnosti přidružení** a odeberte duplicitní položky.  
+- Zkontrolujte **vlastnosti přidružení** a odeberte duplicitní položky.  
   
--   Klikněte na **OK**.  
+- Klikněte na **OK**.  
   
 ## <a name="see-also"></a>Viz také  
  [Nástroje LINQ to SQL v sadě Visual Studio](http://msdn.microsoft.com/library/a57e82d5-f7e4-4894-8add-3d9ba4fce186)   

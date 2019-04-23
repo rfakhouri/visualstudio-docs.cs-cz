@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d1a552c07443e4dd38070a86b7d9513d8cfa0136
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: d5b27d52c1f390e6c9f60ef10a91d9a93f903f5c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56691420"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104476"
 ---
 # <a name="how-to-install-a-visualizer"></a>Postupy: Instalace Vizualizéru
 Po vytvoření vizualizéru, musíte nainstalovat vizualizéru tak, že bude k dispozici v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Instalace vizualizéru je jednoduchý proces.
@@ -32,17 +32,17 @@ Po vytvoření vizualizéru, musíte nainstalovat vizualizéru tak, že bude k d
 
 ### <a name="to-install-a-visualizer"></a>Instalace vizualizéru
 
-1.  Vyhledejte knihovnu DLL, která obsahuje vizualizaci, kterou jste vytvořili.
+1. Vyhledejte knihovnu DLL, která obsahuje vizualizaci, kterou jste vytvořili.
 
-2.  Kopie knihovny DLL některou z následujících umístění:
+2. Kopie knihovny DLL některou z následujících umístění:
 
-    -   *VisualStudioInstallPath* `\Common7\Packages\Debugger\Visualizers`
+    - *VisualStudioInstallPath* `\Common7\Packages\Debugger\Visualizers`
 
-    -   `My Documents\` *VisualStudioVersion* `\Visualizers`
+    - `My Documents\` *VisualStudioVersion* `\Visualizers`
 
-3.  Pokud chcete používat spravované vizualizéru pro vzdálené ladění, zkopírujte knihovnu DLL do stejného umístění na vzdáleném počítači.
+3. Pokud chcete používat spravované vizualizéru pro vzdálené ladění, zkopírujte knihovnu DLL do stejného umístění na vzdáleném počítači.
 
-4.  Restartujte relaci ladění.
+4. Restartujte relaci ladění.
 
 ## <a name="see-also"></a>Viz také
 - [Vytváření vlastních vizualizérů](../debugger/create-custom-visualizers-of-data.md)

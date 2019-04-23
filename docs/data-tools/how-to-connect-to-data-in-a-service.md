@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: f3fd643ca29c5f5e4df20f244bc06b6bca04b9bd
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 7633d60ed672b64137b68bd9e6c3b860224753e5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55930737"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085958"
 ---
 # <a name="how-to-connect-to-data-in-a-service"></a>Postupy: Připojení k datům ve službě
 
@@ -36,20 +36,20 @@ Po dokončení průvodce se odkaz na službu se přidá do vašeho projektu a je
 
 ## <a name="to-connect-your-application-to-a-service"></a>Pro připojení aplikace ke službě
 
-1.  Na **Data** nabídky, klikněte na tlačítko **přidat nový zdroj dat**.
+1. Na **Data** nabídky, klikněte na tlačítko **přidat nový zdroj dat**.
 
-2.  Vyberte **služby** na **zvolte typ zdroje dat** stránce a potom klikněte na tlačítko **Další**.
+2. Vyberte **služby** na **zvolte typ zdroje dat** stránce a potom klikněte na tlačítko **Další**.
 
-3.  Zadejte adresu služby, kterou chcete použít, nebo klikněte na tlačítko **Discover** vyhledejte služby v aktuálním řešení a potom klikněte na **Přejít**.
+3. Zadejte adresu služby, kterou chcete použít, nebo klikněte na tlačítko **Discover** vyhledejte služby v aktuálním řešení a potom klikněte na **Přejít**.
 
-4.  Volitelně můžete zadat nový **Namespace** místo výchozí hodnotu.
+4. Volitelně můžete zadat nový **Namespace** místo výchozí hodnotu.
 
     > [!NOTE]
     > Klikněte na tlačítko **Upřesnit** otevřít [dialogové okno nastavit odkaz na službu](../data-tools/configure-service-reference-dialog-box.md).
 
-5.  Klikněte na tlačítko **OK** přidáte odkaz na službu do projektu.
+5. Klikněte na tlačítko **OK** přidáte odkaz na službu do projektu.
 
-6.  Klikněte na tlačítko **Dokončit**.
+6. Klikněte na tlačítko **Dokončit**.
 
      Zdroj dat je přidaný do **zdroje dat** okna.
 

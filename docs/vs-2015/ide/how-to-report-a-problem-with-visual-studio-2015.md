@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 73b06f4235d5770cb6c086d6aed54229e00702de
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: d8cedd5ab26539d5ebe32aee8df272691dd0a779
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59665139"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60083646"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2015"></a>Postup ohlášení problému se sadou Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Klikněte na ikonu zpětné vazby uživatelů vedle **Snadné spuštění** v z�
 
 ## <a name="describe-the-problem"></a>Popište problém
 
-###  <a name="describe_the_problem"></a>
+### <a name="describe_the_problem"></a>
 
 1. Zadejte popisný název problému, pomůže nám to směrovat správnému týmu sady Visual Studio.
 
@@ -49,15 +49,15 @@ Zvolte **zahrnout snímek obrazovky** k odeslání společnosti Microsoft aktuá
 
 ## <a name="provide-a-trace-and-heap-dump-optional"></a>Zadejte trasování a haldy výpis (volitelné)
 
-###  <a name="provide_a_trace_and_heap_dump"></a>
+### <a name="provide_a_trace_and_heap_dump"></a>
 
-1.  Je nám s diagnostikou problémů velmi pomohou trasování a haldy soubory s výpisem paměti.   Děkujeme za to moc použijete sestavu problém nástroj pro záznam postupu k reprodukci a odesílala data do Microsoftu.
+1. Je nám s diagnostikou problémů velmi pomohou trasování a haldy soubory s výpisem paměti.   Děkujeme za to moc použijete sestavu problém nástroj pro záznam postupu k reprodukci a odesílala data do Microsoftu.
 
-2.  Klikněte na dvojitou šipku vedle **zaznamenejte své akce pro reprodukci problému**. Pokud váš problém způsobují to, že sada Visual Studio přestane reagovat nebo havárií, pak otevře další instanci sady Visual Studio a vyberte ho ze zobrazení seznamu.
+2. Klikněte na dvojitou šipku vedle **zaznamenejte své akce pro reprodukci problému**. Pokud váš problém způsobují to, že sada Visual Studio přestane reagovat nebo havárií, pak otevře další instanci sady Visual Studio a vyberte ho ze zobrazení seznamu.
 
-3.  Klikněte na **spustit záznam** a postupujte podle kroků, které problém reprodukovat. Jakmile budete hotovi, klikněte na **zastavit záznam** tlačítka v okně s plovoucí desetinnou čárkou.
+3. Klikněte na **spustit záznam** a postupujte podle kroků, které problém reprodukovat. Jakmile budete hotovi, klikněte na **zastavit záznam** tlačítka v okně s plovoucí desetinnou čárkou.
 
-4.  Počkejte několik minut, než Visual Studio se shromažďovat a balit informací, která byla zaznamenána. Dialogové okno bude vypadat asi takhle nějak. Po dokončení procesu shromažďování:
+4. Počkejte několik minut, než Visual Studio se shromažďovat a balit informací, která byla zaznamenána. Dialogové okno bude vypadat asi takhle nějak. Po dokončení procesu shromažďování:
 
      ![Záznam trasování souboru](../ide/media/record-a-trace-file.png "záznam souboru trasování")
 

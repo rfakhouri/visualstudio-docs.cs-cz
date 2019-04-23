@@ -8,14 +8,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 57f1f8274d121b5370f47dfdb62be3a8e5cdd017
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: 2f0b4069bf1b74c15f9fcf7cdb7e488247b8548e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57525866"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60086374"
 ---
-# <a name="walkthrough-use-xml-editor-features"></a>Návod: Použití funkce editoru XML
+# <a name="walkthrough-use-xml-editor-features"></a>Návod: Použití funkcí editoru XML
 
 Kroky v tomto názorném postupu ukazují, jak vytvořit nový dokument XML. Průvodce také používá některé funkce editoru jazyka XML, které jí umožňují velmi cennou pomůckou pro vytváření XML.
 
@@ -24,59 +24,59 @@ Kroky v tomto názorném postupu ukazují, jak vytvořit nový dokument XML. Pr�
 
 ## <a name="to-create-a-new-xml-file-and-associate-it-with-an-xml-schema"></a>Vytvořte nový soubor XML a přidružte jej k schématu XML
 
-1.  Na **souboru** nabídky, přejděte k **nový**a klikněte na tlačítko **souboru**.
+1. Na **souboru** nabídky, přejděte k **nový**a klikněte na tlačítko **souboru**.
 
-2.  Vyberte **soubor XML** v **šablony** podokně a klepněte na **otevřít**.
+2. Vyberte **soubor XML** v **šablony** podokně a klepněte na **otevřít**.
 
      Nový soubor je otevřen v editoru. Tento soubor obsahuje deklaraci XML výchozí `<?xml version="1.0" encoding="utf-8">`.
 
-3.  V okně Vlastnosti dokumentu, klikněte na tlačítko Procházet (**...** ) na **schémata** pole.
+3. V okně Vlastnosti dokumentu, klikněte na tlačítko Procházet (**...** ) na **schémata** pole.
 
      **Schémata XSD** se zobrazí dialogové okno.
 
-4.  Klikněte na **Přidat**.
+4. Klikněte na **Přidat**.
 
      **Otevřít schéma XSD** se zobrazí dialogové okno.
 
-5.  Vyberte *hireDate.xsd* souboru a klikněte na tlačítko **otevřít**.
+5. Vyberte *hireDate.xsd* souboru a klikněte na tlačítko **otevřít**.
 
-6.  Klikněte na **OK**.
+6. Klikněte na **OK**.
 
      Schéma XML je teď přidružený k dokumentu XML. Schématu XML se používá k ověření dokumentu. Také se používá technologii IntelliSense k naplnění seznamu členů platné prvky.
 
 ## <a name="to-add-data"></a>Chcete-li přidat data
 
-1.  Typ `<` podokna editoru.
+1. Typ `<` podokna editoru.
 
      Seznam členů obsahuje položky, je to možné:
 
-    -   **! –** a přidejte komentář.
+    - **! –** a přidejte komentář.
 
-    -   **! Typ dokumentu** přidat typ dokumentu.
+    - **! Typ dokumentu** přidat typ dokumentu.
 
-    -   **?** Chcete-li přidat instrukce pro zpracování.
+    - **?** Chcete-li přidat instrukce pro zpracování.
 
-    -   **Zaměstnanec** přidat kořenový element.
+    - **Zaměstnanec** přidat kořenový element.
 
-2.  Vyberte **<!--** přidat uzel komentáře a stiskněte klávesu **Enter**.
+2. Vyberte **<!--** přidat uzel komentáře a stiskněte klávesu **Enter**.
 
      Editor vloží koncová značka komentáře a umístí kurzor mezi počáteční a koncové značky pro komentáře.
 
-3.  Zadejte **soubor Test XML**.
+3. Zadejte **soubor Test XML**.
 
-4.  Na nový řádek, zadejte `<`a vyberte **zaměstnance** ze seznamu členů.
+4. Na nový řádek, zadejte `<`a vyberte **zaměstnance** ze seznamu členů.
 
      Editor přidá na začátek elementu XML `<employee`. V tomto okamžiku můžete přidat atributy pro element nebo můžete zavřít počáteční značce zadáním `>`.
 
-5.  Typ `>` zavřete značky.
+5. Typ `>` zavřete značky.
 
-6.  Editor přidá koncová značka. Koncová značka se přidá s podtržení vlnovkou udávající chybu ověřování. **Popisek** zobrazí zprávu: **Element 'zaměstnance' má neúplný obsah. Byl očekáván 'ID'**.
+6. Editor přidá koncová značka. Koncová značka se přidá s podtržení vlnovkou udávající chybu ověřování. **Popisek** zobrazí zprávu: **Element 'zaměstnance' má neúplný obsah. Byl očekáván 'ID'**.
 
-7.  Typ `<` a vyberte **ID** ze seznamu členů. Zadejte `>`.
+7. Typ `<` a vyberte **ID** ze seznamu členů. Zadejte `>`.
 
      Přidá XML element editor `<ID></ID>`a umístí kurzor po ID počáteční značka.
 
-8.  Typ **abc**.
+8. Typ **abc**.
 
      **Abc** text obsahuje podtržení vlnovkou. **Popisek** zobrazí zprávu: **Element 'ID' má neplatnou hodnotu vzhledem k jeho datovému typu**.
 
@@ -104,11 +104,11 @@ Kroky v tomto názorném postupu ukazují, jak vytvořit nový dokument XML. Pr�
 
 ## <a name="to-save-the-xml-document"></a>Uložení dokumentu XML
 
-1.  Z **souboru** nabídce vyberte možnost **uložit jako**.
+1. Z **souboru** nabídce vyberte možnost **uložit jako**.
 
      **Uložit soubor jako** se zobrazí dialogové okno. Výchozí název souboru je *"XMLFile1"*.
 
-2.  Zadejte název souboru a umístění dokumentu XML a klikněte na tlačítko **Uložit**.
+2. Zadejte název souboru a umístění dokumentu XML a klikněte na tlačítko **Uložit**.
 
 ## <a name="hiredatexsd-file"></a>soubor hireDate.xsd
 

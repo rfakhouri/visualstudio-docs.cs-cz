@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3df17c9b52a7660da20cb036ad4aad702e86d931
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 06505798dcff86507cfc52c4209bf038776f7fac
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56690718"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100466"
 ---
 # <a name="idebugfunctionobject2"></a>IDebugFunctionObject2
 > [!IMPORTANT]
@@ -35,11 +35,11 @@ IDebugFunctionObject2 : IUnknown
 ## <a name="notes-for-callers"></a>Poznámky pro volající
  Metody tohoto rozhraní odložit u **IDebugFunctionObject** následujícími způsoby:
 
--   **IDebugEvaluate** metoda přijímá příznaky.
+- **IDebugEvaluate** metoda přijímá příznaky.
 
--   **CreateObject** metoda přijímá příznaky a vypršení časového limitu.
+- **CreateObject** metoda přijímá příznaky a vypršení časového limitu.
 
--   **CreateStringObjectWithLength** metoda má délku.
+- **CreateStringObjectWithLength** metoda má délku.
 
 ## <a name="methods"></a>Metody
  Toto rozhraní implementuje následujících metod:

@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b55cd1106159bd6eae345ca849ab944f04620e61
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: a9a03c4282fb7c2719f0f408759be972ead0f866
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56681004"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110294"
 ---
 # <a name="how-to-provide-an-asynchronous-visual-studio-service"></a>Postupy: Poskytování asynchronní služby sady Visual Studio
 Pokud chcete získat službu bez blokování vlákna uživatelského rozhraní, by měl vytvořit asynchronní služby a načíst balíček ve vlákně na pozadí. K tomuto účelu můžete použít <xref:Microsoft.VisualStudio.Shell.AsyncPackage> spíše než <xref:Microsoft.VisualStudio.Shell.Package>a přidejte službu s asynchronní balíček speciální asynchronní metody.
@@ -22,27 +22,27 @@ Pokud chcete získat službu bez blokování vlákna uživatelského rozhraní, 
 
 ## <a name="implement-an-asynchronous-service"></a>Implementace asynchronní služby
 
-1.  Vytvořte projekt VSIX (**souboru** > **nový** > **projektu** > **Visual C#**  >  **Extensiblity** > **projekt VSIX**). Pojmenujte projekt **TestAsync**.
+1. Vytvořte projekt VSIX (**souboru** > **nový** > **projektu** > **Visual C#**  >  **Extensiblity** > **projekt VSIX**). Pojmenujte projekt **TestAsync**.
 
-2.  Přidejte do projektu VSPackage. Vyberte uzel projektu v **Průzkumníka řešení** a klikněte na tlačítko **přidat** > **nová položka** > **položky Visual C#**  >  **Rozšiřitelnost** > **balíčku sady Visual Studio**. Název tohoto souboru *TestAsyncPackage.cs*.
+2. Přidejte do projektu VSPackage. Vyberte uzel projektu v **Průzkumníka řešení** a klikněte na tlačítko **přidat** > **nová položka** > **položky Visual C#**  >  **Rozšiřitelnost** > **balíčku sady Visual Studio**. Název tohoto souboru *TestAsyncPackage.cs*.
 
-3.  V *TestAsyncPackage.cs*, změňte balíček, který má Zdědit `AsyncPackage` spíše než `Package`:
+3. V *TestAsyncPackage.cs*, změňte balíček, který má Zdědit `AsyncPackage` spíše než `Package`:
 
     ```csharp
     public sealed class TestAsyncPackage : AsyncPackage
     ```
 
-4.  K implementaci služby, je potřeba vytvořit tři typy:
+4. K implementaci služby, je potřeba vytvořit tři typy:
 
-    -   Rozhraní, která identifikuje službu. Mnohé z těchto rozhraní jsou prázdné, to znamená, mají žádné metody, jak se používají pouze pro dotazování na službu.
+    - Rozhraní, která identifikuje službu. Mnohé z těchto rozhraní jsou prázdné, to znamená, mají žádné metody, jak se používají pouze pro dotazování na službu.
 
-    -   Rozhraní, které popisují rozhraní služby. Toto rozhraní obsahuje metody k implementaci.
+    - Rozhraní, které popisují rozhraní služby. Toto rozhraní obsahuje metody k implementaci.
 
-    -   Třída, která implementuje služba a služba rozhraní.
+    - Třída, která implementuje služba a služba rozhraní.
 
-5.  Následující příklad ukazuje velmi základní implementaci ze tří typů. Konstruktor třídy služeb, musíte nastavit poskytovatele služeb. V tomto příkladu pouze přidáme služby v kódu souboru balíčku.
+5. Následující příklad ukazuje velmi základní implementaci ze tří typů. Konstruktor třídy služeb, musíte nastavit poskytovatele služeb. V tomto příkladu pouze přidáme služby v kódu souboru balíčku.
 
-6.  Přidejte následující příkazy using do souboru balíčku:
+6. Přidejte následující příkazy using do souboru balíčku:
 
     ```csharp
     using System.Threading;
@@ -54,7 +54,7 @@ Pokud chcete získat službu bez blokování vlákna uživatelského rozhraní, 
     using Task = System.Threading.Tasks.Task;
     ```
 
-7.  Tady je implementace asynchronní služby. Všimněte si, že je potřeba nastavit asynchronní poskytovatele místo synchronní poskytovatele v konstruktoru:
+7. Tady je implementace asynchronní služby. Všimněte si, že je potřeba nastavit asynchronní poskytovatele místo synchronní poskytovatele v konstruktoru:
 
     ```csharp
     public class TextWriterService : STextWriterService, ITextWriterService
@@ -120,7 +120,7 @@ public sealed class TestAsyncPackage : AsyncPackage
 
 ## <a name="add-a-service"></a>Přidat službu
 
-1.  V *TestAsyncPackage.cs*, odeberte `Initialize()` metoda a přepsání `InitializeAsync()` metody. Přidání služby a přidejte metodu zpětného volání pro vytvoření služeb. Tady je příklad asynchronní inicializátoru pro přidání služby:
+1. V *TestAsyncPackage.cs*, odeberte `Initialize()` metoda a přepsání `InitializeAsync()` metody. Přidání služby a přidejte metodu zpětného volání pro vytvoření služeb. Tady je příklad asynchronní inicializátoru pro přidání služby:
 
     ```csharp
     protected override async Task InitializeAsync(CancellationToken cancellationToken, IProgress<ServiceProgressData> progress)
@@ -131,9 +131,9 @@ public sealed class TestAsyncPackage : AsyncPackage
 
     ```
 
-2.  Přidejte odkaz na *Microsoft.VisualStudio.Shell.Interop.14.0.DesignTime.dll*.
+2. Přidejte odkaz na *Microsoft.VisualStudio.Shell.Interop.14.0.DesignTime.dll*.
 
-3.  Jako asynchronní metodu, která vytvoří a vrátí službu implementujte metodu zpětného volání.
+3. Jako asynchronní metodu, která vytvoří a vrátí službu implementujte metodu zpětného volání.
 
     ```csharp
     public async Task<object> CreateTextWriterService(IAsyncServiceContainer container, CancellationToken cancellationToken, Type serviceType)
@@ -148,7 +148,7 @@ public sealed class TestAsyncPackage : AsyncPackage
 ## <a name="use-a-service"></a>Použít službu
  Nyní můžete získat službu a použijte její metody.
 
-1.  Ukážeme to v inicializátoru, ale můžete získat službu kamkoli chcete používat službu.
+1. Ukážeme to v inicializátoru, ale můžete získat službu kamkoli chcete používat službu.
 
     ```csharp
     protected override async System.Threading.Tasks.Task InitializeAsync(CancellationToken cancellationToken, IProgress<ServiceProgressData> progress)
@@ -165,14 +165,14 @@ public sealed class TestAsyncPackage : AsyncPackage
 
      Nezapomeňte změnit  *\<userpath >* název souboru a cestu, která dává smysl ve vašem počítači!
 
-2.  Sestavte a spusťte kód. Když se objeví experimentální instanci sady Visual Studio, otevřete řešení. To způsobí, že `AsyncPackage` chcete automaticky načíst. Po spuštění inicializátoru, měli byste najít soubor v zadaném umístění.
+2. Sestavte a spusťte kód. Když se objeví experimentální instanci sady Visual Studio, otevřete řešení. To způsobí, že `AsyncPackage` chcete automaticky načíst. Po spuštění inicializátoru, měli byste najít soubor v zadaném umístění.
 
 ## <a name="use-an-asynchronous-service-in-a-command-handler"></a>Použít službu pro asynchronní v obslužná rutina příkazu
  Tady je příklad toho, jak použít asynchronní služby v příkazu nabídky. Můžete použít k používání služby v jiné jiné asynchronní metody zde zobrazená procedura.
 
-1.  Přidání příkazu nabídky do projektu. (V **Průzkumníka řešení**, vyberte uzel projektu, klikněte pravým tlačítkem a vyberte **přidat** > **nová položka**  >   **Rozšiřitelnost** > **vlastní příkaz**.) Název souboru příkazů *TestAsyncCommand.cs*.
+1. Přidání příkazu nabídky do projektu. (V **Průzkumníka řešení**, vyberte uzel projektu, klikněte pravým tlačítkem a vyberte **přidat** > **nová položka**  >   **Rozšiřitelnost** > **vlastní příkaz**.) Název souboru příkazů *TestAsyncCommand.cs*.
 
-2.  Šablona vlastního příkazu znovu přidá `Initialize()` metodu *TestAsyncPackage.cs* souboru, aby bylo možné inicializovat příkazu. V `Initialize()` metoda, zkopírovat řádek, který inicializuje příkazu. Mělo by to vypadat takto:
+2. Šablona vlastního příkazu znovu přidá `Initialize()` metodu *TestAsyncPackage.cs* souboru, aby bylo možné inicializovat příkazu. V `Initialize()` metoda, zkopírovat řádek, který inicializuje příkazu. Mělo by to vypadat takto:
 
     ```csharp
     TestAsyncCommand.Initialize(this);
@@ -198,17 +198,17 @@ public sealed class TestAsyncPackage : AsyncPackage
 
     ```
 
-3.  Odstranit `Initialize()` metody.
+3. Odstranit `Initialize()` metody.
 
-4.  V *TestAsyncCommand.cs* souboru, vyhledejte `MenuItemCallback()` metody. Odstranění těla metody.
+4. V *TestAsyncCommand.cs* souboru, vyhledejte `MenuItemCallback()` metody. Odstranění těla metody.
 
-5.  Přidat sadu pomocí příkazu:
+5. Přidat sadu pomocí příkazu:
 
     ```csharp
     using System.IO;
     ```
 
-6.  Přidat metodu s názvem `UseTextWriterAsync()`, který získá službu a používá jeho metody:
+6. Přidat metodu s názvem `UseTextWriterAsync()`, který získá službu a používá jeho metody:
 
     ```csharp
     private async System.Threading.Tasks.Task UseTextWriterAsync()
@@ -224,7 +224,7 @@ public sealed class TestAsyncPackage : AsyncPackage
 
     ```
 
-7.  Volejte tuto metodu z `MenuItemCallback()` metody:
+7. Volejte tuto metodu z `MenuItemCallback()` metody:
 
     ```csharp
     private void MenuItemCallback(object sender, EventArgs e)
@@ -234,7 +234,7 @@ public sealed class TestAsyncPackage : AsyncPackage
 
     ```
 
-8.  Sestavte řešení a spusťte ladění. Když se objeví experimentální instanci sady Visual Studio, přejděte na **nástroje** nabídky a vyhledat **vyvolat TestAsyncCommand** položky nabídky. Po kliknutí na to, TextWriterService zapíše do souboru, který jste zadali. (Není nutné pro otevření řešení, protože volání příkazu zároveň způsobí, že balíček, který má načíst.)
+8. Sestavte řešení a spusťte ladění. Když se objeví experimentální instanci sady Visual Studio, přejděte na **nástroje** nabídky a vyhledat **vyvolat TestAsyncCommand** položky nabídky. Po kliknutí na to, TextWriterService zapíše do souboru, který jste zadali. (Není nutné pro otevření řešení, protože volání příkazu zároveň způsobí, že balíček, který má načíst.)
 
 ## <a name="see-also"></a>Viz také:
 - [Použít a poskytování služeb](../extensibility/using-and-providing-services.md)

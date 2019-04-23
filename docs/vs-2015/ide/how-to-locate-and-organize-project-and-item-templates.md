@@ -16,12 +16,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5e734100928bdd6a8609ab59d172d278e91b8ae7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1f4788ab9fa23049ded8107fe1d33a9419b79c00
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54778523"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091236"
 ---
 # <a name="how-to-locate-and-organize-project-and-item-templates"></a>Postupy: Hledání a organizace projektů a šablon položek
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -90,23 +90,23 @@ Soubory šablony musí být umístěn do umístění, které Visual Studio rozpo
   
 ##### <a name="to-create-new-installed-item-template-categories"></a>Vytvořit novou položku nainstalovaných kategorie šablony  
   
-1.  Vytvořte složku ve složce jazyka adresář nainstalovaných šablon. Chcete-li například vytvořit kategorii Web pro [!INCLUDE[csprcs](../includes/csprcs-md.md)] položku šablony vytvoříte v následujícím adresáři:  
+1. Vytvořte složku ve složce jazyka adresář nainstalovaných šablon. Chcete-li například vytvořit kategorii Web pro [!INCLUDE[csprcs](../includes/csprcs-md.md)] položku šablony vytvoříte v následujícím adresáři:  
   
      \\*VisualStudioInstallationDirectory*\Common7\IDE\ItemTemplates\CSharp\1033\Web\  
   
-2.  Umístěte všechny šablony pro tuto kategorii do nové složky.  
+2. Umístěte všechny šablony pro tuto kategorii do nové složky.  
   
-3.  Zavřete všechny instance [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+3. Zavřete všechny instance [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
-4.  Na **Start** nabídky, klikněte na tlačítko **spustit**, typ **cmd**a klikněte na tlačítko **OK**.  
+4. Na **Start** nabídky, klikněte na tlačítko **spustit**, typ **cmd**a klikněte na tlačítko **OK**.  
   
-5.  Na příkazovém řádku vyhledejte adresář, který obsahuje devenv.exe a typ **devenv/Setup**.  
+5. Na příkazovém řádku vyhledejte adresář, který obsahuje devenv.exe a typ **devenv/Setup**.  
   
-6.  Spusťte [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+6. Spusťte [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
-7.  Vytvoření projektu nebo otevřete existující projekt.  
+7. Vytvoření projektu nebo otevřete existující projekt.  
   
-8.  Na **projektu** nabídky, klikněte na tlačítko **přidat novou položku**.  
+8. Na **projektu** nabídky, klikněte na tlačítko **přidat novou položku**.  
   
 9. Ověřte, že Web se zobrazí kategorie **přidat novou položku** v dialogu **typy projektů** podokně.  
   
@@ -129,30 +129,30 @@ Soubory šablony musí být umístěn do umístění, které Visual Studio rozpo
   
 ##### <a name="to-create-new-custom-item-template-categories"></a>Chcete-li vytvořit nové vlastní položky kategorií šablon  
   
-1.  Vytvořte složku ve složce jazyka v adresáři vlastní položky šablon. Například pro vytvoření kategorie HelloWorld [!INCLUDE[csprcs](../includes/csprcs-md.md)] šablony vytvoříte v následujícím adresáři:  
+1. Vytvořte složku ve složce jazyka v adresáři vlastní položky šablon. Například pro vytvoření kategorie HelloWorld [!INCLUDE[csprcs](../includes/csprcs-md.md)] šablony vytvoříte v následujícím adresáři:  
   
      Dokumenty \My\\< verze sady Visual Studio\>\Templates\ItemTemplates\CSharp\HelloWorld\  
   
-2.  Umístěte všechny šablony pro tuto kategorii do nové složky.  
+2. Umístěte všechny šablony pro tuto kategorii do nové složky.  
   
-3.  Vytvoření projektu nebo otevřete existující projekt.  
+3. Vytvoření projektu nebo otevřete existující projekt.  
   
-4.  Na **projektu** nabídky, klikněte na tlačítko **přidat novou položku**.  
+4. Na **projektu** nabídky, klikněte na tlačítko **přidat novou položku**.  
   
-5.  Ověřte, že se zobrazí kategorie HelloWorld v **přidat novou položku** v dialogu **typy projektů** podokně.  
+5. Ověřte, že se zobrazí kategorie HelloWorld v **přidat novou položku** v dialogu **typy projektů** podokně.  
   
 ### <a name="displaying-templates-in-parent-categories"></a>Zobrazení šablony v nadřazené kategorie  
  Můžete povolit v podkategoriích, který se má zobrazit v jejich nadřazené kategorie pomocí šablony `NumberOfParentCategoriesToRollUp` element v souboru .vstemplate. Tyto postupy jsou stejné pro šablony projektů a šablon položek.  
   
 ##### <a name="to-display-templates-in-parent-categories"></a>Chcete-li zobrazit šablony v nadřazené kategorie  
   
-1.  Vyhledejte soubor .zip, který obsahuje šablonu.  
+1. Vyhledejte soubor .zip, který obsahuje šablonu.  
   
-2.  Extrahujte soubor ZIP.  
+2. Extrahujte soubor ZIP.  
   
-3.  Otevřete soubor .vstemplate v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+3. Otevřete soubor .vstemplate v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
-4.  V `TemplateData` elementu, přidejte `NumberOfParentCategoriesToRollUp` elementu. Například následující kód vytvoří šablonu viditelné v nadřazené kategorie, ale ne vyšší.  
+4. V `TemplateData` elementu, přidejte `NumberOfParentCategoriesToRollUp` elementu. Například následující kód vytvoří šablonu viditelné v nadřazené kategorie, ale ne vyšší.  
   
     ```  
     <TemplateData>  
@@ -164,13 +164,13 @@ Soubory šablony musí být umístěn do umístění, které Visual Studio rozpo
     </TemplateData>  
     ```  
   
-5.  Uložte a zavřete soubor .vstemplate.  
+5. Uložte a zavřete soubor .vstemplate.  
   
-6.  Vyberte soubory do šablony, klikněte pravým tlačítkem na výběr, klikněte na tlačítko **odeslat**a potom klikněte na tlačítko **komprimovaná složka (metoda ZIP)**. Soubory jsou komprimována do souboru .zip.  
+6. Vyberte soubory do šablony, klikněte pravým tlačítkem na výběr, klikněte na tlačítko **odeslat**a potom klikněte na tlačítko **komprimovaná složka (metoda ZIP)**. Soubory jsou komprimována do souboru .zip.  
   
-7.  Odstraňte extrahované soubory šablony a starý soubor ZIP šablony.  
+7. Odstraňte extrahované soubory šablony a starý soubor ZIP šablony.  
   
-8.  Vložte nový soubor ZIP do adresáře, který měl odstraněný .zip soubor.  
+8. Vložte nový soubor ZIP do adresáře, který měl odstraněný .zip soubor.  
   
 ## <a name="see-also"></a>Viz také  
  [Přizpůsobení šablon](../ide/customizing-project-and-item-templates.md)   

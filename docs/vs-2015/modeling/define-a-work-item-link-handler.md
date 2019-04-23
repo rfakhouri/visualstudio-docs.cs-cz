@@ -11,12 +11,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7bc151e69206e37f88eac04ac8bbb2f4d9dbf1ad
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 213237037225b18128ab149f384466e5fab0d668
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54767962"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104678"
 ---
 # <a name="define-a-work-item-link-handler"></a>Definování obslužné rutiny odkazu pracovní položky
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,39 +26,39 @@ Můžete vytvořit rozšíření integrace sady Visual Studio, který reaguje, k
 ## <a name="set-up-a-uml-extension-solution"></a>Nastavte řešení rozšíření UML  
  To vám umožní vyvíjet obslužné rutiny a pak je distribuovat ostatním uživatelům. Budete muset nastavit dva projekty sady Visual Studio:  
   
--   Projekt knihovny tříd obsahující kód obslužné rutiny odkazu.  
+- Projekt knihovny tříd obsahující kód obslužné rutiny odkazu.  
   
--   Projekt VSIX, který funguje jako kontejner pro instalaci příkazu. Pokud chcete, můžete zahrnout další součásti do stejného VSIX.  
+- Projekt VSIX, který funguje jako kontejner pro instalaci příkazu. Pokud chcete, můžete zahrnout další součásti do stejného VSIX.  
   
 #### <a name="to-set-up-the-visual-studio-solution"></a>Nastavit řešení sady Visual Studio  
   
-1.  Vytvořte projekt knihovny tříd, jeho přidání do existujícího VSIX řešení nebo vytvoření nového řešení.  
+1. Vytvořte projekt knihovny tříd, jeho přidání do existujícího VSIX řešení nebo vytvoření nového řešení.  
   
-    1.  Na **souboru** nabídce zvolte **nový**, **projektu**.  
+    1. Na **souboru** nabídce zvolte **nový**, **projektu**.  
   
-    2.  V části **nainstalované šablony**, rozbalte **Visual C#** nebo **jazyka Visual Basic**, v prostředním sloupci klikněte na tlačítko **knihovny tříd**.  
+    2. V části **nainstalované šablony**, rozbalte **Visual C#** nebo **jazyka Visual Basic**, v prostředním sloupci klikněte na tlačítko **knihovny tříd**.  
   
-    3.  Nastavte **řešení** označující, zda chcete vytvořit nové řešení nebo přidat součást do řešení VSIX, který jste již otevřeli.  
+    3. Nastavte **řešení** označující, zda chcete vytvořit nové řešení nebo přidat součást do řešení VSIX, který jste již otevřeli.  
   
-    4.  Nastavte projekt název a umístění a klikněte na tlačítko OK.  
+    4. Nastavte projekt název a umístění a klikněte na tlačítko OK.  
   
-2.  Pokud ho vaše řešení již neobsahuje, vytvořte projekt VSIX.  
+2. Pokud ho vaše řešení již neobsahuje, vytvořte projekt VSIX.  
   
-    1.  V **Průzkumníka řešení**, v místní nabídce řešení zvolte **přidat**, **nový projekt**.  
+    1. V **Průzkumníka řešení**, v místní nabídce řešení zvolte **přidat**, **nový projekt**.  
   
-    2.  V části **nainstalované šablony**, rozbalte **Visual C#** nebo **jazyka Visual Basic**a pak vyberte **rozšiřitelnost**. V prostředním sloupci zvolte **projekt VSIX**.  
+    2. V části **nainstalované šablony**, rozbalte **Visual C#** nebo **jazyka Visual Basic**a pak vyberte **rozšiřitelnost**. V prostředním sloupci zvolte **projekt VSIX**.  
   
-3.  Nastavte projekt VSIX jako projekt po spuštění řešení.  
+3. Nastavte projekt VSIX jako projekt po spuštění řešení.  
   
-    -   V Průzkumníku řešení v místní nabídce projektu VSIX zvolte **nastavit jako spouštěný projekt**.  
+    - V Průzkumníku řešení v místní nabídce projektu VSIX zvolte **nastavit jako spouštěný projekt**.  
   
-4.  V **source.extension.vsixmanifest**v části **obsahu**, přidejte projekt knihovny tříd jako komponentu MEF.  
+4. V **source.extension.vsixmanifest**v části **obsahu**, přidejte projekt knihovny tříd jako komponentu MEF.  
   
-    1.  Na **metadat** kartu, nastavte název souboru VSIX.  
+    1. Na **metadat** kartu, nastavte název souboru VSIX.  
   
-    2.  Na **cíle instalace** kartu, nastavte verze sady Visual Studio jako cíle.  
+    2. Na **cíle instalace** kartu, nastavte verze sady Visual Studio jako cíle.  
   
-    3.  Na **prostředky** kartě **nový**a v dialogovém okně nastavte:  
+    3. Na **prostředky** kartě **nový**a v dialogovém okně nastavte:  
   
          **Typ** = **Komponenta MEF**  
   
@@ -69,7 +69,7 @@ Můžete vytvořit rozšíření integrace sady Visual Studio, který reaguje, k
 ## <a name="defining-the-work-item-link-handler"></a>Definování obslužné rutiny odkazu pracovní položky  
  Všechny tyto úlohy proveďte v projektu knihovny tříd.  
   
-### <a name="project-references"></a>Odkazy na projekt  
+### <a name="project-references"></a>Odkazy na projekty  
  Přidejte následující [!INCLUDE[TLA2#tla_net](../includes/tla2sharptla-net-md.md)] sestavení do odkazů projektu:  
   
  `Microsoft.TeamFoundation.WorkItemTracking.Client.dll`  
@@ -156,37 +156,37 @@ namespace WorkItems
   
 #### <a name="to-test-the-link-handler"></a>Testování obslužné rutiny odkazu  
   
-1.  Stisknutím klávesy **F5**, nebo **ladění** nabídce zvolte **spustit ladění**.  
+1. Stisknutím klávesy **F5**, nebo **ladění** nabídce zvolte **spustit ladění**.  
   
      Experimentální instanci [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] spustí.  
   
      **Řešení potíží s**: Pokud se nová [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nespustí, ujistěte se, že projekt VSIX je nastaven jako projekt po spuštění řešení.  
   
-2.  V experimentální instanci [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]otevřete nebo vytvořte projekt modelování a otevřete nebo vytvořte diagram modelování.  
+2. V experimentální instanci [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]otevřete nebo vytvořte projekt modelování a otevřete nebo vytvořte diagram modelování.  
   
-3.  Vytvořte element modelu, jako je třída UML a nastavte jeho jméno.  
+3. Vytvořte element modelu, jako je třída UML a nastavte jeho jméno.  
   
-4.  Klikněte pravým tlačítkem na prvek a potom klikněte na tlačítko **vytvořit pracovní položku**.  
+4. Klikněte pravým tlačítkem na prvek a potom klikněte na tlačítko **vytvořit pracovní položku**.  
   
-    -   Pokud podnabídka zobrazí **otevřít připojení k Team Foundation serveru**, budete muset zavřít projekt se připojte k příslušné sady TFS a restartujte tento postup.  
+    - Pokud podnabídka zobrazí **otevřít připojení k Team Foundation serveru**, budete muset zavřít projekt se připojte k příslušné sady TFS a restartujte tento postup.  
   
-    -   Pokud dílčí nabídka zobrazí seznam typů pracovních položek, klikněte na jednu.  
+    - Pokud dílčí nabídka zobrazí seznam typů pracovních položek, klikněte na jednu.  
   
          Otevře se formulář nové pracovní položky.  
   
-5.  Ověřte, zda název pracovní položky je stejný jako prvek modelu, pokud jste použili ukázkový kód v předchozí části. Tento příklad ukazuje `OnWorkItemCreated()` pracoval.  
+5. Ověřte, zda název pracovní položky je stejný jako prvek modelu, pokud jste použili ukázkový kód v předchozí části. Tento příklad ukazuje `OnWorkItemCreated()` pracoval.  
   
-6.  Vyplňte formulář, uložte a zavřete pracovní položku.  
+6. Vyplňte formulář, uložte a zavřete pracovní položku.  
   
-7.  Ověřte, že je pracovní položka nyní zbarvena červeně. Tento příklad ukazuje `OnWorkItemLinked()` ve vzorovém kódu.  
+7. Ověřte, že je pracovní položka nyní zbarvena červeně. Tento příklad ukazuje `OnWorkItemLinked()` ve vzorovém kódu.  
   
      **Řešení potíží s**: Pokud metody obslužné rutiny nespustily, zkontrolujte, zda:  
   
-    -   Projekt knihovny tříd je uveden jako Komponenta MEF na **obsahu** seznamu v **source.extensions.manifest** v projektu VSIX.  
+    - Projekt knihovny tříd je uveden jako Komponenta MEF na **obsahu** seznamu v **source.extensions.manifest** v projektu VSIX.  
   
-    -   Správné `Export` je připojena ke třídě obslužné rutiny a třída implementuje `ILinkedWorkItemExtension`.  
+    - Správné `Export` je připojena ke třídě obslužné rutiny a třída implementuje `ILinkedWorkItemExtension`.  
   
-    -   Parametry všech vlastností `Import` a `Export` jsou platné.  
+    - Parametry všech vlastností `Import` a `Export` jsou platné.  
   
 ## <a name="about-the-work-item-handler-code"></a>O kódu obslužné rutiny pracovní položky  
   
@@ -237,9 +237,9 @@ public void OnWorkItemRemoved
   
  Pokud chcete použít v následujícím příkladu, přidejte tato sestavení .NET do odkazů vašeho projektu:  
   
--   Microsoft.TeamFoundation.Client.dll  
+- Microsoft.TeamFoundation.Client.dll  
   
--   Microsoft.TeamFoundation.WorkItemTracking.Client.dll  
+- Microsoft.TeamFoundation.WorkItemTracking.Client.dll  
   
 ```  
   

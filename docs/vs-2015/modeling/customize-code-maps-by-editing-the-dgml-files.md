@@ -22,12 +22,12 @@ caps.latest.revision: 93
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 98d754bfc5f68acf693f37f98347c8c60075beaa
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 980b7e0f54c058650a393c35467a73d926ec6638
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58324874"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088727"
 ---
 # <a name="customize-code-maps-by-editing-the-dgml-files"></a>Přizpůsobení map kódu úpravou souborů DGML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ Přizpůsobení map kódu, můžete upravit soubor Directed Graph Markup Languag
 > [!NOTE]
 >  K vytvoření kódových map, musíte mít Visual Studio Enterprise. Při úpravě mapy kódu v sadě Visual Studio se vyčistí všechny nepoužívané prvky a atributy DGML odstraněním při uložení souboru .dgml. Vytvoří také prvky kódu automaticky při ručním přidání nových propojení. Při ukládání souboru .dgml mohou být všechny atributy, které byly přidány do prvku, uspořádány podle abecedy.  
   
-##  <a name="OrganizeNodes"></a> Seskupit elementy kódu  
+## <a name="OrganizeNodes"></a> Seskupit elementy kódu  
  Můžete přidat nové skupiny nebo převést existující uzly do skupiny.  
   
 1. V textovém editoru nebo editoru XML otevřete soubor .dgml.  
@@ -80,12 +80,12 @@ Přizpůsobení map kódu, můžete upravit soubor Directed Graph Markup Languag
   
     Další informace o `Category` atributu naleznete v tématu [přiřadit kategorie pro prvky kódu a odkazy](#AssignCategories).  
   
-##  <a name="ChangeGraphStyle"></a> Změnit styl mapy  
+## <a name="ChangeGraphStyle"></a> Změnit styl mapy  
  Úpravou souboru .dgml na mapě můžete změnit barvu pozadí a barvy ohraničení mapy. Chcete-li změnit styl prvky kódu a odkazy, [změnit styl prvky kódu a odkazy](#Highlight).  
   
-1.  V textovém editoru nebo editoru XML otevřete soubor .dgml.  
+1. V textovém editoru nebo editoru XML otevřete soubor .dgml.  
   
-2.  V `<DirectedGraph>` prvku, přidejte některou z následujících atributů pro změnu stylu:  
+2. V `<DirectedGraph>` prvku, přidejte některou z následujících atributů pro změnu stylu:  
   
      Barvu pozadí  
   
@@ -108,25 +108,25 @@ Přizpůsobení map kódu, můžete upravit soubor Directed Graph Markup Languag
     </DirectedGraph>  
     ```  
   
-##  <a name="Highlight"></a> Změna stylu prvků kódu a odkazy  
+## <a name="Highlight"></a> Změna stylu prvků kódu a odkazy  
   
-###  <a name="CreateCustomStyles"></a>   
+### <a name="CreateCustomStyles"></a>   
  Použití vlastních stylů na následujících prvků kódu:  
   
--   Prvky jednoho kódu a odkazy  
+- Prvky jednoho kódu a odkazy  
   
--   Skupiny prvky kódu a odkazy  
+- Skupiny prvky kódu a odkazy  
   
--   Skupiny prvky kódu a odkazy na základě určitých podmínek  
+- Skupiny prvky kódu a odkazy na základě určitých podmínek  
   
 > [!TIP]
 >  Pokud máte opakující se styly napříč mnoha prvků kódu nebo odkazy, můžete zvážit tyto prvky kódu nebo propojení použit kategorii a pak na tuto kategorii použít styl. Další informace najdete v tématu [přiřadit kategorie pro prvky kódu a odkazy](#AssignCategories) a [přiřazení vlastností prvky kódu a odkazy](#AssignProperties).  
   
 ##### <a name="to-apply-a-custom-style-to-a-single-code-element"></a>Použití vlastního stylu na jediného prvku kódu  
   
-1.  V textovém editoru nebo editoru XML otevřete soubor .dgml.  
+1. V textovém editoru nebo editoru XML otevřete soubor .dgml.  
   
-2.  Najít element kódu `<Node/>` elementu. Přidejte některou z těchto atributů pro přizpůsobení stylu:  
+2. Najít element kódu `<Node/>` elementu. Přidejte některou z těchto atributů pro přizpůsobení stylu:  
   
      Barvu pozadí  
   
@@ -215,11 +215,11 @@ Přizpůsobení map kódu, můžete upravit soubor Directed Graph Markup Languag
   
 ##### <a name="to-apply-a-custom-style-to-a-single-link"></a>Aplikace vlastního stylu na jedno propojení  
   
-1.  V textovém editoru nebo editoru XML otevřete soubor .dgml.  
+1. V textovém editoru nebo editoru XML otevřete soubor .dgml.  
   
-2.  Najít `<Link/>` element, který obsahuje názvy prvek kódu zdrojový a cílový element kódu.  
+2. Najít `<Link/>` element, který obsahuje názvy prvek kódu zdrojový a cílový element kódu.  
   
-3.  V `<Link/>` prvku, přidejte některou z následujících atributů pro přizpůsobení stylu:  
+3. V `<Link/>` prvku, přidejte některou z následujících atributů pro přizpůsobení stylu:  
   
      Barva obrysu a šipky  
   
@@ -376,11 +376,11 @@ Přizpůsobení map kódu, můžete upravit soubor Directed Graph Markup Languag
   
  V tomto příkladu:  
   
-1.  Pokud `Coverage` hodnotu > 80, pak nastavte `Background` nastavena na zelenou.  
+1. Pokud `Coverage` hodnotu > 80, pak nastavte `Background` nastavena na zelenou.  
   
-2.  Else if `Coverage` > 50, pak nastavte `Background` na odstín oranžové nastavenou na hodnotu `Coverage` vlastnost.  
+2. Else if `Coverage` > 50, pak nastavte `Background` na odstín oranžové nastavenou na hodnotu `Coverage` vlastnost.  
   
-3.  Jinak nastavte `Background` na odstín červené nastavenou na hodnotu `Coverage` vlastnost.  
+3. Jinak nastavte `Background` na odstín červené nastavenou na hodnotu `Coverage` vlastnost.  
   
 ```xml  
 <?xml version="1.0" encoding="utf-8"?>  
@@ -438,14 +438,14 @@ Přizpůsobení map kódu, můžete upravit soubor Directed Graph Markup Languag
 </DirectedGraph>  
 ```  
   
-##  <a name="AssignProperties"></a> Přiřazení vlastností pro prvky kódu a odkazy  
+## <a name="AssignProperties"></a> Přiřazení vlastností pro prvky kódu a odkazy  
  Prvky kódu a odkazy můžete uspořádat přiřazením vlastností. Například můžete vybrat prvky kódu, které mají specifické vlastnosti, takže můžete seskupit, změnit jejich styl nebo je skrýt.  
   
 #### <a name="to-assign-a-property-to-a-code-element"></a>Přiřazení vlastnosti pro prvek kódu  
   
-1.  V textovém editoru nebo editoru XML otevřete soubor .dgml.  
+1. V textovém editoru nebo editoru XML otevřete soubor .dgml.  
   
-2.  Najít `<Node/>` – element pro daný element kódu. Zadejte název vlastnosti a její hodnotu. Příklad:  
+2. Najít `<Node/>` – element pro daný element kódu. Zadejte název vlastnosti a její hodnotu. Příklad:  
   
     ```xml  
     <Nodes>  
@@ -453,7 +453,7 @@ Přizpůsobení map kódu, můžete upravit soubor Directed Graph Markup Languag
     </Nodes>  
     ```  
   
-3.  Přidat `<Property/>` elementu `<Properties>` pro zadání atributů, jako je například viditelný název a datový typ:  
+3. Přidat `<Property/>` elementu `<Properties>` pro zadání atributů, jako je například viditelný název a datový typ:  
   
     ```xml  
     <Properties>  
@@ -463,11 +463,11 @@ Přizpůsobení map kódu, můžete upravit soubor Directed Graph Markup Languag
   
 #### <a name="to-assign-a-property-to-a-link"></a>Přiřazení vlastnosti propojení  
   
-1.  V textovém editoru nebo editoru XML otevřete soubor .dgml.  
+1. V textovém editoru nebo editoru XML otevřete soubor .dgml.  
   
-2.  Najít `<Link/>` element, který obsahuje názvy prvek kódu zdrojový a cílový element kódu.  
+2. Najít `<Link/>` element, který obsahuje názvy prvek kódu zdrojový a cílový element kódu.  
   
-3.  V `<Node/>` elementu, zadejte název vlastnosti a její hodnotu. Příklad:  
+3. V `<Node/>` elementu, zadejte název vlastnosti a její hodnotu. Příklad:  
   
     ```xml  
     <Links>  
@@ -475,7 +475,7 @@ Přizpůsobení map kódu, můžete upravit soubor Directed Graph Markup Languag
     </Links>  
     ```  
   
-4.  Přidat `<Property/>` elementu `<Properties>` pro zadání atributů, jako je například viditelný název a datový typ:  
+4. Přidat `<Property/>` elementu `<Properties>` pro zadání atributů, jako je například viditelný název a datový typ:  
   
     ```xml  
     <Properties>  
@@ -483,16 +483,16 @@ Přizpůsobení map kódu, můžete upravit soubor Directed Graph Markup Languag
     </Properties>  
     ```  
   
-##  <a name="AssignCategories"></a> Přiřadit kategorie pro prvky kódu a odkazy  
+## <a name="AssignCategories"></a> Přiřadit kategorie pro prvky kódu a odkazy  
  Následující části ukazují, jak můžete uspořádat prvky kódu pomocí přiřazení kategorií a jak můžete vytvořit hierarchické kategorie, které vám pomohou organizovat prvky kódu a přidání atributů do podřízených kategorií pomocí dědičnosti.  
   
 #### <a name="to-assign-a-category-to-a-code-element"></a>Chcete přiřadit kategorii k prvek kódu  
   
--   V textovém editoru nebo editoru XML otevřete soubor .dgml.  
+- V textovém editoru nebo editoru XML otevřete soubor .dgml.  
   
--   Najít `<Node/>` – element pro element kódu, který chcete.  
+- Najít `<Node/>` – element pro element kódu, který chcete.  
   
--   V `<Node/>` elementu, přidejte `Category` atribut k určení názvu kategorie. Příklad:  
+- V `<Node/>` elementu, přidejte `Category` atribut k určení názvu kategorie. Příklad:  
   
     ```xml  
     <Nodes>  
@@ -510,11 +510,11 @@ Přizpůsobení map kódu, můžete upravit soubor Directed Graph Markup Languag
   
 #### <a name="to-assign-a-category-to-a-link"></a>Přiřazení kategorie propojení  
   
-1.  V textovém editoru nebo editoru XML otevřete soubor .dgml.  
+1. V textovém editoru nebo editoru XML otevřete soubor .dgml.  
   
-2.  Najít `<Link/>` element, který obsahuje názvy prvek kódu zdrojový a cílový element kódu.  
+2. Najít `<Link/>` element, který obsahuje názvy prvek kódu zdrojový a cílový element kódu.  
   
-3.  V `<Link/>` elementu, přidejte `Category` atribut k určení názvu kategorie. Příklad:  
+3. V `<Link/>` elementu, přidejte `Category` atribut k určení názvu kategorie. Příklad:  
   
     ```xml  
     <Links>  
@@ -522,7 +522,7 @@ Přizpůsobení map kódu, můžete upravit soubor Directed Graph Markup Languag
     </Links>  
     ```  
   
-4.  Přidat `<Category/>` elementu `<Categories>` tak, aby vám `Label` atributu pro určení zobrazovaného textu dané kategorie:  
+4. Přidat `<Category/>` elementu `<Categories>` tak, aby vám `Label` atributu pro určení zobrazovaného textu dané kategorie:  
   
     ```xml  
     <Categories>  
@@ -532,9 +532,9 @@ Přizpůsobení map kódu, můžete upravit soubor Directed Graph Markup Languag
   
 #### <a name="to-create-hierarchical-categories"></a>Vytvoření hierarchických kategorií  
   
-1.  V textovém editoru nebo editoru XML otevřete soubor .dgml.  
+1. V textovém editoru nebo editoru XML otevřete soubor .dgml.  
   
-2.  Přidat `<Category/>` – element pro nadřazenou kategorii a přidejte `BasedOn` atribut podřízené kategorie `<Category/>` elementu.  
+2. Přidat `<Category/>` – element pro nadřazenou kategorii a přidejte `BasedOn` atribut podřízené kategorie `<Category/>` elementu.  
   
      Příklad:  
   
@@ -554,7 +554,7 @@ Přizpůsobení map kódu, můžete upravit soubor Directed Graph Markup Languag
   
      V tomto příkladu pozadí `MyFirstNode` zelený protože jeho `Category` dědí atribut `Background` atribut `MyParentCategory`.  
   
-##  <a name="AddReferences"></a> Propojit dokumenty nebo adresy URL pro prvky kódu a odkazy  
+## <a name="AddReferences"></a> Propojit dokumenty nebo adresy URL pro prvky kódu a odkazy  
  Můžete propojit dokumenty nebo adresy URL pro prvky kódu nebo k propojení úpravou souboru .dgml na mapě a přidání `Reference` atribut `<Node/>` – element pro element kódu nebo `<Link/>` – element pro odkaz. Pak můžete otevřít a zobrazit tento obsah z elementu kódu nebo odkaz. `Reference` Atribut určuje cestu k obsahu. To může být cesta relativní k umístění souboru .dgml nebo absolutní cesta.  
   
 > [!CAUTION]
@@ -562,13 +562,13 @@ Přizpůsobení map kódu, můžete upravit soubor Directed Graph Markup Languag
   
  Můžete například chtít propojit následujících prvků kódu:  
   
--   Chcete-li popsat změny třídy, měli byste připojit URL prvek kódu práce, dokumentu nebo jiného souboru .dgml na prvek kódu pro třídu.  
+- Chcete-li popsat změny třídy, měli byste připojit URL prvek kódu práce, dokumentu nebo jiného souboru .dgml na prvek kódu pro třídu.  
   
--   Měli byste připojit diagram vrstvy do skupinového elementu kódu, který reprezentuje vrstvu v logické architektuře softwaru.  
+- Měli byste připojit diagram vrstvy do skupinového elementu kódu, který reprezentuje vrstvu v logické architektuře softwaru.  
   
--   Chcete-li zobrazit další informace o komponentě, která zpřístupňuje rozhraní, může připojit diagram součásti na prvek kódu pro rozhraní.  
+- Chcete-li zobrazit další informace o komponentě, která zpřístupňuje rozhraní, může připojit diagram součásti na prvek kódu pro rozhraní.  
   
--   Prvek kódu propojte pracovní položky serveru Team Foundation Server nebo chyb nebo jiných informací, které se vztahuje na prvek kódu.  
+- Prvek kódu propojte pracovní položky serveru Team Foundation Server nebo chyb nebo jiných informací, které se vztahuje na prvek kódu.  
   
 #### <a name="to-link-a-document-or-url-to-a-code-element"></a>Odkaz na prvek kódu dokumentu nebo adresy URL  
   
@@ -602,13 +602,13 @@ Přizpůsobení map kódu, můžete upravit soubor Directed Graph Markup Languag
   
    2. V `<Properties>` části:  
   
-      1.  Přidat `<Property/>` – element pro každý nový typ odkazu.  
+      1. Přidat `<Property/>` – element pro každý nový typ odkazu.  
   
-      2.  Nastavte `Id` atribut pro název nového atributu odkazu.  
+      2. Nastavte `Id` atribut pro název nového atributu odkazu.  
   
-      3.  Přidat `IsReference` atribut a nastavte ho na `True` odkazovat na prvek kódu zobrazí **přejděte na odkaz** nabídku.  
+      3. Přidat `IsReference` atribut a nastavte ho na `True` odkazovat na prvek kódu zobrazí **přejděte na odkaz** nabídku.  
   
-      4.  Použití `Label` atributu pro určení zobrazovaného textu na prvek kódu **přejděte na odkaz** nabídku.  
+      4. Použití `Label` atributu pro určení zobrazovaného textu na prvek kódu **přejděte na odkaz** nabídku.  
   
       Příklad:  
   

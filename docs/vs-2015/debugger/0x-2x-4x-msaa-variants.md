@@ -9,12 +9,12 @@ caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1b298beadf6ffd3a59e5cdd44981a63bed1746cf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 4b188be0a8ff3c8bac6dc8fd2b5474756a1565f3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54788225"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60090018"
 ---
 # <a name="0x2x4x-msaa-variants"></a>0 x / 2 x / 4 x MSAA variant
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,13 +36,13 @@ Přepsání více ukázka vyhlazování (MSAA) nastavení ve všech cíle vykres
   
 - `D3D11_TEXTURE2D_DESC` Objekt předaný v `pDesc` popisuje cíl vykreslování; který je:  
   
-  -   Člen BindFlags má příznak D3D11_BIND_TARGET nebo nastavený příznak D3D11_BIND_DEPTH_STENCIL.  
+  - Člen BindFlags má příznak D3D11_BIND_TARGET nebo nastavený příznak D3D11_BIND_DEPTH_STENCIL.  
   
-  -   Využití člen je nastavený na D3D11_USAGE_DEFAULT.  
+  - Využití člen je nastavený na D3D11_USAGE_DEFAULT.  
   
-  -   Člen CPUAccessFlags je nastavený na hodnotu 0.  
+  - Člen CPUAccessFlags je nastavený na hodnotu 0.  
   
-  -   Člen MipLevels je nastavený na hodnotu 1.  
+  - Člen MipLevels je nastavený na hodnotu 1.  
   
 - Zařízení podporuje počet vzorků požadovaný (0, 2 nebo 4) a kvalita ukázky (0) pro požadovaný cílový formát (D3D11_TEXTURE2D_DESC::Format člen), vzhledem k vykreslení `ID3D11Device::CheckMultisampleQualityLevels`.  
   

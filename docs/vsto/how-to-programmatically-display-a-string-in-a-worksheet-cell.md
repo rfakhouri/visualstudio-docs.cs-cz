@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7d391022e9ce86b2866d941d8c0b56e2e35e3776
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a9760d019fa80d4ecae63633c38ac9df60932202
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56629440"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60101194"
 ---
 # <a name="how-to-programmatically-display-a-string-in-a-worksheet-cell"></a>Postupy: Zobrazování řetězec v buňkách listů prostřednictvím kódu programu
   Tento příklad ukazuje, jak zobrazit text v buňce prostřednictvím kódu programu. K zobrazení textu v buňkách, použijte buď <xref:Microsoft.Office.Tools.Excel.NamedRange> ovládací prvek nebo rozsah objekt nativní aplikace Excel.
@@ -30,7 +30,7 @@ ms.locfileid: "56629440"
 
 ### <a name="to-display-text-in-a-namedrange-control"></a>K zobrazení textu v ovládacím prvkem namedrange
 
-1.  Nastavte hodnotu <xref:Microsoft.Office.Tools.Excel.NamedRange> mít pod kontrolou **Hello World**.
+1. Nastavte hodnotu <xref:Microsoft.Office.Tools.Excel.NamedRange> mít pod kontrolou **Hello World**.
 
      [!code-csharp[Trin_VstcoreExcelAutomation#68](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#68)]
      [!code-vb[Trin_VstcoreExcelAutomation#68](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#68)]
@@ -40,7 +40,7 @@ ms.locfileid: "56629440"
 
 ### <a name="to-display-text-in-an-excel-range"></a>K zobrazení textu v oblasti aplikace Excel
 
-1.  Načtení rozsahu na buňku **A1** na `Sheet1` a nastavte hodnotu na **Hello World**.
+1. Načtení rozsahu na buňku **A1** na `Sheet1` a nastavte hodnotu na **Hello World**.
 
      [!code-csharp[Trin_VstcoreExcelAutomation#69](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#69)]
      [!code-vb[Trin_VstcoreExcelAutomation#69](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#69)]

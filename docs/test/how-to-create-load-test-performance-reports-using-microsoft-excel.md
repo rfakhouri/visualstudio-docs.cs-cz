@@ -9,12 +9,12 @@ ms.assetid: b87fb196-9973-4512-a924-088788def4ea
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fb820ccc72e0070f947e362def1da137d19d8494
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1c884fd11c4c633164ed3283ca8d2830729e9250
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955593"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104340"
 ---
 # <a name="how-to-create-load-test-performance-reports-using-microsoft-excel"></a>Postupy: Vytváření sestav výkonnosti pro zátěžový test pomocí aplikace Microsoft Excel
 
@@ -24,9 +24,9 @@ Můžete generovat sestavy zátěžového testu aplikace Microsoft Excel, které
 
 K dispozici jsou dva typy sestav zátěžových testů:
 
--   **Spustit porovnání** tím se vytvoří sadu sestav, které porovnávají data ze dvou výsledků zkoušek zatížení pomocí tabulek a sloupcových grafů.
+- **Spustit porovnání** tím se vytvoří sadu sestav, které porovnávají data ze dvou výsledků zkoušek zatížení pomocí tabulek a sloupcových grafů.
 
--   **Trend** lze generovat analýzu trendů na dvou nebo více výsledcích zátěžového testu. Výsledky se zobrazí spojnicových grafech, ale data jsou k dispozici v kontingenčních tabulkách.
+- **Trend** lze generovat analýzu trendů na dvou nebo více výsledcích zátěžového testu. Výsledky se zobrazí spojnicových grafech, ale data jsou k dispozici v kontingenčních tabulkách.
 
 > [!TIP]
 > Sestavy aplikace Microsoft Word můžete vytvořit také ručně zkopírováním a vložením dat ze souhrnného zobrazení, zobrazení grafů a zobrazení tabulek. Zobrazit [jak: Ruční vytvoření sestavy výkonu zátěžového testu pomocí aplikace Microsoft Word](../test/how-to-manually-create-a-load-test-performance-report-using-microsoft-word.md).

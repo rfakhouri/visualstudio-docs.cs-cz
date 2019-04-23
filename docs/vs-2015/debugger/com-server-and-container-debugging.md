@@ -22,12 +22,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7fe876b9205d7efede2f5c1085c082f7b0ec6fd2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 631b1d35a0878bfc362b03751f35909839c7da19
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54773828"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088051"
 ---
 # <a name="com-server-and-container-debugging"></a>Ladění serveru a kontejneru modelu COM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,21 +36,21 @@ Aplikace modelu COM provést několik úloh mimo přímou kontrolu programátora
   
  Ladicí program sady Visual Studio podporuje krokování přes a kontejnery a servery. To zahrnuje možnost Krokovat přes Vzdálená volání procedur (RPC).  
   
-##  <a name="BKMK_COMServerandContainerintheSameSolution"></a> Ladění modelu COM serveru a kontejneru ve stejném řešení  
+## <a name="BKMK_COMServerandContainerintheSameSolution"></a> Ladění modelu COM serveru a kontejneru ve stejném řešení  
  Můžete ladit serveru COM a kontejner pomocí dva projekty ve stejném řešení. Nastavte odpovídající zarážky v každém projektu a ladění. Když kontejneru zavolá do serveru, na kterém narazí na zarážku, kontejner počká, až do kódu serveru vrátí (až dokončíte její ladění).  
   
  Ladění kontejnerů COM je podobné ladění standardní program. Jedním rozdílem je, když ladíte událost, která generuje zpětné volání (například přetažení dat přes aplikace typu kontejner). V takovém případě musíte nastavit zarážku ve funkci zpětného volání.  
   
-##  <a name="BKMK_ServerApplicationWithoutContainerInformation"></a> Ladění aplikace serveru bez informací o kontejneru  
+## <a name="BKMK_ServerApplicationWithoutContainerInformation"></a> Ladění aplikace serveru bez informací o kontejneru  
  Pokud nemají nebo nechcete používat informace o ladění pro svou aplikaci typu kontejner, spouští se ladění aplikace je třech krocích:  
   
-1.  Spusťte ladění na server jako normální aplikace.  
+1. Spusťte ladění na server jako normální aplikace.  
   
-2.  Nastavte zarážky podle potřeby.  
+2. Nastavte zarážky podle potřeby.  
   
-3.  Spuštění aplikace typu kontejner.  
+3. Spuštění aplikace typu kontejner.  
   
-##  <a name="BKMK_DebuggingaServerandDomainIsolationSDIApplication"></a> Ladění serveru a domény izolace (SDI) aplikace  
+## <a name="BKMK_DebuggingaServerandDomainIsolationSDIApplication"></a> Ladění serveru a domény izolace (SDI) aplikace  
  Pokud ladíte aplikace serveru SDI, je nutné zadat `/Embedding` nebo `/Automation` v **argumenty příkazového řádku** vlastnost *projektu* dialogové okno stránky vlastností pro C/C++, C#, nebo Projekty Visual Basic.  
   
  S těmito argumenty příkazového řádku můžete ladicí program spuštění serverové aplikace, jako by byly spuštěny z kontejneru. Kontejner od programový manažer nebo správce souborového poté způsobí kontejneru pro použití instance serveru spuštěného v ladicím programu.  

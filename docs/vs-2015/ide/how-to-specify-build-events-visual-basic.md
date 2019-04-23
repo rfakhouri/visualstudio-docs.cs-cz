@@ -15,12 +15,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 97e69abaef4fb5066082ad2170fe25cad0a51b18
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e9e12894a6c526e70e9d2ea814c2634a271098d4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54779182"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104262"
 ---
 # <a name="how-to-specify-build-events-visual-basic"></a>Postupy: Určení událostí sestavení (Visual Basic)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,13 +36,13 @@ Událostí sestavení v jazyce Visual Basic můžete použít ke spouštění sk
   
 #### <a name="to-specify-a-build-event"></a>K určení událostí sestavení  
   
-1.  S projekt vybraný v **Průzkumníka řešení**na **projektu** nabídky, klikněte na tlačítko **vlastnosti**.  
+1. S projekt vybraný v **Průzkumníka řešení**na **projektu** nabídky, klikněte na tlačítko **vlastnosti**.  
   
-2.  Klikněte na tlačítko **kompilaci** kartu.  
+2. Klikněte na tlačítko **kompilaci** kartu.  
   
-3.  Klikněte na tlačítko **události sestavení** tlačítko Otevřít **události sestavení** dialogové okno.  
+3. Klikněte na tlačítko **události sestavení** tlačítko Otevřít **události sestavení** dialogové okno.  
   
-4.  Zadejte argumenty příkazového řádku pro vaši akci před sestavením nebo po sestavení a pak klikněte na tlačítko **OK**.  
+4. Zadejte argumenty příkazového řádku pro vaši akci před sestavením nebo po sestavení a pak klikněte na tlačítko **OK**.  
   
     > [!NOTE]
     >  Přidat `call` než vše post-build příkazy, které spouštějí soubory .bat. Například `call C:\MyFile.bat` nebo `call C:\MyFile.bat call C:\MyFile2.bat`.  
@@ -126,15 +126,15 @@ Událostí sestavení v jazyce Visual Basic můžete použít ke spouštění sk
   
 #### <a name="to-invoke-a-post-build-event-to-change-the-application-manifest"></a>Chcete-li vyvolat událost po sestavení, chcete-li změnit manifest aplikace  
   
-1.  Vytvoření aplikace Windows pro projekt, který má být publikován. V nabídce **Soubor** klikněte na položku **Nový** a potom klikněte na položku **Projekt**.  
+1. Vytvoření aplikace Windows pro projekt, který má být publikován. V nabídce **Soubor** klikněte na položku **Nový** a potom klikněte na položku **Projekt**.  
   
-2.  V **nový projekt** v dialogu **jazyka Visual Basic** uzlu, vyberte **Windows** a pak **aplikace Windows** šablony. Pojmenujte projekt `VBWinApp`.  
+2. V **nový projekt** v dialogu **jazyka Visual Basic** uzlu, vyberte **Windows** a pak **aplikace Windows** šablony. Pojmenujte projekt `VBWinApp`.  
   
-3.  S projekt vybraný v **Průzkumníka řešení**na **projektu** nabídky, klikněte na tlačítko **vlastnosti**.  
+3. S projekt vybraný v **Průzkumníka řešení**na **projektu** nabídky, klikněte na tlačítko **vlastnosti**.  
   
-4.  V Návrháři projektu, přejděte **publikovat** stránku a nastavit **umístění pro publikování** k `C:\TEMP\`.  
+4. V Návrháři projektu, přejděte **publikovat** stránku a nastavit **umístění pro publikování** k `C:\TEMP\`.  
   
-5.  Publikování projektu kliknutím **publikovat**.  
+5. Publikování projektu kliknutím **publikovat**.  
   
      Soubor manifestu bude sestaven a vložit `C:\TEMP\VBWinApp_1_0_0_0\VBWinApp.exe.manifest`. Manifest, klikněte pravým tlačítkem na soubor a pak kliknete na **otevřít v programu**, klikněte na **ze seznamu vyberte program**a potom klikněte na tlačítko **Poznámkový blok**.  
   
@@ -144,9 +144,9 @@ Událostí sestavení v jazyce Visual Basic můžete použít ke spouštění sk
     <os majorVersion="4" minorVersion="10" buildNumber="0" servicePackMajor="0" />  
     ```  
   
-6.  V Návrháři projektu, přejděte na **kompilaci** kartě a klikněte na tlačítko **události sestavení** tlačítko Otevřít **události sestavení** dialogové okno.  
+6. V Návrháři projektu, přejděte na **kompilaci** kartě a klikněte na tlačítko **události sestavení** tlačítko Otevřít **události sestavení** dialogové okno.  
   
-7.  V **příkazový řádek události po sestavení** zadejte následující příkaz:  
+7. V **příkazový řádek události po sestavení** zadejte následující příkaz:  
   
      `C:\TEMP\ChangeOSVersionVB.exe "$(TargetPath).manifest" 5.1.2600.0`  
   
@@ -154,7 +154,7 @@ Událostí sestavení v jazyce Visual Basic můžete použít ke spouštění sk
   
      `$(TargetPath)` – Makro vyjadřuje úplnou cestu ke spustitelnému souboru, který vytváří. Proto bude .manifest $(TargetPath) zadejte manifestem aplikace vytvořeným v adresáři bin. Publikování zkopíruje tento manifest na umístění pro publikování, který jste nastavili dříve.  
   
-8.  Znovu publikujte projekt. Přejděte **publikovat** stránky a klikněte na tlačítko **publikovat**.  
+8. Znovu publikujte projekt. Přejděte **publikovat** stránky a klikněte na tlačítko **publikovat**.  
   
      Zobrazte manifest znovu. Chcete-li zobrazit manifest, přejděte do adresáře publikovat, klikněte pravým tlačítkem na soubor a klikněte na tlačítko **otevřít v programu** a potom **ze seznamu vyberte program**a potom klikněte na **Poznámkový blok**.  
   

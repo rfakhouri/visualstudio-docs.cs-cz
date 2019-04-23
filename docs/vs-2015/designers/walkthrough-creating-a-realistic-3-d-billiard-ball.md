@@ -1,5 +1,5 @@
 ---
-title: 'Průvodce: Vytvoření realistické 3D kulečníkové koule | Dokumentace Microsoftu'
+title: 'Návod: Vytvoření realistické 3D kulečníkové koule | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-designers
@@ -9,36 +9,36 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e63b1d767fca3514f6f765c56362d0e395496fc4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 26dc068ca15de93cc2b0a3ac68b83d1d351bcad4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54793302"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110593"
 ---
-# <a name="walkthrough-creating-a-realistic-3-d-billiard-ball"></a>Průvodce: Vytvoření realistické 3D kulečníkové koule
+# <a name="walkthrough-creating-a-realistic-3-d-billiard-ball"></a>Návod: Vytvoření realistické 3D kulečníkové koule
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Tento návod ukazuje, jak vytvořit realistické 3D kulečníkové koule pomocí shaderu Designer a editoru obrázků v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Vzhled 3D kulečníkové koule je dosaženo kombinací několika technik shaderu se vhodnými prostředky textur.  
   
  Tento dokument vysvětluje tyto činnosti:  
   
--   Vytvoření základního vzhledu kulečníkové koule pomocí tvaru a textury.  
+- Vytvoření základního vzhledu kulečníkové koule pomocí tvaru a textury.  
   
--   Přidání hloubky pomocí Lambertova modelu osvětlení.  
+- Přidání hloubky pomocí Lambertova modelu osvětlení.  
   
--   Vylepšení základního vzhledu pomocí zrcadlového zvýrazní.  
+- Vylepšení základního vzhledu pomocí zrcadlového zvýrazní.  
   
--   Vytváření vnímání prostoru pomocí odrazu prostředí.  
+- Vytváření vnímání prostoru pomocí odrazu prostředí.  
   
 ## <a name="prerequisites"></a>Požadavky  
  Budete potřebovat následující komponenty a dovednosti k dokončení tohoto návodu:  
   
--   Nástroj pro sestavení textur do mapy krychle, jako je například nástroj DirectX Texture, který je součástí červen 2010 rozhraní DirectX SDK.  
+- Nástroj pro sestavení textur do mapy krychle, jako je například nástroj DirectX Texture, který je součástí červen 2010 rozhraní DirectX SDK.  
   
--   Důvěrně pomocí editoru obrázků v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+- Důvěrně pomocí editoru obrázků v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
--   Znalost návrháře shaderu v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+- Znalost návrháře shaderu v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
 ## <a name="creating-the-basic-appearance-with-shape-and-texture"></a>Vytvoření základního vzhledu pomocí tvaru a textury  
  V počítačové grafice jsou nejzákladnějšími prvky vzhledu tvar a barva. V počítačové simulaci je běžné použití 3D modelu, který zastupuje tvar objektu reálného světa. Barevné detaily jsou pak použity na povrch modelu pomocí mapy textury.  

@@ -10,12 +10,12 @@ ms.assetid: 891c1eb4-f6d0-4073-8df0-2859dbd417ca
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 108910c52033af3574a004cf314be2628fd54122
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3f045175eae165b75a887ada2716b19f34fc228b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54760594"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088948"
 ---
 # <a name="how-to-suppress-file-change-notifications"></a>Postupy: Potlačit oznámení o změně souborů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,19 +26,19 @@ Při změně fyzického souboru představující textovou vyrovnávací paměť,
   
 ### <a name="to-suppress-file-change-notification"></a>Potlačit oznámení o změně souboru  
   
-1.  Volání <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.FindAndLockDocument%2A> metodou ke zjištění, které textové vyrovnávací paměti objekt je přidružený otevřený soubor.  
+1. Volání <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.FindAndLockDocument%2A> metodou ke zjištění, které textové vyrovnávací paměti objekt je přidružený otevřený soubor.  
   
-2.  S přímým přístupem <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> objekt, který je v paměti pro ignorování sledování změn souborů prostřednictvím provedeného <xref:Microsoft.VisualStudio.Shell.Interop.IVsDocDataFileChangeControl> rozhraní z <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> objektu (data dokumentu) a potom provádění <xref:Microsoft.VisualStudio.Shell.Interop.IVsDocDataFileChangeControl.IgnoreFileChanges%2A> metodu s `fIgnore` parametr Nastavte na `true`.  
+2. S přímým přístupem <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> objekt, který je v paměti pro ignorování sledování změn souborů prostřednictvím provedeného <xref:Microsoft.VisualStudio.Shell.Interop.IVsDocDataFileChangeControl> rozhraní z <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> objektu (data dokumentu) a potom provádění <xref:Microsoft.VisualStudio.Shell.Interop.IVsDocDataFileChangeControl.IgnoreFileChanges%2A> metodu s `fIgnore` parametr Nastavte na `true`.  
   
-3.  Volání metody na <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines> a <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> rozhraní aktualizovat v paměťově <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> objekt se změny souborů (například při přidání pole do komponenty).  
+3. Volání metody na <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines> a <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> rozhraní aktualizovat v paměťově <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> objekt se změny souborů (například při přidání pole do komponenty).  
   
-4.  Aktualizujte soubor na disku se změnami bez zohlednění čekající úpravy, které uživatelé mohou být v průběhu.  
+4. Aktualizujte soubor na disku se změnami bez zohlednění čekající úpravy, které uživatelé mohou být v průběhu.  
   
      Tímto způsobem, když je <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> upozornění na změnu objektu, který chcete pokračovat v monitorování pro soubor, vyrovnávací paměť textu v paměti odráží změny, které jste vygenerovali, a také všechny čekající změny. Nejnovější kód vygenerovaný vám odráží souboru na disku a všechny dříve uložené změny uživatelem v kódu uživatele upravit.  
   
-5.  Volání <xref:Microsoft.VisualStudio.Shell.Interop.IVsDocDataFileChangeControl.IgnoreFileChanges%2A> metoda upozornit <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> objektu, který chcete pokračovat v monitorování pro oznámení o změně souborů nastavením `fIgnore` parametr `false`.  
+5. Volání <xref:Microsoft.VisualStudio.Shell.Interop.IVsDocDataFileChangeControl.IgnoreFileChanges%2A> metoda upozornit <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> objektu, který chcete pokračovat v monitorování pro oznámení o změně souborů nastavením `fIgnore` parametr `false`.  
   
-6.  Pokud máte v plánu provést několik změn do souboru, jako v případě správy zdrojového kódu (SCC), je zapotřebí sdělit globálního souboru služby změnit dočasně pozastavit oznámení o změně souboru.  
+6. Pokud máte v plánu provést několik změn do souboru, jako v případě správy zdrojového kódu (SCC), je zapotřebí sdělit globálního souboru služby změnit dočasně pozastavit oznámení o změně souboru.  
   
      Například pokud přepsat soubor a potom změňte časové razítko, musí pozastavit oznámení o změně souborů, jako přepsání a timestample operací, každý se počítají jako události změny do samostatného souboru. Povolit oznámení o změně globálního souboru místo toho byste měli volat <xref:Microsoft.VisualStudio.Shell.Interop.IVsFileChangeEx.IgnoreFile%2A> metody.  
   

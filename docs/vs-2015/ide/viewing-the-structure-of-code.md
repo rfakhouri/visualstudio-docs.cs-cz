@@ -28,12 +28,12 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c6a020ffcd3fa458bb0e1c5bdffd3716ed23f225
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 4d80f8b9a6786d84d645a91dead2ac05a829718b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54801209"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60115065"
 ---
 # <a name="viewing-the-structure-of-code"></a>Zobrazení struktury kódu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +57,7 @@ Můžete zkontrolovat objekty a členy v projektech Visual Studio a objekty a č
 > [!NOTE]
 >  Edice sady Visual Studio a nastavení, které používáte, může ovlivnit funkce v integrovaném vývojovém prostředí. Mohou se lišit od těch popsaných v tomto tématu.  
   
-##  <a name="BKMK_ClassView"></a> Zobrazení tříd (Visual Basic, C# a C++)  
+## <a name="BKMK_ClassView"></a> Zobrazení tříd (Visual Basic, C# a C++)  
  **Zobrazení tříd** se zobrazí jako součást **Průzkumníka řešení** i v samostatném okně. **Zobrazení tříd** okno zobrazuje prvky aplikace. V horním podokně se zobrazí obory názvů, typy, rozhraní, výčty a třídy a dolním podokně zobrazí členy, které patří typ vybraný v horním podokně. Pomocí tohoto okna můžete přesunout do definice členů ve zdrojovém kódu (nebo **prohlížeče objektů** Pokud element je definován vně vašeho řešení).  
   
  Není nutné k sestavení projektu, chcete-li zobrazit jeho prvky v **zobrazení tříd**. V okně se aktualizují při úpravě kódu ve vašem projektu.  
@@ -110,7 +110,7 @@ Můžete zkontrolovat objekty a členy v projektech Visual Studio a objekty a č
 |**Přejít na odkaz**|Pokud je k dispozici, zobrazí odkaz na typ nebo člen ve zdrojovém kódu.|  
 |**Zobrazit hierarchii volání**|Zobrazí vybrané metody v **hierarchie volání** okna.|  
   
-##  <a name="BKMK_CallHierarchy"></a> Volání hierarchie (Visual Basic, C# a C++)  
+## <a name="BKMK_CallHierarchy"></a> Volání hierarchie (Visual Basic, C# a C++)  
  **Hierarchie volání** okno zobrazuje konkrétního – metoda (nebo vlastnost nebo konstruktor) je volána kde jsou uvedeny metody, které jsou volány z této metody. Můžete zobrazit více úrovní grafu volání, která zobrazuje volající/volaný – vztahy mezi metodami v zadaném oboru.  
   
  Můžete zobrazit **hierarchie volání** okno výběrem – metoda (nebo vlastnosti nebo konstruktoru.) a pak zvolením **zobrazení hierarchie tříd** v místní nabídce. Zobrazení by měl vypadat podobně jako na následujícím obrázku.  
@@ -135,7 +135,7 @@ Hierarchie volání – okno
 |**kopírování**|Zkopíruje vybraný uzel (ale ne jeho dílčí uzly).|  
 |**Aktualizace**|Aktualizuje informace.|  
   
-##  <a name="BKMK_ObjectBrowser"></a> Prohlížeč objektů  
+## <a name="BKMK_ObjectBrowser"></a> Prohlížeč objektů  
  **Prohlížeče objektů** zobrazuje popisy kód ve vašich projektech.  
   
  Můžete filtrovat, co byste chtěli zobrazit **prohlížeče objektů**. Pomocí rozevíracího seznamu v horní části okna, můžete zvolit z následujících možností:  
@@ -194,7 +194,7 @@ Hierarchie volání – okno
 |**Přejít na odkaz**|Pokud je k dispozici, zobrazí odkaz na typ nebo člen ve zdrojovém kódu.|  
 |**Zobrazit hierarchii volání**|Zobrazí vybrané metody v **hierarchie volání** okna.|  
   
-##  <a name="BKMK_CodeDefinition"></a> Okno Definice kódu (C#, C++)  
+## <a name="BKMK_CodeDefinition"></a> Okno Definice kódu (C#, C++)  
  **Definice kódu** okně zobrazí definici vybraný typ nebo člen aktivního projektu. Tento typ nebo člen je vybrat v editoru kódu nebo v okně zobrazení kódu.  
   
  I když v tomto okně je jen pro čtení, můžete nastavit zarážky a záložky v ní. Chcete-li upravit definici zobrazený, zvolte **upravit definici** v místní nabídce. Tím se otevře zdrojový soubor v editoru kódu a přesune kurzor na řádek, kde začíná v definici.  

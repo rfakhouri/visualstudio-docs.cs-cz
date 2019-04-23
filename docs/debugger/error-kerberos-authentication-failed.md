@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb327ad703c744f94970162f493cb61dffb8fac3
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 76a62a821a9b110be2ffd8e25cbdf6721f12bc08
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56701066"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087559"
 ---
 # <a name="error-kerberos-authentication-failed"></a>Chyba: Ověřování protokolu Kerberos se nezdařilo.
 Při pokusu provést vzdálené ladění, může se zobrazit následující chybová zpráva:
@@ -44,19 +44,19 @@ Error: The Visual Studio Remote Debugger on the target computer cannot connect b
 
 ### <a name="to-verify-that-dns-on-the-target-computer-is-correctly-resolving-the-debugger-host-computer-name"></a>Chcete-li ověřit, že DNS v cílovém počítači správně překládá název hostitelského počítače ladicího programu
 
-1.  V cílovém počítači, otevřete **Start** nabídky, přejděte k **Příslušenství** a potom klikněte na tlačítko **příkazového řádku**.
+1. V cílovém počítači, otevřete **Start** nabídky, přejděte k **Příslušenství** a potom klikněte na tlačítko **příkazového řádku**.
 
-2.  V **příkazového řádku** okno, zadejte:
+2. V **příkazového řádku** okno, zadejte:
 
     ```cmd
     ping <debugger_host_computer_name>
     ```
 
-3.  První řádek `ping` odpověď ukazuje úplný název počítače a IP adresu vrácenou funkcí DNS pro zadaný počítač.
+3. První řádek `ping` odpověď ukazuje úplný název počítače a IP adresu vrácenou funkcí DNS pro zadaný počítač.
 
-4.  Otevřete na hostitelském počítači ladicího programu **příkazového řádku** okna a spusťte `ipconfig`.
+4. Otevřete na hostitelském počítači ladicího programu **příkazového řádku** okna a spusťte `ipconfig`.
 
-5.  Porovnejte hodnoty IP adres.
+5. Porovnejte hodnoty IP adres.
 
 ## <a name="see-also"></a>Viz také
 - [Chyby při vzdáleném ladění a jejich řešení](../debugger/remote-debugging-errors-and-troubleshooting.md)

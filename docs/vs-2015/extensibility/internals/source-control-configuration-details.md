@@ -10,23 +10,23 @@ ms.assetid: adbee9fc-7a2e-4abe-a3b8-e6615bcd797f
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 85c537d5e915324a2bd8cd858c5ff133370b62f7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 51fac40d0bffe570ac1f374872fb4572c1c83441
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54783903"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109462"
 ---
 # <a name="source-control-configuration-details"></a>Podrobnosti konfigurace správy zdrojového kódu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Kvůli implementaci správy zdrojového kódu, musíte správně nakonfigurovat systém projektu nebo editor provést následující kroky:  
   
--   Požádat o oprávnění k přechodu na změny stavu  
+- Požádat o oprávnění k přechodu na změny stavu  
   
--   Požádat o oprávnění k uložení souboru  
+- Požádat o oprávnění k uložení souboru  
   
--   Požádat o oprávnění, které chcete přidat, odebrat nebo přejmenovat soubory v projektu  
+- Požádat o oprávnění, které chcete přidat, odebrat nebo přejmenovat soubory v projektu  
   
 ## <a name="request-permission-to-transition-to-changed-state"></a>Požádat o oprávnění k přechodu na změny stavu  
  Projekt nebo editor musí požádat o oprávnění k přechodu na změny stavu (dirty) voláním <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>. Každý editor, který implementuje <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData.IsDocDataDirty%2A> musí volat <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> a schválení změna dokumentu z prostředí před vrácením `True` pro `M:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData.IsDocDataDirty(System.Int32@)`. Projekt je v podstatě editor pro soubor projektu a proto má stejnou odpovědnost za implementace změnil stav sledování pro soubor projektu jako textového editoru pro jeho soubory. Prostředí zpracovává změny stavu řešení, ale je třeba ošetřit změna stavu libovolného objektu, odkazuje na řešení, ale neukládá, jako je soubor projektu nebo jeho položek. Obecně platí Pokud projekt nebo editor zodpovídá za správu trvalosti pro položku, pak je zodpovědná za implementace změnil stav sledování.  

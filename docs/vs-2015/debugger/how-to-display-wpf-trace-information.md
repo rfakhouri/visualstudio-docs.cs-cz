@@ -17,12 +17,12 @@ caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7a25d2bf4c814bf946aa64cfb126e119f50913d5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c9642902bf334ce83f95a9113059683f183c6116
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54777858"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113778"
 ---
 # <a name="how-to-display-wpf-trace-information"></a>Postupy: Zobrazení informací trasování WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,23 +33,23 @@ ms.locfileid: "54777858"
   
 ### <a name="to-enable-or-customize-wpf-trace-information"></a>Pokud chcete povolit nebo upravte informace o trasování WPF  
   
-1.  Na **nástroje** nabídce vyberte možnost **možnosti**.  
+1. Na **nástroje** nabídce vyberte možnost **možnosti**.  
   
-2.  V **možnosti** otevřete dialogové okno, v poli na levé straně **ladění** uzlu.  
+2. V **možnosti** otevřete dialogové okno, v poli na levé straně **ladění** uzlu.  
   
-3.  V části **ladění**, klikněte na tlačítko **okno výstup**.  
+3. V části **ladění**, klikněte na tlačítko **okno výstup**.  
   
-4.  V části **obecné nastavení výstupní**vyberte **výstup všech ladění**.  
+4. V části **obecné nastavení výstupní**vyberte **výstup všech ladění**.  
   
-5.  Do pole na pravé straně, vyhledejte **nastavení trasování WPF**.  
+5. Do pole na pravé straně, vyhledejte **nastavení trasování WPF**.  
   
-6.  Otevřít **nastavení trasování WPF** uzlu.  
+6. Otevřít **nastavení trasování WPF** uzlu.  
   
-7.  V části **nastavení trasování WPF**, klikněte na tlačítko kategorie nastavení, které chcete povolit (třeba **datové vazby**).  
+7. V části **nastavení trasování WPF**, klikněte na tlačítko kategorie nastavení, které chcete povolit (třeba **datové vazby**).  
   
      Ovládací prvek rozevíracího seznamu se zobrazí ve sloupci nastavení vedle možnosti **datové vazby** nebo libovolné kategorie jste klikli.  
   
-8.  Klikněte na rozevírací seznam a vyberte typ trasování informací, které chcete zobrazit: **Všechny**, **kritické**, **chyba**, **upozornění**, **informace**, **podrobné**, nebo **ActivityTracing**.  
+8. Klikněte na rozevírací seznam a vyberte typ trasování informací, které chcete zobrazit: **Všechny**, **kritické**, **chyba**, **upozornění**, **informace**, **podrobné**, nebo **ActivityTracing**.  
   
      **Kritické** Zapíná trasování pouze kritické události.  
   
@@ -69,23 +69,23 @@ ms.locfileid: "54777858"
   
 ### <a name="to-disable-wpf-trace-information"></a>Chcete-li zakázat informace o trasování WPF  
   
-1.  Na **nástroje** nabídce vyberte možnost **možnosti**.  
+1. Na **nástroje** nabídce vyberte možnost **možnosti**.  
   
-2.  V **možnosti** otevřete dialogové okno, v poli na levé straně **ladění** uzlu.  
+2. V **možnosti** otevřete dialogové okno, v poli na levé straně **ladění** uzlu.  
   
-3.  V části **ladění**, klikněte na tlačítko **okno výstup**.  
+3. V části **ladění**, klikněte na tlačítko **okno výstup**.  
   
-4.  Do pole na pravé straně, vyhledejte **nastavení trasování WPF**.  
+4. Do pole na pravé straně, vyhledejte **nastavení trasování WPF**.  
   
-5.  Otevřít **nastavení trasování WPF** uzlu.  
+5. Otevřít **nastavení trasování WPF** uzlu.  
   
-6.  V části **nastavení trasování WPF**, klikněte na tlačítko kategorie nastavení, které chcete povolit (třeba **datové vazby**).  
+6. V části **nastavení trasování WPF**, klikněte na tlačítko kategorie nastavení, které chcete povolit (třeba **datové vazby**).  
   
      Ovládací prvek rozevíracího seznamu se zobrazí ve sloupci nastavení vedle možnosti **datové vazby** nebo libovolné kategorie jste klikli.  
   
-7.  Klikněte na rozevírací seznam a vyberte **vypnout**.  
+7. Klikněte na rozevírací seznam a vyberte **vypnout**.  
   
-8.  Klikněte na **OK**.  
+8. Klikněte na **OK**.  
   
 ## <a name="see-also"></a>Viz také  
  [Ladění WPF](../debugger/debugging-wpf.md)

@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a336463a3a7d8003c949242ad2f295a76633c894
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 221f755ff934946ca829aa2abe088aeec864cf87
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603791"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114225"
 ---
 # <a name="get-started-programming-document-level-customizations-for-excel"></a>Začínáme s programováním přizpůsobení na úrovni dokumentu pro Excel
   Pokud jste začali vytvářet přizpůsobení na úrovni dokumentu pro aplikaci Microsoft Office Excel s použitím sady Visual Studio, zde je, co potřebujete vědět.
@@ -44,11 +44,11 @@ ms.locfileid: "56603791"
 
  Další informace naleznete v následujících tématech:
 
--   [Programování přizpůsobení na úrovni dokumentu](../vsto/programming-document-level-customizations.md)
+- [Programování přizpůsobení na úrovni dokumentu](../vsto/programming-document-level-customizations.md)
 
--   [Automatizace aplikace Excel s použitím rozšířených objektů](../vsto/automating-excel-by-using-extended-objects.md)
+- [Automatizace aplikace Excel s použitím rozšířených objektů](../vsto/automating-excel-by-using-extended-objects.md)
 
--   [Přehled ovládacích prvků hostitele a hostitelské položky](../vsto/host-items-and-host-controls-overview.md)
+- [Přehled ovládacích prvků hostitele a hostitelské položky](../vsto/host-items-and-host-controls-overview.md)
 
 ## <a name="customize-the-user-interface-of-excel"></a>Přizpůsobení uživatelského rozhraní aplikace Excel
  Většina řešení Microsoft Office upravit uživatelské rozhraní (UI) aplikace Office kvůli nějakému uživatelům interakci s řešením. Existuje mnoho způsobů, jimiž lze upravit uživatelské rozhraní Excelu pomocí přizpůsobení úrovni dokumentu. Například můžete přidat ovládací prvky na pás karet, nebo můžete zobrazit podokna akcí. Další informace najdete v tématu [přizpůsobení uživatelského rozhraní Office](../vsto/office-ui-customization.md).

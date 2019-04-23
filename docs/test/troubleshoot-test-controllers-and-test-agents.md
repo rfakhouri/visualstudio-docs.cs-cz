@@ -11,12 +11,12 @@ ms.assetid: 77329348-3a5d-43de-b6cb-90f93296a081
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: be34e52df0442e071e666da5e66eb31f041d2941
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3ca2a69fc0f5777c34857f6f3da0c7faabcd81ce
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55922170"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088896"
 ---
 # <a name="strategies-for-troubleshooting-test-controllers-and-test-agents-in-load-tests"></a>Strategie pro řešení potíží s testovacími kontroléry a testovacími agenty v zátěžových testech
 
@@ -24,7 +24,7 @@ Tento článek popisuje některé běžné problémy, které můžete narazit p�
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
-##  <a name="unable-to-collect-performance-counters-on-test-agent-computer"></a>Nepovedlo se získat čítače výkonu v počítači testovacího agenta
+## <a name="unable-to-collect-performance-counters-on-test-agent-computer"></a>Nepovedlo se získat čítače výkonu v počítači testovacího agenta
 
 Při spuštění zátěžového testu, může dojít k chybám při pokusu o připojení k počítači testovacího agenta a shromáždění čítačů výkonu. Služba Vzdálený registr je služba zodpovědná za poskytování dat čítače výkonu ke vzdálenému počítači. U některých operačních systémů služba Remote Registry se nespustí automaticky. Chcete-li tento problém vyřešit, ručně spusťte službu Remote Registry.
 
@@ -39,11 +39,11 @@ Můžete řídit úroveň protokolování v počítači řadiče testu. To je u�
 
 ### <a name="to-set-the-logging-level-on-a-test-controller-computer"></a>Nastavení úrovně protokolování v počítači řadiče testu
 
-1.  Zastavte službu testovacího řadiče. Na příkazovém řádku zadejte `net stop vsttcontroller`.
+1. Zastavte službu testovacího řadiče. Na příkazovém řádku zadejte `net stop vsttcontroller`.
 
-2.  Otevřete soubor *QTController.exe.config*. Tento soubor je umístěn v instalačním adresáři kontroleru.
+2. Otevřete soubor *QTController.exe.config*. Tento soubor je umístěn v instalačním adresáři kontroleru.
 
-3.  Upravit položku `EqtTraceLevel` přepínat v části Diagnostika systému souboru. Váš kód by měl vypadat takto:
+3. Upravit položku `EqtTraceLevel` přepínat v části Diagnostika systému souboru. Váš kód by měl vypadat takto:
 
     ```xml
     <system.diagnostics>
@@ -64,23 +64,23 @@ Můžete řídit úroveň protokolování v počítači řadiče testu. To je u�
     </system.diagnostics>
     ```
 
-4.  Uložte soubor.
+4. Uložte soubor.
 
-5.  Spusťte službu řadiče. Na příkazovém řádku zadejte `net start vsttcontroller`.
+5. Spusťte službu řadiče. Na příkazovém řádku zadejte `net start vsttcontroller`.
 
 To platí pro testovací kontrolér, službu testovacího agenta a proces testovacího agenta. Při diagnostikování potíží je vhodné povolit protokolování všech tří procesů. Postup pro nastavení úrovně protokolování je stejný pro všechny tři procesy, jak je uvedeno výše pro řadič testu. K nastavení úrovní protokolování pro testovacího agenta, služby a proces agenta, použijte následující konfigurační soubory:
 
--   *QTController.exe.config* Služba ovladače
+- *QTController.exe.config* Služba ovladače
 
--   *QTAgentService.exe.config* Služba agenta
+- *QTAgentService.exe.config* Služba agenta
 
--   *QTDCAgent (32).exe.config* proces adaptéru dat agenta pro 32bitovou architekturu.
+- *QTDCAgent (32).exe.config* proces adaptéru dat agenta pro 32bitovou architekturu.
 
--   *QTDCAgent (64).exe.config* proces adaptéru dat agenta pro 64bitová architektura.
+- *QTDCAgent (64).exe.config* proces adaptéru dat agenta pro 64bitová architektura.
 
--   *QTAgent (32).exe.config* proces testování agenta pro 32bitovou architekturu.
+- *QTAgent (32).exe.config* proces testování agenta pro 32bitovou architekturu.
 
--   *QTAgent (64).exe.config* proces testování agenta pro 64bitová architektura.
+- *QTAgent (64).exe.config* proces testování agenta pro 64bitová architektura.
 
 ## <a name="bind-a-test-controller-to-a-network-adapter"></a>Vazba testovacího kontroléru na síťový adaptér
 
@@ -97,25 +97,25 @@ Chcete-li vyřešit tuto chybu, je třeba svázat testovací kontrolér na jeden
 
 ### <a name="to-obtain-the-ip-address-of-the-network-adapter"></a>Chcete-li získat IP adresu síťového adaptéru
 
-1.  Zvolte **Start**a klikněte na tlačítko **spustit**.
+1. Zvolte **Start**a klikněte na tlačítko **spustit**.
 
      **Spustit** se zobrazí dialogové okno.
 
-2.  Typ `cmd` a klikněte na tlačítko **OK**.
+2. Typ `cmd` a klikněte na tlačítko **OK**.
 
      Otevře se příkazový řádek.
 
-3.  Typ `ipconfig /all`.
+3. Typ `ipconfig /all`.
 
      Se zobrazují IP adresy pro síťové adaptéry. Zaznamenejte adresu IP síťového adaptéru, který chcete vytvořit vazbu řadiče.
 
 ### <a name="to-bind-a-test-controller-to-a-network-adapter"></a>Vazba testovacího kontroléru na síťový adaptér
 
-1.  Zastavte službu testovacího řadiče. Na příkazovém řádku zadejte `net stop vsttcontroller`.
+1. Zastavte službu testovacího řadiče. Na příkazovém řádku zadejte `net stop vsttcontroller`.
 
-2.  Otevřete soubor *QTController.exe.config*. Tento soubor je umístěn v *% ProgramFiles (x86) %\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*.
+2. Otevřete soubor *QTController.exe.config*. Tento soubor je umístěn v *% ProgramFiles (x86) %\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*.
 
-3.  Přidat položku pro `BindTo` vlastností do nastavení aplikace. Zadejte IP adresu, kterou chcete vytvořit vazbu řadiče do síťového adaptéru. Váš kód by měl vypadat takto:
+3. Přidat položku pro `BindTo` vlastností do nastavení aplikace. Zadejte IP adresu, kterou chcete vytvořit vazbu řadiče do síťového adaptéru. Váš kód by měl vypadat takto:
 
     ```xml
     <appSettings>
@@ -129,13 +129,13 @@ Chcete-li vyřešit tuto chybu, je třeba svázat testovací kontrolér na jeden
     </appSettings>
     ```
 
-4.  Uložte soubor.
+4. Uložte soubor.
 
-5.  Spusťte službu testovacího řadiče. Na příkazovém řádku zadejte `net start vsttcontroller`.
+5. Spusťte službu testovacího řadiče. Na příkazovém řádku zadejte `net start vsttcontroller`.
 
 ### <a name="to-connect-a-test-agent-to-a-bound-controller"></a>Pro připojení testovacího agenta ke kontroléru vazby
 
--   Spusťte instalaci testovacího agenta znovu. Tentokrát, zadejte IP adresu testovacího kontroléru, nikoli název řadiče testu.
+- Spusťte instalaci testovacího agenta znovu. Tentokrát, zadejte IP adresu testovacího kontroléru, nikoli název řadiče testu.
 
 To platí pro testovací kontrolér, službu testovacího agenta a proces testovacího agenta. `BindTo` Musí být nastavena vlastnost pro každý proces, který běží na počítači, který má více než jeden síťový adaptér. Postup pro nastavení `BindTo` vlastnost je stejný pro všechny tři procesy, jak je uvedeno výše pro řadič testu. K nastavení úrovní protokolování pro službu testovacího agenta a proces testovacího agenta použijte konfigurační soubory, které jsou uvedeny v [nastavení úrovně protokolování v počítači řadiče testu](#set-the-logging-level-on-a-test-controller-computer).
 

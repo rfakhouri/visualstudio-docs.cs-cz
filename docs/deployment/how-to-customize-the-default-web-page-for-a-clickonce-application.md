@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9831c1176b5e71650742226e77bfca58dfa35a01
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4a4fc4d69e8bf0a3ef13a8a06e652c8be217a1c6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56608441"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106324"
 ---
 # <a name="how-to-customize-the-default-web-page-for-a-clickonce-application"></a>Postupy: Úprava výchozí webové stránky pro aplikaci ClickOnce
 Při publikování aplikace ClickOnce k webu, je automaticky generována a spolu s aplikace publikována na webové stránce. Výchozí stránka obsahuje název aplikace a odkazy na instalaci aplikace, instalace požadovaných součástí nebo nápovědu na webu MSDN.
@@ -39,13 +39,13 @@ Při publikování aplikace ClickOnce k webu, je automaticky generována a spolu
 
 ### <a name="to-customize-the-publish-web-page"></a>Chcete-li přizpůsobit publikované webové stránky
 
-1.  Publikování aplikace ClickOnce k umístění webu. Další informace najdete v tématu [jak: Publikování aplikace ClickOnce pomocí Průvodce publikováním](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).
+1. Publikování aplikace ClickOnce k umístění webu. Další informace najdete v tématu [jak: Publikování aplikace ClickOnce pomocí Průvodce publikováním](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).
 
-2.  Na webovém serveru, otevřete *Publish.htm* souboru v Visual Web Designer nebo jiného editoru HTML.
+2. Na webovém serveru, otevřete *Publish.htm* souboru v Visual Web Designer nebo jiného editoru HTML.
 
-3.  Přizpůsobení stránky podle potřeby a uložte ho.
+3. Přizpůsobení stránky podle potřeby a uložte ho.
 
-4.  Volitelné. Chcete-li zabránit přepsání publikovat vlastní webovou stránku sady Visual Studio, zrušte zaškrtnutí políčka **automaticky generovat webovou stránku nasazení po každé publikovat** v **možnosti publikování** dialogové okno.
+4. Volitelné. Chcete-li zabránit přepsání publikovat vlastní webovou stránku sady Visual Studio, zrušte zaškrtnutí políčka **automaticky generovat webovou stránku nasazení po každé publikovat** v **možnosti publikování** dialogové okno.
 
 ## <a name="see-also"></a>Viz také:
 - [ClickOnce – zabezpečení a nasazení](../deployment/clickonce-security-and-deployment.md)

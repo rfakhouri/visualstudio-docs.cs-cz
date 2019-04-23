@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6df50eb1f8a4d722a0140fd37a6ff0c0d7474a39
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d0ec905670c72ff7c2c5f5d94c9f5189241daebb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955268"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100011"
 ---
 # <a name="extend-the-functionality-of-a-tableadapter"></a>Rozšíření funkcí objektů TableAdapter
 
@@ -38,13 +38,13 @@ V následujícím příkladu se předpokládá TableAdapter s názvem `Customers
 
 ### <a name="to-create-a-partial-class-for-a-tableadapter"></a>Chcete-li vytvořit částečné třídy objektu TableAdapter
 
-1.  Přidejte novou třídu do projektu tak, že přejdete **projektu** nabídky a vyberete **přidat třídu**.
+1. Přidejte novou třídu do projektu tak, že přejdete **projektu** nabídky a vyberete **přidat třídu**.
 
-2.  Název třídy `CustomersTableAdapterExtended`.
+2. Název třídy `CustomersTableAdapterExtended`.
 
-3.  Vyberte **Přidat**.
+3. Vyberte **Přidat**.
 
-4.  Nahraďte kód správný obor názvů a název dílčí třídy pro váš projekt následujícím způsobem:
+4. Nahraďte kód správný obor názvů a název dílčí třídy pro váš projekt následujícím způsobem:
 
      [!code-csharp[VbRaddataTableAdapters#2](../data-tools/codesnippet/CSharp/extend-the-functionality-of-a-tableadapter_1.cs)]
      [!code-vb[VbRaddataTableAdapters#2](../data-tools/codesnippet/VisualBasic/extend-the-functionality-of-a-tableadapter_1.vb)]

@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e0f63555cbda069c3db0a3a1d5819292fc3cda14
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 51dfdc95748690f43809244dc14ae2662d8aec39
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54799702"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60086595"
 ---
 # <a name="help-viewer-administrator-guide"></a>Příručka správce Help Vieweru
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,13 +60,13 @@ Aplikace Help Viewer umožňuje spravovat místní instalace nápovědy pro sí�
   
 ##### <a name="to-install-english-content-from-the-internet"></a>Instalace anglického obsahu z Internetu  
   
-1.  Zvolte **Start** a klikněte na tlačítko **spustit**.  
+1. Zvolte **Start** a klikněte na tlačítko **spustit**.  
   
-2.  Zadejte následující příkaz:  
+2. Zadejte následující příkaz:  
   
      C:\Program soubory (x86) \Microsoft Help Viewer\v2.2\hlpctntmgr.exe /operation instalace/catalogname VisualStudio14/Locale en-us  
   
-3.  Stiskněte klávesu ENTER.  
+3. Stiskněte klávesu ENTER.  
   
 ## <a name="deploying-pre-installed-local-help-content-on-client-computers"></a>Nasazení obsahu místní nápovědy předem nainstalovaných v klientských počítačích  
  Můžete nainstalovat sadu obsahu z online na jeden počítač a potom zkopírovat tuto nainstalovanou sadu obsahu do jiných počítačů.  
@@ -117,15 +117,15 @@ Aplikace Help Viewer umožňuje spravovat místní instalace nápovědy pro sí�
   
 ##### <a name="to-package-the-content"></a>Do balíčku obsahu  
   
-1.  Vytvořte složku pro zkopírování obsahu pro pozdější nasazení.  
+1. Vytvořte složku pro zkopírování obsahu pro pozdější nasazení.  
   
      Příklad: c:\VS12Help.  
   
-2.  Otevřete cmd.exe s oprávněními správce.  
+2. Otevřete cmd.exe s oprávněními správce.  
   
-3.  Přejděte do složky, kterou jste vytvořili v kroku 1.  
+3. Přejděte do složky, kterou jste vytvořili v kroku 1.  
   
-4.  Zadejte následující příkaz:  
+4. Zadejte následující příkaz:  
   
      Xcopy %SYSTEMDRIVE%\ProgramData\Microsoft\HelpLibrary2 \< *název_složky*> \ /y /e /k /o  
   
@@ -135,11 +135,11 @@ Aplikace Help Viewer umožňuje spravovat místní instalace nápovědy pro sí�
   
 ##### <a name="to-deploy-the-content"></a>Nasazení obsahu  
   
-1.  Vytvoření sdílené síťové složky a zkopírujte obsah nápovědy položku do tohoto umístění.  
+1. Vytvoření sdílené síťové složky a zkopírujte obsah nápovědy položku do tohoto umístění.  
   
      Například zkopírujte obsah v c:\VS12Help k \\\myserver\VS12Help.  
   
-2.  Vytvořte soubor BAT obsahující skript nasazení pro obsah nápovědy. Vzhledem k tomu, klient může mít případně zámek pro čtení na kterýkoliv ze souborů, které jsou mazány jako součást nasdílení změn, měli byste vypnout před řízením aktualizací klienta.  
+2. Vytvořte soubor BAT obsahující skript nasazení pro obsah nápovědy. Vzhledem k tomu, klient může mít případně zámek pro čtení na kterýkoliv ze souborů, které jsou mazány jako součást nasdílení změn, měli byste vypnout před řízením aktualizací klienta.  
   
      Příklad:  
   
@@ -199,7 +199,7 @@ Aplikace Help Viewer umožňuje spravovat místní instalace nápovědy pro sí�
     :CONTINUE  
     ```  
   
-3.  Spusťte soubor bat v místních počítačích, které má být nainstalován na obsah nápovědy.  
+3. Spusťte soubor bat v místních počítačích, které má být nainstalován na obsah nápovědy.  
   
 ## <a name="see-also"></a>Viz také  
  [Argumenty příkazového řádku pro Help Content Manager](../ide/command-line-arguments-for-the-help-content-manager.md)   

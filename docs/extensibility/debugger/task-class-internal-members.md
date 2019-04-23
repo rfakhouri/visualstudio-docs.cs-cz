@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6821275f7511b48ac6472b468480e6248463b253
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 6fb65b66bed790a306280a437a1722abea27848a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56704875"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113440"
 ---
 # <a name="task-class---internal-members"></a>Třída úlohy – vnitřní členy
 Tento článek popisuje interní členy <xref:System.Threading.Tasks.Task?displayProperty=fullName> třída, která vám pomůže implementovat vlastní ladicího programu. Obecné informace o této třídy, najdete v článku <xref:System.Threading.Tasks.Task> článku.
@@ -67,17 +67,17 @@ Tento článek popisuje interní členy <xref:System.Threading.Tasks.Task?displa
 ## <a name="remarks"></a>Poznámky
  Následující vnitřní metody jsou užitečné pro modul ladicího programu, protože jejich vstupu do označit <xref:System.Threading.Tasks.Task> spuštění kódu:
 
--   `Execute`
+- `Execute`
 
--   `ExecuteEntry`
+- `ExecuteEntry`
 
--   `ExecuteWithThreadLocal`
+- `ExecuteWithThreadLocal`
 
--   `Finish`
+- `Finish`
 
--   `InnerInvoke`
+- `InnerInvoke`
 
--   `InternalWait`
+- `InternalWait`
 
 ## <a name="see-also"></a>Viz také:
 - <xref:System.Threading.Tasks.Task?displayProperty=fullName>

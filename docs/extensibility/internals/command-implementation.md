@@ -10,21 +10,21 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d0e6b9776f94c802502bc393f2b8c262408d443e
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 61f35521271df7d3f34e5f10ebf40d502c0f8596
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335620"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089750"
 ---
 # <a name="command-implementation"></a>Implementace příkazu
 Implementace příkazu v sadě VSPackage, je třeba provést následující úkoly:
 
-1.  V *.vsct* souborů, nastavit skupiny příkazů a potom k němu přidejte příkaz. Další informace najdete v tématu [soubory tabulky (.vsct) příkazů sady Visual Studio](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).
+1. V *.vsct* souborů, nastavit skupiny příkazů a potom k němu přidejte příkaz. Další informace najdete v tématu [soubory tabulky (.vsct) příkazů sady Visual Studio](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).
 
-2.  Příkaz zaregistrujte pomocí sady Visual Studio.
+2. Příkaz zaregistrujte pomocí sady Visual Studio.
 
-3.  Implementace příkazu.
+3. Implementace příkazu.
 
 Následující části popisují, jak zaregistrovat a provádět příkazy.
 
@@ -61,29 +61,29 @@ if ( null != mcs )
 ## <a name="querystatus-methods"></a>QueryStatus metody
  Při implementaci buď <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> metoda nebo <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A> metody, zkontrolujte GUID sada, ke které patří příkaz příkazů a ID příkazu. Postupujte podle následujících pokynů:
 
--   Pokud identifikátor GUID není rozpoznána, musí vrátit implementaci některé z metod <xref:Microsoft.VisualStudio.OLE.Interop.Constants.OLECMDERR_E_UNKNOWNGROUP>.
+- Pokud identifikátor GUID není rozpoznána, musí vrátit implementaci některé z metod <xref:Microsoft.VisualStudio.OLE.Interop.Constants.OLECMDERR_E_UNKNOWNGROUP>.
 
--   Pokud vaše implementace některé z metod rozpozná identifikátor GUID, ale ještě implementována příkazu, pak metoda by měla vrátit <xref:Microsoft.VisualStudio.OLE.Interop.Constants.OLECMDERR_E_NOTSUPPORTED>.
+- Pokud vaše implementace některé z metod rozpozná identifikátor GUID, ale ještě implementována příkazu, pak metoda by měla vrátit <xref:Microsoft.VisualStudio.OLE.Interop.Constants.OLECMDERR_E_NOTSUPPORTED>.
 
--   Pokud vaše implementace některé z metod rozpozná GUID a příkaz, pak metoda by měla nastavit pole příznaků příkazů každý příkaz (v `prgCmds` parametr) pomocí následujících <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> příznaky:
+- Pokud vaše implementace některé z metod rozpozná GUID a příkaz, pak metoda by měla nastavit pole příznaků příkazů každý příkaz (v `prgCmds` parametr) pomocí následujících <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> příznaky:
 
-    -   `OLECMDF_SUPPORTED`: Příkaz je podporován.
+    - `OLECMDF_SUPPORTED`: Příkaz je podporován.
 
-    -   `OLECMDF_INVISIBLE`: Příkaz by neměly být viditelné.
+    - `OLECMDF_INVISIBLE`: Příkaz by neměly být viditelné.
 
-    -   `OLECMDF_LATCHED`: Příkaz je zapnutá a byly vráceny se zobrazí.
+    - `OLECMDF_LATCHED`: Příkaz je zapnutá a byly vráceny se zobrazí.
 
-    -   `OLECMDF_ENABLED`: Příkaz je povolen.
+    - `OLECMDF_ENABLED`: Příkaz je povolen.
 
-    -   `OLECMDF_DEFHIDEONCTXTMENU`: Příkaz skryt, pokud se zobrazí v místní nabídce.
+    - `OLECMDF_DEFHIDEONCTXTMENU`: Příkaz skryt, pokud se zobrazí v místní nabídce.
 
-    -   `OLECMDF_NINCHED`: Příkaz je kontroleru nabídky a není povolené, ale jeho seznamu rozevírací nabídky není prázdný a je stále k dispozici. (Tento příznak se používá jen zřídka.)
+    - `OLECMDF_NINCHED`: Příkaz je kontroleru nabídky a není povolené, ale jeho seznamu rozevírací nabídky není prázdný a je stále k dispozici. (Tento příznak se používá jen zřídka.)
 
--   Pokud byl příkaz definovaný v *.vsct* souboru `TextChanges` příznak, nastavte následující parametry:
+- Pokud byl příkaz definovaný v *.vsct* souboru `TextChanges` příznak, nastavte následující parametry:
 
-    -   Nastavte `rgwz` elementu `pCmdText` parametr nový text příkazu.
+    - Nastavte `rgwz` elementu `pCmdText` parametr nový text příkazu.
 
-    -   Nastavte `cwActual` elementu `pCmdText` parametr velikosti řetězec příkazu.
+    - Nastavte `cwActual` elementu `pCmdText` parametr velikosti řetězec příkazu.
 
 Ujistěte se také, že aktuálním kontextu není funkce automatizace, pokud váš příkaz je určený speciálně pro zpracování funkcí automatizace.
 

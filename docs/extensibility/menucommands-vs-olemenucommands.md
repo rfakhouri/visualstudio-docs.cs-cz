@@ -8,12 +8,12 @@ helpviewer_keywords:
 - menus, creating commands
 ms.assetid: 553d5e07-3e19-4aba-b490-6c7dd05fd82e
 manager: jillfra
-ms.openlocfilehash: 52ca70a0a3c4e129063c5d861fd4692dcd85cc9c
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 83d528efd499615c92db163aed4d0b8881e75fdf
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335494"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60086010"
 ---
 # <a name="menucommands-vs-olemenucommands"></a>MenuCommands Vs. OleMenuCommands
 Můžete vytvořit příkazy nabídky odvozením buď z <xref:System.ComponentModel.Design.MenuCommand> nebo z <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> objektu a implementace obslužné rutiny události. Ve většině případů můžete použít <xref:System.ComponentModel.Design.MenuCommand>, jak funkce balíčku VSPackage šablony projektu, ale někdy možná muset použít <xref:Microsoft.VisualStudio.Shell.OleMenuCommand>.
@@ -63,9 +63,9 @@ Můžete vytvořit příkazy nabídky odvozením buď z <xref:System.ComponentMo
    </Button>
    ```
 
-   1.  Nastavte `guid` a `id` pole tak, aby odpovídaly GUID:ID nový příkaz.
+   1. Nastavte `guid` a `id` pole tak, aby odpovídaly GUID:ID nový příkaz.
 
-   2.  Nastavte `priority` atribut.
+   2. Nastavte `priority` atribut.
 
         `priority` Atribut .vsct používá k určení umístění tlačítka mezi ostatní objekty v své nadřazené skupiny.
 
@@ -73,7 +73,7 @@ Můžete vytvořit příkazy nabídky odvozením buď z <xref:System.ComponentMo
 
         Vynechání `priority` atribut nastaví její hodnotu na 0.
 
-   3.  Nastavte `type` atribut. Ve většině případů je jeho hodnota bude `"Button"`. Popisy jiných typech tlačítek platný, naleznete v tématu [Button element](../extensibility/button-element.md).
+   3. Nastavte `type` atribut. Ve většině případů je jeho hodnota bude `"Button"`. Popisy jiných typech tlačítek platný, naleznete v tématu [Button element](../extensibility/button-element.md).
 
 5. V definici tlačítko vytvořit [řetězce](../extensibility/strings-element.md) element, který obsahuje [ButtonText](../extensibility/buttontext-element.md) element tak, aby obsahovala název nabídky, jak se zobrazí v rozhraní IDE a [CommandName](../extensibility/commandname-element.md) Element tak, aby obsahovala název příkazu, který se používá pro přístup z nabídky **příkaz** okna.
 
@@ -127,11 +127,11 @@ Můžete vytvořit příkazy nabídky odvozením buď z <xref:System.ComponentMo
 
  Pro kód, který se používá <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> rozhraní přímo pro zpracování příkazů, je nutné implementovat <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> rozhraní a její metody. Dvě nejdůležitější metody jsou <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> a <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A>.
 
-1.  Získejte <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService> instance, jak je znázorněno v následujícím příkladu.
+1. Získejte <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService> instance, jak je znázorněno v následujícím příkladu.
 
      [!code-csharp[ButtonGroup#21](../extensibility/codesnippet/CSharp/menucommands-vs-olemenucommands_5.cs)]
 
-2.  Vytvoření <xref:System.ComponentModel.Design.CommandID> objekt, který má jako svoje parametry identifikátoru GUID a ID příkazu pro zpracování, jak je znázorněno v následujícím příkladu.
+2. Vytvoření <xref:System.ComponentModel.Design.CommandID> objekt, který má jako svoje parametry identifikátoru GUID a ID příkazu pro zpracování, jak je znázorněno v následujícím příkladu.
 
      [!code-csharp[ButtonGroup#22](../extensibility/codesnippet/CSharp/menucommands-vs-olemenucommands_6.cs)]
 
@@ -139,7 +139,7 @@ Můžete vytvořit příkazy nabídky odvozením buď z <xref:System.ComponentMo
 
      Alternativně můžete naplnit <xref:System.ComponentModel.Design.CommandID> s použitím nezpracované řetězcové hodnoty GUID a celočíselnou hodnotu ID.
 
-3.  Vytvořit instanci buď <xref:System.ComponentModel.Design.MenuCommand> nebo <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> objekt, který určuje metodu, která zpracovává příkaz spolu s <xref:System.ComponentModel.Design.CommandID>, jak je znázorněno v následujícím příkladu.
+3. Vytvořit instanci buď <xref:System.ComponentModel.Design.MenuCommand> nebo <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> objekt, který určuje metodu, která zpracovává příkaz spolu s <xref:System.ComponentModel.Design.CommandID>, jak je znázorněno v následujícím příkladu.
 
      [!code-csharp[ButtonGroup#23](../extensibility/codesnippet/CSharp/menucommands-vs-olemenucommands_7.cs)]
 
@@ -147,7 +147,7 @@ Můžete vytvořit příkazy nabídky odvozením buď z <xref:System.ComponentMo
 
      Ve výchozím nastavení jsou předány příkazy vytvořené z balíčku šablony <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> objekt `Initialize()` metoda třídy balíčku.
 
-4.  <xref:System.ComponentModel.Design.MenuCommand> Je vhodný pro statické příkazy. Dynamické nabídky zobrazí položky vyžadují QueryStatus obslužných rutin událostí. <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> Přidá <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.BeforeQueryStatus> událost, která nastane, pokud se nabídka hostitelů příkazu je otevřený a některé další vlastnosti, jako například <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.Text%2A>.
+4. <xref:System.ComponentModel.Design.MenuCommand> Je vhodný pro statické příkazy. Dynamické nabídky zobrazí položky vyžadují QueryStatus obslužných rutin událostí. <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> Přidá <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.BeforeQueryStatus> událost, která nastane, pokud se nabídka hostitelů příkazu je otevřený a některé další vlastnosti, jako například <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.Text%2A>.
 
      Ve výchozím nastavení jsou předány příkazy vytvořené z balíčku šablony <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> objekt `Initialize()` metoda třídy balíčku. Průvodce Visual Studio implementuje `Initialize` metoda pomocí `MenuCommand`. Dynamické nabídky zobrazí položky, je třeba změnit tuto hodnotu na `OleMenuCommand`, jak je znázorněno v následujícím kroku. Navíc pokud chcete změnit text položky nabídky, musíte přidat příkaz příznak TextChanges na příkazové tlačítko nabídky v souboru .vsct jak je znázorněno v následujícím příkladu
 
@@ -164,11 +164,11 @@ Můžete vytvořit příkazy nabídky odvozením buď z <xref:System.ComponentMo
     </Button>
     ```
 
-5.  Předejte nový příkaz nabídky <xref:System.ComponentModel.Design.IMenuCommandService.AddCommand%2A> metodu <xref:System.ComponentModel.Design.IMenuCommandService> rozhraní. To lze provést ve výchozím nastavení pro příkazy vytvořených šablonou balíček, jak je znázorněno v následujícím příkladu
+5. Předejte nový příkaz nabídky <xref:System.ComponentModel.Design.IMenuCommandService.AddCommand%2A> metodu <xref:System.ComponentModel.Design.IMenuCommandService> rozhraní. To lze provést ve výchozím nastavení pro příkazy vytvořených šablonou balíček, jak je znázorněno v následujícím příkladu
 
      [!code-csharp[ButtonGroup#24](../extensibility/codesnippet/CSharp/menucommands-vs-olemenucommands_9.cs)]
 
-6.  Implementujte metodu, která zpracovává příkaz.
+6. Implementujte metodu, která zpracovává příkaz.
 
 ### <a name="to-implement-querystatus"></a>K implementaci QueryStatus
 
@@ -247,11 +247,11 @@ Můžete vytvořit příkazy nabídky odvozením buď z <xref:System.ComponentMo
 
 #### <a name="to-implement-the-exec-method"></a>K implementaci Exec – metoda
 
--   Pokud příkaz `GUID` neznámý, vrátí `OLECMDERR_E_UNKNOWNGROUP`.
+- Pokud příkaz `GUID` neznámý, vrátí `OLECMDERR_E_UNKNOWNGROUP`.
 
--   Pokud `GUID` je známé, ale příkaz ID neznámý, vraťte `OLECMDERR_E_NOTSUPPORTED`.
+- Pokud `GUID` je známé, ale příkaz ID neznámý, vraťte `OLECMDERR_E_NOTSUPPORTED`.
 
--   Pokud `GUID` a GUID:ID pár, který se používá v příkazu v odpovídat ID příkazu *.vsct* soubor, spustit kód, který je přidružený k příkazu a vrátit <xref:Microsoft.VisualStudio.VSConstants.S_OK>.
+- Pokud `GUID` a GUID:ID pár, který se používá v příkazu v odpovídat ID příkazu *.vsct* soubor, spustit kód, který je přidružený k příkazu a vrátit <xref:Microsoft.VisualStudio.VSConstants.S_OK>.
 
 ## <a name="see-also"></a>Viz také:
 

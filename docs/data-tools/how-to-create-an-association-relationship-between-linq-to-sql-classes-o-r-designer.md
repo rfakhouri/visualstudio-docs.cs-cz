@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 21043571f60c13ed7be38f0af8f4208fc54b75a0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9d7bf1be05ebabcaac319cce591cf82cd2ab5f5d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55907786"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112283"
 ---
 # <a name="how-to-create-an-association-between-linq-to-sql-classes-or-designer"></a>Postupy: Vytvoření přidružení mezi třídy LINQ to SQL (O/R Designer)
 Přidružení mezi třídami entit v [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] jsou podobná relace mezi tabulkami v databázi. Můžete vytvořit přidružení mezi třídami entit pomocí **Editor asociace** dialogové okno.
@@ -36,15 +36,15 @@ Po vytvoření asociace, když vyberete přidružení v **O/R Designer**, existu
 
 ## <a name="to-create-an-association-between-entity-classes"></a>Vytvoření přidružení mezi třídami entit
 
-1.  Klikněte pravým tlačítkem na třídu entity, která představuje nadřazené třídu v přidružení, přejděte na **přidat**a potom klikněte na tlačítko **přidružení**.
+1. Klikněte pravým tlačítkem na třídu entity, která představuje nadřazené třídu v přidružení, přejděte na **přidat**a potom klikněte na tlačítko **přidružení**.
 
-2.  Ověřte, že správné **nadřazené třídu** výběru v **Editor asociace** dialogové okno.
+2. Ověřte, že správné **nadřazené třídu** výběru v **Editor asociace** dialogové okno.
 
-3.  Vyberte **podřízené třídy** v poli se seznamem.
+3. Vyberte **podřízené třídy** v poli se seznamem.
 
-4.  Vyberte **vlastnosti přidružení** , které se týkají třídy. Obvykle to se mapuje na vztah cizího klíče definovanými v databázi. Například v `Customers` a `Orders` přidružení, **vlastnosti přidružení** jsou `CustomerID` pro každou třídu.
+4. Vyberte **vlastnosti přidružení** , které se týkají třídy. Obvykle to se mapuje na vztah cizího klíče definovanými v databázi. Například v `Customers` a `Orders` přidružení, **vlastnosti přidružení** jsou `CustomerID` pro každou třídu.
 
-5.  Klikněte na tlačítko **OK** vytváření přidružení.
+5. Klikněte na tlačítko **OK** vytváření přidružení.
 
 ## <a name="see-also"></a>Viz také:
 

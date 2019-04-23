@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 35e68a9a359d139fae631d06d5fa847ae6e60b8c
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 7237cd9991dcd2140ed13bb082a5efc43d85dc47
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59657308"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105146"
 ---
 # <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>Postupy: Úprava souborů web.config za účelem instrumentace a profilování dynamicky kompilovaných webových aplikací ASP.NET
 Můžete použít [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] nástrojů pro profilaci sady metody instrumentace ke shromažďování podrobných dat časování, data o přidělování paměti .NET a životnosti objektů .NET z dynamicky zkompilován [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] webové aplikace.
@@ -96,15 +96,15 @@ Můžete použít [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] nás
 
 ### <a name="to-add-the-profiler-post-process-step-to-the-configurationsystemwebcompilation-element"></a>Můžete přidat krok následného zpracování profiler configuration/system.web/compilation element
 
-1.  V případě potřeby přidat **system.web** prvek jako podřízený prvek **konfigurace** prvek; v opačném případě přejděte k dalšímu kroku.
+1. V případě potřeby přidat **system.web** prvek jako podřízený prvek **konfigurace** prvek; v opačném případě přejděte k dalšímu kroku.
 
      **System.web** prvek nemá žádné atributy. **Konfigurace** prvek může mít pouze jeden **system.web** podřízený element.
 
-2.  V případě potřeby přidat **kompilace** prvek jako podřízený prvek **system.web** prvek; v opačném případě přejděte k dalšímu kroku.
+2. V případě potřeby přidat **kompilace** prvek jako podřízený prvek **system.web** prvek; v opačném případě přejděte k dalšímu kroku.
 
      **System.web** prvek může mít pouze jeden **kompilace** podřízený element.
 
-3.  Odeberte všechny existující atributy z **kompilace** prvek a přidejte následující atribut název a hodnotu:
+3. Odeberte všechny existující atributy z **kompilace** prvek a přidejte následující atribut název a hodnotu:
 
     |Název atributu|Hodnota atributu|
     |--------------------|---------------------|

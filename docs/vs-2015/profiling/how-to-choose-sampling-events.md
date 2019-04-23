@@ -19,47 +19,47 @@ caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 78d5e8bbc024009ad6515bdf08c5219253b42d12
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 50b9fcb98b64e36d37ec2153588dcbb388ea960b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54784509"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105497"
 ---
 # <a name="how-to-choose-sampling-events"></a>Postupy: Výběr událostí vzorkování
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Ve výchozím nastavení [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nástrojů pro profilaci sady shromažďuje údaje o výkonu v intervalu, který je zadán jako počet cyklů procesoru, které jsou používány profilovaný proces. Výchozí počet cyklů v intervalu je 10 000 000, což je na 1 počítači gv přibližně na 0,01 sekund. Počet cyklů v intervalu můžete změnit, a můžete změnit událost vzorku. Následující ukázkové události jsou k dispozici:  
   
--   Hodinových cyklů - problémů vázané na procesor.  
+- Hodinových cyklů - problémů vázané na procesor.  
   
--   Chyby stránek – pro problémy související s pamětí.  
+- Chyby stránek – pro problémy související s pamětí.  
   
--   Systémová volání - I O souvisejícím s/problémů.  
+- Systémová volání - I O souvisejícím s/problémů.  
   
--   Čítač výkonu – čítače CPU pro problémy výkonu na nízké úrovni.  
+- Čítač výkonu – čítače CPU pro problémy výkonu na nízké úrovni.  
   
 > [!IMPORTANT]
 >  Pokud pomocí metody vzorkování se shromažďování dat paměti .NET (přidělení správu životnosti objektů nebo obojí), jsou ignorovány všechny zadané uživatelem vzorkování událostí a přidělení paměti odpovídající události kolekce paměti nebo obojí, se používá ke shromažďování dat.  
   
 ### <a name="to-select-a-sample-event"></a>Vybrat událost vzorku  
   
-1.  V **prohlížeč výkonu**, klikněte pravým tlačítkem na relaci výkonu a pak klikněte na tlačítko **vlastnosti**.  
+1. V **prohlížeč výkonu**, klikněte pravým tlačítkem na relaci výkonu a pak klikněte na tlačítko **vlastnosti**.  
   
-2.  V **stránky vlastností**, klikněte na tlačítko **vzorkování** vlastnosti.  
+2. V **stránky vlastností**, klikněte na tlačítko **vzorkování** vlastnosti.  
   
-3.  Z **událost vzorku** rozevíracího seznamu vyberte událost vzorku, kterou chcete použít pro profilování aplikace.  
+3. Z **událost vzorku** rozevíracího seznamu vyberte událost vzorku, kterou chcete použít pro profilování aplikace.  
   
     > [!NOTE]
     >  **Dostupných čítačů výkonu** jsou povolené jenom v případě, že vyberete **čítač výkonu** z **událost vzorku** rozevíracího seznamu.  
   
-4.  Pokud vyberete **čítač výkonu**, vyberte konkrétní čítač procesoru z **dostupných čítačů výkonu** ovládací prvek zobrazení stromové struktury.  
+4. Pokud vyberete **čítač výkonu**, vyberte konkrétní čítač procesoru z **dostupných čítačů výkonu** ovládací prvek zobrazení stromové struktury.  
   
-    -   Hodnoty čítačů **události přenositelnosti** uzlu jsou k dispozici na všech typech procesory.  
+    - Hodnoty čítačů **události přenositelnosti** uzlu jsou k dispozici na všech typech procesory.  
   
-    -   Hodnoty čítačů **události platformy** uzlu jsou specifické pro procesor na aktuálním počítači a nemusí být k dispozici na jiných typů procesory.  
+    - Hodnoty čítačů **události platformy** uzlu jsou specifické pro procesor na aktuálním počítači a nemusí být k dispozici na jiných typů procesory.  
   
-5.  Když vyberete událost vzorku, výchozí hodnota intervalu vzorkování se zobrazí v **interval vzorkování** textového pole. V případě potřeby můžete zadat hodnotu, která má v textovém poli.  
+5. Když vyberete událost vzorku, výchozí hodnota intervalu vzorkování se zobrazí v **interval vzorkování** textového pole. V případě potřeby můžete zadat hodnotu, která má v textovém poli.  
   
 ## <a name="see-also"></a>Viz také  
  [Konfigurace výkonnostních relací](../profiling/configuring-performance-sessions.md)   

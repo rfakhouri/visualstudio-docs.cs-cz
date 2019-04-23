@@ -18,12 +18,12 @@ caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7864728237e1fc84958d3edea6806508f1339902
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8340867406e99fd6c6f84d1dc84d89a395a338fb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54761283"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106862"
 ---
 # <a name="how-to-debug-a-partial-trust-application"></a>Postupy: Ladění aplikace s částečnou důvěryhodností
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,41 +45,41 @@ Platí pro Windows a konzolových aplikací.
   
 ### <a name="to-choose-a-zone-for-your-partial-trust-application"></a>Chcete-li zvolit zóny pro vaši aplikaci částečným vztahem důvěryhodnosti  
   
-1.  Z **projektu** nabídce zvolte _Projectname_**vlastnosti**.  
+1. Z **projektu** nabídce zvolte _Projectname_**vlastnosti**.  
   
-2.  V *Projectname* stránky vlastností, klikněte **zabezpečení** stránky.  
+2. V *Projectname* stránky vlastností, klikněte **zabezpečení** stránky.  
   
-3.  Vyberte **povolení nastavení zabezpečení ClickOnce**.  
+3. Vyberte **povolení nastavení zabezpečení ClickOnce**.  
   
-4.  V části **vaše aplikace bude provedena instalace ze zóny**, klikněte na rozevírací seznam a zvolte zónu, kterou chcete simulovat instaluje z aplikace.  
+4. V části **vaše aplikace bude provedena instalace ze zóny**, klikněte na rozevírací seznam a zvolte zónu, kterou chcete simulovat instaluje z aplikace.  
   
      **Oprávnění vyžadované aplikací** mřížky se zobrazí všechna dostupná oprávnění. Zaškrtávací políčko určuje oprávnění udělená aplikaci.  
   
-5.  Pokud se zónu **(vlastní)**, vyberte správné vlastní nastavení v **nastavení** sloupec **oprávnění** mřížky.  
+5. Pokud se zónu **(vlastní)**, vyberte správné vlastní nastavení v **nastavení** sloupec **oprávnění** mřížky.  
   
-6.  Klikněte na tlačítko **OK** stránku vlastností zavřete.  
+6. Klikněte na tlačítko **OK** stránku vlastností zavřete.  
   
 ### <a name="to-add-an-extra-permission-when-a-security-exception-occurs"></a>Chcete-li přidat další oprávnění, když dojde k výjimce zabezpečení  
   
-1.  **Pomocníka pro výjimky** dialogové okno se zprávou: **SecurityException – neošetřená.**  
+1. **Pomocníka pro výjimky** dialogové okno se zprávou: **SecurityException – neošetřená.**  
   
-2.  V **pomocníka pro výjimky** dialogovém okně **akce**, klikněte na tlačítko **oprávnění přidat do projektu**.  
+2. V **pomocníka pro výjimky** dialogovém okně **akce**, klikněte na tlačítko **oprávnění přidat do projektu**.  
   
-3.  **Restartujte ladění** zobrazí se dialogové okno.  
+3. **Restartujte ladění** zobrazí se dialogové okno.  
   
-    -   Pokud chcete restartovat ladicí relaci se nová oprávnění, klikněte na tlačítko **Ano**.  
+    - Pokud chcete restartovat ladicí relaci se nová oprávnění, klikněte na tlačítko **Ano**.  
   
-    -   Pokud nechcete, aby se ještě restartovat, klikněte na tlačítko **ne**.  
+    - Pokud nechcete, aby se ještě restartovat, klikněte na tlačítko **ne**.  
   
 ### <a name="to-view-extra-permissions-added-while-debugging"></a>Chcete-li zobrazit další oprávnění přidat při ladění  
   
-1.  Z **projektu** nabídce zvolte _Projectname_**vlastnosti**.  
+1. Z **projektu** nabídce zvolte _Projectname_**vlastnosti**.  
   
-2.  V *Projectname* stránky vlastností, klikněte **zabezpečení** stránky.  
+2. V *Projectname* stránky vlastností, klikněte **zabezpečení** stránky.  
   
-3.  Podívejte se na **oprávnění vyžadované aplikací** mřížky. Všechna další oprávnění, která jste přidali má dvě ikony v **zahrnuté** sloupec: normální značku zaškrtnutí, který všechny zahrnuté mít oprávnění a další ikony, který vypadá podobně jako bubliny obsahuje písmeno "i".  
+3. Podívejte se na **oprávnění vyžadované aplikací** mřížky. Všechna další oprávnění, která jste přidali má dvě ikony v **zahrnuté** sloupec: normální značku zaškrtnutí, který všechny zahrnuté mít oprávnění a další ikony, který vypadá podobně jako bubliny obsahuje písmeno "i".  
   
-4.  Svislý posuvník použít k zobrazení celého **oprávnění vyžadované aplikací** mřížky.  
+4. Svislý posuvník použít k zobrazení celého **oprávnění vyžadované aplikací** mřížky.  
   
 ## <a name="see-also"></a>Viz také  
  [ClickOnce – zabezpečení a nasazení](../deployment/clickonce-security-and-deployment.md)   

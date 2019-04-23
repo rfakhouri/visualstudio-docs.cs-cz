@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 571c010aa8b9cda1002a152ed2d528e22b1aa57e
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 7cb221715ef1c2a50bc60e1725db3b1d8721f165
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54865785"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60083023"
 ---
 # <a name="how-to-populate-documents-with-data-from-objects"></a>Postupy: Naplnění dokumentů daty z objektů
 
@@ -28,11 +28,11 @@ Accesing data do datového objektu funguje stejně v projektech na úrovni dokum
 
 Je třeba provést tři základní kroky k naplnění dokumentů daty z objektu:
 
--   Přidejte ovládací prvek v dokumentu, který můžete vázat na data.
+- Přidejte ovládací prvek v dokumentu, který můžete vázat na data.
 
--   Přidání datového objektu do dokumentu.
+- Přidání datového objektu do dokumentu.
 
--   Připojte datový objekt k objektu BindingSource.
+- Připojte datový objekt k objektu BindingSource.
 
 ## <a name="to-add-a-data-object"></a>Chcete-li přidat datový objekt
 
@@ -48,23 +48,23 @@ V projekty doplňků VSTO vytvořit ovládací prvky a svázat ho v době běhu.
 
 Připojení datového objektu do objektu BindingSource:
 
-1.  Přetáhněte datové pole, které chcete **zdroje dat** okno dokumentu. Tím se automaticky vytvoří ovládací prvek.
+1. Přetáhněte datové pole, které chcete **zdroje dat** okno dokumentu. Tím se automaticky vytvoří ovládací prvek.
 
-2.  Ve vašem kódu vytvořte instanci typu, který jste zvolili pro zdroj dat objektu.
+2. Ve vašem kódu vytvořte instanci typu, který jste zvolili pro zdroj dat objektu.
 
-3.  Instance, kterou chcete přiřadit <xref:System.Windows.Forms.BindingSource.DataSource%2A> vlastnost <xref:System.Windows.Forms.BindingSource>.
+3. Instance, kterou chcete přiřadit <xref:System.Windows.Forms.BindingSource.DataSource%2A> vlastnost <xref:System.Windows.Forms.BindingSource>.
 
 ### <a name="application-level-projects"></a>Projekty na úrovni aplikace
 
 Připojení datového objektu do objektu BindingSource:
 
-1.  Ve vašem kódu vytvořte instanci typu, který je přidružený zdroj dat objektu.
+1. Ve vašem kódu vytvořte instanci typu, který je přidružený zdroj dat objektu.
 
-2.  Vytvoření instance <xref:System.Windows.Forms.BindingSource>.
+2. Vytvoření instance <xref:System.Windows.Forms.BindingSource>.
 
-3.  Přiřazení instance zdroje dat k <xref:System.Windows.Forms.BindingSource.DataSource%2A> vlastnost <xref:System.Windows.Forms.BindingSource>.
+3. Přiřazení instance zdroje dat k <xref:System.Windows.Forms.BindingSource.DataSource%2A> vlastnost <xref:System.Windows.Forms.BindingSource>.
 
-4.  Přidáte zdroj dat jako vázání dat na ovládací prvek.
+4. Přidáte zdroj dat jako vázání dat na ovládací prvek.
 
 ## <a name="see-also"></a>Viz také:
 

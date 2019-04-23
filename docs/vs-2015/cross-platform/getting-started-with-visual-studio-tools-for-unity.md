@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: conceptdev
 ms.author: crdun
 manager: jillfra
-ms.openlocfilehash: 6901c44e61ba291bbc40ad9654f27f52f0e7f48a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 184004d24d685c0e7242f9ba5b34f679cc581d26
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59655166"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105029"
 ---
 # <a name="getting-started-with-visual-studio-tools-for-unity"></a>Začínáme s nástroji Visual Studio Tools for Unity
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,30 +27,30 @@ V této části se dozvíte, jak nainstalovat Visual Studio Tools for Unity a na
 ## <a name="prerequisites"></a>Požadavky  
  Chcete-li použít Visual Studio Tools for Unity, budete potřebovat:  
   
--   Verze **sady Visual Studio** , který podporuje rozšíření, jako je například Visual Studio Community, Professional, Premium nebo Enterprise. Zdarma si můžete stáhnout Visual Studio Community.  
+- Verze **sady Visual Studio** , který podporuje rozšíření, jako je například Visual Studio Community, Professional, Premium nebo Enterprise. Zdarma si můžete stáhnout Visual Studio Community.  
   
      [Stáhněte si Visual Studio Community](http://www.visualstudio.com/downloads/download-visual-studio-vs)  
   
--   **Unity** verze 4.0.0 nebo vyšší. **Unity** verze 5.2.0 nebo novější, abyste mohli využívat výhody integrované podpory pro Visual Studio Tools for Unity verze 2.1 nebo vyšší.  
+- **Unity** verze 4.0.0 nebo vyšší. **Unity** verze 5.2.0 nebo novější, abyste mohli využívat výhody integrované podpory pro Visual Studio Tools for Unity verze 2.1 nebo vyšší.  
   
      [Stáhněte si Unity](https://unity3d.com/get-unity/download)  
   
 ## <a name="install-visual-studio-tools-for-unity"></a>Nainstalovat Visual Studio Tools for Unity  
  Stáhněte a nainstalujte Visual Studio Tools for Unity z Galerie sady Visual Studio. Bude potřeba nainstalovat balíček pravý pro vaši verzi sady Visual Studio. Ujistěte se, že k instalaci Visual Studio Tools for Unity verze 2.1 nebo vyšší, abyste mohli využívat výhody integrované podpory VSTU v Unity 5.2 nebo vyšší.  
   
--   Pro Visual Studio 2015 Community, Visual Studio 2015 Professional nebo Visual Studio 2015 Enterprise:  
+- Pro Visual Studio 2015 Community, Visual Studio 2015 Professional nebo Visual Studio 2015 Enterprise:  
   
      [Stáhněte si Visual Studio 2015 Tools for Unity](https://visualstudiogallery.msdn.microsoft.com/8d26236e-4a64-4d64-8486-7df95156aba9)  
   
--   For Visual Studio 2013 Community, Visual Studio 2013 Professional, or Visual Studio 2013 Premium:  
+- For Visual Studio 2013 Community, Visual Studio 2013 Professional, or Visual Studio 2013 Premium:  
   
      [Stáhněte si Visual Studio 2013 Tools for Unity](https://visualstudiogallery.msdn.microsoft.com/20b80b8c-659b-45ef-96c1-437828fe7cf2)  
   
--   Pro Visual Studio 2012 Professional nebo Visual Studio 2012 Premium:  
+- Pro Visual Studio 2012 Professional nebo Visual Studio 2012 Premium:  
   
      [Stáhněte si Visual Studio 2012 Tools for Unity](https://visualstudiogallery.msdn.microsoft.com/7ab11d2a-f413-4ed6-b3de-ff1d05157714)  
   
--   Pro Visual Studio 2010 Professional nebo Visual Studia 2010 Premium:  
+- Pro Visual Studio 2010 Professional nebo Visual Studia 2010 Premium:  
   
      [Stáhněte si Visual Studio 2010 Tools for Unity](https://visualstudiogallery.msdn.microsoft.com/6e536faa-ce73-494a-a746-6a14753015f1)  
   

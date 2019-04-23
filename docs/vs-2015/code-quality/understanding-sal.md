@@ -9,12 +9,12 @@ caps.latest.revision: 20
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: 847631d28febe81be2e688b7c643ed1f4cfcba18
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e4c9884517120647e8d0d5bff263496900c2318c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54804707"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104015"
 ---
 # <a name="understanding-sal"></a>Porozumění SAL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -124,15 +124,15 @@ wchar_t * wmemcpy(
 ### <a name="example-the-in-annotation"></a>Příklad: \_v\_ poznámky  
  `_In_` Anotace označuje, že:  
   
--   Parametr musí být platná a se nezmění.  
+- Parametr musí být platná a se nezmění.  
   
--   Funkce přečte pouze z vyrovnávací paměti jedním prvkem.  
+- Funkce přečte pouze z vyrovnávací paměti jedním prvkem.  
   
--   Volající musí poskytnout vyrovnávací paměti a inicializujte ji.  
+- Volající musí poskytnout vyrovnávací paměti a inicializujte ji.  
   
--   `_In_` Určuje "jen pro čtení". Běžná chyba spočívá v použití `_In_` pro parametr, který by měl mít `_Inout_` anotace místo.  
+- `_In_` Určuje "jen pro čtení". Běžná chyba spočívá v použití `_In_` pro parametr, který by měl mít `_Inout_` anotace místo.  
   
--   `_In_` je povoleno, ale ignoruje Analyzer na typech bez ukazatele skaláry.  
+- `_In_` je povoleno, ale ignoruje Analyzer na typech bez ukazatele skaláry.  
   
 ```cpp  
 void InCallee(_In_ int *pInt)  

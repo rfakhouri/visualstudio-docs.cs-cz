@@ -10,12 +10,12 @@ ms.assetid: e9f715dc-12b7-439b-bdf3-f3dc75e62f1c
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: bf3d9acd493cd10a8d014b4479684a0107cb8740
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: 853a3f8db3623156e000c9360981933091ef9afd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56954028"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106959"
 ---
 # <a name="authoring-vsct-files"></a>Vytváření obsahu. Soubory Vsct
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,9 +32,9 @@ Tento dokument ukazuje, jak vytvářet souboru .vsct přidání položek nabídk
   
 ##### <a name="to-create-the-file-structure"></a>Chcete-li vytvořit strukturu souborů  
   
-1.  Přidání souboru .vsct do svého projektu pomocí následujících kroků v [jak: Vytvoření. Soubor Vsct](../../extensibility/internals/how-to-create-a-dot-vsct-file.md).  
+1. Přidání souboru .vsct do svého projektu pomocí následujících kroků v [jak: Vytvoření. Soubor Vsct](../../extensibility/internals/how-to-create-a-dot-vsct-file.md).  
   
-2.  Přidejte požadované obory názvů `CommandTable` elementu, jak je znázorněno v následujícím příkladu.  
+2. Přidejte požadované obory názvů `CommandTable` elementu, jak je znázorněno v následujícím příkladu.  
   
     ```xml  
     <CommandTable xmlns="http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable"   
@@ -42,7 +42,7 @@ Tento dokument ukazuje, jak vytvářet souboru .vsct přidání položek nabídk
   
     ```  
   
-3.  V `CommandTable` elementu, přidejte `Commands` – element pro hostování všech vlastních nabídkami, panely nástrojů, skupin a příkazy. Tak, aby vaše vlastní elementy uživatelského rozhraní můžete načíst, `Commands` element musí mít jeho `Package` atribut nastaven na hodnotu názvu balíčku.  
+3. V `CommandTable` elementu, přidejte `Commands` – element pro hostování všech vlastních nabídkami, panely nástrojů, skupin a příkazy. Tak, aby vaše vlastní elementy uživatelského rozhraní můžete načíst, `Commands` element musí mít jeho `Package` atribut nastaven na hodnotu názvu balíčku.  
   
      Po `Commands` elementu, přidejte `Symbols` element definovat identifikátory GUID pro balíček a názvy a identifikátory příkazů prvků uživatelského rozhraní.  
   
@@ -51,28 +51,28 @@ Tento dokument ukazuje, jak vytvářet souboru .vsct přidání položek nabídk
   
 ##### <a name="to-include-visual-studio-resources"></a>Chcete zahrnout prostředky sady Visual Studio  
   
-1.  V horní části `CommandTable` prvku, přidejte jej `Extern` – element pro každé externích souborů se odkazuje, a nastavit `href` atribut pro název souboru. Následující soubory hlaviček pro přístup k prostředkům v sadě Visual Studio může odkazovat:  
+1. V horní části `CommandTable` prvku, přidejte jej `Extern` – element pro každé externích souborů se odkazuje, a nastavit `href` atribut pro název souboru. Následující soubory hlaviček pro přístup k prostředkům v sadě Visual Studio může odkazovat:  
   
-    -   Stdidcmd.h, definuje ID pro všechny příkazy, které jsou vystavené sady Visual Studio.  
+    - Stdidcmd.h, definuje ID pro všechny příkazy, které jsou vystavené sady Visual Studio.  
   
-    -   Vsshlids.h, obsahuje ID příkazu pro nabídky sady Visual Studio.  
+    - Vsshlids.h, obsahuje ID příkazu pro nabídky sady Visual Studio.  
   
-2.  Pokud váš balíček volá všechny příkazy, které jsou definovány pomocí sady Visual Studio nebo další balíčky, přidejte `UsedCommands` elementu po `Commands` elementu. Vyplnit tento element s [usedcommand –](../../extensibility/usedcommand-element.md) – element pro každý příkaz, který je volání není součástí vašeho balíčku. Nastavte `guid` a `id` atributy `UsedCommand` prvků, které mají hodnoty GUID a ID příkazů pro volání. Další informace o tom, jak najít identifikátory GUID a ID sady Visual Studio příkazy najdete v tématu [identifikátory GUID a ID sady Visual Studio příkazy](../../extensibility/internals/guids-and-ids-of-visual-studio-commands.md). Pokud chcete volat příkazy z jiných balíčků, použijte identifikátor GUID a ID příkazu, jak jsou definovány v souboru .vsct pro tyto balíčky.  
+2. Pokud váš balíček volá všechny příkazy, které jsou definovány pomocí sady Visual Studio nebo další balíčky, přidejte `UsedCommands` elementu po `Commands` elementu. Vyplnit tento element s [usedcommand –](../../extensibility/usedcommand-element.md) – element pro každý příkaz, který je volání není součástí vašeho balíčku. Nastavte `guid` a `id` atributy `UsedCommand` prvků, které mají hodnoty GUID a ID příkazů pro volání. Další informace o tom, jak najít identifikátory GUID a ID sady Visual Studio příkazy najdete v tématu [identifikátory GUID a ID sady Visual Studio příkazy](../../extensibility/internals/guids-and-ids-of-visual-studio-commands.md). Pokud chcete volat příkazy z jiných balíčků, použijte identifikátor GUID a ID příkazu, jak jsou definovány v souboru .vsct pro tyto balíčky.  
   
 ### <a name="declaring-ui-elements"></a>Deklarace prvků uživatelského rozhraní  
  Všechny nové prvky uživatelského rozhraní v deklaraci `Symbols` část souboru .vsct.  
   
 ##### <a name="to-declare-ui-elements"></a>Chcete-li deklarovat prvky uživatelského rozhraní  
   
-1.  V `Symbols` prvku, přidejte tři [guidsymbol –](../../extensibility/guidsymbol-element.md) elementy. Každý `GuidSymbol` obsahuje element `name` atribut a `value` atribut. Nastavte `name` atribut, aby odrážely účel elementu. `value` Atribut má identifikátor GUID. (Generovat identifikátor GUID na **nástroje** nabídky, klikněte na tlačítko **Create GUID**a pak vyberte **formát registru**.)  
+1. V `Symbols` prvku, přidejte tři [guidsymbol –](../../extensibility/guidsymbol-element.md) elementy. Každý `GuidSymbol` obsahuje element `name` atribut a `value` atribut. Nastavte `name` atribut, aby odrážely účel elementu. `value` Atribut má identifikátor GUID. (Generovat identifikátor GUID na **nástroje** nabídky, klikněte na tlačítko **Create GUID**a pak vyberte **formát registru**.)  
   
      První `GuidSymbol` element představuje váš balíček a obvykle nemá žádné podřízené položky. Druhá `GuidSymbol` element představuje příkaz nastavit a bude obsahovat všechny symboly, které definují nabídek, skupiny a příkazy. Třetí `GuidSymbol` element představuje vaše úložiště imagí a obsahuje symboly pro všechny ikony pro příkazy. Pokud máte k dispozici žádné příkazy, které používají ikony, můžete vynechat třetí `GuidSymbol` elementu.  
   
-2.  V `GuidSymbol` elementu, který představuje vaši sadu příkazů, přidejte jeden nebo více [idsymbol –](../../extensibility/idsymbol-element.md) elementy. Každá z těchto představují nabídky, nástrojů, skupiny nebo příkaz, který chcete přidat do uživatelského rozhraní.  
+2. V `GuidSymbol` elementu, který představuje vaši sadu příkazů, přidejte jeden nebo více [idsymbol –](../../extensibility/idsymbol-element.md) elementy. Každá z těchto představují nabídky, nástrojů, skupiny nebo příkaz, který chcete přidat do uživatelského rozhraní.  
   
      Pro každou `IDSymbol` element, nastaven `name` atribut název bude odkazovat na odpovídající nabídky, skupiny nebo příkaz a pak nastavte `value` element šestnáctkového čísla, která bude představovat jeho id příkazu. Žádné dva `IDSymbol` prvky, které mají stejnou nadřazenou položku může mít stejnou hodnotu.  
   
-3.  Pokud některý z vašich prvky uživatelského rozhraní vyžadují ikony, přidejte `IDSymbol` – element pro každé ikony `GuidSymbol` elementu, který představuje vaše úložiště imagí.  
+3. Pokud některý z vašich prvky uživatelského rozhraní vyžadují ikony, přidejte `IDSymbol` – element pro každé ikony `GuidSymbol` elementu, který představuje vaše úložiště imagí.  
   
 ### <a name="putting-ui-elements-in-the-ide"></a>Vkládání prvků uživatelského rozhraní v rozhraní IDE  
  [Nabídky](../../extensibility/menus-element.md) elementu [skupiny](../../extensibility/groups-element.md) elementu a [tlačítka](../../extensibility/buttons-element.md) element obsahovat definice pro všechny nabídky, skupiny a příkazy, které jsou definovány v balíčku. Do integrovaného vývojového prostředí pomocí těchto nabídek, skupiny a příkazy [nadřazené](../../extensibility/parent-element.md) element, který je součástí definice prvku uživatelského rozhraní nebo pomocí [commandplacement –](../../extensibility/commandplacement-element.md) element, který je definovaný jinde.  
@@ -120,9 +120,9 @@ Tento dokument ukazuje, jak vytvářet souboru .vsct přidání položek nabídk
   
     Cílem `Parent` je prvek nabídky nebo skupinu, která bude obsahovat nabídky, skupiny nebo příkaz.  
   
-   1.  Nastavte `guid` atribut název `GuidSymbol` element, který definuje sadu příkazů. Pokud cílový element není součástí vašeho balíčku, jak je definováno v odpovídajícím souboru .vsct použijte identifikátor guid pro tuto sadu příkazů.  
+   1. Nastavte `guid` atribut název `GuidSymbol` element, který definuje sadu příkazů. Pokud cílový element není součástí vašeho balíčku, jak je definováno v odpovídajícím souboru .vsct použijte identifikátor guid pro tuto sadu příkazů.  
   
-   2.  Nastavte `id` atribut tak, aby odpovídaly `id` atribut target nabídky nebo skupiny. Seznam nabídek a skupiny, které jsou přístupné pomocí sady Visual Studio, naleznete v tématu [identifikátory GUID a ID sady Visual Studio nabídky](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md) nebo [identifikátory GUID a ID sady Visual Studio panely nástrojů](../../extensibility/internals/guids-and-ids-of-visual-studio-toolbars.md).  
+   2. Nastavte `id` atribut tak, aby odpovídaly `id` atribut target nabídky nebo skupiny. Seznam nabídek a skupiny, které jsou přístupné pomocí sady Visual Studio, naleznete v tématu [identifikátory GUID a ID sady Visual Studio nabídky](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md) nebo [identifikátory GUID a ID sady Visual Studio panely nástrojů](../../extensibility/internals/guids-and-ids-of-visual-studio-toolbars.md).  
   
    Pokud máte velký počet prvků uživatelského rozhraní, umístíte do integrovaného vývojového prostředí, nebo pokud máte prvky, které by se měla objevit na více místech, definovat jejich umístění v [commandplacements –](../../extensibility/commandplacements-element.md) elementu, jak je znázorněno v následujícím postupu.  
   
@@ -145,11 +145,11 @@ Tento dokument ukazuje, jak vytvářet souboru .vsct přidání položek nabídk
   
 1. Chcete-li prvek uživatelského rozhraní viditelná pouze v určitých uživatelského rozhraní kontextech, například při načtení řešení, použijte omezení viditelnosti.  
   
-   1.  Po `Commands` elementu, přidejte `VisibilityConstraints` elementu.  
+   1. Po `Commands` elementu, přidejte `VisibilityConstraints` elementu.  
   
-   2.  Pro každou položku uživatelského rozhraní pro omezení, přidejte [visibilityitem –](../../extensibility/visibilityitem-element.md) elementu.  
+   2. Pro každou položku uživatelského rozhraní pro omezení, přidejte [visibilityitem –](../../extensibility/visibilityitem-element.md) elementu.  
   
-   3.  Pro každou `VisibilityItem` element, nastaven `guid` a `id` atributů, které mají v nabídce, skupiny, nebo příkaz a pak nastavte `context` atribut kontextu uživatelského rozhraní, který chcete, jak jsou definovány v <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80> třídy. Další informace najdete v tématu [visibilityitem – Element](../../extensibility/visibilityitem-element.md).  
+   3. Pro každou `VisibilityItem` element, nastaven `guid` a `id` atributů, které mají v nabídce, skupiny, nebo příkaz a pak nastavte `context` atribut kontextu uživatelského rozhraní, který chcete, jak jsou definovány v <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80> třídy. Další informace najdete v tématu [visibilityitem – Element](../../extensibility/visibilityitem-element.md).  
   
 2. Pokud chcete nastavit viditelnost nebo dostupnost položky uživatelského rozhraní v kódu, použijte nejméně jeden z následujících příznaků příkazů:  
   

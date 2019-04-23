@@ -20,12 +20,12 @@ caps.latest.revision: 35
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: da7f0374c8185ef091b89dde99f3c6e053458480
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: ebb8ec1fe10f6fbc5c367cb0ed127e048351b0e4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54833843"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105913"
 ---
 # <a name="how-to-run-the-worker-process-under-a-user-account"></a>Postupy: Spuštění pracovního procesu v rámci uživatelského účtu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,29 +36,30 @@ Nastavení počítače tak, aby mohly běžet [!INCLUDE[vstecasp](../includes/vs
   
 #### <a name="to-run-aspnetwpexe-under-a-user-account"></a>Ke spuštění aspnet_wp.exe uživatelského účtu  
   
-1.  Otevřete soubor machine.config, umístěný ve vašem počítači ve složce Konfigurace na cestě, kam jste nainstalovali modul runtime.  
+1. Otevřete soubor machine.config, umístěný ve vašem počítači ve složce Konfigurace na cestě, kam jste nainstalovali modul runtime.  
   
-2.  Najít &lt;processModel&gt; a u atributů uživatele a heslo pro jméno a heslo uživatelského účtu, který chcete, aby aspnet_wp.exe ke spuštění v rámci.  
+2. Najít &lt;processModel&gt; a u atributů uživatele a heslo pro jméno a heslo uživatelského účtu, který chcete, aby aspnet_wp.exe ke spuštění v rámci.  
   
-3.  Uložte soubor machine.config.  
+3. Uložte soubor machine.config.  
   
-4.  Na [!INCLUDE[winxpsvr](../includes/winxpsvr-md.md)], ve výchozím nastavení je nainstalována služba IIS 6.0. Odpovídající pracovní proces je w3wp.exe.To v režimu aspnet_wp.exe jako pracovní proces služby IIS 6.0, postupujte takto:  
+4. Na [!INCLUDE[winxpsvr](../includes/winxpsvr-md.md)], ve výchozím nastavení je nainstalována služba IIS 6.0. Odpovídající pracovní proces je w3wp.exe.To v režimu aspnet_wp.exe jako pracovní proces služby IIS 6.0, postupujte takto:  
   
-    1.  Klikněte na tlačítko **Start**, klikněte na tlačítko **nástroje pro správu** a klikněte na tlačítko **Internetová informační služba**.  
+    1. Klikněte na tlačítko **Start**, klikněte na tlačítko **nástroje pro správu** a klikněte na tlačítko **Internetová informační služba**.  
   
-    2.  V **Internetová informační služba** dialogové okno, klikněte pravým tlačítkem na **weby** složky a vyberte **vlastnosti**.  
+    2. V **Internetová informační služba** dialogové okno, klikněte pravým tlačítkem na **weby** složky a vyberte **vlastnosti**.  
   
-    3.  V **webové servery – vlastnosti** dialogového okna zvolte **služby**.  
+    3. V **webové servery – vlastnosti** dialogového okna zvolte **služby**.  
   
-    4.  Vyberte **spustit webovou službu v izolovaném režimu IIS6.0**.  
+    4. Vyberte **spustit webovou službu v izolovaném režimu IIS6.0**.  
   
-    5.  Zavřít **vlastnosti** dialogové okno a **Správce služeb Internetu**.  
+    5. Zavřít **vlastnosti** dialogové okno a **Správce služeb Internetu**.  
   
-5.  Otevřete příkazový řádek Windows a obnovení serveru spuštěním:  
+5. Otevřete příkazový řádek Windows a obnovení serveru spuštěním:  
   
     ```  
     iisreset  
     ```  
+
     – nebo –  
   
     ```  
@@ -66,11 +67,11 @@ Nastavení počítače tak, aby mohly běžet [!INCLUDE[vstecasp](../includes/vs
     net start w3svc  
     ```  
   
-6.  Najít dočasný [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] soubory složky, která by měla být ve stejné cestě jako složku konfigurace. Klikněte pravým tlačítkem na dočasný [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] soubory složky a vyberte **vlastnosti** v místní nabídce.  
+6. Najít dočasný [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] soubory složky, která by měla být ve stejné cestě jako složku konfigurace. Klikněte pravým tlačítkem na dočasný [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] soubory složky a vyberte **vlastnosti** v místní nabídce.  
   
-7.  V **dočasné soubory vlastnosti ASP.NET** dialogové okno, klikněte na tlačítko **zabezpečení** kartu.  
+7. V **dočasné soubory vlastnosti ASP.NET** dialogové okno, klikněte na tlačítko **zabezpečení** kartu.  
   
-8.  Klikněte na tlačítko **Advanced**.  
+8. Klikněte na tlačítko **Advanced**.  
   
 9. V **Upřesnit nastavení zabezpečení pro dočasné soubory ASP.Net** dialogové okno, klikněte na tlačítko **přidat**.  
   

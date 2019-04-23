@@ -8,26 +8,26 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 799f5bfaad3433bebeca54367c91fefc34e05a21
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 151b9be68b82f2b9fdcb20cd105890914333a2b6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928488"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111763"
 ---
 # <a name="tutorial-3-create-a-matching-game"></a>Kurz 3: Vytvořit odpovídající her
 
 V tomto tutoriálu vytvoříte porovnávací hru, ve které hráč musí porovnat dvojice skrytých ikon. Získáte informace o následujících postupech:
 
--   Store objektů, například ikon, v <xref:System.Collections.Generic.List%601> objektu.
+- Store objektů, například ikon, v <xref:System.Collections.Generic.List%601> objektu.
 
--   Použití `foreach` smyčky v jazyce Visual C# nebo `For Each` smyčky v jazyce Visual Basic k iterování položek v seznamu.
+- Použití `foreach` smyčky v jazyce Visual C# nebo `For Each` smyčky v jazyce Visual Basic k iterování položek v seznamu.
 
--   Udržování přehledu o stavu formuláře pomocí referenčních proměnných
+- Udržování přehledu o stavu formuláře pomocí referenčních proměnných
 
--   Sestavení obslužné rutiny události pro reakci na události, které lze použít s více objekty
+- Sestavení obslužné rutiny události pro reakci na události, které lze použít s více objekty
 
--   Vytvoření časovače, který odpočítává a po spuštění přesně jednou aktivuje událost
+- Vytvoření časovače, který odpočítává a po spuštění přesně jednou aktivuje událost
 
 Po dokončení tohoto kurzu, váš program bude vypadat jako na následujícím obrázku:
 

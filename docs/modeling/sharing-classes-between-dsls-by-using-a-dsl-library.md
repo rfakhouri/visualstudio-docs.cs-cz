@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 640936fbe0218bbb8e6d710547c39a4bfbf0bc9e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 36c49d3447a5f1fafcf4601057c66ebedcb193ec
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55918114"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087479"
 ---
 # <a name="sharing-classes-between-dsls-by-using-a-dsl-library"></a>Sdílení tříd mezi DSL pomocí knihovny DSL
 V aplikaci Visual Studio Visualization and Modeling SDK můžete vytvořit nekompletní definice DSL, který můžete importovat do jiného DSL. Díky tomu můžete zvážit společné části podobné modelů.
@@ -21,11 +21,11 @@ V aplikaci Visual Studio Visualization and Modeling SDK můžete vytvořit nekom
 
 #### <a name="to-create-a-dsl-library"></a>Chcete-li vytvořit knihovny DSL
 
-1.  Vytvoření nového projektu DSL a výběr šablony řešení knihovny DSL.
+1. Vytvoření nového projektu DSL a výběr šablony řešení knihovny DSL.
 
      Jednoho projektu DSL se vytvoří s prázdnou modelu.
 
-2.  Přidáte doménovými třídami, relace, tvary a tak dále.
+2. Přidáte doménovými třídami, relace, tvary a tak dále.
 
      Není potřeba tvoří jeden strom vkládání prvků do knihovny.
 
@@ -33,15 +33,15 @@ V aplikaci Visual Studio Visualization and Modeling SDK můžete vytvořit nekom
 
      Zvažte nastavení **modifikátor dědičnosti** doménové třídy k `Abstract`.
 
-3.  Můžete přidat prvky, které definujete v Průzkumník DSL, jako je například tvůrci připojení.
+3. Můžete přidat prvky, které definujete v Průzkumník DSL, jako je například tvůrci připojení.
 
-4.  Můžete přidat vlastní nastavení, které vyžadují další kód, jako je například omezení ověření.
+4. Můžete přidat vlastní nastavení, které vyžadují další kód, jako je například omezení ověření.
 
-5.  Klikněte na tlačítko **Transformovat všechny šablony**.
+5. Klikněte na tlačítko **Transformovat všechny šablony**.
 
-6.  Sestavte projekt.
+6. Sestavte projekt.
 
-7.  Když distribuujete DSL pro používání jiným lidem, je nutné zadat zkompilovaného sestavení (knihovny DLL) a soubor `DslDefinition.dsl`. Můžete najít kompilované sestavení v rámci `Dsl\bin\*`
+7. Když distribuujete DSL pro používání jiným lidem, je nutné zadat zkompilovaného sestavení (knihovny DLL) a soubor `DslDefinition.dsl`. Můžete najít kompilované sestavení v rámci `Dsl\bin\*`
 
 #### <a name="to-import-a-dsl-library"></a>Postup importování knihovny DSL
 

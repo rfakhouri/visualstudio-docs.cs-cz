@@ -14,12 +14,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e28232db66663cb668a28a33d12daa8ff3f210ce
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 107b42500bbe2daed0d03d3e23e4817c9c3b3fc4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54761637"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089923"
 ---
 # <a name="how-to-manage-editor-windows"></a>Postupy: Správa Windows editoru
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,9 +34,9 @@ Můžete pracovat na kód na několika místech současně. To provést rozděle
   
 #### <a name="to-split-a-pane"></a>Pro rozdělení na stavového řádku  
   
-1.  Klikněte v okně editoru aktivovat.  
+1. Klikněte v okně editoru aktivovat.  
   
-2.  Z **okno** nabídce vyberte možnost **rozdělení**.  
+2. Z **okno** nabídce vyberte možnost **rozdělení**.  
   
      Oblast úprav rozdělí dvě podokna oddělené rozdělovač. Posuňte se na těchto podoken můžete vizualizaci nezávisle k zobrazení a úpravám různých součástí aktivního dokumentu ve stejnou dobu. V druhém se projeví všechny změny provedené v jedno podokno.  
   
@@ -45,14 +45,14 @@ Můžete pracovat na kód na několika místech současně. To provést rozděle
   
 #### <a name="to-return-to-single-pane-view"></a>Se vrátíte do zobrazení jednoduché  
   
--   Z **okno** nabídce vyberte možnost **odebrat rozdělení**.  
+- Z **okno** nabídce vyberte možnost **odebrat rozdělení**.  
   
 ## <a name="creating-new-windows"></a>Vytváří se nový Windows  
  Můžete také vytvořit více instancí okno editoru. Tato funkce umožňuje zdlouhavé dokument otevřít v více než jednu instanci editoru, takže můžete zobrazit a upravit různých oddílů současně v oknech editoru samostatné, Plnohodnotná.  
   
 #### <a name="to-create-a-new-window"></a>Chcete-li vytvořit nové okno  
   
--   Na **okno** nabídky, klikněte na tlačítko **nové okno**.  
+- Na **okno** nabídky, klikněte na tlačítko **nové okno**.  
   
      Přidání nové s kartami instance editoru.  
   

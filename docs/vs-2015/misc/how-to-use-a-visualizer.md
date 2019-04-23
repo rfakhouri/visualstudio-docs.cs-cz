@@ -23,12 +23,12 @@ ms.assetid: d2611385-0134-4387-8c5a-979fe625a462
 caps.latest.revision: 37
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7ec7527e51175b82d06a35ad7a6bc26856acf5dd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c0344b9961e7ade31864d70c7d7422f328983abd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54773643"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100973"
 ---
 # <a name="how-to-use-a-visualizer"></a>Postupy: Použití Vizualizéru
 Chcete-li zobrazit obsah proměnné nebo objektu způsobem, který má smysl pro typ dat můžete použít vizualizéru. Můžete použít vizualizéry z **DataTips**, **Watch** okna, **automatické hodnoty** okna, nebo **místní hodnoty** okno.  
@@ -40,15 +40,15 @@ Chcete-li zobrazit obsah proměnné nebo objektu způsobem, který má smysl pro
   
 ### <a name="to-open-a-visualizer"></a>Chcete-li otevřít vizualizéru  
   
-1.  Klikněte na ikonu lupy, které se zobrazí vedle názvu proměnné v **DataTips**, **Watch** okna, nebo **automatické hodnoty**, **místních hodnot**, nebo **Rychlé kukátko** okna.  
+1. Klikněte na ikonu lupy, které se zobrazí vedle názvu proměnné v **DataTips**, **Watch** okna, nebo **automatické hodnoty**, **místních hodnot**, nebo **Rychlé kukátko** okna.  
   
      Zobrazí se seznam vizualizéry.  
   
-2.  Klikněte na vizualizaci, kterou chcete použít.  
+2. Klikněte na vizualizaci, kterou chcete použít.  
   
 ### <a name="to-use-a-visualizer-for-managed-code-during-remote-debugging"></a>Použití vizualizéru během vzdálené ladění pro spravovaný kód  
   
--   Zkopírujte vizualizéru knihovny DLL ke vzdálenému počítači před spuštěním ladicí relace.  
+- Zkopírujte vizualizéru knihovny DLL ke vzdálenému počítači před spuštěním ladicí relace.  
   
      Cesta k souboru DLL musí být stejná na vzdálené i místní počítače. Tento způsob může být buď z následujících umístění:  
   

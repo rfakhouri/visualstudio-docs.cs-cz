@@ -17,12 +17,12 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a782fe1b69fba6a61b790cb5a6fa8c79f20e5e1d
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: dd579e6bf434903ecc1e2fe60b1e62d54c165034
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649144"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114363"
 ---
 # <a name="references-page-project-designer-visual-basic"></a>Stránka Odkazy, návrhář projektu (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -46,9 +46,9 @@ Použití **odkazy** stránku **Návrháře projektu** ke správě odkazy, webov
 >  Při systém projektu nalezení odkaz na sestavení, systém vyřeší odkaz vyhledáváním v následujících umístěních, v uvedeném pořadí:  
 > 
 > 1. Složky projektu. Soubory složky projektu se zobrazí v **Průzkumníka řešení** při **zobrazit všechny soubory** není v platnosti.  
->    2.  Složky, které jsou určené v **cesty odkazů** dialogové okno.  
->    3.  Složky, které zobrazí soubory v **přidat odkaz** dialogové okno.  
->    4.  Složku obj projektu. (Když přidáte do svého projektu odkaz modelu COM, jeden nebo více sestavení mohou být přidány do projektu složku obj.)  
+>    2. Složky, které jsou určené v **cesty odkazů** dialogové okno.  
+>    3. Složky, které zobrazí soubory v **přidat odkaz** dialogové okno.  
+>    4. Složku obj projektu. (Když přidáte do svého projektu odkaz modelu COM, jeden nebo více sestavení mohou být přidány do projektu složku obj.)  
   
  **Odkazy**  
  Tento seznam obsahuje všechny odkazy v projektu použít nebo se nepoužívá.  
@@ -80,11 +80,11 @@ Použití **odkazy** stránku **Návrháře projektu** ke správě odkazy, webov
  **Import uživatelů aktualizace**  
  Vyberte obor názvů zadané uživatelem v seznamu oborů názvů, zadejte název, který chcete nahradit v **importovat obory názvů** pole a potom klikněte na toto tlačítko Změnit na novém oboru názvů. Je aktivní, pouze pokud vybraný obor názvů je ten, který jste přidali do seznamu pomocí tlačítka **přidat Import uživatelů** tlačítko. Můžete přidat:  
   
--   Třídy nebo obory názvů, jako například <xref:System.Math?displayProperty=fullName>.  
+- Třídy nebo obory názvů, jako například <xref:System.Math?displayProperty=fullName>.  
   
--   Alias importuje, jako například `VB=Microsoft.VisualBasic`.  
+- Alias importuje, jako například `VB=Microsoft.VisualBasic`.  
   
--   Obory názvů XML, jako například `<xmlns:xsl="http://www.w3.org/1999/XSL/Transform">`.  
+- Obory názvů XML, jako například `<xmlns:xsl="http://www.w3.org/1999/XSL/Transform">`.  
   
 ## <a name="see-also"></a>Viz také  
  [NIB jak: Přidání nebo odebrání odkazů pomocí dialogového okna Přidat odkaz](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)   

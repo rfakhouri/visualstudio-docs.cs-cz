@@ -11,11 +11,11 @@ ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
 ms.openlocfilehash: e1b93685dad395fbda3415e529dbc618c266da66
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58872944"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60118492"
 ---
 ## <a name="visual-studio-core-editor-included-with-visual-studio-community-2019"></a>Základní editor Visual Studio (je součástí aplikace Visual Studio Community 2019)
 
@@ -346,7 +346,7 @@ Microsoft.Net.Component.4.6.1.SDK | Rozhraní .NET framework 4.6.1 SDK | 16.0.28
 Microsoft.Net.Component.4.6.1.TargetingPack | Rozhraní .NET framework 4.6.1 targeting pack | 16.0.28517.75 | volitelná,
 Microsoft.VisualStudio.Component.VC.140 | MSVC v140 - VS 2015 C++ vytvářet nástroje (v14.00) | 16.0.28625.61 | volitelná,
 Microsoft.VisualStudio.Component.VC.ATLMFC | C++ MFC pro nástroje pro vytváření v142 (x86 & x64) | 16.0.28625.61 | volitelná,
-Microsoft.VisualStudio.Component.VC.CLI.Support | C + +/ podpora rozhraní příkazového řádku pro v142 nástroje sestavení | 16.0.28625.61 | volitelná,
+Microsoft.VisualStudio.Component.VC.CLI.Support | C++/ Podpora rozhraní příkazového řádku v142 nástroje sestavení | 16.0.28625.61 | volitelná,
 Microsoft.VisualStudio.Component.VC.Modules.x86.x64 | Moduly C++ pro v142 sestavení nástroje (x64/x86 – experimentální) | 16.0.28625.61 | volitelná,
 Microsoft.VisualStudio.Component.VC.v141.x86.x64 | MSVC v141 – nástroje pro vytváření x64/x86 VS 2017 C++ (v14.16) | 16.0.28625.61 | volitelná,
 Microsoft.VisualStudio.Component.Windows10SDK.16299 | Windows 10 SDK (10.0.16299.0) | 16.0.28517.75 | volitelná,
@@ -863,7 +863,7 @@ Microsoft.VisualStudio.Component.VC.v141.ATL.ARM.Spectre | C++ ATL pro nástroje
 Microsoft.VisualStudio.Component.VC.v141.ATL.ARM64 | C++ ATL pro sestavení nástrojů verze 141 (ARM64) | 16.0.28625.61
 Microsoft.VisualStudio.Component.VC.v141.ATL.ARM64.Spectre | C++ ATL pro v141 sestavení nástroje se zmírněními hrozeb Spectre (ARM64) | 16.0.28625.61
 Microsoft.VisualStudio.Component.VC.v141.ATL.Spectre | C++ ATL pro nástroje v141 pro sestavení se zmírněními hrozeb Spectre (x86 & x64) | 16.0.28625.61
-Microsoft.VisualStudio.Component.VC.v141.CLI.Support | C + +/ podpora rozhraní příkazového řádku pro v141 nástroje sestavení | 16.0.28625.61
+Microsoft.VisualStudio.Component.VC.v141.CLI.Support | C++/ Podpora rozhraní příkazového řádku pro nástroje v141 pro sestavení | 16.0.28625.61
 Microsoft.VisualStudio.Component.VC.v141.MFC | C++ MFC pro sestavení nástrojů verze 141 (x86 & x64) | 16.0.28625.61
 Microsoft.VisualStudio.Component.VC.v141.MFC.ARM | C++ MFC pro sestavení nástrojů verze 141 (ARM) | 16.0.28625.61
 Microsoft.VisualStudio.Component.VC.v141.MFC.ARM.Spectre | C++ MFC pro nástroje v141 pro sestavení s zmírnění hrozby Spectre (ARM) | 16.0.28625.61
@@ -872,5 +872,5 @@ Microsoft.VisualStudio.Component.VC.v141.MFC.ARM64.Spectre | C++ MFC pro v141 se
 Microsoft.VisualStudio.Component.VC.v141.MFC.Spectre | C++ MFC pro nástroje v141 pro sestavení se zmírněními hrozeb Spectre (x86 & x64) | 16.0.28625.61
 Microsoft.VisualStudio.Component.VC.v141.x86.x64.Spectre | MSVC v141 – VS 2017 C++ x64/x86 zmírnit hrozby Spectre libs (v14.16) | 16.0.28625.61
 Microsoft.VisualStudio.Component.VisualStudioData | Zdroje dat a odkazy na služby | 16.0.28707.177
-Microsoft.VisualStudio.Component.WinXP | Nástroje systému Windows XP podpora C++ pro VS 2017 (verze 141) [zastaralé] | 16.0.28625.61
+Microsoft.VisualStudio.Component.WinXP | C++Nástroje systému Windows XP podporu pro VS 2017 (verze 141) [zastaralé] | 16.0.28625.61
 Microsoft.VisualStudio.Web.Mvc4.ComponentGroup | ASP.NET MVC 4 | 16.0.28621.142

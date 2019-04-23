@@ -17,14 +17,15 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bffc4c5740ad006ca851f56cd2db8fcfdfc21294
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 485f4810f748af707cebba5c50c34144f78371ed
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54752955"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102943"
 ---
-# <a name="using-the-visual-studio-development-environment-for-c"></a>Použití vývojového prostředí sady Visual Studio pro jazyk C# #
+# <a name="using-the-visual-studio-development-environment-for-c"></a>Použití vývojového prostředí sady Visual Studio pro jazyk C\#
+
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Integrovaného vývojového prostředí (IDE) sady Visual Studio je kolekce vývojové nástroje, které jsou vystaveny prostřednictvím běžného uživatelského rozhraní. Některé nástroje jsou sdíleny s jinými [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] jazyků a některé nástroje, jako je například kompilátor jazyka C# jsou jedinečné pro jazyk Visual C#. Toto téma obsahuje odkazy na nejdůležitější nástroje jazyka Visual C#.
@@ -49,4 +50,7 @@ Integrovaného vývojového prostředí (IDE) sady Visual Studio je kolekce výv
 |[Správa prostředků aplikace (.NET)](../ide/managing-application-resources-dotnet.md)|Znázorňuje způsob přidávání a úprav prostředků pro váš projekt, jako jsou řetězce, obrázky, ikony, zvuk a soubory.|
 
 ## <a name="see-also"></a>Viz také
- [C#](http://msdn.microsoft.com/library/7f4f8103-7068-4f1d-92c7-3c4519b6edbc)[Začínáme se službou C# ](http://msdn.microsoft.com/library/d6ec050f-3956-4737-8030-a4fa3521d29f) [ C# odkaz](http://msdn.microsoft.com/library/06de3167-c16c-4e1a-b3c5-c27841d4569a)
+
+- [C#](http://msdn.microsoft.com/library/7f4f8103-7068-4f1d-92c7-3c4519b6edbc)
+- [Začínáme s jazykem C#](http://msdn.microsoft.com/library/d6ec050f-3956-4737-8030-a4fa3521d29f)
+- [Referenční dokumentace jazyka C#](http://msdn.microsoft.com/library/06de3167-c16c-4e1a-b3c5-c27841d4569a)

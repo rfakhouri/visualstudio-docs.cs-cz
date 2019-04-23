@@ -9,36 +9,36 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 69d68fdc0a34ffa680ec2306a087cd29002eb185
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3950540edb7ab17bafa5ed5c9e7b0f3660ad436a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54795608"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60090599"
 ---
 # <a name="how-to-create-an-activity-designer-library"></a>Postupy: Vytvoření knihovny návrhářů aktivit
 Vlastní návrháři aktivit umožňují vytvářet uživatelské rozhraní pro standardní nebo vlastní aktivity. Řízení složitosti uživatelského rozhraní, aby bylo možné vytvořit více než jeden návrháře aktivit pro aktivitu. Tento scénář umožňuje vytvořit designery, které jsou přizpůsobené pro více cílových skupin.  
   
 ### <a name="to-create-an-activity-designer-library"></a>Chcete-li vytvořit knihovny návrháře aktivit  
   
-1.  Spustit [!INCLUDE[vs2010](../includes/vs2010-md.md)].  
+1. Spustit [!INCLUDE[vs2010](../includes/vs2010-md.md)].  
   
-2.  Na **souboru** nabídky, přejděte k **nový**a pak vyberte **projektu...** Chcete-li otevřít **nový projekt** dialogové okno.  
+2. Na **souboru** nabídky, přejděte k **nový**a pak vyberte **projektu...** Chcete-li otevřít **nový projekt** dialogové okno.  
   
-3.  V **typy projektů** vyberte **pracovního postupu** buď z **Visual C#** nebo **jazyka Visual Basic** seskupení podle svých představ jazyk.  
+3. V **typy projektů** vyberte **pracovního postupu** buď z **Visual C#** nebo **jazyka Visual Basic** seskupení podle svých představ jazyk.  
   
-4.  V **šablony** vyberte **knihovny návrháře aktivit**.  
+4. V **šablony** vyberte **knihovny návrháře aktivit**.  
   
-5.  V **název** zadejte popisný název pro váš projekt, aby byl snadno identifikovat.  
+5. V **název** zadejte popisný název pro váš projekt, aby byl snadno identifikovat.  
   
-6.  V **umístění** zadejte adresář, ve kterém chcete projekt uložit, nebo klikněte na tlačítko **Procházet** přejít k němu.  
+6. V **umístění** zadejte adresář, ve kterém chcete projekt uložit, nebo klikněte na tlačítko **Procházet** přejít k němu.  
   
-7.  V **řešení** pole, zadejte popisný název pro vaše řešení a pak klikněte na tlačítko **OK**.  
+7. V **řešení** pole, zadejte popisný název pro vaše řešení a pak klikněte na tlačítko **OK**.  
   
     > [!NOTE]
     >  Pokud chcete přidat Konzolová aplikace pracovního postupu do existujícího řešení, otevřete toto řešení [!INCLUDE[vs2010](../includes/vs2010-md.md)], klikněte pravým tlačítkem na řešení v **Průzkumníka řešení**a vyberte **přidat**, pak **Nový projekt...** Chcete-li otevřít **nový projekt** dialogové okno. Pokračujte, jak je popsáno výše v tomto postupu.  
   
-8.  Šablona projektu vytvoří definici návrháře aktivit v XAML a soubor implementace použití modelu code-behind ve zdrojovém kódu. [!INCLUDE[wfd1](../includes/wfd1-md.md)] Otevře a zobrazí na plátně návrháře aktivit.  
+8. Šablona projektu vytvoří definici návrháře aktivit v XAML a soubor implementace použití modelu code-behind ve zdrojovém kódu. [!INCLUDE[wfd1](../includes/wfd1-md.md)] Otevře a zobrazí na plátně návrháře aktivit.  
   
 9. Přetáhněte [!INCLUDE[avalon1](../includes/avalon1-md.md)] ovládacích prvků z **nástrojů** na návrhovou plochu pro použití v Návrháři vaše vlastní aktivity.  Příklad implementace vlastního návrháře aktivit najdete v tématu [jak: Vytvoření vlastního návrháře aktivit](http://msdn.microsoft.com/library/2f3aade6-facc-44ef-9657-a407ef8b9b31).  
   

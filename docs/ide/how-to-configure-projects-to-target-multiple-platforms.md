@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e1f302821b219266cf7080437a73cc577ffb0ffa
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 5449f0b5cb7d2310f7f71a93236bbe5fd62eacae
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55920090"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60103719"
 ---
 # <a name="how-to-configure-projects-to-target-multiple-platforms"></a>Postupy: Konfigurace projektů pro více cílových platforem
 
@@ -27,19 +27,19 @@ Visual Studio poskytuje způsob, jak řešení, které cílí několika různým
 
 **Nástroje Configuration Manager** dialogové okno umožňuje vytvořit a nastavit na úrovni řešení a projektu konfigurace a platformy. Každou kombinaci konfigurace na úrovni řešení a cíle může mít jedinečnou sadu vlastností, které jsou spojené s, což umožňuje snadno přepínat mezi, například konfiguraci vydané verze, který cílí [!INCLUDE[vcprx64](../extensibility/internals/includes/vcprx64_md.md)] platformy, konfiguraci vydané verze který cílí na x x86 platformu a konfiguraci ladění, který se zaměřuje x86 platformy.
 
-1.  Na **sestavení** nabídky, klikněte na tlačítko **nástroje Configuration Manager**.
+1. Na **sestavení** nabídky, klikněte na tlačítko **nástroje Configuration Manager**.
 
-2.  V **pole platforma aktivního řešení**, vyberte platformu vašeho řešení do cíle, nebo vyberte  **\<nový >** vytvořit nové platformy. Sada Visual Studio zkompiluje vaší aplikace pro cílení na platformy, které je nastaveno jako aktivní platformu v **nástroje Configuration Manager** dialogové okno.
+2. V **pole platforma aktivního řešení**, vyberte platformu vašeho řešení do cíle, nebo vyberte  **\<nový >** vytvořit nové platformy. Sada Visual Studio zkompiluje vaší aplikace pro cílení na platformy, které je nastaveno jako aktivní platformu v **nástroje Configuration Manager** dialogové okno.
 
 ## <a name="remove-a-platform"></a>Odebrat platformu
 
 Pokud zjistíte, že nemáte žádné požadavky platformu, můžete odebrat pomocí **nástroje Configuration Manager** dialogové okno. Tato akce odebere všechna nastavení řešení a projektů, které jste nakonfigurovali pro kombinaci konfigurace a cíl.
 
-1.  Na **sestavení** nabídky, klikněte na tlačítko **nástroje Configuration Manager**.
+1. Na **sestavení** nabídky, klikněte na tlačítko **nástroje Configuration Manager**.
 
-2.  V **pole platforma aktivního řešení**vyberte  **\<Upravit >**. **Upravit platformy řešení** zobrazí se dialogové okno.
+2. V **pole platforma aktivního řešení**vyberte  **\<Upravit >**. **Upravit platformy řešení** zobrazí se dialogové okno.
 
-3.  Klikněte na platformu, kterou chcete odebrat a klikněte na tlačítko **odebrat**.
+3. Klikněte na platformu, kterou chcete odebrat a klikněte na tlačítko **odebrat**.
 
 ## <a name="target-multiple-platforms-with-one-solution"></a>Vyvíjet pro víc platforem s jedním z řešení
 
@@ -47,11 +47,11 @@ Vzhledem k tomu, že můžete změnit nastavení založené na kombinaci konfigu
 
 ### <a name="to-target-multiple-platforms"></a>Pro více cílových platforem
 
-1.  Použití **nástroje Configuration Manager** přidat alespoň dvě cílové platformy pro řešení.
+1. Použití **nástroje Configuration Manager** přidat alespoň dvě cílové platformy pro řešení.
 
-2.  Vyberte platformu, kterou chcete cílit na z **platformou aktivního řešení** seznamu.
+2. Vyberte platformu, kterou chcete cílit na z **platformou aktivního řešení** seznamu.
 
-3.  Sestavte řešení.
+3. Sestavte řešení.
 
 ### <a name="to-build-multiple-solution-configurations-at-once"></a>Chcete-li sestavení více konfigurací řešení najednou
 

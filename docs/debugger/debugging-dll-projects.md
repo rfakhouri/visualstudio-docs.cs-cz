@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: efdde349a0501af423ad08576fcf82491b59fcfd
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: c22da2a31be1389ca0b60df6cc64ac6c9155ad69
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56679418"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102579"
 ---
 # <a name="debug-dlls-in-visual-studio-c-c-visual-basic-f"></a>Ladění knihovny DLL v sadě Visual Studio (C#, C++, Visual Basic, F#)
 
@@ -86,7 +86,7 @@ Pro projekty C/C++ můžete nastavit hlavičky a knihovny LIB umístění soubor
 
 Další informace o nastavení projektu jazyka C++, naleznete v tématu [stránky vlastností (Visual C++)](/cpp/ide/property-pages-visual-cpp).
 
-##  <a name="vxtskdebuggingdllprojectsbuildingadebugversion"></a> Sestavení ladicí verze
+## <a name="vxtskdebuggingdllprojectsbuildingadebugversion"></a> Sestavení ladicí verze
 
 Ujistěte se, že jste před zahájením ladění sestavení ladicí verze knihovny DLL. Chcete-li ladit knihovnu DLL, volání aplikace musí být schopna najít jeho [soubor typu .pdb](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md) a všechny další soubory, pak vyžaduje knihovna DLL.
 
@@ -94,7 +94,7 @@ Můžete vytvořit vlastního sestavení úlohu kopírování souborů knihovny 
 
 Ujistěte se, že volání knihovny DLL do správného umístění. To se může zdát zřejmé, ale pokud volající aplikace vyhledá a načte různé kopie knihovny DLL, ladicí program nikdy dosaženo zarážky, které jste nastavili.
 
-##  <a name="vxtskdebuggingdllprojectswaystodebugthedll"></a> Proveďte ladění knihovny DLL
+## <a name="vxtskdebuggingdllprojectswaystodebugthedll"></a> Proveďte ladění knihovny DLL
 
 Knihovnu DLL nelze spustit přímo. Musí být volána aplikací, obvykle *.exe* souboru. Další informace najdete v tématu [vytvořit a spravovat projekty v jazyce Visual C++](/cpp/ide/creating-and-managing-visual-cpp-projects).
 
@@ -123,7 +123,7 @@ Před zahájením ladění volající aplikace, nastavte zarážku v knihovně D
 
 Během ladění, můžete použít **moduly** okno ověření knihovny DLL a *.exe* soubory zatížení aplikace. Chcete-li otevřít **moduly** okně během ladění, **ladění** > **Windows** > **moduly**. Další informace najdete v tématu [jak: Použití okna moduly](../debugger/how-to-use-the-modules-window.md).
 
-###  <a name="vxtskdebuggingdllprojectstheimmediatewindow"></a> Použijte příkazové podokno
+### <a name="vxtskdebuggingdllprojectstheimmediatewindow"></a> Použijte příkazové podokno
 
 Můžete použít **okamžité** okna k vyhodnocení funkcí knihovny DLL nebo metody v době návrhu. **Okamžité** okno hraje roli aplikace pro volajícího.
 
@@ -154,7 +154,7 @@ Například chcete-li otestovat metodu s názvem `Test` ve třídě `Class1`:
 
    Bude dosaženo zarážkou a můžete krokovat `Test`. Poté, co provádění opustí `Test`, ladicí program bude zpět v návrhovém režimu.
 
-##  <a name="vxtskdebuggingdllprojectsmixedmodedebugging"></a> Ladění ve smíšeném režimu
+## <a name="vxtskdebuggingdllprojectsmixedmodedebugging"></a> Ladění ve smíšeném režimu
 
 Pro knihovny DLL ve spravované nebo nativní kód můžete psát volání aplikace. Pokud vaše nativní aplikace volá spravované knihovny DLL a chcete obojí ladit, můžete povolit spravovaný a nativní ladící ve vlastnostech projektu. Přesný postup závisí na, jestli chcete spustit ladění z projektu knihovny DLL nebo projekt volající aplikace. Další informace najdete v tématu [jak: Ladění ve smíšeném režimu](../debugger/how-to-debug-in-mixed-mode.md).
 

@@ -26,12 +26,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f841d7f80e7130b2ee5a9c11f53d12137f7e358d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: e78d20fa0c7d4d0db6db50c2cbb5cde0b79023fb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56642986"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60086323"
 ---
 # <a name="visual-studio-tools-for-office-runtime-overview"></a>Visual Studio Tools for Office runtime – přehled
   Spouštění řešení, které jsou vytvořeny pomocí nástroje Microsoft Office developer tools v sadě Visual Studio, Visual Studio 2010 Tools for Office runtime musí nainstalovat na počítačích koncových uživatelů. Další informace najdete v tématu [jak: Nainstalovat Visual Studio Tools for Office runtime redistributable](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md). Visual Studio 2010 Tools for Office runtime obsahuje dvě hlavní součásti:
@@ -42,7 +42,7 @@ ms.locfileid: "56642986"
 
   K dispozici je několik různých možností, jak nainstalovat modul runtime. V závislosti na konfiguraci počítače jsou při instalaci modulu runtime nainstalovány jeho různé součásti. Další informace najdete v tématu [Visual Studio Tools for Office runtime instalace scénáře](../vsto/visual-studio-tools-for-office-runtime-installation-scenarios.md).
 
-##  <a name="officeextensions"></a> Vysvětlení rozšíření Office pro rozhraní .NET Framework
+## <a name="officeextensions"></a> Vysvětlení rozšíření Office pro rozhraní .NET Framework
  Visual Studio 2010 Tools for Office runtime obsahuje rozšíření Office pro rozhraní .NET Framework 3.5 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] a novější. Řešení, která cílí na jednotlivé verze rozhraní .NET Framework, používají příslušné rozšíření pro danou verzi.
 
  Tato rozšíření jsou tvořena sestaveními, pomocí nichž mohou vaše řešení automatizovat a rozšířit aplikace Office. Když vytvoříte projekt pro Office, sada Visual Studio automaticky přidá odkazy na sestavení, která se používají pro zvolený typ projektu a cílové rozhraní .NET Framework projektu. Další informace o sestaveních v rozšířeních Office naleznete v tématu [sestavení ve Visual Studio Tools for Office runtime](../vsto/assemblies-in-the-visual-studio-tools-for-office-runtime.md).
@@ -74,7 +74,7 @@ ms.locfileid: "56642986"
 
   Když projekt po provedení této změny sestavíte, budou informace o typech pro všechny typy modulu runtime používané projektem vloženy do sestavení řešení. Tyto informace vložený typ, nikoli informací o typech v odkazovaných sestaveních jsou používány řešení za běhu.
 
-##  <a name="UnmanagedLoader"></a> Vysvětlení zavaděče řešení Office
+## <a name="UnmanagedLoader"></a> Vysvětlení zavaděče řešení Office
  Visual Studio Tools for Office runtime obsahuje několik nespravovaných knihoven DLL, které aplikacím Office se načíst modul runtime a řešení pro systém Office. I když by nikdy nemělo být nutné pracovat s těmito knihovnami DLL přímo, znalost účelu těchto knihoven DLL vám může pomoci lépe porozumět architektuře řešení pro Office.
 
  Informace o tom, jak jsou tyto součásti používány během procesu načítání najdete v tématu [architektura přizpůsobení na úrovni dokumentu](../vsto/architecture-of-document-level-customizations.md) a [doplňků VSTO architektura](../vsto/architecture-of-vsto-add-ins.md).

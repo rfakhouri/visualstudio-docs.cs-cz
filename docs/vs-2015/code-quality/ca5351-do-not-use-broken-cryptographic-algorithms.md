@@ -8,12 +8,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 0b8129b4ff946658c5e1b4f24c57ca77cb50e14a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 71f92543b73eddb26f82e787f5c81f53d3aeddb8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54786588"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102663"
 ---
 # <a name="ca5351-do-not-use-broken-cryptographic-algorithms"></a>CA5351: Nepoužívejte poškozené kryptografické algoritmy
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,9 +47,9 @@ ms.locfileid: "54786588"
 ## <a name="how-to-fix-violations"></a>Jak vyřešit porušení  
  Použijte kryptograficky silnější možnosti:  
   
--   MD5, použijte hodnoty hash v [SHA-2](https://msdn.microsoft.com/library/windows/desktop/aa382459.aspx) řady (třeba <xref:System.Security.Cryptography.SHA512>, <xref:System.Security.Cryptography.SHA384>, <xref:System.Security.Cryptography.SHA256>).  
+- MD5, použijte hodnoty hash v [SHA-2](https://msdn.microsoft.com/library/windows/desktop/aa382459.aspx) řady (třeba <xref:System.Security.Cryptography.SHA512>, <xref:System.Security.Cryptography.SHA384>, <xref:System.Security.Cryptography.SHA256>).  
   
--   DES a RC2 <xref:System.Security.Cryptography.Aes> šifrování.  
+- DES a RC2 <xref:System.Security.Cryptography.Aes> šifrování.  
   
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění  
  Nepotlačujte upozornění tohoto pravidla, pokud je byly zkontrolovány podle kryptografického odborníka.  

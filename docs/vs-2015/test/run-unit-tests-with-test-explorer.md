@@ -10,19 +10,19 @@ ms.assetid: 91b167a3-280a-498b-8fc2-f67859a2c64e
 caps.latest.revision: 29
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8c8894239e1e1dd3979b9bb7c61e5aa1f294fe2b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: bfadcb962e63a38f4f8190c2dd9c02f4e2ac4643
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54805105"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107993"
 ---
-# <a name="run-unit-tests-with-test-explorer"></a>Spouštění testů jednotek pomocí Průzkumníka testů
+# <a name="run-unit-tests-with-test-explorer"></a>Spouštění testů částí pomocí Průzkumníka testů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Chcete-li spustit testy jednotky ze sady Visual Studio nebo projektů testování jednotky třetí strany, seskupte testy do kategorií, filtrovat seznam testů a vytvořit, uložit a spusťte seznamy stop testů pomocí nástroje Test Explorer. Můžete také ladit testy a analyzovat pokrytí testu výkonu a kódu.  
   
-##  <a name="BKMK_Contents"></a> Obsah  
+## <a name="BKMK_Contents"></a> Obsah  
  [Rozhraní pro testování částí a Testovací projekty](#BKMK_Unit_test_frameworks_and_test_projects)  
   
  [Spustit testy v Průzkumníku testů](#BKMK_Run_tests_in_Test_Explorer)  
@@ -37,14 +37,14 @@ Chcete-li spustit testy jednotky ze sady Visual Studio nebo projektů testován�
   
  [Externí prostředky](#BKMK_External_resources)  
   
-##  <a name="BKMK_Unit_test_frameworks_and_test_projects"></a> Rozhraní pro testování částí a Testovací projekty  
+## <a name="BKMK_Unit_test_frameworks_and_test_projects"></a> Rozhraní pro testování částí a Testovací projekty  
  Visual Studio obsahuje rozhraní testování částí Microsoft pro spravovaný i nativní kód. Ale Průzkumníku testů můžete také spustit libovolné jednotky rozhraní testování, který zavedl adaptér Test Explorer. Další informace o instalaci rozhraní pro testování jednotky třetí strany, naleznete v tématu [nainstalovat rozhraní pro testování jednotky třetí strany](../test/install-third-party-unit-test-frameworks.md)  
   
  Průzkumník testů může spouštět testy z více zkušebních projektů v řešení a z testů tříd, které jsou součástí výroby kódu projektů. Projekty testů mohou použít jiné jednotky rozhraní testování. Pokud testovaný kód je určené pro rozhraní .NET Framework, testovací projekt lze zapsat v libovolném jazyce, který také cílí na rozhraní .NET Framework, bez ohledu na jazyk cílového kódu. Nativní projekty kódu C/C++ musí být testovány pomocí rozhraní testování částí C++.  
   
  ![Zpět na začátek](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [obsah](#BKMK_Contents)  
   
-##  <a name="BKMK_Run_tests_in_Test_Explorer"></a> Spustit testy v Průzkumníku testů  
+## <a name="BKMK_Run_tests_in_Test_Explorer"></a> Spustit testy v Průzkumníku testů  
  [Spuštění testů](#BKMK_Run_tests) **&#124;** [spouštět testy po každém sestavení](#BKMK_Run_tests_after_every_build)  
   
  Když sestavíte testovací projekt, testy se zobrazí v Průzkumníku testů. Pokud se nezobrazí Průzkumník testů, zvolte **testovací** v nabídce sady Visual Studio, zvolte **Windows**a klikněte na tlačítko **Průzkumník testů**.  
@@ -59,7 +59,7 @@ Chcete-li spustit testy jednotky ze sady Visual Studio nebo projektů testován�
   
  ![Zpět na začátek](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [obsah](#BKMK_Contents)  
   
-###  <a name="BKMK_Run_tests"></a> Spuštění testů  
+### <a name="BKMK_Run_tests"></a> Spuštění testů  
  Spustit všechny testy v řešení, všechny testy ve skupině nebo sadu testů, které jste vybrali. Proveďte jednu z těchto akcí:  
   
 - Chcete-li spustit všechny testy v řešení, zvolte **spustit všechny**.  
@@ -74,7 +74,7 @@ Chcete-li spustit testy jednotky ze sady Visual Studio nebo projektů testován�
   
   ![Zpět na začátek](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [obsah](#BKMK_Contents)  
   
-###  <a name="BKMK_Run_tests_after_every_build"></a> Spustit testy po každém sestavení  
+### <a name="BKMK_Run_tests_after_every_build"></a> Spustit testy po každém sestavení  
   
 > [!WARNING]
 >  Spuštění testů jednotky po každém sestavení je podporováno v sadě Visual Studio Enterprise.  
@@ -85,12 +85,12 @@ Chcete-li spustit testy jednotky ze sady Visual Studio nebo projektů testován�
   
  ![Zpět na začátek](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [obsah](#BKMK_Contents)  
   
-##  <a name="BKMK_View_test_results"></a> Zobrazení výsledků testu  
+## <a name="BKMK_View_test_results"></a> Zobrazení výsledků testu  
  [Zobrazit podrobnosti o testu](#BKMK_View_test_details) **&#124;** [zobrazit zdrojový kód testovací metody](#BKMK_View_the_source_code_of_a_test_method)  
   
  Jak spustit, zápis a znovu spouštěny, zobrazuje Průzkumník testů výsledky ve skupinách **neúspěšné testy**, **úspěšné testy**, **přeskočené testy** a **není spuštěn Testy**. V podokně podrobností v dolní části Průzkumníku testů zobrazí shrnutí testu spusťte.  
   
-###  <a name="BKMK_View_test_details"></a> Zobrazit podrobnosti o testu  
+### <a name="BKMK_View_test_details"></a> Zobrazit podrobnosti o testu  
  Chcete-li zobrazit podrobnosti o konkrétním testu, vyberte test.  
   
  ![Podrobnosti o spuštění testu](../test/media/ute-testdetails.png "UTE_TestDetails")  
@@ -111,17 +111,17 @@ Chcete-li spustit testy jednotky ze sady Visual Studio nebo projektů testován�
   
   ![Zpět na začátek](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [obsah](#BKMK_Contents)  
   
-###  <a name="BKMK_View_the_source_code_of_a_test_method"></a> Zobrazit zdrojový kód testovací metody  
+### <a name="BKMK_View_the_source_code_of_a_test_method"></a> Zobrazit zdrojový kód testovací metody  
  Chcete-li zobrazit zdrojový kód pro testovací metodu v editoru sady Visual Studio, vyberte test a zvolte **otevřít Test** v kontextové nabídce (klávesnice: F12).  
   
  ![Zpět na začátek](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [obsah](#BKMK_Contents)  
   
-##  <a name="BKMK_Group_and_filter_the_test_list"></a> Seskupit a filtrovat seznam testů  
+## <a name="BKMK_Group_and_filter_the_test_list"></a> Seskupit a filtrovat seznam testů  
  [Seskupení seznamu testů](#BKMK_Grouping_the_test_list) **&#124;** [Seskupit podle vlastností](#BKMK_Group_by_traits) **&#124;** [vyhledávání a filtrování seznamu testů](#BKMK_Search_and_filter_the_test_list)  
   
  Test Explorer umožňuje seskupit testy do předdefinovaných kategorií. Většina prostředí testování jednotek, které běží v Průzkumníku testů, umožňuje definovat vlastní kategorie a dvojice kategorie/hodnota pro seskupení testů. Seznam testů můžete také filtrovat porovnáním řetězců s vlastnostmi testů.  
   
-###  <a name="BKMK_Grouping_the_test_list"></a> Seskupení seznamu testů  
+### <a name="BKMK_Grouping_the_test_list"></a> Seskupení seznamu testů  
  Chcete-li změnit způsob uspořádání testů, zvolte šipku dolů vedle **Group** tlačítko ![tlačítko skupiny Průzkumníka testů](../test/media/ute-groupby-btn.png "UTE_GroupBy_btn") a vyberte Nová seskupení kritéria.  
   
  ![Seskupte testy podle kategorie v Průzkumníku testů](../test/media/ute-groupbycategory.png "UTE_GroupByCategory")  
@@ -137,7 +137,7 @@ Chcete-li spustit testy jednotky ze sady Visual Studio nebo projektů testován�
   
  ![Zpět na začátek](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [obsah](#BKMK_Contents)  
   
-###  <a name="BKMK_Group_by_traits"></a> Seskupit podle vlastností  
+### <a name="BKMK_Group_by_traits"></a> Seskupit podle vlastností  
  Vlastnost je obvykle dvojice název/hodnota kategorie, ale může být také jednu kategorii. Vlastnosti mohou být přiřazeny metodám, které jsou označeny jako testovací metody testovacím rozhraním jednotky. Rámce jednotkových testů můžete definovat kategorií vlastností. Chcete-li definovat vlastní dvojice název/hodnota kategorie do kategorií vlastností můžete přidat hodnoty. Syntaxe pro určení kategorií vlastností a hodnot je definována v rámci testovacího rozhraní jednotky.  
   
  **Vlastnosti v testování části Microsoft Framework pro spravovaný kód**  
@@ -185,7 +185,7 @@ TEST_METHOD(Method1)
   
  ![Zpět na začátek](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [obsah](#BKMK_Contents)  
   
-###  <a name="BKMK_Search_and_filter_the_test_list"></a> Hledat a filtrovat seznam testů  
+### <a name="BKMK_Search_and_filter_the_test_list"></a> Hledat a filtrovat seznam testů  
  Filtry Průzkumníka testování filtrů můžete použít k omezení zkušebních metod v projektech, které můžete zobrazit a spustit.  
   
  Zadejte řetězec do vyhledávacího pole Průzkumníka testů a zvolte ENTER, seznam testů je filtrován a zobrazuje pouze testy, jejichž plně kvalifikované názvy obsahují řetězec.  
@@ -229,7 +229,7 @@ FullName:"MyClass" - FullName:"PerfTest"
   
  ![Zpět na začátek](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [obsah](#BKMK_Contents)  
   
-##  <a name="BKMK_Create_custom_playlists"></a> Vytvořit vlastní seznamy skladeb  
+## <a name="BKMK_Create_custom_playlists"></a> Vytvořit vlastní seznamy skladeb  
  Můžete vytvořit a uložit seznam testů, které chcete spustit nebo zobrazit jako skupinu. Když vyberete seznam stop, testy v seznamu se zobrazí Průzkumník testů. Test můžete přidat k více než jednoho seznamu stop a všechny testy ve vašem projektu jsou k dispozici, když zvolíte výchozí **všechny testy** seznamu testů.  
   
  ![Zvolte seznam stop](../test/media/ute-playlist.png "UTE_Playlist")  
@@ -244,10 +244,10 @@ FullName:"MyClass" - FullName:"PerfTest"
   
  ![Zpět na začátek](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [obsah](#BKMK_Contents)  
   
-##  <a name="BKMK_Debug_and_analyze_unit_tests"></a> Ladění a analýza testů jednotek  
+## <a name="BKMK_Debug_and_analyze_unit_tests"></a> Ladění a analýza testů jednotek  
  [Ladění testů jednotky](#BKMK_Debug_unit_tests) **&#124;** [diagnostikovat problémy s výkonem metod testu](#BKMK_Diagnose_test_method_performance_issues) **&#124;** [analyzovat pokrytí kódem jednotkového testu](#BKMK_Analyzeunit_test_code_coverage)  
   
-###  <a name="BKMK_Debug_unit_tests"></a> Ladění testů jednotky  
+### <a name="BKMK_Debug_unit_tests"></a> Ladění testů jednotky  
  Průzkumník testů můžete použít ke spuštění relace ladění pro testy. Krokování kódu s ladicím programem Visual Studio bez problémů přejdete vpřed a zpět mezi testováním částí a testovaný projekt. Spuštění ladění:  
   
 1. V editoru sady Visual Studio nastavte zarážku v jedné nebo více testovacích metod, které chcete ladit.  
@@ -261,10 +261,10 @@ FullName:"MyClass" - FullName:"PerfTest"
   
    ![Zpět na začátek](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [obsah](#BKMK_Contents)  
   
-###  <a name="BKMK_Diagnose_test_method_performance_issues"></a> Diagnostika problémů s výkonem test – metoda  
+### <a name="BKMK_Diagnose_test_method_performance_issues"></a> Diagnostika problémů s výkonem test – metoda  
  Chcete-li diagnostikovat, proč testovací metoda trvá příliš dlouho, v Průzkumníku testů vyberte metodu a zvolte profil v místní nabídce. Zobrazit [prohlížeč výkonu](../profiling/performance-explorer.md).  
   
-###  <a name="BKMK_Analyzeunit_test_code_coverage"></a> Analyzovat pokrytí kódem jednotkového testu  
+### <a name="BKMK_Analyzeunit_test_code_coverage"></a> Analyzovat pokrytí kódem jednotkového testu  
   
 > [!NOTE]
 >  Pokrytí kódem jednotkového testu je k dispozici pouze v sadě Visual Studio Enterprise.  
@@ -277,9 +277,9 @@ FullName:"MyClass" - FullName:"PerfTest"
   
 2. Z podnabídky zvolte jeden z následujících příkazů:  
   
-   -   **Vybrané testy** spouští testovací metody, které jste vybrali v aplikaci Test Explorer.  
+   - **Vybrané testy** spouští testovací metody, které jste vybrali v aplikaci Test Explorer.  
   
-   -   **Všechny testy** spustí všechny testovací metody v řešení.  
+   - **Všechny testy** spustí všechny testovací metody v řešení.  
   
    Okno výsledky pokrytí kódu zobrazuje procento bloků kódu produktu, které byly vykonány podle řádku, funkce, třídy, oboru názvů a modulu.  
   
@@ -287,9 +287,9 @@ FullName:"MyClass" - FullName:"PerfTest"
   
    ![Zpět na začátek](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [obsah](#BKMK_Contents)  
   
-##  <a name="BKMK_External_resources"></a> Externí prostředky  
+## <a name="BKMK_External_resources"></a> Externí prostředky  
   
-###  <a name="BKMK_Guidance"></a> Doprovodné materiály  
+### <a name="BKMK_Guidance"></a> Doprovodné materiály  
  [Testování pro nepřetržité dodávky s Visual Studio 2012 – kapitola 2: Testování částí: Testování uvnitř](http://go.microsoft.com/fwlink/?LinkID=255188)  
   
 ## <a name="see-also"></a>Viz také  

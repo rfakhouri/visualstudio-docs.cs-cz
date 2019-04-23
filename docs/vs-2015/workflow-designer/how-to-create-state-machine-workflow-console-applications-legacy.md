@@ -13,40 +13,40 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bb6026def60be27535843a51d78c4c05657d385f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8fefc6ae73f4c5a331adb17ef72fe28d31a4f350
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54767746"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60101519"
 ---
 # <a name="how-to-create-state-machine-workflow-console-applications-legacy"></a>Postupy: Vytvoření konzolových aplikací pracovních postupů stavového stroje (starší verze)
 Postupujte podle těchto kroků a vytvořte projekt Konzolová aplikace pracovního postupu stavu počítače pomocí starší verze [!INCLUDE[wfd1](../includes/wfd1-md.md)] poskytované [!INCLUDE[vs2010](../includes/vs2010-md.md)]. Použijte starší [!INCLUDE[wfd2](../includes/wfd2-md.md)] potřeba cílit na platformu [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] nebo [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
   
 ### <a name="to-create-a-state-machine-application-project"></a>Vytvoření projektu aplikace stav počítače  
   
-1.  Spusťte Visual Studio.  
+1. Spusťte Visual Studio.  
   
-2.  Na **souboru** nabídky, přejděte k **nový**a pak vyberte **projektu**.  
+2. Na **souboru** nabídky, přejděte k **nový**a pak vyberte **projektu**.  
   
      **Nový projekt** zobrazí se dialogové okno.  
   
-3.  Vyberte buď **rozhraní .NET Framework 3.0** možnost nebo **rozhraní .NET Framework 3.5** možnost v rozevíracím seznamu v horní části **nový projekt** okna pro přístup k starší verze návrháře.  
+3. Vyberte buď **rozhraní .NET Framework 3.0** možnost nebo **rozhraní .NET Framework 3.5** možnost v rozevíracím seznamu v horní části **nový projekt** okna pro přístup k starší verze návrháře.  
   
     > [!NOTE]
     >  Výchozí možnost v [!INCLUDE[vs2010](../includes/vs2010-md.md)] je **rozhraní .NET Framework 4**. Tato možnost slouží k vytvoření [!INCLUDE[wf](../includes/wf-md.md)] aplikací, které se zaměřují [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] a nepoužívá starší verze návrháře.  
   
-4.  V **typy projektů** podokně, vyberte jazyk Visual C# nebo Visual Basic (v části **jiné jazyky**) a pak vyberte **pracovního postupu**.  
+4. V **typy projektů** podokně, vyberte jazyk Visual C# nebo Visual Basic (v části **jiné jazyky**) a pak vyberte **pracovního postupu**.  
   
-5.  V **šablony** vyberte **Konzolová aplikace pracovního postupu stavu počítače**.  
+5. V **šablony** vyberte **Konzolová aplikace pracovního postupu stavu počítače**.  
   
-6.  V **název** zadejte popisný název pro váš projekt, aby byl snadno identifikovat.  
+6. V **název** zadejte popisný název pro váš projekt, aby byl snadno identifikovat.  
   
-7.  V **umístění** zadejte adresář, ve kterém chcete projekt uložit, nebo klikněte na tlačítko **Procházet** přejít k němu.  
+7. V **umístění** zadejte adresář, ve kterém chcete projekt uložit, nebo klikněte na tlačítko **Procházet** přejít k němu.  
   
      Pokud chcete řešení adresář vytvořený pro projekt, vyberte **vytvořit adresář pro řešení** zaškrtněte políčko a zadejte název do pole **název řešení** pole.  
   
-8.  Klikněte na **OK**.  
+8. Klikněte na **OK**.  
   
 ## <a name="see-also"></a>Viz také  
  [Vytváření projektů pracovních postupů starších verzí](../workflow-designer/creating-legacy-workflow-projects.md)   

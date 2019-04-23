@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ad4ddf0ff7e4fd2f315b47f8a7e2fddb604932e7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 81941d131b51135771333aeab966716f4126a58b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604030"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091275"
 ---
 # <a name="how-to-programmatically-copy-and-paste-shapes-in-a-visio-document"></a>Postupy: Programově kopírování a vkládání obrazců do dokumentů aplikace Visio
   Programově můžete zkopírovat tvary na jedné stránce dokumentu a vložte je do novou stránku ve stejném dokumentu. Můžete vkládat do výchozího umístění (střední části okna aktivní) nebo do stejné souřadnice umístění měly na původní stránku.
@@ -28,7 +28,7 @@ ms.locfileid: "56604030"
 
 ### <a name="to-copy-shapes-to-the-center-of-another-page"></a>Kopírování tvary do středu jinou stránku
 
--   Následující příklad ukazuje, jak kopírovat tvary od první stránky a vkládat je do centra na druhé stránce.
+- Následující příklad ukazuje, jak kopírovat tvary od první stránky a vkládat je do centra na druhé stránce.
 
      [!code-csharp[Trin_VstcoreVisioAutomationAddIn#14](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#14)]
      [!code-vb[Trin_VstcoreVisioAutomationAddIn#14](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#14)]
@@ -40,7 +40,7 @@ ms.locfileid: "56604030"
 
 ### <a name="to-copy-shapes-and-shape-locations-to-another-page"></a>Zkopírujte tvary a umístění obrazce na jinou stránku
 
--   Následující příklad ukazuje, jak zkopírovat tvary od první stránky a vložte je do druhé stránce s jejich původní souřadnici umístění.
+- Následující příklad ukazuje, jak zkopírovat tvary od první stránky a vložte je do druhé stránce s jejich původní souřadnici umístění.
 
      [!code-csharp[Trin_VstcoreVisioAutomationAddIn#15](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#15)]
      [!code-vb[Trin_VstcoreVisioAutomationAddIn#15](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#15)]

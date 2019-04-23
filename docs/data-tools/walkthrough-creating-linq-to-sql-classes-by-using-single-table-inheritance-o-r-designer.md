@@ -1,5 +1,5 @@
 ---
-title: 'Průvodce: Vytvoření třídy LINQ to SQL s použitím dědičnosti jedné tabulky (Návrhář O-R)'
+title: 'Návod: Vytvoření třídy LINQ to SQL s použitím dědičnosti jedné tabulky (Návrhář O-R)'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -11,14 +11,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 20f4c2b4a876c35868b08378bda4daaf6d13c2e3
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 2b270d742cab45bebc48e37dd557ce4cdb2470b3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55945843"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114337"
 ---
-# <a name="walkthrough-create-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>Průvodce: Vytvoření tříd LINQ to SQL s použitím dědičnosti jedné tabulky (O/R Designer)
+# <a name="walkthrough-create-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>Návod: Vytvoření tříd LINQ to SQL s použitím dědičnosti jedné tabulky (O/R Designer)
 [Technologie LINQ to SQL nástroje v sadě Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) podporuje dědičnosti jedné tabulky, jak se zpravidla implementuje v relačních systémech. Tento názorný postup rozšiřují obecných kroků uvedených v [jak: Konfigurace dědičnosti pomocí Návrháře relací objektů](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md) tématu a poskytuje některé reálná data pro demonstraci použití dědičnosti v [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)].
 
  V tomto návodu budete provádět následující úlohy:
@@ -42,12 +42,12 @@ ms.locfileid: "55945843"
 
 ### <a name="to-create-a-base-table-to-demonstrate-inheritance"></a>Chcete-li vytvořit základní tabulky k předvedení dědičnosti
 
-1.  V **Průzkumníka serveru** nebo **Průzkumník databáze**, klikněte pravým tlačítkem myši **tabulky** uzel a klikněte na tlačítko **přidat novou tabulku**.
+1. V **Průzkumníka serveru** nebo **Průzkumník databáze**, klikněte pravým tlačítkem myši **tabulky** uzel a klikněte na tlačítko **přidat novou tabulku**.
 
     > [!NOTE]
     >  Můžete použít databázi Northwind nebo jakékoli jiné databáze, které můžete přidat tabulku.
 
-2.  V **návrháře tabulky**, přidejte následující sloupce v tabulce:
+2. V **návrháře tabulky**, přidejte následující sloupce v tabulce:
 
     |Název sloupce|Datový typ|Povolit hodnoty Null|
     |-----------------|---------------|-----------------|
@@ -57,18 +57,18 @@ ms.locfileid: "55945843"
     |**LastName**|**nvarchar(200)**|**False**|
     |**Manager**|**int**|**Hodnota TRUE**|
 
-3.  Sloupec ID nastavte jako primární klíč.
+3. Sloupec ID nastavte jako primární klíč.
 
-4.  Uložte tabulku a pojmenujte ho **osoba**.
+4. Uložte tabulku a pojmenujte ho **osoba**.
 
 ## <a name="add-data-to-the-table"></a>Přidání dat do tabulky
  Tak, aby můžete ověřit, jestli je správně nakonfigurovaný dědičnosti, musí v tabulce některá data pro každou třídu v jedné tabulky dědičnosti.
 
 ### <a name="to-add-data-to-the-table"></a>Chcete-li přidat data do tabulky
 
-1.  Otevřete v zobrazení dat v tabulce. (Klikněte pravým tlačítkem myši **osoba** tabulku v **Průzkumníka serveru** nebo **Průzkumník databáze** a klikněte na tlačítko **zobrazit Data tabulky**.)
+1. Otevřete v zobrazení dat v tabulce. (Klikněte pravým tlačítkem myši **osoba** tabulku v **Průzkumníka serveru** nebo **Průzkumník databáze** a klikněte na tlačítko **zobrazit Data tabulky**.)
 
-2.  Zkopírujte následující data do tabulky. (Můžete ho zkopírujte a vložte ho do tabulky tak, že vyberete celý řádek v **výsledky** podokně.)
+2. Zkopírujte následující data do tabulky. (Můžete ho zkopírujte a vložte ho do tabulky tak, že vyberete celý řádek v **výsledky** podokně.)
 
     ||||||
     |-|-|-|-|-|
@@ -105,9 +105,9 @@ ms.locfileid: "55945843"
 
 ### <a name="to-add-a-linq-to-sql-file-to-the-project"></a>Chcete-li přidat LINQ do SQL souboru do projektu
 
-1.  Na **projektu** nabídky, klikněte na tlačítko **přidat novou položku**.
+1. Na **projektu** nabídky, klikněte na tlačítko **přidat novou položku**.
 
-2.  Klikněte na tlačítko **třídy LINQ to SQL** šablonu a pak klikněte na tlačítko **přidat**.
+2. Klikněte na tlačítko **třídy LINQ to SQL** šablonu a pak klikněte na tlačítko **přidat**.
 
      *Dbml* přidá soubor do projektu a **O/R Designer** otevře.
 
@@ -116,21 +116,21 @@ ms.locfileid: "55945843"
 
 ### <a name="to-create-the-inheritance"></a>Chcete-li vytvořit dědičnost
 
-1.  V **Průzkumníka serveru** nebo **Průzkumník databáze**, přejděte **osoba** tabulku, která jste vytvořili dříve.
+1. V **Průzkumníka serveru** nebo **Průzkumník databáze**, přejděte **osoba** tabulku, která jste vytvořili dříve.
 
-2.  Přetáhněte **osoba** tabulky do **O/R Designer** návrhovou plochu.
+2. Přetáhněte **osoba** tabulky do **O/R Designer** návrhovou plochu.
 
-3.  Přetáhněte druhý **osoba** tabulky do **O/R Designer** a změňte její název na **zaměstnance**.
+3. Přetáhněte druhý **osoba** tabulky do **O/R Designer** a změňte její název na **zaměstnance**.
 
-4.  Odstranit **správce** vlastnost z **osoba** objektu.
+4. Odstranit **správce** vlastnost z **osoba** objektu.
 
-5.  Odstranit **typ**, **ID**, **FirstName**, a **LastName** vlastnosti z **zaměstnance** objektu. (Jinými slovy, odstraní se všechny vlastnosti s výjimkou **správce**.)
+5. Odstranit **typ**, **ID**, **FirstName**, a **LastName** vlastnosti z **zaměstnance** objektu. (Jinými slovy, odstraní se všechny vlastnosti s výjimkou **správce**.)
 
-6.  Z **Návrhář relací objektů** karty **nástrojů**, vytvořit **dědičnosti** mezi **osoba** a  **Zaměstnanec** objekty. Chcete-li to provést, klikněte na tlačítko **dědičnosti** položky v **nástrojů** a uvolněte tlačítko myši. Klikněte **zaměstnance** objekt a potom **osoba** objektu v **O/R Designer**. Pak odkazuje na šipku v linii dědičnosti **osoba** objektu.
+6. Z **Návrhář relací objektů** karty **nástrojů**, vytvořit **dědičnosti** mezi **osoba** a  **Zaměstnanec** objekty. Chcete-li to provést, klikněte na tlačítko **dědičnosti** položky v **nástrojů** a uvolněte tlačítko myši. Klikněte **zaměstnance** objekt a potom **osoba** objektu v **O/R Designer**. Pak odkazuje na šipku v linii dědičnosti **osoba** objektu.
 
-7.  Klikněte na tlačítko **dědičnosti** řádku na návrhové ploše.
+7. Klikněte na tlačítko **dědičnosti** řádku na návrhové ploše.
 
-8.  Nastavte **vlastnost diskriminátoru** vlastnost **typ**.
+8. Nastavte **vlastnost diskriminátoru** vlastnost **typ**.
 
 9. Nastavte **hodnota diskriminátoru odvozené třídy** vlastnost **2**.
 
@@ -145,11 +145,11 @@ ms.locfileid: "55945843"
 
 ### <a name="to-create-a-linq-query-and-display-the-results-on-the-form"></a>Můžete vytvořit dotaz LINQ a zobrazit výsledky ve formuláři
 
-1.  Přetáhněte **ListBox** do **Form1**.
+1. Přetáhněte **ListBox** do **Form1**.
 
-2.  Klikněte dvakrát na formulář pro vytvoření `Form1_Load` obslužné rutiny události.
+2. Klikněte dvakrát na formulář pro vytvoření `Form1_Load` obslužné rutiny události.
 
-3.  Přidejte následující kód, který `Form1_Load` obslužné rutiny události:
+3. Přidejte následující kód, který `Form1_Load` obslužné rutiny události:
 
     ```vb
     Dim dc As New DataClasses1DataContext
@@ -179,11 +179,11 @@ ms.locfileid: "55945843"
 
 ### <a name="to-test-the-application"></a>Testování aplikace
 
-1.  Stisknutím klávesy **F5**.
+1. Stisknutím klávesy **F5**.
 
-2.  Ověření, který pouze záznamy, které mají hodnotu 2 v jejich **typ** sloupce se zobrazí.
+2. Ověření, který pouze záznamy, které mají hodnotu 2 v jejich **typ** sloupce se zobrazí.
 
-3.  Zavřete formulář. (Na **ladění** nabídky, klikněte na tlačítko **Zastavit ladění**.)
+3. Zavřete formulář. (Na **ladění** nabídky, klikněte na tlačítko **Zastavit ladění**.)
 
 ## <a name="see-also"></a>Viz také:
 

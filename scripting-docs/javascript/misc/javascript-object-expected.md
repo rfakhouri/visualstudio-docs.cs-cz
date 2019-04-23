@@ -14,19 +14,19 @@ ms.assetid: cc7cc32b-e444-4afa-9be1-802c83fdf5ae
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5632d56af7b8b6ef2a07f0f0a4c7bf270875a643
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: ceaae323c974a1f41b6f5bd2a3ca093ef7c0b2d9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56840309"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60084294"
 ---
 # <a name="javascript-object-expected"></a>Byl očekáván objekt jazyka JavaScript
 Jste se pokusili předat non -[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] objekt integrovanou funkci, která očekává, že [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] objektu. Objekty definované ve vyžadují různé integrované funkce [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] (na rozdíl od objekty definované sadou nebo externí komponenta jako ovládací prvek hostitele).  
   
 ### <a name="to-correct-this-error"></a>Oprava této chyby  
   
--   Ujistěte se, že objekt, který se v předání jako parametru je nesprávného typu.  
+- Ujistěte se, že objekt, který se v předání jako parametru je nesprávného typu.  
   
 ## <a name="see-also"></a>Viz také  
  [Objekty a pole](../../javascript/objects-and-arrays-javascript.md)   

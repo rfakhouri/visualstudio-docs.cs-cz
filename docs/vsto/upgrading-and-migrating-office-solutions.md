@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6a23cca7e0ae333b50c06e5e4b40e0a51d626f9b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: c693b85eb7441749300181da8108dae353e91ad1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56635706"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089366"
 ---
 # <a name="upgrade-and-migrate-office-solutions"></a>Upgrade a migrace řešení Office
   Pokud máte projekt Microsoft Office, který byl vytvořen v dřívější verzi sady Visual Studio, musíte upgradovat projekt pro použití v aktuálních verzích sady Visual Studio. K upgradu aplikace Microsoft Office project, otevřete ho ve verzi Visual Studio, která zahrnuje nástroje Microsoft Office developer tools. Další informace o verzích sady Visual Studio, které zahrnují nástroje Microsoft Office developer tools, naleznete v tématu [konfigurace počítače pro vývoj řešení pro systém Office](../vsto/configuring-a-computer-to-develop-office-solutions.md).
@@ -35,22 +35,22 @@ ms.locfileid: "56635706"
 ## <a name="changes-to-upgraded-projects"></a>Změny upgradovaných projektů
  Při upgradu aplikace Microsoft Office project Visual Studio změní projekt tak, aby cílil na následující položky:
 
--   Visual Studio 2010 Tools for Office runtime. Další informace najdete v tématu [Visual Studio Tools for Office runtime přehled](../vsto/visual-studio-tools-for-office-runtime-overview.md).
+- Visual Studio 2010 Tools for Office runtime. Další informace najdete v tématu [Visual Studio Tools for Office runtime přehled](../vsto/visual-studio-tools-for-office-runtime-overview.md).
 
--   Odkazy na aktuální sestavení.
+- Odkazy na aktuální sestavení.
 
--   Verze rozhraní .NET Framework, která je podporována typem projektu (při upgradu na Visual Studio 2013 pouze).
+- Verze rozhraní .NET Framework, která je podporována typem projektu (při upgradu na Visual Studio 2013 pouze).
 
--   Verze systému Microsoft Office, která je podporována typem projektu (při upgradu na Visual Studio 2013 pouze).
+- Verze systému Microsoft Office, která je podporována typem projektu (při upgradu na Visual Studio 2013 pouze).
 
 ## <a name="assembly-references"></a>Odkazy na sestavení
  Visual Studio upgraduje následující odkazy na sestavení v projektu:
 
--   Aplikace Microsoft Office sestavení primární spolupráce (PIA).
+- Aplikace Microsoft Office sestavení primární spolupráce (PIA).
 
--   Sestavení v [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. Další informace o těchto sestaveních naleznete v tématu [Visual Studio Tools for Office runtime přehled](../vsto/visual-studio-tools-for-office-runtime-overview.md).
+- Sestavení v [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. Další informace o těchto sestaveních naleznete v tématu [Visual Studio Tools for Office runtime přehled](../vsto/visual-studio-tools-for-office-runtime-overview.md).
 
--   Nové nebo aktualizované verze závislých sestavení.
+- Nové nebo aktualizované verze závislých sestavení.
 
 ## <a name="targeted-net-framework"></a>Cílové rozhraní .NET Framework
  Při upgradu projektu sady Visual Studio 2013, Visual Studio změní projekt, aby cílil buď [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] nebo [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]. Verze rozhraní .NET framework, který je cílem projektu závisí na verzi systému Office nainstalovaného v počítači. Pokud [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] je nainstalován, Visual Studio změní projekt, aby mířil [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]. V opačném případě Visual Studio změní projekt, aby mířil [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)].

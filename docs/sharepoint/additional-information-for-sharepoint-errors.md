@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: afbfaae56470fa9b16c99277d36b0e39a6504906
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 362eb5fd1973035e31ccd301f6cc46a748a9b2ac
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628907"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099725"
 ---
 # <a name="additional-information-for-sharepoint-errors"></a>Další informace o chybách služby SharePoint
   Můžete najít pomoc s řešením [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] nástrojů služby SharePoint, chyby a upozornění při řešení potíží, témata a veřejná fóra.
@@ -29,11 +29,11 @@ ms.locfileid: "56628907"
 ## <a name="troubleshoot-errors-and-issues"></a>Řešení chyb a problémů
  Potřebujete pomoc s některé běžné chyby a jiné problémy v [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] nástrojů služby SharePoint, naleznete v následujících tématech:
 
--   [Řešení potíží s řešeními služby SharePoint](../sharepoint/troubleshooting-sharepoint-solutions.md)
+- [Řešení potíží s řešeními služby SharePoint](../sharepoint/troubleshooting-sharepoint-solutions.md)
 
--   [Ladění řešení služby SharePoint](../sharepoint/debugging-sharepoint-solutions.md)
+- [Ladění řešení služby SharePoint](../sharepoint/debugging-sharepoint-solutions.md)
 
--   [Řešení potíží s balení a nasazení SharePoint](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md)
+- [Řešení potíží s balení a nasazení SharePoint](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md)
 
 ## <a name="other-resources"></a>Další zdroje
  Následující tabulce jsou uvedeny [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] nástrojů služby SharePoint, fóra a další prostředky, které jsou k dispozici.

@@ -27,12 +27,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 84c4b2e5aa532becc1bf9bc50a3c7bcdbd2b8d4e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 4986faba52606937993af17824789ced2d600ad5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955632"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109397"
 ---
 # <a name="how-to-customize-menus-and-toolbars-in-visual-studio"></a>Postupy: Přizpůsobení nabídek a panelů nástrojů v sadě Visual Studio
 
@@ -43,38 +43,38 @@ Visual Studio můžete přizpůsobit nejen přidáváním a odebíráním nabíd
 
 ## <a name="add-remove-or-move-a-menu-on-the-menu-bar"></a>Přidání, odebrání nebo přesunutí nabídky na řádku nabídek
 
-1.  V panelu nabídky zvolte **nástroje** > **vlastní**.
+1. V panelu nabídky zvolte **nástroje** > **vlastní**.
 
      **Vlastní** zobrazí se dialogové okno.
 
-2.  Na **příkazy** kartu, ponechte **nabídek** vybraný přepínač, ponechte **nabídek** vybrán v seznamu vedle této možnosti a pak proveďte jednu z následujících sad pomocí následujících kroků:
+2. Na **příkazy** kartu, ponechte **nabídek** vybraný přepínač, ponechte **nabídek** vybrán v seznamu vedle této možnosti a pak proveďte jednu z následujících sad pomocí následujících kroků:
 
-    -   Chcete-li přidat nabídku, zvolte **přidat novou nabídku** tlačítko, zvolte **změnit výběr** tlačítko a pak zadejte název nabídky, kterou chcete přidat.
+    - Chcete-li přidat nabídku, zvolte **přidat novou nabídku** tlačítko, zvolte **změnit výběr** tlačítko a pak zadejte název nabídky, kterou chcete přidat.
 
         ![Ukazuje, jak přidat nabídku dialogové okno přizpůsobit](../ide/media/addmenu.png)
 
-    -   Chcete-li nabídku odebrat, zvolte jej v **ovládací prvky** seznamu a klikněte na tlačítko **odstranit** tlačítko.
+    - Chcete-li nabídku odebrat, zvolte jej v **ovládací prvky** seznamu a klikněte na tlačítko **odstranit** tlačítko.
 
-    -   Přejděte do nabídky v rámci řádku nabídek zvolte z nabídky **ovládací prvky** seznamu a klikněte na tlačítko **přesunout nahoru** nebo **přesunout dolů** tlačítko.
+    - Přejděte do nabídky v rámci řádku nabídek zvolte z nabídky **ovládací prvky** seznamu a klikněte na tlačítko **přesunout nahoru** nebo **přesunout dolů** tlačítko.
 
 ## <a name="add-remove-or-move-a-toolbar"></a>Přidání, odebrání nebo přesunutí panelu nástrojů
 
-1.  V panelu nabídky zvolte **nástroje** > **vlastní**.
+1. V panelu nabídky zvolte **nástroje** > **vlastní**.
 
      **Vlastní** zobrazí se dialogové okno.
 
-2.  Na **nástrojů** kartu, proveďte jednu z následujících sad kroků:
+2. Na **nástrojů** kartu, proveďte jednu z následujících sad kroků:
 
-    -   Chcete-li přidat panel nástrojů, zvolte **nový** tlačítko, zadejte název panelu nástrojů, které chcete přidat a potom klikněte **OK** tlačítko.
+    - Chcete-li přidat panel nástrojů, zvolte **nový** tlačítko, zadejte název panelu nástrojů, které chcete přidat a potom klikněte **OK** tlačítko.
 
         ![Přizpůsobení dialogové okno ukazující, jak přidat panel nástrojů](../ide/media/addtoolbar.png)
 
-    -   Chcete-li vlastní panel nástrojů odebrat, zvolte jej v **panely nástrojů** seznamu a klikněte na tlačítko **odstranit** tlačítko.
+    - Chcete-li vlastní panel nástrojů odebrat, zvolte jej v **panely nástrojů** seznamu a klikněte na tlačítko **odstranit** tlačítko.
 
         > [!IMPORTANT]
         > Můžete odstranit panely nástrojů, které vytvoříte, ale ne výchozí panely nástrojů.
 
-    -   Chcete-li přesunout do jiné umístění ukotvení panelu nástrojů, zvolte jej v **panely nástrojů** klikněte na položku **změnit výběr** tlačítko a pak v zobrazeném seznamu zvolte umístění.
+    - Chcete-li přesunout do jiné umístění ukotvení panelu nástrojů, zvolte jej v **panely nástrojů** klikněte na položku **změnit výběr** tlačítko a pak v zobrazeném seznamu zvolte umístění.
 
         Panel nástrojů můžete také přetáhnout pomocí jeho levého okraje na libovolné místo v hlavní oblasti ukotvení.
 
@@ -83,37 +83,37 @@ Visual Studio můžete přizpůsobit nejen přidáváním a odebíráním nabíd
 
 ## <a name="customizing_menu">Přizpůsobení nabídky nebo panelu nástrojů</a>
 
-1.  V panelu nabídky zvolte **nástroje** > **vlastní**.
+1. V panelu nabídky zvolte **nástroje** > **vlastní**.
 
     **Vlastní** zobrazí se dialogové okno.
 
-2.  Na **příkazy** kartu, zvolte přepínač pro typ prvku, který chcete upravit.
+2. Na **příkazy** kartu, zvolte přepínač pro typ prvku, který chcete upravit.
 
-3.  V seznamu pro daný typ prvku zvolte nabídku nebo panel nástrojů, který chcete upravit, a pak proveďte jednu z následujících skupin kroků:
+3. V seznamu pro daný typ prvku zvolte nabídku nebo panel nástrojů, který chcete upravit, a pak proveďte jednu z následujících skupin kroků:
 
-    -   Chcete-li přidat příkaz, zvolte **přidat příkaz** tlačítko.
+    - Chcete-li přidat příkaz, zvolte **přidat příkaz** tlačítko.
 
         V **přidat příkaz** dialogového okna zvolte položku v **kategorie** , zvolte položku v **příkazy** seznamu a klikněte na tlačítko **OK**tlačítko.
 
         ![Příkaz dialogové okno Přidat v sadě Visual Studio](../ide/media/addcommand.png)
 
-    -   Chcete-li příkaz odstranit, zvolte jej v **ovládací prvky** seznamu a klikněte na tlačítko **odstranit** tlačítko.
+    - Chcete-li příkaz odstranit, zvolte jej v **ovládací prvky** seznamu a klikněte na tlačítko **odstranit** tlačítko.
 
-    -   Chcete-li změnit pořadí příkazů, zvolte příkaz v **ovládací prvky** seznamu a klikněte na tlačítko **nahoru** nebo **přesunout dolů** tlačítko.
+    - Chcete-li změnit pořadí příkazů, zvolte příkaz v **ovládací prvky** seznamu a klikněte na tlačítko **nahoru** nebo **přesunout dolů** tlačítko.
 
-    -   Pro skupinu příkazů v rámci vodorovnou horizontální čáru, vyberte první příkaz v **ovládací prvky** klikněte na položku **změnit výběr** tlačítko a pak zvolte **začít vytvářet skupinu** v Zobrazí se nabídka.
+    - Pro skupinu příkazů v rámci vodorovnou horizontální čáru, vyberte první příkaz v **ovládací prvky** klikněte na položku **změnit výběr** tlačítko a pak zvolte **začít vytvářet skupinu** v Zobrazí se nabídka.
 
 ## <a name="reset-a-menu-or-a-toolbar"></a>Obnovení nabídky nebo panelu nástrojů
 
-1.  V panelu nabídky zvolte **nástroje** > **vlastní**.
+1. V panelu nabídky zvolte **nástroje** > **vlastní**.
 
     **Vlastní** zobrazí se dialogové okno.
 
-2.  Na **příkazy** kartu, zvolte přepínač pro typ prvku, který chcete obnovit.
+2. Na **příkazy** kartu, zvolte přepínač pro typ prvku, který chcete obnovit.
 
-3.  V seznamu pro daný typ prvku zvolte nabídku nebo panel nástrojů, které chcete obnovit.
+3. V seznamu pro daný typ prvku zvolte nabídku nebo panel nástrojů, které chcete obnovit.
 
-4.  Zvolte **změnit výběr** tlačítko a pak zvolte **resetování** v zobrazené nabídce.
+4. Zvolte **změnit výběr** tlačítko a pak zvolte **resetování** v zobrazené nabídce.
 
     Můžete také obnovit všechny nabídky a panely nástrojů výběrem **Obnovit vše** tlačítko.
 

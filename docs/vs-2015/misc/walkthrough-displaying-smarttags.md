@@ -1,5 +1,5 @@
 ---
-title: 'Průvodce: Zobrazení inteligentní značky | Dokumentace Microsoftu'
+title: 'Návod: Zobrazení inteligentní značky | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -9,14 +9,14 @@ helpviewer_keywords:
 ms.assetid: 10bb4f69-b259-41f0-b91a-69b04385d9a5
 caps.latest.revision: 31
 manager: jillfra
-ms.openlocfilehash: e918c8e83909bb5a04d27f72cb07c7135b00daa9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a14fcb8e81261962e8851347a54d7c8d52565d20
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54783359"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110437"
 ---
-# <a name="walkthrough-displaying-smarttags"></a>Průvodce: Zobrazení inteligentní značky
+# <a name="walkthrough-displaying-smarttags"></a>Návod: Zobrazení inteligentní značky
 Inteligentní značky jsou zastaralé a místo toho použití žárovky. Zobrazit [názorný postup: Zobrazování návrhů](../extensibility/walkthrough-displaying-light-bulb-suggestions.md).  
   
  Inteligentní značky jsou pro text značky, které se rozbalí a zobrazí sadu akcí. Například v projektu jazyka Visual Basic nebo Visual C#, červenou čáru se zobrazí v části slovo při přejmenování identifikátor jako název proměnné. Při přesunutí ukazatele myši podtržení, zobrazí se tlačítko téměř ukazatel. Pokud kliknete na tlačítko, navrhované akce se zobrazí, například **přejmenovat IsRead IsReady**. Pokud kliknete akce, všechny odkazy na **IsRead** v projektu jsou přejmenované **IsReady**.  
@@ -35,57 +35,57 @@ Inteligentní značky jsou zastaralé a místo toho použití žárovky. Zobrazi
   
 #### <a name="to-create-a-mef-project"></a>Chcete-li vytvořit projekt rozhraní MEF  
   
-1.  Vytvořte projekt klasifikace Editor. Pojmenujte řešení `SmartTagTest`.  
+1. Vytvořte projekt klasifikace Editor. Pojmenujte řešení `SmartTagTest`.  
   
-2.  Otevřete soubor source.extension.vsixmanifest v editoru manifestu VSIX.  
+2. Otevřete soubor source.extension.vsixmanifest v editoru manifestu VSIX.  
   
-3.  Ujistěte se, že **prostředky** oddíl obsahuje `Microsoft.VisualStudio.MefComponent` typ, **zdroj** je nastavena na `A project in current solution`, a **projektu** je nastavena na SmartTagTest.dll.  
+3. Ujistěte se, že **prostředky** oddíl obsahuje `Microsoft.VisualStudio.MefComponent` typ, **zdroj** je nastavena na `A project in current solution`, a **projektu** je nastavena na SmartTagTest.dll.  
   
-4.  Uložte a zavřete source.extension.vsixmanifest.  
+4. Uložte a zavřete source.extension.vsixmanifest.  
   
-5.  Přidejte následující odkaz na projekt a nastavte **CopyLocal** k `false`:  
+5. Přidejte následující odkaz na projekt a nastavte **CopyLocal** k `false`:  
   
      Microsoft.VisualStudio.Language.Intellisense  
   
-6.  Odstraníte existující soubory tříd.  
+6. Odstraníte existující soubory tříd.  
   
 ## <a name="implementing-a-tagger-for-smart-tags"></a>Implementace Označovatel pro inteligentní značky  
   
 #### <a name="to-implement-a-tagger-for-smart-tags"></a>K implementaci označovatel pro inteligentní značky  
   
-1.  Přidejte soubor třídy a pojmenujte ho `TestSmartTag`.  
+1. Přidejte soubor třídy a pojmenujte ho `TestSmartTag`.  
   
-2.  Přidejte následující importy:  
+2. Přidejte následující importy:  
   
      [!code-csharp[VSSDKSmartTagTest#1](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#1)]
      [!code-vb[VSSDKSmartTagTest#1](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#1)]  
   
-3.  Přidejte třídu pojmenovanou `TestSmartTag` , která dědí z <xref:Microsoft.VisualStudio.Language.Intellisense.SmartTag>.  
+3. Přidejte třídu pojmenovanou `TestSmartTag` , která dědí z <xref:Microsoft.VisualStudio.Language.Intellisense.SmartTag>.  
   
      [!code-csharp[VSSDKSmartTagTest#2](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#2)]
      [!code-vb[VSSDKSmartTagTest#2](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#2)]  
   
-4.  Přidejte konstruktor pro tuto třídu, která volá základní konstruktor <xref:Microsoft.VisualStudio.Language.Intellisense.SmartTagType> z <xref:Microsoft.VisualStudio.Language.Intellisense.SmartTagType>, což způsobí, že se zobrazí v rámci prvního znaku slova modrou čáru. (Pokud používáte <xref:Microsoft.VisualStudio.Language.Intellisense.SmartTagType>, zobrazí se červená čára v posledním znakem slova.)  
+4. Přidejte konstruktor pro tuto třídu, která volá základní konstruktor <xref:Microsoft.VisualStudio.Language.Intellisense.SmartTagType> z <xref:Microsoft.VisualStudio.Language.Intellisense.SmartTagType>, což způsobí, že se zobrazí v rámci prvního znaku slova modrou čáru. (Pokud používáte <xref:Microsoft.VisualStudio.Language.Intellisense.SmartTagType>, zobrazí se červená čára v posledním znakem slova.)  
   
      [!code-csharp[VSSDKSmartTagTest#3](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#3)]
      [!code-vb[VSSDKSmartTagTest#3](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#3)]  
   
-5.  Přidejte třídu pojmenovanou `TestSmartTagger` , která dědí z <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601> typu `TestSmartTag`a implementuje <xref:System.IDisposable>.  
+5. Přidejte třídu pojmenovanou `TestSmartTagger` , která dědí z <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601> typu `TestSmartTag`a implementuje <xref:System.IDisposable>.  
   
      [!code-csharp[VSSDKSmartTagTest#4](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#4)]
      [!code-vb[VSSDKSmartTagTest#4](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#4)]  
   
-6.  Přidejte následující soukromé pole ke třídě označovatel.  
+6. Přidejte následující soukromé pole ke třídě označovatel.  
   
      [!code-csharp[VSSDKSmartTagTest#5](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#5)]
      [!code-vb[VSSDKSmartTagTest#5](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#5)]  
   
-7.  Přidat konstruktor, který nastaví privátní pole a přihlásí se k odběru <xref:Microsoft.VisualStudio.Text.Editor.ITextView.LayoutChanged> událostí.  
+7. Přidat konstruktor, který nastaví privátní pole a přihlásí se k odběru <xref:Microsoft.VisualStudio.Text.Editor.ITextView.LayoutChanged> událostí.  
   
      [!code-csharp[VSSDKSmartTagTest#6](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#6)]
      [!code-vb[VSSDKSmartTagTest#6](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#6)]  
   
-8.  Implementace <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601.GetTags%2A> tak, aby se vytvoří značku pro aktuálního slova. (Tato metoda také volá soukromou metodu `GetSmartTagActions` , který je vysvětlen později.)  
+8. Implementace <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601.GetTags%2A> tak, aby se vytvoří značku pro aktuálního slova. (Tato metoda také volá soukromou metodu `GetSmartTagActions` , který je vysvětlen později.)  
   
      [!code-csharp[VSSDKSmartTagTest#7](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#7)]
      [!code-vb[VSSDKSmartTagTest#7](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#7)]  
@@ -114,17 +114,17 @@ Inteligentní značky jsou zastaralé a místo toho použití žárovky. Zobrazi
   
 #### <a name="to-implement-the-smart-tag-tagger-provider"></a>Pro implementaci zprostředkovatele označovatel inteligentních značek  
   
-1.  Přidejte třídu pojmenovanou `TestSmartTagTaggerProvider` , která dědí z <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider>. Exportujte ho pomocí <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> "text", <xref:Microsoft.VisualStudio.Utilities.OrderAttribute> z před = "Výchozí" a <xref:Microsoft.VisualStudio.Text.Tagging.TagTypeAttribute> z <xref:Microsoft.VisualStudio.Language.Intellisense.SmartTag>.  
+1. Přidejte třídu pojmenovanou `TestSmartTagTaggerProvider` , která dědí z <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider>. Exportujte ho pomocí <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> "text", <xref:Microsoft.VisualStudio.Utilities.OrderAttribute> z před = "Výchozí" a <xref:Microsoft.VisualStudio.Text.Tagging.TagTypeAttribute> z <xref:Microsoft.VisualStudio.Language.Intellisense.SmartTag>.  
   
      [!code-csharp[VSSDKSmartTagTest#12](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#12)]
      [!code-vb[VSSDKSmartTagTest#12](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#12)]  
   
-2.  Import <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> jako vlastnost.  
+2. Import <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> jako vlastnost.  
   
      [!code-csharp[VSSDKSmartTagTest#13](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#13)]
      [!code-vb[VSSDKSmartTagTest#13](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#13)]  
   
-3.  Implementace <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider.CreateTagger%2A> metody.  
+3. Implementace <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider.CreateTagger%2A> metody.  
   
      [!code-csharp[VSSDKSmartTagTest#14](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#14)]
      [!code-vb[VSSDKSmartTagTest#14](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#14)]  
@@ -168,19 +168,19 @@ Inteligentní značky jsou zastaralé a místo toho použití žárovky. Zobrazi
   
 #### <a name="to-build-and-test-the-smarttagtest-solution"></a>Pro vytváření a testování SmartTagTest řešení  
   
-1.  Sestavte řešení.  
+1. Sestavte řešení.  
   
-2.  Při spuštění tohoto projektu v ladicím programu, je vytvořena instance druhou instanci aplikace Visual Studio.  
+2. Při spuštění tohoto projektu v ladicím programu, je vytvořena instance druhou instanci aplikace Visual Studio.  
   
-3.  Vytvořte textový soubor a zadejte nějaký text.  
+3. Vytvořte textový soubor a zadejte nějaký text.  
   
      V rámci první písmeno prvního slova textu má být zobrazena modrá čára.  
   
-4.  Přesuňte ukazatel nad modrá čára.  
+4. Přesuňte ukazatel nad modrá čára.  
   
      Tlačítko má být zobrazena téměř ukazatel.  
   
-5.  Když kliknete na tlačítko, mají být zobrazeny dva doporučené akce: **Převést na velká písmena** a **převést na malá písmena**. Pokud kliknete na první akci, veškerý text v aktuálního slova mají být převedeny na velká písmena. Pokud kliknete na druhou akci, veškerý text mají být převedeny na malá písmena.  
+5. Když kliknete na tlačítko, mají být zobrazeny dva doporučené akce: **Převést na velká písmena** a **převést na malá písmena**. Pokud kliknete na první akci, veškerý text v aktuálního slova mají být převedeny na velká písmena. Pokud kliknete na druhou akci, veškerý text mají být převedeny na malá písmena.  
   
 ## <a name="see-also"></a>Viz také  
  [Návod: Propojení typu obsahu příponu názvu souboru](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

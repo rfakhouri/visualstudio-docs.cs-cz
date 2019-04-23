@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c7613eed6107f5be4909d57dd0ca617e1113ee0d
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: b2f06778de19c16df9d6e43108ecf4daba539c06
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59651589"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60084385"
 ---
 # <a name="filter-report-views"></a>Filtrování zobrazení sestav
 Filtry můžete použít profilování datové soubory pro omezení, která se zobrazí v zobrazení sestav výkonu a exportovat soubory sestav modulu dat profilování. Můžete omezit sestavu pro data mezi hodnot časového razítka a můžete omezit data, která mají konkrétní procesy a vlákna. Můžete uložit filtry do souboru a pak vytvořit filtr na jiný soubor dat profilování importováním uložený filtr.
@@ -28,11 +28,11 @@ Filtry můžete použít profilování datové soubory pro omezení, která se z
 
 #### <a name="to-create-a-profiler-report-filter"></a>Chcete-li vytvořit filtr sestavy profileru
 
-1.  Pokud se nezobrazí okno Filtr zobrazení sestav výkonu, klikněte na tlačítko **zobrazit filtr** na panelu nástrojů zobrazení sestav výkonu.
+1. Pokud se nezobrazí okno Filtr zobrazení sestav výkonu, klikněte na tlačítko **zobrazit filtr** na panelu nástrojů zobrazení sestav výkonu.
 
      Filtr zobrazení sestav výkonu je tabulka. Každý řádek v tabulce představuje klauzuli filtru. Můžete přidat tolik klauzule filtru.
 
-2.  Pro každou klauzuli, která chcete přidat filtr vyberte nebo zadejte hodnoty do následujících polí řádku.
+2. Pro každou klauzuli, která chcete přidat filtr vyberte nebo zadejte hodnoty do následujících polí řádku.
 
     |Pole|Popis|
     |-----------|-----------------|
@@ -61,33 +61,33 @@ Filtry můžete použít profilování datové soubory pro omezení, která se z
 
 #### <a name="to-load-an-existing-filter-from-a-file"></a>Načíst existující filtr ze souboru
 
-1.  V zobrazení sestav výkonu nástrojů, klikněte na **filtru importu**.
+1. V zobrazení sestav výkonu nástrojů, klikněte na **filtru importu**.
 
      **Načíst filtr** se zobrazí dialogové okno.
 
-2.  Zadejte umístění a název souboru filtru (.vspf) pro načtení.
+2. Zadejte umístění a název souboru filtru (.vspf) pro načtení.
 
 #### <a name="to-execute-a-filter"></a>Chcete-li spustit filtr
 
--   V zobrazení sestav výkonu nástrojů, klikněte na **spustit filtr**.
+- V zobrazení sestav výkonu nástrojů, klikněte na **spustit filtr**.
 
 #### <a name="to-stop-a-filter-that-is-taking-too-long-to-execute"></a>Chcete-li zastavit filtr, který trvá příliš dlouho
 
--   V zobrazení sestav výkonu nástrojů, klikněte na **zastavit filtr**.
+- V zobrazení sestav výkonu nástrojů, klikněte na **zastavit filtr**.
 
 #### <a name="to-remove-a-filter-on-a-report-view"></a>Chcete-li odebrat filtr na zobrazení sestavy
 
-1.  Odstraňte řádky ustanovení filtr zobrazení sestav výkonu.
+1. Odstraňte řádky ustanovení filtr zobrazení sestav výkonu.
 
-2.  V zobrazení sestav výkonu nástrojů, klikněte na **spustit filtr**.
+2. V zobrazení sestav výkonu nástrojů, klikněte na **spustit filtr**.
 
 #### <a name="to-save-a-filter-to-a-file"></a>Do souboru uložit filtr
 
-1.  V zobrazení sestav výkonu nástrojů, klikněte na **Exportovat filtr**.
+1. V zobrazení sestav výkonu nástrojů, klikněte na **Exportovat filtr**.
 
      **Uložit filtr** se zobrazí dialogové okno.
 
-2.  Zadejte umístění a název souboru filtru (.vspf) Chcete-li uložit.
+2. Zadejte umístění a název souboru filtru (.vspf) Chcete-li uložit.
 
 ## <a name="see-also"></a>Viz také:
 - [Přizpůsobení zobrazení sestav nástrojů pro měření výkonu](../profiling/customizing-performance-tools-report-views.md)

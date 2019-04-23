@@ -16,12 +16,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c3393e5a70a0662d15cc4d643f7a5df106860d26
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: dbf0c2d13668dbf380f326ee3a49e0389815a8fd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54777683"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102728"
 ---
 # <a name="error-rpc-requires-authentication"></a>Chyba: RPC vyžaduje ověření.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,10 +30,10 @@ Visual Studio debugger se nemůže připojit ke vzdálenému počítači. Zásad
   
 ### <a name="to-correct-this-error"></a>Oprava této chyby  
   
-1.  Spustit `\` *windir*`\system32\regedt32.exe`  
+1. Spustit `\` *windir*`\system32\regedt32.exe`  
   
-2.  Vyhledejte a odstraňte `HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows NT\RPC\RestrictRemoteClients`.  
+2. Vyhledejte a odstraňte `HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows NT\RPC\RestrictRemoteClients`.  
   
-3.  Změna v registru se projeví až po restartování počítače.  
+3. Změna v registru se projeví až po restartování počítače.  
   
-4.  Pokud se problém nevyřeší, obraťte se na správce domény o **konfigurace počítače -> šablony pro správu - > Systém -> vzdálené volání procedury -> omezení pro klienty neověřené RPC** skupiny nastavení zásad.
+4. Pokud se problém nevyřeší, obraťte se na správce domény o **konfigurace počítače -> šablony pro správu - > Systém -> vzdálené volání procedury -> omezení pro klienty neověřené RPC** skupiny nastavení zásad.

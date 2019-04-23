@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a226f22370f128374433e78b787ad730a3bbdfc9
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 957e9e4b51dbca2f27e042b185b6dd071791cfad
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59662035"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60083982"
 ---
 # <a name="compile-page-project-designer-visual-basic"></a>Stránka Kompilovat, návrhář projektu (Visual Basic)
 
@@ -70,11 +70,11 @@ Tato nastavení umožňují nastavit kompilátor možnosti konfigurace.
 
  **Možnost strict** Určuje, jestli se vynutí sémantiku přísného typu. Když **Option Strict** je **na**, následujících podmínek způsobit chybu kompilace:
 
--   Implicitní zužující převody
+- Implicitní zužující převody
 
--   Pozdní vazba
+- Pozdní vazba
 
--   Implicitního zápisu, která vede `Object` typu
+- Implicitního zápisu, která vede `Object` typu
 
 Implicitní zužující převod chybám dochází při konverzi typu implicitní data, která je zužující převod. Další informace najdete v tématu [Option Strict – příkaz](/dotnet/visual-basic/language-reference/statements/option-strict-statement), [implicitní a explicitní převody](/dotnet/visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions), a [Widening a zúžení převodů](/dotnet/visual-basic/programming-guide/language-features/data-types/widening-and-narrowing-conversions).
 
@@ -91,11 +91,11 @@ Při vytváření projektu, **Option Strict** nastavení **kompilace stránky** 
 **Možnost Strict jednotlivých upozornění.**
 **Upozornění konfigurace** část **kompilace stránky** má nastavení, které odpovídají uvedených tří podmínek, které způsobí chybu kompilace při `Option Strict` zapnutý. Tato nastavení jsou následující:
 
--   **Implicitní převod**
+- **Implicitní převod**
 
--   **Pozdní vazba. volání by mohlo selhat v době běhu**
+- **Pozdní vazba. volání by mohlo selhat v době běhu**
 
--   **Implicitní typ; převzatý objekt**
+- **Implicitní typ; převzatý objekt**
 
 Pokud nastavíte **Option Strict** k **na**, všechna tři nastavení konfigurace upozornění jsou nastaveny na **chyba**. Pokud nastavíte **Option Strict** k **vypnout**, všechny tři nastavení **žádný**.
 
@@ -127,11 +127,11 @@ Spuštění aplikace 64-bit zdvojnásobuje velikost ukazatele, a to může způs
 
 Toto zaškrtávací políčko je dostupné jenom v případě, že jsou splněny všechny následující podmínky:
 
--   Na **stránka kompilovat**, **cílový procesor** seznamu je nastavena na **jakýkoli procesor**.
+- Na **stránka kompilovat**, **cílový procesor** seznamu je nastavena na **jakýkoli procesor**.
 
--   Na **stránky aplikace**, **typ aplikace** seznam určuje, že projekt je aplikace.
+- Na **stránky aplikace**, **typ aplikace** seznam určuje, že projekt je aplikace.
 
--   Na **stránky aplikace**, **Cílová architektura** seznamu určuje rozhraní .NET Framework 4.5.
+- Na **stránky aplikace**, **Cílová architektura** seznamu určuje rozhraní .NET Framework 4.5.
 
 **Konfigurace upozornění** Tato tabulka shrnuje sestavení podmínky a odpovídající úroveň oznámení **žádný**, **upozornění**, nebo **chyba** pro každý.
 

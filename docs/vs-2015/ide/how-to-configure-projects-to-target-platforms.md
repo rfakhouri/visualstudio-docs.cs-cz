@@ -18,12 +18,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ee35a42ea28295869fe05bf6cd1d2c49f12cc39b
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 660f1fd1d67490bde327533f9d030c7deba9f819
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54791407"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60084918"
 ---
 # <a name="how-to-configure-projects-to-target-platforms"></a>Postupy: Konfigurace projektů pro cílové platformy
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,16 +39,16 @@ ms.locfileid: "54791407"
   
 2. V **platformou aktivního řešení** seznamu, zvolte 64bitovou platformu pro řešení do cíle a klikněte na tlačítko **Zavřít** tlačítko.  
   
-   1.  Pokud se nezobrazí platforma, která chcete v **platformou aktivního řešení** klikněte na položku **nový**.  
+   1. Pokud se nezobrazí platforma, která chcete v **platformou aktivního řešení** klikněte na položku **nový**.  
   
         **Nová platforma řešení** zobrazí se dialogové okno.  
   
-   2.  V **zadejte nebo vyberte novou platformu** klikněte na položku **x64**.  
+   2. V **zadejte nebo vyberte novou platformu** klikněte na položku **x64**.  
   
        > [!NOTE]
        >  Pokud vaše konfigurace zadejte nový název, bude pravděpodobně nutné upravit nastavení v **Návrháře projektu** pro zaměření na správnou platformu.  
   
-   3.  Pokud chcete tato nastavení zkopírovat z aktuální konfiguraci platformy, vyberte jej a klikněte na tlačítko **OK** tlačítko.  
+   3. Pokud chcete tato nastavení zkopírovat z aktuální konfiguraci platformy, vyberte jej a klikněte na tlačítko **OK** tlačítko.  
   
    Jsou aktualizovány vlastnosti pro všechny projekty, které se zaměřují 64bitové platformě a optimalizují se další sestavení projektu pro 64bitové platformy.  
   
@@ -57,11 +57,11 @@ ms.locfileid: "54791407"
   
  Provedení tohoto úkolu se liší v závislosti na programovacím jazyku, který používáte. V následujících tématech pro další informace:  
   
--   Pro [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] projektů, naleznete v tématu [/Platform (Visual Basic)](http://msdn.microsoft.com/library/f9bc61e6-e854-4ae1-87b9-d6244de23fd1).  
+- Pro [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] projektů, naleznete v tématu [/Platform (Visual Basic)](http://msdn.microsoft.com/library/f9bc61e6-e854-4ae1-87b9-d6244de23fd1).  
   
--   Pro [!INCLUDE[csprcs](../includes/csprcs-md.md)] projektů, naleznete v tématu [stránku sestavení, Návrhář projektu (C#)](../ide/reference/build-page-project-designer-csharp.md).  
+- Pro [!INCLUDE[csprcs](../includes/csprcs-md.md)] projektů, naleznete v tématu [stránku sestavení, Návrhář projektu (C#)](../ide/reference/build-page-project-designer-csharp.md).  
   
--   Pro [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] projektů, naleznete v tématu [/CLR (kompilace Common Language Runtime)](http://msdn.microsoft.com/library/fec5a8c0-40ec-484c-a213-8dec918c1d6c).  
+- Pro [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] projektů, naleznete v tématu [/CLR (kompilace Common Language Runtime)](http://msdn.microsoft.com/library/fec5a8c0-40ec-484c-a213-8dec918c1d6c).  
   
 ## <a name="see-also"></a>Viz také  
  [Principy platforem sestavení](../ide/understanding-build-platforms.md)   

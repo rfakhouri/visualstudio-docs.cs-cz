@@ -13,12 +13,12 @@ caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: be99c10a999ec190f538816e39eac411dc85544e
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: daace3e78cca67fd9b44144cd6c8a5608dbd9a1e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54763371"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111191"
 ---
 # <a name="disk-operations-report-threads-view"></a>Sestava diskových operací (Zobrazení vláken)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,23 +27,23 @@ Sestava diskových operací ukazuje vstupně-výstupních operací disku v kaná
   
  Pro každý přístup na disk, který se nachází jménem proces, který je právě profilována v současném viditelném časovém okně se použije v hlášení tyto informace:  
   
--   Název a identifikátor PID procesu, který provádí přístup k disku  
+- Název a identifikátor PID procesu, který provádí přístup k disku  
   
--   ID vlákna, která využívají disku  
+- ID vlákna, která využívají disku  
   
--   Název souboru, která se použila  
+- Název souboru, která se použila  
   
--   Počet čtení na souboru  
+- Počet čtení na souboru  
   
--   Počet přečtených bajtů  
+- Počet přečtených bajtů  
   
--   Latence čtení v milisekundách  
+- Latence čtení v milisekundách  
   
--   Počet zápisů  
+- Počet zápisů  
   
--   Počet zapsaných bajtů  
+- Počet zapsaných bajtů  
   
--   Latence zápisu, v milisekundách  
+- Latence zápisu, v milisekundách  
   
 ## <a name="see-also"></a>Viz také  
  [Zobrazení vláken](../profiling/threads-view-parallel-performance.md)

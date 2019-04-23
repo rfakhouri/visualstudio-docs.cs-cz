@@ -11,12 +11,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e6ea971705b164a27fc7f65c3ac2d681b1569177
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 416baf8988f8d17a336f9fbef1eb0f9d9a72046b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54758796"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109000"
 ---
 # <a name="synchronized-settings-in-visual-studio"></a>Synchronizovaná nastavení v sadě Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,27 +26,27 @@ Při použití stejného účtu individuálního nastavení pro přihlášení k
 ## <a name="synchronized-settings"></a>Synchronizovaná nastavení
  Ve výchozím nastavení jsou synchronizována následující nastavení.
 
--   Nastavení vývoje (je nutné vybrat sadu nastavení při prvním spuštění sady Visual Studio, ale můžete výběr můžete kdykoli změnit. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).)
+- Nastavení vývoje (je nutné vybrat sadu nastavení při prvním spuštění sady Visual Studio, ale můžete výběr můžete kdykoli změnit. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).)
 
--   Následující možnosti **nástroje &#124; možnosti** stránky:
+- Následující možnosti **nástroje &#124; možnosti** stránky:
 
-    -   **Motiv** a nabídek na malá a velká písmena nastavení, **prostředí**, **Obecné** stránky Možnosti
+    - **Motiv** a nabídek na malá a velká písmena nastavení, **prostředí**, **Obecné** stránky Možnosti
 
-    -   Všechna nastavení na **prostředí**, **písma a barvy** stránky Možnosti
+    - Všechna nastavení na **prostředí**, **písma a barvy** stránky Možnosti
 
-    -   Všechny klávesové zkratky, na **prostředí**, **klávesnice** stránky Možnosti
+    - Všechny klávesové zkratky, na **prostředí**, **klávesnice** stránky Možnosti
 
-    -   Všechna nastavení na **prostředí, karty a Windows** stránky Možnosti
+    - Všechna nastavení na **prostředí, karty a Windows** stránky Možnosti
 
-    -   Všechna nastavení na **prostředí**, **spuštění** stránky Možnosti
+    - Všechna nastavení na **prostředí**, **spuštění** stránky Možnosti
 
-    -   Všechna nastavení na **textový Editor** možnosti stránky
+    - Všechna nastavení na **textový Editor** možnosti stránky
 
--   Všechna nastavení v Návrháři XAML možnosti stránky
+- Všechna nastavení v Návrháři XAML možnosti stránky
 
--   Aliasy příkazu definované uživatelem. Další informace o definici aliasů příkazu naleznete v tématu [aliasy příkazů aplikace Visual Studio](../ide/reference/visual-studio-command-aliases.md).
+- Aliasy příkazu definované uživatelem. Další informace o definici aliasů příkazu naleznete v tématu [aliasy příkazů aplikace Visual Studio](../ide/reference/visual-studio-command-aliases.md).
 
--   Rozložení oken uživatelem definované v **okno &#124; spravovat rozložení oken** stránky
+- Rozložení oken uživatelem definované v **okno &#124; spravovat rozložení oken** stránky
 
 ## <a name="turning-synchronized-settings-off-for-a-particular-computer"></a>Zapnutí synchronizované nastavení vypnout pro určitý počítač
  Synchronizovaná nastavení pro sadu Visual Studio jsou ve výchozím nastavení zapnutá. Synchronizovaná nastavení v počítači můžete vypnout tak, že přejdete **nástroje &#124; možnosti &#124; prostředí &#124; synchronizovaná nastavení** stránky a zrušení zaškrtnutí políčka.  Například pokud se rozhodnete nesynchronizovat nastavení sady Visual Studio v počítači A, změny nastavení v počítači provedeny DNT nezobrazí v počítači B nebo počítač C. počítačích B a C bude pokračovat pro synchronizaci mezi sebou, ale ne s počítači A.

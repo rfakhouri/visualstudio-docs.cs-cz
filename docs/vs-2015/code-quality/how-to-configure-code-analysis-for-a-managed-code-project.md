@@ -14,12 +14,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 7814bd356dfa50c121fc73c1b88c1ae12dfa3df4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a326be363295ed1033d0e91e1675e326a51c9adf
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54790895"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104314"
 ---
 # <a name="how-to-configure-code-analysis-for-a-managed-code-project"></a>Postupy: Konfigurace analýzy kódu pro projekt spravovaného kódu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,26 +31,26 @@ V [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../in
   
 ### <a name="to-configure-a-rule-set-for-a-net-framework-project"></a>Chcete-li konfigurovat sadu pravidel pro projekt rozhraní .NET Framework  
   
-1.  V **Průzkumníka řešení**, klikněte na projekt.  
+1. V **Průzkumníka řešení**, klikněte na projekt.  
   
-2.  Na **analyzovat** nabídky, klikněte na tlačítko **konfigurovat analýzu kódu pro** *ProjectName*.  
+2. Na **analyzovat** nabídky, klikněte na tlačítko **konfigurovat analýzu kódu pro** *ProjectName*.  
   
-3.  V **konfigurace** a **platformy** seznamy, klikněte na konfigurace a cílovou platformu sestavení.  
+3. V **konfigurace** a **platformy** seznamy, klikněte na konfigurace a cílovou platformu sestavení.  
   
-4.  Chcete-li spustit nástroj Analýza kódu pokaždé, když se sestavení projektu použitím vybrané konfigurace, vyberte **povolit analýzu kódu na sestavení (definuje konstantu CODE_ANALYSIS)** zaškrtávací políčko. Můžete také spustit analýzu kódu ručně tak, že otevřete **analyzovat** nabídky a kliknutím na **spustit analýzu kódu na** *ProjectName*.  
+4. Chcete-li spustit nástroj Analýza kódu pokaždé, když se sestavení projektu použitím vybrané konfigurace, vyberte **povolit analýzu kódu na sestavení (definuje konstantu CODE_ANALYSIS)** zaškrtávací políčko. Můžete také spustit analýzu kódu ručně tak, že otevřete **analyzovat** nabídky a kliknutím na **spustit analýzu kódu na** *ProjectName*.  
   
-5.  Ve výchozím nastavení analýza kódu sestavu upozornění z kódu, který je automaticky generován externí nástroje. Chcete-li zobrazit upozornění z generovaného kódu, zrušte **potlačit Výsledky generovaného kódu** zaškrtávací políčko.  
+5. Ve výchozím nastavení analýza kódu sestavu upozornění z kódu, který je automaticky generován externí nástroje. Chcete-li zobrazit upozornění z generovaného kódu, zrušte **potlačit Výsledky generovaného kódu** zaškrtávací políčko.  
   
     > [!NOTE]
     >  Tato možnost není potlačit chyby analýzy kódu a upozornění z generovaného kódu při chyby a upozornění se zobrazí ve formulářích a šablony. Můžete jak zobrazit a spravovat zdrojový kód pro formuláře nebo šablony.  
   
-6.  V **spustit tuto sadu pravidel** seznamu, proveďte jednu z následujících akcí:  
+6. V **spustit tuto sadu pravidel** seznamu, proveďte jednu z následujících akcí:  
   
-    -   Klikněte na sadu pravidel, kterou chcete použít.  
+    - Klikněte na sadu pravidel, kterou chcete použít.  
   
-    -   Klikněte na tlačítko  **\<Procházet... >** zadat sadu existujících vlastních pravidel, která se nenachází v seznamu.  
+    - Klikněte na tlačítko  **\<Procházet... >** zadat sadu existujících vlastních pravidel, která se nenachází v seznamu.  
   
-    -   Definujte vlastní sady pravidel.  
+    - Definujte vlastní sady pravidel.  
   
          Další informace najdete v tématu [vytvoření vlastní sady pravidel](../code-quality/creating-custom-code-analysis-rule-sets.md).  
   

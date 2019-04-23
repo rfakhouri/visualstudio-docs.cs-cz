@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c46df4218a12c0f9a155567aeee0c007d0a19c53
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a9fc9cf214a8aebd663a7de29528790aa3cc0b46
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56598203"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104223"
 ---
 # <a name="how-to-programmatically-access-outlook-contacts"></a>Postupy: Programový přístup ke kontaktům aplikace Outlook
   Tento příklad vyhledá všechny kontakty, jejichž příjmení obsahuje zadaný hledaný řetězec.
@@ -32,7 +32,7 @@ ms.locfileid: "56598203"
 ## <a name="compile-the-code"></a>Kompilace kódu
  Tento příklad vyžaduje:
 
--   Kontakty, jehož poslední názvy obsahují řetězec "**Na"** (například Tzipi Butnaru) v **kontakty** složky.
+- Kontakty, jehož poslední názvy obsahují řetězec "**Na"** (například Tzipi Butnaru) v **kontakty** složky.
 
 ## <a name="see-also"></a>Viz také:
 - [Práce s položkami kontaktů](../vsto/working-with-contact-items.md)

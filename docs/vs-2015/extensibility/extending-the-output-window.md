@@ -10,12 +10,12 @@ ms.assetid: b02fa88c-f92a-4ff6-ba5f-2eb4d48a643a
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 0e4fe3b07a2a076218fd004328ad87e4d5e3bab7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2788903c60564d501770616fbe3ad2335e60a250
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54773731"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105406"
 ---
 # <a name="extending-the-output-window"></a>Rozšíření okna Výstup
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,22 +27,22 @@ ms.locfileid: "54773731"
 ## <a name="creating-an-extension-that-uses-the-output-pane"></a>Vytvoření rozšíření, která používá podokno výstup  
  Můžete vytvořit rozšíření, která zpracovává různých aspektů podokno výstup.  
   
-1.  Vytvořte projekt VSIX s názvem `TestOutput` pomocí příkazu nabídky s názvem **TestOutput**. Další informace najdete v tématu [vytváření rozšíření pomocí příkazu nabídky](../extensibility/creating-an-extension-with-a-menu-command.md).  
+1. Vytvořte projekt VSIX s názvem `TestOutput` pomocí příkazu nabídky s názvem **TestOutput**. Další informace najdete v tématu [vytváření rozšíření pomocí příkazu nabídky](../extensibility/creating-an-extension-with-a-menu-command.md).  
   
-2.  Přidejte následující odkazy:  
+2. Přidejte následující odkazy:  
   
-    1.  EnvDTE  
+    1. EnvDTE  
   
-    2.  EnvDTE80  
+    2. EnvDTE80  
   
-3.  V souboru TestOutput.cs, přidejte následující příkaz using:  
+3. V souboru TestOutput.cs, přidejte následující příkaz using:  
   
     ```f#  
     using EnvDTE;  
     using EnvDTE80;  
     ```  
   
-4.  V TestOutput.cs odstraňte ShowMessageBox metody. Přidejte následující pahýl metody:  
+4. V TestOutput.cs odstraňte ShowMessageBox metody. Přidejte následující pahýl metody:  
   
     ```csharp  
     private void OutputCommandHandler(object sender, EventArgs e)  
@@ -50,7 +50,7 @@ ms.locfileid: "54773731"
     }  
     ```  
   
-5.  V konstruktoru TestOutput změňte na OutputCommandHandler obslužná rutina příkazu. Tady je část, která přidá příkazy:  
+5. V konstruktoru TestOutput změňte na OutputCommandHandler obslužná rutina příkazu. Tady je část, která přidá příkazy:  
   
     ```csharp  
     OleMenuCommandService commandService = this.ServiceProvider.GetService(typeof(IMenuCommandService)) as OleMenuCommandService;  
@@ -63,7 +63,7 @@ ms.locfileid: "54773731"
     }  
     ```  
   
-6.  Následující části mají různé metody, které ukazují různé způsoby práci s podoknem výstupu. Můžete volat tyto metody pro tělo metody OutputCommandHandler(). Například následující kód přidá metodu CreatePane() uvedené v další části.  
+6. Následující části mají různé metody, které ukazují různé způsoby práci s podoknem výstupu. Můžete volat tyto metody pro tělo metody OutputCommandHandler(). Například následující kód přidá metodu CreatePane() uvedené v další části.  
   
     ```csharp  
     private void OutputCommandHandler(object sender, EventArgs e)  

@@ -12,12 +12,12 @@ ms.assetid: e3128ac3-2e92-48e9-87ab-3b6c9d80e8c9
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 49b5e5b7c36b09e08932fcb414478849a12a7c7b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f6df66c3a6f34e6137850c68785d0eaadbb13a26
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54753814"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088142"
 ---
 # <a name="choosing-between-shared-and-versioned-vspackages"></a>Volba mezi sdíleným a verzovaným rozšířením VSPackages
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,21 +31,21 @@ Různé verze sady Visual Studio můžou existovat společně na stejném počí
 ## <a name="shared-vspackages"></a>Sdílené rozšíření VSPackages  
  Použití sdílené VSPackage je vhodné při použití stejného balíčku VSPackage ve více verzích [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Pro implementaci sdíleného VSPackage, je nutné provést následující kroky:  
   
--   Ujistěte se, vaši VSPackage kompatibilní s více verzemi [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Dva způsoby, jak udělat proto jsou k dispozici:  
+- Ujistěte se, vaši VSPackage kompatibilní s více verzemi [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Dva způsoby, jak udělat proto jsou k dispozici:  
   
-    -   Omezit vašeho balíčku VSPackage pomocí pouze funkce nejstarší verzi [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , kterou podporujete.  
+    - Omezit vašeho balíčku VSPackage pomocí pouze funkce nejstarší verzi [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , kterou podporujete.  
   
-    -   Program vašeho balíčku VSPackage umožní reagovat na verzi [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ve kterém je spuštěná. Pak v případě dotazů pro novější služby selžou, vašeho balíčku VSPackage můžou nabízet další služby, které jsou podporovány ve starších verzích [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+    - Program vašeho balíčku VSPackage umožní reagovat na verzi [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ve kterém je spuštěná. Pak v případě dotazů pro novější služby selžou, vašeho balíčku VSPackage můžou nabízet další služby, které jsou podporovány ve starších verzích [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
--   Zaregistrujte vašeho balíčku VSPackage odpovídajícím způsobem. Další informace najdete v tématu [registrace balíčku VSPackage](../extensibility/internals/vspackage-registration.md) a [spravovat registrace balíčku VSPackage](http://msdn.microsoft.com/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1).  
+- Zaregistrujte vašeho balíčku VSPackage odpovídajícím způsobem. Další informace najdete v tématu [registrace balíčku VSPackage](../extensibility/internals/vspackage-registration.md) a [spravovat registrace balíčku VSPackage](http://msdn.microsoft.com/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1).  
   
--   Registrace přípon souborů odpovídajícím způsobem. Další informace najdete v tématu [registrace přípony názvů souborů pro nasazení vedle sebe](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md).  
+- Registrace přípon souborů odpovídajícím způsobem. Další informace najdete v tématu [registrace přípony názvů souborů pro nasazení vedle sebe](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md).  
   
--   Vytvořit instalační službu, která nasadí vašeho balíčku VSPackage pro příslušnou verzi [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Další informace najdete v tématu [instalace rozšíření VSPackages s Windows Installer](../extensibility/internals/installing-vspackages-with-windows-installer.md) a [Správa komponent](../extensibility/internals/component-management.md).  
+- Vytvořit instalační službu, která nasadí vašeho balíčku VSPackage pro příslušnou verzi [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Další informace najdete v tématu [instalace rozšíření VSPackages s Windows Installer](../extensibility/internals/installing-vspackages-with-windows-installer.md) a [Správa komponent](../extensibility/internals/component-management.md).  
   
--   Vyřešení problému registrace kolizí. Další informace najdete v tématu [registrace balíčku VSPackage](../extensibility/internals/vspackage-registration.md).  
+- Vyřešení problému registrace kolizí. Další informace najdete v tématu [registrace balíčku VSPackage](../extensibility/internals/vspackage-registration.md).  
   
--   Ujistěte se, že soubory sdíleným a verzovaným respektovat počítání odkazů ke umožňují bezpečnou instalaci a odebrání více verzí. Další informace najdete v tématu [Správa komponent](../extensibility/internals/component-management.md).  
+- Ujistěte se, že soubory sdíleným a verzovaným respektovat počítání odkazů ke umožňují bezpečnou instalaci a odebrání více verzí. Další informace najdete v tématu [Správa komponent](../extensibility/internals/component-management.md).  
   
 ## <a name="versioned-vspackages"></a>Verze rozšíření VSPackages  
  V rámci verze balíčku VSPackage strategie, vytvoříte jednu VSPackage pro každou verzi [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , kterou podporujete. To je vhodné, pokud očekáváte, že chcete využít výhod služeb poskytovaných novějších verzích [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], protože každý VSPackage můžete rozvíjet aniž by to ovlivnilo ostatní. Označené verzí strategie vytváření více binárních souborů, z jediného základu kódu nebo z více základních tříd nezávislý kód, však může za následek další počáteční vývoj než sdílený strategie. Navíc další nastavení může být vyžadován, protože musíte vytvořit buď samostatný instalační program pro každou verzi nebo jeden instalační program, který zjistí verze [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , které jsou nainstalovány a, která podporuje vaše VSPackage.  

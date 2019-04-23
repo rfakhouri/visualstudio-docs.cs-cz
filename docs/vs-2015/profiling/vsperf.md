@@ -9,12 +9,12 @@ caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0a32de469c5b58ca2bf58901e30b81cfb70ed84b
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: ee221f0c1da32694e869177399981cc16ce901f4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54803524"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099465"
 ---
 # <a name="vsperf"></a>VSPerf
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ Použití **VsPerf** nástroj příkazového řádku:
   
    Další informace o možnostech profilování, naleznete v tématu [nástroje pro výkon v aplikacích Windows 8 a Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
   
-##  <a name="BKMK_In_this_topic"></a> V tomto tématu  
+## <a name="BKMK_In_this_topic"></a> V tomto tématu  
  Toto téma popisuje možnosti, které můžete používat `vsperf.exe` nástroj příkazového řádku. Téma obsahuje následující části:  
   
  [Jenom aplikace Windows Store](#BKMK_windows_store_apps_only)  
@@ -36,7 +36,7 @@ Použití **VsPerf** nástroj příkazového řádku:
   
  [Všechny aplikace](#BKMK_All_applications)  
   
-##  <a name="BKMK_windows_store_apps_only"></a> Jenom aplikace Windows Store  
+## <a name="BKMK_windows_store_apps_only"></a> Jenom aplikace Windows Store  
  Tyto možnosti platí pouze pro aplikace Windows Store.  
   
 |||  
@@ -47,7 +47,7 @@ Použití **VsPerf** nástroj příkazového řádku:
 |**/noclr**|Volitelné. Neshromažďují dat CLR.<br /><br /> Pouze pomocí/Package nebo / připojit.<br /><br /> Optimalizace, se vyřeší žádné spravované symboly.|  
 |**/listapps**|Vypsání seznamu instalovaných názvů aplikací a PackageFullNames.|  
   
-##  <a name="BKMK_Windows_8_classic_applications_and_Windows_Server_2012_applications_only"></a> Aplikace klasické pracovní plochy systému Windows 8 a pouze aplikace systému Windows Server 2012  
+## <a name="BKMK_Windows_8_classic_applications_and_Windows_Server_2012_applications_only"></a> Aplikace klasické pracovní plochy systému Windows 8 a pouze aplikace systému Windows Server 2012  
  Tyto možnosti nebudou fungovat v aplikacích Windows Store.  
   
 |||  
@@ -56,7 +56,7 @@ Použití **VsPerf** nástroj příkazového řádku:
 |**/ args: {ExecutableArguments}**|Určuje argumenty příkazového řádku k předání **/spuštění** cíl.|  
 |**/ Console**|Spuštění **/spuštění** cíl v nové příkazové okno.|  
   
-##  <a name="BKMK_All_applications"></a> Všechny aplikace  
+## <a name="BKMK_All_applications"></a> Všechny aplikace  
  Tato možnost platí pro všechny aplikace systému Windows 8 nebo Windows Server 2012.  
   
 |||  

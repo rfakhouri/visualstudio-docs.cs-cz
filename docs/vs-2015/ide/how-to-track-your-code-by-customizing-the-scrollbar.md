@@ -9,12 +9,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 11df0e3ca4e8b9c814bf91735d48bb091c711068
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: da6745b3980b6ef5b0200c91d4abf245daadfa71
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54788203"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113811"
 ---
 # <a name="how-to-track-your-code-by-customizing-the-scrollbar"></a>Postupy: Sledování kódu přizpůsobením posuvníku
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,13 +23,13 @@ Při práci se soubory kódu dlouho, může být obtížné všechno, co brát v
   
 ### <a name="to-show-annotations-on-the-scroll-bar"></a>Chcete-li zobrazit poznámky na posuvníku  
   
-1.  Můžete nastavit posuvník pro zobrazení změn kódu, zarážky, chyby a záložky.  
+1. Můžete nastavit posuvník pro zobrazení změn kódu, zarážky, chyby a záložky.  
   
      Otevřít **posuvník** stránka možností (**nástroje, Možnosti textového editoru. Všechny jazyky** nebo konkrétní jazyk, nebo typ **posuvník** v okně Snadné spuštění).  
   
-2.  Vyberte **zobrazit poznámky přes svislý posuvník**, pak vybrat poznámky, které chcete zobrazit. ( **Značky** možnost obsahuje zarážky a záložky.)  
+2. Vyberte **zobrazit poznámky přes svislý posuvník**, pak vybrat poznámky, které chcete zobrazit. ( **Značky** možnost obsahuje zarážky a záložky.)  
   
-3.  Nyní vyzkoušejte. Otevřete soubor kódu a nahraďte něco, ke které dochází na několika místech v souboru. Posuvník demonstruje účinek nahrazení, tak si změny můžete zálohovat, pokud něco, co by nemělo být nahrazen.  
+3. Nyní vyzkoušejte. Otevřete soubor kódu a nahraďte něco, ke které dochází na několika místech v souboru. Posuvník demonstruje účinek nahrazení, tak si změny můžete zálohovat, pokud něco, co by nemělo být nahrazen.  
   
      Tady je vzhled posuvníku po hledání řetězce. Všimněte si, že se zobrazují všechny instance řetězce.  
   
@@ -41,7 +41,7 @@ Při práci se soubory kódu dlouho, může být obtížné všechno, co brát v
   
 ### <a name="to-set-the-display-mode-for-the-scroll-bar"></a>Chcete-li nastavit režim zobrazení pro posuvník  
   
-1.  Posuvník má dva režimy, režimu panelu (výchozí) a režim mapování. Panel režimu pouze zobrazuje indikátory poznámky na posuvníku. V režimu mapování jsou reprezentovány řádky kódu na posuvníku. Můžete zvolit jsou jak široké a určuje, zda se zobrazí základního kódu při přesunutí ukazatele myši na ně. Po kliknutí na umístění na posuvníku, kurzor se přesune do tohoto umístění v kódu. Sbalených oblasti jsou jinak; označeno šedou barvou jsou rozbaleny při dvojitém kliknutí na ně.  
+1. Posuvník má dva režimy, režimu panelu (výchozí) a režim mapování. Panel režimu pouze zobrazuje indikátory poznámky na posuvníku. V režimu mapování jsou reprezentovány řádky kódu na posuvníku. Můžete zvolit jsou jak široké a určuje, zda se zobrazí základního kódu při přesunutí ukazatele myši na ně. Po kliknutí na umístění na posuvníku, kurzor se přesune do tohoto umístění v kódu. Sbalených oblasti jsou jinak; označeno šedou barvou jsou rozbaleny při dvojitém kliknutí na ně.  
   
      Na **posuvník** možnosti stránky, vyberte buď možnost **režim panel použijte pro svislý posuvník** nebo **režim použít mapování pro svislý posuvník**. Můžete zvolit požadovanou šířku v **hled zdrojů** rozevíracího seznamu.  
   
@@ -49,7 +49,7 @@ Při práci se soubory kódu dlouho, může být obtížné všechno, co brát v
   
      ![Posuvník v režimu mapy](../ide/media/enhancedscrollbar.png "EnhancedScrollbar")  
   
-2.  V režimu Mapa k povolení verze Preview kódu při přesunutí kurzoru nahoru a dolů posuvníku, vyberte **zobrazení popisu tlačítka ve verzi Preview** možnost. Zde je, jak bude vypadat:  
+2. V režimu Mapa k povolení verze Preview kódu při přesunutí kurzoru nahoru a dolů posuvníku, vyberte **zobrazení popisu tlačítka ve verzi Preview** možnost. Zde je, jak bude vypadat:  
   
      ![Posuvník s popisem](../ide/media/enhancedscrollbarsearchtooltip.png "EnhancedScrollbarSearchTooltip")  
   

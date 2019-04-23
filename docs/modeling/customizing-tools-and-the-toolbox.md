@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ae5873462c2938ab4215d1cd4837c496e235ab35
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e06317aa91cf71d109a2e90bc955aa28cc4b4903
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913363"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60101857"
 ---
 # <a name="customizing-tools-and-the-toolbox"></a>Přizpůsobení nástrojů a panelu nástrojů
 
@@ -38,15 +38,15 @@ Editor
 
 V této části Průzkumník DSL můžete:
 
--   Vytvoření nových kartách. Karty definovat nadpisy oddílů v panelu nástrojů.
+- Vytvoření nových kartách. Karty definovat nadpisy oddílů v panelu nástrojů.
 
--   Vytvoření nových nástrojů.
+- Vytvoření nových nástrojů.
 
--   Zkopírujte a vložte nástroje.
+- Zkopírujte a vložte nástroje.
 
--   Přesunutí nástroje směrem nahoru nebo dolů v seznamu.
+- Přesunutí nástroje směrem nahoru nebo dolů v seznamu.
 
--   Odstraňte karty a nástroje.
+- Odstraňte karty a nástroje.
 
 > [!IMPORTANT]
 > Chcete-li přidat nebo vložit položky v Průzkumníku DSL, klikněte pravým tlačítkem na nadřazený nový uzel. Například pokud chcete přidat nástroj, klikněte pravým tlačítkem na kartu a ne **nástroje** uzlu. Chcete-li přidat na kartě, klikněte pravým tlačítkem **Editor** uzlu.
@@ -59,36 +59,36 @@ V této části Průzkumník DSL můžete:
 
 #### <a name="to-add-a-tool-to-the-toolbox"></a>Chcete-li přidat nástroj na panelu nástrojů
 
-1.  Obvykle vytvoříte nástroj pro element po vytvoření obrazec třídy a mapován na doménovou třídu.
+1. Obvykle vytvoříte nástroj pro element po vytvoření obrazec třídy a mapován na doménovou třídu.
 
      Obvykle vytvoříte konektor nástroje po vytvoření konektoru třídy a mapován na vztah odkazu.
 
-2.  V okně Průzkumník DSL, rozbalte **Editor** uzlu a **karty panelu nástrojů** uzlu.
+2. V okně Průzkumník DSL, rozbalte **Editor** uzlu a **karty panelu nástrojů** uzlu.
 
      Klikněte pravým tlačítkem na uzel kartu panelu nástrojů a potom klikněte na tlačítko **přidejte nový prvek nástroj** nebo **přidat nové připojení nástroje**.
 
-3.  Nastavte **panelu nástrojů ikonu** vlastnost k odkazování na rastrový obrázek 16 x 16.
+3. Nastavte **panelu nástrojů ikonu** vlastnost k odkazování na rastrový obrázek 16 x 16.
 
      Pokud chcete definovat nová ikona, vytvořit soubor rastrového obrázku v Průzkumníku řešení v **Dsl\Resources** složky. Soubor by měl mít následující hodnoty vlastností: **Akce sestavení** = **obsahu**; **Kopírovat do výstupního adresáře** = **nekopírovat**.
 
-4.  **Pro nástroj element:** Nastavte **třídy** vlastnost nástroje k odkazování na konkrétní doménovou třídou, která je namapovaná na obrazec.
+4. **Pro nástroj element:** Nastavte **třídy** vlastnost nástroje k odkazování na konkrétní doménovou třídou, která je namapovaná na obrazec.
 
      **Konektor nástroje:** Nastavte **Tvůrce připojení** vlastnost nástroje pro jednu z položek, které nabízí v rozevíracím seznamu. Tvůrci připojení se automaticky vytvoří při mapování spojnici na doménový vztah. Pokud jste nedávno vytvořili konektor, obvykle vyberete Tvůrce asociované připojení.
 
-5.  K otestování DSL, stiskněte klávesu F5 nebo CTRL + F5 a v experimentální instanci sady Visual Studio, otevřete ukázkový soubor modelu. Nový nástroj by se zobrazit na panelu nástrojů. Přetáhněte do diagramu, ověřte, že vytvoří nový prvek.
+5. K otestování DSL, stiskněte klávesu F5 nebo CTRL + F5 a v experimentální instanci sady Visual Studio, otevřete ukázkový soubor modelu. Nový nástroj by se zobrazit na panelu nástrojů. Přetáhněte do diagramu, ověřte, že vytvoří nový prvek.
 
      Pokud nástroj nezobrazí, zastavte experimentální Visual Studio. V Windows **Start** nabídky, spusťte **resetování Microsoft Visual Studio 2010 experimentální instanci**. Na **sestavení** nabídky, klikněte na tlačítko **znovu sestavit řešení**. Potom znovu otestujte DSL.
 
 ## <a name="customizing"></a> Přizpůsobení nástrojů elementu
  Ve výchozím nastavení nástroj vytvoří jednu instanci dané třídy, ale to se může pohybovat dvěma způsoby:
 
--   Definujte direktivy sloučení elementů pro jiné třídy, což jim tak, aby přijímal nové instance této třídy a umožnit jim vytvořit další odkazy, když se vytvoří nový prvek. Může například uživateli umožní vyřadit komentář na jiný element a tím vytvořit odkaz mezi těmito dvěma.
+- Definujte direktivy sloučení elementů pro jiné třídy, což jim tak, aby přijímal nové instance této třídy a umožnit jim vytvořit další odkazy, když se vytvoří nový prvek. Může například uživateli umožní vyřadit komentář na jiný element a tím vytvořit odkaz mezi těmito dvěma.
 
      Tyto úpravy také vliv na co se stane, když uživatel vloží nebo přetáhne a zahodí elementu.
 
      Další informace najdete v tématu [přizpůsobení vytvoření a přesunutí elementu](../modeling/customizing-element-creation-and-movement.md).
 
--   Zápis kódu pro úpravu nástroje, takže ho můžete vytvořit skupiny prvků. Nástroj je inicializován pomocí metody v ToolboxHelper.cs, které můžete přepsat. Další informace najdete v tématu [vytváření skupin z prvků z nástroje](#groups).
+- Zápis kódu pro úpravu nástroje, takže ho můžete vytvořit skupiny prvků. Nástroj je inicializován pomocí metody v ToolboxHelper.cs, které můžete přepsat. Další informace najdete v tématu [vytváření skupin z prvků z nástroje](#groups).
 
 ## <a name="groups"></a> Vytvoření skupiny prvků z nástroje
  Nástroj pro každý prvek obsahuje prototyp prvky, které se má vytvořit. Ve výchozím nastavení nástroj pro každý element vytvoří jeden element, ale je také možné vytvořit pomocí jednoho nástroje skupiny souvisejících objektů. K tomuto účelu nástroj s inicializaci <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> , který obsahuje související položky.
@@ -236,6 +236,6 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 
 - [Přizpůsobení vytvoření a přesunutí elementu](../modeling/customizing-element-creation-and-movement.md)
 - [Přizpůsobení chování kopírování](../modeling/customizing-copy-behavior.md)
-- [Postupy: Přidání obslužné rutiny operace přetažení myší](../modeling/how-to-add-a-drag-and-drop-handler.md)
+- [Postupy: Přidání obslužné rutiny operace podporující přetahování](../modeling/how-to-add-a-drag-and-drop-handler.md)
 - [Navigace v modelu a aktualizace modelu v kódu programu](../modeling/navigating-and-updating-a-model-in-program-code.md)
 - [Ukázka diagramy okruh DSL](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)

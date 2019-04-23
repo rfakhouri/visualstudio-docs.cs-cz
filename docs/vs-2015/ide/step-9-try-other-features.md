@@ -9,12 +9,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7f8e205ff8e6659ee1f0200e1e2ddc4363d10539
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 23838c7e68a3da18ba5438a2c56814d6dc27f9b8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54759999"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102650"
 ---
 # <a name="step-9-try-other-features"></a>Krok 9: Vyzkoušení dalších funkcí
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,32 +25,32 @@ Chcete-li získat další informace, zkuste změnit ikony a barvy, přidat časo
   
 ### <a name="to-try-other-features"></a>Vyzkoušení dalších funkcí  
   
--   Nahraďte ikony a barvy těmi, které zvolíte.  
+- Nahraďte ikony a barvy těmi, které zvolíte.  
   
     > [!TIP]
     >  Podívejte se na popisku [Forecolor](http://msdn.microsoft.com/library/system.windows.forms.control.forecolor%28v=vs.110%29.aspx) vlastnost.  
   
--   Přidejte časovač hry, který sleduje, jak dlouho hráči trvá, než vyhraje.  
+- Přidejte časovač hry, který sleduje, jak dlouho hráči trvá, než vyhraje.  
   
     > [!TIP]
     >  K tomu můžete přidat popisek, který ve formuláři nad kontejnerem TableLayoutPanel zobrazí uplynulý čas, a do formuláře přidat další časovač pro sledování času. Použijte kód ke spuštění časovače, když hráč zahájí hru, a zastavení časovače, jakmile hráč spojí poslední dvě ikony.  
   
--   Pokud hráč najde shodu, přidejte zvuk, jiný zvuk, když hráč odkryje dvě ikony, které neodpovídají, a třetí zvuk, když program znovu skryje ikony.  
+- Pokud hráč najde shodu, přidejte zvuk, jiný zvuk, když hráč odkryje dvě ikony, které neodpovídají, a třetí zvuk, když program znovu skryje ikony.  
   
     > [!TIP]
     >  Chcete-li přehrát zvuky, můžete použít obor názvů System.media. Zobrazit [Play Sounds in Windows Forms App (C# .NET)](http://youtu.be/qOh4ooHg1UU) nebo [jak pro přehrávání Audio In Visual Basic](http://youtu.be/-4oPDeQrtMs) Další informace.  
   
--   Udělejte hru obtížnější tím, že zvětšíte hrací plochu.  
+- Udělejte hru obtížnější tím, že zvětšíte hrací plochu.  
   
     > [!TIP]
     >  Bude potřeba udělat více než jen přidat řádky a sloupce do kontejneru TableLayoutPanel – bude také nutné zvážit počet ikon, které vytvoříte.  
   
--   Udělejte hru náročnější tím, že skryjete první ikonu, pokud je hráč příliš pomalý a nezvolí druhou ikonu do vypršení určitého časového limitu.  
+- Udělejte hru náročnější tím, že skryjete první ikonu, pokud je hráč příliš pomalý a nezvolí druhou ikonu do vypršení určitého časového limitu.  
   
 ### <a name="to-continue-or-review"></a>Chcete-li pokračovat nebo přezkoumat  
   
--   Pokud si nevíte rady nebo máte otázky k programování, můžete zveřejnit svůj dotaz na jednom z diskuzních fór MSDN. Zobrazit [fórum Visual Basic](http://social.msdn.microsoft.com/Forums/home?forum=vbgeneral) a [fórum Visual C#](http://social.msdn.microsoft.com/Forums/home?forum=csharpgeneral).  
+- Pokud si nevíte rady nebo máte otázky k programování, můžete zveřejnit svůj dotaz na jednom z diskuzních fór MSDN. Zobrazit [fórum Visual Basic](http://social.msdn.microsoft.com/Forums/home?forum=vbgeneral) a [fórum Visual C#](http://social.msdn.microsoft.com/Forums/home?forum=csharpgeneral).  
   
--   K dispozici jsou užitečné bezplatné video výukové materiály. Další informace o programování v jazyce Visual Basic najdete v tématu [základy jazyka Visual Basic: Vývoj pro naprosté začátečníky](http://channel9.msdn.com/Series/Visual-Basic-Development-for-Absolute-Beginners). Další informace o programování v jazyce Visual C#, naleznete v tématu [ C# základní informace: Vývoj pro naprosté začátečníky](http://channel9.msdn.com/Series/C-Sharp-Fundamentals-Development-for-Absolute-Beginners).  
+- K dispozici jsou užitečné bezplatné video výukové materiály. Další informace o programování v jazyce Visual Basic najdete v tématu [základy jazyka Visual Basic: Vývoj pro naprosté začátečníky](http://channel9.msdn.com/Series/Visual-Basic-Development-for-Absolute-Beginners). Další informace o programování v jazyce Visual C#, naleznete v tématu [ C# základní informace: Vývoj pro naprosté začátečníky](http://channel9.msdn.com/Series/C-Sharp-Fundamentals-Development-for-Absolute-Beginners).  
   
--   Chcete-li vrátit k předchozímu kroku tutoriálu, přečtěte si téma [krok 8: Přidejte metodu k ověření, zda hráč zvítězil](../ide/step-8-add-a-method-to-verify-whether-the-player-won.md).
+- Chcete-li vrátit k předchozímu kroku tutoriálu, přečtěte si téma [krok 8: Přidejte metodu k ověření, zda hráč zvítězil](../ide/step-8-add-a-method-to-verify-whether-the-player-won.md).

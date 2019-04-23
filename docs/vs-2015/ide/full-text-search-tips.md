@@ -14,12 +14,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a015aeff983979bbb8f6ddedc245c74d3fb5f77b
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 686bf7962e164e718f007a44c83febfc8f49418d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54791705"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108370"
 ---
 # <a name="full-text-search-tips"></a>Tipy pro fulltextové vyhledávání
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ Jedním ze užitečnější metody v nápovědě k vyhledání informací o je p
   
 > [!IMPORTANT]
 > 1. Vyhledávání frází nejsou podporovány. Pokud chcete zadat více slov ve vyhledávaném řetězci, bude vrácená témata obsahují všechna slova, která jste zadali, ale ne nutně přesnou frázi, které jste zadali.  
->    2.  Použijte logické operátory Pokud chcete určit vztah mezi slovy ve vaší vyhledávací fráze. Můžete zahrnout logické operátory, jako je například AND, OR, NOT a TÉMĚŘ, pro další upřesněte hledání. Například pokud hledáte "deklarace TÉMĚŘ sjednocení", budou výsledky hledání obsahují témata obsahující slova "deklarace" a "sjednocení" více než pár slov od sebe navzájem. Další informace najdete v tématu [logické operátory ve vyhledávacích výrazech](../ide/logical-operators-in-search-expressions.md).  
+>    2. Použijte logické operátory Pokud chcete určit vztah mezi slovy ve vaší vyhledávací fráze. Můžete zahrnout logické operátory, jako je například AND, OR, NOT a TÉMĚŘ, pro další upřesněte hledání. Například pokud hledáte "deklarace TÉMĚŘ sjednocení", budou výsledky hledání obsahují témata obsahující slova "deklarace" a "sjednocení" více než pár slov od sebe navzájem. Další informace najdete v tématu [logické operátory ve vyhledávacích výrazech](../ide/logical-operators-in-search-expressions.md).  
   
 ### <a name="filters"></a>Filtry  
  Výsledky hledání můžete omezit pomocí operátorů rozšířené vyhledávání. Nápověda obsahuje tři kategorie, které můžete použít pro filtrování výsledků fulltextové vyhledávání: Název, kód a – klíčové slovo. Další informace najdete v tématu [Pokročilí operátoři vyhledávání ve vyhledávacích výrazech](../ide/advanced-search-operators-in-search-expressions.md).  
@@ -51,11 +51,11 @@ Jedním ze užitečnější metody v nápovědě k vyhledání informací o je p
 ### <a name="ranking-of-search-results"></a>Řazení výsledků hledání  
  Vyhledávací algoritmus platí určitá kritéria umožňující řazení výsledků vyšší nebo nižší v seznamu výsledků hledání. Obecně platí:  
   
-1.  Obsah, který zahrnuje hledaná slova v názvu je vyšší než obsah, který není řazením.  
+1. Obsah, který zahrnuje hledaná slova v názvu je vyšší než obsah, který není řazením.  
   
-2.  Obsah, který obsahuje hledaná slova v těsné blízkosti je vyšší než obsah, který není řazením.  
+2. Obsah, který obsahuje hledaná slova v těsné blízkosti je vyšší než obsah, který není řazením.  
   
-3.  Obsah, který obsahuje vyšší hustotu slova je vyšší než obsah, který má nižší hustotu slova řazením.  
+3. Obsah, který obsahuje vyšší hustotu slova je vyšší než obsah, který má nižší hustotu slova řazením.  
   
 ### <a name="words-ignored-in-searches-stop-words"></a>Slova v hledání (nevýznamová slova) ignoruje.  
  Nejčastěji se vyskytující slova nebo čísel, které jsou někdy označovány jako nevýznamová slova, se automaticky ignorují během fulltextového vyhledávání. Například pokud hledáte pro frázi "průchodu", zobrazí výsledky hledání témata obsahující slovo "heslo" ale ne "až".  

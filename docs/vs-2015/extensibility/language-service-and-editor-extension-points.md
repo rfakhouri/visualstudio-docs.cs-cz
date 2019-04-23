@@ -10,35 +10,35 @@ ms.assetid: 91a6417e-a6fe-4bc2-9d9f-5173c634a99b
 caps.latest.revision: 34
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 80aed463b2d8ef9d083940a8966574e778623ddd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 295ff3e48e2b0598a8cf33bfd4842e35b7469737
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54781227"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085517"
 ---
 # <a name="language-service-and-editor-extension-points"></a>Rozšiřovací body služeb jazyka a editoru
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Editor poskytuje Rozšiřovací body, které můžete rozšířit jako součásti Managed Extensibility Framework (MEF), včetně většina funkcí služby jazyka. Toto jsou hlavní rozšíření kategorií bodu:  
   
--   Typy obsahu  
+- Typy obsahu  
   
--   Typy klasifikace a klasifikace formáty  
+- Typy klasifikace a klasifikace formáty  
   
--   Okraje a posuvníky  
+- Okraje a posuvníky  
   
--   Značky  
+- Značky  
   
--   Vylepšení  
+- Vylepšení  
   
--   Procesory myši  
+- Procesory myši  
   
--   Vyřadit obslužné rutiny  
+- Vyřadit obslužné rutiny  
   
--   Možnosti  
+- Možnosti  
   
--   IntelliSense  
+- IntelliSense  
   
 ## <a name="extending-content-types"></a>Rozšíření typů obsahu  
  Typy obsahu jsou definice typů zpracovat editoru, například text, "text", "kód" nebo "CSharp". Nový typ obsahu definujete deklarováním proměnné typu <xref:Microsoft.VisualStudio.Utilities.ContentTypeDefinition> a poskytuje jedinečný název nového typu obsahu. K registraci typu obsahu v editoru, exportujte ho spolu s následujícími atributy:  
@@ -409,21 +409,21 @@ internal sealed class TestMouseProcessorProvider : IMouseProcessorProvider
   
 - <xref:Microsoft.VisualStudio.Text.Editor.DragDrop.DropFormatAttribute>: v textovém formátu, pro kterou platí tato obslužná rutina přetažení. Následující formáty jsou zpracovány v pořadí podle priority od nejvyšší po nejnižší:  
   
-  1.  Všechny vlastní formát  
+  1. Všechny vlastní formát  
   
-  2.  FileDrop  
+  2. FileDrop  
   
-  3.  EnhancedMetafile  
+  3. EnhancedMetafile  
   
-  4.  WaveAudio  
+  4. WaveAudio  
   
-  5.  RIFF  
+  5. RIFF  
   
-  6.  DIF  
+  6. DIF  
   
-  7.  Národní prostředí  
+  7. Národní prostředí  
   
-  8.  Paleta  
+  8. Paleta  
   
   9. PenData  
   
@@ -507,39 +507,39 @@ internal sealed class TestOption : EditorOptionDefinition<bool>
 ### <a name="implementing-an-intellisense-source"></a>Implementace zdroj technologie IntelliSense  
  Přizpůsobení zdroji, musí implementovat jednu (nebo více) rozhraní následující zdroje:  
   
--   <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource>  
+- <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource>  
   
--   <xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoSource>  
+- <xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoSource>  
   
--   <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSource>  
+- <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSource>  
   
--   <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource>  
+- <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource>  
   
 > [!IMPORTANT]
 >  <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagSource> se už nepoužívá nahrazený <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource>.  
   
  Kromě toho je nutné implementovat zprostředkovatele stejného druhu:  
   
--   <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSourceProvider>  
+- <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSourceProvider>  
   
--   <xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoSourceProvider>  
+- <xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoSourceProvider>  
   
--   <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSourceProvider>  
+- <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSourceProvider>  
   
--   <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider>  
+- <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider>  
   
 > [!IMPORTANT]
 >  <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagSourceProvider> se už nepoužívá nahrazený <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider>.  
   
  Je nutné exportovat poskytovatele společně s následujícími atributy:  
   
--   <xref:Microsoft.VisualStudio.Utilities.NameAttribute>: název zdroje.  
+- <xref:Microsoft.VisualStudio.Utilities.NameAttribute>: název zdroje.  
   
--   <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>: typ obsah (například "text" nebo "code"), ke kterému se vztahuje na zdroj.  
+- <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>: typ obsah (například "text" nebo "code"), ke kterému se vztahuje na zdroj.  
   
--   <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>: pořadí, ve kterém by se měla objevit zdroj (s ohledem na další zdroje).  
+- <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>: pořadí, ve kterém by se měla objevit zdroj (s ohledem na další zdroje).  
   
--   Následující příklad ukazuje export atributy u poskytovatele zdroj dokončení.  
+- Následující příklad ukazuje export atributy u poskytovatele zdroj dokončení.  
   
 ```  
 Export(typeof(ICompletionSourceProvider))]  

@@ -9,12 +9,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 53c55987c22104a8951976890812d90f6bb838d4
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: a16ad46722213a703785d08209d68b3c4ee6b04f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54774990"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099584"
 ---
 # <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>Postupy: Úprava souborů Web.Config za účelem instrumentace a profilování dynamicky kompilovaných webových aplikací ASP.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,27 +38,27 @@ Můžete použít [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nástrojů pro pr
   
 ### <a name="to-add-the-aspnethelper-assembly-as-a-configurationruntimeassemblybindingdependentassembly-element"></a>Chcete-li přidat ASPNetHelper sestavení jako konfigurace/runtime/assemblyBinding/dependentAssembly – element  
   
-1.  V případě potřeby přidat **runtime** prvek jako podřízený prvek **konfigurace** prvek; v opačném případě přejděte k dalšímu kroku.  
+1. V případě potřeby přidat **runtime** prvek jako podřízený prvek **konfigurace** prvek; v opačném případě přejděte k dalšímu kroku.  
   
      **Runtime** prvek nemá žádné atributy. **Konfigurace** prvek může mít pouze jeden **runtime** podřízený element.  
   
-2.  V případě potřeby přidat **assemblyBinding** prvek jako podřízený prvek **runtime** prvek; v opačném případě přejděte k dalšímu kroku.  
+2. V případě potřeby přidat **assemblyBinding** prvek jako podřízený prvek **runtime** prvek; v opačném případě přejděte k dalšímu kroku.  
   
      **Runtime** prvek může mít pouze jeden **assemblyBinding** elementu.  
   
-3.  Přidejte následující atribut název a hodnota, která se **assemblyBinding** element:  
+3. Přidejte následující atribut název a hodnota, která se **assemblyBinding** element:  
   
     |Název atributu|Hodnota atributu|  
     |--------------------|---------------------|  
     |**Xmlns**|**urn:schemas-microsoft-com:asm.v1**|  
   
-4.  Přidat **dependentAssembly** prvek jako podřízený prvek **assemblyBinding** elementu.  
+4. Přidat **dependentAssembly** prvek jako podřízený prvek **assemblyBinding** elementu.  
   
      **DependentAssembly** prvek nemá žádné atributy.  
   
-5.  Přidat **assemblyIdentity** element jako podřízený objekt **dependentAssembly** elementu.  
+5. Přidat **assemblyIdentity** element jako podřízený objekt **dependentAssembly** elementu.  
   
-6.  Přidejte následující atribut názvy a hodnoty, které mají **assemblyIdentity** element:  
+6. Přidejte následující atribut názvy a hodnoty, které mají **assemblyIdentity** element:  
   
     |Název atributu|Hodnota atributu|  
     |--------------------|---------------------|  
@@ -66,9 +66,9 @@ Můžete použít [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nástrojů pro pr
     |**PublicKeyToken**|**b03f5f7f11d50a3a**|  
     |**Jazyková verze**|**Neutrální**|  
   
-7.  Přidat **základu kódu** element jako podřízený objekt **dependentAssembly** elementu.  
+7. Přidat **základu kódu** element jako podřízený objekt **dependentAssembly** elementu.  
   
-8.  Přidejte následující atribut názvy a hodnoty, které mají **codeBase** element:  
+8. Přidejte následující atribut názvy a hodnoty, které mají **codeBase** element:  
   
     |Název atributu|Hodnota atributu|  
     |--------------------|---------------------|  
@@ -98,15 +98,15 @@ Můžete použít [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nástrojů pro pr
   
 ### <a name="to-add-the-profiler-post-process-step-to-the-configurationsystemwebcompilation-element"></a>Můžete přidat krok následného zpracování Profiler configuration/system.web/compilation element  
   
-1.  V případě potřeby přidat **system.web** prvek jako podřízený prvek **konfigurace** prvek; v opačném případě přejděte k dalšímu kroku.  
+1. V případě potřeby přidat **system.web** prvek jako podřízený prvek **konfigurace** prvek; v opačném případě přejděte k dalšímu kroku.  
   
      **System.web** prvek nemá žádné atributy. **Konfigurace** prvek může mít pouze jeden **system.web** podřízený element.  
   
-2.  V případě potřeby přidat **kompilace** prvek jako podřízený prvek **system.web** prvek; v opačném případě přejděte k dalšímu kroku.  
+2. V případě potřeby přidat **kompilace** prvek jako podřízený prvek **system.web** prvek; v opačném případě přejděte k dalšímu kroku.  
   
      **System.web** prvek může mít pouze jeden **kompilace** podřízený element.  
   
-3.  Odeberte všechny existující atributy z **kompilace** prvek a přidejte následující atribut název a hodnotu:  
+3. Odeberte všechny existující atributy z **kompilace** prvek a přidejte následující atribut název a hodnotu:  
   
     |Název atributu|Hodnota atributu|  
     |--------------------|---------------------|  
@@ -130,22 +130,22 @@ Můžete použít [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nástrojů pro pr
   
 ### <a name="to-add-profiler-location-settings-to-the-configurationappsettings-element"></a>Chcete-li přidat nastavení umístění Profiler element konfigurace/appSettings  
   
-1.  V případě potřeby přidat **appSettings** prvek jako podřízený prvek **konfigurace** prvek; v opačném případě přejděte k dalšímu kroku.  
+1. V případě potřeby přidat **appSettings** prvek jako podřízený prvek **konfigurace** prvek; v opačném případě přejděte k dalšímu kroku.  
   
      **AppSettings** prvek nemá žádné atributy. **Konfigurace** prvek může mít pouze jeden **appSettings** podřízený element.  
   
-2.  Přidat **přidat** element jako podřízený objekt **appSettings** elementu.  
+2. Přidat **přidat** element jako podřízený objekt **appSettings** elementu.  
   
-3.  Přidejte následující atribut názvy a hodnoty, které mají **přidat** element:  
+3. Přidejte následující atribut názvy a hodnoty, které mají **přidat** element:  
   
     |Název atributu|Hodnota atributu|  
     |--------------------|---------------------|  
     |**key**|**Microsoft.VisualStudio.Enterprise.AspNetHelper.VsInstrLocation**|  
     |**value**|`PerformanceToolsFolder` **\VSInstr.Exe**|  
   
-4.  Přidejte další **přidat** element jako podřízený objekt **appSettings** elementu.  
+4. Přidejte další **přidat** element jako podřízený objekt **appSettings** elementu.  
   
-5.  Přidejte následující atribut názvy a hodnoty tohoto **přidat** element:  
+5. Přidejte následující atribut názvy a hodnoty tohoto **přidat** element:  
   
     |Název atributu|Hodnota atributu|  
     |--------------------|---------------------|  

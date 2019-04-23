@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6f055ba84c4e6a6b48c13f3eef9a433eb4c5b3e1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: cef35cd1aa19ad27e7c47227b726a44756b0fae8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605842"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085713"
 ---
 # <a name="how-to-add-xmlmappedrange-controls-to-worksheets"></a>Postupy: Přidání ovládacích prvků XMLMappedRange do listů
   Při mapování platný element XML do buňky v aplikaci Microsoft Office Excel sady Visual Studio automaticky přidá <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> ovládacího prvku do listu.
@@ -30,30 +30,30 @@ ms.locfileid: "56605842"
 
 ## <a name="to-add-an-xmlmappedrange-control-to-a-worksheet"></a>Chcete-li přidat xmlmappedrange – ovládací prvek do listu
 
-1.  Otevřete Excelový sešit v návrháři aplikace Visual Studio.
+1. Otevřete Excelový sešit v návrháři aplikace Visual Studio.
 
-2.  Otevřete list, ve které chcete přidat ovládací prvek.
+2. Otevřete list, ve které chcete přidat ovládací prvek.
 
-3.  Na **Developer** klikněte na tlačítko **zdroj**.
+3. Na **Developer** klikněte na tlačítko **zdroj**.
 
     > [!NOTE]
     >  Pokud **Developer** karta není zobrazena na pásu karet, musíte ho nejdřív povolit. Další informace najdete v tématu [jak: Zobrazení karty Vývojář na pásu karet](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
 
      **XML použitého jako zdroj** se zobrazí v podokně úloh.
 
-4.  V **XML použitého jako zdroj** podokna úloh, klikněte na tlačítko **mapování XML**.
+4. V **XML použitého jako zdroj** podokna úloh, klikněte na tlačítko **mapování XML**.
 
-5.  V **mapování XML** dialogové okno, klikněte na tlačítko **přidat**.
+5. V **mapování XML** dialogové okno, klikněte na tlačítko **přidat**.
 
      **XML použitého jako zdroj** zobrazí se dialogové okno.
 
-6.  Výběr schématu XML z **XML použitého jako zdroj** dialogové okno a klikněte na tlačítko **otevřít**.
+6. Výběr schématu XML z **XML použitého jako zdroj** dialogové okno a klikněte na tlačítko **otevřít**.
 
      Schéma se přidá do **mapování XML** dialogové okno.
 
-7.  V **mapování XML** dialogové okno, klikněte na tlačítko **OK**.
+7. V **mapování XML** dialogové okno, klikněte na tlačítko **OK**.
 
-8.  Přetáhněte element z **XML použitého jako zdroj** podokna úloh do buňky v listu.
+8. Přetáhněte element z **XML použitého jako zdroj** podokna úloh do buňky v listu.
 
      <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> Je vytvořen a přidán do projektu.
 

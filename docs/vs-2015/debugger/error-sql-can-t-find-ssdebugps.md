@@ -17,12 +17,12 @@ caps.latest.revision: 9
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 33e6efb699d12cc58555cacede6a20c5b0091d0d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 25462a99bd3e773f03af3918a9e25d11ed006c1c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54785170"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60084710"
 ---
 # <a name="error-sql-can39t-find-ssdebugps"></a>Chyba: Můžete SQL&#39;t najít ssdebugps.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,9 +39,9 @@ Ssdebugps.dll nebyl je součást ladění hostitel systému SQL Server.
   
 ### <a name="to-copy-ssdebugpsdll-onto-the-sql-server-2005-machine"></a>Ke zkopírování ssdebugps.dll nebyl do počítače serveru SQL Server 2005  
   
-1.  Zkopírujte soubor do adresáře se stejným názvem a cestu na [!INCLUDE[sqprsqlong](../includes/sqprsqlong-md.md)] počítače.  
+1. Zkopírujte soubor do adresáře se stejným názvem a cestu na [!INCLUDE[sqprsqlong](../includes/sqprsqlong-md.md)] počítače.  
   
-2.  Zaregistrujte ho tak, že otevřete **příkazového řádku**a spuštěním následujícího příkazu:  
+2. Zaregistrujte ho tak, že otevřete **příkazového řádku**a spuštěním následujícího příkazu:  
   
     ```  
     regsvr32 ssdebugps.dll  

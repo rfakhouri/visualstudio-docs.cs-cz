@@ -12,12 +12,12 @@ ms.assetid: 6af9b0b4-037f-404c-bb40-aaa1970768ea
 caps.latest.revision: 39
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 28588f04119eea31dfb0f32beb3b78376aa1b6b3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3c63f6c98153c9f7a9fab171b3caddd57df717cc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54781308"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107798"
 ---
 # <a name="adding-a-menu-controller-to-a-toolbar"></a>Přidání kontroleru nabídky do panelu nástrojů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -114,7 +114,7 @@ Tento návod vychází [přidání panelu nástrojů do panelu nástrojů](../ex
   
 ## <a name="implementing-the-menu-controller-commands"></a>Implementace příkazy Kontroleru nabídky  
   
-1.  V TWTestCommandPackageGuids.cs přidejte po příkazu existující identifikátory ID příkazu pro vaše položky nabídky tři.  
+1. V TWTestCommandPackageGuids.cs přidejte po příkazu existující identifikátory ID příkazu pro vaše položky nabídky tři.  
   
     ```csharp  
     public const int cmdidMCItem1 = 0x130;  
@@ -122,13 +122,13 @@ Tento návod vychází [přidání panelu nástrojů do panelu nástrojů](../ex
     public const int cmdidMCItem3 = 0x132;  
     ```  
   
-2.  V TWTestCommand.cs přidejte následující kód v horní části třídy TWTestCommand.  
+2. V TWTestCommand.cs přidejte následující kód v horní části třídy TWTestCommand.  
   
     ```csharp  
     private int currentMCCommand; // The currently selected menu controller command  
     ```  
   
-3.  V konstruktoru TWTestCommand po posledním volání `AddCommand` metodu, přidejte kód pro směrování událostí pro každý příkaz prostřednictvím stejné obslužné rutiny.  
+3. V konstruktoru TWTestCommand po posledním volání `AddCommand` metodu, přidejte kód pro směrování událostí pro každý příkaz prostřednictvím stejné obslužné rutiny.  
   
     ```csharp  
     for (int i = TWTestCommandPackageGuids.cmdidMCItem1; i <=  
@@ -149,7 +149,7 @@ Tento návod vychází [přidání panelu nástrojů do panelu nástrojů](../ex
     }  
     ```  
   
-4.  Přidejte obslužnou rutinu události do třídy TWTestCommand Označit vybrané příkazu, kontrolovaný.  
+4. Přidejte obslužnou rutinu události do třídy TWTestCommand Označit vybrané příkazu, kontrolovaný.  
   
     ```csharp  
     private void OnMCItemQueryStatus(object sender, EventArgs e)  
@@ -162,7 +162,7 @@ Tento návod vychází [přidání panelu nástrojů do panelu nástrojů](../ex
     }  
     ```  
   
-5.  Přidáte obslužnou rutinu události, která zobrazí prvek MessageBox, když uživatel vybere příkaz na kontroleru nabídky:  
+5. Přidáte obslužnou rutinu události, která zobrazí prvek MessageBox, když uživatel vybere příkaz na kontroleru nabídky:  
   
     ```csharp  
     private void OnMCItemClicked(object sender, EventArgs e)  
@@ -214,13 +214,13 @@ Tento návod vychází [přidání panelu nástrojů do panelu nástrojů](../ex
   
 ## <a name="testing-the-menu-controller"></a>Testování Kontroleru nabídky  
   
-1.  Sestavte projekt a spusťte ladění. Měli byste vidět experimentální instanci aplikace.  
+1. Sestavte projekt a spusťte ladění. Měli byste vidět experimentální instanci aplikace.  
   
-2.  Otevřít **testovací třídy ToolWindow** na **zobrazení / ostatní Windows** nabídky.  
+2. Otevřít **testovací třídy ToolWindow** na **zobrazení / ostatní Windows** nabídky.  
   
      Kontroleru nabídky se zobrazí na panelu nástrojů v okně nástroje a zobrazí **MC položka 1**.  
   
-3.  Klikněte na tlačítko kontroleru nabídky na levé straně na šipku.  
+3. Klikněte na tlačítko kontroleru nabídky na levé straně na šipku.  
   
      Měli byste vidět tři položky se vybere první z nich a má pole zvýraznění kolem jeho ikonu. Klikněte na tlačítko **MC položky 3**.  
   

@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 151b62062c6846902643deef2c6cc93c315d4f4a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9d053bcd5e8b1824334f9953ac14881fdc0315be
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942593"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60083333"
 ---
 # <a name="customizing-the-properties-window"></a>Přizpůsobení okna Vlastnosti
 Ve svém jazyce specifického pro doménu (DSL) v sadě Visual Studio můžete přizpůsobit vzhled a chování v okně Vlastnosti. V definici DSL definovat vlastnosti domény na každou doménovou třídu. Ve výchozím nastavení, když vyberete instance třídy v diagramu nebo v Průzkumníku modelu každé domény je uvedena vlastnost v okně Vlastnosti. To vám umožní zobrazit a upravit hodnoty vlastnosti domény, i když ještě je mapována na pole obrazec v diagramu.
@@ -47,13 +47,13 @@ Ve svém jazyce specifického pro doménu (DSL) v sadě Visual Studio můžete p
 ### <a name="default-property-forwarding-cases"></a>Výchozí vlastnost předávání případy
  Když uživatel vybere obrazec nebo konektor nebo element v Průzkumníkovi, následující vlastnosti jsou zobrazeny v okně Vlastnosti:
 
--   Vlastnosti domény, které jsou definovány ve třídě domény prvku modelu, včetně těch, které jsou definovány v základních tříd. Výjimkou je vlastnosti domény, pro které jste nastavili **je Prohlížitelná** k `False`.
+- Vlastnosti domény, které jsou definovány ve třídě domény prvku modelu, včetně těch, které jsou definovány v základních tříd. Výjimkou je vlastnosti domény, pro které jste nastavili **je Prohlížitelná** k `False`.
 
--   Názvy elementů, které jsou propojeny prostřednictvím vztahy, které mít násobnost 0.. 1. Poskytuje pohodlný způsob volitelně zobrazuje propojené prvky, i když jste nedefinovali mapování konektoru pro daný vztah.
+- Názvy elementů, které jsou propojeny prostřednictvím vztahy, které mít násobnost 0.. 1. Poskytuje pohodlný způsob volitelně zobrazuje propojené prvky, i když jste nedefinovali mapování konektoru pro daný vztah.
 
--   Vlastnosti domény vztah obsažení, který cílí element. Protože vkládání relace se obvykle explicitně nezobrazují, to umožňuje uživateli zobrazit jejich vlastnosti.
+- Vlastnosti domény vztah obsažení, který cílí element. Protože vkládání relace se obvykle explicitně nezobrazují, to umožňuje uživateli zobrazit jejich vlastnosti.
 
--   Vlastnosti domény, které jsou definovány pro vybraný obrazec nebo spojnici.
+- Vlastnosti domény, které jsou definovány pro vybraný obrazec nebo spojnici.
 
 ### <a name="adding-property-forwarding"></a>Přidání vlastnosti předávání
  Chcete-li předat vlastnost, definovat popisovač typu domény. Pokud máte doménového vztahu mezi dvěma doménovými třídami, můžete nastavení vlastnosti domény první třídy k hodnotě vlastnosti domény v druhém doménové třídy popisovač typu domény. Například, pokud máte vztah mezi **knihy** doménové třídy a **Autor** doménovou třídu, můžete použít popisovač typu domény provádět **název** vlastnost Knihy **Autor** se zobrazí v okně Vlastnosti, když uživatel vybere knihy.
@@ -112,14 +112,14 @@ Ve svém jazyce specifického pro doménu (DSL) v sadě Visual Studio můžete p
 
 2. Přidat typ, který má **typy domén** seznamu, pokud jste tak již neučinili.
 
-   1.  Otevřete DslDefinition.dsl a v **Průzkumník DSL**, klikněte pravým tlačítkem na kořenový uzel a potom klikněte na tlačítko **přidat novou externí typ**.
+   1. Otevřete DslDefinition.dsl a v **Průzkumník DSL**, klikněte pravým tlačítkem na kořenový uzel a potom klikněte na tlačítko **přidat novou externí typ**.
 
         Nový záznam se zobrazí v části **typy domén** uzlu.
 
        > [!WARNING]
        >  Položka nabídky není na uzlu root DSL **typy domén** uzlu.
 
-   2.  V okně Vlastnosti nastavte název a obor názvů nového typu.
+   2. V okně Vlastnosti nastavte název a obor názvů nového typu.
 
 3. Doménová vlastnost, která přidejte do doménové třídy obvyklým způsobem.
 
@@ -144,9 +144,9 @@ Ve svém jazyce specifického pro doménu (DSL) v sadě Visual Studio můžete p
 
 ##### <a name="to-define-a-file-name-domain-property"></a>Chcete-li definovat vlastnost souboru název domény
 
-1.  Doménová vlastnost, která přidejte do doménové třídy v definici DSL.
+1. Doménová vlastnost, která přidejte do doménové třídy v definici DSL.
 
-2.  Vyberte novou vlastnost. V **vlastní atribut** pole v okně Vlastnosti, zadejte následující atribut. Chcete-li zadat Tento atribut, klikněte na tlačítko se třemi tečkami **[...]**  a potom zadejte název atributu a parametry samostatně:
+2. Vyberte novou vlastnost. V **vlastní atribut** pole v okně Vlastnosti, zadejte následující atribut. Chcete-li zadat Tento atribut, klikněte na tlačítko se třemi tečkami **[...]**  a potom zadejte název atributu a parametry samostatně:
 
     ```csharp
     [System.ComponentModel.Editor (
@@ -155,15 +155,15 @@ Ve svém jazyce specifického pro doménu (DSL) v sadě Visual Studio můžete p
 
     ```
 
-3.  Ponechte výchozí nastavení z typu vlastnosti domény **řetězec**.
+3. Ponechte výchozí nastavení z typu vlastnosti domény **řetězec**.
 
-4.  Otestovat editoru, ověřte, že uživatelé mohou otevřít editor název souboru pro úpravu doménové vlastnosti.
+4. Otestovat editoru, ověřte, že uživatelé mohou otevřít editor název souboru pro úpravu doménové vlastnosti.
 
-    1.  Stiskněte kombinaci kláves CTRL + F5 nebo F5. Ladění řešení otevřete soubor testu. Vytvoření prvku doménové třídy a vyberte ji.
+    1. Stiskněte kombinaci kláves CTRL + F5 nebo F5. Ladění řešení otevřete soubor testu. Vytvoření prvku doménové třídy a vyberte ji.
 
-    2.  V okně Vlastnosti vyberte doménové vlastnosti. Hodnota pole zobrazí tři tečky **[...]** .
+    2. V okně Vlastnosti vyberte doménové vlastnosti. Hodnota pole zobrazí tři tečky **[...]** .
 
-    3.  Klikněte na tlačítko se třemi tečkami. Zobrazí se dialogové okno. Vyberte soubor a zavřete dialogové okno. Cesta k souboru je nyní hodnoty vlastnosti domény.
+    3. Klikněte na tlačítko se třemi tečkami. Zobrazí se dialogové okno. Vyberte soubor a zavřete dialogové okno. Cesta k souboru je nyní hodnoty vlastnosti domény.
 
 ### <a name="defining-your-own-property-editor"></a>Definování vlastní editor vlastností
  Můžete definovat vlastní editor. Provedli byste to umožňuje uživateli upravit typ, který jste definovali nebo upravit standardní typ zvláštním způsobem. Například můžete umožnit uživatelům vstupní řetězec, který představuje vzorec.

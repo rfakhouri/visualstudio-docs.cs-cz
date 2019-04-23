@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5d1abdef13e87f7a86be3f999db18786a05473e1
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: fae7dd96c250d558f46a5671e40b19e6465a40ec
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59655046"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60101902"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-framework-stand-alone-application-and-collect-application-statistics-by-using-the-command-line"></a>Postupy: Připojení profileru k samostatné aplikaci .NET Framework a shromažďování statistik aplikace pomocí příkazového řádku
 Tento článek popisuje způsob použití [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] příkazového řádku nástrojů pro profilaci k připojení profileru k běžící samostatné (klientské) aplikaci rozhraní .NET Framework a shromáždit statistiky výkonu pomocí metody vzorkování.
@@ -40,7 +40,7 @@ Tento článek popisuje způsob použití [!INCLUDE[vsprvs](../code-quality/incl
 
     **Vsperfclrenv – /sampleon** [**/samplelineoff**]
 
-   -   **/Samplelineoff** možnost zakáže kolekci čísel datového řádku zdrojového kódu.
+   - **/Samplelineoff** možnost zakáže kolekci čísel datového řádku zdrojového kódu.
 
 3. Spusťte profiler. Typ:
 
@@ -66,11 +66,11 @@ Tento článek popisuje způsob použití [!INCLUDE[vsprvs](../code-quality/incl
 
     **Nástroj VSPerfCmd / připojit:**{`PID`&#124;`ProcessName`} [`Sample Event`] [**targetclr:**`Version`]
 
-   -   `PID` Určuje ID procesu cílové aplikace. `ProcessName` Určuje název procesu. Všimněte si, že pokud zadáte `ProcessName` a běží víc procesů, které mají stejný název, výsledky nepředvídatelné. ID všech spuštěných procesů lze zobrazit ve Správci úloh Windows.
+   - `PID` Určuje ID procesu cílové aplikace. `ProcessName` Určuje název procesu. Všimněte si, že pokud zadáte `ProcessName` a běží víc procesů, které mají stejný název, výsledky nepředvídatelné. ID všech spuštěných procesů lze zobrazit ve Správci úloh Windows.
 
-   -   [targetclr](../profiling/targetclr.md) **:** `Version` Určuje verzi modulu common language runtime (CLR) do profilu je do aplikace načtena více než jedna verze modulu runtime. Volitelné.
+   - [targetclr](../profiling/targetclr.md) **:** `Version` Určuje verzi modulu common language runtime (CLR) do profilu je do aplikace načtena více než jedna verze modulu runtime. Volitelné.
 
-   -   Ve výchozím nastavení, data výkonu vzorkována každých procesoru 10 000 000 nepřerušených hodinových cyklů. To je přibližně jednou za 10 sekund u procesoru s frekvencí 1 GHz. Můžete zadat jednu z následujících možností, chcete-li změnit intervalu hodinových cyklů nebo změnu událostí vyvolávajících. [targetclr](../profiling/targetclr.md)**:** `Version` Určuje verzi modulu CLR do profilu je do aplikace načtena více než jedna verze modulu runtime. Volitelné.
+   - Ve výchozím nastavení, data výkonu vzorkována každých procesoru 10 000 000 nepřerušených hodinových cyklů. To je přibližně jednou za 10 sekund u procesoru s frekvencí 1 GHz. Můžete zadat jednu z následujících možností, chcete-li změnit intervalu hodinových cyklů nebo změnu událostí vyvolávajících. [targetclr](../profiling/targetclr.md)**:** `Version` Určuje verzi modulu CLR do profilu je do aplikace načtena více než jedna verze modulu runtime. Volitelné.
 
    |||
    |-|-|
@@ -85,7 +85,7 @@ Tento článek popisuje způsob použití [!INCLUDE[vsprvs](../code-quality/incl
 
 #### <a name="to-start-and-stop-data-collection"></a>Spuštění a zastavení shromažďování dat
 
--   Následující páry možností spouští a zastavují sběr dat. Každou možnost zadejte na samostatný příkazový řádek. Sběr dat lze zapnout a vypnout několikrát.
+- Následující páry možností spouští a zastavují sběr dat. Každou možnost zadejte na samostatný příkazový řádek. Sběr dat lze zapnout a vypnout několikrát.
 
     |Možnost|Popis|
     |------------|-----------------|
@@ -98,19 +98,19 @@ Tento článek popisuje způsob použití [!INCLUDE[vsprvs](../code-quality/incl
 
 #### <a name="to-end-a-profiling-session"></a>Chcete-li ukončit relaci profilování
 
-1.  Proveďte jeden z následujících kroků-li odpojit profiler od cílové aplikace:
+1. Proveďte jeden z následujících kroků-li odpojit profiler od cílové aplikace:
 
-    -   Typ **VSPerfCmd / odpojení**
+    - Typ **VSPerfCmd / odpojení**
 
          -nebo-
 
-    -   Ukončete cílovou aplikaci.
+    - Ukončete cílovou aplikaci.
 
-2.  Vypněte profiler. Typ:
+2. Vypněte profiler. Typ:
 
      **Nástroj VSPerfCmd** [ /Shutdown](../profiling/shutdown.md)
 
-3.  (Volitelné) Vyčistěte proměnné prostředí profilování. Typ:
+3. (Volitelné) Vyčistěte proměnné prostředí profilování. Typ:
 
      **Vsperfclrenv – / vypnuté**
 

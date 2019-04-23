@@ -13,12 +13,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d79d1a4176a10ea236d1ac91084bdcbfd5ca73d1
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: a9a5b94a25a838845acab2ce1c49295b0b28d425
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58154592"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60083930"
 ---
 # <a name="implementing-smart-host-helper-interfaces"></a>Implementace pomocných rozhraní inteligentního hostitele
 [Idebugdocumenthelper – rozhraní](../winscript/reference/idebugdocumenthelper-interface.md) rozhraní výrazně zjednodušuje úlohy vytvoření inteligentního hostitele pro ladění aktivní, protože obsahuje implementace pro mnoho rozhraní nutná pro inteligentní hostování.  
@@ -42,13 +42,13 @@ ms.locfileid: "58154592"
   
 #### <a name="to-create-an-application-object"></a>Chcete-li vytvořit objekt aplikace  
   
-1.  Vytvoření instance procesu ladění pomocí správce `CoCreateInstance`.  
+1. Vytvoření instance procesu ladění pomocí správce `CoCreateInstance`.  
   
-2.  Volání [IProcessDebugManager::CreateApplication](../winscript/reference/iprocessdebugmanager-createapplication.md).  
+2. Volání [IProcessDebugManager::CreateApplication](../winscript/reference/iprocessdebugmanager-createapplication.md).  
   
-3.  Název nastavení aplikace s použitím [IDebugApplication::SetName](../winscript/reference/idebugapplication-setname.md).  
+3. Název nastavení aplikace s použitím [IDebugApplication::SetName](../winscript/reference/idebugapplication-setname.md).  
   
-4.  Přidání objektu aplikace do seznamu laditelné aplikací s použitím [IProcessDebugManager::AddApplication](../winscript/reference/iprocessdebugmanager-addapplication.md).  
+4. Přidání objektu aplikace do seznamu laditelné aplikací s použitím [IProcessDebugManager::AddApplication](../winscript/reference/iprocessdebugmanager-addapplication.md).  
   
      Následující kód popisuje proces, ale nezahrnuje kontroly chyb nebo jinými programovacími technikami robustní.  
   
@@ -66,15 +66,15 @@ ms.locfileid: "58154592"
   
 #### <a name="to-use-the-helper-minimal-sequence-of-steps"></a>Použití pomocné rutiny (minimální posloupnost kroků)  
   
-1.  Pro každý dokument hostitele, vytvořte pomocné rutiny pomocí [IProcessDebugManager::CreateDebugDocumentHelper](../winscript/reference/iprocessdebugmanager-createdebugdocumenthelper.md).  
+1. Pro každý dokument hostitele, vytvořte pomocné rutiny pomocí [IProcessDebugManager::CreateDebugDocumentHelper](../winscript/reference/iprocessdebugmanager-createdebugdocumenthelper.md).  
   
-2.  Volání [IDebugDocumentHelper::Init](../winscript/reference/idebugdocumenthelper-init.md) na pomocné rutiny, uvádějí název, atributy dokumentu a tak dále.  
+2. Volání [IDebugDocumentHelper::Init](../winscript/reference/idebugdocumenthelper-init.md) na pomocné rutiny, uvádějí název, atributy dokumentu a tak dále.  
   
-3.  Volání [IDebugDocumentHelper::Attach](../winscript/reference/idebugdocumenthelper-attach.md) s nadřazenou pomocné rutiny pro dokument (nebo hodnota NULL, pokud dokument je kořenový adresář) k definování pozice dokumentu ve stromové struktuře a zprůhlední ladicímu programu.  
+3. Volání [IDebugDocumentHelper::Attach](../winscript/reference/idebugdocumenthelper-attach.md) s nadřazenou pomocné rutiny pro dokument (nebo hodnota NULL, pokud dokument je kořenový adresář) k definování pozice dokumentu ve stromové struktuře a zprůhlední ladicímu programu.  
   
-4.  Volání [IDebugDocumentHelper::AddDBCSText](../winscript/reference/idebugdocumenthelper-adddbcstext.md) nebo [IDebugDocumentHelper::AddUnicodeText](../winscript/reference/idebugdocumenthelper-addunicodetext.md) pro definování textového dokumentu. (Toto můžete volat vícekrát, pokud dokument se stáhne postupně jako v případě prohlížeče.)  
+4. Volání [IDebugDocumentHelper::AddDBCSText](../winscript/reference/idebugdocumenthelper-adddbcstext.md) nebo [IDebugDocumentHelper::AddUnicodeText](../winscript/reference/idebugdocumenthelper-addunicodetext.md) pro definování textového dokumentu. (Toto můžete volat vícekrát, pokud dokument se stáhne postupně jako v případě prohlížeče.)  
   
-5.  Volání [IDebugDocumentHelper::DefineScriptBlock](../winscript/reference/idebugdocumenthelper-definescriptblock.md) k definování oblastí pro každý blok skriptu a přidruženého skriptovacího stroje.  
+5. Volání [IDebugDocumentHelper::DefineScriptBlock](../winscript/reference/idebugdocumenthelper-definescriptblock.md) k definování oblastí pro každý blok skriptu a přidruženého skriptovacího stroje.  
   
 ## <a name="implementing-iactivescriptsitedebug"></a>Iactivescriptsitedebug – implementace  
  K implementaci [IActiveScriptSiteDebug::GetDocumentContextFromPosition](../winscript/reference/iactivescriptsitedebug-getdocumentcontextfromposition.md), získat odpovídající zadanou webovou stránku pomocné rutiny a pak získat počátečního dokumentu v kontextu daného zdroje odsazení nastavte následujícím způsobem:  
@@ -96,13 +96,13 @@ pddh->CreateDebugDocumentContext(ulStartPos + uCharacterOffset, cChars, &pddcNew
 ## <a name="the-optional-idebugdocumenthost-interface"></a>Volitelné idebugdocumenthost – rozhraní  
  Hostitel může poskytnout implementaci [idebugdocumenthost – rozhraní](../winscript/reference/idebugdocumenthost-interface.md) pomocí [IDebugDocumentHelper::SetDebugDocumentHost](../winscript/reference/idebugdocumenthelper-setdebugdocumenthost.md) nabízí větší kontrolu nad pomocné rutiny. Tady jsou některé z klíčových věcí rozhraní hostitele umožňuje provádět:  
   
--   Přidání pomocí textu [IDebugDocumentHelper::AddDeferredText](../winscript/reference/idebugdocumenthelper-adddeferredtext.md) tak, aby hostitel není nutné poskytnout skutečnými znaky okamžitě. Pokud znaky jsou ve skutečnosti nepotřebujete, bude volat pomocné rutiny [IDebugDocumentHost::GetDeferredText](../winscript/reference/idebugdocumenthost-getdeferredtext.md) na hostiteli.  
+- Přidání pomocí textu [IDebugDocumentHelper::AddDeferredText](../winscript/reference/idebugdocumenthelper-adddeferredtext.md) tak, aby hostitel není nutné poskytnout skutečnými znaky okamžitě. Pokud znaky jsou ve skutečnosti nepotřebujete, bude volat pomocné rutiny [IDebugDocumentHost::GetDeferredText](../winscript/reference/idebugdocumenthost-getdeferredtext.md) na hostiteli.  
   
--   Přepište výchozí barevné zvýrazňování syntaxe poskytuje pomocné rutiny. Volání pomocné rutiny [IDebugDocumentHost::GetScriptTextAttributes](../winscript/reference/idebugdocumenthost-getscripttextattributes.md) k určení barevné zvýraznění pro rozsah znaků návrat na jeho výchozí implementace, pokud hostitel `E_NOTIMPL`.  
+- Přepište výchozí barevné zvýrazňování syntaxe poskytuje pomocné rutiny. Volání pomocné rutiny [IDebugDocumentHost::GetScriptTextAttributes](../winscript/reference/idebugdocumenthost-getscripttextattributes.md) k určení barevné zvýraznění pro rozsah znaků návrat na jeho výchozí implementace, pokud hostitel `E_NOTIMPL`.  
   
--   Zadejte řídící neznámou dokumentu kontextů vytvořené pomocné rutiny implementací [IDebugDocumentHost::OnCreateDocumentContext](../winscript/reference/idebugdocumenthost-oncreatedocumentcontext.md). To umožňuje hostiteli přepsání funkce výchozí implementaci kontextu dokumentu.  
+- Zadejte řídící neznámou dokumentu kontextů vytvořené pomocné rutiny implementací [IDebugDocumentHost::OnCreateDocumentContext](../winscript/reference/idebugdocumenthost-oncreatedocumentcontext.md). To umožňuje hostiteli přepsání funkce výchozí implementaci kontextu dokumentu.  
   
--   Zadejte název cesty v systému souborů pro dokument. Některé ladění uživatelských rozhraní pomocí to umožňující uživateli upravit a uložit změny do dokumentu. [IDebugDocumentHost::NotifyChanged](../winscript/reference/idebugdocumenthost-notifychanged.md) se volá se, aby upozornil hostitele po uložení dokumentu.  
+- Zadejte název cesty v systému souborů pro dokument. Některé ladění uživatelských rozhraní pomocí to umožňující uživateli upravit a uložit změny do dokumentu. [IDebugDocumentHost::NotifyChanged](../winscript/reference/idebugdocumenthost-notifychanged.md) se volá se, aby upozornil hostitele po uložení dokumentu.  
   
 ## <a name="see-also"></a>Viz také  
  [Přehled ladění aktivních skriptů](../winscript/active-script-debugging-overview.md)

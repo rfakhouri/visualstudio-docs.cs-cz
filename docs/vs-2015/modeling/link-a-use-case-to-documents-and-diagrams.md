@@ -14,12 +14,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7e6e6bc1cd9794534f13915ffb41956e423e94c9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 012ab6828364af155b52bc19d9a83564b2126a6b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54795227"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088675"
 ---
 # <a name="link-a-use-case-to-documents-and-diagrams"></a>Propojení případu použití s dokumenty a diagramy
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,45 +40,45 @@ Propojení případu použití v diagramu případu použití do jiného diagram
   
 ### <a name="to-open-a-document-associated-with-an-artifact"></a>Chcete-li otevřít dokument přidružený k artefakt  
   
--   Na diagramu případu použití dvakrát klikněte na tvar artefaktů.  
+- Na diagramu případu použití dvakrát klikněte na tvar artefaktů.  
   
      Související dokument se otevře.  
   
 ### <a name="to-link-a-use-case-to-a-diagram-or-file-in-the-same-solution"></a>Propojení případu použití diagramu nebo soubor ve stejném řešení  
   
-1.  Nakreslení diagramu, jako je například sekvenční diagram nebo aktivita diagram pro ilustraci scénář případu použití.  
+1. Nakreslení diagramu, jako je například sekvenční diagram nebo aktivita diagram pro ilustraci scénář případu použití.  
   
-2.  Přejděte zpět na diagramu případu použití.  
+2. Přejděte zpět na diagramu případu použití.  
   
-3.  Přetáhněte diagram nebo souboru z Průzkumníku řešení na prázdnou část diagramu případu použití.  
+3. Přetáhněte diagram nebo souboru z Průzkumníku řešení na prázdnou část diagramu případu použití.  
   
-4.  Připojení z artefaktů k případu použití pomocí **závislost**.  
+4. Připojení z artefaktů k případu použití pomocí **závislost**.  
   
 ### <a name="to-link-to-a-solution-file-such-as-a-word-document-or-powerpoint-presentation"></a>Odkaz na soubor řešení například dokument aplikace Word nebo prezentace aplikace PowerPoint  
   
-1.  Přidání dokumentu do řešení.  
+1. Přidání dokumentu do řešení.  
   
-    1.  Přesunete do stejné složky jako řešení Windows Wordový dokument.  
+    1. Přesunete do stejné složky jako řešení Windows Wordový dokument.  
   
-    2.  V Průzkumníku řešení klikněte pravým tlačítkem na řešení, přejděte na **přidat**a potom klikněte na tlačítko **existující položku**.  
+    2. V Průzkumníku řešení klikněte pravým tlačítkem na řešení, přejděte na **přidat**a potom klikněte na tlačítko **existující položku**.  
   
-    3.  Přejděte do dokumentu aplikace Word a klikněte na tlačítko **přidat**.  
+    3. Přejděte do dokumentu aplikace Word a klikněte na tlačítko **přidat**.  
   
          Dokument aplikace Word se zobrazí ve složce řešení v Průzkumníku řešení.  
   
-2.  Dokument aplikace Word přetáhněte z Průzkumníka řešení na prázdnou část diagramu případu použití.  
+2. Dokument aplikace Word přetáhněte z Průzkumníka řešení na prázdnou část diagramu případu použití.  
   
      Zobrazí se nové artefaktů.  
   
-3.  Připojení z artefaktů k případu použití pomocí **závislost**.  
+3. Připojení z artefaktů k případu použití pomocí **závislost**.  
   
 ### <a name="to-link-to-a-shared-document-onenote-element-or-web-page"></a>Odkaz na sdílený dokument, OneNote element nebo webové stránky  
   
-1.  Získáte adresu URL sdílené elementu. To může být, například na začátku cesty souboru sítě "\\\\", nebo na webové stránce nebo adresa URL Sharepointu začátek 'http://' nebo odkaz na oddíl Onenotu stránce nebo odstavce začátku "onenote:".  
+1. Získáte adresu URL sdílené elementu. To může být, například na začátku cesty souboru sítě "\\\\", nebo na webové stránce nebo adresa URL Sharepointu začátek 'http://' nebo odkaz na oddíl Onenotu stránce nebo odstavce začátku "onenote:".  
   
-2.  Na panelu nástrojů klikněte na tlačítko **artefaktů** a potom klikněte na tlačítko v diagramu případu použití.  
+2. Na panelu nástrojů klikněte na tlačítko **artefaktů** a potom klikněte na tlačítko v diagramu případu použití.  
   
-3.  S novou artefakt vybrali, zadejte nebo vložte adresu URL do **hypertextový odkaz** vlastnost.  
+3. S novou artefakt vybrali, zadejte nebo vložte adresu URL do **hypertextový odkaz** vlastnost.  
   
     > [!NOTE]
     >  Pokud chcete zadat cestu k souboru, je nejlepší zvolte soubor, buď v běžné pracovní prostor (počínaje "\\\\"), nebo soubor v rámci řešení sady Visual Studio. Tím se zajistí, že cesta k souboru zůstane v platnosti v počítači jiného člena týmu, nebo pokud se přesune řešení. Chcete-li dokument jako dokument aplikace Word je přidat do vašeho řešení, klikněte pravým tlačítkem na řešení v Průzkumníku řešení, přejděte na **přidat** a potom klikněte na tlačítko **existující položku**.  

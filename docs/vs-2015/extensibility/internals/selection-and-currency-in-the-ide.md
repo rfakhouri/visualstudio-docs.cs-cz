@@ -13,21 +13,21 @@ ms.assetid: 2f6f18d1-acd8-454d-a856-9a4d81155052
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: ca6993d8d8d56f1ea2ccf8b4b6c41909606e8755
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d0a0b999a1a6e6ed2364060031f68378e7222ec0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54765816"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112478"
 ---
 # <a name="selection-and-currency-in-the-ide"></a>Výběr a měna v prostředí IDE
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Integrované vývojové prostředí (IDE) uchovává informace o uživatelích aktuálně vybrané objekty s použitím výběru *kontextu*. Výběr kontextu rozšíření VSPackages dá využít v místní měně sledování dvěma způsoby:  
   
--   Pomocí šíření měny informace o rozšíření VSPackages rozhraní IDE.  
+- Pomocí šíření měny informace o rozšíření VSPackages rozhraní IDE.  
   
--   Díky monitorování výběry aktuálně aktivních uživatelů v rámci rozhraní IDE.  
+- Díky monitorování výběry aktuálně aktivních uživatelů v rámci rozhraní IDE.  
   
 ## <a name="selection-context"></a>Kontext výběru  
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE globálně uchovává informace o měně integrovaného vývojového prostředí ve své vlastní objekt kontextu globálního výběru. Následující tabulka uvádí prvky, které tvoří kontext výběru.  
@@ -40,9 +40,9 @@ ms.locfileid: "54765816"
   
  Kromě toho prostředí udržuje dvě globální seznamy:  
   
--   Seznam identifikátorů aktivní příkaz uživatelského rozhraní  
+- Seznam identifikátorů aktivní příkaz uživatelského rozhraní  
   
--   Seznam typů aktuálně aktivním prvkem.  
+- Seznam typů aktuálně aktivním prvkem.  
   
 ### <a name="window-types-and-selection"></a>Typy oken a výběr  
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Integrovaném vývojovém prostředí slouží k uspořádání windows na dvě obecné typy:  
@@ -60,9 +60,9 @@ ms.locfileid: "54765816"
 ### <a name="events-and-currency"></a>Události a měny  
  Může dojít k dva typy událostí, které mají vliv prostředí pojem měny:  
   
--   Události, které se rozšíří na globální úrovni a změňte výběr kontextu okna rámce. Tento druh událostí příklady podřízené okno MDI otevře, otevíraný panel globální nástrojů nebo panelu nástrojů typ projektu se otevře.  
+- Události, které se rozšíří na globální úrovni a změňte výběr kontextu okna rámce. Tento druh událostí příklady podřízené okno MDI otevře, otevíraný panel globální nástrojů nebo panelu nástrojů typ projektu se otevře.  
   
--   Události, které prvky trasovány v rámci okna rámce výběru změnit. Mezi příklady patří změna výběru v rámci DocObject nebo změna výběru v okně Typ projektu.  
+- Události, které prvky trasovány v rámci okna rámce výběru změnit. Mezi příklady patří změna výběru v rámci DocObject nebo změna výběru v okně Typ projektu.  
   
 ## <a name="see-also"></a>Viz také  
  [Kontextové objekty výběru](../../extensibility/internals/selection-context-objects.md)   

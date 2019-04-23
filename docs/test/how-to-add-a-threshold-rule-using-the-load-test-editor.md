@@ -11,12 +11,12 @@ ms.assetid: 3d8fac8f-426f-4155-9ced-f7cd4c79792c
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: efd430ce9f8bef3ab04e3a7cec91ce3f606cc786
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 2a5865eba5ec6971a35104af3ccd090ee6b06410
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55930308"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112712"
 ---
 # <a name="how-to-add-a-threshold-rule-using-the-load-test-editor"></a>Postupy: Přidání mezního pravidla pomocí editoru zátěžových testů
 
@@ -26,17 +26,17 @@ Mezní pravidla v zátěžových testech porovnávají hodnotu čítače výkon
 
 ## <a name="to-add-a-threshold-rule"></a>Chcete-li přidat mezní pravidlo:
 
-1.  Otevřete zátěžový test.
+1. Otevřete zátěžový test.
 
-2.  V editoru zátěžového testu rozbalte **sady čítačů** uzlu.
+2. V editoru zátěžového testu rozbalte **sady čítačů** uzlu.
 
-3.  Rozbalte některou **kategorie čítačů** v jedné ze sad čítačů. Například můžete vybrat **loadtest: Scenario**. Rozbalte uzel.
+3. Rozbalte některou **kategorie čítačů** v jedné ze sad čítačů. Například můžete vybrat **loadtest: Scenario**. Rozbalte uzel.
 
-4.  Klikněte pravým tlačítkem z čítačů, například **uživatelské zatížení**v části **loadtest: Scenario**. Vyberte **přidat pravidlo mezní hodnoty**.
+4. Klikněte pravým tlačítkem z čítačů, například **uživatelské zatížení**v části **loadtest: Scenario**. Vyberte **přidat pravidlo mezní hodnoty**.
 
      **Přidat pravidlo mezní hodnoty** se zobrazí dialogové okno.
 
-5.  Můžete vybrat ze dvou typů pravidel: **Porovnat konstanty** a **porovnání čítač**. Vyberte požadovaný typ a nastavte hodnoty.
+5. Můžete vybrat ze dvou typů pravidel: **Porovnat konstanty** a **porovnání čítač**. Vyberte požadovaný typ a nastavte hodnoty.
 
     > [!NOTE]
     > Nastavte **upozornění, pokud přesáhne** vlastnost **True** k označení, že překročení mezní hodnoty je nějaký problém nebo **False** označuje, že snížení pod mezní hodnotu k problému.

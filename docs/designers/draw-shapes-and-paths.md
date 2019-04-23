@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bc629f44ed39fb07459916f07ef430f87b00e14a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 2e0efd4b4f9fb301f5bcba4a12857647a8d911f1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55918881"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104574"
 ---
 # <a name="draw-shapes-and-paths"></a>Kreslení tvarů a cest
 
@@ -21,7 +21,7 @@ V Návrháři XAML *tvar* je přesně to, co byste očekávali. Příklad: obdé
 
 Tvarů a cest používá vektorovou grafiku, takže jejich škálování i na displejích s vysokým rozlišením. Pokud chcete získat další informace o vektorové grafiky, naleznete v tématu [co jsou vektorové grafiky](https://www.youtube.com/watch?v=MoCSwF0n-io) nebo [vektorové grafiky](http://www.webopedia.com/TERM/V/vector_graphics.html).
 
-##  <a name="Shape"></a> Nakreslit obrazec
+## <a name="Shape"></a> Nakreslit obrazec
  Tvary můžete najít **prostředky** panelu.
 
  ![Kategorii prvků na panelu aktiva](../designers/media/b4_shapes_assetspanel.png)
@@ -30,7 +30,7 @@ Tvarů a cest používá vektorovou grafiku, takže jejich škálování i na di
 
  ![Handles](../designers/media/84261e83-3091-4490-ab58-4218b188439e.png)
 
-##  <a name="Path"></a> Nakreslení cesty
+## <a name="Path"></a> Nakreslení cesty
  Cesta je řada připojených čar a křivek. Můžete vytvářet zajímavé tvary, které nejsou k dispozici v cestu **prostředky** panelu.
 
  Nakreslení cesty pomocí spojnicovém, psaní perem nebo tužky. Můžete najít v těchto nástrojů **nástroje** panelu.
@@ -80,12 +80,12 @@ Tvarů a cest používá vektorovou grafiku, takže jejich škálování i na di
 
  Použití **výběr** nástroj ![nástroj pro výběr](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png) vyberte cestu. Použití **pera** nástroj ![nástroje pero](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png) k klikněte na libovolné místo v cestě, kam chcete přidat bod.
 
-##  <a name="Convert"></a> Převod tvaru na cestu
+## <a name="Convert"></a> Převod tvaru na cestu
  Pokud chcete změnit tvar stejným způsobem, že změníte cestu, převod tvaru na cestu.
 
  **Podívejte se na krátké video:** ![Konfigurovat nainstalované funkce](../designers/media/bldadminconsoleinitialconfigicon.png) [práci s cestami: Převod tvaru na cestu](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=147).
 
-##  <a name="Combine"></a> Spojit cesty
+## <a name="Combine"></a> Spojit cesty
  Cesty a tvary můžete zkombinovat do jedné cesty.
 
  ![Spojit cesty](../designers/media/2df17a5d-a338-4ef4-96c5-dae51cc1ca8a.png)
@@ -98,7 +98,7 @@ Tvarů a cest používá vektorovou grafiku, takže jejich škálování i na di
 
  **Podívejte se na krátké video:** ![Konfigurovat nainstalované funkce](../designers/media/bldadminconsoleinitialconfigicon.png) [práci s cestami: Kombinace cesty](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=195).
 
-##  <a name="Compound"></a> Vytvořit složenou cestu
+## <a name="Compound"></a> Vytvořit složenou cestu
  Při vytváření složené cesty protínající části cesty jsou odečtena od výsledku a výslednou cestu převezme visual vlastnosti nejspodnějších cesty.
 
  Můžete přerušit od sebe složené cesty kdykoli po jeho vytvoření.
@@ -107,7 +107,7 @@ Tvarů a cest používá vektorovou grafiku, takže jejich škálování i na di
 
  **Podívejte se na krátké video:** ![Konfigurovat nainstalované funkce](../designers/media/bldadminconsoleinitialconfigicon.png) [práci s cestami: Vytvořit složenou cestu](https://www.youtube.com/watch?v=Io5bC0-nH6Q).
 
-##  <a name="Clipping"></a> Vytvořit ořezovou cestu
+## <a name="Clipping"></a> Vytvořit ořezovou cestu
  Ořezové cesty je cesta nebo tvar, který se použije na jiný objekt skrytí částí maskované objektu, které spadají mimo ořezové cesty.
 
  ![Ořezovou cestu](../designers/media/22471e98-a841-4f39-a3ef-36090cf5a625.png)

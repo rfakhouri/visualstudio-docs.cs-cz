@@ -9,12 +9,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 993f6533a5d654ab183fdee587f4968d7bff8c4a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3562b74939fe9207ddcf10e98bd0b4d0d7d1bead
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54799664"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085984"
 ---
 # <a name="step-3-assign-a-random-icon-to-each-label"></a>Krok 3: Přiřazení náhodné ikony každému popisku
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,12 +23,12 @@ Pokud se ikony každou hru zobrazí ve stejných buňkách, není to zrovna nár
   
 ### <a name="to-assign-a-random-icon-to-each-label"></a>Přiřazení náhodné ikony každému popisku  
   
-1.  Před přidáním následujícího kódu se zamyslete nad tím, jak metoda funguje. Existuje nové klíčové slovo: `foreach` v jazyce Visual C# a `For Each` v jazyce Visual Basic. (Jeden z řádků je záměrně jako komentář, což je vysvětleno na konci této procedury.)  
+1. Před přidáním následujícího kódu se zamyslete nad tím, jak metoda funguje. Existuje nové klíčové slovo: `foreach` v jazyce Visual C# a `For Each` v jazyce Visual Basic. (Jeden z řádků je záměrně jako komentář, což je vysvětleno na konci této procedury.)  
   
      [!code-csharp[VbExpressTutorial4Step2_3_4#2](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial4step2_3_4/cs/form1.cs#2)]
      [!code-vb[VbExpressTutorial4Step2_3_4#2](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial4step2_3_4/vb/form1.vb#2)]  
   
-2.  Přidat `AssignIconsToSquares()` způsob, jak je znázorněno v předchozím kroku. Můžete ji umístit přímo pod kód, který jste přidali v [krok 2: Přidejte náhodný objekt a seznam ikon](../ide/step-2-add-a-random-object-and-a-list-of-icons.md).  
+2. Přidat `AssignIconsToSquares()` způsob, jak je znázorněno v předchozím kroku. Můžete ji umístit přímo pod kód, který jste přidali v [krok 2: Přidejte náhodný objekt a seznam ikon](../ide/step-2-add-a-random-object-and-a-list-of-icons.md).  
   
      Jak bylo zmíněno výše, je něco nového v vaše `AssignIconsToSquares()` metoda: `foreach` smyčky v jazyce Visual C# a `For Each` v jazyce Visual Basic. Můžete použít `For Each` smyčky kdykoli chcete provést stejnou akci více než jednou. V tomto případě chcete spustit stejné příkazy pro každý popisek ve vašem kontejneru TableLayoutPanel podle popisu následujícím kódem. První řádek vytvoří proměnnou s názvem `control` , který ukládá vždy jeden ovládací prvek v době při, výroky ve smyčce na něm spustily.  
   
@@ -49,7 +49,7 @@ Pokud se ikony každou hru zobrazí ve stejných buňkách, není to zrovna nár
   
      Nezapomeňte, že pokud si nejste jisti, co dělá některá část kódu, můžete umístit ukazatel myši nad prvek kódu a přečíst si zobrazený popisek. Můžete také krokovat po řádcích kódu, zatímco je program spuštěn pomocí ladicího programu sady Visual Studio. Zobrazit [postup: Krok v ladicím programu v sadě Visual Studio? ](http://msdn.microsoft.com/vstudio/ee672313.aspx) nebo [procházení kódu s ladicím programem](../debugger/navigating-through-code-with-the-debugger.md) Další informace.  
   
-3.  Pokud chcete zaplnit hrací plochu ikonami, je potřeba volat `AssignIconsToSquares()` metoda co nejdříve po spuštění programu. Pokud používáte jazyk Visual C#, přidejte příkaz pod volání `InitializeComponent()` metodu `Form1` *konstruktor*, aby formulář volal vaši novou metodu pro vlastní nastavení, než se zobrazí. Konstruktory jsou volány při vytváření nového objektu, například třídy nebo struktury. Zobrazit [konstruktory (C# Programming Guide)](http://msdn.microsoft.com/library/ace5hbzh.aspx) nebo [používání konstruktorů a destruktorů](http://msdn.microsoft.com/library/2z08e49e%28v=vs.90%29.aspx) v jazyce Visual Basic pro další informace.  
+3. Pokud chcete zaplnit hrací plochu ikonami, je potřeba volat `AssignIconsToSquares()` metoda co nejdříve po spuštění programu. Pokud používáte jazyk Visual C#, přidejte příkaz pod volání `InitializeComponent()` metodu `Form1` *konstruktor*, aby formulář volal vaši novou metodu pro vlastní nastavení, než se zobrazí. Konstruktory jsou volány při vytváření nového objektu, například třídy nebo struktury. Zobrazit [konstruktory (C# Programming Guide)](http://msdn.microsoft.com/library/ace5hbzh.aspx) nebo [používání konstruktorů a destruktorů](http://msdn.microsoft.com/library/2z08e49e%28v=vs.90%29.aspx) v jazyce Visual Basic pro další informace.  
   
      [!code-csharp[VbExpressTutorial4Step2_3_4#13](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial4step2_3_4/cs/form1.cs#13)]  
   
@@ -61,9 +61,9 @@ Pokud se ikony každou hru zobrazí ve stejných buňkách, není to zrovna nár
     End Sub  
     ```  
   
-4.  Uložte program a spusťte jej. Měl by se zobrazit formulář s náhodnými ikonami přiřazenými každému popisku.  
+4. Uložte program a spusťte jej. Měl by se zobrazit formulář s náhodnými ikonami přiřazenými každému popisku.  
   
-5.  Ukončete program a znovu jej spusťte. Všimněte si, že každému popisku jsou přiřazeny jiné ikony, viz následující obrázek.  
+5. Ukončete program a znovu jej spusťte. Všimněte si, že každému popisku jsou přiřazeny jiné ikony, viz následující obrázek.  
   
      ![Porovnávací hra s náhodnými ikonami](../ide/media/express-tut4step3.png "Express_Tut4Step3")  
 Porovnávací hra s náhodnými ikonami  
@@ -73,15 +73,15 @@ Porovnávací hra s náhodnými ikonami
     > [!TIP]
     >  Dalším způsobem, jak skrýt ovládací prvky jako popisky je nastavit jejich **Visible** vlastnost `False`.  
   
-6.  Chcete-li skrýt ikony, ukončete program a odeberte značky komentáře komentovaného řádku kódu uvnitř `For Each` smyčky.  
+6. Chcete-li skrýt ikony, ukončete program a odeberte značky komentáře komentovaného řádku kódu uvnitř `For Each` smyčky.  
   
      [!code-csharp[VbExpressTutorial4Step2_3_4#15](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial4step2_3_4/cs/form1.cs#15)]
      [!code-vb[VbExpressTutorial4Step2_3_4#15](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial4step2_3_4/vb/form1.vb#15)]  
   
-7.  V panelu nabídek zvolte **Uložit vše** tlačítko uložte program a spusťte jej. Ikony zdánlivě zmizely – zobrazí se pouze modré pozadí. Ikony jsou ale náhodně přiřazeny a stále existují. Vzhledem k tomu, že ikony mají stejnou barvu jako pozadí, hráč je nevidí. Přece by to byla velmi jednoduchá hra, kdyby hráč hned viděl všechny ikony!  
+7. V panelu nabídek zvolte **Uložit vše** tlačítko uložte program a spusťte jej. Ikony zdánlivě zmizely – zobrazí se pouze modré pozadí. Ikony jsou ale náhodně přiřazeny a stále existují. Vzhledem k tomu, že ikony mají stejnou barvu jako pozadí, hráč je nevidí. Přece by to byla velmi jednoduchá hra, kdyby hráč hned viděl všechny ikony!  
   
 ### <a name="to-continue-or-review"></a>Chcete-li pokračovat nebo přezkoumat  
   
--   Přechod k dalšímu kroku výukového programu naleznete v tématu [krok 4: Přidejte k jednotlivým jmenovkám obslužnou rutinu události Click](../ide/step-4-add-a-click-event-handler-to-each-label.md).  
+- Přechod k dalšímu kroku výukového programu naleznete v tématu [krok 4: Přidejte k jednotlivým jmenovkám obslužnou rutinu události Click](../ide/step-4-add-a-click-event-handler-to-each-label.md).  
   
--   Chcete-li vrátit k předchozímu kroku tutoriálu, přečtěte si téma [krok 2: Přidejte náhodný objekt a seznam ikon](../ide/step-2-add-a-random-object-and-a-list-of-icons.md).
+- Chcete-li vrátit k předchozímu kroku tutoriálu, přečtěte si téma [krok 2: Přidejte náhodný objekt a seznam ikon](../ide/step-2-add-a-random-object-and-a-list-of-icons.md).

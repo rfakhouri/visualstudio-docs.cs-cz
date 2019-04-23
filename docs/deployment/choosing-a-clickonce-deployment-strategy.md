@@ -15,21 +15,21 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0198c9e9e6238547bb8a9ea1a49c9f8a2a611cbc
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 52e0dc775e5e9413fb251261a319e529f36393eb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603973"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102182"
 ---
 # <a name="choose-a-clickonce-deployment-strategy"></a>Volba strategie nasazení ClickOnce
 Existují tři různé strategie pro nasazení [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace; strategie, kterou zvolíte, závisí především na typu aplikace, kterou nasazujete. Toto jsou zmíněné tři strategie nasazení:
 
--   Instalace z webu nebo sdíleného síťového umístění
+- Instalace z webu nebo sdíleného síťového umístění
 
--   Instalace z disku CD
+- Instalace z disku CD
 
--   Spuštění aplikace z webu nebo sdíleného síťového umístění
+- Spuštění aplikace z webu nebo sdíleného síťového umístění
 
     > [!NOTE]
     >  Kromě výběru strategie nasazení budete chtít zvolit také strategii pro poskytování aktualizací aplikace. Další informace najdete v tématu [volba strategie aktualizace ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md).

@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 59e712d9354432bc142478935827a6439547321c
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: be54c19a1e09b610611c8791d62d012ebdaf5ae8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59662392"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106264"
 ---
 # <a name="choose-the-installation-directory-for-a-vspackage"></a>Zvolte instalační adresář pro balíček VSPackage
 V systému souborů uživatele musí být VSPackage a jeho podpůrné soubory. Umístění závisí na, jestli sady VSPackage je spravovaná nebo nespravovaná, schéma vytváření verzí vedle sebe a výběru uživatelů.
@@ -47,15 +47,15 @@ V systému souborů uživatele musí být VSPackage a jeho podpůrné soubory. U
 
  [Správa balíčky VSPackages](../../extensibility/managing-vspackages.md) článku označuje, že položky registru řídí umístění [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] skutečně hledá na VSPackage satelitní knihovny DLL. Nicméně [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] se pokouší načíst satelitní knihovny DLL v podadresáři s názvem hodnoty LCID, v uvedeném pořadí:
 
-1.  Výchozí LCID (Visual Studio LCID, například *\1033* pro angličtinu)
+1. Výchozí LCID (Visual Studio LCID, například *\1033* pro angličtinu)
 
-2.  Výchozí LCID dílčího výchozí.
+2. Výchozí LCID dílčího výchozí.
 
-3.  Výchozí systémové nastavení LCID.
+3. Výchozí systémové nastavení LCID.
 
-4.  Výchozí systémové nastavení LCID s dílčího výchozí.
+4. Výchozí systémové nastavení LCID s dílčího výchozí.
 
-5.  USA Angličtina (*. \1033* nebo *. \0x409*).
+5. USA Angličtina (*. \1033* nebo *. \0x409*).
 
 Pokud vaše knihovna DLL balíčku VSPackage obsahuje prostředky a **SatelliteDll\DllName** záznam v registru odkazuje, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , pokusí se načíst ve výše uvedeném pořadí.
 

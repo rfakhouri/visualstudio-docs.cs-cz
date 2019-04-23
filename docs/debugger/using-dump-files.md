@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b392cf5eddaab877af56ee952074cff646e10a59
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 8ff4cc9501552b0a482e93aa1917a175680d6d78
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56693448"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099987"
 ---
 # <a name="dump-files-in-the-visual-studio-debugger"></a>Soubory s výpisem paměti v ladicím programu sady Visual Studio
 
@@ -39,27 +39,27 @@ Výpisy paměti se nejčastěji používají pro ladění problémů z počíta�
 
 Ladicí program Visual Studio může uložit soubory s výpisem paměti pro spravovaný nebo nativní kód. To můžete ladit soubory výpisu stavu systému vytvořené pomocí sady Visual Studio nebo jinými aplikacemi, které ukládají soubory ve *s minimálním výpisem* formátu.
 
-##  <a name="BKMK_Requirements_and_limitations"></a> Požadavky a omezení
+## <a name="BKMK_Requirements_and_limitations"></a> Požadavky a omezení
 
--   Chcete-li ladit soubory s výpisem paměti z 64bitové počítače se systémem Visual Studio musí běžet na 64bitovém počítači.
+- Chcete-li ladit soubory s výpisem paměti z 64bitové počítače se systémem Visual Studio musí běžet na 64bitovém počítači.
 
--   Visual Studio můžete ladit soubory s výpisem paměti nativních aplikaci ze zařízení ARM. Můžete také ladit výpisy spravovaných aplikací ze zařízení ARM, ale pouze v nativním ladicím programu.
+- Visual Studio můžete ladit soubory s výpisem paměti nativních aplikaci ze zařízení ARM. Můžete také ladit výpisy spravovaných aplikací ze zařízení ARM, ale pouze v nativním ladicím programu.
 
--   Chcete-li ladit [režimu jádra](/windows-hardware/drivers/debugger/kernel-mode-dump-files) soubory s výpisem paměti, nebo použijte [knihovny SOS.dll](/dotnet/framework/tools/sos-dll-sos-debugging-extension) ladění rozšíření v sadě Visual Studio, stáhněte si nástroje pro ladění pro Windows v [Windows Driver Kit (WDK)](/windows-hardware/drivers/download-the-wdk).
+- Chcete-li ladit [režimu jádra](/windows-hardware/drivers/debugger/kernel-mode-dump-files) soubory s výpisem paměti, nebo použijte [knihovny SOS.dll](/dotnet/framework/tools/sos-dll-sos-debugging-extension) ladění rozšíření v sadě Visual Studio, stáhněte si nástroje pro ladění pro Windows v [Windows Driver Kit (WDK)](/windows-hardware/drivers/download-the-wdk).
 
--   Visual Studio nemůže ladit soubory s výpisem paměti uložené ve starším, [úplným uživatelským režimem výpisu](/windows/desktop/wer/collecting-user-mode-dumps) formátu. S výpisem paměti úplným uživatelským režimem není stejný jako výpis s haldou.
+- Visual Studio nemůže ladit soubory s výpisem paměti uložené ve starším, [úplným uživatelským režimem výpisu](/windows/desktop/wer/collecting-user-mode-dumps) formátu. S výpisem paměti úplným uživatelským režimem není stejný jako výpis s haldou.
 
--   Ladění souborů s výpisem paměti pro optimalizaci kódu může být matoucí. Například vkládání funkcí kompilátoru může mít za následek neočekávané volání zásobníků a další optimalizace může upravit platnosti proměnných.
+- Ladění souborů s výpisem paměti pro optimalizaci kódu může být matoucí. Například vkládání funkcí kompilátoru může mít za následek neočekávané volání zásobníků a další optimalizace může upravit platnosti proměnných.
 
-##  <a name="BKMK_Dump_files__with_or_without_heaps"></a> Soubory s výpisem paměti s haldou nebo bez haldy
+## <a name="BKMK_Dump_files__with_or_without_heaps"></a> Soubory s výpisem paměti s haldou nebo bez haldy
 
 Soubory s výpisem paměti může nebo nemusí mít informace o haldě.
 
--   **Soubory s haldou výpisu paměti** obsahují snímek paměti aplikace, včetně hodnot proměnných, v okamžiku výpisu paměti. Visual Studio také ukládá binární verze načtených nativních modulů v souboru s výpisem paměti s haldou, což může být ladění mnohem snazší. Visual Studio můžete načíst symboly z soubor s výpisem paměti s haldou, i v případě, že aplikace nemůže najít binární.
+- **Soubory s haldou výpisu paměti** obsahují snímek paměti aplikace, včetně hodnot proměnných, v okamžiku výpisu paměti. Visual Studio také ukládá binární verze načtených nativních modulů v souboru s výpisem paměti s haldou, což může být ladění mnohem snazší. Visual Studio můžete načíst symboly z soubor s výpisem paměti s haldou, i v případě, že aplikace nemůže najít binární.
 
--   **Výpis paměti bez haldy soubory** jsou mnohem menší než výpisů paměti s haldou, ale ladicí program musí načíst binární soubory aplikace k nalezení informací o symbolu. Načíst binární soubory musí přesně odpovídat těm, které jsou během vytváření s výpisem paměti. Soubory s výpisem paměti bez haldy uložit hodnoty proměnných zásobníku pouze.
+- **Výpis paměti bez haldy soubory** jsou mnohem menší než výpisů paměti s haldou, ale ladicí program musí načíst binární soubory aplikace k nalezení informací o symbolu. Načíst binární soubory musí přesně odpovídat těm, které jsou během vytváření s výpisem paměti. Soubory s výpisem paměti bez haldy uložit hodnoty proměnných zásobníku pouze.
 
-##  <a name="BKMK_Create_a_dump_file"></a> Vytvoření souboru výpisu paměti
+## <a name="BKMK_Create_a_dump_file"></a> Vytvoření souboru výpisu paměti
 
 Při ladění procesu v sadě Visual Studio, můžete uložit výpis paměti, když ladicí program zastaví na výjimce nebo zarážku.
 
@@ -76,7 +76,7 @@ S [ladění za běhu](../debugger/just-in-time-debugging-in-visual-studio.md) po
 >[!NOTE]
 >Můžete vytvořit soubory s výpisem paměti pomocí libovolného programu, který podporuje formát minimálního výpisu Windows. Například **Procdump** nástroj příkazového řádku z [Windows Sysinternals](http://technet.microsoft.com/sysinternals/default) můžete vytvořit soubory s výpisem paměti při selhání procesu na základě aktivační události nebo na vyžádání. Zobrazit [požadavky a omezení](../debugger/using-dump-files.md#BKMK_Requirements_and_limitations) informace o použití jiných nástrojů pro vytváření souborů s výpisem paměti.
 
-##  <a name="BKMK_Open_a_dump_file"></a> Otevřete souboru výpisu paměti
+## <a name="BKMK_Open_a_dump_file"></a> Otevřete souboru výpisu paměti
 
 1. V sadě Visual Studio, vyberte **souboru** > **otevřít** > **souboru**.
 
@@ -90,7 +90,7 @@ S [ladění za běhu](../debugger/just-in-time-debugging-in-visual-studio.md) po
    - Chcete-li nastavit načítání umístění symbolů, vyberte **nastavit cesty symbolu**.
    - Chcete-li spustit ladění, vyberte **ladit spravované pouze**, **ladit pouze nativní**, **ladit s různými typy**, nebo **ladit spravovanou paměť**.
 
-##  <a name="BKMK_Find_binaries__symbol___pdb__files__and_source_files"></a> Najít .exe, .pdb a zdrojové soubory
+## <a name="BKMK_Find_binaries__symbol___pdb__files__and_source_files"></a> Najít .exe, .pdb a zdrojové soubory
 
 Používat úplné funkce na soubor s výpisem paměti ladění sady Visual Studio potřebuje:
 

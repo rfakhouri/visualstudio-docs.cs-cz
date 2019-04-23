@@ -24,12 +24,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b441543079ab3369beddcd95999809e075b3bb2b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 57987b67a2fa081ebaa577f10de478b5fd250aca
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55907139"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076234"
 ---
 # <a name="how-to-manage-editor-modes"></a>Postupy: Správa režimů editoru
 
@@ -42,21 +42,21 @@ Editor kódu sady Visual Studio můžete zobrazit v různých režimech zobrazen
 
 Je možné skrýt všechna okna nástrojů a zobrazit pouze okna dokumentu tím, že **zobrazení na celé obrazovce** režimu.
 
--   Stisknutím klávesy **Alt**+**Shift**+**Enter** a zadejte skript nebo ukončit **zobrazení na celé obrazovce** režimu.
+- Stisknutím klávesy **Alt**+**Shift**+**Enter** a zadejte skript nebo ukončit **zobrazení na celé obrazovce** režimu.
 
      --nebo--
 
--   Příkaz `View.Fullscreen` v **příkaz** okna.
+- Příkaz `View.Fullscreen` v **příkaz** okna.
 
 ## <a name="enable-virtual-space-mode"></a>Povolit režim virtuálního prostoru
 
 V **virtuální prostor** režimu, budou vkládány mezery na konci každého řádku kódu. Vyberte tuto možnost na pozici poznámky na bod konzistentní vzhledem k vedle vašeho kódu.
 
-1.  Vyberte **možnosti** z **nástroje** nabídky.
+1. Vyberte **možnosti** z **nástroje** nabídky.
 
-2.  Rozbalte **textový Editor** složky a zvolte **všechny jazyky** a tuto možnost nastavte, globálně nebo zvolte konkrétní jazykovou složku. Například, chcete-li zapnout čísla řádků pouze v jazyce Visual Basic, zvolte **základní** > **textový Editor** uzlu.
+2. Rozbalte **textový Editor** složky a zvolte **všechny jazyky** a tuto možnost nastavte, globálně nebo zvolte konkrétní jazykovou složku. Například, chcete-li zapnout čísla řádků pouze v jazyce Visual Basic, zvolte **základní** > **textový Editor** uzlu.
 
-3.  Vyberte **Obecné** možnosti a v části **nastavení**vyberte **povolit virtuální prostor**.
+3. Vyberte **Obecné** možnosti a v části **nastavení**vyberte **povolit virtuální prostor**.
 
     > [!NOTE]
     > **Virtuální prostor** je povolený v **výběr sloupce** režimu. Když **virtuální prostor** není povolen režim, kurzor se přesune z konce jeden řádek přímo na první znak na další.

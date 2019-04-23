@@ -11,19 +11,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b81dec69d27cc32fa5e6848d358049d8b8e2c04e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2fcc2fe575bd6b526f5f66d936625c87e91b0b39
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56643571"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111178"
 ---
 # <a name="development-best-practices-for-com-vsto-and-vba-add-ins-in-office"></a>Osvědčené postupy při vývoji pro modelu COM, VSTO a VBA doplňky sady Office
   Pokud vyvíjíte modelu COM, VSTO nebo VBA doplňky pro Office, dodržujte doporučené postupy vývoje popsaných v tomto článku.   To vám pomůže zajistit:
 
--  Kompatibilita doplňky napříč různými verzemi a nasazení Office.
--  Menší složitost nasazení doplňku pro uživatele a správce IT.
--  Nežádoucí selhání instalace nebo modulu runtime vašeho doplňku nedojde.
+- Kompatibilita doplňky napříč různými verzemi a nasazení Office.
+- Menší složitost nasazení doplňku pro uživatele a správce IT.
+- Nežádoucí selhání instalace nebo modulu runtime vašeho doplňku nedojde.
 
 >Poznámka: Použití [přemostění na Desktop](/windows/uwp/porting/desktop-to-uwp-root) Příprava vašeho modelu COM, VSTO nebo VBA doplněk pro Windows Store se nepodporuje. Doplňky modelu COM, VSTO a VBA nelze distribuovat ve Windows Store nebo Office Store.
 

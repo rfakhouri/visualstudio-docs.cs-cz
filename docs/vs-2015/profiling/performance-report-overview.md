@@ -13,12 +13,12 @@ caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ff52925dea61916b9fa27af8cfacc044588cdb75
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 81bb2392a4ea6d9860cdcf2beeadcfe4e6ec7940
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54785619"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091606"
 ---
 # <a name="performance-report-overview"></a>Přehled sestav výkonu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -82,19 +82,19 @@ Můžete zobrazit data profilování relace výkonu v **sestavu výkonu** okno i
 ## <a name="customizable-filter-control"></a>Ovládací prvek přizpůsobitelné filtru  
  Ovládací prvek přizpůsobitelné filtru obsahuje následující možnosti:  
   
--   **Filtr pro import** -načte dříve uložený vlastní dotaz.  
+- **Filtr pro import** -načte dříve uložený vlastní dotaz.  
   
--   **Exportovat filtr** – uloží vlastní dotaz do zadaného umístění.  
+- **Exportovat filtr** – uloží vlastní dotaz do zadaného umístění.  
   
--   **Spuštění dotazu** – spustí dotaz, jak se zobrazuje v ovládacím prvku vlastní dotaz.  
+- **Spuštění dotazu** – spustí dotaz, jak se zobrazuje v ovládacím prvku vlastní dotaz.  
   
--   **Zastavit dotaz** -zastaví provádění dotazu, který je spuštěn. Toto tlačítko není k dispozici, pokud je spuštěn žádný dotaz.  
+- **Zastavit dotaz** -zastaví provádění dotazu, který je spuštěn. Toto tlačítko není k dispozici, pokud je spuštěn žádný dotaz.  
   
--   **Zobrazit dotaz** – zobrazí nebo skryje ovládacího prvku vlastní dotaz.  
+- **Zobrazit dotaz** – zobrazí nebo skryje ovládacího prvku vlastní dotaz.  
   
--   **Uložit Analyzed** – uloží zprávu společně s jeho aktuální analýzy jako soubor .vsps.  
+- **Uložit Analyzed** – uloží zprávu společně s jeho aktuální analýzy jako soubor .vsps.  
   
--   **Export** – uloží aktuální sestavu v. Ve formátu CSV nebo. XML soubor ve formátu, s možnostmi pro uložení různých zobrazení.  
+- **Export** – uloží aktuální sestavu v. Ve formátu CSV nebo. XML soubor ve formátu, s možnostmi pro uložení různých zobrazení.  
   
 ## <a name="see-also"></a>Viz také  
  [Analýza výkonu nástrojů pro Data](../profiling/analyzing-performance-tools-data.md)   

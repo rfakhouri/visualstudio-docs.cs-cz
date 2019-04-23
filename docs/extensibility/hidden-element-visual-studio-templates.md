@@ -1,6 +1,6 @@
 ---
 title: Skrytý Element (šablony sady Visual Studio) | Dokumentace Microsoftu
-ms.date: 11/04/2016
+ms.date: 04/17/2019
 ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
@@ -13,32 +13,41 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7a7a70b59d08da09f6a06c3d5c38d330def11b86
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: c3fdeebabbb3f7a95886fed0a7e2c5eafa4d495b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56721391"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104431"
 ---
 # <a name="hidden-element-visual-studio-templates"></a>Hidden – element (šablony sady Visual Studio)
-Určuje, jestli se šablona zobrazuje v buď **nový projekt** nebo **přidat novou položku** dialogové okno.
 
- \<VSTemplate> \<TemplateData> \<Hidden>
+Určuje, jestli se šablona zobrazuje v buď nový projekt nebo **přidat novou položku** dialogových oknech.
+
+```xml
+<VSTemplate>
+    <TemplateData>
+        <Hidden>
+```
 
 ## <a name="syntax"></a>Syntaxe
 
-```
-<Hidden> true/false </Hidden>
+```xml
+<Hidden>true</Hidden>
+<Hidden>false</Hidden>
 ```
 
 ## <a name="attributes-and-elements"></a>Atributy a elementy
- Následující části popisují atributy, podřízené prvky a nadřazené prvky.
+
+Následující části popisují atributy, podřízené prvky a nadřazené prvky.
 
 ### <a name="attributes"></a>Atributy
- Žádné
+
+Žádné
 
 ### <a name="child-elements"></a>Podřízené prvky
- Žádné
+
+Žádné
 
 ### <a name="parent-elements"></a>Nadřazené prvky
 
@@ -47,19 +56,22 @@ Určuje, jestli se šablona zobrazuje v buď **nový projekt** nebo **přidat no
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Požadovaný element.<br /><br /> Rozděluje šablonu a definuje, jak se zobrazuje **nový projekt** nebo **přidat novou položku** dialogové okno.|
 
 ## <a name="text-value"></a>Textová hodnota
- Je vyžadována textová hodnota.
 
- Text musí být buď `true` nebo `false`, která udává, zda je či není šablony se zobrazí v **nový projekt** nebo **přidat novou položku** dialogových oknech.
+Je vyžadována textová hodnota.
+
+Text musí být buď `true` nebo `false`, která udává, zda je či není šablony se zobrazí v **nový projekt** nebo **přidat novou položku** dialogových oknech.
 
 ## <a name="remarks"></a>Poznámky
- `Hidden` je volitelný prvek.
 
- Je-li zadána, žádné další podřízené prvky `TemplateData` element jsou povinné.
+`Hidden` je volitelný prvek.
+
+Je-li zadána, žádné další podřízené prvky `TemplateData` element jsou povinné.
 
 ## <a name="example"></a>Příklad
- Následující příklad ukazuje metadata [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] šablony.
 
-```
+Následující příklad ukazuje metadata C# šablony.
+
+```xml
 <VSTemplate Type="Project" Version="3.0.0"
     xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
     <TemplateData>
@@ -85,5 +97,6 @@ Určuje, jestli se šablona zobrazuje v buď **nový projekt** nebo **přidat no
 ```
 
 ## <a name="see-also"></a>Viz také:
-- [Visual Studio odkaz na schéma šablon](../extensibility/visual-studio-template-schema-reference.md)
+
+- [Odkaz na schéma šablon](../extensibility/visual-studio-template-schema-reference.md)
 - [Vytváření šablon projektů a položek](../ide/creating-project-and-item-templates.md)

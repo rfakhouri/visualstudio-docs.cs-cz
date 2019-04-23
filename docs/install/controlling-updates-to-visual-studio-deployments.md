@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: a58ee5350467ae2b2eea74b4f929fac69b75c071
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: d4ce4621fc2fa32f2730c0ce6cdd0618a44386b2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58856285"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076372"
 ---
 # <a name="control-updates-to-network-based-visual-studio-deployments"></a>Řízení aktualizací nasazení sady Visual Studio založené na síti
 
@@ -33,13 +33,17 @@ Ve výchozím nastavení Visual Studio nadále hledat online aktualizace, i v p�
 Pokud chcete přímou kontrolu nad kde sady Visual Studio vyhledá aktualizace, můžete upravit místo, kde bude vypadat. Můžete také řídit verze, kterou vaši uživatelé jsou aktualizovány. Chcete-li to provést, postupujte takto:
 
 1. Vytvořte offline rozložení:
+
    ```cmd
    vs_enterprise.exe --layout C:\vsoffline --lang en-US
    ```
+
 2. Zkopírujte ho do sdílené složky, ve kterém chcete hostovat ho:
+
    ```cmd
    xcopy /e C:\vsoffline \\server\share\VS
    ```
+
 3. Upravte soubor response.json v rozložení a změna `channelUri` hodnotu tak, aby odkazoval na kopii channelManifest.json, které řídí správce.
 
    Ujistěte se, že řídicí zpětná lomítka v hodnotě, jako v následujícím příkladu:
@@ -49,6 +53,7 @@ Pokud chcete přímou kontrolu nad kde sady Visual Studio vyhledá aktualizace, 
    ```
 
    Koncoví uživatelé teď spustit instalaci z této sdílené složce instalace sady Visual Studio.
+
    ```cmd
    \\server\share\VS\vs_enterprise.exe
    ```
@@ -56,13 +61,17 @@ Pokud chcete přímou kontrolu nad kde sady Visual Studio vyhledá aktualizace, 
 Když správce podnikové sítě zjistí, je čas pro jejich uživatelům aktualizovat na novější verzi sady Visual Studio, mohou [aktualizovat umístění rozložení](update-a-network-installation-of-visual-studio.md) začlenit aktualizované soubory, následujícím způsobem.
 
 1. Použijte příkaz, který se podobá následující příkaz:
+
    ```cmd
    vs_enterprise.exe --layout \\server\share\VS --lang en-US
    ```
+
 2. Ujistěte se, soubor response.json v aktualizované rozložení stále obsahuje úpravy, konkrétně změny parametr channelUri následujícím způsobem:
+
    ```json
    "channelUri":"\\\\server\\share\\VS\\ChannelManifest.json"
    ```
+
    Existující sady Visual Studio a instaluje se z rozložení vyhledání aktualizací na `\\server\share\VS\ChannelManifest.json`. Pokud channelManifest.json je novější než co uživatel nainstaloval, Visual Studio upozorní uživatele, že je k dispozici aktualizace.
 
    Nové instalace automaticky nainstalují aktualizovaná verze sady Visual Studio přímo z rozložení.
@@ -94,6 +103,7 @@ Protože Visual Studio 2017 [ukládá položky registru v privátním registru](
 ```cmd
 vsregedit.exe set "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise" HKCU ExtensionManager AutomaticallyCheckForUpdates2Override dword 0
 ```
+
 ::: moniker-end
 
 ::: moniker range="vs-2019"
@@ -119,3 +129,4 @@ vsregedit.exe set "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterpris
 * [Příručka pro správce aplikace Visual Studio](visual-studio-administrator-guide.md)
 * [Instalace sady Visual Studio s použitím parametrů příkazového řádku](use-command-line-parameters-to-install-visual-studio.md)
 * [Nástroje pro správu instancí sady Visual Studio](tools-for-managing-visual-studio-instances.md)
+* [Životního cyklu produktu Visual Studio a údržba](/visualstudio/releases/2019/servicing/)

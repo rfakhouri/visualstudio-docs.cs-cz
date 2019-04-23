@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 04/14/2017
 ms.assetid: 5C800815-0B13-4B27-B017-95FCEF1A0EA2
 ms.custom: video
-ms.openlocfilehash: 59ee47f8971278e1be9714e8ee4e70911f612d52
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 8b67296dc4ad77977ce6ba0399e9d9b4207e2c7f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335087"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088662"
 ---
 # <a name="include-a-nuget-package-in-your-project"></a>Zahrnutí balíčku NuGet do projektu
 
@@ -77,9 +77,9 @@ Klikněte pravým tlačítkem na **balíčky** pro přístup k místní nabídky
 
 ![Balíčky nabídky](media/nuget-walkthrough-PackagesMenu.png)
 
-*   **Přidání balíčků** -otevře se okno pro přidání dalších balíčků do projektu.
-*   **Aktualizace** – kontroluje zdrojový server pro každý balíček a stáhne všechny novější verze.
-*   **Obnovení** – soubory ke stažení všechny chybějící balíčky (bez aktualizace existující balíčky na novější verze).
+* **Přidání balíčků** -otevře se okno pro přidání dalších balíčků do projektu.
+* **Aktualizace** – kontroluje zdrojový server pro každý balíček a stáhne všechny novější verze.
+* **Obnovení** – soubory ke stažení všechny chybějící balíčky (bez aktualizace existující balíčky na novější verze).
 
 Aktualizace a možnosti obnovení jsou také k dispozici na úrovni řešení a vliv na všechny projekty v řešení.
 
@@ -87,9 +87,9 @@ Klikněte pravým tlačítkem můžete také na jednotlivé balíčky pro přís
 
 ![Balíčky nabídky](media/nuget-walkthrough-PackageMenu.png)
 
-*   **Číslo verze** – číslo verze se zakázanou položku nabídky – je určen pouze k informačním účelům.
-*   **Aktualizace** – kontroluje zdrojového serveru a soubory ke stažení novější verze (pokud existuje).
-*   **Odebrat** – odebere balíček z tohoto projektu a odstraní odpovídající sestavení z odkazů v projektu.
+* **Číslo verze** – číslo verze se zakázanou položku nabídky – je určen pouze k informačním účelům.
+* **Aktualizace** – kontroluje zdrojového serveru a soubory ke stažení novější verze (pokud existuje).
+* **Odebrat** – odebere balíček z tohoto projektu a odstraní odpovídající sestavení z odkazů v projektu.
 
 ## <a name="adding-package-sources"></a>Přidání zdroje balíčků
 

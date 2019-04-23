@@ -15,12 +15,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dbc1bff5ad547a946efa3edcd5c21cc6de4fad07
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: ed23ea566bb27eaa8a315473fdf5345764ad5384
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54780524"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113947"
 ---
 # <a name="troubleshooting-broken-references"></a>Řešení potíží s poškozenými odkazy
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,11 +54,11 @@ Pokud vaše aplikace se pokusí použít poškozený odkaz, je vygenerována chy
   
 #### <a name="to-fix-a-broken-project-reference-by-correcting-the-reference-path"></a>Chcete-li vyřešit poškozený odkaz projektu tím, že opraví cesta odkazu  
   
-1.  V **Průzkumníka řešení**, klikněte pravým tlačítkem na uzel projektu a klikněte na tlačítko **vlastnosti**.  
+1. V **Průzkumníka řešení**, klikněte pravým tlačítkem na uzel projektu a klikněte na tlačítko **vlastnosti**.  
   
-2.  **Návrháře projektu** se zobrazí.  
+2. **Návrháře projektu** se zobrazí.  
   
-3.  Pokud používáte Visual Basic, vyberte **odkazy** stránky a klikněte na tlačítko **cesty odkazů** tlačítko. V **cesty odkazů** dialogového okna zadejte cestu ke složce, která obsahuje položku, kterou chcete odkazovat **složky** pole a potom klikněte na **přidat složku** tlačítko.  
+3. Pokud používáte Visual Basic, vyberte **odkazy** stránky a klikněte na tlačítko **cesty odkazů** tlačítko. V **cesty odkazů** dialogového okna zadejte cestu ke složce, která obsahuje položku, kterou chcete odkazovat **složky** pole a potom klikněte na **přidat složku** tlačítko.  
   
      -nebo-  
   
@@ -69,20 +69,20 @@ Pokud vaše aplikace se pokusí použít poškozený odkaz, je vygenerována chy
   
 #### <a name="to-fix-a-broken-project-reference-for-a-file-that-no-longer-exists-on-your-drive"></a>Chcete-li vyřešit porušení projektu odkaz pro soubor, který již existuje na disku  
   
--   Odstraňte odkaz.  
+- Odstraňte odkaz.  
   
--   Pokud existuje odkaz na jiné místo v počítači, přečtěte si je z tohoto umístění.  
+- Pokud existuje odkaz na jiné místo v počítači, přečtěte si je z tohoto umístění.  
   
--   Další informace najdete v tématu [NIB jak: Přidání nebo odebrání odkazů pomocí dialogového okna Přidat odkaz](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
+- Další informace najdete v tématu [NIB jak: Přidání nebo odebrání odkazů pomocí dialogového okna Přidat odkaz](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
   
 ## <a name="referenced-file-has-been-renamed"></a>Odkazovaný soubor byl přejmenován.  
  Je možné, že byl přejmenován soubor, který se odkazuje.  
   
 #### <a name="to-fix-a-broken-reference-for-a-file-that-has-been-renamed"></a>Chcete-li vyřešit poškozený odkaz pro soubor, který se přejmenoval  
   
--   Odstranit odkazy a pak přidejte odkaz na soubor přejmenován.  
+- Odstranit odkazy a pak přidejte odkaz na soubor přejmenován.  
   
--   Pokud existuje odkaz na jiné místo v počítači, je nutné jej načíst z tohoto umístění. Další informace najdete v tématu [NIB jak: Přidání nebo odebrání odkazů pomocí dialogového okna Přidat odkaz](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
+- Pokud existuje odkaz na jiné místo v počítači, je nutné jej načíst z tohoto umístění. Další informace najdete v tématu [NIB jak: Přidání nebo odebrání odkazů pomocí dialogového okna Přidat odkaz](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
   
 ## <a name="network-connection-or-authentication-has-failed"></a>Připojení k síti nebo ověřování se nezdařilo  
  Může být mnoho možných příčin nepřístupných souborů: došlo k chybě síťového připojení nebo se nezdařilo ověřování, například. Každou příčinou může být jedinečný prostředek obnovení; například budete muset obrátit na místního správce pro přístup k potřebným prostředkům. Odstranění odkazu a oprava kódu, který používá ho ale vždy možnost. Další informace najdete v tématu [NIB jak: Přidání nebo odebrání odkazů pomocí dialogového okna Přidat odkaz](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  

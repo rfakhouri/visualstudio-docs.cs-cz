@@ -8,12 +8,12 @@ ms.assetid: bd7ad36c-54cb-4d2a-9aea-9d10ad98d7ba
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 487af3eb2a2cce1c68a94b996f371ab1c491e4c5
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: 517d4e0558aeca1518316520191ae6c662b41a9e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416321"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112959"
 ---
 # <a name="how-to-create-a-diagnostic-data-adapter"></a>Postupy: Vytvoření adaptéru diagnostických dat
 
@@ -54,19 +54,19 @@ Kompletní příklad diagnostických dat adaptéru projektu, včetně vlastního
 
 2. Přidat sestavení **Microsoft.VisualStudio.QualityTools.ExecutionCommon**.
 
-   1.  V **Průzkumníka řešení**, klikněte pravým tlačítkem na **odkazy** a zvolte **přidat odkaz** příkazu.
+   1. V **Průzkumníka řešení**, klikněte pravým tlačítkem na **odkazy** a zvolte **přidat odkaz** příkazu.
 
-   2.  Zvolte **.NET** a vyhledejte **Microsoft.VisualStudio.QualityTools.ExecutionCommon.dll**.
+   2. Zvolte **.NET** a vyhledejte **Microsoft.VisualStudio.QualityTools.ExecutionCommon.dll**.
 
-   3.  Zvolte **OK**.
+   3. Zvolte **OK**.
 
 3. Přidat sestavení **Microsoft.VisualStudio.QualityTools.Common**.
 
-   1.  V **Průzkumníka řešení**, klikněte pravým tlačítkem na **odkazy** a vyberte **přidat odkaz** příkazu.
+   1. V **Průzkumníka řešení**, klikněte pravým tlačítkem na **odkazy** a vyberte **přidat odkaz** příkazu.
 
-   2.  Zvolte **/.NET**, vyhledejte **Microsoft.VisualStudio.QualityTools.Common.dll**.
+   2. Zvolte **/.NET**, vyhledejte **Microsoft.VisualStudio.QualityTools.Common.dll**.
 
-   3.  Zvolte **OK**.
+   3. Zvolte **OK**.
 
 4. Přidejte následující `using` příkazy do souboru třídy:
 

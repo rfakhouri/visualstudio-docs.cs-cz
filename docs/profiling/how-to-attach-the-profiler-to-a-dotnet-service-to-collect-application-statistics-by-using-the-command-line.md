@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 30bdf99d310f098ab623107c939a068d0286bf87
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: a2f6381666128808ec7f655622d430e3e349c5e2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59661279"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60101714"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-service-to-collect-application-statistics-by-using-the-command-line"></a>Postupy: Připojení profileru ke službě .NET ke shromažďování statistik aplikace pomocí příkazového řádku
 Tento článek popisuje způsob použití [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] služby nástroje příkazového řádku nástroje pro profilaci k připojení profileru k rozhraní .NET Framework a shromáždit statistiky výkonu pomocí metody vzorkování.
@@ -42,9 +42,9 @@ Tento článek popisuje způsob použití [!INCLUDE[vsprvs](../code-quality/incl
 
     **Vsperfclrenv – /globalsampleon** [**/samplelineoff**]
 
-   -   **/globalsampleon** umožňuje vzorkování.
+   - **/globalsampleon** umožňuje vzorkování.
 
-   -   **/samplelineoff** zakáže přiřazení shromážděných dat ke konkrétnímu zdroji řádků kódu. Pokud je tato možnost zadána, data přiřazena pouze funkcí.
+   - **/samplelineoff** zakáže přiřazení shromážděných dat ke konkrétnímu zdroji řádků kódu. Pokud je tato možnost zadána, data přiřazena pouze funkcí.
 
 4. Restartujte počítač.
 
@@ -88,14 +88,14 @@ Tento článek popisuje způsob použití [!INCLUDE[vsprvs](../code-quality/incl
    |[/ sys](../profiling/sys-vsperfcmd.md)[`:``Interval`]|Změní událost odběru vzorků na volání systému z procesu do jádra operačního systému (syscalls). Pokud `Interval` je určen, nastaví počet volání mezi vzorky. Výchozí hodnota je 10.|
    |[/ Čítač](../profiling/counter.md) **:** `Config`|Změní událost a interval vzorkování na čítač výkonu a interval procesoru určený parametrem `Config`.|
 
-   -   **targetclr:** `Version` Určuje verzi modulu common language runtime (CLR) do profilu je do aplikace načtena více než jedna verze modulu runtime. Volitelné.
+   - **targetclr:** `Version` Určuje verzi modulu common language runtime (CLR) do profilu je do aplikace načtena více než jedna verze modulu runtime. Volitelné.
 
 ## <a name="control-data-collection"></a>Řízení shromažďování dat
  Pokud je služba spuštěna, můžete použít *VSPerfCmd.exe* možnosti spuštění a zastavení zápisu dat do datového souboru profilování. Řízení sběru dat umožňuje shromažďovat data pro určitou část provádění programu, například spouštění či ukončování aplikace.
 
 #### <a name="to-start-and-stop-data-collection"></a>Spuštění a zastavení shromažďování dat
 
--   Následující páry **VSPerfCmd** možností spouští a zastavují sběr dat. Každou možnost zadejte na samostatný příkazový řádek. Sběr dat lze zapnout a vypnout několikrát.
+- Následující páry **VSPerfCmd** možností spouští a zastavují sběr dat. Každou možnost zadejte na samostatný příkazový řádek. Sběr dat lze zapnout a vypnout několikrát.
 
     |Možnost|Popis|
     |------------|-----------------|
@@ -110,23 +110,23 @@ Tento článek popisuje způsob použití [!INCLUDE[vsprvs](../code-quality/incl
 
 #### <a name="to-end-a-profiling-session"></a>Chcete-li ukončit relaci profilování
 
-1.  Proveďte jednu z následujících-li odpojit profiler od cílové aplikace:
+1. Proveďte jednu z následujících-li odpojit profiler od cílové aplikace:
 
-    -   Zastavte službu.
+    - Zastavte službu.
 
          -nebo-
 
-    -   Typ **VSPerfCmd / odpojení**
+    - Typ **VSPerfCmd / odpojení**
 
-2.  Vypněte profiler. Typ:
+2. Vypněte profiler. Typ:
 
      **/ Shutdown VSPerfCmd**
 
-3.  (Volitelné) Vyčistěte proměnné prostředí profilování. Typ:
+3. (Volitelné) Vyčistěte proměnné prostředí profilování. Typ:
 
      **Vsperfclrenv – /globaloff**
 
-4.  Restartujte počítač.
+4. Restartujte počítač.
 
 ## <a name="see-also"></a>Viz také:
 - [Profil služby](../profiling/command-line-profiling-of-services.md)

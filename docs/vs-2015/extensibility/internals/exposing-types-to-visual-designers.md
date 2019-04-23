@@ -12,12 +12,12 @@ ms.assetid: a7a32ad4-3a0a-4eb8-a6ac-491c42885639
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c87f44dd12724c694fc27bae985f5f7fb617e45c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a50b298dfafe093e404c6575b16a074d106522ee
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54766799"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60103430"
 ---
 # <a name="exposing-types-to-visual-designers"></a>Zveřejnění typů pro vizuální návrháře
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,15 +33,15 @@ ms.locfileid: "54766799"
   
  Vlastní nástroje, které budou využívat podporu dočasné PE musí postupovat podle následujících pravidel:  
   
--   `GeneratesDesignTimeSource` musí být nastavena na hodnotu 1 v registru.  
+- `GeneratesDesignTimeSource` musí být nastavena na hodnotu 1 v registru.  
   
      Žádná spustitelný soubor kompilace programu probíhá bez tohoto nastavení.  
   
--   Generovaný kód musí být ve stejném jazyce jako nastavení globální projektu.  
+- Generovaný kód musí být ve stejném jazyce jako nastavení globální projektu.  
   
      Dočasné přenositelné Spustitelné je kompilován bez ohledu na to, co vlastní nástroj hlásí jako požadované rozšíření v <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.DefaultExtension%2A> za předpokladu, že `GeneratesDesignTimeSource` je nastavená na 1 v registru. Rozšíření nemusí být .vb nebo .cs, .jsl; může být jakékoli rozšíření.  
   
--   Kód vygenerovaný vlastní nástroj musí být platný, a musíte zkompilovat ve vlastní pomocí sady odkazů, které se nacházejí v projektu v době <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.Generate%2A> dokončí provádění.  
+- Kód vygenerovaný vlastní nástroj musí být platný, a musíte zkompilovat ve vlastní pomocí sady odkazů, které se nacházejí v projektu v době <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.Generate%2A> dokončí provádění.  
   
      Při kompilaci dočasné přenositelné Spustitelné pouze zdrojový soubor k dispozici pro kompilátor je výstup vlastního nástroje. Vlastní nástroj, který používá dočasné přenositelné Spustitelné proto musí vygenerovat výstupní soubory, které mohou být zkompilovány nezávisle na jiné soubory v projektu.  
   

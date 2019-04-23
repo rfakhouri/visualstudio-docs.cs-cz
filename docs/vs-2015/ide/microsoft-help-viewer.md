@@ -20,12 +20,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 141bf63a3cf64cfb1e3576f76512351b496a2778
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8572deb32ea5fab2ce8ad831deeaba783496cbc5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54755035"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104327"
 ---
 # <a name="microsoft-help-viewer"></a>Microsoft Help Viewer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,15 +37,15 @@ Můžete nainstalovat a zobrazit obsah pro různé produkty a technologie v mís
   
  Můžete provádět následující akce:  
   
--   Vyhledávat a stahovat sady obsahu, které jsou také označovány jako knihy.  
+- Vyhledávat a stahovat sady obsahu, které jsou také označovány jako knihy.  
   
--   Procházení a vyhledávání obsahu a najděte témata podle názvu.  
+- Procházení a vyhledávání obsahu a najděte témata podle názvu.  
   
--   Vyhledejte předměty v rejstříku.  
+- Vyhledejte předměty v rejstříku.  
   
--   Vyhledejte informace pomocí fulltextového vyhledávání.  
+- Vyhledejte informace pomocí fulltextového vyhledávání.  
   
--   Zobrazení, Záložka a tisknout témata.  
+- Zobrazení, Záložka a tisknout témata.  
   
 ## <a name="navigating-the-help-viewer"></a>Navigace programu Help Viewer  
  Můžete vyhledat informace v nainstalovaném obsahu pomocí navigačních karet, zobrazit nainstalovaný obsah témat nebo karty a spravovat obsah pomocí **spravovat obsah** kartu. Můžete také provádět další úkoly pomocí tlačítek na panelu nástrojů a vyhledat další informace v pravém dolním rohu okna.  

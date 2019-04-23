@@ -10,12 +10,12 @@ ms.assetid: e15567bc-1f21-4feb-b81d-f17ba35cfde5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 73c99d4a7d1ff15b8cbd1cff8a4fd18d8f41bccc
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 47707e0430d51a754f7e458ebf68e08124c1e7b5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55954839"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114610"
 ---
 # <a name="how-to-use-the-load-test-api"></a>Postupy: Použití rozhraní API zátěžového testu
 
@@ -30,27 +30,27 @@ Můžete také vytvořit moduly plug-in pro testy výkonnosti webu. Další info
 
 ## <a name="to-use-the-loadtesting-namespace"></a>Používání oboru názvů LoadTesting
 
-1.  Otevřete webový výkon a projekt zátěžového testu, který obsahuje zátěžový test.
+1. Otevřete webový výkon a projekt zátěžového testu, který obsahuje zátěžový test.
 
-2.  Přidejte Visual C# nebo Visual Basic projekt knihovny tříd pro vaše řešení pro testování.
+2. Přidejte Visual C# nebo Visual Basic projekt knihovny tříd pro vaše řešení pro testování.
 
-3.  Přidáte odkaz v projektu webového výkonu a zátěžový test do projektu knihovny tříd.
+3. Přidáte odkaz v projektu webového výkonu a zátěžový test do projektu knihovny tříd.
 
-4.  V projektu knihovny tříd přidejte odkaz na knihovnu DLL Microsoft.VisualStudio.QualityTools.LoadTestFramework.
+4. V projektu knihovny tříd přidejte odkaz na knihovnu DLL Microsoft.VisualStudio.QualityTools.LoadTestFramework.
 
-5.  Soubor třídy nachází v projektu knihovny tříd, přidejte `using` příkaz pro <xref:Microsoft.VisualStudio.TestTools.LoadTesting> oboru názvů.
+5. Soubor třídy nachází v projektu knihovny tříd, přidejte `using` příkaz pro <xref:Microsoft.VisualStudio.TestTools.LoadTesting> oboru názvů.
 
-6.  Vytvořte veřejnou třídu, která implementuje <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin> rozhraní.
+6. Vytvořte veřejnou třídu, která implementuje <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin> rozhraní.
 
-7.  Sestavte projekt.
+7. Sestavte projekt.
 
-8.  Přidáte nový zátěžový test modulu plug-in pomocí editoru zátěžových testů:
+8. Přidáte nový zátěžový test modulu plug-in pomocí editoru zátěžových testů:
 
-    1.  Klikněte pravým tlačítkem na kořenový uzel zátěžového testu a pak zvolte **přidat modul Plug-in zátěžového testu**.
+    1. Klikněte pravým tlačítkem na kořenový uzel zátěžového testu a pak zvolte **přidat modul Plug-in zátěžového testu**.
 
-    2.  **Přidat modul Plug-in zátěžového testu** se zobrazí dialogové okno.
+    2. **Přidat modul Plug-in zátěžového testu** se zobrazí dialogové okno.
 
-    3.  V **vlastnosti pro vybraný modul plug-in** podokno, nastavte počáteční hodnoty pro modul plug-in pro použití v době běhu.
+    3. V **vlastnosti pro vybraný modul plug-in** podokno, nastavte počáteční hodnoty pro modul plug-in pro použití v době běhu.
 
         > [!NOTE]
         > Lze vystavit libovolný počet vlastností chcete z modulů plug-in. Je třeba je nastavit veřejné a nastavitelné a musí mít základní typ, jako je například Integer, Boolean nebo String. Vlastnosti modulu plug-in zátěžového testu můžete také upravit později pomocí **vlastnosti** okna.

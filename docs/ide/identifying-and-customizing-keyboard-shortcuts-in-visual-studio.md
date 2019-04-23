@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1dc65b29bafd67fa8265feb75b533d66504d33c8
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: e166e28af02e3e9497b94cdf75a05bd9bf534629
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57222058"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104366"
 ---
 # <a name="identify-and-customize-keyboard-shortcuts-in-visual-studio"></a>Identifikování a přizpůsobení klávesových zkratek v sadě Visual Studio
 
@@ -134,7 +134,7 @@ Ve výchozím nastavení, klávesové zkratky ukládány do souboru v *%USERPROF
 
 5. Zvolte **Další** tlačítko.
 
-6.  V části **nastavení, které chcete importovat?**, zrušte zaškrtnutí políčka **všechna nastavení** zaškrtávací políčko, rozbalte **možnosti**a potom rozbalte **prostředí**.
+6. V části **nastavení, které chcete importovat?**, zrušte zaškrtnutí políčka **všechna nastavení** zaškrtávací políčko, rozbalte **možnosti**a potom rozbalte **prostředí**.
 
 7. Vyberte **klávesnice** zaškrtněte políčko a klikněte na tlačítko **Dokončit** tlačítko.
 

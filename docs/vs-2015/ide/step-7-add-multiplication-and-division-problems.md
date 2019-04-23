@@ -9,12 +9,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a558372c69aaf5aeb76685cae3eae4f30a6b9737
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 47623d7a65de85b50ad1910425052288a261e49d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54795265"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109579"
 ---
 # <a name="step-7-add-multiplication-and-division-problems"></a>Krok 7: Přidání úloh násobení a dělení
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,29 +23,29 @@ V sedmé části tohoto kurzu budete přidejte problémy násobení a dělení, 
   
 ### <a name="to-add-multiplication-and-division-problems"></a>Chcete-li přidat úlohy násobení a dělení  
   
-1.  Přidejte do formuláře čtyři další celočíselné proměnné.  
+1. Přidejte do formuláře čtyři další celočíselné proměnné.  
   
      [!code-csharp[VbExpressTutorial3Step7#15](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial3step7/cs/form1.cs#15)]
      [!code-vb[VbExpressTutorial3Step7#15](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial3step7/vb/form1.vb#15)]  
   
-2.  Stejně jako dříve upravte `StartTheQuiz()` metoda k vyplnění náhodných čísel pro úlohy násobení a dělení.  
+2. Stejně jako dříve upravte `StartTheQuiz()` metoda k vyplnění náhodných čísel pro úlohy násobení a dělení.  
   
      [!code-csharp[VbExpressTutorial3Step7#16](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial3step7/cs/form1.cs#16)]
      [!code-vb[VbExpressTutorial3Step7#16](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial3step7/vb/form1.vb#16)]  
   
-3.  Upravit `CheckTheAnswer()` metodu tak, aby také kontrolovala úlohy násobení a dělení.  
+3. Upravit `CheckTheAnswer()` metodu tak, aby také kontrolovala úlohy násobení a dělení.  
   
      [!code-csharp[VbExpressTutorial3Step7#17](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial3step7/cs/form1.cs#17)]
      [!code-vb[VbExpressTutorial3Step7#17](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial3step7/vb/form1.vb#17)]  
   
      Nelze snadno zadejte znaménko násobení (x) a dělení znaménko (÷) pomocí klávesnice, proto Visual C# a Visual Basic přijměte hvězdičku (*) pro násobení a dělení znak lomítka (/).  
   
-4.  Změňte poslední část obslužné rutiny události cyklů časovače, aby vyplnila správnou odpověď, když vyprší čas.  
+4. Změňte poslední část obslužné rutiny události cyklů časovače, aby vyplnila správnou odpověď, když vyprší čas.  
   
      [!code-csharp[VbExpressTutorial3Step7#23](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial3step7/cs/form1.cs#23)]
      [!code-vb[VbExpressTutorial3Step7#23](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial3step7/vb/form1.vb#23)]  
   
-5.  Uložte program a spusťte jej.  
+5. Uložte program a spusťte jej.  
   
      Uživatelé vyplňující kvíz musí odpovědět na čtyři úlohy k dokončení kvízu, jako je vidět na následujícím obrázku.  
   
@@ -54,6 +54,6 @@ Matematický kvíz se čtyřmi úlohami
   
 ### <a name="to-continue-or-review"></a>Chcete-li pokračovat nebo přezkoumat  
   
--   Přechod k dalšímu kroku výukového programu naleznete v tématu [krok 8: Přizpůsobení kvízu](../ide/step-8-customize-the-quiz.md).  
+- Přechod k dalšímu kroku výukového programu naleznete v tématu [krok 8: Přizpůsobení kvízu](../ide/step-8-customize-the-quiz.md).  
   
--   Chcete-li vrátit k předchozímu kroku tutoriálu, přečtěte si téma [krok 6: Přidejte problém odečtení](../ide/step-6-add-a-subtraction-problem.md).
+- Chcete-li vrátit k předchozímu kroku tutoriálu, přečtěte si téma [krok 6: Přidejte problém odečtení](../ide/step-6-add-a-subtraction-problem.md).

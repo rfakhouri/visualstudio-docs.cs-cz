@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 77c51d2466cc7382e98b0d0d82efff14f817a98e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: d55d4ae23b2fd8bf03e6aa9ad7301531aedcfcac
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56699441"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107759"
 ---
 # <a name="view-threads-in-the-visual-studio-debugger-by-using-the-threads-window-c-visual-basic-c"></a>Zobrazit vlákna v ladicím programu sady Visual Studio pomocí okna vlákna (C#, Visual Basic, C++)
 V **vlákna** okna, můžete prozkoumat a pracujte s vlákny v aplikaci, kterou ladíte. Podrobné pokyny o tom, jak používat **vlákna** okna, naleznete v tématu [názorný postup: Ladění pomocí okna vlákna](../debugger/how-to-use-the-threads-window.md).
@@ -64,18 +64,18 @@ V **vlákna** okna, můžete prozkoumat a pracujte s vlákny v aplikaci, kterou 
 
 ### <a name="to-display-the-threads-window-in-break-mode-or-run-mode"></a>Chcete-li zobrazit okno vlákna v režimu přerušení nebo v režimu spuštění
 
--   I když jsou Visual Studio v režimu ladění, vyberte **ladění** nabídky, přejděte k **Windows**a pak vyberte **vlákna**.
+- I když jsou Visual Studio v režimu ladění, vyberte **ladění** nabídky, přejděte k **Windows**a pak vyberte **vlákna**.
 
 ### <a name="to-display-or-hide-a-column"></a>Chcete-li zobrazit nebo skrýt sloupec
 
--   Na panelu nástrojů v horní části **vlákna** okně **sloupce**. Zaškrtněte nebo zrušte název sloupce, který chcete zobrazit nebo skrýt.
+- Na panelu nástrojů v horní části **vlákna** okně **sloupce**. Zaškrtněte nebo zrušte název sloupce, který chcete zobrazit nebo skrýt.
 
 ## <a name="display-flagged-threads"></a>Zobrazit vlákna s příznakem
  Můžete označit příznakem vlákna, které chcete věnovat zvláštní pozornost označením s ikonou v **vlákna** okna. Další informace najdete v tématu [jak: Označení a odstranění označení vlákna](../debugger/how-to-flag-and-unflag-threads.md). V **vlákna** okna, můžete také zobrazit všechna vlákna, nebo pouze vlákna s příznakem.
 
 ### <a name="to-display-only-flagged-threads"></a>Chcete-li zobrazit pouze vlákna označená příznakem
 
--   Zvolte **zobrazit vlákna pouze s příznakem** na panelu nástrojů v horní části **vlákna** okna. (Pokud je neaktivní, musíte nejprve označit, že některá vlákna.)
+- Zvolte **zobrazit vlákna pouze s příznakem** na panelu nástrojů v horní části **vlákna** okna. (Pokud je neaktivní, musíte nejprve označit, že některá vlákna.)
 
 ## <a name="freeze-and-thaw-threads"></a>Zablokovat a odblokovat vlákna
  Po ukotvení vlákno se systém nespustí provádění vlákna, i v případě, že prostředky jsou k dispozici.
@@ -89,7 +89,7 @@ V **vlákna** okna, můžete prozkoumat a pracujte s vlákny v aplikaci, kterou 
 
 ### <a name="to-freeze-or-thaw-execution-of-a-thread"></a>Chcete-li zmrazit nebo odblokovat spuštění vlákna
 
--   Na panelu nástrojů v horní části **vlákna** okně **zablokovat vlákna** nebo **uvolnit vlákna**.
+- Na panelu nástrojů v horní části **vlákna** okně **zablokovat vlákna** nebo **uvolnit vlákna**.
 
      Tato akce ovlivní pouze vlákna, které jsou vybrány v **vlákna** okna.
 
@@ -99,11 +99,11 @@ V **vlákna** okna, můžete prozkoumat a pracujte s vlákny v aplikaci, kterou 
 
 #### <a name="to-switch-to-another-thread"></a>Chcete-li přepnout do jiného vlákna
 
--   Použijte jednu z následujících kroků:
+- Použijte jednu z následujících kroků:
 
-    -   Klikněte dvakrát na libovolného vlákna.
+    - Klikněte dvakrát na libovolného vlákna.
 
-    -   Klikněte pravým tlačítkem na vlákno a vyberte **přepnout na vlákno**.
+    - Klikněte pravým tlačítkem na vlákno a vyberte **přepnout na vlákno**.
 
 ## <a name="group-and-sort-threads"></a>Skupiny a řadit vlákna
  Při seskupování vlákna nadpis se zobrazí v tabulce pro každou skupinu. Záhlaví obsahuje popis skupiny, jako například **pracovní vlákna** nebo **vlákna bez příznaku**a ovládacím prvkem strom. Vlákna člena každé skupiny se zobrazí v záhlaví skupiny. Pokud chcete skrýt člena vláken pro skupiny, pomocí ovládacího prvku stromu sbalit skupiny.
@@ -112,29 +112,29 @@ V **vlákna** okna, můžete prozkoumat a pracujte s vlákny v aplikaci, kterou 
 
 ### <a name="to-sort-threads"></a>Chcete-li seřadit vláken
 
-1.  Na panelu nástrojů v horní části **vlákna** okna, klikněte na tlačítko v horní části libovolného sloupce.
+1. Na panelu nástrojů v horní části **vlákna** okna, klikněte na tlačítko v horní části libovolného sloupce.
 
      Vlákna jsou teď seřazené podle hodnoty ve sloupci.
 
-2.  Pokud chcete změnit směr řazení, znovu vyberte tlačítko stejné.
+2. Pokud chcete změnit směr řazení, znovu vyberte tlačítko stejné.
 
      Vlákna, které se zobrazovaly v horní části seznamu, se teď zobrazí v dolní části.
 
 ### <a name="to-group-threads"></a>Do skupiny vláken
 
--   V **vlákna** nástrojů okna, vyberte **Seskupit podle** seznamu a potom vyberte kritéria, které chcete seskupit vlákna tak.
+- V **vlákna** nástrojů okna, vyberte **Seskupit podle** seznamu a potom vyberte kritéria, které chcete seskupit vlákna tak.
 
 ### <a name="to-sort-threads-within-groups"></a>Chcete-li seřadit vláken v rámci jednotlivých skupin
 
-1.  Na panelu nástrojů v horní části **vlákna** okna, vyberte **Seskupit podle** seznamu a potom vyberte kritéria, které chcete seskupit vlákna tak.
+1. Na panelu nástrojů v horní části **vlákna** okna, vyberte **Seskupit podle** seznamu a potom vyberte kritéria, které chcete seskupit vlákna tak.
 
-2.  V **vlákna** okna, klikněte na tlačítko v horní části libovolného sloupce.
+2. V **vlákna** okna, klikněte na tlačítko v horní části libovolného sloupce.
 
      Vlákna jsou teď seřazené podle hodnoty ve sloupci.
 
 ### <a name="to-expand-or-collapse-all-groups"></a>Chcete-li rozbalit nebo sbalit všechny skupiny
 
--   Na panelu nástrojů v horní části **vlákna** okně **Rozbalit skupiny** nebo **sbalit skupiny**.
+- Na panelu nástrojů v horní části **vlákna** okně **Rozbalit skupiny** nebo **sbalit skupiny**.
 
 ## <a name="search-for-specific-threads"></a>Vyhledejte konkrétní vláken
  Můžete vyhledat vlákna, které odpovídají zadaného řetězce v **vlákna** okna. Při hledání vlákna, v okně zobrazí všechna vlákna odpovídající hledaný řetězec na jakémkoli sloupci. Tyto informace zahrnují umístění vlákna, která se zobrazí v horní části zásobníku volání v **umístění** sloupce. Ve výchozím nastavení není prohledána úplného zásobníku volání.
@@ -159,13 +159,13 @@ Každé vlákno ve vícevláknovém programu, má své vlastní zásobníku vol�
 
 ### <a name="to-view-the-call-stack-of-a-thread"></a>Chcete-li zobrazit zásobník volání vlákna
 
--   V **umístění** sloupce, vyberte obrácenou trojúhelníku vedle umístění vlákna.
+- V **umístění** sloupce, vyberte obrácenou trojúhelníku vedle umístění vlákna.
 
      Umístění se rozbalí a zobrazí zásobník volání pro vlákno.
 
 ### <a name="to-view-or-collapse-the-call-stacks-of-all-threads"></a>K zobrazení nebo sbalit zásobníky volání všech vláken
 
--   Na panelu nástrojů v horní části **vlákna** okně **rozbalit zásobníky volání** nebo **sbalit zásobníky volání**.
+- Na panelu nástrojů v horní části **vlákna** okně **rozbalit zásobníky volání** nebo **sbalit zásobníky volání**.
 
 ## <a name="see-also"></a>Viz také:
 - [Ladění vícevláknových aplikací](../debugger/debug-multithreaded-applications-in-visual-studio.md)

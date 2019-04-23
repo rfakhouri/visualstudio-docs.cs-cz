@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f27e388c0b7670e8af7d6a97954485ef90d01f9e
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 55a27a8d0c5c119870e92bfbf7cff4b85f90cf99
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54869668"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60103516"
 ---
 # <a name="publish-page-project-designer-office-development-in-visual-studio"></a>Publikovat stranu, Návrhář projektů (vývoj pro Office v sadě Visual Studio)
   **Publikovat** stránku **Návrháře projektu** slouží ke konfiguraci vlastností pro nasazení.
@@ -84,9 +84,9 @@ ms.locfileid: "54869668"
 
 - Chování načítání doplňku VSTO.
 
-  -   Při spuštění: Určuje, že doplňku VSTO načte při spuštění aplikace Office.
+  - Při spuštění: Určuje, že doplňku VSTO načte při spuštění aplikace Office.
 
-  -   Načítání na vyžádání: Určuje, že doplňku VSTO načte Pokud aplikace vyžaduje, například když uživatel klikne prvek uživatelského rozhraní, která využívá funkce v doplňku VSTO.
+  - Načítání na vyžádání: Určuje, že doplňku VSTO načte Pokud aplikace vyžaduje, například když uživatel klikne prvek uživatelského rozhraní, která využívá funkce v doplňku VSTO.
 
   **Jazyk publikování** tato možnost nastaví jazyk licenční podmínky pro Software společnosti Microsoft a obsahuje seznam požadovaných jazykových sad. Jazyk vlastního nastavení nemá vliv. Jazyk v instalačním programu se určuje podle nainstalované jazyky sady Visual Studio.
 

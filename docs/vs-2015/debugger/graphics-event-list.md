@@ -11,12 +11,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1ecfff316a6daa4fe7f0b1fc0619f7dd7961c682
-ms.sourcegitcommit: 447f2174bdecdd471d8a8e11c19554977db620a0
+ms.openlocfilehash: 15a07796278faad43f95b33c020b167f07daa009
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2019
-ms.locfileid: "55089302"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105627"
 ---
 # <a name="graphics-event-list"></a>Seznam událostí grafiky
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ Použijte seznam událostí grafiky v analyzátoru grafiky sady Visual Studio zk
   
 ##### <a name="to-change-the-event-list-view-mode"></a>Chcete-li změnit režim zobrazení seznamu událostí  
   
--   V **seznam událostí grafiky** okno nad seznam událostí, vyhledejte **zobrazení** rozevírací seznam a vyberte buď **časová osa** zobrazení nebo **nakreslit volání** zobrazení.  
+- V **seznam událostí grafiky** okno nad seznam událostí, vyhledejte **zobrazení** rozevírací seznam a vyberte buď **časová osa** zobrazení nebo **nakreslit volání** zobrazení.  
   
 ### <a name="filtering-events"></a>Filtrování událostí  
  Můžete použít vyhledávací pole – nachází v pravém horním rohu **seznam událostí grafiky** okno – k filtrování seznamu událostí zahrnout pouze události, jejichž názvy obsahují určitá klíčová slova. Můžete zadat jeden klíčová slova, jako jsou `Vertex`– jak je znázorněno na předchozím obrázku – nebo více klíčových slov s využitím středníkem oddělený seznam podobný `Draw;Primitive`– což odpovídá události, které mají buď `Draw` nebo `Primitive` v jejich názvy. Hledání jsou citlivé na prázdné znaky, například `VSSet` a `VS Set` jsou různé hledání – proto ujistěte se, že do formuláře hledání pečlivě.  

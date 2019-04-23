@@ -14,12 +14,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 67b3034ee1d651289c167b894b0417d11b5995e8
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 52a2d7c239c9a4f3508f4bdb2077928e44ff802a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59653083"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107037"
 ---
 # <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>Návod: Vytvoření datové služby WCF s WPF a Entity Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,22 +28,22 @@ Tento návod ukazuje, jak vytvořit jednoduchou [!INCLUDE[ss_data_service](../in
   
  V tomto návodu se dozvíte, jak:  
   
--   Vytvoření webové aplikace na hostitele [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)].  
+- Vytvoření webové aplikace na hostitele [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)].  
   
--   Vytvoření [!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)] , který představuje tabulku Customers v databázi Northwind.  
+- Vytvoření [!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)] , který představuje tabulku Customers v databázi Northwind.  
   
--   Vytvoření [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)].  
+- Vytvoření [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)].  
   
--   Vytvořit klientskou aplikaci a přidejte odkaz na [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)].  
+- Vytvořit klientskou aplikaci a přidejte odkaz na [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)].  
   
--   Vytvořit datovou vazbu na službu a vygenerovat uživatelské rozhraní  
+- Vytvořit datovou vazbu na službu a vygenerovat uživatelské rozhraní  
   
--   Volitelně přidat do aplikace možnosti filtrování  
+- Volitelně přidat do aplikace možnosti filtrování  
   
 ## <a name="prerequisites"></a>Požadavky  
  K dokončení tohoto návodu budete potřebovat následující komponenty:  
   
--   Ukázkovou databázi Northwind  
+- Ukázkovou databázi Northwind  
   
      Pokud tuto databázi na vašem vývojovém počítači nemáte, můžete sadu stáhnout z [Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkID=98088). Pokyny najdete v tématu [Downloading Sample Databases](http://msdn.microsoft.com/library/ef9d69a1-9461-43fe-94bb-7c836754bcb5).  
   
@@ -80,11 +80,11 @@ Tento návod ukazuje, jak vytvořit jednoduchou [!INCLUDE[ss_data_service](../in
   
 5. Na **vyberte datové připojení** stránce, proveďte jednu z následujících kroků:  
   
-   -   Pokud je datové připojení k ukázkové databázi Northwind k dispozici v rozevíracím seznamu, vyberte je.  
+   - Pokud je datové připojení k ukázkové databázi Northwind k dispozici v rozevíracím seznamu, vyberte je.  
   
         -nebo-  
   
-   -   Zvolte **nové připojení** tlačítko a nakonfigurujte nové datové připojení. Další informace najdete v tématu [přidat nové připojení](../data-tools/add-new-connections.md).  
+   - Zvolte **nové připojení** tlačítko a nakonfigurujte nové datové připojení. Další informace najdete v tématu [přidat nové připojení](../data-tools/add-new-connections.md).  
   
 6. Pokud databáze vyžaduje heslo, zvolte **Ano, zahrnout citlivá data v připojovacím řetězci** přepínač a klikněte na tlačítko **Další** tlačítko.  
   
@@ -236,11 +236,11 @@ Tento návod ukazuje, jak vytvořit jednoduchou [!INCLUDE[ss_data_service](../in
   
 #### <a name="to-add-filtering-by-city"></a>Přidání filtrování podle města  
   
-1.  V **Průzkumníka řešení**, otevřete místní nabídku **Form1.vb** nebo **Form1.cs** uzlu a zvolte **otevřete**.  
+1. V **Průzkumníka řešení**, otevřete místní nabídku **Form1.vb** nebo **Form1.cs** uzlu a zvolte **otevřete**.  
   
-2.  Přidat <xref:System.Windows.Forms.TextBox> ovládacího prvku a <xref:System.Windows.Forms.Button> ovládacího prvku **nástrojů** do formuláře.  
+2. Přidat <xref:System.Windows.Forms.TextBox> ovládacího prvku a <xref:System.Windows.Forms.Button> ovládacího prvku **nástrojů** do formuláře.  
   
-3.  Otevřete místní nabídku pro <xref:System.Windows.Forms.Button> řídit a zvolte **zobrazit kód**a potom přidejte následující kód `Button1_Click` obslužné rutiny události:  
+3. Otevřete místní nabídku pro <xref:System.Windows.Forms.Button> řídit a zvolte **zobrazit kód**a potom přidejte následující kód `Button1_Click` obslužné rutiny události:  
   
     ```vb  
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click  
@@ -269,11 +269,11 @@ Tento návod ukazuje, jak vytvořit jednoduchou [!INCLUDE[ss_data_service](../in
     }  
     ```  
   
-4.  V předcházejícím kódu nahraďte `http://localhost:53161/NorthwindCustomers.svc` adresou URL z `Form1_Load` obslužné rutiny události.  
+4. V předcházejícím kódu nahraďte `http://localhost:53161/NorthwindCustomers.svc` adresou URL z `Form1_Load` obslužné rutiny události.  
   
-5.  V panelu nabídky zvolte **ladění**, **spustit ladění** ke spuštění aplikace.  
+5. V panelu nabídky zvolte **ladění**, **spustit ladění** ke spuštění aplikace.  
   
-6.  V textovém poli zadejte **Londýn**a pak klikněte na tlačítko. Zobrazí se pouze zákazníci z Londýna.  
+6. V textovém poli zadejte **Londýn**a pak klikněte na tlačítko. Zobrazí se pouze zákazníci z Londýna.  
   
 ## <a name="see-also"></a>Viz také  
  [Služby Windows Communication Foundation a služby WCF Data Services v sadě Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)   

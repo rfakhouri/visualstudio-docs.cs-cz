@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5457c0b4e7b355c130fedbdbba456b550a35f1ee
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 749441e960363fe208e3ad67288180c1935db35f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56633249"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60084814"
 ---
 # <a name="image-library-viewer"></a>Prohlížeč knihovny obrázků
 Nástroj Prohlížeč knihovny obrázků Visual Studio můžete načíst a vyhledávat image manifestů, které uživateli umožňují s nimi manipulovat stejným způsobem, který by sady Visual Studio. Uživatel může změnit na pozadí, velikosti, DPI, vysoký kontrast a další nastavení. Tento nástroj také zobrazuje informace o načítání pro každou manifestu obrázků a zobrazí informace o zdroji pro každý obrázek v manifestu obrázků. Tento nástroj je užitečný pro:
@@ -138,7 +138,7 @@ Nástroj Prohlížeč knihovny obrázků Visual Studio můžete načíst a vyhle
 ||||
 |-|-|-|
 |**Element**|**Atributy (všechny povinné)**|**Definice**|
-|\<Velikost >|Hodnota|Zdroj se použije pro Image dané velikosti (v jednotkách zařízení). Image bude čtvereček.|
+|\<Velikost >|Value|Zdroj se použije pro Image dané velikosti (v jednotkách zařízení). Image bude čtvereček.|
 |\<SizeRange >|MinSize MaxSize|Zdroj se použije pro obrázky z MinSize pro parametr MaxSize (v jednotkách zařízení) (včetně). Image bude čtvereček.|
 |\<Dimenze >|Šířka, výška|Zdroj se použije pro Image dané šířky a výšky (v jednotkách zařízení).|
 |\<DimensionRange >|Hodnota MinWidth MinHeight,<br /><br /> MaxWidth MaxHeight|Zdroj se použije pro obrázků ze minimální šířky a výšky na maximální šířku nebo výšku (v jednotkách zařízení) (včetně).|
@@ -152,7 +152,7 @@ Nástroj Prohlížeč knihovny obrázků Visual Studio můžete načíst a vyhle
 |||
 |-|-|
 |**Atribut**|**Definice**|
-|Typ|[Povinné] Typ nativního prostředku, XAML nebo PNG|
+|Type|[Povinné] Typ nativního prostředku, XAML nebo PNG|
 |ID|[Povinné] Část celého čísla ID nativní prostředky|
 
  **Ovládací prvek ImageList**
@@ -224,9 +224,9 @@ Nástroj Prohlížeč knihovny obrázků Visual Studio můžete načíst a vyhle
 
 ## <a name="notes"></a>Poznámky
 
--   Ve výchozím nastavení nástroj přetáhne v několika manifesty bitové kopie k dispozici v instalačním adresáři sady Visual Studio. Je pouze jeden, který má veřejně použitelné monikery **Microsoft.VisualStudio.ImageCatalog** manifestu. Identifikátor GUID: ae27a6b0-e345-4288-96df-5eaf394ee369 (proveďte **není** přepsat tento identifikátor GUID ve vlastním manifestu) typu: KnownMonikers
+- Ve výchozím nastavení nástroj přetáhne v několika manifesty bitové kopie k dispozici v instalačním adresáři sady Visual Studio. Je pouze jeden, který má veřejně použitelné monikery **Microsoft.VisualStudio.ImageCatalog** manifestu. Identifikátor GUID: ae27a6b0-e345-4288-96df-5eaf394ee369 (proveďte **není** přepsat tento identifikátor GUID ve vlastním manifestu) typu: KnownMonikers
 
--   Nástroj se pokusí při spuštění načíst všechny manifesty bitové kopie, které najde, tak může trvat několik sekund, aplikace bude ve skutečnosti zobrazovat. Také může být pomalý nebo že při načítání manifesty.
+- Nástroj se pokusí při spuštění načíst všechny manifesty bitové kopie, které najde, tak může trvat několik sekund, aplikace bude ve skutečnosti zobrazovat. Také může být pomalý nebo že při načítání manifesty.
 
 ## <a name="sample-output"></a>Vzorový výstup
  Tento nástroj negeneruje žádný výstup.

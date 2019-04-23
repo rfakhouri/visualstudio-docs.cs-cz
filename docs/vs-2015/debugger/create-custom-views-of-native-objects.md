@@ -16,12 +16,12 @@ caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6a863c0b393da0934c0f3ceb3b36084b953a81f3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e44e8166fb4f03f28d96203dc7efc09d3913224c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54756402"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60086192"
 ---
 # <a name="create-custom-views-of-native-objects"></a>Vytváření vlastních zobrazení nativních objektů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,10 +34,10 @@ Rozhraní Visual Studio Natvis umožňuje přizpůsobit způsob, jakým Visual S
 >  Rozhraní Natvis nelze použít pro vizualizace při:  
 > 
 > - Ladění projektu C++ Windows klasické pracovní plochy s nastaveným typem ladicí program **smíšené**.  
->   -   Provádíte ladění ve smíšeném režimu v aplikaci klasické pracovní plochy Windows v spravovaný režim kompatibility (**nástroje / Možnosti / ladění / obecné / použít spravovaný režim kompatibility**).  
->   -   Ladění aplikací pro stolní počítače Windows v režimu kompatibility nativní (**nástroje / Možnosti / ladění / obecné a použít nativní režim kompatibility**).  
+>   - Provádíte ladění ve smíšeném režimu v aplikaci klasické pracovní plochy Windows v spravovaný režim kompatibility (**nástroje / Možnosti / ladění / obecné / použít spravovaný režim kompatibility**).  
+>   - Ladění aplikací pro stolní počítače Windows v režimu kompatibility nativní (**nástroje / Možnosti / ladění / obecné a použít nativní režim kompatibility**).  
 
-##  <a name="BKMK_Why_create_visualizations_"></a> Proč vytvářet vizualizace Natvis?  
+## <a name="BKMK_Why_create_visualizations_"></a> Proč vytvářet vizualizace Natvis?  
  Můžete použít rozhraní Natvis vytvořit pravidla vizualizace pro typy, že které vytvoříte, takže vývojáři mohou zobrazit snadno během ladění.  
 
  Například následující obrázek ukazuje proměnné typu [Windows::UI::Xaml::Controls::TextBox](http://go.microsoft.com/fwlink/?LinkId=258422) , která se zobrazí v ladicím programu bez jakékoli vlastní vizualizace.  
@@ -50,7 +50,7 @@ Rozhraní Visual Studio Natvis umožňuje přizpůsobit způsob, jakým Visual S
 
  ![TextBox data using visualizer](../debugger/media/dbg-natvis-textbox-visualizer.png "DBG_NATVIS_TextBox_Visualizer")  
 
-##  <a name="BKMK_Using_Natvis_files"></a> Použití souborů Natvis  
+## <a name="BKMK_Using_Natvis_files"></a> Použití souborů Natvis  
  .natvis soubory jsou soubory XML s příponou .natvis. Schéma je definována v **%VSINSTALLDIR%\Xml\Schemas\natvis.xsd**.  
 
  Základní struktura souboru .natvis je jeden nebo více `Type` prvků, kde každý `Type` představuje zadání vizualizace pro typ, jehož plně kvalifikovaný název je zadán v elementu `Name` atribut.  
@@ -82,18 +82,18 @@ Rozhraní Visual Studio Natvis umožňuje přizpůsobit způsob, jakým Visual S
 
  Soubory Natvis, které jsou načteny z příponou .pdb platí pouze pro typy z modulu, na který odkazuje do souboru pdb. Například, pokud Module1.pdb definuje položku pro typ s názvem `Test`, tato položka jedině pro **Test** třídy v Module1.dll. Pokud se jiný modul také definuje třídu s názvem **Test**, Module1.pdb vaší položky natvis se nevztahuje k němu.  
 
-##  <a name="BKMK_natvis_location"></a> Nasazení .natvis soubory  
+## <a name="BKMK_natvis_location"></a> Nasazení .natvis soubory  
  Pokud váš soubor .natvis platí pouze pro typy, které vytvoříte v projektu sady Visual Studio, nemusíte dělat nic; .natvis je součástí pdb. Můžete, ale přidat soubory .natvis uživatelský adresář nebo systémový adresář Pokud chcete použít pro více projektů.  
 
  Pořadí, ve které .natvis soubory jsou vyhodnocovány vypadá takto:  
 
-1.  soubory .natvis vložený do pdb, který ladíte (pokud existuje soubor stejného názvu v načteném projektu)  
+1. soubory .natvis vložený do pdb, který ladíte (pokud existuje soubor stejného názvu v načteném projektu)  
 
-2.  soubory .natvis, které jsou součástí načtené projekty C++ nebo položku nejvyšší úrovně řešení. To zahrnuje všechny načtené projekty C++, včetně knihoven tříd, ale nezahrnuje projekty jazyků (například nelze načíst soubor .natvis z projektu v jazyce C#). Položky řešení spustitelné projekty, používejte k hostování soubory .natvis, které ještě nejsou k dispozici v .pdb, protože není k dispozici žádný projekt C++.  
+2. soubory .natvis, které jsou součástí načtené projekty C++ nebo položku nejvyšší úrovně řešení. To zahrnuje všechny načtené projekty C++, včetně knihoven tříd, ale nezahrnuje projekty jazyků (například nelze načíst soubor .natvis z projektu v jazyce C#). Položky řešení spustitelné projekty, používejte k hostování soubory .natvis, které ještě nejsou k dispozici v .pdb, protože není k dispozici žádný projekt C++.  
 
-3.  Adresář uživatelská natvis (**%USERPROFILE%\My 2015\Visualizers Documents\Visual Studio**  
+3. Adresář uživatelská natvis (**%USERPROFILE%\My 2015\Visualizers Documents\Visual Studio**  
 
-4.  Adresář systémová Natvis (**%VSINSTALLDIR%\Common7\Packages\Debugger\Visualizers**). To je, kde se zkopírují soubory .natvis, které jsou nainstalované s Visual Studio. Do tohoto adresáře také můžete přidat další soubory, pokud máte oprávnění správce.  
+4. Adresář systémová Natvis (**%VSINSTALLDIR%\Common7\Packages\Debugger\Visualizers**). To je, kde se zkopírují soubory .natvis, které jsou nainstalované s Visual Studio. Do tohoto adresáře také můžete přidat další soubory, pokud máte oprávnění správce.  
 
 ## <a name="modifying-natvis-files-while-debugging"></a>Úprava .natvis soubory během ladění  
  Při ladění projektu, ve které je součástí můžete upravit soubor .natvis v integrovaném vývojovém prostředí. Otevřete soubor v integrovaném vývojovém prostředí (pomocí stejné instance sady Visual Studio, který právě ladíte s), upravte ho a uložte ho. Poté, co je soubor uložen, **Watch** a **lokální** windows by aktualizovat tak, aby odrážely změny. Pokud upravíte soubor .natvis mimo rozhraní IDE, změny se projeví automaticky. Aktualizace systému windows, můžete si vyzkoušet **.natvisreload** v příkaz **Watch** okna. To způsobí, že změny se projeví bez restartování relace ladění.  
@@ -104,7 +104,7 @@ Rozhraní Visual Studio Natvis umožňuje přizpůsobit způsob, jakým Visual S
 
  Použití **.natvisreload** příkaz když souboru natvis provádíte upgrade na novější verzi (například pokud se změnami do správy zdrojového kódu a chcete se získaly nejnovější změny tohoto někdo jinak provedené v souboru). Doporučujeme, abyste upravili soubory natvis xml editoru sady Visual Studio.  
 
-##  <a name="BKMK_Expressions_and_formatting"></a> Výrazy a formátování  
+## <a name="BKMK_Expressions_and_formatting"></a> Výrazy a formátování  
  Vizualizace Natvis používají výrazy jazyka C++ k určení položek dat k zobrazení. Kromě vylepšení a omezení výrazů jazyka C++ v ladicím programu, které jsou popsány v [kontextu – operátor (C++)](../debugger/context-operator-cpp.md), je třeba si uvědomit následující rozdíly:  
 
 - Výrazy Natvis jsou vyhodnocovány v kontextu objektu, který je právě vizualizován, není aktuální rámec zásobníku. Například, pokud používáte `x` v rámci výrazu Natvis, to se vztahuje na pole s názvem `x` v objektu, který je právě vizualizován, nikoli na místní proměnnou s názvem `x` ve funkci právě probíhá. Lokální proměnné ve výrazech Natvis, nelze přistupovat, i když můžete přístup ke globálním proměnným.  
@@ -134,12 +134,12 @@ Rozhraní Visual Studio Natvis umožňuje přizpůsobit způsob, jakým Visual S
 
  ![Okno kukátka s jednoduchým](../debugger/media/watch-simpleview.png "Watch SimpleView")  
 
-##  <a name="BKMK_Diagnosing_Natvis_errors"></a> Diagnostikování chyb Natvis  
+## <a name="BKMK_Diagnosing_Natvis_errors"></a> Diagnostikování chyb Natvis  
  Diagnostika Natvis můžete použít k řešení potíží s syntaxe a chyby analýzy. Pokud ladicí program narazí na chyby v položce vizualizace, ignoruje chyby a buď zobrazí typ v syrové podobě nebo zvolí jinou vhodnou vizualizaci. Abyste pochopili, proč některá položka vizualizace je ignorována a zjistit, jaké jsou základní chyby, můžete zapnout Diagnostika Natvis **nástroje / Možnosti / ladění / výstupní okno / Diagnostika Natvis zprávy (pouze C++)** možnost. Chyby se zobrazují v **výstup** okna.  
 
-##  <a name="BKMK_Syntax_reference"></a> Referenční příručka syntaxe Natvis  
+## <a name="BKMK_Syntax_reference"></a> Referenční příručka syntaxe Natvis  
 
-###  <a name="BKMK_AutoVisualizer"></a> AutoVisualizer – element  
+### <a name="BKMK_AutoVisualizer"></a> AutoVisualizer – element  
  `AutoVisualizer` Element je kořenový uzel souboru .natvis a obsahuje obor názvů `xmlns:` atribut.  
 
 ```xml  
@@ -150,7 +150,7 @@ Rozhraní Visual Studio Natvis umožňuje přizpůsobit způsob, jakým Visual S
 </AutoVisualizer>  
 ```  
 
-###  <a name="BKMK_Type"></a> Type element  
+### <a name="BKMK_Type"></a> Type element  
  Základní typ vypadá takto:  
 
 ```xml  
@@ -184,7 +184,7 @@ Rozhraní Visual Studio Natvis umožňuje přizpůsobit způsob, jakým Visual S
 
  Všimněte si, že parametry šablony lze odkazovat v položce vizualizace pomocí maker $t1, $t2 a tak dále. Příklady těchto maker naleznete v tématu .natvis soubory dodané s aplikací Visual Studio.  
 
-####  <a name="BKMK_Visualizer_type_matching"></a> Porovnávání typu vizualizéru  
+#### <a name="BKMK_Visualizer_type_matching"></a> Porovnávání typu vizualizéru  
  Pokud záznam vizualizace selže k ověření, použije se další dostupná vizualizace.  
 
 #### <a name="inheritable-attribute"></a>Odvoditelný atribut  
@@ -223,7 +223,7 @@ Rozhraní Visual Studio Natvis umožňuje přizpůsobit způsob, jakým Visual S
 </Type>  
 ```  
 
-####  <a name="BKMK_Versioning"></a> Version element  
+#### <a name="BKMK_Versioning"></a> Version element  
  Použití `Version` můžete – element pro určení rozsahu vizualizace určitých modulů a jejich verzí, tak aby byly kolize názvů minimalizovány a různé vizualizace lze použít pro různé verze typů. Příklad:  
 
 ```xml  
@@ -250,7 +250,7 @@ Rozhraní Visual Studio Natvis umožňuje přizpůsobit způsob, jakým Visual S
 </Type>  
 ```  
 
-###  <a name="BKMK_Condition_attribute"></a> Atribut podmínky  
+### <a name="BKMK_Condition_attribute"></a> Atribut podmínky  
  Volitelný `Condition` atribut je k dispozici pro mnoho prvků vizualizace a určuje, kdy se použije pravidlo vizualizace. Pokud má výraz uvnitř atributu podmínky se překládá na `false`, pak pravidlo vizualizace určené elementem nebude použito. Pokud je vyhodnocen jako true, nebo pokud neexistuje žádné `Condition` pak použijí pravidla vizualizace pro typ atributu. Můžete použít tento atribut pro `if-else` logiku v položkách vizualizace. Například následující vizualizace má dvě `DisplayString` prvky pro typ inteligentního ukazatele:  
 
 ```xml  
@@ -287,7 +287,7 @@ Rozhraní Visual Studio Natvis umožňuje přizpůsobit způsob, jakým Visual S
 
  Můžete použít `IncludeView` a `ExcludeView` atributy u typů, stejně jako u jednotlivých členů.  
 
-###  <a name="BKMK_DisplayString"></a> Element DisplayString  
+### <a name="BKMK_DisplayString"></a> Element DisplayString  
  A `DisplayString` prvek určuje řetězec zobrazený jako hodnotu proměnné. Přijímá libovolné řetězce smíšené s výrazy. Vše uvnitř složených závorek je interpretováno jako výraz. Například `DisplayString` položky jako je tato:  
 
 ```xml  
@@ -306,7 +306,7 @@ Rozhraní Visual Studio Natvis umožňuje přizpůsobit způsob, jakým Visual S
 > [!NOTE]
 >  `DisplayString` Element je jediným prvkem, který přijímá libovolné řetězce a syntaxi složených závorek. Všechny ostatní prvky vizualizace přijímají pouze výrazy, které jsou vyhodnocovány pomocí ladicího programu.  
 
-###  <a name="BKMK_StringView"></a> StringView  
+### <a name="BKMK_StringView"></a> StringView  
  `StringView` Element definuje výraz, jehož hodnota bude zaslána zabudovanému vizualizátoru textu. Předpokládejme například, že máme následující vizualizaci `ATL::CStringT` typu:  
 
 ```xml  
@@ -338,16 +338,16 @@ Rozhraní Visual Studio Natvis umožňuje přizpůsobit způsob, jakým Visual S
 > [!NOTE]
 >  Všimněte si, že výraz `{m_pszData,su}` obsahuje specifikátor formátu jazyka C++ `su` k zobrazení hodnoty jako řetězce Unicode. Zobrazit [specifikátory formátu v jazyce C++](../debugger/format-specifiers-in-cpp.md) Další informace.  
 
-###  <a name="BKMK_Expand"></a> Rozbalte položku  
+### <a name="BKMK_Expand"></a> Rozbalte položku  
  `Expand` Uzel slouží k úpravě dceřiných vizualizovaných typů když je uživatel rozbalí v oknech proměnných. Přijímá seznam podřízených uzlů, které určují podřízené prvky.  
 
  `Expand` Uzel je volitelné.  
 
--   Pokud `Expand` uzel není zadané v položce vizualizace, se používají výchozí pravidla rozšíření sady Visual Studio.  
+- Pokud `Expand` uzel není zadané v položce vizualizace, se používají výchozí pravidla rozšíření sady Visual Studio.  
 
--   Pokud `Expand` uzel, který je zadán bez podřízených uzlů pod ním, typ nesmí být v oknech ladicího programu rozšiřitelný.  
+- Pokud `Expand` uzel, který je zadán bez podřízených uzlů pod ním, typ nesmí být v oknech ladicího programu rozšiřitelný.  
 
-####  <a name="BKMK_Item_expansion"></a> Rozšiřovací bod  
+#### <a name="BKMK_Item_expansion"></a> Rozšiřovací bod  
  `Item` Element je nejzákladnější a nejběžnější prvek, který se má použít v `Expand` uzlu. `Item` definuje jeden podřízený prvek. Předpokládejme například, že máte `CRect` třídy s `top`, `left`, `right`, a `bottom` jako polí a následující položku vizualizace:  
 
 ```xml  
@@ -370,7 +370,7 @@ Rozhraní Visual Studio Natvis umožňuje přizpůsobit způsob, jakým Visual S
 > [!NOTE]
 >  Pokud výraz prvku položky odkazuje na komplexní typ, `Item` samotný uzel je rozšiřitelné.  
 
-####  <a name="BKMK_ArrayItems_expansion"></a> Rozšíření ArrayItems  
+#### <a name="BKMK_ArrayItems_expansion"></a> Rozšíření ArrayItems  
  Použití `ArrayItems` uzel ladicí program sady Visual Studio při interpretaci typu jako pole a zobrazení jeho jednotlivých prvků. Vizualizace pro `std::vector` je typickým příkladem:  
 
 ```xml  
@@ -426,7 +426,7 @@ Rozhraní Visual Studio Natvis umožňuje přizpůsobit způsob, jakým Visual S
 
  ![Dvě jednorozměrná pole s rozšíření ArrayItems](../debugger/media/dbg-natvis-expand-arrayitems-2d.png "DBG_NATVIS_Expand_ArrayItems_2D")  
 
-####  <a name="BKMK_IndexListItems_expansion"></a> Rozšíření IndexListItems  
+#### <a name="BKMK_IndexListItems_expansion"></a> Rozšíření IndexListItems  
  Můžete použít `ArrayItems` rozšíření, pouze pokud jsou prvky pole rozloženy souvisle v paměti. Ladicí program získá další prvek jednoduchým zvýšením jeho ukazatele na aktuální prvek. Na podporu případů, kdy potřebujete pracovat s indexem na uzel hodnoty `IndexListItems` uzly můžete použít. Zde je vizualizace pomocí `IndexListItems` uzlu:  
 
 ```xml  
@@ -447,7 +447,7 @@ Rozhraní Visual Studio Natvis umožňuje přizpůsobit způsob, jakým Visual S
 
  Jediným rozdílem mezi `ArrayItems` a `IndexListItems` je, že `ValueNode` očekává úplný výraz, který i<sup>th</sup> element s implicitním `$i` parametru.  
 
-####  <a name="BKMK_LinkedListItems_expansion"></a> Rozšíření LinkedListItems  
+#### <a name="BKMK_LinkedListItems_expansion"></a> Rozšíření LinkedListItems  
  Pokud vizualizovaný typ představuje propojený seznam, ladicí program může zobrazit jeho podřízené položky pomocí `LinkedListItems` uzlu. Zde je vizualizace pro `CAtlList` zadejte pomocí této funkce:  
 
 ```xml  
@@ -468,9 +468,9 @@ Rozhraní Visual Studio Natvis umožňuje přizpůsobit způsob, jakým Visual S
 
  `Size` Element označuje délku seznamu. `HeadPointer` odkazuje na první prvek `NextPointer` odkazuje na další prvek a `ValueNode` odkazuje na hodnotu položky.  
 
--   `NextPointer` a `ValueNode` výrazy jsou vyhodnocovány v kontextu uzlu prvku propojeného seznamu a nikoli typu nadřazeného seznamu. V příkladu výše `CAtlList` má `CNode` třídy (součástí `atlcoll.h`), který představuje uzel propojeného seznamu. `m_pNext` a `m_element` jsou pole této `CNode` třídy a ne `CAtlList` třídy.  
+- `NextPointer` a `ValueNode` výrazy jsou vyhodnocovány v kontextu uzlu prvku propojeného seznamu a nikoli typu nadřazeného seznamu. V příkladu výše `CAtlList` má `CNode` třídy (součástí `atlcoll.h`), který představuje uzel propojeného seznamu. `m_pNext` a `m_element` jsou pole této `CNode` třídy a ne `CAtlList` třídy.  
 
--   `ValueNode` Může být ponechán prázdný nebo obsahovat `this` odkazovat na samotný uzel propojeného seznamu.  
+- `ValueNode` Může být ponechán prázdný nebo obsahovat `this` odkazovat na samotný uzel propojeného seznamu.  
 
 #### <a name="customlistitems-expansion"></a>CustomListItems rozšíření  
  `CustomListItems` Rozšíření umožňuje psát vlastní logiku procházení datové struktury, jako například zatřiďovací tabulku. Měli byste použít `CustomListItems` k vizualizaci dat lze vyjádřit pomocí výrazů C++ struktury, které všechno, co potřebujete k vyhodnocení, ale nehodí poměrně tvaru pro `ArrayItems`, `TreeItems`, nebo `LinkedListItems.`  
@@ -506,7 +506,7 @@ Rozhraní Visual Studio Natvis umožňuje přizpůsobit způsob, jakým Visual S
 </Type>  
 ```  
 
-####  <a name="BKMK_TreeItems_expansion"></a> Rozšíření TreeItems  
+#### <a name="BKMK_TreeItems_expansion"></a> Rozšíření TreeItems  
  Pokud vizualizovaný typ představuje strom, ladicí program může strom procházet a zobrazit jeho podřízené položky pomocí `TreeItems` uzlu. Zde je vizualizace pro `std::map` zadejte pomocí této funkce:  
 
 ```xml  
@@ -529,7 +529,7 @@ Rozhraní Visual Studio Natvis umožňuje přizpůsobit způsob, jakým Visual S
 
  Syntaxe je velmi podobný `LinkedListItems` uzlu. `LeftPointer`, `RightPointer`, a `ValueNode` jsou vyhodnocovány v kontextu třídy uzlu stromu a `ValueNode` může být ponechán prázdný nebo obsahovat `this` odkazovat na samotný uzel stromu.  
 
-####  <a name="BKMK_ExpandedItem_expansion"></a> Rozšíření ExpandedItem  
+#### <a name="BKMK_ExpandedItem_expansion"></a> Rozšíření ExpandedItem  
  `ExpandedItem` Elementu lze použít ke generování agregovaných podřízených zobrazení zobrazením vlastností základních tříd nebo datových členů, jako kdyby byly podřízené prvky typu visualized. Zadaný výraz je vyhodnocen a podřízené uzly výsledku jsou připojeny k seznamu podřízených vizualizovaného typu. Předpokládejme například, že máme typ inteligentního ukazatele `auto_ptr<vector<int>>` což obvykle se zobrazí jako:  
 
  ![auto&#95;ptr&#60;vector&#60;int&#62;&#62; default expansion](../debugger/media/dbg-natvis-expand-expandeditem-default.png "DBG_NATVIS_Expand_ExpandedItem_Default")  
@@ -561,7 +561,7 @@ Rozhraní Visual Studio Natvis umožňuje přizpůsobit způsob, jakým Visual S
 
 ```  
 
-####  <a name="BKMK_Synthetic_Item_expansion"></a> Syntetické rozšíření položky  
+#### <a name="BKMK_Synthetic_Item_expansion"></a> Syntetické rozšíření položky  
  Kde `ExpandedItem` element obsahuje plošší zobrazení dat odstraněním hierarchií, `Synthetic` uzel provádí opak. Umožňuje vytvořit umělý podřízený prvek (tedy podřízený element, který není výsledkem výrazu). Tento podřízený element může obsahovat vlastní podřízené prvky. V následujícím příkladu vizualizace pro `Concurrency::array` typ používá `Synthetic` uzel k zobrazení diagnostické zprávy uživateli:  
 
 ```xml  
@@ -584,7 +584,7 @@ Rozhraní Visual Studio Natvis umožňuje přizpůsobit způsob, jakým Visual S
 
  ![Concurrency::Array s Sythentic element expansio](../debugger/media/dbg-natvis-expand-synthetic.png "DBG_NATVIS_Expand_Synthetic")  
 
-###  <a name="BKMK_HResult"></a> Hodnota HResult  
+### <a name="BKMK_HResult"></a> Hodnota HResult  
  `HResult` Element umožňuje přizpůsobit informace, které se zobrazí pro HRESULT v oknech ladicího programu. `HRValue` Element musí obsahovat 32bitovou hodnotu HRESULT, kterou chcete upravit. `HRDescription` Prvek obsahuje informace, které se zobrazí v ladicím programu.  
 
 ```  
@@ -595,7 +595,7 @@ Rozhraní Visual Studio Natvis umožňuje přizpůsobit způsob, jakým Visual S
 </HResult>  
 ```  
 
-###  <a name="BKMK_UIVisualizer"></a> UIVisualizer  
+### <a name="BKMK_UIVisualizer"></a> UIVisualizer  
  A `UIVisualizer` prvek registruje modul plug-in grafického vizualizéru s ladicím programem. Modul plug-in grafického vizualizéru vytvoří dialogové okno nebo jiné rozhraní pro zobrazení proměnné nebo objektu způsobem, který je vhodný k jeho datovému typu. Modul plug-in vizualizéru musí být vytvořen jako [VSPackage](../extensibility/internals/vspackages.md) a je třeba zpřístupnit služby, které mohou být spotřebovány ladicím programem. Soubor .natvis obsahuje registrační informace pro modul plug-in, například jeho název, identifikátor GUID, vystavené služby a také typy, které lze vizualizovat.  
 
  Tady je příklad prvku UIVisualizer:  

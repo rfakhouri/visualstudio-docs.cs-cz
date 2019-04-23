@@ -14,19 +14,19 @@ caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d30c45c0601b6e291604275fdc9cfc4f3b5def6d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e093abd5e836bcb7ee236979c00d574a07ecfd3d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54763921"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109516"
 ---
 # <a name="getting-started-with-the-debugger"></a>Začínáme s ladicím programem
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Ladicí program sady Visual Studio je snadno použitelné v jakémkoli jazyce. Tady vám ukážeme, jak ladit jednoduchý program C#, ale stejný postup můžete použít ke kódu v jiných jazycích, jako je například C++ a JavaScript.  
   
-##  <a name="BKMK_Start_debugging_a_VS_project"></a> Ladění projektu základního jazyka C#  
+## <a name="BKMK_Start_debugging_a_VS_project"></a> Ladění projektu základního jazyka C#  
  Začněme jednoduchou aplikaci konzoly C# (**soubor / nový / Project**a pak vyberte **Visual C#** a pak vyberte **konzolovou aplikaci**). Pokud jste nikdy nepracovali s Visual Studio před, naleznete v tématu [názorný postup: Vytvoření jednoduché aplikace](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md). **Hlavní** metoda právě přičte 1 k celočíselná proměnná 10krát a vytiskne výsledek do konzoly:  
   
 ```csharp  
@@ -51,7 +51,7 @@ static void Main(string[] args)
   
  Další informace o zarážkách najdete v tématu [pomocí zarážek](../debugger/using-breakpoints.md).  
   
-##  <a name="BKMK_Inspect_Variables"></a> Kontrolovat proměnné  
+## <a name="BKMK_Inspect_Variables"></a> Kontrolovat proměnné  
  Ladění často zahrnuje hledání proměnné, které neobsahují hodnoty, které očekáváte, že v určitém místě. Vám ukážeme některé ze způsobů, můžete kontrolovat proměnné.  
   
  Znovu spusťte ladění. Provádění zastaví před `Console.WriteLine` spustí kód. Může způsobit to provést pomocí procházení dopředu (klikněte na tlačítko **ladění / krok přes** nebo **F10**). V tomto případě může zvolení **Krokovat s vnořením** (**F11**) a mohli stejný výsledek; dále vysvětlíme rozdíl. Řádek s poslední složená závorka metody by měly obracejí žlutou. Podívejte se na okno konzoly. Měli byste vidět **10**.  

@@ -125,12 +125,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 14ea474200875b5667962895deadd6479b44c391
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: bda668e457cd144d868680f2dc009580c34ea81b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55923927"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109862"
 ---
 # <a name="annotating-function-parameters-and-return-values"></a>Zadávání poznámek k parametrům funkcí a návratovým hodnotám
 Tento článek popisuje typické použití poznámek pro jednoduchou funkci parametry – skaláry a ukazatele na třídy a struktury – a většinou druhů vyrovnávací paměti.  Tento článek také popisuje běžné vzory využití pro poznámky. Další poznámky, které se vztahují na funkce, najdete v části [zadávání poznámek k chování funkcí](../code-quality/annotating-function-behavior.md)
@@ -140,27 +140,27 @@ Tento článek popisuje typické použití poznámek pro jednoduchou funkci para
 
  **Poznámky a popisy**
 
--   `_In_`
+- `_In_`
 
      Označí vstupní parametry, které jsou skaláry, struktury, odkazy na struktury a podobně.  Explicitně může být použita na jednoduché skaláry.  Parametr musí být platné v předběžné stavu a se nezmění.
 
--   `_Out_`
+- `_Out_`
 
      Označí výstupní parametry, které jsou skaláry, struktury, odkazy na struktury a podobně.  Nevztahují to na objekt, který nemůže vracet hodnotu – například skaláru, který je předán podle hodnoty.  Parametr nemusí být platné v předběžné stavu, ale musí být platný po stavu.
 
--   `_Inout_`
+- `_Inout_`
 
      Označí parametr, který se změní podle funkce.  Musí být ve stavu před a po stavu platný, ale předpokládá, že je před a po volání mají různé hodnoty. Musí vyrovnat upravitelné hodnoty.
 
--   `_In_z_`
+- `_In_z_`
 
      Ukazatel na řetězec zakončený hodnotou null, který se používá jako vstup.  V předběžné stavu musí být platný řetězec.  Varianty `PSTR`, které již mají správnou poznámky, jsou upřednostňované.
 
--   `_Inout_z_`
+- `_Inout_z_`
 
      Ukazatel na pole znaků zakončených znakem null, který bude změněn.  Musí být platná před a po volání, ale hodnoty se předpokládá, že jste změnili.  Mohou být přesunuty ukončovacího znaku null, ale můžete získat přístup na pouze elementy až původní ukončovacího znaku null.
 
--   `_In_reads_(s)`
+- `_In_reads_(s)`
 
      `_In_reads_bytes_(s)`
 
@@ -168,15 +168,15 @@ Tento článek popisuje typické použití poznámek pro jednoduchou funkci para
 
      `_bytes_` Variant poskytuje velikost v bajtech, ne prvky. Používejte pouze v případě, že velikost nelze vyjádřen jako prvky.  Například `char` by řetězců použijte `_bytes_` variant pouze v případě, že podobný funkce, které používá `wchar_t` by.
 
--   `_In_reads_z_(s)`
+- `_In_reads_z_(s)`
 
      Ukazatel na pole, které je zakončený hodnotou null a má známou velikost. Prvky až ukončovacího znaku null – nebo `s` Pokud neexistuje žádný ukončovacího znaku null – musí být platné v předběžné stavu.  Pokud je znám velikost v bajtech, škálovat `s` velikost elementu.
 
--   `_In_reads_or_z_(s)`
+- `_In_reads_or_z_(s)`
 
      Ukazatel na pole, které je zakončený hodnotou null nebo má známou velikost nebo obojí. Prvky až ukončovacího znaku null – nebo `s` Pokud neexistuje žádný ukončovacího znaku null – musí být platné v předběžné stavu.  Pokud je znám velikost v bajtech, škálovat `s` velikost elementu.  (Použít u `strn` řady.)
 
--   `_Out_writes_(s)`
+- `_Out_writes_(s)`
 
      `_Out_writes_bytes_(s)`
 
@@ -188,11 +188,11 @@ Tento článek popisuje typické použití poznámek pro jednoduchou funkci para
 
      `_bytes_` Variant poskytuje velikost v bajtech, ne prvky. Používejte pouze v případě, že velikost nelze vyjádřen jako prvky.  Například `char` by řetězců použijte `_bytes_` variant pouze v případě, že podobný funkce, které používá `wchar_t` by.
 
--   `_Out_writes_z_(s)`
+- `_Out_writes_z_(s)`
 
      Ukazatel na pole `s` elementy.  Elementy nemusí být platné v předběžné stavu.  Po stavu, prvky nahoru až ukončovacího znaku null, která musí být k dispozici – musí být platný.  Pokud je znám velikost v bajtech, škálovat `s` velikost elementu.
 
--   `_Inout_updates_(s)`
+- `_Inout_updates_(s)`
 
      `_Inout_updates_bytes_(s)`
 
@@ -200,11 +200,11 @@ Tento článek popisuje typické použití poznámek pro jednoduchou funkci para
 
      `_bytes_` Variant poskytuje velikost v bajtech, ne prvky. Používejte pouze v případě, že velikost nelze vyjádřen jako prvky.  Například `char` by řetězců použijte `_bytes_` variant pouze v případě, že podobný funkce, které používá `wchar_t` by.
 
--   `_Inout_updates_z_(s)`
+- `_Inout_updates_z_(s)`
 
      Ukazatel na pole, které je zakončený hodnotou null a má známou velikost. Prvky nahoru až ukončovacího znaku null – které musí být k dispozici – musí být ve stavu před a po stavu platná.  Hodnota v po stavu se předpokládá, že se liší od hodnoty v předběžné stavu; To zahrnuje umístění ukončovacího znaku null. Pokud je znám velikost v bajtech, škálovat `s` velikost elementu.
 
--   `_Out_writes_to_(s,c)`
+- `_Out_writes_to_(s,c)`
 
      `_Out_writes_bytes_to_(s,c)`
 
@@ -220,7 +220,7 @@ Tento článek popisuje typické použití poznámek pro jednoduchou funkci para
 
      `void *memcpy(_Out_writes_bytes_all_(s) char *p1,    _In_reads_bytes_(s) char *p2,    _In_ int s); void * wordcpy(_Out_writes_all_(s) DWORD *p1,     _In_reads_(s) DWORD *p2,    _In_ int s);`
 
--   `_Inout_updates_to_(s,c)`
+- `_Inout_updates_to_(s,c)`
 
      `_Inout_updates_bytes_to_(s,c)`
 
@@ -228,11 +228,11 @@ Tento článek popisuje typické použití poznámek pro jednoduchou funkci para
 
      `_bytes_` Variant poskytuje velikost v bajtech, ne prvky. Používejte pouze v případě, že velikost nelze vyjádřen jako prvky.  Například `char` by řetězců použijte `_bytes_` variant pouze v případě, že podobný funkce, které používá `wchar_t` by.
 
--   `_Inout_updates_z_(s)`
+- `_Inout_updates_z_(s)`
 
      Ukazatel na pole, které je zakončený hodnotou null a má známou velikost. Prvky nahoru až ukončovacího znaku null – které musí být k dispozici – musí být ve stavu před a po stavu platná.  Hodnota v po stavu se předpokládá, že se liší od hodnoty v předběžné stavu; To zahrnuje umístění ukončovacího znaku null. Pokud je znám velikost v bajtech, škálovat `s` velikost elementu.
 
--   `_Out_writes_to_(s,c)`
+- `_Out_writes_to_(s,c)`
 
      `_Out_writes_bytes_to_(s,c)`
 
@@ -248,7 +248,7 @@ Tento článek popisuje typické použití poznámek pro jednoduchou funkci para
 
      `void *memcpy(_Out_writes_bytes_all_(s) char *p1,    _In_reads_bytes_(s) char *p2,    _In_ int s); void * wordcpy(_Out_writes_all_(s) DWORD *p1,     _In_reads_(s) DWORD *p2,    _In_ int s);`
 
--   `_Inout_updates_to_(s,c)`
+- `_Inout_updates_to_(s,c)`
 
      `_Inout_updates_bytes_to_(s,c)`
 
@@ -256,7 +256,7 @@ Tento článek popisuje typické použití poznámek pro jednoduchou funkci para
 
      `_bytes_` Variant poskytuje velikost v bajtech, ne prvky. Používejte pouze v případě, že velikost nelze vyjádřen jako prvky.  Například `char` by řetězců použijte `_bytes_` variant pouze v případě, že podobný funkce, které používá `wchar_t` by.
 
--   `_Inout_updates_all_(s)`
+- `_Inout_updates_all_(s)`
 
      `_Inout_updates_bytes_all_(s)`
 
@@ -268,19 +268,19 @@ Tento článek popisuje typické použití poznámek pro jednoduchou funkci para
 
      `_bytes_` Variant poskytuje velikost v bajtech, ne prvky. Používejte pouze v případě, že velikost nelze vyjádřen jako prvky.  Například `char` by řetězců použijte `_bytes_` variant pouze v případě, že podobný funkce, které používá `wchar_t` by.
 
--   `_In_reads_to_ptr_(p)`
+- `_In_reads_to_ptr_(p)`
 
      Ukazatel na pole pro kterou výraz `p`  -  `_Curr_` (to znamená `p` minus `_Curr_`) je definován na příslušný jazyk standardní.  Prvky před `p` musí být platné v předběžné stavu.
 
--   `_In_reads_to_ptr_z_(p)`
+- `_In_reads_to_ptr_z_(p)`
 
      Ukazatel na pole zakončené znakem null pro kterou výraz `p`  -  `_Curr_` (to znamená `p` minus `_Curr_`) je definován na příslušný jazyk standardní.  Prvky před `p` musí být platné v předběžné stavu.
 
--   `_Out_writes_to_ptr_(p)`
+- `_Out_writes_to_ptr_(p)`
 
      Ukazatel na pole pro kterou výraz `p`  -  `_Curr_` (to znamená `p` minus `_Curr_`) je definován na příslušný jazyk standardní.  Prvky před `p` nemusí být platné v předběžné stavu a musí být platný po stavu.
 
--   `_Out_writes_to_ptr_z_(p)`
+- `_Out_writes_to_ptr_z_(p)`
 
      Ukazatel na pole zakončené znakem null pro kterou výraz `p`  -  `_Curr_` (to znamená `p` minus `_Curr_`) je definován na příslušný jazyk standardní.  Prvky před `p` nemusí být platné v předběžné stavu a musí být platný po stavu.
 
@@ -388,59 +388,59 @@ Tento článek popisuje typické použití poznámek pro jednoduchou funkci para
 
  **Poznámky a popisy**
 
--   `_Outref_`
+- `_Outref_`
 
      Výsledek musí být platný po stavu a nemůže mít hodnotu null.
 
--   `_Outref_result_maybenull_`
+- `_Outref_result_maybenull_`
 
      Výsledek musí být platný po stavu, ale může být v po stavu hodnotu null.
 
--   `_Outref_result_buffer_(s)`
+- `_Outref_result_buffer_(s)`
 
      Výsledek musí být platný po stavu a nemůže mít hodnotu null. Odkazuje na platnou vyrovnávací paměť o velikosti `s` elementy.
 
--   `_Outref_result_bytebuffer_(s)`
+- `_Outref_result_bytebuffer_(s)`
 
      Výsledek musí být platný po stavu a nemůže mít hodnotu null. Odkazuje na platnou vyrovnávací paměť o velikosti `s` bajtů.
 
--   `_Outref_result_buffer_to_(s, c)`
+- `_Outref_result_buffer_to_(s, c)`
 
      Výsledek musí být platný po stavu a nemůže mít hodnotu null. Odkazuje na vyrovnávací paměť `s` prvky, z nichž první `c` jsou platné.
 
--   `_Outref_result_bytebuffer_to_(s, c)`
+- `_Outref_result_bytebuffer_to_(s, c)`
 
      Výsledek musí být platný po stavu a nemůže mít hodnotu null. Odkazuje na vyrovnávací paměť `s` bajtů z nichž první `c` jsou platné.
 
--   `_Outref_result_buffer_all_(s)`
+- `_Outref_result_buffer_all_(s)`
 
      Výsledek musí být platný po stavu a nemůže mít hodnotu null. Odkazuje na platnou vyrovnávací paměť o velikosti `s` platné prvky.
 
--   `_Outref_result_bytebuffer_all_(s)`
+- `_Outref_result_bytebuffer_all_(s)`
 
      Výsledek musí být platný po stavu a nemůže mít hodnotu null. Odkazuje na platnou vyrovnávací paměť `s` bajtů platné prvky.
 
--   `_Outref_result_buffer_maybenull_(s)`
+- `_Outref_result_buffer_maybenull_(s)`
 
      Výsledek musí být platný po stavu, ale může být v po stavu hodnotu null. Odkazuje na platnou vyrovnávací paměť o velikosti `s` elementy.
 
--   `_Outref_result_bytebuffer_maybenull_(s)`
+- `_Outref_result_bytebuffer_maybenull_(s)`
 
      Výsledek musí být platný po stavu, ale může být v po stavu hodnotu null. Odkazuje na platnou vyrovnávací paměť o velikosti `s` bajtů.
 
--   `_Outref_result_buffer_to_maybenull_(s, c)`
+- `_Outref_result_buffer_to_maybenull_(s, c)`
 
      Výsledek musí být platný po stavu, ale může být v po stavu hodnotu null. Odkazuje na vyrovnávací paměť `s` prvky, z nichž první `c` jsou platné.
 
--   `_Outref_result_bytebuffer_to_maybenull_(s,c)`
+- `_Outref_result_bytebuffer_to_maybenull_(s,c)`
 
      Výsledek musí být platný po stavu, ale může mít hodnotu null v příspěvku stavu. Odkazuje na vyrovnávací paměť `s` bajtů z nichž první `c` jsou platné.
 
--   `_Outref_result_buffer_all_maybenull_(s)`
+- `_Outref_result_buffer_all_maybenull_(s)`
 
      Výsledek musí být platný po stavu, ale může mít hodnotu null v příspěvku stavu. Odkazuje na platnou vyrovnávací paměť o velikosti `s` platné prvky.
 
--   `_Outref_result_bytebuffer_all_maybenull_(s)`
+- `_Outref_result_bytebuffer_all_maybenull_(s)`
 
      Výsledek musí být platný po stavu, ale může mít hodnotu null v příspěvku stavu. Odkazuje na platnou vyrovnávací paměť `s` bajtů platné prvky.
 
@@ -454,7 +454,7 @@ Tento článek popisuje typické použití poznámek pro jednoduchou funkci para
 ## <a name="other-common-annotations"></a>Další běžné poznámky
  **Poznámky a popisy**
 
--   `_In_range_(low, hi)`
+- `_In_range_(low, hi)`
 
      `_Out_range_(low, hi)`
 
@@ -473,13 +473,13 @@ Tento článek popisuje typické použití poznámek pro jednoduchou funkci para
     > [!IMPORTANT]
     >  I když obsahují názvy "v" a "out", sémantika `_In_` a `_Out_` proveďte **není** platí tyto poznámky.
 
--   `_Pre_equal_to_(expr)`
+- `_Pre_equal_to_(expr)`
 
      `_Post_equal_to_(expr)`
 
      S poznámkami hodnota je právě `expr`.  Ekvivalentní `_Satisfies_(_Curr_ == expr)` , která je použita na objekt s poznámkami společně s odpovídající podmínky předem stavu nebo po stavu.
 
--   `_Struct_size_bytes_(size)`
+- `_Struct_size_bytes_(size)`
 
      Platí pro deklaraci třídy nebo struktury.  Označuje, že platný objekt daného typu může být větší než deklarovaného typu, s počtem bajtů je dán `size`.  Příklad:
 

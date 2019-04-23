@@ -11,12 +11,12 @@ ms.assetid: f65ff67e-8c20-497a-bebf-5e2a5b5b012f
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: b80659e1a61cca27adcc92b4b47c7ff0b4e02e0a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2ee09c334394e363d9621ddec887bd5d83726fba
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54792115"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60103573"
 ---
 # <a name="syntax-coloring-in-a-legacy-language-service"></a>Barevné zvýrazňování syntaxe ve službě starší verze jazyka
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -38,28 +38,28 @@ Jednoduché colorizer modelu
   
 ## <a name="how-a-vspackage-uses-a-language-service-colorizer"></a>Jak VSPackage používá Colorizer služby jazyka  
   
-1.  Sady VSPackage, musíte získat příslušné jazykové služby, který vyžaduje službu jazyka VSPackage provést následující kroky:  
+1. Sady VSPackage, musíte získat příslušné jazykové služby, který vyžaduje službu jazyka VSPackage provést následující kroky:  
   
-    1.  Použijte implementaci objektu <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> rozhraní se získat text, který má být obarveny.  
+    1. Použijte implementaci objektu <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> rozhraní se získat text, který má být obarveny.  
   
          Text obvykle bývá zobrazen, použití objektu, který implementuje <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> rozhraní.  
   
-    2.  Získáte službu jazyka pomocí dotazu na poskytovatele služeb balíčku VSPackage pro službu jazyka identifikátor GUID. Jazykové služby jsou označeny v registru příponu souboru.  
+    2. Získáte službu jazyka pomocí dotazu na poskytovatele služeb balíčku VSPackage pro službu jazyka identifikátor GUID. Jazykové služby jsou označeny v registru příponu souboru.  
   
-    3.  Přidružit služba jazyka s <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> voláním jeho <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer.SetLanguageServiceID%2A> metoda.  
+    3. Přidružit služba jazyka s <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> voláním jeho <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer.SetLanguageServiceID%2A> metoda.  
   
-2.  Sady VSPackage teď můžete získat a používat objekt colorizer následujícím způsobem:  
+2. Sady VSPackage teď můžete získat a používat objekt colorizer následujícím způsobem:  
   
     > [!NOTE]
     >  Rozšíření VSPackages, které používají základní editor není potřeba získat jazyk služby colorizer objekty explicitně. Jakmile instance základní editor získá služby příslušný jazyk, provádět všechny úlohy barevné zvýraznění je vidět tady.  
   
-    1.  Získání objektu colorizer jazyková služba, která implementuje `T:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer`, a <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer2> rozhraní voláním <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetColorizer%2A> metoda na službě jazyka <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> objektu.  
+    1. Získání objektu colorizer jazyková služba, která implementuje `T:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer`, a <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer2> rozhraní voláním <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetColorizer%2A> metoda na službě jazyka <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> objektu.  
   
-    2.  Volání <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> metoda colorizer informace pro konkrétní rozsah textu.  
+    2. Volání <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> metoda colorizer informace pro konkrétní rozsah textu.  
   
          <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> Vrátí pole hodnot, jeden pro každý znak v rozsahu textu se barevně zvýrazněné. Hodnoty jsou indexů do seznamu které lze zabarvit položek, které lze zabarvit položky seznamu výchozích udržuje základní editor nebo které lze zabarvit vlastní položky seznamu udržuje samotnou službu jazyka.  
   
-    3.  Zabarvení informace vrácené <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> metodu pro zobrazení vybraného textu.  
+    3. Zabarvení informace vrácené <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> metodu pro zobrazení vybraného textu.  
   
 > [!NOTE]
 >  Kromě použití colorizer služby jazyka, VSPackage můžete také použít pro obecné účely [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] text obarvení mechanismus. Další informace o tomto mechanizmu, naleznete v tématu [pomocí písma a barvy](../../extensibility/using-fonts-and-colors.md).  

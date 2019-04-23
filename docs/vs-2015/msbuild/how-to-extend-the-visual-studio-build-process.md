@@ -14,21 +14,21 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1f86605f3e76dc17fd8e404eb0d189f51ff2dc69
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 789c60da5be841721ab3a999120e2fe560ffd588
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59652160"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108593"
 ---
 # <a name="how-to-extend-the-visual-studio-build-process"></a>Postupy: Rozšíření procesu sestavení v sadě Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Procesu sestavení je definován pomocí posloupnosti [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] – soubory .targets, které jsou importovány do souboru projektu. Některý z těchto importovaných souborů webu Microsoft.Common.targets je možné rozšířit, aby bylo možné spouštět vlastní úlohy na několika místech v procesu sestavení. Toto téma vysvětluje, dvě metody, které vám umožní rozšířit [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] procesu sestavení:
 
--   Přepsání konkrétní předdefinovaných cílů, které jsou definované v Microsoft.Common.targets.
+- Přepsání konkrétní předdefinovaných cílů, které jsou definované v Microsoft.Common.targets.
 
--   Přepsání vlastností "DependsOn" definované v Microsoft.Common.targets.
+- Přepsání vlastností "DependsOn" definované v Microsoft.Common.targets.
 
 ## <a name="overriding-predefined-targets"></a>Přepsání předdefinovaných cílů
  Soubor cílů Microsoft.Common.targets obsahuje sadu předdefinovaných prázdný cílů, které jsou volány před a za některé z hlavních cílů v procesu sestavení. Například [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] volání `BeforeBuild` cíl před hlavním `CoreBuild` cíl a `AfterBuild` cílit po `CoreBuild` cíl. Ve výchozím nastavení prázdný cíle v Microsoft.Common.targets Neprovádět žádnou akci, ale jejich výchozí chování můžete přepsat tak, že definujete, které chcete v souboru projektu, který importuje Microsoft.Common.targets cíle. Díky tomu můžete použít [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] úkoly, které poskytují větší kontrolu nad procesem sestavení.
@@ -109,13 +109,13 @@ ms.locfileid: "59652160"
 
 #### <a name="to-override-a-dependson-property"></a>Chcete-li přepsat vlastnost "DependsOn"
 
-1.  Identifikujte předdefinovanou vlastnost "DependsOn" v Microsoft.Common.targets, kterou chcete přepsat. Najdete v následující tabulce pro seznam vlastností běžně přepsané "DependsOn".
+1. Identifikujte předdefinovanou vlastnost "DependsOn" v Microsoft.Common.targets, kterou chcete přepsat. Najdete v následující tabulce pro seznam vlastností běžně přepsané "DependsOn".
 
-2.  Definujte další instanci vlastnosti nebo vlastnosti na konci souboru projektu. Například obsahovat vlastnost původní `$(BuildDependsOn)`, v nové vlastnosti.
+2. Definujte další instanci vlastnosti nebo vlastnosti na konci souboru projektu. Například obsahovat vlastnost původní `$(BuildDependsOn)`, v nové vlastnosti.
 
-3.  Definujte vlastní cíle před nebo po definici vlastnosti.
+3. Definujte vlastní cíle před nebo po definici vlastnosti.
 
-4.  Vytváření souboru projektu.
+4. Vytváření souboru projektu.
 
 ### <a name="commonly-overridden-dependson-properties"></a>Běžně přepisované "DependsOn" vlastnosti
 

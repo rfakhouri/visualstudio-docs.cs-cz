@@ -9,12 +9,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cbfffc3983c8270058591edcca6d6188c9791102
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8d4dc21c2c6329730d678fa574f11d86bed8cdc4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54766279"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107174"
 ---
 # <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>Řízení viditelnosti ikony či dekorátoru
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,11 +28,11 @@ A *dekoratér* je ikona nebo řádek textu, který se zobrazí na tvar z jazyka 
   
 1. V definici DSL diagramu přidejte do třídy tvar ikony nebo dekoratéry textu, které se mají zobrazit.  
   
-   1.  Klikněte pravým tlačítkem na třídu tvar, přejděte na **přidat**a potom klikněte na požadovaný typ dekoratér.  
+   1. Klikněte pravým tlačítkem na třídu tvar, přejděte na **přidat**a potom klikněte na požadovaný typ dekoratér.  
   
-   2.  Nastavte dekoratér **pozice** vlastnost. Více než jeden dekoratér může mít na stejné pozici. Například můžete mít ikony pro muže a ženy, sdílení na stejné pozici.  
+   2. Nastavte dekoratér **pozice** vlastnost. Více než jeden dekoratér může mít na stejné pozici. Například můžete mít ikony pro muže a ženy, sdílení na stejné pozici.  
   
-   3.  Nastavte **výchozí ikona** vlastnost dekoratér ikony.  
+   3. Nastavte **výchozí ikona** vlastnost dekoratér ikony.  
   
 2. Vyberte mapa elementu diagramu, který je Šedá čára mezi obrazec třídy a třídy domény na diagramem definice DSL.  
   
@@ -44,7 +44,7 @@ A *dekoratér* je ikona nebo řádek textu, který se zobrazí na tvar z jazyka 
   
     V opačném případě klikněte na rozevírací nabídku a přejděte do relace nebo třídy, kde se nachází vlastnost.  
   
-   -   Aby se zabránilo zprávu o chybách, by neměla procházet relace označené "*" v nástroji pro navigaci.  
+   - Aby se zabránilo zprávu o chybách, by neměla procházet relace označené "*" v nástroji pro navigaci.  
   
 6. Nastavte **vlastnost filtru** k doménové vlastnosti. Třeba pohlaví.  
   
@@ -60,7 +60,7 @@ A *dekoratér* je ikona nebo řádek textu, který se zobrazí na tvar z jazyka 
   
 #### <a name="to-control-the-visibility-of-a-decorator-based-on-a-formula"></a>Řízení viditelnosti dekorátoru podle vzorce  
   
-1.  Přidáte počítané doménová vlastnost, která do doménové třídy. V **vlastnosti** okno, nastavte následující hodnoty:  
+1. Přidáte počítané doménová vlastnost, která do doménové třídy. V **vlastnosti** okno, nastavte následující hodnoty:  
   
      **IsBrowsable =**`False`**-skryje vlastnost od uživatele**  
   
@@ -72,27 +72,27 @@ A *dekoratér* je ikona nebo řádek textu, který se zobrazí na tvar z jazyka 
   
      Další informace najdete v tématu [vypočtené a vlastní vlastnosti úložiště](../modeling/calculated-and-custom-storage-properties.md).  
   
-2.  Vytvořit novou vlastnost řízení viditelnosti dekorátoru.  
+2. Vytvořit novou vlastnost řízení viditelnosti dekorátoru.  
   
-    1.  Vyberte mapa elementu diagramu, který je Šedá čára z doménové třídy na obrazec. V **podrobnosti DSL** otevřené okno **DecoratorMap** kartu.  
+    1. Vyberte mapa elementu diagramu, který je Šedá čára z doménové třídy na obrazec. V **podrobnosti DSL** otevřené okno **DecoratorMap** kartu.  
   
-    2.  Zkontrolujte, **filtr viditelnosti** pole.  
+    2. Zkontrolujte, **filtr viditelnosti** pole.  
   
-    3.  V **vlastnost filtru**, vyberte vlastnosti ovládacího prvku **DecoratorControl**.  
+    3. V **vlastnost filtru**, vyberte vlastnosti ovládacího prvku **DecoratorControl**.  
   
-    4.  V části **záznamy viditelnosti**, zadejte `True`.  
+    4. V části **záznamy viditelnosti**, zadejte `True`.  
   
-3.  Klikněte na tlačítko **Transformovat všechny šablony** v panelu nástrojů Průzkumníka řešení.  
+3. Klikněte na tlačítko **Transformovat všechny šablony** v panelu nástrojů Průzkumníka řešení.  
   
-4.  Klikněte na tlačítko **sestavit řešení** na **sestavení** nabídky.  
+4. Klikněte na tlačítko **sestavit řešení** na **sestavení** nabídky.  
   
-5.  Klikněte dvakrát na zprávy o chybách, které se má zobrazovalo: "*YourClass* neobsahuje definici pro GetDecoratorControlValue...".  
+5. Klikněte dvakrát na zprávy o chybách, které se má zobrazovalo: "*YourClass* neobsahuje definici pro GetDecoratorControlValue...".  
   
      Do textového editoru se otevře na Dsl\GeneratedCode\DomainClasses.cs. Nad zvýrazněnou chybu je komentář, který budete vyzváni k přidání metody.  
   
-6.  Poznámka: obor názvů, třídy a metody, které nebyly nalezeny.  Například Company.FamilyTree.Person.GetDecoratorControlValue().  
+6. Poznámka: obor názvů, třídy a metody, které nebyly nalezeny.  Například Company.FamilyTree.Person.GetDecoratorControlValue().  
   
-7.  V samostatném souboru kódu zápis, který obsahuje metodu chybí definice částečné třídy. Příklad:  
+7. V samostatném souboru kódu zápis, který obsahuje metodu chybí definice částečné třídy. Příklad:  
   
     ```  
     namespace Company.FamilyTree  
@@ -105,7 +105,7 @@ A *dekoratér* je ikona nebo řádek textu, který se zobrazí na tvar z jazyka 
   
      Další informace o přizpůsobení modelu pomocí kódu programu najdete v tématu [navigace a aktualizace modelu v programovém kódu](../modeling/navigating-and-updating-a-model-in-program-code.md).  
   
-8.  Znovu sestavte a spusťte řešení.  
+8. Znovu sestavte a spusťte řešení.  
   
 ## <a name="see-also"></a>Viz také  
  [Definování obrazců a konektorů](../modeling/defining-shapes-and-connectors.md)   

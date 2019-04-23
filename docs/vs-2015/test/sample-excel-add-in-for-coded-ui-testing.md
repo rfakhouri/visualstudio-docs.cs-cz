@@ -10,12 +10,12 @@ ms.assetid: 2cd52d1a-4c35-43ca-8a84-9c79dabd907f
 caps.latest.revision: 18
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ded54760efe611b337c736e0474042b70ff8bf2e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 30ba0d48676438f19581e93a3af3c900569f5d5d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54791943"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112220"
 ---
 # <a name="sample-excel-add-in-for-coded-ui-testing"></a>Ukázka doplňku Excel pro programové testování uživatelského rozhraní
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,11 +28,11 @@ Tato ukázka doplňku pro [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)] je 
   
  Důležité části tohoto doplňku:  
   
--   `ThisAddIn`  Třída – spravuje Vzdálená komunikace .NET kanál mezi `ExcelUICommunicator` a [ukázka programového uživatelského rozhraní testu rozšíření pro aplikaci Excel](../test/sample-coded-ui-test-extension-for-excel.md).  
+- `ThisAddIn`  Třída – spravuje Vzdálená komunikace .NET kanál mezi `ExcelUICommunicator` a [ukázka programového uživatelského rozhraní testu rozšíření pro aplikaci Excel](../test/sample-coded-ui-test-extension-for-excel.md).  
   
--   `ExcelCodedUIAddinHelper_TemporaryKey.pfx`  -Certifikát zabezpečení pro testování doplňku.  
+- `ExcelCodedUIAddinHelper_TemporaryKey.pfx`  -Certifikát zabezpečení pro testování doplňku.  
   
--   `ExcelUICommunicator`  Tato třída implementuje třída – `IExcelUICommunication` rozhraní.  
+- `ExcelUICommunicator`  Tato třída implementuje třída – `IExcelUICommunication` rozhraní.  
   
 ## <a name="thisaddin-class"></a>Thisaddin – třída  
  Většinu této třídy je ve skutečnosti generované Visual Studio Tools for Office ve službě `ThisAddIn.Designer.cs` soubor při vytváření projektu doplňku aplikace Excel.  

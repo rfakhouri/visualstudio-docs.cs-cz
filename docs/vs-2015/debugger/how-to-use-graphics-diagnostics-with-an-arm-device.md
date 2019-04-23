@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f2a606d6b22dabc8bab0477a240499021a4312c3
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 7ae934de4a9f0dbcf4076d7402abd138eac20268
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867684"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104873"
 ---
 # <a name="how-to-use-graphics-diagnostics-with-an-arm-device"></a>Postupy: Použití diagnostiky grafiky se zařízením ARM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,9 +28,9 @@ Diagnostika grafiky podporuje vzdálené ladění aplikací rozhraní Direct3D n
   
 #### <a name="to-enable-remote-debugging-on-your-arm-based-device"></a>Jak aktivovat vzdálené ladění na vašem zařízení založené na ARM  
   
-1.  Nainstalujte [zásady sad ARM](http://msdn.microsoft.com/windows/desktop/dn469188) na vašem zařízení založené na ARM.  
+1. Nainstalujte [zásady sad ARM](http://msdn.microsoft.com/windows/desktop/dn469188) na vašem zařízení založené na ARM.  
   
-2.  Nainstalujte [nástroje pro vzdálené ladění](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015) na vašem zařízení založené na ARM.  
+2. Nainstalujte [nástroje pro vzdálené ladění](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015) na vašem zařízení založené na ARM.  
   
 > [!IMPORTANT]
 >  Pro zařízení s Windows Phone 8.1 budete muset zaregistrovat svůj telefon pro vývoj. Uděláte to tak, musí být registrovaný vývojář. Další informace najdete v tématu [o nasazení a spuštění aplikace pro Windows Phone 8](http://msdn.microsoft.com/library/windowsphone/develop/ff402565.aspx).  
@@ -39,11 +39,11 @@ Diagnostika grafiky podporuje vzdálené ladění aplikací rozhraní Direct3D n
   
 #### <a name="to-configure-and-start-graphics-diagnostics-on-your-device"></a>Pro konfiguraci a spuštění diagnostiky grafiky ve vašem zařízení  
   
-1.  Na **platformy řešení** rozevíracího seznamu vyberte **ARM** tak, aby vaše zařízení založené na ARM, budou k dispozici jako cíl vzdáleného ladění.  
+1. Na **platformy řešení** rozevíracího seznamu vyberte **ARM** tak, aby vaše zařízení založené na ARM, budou k dispozici jako cíl vzdáleného ladění.  
   
-2.  Na **cíl ladění** rozevíracího seznamu vyberte zařízení ARM.  
+2. Na **cíl ladění** rozevíracího seznamu vyberte zařízení ARM.  
   
-3.  V nabídce zvolte **ladění**, **grafiky**, **spustit diagnostiku**. (Klávesnice: Alt+F5)  
+3. V nabídce zvolte **ladění**, **grafiky**, **spustit diagnostiku**. (Klávesnice: Alt+F5)  
   
 ## <a name="see-also"></a>Viz také  
  [Spustit Windows Store apps na vzdáleném počítači](../debugger/run-windows-store-apps-on-a-remote-machine.md)   

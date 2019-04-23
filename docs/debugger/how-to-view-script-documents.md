@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 31ca31ffe85f7d932ebb23d6a454b5bccfdcb5ce
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 821e3bc4abc379f0ed7fc1343867f88fefe54b17
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56713396"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111815"
 ---
 # <a name="how-to-view-script-documents-javascript"></a>Postupy: Zobrazení dokumentů skriptu (JavaScript)
 
@@ -31,17 +31,17 @@ Soubory skriptu na straně serveru jsou viditelné v Průzkumníku řešení. So
 
 ### <a name="to-view-a-server-side-script-document"></a>Chcete-li zobrazit dokument skriptu na straně serveru
 
-1.  V **Průzkumníka řešení**, otevřete  **\<webu cesta >** uzlu.
+1. V **Průzkumníka řešení**, otevřete  **\<webu cesta >** uzlu.
 
-2.  Poklikejte na soubor skriptu, který chcete zobrazit.
+2. Poklikejte na soubor skriptu, který chcete zobrazit.
 
      Soubor skriptu na straně serveru se otevře v okně zdroje.
 
 ### <a name="to-view-a-client-side-script-document"></a>Chcete-li zobrazit dokument skriptu na straně klienta
 
-1.  V **Průzkumníka řešení**, otevřete **dokumenty skriptu** uzlu.
+1. V **Průzkumníka řešení**, otevřete **dokumenty skriptu** uzlu.
 
-2.  Poklikejte na soubor skriptu, který chcete zobrazit.
+2. Poklikejte na soubor skriptu, který chcete zobrazit.
 
      Soubor skriptu na straně klienta se otevře v okně zdroje.
 

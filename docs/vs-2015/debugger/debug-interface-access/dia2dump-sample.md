@@ -14,12 +14,12 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: bd52c635d5ade1bef73176601d6957ba5859723b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a817720c1ad73b666e0c9a586bb583120a2533c1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54791161"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092016"
 ---
 # <a name="dia2dump-sample"></a>Dia2dump – ukázka
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -28,23 +28,23 @@ Dia2dump – ukázka je součástí sady Visual Studio a obsahuje dia2dump.cpp �
   
 ### <a name="to-install-the-sample"></a>Ukázku nainstalujete  
   
-1.  Ověřte, že váš systém splňuje všechny požadavky na nastavení, které je popsáno na úvodní stránce instalační program sady Visual Studio.  
+1. Ověřte, že váš systém splňuje všechny požadavky na nastavení, které je popsáno na úvodní stránce instalační program sady Visual Studio.  
   
-2.  Instalace sady Visual Studio a postupujte podle všech nastavení a instalace pokyny uvedené ukázky.  
+2. Instalace sady Visual Studio a postupujte podle všech nastavení a instalace pokyny uvedené ukázky.  
   
 #### <a name="to-build-the-sample"></a>K vytvoření vzorku  
   
-1.  Otevřete soubor Dia2dump.sln v sadě Visual Studio. (V případě potřeby sady Visual Studio nejprve vám pomůže upgradovat projekt dia2dump –.)  
+1. Otevřete soubor Dia2dump.sln v sadě Visual Studio. (V případě potřeby sady Visual Studio nejprve vám pomůže upgradovat projekt dia2dump –.)  
   
-2.  Na stránkách vlastností projektu v **C/C++** &#124; **Obecné** &#124; **další adresáře souborů k zahrnutí** vlastnost, zadejte `..\DIA SDK\include` adresáře. Zaručí se tak, že kompilátor soubor dia2.h najdete.  
+2. Na stránkách vlastností projektu v **C/C++** &#124; **Obecné** &#124; **další adresáře souborů k zahrnutí** vlastnost, zadejte `..\DIA SDK\include` adresáře. Zaručí se tak, že kompilátor soubor dia2.h najdete.  
   
-3.  Na **sestavení** nabídky, klikněte na tlačítko **znovu sestavit řešení**.  
+3. Na **sestavení** nabídky, klikněte na tlačítko **znovu sestavit řešení**.  
   
-4.  Zavřete Visual Studio.  
+4. Zavřete Visual Studio.  
   
 #### <a name="to-run-the-sample"></a>Chcete-li spustit ukázku  
   
-1.  Otevřete příkazový řádek a zadejte následující příkaz:  
+1. Otevřete příkazový řádek a zadejte následující příkaz:  
   
     ```  
     dia2dump filename  

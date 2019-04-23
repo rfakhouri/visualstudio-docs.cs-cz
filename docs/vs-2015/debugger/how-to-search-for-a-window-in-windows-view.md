@@ -11,12 +11,12 @@ caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 435f189d22abed9697953fc8b946deac64f86740
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 205ff44c44a73dc44d3a3493347a153fb52e712d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54797568"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113037"
 ---
 # <a name="how-to-search-for-a-window-in-windows-view"></a>Postupy: Hledání okna v zobrazení oken
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,16 +27,16 @@ Můžete vyhledat konkrétní okno v zobrazení pro Windows s použitím jeho po
   
 ### <a name="to-search-for-a-window-in-windows-view"></a>Hledání okna v zobrazení pro Windows  
   
-1.  Uspořádat okna tak tohoto nástroje Spy ++, [zobrazení Windows](../debugger/windows-view.md) okna a okna cílové jsou vidět.  
+1. Uspořádat okna tak tohoto nástroje Spy ++, [zobrazení Windows](../debugger/windows-view.md) okna a okna cílové jsou vidět.  
   
-2.  Z **hledání** nabídce zvolte **najít okno**.  
+2. Z **hledání** nabídce zvolte **najít okno**.  
   
      [Dialogové okno hledání](../debugger/window-search-dialog-box.md) otevře.  
   
     > [!TIP]
     >  Chcete-li přehlednost obrazovky, vyberte **skrýt Spy** možnost. Tato možnost ukrývá hlavního okna nástroje Spy ++ a zůstane jen **okno hledání** dialogové okno viditelné nad vaší aplikace. Obnovení hlavního okna nástroje Spy ++, po kliknutí na **OK** nebo **zrušit**, nebo pokud zrušíte výběr **skrýt Spy ++** možnost.  
   
-3.  Přetáhněte **tažením nástroje hledání** intervalu cíl. Při přetahování nástroj, **okno hledání** dialogové okno zobrazí podrobnosti o vybrané okno.  
+3. Přetáhněte **tažením nástroje hledání** intervalu cíl. Při přetahování nástroj, **okno hledání** dialogové okno zobrazí podrobnosti o vybrané okno.  
   
      – nebo –  
   
@@ -46,8 +46,8 @@ Můžete vyhledat konkrétní okno v zobrazení pro Windows s použitím jeho po
   
      Pokud víte, titulek a/nebo třídy okna, chcete, můžete je zadat **titulek** a **třídy** textová pole a zrušte zaškrtnutí **zpracování** textového pole.  
   
-4.  Zvolte **nahoru** nebo **dolů** pro počáteční směr hledání.  
+4. Zvolte **nahoru** nebo **dolů** pro počáteční směr hledání.  
   
-5.  Klikněte na **OK**.  
+5. Klikněte na **OK**.  
   
      Pokud je nalezen odpovídající okno, je zvýrazněn [zobrazení Windows](../debugger/windows-view.md) okna.

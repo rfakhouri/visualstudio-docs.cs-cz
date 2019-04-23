@@ -9,12 +9,12 @@ caps.latest.revision: 38
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cd8b160eca8b3a7e628ed9eda199c0b26fe38c14
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 619b64578c5fd626f9ffa8cfca8f777fdc1c93a5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59648652"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105721"
 ---
 # <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-application-statistics-by-using-the-command-line"></a>Postupy: Připojit Profiler k webové aplikaci ASP.NET ke shromažďování statistik aplikace pomocí příkazového řádku
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,9 +44,9 @@ Toto téma popisuje způsob použití [!INCLUDE[vsprvs](../includes/vsprvs-md.md
 
     **Vsperfclrenv – /globalsampleon** [**/samplelineoff**]  
 
-   -   **/globalsampleon** umožňuje vzorkování.  
+   - **/globalsampleon** umožňuje vzorkování.  
 
-   -   **/samplelineoff** zakáže přiřazení shromážděných dat ke konkrétnímu zdroji řádků kódu. Pokud je tato možnost zadána, data přiřazena pouze funkcí.  
+   - **/samplelineoff** zakáže přiřazení shromážděných dat ke konkrétnímu zdroji řádků kódu. Pokud je tato možnost zadána, data přiřazena pouze funkcí.  
 
 3. Restartujte počítač.  
 
@@ -73,9 +73,9 @@ Toto téma popisuje způsob použití [!INCLUDE[vsprvs](../includes/vsprvs-md.md
 
 6. Připojte profiler k pracovnímu procesu ASP.NET. Typ:**VSPerfCmd** [/ attach](../profiling/attach.md)**:**{`PID`&#124;`ProcName`} [`Sample Event`] [[targetclr](../profiling/targetclr.md) **:**`Version`]  
 
-   -   `PID` Určuje ID procesu pracovního procesu ASP.NET; `ProcName` Určuje název pracovního procesu. ID procesů a názvy všech spuštěných procesů lze zobrazit ve Správci úloh Windows.  
+   - `PID` Určuje ID procesu pracovního procesu ASP.NET; `ProcName` Určuje název pracovního procesu. ID procesů a názvy všech spuštěných procesů lze zobrazit ve Správci úloh Windows.  
 
-   -   Ve výchozím nastavení, data výkonu vzorkována každých procesoru 10 000 000 nepřerušených hodinových cyklů. To je přibližně 100krát za sekundu u procesoru s frekvencí 1 GHz. Můžete určit jednu z následujících **VSPerfCmd** možnosti změnit intervalu hodinových cyklů nebo změnu událostí vyvolávajících.  
+   - Ve výchozím nastavení, data výkonu vzorkována každých procesoru 10 000 000 nepřerušených hodinových cyklů. To je přibližně 100krát za sekundu u procesoru s frekvencí 1 GHz. Můžete určit jednu z následujících **VSPerfCmd** možnosti změnit intervalu hodinových cyklů nebo změnu událostí vyvolávajících.  
 
    |Událost vzorku|Popis|  
    |------------------|-----------------|  
@@ -85,14 +85,14 @@ Toto téma popisuje způsob použití [!INCLUDE[vsprvs](../includes/vsprvs-md.md
    |[/ Čítač](../profiling/counter.md) **:** `Config`|Změní událost odběru vzorků a interval na čítač výkonu procesoru a interval, ve stanoveném `Config`.|  
    |[targetclr](../profiling/targetclr.md) **:** `Version`|Určuje verzi modulu common language runtime (CLR), která má být profilována je do aplikace načtena více než jedna verze modulu runtime.|  
 
-   -   **targetclr:** `Version` Určuje verzi modulu CLR do profilu je do aplikace načtena více než jedna verze modulu runtime. Volitelné.  
+   - **targetclr:** `Version` Určuje verzi modulu CLR do profilu je do aplikace načtena více než jedna verze modulu runtime. Volitelné.  
 
 ## <a name="controlling-data-collection"></a>Řízení shromažďování dat  
  Když je aplikace spuštěna, lze sběr dat řídit spouštěním či pozastavováním zápisu dat do souboru s použitím **VSPerfCmd.exe** možnosti. Řízení sběru dat umožňuje shromažďovat data pro určitou část provádění programu, například spouštění či ukončování aplikace.  
 
 #### <a name="to-start-and-stop-data-collection"></a>Spuštění a zastavení shromažďování dat  
 
--   Následující páry **VSPerfCmd** možností spouští a zastavují sběr dat. Každou možnost zadejte na samostatný příkazový řádek. Sběr dat lze zapnout a vypnout několikrát.  
+- Následující páry **VSPerfCmd** možností spouští a zastavují sběr dat. Každou možnost zadejte na samostatný příkazový řádek. Sběr dat lze zapnout a vypnout několikrát.  
 
     |Možnost|Popis|  
     |------------|-----------------|  
@@ -109,21 +109,21 @@ Toto téma popisuje způsob použití [!INCLUDE[vsprvs](../includes/vsprvs-md.md
 
 #### <a name="to-end-a-profiling-session"></a>Chcete-li ukončit relaci profilování  
 
-1.  Proveďte jednu z následujících-li odpojit profiler od cílové aplikace:  
+1. Proveďte jednu z následujících-li odpojit profiler od cílové aplikace:  
 
-    -   Typ **VSPerfCmd / odpojení**  
+    - Typ **VSPerfCmd / odpojení**  
 
          -nebo-  
 
-    -   Zavřít [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] pracovní proces.  
+    - Zavřít [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] pracovní proces.  
 
-2.  Vypněte profiler. Typ:**VSPerfCmd**  [ /Shutdown](../profiling/shutdown.md)  
+2. Vypněte profiler. Typ:**VSPerfCmd**  [ /Shutdown](../profiling/shutdown.md)  
 
-3.  (Volitelné) Vyčistěte proměnné prostředí profilování. Typ:  
+3. (Volitelné) Vyčistěte proměnné prostředí profilování. Typ:  
 
      **Nástroj VSPerfCmd /globaloff**  
 
-4.  Restartujte počítač.  
+4. Restartujte počítač.  
 
 ## <a name="see-also"></a>Viz také  
  [Profilace webových aplikací ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   

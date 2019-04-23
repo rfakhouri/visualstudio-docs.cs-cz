@@ -11,12 +11,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 41f89449ab412a53d779bfc3fb4cf9ac52ded239
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: aa8ec46036bbb9a133f2036f1c54cad87d064618
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54800387"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105484"
 ---
 # <a name="supported-visual-studio-editions-for-visualization-amp-modeling-sdk"></a>Verze Visual Studia podporované pro Visualization &amp; Modeling SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,13 +35,13 @@ Toto jsou seznamy edice sady Visual Studio, které jsou podporovány [!INCLUDE[d
 ## <a name="deployment-editions"></a>Edice nasazení
  [!INCLUDE[dsl](../includes/dsl-md.md)] podporuje následující konfigurace pro jazyky specifické pro doménu, která bude sestavena nasazení:
 
--   Visual Studio Enterprise
+- Visual Studio Enterprise
 
--   Visual Studio Professional
+- Visual Studio Professional
 
--   Visual Studio Shell (integrovaný režim) redistributable package Distribuovatelný balíček
+- Visual Studio Shell (integrovaný režim) redistributable package Distribuovatelný balíček
 
--   Visual Studio Shell (izolovaný režim) redistributable package Distribuovatelný balíček
+- Visual Studio Shell (izolovaný režim) redistributable package Distribuovatelný balíček
 
 > [!NOTE]
 >  Chcete-li DSL ke spuštění v prostředí produktu, je nutné nastavit **podporované edice VS** pole v manifestu rozšíření. Další informace najdete v tématu [nasazení řešení jazyka specifického pro doménu](../modeling/deploying-domain-specific-language-solutions.md).

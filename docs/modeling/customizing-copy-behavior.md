@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 898c1e88e4fd1ac0fc5f3d1f338b70a2d038fe79
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: 4a5543805741f1c64627aee15590d61635a89b1c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416317"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109826"
 ---
 # <a name="customizing-copy-behavior"></a>Přizpůsobení chování kopírování
 V jazyce specifickém pro doménu (DSL) vytvořené pomocí Visual Studio Visualization and Modeling SDK je možné změnit, co se stane, když uživatel zkopíruje a vloží prvky.
@@ -284,9 +284,9 @@ using Microsoft.VisualStudio.Modeling.Diagrams.ExtensionEnablement;
 
  Ve své třídě ElementOperations definujte dvě metody:
 
--   `CanMerge(ModelElement targetElement, System.Windows.Forms.IDataObject data)` který určuje, zda source element můžete přetahovat do tvar target, konektoru nebo diagramu.
+- `CanMerge(ModelElement targetElement, System.Windows.Forms.IDataObject data)` který určuje, zda source element můžete přetahovat do tvar target, konektoru nebo diagramu.
 
--   `MergeElementGroupPrototype(ModelElement targetElement, ElementGroupPrototype sourcePrototype)` zahrnující prvek zdroje do cíle.
+- `MergeElementGroupPrototype(ModelElement targetElement, ElementGroupPrototype sourcePrototype)` zahrnující prvek zdroje do cíle.
 
 ### <a name="canmerge"></a>CanMerge()
  `CanMerge()` je volána k určení zpětnou vazbu, která by se měly provádět uživateli při pohybu myši v diagramu. Parametry metody jsou elementu nad tím, které je najedete myší a údaje o zdroji, odkud byla provedena operace přetažení. Uživatel můžete přetáhnout z libovolné místo na obrazovce. Zdrojový objekt proto může být mnoho různých typů a je možné serializovat v různých formátech. Pokud je zdroj modelu DSL nebo UML, parametr data je serializace <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype>. Operace přetažení, kopírování a sady nástrojů znázornit ElementGroupPrototypes fragmenty modelů.

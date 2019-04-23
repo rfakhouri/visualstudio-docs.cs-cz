@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d451f7e59774dae37d781f60812003f16120b98a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: f7f4dbeb378f0ac921f42f2ad71d3b5cae8d10ca
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56692980"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088376"
 ---
 # <a name="graphics-state"></a>Stav grafiky
 Okno stavu ve Visual Studio graphics Diagnostics vám pomůže pochopit stav grafiky, která je aktivní v okamžiku aktuální události, jako je například volání draw.
@@ -34,13 +34,13 @@ Okno stavu ve Visual Studio graphics Diagnostics vám pomůže pochopit stav gra
 
 ##### <a name="to-change-the-state-view"></a>Chcete-li změnit zobrazení stavu
 
--   V okně stavu, v horním levém pod záhlaví klikněte na tlačítko, který odpovídá stylu zobrazení stavu, který chcete použít.
+- V okně stavu, v horním levém pod záhlaví klikněte na tlačítko, který odpovídá stylu zobrazení stavu, který chcete použít.
 
-    -   **Zobrazit vstupní stav rozhraní API**
+    - **Zobrazit vstupní stav rozhraní API**
 
-    -   **Zobrazit logického stavu zobrazení**
+    - **Zobrazit logického stavu zobrazení**
 
-    -   **Zobrazit stav Pinned**
+    - **Zobrazit stav Pinned**
 
 > [!IMPORTANT]
 >  Musí připnout stav v **API zobrazit vstupní stav** nebo **zobrazit logického stavu** zobrazení, který se má zobrazit **zobrazit připnuté zobrazení stavu**.
@@ -52,7 +52,7 @@ Okno stavu ve Visual Studio graphics Diagnostics vám pomůže pochopit stav gra
 |------------|-----------------|
 |Název|Název položky stavu. Pokud se tato položka představuje sadu stavu, je možné rozšířit položky zobrazení.<br /><br /> V **API vstupní zobrazení stavu** a **logického stavu zobrazení** stavy, názvy odsazeny zobrazíte hierarchický vztah mezi stavy.<br /><br /> V **připnuté zobrazení stavu** stavu, plně kvalifikovaných názvů se zobrazí jako plochý seznam.|
 |Hodnota|Hodnota položky stavu.|
-|Typ|Typ položky stavu.|
+|Type|Typ položky stavu.|
 
 ### <a name="changed-state"></a>Změna stavu
  Stav grafiky obvykle přírůstkové změny mezi voláními výkresu následné a různé druhy problémů s vykreslováním jsou způsobeny, když se stav změní nesprávně. Můžete najít v jakém stavu se od předchozího volání kreslení změnila, stavu, která se změnila s hvězdičkou a zobrazí červeně – to platí nejen stav samotný, ale jeho nadřazenou položku stavu, takže můžete snadno Přímá změna stavu na nejvyšší úroveň a pak procházení k podrobnostem.
@@ -64,8 +64,8 @@ Okno stavu ve Visual Studio graphics Diagnostics vám pomůže pochopit stav gra
 
 ##### <a name="to-pin-state-in-place"></a>Pokud chcete připnout stav na místě
 
-1.  V okně stavu vyhledejte stav, který vás zajímá. Budete muset rozbalit vyšší úrovně stavu k nalezení podrobností, které vás zajímají.
+1. V okně stavu vyhledejte stav, který vás zajímá. Budete muset rozbalit vyšší úrovně stavu k nalezení podrobností, které vás zajímají.
 
-2.  Umístěte kurzor do stavu, který vás zajímá. Nalevo od položky, stav se zobrazí ikona připnout.
+2. Umístěte kurzor do stavu, který vás zajímá. Nalevo od položky, stav se zobrazí ikona připnout.
 
-3.  Vyberte ikonu připínáčku připněte položky stavu na místě.
+3. Vyberte ikonu připínáčku připněte položky stavu na místě.

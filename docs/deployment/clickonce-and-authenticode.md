@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 329f5c801fabce5f47e915fe54a885a98dda8500
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 9ebef342338430404f9506779c2b1e5312462178
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56631533"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089585"
 ---
 # <a name="clickonce-and-authenticode"></a>ClickOnce a kód Authenticode
 *Authenticode* je technologie společnosti Microsoft, které používá standardní kryptografie pro podepsání kódu aplikace s digitálními certifikáty, které ověření pravosti vydavatele. Pomocí technologie Authenticode pro nasazení aplikace [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] snižuje riziko trojského koně. Trojský kůň, není virus nebo jiný škodlivý program, který zkresluje skutečnost třetí strana jako legitimní program pocházejí z důvěryhodného zdroje a zavedené. Podepisování [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] nasazení pomocí digitálního certifikátu je volitelný krok pro ověření, že se sestaveními a soubory nebylo manipulováno.
@@ -58,11 +58,11 @@ ms.locfileid: "56631533"
 ### <a name="update-expired-certificates"></a>Aktualizujte certifikáty s vypršenou platností
  V dřívějších verzích rozhraní .NET Framework aktualizace prošlou platností certifikátu aplikace může způsobit, že aplikace přestane fungovat. Chcete-li tento problém vyřešit, použijte jednu z následujících metod:
 
--   Aktualizace rozhraní .NET Framework verze 2.0 SP1 nebo později se systémem Windows XP, verze 3.5 nebo později na Windows Vista.
+- Aktualizace rozhraní .NET Framework verze 2.0 SP1 nebo později se systémem Windows XP, verze 3.5 nebo později na Windows Vista.
 
--   Tuto aplikaci odinstalujte a znovu nainstalujte novou verzi s platným certifikátem.
+- Tuto aplikaci odinstalujte a znovu nainstalujte novou verzi s platným certifikátem.
 
--   Vytvořte sestavení příkazového řádku, která aktualizuje certifikát. Podrobné informace o tomto procesu najdete v [článku technické podpory Microsoftu 925521](http://go.microsoft.com/fwlink/?LinkId=179454).
+- Vytvořte sestavení příkazového řádku, která aktualizuje certifikát. Podrobné informace o tomto procesu najdete v [článku technické podpory Microsoftu 925521](http://go.microsoft.com/fwlink/?LinkId=179454).
 
 ### <a name="store-certificates"></a>Certifikáty Store
 

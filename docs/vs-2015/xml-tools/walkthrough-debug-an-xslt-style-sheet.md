@@ -1,5 +1,5 @@
 ---
-title: 'Průvodce: Ladění stylů XSLT | Dokumentace Microsoftu'
+title: 'Návod: Ladění stylů XSLT | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-xml-tools
@@ -9,23 +9,23 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1f211e2f13f710b66e33691dbc318349eddf15ff
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5e685e77dafe00b8cadd9b273ccc61c8e5d9e1e4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54753454"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085100"
 ---
-# <a name="walkthrough-debug-an-xslt-style-sheet"></a>Průvodce: Ladění stylů XSLT
+# <a name="walkthrough-debug-an-xslt-style-sheet"></a>Návod: Ladění stylů XSLT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Kroky v tomto názorném postupu ukazují, jak použít ladicí program XSLT. Kroky zahrnují zobrazení proměnné, nastavovat zarážky a krokování kódu. Šablony stylů vyhledá všechny knihy, které náklady pod průměrnou cenu knih.  
   
 ### <a name="to-prepare-for-this-walkthrough"></a>Příprava pro Tento názorný postup  
   
-1.  Zavřete všechna otevřená řešení.  
+1. Zavřete všechna otevřená řešení.  
   
-2.  Zkopírujte dva ukázkové soubory do místního počítače.  
+2. Zkopírujte dva ukázkové soubory do místního počítače.  
   
 ## <a name="start-debugging"></a>Spustit ladění  
   
@@ -59,19 +59,19 @@ Kroky v tomto názorném postupu ukazují, jak použít ladicí program XSLT. Kr
   
 #### <a name="to-use-the-watch-window"></a>Pokud chcete použít okno kukátka  
   
-1.  Z **ladění** nabídky, přejděte k **Windows**, přejděte na **Watch**a klikněte na tlačítko **kukátko 1**.  
+1. Z **ladění** nabídky, přejděte k **Windows**, přejděte na **Watch**a klikněte na tlačítko **kukátko 1**.  
   
      V okně kukátko 1 díky viditelné.  
   
-2.  Typ `$bookAverage` v **název** pole a stiskněte klávesu ENTER.  
+2. Typ `$bookAverage` v **název** pole a stiskněte klávesu ENTER.  
   
      Hodnota `$bookAverage` proměnné se zobrazí v okně.  
   
-3.  Typ `self::node()` v **název** pole a stiskněte klávesu ENTER.  
+3. Typ `self::node()` v **název** pole a stiskněte klávesu ENTER.  
   
      `self::node()` je výraz XPath, který se vyhodnotí jako aktuální uzel kontextu. Hodnota `self::node()` výraz XPath je první uzel knihy. To změní, když jsme průběhu transformace.  
   
-4.  Rozbalte `self::node()` uzel a potom rozbalte `price` uzlu.  
+4. Rozbalte `self::node()` uzel a potom rozbalte `price` uzlu.  
   
      To umožňuje zobrazit hodnotu cenu knih a můžete snadno porovnat tak, `$bookAverage` hodnotu. Vzhledem k tomu knihy cena je nižší než průměr, `xsl:if` podmínku uspěli.  
   
@@ -80,19 +80,19 @@ Kroky v tomto názorném postupu ukazují, jak použít ladicí program XSLT. Kr
   
 #### <a name="to-step-through-the-code"></a>Chcete-li si kód  
   
-1.  Stisknutím klávesy **F5** pokračujte.  
+1. Stisknutím klávesy **F5** pokračujte.  
   
      Protože splněna první uzel knihy `xsl:if` podmínku, uzel knihy se přidá v okně výstupu XSL. Ladicí program pokračuje v provádění, dokud je znovu umístěn na `xsl:if` element v šabloně stylů. Ladicí program je nyní umístěn na druhém uzlu adresáře v soubor books.xml.  
   
      V okně Watch1 `self::node()` hodnota nezmění na druhý uzel knihy. Prozkoumáním hodnota elementu cena můžete určit, že cena je vyšší než průměr, tedy `xsl:if` podmínka by selhat.  
   
-2.  Stisknutím klávesy **F5** pokračujte.  
+2. Stisknutím klávesy **F5** pokračujte.  
   
      Protože druhý uzel knihy nesplňuje `xsl:if` podmínku, uzel knihy není přidán do okna výstup XSL. Ladicí program pokračuje v provádění, dokud je znovu umístěn na `xsl:if` element v šabloně stylů. Ladicí program je nyní umístěn na třetí `book` uzel v soubor books.xml.  
   
      V okně Watch1 `self::node()` hodnota nezmění na třetí uzel knihy. Porovnáním hodnoty `price` element, můžete určit, že cena je nižší než průměr, tedy `xsl:if` podmínku uspěli.  
   
-3.  Stisknutím klávesy **F5** pokračujte.  
+3. Stisknutím klávesy **F5** pokračujte.  
   
      Vzhledem k tomu, `xsl:if` byla splněna podmínka, třetí kniha je přidána do okna výstupu XSL. Byly zpracovány všechny knihy v dokumentu XML a ladicí program se zastaví.  
   

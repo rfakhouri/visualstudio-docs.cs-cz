@@ -11,12 +11,12 @@ ms.assetid: e94a4fea-94df-488e-8560-9538413422bc
 caps.latest.revision: 36
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: ec19e71685fc2a866f23d5050861e5733ef6cb39
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 324e74c78f01da47c544b5f640ad0bd9052a1bb4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54767255"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107642"
 ---
 # <a name="subscribing-to-an-event"></a>Přihlášení k odběru události
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,13 +30,13 @@ Tento návod popisuje, jak vytvořit okno nástroje, který reaguje na události
   
 #### <a name="to-create-an-extension-with-a-tool-window"></a>Vytváření rozšíření pomocí panelu nástrojů  
   
-1.  Vytvoření projektu s názvem **RDTExplorer** VSIX šablony a přidat šablonu vlastního nástroje okna položku s názvem **RDTExplorerWindow**.  
+1. Vytvoření projektu s názvem **RDTExplorer** VSIX šablony a přidat šablonu vlastního nástroje okna položku s názvem **RDTExplorerWindow**.  
   
      Další informace o vytváření rozšíření pomocí panelu nástrojů najdete v tématu [vytváření rozšíření pomocí panelu nástrojů](../extensibility/creating-an-extension-with-a-tool-window.md).  
   
 #### <a name="to-subscribe-to-rdt-events"></a>Přihlásit k odběru události r...  
   
-1.  Otevřete soubor RDTExplorerWindowControl.xaml a tlačítko s názvem odstranit `button1`. Přidat <xref:System.Windows.Forms.ListBox> řídit a přijměte výchozí název. Element mřížky by měl vypadat nějak takto:  
+1. Otevřete soubor RDTExplorerWindowControl.xaml a tlačítko s názvem odstranit `button1`. Přidat <xref:System.Windows.Forms.ListBox> řídit a přijměte výchozí název. Element mřížky by měl vypadat nějak takto:  
   
     ```xml  
     <Grid>  
@@ -47,7 +47,7 @@ Tento návod popisuje, jak vytvořit okno nástroje, který reaguje na události
     </Grid>  
     ```  
   
-2.  Otevřete soubor RDTExplorerWindow.cs v zobrazení kódu. Přidejte následující příkazy using do začátku souboru.  
+2. Otevřete soubor RDTExplorerWindow.cs v zobrazení kódu. Přidejte následující příkazy using do začátku souboru.  
   
     ```csharp  
     using Microsoft.VisualStudio;  
@@ -55,24 +55,24 @@ Tento návod popisuje, jak vytvořit okno nástroje, který reaguje na události
     using Microsoft.VisualStudio.Shell.Interop;  
     ```  
   
-3.  Upravit `RDTExplorerWindow` třídy tak, že kromě odvozený od <xref:Microsoft.VisualStudio.Shell.ToolWindowPane> třída implementuje <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents> rozhraní.  
+3. Upravit `RDTExplorerWindow` třídy tak, že kromě odvozený od <xref:Microsoft.VisualStudio.Shell.ToolWindowPane> třída implementuje <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents> rozhraní.  
   
     ```csharp  
     public class RDTExplorerWindow : ToolWindowPane, IVsRunningDocTableEvents  
     {. . .}  
     ```  
   
-4.  Implementace <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents>.  
+4. Implementace <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents>.  
   
-    -   Implementujte rozhraní. Umístěte kurzor na název IVsRunningDocTableEvents. Měli byste vidět návrhy na levém okraji. Klikněte na šipku dolů napravo od žárovky a vyberte **implementovat rozhraní**.  
+    - Implementujte rozhraní. Umístěte kurzor na název IVsRunningDocTableEvents. Měli byste vidět návrhy na levém okraji. Klikněte na šipku dolů napravo od žárovky a vyberte **implementovat rozhraní**.  
   
-5.  V každé metodě v rozhraní, nahraďte řádek `throw new NotImplementedException();` s tímto:  
+5. V každé metodě v rozhraní, nahraďte řádek `throw new NotImplementedException();` s tímto:  
   
     ```csharp  
     return VSConstants.S_OK;  
     ```  
   
-6.  Přidejte pole souboru cookie RDTExplorerWindow třídy.  
+6. Přidejte pole souboru cookie RDTExplorerWindow třídy.  
   
     ```csharp  
     private uint rdtCookie;   
@@ -80,7 +80,7 @@ Tento návod popisuje, jak vytvořit okno nástroje, který reaguje na události
   
      To obsahuje souboru cookie, který je vrácený <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.AdviseRunningDocTableEvents%2A> metody.  
   
-7.  Přepište metodu Initialize() RDTExplorerWindow společnosti k registraci pro r... události. Vždy byste měli získat služby v metodu třídy ToolWindowPane Initialize(), není v konstruktoru.  
+7. Přepište metodu Initialize() RDTExplorerWindow společnosti k registraci pro r... události. Vždy byste měli získat služby v metodu třídy ToolWindowPane Initialize(), není v konstruktoru.  
   
     ```csharp  
     protected override void Initialize()  
@@ -93,7 +93,7 @@ Tento návod popisuje, jak vytvořit okno nástroje, který reaguje na události
   
      <xref:Microsoft.VisualStudio.Shell.Interop.SVsRunningDocumentTable> Služby je volána k získání <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable> rozhraní. <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.AdviseRunningDocTableEvents%2A> Metoda připojí rámcový události na objekt, který implementuje <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents>, v tomto případě RDTExplorer objektu.  
   
-8.  Metoda Dispose() RDTExplorerWindow aktualizace.  
+8. Metoda Dispose() RDTExplorerWindow aktualizace.  
   
     ```csharp  
     protected override void Dispose(bool disposing)  

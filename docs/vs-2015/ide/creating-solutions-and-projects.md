@@ -18,12 +18,12 @@ caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: db0aaaee01c27fa4588cc2268cd3106abfcc739e
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: d91263dc0f66c048e308505e461c8b1536b77a06
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54763111"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109807"
 ---
 # <a name="creating-solutions-and-projects"></a>Vytváření řešení a projektů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,7 +62,7 @@ Projekty jsou logické kontejnery pro všechno, co potřebujete k sestavení apl
 ## <a name="adding-single-files-at-the-solution-level"></a>Přidání jednotlivé soubory na úrovni řešení  
  Někdy je nutné soubor, na který odkazovat více projektů nebo, který obsahuje text nebo různých dat, které logicky patří na úrovni řešení, nikoli v konkrétním projektu.  Chcete-li přidat jednu položku řešení:  
   
-1.  Klikněte pravým tlačítkem na uzel řešení v **Průzkumníka řešení** a zvolte **přidat &#124; nová položka** nebo **přidat &#124; existující položku**.  
+1. Klikněte pravým tlačítkem na uzel řešení v **Průzkumníka řešení** a zvolte **přidat &#124; nová položka** nebo **přidat &#124; existující položku**.  
   
 ## <a name="creating-empty-solutions"></a>Vytvoření prázdných řešení  
  I když projekt musí být umístěn v řešení, můžete vytvořit řešení, která nemá žádné projekty.  
@@ -87,11 +87,11 @@ Projekty jsou logické kontejnery pro všechno, co potřebujete k sestavení apl
   
 ##### <a name="to-delete-a-solution"></a>Odstranit řešení  
   
-1.  V **Průzkumníka řešení**, klikněte pravým tlačítkem na řešení, které chcete odstranit a vyberte **otevřít složku v Průzkumníku souborů**.  
+1. V **Průzkumníka řešení**, klikněte pravým tlačítkem na řešení, které chcete odstranit a vyberte **otevřít složku v Průzkumníku souborů**.  
   
-2.  V Průzkumníku souborů přejděte o jednu úroveň výše.  
+2. V Průzkumníku souborů přejděte o jednu úroveň výše.  
   
-3.  Vyberte adresář, který obsahuje řešení a stiskněte klávesu Delete.  
+3. Vyberte adresář, který obsahuje řešení a stiskněte klávesu Delete.  
   
 ## <a name="see-also"></a>Viz také  
  [Řešení a projekty](../ide/solutions-and-projects-in-visual-studio.md)   

@@ -11,12 +11,12 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 83c2de11e31dced3be48e390d8bd5b21d57d2092
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: a9298f57e3b1f4a05effcb82a39e14503c9cbf74
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59668491"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60090756"
 ---
 # <a name="item-definitions"></a>Definice položek
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,15 +25,15 @@ ms.locfileid: "59668491"
   
  *ItemDefinitionGroup –* elementu se zobrazí okamžitě po [projektu](../msbuild/project-element-msbuild.md) prvek souboru projektu. Definice položek poskytují následující funkce:  
   
--   Můžete definovat globální výchozí nastavení metadat pro položky mimo cíl. To znamená na stejná metadata platí pro všechny položky zadaného typu.  
+- Můžete definovat globální výchozí nastavení metadat pro položky mimo cíl. To znamená na stejná metadata platí pro všechny položky zadaného typu.  
   
--   Typy položek může mít několik definic. Při přidání dalších metadat specifikace typu, poslední specifikace přednost. \(Metadata se řídí stejným pořadím importu následujícím způsobem vlastnosti.\)  
+- Typy položek může mít několik definic. Při přidání dalších metadat specifikace typu, poslední specifikace přednost. \(Metadata se řídí stejným pořadím importu následujícím způsobem vlastnosti.\)  
   
--   Může být metadata sčítání. Například jsou hodnoty CDefines shromážděna podmíněně, v závislosti na vlastnosti, které jsou nastavena. Například, `MT;STD_CALL;DEBUG;UNICODE`.  
+- Může být metadata sčítání. Například jsou hodnoty CDefines shromážděna podmíněně, v závislosti na vlastnosti, které jsou nastavena. Například, `MT;STD_CALL;DEBUG;UNICODE`.  
   
--   Metadata se dá odebrat.  
+- Metadata se dá odebrat.  
   
--   Podmínky lze použít k řízení zahrnutí metadat.  
+- Podmínky lze použít k řízení zahrnutí metadat.  
   
 ## <a name="item-metadata-default-values"></a>Položka metadat výchozí hodnoty  
  Metadata položky, která je definována v ItemDefinitionGroup – je jenom deklarace výchozí metadat. Metadata nelze použít, dokud nedefinujete položku, která se používá ItemGroup tak, aby obsahovala hodnoty metadat.  
@@ -66,21 +66,21 @@ ms.locfileid: "59668491"
 ## <a name="value-sources"></a>Hodnota zdroje  
  Hodnoty pro metadata, která je definována v ItemDefinitionGroup – mohou pocházet z mnoha různých zdrojů, následujícím způsobem:  
   
--   PropertyGroup Property  
+- PropertyGroup Property  
   
--   Položku ze ItemDefinitionGroup –  
+- Položku ze ItemDefinitionGroup –  
   
--   Položka transformaci ItemDefinitionGroup – položky  
+- Položka transformaci ItemDefinitionGroup – položky  
   
--   Proměnná prostředí  
+- Proměnná prostředí  
   
--   Global – vlastnost \(z příkazového řádku MSBuild.exe\)  
+- Global – vlastnost \(z příkazového řádku MSBuild.exe\)  
   
--   Rezervované vlastnosti  
+- Rezervované vlastnosti  
   
--   Dobře\-známá metadata pro položku ze ItemDefinitionGroup –  
+- Dobře\-známá metadata pro položku ze ItemDefinitionGroup –  
   
--   Oddíl CDATA \< \! \[CDATA\[nic tady není analyzovat\]\]\>  
+- Oddíl CDATA \< \! \[CDATA\[nic tady není analyzovat\]\]\>  
   
 > [!NOTE]
 >  Metadata položky ze ItemGroup není užitečné při deklaraci ItemDefinitionGroup – metadat, protože ItemDefinitionGroup – prvky se zpracovávají před ItemGroup prvky.  

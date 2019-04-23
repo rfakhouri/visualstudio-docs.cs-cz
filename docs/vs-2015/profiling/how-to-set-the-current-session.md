@@ -17,12 +17,12 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: edb5303a283de943ed99fc43003aacdeefe729c9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d6d7362392aeda9bcff61d811933eb4286d6c4cd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54760389"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102689"
 ---
 # <a name="how-to-set-the-current-session"></a>Postupy: Nastavení aktuální relace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ Můžete otevřít více výkonnostních relací v **prohlížeč výkonu**a pak
   
 ### <a name="to-set-current-performance-session"></a>Nastavení aktuální výkonnostní relace  
   
--   V **prohlížeč výkonu**, klikněte pravým tlačítkem na relaci výkonu a pak klikněte na tlačítko **nastavit jako aktuální relaci**.  
+- V **prohlížeč výkonu**, klikněte pravým tlačítkem na relaci výkonu a pak klikněte na tlačítko **nastavit jako aktuální relaci**.  
   
      Název relace se zobrazí tučným písmem.  
   

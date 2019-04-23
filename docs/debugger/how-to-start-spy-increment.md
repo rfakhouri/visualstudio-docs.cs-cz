@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 91eda74b4f83f38434117ab1217d0a20d66d2842
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 85e253491a4cb3713b5920c9abd09f9396298319
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56712447"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099140"
 ---
 # <a name="how-to-start-spy"></a>Postupy: Spuštění nástroje Spy++
 
@@ -46,9 +46,9 @@ Protože nástroje Spy ++ běží nezávisle na sobě po spuštění sady Visual
 
 ## <a name="start-spy-at-a-command-prompt"></a>Spuštění nástroje Spy ++ z příkazového řádku
 
-1.  V okně příkazového řádku přejděte do složky, která obsahuje spyxx.exe. Obvykle je cesta k této složce... \\ *Instalační složky sady visual Studio*\Common7\Tools\\.
+1. V okně příkazového řádku přejděte do složky, která obsahuje spyxx.exe. Obvykle je cesta k této složce... \\ *Instalační složky sady visual Studio*\Common7\Tools\\.
 
-2.  Enter **spyxx.exe**.
+2. Enter **spyxx.exe**.
 
 ## <a name="see-also"></a>Viz také:
 - [Použití nástroje Spy++](../debugger/using-spy-increment.md)

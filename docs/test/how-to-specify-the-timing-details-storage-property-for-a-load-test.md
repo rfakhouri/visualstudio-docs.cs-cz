@@ -9,12 +9,12 @@ ms.assetid: 867a9c21-0909-4963-bc02-d41e9393008c
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 94d996dbd069c258522418b9ca0be14bf54df156
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ec6ca0e39a7816d99377bc13e1274cbc96a663ea
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55948690"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109423"
 ---
 # <a name="how-to-specify-the-timing-details-storage-property-for-a-load-test-run-setting"></a>Postupy: Určení vlastnosti úložiště podrobností časování pro spuštění zátěžového testu
 
@@ -47,15 +47,15 @@ Můžete upravit nastavení spuštění **úložiště podrobností časování*
 
 ## <a name="to-configure-the-timing-details-storage-property-in-a-load-test"></a>Konfigurace vlastnosti úložiště podrobností načasování v zátěžovém testu
 
-1.  V editoru zátěžového testu otevřete zátěžový test.
+1. V editoru zátěžového testu otevřete zátěžový test.
 
-2.  Rozbalte **parametrů běhu** uzlu v zátěžovém testu.
+2. Rozbalte **parametrů běhu** uzlu v zátěžovém testu.
 
-3.  Zvolte v běhu, které chcete konfigurovat, například **běhu1 [aktivní]**.
+3. Zvolte v běhu, které chcete konfigurovat, například **běhu1 [aktivní]**.
 
-4.  Otevřít **vlastnosti** okna. Na **zobrazení** nabídce vyberte možnost **okno vlastností**.
+4. Otevřít **vlastnosti** okna. Na **zobrazení** nabídce vyberte možnost **okno vlastností**.
 
-5.  V části **výsledky** kategorie, zvolte **úložiště podrobností časování** vlastnosti a vyberte **detaily o všech jednotlivých položkách**.
+5. V části **výsledky** kategorie, zvolte **úložiště podrobností časování** vlastnosti a vyberte **detaily o všech jednotlivých položkách**.
 
      Po nakonfigurování **detaily o všech jednotlivých položkách** nastavení **úložiště podrobností časování** vlastností, můžete spustit zatížení testování a zobrazení **graf aktivity virtuálního uživatele**. Další informace najdete v tématu [jak: Co dělají virtuálních uživatelů během zátěžového testu analyzovat](../test/how-to-analyze-virtual-user-activity-during-a-load-test.md).
 

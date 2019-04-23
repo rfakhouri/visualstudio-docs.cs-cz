@@ -13,12 +13,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 34fe3cecc07d567c362e0dbdde3eb271c80dd61c
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: e2fd0e329e6cf3434348fba1d3282921ee8c1f57
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54756801"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114792"
 ---
 # <a name="threads-view-parallel-performance"></a>Zobrazení vláken (paralelní výkon)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,19 +42,19 @@ Zobrazení vláken je nejvíce podrobná a plně funkční zobrazení ve vizuali
 ## <a name="usage"></a>Použití  
  Tady jsou některé způsoby, které můžete zobrazení vláken:  
   
--   Určení důvodů, proč uživatelského rozhraní (UI) aplikace během určité fáze spuštění nereaguje.  
+- Určení důvodů, proč uživatelského rozhraní (UI) aplikace během určité fáze spuštění nereaguje.  
   
--   Určete dobu, kterou má stráví blokování synchronizace, vstupně-výstupních operací, stránkování a dalších událostí.  
+- Určete dobu, kterou má stráví blokování synchronizace, vstupně-výstupních operací, stránkování a dalších událostí.  
   
--   Identifikujte stupeň před rušením z jiných procesů, které jsou spuštěny v systému.  
+- Identifikujte stupeň před rušením z jiných procesů, které jsou spuštěny v systému.  
   
--   Identifikujte problémy Vyrovnávání zatížení pro paralelní zpracování.  
+- Identifikujte problémy Vyrovnávání zatížení pro paralelní zpracování.  
   
--   Určení důvodů škálovatelnost, která je neoptimální nebo neexistující (třeba Proč se výkon paralelní aplikace se nezvyšuje, když jsou k dispozici více logických jader).  
+- Určení důvodů škálovatelnost, která je neoptimální nebo neexistující (třeba Proč se výkon paralelní aplikace se nezvyšuje, když jsou k dispozici více logických jader).  
   
--   Seznamte se s stupeň souběžnosti v aplikacích, které vám pomůžou paralelního zpracování.  
+- Seznamte se s stupeň souběžnosti v aplikacích, které vám pomůžou paralelního zpracování.  
   
--   Pochopení závislostí mezi pracovních vláken a kritické cesty spuštění.  
+- Pochopení závislostí mezi pracovních vláken a kritické cesty spuštění.  
   
 ## <a name="examining-specific-time-intervals-and-threads"></a>Zkoumání určitých časových intervalech a vlákna  
  Zobrazení vláken ukazuje časovou osu. Můžete přiblížení a posouvání v časové ose ke kontrole určitých intervalech a vlákna vaší aplikace. Na ose x čas a na ose y jsou několika kanálů:  

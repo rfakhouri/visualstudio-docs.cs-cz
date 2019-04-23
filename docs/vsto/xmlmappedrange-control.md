@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0ee0bc8b74c9a9006c9ac0a59d95da5708e62489
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: cde5489d970de02afbce28ab9c60c677ab199c84
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56597891"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105679"
 ---
 # <a name="xmlmappedrange-control"></a>Xmlmappedrange – ovládací prvek
   <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> Rozsahu, který se vytvoří pouze v případě, že element neopakujícími schématu je namapována na buňku v aplikaci Microsoft Office Excel je ovládací prvek. Například, když `maxOccurs` atribut na prvek schématu se rovná 1. Poté, co Visual Studio vytvoří rozsah XML, namapované, můžete programovat proti ho přímo bez nutnosti procházení objektovému modelu Excelu. Můžete ho jenom odstranit <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> ovládací prvek v rámci aplikace Excel při odebrání mapování elementu.
@@ -41,21 +41,21 @@ ms.locfileid: "56597891"
 ## <a name="events"></a>Události
  K dispozici pro události <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> ovládacího prvku:
 
--   <xref:Microsoft.Office.Tools.Excel.XmlMappedRange.BeforeDoubleClick>
+- <xref:Microsoft.Office.Tools.Excel.XmlMappedRange.BeforeDoubleClick>
 
--   <xref:Microsoft.Office.Tools.Excel.XmlMappedRange.BeforeRightClick>
+- <xref:Microsoft.Office.Tools.Excel.XmlMappedRange.BeforeRightClick>
 
--   <xref:Microsoft.Office.Tools.Excel.XmlMappedRange.BindingContextChanged>
+- <xref:Microsoft.Office.Tools.Excel.XmlMappedRange.BindingContextChanged>
 
--   <xref:Microsoft.Office.Tools.Excel.XmlMappedRange.Change>
+- <xref:Microsoft.Office.Tools.Excel.XmlMappedRange.Change>
 
--   <xref:Microsoft.Office.Tools.Excel.XmlMappedRange.Selected>
+- <xref:Microsoft.Office.Tools.Excel.XmlMappedRange.Selected>
 
--   <xref:Microsoft.Office.Tools.Excel.XmlMappedRange.Deselected>
+- <xref:Microsoft.Office.Tools.Excel.XmlMappedRange.Deselected>
 
--   <xref:System.ComponentModel.Component.Disposed>
+- <xref:System.ComponentModel.Component.Disposed>
 
--   <xref:Microsoft.Office.Tools.Excel.XmlMappedRange.SelectionChange>
+- <xref:Microsoft.Office.Tools.Excel.XmlMappedRange.SelectionChange>
 
 ## <a name="see-also"></a>Viz také:
 - [Automatizace aplikace Excel s použitím rozšířených objektů](../vsto/automating-excel-by-using-extended-objects.md)

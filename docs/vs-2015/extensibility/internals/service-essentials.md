@@ -10,12 +10,12 @@ ms.assetid: fbe84ad9-efe1-48b1-aba3-b50b90424d47
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 90b16c9d7e7a762b6c1dac322ae9467b835476fd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5b659560c7242fa691fe046b5e1628b1e47c2a2d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54763989"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111595"
 ---
 # <a name="service-essentials"></a>Základy služeb
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -28,19 +28,19 @@ Služba je kontrakt mezi dvěma rozšíření VSPackages. Jeden VSPackage poskyt
   
  Services k dispozici žádné možnosti rozpoznání. Proto musíte znát služby identifikátor (SID), který chcete používat službu, a musíte znát rozhraní, která poskytuje. Referenční dokumentace pro službu poskytuje tyto informace.  
   
--   Rozšíření VSPackages, které poskytují služby, se nazývají poskytovatelé služeb.  
+- Rozšíření VSPackages, které poskytují služby, se nazývají poskytovatelé služeb.  
   
--   Služby, které jsou k dispozici další balíčky VSPackages, se nazývají služeb global services.  
+- Služby, které jsou k dispozici další balíčky VSPackages, se nazývají služeb global services.  
   
--   Služby, které jsou k dispozici pouze pro sady VSPackage, která implementuje je, nebo na libovolný objekt, který vytvoří, se nazývají místních služeb.  
+- Služby, které jsou k dispozici pouze pro sady VSPackage, která implementuje je, nebo na libovolný objekt, který vytvoří, se nazývají místních služeb.  
   
--   Služby, které nahrazují integrované služby nebo služeb poskytovaných další balíčky, se nazývají přepsání služby.  
+- Služby, které nahrazují integrované služby nebo služeb poskytovaných další balíčky, se nazývají přepsání služby.  
   
--   Služby nebo přepsání služby jsou načtena na vyžádání, to znamená, je načteno poskytovatele služeb, když službu, kterou poskytuje požádá o jiný VSPackage.  
+- Služby nebo přepsání služby jsou načtena na vyžádání, to znamená, je načteno poskytovatele služeb, když službu, kterou poskytuje požádá o jiný VSPackage.  
   
--   Poskytovatel služeb pro podporu načítání na vyžádání, zaregistruje jeho služeb global services s [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Další informace najdete v tématu [registrace služby](../../misc/registering-services.md).  
+- Poskytovatel služeb pro podporu načítání na vyžádání, zaregistruje jeho služeb global services s [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Další informace najdete v tématu [registrace služby](../../misc/registering-services.md).  
   
--   Po obdržení služby použijte [QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) (nespravovaný kód) nebo přetypování (spravovaný kód) Chcete-li získat požadované rozhraní, například:  
+- Po obdržení služby použijte [QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) (nespravovaný kód) nebo přetypování (spravovaný kód) Chcete-li získat požadované rozhraní, například:  
   
     ```vb  
     TryCast(GetService(GetType(SVsActivityLog)), IVsActivityLog)  
@@ -51,13 +51,13 @@ Služba je kontrakt mezi dvěma rozšíření VSPackages. Jeden VSPackage poskyt
   
     ```  
   
--   Spravovaný kód odkazuje na službu podle jeho typu, zatímco nespravovaný kód odkazuje na službu podle její identifikátor GUID.  
+- Spravovaný kód odkazuje na službu podle jeho typu, zatímco nespravovaný kód odkazuje na službu podle její identifikátor GUID.  
   
--   Když [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] načte VSPackage, předá poskytovatel služeb VSPackage chcete dát VSPackage přístup ke službám global services. To se označuje jako "umístění" sady VSPackage.  
+- Když [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] načte VSPackage, předá poskytovatel služeb VSPackage chcete dát VSPackage přístup ke službám global services. To se označuje jako "umístění" sady VSPackage.  
   
--   Rozšíření VSPackages může být poskytovatelů služeb pro objekty, které vytvářejí. Například může formuláře odeslat žádost o službu barva jeho snímek, který může předat požadavky na [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
+- Rozšíření VSPackages může být poskytovatelů služeb pro objekty, které vytvářejí. Například může formuláře odeslat žádost o službu barva jeho snímek, který může předat požadavky na [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
   
--   Spravované objekty, které jsou vnořeny hluboko, nebo není umístěna vůbec, může volat <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> pro přímý přístup ke službám global services. Další informace najdete v tématu [jak: Použít GetGlobalService](../../misc/how-to-use-getglobalservice.md).  
+- Spravované objekty, které jsou vnořeny hluboko, nebo není umístěna vůbec, může volat <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> pro přímý přístup ke službám global services. Další informace najdete v tématu [jak: Použít GetGlobalService](../../misc/how-to-use-getglobalservice.md).  
   
 ## <a name="see-also"></a>Viz také  
  [Seznam dostupných služeb](../../extensibility/internals/list-of-available-services.md)   

@@ -23,12 +23,12 @@ manager: jillfra
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 25021f0c3daffdaf59633fdb9bff0e2659f43d2e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 1efe109741c306d45ce7f7749193f5b638b76949
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55043022"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112868"
 ---
 # <a name="how-to-step-out-of-managed-code-when-native-frames-are-missing-from-the-call-stack-window"></a>Postupy: Vystoupení ze spravovaného kódu, pokud v okně zásobník volání chybějí nativní rámce
 
@@ -39,9 +39,9 @@ Pokud má váš kód nativní rámce, které jsou viditelné ve **zásobník vol
 
 ## <a name="step-out-of-managed-code-when-native-frames-are-missing-from-the-call-stack-display"></a>Vystoupení ze spravovaného kódu, pokud zobrazení zásobníku volání chybějí nativní rámce
 
-1.  V nativním kódu nastavte zarážku umístění po volání spravovaného kódu.
+1. V nativním kódu nastavte zarážku umístění po volání spravovaného kódu.
 
-2.  Na **ladění** nabídce zvolte **pokračovat**.
+2. Na **ladění** nabídce zvolte **pokračovat**.
 
      Po dokončení spravovaných volání provádění zastaví na zarážce v nativním kódu.
 

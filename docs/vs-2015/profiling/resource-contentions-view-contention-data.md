@@ -13,12 +13,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2f98cad59356b48be185ba8e73d91bd3d368ff2a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c6a7d4d1e80323b4d260ac558661c222f72ec3c1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54804131"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108692"
 ---
 # <a name="resource-contentions-view---contention-data"></a>Zobrazení kolizí prostředku – data kolizí
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,9 +33,9 @@ Zobrazení kolizí prostředku obsahuje data kolize prostředků, které byly zd
 ### <a name="function-values"></a>Hodnoty – funkce  
  Hodnoty funkcí jsou založeny na instance, ke které došlo v provádění cestu ve stromu volání funkce.  
   
--   Výhradní hodnoty jsou založené na události, ke kterým došlo při provádění funkce příkazy v těle jeho funkce. Události, ke kterým došlo ve funkcích, které byly volány funkce nejsou součástí výhradní hodnoty.  
+- Výhradní hodnoty jsou založené na události, ke kterým došlo při provádění funkce příkazy v těle jeho funkce. Události, ke kterým došlo ve funkcích, které byly volány funkce nejsou součástí výhradní hodnoty.  
   
--   Celkové hodnoty jsou založené na události, ke kterým došlo při provádění funkce nebo funkce volané funkce.  
+- Celkové hodnoty jsou založené na události, ke kterým došlo při provádění funkce nebo funkce volané funkce.  
   
 ### <a name="percentage-values"></a>Procento hodnoty  
  Procento hodnoty jsou založeny na celkový čas nebo kolize události v dat profilování. Pokud je filtrování sestav nebo zobrazení běhu profilování, čas zablokování a tento počet sporů: v filtrovaná data se používají jako celková hodnota.  

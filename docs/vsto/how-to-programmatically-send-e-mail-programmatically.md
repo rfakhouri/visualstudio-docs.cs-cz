@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 280b4f526bad3e0ba646058b3e2410a98ca910fe
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4def747f4077d7b847e7e87082dc4b0b96cf04c9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56646002"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110788"
 ---
 # <a name="how-to-programmatically-send-email"></a>Postupy: Odeslání e-mailu prostřednictvím kódu programu
   Tento příklad odešle e-mailovou zprávu na kontakty, které mají název domény **example.com** jejich e-mailové adresy.
@@ -33,7 +33,7 @@ ms.locfileid: "56646002"
 ## <a name="compile-the-code"></a>Kompilace kódu
  Tento příklad vyžaduje:
 
--   Kontakty, které mají název domény **example.com** jejich e-mailové adresy.
+- Kontakty, které mají název domény **example.com** jejich e-mailové adresy.
 
 ## <a name="robust-programming"></a>Robustní programování
  Neodebírejte filtr kód, který hledá název domény **example.com**. Vaše řešení pošle e-mailové zprávy na všechny kontakty Pokud filtr odeberete.

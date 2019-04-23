@@ -57,12 +57,12 @@ caps.latest.revision: 41
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1a59432d6b630606ac5c133e8a5811186fcf7c34
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: ce3cfa8762c6202a7c36bd9606a0fa77ccdd94a4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58866757"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60084038"
 ---
 # <a name="managing-external-tools"></a>Správa externích nástrojů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,17 +72,17 @@ Externí nástroje je možné volat v rámci aplikace Visual Studio. Jsou k disp
 ## <a name="tools-available-on-the-visual-studio-tools-menu"></a>Nástroje, které jsou k dispozici v nabídce Nástroje aplikace Visual Studio  
  Můžete volat následující nástroje z **nástroje** v nabídce [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Můžete také volat prostřednictvím jeho názvu **Snadné spuštění** okna. Například chcete-li volat GuidGen.exe, zadejte **Create GUID**.  
   
-1.  Create GUID: vytvoří identifikátor GUID.  
+1. Create GUID: vytvoří identifikátor GUID.  
   
-2.  Chyba vyhledávání: na základě zadané hodnoty dostane chybovou zprávu. Další informace najdete v tématu [errlook – odkaz](http://msdn.microsoft.com/library/6040ffc1-2355-4a45-8998-84cbcba4ca91).  
+2. Chyba vyhledávání: na základě zadané hodnoty dostane chybovou zprávu. Další informace najdete v tématu [errlook – odkaz](http://msdn.microsoft.com/library/6040ffc1-2355-4a45-8998-84cbcba4ca91).  
   
-3.  Trasovací nástroj ATL/MFC: ve zdrojích ATL a MFC zobrazí zprávy trasování ladění.  
+3. Trasovací nástroj ATL/MFC: ve zdrojích ATL a MFC zobrazí zprávy trasování ladění.  
   
-4.  PreEmptive ochrana - Dotfuscator: Chrání programy .NET proti zpětné analýze.  
+4. PreEmptive ochrana - Dotfuscator: Chrání programy .NET proti zpětné analýze.  
   
-5.  SPY ++: Zobrazí procesy, vlákna, windows a zprávy okna graficky.  
+5. SPY ++: Zobrazí procesy, vlákna, windows a zprávy okna graficky.  
   
-6.  Editor konfigurace služby WCF: Umožňuje vytvářet a upravovat nastavení konfigurace pro služby WCF.  
+6. Editor konfigurace služby WCF: Umožňuje vytvářet a upravovat nastavení konfigurace pro služby WCF.  
   
 > [!WARNING]
 >  V závislosti na nainstalované verzi aplikace Visual Studio a na použitém nastavení profilu je možné vidět odlišný seznam externích nástrojů. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
@@ -90,11 +90,11 @@ Externí nástroje je možné volat v rámci aplikace Visual Studio. Jsou k disp
 ## <a name="adding-new-tools"></a>Přidání nových nástrojů  
  Můžete přidat externí nástroj **nástroje** nabídky. Otevřít **externích nástrojů** dialogové okno a klikněte na tlačítko **přidat**, následně vyplňte informace. Následující položka například způsobí otevření programu Průzkumník Windows v adresáři souboru aktuálně otevřeného v aplikaci Visual Studio:  
   
-1.  Název: Otevřít umístění souboru  
+1. Název: Otevřít umístění souboru  
   
-2.  Příkaz: explorer.exe  
+2. Příkaz: explorer.exe  
   
-3.  Argumenty: /root, "$(ItemDir)"  
+3. Argumenty: /root, "$(ItemDir)"  
   
 ## <a name="arguments-for-external-tools"></a>Argumenty pro externí nástroje  
  Následující argumenty jsou proměnné aplikace Visual Studio, které jsou přiřazeny při spuštění externího nástroje. Odkazy na externí nástroje, jako je Poznámkový blok nebo Spy ++, mohou být uvedeny v **nástroje** nabídky v dialogovém okně externí nástroje.  
@@ -102,7 +102,7 @@ Externí nástroje je možné volat v rámci aplikace Visual Studio. Jsou k disp
 > [!NOTE]
 >  Stavový řádek IDE zobrazuje pro označení místa bodu vložení v aktivním editoru kódu proměnné Current Line a Current Column. Proměnná Current Text vrací text nebo kód vybraný v rámci tohoto místa.  
   
-|Name|Argument|Popis|  
+|Název|Argument|Popis|  
 |----------|--------------|-----------------|  
 |Cesta položky|$(ItemPath)|Celý název souboru aktuálního souboru (jednotka + cesta + název souboru).|  
 |Adresář položky|$(ItemDir)|Adresář aktuálního souboru (jednotka + cesta).|  

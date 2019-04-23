@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e305ba59eaf5a0f60ec84d40ee9888ac17982c42
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 0ba49e1ab3e25e3f22a9ca8642673aa0a62869f6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59650626"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114766"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Barvy a styly pro sadu Visual Studio
 
@@ -85,7 +85,7 @@ V některých případech budete chtít povolit koncovému uživateli přizpůso
 
 ![Nástroje &gt; dialogové okno Možnosti](../../extensibility/ux-guidelines/media/0301-a_toolsoptionsdialog.png "0301 a_ToolsOptionsDialog")<br />Nástroje &gt; dialogové okno Možnosti
 
-##  <a name="BKMK_TheVSColorService"></a> Služba VSColor
+## <a name="BKMK_TheVSColorService"></a> Služba VSColor
 
 Visual Studio poskytuje službu barva prostředí, označovaný taky jako služba VSColor nebo služba barva prostředí. Tato služba umožňuje svázat nastavení barev pro každý motiv obsahující název hodnota barvy barevných prvků uživatelského rozhraní. Službu VSColor musí použít pro všechny prvky uživatelského rozhraní tak, aby barvy automaticky změnit tak, aby odrážela aktuální uživatel vybral motiv a tak, aby uživatelské rozhraní svázaná se službou barva prostředí se bude integrovat s nové motivy v budoucích verzích sady Visual Studio.
 
@@ -267,7 +267,7 @@ protected override void Dispose(bool disposing)
 }
 ```
 
-##  <a name="BKMK_ChoosingHighContrastColors"></a> Výběr vysoký kontrast – barvy
+## <a name="BKMK_ChoosingHighContrastColors"></a> Výběr vysoký kontrast – barvy
 
 ### <a name="overview"></a>Přehled
 
@@ -330,7 +330,7 @@ Mnoho běžných prvků uživatelského rozhraní již mít vysoký kontrast –
 | WindowFrame | – Integrované vývojové prostředí ohraničení |
 | WindowText | -Automatického schovávání kartu popředí<br />– Vybraný nástroj okno Karta popředí<br />– Bez fokusu nebo nevybraný prozatímní kartě popředí a na kartě okna dokumentu bez fokusu<br />-Popředí výchozí zobrazení a strom při najetí myší nad nevybrané glyfů<br />– Okraj vybraná karta okna nástroj<br />-Posuvníku thumb pozadí ohraničení a piktogram |
 
-##  <a name="BKMK_ExposingColorsForEndUsers"></a> Vystavení barvy pro koncové uživatele
+## <a name="BKMK_ExposingColorsForEndUsers"></a> Vystavení barvy pro koncové uživatele
 
 ### <a name="overview"></a>Přehled
 

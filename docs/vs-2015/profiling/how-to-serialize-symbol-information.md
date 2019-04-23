@@ -14,12 +14,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3f0359613586531a4cc7b80e25acc02be9ae37f9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b29ddb0e88a58fbfd924c40134305cf33a3e170b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54769175"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60103794"
 ---
 # <a name="how-to-serialize-symbol-information"></a>Postupy: Serializace informací o symbolu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,13 +28,13 @@ Může serializovat symboly, které potřebujete k analýze vaší aplikace. Ser
   
 ### <a name="to-automatically-serialize-symbol-information"></a>Automaticky serializovat informace o symbolech  
   
-1.  Na **nástroje** nabídky, klikněte na tlačítko **možnosti**.  
+1. Na **nástroje** nabídky, klikněte na tlačítko **možnosti**.  
   
      **Možnosti** se zobrazí dialogové okno.  
   
-2.  Klikněte na tlačítko **nástroje pro měření výkonu**.  
+2. Klikněte na tlačítko **nástroje pro měření výkonu**.  
   
-3.  V části **obecné nastavení**vyberte **automaticky serializovat informace o symbolech**.  
+3. V části **obecné nastavení**vyberte **automaticky serializovat informace o symbolech**.  
   
 ## <a name="see-also"></a>Viz také  
  [Konfigurace výkonnostních relací](../profiling/configuring-performance-sessions.md)   

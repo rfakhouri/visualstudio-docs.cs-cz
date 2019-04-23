@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 949014204f67f16e22d25cd604585a229c8967e6
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f3454ca7c01b44dcae60156e93bffde351209cc5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56619222"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099374"
 ---
 # <a name="how-to-add-and-remove-items-to-sharepoint-features"></a>Postupy: Přidání a odebrání položek z funkcí služby SharePoint
   Při vytváření řešení služby SharePoint, Visual Studio přidá výchozí položky projektu služby SharePoint do vaší funkce. Před nasazením můžete přidávat a odebírat položky Sharepointového projektu k úpravě funkce Sharepointu.
@@ -46,9 +46,9 @@ ms.locfileid: "56619222"
 
 #### <a name="to-remove-sharepoint-items-with-the-feature-designer"></a>Odebrat položky služby SharePoint pomocí návrháře funkcí
 
-1.  Vyberte jeden nebo více položek v **položek ve funkci** seznamu.
+1. Vyberte jeden nebo více položek v **položek ve funkci** seznamu.
 
-2.  Zvolte **odebrat** chcete položky odstraňovat po druhém, nebo zvolte tlačítko (<) **odebrat všechny** tlačítko (<<) odebrat všechny položky.
+2. Zvolte **odebrat** chcete položky odstraňovat po druhém, nebo zvolte tlačítko (<) **odebrat všechny** tlačítko (<<) odebrat všechny položky.
 
      Položky projektu služby SharePoint se zobrazí v **položky v řešení** seznamu.
 

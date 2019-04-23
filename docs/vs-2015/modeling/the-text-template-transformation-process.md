@@ -11,12 +11,12 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cf7f84d8900443d6fec9b84995c569ef21ed0e86
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0f92b4053006aa5da3c28d9330b372466f84d0fd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54796990"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113986"
 ---
 # <a name="the-text-template-transformation-process"></a>Proces transformace textových šablon
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,22 +38,22 @@ Proces transformace textových šablon přijímá jako vstupní soubor textové 
 ## <a name="the-engine"></a>Modul  
  Modul přijímá jako řetězec z hostitele, která zpracovává všechny soubory, které se používají v transformace procesu šablony. Modul následně požádá hostitele najít všechny vlastní procesory direktiv a další aspekty životního prostředí. Modul se potom zkompiluje a spustí vygenerované třídy transformace. Modul vrátí generovaný text na hostitele, který obvykle uloží text do souboru.  
   
-## <a name="the-host"></a>The Host  
+## <a name="the-host"></a>Hostitel  
  Hostitel je zodpovědná za nic, které se týkají prostředí mimo proces transformace, včetně následujících:  
   
--   Hledání textu a binárních souborů požadoval modul nebo procesor direktiv. Hostitel může prohledáním adresáře a globální mezipaměti sestavení k vyhledání sestavení. Hostitele můžete vyhledat kód vlastního procesoru direktiv pro tento motor. Hostitel můžete také najít a čtení textových souborů a vrátí jejich obsah jako řetězce.  
+- Hledání textu a binárních souborů požadoval modul nebo procesor direktiv. Hostitel může prohledáním adresáře a globální mezipaměti sestavení k vyhledání sestavení. Hostitele můžete vyhledat kód vlastního procesoru direktiv pro tento motor. Hostitel můžete také najít a čtení textových souborů a vrátí jejich obsah jako řetězce.  
   
--   Poskytuje seznam standardní sestavení a obory názvů, které se používají modulem vytvořit vygenerované třídy transformace.  
+- Poskytuje seznam standardní sestavení a obory názvů, které se používají modulem vytvořit vygenerované třídy transformace.  
   
--   Poskytování doménu aplikace, který se používá, když modul zkompiluje a spustí vygenerované třídy transformace. Pokud chcete ochránit před chybami v kódu šablony hostitele aplikace se používá zvláštní aplikační doména.  
+- Poskytování doménu aplikace, který se používá, když modul zkompiluje a spustí vygenerované třídy transformace. Pokud chcete ochránit před chybami v kódu šablony hostitele aplikace se používá zvláštní aplikační doména.  
   
--   Zápis vygenerovaného výstupního souboru.  
+- Zápis vygenerovaného výstupního souboru.  
   
--   Nastavení výchozí přípona pro generovaný soubor.  
+- Nastavení výchozí přípona pro generovaný soubor.  
   
--   Zpracování chyb transformace textové šablony. Hostitele můžete například zobrazit chyby v uživatelském rozhraní nebo zápis do souboru. (V [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], chyby se zobrazí v okně chybové zprávy.)  
+- Zpracování chyb transformace textové šablony. Hostitele můžete například zobrazit chyby v uživatelském rozhraní nebo zápis do souboru. (V [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], chyby se zobrazí v okně chybové zprávy.)  
   
--   Poskytuje hodnotu požadovaného parametru, pokud uživatel má direktivu volána bez zadání hodnoty. Procesoru direktiv můžete zadat název směrnice a parametr a požádejte hostitele tak, aby zadat výchozí hodnotu, pokud jej obsahuje.  
+- Poskytuje hodnotu požadovaného parametru, pokud uživatel má direktivu volána bez zadání hodnoty. Procesoru direktiv můžete zadat název směrnice a parametr a požádejte hostitele tak, aby zadat výchozí hodnotu, pokud jej obsahuje.  
   
 ## <a name="directives-and-directive-processors"></a>Direktivy a procesorů pro direktivy  
  Direktivy je příkaz v textové šabloně. Poskytuje parametry pro proces generování. Obvykle direktivy definovat zdroje a typ modelu nebo ostatní vstupy a příponu názvu souboru výstupního souboru.  

@@ -1,5 +1,5 @@
 ---
-title: 'Průvodce: Vytvoření vícevrstvé datové aplikace'
+title: 'Návod: Vytvoření vícevrstvé datové aplikace'
 ms.date: 09/08/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,14 +14,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4edd2ce00439a791f55787e9d55e9e51b3c7b27b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 471f0e9b97293bd70457a8f41cb7efddd6acf6c1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55933012"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091821"
 ---
-# <a name="walkthrough-create-an-n-tier-data-application"></a>Průvodce: Vytvoření vícevrstvé datové aplikace
+# <a name="walkthrough-create-an-n-tier-data-application"></a>Návod: Vytvoření vícevrstvé datové aplikace
 *N-vrstvá* datové aplikace jsou aplikace, které přístup k datům a jsou rozdělené do několika logické vrstvy, nebo *úrovně*. Rozdělení komponent aplikace do samostatných vrstev zvyšuje udržovatelnost a škálovatelnost aplikace. Dělá to tak, že umožněno snadnější přijímání nových technologií, které lze použít u jedné vrstvě, aniž by bylo potřeba změnit návrh celého řešení. N-vrstvá architektura obsahuje prezentační vrstvu, střední vrstvy, a datové vrstvy. Střední vrstva obvykle zahrnuje vrstvy přístupu k datům, vrstvy obchodní logiky a sdílené komponenty, jako je například ověřování a ověřování. Datová vrstva obsahuje relační databáze. N-vrstvá aplikace obvykle ukládá citlivé informace do vrstvy přístupu k datům z střední vrstvy, aby se zachovala izolace koncovým uživatelům, kteří přistupují k prezentační vrstvy. Další informace najdete v tématu [přehled vícevrstvých datových aplikací](../data-tools/n-tier-data-applications-overview.md).
 
 Jedním ze způsobů k rozdělení různých vrstev v n vrstvé aplikaci je vytvoření samostatných projektů pro každou vrstvu, která chcete zahrnout do vaší aplikace. Typové datové sady obsahují `DataSet Project` vlastnost, která určuje, že generované datová sada projekty, které a `TableAdapter` kódu by měly patřit do.
@@ -30,23 +30,23 @@ Tento návod ukazuje, jak oddělit datové sady a `TableAdapter` kód do samosta
 
 V tomto návodu provedete následující kroky:
 
--   Vytvořte nové n vrstvé řešení, která obsahuje více projektů.
+- Vytvořte nové n vrstvé řešení, která obsahuje více projektů.
 
--   Přidejte dva projekty knihovny tříd pro n vrstvého řešení.
+- Přidejte dva projekty knihovny tříd pro n vrstvého řešení.
 
--   Vytvoření typové datové sady s použitím **Průvodce konfigurací zdroje dat**.
+- Vytvoření typové datové sady s použitím **Průvodce konfigurací zdroje dat**.
 
--   Oddělení generované [objekty TableAdapter](create-and-configure-tableadapters.md) a kód datovou sadu do samostatných projektů.
+- Oddělení generované [objekty TableAdapter](create-and-configure-tableadapters.md) a kód datovou sadu do samostatných projektů.
 
--   Vytvoření služby Windows Communication Foundation (WCF) Chcete-li volat vrstvě přístupu k datům.
+- Vytvoření služby Windows Communication Foundation (WCF) Chcete-li volat vrstvě přístupu k datům.
 
--   Funkce můžete vytvořte ve službě k načtení dat z vrstvě přístupu k datům.
+- Funkce můžete vytvořte ve službě k načtení dat z vrstvě přístupu k datům.
 
--   Vytvoření aplikace Windows Forms, která bude sloužit jako prezentační vrstvy.
+- Vytvoření aplikace Windows Forms, která bude sloužit jako prezentační vrstvy.
 
--   Ovládací prvky Windows Forms, které jsou vázány na zdroj dat vytvořte.
+- Ovládací prvky Windows Forms, které jsou vázány na zdroj dat vytvořte.
 
--   Napsání kódu pro naplnění dat tabulky.
+- Napsání kódu pro naplnění dat tabulky.
 
 ![odkaz na video](../data-tools/media/playvideo.gif) video verzi tohoto tématu naleznete v tématu [Videonávod: Vytvoření vícevrstvé datové aplikace](http://go.microsoft.com/fwlink/?LinkId=115188).
 
@@ -301,7 +301,7 @@ Nastavíme **PresentationTier** projekt jako projekt po spuštění pro řešen�
 
 ### <a name="to-set-the-new-presentation-tier-project-as-the-startup-project"></a>Nastavení nového projektu prezentační vrstvy jako spouštěného projektu
 
--   V **Průzkumníka řešení**, klikněte pravým tlačítkem na **PresentationTier** a klikněte na tlačítko **nastavit jako spouštěný projekt**.
+- V **Průzkumníka řešení**, klikněte pravým tlačítkem na **PresentationTier** a klikněte na tlačítko **nastavit jako spouštěný projekt**.
 
 ## <a name="add-references-to-the-presentation-tier"></a>Přidání odkazů do prezentační vrstvy
  Klientská aplikace PresentationTier vyžaduje odkaz na službu ve službě data k přístup k metodám ve službě. Odkaz na datovou sadu se kromě toho je potřeba povolit typ sdílení ve službě WCF. Dokud nepovolíte sdílení prostřednictvím datové služby typu kódu do částečné třídy není k dispozici do prezentační vrstvy. Vzhledem k tomu obvykle přidáte kód, jako je například kód pro ověření do řádků a sloupců, změna událostí datové tabulky, je pravděpodobné, že budete chtít přístup tento kód z klienta.
@@ -375,9 +375,9 @@ Spusťte aplikaci stisknutím klávesy **F5**. Data z `Customers` a `Orders` tab
 ## <a name="next-steps"></a>Další kroky
  V závislosti na požadavcích aplikace existuje několik kroků, které můžete chtít provést po uložení souvisejících dat v aplikaci založené na Windows. Může například vytvořit následující vylepšení této aplikace:
 
--   Přidání ověřování do datové sady.
+- Přidání ověřování do datové sady.
 
--   Přidáte další metody pro službu pro aktualizaci dat zpět do databáze.
+- Přidáte další metody pro službu pro aktualizaci dat zpět do databáze.
 
 ## <a name="see-also"></a>Viz také:
 

@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d3c90d955ba412a75005ab47627c1901df57891
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9aa4f39fb54617ae1dbf048a1e13f009c8df5185
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936977"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085622"
 ---
 # <a name="override-and-extend-the-generated-classes"></a>Přepisování a rozšiřování vygenerovaných tříd
 
@@ -54,9 +54,9 @@ Tyto metody však můžete přepsat tak, že nastavíte **Generates Double Deriv
 
 Například v ukázce Library.dsl `CirculationBook` má doménová třída `Generates``Double Derived` nastavenou na `true`. Generovaný kód pro danou třídu domény obsahuje dvě třídy:
 
--   `CirculationBookBase`, což je abstraktní a který obsahuje všechny metody a vlastnosti.
+- `CirculationBookBase`, což je abstraktní a který obsahuje všechny metody a vlastnosti.
 
--   `CirculationBook`, který je odvozen z `CirculationBookBase`. Je prázdný, s výjimkou jejích konstruktorů.
+- `CirculationBook`, který je odvozen z `CirculationBookBase`. Je prázdný, s výjimkou jejích konstruktorů.
 
 Pokud chcete přepsat libovolné metody, vytvoříte částečnou definici odvozené třídy jako `CirculationBook`. Můžete přepsat generované metody a metody, které dědí z rozhraní pro modelování.
 

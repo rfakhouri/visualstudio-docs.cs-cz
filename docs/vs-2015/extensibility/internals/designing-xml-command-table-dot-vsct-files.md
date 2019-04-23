@@ -10,12 +10,12 @@ ms.assetid: bb87a322-bac4-4258-92bc-9a876f05d653
 caps.latest.revision: 28
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f83b5e85d02e4427e433a517bbac84dcccaab243
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 987536af051de4a66b3eccadb105fd98455ddf06
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54764010"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085900"
 ---
 # <a name="designing-xml-command-table-vsct-files"></a>Návrh tabulky příkazů XML (. Soubory Vsct)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -100,19 +100,19 @@ Soubor XML příkaz tabulky (.vsct) popisuje rozložení a vzhled příkaz polo�
 ## <a name="vsct-file-design-guidelines"></a>. Pokyny k návrhu souboru Vsct  
  Úspěšně navrhnout souboru .vsct, postupujte podle následujících pokynů.  
   
--   Příkazy lze umístit pouze do skupin, skupin je možné použít pouze v nabídkách a nabídky je možné použít pouze ve skupinách. Pouze nabídek zobrazených ve skutečnosti v rozhraní IDE, skupiny a příkazy nejsou.  
+- Příkazy lze umístit pouze do skupin, skupin je možné použít pouze v nabídkách a nabídky je možné použít pouze ve skupinách. Pouze nabídek zobrazených ve skutečnosti v rozhraní IDE, skupiny a příkazy nejsou.  
   
--   Podnabídek se nedají přímo přiřadit k nabídce, ale musí být přiřazen do skupiny, které je následně přiřazeno do nabídky.  
+- Podnabídek se nedají přímo přiřadit k nabídce, ale musí být přiřazen do skupiny, které je následně přiřazeno do nabídky.  
   
--   Příkazy, podnabídek a skupiny lze přiřadit k jedné skupině vztahy k nadřazeným položkám nebo nabídky pomocí nadřazeného pole jejich definování směrnice.  
+- Příkazy, podnabídek a skupiny lze přiřadit k jedné skupině vztahy k nadřazeným položkám nebo nabídky pomocí nadřazeného pole jejich definování směrnice.  
   
--   Uspořádání příkaz tabulky výhradně prostřednictvím nadřazené pole ve směrnicích má významné omezení. Direktivy, které definují objekty může trvat argumentu pouze jeden nadřazený prvek.  
+- Uspořádání příkaz tabulky výhradně prostřednictvím nadřazené pole ve směrnicích má významné omezení. Direktivy, které definují objekty může trvat argumentu pouze jeden nadřazený prvek.  
   
--   Opětovné použití příkazů, skupin nebo podnabídek vyžaduje použití nové direktivy pro vytvoření nové instance objektu vlastní `GUID:ID` pár.  
+- Opětovné použití příkazů, skupin nebo podnabídek vyžaduje použití nové direktivy pro vytvoření nové instance objektu vlastní `GUID:ID` pár.  
   
--   Každý `GUID:ID` dvojice musejí být jedinečné. Opětovné použití příkaz, který, například se nachází v nabídce, panel nástrojů, nebo v místní nabídce se zpracovává souborem <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> rozhraní.  
+- Každý `GUID:ID` dvojice musejí být jedinečné. Opětovné použití příkaz, který, například se nachází v nabídce, panel nástrojů, nebo v místní nabídce se zpracovává souborem <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> rozhraní.  
   
--   Příkazy a podnabídek můžete také přiřadit k několika skupinám a skupin je možné přiřadit k více pomocí nabídky [Commands – Element](../../extensibility/commands-element.md).  
+- Příkazy a podnabídek můžete také přiřadit k několika skupinám a skupin je možné přiřadit k více pomocí nabídky [Commands – Element](../../extensibility/commands-element.md).  
   
 ## <a name="vsct-file-notes"></a>. Poznámky k souboru Vsct  
  Pokud provedete změny souboru .vsct po vás i zkompilovat jej a umístěte ho do nativní satelitní knihovny DLL, měli byste spustit **devenv.exe/Setup /nosetupvstemplates**. To vynutí VSPackage prostředky zadané v experimentální registru, aby se znovu načíst a vnitřní databázi, která popisuje [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ji znovu sestavit.  

@@ -19,28 +19,28 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 17b03585c5b92560df6af8988ff954dba896f16a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: e7a58b2c8f14f1dff241b7f3c7d783460a83b7bb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56707169"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087986"
 ---
 # <a name="debugging-linq"></a>Ladění LINQ
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] podporuje ladění jazyka integrované dotazu kód (LINQ), s určitými omezeními. Většina funkcí ladění pracuje s příkazy LINQ, včetně krokování, nastavení zarážek a zobrazení výsledků v oknech ladicího programu. Toto téma popisuje hlavní omezení ladění LINQ.
 
-##  <a name="BKMK_ViewingLINQResults"></a> Zobrazení výsledků LINQ
+## <a name="BKMK_ViewingLINQResults"></a> Zobrazení výsledků LINQ
  Můžete zobrazit výsledek příkazu LINQ pomocí datových tipů, okna kukátka a dialogového okna rychlého kukátka. Při použití okna zdroje můžete pozastavíte ukazatel myši na dotazu v okně zdroje a zobrazí se datatip. Můžete zkopírovat proměnnou LINQ a vložte ho do okna kukátka nebo dialogového okna rychlého kukátka.
 
  V LINQ dotaz není vyhodnocen při vytváření nebo deklaraci, ale pouze v případě, že tento dotaz se použije. Proto dotaz nemá hodnotu, dokud není vyhodnocen. Úplný popis vytváření a vyhodnocování dotazu naleznete v tématu [Úvod do dotazů LINQ (C#)](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries) nebo [zápis svůj první dotaz LINQ](/dotnet/visual-basic/programming-guide/concepts/linq/writing-your-first-linq-query).
 
  Pokud chcete zobrazit výsledky dotazu, ladicí program ho musí vyhodnotit. Toto implicitní hodnocení, ke kterému dochází při zobrazení výsledku dotazu LINQ v ladicím programu, má některé efekty, které byste měli zvážit:
 
--   Každé vyhodnocení dotazu trvá určitou dobu. Rozbalení uzlu výsledků trvá určitou dobu. U některých dotazů opakované hodnocení může způsobit znatelné penalizace.
+- Každé vyhodnocení dotazu trvá určitou dobu. Rozbalení uzlu výsledků trvá určitou dobu. U některých dotazů opakované hodnocení může způsobit znatelné penalizace.
 
--   Vyhodnocení dotazu může mít za následek vedlejší účinky, které znamenají změnu hodnoty dat nebo stavu programu. Ne všechny dotazy mají vedlejší účinky. Pokud chcete zjistit, zda dotaz může být bezpečně zhodnocen bez vedlejších účinků, je třeba pochopit kód, který implementuje dotaz.
+- Vyhodnocení dotazu může mít za následek vedlejší účinky, které znamenají změnu hodnoty dat nebo stavu programu. Ne všechny dotazy mají vedlejší účinky. Pokud chcete zjistit, zda dotaz může být bezpečně zhodnocen bez vedlejších účinků, je třeba pochopit kód, který implementuje dotaz.
 
-##  <a name="BKMK_SteppingAndLinq"></a> Krokování a LINQ
+## <a name="BKMK_SteppingAndLinq"></a> Krokování a LINQ
  Když ladíte kód LINQ, krokování má některé behaviorální rozdíly, které byste měli vědět.
 
 ### <a name="linq-to-sql"></a>Technologie LINQ to SQL
@@ -104,7 +104,7 @@ End Function
 
  Upravený dotaz volá funkci `IsEven` na každém průchodu přes `items`. Můžete použít okna ladicího programu zda každá položka splňuje zadanou podmínku a krokovat kód v `IsEven`. Predikát v tomto příkladu je poměrně jednoduché. Nicméně pokud máte složitější predikát, který je třeba ladit, tato technika může být velmi užitečné.
 
-##  <a name="BKMK_EditandContinueNotSupportedforLINQ"></a> Upravit a pokračovat není podporována pro LINQ
+## <a name="BKMK_EditandContinueNotSupportedforLINQ"></a> Upravit a pokračovat není podporována pro LINQ
  Upravit a pokračovat podporuje změny dotazů LINQ s omezeními. Podrobnosti najdete v tématu [EnC nepodporuje změny](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits))
 
 ## <a name="see-also"></a>Viz také

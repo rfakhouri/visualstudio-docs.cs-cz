@@ -12,12 +12,12 @@ ms.assetid: abc5d9d9-b267-48a1-92ad-75fbf2f4c1b9
 caps.latest.revision: 61
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: d020dd0e1d20facd431a31f5aabffb4ec9e2631a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: df04f8da29972b4be3967e5fd677a43e76ce1ac5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54798409"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085626"
 ---
 # <a name="how-vspackages-add-user-interface-elements"></a>Jak balíčky VSPackages přidávají prvky uživatelského rozhraní
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,11 +29,11 @@ VSPackage můžete přidat prvky uživatelského rozhraní (UI, například nab�
 ## <a name="the-visual-studio-command-table-architecture"></a>Architektura sady Visual Studio příkaz tabulky  
  Jak je uvedeno, architektura tabulky příkaz podporuje předchozí architektonických principů. Principy za abstrakce, datové struktury a nástroje pro architekturu tabulka příkazu jsou následující:  
   
--   Existují tři základní typy položek: nabídky, příkazy a skupiny. Nabídky můžou zveřejnit v uživatelském rozhraní jako nabídky, dílčích nabídek, panelů nástrojů nebo okna nástrojů. Příkazy jsou postupy, které uživatel může spustit v prostředí IDE, a může být vystavena jako položky nabídky, tlačítka, seznamy nebo další ovládací prvky. Skupiny jsou kontejnery pro nabídek a příkazů.  
+- Existují tři základní typy položek: nabídky, příkazy a skupiny. Nabídky můžou zveřejnit v uživatelském rozhraní jako nabídky, dílčích nabídek, panelů nástrojů nebo okna nástrojů. Příkazy jsou postupy, které uživatel může spustit v prostředí IDE, a může být vystavena jako položky nabídky, tlačítka, seznamy nebo další ovládací prvky. Skupiny jsou kontejnery pro nabídek a příkazů.  
   
--   Každá položka je určená popisující položku, jeho prioritu ve vztahu k jiné položky a příznaky, které upravují chování při jeho definici.  
+- Každá položka je určená popisující položku, jeho prioritu ve vztahu k jiné položky a příznaky, které upravují chování při jeho definici.  
   
--   Každá položka má umístění, která popisuje nadřazené položky. Položka může mít více nadřazených objektů, aby se může objevit v několika umístěních v uživatelském rozhraní.  
+- Každá položka má umístění, která popisuje nadřazené položky. Položka může mít více nadřazených objektů, aby se může objevit v několika umístěních v uživatelském rozhraní.  
   
      Každý příkaz musí mít skupinu jako jeho nadřazeným prvkem, i když je jediným podřízeným v této skupině. Každý standardní nabídky musí také mít nadřazenou skupinu. Panely nástrojů a oken nástrojů slouží jako jejich nadřazené položky. Skupina může mít jako nadřazeného hlavního řádku nabídek sady Visual Studio, nebo všechny nabídky, nástrojů nebo panelu nástrojů.  
   
@@ -76,15 +76,15 @@ VSPackage můžete přidat prvky uživatelského rozhraní (UI, například nab�
 ### <a name="menus-groups-and-commands"></a>Příkazy, nabídky a skupiny  
  Když nabídky, skupiny nebo příkaz má identifikátor GUID a ID, můžete přidat do integrovaného vývojového prostředí. Každý prvek uživatelského rozhraní musí mít následující věci:  
   
--   A `guid` atribut, který odpovídá názvu `GuidSymbol` element, který je definován prvek uživatelského rozhraní v části.  
+- A `guid` atribut, který odpovídá názvu `GuidSymbol` element, který je definován prvek uživatelského rozhraní v části.  
   
--   `id` Atribut, který odpovídá názvu přidruženého `IDSymbol` elementu.  
+- `id` Atribut, který odpovídá názvu přidruženého `IDSymbol` elementu.  
   
      Společně `guid` a `id` compose atributy *podpis* prvku uživatelského rozhraní.  
   
--   A `priority` atribut, který určuje umístění prvku uživatelského rozhraní v jeho nadřazené nabídky nebo skupiny.  
+- A `priority` atribut, který určuje umístění prvku uživatelského rozhraní v jeho nadřazené nabídky nebo skupiny.  
   
--   A [nadřazeného elementu](../../extensibility/parent-element.md) , který má `guid` a `id` atributy, které určují podpis nadřazené nabídky nebo skupiny.  
+- A [nadřazeného elementu](../../extensibility/parent-element.md) , který má `guid` a `id` atributy, které určují podpis nadřazené nabídky nebo skupiny.  
   
 #### <a name="menus"></a>Nabídky  
  Každou nabídku je definován jako [Menu Element](../../extensibility/menu-element.md) v `Menus` oddílu. Nabídky musí mít `guid`, `id`, a `priority` atributy a `Parent` element a také následující doplňkové atributy a podřízené položky:  
@@ -271,17 +271,17 @@ priority="0x0100" type="Menu">
 ##### <a name="general-requirements"></a>Obecné požadavky  
  Váš příkaz musí projít následující série testů předtím, než je možné zobrazit a povoleno:  
   
--   Příkaz je správně umístěná.  
+- Příkaz je správně umístěná.  
   
--   `DefaultInvisible` Není nastaven příznak.  
+- `DefaultInvisible` Není nastaven příznak.  
   
--   Nadřazené nabídky nebo panelu nástrojů je viditelný.  
+- Nadřazené nabídky nebo panelu nástrojů je viditelný.  
   
--   Příkaz není kvůli kontextu položku v neviditelná [visibilityconstraints – Element](../../extensibility/visibilityconstraints-element.md) oddílu.  
+- Příkaz není kvůli kontextu položku v neviditelná [visibilityconstraints – Element](../../extensibility/visibilityconstraints-element.md) oddílu.  
   
--   VSPackage kód, který implementuje <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> rozhraní zobrazuje a umožňuje svých rukou. Žádný kód rozhraní zachytili ji a u něj.  
+- VSPackage kód, který implementuje <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> rozhraní zobrazuje a umožňuje svých rukou. Žádný kód rozhraní zachytili ji a u něj.  
   
--   Když uživatel klikne na svých rukou, bude v souladu s postupem, který je popsaný v [algoritmus směrování](../../extensibility/internals/command-routing-algorithm.md).  
+- Když uživatel klikne na svých rukou, bude v souladu s postupem, který je popsaný v [algoritmus směrování](../../extensibility/internals/command-routing-algorithm.md).  
   
 ## <a name="calling-pre-defined-commands"></a>Volání metody předdefinovaných příkazů  
  [Usedcommands – Element](../../extensibility/usedcommands-element.md) rozšíření VSPackages umožňuje přístup k příkazům, které jsou k dispozici další balíčky VSPackages nebo integrovaného vývojového prostředí. K tomuto účelu vytvořte [usedcommand – Element](../../extensibility/usedcommand-element.md) , který má identifikátor GUID a ID příkazu k použití. Tím se zajistí, že příkaz načtou pomocí sady Visual Studio, i když to není součástí aktuální konfiguraci sady Visual Studio. Další informace najdete v tématu [usedcommand – Element](../../extensibility/usedcommand-element.md).  
@@ -289,17 +289,17 @@ priority="0x0100" type="Menu">
 ## <a name="interface-element-appearance"></a>Vzhled elementu rozhraní  
  Důležité informace pro výběr a umístění prvků příkazu jsou následující:  
   
--   [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] nabízí mnoho prvků uživatelského rozhraní, které se zobrazují odlišně v závislosti na umístění.  
+- [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] nabízí mnoho prvků uživatelského rozhraní, které se zobrazují odlišně v závislosti na umístění.  
   
--   Prvek uživatelského rozhraní, který je definován pomocí `DefaultInvisible` příznak se nezobrazí v integrovaném vývojovém prostředí, pokud to není buď zobrazí jeho implementace VSPackage <xref:EnvDTE.IDTCommandTarget.QueryStatus%2A> metodu, nebo ve spojení s konkrétním kontextu uživatelského rozhraní v `VisibilityConstraints` oddílu.  
+- Prvek uživatelského rozhraní, který je definován pomocí `DefaultInvisible` příznak se nezobrazí v integrovaném vývojovém prostředí, pokud to není buď zobrazí jeho implementace VSPackage <xref:EnvDTE.IDTCommandTarget.QueryStatus%2A> metodu, nebo ve spojení s konkrétním kontextu uživatelského rozhraní v `VisibilityConstraints` oddílu.  
   
--   Úspěšně umístěné příkaz se nemusí zobrazit. Toto je vzhledem k tomu, že rozhraní IDE automaticky skryje nebo zobrazí některé příkazy, v závislosti na rozhraní, které sady VSPackage má (nebo ne) implementováno. Například na VSPackage provádění některých sestavení rozhraní položky související s buildem nabídky způsobí, že má být zobrazen automaticky.  
+- Úspěšně umístěné příkaz se nemusí zobrazit. Toto je vzhledem k tomu, že rozhraní IDE automaticky skryje nebo zobrazí některé příkazy, v závislosti na rozhraní, které sady VSPackage má (nebo ne) implementováno. Například na VSPackage provádění některých sestavení rozhraní položky související s buildem nabídky způsobí, že má být zobrazen automaticky.  
   
--   Použití `CommandWellOnly` příznak v definici prvku uživatelského rozhraní znamená, že příkaz lze přidat pouze pomocí vlastního nastavení.  
+- Použití `CommandWellOnly` příznak v definici prvku uživatelského rozhraní znamená, že příkaz lze přidat pouze pomocí vlastního nastavení.  
   
--   Příkazy mohou být k dispozici pouze v určitých uživatelského rozhraní kontextech, například pouze v případě, že po integrovaného vývojového prostředí v návrhovém zobrazení, zobrazí se dialogové okno.  
+- Příkazy mohou být k dispozici pouze v určitých uživatelského rozhraní kontextech, například pouze v případě, že po integrovaného vývojového prostředí v návrhovém zobrazení, zobrazí se dialogové okno.  
   
--   Způsobí některé prvky uživatelského rozhraní, který se má zobrazit v integrovaném vývojovém prostředí, musí implementovat jedno nebo více rozhraní nebo napsat kód.  
+- Způsobí některé prvky uživatelského rozhraní, který se má zobrazit v integrovaném vývojovém prostředí, musí implementovat jedno nebo více rozhraní nebo napsat kód.  
   
 ## <a name="see-also"></a>Viz také  
  [Rozšiřování nabídek a příkazů](../../extensibility/extending-menus-and-commands.md)

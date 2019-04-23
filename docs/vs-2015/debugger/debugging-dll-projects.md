@@ -19,12 +19,12 @@ caps.latest.revision: 41
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 365a53edf79e301d89d9060d225525b713171158
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 270f25640e5804944440192ee787f92f1597c58c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54789246"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108747"
 ---
 # <a name="debugging-dll-projects"></a>Ladění projektů knihovny DLL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -73,29 +73,29 @@ Následující šablony vytvoří knihovny DLL:
   
 - [Příkazové podokno](#vxtskdebuggingdllprojectstheimmediatewindow)  
   
-##  <a name="vxtskdebuggingdllprojectsbuildingadebugversion"></a> Sestavení ladicí verze  
+## <a name="vxtskdebuggingdllprojectsbuildingadebugversion"></a> Sestavení ladicí verze  
  Bez ohledu na to, jak spouštíte ladění Ujistěte se, že nejprve sestavení ladicí verze knihovny DLL a ujistěte se, že ladicí verze je v umístění, kde se očekává, že aplikace ji najít. To se může zdát zřejmé, ale pokud zapomenete tento krok, aplikace může najít jinou verzi knihovny DLL a načíst ji. Program bude pokračovat spustit, zatímco se budete divit, proč vaší zarážky nikdy dosaženo. Když ladíte, můžete ověřit, které knihovny DLL váš program načetl, otevřením ladicího programu **moduly** okna. **Moduly** okno uvádí jednotlivé knihovny DLL nebo EXE načtené v procesu, který ladíte. Další informace najdete v tématu [jak: Použití okna moduly](../debugger/how-to-use-the-modules-window.md).  
   
  Aby ladicí program připojil kód napsaný v jazyce C++, musí kód generovat `DebuggableAttribute`. Můžete přidat to do kódu automaticky díky propojení s [/assemblydebug](http://msdn.microsoft.com/library/94443af3-470c-41d7-83a0-7434563d7982) – možnost linkeru.  
   
-##  <a name="vxtskdebuggingdllprojectsmixedmodedebugging"></a> Ladění ve smíšeném režimu  
+## <a name="vxtskdebuggingdllprojectsmixedmodedebugging"></a> Ladění ve smíšeném režimu  
  Volající aplikace, která volá vaši knihovnu DLL je možné psát v spravovaném kódu nebo nativním kódu. Pokud je vaše spravovaná knihovna DLL volána pomocí nativního kódu a chcete obojí ladit, spravované a nativní ladicí programy musí být povoleny. To můžete vybrat  **\<Projekt > stránky vlastností** nebo dialogovém okně. Postup závisí na tom, zda spustíte ladění z projektu knihovny DLL nebo projekt volající aplikace. Další informace najdete v tématu [jak: Ladění ve smíšeném režimu](../debugger/how-to-debug-in-mixed-mode.md).  
   
-##  <a name="vxtskdebuggingdllprojectschangingdefaultconfigurations"></a> Změna výchozí konfigurace  
+## <a name="vxtskdebuggingdllprojectschangingdefaultconfigurations"></a> Změna výchozí konfigurace  
  Když vytvoříte projekt konzolové aplikace pomocí šablony projektu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] automaticky vytvoří požadované nastavení konfigurace Debug a Release. V případě potřeby můžete změnit tato nastavení. Další informace najdete v tématu [nastavení projektu pro konfiguraci ladění jazyka C++](../debugger/project-settings-for-a-cpp-debug-configuration.md), [nastavení projektu pro C# ladění konfigurace](../debugger/project-settings-for-csharp-debug-configurations.md), [nastavení projektu pro Visual Basic ladění Konfigurace](../debugger/project-settings-for-a-visual-basic-debug-configuration.md), a [jak: Konfigurace nastavení ladění a verzí](../debugger/how-to-set-debug-and-release-configurations.md).  
   
-##  <a name="vxtskdebuggingdllprojectswaystodebugthedll"></a> Způsoby, jak ladit knihovnu DLL  
+## <a name="vxtskdebuggingdllprojectswaystodebugthedll"></a> Způsoby, jak ladit knihovnu DLL  
  Všechny projekty v této části vytvoří knihovnu DLL. Knihovnu DLL nelze spustit přímo. musí být volána aplikací, obvykle EXE. Další informace najdete v tématu [vytváření a správa projektů Visual C++](http://msdn.microsoft.com/library/11003cd8-9046-4630-a189-a32bf3b88047). Volající aplikace mohou přizpůsobit některé z následujících kritérií:  
   
--   Aplikace vytvořené v jiném projektu ve stejném [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] řešení, které obsahuje knihovnu tříd.  
+- Aplikace vytvořené v jiném projektu ve stejném [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] řešení, které obsahuje knihovnu tříd.  
   
--   Existující aplikace již nasazená v testovacím nebo produkčním počítači.  
+- Existující aplikace již nasazená v testovacím nebo produkčním počítači.  
   
--   Nachází se na webu a přístup prostřednictvím adresy URL.  
+- Nachází se na webu a přístup prostřednictvím adresy URL.  
   
--   Webová aplikace, které obsahuje webovou stránku obsahující knihovnu DLL.  
+- Webová aplikace, které obsahuje webovou stránku obsahující knihovnu DLL.  
   
-###  <a name="vxtskdebuggingdllprojectsthecallingapplication"></a> Ladění volající aplikace  
+### <a name="vxtskdebuggingdllprojectsthecallingapplication"></a> Ladění volající aplikace  
  Chcete-li ladit knihovnu DLL, začněte laděním volající aplikace, obvykle buď aplikace EXE nebo webová aplikace. Existuje několik způsobů, jak ho ladit.  
   
 - Pokud máte projekt pro volající aplikace, můžete otevřít tento projekt a spustit provádění z **ladění** nabídky. Další informace najdete v tématu [jak: Spuštění](http://msdn.microsoft.com/b0fe0ce5-900e-421f-a4c6-aa44ddae453c).  
@@ -108,17 +108,17 @@ Následující šablony vytvoří knihovny DLL:
   
   Před zahájením ladění volající aplikace je obvyklé nastavit zarážku v knihovně tříd. Další informace najdete v tématu [zarážky a sledované body](http://msdn.microsoft.com/fe4eedc1-71aa-4928-962f-0912c334d583). Při dosažení zarážky, můžete krokovat kód, sledování akce na každém řádku, dokud nebude problém. Další informace najdete v tématu [přehled krokování kódu](http://msdn.microsoft.com/8791dac9-64d1-4bb9-b59e-8d59af1833f9).  
   
-###  <a name="vxtskdebuggingdllprojectscontrolsonawebpage"></a> Ovládací prvky na webové stránce  
+### <a name="vxtskdebuggingdllprojectscontrolsonawebpage"></a> Ovládací prvky na webové stránce  
  Chcete-li ladit ovládací prvek webové stránky, vytvořte [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] stránka, která jej použije, pokud taková ještě stránka neexistuje. Pak umístěte zarážky v kódu webové stránky, jakož i kód ovládacího prvku. Poté vyvoláte webovou stránku z [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
  Před zahájením ladění volající aplikace je obvyklé nastavit zarážku v knihovně DLL. Při dosažení zarážky, můžete krokovat kód, sledování akce na každém řádku, dokud nebude problém. Další informace najdete v tématu [zarážky a sledované body](http://msdn.microsoft.com/fe4eedc1-71aa-4928-962f-0912c334d583).  
   
-###  <a name="vxtskdebuggingdllprojectstheimmediatewindow"></a> Příkazové podokno  
+### <a name="vxtskdebuggingdllprojectstheimmediatewindow"></a> Příkazové podokno  
  Bez nutnosti volání aplikace můžete vyhodnotit funkce nebo metody v knihovně DLL. Proveďte ladění v době návrhu a použít **okamžité** okna. Chcete-li ladit tímto způsobem, proveďte tyto kroky při otevřeném projektu knihovny DLL:  
   
-1.  Spusťte ladicí program **okamžité** okna.  
+1. Spusťte ladicí program **okamžité** okna.  
   
-2.  Chcete-li otestovat metodu s názvem `Test` ve třídě `Class1`, vytvoří instanci objektu typu `Class1` zadáním následujícího kódu jazyka C# do okna příkazy. Tento spravovaný kód funguje pro Visual Basic a C++ s příslušnými změnami syntaxe:  
+2. Chcete-li otestovat metodu s názvem `Test` ve třídě `Class1`, vytvoří instanci objektu typu `Class1` zadáním následujícího kódu jazyka C# do okna příkazy. Tento spravovaný kód funguje pro Visual Basic a C++ s příslušnými změnami syntaxe:  
   
     ```  
     Class1 obj = new Class1();  
@@ -126,7 +126,7 @@ Následující šablony vytvoří knihovny DLL:
   
      V jazyce C# musí být všechny názvy plně kvalifikovaný. Kromě toho jakékoli metody nebo proměnné musí být v aktuálním měřítku a kontextu relace ladění.  
   
-3.  Za předpokladu, že `Test` má jednu `int` parametr, vyhodnotit `Test` pomocí **okamžité** okno:  
+3. Za předpokladu, že `Test` má jednu `int` parametr, vyhodnotit `Test` pomocí **okamžité** okno:  
   
     ```  
     ?obj.Test(10)  
@@ -134,7 +134,7 @@ Následující šablony vytvoří knihovny DLL:
   
      Výsledek bude vytištěn v **okamžité** okna.  
   
-4.  Můžete pokračovat v ladění `Test` umístěním zarážky dovnitř a opakovaným vyhodnocením funkce:  
+4. Můžete pokračovat v ladění `Test` umístěním zarážky dovnitř a opakovaným vyhodnocením funkce:  
   
     ```  
     ?obj.Test(10);  

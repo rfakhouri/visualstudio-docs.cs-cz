@@ -9,12 +9,12 @@ caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f4aa0517a20e0d667982fb2bfbf0784060628b09
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 863e60592fe82c468f48912c4e36182b1bb1a36b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59653278"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104145"
 ---
 # <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-memory-data-by-using-the-command-line"></a>Postupy: Připojit Profiler k webové aplikaci ASP.NET ke shromažďování dat paměti pomocí příkazového řádku
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ Toto téma popisuje způsob použití [!INCLUDE[vsprvs](../includes/vsprvs-md.md
 
     **Vsperfclrenv –** {**/globalsamplegc** &#124; **/globalsamplegclife**} [**/samplelineoff**]  
 
-   -   Možnosti **/globalsamplegc** a **/globalsamplegclife** zadejte typ shromažďovaných údajů paměti.  
+   - Možnosti **/globalsamplegc** a **/globalsamplegclife** zadejte typ shromažďovaných údajů paměti.  
 
         Zadejte právě jeden z následujících možností.  
 
@@ -49,7 +49,7 @@ Toto téma popisuje způsob použití [!INCLUDE[vsprvs](../includes/vsprvs-md.md
        |**/globalsamplegc**|Povolí shromažďování dat o přidělování paměti.|  
        |**/globalsamplegclife**|Povoluje shromažďování data o přidělování paměti a životnosti objektů.|  
 
-   -   Možnost **/samplelineoff** zakáže přiřazení shromážděných dat ke konkrétnímu zdroji řádků kódu. Pokud je tato možnost zadána, je přiřazen data na úrovni funkce.  
+   - Možnost **/samplelineoff** zakáže přiřazení shromážděných dat ke konkrétnímu zdroji řádků kódu. Pokud je tato možnost zadána, je přiřazen data na úrovni funkce.  
 
 3. Restartujte počítač a nastavit novou konfiguraci prostředí.  
 
@@ -83,16 +83,16 @@ Toto téma popisuje způsob použití [!INCLUDE[vsprvs](../includes/vsprvs-md.md
 
     **Nástroj VSPerfCmd**[/ attach](../profiling/attach.md) **:**{`PID`&#124;`ProcName`} [[targetclr](../profiling/targetclr.md)**:**`Version`]    
 
-   -   ID procesu `(PID)` Určuje ID procesu nebo název procesu [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] pracovní proces. ID všech spuštěných procesů lze zobrazit ve Správci úloh Windows.  
+   - ID procesu `(PID)` Určuje ID procesu nebo název procesu [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] pracovní proces. ID všech spuštěných procesů lze zobrazit ve Správci úloh Windows.  
 
-   -   **targetclr:** `Version` Určuje verzi modulu common language runtime (CLR) do profilu je do aplikace načtena více než jedna verze modulu runtime.  
+   - **targetclr:** `Version` Určuje verzi modulu common language runtime (CLR) do profilu je do aplikace načtena více než jedna verze modulu runtime.  
 
 ## <a name="controlling-data-collection"></a>Řízení shromažďování dat  
  Když je aplikace spuštěna, lze sběr dat řídit spouštěním či pozastavováním zápisu dat do datového souboru profilování pomocí **VSPerfCmd.exe** možnosti. Řízení sběru dat umožňuje shromažďovat data pro určitou část provádění programu, například spouštění či ukončování aplikace.  
 
 #### <a name="to-start-and-stop-data-collection"></a>Spuštění a zastavení shromažďování dat  
 
--   Následující páry **VSPerfCmd** možností spouští a zastavují sběr dat. Každou možnost zadejte na samostatný příkazový řádek. Sběr dat lze zapnout a vypnout několikrát.  
+- Následující páry **VSPerfCmd** možností spouští a zastavují sběr dat. Každou možnost zadejte na samostatný příkazový řádek. Sběr dat lze zapnout a vypnout několikrát.  
 
     |Možnost|Popis|  
     |------------|-----------------|  

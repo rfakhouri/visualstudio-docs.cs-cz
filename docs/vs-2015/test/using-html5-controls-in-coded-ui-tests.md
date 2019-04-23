@@ -8,12 +8,12 @@ ms.assetid: 2000b214-ae92-4334-b549-aa0eb4f45fe1
 caps.latest.revision: 19
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 361e382149d15c4721f5707e06ec2e2d8fdbe3ad
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 26cd34583f28c19770675b185f986149b23fdf6d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867897"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100434"
 ---
 # <a name="using-html5-controls-in-coded-ui-tests"></a>Použití ovládacích prvků HTML5 v programových testech UI
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ Programové testy UI zahrnují podporu pro některé ovládací prvky jazyka HTM
   
  **Požadavky**  
   
--   Visual Studio Enterprise  
+- Visual Studio Enterprise  
   
 > [!WARNING]
 >  Ve verzích před Internet Explorer 10 bylo možné spustit programové testy uživatelského rozhraní ve vyšší úrovni oprávnění ve srovnání s, proces aplikace Internet Explorer. Při spouštění programových testů UI v Internet Exploreru 10, programový test uživatelského rozhraní a proces aplikace Internet Explorer musí být na stejné úrovni oprávnění. Toto je kvůli lepšímu zabezpečení funkce AppContainer v Internet Exploreru 10.  
@@ -33,18 +33,18 @@ Programové testy UI zahrnují podporu pro některé ovládací prvky jazyka HTM
 ## <a name="supported-html5-controls"></a>Ovládací prvky jazyka HTML5 podporované  
  Programové testy UI podporují záznam, přehrávání a ověřování následující ovládací prvky jazyka HTML5 následující možnosti:  
   
--   [Audio Control](#UsingHTML5ControlsCodedUITestsAudio)  
+- [Audio Control](#audio-control)  
   
--   [Video Control](#UsingHTML5ControlsCodedUITestsVideo)  
+- [Video Control](#video-control)  
   
--   [Posuvník](#UsingHTML5ControlsCodedUITestsSlider)  
+- [Posuvník](#slider)  
   
--   [ProgressBar](#UsingHTML5ControlsCodedUITestsProgressBar)  
+- [ProgressBar](#progressbar)  
   
-###  <a name="UsingHTML5ControlsCodedUITestsAudio"></a> Audio Control  
+### <a name="audio-control"></a>Audio Control  
  **Ovládací prvek zvuku:** Akce na ovládacím prvku HTML5 Audio se správně zaznamenávají a přehrát.  
   
- ![Audio HTML5 se ovládací prvek](../test/media/codedui-html5-audio.png "CodedUI_HTML5_Audio")  
+ ![HTML5 Audio ovládacího prvku](../test/media/codedui-html5-audio.png)  
   
 |Akce|Záznam|Generovaný kód|  
 |------------|---------------|--------------------|  
@@ -74,7 +74,6 @@ string ReadyState
 string Seeking  
 string Src  
 string Volume  
-  
 ```  
   
  **Vlastnosti hledání:** Vlastnosti hledání pro `HtmlAudio` jsou `Id`, `Name` a `Title`.  
@@ -84,10 +83,10 @@ string Volume
 > [!NOTE]
 >  Můžou být významné množství času pro hledání a pozastavit. Během přehrávání programového testu uživatelského rozhraní počká, až do zadaného času v `(TimeSpan)` před pozastavením zvuku. Pokud pomocí některé zvláštní okolnosti, určený čas uplynul před tím příkazu k pozastavení, bude vyvolána výjimka.  
   
-###  <a name="UsingHTML5ControlsCodedUITestsVideo"></a> Ovládacího prvku video  
+### <a name="video-control"></a>Ovládacího prvku video  
  **Ovládacího prvku Video:** Akce na ovládacím prvku jako videa HTML5 správně se zaznamenávají a přehrát.  
   
- ![Ovládací prvek jako videa HTML5](../test/media/codedui-html5-video.png "CodedUI_HTML5_Video")  
+ ![Ovládací prvek jako videa HTML5](../test/media/codedui-html5-video.png)  
   
 |Akce|Záznam|Generovaný kód|  
 |------------|---------------|--------------------|  
@@ -114,10 +113,10 @@ string VideoWidth
 > [!NOTE]
 >  Pokud rewind nebo rychlé převinutí vpřed videa pomocí-30s nebo +30s popisky, se budou agregovat hledání správný čas.  
   
-###  <a name="UsingHTML5ControlsCodedUITestsSlider"></a> Posuvník  
+### <a name="slider"></a>Posuvník  
  **Ovládací prvek posuvník:** Akce na ovládacím prvku posuvník HTML5 správně se zaznamenávají a přehrát.  
   
- ![Ovládací prvek posuvník HTML5](../test/media/codedui-html5-slider.png "CodedUI_HTML5_Slider")  
+ ![Ovládací prvek posuvník HTML5](../test/media/codedui-html5-slider.png)  
   
 |Akce|Záznam|Generovaný kód|  
 |------------|---------------|--------------------|  
@@ -134,14 +133,15 @@ string Step
 string ValueAsNumber  
 ```  
   
-###  <a name="UsingHTML5ControlsCodedUITestsProgressbar"></a> Ovládací prvek ProgressBar  
+### <a name="progressbar"></a>ProgressBar  
  **ProgressBar – ovládací prvek:** Ovládací prvek ProgressBar je – interactable ovládací prvek. Můžete přidat kontrolní výrazy na `Value` a `Max` vlastnosti tohoto ovládacího prvku.  
   
- ![Ovládací prvek HTML5 ProgressBar](../test/media/codedui-html5-progressbar.png "CodedUI_HTML5_ProgressBar")  
+ ![Ovládací prvek HTML5 ProgressBar](../test/media/codedui-html5-progressbar.png)  
   
-## <a name="see-also"></a>Viz také  
- [Elementy HTML](https://www.w3schools.com/HTML/html_elements.asp)   
- [Použití automatizace uživatelského rozhraní k testování kódu](../test/use-ui-automation-to-test-your-code.md)   
- [Vytváření programových testů UI](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)   
- [Přizpůsobení programového testu UI](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeCUITModify)   
- [Podporované konfigurace a platformy pro programové testy uživatelského rozhraní a zaznamenávání akcí](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+## <a name="see-also"></a>Viz také:
+
+- [Elementy HTML](https://www.w3schools.com/HTML/html_elements.asp)   
+- [Použití automatizace uživatelského rozhraní k testování kódu](../test/use-ui-automation-to-test-your-code.md)   
+- [Vytváření programových testů UI](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)   
+- [Přizpůsobení programového testu UI](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeCUITModify)   
+- [Podporované konfigurace a platformy pro programové testy uživatelského rozhraní a zaznamenávání akcí](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

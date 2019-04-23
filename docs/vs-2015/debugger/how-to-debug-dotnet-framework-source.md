@@ -16,12 +16,12 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cbc6ed2ff77a971962fa73b15d5b7aafb9ef02b8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 49b13b8406dc96e8e7ebe5e79e26c5da02e8a53a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54777903"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092107"
 ---
 # <a name="how-to-debug-net-framework-source"></a>Postupy: Ladění zdroje rozhraní .NET Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,45 +32,45 @@ Překopírujte nejnovější verzi [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 
   
 ### <a name="to-enable-net-framework-source-debugging"></a>Chcete-li povolit ladění zdrojového kód rozhraní .NET Framework  
   
-1.  Na **nástroje** nabídky, klikněte na tlačítko **možnosti**.  
+1. Na **nástroje** nabídky, klikněte na tlačítko **možnosti**.  
   
-2.  V **možnosti** dialogové okno, klikněte na tlačítko **ladění** kategorie.  
+2. V **možnosti** dialogové okno, klikněte na tlačítko **ladění** kategorie.  
   
-3.  V **Obecné** pole, nastavte **povolit rozhraní .NET Framework** krokování zdrojových kódů.  
+3. V **Obecné** pole, nastavte **povolit rozhraní .NET Framework** krokování zdrojových kódů.  
   
-    1.  Pokud jste měli povoleným kódem Just My, dialogové okno upozornění zjistíte, že funkce pouze můj kód je nyní zakázána. Klikněte na **OK**.  
+    1. Pokud jste měli povoleným kódem Just My, dialogové okno upozornění zjistíte, že funkce pouze můj kód je nyní zakázána. Klikněte na **OK**.  
   
-    2.  Pokud nastaveno umístění mezipaměti symbolů, jiné dialogové okno upozornění informuje, že výchozí umístění mezipaměti symbolů je nyní nastaveno. Klikněte na **OK**.  
+    2. Pokud nastaveno umístění mezipaměti symbolů, jiné dialogové okno upozornění informuje, že výchozí umístění mezipaměti symbolů je nyní nastaveno. Klikněte na **OK**.  
   
-4.  V části **ladění** kategorii, klikněte na tlačítko **symboly**.  
+4. V části **ladění** kategorii, klikněte na tlačítko **symboly**.  
   
-5.  Pokud chcete změnit umístění mezipaměti symbolů:  
+5. Pokud chcete změnit umístění mezipaměti symbolů:  
   
-    1.  Otevřít **ladění** uzlu v poli na levé straně.  
+    1. Otevřít **ladění** uzlu v poli na levé straně.  
   
-    2.  V části **ladění** uzel, klikněte na tlačítko **symboly**.  
+    2. V části **ladění** uzel, klikněte na tlačítko **symboly**.  
   
-    3.  Upravit umístění v **mezipaměti symbolů ze serverů symbolů do tohoto adresáře** nebo klikněte na tlačítko **Procházet** k výběru umístění.  
+    3. Upravit umístění v **mezipaměti symbolů ze serverů symbolů do tohoto adresáře** nebo klikněte na tlačítko **Procházet** k výběru umístění.  
   
-6.  Pokud chcete stáhnout symboly hned, klikněte na tlačítko **načíst symboly pomocí výše uvedených umístění**.  
+6. Pokud chcete stáhnout symboly hned, klikněte na tlačítko **načíst symboly pomocí výše uvedených umístění**.  
   
      Toto tlačítko není k dispozici v režimu návrhu.  
   
      Pokud nevyberete nyní nestahovat symboly, symboly budou staženy automaticky při příštím spuštění ladění programu.  
   
-7.  Klikněte na tlačítko **OK** zavřete **možnosti** dialogové okno.  
+7. Klikněte na tlačítko **OK** zavřete **možnosti** dialogové okno.  
   
 ### <a name="to-load-framework-symbols-using-the-modules-window"></a>Načtení symbolů rozhraní pomocí okna modulů  
   
-1.  V **moduly** okna, klikněte pravým tlačítkem na modul, pro který nejsou načteny symboly. Poznáte, zda jsou načteny symboly nebo není zobrazením **symboly stavu** sloupce.  
+1. V **moduly** okna, klikněte pravým tlačítkem na modul, pro který nejsou načteny symboly. Poznáte, zda jsou načteny symboly nebo není zobrazením **symboly stavu** sloupce.  
   
-2.  Přejděte na **načíst symboly z** a klikněte na tlačítko **Microsoft Symbol Servers** ke stažení symbolů ze serveru veřejných symbolů Microsoft nebo **cesty k symbolu** načtení z adresáře Pokud jste dříve uložili symboly.  
+2. Přejděte na **načíst symboly z** a klikněte na tlačítko **Microsoft Symbol Servers** ke stažení symbolů ze serveru veřejných symbolů Microsoft nebo **cesty k symbolu** načtení z adresáře Pokud jste dříve uložili symboly.  
   
 ### <a name="to-load-framework-symbols-using-the-call-stack-window"></a>Načtení symbolů rozhraní pomocí okna zásobník volání  
   
-1.  V **zásobník volání** okna, klikněte pravým tlačítkem na rámec, pro který nejsou načteny symboly. Snímek bude znepřístupněn.  
+1. V **zásobník volání** okna, klikněte pravým tlačítkem na rámec, pro který nejsou načteny symboly. Snímek bude znepřístupněn.  
   
-2.  Přejděte na **načíst symboly z** a klikněte na tlačítko **Microsoft Symbol Servers** nebo **cesty k symbolu**.  
+2. Přejděte na **načíst symboly z** a klikněte na tlačítko **Microsoft Symbol Servers** nebo **cesty k symbolu**.  
   
 ## <a name="see-also"></a>Viz také  
  [Ladění spravovaného kódu](../debugger/debugging-managed-code.md)   

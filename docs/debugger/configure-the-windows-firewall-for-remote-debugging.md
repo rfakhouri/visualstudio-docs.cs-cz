@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1fdfb43a00515dff57dd59943043ee0a42dc270f
-ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
+ms.openlocfilehash: ff64735e1711a18bd7c55c6e052fa8579bd12e16
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57428723"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100355"
 ---
 # <a name="configure-windows-firewall-for-remote-debugging"></a>Konfigurace brány Windows Firewall pro vzdálené ladění
 
@@ -102,13 +102,13 @@ Na vzdáleném počítači v jsou vzdálené ladicí nástroje:
 
 1. Vyberte **aplikace přes bránu Windows Firewall povolit**.
 
-1.  Pokud **vzdálený ladicí program** nebo **Visual Studio Remote Debugger** nezobrazí v části **povolené aplikace a funkce**vyberte **změnit nastavení**a pak vyberte **jiné aplikace bude**.
+1. Pokud **vzdálený ladicí program** nebo **Visual Studio Remote Debugger** nezobrazí v části **povolené aplikace a funkce**vyberte **změnit nastavení**a pak vyberte **jiné aplikace bude**.
 
-1.  Pokud aplikace vzdálený ladicí program stále není uvedená v **přidat aplikaci** dialogového okna, vyberte **Procházet**a přejděte do  *\<instalačního adresáře sady Visual Studio\> \\Common7\\IDE\\vzdálený ladicí program\\\<x86*, *x64*, nebo *Appx* \> , v závislosti na příslušnou architekturu pro vaši aplikaci. Vyberte *msvsmon.exe*a pak vyberte **přidat**.
+1. Pokud aplikace vzdálený ladicí program stále není uvedená v **přidat aplikaci** dialogového okna, vyberte **Procházet**a přejděte do  *\<instalačního adresáře sady Visual Studio\> \\Common7\\IDE\\vzdálený ladicí program\\\<x86*, *x64*, nebo *Appx* \> , v závislosti na příslušnou architekturu pro vaši aplikaci. Vyberte *msvsmon.exe*a pak vyberte **přidat**.
 
-1.  V **aplikace** seznamu, vyberte **vzdálený ladicí program** , který jste právě přidali. Vyberte **typy síťového**a pak vyberte jeden nebo více typů sítě, včetně typu sítě pro vzdálené připojení.
+1. V **aplikace** seznamu, vyberte **vzdálený ladicí program** , který jste právě přidali. Vyberte **typy síťového**a pak vyberte jeden nebo více typů sítě, včetně typu sítě pro vzdálené připojení.
 
-1.  Vyberte **přidat**a pak vyberte **OK**.
+1. Vyberte **přidat**a pak vyberte **OK**.
 
 ## <a name="troubleshooting"></a>Řešení potíží s připojení pro vzdálené ladění
 

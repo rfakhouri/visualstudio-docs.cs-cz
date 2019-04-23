@@ -8,25 +8,25 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bc41b980b012254ac263e027f1dd0361405c8366
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: e61da4205840f1831f956a31f5ebc00525b8cafc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56954005"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60086634"
 ---
 # <a name="walkthrough-create-an-sdk-using-c-or-visual-basic"></a>Návod: Vytvoření sady SDK s využitím C# nebo Visual Basic
 V tomto podrobném návodu se dozvíte, jak pomocí Visual C# vytvořit na sadu SDK jednoduché matematické knihovny a pak balíček sady SDK jako Visual Studio Extension (VSIX). Dokončíte následující postupy:
 
--   [Chcete-li vytvořit komponentu SimpleMath Windows Runtime](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md#createClassLibrary)
+- [Chcete-li vytvořit komponentu SimpleMath Windows Runtime](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md#createClassLibrary)
 
--   [Chcete-li vytvořit projekt rozšíření SimpleMathVSIX](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md#createVSIX)
--   [K vytvoření ukázkové aplikace, která používá knihovnu tříd](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md#createSample)
+- [Chcete-li vytvořit projekt rozšíření SimpleMathVSIX](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md#createVSIX)
+- [K vytvoření ukázkové aplikace, která používá knihovnu tříd](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md#createSample)
 
 ## <a name="prerequisites"></a>Požadavky
  Chcete-li postupovat podle tohoto návodu, je nutné nainstalovat sadu Visual Studio SDK. Další informace najdete v tématu [Visual Studio SDK](../extensibility/visual-studio-sdk.md).
 
-##  <a name="createClassLibrary"></a> Chcete-li vytvořit komponentu SimpleMath Windows Runtime
+## <a name="createClassLibrary"></a> Chcete-li vytvořit komponentu SimpleMath Windows Runtime
 
 1. V panelu nabídky zvolte **souboru** > **nový** > **nový projekt**.
 
@@ -54,25 +54,25 @@ V tomto podrobném návodu se dozvíte, jak pomocí Visual C# vytvořit na sadu 
 
 9. V **Průzkumníka řešení**, otevřete místní nabídku **SimpleMath** uzel projektu a klikněte na tlačítko **sestavení**.
 
-##  <a name="createVSIX"></a> Chcete-li vytvořit projekt rozšíření SimpleMathVSIX
+## <a name="createVSIX"></a> Chcete-li vytvořit projekt rozšíření SimpleMathVSIX
 
-1.  V místní nabídce pro **řešení "SimpleMath"** uzlu, vyberte **přidat** > **nový projekt**.
+1. V místní nabídce pro **řešení "SimpleMath"** uzlu, vyberte **přidat** > **nový projekt**.
 
-2.  V seznamu šablon rozbalte **Visual C#** nebo **jazyka Visual Basic**, zvolte **rozšiřitelnost** uzel a klikněte na tlačítko **projekt VSIX** Šablona.
+2. V seznamu šablon rozbalte **Visual C#** nebo **jazyka Visual Basic**, zvolte **rozšiřitelnost** uzel a klikněte na tlačítko **projekt VSIX** Šablona.
 
-3.  V **název** zadejte **SimpleMathVSIX**a klikněte na tlačítko **OK** tlačítko.
+3. V **název** zadejte **SimpleMathVSIX**a klikněte na tlačítko **OK** tlačítko.
 
-4.  V **Průzkumníka řešení**, zvolte **source.extension.vsixmanifest** položky.
+4. V **Průzkumníka řešení**, zvolte **source.extension.vsixmanifest** položky.
 
-5.  V panelu nabídky zvolte **zobrazení** > **kód**.
+5. V panelu nabídky zvolte **zobrazení** > **kód**.
 
-6.  Nahraďte stávající kód XML následující kód XML:
+6. Nahraďte stávající kód XML následující kód XML:
 
      [!code-xml[CreatingAnSDKUsingWinRT#1](../extensibility/codesnippet/XML/walkthrough-creating-an-sdk-using-csharp-or-visual-basic_2.xml)]
 
-7.  V **Průzkumníka řešení**, zvolte **SimpleMathVSIX** projektu.
+7. V **Průzkumníka řešení**, zvolte **SimpleMathVSIX** projektu.
 
-8.  V panelu nabídky zvolte **projektu** > **přidat novou položku**.
+8. V panelu nabídky zvolte **projektu** > **přidat novou položku**.
 
 9. V seznamu **společné položky**, rozbalte **Data**a klikněte na tlačítko **soubor XML**.
 
@@ -83,6 +83,7 @@ V tomto podrobném návodu se dozvíte, jak pomocí Visual C# vytvořit na sadu 
 12. Nahraďte obsah souboru následující kód XML:
 
     **C#**
+
     ```xml
     <FileList
       DisplayName="WinRT Math Library (CS)"
@@ -95,6 +96,7 @@ V tomto podrobném návodu se dozvíte, jak pomocí Visual C# vytvořit na sadu 
     ```
 
     **Visual Basic**
+
     ```xml
     <FileList
       DisplayName="WinRT Math Library (VB)"
@@ -149,7 +151,7 @@ V tomto podrobném návodu se dozvíte, jak pomocí Visual C# vytvořit na sadu 
 
 30. Zvolte **nainstalovat** tlačítko, počkejte na dokončení instalace a potom restartujte Visual Studio.
 
-##  <a name="createSample"></a> K vytvoření ukázkové aplikace, která používá knihovnu tříd
+## <a name="createSample"></a> K vytvoření ukázkové aplikace, která používá knihovnu tříd
 
 1. V panelu nabídky zvolte **souboru** > **nový** > **nový projekt**.
 
@@ -176,6 +178,7 @@ V tomto podrobném návodu se dozvíte, jak pomocí Visual C# vytvořit na sadu 
 10. V **Průzkumníka řešení**, otevřete **MainPage.xaml**a jeho obsah nahraďte následujícím XAML:
 
     **C#**
+
     ```xml
     <Page
         x:Class="WinRTMathTestCS.MainPage"
@@ -201,6 +204,7 @@ V tomto podrobném návodu se dozvíte, jak pomocí Visual C# vytvořit na sadu 
     ```
 
     **Visual Basic**
+
     ```xml
     <Page
         x:Class="WinRTMathTest.MainPage"

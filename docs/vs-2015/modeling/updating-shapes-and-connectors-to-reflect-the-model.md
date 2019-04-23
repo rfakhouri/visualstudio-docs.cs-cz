@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e5c03fa6a04abd06af9e24b83977d491e9809265
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c8520084b57fdf0f831f62626593832d03c25636
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54798866"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107863"
 ---
 # <a name="updating-shapes-and-connectors-to-reflect-the-model"></a>Aktualizace obrazců a konektorů k vyjádření modelu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,9 +32,9 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 ## <a name="set-shape-map-properties-to-control-the-visibility-of-a-decorator"></a>Nastavit vlastnosti Mapa obrazce pro řízení viditelnosti dekorátoru  
  Můžete řídit viditelnosti dekorátoru bez psaní kódu programu, tím, že nakonfigurujete mapování mezi obrazcem a doménová třída v definici DSL. Další informace naleznete v následujících tématech:  
   
--   [Postupy: Řízení viditelnosti dekorátoru – přesměrování](../misc/how-to-control-the-visibility-of-a-decorator-redirect.md)  
+- [Postupy: Řízení viditelnosti dekorátoru – přesměrování](../misc/how-to-control-the-visibility-of-a-decorator-redirect.md)  
   
--   [Jak se definuje jazyk specifický pro doménu](../modeling/how-to-define-a-domain-specific-language.md)  
+- [Jak se definuje jazyk specifický pro doménu](../modeling/how-to-define-a-domain-specific-language.md)  
   
 ## <a name="expose-the-color-and-style-of-a-shape-as-properties"></a>Zpřístupnění barvu a styl v tvaru formě vlastnosti  
  V definici DSL, klikněte pravým tlačítkem na třídu tvar, přejděte na **přidat vystavený**a potom klikněte na jednu z položek, jako **Barva výplně**.  
@@ -115,7 +115,7 @@ partial class MyLanguageDiagram
   
  Tuto metodu lze pro vlastnosti domény i bez úložiště funkcí, jako je například velikost tvaru.  
   
-##  <a name="OnAssociatedProperty"></a> Použití AssociateValueWith() k aktualizaci další funkce obrazec  
+## <a name="OnAssociatedProperty"></a> Použití AssociateValueWith() k aktualizaci další funkce obrazec  
  Pro některé funkce obrazce, jako je například, zda má stín nebo styl šipky konektoru neexistuje žádná integrovaná metoda vystavení funkce jako doménovou vlastnost.  Změny těchto funkcí nejsou pod kontrolou transakcí systému. Proto není třeba je aktualizovat pomocí pravidel, protože pravidla nejsou vyvolány, když uživatel provádí příkaz zpět.  
   
  Místo toho můžete aktualizovat tyto funkce pomocí <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnAssociatedPropertyChanged%2A>. V následujícím příkladu se provádí styl šipky konektoru podle hodnoty vlastnosti domény ve vztahu, který zobrazuje konektoru:  

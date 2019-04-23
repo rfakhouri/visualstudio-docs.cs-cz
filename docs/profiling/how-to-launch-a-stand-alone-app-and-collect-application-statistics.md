@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e96a577d9eb20df0d89ccd08100c6811fb167f3c
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 1a87fabc64619056a4d583c075976faddfb5a2a8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59654951"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110580"
 ---
 # <a name="how-to-launch-a-stand-alone-application-with-the-profiler-and-collect-application-statistics-by-using-the-command-line"></a>Postupy: Spuštění samostatné aplikace s profilerem a shromažďování statistik aplikace pomocí příkazového řádku
 Toto téma popisuje způsob použití [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] příkazového řádku nástrojů pro profilaci spuštění samostatné (klientské) aplikaci a shromáždit statistiky výkonu pomocí metody vzorkování.
@@ -25,7 +25,7 @@ Toto téma popisuje způsob použití [!INCLUDE[vsprvs](../code-quality/includes
 
  Chcete-li využívat nástroje příkazového řádku profileru, musí přidat cestu do proměnné prostředí PATH v okně příkazového řádku nebo ho přidejte do příkazu samého. Spuštění nástrojů pro profilaci na počítači nainstalovanou aplikaci Visual Studio z příkazového okna sady Visual Studio.
 
-1.  Pokud používáte nástroje pro profilaci nainstalované na počítači, kde je aplikace Visual Studio okno sady Visual Studio příkazů správné cesty. Na **nástroje** nabídce zvolte **VS příkazového řádku**
+1. Pokud používáte nástroje pro profilaci nainstalované na počítači, kde je aplikace Visual Studio okno sady Visual Studio příkazů správné cesty. Na **nástroje** nabídce zvolte **VS příkazového řádku**
 
 > [!NOTE]
 >  Chcete-li získat cestu k nástrojů pro profilaci, naleznete v tématu [zadejte cestu k nástrojům příkazového řádku](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Na 64bitových počítačích jsou k dispozici 64bitové i 32bitové verze nástrojů. Použití nástroje příkazového řádku profileru, musíte přidat cestu k nástrojům do proměnné prostředí PATH v okně příkazového řádku nebo ho přidejte do příkazu samého.
@@ -78,7 +78,7 @@ Toto téma popisuje způsob použití [!INCLUDE[vsprvs](../code-quality/includes
 
 #### <a name="to-start-and-stop-data-collection"></a>Spuštění a zastavení shromažďování dat
 
--   Následující páry možností spouští a zastavují sběr dat. Každou možnost zadejte na samostatný příkazový řádek. Sběr dat lze zapnout a vypnout několikrát.
+- Následující páry možností spouští a zastavují sběr dat. Každou možnost zadejte na samostatný příkazový řádek. Sběr dat lze zapnout a vypnout několikrát.
 
     |Možnost|Popis|
     |------------|-----------------|
@@ -91,15 +91,15 @@ Toto téma popisuje způsob použití [!INCLUDE[vsprvs](../code-quality/includes
 
 #### <a name="to-end-a-profiling-session"></a>Chcete-li ukončit relaci profilování
 
-1.  Proveďte jeden z následujících kroků-li odpojit profiler od cílové aplikace:
+1. Proveďte jeden z následujících kroků-li odpojit profiler od cílové aplikace:
 
-    -   Ukončete cílovou aplikaci.
+    - Ukončete cílovou aplikaci.
 
          -nebo-
 
-    -   Typ **VSPerfCmd / odpojení**
+    - Typ **VSPerfCmd / odpojení**
 
-2.  Vypněte profiler. Typ:
+2. Vypněte profiler. Typ:
 
      **Nástroj VSPerfCmd** [ /Shutdown](../profiling/shutdown.md)
 

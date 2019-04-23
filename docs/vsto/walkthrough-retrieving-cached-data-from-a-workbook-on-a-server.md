@@ -1,5 +1,5 @@
 ---
-title: 'Průvodce: Načtení dat uložených v mezipaměti ze sešitu na serveru'
+title: 'Návod: Načtení dat uložených v mezipaměti ze sešitu na serveru'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,14 +16,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fd220d4cabf9dce5bc4449ee2da6dc47001831e8
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: bd39ec744e88c2a9334f31c2974ed92f1f6b9a12
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54867426"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60101415"
 ---
-# <a name="walkthrough-retrieve-cached-data-from-a-workbook-on-a-server"></a>Průvodce: Načtení dat uložených v mezipaměti ze sešitu na serveru
+# <a name="walkthrough-retrieve-cached-data-from-a-workbook-on-a-server"></a>Návod: Načtení dat uložených v mezipaměti ze sešitu na serveru
   Tento návod ukazuje, jak načíst data z datové sady, které se uloží do mezipaměti v sešitu aplikace Microsoft Office Excel bez spuštění pomocí aplikace Excel <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> třídy.
 
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]
@@ -48,36 +48,36 @@ ms.locfileid: "54867426"
 ## <a name="prerequisites"></a>Požadavky
  K dokončení tohoto návodu budete potřebovat následující komponenty:
 
--   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
+- [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
--   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] nebo [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].
+- [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] nebo [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].
 
--   Přístup ke spuštěné instanci serveru Microsoft SQL Server nebo Microsoft SQL Server Express, který má k němu připojené ukázkové databáze AdventureWorksLT. Můžete stáhnout z databáze AdventureWorksLT [webu CodePlex](http://go.microsoft.com/fwlink/?linkid=87843). Další informace o připojení databáze naleznete v následujících tématech:
+- Přístup ke spuštěné instanci serveru Microsoft SQL Server nebo Microsoft SQL Server Express, který má k němu připojené ukázkové databáze AdventureWorksLT. Můžete stáhnout z databáze AdventureWorksLT [webu CodePlex](http://go.microsoft.com/fwlink/?linkid=87843). Další informace o připojení databáze naleznete v následujících tématech:
 
-    -   Připojení databáze pomocí SQL Server Management Studio nebo SQL Server Management Studio Express, naleznete v tématu [jak: Připojení databáze (SQL Server Management Studio)](/sql/relational-databases/databases/attach-a-database).
+    - Připojení databáze pomocí SQL Server Management Studio nebo SQL Server Management Studio Express, naleznete v tématu [jak: Připojení databáze (SQL Server Management Studio)](/sql/relational-databases/databases/attach-a-database).
 
-    -   Připojení databáze pomocí příkazového řádku, naleznete v tématu [jak: Připojit soubor databáze pro SQL Server Express](/previous-versions/sql/).
+    - Připojení databáze pomocí příkazového řádku, naleznete v tématu [jak: Připojit soubor databáze pro SQL Server Express](/previous-versions/sql/).
 
 ## <a name="create-a-class-library-project-that-defines-a-dataset"></a>Vytvořte projekt knihovny tříd, který definuje datovou sadu
  Pokud chcete použít stejné datové sady v projektu sešitu aplikace Excel a konzolové aplikace, musí definovat datové sady v samostatné sestavení, který je odkazován oba z těchto projektů. V tomto návodu definování datové sady v projektu knihovny tříd.
 
 ### <a name="create-the-class-library-project"></a>Vytvořte projekt knihovny tříd
 
-1.  Spustit [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
+1. Spustit [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
-2.  Na **souboru** nabídky, přejděte k **nový**a potom klikněte na tlačítko **projektu**.
+2. Na **souboru** nabídky, přejděte k **nový**a potom klikněte na tlačítko **projektu**.
 
-3.  V podokně šablony rozbalte **Visual C#** nebo **jazyka Visual Basic**a potom klikněte na tlačítko **Windows**.
+3. V podokně šablony rozbalte **Visual C#** nebo **jazyka Visual Basic**a potom klikněte na tlačítko **Windows**.
 
-4.  V seznamu šablon projektu vyberte **knihovny tříd**.
+4. V seznamu šablon projektu vyberte **knihovny tříd**.
 
-5.  V **název** zadejte **AdventureWorksDataSet**.
+5. V **název** zadejte **AdventureWorksDataSet**.
 
-6.  Klikněte na tlačítko **Procházet**, přejděte k vaší *%UserProfile%\My dokumenty* (pro Windows XP a starší) nebo *%UserProfile%\Documents* (pro Windows Vista) složku a potom klikněte na **Vyberte složku**.
+6. Klikněte na tlačítko **Procházet**, přejděte k vaší *%UserProfile%\My dokumenty* (pro Windows XP a starší) nebo *%UserProfile%\Documents* (pro Windows Vista) složku a potom klikněte na **Vyberte složku**.
 
-7.  V **nový projekt** dialogového okna zkontrolujte, zda **vytvořit adresář pro řešení** není zaškrtnuté políčko.
+7. V **nový projekt** dialogového okna zkontrolujte, zda **vytvořit adresář pro řešení** není zaškrtnuté políčko.
 
-8.  Klikněte na **OK**.
+8. Klikněte na **OK**.
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Přidá **AdventureWorksDataSet** projektu **Průzkumníka řešení** a otevře *Class1.cs* nebo *Class1.vb* soubor kódu.
 
@@ -125,73 +125,73 @@ ms.locfileid: "54867426"
 
 ### <a name="create-the-excel-workbook-project"></a>Vytvořte projekt sešitu aplikace Excel
 
-1.  V **Průzkumníku řešení**, klikněte pravým tlačítkem myši **AdventureWorksDataSet** řešení, přejděte na **přidat**a potom klikněte na tlačítko **nový projekt**.
+1. V **Průzkumníku řešení**, klikněte pravým tlačítkem myši **AdventureWorksDataSet** řešení, přejděte na **přidat**a potom klikněte na tlačítko **nový projekt**.
 
-2.  V podokně šablony rozbalte **Visual C#** nebo **jazyka Visual Basic**a potom rozbalte **Office/SharePoint**.
+2. V podokně šablony rozbalte **Visual C#** nebo **jazyka Visual Basic**a potom rozbalte **Office/SharePoint**.
 
-3.  V rozbalených **Office/SharePoint** uzlu, vyberte **Office Add-ins** uzlu.
+3. V rozbalených **Office/SharePoint** uzlu, vyberte **Office Add-ins** uzlu.
 
-4.  V seznamu šablon projektu vyberte **sešit aplikace Excel 2010** nebo **sešit aplikace Excel 2013** projektu.
+4. V seznamu šablon projektu vyberte **sešit aplikace Excel 2010** nebo **sešit aplikace Excel 2013** projektu.
 
-5.  V **název** zadejte **AdventureWorksReport**. Neprovádějte žádné změny umístění.
+5. V **název** zadejte **AdventureWorksReport**. Neprovádějte žádné změny umístění.
 
-6.  Klikněte na **OK**.
+6. Klikněte na **OK**.
 
      **Visual Studio Tools for Office Project Wizard** otevře.
 
-7.  Ujistěte se, že **vytvoříte nový textový dokument** je vybraná a klikněte na tlačítko **OK**.
+7. Ujistěte se, že **vytvoříte nový textový dokument** je vybraná a klikněte na tlačítko **OK**.
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Otevře **AdventureWorksReport** sešit v návrháři a přidá **AdventureWorksReport** projektu **Průzkumníka řešení**.
 
 ## <a name="add-the-dataset-to-data-sources-in-the-excel-workbook-project"></a>Přidat datovou sadu do zdroje dat v projektu sešitu aplikace Excel
  Než budete moci zobrazit datovou sadu v sešitu aplikace Excel, musíte nejprve přidat datové sady ke zdrojům dat v projektu sešitu aplikace Excel.
 
-1.  V **Průzkumníka řešení**, dvakrát klikněte na panel *Sheet1.cs* nebo *Sheet1.vb* pod **AdventureWorksReport** projektu.
+1. V **Průzkumníka řešení**, dvakrát klikněte na panel *Sheet1.cs* nebo *Sheet1.vb* pod **AdventureWorksReport** projektu.
 
      Sešit se otevře v návrháři.
 
-2.  Na **Data** nabídky, klikněte na tlačítko **přidat nový zdroj dat**.
+2. Na **Data** nabídky, klikněte na tlačítko **přidat nový zdroj dat**.
 
      **Průvodce konfigurací zdroje dat** otevře.
 
-3.  Klikněte na tlačítko **objekt**a potom klikněte na tlačítko **Další**.
+3. Klikněte na tlačítko **objekt**a potom klikněte na tlačítko **Další**.
 
-4.  V **vyberte objektu vazby** stránky, klikněte na tlačítko **přidat odkaz**.
+4. V **vyberte objektu vazby** stránky, klikněte na tlačítko **přidat odkaz**.
 
-5.  Na **projekty** klikněte na tlačítko **AdventureWorksDataSet** a potom klikněte na tlačítko **OK**.
+5. Na **projekty** klikněte na tlačítko **AdventureWorksDataSet** a potom klikněte na tlačítko **OK**.
 
-6.  V části **AdventureWorksDataSet** obor názvů **AdventureWorksDataSet** sestavení, klikněte na tlačítko **AdventureWorksLTDataSet** a potom klikněte na tlačítko **dokončit** .
+6. V části **AdventureWorksDataSet** obor názvů **AdventureWorksDataSet** sestavení, klikněte na tlačítko **AdventureWorksLTDataSet** a potom klikněte na tlačítko **dokončit** .
 
      **Zdroje dat** otevře se okno, a **AdventureWorksLTDataSet** se přidá do seznamu datových zdrojů.
 
 ## <a name="create-a-listobject-that-is-bound-to-an-instance-of-the-dataset"></a>Vytvoření objektu ListObject, který je vázán k instanci datové sady
  Chcete-li zobrazit datovou sadu v sešitu, vytvořte <xref:Microsoft.Office.Tools.Excel.ListObject> , která je svázána s instancí datové sady. Další informace o vázání ovládacích prvků na data, najdete v části [vytvoření vazby dat k ovládacím prvkům v řešeních pro systém Office](../vsto/binding-data-to-controls-in-office-solutions.md).
 
-1.  V **zdroje dat** okna, rozbalte **AdventureWorksLTDataSet** pod uzlem **AdventureWorksDataSet**.
+1. V **zdroje dat** okna, rozbalte **AdventureWorksLTDataSet** pod uzlem **AdventureWorksDataSet**.
 
-2.  Vyberte **produktu** uzel, klikněte na šipku rozevíracího seznamu, která se zobrazí a vyberte **ListObject** v rozevíracím seznamu.
+2. Vyberte **produktu** uzel, klikněte na šipku rozevíracího seznamu, která se zobrazí a vyberte **ListObject** v rozevíracím seznamu.
 
      Pokud na šipku rozevíracího seznamu se nezobrazí, zkontrolujte, že sešit je v Návrháři otevřený.
 
-3.  Přetáhněte **produktu** tabulky do buňky A1.
+3. Přetáhněte **produktu** tabulky do buňky A1.
 
      A <xref:Microsoft.Office.Tools.Excel.ListObject> ovládací prvek s názvem `productListObject` je vytvořen na listu, počínaje buňku A1. Současně, objekt datovou sadu s názvem `adventureWorksLTDataSet` a <xref:System.Windows.Forms.BindingSource> s názvem `productBindingSource` jsou přidány do projektu. <xref:Microsoft.Office.Tools.Excel.ListObject> Je vázán na <xref:System.Windows.Forms.BindingSource>, která je dále vázán na objektu dataset.
 
 ## <a name="add-the-dataset-to-the-data-cache"></a>Přidat datovou sadu do mezipaměti dat
  Pokud chcete povolit kód mimo projektu sešitu aplikace Excel přístup k datové sadě v sešitu, musíte přidat datovou sadu do datové mezipaměti. Další informace o mezipaměti dat najdete v tématu [data v přizpůsobeních na úrovni dokumentu v mezipaměti](../vsto/cached-data-in-document-level-customizations.md) a [ukládat data do mezipaměti](../vsto/caching-data.md).
 
-1.  V návrháři, klikněte na tlačítko **adventureWorksLTDataSet**.
+1. V návrháři, klikněte na tlačítko **adventureWorksLTDataSet**.
 
-2.  V **vlastnosti** okno, nastaveno **modifikátory** vlastnost **veřejné**.
+2. V **vlastnosti** okno, nastaveno **modifikátory** vlastnost **veřejné**.
 
-3.  Nastavte **CacheInDocument** vlastnost **True**.
+3. Nastavte **CacheInDocument** vlastnost **True**.
 
 ## <a name="initialize-the-dataset-in-the-workbook"></a>Inicializovat datové sady v sešitu
  Předtím, než můžete načíst data z datové sady v mezipaměti pomocí konzolové aplikace, musíte nejprve naplnění datové sady v mezipaměti s daty.
 
-1.  V **Průzkumníka řešení**, klikněte pravým tlačítkem myši *Sheet1.cs* nebo *Sheet1.vb* souboru a klikněte na tlačítko **zobrazit kód**.
+1. V **Průzkumníka řešení**, klikněte pravým tlačítkem myši *Sheet1.cs* nebo *Sheet1.vb* souboru a klikněte na tlačítko **zobrazit kód**.
 
-2.  Nahradit `Sheet1_Startup` obslužné rutiny události s následujícím kódem. Tento kód používá instanci `ProductTableAdapter` třídu, která je definována v **AdventureWorksDataSet** projekt tak, aby vyplnil datové sady v mezipaměti s daty, pokud je aktuálně prázdný.
+2. Nahradit `Sheet1_Startup` obslužné rutiny události s následujícím kódem. Tento kód používá instanci `ProductTableAdapter` třídu, která je definována v **AdventureWorksDataSet** projekt tak, aby vyplnil datové sady v mezipaměti s daty, pokud je aktuálně prázdný.
 
      [!code-csharp[Trin_CachedDataWalkthroughs#8](../vsto/codesnippet/CSharp/AdventureWorksDataSet/AdventureWorksReport/Sheet1.cs#8)]
      [!code-vb[Trin_CachedDataWalkthroughs#8](../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/AdventureWorksReport/Sheet1.vb#8)]
@@ -201,30 +201,30 @@ ms.locfileid: "54867426"
 
 ### <a name="build-and-run-the-project"></a>Sestavení a spuštění projektu
 
-1.  V **Průzkumníku řešení**, klikněte pravým tlačítkem myši **AdventureWorksReport** projektu, zvolte **ladění**a potom klikněte na **zahájit novou instanci**.
+1. V **Průzkumníku řešení**, klikněte pravým tlačítkem myši **AdventureWorksReport** projektu, zvolte **ladění**a potom klikněte na **zahájit novou instanci**.
 
      Sestavení projektu a otevře sešit v Excelu. Ověřte následující:
 
-    -   <xref:Microsoft.Office.Tools.Excel.ListObject> Vyplní daty.
+    - <xref:Microsoft.Office.Tools.Excel.ListObject> Vyplní daty.
 
-    -   Hodnota v **ListPrice** sloupec prvního řádku <xref:Microsoft.Office.Tools.Excel.ListObject> je 1431.5. Dále v tomto názorném postupu použijete konzolovou aplikaci umožní úpravy hodnot v **ListPrice** sloupce.
+    - Hodnota v **ListPrice** sloupec prvního řádku <xref:Microsoft.Office.Tools.Excel.ListObject> je 1431.5. Dále v tomto názorném postupu použijete konzolovou aplikaci umožní úpravy hodnot v **ListPrice** sloupce.
 
-2.  Uložte sešit. Neprovádějte žádné změny názvu souboru nebo umístění v sešitu.
+2. Uložte sešit. Neprovádějte žádné změny názvu souboru nebo umístění v sešitu.
 
-3.  Zavřete aplikaci Excel.
+3. Zavřete aplikaci Excel.
 
 ## <a name="create-a-console-application-project"></a>Vytvořte projekt konzolové aplikace
  Vytvořte projekt konzolové aplikace, které chcete použít ke změně dat v datové sady v mezipaměti v sešitu.
 
-1.  V **Průzkumníku řešení**, klikněte pravým tlačítkem myši **AdventureWorksDataSet** řešení, přejděte na **přidat**a potom klikněte na tlačítko **nový projekt**.
+1. V **Průzkumníku řešení**, klikněte pravým tlačítkem myši **AdventureWorksDataSet** řešení, přejděte na **přidat**a potom klikněte na tlačítko **nový projekt**.
 
-2.  V **typy projektů** podokně rozbalte **Visual C#** nebo **jazyka Visual Basic**a potom klikněte na tlačítko **Windows**.
+2. V **typy projektů** podokně rozbalte **Visual C#** nebo **jazyka Visual Basic**a potom klikněte na tlačítko **Windows**.
 
-3.  V **šablony** vyberte **konzolovou aplikaci**.
+3. V **šablony** vyberte **konzolovou aplikaci**.
 
-4.  V **název** zadejte **DataReader**. Neprovádějte žádné změny umístění.
+4. V **název** zadejte **DataReader**. Neprovádějte žádné změny umístění.
 
-5.  Klikněte na **OK**.
+5. Klikněte na **OK**.
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Přidá **DataReader** projektu **Průzkumníku řešení** a otevře *Program.cs* nebo *Module1.vb* soubor kódu.
 
@@ -282,16 +282,16 @@ ms.locfileid: "54867426"
 
 ### <a name="test-the-workbook"></a>Sešit testování
 
-1.  V **Průzkumníka řešení**, klikněte pravým tlačítkem na **DataReader** projektu, přejděte na **ladění**a potom klikněte na tlačítko **zahájit novou instanci**.
+1. V **Průzkumníka řešení**, klikněte pravým tlačítkem na **DataReader** projektu, přejděte na **ladění**a potom klikněte na tlačítko **zahájit novou instanci**.
 
      Ověřte, že aplikace zprávu, že místní datová sada obsahuje 295 řádků.
 
-2.  Stisknutím klávesy **Enter** zavřít aplikaci.
+2. Stisknutím klávesy **Enter** zavřít aplikaci.
 
 ## <a name="next-steps"></a>Další kroky
  Další informace o práci s data uložená v mezipaměti naleznete v těchto tématech:
 
--   Změna dat v datové sady v mezipaměti bez spuštění Excelu. Další informace najdete v tématu [názorný postup: Změna dat uložených v mezipaměti ze sešitu na serveru](../vsto/walkthrough-changing-cached-data-in-a-workbook-on-a-server.md).
+- Změna dat v datové sady v mezipaměti bez spuštění Excelu. Další informace najdete v tématu [názorný postup: Změna dat uložených v mezipaměti ze sešitu na serveru](../vsto/walkthrough-changing-cached-data-in-a-workbook-on-a-server.md).
 
 ## <a name="see-also"></a>Viz také:
 

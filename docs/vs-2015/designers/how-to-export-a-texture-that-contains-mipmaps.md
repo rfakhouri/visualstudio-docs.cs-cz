@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 732fa9a5d32916545b281a006cbeeaa93771f3ec
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f525f4b31a3535f6ea7b89d0443402240365cc7d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54754333"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088649"
 ---
 # <a name="how-to-export-a-texture-that-contains-mipmaps"></a>Postupy: Export textury obsahující mipmapy
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,9 +23,9 @@ Kanál s obsahem obrazu může generovat mipmapy ze zdrojového obrazu jako čá
   
  Tento dokument vysvětluje tyto činnosti:  
   
--   Konfigurace zdrojového obrazu pro zpracování obsahu kanálu obrázku.  
+- Konfigurace zdrojového obrazu pro zpracování obsahu kanálu obrázku.  
   
--   Konfigurace obsahu kanálu obrázku ke generování Mipmap.  
+- Konfigurace obsahu kanálu obrázku ke generování Mipmap.  
   
 ## <a name="exporting-mipmaps"></a>Exportování Mipmap  
  Mipmapping zajišťuje úroveň of-Detail automatické místo na obrazovce pro texturované povrchy u 3D her nebo aplikací. To zvyšuje rychlost vykreslování hry nebo aplikace předem výpočtem předvýpočtem zredukovaných verzí textur tak, aby celá textura nemá být zredukována pokaždé, když je vzorkována.  

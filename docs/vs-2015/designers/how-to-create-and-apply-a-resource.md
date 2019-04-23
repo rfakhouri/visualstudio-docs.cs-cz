@@ -12,12 +12,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fdac7018ec67250514836f22f3c297ddce5bd382
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c6b387acd7494396d118915f94a93ca88ec67199
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54805026"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60118224"
 ---
 # <a name="how-to-create-and-apply-a-resource"></a>Vytvoření a použití prostředku
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,27 +28,27 @@ Styly a šablony pro elementy v Návrháři XAML jsou uloženy v opakovaně pou�
   
 ### <a name="to-create-a-new-resource"></a>Chcete-li vytvořit nový prostředek  
   
-1.  S XAML soubor otevřen v Návrháři XAML vytvořte element nebo zvolte prvek v okně osnovy dokumentu.  
+1. S XAML soubor otevřen v Návrháři XAML vytvořte element nebo zvolte prvek v okně osnovy dokumentu.  
   
-2.  V okně Vlastnosti zvolte značku vlastnosti, které se zobrazí jako symbol políčka napravo od hodnoty vlastnosti, a klikněte na tlačítko **převést na nový prostředek**. Symbol bílé pole určuje výchozí hodnotu a symbol černé skříňky obvykle značí, že použití místního prostředku  
+2. V okně Vlastnosti zvolte značku vlastnosti, které se zobrazí jako symbol políčka napravo od hodnoty vlastnosti, a klikněte na tlačítko **převést na nový prostředek**. Symbol bílé pole určuje výchozí hodnotu a symbol černé skříňky obvykle značí, že použití místního prostředku  
   
      Zobrazí se příslušné dialogové okno pro tvorbu prostředku. Při vytváření prostředku ze štětce, zobrazí se toto dialogové okno:  
   
      ![Vytvořit prostředek – dialogové okno](../designers/media/xaml-create-resource.png "xaml_create_resource")  
   
-3.  V **název (klíč)** zadejte název klíče. Toto je název, který vám pomůže při dalších prvků, které odkazují na prostředek.  
+3. V **název (klíč)** zadejte název klíče. Toto je název, který vám pomůže při dalších prvků, které odkazují na prostředek.  
   
-4.  V části **definovat v**, zvolte možnost, která určuje, kde chcete prostředek, který chcete definovat:  
+4. V části **definovat v**, zvolte možnost, která určuje, kde chcete prostředek, který chcete definovat:  
   
-    -   Chcete-li být prostředek dostupný libovolnému dokumentu v aplikaci, zvolte **aplikace**.  
+    - Chcete-li být prostředek dostupný libovolnému dokumentu v aplikaci, zvolte **aplikace**.  
   
-    -   Chcete-li být prostředek přístupný pouze v aktuálním dokumentu, zvolte **tento dokument**.  
+    - Chcete-li být prostředek přístupný pouze v aktuálním dokumentu, zvolte **tento dokument**.  
   
-    -   Chcete-li být prostředek přístupný pouze na prvek z jste vytvořili prostředek nebo na jeho podřízené prvky, zvolte **tento dokument**a v rozevíracím seznamu vyberte *element*: *název* .  
+    - Chcete-li být prostředek přístupný pouze na prvek z jste vytvořili prostředek nebo na jeho podřízené prvky, zvolte **tento dokument**a v rozevíracím seznamu vyberte *element*: *název* .  
   
-    -   Chcete-li definovat prostředek v souboru slovníku prostředků, který lze opětovně použít v jiných projektech, klikněte na tlačítko **slovník prostředků**a potom vyberte existující soubor slovníku prostředků, jako je například **StandardStyles.xaml**, v rozevíracím seznamu.  
+    - Chcete-li definovat prostředek v souboru slovníku prostředků, který lze opětovně použít v jiných projektech, klikněte na tlačítko **slovník prostředků**a potom vyberte existující soubor slovníku prostředků, jako je například **StandardStyles.xaml**, v rozevíracím seznamu.  
   
-5.  Zvolte **OK** tlačítko má prostředek vytvořit a použít ji k elementu, ze kterého jste vytvořili.  
+5. Zvolte **OK** tlačítko má prostředek vytvořit a použít ji k elementu, ze kterého jste vytvořili.  
   
 ### <a name="to-apply-a-resource-to-an-element-or-property"></a>Chcete-li použít prostředek na element nebo vlastnost  
   
@@ -69,11 +69,11 @@ Styly a šablony pro elementy v Návrháři XAML jsou uloženy v opakovaně pou�
   
 ### <a name="to-edit-a-resource"></a>Chcete-li upravit prostředek  
   
-1.  Vyberte prvek na návrhové ploše nebo v okně osnovy dokumentu.  
+1. Vyberte prvek na návrhové ploše nebo v okně osnovy dokumentu.  
   
-2.  Zvolte výchozí nebo místní vlastnost značky vpravo od vlastnosti v okně Vlastnosti a pak zvolte **upravit prostředek** otevřít **upravit prostředek** dialogové okno.  
+2. Zvolte výchozí nebo místní vlastnost značky vpravo od vlastnosti v okně Vlastnosti a pak zvolte **upravit prostředek** otevřít **upravit prostředek** dialogové okno.  
   
-3.  Změna možností pro prostředek.  
+3. Změna možností pro prostředek.  
   
 ## <a name="see-also"></a>Viz také  
  [Vytvoření uživatelského rozhraní pomocí Návrháře XAML](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)

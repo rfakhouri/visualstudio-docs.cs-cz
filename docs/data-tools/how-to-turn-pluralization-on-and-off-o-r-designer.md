@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 51ca5704bae6d52bf6957b97ac01d2b587c05970
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 34b25be50cee681ee9c45e446d86a6054099926b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55943555"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60103742"
 ---
 # <a name="how-to-turn-pluralization-on-and-off-or-designer"></a>Postupy: Pluralizace zapnutí a vypnutí (O/R Designer)
 Ve výchozím nastavení se při přetažení databázových objektů, které mají jména končící na s nebo dokumentu z **Průzkumníka serveru** nebo **Průzkumník databáze** na [technologie LINQ to SQL nástroje v sadě Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md), názvy generovaných tříd entit se mění v množném čísle pro singulární. To slouží k reprezentaci přesněji skutečnost, že třída vytvořenou instanci entity se mapuje na jeden záznam dat. Například přidáním `Customers` tabulky **O/R Designer** výsledkem třídu entity s názvem `Customer` protože třídy bude obsahovat data pro jediného zákazníka.
@@ -25,18 +25,18 @@ Ve výchozím nastavení se při přetažení databázových objektů, které ma
 
 ### <a name="to-turn-pluralization-on-and-off"></a>K zapnutí a vypnutí pluralizace
 
-1.  Na **nástroje** nabídky, klikněte na tlačítko **možnosti**.
+1. Na **nástroje** nabídky, klikněte na tlačítko **možnosti**.
 
-2.  V **možnosti** dialogového okna rozbalte **databázové nástroje**.
+2. V **možnosti** dialogového okna rozbalte **databázové nástroje**.
 
     > [!NOTE]
     >  Vyberte **zobrazit všechna nastavení** Pokud **databázové nástroje** uzel není viditelný.
 
-3.  Klikněte na tlačítko **O/R Designer**.
+3. Klikněte na tlačítko **O/R Designer**.
 
-4.  Nastavte **Pluralizaci názvů** k **povoleno** = **False** nastavit **O/R Designer** tak, aby neměnil názvy tříd .
+4. Nastavte **Pluralizaci názvů** k **povoleno** = **False** nastavit **O/R Designer** tak, aby neměnil názvy tříd .
 
-5.  Nastavte **Pluralizaci názvů** k **povoleno** = **True** použít pluralizace pravidla pro názvy tříd objektů, které jsou přidány do **O/R Návrhář**.
+5. Nastavte **Pluralizaci názvů** k **povoleno** = **True** použít pluralizace pravidla pro názvy tříd objektů, které jsou přidány do **O/R Návrhář**.
 
 ## <a name="see-also"></a>Viz také:
 

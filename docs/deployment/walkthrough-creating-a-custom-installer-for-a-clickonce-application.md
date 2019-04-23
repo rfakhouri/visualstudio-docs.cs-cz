@@ -1,5 +1,5 @@
 ---
-title: 'Průvodce: Vytvoření vlastního instalátoru pro aplikaci ClickOnce | Dokumentace Microsoftu'
+title: 'Návod: Vytvoření vlastního instalátoru pro aplikaci ClickOnce | Dokumentace Microsoftu'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -18,25 +18,25 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ceadc2458b6d380cc67062cf89cbea20541446c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 87bf42ccb44c170321f36a9fe2fa7f44e274dcfe
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56609941"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099660"
 ---
-# <a name="walkthrough-create-a-custom-installer-for-a-clickonce-application"></a>Průvodce: Vytvoření vlastního instalátoru pro aplikaci ClickOnce
+# <a name="walkthrough-create-a-custom-installer-for-a-clickonce-application"></a>Návod: Vytvoření vlastního instalátoru pro aplikaci ClickOnce
 Na základě všech aplikací ClickOnce *.exe* souboru bezobslužné instalace a aktualizovat vlastní instalační program. Vlastní instalační program můžete implementovat vlastní uživatelské prostředí při instalaci, včetně vlastní dialogová okna pro operace zabezpečení a údržba. K provedení operace instalace, používá vlastní instalační program <xref:System.Deployment.Application.InPlaceHostingManager> třídy. Tento návod ukazuje, jak vytvořit vlastní instalační program, který tiché instalaci aplikace ClickOnce.
 
 ## <a name="prerequisites"></a>Požadavky
 
 ### <a name="to-create-a-custom-clickonce-application-installer"></a>Chcete-li vytvořit vlastní instalační program aplikace ClickOnce
 
-1.  Ve vaší aplikaci ClickOnce přidejte odkazy na System.Deployment a System.Windows.Forms.
+1. Ve vaší aplikaci ClickOnce přidejte odkazy na System.Deployment a System.Windows.Forms.
 
-2.  Přidejte novou třídu do vaší aplikace a zadat libovolný název. Tento návod používá název `MyInstaller`.
+2. Přidejte novou třídu do vaší aplikace a zadat libovolný název. Tento návod používá název `MyInstaller`.
 
-3.  Přidejte následující `Imports` nebo `using` příkazy k hornímu okraji novou třídu.
+3. Přidejte následující `Imports` nebo `using` příkazy k hornímu okraji novou třídu.
 
     ```vb
     Imports System.Deployment.Application
@@ -48,7 +48,7 @@ Na základě všech aplikací ClickOnce *.exe* souboru bezobslužné instalace a
     using System.Windows.Forms;
     ```
 
-4.  Přidejte následující metody do vaší třídy.
+4. Přidejte následující metody do vaší třídy.
 
      Tyto metody volat <xref:System.Deployment.Application.InPlaceHostingManager> metody se stáhnout manifest nasazení vyhodnocení příslušná oprávnění, požádat uživatele o oprávnění k instalaci a pak si stáhnout a nainstalovat aplikaci do mezipaměti ClickOnce. Vlastní instalační program můžete určit, že je předem důvěryhodné aplikace ClickOnce, nebo můžete odložit rozhodnutí důvěryhodnosti <xref:System.Deployment.Application.InPlaceHostingManager.AssertApplicationRequirements%2A> volání metody. Tento kód předběžně vztahy důvěryhodnosti aplikace.
 
@@ -58,7 +58,7 @@ Na základě všech aplikací ClickOnce *.exe* souboru bezobslužné instalace a
      [!code-vb[System.Deployment.Application.InPlaceHostingManager#1](../deployment/codesnippet/VisualBasic/walkthrough-creating-a-custom-installer-for-a-clickonce-application_1.vb)]
      [!code-csharp[System.Deployment.Application.InPlaceHostingManager#1](../deployment/codesnippet/CSharp/walkthrough-creating-a-custom-installer-for-a-clickonce-application_1.cs)]
 
-5.  Chcete-li se pokusit o instalaci v kódu, zavolejte `InstallApplication` metody. Například pokud pojmenujete vaší třídy `MyInstaller`, může volat `InstallApplication` následujícím způsobem.
+5. Chcete-li se pokusit o instalaci v kódu, zavolejte `InstallApplication` metody. Například pokud pojmenujete vaší třídy `MyInstaller`, může volat `InstallApplication` následujícím způsobem.
 
     ```vb
     Dim installer As New MyInstaller()

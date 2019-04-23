@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d5e4f1916fb7bfc0672efeddaac5e632692f92f9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 78ff2ecf77d3d8943601b8bd0779fa37811ec2d2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54787327"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113752"
 ---
 # <a name="how-to-create-a-basic-phong-shader"></a>Postupy: Vytvoření základního Phongova shaderu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,11 +23,11 @@ Tento dokument popisuje způsob použití návrháře shaderu a orientovaného g
   
  Tento dokument vysvětluje tyto činnosti:  
   
--   Přidání uzlů do grafu shaderu  
+- Přidání uzlů do grafu shaderu  
   
--   Odpojuje se uzly  
+- Odpojuje se uzly  
   
--   Spojující uzly  
+- Spojující uzly  
   
 ## <a name="the-phong-lighting-model"></a>Model osvětlení Phong  
  Model osvětlení Phong rozšiřuje Lambertova modelu osvětlení zahrnout odlesků zvýraznění, který simuluje vlastnosti reflektivní povrchu. Reflexní součást poskytuje další osvětlení ze stejné směrové zdrojů světla, které se používají v Lambertova modelu osvětlení, ale jinak zpracování jeho příspěvku na konečnou barvu. Reflexní zvýraznění ovlivňuje všechny oblasti ve scéně odlišně, na základě vztahu mezi směr zobrazení, směr světla zdrojů a orientace povrchu. Je produkt reflexní barvy, síla odlesku a orientaci ovládacího prvku na plochu a barvu, intenzity a směr světla zdrojů. Zařízení Surface, které odráží světelný zdroj přímo v prohlížeči zobrazí maximální příspěvek lesku a površích, které odráží světelný zdroj mimo prohlížeč získat žádné příspěvek. V části model osvětlení Phong jednu nebo více komponent odlesky jsou zkombinované určíte barvu a intenzitu zrcadlových odlesků zvýraznění pro každý bod na objekt a se pak přidá do výsledku Lambertova modelu osvětlení vytvoří konečnou barvu pixelu .  

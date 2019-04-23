@@ -15,12 +15,12 @@ caps.latest.revision: 50
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 66ca625d0c9c6f2442576e997928b7b42760936a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 626be40ed9889ff7d16c07d511cbd060232412af
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54784448"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105059"
 ---
 # <a name="uml-activity-diagrams-guidelines"></a>Diagramy činnosti UML: Pokyny
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ V sadě Visual Studio můžete nakreslit diagram aktivity popisující obchodní
   
   Referenční informace o prvcích v diagramech aktivit najdete v tématu [diagramy činnosti UML: Referenční dokumentace](../modeling/uml-activity-diagrams-reference.md).  
   
-##  <a name="Relationships"></a> Vztah k jiným diagramům  
+## <a name="Relationships"></a> Vztah k jiným diagramům  
  Pokud si nakreslíte diagramu činnosti popisující obchodních procesů nebo způsobem, ve kterém uživatelé vašeho systému, lze nakreslit diagram případu použití a různých zobrazení stejné informace. V diagramu případu použití nakreslete akcí, které případy použití. Poskytněte stejné názvy jako odpovídající akce případy použití. Přináší výhody zobrazení případu použití, můžete:  
   
 - Zobrazit jeden diagram jak větší akce/svědectví se skládají z menších pomocí vztahu zahrnuje.  
@@ -56,51 +56,51 @@ V sadě Visual Studio můžete nakreslit diagram aktivity popisující obchodní
   
   V diagramu činnosti můžete zobrazit tok dat předávaných mezi akcemi. Naleznete v části [popisující toku dat](#DataFlows). Ale diagramu činnosti nepopisuje struktury data. K tomuto účelu můžete nakreslit diagram tříd UML. Informace naleznete v tématu [diagramů tříd UML: Pokyny pro](../modeling/uml-class-diagrams-guidelines.md).  
   
-##  <a name="BasicSteps"></a> Základní postup pro vytvoření diagramů aktivit  
+## <a name="BasicSteps"></a> Základní postup pro vytvoření diagramů aktivit  
  Podrobné pokyny k vytvoření všech diagramů modelování jsou popsány v [modelů a diagramů UML upravit](../modeling/edit-uml-models-and-diagrams.md).  
   
 #### <a name="to-draw-an-activity-diagram"></a>Chcete-li nakreslit diagram aktivity  
   
-1.  Na **architektura** nabídky, klikněte na tlačítko **nové UML nebo diagramu vrstev**.  
+1. Na **architektura** nabídky, klikněte na tlačítko **nové UML nebo diagramu vrstev**.  
   
-2.  V části **šablony**, klikněte na tlačítko **Diagram činností UML**.  
+2. V části **šablony**, klikněte na tlačítko **Diagram činností UML**.  
   
-3.  Pojmenujte diagram.  
+3. Pojmenujte diagram.  
   
-4.  V **přidat k projektu modelování**, vyberte existující projekt modelování z řešení, nebo **vytvořit nový projekt modelování**.  
+4. V **přidat k projektu modelování**, vyberte existující projekt modelování z řešení, nebo **vytvořit nový projekt modelování**.  
   
 #### <a name="to-draw-elements-on-an-activity-diagram"></a>Chcete-li nakreslit prvků v diagramu činnosti  
   
-1.  Prvky přetáhnout z panelu nástrojů do diagramu.  
+1. Prvky přetáhnout z panelu nástrojů do diagramu.  
   
      Začněte tím, že umístění hlavní činnosti v diagramu, jejich propojení a následným přidáním poslední detaily, jako jsou počáteční a konečné uzly.  
   
     > [!NOTE]
     >  Stávající prvky nelze přetáhnout do diagramu z Průzkumníku modelů UML.  
   
-2.  Pro připojení prvky, postupujte takto:  
+2. Pro připojení prvky, postupujte takto:  
   
-    1.  V **Diagram činnosti** sadě nástrojů klikněte na tlačítko **konektor**.  
+    1. V **Diagram činnosti** sadě nástrojů klikněte na tlačítko **konektor**.  
   
-    2.  V diagramu klikněte na source element.  
+    2. V diagramu klikněte na source element.  
   
-    3.  Klikněte na cílového prvku.  
+    3. Klikněte na cílového prvku.  
   
         > [!NOTE]
         >  Pokud chcete použít nástroj pro více než jednou, dvakrát klikněte na nástroj v soupravě nástrojů.  
   
 #### <a name="to-move-an-activity-to-another-package"></a>Aktivita přesunout do jiného balíčku  
   
--   V **Průzkumníku modelů UML**, přetáhněte aktivitu do balíčku.  
+- V **Průzkumníku modelů UML**, přetáhněte aktivitu do balíčku.  
   
      \- nebo –  
   
--   V **Průzkumníku modelů UML**, klikněte pravým tlačítkem na aktivitu a klikněte na tlačítko **Vyjmout**. Klikněte pravým tlačítkem na balíček a klikněte na tlačítko **vložit**.  
+- V **Průzkumníku modelů UML**, klikněte pravým tlačítkem na aktivitu a klikněte na tlačítko **Vyjmout**. Klikněte pravým tlačítkem na balíček a klikněte na tlačítko **vložit**.  
   
     > [!NOTE]
     >  Aktivity se zobrazí v Průzkumníku modelů UML pouze při přidání prvního prvku do diagramu.  
   
-##  <a name="SimpleControlFlow"></a> Popis toku řízení  
+## <a name="SimpleControlFlow"></a> Popis toku řízení  
  Diagram činnosti popisuje algoritmu obchodního procesu nebo softwaru jako obnáší sérii akcí. Konektor šipky ukazují, jak řízení je předáno postupně z jedné akce na další. Obvykle akci můžete spustit až po dokončení předchozí akci.  
   
  Na následujícím obrázku je příklad, jak lze zobrazit posloupnost akcí s akcemi, konektory, větve a smyčky. Každý prvek je vysvětleno podrobněji v následujících částech.  
@@ -124,18 +124,18 @@ V sadě Visual Studio můžete nakreslit diagram aktivity popisující obchodní
   
 ### <a name="describing-decisions-and-loops"></a>Popis rozhodnutí a smyčky  
   
--   Použití **rozhodnutí uzel** (3) k označení bodu, kdy výsledek rozhodnutí určí další krok. Můžete nakreslit tolik odchozí cest.  
+- Použití **rozhodnutí uzel** (3) k označení bodu, kdy výsledek rozhodnutí určí další krok. Můžete nakreslit tolik odchozí cest.  
   
--   Pokud používáte diagramu činnosti k definování součástí aplikace, byste měli definovat chrání (4) tak, aby bylo zřejmé, když je potřeba vzít jednotlivé cesty. Klikněte pravým tlačítkem na konektor, klikněte na tlačítko **vlastnosti**a **vlastnosti** okno, zadejte hodnotu pro **Guard** pole.  
+- Pokud používáte diagramu činnosti k definování součástí aplikace, byste měli definovat chrání (4) tak, aby bylo zřejmé, když je potřeba vzít jednotlivé cesty. Klikněte pravým tlačítkem na konektor, klikněte na tlačítko **vlastnosti**a **vlastnosti** okno, zadejte hodnotu pro **Guard** pole.  
   
--   Není vždy nutné definovat chrání. Například pokud pomocí diagramu činnosti popisují obchodních procesů nebo protokol interakce, větev definuje řadu možností na uživatele nebo na komunikující komponenty.  
+- Není vždy nutné definovat chrání. Například pokud pomocí diagramu činnosti popisují obchodních procesů nebo protokol interakce, větev definuje řadu možností na uživatele nebo na komunikující komponenty.  
   
--   Použití **sloučit uzel** (5) a dejte dohromady dvě nebo více alternativní toky, které rozvětvených na **rozhodnutí uzel**.  
+- Použití **sloučit uzel** (5) a dejte dohromady dvě nebo více alternativní toky, které rozvětvených na **rozhodnutí uzel**.  
   
     > [!NOTE]
     >  Měli byste použít **sloučit uzel** spojit alternativních toků, namísto spojuje toků v akci. V tomto příkladu by správná připojení z uzlu rozhodnutí přímo zpět do **zvolte položku nabídky**. Je to proto, že akce se nespustí, dokud se všechny příchozí konektory dorazily vlákna ovládacího prvku. Proto vám by měl pohromadě pouze souběžných toků v akci. Další informace najdete v tématu [souběžných toků](#Concurrent).  
   
--   Pomocí větví popisují smyčky, jak je znázorněno v příkladu.  
+- Pomocí větví popisují smyčky, jak je znázorněno v příkladu.  
   
     > [!NOTE]
     >  Zkuste vnořit smyčky strukturované způsobem, jako byste to udělali v programovém kódu. Pokud jsou popisující existující obchodní proces, to může odhalit některé příležitosti pro vylepšení ho.  
@@ -143,13 +143,13 @@ V sadě Visual Studio můžete nakreslit diagram aktivity popisující obchodní
 ### <a name="starting-the-activity"></a>Spuštění aktivity  
  Existují dva způsoby označení vstupních bodů do aktivity:  
   
--   **Počáteční uzel**  
+- **Počáteční uzel**  
   
      Vytvořte si ho **počáteční uzel** (6) označuje první akci aktivity.  
   
      Tato metoda je nejužitečnější, když jsou popisující aktivitu dílčí, nebo pokud není potřeba explicitně uvést, co spustí aktivity. Například objednávka pokrmu aktivity jasně začíná, když zákazník získá jistě zájem své.  
   
--   **Přijímat události uzlu**  
+- **Přijímat události uzlu**  
   
      Vytvoření **přijímat události uzly**, jak je popsáno v části [souběžných toků](#Concurrent), k označení spuštění vlákna, které reaguje na konkrétní události, jako je například uživatelský vstup. Neposkytuje příchozí tok k uzlu. Vynechání příchozí tok, který označuje, že vlákno se spustí pokaždé, když dojde k události.  
   
@@ -158,9 +158,9 @@ V sadě Visual Studio můžete nakreslit diagram aktivity popisující obchodní
 ### <a name="ending-the-activity"></a>Poslední aktivita  
  Použití **poslední uzel aktivity** (7) k označení konce aktivity.  
   
--   Dosáhne-li vlákno ovládacího prvku **poslední uzel aktivity**, všechny aktivity souběžných akce a dílčí aktivity ukončit.  
+- Dosáhne-li vlákno ovládacího prvku **poslední uzel aktivity**, všechny aktivity souběžných akce a dílčí aktivity ukončit.  
   
--   Pro přehlednost dalších konektorů, které můžete použít více než jeden uzel poslední aktivity.  
+- Pro přehlednost dalších konektorů, které můžete použít více než jeden uzel poslední aktivity.  
   
 ### <a name="interrupting-the-activity"></a>Přerušení aktivity  
  K popisu, jak běžný tok aktivity může dojít k přerušení, například pokud se uživatel rozhodne zrušit procesu, můžete vytvořit přijímat události uzlu, který čeká na tuto událost. Další informace najdete v části [souběžných toků](#Concurrent). Vytvoření toku řízení od uzlu poslední činnost (7).  
@@ -174,12 +174,12 @@ V sadě Visual Studio můžete nakreslit diagram aktivity popisující obchodní
   
   Jednoduché obrazce není součástí modelu UML a nezobrazují v Průzkumníku modelů UML.  
   
-##  <a name="DataFlows"></a> Popis toku dat  
+## <a name="DataFlows"></a> Popis toku dat  
  Popíšete data vstupující do a z aktivity v jednom ze dvou způsobů:  
   
--   Použití **objekt uzlu**. Toto je nejjednodušší způsob popisující informace mezi aktivity. Objekt uzlu je jako proměnné v aplikaci. Představuje něco, co se ukládá jedna nebo více hodnot, které jsou z jedné akce předávání.  
+- Použití **objekt uzlu**. Toto je nejjednodušší způsob popisující informace mezi aktivity. Objekt uzlu je jako proměnné v aplikaci. Představuje něco, co se ukládá jedna nebo více hodnot, které jsou z jedné akce předávání.  
   
--   Použití **výstupní kód Pin** a **zadání kódu Pin**. Tato metoda umožňuje samostatně popisují výstup z jednu akci a vstupy do jiného. PIN kódy jsou stejné jako parametry v aplikaci. PIN kódy představují porty, které objekty může vstupu a opuštění akce.  
+- Použití **výstupní kód Pin** a **zadání kódu Pin**. Tato metoda umožňuje samostatně popisují výstup z jednu akci a vstupy do jiného. PIN kódy jsou stejné jako parametry v aplikaci. PIN kódy představují porty, které objekty může vstupu a opuštění akce.  
   
     > [!NOTE]
     >  Přehled prvků, které slouží v této části najdete v tématu Data proudí části tohoto tématu naleznete v tématu [diagramy činnosti UML: Referenční dokumentace](../modeling/uml-activity-diagrams-reference.md).  
@@ -207,17 +207,17 @@ V sadě Visual Studio můžete nakreslit diagram aktivity popisující obchodní
   
  Můžete určit, jak jsou položky ve vyrovnávací paměti uložené nastavením vlastnosti z objektu uzlu:  
   
--   Nastavte **řazení** vlastnost:  
+- Nastavte **řazení** vlastnost:  
   
-    -   **Neseřazený** k určení náhodných nebo neurčené pořadí. (Výchozí).  
+    - **Neseřazený** k určení náhodných nebo neurčené pořadí. (Výchozí).  
   
-    -   **Seřazené** k určení pořadí podle určitého klíče.  
+    - **Seřazené** k určení pořadí podle určitého klíče.  
   
-    -   **FIFO** k určení pořadí první dovnitř, první ven.  
+    - **FIFO** k určení pořadí první dovnitř, první ven.  
   
-    -   **LIFO** k určení pořadí poslední dovnitř, první.  
+    - **LIFO** k určení pořadí poslední dovnitř, první.  
   
--   Nastavte **horní mez** vlastnosti a určit maximální počet objektů, které mohou být obsaženy ve vyrovnávací paměti. Výchozí hodnota je *. To znamená, že není nijak omezený.  
+- Nastavte **horní mez** vlastnosti a určit maximální počet objektů, které mohou být obsaženy ve vyrovnávací paměti. Výchozí hodnota je *. To znamená, že není nijak omezený.  
   
 ### <a name="describing-data-flow-with-input-and-output-pins"></a>Popis toku dat s vstupní a výstupní spojky.  
  Použití **výstupní spojky** a **zadání kódu Pin** samostatně popsat výstupy z jednu akci a vstupy do jiného.  
@@ -236,16 +236,16 @@ V sadě Visual Studio můžete nakreslit diagram aktivity popisující obchodní
   
  Případně můžete určit, že objekt flow zahrnuje transformace, která převádí data mezi typem výstupní spojky a typ vstupních PIN kód. Nejběžnější transformace tohoto druhu pouze extrahuje odpovídající část z typu větší. Příklad na obrázku předpokládá existenci transformace, která extrahuje adresou pro doručení z detaily objednávky.  
   
-##  <a name="Details"></a> Definování akce podrobněji  
+## <a name="Details"></a> Definování akce podrobněji  
  Kromě použití názvu akce, aby se vyjasnilo výsledek, který by měl obvykle dosáhnout, tady jsou některé způsobů akci můžete přidat další podrobnosti:  
   
--   Zadejte podrobnější popis **tělo** vlastnost. Můžete například napsat fragment kódu programu nebo pseudo kódu nebo úplný popis dosažené výsledky.  
+- Zadejte podrobnější popis **tělo** vlastnost. Můžete například napsat fragment kódu programu nebo pseudo kódu nebo úplný popis dosažené výsledky.  
   
--   Nahraďte chování akce volání akce a popište své podrobné chování v rámci diagram samostatné činnosti. Zobrazit [popisující dílčí aktivity s akcemi chování volání](#Subactivities).  
+- Nahraďte chování akce volání akce a popište své podrobné chování v rámci diagram samostatné činnosti. Zobrazit [popisující dílčí aktivity s akcemi chování volání](#Subactivities).  
   
--   Nastavte akci **místní vstupních** a **místní předpoklady** vlastností, které popisují podrobně konkrétnější jeho výsledek. Další informace najdete v tématu [definování vstupních a předpoklady](#Postcondition).  
+- Nastavte akci **místní vstupních** a **místní předpoklady** vlastností, které popisují podrobně konkrétnější jeho výsledek. Další informace najdete v tématu [definování vstupních a předpoklady](#Postcondition).  
   
-###  <a name="Subactivities"></a> Popisující dílčí aktivity s akcemi chování volání  
+### <a name="Subactivities"></a> Popisující dílčí aktivity s akcemi chování volání  
  Popíšete podrobné chování akci s použitím diagram samostatné činnosti. Volané chování je diagram aktivity, která je reprezentována chování akce volání na diagramu hlavní činnost. Chování akce volání můžete také použít k popisu chování, jež jsou sdílena mezi různé aktivity, takže není potřeba dílčí aktivity nakreslit více než jednou.  
   
  Na následujícím obrázku, obrázek 1 ukazuje aktivitu, která má chování akce volání a Diagram 2 je znázorněný dílčí aktivity diagram, který zobrazuje jen chování.  
@@ -254,22 +254,22 @@ V sadě Visual Studio můžete nakreslit diagram aktivity popisující obchodní
   
 ##### <a name="to-describe-a-sub-activity-with-a-call-behavior-action"></a>K popisu dílčí aktivitu se chování akce volání  
   
-1.  Chcete-li vytvořit diagram pro dílčí aktivitu v **Průzkumníka řešení**, klikněte pravým tlačítkem na projekt modelování, přejděte na **přidat**a potom klikněte na tlačítko **nová položka**.  
+1. Chcete-li vytvořit diagram pro dílčí aktivitu v **Průzkumníka řešení**, klikněte pravým tlačítkem na projekt modelování, přejděte na **přidat**a potom klikněte na tlačítko **nová položka**.  
   
-2.  V **přidat novou položku** dialogovém okně **šablony** klikněte na tlačítko **Diagram činnosti** a **název** pole zadejte název, který máte v úmyslu udělit vaše **volat akci chování**.  
+2. V **přidat novou položku** dialogovém okně **šablony** klikněte na tlačítko **Diagram činnosti** a **název** pole zadejte název, který máte v úmyslu udělit vaše **volat akci chování**.  
   
-3.  Nakreslete podrobný pracovní postup pro dílčí aktivitu. To je jen chování.  
+3. Nakreslete podrobný pracovní postup pro dílčí aktivitu. To je jen chování.  
   
-    -   V diagramu volané dílčí činnosti **počáteční uzel** označuje, kde začíná ovládacího prvku při vyvolání volané chování. **Poslední uzel aktivity** ukazuje, kde by měl ovládací prvek vrátí na Nadřazená aktivita.  
+    - V diagramu volané dílčí činnosti **počáteční uzel** označuje, kde začíná ovládacího prvku při vyvolání volané chování. **Poslední uzel aktivity** ukazuje, kde by měl ovládací prvek vrátí na Nadřazená aktivita.  
   
-4.  Nastavte **chování** vlastnost **akce volání chování** k odkazování na diagram volané chování.  
+4. Nastavte **chování** vlastnost **akce volání chování** k odkazování na diagram volané chování.  
   
     > [!NOTE]
     >  Diagram činnosti dílčí musí mít některé prvky v něm nebo diagramu nebudou k dispozici v rozevíracím seznamu pro **chování** vlastnost. Navíc ikonu trident nebude zobrazovat na vaší **akce volání chování** obrazce, dokud nenastavíte jeho **chování** vlastnost.  
   
-5.  Nastavte **je synchronní** vlastnost Akce, která označuje, zda vaše aktivita čeká na dokončení volané aktivity.  
+5. Nastavte **je synchronní** vlastnost Akce, která označuje, zda vaše aktivita čeká na dokončení volané aktivity.  
   
-    -   Pokud nastavíte **je synchronní** na hodnotu false, jsou označující, že tok můžete i nadále další akce před dokončením volané aktivity. Výstup by neměl definovat PIN kódy nebo odchozích dat toky z akce.  
+    - Pokud nastavíte **je synchronní** na hodnotu false, jsou označující, že tok můžete i nadále další akce před dokončením volané aktivity. Výstup by neměl definovat PIN kódy nebo odchozích dat toky z akce.  
   
 ### <a name="describing-data-flow-in-and-out-of-sub-activities"></a>Popis toku dat do a z dílčích aktivity  
  Popíšete dat odesílaných do a z dílčích aktivit, stejně jako použití parametrů v softwaru.  
@@ -285,7 +285,7 @@ V sadě Visual Studio můžete nakreslit diagram aktivity popisující obchodní
   
   ![Vážou na mapě chování volání na parametry aktivity](../modeling/media/uml-actguidesub.png "UML_ActGuideSub")  
   
-###  <a name="Postcondition"></a> Definování vstupních a předpoklady  
+### <a name="Postcondition"></a> Definování vstupních a předpoklady  
  Můžete použít **místní vstupních** a **místní předpoklady** vlastnosti k určení podrobně výsledku akce. Tyto vlastnosti popisují vliv akce bez popisující, jak dosáhnout efekt.  
   
  Pokud chcete nastavit tyto vlastnosti, klikněte pravým tlačítkem na akce a potom klikněte na **vlastnosti**. Zadejte hodnoty do vlastnosti v okně Vlastnosti.  
@@ -311,15 +311,15 @@ V sadě Visual Studio můžete nakreslit diagram aktivity popisující obchodní
 ### <a name="describing-calls-to-operations"></a>Popis volání operací  
  Obecně platí popisuje akce, práce, která se provádí pomocí libovolné směsi osob, softwaru nebo počítače. Ale můžete použít operaci akce volání pro popis volání metody konkrétní software nebo funkce.  
   
--   Nastavte název operace akce volání k označení, jaké operace je volána a na jaké objektu nebo komponenty.  
+- Nastavte název operace akce volání k označení, jaké operace je volána a na jaké objektu nebo komponenty.  
   
--   Přidáte vstupní a výstupní spojky do volání operace akce popisují parametry a návratové hodnoty.  
+- Přidáte vstupní a výstupní spojky do volání operace akce popisují parametry a návratové hodnoty.  
   
--   Můžete nastavit **je synchronní** vlastnost Akce, která označuje, zda vaše aktivita čeká na dokončení operace.  
+- Můžete nastavit **je synchronní** vlastnost Akce, která označuje, zda vaše aktivita čeká na dokončení operace.  
   
-    -   Pokud nastavíte **je synchronní** na hodnotu false, jsou označující, že tok můžete i nadále další akce před názvem operace se dokončila. Výstup by neměl definovat PIN kódy nebo odchozích dat toky z akce.  
+    - Pokud nastavíte **je synchronní** na hodnotu false, jsou označující, že tok můžete i nadále další akce před názvem operace se dokončila. Výstup by neměl definovat PIN kódy nebo odchozích dat toky z akce.  
   
-##  <a name="Concurrent"></a> Souběžné toků  
+## <a name="Concurrent"></a> Souběžné toků  
  Můžete použít **Forku uzel** a **připojit k uzlu** k popisu dvě či více vláken aktivit, které můžete spustit ve stejnou dobu.  
   
  ![Uzly rozvětvení a spojení zobrazení souběžných toků](../modeling/media/uml-actguideconcurrent.png "UML_ActGuideConcurrent")  
@@ -336,22 +336,22 @@ V sadě Visual Studio můžete nakreslit diagram aktivity popisující obchodní
 #### <a name="sending-a-signal"></a>Odesílání signálu  
  Použijte akci odesílat signál (3) k označení, že signál nebo zprávy určitého druhu posílá do jiných aktivit nebo procesy. Můžete určit, jaký druh zprávu, odešle název akce.  
   
--   Řízení se předá okamžitě další akce v toku řízení, pokud existuje.  
+- Řízení se předá okamžitě další akce v toku řízení, pokud existuje.  
   
--   Signál akce odeslání nelze použít k popisu, jak váš proces reagovat na všechny vrácené informace. K tomuto účelu použijte samostatné akce přijímat události.  
+- Signál akce odeslání nelze použít k popisu, jak váš proces reagovat na všechny vrácené informace. K tomuto účelu použijte samostatné akce přijímat události.  
   
--   Příchozí tok dat můžete zobrazit signál odeslat akci k označení, jaká data je možné odeslat s odchozí zprávu. Další informace najdete v tématu [popisující toku dat](#DataFlows).  
+- Příchozí tok dat můžete zobrazit signál odeslat akci k označení, jaká data je možné odeslat s odchozí zprávu. Další informace najdete v tématu [popisující toku dat](#DataFlows).  
   
 #### <a name="waiting-for-a-signal-or-event"></a>Čekání na signál nebo událost  
  Přijmout akci události (4) slouží k označení, že tato aktivita čeká na některé externí událost nebo příchozí zprávy. Použijte název akci k označení typu události, která čeká.  
   
--   Pokud chcete zobrazit, že vaše aktivita čeká na externí události nebo zprávy v konkrétním bodě v jeho toku, nakreslete volby přijmout akci události s příchozí tok v příslušném umístění v rámci aktivity.  
+- Pokud chcete zobrazit, že vaše aktivita čeká na externí události nebo zprávy v konkrétním bodě v jeho toku, nakreslete volby přijmout akci události s příchozí tok v příslušném umístění v rámci aktivity.  
   
--   Chcete-li zobrazit, že vaše aktivity můžete reagovat na externí události nebo zprávy v okamžiku, nakreslete volby přijmout akci události bez jakékoli příchozí tok. Pokud dojde k pojmenované externí události, nové vlákno začne v aktivitách, od volby přijmout akci události.  
+- Chcete-li zobrazit, že vaše aktivity můžete reagovat na externí události nebo zprávy v okamžiku, nakreslete volby přijmout akci události bez jakékoli příchozí tok. Pokud dojde k pojmenované externí události, nové vlákno začne v aktivitách, od volby přijmout akci události.  
   
--   Volby přijmout akci události nelze použít k popisu libovolnou hodnotu vrácenou odesílateli signálu. Pro tento účel použijte samostatnou akci odesílat signál.  
+- Volby přijmout akci události nelze použít k popisu libovolnou hodnotu vrácenou odesílateli signálu. Pro tento účel použijte samostatnou akci odesílat signál.  
   
--   Můžete zobrazit odchozí toky dat z akce, se zobrazí, jak vaše aktivita zpracovává data přijatá v signál. Pokud chcete zobrazit více než jeden výstupní tok, byste měli nastavit **IsUnmarshall** vlastnost volby přijmout akci události, což znamená, že akce analyzuje příchozí signál do jeho jednotlivé součásti. Další informace najdete v tématu [popisující toku dat](#DataFlows).  
+- Můžete zobrazit odchozí toky dat z akce, se zobrazí, jak vaše aktivita zpracovává data přijatá v signál. Pokud chcete zobrazit více než jeden výstupní tok, byste měli nastavit **IsUnmarshall** vlastnost volby přijmout akci události, což znamená, že akce analyzuje příchozí signál do jeho jednotlivé součásti. Další informace najdete v tématu [popisující toku dat](#DataFlows).  
   
 ### <a name="describing-multiple-data-flows"></a>Popis více dat. toky  
  Můžete nakreslit více než jeden tok řízení nebo tok objektů vycházejících z akci k označení, že více než jedno vlákno splatit po skončení akce. Účinek se podobá u forku a s tím rozdílem, že používáte kombinaci ovládací prvek a objekt toky.  
@@ -398,31 +398,31 @@ V sadě Visual Studio můžete nakreslit diagram aktivity popisující obchodní
   
 - Připojte komentář k vstupní nebo výstupní kód pin.  
   
-  -   K rozlišení tohoto popisu od obecné komentáře můžete začít komentář <\<**transformace**>> nebo <\<**výběr**>>.  
+  - K rozlišení tohoto popisu od obecné komentáře můžete začít komentář <\<**transformace**>> nebo <\<**výběr**>>.  
   
 - Zadejte transformace nebo výběr podrobně v diagramu samostatné činnosti.  
   
-  -   Pokud použijete tuto metodu, připojte komentář také, aby vymazat pro čtenáře definovala transformace.  
+  - Pokud použijete tuto metodu, připojte komentář také, aby vymazat pro čtenáře definovala transformace.  
   
 ##### <a name="to-specify-a-transformation-or-selection-in-a-separate-activity-diagram"></a>Chcete-li určit transformace nebo výběr v diagramu samostatné činnosti  
   
 1. Vytvořte nový Diagram aktivity, ve které chcete popisovat tok transformace nebo výběru.  
   
-   -   V **Průzkumníka řešení**, klikněte pravým tlačítkem na projekt, přejděte na **přidat**, klikněte na tlačítko **nová položka**a potom klikněte na tlačítko **Diagram činnosti**. Poskytnout vhodný název pro tok transformace nebo výběr diagramu. Klikněte na **Přidat**.  
+   - V **Průzkumníka řešení**, klikněte pravým tlačítkem na projekt, přejděte na **přidat**, klikněte na tlačítko **nová položka**a potom klikněte na tlačítko **Diagram činnosti**. Poskytnout vhodný název pro tok transformace nebo výběr diagramu. Klikněte na **Přidat**.  
   
 2. V novém diagramu:  
   
-   1.  Vytvořte dva uzly parametru činností, jeden pro vstupního toku a jeden pro výstup.  
+   1. Vytvořte dva uzly parametru činností, jeden pro vstupního toku a jeden pro výstup.  
   
-   2.  Vytvoření akcí, které jsou propojeny s toky objektů. To ukazuje, jak transformace nebo výběr funguje.  
+   2. Vytvoření akcí, které jsou propojeny s toky objektů. To ukazuje, jak transformace nebo výběr funguje.  
   
 3. V jakékoli diagram, ve které chcete použít transformace nebo výběr:  
   
-   1.  Vytvořte tok, který objekt, to znamená, že konektor do nebo z vstupní nebo výstupní spojky, uzel objektu nebo uzlu parametru aktivity.  
+   1. Vytvořte tok, který objekt, to znamená, že konektor do nebo z vstupní nebo výstupní spojky, uzel objektu nebo uzlu parametru aktivity.  
   
-   2.  Klikněte pravým tlačítkem na objekt tok a pak klikněte na tlačítko **vlastnosti**.  
+   2. Klikněte pravým tlačítkem na objekt tok a pak klikněte na tlačítko **vlastnosti**.  
   
-   3.  V **transformace** nebo **výběr** vlastnosti, vyberte diagram, ve kterém jste zadali tok transformace nebo výběru.  
+   3. V **transformace** nebo **výběr** vlastnosti, vyberte diagram, ve kterém jste zadali tok transformace nebo výběru.  
   
    Můžete také definovat výběru pro objekt uzlu a na jednotlivých vstupní a výstupní spojky. Definujte výběr aktivitu, stejně jako v předchozím postupu a poté nastavte **výběr** vlastnost uzel objektu nebo vstupní nebo výstupní kód pin.  
   

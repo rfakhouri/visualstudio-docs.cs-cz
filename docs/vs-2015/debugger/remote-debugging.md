@@ -19,12 +19,12 @@ caps.latest.revision: 81
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c964eaa8e8c130516b29c88a3ccae78aa902c66a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: a6fe3d3f144b192ef14ff52c942c75d9edd1be85
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649443"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076208"
 ---
 # <a name="remote-debugging"></a>Vzdálené ladění
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Můžete buď stáhnout nástroje remote tools přímo v zařízení nebo na ser
 
 ### <a name="to-download-and-install-the-remote-tools"></a>Ke stažení a instalaci nástrojů remote tools
   
-1.  Na zařízení nebo server počítač, který chcete ladit (nikoli na počítači sadu Visual Studio) získáte správná verze nástrojů remote tools.
+1. Na zařízení nebo server počítač, který chcete ladit (nikoli na počítači sadu Visual Studio) získáte správná verze nástrojů remote tools.
 
     |Version|Odkaz|Poznámky|
     |-|-|-|
@@ -47,14 +47,14 @@ Můžete buď stáhnout nástroje remote tools přímo v zařízení nebo na ser
     |Visual Studio 2013|[Vzdálené nástroje](https://msdn.microsoft.com/library/bt727f1t(v=vs.120).aspx#BKMK_Installing_the_Remote_Tools)|Stáhněte si stránku v dokumentaci k sadě Visual Studio 2013|
     |Visual Studio 2012|[Vzdálené nástroje](https://msdn.microsoft.com/library/bt727f1t(v=vs.110).aspx#BKMK_Installing_the_Remote_Tools)|Stáhněte si stránku v dokumentaci k sadě Visual Studio 2012|
   
-2.  Na stránce pro stahování zvolte verzi nástrojů, který odpovídá operačnímu systému (x 86, x64 nebo verzi ARM) a stáhněte si nástroje remote tools.
+2. Na stránce pro stahování zvolte verzi nástrojů, který odpovídá operačnímu systému (x 86, x64 nebo verzi ARM) a stáhněte si nástroje remote tools.
   
     > [!IMPORTANT]
     >  Doporučujeme že nainstalovat nejnovější verzi nástrojů remote tools, která odpovídá verzi sady Visual Studio. Verze se nedoporučuje.  
     >   
     >  Kromě toho musíte nainstalovat nástroje remote tools, které mají stejnou architekturu jako operační systém, na kterém chcete nainstalovat. Jinými slovy Pokud chcete ladit 32bitovou aplikaci na vzdáleném počítači s 64bitovým operačním systémem, musíte nainstalovat 64bitová verze produktu remote tools na vzdáleném počítači.  
   
-3.  Po dokončení stahování spustitelného souboru, postupujte podle pokynů k instalaci aplikace na vzdáleném počítači. Zobrazit [instalační pokyny](#bkmk_setup)
+3. Po dokončení stahování spustitelného souboru, postupujte podle pokynů k instalaci aplikace na vzdáleném počítači. Zobrazit [instalační pokyny](#bkmk_setup)
 
 Pokud se pokusíte zkopírovat vzdálený ladící program (msvsmon.exe) ke vzdálenému počítači a spusťte ho, mějte na paměti, která **Průvodce konfigurací vzdáleného ladicího programu** (**rdbgwiz.exe**) je nainstalována pouze v případě, že si stáhnout nástroje a budete možná muset použít Průvodce pro konfiguraci později, zejména v případě, že chcete, aby vzdálený ladicí program ke spuštění jako služba. Další informace najdete v tématu [(volitelné) konfigurovat vzdálený ladicí program jako službu](#bkmk_configureService) níže.
 
@@ -78,27 +78,27 @@ Můžete najít vzdáleného ladicího programu (**msvsmon.exe**) na počítači
 ## <a name="supported-operating-systems"></a>Podporované operační systémy  
  Vzdáleném počítači musí běžet některý z následujících operačních systémů:  
   
--   Windows 10  
+- Windows 10  
   
--   Windows 8 nebo 8.1  
+- Windows 8 nebo 8.1  
   
--   Windows 7 Service Pack 1  
+- Windows 7 Service Pack 1  
   
--   Windows Server 2012 nebo Windows Server 2012 R2  
+- Windows Server 2012 nebo Windows Server 2012 R2  
   
--   Windows Server 2008 Service Pack 2, Windows Server 2008 R2 Service Pack 1  
+- Windows Server 2008 Service Pack 2, Windows Server 2008 R2 Service Pack 1  
   
 ## <a name="supported-hardware-configurations"></a>Podporované hardwarové konfigurace  
   
--   Procesor 1,6 GHz nebo rychlejší  
+- Procesor 1,6 GHz nebo rychlejší  
   
--   1 GB paměti RAM (1,5 GB při spouštění ve virtuálním počítači)  
+- 1 GB paměti RAM (1,5 GB při spouštění ve virtuálním počítači)  
   
--   1 GB volného místa na disku  
+- 1 GB volného místa na disku  
   
--   Pevný disk 5400 ot/min  
+- Pevný disk 5400 ot/min  
   
--   Grafická karta s rozhraním DirectX 9 a rozlišením 1024 × 768 nebo vyšším  
+- Grafická karta s rozhraním DirectX 9 a rozlišením 1024 × 768 nebo vyšším  
   
 ## <a name="network-configuration"></a>Konfigurace sítě  
  Vzdálený počítač a počítač Visual Studio musí být připojeny přes síť, v pracovní skupině nebo v domácí skupině, jinak připojeny přímo pomocí kabelu Ethernet. Není podporováno ladění přes Internet.  
@@ -147,7 +147,7 @@ Můžete najít vzdáleného ladicího programu (**msvsmon.exe**) na počítači
    > [!WARNING]
   >  Můžete také spustit nástroje Remote Tools v režimu bez ověřování, ale tento režim se rozhodně nedoporučuje. Při spuštění v tomto režimu není žádné zabezpečení sítě. Zvolte režim bez ověřování jenom v případě, že jste si jisti, že síť není ohroženy škodlivými nebo nevyžádanými daty.
 
-##  <a name="bkmk_configureService"></a> (Volitelné) Konfigurovat vzdálený ladicí program jako službu
+## <a name="bkmk_configureService"></a> (Volitelné) Konfigurovat vzdálený ladicí program jako službu
  Pro ladění v technologii ASP.NET a jiné prostředí serveru, musíte buď spustit vzdálený ladicí program jako správce nebo, je vždy spuštěn, chcete-li spustit vzdálený ladicí program jako službu.
   
  Pokud chcete nakonfigurovat vzdálený ladicí program jako službu, postupujte podle těchto kroků.  
@@ -282,16 +282,16 @@ Můžete najít vzdáleného ladicího programu (**msvsmon.exe**) na počítači
   
  Další informace najdete v tématu nápovědy vzdáleného ladění (stisknutím klávesy **F1** v okně vzdáleného ladicího programu, nebo klikněte na tlačítko **Nápověda / využití**). Další informace najdete [.NET změny vzdálené načítání symbolů v sadě Visual Studio 2012 a 2013](http://blogs.msdn.com/b/visualstudioalm/archive/2013/10/16/net-remote-symbol-loading-changes-in-visual-studio-2012-and-2013.aspx)  
   
-##  <a name="bkmk_winstoreAzure"></a> Vzdálené ladění pro aplikace z Windows Store a Azure  
+## <a name="bkmk_winstoreAzure"></a> Vzdálené ladění pro aplikace z Windows Store a Azure  
  Informace o vzdáleném ladění s aplikacemi pro Windows Store naleznete v tématu [ladění a testování aplikací pro Windows Store ve vzdáleném zařízení z aplikace Visual Studio](http://msdn.microsoft.com/library/windows/apps/hh441469.aspx).  
   
  Informace o ladění v Azure najdete v jednom z těchto témat:  
   
--   [Ladění cloudové služby nebo virtuálního počítače v sadě Visual Studio](../azure/vs-azure-tools-debug-cloud-services-virtual-machines.md)  
+- [Ladění cloudové služby nebo virtuálního počítače v sadě Visual Studio](../azure/vs-azure-tools-debug-cloud-services-virtual-machines.md)  
   
--   [Ladění v rozhraní .NET back-end v sadě Visual Studio](http://blogs.msdn.com/b/azuremobile/archive/2014/03/14/debugging-net-backend-in-visual-studio.aspx)  
+- [Ladění v rozhraní .NET back-end v sadě Visual Studio](http://blogs.msdn.com/b/azuremobile/archive/2014/03/14/debugging-net-backend-in-visual-studio.aspx)  
   
--   Úvod do vzdáleného ladění na webech Azure ([1. část](http://azure.microsoft.com/blog/2014/05/06/introduction-to-remote-debugging-on-azure-web-sites/), [2. část](http://azure.microsoft.com/blog/2014/05/07/introduction-to-remote-debugging-azure-web-sites-part-2-inside-remote-debugging/), [3. část](http://azure.microsoft.com/blog/2014/05/08/introduction-to-remote-debugging-on-azure-web-sites-part-3-multi-instance-environment-and-git/)).  
+- Úvod do vzdáleného ladění na webech Azure ([1. část](http://azure.microsoft.com/blog/2014/05/06/introduction-to-remote-debugging-on-azure-web-sites/), [2. část](http://azure.microsoft.com/blog/2014/05/07/introduction-to-remote-debugging-azure-web-sites-part-2-inside-remote-debugging/), [3. část](http://azure.microsoft.com/blog/2014/05/08/introduction-to-remote-debugging-on-azure-web-sites-part-3-multi-instance-environment-and-git/)).  
   
 ## <a name="see-also"></a>Viz také  
  [Ladění v sadě Visual Studio](../debugger/debugging-in-visual-studio.md)   

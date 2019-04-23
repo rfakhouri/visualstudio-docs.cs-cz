@@ -10,12 +10,12 @@ ms.assetid: 43341928-9930-48cf-a57f-ddcc3984b787
 caps.latest.revision: 9
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6f2a0680c117aa5982fb0e44144e74c5fef76faa
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 75a51cbe851b6566ab210a3c8ae12a9b7c2e0d2b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54769020"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107655"
 ---
 # <a name="analyze-net-framework-memory-issues"></a>Analýza problémů s pamětí rozhraní .NET Framework
 Hledání nevrácené paměti a neefektivní paměti použijte v kódu rozhraní .NET Framework pomocí sady Visual Studio managed analyzátoru paměti. Minimální verze rozhraní .NET Framework cílový kód je rozhraní .NET Framework 4.5.  
@@ -28,7 +28,7 @@ Hledání nevrácené paměti a neefektivní paměti použijte v kódu rozhraní
   
   Návod analýza spravované paměti najdete v tématu [pomocí Visual Studio 2013 k diagnostice problémů paměti rozhraní .NET v produkčním prostředí](http://blogs.msdn.com/b/visualstudioalm/archive/2013/06/20/using-visual-studio-2013-to-diagnose-net-memory-issues-in-production.aspx) na Visual Studio ALM + blog Team Foundation Server.  
   
-##  <a name="BKMK_Contents"></a> Obsah  
+## <a name="BKMK_Contents"></a> Obsah  
  [Využití paměti v aplikacích rozhraní .NET Framework](#BKMK_Memory_use_in__NET_Framework_apps)  
   
  [Identifikovat problém paměti v aplikaci](#BKMK_Identify_a_memory_issue_in_an_app)  
@@ -37,7 +37,7 @@ Hledání nevrácené paměti a neefektivní paměti použijte v kódu rozhraní
   
  [Analýza využití paměti](#BKMK_Analyze_memory_use)  
   
-##  <a name="BKMK_Memory_use_in__NET_Framework_apps"></a> Využití paměti v aplikacích rozhraní .NET Framework  
+## <a name="BKMK_Memory_use_in__NET_Framework_apps"></a> Využití paměti v aplikacích rozhraní .NET Framework  
  Rozhraní .NET Framework je uklizena modulem runtime, aby ve většině aplikací, využití paměti nepředstavuje žádný problém. Ale dlouho běžící aplikace jako webové služby a aplikace a zařízení, která mají omezené množství paměti, akumulací objektů v paměti může mít vliv na výkon aplikace a zařízení, na kterém poběží. Použití využívala příliš mnoho paměti se může zhoršit výkon aplikace a počítače prostředky systému uvolňování paměti běží příliš často nebo pokud se musí přesunout paměti mezi paměti RAM a disk operačního systému. V nejhorším případě aplikace může dojít k selhání s výjimkou "nedostatek paměti".  
   
  .NET *spravované haldě* je oblast virtuální paměti, kde jsou uloženy odkazů na objekty vytvořené aplikace. Doba života objektů spravuje systému uvolňování paměti (GC). Uvolňování paměti používá odkazů ke sledování objektů, které zabírají bloky paměti. Pokud objekt je vytvořen a přiřadit proměnné je vytvořen odkaz. Jeden objekt může mít více odkazů. Další odkazy na objekt lze například vytvořit přidáním objekt do třídy, kolekce nebo jiné datové struktury, nebo přiřazení objektu k druhé proměnné. Méně zřejmé způsob vytvoření odkazu je jeden objekt přidání obslužné rutiny událostí jiného objektu. V takovém případě druhý objekt, který obsahuje odkaz na první objekt, dokud se explicitně odebere obslužnou rutinu nebo druhý objekt je zničen.  
@@ -46,7 +46,7 @@ Hledání nevrácené paměti a neefektivní paměti použijte v kódu rozhraní
   
  ![Zpět na začátek](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [obsah](#BKMK_Contents)  
   
-##  <a name="BKMK_Identify_a_memory_issue_in_an_app"></a> Identifikovat problém paměti v aplikaci  
+## <a name="BKMK_Identify_a_memory_issue_in_an_app"></a> Identifikovat problém paměti v aplikaci  
  Většina viditelným projevem problémy s pamětí je výkon vaší aplikace, zejména v případě, že v čase snižuje výkon. Snížení výkonu dalších aplikací, když běží vaše aplikace může také znamenat problém s paměti. Pokud máte podezření na chybu paměti, použijte nástroj jako správce úloh nebo [Windows Performance Monitor](http://technet.microsoft.com/library/cc749249.aspx) dále prozkoumat. Například vyhledejte nárůst celkové velikosti paměti, kterou nelze vysvětlují jako možné příčiny nevracení paměti:  
   
  ![Konzistentní paměti nárůst sledování prostředků](../misc/media/mngdmem-resourcemanagerconsistentgrowth.png "MNGDMEM_ResourceManagerConsistentGrowth")  
@@ -55,7 +55,7 @@ Hledání nevrácené paměti a neefektivní paměti použijte v kódu rozhraní
   
  ![Špičky využití paměti v Resource Manageru](../misc/media/mngdmem-resourcemanagerspikes.png "MNGDMEM_ResourceManagerSpikes")  
   
-##  <a name="BKMK_Collect_memory_snapshots"></a> Shromažďovat snímky paměti  
+## <a name="BKMK_Collect_memory_snapshots"></a> Shromažďovat snímky paměti  
  Nástroj pro analýzu paměti analyzuje informace v *soubory s výpisem paměti* obsahující informace o haldě. V sadě Visual Studio můžete vytvořit soubory s výpisem paměti, nebo můžete použít nástroje, jako je [ProcDump](http://technet.microsoft.com/sysinternals/dd996900.aspx) z [Windows Sysinternals](http://technet.microsoft.com/sysinternals). Zobrazit [co je výpis paměti, a jak jeden vytvořit?](http://blogs.msdn.com/b/debugger/archive/2009/12/30/what-is-a-dump-and-how-do-i-create-one.aspx) na blogu týmu Visual Studio Debugger.  
   
 > [!NOTE]
@@ -75,7 +75,7 @@ Hledání nevrácené paměti a neefektivní paměti použijte v kódu rozhraní
   
    ![Zpět na začátek](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [obsah](#BKMK_Contents)  
   
-##  <a name="BKMK_Analyze_memory_use"></a> Analýza využití paměti  
+## <a name="BKMK_Analyze_memory_use"></a> Analýza využití paměti  
  [Filtrovat seznam objektů](#BKMK_Filter_the_list_of_objects) **&#124;** [analýza dat z jednoho snímku paměti](#BKMK_Analyze_memory_data_in_from_a_single_snapshot) **&#124;** [porovnat dva paměti snímky](#BKMK_Compare_two_memory_snapshots)  
   
  K analýze souboru s výpisem paměti pomocí problémy:  
@@ -90,7 +90,7 @@ Hledání nevrácené paměti a neefektivní paměti použijte v kódu rozhraní
   
    ![Zpět na začátek](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [obsah](#BKMK_Contents)  
   
-###  <a name="BKMK_Filter_the_list_of_objects"></a> Filtrovat seznam objektů  
+### <a name="BKMK_Filter_the_list_of_objects"></a> Filtrovat seznam objektů  
  Analyzátor paměti ve výchozím nastavení, filtruje seznam objektů v paměti snímku zobrazíte jen typy a instance, které mají kód pod licencí uživatelů a zobrazíte pouze ty typy, jejichž celková velikost včetně překročit prahovou hodnotu Procento celkovou velikost haldy. Tyto možnosti v můžete změnit **nastavení zobrazení** seznamu:  
   
 |||  
@@ -102,7 +102,7 @@ Hledání nevrácené paměti a neefektivní paměti použijte v kódu rozhraní
   
  ![Zpět na začátek](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [obsah](#BKMK_Contents)  
   
-###  <a name="BKMK_Analyze_memory_data_in_from_a_single_snapshot"></a> Analýza dat z jednoho snímku paměti  
+### <a name="BKMK_Analyze_memory_data_in_from_a_single_snapshot"></a> Analýza dat z jednoho snímku paměti  
  Visual Studio spustí novou relaci ladění analyzovat soubor a zobrazí v okně haldě zobrazení dat paměti.  
   
  ![Typ objektu seznamu](../misc/media/dbg-mma-objecttypelist.png "DBG_MMA_ObjectTypeList")  
@@ -137,9 +137,9 @@ Hledání nevrácené paměti a neefektivní paměti použijte v kódu rozhraní
   
 #### <a name="paths-to-root"></a>Cesty ke kořenu  
   
--   Pro typ vybrali **typ objektu** tabulky, **cesty ke kořenu** tabulce jsou uvedeny jedinečný typ hierarchie, které vedou k kořenové objekty pro všechny objekty typu spolu s počtem odkazů na typ, který je nad ním v hierarchii.  
+- Pro typ vybrali **typ objektu** tabulky, **cesty ke kořenu** tabulce jsou uvedeny jedinečný typ hierarchie, které vedou k kořenové objekty pro všechny objekty typu spolu s počtem odkazů na typ, který je nad ním v hierarchii.  
   
--   Vybrat z instance typu, objektu **cesty ke kořenu** zobrazuje graf skutečných objektů, které obsahují odkaz na instanci. Název objektu k zobrazení hodnot dat v popisu dat můžete myši.  
+- Vybrat z instance typu, objektu **cesty ke kořenu** zobrazuje graf skutečných objektů, které obsahují odkaz na instanci. Název objektu k zobrazení hodnot dat v popisu dat můžete myši.  
   
 #### <a name="referenced-types--referenced-objects"></a>Odkazované typy / odkazované objekty  
   
@@ -168,7 +168,7 @@ Hledání nevrácené paměti a neefektivní paměti použijte v kódu rozhraní
 |**Popisovač Sizedref**|Silný popisovač, který udržuje přibližné velikosti kolektivní ukončení všech objektů a objektů kořeny během uvolňování paměti kolekce.|  
 |**Připnutá lokální proměnná**|Připojenou lokální proměnnou.|  
   
-###  <a name="BKMK_Compare_two_memory_snapshots"></a> Porovnání dvou snímků paměti  
+### <a name="BKMK_Compare_two_memory_snapshots"></a> Porovnání dvou snímků paměti  
  Můžete porovnat dva soubory s výpisem paměti procesu k nalezení objektů, které mohou být příčinou nevracení paměti. Interval mezi sadu první (dříve) a druhé (k tomu později) soubor by měl být dostatečně velký, že nárůst počtu uniklé objektů je snadno zřejmý. Chcete-li porovnat dva soubory:  
   
 1. Otevřete druhý soubor s výpisem paměti a klikněte na tlačítko **ladit spravovanou paměť** na **soubor souhrnu minimálního výpisu** stránky.  

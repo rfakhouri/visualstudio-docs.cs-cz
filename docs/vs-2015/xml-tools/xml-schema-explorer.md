@@ -9,12 +9,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 575be3277dd7d876b19b9c557643cb05831255a5
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 550c43532db89132ec4e1b123005ad02ef547414
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59670430"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104911"
 ---
 # <a name="xml-schema-explorer"></a>Průzkumník schémat XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,11 +67,11 @@ Průzkumníka schémat XML je součástí sady Microsoft Visual Studio a Editor 
   
  Pokud chcete aktivovat uzel, poklepejte na něj nebo stiskněte klávesu **Enter** při výběru uzlu.  
   
--   Aktivace uzel otevře soubor, ve kterém je definována tento uzel (Pokud soubor ještě není otevřený) a vybere uzel v souboru.  
+- Aktivace uzel otevře soubor, ve kterém je definována tento uzel (Pokud soubor ještě není otevřený) a vybere uzel v souboru.  
   
--   Aktivace uzel souboru (Pokud není již otevřený), otevře se vybraný soubor a zvýrazní `<schema>` uzlu.  
+- Aktivace uzel souboru (Pokud není již otevřený), otevře se vybraný soubor a zvýrazní `<schema>` uzlu.  
   
--   Aktivace SchemaSet nebo uzel oboru názvů nemá žádný účinek.  
+- Aktivace SchemaSet nebo uzel oboru názvů nemá žádný účinek.  
   
 ## <a name="draging-and-dropping-nodes"></a>Draging a vyřazení uzlů  
  Můžete přetáhnout a globální uzly, uzly souborových a uzly oboru názvů do zobrazení o návrháři XSD. Pokud je aktuální zobrazení nastaveno [zobrazení Start](../xml-tools/start-view.md), tažení uzlu k zobrazení se otevře [zobrazení grafu](../xml-tools/graph-view.md). Pokud je aktuální zobrazení nastaveno [zobrazení modelu obsahu](../xml-tools/content-model-view.md) nebo zobrazení grafu, zobrazení se nezmění, pokud je vyřadit uzel problém napravit.  
@@ -82,13 +82,13 @@ Průzkumníka schémat XML je součástí sady Microsoft Visual Studio a Editor 
   
 ## <a name="in-this-section"></a>V tomto oddílu  
   
--   [Hledání v sadě schémat](../xml-tools/searching-the-schema-set.md)  
+- [Hledání v sadě schémat](../xml-tools/searching-the-schema-set.md)  
   
--   [Řazení, filtrování a seskupování](../xml-tools/sorting-filtering-and-grouping-xml-schema-explorer.md)  
+- [Řazení, filtrování a seskupování](../xml-tools/sorting-filtering-and-grouping-xml-schema-explorer.md)  
   
--   [Místní nabídky](../xml-tools/context-menus-xml-schema-explorer.md)  
+- [Místní nabídky](../xml-tools/context-menus-xml-schema-explorer.md)  
   
--   [Integrace literálů XML s Průzkumníkem schémat XML](../xml-tools/integration-of-xml-literals-with-xml-schema-explorer.md)  
+- [Integrace literálů XML s Průzkumníkem schémat XML](../xml-tools/integration-of-xml-literals-with-xml-schema-explorer.md)  
   
 ## <a name="see-also"></a>Viz také  
  [Postupy: Přidání uzlů do pracovního prostoru z Průzkumníka schémat XML](../xml-tools/how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer.md)

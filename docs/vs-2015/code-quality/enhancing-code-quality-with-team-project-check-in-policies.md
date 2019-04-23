@@ -12,12 +12,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 02c6b2912d828f566236aa8f24868ae9314d743e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c7b95155db18e9aa879b11cadf21b33cb0189ff9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54753184"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60103365"
 ---
 # <a name="enhancing-code-quality-with-team-project-check-in-policies"></a>Zvýšení kvality kódu použitím zásad vracení se změnami týmového projektu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,13 +26,13 @@ Při použití Team Foundation verze ovládacího prvku (TFVC), můžete vytvoř
   
  Můžete zadat tyto týmového projektu vrácení se změnami zásady:  
   
--   **Sestaví**: Vyžaduje, poškození sestavení, které byly vytvořeny během sestavení musí být opravena dříve než nové vrácení se změnami.  
+- **Sestaví**: Vyžaduje, poškození sestavení, které byly vytvořeny během sestavení musí být opravena dříve než nové vrácení se změnami.  
   
--   **Komentáře sady změn**: Vyžaduje, aby uživatelé zadat komentáře při vrácení se změnami.  
+- **Komentáře sady změn**: Vyžaduje, aby uživatelé zadat komentáře při vrácení se změnami.  
   
--   **Analýza kódu**: Vyžaduje spuštění analýzy kódu před vrácení se změnami.  
+- **Analýza kódu**: Vyžaduje spuštění analýzy kódu před vrácení se změnami.  
   
--   **Pracovní položky**: Vyžaduje, aby jeden nebo více pracovních položek přidružené vložením změn.  
+- **Pracovní položky**: Vyžaduje, aby jeden nebo více pracovních položek přidružené vložením změn.  
   
 > [!IMPORTANT]
 >  Použití zásad vrácení se změnami, musíte být připojeni k [!INCLUDE[vststfsLong](../includes/vststfslong-md.md)].  

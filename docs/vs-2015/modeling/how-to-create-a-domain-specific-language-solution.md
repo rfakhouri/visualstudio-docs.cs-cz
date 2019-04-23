@@ -15,12 +15,12 @@ caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3f675b40f250505e654b287fcaa86e70aca4cdd0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 57c843b7c556ac409a63d5e6c01e2699da59958b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54796465"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099569"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>Postupy: Vytváření řešení jazyka specifického pro doménu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,9 +67,9 @@ Vytvoření jazyka specifického pro doménu (DSL) pomocí specializovaný [!INC
   
 3. Zadejte příponu názvu souboru na **přípona souboru** stránky. By měl být jedinečný ve vašem počítači a ve všech počítačích, na kterém chcete nainstalovat DSL. Zobrazí se zpráva **žádné aplikace ani editory sady Visual Studio toto rozšíření využít**.  
   
-   -   Pokud přípona názvu souboru jste použili v předchozí experimentální DSL, která plně nenainstalovali, můžete vymazat jejich odhlašování pomocí **resetovat experimentální instanci** nástroj, který se nachází v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nabídky sady SDK.  
+   - Pokud přípona názvu souboru jste použili v předchozí experimentální DSL, která plně nenainstalovali, můžete vymazat jejich odhlašování pomocí **resetovat experimentální instanci** nástroj, který se nachází v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nabídky sady SDK.  
   
-   -   Pokud jiný [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozšíření, která používá tuto příponu souboru plně nainstalovaný v počítači, zvažte jeho odinstalaci. Na **nástroje** nabídky, klikněte na tlačítko **Správce rozšíření**.  
+   - Pokud jiný [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozšíření, která používá tuto příponu souboru plně nainstalovaný v počítači, zvažte jeho odinstalaci. Na **nástroje** nabídky, klikněte na tlačítko **Správce rozšíření**.  
   
 4. Zkontrolujte a v případě potřeby upravit, pole na zbývajících stránkách průvodce. Pokud jste s nastavením spokojeni, klikněte na tlačítko **Dokončit**. Další informace o nastaveních, která najdete v tématu [stránky průvodce Návrhář DSL](#settings).  
   
@@ -78,7 +78,7 @@ Vytvoření jazyka specifického pro doménu (DSL) pomocí specializovaný [!INC
    > [!NOTE]
    >  Pokud se zobrazí zpráva, která vás upozorní, není ke spuštění textové šablony z nedůvěryhodných zdrojů, klikněte na tlačítko **OK**. Můžete nastavit tato zpráva se zobrazí znovu.  
   
-##  <a name="settings"></a> Na stránkách průvodce návrhářem DSL  
+## <a name="settings"></a> Na stránkách průvodce návrhářem DSL  
  Můžete nechat několik polí nezmění z výchozí hodnoty. Nicméně Ujistěte se, že pole přípona souboru je nastavit.  
   
 ### <a name="solution-settings-page"></a>Stránka nastavení řešení  
@@ -98,15 +98,15 @@ Vytvoření jazyka specifického pro doménu (DSL) pomocí specializovaný [!INC
   
  Pokud se zobrazí seznam nástrojů nebo balíčky, proveďte jednu z následujících akcí:  
   
--   Zadejte jinou příponu souboru.  
+- Zadejte jinou příponu souboru.  
   
      \- nebo –  
   
--   Obnovit [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] experimentální instanci aplikace. Zruší registraci všech DSL, které jste dříve vytvořili. Na **Start** nabídky, klikněte na tlačítko **všechny programy**, **Microsoft Visual Studio 2010 SDK**, **nástroje**a potom **resetovat Microsoft Visual Studio 2010 experimentální instanci**. Můžete znovu sestavit jiných DSL, který chcete znovu použít.  
+- Obnovit [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] experimentální instanci aplikace. Zruší registraci všech DSL, které jste dříve vytvořili. Na **Start** nabídky, klikněte na tlačítko **všechny programy**, **Microsoft Visual Studio 2010 SDK**, **nástroje**a potom **resetovat Microsoft Visual Studio 2010 experimentální instanci**. Můžete znovu sestavit jiných DSL, který chcete znovu použít.  
   
      \- nebo –  
   
--   Pokud [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozšíření, která používá tuto příponu souboru plně nainstalovaný v počítači, odinstalujte ho. Na **nástroje** nabídky, klikněte na tlačítko **Správce rozšíření**.  
+- Pokud [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozšíření, která používá tuto příponu souboru plně nainstalovaný v počítači, odinstalujte ho. Na **nástroje** nabídky, klikněte na tlačítko **Správce rozšíření**.  
   
 ### <a name="product-settings-page"></a>Stránka nastavení produktu  
  **Jaký je název produktu, který nový jazyk specifický pro doménu patří?**  

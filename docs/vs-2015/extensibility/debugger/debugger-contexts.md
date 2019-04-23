@@ -10,23 +10,23 @@ ms.assetid: 79808036-b680-4e4c-9c61-4ed43aa11323
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4227bd8a82df031f04c1ab33761cf9b8520dec7a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 771a3cd8ae25173f3033b3a3229e516570f5dedc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54782751"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116235"
 ---
 # <a name="debugger-contexts"></a>Kontexty ladicího programu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 V [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ladění, ladicí stroj (DE) pracuje současně v rámci několika různých kontextech, následujícím způsobem:  
   
--   Kontext kódu, která popisuje aktuální umístění v datovém proudu provádění programu.  
+- Kontext kódu, která popisuje aktuální umístění v datovém proudu provádění programu.  
   
--   Dokumentace ke službě kontext nebo umístění, která popisuje aktuální pozici ve zdrojovém dokumentu.  
+- Dokumentace ke službě kontext nebo umístění, která popisuje aktuální pozici ve zdrojovém dokumentu.  
   
--   Kontext vyhodnocení výrazu, popisující kontext, ve výrazu, který bude vyhodnocení proběhnout.  
+- Kontext vyhodnocení výrazu, popisující kontext, ve výrazu, který bude vyhodnocení proběhnout.  
   
 ## <a name="in-this-section"></a>V tomto oddílu  
  [Kontext kódu](../../extensibility/debugger/code-context.md)  

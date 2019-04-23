@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e1733539c3f2da5d961a347e2f1c818d83257d2
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 34b69ac69c580fbd40278b5b7a0c9be26d672fa3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56721482"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082019"
 ---
 # <a name="limitations-on-wcf-debugging"></a>Omezení ladění WCF
 Existují tři způsoby, můžete začít ladění služby WCF:
@@ -37,13 +37,13 @@ Existují tři způsoby, můžete začít ladění služby WCF:
 ## <a name="limitations-on-stepping-into-a-service"></a>Omezení krokování s vnořením do služby
  Chcete-li do služby z klientských aplikací, které ladíte, musí být splněny následující podmínky:
 
--   Klient musí volat službu pomocí synchronního klientského objektu.
+- Klient musí volat službu pomocí synchronního klientského objektu.
 
--   Kontrakt operace nemůže být jednosměrná.
+- Kontrakt operace nemůže být jednosměrná.
 
--   Pokud je server asynchronní, nelze zobrazit úplného zásobníku volání, zatímco spouštíte kód uvnitř služby.
+- Pokud je server asynchronní, nelze zobrazit úplného zásobníku volání, zatímco spouštíte kód uvnitř služby.
 
--   Pomocí následujícího kódu v souboru Web.config nebo app.config musí být povoleno ladění:
+- Pomocí následujícího kódu v souboru Web.config nebo app.config musí být povoleno ladění:
 
     ```xml
     <system.web>

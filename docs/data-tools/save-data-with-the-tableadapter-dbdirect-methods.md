@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5c970fe4cd1bbd87f54e10be85adf37554c10675
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ed5b0f84ea19e465a9d820d9f25c4fc19546c639
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55950536"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60103378"
 ---
 # <a name="save-data-with-the-tableadapter-dbdirect-methods"></a>Ukládání dat pomocí metod TableAdapter DBDirect
 
@@ -29,15 +29,15 @@ Tento názorný postup obsahuje podrobné pokyny ke spouštění příkazů SQL 
 
 V tomto návodu se dozvíte, jak:
 
--   Vytvořte nový **formulářová aplikace Windows**.
+- Vytvořte nový **formulářová aplikace Windows**.
 
--   Vytvoření a konfigurace datové sady [Průvodce konfigurací zdroje dat](../data-tools/media/data-source-configuration-wizard.png).
+- Vytvoření a konfigurace datové sady [Průvodce konfigurací zdroje dat](../data-tools/media/data-source-configuration-wizard.png).
 
--   Vyberte ovládací prvek, který má být vytvořen ve formuláři při přetažení položek z **zdroje dat** okna. Další informace najdete v tématu [nastavení ovládacího prvku, který má být vytvořen při přetažení z okna zdroje dat](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
+- Vyberte ovládací prvek, který má být vytvořen ve formuláři při přetažení položek z **zdroje dat** okna. Další informace najdete v tématu [nastavení ovládacího prvku, který má být vytvořen při přetažení z okna zdroje dat](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
 
--   Vytvoření formuláře vázané na data přetažením položek z **zdroje dat** okna do formuláře.
+- Vytvoření formuláře vázané na data přetažením položek z **zdroje dat** okna do formuláře.
 
--   Přidejte metody k přímému přístupu k databázi a provést vložení, aktualizace a odstranění.
+- Přidejte metody k přímému přístupu k databázi a provést vložení, aktualizace a odstranění.
 
 ## <a name="prerequisites"></a>Požadavky
 
@@ -87,11 +87,11 @@ Tento krok používá **Průvodce konfigurací zdroje dat** vytvořit zdroj dat 
 
 4. Na **vyberte datové připojení** obrazovky, proveďte jednu z následujících akcí:
 
-    -   Pokud je připojení dat k ukázkové databázi Northwind k dispozici v rozevíracím seznamu, vyberte je.
+    - Pokud je připojení dat k ukázkové databázi Northwind k dispozici v rozevíracím seznamu, vyberte je.
 
          -nebo-
 
-    -   Vyberte **nové připojení** ke spuštění **přidat/změnit připojení** dialogové okno.
+    - Vyberte **nové připojení** ke spuštění **přidat/změnit připojení** dialogové okno.
 
 5. Pokud vaše databáze vyžaduje heslo, vyberte možnost zahrnutí důvěrných osobních údajů a pak vyberte **Další**.
 
@@ -152,21 +152,21 @@ A <xref:System.Windows.Forms.DataGridView> ovládacího prvku a pruh nástrojů 
 
 ## <a name="run-the-application"></a>Spuštění aplikace
 
--   Vyberte **F5** ke spuštění aplikace.
+- Vyberte **F5** ke spuštění aplikace.
 
--   Vyberte **vložit** tlačítko a ověřte, že nový záznam se zobrazí v mřížce.
+- Vyberte **vložit** tlačítko a ověřte, že nový záznam se zobrazí v mřížce.
 
--   Vyberte **aktualizace** tlačítko a ověřte, že záznam se aktualizuje v mřížce.
+- Vyberte **aktualizace** tlačítko a ověřte, že záznam se aktualizuje v mřížce.
 
--   Vyberte **odstranit** tlačítko a ověřte, že záznam se odebere z mřížky.
+- Vyberte **odstranit** tlačítko a ověřte, že záznam se odebere z mřížky.
 
 ## <a name="next-steps"></a>Další kroky
 
 V závislosti na požadavcích aplikace existuje několik kroků, které můžete chtít provést po vytvoření formuláře vázané na data. Mezi vylepšení, která je možné pro tento návod provést, patří:
 
--   Přidání vyhledávací funkce do formuláře.
+- Přidání vyhledávací funkce do formuláře.
 
--   Přidání další tabulky do datové sady výběrem **konfigurace datové sady pomocí průvodce** v rámci **zdroje dat** okna. Můžete přidat ovládací prvky zobrazující související data přetažením související uzly na formuláři. Další informace najdete v tématu [vztahy v datových sadách](relationships-in-datasets.md).
+- Přidání další tabulky do datové sady výběrem **konfigurace datové sady pomocí průvodce** v rámci **zdroje dat** okna. Můžete přidat ovládací prvky zobrazující související data přetažením související uzly na formuláři. Další informace najdete v tématu [vztahy v datových sadách](relationships-in-datasets.md).
 
 ## <a name="see-also"></a>Viz také:
 

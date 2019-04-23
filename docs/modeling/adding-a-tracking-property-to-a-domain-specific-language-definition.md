@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cd4bf8b1b6f43e8ed12b133a621e21157fb87118
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 46926113393542f590b78f3bfa2c4cc5f25e10a4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59657386"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60086738"
 ---
 # <a name="add-a-tracking-property-to-a-domain-specific-language-definition"></a>Přidání vlastnosti sledování do definice jazyka specifického pro doménu
 
@@ -54,90 +54,90 @@ Před zahájením tohoto návodu, je třeba nejprve nainstalovat tyto komponenty
 
 ## <a name="create-the-project"></a>Vytvoření projektu
 
-1.  Vytvoření projektu návrháře jazyka specifického pro doménu. Pojmenujte ji `TrackingPropertyDSL`.
+1. Vytvoření projektu návrháře jazyka specifického pro doménu. Pojmenujte ji `TrackingPropertyDSL`.
 
-2.  V **Průvodce návrháře jazyka specifického pro doménu**, nastavte následující možnosti:
+2. V **Průvodce návrháře jazyka specifického pro doménu**, nastavte následující možnosti:
 
-    1.  Vyberte **MinimalLanguage** šablony.
+    1. Vyberte **MinimalLanguage** šablony.
 
-    2.  Použít výchozí název jazyka specifického pro doménu `TrackingPropertyDSL`.
+    2. Použít výchozí název jazyka specifického pro doménu `TrackingPropertyDSL`.
 
-    3.  Nastavit rozšíření pro soubory modelu `trackingPropertyDsl`.
+    3. Nastavit rozšíření pro soubory modelu `trackingPropertyDsl`.
 
-    4.  Ikona výchozí šablony lze použijte pro soubory modelu.
+    4. Ikona výchozí šablony lze použijte pro soubory modelu.
 
-    5.  Nastavte název produktu, který má `Product Name`.
+    5. Nastavte název produktu, který má `Product Name`.
 
-    6.  Nastavte název společnosti `Company Name`.
+    6. Nastavte název společnosti `Company Name`.
 
-    7.  Použijte výchozí hodnotu pro kořenový obor názvů pro projekty v řešení, `CompanyName.ProductName.TrackingPropertyDSL`.
+    7. Použijte výchozí hodnotu pro kořenový obor názvů pro projekty v řešení, `CompanyName.ProductName.TrackingPropertyDSL`.
 
-    8.  Povolte průvodce vytvořit soubor klíče se silným názvem pro vaše sestavení.
+    8. Povolte průvodce vytvořit soubor klíče se silným názvem pro vaše sestavení.
 
     9. Podrobnosti o řešení a potom klikněte na tlačítko **Dokončit** k vytvoření projektu definice DSL.
 
 ## <a name="customize-the-default-dsl-definition"></a>Přizpůsobení výchozí definice DSL
  V této části můžete přizpůsobit definici DSL tak, aby obsahovala následující položky:
 
--   Namespace, sledování vlastnost pro každý prvek modelu.
+- Namespace, sledování vlastnost pro každý prvek modelu.
 
--   Logická IsNamespaceTracking vlastnost pro každý prvek modelu. Tato vlastnost indikuje, zda je vlastnost sledování stavu sledování nebo v aktualizovaném podle stavu uživatele.
+- Logická IsNamespaceTracking vlastnost pro každý prvek modelu. Tato vlastnost indikuje, zda je vlastnost sledování stavu sledování nebo v aktualizovaném podle stavu uživatele.
 
--   Namespace výchozí vlastnost pro model. Tato vlastnost se použije k výpočtu Namespace vlastnost sledování na výchozí hodnotu.
+- Namespace výchozí vlastnost pro model. Tato vlastnost se použije k výpočtu Namespace vlastnost sledování na výchozí hodnotu.
 
--   CustomElements počítá vlastností modelu. Tato vlastnost bude tato informace uvedena podíl prvky, které mají vlastní obor názvů.
+- CustomElements počítá vlastností modelu. Tato vlastnost bude tato informace uvedena podíl prvky, které mají vlastní obor názvů.
 
 ### <a name="to-add-the-domain-properties"></a>Chcete-li přidat vlastnosti domény
 
-1.  V návrháře DSL, klikněte pravým tlačítkem na **ExampleModel** doménové třídy, přejděte na příkaz **přidat**a potom klikněte na tlačítko **vlastnost DomainProperty**.
+1. V návrháře DSL, klikněte pravým tlačítkem na **ExampleModel** doménové třídy, přejděte na příkaz **přidat**a potom klikněte na tlačítko **vlastnost DomainProperty**.
 
-    1.  Pojmenujte novou vlastnost `DefaultNamespace`.
+    1. Pojmenujte novou vlastnost `DefaultNamespace`.
 
-    2.  V **vlastnosti** okna pro novou vlastnost, nastavte **výchozí hodnota** k `DefaultNamespace`a nastavte **typ** k **řetězec**.
+    2. V **vlastnosti** okna pro novou vlastnost, nastavte **výchozí hodnota** k `DefaultNamespace`a nastavte **typ** k **řetězec**.
 
-2.  Chcete **ExampleModel** domény, do třídy doménovou vlastnost s názvem `CustomElements`.
+2. Chcete **ExampleModel** domény, do třídy doménovou vlastnost s názvem `CustomElements`.
 
      V **vlastnosti** okna pro novou vlastnost, nastavte **druh** k **vypočtené**.
 
-3.  Chcete **ExampleElement** domény, do třídy doménovou vlastnost s názvem `Namespace`.
+3. Chcete **ExampleElement** domény, do třídy doménovou vlastnost s názvem `Namespace`.
 
      V **vlastnosti** okna pro novou vlastnost, nastavte **je Prohlížitelná** k **False**a nastavte **druh** k **hodnotu CustomStorage** .
 
-4.  Chcete **ExampleElement** domény, do třídy doménovou vlastnost s názvem `IsNamespaceTracking`.
+4. Chcete **ExampleElement** domény, do třídy doménovou vlastnost s názvem `IsNamespaceTracking`.
 
      V **vlastnosti** okna pro novou vlastnost, nastavte **je Prohlížitelná** k **False**, nastavte **výchozí hodnota** k `true`a nastavení **Typ** k **logická**.
 
 ### <a name="to-update-the-diagram-elements-and-dsl-details"></a>Chcete-li aktualizovat elementy diagramu a podrobnosti DSL
 
-1.  V návrháře DSL, klikněte pravým tlačítkem **ExampleShape** obrazec geometrie, přejděte na **přidat**a potom klikněte na tlačítko **Dekoratér Text**.
+1. V návrháře DSL, klikněte pravým tlačítkem **ExampleShape** obrazec geometrie, přejděte na **přidat**a potom klikněte na tlačítko **Dekoratér Text**.
 
-    1.  Pojmenujte nový text dekoratér `NamespaceDecorator`.
+    1. Pojmenujte nový text dekoratér `NamespaceDecorator`.
 
-    2.  V **vlastnosti** okno pro dekoratér text nastaveno **pozice** k **InnerBottomLeft**.
+    2. V **vlastnosti** okno pro dekoratér text nastaveno **pozice** k **InnerBottomLeft**.
 
-2.  V návrháře DSL, vyberte řádek, který se připojí **ExampleElement** třídu **ExampleShape** obrazce.
+2. V návrháře DSL, vyberte řádek, který se připojí **ExampleElement** třídu **ExampleShape** obrazce.
 
-    1.  V **podrobnosti DSL** okna, vyberte **mapování Dekoratéru** kartu.
+    1. V **podrobnosti DSL** okna, vyberte **mapování Dekoratéru** kartu.
 
-    2.  V **Dekoratéry** seznamu vyberte **NamespaceDecorator**, zaškrtněte její políčko a potom na **zobrazit vlastnost** seznamu vyberte **Namespace**.
+    2. V **Dekoratéry** seznamu vyberte **NamespaceDecorator**, zaškrtněte její políčko a potom na **zobrazit vlastnost** seznamu vyberte **Namespace**.
 
-3.  V **Průzkumník DSL**, rozbalte **doménovými třídami** složky, klikněte pravým tlačítkem na **ExampleElement** uzlu a pak klikněte na tlačítko **přidat nový popisovač typu domény**.
+3. V **Průzkumník DSL**, rozbalte **doménovými třídami** složky, klikněte pravým tlačítkem na **ExampleElement** uzlu a pak klikněte na tlačítko **přidat nový popisovač typu domény**.
 
-    1.  Rozbalte **ExampleElement** uzel a vyberte **popisovači vlastního typu (popisovač typu domény)** uzlu.
+    1. Rozbalte **ExampleElement** uzel a vyberte **popisovači vlastního typu (popisovač typu domény)** uzlu.
 
-    2.  V **vlastnosti** nastavit okno pro popisovač typu domény **programového vlastní** k **True**.
+    2. V **vlastnosti** nastavit okno pro popisovač typu domény **programového vlastní** k **True**.
 
-4.  V **Průzkumník DSL**, vyberte **chování serializace Xml** uzlu.
+4. V **Průzkumník DSL**, vyberte **chování serializace Xml** uzlu.
 
-    1.  V **vlastnosti** okno, nastavte **načítání příspěvků vlastní** k **True**.
+    1. V **vlastnosti** okno, nastavte **načítání příspěvků vlastní** k **True**.
 
 ## <a name="transform-templates"></a>Transformace šablon
 
 Teď, když jste definovali doménové třídy a vlastnosti pro vašeho DSL, můžete ověřit, že se znova vygenerovat kód pro váš projekt je správně transformovat definici DSL.
 
-1.  Na **Průzkumníka řešení** nástrojů, klikněte na tlačítko **Transformovat všechny šablony**.
+1. Na **Průzkumníka řešení** nástrojů, klikněte na tlačítko **Transformovat všechny šablony**.
 
-2.  Systém vygeneruje kód pro řešení a uloží DslDefinition.dsl. Informace o formátu XML souborů definic najdete v tématu [soubor DslDefinition.dsl](../modeling/the-dsldefinition-dsl-file.md).
+2. Systém vygeneruje kód pro řešení a uloží DslDefinition.dsl. Informace o formátu XML souborů definic najdete v tématu [soubor DslDefinition.dsl](../modeling/the-dsldefinition-dsl-file.md).
 
 ## <a name="create-files-for-custom-code"></a>Vytvoření souborů pro vlastní kód
 
@@ -145,23 +145,23 @@ Při transformaci všech šablon systém generuje zdrojový kód, který definuj
 
 Pro zachování hodnotu a stav sledovaná vlastnost je nutné zadat kód. Vám usnadní orientaci ve vlastním kódu generovaného kódu a aby se zabránilo konfliktům pojmenování souboru, umístěte svoje soubory na vlastní kód v samostatné podsložce.
 
-1.  V **Průzkumníku řešení**, klikněte pravým tlačítkem myši **DSL** projektu, přejděte na **přidat**a potom klikněte na **novou složku**. Název nové složky `CustomCode`.
+1. V **Průzkumníku řešení**, klikněte pravým tlačítkem myši **DSL** projektu, přejděte na **přidat**a potom klikněte na **novou složku**. Název nové složky `CustomCode`.
 
-2.  Klikněte pravým tlačítkem na nový **CustomCode** složku, přejděte na příkaz **přidat**a potom klikněte na tlačítko **nová položka**.
+2. Klikněte pravým tlačítkem na nový **CustomCode** složku, přejděte na příkaz **přidat**a potom klikněte na tlačítko **nová položka**.
 
-3.  Vyberte **souboru s kódem** šablony, nastavte **název** k `NamespaceTrackingProperty.cs`a potom klikněte na tlačítko **OK**.
+3. Vyberte **souboru s kódem** šablony, nastavte **název** k `NamespaceTrackingProperty.cs`a potom klikněte na tlačítko **OK**.
 
      Soubor NamespaceTrackingProperty.cs je vytvořen a otevřen pro úpravy.
 
-4.  Ve složce, vytvořte následující soubory kódu: `ExampleModel.cs,``HelperClasses.cs`, `Serialization.cs`, a `TypeDescriptor.cs`.
+4. Ve složce, vytvořte následující soubory kódu: `ExampleModel.cs,``HelperClasses.cs`, `Serialization.cs`, a `TypeDescriptor.cs`.
 
-5.  V **DslPackage** projektu, taky vytvořit `CustomCode` složky a přidejte do ní `Package.cs` soubor kódu.
+5. V **DslPackage** projektu, taky vytvořit `CustomCode` složky a přidejte do ní `Package.cs` soubor kódu.
 
 ## <a name="add-helper-classes-to-support-tracking-properties"></a>Přidání tříd pomocných rutin pro podporu sledování vlastnosti
 
 Chcete-li soubor HelperClasses.cs přidejte `TrackingHelper` a `CriticalException` třídy následujícím způsobem. Tyto třídy dále v tomto návodu budete odkazovat.
 
-1.  Přidejte následující kód do souboru HelperClasses.cs.
+1. Přidejte následující kód do souboru HelperClasses.cs.
 
     ```csharp
     using System;
@@ -247,7 +247,7 @@ Definování tato metoda vytvoří sledovací popisovač vlastnosti pro Namespac
 
 ### <a name="to-modify-the-type-descriptor-for-the-examplemodel-domain-class"></a>Chcete-li změnit popisovač typu pro doménovou třídu ExampleModel
 
-1.  Přidejte následující kód do souboru TypeDescriptor.cs.
+1. Přidejte následující kód do souboru TypeDescriptor.cs.
 
     ```csharp
     using System;
@@ -309,7 +309,7 @@ Definování tato metoda vytvoří sledovací popisovač vlastnosti pro Namespac
 
 Generovaný kód definuje poskytovatele popisů typů pro doménovou třídu ExampleElement; Nicméně je nutné přidat kód dáte pokyn, aby DSL k používání tohoto poskytovatele typu popis.
 
-1.  Přidejte následující kód do souboru Package.cs.
+1. Přidejte následující kód do souboru Package.cs.
 
     ```csharp
     using System.ComponentModel;
@@ -347,7 +347,7 @@ Protože vlastností DefaultNamespace se používá k výpočtu Namespace vlastn
 
 ### <a name="to-modify-the-property-handler-for-the-tracked-property"></a>Chcete-li změnit obslužné rutiny vlastnosti sledované vlastnosti
 
-1.  Přidejte následující kód do souboru ExampleModel.cs.
+1. Přidejte následující kód do souboru ExampleModel.cs.
 
     ```csharp
     using System.Linq;
@@ -423,7 +423,7 @@ Přidejte také úložiště pro a metody k získání a nastavení, vlastnost N
 
 ### <a name="to-add-the-method-for-the-custom-type-descriptor"></a>Chcete-li přidat metodu pro vlastní typ popisovače
 
-1.  Přidejte následující kód do souboru NamespaceTrackingProperty.cs.
+1. Přidejte následující kód do souboru NamespaceTrackingProperty.cs.
 
     ```csharp
     using System;
@@ -590,7 +590,7 @@ Přidání kódu, který podporuje vlastní chování po načtení pro serializa
 
 ### <a name="to-add-code-to-support-the-custom-post-load-behavior"></a>Přidání kódu, který podporuje vlastní chování po načtení
 
-1.  Přidejte následující kód do souboru Serialization.cs.
+1. Přidejte následující kód do souboru Serialization.cs.
 
     ```csharp
     using System;

@@ -22,12 +22,12 @@ caps.latest.revision: 73
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3c10dd5661cafd5deeef66d8a65b0ddb61738125
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 9b1fc7da90eb4f263aaf3de19eb37cfa3272a249
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54790827"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105722"
 ---
 # <a name="intellitrace-features"></a>Funkce IntelliTrace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,12 +43,12 @@ Můžete zaznamenat události IntelliTrace a volá metodu vaší aplikace, kter�
 > [!NOTE]
 >  Obor všechna nastavení na **IntelliTrace** stránka možností je sada Visual Studio jako celek, nikoli jednotlivé projekty nebo řešení. Změna těchto nastavení se vztahuje na všechny instance sady Visual Studio, všechny ladicí relace a všechny projekty nebo řešení.  
   
-##  <a name="ChooseEvents"></a> Vyberte události, které nástroj IntelliTrace zaznamenává.  
+## <a name="ChooseEvents"></a> Vyberte události, které nástroj IntelliTrace zaznamenává.  
  Můžete zapnout nebo vypnout zaznamenávání určitých událostí IntelliTrace.  
   
  Pokud ladíte, zastavte ladění. Přejděte na **nástroje / Možnosti / IntelliTrace nebo události IntelliTrace**. Zvolte událostí, které má IntelliTrace zaznamenávat.  
   
-##  <a name="GoingFurther"></a> Shromažďovat události IntelliTrace a informací o volání  
+## <a name="GoingFurther"></a> Shromažďovat události IntelliTrace a informací o volání  
  Tato možnost není povolena ve výchozím nastavení, ale nástroj IntelliTrace umí zaznamenat volání metody spolu s událostmi. Povolte shromažďování metoda volání přejít na **nástroje / Možnosti / IntelliTrace / Obecné**a vyberte **události IntelliTrace a informací o volání**.  
   
  To umožňuje zobrazit historii zásobníku volání, krokovat zpět a vpřed mezi voláními ve vašem kódu. Nástroj IntelliTrace zaznamenává data, jako jsou názvy metod, metoda vstupní a výstupní body a některé hodnoty parametrů a návratové hodnoty.  
@@ -75,14 +75,14 @@ Můžete zaznamenat události IntelliTrace a volá metodu vaší aplikace, kter�
 ### <a name="search-for-a-line-or-method-in-intellitrace"></a>Vyhledejte řádek nebo metody v IntelliTrace  
  Metody můžete prohledávat pouze v případě, že se povolila informací o volání metody. Můžete prohledat historii nástroje IntelliTrace na konkrétní řádek nebo metodu. Při zastavení spuštění ladicího programu, klikněte pravým tlačítkem uvnitř těla funkce Zobrazit kontextovou nabídku a klikněte na možnost **vyhledávání pro tento řádek v IntelliTrace** nebo **vyhledávání pro tuto metodu v IntelliTrace**.  
   
-###  <a name="ControlCallData"></a> Řízení množství informací o volání nástroj IntelliTrace zaznamenává  
+### <a name="ControlCallData"></a> Řízení množství informací o volání nástroj IntelliTrace zaznamenává  
  Ve výchozím nastavení nástroj IntelliTrace zaznamenává informace pro všechny moduly používané v řešení. Nástroj IntelliTrace můžete nastavit na zaznamenávat informace o voláních pouze u modulů, které vás zajímají. V **nástroje / Možnosti / IntelliTrace / moduly**, můžete určit moduly, které chcete zahrnout nebo moduly, které chcete vyloučit z nástroje IntelliTrace. IntelliTrace se shromažďuje pouze události, které pochází z modulů, které jste zadali, a volání metod, ke kterým došlo v rámci moduly se zajímáte.  
   
  Chcete-li přidat více modulů, použijte zástupný znak * na začátku nebo konci řetězce. V případě názvů modulů použijte názvy souborů, nikoli názvy sestavení. Není možné použít cesty k souborům.  
   
  Pokuste se zachovat počet modulů na minimum. Protože je méně dat, které se mají shromažďovat, dosahovat vyšších výkonů. Získáte také menší šumu v uživatelském rozhraní vzhledem k tomu je méně dat a absolvovat.  
   
-##  <a name="SaveSession"></a> Ukládání dat IntelliTrace do souboru  
+## <a name="SaveSession"></a> Ukládání dat IntelliTrace do souboru  
  Data shromážděná IntelliTrace můžete uložit na **ladění / IntelliTrace / uložit relaci IntelliTrace** při ladění a aplikace je ve stavu přerušení. Položka nabídky je zakázaná a není možné uložit data, která nástroj IntelliTrace se budou shromažďovat v Pokud je stále spuštěná aplikace nebo zastavení ladění.  
   
  Můžete nakonfigurovat IntelliTrace automaticky uloží do souboru tak, že přejdete do **nástroje / Možnosti / IntelliTrace / pokročilé** a vyberete **záznamy Store IntelliTrace v tomto adresáři**. Můžete také nakonfigurovat nastavení velikosti pro generovaný soubor, což způsobí, že nástroj IntelliTrace zapisovat přes starší data, pokud jí dojde místo. Visual Studio vytvoří dva soubory pro každou relaci IntelliTrace, když se automaticky uloží a proces hostování (vshost.exe) sady Visual Studio je zapnuté.  

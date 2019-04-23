@@ -9,12 +9,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c7c904e74793710dedc96d4a769d4f6c61a15e69
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 834651f525ccb292f82d5cf0ab5a7068a1cf7f20
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54760768"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108305"
 ---
 # <a name="how-to-create-a-basic-3-d-model"></a>Postupy: Vytvoření základního 3D modelu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,15 +23,15 @@ Tento dokument popisuje způsob použití Editoru modelů pro vytvoření zákla
   
  Tento dokument vysvětluje tyto činnosti:  
   
--   Přidání objektů do scény  
+- Přidání objektů do scény  
   
--   Výběrem tváří a okraje  
+- Výběrem tváří a okraje  
   
--   Možnosti překladu  
+- Možnosti překladu  
   
--   Použití **rozdělit plochu** a **vyloučit plochu** nástroje  
+- Použití **rozdělit plochu** a **vyloučit plochu** nástroje  
   
--   Použití **Triangulovat** příkazu  
+- Použití **Triangulovat** příkazu  
   
 ## <a name="creating-a-basic-3-d-model"></a>Vytvoření základního 3D modelu  
  Editor modelů můžete použít k vytvoření a úprava 3D modely a pozadí pro vaše hry nebo aplikace. Následující kroky ukazují, jak použít k vytvoření 3D modelu zjednodušené domu editoru modelů. Zjednodušený model může sloužit jako stand-in pro konečné prostředků, které jsou stále probíhá vytváření, jako síť pro detekci kolizí, nebo jako model s nízkou podrobností se použije, když je objekt, který představuje příliš daleko těžit z podrobnější vykreslování.  

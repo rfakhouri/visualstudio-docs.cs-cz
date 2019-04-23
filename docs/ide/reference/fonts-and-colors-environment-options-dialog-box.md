@@ -25,12 +25,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b48c86c74b724dc6df5d5935f1340f6de0fc9185
-ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
+ms.openlocfilehash: b1576af2511f3bd24c26a64c1667c6b466bedd1e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58647463"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076497"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Písma a barvy, prostředí, dialogové okno Možnosti
 
@@ -42,26 +42,26 @@ Barevné schéma změny se projeví během relace, ve kterém je provedete. Změ
 
 Obsahuje seznam všech prvků uživatelského rozhraní, pro které můžete změnit písma a barevná schémata. Po výběru položky z tohoto seznamu můžete upravit nastavení barev pro vybranou položku v **zobrazení položek**.
 
--   **Textový Editor**
+- **Textový Editor**
 
      Změny styl písma, velikosti a zobrazení nastavení barev pro textový Editor vliv na vzhled textu v textovém editoru výchozí. Tato nastavení se nevztahuje dokumenty otevřené v textovém editoru mimo rozhraní IDE.
 
--   **Printer**
+- **Printer**
 
      Změny styl písma, velikosti a zobrazení nastavení barev pro tiskárnu vliv na vzhled textu v dokumentu.
 
     > [!NOTE]
     > Podle potřeby, můžete vybrat různé výchozí písmo pro tisk než, který používá pro zobrazení v textovém editoru. To může být užitečné při tisku kódu, který obsahuje jednobajtových a dvoubajtových znaků.
 
--   **Dokončování příkazů**
+- **Dokončování příkazů**
 
      Změní styl písma a velikost textu, který se zobrazí v doplňování výrazů rozbalovací v editoru.
 
--   **Nápověda editoru**
+- **Nápověda editoru**
 
      Změní styl písma a velikost textu, který se zobrazí v popisu zobrazí v editoru.
 
--   **Písmo prostředí**
+- **Písmo prostředí**
 
      Mění styl písma a velikost pro všechny prvky uživatelského rozhraní IDE, které ještě nemají samostatnou možností v **zobrazit nastavení pro**.
 
@@ -71,7 +71,7 @@ Obsahuje seznam všech prvků uživatelského rozhraní, pro které můžete zm�
 
      ::: moniker-end
 
--   **[Všechny textový nástroj Windows]**
+- **[Všechny textový nástroj Windows]**
 
      Změny písmo, velikost a barvu zobrazit nastavení pro tuto položku vliv na vzhled textu v oknech nástrojů, které mají výstupní podokna v integrovaném vývojovém prostředí. Například okno výstup, okno příkazového řádku, hodnot proměnných atd.
 
@@ -167,7 +167,7 @@ Zobrazit položky patří:
 |**Inteligentní značky**|Používá k označení obrys, když jsou vyvolány inteligentních značek.|
 |**SQL DML Marker**|Platí pro editor jazyka Transact-SQL. Příkazy DML v tomto editoru jsou označené ohraničujícího rámečku modrá ve výchozím nastavení.|
 |**Zastaralý kód**|Nahrazené kód čeká na aktualizace. V některých případech funkce upravit a pokračovat nemůže použít změny kódu okamžitě, ale je použít později v průběhu ladění. K tomu dochází při úpravě funkce, která se musí volat funkci právě probíhá, nebo pokud chcete přidat více než 64 bajtů nové proměnné čekání v zásobníku volání funkce. Pokud k tomu dojde, ladicí program zobrazí dialogové okno "Upozornění na starý kód", a kód nahrazené pokračuje v provádění, dokud dotyčný funkce dokončí a je volána znovu. Upravit a pokračovat platí v daném čase změny kódu.|
-|**řetězec**|Řetězcových literálů.|
+|**Řetězec**|Řetězcových literálů.|
 |**Řetězce (C# @ Verbatim)**|Textové literály v jazyce C#, které dokáže interpretovat znění. Příklad:<br /><br /> @"x"|
 |**Chyba syntaxe**|Chyby analýzy.|
 |**Zástupce seznamu úkolů**|Pokud **seznamu úkolů** řádku, je přidán zástupce a okraj indikátoru je zakázané, budou zvýrazněny řádku.|

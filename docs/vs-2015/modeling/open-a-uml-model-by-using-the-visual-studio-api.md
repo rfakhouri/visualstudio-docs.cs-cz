@@ -11,12 +11,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 21f9b02b84644bd748c88e9d08647fa7d57d951b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5baa2168eeae12f1a85fdce0b2981e267dcd6fbc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54763339"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60083878"
 ---
 # <a name="open-a-uml-model-by-using-the-visual-studio-api"></a>Otevření modelu UML pomocí rozhraní API sady Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,11 +25,11 @@ Pomocí rozhraní API můžete také otevřít modelů a diagramů v uživatelsk
   
  Pokud chcete pouze přečíst model v kódu programu bez zviditelnění pro uživatele, můžete použít následující metody:  
   
--   Sběrnice modelu Visual Studio umožňuje přístup k modelů a prvkům v sobě a poskytuje standardní metodu vytváření vazeb mezi jednotlivými. Další informace najdete v tématu [modely UML integrovat s jinými modely a nástroji](../modeling/integrate-uml-models-with-other-models-and-tools.md).  
+- Sběrnice modelu Visual Studio umožňuje přístup k modelů a prvkům v sobě a poskytuje standardní metodu vytváření vazeb mezi jednotlivými. Další informace najdete v tématu [modely UML integrovat s jinými modely a nástroji](../modeling/integrate-uml-models-with-other-models-and-tools.md).  
   
--   Model lze otevřít v režimu jen pro čtení. Další informace najdete v tématu [čtení modelu UML v programovém kódu](../modeling/read-a-uml-model-in-program-code.md).  
+- Model lze otevřít v režimu jen pro čtení. Další informace najdete v tématu [čtení modelu UML v programovém kódu](../modeling/read-a-uml-model-in-program-code.md).  
   
-##  <a name="Showing"></a> Otevírání modelů a diagramů v sadě Visual Studio  
+## <a name="Showing"></a> Otevírání modelů a diagramů v sadě Visual Studio  
  K otevření modelu v uživatelském rozhraní, použijte standardní rozhraní API Visual Studio `EnvDTE.DTE`. Existují dvě užitečná přetypování, které můžete provést na položkách projektu modelování:  
   
 - `EnvDTE.Project` může být převeden do a z `IModelingProject`, pokud je projekt projektem modelování a projekt je načten do aktuální domény aplikace.  

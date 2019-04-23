@@ -9,12 +9,12 @@ ms.assetid: 257d2a24-d582-4cfe-8b2b-51f51ba9cc84
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bd5a7183589255d246fd299b9ec628330d948dcf
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c1d7f9d0c9ad07223d0b59d7aeca585b53432280
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55917542"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114324"
 ---
 # <a name="how-to-add-additional-run-settings-to-a-load-test"></a>Postupy: Přidání dalších parametrů běhu k zátěžovému testu
 
@@ -26,21 +26,21 @@ K zátěžovému testu lze přidat více parametrů spuštění s různými nast
 
 ## <a name="to-add-another-run-setting"></a>Přidání dalšího parametru spuštění
 
-1.  Otevřete zátěžový test.
+1. Otevřete zátěžový test.
 
-2.  (Volitelné) Rozbalte **parametrů běhu** složky.
+2. (Volitelné) Rozbalte **parametrů běhu** složky.
 
-3.  Klikněte pravým tlačítkem myši **parametrů běhu** a pak zvolte položku **přidat parametry spuštění**.
+3. Klikněte pravým tlačítkem myši **parametrů běhu** a pak zvolte položku **přidat parametry spuštění**.
 
      Nový parametr spuštění se přidá do **parametrů běhu** složky.
 
-4.  Na **zobrazení** nabídce zvolte **okno vlastností**.
+4. Na **zobrazení** nabídce zvolte **okno vlastností**.
 
      **Vlastnosti** se zobrazí okno s vlastnostmi pro vybraný parametr spuštění.
 
-5.  V **vlastnosti** okno, použijte textové pole pro **název** vlastnost poskytnout nového parametru spuštění. název, který by měl popisovat záměr parametru spuštění (například **spuštění: Pětiminutový běh**).
+5. V **vlastnosti** okno, použijte textové pole pro **název** vlastnost poskytnout nového parametru spuštění. název, který by měl popisovat záměr parametru spuštění (například **spuštění: Pětiminutový běh**).
 
-6.  Použití **vlastnosti** oknu změnit parametry spuštění. Například změnit dobu spuštění **00:05:00** na test běžel pět minut.
+6. Použití **vlastnosti** oknu změnit parametry spuštění. Například změnit dobu spuštění **00:05:00** na test běžel pět minut.
 
     > [!NOTE]
     > Úplný seznam vlastností parametrů spuštění a jejich popis najdete v tématu [zátěžového testu spusťte nastavení](../test/load-test-run-settings-properties.md).

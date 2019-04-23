@@ -20,12 +20,12 @@ caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4a9a3e7cd63e5a485063789d9f9eeaf1227d1b5d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 360384118f5c2d02801b63b8836800eca5e26d78
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54782946"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102247"
 ---
 # <a name="how-to-debug-from-a-dll-project"></a>Postupy: Ladění z projektu knihovny DLL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,35 +39,35 @@ Chcete-li spustit ladění projektu knihovny DLL, musíte zadat volající aplik
   
 ### <a name="to-specify-the-calling-application-in-a-c-project"></a>Chcete-li určit volající aplikace v projektu jazyka C++  
   
-1.  Klikněte pravým tlačítkem na uzel projektu v **Průzkumníka řešení** a vyberte **vlastnosti**. Přejděte **ladění** kartu.  
+1. Klikněte pravým tlačítkem na uzel projektu v **Průzkumníka řešení** a vyberte **vlastnosti**. Přejděte **ladění** kartu.  
   
-2.  Ujistěte se, že **konfigurace** pole v horní části okna je nastaveno **ladění**.  
+2. Ujistěte se, že **konfigurace** pole v horní části okna je nastaveno **ladění**.  
   
-3.  Přejděte na **konfigurační vlastnosti / ladění**.  
+3. Přejděte na **konfigurační vlastnosti / ladění**.  
   
-4.  V **ladicí program ke spuštění** klikněte na položku **místní ladicí program Windows** nebo **vzdálený ladicí program Windows**.  
+4. V **ladicí program ke spuštění** klikněte na položku **místní ladicí program Windows** nebo **vzdálený ladicí program Windows**.  
   
-5.  V **příkaz** nebo **vzdálený příkaz** přidejte název plně kvalifikované cesty aplikace.  
+5. V **příkaz** nebo **vzdálený příkaz** přidejte název plně kvalifikované cesty aplikace.  
   
-6.  Přidat všechny argumenty potřebné program **argumenty příkazu** pole.  
+6. Přidat všechny argumenty potřebné program **argumenty příkazu** pole.  
   
 ### <a name="to-specify-the-calling-application-in-a-c-or-visual-basic-project"></a>Pokud chcete zadat volající aplikace do projektu C# nebo Visual Basic  
   
-1.  Klikněte pravým tlačítkem na uzel projektu v **Průzkumníka řešení** a vyberte **vlastnosti**. Přejděte **ladění** kartu.  
+1. Klikněte pravým tlačítkem na uzel projektu v **Průzkumníka řešení** a vyberte **vlastnosti**. Přejděte **ladění** kartu.  
   
      Vyberte **externí program Start**a přidejte název plně kvalifikované cesty ke spuštění programu.  
   
      Pokud je potřeba přidat externí program argumenty příkazového řádku, přidejte je **argumenty příkazového řádku** pole.  
   
-2.  Můžete také volat aplikace jako adresa URL. (Můžete to provést, pokud ladíte spravovaný knihovnu DLL používá místní aplikace ASP.NET.)  
+2. Můžete také volat aplikace jako adresa URL. (Můžete to provést, pokud ladíte spravovaný knihovnu DLL používá místní aplikace ASP.NET.)  
   
      V části **spustit akci**, vyberte **spuštění prohlížeče v adrese URL:** přepínač a zadejte adresu URL.  
   
 ### <a name="to-start-debugging-from-the-dll-project"></a>Pro spuštění ladění z projektu knihovny DLL  
   
-1.  Podle potřeby nastavit zarážky.  
+1. Podle potřeby nastavit zarážky.  
   
-2.  Spustit ladění (stisknutím klávesy F5, klikněte na zelenou šipku nebo klikněte na tlačítko **ladění / spuštění ladění**).  
+2. Spustit ladění (stisknutím klávesy F5, klikněte na zelenou šipku nebo klikněte na tlačítko **ladění / spuštění ladění**).  
   
 ## <a name="see-also"></a>Viz také  
  [Ladění projektů knihovny DLL](../debugger/debugging-dll-projects.md)   

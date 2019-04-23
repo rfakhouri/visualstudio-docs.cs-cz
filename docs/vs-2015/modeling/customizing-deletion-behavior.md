@@ -13,12 +13,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 252892286cf181c9d91e3bec842aa1e90d483b22
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d22db963f895c4ca53a44e20bc0babd0dff49853
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54767999"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107583"
 ---
 # <a name="customizing-deletion-behavior"></a>Přizpůsobení chování odstranění
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,34 +27,34 @@ Odstranění elementu obvykle způsobí, že související prvky také odstranit
   
  Toto téma obsahuje následující oddíly:  
   
--   [Výchozí chování při odstranění](#default)  
+- [Výchozí chování při odstranění](#default)  
   
--   [Nastavení možnosti šířit odstranit role](#property)  
+- [Nastavení možnosti šířit odstranit role](#property)  
   
--   [Přepsání odstranit uzavření](#closure) – tento postup použít, kde odstranění může vést k odstranění sousedních elementy.  
+- [Přepsání odstranit uzavření](#closure) – tento postup použít, kde odstranění může vést k odstranění sousedních elementy.  
   
--   [Pomocí OnDeleting a OnDeleted](#ondeleting) – používat tyto metody, kde odpověď může obsahovat další akce, jako je aktualizace hodnotu uvnitř nebo mimo úložiště.  
+- [Pomocí OnDeleting a OnDeleted](#ondeleting) – používat tyto metody, kde odpověď může obsahovat další akce, jako je aktualizace hodnotu uvnitř nebo mimo úložiště.  
   
--   [Odstranění pravidla](#rules) – použít pravidla k šíření aktualizací jakéhokoli druhu v rámci úložiště, kde by mohly vést jednu změnu ostatním uživatelům.  
+- [Odstranění pravidla](#rules) – použít pravidla k šíření aktualizací jakéhokoli druhu v rámci úložiště, kde by mohly vést jednu změnu ostatním uživatelům.  
   
--   [Odstranění událostí](#rules) – události v úložišti použití k šíření aktualizací mimo úložiště, například u jiného [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] dokumenty.  
+- [Odstranění událostí](#rules) – události v úložišti použití k šíření aktualizací mimo úložiště, například u jiného [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] dokumenty.  
   
--   [Oddělit](#unmerge) – použít oddělit operace vrátit zpět operaci sloučení, který je připojen podřízený element svého nadřazeného objektu.  
+- [Oddělit](#unmerge) – použít oddělit operace vrátit zpět operaci sloučení, který je připojen podřízený element svého nadřazeného objektu.  
   
-##  <a name="default"></a> Výchozí chování při odstranění  
+## <a name="default"></a> Výchozí chování při odstranění  
  Ve výchozím nastavení platí následující pravidla šíření odstranit:  
   
--   Pokud element se odstraní, odstraní se také všechny vložené prvky. Vložené prvky jsou ty, které jsou cíle relace, pro které tento element má zdroj vkládání. Například, pokud existuje vztah obsažení z **alba** k **skladby**, pak při odstranění určité Album se odstraní také všechny jeho skladeb.  
+- Pokud element se odstraní, odstraní se také všechny vložené prvky. Vložené prvky jsou ty, které jsou cíle relace, pro které tento element má zdroj vkládání. Například, pokud existuje vztah obsažení z **alba** k **skladby**, pak při odstranění určité Album se odstraní také všechny jeho skladeb.  
   
      Naopak odstraněním určité skladby nedojde k odstranění alba.  
   
--   Ve výchozím nastavení odstranění nešíří podél referenční stavy. Pokud existuje vztah odkazu **ArtistPlaysOnAlbum** z **alba** k **interpreta**, odstraněním alba nedojde k odstranění všech souvisejících interpreta, a odstraňuje umělce není Odstraňte všechny album.  
+- Ve výchozím nastavení odstranění nešíří podél referenční stavy. Pokud existuje vztah odkazu **ArtistPlaysOnAlbum** z **alba** k **interpreta**, odstraněním alba nedojde k odstranění všech souvisejících interpreta, a odstraňuje umělce není Odstraňte všechny album.  
   
      Odstranění však rozšířit podél některé předdefinované vztahy. Například při odstranění prvku modelu, jeho tvar v diagramu je také odstranit. Element a tvar se vztahují `PresentationViewsSubject` odkazovat na relaci.  
   
--   Odstranění všech relací, který je připojen k elementu, buď na zdrojová nebo cílová role. Vlastnosti role elementu v opačné role už neobsahuje odstraněného elementu.  
+- Odstranění všech relací, který je připojen k elementu, buď na zdrojová nebo cílová role. Vlastnosti role elementu v opačné role už neobsahuje odstraněného elementu.  
   
-##  <a name="property"></a> Nastavení možnosti šířit odstranit role  
+## <a name="property"></a> Nastavení možnosti šířit odstranit role  
  Může způsobit odstranění rozšíření podél vztah odkazu nebo z vložené podřízené k nadřazené úloze.  
   
 #### <a name="to-set-delete-propagation"></a>Chcete-li nastavit šíření delete  
@@ -67,9 +67,9 @@ Odstranění elementu obvykle způsobí, že související prvky také odstranit
   
 3. Stiskněte klávesu F5 a ověřte, že:  
   
-   -   Při odstranění instance tohoto vztahu se budou odstraněny také element na vybranou roli.  
+   - Při odstranění instance tohoto vztahu se budou odstraněny také element na vybranou roli.  
   
-   -   Když se odstraní prvek na opačné role, výskyty tento vztah se odstraní a související prvky na této role budou odstraněny.  
+   - Když se odstraní prvek na opačné role, výskyty tento vztah se odstraní a související prvky na této role budou odstraněny.  
   
    Můžete zobrazit také **šíří odstranit** možnost **podrobnosti DSL** okna. Vyberte doménové třídy a v okně podrobností DSL, otevřete **chování odstranění** stránku kliknutím na tlačítko na okraji okna. **Rozšířit** opačné role každé relaci se zobrazí možnost. **Odstranit styl** sloupec označuje, zda **rozšířit** na jeho výchozí nastavení je možnost, ale nemá žádný účinek samostatné.  
   
@@ -79,14 +79,14 @@ Odstranění elementu obvykle způsobí, že související prvky také odstranit
 > [!NOTE]
 >  Přidat programový kód do definice DSL vytvořením samostatném souboru kódu v **Dsl** projektu a zapsat Částečná definice pro rozšíření třídy ve složce vygenerovaném kódu. Další informace najdete v tématu [psaní kódu pro úpravu jazyka specifického pro doménu specifického](../modeling/writing-code-to-customise-a-domain-specific-language.md).  
   
-##  <a name="closure"></a> Definování uzavření Delete  
+## <a name="closure"></a> Definování uzavření Delete  
  Operace odstranění používá třídu _YourModel_**DeleteClosure** určit prvky, které chcete odstranit, zadaný počáteční výběr. Volá `ShouldVisitRelationship()` a `ShouldVisitRolePlayer()` opakovaně, procházení grafu relací. Můžete také přepsat tyto metody. ShouldVisitRolePlayer je součástí identity odkazu a element v jedné z rolí na odkaz. Měla by vrátit jednu z následujících hodnot:  
   
--   **VisitorFilterResult.Yes**– element by se měla odstranit a pokračovat walker vyzkoušet další odkazy na elementu.  
+- **VisitorFilterResult.Yes**– element by se měla odstranit a pokračovat walker vyzkoušet další odkazy na elementu.  
   
--   **VisitorFilterResult.DoNotCare** – prvek nesmí odstranit, pokud jiný dotaz, odpoví, že je nutné ji odstranit.  
+- **VisitorFilterResult.DoNotCare** – prvek nesmí odstranit, pokud jiný dotaz, odpoví, že je nutné ji odstranit.  
   
--   **VisitorFilterResult.Never** – prvek nesmí být odstraněno, i v případě, že jiný dotaz odpovědi **Ano**, a walker, neměli by zkoušet elementu je další odkazy.  
+- **VisitorFilterResult.Never** – prvek nesmí být odstraněno, i v případě, že jiný dotaz odpovědi **Ano**, a walker, neměli by zkoušet elementu je další odkazy.  
   
 ```  
 // When a musician is deleted, delete their albums with a low rating.  
@@ -132,7 +132,7 @@ partial class MusicLibDeleteClosure
   
  Ale postup předpokládá, že odstranění ovlivňuje pouze jeho okolím v grafu relací: pomocí této metody nelze odstranit prvek v jiné části modelu. Jej nelze použít, pokud chcete přidat prvky nebo provést další změny v reakci na odstranění.  
   
-##  <a name="ondeleting"></a> Pomocí OnDeleting a OnDeleted  
+## <a name="ondeleting"></a> Pomocí OnDeleting a OnDeleted  
  Můžete přepsat `OnDeleting()` nebo `OnDeleted()` buď v doménové třídy, nebo doménového vztahu.  
   
 1. <xref:Microsoft.VisualStudio.Modeling.ModelElement.OnDeleting%2A> je volána element blížící se neodstraní, ale před jeho vztahy byl odpojen. Je stále navigaci do a z dalších prvků a je pořád ještě v `store.ElementDirectory`.  
@@ -199,16 +199,16 @@ partial class Artist
   
  Při provádění <xref:Microsoft.VisualStudio.Modeling.ModelElement.Delete%2A> na element, bude volána OnDeleting a OnDeleted. Tyto metody jsou vždy provádí vložené – to znamená, bezprostředně před a po jeho skutečné odstranění. Pokud váš kód odstraní nejmíň dva elementy, OnDeleting a OnDeleted bude volána v alternace všem z nich pak.  
   
-##  <a name="rules"></a> Odstranění pravidla a události  
+## <a name="rules"></a> Odstranění pravidla a události  
  Jako alternativu k obslužné rutiny elementy OnDelete můžete definovat pravidla odstranění a odstranění události.  
   
-1.  **Odstraňuje se** a **odstranit** pravidla se spouštějí jenom v rámci transakce a ne v k vrácení zpět nebo opakování akce. Můžete nastavit, je zařadí do fronty ke spuštění na konci transakce, ve kterém se provádí odstranění. Odstranění pravidla jsou vždy spuštěn dříve, než všechny odstraněné pravidla, které jsou ve frontě.  
+1. **Odstraňuje se** a **odstranit** pravidla se spouštějí jenom v rámci transakce a ne v k vrácení zpět nebo opakování akce. Můžete nastavit, je zařadí do fronty ke spuštění na konci transakce, ve kterém se provádí odstranění. Odstranění pravidla jsou vždy spuštěn dříve, než všechny odstraněné pravidla, které jsou ve frontě.  
   
      Použití pravidla šířící změny, které mají vliv pouze na prvky v úložišti, včetně vztahů, elementy diagramu a jejich vlastnosti. Obvykle odstranění pravidlo se používá k odstranění rozšíření a odstranit pravidlo se používá k vytvoření nahrazení elementů a vztahů.  
   
      Další informace najdete v tématu [pravidla šíření změn v rámci the Model](../modeling/rules-propagate-changes-within-the-model.md).  
   
-2.  **Odstranit** úložiště událostí je vyvolána na konci transakce a je volána po provedení vrácení zpět nebo opakování akce. Proto ji můžete použít rozšíření odstranění objektů mimo úložiště, například soubory, položky databáze nebo jiných objektů nástroje [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+2. **Odstranit** úložiště událostí je vyvolána na konci transakce a je volána po provedení vrácení zpět nebo opakování akce. Proto ji můžete použít rozšíření odstranění objektů mimo úložiště, například soubory, položky databáze nebo jiných objektů nástroje [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
      Další informace najdete v tématu [obslužné rutiny rozšíření změny mimo the Model událostí](../modeling/event-handlers-propagate-changes-outside-the-model.md).  
   
@@ -289,7 +289,7 @@ partial class NestedShapesSampleDocData
   
 ```  
   
-##  <a name="unmerge"></a> Zrušit sloučení  
+## <a name="unmerge"></a> Zrušit sloučení  
  Operace, která připojí podřízený element svého nadřazeného objektu je volána *sloučení*. Nastane při nového elementu nebo skupiny prvků je vytvořena z panelu nástrojů nebo přesunut z jiné části modelu nebo zkopírovaných z schránky. A také vytváří vztah obsažení mezi nadřazenou a její nové podřízené operaci sloučení také nastavit další relace, vytvořte pomocné prvky a nastavit hodnoty vlastností v prvcích. Operace sloučení je zapouzdřena v elementu sloučení – direktiva (EMD).  
   
  EMD zapouzdřuje také doplňující *oddělit* nebo `MergeDisconnect` operace. Pokud máte cluster prvků, který byl vytvořen pomocí sloučení, doporučuje se použít přidruženého oddělit odebrat element z něj, pokud chcete nechat zbývající prvky v konzistentním stavu. Operace oddělit bude obvykle pomocí technik popsaných v předchozích částech.  

@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3e88fbc023d495bb4fbad795d2013a9fe3a5c883
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2c757f2ee7dc69e53f492d4dfa37c2ca95b4af70
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54941230"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100583"
 ---
 # <a name="create-a-settings-category"></a>Vytvoření kategorie nastavení
 
@@ -33,11 +33,11 @@ Chcete-li spustit Tento názorný postup, musíte nejdřív dokončit první č�
 
 ### <a name="to-create-a-settings-category"></a>Vytvoření kategorie nastavení
 
-1.  Dokončení [vytvoření stránky možnosti](../extensibility/creating-an-options-page.md).
+1. Dokončení [vytvoření stránky možnosti](../extensibility/creating-an-options-page.md).
 
-2.  Otevřít *VSPackage.resx* a přidejte tyto tři řetězcové prostředky:
+2. Otevřít *VSPackage.resx* a přidejte tyto tři řetězcové prostředky:
 
-    |Název|Hodnota|
+    |Název|Value|
     |----------|-----------|
     |106|Moje kategorie|
     |107|Moje nastavení|
@@ -48,7 +48,7 @@ Chcete-li spustit Tento názorný postup, musíte nejdřív dokončit první č�
     > [!NOTE]
     >  Z těchto tří pouze na název kategorie se nezobrazují v **nastavení importu a exportu** průvodce.
 
-3.  V *MyToolsOptionsPackage.cs*, přidejte `float` vlastnost s názvem `OptionFloat` k `OptionPageGrid` třídy, jak je znázorněno v následujícím příkladu.
+3. V *MyToolsOptionsPackage.cs*, přidejte `float` vlastnost s názvem `OptionFloat` k `OptionPageGrid` třídy, jak je znázorněno v následujícím příkladu.
 
     ```csharp
     public class OptionPageGrid : DialogPage
@@ -78,39 +78,39 @@ Chcete-li spustit Tento názorný postup, musíte nejdřív dokončit první č�
     > [!NOTE]
     >  `OptionPageGrid` Kategorii s názvem "My kategorie" nyní se skládá ze dvou vlastností `OptionInteger` a `OptionFloat`.
 
-4.  Přidat <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> k `MyToolsOptionsPackage` třídy a poskytněte CategoryName "My kategorie", jí ObjectName "Nastavení" a isToolsOptionPage nastavena na hodnotu true. Nastavení categoryResourceID, objectNameResourceID a DescriptionResourceID na odpovídající prostředek řetězce, který ID vytvořili dříve.
+4. Přidat <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> k `MyToolsOptionsPackage` třídy a poskytněte CategoryName "My kategorie", jí ObjectName "Nastavení" a isToolsOptionPage nastavena na hodnotu true. Nastavení categoryResourceID, objectNameResourceID a DescriptionResourceID na odpovídající prostředek řetězce, který ID vytvořili dříve.
 
     ```csharp
     [ProvideProfileAttribute(typeof(OptionPageGrid),
         "My Category", "My Settings", 106, 107, isToolsOptionPage:true, DescriptionResourceID = 108)]
     ```
 
-5.  Sestavte projekt a spusťte ladění. V experimentální instanci byste měli vidět, který **stránku mřížky** nyní obsahuje hodnoty celé číslo a plovoucí desetinnou čárkou.
+5. Sestavte projekt a spusťte ladění. V experimentální instanci byste měli vidět, který **stránku mřížky** nyní obsahuje hodnoty celé číslo a plovoucí desetinnou čárkou.
 
 ## <a name="examine-the-settings-file"></a>Zkontrolujte soubor nastavení
  V této části exportovat do souboru nastavení hodnot vlastností kategorie. Zkontrolujte v souboru a poté importovat hodnoty zpět do kategorie vlastnosti.
 
-1.  Spusťte projekt v režimu ladění stisknutím kombinace kláves **F5**. Otevře se experimentální instance.
+1. Spusťte projekt v režimu ladění stisknutím kombinace kláves **F5**. Otevře se experimentální instance.
 
-2.  Otevřít **nástroje** > **možnosti** dialogového okna.
+2. Otevřít **nástroje** > **možnosti** dialogového okna.
 
-3.  V zobrazení stromu v levém podokně rozbalte **kategorie Mé** a potom klikněte na tlačítko **stránku mřížky**.
+3. V zobrazení stromu v levém podokně rozbalte **kategorie Mé** a potom klikněte na tlačítko **stránku mřížky**.
 
-4.  Změňte hodnotu vlastnosti **OptionFloat** k 3.1416 a **OptionInteger** do 12. Klikněte na **OK**.
+4. Změňte hodnotu vlastnosti **OptionFloat** k 3.1416 a **OptionInteger** do 12. Klikněte na **OK**.
 
-5.  Na **nástroje** nabídky, klikněte na tlačítko **nastavení importu a exportu**.
+5. Na **nástroje** nabídky, klikněte na tlačítko **nastavení importu a exportu**.
 
      **Nastavení importu a exportu** průvodce se zobrazí.
 
-6.  Ujistěte se, že **exportovat vybrané nastavení prostředí** je vybrána a potom klikněte na tlačítko **Další**.
+6. Ujistěte se, že **exportovat vybrané nastavení prostředí** je vybrána a potom klikněte na tlačítko **Další**.
 
      **Zvolte nastavení pro Export** se zobrazí stránka.
 
-7.  Klikněte na tlačítko **nastavení**.
+7. Klikněte na tlačítko **nastavení**.
 
      **Popis** změny **OptionInteger a OptionFloat**.
 
-8.  Ujistěte se, že **má nastavení** je jediná kategorie, která je vybrána a potom klikněte na tlačítko **Další**.
+8. Ujistěte se, že **má nastavení** je jediná kategorie, která je vybrána a potom klikněte na tlačítko **Další**.
 
      **Názvu souboru nastavení** se zobrazí stránka.
 

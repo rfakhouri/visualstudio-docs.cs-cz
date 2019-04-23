@@ -8,12 +8,12 @@ ms.assetid: c730edb6-5099-4c16-85a8-08def09f1455
 caps.latest.revision: 4
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 796d5f3f233310157b0784e213b81237e767055b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1da992ebdb5c3d4e0381cdc388dcf6ad5d2af66c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54786264"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091145"
 ---
 # <a name="installing-the-visual-studio-sdk"></a>Instalace sady Visual Studio SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,26 +26,26 @@ Spouští se v sadě Visual Studio 2015, nenainstalujete sadu Visual Studio SDK 
 > [!NOTE]
 >  V spustitelného souboru instalace sady Visual Studio SDK nazývá **Visual Studio Extensibility Tools**.  
   
-1.  Spusťte instalaci sady Visual Studio 2015. Můžete instalaci libovolné edice sady Visual Studio s výjimkou Express.  
+1. Spusťte instalaci sady Visual Studio 2015. Můžete instalaci libovolné edice sady Visual Studio s výjimkou Express.  
   
-2.  Na první obrazovce vyberte **vlastní**, nikoli **výchozí**. Klikněte na **Další**.  
+2. Na první obrazovce vyberte **vlastní**, nikoli **výchozí**. Klikněte na **Další**.  
   
-3.  Měli byste vidět stromové zobrazení vlastní funkce. Otevřít **běžné nástroje**. Měli byste vidět **Visual Studio Extensibility Tools** .  
+3. Měli byste vidět stromové zobrazení vlastní funkce. Otevřít **běžné nástroje**. Měli byste vidět **Visual Studio Extensibility Tools** .  
   
      ![VSSDKInstall](../extensibility/media/vssdkinstall.png "VSSDKInstall")  
   
-4.  Zkontrolujte **Visual Studio Extensibility Tools** , pak klikněte na tlačítko **Další** a pokračovat v instalaci.  
+4. Zkontrolujte **Visual Studio Extensibility Tools** , pak klikněte na tlačítko **Další** a pokračovat v instalaci.  
   
 ## <a name="installing-the-visual-studio-sdk-after-installing-visual-studio"></a>Instalace sady Visual Studio SDK po instalaci sady Visual Studio  
  Pokud se rozhodnete nainstalovat Visual Studio SDK po dokončení instalace sady Visual Studio, postupujte podle následujícího postupu:  
   
-1.  Přejděte na **ovládací panely / programy nebo programy a funkce**a vyhledejte **Visual Studio 2015**. Můžete nainstalovat sadu Visual Studio SDK pro všechny edice kromě Express sady Visual Studio 2015.  
+1. Přejděte na **ovládací panely / programy nebo programy a funkce**a vyhledejte **Visual Studio 2015**. Můžete nainstalovat sadu Visual Studio SDK pro všechny edice kromě Express sady Visual Studio 2015.  
   
-2.  Klikněte pravým tlačítkem na **Visual Studio 2015**a potom klikněte na tlačítko **změnu**. Zobrazí se stránka instalace.  
+2. Klikněte pravým tlačítkem na **Visual Studio 2015**a potom klikněte na tlačítko **změnu**. Zobrazí se stránka instalace.  
   
-3.  Postupujte stejným způsobem jako v **instalace sady Visual Studio SDK jako součást Visual Studio Installation** výše.  
+3. Postupujte stejným způsobem jako v **instalace sady Visual Studio SDK jako součást Visual Studio Installation** výše.  
   
-4.  Klikněte na tlačítko **Visual Studio Extensibility Tools** odkaz a nainstalujte sadu Visual Studio SDK.  
+4. Klikněte na tlačítko **Visual Studio Extensibility Tools** odkaz a nainstalujte sadu Visual Studio SDK.  
   
 ## <a name="installing-the-visual-studio-sdk-from-a-solution"></a>Instalace sady Visual Studio SDK v rámci řešení  
  Pokud otevřete řešení s projektem rozšíření bez první instalace VSSDK vyzve čárku zvýrazněné informace výše v Průzkumníku řešení. Měl by vypadat nějak takto:  

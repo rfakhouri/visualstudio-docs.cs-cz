@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d35f8486ae85f0933d30b9587f2fc59652071a85
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: ffab5f43bf026bd410c72694716148d4d368c69a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56626723"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110528"
 ---
 # <a name="manifest-from-resources"></a>Manifest z prostředků
 Manifest z prostředků nástroje je konzolová aplikace, která přebírá seznam prostředků obrázků (.png nebo .xaml soubory) a vygeneruje .imagemanifest soubor, který umožňuje tyto Image se použije ve službě Visual Studio bitové kopie. Kromě toho tento nástroj lze přidat Image do existujícího .imagemanifest. Tento nástroj je užitečný pro přidání podporu vysokých hodnot DPI a motivy pro bitové kopie do rozšíření aplikace Visual Studio. Soubor generovaný .imagemanifest by součástí a nasazen jako součást rozšíření sady Visual Studio (VSIX).
@@ -43,25 +43,25 @@ Manifest z prostředků nástroje je konzolová aplikace, která přebírá sezn
 
  **Příklady**
 
--   ManifestFromResources /resources:D:\Images /assembly:My.Assembly.Name /isNative
+- ManifestFromResources /resources:D:\Images /assembly:My.Assembly.Name /isNative
 
--   ManifestFromResources /resources:D:\Images\Image1.png;D:\Images\Image1.xaml /assembly:My.Assembly.Name /manifest:MyImageManifest.imagemanifest
+- ManifestFromResources /resources:D:\Images\Image1.png;D:\Images\Image1.xaml /assembly:My.Assembly.Name /manifest:MyImageManifest.imagemanifest
 
--   ManifestFromResources /resources:D:\Images\Image1.png;D:\Images\Image1.xaml /assembly:My.Assembly.Name /guidName:MyImages /newGuids /newIds
+- ManifestFromResources /resources:D:\Images\Image1.png;D:\Images\Image1.xaml /assembly:My.Assembly.Name /guidName:MyImages /newGuids /newIds
 
 ## <a name="notes"></a>Poznámky
 
--   Nástroj podporuje jenom soubory ve formátu PNG a .xaml. U jiných typů souboru bitové kopie nebo se budou ignorovat. Vygeneruje se upozornění pro všechny nepodporované typy při analýze prostředky. Pokud ne, podporovány bitové kopie se nacházejí dokončení nástroj Analýza kódu prostředky, bude vygenerována chyba
+- Nástroj podporuje jenom soubory ve formátu PNG a .xaml. U jiných typů souboru bitové kopie nebo se budou ignorovat. Vygeneruje se upozornění pro všechny nepodporované typy při analýze prostředky. Pokud ne, podporovány bitové kopie se nacházejí dokončení nástroj Analýza kódu prostředky, bude vygenerována chyba
 
--   Pomocí následujících navrhované formátu pro obrázky ve formátu PNG, nástroj nastaví hodnota velikosti/dimenze ve formátu PNG velikosti určený formát i v případě, že se liší od skutečné velikosti na obrázku.
+- Pomocí následujících navrhované formátu pro obrázky ve formátu PNG, nástroj nastaví hodnota velikosti/dimenze ve formátu PNG velikosti určený formát i v případě, že se liší od skutečné velikosti na obrázku.
 
--   Lze vynechat šířky a výšky formátu pro obrázky ve formátu PNG, ale nástroj číst skutečné šířky a výšky na obrázku, který se použijí pro hodnotu velikosti/dimenze na obrázku.
+- Lze vynechat šířky a výšky formátu pro obrázky ve formátu PNG, ale nástroj číst skutečné šířky a výšky na obrázku, který se použijí pro hodnotu velikosti/dimenze na obrázku.
 
--   Spuštění tohoto nástroje na stejné obrázku více než jednou pro stejný .imagemanifest způsobí duplicitní položky manifestu, protože se nástroj pokusí rozdělení obrázku na samostatné obrázky a přidat do existující manifest.
+- Spuštění tohoto nástroje na stejné obrázku více než jednou pro stejný .imagemanifest způsobí duplicitní položky manifestu, protože se nástroj pokusí rozdělení obrázku na samostatné obrázky a přidat do existující manifest.
 
--   Sloučení (vynechání /newGuids nebo /newIds) lze provádět pouze pro nástroj vygeneruje manifesty. Manifestů, které jste přizpůsobili nebo vygenerované pomocí jiným způsobem nemusí správně sloučit.
+- Sloučení (vynechání /newGuids nebo /newIds) lze provádět pouze pro nástroj vygeneruje manifesty. Manifestů, které jste přizpůsobili nebo vygenerované pomocí jiným způsobem nemusí správně sloučit.
 
--   Manifesty, které jsou generovány pro nativní sestavení možná bude nutné ručně upravit po vygenerování aby symboly ID odpovídat ID ze souboru .rc nativní sestavení prostředků.
+- Manifesty, které jsou generovány pro nativní sestavení možná bude nutné ručně upravit po vygenerování aby symboly ID odpovídat ID ze souboru .rc nativní sestavení prostředků.
 
 ## <a name="sample-output"></a>Vzorový výstup
  **Jednoduchý obrázek manifestu**

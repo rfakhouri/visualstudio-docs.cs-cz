@@ -13,27 +13,27 @@ helpviewer_keywords:
 ms.assetid: a7536f82-afd7-4894-9a60-84307fb92b7e
 caps.latest.revision: 13
 manager: jillfra
-ms.openlocfilehash: 1ef6984a21099bfad013ef97534d9984fa81d10d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6296993d3a1f5039024556f09b721daa82ca4f53
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54767542"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089260"
 ---
 # <a name="announcing-property-window-selection-tracking"></a>Oznamujeme vydání výběr vlastností okna Sledování
 Pokud budete chtít pracovat **vlastnosti** okno nebo **vlastnost** stránek, například formuláře, text nebo výběr, pro kterou chcete zobrazit vlastnosti, je nutné úplné znalosti toho, jak můžete koordinovat výběru. Například musíte vědět, jestli máte výběru jednoho nebo více výběrů. Bude potřeba oznámit typ vašeho výběru (jeden nebo více) pro integrované vývojové prostředí s využitím <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection> rozhraní. Toto rozhraní poskytuje informace vyžadované **vlastnosti** okna.  
   
 ### <a name="to-announce-selection-to-the-environment"></a>Oznamujeme výběr prostředí  
   
-1.  Volání `QueryInterface` pro <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider>.  
+1. Volání `QueryInterface` pro <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider>.  
   
-    1.  K tomuto účelu použijte ukazatel lokality předána do zobrazení při vytvoření rovnou uložil.  
+    1. K tomuto účelu použijte ukazatel lokality předána do zobrazení při vytvoření rovnou uložil.  
   
-    2.  Volání `QueryService` ze zobrazení pro `SID_STrackSelection` služby.  
+    2. Volání `QueryService` ze zobrazení pro `SID_STrackSelection` služby.  
   
          Vrátí ukazatel na <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection>.  
   
-2.  Volání <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection.OnSelectChange%2A> pokaždé, když se změní výběr a předáte ukazatel na objekt, který implementuje <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>.  
+2. Volání <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection.OnSelectChange%2A> pokaždé, když se změní výběr a předáte ukazatel na objekt, který implementuje <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>.  
   
      Objekt kontejneru výběru můžete použít jeden nebo více výběrů a obsahuje informace o výběru v `IDispatch` objektu. Volání <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection.OnSelectChange%2A> metoda upozorní **vlastnosti** okno, které se změní výběr. **Vlastnosti** okno použije objekty na <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> k určení, jestli mají došlo k jedné nebo více výběrů a jaké jsou možnosti skutečný objekt.  
   

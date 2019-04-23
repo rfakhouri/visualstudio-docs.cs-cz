@@ -8,12 +8,12 @@ ms.assetid: c8d9c15e-ce3c-401a-86ec-c5c124a239d8
 caps.latest.revision: 26
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e8d7f1bf475dca7ed0e06e4b3ebb045b0513d5b7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 827f7b136fb5b9c8de96145e1d8edba7b46b3f72
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54799294"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114662"
 ---
 # <a name="test-windows-uwp-and-81-store-apps-with-coded-ui-tests"></a>Testování aplikace 8.1 Store a Windows UWP pomocí programových testů uživatelského rozhraní
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ Pomocí tohoto průvodce použijte k vytvoření testů uživatelského rozhran�
   
 ## <a name="create-a-simple-windows-store-app"></a>Vytvoření jednoduché aplikace pro Windows Store  
   
-1.  Pokud chcete spustit programové testy UI pro aplikace pro Windows Store založených na XAML, je nutné [nastavit jedinečnou vlastnost automatizace, který identifikuje každý ovládací prvek](../test/set-a-unique-automation-property-for-windows-store-controls-for-testing.md).  
+1. Pokud chcete spustit programové testy UI pro aplikace pro Windows Store založených na XAML, je nutné [nastavit jedinečnou vlastnost automatizace, který identifikuje každý ovládací prvek](../test/set-a-unique-automation-property-for-windows-store-controls-for-testing.md).  
   
      Na **nástroje** nabídky, přejděte k **možnosti** a klikněte na tlačítko **textový Editor**, pak **XAML**a nakonec **různé** .  
   
@@ -30,15 +30,15 @@ Pomocí tohoto průvodce použijte k vytvoření testů uživatelského rozhran�
   
      ![XAML různé možnosti](../test/media/cuit-windowsstoreapp-b.png "CUIT_WindowsStoreApp_B")  
   
-2.  Vytvořte nový projekt pro prázdnou XAML na základě aplikace pro Windows Store pomocí šablony Visual C# nebo Visual Basic.  
+2. Vytvořte nový projekt pro prázdnou XAML na základě aplikace pro Windows Store pomocí šablony Visual C# nebo Visual Basic.  
   
      ![Vytvořit prázdnou aplikaci pro Windows Store &#40;XAML&#41;](../test/media/cuit-windowsstoreapp-newproject-blankstoreapp.png "CUIT_WindowsStoreApp_NewProject_BlankStoreApp")  
   
-3.  V Průzkumníku řešení otevřete MainPage.xaml. Z panelu nástrojů přetáhněte ovládací prvek button a ovládací prvek textbox na návrhovou plochu.  
+3. V Průzkumníku řešení otevřete MainPage.xaml. Z panelu nástrojů přetáhněte ovládací prvek button a ovládací prvek textbox na návrhovou plochu.  
   
      ![Navrhujte aplikace Windows Store](../test/media/cuit-windowsstoreapp-design.png "CUIT_WindowsStoreApp_Design")  
   
-4.  Poklepejte na ovládací prvek tlačítko a přidejte následující kód:  
+4. Poklepejte na ovládací prvek tlačítko a přidejte následující kód:  
   
     ```csharp  
     private void button_Click_1(object sender, RoutedEventArgs e)  
@@ -58,7 +58,7 @@ Pomocí tohoto průvodce použijte k vytvoření testů uživatelského rozhran�
     End Class  
     ```  
   
-5.  Stisknutím klávesy F5 spusťte aplikaci Windows Store.  
+5. Stisknutím klávesy F5 spusťte aplikaci Windows Store.  
   
 ## <a name="create-and-run-a-coded-ui-test-for-the-windows-store-app"></a>Vytvoření a spuštění programového testu UI pro aplikace Windows Store  
 
@@ -294,15 +294,15 @@ Pomocí tohoto průvodce použijte k vytvoření testů uživatelského rozhran�
   
 ## <a name="q--a"></a>Dotazy a odpovědi  
   
--   **DOTAZ: Proč nevidím možnost zaznamenat Moje programový test uživatelského rozhraní v generování kódu pro dialogové okno programový Test uživatelského rozhraní?**  
+- **DOTAZ: Proč nevidím možnost zaznamenat Moje programový test uživatelského rozhraní v generování kódu pro dialogové okno programový Test uživatelského rozhraní?**  
   
      **A**: Pro aplikace Windows Store není podporována možnost záznamu.  
   
--   **DOTAZ: Můžete vytvořit programový test uživatelského rozhraní pro mé aplikace Windows Store založené na WinJS?**  
+- **DOTAZ: Můžete vytvořit programový test uživatelského rozhraní pro mé aplikace Windows Store založené na WinJS?**  
   
      **A**: Ne, jsou podporovány pouze XAML na základě aplikace.  
   
--   **DOTAZ: Můžete vytvořit kódované testy uživatelského rozhraní pro mé aplikace Windows Store v systému, na kterém neběží Windows 8.1 nebo Windows 10?**  
+- **DOTAZ: Můžete vytvořit kódované testy uživatelského rozhraní pro mé aplikace Windows Store v systému, na kterém neběží Windows 8.1 nebo Windows 10?**  
   
      **A**: Ne, šablon projekt programového testu uživatelského rozhraní jsou dostupné jenom na Windows 8.1 a Windows 10. Pokud chcete vytvořit automatizace pro aplikace univerzální platformy Windows (UPW), budete potřebovat Windows 10.  
 

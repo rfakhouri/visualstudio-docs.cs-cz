@@ -17,12 +17,12 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a0652f8dbb1acfec111dcc587f3ce4ba2496eb4c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 9af4507d7ccd604f82aae675bf87d36c0b039b26
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54773951"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110463"
 ---
 # <a name="how-to-set-a-security-zone-for-a-clickonce-application"></a>Postupy: Nastavení zóny zabezpečení pro aplikaci ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,17 +33,17 @@ Při nastavování oprávnění zabezpečení pro aplikaci ClickOnce přístup k
   
 ### <a name="to-set-a-security-zone"></a>Do nastavení zóny zabezpečení  
   
-1.  S projekt vybraný v **Průzkumníka řešení**na **projektu** klikněte na nabídku **vlastnosti**.  
+1. S projekt vybraný v **Průzkumníka řešení**na **projektu** klikněte na nabídku **vlastnosti**.  
   
-2.  Klikněte na tlačítko **zabezpečení** kartu.  
+2. Klikněte na tlačítko **zabezpečení** kartu.  
   
-3.  Vyberte **povolit nastavení zabezpečení ClickOnce** zaškrtávací políčko.  
+3. Vyberte **povolit nastavení zabezpečení ClickOnce** zaškrtávací políčko.  
   
-4.  Vyberte **Toto je aplikace s částečnou důvěryhodností** přepínač.  
+4. Vyberte **Toto je aplikace s částečnou důvěryhodností** přepínač.  
   
      Ovládací prvky **oprávnění zabezpečení ClickOnce** oddílu jsou povolené.  
   
-5.  V **vaše aplikace bude provedena instalace ze zóny** rozevírací seznam, vyberte zónu zabezpečení.  
+5. V **vaše aplikace bude provedena instalace ze zóny** rozevírací seznam, vyberte zónu zabezpečení.  
   
 ## <a name="see-also"></a>Viz také  
  [Postupy: Nastavení vlastních oprávnění pro aplikaci ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   

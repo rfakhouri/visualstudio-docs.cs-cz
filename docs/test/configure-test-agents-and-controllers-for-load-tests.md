@@ -7,12 +7,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 16686d3900b3db2656492f5049590eeff47eb93a
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: fca2436b99f97e18801f8adffdc27fd348fc8123
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796346"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60101948"
 ---
 # <a name="configure-test-agents-and-test-controllers-for-running-load-tests"></a>Konfigurace testovacích agentů a testovací kontrolery pro spouštění zátěžových testů
 
@@ -27,11 +27,11 @@ Visual Studio může generovat simulované zatížení pro vaši aplikaci s vyu�
 
 Architektura simulace zátěže se skládá z klientské aplikace Visual Studio, testovacího kontroléru a testovacích agentů.
 
--   Klient se používá pro vývoj a spouštění testů a zobrazování jejich výsledků.
+- Klient se používá pro vývoj a spouštění testů a zobrazování jejich výsledků.
 
--   Testovací kontrolér slouží ke správě testovacích agentů a shromažďování výsledků testu.
+- Testovací kontrolér slouží ke správě testovacích agentů a shromažďování výsledků testu.
 
--   Testovací agenty se používají ke spouštění testů a shromažďování dat včetně systémových informací a dat profilování ASP.NET definovaných v nastavení testu.
+- Testovací agenty se používají ke spouštění testů a shromažďování dat včetně systémových informací a dat profilování ASP.NET definovaných v nastavení testu.
 
 Tato architektura přináší následující výhody:
 

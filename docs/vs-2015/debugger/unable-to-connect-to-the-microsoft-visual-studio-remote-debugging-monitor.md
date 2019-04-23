@@ -16,12 +16,12 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e5e011ccd047551e7ea6cf1426b4118c3ad879f4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f03936b9404339e3ad46e30ef92286da360323bb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54776591"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085763"
 ---
 # <a name="unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor"></a>Nepodařilo se připojit ke sledování Microsoft Visual Studio Remote Debugging Monitor.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,11 +38,11 @@ Tato chybová zpráva se zobrazí, když zadáte neplatný název v aplikaci Vis
   
 ## <a name="to-correct-this-error"></a>Oprava této chyby  
   
--   Ujistěte se, že je Visual Studio Remote Debugging Monitor na vzdáleném počítači nainstalovaná a spuštěná. Informace o vzdáleného ladicího programu a její instalaci najdete v tématu [vzdálené ladění](../debugger/remote-debugging.md).  
+- Ujistěte se, že je Visual Studio Remote Debugging Monitor na vzdáleném počítači nainstalovaná a spuštěná. Informace o vzdáleného ladicího programu a její instalaci najdete v tématu [vzdálené ladění](../debugger/remote-debugging.md).  
   
--   V sadě Visual Studio, podívejte se na vlastnosti projektu (**projekt / vlastnosti / ladění**). Ujistěte se, **název vzdáleného serveru** je správná.  
+- V sadě Visual Studio, podívejte se na vlastnosti projektu (**projekt / vlastnosti / ladění**). Ujistěte se, **název vzdáleného serveru** je správná.  
   
--   Ověřte, že vzdálený počítač je přístupný v síti.  
+- Ověřte, že vzdálený počítač je přístupný v síti.  
   
 ## <a name="the-remote-machine-is-not-reachable"></a>Vzdálený počítač není dostupný  
  Zkuste [ping](https://technet.microsoft.com/library/ee624059\(v=ws.10\).aspx) vzdálený počítač. Pokud je odpověď na příkaz ping, nástroje pro vzdálenou nebude možné se připojit buď. Akci restartování vzdáleném počítači a v opačném případě se ujistěte, zda je správně nakonfigurován v síti.  
@@ -58,13 +58,13 @@ Tato chybová zpráva se zobrazí, když zadáte neplatný název v aplikaci Vis
 ## <a name="the-remote-debugger-is-running-under-a-different-user-account"></a>Vzdálený ladicí program je spuštěn pod účtem jiného uživatele  
  Tento problém můžete vyřešit jedním z následujících způsobů:  
   
--   Můžete zastavit vzdáleného ladicího programu a restartujte ji pomocí účtu, který používáte v místním počítači.  
+- Můžete zastavit vzdáleného ladicího programu a restartujte ji pomocí účtu, který používáte v místním počítači.  
   
--   Vzdálený ladicí program lze spustit z příkazového řádku pomocí **/ allow \<uživatelské jméno >** parametr: `msvsmon /allow <username@computer>`  
+- Vzdálený ladicí program lze spustit z příkazového řádku pomocí **/ allow \<uživatelské jméno >** parametr: `msvsmon /allow <username@computer>`  
   
--   Je-li přidat uživatele na oprávnění vzdáleného ladicího programu (v okně vzdáleného ladicího programu **nástroje / oprávnění**).  
+- Je-li přidat uživatele na oprávnění vzdáleného ladicího programu (v okně vzdáleného ladicího programu **nástroje / oprávnění**).  
   
--   Pokud nemůžete použít metody v předchozích krocích, můžete povolit všem uživatelům provádět vzdálené ladění. V okně vzdáleného ladicího programu, pokračujte **Tools/Options** dialogového okna. Když vyberete **bez ověřování**, můžete zkontrolovat **dovolit ladění jakémukoliv uživateli**. Tuto možnost byste však použít jenom v případě, že máte žádný výběr nebo pokud jste v privátní síti.  
+- Pokud nemůžete použít metody v předchozích krocích, můžete povolit všem uživatelům provádět vzdálené ladění. V okně vzdáleného ladicího programu, pokračujte **Tools/Options** dialogového okna. Když vyberete **bez ověřování**, můžete zkontrolovat **dovolit ladění jakémukoliv uživateli**. Tuto možnost byste však použít jenom v případě, že máte žádný výběr nebo pokud jste v privátní síti.  
   
 ## <a name="the-firewall-on-the-remote-machine-doesnt-allow-incoming-connections-to-the-remote-debugger"></a>Brány firewall na vzdáleném počítači nebude povolovat příchozí připojení vzdáleného ladicího programu  
  Brány firewall na počítači aplikace Visual Studio a brány firewall na vzdáleném počítači musí být nakonfigurovány umožňujícím komunikaci mezi Visual Studio a vzdálený ladicí program. Informace o portech používá vzdálený ladicí program najdete v tématu [přiřazení portů vzdáleného ladicího programu](../debugger/remote-debugger-port-assignments.md). Informace o konfiguraci brány Windows firewall najdete v tématu [konfigurace brány Windows Firewall pro vzdálené ladění](../debugger/configure-the-windows-firewall-for-remote-debugging.md).  

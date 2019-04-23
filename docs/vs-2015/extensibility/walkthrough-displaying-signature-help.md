@@ -1,5 +1,5 @@
 ---
-title: 'Průvodce: Zobrazení vyhrazené nápovědy | Dokumentace Microsoftu'
+title: 'Návod: Zobrazení vyhrazené nápovědy | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -10,14 +10,14 @@ ms.assetid: 4a6a884b-5730-4b54-9264-99684f5b523c
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8a5f62ace3126ee35f47a90c15e6183690786954
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 280b5b517089ad9e5b38cb00dc9b14c68253d1e6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54781221"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108155"
 ---
-# <a name="walkthrough-displaying-signature-help"></a>Průvodce: Zobrazení vyhrazené nápovědy
+# <a name="walkthrough-displaying-signature-help"></a>Návod: Zobrazení vyhrazené nápovědy
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Signaturám (označované také jako *informace o parametru*) zobrazí v popisku podpis metody, když uživatel zadá znak start seznamu parametrů (obvykle Levá závorka). Jako parametr a oddělovač parametr (obvykle čárku) jsou zadány, popisek se aktualizuje a zobrazí další parametr tučným písmem. Pomoc při podpisu můžete definovat v rámci služby jazyka, nebo můžete definovat vlastní název souboru příponu a obsah zadejte a zobrazit nápovědu k podpisu pro právě tento typ, nebo můžete zobrazit pomoc při podpisu pro existující typ obsahu (například "text"). Tento návod ukazuje, jak zobrazit nápovědu k podpisu pro typ obsahu "text".  
@@ -33,13 +33,13 @@ Signaturám (označované také jako *informace o parametru*) zobrazí v popisku
   
 #### <a name="to-create-a-mef-project"></a>Chcete-li vytvořit projekt rozhraní MEF  
   
-1.  Vytvořte projekt VSIX C#. (V **nový projekt** dialogového okna, vyberte **Visual C# / rozšíření**, pak **projekt VSIX**.) Pojmenujte řešení `SignatureHelpTest`.  
+1. Vytvořte projekt VSIX C#. (V **nový projekt** dialogového okna, vyberte **Visual C# / rozšíření**, pak **projekt VSIX**.) Pojmenujte řešení `SignatureHelpTest`.  
   
-2.  Přidejte do projektu šablony položky editoru třídění. Další informace najdete v tématu [vytváření rozšíření pomocí šablony položky editoru](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
+2. Přidejte do projektu šablony položky editoru třídění. Další informace najdete v tématu [vytváření rozšíření pomocí šablony položky editoru](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
   
-3.  Odstraníte existující soubory tříd.  
+3. Odstraníte existující soubory tříd.  
   
-4.  Přidejte následující odkazy do projektu a ujistěte se, že **CopyLocal** je nastavena na `false`:  
+4. Přidejte následující odkazy do projektu a ujistěte se, že **CopyLocal** je nastavena na `false`:  
   
      Microsoft.VisualStudio.Editor  
   
@@ -56,39 +56,39 @@ Signaturám (označované také jako *informace o parametru*) zobrazí v popisku
   
 #### <a name="to-implement-the-signature-help-signatures-and-parameters"></a>K implementaci pomoc při podpisu podpisy a parametry  
   
-1.  Přidejte soubor třídy a pojmenujte ho `SignatureHelpSource`.  
+1. Přidejte soubor třídy a pojmenujte ho `SignatureHelpSource`.  
   
-2.  Přidejte následující importy.  
+2. Přidejte následující importy.  
   
      [!code-csharp[VSSDKSignatureHelpTest#1](../snippets/csharp/VS_Snippets_VSSDK/vssdksignaturehelptest/cs/signaturehelpsource.cs#1)]
      [!code-vb[VSSDKSignatureHelpTest#1](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksignaturehelptest/vb/signaturehelpsource.vb#1)]  
   
-3.  Přidejte třídu pojmenovanou `TestParameter` , který implementuje <xref:Microsoft.VisualStudio.Language.Intellisense.IParameter>.  
+3. Přidejte třídu pojmenovanou `TestParameter` , který implementuje <xref:Microsoft.VisualStudio.Language.Intellisense.IParameter>.  
   
      [!code-csharp[VSSDKSignatureHelpTest#2](../snippets/csharp/VS_Snippets_VSSDK/vssdksignaturehelptest/cs/signaturehelpsource.cs#2)]
      [!code-vb[VSSDKSignatureHelpTest#2](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksignaturehelptest/vb/signaturehelpsource.vb#2)]  
   
-4.  Přidáte konstruktor, který nastaví všechny vlastnosti.  
+4. Přidáte konstruktor, který nastaví všechny vlastnosti.  
   
      [!code-csharp[VSSDKSignatureHelpTest#3](../snippets/csharp/VS_Snippets_VSSDK/vssdksignaturehelptest/cs/signaturehelpsource.cs#3)]
      [!code-vb[VSSDKSignatureHelpTest#3](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksignaturehelptest/vb/signaturehelpsource.vb#3)]  
   
-5.  Přidání vlastnosti <xref:Microsoft.VisualStudio.Language.Intellisense.IParameter>.  
+5. Přidání vlastnosti <xref:Microsoft.VisualStudio.Language.Intellisense.IParameter>.  
   
      [!code-csharp[VSSDKSignatureHelpTest#4](../snippets/csharp/VS_Snippets_VSSDK/vssdksignaturehelptest/cs/signaturehelpsource.cs#4)]
      [!code-vb[VSSDKSignatureHelpTest#4](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksignaturehelptest/vb/signaturehelpsource.vb#4)]  
   
-6.  Přidejte třídu pojmenovanou `TestSignature` , který implementuje <xref:Microsoft.VisualStudio.Language.Intellisense.ISignature>.  
+6. Přidejte třídu pojmenovanou `TestSignature` , který implementuje <xref:Microsoft.VisualStudio.Language.Intellisense.ISignature>.  
   
      [!code-csharp[VSSDKSignatureHelpTest#5](../snippets/csharp/VS_Snippets_VSSDK/vssdksignaturehelptest/cs/signaturehelpsource.cs#5)]
      [!code-vb[VSSDKSignatureHelpTest#5](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksignaturehelptest/vb/signaturehelpsource.vb#5)]  
   
-7.  Přidáte některé soukromé pole.  
+7. Přidáte některé soukromé pole.  
   
      [!code-csharp[VSSDKSignatureHelpTest#6](../snippets/csharp/VS_Snippets_VSSDK/vssdksignaturehelptest/cs/signaturehelpsource.cs#6)]
      [!code-vb[VSSDKSignatureHelpTest#6](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksignaturehelptest/vb/signaturehelpsource.vb#6)]  
   
-8.  Přidat konstruktor, který nastaví pole a přihlásí se k odběru <xref:Microsoft.VisualStudio.Text.ITextBuffer.Changed> událostí.  
+8. Přidat konstruktor, který nastaví pole a přihlásí se k odběru <xref:Microsoft.VisualStudio.Text.ITextBuffer.Changed> událostí.  
   
      [!code-csharp[VSSDKSignatureHelpTest#7](../snippets/csharp/VS_Snippets_VSSDK/vssdksignaturehelptest/cs/signaturehelpsource.cs#7)]
      [!code-vb[VSSDKSignatureHelpTest#7](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksignaturehelptest/vb/signaturehelpsource.vb#7)]  
@@ -133,37 +133,37 @@ Signaturám (označované také jako *informace o parametru*) zobrazí v popisku
   
 #### <a name="to-implement-the-signature-help-source"></a>K implementaci zdroji pomoc při podpisu  
   
-1.  Přidejte třídu pojmenovanou `TestSignatureHelpSource` , který implementuje <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSource>.  
+1. Přidejte třídu pojmenovanou `TestSignatureHelpSource` , který implementuje <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSource>.  
   
      [!code-csharp[VSSDKSignatureHelpTest#15](../snippets/csharp/VS_Snippets_VSSDK/vssdksignaturehelptest/cs/signaturehelpsource.cs#15)]
      [!code-vb[VSSDKSignatureHelpTest#15](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksignaturehelptest/vb/signaturehelpsource.vb#15)]  
   
-2.  Přidejte odkaz na textovou vyrovnávací paměť.  
+2. Přidejte odkaz na textovou vyrovnávací paměť.  
   
      [!code-csharp[VSSDKSignatureHelpTest#16](../snippets/csharp/VS_Snippets_VSSDK/vssdksignaturehelptest/cs/signaturehelpsource.cs#16)]
      [!code-vb[VSSDKSignatureHelpTest#16](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksignaturehelptest/vb/signaturehelpsource.vb#16)]  
   
-3.  Přidáte konstruktor, který nastaví textové vyrovnávací paměti a poskytovatel správy zdrojových pomoc při podpisu.  
+3. Přidáte konstruktor, který nastaví textové vyrovnávací paměti a poskytovatel správy zdrojových pomoc při podpisu.  
   
      [!code-csharp[VSSDKSignatureHelpTest#17](../snippets/csharp/VS_Snippets_VSSDK/vssdksignaturehelptest/cs/signaturehelpsource.cs#17)]
      [!code-vb[VSSDKSignatureHelpTest#17](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksignaturehelptest/vb/signaturehelpsource.vb#17)]  
   
-4.  Implementace <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSource.AugmentSignatureHelpSession%2A> metody. V tomto příkladu podpisy jsou pevně zakódované, ale v úplnou implementaci byste získat tyto informace z dokumentace k jazyku.  
+4. Implementace <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSource.AugmentSignatureHelpSession%2A> metody. V tomto příkladu podpisy jsou pevně zakódované, ale v úplnou implementaci byste získat tyto informace z dokumentace k jazyku.  
   
      [!code-csharp[VSSDKSignatureHelpTest#18](../snippets/csharp/VS_Snippets_VSSDK/vssdksignaturehelptest/cs/signaturehelpsource.cs#18)]
      [!code-vb[VSSDKSignatureHelpTest#18](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksignaturehelptest/vb/signaturehelpsource.vb#18)]  
   
-5.  Pomocná metoda `CreateSignature()` je k dispozici pouze pro ilustraci.  
+5. Pomocná metoda `CreateSignature()` je k dispozici pouze pro ilustraci.  
   
      [!code-csharp[VSSDKSignatureHelpTest#19](../snippets/csharp/VS_Snippets_VSSDK/vssdksignaturehelptest/cs/signaturehelpsource.cs#19)]
      [!code-vb[VSSDKSignatureHelpTest#19](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksignaturehelptest/vb/signaturehelpsource.vb#19)]  
   
-6.  Implementace <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSource.GetBestMatch%2A> metody. V tomto příkladu jsou jenom dvě podpisy, z nichž každá má dva parametry. Proto tato metoda se nevyžaduje. Tato metoda se v plnější implementaci, ve kterém je více než jeden podpis pomoci zdroj k dispozici, používá se rozhodnout, zda zdroj pomoc při podpisu nejvyšší prioritou lze zadat odpovídající signaturou. V případě nedostupnosti, metoda vrátí hodnotu null a zdroji další nejvyšší prioritou je vyzván k zadání shoda.  
+6. Implementace <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSource.GetBestMatch%2A> metody. V tomto příkladu jsou jenom dvě podpisy, z nichž každá má dva parametry. Proto tato metoda se nevyžaduje. Tato metoda se v plnější implementaci, ve kterém je více než jeden podpis pomoci zdroj k dispozici, používá se rozhodnout, zda zdroj pomoc při podpisu nejvyšší prioritou lze zadat odpovídající signaturou. V případě nedostupnosti, metoda vrátí hodnotu null a zdroji další nejvyšší prioritou je vyzván k zadání shoda.  
   
      [!code-csharp[VSSDKSignatureHelpTest#20](../snippets/csharp/VS_Snippets_VSSDK/vssdksignaturehelptest/cs/signaturehelpsource.cs#20)]
      [!code-vb[VSSDKSignatureHelpTest#20](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksignaturehelptest/vb/signaturehelpsource.vb#20)]  
   
-7.  Implementace metody Dispose():  
+7. Implementace metody Dispose():  
   
      [!code-csharp[VSSDKSignatureHelpTest#21](../snippets/csharp/VS_Snippets_VSSDK/vssdksignaturehelptest/cs/signaturehelpsource.cs#21)]
      [!code-vb[VSSDKSignatureHelpTest#21](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksignaturehelptest/vb/signaturehelpsource.vb#21)]  
@@ -173,12 +173,12 @@ Signaturám (označované také jako *informace o parametru*) zobrazí v popisku
   
 #### <a name="to-implement-the-signature-help-source-provider"></a>Pro implementaci zprostředkovatele zdroje pomoc při podpisu  
   
-1.  Přidejte třídu pojmenovanou `TestSignatureHelpSourceProvider` , který implementuje <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSourceProvider>a exportujte ho pomocí <xref:Microsoft.VisualStudio.Utilities.NameAttribute>, <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> "text" a <xref:Microsoft.VisualStudio.Utilities.OrderAttribute> z před = "Výchozí".  
+1. Přidejte třídu pojmenovanou `TestSignatureHelpSourceProvider` , který implementuje <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSourceProvider>a exportujte ho pomocí <xref:Microsoft.VisualStudio.Utilities.NameAttribute>, <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> "text" a <xref:Microsoft.VisualStudio.Utilities.OrderAttribute> z před = "Výchozí".  
   
      [!code-csharp[VSSDKSignatureHelpTest#22](../snippets/csharp/VS_Snippets_VSSDK/vssdksignaturehelptest/cs/signaturehelpsource.cs#22)]
      [!code-vb[VSSDKSignatureHelpTest#22](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksignaturehelptest/vb/signaturehelpsource.vb#22)]  
   
-2.  Implementace <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSourceProvider.TryCreateSignatureHelpSource%2A> po vytvoření instance `TestSignatureHelpSource`.  
+2. Implementace <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSourceProvider.TryCreateSignatureHelpSource%2A> po vytvoření instance `TestSignatureHelpSource`.  
   
      [!code-csharp[VSSDKSignatureHelpTest#23](../snippets/csharp/VS_Snippets_VSSDK/vssdksignaturehelptest/cs/signaturehelpsource.cs#23)]
      [!code-vb[VSSDKSignatureHelpTest#23](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksignaturehelptest/vb/signaturehelpsource.vb#23)]  
@@ -188,27 +188,27 @@ Signaturám (označované také jako *informace o parametru*) zobrazí v popisku
   
 #### <a name="to-implement-the-command-handler"></a>K implementaci obslužná rutina příkazu  
   
-1.  Přidejte třídu pojmenovanou `TestSignatureHelpCommand` , který implementuje <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>.  
+1. Přidejte třídu pojmenovanou `TestSignatureHelpCommand` , který implementuje <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>.  
   
      [!code-csharp[VSSDKSignatureHelpTest#24](../snippets/csharp/VS_Snippets_VSSDK/vssdksignaturehelptest/cs/signaturehelpsource.cs#24)]
      [!code-vb[VSSDKSignatureHelpTest#24](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksignaturehelptest/vb/signaturehelpsource.vb#24)]  
   
-2.  Přidat soukromé pole pro <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> adaptéru (který můžete přidat obslužná rutina příkazu do obslužné rutiny příkazů z řetězce), zobrazení textu, pomoc při podpisu zprostředkovatele a relace, <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigator>a dalších <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>.  
+2. Přidat soukromé pole pro <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> adaptéru (který můžete přidat obslužná rutina příkazu do obslužné rutiny příkazů z řetězce), zobrazení textu, pomoc při podpisu zprostředkovatele a relace, <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigator>a dalších <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>.  
   
      [!code-csharp[VSSDKSignatureHelpTest#25](../snippets/csharp/VS_Snippets_VSSDK/vssdksignaturehelptest/cs/signaturehelpsource.cs#25)]
      [!code-vb[VSSDKSignatureHelpTest#25](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksignaturehelptest/vb/signaturehelpsource.vb#25)]  
   
-3.  Přidejte konstruktor a tato pole inicializovat přidat filtr příkazu pro příkaz z řetězu filtrů.  
+3. Přidejte konstruktor a tato pole inicializovat přidat filtr příkazu pro příkaz z řetězu filtrů.  
   
      [!code-csharp[VSSDKSignatureHelpTest#26](../snippets/csharp/VS_Snippets_VSSDK/vssdksignaturehelptest/cs/signaturehelpsource.cs#26)]
      [!code-vb[VSSDKSignatureHelpTest#26](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksignaturehelptest/vb/signaturehelpsource.vb#26)]  
   
-4.  Implementace <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> metoda k aktivaci pomoc při podpisu relace, jakmile přijme příkaz filtru (znak po jednoho ze známých metoda názvy a zavřete relaci, když obdrží) znak je stále aktivní relace. V každém případě je předán příkazu.  
+4. Implementace <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> metoda k aktivaci pomoc při podpisu relace, jakmile přijme příkaz filtru (znak po jednoho ze známých metoda názvy a zavřete relaci, když obdrží) znak je stále aktivní relace. V každém případě je předán příkazu.  
   
      [!code-csharp[VSSDKSignatureHelpTest#27](../snippets/csharp/VS_Snippets_VSSDK/vssdksignaturehelptest/cs/signaturehelpsource.cs#27)]
      [!code-vb[VSSDKSignatureHelpTest#27](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksignaturehelptest/vb/signaturehelpsource.vb#27)]  
   
-5.  Implementace <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> metodu tak, že vždycky předá příkazu.  
+5. Implementace <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> metodu tak, že vždycky předá příkazu.  
   
      [!code-csharp[VSSDKSignatureHelpTest#28](../snippets/csharp/VS_Snippets_VSSDK/vssdksignaturehelptest/cs/signaturehelpsource.cs#28)]
      [!code-vb[VSSDKSignatureHelpTest#28](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksignaturehelptest/vb/signaturehelpsource.vb#28)]  
@@ -218,17 +218,17 @@ Signaturám (označované také jako *informace o parametru*) zobrazí v popisku
   
 #### <a name="to-implement-the-signature-help-command-provider"></a>Pro implementaci zprostředkovatele příkaz pomoc při podpisu  
   
-1.  Přidejte třídu pojmenovanou `TestSignatureHelpController` , který implementuje <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener> a exportujte ho pomocí <xref:Microsoft.VisualStudio.Utilities.NameAttribute>, <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>, a <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute>.  
+1. Přidejte třídu pojmenovanou `TestSignatureHelpController` , který implementuje <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener> a exportujte ho pomocí <xref:Microsoft.VisualStudio.Utilities.NameAttribute>, <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>, a <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute>.  
   
      [!code-csharp[VSSDKSignatureHelpTest#29](../snippets/csharp/VS_Snippets_VSSDK/vssdksignaturehelptest/cs/signaturehelpsource.cs#29)]
      [!code-vb[VSSDKSignatureHelpTest#29](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksignaturehelptest/vb/signaturehelpsource.vb#29)]  
   
-2.  Import <xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService> (použít k získání <xref:Microsoft.VisualStudio.Text.Editor.ITextView>, daný <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> objektu), <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> (používá se k nalezení aktuálního slova) a <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpBroker> (pro aktivaci relace pomoc při podpisu).  
+2. Import <xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService> (použít k získání <xref:Microsoft.VisualStudio.Text.Editor.ITextView>, daný <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> objektu), <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> (používá se k nalezení aktuálního slova) a <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpBroker> (pro aktivaci relace pomoc při podpisu).  
   
      [!code-csharp[VSSDKSignatureHelpTest#30](../snippets/csharp/VS_Snippets_VSSDK/vssdksignaturehelptest/cs/signaturehelpsource.cs#30)]
      [!code-vb[VSSDKSignatureHelpTest#30](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksignaturehelptest/vb/signaturehelpsource.vb#30)]  
   
-3.  Implementace <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener.VsTextViewCreated%2A> metoda po vytvoření instance `TestSignatureCommandHandler`.  
+3. Implementace <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener.VsTextViewCreated%2A> metoda po vytvoření instance `TestSignatureCommandHandler`.  
   
      [!code-csharp[VSSDKSignatureHelpTest#31](../snippets/csharp/VS_Snippets_VSSDK/vssdksignaturehelptest/cs/signaturehelpsource.cs#31)]
      [!code-vb[VSSDKSignatureHelpTest#31](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksignaturehelptest/vb/signaturehelpsource.vb#31)]  
@@ -238,13 +238,13 @@ Signaturám (označované také jako *informace o parametru*) zobrazí v popisku
   
 #### <a name="to-build-and-test-the-signaturehelptest-solution"></a>Pro vytváření a testování SignatureHelpTest řešení  
   
-1.  Sestavte řešení.  
+1. Sestavte řešení.  
   
-2.  Při spuštění tohoto projektu v ladicím programu, je vytvořena instance druhou instanci aplikace Visual Studio.  
+2. Při spuštění tohoto projektu v ladicím programu, je vytvořena instance druhou instanci aplikace Visual Studio.  
   
-3.  Vytvoření textového souboru a zadejte nějaký text, který obsahuje slovo "Přidat" a levou závorku.  
+3. Vytvoření textového souboru a zadejte nějaký text, který obsahuje slovo "Přidat" a levou závorku.  
   
-4.  Po zadání levou závorku, měli byste vidět popisu, který se zobrazí seznam dvou podpisy `add()` metody.  
+4. Po zadání levou závorku, měli byste vidět popisu, který se zobrazí seznam dvou podpisy `add()` metody.  
   
 ## <a name="see-also"></a>Viz také  
  [Návod: Propojení typu obsahu příponu názvu souboru](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

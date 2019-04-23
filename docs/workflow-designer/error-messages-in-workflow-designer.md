@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 765072cea77a23ca63a176555832bbc95f0ab4b6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ab2cb4562f816b254b658cfdc152dc38033fbe03
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55950029"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104540"
 ---
 # <a name="error-messages-in-workflow-designer"></a>Chybové zprávy v návrháři postupu provádění
 
@@ -27,13 +27,13 @@ Toto téma popisuje typy chybové zprávy, které mohou nastat při práci s ná
 
 Dojít k chybám v Návrháři pracovních postupů v následujících situacích:
 
-1.  Ve výrazu dojde k chybě.
+1. Ve výrazu dojde k chybě.
 
-2.  Omezení ověřování aktivity nebyly splněny.
+2. Omezení ověřování aktivity nebyly splněny.
 
-3.  Existují chyby v souboru XAML, které způsobují aktivitu na nepodaří zavést.
+3. Existují chyby v souboru XAML, které způsobují aktivitu na nepodaří zavést.
 
-4.  Existují chyby v souboru XAML, které způsobí selhání načtení pracovního postupu.
+4. Existují chyby v souboru XAML, které způsobí selhání načtení pracovního postupu.
 
 Neplatné výrazy a omezení nespokojen/nespokojena ověření nespouštějí pracovní postup sestavení nezdaří. Vytvoření pracovního postupu bude úspěšné, ale <xref:System.Activities.InvalidWorkflowException> je vyvolána výjimka za běhu. Pokud nejsou chyby v souboru XAML, sestavení selže.
 

@@ -9,12 +9,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2a7553bb07e90e690d6409a2ad22636ddc8b627c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 186ca5857d949c7a7a8c90e3e5ec8770705e19cc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54771186"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104093"
 ---
 # <a name="how-to-start-debugging-xslt"></a>Postupy: Spuštění ladění XSLT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,15 +26,15 @@ Ladicí program XSLT slouží k ladění šablony stylů XSLT nebo z některé a
   
 #### <a name="to-start-debugging-from-a-style-sheet"></a>Spuštění ladění od šablony stylů  
   
-1.  Otevření šablony stylů v editoru XML.  
+1. Otevření šablony stylů v editoru XML.  
   
-2.  Vyberte **ladění XSL** z **XML** nabídky.  
+2. Vyberte **ladění XSL** z **XML** nabídky.  
   
 #### <a name="to-start-debugging-from-an-xml-input-document"></a>Spuštění ladění od vstupní dokument XML  
   
-1.  Otevřete dokument XML v editoru XML.  
+1. Otevřete dokument XML v editoru XML.  
   
-2.  Vyberte **ladění XSL** z **XML** nabídky.  
+2. Vyberte **ladění XSL** z **XML** nabídky.  
   
 ## <a name="xslt-from-other-languages"></a>Transformace XSLT z jiných jazyků  
  Můžete také Krokovat s vnořením XSLT při ladění aplikace. Po stisknutí klávesy F11 <xref:System.Xml.Xsl.XslCompiledTransform.Transform%2A?displayProperty=fullName> volání ladicího programu můžete krokovat s vnořením kód XSLT.  
@@ -44,11 +44,11 @@ Ladicí program XSLT slouží k ladění šablony stylů XSLT nebo z některé a
   
 #### <a name="to-start-debugging-an-xslt-application"></a>Pro spuštění ladění XSLT aplikace  
   
-1.  Při vytváření instance <xref:System.Xml.Xsl.XslCompiledTransform> objektu, nastaven `enableDebug` parametr `true` ve vašem kódu.  
+1. Při vytváření instance <xref:System.Xml.Xsl.XslCompiledTransform> objektu, nastaven `enableDebug` parametr `true` ve vašem kódu.  
   
      Říká, že procesoru XSLT se vytvářet i informace o ladění při kompilaci kódu.  
   
-2.  Stisknutím klávesy F11 lze přepínat mezi Krokovat s vnořením kód XSLT.  
+2. Stisknutím klávesy F11 lze přepínat mezi Krokovat s vnořením kód XSLT.  
   
      Šablony stylů XSLT je načten v novém okně dokumentu a ladicí program XSLT je spuštěn.  
   

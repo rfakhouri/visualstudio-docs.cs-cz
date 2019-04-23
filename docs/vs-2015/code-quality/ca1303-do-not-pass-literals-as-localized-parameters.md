@@ -16,12 +16,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 2ef9eaa8e0921d8ff463478a42eca688d4b952b7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 85aadaca762983b193e42ec2469f88a429a4e532
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54785423"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111737"
 ---
 # <a name="ca1303-do-not-pass-literals-as-localized-parameters"></a>CA1303: Nepředávejte literály jako lokalizované parametry
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,11 +38,11 @@ ms.locfileid: "54785423"
 
  Toto upozornění je vyvoláno, když řetězcový literál je předán jako hodnotu parametru nebo vlastnost a nejméně jednu z následujících případech má hodnotu true:
 
--   <xref:System.ComponentModel.LocalizableAttribute> Atribut parametru nebo vlastnosti je nastaven na hodnotu true.
+- <xref:System.ComponentModel.LocalizableAttribute> Atribut parametru nebo vlastnosti je nastaven na hodnotu true.
 
--   Název parametru nebo vlastnosti obsahuje "Text", "Zpráva" nebo "Popisu".
+- Název parametru nebo vlastnosti obsahuje "Text", "Zpráva" nebo "Popisu".
 
--   Název parametru řetězce, který se předá metodě Console.Write nebo Console.WriteLine je "value" nebo "format".
+- Název parametru řetězce, který se předá metodě Console.Write nebo Console.WriteLine je "value" nebo "format".
 
 ## <a name="rule-description"></a>Popis pravidla
  Řetězcové literály, které jsou vloženy do zdrojového kódu se obtížně lokalizují.

@@ -15,12 +15,12 @@ caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 61276307516052673f07a6798673b9998cb609fb
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: d44ae7d3eb4c01434e2a8b6f2cf7c0391c749ad7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54833833"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114564"
 ---
 # <a name="how-to-set-permissions"></a>Postupy: Nastavení oprávnění
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,25 +42,25 @@ Toto téma popisuje, jak správce počítače uděluje oprávněních zabezpeče
   
 ### <a name="to-create-a-user-account-that-has-user-permissions"></a>Chcete-li vytvořit uživatelský účet, který má oprávnění pro uživatele  
   
-1.  Klikněte pravým tlačítkem na **tento počítač** a potom klikněte na tlačítko **spravovat**.  
+1. Klikněte pravým tlačítkem na **tento počítač** a potom klikněte na tlačítko **spravovat**.  
   
      **Správa počítače** otevře se okno.  
   
-2.  Rozbalte **místní uživatelé a skupiny**.  
+2. Rozbalte **místní uživatelé a skupiny**.  
   
-3.  Klikněte pravým tlačítkem myši **uživatelé** složku a pak klikněte na tlačítko **nového uživatele**.  
+3. Klikněte pravým tlačítkem myši **uživatelé** složku a pak klikněte na tlačítko **nového uživatele**.  
   
      **Nového uživatele** zobrazí se dialogové okno.  
   
-4.  Vyplňte pole v tomto poli dialogové okno s informacemi pro uživatelský účet, kterou vytváříte. Zadejte heslo. V případě potřeby zaškrtněte políčko, které vyžaduje, aby uživatel změnit heslo při příštím přihlášení.  
+4. Vyplňte pole v tomto poli dialogové okno s informacemi pro uživatelský účet, kterou vytváříte. Zadejte heslo. V případě potřeby zaškrtněte políčko, které vyžaduje, aby uživatel změnit heslo při příštím přihlášení.  
   
-5.  Klikněte na tlačítko **vytvořit** a potom klikněte na tlačítko **Zavřít**.  
+5. Klikněte na tlačítko **vytvořit** a potom klikněte na tlačítko **Zavřít**.  
   
      Nový uživatel zobrazí ve skupině uživatelů, skupiny uživatelů, kteří nemají oprávnění správce.  
   
 ### <a name="to-grant-access-to-shared-project-files"></a>K udělení přístupu k souborům sdíleného projektu  
   
-1.  V Průzkumníku Windows (nebo Průzkumníka souborů) vyhledejte kořen stromu složky pro soubory projektu tento uživatel a sdílené s týmem projektu.  
+1. V Průzkumníku Windows (nebo Průzkumníka souborů) vyhledejte kořen stromu složky pro soubory projektu tento uživatel a sdílené s týmem projektu.  
   
      Cesta této složky může vypadat takto:  
   
@@ -68,17 +68,17 @@ Toto téma popisuje, jak správce počítače uděluje oprávněních zabezpeče
     D:\ourProject  
     ```  
   
-2.  Klikněte pravým tlačítkem na složku a potom klikněte na tlačítko **vlastnosti**.  
+2. Klikněte pravým tlačítkem na složku a potom klikněte na tlačítko **vlastnosti**.  
   
      **\<Název složky > vlastnosti** zobrazí se dialogové okno.  
   
-3.  Klikněte na tlačítko **zabezpečení** kartu.  
+3. Klikněte na tlačítko **zabezpečení** kartu.  
   
-4.  Klikněte na název uživatelského účtu v **skupiny nebo jméno uživatele** pole.  
+4. Klikněte na název uživatelského účtu v **skupiny nebo jméno uživatele** pole.  
   
-5.  V **oprávnění pro \<uživatelské jméno >** , vyberte zaškrtávací políčko pro **úplné řízení**.  
+5. V **oprávnění pro \<uživatelské jméno >** , vyberte zaškrtávací políčko pro **úplné řízení**.  
   
-6.  Klikněte na **OK**.  
+6. Klikněte na **OK**.  
   
      Tím udělíte oprávnění pro uživatele pro sdílené složky strom, který začíná složce vybrali v kroku 5.  
   
@@ -112,11 +112,11 @@ Toto téma popisuje, jak správce počítače uděluje oprávněních zabezpeče
   
     Tento příkaz udělí \<uživatelské jméno > nebo \<název skupiny > účet přístup k nástrojům profilace. \<Správné > volba určuje přístup k funkci profilování uživatele. \<Správné > možnost může být jeden nebo více z následujících hodnot:  
   
-   -   FullAccess – umožňuje přístup ke shromažďování dat výkonu ze služeb, včetně všech metod profilace vzorkování a různé relace profilování.  
+   - FullAccess – umožňuje přístup ke shromažďování dat výkonu ze služeb, včetně všech metod profilace vzorkování a různé relace profilování.  
   
-   -   SampleProfiling – umožňuje přístup k ukázkové metod profilace  
+   - SampleProfiling – umožňuje přístup k ukázkové metod profilace  
   
-   -   CrossSession - umožňuje přístup pro různé relace profilování, které jsou požadovány pro profilovací služby.  
+   - CrossSession - umožňuje přístup pro různé relace profilování, které jsou požadovány pro profilovací služby.  
   
 5. (Volitelné) Pokud chcete zachovat výsledky některého z předchozích kroků po restartování počítače, spusťte následující příkaz:  
   

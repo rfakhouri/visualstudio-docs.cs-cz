@@ -9,12 +9,12 @@ caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e8ad32f3231915c86f9578563ec4c0684435a3ee
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0de5d5560c2e840fd2df7fdc5811c5eea0747da8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54797334"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106498"
 ---
 # <a name="how-to-create-a-profiling-tools-etw-report"></a>Postupy: Vytvoření sestavy trasování událostí pro Windows nástrojů pro profilaci
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Sestava trasování událostí pro Windows (ETW) obsahuje události trasování 
   
 ### <a name="to-generate-an-etw-report"></a>Chcete-li generovat sestavu trasování událostí pro Windows  
   
--   V **příkazového řádku** okno, zadejte na příkazovém řádku následující:  
+- V **příkazového řádku** okno, zadejte na příkazovém řádku následující:  
   
      *ToolsPath* **VSPerfReport** *VSPFile*  **/Summary:ETW [/Xml]**  
   

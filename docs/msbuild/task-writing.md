@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fdeab63dffaf7884484f46fbfe9eac2002514e52
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 0ac45a955c1d6545fa0d2052843c3d48b92e4083
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56629921"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110840"
 ---
 # <a name="task-writing"></a>Zápis úloh
 Úlohy poskytují kód, který se spustí během procesu sestavení. Úkoly jsou obsaženy v cíli. Je součástí knihovny typické úlohy [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], a můžete také vytvořit vlastní úlohy. Další informace o knihovně úlohy, které jsou součástí [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], naleznete v tématu [úkolů odkaz](../msbuild/msbuild-task-reference.md).
@@ -27,9 +27,9 @@ ms.locfileid: "56629921"
 
  Existují dvě metody, které můžete použít při implementaci úkolu:
 
--   Implementace <xref:Microsoft.Build.Framework.ITask> rozhraní přímo.
+- Implementace <xref:Microsoft.Build.Framework.ITask> rozhraní přímo.
 
--   Odvodit třídu z pomocná třída <xref:Microsoft.Build.Utilities.Task>, který je definován v *Microsoft.Build.Utilities.dll* sestavení. Úloha implementuje ITask a poskytuje výchozí implementaci některých ITask členů. Protokolování je navíc jednodušší.
+- Odvodit třídu z pomocná třída <xref:Microsoft.Build.Utilities.Task>, který je definován v *Microsoft.Build.Utilities.dll* sestavení. Úloha implementuje ITask a poskytuje výchozí implementaci některých ITask členů. Protokolování je navíc jednodušší.
 
 V obou případech musíte přidat do vaší třídy metodu s názvem `Execute`, což je metoda, která je volána, když je úloha spuštěna. Tato metoda nemá žádné parametry a vrátí `Boolean` hodnota: `true` Pokud byla úloha úspěšná nebo `false` Pokud se něco nepovedlo. Následující příklad zobrazuje úlohu, která neprovede žádnou akci a vrátí `true`.
 

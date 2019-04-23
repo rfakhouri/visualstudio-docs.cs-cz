@@ -12,12 +12,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 990f14d76eabbf1b7ef252234a8625c66ffcdcba
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 1bc67385a69f7f96288074afd4c7e5f9cefe8805
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58897579"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114693"
 ---
 # <a name="install-and-configure-tools-to-build-using-ios"></a>Instalace a konfigurace nástroje potřebné k vytváření pomocí iOS
 
@@ -66,13 +66,13 @@ Chcete-li nainstalovat a používat vzdálený agent pro vývoj kódu pro iOS, m
 
    `sudo npm install -g npm@latest`
 
-##  <a name="Install"></a> Instalace vzdáleného agenta pro iOS
+## <a name="Install"></a> Instalace vzdáleného agenta pro iOS
 
 Při instalaci Visual C++ pro vývoj Multiplatformních mobilních řešení pro Visual Studio může komunikovat s [vcremote](https://go.microsoft.com/fwlink/p/?LinkId=534988), vzdáleného agenta spuštěného na počítači Mac, přenos souborů, sestavte a spusťte aplikaci pro iOS a odeslat příkazy ladění.
 
 Před instalací vzdáleného agenta, ujistěte se, že jste splnili [požadavky](#prerequisites) a nainstalované [Visual C++ pro vývoj mobilních řešení napříč platformami](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md#install-the-tools).
 
-###  <a name="DownloadInstall"></a> Stažení a instalace vzdáleného agenta
+### <a name="DownloadInstall"></a> Stažení a instalace vzdáleného agenta
 
 - Z terminálu aplikace na počítači Mac zadejte:
 
@@ -87,11 +87,11 @@ Před instalací vzdáleného agenta, ujistěte se, že jste splnili [požadavky
 
 Pokud aktualizujete na novou verzi sady Visual Studio, je třeba aktualizovat na aktuální verzi vzdáleného agenta. Aktualizace vzdáleného agenta, opakujte postup stažení a instalace vzdáleného agenta.
 
-##  <a name="Start"></a> Spuštění vzdáleného agenta
+## <a name="Start"></a> Spuštění vzdáleného agenta
 
 Vzdálený agent musí být spuštěná sada Visual Studio sestavte a spusťte váš kód s Iosem. Visual Studio musí být párována s vzdáleného agenta předtím, než může komunikovat. Ve výchozím nastavení se vzdálený agent spouští v režimu zabezpečené připojení, která vyžaduje kód PIN spárovat se sadou Visual Studio.
 
-###  <a name="RemoteAgentStartServer"></a> Spuštění vzdáleného agenta
+### <a name="RemoteAgentStartServer"></a> Spuštění vzdáleného agenta
 
 - Z terminálu aplikace na počítači Mac zadejte:
 
@@ -127,7 +127,7 @@ Po zahájení vzdáleného agenta můžete použít v sadě Visual Studio až po
 
 - V okně terminálu vcremote běží v, zadejte **ovládací prvek**+**C**.
 
-##  <a name="ConfigureVS"></a> Konfigurace vzdáleného agenta v sadě Visual Studio
+## <a name="ConfigureVS"></a> Konfigurace vzdáleného agenta v sadě Visual Studio
 
 Pro připojení ke vzdálenému agentu ze sady Visual Studio, musíte zadat konfigurace vzdáleného v možnostech sady Visual Studio.
 
@@ -164,7 +164,7 @@ Pro připojení ke vzdálenému agentu ze sady Visual Studio, musíte zadat konf
 
 Visual Studio používá stejné informace pro připojení k vzdáleného agenta na počítači Mac pokaždé, když ho používáte. Nepotřebujete spárovat sady Visual Studio se vzdáleným agentem znovu není-li vygenerovat nový certifikát zabezpečení na počítači Mac, nebo jeho název hostitele nebo IP adresu změny.
 
-##  <a name="GeneratePIN"></a> Vygenerovat nový bezpečnostní kód PIN
+## <a name="GeneratePIN"></a> Vygenerovat nový bezpečnostní kód PIN
 
 Při prvním spuštění vzdáleného agenta vygenerovaný PIN kód je platný po omezenou dobu – ve výchozím nastavení, 10 minut. Pokud před vypršení časového limitu, nepárují sady Visual Studio se vzdáleným agentem, je potřeba vygenerovat nový kód PIN.
 
@@ -178,7 +178,7 @@ Při prvním spuštění vzdáleného agenta vygenerovaný PIN kód je platný p
 
    Vzdálený agent vygeneruje nový dočasný PIN kód. Visual Studio spárovat s použitím nového kódu PIN, opakujte kroky v [konfigurace vzdáleného agenta v sadě Visual Studio](#ConfigureVS).
 
-##  <a name="GenerateCert"></a> Vytvoření nového certifikátu serveru
+## <a name="GenerateCert"></a> Vytvoření nového certifikátu serveru
 
 Z bezpečnostních důvodů certifikáty serveru tento pár Visual Studio se vzdáleným agentem jsou svázány se IP adresa nebo název hostitele vašeho macu. Pokud tyto hodnoty změnit, musíte vygenerovat nový certifikát serveru a potom znovu nakonfigurovat sady Visual Studio s novými hodnotami.
 
@@ -200,7 +200,7 @@ Z bezpečnostních důvodů certifikáty serveru tento pár Visual Studio se vzd
 
 1. Visual Studio spárovat s použitím nového kódu PIN, opakujte kroky v [konfigurace vzdáleného agenta v sadě Visual Studio](#ConfigureVS).
 
-##  <a name="ConfigureMac"></a> Konfigurace vzdáleného agenta na počítači Mac
+## <a name="ConfigureMac"></a> Konfigurace vzdáleného agenta na počítači Mac
 
 Můžete nakonfigurovat pomocí různých možností příkazového řádku vzdáleného agenta. Můžete například zadat port pro naslouchání požadavkům na sestavení a zadejte maximální počet buildů udržovat v systému souborů. Výchozí limit je 10 buildů. Vzdálený agent odebere sestavení, které překračují maximální na vypnutí.
 

@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 74ae0319bcf9c155bce693f9cf0924c8be449043
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 3e2b51128e851252d3949e6cfde122a52a09af6e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59658601"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110541"
 ---
 # <a name="graph-view"></a>Zobrazení grafu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -115,11 +115,11 @@ Zobrazení grafu poskytuje grafické znázornění schématu globální uzlů a 
 ## <a name="undoredo"></a>Zpět/znovu  
  Funkce Zpět/znovu je povolená v zobrazení grafu pro následující akce:  
   
--   Přidání jednoho uzlu pomocí přetahování.  
+- Přidání jednoho uzlu pomocí přetahování.  
   
--   Přidání více uzlů z výsledků hledání v dotazech Průzkumník schémat nebo zobrazení Start.  
+- Přidání více uzlů z výsledků hledání v dotazech Průzkumník schémat nebo zobrazení Start.  
   
--   Odstraňuje se jeden nebo více uzlů.  
+- Odstraňuje se jeden nebo více uzlů.  
   
 ## <a name="zoom"></a>Lupa  
  Přiblížení je k dispozici v pravém dolním rohu zobrazení grafu.  

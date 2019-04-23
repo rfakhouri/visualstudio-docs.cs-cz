@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0727709ce309ef35ca25896ff84a34577f1e7ef4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 969945260ee453e84ae2aeec0f28559ca11933a0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56609615"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60083722"
 ---
 # <a name="call-tree-view---contention-data"></a>Zobrazení stromu volání – data kolizí
 Zobrazení stromu volání zobrazí cesty spuštění funkce, které byly Procházet v profilované aplikaci. Kořen stromu je vstupním bodem do aplikace nebo komponenty. Každý uzel funkce jsou uvedené všechny funkce, které ji volaly, počet pokusů, které funkce se zablokovala a množství času, které funkce byl zablokován, protože byl sporům o prostředek s jiných vláknech či procesy.
@@ -25,7 +25,7 @@ Zobrazení stromu volání zobrazí cesty spuštění funkce, které byly Proch�
 ## <a name="highlight-the-execution-hot-path"></a>Zvýrazněte provádění kritickou cestu
  Zobrazení stromu volání můžete rozbalit a zvýrazňovat postupu provádění procesu nebo funkci, kterou vytvořili většina sporů.
 
--   Zobrazit Nejaktivnější cestu, klikněte pravým tlačítkem myši na proces nebo funkci a klikněte na **rozbalit kritickou cestu**.
+- Zobrazit Nejaktivnější cestu, klikněte pravým tlačítkem myši na proces nebo funkci a klikněte na **rozbalit kritickou cestu**.
 
 ## <a name="set-the-call-tree-root-node"></a>Nastavit kořenový uzel stromu volání
  Každý proces při spuštění profilování se zobrazí jako kořenový uzel. Pokud chcete nastavit počáteční uzel zobrazení stromu volání, klikněte pravým tlačítkem na uzel, který chcete nastavit jako počáteční uzel a potom klikněte na tlačítko **nastavit kořenový**.

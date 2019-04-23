@@ -10,12 +10,12 @@ ms.assetid: 1942245d-7a1d-4a11-b5e7-a3fe29f11c0b
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 267cd5d5487bfb5f861143e3767c066330bff81e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0cd5c72f8f423ec8ace409cafa82a1e42c6eaf90
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54776396"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112608"
 ---
 # <a name="how-to-implement-undo-management"></a>Postupy: Implementace správy zpět
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,9 +29,9 @@ Primární rozhraní používá ke správě vrácení zpět se ale <xref:Microso
   
 #### <a name="to-support-undo-management-for-a-single-view-editor"></a>Pro podporu zpět správy jedním zobrazením editoru  
   
-1.  Volání `QueryInterface` na `IServiceProvider` rozhraní okna rámce pro `IOleUndoManager`, z objektu zobrazení dokumentu k tomuto správci vrácení zpět (`IID_IOLEUndoManager`).  
+1. Volání `QueryInterface` na `IServiceProvider` rozhraní okna rámce pro `IOleUndoManager`, z objektu zobrazení dokumentu k tomuto správci vrácení zpět (`IID_IOLEUndoManager`).  
   
-2.  Při zobrazení je umístěna do okna rámce, získá lokality ukazatel, který můžete použít k volání `QueryInterface` pro `IServiceProvider`.  
+2. Při zobrazení je umístěna do okna rámce, získá lokality ukazatel, který můžete použít k volání `QueryInterface` pro `IServiceProvider`.  
   
 ## <a name="cases-where-an-editor-supports-multiple-views"></a>Případy, kdy editor podporuje více zobrazení  
  Pokud už máte dokument a zobrazení oddělení, je obvykle jeden vhodný program přidružený k samotný dokument. Všechny jednotky akcí zpět se umístí na jeden vhodný program přidružený k objektu data dokumentu.  
@@ -48,17 +48,17 @@ Primární rozhraní používá ke správě vrácení zpět se ale <xref:Microso
   
 3. Propojení vašich <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> a <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> volání do uložených `IOleCommandTarget` rozhraní pro následující příkazy StandardCommandSet97:  
   
-   -   cmdidUndo  
+   - cmdidUndo  
   
-   -   cmdidMultiLevelUndo  
+   - cmdidMultiLevelUndo  
   
-   -   cmdidRedo  
+   - cmdidRedo  
   
-   -   cmdidMultiLevelRedo  
+   - cmdidMultiLevelRedo  
   
-   -   cmdidMultiLevelUndoList  
+   - cmdidMultiLevelUndoList  
   
-   -   cmdidMultiLevelRedoList  
+   - cmdidMultiLevelRedoList  
   
 4. Volání `QueryInterface` na `IOleUndoManager` pro `IID_IVsChangeTrackingUndoManager`. Ukazatel na Store <xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager>.  
   

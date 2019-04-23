@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: f35aaf5b36da2bf40420bd4461f7d2fa880575e4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 4fb5a8c7a54871c7d948a458768c5551dbb5d550
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55937497"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091756"
 ---
 # <a name="bind-objects-as-data-sources-in-visual-studio"></a>Vytvoření vazby objektů jako zdroje dat v sadě Visual Studio
 
@@ -40,25 +40,25 @@ Vlastní objekty obecně platí, nevyžadují žádné konkrétní rozhraní, ko
 
 I když existují aplikací způsoby, jak implementovat logiku vaše aplikace při práci s objekty jako zdroj dat, pro SQL databáze existuje jsou několik standardních operací, které se dá zjednodušit pomocí objektů TableAdapter generovaný sady Visual Studio. Tato stránka vysvětluje, jak implementovat tyto standardní procesy pomocí objektů TableAdapter. Není určena jako vodítko pro vytváření vlastních objektů. Například se obvykle provádí následující standardní operace bez ohledu na konkrétní implementaci objekty nebo aplikace logiky:
 
--   Načítání dat do objektů (obvykle z databáze).
+- Načítání dat do objektů (obvykle z databáze).
 
--   Vytvoření typové kolekci objektů.
+- Vytvoření typové kolekci objektů.
 
--   Přidání objektů do a odebrání objektů z kolekce.
+- Přidání objektů do a odebrání objektů z kolekce.
 
--   Zobrazení dat objektů pro uživatele ve formuláři.
+- Zobrazení dat objektů pro uživatele ve formuláři.
 
--   Změna/úprava dat v objektu.
+- Změna/úprava dat v objektu.
 
--   Ukládání dat z objektů zpět do databáze.
+- Ukládání dat z objektů zpět do databáze.
 
 ### <a name="load-data-into-objects"></a>Načtení dat do objektů
 
 V tomto příkladu můžete načíst data do objektů pomocí objektů TableAdapter. Ve výchozím nastavení jsou objekty TableAdapter vytvořeny dva druhy metod, které načtou data z databáze a vkládání dat do tabulek.
 
--   `TableAdapter.Fill` Metoda vyplní existující data tabulky s daty vrácenými.
+- `TableAdapter.Fill` Metoda vyplní existující data tabulky s daty vrácenými.
 
--   `TableAdapter.GetData` Metoda vrátí novou tabulku naplněný daty.
+- `TableAdapter.GetData` Metoda vrátí novou tabulku naplněný daty.
 
 Nejjednodušší způsob, jak načíst vaše vlastní objekty s daty je volání `TableAdapter.GetData` metoda, procházení kolekce řádků v tabulce vrácená data a naplňte každý objekt pomocí hodnot v jednotlivých řádcích. Můžete vytvořit `GetData` metodu, která vrací tabulku naplněných daty pro libovolný dotaz přidaný do objektu TableAdapter.
 

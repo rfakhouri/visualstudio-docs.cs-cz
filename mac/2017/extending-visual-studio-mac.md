@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 04/14/2017
 ms.technology: vs-ide-sdk
 ms.assetid: D5245AB0-8404-426B-B538-F49125E672B2
-ms.openlocfilehash: 8212039cd4f83cd9ea2b53a1050f32ed5dbad367
-ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
+ms.openlocfilehash: 3465ef29ca732cd26c03919082052d8b26a83ba1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58573087"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60086119"
 ---
 # <a name="extending-visual-studio-for-mac"></a>Rozšíření sady Visual Studio pro Mac
 
@@ -28,7 +28,7 @@ Pořadí rozšíření balíčku k sestavení ze sady Visual Studio pro Mac mus�
 Výhodou této modulárního návrhu je, že Visual Studio for Mac je možné rozšířit – existuje mnoho Rozšiřovací body, které můžou být postavené na pomocí rozšíření vlastních balíčků. Příklady aktuální balíčky rozšíření zahrnují podporu pro C# a F#ladicího programu nástroje a šablony projektů.
 
 > [!NOTE]
-> **Poznámka:**: Pokud máte projekt doplňku tvůrce, který byl vytvořen ještě před doplněk Tvůrce 1.2, budete muset migrovat projekt, jak je uvedeno v krocích [tady](https://mhut.ch/addinmaker/1.2).
+> **Poznámka:** Pokud máte projekt doplňku tvůrce, který byl vytvořen ještě před doplněk Tvůrce 1.2, budete muset migrovat projekt, jak je uvedeno v krocích [tady](https://mhut.ch/addinmaker/1.2).
 
 <!---The [Walkthrough](~/extending-visual-studio-mac-walkthrough.md) topic explains how to build an extension package that uses a *Command* to insert the date and time into an open text document.--->
 
@@ -81,10 +81,10 @@ Příkaz rozšíření, které jsou definovány pomocí přidání položek `/Mo
 
 Uzel výrazu obsahuje atribut cesty, která určuje rozšiřovací bod, který ho se připojit k, v tomto případě `/MonoDevelop/Ide/Commands/Edit`. Kromě toho funguje jako nadřazený uzel k příkazu. Příkaz uzel má následující atributy:
 
-*   **ID** -Určuje identifikátor pro tento příkaz. Identifikátory příkazů musí být deklarována jako členy výčtu a slouží k připojení k CommandItems příkazy.
-*   **_jmenovka** -text zobrazovaný v nabídkách.
-*   **_popis** – text, který se zobrazí jako popisek pro tlačítka panelu nástrojů.
-*   **defaultHandler** – Určuje, `CommandHandler` třídy, která je základem příkazu
+* **ID** -Určuje identifikátor pro tento příkaz. Identifikátory příkazů musí být deklarována jako členy výčtu a slouží k připojení k CommandItems příkazy.
+* **_jmenovka** -text zobrazovaný v nabídkách.
+* **_popis** – text, který se zobrazí jako popisek pro tlačítka panelu nástrojů.
+* **defaultHandler** – Určuje, `CommandHandler` třídy, která je základem příkazu
 
 <!--To invoke the command from the Edit Menu, the walkthrough creates a CommandItem extension that plugs into the `/MonoDevelop/Ide/MainMenu/Edit` extension point:-->
 
@@ -137,27 +137,27 @@ To spojuje příkazu a CommandItem – CommandItem tento příkaz volá, když v
 
 Informace o rozsahu oblastí, které jsou k dispozici pro vývoj najdete v článku [odkaz na rozšíření stromu](http://monodevelop.com/Developers/Articles/Extension_Tree_Reference) a [přehled rozhraní API](http://monodevelop.com/Developers/Articles/API_Overview). Při vytváření pokročilých rozšíření balíčků, také odkazovat na [článků Vývojář](http://monodevelop.com/Developers/Articles). Následuje částečný seznam oblastí pro přizpůsobení:
 
-*   Ladicí systém
-*   Schémata vazeb klíče
-*   Zásady
-*   Formátování kódu
-*   Formáty souborů projektu
-*   Předvolby panelů
-*   Možnosti panelů
-*   Protokoly ladicího programu
-*   Vizualizérů ladění
-*   Rozložení pracovního prostoru
-*   Uzly stromu panel řešení
-*   Okraje editoru zdroje
-*   Moduly testu jednotek
-*   Generátory kódu
-*   Fragmenty kódu
-*   Cílové architektury
-*   Cílový modul runtime
-*   VC back EndY
-*   Refaktoring
-*   Spuštění obslužné rutiny
-*   Zvýrazňování syntaxe
+* Ladicí systém
+* Schémata vazeb klíče
+* Zásady
+* Formátování kódu
+* Formáty souborů projektu
+* Předvolby panelů
+* Možnosti panelů
+* Protokoly ladicího programu
+* Vizualizérů ladění
+* Rozložení pracovního prostoru
+* Uzly stromu panel řešení
+* Okraje editoru zdroje
+* Moduly testu jednotek
+* Generátory kódu
+* Fragmenty kódu
+* Cílová rozhraní
+* Cílový modul runtime
+* VC back EndY
+* Refaktoring
+* Spuštění obslužné rutiny
+* Zvýrazňování syntaxe
 
 ## <a name="additional-information"></a>Další informace
 

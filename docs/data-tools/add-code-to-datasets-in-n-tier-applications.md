@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 869075875f5de56cc7454c58f7dbb5dfda7a9f76
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: dbd65c5247a82f2a58a57e50402ecde5d330cc9b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928774"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111685"
 ---
 # <a name="add-code-to-datasets-in-n-tier-applications"></a>Přidávání kódu do datových sad ve vícevrstvých aplikacích
 Funkce pro datovou sadu můžete rozšířit vytvořením souboru částečné třídy datové sady a přidáním kódu k němu (místo přidání kódu *DatasetName*. Soubor Dataset.Designer). Částečné třídy povolit kód pro konkrétní třídu rozdělit mezi několik fyzických souborů. Další informace najdete v tématu [částečné](/dotnet/visual-basic/language-reference/modifiers/partial) nebo [částečné třídy a metody](/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods).
@@ -35,15 +35,15 @@ Ve výchozím nastavení po oddělíte datové sady a kód třídy TableAdapter,
 
 ## <a name="to-add-code-to-datasets-in-n-tier-applications"></a>Přidání kódu do datových sad v n vrstvé aplikace
 
-1.  Najít projekt, který obsahuje *XSD* souboru.
+1. Najít projekt, který obsahuje *XSD* souboru.
 
-2.  Vyberte **XSD** soubor otevřete datovou sadu.
+2. Vyberte **XSD** soubor otevřete datovou sadu.
 
-3.  Klikněte pravým tlačítkem na tabulky dat, ke kterému chcete přidat kód (název tabulky v záhlaví okna) a pak vyberte **zobrazit kód**.
+3. Klikněte pravým tlačítkem na tabulky dat, ke kterému chcete přidat kód (název tabulky v záhlaví okna) a pak vyberte **zobrazit kód**.
 
      Částečné třídy se vytvoří a otevře v editoru kódu.
 
-4.  Přidejte kód do částečné deklarace třídy.
+4. Přidejte kód do částečné deklarace třídy.
 
      Následující příklad ukazuje, kde přidat kód CustomersDataTable v NorthwindDataSet:
 
@@ -53,6 +53,7 @@ Ve výchozím nastavení po oddělíte datové sady a kód třídy TableAdapter,
         ' to the CustomersDataTable.
     End Class
     ```
+
     ```csharp
     partial class CustomersDataTable
     {

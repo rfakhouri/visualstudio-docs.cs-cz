@@ -1,5 +1,5 @@
 ---
-title: 'Průvodce: Přidání stránky aplikace do pracovního postupu | Dokumentace Microsoftu'
+title: 'Návod: Přidání stránky aplikace do pracovního postupu | Dokumentace Microsoftu'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,14 +15,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 930252a509466fa65a7cbdf2eabac35cfeb25081
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: fe2e782723b35a8cdd5505c60f74d1be12bb2077
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54865827"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60083027"
 ---
-# <a name="walkthrough-add-an-application-page-to-a-workflow"></a>Průvodce: Přidání stránky aplikace do pracovního postupu
+# <a name="walkthrough-add-an-application-page-to-a-workflow"></a>Návod: Přidání stránky aplikace do pracovního postupu
   Tento návod ukazuje, jak přidat stránku aplikace, která zobrazuje data odvozená z pracovního postupu do projektu pracovního postupu. Je nástavbou projektu je popsáno v tématu [názorný postup: Vytvoření pracovního postupu pomocí formulářů přidružení a inicializace](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md).
 
  Tento návod demonstruje následující úkoly:
@@ -38,22 +38,22 @@ ms.locfileid: "54865827"
 ## <a name="prerequisites"></a>Požadavky
  K dokončení tohoto návodu budete potřebovat následující komponenty:
 
--   Podporované edice systému [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] a SharePoint.
+- Podporované edice systému [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] a SharePoint.
 
--   Visual Studio.
+- Visual Studio.
 
--   Máte také dokončení projektu v tématu [názorný postup: Vytvoření pracovního postupu pomocí formulářů přidružení a inicializace](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md).
+- Máte také dokončení projektu v tématu [názorný postup: Vytvoření pracovního postupu pomocí formulářů přidružení a inicializace](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md).
 
 ## <a name="ammend-the-workflow-code"></a>Ammend kód pracovního postupu
  Nejprve přidejte řádek kódu do pracovního postupu k nastavení hodnoty ve sloupci výsledek množství vyúčtování. Tato hodnota se používá později při výpočtu souhrnné sestavy výdajů.
 
 #### <a name="to-set-the-value-of-the-outcome-column-in-the-workflow"></a>Chcete-li nastavit hodnotu sloupce výsledku v pracovním postupu
 
-1.  Načíst dokončený projekt z tématu [názorný postup: Vytvoření pracovního postupu pomocí formulářů přidružení a inicializace](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md) do [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
+1. Načíst dokončený projekt z tématu [názorný postup: Vytvoření pracovního postupu pomocí formulářů přidružení a inicializace](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md) do [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
-2.  Spustit kód pro *Workflow1.cs* nebo *Workflow1.vb* (v závislosti na programovacím jazyce).
+2. Spustit kód pro *Workflow1.cs* nebo *Workflow1.vb* (v závislosti na programovacím jazyce).
 
-3.  K dolnímu okraji `createTask1_MethodInvoking` metodu, přidejte následující kód:
+3. K dolnímu okraji `createTask1_MethodInvoking` metodu, přidejte následující kód:
 
     ```vb
     createTask1_TaskProperties1.ExtendedProperties("Outcome") =
@@ -70,11 +70,11 @@ ms.locfileid: "54865827"
 
 #### <a name="to-add-an-application-page-to-the-project"></a>Přidání stránky aplikace do projektu
 
-1.  Zvolte projekt ExpenseReport a pak na panelu nabídek zvolte **projektu** > **přidat novou položku**.
+1. Zvolte projekt ExpenseReport a pak na panelu nabídek zvolte **projektu** > **přidat novou položku**.
 
-2.  V **šablony** podokně, vyberte **stránky aplikace** šablony, použití výchozího názvu pro položku projektu (**ApplicationPage1.aspx**) a zvolte **Přidat** tlačítko.
+2. V **šablony** podokně, vyberte **stránky aplikace** šablony, použití výchozího názvu pro položku projektu (**ApplicationPage1.aspx**) a zvolte **Přidat** tlačítko.
 
-3.  V [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] ApplicationPage1.aspx, nahraďte `PlaceHolderMain` oddíl následujícím kódem:
+3. V [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] ApplicationPage1.aspx, nahraďte `PlaceHolderMain` oddíl následujícím kódem:
 
     ```aspx-csharp
     <asp:Content ID="Main" ContentPlaceHolderID="PlaceHolderMain" runat="server">
@@ -88,7 +88,7 @@ ms.locfileid: "54865827"
 
      Tento kód přidá na stránku spolu s název tabulky.
 
-4.  Přidat nadpis na stránce aplikace tak, že nahradíte `PlaceHolderPageTitleInTitleArea` oddíl následujícím kódem:
+4. Přidat nadpis na stránce aplikace tak, že nahradíte `PlaceHolderPageTitleInTitleArea` oddíl následujícím kódem:
 
     ```aspx-csharp
     <asp:Content ID="PageTitleInTitleArea" ContentPlaceHolderID="PlaceHolderPageTitleInTitleArea" runat="server" >
@@ -101,9 +101,9 @@ ms.locfileid: "54865827"
 
 #### <a name="to-code-the-application-page"></a>Do kódu stránky aplikace
 
-1.  Zvolte **ApplicationPage1.aspx** uzel a potom na panelu nabídek zvolte **zobrazení** > **kód** k zobrazení kódu stránky aplikace.
+1. Zvolte **ApplicationPage1.aspx** uzel a potom na panelu nabídek zvolte **zobrazení** > **kód** k zobrazení kódu stránky aplikace.
 
-2.  Nahradit **pomocí** nebo **Import** příkazy (v závislosti na programovacím jazyce) v horní části třídy následujícím kódem:
+2. Nahradit **pomocí** nebo **Import** příkazy (v závislosti na programovacím jazyce) v horní části třídy následujícím kódem:
 
     ```vb
     Imports System
@@ -131,7 +131,7 @@ ms.locfileid: "54865827"
     using Microsoft.SharePoint.Navigation;
     ```
 
-3.  Přidejte následující kód, který `Page_Load` metody:
+3. Přidejte následující kód, který `Page_Load` metody:
 
     ```vb
     Try
@@ -343,9 +343,9 @@ ms.locfileid: "54865827"
 
  Vám může Další informace o navrhování obsahu stránky služby SharePoint pomocí návrháře Visual Web v sadě Visual Studio naleznete v těchto tématech:
 
--   [Vytvoření webové části pro SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md).
+- [Vytvoření webové části pro SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md).
 
--   [Vytvoření opakovaně použitelné ovládací prvky webové části nebo stránky aplikace](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md).
+- [Vytvoření opakovaně použitelné ovládací prvky webové části nebo stránky aplikace](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md).
 
 ## <a name="see-also"></a>Viz také:
 

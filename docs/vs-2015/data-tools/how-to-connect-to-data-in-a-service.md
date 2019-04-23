@@ -22,12 +22,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a13d0c8ff1383e27f9401f6549c422a8fef96e99
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: e3361ba51607924ee0bd0701f6f2dddf12334f93
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59650041"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60090378"
 ---
 # <a name="how-to-connect-to-data-in-a-service"></a>Postupy: Připojte se k datům ve službě
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,20 +43,20 @@ Připojení vaší aplikace s daty vrácenými ze služby spuštěním [Průvodc
   
 ### <a name="to-connect-your-application-to-a-service"></a>Pro připojení aplikace ke službě  
   
-1.  Na **Data** nabídky, klikněte na tlačítko **přidat nový zdroj dat**.  
+1. Na **Data** nabídky, klikněte na tlačítko **přidat nový zdroj dat**.  
   
-2.  Vyberte **služby** na **zvolte typ zdroje dat** stránce a potom klikněte na tlačítko **Další**.  
+2. Vyberte **služby** na **zvolte typ zdroje dat** stránce a potom klikněte na tlačítko **Další**.  
   
-3.  Zadejte adresu služby, kterou chcete použít, nebo klikněte na tlačítko **Discover** vyhledejte služby v aktuálním řešení a potom klikněte na **Přejít**.  
+3. Zadejte adresu služby, kterou chcete použít, nebo klikněte na tlačítko **Discover** vyhledejte služby v aktuálním řešení a potom klikněte na **Přejít**.  
   
-4.  Volitelně můžete nové **Namespace** lze zadat místo výchozí hodnotu.  
+4. Volitelně můžete nové **Namespace** lze zadat místo výchozí hodnotu.  
   
     > [!NOTE]
     >  Klikněte na tlačítko **Upřesnit** otevřít [konfigurace Service Reference Dialog Box](../data-tools/configure-service-reference-dialog-box.md).  
   
-5.  Klikněte na tlačítko **OK** přidáte odkaz na službu do projektu.  
+5. Klikněte na tlačítko **OK** přidáte odkaz na službu do projektu.  
   
-6.  Klikněte na tlačítko **Dokončit**.  
+6. Klikněte na tlačítko **Dokončit**.  
   
      Zdroj dat je přidaný do **zdroje dat** okna.  
   
@@ -64,7 +64,7 @@ Připojení vaší aplikace s daty vrácenými ze služby spuštěním [Průvodc
   
 #### <a name="to-add-functionality-to-your-application"></a>Přidání funkčnosti do aplikace  
   
--   Vyberte položku **zdroje dat** okno a přetáhněte jej na formulář pro vytvoření vazby ovládacích prvků. Další informace najdete v tématu [vytvoření vazby ovládacích prvků k datům v sadě Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md).  
+- Vyberte položku **zdroje dat** okno a přetáhněte jej na formulář pro vytvoření vazby ovládacích prvků. Další informace najdete v tématu [vytvoření vazby ovládacích prvků k datům v sadě Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md).  
   
 ## <a name="see-also"></a>Viz také  
  [Vytvoření vazby ovládacích prvků WPF k datové služby WCF](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md)   

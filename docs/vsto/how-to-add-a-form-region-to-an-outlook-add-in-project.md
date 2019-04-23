@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 97d8883ef22fc91b708726fddca60cf757e3d9a8
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 139cdb0314783c76352cc499256fb89610354843
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56610616"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60083943"
 ---
 # <a name="how-to-add-a-form-region-to-an-outlook-add-in-project"></a>Postupy: Přidání oblasti formuláře do projektu doplňku aplikace Outlook
   Vytvoření oblasti formuláře rozšířit standardní nebo vlastní formulář aplikace Microsoft Office Outlook s použitím **novou oblast formuláře Outlooku** průvodce. Můžete vytvořit novou oblast formuláře a návrh uživatelského rozhraní v sadě Visual Studio, nebo můžete import oblasti formuláře, která je navržená v Outlooku a přidání Visual Basic nebo C# kódu.
@@ -33,26 +33,26 @@ ms.locfileid: "56610616"
 
 ### <a name="to-add-a-new-form-region-to-an-outlook-project"></a>Chcete-li přidat novou oblast formuláře do projektu aplikace Outlook
 
-1.  Otevřete nebo vytvořte projekt doplňku VSTO pro Outlook v [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Další informace najdete v tématu [jak: Vytvářet projekty pro Office v sadě Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
+1. Otevřete nebo vytvořte projekt doplňku VSTO pro Outlook v [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Další informace najdete v tématu [jak: Vytvářet projekty pro Office v sadě Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
-2.  V **Průzkumníka řešení**, vyberte uzel projektu doplňku VSTO v Outlooku.
+2. V **Průzkumníka řešení**, vyberte uzel projektu doplňku VSTO v Outlooku.
 
-3.  Na **projektu** nabídky, klikněte na tlačítko **přidat novou položku**.
+3. Na **projektu** nabídky, klikněte na tlačítko **přidat novou položku**.
 
-4.  V **přidat novou položku** dialogu **oblast formuláře Outlooku**.
+4. V **přidat novou položku** dialogu **oblast formuláře Outlooku**.
 
-5.  Zadejte název pro oblasti formuláře v **název** pole a potom klikněte na tlačítko **přidat**.
+5. Zadejte název pro oblasti formuláře v **název** pole a potom klikněte na tlačítko **přidat**.
 
      **Oblasti formuláře NewOutlook** spustí se průvodce.
 
-6.  Na **vyberte způsob vytvoření oblasti formuláře** vyberte, zda chcete návrh oblasti formuláře pomocí přetahování spravovaných ovládacích prvků na vizuálního návrháře nebo import oblasti formuláře, která je navržená v Outlooku.
+6. Na **vyberte způsob vytvoření oblasti formuláře** vyberte, zda chcete návrh oblasti formuláře pomocí přetahování spravovaných ovládacích prvků na vizuálního návrháře nebo import oblasti formuláře, která je navržená v Outlooku.
 
     > [!NOTE]
     >  Pokud zvolíte import oblasti formuláře, která je navržená v Outlooku, pak je nutné zadat umístění úložiště formulářů Outlooku (*.ofs*) soubor. Spravované ovládací prvky nelze přidat do oblasti formuláře navržené v aplikaci Outlook; pouze můžete přidat kód za existující uživatelského rozhraní. Další informace najdete v tématu [oblastí formulářů aplikace Outlook vytvořit](../vsto/creating-outlook-form-regions.md).
 
-7.  Na **výběr typu oblasti formuláře chcete vytvořit** stránce zkontrolujte oblasti formuláře typu a vyberte jeden a pak klikněte na tlačítko **Další**. Další informace o oblasti formuláře typu naleznete v tématu [oblastí formulářů aplikace Outlook vytvořit](../vsto/creating-outlook-form-regions.md).
+7. Na **výběr typu oblasti formuláře chcete vytvořit** stránce zkontrolujte oblasti formuláře typu a vyberte jeden a pak klikněte na tlačítko **Další**. Další informace o oblasti formuláře typu naleznete v tématu [oblastí formulářů aplikace Outlook vytvořit](../vsto/creating-outlook-form-regions.md).
 
-8.  Na **zadání popisného textu a výběr předvoleb zobrazení** stránku, **název** zadejte název pro oblasti formuláře. Pro nahrazení a nahradit všechno formuláře oblasti typy **Title** a **popis** polí jsou také k dispozici.
+8. Na **zadání popisného textu a výběr předvoleb zobrazení** stránku, **název** zadejte název pro oblasti formuláře. Pro nahrazení a nahradit všechno formuláře oblasti typy **Title** a **popis** polí jsou také k dispozici.
 
      Informace o tom, kde název, název a popis se zobrazí v aplikaci Outlook při nasazování oblasti formuláře, naleznete v tématu [oblastí formulářů aplikace Outlook vytvořit](../vsto/creating-outlook-form-regions.md).
 

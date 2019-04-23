@@ -14,12 +14,12 @@ caps.latest.revision: 6
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 010f9b7b0d77bca8bd264ab8a3561743c616dc1f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 52d978472f057359cb2b1e0375f2d7ba524d1925
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54779798"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60101428"
 ---
 # <a name="inspect-xaml-properties-while-debugging"></a>Kontrola vlastností XAML při ladění
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -103,10 +103,10 @@ private void button_Click(object sender, RoutedEventArgs e)
 ## <a name="using-xaml-tools-with-running-applications"></a>Pomocí nástrojů XAML se spouštěním aplikací  
  Tyto nástroje XAML můžete použít i v případě, že nemáte zdrojový kód. Po připojení k běžící aplikaci XAML, můžete použít **Live Visual Tree** na prvcích uživatelského rozhraní aplikace příliš. Tady je příklad, pomocí stejné WPF testovací aplikaci, kterou jsme použili dříve.  
   
-1.  Spustit **TestXaml** aplikace v rámci konfigurace verze. Nelze připojit k procesu, který běží v **ladění** konfigurace.  
+1. Spustit **TestXaml** aplikace v rámci konfigurace verze. Nelze připojit k procesu, který běží v **ladění** konfigurace.  
   
-2.  Spusťte druhou instanci aplikace Visual Studio a klikněte na tlačítko **ladění / připojit k procesu**. Najít **TestXaml.exe** v seznamu dostupných procesů, a klikněte na tlačítko **připojit**.  
+2. Spusťte druhou instanci aplikace Visual Studio a klikněte na tlačítko **ladění / připojit k procesu**. Najít **TestXaml.exe** v seznamu dostupných procesů, a klikněte na tlačítko **připojit**.  
   
-3.  Spuštění aplikace.  
+3. Spuštění aplikace.  
   
-4.  Ve druhé instanci aplikace Visual Studio, otevřete **Live Visual Tree** (**ladění / Windows / Live Visual Tree**). Měli byste vidět **TestXaml** prvky uživatelského rozhraní a měli být schopni s nimi manipulovat, protože při ladění aplikace přímo.
+4. Ve druhé instanci aplikace Visual Studio, otevřete **Live Visual Tree** (**ladění / Windows / Live Visual Tree**). Měli byste vidět **TestXaml** prvky uživatelského rozhraní a měli být schopni s nimi manipulovat, protože při ladění aplikace přímo.

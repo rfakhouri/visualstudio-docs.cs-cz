@@ -15,12 +15,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a532a4ddf877e49a6cf355d182d41ed723b2f5d0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8c6974d7606a6c60df785fe2301a695f6775716d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54800326"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106082"
 ---
 # <a name="how-to-configure-noise-reduction-in-report-views"></a>Postupy: Konfigurace snížení šumu v zobrazeních sestav
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,55 +29,55 @@ Sestavy o výkonu lze nakonfigurovat pro snížení šumu tím, že omezíte mno
   
  Možnosti konfigurace snížení šumu zahrnují následující nastavení:  
   
--   **Ořezávání** při analýze sestavy zobrazení vynechá funkce, které spadají do nastavení hodnoty a prahové hodnoty, které jste nakonfigurovali, jak je popsáno v následujícím postupu oříznutí. Ve výchozím nastavení je povoleno oříznutí.  
+- **Ořezávání** při analýze sestavy zobrazení vynechá funkce, které spadají do nastavení hodnoty a prahové hodnoty, které jste nakonfigurovali, jak je popsáno v následujícím postupu oříznutí. Ve výchozím nastavení je povoleno oříznutí.  
   
--   **Skládání** Pokud povolíte skládání, budou sloučeny po sobě následující funkce na cestě, která odpovídají nastavení, které jste nakonfigurovali, jak je popsáno v postupu kontejner, který následuje. Ve výchozím nastavení je standardně povolená skládání.  
+- **Skládání** Pokud povolíte skládání, budou sloučeny po sobě následující funkce na cestě, která odpovídají nastavení, které jste nakonfigurovali, jak je popsáno v postupu kontejner, který následuje. Ve výchozím nastavení je standardně povolená skládání.  
   
 ### <a name="to-configure-trimming-for-a-performance-report"></a>Ke konfiguraci ořezávání pro sestavu výkonu  
   
-1.  Při zobrazení stromu volání nebo zobrazení přidělení se zobrazí v generované sestavě na **Developer** nabídky, klikněte na tlačítko **Profiler** a potom klikněte na tlačítko **možnosti snížení šumu**.  
+1. Při zobrazení stromu volání nebo zobrazení přidělení se zobrazí v generované sestavě na **Developer** nabídky, klikněte na tlačítko **Profiler** a potom klikněte na tlačítko **možnosti snížení šumu**.  
   
      **Snížení šumu** zobrazí se dialogové okno.  
   
-2.  Povolení ořezávání, postupujte podle těchto kroků:  
+2. Povolení ořezávání, postupujte podle těchto kroků:  
   
-    1.  Vyberte **povolení ořezávání**. Toto je výchozí nastavení.  
+    1. Vyberte **povolení ořezávání**. Toto je výchozí nastavení.  
   
         > [!NOTE]
         >  Pokud je povolené snížení šumu na informačním panelu se zobrazí v sestavě. Další informace najdete v tématu [zobrazení stromu volání](../profiling/call-tree-view.md) a [přidělení – zobrazení](../profiling/dotnet-memory-allocations-view.md).  
   
-    2.  Nakonfigurovat pomocí nastavení hodnoty **hodnotu** rozevíracího seznamu a výběrem příslušné nastavení.  
+    2. Nakonfigurovat pomocí nastavení hodnoty **hodnotu** rozevíracího seznamu a výběrem příslušné nastavení.  
   
-    3.  Konfigurace nastavení požadované prahové hodnoty tak, že zadáte hodnotu v procentech v **prahová hodnota** textového pole.  
+    3. Konfigurace nastavení požadované prahové hodnoty tak, že zadáte hodnotu v procentech v **prahová hodnota** textového pole.  
   
-    4.  Pokud chcete povolit upozornění snížení šumu v generované sestavě, vyberte **zobrazovat upozornění, když je povolené snížení šumu**. Toto je výchozí nastavení.  
+    4. Pokud chcete povolit upozornění snížení šumu v generované sestavě, vyberte **zobrazovat upozornění, když je povolené snížení šumu**. Toto je výchozí nastavení.  
   
-3.  Zakázat ořezávání, zrušte **povolení ořezávání**.  
+3. Zakázat ořezávání, zrušte **povolení ořezávání**.  
   
-4.  Klikněte na **OK**.  
+4. Klikněte na **OK**.  
   
 ### <a name="to-configure-folding-for-a-performance-report"></a>Ke konfiguraci skládání pro sestavu výkonu  
   
-1.  Na **Developer** nabídky, klikněte na tlačítko **Profiler** a potom klikněte na tlačítko **možnosti snížení šumu**.  
+1. Na **Developer** nabídky, klikněte na tlačítko **Profiler** a potom klikněte na tlačítko **možnosti snížení šumu**.  
   
      **Snížení šumu** zobrazí se dialogové okno.  
   
-2.  Pokud chcete povolit skládání, postupujte podle těchto kroků:  
+2. Pokud chcete povolit skládání, postupujte podle těchto kroků:  
   
-    1.  Vyberte **Povolit skládání**. Toto je výchozí nastavení.  
+    1. Vyberte **Povolit skládání**. Toto je výchozí nastavení.  
   
         > [!NOTE]
         >  Pokud je povolené snížení šumu na informačním panelu se zobrazí v sestavě. Další informace najdete v tématu [zobrazení stromu volání](../profiling/call-tree-view.md) a [přidělení – zobrazení](../profiling/dotnet-memory-allocations-view.md).  
   
-    2.  Nakonfigurovat pomocí nastavení hodnoty **hodnotu** rozevíracího seznamu a vyberte příslušné nastavení.  
+    2. Nakonfigurovat pomocí nastavení hodnoty **hodnotu** rozevíracího seznamu a vyberte příslušné nastavení.  
   
-    3.  Konfigurace nastavení požadované prahové hodnoty tak, že zadáte hodnotu v procentech v **prahová hodnota** textového pole.  
+    3. Konfigurace nastavení požadované prahové hodnoty tak, že zadáte hodnotu v procentech v **prahová hodnota** textového pole.  
   
-    4.  Pokud chcete povolit upozornění snížení šumu v generované sestavě, vyberte **zobrazovat upozornění, když je povolené snížení šumu**. Toto je výchozí nastavení.  
+    4. Pokud chcete povolit upozornění snížení šumu v generované sestavě, vyberte **zobrazovat upozornění, když je povolené snížení šumu**. Toto je výchozí nastavení.  
   
-3.  Chcete-li zakázat skládání, zrušte **Povolit skládání**.  
+3. Chcete-li zakázat skládání, zrušte **Povolit skládání**.  
   
-4.  Klikněte na **OK**.  
+4. Klikněte na **OK**.  
   
 ## <a name="see-also"></a>Viz také  
  [Zobrazení sestav nástrojů pro přizpůsobení výkonu](../profiling/customizing-performance-tools-report-views.md)   

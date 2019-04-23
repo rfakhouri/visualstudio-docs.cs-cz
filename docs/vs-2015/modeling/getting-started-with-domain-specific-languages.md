@@ -9,12 +9,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3ac51765fd89324c3d4098a4aa92afc9e5bbc1bf
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 99fdded48ab720e7b5efbe0e4801926fe4c4c64a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57868066"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60090612"
 ---
 # <a name="getting-started-with-domain-specific-languages"></a>Začínáme s jazyky specifickými pro doménu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -70,9 +70,9 @@ Toto téma vysvětluje základní koncepty při definování a používání jaz
   
 6. Zadejte příponu názvu souboru vašeho DSL v na odpovídající stránku průvodce. Toto je rozšíření, které budou používat soubory, které obsahují instance tohoto kódu DSL.  
   
-   -   Vyberte rozšíření, která nejsou spojena s libovolnou aplikací v počítači nebo v libovolném počítači, ve kterém chcete nainstalovat DSL. Například **docx** a **htm** bude nepřijatelná souboru přípony názvu.  
+   - Vyberte rozšíření, která nejsou spojena s libovolnou aplikací v počítači nebo v libovolném počítači, ve kterém chcete nainstalovat DSL. Například **docx** a **htm** bude nepřijatelná souboru přípony názvu.  
   
-   -   Průvodce zobrazí upozornění, pokud se používá rozšíření, které jste zadali jako DSL. Zvažte možnost použít jinou příponu. Můžou také resetovat Visual Studio SDK experimentální instanci vymazání starých experimentální návrháře. Klikněte na tlačítko **Start**, klikněte na tlačítko **všechny programy**, **Microsoft Visual Studio 2010 SDK**, **nástroje**a potom **resetování Microsoftu Instance sady Visual Studio 2010 experimentální**.  
+   - Průvodce zobrazí upozornění, pokud se používá rozšíření, které jste zadali jako DSL. Zvažte možnost použít jinou příponu. Můžou také resetovat Visual Studio SDK experimentální instanci vymazání starých experimentální návrháře. Klikněte na tlačítko **Start**, klikněte na tlačítko **všechny programy**, **Microsoft Visual Studio 2010 SDK**, **nástroje**a potom **resetování Microsoftu Instance sady Visual Studio 2010 experimentální**.  
   
 7. Kontrolovat další stránky a pak klikněte na tlačítko **Dokončit**.  
   
@@ -90,13 +90,13 @@ Toto téma vysvětluje základní koncepty při definování a používání jaz
 ## <a name="the-important-parts-of-the-dsl-solution"></a>Důležité části řešení DSL  
  Všimněte si, že následující aspekty nové řešení.  
   
--   **Dsl\DslDefinition.DSL** jedná se o soubor, jestli se při vytváření řešení DSL. Téměř všechny kódu v řešení se vygeneruje z tohoto souboru, a jsou jste tady udělali většinu změny provedené v definici DSL. Další informace najdete v tématu práci s [práce s diagramem definice DSL](../modeling/working-with-the-dsl-definition-diagram.md).  
+- **Dsl\DslDefinition.DSL** jedná se o soubor, jestli se při vytváření řešení DSL. Téměř všechny kódu v řešení se vygeneruje z tohoto souboru, a jsou jste tady udělali většinu změny provedené v definici DSL. Další informace najdete v tématu práci s [práce s diagramem definice DSL](../modeling/working-with-the-dsl-definition-diagram.md).  
   
--   **Projektu DSL** tento projekt obsahuje kód, který definuje jazyka specifického pro doménu.  
+- **Projektu DSL** tento projekt obsahuje kód, který definuje jazyka specifického pro doménu.  
   
--   **Projekt DslPackage** tohoto projektu obsahuje kód, který umožňuje, aby instance DSL otevřít a upravit v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+- **Projekt DslPackage** tohoto projektu obsahuje kód, který umožňuje, aby instance DSL otevřít a upravit v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
-##  <a name="Debugging"></a> Spuštění DSL  
+## <a name="Debugging"></a> Spuštění DSL  
  Řešení DSL můžete spustit ihned po jeho vytvoření. Později můžete upravit definice DSL postupně, spouštění řešení znovu po každé změně.  
   
 #### <a name="to-experiment-with-the-dsl"></a>Můžete experimentovat s DSL  
@@ -124,9 +124,9 @@ Toto téma vysvětluje základní koncepty při definování a používání jaz
   
 4. Pomocí nástrojů pro vytváření obrazců a konektorů v diagramu.  
   
-   1.  K vytvoření tvarů, přetáhněte z nástroje příklad tvar do diagramu.  
+   1. K vytvoření tvarů, přetáhněte z nástroje příklad tvar do diagramu.  
   
-   2.  Chcete-li připojit dva tvary, klikněte na nástroj konektor příklad, klepněte na první tvar a klikněte obrazec.  
+   2. Chcete-li připojit dva tvary, klikněte na nástroj konektor příklad, klepněte na první tvar a klikněte obrazec.  
   
 5. Klikněte na popisky obrazce tím je Změníme.  
   
@@ -190,43 +190,43 @@ Toto téma vysvětluje základní koncepty při definování a používání jaz
   
 ##### <a name="to-rename-domain-classes-relationships-and-tools"></a>Chcete-li přejmenovat doménovými třídami, relace a nástroje  
   
-1.  V diagramu DslDefinition přejmenovat **ExampleModel** k **FamilyTreeModel**, **ExampleElement** k **osoba**,  **Cíle** k **rodiče**, a **zdroje** k **podřízené**. Můžete kliknout na každý popisek jej můžete změnit.  
+1. V diagramu DslDefinition přejmenovat **ExampleModel** k **FamilyTreeModel**, **ExampleElement** k **osoba**,  **Cíle** k **rodiče**, a **zdroje** k **podřízené**. Můžete kliknout na každý popisek jej můžete změnit.  
   
      ![Diagramem definice DSL &#45; řady stromu modelu](../modeling/media/familyt-person.png "FamilyT_Person")  
   
-2.  Přejmenujte element a konektor nástroje.  
+2. Přejmenujte element a konektor nástroje.  
   
-    1.  Kliknutím na kartu v Průzkumníku řešení otevřete okno Průzkumník DSL. Pokud nevidíte, na **zobrazení** přejděte **ostatní Windows** a potom klikněte na tlačítko **Průzkumník DSL**. Průzkumník modelu DSL je viditelná pouze v případě diagramem definice DSL aktivní okno.  
+    1. Kliknutím na kartu v Průzkumníku řešení otevřete okno Průzkumník DSL. Pokud nevidíte, na **zobrazení** přejděte **ostatní Windows** a potom klikněte na tlačítko **Průzkumník DSL**. Průzkumník modelu DSL je viditelná pouze v případě diagramem definice DSL aktivní okno.  
   
-    2.  Otevřete okno Vlastnosti a umístěte ho tak, aby se zobrazí Průzkumník DSL a vlastnosti ve stejnou dobu.  
+    2. Otevřete okno Vlastnosti a umístěte ho tak, aby se zobrazí Průzkumník DSL a vlastnosti ve stejnou dobu.  
   
-    3.  V okně Průzkumník DSL, rozbalte **Editor**, **karty panelu nástrojů**,  *\<vašeho DSL >* a potom **nástroje**.  
+    3. V okně Průzkumník DSL, rozbalte **Editor**, **karty panelu nástrojů**,  *\<vašeho DSL >* a potom **nástroje**.  
   
-    4.  Klikněte na tlačítko **ExampleElement**. Toto je položku sady nástrojů, který se používá k vytváření prvků.  
+    4. Klikněte na tlačítko **ExampleElement**. Toto je položku sady nástrojů, který se používá k vytváření prvků.  
   
-    5.  V okně Vlastnosti změňte **název** vlastnost **osoba**.  
+    5. V okně Vlastnosti změňte **název** vlastnost **osoba**.  
   
          Všimněte si, že **titulek** vlastnost také změní.  
   
-    6.  Stejným způsobem, změňte název **ExampleConnector** nástroje **ParentLink**. Příkaz ALTER **titulek** vlastnost tak, že není kopie vlastnost Name. Zadejte například **nadřazeného odkazu**.  
+    6. Stejným způsobem, změňte název **ExampleConnector** nástroje **ParentLink**. Příkaz ALTER **titulek** vlastnost tak, že není kopie vlastnost Name. Zadejte například **nadřazeného odkazu**.  
   
-3.  Opětovné sestavení DSL.  
+3. Opětovné sestavení DSL.  
   
-    1.  Uložte soubor definici DSL.  
+    1. Uložte soubor definici DSL.  
   
-    2.  Klikněte na tlačítko **Transformovat všechny šablony** na panelu nástrojů Průzkumník řešení  
+    2. Klikněte na tlačítko **Transformovat všechny šablony** na panelu nástrojů Průzkumník řešení  
   
-    3.  Stiskněte klávesu F5. Počkejte, dokud experimentální instanci [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] se zobrazí.  
+    3. Stiskněte klávesu F5. Počkejte, dokud experimentální instanci [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] se zobrazí.  
   
-4.  V řešení ladění v experimentální instanci [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], otevřete soubor modelu testu. Prvky problém napravit přetáhnout z panelu nástrojů. Všimněte si, že došlo ke změně nástroj popisků a názvy typů v Průzkumník DSL.  
+4. V řešení ladění v experimentální instanci [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], otevřete soubor modelu testu. Prvky problém napravit přetáhnout z panelu nástrojů. Všimněte si, že došlo ke změně nástroj popisků a názvy typů v Průzkumník DSL.  
   
-5.  Uložte soubor modelu.  
+5. Uložte soubor modelu.  
   
-6.  Otevřete soubor .tt a nahradit výskyty prvku staré názvy typ a vlastnost nové názvy.  
+6. Otevřete soubor .tt a nahradit výskyty prvku staré názvy typ a vlastnost nové názvy.  
   
-7.  Ujistěte se, že název souboru, který je zadaný v souboru .tt určuje Testovat model.  
+7. Ujistěte se, že název souboru, který je zadaný v souboru .tt určuje Testovat model.  
   
-8.  Uložte soubor .tt. Otevřete vygenerovaný soubor zobrazit výsledek spuštění kódu v souboru .tt. Ověřte, zda je správný.  
+8. Uložte soubor .tt. Otevřete vygenerovaný soubor zobrazit výsledek spuštění kódu v souboru .tt. Ověřte, zda je správný.  
   
 ### <a name="add-domain-properties-to-classes"></a>Přidání domény vlastností do třídy  
  Přidání vlastností do doménovou třídou, třeba k reprezentaci let narození a smrti osoby.  
@@ -237,29 +237,29 @@ Toto téma vysvětluje základní koncepty při definování a používání jaz
   
 1. Přidejte vlastnosti.  
   
-   1.  V definici DSL diagramu, klikněte pravým tlačítkem na **osoba** doménové třídy, přejděte na příkaz **přidat**a potom klikněte na tlačítko **doménovou vlastnost**.  
+   1. V definici DSL diagramu, klikněte pravým tlačítkem na **osoba** doménové třídy, přejděte na příkaz **přidat**a potom klikněte na tlačítko **doménovou vlastnost**.  
   
-   2.  Zadejte seznam nové názvy vlastností, jako například **narození** a **smrti**. Stisknutím klávesy **Enter** po každé z nich.  
+   2. Zadejte seznam nové názvy vlastností, jako například **narození** a **smrti**. Stisknutím klávesy **Enter** po každé z nich.  
   
 2. Přidáte dekoratéry, které se zobrazí vlastnosti ve tvaru.  
   
-   1.  Postupujte podle Šedá čára, která rozšiřuje z doménové třídy osoba na druhé straně diagramu. Toto je mapa elementu diagramu. Doménová třída odkazuje na třídu tvaru.  
+   1. Postupujte podle Šedá čára, která rozšiřuje z doménové třídy osoba na druhé straně diagramu. Toto je mapa elementu diagramu. Doménová třída odkazuje na třídu tvaru.  
   
-   2.  Klikněte pravým tlačítkem na tuto třídu tvar, přejděte na **přidat**a potom klikněte na tlačítko **Text Dekoratér**.  
+   2. Klikněte pravým tlačítkem na tuto třídu tvar, přejděte na **přidat**a potom klikněte na tlačítko **Text Dekoratér**.  
   
-   3.  Přidejte dva dekoratéry s názvy, například **BirthDecorator** a **DeathDecorator**.  
+   3. Přidejte dva dekoratéry s názvy, například **BirthDecorator** a **DeathDecorator**.  
   
-   4.  Vyberte každý nový dekoratér a v okně Vlastnosti nastavte **pozice** pole. Určuje, kde se zobrazí hodnota vlastnosti domény na obrazec. Například nastavte **InnerBottomLeft** a **InnerBottomRight**.  
+   4. Vyberte každý nový dekoratér a v okně Vlastnosti nastavte **pozice** pole. Určuje, kde se zobrazí hodnota vlastnosti domény na obrazec. Například nastavte **InnerBottomLeft** a **InnerBottomRight**.  
   
         ![Definici obrazce oddílu](../modeling/media/familyt-compartment.png "FamilyT_Compartment")  
   
 3. Mapovat dekoratéry vlastnosti.  
   
-   1.  Otevřete okno Podrobnosti DSL. Obvykle je na kartě vedle v okně výstup. Pokud nevidíte, na **zobrazení** nabídky, přejděte k **ostatní Windows**a potom klikněte na tlačítko **podrobnosti DSL**.  
+   1. Otevřete okno Podrobnosti DSL. Obvykle je na kartě vedle v okně výstup. Pokud nevidíte, na **zobrazení** nabídky, přejděte k **ostatní Windows**a potom klikněte na tlačítko **podrobnosti DSL**.  
   
-   2.  Na diagramem definice DSL, klikněte na řádek, který se připojí **osoba** doménovou třídu třídy obrazce.  
+   2. Na diagramem definice DSL, klikněte na řádek, který se připojí **osoba** doménovou třídu třídy obrazce.  
   
-   3.  V **podrobnosti DSL**na **mapování Dekoratéru** kartu, klikněte na zaškrtávací políčko na nenamapované dekoratér. V **vlastnost Display, vlastnost**, vyberte doménová vlastnost, ke kterému chcete mapovat. Například namapovat **BirthDecorator** k **narození**.  
+   3. V **podrobnosti DSL**na **mapování Dekoratéru** kartu, klikněte na zaškrtávací políčko na nenamapované dekoratér. V **vlastnost Display, vlastnost**, vyberte doménová vlastnost, ke kterému chcete mapovat. Například namapovat **BirthDecorator** k **narození**.  
   
 4. Uložit DSL, klikněte na možnost Transformovat všechny šablony a stiskněte klávesu F5.  
   
@@ -276,9 +276,9 @@ Toto téma vysvětluje základní koncepty při definování a používání jaz
   
 ##### <a name="to-add-and-display-a-new-domain-class"></a>Přidat a zobrazit novou třídu domény  
   
-1.  Přidat doménovou třídu a udělat podřízeným kořen modelu.  
+1. Přidat doménovou třídu a udělat podřízeným kořen modelu.  
   
-    1.  V definici DSL diagramu, klikněte na tlačítko **vztah obsažení** nástroj, klikněte na tlačítko kořenová třída **FamilyTreeModel**a potom klikněte na prázdnou část diagramu.  
+    1. V definici DSL diagramu, klikněte na tlačítko **vztah obsažení** nástroj, klikněte na tlačítko kořenová třída **FamilyTreeModel**a potom klikněte na prázdnou část diagramu.  
   
          Novou třídu doménové se zobrazí, který je připojen k FamilyTreeModel s vztah obsažení.  
   
@@ -287,60 +287,60 @@ Toto téma vysvětluje základní koncepty při definování a používání jaz
         > [!NOTE]
         >  Každá třída domény s výjimkou kořen modelu musí být pro cílový alespoň jeden vztah obsažení, nebo musí dědit z třídy, která je cílem obsažení. Z tohoto důvodu je často vhodné vytvořit doménovou třídu s použitím nástroje vztah obsažení.  
   
-    2.  Přidat doménová vlastnost, která na novou třídu, například **název**.  
+    2. Přidat doménová vlastnost, která na novou třídu, například **název**.  
   
-2.  Přidáte vztah odkazu mezi osoby a města.  
+2. Přidáte vztah odkazu mezi osoby a města.  
   
-    1.  Klikněte na tlačítko **referenční vztah** nástroj, klikněte na osobu a potom klikněte na města.  
+    1. Klikněte na tlačítko **referenční vztah** nástroj, klikněte na osobu a potom klikněte na města.  
   
          ![Fragment definice DSL: kořen stromu řady](../modeling/media/familyt-root.png "FamilyT_Root")  
   
         > [!NOTE]
         >  Referenční stavy představují křížové odkazy z jedné části stromu modelu do jiného.  
   
-3.  Přidáte prvek k reprezentaci měst v diagramech modelů.  
+3. Přidáte prvek k reprezentaci měst v diagramech modelů.  
   
-    1.  Přetáhněte **obrazec geometrie** z panelu nástrojů do diagramu a přejmenujte jej, například **TownShape**.  
+    1. Přetáhněte **obrazec geometrie** z panelu nástrojů do diagramu a přejmenujte jej, například **TownShape**.  
   
-    2.  V okně Vlastnosti nastavte pole vzhled nové obrazce, jako je barva výplně a Geometry.  
+    2. V okně Vlastnosti nastavte pole vzhled nové obrazce, jako je barva výplně a Geometry.  
   
-    3.  Přidejte Dekoratér pro zobrazovaný název města a přejmenujte jej NameDecorator. Nastavte jeho vlastnost umístění.  
+    3. Přidejte Dekoratér pro zobrazovaný název města a přejmenujte jej NameDecorator. Nastavte jeho vlastnost umístění.  
   
-4.  Doménová třída městě namapujte TownShape.  
+4. Doménová třída městě namapujte TownShape.  
   
-    1.  Klikněte na tlačítko **mapa elementu diagramu** nástroje a potom klikněte na městě doménové třídy a třídy TownShape obrazce.  
+    1. Klikněte na tlačítko **mapa elementu diagramu** nástroje a potom klikněte na městě doménové třídy a třídy TownShape obrazce.  
   
-    2.  V **mapování Dekoratéru** karty **podrobnosti DSL** vybrané okno s konektorem mapy, zkontrolujte NameDecorator a nastavit **vlastnost Display, vlastnost** název.  
+    2. V **mapování Dekoratéru** karty **podrobnosti DSL** vybrané okno s konektorem mapy, zkontrolujte NameDecorator a nastavit **vlastnost Display, vlastnost** název.  
   
-5.  Vytvořte konektor k zobrazení vztah mezi osoby a měst.  
+5. Vytvořte konektor k zobrazení vztah mezi osoby a měst.  
   
-    1.  Konektor z panelu nástrojů přetáhněte do diagramu. Přejmenujte ho a nastavte jeho vlastnosti vzhledu.  
+    1. Konektor z panelu nástrojů přetáhněte do diagramu. Přejmenujte ho a nastavte jeho vlastnosti vzhledu.  
   
-    2.  Použití **mapa elementu diagramu** nástroj propojit nový konektor pro vztah mezi osoby a města.  
+    2. Použití **mapa elementu diagramu** nástroj propojit nový konektor pro vztah mezi osoby a města.  
   
          ![Definice řady stromu pomocí přidání obrazce mapy](../modeling/media/familyt-shapemap.png "FamilyT_ShapeMap")  
   
-6.  Vytvořte nástroj pro element umožňující města new.  
+6. Vytvořte nástroj pro element umožňující města new.  
   
-    1.  V **Průzkumník DSL**, rozbalte **Editor** pak **karty panelu nástrojů**.  
+    1. V **Průzkumník DSL**, rozbalte **Editor** pak **karty panelu nástrojů**.  
   
-    2.  Klikněte pravým tlačítkem na  *\<vašeho DSL >* a potom klikněte na tlačítko **přidejte nový prvek nástroj**.  
+    2. Klikněte pravým tlačítkem na  *\<vašeho DSL >* a potom klikněte na tlačítko **přidejte nový prvek nástroj**.  
   
-    3.  Nastavte **název** vlastnosti nového nástroje a sady jeho **třídy** vlastnost město.  
+    3. Nastavte **název** vlastnosti nového nástroje a sady jeho **třídy** vlastnost město.  
   
-    4.  Nastavte **panelu nástrojů ikonu** vlastnost. Klikněte na tlačítko **[...]**  a **název souboru** vyberte soubor ikony.  
+    4. Nastavte **panelu nástrojů ikonu** vlastnost. Klikněte na tlačítko **[...]**  a **název souboru** vyberte soubor ikony.  
   
-7.  Vytvořte konektor nástroje pro vytvoření propojení mezi měst a osoby.  
+7. Vytvořte konektor nástroje pro vytvoření propojení mezi měst a osoby.  
   
-    1.  Klikněte pravým tlačítkem na  *\<vašeho DSL >* a potom klikněte na tlačítko **přidat nový konektor nástroje**.  
+    1. Klikněte pravým tlačítkem na  *\<vašeho DSL >* a potom klikněte na tlačítko **přidat nový konektor nástroje**.  
   
-    2.  Nastavte vlastnost Name atributu nový nástroj.  
+    2. Nastavte vlastnost Name atributu nový nástroj.  
   
-    3.  V **Tvůrce propojení** vlastnosti, vyberte tvůrce, který obsahuje název města osoba vztah.  
+    3. V **Tvůrce propojení** vlastnosti, vyberte tvůrce, který obsahuje název města osoba vztah.  
   
-    4.  Nastavte **panelu nástrojů ikonu**.  
+    4. Nastavte **panelu nástrojů ikonu**.  
   
-8.  Uložte definici DSL, klikněte na **Transformovat všechny šablony**a potom stiskněte klávesu **F5**.  
+8. Uložte definici DSL, klikněte na **Transformovat všechny šablony**a potom stiskněte klávesu **F5**.  
   
 9. V experimentální instanci [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], otevřete soubor modelu testu. Použijte nové nástroje k vytvoření měst a propojení mezi měst a osoby. Všimněte si, že můžete vytvořit pouze odkazy mezi správné typy prvků.  
   
@@ -385,7 +385,7 @@ Toto téma vysvětluje základní koncepty při definování a používání jaz
   
  Další informace najdete v tématu [nasazení řešení jazyka specifického pro doménu](../modeling/deploying-domain-specific-language-solutions.md).  
   
-##  <a name="Reset"></a> Odebrání starého experimentální DSL  
+## <a name="Reset"></a> Odebrání starého experimentální DSL  
  Pokud jste vytvořili experimentální DSL, která už nechcete, můžete ho odebrat z počítače resetováním [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] experimentální instanci aplikace.  
   
  Tato akce odebere z počítače všechny experimentální DSL a další experimentální [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozšíření. Toto jsou rozšíření, které byly provedeny v režimu ladění.  
@@ -394,9 +394,9 @@ Toto téma vysvětluje základní koncepty při definování a používání jaz
   
 #### <a name="to-reset-the-visual-studio-experimental-instance"></a>Resetovat Visual Studio experimentální instance  
   
-1.  Klikněte na tlačítko **Start**, klikněte na tlačítko **všechny programy**, **Microsoft Visual Studio 2010 SDK**, **nástroje**a potom **resetování Microsoftu Instance sady Visual Studio 2010 experimentální**.  
+1. Klikněte na tlačítko **Start**, klikněte na tlačítko **všechny programy**, **Microsoft Visual Studio 2010 SDK**, **nástroje**a potom **resetování Microsoftu Instance sady Visual Studio 2010 experimentální**.  
   
-2.  Znovu sestavit všechny experimentální DSL nebo další experimentální [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozšíření, které chcete použít.  
+2. Znovu sestavit všechny experimentální DSL nebo další experimentální [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozšíření, které chcete použít.  
   
 ## <a name="see-also"></a>Viz také  
  [Porozumění modelům, třídám a vztahům](../modeling/understanding-models-classes-and-relationships.md)   

@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 994135458fb7bc76ef2ab7f4a76ac184e1b6426e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: fc97aad2d3a056a61ae925816ac6d2457918db65
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54945980"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100778"
 ---
 # <a name="how-to-generate-registry-information-for-an-installer"></a>Postupy: Vygenerování informací registru pro instalační službu
 
@@ -28,7 +28,7 @@ ms.locfileid: "54945980"
 
 ## <a name="to-create-a-registration-manifest"></a>K vytvoření manifestu registrace
 
--   Spustit RegPkg s **/RegFile** přepnout. Zadejte další přepínače, název výstupního souboru a cestu sady VSPackage.
+- Spustit RegPkg s **/RegFile** přepnout. Zadejte další přepínače, název výstupního souboru a cestu sady VSPackage.
 
      Například na příkazovém řádku zadejte přibližně takto:
 
@@ -38,7 +38,7 @@ ms.locfileid: "54945980"
 
 ## <a name="to-view-a-registration-manifest"></a>Chcete-li zobrazit registrace manifestu
 
--   Otevření manifestu registrace v libovolném textovém editoru.
+- Otevření manifestu registrace v libovolném textovém editoru.
 
      V následujícím příkladu se registrace manifestu a vytvoří RegPkg pro IronPython jazyková služba:
 
@@ -99,7 +99,7 @@ ms.locfileid: "54945980"
 
 ## <a name="to-create-a-windows-installer-xml-toolset-include-file"></a>Vytvoření XML Instalační služby systému Windows sady nástrojů zahrnout soubor
 
--   Spustit RegPkg s **/wixfile** přepnout. Zadejte další přepínače, název výstupního souboru a cestu sady VSPackage.
+- Spustit RegPkg s **/wixfile** přepnout. Zadejte další přepínače, název výstupního souboru a cestu sady VSPackage.
 
      Například na příkazovém řádku zadejte přibližně takto:
 
@@ -109,7 +109,7 @@ ms.locfileid: "54945980"
 
 ## <a name="to-view-a-windows-installer-xml-toolset-include-file"></a>Chcete-li zobrazit XML Instalační služby systému Windows sady nástrojů zahrnout soubor
 
--   Otevřít sada nástrojů XML Instalační služby systému Windows zahrnout soubor do libovolného textového editoru.
+- Otevřít sada nástrojů XML Instalační služby systému Windows zahrnout soubor do libovolného textového editoru.
 
      V následujícím příkladu je zahrnout soubor, který vytvoří RegPkg pro IronPython jazyková služba:
 

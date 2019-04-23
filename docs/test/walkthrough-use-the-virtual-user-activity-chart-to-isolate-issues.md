@@ -9,12 +9,12 @@ ms.assetid: d1c10fb9-cfeb-4e7f-9991-2d1e1103699e
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d8971546c0f51dc759731a90569d3f7dc3f0e142
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: 5e25e9c5c92d32f2b68d8ce4b967fbf191e78554
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "58069941"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114350"
 ---
 # <a name="walkthrough-using-the-virtual-user-activity-chart-to-isolate-issues"></a>Návod: Izolace problémů pomocí graf aktivity virtuálního uživatele
 
@@ -26,19 +26,19 @@ Graf aktivity virtuálního uživatele vám umožňuje vizualizovat aktivitu vir
 
 ## <a name="prerequisites"></a>Požadavky
 
--   Visual Studio Enterprise
+- Visual Studio Enterprise
 
--   Provedení těchto postupů:
+- Provedení těchto postupů:
 
-    -   [Zaznamenání a spuštění testu výkonnosti webu](/azure/devops/test/load-test/run-performance-tests-app-before-release#recordtests).
+    - [Zaznamenání a spuštění testu výkonnosti webu](/azure/devops/test/load-test/run-performance-tests-app-before-release#recordtests).
 
-    -   [Vytvoření a spuštění zátěžového testu](/azure/devops/test/load-test/run-performance-tests-app-before-release#create-a-load-test)
+    - [Vytvoření a spuštění zátěžového testu](/azure/devops/test/load-test/run-performance-tests-app-before-release#create-a-load-test)
 
 ## <a name="open-the-colorwebapp-solution-created-in-the-previous-walkthroughs"></a>Otevřete řešení ColorWebApp vytvořili v předchozí návody
 
-1.  Otevřít Visual Studio.
+1. Otevřít Visual Studio.
 
-2.  Otevřít **ColorWebApp** řešení, které obsahuje *LoadTest1.loadtest*. Tento zátěžový test výsledky z provádění kroků ve třech návodech, které jsou uvedené na začátku tohoto tématu v části předpoklady.
+2. Otevřít **ColorWebApp** řešení, které obsahuje *LoadTest1.loadtest*. Tento zátěžový test výsledky z provádění kroků ve třech návodech, které jsou uvedené na začátku tohoto tématu v části předpoklady.
 
      Zbývající kroky v tomto názorném postupu předpokládají webovou aplikaci s názvem ColorWebApp test výkonnosti webu s názvem *soubor colorwebapptest.webtest zkompilujete* a zátěžového testu s názvem *LoadTest1.loadtest*.
 
@@ -46,7 +46,7 @@ Graf aktivity virtuálního uživatele vám umožňuje vizualizovat aktivitu vir
 
 Spusťte zátěžový test a shromáždit data aktivity virtuálního uživatele.
 
--   V **editoru zátěžových testů**, zvolte **spustit** tlačítko na panelu nástrojů. LoadTest1 se spustí.
+- V **editoru zátěžových testů**, zvolte **spustit** tlačítko na panelu nástrojů. LoadTest1 se spustí.
 
 ## <a name="isolate-issues-in-the-virtual-user-activity-chart"></a>Izolovat problémy v graf aktivity virtuálního uživatele
 
@@ -54,11 +54,11 @@ Po spuštění zátěžového testu a shromažďují data aktivity virtuálního
 
 ### <a name="to-use-the-virtual-user-activity-chart-in-your-load-test-results"></a>Chcete-li použít graf aktivity virtuálního uživatele ve vašich výsledcích zátěžového testu
 
-1.  Po načtení dokončení testu spuštěn, **Souhrn** stránky pro výsledky zátěžového testu se zobrazí v **Analyzéru zátěžového testu**. Zvolte **grafy** tlačítko na panelu nástrojů.
+1. Po načtení dokončení testu spuštěn, **Souhrn** stránky pro výsledky zátěžového testu se zobrazí v **Analyzéru zátěžového testu**. Zvolte **grafy** tlačítko na panelu nástrojů.
 
      Zobrazí se zobrazení grafů.
 
-2.  Na **doba odezvy stránky** graf, klikněte pravým tlačítkem na téměř jeden z ikony narušení prahové hodnoty a vyberte **přejít na podrobnosti uživatele**.
+2. Na **doba odezvy stránky** graf, klikněte pravým tlačítkem na téměř jeden z ikony narušení prahové hodnoty a vyberte **přejít na podrobnosti uživatele**.
 
     > [!NOTE]
     > Můžete použít **podrobnosti** tlačítko **editoru zátěžových testů** panelu nástrojů otevřete příliš grafu aktivity uživatele. Ale pokud použijete **přejít na podrobnosti uživatele** možnost, **graf aktivity virtuálního uživatele** bude automaticky zvětšit nároku test, který jste klikli pravým tlačítkem myši na v grafu.
@@ -67,37 +67,37 @@ Po spuštění zátěžového testu a shromažďují data aktivity virtuálního
 
      Vodorovné vykreslení na ose y, představují jednotlivé virtuální uživatele. Osu x zobrazuje časovou osu pro spuštění zátěžového testu.
 
-3.  V **přiblížení na dobu** nástroje níže **graf aktivity virtuálního uživatele**, upravte vlevo a vpravo posuvníky, dokud nebudou zavřít ikonu porušení prahové hodnoty. Tím se změní časového měřítka v **graf aktivity virtuálního uživatele**
+3. V **přiblížení na dobu** nástroje níže **graf aktivity virtuálního uživatele**, upravte vlevo a vpravo posuvníky, dokud nebudou zavřít ikonu porušení prahové hodnoty. Tím se změní časového měřítka v **graf aktivity virtuálního uživatele**
 
-4.  V **podrobné legendy**, zaškrtněte políčko pro **(zvýraznit chyby)**. Všimněte si, že virtuální uživatel, který způsobil porušení mezní hodnoty je zvýrazněn.
+4. V **podrobné legendy**, zaškrtněte políčko pro **(zvýraznit chyby)**. Všimněte si, že virtuální uživatel, který způsobil porušení mezní hodnoty je zvýrazněn.
 
-5.  V **filtrování výsledků** panelu, zrušte zaškrtnutí políček u **zobrazit úspěšné výsledky** a **HttpError** ale ponechte **ValidationRuleError**zaškrtnuté políčko.
+5. V **filtrování výsledků** panelu, zrušte zaškrtnutí políček u **zobrazit úspěšné výsledky** a **HttpError** ale ponechte **ValidationRuleError**zaškrtnuté políčko.
 
      **Graf aktivity virtuálního uživatele** zobrazí pouze virtuálních uživatelů, které stráví více než tři sekundy *Red.aspx* stránce uvedená porušení mezní hodnoty, které jsou nakonfigurované v předchozím postupu.
 
-6.  Umístěte ukazatel myši nad vodorovnou horizontální čáru představující virtuálních uživatelů se chyba ověřovacího pravidla pro porušení prahové hodnoty.
+6. Umístěte ukazatel myši nad vodorovnou horizontální čáru představující virtuálních uživatelů se chyba ověřovacího pravidla pro porušení prahové hodnoty.
 
-7.  Popis se zobrazí následující informace:
+7. Popis se zobrazí následující informace:
 
-    -   **ID uživatele**
+    - **ID uživatele**
 
-    -   **Scénář**
+    - **Scénář**
 
-    -   **Test**
+    - **Test**
 
-    -   **Výsledek**
+    - **Výsledek**
 
-    -   **Sítě**
+    - **Sítě**
 
-    -   **Čas spuštění**
+    - **Čas spuštění**
 
-    -   **Doba trvání**
+    - **Doba trvání**
 
-    -   **Agent**
+    - **Agent**
 
-    -   **Protokol testu**
+    - **Protokol testu**
 
-8.  Všimněte si, že **protokol testu** odkaz. Zvolte **protokol testu** odkaz.
+8. Všimněte si, že **protokol testu** odkaz. Zvolte **protokol testu** odkaz.
 
 9. Test výkonnosti webu ColorWebTest přidružený k protokolu se otevře v **prohlížeče výsledků testu výkonnosti webu**. Díky tomu můžete izolovat, kde došlo k překročení mezních hodnot.
 

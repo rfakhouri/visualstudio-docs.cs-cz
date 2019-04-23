@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 201f04852dea58d51cae10e98429f7b5f2bc6951
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 4591c6b794905eb0b8742292c752762cdea991e0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55945453"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099530"
 ---
 # <a name="how-to-add-update-or-remove-a-wcf-data-service-reference"></a>Postupy: Přidání, aktualizace nebo odebrání odkazu na datovou službu WCF
 A *odkaz na službu* umožňuje přístup k jedné nebo více projektu [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]. Použití **přidat odkaz na službu** dialogové okno pro hledání [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] v aktuálním řešení místně, v místní síti nebo na Internetu.
@@ -30,11 +30,11 @@ A *odkaz na službu* umožňuje přístup k jedné nebo více projektu [!INCLUDE
 
 ### <a name="to-add-a-reference-to-an-external-service"></a>Chcete-li přidat odkaz na externí služby
 
-1.  V **Průzkumníka řešení**, klikněte pravým tlačítkem na název projektu, ke kterému chcete přidat službu a pak klikněte na tlačítko **přidat odkaz na službu**.
+1. V **Průzkumníka řešení**, klikněte pravým tlačítkem na název projektu, ke kterému chcete přidat službu a pak klikněte na tlačítko **přidat odkaz na službu**.
 
      **Přidat odkaz na službu** zobrazí se dialogové okno.
 
-2.  V **adresu** pole, zadejte adresu URL pro službu a pak klikněte na tlačítko **Přejít** k vyhledání služby. Pokud služba implementuje uživatelské jméno a heslo zabezpečení, vám může zobrazit výzva k zadání uživatelského jména a hesla.
+2. V **adresu** pole, zadejte adresu URL pro službu a pak klikněte na tlačítko **Přejít** k vyhledání služby. Pokud služba implementuje uživatelské jméno a heslo zabezpečení, vám může zobrazit výzva k zadání uživatelského jména a hesla.
 
     > [!NOTE]
     >  Služby by měly odkazovat pouze z důvěryhodného zdroje. Přidávání odkazů z nedůvěryhodných zdrojů může ohrozit zabezpečení.
@@ -43,11 +43,11 @@ A *odkaz na službu* umožňuje přístup k jedné nebo více projektu [!INCLUDE
 
      Při hledání se zobrazí indikátor průběhu. Hledání v každém okamžiku může ukončit kliknutím na **Zastavit**.
 
-3.  V **služby** seznamu, rozbalte uzel pro službu, kterou chcete použít a vyberte sadu entit.
+3. V **služby** seznamu, rozbalte uzel pro službu, kterou chcete použít a vyberte sadu entit.
 
-4.  V **Namespace** , zadejte obor názvů, který chcete použít pro odkaz na pole.
+4. V **Namespace** , zadejte obor názvů, který chcete použít pro odkaz na pole.
 
-5.  Klikněte na tlačítko **OK** přidáte odkaz na projekt.
+5. Klikněte na tlačítko **OK** přidáte odkaz na projekt.
 
      Klient služby (proxy) se vygeneruje, a do se přidají metadata, který popisuje službu *app.config* souboru.
 
@@ -74,7 +74,7 @@ A *odkaz na službu* umožňuje přístup k jedné nebo více projektu [!INCLUDE
 
 ### <a name="to-update-a-service-reference"></a>Chcete-li aktualizovat odkaz na službu
 
--   V **Průzkumníka řešení**, klikněte pravým tlačítkem na odkaz na službu a pak klikněte na tlačítko **aktualizovat odkaz na službu**.
+- V **Průzkumníka řešení**, klikněte pravým tlačítkem na odkaz na službu a pak klikněte na tlačítko **aktualizovat odkaz na službu**.
 
      Při odkazu je aktualizována z původního umístění a klienta služby se znova vygeneroval tak, aby odrážela všechny změny v metadatech se zobrazí dialogové okno průběhu.
 
@@ -83,7 +83,7 @@ A *odkaz na službu* umožňuje přístup k jedné nebo více projektu [!INCLUDE
 
 ### <a name="to-remove-a-service-reference"></a>Chcete-li odebrat odkaz na službu
 
--   V **Průzkumníka řešení**, klikněte pravým tlačítkem na odkaz na službu a pak klikněte na tlačítko **odstranit**.
+- V **Průzkumníka řešení**, klikněte pravým tlačítkem na odkaz na službu a pak klikněte na tlačítko **odstranit**.
 
      Klient služby bude odebrán z řešení a metadat, který popisuje službu se odebere z *app.config* souboru.
 

@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 887f71f5aabf7acfdeb822bb4e05c1b0debf63ab
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 1ef2edb8996984f943ce3d7ec168eed0692f2493
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56601997"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110073"
 ---
 # <a name="component-management"></a>Správa komponent
 Jednotky úloh v instalačním programu sady Windows se označují jako součásti Instalační služby systému Windows (říká se jim WICs nebo pouze komponenty). Identifikátor GUID identifikuje každý WIC, což je základní jednotkou instalace a pro nastavení, která pomocí Instalační služby systému Windows pro počítání odkazů.
@@ -27,23 +27,23 @@ Jednotky úloh v instalačním programu sady Windows se označují jako součás
 
 ## <a name="guidelines-of-authoring-setup-for-side-by-side-installation"></a>Pokyny k vytváření nastavení pro instalaci vedle sebe
 
--   Autor soubory a klíče registru, které jsou odkazy sdíleny mezi verzí do jejich vlastních složek.
+- Autor soubory a klíče registru, které jsou odkazy sdíleny mezi verzí do jejich vlastních složek.
 
      To umožňuje snadno je můžou využívat v budoucí verzi. Například knihovny typů, které jsou registrovány globálně, přípony souborů, další položky zaregistrované v **HKEY_CLASSES_ROOT**, a tak dále.
 
--   Sdílené součásti pro seskupení samostatné slučovací moduly.
+- Sdílené součásti pro seskupení samostatné slučovací moduly.
 
      Tato strategie pomáhá Autor správně pro instalaci vedle sebe v budoucnu.
 
--   Nainstalujte sdíleným souborům a klíčům registru pomocí stejné komponenty Instalační služby systému Windows ve verzích.
+- Nainstalujte sdíleným souborům a klíčům registru pomocí stejné komponenty Instalační služby systému Windows ve verzích.
 
      Pokud používáte jiné součásti, soubory a položky registru jsou odinstalovat, pokud jeden označené verzí balíčku VSPackage je odinstalována, ale jiné VSPackage je nainstalovaná.
 
--   Nekombinujte čísly verzí a sdílené položky pod stejnou komponentou.
+- Nekombinujte čísly verzí a sdílené položky pod stejnou komponentou.
 
      To znemožňuje nainstalovat do globální umístění a verzované položky, které chcete izolované umístění sdílené položky.
 
--   Není nutné klíče sdíleného registru, které odkazují na soubory označené verzí.
+- Není nutné klíče sdíleného registru, které odkazují na soubory označené verzí.
 
      Pokud tak učiníte, při instalaci jinou verzí balíčku VSPackage se přepíše sdílené klíče. Po odebrání druhou verzi souboru, ke kterému bude ukazovat klíč je pryč.
 

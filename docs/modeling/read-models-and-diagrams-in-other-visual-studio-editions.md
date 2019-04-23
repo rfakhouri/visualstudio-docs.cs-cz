@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5363a4d2f07b22aa0a256ff40f039792a3d2a6c2
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 7d8366c0f87830a77f550dabbce2e8f875171418
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55932193"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087375"
 ---
 # <a name="read-models-and-diagrams-in-other-visual-studio-editions"></a>Čtení modelů a diagramů v jiných edicích sady Visual Studio
 
@@ -34,16 +34,16 @@ Z tohoto důvodu Pokud si chcete přečíst diagram závislostí, musí máte ta
 
 Další diagram závislostí, je minimální sadu souborů, které budete potřebovat následující:
 
--   Dva soubory pro diagram, který si chcete přečíst, například diagramů **MyDiagram.classdiagram a MyDiagram.classdiagram.layout**.
+- Dva soubory pro diagram, který si chcete přečíst, například diagramů **MyDiagram.classdiagram a MyDiagram.classdiagram.layout**.
 
     > [!NOTE]
     > Pro diagramy závislostí, také byste měli mít soubor s názvem _MyDiagram_**. layerdiagram.suppressions**.
 
--   Soubor projektu modelování (**MyModel.modelproj**)
+- Soubor projektu modelování (**MyModel.modelproj**)
 
--   V kořenovém souboru modelu (**ModelDefinition\MyModel.uml**)
+- V kořenovém souboru modelu (**ModelDefinition\MyModel.uml**)
 
--   Soubory balíčku pro všechny balíčky odkazované v diagramu (**ModelDefinition\MyPackage.uml**)
+- Soubory balíčku pro všechny balíčky odkazované v diagramu (**ModelDefinition\MyPackage.uml**)
 
 ## <a name="changes-that-you-can-make-in-read-only-mode"></a>Změny provedené v režimu jen pro čtení
 

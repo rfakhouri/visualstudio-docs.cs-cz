@@ -10,12 +10,12 @@ ms.assetid: 5a3600a1-dc20-4e55-b2a4-809736a6ae65
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: b1f39297c4e87b7d4801b786ca2132acaf366fd3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 71b26fc2d26e180af25919dde5d3c4ee1bc1f891
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54799463"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113115"
 ---
 # <a name="attaching-after-a-launch"></a>Připojení po spuštění
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -25,9 +25,9 @@ Poté, co byl spuštěn program, relace ladění je připraven k připojit ladic
 ## <a name="design-decisions"></a>Rozhodnutí o návrhu  
  Protože komunikace je snazší v rámci sdílené adresní prostor, musíte se rozhodnout, jestli je vhodnější k umožnění komunikace mezi ladicí relaci a DE nebo mezi DE a program. Zvolte z následujících možností:  
   
--   Pokud to dává větší smysl pro usnadnění komunikace mezi ladicí relaci a DE, relace ladění společně vytvoří DE a požádá DE se připojit k programu. To opustí ladicí relaci a DE společně v jeden adresní prostor a běhového prostředí a program společně v jiném.  
+- Pokud to dává větší smysl pro usnadnění komunikace mezi ladicí relaci a DE, relace ladění společně vytvoří DE a požádá DE se připojit k programu. To opustí ladicí relaci a DE společně v jeden adresní prostor a běhového prostředí a program společně v jiném.  
   
--   Pokud to dává větší smysl pro usnadnění komunikace mezi DE a program, běhové prostředí společně vytvoří DE. Kvůli tomu SDM v jeden adresní prostor a DE, běhové prostředí a program v jiném společně. Toto je typická Zavedenými, které je implementováno s interpretu pro spuštění skriptovací jazyky.  
+- Pokud to dává větší smysl pro usnadnění komunikace mezi DE a program, běhové prostředí společně vytvoří DE. Kvůli tomu SDM v jeden adresní prostor a DE, běhové prostředí a program v jiném společně. Toto je typická Zavedenými, které je implementováno s interpretu pro spuštění skriptovací jazyky.  
   
     > [!NOTE]
     >  Jak DE připojí k programu je závislý na implementaci. Komunikace mezi DE a program je také závislý na implementaci.  

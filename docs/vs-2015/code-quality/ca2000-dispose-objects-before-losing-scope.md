@@ -16,12 +16,12 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: f3456ec773b233da3ef2be1dfa7731460bdf6b44
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 4cc41376905dd5bd5df5711d2de3edf1ea1d04dd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54762957"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085035"
 ---
 # <a name="ca2000-dispose-objects-before-losing-scope"></a>CA2000: Uvolňujte objekty před ztrátou oboru
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,11 +46,11 @@ ms.locfileid: "54762957"
   
  Níže jsou uvedeny některé situace, ve kterých příkaz using nepostačuje pro ochranu objektů IDisposable a může způsobit výskyt upozornění CA2000.  
   
--   Vracení uvolnitelného objektu vyžaduje, aby byl objekt zkonstruován v rámci bloku try/finally mimo blok using.  
+- Vracení uvolnitelného objektu vyžaduje, aby byl objekt zkonstruován v rámci bloku try/finally mimo blok using.  
   
--   Inicializace členů uvolnitelného objektu by neměla být provedena v rámci konstruktoru příkazu using.  
+- Inicializace členů uvolnitelného objektu by neměla být provedena v rámci konstruktoru příkazu using.  
   
--   Vnořené konstruktory, které jsou chráněny pouze jednou obslužnou rutinou výjimky. Například  
+- Vnořené konstruktory, které jsou chráněny pouze jednou obslužnou rutinou výjimky. Například  
   
     ```  
     using (StreamReader sr = new StreamReader(new FileStream("C:\myfile.txt", FileMode.Create)))  
@@ -59,7 +59,7 @@ ms.locfileid: "54762957"
   
      způsobí výskyt upozornění CA2000, protože selhání vytvoření objektu StreamReader může vést k tomu, že objekt FileStream nebude nikdy uzavřen.  
   
--   Dynamické objekty by k implementaci vzoru odstranění objektů IDisposable měly používat stínový objekt.  
+- Dynamické objekty by k implementaci vzoru odstranění objektů IDisposable měly používat stínový objekt.  
   
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění  
  Nepotlačujte upozornění tohoto pravidla, pokud jste volali metodu na objekt, který volá metodu `Dispose`, jako například <xref:System.IO.Stream.Close%2A>, nebo pokud metoda, která vyvolala upozornění, vrátí objekt IDisposable zabalující objekt.  

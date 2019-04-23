@@ -9,19 +9,19 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 02b470926001c08695bc6c18712cbd0db41503cf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 761e0e77a0fe9f6f32f08045d81f6eab815801dd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54775997"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112322"
 ---
 # <a name="defining-shapes-and-connectors"></a>Definování obrazců a konektorů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Existuje několik typů základní tvary, které můžete použít k zobrazení informací v diagramu v jazyka specifického pro doménu (DSL).  
   
-##  <a name="shapeTypes"></a> Základní typy obrazců a konektorů  
+## <a name="shapeTypes"></a> Základní typy obrazců a konektorů  
  DSL diagram ukazuje kolekci *tvary* vzájemně propojena těmito řádky nebo *konektory*.  Obvykle, ale ne vždy:  
   
 - Tvary jsou viditelné reprezentace prvky modelu.  
@@ -45,5 +45,5 @@ Existuje několik typů základní tvary, které můžete použít k zobrazení 
 |Plaveckých drah|Plaveckých drah diagramu rozdělit do segmentů vodorovně nebo svisle. Plavecké stále pod tvary v diagramu.<br /><br /> Obvykle jsou prvky modelu plavecké nadřazena na kořen modelu a další prvky jsou nadřazena na ně. Příklad vytvoření DSL ze šablony řešení tok úkolů.|  
 |Konektory|Čáry dekorace mezi tvary obvykle představují vztahy odkazu. Můžete nastavit možnosti, aby konektor přímá nebo Pravoúhlá a mají různé typy šipky.|  
   
-##  <a name="shapeInheritance"></a> Tvar dědičnosti  
+## <a name="shapeInheritance"></a> Tvar dědičnosti  
  Obrazce mohou dědit z jiného obrazce. Tvary však musí být stejného druhu. Například může dědit pouze obrazec geometrie z obrazec geometrie. Zděděné tvary mít oddíly a dekorátory jejich základní obrazec. Konektory mohou dědit z konektorů.

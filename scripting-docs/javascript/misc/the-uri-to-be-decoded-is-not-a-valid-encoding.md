@@ -14,12 +14,12 @@ ms.assetid: 029e0790-ffd1-496d-8700-3b3dbac1b6fd
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 792403a9a53f11431e87115d7a95345e316dc2ac
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 8fd8add72d016bc3f2e815f41c29c735505c8817
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56844292"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108422"
 ---
 # <a name="the-uri-to-be-decoded-is-not-a-valid-encoding"></a>Dekódovaný identifikátor URI nemá platné kódování
 Pokoušíte se o dekódování nesprávně formátovaný URI (Uniform Resource Identifier). Identifikátory URI mají zvláštní syntaxi; Většina jiných než alfanumerických znaků musí kódováním předtím, než je možné v identifikátoru URI. Můžete použít `encodeURI` a `encodeURIComponent` metody vytvořit identifikátor URI z normální [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] řetězec.  
@@ -34,7 +34,7 @@ Pokoušíte se o dekódování nesprávně formátovaný URI (Uniform Resource I
   
 ### <a name="to-correct-this-error"></a>Oprava této chyby  
   
--   Ujistěte se, že se pokoušíte dekódování jenom platné identifikátory URI. Nelze dekódovat normální [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] řetězce mohou obsahovat neplatné znaky.  
+- Ujistěte se, že se pokoušíte dekódování jenom platné identifikátory URI. Nelze dekódovat normální [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] řetězce mohou obsahovat neplatné znaky.  
   
 ## <a name="see-also"></a>Viz také  
  [decodeURI – funkce](../../javascript/reference/decodeuri-function-javascript.md)   

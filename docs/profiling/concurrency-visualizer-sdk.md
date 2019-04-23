@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b046fb7aa11aa9ab917774dcf4fe3b4e47932afa
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: e2ade3e1b5a2317d16d668079275506509aeef7a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56621601"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60083098"
 ---
 # <a name="concurrency-visualizer-sdk"></a>SDK Vizualizéru souběžnosti
 Můžete použít zdrojový kód pomocí sada Vizualizátor souběžnosti SDK k zobrazení dalších informací ve vizualizátoru souběžnosti. Doplňující data můžete přidružit fází a události ve vašem kódu. Tyto další vizualizace, jsou označovány jako *značky*.  Úvodní prohlídka, naleznete v tématu [Představujeme sada Vizualizátor souběžnosti SDK](http://go.microsoft.com/fwlink/?LinkId=235405).
@@ -31,11 +31,11 @@ Můžete použít zdrojový kód pomocí sada Vizualizátor souběžnosti SDK k 
 
 ##### <a name="to-add-sdk-support-to-a-c-or-visual-basic-project"></a>Chcete-li přidat podporu sady SDK do projektu C# nebo Visual Basic
 
-1.  V panelu nabídky zvolte **analyzovat**, **Vizualizátor souběžnosti**, **přidat sadu SDK do projektu**.
+1. V panelu nabídky zvolte **analyzovat**, **Vizualizátor souběžnosti**, **přidat sadu SDK do projektu**.
 
-2.  Vyberte projekt, ve kterém chcete pro přístup k sadě SDK a klikněte na tlačítko **přidat sadu SDK do projektu vybrané** tlačítko.
+2. Vyberte projekt, ve kterém chcete pro přístup k sadě SDK a klikněte na tlačítko **přidat sadu SDK do projektu vybrané** tlačítko.
 
-3.  Přidáte imports nebo using příkazu do vašeho kódu.
+3. Přidáte imports nebo using příkazu do vašeho kódu.
 
     ```csharp
     using Microsoft.ConcurrencyVisualizer.Instrumentation;
@@ -46,23 +46,23 @@ Můžete použít zdrojový kód pomocí sada Vizualizátor souběžnosti SDK k 
     ```
 
 ### <a name="c"></a>C++
- V jazyce C++, vytvořit [marker_series – třída](../profiling/marker-series-class.md) objektu a použít jej k vyvolání funkce.  `marker_series` Třída zveřejňuje tři funkce pro generování značek, [marker_series::write_flag – metoda](../profiling/marker-series-write-flag-method.md), [marker_series::write_message – metoda](../profiling/marker-series-write-message-method.md)a [marker_ Metoda Series::write_alert](../profiling/marker-series-write-alert-method.md).
+ V C++, vytvořit [marker_series – třída](../profiling/marker-series-class.md) objektu a použít jej k vyvolání funkce.  `marker_series` Třída zveřejňuje tři funkce pro generování značek, [marker_series::write_flag – metoda](../profiling/marker-series-write-flag-method.md), [marker_series::write_message – metoda](../profiling/marker-series-write-message-method.md)a [marker_ Metoda Series::write_alert](../profiling/marker-series-write-alert-method.md).
 
 ##### <a name="to-add-sdk-support-to-a-c-or-c-project"></a>Chcete-li přidat podporu sady SDK do projektu jazyka C++ i c.
 
-1.  V panelu nabídky zvolte **analyzovat**, **Vizualizátor souběžnosti**, **přidat sadu SDK do projektu**.
+1. V panelu nabídky zvolte **analyzovat**, **Vizualizátor souběžnosti**, **přidat sadu SDK do projektu**.
 
-2.  Vyberte projekt, ve kterém chcete pro přístup k sadě SDK a klikněte na tlačítko **přidat sadu SDK do projektu vybrané** tlačítko.
+2. Vyberte projekt, ve kterém chcete pro přístup k sadě SDK a klikněte na tlačítko **přidat sadu SDK do projektu vybrané** tlačítko.
 
-3.  Pro jazyk C++, zahrnují `cvmarkersobj.h`. Pro jazyk C, zahrnují `cvmarkers.h`.
+3. Pro jazyk C++, zahrnují `cvmarkersobj.h`. Pro jazyk C, zahrnují `cvmarkers.h`.
 
-4.  Přidat sadu pomocí příkazu do vašeho kódu.
+4. Přidat sadu pomocí příkazu do vašeho kódu.
 
     ```cpp
     using namespace Concurrency::diagnostic;
     ```
 
-5.  Vytvořit `marker_series` objektu a předejte jej `span` konstruktoru.
+5. Vytvořit `marker_series` objektu a předejte jej `span` konstruktoru.
 
     ```C++
 
@@ -76,19 +76,19 @@ Můžete použít zdrojový kód pomocí sada Vizualizátor souběžnosti SDK k 
 
 #### <a name="to-use-a-new-marker-provider-in-a-c-or-visual-basic-project"></a>Použití nového poskytovatele značek v projektu C# nebo Visual Basic
 
-1.  Vytvoření <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.MarkerWriter> objektu.  Konstruktor přijme identifikátor GUID.
+1. Vytvoření <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.MarkerWriter> objektu.  Konstruktor přijme identifikátor GUID.
 
-2.  Chcete-li registraci poskytovatele, otevřete Vizualizátor souběžnosti [Upřesnit nastavení](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) dialogové okno.  Vyberte **značky** kartě a klikněte na tlačítko **přidat nového poskytovatele** tlačítko. V [Upřesnit nastavení](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) dialogového okna zadejte identifikátor GUID, který byl použit k vytvoření poskytovatele a popis poskytovatele.
+2. Chcete-li registraci poskytovatele, otevřete Vizualizátor souběžnosti [Upřesnit nastavení](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) dialogové okno.  Vyberte **značky** kartě a klikněte na tlačítko **přidat nového poskytovatele** tlačítko. V [Upřesnit nastavení](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) dialogového okna zadejte identifikátor GUID, který byl použit k vytvoření poskytovatele a popis poskytovatele.
 
 #### <a name="to-use-a-new-marker-provider-in-a-c-or-c-project"></a>Použití nového poskytovatele značek v projektu jazyka C++ i c.
 
-1.  Použití `CvInitProvider` funkce lze inicializovat PCV_PROVIDER.  Konstruktor přijme identifikátor GUID * a PCV_PROVIDER\*.
+1. Použití `CvInitProvider` funkce lze inicializovat PCV_PROVIDER.  Konstruktor přijme identifikátor GUID * a PCV_PROVIDER\*.
 
-2.  Chcete-li registraci poskytovatele, otevřete [Upřesnit nastavení](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) dialogové okno.  Vyberte **značky** kartě a klikněte na tlačítko **přidat nového poskytovatele** tlačítko. V tomto dialogovém okně zadejte identifikátor GUID, který byl použit k vytvoření poskytovatele a popis poskytovatele.
+2. Chcete-li registraci poskytovatele, otevřete [Upřesnit nastavení](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) dialogové okno.  Vyberte **značky** kartě a klikněte na tlačítko **přidat nového poskytovatele** tlačítko. V tomto dialogovém okně zadejte identifikátor GUID, který byl použit k vytvoření poskytovatele a popis poskytovatele.
 
 #### <a name="to-use-a-marker-series-in-a-c-or-visual-basic-project"></a>Použití značek řady v projektu C# nebo Visual Basic
 
-1.  Použití nového <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.MarkerSeries>, nejprve ji vytvořit pomocí <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.MarkerWriter> objekt a potom generovat značky události přímo z nové řady.
+1. Použití nového <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.MarkerSeries>, nejprve ji vytvořit pomocí <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.MarkerWriter> objekt a potom generovat značky události přímo z nové řady.
 
     ```csharp
     MarkerSeries series1 = myMarkerWriter.CreateMarkerSeries("Series 1");
@@ -102,7 +102,7 @@ Můžete použít zdrojový kód pomocí sada Vizualizátor souběžnosti SDK k 
 
 #### <a name="to-use-a-marker-series-in-a-c-project"></a>Použití značek řady projektu v jazyce C++
 
-1.  Vytvoření `marker_series` objektu.  Generování událostí z této nové řady.
+1. Vytvoření `marker_series` objektu.  Generování událostí z této nové řady.
 
     ```scr
     marker_series series;
@@ -111,7 +111,7 @@ Můžete použít zdrojový kód pomocí sada Vizualizátor souběžnosti SDK k 
 
 #### <a name="to-use-a-marker-series-in-a-c-project"></a>Použití značek řady v projektu jazyka C
 
-1.  Použití `CvCreateMarkerSeries` funkci, která vytvoří PCV_MARKERSERIES.
+1. Použití `CvCreateMarkerSeries` funkci, která vytvoří PCV_MARKERSERIES.
 
     ```C++
     PCV_MARKERSERIES series;

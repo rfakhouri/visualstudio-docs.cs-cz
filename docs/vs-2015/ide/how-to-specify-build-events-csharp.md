@@ -15,12 +15,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f4f54d10bb366ced70347db8d154b0a132253c97
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ae43b6b1cdc5a3c94e6eb14d0aaa398c320c6274
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54781082"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113856"
 ---
 # <a name="how-to-specify-build-events-c"></a>Postupy: Určení událostí sestavení (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,23 +35,23 @@ Použití událostí sestavení zadat příkazy, na kterých běží před zač�
   
 #### <a name="to-specify-a-build-event"></a>K určení událostí sestavení  
   
-1.  V **Průzkumníka řešení**, vyberte projekt, pro které chcete k určení událostí sestavení.  
+1. V **Průzkumníka řešení**, vyberte projekt, pro které chcete k určení událostí sestavení.  
   
-2.  Na **projektu** nabídky, klikněte na tlačítko **vlastnosti**.  
+2. Na **projektu** nabídky, klikněte na tlačítko **vlastnosti**.  
   
-3.  Vyberte **události sestavení** kartu.  
+3. Vyberte **události sestavení** kartu.  
   
-4.  V **příkazový řádek události před sestavením** zadejte syntaxe události sestavení.  
+4. V **příkazový řádek události před sestavením** zadejte syntaxe události sestavení.  
   
     > [!NOTE]
     >  Události před sestavením nebudou spuštěny, pokud je aktuální projekt a není aktivováno žádné sestavení.  
   
-5.  V **příkazový řádek události po sestavení** zadejte syntaxe události sestavení.  
+5. V **příkazový řádek události po sestavení** zadejte syntaxe události sestavení.  
   
     > [!NOTE]
     >  Přidat `call` než vše post-build příkazy, které spouštějí soubory .bat. Například `call C:\MyFile.bat` nebo `call C:\MyFile.bat call C:\MyFile2.bat`.  
   
-6.  V **spustit událost po sestavení** zadejte za jakých podmínek spustit událost po sestavení.  
+6. V **spustit událost po sestavení** zadejte za jakých podmínek spustit událost po sestavení.  
   
     > [!NOTE]
     >  Přidejte zdlouhavé syntaxi, nebo vyberte některý makra ze sestavení [pre-build Event/po sestavení příkazového řádku dialogové okno události](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md), klikněte na tlačítko se třemi tečkami (**...** ) k zobrazení do textového pole.  
@@ -145,15 +145,15 @@ Použití událostí sestavení zadat příkazy, na kterých běží před zač�
   
 #### <a name="to-invoke-a-post-build-event-to-modify-the-application-manifest"></a>Chcete-li vyvolat událost po sestavení upravit manifest aplikace  
   
-1.  Vytvoření aplikace Windows pro projekt, který má být publikován. Z **souboru** nabídky, přejděte k **nový**a potom klikněte na tlačítko **projektu**.  
+1. Vytvoření aplikace Windows pro projekt, který má být publikován. Z **souboru** nabídky, přejděte k **nový**a potom klikněte na tlačítko **projektu**.  
   
-2.  V **nový projekt** dialogového okna rozbalte **Visual C#**, klikněte na tlačítko **Windows**a potom klikněte na tlačítko **formulářová aplikace Windows** šablony. Pojmenujte projekt `CSWinApp`.  
+2. V **nový projekt** dialogového okna rozbalte **Visual C#**, klikněte na tlačítko **Windows**a potom klikněte na tlačítko **formulářová aplikace Windows** šablony. Pojmenujte projekt `CSWinApp`.  
   
-3.  S projekt vybraný v **Průzkumníka řešení**na **projektu** nabídky, klikněte na tlačítko **vlastnosti**.  
+3. S projekt vybraný v **Průzkumníka řešení**na **projektu** nabídky, klikněte na tlačítko **vlastnosti**.  
   
-4.  V Návrháři projektu, vyhledejte **publikovat** stránku a nastavit **umístění pro publikování** k `C:\TEMP\`.  
+4. V Návrháři projektu, vyhledejte **publikovat** stránku a nastavit **umístění pro publikování** k `C:\TEMP\`.  
   
-5.  Publikování projektu kliknutím **publikovat**.  
+5. Publikování projektu kliknutím **publikovat**.  
   
      Soubor manifestu bude sestaven a vložit `C:\TEMP\CSWinApp_1_0_0_0\CSWinApp.exe.manifest`. Pokud chcete zobrazit manifest, klikněte pravým tlačítkem na soubor, klikněte na tlačítko **otevřít v programu**vyberte **ze seznamu vyberte program**a potom klikněte na tlačítko **Poznámkový blok**.  
   
@@ -163,9 +163,9 @@ Použití událostí sestavení zadat příkazy, na kterých běží před zač�
     <os majorVersion="4" minorVersion="10" buildNumber="0" servicePackMajor="0" />  
     ```  
   
-6.  V Návrháři projektu, klikněte na tlačítko **události sestavení** kartě a klikněte na tlačítko **upravit POST-Build** tlačítko.  
+6. V Návrháři projektu, klikněte na tlačítko **události sestavení** kartě a klikněte na tlačítko **upravit POST-Build** tlačítko.  
   
-7.  V **příkazový řádek události po sestavení** pole, zadejte následující příkaz:  
+7. V **příkazový řádek události po sestavení** pole, zadejte následující příkaz:  
   
      `C:\TEMP\ChangeOSVersionCS.exe "$(TargetPath).manifest" 5.1.2600.0`  
   
@@ -173,7 +173,7 @@ Použití událostí sestavení zadat příkazy, na kterých běží před zač�
   
      Protože `$(TargetPath)` – makro vyjadřuje úplnou cestu ke spustitelnému souboru se `$(TargetPath)`.manifest určí manifestem aplikace vytvořeným v adresáři bin. Publikování zkopíruje tento manifest na umístění pro publikování, který jste nastavili dříve.  
   
-8.  Znovu publikujte projekt. Přejděte **publikovat** stránky a klikněte na tlačítko **publikovat**.  
+8. Znovu publikujte projekt. Přejděte **publikovat** stránky a klikněte na tlačítko **publikovat**.  
   
      Zobrazte manifest znovu. Zobrazit manifest, otevřete adresář publikovat, klikněte pravým tlačítkem na soubor, klikněte na tlačítko **otevřete s**vyberte **ze seznamu vyberte program**a potom klikněte na tlačítko **Poznámkový blok**.  
   

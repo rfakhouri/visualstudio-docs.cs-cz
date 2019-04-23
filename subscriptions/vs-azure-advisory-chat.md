@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Naučte se, abyste mohli využívat výhody Azure Advisory Chat součástí předplatných sady Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: e9640fc17f2fa924bc51ab536366479b72de0f36
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 03e55b29cea867d438ef0536a2db7ee9c4f47e36
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59656112"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102039"
 ---
 # <a name="azure-advisory-chat"></a>Chat s poradcem pro Azure
 
@@ -54,8 +54,8 @@ Nejste si jistí které předplatné používáte?  Připojte se k [ https://my.
 ## <a name="frequently-asked-questions"></a>Nejčastější dotazy
 
 ### <a name="q--what-is-the-difference-between-azure-advisory-chat-and-azure-advisor"></a>DOTAZ:  Jaký je rozdíl mezi Azure Advisory Chat a Azure Advisor?
--  O:  Azure Advisory Chat je v reálném čase chatovací služba, která vám pomůže s dotazy týkající se Azure. [Azure Advisor](/azure/advisor/advisor-overview) je individuální cloudový konzultant, který pomáhá dodržovat osvědčené postupy a optimalizovat nasazení Azure. Analyzuje konfiguraci prostředků a telemetrii využití a následně doporučí řešení, které vám může pomoct vylepšit nákladové efektivity, výkonu, vysoké dostupnosti a zabezpečení vašich prostředků Azure.
+- O:  Azure Advisory Chat je v reálném čase chatovací služba, která vám pomůže s dotazy týkající se Azure. [Azure Advisor](/azure/advisor/advisor-overview) je individuální cloudový konzultant, který pomáhá dodržovat osvědčené postupy a optimalizovat nasazení Azure. Analyzuje konfiguraci prostředků a telemetrii využití a následně doporučí řešení, které vám může pomoct vylepšit nákladové efektivity, výkonu, vysoké dostupnosti a zabezpečení vašich prostředků Azure.
 
 ## <a name="support-resources"></a>Informační zdroje podpory
--  Potřebujete pomoc se prodeje, předplatnými, účty a fakturací pro předplatná sady Visual Studio, obraťte se na Visual Studio [podpora předplatných](https://visualstudio.microsoft.com/subscriptions/support/).
--  Máte dotaz k Visual Studio IDE, DevOps služby Azure nebo jiných produktů Visual Studio nebo služeb?  Navštivte [Visual Studio – podpora](https://visualstudio.microsoft.com/support/).
+- Potřebujete pomoc se prodeje, předplatnými, účty a fakturací pro předplatná sady Visual Studio, obraťte se na Visual Studio [podpora předplatných](https://visualstudio.microsoft.com/subscriptions/support/).
+- Máte dotaz k Visual Studio IDE, DevOps služby Azure nebo jiných produktů Visual Studio nebo služeb?  Navštivte [Visual Studio – podpora](https://visualstudio.microsoft.com/support/).

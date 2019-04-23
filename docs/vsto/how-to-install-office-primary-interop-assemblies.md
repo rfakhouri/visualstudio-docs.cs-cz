@@ -13,21 +13,21 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e7ceba236859b61444546661c2b8395c75b8d792
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2ddba23ecb6007ff3b678932b118208742d1f0d4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56623044"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109501"
 ---
 # <a name="how-to-install-office-primary-interop-assemblies"></a>Postupy: Instalace primárních sestavení vzájemné spolupráce Office
   Při instalaci sady Office, nainstalujte primární definiční sestavení Microsoft Office (PIA).
 
 ## <a name="to-install-the-pias-when-you-install-office"></a>Chcete-li nainstalovat sestavení PIA při instalaci sady Office
 
-1.  Ujistěte se, že máte verzi rozhraní .NET Framework, která je starší než 2.0.
+1. Ujistěte se, že máte verzi rozhraní .NET Framework, která je starší než 2.0.
 
-2.  Instalace aplikace Microsoft Office a ujistěte se, že **Podpora programovatelnosti rozhraní .NET** výběru pro aplikace, kterou chcete rozšířit (Tato funkce je součástí výchozí instalace).
+2. Instalace aplikace Microsoft Office a ujistěte se, že **Podpora programovatelnosti rozhraní .NET** výběru pro aplikace, kterou chcete rozšířit (Tato funkce je součástí výchozí instalace).
 
     > [!WARNING]
     >  Ve výchozím nastavení jsou při sestavování, není nutné distribuovat uživatelům PIA předpokladem k použití vašeho doplňku VSTO nebo přizpůsobení PIA pro vložené ve vašem řešení.

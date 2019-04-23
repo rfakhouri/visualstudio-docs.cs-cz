@@ -16,12 +16,12 @@ caps.latest.revision: 25
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cadfa9cf4c07b84f8e0f4c00678a858876c25bd0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 88f923ab0447f1ac7d57e84d94f0ab442d912d67
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54795014"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104203"
 ---
 # <a name="how-to-view-script-documents"></a>Postupy: Zobrazení dokumentů skriptu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,17 +36,17 @@ V dřívějších verzích [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], skript 
   
 ### <a name="to-view-a-server-side-script-document"></a>Chcete-li zobrazit dokument skriptu na straně serveru  
   
-1.  V **Průzkumníka řešení**, otevřete  **\<webu cesta >** uzlu.  
+1. V **Průzkumníka řešení**, otevřete  **\<webu cesta >** uzlu.  
   
-2.  Poklikejte na soubor skriptu, který chcete zobrazit.  
+2. Poklikejte na soubor skriptu, který chcete zobrazit.  
   
      Soubor skriptu na straně serveru se otevře v okně zdroje.  
   
 ### <a name="to-view-a-client-side-script-document"></a>Chcete-li zobrazit dokument skriptu na straně klienta  
   
-1.  V **Průzkumníka řešení**, otevřete **dokumenty skriptu** uzlu.  
+1. V **Průzkumníka řešení**, otevřete **dokumenty skriptu** uzlu.  
   
-2.  Poklikejte na soubor skriptu, který chcete zobrazit.  
+2. Poklikejte na soubor skriptu, který chcete zobrazit.  
   
      Soubor skriptu na straně klienta se otevře v okně zdroje.  
   

@@ -11,21 +11,21 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f2e5b50a3f2969f8f22ce938522526a6010c640a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 56ec28d0d9202bfd72d31e95c53038dd1fa475e9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56691381"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111776"
 ---
 # <a name="servers-visual-studio-sdk"></a>Servery (Visual Studio SDK)
 V architektuře ladicího programu *server*:
 
--   Je kontejner, portů a dodavatelé portů a komunikuje porty a dodavatelé portů Správce ladění relace (SDM) a ladicí stroj.
+- Je kontejner, portů a dodavatelé portů a komunikuje porty a dodavatelé portů Správce ladění relace (SDM) a ladicí stroj.
 
--   Můžete identifikovat podle názvu a vypsat jeho porty a dodavatelé portů.
+- Můžete identifikovat podle názvu a vypsat jeho porty a dodavatelé portů.
 
--   Je reprezentován [IDebugCoreServer2](../../extensibility/debugger/reference/idebugcoreserver2.md) rozhraní, které je implementováno pouze Visual Studio (jednu instanci serveru pro každou instanci sady Visual Studio spuštěná).
+- Je reprezentován [IDebugCoreServer2](../../extensibility/debugger/reference/idebugcoreserver2.md) rozhraní, které je implementováno pouze Visual Studio (jednu instanci serveru pro každou instanci sady Visual Studio spuštěná).
 
 ## <a name="see-also"></a>Viz také:
 - [Porty](../../extensibility/debugger/ports.md)

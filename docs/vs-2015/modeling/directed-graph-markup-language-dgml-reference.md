@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5e61790245acbbb7c16b573220d0aca2a633acb2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 9330a41d0888532640774891386011f6b8dbfc24
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54756783"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106017"
 ---
 # <a name="directed-graph-markup-language-dgml-reference"></a>Referenční dokumentace jazyka přímého značení grafů (DGML)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ Orientovaný jazyka přímého značení grafů (DGML) popisuje informace, kter�
 > [!NOTE]
 >  Při úpravách souboru .dgml usnadňuje technologie IntelliSense určení atributů, které jsou k dispozici pro každý prvek, a jejich hodnot. Pro určení barvy v atributu použijte názvy pro běžné barvy, například „Blue“ (modrá) nebo šestnáctkové hodnoty ARGB, jako je například „#ffa0b1c3“. Jazyk DGML používá malou podmnožinu formátů definice barev Windows Presentation Foundation (WPF). Další informace najdete v tématu [třída barvy](http://go.microsoft.com/fwlink/?LinkId=182345).  
   
-##  <a name="DGML"></a> Syntaxe jazyka DGML  
+## <a name="DGML"></a> Syntaxe jazyka DGML  
  Následující tabulka popisuje typy prvků, které se používají v jazyce DGML:  
   
 - `<DirectedGraph></DirectedGraph>`  
@@ -302,7 +302,7 @@ Orientovaný jazyka přímého značení grafů (DGML) popisuje informace, kter�
   </DirectedGraph>  
   ```  
   
-###  <a name="AddAlias"></a> Aliasy pro běžně používané cesty  
+### <a name="AddAlias"></a> Aliasy pro běžně používané cesty  
  Nahrazení běžně používaných cest aliasy pomáhá zmenšit velikost souboru .dgml a snižuje čas potřebný k načtení nebo uložení souboru. Chcete-li vytvořit alias, přidejte `<Paths></Paths>` část na konec souboru .dgml. V této části, přidejte `<Path/>` prvek, který chcete definovat jako alias pro cestu:  
   
 ```xml  

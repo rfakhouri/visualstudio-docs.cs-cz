@@ -15,12 +15,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5380c73b8286d492cb29f60acce3294aaac25d1f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 505f876b9c7943c8b039b74459552b77ce539477
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54791644"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60101116"
 ---
 # <a name="how-to-change-the-debug-stepping-option-legacy"></a>Postupy: Změna možností krokování při ladění (starší verze)
 Toto téma popisuje, jak změnit krokování možnosti ladění pro [!INCLUDE[wf](../includes/wf-md.md)] aplikací ve starší [!INCLUDE[wfd1](../includes/wfd1-md.md)] , které mají souběžných akce. Použijte starší [!INCLUDE[wfd2](../includes/wfd2-md.md)] potřeba cílit na platformu [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] nebo [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
@@ -33,13 +33,13 @@ Toto téma popisuje, jak změnit krokování možnosti ladění pro [!INCLUDE[wf
   
 #### <a name="to-change-the-debug-stepping-option"></a>Chcete-li změnit možnosti krokování ladění  
   
-1.  Spusťte Visual Studio.  
+1. Spusťte Visual Studio.  
   
-2.  Otevřete existující projekt starších verzí pracovních postupů nebo vytvořte nový projekt, který využívá souběžných aktivit a, který cílí na buď [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] nebo [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
+2. Otevřete existující projekt starších verzí pracovních postupů nebo vytvořte nový projekt, který využívá souběžných aktivit a, který cílí na buď [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] nebo [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
   
-3.  Na **pracovního postupu** nabídky v starší [!INCLUDE[wfd2](../includes/wfd2-md.md)], přejděte na **ladění**a pak na **možnosti krokování**.  
+3. Na **pracovního postupu** nabídky v starší [!INCLUDE[wfd2](../includes/wfd2-md.md)], přejděte na **ladění**a pak na **možnosti krokování**.  
   
-4.  Vyberte buď **Instance** nebo **větev**.  
+4. Vyberte buď **Instance** nebo **větev**.  
   
 ## <a name="see-also"></a>Viz také  
  [Ladění starších verzí pracovních postupů](../workflow-designer/debugging-legacy-workflows.md)   

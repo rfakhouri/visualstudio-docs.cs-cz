@@ -23,12 +23,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7c2dce31d5d2d2564c4a277b479dbf1e463b4632
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: a01220c1c8dc21bc770c509aacfe345fd3107ae5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59666132"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105562"
 ---
 # <a name="bind-controls-to-pictures-from-a-database"></a>Vytvoření vazby ovládacích prvků k obrázkům z databáze
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,17 +41,17 @@ Můžete použít **zdroje dat** okno vytvořit vazbu bitovou kopii do databáze
   
 ## <a name="bind-a-picture-in-a-database-to-a-control"></a>Vytvořit vazbu obrázek v databázi do ovládacího prvku  
   
-1.  Ujistěte se, že chcete přidat ovládací prvek na návrhové ploše je otevřený Návrhář WPF nebo Návrhář formulářů Windows.  
+1. Ujistěte se, že chcete přidat ovládací prvek na návrhové ploše je otevřený Návrhář WPF nebo Návrhář formulářů Windows.  
   
-2.  V **zdroje dat** okna, rozbalte položku požadovanou tabulku nebo objektu zobrazíte její sloupce nebo vlastnosti.  
+2. V **zdroje dat** okna, rozbalte položku požadovanou tabulku nebo objektu zobrazíte její sloupce nebo vlastnosti.  
   
-3.  Vyberte sloupec nebo vlastnost, která obsahuje image data a vyberte jednu z následujících ovládacích prvků z jeho ovládací prvek rozevírací seznam:  
+3. Vyberte sloupec nebo vlastnost, která obsahuje image data a vyberte jednu z následujících ovládacích prvků z jeho ovládací prvek rozevírací seznam:  
   
-    -   Pokud je otevřený Návrhář WPF, vyberte **Image**.  
+    - Pokud je otevřený Návrhář WPF, vyberte **Image**.  
   
-    -   Pokud je otevřený Návrhář formulářů Windows, vyberte **PictureBox**.  
+    - Pokud je otevřený Návrhář formulářů Windows, vyberte **PictureBox**.  
   
-    -   Alternativně můžete vybrat jiného ovládacího prvku, který podporuje datovou vazbu a, která můžete zobrazit obrázky. Pokud není ovládací prvek, který chcete použít v seznamu dostupných ovládacích prvků, můžete ho přidat do seznamu a vyberte tuto možnost. Další informace najdete v tématu [přidání vlastních ovládacích prvků do okna zdroje dat](../data-tools/add-custom-controls-to-the-data-sources-window.md).  
+    - Alternativně můžete vybrat jiného ovládacího prvku, který podporuje datovou vazbu a, která můžete zobrazit obrázky. Pokud není ovládací prvek, který chcete použít v seznamu dostupných ovládacích prvků, můžete ho přidat do seznamu a vyberte tuto možnost. Další informace najdete v tématu [přidání vlastních ovládacích prvků do okna zdroje dat](../data-tools/add-custom-controls-to-the-data-sources-window.md).  
   
 ## <a name="see-also"></a>Viz také  
  [Vytvoření vazby ovládacích prvků WPF k datům v sadě Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)

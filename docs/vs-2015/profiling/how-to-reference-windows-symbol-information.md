@@ -14,12 +14,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8819964eff232cc01cbcfc2081e01eca47f04c15
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 45e1ad3c89d811a0a2bd715c86d8fcd8006600b0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54801697"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60086699"
 ---
 # <a name="how-to-reference-windows-symbol-information"></a>Postupy: Referenční informace o symbolech Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,17 +33,17 @@ Visual Studio Tools pro profilaci symbolické názvy, například názvy funkcí
   
 ### <a name="to-use-the-microsoft-symbol-server"></a>Chcete-li použít Microsoft symbol server  
   
-1.  Vytvoření složky obsahující informace o souboru symbolů, jako je například C:\SymbolCache.  
+1. Vytvoření složky obsahující informace o souboru symbolů, jako je například C:\SymbolCache.  
   
-2.  Na **nástroje** nabídky, klikněte na tlačítko **možnosti**.  
+2. Na **nástroje** nabídky, klikněte na tlačítko **možnosti**.  
   
      **Možnosti** zobrazí se dialogové okno.  
   
-3.  Rozbalte **ladění** stromu a pak klikněte na tlačítko **symboly**.  
+3. Rozbalte **ladění** stromu a pak klikněte na tlačítko **symboly**.  
   
-4.  V **Symbol umístění souborů (.pdb)** vyberte **servery symbolů společnosti Microsoft**  
+4. V **Symbol umístění souborů (.pdb)** vyberte **servery symbolů společnosti Microsoft**  
   
-5.  V **mezipaměti symbolů ze serveru symbolů do tohoto adresáře**, zadejte cestu ke složce, která byla vytvořena v kroku 1, například:  
+5. V **mezipaměti symbolů ze serveru symbolů do tohoto adresáře**, zadejte cestu ke složce, která byla vytvořena v kroku 1, například:  
   
      **C:\SymbolCache**  
   

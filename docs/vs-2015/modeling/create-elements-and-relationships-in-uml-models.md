@@ -11,12 +11,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4b31faa7c71a0f4072d922528a1abc4d040e7dae
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: ce1f236347ad811f1c5d115f30907b7e3356e3af
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54834971"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099270"
 ---
 # <a name="create-elements-and-relationships-in-uml-models"></a>Vytváření elementů a vztahů v modelech UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -87,11 +87,11 @@ using Microsoft.VisualStudio.Uml.Extensions;
   
 #### <a name="to-create-an-association"></a>Vytvoření přidružení  
   
-1.  Získání vlastníka přidružení, což je obvykle balíčku nebo modelu, který obsahuje zdrojový konec relace.  
+1. Získání vlastníka přidružení, což je obvykle balíčku nebo modelu, který obsahuje zdrojový konec relace.  
   
-2.  Vyvolání požadovaná metoda vytvořit na vlastníka.  
+2. Vyvolání požadovaná metoda vytvořit na vlastníka.  
   
-3.  Nastavte vlastnosti relace, například jeho název.  
+3. Nastavte vlastnosti relace, například jeho název.  
   
      Příklad:  
   
@@ -100,7 +100,7 @@ using Microsoft.VisualStudio.Uml.Extensions;
     association .Name = "Observes";  
     ```  
   
-4.  Nastavte vlastnosti jednotlivých konci vztahu. Vždy existují dvě `MemberEnds`. Příklad:  
+4. Nastavte vlastnosti jednotlivých konci vztahu. Vždy existují dvě `MemberEnds`. Příklad:  
   
     ```  
     association .MemberEnds[0].Name = "subject";   // role name  
@@ -125,9 +125,9 @@ anElement.Delete();
   
  Když odstraníte z modelu prvek:  
   
--   Každý vztah, který odkazuje na to se také odstraní.  
+- Každý vztah, který odkazuje na to se také odstraní.  
   
--   Také se odstraní všechny obrazce, která znázorněné v diagramu.  
+- Také se odstraní všechny obrazce, která znázorněné v diagramu.  
   
 ## <a name="see-also"></a>Viz také  
  [Rozšíření modelů a diagramů UML](../modeling/extend-uml-models-and-diagrams.md)   

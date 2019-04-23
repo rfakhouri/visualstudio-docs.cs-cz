@@ -14,12 +14,12 @@ ms.assetid: 326b6c3c-5378-452b-8ca3-ba5a06ab3d41
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7cc4cc2af5fb78c181be94863176914c17481e95
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 66789cdf50c06648b2d973d9c62a14c113aeaa0e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928722"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102837"
 ---
 # <a name="load-test-results-summary-overview"></a>Přehled souhrnu výsledků zátěžového testu
 
@@ -107,9 +107,9 @@ Výsledky transakce obsahuje seznam všech transakcí v zátěžovém testu. Ná
 
 Hodnoty percentilu sestava následující informace o transakci:
 
--   Dokončili jste 90 % z celkového počtu transakcí v méně než \<čas > sekund.
+- Dokončili jste 90 % z celkového počtu transakcí v méně než \<čas > sekund.
 
--   95 % z celkového počtu transakcí byly dokončeny v méně než \<čas > sekund.
+- 95 % z celkového počtu transakcí byly dokončeny v méně než \<čas > sekund.
 
 ## <a name="system-under-test-resources"></a>Systém pod správou zdrojů testu
 

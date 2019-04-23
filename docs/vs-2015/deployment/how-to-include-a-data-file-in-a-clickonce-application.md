@@ -17,12 +17,12 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8868ef00c9d7ffee7687970c5a09b6a044c85455
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 9120a5b3cb60f6c607ed97ab2df24bb157c72371
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54760702"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107356"
 ---
 # <a name="how-to-include-a-data-file-in-a-clickonce-application"></a>Postupy: Zahrnutí datového souboru do aplikace ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,25 +65,25 @@ Každý [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikaci nainstal
   
 ### <a name="to-include-a-data-file-by-using-mageuiexe"></a>Zahrnout soubor dat s využitím MageUI.exe  
   
-1.  Přidáte datový soubor do adresáře aplikace se zbytkem soubory vaší aplikace.  
+1. Přidáte datový soubor do adresáře aplikace se zbytkem soubory vaší aplikace.  
   
-2.  Obvykle adresáře aplikace bude označen s aktuální verzí nasazení – například v1.0.0.0.  
+2. Obvykle adresáře aplikace bude označen s aktuální verzí nasazení – například v1.0.0.0.  
   
-3.  Na **souboru** nabídky, klikněte na tlačítko **otevřete** otevřete manifest aplikace.  
+3. Na **souboru** nabídky, klikněte na tlačítko **otevřete** otevřete manifest aplikace.  
   
-4.  Vyberte **soubory** kartu.  
+4. Vyberte **soubory** kartu.  
   
-5.  Do textového pole v horní části karty zadejte adresář, který obsahuje soubory vaší aplikace a pak klikněte na tlačítko **naplnit**.  
+5. Do textového pole v horní části karty zadejte adresář, který obsahuje soubory vaší aplikace a pak klikněte na tlačítko **naplnit**.  
   
      Datový soubor se zobrazí v mřížce.  
   
-6.  Nastavte **typ souboru** hodnotu datového souboru **Data**.  
+6. Nastavte **typ souboru** hodnotu datového souboru **Data**.  
   
-7.  Uložit manifest aplikace a opětovné podepsání souboru.  
+7. Uložit manifest aplikace a opětovné podepsání souboru.  
   
      MageUI.exe vás vyzve k opětovnému podepsání souboru.  
   
-8.  Opětovné podepsání manifestu nasazení  
+8. Opětovné podepsání manifestu nasazení  
   
      Musíte znovu podepsat manifestu nasazení, protože došlo ke změně jeho hodnoty hash manifestu aplikace.  
   

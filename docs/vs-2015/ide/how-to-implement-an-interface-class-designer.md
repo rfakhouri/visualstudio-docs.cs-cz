@@ -12,12 +12,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 220f3aad7e46310ec347418c25d866d03ecc2f15
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0d49d0cb43e4d93c5981aa9000c8ae539bc84879
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54760360"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099556"
 ---
 # <a name="how-to-implement-an-interface-class-designer"></a>Postupy: Implementace rozhraní (návrhář tříd)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,14 +39,14 @@ V Návrháři tříd můžete implementovat rozhraní v diagramu tříd díky p�
   
 ### <a name="to-implement-an-interface-from-the-class-view-window"></a>Pro implementaci rozhraní z oken zobrazení tříd  
   
-1.  V diagramu tříd zobrazte třídu, která chcete implementovat rozhraní.  
+1. V diagramu tříd zobrazte třídu, která chcete implementovat rozhraní.  
   
-2.  Otevřete zobrazení tříd a vyhledejte rozhraní.  
+2. Otevřete zobrazení tříd a vyhledejte rozhraní.  
   
     > [!TIP]
     >  Pokud zobrazení tříd není otevřeno, otevřete je z **zobrazení** nabídky. Další informace o zobrazení tříd naleznete v tématu [Viewing Classes and Their Members](http://msdn.microsoft.com/71e9e8f3-261a-4e0c-87bf-5ec48b8bf333).  
   
-3.  Přetáhněte uzel rozhraní do třídy obrazec v diagramu.  
+3. Přetáhněte uzel rozhraní do třídy obrazec v diagramu.  
   
      Lupy se zobrazí jako připojené ke třídě a popisek s názvem rozhraní identifikuje vztah dědičnosti. Visual Studio generuje provizorní kód pro všechny členy rozhraní. v tomto okamžiku je implementovaná rozhraní.  
   

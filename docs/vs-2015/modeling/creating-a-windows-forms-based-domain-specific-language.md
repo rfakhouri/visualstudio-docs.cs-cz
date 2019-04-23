@@ -9,12 +9,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2caee9a39df18bfed0dc48a9c0266721500ddeca
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: ba23da85e24dd7c1020b19b66852cad86f79a03b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59654938"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60084775"
 ---
 # <a name="creating-a-windows-forms-based-domain-specific-language"></a>Vytvoření doménově specifického jazyka založeného na Windows Forms
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,11 +40,11 @@ Instance DSL zobrazující uživatelské rozhraní formulář Windows a Průzkum
 
 2. Experimentujte s počáteční příklad, který poskytuje šablony:  
 
-   1.  Transformujte všechny šablony.  
+   1. Transformujte všechny šablony.  
 
-   2.  Sestavení a spuštění ukázky (**CTRL + F5**).  
+   2. Sestavení a spuštění ukázky (**CTRL + F5**).  
 
-   3.  V experimentální instanci sady Visual Studio, otevřete `Sample` soubor v ladění projektu.  
+   3. V experimentální instanci sady Visual Studio, otevřete `Sample` soubor v ladění projektu.  
 
         Všimněte si, že se zobrazí v ovládacím prvku Windows Forms.  
 
@@ -54,17 +54,17 @@ Instance DSL zobrazující uživatelské rozhraní formulář Windows a Průzkum
 
    V instanci hlavní aplikace [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], Všimněte si, že informace o řešení DSL následující body:  
 
--   `DslDefinition.dsl` neobsahuje žádné elementy diagramu. Je to proto, že diagramy DSL nebudeme používat k zobrazení instance modely tento DSL. Místo toho vytvoří vazbu mezi formuláři Windows a modelu a prvky ve formuláři se zobrazí modelu.  
+- `DslDefinition.dsl` neobsahuje žádné elementy diagramu. Je to proto, že diagramy DSL nebudeme používat k zobrazení instance modely tento DSL. Místo toho vytvoří vazbu mezi formuláři Windows a modelu a prvky ve formuláři se zobrazí modelu.  
 
--   Kromě `Dsl` a `DslPackage` projekty, řešení obsahuje projekt třetí s názvem `UI.` **uživatelského rozhraní** projekt obsahuje definici ovládacího prvku Windows Forms. `DslPackage` závisí na `UI`, a `UI` závisí na `Dsl`.  
+- Kromě `Dsl` a `DslPackage` projekty, řešení obsahuje projekt třetí s názvem `UI.` **uživatelského rozhraní** projekt obsahuje definici ovládacího prvku Windows Forms. `DslPackage` závisí na `UI`, a `UI` závisí na `Dsl`.  
 
--   V `DslPackage` projektu `UI\DocView.cs` obsahuje kód, který zobrazí ovládacího prvku Windows Forms, který je definován v `UI` projektu.  
+- V `DslPackage` projektu `UI\DocView.cs` obsahuje kód, který zobrazí ovládacího prvku Windows Forms, který je definován v `UI` projektu.  
 
--   `UI` Projekt obsahuje ukázkový pracovní ovládacího prvku formuláře vázán na DSL. Ale nebude fungovat, pokud jste změnili definici DSL. `UI` Projekt obsahuje:  
+- `UI` Projekt obsahuje ukázkový pracovní ovládacího prvku formuláře vázán na DSL. Ale nebude fungovat, pokud jste změnili definici DSL. `UI` Projekt obsahuje:  
 
-    -   Windows Forms třídu s názvem `ModelViewControl`.  
+    - Windows Forms třídu s názvem `ModelViewControl`.  
 
-    -   Soubor s názvem `DataBinding.cs` , který obsahuje další částečnou definici z `ModelViewControl`. Chcete-li zobrazit jeho obsah v **Průzkumníka řešení**, otevřete místní nabídku pro soubor a zvolte **zobrazit kód**.  
+    - Soubor s názvem `DataBinding.cs` , který obsahuje další částečnou definici z `ModelViewControl`. Chcete-li zobrazit jeho obsah v **Průzkumníka řešení**, otevřete místní nabídku pro soubor a zvolte **zobrazit kód**.  
 
 ### <a name="about-the-ui-project"></a>Informace o projektu uživatelského rozhraní  
  Při aktualizaci souboru definice DSL definovat vlastní DSL, budete muset aktualizovat ovládacího prvku `UI` projektu k zobrazení vašeho DSL. Na rozdíl od `Dsl` a `DslPackage` projekty, ukázka `UI` projektu negeneruje z `DslDefinitionl.dsl`. Můžete přidat soubory .tt ke generování kódu, pokud chcete, i když v tomto názorném postupu, který není součástí.  
@@ -76,34 +76,34 @@ Instance DSL zobrazující uživatelské rozhraní formulář Windows a Průzkum
 
 #### <a name="to-update-the-dsl-definition"></a>Chcete-li aktualizovat definici DSL  
 
-1.  Otevřete DslDefinition.dsl v Návrháři DSL.  
+1. Otevřete DslDefinition.dsl v Návrháři DSL.  
 
-2.  Odstranit **ExampleElement**  
+2. Odstranit **ExampleElement**  
 
-3.  Přejmenovat **ExampleModel** doménovou třídu `Farm`.  
+3. Přejmenovat **ExampleModel** doménovou třídu `Farm`.  
 
      Nabízí další doménu vlastnosti s názvem `Size` typu **Int32**, a `IsOrganic` typu **logická**.  
 
     > [!NOTE]
     >  Pokud odstraníte třídu kořenové domény a pak vytvořte nový kořen, budete muset obnovit vlastnost kořenová třída editoru. V **Průzkumník DSL**vyberte **Editor**. V okně Vlastnosti nastavte **kořenová třída** k `Farm`.  
 
-4.  Použití **doménovou třídu s názvem** nástroj k vytvoření následujících doménové třídy:  
+4. Použití **doménovou třídu s názvem** nástroj k vytvoření následujících doménové třídy:  
 
-    -   `Field` – Zadejte to další doménovou vlastnost s názvem `Size`.  
+    - `Field` – Zadejte to další doménovou vlastnost s názvem `Size`.  
 
-    -   `Animal` – V okně Vlastnosti nastavte **modifikátor dědičnosti** k **abstraktní**.  
+    - `Animal` – V okně Vlastnosti nastavte **modifikátor dědičnosti** k **abstraktní**.  
 
-5.  Použití **doménové třídy** vytvořte následující třídy:  
+5. Použití **doménové třídy** vytvořte následující třídy:  
 
-    -   `Sheep`  
+    - `Sheep`  
 
-    -   `Goat`  
+    - `Goat`  
 
-6.  Použití **dědičnosti** nástroj aby `Goat` a `Sheep` dědí `Animal`.  
+6. Použití **dědičnosti** nástroj aby `Goat` a `Sheep` dědí `Animal`.  
 
-7.  Použití **obsažení** nástroj pro vložení `Field` a `Animal` pod `Farm`.  
+7. Použití **obsažení** nástroj pro vložení `Field` a `Animal` pod `Farm`.  
 
-8.  Můžete chtít přehledné diagramu. Chcete-li snížit počet duplicitních prvků, použijte **přenést zde podstrom** příkazu v místní nabídce prvky listu.  
+8. Můžete chtít přehledné diagramu. Chcete-li snížit počet duplicitních prvků, použijte **přenést zde podstrom** příkazu v místní nabídce prvky listu.  
 
 9. **Transformovat všechny šablony** na panelu nástrojů Průzkumníku řešení.  
 
@@ -117,13 +117,13 @@ Instance DSL zobrazující uživatelské rozhraní formulář Windows a Průzkum
 
 #### <a name="to-define-your-dsl-model-as-a-data-source"></a>Chcete-li definovat jako zdroj dat modelu DSL  
 
-1.  Na **Data** nabídce zvolte **zobrazit zdroje dat**.  
+1. Na **Data** nabídce zvolte **zobrazit zdroje dat**.  
 
      **Zdroje dat** otevře se okno.  
 
      Zvolte **přidat nový zdroj dat**. **Průvodce konfigurací zdroje dat** otevře.  
 
-2.  Zvolte **objekt**, **Další**.  
+2. Zvolte **objekt**, **Další**.  
 
      Rozbalte **Dsl**, **Company.FarmApp**a vyberte **farmy**, což je kořenová třída modelu. Zvolte **Dokončit**.  
 
@@ -181,7 +181,7 @@ Instance DSL zobrazující uživatelské rozhraní formulář Windows a Průzkum
 
 #### <a name="to-complete-the-bindings-to-the-dsl"></a>K dokončení vazby na DSL  
 
-1.  Přidejte následující kód v samostatném souboru kódu v **uživatelského rozhraní** projektu:  
+1. Přidejte následující kód v samostatném souboru kódu v **uživatelského rozhraní** projektu:  
 
     ```csharp  
     using System.ComponentModel;  
@@ -207,7 +207,7 @@ Instance DSL zobrazující uživatelské rozhraní formulář Windows a Průzkum
     }  
     ```  
 
-2.  V **DslPackage** projektu, upravit **DslPackage\DocView.tt** aktualizace definicí následující proměnné:  
+2. V **DslPackage** projektu, upravit **DslPackage\DocView.tt** aktualizace definicí následující proměnné:  
 
     ```csharp  
     string viewControlTypeName = "FarmControl";  
@@ -218,18 +218,18 @@ Instance DSL zobrazující uživatelské rozhraní formulář Windows a Průzkum
 
 #### <a name="to-test-the-dsl"></a>K otestování DSL  
 
-1.  Sestavte a spusťte řešení.  
+1. Sestavte a spusťte řešení.  
 
-2.  V experimentální instanci sady Visual Studio, otevřete **ukázka** souboru.  
+2. V experimentální instanci sady Visual Studio, otevřete **ukázka** souboru.  
 
-3.  V **FarmApp Explorer**, otevřete místní nabídku na **farmy** kořenový uzel a zvolte **přidat nové Goat**.  
+3. V **FarmApp Explorer**, otevřete místní nabídku na **farmy** kořenový uzel a zvolte **přidat nové Goat**.  
 
      `Goat1` Zobrazí se v **zvířat** zobrazení.  
 
     > [!WARNING]
     >  Nabídku je nutné použít na **farmy** uzlu, ne **zvířat** uzlu.  
 
-4.  Vyberte **farmy** kořenový uzel a zobrazte její vlastnosti.  
+4. Vyberte **farmy** kořenový uzel a zobrazte její vlastnosti.  
 
      Ve formě zobrazení změnit **název** nebo **velikost** farmy.  
 
@@ -239,13 +239,13 @@ Instance DSL zobrazující uživatelské rozhraní formulář Windows a Průzkum
 
 #### <a name="to-make-the-properties-update-immediately"></a>Chcete-li vlastnosti aktualizovat hned  
 
-1.  V návrhovém zobrazení FarmControl.cs vyberte jednoduché pole, jako je název, velikost nebo IsOrganic.  
+1. V návrhovém zobrazení FarmControl.cs vyberte jednoduché pole, jako je název, velikost nebo IsOrganic.  
 
-2.  V okně Vlastnosti rozbalte **DataBindings** a otevřete **(rozšířené)**.  
+2. V okně Vlastnosti rozbalte **DataBindings** a otevřete **(rozšířené)**.  
 
      V **formátování a rozšířené vazby** dialogového okna, v části **režim aktualizace zdroje dat**, zvolte **OnPropertyChanged –**.  
 
-3.  Sestavte a spusťte řešení.  
+3. Sestavte a spusťte řešení.  
 
      Ověřte, že když změníte obsah pole odpovídající vlastnost okamžitě změny modelu farmy.  
 

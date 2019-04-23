@@ -10,12 +10,12 @@ ms.assetid: ca2f4e43-322c-4431-8680-52da846940bc
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c2812874db9cf236720d7ba0888bb4abec559116
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7c7b3641a6c9fbc680f4a902b2f0e5d7bf331401
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54763524"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60090680"
 ---
 # <a name="web-project-essentials"></a>Základy webového projektu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -24,40 +24,40 @@ Webové projekty vytvářet webové aplikace. Webový projekt můžete použít 
   
  Pomocí tradičních programovacích jazycích, jako například [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] nebo [!INCLUDE[csprcs](../../includes/csprcs-md.md)], můžete vytvářet inteligentní webové stránky ke shromažďování a zpracování informací od uživatele, ukládat v databázi a tak dále.  
   
--   Model použití modelu code-behind přidruží webové stránky, které mají soubor .aspx rozšíření nebo ASMX závislé zdrojové soubory. Například hello.aspx pravděpodobně hello.aspx.cs závislé zdrojový kód souboru.  
+- Model použití modelu code-behind přidruží webové stránky, které mají soubor .aspx rozšíření nebo ASMX závislé zdrojové soubory. Například hello.aspx pravděpodobně hello.aspx.cs závislé zdrojový kód souboru.  
   
--   Kód na straně serveru související s inteligentní webové stránky je zkompilován do spustitelného souboru, který je umístěný ve složce/Bin webové stránky.  
+- Kód na straně serveru související s inteligentní webové stránky je zkompilován do spustitelného souboru, který je umístěný ve složce/Bin webové stránky.  
   
--   Soubory další zdrojového kódu, jako je například tříd pomocných rutin, které nejsou spojeny s konkrétní webovou stránku, jsou umístěny ve složce /App_Code webu.  
+- Soubory další zdrojového kódu, jako je například tříd pomocných rutin, které nejsou spojeny s konkrétní webovou stránku, jsou umístěny ve složce /App_Code webu.  
   
-    -   Projekt webu (soubor WSP) generuje jeden spustitelný soubor pro každé inteligentní webové stránky. Další spustitelné soubory jsou generovány z jakékoli soubory zdrojového kódu ve složce /App_Code.  
+    - Projekt webu (soubor WSP) generuje jeden spustitelný soubor pro každé inteligentní webové stránky. Další spustitelné soubory jsou generovány z jakékoli soubory zdrojového kódu ve složce /App_Code.  
   
-    -   Projekt webové aplikace (WAP) vytvoří jeden spustitelný soubor, který kombinuje kód pro všechny inteligentní webové stránky, jakož i všechny zdrojové soubory ve složce /App_Code.  
+    - Projekt webové aplikace (WAP) vytvoří jeden spustitelný soubor, který kombinuje kód pro všechny inteligentní webové stránky, jakož i všechny zdrojové soubory ve složce /App_Code.  
   
--   Soubor řešení pro webový projekt nachází odděleně od samotného webového serveru. Ve výchozím nastavení, řešení soubory jsou umístěny v \Documents and nastavení\\*Váš_účet*\My dokumenty\\*\<sady Visual Studio ### >* \Projects\\ *YourWebSite*.  
+- Soubor řešení pro webový projekt nachází odděleně od samotného webového serveru. Ve výchozím nastavení, řešení soubory jsou umístěny v \Documents and nastavení\\*Váš_účet*\My dokumenty\\*\<sady Visual Studio ### >* \Projects\\ *YourWebSite*.  
   
     > [!NOTE]
     >  Pokud chcete zachovat soubor řešení s webovým serverem, stačí přesuňte ho tam a znovu ho otevřete.  
   
--   Pokud otevřete web, který nemá žádný soubor řešení v sadě Visual Studio nový soubor řešení není automaticky vygenerován pro něj.  
+- Pokud otevřete web, který nemá žádný soubor řešení v sadě Visual Studio nový soubor řešení není automaticky vygenerován pro něj.  
   
--   Webové projekty mít žádné soubory projektu. Informace o projektu je uložen v souboru řešení, v souboru web.config a jinde.  
+- Webové projekty mít žádné soubory projektu. Informace o projektu je uložen v souboru řešení, v souboru web.config a jinde.  
   
--   Přidání globálních vlastností do webového projektu automaticky vytvoří soubor úložiště ve složce webového projektu řešení.  
+- Přidání globálních vlastností do webového projektu automaticky vytvoří soubor úložiště ve složce webového projektu řešení.  
   
--   Inteligentní webové stránky můžou být spojené s programovací jazyk na straně serveru pomocí direktivě stránky nebo \<skriptu runat = "server" > značky.  
+- Inteligentní webové stránky můžou být spojené s programovací jazyk na straně serveru pomocí direktivě stránky nebo \<skriptu runat = "server" > značky.  
   
--   Kromě toho webové stránky můžete mít libovolný počet bloků skriptování na straně klienta napsané v libovolném jazyce skriptování.  
+- Kromě toho webové stránky můžete mít libovolný počet bloků skriptování na straně klienta napsané v libovolném jazyce skriptování.  
   
--   Systém projektu webu je implementováno přidávání šablon projektů a položek a registraci [!INCLUDE[vwprvw](../../includes/vwprvw-md.md)] projektu.  
+- Systém projektu webu je implementováno přidávání šablon projektů a položek a registraci [!INCLUDE[vwprvw](../../includes/vwprvw-md.md)] projektu.  
   
--   Systém WAP se implementuje jako podtyp projektu, také nazývané charakterem projektu. [!INCLUDE[vwprvw](../../includes/vwprvw-md.md)] Projektu je flavored podle podtyp WAP k vytvoření systému WAP. Další informace o podtypů projektů, naleznete v tématu [podtypů projektů](../../extensibility/internals/project-subtypes.md).  
+- Systém WAP se implementuje jako podtyp projektu, také nazývané charakterem projektu. [!INCLUDE[vwprvw](../../includes/vwprvw-md.md)] Projektu je flavored podle podtyp WAP k vytvoření systému WAP. Další informace o podtypů projektů, naleznete v tématu [podtypů projektů](../../extensibility/internals/project-subtypes.md).  
   
--   Inteligentní webové stránky kombinuje HTML s programovací jazyk na straně serveru. Jazyk na straně serveru se nazývá omezením jazyka. Pro podporu omezením jazyka, musí implementovat systém webového projektu <xref:Microsoft.VisualStudio.TextManager.Interop.IVsContainedLanguage> řady rozhraní.  
+- Inteligentní webové stránky kombinuje HTML s programovací jazyk na straně serveru. Jazyk na straně serveru se nazývá omezením jazyka. Pro podporu omezením jazyka, musí implementovat systém webového projektu <xref:Microsoft.VisualStudio.TextManager.Interop.IVsContainedLanguage> řady rozhraní.  
   
-    -   Pro podporu jazyka obsažené v editoru, musíte odložit služba jazyka HTML zobrazení kódu s omezením jazyka službě omezením jazyka.  
+    - Pro podporu jazyka obsažené v editoru, musíte odložit služba jazyka HTML zobrazení kódu s omezením jazyka službě omezením jazyka.  
   
-    -   Označování chyb (červená squigglies) by měl vždycky vytvořit v primární vyrovnávací paměť editoru kódu.  
+    - Označování chyb (červená squigglies) by měl vždycky vytvořit v primární vyrovnávací paměť editoru kódu.  
   
 ## <a name="see-also"></a>Viz také  
  [Webové projekty](../../extensibility/internals/web-projects.md)

@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0d488149302e21f6e46f1c20a32fb7aecefe8337
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: c1f2f4dc5eb4c285b99a72a58836e5f81b3ef30f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57869299"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088454"
 ---
 # <a name="modify-the-style-of-objects-in-blend"></a>Úpravy stylu objektů v Blendu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,15 +25,15 @@ Nejjednodušší způsob, jak přizpůsobit objektu je můžete nastavit vlastno
   
  **V tomto tématu**:  
   
--   [Štětce: Upravení vzhledu objektu](#Brushes)  
+- [Štětce: Upravení vzhledu objektu](#Brushes)  
   
--   [Styly a šablony: Vytvoření konzistentního vzhledu a chování napříč ovládacích prvků](#Styles)  
+- [Styly a šablony: Vytvoření konzistentního vzhledu a chování napříč ovládacích prvků](#Styles)  
   
--   [Vizuální stavy: Změna vzhledu ovládacího prvku na základě jeho stavu](#Visual)  
+- [Vizuální stavy: Změna vzhledu ovládacího prvku na základě jeho stavu](#Visual)  
   
--   [Prostředky: Vytvoření barvy, styly a šablony a pozdější použití](#Resources)  
+- [Prostředky: Vytvoření barvy, styly a šablony a pozdější použití](#Resources)  
   
-##  <a name="Brushes"></a> Štětce: Upravení vzhledu objektu  
+## <a name="Brushes"></a> Štětce: Upravení vzhledu objektu  
  Použití štětce k objektu, pokud chcete změnit její vzhled.  
   
  **Podívejte se na krátké video:** ![Konfigurovat nainstalované funkce](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [stopy Editor](http://www.popscreen.com/v/6A4mO/Microsoft-Expression-Blend-The-Brushes-Editor).  
@@ -57,7 +57,7 @@ Nejjednodušší způsob, jak přizpůsobit objektu je můžete nastavit vlastno
   
  **Podívejte se na krátké video:** ![Konfigurovat nainstalované funkce](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [dlaždici štětce](http://www.popscreen.com/v/6A4iM/Microsoft-Expression-Blend-Tile-Brushes).  
   
-##  <a name="Styles"></a> Styly a šablony: Vytvoření konzistentního vzhledu a chování napříč ovládacích prvků  
+## <a name="Styles"></a> Styly a šablony: Vytvoření konzistentního vzhledu a chování napříč ovládacích prvků  
  Můžete navrhnout vzhled a chování ovládacího prvku jednou a použití tohoto návrhu pro ostatní ovládací prvky, takže není nutné udržovat je jednotlivě.  
   
  **Byste měli použít styl?** : Pokud chcete nastavit výchozí vlastnosti (například barva tlačítka), použijte *styl*. Ovládací prvek můžete upravit, i když jste použili k němu stylu.  
@@ -102,14 +102,14 @@ Nejjednodušší způsob, jak přizpůsobit objektu je můžete nastavit vlastno
 ### <a name="restore-the-default-style-or-template-of-a-control"></a>Obnovit výchozí styl nebo šablonu ovládacího prvku  
  Vyberte ovládací prvek a [vlastnosti](http://msdn.microsoft.com/135a5a5e-ec6d-4f38-8827-60e284cd5f57) panelu, vyhledejte **styl** nebo **šablony** vlastnost. Potom klikněte na **pokročilé možnosti** ![](../designers/media/12e06962-5d8a-480d-a837-e06b84c545bb.png "12e06962-5d8a-480d-a837-e06b84c545bb")a potom klikněte na tlačítko **resetování** v místní nabídce.  
   
-##  <a name="Visual"></a> Vizuální stavy: Změna vzhledu ovládacího prvku na základě jeho stavu  
+## <a name="Visual"></a> Vizuální stavy: Změna vzhledu ovládacího prvku na základě jeho stavu  
  Ovládací prvky mohou mít různé vizuální vzhled na základě interakcí uživatele. Například můžete provést na tlačítko se změní na zelenou když na něj uživatel klikne nebo můžete spustit animaci. Zkraťte nebo prodloužit doba mezi vizuálních stavů pomocí přechodů.  
   
  ![](../designers/media/a95c671a-5639-40b9-83db-1e6b214330d5.png "a95c671a-5639-40b9-83db-1e6b214330d5")  
   
  **Podívejte se na krátké video:** ![Konfigurovat nainstalované funkce](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Správa stavu ovládacích prvků WPF](https://www.youtube.com/watch?v=m0PlkF5i6uw).  
   
-##  <a name="Resources"></a> Prostředky: Vytvoření barvy, styly a šablony a pozdější použití  
+## <a name="Resources"></a> Prostředky: Vytvoření barvy, styly a šablony a pozdější použití  
  Můžete převést prakticky cokoliv ve vašem projektu a prostředek. Prostředek je právě objekt, který můžete ve své aplikaci využít v různých místech. Můžete například vytvořit jednou barvu, usnadňují prostředek a potom použít na několik objektů. Chcete-li změnit barvu všech těchto objektů, stačí změňte barvu prostředků.  
   
  ![](../designers/media/89203705-cf66-46e0-b153-52a23cd744f7.png "89203705-cf66-46e0-b153-52a23cd744f7") ![](../designers/media/6bff8b19-3cd5-41a0-bbf9-ff65532d5aae.png "6bff8b19-3cd5-41a0-bbf9-ff65532d5aae")  

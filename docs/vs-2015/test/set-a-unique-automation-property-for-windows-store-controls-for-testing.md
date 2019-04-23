@@ -8,12 +8,12 @@ ms.assetid: 9bdd74ff-2534-4fc7-a5c3-a77bf7843037
 caps.latest.revision: 12
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4ed707c1dfa2d756bdf3fa879051795c6ac05eed
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6ce207776fe2f3dfe00ddc764546a370dbb53dca
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54789076"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107032"
 ---
 # <a name="set-a-unique-automation-property-for-windows-store-controls-for-testing"></a>Nastavení jedinečné vlastnosti automatizace pro ovládací prvky pro Windows Store za účelem testování
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,19 +22,19 @@ Pokud chcete spustit programové testy UI pro aplikace Windows Store založenýc
   
  Můžete přiřadit jedinečné vlastnosti automatizace založená na typu ovládacího prvku XAML v aplikaci. Tady je postup pro přiřazení této jedinečné vlastnosti automatizace v následujících situacích:  
   
--   [Statické definice XAML ovládacích prvků](#UniquePropertyWindowsStoreControlsStaticXAML)  
+- [Statické definice XAML ovládacích prvků](#UniquePropertyWindowsStoreControlsStaticXAML)  
   
--   [Přiřazení vlastností jedinečný automatizace pomocí sady Visual Studio nebo programu Blend pro Visual Studio](#UniquePropertyWindowsStoreControlsExpressionBlend)  
+- [Přiřazení vlastností jedinečný automatizace pomocí sady Visual Studio nebo programu Blend pro Visual Studio](#UniquePropertyWindowsStoreControlsExpressionBlend)  
   
--   [Použít šablonu DataTemplate](#UniquePropertyWindowsStoreControlsDataTemplate)  
+- [Použít šablonu DataTemplate](#UniquePropertyWindowsStoreControlsDataTemplate)  
   
--   [Použít šablonu ovládacího prvku](#UniquePropertyWindowsStoreControlsControlTemplate)  
+- [Použít šablonu ovládacího prvku](#UniquePropertyWindowsStoreControlsControlTemplate)  
   
--   [Dynamické ovládací prvky](#UniquePropertyWindowsStoreControlsDynamicControls)  
+- [Dynamické ovládací prvky](#UniquePropertyWindowsStoreControlsDynamicControls)  
   
 ## <a name="use-methods-to-assign-a-unique-automation-property"></a>Použijte metody přiřazení jedinečné vlastnosti automatizace  
   
-###  <a name="UniquePropertyWindowsStoreControlsStaticXAML"></a> Statické definice XAML  
+### <a name="UniquePropertyWindowsStoreControlsStaticXAML"></a> Statické definice XAML  
  Chcete-li určit jedinečné vlastnosti automatizace pro ovládací prvek, který je definován v souboru XAML, můžete nastavit AutomationProperties.AutomationId nebo AutomationProperties.Name implicitně nebo explicitně, jak je znázorněno v následujícím příkladu. Některé z těchto hodnot nastavení poskytuje jedinečnou vlastnost automatizace, který slouží k identifikaci ovládacího prvku, když vytvoříte programové záznamu testu nebo akce uživatelského rozhraní ovládacího prvku.  
   
  **Nastavte vlastnost implicitně**  
@@ -68,7 +68,7 @@ Pokud chcete spustit programové testy UI pro aplikace Windows Store založenýc
 <Button AutomationProperties.Name="ButtonY" Height="31" HorizontalAlignment="Left" Margin="23,76,0,0" VerticalAlignment="Top" Width="140" Click="ButtonY_Click" />  
 ```  
   
-###  <a name="UniquePropertyWindowsStoreControlsExpressionBlend"></a> Přiřazení vlastností jedinečný automatizace pomocí sady Visual Studio nebo programu Blend pro Visual Studio  
+### <a name="UniquePropertyWindowsStoreControlsExpressionBlend"></a> Přiřazení vlastností jedinečný automatizace pomocí sady Visual Studio nebo programu Blend pro Visual Studio  
  Visual Studio nebo nástroje Blend for Visual Studio můžete použít pro přiřazení jedinečných názvů interaktivní prvky, jako jsou tlačítka, seznamy, pole se seznamem a textová pole. Díky tomu ovládacího prvku jedinečnou hodnotu pro AutomationProperties.Name.  
   
  **Visual Studio:** Na **nástroje** nabídky, přejděte k **možnosti** a klikněte na tlačítko **textový Editor**, pak **XAML**a nakonec **různé** .  
@@ -94,7 +94,7 @@ Pokud chcete spustit programové testy UI pro aplikace Windows Store založenýc
   
  ![Sada projekt tak, aby pojmenovat interaktivní prvky](../test/media/cuit-windowsstoreproeprty-blend-2.png "CUIT_WindowsStoreProeprty_Blend_2")  
   
-###  <a name="UniquePropertyWindowsStoreControlsDataTemplate"></a> Použití šablony dat  
+### <a name="UniquePropertyWindowsStoreControlsDataTemplate"></a> Použití šablony dat  
  Můžete definovat jednoduchá šablona ItemTemplate pomocí k vázání hodnot v seznamu do proměnných pomocí následující XAML.  
   
 ```xaml  
@@ -157,7 +157,7 @@ public override string ToString()
   
 ```  
   
-###  <a name="UniquePropertyWindowsStoreControlsControlTemplate"></a> Použít šablonu ovládacího prvku  
+### <a name="UniquePropertyWindowsStoreControlsControlTemplate"></a> Použít šablonu ovládacího prvku  
  Šablony ovládacího prvku můžete použít tak, aby každý výskyt určitého typu získá jedinečnou vlastnost automatizace, když je definována v kódu. Musíte vytvořit šablonu tak, aby AutomationProperty váže k jedinečné ID v instanci ovládacího prvku. Následující XAML ukazuje jeden ze způsobů vytvoření touto vazbou pomocí šablony ovládacího prvku.  
   
 ```xaml  
@@ -185,7 +185,7 @@ public override string ToString()
 <Button Content=”Button2” Style="{StaticResource MyButton}" Width="140"/>  
 ```  
   
-###  <a name="UniquePropertyWindowsStoreControlsDynamicControls"></a> Dynamické ovládací prvky  
+### <a name="UniquePropertyWindowsStoreControlsDynamicControls"></a> Dynamické ovládací prvky  
  Pokud máte ovládací prvky, které se vytvářejí dynamicky z vašeho kódu a nebyl vytvořen staticky nebo prostřednictvím šablon v souborech XAML, musíte nastavit vlastnosti obsahu nebo název ovládacího prvku. Tím je zajištěno, že každý dynamický ovládací prvek má jedinečnou vlastnost automatizace. Například pokud máte zaškrtávací políčko, musí se zobrazí, když vyberete položku seznamu, můžete nastavit tyto vlastnosti, jak je znázorněno zde:  
   
 ```csharp  

@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7f6ca07ebf8489dd62d6cfbe232f2522ac0f448a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 628620005c43ae465107e43572684cb74c8d1aa9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56608809"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099738"
 ---
 # <a name="actions-pane-overview"></a>Přehled podokna akcí
   Podokna akcí je přizpůsobitelnou **akcích dokumentu** podokna úloh, které je připojené k určitým dokumentem aplikace Microsoft Office Word nebo sešit aplikace Microsoft Office Excel. V podokně Akce je umístěn uvnitř podokna úloh Office spolu s jiná podokna integrované úlohy, jako **XML použitého jako zdroj** podokna úloh v aplikaci Excel nebo **styly a formátování** podokna úloh v aplikaci Word. Ovládací prvky Windows Forms a ovládacích prvků WPF můžete použít k návrhu uživatelského rozhraní podokna akcí.
@@ -61,17 +61,17 @@ ms.locfileid: "56608809"
 
  Chcete-li skrýt podokno úloh ve vašem řešení, máte několik možností:
 
--   Slovo, nastavte <xref:Microsoft.Office.Interop.Word.TaskPane.Visible%2A> vlastnost <xref:Microsoft.Office.Interop.Word.TaskPane> objekt, který reprezentuje podokna úloh akcích dokumentu a **false**. Následující příklad kódu je určený ke spuštění z `ThisDocument` třídu ve vašem projektu.
+- Slovo, nastavte <xref:Microsoft.Office.Interop.Word.TaskPane.Visible%2A> vlastnost <xref:Microsoft.Office.Interop.Word.TaskPane> objekt, který reprezentuje podokna úloh akcích dokumentu a **false**. Následující příklad kódu je určený ke spuštění z `ThisDocument` třídu ve vašem projektu.
 
      [!code-csharp[Trin_VstcoreActionsPaneWord#34](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#34)]
      [!code-vb[Trin_VstcoreActionsPaneWord#34](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#34)]
 
--   Pro aplikaci Excel, nastavte <xref:Microsoft.Office.Interop.Excel._Application.DisplayDocumentActionTaskPane%2A> vlastnost <xref:Microsoft.Office.Tools.Excel.Workbook.Application%2A> objektu **false**. Následující příklad kódu je určený ke spuštění z `ThisWorkbook` třídu ve vašem projektu.
+- Pro aplikaci Excel, nastavte <xref:Microsoft.Office.Interop.Excel._Application.DisplayDocumentActionTaskPane%2A> vlastnost <xref:Microsoft.Office.Tools.Excel.Workbook.Application%2A> objektu **false**. Následující příklad kódu je určený ke spuštění z `ThisWorkbook` třídu ve vašem projektu.
 
      [!code-csharp[Trin_VstcoreActionsPaneExcel#11](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ThisWorkbook.cs#11)]
      [!code-vb[Trin_VstcoreActionsPaneExcel#11](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneExcelVB/ThisWorkbook.vb#11)]
 
--   Pro aplikaci Word nebo Excel, můžete také nastavit <xref:Microsoft.Office.Core.CommandBar.Visible%2A> vlastnost panelu příkazů, který představuje podokna úloh do **false**. Následující příklad kódu je určený ke spuštění z `ThisDocument` nebo `ThisWorkbook` třídu ve vašem projektu.
+- Pro aplikaci Word nebo Excel, můžete také nastavit <xref:Microsoft.Office.Core.CommandBar.Visible%2A> vlastnost panelu příkazů, který představuje podokna úloh do **false**. Následující příklad kódu je určený ke spuštění z `ThisDocument` nebo `ThisWorkbook` třídu ve vašem projektu.
 
      [!code-csharp[Trin_VstcoreActionsPaneExcel#9](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ThisWorkbook.cs#9)]
      [!code-vb[Trin_VstcoreActionsPaneExcel#9](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneExcelVB/ThisWorkbook.vb#9)]
@@ -86,9 +86,9 @@ ms.locfileid: "56608809"
 
 ##### <a name="to-display-the-actions-pane-by-using-the-ui-of-word-or-excel"></a>Pokud chcete zobrazit podokno akcí s použitím uživatelského rozhraní aplikace Word nebo Excel
 
-1.  Na pásu karet klikněte na tlačítko **zobrazení** kartu.
+1. Na pásu karet klikněte na tlačítko **zobrazení** kartu.
 
-2.  V **zobrazit/skrýt** klikněte na položku **akcích dokumentu** přepínacího tlačítka.
+2. V **zobrazit/skrýt** klikněte na položku **akcích dokumentu** přepínacího tlačítka.
 
 ## <a name="program-actions-pane-events"></a>Program události podokna akce
  Můžete přidat více uživatelských ovládacích prvků do podokna akce a potom napsat kód, který reagovat na události v dokumentu pomocí zobrazení a skrytí uživatelské ovládací prvky. Pokud namapujete prvků schématu XML k dokumentu, můžete zobrazit některé uživatelské ovládací prvky v podokně Akce pokaždé, když se kurzor nachází uvnitř jeden z elementů XML. Další informace najdete v tématu [jak: Mapování schémat na dokumenty aplikace Word v sadě Visual Studio](../vsto/how-to-map-schemas-to-word-documents-inside-visual-studio.md) a [jak: Mapování schémat na listy v prostředí Visual Studio](../vsto/how-to-map-schemas-to-worksheets-inside-visual-studio.md).
@@ -114,7 +114,7 @@ ms.locfileid: "56608809"
 |FromLeft|Stack – od levé části podokna akcí.|
 |FromRight|Stack – z pravé strany podokna akcí.|
 |FromTop|Stack – od horní části podokna akcí.|
-|Žádná|Žádné pořadí definovaný pořadí je řízen vývojářem.|
+|Žádné|Žádné pořadí definovaný pořadí je řízen vývojářem.|
 
  Následující kód nastaví <xref:Microsoft.Office.Tools.ActionsPane.StackOrder%2A> vlastnost zásobníku uživatelské ovládací prvky z horní části podokna akcí.
 

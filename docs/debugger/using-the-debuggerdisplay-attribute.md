@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b9c98411e378601280d36dbe4720864177d4019
-ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
+ms.openlocfilehash: af666497deb20f3c2d9125b4beb452f24cabbbd2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59537634"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099890"
 ---
 # <a name="tell-the-debugger-what-to-show-using-the-debuggerdisplay-attribute-c-visual-basic-f-ccli"></a>Ladicí program říct, co se má zobrazit, pomocí atributu DebuggerDisplay (C#, Visual Basic, F#, C++vyhodnocovací)
 <xref:System.Diagnostics.DebuggerDisplayAttribute> Ovládací prvky zobrazení objektu, vlastnost nebo pole v oknech proměnných ladicího programu. Tento atribut lze použít pro typy delegátů, vlastnosti, pole a sestavení.
@@ -89,6 +89,7 @@ public sealed class MyClass
     }
 }
 ```
+
 ", Nq" Přípona říká vyhodnocovací filtr výrazů při zobrazování konečnou hodnotu odebrat uvozovky (nq = žádné uvozovky).
 
 ## <a name="example"></a>Příklad
@@ -97,7 +98,7 @@ Následující příklad kódu ukazuje, jak používat `DebuggerDisplay`společn
 |**Název**|**Hodnota**|**Typ**|
 |--------------|---------------|--------------|
 |Key|"tři"|objekt {string}|
-|Hodnota|3|objekt {int}|
+|Value|3|objekt {int}|
 
 ```csharp
 [DebuggerDisplay("{value}", Name = "{key}")]
@@ -147,7 +148,7 @@ class MyHashtable
         hashtable = new Hashtable();
     }
 
-    private string DebuggerDisplay { get { return "Count = " + hashtable.Count); } }
+    private string DebuggerDisplay { get { return "Count = " + hashtable.Count; } }
 
     private class HashtableDebugView
     {

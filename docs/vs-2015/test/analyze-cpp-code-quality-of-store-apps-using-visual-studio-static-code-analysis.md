@@ -11,12 +11,12 @@ caps.latest.revision: 15
 author: alexhomer1
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 867c42d4afb35abcc1e37c86f85a01a7dd3fdf24
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: a8ea5d8a8120f8b78ec41ee7dbaf0221a549f15c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59659820"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60103872"
 ---
 # <a name="analyze-c-code-quality-of-store-apps-using-visual-studio-static-code-analysis"></a>Analýza kvality kódu aplikací pro Store pomocí sady Visual Studio statickou analýzu kódu C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "wi
 > [!NOTE]
 > V sadě Visual Studio Ultimate, Visual Studio Premium a Visual Studio Professional můžete použít plnou funkčnost nástroje code analysis. Zobrazit [analýza kvality aplikace pomocí nástrojů pro analýzu kódu](http://msdn.microsoft.com/library/dd264897.aspx) v knihovně MSDN.
 
-##  <a name="BKMK_Run"></a> Spuštění analýzy kódu
+## <a name="BKMK_Run"></a> Spuštění analýzy kódu
  Spuštění analýzy kódu pro řešení sady Visual Studio:
 
 - Na **sestavení** nabídce zvolte **spustit analýzu kódu na řešení**.
@@ -43,7 +43,7 @@ Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "wi
 
    ![Okno Analýza kódu](../test/media/ca-cpp-collapsed.png "CA_CPP_Collapsed")
 
-##  <a name="BKMK_Analyze"></a> Analýza a řešení upozornění analýzy kódu
+## <a name="BKMK_Analyze"></a> Analýza a řešení upozornění analýzy kódu
  Pokud chcete analyzovat konkrétního upozornění, vyberte záhlaví upozornění v okně analýzy kódu. Upozornění se rozbalí a zobrazí podrobné informace o problému. Pokud je to možné, analýza kódu se zobrazí řádku číslo a analýza logiku, která vedla k upozornění.
 
  ![Upozornění analýzy kódu pro rozbalení](../test/media/ca-cpp-expanded-callout.png "CA_CPP_Expanded_Callout")
@@ -57,7 +57,7 @@ Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "wi
 > [!TIP]
 >  Můžete znovu spustit analýzu kódu v okně analýzy kódu. Zvolte **analyzovat** tlačítko a pak zvolte obor analýzy. Můžete znovu spustit analýzu na celé řešení nebo vybraný projekt.
 
-##  <a name="BKMK_Suppress"></a> Potlačení upozornění analýzy kódu
+## <a name="BKMK_Suppress"></a> Potlačení upozornění analýzy kódu
  Existují situace, kdy byste se mohli rozhodnot Neopravovat upozornění analýzy kódu. Můžete se rozhodnout, že řešení upozornění vyžaduje příliš mnoho nahrávání ve vztahu k pravděpodobnost, že problém vzniknou v žádné Skutečná implementace kódu. Nebo může domnívat, že je nevhodná pro konkrétní kontext, který se používá v tomto upozornění analýzy. Jednotlivá upozornění můžete potlačit tak, aby se nebude zobrazovat v okně analýzy kódu.
 
  Chcete-li potlačit upozornění:
@@ -70,12 +70,12 @@ Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "wi
 
    Potlačení zprávy vloží `#pragma(warning:` *WarningId* `)` , který potlačí případná upozornění pro řádek kódu.
 
-##  <a name="BKMK_Search"></a> Vyhledávání a filtrování výsledků analýzy kódu
+## <a name="BKMK_Search"></a> Vyhledávání a filtrování výsledků analýzy kódu
  Můžete hledat dlouhé seznamy varovné zprávy a upozornění v řešení vícenásobného projektu můžete filtrovat.
 
  ![Hledání a filtrování v okně analýzy kódu](../test/media/ca-searchfilter.png "CA_SearchFilter")
 
-##  <a name="Warnings"></a> Upozornění analýzy kódu C++
+## <a name="Warnings"></a> Upozornění analýzy kódu C++
  Analýza kódu vyvolává následující upozornění pro kód C++:
 
 |                                      Pravidlo                                      |                                                  Popis                                                  |

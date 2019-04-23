@@ -2,7 +2,7 @@
 title: Novinky v sadě Visual Studio 2019
 titleSuffix: ''
 description: Další informace o nových funkcích sady Visual Studio 2019.
-ms.date: 04/04/2019
+ms.date: 04/11/2019
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 399207f81ec1f25e6a5169235820989c1b2c34e4
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: ca411e0c66033ea923a979f68ed19c1ec02b6ed9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59477538"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109189"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Novinky v sadě Visual Studio 2019
 
@@ -167,6 +167,12 @@ Získáte snímek provádění své aplikace v cloudu a podívat se, co se přes
 Přidali jsme podporu pro cílení na aplikace ASP.NET (instalace jádra a desktop), běžící ve Virtuálním počítači Azure. A přidali jsme podporu pro aplikace, které běží ve službě Azure Kubernetes Service. Snapshot Debugger můžete výrazně zkrátit čas potřebný k vyřešení problémů, ke kterým dochází v produkčním prostředí.
 
 Další informace najdete v tématu [ladit živé aplikace ASP.NET Azure pomocí ladicího programu snímků](../debugger/debug-live-azure-applications.md) stránky a [Představujeme doba trvání cesty ladění pro Visual Studio Enterprise 2019](https://devblogs.microsoft.com/visualstudio/introducing-time-travel-debugging-for-visual-studio-enterprise-2019/) blogový příspěvek.
+
+## <a name="whats-next"></a>Co se chystá
+
+Díky novým funkcím, které můžete provádět vývoj ještě lepší prostředí často aktualizujeme Visual Studio 2019. Další informace o našich nejnovějších inovacích, podívejte se na [blogu Visual Studio](https://devblogs.microsoft.com/visualstudio/). A pro záznam co jsme vydali ve verzi preview na datum, podívejte se na [poznámky k verzi Preview](/visualstudio/releases/2019/release-notes-preview/).
+
+Chcete vědět více o tom, co jiného se připravuje pro Visual Studio 2019? Zobrazit [Visual Studio Roadmap](/visualstudio/productinfo/vs-roadmap/).
 
 ## <a name="give-us-feedback"></a>Sdělte nám svůj názor
 

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0cd81854dfa603063a70b2fe11b06eff341c203f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 09c16e55766c0239346540dfcc74b99b2ed8579b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913051"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60103588"
 ---
 # <a name="validation-in-a-domain-specific-language"></a>Ověřování v jazyce specifickém pro doménu
 Jako autoři jazyka specifického pro doménu (DSL) můžete definovat omezení ověření můžete ověřit, že model vytvořený uživatelem smysluplné. Například pokud vaše DSL umožňuje uživatelům nakreslit řady strom osoby a jejich předchůdci, můžete napsat omezení, které zajišťuje, že mají podřízené položky data narození po jejich nadřazených objektů.
@@ -54,13 +54,13 @@ Jako autoři jazyka specifického pro doménu (DSL) můžete definovat omezení 
 
 1. Povolení ověřování v **Editor\Validation** uzlu:
 
-   1.  Otevřít **Dsl\DslDefinition.dsl**.
+   1. Otevřít **Dsl\DslDefinition.dsl**.
 
-   2.  V okně Průzkumník DSL, rozbalte **Editor** uzel a vyberte možnost **ověření**.
+   2. V okně Průzkumník DSL, rozbalte **Editor** uzel a vyberte možnost **ověření**.
 
-   3.  V okně Vlastnosti nastavte **používá** vlastností `true`. Je nejvhodnější pro nastavení těchto vlastností.
+   3. V okně Vlastnosti nastavte **používá** vlastností `true`. Je nejvhodnější pro nastavení těchto vlastností.
 
-   4.  Klikněte na tlačítko **Transformovat všechny šablony** v **Průzkumníka řešení** nástrojů.
+   4. Klikněte na tlačítko **Transformovat všechny šablony** v **Průzkumníka řešení** nástrojů.
 
 2. Zápis definicí částečné třídy pro jeden nebo více doménovými třídami nebo vztahy domén. Zapsat tyto definice do nového souboru v kódu **Dsl** projektu.
 
@@ -70,7 +70,7 @@ Jako autoři jazyka specifického pro doménu (DSL) můžete definovat omezení 
    [ValidationState(ValidationState.Enabled)]
    ```
 
-   -   Ve výchozím nastavení tento atribut taky povolí ověřování pro odvozené třídy. Pokud chcete zakázat ověřování pro konkrétní odvozenou třídu, můžete použít `ValidationState.Disabled`.
+   - Ve výchozím nastavení tento atribut taky povolí ověřování pro odvozené třídy. Pokud chcete zakázat ověřování pro konkrétní odvozenou třídu, můžete použít `ValidationState.Disabled`.
 
 4. Přidání metody ověřování na třídy. Každá metoda ověřování můžete mít libovolný název, ale mít jeden parametr typu <xref:Microsoft.VisualStudio.Modeling.Validation.ValidationContext>.
 

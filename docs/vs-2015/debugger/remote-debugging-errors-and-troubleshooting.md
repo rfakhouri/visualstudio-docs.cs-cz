@@ -25,25 +25,25 @@ caps.latest.revision: 25
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: eac2e46195fcf8713a5838c57c2869ed4e736b8f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f7d35f763500d48b356305a4ed6cce7a282a42a6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54761255"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116729"
 ---
 # <a name="remote-debugging-errors-and-troubleshooting"></a>Chyby a řešení potíží se vzdáleným laděním
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Těmto chybám může dojít při pokusu o vzdálené ladění.  
   
--   [Chyba: Automatické krokování s vnořením do serveru se nezdařilo.](../debugger/error-unable-to-automatically-step-into-the-server.md)  
+- [Chyba: Automatické krokování s vnořením do serveru se nezdařilo.](../debugger/error-unable-to-automatically-step-into-the-server.md)  
   
--   [Chyba: Na vzdáleném počítači pravděpodobně neběží sledování vzdáleného ladění sady Microsoft Visual Studio (MSVSMON.EXE).](/visualstudio/debugger/error-remote-debugging-monitor-msvsmon-exe-does-not-appear-to-be-running?view=vs-2015)  
+- [Chyba: Na vzdáleném počítači pravděpodobně neběží sledování vzdáleného ladění sady Microsoft Visual Studio (MSVSMON.EXE).](/visualstudio/debugger/error-remote-debugging-monitor-msvsmon-exe-does-not-appear-to-be-running?view=vs-2015)  
   
--   [Nepodařilo se připojit ke sledování vzdáleného ladění sady Microsoft Visual Studio.](../debugger/unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor.md)  
+- [Nepodařilo se připojit ke sledování vzdáleného ladění sady Microsoft Visual Studio.](../debugger/unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor.md)  
   
--   [Chyba: Vzdálený počítač se nezobrazuje v dialogovém okně Vzdálená připojení.](../debugger/error-remote-machine-does-not-appear-in-a-remote-connections-dialog.md)  
+- [Chyba: Vzdálený počítač se nezobrazuje v dialogovém okně Vzdálená připojení.](../debugger/error-remote-machine-does-not-appear-in-a-remote-connections-dialog.md)  
   
 ## <a name="see-also"></a>Viz také  
  [Vzdálené ladění](../debugger/remote-debugging.md)

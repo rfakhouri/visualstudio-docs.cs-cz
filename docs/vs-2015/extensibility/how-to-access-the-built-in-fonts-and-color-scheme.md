@@ -12,12 +12,12 @@ ms.assetid: 6905845e-e88e-4805-adcf-21da39108ec7
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: a8f4ce6ab886fea3364526b53a32f72ad3f1408e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 496ace3193ec2a78033b2e429f6fa7c6cbf11a07
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54753729"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091522"
 ---
 # <a name="how-to-access-the-built-in-fonts-and-color-scheme"></a>Postupy: Přístup k vestavěné písma a barvy schéma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,13 +49,13 @@ Integrovaného vývojového prostředí (IDE) sady Visual Studio obsahuje schém
   
 ### <a name="to-register-a-category-using-built-in-fonts-and-colors"></a>K registraci kategorie pomocí integrované písmo a barvy  
   
-1.  Vytvořte zvláštní druh položky registru kategorie v následujícím umístění:  
+1. Vytvořte zvláštní druh položky registru kategorie v následujícím umístění:  
   
      [HKLM\SOFTWARE\Microsoft \Visual Studio\\*\<Visual Studio version>* \FontAndColors\\*\<Category>*]  
   
      *\<Kategorie >* je nelokalizovaný název kategorie.  
   
-2.  Naplnění registru uložených písma a barvy schéma pomocí čtyři hodnoty:  
+2. Naplnění registru uložených písma a barvy schéma pomocí čtyři hodnoty:  
   
     |Název|Typ|Data|Popis|  
     |----------|----------|----------|-----------------|  
@@ -64,7 +64,7 @@ Integrovaného vývojového prostředí (IDE) sady Visual Studio obsahuje schém
     |NameID|REG_DWORD|ID|ID prostředku název lokalizovatelné kategorie v sady VSPackage.|  
     |ToolWindowPackage|REG_SZ|GUID|Identifikátor GUID balíčku VSPackage implementace <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> rozhraní.|  
   
-3.  
+3. 
   
 ### <a name="to-initiate-the-use-of-system-provided-fonts-and-colors"></a>K zahájení používání nástroje poskytované systémem písma a barvy  
   

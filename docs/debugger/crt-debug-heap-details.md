@@ -73,12 +73,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 45562119158faad0d596b74faecd786668abf8dd
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: f55bd71b2174a03fb44b4512f04997e48d636d12
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227745"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60103274"
 ---
 # <a name="crt-debug-heap-details"></a>Podrobnosti haldy ladění CRT
 Toto téma obsahuje podrobný pohled na haldu ladění CRT.
@@ -92,7 +92,7 @@ Toto téma obsahuje podrobný pohled na haldu ladění CRT.
 
 [Konfigurace ladění haldy](#BKMK_Configure_the_debug_heap)
 
-[nové, odstranit a _CLIENT_BLOCKs v C++ ladění haldy](#BKMK_new__delete__and__CLIENT_BLOCKs_in_the_C___debug_heap)
+[nové odstranit a _CLIENT_BLOCKs v C++ haldy ladění](#BKMK_new__delete__and__CLIENT_BLOCKs_in_the_C___debug_heap)
 
 [Funkce vykazování stavu haldy](#BKMK_Heap_State_Reporting_Functions)
 
@@ -223,7 +223,7 @@ _CrtSetDbgFlag( tmpFlag );
 
 ![Zpět na začátek](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [obsah](#BKMK_Contents)
 
-## <a name="BKMK_new__delete__and__CLIENT_BLOCKs_in_the_C___debug_heap"></a> nové, odstranit a _CLIENT_BLOCKs v C++ ladění haldy
+## <a name="BKMK_new__delete__and__CLIENT_BLOCKs_in_the_C___debug_heap"></a> nové odstranit a _CLIENT_BLOCKs v C++ haldy ladění
 Ladicí verze knihovny run-time C obsahuje ladicí verze jazyka C++ `new` a `delete` operátory. Pokud používáte `_CLIENT_BLOCK` typ přidělení, je třeba zavolat ladicí verzi `new` operátor přímo nebo vytvořit makra, která nahradí `new` operátor v režimu ladění, jak je znázorněno v následujícím příkladu:
 
 ```cpp
@@ -261,7 +261,7 @@ Ladicí verze `delete` operátor funguje s blokem všech typů a nevyžaduje ž�
 
 ![Zpět na začátek](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [obsah](#BKMK_Contents)
 
-##  <a name="BKMK_Heap_State_Reporting_Functions"></a> Funkce vykazování stavu haldy
+## <a name="BKMK_Heap_State_Reporting_Functions"></a> Funkce vykazování stavu haldy
  **_CrtMemState**
 
  Chcete-li zachytit souhrnný snímek stavu haldy v daném okamžiku, použijte strukturu _CrtMemState definovanou v CRTDBG. V:

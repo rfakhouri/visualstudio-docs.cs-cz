@@ -16,12 +16,12 @@ ms.technology: vs-ide-general
 ms.topic: reference
 ms.workload:
 - multiple
-ms.openlocfilehash: db30c3d74a7742daa3c9cf7225bc2a38062dc6e4
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 44938c5753491521702867398a514f770cf831fb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59660694"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099387"
 ---
 # <a name="per-monitor-awareness-support-for-visual-studio-extenders"></a>Podpora sledování na sledování pro rozšíření sady Visual Studio
 Verze starší než Visual Studio 2019 měl svým kontextem povědomí o DPI nastavena na systém vědět, spíše než za sledování DPI vědět (PMA). Spouštění v systému sledování je v degradovaném stavu vizuálu pokaždé, když Visual Studio došlo k vykreslení na monitorech s jinou měřítko nebo vzdálené do počítačů s jiným zobrazením konfigurací např (jiné prostředí (například fuzzy písma nebo ikony) Windows škálování).
@@ -39,9 +39,9 @@ Odkazovat [vysoké rozlišení DPI Desktop Application Development na Windows](h
 
 ## <a name="enabling-pma"></a>Povolení PMA
 Pokud chcete povolit PMA v sadě Visual Studio, musí být splněny následující požadavky:
-1)  Windows 10. dubna 2018 Update (v1803 RS4) nebo novější
-2)  Rozhraní .NET framework 4.8 RTM nebo novější
-3)  Visual Studio 2019 s ["Optimalizace vykreslování obrazovky s jinou hustoty"](https://docs.microsoft.com/visualstudio/ide/reference/general-environment-options-dialog-box?view=vs-2019) povolenou možnost
+1) Windows 10. dubna 2018 Update (v1803 RS4) nebo novější
+2) Rozhraní .NET framework 4.8 RTM nebo novější
+3) Visual Studio 2019 s ["Optimalizace vykreslování obrazovky s jinou hustoty"](https://docs.microsoft.com/visualstudio/ide/reference/general-environment-options-dialog-box?view=vs-2019) povolenou možnost
 
 Jakmile jsou splněny tyto požadavky, Visual Studio automaticky povolí režim PMA celém procesu.
 
@@ -203,6 +203,7 @@ Většina práce výpočtu uživatelského rozhraní, ke které dochází jako s
 Pokud okno nástroje bez WPF se migruje pro úplnou podporu PMA, ji budou muset vyjádřit výslovný nesouhlas CLMM. Uděláte to tak, je potřeba implementovat nové rozhraní: IVsDpiAware.
 
 C#:
+
 ```cs
 [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
 public interface IVsDpiAeware
@@ -213,6 +214,7 @@ public interface IVsDpiAeware
 ```
  
 C++:
+
 ```cpp
 IVsDpiAware : public IUnknown
 {
@@ -245,6 +247,7 @@ enum __VSDPIMODE
 Starší verze uživatelského rozhraní, která není aktualizován pro podporu PMA režimu, může dále potřebovat menší vylepšení pro práci v režimu PMA je spuštěna sada Visual Studio. Jeden takový oprava zahrnuje, ujistěte se, že probíhá vytváření uživatelského rozhraní v pravém DpiAwarenessContext. Přinutit uživatelské rozhraní do konkrétní DpiAwarenessContext můžete zadat rozsah DPI následujícím kódem:
 
 C#:
+
 ```cs
 using (DpiAwareness.EnterDpiScope(DpiAwarenessContext.SystemAware))
 {
@@ -254,6 +257,7 @@ using (DpiAwareness.EnterDpiScope(DpiAwarenessContext.SystemAware))
 ```
 
 C++:
+
 ```cpp
 void MyClass::ShowDialog()
 {

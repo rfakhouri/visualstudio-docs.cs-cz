@@ -20,30 +20,30 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: db045700da02911cf52d69b36a68607ab8a43f69
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 82532fc2864bcb4c19b0cf122e60fd9a64b2dbf9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54800505"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113063"
 ---
 # <a name="invoking-the-visual-studio-debugger-for-windows-workflow-foundation-legacy"></a>Vyvolání ladicího programu sady Visual Studio pro programovací model Windows Workflow Foundation (starší verze)
 Toto téma popisuje, jak používat [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ladicí program k ladění [!INCLUDE[wf](../includes/wf-md.md)] aplikací ve starší [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Použijte starší [!INCLUDE[wfd2](../includes/wfd2-md.md)] potřeba cílit na platformu [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] nebo [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
 
  Obecně platí ladění starších verzí pracovních postupů stejným způsobem, jako ladíte programy napsané v jiných programovacích jazycích sady Visual Studio. Můžete spustit [!INCLUDE[vs_current_long](../includes/vs-current-long-md.md)] ladicího programu pro Windows Workflow Foundation následujícími způsoby:
 
--   Vyberte **připojit k procesu** na **ladění** nabídky vybrat běžící instance pracovního postupu z procesy k dispozici.
+- Vyberte **připojit k procesu** na **ladění** nabídky vybrat běžící instance pracovního postupu z procesy k dispozici.
 
--   Stisknutím klávesy **F5** spouštění instance pracovního postupu, nebo aby kontinuálně běžely, jakmile dosáhne zarážky.
+- Stisknutím klávesy **F5** spouštění instance pracovního postupu, nebo aby kontinuálně běžely, jakmile dosáhne zarážky.
 
 ## <a name="stepping-through-code"></a>Krokování kódem
  Ladicí program podporuje jeden z nejběžnějších postupů ladění, krokování, které spouští jeden řádek kódu v čase. Existují tři příkazy krokování kódem:
 
--   **Krok v**: Můžete krokovat s vnořením aktivity pomocí **F11**. Ladicí program do libovolné obslužné rutiny, která je definována. Pokud není definována žádná obslužná rutina, Krokovat přes aktivity nebo pomocí složených aktivit, které obsahují další aktivity, přejdete na první spouštěné aktivity. Krokování s vnořením do kódu obslužné rutiny z Návrháře se nepodporuje pro následující činnosti: **Aktivita typu IfElseActivity**, **aktivita typu WhileActivity**, **aktivitou skupiny ConditionedActivityGroup**, nebo **aktivitou typu ReplicatorActivity**. Chcete-li ladit obslužné rutiny související s tyto aktivity, je nutné umístit explicitní zarážky v kódu.
+- **Krok v**: Můžete krokovat s vnořením aktivity pomocí **F11**. Ladicí program do libovolné obslužné rutiny, která je definována. Pokud není definována žádná obslužná rutina, Krokovat přes aktivity nebo pomocí složených aktivit, které obsahují další aktivity, přejdete na první spouštěné aktivity. Krokování s vnořením do kódu obslužné rutiny z Návrháře se nepodporuje pro následující činnosti: **Aktivita typu IfElseActivity**, **aktivita typu WhileActivity**, **aktivitou skupiny ConditionedActivityGroup**, nebo **aktivitou typu ReplicatorActivity**. Chcete-li ladit obslužné rutiny související s tyto aktivity, je nutné umístit explicitní zarážky v kódu.
 
--   **Krokovat s Vystoupením**: Můžete krokovat z aktivity pomocí **Shift-F11**. Krokování mimo aktivitu spouští aktuální aktivitu a jejich na stejné úrovni aktivity do konce. Ladicí program zastaví se na nadřazený prvek aktuální aktivity. Při procházení z obslužné rutiny kód, ladicí program přeruší na aktivitu, ke kterému je přidružené obslužnou rutinu.
+- **Krokovat s Vystoupením**: Můžete krokovat z aktivity pomocí **Shift-F11**. Krokování mimo aktivitu spouští aktuální aktivitu a jejich na stejné úrovni aktivity do konce. Ladicí program zastaví se na nadřazený prvek aktuální aktivity. Při procházení z obslužné rutiny kód, ladicí program přeruší na aktivitu, ke kterému je přidružené obslužnou rutinu.
 
--   **Krok přes**: Můžete krokovat přes aktivity pomocí **F10**. Při krokování přes složené aktivity. ladicí program přeruší na první spustitelný podřízený složené aktivity. Při krokování přes bez složeného, například **CodeActivity** aktivity, ladicí program provede aktivitu a jeho přidruženými obslužnými rutinami a zalomení na další aktivity. Pokud je aktivita, která se spustí poslední podřízenou aktivitou ve složených aktivit, pak po spuštění, ladicí program přeruší na Nadřazená aktivita.
+- **Krok přes**: Můžete krokovat přes aktivity pomocí **F10**. Při krokování přes složené aktivity. ladicí program přeruší na první spustitelný podřízený složené aktivity. Při krokování přes bez složeného, například **CodeActivity** aktivity, ladicí program provede aktivitu a jeho přidruženými obslužnými rutinami a zalomení na další aktivity. Pokud je aktivita, která se spustí poslední podřízenou aktivitou ve složených aktivit, pak po spuštění, ladicí program přeruší na Nadřazená aktivita.
 
 ## <a name="attaching-to-a-process"></a>Připojení k procesu
  Chcete-li ladit pracovní postup připojení k procesu, vyberte procesu k dispozici z **procesy k dispozici** pole se seznamem v **připojit k procesu** dialogové okno. Pokud **automatické: Kód pracovního postupu** se nezobrazuje **připojit k** text a potom klikněte na tlačítko **vyberte**. V **vybrat typ kódu** dialogové okno, klikněte na tlačítko **ladit tyto typy kódu** a vyberte **pracovního postupu**. Pak klikněte na tlačítko **OK** a klikněte na tlačítko **připojit**.

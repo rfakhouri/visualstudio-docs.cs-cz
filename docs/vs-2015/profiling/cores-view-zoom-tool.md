@@ -13,12 +13,12 @@ caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2f0db19d3dfb92658f2aa15e457659b5d4d34ec3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 28e307bd91d468e0efff840d2b6f469b000f243f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54801450"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105422"
 ---
 # <a name="cores-view-zoom-tool"></a>Lupa zobrazení jader
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,9 +27,9 @@ Ovládací prvek lupy je ovládací prvek posuvník, který umožňuje přiblí�
   
 ## <a name="other-ways-to-zoom"></a>Další možnosti, jak přiblížení  
   
--   Přiblížení: Tažením vyberte oblast v zobrazení časové osy. Když uvolníte tlačítko myši, zobrazení časové osy přiblíží vybrané oblasti.  
+- Přiblížení: Tažením vyberte oblast v zobrazení časové osy. Když uvolníte tlačítko myši, zobrazení časové osy přiblíží vybrané oblasti.  
   
--   Přiblížení a oddálení: Najeďte myší na časové ose a potom stiskněte klávesu CTRL při přesunutí kolečko myši.  
+- Přiblížení a oddálení: Najeďte myší na časové ose a potom stiskněte klávesu CTRL při přesunutí kolečko myši.  
   
 ## <a name="see-also"></a>Viz také  
  [Zobrazení jader](../profiling/cores-view.md)

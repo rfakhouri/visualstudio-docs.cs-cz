@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0c39a82a6b381296c47dcbf059b22e351dba3afc
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 1da471ff1911cdda4a62ef9c150236b3a225342f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56646080"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110164"
 ---
 # <a name="how-to-programmatically-hide-text-in-documents"></a>Postupy: Skrývání textu v dokumentech prostřednictvím kódu programu
   Text v dokumentu můžete skrýt nastavením <xref:Microsoft.Office.Interop.Word._Font.Hidden%2A> vlastnost <xref:Microsoft.Office.Interop.Word.Range.Font%2A> pro konkrétní rozsah textu.
@@ -29,17 +29,17 @@ ms.locfileid: "56646080"
 
 ## <a name="to-hide-text-in-a-bookmark-control-while-printing-the-document"></a>Chcete-li skrýt text v ovládacím prvku záložek při tisku dokumentu
 
-1.  Vytvořte proceduru, která skrývá veškerý text, který je v zadaném rozsahu.
+1. Vytvořte proceduru, která skrývá veškerý text, který je v zadaném rozsahu.
 
      [!code-vb[Trin_VstcoreWordAutomation#105](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#105)]
      [!code-csharp[Trin_VstcoreWordAutomation#105](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#105)]
 
-2.  Vytvořte proceduru, která slouží k zobrazení veškerý text, který je v zadaném rozsahu.
+2. Vytvořte proceduru, která slouží k zobrazení veškerý text, který je v zadaném rozsahu.
 
      [!code-vb[Trin_VstcoreWordAutomation#106](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#106)]
      [!code-csharp[Trin_VstcoreWordAutomation#106](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#106)]
 
-3.  Předat rozsah záložky `HideText` metoda, vytisknout dokument a pak předejte stejný rozsah na `UnhideText` metoda.
+3. Předat rozsah záložky `HideText` metoda, vytisknout dokument a pak předejte stejný rozsah na `UnhideText` metoda.
 
      Následující příklad kódu je možné v přizpůsobení na úrovni dokumentu. Pokud chcete použít tento příklad, spusťte jej z `ThisDocument` třídu ve vašem projektu.
 

@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 20ca03e8d7a3c574501d879cf9949d26fd7ba3a3
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 7e62e397bd9f8c2a0e8e8c8b7ed6581e289a9efc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56595734"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113869"
 ---
 # <a name="how-to-programmatically-move-worksheets-within-workbooks"></a>Postupy: Přesouvání listů v sešitech prostřednictvím kódu programu
   Můžete programově změnit pozici listů vzhledem k jiné listy v sešitu. Pokud nezadáte umístění pro přesunutý list, Excel vytvoří nový sešit tak, aby obsahovala ho.
@@ -27,14 +27,14 @@ ms.locfileid: "56595734"
 
 ## <a name="to-move-a-worksheet-in-a-document-level-customization"></a>Chcete-li přesunout na listu v přizpůsobení na úrovni dokumentu
 
-1.  Celkový počet listů v sešitu přiřadit proměnné a poté přesuňte první sešit tak, aby ho jako poslední.
+1. Celkový počet listů v sešitu přiřadit proměnné a poté přesuňte první sešit tak, aby ho jako poslední.
 
      [!code-csharp[Trin_VstcoreExcelAutomation#24](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#24)]
      [!code-vb[Trin_VstcoreExcelAutomation#24](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#24)]
 
 ## <a name="to-move-a-worksheet-in-a-vsto-add-in"></a>Chcete-li přesunout na listu v doplňku VSTO
 
-1.  Celkový počet listů v sešitu přiřadit proměnné a poté přesuňte první sešit tak, aby ho jako poslední.
+1. Celkový počet listů v sešitu přiřadit proměnné a poté přesuňte první sešit tak, aby ho jako poslední.
 
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#16](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#16)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#16](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#16)]

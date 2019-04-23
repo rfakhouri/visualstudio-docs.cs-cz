@@ -37,15 +37,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1979757aa249569ddf5ce2f83f2e457e5066cee0
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 4ccf0fea80ddfcc7db0921512391f5063a8f2dad
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56712499"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100206"
 ---
 # <a name="how-to-use-native-run-time-checks"></a>Postupy: Použití nativních kontrol za běhu
-V jazyce Visual C++, můžete použít nativní [runtime_checks –](/cpp/preprocessor/runtime-checks) zachytit běžné chyby za běhu, jako:
+Ve Vizuálu C++, můžete použít nativní [runtime_checks –](/cpp/preprocessor/runtime-checks) zachytit běžné chyby za běhu, jako:
 
 - Poškození ukazatele zásobníku.
 
@@ -71,11 +71,11 @@ V jazyce Visual C++, můžete použít nativní [runtime_checks –](/cpp/prepro
 
 ### <a name="to-enable-native-run-time-checks-in-a-debug-build"></a>K povolení nativních kontrol za běhu v sestavení pro ladění
 
--   Použití **/RTC** možnost a propojení s ladicí verzí knihovny run-time jazyka C (/ MDd, například).
+- Použití **/RTC** možnost a propojení s ladicí verzí knihovny run-time jazyka C (/ MDd, například).
 
 ### <a name="to-modify-native-run-time-check-behavior"></a>Jestliže chcete upravit chování nativní kontroly za běhu
 
--   Použití `runtime_checks` direktivy pragma.
+- Použití `runtime_checks` direktivy pragma.
 
 ## <a name="see-also"></a>Viz také
 - [Ladění v sadě Visual Studio](../debugger/index.md)

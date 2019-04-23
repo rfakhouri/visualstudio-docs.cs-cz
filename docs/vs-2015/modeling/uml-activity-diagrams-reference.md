@@ -20,12 +20,12 @@ caps.latest.revision: 50
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5c698b84ec3af759a4c276e0129e628abba9212f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c60405331ebab909e8056d4800bd43b208c92493
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54803370"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087141"
 ---
 # <a name="uml-activity-diagrams-reference"></a>Diagramy činnosti UML: Odkaz
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -85,7 +85,7 @@ ms.locfileid: "54803370"
 |13|**Odesílat signál akce**|Akce, která odesílá zprávy nebo signál pro jinou aktivitu nebo souběžných vláken do stejné aktivity. Typ a obsah zprávy je implicitní podle názvu akce nebo zadaný v další komentáře.<br /><br /> Tato akce může odesílat data v signál, který může být předán akcí v toku objektu nebo vstupní kód pin (16).|  
 |14|**Přijmout akci události**|Akce, která čeká na zprávu nebo signál před pokračováním v akci. Typ zprávy, které můžou přijímat akce je odvozené od názvu nebo podle dalších komentáře.<br /><br /> Pokud se akce nemá žádné příchozí tok řízení, vytvoří token pokaždé, když dostane zprávu.<br /><br /> Akce můžou přijímat data signálu, které mohou být předána objektu toku nebo výstup kódu pin (17).<br /><br /> -   **IsUnmarshall** – Pokud je nastavena hodnota true, může existovat několik typem výstupní spojky a data jsou unmarshalled na ně. Pokud má hodnotu false, se zobrazí všechna data na jeden pin.|  
   
-###  <a name="DataFlow"></a> Datové toky  
+### <a name="DataFlow"></a> Datové toky  
  Popíšete toku dat z jedné akce. Další informace o prvků, které slouží v této části najdete v části kreslení Data proudí tématu pokyny pro náčrt diagramu aktivit.  
   
  ![Aktivita diagram znázorňující tok dat](../modeling/media/uml-actovdata.png "UML_ActOvData")  

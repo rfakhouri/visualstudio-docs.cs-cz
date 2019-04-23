@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: aa56b6c1dbb79cf3d6c59283856e763c2cf7a958
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 35fa2825d9fbb4b6a34d813c812bde1bc465f14f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54799782"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108383"
 ---
 # <a name="how-to-customize-search-results"></a>Postupy: Přizpůsobení výsledků vyhledávání
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,11 +29,11 @@ Můžete přizpůsobit, jak se výsledky hledání zobrazeny v **hledání** kar
   
 #### <a name="to-change-the-number-of-topics-displayed-at-a-time"></a>Chcete-li změnit počet témat se zobrazí v čase  
   
-1.  Na **nástrojů**, zvolte **možnosti prohlížeče**.  
+1. Na **nástrojů**, zvolte **možnosti prohlížeče**.  
   
      **Možnosti prohlížeče** zobrazí se dialogové okno.  
   
-2.  V **maximální počet výsledků hledání** klikněte na položku 25, 50, 100 nebo 200.  
+2. V **maximální počet výsledků hledání** klikněte na položku 25, 50, 100 nebo 200.  
   
 ## <a name="search-for-content-by-language"></a>Hledat obsah podle jazyka  
  Dokumentace k může zahrnovat obsah v jiném jazyce než angličtině. Můžete zúžit výsledky hledání na obsah v určitém jazyce. Můžete použít také jakýkoliv obsah v angličtině, který odpovídá vašemu vyhledávacímu dotazu.  
@@ -43,11 +43,11 @@ Můžete přizpůsobit, jak se výsledky hledání zobrazeny v **hledání** kar
   
 #### <a name="to-include-english-content-alongside-content-in-another-language"></a>Zahrnout anglický obsah spolu s obsahem v jiném jazyce  
   
-1.  Na **nástrojů**, zvolte **možnosti prohlížeče**.  
+1. Na **nástrojů**, zvolte **možnosti prohlížeče**.  
   
      **Možnosti prohlížeče** zobrazí se dialogové okno.  
   
-2.  Vyberte **ve všech navigačních karet a žádostí F1 zahrnout anglický obsah** zaškrtávací políčko.  
+2. Vyberte **ve všech navigačních karet a žádostí F1 zahrnout anglický obsah** zaškrtávací políčko.  
   
 ## <a name="see-also"></a>Viz také  
  [Tipy pro fulltextové vyhledávání](../ide/full-text-search-tips.md)

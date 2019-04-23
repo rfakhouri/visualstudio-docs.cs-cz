@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7f8e3f4d53b0a8b79367064761ba0fc5b901dc5e
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: d694fe9bb614acfd80e5ec1b9f6bed166775c214
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59670066"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091471"
 ---
 # <a name="how-to-select-the-xml-schemas-to-use"></a>Postupy: Výběr schémat XML pro použití
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,23 +50,23 @@ XML Editor obsahuje schéma mezipaměti umístěné v adresáři %InstallDir%\Xm
   
 ### <a name="to-add-an-xml-schema-to-the-schema-cache"></a>Přidat do mezipaměti schématu schématu XML  
   
-1.  V okně Vlastnosti dokumentu, klepněte na tlačítko **schémata** pole.  
+1. V okně Vlastnosti dokumentu, klepněte na tlačítko **schémata** pole.  
   
-2.  Klikněte na **Přidat**.  
+2. Klikněte na **Přidat**.  
   
      Tím se otevře **otevřít schéma XSD** dialogového okna.  
   
-3.  Vyhledejte a vyberte schémata pro přidání do mezipaměti schématu.  
+3. Vyhledejte a vyberte schémata pro přidání do mezipaměti schématu.  
   
-4.  Klikněte na tlačítko **otevřít**.  
+4. Klikněte na tlačítko **otevřít**.  
   
      Schémata přidané do schématu do mezipaměti a je **použití** nastavena na hodnotu sloupce **použít tohle schéma**.  
   
 ### <a name="to-delete-an-xml-schema-from-the-schema-cache"></a>Chcete-li odstranit schématu XML z mezipaměti schémat  
   
-1.  V okně Vlastnosti dokumentu, klepněte na tlačítko **schémata** pole.  
+1. V okně Vlastnosti dokumentu, klepněte na tlačítko **schémata** pole.  
   
-2.  Vyberte schéma odebrat a potom klikněte na **odebrat**.  
+2. Vyberte schéma odebrat a potom klikněte na **odebrat**.  
   
      Schéma se odebere z mezipaměti schémat v paměti, ale neodebere se ze systému souborů.  
   

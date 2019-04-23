@@ -20,12 +20,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9a109490c4ff89c6a9f45533fc1305d915522621
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 8e95a2170bd90fbd2610cefb8ff986111ff0480a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59668935"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107070"
 ---
 # <a name="pass-data-between-forms"></a>Předávání dat mezi formuláři
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,34 +37,34 @@ Tento názorný postup obsahuje podrobné pokyny pro předávání dat z jednoho
   
  Úlohy v tomto návodu zahrnují:  
   
--   Vytvoření nového **aplikace Windows** projektu.  
+- Vytvoření nového **aplikace Windows** projektu.  
   
--   Vytvoření a konfigurace datové sady [Průvodce konfigurací zdroje dat](http://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f).  
+- Vytvoření a konfigurace datové sady [Průvodce konfigurací zdroje dat](http://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f).  
   
--   Výběr ovládacího prvku, aby se ve formuláři vytvořen při přetažení položky z **zdroje dat** okna. Další informace najdete v tématu [nastavení ovládacího prvku, který má být vytvořen při přetažení z okna zdroje dat](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).  
+- Výběr ovládacího prvku, aby se ve formuláři vytvořen při přetažení položky z **zdroje dat** okna. Další informace najdete v tématu [nastavení ovládacího prvku, který má být vytvořen při přetažení z okna zdroje dat](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).  
   
--   Vytvoření ovládacího prvku vázané na data přetažením položek z **zdroje dat** okna do formuláře.  
+- Vytvoření ovládacího prvku vázané na data přetažením položek z **zdroje dat** okna do formuláře.  
   
--   Vytváří se druhý formulář s mřížce se zobrazí data.  
+- Vytváří se druhý formulář s mřížce se zobrazí data.  
   
--   Vytváření dotazu TableAdapter načíst objednávek pro konkrétního zákazníka.  
+- Vytváření dotazu TableAdapter načíst objednávek pro konkrétního zákazníka.  
   
--   Předávání dat mezi formuláři.  
+- Předávání dat mezi formuláři.  
   
 ## <a name="prerequisites"></a>Požadavky  
  Pokud chcete dokončit tento návod, potřebujete:  
   
--   Přístup k ukázkové databázi Northwind.
+- Přístup k ukázkové databázi Northwind.
   
 ## <a name="create-the-windows-application"></a>Vytvoření aplikace Windows  
   
 #### <a name="to-create-the-new-windows-project"></a>Vytvoření nového projektu Windows  
   
-1.  Z **souboru** nabídky, vytvořte nový projekt.  
+1. Z **souboru** nabídky, vytvořte nový projekt.  
   
-2.  Pojmenujte projekt `PassingDataBetweenForms`.  
+2. Pojmenujte projekt `PassingDataBetweenForms`.  
   
-3.  Vyberte **formulářová aplikace Windows**a klikněte na tlačítko **OK**. Další informace najdete v tématu [klientské aplikace](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
+3. Vyberte **formulářová aplikace Windows**a klikněte na tlačítko **OK**. Další informace najdete v tématu [klientské aplikace](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
   
      **PassingDataBetweenForms** projekt je vytvořen a přidán do **Průzkumníka řešení**.  
   
@@ -72,25 +72,25 @@ Tento názorný postup obsahuje podrobné pokyny pro předávání dat z jednoho
   
 #### <a name="to-create-the-data-source"></a>Vytvoření zdroje dat  
   
-1.  Na **Data** nabídky, klikněte na tlačítko **zobrazit zdroje dat**.  
+1. Na **Data** nabídky, klikněte na tlačítko **zobrazit zdroje dat**.  
   
-2.  V **zdroje dat** okně **přidat nový zdroj dat** spustit **konfigurace zdroje dat** průvodce.  
+2. V **zdroje dat** okně **přidat nový zdroj dat** spustit **konfigurace zdroje dat** průvodce.  
   
-3.  Vyberte **databáze** na **zvolte typ zdroje dat** stránce a potom klikněte na tlačítko **Další**.  
+3. Vyberte **databáze** na **zvolte typ zdroje dat** stránce a potom klikněte na tlačítko **Další**.  
   
-4.  Na **vyberte databázový model** stránce ověřte, jestli **datovou sadu** je zadán a potom klikněte na **Další**.  
+4. Na **vyberte databázový model** stránce ověřte, jestli **datovou sadu** je zadán a potom klikněte na **Další**.  
   
-5.  Na **vyberte datové připojení** stránce, proveďte jednu z následujících akcí:  
+5. Na **vyberte datové připojení** stránce, proveďte jednu z následujících akcí:  
   
-    -   Pokud je připojení dat k ukázkové databázi Northwind k dispozici v rozevíracím seznamu, vyberte je.  
+    - Pokud je připojení dat k ukázkové databázi Northwind k dispozici v rozevíracím seznamu, vyberte je.  
   
-    -   Vyberte **nové připojení** ke spuštění **přidat/změnit připojení** dialogové okno.  
+    - Vyberte **nové připojení** ke spuštění **přidat/změnit připojení** dialogové okno.  
   
-6.  Pokud vaše databáze vyžaduje heslo, a pokud je povolena možnost zahrnutí důvěrných osobních údajů, vyberte možnost a potom klikněte na tlačítko **Další**.  
+6. Pokud vaše databáze vyžaduje heslo, a pokud je povolena možnost zahrnutí důvěrných osobních údajů, vyberte možnost a potom klikněte na tlačítko **Další**.  
   
-7.  Na **uložit připojovací řetězec do konfiguračního souboru aplikace** klikněte na **Další**.  
+7. Na **uložit připojovací řetězec do konfiguračního souboru aplikace** klikněte na **Další**.  
   
-8.  Na **zvolte vaše databázové objekty** stránce, rozbalte **tabulky** uzlu.  
+8. Na **zvolte vaše databázové objekty** stránce, rozbalte **tabulky** uzlu.  
   
 9. Vyberte **zákazníkům** a **objednávky** tabulky a pak klikněte na tlačítko **Dokončit**.  
   
@@ -101,7 +101,7 @@ Tento názorný postup obsahuje podrobné pokyny pro předávání dat z jednoho
   
 #### <a name="to-create-a-data-bound-grid-on-the-form"></a>K vytvoření mřížky vázané na data ve formuláři  
   
--   Přetáhněte hlavní **zákazníkům** uzlu z **zdroje dat** okna do **Form1**.  
+- Přetáhněte hlavní **zákazníkům** uzlu z **zdroje dat** okna do **Form1**.  
   
      A <xref:System.Windows.Forms.DataGridView> a pruh nástrojů (<xref:System.Windows.Forms.BindingNavigator>) pro procházení záznamů se zobrazí na **Form1**. A [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), CustomersTableAdapter, <xref:System.Windows.Forms.BindingSource>, a <xref:System.Windows.Forms.BindingNavigator> zobrazují v panelu komponent.  
   
@@ -109,15 +109,15 @@ Tento názorný postup obsahuje podrobné pokyny pro předávání dat z jednoho
   
 #### <a name="to-create-a-second-form-to-pass-the-data-to"></a>Chcete-li vytvořit druhý formulář k předávání dat do  
   
-1.  Z **projektu** nabídce zvolte **přidat formulář Windows**.  
+1. Z **projektu** nabídce zvolte **přidat formulář Windows**.  
   
-2.  Ponechte výchozí název **Form2**a klikněte na tlačítko **přidat**.  
+2. Ponechte výchozí název **Form2**a klikněte na tlačítko **přidat**.  
   
-3.  Přetáhněte hlavní **objednávky** uzlu z **zdroje dat** okna do **Form2**.  
+3. Přetáhněte hlavní **objednávky** uzlu z **zdroje dat** okna do **Form2**.  
   
      A <xref:System.Windows.Forms.DataGridView> a pruh nástrojů (<xref:System.Windows.Forms.BindingNavigator>) pro procházení záznamů se zobrazí na **Form2**. A [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), CustomersTableAdapter, <xref:System.Windows.Forms.BindingSource>, a <xref:System.Windows.Forms.BindingNavigator> zobrazují v panelu komponent.  
   
-4.  Odstranit **OrdersBindingNavigator** z panelu komponent.  
+4. Odstranit **OrdersBindingNavigator** z panelu komponent.  
   
      **OrdersBindingNavigator** dané zařízení zmizí z **Form2**.  
   
@@ -125,15 +125,15 @@ Tento názorný postup obsahuje podrobné pokyny pro předávání dat z jednoho
   
 #### <a name="to-create-a-tableadapter-query"></a>Chcete-li vytvořit dotaz TableAdapter  
   
-1.  Dvakrát klikněte **NorthwindDataSet.xsd** ve **Průzkumníka řešení**.  
+1. Dvakrát klikněte **NorthwindDataSet.xsd** ve **Průzkumníka řešení**.  
   
-2.  Klikněte pravým tlačítkem myši **OrdersTableAdapter**a vyberte **přidat dotaz**.  
+2. Klikněte pravým tlačítkem myši **OrdersTableAdapter**a vyberte **přidat dotaz**.  
   
-3.  Ponechte výchozí možnost **použít SQL příkazy**a potom klikněte na tlačítko **Další**.  
+3. Ponechte výchozí možnost **použít SQL příkazy**a potom klikněte na tlačítko **Další**.  
   
-4.  Ponechte výchozí možnost **SELECT, který vrátí řádky**a potom klikněte na tlačítko **Další**.  
+4. Ponechte výchozí možnost **SELECT, který vrátí řádky**a potom klikněte na tlačítko **Další**.  
   
-5.  Přidat klauzuli WHERE do dotazu vrátit `Orders` na základě `CustomerID`. Dotaz by měl vypadat přibližně takto:  
+5. Přidat klauzuli WHERE do dotazu vrátit `Orders` na základě `CustomerID`. Dotaz by měl vypadat přibližně takto:  
   
     ```  
     SELECT OrderID, CustomerID, EmployeeID, OrderDate, RequiredDate, ShippedDate, ShipVia, Freight, ShipName, ShipAddress, ShipCity, ShipRegion, ShipPostalCode, ShipCountry  
@@ -144,11 +144,11 @@ Tento názorný postup obsahuje podrobné pokyny pro předávání dat z jednoho
     > [!NOTE]
     >  Ověření parametru správná syntaxe pro vaši databázi. Například v aplikaci Microsoft Access, klauzuli WHERE vypadat nějak takto: `WHERE CustomerID = ?`.  
   
-6.  Klikněte na **Další**.  
+6. Klikněte na **Další**.  
   
-7.  Pro **zadejte název DataTableMethod**, typ `FillByCustomerID`.  
+7. Pro **zadejte název DataTableMethod**, typ `FillByCustomerID`.  
   
-8.  Zrušte **vrátit tabulku DataTable** možnost a potom klikněte na tlačítko **Další**.  
+8. Zrušte **vrátit tabulku DataTable** možnost a potom klikněte na tlačítko **Další**.  
   
 9. Klikněte na tlačítko **Dokončit**.  
   
@@ -156,9 +156,9 @@ Tento názorný postup obsahuje podrobné pokyny pro předávání dat z jednoho
   
 #### <a name="to-create-a-method-to-pass-data-to"></a>Chcete-li vytvořit metodu k předání dat  
   
-1.  Klikněte pravým tlačítkem na **Form2**a vyberte **zobrazit kód** otevřete **Form2** v **Editor kódu**.  
+1. Klikněte pravým tlačítkem na **Form2**a vyberte **zobrazit kód** otevřete **Form2** v **Editor kódu**.  
   
-2.  Přidejte následující kód, který **Form2** po `Form2_Load` metody:  
+2. Přidejte následující kód, který **Form2** po `Form2_Load` metody:  
   
      [!code-csharp[VbRaddataDisplaying#1](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataDisplaying/CS/Form2.cs#1)]
      [!code-vb[VbRaddataDisplaying#1](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataDisplaying/VB/Form2.vb#1)]  
@@ -167,15 +167,15 @@ Tento názorný postup obsahuje podrobné pokyny pro předávání dat z jednoho
   
 #### <a name="to-create-a-method-to-pass-data-to-form2"></a>Vytvoření metody k předávání dat Form2  
   
-1.  V **Form1**, klikněte pravým tlačítkem na mřížce dat zákazníků a pak klikněte na **vlastnosti**.  
+1. V **Form1**, klikněte pravým tlačítkem na mřížce dat zákazníků a pak klikněte na **vlastnosti**.  
   
-2.  V **vlastnosti** okna, klikněte na tlačítko **události**.  
+2. V **vlastnosti** okna, klikněte na tlačítko **události**.  
   
-3.  Dvakrát klikněte **CellDoubleClick** událostí.  
+3. Dvakrát klikněte **CellDoubleClick** událostí.  
   
      Zobrazí se editor kódu.  
   
-4.  Aktualizujte definici metody tak, aby odpovídala následující ukázce:  
+4. Aktualizujte definici metody tak, aby odpovídala následující ukázce:  
   
      [!code-csharp[VbRaddataDisplaying#2](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataDisplaying/CS/Form1.cs#2)]
      [!code-vb[VbRaddataDisplaying#2](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataDisplaying/VB/Form1.vb#2)]  
@@ -184,16 +184,16 @@ Tento názorný postup obsahuje podrobné pokyny pro předávání dat z jednoho
   
 #### <a name="to-run-the-application"></a>Ke spuštění aplikace  
   
--   Stisknutím klávesy F5 spusťte aplikaci.  
+- Stisknutím klávesy F5 spusťte aplikaci.  
   
--   Klikněte dvakrát na záznam zákazníka v **Form1** otevřete **Form2** s objednávek tohoto zákazníka.  
+- Klikněte dvakrát na záznam zákazníka v **Form1** otevřete **Form2** s objednávek tohoto zákazníka.  
   
 ## <a name="next-steps"></a>Další kroky  
  V závislosti na požadavcích aplikace existuje několik kroků, které můžete provést po předávání dat mezi formuláři. Mezi vylepšení, která je možné pro tento návod provést, patří:  
   
--   Úpravy datové sady, přidání nebo odebrání databázové objekty. Další informace najdete v tématu [vytvoření a konfigurace datové sady](../data-tools/create-and-configure-datasets-in-visual-studio.md).  
+- Úpravy datové sady, přidání nebo odebrání databázové objekty. Další informace najdete v tématu [vytvoření a konfigurace datové sady](../data-tools/create-and-configure-datasets-in-visual-studio.md).  
   
--   Přidáváme funkci pro uložení dat zpět do databáze. Další informace najdete v tématu [uložit data zpět do databáze](../data-tools/save-data-back-to-the-database.md).  
+- Přidáváme funkci pro uložení dat zpět do databáze. Další informace najdete v tématu [uložit data zpět do databáze](../data-tools/save-data-back-to-the-database.md).  
   
 ## <a name="see-also"></a>Viz také  
  [Vytvoření vazby ovládacích prvků modelu Windows Forms k datům v sadě Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)

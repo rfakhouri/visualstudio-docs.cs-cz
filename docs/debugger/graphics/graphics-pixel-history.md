@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d02d56441eb8cb5a47fcdfc6cfa0db153fd72b8b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 23bdabcdd19bd12729d7b505ef4897d38ba8ad69
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56715697"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100987"
 ---
 # <a name="graphics-pixel-history"></a>Historie pixelů grafiky
 Okno historie pixelů grafiky v analyzátoru grafiky sady Visual Studio vám pomůže pochopit, jak je ovlivněna konkrétní pixel událostmi rozhraní Direct3D, ke kterým dochází při snímku hře nebo aplikaci.
@@ -35,7 +35,7 @@ Okno historie pixelů grafiky v analyzátoru grafiky sady Visual Studio vám pom
 
  Můžete rozbalit každý primitivní prozkoumat, jak se výstup pixel shaderu sloučeny s existující barva pixel a vytvoření výsledku barev. Odsud můžete také prozkoumat nebo ladit kód pixel shader, který je spojen s primitivní vlastnost, a můžete dále rozšířit uzlu shader vrcholu prozkoumat shader vrcholu vstup.
 
-###  <a name="exclusion"></a> Primitivní vyloučení
+### <a name="exclusion"></a> Primitivní vyloučení
  Pokud jednoduchého typu je vyloučen z by to ovlivnilo barva pixel, vyloučení může dojít k různých důvodů. Každý důvod je reprezentován ikonou, která je popsaná v této tabulce:
 
 |Ikona|Důvod pro vyloučení|
@@ -52,22 +52,22 @@ Okno historie pixelů grafiky v analyzátoru grafiky sady Visual Studio vám pom
 
 ##### <a name="to-view-a-shaders-source-code"></a>Chcete-li zobrazit zdrojový kód shaderu
 
-1.  V **historie pixelů grafiky** okně vyhledejte volání draw, která odpovídá shaderu chcete prozkoumat a rozbalte ho.
+1. V **historie pixelů grafiky** okně vyhledejte volání draw, která odpovídá shaderu chcete prozkoumat a rozbalte ho.
 
-2.  V části draw vám stačí rozbalit, vyberte jednoduchého typu, který ukazuje problém, který vás zajímá a rozbalte ho.
+2. V části draw vám stačí rozbalit, vyberte jednoduchého typu, který ukazuje problém, který vás zajímá a rozbalte ho.
 
-3.  V rámci primitivních vás zajímá, pomocí následujícího odkazu název shaderu – například pomocí následujícího odkazu **Vertex Shader obj:30** Chcete-li zobrazit zdrojový kód shaderu vrcholu.
+3. V rámci primitivních vás zajímá, pomocí následujícího odkazu název shaderu – například pomocí následujícího odkazu **Vertex Shader obj:30** Chcete-li zobrazit zdrojový kód shaderu vrcholu.
 
     > [!TIP]
     >  Číslo objektu **obj:30**, identifikuje tento shader v celém rozhraní analyzátoru grafiky sady například v okně fáze tabulky a kanál objektu.
 
 ##### <a name="to-debug-a-shader"></a>K ladění shaderu
 
-1.  V **historie pixelů grafiky** okně vyhledejte volání draw, která odpovídá shaderu chcete prozkoumat a rozbalte ho.
+1. V **historie pixelů grafiky** okně vyhledejte volání draw, která odpovídá shaderu chcete prozkoumat a rozbalte ho.
 
-2.  Potom podle volání vykreslování můžete jenom rozšířit, vyberte jednoduchého typu, který ukazuje problém zajímá a rozbalte ho.
+2. Potom podle volání vykreslování můžete jenom rozšířit, vyberte jednoduchého typu, který ukazuje problém zajímá a rozbalte ho.
 
-3.  V části Primitivum, které vás zajímá, vyberte **spustit ladění**. Tento vstupní bod do výchozí nastavení ladicího programu HLSL, aby před prvním vyvoláním služby shaderu pro odpovídající základní – to znamená, první pixelů nebo vrchol, který je zpracován shaderu. Existuje pouze jeden pixel přidružené Primitivum, ale existuje více než jeden vertex shader volání pro řádky a trojúhelníky.
+3. V části Primitivum, které vás zajímá, vyberte **spustit ladění**. Tento vstupní bod do výchozí nastavení ladicího programu HLSL, aby před prvním vyvoláním služby shaderu pro odpovídající základní – to znamená, první pixelů nebo vrchol, který je zpracován shaderu. Existuje pouze jeden pixel přidružené Primitivum, ale existuje více než jeden vertex shader volání pro řádky a trojúhelníky.
 
      Ladění vyvolání vertex shader pro konkrétní vrchol, rozbalte název odkazu VertexShader a vyhledejte vrchol, který vás zajímá, klikněte na tlačítko **spustit ladění** vedle sebe.
 

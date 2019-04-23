@@ -12,12 +12,12 @@ ms.assetid: ccf9d83f-c7f3-49c7-a31f-e1f22bec004c
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8d9836702b00b51d1e2dbe1cd64687c892feaba4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f1cd8e7e85b9753c3742044ae2a557cdf4637214
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54765052"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60084879"
 ---
 # <a name="projecttype-element-visual-studio-templates"></a>ProjectType – element (šablony sady Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,11 +57,11 @@ Rozděluje šablonu projektu tak, aby se objevila pod zadané skupiny v rámci *
   
  Tato hodnota určuje typ projektu šablony vytvoří a musí obsahovat jednu z následujících hodnot:  
   
--   `CSharp`: Určuje, že šablona vytváří [!INCLUDE[csprcs](../includes/csprcs-md.md)] projekt nebo položku.  
+- `CSharp`: Určuje, že šablona vytváří [!INCLUDE[csprcs](../includes/csprcs-md.md)] projekt nebo položku.  
   
--   `VisualBasic`: Určuje, že šablona vytváří [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] projekt nebo položku.  
+- `VisualBasic`: Určuje, že šablona vytváří [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] projekt nebo položku.  
   
--   `Web`: Určuje, že šablona vytvoří webový projekt nebo položku. Pokud `ProjectType` prvek obsahuje tuto hodnotu, není definovaný jazyk projektu nebo položky v [ProjectSubType – Element (šablony sady Visual Studio)](../extensibility/projectsubtype-element-visual-studio-templates.md).  
+- `Web`: Určuje, že šablona vytvoří webový projekt nebo položku. Pokud `ProjectType` prvek obsahuje tuto hodnotu, není definovaný jazyk projektu nebo položky v [ProjectSubType – Element (šablony sady Visual Studio)](../extensibility/projectsubtype-element-visual-studio-templates.md).  
   
 ## <a name="remarks"></a>Poznámky  
  `ProjectType` je vyžadovaný podřízený prvek `TemplateData`.  

@@ -17,12 +17,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8a1126427a1454ec09f0460cb9da1eb65fb72b31
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7f70b18bb2b648231e3cada312fd241375be3193
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54764795"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099842"
 ---
 # <a name="how-to-create-associations-between-types-class-designer"></a>Postupy: Vytvoření asociací mezi typy (návrhář tříd)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,9 +36,9 @@ Asociační čáry v Návrháři tříd zobrazují vztah tříd v diagramu. Asoc
   
 ### <a name="to-define-an-association-line-in-the-class-diagram"></a>Definování asociační čáry v diagramu tříd  
   
-1.  Na panelu nástrojů v nabídce návrhář tříd vyberte **přidružení**.  
+1. Na panelu nástrojů v nabídce návrhář tříd vyberte **přidružení**.  
   
-2.  Nakreslete čáru mezi dvěma tvary, které chcete propojit pomocí přidružení.  
+2. Nakreslete čáru mezi dvěma tvary, které chcete propojit pomocí přidružení.  
   
      V první třídě se vytvoří nová vlastnost. Tato vlastnost se zobrazí jako asociační čára (nikoli jako vlastnost v prostoru ve tvaru) s výchozím názvem. Její typ je tvar, na který asociační čára ukazuje.  
   
@@ -48,13 +48,13 @@ Asociační čáry v Návrháři tříd zobrazují vztah tříd v diagramu. Asoc
   
   \- nebo –  
   
-1.  Klikněte na tvar, který obsahuje vlastnost zobrazenou jako přidružení.  
+1. Klikněte na tvar, který obsahuje vlastnost zobrazenou jako přidružení.  
   
      Tvar získá fokus a jeho členy se zobrazí v okně Detaily třídy a v okně Vlastnosti.  
   
-2.  V okně Detaily třídy, nebo v okně Vlastnosti upravte pole názvu vlastnosti a stiskněte klávesu Enter.  
+2. V okně Detaily třídy, nebo v okně Vlastnosti upravte pole názvu vlastnosti a stiskněte klávesu Enter.  
   
      Název se aktualizuje v **podrobností třídy** okna, na Asociační lince, v okně Vlastnosti a v kódu.  
   
 ## <a name="see-also"></a>Viz také  
- [Postupy: Změna mezi zápisem člena a zápisem asociace (návrhář tříd)](../ide/how-to-change-between-member-notation-and-association-notation-class-designer.md)
+ [Postupy: Změna mezi zápisem člena a zápisem asociace (Návrhář tříd)](../ide/how-to-change-between-member-notation-and-association-notation-class-designer.md)

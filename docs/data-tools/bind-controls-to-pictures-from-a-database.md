@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5afabf877fbd1a34bc579d81a137abbd5771fed5
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 4e41cb7bf747a1c083dc1728d7ea26f47ad8fa48
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55944062"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106992"
 ---
 # <a name="bind-controls-to-pictures-from-a-database"></a>Vytvoření vazby ovládacích prvků k obrázkům z databáze
 
@@ -34,14 +34,14 @@ Následující postup předpokládá, že **zdroje dat** okno je již naplněný
 
 ## <a name="to-bind-a-picture-in-a-database-to-a-control"></a>K vytvoření vazby obrázek v databázi do ovládacího prvku
 
-1.  Ujistěte se, že chcete přidat ovládací prvek na návrhové ploše je otevřený Návrhář WPF nebo Návrhář formulářů Windows.
+1. Ujistěte se, že chcete přidat ovládací prvek na návrhové ploše je otevřený Návrhář WPF nebo Návrhář formulářů Windows.
 
-2.  V **zdroje dat** okna, rozbalte položku požadovanou tabulku nebo objektu zobrazíte její sloupce nebo vlastnosti.
+2. V **zdroje dat** okna, rozbalte položku požadovanou tabulku nebo objektu zobrazíte její sloupce nebo vlastnosti.
 
    > [!TIP]
    > Pokud **zdroje dat** okno není otevřeno, otevřete ho tak, že vyberete **zobrazení** > **ostatní Windows** > **zdroje dat**.
 
-3.  Vyberte sloupec nebo vlastnost, která obsahuje image data a vyberte jednu z následujících ovládacích prvků z jeho ovládací prvek rozevírací seznam:
+3. Vyberte sloupec nebo vlastnost, která obsahuje image data a vyberte jednu z následujících ovládacích prvků z jeho ovládací prvek rozevírací seznam:
 
     - Pokud je otevřený Návrhář WPF, vyberte **Image**.
 

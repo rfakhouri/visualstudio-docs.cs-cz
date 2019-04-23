@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6b9908b906a780839da335ce38af5b0d927632bc
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: b36c149022849dd6a788bcb5ee8f58cc12ae4417
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596513"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110996"
 ---
 # <a name="how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml"></a>Postupy: Export pásu karet z Návrháře pásu karet do kódu XML pásu karet
   **Pás karet (vizuální návrhář)** položka nepodporuje všechny možné typy vlastního nastavení pásu karet. Přizpůsobení pásu karet v upřesňující možnosti, můžete exportovat do kódu XML pásu karet na pásu karet z návrháře a přímo upravit soubor XML.
@@ -35,32 +35,32 @@ ms.locfileid: "56596513"
 
 ### <a name="to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml"></a>Export pásu karet z Návrháře pásu karet do kódu XML pásu karet
 
-1.  Klikněte pravým tlačítkem na soubor kódu pásu karet v **Průzkumníka řešení**a potom klikněte na tlačítko **Návrhář zobrazení**.
+1. Klikněte pravým tlačítkem na soubor kódu pásu karet v **Průzkumníka řešení**a potom klikněte na tlačítko **Návrhář zobrazení**.
 
-2.  Klikněte pravým tlačítkem na Návrhář pásu karet a potom klikněte na tlačítko **Export pásu karet do XML**.
+2. Klikněte pravým tlačítkem na Návrhář pásu karet a potom klikněte na tlačítko **Export pásu karet do XML**.
 
      Visual Studio přidá souboru XML pásu karet a soubor kódu XML pásu karet do projektu.
 
-3.  Ve třídě pásu karet kódu vyhledejte komentáře, které začínají `TODO:`.
+3. Ve třídě pásu karet kódu vyhledejte komentáře, které začínají `TODO:`.
 
-4.  Zkopírujte blok kódu do těchto komentářů k **ThisAddin**, **ThisWorkbook**, nebo **ThisDocument** třídy, v závislosti na tom, jaký typ řešení, kterou vyvíjíte.
+4. Zkopírujte blok kódu do těchto komentářů k **ThisAddin**, **ThisWorkbook**, nebo **ThisDocument** třídy, v závislosti na tom, jaký typ řešení, kterou vyvíjíte.
 
      Tento kód povoluje aplikace Microsoft Office zjišťovat a načíst vaše vlastní pás karet. Další informace najdete v tématu [kódu XML pásu karet](../vsto/ribbon-xml.md).
 
-5.  V **ThisAddin**, **ThisWorkbook**, nebo **ThisDocument** třídy, zrušte komentář u bloku kódu.
+5. V **ThisAddin**, **ThisWorkbook**, nebo **ThisDocument** třídy, zrušte komentář u bloku kódu.
 
      Po zrušte komentář u kód by měl vypadat podobně jako v následujícím příkladu. V tomto příkladu se nazývá třídě pásu karet `MyRibbon`.
 
      [!code-csharp[Trin_Ribbon_Custom_Tab_XML#1](../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab_XML_O12/ThisAddIn.cs#1)]
      [!code-vb[Trin_Ribbon_Custom_Tab_XML#1](../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab_XML_O12/ThisAddIn.vb#1)]
 
-6.  Přejděte do souboru kódu XML pásu karet a najít `Ribbon Callbacks` oblasti.
+6. Přejděte do souboru kódu XML pásu karet a najít `Ribbon Callbacks` oblasti.
 
      Toto je místo, kde píšete metody zpětného volání pro zpracování uživatelské akce, jako je kliknutí na tlačítko.
 
-7.  Vytvořte metody zpětného volání pro každou obslužnou rutinu události, kterou jste napsali v kódu Návrháře pásu karet.
+7. Vytvořte metody zpětného volání pro každou obslužnou rutinu události, kterou jste napsali v kódu Návrháře pásu karet.
 
-8.  Přesunout všechny svůj kód obslužné rutiny události z obslužné rutiny události do metod zpětného volání a upravte kód pro práci s pásu karet ribbonx (Ribbon extensibility) programovacího modelu.
+8. Přesunout všechny svůj kód obslužné rutiny události z obslužné rutiny události do metod zpětného volání a upravte kód pro práci s pásu karet ribbonx (Ribbon extensibility) programovacího modelu.
 
      Informace o psaní metody zpětného volání a pomocí programovacího modelu Ribbon najdete v tématu [kódu XML pásu karet](../vsto/ribbon-xml.md).
 

@@ -14,12 +14,12 @@ dev_langs:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f5c1a065d30f3925ba5c567d562d0138de8c5953
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: a6f1c524b879d5d5476491a8979d86449f3d43c0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57869273"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60086400"
 ---
 # <a name="generate-and-run-a-coded-web-performance-test"></a>Generování a spuštění programového testu výkonnosti webu
 
@@ -29,13 +29,13 @@ Testy webového výkonu jsou zaznamenány procházením webové aplikace. Testy 
 
 ## <a name="generate-a-coded-web-performance-test"></a>Generování programový test výkonnosti webu
 
-1.  Pokud jste ještě nevytvořili test výkonnosti webu, přečtěte si téma [zaznamenání testu výkonu webu](/azure/devops/test/load-test/run-performance-tests-app-before-release#create-a-web-performance-and-load-test-project).
+1. Pokud jste ještě nevytvořili test výkonnosti webu, přečtěte si téma [zaznamenání testu výkonu webu](/azure/devops/test/load-test/run-performance-tests-app-before-release#create-a-web-performance-and-load-test-project).
 
-2.  Generovat kódovaný test.
+2. Generovat kódovaný test.
 
      ![Generování programový test výkonnosti webu](../test/media/web_test_coded_generate.png)
 
-3.  Název testu.
+3. Název testu.
 
      ![Zadejte název programového testu výkonnosti webu](../test/media/web_test_coded_generate_nametest.png)
 
@@ -47,7 +47,7 @@ Testy webového výkonu jsou zaznamenány procházením webové aplikace. Testy 
 
      Zobrazí se v kódu, že metoda GetRequestEnumerator() v C# nebo metoda Run() v jazyce Visual Basic obsahuje každý ověřovací pravidlo a webové požadavky, které byly v zaznamenaném testu.
 
-4.  Pokud chcete prokázat Přidání jednoduchého kódu, přejděte na konec metody a za kód poslední webové žádosti a přidejte následující kód:
+4. Pokud chcete prokázat Přidání jednoduchého kódu, přejděte na konec metody a za kód poslední webové žádosti a přidejte následující kód:
 
     ```c#
     if (DateTime.Today.DayOfWeek == DayOfWeek.Wednesday)
@@ -72,9 +72,9 @@ Testy webového výkonu jsou zaznamenány procházením webové aplikace. Testy 
     End If
     ```
 
-5.  Sestavte řešení, chcete-li ověřit, že váš vlastní kód zkompiluje.
+5. Sestavte řešení, chcete-li ověřit, že váš vlastní kód zkompiluje.
 
-6.  Spusťte test.
+6. Spusťte test.
 
      ![Spustit programový test výkonnosti webu](../test/media/web_test_coded_generate_run.png)
 

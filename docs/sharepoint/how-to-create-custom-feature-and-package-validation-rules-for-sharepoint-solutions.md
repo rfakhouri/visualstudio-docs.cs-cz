@@ -13,33 +13,33 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 57ea15d8f0a92d28d8687f3b3513a6610683da11
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 061a86ee301378bc8b456d370eddd19d2f91bbb6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56633589"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109202"
 ---
 # <a name="how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions"></a>Postupy: Vytvoření vlastní funkce a balíku ověřovacích pravidel pro řešení služby SharePoint
   Můžete vytvořit vlastní ověřovací pravidla pro ověření balíčku řešení vygenerované sadou Visual Studio. Na všechny položky této součásti nebo balíčku můžete provést úplné ověření tak, že vyberete **ověřit** v místní nabídce balíčku nebo funkce **PackagingExplorer**. Částečné ověřování se provádí při přidání nového projektu SharePonit nebo funkce na projekt tak, aby určí, jestli balíček nebo funkce by být v platném stavu.
 
 ### <a name="to-create-a-custom-package-validation-rule"></a>Chcete-li vytvořit balíček vlastní ověřovací pravidlo
 
-1.  Vytvořte projekt knihovny tříd.
+1. Vytvořte projekt knihovny tříd.
 
-2.  Přidejte odkazy na následující sestavení:
+2. Přidejte odkazy na následující sestavení:
 
-    -   Microsoft.VisualStudio.SharePoint
+    - Microsoft.VisualStudio.SharePoint
 
-    -   System.ComponentModel.Composition
+    - System.ComponentModel.Composition
 
-3.  Vytvořte třídu, která implementuje jednu z následujících rozhraní:
+3. Vytvořte třídu, která implementuje jednu z následujících rozhraní:
 
-    -   Chcete-li vytvořit balíček ověřovacího pravidla, implementovat <xref:Microsoft.VisualStudio.SharePoint.Validation.IPackageValidationRule> rozhraní.
+    - Chcete-li vytvořit balíček ověřovacího pravidla, implementovat <xref:Microsoft.VisualStudio.SharePoint.Validation.IPackageValidationRule> rozhraní.
 
-    -   Chcete-li vytvořit funkci pravidla ověřování, implementovat <xref:Microsoft.VisualStudio.SharePoint.Validation.IFeatureValidationRule> rozhraní.
+    - Chcete-li vytvořit funkci pravidla ověřování, implementovat <xref:Microsoft.VisualStudio.SharePoint.Validation.IFeatureValidationRule> rozhraní.
 
-4.  Přidat <xref:System.ComponentModel.Composition.ExportAttribute> do třídy. Tento atribut umožňuje zjišťovat a načíst ověřovací pravidlo Visual Studio. Předání <xref:Microsoft.VisualStudio.SharePoint.Validation.IPackageValidationRule> nebo <xref:Microsoft.VisualStudio.SharePoint.Validation.IFeatureValidationRule> typ konstruktoru atributu.
+4. Přidat <xref:System.ComponentModel.Composition.ExportAttribute> do třídy. Tento atribut umožňuje zjišťovat a načíst ověřovací pravidlo Visual Studio. Předání <xref:Microsoft.VisualStudio.SharePoint.Validation.IPackageValidationRule> nebo <xref:Microsoft.VisualStudio.SharePoint.Validation.IFeatureValidationRule> typ konstruktoru atributu.
 
 ## <a name="example"></a>Příklad
  Následující příklad kódu ukazuje, jak vytvořit vlastní ověřovací pravidlo funkce.
@@ -50,9 +50,9 @@ ms.locfileid: "56633589"
 ## <a name="compile-the-code"></a>Kompilace kódu
  Tento příklad vyžaduje odkazy na následující sestavení:
 
--   Microsoft.VisualStudio.SharePoint.
+- Microsoft.VisualStudio.SharePoint.
 
--   System.ComponentModel.Composition.
+- System.ComponentModel.Composition.
 
 ## <a name="deploy-the-extension"></a>Nasazení rozšíření
  Chcete-li nasadit rozšíření, vytvořte [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] extension (VSIX) balíčku pro sestavení a všechny další soubory, které chcete distribuovat s příponou. Další informace najdete v tématu [nástroje nasazení rozšíření pro SharePoint v sadě Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).

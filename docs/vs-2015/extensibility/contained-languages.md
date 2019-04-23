@@ -10,12 +10,12 @@ ms.assetid: b75bbb51-8e42-41b1-bece-09ab0b1f03cc
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 20a42d614278413e4e6ee09ecacdf842ccee878d
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 0920999eee7460c8bf697e245bae55a3641b8e18
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59662241"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60101168"
 ---
 # <a name="contained-languages"></a>Omezením jazyky
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)] 
@@ -25,16 +25,16 @@ ms.locfileid: "59662241"
 ## <a name="implementation"></a>Implementace  
  Nejdůležitější rozhraní je nutné implementovat pro jazyky obsažené <xref:Microsoft.VisualStudio.TextManager.Interop.IVsContainedLanguage> rozhraní. Toto rozhraní je implementováno v jakémkoliv jazyce, který je možné hostovat ve primárního jazyka. Poskytuje přístup k službě jazyka colorizer filtr zobrazení textu a ID primárního jazyka služby. <xref:Microsoft.VisualStudio.TextManager.Interop.IVsContainedLanguageFactory> Vám umožní vytvářet <xref:Microsoft.VisualStudio.TextManager.Interop.IVsContainedLanguage> rozhraní. Následující kroky ukazují, jak implementovat omezením jazyka:  
   
-1.  Použití `QueryService()` získat ID služby a interface ID jazyka <xref:Microsoft.VisualStudio.TextManager.Interop.IVsContainedLanguageFactory>.  
+1. Použití `QueryService()` získat ID služby a interface ID jazyka <xref:Microsoft.VisualStudio.TextManager.Interop.IVsContainedLanguageFactory>.  
   
-2.  Volání <xref:Microsoft.VisualStudio.TextManager.Interop.IVsContainedLanguageFactory.GetLanguage%2A> metodu pro vytvoření <xref:Microsoft.VisualStudio.TextManager.Interop.IVsContainedLanguage> rozhraní. Předávání <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> rozhraní, jeden nebo více [položky ID](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID>) a <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferCoordinator> rozhraní.  
+2. Volání <xref:Microsoft.VisualStudio.TextManager.Interop.IVsContainedLanguageFactory.GetLanguage%2A> metodu pro vytvoření <xref:Microsoft.VisualStudio.TextManager.Interop.IVsContainedLanguage> rozhraní. Předávání <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> rozhraní, jeden nebo více [položky ID](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID>) a <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferCoordinator> rozhraní.  
   
-3.  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferCoordinator> Rozhraní, které je objekt koordinátor vyrovnávací paměti textu, poskytuje základní služby, které jsou nutné k mapování umístění v primárním souboru do vyrovnávací paměti pro sekundární jazyk.  
+3. <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferCoordinator> Rozhraní, které je objekt koordinátor vyrovnávací paměti textu, poskytuje základní služby, které jsou nutné k mapování umístění v primárním souboru do vyrovnávací paměti pro sekundární jazyk.  
   
      Například v jednom souboru ASPX, obsahuje primární soubor ASP, HTML a veškerý kód, který je obsažen. Sekundární vyrovnávací paměti, ale obsahuje obsažený kód společně s žádné definice tříd, aby sekundární vyrovnávací paměti souboru platný kód. Koordinátora buffer zpracovává práci koordinovat úpravy z vyrovnávací paměti jeden na druhý.  
   
-4.  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferCoordinator.SetSpanMappings%2A> Metodu, která je primární jazyk, říká koordinátora buffer, jaký text ve vyrovnávací paměti je namapován na odpovídající text ve vyrovnávací paměti pro sekundární.  
+4. <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferCoordinator.SetSpanMappings%2A> Metodu, která je primární jazyk, říká koordinátora buffer, jaký text ve vyrovnávací paměti je namapován na odpovídající text ve vyrovnávací paměti pro sekundární.  
   
      Jazyk předá pole <xref:Microsoft.VisualStudio.TextManager.Interop.NewSpanMapping> strukturou, který aktuálně obsahuje pouze primární a sekundární rozpětí.  
   
-5.  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferCoordinator.MapPrimaryToSecondarySpan%2A> Metoda a <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferCoordinator.MapSecondaryToPrimarySpan%2A> metoda poskytuje mapování z primární na sekundární vyrovnávací paměti a naopak.
+5. <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferCoordinator.MapPrimaryToSecondarySpan%2A> Metoda a <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferCoordinator.MapSecondaryToPrimarySpan%2A> metoda poskytuje mapování z primární na sekundární vyrovnávací paměti a naopak.

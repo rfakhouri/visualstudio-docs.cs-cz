@@ -12,12 +12,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3057d333cfc3b08298a5329a34ef52a51556e4ec
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: cc3890ee8392088592aef16dcc120637da74e285
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54800396"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113453"
 ---
 # <a name="validation-in-a-domain-specific-language"></a>Ověřování v jazyce specifickém pro doménu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,13 +58,13 @@ Jako autoři jazyka specifického pro doménu (DSL) můžete definovat omezení 
   
 1. Povolení ověřování v **Editor\Validation** uzlu:  
   
-   1.  Otevřít **Dsl\DslDefinition.dsl**.  
+   1. Otevřít **Dsl\DslDefinition.dsl**.  
   
-   2.  V okně Průzkumník DSL, rozbalte **Editor** uzel a vyberte možnost **ověření**.  
+   2. V okně Průzkumník DSL, rozbalte **Editor** uzel a vyberte možnost **ověření**.  
   
-   3.  V okně Vlastnosti nastavte **používá** vlastností `true`. Je nejvhodnější pro nastavení těchto vlastností.  
+   3. V okně Vlastnosti nastavte **používá** vlastností `true`. Je nejvhodnější pro nastavení těchto vlastností.  
   
-   4.  Klikněte na tlačítko **Transformovat všechny šablony** v panelu nástrojů Průzkumníka řešení.  
+   4. Klikněte na tlačítko **Transformovat všechny šablony** v panelu nástrojů Průzkumníka řešení.  
   
 2. Zápis definicí částečné třídy pro jeden nebo více doménovými třídami nebo vztahy domén. Zapsat tyto definice do nového souboru v kódu **Dsl** projektu.  
   
@@ -74,7 +74,7 @@ Jako autoři jazyka specifického pro doménu (DSL) můžete definovat omezení 
    [ValidationState(ValidationState.Enabled)]  
    ```  
   
-   -   Ve výchozím nastavení tento atribut taky povolí ověřování pro odvozené třídy. Pokud chcete zakázat ověřování pro konkrétní odvozenou třídu, můžete použít `ValidationState.Disabled`.  
+   - Ve výchozím nastavení tento atribut taky povolí ověřování pro odvozené třídy. Pokud chcete zakázat ověřování pro konkrétní odvozenou třídu, můžete použít `ValidationState.Disabled`.  
   
 4. Přidání metody ověřování na třídy. Každá metoda ověřování můžete mít libovolný název, ale mít jeden parametr typu <xref:Microsoft.VisualStudio.Modeling.Validation.ValidationContext>.  
   
@@ -304,7 +304,7 @@ namespace Company.FamilyTree
   
  Obslužné rutiny se také označují jako po vrácení zpět nebo opakování operace, které ovlivňují odkazy nebo elementy.  
   
-##  <a name="custom"></a> Vlastní ověřovací kategorie  
+## <a name="custom"></a> Vlastní ověřovací kategorie  
  Kromě standardní ověřovací kategorie, jako je například nabídka a otevřít můžete definovat vlastní kategorie. Můžete vyvolat tyto kategorie z programového kódu. Uživatel nemůže je vyvolat přímo.  
   
  Typické použití pro vlastní kategorie je definovat kategorie, která ověřuje, zda model splňuje předpoklady konkrétní nástroj.  
@@ -332,7 +332,7 @@ validationController.ValidateCustom
    "PreconditionsForGeneratePartsList");  
 ```  
   
-##  <a name="alternatives"></a> Alternativy k ověření  
+## <a name="alternatives"></a> Alternativy k ověření  
  Omezení ověření zprávy o chybách, ale neměňte modelu. Pokud místo toho chcete zabránit modelu stává neplatný, můžete použít jiné techniky.  
   
  Tyto postupy se však nedoporučuje. Je obvykle vhodnější nechat uživatele rozhodnout, jak chybu opravit modelu je neplatný.  

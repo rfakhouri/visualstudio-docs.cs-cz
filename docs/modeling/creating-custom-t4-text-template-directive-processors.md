@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4221489318e4cdd4268d5c5d00cbaa079838dcba
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 6c159cd6fbd4f2fbfff414688e2ec865bcc8ddb4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55940890"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109254"
 ---
 # <a name="creating-custom-t4-text-template-directive-processors"></a>Vytváření vlastních procesorů pro direktivy textových šablon T4
 
@@ -40,9 +40,9 @@ Různé textové šablony můžete sdílet funkci, která poskytuje jeden proces
 
 Může být několik příkladů vlastní procesory direktiv:
 
--   Procesor direktiv vrátit data z databáze, která přijímá jako parametry uživatelské jméno a heslo.
+- Procesor direktiv vrátit data z databáze, která přijímá jako parametry uživatelské jméno a heslo.
 
--   Procesoru direktiv pro otevírání a čtení souboru, který přijímá jako parametr názvu souboru.
+- Procesoru direktiv pro otevírání a čtení souboru, který přijímá jako parametr názvu souboru.
 
 ### <a name="principal-parts-of-a-custom-directive-processor"></a>Hlavní část vlastního procesoru direktiv
 
@@ -50,19 +50,19 @@ K vývoji procesor direktiv, musíte vytvořit třídu, která dědí buď z <xr
 
 Nejdůležitější `DirectiveProcessor` metody, které je nutné implementovat jsou následující.
 
--   `bool IsDirectiveSupported(string directiveName)` -Návratový `true` pokud procesor direktiv můžete řešit s názvem direktivy.
+- `bool IsDirectiveSupported(string directiveName)` -Návratový `true` pokud procesor direktiv můžete řešit s názvem direktivy.
 
--   `void ProcessDirective (string directiveName, IDictionary<string, string> arguments)` – Modul šablony volá tuto metodu pro každý výskyt – direktiva v šabloně. Procesor měli uložit výsledky.
+- `void ProcessDirective (string directiveName, IDictionary<string, string> arguments)` – Modul šablony volá tuto metodu pro každý výskyt – direktiva v šabloně. Procesor měli uložit výsledky.
 
 Po všech volání metoda ProcessDirective() modul šablon bude volat tyto metody:
 
--   `string[] GetReferencesForProcessingRun()` -Vrátí názvy sestavení, která se vyžaduje kód šablony.
+- `string[] GetReferencesForProcessingRun()` -Vrátí názvy sestavení, která se vyžaduje kód šablony.
 
--   `string[] GetImportsForProcessingRun()` -Vrátí obory názvů, které lze použít v kódu šablony.
+- `string[] GetImportsForProcessingRun()` -Vrátí obory názvů, které lze použít v kódu šablony.
 
--   `string GetClassCodeForProcessingRun()` -Návratový kód metody, vlastnosti a jiné deklarace, které kód šablony mohl používat. Nejjednodušší způsob, jak to provést je vytvořit řetězec obsahující C# nebo kódu jazyka Visual Basic. Aby procesor direktiv dokáže volaná ze šablony, která používá libovolný jazyk CLR, můžete vytvořit příkazy jako strom CodeDom a potom vrátí výsledek serializaci stromu v jazyce, který používá šablonu.
+- `string GetClassCodeForProcessingRun()` -Návratový kód metody, vlastnosti a jiné deklarace, které kód šablony mohl používat. Nejjednodušší způsob, jak to provést je vytvořit řetězec obsahující C# nebo kódu jazyka Visual Basic. Aby procesor direktiv dokáže volaná ze šablony, která používá libovolný jazyk CLR, můžete vytvořit příkazy jako strom CodeDom a potom vrátí výsledek serializaci stromu v jazyce, který používá šablonu.
 
--   Další informace najdete v tématu [názorný postup: Vytvoření vlastního procesoru direktiv](../modeling/walkthrough-creating-a-custom-directive-processor.md).
+- Další informace najdete v tématu [názorný postup: Vytvoření vlastního procesoru direktiv](../modeling/walkthrough-creating-a-custom-directive-processor.md).
 
 ## <a name="see-also"></a>Viz také:
 

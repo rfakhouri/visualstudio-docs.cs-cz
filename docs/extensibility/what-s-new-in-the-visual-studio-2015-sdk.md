@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 10ceddf29a044ac8538c05cbf7cd300759a76de6
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: a67b2e1d9cbbad4a9b3426d264e6fecf8623e5a7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56692044"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105082"
 ---
 # <a name="what39s-new-in-the-visual-studio-2015-sdk"></a>Co&#39;s nového ve Visual Studio 2015 SDK
 Visual Studio SDK obsahuje následující nové a aktualizované funkce pro Visual Studio 2015, Visual Studio 2015, aktualizovat a Visual Studio 2017.
@@ -23,9 +23,9 @@ Visual Studio SDK obsahuje následující nové a aktualizované funkce pro Visu
 
  Tato témata jsou v rámci [nástroje VSSDK](../extensibility/internals/vssdk-utilities.md) části:
 
--   [Barevné motivy nástroje](../extensibility/internals/color-theming-tools.md) vám pomůžou vytvářet a upravovat vlastní barvy pro sadu Visual Studio.
+- [Barevné motivy nástroje](../extensibility/internals/color-theming-tools.md) vám pomůžou vytvářet a upravovat vlastní barvy pro sadu Visual Studio.
 
--   [Nástroje služby Image](../extensibility/internals/image-service-tools.md) umožňují pracovat se soubory manifestu obrázků sady Visual Studio.
+- [Nástroje služby Image](../extensibility/internals/image-service-tools.md) umožňují pracovat se soubory manifestu obrázků sady Visual Studio.
 
 ## <a name="new-way-to-add-the-visual-studio-sdk-to-visual-studio"></a>Nový způsob, jak přidat Visual Studio SDK do sady Visual Studio
  Spouští se v sadě Visual Studio 2015, není nutné samostatně stáhnout Visual Studio SDK. Místo toho ho můžete nainstalovat jako součást procesu instalace normální, nebo můžete nainstalovat později. Když otevřete nebo vytvořte VSIX řešení sady Visual Studio vás vyzve k instalaci Visual Studio Extensibility Tools. Další informace najdete v tématu [instalace sady Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
@@ -36,13 +36,13 @@ Visual Studio SDK obsahuje následující nové a aktualizované funkce pro Visu
 ### <a name="visual-c-and-visual-basic"></a>Visual C# a Visual Basic
  Pro C# a Visual Basic je plný rozsah šablony položek projektu, které vám umožňují vytvářet rozšíření VSPackages, příkazy nabídky, okna nástrojů, editor třídění, vylepšení editoru a rozšíření okraj editoru. Některé nebo všechny z těchto šablon můžete přidat do standardních projektu VSIX. Další informace naleznete v tématu:
 
--   [Vytvoření rozšíření pomocí příkazu nabídky](../extensibility/creating-an-extension-with-a-menu-command.md)
+- [Vytvoření rozšíření pomocí příkazu nabídky](../extensibility/creating-an-extension-with-a-menu-command.md)
 
--   [Vytváření rozšíření pomocí panelu nástrojů](../extensibility/creating-an-extension-with-a-tool-window.md)
+- [Vytváření rozšíření pomocí panelu nástrojů](../extensibility/creating-an-extension-with-a-tool-window.md)
 
--   [Vytváření rozšíření pomocí šablony položky editoru](../extensibility/creating-an-extension-with-an-editor-item-template.md)
+- [Vytváření rozšíření pomocí šablony položky editoru](../extensibility/creating-an-extension-with-an-editor-item-template.md)
 
--   [Vytvoření rozšíření pomocí VSPackage](../extensibility/creating-an-extension-with-a-vspackage.md)
+- [Vytvoření rozšíření pomocí VSPackage](../extensibility/creating-an-extension-with-a-vspackage.md)
 
      Průvodce vytvořením balíčku VSPackage už vytvoří rozšíření v jazyce C# nebo Visual Basic.
 

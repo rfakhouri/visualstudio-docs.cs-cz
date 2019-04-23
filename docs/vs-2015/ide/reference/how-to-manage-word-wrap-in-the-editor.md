@@ -13,12 +13,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0ff92e93d2fa15591afddddc1a012ff94b8ba6c0
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 172c5b049e19700d3ce2e4ff1fe43490a2194a92
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59656008"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088038"
 ---
 # <a name="how-to-manage-word-wrap-in-the-editor"></a>Postupy: Správa zalamování řádků v editoru
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,19 +34,19 @@ Můžete nastavit a zrušit **zalamování** možnost. Když nastavíte tuto mo�
   
 #### <a name="to-set-word-wrap-preferences"></a>Nastavení aplikace word wrap předvoleb  
   
-1.  Na **nástroje** nabídce vyberte možnost **možnosti**.  
+1. Na **nástroje** nabídce vyberte možnost **možnosti**.  
   
-2.  V **textový Editor** složky, zvolte **Obecné** možnosti **všechny jazyky** podsložky globální nastavení této možnosti.  
+2. V **textový Editor** složky, zvolte **Obecné** možnosti **všechny jazyky** podsložky globální nastavení této možnosti.  
   
      – nebo –  
   
      Zvolte **Obecné** možnosti v podsložce pro jazyk, ve kterém jsou programování.  
   
-3.  V části **nastavení**zaškrtněte nebo zrušte **zalamování** možnost.  
+3. V části **nastavení**zaškrtněte nebo zrušte **zalamování** možnost.  
   
      Když **zalamování řádků** je vybraná možnost, **brazit piktogramy pro zalamování řádků** je povolená možnost.  
   
-4.  Vyberte **brazit piktogramy pro zalamování** možnost, pokud chcete zobrazit indikátor vrátit šipku, kde dlouhý řádek zalamuje na další řádek. Pokud nechcete zobrazovat indikátor šipky, zrušte zaškrtnutí tohoto políčka.  
+4. Vyberte **brazit piktogramy pro zalamování** možnost, pokud chcete zobrazit indikátor vrátit šipku, kde dlouhý řádek zalamuje na další řádek. Pokud nechcete zobrazovat indikátor šipky, zrušte zaškrtnutí tohoto políčka.  
   
     > [!NOTE]
     >  Tyto šipky připomenutí nejsou přidány do kódu: jsou pouze pro účely zobrazení.  

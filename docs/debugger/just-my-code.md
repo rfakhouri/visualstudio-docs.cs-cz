@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 69ebbf2401432b9afec5a66fb6a7322e3e2df035
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: edb78ed49add85b35f3fb89b4ba424d44f52bf8b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58325328"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60081863"
 ---
 # <a name="debug-only-user-code-with-just-my-code"></a>Ladit jenom uživatelský kód pomocí funkce pouze můj kód
 
@@ -110,7 +110,7 @@ Pokud ladicí program přeruší v neuživatelském kódu (například použít 
 
 Pokud ladicí program narazí na výjimku, přestane na výjimku, ať už v uživatele nebo neuživatelský kód. **Uživatelem neošetřené** možnosti **nastavení výjimek** dialogové okno se ignorují.
 
-###  <a name="BKMK_CPP_Customize_call_stack_behavior"></a> Přizpůsobení C++ zásobník volání a kódu, krokování chování
+### <a name="BKMK_CPP_Customize_call_stack_behavior"></a> Přizpůsobení C++ zásobník volání a kódu, krokování chování
 
 Pro projekty C++, můžete zadat moduly, zdrojové soubory a funkce **zásobník volání** okno považuje za neuživatelský kód tak, že zadáte v  *\*.natjmc* soubory. Toto přizpůsobení platí i pro kód, pokud používáte nejnovější kompilátor (viz [pouze můj kód C++](#BKMK_CPP_User_and_non_user_code)).
 
@@ -160,7 +160,7 @@ A *.natjmc* soubor je soubor XML s následující syntaxí:
 |`Module`|Volitelné. Název nebo úplná cesta k modulu, který obsahuje funkci. Tento atribut slouží k rozlišení funkce se stejným názvem.|
 |`ExceptionImplementation`|Pokud je nastavena na `true`, zásobník volání se zobrazí funkce, která vyvolala výjimku, spíše než tuto funkci.|
 
-###  <a name="BKMK_CPP_Customize_stepping_behavior"></a> Přizpůsobení jazyka C++ chování nezávisle na nastavení funkce pouze můj kód
+### <a name="BKMK_CPP_Customize_stepping_behavior"></a> Přizpůsobení jazyka C++ chování nezávisle na nastavení funkce pouze můj kód
 
 V projektech C++, můžete zadat funkce převezme seznam jako neuživatelský kód v kroku  *\*.natstepfilter* soubory. Funkce uvedené v  *\*.natstepfilter* soubory nejsou závislé na nastavení funkce pouze můj kód.
 
@@ -192,7 +192,7 @@ A *.natstepfilter* soubor je soubor XML s následující syntaxí:
 |`Module`|Volitelné. ECMA 262 ve formátu regulárních výrazů zadáním úplná cesta k modulu, který obsahuje funkci. Shoda nerozlišuje malá a velká písmena.|
 |`Action`|Povinný parametr. Jedna z těchto hodnot malá a velká písmena:<br /><br /> `NoStepInto`  -sdělí ladicímu programu, aby přešel přes funkci.<br /> `StepInto`  -dává pokyn ladicímu programu vstup do funkce přepsání jiného `NoStepInto` pro odpovídající funkce.|
 
-##  <a name="BKMK_JavaScript_Just_My_Code"></a> Pouze můj kód jazyka JavaScript
+## <a name="BKMK_JavaScript_Just_My_Code"></a> Pouze můj kód jazyka JavaScript
 
 <a name="BKMK_JS_User_and_non_user_code"></a> Funkce pouze můj kód jazyka JavaScript – ovládací prvky krokování a volání Zobrazit zásobník zařazením do testovacích kód v jednom z těchto klasifikací:
 
@@ -205,10 +205,10 @@ A *.natstepfilter* soubor je soubor XML s následující syntaxí:
 Ladicí program jazyka JavaScript klasifikuje kód jako uživatel, nebo bez uživatelem v tomto pořadí:
 
 1. Výchozí klasifikace.
-   -   Skript spustit předáním řetězce hostitelské `eval` funkce je **MyCode**.
-   -   Skript spustit tím, že předáte řetězec `Function` konstruktor je **LibraryCode**.
-   -   Skript v odkaz na rozhraní, jako je například WinJS nebo sady Azure SDK, je **LibraryCode**.
-   -   Skript spustit tím, že předáte řetězec `setTimeout`, `setImmediate`, nebo `setInterval` je funkce **UnrelatedCode**.
+   - Skript spustit předáním řetězce hostitelské `eval` funkce je **MyCode**.
+   - Skript spustit tím, že předáte řetězec `Function` konstruktor je **LibraryCode**.
+   - Skript v odkaz na rozhraní, jako je například WinJS nebo sady Azure SDK, je **LibraryCode**.
+   - Skript spustit tím, že předáte řetězec `setTimeout`, `setImmediate`, nebo `setInterval` je funkce **UnrelatedCode**.
 
 2. Klasifikace pro všechny projekty aplikace Visual Studio JavaScript v *%VSInstallDirectory%\JavaScript\JustMyCode\mycode.default.wwa.json* souboru.
 

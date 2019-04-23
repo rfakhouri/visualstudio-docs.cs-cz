@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b81ea271e1ab5d44337ce111e89d5624efd452d0
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 9fe89c6106ab1b411974e44bb05128b2bfc99fc6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56706012"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089598"
 ---
 # <a name="attaching-and-detaching-to-a-program"></a>Připojení a odpojení programu
 Připojování ladicího programu vyžaduje odeslání tak správné pořadí metod a událostí pomocí vlastních atributech.
@@ -31,11 +31,11 @@ Připojování ladicího programu vyžaduje odeslání tak správné pořadí me
 
     Pokud `S_OK` se vrátí, DE je třeba načíst ve stejném procesu jako SDM. SDM provádí následující úlohy:
 
-   1.  Volání [GetEngineInfo](../../extensibility/debugger/reference/idebugprogramnode2-getengineinfo.md) získat informace pro modul DE.
+   1. Volání [GetEngineInfo](../../extensibility/debugger/reference/idebugprogramnode2-getengineinfo.md) získat informace pro modul DE.
 
-   2.  Společně vytvoří DE.
+   2. Společně vytvoří DE.
 
-   3.  Volání [připojit](../../extensibility/debugger/reference/idebugengine2-attach.md).
+   3. Volání [připojit](../../extensibility/debugger/reference/idebugengine2-attach.md).
 
 2. Odešle DE [IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md) k SDM s `EVENT_SYNC` atribut.
 

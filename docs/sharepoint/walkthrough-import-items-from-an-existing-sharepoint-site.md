@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 24ee1588555d51c20989d782375b32e5874df878
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 89559798e342c8993e523517e5c85fc38e1c0cf8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841736"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110861"
 ---
 # <a name="walkthrough-import-items-from-an-existing-sharepoint-site"></a>Návod: Import položek z existující stránky SharePoint
   Tento návod ukazuje, jak importovat položky z existující stránky SharePoint do [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projektu služby SharePoint.
@@ -36,9 +36,9 @@ ms.locfileid: "56841736"
 ## <a name="prerequisites"></a>Požadavky
  K dokončení tohoto návodu budete potřebovat následující komponenty:
 
--   Podporované edice systému [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] a SharePoint.
+- Podporované edice systému [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] a SharePoint.
 
--   Visual Studio.
+- Visual Studio.
 
 ## <a name="customize-a-sharepoint-site"></a>Přizpůsobení webu služby SharePoint
  V tomto příkladu vytvoříte a přizpůsobit podřízeného webu služby SharePoint přidáním nového sloupce webu a vytvořením další podřízené lokality pro pozdější použití. Později bude první podřízený web exportovat do souboru WSP a importujte vlastní sloupec druhý podřízený web pomocí .wsp Importovat projekt.
@@ -79,23 +79,23 @@ ms.locfileid: "56841736"
 
 ### <a name="to-export-an-existing-sharepoint-site"></a>Chcete-li exportovat existující stránky SharePoint
 
-1.  Na webu služby SharePoint zvolte **nastavení webu** na **Akce webu** karet zobrazit na stránce Nastavení lokality.
+1. Na webu služby SharePoint zvolte **nastavení webu** na **Akce webu** karet zobrazit na stránce Nastavení lokality.
 
-2.  V **Akce webu** části stránky nastavení webu, zvolte **web uložit jako šablonu** odkaz.
+2. V **Akce webu** části stránky nastavení webu, zvolte **web uložit jako šablonu** odkaz.
 
-3.  V **název_souboru** zadejte **ExampleSite**a **název šablony** zadejte **lokality příklad**.
+3. V **název_souboru** zadejte **ExampleSite**a **název šablony** zadejte **lokality příklad**.
 
-4.  V tomto příkladu ponechte **zahrnout obsah** zrušte zaškrtnutí políčka.
+4. V tomto příkladu ponechte **zahrnout obsah** zrušte zaškrtnutí políčka.
 
      Pokud zaškrtnete toto políčko [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] uloží všechny seznamy a knihovny dokumentů a jejich obsah do souboru WSP. I když to je užitečné v některých případech, to není nutné v tomto příkladu.
 
-5.  Po dokončení operace úspěšně, zvolte **Galerie řešení** odkaz k zobrazení souboru WSP.
+5. Po dokončení operace úspěšně, zvolte **Galerie řešení** odkaz k zobrazení souboru WSP.
 
      Chcete-li zobrazit stránku Galerie řešení novější, otevřete **Akce webu** nabídce zvolte **nastavení webu**, zvolte **přejděte na nastavení lokality nejvyšší úrovně** odkaz v  **Správa kolekce lokalit** části a klikněte na tlačítko **řešení** odkaz v **Galerie** oddílu.
 
-6.  V Galerii řešení zvolte **ExampleSite** odkaz.
+6. V Galerii řešení zvolte **ExampleSite** odkaz.
 
-7.  V **stažení souboru** dialogového okna zvolte **Uložit** tlačítko pro uložení souboru v místním systému, ve výchozím nastavení se ve složce stažené soubory.
+7. V **stažení souboru** dialogového okna zvolte **Uložit** tlačítko pro uložení souboru v místním systému, ve výchozím nastavení se ve složce stažené soubory.
 
 ## <a name="import-the-wsp-file"></a>Import souboru WSP
  Teď, když máte *.wsp* soubor, který obsahuje položky, kterou chcete znovu použít (vlastní sloupec webu testovací sloupec), importovat *.wsp* souboru k němu přistupovat.
@@ -130,13 +130,13 @@ ms.locfileid: "56841736"
 
 ### <a name="to-deploy-the-project"></a>K nasazení projektu
 
-1.  V [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], zvolte **F5** klíč nasadit a spustit *.wsp* Importovat projekt.
+1. V [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], zvolte **F5** klíč nasadit a spustit *.wsp* Importovat projekt.
 
-2.  Na webu služby SharePoint otevřete **Akce webu** nabídky a klikněte na tlačítko **nastavení webu** zobrazíte na stránce Nastavení lokality.
+2. Na webu služby SharePoint otevřete **Akce webu** nabídky a klikněte na tlačítko **nastavení webu** zobrazíte na stránce Nastavení lokality.
 
-3.  V **Galerie** zvolte **sloupce webu** odkaz.
+3. V **Galerie** zvolte **sloupce webu** odkaz.
 
-4.  Přejděte dolů k položce **vlastní sloupce** oddílu.
+4. Přejděte dolů k položce **vlastní sloupce** oddílu.
 
      Všimněte si, že sloupec vlastního webu, který jste naimportovali z první web služby SharePoint se zobrazí v seznamu.
 

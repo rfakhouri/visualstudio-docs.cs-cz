@@ -1,5 +1,5 @@
 ---
-title: 'Průvodce: Jednoduché datové vazby v projektu doplňku VSTO'
+title: 'Návod: Jednoduché datové vazby v projektu doplňku VSTO'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,14 +14,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 39fcb9444fd3d4cde218cdc92e083d28342d8342
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 6b6cf1e800c785f73ebb11e09f11b617fe42aa32
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54872271"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099283"
 ---
-# <a name="walkthrough-simple-data-binding-in-vsto-add-in-project"></a>Průvodce: Jednoduché datové vazby v projektu doplňku VSTO
+# <a name="walkthrough-simple-data-binding-in-vsto-add-in-project"></a>Návod: Jednoduché datové vazby v projektu doplňku VSTO
 
 Vytvoření vazby dat k hostitelské ovládací prvky a ovládacích prvků Windows Forms v projekty doplňku VSTO. Tento návod ukazuje, jak přidat ovládací prvky do dokumentu aplikace Microsoft Office Word a vytvoření vazby ovládacích prvků k datům za běhu.
 
@@ -29,11 +29,11 @@ Vytvoření vazby dat k hostitelské ovládací prvky a ovládacích prvků Wind
 
 Tento návod znázorňuje následující úlohy:
 
--   Přidávání <xref:Microsoft.Office.Tools.Word.ContentControl> do dokumentu za běhu.
+- Přidávání <xref:Microsoft.Office.Tools.Word.ContentControl> do dokumentu za běhu.
 
--   Vytváření <xref:System.Windows.Forms.BindingSource> ovládací prvek, který připojí k instanci objektu dataset.
+- Vytváření <xref:System.Windows.Forms.BindingSource> ovládací prvek, který připojí k instanci objektu dataset.
 
--   Umožňuje uživateli procházet záznamy a zobrazení v ovládacím prvku.
+- Umožňuje uživateli procházet záznamy a zobrazení v ovládacím prvku.
 
 [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
@@ -41,15 +41,15 @@ Tento návod znázorňuje následující úlohy:
 
 K dokončení tohoto návodu budete potřebovat následující komponenty:
 
--   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
+- [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
--   [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] nebo [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].
+- [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] nebo [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].
 
--   Přístup ke spuštěné instanci systému SQL Server 2005 nebo SQL Server 2005 Express, který má `AdventureWorksLT` ukázkovou databázi k němu připojená. Můžete stáhnout `AdventureWorksLT` databáze z [webu CodePlex](http://go.microsoft.com/fwlink/?LinkId=115611). Další informace o připojení databáze naleznete v následujících tématech:
+- Přístup ke spuštěné instanci systému SQL Server 2005 nebo SQL Server 2005 Express, který má `AdventureWorksLT` ukázkovou databázi k němu připojená. Můžete stáhnout `AdventureWorksLT` databáze z [webu CodePlex](http://go.microsoft.com/fwlink/?LinkId=115611). Další informace o připojení databáze naleznete v následujících tématech:
 
-    -   Připojení databáze pomocí SQL Server Management Studio nebo SQL Server Management Studio Express, naleznete v tématu [jak: Připojení databáze (SQL Server Management Studio)](/sql/relational-databases/databases/attach-a-database).
+    - Připojení databáze pomocí SQL Server Management Studio nebo SQL Server Management Studio Express, naleznete v tématu [jak: Připojení databáze (SQL Server Management Studio)](/sql/relational-databases/databases/attach-a-database).
 
-    -   Připojení databáze pomocí příkazového řádku, naleznete v tématu [jak: Připojit soubor databáze pro SQL Server Express](/previous-versions/sql/).
+    - Připojení databáze pomocí příkazového řádku, naleznete v tématu [jak: Připojit soubor databáze pro SQL Server Express](/previous-versions/sql/).
 
 ## <a name="create-a-new-project"></a>Vytvoření nového projektu
 
@@ -57,13 +57,13 @@ Prvním krokem je vytvoření projektu doplňku VSTO pro Word.
 
 ### <a name="to-create-a-new-project"></a>Chcete-li vytvořit nový projekt
 
-1.  Vytvoření projektu doplňku VSTO pro Word s názvem **naplnění dokumenty z databáze**, buď ve Visual Basicu nebo C#.
+1. Vytvoření projektu doplňku VSTO pro Word s názvem **naplnění dokumenty z databáze**, buď ve Visual Basicu nebo C#.
 
      Další informace najdete v tématu [jak: Vytvářet projekty pro Office v sadě Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
      Visual Studio otevře *ThisAddIn.vb* nebo *ThisAddIn.cs* soubor a přidá **naplnění dokumenty z databáze** projektu **Průzkumníka řešení** .
 
-2.  Pokud váš projekt cílí [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] nebo [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)], přidejte odkaz na *Microsoft.Office.Tools.Word.v4.0.Utilities.dll* sestavení. Tento odkaz vyžaduje programové přidání ovládacích prvků Windows Forms k dokumentu dál v tomto názorném postupu.
+2. Pokud váš projekt cílí [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] nebo [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)], přidejte odkaz na *Microsoft.Office.Tools.Word.v4.0.Utilities.dll* sestavení. Tento odkaz vyžaduje programové přidání ovládacích prvků Windows Forms k dokumentu dál v tomto názorném postupu.
 
 ## <a name="create-a-data-source"></a>Vytvoření zdroje dat
 
@@ -103,37 +103,37 @@ Další informace o vázání ovládacích prvků na data, najdete v části [vy
 
 ### <a name="to-create-the-interface-in-the-document"></a>Chcete-li vytvořit rozhraní v dokumentu
 
-1.  V `ThisAddIn` třídy, deklarujte následující ovládací prvky pro zobrazení a posuňte se `Customer` tabulku `AdventureWorksLTDataSet` databáze.
+1. V `ThisAddIn` třídy, deklarujte následující ovládací prvky pro zobrazení a posuňte se `Customer` tabulku `AdventureWorksLTDataSet` databáze.
 
      [!code-vb[Trin_WordAddInDatabase#1](../vsto/codesnippet/VisualBasic/trin_wordaddindatabase/ThisAddIn.vb#1)]
      [!code-csharp[Trin_WordAddInDatabase#1](../vsto/codesnippet/CSharp/trin_wordaddindatabase/ThisAddIn.cs#1)]
 
-2.  V `ThisAddIn_Startup` metodu, přidejte následující kód, který inicializovat datové sady, vyplňte datovou sadu s údaji ze `AdventureWorksLTDataSet` databáze.
+2. V `ThisAddIn_Startup` metodu, přidejte následující kód, který inicializovat datové sady, vyplňte datovou sadu s údaji ze `AdventureWorksLTDataSet` databáze.
 
      [!code-vb[Trin_WordAddInDatabase#2](../vsto/codesnippet/VisualBasic/trin_wordaddindatabase/ThisAddIn.vb#2)]
      [!code-csharp[Trin_WordAddInDatabase#2](../vsto/codesnippet/CSharp/trin_wordaddindatabase/ThisAddIn.cs#2)]
 
-3.  Přidejte následující kód, který `ThisAddIn_Startup` metody. Tím se vygeneruje hostitelská položka, která rozšiřuje dokument. Další informace najdete v tématu [rozšíření Wordových dokumentů a Excelových sešitů v doplňcích VSTO za běhu](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).
+3. Přidejte následující kód, který `ThisAddIn_Startup` metody. Tím se vygeneruje hostitelská položka, která rozšiřuje dokument. Další informace najdete v tématu [rozšíření Wordových dokumentů a Excelových sešitů v doplňcích VSTO za běhu](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).
 
      [!code-vb[Trin_WordAddInDatabase#3](../vsto/codesnippet/VisualBasic/trin_wordaddindatabase/ThisAddIn.vb#3)]
      [!code-csharp[Trin_WordAddInDatabase#3](../vsto/codesnippet/CSharp/trin_wordaddindatabase/ThisAddIn.cs#3)]
 
-4.  Definujte několik rozsahů na začátku dokumentu. Tyto rozsahy určit, kam chcete vložit text a umístit ovládací prvky.
+4. Definujte několik rozsahů na začátku dokumentu. Tyto rozsahy určit, kam chcete vložit text a umístit ovládací prvky.
 
      [!code-vb[Trin_WordAddInDatabase#4](../vsto/codesnippet/VisualBasic/trin_wordaddindatabase/ThisAddIn.vb#4)]
      [!code-csharp[Trin_WordAddInDatabase#4](../vsto/codesnippet/CSharp/trin_wordaddindatabase/ThisAddIn.cs#4)]
 
-5.  Přidání ovládacích prvků rozhraní do dříve definovaného rozsahu.
+5. Přidání ovládacích prvků rozhraní do dříve definovaného rozsahu.
 
      [!code-vb[Trin_WordAddInDatabase#5](../vsto/codesnippet/VisualBasic/trin_wordaddindatabase/ThisAddIn.vb#5)]
      [!code-csharp[Trin_WordAddInDatabase#5](../vsto/codesnippet/CSharp/trin_wordaddindatabase/ThisAddIn.cs#5)]
 
-6.  Vytvoření vazby na ovládací prvek obsahu `AdventureWorksLTDataSet` pomocí <xref:System.Windows.Forms.BindingSource>. Pro C# vývojáři, přidání dvou ovladačů událostí pro <xref:Microsoft.Office.Tools.Word.Controls.Button> ovládacích prvků.
+6. Vytvoření vazby na ovládací prvek obsahu `AdventureWorksLTDataSet` pomocí <xref:System.Windows.Forms.BindingSource>. Pro C# vývojáři, přidání dvou ovladačů událostí pro <xref:Microsoft.Office.Tools.Word.Controls.Button> ovládacích prvků.
 
      [!code-vb[Trin_WordAddInDatabase#6](../vsto/codesnippet/VisualBasic/trin_wordaddindatabase/ThisAddIn.vb#6)]
      [!code-csharp[Trin_WordAddInDatabase#6](../vsto/codesnippet/CSharp/trin_wordaddindatabase/ThisAddIn.cs#6)]
 
-7.  Přidejte následující kód k procházení databázových záznamů.
+7. Přidejte následující kód k procházení databázových záznamů.
 
      [!code-vb[Trin_WordAddInDatabase#7](../vsto/codesnippet/VisualBasic/trin_wordaddindatabase/ThisAddIn.vb#7)]
      [!code-csharp[Trin_WordAddInDatabase#7](../vsto/codesnippet/CSharp/trin_wordaddindatabase/ThisAddIn.cs#7)]
@@ -144,11 +144,11 @@ Při otevření aplikace Word, ovládací prvek obsahu zobrazuje data z `Adventu
 
 ### <a name="to-test-the-vsto-add-in"></a>K otestování doplňku VSTO
 
-1.  Stisknutím klávesy **F5**.
+1. Stisknutím klávesy **F5**.
 
      Ovládací prvek obsahu s názvem `customerContentControl` se vytvoří a naplní daty. Současně, objekt datovou sadu s názvem `adventureWorksLTDataSet` a <xref:System.Windows.Forms.BindingSource> s názvem `customerBindingSource` jsou přidány do projektu. <xref:Microsoft.Office.Tools.Word.ContentControl> Je vázán na <xref:System.Windows.Forms.BindingSource>, která je dále vázán na objektu dataset.
 
-2.  Klikněte na tlačítko **Další** a **předchozí** tlačítka Procházet záznamy v databázi.
+2. Klikněte na tlačítko **Další** a **předchozí** tlačítka Procházet záznamy v databázi.
 
 ## <a name="see-also"></a>Viz také:
 

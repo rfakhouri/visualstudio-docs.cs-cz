@@ -12,12 +12,12 @@ ms.assetid: e86806dd-5897-4e4c-bfd4-8d687fb72a6e
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 03e2e5ce9ee1883f51bea68d5c1ccc2af0c944a7
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 6045466d93a0017b648ca4327e80c801517c1359
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955541"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111711"
 ---
 # <a name="how-to-specify-test-agents-to-use-in-load-test-scenarios"></a>Postupy: Určení testovacích agentů pro použití ve scénářích zátěžových testů
 
@@ -45,24 +45,24 @@ Pokud počítač testovacího agenta má více než 75 % využití procesoru neb
 
 ## <a name="to-specify-the-agents-to-use-for-a-scenario"></a>Chcete-li určit agentů pro scénář
 
-1.  Otevřete zátěžový test.
+1. Otevřete zátěžový test.
 
      **Editoru zátěžových testů** se zobrazí. Zobrazí se strom zátěžového testu.
 
-2.  V zátěžového testu stromů **scénáře** složky, vyberte uzel scénář, pro kterou chcete určit agenty k použití.
+2. V zátěžového testu stromů **scénáře** složky, vyberte uzel scénář, pro kterou chcete určit agenty k použití.
 
-3.  Na **zobrazení** nabídce vyberte možnost **okno vlastností**.
+3. Na **zobrazení** nabídce vyberte možnost **okno vlastností**.
 
      Kategorie a vlastnosti scénáře jsou zobrazeny v **vlastnosti** okna.
 
-4.  V textovém poli pro **agenty k použití** vlastnost, zadejte seznam agentů, se kterými se může spouštět scénář.
+4. V textovém poli pro **agenty k použití** vlastnost, zadejte seznam agentů, se kterými se může spouštět scénář.
 
      Agenty musí být odděleny čárkami, například "**Agent1, Agent2, Agent3**". Je-li tato vlastnost ponechána prázdná, scénář bude používat všechny dostupné agenty.
 
     > [!NOTE]
     > **Agenty k použití** vlastnost se ignoruje pro místní běhy. Pro vzdálená spuštění, pokud žádná z agentů uvedených v **agenty k použití** neexistuje, nebudou spouštět testy ve scénáři.
 
-5.  Po změně vlastnosti zvolte **Uložit** na **souboru** nabídky. Potom můžete spustit zátěžový test pomocí nového **agenty k použití** hodnotu.
+5. Po změně vlastnosti zvolte **Uložit** na **souboru** nabídky. Potom můžete spustit zátěžový test pomocí nového **agenty k použití** hodnotu.
 
 ## <a name="see-also"></a>Viz také:
 

@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ab55674cd1de54881eb46b47997a943678cbacd
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4ef1675480182796e1fe8bbe29baa5ed6a9d5f63
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56635615"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085113"
 ---
 # <a name="how-to-specify-a-start-menu-name-for-a-clickonce-application"></a>Postupy: Určení názvu úvodní nabídky pro aplikaci ClickOnce
 Když [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace se nainstaluje pro použití online i offline, záznam se přidá do **spustit** nabídky a **přidat nebo odebrat programy** seznamu. Ve výchozím nastavení, zobrazovaný název je stejný jako název sestavení aplikace, ale zobrazované jméno můžete změnit nastavením **název produktu** v **možnosti publikování** dialogové okno.
@@ -36,17 +36,17 @@ Když [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace
 
 ### <a name="to-specify-a-start-menu-name"></a>K určení názvu úvodní nabídky
 
-1.  S projekt vybraný v **Průzkumníka řešení**na **projektu** nabídky, klikněte na tlačítko **vlastnosti**.
+1. S projekt vybraný v **Průzkumníka řešení**na **projektu** nabídky, klikněte na tlačítko **vlastnosti**.
 
-2.  Klikněte na tlačítko **publikovat** kartu.
+2. Klikněte na tlačítko **publikovat** kartu.
 
-3.  Klikněte na tlačítko **možnosti** tlačítko Otevřít **možnosti publikování** dialogové okno.
+3. Klikněte na tlačítko **možnosti** tlačítko Otevřít **možnosti publikování** dialogové okno.
 
-4.  Klikněte na tlačítko **popis**.
+4. Klikněte na tlačítko **popis**.
 
-5.  V **možnosti publikování** dialogového okna zadejte název, který má být zobrazen v **název produktu**.
+5. V **možnosti publikování** dialogového okna zadejte název, který má být zobrazen v **název produktu**.
 
-6.  Volitelně můžete zadat název vydavatele v **název vydavatele**.
+6. Volitelně můžete zadat název vydavatele v **název vydavatele**.
 
 ## <a name="see-also"></a>Viz také:
 - [Publikování aplikací ClickOnce](../deployment/publishing-clickonce-applications.md)

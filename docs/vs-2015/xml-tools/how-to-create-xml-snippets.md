@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b64c94d26dcb197246f78b721fd087d5dbf1e0dc
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: c6e6ec0cb8affbb820886f2bca163aae00d8536f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59660356"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60101372"
 ---
 # <a name="how-to-create-xml-snippets"></a>Postupy: Vytváření fragmentů XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,23 +24,23 @@ XML Editor lze použít k vytvoření nových fragmentů kódu XML. Editor obsah
 ## <a name="to-create-a-new-xml-snippet"></a>Chcete-li vytvořit nové fragment kódu XML  
  Chcete-li vytvořit nový kód XML fragmentu kódu vytvořte nový soubor XML a použít **Vložit fragment** funkce.  
   
-1.  Na **souboru** nabídky, klikněte na tlačítko **nový** a potom klikněte na tlačítko **souboru**.  
+1. Na **souboru** nabídky, klikněte na tlačítko **nový** a potom klikněte na tlačítko **souboru**.  
   
-2.  Klikněte na tlačítko **soubor XML** a potom klikněte na tlačítko **otevřít**.  
+2. Klikněte na tlačítko **soubor XML** a potom klikněte na tlačítko **otevřít**.  
   
-3.  Podokna editoru pravým tlačítkem a vyberte **Vložit fragment**.  
+3. Podokna editoru pravým tlačítkem a vyberte **Vložit fragment**.  
   
-4.  Vyberte **fragment** ze seznamu a potom stiskněte klávesu ENTER.  
+4. Vyberte **fragment** ze seznamu a potom stiskněte klávesu ENTER.  
   
-5.  Proveďte změny nového fragment kódu.  
+5. Proveďte změny nového fragment kódu.  
   
-6.  Z **souboru** nabídky vyberte možnost **uložit XMLFile.xml**.  
+6. Z **souboru** nabídky vyberte možnost **uložit XMLFile.xml**.  
   
      **Uložit soubor jako** se zobrazí dialogové okno.  
   
-7.  Zadejte název pro nový fragment kódu a vyberte **soubory fragmentu kódu** z **uložit jako typ** okno rozevíracího seznamu.  
+7. Zadejte název pro nový fragment kódu a vyberte **soubory fragmentu kódu** z **uložit jako typ** okno rozevíracího seznamu.  
   
-8.  Použití **uložit v** rozevíracího seznamu změnit umístění souboru do složky fragmentů XML Snippets\XML\My 2005\Code My Documents\Visual Studio a potom stiskněte klávesu **Uložit**.  
+8. Použití **uložit v** rozevíracího seznamu změnit umístění souboru do složky fragmentů XML Snippets\XML\My 2005\Code My Documents\Visual Studio a potom stiskněte klávesu **Uložit**.  
   
 ## <a name="snippet-description"></a>Fragment kódu popis  
  Tato část popisuje některé z klíčových prvků v tomto fragmentu kódu často používaný text. Další informace o schématu elementy používané fragmenty XML, naleznete v tématu [fragmenty kódu – odkaz schématu](../ide/code-snippets-schema-reference.md).  

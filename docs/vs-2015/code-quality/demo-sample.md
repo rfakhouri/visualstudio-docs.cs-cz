@@ -12,12 +12,12 @@ caps.latest.revision: 23
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: 4b00e20f262596354a02c5c54978e4f663fa185a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 9e85944e93b952b8239015761e8fb364cb265291
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54753175"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112101"
 ---
 # <a name="demo-sample"></a>Demonstrační ukázka
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,39 +34,39 @@ Tato následující postupy ukazují, jak vytvořit vzorku pro [názorný postup
   
 ### <a name="create-the-cppdemo-solution-and-the-codedefects-project"></a>Vytvořit CppDemo řešení a projektu CodeDefects  
   
-1.  Klikněte na tlačítko **souboru** nabídky, přejděte k **nový**a potom klikněte na tlačítko **nový projekt**.  
+1. Klikněte na tlačítko **souboru** nabídky, přejděte k **nový**a potom klikněte na tlačítko **nový projekt**.  
   
-2.  V **typy projektů** stromu seznamu, pokud aplikace Visual C++ není výchozí jazyk v sadě Visual Studio rozbalte **jiné jazyky**.  
+2. V **typy projektů** stromu seznamu, pokud aplikace Visual C++ není výchozí jazyk v sadě Visual Studio rozbalte **jiné jazyky**.  
   
-3.  Rozbalte **Visual C++** a potom klikněte na tlačítko **Obecné**.  
+3. Rozbalte **Visual C++** a potom klikněte na tlačítko **Obecné**.  
   
-4.  V **šablony**, klikněte na tlačítko **prázdný projekt**.  
+4. V **šablony**, klikněte na tlačítko **prázdný projekt**.  
   
-5.  V **název** textového pole, typ **CodeDefects**.  
+5. V **název** textového pole, typ **CodeDefects**.  
   
-6.  Vyberte **vytvořit adresář pro řešení** zaškrtávací políčko.  
+6. Vyberte **vytvořit adresář pro řešení** zaškrtávací políčko.  
   
-7.  V **název řešení** textového pole, typ **CppDemo**.  
+7. V **název řešení** textového pole, typ **CppDemo**.  
   
 ### <a name="configure-the-codedefects-project-as-a-static-library"></a>Konfigurace projektu CodeDefects jako statickou knihovnu  
   
-1.  V Průzkumníku řešení klikněte pravým tlačítkem na **CodeDefects** a potom klikněte na tlačítko **vlastnosti**.  
+1. V Průzkumníku řešení klikněte pravým tlačítkem na **CodeDefects** a potom klikněte na tlačítko **vlastnosti**.  
   
-2.  Rozbalte **vlastnosti konfigurace** a potom klikněte na tlačítko **Obecné**.  
+2. Rozbalte **vlastnosti konfigurace** a potom klikněte na tlačítko **Obecné**.  
   
-3.  V **Obecné** seznamu, vyberte text ve sloupci vedle **cílová přípona**a pak zadejte **lib**.  
+3. V **Obecné** seznamu, vyberte text ve sloupci vedle **cílová přípona**a pak zadejte **lib**.  
   
-4.  V **výchozí nastavení projektu**, klikněte ve sloupci vedle **typ konfigurace**a potom klikněte na tlačítko **statické knihovny Lib (.lib)**.  
+4. V **výchozí nastavení projektu**, klikněte ve sloupci vedle **typ konfigurace**a potom klikněte na tlačítko **statické knihovny Lib (.lib)**.  
   
 ### <a name="add-the-header-and-source-file-to-the-codedefects-project"></a>Přidat záhlaví a zdrojový soubor do projektu CodeDefects  
   
-1.  V Průzkumníku řešení rozbalte **CodeDefects**, klikněte pravým tlačítkem na **hlavičkové soubory**, klikněte na tlačítko **přidat**a potom klikněte na tlačítko **nová položka**.  
+1. V Průzkumníku řešení rozbalte **CodeDefects**, klikněte pravým tlačítkem na **hlavičkové soubory**, klikněte na tlačítko **přidat**a potom klikněte na tlačítko **nová položka**.  
   
-2.  V **přidat novou položku** dialogové okno, klikněte na tlačítko **kód**a potom klikněte na tlačítko **soubor hlaviček (.h)**.  
+2. V **přidat novou položku** dialogové okno, klikněte na tlačítko **kód**a potom klikněte na tlačítko **soubor hlaviček (.h)**.  
   
-3.  V **název** zadejte **Bug.cpp** a potom klikněte na tlačítko **přidat**.  
+3. V **název** zadejte **Bug.cpp** a potom klikněte na tlačítko **přidat**.  
   
-4.  Zkopírujte následující kód a vložte ho do **Bug.cpp** soubor [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] editoru.  
+4. Zkopírujte následující kód a vložte ho do **Bug.cpp** soubor [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] editoru.  
   
     ```  
     #include <windows.h>  
@@ -88,13 +88,13 @@ Tato následující postupy ukazují, jak vytvořit vzorku pro [názorný postup
     const int ACCOUNT_DOMAIN_LEN = 128;  
     ```  
   
-5.  V Průzkumníku řešení klikněte pravým tlačítkem na **zdrojové soubory**, přejděte na **nový**a potom klikněte na tlačítko **nová položka**.  
+5. V Průzkumníku řešení klikněte pravým tlačítkem na **zdrojové soubory**, přejděte na **nový**a potom klikněte na tlačítko **nová položka**.  
   
-6.  V **přidat novou položku** dialogové okno, klikněte na tlačítko **soubor C++ (.cpp)**  
+6. V **přidat novou položku** dialogové okno, klikněte na tlačítko **soubor C++ (.cpp)**  
   
-7.  V **název** zadejte **Bug.cpp** a potom klikněte na tlačítko **přidat**.  
+7. V **název** zadejte **Bug.cpp** a potom klikněte na tlačítko **přidat**.  
   
-8.  Zkopírujte následující kód a vložte ho do souboru Bug.h [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] editoru.  
+8. Zkopírujte následující kód a vložte ho do souboru Bug.h [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] editoru.  
   
     ```  
     #include <stdlib.h>  
@@ -158,29 +158,29 @@ Tato následující postupy ukazují, jak vytvořit vzorku pro [názorný postup
   
 ### <a name="add-the-annotations-project-and-configure-it-as-a-static-library"></a>Přidat projekt poznámky a nakonfiguruje ho jako statickou knihovnu  
   
-1.  V Průzkumníku řešení klikněte na tlačítko **CppDemo**, přejděte na **přidat**a potom klikněte na tlačítko **nový projekt**.  
+1. V Průzkumníku řešení klikněte na tlačítko **CppDemo**, přejděte na **přidat**a potom klikněte na tlačítko **nový projekt**.  
   
-2.  V **přidat nový projekt** dialogové okno pole, rozbalte Visual C++, klikněte na tlačítko **Obecné**a potom klikněte na tlačítko **prázdný projekt**.  
+2. V **přidat nový projekt** dialogové okno pole, rozbalte Visual C++, klikněte na tlačítko **Obecné**a potom klikněte na tlačítko **prázdný projekt**.  
   
-3.  V **název** textového pole, typ **poznámky**a potom klikněte na tlačítko **přidat**.  
+3. V **název** textového pole, typ **poznámky**a potom klikněte na tlačítko **přidat**.  
   
-4.  V Průzkumníku řešení klikněte pravým tlačítkem na **poznámky** a potom klikněte na tlačítko **vlastnosti**.  
+4. V Průzkumníku řešení klikněte pravým tlačítkem na **poznámky** a potom klikněte na tlačítko **vlastnosti**.  
   
-5.  Rozbalte **vlastnosti konfigurace** a potom klikněte na tlačítko **Obecné**.  
+5. Rozbalte **vlastnosti konfigurace** a potom klikněte na tlačítko **Obecné**.  
   
-6.  V **Obecné** seznamu, vyberte text ve sloupci vedle **cílová přípona**a pak zadejte **lib**.  
+6. V **Obecné** seznamu, vyberte text ve sloupci vedle **cílová přípona**a pak zadejte **lib**.  
   
-7.  V **výchozí nastavení projektu**, klikněte ve sloupci vedle **typ konfigurace**a potom klikněte na tlačítko **statické knihovny Lib (.lib)**.  
+7. V **výchozí nastavení projektu**, klikněte ve sloupci vedle **typ konfigurace**a potom klikněte na tlačítko **statické knihovny Lib (.lib)**.  
   
 ### <a name="add-the-header-file-and-source-file-to-the-annotations-project"></a>Přidat hlavičku souboru a zdrojový soubor do projektu poznámky  
   
-1.  V Průzkumníku řešení rozbalte **poznámky**, klikněte pravým tlačítkem na **hlavičkové soubory**, klikněte na tlačítko **přidat**a potom klikněte na tlačítko **nová položka**.  
+1. V Průzkumníku řešení rozbalte **poznámky**, klikněte pravým tlačítkem na **hlavičkové soubory**, klikněte na tlačítko **přidat**a potom klikněte na tlačítko **nová položka**.  
   
-2.  V **přidat novou položku** dialogové okno, klikněte na tlačítko **soubor hlaviček (.h)**.  
+2. V **přidat novou položku** dialogové okno, klikněte na tlačítko **soubor hlaviček (.h)**.  
   
-3.  V **název** zadejte **annotations.h** a potom klikněte na tlačítko **přidat**.  
+3. V **název** zadejte **annotations.h** a potom klikněte na tlačítko **přidat**.  
   
-4.  Zkopírujte následující kód a vložte ho do **annotations.h** soubor [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] editoru.  
+4. Zkopírujte následující kód a vložte ho do **annotations.h** soubor [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] editoru.  
   
     ```  
     #include <CodeAnalysis/SourceAnnotations.h>  
@@ -197,13 +197,13 @@ Tato následující postupy ukazují, jak vytvořit vzorku pro [názorný postup
   
     ```  
   
-5.  V Průzkumníku řešení klikněte pravým tlačítkem na **zdrojové soubory**, přejděte na **nový**a potom klikněte na tlačítko **nová položka**.  
+5. V Průzkumníku řešení klikněte pravým tlačítkem na **zdrojové soubory**, přejděte na **nový**a potom klikněte na tlačítko **nová položka**.  
   
-6.  V **přidat novou položku** dialogové okno, klikněte na tlačítko **kód** a potom klikněte na tlačítko **soubor C++ (.cpp)**  
+6. V **přidat novou položku** dialogové okno, klikněte na tlačítko **kód** a potom klikněte na tlačítko **soubor C++ (.cpp)**  
   
-7.  V **název** zadejte **annotations.cpp** a potom klikněte na tlačítko **přidat**.  
+7. V **název** zadejte **annotations.cpp** a potom klikněte na tlačítko **přidat**.  
   
-8.  Zkopírujte následující kód a vložte ho do **annotations.cpp** soubor [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] editoru.  
+8. Zkopírujte následující kód a vložte ho do **annotations.cpp** soubor [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] editoru.  
   
     ```  
     #include <CodeAnalysis/SourceAnnotations.h>  

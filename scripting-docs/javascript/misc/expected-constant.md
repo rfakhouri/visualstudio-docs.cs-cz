@@ -14,21 +14,21 @@ ms.assetid: 8da7485f-7050-4559-97c3-ccfa782cdff3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a449faa9d74e96406bd8fb18bbb63f61d2d53bdc
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 10564f34683fec5c38ae069f2fb0c51fb0c8902a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843240"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60103456"
 ---
 # <a name="expected-constant"></a>Byla očekávána konstanta
 Pokusili jste se použít ve výrazu podmíněné kompilace testovací proměnné (nikoli podmíněné kompilace). Příkazy podmíněné kompilace testu se musí vyhodnotit na konstantu.  
   
 ### <a name="to-correct-this-error"></a>Oprava této chyby  
   
--   Nahraďte proměnnou literál.  
+- Nahraďte proměnnou literál.  
   
--   Nahraďte proměnnou proměnnou podmíněné kompilace.  
+- Nahraďte proměnnou proměnnou podmíněné kompilace.  
   
 ## <a name="see-also"></a>Viz také  
  [Podmíněná kompilace](../../javascript/advanced/conditional-compilation-javascript.md)   

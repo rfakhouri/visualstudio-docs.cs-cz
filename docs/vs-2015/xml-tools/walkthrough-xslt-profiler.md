@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 003b4ed6407126c7b1b6992c9c99eb30d36379b6
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: db9937a09c8260bd595b6c0311501920bf960aaf
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59665386"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100310"
 ---
 # <a name="walkthrough-xslt-profiler"></a>Návod: Profiler XSLT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,87 +26,87 @@ Profiler XSLT chyb vytváří detailní zprávy XSLT výkonu, které pomůže m�
   
 ### <a name="create-the-performance-report"></a>Vytvoření sestavy výkonu  
   
-1.  Otevření dokumentu XSLT v sadě Visual Studio.  
+1. Otevření dokumentu XSLT v sadě Visual Studio.  
   
-2.  Klikněte na **profilu XSLT** možnost, která je k dispozici v nabídce XML.  
+2. Klikněte na **profilu XSLT** možnost, která je k dispozici v nabídce XML.  
   
-3.  Zadejte vstupní dokument XML. Pokud dokument XML již není otevřen, zobrazí se výzva k zadání soubor.  
+3. Zadejte vstupní dokument XML. Pokud dokument XML již není otevřen, zobrazí se výzva k zadání soubor.  
   
-4.  Spuštění analýzy a indikátoru průběhu zobrazí průběh v editoru.  
+4. Spuštění analýzy a indikátoru průběhu zobrazí průběh v editoru.  
   
-5.  Výstup XSLT je viditelný v podokně výstup.  
+5. Výstup XSLT je viditelný v podokně výstup.  
   
-6.  Po ukončení relace výkonu, zkontrolujte zprávu o výkonu. Data uložená v sestavě výkonu umožňuje zobrazit a analyzovat výkon XSLT.  
+6. Po ukončení relace výkonu, zkontrolujte zprávu o výkonu. Data uložená v sestavě výkonu umožňuje zobrazit a analyzovat výkon XSLT.  
   
 ### <a name="get-all-the-available-views"></a>Získání všech dostupných zobrazení  
   
-1.  Klikněte na **aktuální zobrazení** rozevíracího seznamu zobrazíte všechny dostupné zobrazení.  
+1. Klikněte na **aktuální zobrazení** rozevíracího seznamu zobrazíte všechny dostupné zobrazení.  
   
-2.  Vyberte **souhrnné zobrazení** možnost **aktuální zobrazení** rozevíracího seznamu. Ve výchozím nastavení, zobrazí se sestava výkonu v **souhrnné zobrazení**. Toto zobrazení je výchozím bodem k určení problémů s výkonem pomocí XSLT dokumentů. **Souhrnné zobrazení** uvádí těchto datových bodů:  
+2. Vyberte **souhrnné zobrazení** možnost **aktuální zobrazení** rozevíracího seznamu. Ve výchozím nastavení, zobrazí se sestava výkonu v **souhrnné zobrazení**. Toto zobrazení je výchozím bodem k určení problémů s výkonem pomocí XSLT dokumentů. **Souhrnné zobrazení** uvádí těchto datových bodů:  
   
-    -   Nejvíce volané funkce  
+    - Nejvíce volané funkce  
   
-    -   Funkce s většinou jednotlivé práce  
+    - Funkce s většinou jednotlivé práce  
   
-    -   Funkce beroucí nejdéle ke spuštění  
+    - Funkce beroucí nejdéle ke spuštění  
   
-3.  Ve výchozím nastavení, existují tři sloupce pro každý datový bod: název funkce, počet volání v absolutní hodnota a procentuální hodnotu s názvem funkce, která se celkový počet funkce volání. Z každého datového bodu **souhrnné zobrazení**, můžete přejít na podrobnější zobrazení kliknutím pravým tlačítkem myši na funkci datových bodů.  
+3. Ve výchozím nastavení, existují tři sloupce pro každý datový bod: název funkce, počet volání v absolutní hodnota a procentuální hodnotu s názvem funkce, která se celkový počet funkce volání. Z každého datového bodu **souhrnné zobrazení**, můžete přejít na podrobnější zobrazení kliknutím pravým tlačítkem myši na funkci datových bodů.  
   
-4.  Vyberte **zobrazení funkce** možnost **aktuální zobrazení** rozevíracího seznamu. **Zobrazení funkce** seznam funkcí, volá se během profilace. Data lze seřadit klepnutím na název sloupce. Sloupce zobrazí ve výchozím nastavení jsou:  
+4. Vyberte **zobrazení funkce** možnost **aktuální zobrazení** rozevíracího seznamu. **Zobrazení funkce** seznam funkcí, volá se během profilace. Data lze seřadit klepnutím na název sloupce. Sloupce zobrazí ve výchozím nastavení jsou:  
   
-    -   **Název funkce**  
+    - **Název funkce**  
   
-    -   **Uplynulý celkový čas**  
+    - **Uplynulý celkový čas**  
   
-    -   **Uplynulý výhradní čas**  
+    - **Uplynulý výhradní čas**  
   
-    -   **Celkový čas aplikace**  
+    - **Celkový čas aplikace**  
   
-    -   **Výhradní čas aplikace**  
+    - **Výhradní čas aplikace**  
   
-    -   **Počet volání**  
+    - **Počet volání**  
   
-5.  Všechny sloupce času jsou zobrazeny v absolutní hodnoty a procenta. Termín **exkluzivní** odkazuje na celkový čas strávený provádění bez času spotřebovaného přidělenými jiné funkce volá se během provádění této funkce funkce.  
+5. Všechny sloupce času jsou zobrazeny v absolutní hodnoty a procenta. Termín **exkluzivní** odkazuje na celkový čas strávený provádění bez času spotřebovaného přidělenými jiné funkce volá se během provádění této funkce funkce.  
   
-6.  Termín **celkový čas** odkazuje na celkovou dobu funkce stráven spouštěním, včetně spuštění všech funkcí názvem a určuje, zda některé z těchto volat funkce volá jiné funkce.  
+6. Termín **celkový čas** odkazuje na celkovou dobu funkce stráven spouštěním, včetně spuštění všech funkcí názvem a určuje, zda některé z těchto volat funkce volá jiné funkce.  
   
 ### <a name="select-callercallee-view"></a>Vyberte zobrazení volající/volaný  
   
-1.  Vyberte **volající/volaný** zobrazit **aktuální zobrazení** rozevíracího seznamu.  
+1. Vyberte **volající/volaný** zobrazit **aktuální zobrazení** rozevíracího seznamu.  
   
-2.  **Volající/volaný** zobrazení má následující tři samostatné části:  
+2. **Volající/volaný** zobrazení má následující tři samostatné části:  
   
-    -   **Funkce, které volaly**: Všechny funkce, které volaly konkrétní funkce jsou uvedené na horní část zobrazení.  
+    - **Funkce, které volaly**: Všechny funkce, které volaly konkrétní funkce jsou uvedené na horní část zobrazení.  
   
-    -   **Aktuální funkce**: Konkrétní funkce, která byla volána je uveden v prostřední části zobrazení.  
+    - **Aktuální funkce**: Konkrétní funkce, která byla volána je uveden v prostřední části zobrazení.  
   
-    -   **Funkce, které byly volány** : Všechny funkce, které byly volány konkrétní funkce jsou uvedeny v dolní části zobrazení.  
+    - **Funkce, které byly volány** : Všechny funkce, které byly volány konkrétní funkce jsou uvedeny v dolní části zobrazení.  
   
-3.  Pokud funkci s názvem `SyncToNavigator` se zobrazí v prostřední části zobrazíte všechny funkce, které volá `SyncToNavigator` funkce se zobrazí v horní části zobrazení a všechny funkce, které byly volány `SyncToNavigator` se zobrazí v dolní části zobrazení.  
+3. Pokud funkci s názvem `SyncToNavigator` se zobrazí v prostřední části zobrazíte všechny funkce, které volá `SyncToNavigator` funkce se zobrazí v horní části zobrazení a všechny funkce, které byly volány `SyncToNavigator` se zobrazí v dolní části zobrazení.  
   
-4.  Funkce ve střední části zobrazení můžete změnit poklepáním na některé z funkcí uvedených v dalších částech dvě zobrazení. Zobrazení se pak aktualizuje tak, aby odrážely změny automaticky.  
+4. Funkce ve střední části zobrazení můžete změnit poklepáním na některé z funkcí uvedených v dalších částech dvě zobrazení. Zobrazení se pak aktualizuje tak, aby odrážely změny automaticky.  
   
-5.  Data můžete také řadit kliknutím názvy sloupců.  
+5. Data můžete také řadit kliknutím názvy sloupců.  
   
 ### <a name="select-calltree-view"></a>Vyberte zobrazení stromu volání  
   
-1.  Vyberte **zobrazení stromu volání** v **aktuální zobrazení** rozevíracího seznamu. Toto zobrazení je stromové zobrazení provádění programu.  
+1. Vyberte **zobrazení stromu volání** v **aktuální zobrazení** rozevíracího seznamu. Toto zobrazení je stromové zobrazení provádění programu.  
   
-2.  **Zobrazení stromu volání** ukazuje kořen stromu jako název procesu. Funkce jsou uzly stromu. Toto zobrazení můžete přejít k podrobnostem konkrétní volání trasování a analyzovat trasování, které mají největší dopad na výkon. Zobrazení se podobá **zobrazení zásobníku volání** dostupný během ladění. Kromě sloupce v **zobrazení funkce**v **zobrazení stromu volání**, existuje další sloupec, který se zobrazí **název modulu**.  
+2. **Zobrazení stromu volání** ukazuje kořen stromu jako název procesu. Funkce jsou uzly stromu. Toto zobrazení můžete přejít k podrobnostem konkrétní volání trasování a analyzovat trasování, které mají největší dopad na výkon. Zobrazení se podobá **zobrazení zásobníku volání** dostupný během ladění. Kromě sloupce v **zobrazení funkce**v **zobrazení stromu volání**, existuje další sloupec, který se zobrazí **název modulu**.  
   
-3.  Vyberte **značky** v **aktuální zobrazení** rozevíracího seznamu.  
+3. Vyberte **značky** v **aktuální zobrazení** rozevíracího seznamu.  
   
-4.  S Profiler SLT jsou značky, které se zobrazí v datovém proudu kolekce s přidružené komentář. Značky jsou místa v kódu, které mají čítače. Pokud dáte Profiler XSLT se získat čítače výkonu XSLT, získat čítače shromažďují pokaždé, když se provede jednu z těchto značek. Data se zobrazí v tabulce obsahující **ID značky**, **název značky** (**spustit Program**, **ukončit Program**) a  **Časové razítko**. Značky se agregují a zobrazují se v chronologickém pořadí v **zobrazení značky** sestavy výkonu.  
+4. S Profiler SLT jsou značky, které se zobrazí v datovém proudu kolekce s přidružené komentář. Značky jsou místa v kódu, které mají čítače. Pokud dáte Profiler XSLT se získat čítače výkonu XSLT, získat čítače shromažďují pokaždé, když se provede jednu z těchto značek. Data se zobrazí v tabulce obsahující **ID značky**, **název značky** (**spustit Program**, **ukončit Program**) a  **Časové razítko**. Značky se agregují a zobrazují se v chronologickém pořadí v **zobrazení značky** sestavy výkonu.  
   
 ### <a name="select-modules-in-the-current-view"></a>Vyberte moduly v aktuálním zobrazení  
   
-1.  Vyberte **moduly** v **aktuální zobrazení** rozevíracího seznamu.  
+1. Vyberte **moduly** v **aktuální zobrazení** rozevíracího seznamu.  
   
-2.  Zobrazení modulů je plochý seznam všech funkcí, které agregují na úrovni modulu. Rozbalit nebo sbalit název modulu pro zobrazení nebo zobrazení dat výkonu modulu zavřít. Data lze seřadit klepnutím na název sloupce. Ve výchozím nastavení, jsou hodnoty absolutní a procentuální čísla **uplynulý celkový čas**, **uplynulý výhradní čas**, **celkový čas aplikace**, **Výhradní čas aplikace**, a **počet volání**.  
+2. Zobrazení modulů je plochý seznam všech funkcí, které agregují na úrovni modulu. Rozbalit nebo sbalit název modulu pro zobrazení nebo zobrazení dat výkonu modulu zavřít. Data lze seřadit klepnutím na název sloupce. Ve výchozím nastavení, jsou hodnoty absolutní a procentuální čísla **uplynulý celkový čas**, **uplynulý výhradní čas**, **celkový čas aplikace**, **Výhradní čas aplikace**, a **počet volání**.  
   
-3.  Vyberte **procesu** v **aktuální zobrazení** rozevíracího seznamu.  
+3. Vyberte **procesu** v **aktuální zobrazení** rozevíracího seznamu.  
   
-4.  Zobrazení procesů zobrazí tabulku, která zahrnuje **ID procesu**, **název procesu**, **začít čas**a **koncový čas**. Data lze seřadit klepnutím na názvy sloupců.  
+4. Zobrazení procesů zobrazí tabulku, která zahrnuje **ID procesu**, **název procesu**, **začít čas**a **koncový čas**. Data lze seřadit klepnutím na názvy sloupců.  
   
 ## <a name="see-also"></a>Viz také  
  [Návod: Používání hierarchie XSLT](../xml-tools/walkthrough-using-xslt-hierarchy.md)

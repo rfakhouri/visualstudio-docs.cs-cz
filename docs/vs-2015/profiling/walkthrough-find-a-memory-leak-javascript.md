@@ -1,5 +1,5 @@
 ---
-title: 'Průvodce: Vyhledání nevrácené paměti (JavaScript) | Dokumentace Microsoftu'
+title: 'Návod: Vyhledání nevrácené paměti (JavaScript) | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -16,14 +16,14 @@ caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 88f9d8fc871f182bb3a6d7f36c3648982e7a9684
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0533ed4a4d1fc45b41f1e324b087cc0e249e1083
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54780931"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100443"
 ---
-# <a name="walkthrough-find-a-memory-leak-javascript"></a>Průvodce: Vyhledání nevrácené paměti (JavaScript)
+# <a name="walkthrough-find-a-memory-leak-javascript"></a>Návod: Vyhledání nevrácené paměti (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "windows_and_phone_content")  
@@ -34,18 +34,18 @@ Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "wi
   
 ### <a name="running-the-javascript-memory-analyzer-test-app"></a>Spuštění aplikace pro testy analyzátor paměti jazyka JavaScript  
   
-1.  V sadě Visual Studio, zvolte **souboru**, **nový**, **projektu**.  
+1. V sadě Visual Studio, zvolte **souboru**, **nový**, **projektu**.  
   
-2.  Zvolte **JavaScript** v levém podokně a pak zvolte **Windows**, **Windows 8**, pak buď **univerzální** nebo  **Windows Phone Apps**.  
+2. Zvolte **JavaScript** v levém podokně a pak zvolte **Windows**, **Windows 8**, pak buď **univerzální** nebo  **Windows Phone Apps**.  
   
     > [!IMPORTANT]
     >  Výsledky využití paměti v tomto tématu je testován vůči aplikaci pro Windows 8.  
   
-3.  Zvolte **prázdnou aplikaci** šablonu projektu v prostředním podokně.  
+3. Zvolte **prázdnou aplikaci** šablonu projektu v prostředním podokně.  
   
-4.  V **název** zadejte název, jako `JS_Mem_Tester`a klikněte na tlačítko **OK**.  
+4. V **název** zadejte název, jako `JS_Mem_Tester`a klikněte na tlačítko **OK**.  
   
-5.  V **Průzkumníka řešení**, otevřete soubor default.html a vložte následující kód mezi \<text > značky:  
+5. V **Průzkumníka řešení**, otevřete soubor default.html a vložte následující kód mezi \<text > značky:  
   
     ```html  
     <div class="wrapper">  
@@ -57,7 +57,7 @@ Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "wi
     > [!IMPORTANT]
     >  Pokud používáte šablonu pro univerzální aplikace pro Windows 8.1, je potřeba aktualizovat kód HTML a CSS v obou. Windows a. WindowsPhone projekty.  
   
-6.  Otevřete default.css a přidejte následující kód šablony stylů CSS:  
+6. Otevřete default.css a přidejte následující kód šablony stylů CSS:  
   
     ```css  
     .memleak {  
@@ -65,7 +65,7 @@ Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "wi
     }  
     ```  
   
-7.  Otevřete default.js a nahraďte celý kód s tímto kódem:  
+7. Otevřete default.js a nahraďte celý kód s tímto kódem:  
   
     ```javascript  
     (function () {  
@@ -126,7 +126,7 @@ Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "wi
     })();  
     ```  
   
-8.  Stisknutím klávesy F5 spusťte ladění. Ověřte, že **nevracení paměti** na stránce se zobrazí tlačítko.  
+8. Stisknutím klávesy F5 spusťte ladění. Ověřte, že **nevracení paměti** na stránce se zobrazí tlačítko.  
   
 9. Přepněte zpět do sady Visual Studio (Alt + Tab) a klikněte na tlačítko Shift + F5 ukončete ladění.  
   
@@ -224,7 +224,7 @@ Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "wi
     > [!TIP]
     >  V některých případech vyhledání objektu ve vztahu k `Global` objekt vám mohou pomoci identifikovat tohoto objektu. Chcete-li to provést, otevřete místní nabídku pro identifikátor a klikněte na tlačítko **zobrazit v zobrazení kořenů**.  
   
-##  <a name="FixingMemory"></a> Opravte problém paměti  
+## <a name="FixingMemory"></a> Opravte problém paměti  
   
 1. Prozkoumat pomocí dat zobrazení pomocí profileru kód, který je zodpovědný za odebrání prvků modelu DOM s ID "položka". Vyvolá se v `initialize()` funkce.  
   

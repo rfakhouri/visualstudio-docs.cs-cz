@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b943322fe6172eaaf196cc3f842da9ec0838d8cc
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 681564b2148fb9554e80105c2e18b1d220bb37ea
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56702392"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111646"
 ---
 # <a name="how-to-troubleshoot-services"></a>Postupy: Odstraňování potíží se službami
 Existuje několik běžných problémů, které se mohou vyskytnout při pokusu o získání služby:
@@ -52,9 +52,9 @@ if (log == null) return;
 
 2. Při volání GetService používejte typ služby a není typem rozhraní. Při žádosti o službu z [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], <xref:Microsoft.VisualStudio.Shell.Package> extrahuje identifikátor GUID z typu. Služba nebude nalezena při splnění následujících podmínek:
 
-   1.  Typ rozhraní je předán GetService místo typu služby.
+   1. Typ rozhraní je předán GetService místo typu služby.
 
-   2.  Žádný identifikátor GUID je explicitně přiřazeny rozhraní. Proto systém vytvoří výchozí identifikátor GUID objektu podle potřeby.
+   2. Žádný identifikátor GUID je explicitně přiřazeny rozhraní. Proto systém vytvoří výchozí identifikátor GUID objektu podle potřeby.
 
 3. Ujistěte se, že byl umístěn VSPackage žádosti o službu. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] poté, co je vytvořen a před voláním lokality VSPackage <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>.
 

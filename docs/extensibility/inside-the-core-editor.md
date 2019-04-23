@@ -10,29 +10,29 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 81d91603d6c365946b1064cac3a7f1ca3c1e6ba8
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: a188116b09b846e81023c239d64d6386c7f2c6ae
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56713292"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60086517"
 ---
 # <a name="inside-the-core-editor"></a>V editoru core
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Core editor je sada několik komponent, které vám umožní změnit a dotazování textové informace. Pokud jste upravili základní editor pomocí starší verze rozhraní API, můžou dál používat tyto úpravy, které se budou směrovat přes adaptéry editoru. Doporučujeme však, že můžete přizpůsobit vlastní nastavení do nového editoru rozhraní API.
 
  Tyto oblasti jsou některé důležité aspekty základní editor:
 
--   Vyrovnávací paměť textu
+- Vyrovnávací paměť textu
 
--   Zobrazení textu
+- Zobrazení textu
 
--   Okno kódu
+- Okno kódu
 
--   Text značky
+- Text značky
 
--   Textový správce
+- Textový správce
 
--   Integrace se službami jazyka
+- Integrace se službami jazyka
 
 ## <a name="in-this-section"></a>V tomto oddílu
 - [Vytvořit instanci editoru core pomocí starší verze rozhraní API](../extensibility/instantiating-the-core-editor-by-using-the-legacy-api.md) obsahuje podrobné pokyny o tom, jak používat <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> k vytvoření instance základní editor.

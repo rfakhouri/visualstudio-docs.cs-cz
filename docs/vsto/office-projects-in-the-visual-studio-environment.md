@@ -41,12 +41,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e5d3017d293b8288df9b5d7bdbe09fe2e901fa58
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 65f3a3abfe7e49872c7131a247d74612200bf42a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54865980"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091015"
 ---
 # <a name="office-projects-in-the-visual-studio-environment"></a>Projekty pro Office v prostředí Visual Studio
   Projekty pro Microsoft Office nabízejí vývojové prostředí, které se podobá jiným typům projektů v sadě Visual Studio, například projektům modelu Windows Forms. Při vytvoření nebo otevření projektu pro Office se položky projektu zobrazí v **Průzkumníka řešení**. V případě projektů na úrovni dokumentu se dokument (tzn. dokument aplikace Word nebo sešit aplikace Excel) otevře v sadě Visual Studio a dokument se chová jako vizuální návrhář.
@@ -73,7 +73,7 @@ ms.locfileid: "54865980"
 ### <a name="temporary-certificates"></a>Dočasné certifikáty
  Projekty Office zahrnují také dočasný certifikát s názvem *název projektu*_TemporaryKey.pfx. Tento certifikát umožňuje podepsat během vývoje projektu manifest aplikace a nasazení. Další informace najdete v tématu [zajištění důvěryhodnosti řešení pro systém Office](../vsto/granting-trust-to-office-solutions.md) a [řešení pro systém Office zabezpečení](../vsto/securing-office-solutions.md).
 
-###  <a name="hiddenfiles"></a> Skryté soubory projektu
+### <a name="hiddenfiles"></a> Skryté soubory projektu
  Některé soubory projektu jsou ve výchozím nastavení skryté. Tyto soubory jsou vygenerovány sadou Visual Studio a liší se podle typu projektu. Chcete-li zobrazit skryté soubory, klikněte na tlačítko **zobrazit všechny soubory** v **Průzkumníka řešení**.
 
  Neupravujte skryté soubory projektu. Přímé změny v těchto souborech nejsou podporovány a mohou způsobit poškození projektu. Skryté soubory projektu jsou znovu vygenerovány pokaždé, když v dokumentu dojde k určitým změnám. Pokud skrytý soubor projektu ručně změníte, budou provedené změny při opětovném vygenerování souboru ztraceny.

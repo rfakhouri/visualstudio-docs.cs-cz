@@ -9,12 +9,12 @@ caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 79fe01ada43b1ac8fe408a1427fd9e65f9cd37cb
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5873033e160a8354db70565606dcb399da13e073
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54766461"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109520"
 ---
 # <a name="remote-debugging-aspnet-on-a-remote-iis-computer"></a>Vzdálené ladění ASP.NET na počítači vzdálené služby IIS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -74,6 +74,7 @@ Po instalaci, ujistěte se, že vzdálený ladicí program je spuštěn na cílo
       </system.web>
   
     ```
+
 1. Otevřít **Správce Internetové informační služby (IIS)** a přejděte na **lokality**.
 1. Klikněte pravým tlačítkem myši **výchozí webový server** uzel a vyberte možnost **přidat aplikaci**.
 1. Nastavte **Alias** pole **MyMVC** a pole fondu aplikací a **ASP.NET v4.0** (ASP.NET 4.5 není možné zvolit pro fond aplikací). Nastavte **fyzická cesta** k **C:\Publish** (kde jste zkopírovali adresáři projektu ASP.NET).

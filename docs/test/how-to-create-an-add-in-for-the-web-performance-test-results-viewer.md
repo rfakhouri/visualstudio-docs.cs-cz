@@ -9,20 +9,20 @@ ms.assetid: 1118c604-4b1b-4b21-a04e-45995b676fa8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c5ca8c45d48776405b5c0602c44de368cd2899ca
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: 3287bef750f25f3eb0b816488779d42d4505d8b9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416354"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60084463"
 ---
 # <a name="how-to-create-a-visual-studio-add-in-for-the-web-performance-test-results-viewer"></a>Postupy: Vytvoření doplňku sady Visual Studio pro prohlížeč výsledků testu výkonnosti webu
 
 Můžete rozšířit uživatelské rozhraní pro **prohlížeče výsledků testu výkonnosti webu** pomocí následujících oborů názvů:
 
--   <xref:Microsoft.VisualStudio.TestTools.LoadTesting>
+- <xref:Microsoft.VisualStudio.TestTools.LoadTesting>
 
--   <xref:Microsoft.VisualStudio.TestTools.WebTesting>
+- <xref:Microsoft.VisualStudio.TestTools.WebTesting>
 
 Kromě toho budete muset přidat odkaz na knihovnu LoadTestPackage DLL, který je umístěn v *% ProgramFiles (x86) %\Microsoft Visual Studio\\\<verze > \Enterprise\Common7\IDE\PrivateAssemblies* složka.
 
@@ -109,31 +109,31 @@ Doplněk sady Visual Studio vytvořili v předchozí proceduře odkazuje na proj
 
 ### <a name="to-create-a-control-to-be-used-in-the-web-test-results-viewer"></a>Vytvoření ovládacího prvku pro prohlížeč výsledků testu webu
 
-1.  V **Průzkumníka řešení**, klikněte pravým tlačítkem na řešení, zvolte **přidat**a pak vyberte **nový projekt**.
+1. V **Průzkumníka řešení**, klikněte pravým tlačítkem na řešení, zvolte **přidat**a pak vyberte **nový projekt**.
 
 2. Vytvořte nový **Knihovna ovládacích prvků Windows Forms** projektu.
 
-3.  Z **nástrojů**, přetáhněte <xref:System.Windows.Forms.DataGridView> na povrch userControl1.
+3. Z **nástrojů**, přetáhněte <xref:System.Windows.Forms.DataGridView> na povrch userControl1.
 
 4. Klikněte na akci označit piktogram (![piktogram inteligentní](../test/media/vs_winformsmttagglyph.gif)) v pravém horním rohu <xref:System.Windows.Forms.DataGridView> a postupujte podle těchto kroků:
 
-    1.  Zvolte **ukotvit v nadřazeném kontejneru**.
+    1. Zvolte **ukotvit v nadřazeném kontejneru**.
 
-    2.  Zrušte zaškrtnutí políček u **povolit přidání**, **povolit úpravy**, **Povolit odstranění** a **povolit změnu pořadí sloupců**.
+    2. Zrušte zaškrtnutí políček u **povolit přidání**, **povolit úpravy**, **Povolit odstranění** a **povolit změnu pořadí sloupců**.
 
-    3.  Zvolte **přidat sloupec**.
+    3. Zvolte **přidat sloupec**.
 
          **Přidat sloupec** se zobrazí dialogové okno.
 
-    4.  V **typ** rozevíracího seznamu vyberte **DataGridViewTextBoxColumn**.
+    4. V **typ** rozevíracího seznamu vyberte **DataGridViewTextBoxColumn**.
 
-    5.  Odstraňte text "Sloupec1" v **text záhlaví**.
+    5. Odstraňte text "Sloupec1" v **text záhlaví**.
 
-    6.  Zvolte **přidat**.
+    6. Zvolte **přidat**.
 
-    7.  Zvolte **Zavřít**.
+    7. Zvolte **Zavřít**.
 
-5.  V **vlastnosti** okno Změnit **(název)** vlastnost <xref:System.Windows.Forms.DataGridView> k **resultControlDataGridView**.
+5. V **vlastnosti** okno Změnit **(název)** vlastnost <xref:System.Windows.Forms.DataGridView> k **resultControlDataGridView**.
 
 6. Klikněte pravým tlačítkem na návrhové ploše a vyberte **zobrazit kód**.
 
@@ -158,21 +158,21 @@ Doplněk sady Visual Studio vytvořili v předchozí proceduře odkazuje na proj
 
 ## <a name="add-code-to-the-webperftestresultsvieweraddin"></a>Přidejte kód do doplňku WebPerfTestResultsViewerAddin
 
-1.  V **Průzkumníka řešení**, klikněte pravým tlačítkem myši **odkazy** uzel projektu WebPerfTestResultsViewerAddin a vyberte **přidat odkaz**.
+1. V **Průzkumníka řešení**, klikněte pravým tlačítkem myši **odkazy** uzel projektu WebPerfTestResultsViewerAddin a vyberte **přidat odkaz**.
 
-2.  V **přidat odkaz** dialogového okna zvolte **.NET** kartu.
+2. V **přidat odkaz** dialogového okna zvolte **.NET** kartu.
 
-3.  Přejděte dolů a vyberte možnost **Microsoft.VisualStudio.QualityTools.WebTestFramework** a **System.Windows.Forms**.
+3. Přejděte dolů a vyberte možnost **Microsoft.VisualStudio.QualityTools.WebTestFramework** a **System.Windows.Forms**.
 
-4.  Zvolte **OK**.
+4. Zvolte **OK**.
 
-5.  Klikněte pravým tlačítkem myši **odkazy** uzel znovu a vyberte možnost **přidat odkaz**.
+5. Klikněte pravým tlačítkem myši **odkazy** uzel znovu a vyberte možnost **přidat odkaz**.
 
-6.  V **přidat odkaz** dialogového okna zvolte **Procházet** kartu.
+6. V **přidat odkaz** dialogového okna zvolte **Procházet** kartu.
 
-7.  Zvolte rozevírací seznam pro **Hledat v** a přejděte do *% ProgramFiles (x86) %\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies* a vyberte  *Microsoft.VisualStudio.QualityTools.LoadTestPackage.dll* souboru.
+7. Zvolte rozevírací seznam pro **Hledat v** a přejděte do *% ProgramFiles (x86) %\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies* a vyberte  *Microsoft.VisualStudio.QualityTools.LoadTestPackage.dll* souboru.
 
-8.  Zvolte **OK**.
+8. Zvolte **OK**.
 
 9. Klikněte pravým tlačítkem na uzel projektu WebPerfTestResultsViewerAddin a vyberte **přidat odkaz**.
 
@@ -254,28 +254,28 @@ Doplněk sady Visual Studio vytvořili v předchozí proceduře odkazuje na proj
 
 ## <a name="add-code-to-the-webperftestresultsviewercontrol"></a>Přidejte kód do ovládacího prvku WebPerfTestResultsViewerControl
 
-1.  V **Průzkumníka řešení**, klikněte pravým tlačítkem na uzel projektu WebPerfTestResultsViewerControl a vyberte **vlastnosti**.
+1. V **Průzkumníka řešení**, klikněte pravým tlačítkem na uzel projektu WebPerfTestResultsViewerControl a vyberte **vlastnosti**.
 
-2.  Vyberte **aplikace** kartě a klikněte na tlačítko **Cílová architektura** rozevíracího seznamu a vyberte **rozhraní .NET Framework 4** a zavřít **vlastnosti**.
+2. Vyberte **aplikace** kartě a klikněte na tlačítko **Cílová architektura** rozevíracího seznamu a vyberte **rozhraní .NET Framework 4** a zavřít **vlastnosti**.
 
      To je nutné pro podporu odkazů na knihovnu DLL, které jsou potřeba pro rozšíření **prohlížeče výsledků testu výkonnosti webu**.
 
-3.  V **Průzkumníka řešení**, v projektu WebPerfTestResultsViewerControl klikněte pravým tlačítkem myši **odkazy** uzel a vyberte možnost **přidat odkaz**.
+3. V **Průzkumníka řešení**, v projektu WebPerfTestResultsViewerControl klikněte pravým tlačítkem myši **odkazy** uzel a vyberte možnost **přidat odkaz**.
 
-4.  V **přidat odkaz** dialogové okno, klikněte na tlačítko **.NET** kartu.
+4. V **přidat odkaz** dialogové okno, klikněte na tlačítko **.NET** kartu.
 
-5.  Přejděte dolů a vyberte možnost **Microsoft.VisualStudio.QualityTools.WebTestFramework**.
+5. Přejděte dolů a vyberte možnost **Microsoft.VisualStudio.QualityTools.WebTestFramework**.
 
-6.  Zvolte **OK**.
+6. Zvolte **OK**.
 
-7.  V *UserControl1.cs* přidejte následující příkazy Using:
+7. V *UserControl1.cs* přidejte následující příkazy Using:
 
     ```csharp
     using Microsoft.VisualStudio.TestTools.WebTesting;
     using Microsoft.VisualStudio.TestTools.WebTesting.Rules;
     ```
 
-8.  Přidáte volanou metodu aktualizace, která předala WebTestRequestResult z metody WebPerfTestResultsViewerAddin webtestresultviewer_selectedchanged v *Connect.cs* souboru. Metoda aktualizovat naplní ovládací prvek DataGridView různými vlastnostmi, které do ní předány v WebTestRequestResult.
+8. Přidáte volanou metodu aktualizace, která předala WebTestRequestResult z metody WebPerfTestResultsViewerAddin webtestresultviewer_selectedchanged v *Connect.cs* souboru. Metoda aktualizovat naplní ovládací prvek DataGridView různými vlastnostmi, které do ní předány v WebTestRequestResult.
 
     ```csharp
     public void Update(WebTestRequestResult WebTestResults)
@@ -304,27 +304,27 @@ Doplněk sady Visual Studio vytvořili v předchozí proceduře odkazuje na proj
 
 ### <a name="to-build-the-solution"></a>Abyste mohli sestavit řešení
 
--   Na **sestavení** nabídce vyberte možnost **sestavit řešení**.
+- Na **sestavení** nabídce vyberte možnost **sestavit řešení**.
 
 ## <a name="register-the-webperftestresultsvieweraddin-add-in"></a>Registrace doplňku WebPerfTestResultsViewerAddin
 
 ### <a name="to-register-the-add-in-using-the-add-in-manager"></a>Chcete-li zaregistrovat doplněk pomocí Správce doplňků
 
-1.  Na **nástroje** nabídce vyberte možnost **Add-in správce**.
+1. Na **nástroje** nabídce vyberte možnost **Add-in správce**.
 
-2.  **Add-in správce** se zobrazí dialogové okno.
+2. **Add-in správce** se zobrazí dialogové okno.
 
-3.  Zaškrtněte políčko pro doplněk WebPerfTestResultsViewerAddin ve **dostupné doplňky** sloupce a zrušte zaškrtnutí políček v sloupcích **spuštění** a **příkazového řádku**sloupce.
+3. Zaškrtněte políčko pro doplněk WebPerfTestResultsViewerAddin ve **dostupné doplňky** sloupce a zrušte zaškrtnutí políček v sloupcích **spuštění** a **příkazového řádku**sloupce.
 
-4.  Zvolte **OK**.
+4. Zvolte **OK**.
 
 ## <a name="run-the-web-performance-test-using-the-build-the-webperftestresultsvieweraddin-add-in"></a>Spuštění testu výkonnosti webu pomocí sestavení doplňku WebPerfTestResultsViewerAddin
 
 ### <a name="to-run-the-new-vs-add-in-for-the-web-test-results-viewer"></a>Ke spuštění nové VS doplňku pro prohlížeč výsledků testu webu
 
-1.  Spuštění testu výkonnosti webu a zobrazí se doplňku WebPerfTestResultsViewerAddin nová karta s názvem zobrazí v ukázkové **prohlížeče výsledků testu výkonnosti webu**.
+1. Spuštění testu výkonnosti webu a zobrazí se doplňku WebPerfTestResultsViewerAddin nová karta s názvem zobrazí v ukázkové **prohlížeče výsledků testu výkonnosti webu**.
 
-2.  Klepněte na kartu pro zobrazení vlastnosti zobrazených v ovládacím prvku DataGridView.
+2. Klepněte na kartu pro zobrazení vlastnosti zobrazených v ovládacím prvku DataGridView.
 
 ## <a name="net-framework-security"></a>Zabezpečení rozhraní .NET Framework
 
@@ -336,9 +336,9 @@ Kromě toho tato stránka možností umožňuje určit složky, ve kterých hled
 
  Nastavení na stránce Možnosti pro doplněk zabezpečení jsou následující:
 
--   **Povolit přidat součásti pro načtení.** Ve výchozím nastavení je zaškrtnuto. Vyberete-li toto políčko, doplňky mohou načíst v sadě Visual Studio. Pokud není vybrána, doplňky mají zakázáno načítání v aplikaci Visual Studio.
+- **Povolit přidat součásti pro načtení.** Ve výchozím nastavení je zaškrtnuto. Vyberete-li toto políčko, doplňky mohou načíst v sadě Visual Studio. Pokud není vybrána, doplňky mají zakázáno načítání v aplikaci Visual Studio.
 
--   **Povolit přidat součásti pro načtení z adresy URL.** Nejsou vybrány ve výchozím nastavení. Pokud je vybráno, je možné načíst doplňky z externích webových stránek. Pokud není vybrána, vzdálené doplňky mají zakázáno načítání v aplikaci Visual Studio. Pokud z nějakého důvodu nelze načíst doplněk, pak jej nelze načíst z webu. Toto nastavení řídí pouze načítání DLL doplňku. *. Doplněk* registrační soubory musí být vždy umístěny v místním systému.
+- **Povolit přidat součásti pro načtení z adresy URL.** Nejsou vybrány ve výchozím nastavení. Pokud je vybráno, je možné načíst doplňky z externích webových stránek. Pokud není vybrána, vzdálené doplňky mají zakázáno načítání v aplikaci Visual Studio. Pokud z nějakého důvodu nelze načíst doplněk, pak jej nelze načíst z webu. Toto nastavení řídí pouze načítání DLL doplňku. *. Doplněk* registrační soubory musí být vždy umístěny v místním systému.
 
 ## <a name="see-also"></a>Viz také:
 

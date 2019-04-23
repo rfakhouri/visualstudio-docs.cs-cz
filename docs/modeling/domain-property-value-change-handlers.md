@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ccce6d63e1cb96d4f4027bd13a4a4095e0e4248
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9fcad439c7f0633f75d2a7364e2d0d3bfb142f89
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55951485"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60090339"
 ---
 # <a name="domain-property-value-change-handlers"></a>Obslužná rutina změny hodnoty vlastnosti domény
 
@@ -52,15 +52,15 @@ public partial class Comment
 
 Všimněte si následujících o vlastnost obslužné rutiny:
 
--   Když uživatel provede změny na doménovou vlastnost i při programovém kódu přiřadí jinou hodnotu pro vlastnost volání těchto metod obslužné rutiny vlastnosti.
+- Když uživatel provede změny na doménovou vlastnost i při programovém kódu přiřadí jinou hodnotu pro vlastnost volání těchto metod obslužné rutiny vlastnosti.
 
--   Pouze při změně hodnoty ve skutečnosti volání těchto metod. Obslužná rutina není vyvolána, pokud kód programu přiřadí hodnotu, která se rovná aktuální hodnotu.
+- Pouze při změně hodnoty ve skutečnosti volání těchto metod. Obslužná rutina není vyvolána, pokud kód programu přiřadí hodnotu, která se rovná aktuální hodnotu.
 
--   Vypočtené a vlastní domény vlastnosti úložiště nemusí metod OnValueChanged a OnValueChanging.
+- Vypočtené a vlastní domény vlastnosti úložiště nemusí metod OnValueChanged a OnValueChanging.
 
--   Obslužná rutina změny nelze použít k úpravě novou hodnotu. Pokud chcete udělat, například k omezení hodnoty na konkrétní rozsah, definování `ChangeRule`.
+- Obslužná rutina změny nelze použít k úpravě novou hodnotu. Pokud chcete udělat, například k omezení hodnoty na konkrétní rozsah, definování `ChangeRule`.
 
--   Nelze přidat obsluhu změnu vlastnosti, která představuje roli relace. Místo toho definujte `AddRule` a `DeleteRule` na třídu vztahu. Tato pravidla se aktivují v případě odkazů jsou vytvořené nebo změněné. Další informace najdete v tématu [pravidla šíření změn v rámci the Model](../modeling/rules-propagate-changes-within-the-model.md).
+- Nelze přidat obsluhu změnu vlastnosti, která představuje roli relace. Místo toho definujte `AddRule` a `DeleteRule` na třídu vztahu. Tato pravidla se aktivují v případě odkazů jsou vytvořené nebo změněné. Další informace najdete v tématu [pravidla šíření změn v rámci the Model](../modeling/rules-propagate-changes-within-the-model.md).
 
 ### <a name="changes-in-and-out-of-the-store"></a>Změny do a z úložiště
 

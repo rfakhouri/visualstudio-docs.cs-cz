@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2afb20f2a337008bc3d3b7fe3dd6aaa5b3f163cf
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: f7b933277a2c509356037e585b7d2256a587c233
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56684972"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60090538"
 ---
 # <a name="sample-implementation-of-expression-evaluation"></a>Ukázková implementace vyhodnocení výrazu
 > [!IMPORTANT]
@@ -27,11 +27,11 @@ ms.locfileid: "56684972"
 
  `IDebugExpressionEvaluator::Parse` Provádí následující úlohy:
 
-1.  [Jenom C++] Analyzuje výrazu vyhledávání chyb.
+1. [C++ pouze] Analyzuje výrazu vyhledávání chyb.
 
-2.  Vytvoří instanci třídy (volá `CParsedExpression` v tomto příkladu), který běží `IDebugParsedExpression` rozhraní a uloží ve třídě výraz, který má být analyzován.
+2. Vytvoří instanci třídy (volá `CParsedExpression` v tomto příkladu), který běží `IDebugParsedExpression` rozhraní a uloží ve třídě výraz, který má být analyzován.
 
-3.  Vrátí `IDebugParsedExpression` rozhraní z `CParsedExpression` objektu.
+3. Vrátí `IDebugParsedExpression` rozhraní z `CParsedExpression` objektu.
 
 > [!NOTE]
 >  V následující příklady a ukázkové MyCEE vyhodnocovací filtr výrazů není samostatné analyzování z hodnocení.

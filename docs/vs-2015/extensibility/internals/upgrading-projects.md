@@ -12,12 +12,12 @@ ms.assetid: e01cb44a-8105-4cf4-8223-dfae65f8597a
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 47b4bacb8815db8cf7cb64f47534d1c3b10a8177
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7e97e21b2d08d7398a4372ac31cda63b5cfb9fe9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54800910"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100596"
 ---
 # <a name="upgrading-projects"></a>Upgrade projektů
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -27,9 +27,9 @@ K modelu projektu se změní z jedné verze [!INCLUDE[vsprvs](../../includes/vsp
 ## <a name="upgrade-strategies"></a>Strategie upgradu  
  Implementace systému projektu pro podporu upgradu, musíte definovat a implementovat upgradu strategie. Při určování strategie, můžete pro podporu side-by-side (SxS) zálohování nebo zálohování kopírováním.  
   
--   Zálohování SxS znamená, že projekt zkopíruje pouze soubory, které potřebují upgrade na místě, přidání vhodný název příponu souboru, například "old".  
+- Zálohování SxS znamená, že projekt zkopíruje pouze soubory, které potřebují upgrade na místě, přidání vhodný název příponu souboru, například "old".  
   
--   Zálohování kopírováním znamená, že projekt zkopíruje všechny položky projektu do uživatelem zadaného umístění zálohy. Relevantní soubory do původního umístění projektu jsou potom upgradovat.  
+- Zálohování kopírováním znamená, že projekt zkopíruje všechny položky projektu do uživatelem zadaného umístění zálohy. Relevantní soubory do původního umístění projektu jsou potom upgradovat.  
   
 ## <a name="how-upgrade-works"></a>Jak upgradovat funguje  
  Při řešení vytvořené v dřívější verzi [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] je otevřít v novější verzi, integrované vývojové prostředí kontroly souborů řešení Chcete-li zjistit, jestli je potřeba upgradovat. Je-li upgrade vyžadováno, **Průvodce upgradem** se automaticky spustí, aby vás uživatel provede procesem.  

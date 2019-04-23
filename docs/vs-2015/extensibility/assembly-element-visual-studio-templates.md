@@ -13,12 +13,12 @@ ms.assetid: 9242f76a-1273-4b8a-8f26-6606f91829ef
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 1e3dfc502157b2d0016f1a0fd9a12dc3905f623c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 10c894f3507ae760624b6ae18f785aae6016cd5e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54796140"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112355"
 ---
 # <a name="assembly-element-visual-studio-templates"></a>Element sestavení (šablony sady Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +57,7 @@ Určuje informace o sestavení, který používá šablonu přidáte odkaz na to
   
  Tento text určuje sestavení, které chcete přidat do projektu při vytváření instance šablony položky. Tento název sestavení musí být zadán v jednom z následujících způsobů:  
   
--   Jako název úplné sestavení. Příklad:  
+- Jako název úplné sestavení. Příklad:  
   
     ```  
     <Assembly>  
@@ -65,7 +65,7 @@ Určuje informace o sestavení, který používá šablonu přidáte odkaz na to
     </Assembly>  
     ```  
   
--   Jako jednoduchý text odkazu. Příklad:  
+- Jako jednoduchý text odkazu. Příklad:  
   
     ```  
     <Assembly> System </Assembly>  

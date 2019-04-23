@@ -18,21 +18,21 @@ caps.latest.revision: 30
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1eda777fa335cc844eedc13f350aa44319f587fd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 46bf49567558cab556180c470bfd4b80d93f5dbb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54767965"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105510"
 ---
 # <a name="prerequistes-for-remote-debugging-web-applications"></a>Předpoklady pro vzdálené ladění webových aplikací
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 S [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ladicího programu, můžete ladit webové aplikace transparentně na místním počítači nebo na vzdálený server. To znamená, že funkce ladicího programu stejným způsobem a umožňuje použití stejných funkcí na oba počítače. Pro vzdálené ladění fungovala správně, ale existují některé požadavky.  
   
--   [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] komponenty vzdáleného ladění musí být nainstalován na serveru, který chcete ladit. Další informace najdete v tématu [nastavení do vzdáleného ladění](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c).  
+- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] komponenty vzdáleného ladění musí být nainstalován na serveru, který chcete ladit. Další informace najdete v tématu [nastavení do vzdáleného ladění](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c).  
   
--   Ve výchozím nastavení [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] pracovní proces spuštěn jako proces ASPNET uživatele. V důsledku toho musí mít oprávnění správce na počítači kde [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] spuštění pro ladění. Název [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] pracovní proces se liší podle scénáře ladění a verze služby IIS. Další informace najdete v tématu [jak: Hledání názvu procesu ASP.NET](../debugger/how-to-find-the-name-of-the-aspnet-process.md).  
+- Ve výchozím nastavení [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] pracovní proces spuštěn jako proces ASPNET uživatele. V důsledku toho musí mít oprávnění správce na počítači kde [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] spuštění pro ladění. Název [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] pracovní proces se liší podle scénáře ladění a verze služby IIS. Další informace najdete v tématu [jak: Hledání názvu procesu ASP.NET](../debugger/how-to-find-the-name-of-the-aspnet-process.md).  
   
 ## <a name="see-also"></a>Viz také  
  [Ladění aplikací ASP.NET a AJAX](../debugger/debugging-aspnet-and-ajax-applications.md)   

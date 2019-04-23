@@ -9,12 +9,12 @@ caps.latest.revision: 6
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a4f123c6dfbe7d3f194c3f07c5ed685cf5cc862c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8f41aa8c074f724976adabaa99df0e8ca0064fa3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54753043"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60103298"
 ---
 # <a name="configure-the-windows-firewall-for-remote-debugging"></a>Konfigurace brány Windows Firewall pro vzdálené ladění
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,15 +44,15 @@ Toto téma popisuje postup konfigurace brány firewall pro povolení vzdálenéh
 ## <a name="to-configure-windows-firewall-on-the-visual-studio-computer"></a>Konfigurace brány Windows Firewall v počítači aplikace Visual Studio  
  Pokyny ke konfiguraci brány Windows firewall se mírně liší v různých operačních systémech. Na Windows 7 nebo Windows Server 2008, slovo **program** slouží; v systému Windows 8 a 8.1, Windows 10 a Windows Server 2012, slovo **aplikace** se používá.  V následujícím postupu použijeme slovo **aplikace**.  
   
-1.  Otevřete stránku brány Windows Firewall. (V **Start** nabídky vyhledávacího pole, typ **brány Windows Firewall**).  
+1. Otevřete stránku brány Windows Firewall. (V **Start** nabídky vyhledávacího pole, typ **brány Windows Firewall**).  
   
-2.  Klikněte na tlačítko **povolit aplikaci nebo funkci průchod bránou Windows Firewall**.  
+2. Klikněte na tlačítko **povolit aplikaci nebo funkci průchod bránou Windows Firewall**.  
   
-3.  V **povolené aplikace a funkce** seznamu, vyhledejte **Visual Studio vzdálený ladicí program zjišťování**. Pokud je hodnota uvedena, ujistěte se, že je vybraná a že budou vybrány také jeden nebo více typů sítě.  
+3. V **povolené aplikace a funkce** seznamu, vyhledejte **Visual Studio vzdálený ladicí program zjišťování**. Pokud je hodnota uvedena, ujistěte se, že je vybraná a že budou vybrány také jeden nebo více typů sítě.  
   
-4.  Pokud **Visual Studio vzdálený ladicí program zjišťování** není uvedená, klikněte na **jiné aplikace bude**. Pokud stále nevidíte ji v **přidat aplikaci** okna, klikněte na tlačítko **Procházet** a přejděte do  **\<instalačního adresáře sady Visual Studio > \Common7\IDE\Remoteladicíhoprogramu**. Vyhledejte příslušnou složku pro aplikaci (x86, x64 Appx) a pak vyberte **msvsmon.exe**. Pak klikněte na tlačítko **přidat**.  
+4. Pokud **Visual Studio vzdálený ladicí program zjišťování** není uvedená, klikněte na **jiné aplikace bude**. Pokud stále nevidíte ji v **přidat aplikaci** okna, klikněte na tlačítko **Procházet** a přejděte do  **\<instalačního adresáře sady Visual Studio > \Common7\IDE\Remoteladicíhoprogramu**. Vyhledejte příslušnou složku pro aplikaci (x86, x64 Appx) a pak vyberte **msvsmon.exe**. Pak klikněte na tlačítko **přidat**.  
   
-5.  V **povolené aplikace a funkce** seznamu vyberte **Visual Studio Remote Debugging Monitor**. Zkontrolujte jeden nebo více typů sítě (**domény, domů a do práce (privátní), veřejné**), který má sledování vzdáleného ladění pro komunikaci s. Typy musí zahrnovat sítě, ke kterému je připojený počítač Visual Studio.  
+5. V **povolené aplikace a funkce** seznamu vyberte **Visual Studio Remote Debugging Monitor**. Zkontrolujte jeden nebo více typů sítě (**domény, domů a do práce (privátní), veřejné**), který má sledování vzdáleného ladění pro komunikaci s. Typy musí zahrnovat sítě, ke kterému je připojený počítač Visual Studio.  
   
 ## <a name="to-open-a-port-on-the-visual-studio-computer-to-enable-discovery"></a>Pro otevření portu v počítači aplikace Visual Studio povolit zjišťování  
  Musíte také povolit port UDP 3702 příchozí povolit zjišťování počítače spuštění vzdáleného ladicího programu. Přidat, najdete v tématu Postup konfigurace portů v bráně Firewall.  
@@ -64,15 +64,15 @@ Toto téma popisuje postup konfigurace brány firewall pro povolení vzdálenéh
   
  Pokyny ke konfiguraci brány Windows firewall se mírně liší v různých operačních systémech. Na Windows 7 nebo Windows Server 2008, slovo **program** slouží; v systému Windows 8 a 8.1, Windows 10 a Windows Server 2012, slovo **aplikace** se používá.  V následujícím postupu použijeme slovo **aplikace**.  
   
-1.  Otevřete stránku brány Windows Firewall. (Na **Start** nabídky vyhledávacího pole, typ **brány Windows Firewall**.)  
+1. Otevřete stránku brány Windows Firewall. (Na **Start** nabídky vyhledávacího pole, typ **brány Windows Firewall**.)  
   
-2.  Klikněte na tlačítko **povolit aplikaci nebo funkci průchod bránou Windows Firewall**.  
+2. Klikněte na tlačítko **povolit aplikaci nebo funkci průchod bránou Windows Firewall**.  
   
-3.  V **povolené aplikace a funkce** seznamu, vyhledejte **Visual Studio Remote Debugging Monitor**. Pokud je hodnota uvedena, ujistěte se, že je vybraná a že budou vybrány také jeden nebo více typů sítě.  
+3. V **povolené aplikace a funkce** seznamu, vyhledejte **Visual Studio Remote Debugging Monitor**. Pokud je hodnota uvedena, ujistěte se, že je vybraná a že budou vybrány také jeden nebo více typů sítě.  
   
-4.  Pokud **Visual Studio Remote Debugging Monitor** není uvedená, klikněte na **jiné aplikace bude**. Pokud stále nevidíte ji v **přidat oknem aplikace**, klikněte na tlačítko **Procházet** a přejděte do  **\<instalačního adresáře sady Visual Studio > \Common7\IDE\Remoteladicíhoprogramu**. Vyhledejte příslušnou složku pro aplikaci (x86, x64 Appx) a pak vyberte **msvsmon.exe**. Pak klikněte na tlačítko **přidat**.  
+4. Pokud **Visual Studio Remote Debugging Monitor** není uvedená, klikněte na **jiné aplikace bude**. Pokud stále nevidíte ji v **přidat oknem aplikace**, klikněte na tlačítko **Procházet** a přejděte do  **\<instalačního adresáře sady Visual Studio > \Common7\IDE\Remoteladicíhoprogramu**. Vyhledejte příslušnou složku pro aplikaci (x86, x64 Appx) a pak vyberte **msvsmon.exe**. Pak klikněte na tlačítko **přidat**.  
   
-5.  V **povolené aplikace** seznamu vyberte **Visual Studio Remote Debugging Monitor**. Zkontrolujte jeden nebo více typů sítě (**domény, domů a do práce (privátní), veřejné**), který má sledování vzdáleného ladění pro komunikaci s. Typy musí zahrnovat sítě, ke kterému je připojený počítač Visual Studio.  
+5. V **povolené aplikace** seznamu vyberte **Visual Studio Remote Debugging Monitor**. Zkontrolujte jeden nebo více typů sítě (**domény, domů a do práce (privátní), veřejné**), který má sledování vzdáleného ladění pro komunikaci s. Typy musí zahrnovat sítě, ke kterému je připojený počítač Visual Studio.  
   
 ## <a name="ports-on-the-remote-computer-that-enable-remote-debugging"></a>Porty na vzdáleném počítači, které umožňují vzdálené ladění  
   
@@ -95,21 +95,21 @@ Toto téma popisuje postup konfigurace brány firewall pro povolení vzdálenéh
   
 ## <a name="how-to-configure-ports-in-windows-firewall"></a>Postup konfigurace portů v bráně Windows Firewall  
   
-1.  Na **Start** nabídky, vyhledejte **brány Windows Firewall s pokročilým zabezpečením**.  
+1. Na **Start** nabídky, vyhledejte **brány Windows Firewall s pokročilým zabezpečením**.  
   
-2.  Klikněte na tlačítko **příchozí pravidla** nebo **odchozí pravidla** a potom klikněte na tlačítko **nové pravidlo** v **akce** seznamu.  
+2. Klikněte na tlačítko **příchozí pravidla** nebo **odchozí pravidla** a potom klikněte na tlačítko **nové pravidlo** v **akce** seznamu.  
   
-3.  Na **typ pravidla** stránce **Port** a potom klikněte na tlačítko **Další**.  
+3. Na **typ pravidla** stránce **Port** a potom klikněte na tlačítko **Další**.  
   
-4.  Na **protokol a porty** stránky, vyberte protokol, port (TCP nebo UDP). Vyberte **určité místní porty** a zadejte jednu nebo více čísla portů, které chcete povolit protokol. Oddělovače číslic čárkami. Pak klikněte na tlačítko **Další**.  
+4. Na **protokol a porty** stránky, vyberte protokol, port (TCP nebo UDP). Vyberte **určité místní porty** a zadejte jednu nebo více čísla portů, které chcete povolit protokol. Oddělovače číslic čárkami. Pak klikněte na tlačítko **Další**.  
   
-5.  Na **akce** stránce **povolit připojení** a potom klikněte na tlačítko **Další**.  
+5. Na **akce** stránce **povolit připojení** a potom klikněte na tlačítko **Další**.  
   
-6.  Na **profilu** vyberte jeden nebo více typů sítě pro povolení portu. Typ, který jste vybrali musí zahrnovat sítě, ke kterému je připojený vzdáleného počítače. Pak klikněte na tlačítko **Další**.  
+6. Na **profilu** vyberte jeden nebo více typů sítě pro povolení portu. Typ, který jste vybrali musí zahrnovat sítě, ke kterému je připojený vzdáleného počítače. Pak klikněte na tlačítko **Další**.  
   
-7.  Na **název** stránky, zadejte název pravidla a potom klikněte na tlačítko **Dokončit**.  
+7. Na **název** stránky, zadejte název pravidla a potom klikněte na tlačítko **Dokončit**.  
   
-8.  Měli byste vidět nové pravidlo v **příchozí pravidla** nebo **odchozí pravidla** seznamu.  
+8. Měli byste vidět nové pravidlo v **příchozí pravidla** nebo **odchozí pravidla** seznamu.  
   
 ## <a name="see-also"></a>Viz také  
  [Vzdálené ladění](../debugger/remote-debugging.md)

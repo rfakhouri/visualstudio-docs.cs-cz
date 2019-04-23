@@ -16,12 +16,12 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b7817454cc2c5789975e064dec7a58d8e857a145
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6fafeeb386e1dd40067620d529cb25023d3f0f29
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54760750"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087935"
 ---
 # <a name="how-to-specify-an-alternate-location-for-deployment-updates"></a>Postupy: Určení alternativního umístění pro aktualizace nasazení
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,27 +33,27 @@ Můžete nainstalovat vaše [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md
   
 ### <a name="specifying-an-alternate-location-for-updates-by-using-mageuiexe-windows-forms-based-utility"></a>Zadat alternativní umístění pro aktualizace s použitím MageUI.exe (nástroj založený na Windows Forms)  
   
-1.  Otevřete příkazový řádek rozhraní .NET Framework a zadejte:  
+1. Otevřete příkazový řádek rozhraní .NET Framework a zadejte:  
   
      **mageui.exe**  
   
-2.  Na **souboru** nabídce zvolte **otevřete** pro otevření manifestu nasazení vaší aplikace.  
+2. Na **souboru** nabídce zvolte **otevřete** pro otevření manifestu nasazení vaší aplikace.  
   
-3.  Vyberte **možnosti nasazení** kartu.  
+3. Vyberte **možnosti nasazení** kartu.  
   
-4.  V textovém poli s názvem **umístění spuštění**, zadejte adresu URL k adresáři, který bude obsahovat manifest nasazení pro aktualizace aplikace.  
+4. V textovém poli s názvem **umístění spuštění**, zadejte adresu URL k adresáři, který bude obsahovat manifest nasazení pro aktualizace aplikace.  
   
-5.  Uložte manifest nasazení.  
+5. Uložte manifest nasazení.  
   
 ### <a name="specifying-an-alternate-location-for-updates-by-using-mageexe"></a>Zadat alternativní umístění pro aktualizace s použitím Mage.exe  
   
-1.  Otevřete příkazový řádek rozhraní .NET Framework.  
+1. Otevřete příkazový řádek rozhraní .NET Framework.  
   
-2.  Nastavte umístění aktualizace pomocí následujícího příkazu. V tomto příkladu **HelloWorld.exe.application** způsob, jak je vaše [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifestu aplikace, který má vždy příponu .application a **http://adatum.com/Update/Path** je adresa URL tohoto [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] se kontrola aktualizací aplikace.  
+2. Nastavte umístění aktualizace pomocí následujícího příkazu. V tomto příkladu **HelloWorld.exe.application** způsob, jak je vaše [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifestu aplikace, který má vždy příponu .application a **http://adatum.com/Update/Path** je adresa URL tohoto [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] se kontrola aktualizací aplikace.  
   
      **Mage -Update HelloWorld.exe.application -ProviderUrl http://adatum.com/Update/Path**  
   
-3.  Uložte soubor.  
+3. Uložte soubor.  
   
     > [!NOTE]
     >  Teď je potřeba znovu podepsat soubor s Mage.exe. Další informace najdete v tématu [názorný postup: Ruční nasazení aplikace ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  

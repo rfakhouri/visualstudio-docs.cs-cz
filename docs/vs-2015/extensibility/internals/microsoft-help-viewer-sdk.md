@@ -8,27 +8,27 @@ ms.assetid: 620d7dcd-d462-475e-a449-fbfa06ff12c5
 caps.latest.revision: 34
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e4a72acafa4e2ad8de757541312a13f203f73559
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e08a443513bb6043ec2f3841067021ffc65dd92d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54764692"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099000"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Microsoft Help Viewer SDK
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Tento článek obsahuje následující úkoly pro Visual Studio Help Viewer integrátorům:
 
--   Vytváří se téma (podpora F1)
+- Vytváří se téma (podpora F1)
 
--   Vytvoření balíčku aplikace Help Viewer obsah značky
+- Vytvoření balíčku aplikace Help Viewer obsah značky
 
--   Nasazení sady článků
+- Nasazení sady článků
 
--   Přidání Nápověda pro Visual Studio shell (integrované nebo izolované)
+- Přidání Nápověda pro Visual Studio shell (integrované nebo izolované)
 
--   Další prostředky
+- Další prostředky
 
 ### <a name="creating-a-topic-f1-support"></a>Vytváří se téma (podpora F1)
  Tato část obsahuje přehled komponent prezentované tématu, požadavky na téma, krátký popis vytvoření tématu (včetně požadavky na podporu F1) a nakonec tématu příklad s jeho vykreslené výsledek.
@@ -132,17 +132,17 @@ Tento článek obsahuje následující úkoly pro Visual Studio Help Viewer inte
 
  Text tématu (nikoli včetně záhlaví a zápatí) bude obsahovat, odkazů na stránky, Všimněte si části, sbalitelné oblasti, fragment kódu a část textu konkrétní jazyk.  V části Přizpůsobení prostředí značce pro informace o těchto oblastí prezentované tématu.
 
-1.  Přidáte značku název tématu:  `<div class="title">Contoso Topic 4</div>`
+1. Přidáte značku název tématu:  `<div class="title">Contoso Topic 4</div>`
 
-2.  Přidáte oddíl Poznámka: `<div class="alert"> add your table tag and text </div>`
+2. Přidáte oddíl Poznámka: `<div class="alert"> add your table tag and text </div>`
 
-3.  Přidání sbalitelné oblasti:  `<CollapsibleArea Expanded="1" Title="Collapsible Area Test Heading"> add text  </CollapsibleArea>`
+3. Přidání sbalitelné oblasti:  `<CollapsibleArea Expanded="1" Title="Collapsible Area Test Heading"> add text  </CollapsibleArea>`
 
-4.  Přidání fragmentu kódu:  `<CodeSnippet EnableCopyCode="true" Language="CSharp" ContainsMarkup="false" DisplayLanguage="C#" > a block of code </CodeSnippet>`
+4. Přidání fragmentu kódu:  `<CodeSnippet EnableCopyCode="true" Language="CSharp" ContainsMarkup="false" DisplayLanguage="C#" > a block of code </CodeSnippet>`
 
-5.  Přidejte kód jazyka určitý text:  `<LanguageSpecificText devLangcs="CS" devLangvb="VB" devLangcpp="C++" devLangnu="F#" />` Všimněte si, že devLangnu = můžete zadat jiné jazyky. Například devLangnu = "Až po Fortran" se zobrazí až po Fortran při fragment kódu DisplayLanguage = až po Fortran
+5. Přidejte kód jazyka určitý text:  `<LanguageSpecificText devLangcs="CS" devLangvb="VB" devLangcpp="C++" devLangnu="F#" />` Všimněte si, že devLangnu = můžete zadat jiné jazyky. Například devLangnu = "Až po Fortran" se zobrazí až po Fortran při fragment kódu DisplayLanguage = až po Fortran
 
-6.  Přidání odkazů na stránky: `<a href="ms-xhelp://?Id=ContosoTopic1">Main Topic</a>`
+6. Přidání odkazů na stránky: `<a href="ms-xhelp://?Id=ContosoTopic1">Main Topic</a>`
 
 > [!NOTE]
 >  Poznámka: pro nepodporované nové "Jazyk" (například F#, Cobol, až po Fortran) odlišení kódu ve fragmentu kódu bude Monochromatický.
@@ -296,13 +296,13 @@ some F# code
 
 1. Nastavte **VendorContent** Help 2.1 klíči registru:
 
-   -   Pro 32bitové operační systémy:
+   - Pro 32bitové operační systémy:
 
         HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Help\v2.1\Catalogs\VisualStudio12
 
         "VendorContent"=dword:00000001
 
-   -   Pro 64bitové operační systémy:
+   - Pro 64bitové operační systémy:
 
         HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Help\v2.1\Catalogs\VisualStudio12
 
@@ -439,7 +439,7 @@ some F# code
 |Funkce:|**CollapsibleArea**|
 |Použití:|Rozbalte text sbalí obsahu ovládacího prvku|
 |**Element**|**Hodnota**|
-|ExpandText|Rozbalte položku|
+|ExpandText|Expand|
 |CollapseText|Sbalit|
 |Funkce:|**CodeSnippet**|
 |Použití:|Text ovládacího prvku fragmentu kódu.  Poznámka: Obsah fragment kódu s prostorem "Non-zásadní" se změní na místo.|

@@ -9,12 +9,12 @@ ms.assetid: e3b7d952-9012-400a-8131-3444390a6066
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 411e0a83b180014ffb3a896887c3798d57ffc635
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 51bfc7a9061cbc17d766f1174593907bfbf762ec
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55938004"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106955"
 ---
 # <a name="edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test"></a>Úprava modelů poměru testů a určení pravděpodobnosti, že virtuální uživatel spustí test
 
@@ -26,13 +26,13 @@ ms.locfileid: "55938004"
 
 Můžete určit jednu z následujících možností model kombinace testů pro vašeho scénáře zkušebního zatížení:
 
--   **Na základě celkového počtu testů:** Určuje, který webového výkonu nebo Jednotkový test se spustí, když virtuální uživatel spustí iteraci testu. Na konci zátěžového testu odpovídá počet případů, kdy byla spuštěna určitého testu rozdělení přiřazeného testu. Použijte tento model kombinace testů, pokud vytváříte poměru testů podílu transakcí v protokolu služby IIS nebo v údajích o produkci.
+- **Na základě celkového počtu testů:** Určuje, který webového výkonu nebo Jednotkový test se spustí, když virtuální uživatel spustí iteraci testu. Na konci zátěžového testu odpovídá počet případů, kdy byla spuštěna určitého testu rozdělení přiřazeného testu. Použijte tento model kombinace testů, pokud vytváříte poměru testů podílu transakcí v protokolu služby IIS nebo v údajích o produkci.
 
--   **Podle počtu virtuálních uživatelů:** Určuje procentuální podíl virtuálních uživatelů, kteří budou používat konkrétního webového výkonu nebo Jednotkový test. Kdykoli během zátěžového testu odpovídá počet uživatelů, kteří jsou spuštěn určitý test přiřazené distribuce. Použijte tento model kombinace testů, pokud vytváříte poměr testů na procento uživatelů, kteří spuštěn určitý test.
+- **Podle počtu virtuálních uživatelů:** Určuje procentuální podíl virtuálních uživatelů, kteří budou používat konkrétního webového výkonu nebo Jednotkový test. Kdykoli během zátěžového testu odpovídá počet uživatelů, kteří jsou spuštěn určitý test přiřazené distribuce. Použijte tento model kombinace testů, pokud vytváříte poměr testů na procento uživatelů, kteří spuštěn určitý test.
 
--   **Založený na kroku uživatele:** V průběhu zátěžového testu je každý test webového výkonu nebo Jednotkový test spustit zadaný počet opakování za uživatele za hodinu. Použijte tento model kombinace testů, když potřebujete virtuálních uživatelů pro spuštění testu v určitém tempu zátěžového testu.
+- **Založený na kroku uživatele:** V průběhu zátěžového testu je každý test webového výkonu nebo Jednotkový test spustit zadaný počet opakování za uživatele za hodinu. Použijte tento model kombinace testů, když potřebujete virtuálních uživatelů pro spuštění testu v určitém tempu zátěžového testu.
 
--   **Podle pořadí:** Každý virtuální uživatel spouští testy webového výkonu nebo Jednotkový v pořadí, že testy jsou definovány ve scénáři. Virtuální uživatel pokračuje procházením testy v tomto pořadí, dokud není dokončen zátěžový test.
+- **Podle pořadí:** Každý virtuální uživatel spouští testy webového výkonu nebo Jednotkový v pořadí, že testy jsou definovány ve scénáři. Virtuální uživatel pokračuje procházením testy v tomto pořadí, dokud není dokončen zátěžový test.
 
 ## <a name="tasks"></a>Úlohy
 
@@ -53,27 +53,27 @@ Pomocí **editoru zátěžového testu**, model kombinace testů ve scénáři t
 
 ### <a name="to-change-the-test-mix-model"></a>Chcete-li změnit model kombinace testů
 
-1.  Otevřete zátěžový test.
+1. Otevřete zátěžový test.
 
      **Editoru zátěžových testů** se zobrazí. Zobrazí se strom zátěžového testu.
 
-2.  V *scénáře* složky strom zátěžového testu, vyberte uzel scénář, pro kterou chcete určit maximální počet iterací testu.
+2. V *scénáře* složky strom zátěžového testu, vyberte uzel scénář, pro kterou chcete určit maximální počet iterací testu.
 
-3.  Na **zobrazení** nabídce vyberte možnost **okno vlastností**.
+3. Na **zobrazení** nabídce vyberte možnost **okno vlastností**.
 
      Jsou zobrazeny kategorie a vlastnosti scénáře.
 
-4.  V **typ kombinace testu** vlastnost, zvolte tlačítko se třemi tečkami ( **...** ).
+4. V **typ kombinace testu** vlastnost, zvolte tlačítko se třemi tečkami ( **...** ).
 
      **Upravit kombinaci testů** se zobrazí dialogové okno.
 
-5.  Zvolte rozevírací seznam v části **model kombinace testů** a vyberte model kombinace testů, který chcete použít pro tento scénář.
+5. Zvolte rozevírací seznam v části **model kombinace testů** a vyberte model kombinace testů, který chcete použít pro tento scénář.
 
-6.  (Volitelné) Úpravy poměru testů pomocí **přidat**, **odebrat** a **rozmístit** tlačítka a distribuce posuvníky. Další informace najdete v tématu [upravit poměr testů k určení, které testy mají být zahrnuty do scénáře zátěžového testu](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md).
+6. (Volitelné) Úpravy poměru testů pomocí **přidat**, **odebrat** a **rozmístit** tlačítka a distribuce posuvníky. Další informace najdete v tématu [upravit poměr testů k určení, které testy mají být zahrnuty do scénáře zátěžového testu](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md).
 
-7.  (Volitelné) Zadejte webový test výkonu a jednotky k inicializaci nebo ukončit pomocí zaškrtávacích políček a výběrem požadované testy. Další informace najdete v tématu [Emulate očekávané využití z reálného světa webu nebo aplikaci](../test/emulate-real-world-usage-of-a-web-site-in-a-load-test-using-test-mix-models.md).
+7. (Volitelné) Zadejte webový test výkonu a jednotky k inicializaci nebo ukončit pomocí zaškrtávacích políček a výběrem požadované testy. Další informace najdete v tématu [Emulate očekávané využití z reálného světa webu nebo aplikaci](../test/emulate-real-world-usage-of-a-web-site-in-a-load-test-using-test-mix-models.md).
 
-8.  Zvolte **OK**.
+8. Zvolte **OK**.
 
      **Vlastnosti** okno zobrazuje nový model kombinace testů pro **typ kombinace testu** vlastnost.
 

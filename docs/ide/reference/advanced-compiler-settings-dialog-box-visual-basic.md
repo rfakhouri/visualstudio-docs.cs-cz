@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 87a7924a8a1239da61553c50dc7c7ba8cea547d2
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c8aec1862424be0182e99285ac3772cc9c4bb19f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55918322"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60086686"
 ---
 # <a name="advanced-compiler-settings-dialog-box-visual-basic"></a>Dialogové okno Upřesnit nastavení kompilátoru (Visual Basic)
 
@@ -25,13 +25,13 @@ Použití **AdvancedCompiler nastavení** dialogovému oknu **Návrháře projek
 
 ## <a name="to-access-this-dialog-box"></a>Pro přístup k tomuto dialogovému oknu
 
-1.  V **Průzkumníka řešení**, zvolte uzel projektu (ne **řešení** uzlu).
+1. V **Průzkumníka řešení**, zvolte uzel projektu (ne **řešení** uzlu).
 
-2.  Na **projektu** nabídky, klikněte na tlačítko **vlastnosti**. Když **Návrhář projektu** se zobrazí, klikněte na tlačítko **kompilace** kartu.
+2. Na **projektu** nabídky, klikněte na tlačítko **vlastnosti**. Když **Návrhář projektu** se zobrazí, klikněte na tlačítko **kompilace** kartu.
 
-3.  Na [stránka kompilovat, Návrhář projektu (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md), vyberte **konfigurace** a **platformy**. Ve zjednodušených konfigurací sestavení **konfigurace** a **platformy** seznamy se nezobrazují. Další informace najdete v tématu [jak: Nastavení ladění a vydání konfigurace](../../debugger/how-to-set-debug-and-release-configurations.md).
+3. Na [stránka kompilovat, Návrhář projektu (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md), vyberte **konfigurace** a **platformy**. Ve zjednodušených konfigurací sestavení **konfigurace** a **platformy** seznamy se nezobrazují. Další informace najdete v tématu [jak: Nastavení ladění a vydání konfigurace](../../debugger/how-to-set-debug-and-release-configurations.md).
 
-4.  Klikněte na tlačítko **Upřesnit možnosti kompilace**.
+4. Klikněte na tlačítko **Upřesnit možnosti kompilace**.
 
 [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]
 

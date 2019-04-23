@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 04f4fff68720b456ac8ac2b8e121d9194019060c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 957805caa946dced54d52f1aa6b4a7f96e75b31a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56633106"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091073"
 ---
 # <a name="architecture-of-vsto-add-ins"></a>Architektura doplňků VSTO
   Doplňků VSTO vytvořené pomocí nástroje Office developer tools v sadě Visual Studio máte architektury funkce, které zdůrazňují stabilitu a zabezpečení a povolte je těsná spolupráce s Microsoft Office. Toto téma popisuje následující aspekty doplňků VSTO:
@@ -36,7 +36,7 @@ ms.locfileid: "56633106"
 
   Obecné informace o vytváření doplňků VSTO najdete v tématu [přehled vývoje řešení pro Office &#40;VSTO&#41; ](../vsto/office-solutions-development-overview-vsto.md) a [Začínáme s programováním doplňků VSTO](../vsto/getting-started-programming-vsto-add-ins.md).
 
-##  <a name="UnderstandingAddIns"></a> Vysvětlení doplňků VSTO
+## <a name="UnderstandingAddIns"></a> Vysvětlení doplňků VSTO
  Při použití nástroje Office developer tools v sadě Visual Studio k vytvoření doplňku VSTO můžete vytvořit sestavení spravovaného kódu, který je načten pomocí aplikace Microsoft Office. Po sestavení je načteno, doplňku VSTO můžou reagovat na události, které jsou vyvolány v aplikaci (například když uživatel klikne položku nabídky). Doplněk VSTO můžete také volat do objektového modelu automatizovat a rozšířit aplikace a můžou používat kterýkoli z třídy v [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)].
 
  Sestavení komunikuje s komponentami vaší aplikace modelu COM pomocí primární spolupracující sestavení aplikace. Další informace najdete v tématu [primární spolupracující sestavení Office](../vsto/office-primary-interop-assemblies.md) a [přehled vývoje řešení pro Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).
@@ -46,7 +46,7 @@ ms.locfileid: "56633106"
 > [!NOTE]
 >  Doplňků VSTO, které vytvoříte pomocí nástroje Office developer tools v sadě Visual Studio jsou navrženy pro použití pouze v případě, že hostitel aplikace Microsoft Office je tím, že koncový uživatel. Pokud je aplikace spuštěna prostřednictvím kódu programu (například pomocí automatizace), doplňku VSTO nemusí fungovat podle očekávání.
 
-##  <a name="AddinComponents"></a> Součástí doplňků VSTO
+## <a name="AddinComponents"></a> Součástí doplňků VSTO
  I když je sestavení doplňku VSTO hlavní komponenty, existuje několik komponent, které hrají důležitou roli v tom, jak aplikace Microsoft Office zjišťovat a načíst doplňky VSTO.
 
 ### <a name="registry-entries"></a>Položky registru
@@ -64,7 +64,7 @@ ms.locfileid: "56633106"
 
  Další informace najdete v tématu [Visual Studio Tools for Office runtime přehled](../vsto/visual-studio-tools-for-office-runtime-overview.md).
 
-##  <a name="HowAddinsWork"></a> Jak fungují doplňků VSTO pomocí aplikace Microsoft Office
+## <a name="HowAddinsWork"></a> Jak fungují doplňků VSTO pomocí aplikace Microsoft Office
  Když uživatel spustí aplikaci Microsoft Office, aplikace používá manifest nasazení a manifest aplikace pro vyhledání a načtení nejnovější verze sestavení doplňku VSTO. Následující obrázek znázorňuje základní architekturu doplňky VSTO.
 
  ![Architektura doplňků office 2007](../vsto/media/office07addin.png "architektura doplněk Office 2007")
@@ -75,21 +75,21 @@ ms.locfileid: "56633106"
 ### <a name="loading-process"></a>Proces načítání
  Když uživatel spustí aplikaci dojde k následujícím krokům:
 
-1.  Aplikace zkontroluje registru pro položky, které identifikují doplňků VSTO, které byly vytvořeny pomocí nástroje Office developer tools v sadě Visual Studio.
+1. Aplikace zkontroluje registru pro položky, které identifikují doplňků VSTO, které byly vytvořeny pomocí nástroje Office developer tools v sadě Visual Studio.
 
-2.  Pokud aplikace zjistí tyto položky registru, načtení aplikace VSTOEE.dll, která načte knihovna VSTOLoader.dll. Toto nespravovaných knihoven DLL, které jsou součástí zaváděcího programu pro Visual Studio 2010 Tools for Office Runtime. Další informace najdete v tématu [Visual Studio Tools for Office runtime přehled](../vsto/visual-studio-tools-for-office-runtime-overview.md).
+2. Pokud aplikace zjistí tyto položky registru, načtení aplikace VSTOEE.dll, která načte knihovna VSTOLoader.dll. Toto nespravovaných knihoven DLL, které jsou součástí zaváděcího programu pro Visual Studio 2010 Tools for Office Runtime. Další informace najdete v tématu [Visual Studio Tools for Office runtime přehled](../vsto/visual-studio-tools-for-office-runtime-overview.md).
 
-3.  *Knihovna VSTOLoader.dll* načte [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)] a spustí spravované část [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)].
+3. *Knihovna VSTOLoader.dll* načte [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)] a spustí spravované část [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)].
 
-4.  [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Zjišťuje dostupnost aktualizací manifestu a stáhne nejnovější manifesty aplikace a nasazení.
+4. [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Zjišťuje dostupnost aktualizací manifestu a stáhne nejnovější manifesty aplikace a nasazení.
 
-5.  [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Provádí sérii kontrol zabezpečení. Další informace najdete v tématu [řešení pro systém Office zabezpečení](../vsto/securing-office-solutions.md).
+5. [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Provádí sérii kontrol zabezpečení. Další informace najdete v tématu [řešení pro systém Office zabezpečení](../vsto/securing-office-solutions.md).
 
-6.  Pokud doplňku VSTO je důvěryhodný pro spuštění, [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] používá ke kontrole aktualizací sestavení manifestu nasazení a manifest aplikace. Pokud je dostupná nová verze sestavení, modul runtime stáhne novou verzi sestavení [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] mezipaměti na klientském počítači. Další informace najdete v tématu [nasazení řešení Office](../vsto/deploying-an-office-solution.md).
+6. Pokud doplňku VSTO je důvěryhodný pro spuštění, [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] používá ke kontrole aktualizací sestavení manifestu nasazení a manifest aplikace. Pokud je dostupná nová verze sestavení, modul runtime stáhne novou verzi sestavení [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] mezipaměti na klientském počítači. Další informace najdete v tématu [nasazení řešení Office](../vsto/deploying-an-office-solution.md).
 
-7.  [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Vytvoří novou doménu aplikace 00Z načíst sestavení doplňku VSTO.
+7. [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Vytvoří novou doménu aplikace 00Z načíst sestavení doplňku VSTO.
 
-8.  [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Načte sestavení doplňku VSTO do domény aplikace.
+8. [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Načte sestavení doplňku VSTO do domény aplikace.
 
 9. [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Volání <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A> metoda ve vaší doplňku VSTO, pokud jste ji přepsat.
 

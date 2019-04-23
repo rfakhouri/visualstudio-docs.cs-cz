@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 9b31859d677ab69108ad5e2681890a8c4a88f854
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 0263afa4eeb9094802fe6272380b6b53106da4a2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55911206"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111880"
 ---
 # <a name="set-up-remote-workspaces"></a>Nastavení vzdálených pracovních prostorů
 
@@ -96,14 +96,19 @@ Chcete-li vydat certifikát podepsaný svým držitelem:
 
 1. Přihlaste se k počítači Linux nebo SSH.
 2. Nainstalujte `ssl-cert` balíčku:
+
     ```sh
     sudo apt-get install ssl-cert
     ```
+
 3. Spustit `make-ssl-cert` k vygenerování certifikátu SSL podepsaného držitelem výchozí:
+
     ```sh
     sudo make-ssl-cert generate-default-snakeoil --force-overwrite
     ```
+
 4. Převeďte do formátu PFX vygenerovaný klíč a soubory PEM. Vygenerovaný soubor PFX by měla být v domovské složky:
+
     ```sh
     openssl pkcs12 -export -out ~/ssl-cert-snakeoil.pfx -inkey /etc/ssl/private/ssl-cert-snakeoil.key -in /etc/ssl/certs/ssl-cert-snakeoil.pem -password pass:SnakeOil
     ```

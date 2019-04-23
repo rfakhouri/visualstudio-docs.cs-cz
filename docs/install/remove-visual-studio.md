@@ -22,12 +22,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 779771c51299239814f7ddd6a9cdbfbed017ac72
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: e363065d96169660817a548fb97d39f09cf679c9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58790118"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088220"
 ---
 # <a name="remove-visual-studio"></a>Odebrání sady Visual Studio
 
@@ -45,6 +45,7 @@ V následujících pokynech můžete spustit nástroj pomocí přepínače pří
    * Typ **cmd** v poli "Sem zadejte hledaný text".
    * Klikněte pravým tlačítkem na **příkazového řádku**a potom klikněte na tlačítko **spustit jako správce**.
 3. Zadejte úplnou cestu `InstallCleanup.exe` nástroj a předat podle toho, která přepínač příkazového řádku vyžadujete. Ve výchozím nastavení je cesta nástroje:
+
    ```
    C:\Program Files (x86)\Microsoft Visual Studio\Installer\resources\app\layout\InstallCleanup.exe
    ```

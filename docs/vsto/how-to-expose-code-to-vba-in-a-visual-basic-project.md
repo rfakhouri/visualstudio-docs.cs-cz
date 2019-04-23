@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e1229a1036d7e3408a0696a71c552d7cca8263c0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 12a5f19574974ce8d3928997a6b02bbf59062d89
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56631845"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60101317"
 ---
 # <a name="how-to-expose-code-to-vba-in-a-visual-basic-project"></a>Postupy: Vystavení kódu do VBA v projektu jazyka Visual Basic
   Můžete zpřístupnit v kódu [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] projektu jazyka Visual Basic pro kód Applications (VBA) Pokud chcete, aby dva typy kódu komunikovat mezi sebou.
@@ -38,65 +38,65 @@ ms.locfileid: "56631845"
 
   ![odkaz na video](../vsto/media/playvideo.gif "odkaz na video") související video ukázku naleznete v tématu [postup: Volání kódu VSTO z jazyka VBA? ](http://go.microsoft.com/fwlink/?LinkId=136757).
 
-##  <a name="HostItemCode"></a> Vystavení kódu v třídě položky hostitele
+## <a name="HostItemCode"></a> Vystavení kódu v třídě položky hostitele
  Chcete-li povolit kód VBA pro volání ve třídě položku hostitele kódu jazyka Visual Basic, nastavte **EnableVbaCallers** vlastnost položky hostitele **True**.
 
  Názorný postup ukazuje, jak vystavit metodu třídy položku hostitele a následně ji zavolat z jazyka VBA, naleznete v tématu [názorný postup: Volání kódu z jazyka VBA v projektu jazyka Visual Basic](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md). Další informace o hostitelských položkách naleznete v tématu [hostovat položky a hostujte Přehled ovládacích prvků](../vsto/host-items-and-host-controls-overview.md).
 
 #### <a name="to-expose-code-in-a-host-item-to-vba"></a>Vystavení kódu v položce hostitele pro jazyk VBA
 
-1.  Otevřete nebo vytvořte úrovni dokumentu [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] projektu, který je založen na dokument aplikace Word, Excelový sešit nebo šablonu v Excelu, který podporuje makra a kód VBA, který již obsahuje.
+1. Otevřete nebo vytvořte úrovni dokumentu [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] projektu, který je založen na dokument aplikace Word, Excelový sešit nebo šablonu v Excelu, který podporuje makra a kód VBA, který již obsahuje.
 
      Další informace o formátech soubor dokumentu, které podporují makra najdete v tématu [kombinovat VBA a přizpůsobení na úrovni dokumentu](../vsto/combining-vba-and-document-level-customizations.md).
 
     > [!NOTE]
     >  Tuto funkci nelze použít v projektech aplikace Word šablony.
 
-2.  Ujistěte se, že kód VBA v dokumentu může spustit bez výzvy pro uživatele povolit makra. VBA kód ke spuštění tak, že přidáte do seznamu důvěryhodných umístění v nastavení Centra zabezpečení pro aplikaci Word nebo Excel umístění projektu Office, kterému můžete důvěřovat.
+2. Ujistěte se, že kód VBA v dokumentu může spustit bez výzvy pro uživatele povolit makra. VBA kód ke spuštění tak, že přidáte do seznamu důvěryhodných umístění v nastavení Centra zabezpečení pro aplikaci Word nebo Excel umístění projektu Office, kterému můžete důvěřovat.
 
-3.  Přidejte metodu, vlastnost nebo událost, kterou chcete zpřístupnit pro jazyk VBA na jednu z tříd položek hostitele ve vašem projektu a deklarace nového člena jako **veřejné**. Název třídy, závisí na aplikaci:
+3. Přidejte metodu, vlastnost nebo událost, kterou chcete zpřístupnit pro jazyk VBA na jednu z tříd položek hostitele ve vašem projektu a deklarace nového člena jako **veřejné**. Název třídy, závisí na aplikaci:
 
-    -   V textovém má název třída hostitele položek projektu, `ThisDocument` ve výchozím nastavení.
+    - V textovém má název třída hostitele položek projektu, `ThisDocument` ve výchozím nastavení.
 
-    -   V projektu aplikace Excel, jsou položky třídy hostitele s názvem `ThisWorkbook`, `Sheet1`, `Sheet2`, a `Sheet3` ve výchozím nastavení.
+    - V projektu aplikace Excel, jsou položky třídy hostitele s názvem `ThisWorkbook`, `Sheet1`, `Sheet2`, a `Sheet3` ve výchozím nastavení.
 
-4.  Nastavte **EnableVbaCallers** vlastnosti pro položku hostitele má **True**. Tato vlastnost je k dispozici v **vlastnosti** okno, když je položka hostitele v Návrháři otevřený.
+4. Nastavte **EnableVbaCallers** vlastnosti pro položku hostitele má **True**. Tato vlastnost je k dispozici v **vlastnosti** okno, když je položka hostitele v Návrháři otevřený.
 
      Po nastavení této vlastnosti sady Visual Studio automaticky nastaví **ReferenceAssemblyFromVbaProject** vlastnost **True**.
 
     > [!NOTE]
     >  Pokud sešit nebo dokument už neobsahuje kód VBA, nebo pokud kód VBA v dokumentu není důvěryhodný pro spuštění, zobrazí se chybová zpráva při nastavení **EnableVbaCallers** vlastnost **True**. Je to proto, že Visual Studio nelze upravit projektu VBA v dokumentu v této situaci.
 
-5.  Klikněte na tlačítko **OK** ve zprávě, která se zobrazí. Tato zpráva se upozorní, že přidáte kód VBA do sešitu nebo dokumentu při spouštíte projekt z [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], kód VBA budou ztraceny při příštím sestavení projektu. Je to proto, že dokument ve výstupní složce sestavení je přepsána pokaždé, když se sestavení projektu.
+5. Klikněte na tlačítko **OK** ve zprávě, která se zobrazí. Tato zpráva se upozorní, že přidáte kód VBA do sešitu nebo dokumentu při spouštíte projekt z [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], kód VBA budou ztraceny při příštím sestavení projektu. Je to proto, že dokument ve výstupní složce sestavení je přepsána pokaždé, když se sestavení projektu.
 
      V tomto okamžiku sady Visual Studio nastaví projekt tak, aby projekt VBA může volat do sestavení. Visual Studio také přidává vlastnost s názvem `CallVSTOAssembly` k `ThisDocument`, `ThisWorkbook`, `Sheet1`, `Sheet2`, nebo `Sheet3` modulu v projektu VBA. Tuto vlastnost můžete použít pro přístup k veřejné členy třídy, která je vystavena VBA.
 
-6.  Sestavte projekt.
+6. Sestavte projekt.
 
-##  <a name="NonHostItem"></a> Vystavení kódu, který není ve třídě položky hostitele
+## <a name="NonHostItem"></a> Vystavení kódu, který není ve třídě položky hostitele
  Povolit kód VBA pro volání kódu jazyka Visual Basic, který není ve třídě položku hostitele, upravte kód tak, aby byl viditelný pro jazyk VBA.
 
 ### <a name="to-expose-code-that-is-not-in-a-host-item-class-to-vba"></a>Chcete-li zveřejnit kód, který není ve třídě položku hostitele pro jazyk VBA
 
-1.  Otevřete nebo vytvořte úrovni dokumentu [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] projektu, který je založen na dokument aplikace Word, Excelový sešit nebo šablonu v Excelu, který podporuje makra a kód VBA, který již obsahuje.
+1. Otevřete nebo vytvořte úrovni dokumentu [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] projektu, který je založen na dokument aplikace Word, Excelový sešit nebo šablonu v Excelu, který podporuje makra a kód VBA, který již obsahuje.
 
      Další informace o formátech soubor dokumentu, které podporují makra najdete v tématu [kombinovat VBA a přizpůsobení na úrovni dokumentu](../vsto/combining-vba-and-document-level-customizations.md).
 
     > [!NOTE]
     >  Tuto funkci nelze použít v projektech aplikace Word šablony.
 
-2.  Ujistěte se, že kód VBA v dokumentu může spustit bez výzvy pro uživatele povolit makra. VBA kód ke spuštění tak, že přidáte do seznamu důvěryhodných umístění v nastavení Centra zabezpečení pro aplikaci Word nebo Excel umístění projektu Office, kterému můžete důvěřovat.
+2. Ujistěte se, že kód VBA v dokumentu může spustit bez výzvy pro uživatele povolit makra. VBA kód ke spuštění tak, že přidáte do seznamu důvěryhodných umístění v nastavení Centra zabezpečení pro aplikaci Word nebo Excel umístění projektu Office, kterému můžete důvěřovat.
 
-3.  Přidat člena, který chcete zpřístupnit pro jazyk VBA veřejnou třídu ve vašem projektu a deklarace nového člena jako **veřejné**.
+3. Přidat člena, který chcete zpřístupnit pro jazyk VBA veřejnou třídu ve vašem projektu a deklarace nového člena jako **veřejné**.
 
-4.  Použijte následující <xref:System.Runtime.InteropServices.ComVisibleAttribute> a <xref:Microsoft.VisualBasic.ComClassAttribute> atributy do třídy, které jsou vystaveny pro jazyk VBA. Tyto atributy zviditelnit třídy pro jazyk VBA.
+4. Použijte následující <xref:System.Runtime.InteropServices.ComVisibleAttribute> a <xref:Microsoft.VisualBasic.ComClassAttribute> atributy do třídy, které jsou vystaveny pro jazyk VBA. Tyto atributy zviditelnit třídy pro jazyk VBA.
 
     ```vb
     <Microsoft.VisualBasic.ComClass()> _
     <System.Runtime.InteropServices.ComVisibleAttribute(True)> _
     ```
 
-5.  Přepsat **GetAutomationObject** metoda třídy položku hostitele ve vašem projektu a vrátit instanci třídy, které jsou vystaveny pro jazyk VBA. Následující příklad kódu předpokládá, že jsou vystaveny třídu s názvem `DocumentUtilities` pro jazyk VBA.
+5. Přepsat **GetAutomationObject** metoda třídy položku hostitele ve vašem projektu a vrátit instanci třídy, které jsou vystaveny pro jazyk VBA. Následující příklad kódu předpokládá, že jsou vystaveny třídu s názvem `DocumentUtilities` pro jazyk VBA.
 
     ```vb
     Protected Overrides Function GetAutomationObject() As Object
@@ -104,14 +104,14 @@ ms.locfileid: "56631845"
     End Function
     ```
 
-6.  Otevření dokumentu (pro aplikaci Word) nebo Návrhář tabulky (Excel) v [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
+6. Otevření dokumentu (pro aplikaci Word) nebo Návrhář tabulky (Excel) v [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
-7.  V **vlastnosti** okna, vyberte **ReferenceAssemblyFromVbaProject** vlastnost a změňte hodnotu na **True**.
+7. V **vlastnosti** okna, vyberte **ReferenceAssemblyFromVbaProject** vlastnost a změňte hodnotu na **True**.
 
     > [!NOTE]
     >  Pokud sešit nebo dokument už neobsahuje kód VBA, nebo pokud kód VBA v dokumentu není důvěryhodný pro spuštění, zobrazí se chybová zpráva při nastavení **ReferenceAssemblyFromVbaProject** vlastnost **True** . Je to proto, že Visual Studio nelze upravit projektu VBA v dokumentu v této situaci.
 
-8.  Klikněte na tlačítko **OK** ve zprávě, která se zobrazí. Tato zpráva se upozorní, že přidáte kód VBA do sešitu nebo dokumentu při spouštíte projekt z [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], kód VBA budou ztraceny při příštím sestavení projektu. Je to proto, že dokument ve výstupní složce sestavení je přepsána pokaždé, když se sestavení projektu.
+8. Klikněte na tlačítko **OK** ve zprávě, která se zobrazí. Tato zpráva se upozorní, že přidáte kód VBA do sešitu nebo dokumentu při spouštíte projekt z [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], kód VBA budou ztraceny při příštím sestavení projektu. Je to proto, že dokument ve výstupní složce sestavení je přepsána pokaždé, když se sestavení projektu.
 
      V tomto okamžiku sady Visual Studio nastaví projekt tak, aby projekt VBA může volat do sestavení. Visual Studio také přidá metodu s názvem `GetManagedClass` do projektu VBA. Tuto metodu lze volat z libovolného místa v projektu VBA pro přístup ke třídě, která je vystavena VBA.
 

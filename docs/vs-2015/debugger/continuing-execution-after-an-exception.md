@@ -29,12 +29,12 @@ caps.latest.revision: 30
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 37a285a48ec58ddeaeae55601565c155d0455402
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a43983846263fa49a7ff501b0d87c460990e8a37
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54777876"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105468"
 ---
 # <a name="continuing-execution-after-an-exception"></a>Pokračování v provádění po výjimce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,9 +49,9 @@ Pokud ladicí program přeruší provádění z důvodu výjimky, zobrazí se di
 ## <a name="native-code"></a>Nativní kód  
  V nativním C/C++ máte dvě možnosti:  
   
--   Můžete kliknout na **přerušit** a pokuste se tento problém vyřešit. Při práci v režimu přerušení, lze vrátit zásobník volání kliknutím pravým tlačítkem na snímek v **zásobník volání** okno a vyberete **Unwind k tomuto rámci** v místní nabídce. Když budete pokračovat v ladění, **výjimka** dialogové okno zobrazí znovu, pokud jste problém. V opačném případě **výjimka** neobjeví dialogové okno.  
+- Můžete kliknout na **přerušit** a pokuste se tento problém vyřešit. Při práci v režimu přerušení, lze vrátit zásobník volání kliknutím pravým tlačítkem na snímek v **zásobník volání** okno a vyberete **Unwind k tomuto rámci** v místní nabídce. Když budete pokračovat v ladění, **výjimka** dialogové okno zobrazí znovu, pokud jste problém. V opačném případě **výjimka** neobjeví dialogové okno.  
   
--   Můžete kliknout na **pokračovat** pro pokračování v provádění bez pokusu o vyřešení problému. **Výjimka** se znovu zobrazí dialogové okno.  
+- Můžete kliknout na **pokračovat** pro pokračování v provádění bez pokusu o vyřešení problému. **Výjimka** se znovu zobrazí dialogové okno.  
   
 ## <a name="mixed-code"></a>Smíšený kód  
  Pokud dosáhnete neošetřenou výjimku při ladění smíšená nativní a spravované kódové, omezení operačního systému zakázat odvíjení zásobníku volání. Pokud se pokusíte zpět zásobník volání pomocí místní nabídky, chybová zpráva vysvětluje, že ladicí program nelze vrátit zpět z neošetřenou výjimkou během ladění Smíšeného kódu.  

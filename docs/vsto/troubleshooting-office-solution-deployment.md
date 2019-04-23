@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6773e73eaa4d6d53bbfa63e26b66f56553910444
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 418a1a22979b701ec1d1d32521f7f89e2c5274eb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54872258"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088090"
 ---
 # <a name="troubleshoot-office-solution-deployment"></a>Řešení potíží s nasazením řešení pro systém Office
   Toto téma obsahuje informace o tom, jak řešit běžné problémy, které se mohou vyskytnout při nasazení řešení Office.
@@ -43,11 +43,11 @@ ms.locfileid: "54872258"
 
 #### <a name="to-set-the-time-out-value"></a>Chcete-li nastavit hodnotu časového limitu
 
-1.  V registru přejděte na následující klíč:
+1. V registru přejděte na následující klíč:
 
      **HKEY_CURRENT_USER\Software\Microsoft\VSTA**
 
-2.  V **AddInTimeout** podklíč, nastavte hodnotu časového limitu v milisekundách.
+2. V **AddInTimeout** podklíč, nastavte hodnotu časového limitu v milisekundách.
 
      Pokud **AddInTimeout** podklíč neexistuje, vytvořte ho typu DWORD.
 

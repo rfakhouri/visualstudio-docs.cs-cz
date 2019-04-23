@@ -9,12 +9,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 22addb1c98f72f265665ca5737180c24744b0f32
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: acccb96f4d4092727e72d1d72103e26d7be96511
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54784197"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110321"
 ---
 # <a name="how-to-migrate-a-domain-specific-language-to-a-new-version"></a>Postupy: Migrace jazyka specifického pro doménu na novou verzi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,9 +32,9 @@ Můžete migrovat projekty, které definice a používání jazyka specifického
   
 #### <a name="to-prepare-projects-for-migration"></a>Příprava migrace projektů.  
   
--   Ujistěte se, **.csproj** a **.sln** lze zapisovat soubory. Pokud jsou pod správou zdrojových kódů, ujistěte se, že jsou rezervovány.  
+- Ujistěte se, **.csproj** a **.sln** lze zapisovat soubory. Pokud jsou pod správou zdrojových kódů, ujistěte se, že jsou rezervovány.  
   
--   Vytvořte kopii složky, které máte v úmyslu migrovat.  
+- Vytvořte kopii složky, které máte v úmyslu migrovat.  
   
 ## <a name="migrating-a-collection-of-projects"></a>Migrace kolekce projektů  
   
@@ -42,7 +42,7 @@ Můžete migrovat projekty, které definice a používání jazyka specifického
   
 1. Spusťte nástroj pro migraci DSL.  
   
-   -   Můžete dvakrát klikněte na panel nástrojů v Průzkumníku Windows (nebo Průzkumníka souborů) nebo spusťte nástroj z příkazového řádku. Tento nástroj je v tomto umístění:  
+   - Můžete dvakrát klikněte na panel nástrojů v Průzkumníku Windows (nebo Průzkumníka souborů) nebo spusťte nástroj z příkazového řádku. Tento nástroj je v tomto umístění:  
   
         **%ProgramFiles%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Tools\DSLTools\DslProjectsMigrationTool.exe**  
   
@@ -54,37 +54,37 @@ Můžete migrovat projekty, které definice a používání jazyka specifického
   
 3. Kontrola stromu projektů a zrušte zaškrtnutí políčka projekty, které nechcete převést.  
   
-   -   Vyberte projekt nebo řešení zobrazíte seznam změn, které způsobí, že nástroj.  
+   - Vyberte projekt nebo řešení zobrazíte seznam změn, které způsobí, že nástroj.  
   
        > [!NOTE]
        >  Zaškrtávací políčka, které se zobrazují vedle názvu složky nemají žádný vliv. Je třeba rozbalit složky ke kontrole projekty a řešení.  
   
 4. Převod projektů.  
   
-   1.  Klikněte na tlačítko **převést**.  
+   1. Klikněte na tlačítko **převést**.  
   
         Před každý soubor projektu je převést, kopie _projektu_**.csproj** budou uloženy jako _projektu_**. vs2008.csproj**  
   
         Kopírování jednotlivých _řešení_**.sln** budou uloženy jako _řešení_**. vs2008.sln**  
   
-   2.  Prozkoumejte všechny neúspěšné převody, které jsou hlášeny.  
+   2. Prozkoumejte všechny neúspěšné převody, které jsou hlášeny.  
   
         V textovém okně jsou hlášeny chyby. Kromě toho stromové zobrazení ukazuje rvená vlaječka v každém uzlu, který se nepovedlo převést. Můžete kliknout na uzel, který má získat další informace o této chybě.  
   
 5. **Transformovat všechny šablony** v řešení obsahující úspěšně převeden projekty.  
   
-   1.  Otevřete řešení.  
+   1. Otevřete řešení.  
   
-   2.  Klikněte na tlačítko **Transformovat všechny šablony** tlačítko v hlavičce Průzkumníku řešení.  
+   2. Klikněte na tlačítko **Transformovat všechny šablony** tlačítko v hlavičce Průzkumníku řešení.  
   
        > [!NOTE]
        >  Tento krok můžete provést zbytečné. Další informace najdete v tématu [jak automatizovat Transformovat všechny šablony](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a).  
   
 6. Aktualizujte váš vlastní kód v projektech převedený.  
   
-   -   Pokus o sestavení projektů a prozkoumejte všechny chyby.  
+   - Pokus o sestavení projektů a prozkoumejte všechny chyby.  
   
-   -   Otestujte návrháře.  
+   - Otestujte návrháře.  
   
 ## <a name="see-also"></a>Viz také  
  [Co je nového v produktu Visualization and Modeling SDK](../misc/what-s-new-in-visualization-and-modeling-sdk.md)

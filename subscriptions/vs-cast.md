@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Další informace o benefitech PŘETYPOVÁNÍ zvýrazněte k dispozici ve vybraných předplatných sady Visual Studio
 searchscope: VS Subscription
-ms.openlocfilehash: 1d4466fa2a4fac38849a7b157921094d769a4e04
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: a96b314a22bf3036167b0d7b1bb6077edee01f59
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59650132"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100336"
 ---
 # <a name="the-cast-highlight-benefit-in-visual-studio-subscriptions"></a>Zvýrazněte PŘETYPOVÁNÍ výhoda v předplatných sady Visual Studio
 
@@ -39,41 +39,41 @@ Předplatitelé sady Visual Studio Enterprise můžete získat předplatné jede
    > [!NOTE]
    > Počet aktivací výhody zvýrazněte PŘETYPOVÁNÍ jsou omezené na deset na organizaci.  Pokud jste už byl využitý vaší organizace desetkrát, nebude možné zvýraznit PŘETYPOVÁNÍ výhodou, aktivujte a obdržíte e-mail s další informace.
 
- 0. Po odeslání vašich informací, zobrazí se vám na stránce potvrzení přijetí vaší žádosti.
+0. Po odeslání vašich informací, zobrazí se vám na stránce potvrzení přijetí vaší žádosti.
 
     > [!div class="mx-imgBorder"]
     > ![PŘETYPOVÁNÍ zvýraznění Děkujeme, že stránka](_img/vs-cast-highlight/vs-cast-highlight-thankyou.png)
 
-0.  PŘETYPOVÁNÍ tým bude vyhodnocovat vaši žádost a bude vás kontaktovat a dokončit vytvoření vašeho účtu.
+0. PŘETYPOVÁNÍ tým bude vyhodnocovat vaši žádost a bude vás kontaktovat a dokončit vytvoření vašeho účtu.
 
-0.  Obdržíte také následující e-mailu z PŘETYPOVÁNÍ potvrzení přijetí vaší žádosti.
+0. Obdržíte také následující e-mailu z PŘETYPOVÁNÍ potvrzení přijetí vaší žádosti.
 
-   *Děkujeme vám za vaši žádost o aktivaci přístupu 30denní zvýrazněte PŘETYPOVÁNÍ – exkluzivní nabídka pro zákazníky Microsoft Visual Studio Enterprise!*
-
-   *Vaše žádost o aktivaci a přístup, abyste měli na očích PŘETYPOVÁNÍ aktuálně revizi. Z jiné mi uslyší ve více než 48 hodin.*
-
-   *Nejlepším řešením,*
-   *Greg*
+   > *Děkujeme vám za vaši žádost o aktivaci přístupu 30denní zvýrazněte PŘETYPOVÁNÍ – exkluzivní nabídka pro zákazníky Microsoft Visual Studio Enterprise!*
+   >
+   > *Vaše žádost o aktivaci a přístup, abyste měli na očích PŘETYPOVÁNÍ aktuálně revizi. Z jiné mi uslyší ve více než 48 hodin.*
+   >
+   > *Nejlepším řešením,*
+   > *Greg*
 
 Po schválení vaší žádosti obdržíte e-mail s druhou potvrzení úspěšné vytvoření vašeho účtu a s výzvou, abyste na aktivační odkaz pro dokončení procesu aktivace.
 
-   *Úspěšně jsme ověřit a ověřit vaši žádost o přístup k PŘETYPOVÁNÍ zvýraznění. Vítejte na palubě!*
-
-   *Existuje jeden poslední krok, který je potřeba z-endu vašeho dokončete aktivaci. Obdrželi jste e-mailu z noreply@casthighlight.com s odkazem k aktivaci. Vaše nevyžádanou poštu políčko zaškrtněte, pokud se nezobrazí v e-mailu.*
-
-   *Kliknutím na aktivační odkaz v e-mailu a dokončení procesu aktivace.*
-
-   *Po aktivaci budete mít přístup 30denní platformy zvýrazněte PŘETYPOVÁNÍ a může připojit až 5 aplikací. Všimněte si, že se jedná exkluzivní nabídka je k dispozici jenom zákazníkům Microsoft Visual Studio Enterprise.*
-
-   *Můžu budou kontaktovat a ujistěte se, že všechno, co proběhnout za vás. Do té doby tady je několik užitečný obsah, které vám pomůžou začít:*
-
-   - [PŘETYPOVÁNÍ zvýraznění – ukázka CloudReadiness](https://www.youtube.com/watch?v=wFUpAzn1Iu8&feature=youtu.be)
-    -   [Příručka Začínáme (PDF)](https://casthighlight.com/Getting-Started-Guide.pdf)
-    -   Výukové video - [konfigurace vašeho portfolia](https://www.youtube.com/watch?v=MDm8ln4vuGE)
-    -   Výukové video - [připojení vaší aplikace](https://www.youtube.com/watch?v=x-7Dsn3Rmw4)
-
-   *Nejlepším řešením,*
-   *Greg*
+   > *Úspěšně jsme ověřit a ověřit vaši žádost o přístup k PŘETYPOVÁNÍ zvýraznění. Vítejte na palubě!*
+   >
+   > *Existuje jeden poslední krok, který je potřeba z-endu vašeho dokončete aktivaci. Obdrželi jste e-mailu z noreply@casthighlight.com s odkazem k aktivaci. Vaše nevyžádanou poštu políčko zaškrtněte, pokud se nezobrazí v e-mailu.*
+   >
+   > *Kliknutím na aktivační odkaz v e-mailu a dokončení procesu aktivace.*
+   >
+   > *Po aktivaci budete mít přístup 30denní platformy zvýrazněte PŘETYPOVÁNÍ a může připojit až 5 aplikací. Všimněte si, že se jedná exkluzivní nabídka je k dispozici jenom zákazníkům Microsoft Visual Studio Enterprise.*
+   >
+   > *Můžu budou kontaktovat a ujistěte se, že všechno, co proběhnout za vás. Do té doby tady je několik užitečný obsah, které vám pomůžou začít:*
+   >
+   > - [PŘETYPOVÁNÍ zvýraznění – ukázka CloudReadiness](https://www.youtube.com/watch?v=wFUpAzn1Iu8&feature=youtu.be)
+   > - [Příručka Začínáme (PDF)](https://casthighlight.com/Getting-Started-Guide.pdf)
+   > - Výukové video - [konfigurace vašeho portfolia](https://www.youtube.com/watch?v=MDm8ln4vuGE)
+   > - Výukové video - [připojení vaší aplikace](https://www.youtube.com/watch?v=x-7Dsn3Rmw4)
+   >
+   > *Nejlepším řešením,*
+   > *Greg*
 
    > [!NOTE]
    > Ujistěte se, že klikněte na aktivační odkaz v e-mailu, který jste dostali.  V opačném případě nebude možné přístup k vašemu předplatnému zvýrazněte PŘETYPOVÁNÍ. Pokud nevidíte e-mailu v doručené poště, nezapomeňte se podívat složky s nevyžádanou poštou.
@@ -98,12 +98,12 @@ Po schválení vaší žádosti obdržíte e-mail s druhou potvrzení úspěšn�
 Nejste si jistí které předplatné používáte?  Připojte se k [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) zobrazíte všechna předplatná, která jsou přiřazená e-mailovou adresu. Pokud se nezobrazí všechna předplatná, může mít jeden nebo více přiřazené na jinou e-mailovou adresu.  Bude potřeba přihlásit se přes tento e-mailovou adresu najdete v těchto předplatných.
 
 ## <a name="support-resources"></a>Informační zdroje podpory
--  Potřebujete pomoc s používáním PŘETYPOVÁNÍ zvýrazněte?  Projděte si tyto prostředky:
+- Potřebujete pomoc s používáním PŘETYPOVÁNÍ zvýrazněte?  Projděte si tyto prostředky:
     - [Odeslat žádost o podporu](https://casthighlight.com/support/)
     - [Příručka Začínáme (PDF)](https://casthighlight.com/Getting-Started-Guide.pdf)
 
--  Potřebujete pomoc se prodeje, předplatnými, účty a fakturací pro předplatná sady Visual Studio, obraťte se na Visual Studio [podpora předplatných](https://visualstudio.microsoft.com/subscriptions/support/).
--  Máte dotaz k Visual Studio IDE, DevOps služby Azure nebo jiných produktů Visual Studio nebo služeb?  Navštivte [Visual Studio – podpora](https://visualstudio.microsoft.com/support/).
+- Potřebujete pomoc se prodeje, předplatnými, účty a fakturací pro předplatná sady Visual Studio, obraťte se na Visual Studio [podpora předplatných](https://visualstudio.microsoft.com/subscriptions/support/).
+- Máte dotaz k Visual Studio IDE, DevOps služby Azure nebo jiných produktů Visual Studio nebo služeb?  Navštivte [Visual Studio – podpora](https://visualstudio.microsoft.com/support/).
 
 ## <a name="next-steps"></a>Další kroky
 

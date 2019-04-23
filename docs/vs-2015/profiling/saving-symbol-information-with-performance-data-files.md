@@ -12,12 +12,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4bd8b861b6501fda2ed0739725a05225e31343e1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e9d2e8b0414746523d0f76e8266f6463d9c05574
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54780886"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60098883"
 ---
 # <a name="saving-symbol-information-with-performance-data-files"></a>Ukládání informací o symbolech s datových souborů výkonu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,9 +51,9 @@ Pokud používáte [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] integrované vý
   
 - Ujistěte se, že jste nastavili cestu k mezipaměti symbolů Windows. Proveďte jednu z následujících nastavení cesty k symbolu mezipaměti:  
   
-  -   Sada ladicí program -> symboly – možnost v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] integrované vývojové prostředí na správnou cestu.  
+  - Sada ladicí program -> symboly – možnost v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] integrované vývojové prostředí na správnou cestu.  
   
-  -   Symbolpath – možnost přidáte k příkazovému řádku VSPerfReport zahrnout symboly.  
+  - Symbolpath – možnost přidáte k příkazovému řádku VSPerfReport zahrnout symboly.  
   
 - Pokud nevidíte všechny symboly v [!INCLUDE[vstecasp](../includes/vstecasp-md.md)], ujistěte se, že máte správně nastavené pro ASP server server symbolů.  
   

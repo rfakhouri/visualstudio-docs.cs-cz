@@ -19,12 +19,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 948cbe88f39b0a39fc23ff8307c3e3484fb9438c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 73e2c3f2c9736fd762a9e763827ed641ea5069f7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54788630"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092120"
 ---
 # <a name="how-to-create-a-product-manifest"></a>Postupy: Vytvoření manifestu produktu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,11 +37,11 @@ Pokud chcete nasadit požadavky pro vaši aplikaci, můžete vytvořit balíček
   
 #### <a name="to-create-the-product-manifest"></a>K vytvoření manifestu produktu  
   
-1.  Vytvořte adresář pro balíček zaváděcího nástroje. Tento příklad používá C:\package.  
+1. Vytvořte adresář pro balíček zaváděcího nástroje. Tento příklad používá C:\package.  
   
-2.  V sadě Visual Studio vytvořte nový XML soubor s názvem `product.xml`a uložte ho do složky C:\package.  
+2. V sadě Visual Studio vytvořte nový XML soubor s názvem `product.xml`a uložte ho do složky C:\package.  
   
-3.  Přidejte následující kód XML pro popis kódu XML obor názvů a produktu pro balíček. Nahraďte kód produktu jedinečný identifikátor pro balíček.  
+3. Přidejte následující kód XML pro popis kódu XML obor názvů a produktu pro balíček. Nahraďte kód produktu jedinečný identifikátor pro balíček.  
   
     ```  
     <Product  
@@ -49,7 +49,7 @@ Pokud chcete nasadit požadavky pro vaši aplikaci, můžete vytvořit balíček
     ProductCode="Custom.Bootstrapper.Package">  
     ```  
   
-4.  Přidejte kód jazyka XML k určení, zda balíček obsahuje závislost. Tento příklad používá závislost na Microsoft Windows Installer 3.1.  
+4. Přidejte kód jazyka XML k určení, zda balíček obsahuje závislost. Tento příklad používá závislost na Microsoft Windows Installer 3.1.  
   
     ```  
     <RelatedProducts>  
@@ -57,7 +57,7 @@ Pokud chcete nasadit požadavky pro vaši aplikaci, můžete vytvořit balíček
       </RelatedProducts>  
     ```  
   
-5.  Přidejte XML pro všechny soubory, které jsou součástí balíčku zaváděcího nástroje. Tento příklad používá název souboru balíčku CorePackage.msi.  
+5. Přidejte XML pro všechny soubory, které jsou součástí balíčku zaváděcího nástroje. Tento příklad používá název souboru balíčku CorePackage.msi.  
   
     ```  
     <PackageFiles>  
@@ -65,16 +65,16 @@ Pokud chcete nasadit požadavky pro vaši aplikaci, můžete vytvořit balíček
     </PackageFiles>  
     ```  
   
-6.  Zkopírovat nebo přesunout soubor CorePackage.msi C:\package složky.  
+6. Zkopírovat nebo přesunout soubor CorePackage.msi C:\package složky.  
   
-7.  Přidejte kód jazyka XML k instalaci balíčku zaváděcího nástroje příkazů. Zaváděcí nástroj automaticky přidá **/qn** příznak, který soubor MSI, který bude instalaci v bezobslužném režimu. Pokud je soubor .exe, zaváděcí nástroj spustí soubor .exe s použitím prostředí. Následující kód XML ukazuje na CorePackage.msi žádné argumenty, ale argumentu příkazového řádku můžete umístit do argumentů atributu.  
+7. Přidejte kód jazyka XML k instalaci balíčku zaváděcího nástroje příkazů. Zaváděcí nástroj automaticky přidá **/qn** příznak, který soubor MSI, který bude instalaci v bezobslužném režimu. Pokud je soubor .exe, zaváděcí nástroj spustí soubor .exe s použitím prostředí. Následující kód XML ukazuje na CorePackage.msi žádné argumenty, ale argumentu příkazového řádku můžete umístit do argumentů atributu.  
   
     ```  
     <Commands>  
         <Command PackageFile="CorePackage.msi" Arguments="">  
     ```  
   
-8.  Přidejte následující kód XML do zkontrolujte, jestli je nainstalovaný balíček zaváděcího nástroje. Nahraďte kód produktu identifikátoru GUID distribuovatelnou komponentu.  
+8. Přidejte následující kód XML do zkontrolujte, jestli je nainstalovaný balíček zaváděcího nástroje. Nahraďte kód produktu identifikátoru GUID distribuovatelnou komponentu.  
   
     ```  
     <InstallChecks>  

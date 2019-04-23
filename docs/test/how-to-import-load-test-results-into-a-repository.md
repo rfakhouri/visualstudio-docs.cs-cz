@@ -11,12 +11,12 @@ ms.assetid: a955b3d2-c8ad-40dd-8ea3-9f1a271e1eed
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: efbd13bf7ada237dc21bc5b2b6a186b13a52fd06
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 16f6558373c111dbaf933184cf5ae23d00962b7a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55932409"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114740"
 ---
 # <a name="how-to-import-load-test-results-into-a-repository"></a>Postupy: Importovat do úložiště výsledků zátěžového testu
 
@@ -28,21 +28,21 @@ Výsledky zátěžového testu můžete spravovat z editoru zátěžového testu
 
 ## <a name="to-import-results-into-a-repository"></a>Chcete-li importovat do úložiště výsledků
 
-1.  Z webového výkonu a zátěžové testování projektu, otevřete zátěžový test.
+1. Z webového výkonu a zátěžové testování projektu, otevřete zátěžový test.
 
-2.  Na panelu nástrojů themeroller vložený **otevřít a spravovat výsledky**.
+2. Na panelu nástrojů themeroller vložený **otevřít a spravovat výsledky**.
 
      **Otevřít a spravovat výsledky zátěžového testu** se zobrazí dialogové okno.
 
-3.  V **zadat název kontroléru pro vyhledání výsledků zátěžového testu**, vyberte řadič. Vyberte  **\<místní >** pro přístup k výsledkům uloženým místně.
+3. V **zadat název kontroléru pro vyhledání výsledků zátěžového testu**, vyberte řadič. Vyberte  **\<místní >** pro přístup k výsledkům uloženým místně.
 
      Pokud jsou k dispozici výsledky zátěžového testu, jsou uvedeny v **výsledky zátěžového testu** seznamu. Sloupce jsou **čas**, **doba trvání**, **uživatele**, **výsledek**, **testovací**, a  **Popis**. **Testování** obsahuje název testu, a **popis** obsahuje volitelný popis, který je přidán před spuštěním testu.
 
-4.  Zvolte **Import**.
+4. Zvolte **Import**.
 
      **Import výsledků zátěžového testu** zobrazí se dialogové okno.
 
-5.  V **název_souboru** zadejte název souboru výsledků archivované testu a klikněte na tlačítko **otevřít**.
+5. V **název_souboru** zadejte název souboru výsledků archivované testu a klikněte na tlačítko **otevřít**.
 
      \- nebo –
 

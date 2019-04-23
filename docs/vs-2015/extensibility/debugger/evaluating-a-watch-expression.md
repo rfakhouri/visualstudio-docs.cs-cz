@@ -11,12 +11,12 @@ ms.assetid: 8317cd52-6fea-4e8f-a739-774dc06bd44b
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c4eb1ee2048a5e5580cbeb8320ba573c85b92183
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: eed1a1b3da59d6d5e76c9157fc0a2cb37420c797
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54770046"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104353"
 ---
 # <a name="evaluating-a-watch-expression"></a>Vyhodnocení výrazu kukátka
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -28,11 +28,11 @@ ms.locfileid: "54770046"
   
  V této implementaci `IDebugParsedExpression::EvaluateSync`, výraz je analyzovat a vyhodnocovat ve stejnou dobu. Tato implementace provede následující úlohy:  
   
-1.  Analyzuje a vyhodnotí výraz, který má obecný objekt, který obsahuje hodnotu a její typ vytvoření. V jazyce C#, je reprezentováno jako `object` zatímco v jazyce C++ je reprezentováno jako `VARIANT`.  
+1. Analyzuje a vyhodnotí výraz, který má obecný objekt, který obsahuje hodnotu a její typ vytvoření. V jazyce C#, je reprezentováno jako `object` zatímco v jazyce C++ je reprezentováno jako `VARIANT`.  
   
-2.  Vytvoří instanci třídy (volá `CValueProperty` v tomto příkladu), který implementuje `IDebugProperty2` rozhraní a uloží ve třídě hodnota, která má být vrácen.  
+2. Vytvoří instanci třídy (volá `CValueProperty` v tomto příkladu), který implementuje `IDebugProperty2` rozhraní a uloží ve třídě hodnota, která má být vrácen.  
   
-3.  Vrátí `IDebugProperty2` rozhraní z `CValueProperty` objektu.  
+3. Vrátí `IDebugProperty2` rozhraní z `CValueProperty` objektu.  
   
 ## <a name="managed-code"></a>Spravovaný kód  
  Toto je implementace `IDebugParsedExpression::EvaluateSync` ve spravovaném kódu. Pomocná metoda `Tokenize` analyzuje výraz do strom analýzy. Pomocná funkce `EvalToken` token, který převede na hodnotu. Pomocná funkce `FindTerm` rekurzivně prochází přes strom analýzy volání `EvalToken` pro každý uzel představující hodnotu a použití jakékoli operace (sčítání a odčítání) ve výrazu.  

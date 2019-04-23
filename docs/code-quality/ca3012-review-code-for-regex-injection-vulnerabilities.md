@@ -1,5 +1,5 @@
 ---
-title: 'CA3012: Prohlédněte si kód pro vkládání regulární výraz ohrožení zabezpečení'
+title: 'CA3012: Zkontrolujte ohrožení zabezpečení injektáží regulárního výrazu v kódu'
 ms.date: 04/03/2019
 ms.topic: reference
 author: dotpaul
@@ -11,13 +11,13 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: 114b44ec566554c81f5caf3b8ac474f9c5a75c07
-ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/04/2019
-ms.locfileid: "59018801"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106251"
 ---
-# <a name="ca3012-review-code-for-regex-injection-vulnerabilities"></a>CA3012: Prohlédněte si kód pro vkládání regulární výraz ohrožení zabezpečení
+# <a name="ca3012-review-code-for-regex-injection-vulnerabilities"></a>CA3012: Zkontrolujte ohrožení zabezpečení injektáží regulárního výrazu v kódu
 
 |||
 |-|-|
@@ -26,7 +26,7 @@ ms.locfileid: "59018801"
 |Kategorie|Microsoft.Security|
 |Narušující změna|Pevné|
 
-## <a name="cause"></a>příčina
+## <a name="cause"></a>Příčina
 
 Potenciálně nedůvěryhodný vstup požadavku HTTP dosáhne regulární výraz.
 

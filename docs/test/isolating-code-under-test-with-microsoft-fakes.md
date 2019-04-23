@@ -10,12 +10,12 @@ author: gewarren
 dev_langs:
 - VB
 - CSharp
-ms.openlocfilehash: 1d3ec88a8abc0a6fcac47043a1b27d27f5b3e6f4
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 89d072c7f9643c5991ec098f87d7ec35a295bbe1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316454"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110856"
 ---
 # <a name="isolate-code-under-test-with-microsoft-fakes"></a>Izolace testovaného kódu pomocí Napodobenin Microsoft
 
@@ -23,16 +23,16 @@ Microsoft Fakes vám izolovat testovaný nahrazením ostatních částí aplikac
 
 Jsou dva typy napodobenin:
 
--   A [se zakázaným inzerováním](#get-started-with-stubs) nahradí třídu malou náhradou, která implementuje stejné rozhraní.  Pro použití zástupných procedur je nutné navrhnout aplikaci tak, aby jednotlivé součásti závisely pouze na rozhraních a nikoli na ostatních součástech. („Součást“ představuje třídu nebo skupinu tříd, které jsou navrženy a aktualizovány společně a obvykle obsaženy v sestavení.)
+- A [se zakázaným inzerováním](#get-started-with-stubs) nahradí třídu malou náhradou, která implementuje stejné rozhraní.  Pro použití zástupných procedur je nutné navrhnout aplikaci tak, aby jednotlivé součásti závisely pouze na rozhraních a nikoli na ostatních součástech. („Součást“ představuje třídu nebo skupinu tříd, které jsou navrženy a aktualizovány společně a obvykle obsaženy v sestavení.)
 
--   A [překrytí](#get-started-with-shims) upravuje zkompilovaný kód aplikace v době běhu, takže místo volání určené metody spustí kód překrytí, vaším testem. Překrytí lze použít k nahrazení volání do sestavení, které nelze upravit, jako je například sestavení .NET.
+- A [překrytí](#get-started-with-shims) upravuje zkompilovaný kód aplikace v době běhu, takže místo volání určené metody spustí kód překrytí, vaším testem. Překrytí lze použít k nahrazení volání do sestavení, které nelze upravit, jako je například sestavení .NET.
 
 ![Napodobeniny nahradit další součásti](../test/media/fakes-2.png)
 
 **Požadavky**
 
--   Visual Studio Enterprise
--   Rozhraní .NET Framework projektu
+- Visual Studio Enterprise
+- Rozhraní .NET Framework projektu
 
 > [!NOTE]
 > - Projekty .NET standard teď nejsou podporovány.
@@ -57,10 +57,10 @@ Ostatní úvahy:
 
 Obecně doporučujeme používat typy zástupných procedur k izolaci od závislostí v rámci vašeho základu kódu. To lze provést skrytím součástí za rozhraní. Typy překrytí lze použít k izolaci od součástí třetích stran, které neposkytují testovatelné rozhraní API.
 
-##  <a name="get-started-with-stubs"></a>Začínáme se zástupnými procedurami
+## <a name="get-started-with-stubs"></a>Začínáme se zástupnými procedurami
 Podrobnější popis najdete v tématu [použít zástupné procedury k izolování částí aplikace pro testování částí od sebe navzájem](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md).
 
-1.  **Vložení rozhraní**
+1. **Vložení rozhraní**
 
      Chcete-li použít zástupné procedury, musíte kód, který chcete otestovat, napsat takovým způsobem, aby explicitně nezmiňoval třídy v jiné součásti aplikace. „Součást“ představuje třídu nebo třídy, které jsou vyvíjeny a aktualizovány společně a obvykle jsou obsaženy v jednom projektu sady Visual Studio. Proměnné a parametry by měly být deklarovány pomocí rozhraní a instance ostatních součástí by měly být předány nebo vytvořeny pomocí továrny. Například pokud je součást StockFeed třídou v jiné součásti aplikace, pak toto bude považováno za chybné:
 
@@ -81,15 +81,15 @@ Podrobnější popis najdete v tématu [použít zástupné procedury k izolová
 
     ```
 
-2.  **Přidání napodobenin sestavení**
+2. **Přidání napodobenin sestavení**
 
-    1.  V **Průzkumníka řešení**, rozbalte seznam odkazů testového projektu. Pokud pracujete v jazyce Visual Basic, musíte zvolit **zobrazit všechny soubory** Chcete-li zobrazit seznam odkazů.
+    1. V **Průzkumníka řešení**, rozbalte seznam odkazů testového projektu. Pokud pracujete v jazyce Visual Basic, musíte zvolit **zobrazit všechny soubory** Chcete-li zobrazit seznam odkazů.
 
-    2.  Vyberte odkaz na sestavení, ve kterém je definováno rozhraní (například IStockFeed). V místní nabídce tento odkaz, zvolte **přidat napodobeniny sestavení**.
+    2. Vyberte odkaz na sestavení, ve kterém je definováno rozhraní (například IStockFeed). V místní nabídce tento odkaz, zvolte **přidat napodobeniny sestavení**.
 
-    3.  Znovu sestavte řešení.
+    3. Znovu sestavte řešení.
 
-3.  Ve vašich testech vytvořte instance zástupné procedury a zadejte kód pro jeho metody:
+3. Ve vašich testech vytvořte instance zástupné procedury a zadejte kód pro jeho metody:
 
     ```csharp
     [TestClass]
@@ -151,7 +151,7 @@ Podrobnější popis najdete v tématu [použít zástupné procedury k izolová
 
     Zástupné procedury jsou také generovány pro mechanismy získání a nastavení vlastností, pro události a pro obecné metody. Další informace najdete v tématu [použít zástupné procedury k izolování částí aplikace pro testování částí od sebe navzájem](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md).
 
-##  <a name="get-started-with-shims"></a>Začínáme s překrytími
+## <a name="get-started-with-shims"></a>Začínáme s překrytími
 (Podrobnější popis najdete v tématu [izolace aplikace od ostatních sestavení pro testování částí pomocí Překryvné ovladače](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md).)
 
 Předpokládejme, že vaše komponenta obsahuje volání `DateTime.Now`:
@@ -168,13 +168,13 @@ Při testování chcete překrýt `Now` vlastnost, protože skutečná verze nep
 
 Chcete-li použít překrytí, není nutné upravovat kód aplikace nebo jej zapsat určitým způsobem.
 
-1.  **Přidání napodobenin sestavení**
+1. **Přidání napodobenin sestavení**
 
      V **Průzkumníka řešení**otevřete odkazy projektu testování částí a vyberte odkaz na sestavení, který obsahuje metodu, kterou chcete simulovat. V tomto příkladu `DateTime` třída je v *System.dll*.  Chcete-li zobrazit odkazy v projektu jazyka Visual Basic, zvolte **zobrazit všechny soubory**.
 
      Zvolte **přidat napodobeniny sestavení**.
 
-2.  **Vložení překrytí do ShimsContext**
+2. **Vložení překrytí do ShimsContext**
 
     ```csharp
     [TestClass]

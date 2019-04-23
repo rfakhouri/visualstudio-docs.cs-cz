@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4dac34d2e568d5f487e06da89151fb91ebcc69f1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 395c45b19559833549c9613278f1a4ddbb06f30a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56629687"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104060"
 ---
 # <a name="expose-types-to-visual-designers"></a>Vystavení typů pro vizuální návrháře
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] aby bylo možné zobrazit vizuálního návrháře musí mít přístup do definice třídy a typ v době návrhu. Tříd jsou načteny z předdefinovanou sadu sestavení, které zahrnují závislost kompletní sadu aktuální projekt (odkazy a jejich závislosti). Může být také nezbytné pro vizuální návrháře tříd pro přístup k a typy, které jsou definovány v souborech generovaných vlastních nástrojů.
@@ -31,15 +31,15 @@ ms.locfileid: "56629687"
 
  Vlastní nástroje, které budou využívat podporu dočasné PE musí postupovat podle následujících pravidel:
 
--   **GeneratesDesignTimeSource** musí být nastavena na hodnotu 1 v registru.
+- **GeneratesDesignTimeSource** musí být nastavena na hodnotu 1 v registru.
 
      Žádná spustitelný soubor kompilace programu probíhá bez tohoto nastavení.
 
--   Generovaný kód musí být ve stejném jazyce jako nastavení globální projektu.
+- Generovaný kód musí být ve stejném jazyce jako nastavení globální projektu.
 
      Dočasné přenositelné Spustitelné je kompilován bez ohledu na to, co vlastní nástroj hlásí jako požadované rozšíření v <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.DefaultExtension%2A> za předpokladu, že **GeneratesDesignTimeSource** je nastavená na 1 v registru. Rozšíření nemusí být *.vb*, *.cs*, nebo *.jsl*; může být jakékoli rozšíření.
 
--   Kód vygenerovaný vlastní nástroj musí být platný, a musíte zkompilovat ve vlastní pomocí sady odkazů, které se nacházejí v projektu v době <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.Generate%2A> dokončí provádění.
+- Kód vygenerovaný vlastní nástroj musí být platný, a musíte zkompilovat ve vlastní pomocí sady odkazů, které se nacházejí v projektu v době <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.Generate%2A> dokončí provádění.
 
      Při kompilaci dočasné přenositelné Spustitelné pouze zdrojový soubor k dispozici pro kompilátor je výstup vlastního nástroje. Vlastní nástroj, který používá dočasné přenositelné Spustitelné proto musí vygenerovat výstupní soubory, které mohou být zkompilovány nezávisle na jiné soubory v projektu.
 

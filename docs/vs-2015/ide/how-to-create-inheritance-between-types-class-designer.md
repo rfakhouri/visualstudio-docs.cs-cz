@@ -14,12 +14,12 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d1c5b5d75dedf45988291459ed55b31bf80fc583
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2c0e8594014848bee103c65127b5edb7ad969284
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54760234"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104692"
 ---
 # <a name="how-to-create-inheritance-between-types-class-designer"></a>Postupy: Vytvoření dědičnosti mezi typy (návrhář tříd) 
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,21 +28,21 @@ Chcete-li vytvořit vztah dědičnosti mezi dvěma typy v diagramu tříd pomoc�
   
 ### <a name="to-create-an-inheritance-between-types"></a>Vytvoření dědičnosti mezi typy  
   
-1.  Z projektu v Průzkumníku řešení otevřete soubor diagramu tříd (.cd).  
+1. Z projektu v Průzkumníku řešení otevřete soubor diagramu tříd (.cd).  
   
      Pokud nemáte k dispozici diagramu tříd, vytvořte ho. Zobrazit [jak: Přidání diagramů tříd do projektů (návrhář tříd)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md).  
   
-2.  V **nástrojů**v části **návrhář tříd**, klikněte na tlačítko **dědičnosti**.  
+2. V **nástrojů**v části **návrhář tříd**, klikněte na tlačítko **dědičnosti**.  
   
-3.  V diagramu tříd kreslení čáru dědičnosti mezi typy, které potřebujete, od:  
+3. V diagramu tříd kreslení čáru dědičnosti mezi typy, které potřebujete, od:  
   
-    -   Odvozené třídy základní třídy  
+    - Odvozené třídy základní třídy  
   
-    -   Implementující třída s implementovaným rozhraním  
+    - Implementující třída s implementovaným rozhraním  
   
-    -   Rozšíření rozhraní pro rozšířené rozhraní  
+    - Rozšíření rozhraní pro rozšířené rozhraní  
   
-4.  Nebo pokud máte odvozeným typem od obecného typu, klikněte na čáru dědičnosti. V **vlastnosti** okno, nastavte **argumenty typu** vlastnost tak, aby odpovídaly typ, který chcete použít pro obecného typu.  
+4. Nebo pokud máte odvozeným typem od obecného typu, klikněte na čáru dědičnosti. V **vlastnosti** okno, nastavte **argumenty typu** vlastnost tak, aby odpovídaly typ, který chcete použít pro obecného typu.  
   
     > [!NOTE]
     >  Nadřazené abstraktní třídy obsahuje alespoň jeden abstraktní člen, jsou všechny abstraktní členy implementovány jako neabstraktní dědičné třídy.   

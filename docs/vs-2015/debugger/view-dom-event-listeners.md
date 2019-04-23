@@ -17,12 +17,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ed3a4e4f67ef8a7cc1e13e513d2f03db5f755363
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 12a4f736217374eefa32dda30111da5e71fbab39
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194976"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110476"
 ---
 # <a name="view-dom-event-listeners"></a>Zobrazení naslouchacích procesů událostí DOM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,23 +41,23 @@ Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "wi
 
 #### <a name="to-view-event-listeners"></a>Chcete-li zobrazit naslouchacích procesů událostí
 
-1.  V sadě Visual Studio vytvořte aplikaci JavaScript, který používá šablonu projektu aplikace Windows Phone kontingenční tabulky.
+1. V sadě Visual Studio vytvořte aplikaci JavaScript, který používá šablonu projektu aplikace Windows Phone kontingenční tabulky.
 
-2.  Šablonu otevřít v sadě Visual Studio, vyberte **emulátoru WVGA 8.1 4 v 512MB** v rozevíracím seznamu na panelu nástrojů ladění v ladicím programu:
+2. Šablonu otevřít v sadě Visual Studio, vyberte **emulátoru WVGA 8.1 4 v 512MB** v rozevíracím seznamu na panelu nástrojů ladění v ladicím programu:
 
      ![Výběr cíle ladění](../debugger/media/js-dom-debug-target-emu.png "JS_DOM_Debug_Target_Emu")
 
-3.  Stisknutím klávesy F5 spusťte aplikaci v režimu ladění.
+3. Stisknutím klávesy F5 spusťte aplikaci v režimu ladění.
 
-4.  Ve spuštěné aplikaci, přejděte **3 části** položka pivotu.
+4. Ve spuštěné aplikaci, přejděte **3 části** položka pivotu.
 
-5.  Přepnout do sady Visual Studio (Alt + Tab nebo F12).
+5. Přepnout do sady Visual Studio (Alt + Tab nebo F12).
 
-6.  V Průzkumníku modelu DOM, zvolte `Find` v pravém horním rohu.
+6. V Průzkumníku modelu DOM, zvolte `Find` v pravém horním rohu.
 
-7.  Typ `ListView`, a potom stiskněte klávesu Enter.
+7. Typ `ListView`, a potom stiskněte klávesu Enter.
 
-8.  V případě potřeby vyberte **Další** tlačítko Najít `DIV` elementu, který představuje `ListView` ovládacího prvku (má tento prvek `data-win-control` hodnotu `WinJS.UI.ListView`).
+8. V případě potřeby vyberte **Další** tlačítko Najít `DIV` elementu, který představuje `ListView` ovládacího prvku (má tento prvek `data-win-control` hodnotu `WinJS.UI.ListView`).
 
      `DIV` Element by měl nyní vybrat v Průzkumníku modelu DOM.
 
@@ -75,16 +75,16 @@ Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "wi
 
      **Události** karta zobrazuje naslouchacích procesů událostí pro libovolný element, který jste vybrali v seznamu hierarchie.
 
-###  <a name="Tips"></a> Tipy pro řešení problémů s naslouchacích procesů událostí
+### <a name="Tips"></a> Tipy pro řešení problémů s naslouchacích procesů událostí
  V některých scénářích aplikace naslouchacích procesů událostí musí být explicitně odebrány [removeEventListener](http://msdn.microsoft.com/library/ie/ff975250\(v=vs.85\).aspx). Použití **události** kartu v Průzkumníku modelu DOM, který chcete otestovat, jestli naslouchacích procesů událostí byly odebrány z modelu DOM prvků za běhu programu. Zde jsou některé tipy pro řešení těchto typů problémů:
 
--   Pro aplikace, které používají model navigace jednostránkové implementované v sadě Visual Studio [šablony projektů](http://msdn.microsoft.com/library/windows/apps/hh758331.aspx), není obvykle nutné odebrat naslouchacích procesů událostí zaregistrované u objektů, jako jsou například prvky modelu DOM, které jsou součástí na stránce. V tomto scénáři prvek modelu DOM a jeho přidružené události naslouchací procesy mají stejnou životnost a mohou být uvolněna.
+- Pro aplikace, které používají model navigace jednostránkové implementované v sadě Visual Studio [šablony projektů](http://msdn.microsoft.com/library/windows/apps/hh758331.aspx), není obvykle nutné odebrat naslouchacích procesů událostí zaregistrované u objektů, jako jsou například prvky modelu DOM, které jsou součástí na stránce. V tomto scénáři prvek modelu DOM a jeho přidružené události naslouchací procesy mají stejnou životnost a mohou být uvolněna.
 
--   Pokud se liší od naslouchací proces související události životního cyklu od prvku modelu DOM nebo objektu, budete muset volat `removeEventListener` metody. Například, pokud použijete `window.onresize` událost, možná budete muset odebrat naslouchací proces událostí, jestliže opustíte na stránce, kde zpracování události.
+- Pokud se liší od naslouchací proces související události životního cyklu od prvku modelu DOM nebo objektu, budete muset volat `removeEventListener` metody. Například, pokud použijete `window.onresize` událost, možná budete muset odebrat naslouchací proces událostí, jestliže opustíte na stránce, kde zpracování události.
 
--   Pokud `removeEventListener` nepodaří odeberte zadaný naslouchací proces by může být získání volána na jinou instanci objektu. Můžete použít [bind – metoda (Function)](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Function/bind) metoda k vyřešení tohoto problému, když přidáte naslouchací proces.
+- Pokud `removeEventListener` nepodaří odeberte zadaný naslouchací proces by může být získání volána na jinou instanci objektu. Můžete použít [bind – metoda (Function)](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Function/bind) metoda k vyřešení tohoto problému, když přidáte naslouchací proces.
 
--   Chcete-li odebrat naslouchací proces událostí, která byla přidána pomocí [bind – metoda (Function)](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Function/bind) nebo pomocí anonymní funkce uložit instance funkci tehdy, když přidejte naslouchací proces. Tady je jeden způsob, jak bezpečně tento model použijte:
+- Chcete-li odebrat naslouchací proces událostí, která byla přidána pomocí [bind – metoda (Function)](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Function/bind) nebo pomocí anonymní funkce uložit instance funkci tehdy, když přidejte naslouchací proces. Tady je jeden způsob, jak bezpečně tento model použijte:
 
     ```javascript
     // You could use the following code within the constructor function of an object, or
@@ -104,9 +104,9 @@ Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "wi
     elem.addEventListener('mouseup', this._handlerFunc.bind(this));
     ```
 
--   Naslouchací proces událostí nelze odebrat pomocí `removeEventListener` Pokud jste přidali pomocí `obj.on<eventname>` atribut, například `window.onresize = handlerFunc`.
+- Naslouchací proces událostí nelze odebrat pomocí `removeEventListener` Pokud jste přidali pomocí `obj.on<eventname>` atribut, například `window.onresize = handlerFunc`.
 
--   Použijte analýzu paměti jazyka JavaScript do [paměti jazyka JavaScript](../profiling/javascript-memory.md) ve vaší aplikaci. Naslouchacích procesů událostí, které musí být explicitně odebrat může zobrazit jako nenavrácení paměti.
+- Použijte analýzu paměti jazyka JavaScript do [paměti jazyka JavaScript](../profiling/javascript-memory.md) ve vaší aplikaci. Naslouchacích procesů událostí, které musí být explicitně odebrat může zobrazit jako nenavrácení paměti.
 
 ## <a name="see-also"></a>Viz také
 

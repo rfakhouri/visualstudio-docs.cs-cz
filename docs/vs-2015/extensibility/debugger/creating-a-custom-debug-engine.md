@@ -12,12 +12,12 @@ ms.assetid: 52794238-6fae-451c-bf1c-99f344c6f173
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: a0617d23b49af182504406417023b0d907cadf27
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 829e484ffe4968cdb89ff04e4e7f145decd07c9c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54759709"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111516"
 ---
 # <a name="creating-a-custom-debug-engine"></a>Vytvoření vlastního ladicího stroje
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,15 +31,15 @@ Ladicí stroj (DE) je komponenta, která umožňuje ladění konkrétní za běh
   
  Vytváří se Zavedenými se skládá z následujících kroků:  
   
-1.  Registrace Zavedenými pomocí sady Visual Studio  
+1. Registrace Zavedenými pomocí sady Visual Studio  
   
-2.  Povolení ladění programu  
+2. Povolení ladění programu  
   
-3.  Ovládací prvek a stav zkušební spuštění  
+3. Ovládací prvek a stav zkušební spuštění  
   
-4.  Odesílání událostí  
+4. Odesílání událostí  
   
-5.  Ukončení a odpojení  
+5. Ukončení a odpojení  
   
 ## <a name="in-this-section"></a>V tomto oddílu  
  [Registrace vlastního ladicího stroje](../../extensibility/debugger/registering-a-custom-debug-engine.md)  

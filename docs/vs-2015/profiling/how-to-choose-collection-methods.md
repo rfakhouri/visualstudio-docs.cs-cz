@@ -13,12 +13,12 @@ caps.latest.revision: 39
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 187a45a925b8124309da44e114ac63e2212bf7c9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 33ff14ce88f2032b998214ed11310a15550321dc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54792873"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088441"
 ---
 # <a name="how-to-choose-collection-methods"></a>Postupy: Výběr metod kolekcí
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ ms.locfileid: "54792873"
   
 #### <a name="to-select-a-collection-method-using-the-performance-wizard"></a>Výběr metody kolekce, pomocí průvodcem výkonu  
   
--   Na první stránce průvodce vyberte jednu z následujících možností:  
+- Na první stránce průvodce vyberte jednu z následujících možností:  
   
 |Možnost|Popis|  
 |------------|-----------------|  
@@ -48,53 +48,53 @@ ms.locfileid: "54792873"
   
 #### <a name="to-select-a-collection-method-using-performance-explorer"></a>Chcete-li vybrat metodu kolekce pomocí Průzkumníku výkonu  
   
-1.  Na **prohlížeč výkonu** nástrojů, klepněte na šipku vedle položky **metoda** rozevíracího seznamu.  
+1. Na **prohlížeč výkonu** nástrojů, klepněte na šipku vedle položky **metoda** rozevíracího seznamu.  
   
-2.  Klikněte na metodu kolekce, který preferujete.  
+2. Klikněte na metodu kolekce, který preferujete.  
   
 ## <a name="performance-session-property-pages"></a>Stránky vlastností relace výkonu  
   
 #### <a name="to-select-the-sampling-or-instrumentation-method-using-performance-session-properties"></a>Chcete-li vybrat vzorkování nebo instrumentace metodu pomocí vlastnosti výkonnostní relace  
   
-1.  V **prohlížeč výkonu**, vyberte relaci výkonu.  
+1. V **prohlížeč výkonu**, vyberte relaci výkonu.  
   
      Název souboru relace výkonu má .psess rozšíření.  
   
-2.  Klikněte pravým tlačítkem na relaci výkonu a pak klikněte na tlačítko **vlastnosti**.  
+2. Klikněte pravým tlačítkem na relaci výkonu a pak klikněte na tlačítko **vlastnosti**.  
   
-3.  V **stránky vlastností**, klikněte na tlačítko **Obecné**.  
+3. V **stránky vlastností**, klikněte na tlačítko **Obecné**.  
   
-4.  Klikněte na metodu kolekce, který preferujete.  
+4. Klikněte na metodu kolekce, který preferujete.  
   
-    -   Informace o možnostech, které jsou k dispozici při shromažďování dat vzorkování, naleznete v tématu [shromažďování statistik výkonu pomocí pomocí odběru vzorků](../profiling/collecting-performance-statistics-by-using-sampling.md)  
+    - Informace o možnostech, které jsou k dispozici při shromažďování dat vzorkování, naleznete v tématu [shromažďování statistik výkonu pomocí pomocí odběru vzorků](../profiling/collecting-performance-statistics-by-using-sampling.md)  
   
-    -   Informace o možnostech, které jsou k dispozici při shromažďování dat vzorkování, naleznete v tématu [shromažďování podrobných dat časování pomocí instrumentace](../profiling/collecting-detailed-timing-data-by-using-instrumentation.md).  
+    - Informace o možnostech, které jsou k dispozici při shromažďování dat vzorkování, naleznete v tématu [shromažďování podrobných dat časování pomocí instrumentace](../profiling/collecting-detailed-timing-data-by-using-instrumentation.md).  
   
 #### <a name="to-select-net-memory-data-collection-by-using-performance-session-properties"></a>Chcete-li vybrat shromažďování dat paměti .NET pomocí vlastnosti výkonnostní relace  
   
-1.  V **prohlížeč výkonu**, vyberte relaci výkonu.  
+1. V **prohlížeč výkonu**, vyberte relaci výkonu.  
   
      Název souboru relace výkonu má .psess rozšíření.  
   
-2.  Klikněte pravým tlačítkem na relaci výkonu a pak klikněte na tlačítko **vlastnosti**.  
+2. Klikněte pravým tlačítkem na relaci výkonu a pak klikněte na tlačítko **vlastnosti**.  
   
-3.  V **stránky vlastností**, klikněte na tlačítko **Obecné**.  
+3. V **stránky vlastností**, klikněte na tlačítko **Obecné**.  
   
-4.  Klikněte na tlačítko **vzorkování** nebo **instrumentace**.  
+4. Klikněte na tlačítko **vzorkování** nebo **instrumentace**.  
   
-5.  Klikněte na tlačítko **.NET shromažďovat informace o přidělení objektu** shromažďovat velikosti a počtu [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] přidělení objektu.  
+5. Klikněte na tlačítko **.NET shromažďovat informace o přidělení objektu** shromažďovat velikosti a počtu [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] přidělení objektu.  
   
-6.  (Volitelné) Klikněte na tlačítko **také shromažďovat informace o životnosti objektů .NET** ke shromažďování dat o generace uvolňování paměti kolekce, ve kterých byl regenerované paměti objektu.  
+6. (Volitelné) Klikněte na tlačítko **také shromažďovat informace o životnosti objektů .NET** ke shromažďování dat o generace uvolňování paměti kolekce, ve kterých byl regenerované paměti objektu.  
   
      Informace o možnostech, které jsou k dispozici při shromažďování dat paměti .NET najdete v tématu [shromažďuje alokaci paměti .NET a Data o životním cyklu](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md).  
   
 #### <a name="to-select-concurrency-data-collection-by-using-performance-session-properties"></a>Chcete-li vybrat shromažďování dat souběžnosti pomocí vlastnosti výkonnostní relace  
   
-1.  V **prohlížeč výkonu**, klikněte pravým tlačítkem na relaci výkonu a pak klikněte na tlačítko **vlastnosti**.  
+1. V **prohlížeč výkonu**, klikněte pravým tlačítkem na relaci výkonu a pak klikněte na tlačítko **vlastnosti**.  
   
-2.  V **stránky vlastností**, klikněte na tlačítko **Obecné**.  
+2. V **stránky vlastností**, klikněte na tlačítko **Obecné**.  
   
-3.  Klikněte na tlačítko **souběžnosti**.  
+3. Klikněte na tlačítko **souběžnosti**.  
   
 ## <a name="see-also"></a>Viz také  
  [Konfigurace výkonnostních relací](../profiling/configuring-performance-sessions.md)   

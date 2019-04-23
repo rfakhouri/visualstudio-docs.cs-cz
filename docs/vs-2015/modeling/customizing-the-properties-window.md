@@ -11,12 +11,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c2a4e9075bc45c052f28ee4a20e34c16651211a9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1c346cc488966448cc1b77b624c80fe602555840
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54782259"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088792"
 ---
 # <a name="customizing-the-properties-window"></a>Přizpůsobení okna Vlastnosti
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,13 +51,13 @@ Vzhled a chování okna vlastnosti můžete přizpůsobit v jazyka specifického
 ### <a name="default-property-forwarding-cases"></a>Výchozí vlastnost předávání případy  
  Když uživatel vybere obrazec nebo konektor nebo element v Průzkumníkovi, následující vlastnosti jsou zobrazeny v okně Vlastnosti:  
   
--   Vlastnosti domény, které jsou definovány ve třídě domény prvku modelu, včetně těch, které jsou definovány v základních tříd. Výjimkou je vlastnosti domény, pro které jste nastavili **je Prohlížitelná** k `False`.  
+- Vlastnosti domény, které jsou definovány ve třídě domény prvku modelu, včetně těch, které jsou definovány v základních tříd. Výjimkou je vlastnosti domény, pro které jste nastavili **je Prohlížitelná** k `False`.  
   
--   Názvy elementů, které jsou propojeny prostřednictvím vztahy, které mít násobnost 0.. 1. Poskytuje pohodlný způsob volitelně zobrazuje propojené prvky, i když jste nedefinovali mapování konektoru pro daný vztah.  
+- Názvy elementů, které jsou propojeny prostřednictvím vztahy, které mít násobnost 0.. 1. Poskytuje pohodlný způsob volitelně zobrazuje propojené prvky, i když jste nedefinovali mapování konektoru pro daný vztah.  
   
--   Vlastnosti domény vztah obsažení, který cílí element. Protože vkládání relace se obvykle explicitně nezobrazují, to umožňuje uživateli zobrazit jejich vlastnosti.  
+- Vlastnosti domény vztah obsažení, který cílí element. Protože vkládání relace se obvykle explicitně nezobrazují, to umožňuje uživateli zobrazit jejich vlastnosti.  
   
--   Vlastnosti domény, které jsou definovány pro vybraný obrazec nebo spojnici.  
+- Vlastnosti domény, které jsou definovány pro vybraný obrazec nebo spojnici.  
   
 ### <a name="adding-property-forwarding"></a>Přidání vlastnosti předávání  
  Chcete-li předat vlastnost, definovat popisovač typu domény. Pokud máte doménového vztahu mezi dvěma doménovými třídami, můžete nastavení vlastnosti domény první třídy k hodnotě vlastnosti domény v druhém doménové třídy popisovač typu domény. Například, pokud máte vztah mezi **knihy** doménové třídy a **Autor** doménovou třídu, můžete použít popisovač typu domény provádět **název** vlastnost Knihy **Autor** se zobrazí v okně Vlastnosti, když uživatel vybere knihy.  
@@ -69,29 +69,29 @@ Vzhled a chování okna vlastnosti můžete přizpůsobit v jazyka specifického
   
 ##### <a name="to-forward-a-property-from-another-element"></a>Přeposílat vlastnost z jiného elementu  
   
-1.  Vytvoření [!INCLUDE[dsl](../includes/dsl-md.md)] řešení, které obsahuje alespoň dvě třídy, které v tomto příkladu se nazývají **knihy** a **Autor**. Měla by existovat relace mezi buď typu **knihy** a **Autor**.  
+1. Vytvoření [!INCLUDE[dsl](../includes/dsl-md.md)] řešení, které obsahuje alespoň dvě třídy, které v tomto příkladu se nazývají **knihy** a **Autor**. Měla by existovat relace mezi buď typu **knihy** a **Autor**.  
   
      Násobnost zdrojové role (roli na **knihy** na straně) musí být 0.. 1 nebo 1..1, tak že každý **knihy** má jeden **Autor**.  
   
-2.  V **Průzkumník DSL**, klikněte pravým tlačítkem na **knihy** doménové třídy a pak klikněte na tlačítko **přidat nové DomainTypeDescriptor**.  
+2. V **Průzkumník DSL**, klikněte pravým tlačítkem na **knihy** doménové třídy a pak klikněte na tlačítko **přidat nové DomainTypeDescriptor**.  
   
      Uzel s názvem **cesty popisovačů vlastnosti vlastní** je zobrazen **popisovači vlastního typu** uzlu.  
   
-3.  Klikněte pravým tlačítkem myši **popisovači vlastního typu** uzlu a pak klikněte na tlačítko **přidat nové PropertyPath**.  
+3. Klikněte pravým tlačítkem myši **popisovači vlastního typu** uzlu a pak klikněte na tlačítko **přidat nové PropertyPath**.  
   
      Nová cesta vlastnosti je zobrazen **cesty popisovačů vlastnosti vlastní** uzlu.  
   
-4.  Vyberte novou vlastnost cestu a **vlastnosti** okno, nastavte **cesta k vlastnosti** cestu prvek odpovídající modelu.  
+4. Vyberte novou vlastnost cestu a **vlastnosti** okno, nastavte **cesta k vlastnosti** cestu prvek odpovídající modelu.  
   
      Kliknutím na šipku dolů napravo od této vlastnosti můžete upravit cestu ve stromovém zobrazení. Další informace o cestách domény, najdete v části [syntaxe cesty domény](../modeling/domain-path-syntax.md). Jakmile ji upravila cesta by měl vypadat podobně jako **BookReferencesAuthor.Author/! Autor**.  
   
-5.  Nastavte **vlastnost** k **název** doménovou vlastnost elementu **Autor**.  
+5. Nastavte **vlastnost** k **název** doménovou vlastnost elementu **Autor**.  
   
-6.  Nastavte **zobrazovaný název** k **vytvářet název**.  
+6. Nastavte **zobrazovaný název** k **vytvářet název**.  
   
-7.  Transformovat všechny šablony, sestavte a spusťte DSL.  
+7. Transformovat všechny šablony, sestavte a spusťte DSL.  
   
-8.  V diagramu modelu vytvořit knize, autor a propojte je pomocí vztahu odkazu. Vybrat element knihy a v okně Vlastnosti byste měli vidět jméno autora vlastnostem knihy. Změna názvu propojené Autor nebo propojit různé autor knihy a podívejte se, že jméno autora knihu mění.  
+8. V diagramu modelu vytvořit knize, autor a propojte je pomocí vztahu odkazu. Vybrat element knihy a v okně Vlastnosti byste měli vidět jméno autora vlastnostem knihy. Změna názvu propojené Autor nebo propojit různé autor knihy a podívejte se, že jméno autora knihu mění.  
   
 ## <a name="custom-property-editors"></a>Editory vlastní vlastnost  
  V okně Vlastnosti poskytuje vhodné výchozí nastavení prostředí pro typ každá vlastnost domain pro úpravy. Například pro výčtový typ, uživateli se zobrazí rozevírací seznam a pro číselné hodnoty, může uživatel zadat číslic. To platí jenom pro předdefinované typy. Při zadání externí typ, uživatel bude moct zobrazit hodnoty vlastnosti, ale nikoli upravovat.  
@@ -116,14 +116,14 @@ Vzhled a chování okna vlastnosti můžete přizpůsobit v jazyka specifického
   
 2. Přidat typ, který má **typy domén** seznamu, pokud jste tak již neučinili.  
   
-   1.  Otevřete DslDefinition.dsl a v **Průzkumník DSL**, klikněte pravým tlačítkem na kořenový uzel a potom klikněte na tlačítko **přidat novou externí typ**.  
+   1. Otevřete DslDefinition.dsl a v **Průzkumník DSL**, klikněte pravým tlačítkem na kořenový uzel a potom klikněte na tlačítko **přidat novou externí typ**.  
   
         Nový záznam se zobrazí v části **typy domén** uzlu.  
   
        > [!WARNING]
        >  Položka nabídky není na uzlu root DSL **typy domén** uzlu.  
   
-   2.  V okně Vlastnosti nastavte název a obor názvů nového typu.  
+   2. V okně Vlastnosti nastavte název a obor názvů nového typu.  
   
 3. Doménová vlastnost, která přidejte do doménové třídy obvyklým způsobem.  
   
@@ -149,9 +149,9 @@ Vzhled a chování okna vlastnosti můžete přizpůsobit v jazyka specifického
   
 ##### <a name="to-define-a-file-name-domain-property"></a>Chcete-li definovat vlastnost souboru název domény  
   
-1.  Doménová vlastnost, která přidejte do doménové třídy v definici DSL.  
+1. Doménová vlastnost, která přidejte do doménové třídy v definici DSL.  
   
-2.  Vyberte novou vlastnost. V **vlastní atribut** pole v okně Vlastnosti, zadejte následující atribut. Chcete-li zadat Tento atribut, klikněte na tlačítko se třemi tečkami **[...]**  a potom zadejte název atributu a parametry samostatně:  
+2. Vyberte novou vlastnost. V **vlastní atribut** pole v okně Vlastnosti, zadejte následující atribut. Chcete-li zadat Tento atribut, klikněte na tlačítko se třemi tečkami **[...]**  a potom zadejte název atributu a parametry samostatně:  
   
     ```  
     [System.ComponentModel.Editor (  
@@ -160,15 +160,15 @@ Vzhled a chování okna vlastnosti můžete přizpůsobit v jazyka specifického
   
     ```  
   
-3.  Ponechte výchozí nastavení z typu vlastnosti domény **řetězec**.  
+3. Ponechte výchozí nastavení z typu vlastnosti domény **řetězec**.  
   
-4.  Otestovat editoru, ověřte, že uživatelé mohou otevřít editor název souboru pro úpravu doménové vlastnosti.  
+4. Otestovat editoru, ověřte, že uživatelé mohou otevřít editor název souboru pro úpravu doménové vlastnosti.  
   
-    1.  Stiskněte kombinaci kláves CTRL + F5 nebo F5. Ladění řešení otevřete soubor testu. Vytvoření prvku doménové třídy a vyberte ji.  
+    1. Stiskněte kombinaci kláves CTRL + F5 nebo F5. Ladění řešení otevřete soubor testu. Vytvoření prvku doménové třídy a vyberte ji.  
   
-    2.  V okně Vlastnosti vyberte doménové vlastnosti. Hodnota pole zobrazí tři tečky **[...]** .  
+    2. V okně Vlastnosti vyberte doménové vlastnosti. Hodnota pole zobrazí tři tečky **[...]** .  
   
-    3.  Klikněte na tlačítko se třemi tečkami. Zobrazí se dialogové okno. Vyberte soubor a zavřete dialogové okno. Cesta k souboru je nyní hodnoty vlastnosti domény.  
+    3. Klikněte na tlačítko se třemi tečkami. Zobrazí se dialogové okno. Vyberte soubor a zavřete dialogové okno. Cesta k souboru je nyní hodnoty vlastnosti domény.  
   
 ### <a name="defining-your-own-property-editor"></a>Definování vlastní editor vlastností  
  Můžete definovat vlastní editor. Provedli byste to umožňuje uživateli upravit typ, který jste definovali nebo upravit standardní typ zvláštním způsobem. Například můžete umožnit uživatelům vstupní řetězec, který představuje vzorec.  

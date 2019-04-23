@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f97c86bd274d8fe6a75e8731165c5189e27cf08f
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 77fb772588b41460ddd68ae0a20b4593d1fda628
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59664479"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091028"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>Jak se definuje jazyk specifický pro doménu
 Do definice jazyka specifického pro doménu (DSL), vytvoříte ze šablony řešení sady Visual Studio. Klíčovou součástí řešení je diagramem definice DSL, která je uložena v DslDefinition.dsl. Definice DSL definuje třídy a tvary DSL. Po úpravě a přidáte k těmto prvkům můžete přidat kód programu k přizpůsobení DSL podrobněji.
@@ -58,15 +58,15 @@ Pokud chcete vytvořit nový jazyk specifický pro doménu, vytvořte nové ře�
 
     Klikněte na každý vzorek pro další informace.
 
-   -   Vyberte **tok úkolů** vytvoření DSL, která má plaveckých drah. Plaveckých drah jsou vertikální nebo horizontální oddíly diagramu.
+   - Vyberte **tok úkolů** vytvoření DSL, která má plaveckých drah. Plaveckých drah jsou vertikální nebo horizontální oddíly diagramu.
 
-   -   Vyberte **komponenty modely** vytvoření DSL, která má porty. Porty jsou malé obrazce na hraničních zařízeních větších obrazce.
+   - Vyberte **komponenty modely** vytvoření DSL, která má porty. Porty jsou malé obrazce na hraničních zařízeních větších obrazce.
 
-   -   Vyberte **diagramů tříd** k definování DSL, která má obrazce oddílu. Obrazce oddílu obsahují seznamy položek.
+   - Vyberte **diagramů tříd** k definování DSL, která má obrazce oddílu. Obrazce oddílu obsahují seznamy položek.
 
-   -   Vyberte **minimální jazykový** v ostatních případech, nebo pokud si nejste jisti.
+   - Vyberte **minimální jazykový** v ostatních případech, nebo pokud si nejste jisti.
 
-   -   Vyberte **minimální návrháře WinForm** nebo **minimální Návrhář WPF** vytvoření DSL, který se zobrazí na ploše Windows Forms a WPF. Budete muset psát kód, který definuje editoru. Další informace naleznete v následujících tématech:
+   - Vyberte **minimální návrháře WinForm** nebo **minimální Návrhář WPF** vytvoření DSL, který se zobrazí na ploše Windows Forms a WPF. Budete muset psát kód, který definuje editoru. Další informace naleznete v následujících tématech:
 
         [Vytvoření jazyka specifického pro doménu založeného na modelu Windows Forms](../modeling/creating-a-windows-forms-based-domain-specific-language.md)
 
@@ -74,9 +74,9 @@ Pokud chcete vytvořit nový jazyk specifický pro doménu, vytvořte nové ře�
 
 3. Zadejte příponu názvu souboru vašeho DSL v na odpovídající stránku průvodce. Toto je rozšíření, které budou používat soubory, které obsahují instance tohoto kódu DSL.
 
-   -   Zvolte příponu názvu souboru, která nejsou spojena s libovolnou aplikací v počítači nebo v libovolném počítači, ve kterém chcete nainstalovat DSL. Například **docx** a **htm** bude nepřijatelná souboru přípony názvu.
+   - Zvolte příponu názvu souboru, která nejsou spojena s libovolnou aplikací v počítači nebo v libovolném počítači, ve kterém chcete nainstalovat DSL. Například **docx** a **htm** bude nepřijatelná souboru přípony názvu.
 
-   -   Průvodce zobrazí upozornění, pokud se používá rozšíření, které jste zadali jako DSL. Zvažte možnost použít jinou příponu. Můžou také resetovat Visual Studio SDK experimentální instanci vymazání starých experimentální návrháře. Klikněte na tlačítko **Start**, klikněte na tlačítko **všechny programy**, **Microsoft Visual Studio 2010 SDK**, **nástroje**a potom **resetování Microsoftu Instance sady Visual Studio 2010 experimentální**.
+   - Průvodce zobrazí upozornění, pokud se používá rozšíření, které jste zadali jako DSL. Zvažte možnost použít jinou příponu. Můžou také resetovat Visual Studio SDK experimentální instanci vymazání starých experimentální návrháře. Klikněte na tlačítko **Start**, klikněte na tlačítko **všechny programy**, **Microsoft Visual Studio 2010 SDK**, **nástroje**a potom **resetování Microsoftu Instance sady Visual Studio 2010 experimentální**.
 
 4. Můžete upravit nastavení na jiných stránkách, nebo ponechte výchozí hodnoty.
 
@@ -212,23 +212,23 @@ Pokud chcete vytvořit nový jazyk specifický pro doménu, vytvořte nové ře�
 
 ##### <a name="to-test-the-new-domain-classes"></a>K testování nových tříd domény
 
-1.  **Klikněte na možnost Transformovat všechny šablony** na panelu nástrojů Průzkumníku řešení pro generování kódu návrháře DSL. Tento krok můžete automatizovat. Další informace najdete v tématu [jak automatizovat Transformovat všechny šablony](/previous-versions/visualstudio/visual-studio-2012/ff521399\(v\=vs.110\)).
+1. **Klikněte na možnost Transformovat všechny šablony** na panelu nástrojů Průzkumníku řešení pro generování kódu návrháře DSL. Tento krok můžete automatizovat. Další informace najdete v tématu [jak automatizovat Transformovat všechny šablony](/previous-versions/visualstudio/visual-studio-2012/ff521399\(v\=vs.110\)).
 
-2.  **Sestavte a spusťte DSL.** Stisknutím klávesy F5 nebo CTRL + F5 ke spuštění nové instance sady Visual Studio v experimentálním režimu. V experimentální instanci sady Visual Studio otevřete nebo vytvořte soubor, který má příponu názvu souboru tohoto kódu DSL.
+2. **Sestavte a spusťte DSL.** Stisknutím klávesy F5 nebo CTRL + F5 ke spuštění nové instance sady Visual Studio v experimentálním režimu. V experimentální instanci sady Visual Studio otevřete nebo vytvořte soubor, který má příponu názvu souboru tohoto kódu DSL.
 
-3.  **Otevřete Průzkumníka.** Na straně diagramu je okno Průzkumníka jazyk, který se obvykle nazývá *YourLanguage* Explorer. Pokud se toto okno nezobrazí, může být na kartě pod Průzkumníku řešení. Pokud nemůžete najít to, na **zobrazení** nabídky, přejděte k **ostatní Windows**a potom klikněte na tlačítko *YourLanguage* **Explorer**.
+3. **Otevřete Průzkumníka.** Na straně diagramu je okno Průzkumníka jazyk, který se obvykle nazývá *YourLanguage* Explorer. Pokud se toto okno nezobrazí, může být na kartě pod Průzkumníku řešení. Pokud nemůžete najít to, na **zobrazení** nabídky, přejděte k **ostatní Windows**a potom klikněte na tlačítko *YourLanguage* **Explorer**.
 
      Aplikace explorer představuje stromové zobrazení modelu.
 
-4.  **Vytvořte nové elementy.** Klikněte pravým tlačítkem na kořenový uzel v horní části a potom klikněte na tlačítko **přidat nový**_YourClass_.
+4. **Vytvořte nové elementy.** Klikněte pravým tlačítkem na kořenový uzel v horní části a potom klikněte na tlačítko **přidat nový**_YourClass_.
 
      Ve svém jazyce Průzkumníka se zobrazí novou instanci třídy.
 
-5.  Ověřte, že každá instance má jiný název při vytváření nové instance. K tomu dojde pouze v případě, že jste nastavili **je název elementu** příznak doménové vlastnosti.
+5. Ověřte, že každá instance má jiný název při vytváření nové instance. K tomu dojde pouze v případě, že jste nastavili **je název elementu** příznak doménové vlastnosti.
 
-6.  **Podívejte se na vlastnosti domény. S instancí třídy vybrali** kontrolovat v okně Vlastnosti. Měl by se zobrazit vlastnosti domény, které jste definovali v této doménové třídě.
+6. **Podívejte se na vlastnosti domény. S instancí třídy vybrali** kontrolovat v okně Vlastnosti. Měl by se zobrazit vlastnosti domény, které jste definovali v této doménové třídě.
 
-7.  **Soubor uložte, zavřete ho a znovu ho otevřete**. Po rozbalení uzlů, by se zobrazovat v Průzkumníkovi, všechny instance, kterou jste vytvořili.
+7. **Soubor uložte, zavřete ho a znovu ho otevřete**. Po rozbalení uzlů, by se zobrazovat v Průzkumníkovi, všechny instance, kterou jste vytvořili.
 
 ## <a name="shapes"></a> Definování obrazců v diagramu
  Třídy prvků, které se zobrazí v diagramu můžete definovat jako obdélníky, symbol tří teček nebo ikony.
@@ -237,9 +237,9 @@ Pokud chcete vytvořit nový jazyk specifický pro doménu, vytvořte nové ře�
 
 1. **Definování a otestovat doménovou třídu, jak je popsáno v**[definování doménovými třídami](#classes) **.**
 
-   -   Kořenová třída by měla být nadřazené třídu. To znamená by měl být vztah obsažení mezi kořenové třídy a nové domény.
+   - Kořenová třída by měla být nadřazené třídu. To znamená by měl být vztah obsažení mezi kořenové třídy a nové domény.
 
-   -   Pokud diagramu plaveckých drah, může být nadřazené doménové třídy, který je namapovaný na plaveckou dráhu. Než budete pokračovat tímto postupem, naleznete v tématu [definice DSL, která má plaveckých drah](#swimlanes).
+   - Pokud diagramu plaveckých drah, může být nadřazené doménové třídy, který je namapovaný na plaveckou dráhu. Než budete pokračovat tímto postupem, naleznete v tématu [definice DSL, která má plaveckých drah](#swimlanes).
 
 2. **Přidejte třídu tvar** představující prvky v diagramu modelu. Přetáhněte jednu z následujících nástrojů do diagramu definici DSL:
 
@@ -253,15 +253,15 @@ Pokud chcete vytvořit nový jazyk specifický pro doménu, vytvořte nové ře�
 
 3. **Definujte image, pokud jste vytvořili obrazce obrázku**.
 
-   1.  Vytvořte soubor bitové kopie všech velikostí. BMP, JPEG, ve formátu GIF a EMF jsou podporovány.
+   1. Vytvořte soubor bitové kopie všech velikostí. BMP, JPEG, ve formátu GIF a EMF jsou podporovány.
 
-   2.  V Průzkumníku řešení přidejte soubor do řešení ve složce Dsl\Resources.
+   2. V Průzkumníku řešení přidejte soubor do řešení ve složce Dsl\Resources.
 
-   3.  Vraťte se do diagramem definice DSL a vyberte novou třídu obrazce obrázku.
+   3. Vraťte se do diagramem definice DSL a vyberte novou třídu obrazce obrázku.
 
-   4.  V okně Vlastnosti klikněte na tlačítko **Image** vlastnost.
+   4. V okně Vlastnosti klikněte na tlačítko **Image** vlastnost.
 
-   5.  V **vybrat obrázek** dialogu klikněte do rozevírací nabídky v části **název_souboru**a vyberte bitovou kopii.
+   5. V **vybrat obrázek** dialogu klikněte do rozevírací nabídky v části **název_souboru**a vyberte bitovou kopii.
 
 4. **Přidáte dekoratéry textu na tvar, chcete-li zobrazit vlastnosti domény.**
 
@@ -289,18 +289,18 @@ Pokud chcete vytvořit nový jazyk specifický pro doménu, vytvořte nové ře�
 
 7. **Nastavit položku sady nástrojů pro vytváření elementů doménové třídy.**
 
-   1.  V **Průzkumník DSL**, rozbalte **Editor** uzel a jeho dílčí uzly.
+   1. V **Průzkumník DSL**, rozbalte **Editor** uzel a jeho dílčí uzly.
 
-   2.  Klikněte pravým tlačítkem na uzel v rámci **karty panelu nástrojů** , který má stejný název jako vaše DSL, například MusicLibrary. Klikněte na tlačítko **přidat nástroj pro Element**.
+   2. Klikněte pravým tlačítkem na uzel v rámci **karty panelu nástrojů** , který má stejný název jako vaše DSL, například MusicLibrary. Klikněte na tlačítko **přidat nástroj pro Element**.
 
        > [!NOTE]
        >  Pokud kliknete pravým tlačítkem **nástroje** uzlu, neuvidíte **přidat nástroj pro Element**. Místo toho klikněte na uzel nad ním.
 
-   3.  V okně Vlastnosti nový nástroj prvek vybraný, nastavte **třídy** do doménové třídy, které jste nedávno přidali.
+   3. V okně Vlastnosti nový nástroj prvek vybraný, nastavte **třídy** do doménové třídy, které jste nedávno přidali.
 
-   4.  Nastavte **titulek** a **popisek**.
+   4. Nastavte **titulek** a **popisek**.
 
-   5.  Nastavte **panelu nástrojů ikonu** na ikonu, která se zobrazí na panelu nástrojů. Můžete ho nastavit na novou ikonu nebo ikonu již používá pro jiný nástroj.
+   5. Nastavte **panelu nástrojů ikonu** na ikonu, která se zobrazí na panelu nástrojů. Můžete ho nastavit na novou ikonu nebo ikonu již používá pro jiný nástroj.
 
         Chcete-li vytvořit novou ikonu, otevřete Dsl\Resources v **Průzkumníka řešení**. Zkopírujte a vložte jednu existující soubory BMP nástroj elementu. Přejmenujte vložené kopie a potom dvakrát klikněte na Upravit.
 
@@ -320,9 +320,9 @@ Pokud chcete vytvořit nový jazyk specifický pro doménu, vytvořte nové ře�
 
 5. **Ověřte, že se zobrazí každý dekoratér text,** a že:
 
-   1.  Můžete upravit, pokud jste nastavili **je jen pro čtení uživatelského rozhraní** příznak doménové vlastnosti.
+   1. Můžete upravit, pokud jste nastavili **je jen pro čtení uživatelského rozhraní** příznak doménové vlastnosti.
 
-   2.  Při úpravě vlastností v okně Vlastnosti nebo v dekoratéru ostatní zobrazení se aktualizuje.
+   2. Při úpravě vlastností v okně Vlastnosti nebo v dekoratéru ostatní zobrazení se aktualizuje.
 
    Po otestování nejprve tvaru, můžete chtít upravit některé její vlastnosti a přidat některé pokročilejší funkce. Další informace najdete v tématu [přizpůsobení a rozšíření jazyka specifického pro doménu](../modeling/customizing-and-extending-a-domain-specific-language.md).
 
@@ -374,11 +374,11 @@ Pokud chcete vytvořit nový jazyk specifický pro doménu, vytvořte nové ře�
 
  Když je vybraný nový nástroj, v okně Vlastnosti:
 
--   Nastavte **titulek** a **popisek**.
+- Nastavte **titulek** a **popisek**.
 
--   Klikněte na tlačítko **Tvůrce připojení** a vyberte příslušný tvůrce pro novou relaci.
+- Klikněte na tlačítko **Tvůrce připojení** a vyberte příslušný tvůrce pro novou relaci.
 
--   Nastavte **panelu nástrojů ikonu** na ikonu, která se má zobrazit na panelu nástrojů. Můžete ho nastavit na novou ikonu nebo ikonu již používá pro jiný nástroj.
+- Nastavte **panelu nástrojů ikonu** na ikonu, která se má zobrazit na panelu nástrojů. Můžete ho nastavit na novou ikonu nebo ikonu již používá pro jiný nástroj.
 
      Chcete-li vytvořit novou ikonu, otevřete Dsl\Resources v **Průzkumníka řešení**. Zkopírujte a vložte jednu existující soubory BMP nástroj elementu. Přejmenujte vložené kopie a potom dvakrát klikněte na Upravit.
 
@@ -402,9 +402,9 @@ Pokud chcete vytvořit nový jazyk specifický pro doménu, vytvořte nové ře�
 
 8. **Ověřte, že se zobrazí každý dekoratér text,** a že:
 
-   1.  Můžete upravit, pokud jste nastavili **je jen pro čtení uživatelského rozhraní** příznak doménové vlastnosti.
+   1. Můžete upravit, pokud jste nastavili **je jen pro čtení uživatelského rozhraní** příznak doménové vlastnosti.
 
-   2.  Při úpravě vlastností v okně Vlastnosti nebo v dekoratéru ostatní zobrazení se aktualizuje.
+   2. Při úpravě vlastností v okně Vlastnosti nebo v dekoratéru ostatní zobrazení se aktualizuje.
 
    Po otestování nejprve konektor, můžete chtít upravit některé její vlastnosti a přidat některé pokročilejší funkce. Další informace najdete v tématu [přizpůsobení a rozšíření jazyka specifického pro doménu](../modeling/customizing-and-extending-a-domain-specific-language.md).
 
@@ -421,13 +421,13 @@ Pokud chcete vytvořit nový jazyk specifický pro doménu, vytvořte nové ře�
 
 #### <a name="to-define-a-compartment-shape"></a>Chcete-li definovat obrazce oddílu
 
-1.  **Vytvoření doménové třídy kontejneru**. Klikněte na tlačítko **vztah obsažení** nástroj, klikněte na tlačítko kořenová třída modelu a pak klikněte na prázdnou část diagramem definice DSL. Tím se vytvoří doménová třída s názvem alba příklad obrázku.
+1. **Vytvoření doménové třídy kontejneru**. Klikněte na tlačítko **vztah obsažení** nástroj, klikněte na tlačítko kořenová třída modelu a pak klikněte na prázdnou část diagramem definice DSL. Tím se vytvoří doménová třída s názvem alba příklad obrázku.
 
      Namísto vložení ve třídě kořenové, případně můžete vložit kontejneru ve třídě domény, který je namapovaný na plaveckou dráhou.
 
      Přidejte do třídy doménová vlastnost, jako je například název a nastavte jeho **je název elementu** příznak v okně Vlastnosti.
 
-2.  **Vytvoření seznamu položek doménová třída**. Klikněte na tlačítko **vztah obsažení** nástroj, klikněte kontejner – třída (alba) a potom klikněte na prázdnou část diagramu. Tím se vytvoří doménová třída s názvem skladby příklad obrázku.
+2. **Vytvoření seznamu položek doménová třída**. Klikněte na tlačítko **vztah obsažení** nástroj, klikněte kontejner – třída (alba) a potom klikněte na prázdnou část diagramu. Tím se vytvoří doménová třída s názvem skladby příklad obrázku.
 
      Přidejte doménová vlastnost, jako je název třídy a nastavte jeho **je název elementu** příznak.
 
@@ -435,25 +435,25 @@ Pokud chcete vytvořit nový jazyk specifický pro doménu, vytvořte nové ře�
 
      Přidáte jiné třídy domény pro každý seznam, který chcete zobrazit seznam položek.
 
-3.  **Kombinovat několik typů položek v seznamu**, vytváření tříd, které dědí z třídy seznamu. Vytvořte abstraktní třídu seznam tak, že nastavíte její **modifikátor dědičnosti**.
+3. **Kombinovat několik typů položek v seznamu**, vytváření tříd, které dědí z třídy seznamu. Vytvořte abstraktní třídu seznam tak, že nastavíte její **modifikátor dědičnosti**.
 
      Například pokud chcete být řada seřazena podle autora místo interpreta klasického Hudba, můžete vytvořit dvě podtřídy skladby, ClassicalSong a NonClassicalSong.
 
-4.  **Vytvoření tvaru prostoru**. Přetáhněte z **obrazec oddílu** nástroj na diagramem definice DSL.
+4. **Vytvoření tvaru prostoru**. Přetáhněte z **obrazec oddílu** nástroj na diagramem definice DSL.
 
      Přidejte text dekoratér a nastavte její název.
 
      Přidejte oddíl a nastavte její název.
 
-5.  Aby mohl uživatel skrytí oddílů seznamu, klikněte pravým tlačítkem na třídu obrazec oddílu, přejděte na **přidat**a potom klikněte na tlačítko **Dekoratér rozbalení/sbalení**. V okně Vlastnosti nastavte pozici dekoratéru.
+5. Aby mohl uživatel skrytí oddílů seznamu, klikněte pravým tlačítkem na třídu obrazec oddílu, přejděte na **přidat**a potom klikněte na tlačítko **Dekoratér rozbalení/sbalení**. V okně Vlastnosti nastavte pozici dekoratéru.
 
-6.  Klikněte na tlačítko **mapa elementu diagramu** nástroj, klikněte na tlačítko doménové třídy kontejneru a klikněte na obrazec oddílu.
+6. Klikněte na tlačítko **mapa elementu diagramu** nástroj, klikněte na tlačítko doménové třídy kontejneru a klikněte na obrazec oddílu.
 
-7.  Vyberte odkaz Mapa elementu diagramu mezi doménové třídy a tvar. V **podrobnosti DSL** okno:
+7. Vyberte odkaz Mapa elementu diagramu mezi doménové třídy a tvar. V **podrobnosti DSL** okno:
 
-    1.  Klikněte na tlačítko **Dekoratéry** kartu. Klikněte na název dekoratéru a pak vyberte příslušnou položku v rámci **vlastnost Display, vlastnost**. Ujistěte se, že se zobrazí zaškrtávací políčko vedle názvu dekoratér.
+    1. Klikněte na tlačítko **Dekoratéry** kartu. Klikněte na název dekoratéru a pak vyberte příslušnou položku v rámci **vlastnost Display, vlastnost**. Ujistěte se, že se zobrazí zaškrtávací políčko vedle názvu dekoratér.
 
-    2.  Klikněte na tlačítko **mapy oddílů** kartu.
+    2. Klikněte na tlačítko **mapy oddílů** kartu.
 
          Klikněte na název oddílu.
 
@@ -466,20 +466,20 @@ Pokud chcete vytvořit nový jazyk specifický pro doménu, vytvořte nové ře�
 
 #### <a name="to-define-a-tool-for-creating-the-shape"></a>Chcete-li definovat nástroj pro vytváření tvar
 
-1.  **Nastavit položku sady nástrojů pro vytváření elementů doménové třídy.**
+1. **Nastavit položku sady nástrojů pro vytváření elementů doménové třídy.**
 
-2.  V **Průzkumník DSL**, rozbalte **Editor** uzel a jeho dílčí uzly.
+2. V **Průzkumník DSL**, rozbalte **Editor** uzel a jeho dílčí uzly.
 
-3.  Klikněte pravým tlačítkem na uzel v rámci **karty panelu nástrojů** , který má stejný název jako vaše DSL, například MusicLibrary. Klikněte na tlačítko **přidat nástroj pro Element**.
+3. Klikněte pravým tlačítkem na uzel v rámci **karty panelu nástrojů** , který má stejný název jako vaše DSL, například MusicLibrary. Klikněte na tlačítko **přidat nástroj pro Element**.
 
     > [!NOTE]
     >  Pokud kliknete pravým tlačítkem **nástroje** uzlu, neuvidíte **přidat nástroj pro Element**. Místo toho klikněte na uzel nad ním.
 
-4.  V okně Vlastnosti nový nástroj prvek vybraný, nastavte **třídy** do doménové třídy, které jste nedávno přidali.
+4. V okně Vlastnosti nový nástroj prvek vybraný, nastavte **třídy** do doménové třídy, které jste nedávno přidali.
 
-5.  Nastavte **titulek** a **popisek**.
+5. Nastavte **titulek** a **popisek**.
 
-6.  Nastavte **panelu nástrojů ikonu** na ikonu, která se zobrazí na panelu nástrojů. Můžete ho nastavit na novou ikonu nebo ikonu již používá pro jiný nástroj.
+6. Nastavte **panelu nástrojů ikonu** na ikonu, která se zobrazí na panelu nástrojů. Můžete ho nastavit na novou ikonu nebo ikonu již používá pro jiný nástroj.
 
      Chcete-li vytvořit novou ikonu, otevřete Dsl\Resources v **Průzkumníka řešení**. Zkopírujte a vložte jednu z existujících nástrojů elementu. Soubory BMP. Přejmenujte vložené kopie a potom dvakrát klikněte na Upravit.
 
@@ -522,19 +522,19 @@ Pokud chcete vytvořit nový jazyk specifický pro doménu, vytvořte nové ře�
 
 ##### <a name="to-display-a-reference-link-in-a-compartment"></a>Chcete-li zobrazit odkaz v oddíl
 
-1.  **Přidat oddíl obrazce oddílu**. V definici DSL diagramu, klikněte pravým tlačítkem na třídu obrazec oddílu, přejděte na **přidat**a potom klikněte na tlačítko **oddílu**.
+1. **Přidat oddíl obrazce oddílu**. V definici DSL diagramu, klikněte pravým tlačítkem na třídu obrazec oddílu, přejděte na **přidat**a potom klikněte na tlačítko **oddílu**.
 
-2.  Nastavte **cestu ke kolekci elementů zobrazené** přejít na odkaz, namísto jeho cílového prvku. Klikněte na rozevírací nabídku a vyberte vztah odkazu místo jeho cílové pomocí ve stromovém zobrazení. V tomto příkladu je relace **ArtistAppearedOnAlbums**.
+2. Nastavte **cestu ke kolekci elementů zobrazené** přejít na odkaz, namísto jeho cílového prvku. Klikněte na rozevírací nabídku a vyberte vztah odkazu místo jeho cílové pomocí ve stromovém zobrazení. V tomto příkladu je relace **ArtistAppearedOnAlbums**.
 
-3.  Nastavte **cesta k vlastnosti zobrazení** přejít z odkazu na target element. V tomto příkladu je to **interpreta**.
+3. Nastavte **cesta k vlastnosti zobrazení** přejít z odkazu na target element. V tomto příkladu je to **interpreta**.
 
-4.  Nastavte **vlastnost Display, vlastnost** příslušné vlastnosti elementu target, například **název**.
+4. Nastavte **vlastnost Display, vlastnost** příslušné vlastnosti elementu target, například **název**.
 
-5.  **Transformovat všechny šablony**, sestavit a spustit DSL a otevřete model testů.
+5. **Transformovat všechny šablony**, sestavit a spustit DSL a otevřete model testů.
 
-6.  V diagramu modelu vytvořit příslušné třídy tvar, nastavit jejich názvy a vytvořit propojení mezi nimi. V obrazec oddílu by se zobrazit názvy propojené prvky.
+6. V diagramu modelu vytvořit příslušné třídy tvar, nastavit jejich názvy a vytvořit propojení mezi nimi. V obrazec oddílu by se zobrazit názvy propojené prvky.
 
-7.  Vyberte odkaz nebo položka v obrazce oddílu. Odkaz a položka by měla zmizet.
+7. Vyberte odkaz nebo položka v obrazce oddílu. Odkaz a položka by měla zmizet.
 
 ## <a name="ports"></a> Definování porty na hranici jiný tvar
  Port je tvar, který se nachází na hraniční části jiného obrazce.
@@ -591,11 +591,11 @@ Pokud chcete vytvořit nový jazyk specifický pro doménu, vytvořte nové ře�
 
  Rozšíření definice DSL dvěma způsoby:
 
-1.  Vylaďte DSL pomocí další funkce definici DSL. Například můžete provést jeden konektor nástroj, který můžete vytvořit několik typů konektor a můžete určit pravidla, které odstraníte jeden element dojde také k odstranění souvisejících prvků. Tyto postupy jsou většinou dosaženo pomocí nastavení hodnoty v definici DSL a některé vyžadují pár řádků kódu programu.
+1. Vylaďte DSL pomocí další funkce definici DSL. Například můžete provést jeden konektor nástroj, který můžete vytvořit několik typů konektor a můžete určit pravidla, které odstraníte jeden element dojde také k odstranění souvisejících prvků. Tyto postupy jsou většinou dosaženo pomocí nastavení hodnoty v definici DSL a některé vyžadují pár řádků kódu programu.
 
      Další informace najdete v tématu [přizpůsobení a rozšíření jazyka specifického pro doménu](../modeling/customizing-and-extending-a-domain-specific-language.md).
 
-2.  Rozšíření nástrojů pro modelování pomocí kódu programu k dosažení pokročilejší účinky. Například můžete vytvořit příkazy nabídek, které můžete změnit model a vytvoříte nástroje, které se integrují nejmíň dva DSL. Vmsdk následující položky je navržená speciálně pro usnadnění integrace vašich rozšíření s kódem, který je generován z definice DSL.  Další informace najdete v tématu [psaní kódu pro úpravu jazyka specifického pro doménu](../modeling/writing-code-to-customise-a-domain-specific-language.md).
+2. Rozšíření nástrojů pro modelování pomocí kódu programu k dosažení pokročilejší účinky. Například můžete vytvořit příkazy nabídek, které můžete změnit model a vytvoříte nástroje, které se integrují nejmíň dva DSL. Vmsdk následující položky je navržená speciálně pro usnadnění integrace vašich rozšíření s kódem, který je generován z definice DSL.  Další informace najdete v tématu [psaní kódu pro úpravu jazyka specifického pro doménu](../modeling/writing-code-to-customise-a-domain-specific-language.md).
 
 ### <a name="changing-the-dsl-definition"></a>Změna definice DSL
  Při vytváření libovolnou položku v definici DSL mnoho výchozí hodnoty jsou nastaveny automaticky. Po nastavení, můžete je změnit. To zjednodušuje vývoj DSL, zároveň umožní výkonné úpravy.

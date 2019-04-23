@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c9f6a27ea1f8d6c50b4b9b8eba07186f34eb143b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2153091b2b2abae05bf6f6c7856d2fa6d43f8967
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616635"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109020"
 ---
 # <a name="how-to-programmatically-list-all-worksheets-in-a-workbook"></a>Postupy: Vytváření seznamů všech listů v sešitu
   <xref:Microsoft.Office.Interop.Excel.Workbook> Poskytuje třídy <xref:Microsoft.Office.Interop.Excel.Worksheets> objektu. Tento objekt obsahuje kolekci všech <xref:Microsoft.Office.Interop.Excel.Worksheet> objektů v sešitu.
@@ -27,14 +27,14 @@ ms.locfileid: "56616635"
 
 ## <a name="to-list-all-existing-worksheets-in-a-workbook-in-a-document-level-customization"></a>K vypsání všech stávajících listů v sešitu v přizpůsobení na úrovni dokumentu
 
-1.  Iterovat přes <xref:Microsoft.Office.Interop.Excel.Worksheets> kolekce a odešlete název každého listu na posun buňky od <xref:Microsoft.Office.Tools.Excel.NamedRange> ovládacího prvku.
+1. Iterovat přes <xref:Microsoft.Office.Interop.Excel.Worksheets> kolekce a odešlete název každého listu na posun buňky od <xref:Microsoft.Office.Tools.Excel.NamedRange> ovládacího prvku.
 
      [!code-csharp[Trin_VstcoreExcelAutomation#21](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#21)]
      [!code-vb[Trin_VstcoreExcelAutomation#21](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#21)]
 
 ## <a name="to-list-all-existing-worksheets-in-a-workbook-in-a-vsto-add-in"></a>K vypsání všech stávajících listů v sešitu v doplňku VSTO
 
-1.  Iterovat přes <xref:Microsoft.Office.Interop.Excel.Worksheets> kolekce a odešlete název každého listu na posun buňky od <xref:Microsoft.Office.Interop.Excel.Range> objektu.
+1. Iterovat přes <xref:Microsoft.Office.Interop.Excel.Worksheets> kolekce a odešlete název každého listu na posun buňky od <xref:Microsoft.Office.Interop.Excel.Range> objektu.
 
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#13](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#13)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#13](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#13)]

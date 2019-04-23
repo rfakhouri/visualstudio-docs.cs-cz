@@ -9,12 +9,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 15bf6243fc6e39a4cd7817bdfe964943ab16a3d1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d70a0c279c0720e79477b518ab63cf0326ca5237
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54792005"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111243"
 ---
 # <a name="how-to-create-a-basic-lambert-shader"></a>Postupy: Vytvoření základního Lambertova shaderu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,11 +23,11 @@ Tento dokument popisuje způsob použití návrháře shaderu a orientovaného g
   
  Tento dokument vysvětluje tyto činnosti:  
   
--   Přidání uzlů do grafu shaderu  
+- Přidání uzlů do grafu shaderu  
   
--   Odpojuje se uzly  
+- Odpojuje se uzly  
   
--   Spojující uzly  
+- Spojující uzly  
   
 ## <a name="the-lambert-lighting-model"></a>Lambertova modelu osvětlení  
  Model osvětlení Lambert zahrnuje okolí a směrové světlo na odstín objekty ve 3D scéně. Ambientní komponenty poskytují základní úroveň osvětlení ve 3D scéně. Směrové komponenty nabízejí další osvětlení z směrové zdroje (vzdálené) světla. Ambientní osvětlení má vliv na všechny plochy ve scéně stejně, bez ohledu na jejich orientace. Pro daný plochu je produkt okolní barvy na povrchu a barvy a intenzitu zrcadlových osvětlením okolí ve scéně. Směrové světlo ovlivňuje všechny oblasti ve scéně odlišně, na základě orientace povrchu s ohledem na směru světla. Je produkt barvy rozptýlení a orientaci ovládacího prvku na plochu a barvu, intenzity a směr světla zdrojů. Zařízení Surface směřujících přímo ke zdroji světla získat maximální příspěvek a povrchy směřujících přímo okamžitě obdržet žádná příspěvek. V části Lambertova modelu osvětlení okolí komponenty a jednu nebo více komponent směrové kombinovat určit příspěvek celkový rozptýlení barvy pro každý bod na objekt.  

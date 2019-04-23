@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1769ed711c0334ef14a3567478cc5010ec4165ea
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 04eefc37162eaa90743982a0039e21d1d9edfb1a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56644949"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60090716"
 ---
 # <a name="how-to-resize-bookmark-controls"></a>Postupy: Změna velikosti ovládacích prvků záložek
   Nastavte velikost <xref:Microsoft.Office.Tools.Word.Bookmark> řídit, kdy je přidat do dokumentu aplikace Microsoft Office Word. Můžete také změnit velikost ji později.
@@ -47,15 +47,15 @@ ms.locfileid: "56644949"
 
 ### <a name="to-resize-a-bookmark-in-a-document-level-project-at-design-time"></a>Změnit velikost záložky v projektu úrovni dokumentu v době návrhu
 
-1.  Vyberte záložku v **vlastnosti** okna.
+1. Vyberte záložku v **vlastnosti** okna.
 
-2.  Zvýšení nebo snížení hodnoty <xref:Microsoft.Office.Tools.Word.Bookmark.Start%2A> vlastnost.
+2. Zvýšení nebo snížení hodnoty <xref:Microsoft.Office.Tools.Word.Bookmark.Start%2A> vlastnost.
 
-3.  Zvýšení nebo snížení hodnoty <xref:Microsoft.Office.Tools.Word.Bookmark.End%2A> vlastnost.
+3. Zvýšení nebo snížení hodnoty <xref:Microsoft.Office.Tools.Word.Bookmark.End%2A> vlastnost.
 
 ### <a name="to-resize-a-bookmark-in-a-document-level-project-at-runtime"></a>Změnit velikost záložky v projektu úrovni dokumentu za běhu
 
-1.  Upravit <xref:Microsoft.Office.Tools.Word.Bookmark.Start%2A> a <xref:Microsoft.Office.Tools.Word.Bookmark.End%2A> vlastnosti <xref:Microsoft.Office.Tools.Word.Bookmark> vytvoří za běhu nebo v době návrhu.
+1. Upravit <xref:Microsoft.Office.Tools.Word.Bookmark.Start%2A> a <xref:Microsoft.Office.Tools.Word.Bookmark.End%2A> vlastnosti <xref:Microsoft.Office.Tools.Word.Bookmark> vytvoří za běhu nebo v době návrhu.
 
      Následující příklad kódu přidá na začátek Záložka s názvem pět znaků `SampleBookmark`. Tento kód předpokládá, že existují alespoň 5 znaků textu před záložkou.
 
@@ -69,7 +69,7 @@ ms.locfileid: "56644949"
 
 ### <a name="to-resize-a-bookmark-in-a-vsto-add-in-project-at-runtime"></a>Změnit velikost záložky v projektu doplňku VSTO za běhu
 
-1.  Upravit <xref:Microsoft.Office.Tools.Word.Bookmark.Start%2A> a <xref:Microsoft.Office.Tools.Word.Bookmark.End%2A> vlastnosti <xref:Microsoft.Office.Tools.Word.Bookmark> vytvoří za běhu.
+1. Upravit <xref:Microsoft.Office.Tools.Word.Bookmark.Start%2A> a <xref:Microsoft.Office.Tools.Word.Bookmark.End%2A> vlastnosti <xref:Microsoft.Office.Tools.Word.Bookmark> vytvoří za běhu.
 
      Následující příklad kódu vytvoří <xref:Microsoft.Office.Tools.Word.Bookmark> , který obsahuje text v prvním odstavci aktivního dokumentu a pak taky odebere pět znaků od začátku a konce <xref:Microsoft.Office.Tools.Word.Bookmark>.
 
@@ -81,11 +81,11 @@ ms.locfileid: "56644949"
 
 ### <a name="to-recreate-a-bookmark-in-a-document-level-project-at-design-time"></a>Znovu vytvořte záložku v projektu úrovni dokumentu v době návrhu
 
-1.  Vyberte text, který má být zahrnuté v novém <xref:Microsoft.Office.Tools.Word.Bookmark> ovládacího prvku.
+1. Vyberte text, který má být zahrnuté v novém <xref:Microsoft.Office.Tools.Word.Bookmark> ovládacího prvku.
 
-2.  Na **vložit** nabídky, klikněte na tlačítko **záložku**.
+2. Na **vložit** nabídky, klikněte na tlačítko **záložku**.
 
-3.  V **záložku** dialogového okna, vyberte název záložky, který chcete změnit velikost a klikněte na tlačítko **přidat**.
+3. V **záložku** dialogového okna, vyberte název záložky, který chcete změnit velikost a klikněte na tlačítko **přidat**.
 
 ## <a name="see-also"></a>Viz také:
 - [Postupy: Přidání ovládacích prvků záložek do dokumentů aplikace Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md)

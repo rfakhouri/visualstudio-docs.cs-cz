@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 686c7fbfae76d9f4006664aff9f79848eba563f8
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 699496825e272fc492bac8ef4fe472019b1935d2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56613312"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60083514"
 ---
 # <a name="test-area-1-add-toopen-from-source-control"></a>Testovací oblast 1: Přidat / otevřít ze správy zdrojového kódu
 Tento zdroj – ovládací prvek modulu plug-in testu pozadí oblasti uvedení řešení nebo projektů pod správou zdrojových kódů a načítání ze správy zdrojového kódu.
@@ -41,15 +41,15 @@ Tento zdroj – ovládací prvek modulu plug-in testu pozadí oblasti uvedení �
 
 ## <a name="expected-behavior"></a>Očekávané chování
 
--   Pro každý typ podporovaný projektu by měl uživatel možné "Přidat" a "Otevřít v" správy zdrojového kódu.
+- Pro každý typ podporovaný projektu by měl uživatel možné "Přidat" a "Otevřít v" správy zdrojového kódu.
 
--   Při přidání projektu do správy zdrojových kódů, odpovídající \< *ProjectName*> se vytvoří soubor .vspscc (informačního souboru projektu). Obsahuje informace o připojení a seznam souborech vyloučení. Neodstraňujte tento soubor, protože obsahuje informace specifické pro projekt.
+- Při přidání projektu do správy zdrojových kódů, odpovídající \< *ProjectName*> se vytvoří soubor .vspscc (informačního souboru projektu). Obsahuje informace o připojení a seznam souborech vyloučení. Neodstraňujte tento soubor, protože obsahuje informace specifické pro projekt.
 
--   Při přidání řešení do správy zdrojových kódů, odpovídající \< *SolutionName*> se vytvoří soubor .vssscc (triple S). Textový soubor obsahuje informace o připojení a soubor seznamu vyloučení, podobně jako do informačního souboru projektu. Tento soubor je dočasný a existuje pouze v databázi správy zdrojových kódů.
+- Při přidání řešení do správy zdrojových kódů, odpovídající \< *SolutionName*> se vytvoří soubor .vssscc (triple S). Textový soubor obsahuje informace o připojení a soubor seznamu vyloučení, podobně jako do informačního souboru projektu. Tento soubor je dočasný a existuje pouze v databázi správy zdrojových kódů.
 
--   Při otevření řešení ze správy zdrojového kódu \< *SolutionName*> soubor .vsscc (double S), která existuje pouze v databázi správy zdrojových kódů, je vytvořeno místně do dočasného souboru. Tento soubor obsahuje cestu ze složky řešení připojení do souboru řešení. Tento soubor je dočasný a místní kopie se odstraní po dokončení operace "Otevřít ze správy zdrojového kódu".
+- Při otevření řešení ze správy zdrojového kódu \< *SolutionName*> soubor .vsscc (double S), která existuje pouze v databázi správy zdrojových kódů, je vytvořeno místně do dočasného souboru. Tento soubor obsahuje cestu ze složky řešení připojení do souboru řešení. Tento soubor je dočasný a místní kopie se odstraní po dokončení operace "Otevřít ze správy zdrojového kódu".
 
--   Po přidání projektu do správy zdrojového kódu můžete provádět všechny akce správy zdrojů na něm (prohlédněte si Get a tak dále).
+- Po přidání projektu do správy zdrojového kódu můžete provádět všechny akce správy zdrojů na něm (prohlédněte si Get a tak dále).
 
 ## <a name="test-cases"></a>Testovací případy
  Tady jsou konkrétní testovací případy pro přidání / otevřít ze správy zdrojových kódů testovací oblast.

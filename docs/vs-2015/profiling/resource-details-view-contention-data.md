@@ -13,12 +13,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 27aed07b7e4212502a819ce024b0ce46680df6bf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: aac43a88a62182a33ea3b340c5520e921d681cd7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54759958"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089572"
 ---
 # <a name="resource-details-view---contention-data"></a>Zobrazení podrobností o prostředku – data kolizí
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,21 +31,21 @@ Zobrazení podrobností prostředků zobrazí graf časové osy blokujících ud
   
 #### <a name="to-magnify-a-timeline-segment"></a>Zvětšit segment časové osy  
   
--   Přetažením ukazatele myši přes oblast na časové ose.  
+- Přetažením ukazatele myši přes oblast na časové ose.  
   
      Po uvolnění tlačítka myši přiblížení zobrazení vybraného časového úseku. Proces další zvětšit segmentu, můžete opakovat. Posuvníku na posuvníku čas představuje relativní velikost časového úseku, který se zobrazí v zobrazení.  
   
 #### <a name="to-zoom-out-on-a-timeline"></a>Chcete-li oddálení časové osy  
   
--   Proveďte jeden z následujících kroků:  
+- Proveďte jeden z následujících kroků:  
   
-    -   Klikněte na tlačítko **Oddálit** se vraťte na předchozí úroveň přiblížení.  
+    - Klikněte na tlačítko **Oddálit** se vraťte na předchozí úroveň přiblížení.  
   
-    -   Klikněte na tlačítko **přiblížení resetování** a zobrazit všechny časové osy v zobrazení.  
+    - Klikněte na tlačítko **přiblížení resetování** a zobrazit všechny časové osy v zobrazení.  
   
 #### <a name="to-view-the-call-stack-of-an-event"></a>Chcete-li zobrazit zásobník volání události  
   
--   Časová osa grafu klikněte na panel události.  
+- Časová osa grafu klikněte na panel události.  
   
 #### <a name="to-view-or-edit-the-source-code-of-a-function-in-the-call-stack"></a>Chcete-li zobrazit nebo upravit zdrojový kód funkce v zásobníku volání  
   
@@ -55,12 +55,12 @@ Zobrazení podrobností prostředků zobrazí graf časové osy blokujících ud
   
 #### <a name="to-view-the-call-tree-of-contention-events-for-the-resource"></a>Zobrazení stromu volání kolizní události pro prostředek  
   
--   Časová osa grafu, klikněte na tlačítko **celkový**.  
+- Časová osa grafu, klikněte na tlačítko **celkový**.  
   
      Zobrazení kolizí se zobrazí pro prostředek. Další informace najdete v tématu [zobrazení kolizí prostředku](../profiling/resource-contentions-view-contention-data.md)  
   
 #### <a name="to-view-all-the-contention-events-of-a-thread"></a>Chcete-li zobrazit všechny události sporu vlákna  
   
--   Časová osa grafu klikněte na název nebo ID vlákna.  
+- Časová osa grafu klikněte na název nebo ID vlákna.  
   
      Zobrazení podrobností vláken se zobrazí pro vybrané vlákno. Další informace najdete v tématu [zobrazení podrobností vláken](../profiling/thread-details-view-contention-data.md).

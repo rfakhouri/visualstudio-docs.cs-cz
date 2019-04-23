@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 64a0fb4dbc91ff09bddf037a8ce140f134e41e43
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2e1855c64e88cdf45715654eede780aaa20d0258
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614659"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091418"
 ---
 # <a name="how-to-show-the-developer-tab-on-the-ribbon"></a>Postupy: Zobrazení karty Vývojář na pásu karet
   Pro přístup **Developer** kartu na pásu karet aplikace sady Office, je nutné nakonfigurovat ji k zobrazení této karty, protože se nezobrazuje ve výchozím nastavení. Například můžete musíte zobrazit kartu, pokud chcete přidat <xref:Microsoft.Office.Tools.Word.GroupContentControl> k přizpůsobení úrovni dokumentu pro aplikaci Word.
@@ -34,9 +34,9 @@ ms.locfileid: "56614659"
 
 ## <a name="to-show-the-developer-tab"></a>Chcete-li zobrazit kartu Vývojář
 
-1.  Spustíte některou z aplikací Office, které jsou podporovány v tomto tématu. Zobrazit **platí pro:** Poznámka: výše v tomto tématu.
+1. Spustíte některou z aplikací Office, které jsou podporovány v tomto tématu. Zobrazit **platí pro:** Poznámka: výše v tomto tématu.
 
-2.  Na **souboru** , vyberte **možnosti** tlačítko.
+2. Na **souboru** , vyberte **možnosti** tlačítko.
 
      Následující obrázek ukazuje **souboru** kartu a **možnosti** tlačítko v aplikaci Office 2010.
 
@@ -50,19 +50,19 @@ ms.locfileid: "56614659"
 
      ![Tlačítko Možnosti v aplikaci Outlook 2013 Preview](../vsto/media/vsto-office2013-optionsbutton.png "tlačítko Možnosti v aplikaci Outlook 2013 Preview")
 
-3.  V _ApplicationName_**možnosti** dialogového okna zvolte **Přizpůsobit pás karet** tlačítko.
+3. V _ApplicationName_**možnosti** dialogového okna zvolte **Přizpůsobit pás karet** tlačítko.
 
      Následující obrázek ukazuje **možnosti** dialogové okno a **Přizpůsobit pás karet** tlačítko v aplikaci Excel 2010. Umístění tohoto tlačítka je podobné jako u všech ostatních aplikací uvedených v části "Platí pro" v horní části tohoto tématu.
 
      ![Vlastní nastavení pásu karet tlačítko](../vsto/media/vsto-office2010-customizeribbonbutton.png "The vlastní nastavení pásu karet tlačítko")
 
-4.  Vyberte v seznamu hlavních karet **Developer** zaškrtávací políčko.
+4. Vyberte v seznamu hlavních karet **Developer** zaškrtávací políčko.
 
      Následující obrázek ukazuje **Developer** zaškrtávací políčko v aplikaci Word 2010 a [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)]. Umístění tohoto zaškrtávacího políčka je podobné jako u všech ostatních aplikací uvedených v části "Platí pro" v horní části tohoto tématu.
 
      ![Zaškrtněte políčko pro vývojáře v dialogovém okně Možnosti v aplikaci Word](../vsto/media/vsto-office2010-developercheckbox.png "políčko Vývojář v dialogovém okně Možnosti v aplikaci Word")
 
-5.  Zvolte **OK** tlačítko pro uzavření **možnosti** dialogové okno.
+5. Zvolte **OK** tlačítko pro uzavření **možnosti** dialogové okno.
 
 ## <a name="see-also"></a>Viz také:
 - [Přizpůsobení uživatelského rozhraní systému Office](../vsto/office-ui-customization.md)

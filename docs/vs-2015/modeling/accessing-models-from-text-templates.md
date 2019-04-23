@@ -11,12 +11,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a1a2ddeb3ab46bba30a505782fdd18d7df49574d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1052529bb743091398b55535b231597c6609add9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54796868"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110489"
 ---
 # <a name="accessing-models-from-text-templates"></a>Přístup k modelům z textových šablon
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,15 +57,15 @@ Here is a list of elements in the model:
   
  Všimněte si, že o této šabloně následující body:  
   
--   Šablonu můžete použít doménové třídy, vlastnosti a vztahy, které jste definovali v definici DSL.  
+- Šablonu můžete použít doménové třídy, vlastnosti a vztahy, které jste definovali v definici DSL.  
   
--   Se šablona načte, který zadáte v souboru modelu `requires` vlastnost.  
+- Se šablona načte, který zadáte v souboru modelu `requires` vlastnost.  
   
--   Vlastnost v `this` obsahuje kořenový element. Odtud můžete kód přejít na další prvky modelu. Název vlastnosti je obvykle stejný jako kořenový doménová třída tohoto kódu DSL. V tomto příkladu je to `this.ExampleModel`.  
+- Vlastnost v `this` obsahuje kořenový element. Odtud můžete kód přejít na další prvky modelu. Název vlastnosti je obvykle stejný jako kořenový doménová třída tohoto kódu DSL. V tomto příkladu je to `this.ExampleModel`.  
   
--   I když je jazyk, ve kterém jsou zapsány fragmenty kódu jazyka C#, můžete vygenerovat text jakéhokoli druhu. Můžete také napsat kód [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] tak, že přidáte vlastnost `language="VB"` k `template` směrnice.  
+- I když je jazyk, ve kterém jsou zapsány fragmenty kódu jazyka C#, můžete vygenerovat text jakéhokoli druhu. Můžete také napsat kód [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] tak, že přidáte vlastnost `language="VB"` k `template` směrnice.  
   
--   Chcete-li ladit šablonu, přidejte `debug="true"` k `template` směrnice. Šablonu se otevře v jiné instanci [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Pokud dojde k výjimce. Pokud chcete do ladicího programu v konkrétním bodě v kódu, vložte – příkaz `System.Diagnostics.Debugger.Break();`  
+- Chcete-li ladit šablonu, přidejte `debug="true"` k `template` směrnice. Šablonu se otevře v jiné instanci [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Pokud dojde k výjimce. Pokud chcete do ladicího programu v konkrétním bodě v kódu, vložte – příkaz `System.Diagnostics.Debugger.Break();`  
   
      Další informace najdete v tématu [ladění textové šablony T4](../modeling/debugging-a-t4-text-template.md).  
   
@@ -80,9 +80,9 @@ Here is a list of elements in the model:
   
  Procesor direktiv DSL provádí dvě hlavní úlohy:  
   
--   Vloží efektivně direktivy sestavení a importovat do šablony, která odkazuje na vaše DSL. To vám umožní používat doménové třídy v kódu šablony.  
+- Vloží efektivně direktivy sestavení a importovat do šablony, která odkazuje na vaše DSL. To vám umožní používat doménové třídy v kódu šablony.  
   
--   Načte soubor, který zadáte `requires` parametr a nastaví vlastnost `this` , který odkazuje na kořenový element načíst model.  
+- Načte soubor, který zadáte `requires` parametr a nastaví vlastnost `this` , který odkazuje na kořenový element načíst model.  
   
 ## <a name="validating-the-model-before-running-the-template"></a>Ověření modelu před spuštěním šablony  
  Může způsobit modelu na ověření. před provedením šablony.  
@@ -100,7 +100,7 @@ Here is a list of elements in the model:
   
    Pokud je nalezena chyba, se ohlásí v okně chyby a výsledek soubor obsahovat chybovou zprávu.  
   
-##  <a name="Multiple"></a> Přístup k více modelů z textové šablony  
+## <a name="Multiple"></a> Přístup k více modelů z textové šablony  
   
 > [!NOTE]
 >  Tato metoda umožňuje číst několik modelů v stejnou šablonu, ale nepodporuje odkazy ModelBus. Modely, které jsou vzájemně propojena ModelBus odkazy najdete v tématu [pomocí Visual Studio ModelBus v textové šabloně](../modeling/using-visual-studio-modelbus-in-a-text-template.md).  

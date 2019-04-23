@@ -29,12 +29,12 @@ caps.latest.revision: 45
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 993c1380a37b0fedad07427e65fda0a6a80a73f2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f40f5f27d603b67e6a7403f5327ffd89b486fa10
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54756016"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106449"
 ---
 # <a name="how-to-use-the-call-stack-window"></a>Postupy: Použijte okno zásobníku volání
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,53 +62,53 @@ S použitím **zásobník volání** okně můžete zobrazit volání funkce neb
   
 ### <a name="to-display-the-call-stack-window-in-break-mode-or-in-run-mode"></a>Chcete-li zobrazit okno zásobníku volání v režimu přerušení nebo v režimu spuštění  
   
--   Na **ladění** nabídce vyberte možnost **Windows** a potom klikněte na tlačítko **zásobník volání**.  
+- Na **ladění** nabídce vyberte možnost **Windows** a potom klikněte na tlačítko **zásobník volání**.  
   
 ### <a name="to-change-the-optional-information-displayed"></a>Změna zobrazených volitelných informací  
   
--   Klikněte pravým tlačítkem myši **zásobník volání** okno a set nebo zrušte **zobrazit \<**  _informace, které mají_ **>**.  
+- Klikněte pravým tlačítkem myši **zásobník volání** okno a set nebo zrušte **zobrazit \<**  _informace, které mají_ **>**.  
   
 ### <a name="to-display-non-user-code-frames-in-the-call-stack-window"></a>K zobrazení snímků bez uživatelského kódu v okně zásobník volání  
   
--   Klikněte pravým tlačítkem myši **zásobník volání** okna a vyberte **zobrazit externí kód**.  
+- Klikněte pravým tlačítkem myši **zásobník volání** okna a vyberte **zobrazit externí kód**.  
   
 ### <a name="to-switch-to-another-stack-frame"></a>Chcete-li přepnout na jiný rámec zásobníku  
   
-1.  V **zásobník volání** okna, klikněte pravým tlačítkem myši rámec jehož kód a data, která chcete zobrazit.  
+1. V **zásobník volání** okna, klikněte pravým tlačítkem myši rámec jehož kód a data, která chcete zobrazit.  
   
-2.  Vyberte **přepnout na rámec**.  
+2. Vyberte **přepnout na rámec**.  
   
      Zelená šipka s vlnitým ocáskem se objeví vedle snímku, který jste vybrali. Spuštění ukazatele zůstane v původním rámci stále označeno žlutou šipkou. Pokud vyberete **krok** nebo **pokračovat** z **ladění** nabídky, spuštění bude pokračovat v původním rámci, ne ve vámi vybraném.  
   
 ### <a name="to-display-calls-to-or-from-another-thread"></a>K zobrazení volání do nebo z jiného vlákna  
   
--   Klikněte pravým tlačítkem myši **zásobník volání** okna a vyberte **zahrnout hovory do/z jiných podprocesů**.  
+- Klikněte pravým tlačítkem myši **zásobník volání** okna a vyberte **zahrnout hovory do/z jiných podprocesů**.  
   
 ### <a name="to-view-the-source-code-for-a-function-on-the-call-stack"></a>Chcete-li zobrazit zdrojový kód pro funkci v zásobníku volání  
   
--   V **zásobník volání** okna, klikněte pravým tlačítkem na funkci, jejíž zdrojový kód chcete zobrazit a vybrat **přejít ke zdrojovému kódu**.  
+- V **zásobník volání** okna, klikněte pravým tlačítkem na funkci, jejíž zdrojový kód chcete zobrazit a vybrat **přejít ke zdrojovému kódu**.  
   
 ### <a name="to-visually-trace-the-call-stack"></a>Vizuální trasování zásobníku volání  
   
-1.  V **zásobník volání** okno, otevřete místní nabídku. Zvolte **zobrazit zásobník volání na mapě kódu**. (Klávesnice: **CTRL** + **SHIFT** + **`**)  
+1. V **zásobník volání** okno, otevřete místní nabídku. Zvolte **zobrazit zásobník volání na mapě kódu**. (Klávesnice: **CTRL** + **SHIFT** + **`**)  
   
      Zobrazit [mapování metod v zásobníku volání při ladění](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md).  
   
 ### <a name="to-view-the-disassembly-code-for-a-function-on-the-call-stack"></a>Chcete-li zobrazit zpětný překlad kódu pro funkci v zásobníku volání  
   
--   V **zásobník volání** okna, klikněte pravým tlačítkem na funkci, jejíž zpětně přeložený kód chcete zobrazit a vybrat **přejít na zpětný překlad**.  
+- V **zásobník volání** okna, klikněte pravým tlačítkem na funkci, jejíž zpětně přeložený kód chcete zobrazit a vybrat **přejít na zpětný překlad**.  
   
 ### <a name="to-run-to-a-specific-function-from-the-call-stack-window"></a>Spuštění specifické funkce z okna zásobník volání  
   
--  V **zásobník volání** okna, vyberte funkci, klepněte pravým tlačítkem myši a zvolte **spustit ke kurzoru**.  
+- V **zásobník volání** okna, vyberte funkci, klepněte pravým tlačítkem myši a zvolte **spustit ke kurzoru**.  
   
 ### <a name="to-set-a-breakpoint-on-the-exit-point-of-a-function-call"></a>Nastavení zarážky ve výstupním bodě volání funkce  
   
--   Zobrazit [nastavení zarážky na volání funkce zásobníku](../debugger/using-breakpoints.md#BKMK_Set_a_breakpoint_in_the_call_stack_window).  
+- Zobrazit [nastavení zarážky na volání funkce zásobníku](../debugger/using-breakpoints.md#BKMK_Set_a_breakpoint_in_the_call_stack_window).  
   
 ### <a name="to-load-symbols-for-a-module"></a>Načtení symbolů pro modul  
   
--   V **zásobník volání** okna, klikněte pravým tlačítkem myši na rámeček, který zobrazuje modul, jehož symboly chcete znovu načíst a vyberte **načíst symboly**.  
+- V **zásobník volání** okna, klikněte pravým tlačítkem myši na rámeček, který zobrazuje modul, jehož symboly chcete znovu načíst a vyberte **načíst symboly**.  
   
 ## <a name="loading-symbols"></a>Načítání symbolů  
  V **zásobník volání** okno, které můžete načíst symboly ladění pro kód, který nemá aktuálně načtené symboly. Tyto symboly mohou být v rozhraní .NET Framework nebo systémové symboly stažené ze serverů Microsoft veřejnými symboly nebo symboly v symbolické cestě v počítači, který ladíte.  
@@ -117,25 +117,25 @@ S použitím **zásobník volání** okně můžete zobrazit volání funkce neb
   
 #### <a name="to-load-symbols"></a>Načtení symbolů  
   
-1.  V **zásobník volání** okna, klikněte pravým tlačítkem na snímek pro symboly, které nejsou načtené. Snímek bude nepřístupný.  
+1. V **zásobník volání** okna, klikněte pravým tlačítkem na snímek pro symboly, které nejsou načtené. Snímek bude nepřístupný.  
   
-2.  Přejděte na **načíst symboly z** a potom klikněte na tlačítko **Microsoft Symbol Servers** nebo **cesty k symbolu**.  
+2. Přejděte na **načíst symboly z** a potom klikněte na tlačítko **Microsoft Symbol Servers** nebo **cesty k symbolu**.  
   
 #### <a name="to-set-the-symbol-path"></a>Chcete-li nastavit cestu k symbolu  
   
-1.  V **zásobník volání** okně zvolte **nastavení symbolu** z místní nabídky.  
+1. V **zásobník volání** okně zvolte **nastavení symbolu** z místní nabídky.  
   
      **Možnosti** zobrazí se dialogové okno a **symboly** zobrazí se stránka.  
   
-2.  Klikněte na tlačítko **Symbol nastavení**.  
+2. Klikněte na tlačítko **Symbol nastavení**.  
   
-3.  V **možnosti** dialogovém okně klikněte na ikonu složky.  
+3. V **možnosti** dialogovém okně klikněte na ikonu složky.  
   
      V **Symbol umístění souborů (.pdb)** pole, se zobrazí kurzor.  
   
-4.  Zadejte cestu adresáře na umístění symbolu v počítači, který ladíte. Pro místní ladění je to místního počítače. Pro vzdálené ladění, je vzdáleném počítači.  
+4. Zadejte cestu adresáře na umístění symbolu v počítači, který ladíte. Pro místní ladění je to místního počítače. Pro vzdálené ladění, je vzdáleném počítači.  
   
-5.  Klikněte na tlačítko **OK** zavřete **možnosti** dialogové okno.  
+5. Klikněte na tlačítko **OK** zavřete **možnosti** dialogové okno.  
   
 ## <a name="see-also"></a>Viz také  
  [Smíšený kód a chybějící informace v okně zásobníku volání](../debugger/mixed-code-and-missing-information-in-the-call-stack-window.md)   

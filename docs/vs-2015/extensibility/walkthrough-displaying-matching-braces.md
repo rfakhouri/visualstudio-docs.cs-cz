@@ -1,5 +1,5 @@
 ---
-title: 'Průvodce: Zobrazení odpovídající složené závorky | Dokumentace Microsoftu'
+title: 'Návod: Zobrazení odpovídající složené závorky | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -10,14 +10,14 @@ ms.assetid: 5af08ac7-1d08-4ccf-997e-01aa6cb3d3d7
 caps.latest.revision: 28
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 0b1d6833a3dca2ce8b076574ecb4b9856a6e9d79
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: caaafd0143d3b09a51518ee5f54a02b06dbf10aa
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54795534"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60084931"
 ---
-# <a name="walkthrough-displaying-matching-braces"></a>Průvodce: Zobrazení párových složených závorek
+# <a name="walkthrough-displaying-matching-braces"></a>Návod: Zobrazení párových složených závorek
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Budete moct implementovat založený na jazyce funkce, jako je například závorky definováním složené závorky, kterou chcete porovnat, a následným přidáním značky text značky do odpovídající složené závorky po blikající kurzor na jednom z složené závorky. Složené závorky můžete definovat v rámci jazyka, nebo můžete definovat vlastní název souboru příponu a obsah zadejte a použít značky jenom typu nebo můžete použít značky k existujícímu typu obsahu (jako je například "text"). Následující návod ukazuje, jak použít závorky značky "text" typu obsahu.  
@@ -29,50 +29,50 @@ Budete moct implementovat založený na jazyce funkce, jako je například závo
   
 #### <a name="to-create-a-mef-project"></a>Chcete-li vytvořit projekt rozhraní MEF  
   
-1.  Vytvořte projekt klasifikace Editor. Pojmenujte řešení `BraceMatchingTest`.  
+1. Vytvořte projekt klasifikace Editor. Pojmenujte řešení `BraceMatchingTest`.  
   
-2.  Přidejte do projektu šablony položky editoru třídění. Další informace najdete v tématu [vytváření rozšíření pomocí šablony položky editoru](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
+2. Přidejte do projektu šablony položky editoru třídění. Další informace najdete v tématu [vytváření rozšíření pomocí šablony položky editoru](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
   
-3.  Odstraníte existující soubory tříd.  
+3. Odstraníte existující soubory tříd.  
   
 ## <a name="implementing-a-brace-matching-tagger"></a>Implementace závorky Označovatel  
  Získat složenou závorku zvýraznění efekt, který vypadá podobně jako ten, který se používá v sadě Visual Studio, můžete implementovat označovatel typu <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>. Následující kód ukazuje, jak definovat označovatel párů složenou závorku na libovolné úrovni vnoření. V tomto příkladu [] dvojice závorek. [], a {} jsou definovány v konstruktoru označovatel, ale v implementaci úplným jazykovým páry odpovídající závorku by definované ve specifikaci jazyka.  
   
 #### <a name="to-implement-a-brace-matching-tagger"></a>K implementaci závorky označovatel  
   
-1.  Přidejte soubor třídy a pojmenujte ho BraceMatching.  
+1. Přidejte soubor třídy a pojmenujte ho BraceMatching.  
   
-2.  Importujte následující obory názvů.  
+2. Importujte následující obory názvů.  
   
      [!code-csharp[VSSDKBraceMatchingTest#1](../snippets/csharp/VS_Snippets_VSSDK/vssdkbracematchingtest/cs/bracematching.cs#1)]
      [!code-vb[VSSDKBraceMatchingTest#1](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkbracematchingtest/vb/bracematching.vb#1)]  
   
-3.  Definovat třídu `BraceMatchingTagger` , která dědí z <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601> typu <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>.  
+3. Definovat třídu `BraceMatchingTagger` , která dědí z <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601> typu <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>.  
   
      [!code-csharp[VSSDKBraceMatchingTest#2](../snippets/csharp/VS_Snippets_VSSDK/vssdkbracematchingtest/cs/bracematching.cs#2)]
      [!code-vb[VSSDKBraceMatchingTest#2](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkbracematchingtest/vb/bracematching.vb#2)]  
   
-4.  Přidání vlastností zobrazení textu, zdrojová vyrovnávací paměť aktuálního snímku do konkrétního bodu a také sadu párů závorek.  
+4. Přidání vlastností zobrazení textu, zdrojová vyrovnávací paměť aktuálního snímku do konkrétního bodu a také sadu párů závorek.  
   
      [!code-csharp[VSSDKBraceMatchingTest#3](../snippets/csharp/VS_Snippets_VSSDK/vssdkbracematchingtest/cs/bracematching.cs#3)]
      [!code-vb[VSSDKBraceMatchingTest#3](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkbracematchingtest/vb/bracematching.vb#3)]  
   
-5.  V konstruktoru označovatel, nastavte vlastnosti a přihlášení k odběru událostí změnit zobrazení <xref:Microsoft.VisualStudio.Text.Editor.ITextCaret.PositionChanged> a <xref:Microsoft.VisualStudio.Text.Editor.ITextView.LayoutChanged>. V tomto příkladu pro ilustraci, odpovídající dvojice jsou také definovány v konstruktoru.  
+5. V konstruktoru označovatel, nastavte vlastnosti a přihlášení k odběru událostí změnit zobrazení <xref:Microsoft.VisualStudio.Text.Editor.ITextCaret.PositionChanged> a <xref:Microsoft.VisualStudio.Text.Editor.ITextView.LayoutChanged>. V tomto příkladu pro ilustraci, odpovídající dvojice jsou také definovány v konstruktoru.  
   
      [!code-csharp[VSSDKBraceMatchingTest#4](../snippets/csharp/VS_Snippets_VSSDK/vssdkbracematchingtest/cs/bracematching.cs#4)]
      [!code-vb[VSSDKBraceMatchingTest#4](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkbracematchingtest/vb/bracematching.vb#4)]  
   
-6.  Jako součást <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601> implementaci TagsChanged událost deklarovat.  
+6. Jako součást <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601> implementaci TagsChanged událost deklarovat.  
   
      [!code-csharp[VSSDKBraceMatchingTest#5](../snippets/csharp/VS_Snippets_VSSDK/vssdkbracematchingtest/cs/bracematching.cs#5)]
      [!code-vb[VSSDKBraceMatchingTest#5](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkbracematchingtest/vb/bracematching.vb#5)]  
   
-7.  Obslužné rutiny událostí aktualizovat aktuální pozici blikajícího kurzoru `CurrentChar` vlastnost a vyvolat událost TagsChanged.  
+7. Obslužné rutiny událostí aktualizovat aktuální pozici blikajícího kurzoru `CurrentChar` vlastnost a vyvolat událost TagsChanged.  
   
      [!code-csharp[VSSDKBraceMatchingTest#6](../snippets/csharp/VS_Snippets_VSSDK/vssdkbracematchingtest/cs/bracematching.cs#6)]
      [!code-vb[VSSDKBraceMatchingTest#6](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkbracematchingtest/vb/bracematching.vb#6)]  
   
-8.  Implementace <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601.GetTags%2A> metodu tak, aby odpovídaly závorek, buď když aktuální znak je levou složenou závorku nebo pokud je předchozí znak je zavřít složené závorky, stejně jako v sadě Visual Studio. Když je nalezena shoda, tato metoda vytvoří dvě značky, jeden pro levou složenou závorku a jeden pro Zavřít složenou závorku.  
+8. Implementace <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601.GetTags%2A> metodu tak, aby odpovídaly závorek, buď když aktuální znak je levou složenou závorku nebo pokud je předchozí znak je zavřít složené závorky, stejně jako v sadě Visual Studio. Když je nalezena shoda, tato metoda vytvoří dvě značky, jeden pro levou složenou závorku a jeden pro Zavřít složenou závorku.  
   
      [!code-csharp[VSSDKBraceMatchingTest#7](../snippets/csharp/VS_Snippets_VSSDK/vssdkbracematchingtest/cs/bracematching.cs#7)]
      [!code-vb[VSSDKBraceMatchingTest#7](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkbracematchingtest/vb/bracematching.vb#7)]  
@@ -92,12 +92,12 @@ Budete moct implementovat založený na jazyce funkce, jako je například závo
   
 #### <a name="to-implement-a-brace-matching-tagger-provider"></a>Pro implementaci zprostředkovatele označovatel odpovídající závorku  
   
-1.  Deklarovat označovatel poskytovatele, který dědí z <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider>, pojmenujte ho BraceMatchingTaggerProvider a exportujte ho pomocí <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> "text" a <xref:Microsoft.VisualStudio.Text.Tagging.TagTypeAttribute> z <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>.  
+1. Deklarovat označovatel poskytovatele, který dědí z <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider>, pojmenujte ho BraceMatchingTaggerProvider a exportujte ho pomocí <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> "text" a <xref:Microsoft.VisualStudio.Text.Tagging.TagTypeAttribute> z <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>.  
   
      [!code-csharp[VSSDKBraceMatchingTest#10](../snippets/csharp/VS_Snippets_VSSDK/vssdkbracematchingtest/cs/bracematching.cs#10)]
      [!code-vb[VSSDKBraceMatchingTest#10](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkbracematchingtest/vb/bracematching.vb#10)]  
   
-2.  Implementace <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider.CreateTagger%2A> metoda pro vytvoření instance BraceMatchingTagger.  
+2. Implementace <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider.CreateTagger%2A> metoda pro vytvoření instance BraceMatchingTagger.  
   
      [!code-csharp[VSSDKBraceMatchingTest#11](../snippets/csharp/VS_Snippets_VSSDK/vssdkbracematchingtest/cs/bracematching.cs#11)]
      [!code-vb[VSSDKBraceMatchingTest#11](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkbracematchingtest/vb/bracematching.vb#11)]  
@@ -107,11 +107,11 @@ Budete moct implementovat založený na jazyce funkce, jako je například závo
   
 #### <a name="to-build-and-test-bracematchingtest-solution"></a>Pro vytváření a testování BraceMatchingTest řešení  
   
-1.  Sestavte řešení.  
+1. Sestavte řešení.  
   
-2.  Při spuštění tohoto projektu v ladicím programu, je vytvořena instance druhou instanci aplikace Visual Studio.  
+2. Při spuštění tohoto projektu v ladicím programu, je vytvořena instance druhou instanci aplikace Visual Studio.  
   
-3.  Vytvořte textový soubor a zadejte nějaký text, který obsahuje odpovídající složené závorky.  
+3. Vytvořte textový soubor a zadejte nějaký text, který obsahuje odpovídající složené závorky.  
   
     ```  
     hello {  
@@ -122,7 +122,7 @@ Budete moct implementovat založený na jazyce funkce, jako je například závo
     {hello}  
     ```  
   
-4.  Když umístíte blikající kurzor před levou složenou závorku, by měl být zvýrazněn této složenou závorku a odpovídající závorce zavřít. Když umístěte kurzor bezprostředně po pravé lomené závorky, by měl být zvýrazněn této složenou závorku a odpovídající levou složenou závorku.  
+4. Když umístíte blikající kurzor před levou složenou závorku, by měl být zvýrazněn této složenou závorku a odpovídající závorce zavřít. Když umístěte kurzor bezprostředně po pravé lomené závorky, by měl být zvýrazněn této složenou závorku a odpovídající levou složenou závorku.  
   
 ## <a name="see-also"></a>Viz také  
  [Návod: Propojení typu obsahu příponu názvu souboru](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

@@ -9,12 +9,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: da5578321e9c637b12ffbb253a9c0d4c4f87dfe9
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: b42617892e377dcf750e9f5cafc914759b7d0c13
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57870498"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110919"
 ---
 # <a name="visual-studio-data-tools-for-net"></a>Visual Studio Data Tools for .NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,27 +43,27 @@ Visual Studio a rozhraní .NET Framework společně poskytují rozsáhlé rozhra
   
 ## <a name="in-this-section"></a>V tomto oddílu  
   
--   [Vytvoření jednoduché datové aplikace pomocí ADO.NET](../data-tools/create-a-simple-data-application-by-using-adonet.md)  
+- [Vytvoření jednoduché datové aplikace pomocí ADO.NET](../data-tools/create-a-simple-data-application-by-using-adonet.md)  
   
--   [Přidání nových připojení](../data-tools/add-new-connections.md)  
+- [Přidání nových připojení](../data-tools/add-new-connections.md)  
   
--   [Přidání nových zdrojů dat](../data-tools/add-new-data-sources.md)  
+- [Přidání nových zdrojů dat](../data-tools/add-new-data-sources.md)  
   
--   [Nástroje modelu EDM (Entity Data Model) v sadě Visual Studio](../data-tools/entity-data-model-tools-in-visual-studio.md)  
+- [Nástroje modelu EDM (Entity Data Model) v sadě Visual Studio](../data-tools/entity-data-model-tools-in-visual-studio.md)  
   
--   [Nástroje datových sad v sadě Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)  
+- [Nástroje datových sad v sadě Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)  
   
--   [Nástroje LINQ to SQL v sadě Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)  
+- [Nástroje LINQ to SQL v sadě Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)  
   
--   [Vytvoření vazby ovládacích prvků k datům v sadě Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)  
+- [Vytvoření vazby ovládacích prvků k datům v sadě Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)  
   
--   [Další prostředky pro odstraňování chyb přístupu k datům](../data-tools/additional-resources-for-troubleshooting-data-access-errors.md)  
+- [Další prostředky pro odstraňování chyb přístupu k datům](../data-tools/additional-resources-for-troubleshooting-data-access-errors.md)  
   
--   [Služby Windows Communication Foundation a služby WCF Data Services v sadě Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)  
+- [Služby Windows Communication Foundation a služby WCF Data Services v sadě Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)  
   
--   [Vytváření a správa databází a aplikací datové vrstvy v sadě Visual Studio](../data-tools/creating-and-managing-databases-and-data-tier-applications-in-visual-studio.md)  
+- [Vytváření a správa databází a aplikací datové vrstvy v sadě Visual Studio](../data-tools/creating-and-managing-databases-and-data-tier-applications-in-visual-studio.md)  
   
--   [Další prostředky pro odstraňování chyb přístupu k datům](../data-tools/additional-resources-for-troubleshooting-data-access-errors.md)  
+- [Další prostředky pro odstraňování chyb přístupu k datům](../data-tools/additional-resources-for-troubleshooting-data-access-errors.md)  
   
 ## <a name="see-also"></a>Viz také  
  [Přístup k datům v sadě Visual Studio](../data-tools/accessing-data-in-visual-studio.md)

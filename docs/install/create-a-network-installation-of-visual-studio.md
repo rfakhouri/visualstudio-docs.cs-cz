@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 5e499e54a7cf1c5c50a625cfe03482202e3a1f3f
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: c727b31f353015ca6f43157c4b6afc67339526f0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58857422"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60084996"
 ---
 # <a name="create-a-network-installation-of-visual-studio"></a>Vytvoření síťové instalace sady Visual Studio
 
@@ -153,6 +153,7 @@ Tady je několik příkladů toho, jak vytvořit vlastní částečné rozložen
     ```cmd
     vs_enterprise.exe --layout C:\vsoffline --add Microsoft.VisualStudio.Workload.Azure --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Component.GitHub.VisualStudio --includeOptional 
     ```
+
 ::: moniker range="vs-2017"
 
 ### <a name="new-in-version-153"></a>Novinka ve verzi 15.3
@@ -194,11 +195,13 @@ vs_enterprise.exe --layout c:\VSLayout --all
 Správci můžou nasadit sady Visual Studio na klientských pracovních stanic, jako součást instalačního skriptu. Nebo uživatelé, kteří mají oprávnění správce, můžete spustit instalační program přímo ze sdílené složky pro instalaci sady Visual Studio na svém počítači.
 
 * Uživatelé mohou nainstalovat spuštěním následujícího příkazu: <br>
+
     ```cmd
     \\server\products\VS\vs_enterprise.exe
     ```
 
 * Správci můžou instalaci v bezobslužném režimu spuštěním následujícího příkazu:
+
     ```cmd
     \server\products\VS\vs_enterprise.exe --quiet --wait --norestart
     ```
@@ -270,6 +273,7 @@ Další možnosti podpory dostupné, máme příliš. Seznam najdete v tématu n
 
 * [Aktualizace síťové instalace sady Visual Studio](update-a-network-installation-of-visual-studio.md)
 * [Řízení aktualizací nasazení sady Visual Studio založené na síti](controlling-updates-to-visual-studio-deployments.md)
+* [Životního cyklu produktu Visual Studio a údržba](/visualstudio/releases/2019/servicing/)
 * [Příručka pro správce aplikace Visual Studio](visual-studio-administrator-guide.md)
 * [Instalace sady Visual Studio s použitím parametrů příkazového řádku](use-command-line-parameters-to-install-visual-studio.md)
 * [ID úloh a komponent sady Visual Studio](workload-and-component-ids.md)

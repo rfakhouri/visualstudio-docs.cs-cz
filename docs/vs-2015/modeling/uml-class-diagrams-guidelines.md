@@ -17,12 +17,12 @@ caps.latest.revision: 56
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 608b5c37975c49e4e90cdf9edd923121350735e5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7a57e7e42e1cfc2690732881e6702315d1b0f4d4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54773303"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088883"
 ---
 # <a name="uml-class-diagrams-guidelines"></a>Diagramy tříd UML: Pokyny
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,14 +36,14 @@ V sadě Visual Studio, můžete použít *diagram tříd UML* pro popis datovýc
 > [!NOTE]
 >  Toto téma se zabývá diagramy tříd UML. Existuje jiný typ diagramu tříd, který lze vytvořit a použít jej k vizualizaci kódu programu. Zobrazit [navrhování a zobrazování tříd a typů](http://go.microsoft.com/fwlink/?LinkId=142231).  
   
-##  <a name="Using"></a> Použití diagramů tříd UML  
+## <a name="Using"></a> Použití diagramů tříd UML  
  Diagram tříd UML lze použít pro různé účely:  
   
--   Pro poskytnutí popisu nezávislého na implementaci typů, které jsou v systému použity a předány mezi komponentami.  
+- Pro poskytnutí popisu nezávislého na implementaci typů, které jsou v systému použity a předány mezi komponentami.  
   
      Například typ Objednávka jídla lze implementovat v kódu .NET v obchodní vrstvě, v jazyce XML v rozhraních mezi komponentami, v jazyce SQL v databázi nebo v jazyce HTML v uživatelském rozhraní. Přestože se tyto implementace drobně liší, je vztah mezi Objednávkou jídla a ostatními typy, jako je například Nabídka a Platba, vždy stejný. Diagram tříd UML umožňuje diskuzi o těchto vztazích bez ohledu na implementaci.  
   
--   Aby bylo možné vyjasnit glosář termínů použitých pro komunikaci mezi aplikací a jejími uživateli a pro popis požadavků uživatele. Zobrazit [modelování uživatelských požadavků](../modeling/model-user-requirements.md).  
+- Aby bylo možné vyjasnit glosář termínů použitých pro komunikaci mezi aplikací a jejími uživateli a pro popis požadavků uživatele. Zobrazit [modelování uživatelských požadavků](../modeling/model-user-requirements.md).  
   
      Je třeba například zvážit uživatelské scénáře, případy užití nebo další popisy požadavků aplikace pro restauraci. V takových popisech lze najít termíny jako Nabídka, Objednávka, Jídlo, Cena, Platba a tak dále. Lze nakreslit diagram tříd UML, který definuje vztahy mezi těmito výrazy. To sníží riziko nesrovnalostí v popisech požadavků, v uživatelském prostředí a v pomocných dokumentech.  
   
@@ -78,7 +78,7 @@ V sadě Visual Studio, můžete použít *diagram tříd UML* pro popis datovýc
   
  Zobrazit [diagramy případů použití UML: Pokyny pro](../modeling/uml-use-case-diagrams-guidelines.md).  
   
-##  <a name="BasicSteps"></a> Základní postup pro vytvoření diagramů tříd  
+## <a name="BasicSteps"></a> Základní postup pro vytvoření diagramů tříd  
  Referenční informace o prvcích diagramu tříd UML lze najdete v tématu [diagramů tříd UML: Referenční dokumentace](../modeling/uml-class-diagrams-reference.md).  
   
 > [!NOTE]
@@ -86,35 +86,35 @@ V sadě Visual Studio, můžete použít *diagram tříd UML* pro popis datovýc
   
 #### <a name="to-create-a-uml-class-diagram"></a>Vytvoření diagramu tříd UML  
   
-1.  Na **architektura** nabídce zvolte **nové UML nebo diagramu vrstev**.  
+1. Na **architektura** nabídce zvolte **nové UML nebo diagramu vrstev**.  
   
-2.  V části **šablony**, zvolte **Diagram tříd UML**.  
+2. V části **šablony**, zvolte **Diagram tříd UML**.  
   
-3.  Pojmenujte diagram.  
+3. Pojmenujte diagram.  
   
-4.  V **přidat k projektu modelování**, vyberte existující projekt modelování z řešení, nebo **vytvořit nový projekt modelování**a klikněte na tlačítko **OK**.  
+4. V **přidat k projektu modelování**, vyberte existující projekt modelování z řešení, nebo **vytvořit nový projekt modelování**a klikněte na tlačítko **OK**.  
   
      Zobrazí se nový diagram tříd **UMLClass Diagram** sady nástrojů. Sada nástrojů obsahuje požadované prvky a vztahy.  
   
 #### <a name="to-draw-a-uml-class-diagram"></a>Nakreslení diagramu tříd UML  
   
-1.  Chcete-li vytvořit typ, zvolte **třídy**, **rozhraní** nebo **výčet** nástroje na panelu nástrojů a potom klikněte na prázdnou část diagramu. (Pokud nevidíte panel nástrojů, stiskněte kombinaci kláves CTRL+ALT+X.)  
+1. Chcete-li vytvořit typ, zvolte **třídy**, **rozhraní** nebo **výčet** nástroje na panelu nástrojů a potom klikněte na prázdnou část diagramu. (Pokud nevidíte panel nástrojů, stiskněte kombinaci kláves CTRL+ALT+X.)  
   
-2.  Chcete-li přidat atributy nebo operace typům, nebo literály výčtu, zvolte **atributy**, **operace** nebo **literály** v typu nadpis a stiskněte klávesu ENTER.  
+2. Chcete-li přidat atributy nebo operace typům, nebo literály výčtu, zvolte **atributy**, **operace** nebo **literály** v typu nadpis a stiskněte klávesu ENTER.  
   
      Lze zapsat signaturu, jako `f(x:Boolean):Integer`. Zobrazit [atributy a operace](#AttributesAndOperations).  
   
      Pro rychlé přidání několika položek stiskněte klávesu ENTER dvakrát na konci každé položky. Pro procházení seznamu nahoru a dolů lze použít šipky.  
   
-3.  Pro rozbalení a sbalení typu klikněte na ikonu dvojité šipky v levém horním rohu. Můžete rozbalit nebo sbalit **atributy** a **operace** části třídy nebo rozhraní.  
+3. Pro rozbalení a sbalení typu klikněte na ikonu dvojité šipky v levém horním rohu. Můžete rozbalit nebo sbalit **atributy** a **operace** části třídy nebo rozhraní.  
   
-4.  Chcete-li nakreslit asociace, dědičnosti nebo závislosti mezi typy, klikněte na vhodný nástroj, následně na typ zdroje a nakonec na typ cíle.  
+4. Chcete-li nakreslit asociace, dědičnosti nebo závislosti mezi typy, klikněte na vhodný nástroj, následně na typ zdroje a nakonec na typ cíle.  
   
-5.  Chcete-li vytvořit typy v balíčku, nejprve vytvořte balíček pomocí **balíčku** nástroje a pak vytvořte nové typy a balíčky v rámci balíčku. Rovněž lze použít kopírovací příkazy pro zkopírování typů a následné vložení do balíčku.  
+5. Chcete-li vytvořit typy v balíčku, nejprve vytvořte balíček pomocí **balíčku** nástroje a pak vytvořte nové typy a balíčky v rámci balíčku. Rovněž lze použít kopírovací příkazy pro zkopírování typů a následné vložení do balíčku.  
   
-6.  Každý diagram je zobrazení modelu, které je sdíleno mezi ostatními diagramy ve stejném projektu. Chcete-li zobrazení stromového zobrazení celého modelu, zvolte **zobrazení**, **ostatní Windows**, **Průzkumníku modelů UML**.  
+6. Každý diagram je zobrazení modelu, které je sdíleno mezi ostatními diagramy ve stejném projektu. Chcete-li zobrazení stromového zobrazení celého modelu, zvolte **zobrazení**, **ostatní Windows**, **Průzkumníku modelů UML**.  
   
-##  <a name="UsingTypes"></a> Použití tříd, rozhraní a výčty  
+## <a name="UsingTypes"></a> Použití tříd, rozhraní a výčty  
  V panelu nástrojů jsou k dispozici tři standardní typy klasifikátorů. Tyto jsou označovány jako *typy* v tomto dokumentu.  
   
  ![Třída, výčet a rozhraní](../modeling/media/uml-classguidetypes.png "UML_ClassGuideTypes")  
@@ -125,9 +125,9 @@ V sadě Visual Studio, můžete použít *diagram tříd UML* pro popis datovýc
   
 - Použití **výčet** (3) pro reprezentaci typu, který má omezený počtem literálových hodnot, například `Stop` a `Go`.  
   
-  -   Přidejte do výčtu literálové hodnoty. Každé přidělte odlišný název.  
+  - Přidejte do výčtu literálové hodnoty. Každé přidělte odlišný název.  
   
-  -   V případě potřeby lze rovněž každé literálové hodnotě poskytnout číselnou hodnotu. Otevřete místní nabídku pro literál ve výčtu, zvolte **vlastnosti**a potom zadejte číslo v **hodnotu** pole **vlastnosti** okna.  
+  - V případě potřeby lze rovněž každé literálové hodnotě poskytnout číselnou hodnotu. Otevřete místní nabídku pro literál ve výčtu, zvolte **vlastnosti**a potom zadejte číslo v **hodnotu** pole **vlastnosti** okna.  
   
   Každému typu zadejte jedinečný název.  
   
@@ -154,7 +154,7 @@ V sadě Visual Studio, můžete použít *diagram tříd UML* pro popis datovýc
   
  Pro vytvoření třídy ze životnosti, otevřete místní nabídku životnosti a klikněte na tlačítko **vytvořit třídu** nebo **vytvořit rozhraní**. Zobrazit [sekvenční diagramy UML: Pokyny pro](../modeling/uml-sequence-diagrams-guidelines.md).  
   
-##  <a name="AttributesAndOperations"></a> Atributy a operace  
+## <a name="AttributesAndOperations"></a> Atributy a operace  
  Atribut (4) je pojmenovaná hodnota, kterou může každá instance typu mít. Přístup k atributu stav instance nezmění.  
   
  Operace (5) je metoda nebo funkce, kterou může instance daného typu provést. Může vrátit hodnotu. Pokud jeho **isQuery** vlastnost má hodnotu true, nelze změnit stav instance.  
@@ -167,9 +167,9 @@ V sadě Visual Studio, můžete použít *diagram tříd UML* pro popis datovýc
   
  Podrobné informace o všech vlastnostech, které lze nastavit, lze nalézt v tématech:  
   
--   [Vlastnosti atributů v diagramech tříd UML](../modeling/properties-of-attributes-on-uml-class-diagrams.md)  
+- [Vlastnosti atributů v diagramech tříd UML](../modeling/properties-of-attributes-on-uml-class-diagrams.md)  
   
--   [Vlastnosti operací v diagramech tříd UML](../modeling/properties-of-operations-on-uml-class-diagrams.md)  
+- [Vlastnosti operací v diagramech tříd UML](../modeling/properties-of-operations-on-uml-class-diagrams.md)  
   
 ### <a name="types-of-attributes-and-operations"></a>Typy atributů a operací  
  Každý *typ* atributu nebo operace a každý typ parametru může být jedna z následujících akcí:  
@@ -214,9 +214,9 @@ V sadě Visual Studio, můžete použít *diagram tříd UML* pro popis datovýc
   
  Pokud je násobnost větší než 1, lze rovněž nastavit následující vlastnosti:  
   
--   **IsOrdered** – Pokud je nastavena hodnota true a kolekce má definované uspořádání.  
+- **IsOrdered** – Pokud je nastavena hodnota true a kolekce má definované uspořádání.  
   
--   **IsUnique** – Pokud je nastavena hodnota true, nejsou žádné duplicitní hodnoty v kolekci.  
+- **IsUnique** – Pokud je nastavena hodnota true, nejsou žádné duplicitní hodnoty v kolekci.  
   
 ### <a name="visibility"></a>Viditelnost  
  *Viditelnost* označuje, zda atribut nebo operace přístupné mimo definici třídy. Povoleny jsou následující hodnoty:  
@@ -330,7 +330,7 @@ visibility operation-name (parameter1 : Type1, ...) : Type
   
  Obvykle se úplná signatura v diagramu zobrazí pouze při jeho úpravě. Po dokončení úprav jsou další vlastnosti skryty. Pokud chcete zobrazit být úplná signatura zobrazena neustále, otevřete místní nabídku pro typ a klikněte na tlačítko **zobrazit úplnou signaturu**.  
   
-##  <a name="Associations"></a> Vykreslování a používání asociací  
+## <a name="Associations"></a> Vykreslování a používání asociací  
  Asociace je používána pro reprezentaci jakéhokoli vztahu mezi dvěma prvky, bez ohledu na to, jakým způsobem je spojení v softwaru implementováno. Přidružení může například představovat ukazatele v jazyce C#, relace v databázi nebo křížový odkaz z jedné části souboru XML do jiné. Reprezentuje asociace mezi objekty reálného světa, jako je například země a slunce. Asociace neříkají, jak jsou spojení reprezentována, pouze to, že existují.  
   
 ### <a name="properties-of-an-association"></a>Vlastnosti asociace  
@@ -362,7 +362,7 @@ visibility operation-name (parameter1 : Type1, ...) : Type
   
  ![Ekvivalentní přidružení a atributy](../modeling/media/uml-classguideattrib.png "UML_ClassGuideAttrib")  
   
-##  <a name="Inheritance"></a> Dědičnost  
+## <a name="Inheritance"></a> Dědičnost  
  Použití **dědičnosti** nástroj k vytvoření následujících vztahů:  
   
 - A *generalizace* vztah mezi specializovaným typem a obecným typem  
@@ -405,7 +405,7 @@ visibility operation-name (parameter1 : Type1, ...) : Type
   
  ![Realizace znázorněná s konektorem a lollipop](../modeling/media/uml-classguiderealize.png "UML_ClassGuideRealize")  
   
-##  <a name="Templates"></a> Typy šablon  
+## <a name="Templates"></a> Typy šablon  
  Lze definovat generický typ nebo typ šablony, který může být parametrizován jinými typy nebo hodnotami.  
   
  Lze například vytvořit generický slovník parametrizovaný typy klíče a hodnoty:  
@@ -446,29 +446,29 @@ visibility operation-name (parameter1 : Type1, ...) : Type
   
 #### <a name="to-use-a-template-type"></a>Použití typu šablony  
   
-1.  Vytvoření nového typu, například `AddressTable`.  
+1. Vytvoření nového typu, například `AddressTable`.  
   
-2.  Otevřete místní nabídku pro nový typ a klikněte na tlačítko **vlastnosti**.  
+2. Otevřete místní nabídku pro nový typ a klikněte na tlačítko **vlastnosti**.  
   
-3.  V **vazba šablony** vlastnosti, vyberte typ šablony, například `Dictionary`, z rozevíracího seznamu.  
+3. V **vazba šablony** vlastnosti, vyberte typ šablony, například `Dictionary`, z rozevíracího seznamu.  
   
-4.  Rozbalte **vazba šablony** vlastnost.  
+4. Rozbalte **vazba šablony** vlastnost.  
   
      Pro každý parametr typu šablony se zobrazí řádek.  
   
-5.  Nastavte každý parametr na vhodnou hodnotu. Například nastavit `Key` parametr na třídu nazvaný `Name`.  
+5. Nastavte každý parametr na vhodnou hodnotu. Například nastavit `Key` parametr na třídu nazvaný `Name`.  
   
-##  <a name="Packages"></a> Balíčky  
+## <a name="Packages"></a> Balíčky  
  V diagramu tříd UML lze zobrazit balíčky. Balíček je kontejner pro ostatní prvky modelu. Uvnitř balíčku lze vytvořit jakýkoli prvek. V diagramu budou prvky uvnitř balíčku přesouvány společně s balíčkem.  
   
  Pro skrytí nebo zobrazení obsahu balíčku lze použít ovládací prvek rozbalení/sbalení.  
   
  Zobrazit [definování balíčků a oborů názvů](../modeling/define-packages-and-namespaces.md).  
   
-##  <a name="generating"></a> Generování kódu z diagramů tříd UML  
+## <a name="generating"></a> Generování kódu z diagramů tříd UML  
  Pro zahájení implementace tříd lze na základě diagramu tříd UML vygenerovat kód jazyka C# nebo upravit šablony pro generování kódu. Spuštění generování kódu pomocí poskytnutých šablon jazyka C#:  
   
--   Otevřete místní nabídku diagramu nebo prvku, zvolte **generovat kód**a následně nastavte nezbytné vlastnosti.  
+- Otevřete místní nabídku diagramu nebo prvku, zvolte **generovat kód**a následně nastavte nezbytné vlastnosti.  
   
      Další informace o tom, jak tyto vlastnosti nastavit a přizpůsobit poskytnuté šablony najdete v tématu [generování kódu z diagramů tříd UML](../modeling/generate-code-from-uml-class-diagrams.md).  
   

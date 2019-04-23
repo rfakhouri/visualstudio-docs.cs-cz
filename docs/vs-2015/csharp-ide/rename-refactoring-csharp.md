@@ -16,12 +16,12 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 40e13682b6ff22a0052adc7db9f9db9f18d36cc9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 82f3d4a3ae9bc587fef038186afe9faef880571c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54783290"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114727"
 ---
 # <a name="rename-refactoring-c"></a>Refaktoring pro přejmenování (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,11 +51,11 @@ ms.locfileid: "54783290"
 |Metoda|Název metody a všechny odkazy na metody změní na nový název. **Poznámka:**  Pokud přejmenujete metodu rozšíření, operace přejmenování rozšíří do všech instancí metody, které jsou v oboru, bez ohledu na to, zda rozšiřující metoda se používá jako statickou metodu nebo metodu instance. Další informace najdete v tématu [rozšiřující metody](http://msdn.microsoft.com/library/175ce3ff-9bbf-4e64-8421-faeb81a0bb51).|  
 |Obor názvů|Název oboru názvů se změní na nový název v deklaraci všech `using` příkazy a plně kvalifikované názvy. **Poznámka:**  Při přejmenování obor názvů, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rovněž aktualizuje **výchozí Namespace** vlastnost **aplikace** stránku **Návrháře projektu**. Tuto vlastnost nelze obnovit tak, že vyberete **zpět** z **upravit** nabídky. Chcete-li obnovit **výchozí Namespace** hodnotu vlastnosti, je třeba upravit vlastnosti v **Návrháře projektu**. Další informace najdete v tématu [stránky aplikace](../ide/reference/application-page-project-designer-csharp.md).|  
 |Vlastnost|Deklarace a použití vlastnost se změní na nový název.|  
-|Typ|Všechny deklarace a použití všech typu se změní na nový název, včetně konstruktorů a destruktorů. Pro částečné typy operace přejmenování rozšíří do všech částí.|  
+|Type|Všechny deklarace a použití všech typu se změní na nový název, včetně konstruktorů a destruktorů. Pro částečné typy operace přejmenování rozšíří do všech částí.|  
   
 #### <a name="to-rename-an-identifier"></a>Chcete-li přejmenovat identifikátor  
   
-1.  Vytvořte konzolovou aplikaci s názvem `RenameIdentifier`a potom nahraďte `Program` pomocí následujícího ukázkového kódu.  
+1. Vytvořte konzolovou aplikaci s názvem `RenameIdentifier`a potom nahraďte `Program` pomocí následujícího ukázkového kódu.  
   
     ```csharp  
     class ProtoClassA  
@@ -76,23 +76,23 @@ ms.locfileid: "54783290"
     }  
     ```  
   
-2.  Umístěte kurzor na `MethodB`, buď v deklaraci metody nebo volání metody.  
+2. Umístěte kurzor na `MethodB`, buď v deklaraci metody nebo volání metody.  
   
-3.  Z **Refaktorovat** nabídce vyberte možnost **přejmenovat**. **Přejmenovat** zobrazí se dialogové okno.  
+3. Z **Refaktorovat** nabídce vyberte možnost **přejmenovat**. **Přejmenovat** zobrazí se dialogové okno.  
   
      Můžete také kliknout pravým tlačítkem kurzor, přejděte na **Refaktorovat** na místní nabídku a pak klikněte na tlačítko **přejmenovat** zobrazíte **přejmenovat** dialogové okno.  
   
-4.  V **nový název** zadejte `MethodC`.  
+4. V **nový název** zadejte `MethodC`.  
   
-5.  Vyberte **vyhledávání v komentářích** zaškrtávací políčko.  
+5. Vyberte **vyhledávání v komentářích** zaškrtávací políčko.  
   
-6.  Klikněte na **OK**.  
+6. Klikněte na **OK**.  
   
-7.  V **náhled změn** dialogové okno, klikněte na tlačítko **použít**.  
+7. V **náhled změn** dialogové okno, klikněte na tlačítko **použít**.  
   
 #### <a name="to-rename-an-identifier-using-smart-tags"></a>Chcete-li přejmenovat identifikátor pomocí inteligentních značek  
   
-1.  Vytvořte konzolovou aplikaci s názvem `RenameIdentifier`a potom nahraďte `Program` pomocí následujícího ukázkového kódu.  
+1. Vytvořte konzolovou aplikaci s názvem `RenameIdentifier`a potom nahraďte `Program` pomocí následujícího ukázkového kódu.  
   
     ```csharp  
     class ProtoClassA  
@@ -113,18 +113,18 @@ ms.locfileid: "54783290"
     }  
     ```  
   
-2.  V deklaraci pro `MethodB`, typ nebo smažte vše přes metoda identifikátor. Inteligentní značky řádku se zobrazí pod tento identifikátor.  
+2. V deklaraci pro `MethodB`, typ nebo smažte vše přes metoda identifikátor. Inteligentní značky řádku se zobrazí pod tento identifikátor.  
   
     > [!NOTE]
     >  Lze vyvolat pouze refaktoring pro přejmenování pomocí inteligentních značek v deklaraci identifikátoru.  
   
-3.  Zadejte klávesovou zkratku SHIFT + ALT + F10 a stiskněte klávesu šipka dolů k zobrazení v nabídce inteligentních značek.  
+3. Zadejte klávesovou zkratku SHIFT + ALT + F10 a stiskněte klávesu šipka dolů k zobrazení v nabídce inteligentních značek.  
   
      -nebo-  
   
      Přesuňte ukazatel myši nad inteligentní značky řádku zobrazíte inteligentních značek. Potom přesuňte ukazatel myši nad inteligentních značek a klikněte na šipku dolů a zobrazit v nabídce inteligentních značek.  
   
-4.  Vyberte **přejmenovat '\<identifer1 >' k '\<identifier2 >'** položku nabídky, která se má vyvolat, refaktoring pro přejmenování bez změny kódu ve verzi preview. Všechny odkazy na  **\<identifer1 >** se automaticky aktualizují na  **\<identifier2 >**.  
+4. Vyberte **přejmenovat '\<identifer1 >' k '\<identifier2 >'** položku nabídky, která se má vyvolat, refaktoring pro přejmenování bez změny kódu ve verzi preview. Všechny odkazy na  **\<identifer1 >** se automaticky aktualizují na  **\<identifier2 >**.  
   
      -nebo-  
   

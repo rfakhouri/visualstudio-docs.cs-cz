@@ -10,12 +10,12 @@ ms.assetid: 8e03bee5-ab7b-4b40-9497-9dbe91ccb90e
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bb5227c4b5f771747a43a7f0f12e0125b125604e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e19e1cb4f9b49c40923d96b177ceb4d6c31b746f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55943373"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60090017"
 ---
 # <a name="edit-think-times-to-simulate-website-human-interaction-delays-in-load-tests-scenarios"></a>Úpravy dob uvažování pro simulaci prodlev při zásahem ze strany webové stránky ve scénářích zátěžových testů
 
@@ -48,13 +48,13 @@ Doby uvažování se používá, ale měnit na normální křivky. Poskytuje ví
 
 ### <a name="to-change-a-think-profile-in-a-load-test-scenario"></a>Chcete-li změnit profil uvažování nastaven ve scénáři zátěžového testu
 
-1.  Z webového výkonu a zatížení testovací projekt, otevřete zátěžový test.
+1. Z webového výkonu a zatížení testovací projekt, otevřete zátěžový test.
 
-2.  V **editoru zátěžových testů**, vyberte uzel scénář, ve které chcete změnit **myslíte, že profil**. **Myslíte, že profil** se zobrazí **vlastnosti** okna. Stisknutím klávesy **F4** zobrazíte **vlastnosti** okna.
+2. V **editoru zátěžových testů**, vyberte uzel scénář, ve které chcete změnit **myslíte, že profil**. **Myslíte, že profil** se zobrazí **vlastnosti** okna. Stisknutím klávesy **F4** zobrazíte **vlastnosti** okna.
 
-3.  Změnit **myslíte, že profil** vlastnost **vlastnosti** okna.
+3. Změnit **myslíte, že profil** vlastnost **vlastnosti** okna.
 
-4.  Po dokončení změn vlastností zvolte **Uložit** na **souboru** nabídky. Můžete spustit zátěžový test pomocí nového profil uvažování nastaven.
+4. Po dokončení změn vlastností zvolte **Uložit** na **souboru** nabídky. Můžete spustit zátěžový test pomocí nového profil uvažování nastaven.
 
 ## <a name="see-also"></a>Viz také:
 

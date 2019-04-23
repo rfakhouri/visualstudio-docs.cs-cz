@@ -11,12 +11,12 @@ ms.assetid: 7eb9290a-f9f6-4e41-9caa-796fcfaf0610
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c72eb3db36310efd69d18078ca43c1907697453b
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: dfcbac0bb9188826804ba13884f0f57962dddeab
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58414967"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60086491"
 ---
 # <a name="how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter"></a>Postupy: Svázat testovací kontrolér nebo testovacího agenta na síťový adaptér
 
@@ -35,19 +35,19 @@ Pokud počítač, který obsahuje testovací kontrolér nebo software testovací
 
 ### <a name="to-obtain-the-ip-addresses-of-the-network-adapters"></a>Chcete-li získat IP adresy síťových adaptérů
 
-1.  V Microsoft Windows, zvolte **Start**, zvolte **Zahájit hledání** zadejte **cmd**a klikněte na tlačítko **Enter**.
+1. V Microsoft Windows, zvolte **Start**, zvolte **Zahájit hledání** zadejte **cmd**a klikněte na tlačítko **Enter**.
 
-2.  Typ **ipconfig/all**.
+2. Typ **ipconfig/all**.
 
      Se zobrazují IP adresy pro síťové adaptéry. Zaznamenejte adresu IP síťového adaptéru, který chcete vytvořit vazbu řadiče.
 
 ### <a name="to-bind-a-network-adapter-to-a-test-controller"></a>Chcete-li vytvořit vazbu na síťový adaptér do testovacího kontroléru
 
-1.  V Microsoft Windows, zvolte **Start**, zvolte **Zahájit hledání** zadejte **services.msc**a klikněte na tlačítko **Enter**.
+1. V Microsoft Windows, zvolte **Start**, zvolte **Zahájit hledání** zadejte **services.msc**a klikněte na tlačítko **Enter**.
 
      **Služby** zobrazí dialogové okno.
 
-2.  V podokně výsledků v části **název** sloupce, klikněte pravým tlačítkem na **Visual Studio Test Controller** služby a klikněte na tlačítko **Zastavit**.
+2. V podokně výsledků v části **název** sloupce, klikněte pravým tlačítkem na **Visual Studio Test Controller** služby a klikněte na tlačítko **Zastavit**.
 
      -nebo-
 
@@ -55,9 +55,9 @@ Pokud počítač, který obsahuje testovací kontrolér nebo software testovací
 
      `net stop vsttcontroller`
 
-3.  Otevřít *QTCcontroller.exe.config* konfigurační soubor XML v *% ProgramFiles (x86) %\Microsoft Visual Studio\2017\\\<edition > \Common7\IDE*.
+3. Otevřít *QTCcontroller.exe.config* konfigurační soubor XML v *% ProgramFiles (x86) %\Microsoft Visual Studio\2017\\\<edition > \Common7\IDE*.
 
-4.  Vyhledejte `<appSettings>` značky.
+4. Vyhledejte `<appSettings>` značky.
 
     ```xml
     <appSettings>
@@ -71,14 +71,14 @@ Pokud počítač, který obsahuje testovací kontrolér nebo software testovací
     </appSettings>
     ```
 
-5.  Přidat `BindTo` klíč k určení síťového adaptéru, který chcete použít v `<appSettings>` oddílu.
+5. Přidat `BindTo` klíč k určení síťového adaptéru, který chcete použít v `<appSettings>` oddílu.
 
     ```xml
             <add key="BindTo" value="<YOUR IP ADDRESS>"/>
     </appSettings>
     ```
 
-6.  Spusťte službu testovacího řadiče. Chcete-li to provést, spusťte následující příkaz z příkazového řádku:
+6. Spusťte službu testovacího řadiče. Chcete-li to provést, spusťte následující příkaz z příkazového řádku:
 
     `net start vsttcontroller`
 
@@ -89,11 +89,11 @@ Pokud počítač, který obsahuje testovací kontrolér nebo software testovací
 
 ### <a name="to-bind-a-network-interface-card-to-a-test-agent"></a>Vytvořit vazbu karty síťového rozhraní na testovacího agenta
 
-1.  V Microsoft Windows, zvolte **Start**, zvolte **Zahájit hledání** zadejte **services.msc**a klikněte na tlačítko **Enter**.
+1. V Microsoft Windows, zvolte **Start**, zvolte **Zahájit hledání** zadejte **services.msc**a klikněte na tlačítko **Enter**.
 
     **Služby** zobrazí dialogové okno.
 
-2.  V podokně výsledků v části **název** sloupce, klikněte pravým tlačítkem na **Visual Studio Test Agent** služby a klikněte na tlačítko **Zastavit**.
+2. V podokně výsledků v části **název** sloupce, klikněte pravým tlačítkem na **Visual Studio Test Agent** služby a klikněte na tlačítko **Zastavit**.
 
      -nebo-
 
@@ -101,9 +101,9 @@ Pokud počítač, který obsahuje testovací kontrolér nebo software testovací
 
      **vsttagent net stop**
 
-3.  Otevřít *QTAgentService.exe.config* konfigurační soubor XML v *% ProgramFiles (x86) %\Microsoft Visual Studio\2017\\\<edition > \Common7\IDE*.
+3. Otevřít *QTAgentService.exe.config* konfigurační soubor XML v *% ProgramFiles (x86) %\Microsoft Visual Studio\2017\\\<edition > \Common7\IDE*.
 
-4.  Vyhledejte `<appSettings>` značky.
+4. Vyhledejte `<appSettings>` značky.
 
     ```xml
     <appSettings>
@@ -117,14 +117,14 @@ Pokud počítač, který obsahuje testovací kontrolér nebo software testovací
     </appSettings>  </appSettings>
     ```
 
-5.  Přidat `BindTo` klíč k určení síťového adaptéru, který chcete použít v `<appSettings>` oddílu.
+5. Přidat `BindTo` klíč k určení síťového adaptéru, který chcete použít v `<appSettings>` oddílu.
 
     ```xml
             <add key="BindTo" value="<YOUR IP ADDRESS>"/>
     </appSettings>
     ```
 
-6.  Spusťte službu testovacího agenta. Chcete-li to provést, spusťte následující příkaz z příkazového řádku:
+6. Spusťte službu testovacího agenta. Chcete-li to provést, spusťte následující příkaz z příkazového řádku:
 
     `net start vsttagent`
 

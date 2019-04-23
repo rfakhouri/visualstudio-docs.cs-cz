@@ -16,12 +16,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: fc79308010b895156ee57bbb5a5e2458a19b3838
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 191be9ea5433351f6f89366cc2240d8b0801e54b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649157"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111724"
 ---
 # <a name="tutorial-get-started-with-c-and-aspnet-core-in-visual-studio"></a>Kurz: Začínáme s C# a ASP.NET Core v sadě Visual Studio
 
@@ -222,6 +222,7 @@ Toto řešení následuje **stránky Razor** vzoru návrhu. Se liší od [Model-
      Message = String.Format("Your directory is {0}.", directory);
      }
     ```
+
 1. Všimněte si, že dvě podtržení vlnovkou Microsoft.VSTS.Common **prostředí** a **řetězec**. Podtržení vlnovkou zobrazeny, protože tyto typy nejsou v oboru.
 
    ![Chyby označené podtržení vlnovkou v OnGet – metoda](media/csharp-aspnet-razor-add-new-on-get-method.png)

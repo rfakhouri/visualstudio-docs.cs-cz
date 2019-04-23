@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 73266c77a26f614af9978b48f7475086070aa5e6
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 1d4221cfdc0d741264aa4667892117ba0cc24f9a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59666004"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108279"
 ---
 # <a name="msbuild-multitargeting-overview"></a>Přehled cílení na více verzí nástroje MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,15 +26,15 @@ Pomocí nástroje MSBuild můžete zkompilovat aplikaci pro spuštění v jedné
   
  Toto jsou některé funkce cílí na MSBuild:  
   
--   Můžete vyvíjet aplikace, která se zaměřuje na starší verzi rozhraní .NET Framework, například verze 2.0, 3.5 nebo 4.  
+- Můžete vyvíjet aplikace, která se zaměřuje na starší verzi rozhraní .NET Framework, například verze 2.0, 3.5 nebo 4.  
   
--   Můžete cílit rozhraní než .NET Framework, například rozhraní Silverlight.  
+- Můžete cílit rozhraní než .NET Framework, například rozhraní Silverlight.  
   
--   Můžete cílit *profil rozhraní*, což je předdefinovaná podmnožina cílového rozhraní framework.  
+- Můžete cílit *profil rozhraní*, což je předdefinovaná podmnožina cílového rozhraní framework.  
   
--   Pokud bude vydána aktualizace service pack pro aktuální verzi rozhraní .NET Framework, může ji zaměřit.  
+- Pokud bude vydána aktualizace service pack pro aktuální verzi rozhraní .NET Framework, může ji zaměřit.  
   
--   Cílení na MSBuild zaručuje, že aplikace používá pouze funkce, které jsou k dispozici v cíleného rozhraní a platformu.  
+- Cílení na MSBuild zaručuje, že aplikace používá pouze funkce, které jsou k dispozici v cíleného rozhraní a platformu.  
   
 ## <a name="target-framework-and-platform"></a>Cílové architektury a platformy  
  A *Cílová architektura* je verze rozhraní .NET Framework, která je vytvořená projekt spustit, a *cílovou platformu* je platforma systému sestavení ke spuštění v projektu.  Můžete například chtít cílová aplikace rozhraní .NET Framework 2.0 na 32bitové platformě, která je kompatibilní s 802 x 86 procesorů (x86) spuštění. Kombinace Cílová architektura a cílová platforma se označuje jako *cílový kontext*. Další informace najdete v tématu [Cílová architektura a cílová platforma](../msbuild/msbuild-target-framework-and-target-platform.md).  

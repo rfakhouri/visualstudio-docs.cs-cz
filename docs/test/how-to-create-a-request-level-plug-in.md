@@ -9,12 +9,12 @@ ms.assetid: d0b5b23c-7e94-4637-be6c-2620a5442d46
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6aec2dfe707fb7c7cbae6a3220cedade47e0c0c5
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: fc1d609bab25b6a8e0dd573807aa02fefbe87a71
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58415548"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60081889"
 ---
 # <a name="how-to-create-a-request-level-plug-in"></a>Postupy: Vytvoření modulu Plugin úrovni požadavků
 
@@ -30,23 +30,23 @@ Přizpůsobená webová výkonu testovací požadavek modulů plug-in můžete p
 
 ## <a name="to-create-a-request-level-plug-in"></a>K vytvoření modulu Plugin úrovni požadavků
 
-1.  V **Průzkumníka řešení**, klikněte pravým tlačítkem na řešení, vyberte **přidat** a klikněte na tlačítko **nový projekt**.
+1. V **Průzkumníka řešení**, klikněte pravým tlačítkem na řešení, vyberte **přidat** a klikněte na tlačítko **nový projekt**.
 
 2. Vytvořte nový **knihovny tříd** projektu.
 
-3.  V **Průzkumníka řešení**, klikněte pravým tlačítkem na **odkazy** složku novou knihovnu tříd a vyberte **přidat odkaz**.
+3. V **Průzkumníka řešení**, klikněte pravým tlačítkem na **odkazy** složku novou knihovnu tříd a vyberte **přidat odkaz**.
 
      **Přidat odkaz** se zobrazí dialogové okno.
 
-4.  Zvolte **.NET** kartu, posuňte se dolů a vyberte **Microsoft.VisualStudio.QualityTools.WebTestFramework** a klikněte na tlačítko **OK**
+4. Zvolte **.NET** kartu, posuňte se dolů a vyberte **Microsoft.VisualStudio.QualityTools.WebTestFramework** a klikněte na tlačítko **OK**
 
      Odkaz na **Microsoft.VisualStudio.QualityTools.WebTestFramework** se přidá do **odkaz** složky **Průzkumníka řešení**.
 
-5.  V **Průzkumníka řešení**, klikněte pravým tlačítkem na nejvyšší uzel webového výkonu a zatížení testovacího projektu, který obsahuje zátěžový test, ke kterému chcete přidat test výkonu webu testovací požadavek modulu plug-in. Vyberte **přidat odkaz na**.
+5. V **Průzkumníka řešení**, klikněte pravým tlačítkem na nejvyšší uzel webového výkonu a zatížení testovacího projektu, který obsahuje zátěžový test, ke kterému chcete přidat test výkonu webu testovací požadavek modulu plug-in. Vyberte **přidat odkaz na**.
 
      **Zobrazí se dialogové okno Přidat odkaz**.
 
-6.  Zvolte **projekty** kartu, vyberte **projekt knihovny tříd** a klikněte na tlačítko **OK** .
+6. Zvolte **projekty** kartu, vyberte **projekt knihovny tříd** a klikněte na tlačítko **OK** .
 
 7. V **Editor kódu**, psát kód modul plug-in. Nejprve vytvořte novou veřejnou třídu, která je odvozena z <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin>.
 

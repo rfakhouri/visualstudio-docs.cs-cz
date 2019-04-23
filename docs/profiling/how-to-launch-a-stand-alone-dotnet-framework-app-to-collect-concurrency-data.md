@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 732180c026f1620fe0bc1d7b5c8363a524da7171
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: ccd234f30c6a9d4d6a0672875b5daf04bab4cb68
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59662956"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60101753"
 ---
 # <a name="how-to-launch-a-stand-alone-net-framework-application-with-the-profiler-to-collect-concurrency-data-by-using-the-command-line"></a>Postupy: Spuštění samostatné aplikace rozhraní .NET Framework s profilerem ke shromažďování dat souběžnosti pomocí příkazového řádku
 Toto téma popisuje způsob používání nástrojů příkazového řádku balíku nástrojů pro profilaci sady [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ke spuštění samostatné (klientské) aplikace rozhraní .NET Framework a shromažďování dat procesu a souběžnosti vláken.
@@ -71,7 +71,7 @@ Toto téma popisuje způsob používání nástrojů příkazového řádku bal�
 
 #### <a name="to-start-and-stop-data-collection"></a>Spuštění a zastavení shromažďování dat
 
-1.  Následující páry *VSPerfCmd.exe* možností spouští a zastavují sběr dat. Každou možnost zadejte na samostatný příkazový řádek. Sběr dat lze zapnout a vypnout několikrát.
+1. Následující páry *VSPerfCmd.exe* možností spouští a zastavují sběr dat. Každou možnost zadejte na samostatný příkazový řádek. Sběr dat lze zapnout a vypnout několikrát.
 
     |Možnost|Popis|
     |------------|-----------------|
@@ -84,15 +84,15 @@ Toto téma popisuje způsob používání nástrojů příkazového řádku bal�
 
 #### <a name="to-end-a-profiling-session"></a>Chcete-li ukončit relaci profilování
 
-1.  Proveďte jednu z následujících-li odpojit profiler od cílové aplikace.
+1. Proveďte jednu z následujících-li odpojit profiler od cílové aplikace.
 
-    -   Ukončete cílovou aplikaci.
+    - Ukončete cílovou aplikaci.
 
          -nebo-
 
-    -   Typ **VSPerfCmd / odpojení**
+    - Typ **VSPerfCmd / odpojení**
 
-2.  Ukončete profiler.
+2. Ukončete profiler.
 
      **Nástroj VSPerfCmd** [ /Shutdown](../profiling/shutdown.md)
 

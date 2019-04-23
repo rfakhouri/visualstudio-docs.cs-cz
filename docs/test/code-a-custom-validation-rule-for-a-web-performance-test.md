@@ -15,12 +15,12 @@ dev_langs:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3f26dc7fd69c5190f5ba56985ef2509ddbf87866
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c39518c03d1a599dbe9eecac3d609343b7394313
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55919908"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099751"
 ---
 # <a name="code-a-custom-validation-rule-for-a-web-performance-test"></a>Kód vlastního ověřovacího pravidla pro test výkonnosti webu
 
@@ -33,24 +33,24 @@ Můžete vytvořit vlastní ověřovací pravidla. K tomuto účelu odvozujete o
 
 ## <a name="to-create-custom-validation-rules"></a>Chcete-li vytvořit vlastní ověřovací pravidla
 
-1.  Otevřete projekt testů obsahující test výkonnosti webu.
+1. Otevřete projekt testů obsahující test výkonnosti webu.
 
-2.  (Volitelné) Vytvořte samostatný projekt knihovny tříd, do kterého chcete uložit ověřovací pravidlo.
+2. (Volitelné) Vytvořte samostatný projekt knihovny tříd, do kterého chcete uložit ověřovací pravidlo.
 
     > [!IMPORTANT]
     > Třídu lze vytvořit ve stejném projektu, ve kterém jsou testy. Nicméně pokud chcete pravidlo znovu použít, je vhodnější vytvořit samostatný projekt knihovny tříd, do které pravidlo uložíte. Pokud vytvoříte samostatný projekt, je nutné provést volitelné kroky v tomto postupu.
 
-3.  (Volitelné) V projektu knihovny tříd přidejte odkaz na knihovnu DLL Microsoft.VisualStudio.QualityTools.WebTestFramework.
+3. (Volitelné) V projektu knihovny tříd přidejte odkaz na knihovnu DLL Microsoft.VisualStudio.QualityTools.WebTestFramework.
 
-4.  Vytvořte třídu, která je odvozena od třídy <xref:Microsoft.VisualStudio.TestTools.WebTesting.ValidationRule>. Implementujte členy <xref:Microsoft.VisualStudio.TestTools.WebTesting.ValidationRule.Validate*> a <xref:Microsoft.VisualStudio.TestTools.WebTesting.ValidationRule.RuleName*>.
+4. Vytvořte třídu, která je odvozena od třídy <xref:Microsoft.VisualStudio.TestTools.WebTesting.ValidationRule>. Implementujte členy <xref:Microsoft.VisualStudio.TestTools.WebTesting.ValidationRule.Validate*> a <xref:Microsoft.VisualStudio.TestTools.WebTesting.ValidationRule.RuleName*>.
 
-5.  (Volitelné) Vytvořte nový projekt knihovny tříd.
+5. (Volitelné) Vytvořte nový projekt knihovny tříd.
 
-6.  (Volitelné) V testovacím projektu přidejte odkaz na projekt knihovny tříd, který obsahuje vlastní ověřovací pravidlo.
+6. (Volitelné) V testovacím projektu přidejte odkaz na projekt knihovny tříd, který obsahuje vlastní ověřovací pravidlo.
 
-7.  V projektu testů otevřete test výkonnosti webu v **editoru testu výkonnosti webu**.
+7. V projektu testů otevřete test výkonnosti webu v **editoru testu výkonnosti webu**.
 
-8.  Přidání vlastního ověřovacího pravidla na požadavek testu výkonnosti webu, klikněte pravým tlačítkem na žádost a vyberte **přidat ověřovací pravidlo**.
+8. Přidání vlastního ověřovacího pravidla na požadavek testu výkonnosti webu, klikněte pravým tlačítkem na žádost a vyberte **přidat ověřovací pravidlo**.
 
      **Přidat ověřovací pravidlo** zobrazí se dialogové okno. Zobrazí se vlastní ověřovací pravidlo v **vyberte pravidlo** seznamu, společně s předdefinovanými ověřovacími pravidly. Vyberte vlastní ověřovací pravidlo a pak zvolte **OK**.
 

@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 85be4e713a4cf2581200da7589a1001e6510459d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a5ce4f298039d6d86f8c4855d1f139b6be1d1175
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55948547"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105113"
 ---
 # <a name="analyzing-coded-ui-tests-using-coded-ui-test-logs"></a>Analýza kódované UI testy pomocí programového protokolů testu uživatelského rozhraní
 
@@ -60,18 +60,18 @@ V závislosti na scénáři použijte jednu z následujících metod k povolení
 
 Při spuštění programového testu uživatelského rozhraní pomocí změny *QTAgent32.exe.config* soubor na místě, zobrazí se výstup na odkaz v **Průzkumníka testů** výsledky. Soubory protokolů jsou vytvářeny, ne jenom v případě, že se test nezdaří, ale také u úspěšných testů, pokud je úroveň trasování nastavena na "podrobné."
 
-1.  Na **testovací** nabídce zvolte **Windows** a pak vyberte **Průzkumník testů**.
+1. Na **testovací** nabídce zvolte **Windows** a pak vyberte **Průzkumník testů**.
 
-2.  Na **sestavení** nabídce zvolte **sestavit řešení**.
+2. Na **sestavení** nabídce zvolte **sestavit řešení**.
 
-3.  V **Průzkumníka testů**, vyberte programový test uživatelského rozhraní, kterou chcete spustit, otevřete místní nabídku a klikněte na tlačítko **spustit vyberte testy**.
+3. V **Průzkumníka testů**, vyberte programový test uživatelského rozhraní, kterou chcete spustit, otevřete místní nabídku a klikněte na tlačítko **spustit vyberte testy**.
 
      Automatizované testy proběhnou a označení pokud úspěšný nebo neúspěšný.
 
     > [!TIP]
     > Chcete-li zobrazit **Průzkumník testů**, zvolte **testovací** > **Windows**a klikněte na tlačítko **Průzkumník testů**.
 
-4.  Zvolte **výstup** odkaz v **Průzkumník testů** výsledky.
+4. Zvolte **výstup** odkaz v **Průzkumník testů** výsledky.
 
      ![Výstup odkaz v Průzkumníku testů](../test/media/cuit_htmlactionlog1.png)
 
@@ -79,7 +79,7 @@ Při spuštění programového testu uživatelského rozhraní pomocí změny *Q
 
      ![Výsledky a odkazy na výstup z programového testu uživatelského rozhraní](../test/media/cuit_htmlactionlog2.png)
 
-5.  Zvolte *UITestActionLog.html* odkaz.
+5. Zvolte *UITestActionLog.html* odkaz.
 
      Protokol se zobrazí ve webovém prohlížeči.
 

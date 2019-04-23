@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: deb28fcce5f27b7a392b570c140bb959b30b596c
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 96df14cc6e337402761d89d7161094b513473a78
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335243"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104990"
 ---
 # <a name="how-to-implement-nested-projects"></a>Postupy: Implementace vnořených projektů
 
@@ -24,18 +24,18 @@ Při vytváření typu vnořený projekt existuje několik dalších kroků, kte
 
 ## <a name="create-nested-projects"></a>Vytvoření vnořených projektů
 
-1.  Integrované vývojové prostředí (IDE) načte informace o souboru a spuštění projektu nadřazený projekt voláním <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory> rozhraní. Nadřazený projekt je vytvořen a přidán do řešení.
+1. Integrované vývojové prostředí (IDE) načte informace o souboru a spuštění projektu nadřazený projekt voláním <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory> rozhraní. Nadřazený projekt je vytvořen a přidán do řešení.
 
     > [!NOTE]
     > V tomto okamžiku je příliš stará v procesu pro nadřazený projekt na vytvoření vnořený projekt, protože nadřazený projekt musí být vytvořen před vytvořením podřízené projekty. Toto pořadí nadřazeného projektu nastavení můžete použít podřízené projekty a podřízené projekty můžete získat informace z nadřazené projektů v případě potřeby. Toto pořadí je, pokud to není nutné provádět na klienty, jako je například Správa zdrojového kódu (SCC) a **Průzkumníka řešení**.
 
      Nadřazený projekt musí čekat <xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject.OpenChildren%2A> metoda volána integrovaným vývojovým prostředím, před jeho vnořené (podřízené) je možné vytvořit projekt nebo projekty.
 
-2.  Volání rozhraní IDE `QueryInterface` na nadřazený projekt pro <xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject>. Pokud toto volání bude úspěšné, volání integrovaného vývojového prostředí <xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject.OpenChildren%2A> metoda nadřazeného prvku všech vnořených projektů pro nadřazený projekt otevřete.
+2. Volání rozhraní IDE `QueryInterface` na nadřazený projekt pro <xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject>. Pokud toto volání bude úspěšné, volání integrovaného vývojového prostředí <xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject.OpenChildren%2A> metoda nadřazeného prvku všech vnořených projektů pro nadřazený projekt otevřete.
 
-3.  Volání nadřazený projekt <xref:Microsoft.VisualStudio.Shell.Interop.IVsFireSolutionEvents.FireOnBeforeOpeningChildren%2A> metoda oznámit naslouchacích procesů, které vnořené projekty se chystáte vytvořit. SCC, například naslouchá na tyto události chcete vědět, pokud kroky v procesu vytváření řešení a projektu se vyskytují v pořadí. Pokud se objeví mimo pořadí kroků, řešení není registrován správně pomocí správy zdrojového kódu.
+3. Volání nadřazený projekt <xref:Microsoft.VisualStudio.Shell.Interop.IVsFireSolutionEvents.FireOnBeforeOpeningChildren%2A> metoda oznámit naslouchacích procesů, které vnořené projekty se chystáte vytvořit. SCC, například naslouchá na tyto události chcete vědět, pokud kroky v procesu vytváření řešení a projektu se vyskytují v pořadí. Pokud se objeví mimo pořadí kroků, řešení není registrován správně pomocí správy zdrojového kódu.
 
-4.  Volání nadřazený projekt <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.AddVirtualProject%2A> metoda nebo <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.AddVirtualProjectEx%2A> metodu na každý z jeho podřízených projektů.
+4. Volání nadřazený projekt <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.AddVirtualProject%2A> metoda nebo <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.AddVirtualProjectEx%2A> metodu na každý z jeho podřízených projektů.
 
      Můžete předat <xref:Microsoft.VisualStudio.Shell.Interop.__VSADDVPFLAGS> k `AddVirtualProject` indikace, že by virtuální (vnořených) projekt přidán do projektu okna vyloučena ze sestavení, přidat do správy zdrojového kódu a tak dále. `VSADDVPFLAGS` umožňuje řídit viditelnost vnořený projekt a určit, jaké funkce jsou k ní přidružena.
 
@@ -43,15 +43,15 @@ Při vytváření typu vnořený projekt existuje několik dalších kroků, kte
 
      Pokud není žádný identifikátor GUID, například při přidání nového projektu vnořené řešení vytvoří pro projekt v době, kdy se přidá do nadřazené. Je odpovědností nadřazený projekt se zachovat tento projekt identifikátor GUID v jeho souboru projektu. Při odstranění vnořený projekt, můžete odstranit také identifikátor GUID pro daný projekt.
 
-5.  Volání rozhraní IDE <xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject.OpenChildren> metodu na každý podřízený projekt z nadřazeného projektu.
+5. Volání rozhraní IDE <xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject.OpenChildren> metodu na každý podřízený projekt z nadřazeného projektu.
 
      Nadřazený projekt musí implementovat `IVsParentProject` Pokud budete chtít vnořit projekty. Ale nadřazený projekt nikdy volání `QueryInterface` pro `IVsParentProject` i v případě, že má nadřazený projekty pod ním. Řešení zpracovává volání `IVsParentProject` a pokud je implementováno, zavolá `OpenChildren` vytvoření vnořených projektů. `AddVirtualProjectEX` je volána vždy z `OpenChildren`. To by nikdy volat žádný nadřazený projekt Zachovat hierarchii událostí vytváření v pořadí.
 
-6.  Volání rozhraní IDE <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterOpenProject%2A> metodu na podřízený projekt.
+6. Volání rozhraní IDE <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterOpenProject%2A> metodu na podřízený projekt.
 
-7.  Volání nadřazený projekt <xref:Microsoft.VisualStudio.Shell.Interop.IVsFireSolutionEvents.FireOnAfterOpeningChildren%2A> metoda oznámit naslouchacích procesů vytvořené podřízené projekty nadřazené.
+7. Volání nadřazený projekt <xref:Microsoft.VisualStudio.Shell.Interop.IVsFireSolutionEvents.FireOnAfterOpeningChildren%2A> metoda oznámit naslouchacích procesů vytvořené podřízené projekty nadřazené.
 
-8.  Volání rozhraní IDE <xref:Microsoft.VisualStudio.Shell.Interop.IVsFireSolutionEvents.FireOnAfterOpenProject%2A> metodu na nadřazený projekt po otevření všechny podřízené projekty.
+8. Volání rozhraní IDE <xref:Microsoft.VisualStudio.Shell.Interop.IVsFireSolutionEvents.FireOnAfterOpenProject%2A> metodu na nadřazený projekt po otevření všechny podřízené projekty.
 
      Pokud ještě neexistuje, nadřazený projekt vytvoří identifikátor GUID pro každý projekt vnořené voláním `CoCreateGuid`.
 

@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f1b4137a6f024a9a4f752af7c9e19fd946a1c282
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 284b7f501d729a89ff31ab9fee187d3f3e19d4b2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59653889"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60090140"
 ---
 # <a name="walkthrough-change-document-formatting-using-checkbox-controls"></a>Návod: Změna formátování dokumentů s použitím ovládacích prvků CheckBox
   Tento návod ukazuje, jak změnit formátování textu pomocí ovládacích prvků Windows Forms v přizpůsobení úrovni dokumentu pro aplikaci Microsoft Office Word.
@@ -41,16 +41,16 @@ ms.locfileid: "59653889"
 ## <a name="prerequisites"></a>Požadavky
  K dokončení tohoto návodu budete potřebovat následující komponenty:
 
--   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
+- [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
--   [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] nebo [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].
+- [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] nebo [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].
 
 ## <a name="create-the-project"></a>Vytvoření projektu
  Prvním krokem je vytvoření projektu dokumentu aplikace Word.
 
 ### <a name="create-a-new-project"></a>Vytvoření nového projektu
 
-1.  Vytvoření projektu Wordového dokumentu s názvem **Moje formátování aplikace Word**. V průvodci vyberte **vytvoříte nový textový dokument**.
+1. Vytvoření projektu Wordového dokumentu s názvem **Moje formátování aplikace Word**. V průvodci vyberte **vytvoříte nový textový dokument**.
 
      Další informace najdete v tématu [jak: Vytvářet projekty pro Office v sadě Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
@@ -61,31 +61,31 @@ ms.locfileid: "59653889"
 
 ### <a name="add-three-check-boxes"></a>Přidejte tři políčka
 
-1.  Ověřte, že dokument je otevřen v návrháři aplikace Visual Studio.
+1. Ověřte, že dokument je otevřen v návrháři aplikace Visual Studio.
 
-2.  Z **běžné ovládací prvky** karty **nástrojů**, přetáhněte první <xref:Microsoft.Office.Tools.Word.Controls.CheckBox> ovládací prvek v dokumentu.
+2. Z **běžné ovládací prvky** karty **nástrojů**, přetáhněte první <xref:Microsoft.Office.Tools.Word.Controls.CheckBox> ovládací prvek v dokumentu.
 
-3.  V **vlastnosti** okně změnit následující vlastnosti.
+3. V **vlastnosti** okně změnit následující vlastnosti.
 
-    |Vlastnost|Hodnota|
+    |Vlastnost|Value|
     |--------------|-----------|
     |**Název**|**applyBoldFont**|
     |**Text**|**Tučné**|
 
-4.  Stisknutím klávesy **Enter** přesuňte kurzor pod první zaškrtávací políčko.
+4. Stisknutím klávesy **Enter** přesuňte kurzor pod první zaškrtávací políčko.
 
-5.  Přidejte druhý zaškrtávací políčko níže dokumentu `ApplyBoldFont` zaškrtněte políčko a změnit následující vlastnosti.
+5. Přidejte druhý zaškrtávací políčko níže dokumentu `ApplyBoldFont` zaškrtněte políčko a změnit následující vlastnosti.
 
-    |Vlastnost|Value|
+    |Vlastnost|Hodnota|
     |--------------|-----------|
     |**Název**|**applyItalicFont**|
     |**Text**|**Kurzíva**|
 
-6.  Stisknutím klávesy **Enter** přesuňte kurzor pod zaškrtávacím políčkem druhý.
+6. Stisknutím klávesy **Enter** přesuňte kurzor pod zaškrtávacím políčkem druhý.
 
-7.  Přidat třetí zaškrtávací políčko níže dokumentu `ApplyItalicFont` zaškrtněte políčko a změnit následující vlastnosti.
+7. Přidat třetí zaškrtávací políčko níže dokumentu `ApplyItalicFont` zaškrtněte políčko a změnit následující vlastnosti.
 
-    |Vlastnost|Value|
+    |Vlastnost|Hodnota|
     |--------------|-----------|
     |**Název**|**applyUnderlineFont**|
     |**Text**|**Podtržení**|
@@ -113,28 +113,28 @@ ms.locfileid: "59653889"
 
 ### <a name="change-formatting-when-a-check-box-is-selected"></a>Změna formátování, pokud je zaškrtnuto zaškrtávací políčko
 
-1.  Klikněte pravým tlačítkem na `ThisDocument` v **Průzkumníka řešení**a potom klikněte na tlačítko **zobrazit kód** v místní nabídce.
+1. Klikněte pravým tlačítkem na `ThisDocument` v **Průzkumníka řešení**a potom klikněte na tlačítko **zobrazit kód** v místní nabídce.
 
-2.  Pro C# pouze, přidejte následující konstanty **ThisDocument** třídy.
+2. Pro C# pouze, přidejte následující konstanty **ThisDocument** třídy.
 
      [!code-csharp[Trin_VstcoreProgrammingControlsWord#2](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ThisDocument.cs#2)]
 
-3.  Přidejte následující kód, který <xref:System.Windows.Forms.Control.Click> obslužná rutina události `applyBoldFont` zaškrtávací políčko.
+3. Přidejte následující kód, který <xref:System.Windows.Forms.Control.Click> obslužná rutina události `applyBoldFont` zaškrtávací políčko.
 
      [!code-vb[Trin_VstcoreProgrammingControlsWord#3](../vsto/codesnippet/VisualBasic/my chart options/ThisDocument.vb#3)]
      [!code-csharp[Trin_VstcoreProgrammingControlsWord#3](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ThisDocument.cs#3)]
 
-4.  Přidejte následující kód, který <xref:System.Windows.Forms.Control.Click> obslužná rutina události `applyItalicFont` zaškrtávací políčko.
+4. Přidejte následující kód, který <xref:System.Windows.Forms.Control.Click> obslužná rutina události `applyItalicFont` zaškrtávací políčko.
 
      [!code-vb[Trin_VstcoreProgrammingControlsWord#4](../vsto/codesnippet/VisualBasic/my chart options/ThisDocument.vb#4)]
      [!code-csharp[Trin_VstcoreProgrammingControlsWord#4](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ThisDocument.cs#4)]
 
-5.  Přidejte následující kód, který <xref:System.Windows.Forms.Control.Click> obslužná rutina události `applyUnderlineFont` zaškrtávací políčko.
+5. Přidejte následující kód, který <xref:System.Windows.Forms.Control.Click> obslužná rutina události `applyUnderlineFont` zaškrtávací políčko.
 
      [!code-vb[Trin_VstcoreProgrammingControlsWord#5](../vsto/codesnippet/VisualBasic/my chart options/ThisDocument.vb#5)]
      [!code-csharp[Trin_VstcoreProgrammingControlsWord#5](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ThisDocument.cs#5)]
 
-6.  V C#, je nutné přidat obslužné rutiny událostí pro textová pole <xref:Microsoft.Office.Tools.Word.Document.Startup> událostí. Informace o tom, jak vytváření obslužných rutin událostí, naleznete v tématu [jak: Vytváření obslužných rutin událostí v projektech pro systém Office](../vsto/how-to-create-event-handlers-in-office-projects.md).
+6. V C#, je nutné přidat obslužné rutiny událostí pro textová pole <xref:Microsoft.Office.Tools.Word.Document.Startup> událostí. Informace o tom, jak vytváření obslužných rutin událostí, naleznete v tématu [jak: Vytváření obslužných rutin událostí v projektech pro systém Office](../vsto/how-to-create-event-handlers-in-office-projects.md).
 
      [!code-csharp[Trin_VstcoreProgrammingControlsWord#6](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ThisDocument.cs#6)]
 
@@ -143,18 +143,18 @@ ms.locfileid: "59653889"
 
 ### <a name="test-your-document"></a>Testovat váš dokument
 
-1.  Stisknutím klávesy **F5** ke spuštění projektu.
+1. Stisknutím klávesy **F5** ke spuštění projektu.
 
-2.  Vyberte nebo zrušte zaškrtnutí políčka.
+2. Vyberte nebo zrušte zaškrtnutí políčka.
 
-3.  Potvrďte, že je správně formátovaný text.
+3. Potvrďte, že je správně formátovaný text.
 
 ## <a name="next-steps"></a>Další kroky
  Tento návod ukazuje základy používání zaškrtávacích políček a formátování textu na dokumenty aplikace Word prostřednictvím kódu programu změna. Tady jsou některé úlohy, které by mohl pocházet Další:
 
--   Tlačítko se používá k naplnění textové pole. Další informace najdete v tématu [názorný postup: Zobrazení textu v textovém poli v dokumentu s použitím tlačítka](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md).
+- Tlačítko se používá k naplnění textové pole. Další informace najdete v tématu [názorný postup: Zobrazení textu v textovém poli v dokumentu s použitím tlačítka](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md).
 
--   Pomocí přepínačů vyberte styly grafu. Další informace najdete v tématu [názorný postup: Aktualizace grafu v dokumentu s použitím přepínačů](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md).
+- Pomocí přepínačů vyberte styly grafu. Další informace najdete v tématu [názorný postup: Aktualizace grafu v dokumentu s použitím přepínačů](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md).
 
 ## <a name="see-also"></a>Viz také:
 - [Návody pro aplikaci Word](../vsto/walkthroughs-using-word.md)

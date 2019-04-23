@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 60eeb84dcbea7a30cc0b46c3a22571ccfe258028
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: f0bd256f293cefc037a8950bdecd3615fad483f3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59648767"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60081916"
 ---
 # <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>Vývoj aplikací pro Univerzální platformu Windows (UWP)
 
@@ -57,7 +57,6 @@ Tady je seznam softwaru, které potřebujete:
      ![Úlohy UPW](media/uwp_workload.png)
 
 ::: moniker-end
-
 
 Po instalaci tohoto softwaru, je potřeba povolit zařízení s Windows 10 pro vývoj. Zobrazit [aktivovat zařízení pro vývoj](/windows/uwp/get-started/enable-your-device-for-development). Už nepotřebujete licenci vývojáře pro každé zařízení s Windows 10.
 

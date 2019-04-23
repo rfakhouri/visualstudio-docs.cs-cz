@@ -11,30 +11,30 @@ caps.latest.revision: 50
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dfa174ca228adcd404edb3e91733731f975ed732
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1dc596909862c2ebb490fa478e1f5f71f88dd7ac
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54767968"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106641"
 ---
 # <a name="customizing-and-extending-a-domain-specific-language"></a>Přizpůsobení a rozšíření jazyka specifického pro doménu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio modelování a vmsdk následující (sada SDK vizualizace položky) nabízí několik úrovní, ve kterém můžete definovat nástrojů pro modelování:  
   
-1.  Definice jazyka specifického pro doménu (DSL) pomocí diagramem definice DSL. Můžete rychle vytvořit DSL s graficky zápis, čitelné formě XML a základní nástroje, které jsou nutné ke generování kódu a další artefakty.  
+1. Definice jazyka specifického pro doménu (DSL) pomocí diagramem definice DSL. Můžete rychle vytvořit DSL s graficky zápis, čitelné formě XML a základní nástroje, které jsou nutné ke generování kódu a další artefakty.  
   
      Další informace najdete v tématu [jak se definuje jazyk specifický pro doménu](../modeling/how-to-define-a-domain-specific-language.md).  
   
-2.  Vylaďte DSL pomocí pokročilejších funkcí definici DSL. Například můžete provést další odkazy zobrazí, když uživatel vytvoří element. Tyto postupy jsou většinou dosáhnout v definici DSL a některé vyžadují pár řádků kódu programu.  
+2. Vylaďte DSL pomocí pokročilejších funkcí definici DSL. Například můžete provést další odkazy zobrazí, když uživatel vytvoří element. Tyto postupy jsou většinou dosáhnout v definici DSL a některé vyžadují pár řádků kódu programu.  
   
-3.  Rozšíření nástrojů pro modelování pomocí kódu programu. Vmsdk následující položky je navržená speciálně pro usnadnění integrace vašich rozšíření s kódem, který je generován z definice DSL.  Další informace najdete v tématu [psaní kódu pro úpravu jazyka specifického pro doménu specifického](../modeling/writing-code-to-customise-a-domain-specific-language.md).  
+3. Rozšíření nástrojů pro modelování pomocí kódu programu. Vmsdk následující položky je navržená speciálně pro usnadnění integrace vašich rozšíření s kódem, který je generován z definice DSL.  Další informace najdete v tématu [psaní kódu pro úpravu jazyka specifického pro doménu specifického](../modeling/writing-code-to-customise-a-domain-specific-language.md).  
   
 > [!NOTE]
 >  Po aktualizaci souboru definic DSL, nezapomeňte kliknout na **Transformovat všechny šablony** na panelu nástrojů Průzkumník řešení před opětovné sestavování svého řešení.  
   
-##  <a name="customShapes"></a> V této části  
+## <a name="customShapes"></a> V této části  
   
 |Tohoto efektu dosáhnete tak|Přečtěte si toto téma|  
 |----------------------------|-------------------------|  
@@ -59,7 +59,7 @@ Visual Studio modelování a vmsdk následující (sada SDK vizualizace položky
 |Zachovat obrazce rozložení a vzhled na kopírování a přetažení.|Přidání obrazců a konektorů k zkopírovaný `ElementGroupPrototype`. Je nejvhodnější metodu pro přepsání `ElementOperations.CreateElementGroupPrototype()`<br /><br /> Zobrazit [přizpůsobení chování kopírování](../modeling/customizing-copy-behavior.md).|  
 |Vkládání obrazců do zvoleného umístění, jako je aktuální pozice kurzoru.|Přepsat `ClipboardCommandSet.ProcessOnCopy()` použije umístění konkrétní verzi `ElementOperations.Merge().` naleznete v tématu [přizpůsobení chování kopírování](../modeling/customizing-copy-behavior.md).|  
 |Vytvoření další odkazy na vložení|Override ClipboardCommandSet.ProcessOnPasteCommand()|  
-|Povolit přetažení z diagramu, jiné DSL nebo UML diagramů a prvky Windows|Zobrazit [jak: Přidání obslužné rutiny operace přetažení myší](../modeling/how-to-add-a-drag-and-drop-handler.md)|  
+|Povolit přetažení z diagramu, jiné DSL nebo UML diagramů a prvky Windows|Zobrazit [jak: Přidání obslužné rutiny operace podporující přetahování](../modeling/how-to-add-a-drag-and-drop-handler.md)|  
 |Povolit tvar nebo nástroj přetahovat do podřízené obrazce, jako je port, jako kdyby byly přetahovat do nadřazené.|Definujte direktiva sloučení elementů na cílovou třídu objektu, předat přetažený objekt Nadřazený. Zobrazit [přizpůsobení vytvoření a přesunutí elementu](../modeling/customizing-element-creation-and-movement.md).|  
 |Povolit nástroj přetáhnout na obrazec a další odkazy tvaru nebo nebo objekty vytvořené. Chcete-li například povolit komentář, který má být přetaženy položku, ke kterému se chcete propojit.|Definování direktiva sloučení elementů ve třídě cílové domény a definování odkazů, které chcete vygenerovat. Ve složitých případech můžete přidat vlastní kód. Zobrazit [přizpůsobení vytvoření a přesunutí elementu](../modeling/customizing-element-creation-and-movement.md).|  
 |Vytvořte skupinu prvky pomocí jednoho nástroje. Například komponenta s pevnou sadu portů.|Potlačí metodu inicializace sady nástrojů v ToolboxHelper.cs. Vytvoření prvek skupiny prototypu (EGP) obsahující prvky a jejich vztahů odkazů. Zobrazit [přizpůsobení nástrojů a panelu nástrojů](../modeling/customizing-tools-and-the-toolbox.md).<br /><br /> Zahrnout obrazce instančního objektu a port EGP nebo definovat BoundsRules umístit obrazce portu při vytváření instance EGP. Zobrazit [umístění a velikost obrazce omezení BoundsRules](../modeling/boundsrules-constrain-shape-location-and-size.md).|  

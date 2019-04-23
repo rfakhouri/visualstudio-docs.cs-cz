@@ -1,5 +1,5 @@
 ---
-title: 'Průvodce: Pomocí rozhraní API Profiler | Dokumentace Microsoftu'
+title: 'Návod: Pomocí rozhraní API Profiler | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,14 +12,14 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 82d6c16c75cb2605bcdb8382d461d3557846fcc2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7cb8d054a2e26caddb2ccc9f37d20bb973b1833f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54769632"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60090800"
 ---
-# <a name="walkthrough-using-profiler-apis"></a>Průvodce: Pomocí rozhraní API Profiler
+# <a name="walkthrough-using-profiler-apis"></a>Návod: Pomocí rozhraní API Profiler
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Návod používá k ukazují, jak používat aplikace v jazyce C# [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] profilování rozhraní API nástroje. Chcete-li omezit množství dat shromážděných během profilace instrumentace použijete rozhraní API profileru.  
@@ -57,12 +57,12 @@ DataCollection.CurrentId);
   
 #### <a name="to-create-the-code-to-profile"></a>Chcete-li vytvořit kód pro profil  
   
-1.  Vytvořte nový projekt C# v sadě Visual Studio nebo pomocí příkazového řádku sestavení, v závislosti na vašich předvoleb.  
+1. Vytvořte nový projekt C# v sadě Visual Studio nebo pomocí příkazového řádku sestavení, v závislosti na vašich předvoleb.  
   
     > [!NOTE]
     >  Sestavení musí odkazovat na knihovnu Microsoft.VisualStudio.Profiler.dll umístěn v adresáři 9\Team nástroje nástroje sady Microsoft Visual Studio.  
   
-2.  Zkopírujte a vložte následující kód do vašeho projektu:  
+2. Zkopírujte a vložte následující kód do vašeho projektu:  
   
     ```  
     using System;  
@@ -141,23 +141,23 @@ DataCollection.CurrentId);
   
 #### <a name="to-collect-and-view-data-at-the-command-line"></a>Můžete shromažďovat a zobrazovat data na příkazovém řádku  
   
-1.  Zkompilujte ladicí verze ukázek kódu, který jste vytvořili v postupu "Vytvoření kódu pro profil" dříve v tomto návodu.  
+1. Zkompilujte ladicí verze ukázek kódu, který jste vytvořili v postupu "Vytvoření kódu pro profil" dříve v tomto návodu.  
   
-2.  Chcete-li Profilovat spravované aplikace, zadejte následující příkaz nastavit příslušné proměnné prostředí:  
+2. Chcete-li Profilovat spravované aplikace, zadejte následující příkaz nastavit příslušné proměnné prostředí:  
   
      **VsPefCLREnv /traceon**  
   
-3.  Zadejte následující příkaz:**VSInstr \<název souboru > .exe**  
+3. Zadejte následující příkaz:**VSInstr \<název souboru > .exe**  
   
-4.  Zadejte následující příkaz:**/start:trace VSPerfCmd/output:\<název souboru > .vsp**  
+4. Zadejte následující příkaz:**/start:trace VSPerfCmd/output:\<název souboru > .vsp**  
   
-5.  Zadejte následující příkaz:**VSPerfCmd /globaloff**  
+5. Zadejte následující příkaz:**VSPerfCmd /globaloff**  
   
-6.  Spuštění programu.  
+6. Spuštění programu.  
   
-7.  Zadejte následující příkaz:**VSPerfCmd/Shutdown**  
+7. Zadejte následující příkaz:**VSPerfCmd/Shutdown**  
   
-8.  Zadejte následující příkaz:**VSPerfReport/calltrace:\<název souboru > .vsp**  
+8. Zadejte následující příkaz:**VSPerfReport/calltrace:\<název souboru > .vsp**  
   
      Soubor CSV se vytvoří v aktuálním adresáři s Výsledná data o výkonu.  
   

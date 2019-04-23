@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 40442d9cf740bd4122aaf48f82fdba425aff261e
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: 40b62719fb00910e4eef183f960e1a1d4ea9a4a4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58415574"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60084235"
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>Rozšíření vašeho DSL pomocí MEF
 
@@ -24,7 +24,7 @@ Další informace o rozhraní MEF, naleznete v tématu [Managed Extensibility Fr
 
 ### <a name="to-enable-your-dsl-to-be-extended-by-mef"></a>Povolit vašeho DSL prodloužit pomocí MEF
 
-1.  Vytvořte novou složku s názvem **MefExtension** uvnitř **DslPackage** projektu. Přidejte do ní následující soubory:
+1. Vytvořte novou složku s názvem **MefExtension** uvnitř **DslPackage** projektu. Přidejte do ní následující soubory:
 
      Název souboru: `CommandExtensionVSCT.tt`
 
@@ -72,7 +72,7 @@ Další informace o rozhraní MEF, naleznete v tématu [Managed Extensibility Fr
     <#@ include file="DslPackage\PackageExtensionEnablement.tt" #>
     ```
 
-2.  Vytvořte novou složku s názvem **MefExtension** uvnitř **Dsl** projektu. Přidejte do ní následující soubory:
+2. Vytvořte novou složku s názvem **MefExtension** uvnitř **Dsl** projektu. Přidejte do ní následující soubory:
 
      Název souboru: `DesignerExtensionMetaDataAttribute.tt`
 
@@ -95,7 +95,7 @@ Další informace o rozhraní MEF, naleznete v tématu [Managed Extensibility Fr
     <#@ include file="Dsl\GestureExtensionController.tt" #>
     ```
 
-3.  Přidejte následující řádek do existujícího souboru s názvem **DslPackage\Commands.vsct**:
+3. Přidejte následující řádek do existujícího souboru s názvem **DslPackage\Commands.vsct**:
 
     ```xml
     <Include href="MefExtension\CommandExtensionVSCT.vsct"/>
@@ -103,17 +103,17 @@ Další informace o rozhraní MEF, naleznete v tématu [Managed Extensibility Fr
 
     Vložit řádek za stávající `<Include>` směrnice.
 
-4.  Otevřít *DslDefinition.dsl*.
+4. Otevřít *DslDefinition.dsl*.
 
-5.  V Průzkumníku DSL vyberte **Editor\Validation**.
+5. V Průzkumníku DSL vyberte **Editor\Validation**.
 
-6.  V okně Vlastnosti, ujistěte se, že nejméně jedna z vlastností s názvem **používá** je `true`.
+6. V okně Vlastnosti, ujistěte se, že nejméně jedna z vlastností s názvem **používá** je `true`.
 
-7.  V **Průzkumníka řešení** nástrojů, klikněte na tlačítko **Transformovat všechny šablony**.
+7. V **Průzkumníka řešení** nástrojů, klikněte na tlačítko **Transformovat všechny šablony**.
 
      Podpůrné soubory se zobrazí pod všechny soubory, které jste přidali.
 
-8.  Sestavení a spuštění řešení Chcete-li ověřit, že stále funguje.
+8. Sestavení a spuštění řešení Chcete-li ověřit, že stále funguje.
 
 Vaše DSL je nyní povoleno rozhraní MEF. Příkazy nabídky, obslužné rutiny gesta a omezení ověření můžete psát jako rozšíření MEF. Tato rozšíření můžete psát ve vašem řešení DSL společně s další vlastní kód. Kromě toho vy nebo jiní vývojáři psát samostatné rozšíření sady Visual Studio, které rozšíření vašeho DSL.
 
@@ -135,15 +135,15 @@ Pokud máte přístup k DSL povolené MEF vytvořené sobě nebo někomu jinému
 
 3. Přidejte odkazy na následující sestavení .NET:
 
-   -   Microsoft.VisualStudio.Modeling.Sdk.11.0.dll
+   - Microsoft.VisualStudio.Modeling.Sdk.11.0.dll
 
-   -   Microsoft.VisualStudio.Modeling.Sdk.Diagrams.11.0.dll
+   - Microsoft.VisualStudio.Modeling.Sdk.Diagrams.11.0.dll
 
-   -   Microsoft.VisualStudio.Modeling.Sdk.Shell.11.0.dll
+   - Microsoft.VisualStudio.Modeling.Sdk.Shell.11.0.dll
 
-   -   System.ComponentModel.Composition.dll
+   - System.ComponentModel.Composition.dll
 
-   -   System.Windows.Forms.dll
+   - System.Windows.Forms.dll
 
 4. Vytvořte nový **projekt VSIX** projektu.
 

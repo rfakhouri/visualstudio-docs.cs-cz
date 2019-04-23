@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dad698f2ba660b6848e614f13751335894a17ae0
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: f810761d088eaf6ec94524a7d76ec255c931686b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59366403"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60115156"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Připojení ladicího programu sady Visual Studio ke spuštěným procesům
 Ladicí program sady Visual Studio můžete připojit ke spuštěnému procesu na místním nebo vzdáleném počítači. Poté, co je proces spuštěn, vybrat **ladění** > **připojit k procesu** nebo stiskněte klávesu **Ctrl**+**Alt** + **P** ve Visual Studiu a použít **připojit k procesu** dialogové okno připojit ladicí program k procesu.
@@ -43,7 +43,7 @@ Můžete použít **připojit k procesu** k ladění aplikace běžící na mís
 > [!TIP]
 > Nejste si jistí, jestli se má použít **připojit k procesu** pro váš scénář ladění? Zobrazit [běžné scénáře ladění](#BKMK_Scenarios).
 
-##  <a name="BKMK_Attach_to_a_running_process"></a> Připojit ke spuštěnému procesu na místním počítači
+## <a name="BKMK_Attach_to_a_running_process"></a> Připojit ke spuštěnému procesu na místním počítači
 
 Chcete-li rychle znovu připojit k procesu připojen k dříve, přečtěte si téma [znovu připojit k procesu](#BKMK_reattach).
 
@@ -79,7 +79,7 @@ Ladění procesu ve vzdáleném počítači, naleznete v tématu [připojit k pr
 >[!NOTE]
 >Můžete být připojení k několika aplikacím pro ladění, ale současně je aktivní v ladicím programu jenom jedna aplikace. Můžete nastavit aktivní aplikace v sadě Visual Studio **umístění ladění** nástrojů nebo **procesy** okna.
 
-##  <a name="BKMK_Attach_to_a_process_on_a_remote_computer"></a> Připojit k procesu ve vzdáleném počítači
+## <a name="BKMK_Attach_to_a_process_on_a_remote_computer"></a> Připojit k procesu ve vzdáleném počítači
 
 Můžete také vybrat vzdálený počítač v **připojit k procesu** dialogovém okně zobrazit seznam dostupných procesů spuštěných na tomto počítači a připojit se k jedné nebo více procesům pro ladění. Vzdálený ladicí program (*msvsmon.exe*) musí běžet na vzdáleném počítači. Další informace najdete v tématu [vzdálené ladění](../debugger/remote-debugging.md).
 
@@ -186,7 +186,7 @@ Pro scénáře vzdálené ladění musí mít zdrojový kód (nebo kopii zdrojov
 
 V některých místní ladění scénářích můžete ladit v sadě Visual Studio bez přístupu ke zdroji Pokud jsou k dispozici v aplikaci správný symbol soubory. Ve výchozím nastavení tento postup vyžaduje sestavení pro ladění. Další informace najdete v tématu [určit symboly a zdrojové soubory](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
 
-##  <a name="BKMK_Troubleshoot_attach_errors"></a> Řešení potíží s chybami připojení
+## <a name="BKMK_Troubleshoot_attach_errors"></a> Řešení potíží s chybami připojení
  Pokud ladicí program připojí ke spuštěnému procesu, proces může obsahovat jeden nebo více typů kódu. Typy kódu k se může připojit ladicí program se zobrazí a jsou vybrány v **vybrat typ kódu** dialogové okno.
 
  V některých případech můžete úspěšně připojit ladicí program k jednomu typu kódu, ale ne k jinému typu kódu. Tato situace může nastat, pokud se pokoušíte připojit k procesu, která běží na vzdáleném počítači. Vzdálený počítač může mít nainstalované pro některé typy kódu, ale nikoli pro jiné komponenty vzdáleného ladění. Může dojít také při pokusu o připojení ke dvěma nebo více procesům pro přímé ladění databáze. SQL ladění podporuje připojení pouze jednoho procesu.
@@ -199,19 +199,19 @@ V některých místní ladění scénářích můžete ladit v sadě Visual Stud
 
  **Získání konkrétních informací o Proč se nepodařilo připojit typ kódu:**
 
-1.  Odpojte od procesu. Na **ladění** nabídce vyberte možnost **Odpojit vše**.
+1. Odpojte od procesu. Na **ladění** nabídce vyberte možnost **Odpojit vše**.
 
-1.  Znovu připojte k procesu, vyberte pouze typ kódu, který se nepodařilo připojit.
+1. Znovu připojte k procesu, vyberte pouze typ kódu, který se nepodařilo připojit.
 
-    1.  V **připojit k procesu** dialogového okna, vyberte v procesu **procesy k dispozici** seznamu.
+    1. V **připojit k procesu** dialogového okna, vyberte v procesu **procesy k dispozici** seznamu.
 
-    2.  Vyberte **vyberte**.
+    2. Vyberte **vyberte**.
 
-    3.  V **vybrat typ kódu** dialogovém okně vyberte **ladit tyto typy kódu** a typ kódu, který se nepodařilo připojit. Zrušte výběr jiných typů kódu.
+    3. V **vybrat typ kódu** dialogovém okně vyberte **ladit tyto typy kódu** a typ kódu, který se nepodařilo připojit. Zrušte výběr jiných typů kódu.
 
-    4.  Vyberte **OK**.
+    4. Vyberte **OK**.
 
-    5.  V **připojit k procesu** dialogu **připojit**.
+    5. V **připojit k procesu** dialogu **připojit**.
 
     Tentokrát připojení zcela selže a dostanete konkrétní chybovou zprávu.
 

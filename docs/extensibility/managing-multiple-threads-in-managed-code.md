@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f1173b55a3e22d7a2fec9ecdb0440765beb970e6
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: d7eac5329fb5bfacb036e8f0ed585b96ded2a069
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56693097"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60084749"
 ---
 # <a name="how-to-manage-multiple-threads-in-managed-code"></a>Postupy: Správa více vláken ve spravovaném kódu
 Pokud máte spravované rozšíření VSPackage, která volá asynchronní metody nebo má operace, které jsou spouštěny na vlákna kromě vlákna uživatelského rozhraní Visual Studio, postupujte podle pokynů uvedených níže. Vlákna uživatelského rozhraní můžete zachovat responzivní, protože není nutné čekat pro práci v jiném vlákně, k dokončení. Můžete provést kódu efektivnější, protože není nutné další vlákna, které zabírají prostor v zásobníku a je možné provádět spolehlivější a snadněji ladit, protože zabránit zablokování a konflikty. program přestane reagovat.
@@ -25,7 +25,7 @@ Pokud máte spravované rozšíření VSPackage, která volá asynchronní metod
 
 ## <a name="switch-from-the-ui-thread-to-a-background-thread"></a>Přepnout z vlákna uživatelského rozhraní na vlákně na pozadí
 
-1.  Pokud jsou ve vlákně uživatelského rozhraní a chcete provést asynchronní práce na vlákně na pozadí, použijte `Task.Run()`:
+1. Pokud jsou ve vlákně uživatelského rozhraní a chcete provést asynchronní práce na vlákně na pozadí, použijte `Task.Run()`:
 
     ```csharp
     await Task.Run(async delegate{
@@ -35,7 +35,7 @@ Pokud máte spravované rozšíření VSPackage, která volá asynchronní metod
 
     ```
 
-2.  Pokud jste ve vlákně uživatelského rozhraní a chcete synchronně blokovat, když se provede práci na vlákně na pozadí, použijte <xref:System.Threading.Tasks.TaskScheduler> vlastnost `TaskScheduler.Default` uvnitř <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.Run%2A>:
+2. Pokud jste ve vlákně uživatelského rozhraní a chcete synchronně blokovat, když se provede práci na vlákně na pozadí, použijte <xref:System.Threading.Tasks.TaskScheduler> vlastnost `TaskScheduler.Default` uvnitř <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.Run%2A>:
 
     ```csharp
     // using Microsoft.VisualStudio.Threading;
@@ -49,7 +49,7 @@ Pokud máte spravované rozšíření VSPackage, která volá asynchronní metod
 
 ## <a name="switch-from-a-background-thread-to-the-ui-thread"></a>Přepnout na vlákno uživatelského rozhraní z vlákna na pozadí
 
-1.  Pokud jste na vlákně na pozadí a chcete udělat něco na vlákně uživatelského rozhraní, použijte <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.SwitchToMainThreadAsync%2A>:
+1. Pokud jste na vlákně na pozadí a chcete udělat něco na vlákně uživatelského rozhraní, použijte <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.SwitchToMainThreadAsync%2A>:
 
     ```csharp
     // Switch to main thread

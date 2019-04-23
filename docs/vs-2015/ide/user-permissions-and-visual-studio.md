@@ -14,12 +14,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d37e20154b3471e26f170c8437369493764935fc
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 6e30fd7500c0f9dd216b630ea79ebfb79c964fab
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54775869"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60101883"
 ---
 # <a name="user-permissions-and-visual-studio"></a>Uživatelská oprávnění a sada Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,17 +56,17 @@ Z důvodu bezpečnosti by měl být systém Visual Studio spuštěn s normáln
 
 #### <a name="to-run-visual-studio-with-administrative-permissions-on-includewin8includeswin8-mdmd-includewin81includeswin81-mdmd-includewinserver8includeswinserver8-mdmd-or-includewinblueserver2includeswinblue-server-2-mdmd"></a>Spuštění sady Visual Studio s oprávněními správce [!INCLUDE[win8](../includes/win8-md.md)], [!INCLUDE[win81](../includes/win81-md.md)], [!INCLUDE[winserver8](../includes/winserver8-md.md)], nebo [!INCLUDE[winblue_server_2](../includes/winblue-server-2-md.md)]
 
-1.  Na **Start** zadejte **sady Visual Studio**. Měli byste vidět verzi nebo verze systému Visual Studio, které jste nainstalovali.
+1. Na **Start** zadejte **sady Visual Studio**. Měli byste vidět verzi nebo verze systému Visual Studio, které jste nainstalovali.
 
-2.  Vyberte verzi systému Visual Studio, kterou chcete spustit, a následně vyvolejte místní nabídku (zobrazí se v dolní části obrazovky). Zvolte **spustit jako správce**.
+2. Vyberte verzi systému Visual Studio, kterou chcete spustit, a následně vyvolejte místní nabídku (zobrazí se v dolní části obrazovky). Zvolte **spustit jako správce**.
 
      Při spuštění sady Visual Studio **(správce)** se zobrazí za názvem produktu v záhlaví programu.
 
 #### <a name="to-run-visual-studio-with-administrative-permissions-on-includewin7includeswin7-mdmd-or-includewinsvr08r2includeswinsvr08-r2-mdmd"></a>Spuštění sady Visual Studio s oprávněními správce [!INCLUDE[win7](../includes/win7-md.md)] nebo [!INCLUDE[winsvr08_r2](../includes/winsvr08-r2-md.md)]
 
-1.  Na **Start** nabídce zvolte **všechny programy**.
+1. Na **Start** nabídce zvolte **všechny programy**.
 
-2.  V **sady Microsoft Visual Studio** *verze* vyberte složku **sady Visual Studio** *verze* otevřete místní nabídku a zvolte  **Spustit jako správce**.
+2. V **sady Microsoft Visual Studio** *verze* vyberte složku **sady Visual Studio** *verze* otevřete místní nabídku a zvolte  **Spustit jako správce**.
 
      Při spuštění sady Visual Studio **(správce)** se zobrazí za názvem produktu v záhlaví programu.
 

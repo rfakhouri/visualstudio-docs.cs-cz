@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 07afb43ebe34e5bbaba045bf26e83dbf51ed4bc4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 5f4a6a5de3ccd10c7444b03aca2faaa0ae17c4f5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56631273"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104522"
 ---
 # <a name="how-to-add-bookmark-controls-to-word-documents"></a>Postupy: Přidání ovládacích prvků záložek do dokumentů aplikace Word
   Projekty na úrovni dokumentu, můžete přidat <xref:Microsoft.Office.Tools.Word.Bookmark> ovládacích prvků do dokumentu v projektu v době návrhu nebo za běhu. Projekty doplňků VSTO, můžete přidat <xref:Microsoft.Office.Tools.Word.Bookmark> ovládacích prvků do libovolného otevřeného dokumentu za běhu.
@@ -38,7 +38,7 @@ ms.locfileid: "56631273"
 
   Další informace o <xref:Microsoft.Office.Tools.Word.Bookmark> ovládacích prvků, naleznete v tématu [Bookmark – ovládací prvek](../vsto/bookmark-control.md).
 
-##  <a name="designtime"></a> Přidání ovládacích prvků záložek v době návrhu
+## <a name="designtime"></a> Přidání ovládacích prvků záložek v době návrhu
  Existuje několik způsobů, jak přidat <xref:Microsoft.Office.Tools.Word.Bookmark> ovládacích prvků do dokumentu v projektu úrovni dokumentu v době návrhu:
 
 - Ze sady Visual Studio **nástrojů**.
@@ -57,27 +57,27 @@ ms.locfileid: "56631273"
 
 #### <a name="to-add-a-bookmark-control-to-a-document-from-the-toolbox"></a>Chcete-li přidat ovládací prvek Bookmark do dokumentu z panelu nástrojů
 
-1.  Otevřít **nástrojů** a klikněte na tlačítko **ovládací prvky aplikace Word** kartu.
+1. Otevřít **nástrojů** a klikněte na tlačítko **ovládací prvky aplikace Word** kartu.
 
-2.  Přetáhněte <xref:Microsoft.Office.Tools.Word.Bookmark> ovládací prvek v dokumentu.
+2. Přetáhněte <xref:Microsoft.Office.Tools.Word.Bookmark> ovládací prvek v dokumentu.
 
      **Přidat záložku** zobrazí se dialogové okno.
 
-3.  Výběr textu nebo jiné položky, které chcete zahrnout do záložky.
+3. Výběr textu nebo jiné položky, které chcete zahrnout do záložky.
 
-4.  Klikněte na **OK**.
+4. Klikněte na **OK**.
 
      Pokud nechcete Ponecháme výchozí název záložky, můžete změnit název v **vlastnosti** okna.
 
 #### <a name="to-add-a-bookmark-control-to-a-document-in-word"></a>Chcete-li přidat ovládací prvek Bookmark dokumentu ve Wordu
 
-1.  V dokumentu, který je hostován v [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] návrháře, umístěte kurzor na místo, kde chcete přidat záložek, nebo vyberte text, který má na záložku k uzavření.
+1. V dokumentu, který je hostován v [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] návrháře, umístěte kurzor na místo, kde chcete přidat záložek, nebo vyberte text, který má na záložku k uzavření.
 
-2.  Na **vložit** kartu na pásu karet v **odkazy** klikněte na položku **záložku** tlačítko.
+2. Na **vložit** kartu na pásu karet v **odkazy** klikněte na položku **záložku** tlačítko.
 
-3.  V **záložku** dialogové okno, zadejte název nové záložky a klikněte na tlačítko **přidat**.
+3. V **záložku** dialogové okno, zadejte název nové záložky a klikněte na tlačítko **přidat**.
 
-##  <a name="runtimedoclevel"></a> Přidání ovládacích prvků záložek za běhu v projektu úrovni dokumentu
+## <a name="runtimedoclevel"></a> Přidání ovládacích prvků záložek za běhu v projektu úrovni dokumentu
  Můžete přidat <xref:Microsoft.Office.Tools.Word.Bookmark> řídí prostřednictvím kódu programu do dokumentu za běhu pomocí metod <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> vlastnost `ThisDocument` třídu ve vašem projektu. Existují dvě přetížení metody, které slouží k přidání <xref:Microsoft.Office.Tools.Word.Bookmark> ovládací prvek následujícími způsoby:
 
 - Přidat <xref:Microsoft.Office.Tools.Word.Bookmark> v zadaném rozsahu.
@@ -88,7 +88,7 @@ ms.locfileid: "56631273"
 
 #### <a name="to-add-a-bookmark-control-to-a-document-programmatically"></a>Chcete-li přidat ovládací prvek Bookmark do dokumentů prostřednictvím kódu programu
 
-1.  V `ThisDocument_Startup` obslužná rutina události ve vašem projektu, vložte následující kód pro přidání <xref:Microsoft.Office.Tools.Word.Bookmark> ovládacího prvku do prvního odstavce v dokumentu.
+1. V `ThisDocument_Startup` obslužná rutina události ve vašem projektu, vložte následující kód pro přidání <xref:Microsoft.Office.Tools.Word.Bookmark> ovládacího prvku do prvního odstavce v dokumentu.
 
      [!code-csharp[Trin_VstcoreHostControlsWord#1](../vsto/codesnippet/CSharp/trin_vstcorehostcontrolsword/ThisDocument.cs#1)]
      [!code-vb[Trin_VstcoreHostControlsWord#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsWordVB/ThisDocument.vb#1)]
@@ -96,7 +96,7 @@ ms.locfileid: "56631273"
     > [!NOTE]
     >  Pokud chcete vytvořit <xref:Microsoft.Office.Tools.Word.Bookmark> ovládacího prvku z existující <xref:Microsoft.Office.Interop.Word.Bookmark>, použijte <xref:Microsoft.Office.Tools.Word.ControlCollection.AddBookmark%2A> a předáte v existujícím <xref:Microsoft.Office.Interop.Word.Bookmark>.
 
-##  <a name="runtimeaddin"></a> Přidání ovládacích prvků záložek za běhu v projektu doplňku VSTO
+## <a name="runtimeaddin"></a> Přidání ovládacích prvků záložek za běhu v projektu doplňku VSTO
  Můžete přidat <xref:Microsoft.Office.Tools.Word.Bookmark> ovládacích prvků prostřednictvím kódu programu do libovolného otevřeného dokumentu za běhu pomocí doplňku VSTO. Chcete-li to provést, vygenerovat <xref:Microsoft.Office.Tools.Word.Document> hostitelem položku, která vychází z otevřeného dokumentu a pak použijte metody <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> vlastnosti této položky hostitele. Existují dvě přetížení metody, které slouží k přidání <xref:Microsoft.Office.Tools.Word.Bookmark> ovládací prvek následujícími způsoby:
 
 - Přidat <xref:Microsoft.Office.Tools.Word.Bookmark> v zadaném rozsahu.
@@ -109,7 +109,7 @@ ms.locfileid: "56631273"
 
 #### <a name="to-add-a-bookmark-control-at-a-specified-range"></a>Chcete-li přidat ovládací prvek Bookmark v zadaném rozsahu
 
-1.  Použití <xref:Microsoft.Office.Tools.Word.ControlCollection.AddBookmark%2A> metoda a předejte jí <xref:Microsoft.Office.Interop.Word.Range> , které chcete přidat <xref:Microsoft.Office.Tools.Word.Bookmark>.
+1. Použití <xref:Microsoft.Office.Tools.Word.ControlCollection.AddBookmark%2A> metoda a předejte jí <xref:Microsoft.Office.Interop.Word.Range> , které chcete přidat <xref:Microsoft.Office.Tools.Word.Bookmark>.
 
      Následující příklad kódu přidá nový <xref:Microsoft.Office.Tools.Word.Bookmark> začátek aktivní dokument. Pokud chcete použít tento příklad, spusťte kód z `ThisAddIn_Startup` obslužné rutiny události v projektu doplňku VSTO pro Word.
 
@@ -118,7 +118,7 @@ ms.locfileid: "56631273"
 
 #### <a name="to-add-a-bookmark-control-that-is-based-on-a-native-bookmark-control"></a>Chcete-li přidat ovládací prvek Bookmark, který je založen na nativním ovládacím prvku záložku
 
-1.  Použít <xref:Microsoft.Office.Tools.Word.ControlCollection.AddBookmark%2A> metoda a předejte jí existující <xref:Microsoft.Office.Interop.Word.Bookmark> , kterou chcete použít jako základ pro nové <xref:Microsoft.Office.Tools.Word.Bookmark>.
+1. Použít <xref:Microsoft.Office.Tools.Word.ControlCollection.AddBookmark%2A> metoda a předejte jí existující <xref:Microsoft.Office.Interop.Word.Bookmark> , kterou chcete použít jako základ pro nové <xref:Microsoft.Office.Tools.Word.Bookmark>.
 
      Následující příklad kódu vytvoří novou <xref:Microsoft.Office.Tools.Word.Bookmark> , který je podle prvního <xref:Microsoft.Office.Interop.Word.Bookmark> v aktivním dokumentu. Pokud chcete použít tento příklad, spusťte kód z `ThisAddIn_Startup` obslužné rutiny události v projektu doplňku VSTO pro Word.
 

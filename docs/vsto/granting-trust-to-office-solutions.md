@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b07aea10d2b1d55e98239d6dd804a506390f1974
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: cf7a68d5d3567305e4f70049d76a1c260ddecf25
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54871374"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102520"
 ---
 # <a name="grant-trust-to-office-solutions"></a>Zajistit jeho důvěryhodnost do řešení pro systém Office
   Zajistit jeho důvěryhodnost Office řešení znamená úpravy zásady zabezpečení v každém cílovém počítači důvěřovat řešení sestavení, manifest aplikace, manifest nasazení a dokumentu. Vztah důvěryhodnosti můžete vy nebo koncového uživatele udělit řešení pro Office.
@@ -31,7 +31,7 @@ ms.locfileid: "54871374"
 
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
-##  <a name="Signing"></a> Vztah důvěryhodnosti řešení pomocí podepsání manifestů aplikace a nasazení
+## <a name="Signing"></a> Vztah důvěryhodnosti řešení pomocí podepsání manifestů aplikace a nasazení
  Všechny aplikace a manifestů nasazení pro Office řešení musí být podepsané certifikátem, který identifikuje vydavatele. Certifikáty poskytují základ pro rozhodování o důvěryhodnosti.
 
  Dočasný certifikát je pro vás vytvořili a udělen vztah důvěryhodnosti v okamžiku sestavení, takže řešení se spustí při ladění. Pokud publikujete, který je podepsaný certifikátem dočasné řešení, koncový uživatel se vyzve k provedení rozhodnutí důvěryhodnosti.
@@ -40,7 +40,7 @@ ms.locfileid: "54871374"
 
  Pokud vývojář podepisuje řešení dočasné certifikátem, Správce může znovu podepsat přizpůsobení pomocí známého a důvěryhodného certifikátu pomocí Manifest Generation and Editing Tool (*mage.exe*), což je jedna z Nástroje sady Microsoft .NET Framework. Další informace o podepisování řešení najdete v tématu [jak: Podepisování řešení pro Office](../vsto/how-to-sign-office-solutions.md) a [jak: Podepsání manifestů aplikace a nasazení](../ide/how-to-sign-application-and-deployment-manifests.md).
 
-##  <a name="TrustPrompt"></a>Vztah důvěryhodnosti řešení pomocí vztahu důvěryhodnosti ClickOnce
+## <a name="TrustPrompt"></a>Vztah důvěryhodnosti řešení pomocí vztahu důvěryhodnosti ClickOnce
  [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] vyzve koncovému uživateli umožňují rozhodnutí důvěryhodnosti, pokud není žádná celou organizaci zásada, která důvěřuje certifikátu řešení. Pokud koncový uživatel uděluje vztah důvěryhodnosti k řešení, se vytvoří položka seznamu povolených položek, který obsahuje adresu URL a veřejný klíč pro uložení tohoto rozhodnutí důvěryhodnosti. Když důvěryhodné přizpůsobení je spustit později, koncový uživatel vyzván znovu.
 
  Správci mohou zakázat [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] důvěryhodný dotaz nebo vyžadovat, že dojde k řádku pouze pro řešení, které jsou podepsané certifikátem Authenticode. Další informace o tom, jak změnit tato nastavení pro tento počítač, LocalIntranet, Internet, TrustedSites a UntrustedSites zóny najdete v tématu [jak: Konfigurace chování výzvy důvěryhodnosti ClickOnce](../deployment/how-to-configure-the-clickonce-trust-prompt-behavior.md).

@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb6908db6b111f2ff67f2e1ca3761b11c302f5d4
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: f5973643d8f87b4c992209e6512c51bc275de60b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223816"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60090114"
 ---
 # <a name="dependency-diagrams-guidelines"></a>Diagramy závislostí: pokyny
 
@@ -39,21 +39,21 @@ Následující kroky poskytují přehled o tom, jak pomocí diagramů závislost
 > [!NOTE]
 > Tyto kroky jsou v přibližné pořadí. Bude pravděpodobně chcete překrývat s úkoly, přeuspořádat je tak, aby vyhovovala vaší vlastní situaci a opakování na začátku každé iterace ve vašem projektu.
 
-1.  [Vytvořit diagram závislostí](#Create) pro celou aplikaci nebo pro vrstvu v něm.
+1. [Vytvořit diagram závislostí](#Create) pro celou aplikaci nebo pro vrstvu v něm.
 
-2.  [Definovat vrstvy představující primární funkční oblasti nebo součásti](#CreateLayers) vaší aplikace. Pojmenujte tyto vrstvy podle jejich funkce, například "Prezentaci" či "Službami". Pokud máte řešení sady Visual Studio můžete přidružit každou vrstvu s kolekcí *artefakty*, jako jsou projekty, obory názvů, soubory a tak dále.
+2. [Definovat vrstvy představující primární funkční oblasti nebo součásti](#CreateLayers) vaší aplikace. Pojmenujte tyto vrstvy podle jejich funkce, například "Prezentaci" či "Službami". Pokud máte řešení sady Visual Studio můžete přidružit každou vrstvu s kolekcí *artefakty*, jako jsou projekty, obory názvů, soubory a tak dále.
 
-3.  [Zjistit existujícího závislosti](#Generate) mezi vrstvami.
+3. [Zjistit existujícího závislosti](#Generate) mezi vrstvami.
 
-4.  [Úprava vrstev a závislostí](#EditArchitecture) zobrazíte aktualizovaný návrh, který má kód tak, aby odrážela.
+4. [Úprava vrstev a závislostí](#EditArchitecture) zobrazíte aktualizovaný návrh, který má kód tak, aby odrážela.
 
-5.  [Návrh nové oblasti vaší aplikace](#NewAreas) vytvořením vrstvy představují hlavní architektonických bloků nebo komponenty a definování závislostí za účelem zobrazení, jak ostatní každou vrstvu používá.
+5. [Návrh nové oblasti vaší aplikace](#NewAreas) vytvořením vrstvy představují hlavní architektonických bloků nebo komponenty a definování závislostí za účelem zobrazení, jak ostatní každou vrstvu používá.
 
-6.  [Upravit rozložení a vzhled diagramu](#EditLayout) můžete diskutovat s kolegy.
+6. [Upravit rozložení a vzhled diagramu](#EditLayout) můžete diskutovat s kolegy.
 
-7.  [Ověření kódu proti diagramu závislost](#Validate) zvýrazněte konfliktů mezi kódem a architekturu, budete potřebovat.
+7. [Ověření kódu proti diagramu závislost](#Validate) zvýrazněte konfliktů mezi kódem a architekturu, budete potřebovat.
 
-8.  [Aktualizace kódu tak, aby odpovídal vaší nové architektury](#UpdateCode). Iterativní vývoj a Refaktorovat kód, dokud nebude ověření ukazovat žádné konflikty.
+8. [Aktualizace kódu tak, aby odpovídal vaší nové architektury](#UpdateCode). Iterativní vývoj a Refaktorovat kód, dokud nebude ověření ukazovat žádné konflikty.
 
 9. [Zahrnout ověřování vrstvy v procesu sestavení](#BuildValidation) zajistit, že kód pořád dodržovat do svého návrhu.
 
@@ -79,11 +79,11 @@ Při aktualizaci aplikace seznámeni, může také vytváření map kódu. Tyto 
 
 Další informace:
 
--   [Vytváření diagramů závislostí z kódu](../modeling/create-layer-diagrams-from-your-code.md)
+- [Vytváření diagramů závislostí z kódu](../modeling/create-layer-diagrams-from-your-code.md)
 
--   [Použití map kódu k ladění aplikací](../modeling/use-code-maps-to-debug-your-applications.md)
+- [Použití map kódu k ladění aplikací](../modeling/use-code-maps-to-debug-your-applications.md)
 
--   [Mapování závislostí napříč vaším řešením](../modeling/map-dependencies-across-your-solutions.md)
+- [Mapování závislostí napříč vaším řešením](../modeling/map-dependencies-across-your-solutions.md)
 
 ## <a name="Generate"></a> Zjistit existujících závislostech mezi vrstvami
 
@@ -123,13 +123,13 @@ Pokud to není tento případ, kód bude obtížnější, chcete-li změnit v ce
 
 Při spuštění vývoje nový projekt nebo nové oblasti v novém projektu můžete nakreslit vrstvy a závislostech, abyste mohli identifikovat hlavní komponenty, než začnete vyvíjet kód.
 
--   **Zobrazit údaje vzorech architektury** do diagramů závislostí, pokud je to možné. Diagram závislostí, který popisuje aplikace klasické pracovní plochy může obsahovat třeba vrstvy, jako je například Data Store, prezentaci a logiku domény. Diagram závislostí, která zahrnuje jednu funkci v rámci aplikace může mít vrstvy, jako je Model, zobrazení a kontroler. Další informace o těchto vzorech najdete v tématu [vzory a postupy: Architektura aplikace](http://go.microsoft.com/fwlink/?LinkId=145794).
+- **Zobrazit údaje vzorech architektury** do diagramů závislostí, pokud je to možné. Diagram závislostí, který popisuje aplikace klasické pracovní plochy může obsahovat třeba vrstvy, jako je například Data Store, prezentaci a logiku domény. Diagram závislostí, která zahrnuje jednu funkci v rámci aplikace může mít vrstvy, jako je Model, zobrazení a kontroler. Další informace o těchto vzorech najdete v tématu [vzory a postupy: Architektura aplikace](http://go.microsoft.com/fwlink/?LinkId=145794).
 
--   **Vytvořit kód artefakt pro každou vrstvu** například obor názvů, třídy nebo komponenty. Díky tomu snadněji následují kód a propojit kód artefakty do vrstvy. Jakmile vytvoříte každý artefakt, připojit ho k příslušné vrstvě.
+- **Vytvořit kód artefakt pro každou vrstvu** například obor názvů, třídy nebo komponenty. Díky tomu snadněji následují kód a propojit kód artefakty do vrstvy. Jakmile vytvoříte každý artefakt, připojit ho k příslušné vrstvě.
 
--   **Nemáte propojení Většina tříd a jiných artefaktů do vrstev** protože spadají větší součásti, jako jsou obory názvů, které jste již propojeny s vrstvami.
+- **Nemáte propojení Většina tříd a jiných artefaktů do vrstev** protože spadají větší součásti, jako jsou obory názvů, které jste již propojeny s vrstvami.
 
--   **Vytvoření nového diagramu na novou funkci**. Obvykle bude existovat jeden nebo více diagramů závislostí popisující celou aplikaci. Pokud navrhujete novou funkci v rámci aplikace, přidat nebo změnit stávající diagramů. Místo toho vytvořte vlastní diagram, který odráží nové části kódu. Vrstvy v novém diagramu může zahrnovat prezentace, logiku domény a vrstvy databáze pro nové funkce.
+- **Vytvoření nového diagramu na novou funkci**. Obvykle bude existovat jeden nebo více diagramů závislostí popisující celou aplikaci. Pokud navrhujete novou funkci v rámci aplikace, přidat nebo změnit stávající diagramů. Místo toho vytvořte vlastní diagram, který odráží nové části kódu. Vrstvy v novém diagramu může zahrnovat prezentace, logiku domény a vrstvy databáze pro nové funkce.
 
      Při sestavování aplikace, kód ověří, jak proti celý diagram a diagramu podrobnější funkce.
 
@@ -137,11 +137,11 @@ Při spuštění vývoje nový projekt nebo nové oblasti v novém projektu mů�
 
 Které vám pomůžou identifikovat vrstev a závislostí nebo projednávat s členy týmu, upravte vzhled a rozložení diagramu následujícími způsoby:
 
--   Změna velikosti, tvary a pozice vrstvy.
+- Změna velikosti, tvary a pozice vrstvy.
 
--   Změna barvy vrstvy a závislosti.
+- Změna barvy vrstvy a závislosti.
 
-    -   Vyberte jeden nebo více vrstev nebo závislosti, klikněte pravým tlačítkem a pak klikněte na tlačítko **vlastnosti**. V **vlastnosti** okně Upravit **barva** vlastnost.
+    - Vyberte jeden nebo více vrstev nebo závislosti, klikněte pravým tlačítkem a pak klikněte na tlačítko **vlastnosti**. V **vlastnosti** okně Upravit **barva** vlastnost.
 
 ## <a name="Validate"></a> Ověření kódu proti diagramu
 
@@ -149,17 +149,17 @@ Pokud jste upravili diagramu, můžete ověřit ho s kódem kdykoli ručně nebo
 
 Další informace:
 
--   [Ověřování kódu pomocí diagramů závislostí](../modeling/validate-code-with-layer-diagrams.md)
+- [Ověřování kódu pomocí diagramů závislostí](../modeling/validate-code-with-layer-diagrams.md)
 
--   [Zahrnout ověřování vrstvy v procesu sestavení](#BuildValidation)
+- [Zahrnout ověřování vrstvy v procesu sestavení](#BuildValidation)
 
 ## <a name="UpdateCode"></a> Aktualizace kódu tak, aby odpovídal na nové architektuře
 
 Obvykle chyby se objeví při prvním ověřování kódu proti diagramu aktualizované závislostí. K těmto chybám může mít několik příčin:
 
--   Artefakt je přiřazen nesprávné vrstvě. V tomto případě přesuňte artefakt.
+- Artefakt je přiřazen nesprávné vrstvě. V tomto případě přesuňte artefakt.
 
--   Artefakt, jako je například třída, používá jiné třídy způsobem, který je v konfliktu s architekturou. V tomto případě refaktorujte kód a odeberte závislost.
+- Artefakt, jako je například třída, používá jiné třídy způsobem, který je v konfliktu s architekturou. V tomto případě refaktorujte kód a odeberte závislost.
 
 Chcete-li tyto chyby odstranit, aktualizujte kód, dokud se během ověřování neobjeví žádné chyby. To je obvykle iterativní proces. Další informace o těchto chybách naleznete v tématu [ověřování kódu pomocí diagramů závislostí](../modeling/validate-code-with-layer-diagrams.md).
 

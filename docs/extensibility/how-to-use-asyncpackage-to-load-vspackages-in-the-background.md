@@ -7,12 +7,12 @@ author: gregvanl
 ms.author: gregvanl
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8a0de1ccf4a75bb10ae120e9237ceb176a3794a1
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 99b23c223d91678f03a52910ed4516be0839a338
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56680981"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113960"
 ---
 # <a name="how-to-use-asyncpackage-to-load-vspackages-in-the-background"></a>Postupy: Použití AsyncPackage k načtení rozšíření VSPackages na pozadí
 V / v disku může způsobit načtením a inicializací balíček VS. V případě takových vstupně-výstupních operací na vlákno uživatelského rozhraní může vést k problémů s rychlostí odezvy. Z toho Visual Studio 2015 zavedené <xref:Microsoft.VisualStudio.Shell.AsyncPackage> třídu, která umožňuje načítání balíčku na vlákně na pozadí.
@@ -75,11 +75,11 @@ public sealed class TestPackage : AsyncPackage
 ## <a name="convert-an-existing-vspackage-to-asyncpackage"></a>Převod existujícího balíčku VSPackage AsyncPackage
  Většina práce je stejné jako vytvoření nového **AsyncPackage**. Postupujte podle kroků 1 až 5 výše. Také je potřeba provést další upozornění s následující doporučení:
 
-1.  Nezapomeňte odebrat `Initialize` přepsání, které jste měli v balíčku.
+1. Nezapomeňte odebrat `Initialize` přepsání, které jste měli v balíčku.
 
-2.  Zabránilo zablokování: To může být skrytá RPC ve vašem kódu. které teď provádělo na vlákně na pozadí. Ujistěte se, že pokud provádíte vzdáleného volání Procedur (například **GetService**), budete muset buď (1) přepněte na hlavním vlákně, nebo (2), použijte asynchronní verze rozhraní API, pokud existuje (například **GetServiceAsync**).
+2. Zabránilo zablokování: To může být skrytá RPC ve vašem kódu. které teď provádělo na vlákně na pozadí. Ujistěte se, že pokud provádíte vzdáleného volání Procedur (například **GetService**), budete muset buď (1) přepněte na hlavním vlákně, nebo (2), použijte asynchronní verze rozhraní API, pokud existuje (například **GetServiceAsync**).
 
-3.  Přepnutí mezi vlákny příliš často. Došlo k pokusu o lokalizaci práci, kterou může dojít ve vlákně na pozadí zkrátit čas zatížení.
+3. Přepnutí mezi vlákny příliš často. Došlo k pokusu o lokalizaci práci, kterou může dojít ve vlákně na pozadí zkrátit čas zatížení.
 
 ## <a name="querying-services-from-asyncpackage"></a>Dotazování služby z AsyncPackage
  **AsyncPackage** může nebo nemusí načíst asynchronně v závislosti na volajícího. Pro instanci

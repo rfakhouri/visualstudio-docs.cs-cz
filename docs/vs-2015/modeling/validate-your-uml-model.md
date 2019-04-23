@@ -12,12 +12,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0c805c842832ac99c527ea382169775d8b6b2529
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5114e7b32bd22b341489e15ac354cc24b3c6d7d7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54782555"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113310"
 ---
 # <a name="validate-your-uml-model"></a>Ověření modelu UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,24 +49,24 @@ Některé z modelů UML, které nakreslíte v sadě Visual Studio může být po
   
 #### <a name="to-install-a-visual-studio-extension"></a>Chcete-li nainstalovat rozšíření sady Visual Studio  
   
-1.  Dvakrát klikněte **VSIX** souboru v Průzkumníku Windows (nebo Průzkumníka souborů).  
+1. Dvakrát klikněte **VSIX** souboru v Průzkumníku Windows (nebo Průzkumníka souborů).  
   
-2.  Restartujte všechny instance [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , který je již spuštěna.  
+2. Restartujte všechny instance [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , který je již spuštěna.  
   
 ## <a name="disabling-and-uninstalling-validation-constraints"></a>Zakázání a odinstalaci omezení ověření  
  Pokud chcete, aby fungoval s modelem, ke kterému se nedá použít omezení, můžete dočasně zakázat rozšíření, který je obsahuje. Tímto způsobem můžete pracovat s různými druhy modelu v různou dobu, povolování a zakazování různých rozšíření.  
   
 #### <a name="to-disable-or-uninstall-a-visual-studio-extension"></a>Pro zakázání nebo odinstalaci rozšíření sady Visual Studio  
   
-1.  Na [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **nástroje** nabídky, klikněte na tlačítko **rozšíření a aktualizace**.  
+1. Na [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **nástroje** nabídky, klikněte na tlačítko **rozšíření a aktualizace**.  
   
-2.  Společně s rozšířením, klikněte na tlačítko **zakázat** dočasně zakázat rozšíření. Můžete znovu povolit ho později tak, že vrací **rozšíření a aktualizace** okna.  
+2. Společně s rozšířením, klikněte na tlačítko **zakázat** dočasně zakázat rozšíření. Můžete znovu povolit ho později tak, že vrací **rozšíření a aktualizace** okna.  
   
      \- nebo –  
   
      Klikněte na tlačítko **odinstalovat** se odebrat rozšíření.  
   
-3.  Restartujte [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+3. Restartujte [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
 ## <a name="see-also"></a>Viz také  
  [Definování omezení ověření pro modely UML](../modeling/define-validation-constraints-for-uml-models.md)   

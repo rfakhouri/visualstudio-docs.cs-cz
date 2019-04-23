@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b2a411a135330fbf36bde9b28f8015e96a4555c3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 62f6847e03484838f232a9b64f392ca0938f213d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54759906"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114494"
 ---
 # <a name="network-usage"></a>Využití sítě
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Visual Studio **sítě** diagnostický nástroj, který shromažďuje data o sí
   
 1. Otevřete projekt v sadě Visual Studio.  
   
-2. V nabídce klikněte na tlačítko **ladění / Profiler výkonu...**. Zvolte **sítě**a klikněte na tlačítko **Start**.  
+2. V nabídce klikněte na tlačítko **ladění / Profiler výkonu...** . Zvolte **sítě**a klikněte na tlačítko **Start**.  
   
 3. Nástroj pro sítě začne shromažďování provoz protokolu HTTP vaší aplikace.  
   
@@ -67,11 +67,11 @@ Visual Studio **sítě** diagnostický nástroj, který shromažďuje data o sí
 ### <a name="analysis-tips"></a>Tipy pro analýzy  
  Tento nástroj světla, které určité oblasti, které mohou být užitečné při používání sítě související analýzy:  
   
-1.  Požadavky, které jsou plně obsluhovat z mezipaměti se zobrazují jako **(z mezipaměti)** v **přijaté** sloupce. To může pomoct určit, jestli používáte mezipaměti efektivně ušetříte šířku pásma uživatele, nebo zda omylem ukládání do mezipaměti odpovědi a poskytuje koncových uživatelů vaší aplikace pomocí zastaralá data.  
+1. Požadavky, které jsou plně obsluhovat z mezipaměti se zobrazují jako **(z mezipaměti)** v **přijaté** sloupce. To může pomoct určit, jestli používáte mezipaměti efektivně ušetříte šířku pásma uživatele, nebo zda omylem ukládání do mezipaměti odpovědi a poskytuje koncových uživatelů vaší aplikace pomocí zastaralá data.  
   
-2.  Chybové odpovědi (4xx nebo 5xx) se zobrazí v v **výsledky** sloupec v červeném stavu kódu a jsou také zvýrazněna v panelu souhrnu. Díky tomu je snadné sledovat chyby mezi mnoha potenciální požadavky na vaši aplikaci.  
+2. Chybové odpovědi (4xx nebo 5xx) se zobrazí v v **výsledky** sloupec v červeném stavu kódu a jsou také zvýrazněna v panelu souhrnu. Díky tomu je snadné sledovat chyby mezi mnoha potenciální požadavky na vaši aplikaci.  
   
-3.  Tlačítko Tisk pretty odpovědi (uvnitř těla kartu) můžete analyzovat prostřednictvím datové části odpovědi JSON, XML, HTML, CSS, JavaScript a TypeScript zvýšením čitelnost obsahu.  
+3. Tlačítko Tisk pretty odpovědi (uvnitř těla kartu) můžete analyzovat prostřednictvím datové části odpovědi JSON, XML, HTML, CSS, JavaScript a TypeScript zvýšením čitelnost obsahu.  
   
 ## <a name="see-also"></a>Viz také  
  [Spustit profilování nástroje bez ladění](http://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)   

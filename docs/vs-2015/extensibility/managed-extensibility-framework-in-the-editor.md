@@ -10,12 +10,12 @@ ms.assetid: 3f59a285-6c33-4ae3-a4fb-ec1f5aa21bd1
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 589e392530238249eefb789170f4f986b24a8551
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ae47942e9b686ac02623e4b3f2d0681babf879f9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54766859"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60084025"
 ---
 # <a name="managed-extensibility-framework-in-the-editor"></a>Rozhraní Managed Extensibility Framework v editoru
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -84,25 +84,25 @@ internal IClassificationTypeRegistryService ClassificationRegistry;
   
 #### <a name="to-consume-editor-functionality-from-a-mef-component-part"></a>Využívání funkce editoru v součásti MEF  
   
-1.  Přidání odkazů System.Composition.ComponentModel.dll, což je v globální mezipaměti sestavení (GAC), a editor sestavení.  
+1. Přidání odkazů System.Composition.ComponentModel.dll, což je v globální mezipaměti sestavení (GAC), a editor sestavení.  
   
-2.  Přidejte příslušné příkazy using.  
+2. Přidejte příslušné příkazy using.  
   
     ```  
     using System.ComponentModel.Composition;  
     using Microsoft.VisualStudio.Text;  
     ```  
   
-3.  Přidat `[Import]` atribut do vašeho rozhraní služby následujícím způsobem.  
+3. Přidat `[Import]` atribut do vašeho rozhraní služby následujícím způsobem.  
   
     ```  
     [Import]  
     ITextBufferFactoryService textBufferService;  
     ```  
   
-4.  Když zakoupíte službu, můžete využívat některou z jeho součástí.  
+4. Když zakoupíte službu, můžete využívat některou z jeho součástí.  
   
-5.  Když kompilujete sestavení, vložit ho do... Složka \Common7\IDE\Components\ instalace sady Visual Studio.  
+5. Když kompilujete sestavení, vložit ho do... Složka \Common7\IDE\Components\ instalace sady Visual Studio.  
   
 ## <a name="see-also"></a>Viz také  
  [Rozšiřovací body služeb jazyka a editoru](../extensibility/language-service-and-editor-extension-points.md)

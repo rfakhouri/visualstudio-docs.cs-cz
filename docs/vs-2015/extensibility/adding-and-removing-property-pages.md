@@ -12,12 +12,12 @@ ms.assetid: 34853412-ab8a-4caa-9601-7d0727b2985d
 caps.latest.revision: 30
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: baefb34bf098b9d5b712267a88303b25a2d5687d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0b7845d80b895d1b4c68afc59f2d2fe821be11f7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54783556"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102793"
 ---
 # <a name="adding-and-removing-property-pages"></a>Přidávání a odebírání stránek vlastností
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Poskytuje centralizovaného umístění pro správu vlastnosti projektu, nastave
   
 #### <a name="to-remove-a-property-page-in-project-designer"></a>Chcete-li odebrat stránky vlastností v Návrháři projektu  
   
-1.  Přepsat `GetProperty(uint itemId, int propId, out object property)` metoda k filtrování stránky vlastností a získat `clsids` seznamu.  
+1. Přepsat `GetProperty(uint itemId, int propId, out object property)` metoda k filtrování stránky vlastností a získat `clsids` seznamu.  
   
     ```vb  
     Protected Overrides int GetProperty(uint itemId, int propId, out object property)  
@@ -75,7 +75,7 @@ Poskytuje centralizovaného umístění pro správu vlastnosti projektu, nastave
     }  
     ```  
   
-2.  Odeberte **události sestavení** stránky získané `clsids` seznamu.  
+2. Odeberte **události sestavení** stránky získané `clsids` seznamu.  
   
     ```vb  
     Private buildEventsPageGuid As String = "{1E78F8DB-6C07-4D61-A18F-7514010ABD56}"  
@@ -111,7 +111,7 @@ Poskytuje centralizovaného umístění pro správu vlastnosti projektu, nastave
   
 #### <a name="to-add-a-property-page-in-project-designer"></a>Přidání stránky vlastností v Návrháři projektu  
   
-1.  Vytvoření stránky vlastností, které chcete přidat.  
+1. Vytvoření stránky vlastností, které chcete přidat.  
   
     ```vb  
     Class DeployPropertyPage  
@@ -156,7 +156,7 @@ Poskytuje centralizovaného umístění pro správu vlastnosti projektu, nastave
     }  
     ```  
   
-2.  Zaregistrujte nové stránky vlastností.  
+2. Zaregistrujte nové stránky vlastností.  
   
     ```vb  
     <MSVSIP.ProvideObject(GetType(DeployPropertyPage), RegisterUsing = RegistrationMethod.CodeBase)>  
@@ -166,7 +166,7 @@ Poskytuje centralizovaného umístění pro správu vlastnosti projektu, nastave
     [MSVSIP.ProvideObject(typeof(DeployPropertyPage), RegisterUsing = RegistrationMethod.CodeBase)]  
     ```  
   
-3.  Přepsat `GetProperty(uint itemId, int propId, out object property)` metoda k filtrování stránky vlastností, získání `clsids` seznamu a přidat nové stránky vlastností.  
+3. Přepsat `GetProperty(uint itemId, int propId, out object property)` metoda k filtrování stránky vlastností, získání `clsids` seznamu a přidat nové stránky vlastností.  
   
     ```vb  
     Protected Overrides Function GetProperty(ByVal itemId As UInteger, ByVal propId As Integer, ByRef [property] As Object) As Integer  

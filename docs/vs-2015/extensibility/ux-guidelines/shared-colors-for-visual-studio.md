@@ -8,56 +8,59 @@ ms.assetid: 8d11b9a0-6175-4f2e-8e7f-79daee1bfd41
 caps.latest.revision: 6
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c8d0dfb8a7758d0619557f6c54056cd88ec68771
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 87520a7e17d194d7f5cc28665a6f23466bface65
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54780064"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60086426"
 ---
 # <a name="shared-colors-for-visual-studio"></a>Sdílené barvy pro sadu Visual Studio
+
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Při navrhování uživatelského rozhraní, který používá společné prvky prostředí sady Visual Studio, nebo chcete prvek rozhraní pro zajištění konzistence s podobné funkce, použijte existující token názvy v definičních souborech balíčku vybrat a přiřadit barvy. Tím se zajistí, že vaše uživatelské rozhraní zůstane konzistentní s celkové prostředí sady Visual Studio a že se automaticky aktualizuje při přidávání nebo aktualizaci motivy.
 
- Tento článek popisuje obecné prvky uživatelského rozhraní a token názvy, které používají, které můžete využít při sestavování podobným uživatelským rozhraním. Konkrétní informace o tom, jak přístupové tokeny tyto barvy, naleznete v tématu [VSColor službu](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_TheVSColorService).
+Tento článek popisuje obecné prvky uživatelského rozhraní a token názvy, které používají, které můžete využít při sestavování podobným uživatelským rozhraním. Konkrétní informace o tom, jak přístupové tokeny tyto barvy, naleznete v tématu [VSColor službu](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_TheVSColorService).
 
- Nezapomeňte použít token názvy správně:
+Nezapomeňte použít token názvy správně:
 
--   **Používejte token názvy založené na funkce, nikoli na vlastní barvu.** Společné sdílené barvy jsou spojeny s prvky určité rozhraní a jsou určeny pouze pro stejné nebo podobné funkce. Například nepoužívejte soubory Barva při stisknutí tlačítka pole se seznamem pro animace průběhu pokryjte pouze z důvodu jako barva. Funkce pole se seznamem a animace se liší, a pokud barva přidružené změny pole se seznamem, už může být vhodné barvu pro prvek animace. Konzistentní použití barev pomůže zorientovat uživatelům a zabránit nejasnostem.
+- **Používejte token názvy založené na funkce, nikoli na vlastní barvu.** Společné sdílené barvy jsou spojeny s prvky určité rozhraní a jsou určeny pouze pro stejné nebo podobné funkce. Například nepoužívejte soubory Barva při stisknutí tlačítka pole se seznamem pro animace průběhu pokryjte pouze z důvodu jako barva. Funkce pole se seznamem a animace se liší, a pokud barva přidružené změny pole se seznamem, už může být vhodné barvu pro prvek animace. Konzistentní použití barev pomůže zorientovat uživatelům a zabránit nejasnostem.
 
--   **Barvy textu a pozadí pomocí správné kombinace.** Barvy pozadí, které jsou určeny pro použití s textem bude mít k přidružené textového barvu. Nepoužívejte barvy textu, než který je určen pro pozadí. Pokud není k přidružené barvy, nepoužívejte pro všechny povrch, na kterém budete chtít zobrazit text barvy pozadí. Nejde přečíst rozhraní může vést k jiné kombinace barvy textu a pozadí.
+- **Barvy textu a pozadí pomocí správné kombinace.** Barvy pozadí, které jsou určeny pro použití s textem bude mít k přidružené textového barvu. Nepoužívejte barvy textu, než který je určen pro pozadí. Pokud není k přidružené barvy, nepoužívejte pro všechny povrch, na kterém budete chtít zobrazit text barvy pozadí. Nejde přečíst rozhraní může vést k jiné kombinace barvy textu a pozadí.
 
--   **Pomocí řízení barvy, které jsou vhodné pro jejich umístění.** V některých stavech některé ovládací prvky sady Visual Studio nemají samostatné ohraničení a barvy pozadí. Místo toho že sbírání tyto barvy z plochy za nimi stojí. Ujistěte se, že vždy používáte token názvy, které jsou vhodné pro umístění, ve kterém jsou umístění ovládacího prvku.
+- **Pomocí řízení barvy, které jsou vhodné pro jejich umístění.** V některých stavech některé ovládací prvky sady Visual Studio nemají samostatné ohraničení a barvy pozadí. Místo toho že sbírání tyto barvy z plochy za nimi stojí. Ujistěte se, že vždy používáte token názvy, které jsou vhodné pro umístění, ve kterém jsou umístění ovládacího prvku.
 
 > [!IMPORTANT]
->  Nepoužívejte tokeny v kategorii "Stránka Start" nebo "Jablečného."
+> Nepoužívejte tokeny v kategorii "Stránka Start" nebo "Jablečného."
 
 ## <a name="command-structures"></a>Příkaz struktury
 
-###  <a name="BKMK_CommandMenus"></a> Nabídky
- Nabídek může dojít v několika místech v rámci sady Visual Studio: hlavní nabídek vložený v dokumentu nebo nástroje systému windows, nebo klikněte pravým tlačítkem na různých místech v celém rozhraní IDE. Implementace nabídky spojené s další prvky uživatelského rozhraní jsou popsány v části pro odpovídající prvek. Vždy byste měli používat standardní nabídky implementace poskytovaných prostředím sady Visual Studio. V některých výjimečných případech ale nebudete mít přístup k standardní nabídky sady Visual Studio. V těchto situacích nepoužívejte následující názvy token k zajištění, že vaše uživatelské rozhraní je v souladu s jiným nabídkám v sadě Visual Studio.
+### <a name="BKMK_CommandMenus"></a> Nabídky
 
- ![Červená nabídky značka](../../extensibility/ux-guidelines/media/0303-000-menuredline.png "0303 000_MenuRedline")
+Nabídek může dojít v několika místech v rámci sady Visual Studio: hlavní nabídek vložený v dokumentu nebo nástroje systému windows, nebo klikněte pravým tlačítkem na různých místech v celém rozhraní IDE. Implementace nabídky spojené s další prvky uživatelského rozhraní jsou popsány v části pro odpovídající prvek. Vždy byste měli používat standardní nabídky implementace poskytovaných prostředím sady Visual Studio. V některých výjimečných případech ale nebudete mít přístup k standardní nabídky sady Visual Studio. V těchto situacích nepoužívejte následující názvy token k zajištění, že vaše uživatelské rozhraní je v souladu s jiným nabídkám v sadě Visual Studio.
 
- Použití...
- -   vždy, když je potřeba vytvořit vlastní nabídku.
+![Červená nabídky značka](../../extensibility/ux-guidelines/media/0303-000-menuredline.png "0303 000_MenuRedline")
+
+Použití...
+- vždy, když je potřeba vytvořit vlastní nabídku.
 
 - Pokud máte nové komponenty uživatelského rozhraní, který chcete porovnat nabídek sady Visual Studio.
 
-  Nepoužívejte...
-  Barva pozadí samostatně. Vždy použijte kombinaci na pozadí a popředí uvedené.
+Nepoužívejte...
+Barva pozadí samostatně. Vždy použijte kombinaci na pozadí a popředí uvedené.
 
 #### <a name="menu-title"></a>Název nabídky
- Názvy nabídek se skládají z na pozadí, ohraničení a text nadpisu, jakož i volitelný glyf, obvykle, když se nachází v nabídce v panelu příkazů.
 
- ![Název nabídky červená značka](../../extensibility/ux-guidelines/media/0303-001-menutitleredline.png "0303 001_MenuTitleRedline")
+Názvy nabídek se skládají z na pozadí, ohraničení a text nadpisu, jakož i volitelný glyf, obvykle, když se nachází v nabídce v panelu příkazů.
 
- Použití...
+![Název nabídky červená značka](../../extensibility/ux-guidelines/media/0303-001-menutitleredline.png "0303 001_MenuTitleRedline")
+
+Použití...
 vždy, když vytváříte název vlastní nabídku.
 
- Nepoužívejte...
- -   pro všechno, co nechcete vždy odpovídat názvu nabídky.
+Nepoužívejte...
+- pro všechno, co nechcete vždy odpovídat názvu nabídky.
 
 - v libovolné na pozadí a popředí jinými než která byla specifikována.
 
@@ -192,15 +195,16 @@ vždy, když vytváříte název vlastní nabídku.
   Žádné
 
 #### <a name="menu"></a>Nabídka
- Individuální nabídky položky se skládá z text nabídky a volitelné ikony, zaškrtněte políčko nebo podnabídka glyfů. Jeho textu a pozadí Změna barvy při najetí myší. Tento token barva je pár na pozadí a popředí.
 
- ![Červená značka položky nabídky](../../extensibility/ux-guidelines/media/0303-009-menuitemredline.png "0303 009_MenuItemRedline")
+Individuální nabídky položky se skládá z text nabídky a volitelné ikony, zaškrtněte políčko nebo podnabídka glyfů. Jeho textu a pozadí Změna barvy při najetí myší. Tento token barva je pár na pozadí a popředí.
 
- Použití...
+![Červená značka položky nabídky](../../extensibility/ux-guidelines/media/0303-009-menuitemredline.png "0303 009_MenuItemRedline")
+
+Použití...
 pro všechny rozevíracího seznamu, který se spustí z panelu příkazů a nabídek.
 
- Nepoužívejte...
- -   pro všechny rozevíracího seznamu, který se nachází v jiném kontextu.
+Nepoužívejte...
+- pro všechny rozevíracího seznamu, který se nachází v jiném kontextu.
 
 - v libovolné na pozadí a popředí jinými než která byla specifikována.
 
@@ -351,32 +355,34 @@ pro všechny rozevíracího seznamu, který se spustí z panelu příkazů a nab
   `Environment.CommandBarSelectedIconDisabled`
 
 ### <a name="command-bar"></a>Panel příkazů
- Na panelu příkazů lze zobrazit na více místech v rámci rozhraní IDE sady Visual Studio, zejména příkaz polici a embedded v nástroji nebo okna dokumentu.
 
- Obecně platí vždy používejte implementace standardních příkazů panelu poskytovaných prostředím sady Visual Studio. Pomocí standardní mechanismus zajišťuje, že se správně zobrazí všechny podrobnosti o visual a interaktivní prvky, ke které přistupuje konzistentní s jinými ovládacími prvky sady Visual Studio příkazového řádku. Nicméně pokud je nutné, můžete vytvořit vlastní panel příkazů, ujistěte se, že správně pomocí následující token názvy stylu.
+Na panelu příkazů lze zobrazit na více místech v rámci rozhraní IDE sady Visual Studio, zejména příkaz polici a embedded v nástroji nebo okna dokumentu.
 
- ![Panel příkazů červená značka](../../extensibility/ux-guidelines/media/0303-018-commandbarredline.png "0303 018_CommandBarRedline")
+Obecně platí vždy používejte implementace standardních příkazů panelu poskytovaných prostředím sady Visual Studio. Pomocí standardní mechanismus zajišťuje, že se správně zobrazí všechny podrobnosti o visual a interaktivní prvky, ke které přistupuje konzistentní s jinými ovládacími prvky sady Visual Studio příkazového řádku. Nicméně pokud je nutné, můžete vytvořit vlastní panel příkazů, ujistěte se, že správně pomocí následující token názvy stylu.
 
- ![Červená tlačítku přetečení značka](../../extensibility/ux-guidelines/media/0303-019-overflowbuttonredline.png "0303 019_OverflowButtonRedline")
+![Panel příkazů červená značka](../../extensibility/ux-guidelines/media/0303-018-commandbarredline.png "0303 018_CommandBarRedline")
 
- Použití...
+![Červená tlačítku přetečení značka](../../extensibility/ux-guidelines/media/0303-019-overflowbuttonredline.png "0303 019_OverflowButtonRedline")
+
+Použití...
 na místech, kde je třeba vložené příkaz panelu ale nebudou moct používat standardní implementace panel příkaz sady Visual Studio.
 
- Nepoužívejte...
- -   pro prvky uživatelského rozhraní, které nejsou podobný panelu příkazů.
+Nepoužívejte...
+- pro prvky uživatelského rozhraní, které nejsou podobný panelu příkazů.
 
--   pro příkaz součástí než ty, pro kterou token názvy jsou určené.
+- pro příkaz součástí než ty, pro kterou token názvy jsou určené.
 
 #### <a name="command-bar-group"></a>Příkaz pruhový graf
- Příkaz pruhový graf se skládá ze sady související ovládací prvky stavového řádku příkaz a může obsahovat libovolný počet tlačítek rozdělení tlačítek, rozevíracích nabídek, pole se seznamem nebo nabídky. Barvy pro tyto ovládací prvky se budou řídit token názvy a jsou jednotlivě jinde popsaných v této příručce. Oddělovací čáry se používá k rozdělení skupiny panelu příkazů na související podskupiny.
 
- ![Skupiny příkazového řádku červeně označit](../../extensibility/ux-guidelines/media/0303-020-commandbargroupredline.png "0303 020_CommandBarGroupRedline")
+Příkaz pruhový graf se skládá ze sady související ovládací prvky stavového řádku příkaz a může obsahovat libovolný počet tlačítek rozdělení tlačítek, rozevíracích nabídek, pole se seznamem nebo nabídky. Barvy pro tyto ovládací prvky se budou řídit token názvy a jsou jednotlivě jinde popsaných v této příručce. Oddělovací čáry se používá k rozdělení skupiny panelu příkazů na související podskupiny.
 
- Použití...
+![Skupiny příkazového řádku červeně označit](../../extensibility/ux-guidelines/media/0303-020-commandbargroupredline.png "0303 020_CommandBarGroupRedline")
+
+Použití...
 na místech, kde je třeba vložené příkaz panelu ale nebudou moct používat standardní implementace panel příkaz sady Visual Studio.
 
- Nepoužívejte...
- -   pro prvky uživatelského rozhraní, které nejsou podobný panelu příkazů.
+Nepoužívejte...
+- pro prvky uživatelského rozhraní, které nejsou podobný panelu příkazů.
 
 - pro příkaz součástí než ty, pro kterou token názvy jsou určené.
 
@@ -407,15 +413,16 @@ na místech, kde je třeba vložené příkaz panelu ale nebudou moct používat
   `Environment.CommandBarToolBarSeparatorHighlight`
 
 #### <a name="command-icons"></a>Ikony příkazů
- ![Červená ikona příkazu. značka](../../extensibility/ux-guidelines/media/0303-021-commandiconredline1.png "0303 021_CommandIconRedline1")
 
- ![Červená ikona příkazu. značka](../../extensibility/ux-guidelines/media/0303-022-commandiconredline2.png "0303 022_CommandIconRedline2")
+![Červená ikona příkazu. značka](../../extensibility/ux-guidelines/media/0303-021-commandiconredline1.png "0303 021_CommandIconRedline1")
 
- Použití...
+![Červená ikona příkazu. značka](../../extensibility/ux-guidelines/media/0303-022-commandiconredline2.png "0303 022_CommandIconRedline2")
+
+Použití...
 u tlačítek, které budou umístěny na panelu příkazů.
 
- Nepoužívejte...
- -   pro ovládací prvky, které mají své vlastní token názvy.
+Nepoužívejte...
+- pro ovládací prvky, které mají své vlastní token názvy.
 
 - v libovolné na pozadí a popředí jinými než která byla specifikována.
 
@@ -551,20 +558,20 @@ u tlačítek, které budou umístěny na panelu příkazů.
 
   Není k dispozici
 
-####  <a name="BKMK_CommandComboBox"></a> Pole se seznamem
+#### <a name="BKMK_CommandComboBox"></a> Pole se seznamem
 
 > [!IMPORTANT]
->  Pole se seznamem se podobají rozevírací seznamy, ale zahrnují určitá oblast upravitelný text. Pokud rozevírací seznam neobsahuje určitá oblast upravitelný text, použití tokenů barva nalezené pod [rozevíracího seznamu](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandDropDown).
+> Pole se seznamem se podobají rozevírací seznamy, ale zahrnují určitá oblast upravitelný text. Pokud rozevírací seznam neobsahuje určitá oblast upravitelný text, použití tokenů barva nalezené pod [rozevíracího seznamu](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandDropDown).
 
- ![Červená pole se seznamem značka](../../extensibility/ux-guidelines/media/0303-029-comboboxredline.png "0303 029_ComboBoxRedline")
+![Červená pole se seznamem značka](../../extensibility/ux-guidelines/media/0303-029-comboboxredline.png "0303 029_ComboBoxRedline")
 
- Použití...
- -   Při vytváření vlastního pole se seznamem.
+Použití...
+- Při vytváření vlastního pole se seznamem.
 
 - Při vytváření ovládací prvek panelu příkazů, který je podobný pole se seznamem.
 
   Nepoužívejte...
-  -   pro všechno, co nechcete, aby vždy tak, aby odpovídaly příkaz uživatelské rozhraní panelu.
+  - pro všechno, co nechcete, aby vždy tak, aby odpovídaly příkaz uživatelské rozhraní panelu.
 
 - Když máte přístup k upravený pole se seznamem.
 
@@ -798,18 +805,18 @@ u tlačítek, které budou umístěny na panelu příkazů.
 
   `Environment.ComboBoxDisabledGlyph`
 
-####  <a name="BKMK_CommandDropDown"></a> Rozevírací seznam
+#### <a name="BKMK_CommandDropDown"></a> Rozevírací seznam
 
 > [!IMPORTANT]
->  Rozevírací seznamy jsou podobné polích se seznamem, ale nemají upravitelný text oblastech. Pokud rozevírací seznam obsahuje určitá oblast upravitelný text, použití tokenů barva nalezené pod [– pole se seznamem](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandComboBox).
+> Rozevírací seznamy jsou podobné polích se seznamem, ale nemají upravitelný text oblastech. Pokud rozevírací seznam obsahuje určitá oblast upravitelný text, použití tokenů barva nalezené pod [– pole se seznamem](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandComboBox).
 
- ![Vyřadit&#45;dolů červená značka](../../extensibility/ux-guidelines/media/0303-042-dropdownredline.png "0303 042_DropdownRedline")
+![Vyřadit&#45;dolů červená značka](../../extensibility/ux-guidelines/media/0303-042-dropdownredline.png "0303 042_DropdownRedline")
 
- Použití...
+Použití...
 Pokud při vytváření vlastní rozevírací seznam ovládacích prvků.
 
- Nepoužívejte...
- -   pro všechno, co to není podobný rozevíracího seznamu.
+Nepoužívejte...
+- pro všechno, co to není podobný rozevíracího seznamu.
 
 - pro pole se seznamem nebo tlačítka rozdělení.
 
@@ -1010,15 +1017,16 @@ Pokud při vytváření vlastní rozevírací seznam ovládacích prvků.
   `Environment.DropDownDisabledGlyph`
 
 #### <a name="split-button"></a>Tlačítko rozdělení
- Tlačítka rozdělení sdílet s jinými ovládacími prvky příkazového řádku, jako jsou tlačítka, nabídky a panelu text příkazu mnoho názvů token. Všechny potřebné akce a tlačítkem rozevírací nabídky token názvy pro usnadnění práce tady opakují. Rozdělené tlačítko rozevírací seznamy jsou implementace panelu příkazů [nabídky](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandMenus).
 
- ![Tlačítko rozdělení červená značka](../../extensibility/ux-guidelines/media/0303-053-splitbuttonredline.png "0303 053_SplitButtonRedline")
+Tlačítka rozdělení sdílet s jinými ovládacími prvky příkazového řádku, jako jsou tlačítka, nabídky a panelu text příkazu mnoho názvů token. Všechny potřebné akce a tlačítkem rozevírací nabídky token názvy pro usnadnění práce tady opakují. Rozdělené tlačítko rozevírací seznamy jsou implementace panelu příkazů [nabídky](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandMenus).
 
- Použití...
+![Tlačítko rozdělení červená značka](../../extensibility/ux-guidelines/media/0303-053-splitbuttonredline.png "0303 053_SplitButtonRedline")
+
+Použití...
 Když vytváříte tlačítko rozdělení vlastní.
 
- Nepoužívejte...
- -   pro jiné typy tlačítek.
+Nepoužívejte...
+- pro jiné typy tlačítek.
 
 - v libovolné na pozadí a popředí jinými než která byla specifikována.
 
@@ -1425,7 +1433,7 @@ pro všechny uživatelské rozhraní, které nechcete automaticky změnit, pokud
   Pokud při vytváření vlastního dokumentu karty.
 
   Nepoužívejte...
-  -   u tabulátorů prozatímní (preview).
+  - u tabulátorů prozatímní (preview).
 
 - prostředí pro uživatelské rozhraní, které nechcete automaticky změnit, pokud má aktualizace motivu.
 
@@ -1538,15 +1546,16 @@ pro všechny uživatelské rozhraní, které nechcete automaticky změnit, pokud
  Nastavte stejnou barvu jako pozadí.
 
 #### <a name="preview-tab"></a>Karta náhledu
- Na kartě preview se zobrazí na pravé straně kanálu kartu dokumentu po kliknutí na položku v panelu nástrojů Průzkumníku řešení. Funguje jako náhled dokumentu a také umožňuje uživateli možnost zachovat dokument otevřít na levé straně kanálu kartu dokumentu. Otevřenou kartou pouze jednu verzi preview může být najednou otevřený. Ve verzi Preview karty mají i na pozadí a vybraných států, jako jsou otevřené karty a může být zaměřené nebo bez fokusu v aktivním stavu.
 
- ![Červená kartu náhledu značka](../../extensibility/ux-guidelines/media/0303-078-previewtabredline.png "0303 078_PreviewTabRedline")
+Na kartě preview se zobrazí na pravé straně kanálu kartu dokumentu po kliknutí na položku v panelu nástrojů Průzkumníku řešení. Funguje jako náhled dokumentu a také umožňuje uživateli možnost zachovat dokument otevřít na levé straně kanálu kartu dokumentu. Otevřenou kartou pouze jednu verzi preview může být najednou otevřený. Ve verzi Preview karty mají i na pozadí a vybraných států, jako jsou otevřené karty a může být zaměřené nebo bez fokusu v aktivním stavu.
 
- Použití...
+![Červená kartu náhledu značka](../../extensibility/ux-guidelines/media/0303-078-previewtabredline.png "0303 078_PreviewTabRedline")
+
+Použití...
 kdekoli vytváření prozatímní ve verzi preview a má nějaký element tak, aby odpovídaly aktuální barvu karty ve verzi preview.
 
- Nepoužívejte...
- -   pro jakýkoli druh dokumentu nebo kartu, která není prozatímní (preview).
+Nepoužívejte...
+- pro jakýkoli druh dokumentu nebo kartu, která není prozatímní (preview).
 
 - prostředí pro uživatelské rozhraní, které nechcete automaticky změnit, pokud má aktualizace motivu.
 
@@ -1661,15 +1670,16 @@ kdekoli vytváření prozatímní ve verzi preview a má nějaký element tak, a
   Nastavte stejnou barvu jako pozadí.
 
 #### <a name="document-overflow-button"></a>Dokument tlačítku přetečení
- Tlačítko přetečení dokument je k dispozici, pokud existuje jedna nebo více dokumentů otevřít, bez ohledu na to, zda je v aktuální konfiguraci podle všechny karty dokumentu svislé mezery. Rozevírací nabídky přetečení dokumentu, který je kontrolován **CommandBarMenu** barvy (naleznete v tématu [nabídky](../../misc/shared-colors.md#BKMK_CommandMenus)), zobrazí seznam všech otevřených dokumentech, viditelný nebo skrytý a změny piktogram přetečení podle toho, jestli se zobrazí všechny otevřené dokumenty v kanálu kartu.
 
- ![Červená přetečení značka](../../extensibility/ux-guidelines/media/0303-083-overflowredline.png "0303 083_OverflowRedline")
+Tlačítko přetečení dokument je k dispozici, pokud existuje jedna nebo více dokumentů otevřít, bez ohledu na to, zda je v aktuální konfiguraci podle všechny karty dokumentu svislé mezery. Rozevírací nabídky přetečení dokumentu, který je kontrolován **CommandBarMenu** barvy (naleznete v tématu [nabídky](../../misc/shared-colors.md#BKMK_CommandMenus)), zobrazí seznam všech otevřených dokumentech, viditelný nebo skrytý a změny piktogram přetečení podle toho, jestli se zobrazí všechny otevřené dokumenty v kanálu kartu.
 
- Použití...
+![Červená přetečení značka](../../extensibility/ux-guidelines/media/0303-083-overflowredline.png "0303 083_OverflowRedline")
+
+Použití...
 Když vytvoříte tlačítko přetečení vlastní šablony dokumentů.
 
- Nepoužívejte...
- -   pro uživatelské rozhraní, která není podobné k tlačítku přetečení.
+Nepoužívejte...
+- pro uživatelské rozhraní, která není podobné k tlačítku přetečení.
 
 - pro tlačítka přetečení panelu příkazů.
 
@@ -1895,13 +1905,14 @@ prostředí pro uživatelské rozhraní, které nechcete automaticky změnit, po
  `Environment.TitleBarDragHandle`
 
 #### <a name="title-bar-buttons"></a>Název tlačítka na panelu
- ![Červená tlačítko nadpisu značka](../../extensibility/ux-guidelines/media/0303-095-titlebarbuttonredline.png "0303 095_TitleBarButtonRedline")
 
- Použití...
+![Červená tlačítko nadpisu značka](../../extensibility/ux-guidelines/media/0303-095-titlebarbuttonredline.png "0303 095_TitleBarButtonRedline")
+
+Použití...
 u tlačítek, která se zobrazí v uživatelském rozhraní, která používá tokeny barvu ze záhlaví okna nástrojů.
 
- Nepoužívejte...
- -   u tlačítek, která se zobrazí v jiných umístěních.
+Nepoužívejte...
+- u tlačítek, která se zobrazí v jiných umístěních.
 
 - v libovolné na pozadí a popředí jinými než která byla specifikována.
 
@@ -2227,7 +2238,7 @@ prostředí pro uživatelské rozhraní, které nechcete automaticky změnit, po
   Při navrhování vlastní vyhledávací pole.
 
   Nepoužívejte...
-  -   pro všechno, co není vyhledávací pole.
+  - pro všechno, co není vyhledávací pole.
 
 - pro všechno, co, které nechcete, aby vždy tak, aby odpovídaly hledání pole uživatelského rozhraní.
 
@@ -2516,17 +2527,18 @@ prostředí pro uživatelské rozhraní, které nechcete automaticky změnit, po
   Žádné
 
 #### <a name="search-drop-down-lists"></a>Hledání rozevírací seznamy
- Vyhledávací pole rozevírací nabídce má potenciál být o něco složitější než ostatní rozevíracích nabídek v sadě Visual Studio. "Navrhované hledání" a "možnosti hledání" oddílů se může objevit samostatně nebo společně v nabídce a každý z nich jsou zobrazeny samostatně. Řádek také odděluje tyto dva oddíly, když jsou uvedeny společně a ohraničení kolem celého rozevírací nabídky.
 
- ![Hledání rozevírací&#45;dolů červená značka](../../extensibility/ux-guidelines/media/0303-124-searchdropdownredline.png "0303 124_SearchDropdownRedline")
+Vyhledávací pole rozevírací nabídce má potenciál být o něco složitější než ostatní rozevíracích nabídek v sadě Visual Studio. "Navrhované hledání" a "možnosti hledání" oddílů se může objevit samostatně nebo společně v nabídce a každý z nich jsou zobrazeny samostatně. Řádek také odděluje tyto dva oddíly, když jsou uvedeny společně a ohraničení kolem celého rozevírací nabídky.
 
- Použití...
- -   Pokud při vytváření vlastních vyhledávacích rozevíracím seznamu.
+![Hledání rozevírací&#45;dolů červená značka](../../extensibility/ux-guidelines/media/0303-124-searchdropdownredline.png "0303 124_SearchDropdownRedline")
+
+Použití...
+- Pokud při vytváření vlastních vyhledávacích rozevíracím seznamu.
 
 - správný token názvy správný seznam součástí.
 
   Nepoužívejte...
-  -   pro rozevíracích seznamů, které se zobrazí v jiném kontextu.
+  - pro rozevíracích seznamů, které se zobrazí v jiném kontextu.
 
 - v libovolné na pozadí a popředí jinými než která byla specifikována.
 
@@ -2906,16 +2918,17 @@ Pokud při vytváření uživatelského rozhraní, které chcete odpovídá posu
 
  `Environment.ScrollBarArrowGlyphPressed`
 
-###  <a name="BKMK_TreeView"></a> Stromové zobrazení
- Několika okny nástrojů, včetně Průzkumníka řešení, Průzkumníka serveru a zobrazení tříd, implementace hierarchické organizační schéma, jejichž barvy se řídí názvy barev v kategorii prvku TreeView. Barvy textu a pozadí mají všechny položky ve stromovém zobrazení. Položky, které mají vnořené podřízené prvky mají také glyfy označující, zda položka rozbalená nebo sbalená.
+### <a name="BKMK_TreeView"></a> Stromové zobrazení
 
- ![Červená stromové zobrazení značka](../../extensibility/ux-guidelines/media/0303-147-treeviewredline.png "0303 147_TreeViewRedline")
+Několika okny nástrojů, včetně Průzkumníka řešení, Průzkumníka serveru a zobrazení tříd, implementace hierarchické organizační schéma, jejichž barvy se řídí názvy barev v kategorii prvku TreeView. Barvy textu a pozadí mají všechny položky ve stromovém zobrazení. Položky, které mají vnořené podřízené prvky mají také glyfy označující, zda položka rozbalená nebo sbalená.
 
- Použití...
+![Červená stromové zobrazení značka](../../extensibility/ux-guidelines/media/0303-147-treeviewredline.png "0303 147_TreeViewRedline")
+
+Použití...
 kdekoli potřebujete implementovat hierarchické organizační zobrazení.
 
- Nepoužívejte...
- -   pro všechno, co to není podobné zobrazení stromu.
+Nepoužívejte...
+- pro všechno, co to není podobné zobrazení stromu.
 
 - v libovolné na pozadí a popředí jinými než která byla specifikována.
 
@@ -3332,13 +3345,14 @@ pro uživatelské rozhraní, který není ovládací prvek zaškrtávací polí�
  `CommonControls.CheckBoxGlyphFocused`
 
 ### <a name="drop-boxcombo-box-controls"></a>Přetáhněte pole nebo pole se seznamem
- ![Vyřadit&#45;dolů&#47;červená pole se seznamem značka](../../extensibility/ux-guidelines/media/0303-167-dropdowncomboboxredline.png "0303 167_DropDownComboBoxRedline")
 
- Použití...
+![Vyřadit&#45;dolů&#47;červená pole se seznamem značka](../../extensibility/ux-guidelines/media/0303-167-dropdowncomboboxredline.png "0303 167_DropDownComboBoxRedline")
+
+Použití...
 rozevírací seznamy a pole se seznamem polí, které jsou součástí dokumentu kontejneru.
 
- Nepoužívejte...
- -   pro uživatelské rozhraní, která není pole rozevíracího seznamu nebo pole se seznamem.
+Nepoužívejte...
+- pro uživatelské rozhraní, která není pole rozevíracího seznamu nebo pole se seznamem.
 
 - pro [rozevíracího seznamu](../../misc/shared-colors.md#BKMK_CommandDropDown) nebo [– pole se seznamem](../../misc/shared-colors.md#BKMK_CommandComboBox) na panelu příkazů.
 
@@ -3690,17 +3704,18 @@ pro uživatelské rozhraní, který není ovládacího prvku tabulky nebo tabulk
  Žádné
 
 ## <a name="manifest-designer"></a>Návrhář manifestu
- Nástroj Manifest Designer je navržená jako způsob, jak bylo snazší upravit soubor manifestu v projektech pro systém Windows 8 a Windows Phone 8. Neplatí žádné sdílené architektuře k dispozici pro použití, může být vhodné pro tak, aby odpovídala návrhu rozložení a barvy orientace/navigačních karet a celkovou strukturu. Další informace o rozložení podrobnosti najdete v tématu [rozložení pro sadu Visual Studio](../../extensibility/ux-guidelines/layout-for-visual-studio.md).
 
- ![Manifest Designer červená značka](../../extensibility/ux-guidelines/media/0303-175-manifestdesignerredline.png "0303 175_ManifestDesignerRedline")
+Nástroj Manifest Designer je navržená jako způsob, jak bylo snazší upravit soubor manifestu v projektech pro systém Windows 8 a Windows Phone 8. Neplatí žádné sdílené architektuře k dispozici pro použití, může být vhodné pro tak, aby odpovídala návrhu rozložení a barvy orientace/navigačních karet a celkovou strukturu. Další informace o rozložení podrobnosti najdete v tématu [rozložení pro sadu Visual Studio](../../extensibility/ux-guidelines/layout-for-visual-studio.md).
 
- Použití...
- -   pro profesionální návrháře využívající, které jsou podobné pro Nástroj Manifest Designer.
+![Manifest Designer červená značka](../../extensibility/ux-guidelines/media/0303-175-manifestdesignerredline.png "0303 175_ManifestDesignerRedline")
+
+Použití...
+- pro profesionální návrháře využívající, které jsou podobné pro Nástroj Manifest Designer.
 
 - místo použití běžných ovládacích prvků kartě v horní části editoru v rámci dokumentu kontejneru.
 
-  Nepoužívejte...
-  -   Pokud máte víc než šest karet.
+Nepoužívejte...
+- Pokud máte víc než šest karet.
 
 - pro všechny uživatelské rozhraní, která není strukturované jako nástroj Manifest Designer.
 
@@ -3964,15 +3979,16 @@ u ostatních typů uživatelského rozhraní.
 ## <a name="shell"></a>Prostředí
 
 ### <a name="background"></a>Pozadí
- Na pozadí prostředí se skládá ze dvou vrstev. Spodní vrstva je plnou barvu, která zahrnuje celou integrovaného vývojového prostředí. Horní vrstvě vejde v rámci příkazu polici a mezi kanálů automatického skrytí okna nástroje na levých a pravých okrajů integrovaného vývojového prostředí. Od verze Visual Studio 2013 pozadí vrstvy horní a dolní nastavené na stejnou barvu v motivy tmavý a světlý motiv.
 
- ![Červená značka prostředí pozadí](../../extensibility/ux-guidelines/media/0303-187-shellbackgroundredline.png "0303 187_ShellBackgroundRedline")
+Na pozadí prostředí se skládá ze dvou vrstev. Spodní vrstva je plnou barvu, která zahrnuje celou integrovaného vývojového prostředí. Horní vrstvě vejde v rámci příkazu polici a mezi kanálů automatického skrytí okna nástroje na levých a pravých okrajů integrovaného vývojového prostředí. Od verze Visual Studio 2013 pozadí vrstvy horní a dolní nastavené na stejnou barvu v motivy tmavý a světlý motiv.
 
- Použití...
+![Červená značka prostředí pozadí](../../extensibility/ux-guidelines/media/0303-187-shellbackgroundredline.png "0303 187_ShellBackgroundRedline")
+
+Použití...
 pro míst, na které můžete chtít, aby na pozadí prostředí sady Visual Studio.
 
- Nepoužívejte...
- -   jako výplň místa, které nejsou na pozadí plochy.
+Nepoužívejte...
+- jako výplň místa, které nejsou na pozadí plochy.
 
 - na pozadí, na kterém chcete umístit prvky popředí.
 
@@ -4009,17 +4025,18 @@ pro míst, na které můžete chtít, aby na pozadí prostředí sady Visual Stu
   `Environment.EnvironmentBackgroundGradientMiddle2`
 
 ### <a name="command-shelf"></a>Příkaz police
- Dvě sady token názvů, které se používají pro pozadí příkaz police: nastavit jeden kde je umístěn řádku nabídek a jeden pro kde panely příkazů nacházejí. Pruhový graf konkrétní příkaz má svůj vlastní pozadí hodnot barev, které jsou popsány podrobněji v oddílu "panel příkazů". Řádek nabídek panelu a příkaz text je popsána v části panel nabídek a příkazů.
 
- ![Příkaz police červená značka](../../extensibility/ux-guidelines/media/0303-188-commandshelfredline.png "0303 188_CommandShelfRedline")
+Dvě sady token názvů, které se používají pro pozadí příkaz police: nastavit jeden kde je umístěn řádku nabídek a jeden pro kde panely příkazů nacházejí. Pruhový graf konkrétní příkaz má svůj vlastní pozadí hodnot barev, které jsou popsány podrobněji v oddílu "panel příkazů". Řádek nabídek panelu a příkaz text je popsána v části panel nabídek a příkazů.
 
- Použití...
- -   pro oblasti, kam umístit nabídek a panelů nástrojů.
+![Příkaz police červená značka](../../extensibility/ux-guidelines/media/0303-188-commandshelfredline.png "0303 188_CommandShelfRedline")
+
+Použití...
+- pro oblasti, kam umístit nabídek a panelů nástrojů.
 
 - na pozadí a správné /? popředí kombinaci název tokenu.
 
-  Nepoužívejte...
-  pro oblasti, které nejsou podobný police příkazu.
+Nepoužívejte...
+pro oblasti, které nejsou podobný police příkazu.
 
   Součást
 

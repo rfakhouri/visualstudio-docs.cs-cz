@@ -16,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d03ef199e0c1c4ea3684287e1621e6d9b5fc52f8
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: a770cf1ded0ef85e92f192398b03aa2015502fdf
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56315531"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076382"
 ---
 # <a name="how-to-use-the-keyboard-exclusively"></a>Postupy: Výhradní používání klávesnice
 
@@ -55,19 +55,19 @@ Můžete přidat ovládací prvek na panelu nástrojů do formuláře nebo kláv
 
 ### <a name="to-set-dialog-box-options-from-the-keyboard"></a>Chcete-li nastavit možnosti dialogového okna z klávesnice
 
-1.  Použití **kartu** nebo **Shift** + **kartu** přesunout nahoru nebo dolů pomocí ovládacích prvků v dialogovém okně.
+1. Použití **kartu** nebo **Shift** + **kartu** přesunout nahoru nebo dolů pomocí ovládacích prvků v dialogovém okně.
 
-2.  Chcete-li změnit nastavení možnosti:
+2. Chcete-li změnit nastavení možnosti:
 
-    -   Přepínací tlačítka používat **šipka nahoru** a **šipka dolů** a změňte výběr.
+    - Přepínací tlačítka používat **šipka nahoru** a **šipka dolů** a změňte výběr.
 
-    -   Zaškrtávací políčka, použijte **MEZERNÍK** zaškrtněte nebo zrušte výběr.
+    - Zaškrtávací políčka, použijte **MEZERNÍK** zaškrtněte nebo zrušte výběr.
 
-    -   Rozevírací seznamy, použijte **Alt** + **šipka dolů** k zobrazení položek a pak použít **UPARROW** a **šipka dolů** změnit vybrané položky.
+    - Rozevírací seznamy, použijte **Alt** + **šipka dolů** k zobrazení položek a pak použít **UPARROW** a **šipka dolů** změnit vybrané položky.
 
-    -   U tlačítek, stiskněte **Enter** vyvolat.
+    - U tlačítek, stiskněte **Enter** vyvolat.
 
-    -   Pro tabulky použijte klávesy se šipkami pro navigaci. Rozevírací seznamy v mřížkách, použijte **Shift** + **Alt** + **šipka dolů** k zobrazení položek a pak použít **UPARROW**a **šipka dolů** změnit vybrané položky.
+    - Pro tabulky použijte klávesy se šipkami pro navigaci. Rozevírací seznamy v mřížkách, použijte **Shift** + **Alt** + **šipka dolů** k zobrazení položek a pak použít **UPARROW**a **šipka dolů** změnit vybrané položky.
 
 ## <a name="window-and-file-navigation"></a>Okno a soubor navigace
 
@@ -75,29 +75,29 @@ Můžete přidat ovládací prvek na panelu nástrojů do formuláře nebo kláv
 
 ### <a name="to-navigate-among-windows-and-files-in-the-ide-from-the-keyboard"></a>K navigaci mezi windows a soubory v integrovaném vývojovém prostředí z klávesnice
 
--   Chcete-li přesunout mezi soubory v nějakém editoru nebo návrháře, zvolte CTRL + TAB klíče zobrazíte IDE Navigátor s **aktivních souborů** vybrané. Stisknutím klávesy Enter přejděte k souboru zvýrazněné.
+- Chcete-li přesunout mezi soubory v nějakém editoru nebo návrháře, zvolte CTRL + TAB klíče zobrazíte IDE Navigátor s **aktivních souborů** vybrané. Stisknutím klávesy Enter přejděte k souboru zvýrazněné.
 
--   Chcete-li přesunout mezi oken nástrojů ukotvených, zvolte klávesy Alt + F7 zobrazí Navigátor rozhraní IDE s **aktivní nástroj Windows** vybrané. Stisknutím klávesy Enter přejděte na zvýrazněné okno.
+- Chcete-li přesunout mezi oken nástrojů ukotvených, zvolte klávesy Alt + F7 zobrazí Navigátor rozhraní IDE s **aktivní nástroj Windows** vybrané. Stisknutím klávesy Enter přejděte na zvýrazněné okno.
 
 ### <a name="to-move-and-dock-tool-windows-from-the-keyboard"></a>Pro přesun a ukotvení oken nástrojů z klávesnice
 
-1.  Přejděte na panel nástrojů, kterou chcete přesunout a aktivovat.
+1. Přejděte na panel nástrojů, kterou chcete přesunout a aktivovat.
 
-2.  Na **okno** nabídku, vyberte **ukotvit** možnost.
+2. Na **okno** nabídku, vyberte **ukotvit** možnost.
 
-3.  Stisknutím klávesy **ALT** + **místo** a klikněte na tlačítko **přesunout**.
+3. Stisknutím klávesy **ALT** + **místo** a klikněte na tlačítko **přesunout**.
 
      Ukotvení kosočtverce vodítka se zobrazí.
 
-4.  Použití **šipku** klíče v okně přesunout do nového umístění.
+4. Použití **šipku** klíče v okně přesunout do nového umístění.
 
      Ukazatel myši pohybuje s oknem, jaké používáte **šipku** klíče.
 
-5.  Po dosažení nové umístění použít **šipku** klíče k přesunutí ukazatele myši nad správnou část kosočtverce vodítka.
+5. Po dosažení nové umístění použít **šipku** klíče k přesunutí ukazatele myši nad správnou část kosočtverce vodítka.
 
      Přehled panelu nástrojů se zobrazí v novém umístění ukotvení.
 
-6.  Stisknutím klávesy **ENTER**.
+6. Stisknutím klávesy **ENTER**.
 
      Panel nástrojů přichytí na nové umístění ukotvení.
 

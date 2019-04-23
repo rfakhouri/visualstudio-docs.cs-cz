@@ -23,12 +23,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ed0801e9654e1d2f78f2ed49f47dabe6f0e619ab
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 0c949f9a5d8c56f44e0754715d056b4d3837f76a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54868037"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087596"
 ---
 # <a name="troubleshoot-sharepoint-packaging-and-deployment"></a>Řešení potíží s balení a nasazení SharePoint
   Toto téma popisuje různé problémy, které se mohou vyskytnout po zabalení a nasazení řešení služby SharePoint.
@@ -47,11 +47,11 @@ ms.locfileid: "54868037"
 
  Následující tabulka ukazuje nastavení **řešení konfliktů při nasazení** vlastnost.
 
-|Hodnota|Popis|
+|Value|Popis|
 |-----------|-----------------|
 |Automatické|Detekuje kolize a řeší konflikty automaticky.|
 |Výzva|Detekuje kolize a ohlásí je vývojáři před řešením konfliktů.|
-|Žádná|Nemůže zjistit kolize.|
+|Žádné|Nemůže zjistit kolize.|
 
 ## <a name="differences-between-f5-deployment"></a>Rozdíly mezi nasazením pomocí klávesy F5
  Při použití [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] k nasazení projektu služby SharePoint na místní server SharePoint pro testování a ladění, existují některé další kroky, které provádí [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
@@ -70,12 +70,12 @@ ms.locfileid: "54868037"
 ### <a name="error-message"></a>Chybová zpráva
  Žádné
 
-### <a name="resolution"></a>Rozlišení
+### <a name="resolution"></a>Řešení
  Chcete-li tento problém vyřešit, proveďte následující kroky:
 
-1.  Nainstalujte aktualizaci KB967535, jak je uvedeno v článek Microsoft Support [OPRAVIT: Oprava hotfix je k dispozici pro opravu dvou problémů v technologii ASP.NET ve službě IIS 7.0 pro Windows Vista a Windows Server 2008](http://go.microsoft.com/fwlink/?LinkId=179055).
+1. Nainstalujte aktualizaci KB967535, jak je uvedeno v článek Microsoft Support [OPRAVIT: Oprava hotfix je k dispozici pro opravu dvou problémů v technologii ASP.NET ve službě IIS 7.0 pro Windows Vista a Windows Server 2008](http://go.microsoft.com/fwlink/?LinkId=179055).
 
-2.  Přidejte následující řádek do souboru Web.config:
+2. Přidejte následující řádek do souboru Web.config:
 
     ```xml
     <compilation batch="false" optimizeCompilations="true">
@@ -87,7 +87,7 @@ ms.locfileid: "54868037"
 ### <a name="error-message"></a>Chybová zpráva
  V kroku nasazení "Přidání řešení" došlo k chybě: Nepovedlo se extrahovat soubor cab v řešení.
 
-### <a name="resolution"></a>Rozlišení
+### <a name="resolution"></a>Řešení
  Chcete-li tento problém vyřešit, odeberte všechny závorky v názvech položek projektu služby SharePoint.
 
 ## <a name="error-appears-when-deploying-a-visual-web-part-to-a-site-on-a-different-web-application"></a>Při nasazení vizuální webové části na web jiné webové aplikace se zobrazí chyba
@@ -96,7 +96,7 @@ ms.locfileid: "54868037"
 ### <a name="error-message"></a>Chybová zpráva
  V kroku nasazení "Přidání řešení" došlo k chybě: Funkce s ID [#] již byla v této farmě nainstalována. Znovu explicitně nainstalujte funkci pomocí atributu force.
 
-### <a name="resolution"></a>Rozlišení
+### <a name="resolution"></a>Řešení
  K této chybě dochází kvůli způsobu, jakým jsou odvolány vizuální funkce webových částí služby SharePoint. K úspěšnému zavedení vizuální webové části, nasaďte řešení znovu kliknutím **F5** klíč.
 
 ## <a name="warning-appears-when-deploying-nested-user-controls"></a>Při nasazení vnořených uživatelských ovládacích prvků se zobrazí upozornění
@@ -105,7 +105,7 @@ ms.locfileid: "54868037"
 ### <a name="error-message"></a>Chybová zpráva
  Upozornění 1 prvek "[*název ovládacího prvku*]" není známý prvek. Tato situace může nastat, pokud dochází k chybě kompilace na webovém serveru nebo v souboru web.config chybí.
 
-### <a name="resolution"></a>Rozlišení
+### <a name="resolution"></a>Řešení
  Pokud [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projektový systém nebude vědět o vnořeném uživatelském ovládacím prvku, nemůže poskytnout technologii IntelliSense a vydá varování. Projektový systém nebude vědět o vnořeném uživatelském ovládacím prvku. Pokud projekt není sestaven a Návrhář není uzavřen a znovu otevřen nebo pokud automatické odvolání možnost povolená, což způsobí, že uživatelský ovládací prvek na být stažen z podregistru služby SharePoint po ladění.
 
  Pokud chcete toto upozornění odebrat, sestavte projekt a pak zavřete a znovu otevřete návrháře nebo zakázat pro projekt možnost automatického odvolání. Chcete-li to provést, zrušte **automatické odvolání po ladění** zaškrtávací políčko na **SharePoint** kartu dialogové okno Vlastnosti projektu.

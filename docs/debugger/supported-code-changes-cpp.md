@@ -20,19 +20,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c41b589ed19e547d03e0ce7336d6a2f2c5efedb7
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 7d029d5cb3deb886faa4423d24ae8d5282f80e6a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57873528"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114584"
 ---
 # <a name="supported-code-changes-c"></a>Podporované změny kódu (C++)
 Upravit a pokračovat jazyka Visual C++ zpracovává většinu typů změn kódu. Nicméně některé změny nejde použít při provádění programu. Pokud chcete tyto změny použít, musíte zastavit provádění a vytvářet nové verze kódu.
 
  Zobrazit [upravit a pokračovat (Visual C++)](../debugger/edit-and-continue-visual-cpp.md) informace o práci s upravit a pokračovat jazyka C++ v sadě Visual Studio.
 
-##  <a name="BKMK_Unsupported_changes"></a> Nepodporované změny
+## <a name="BKMK_Unsupported_changes"></a> Nepodporované změny
  Následující změny C/C++ nemohou být provedeny během relace ladění:
 
 - Většina změn globální nebo statická data.
@@ -61,51 +61,51 @@ Upravit a pokračovat jazyka Visual C++ zpracovává většinu typů změn kódu
 
 - Upravit a pokračovat se neaktualizuje statických knihoven. Pokud provedete změny ve statické knihovně, provádění pokračuje ve starší verzi a žádné upozornění.
 
-##  <a name="BKMK_Unsupported_scenarios"></a> Nepodporované scénáře
+## <a name="BKMK_Unsupported_scenarios"></a> Nepodporované scénáře
  Upravit a pokračovat pro C/C++ není k dispozici v následujících scénářích ladění:
 
--   Ladění nativní aplikace kompilována s [/Zo (vylepšit optimalizované ladění)](/cpp/build/reference/zo-enhance-optimized-debugging)
+- Ladění nativní aplikace kompilována s [/Zo (vylepšit optimalizované ladění)](/cpp/build/reference/zo-enhance-optimized-debugging)
 
--   Ve verzích sady Visual Studio před Visual Studio 2015 Update 1, ladění aplikací pro UWP nebo komponenty. Od verze Visual Studio 2015 Update 1, můžete upravit a pokračovat v UWP C++ a aplikací rozhraní DirectX, protože teď podporuje `/ZI` přepínač kompilátoru se `/bigobj` přepnout. Můžete také upravit a pokračovat s binárními soubory zkompilovaná `/FASTLINK` přepnout.
+- Ve verzích sady Visual Studio před Visual Studio 2015 Update 1, ladění aplikací pro UWP nebo komponenty. Od verze Visual Studio 2015 Update 1, můžete upravit a pokračovat v UWP C++ a aplikací rozhraní DirectX, protože teď podporuje `/ZI` přepínač kompilátoru se `/bigobj` přepnout. Můžete také upravit a pokračovat s binárními soubory zkompilovaná `/FASTLINK` přepnout.
 
--   Ladění na Windows 98.
+- Ladění na Windows 98.
 
--   Ladění ve smíšeném režimu (nativní a spravovaná).
+- Ladění ve smíšeném režimu (nativní a spravovaná).
 
--   Ladění jazyka JavaScript.
+- Ladění jazyka JavaScript.
 
--   Ladění SQL.
+- Ladění SQL.
 
--   Ladění souboru výpisu paměti.
+- Ladění souboru výpisu paměti.
 
--   Úpravy kódu po neošetřené výjimky, když **vrátit zásobník volání v případě neošetřených výjimek** možnost není vybraná.
+- Úpravy kódu po neošetřené výjimky, když **vrátit zásobník volání v případě neošetřených výjimek** možnost není vybraná.
 
--   Ladění aplikace s použitím **připojit k** místo spouštění aplikace výběrem **Start** na **ladění** nabídky.
+- Ladění aplikace s použitím **připojit k** místo spouštění aplikace výběrem **Start** na **ladění** nabídky.
 
--   Ladění optimalizovaného kódu.
+- Ladění optimalizovaného kódu.
 
--   Ladění starou verzi kódu po nové verze se nepovedlo sestavit kvůli chybám sestavení.
+- Ladění starou verzi kódu po nové verze se nepovedlo sestavit kvůli chybám sestavení.
 
-##  <a name="BKMK_Linking_limitations"></a> Omezení propojení
+## <a name="BKMK_Linking_limitations"></a> Omezení propojení
 
-###  <a name="BKMK_Linker_options_that_disable_Edit_and_Continue"></a> Možnosti linkeru, které zákaz operace upravit a pokračovat
+### <a name="BKMK_Linker_options_that_disable_Edit_and_Continue"></a> Možnosti linkeru, které zákaz operace upravit a pokračovat
  Následující možnosti linkeru zákaz operace upravit a pokračovat:
 
--   Nastavení **OPT**, **/OPT:ICF**, nebo **/incremental: No** zakáže upravit a pokračovat s následujícím upozorněním:
+- Nastavení **OPT**, **/OPT:ICF**, nebo **/incremental: No** zakáže upravit a pokračovat s následujícím upozorněním:
 
      ODKAZ: upozornění LNK4075: ignoruje se neignoruje kvůli/OPT
 
      specifikace
 
--   Nastavení **/ORDER**, **/RELEASE**, nebo **/FORCE** zakáže upravit a pokračovat se toto upozornění:
+- Nastavení **/ORDER**, **/RELEASE**, nebo **/FORCE** zakáže upravit a pokračovat se toto upozornění:
 
      ODKAZ: upozornění LNK4075: ignoruje se parametr/incremental kvůli/Option
 
      specifikace
 
--   Nastavení možnosti, které brání vytvoření souboru databáze (PDB) programu zakáže upravit a pokračovat v žádné konkrétní upozornění.
+- Nastavení možnosti, které brání vytvoření souboru databáze (PDB) programu zakáže upravit a pokračovat v žádné konkrétní upozornění.
 
-###  <a name="BKMK_Auto_relinking_limitations"></a> Automatického opakovaného propojování omezení
+### <a name="BKMK_Auto_relinking_limitations"></a> Automatického opakovaného propojování omezení
  Ve výchozím nastavení upravit a pokračovat relinks programu na konci vytvoří spustitelný aktuální relace ladění.
 
  Upravit a pokračovat nemůže znovu programu, pokud ladíte z jiného umístění než původní umístění sestavení. Zobrazí se zpráva, že je potřeba ručně znovu sestavit.
@@ -116,24 +116,24 @@ Upravit a pokračovat jazyka Visual C++ zpracovává většinu typů změn kódu
 
  **Chcete-li zakázat opakovaného propojování po funkci upravit a pokračovat**
 
-1.  Na **ladění** nabídce zvolte **možnosti a nastavení**.
+1. Na **ladění** nabídce zvolte **možnosti a nastavení**.
 
-2.  V **možnosti** dialogovém okně **ladění** uzel a vyberte **upravit a pokračovat** uzlu.
+2. V **možnosti** dialogovém okně **ladění** uzel a vyberte **upravit a pokračovat** uzlu.
 
-3.  Zrušte **po ladění znovu propojit změny kódu** zaškrtávací políčko.
+3. Zrušte **po ladění znovu propojit změny kódu** zaškrtávací políčko.
 
-##  <a name="BKMK_Precompiled_Header_Limitations"></a> Omezení předkompilované hlavičky
+## <a name="BKMK_Precompiled_Header_Limitations"></a> Omezení předkompilované hlavičky
  Ve výchozím nastavení upravit a pokračovat zatížení a procesy předkompilované hlavičky pro zrychlení zpracování změn kódu na pozadí. Načtení předkompilovaných hlaviček vyžaduje alokaci fyzické paměti, což může být problém, pokud kompilace probíhá na počítači s omezeným množstvím paměti RAM. Můžete určit, pokud to může být problém s použitím Správce úloh Windows ke zjištění dostupné fyzické paměti během ladění. Pokud je tato hodnota vyšší než velikost předkompilovaných hlaviček, pak by funkce Upravit a pokračovat neměla mít problém. Pokud je tato hodnota menší než velikost předkompilovaných hlaviček, můžete zabránit upravit a pokračovat v načtení předkompilovaných hlaviček na pozadí.
 
  **Chcete-li zakázat načítání předkompilovaných hlaviček na pozadí pro funkce upravit a pokračovat**
 
-1.  Na **ladění** nabídce zvolte **možnosti a nastavení**.
+1. Na **ladění** nabídce zvolte **možnosti a nastavení**.
 
-2.  V **možnosti** dialogovém okně **ladění** uzel a vyberte **upravit a pokračovat** uzlu.
+2. V **možnosti** dialogovém okně **ladění** uzel a vyberte **upravit a pokračovat** uzlu.
 
-3.  Zrušte **povolit předkompilování** zaškrtávací políčko.
+3. Zrušte **povolit předkompilování** zaškrtávací políčko.
 
-##  <a name="BKMK_IDL_Attribute_Limitations"></a> Omezení atributu IDL
+## <a name="BKMK_IDL_Attribute_Limitations"></a> Omezení atributu IDL
  Upravit a pokračovat neobnoví soubory rozhraní definice (IDL). Proto se změny IDL – atributy neprojeví během ladění. Pokud chcete zobrazit výsledek změny IDL – atributy, musí zastavit ladění a znovu sestavte aplikaci. Upravit a pokračovat nevygeneruje chybu nebo upozornění Pokud se změnily atributy IDL. Další informace najdete v tématu [IDL – atributy](/cpp/windows/idl-attributes).
 
 ## <a name="see-also"></a>Viz také

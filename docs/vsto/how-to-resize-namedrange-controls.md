@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e3de20f175ae7300732cd56633aebcdc3e0aa0cf
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: ba5603fe759f55a85425bc61da0a470aa38d636c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56654032"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099605"
 ---
 # <a name="how-to-resize-namedrange-controls"></a>Postupy: Změna velikosti ovládacích prvků NamedRange
   Můžete nastavit velikost <xref:Microsoft.Office.Tools.Excel.NamedRange> ovládací prvek, když ho přidáte do dokumentu aplikace Microsoft Office Excel; však můžete chtít změnit jeho velikost později.
@@ -30,32 +30,32 @@ ms.locfileid: "56654032"
 
  Toto téma popisuje následující úkoly:
 
--   [Změna velikosti ovládacích prvků NamedRange v době návrhu](#designtime)
+- [Změna velikosti ovládacích prvků NamedRange v době návrhu](#designtime)
 
--   [Změna velikosti ovládacích prvků NamedRange za běhu v projektu úrovni dokumentu](#runtimedoclevel)
+- [Změna velikosti ovládacích prvků NamedRange za běhu v projektu úrovni dokumentu](#runtimedoclevel)
 
--   [Změna velikosti ovládacích prvků NamedRange za běhu v projektu doplňku VSTO](#runtimeaddin)
+- [Změna velikosti ovládacích prvků NamedRange za běhu v projektu doplňku VSTO](#runtimeaddin)
 
-##  <a name="designtime"></a> Změna velikosti ovládacích prvků NamedRange v době návrhu
+## <a name="designtime"></a> Změna velikosti ovládacích prvků NamedRange v době návrhu
  Pojmenované oblasti můžete změnit velikost, v jeho velikost, nově definují obor **definovat název** dialogové okno.
 
 ### <a name="to-resize-a-named-range-by-using-the-define-name-dialog-box"></a>Změna velikosti pojmenované oblasti s použitím definovat název dialogových oken
 
-1.  Klikněte pravým tlačítkem myši <xref:Microsoft.Office.Tools.Excel.NamedRange> ovládacího prvku.
+1. Klikněte pravým tlačítkem myši <xref:Microsoft.Office.Tools.Excel.NamedRange> ovládacího prvku.
 
-2.  Klikněte na tlačítko **oblasti spravovat** v místní nabídce.
+2. Klikněte na tlačítko **oblasti spravovat** v místní nabídce.
 
      **Definovat název** zobrazí se dialogové okno.
 
-3.  Vyberte oblast s názvem, který chcete změnit velikost.
+3. Vyberte oblast s názvem, který chcete změnit velikost.
 
-4.  Zrušte **odkazuje na** pole.
+4. Zrušte **odkazuje na** pole.
 
-5.  Vyberte buňky, které chcete použít pro definování velikosti pojmenovaném rozsahu.
+5. Vyberte buňky, které chcete použít pro definování velikosti pojmenovaném rozsahu.
 
-6.  Klikněte na **OK**.
+6. Klikněte na **OK**.
 
-##  <a name="runtimedoclevel"></a> Změna velikosti ovládacích prvků NamedRange za běhu v projektu úrovni dokumentu
+## <a name="runtimedoclevel"></a> Změna velikosti ovládacích prvků NamedRange za běhu v projektu úrovni dokumentu
  Můžete změnit velikost pojmenované oblasti programově pomocí <xref:Microsoft.Office.Tools.Excel.NamedRange.RefersTo%2A> vlastnost.
 
 > [!NOTE]
@@ -63,27 +63,27 @@ ms.locfileid: "56654032"
 
 ### <a name="to-resize-a-named-range-programmatically"></a>Změna velikosti pojmenované oblasti prostřednictvím kódu programu
 
-1.  Vytvoření <xref:Microsoft.Office.Tools.Excel.NamedRange> ovládacího prvku v buňce **A1** z `Sheet1`.
+1. Vytvoření <xref:Microsoft.Office.Tools.Excel.NamedRange> ovládacího prvku v buňce **A1** z `Sheet1`.
 
      [!code-csharp[Trin_VstcoreHostControlsExcel#4](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#4)]
      [!code-vb[Trin_VstcoreHostControlsExcel#4](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#4)]
 
-2.  Změna velikosti pojmenované oblasti zahrnout buňky **B1**.
+2. Změna velikosti pojmenované oblasti zahrnout buňky **B1**.
 
      [!code-csharp[Trin_VstcoreHostControlsExcel#5](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#5)]
      [!code-vb[Trin_VstcoreHostControlsExcel#5](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#5)]
 
-##  <a name="runtimeaddin"></a> Změna velikosti ovládacích prvků NamedRange za běhu v projektu doplňku VSTO
+## <a name="runtimeaddin"></a> Změna velikosti ovládacích prvků NamedRange za běhu v projektu doplňku VSTO
  Můžete změnit velikost <xref:Microsoft.Office.Tools.Excel.NamedRange> ovládací prvek na jakékoli otevřete list za běhu. Další informace o tom, jak přidat <xref:Microsoft.Office.Tools.Excel.NamedRange> řídit do listu pomocí doplňku VSTO, přečtěte si téma [jak: Přidání ovládacích prvků NamedRange do listů](../vsto/how-to-add-namedrange-controls-to-worksheets.md).
 
 ### <a name="to-resize-a-named-range-programmatically"></a>Změna velikosti pojmenované oblasti prostřednictvím kódu programu
 
-1.  Vytvoření <xref:Microsoft.Office.Tools.Excel.NamedRange> ovládacího prvku v buňce **A1** z `Sheet1`.
+1. Vytvoření <xref:Microsoft.Office.Tools.Excel.NamedRange> ovládacího prvku v buňce **A1** z `Sheet1`.
 
      [!code-csharp[Trin_Excel_Dynamic_Controls#10](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/ThisAddIn.cs#10)]
      [!code-vb[Trin_Excel_Dynamic_Controls#10](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/ThisAddIn.vb#10)]
 
-2.  Změna velikosti pojmenované oblasti zahrnout buňky **B1**.
+2. Změna velikosti pojmenované oblasti zahrnout buňky **B1**.
 
      [!code-csharp[Trin_Excel_Dynamic_Controls#11](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/ThisAddIn.cs#11)]
      [!code-vb[Trin_Excel_Dynamic_Controls#11](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/ThisAddIn.vb#11)]

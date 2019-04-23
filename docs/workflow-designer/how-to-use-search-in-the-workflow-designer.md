@@ -8,12 +8,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: b1d29c4398e6b6c377ab493c495951f942d15965
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 0a80bfecaa288eabc0161d0262535a7912411f78
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942385"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091288"
 ---
 # <a name="how-to-use-search-in-the-workflow-designer"></a>Postupy: Používání hledání v návrháři postupu provádění
 
@@ -23,13 +23,13 @@ Pro usnadnění vytváření rozsáhlejších, složitějších pracovních post
 
 Rychlé vyhledání najde v Návrháři následující:
 
--   Vlastnosti <xref:System.Activities.Activity> objekty, <xref:System.Activities.Statements.FlowNode> objekty, <xref:System.Activities.Statements.State> objekty, přechodů a další položky vlastní řízení toku.
+- Vlastnosti <xref:System.Activities.Activity> objekty, <xref:System.Activities.Statements.FlowNode> objekty, <xref:System.Activities.Statements.State> objekty, přechodů a další položky vlastní řízení toku.
 
--   Proměnné
+- Proměnné
 
--   Arguments
+- Arguments
 
--   Výrazy
+- Výrazy
 
 ### <a name="use-quick-find"></a>Použití rychlého hledání
 
@@ -47,8 +47,8 @@ Hledání v souborech vyhledává řetězce v soubory pracovního postupu, včet
 
 ### <a name="use-find-in-files"></a>Používání funkce najít v souborech
 
-1.  V sadě Visual Studio, stiskněte klávesu **Ctrl**+**Shift**+**F**, nebo vyberte **upravit**  >   **Najít a nahradit** > **najít v souborech**.
+1. V sadě Visual Studio, stiskněte klávesu **Ctrl**+**Shift**+**F**, nebo vyberte **upravit**  >   **Najít a nahradit** > **najít v souborech**.
 
-2.  Zadejte hledaný termín do **najít** textového pole a klikněte na tlačítko **najít všechny**.
+2. Zadejte hledaný termín do **najít** textového pole a klikněte na tlačítko **najít všechny**.
 
-3.  Výsledek hledání se zobrazí v **najít výsledek** zobrazení. Dvojitým kliknutím položku výsledek přejde na aktivitu, která obsahuje shodu v Návrháři pracovních postupů.
+3. Výsledek hledání se zobrazí v **najít výsledek** zobrazení. Dvojitým kliknutím položku výsledek přejde na aktivitu, která obsahuje shodu v Návrháři pracovních postupů.

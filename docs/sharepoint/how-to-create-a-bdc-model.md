@@ -13,32 +13,32 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d82678df0da5932dd33c08a6e3066462df204f6e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: e4e05eae6339d55d16fb0cf6ba6ebeb9d1f4f296
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596500"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106654"
 ---
 # <a name="how-to-create-a-bdc-model"></a>Postupy: Vytvoření modelu služby BDC
   Obchodní Data připojení (BDC) model můžete vytvořit pomocí šablony pro tento druh položky a následným přidáním modelu do jakéhokoli projektu SharePoint. Další informace najdete v tématu [vytvoření modelu připojení obchodních dat](../sharepoint/creating-a-business-data-connectivity-model.md). Další informace o tom, jak návrhu modelu naleznete v tématu [navrhování modelu připojení obchodních dat](../sharepoint/designing-a-business-data-connectivity-model.md).
 
 ### <a name="to-create-a-bdc-project"></a>Vytvoření projektu BDC
 
-1.  V panelu nabídky zvolte **souboru** > **nový** > **projektu**.
+1. V panelu nabídky zvolte **souboru** > **nový** > **projektu**.
 
     > [!NOTE]
     >  Pokud vaše rozhraní IDE nastaveno pro použití vývojového nastavení jazyka Visual Basic, zvolte **souboru** > **nový projekt**.
 
      **Nový projekt** zobrazí se dialogové okno.
 
-2.  V části **jazyka Visual Basic** nebo **Visual C#** , zvolte **Office/SharePoint**, **řešení služby SharePoint**.
+2. V části **jazyka Visual Basic** nebo **Visual C#** , zvolte **Office/SharePoint**, **řešení služby SharePoint**.
 
-3.  V **šablony** podokně, vyberte **SharePoint 2013 – prázdný projekt** položku a klikněte na tlačítko **OK** tlačítko.
+3. V **šablony** podokně, vyberte **SharePoint 2013 – prázdný projekt** položku a klikněte na tlačítko **OK** tlačítko.
 
      **Průvodce přizpůsobením SharePoint** otevře.
 
-4.  Na **zadejte web a úroveň zabezpečení pro ladění** stránky, zadejte adresu URL webu služby SharePoint v místním počítači, zvolte **nasadit jako řešení farmy** přepínač a klikněte na tlačítko **Dokončit** tlačítko.
+4. Na **zadejte web a úroveň zabezpečení pro ladění** stránky, zadejte adresu URL webu služby SharePoint v místním počítači, zvolte **nasadit jako řešení farmy** přepínač a klikněte na tlačítko **Dokončit** tlačítko.
 
      Bude testovat model na webu služby SharePoint, který jste zadali.
 
@@ -47,13 +47,13 @@ ms.locfileid: "56596500"
 
      Je vytvořen prázdný projekt SharePoint.
 
-5.  V panelu nabídky zvolte **projektu** > **přidat novou položku**.
+5. V panelu nabídky zvolte **projektu** > **přidat novou položku**.
 
-6.  V **přidat novou položku** dialogového okna zvolte **Office/SharePoint** uzlu.
+6. V **přidat novou položku** dialogového okna zvolte **Office/SharePoint** uzlu.
 
-7.  V seznamu šablon služby SharePoint, zvolte **Model Připojení obchodních dat (pouze řešení farmy)**.
+7. V seznamu šablon služby SharePoint, zvolte **Model Připojení obchodních dat (pouze řešení farmy)**.
 
-8.  V **název** pole, zadejte název pro model služby BDC a klikněte na tlačítko **přidat** tlačítko.
+8. V **název** pole, zadejte název pro model služby BDC a klikněte na tlačítko **přidat** tlačítko.
 
      A **Model Připojení obchodních dat** přidání položky do projektu. Ve výchozím nastavení se model zobrazen v Návrháři služby BDC. Další informace najdete v tématu [vytvoření modelu připojení obchodních dat](../sharepoint/creating-a-business-data-connectivity-model.md).
 

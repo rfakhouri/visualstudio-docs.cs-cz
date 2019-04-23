@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f50d72990ec0fb47ec880e3c267ef4e52225837d
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 550008a0bf77ee11feb047b953798ed6a8276396
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649417"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113713"
 ---
 # <a name="how-to-debug-on-a-high-performance-cluster-c-visual-basic-c"></a>Postupy: Ladění na vysoký výkon clusteru (C#, Visual Basic, C++)
 
@@ -37,31 +37,31 @@ Ladění programu multiprocesingem na vysoký výkon clusteru je jako ladění p
 
 ### <a name="to-open-the-breakpoint-filter-dialog-box"></a>Chcete-li otevřít dialogové okno Filtr zarážek
 
-1.  Klikněte pravým tlačítkem na piktogram zarážky v okně zdroje **zpětný překlad** okně **zásobník volání** okna, nebo **zarážky** okno.
+1. Klikněte pravým tlačítkem na piktogram zarážky v okně zdroje **zpětný překlad** okně **zásobník volání** okna, nebo **zarážky** okno.
 
-2.  V místní nabídce klikněte na tlačítko **filtr**. Tato možnost může zobrazit v nejvyšší úrovni nebo v podnabídce v části **zarážky**.
+2. V místní nabídce klikněte na tlačítko **filtr**. Tato možnost může zobrazit v nejvyšší úrovni nebo v podnabídce v části **zarážky**.
 
 ### <a name="to-set-a-breakpoint-on-a-specific-computer"></a>Chcete-li nastavit zarážku v určitém počítači
 
-1.  Získejte název počítače z **procesy** okna.
+1. Získejte název počítače z **procesy** okna.
 
-2.  Vyberte zarážku a otevřete **filtr zarážek** dialogovému oknu, jak je popsáno v předchozím postupu.
+2. Vyberte zarážku a otevřete **filtr zarážek** dialogovému oknu, jak je popsáno v předchozím postupu.
 
-3.  V **filtr zarážek** dialogové okno, zadejte:
+3. V **filtr zarážek** dialogové okno, zadejte:
 
      MachineName =*yourmachinename*
 
      Chcete-li vytvořit složitější filtr, můžete kombinovat klauzule pomocí `&`, operátoru AND `||`, operátoru OR `!`, operátoru NOT a závorek.
 
-4.  Klikněte na **OK**.
+4. Klikněte na **OK**.
 
 ### <a name="to-set-a-breakpoint-on-a-specific-process"></a>Nastavení zarážky v konkrétním procesu
 
-1.  Získejte název procesu nebo ID procesu z **procesy** okna.
+1. Získejte název procesu nebo ID procesu z **procesy** okna.
 
-2.  Vyberte zarážku a otevřete **filtr zarážek** dialogové okno stejně jako v prvním postupu.
+2. Vyberte zarážku a otevřete **filtr zarážek** dialogové okno stejně jako v prvním postupu.
 
-3.  V **filtr zarážek** dialogové okno, zadejte:
+3. V **filtr zarážek** dialogové okno, zadejte:
 
      `ProcessName =`  *yourprocessname*
 
@@ -71,15 +71,15 @@ Ladění programu multiprocesingem na vysoký výkon clusteru je jako ladění p
 
      Chcete-li vytvořit složitější filtr, můžete kombinovat klauzule pomocí `&`, operátoru AND `||`, operátoru OR `!`, operátoru NOT a závorek.
 
-4.  Klikněte na **OK**.
+4. Klikněte na **OK**.
 
 ### <a name="to-set-a-breakpoint-on-a-specific-thread"></a>Nastavení zarážky v konkrétním vlákně
 
-1.  Získejte název vlákna nebo ID vlákna z **vlákna** okna.
+1. Získejte název vlákna nebo ID vlákna z **vlákna** okna.
 
-2.  Vyberte zarážku a otevřete **filtr zarážek** dialogovému oknu, jak je popsáno v prvním postupu.
+2. Vyberte zarážku a otevřete **filtr zarážek** dialogovému oknu, jak je popsáno v prvním postupu.
 
-3.  V **filtr zarážek** dialogové okno, zadejte:
+3. V **filtr zarážek** dialogové okno, zadejte:
 
      `ThreadName =` *yourthreadname*
 
@@ -89,7 +89,7 @@ Ladění programu multiprocesingem na vysoký výkon clusteru je jako ladění p
 
      Chcete-li vytvořit složitější filtr, můžete kombinovat klauzule pomocí `&`, operátoru AND `||`, operátoru OR `!`, operátoru NOT a závorek.
 
-4.  Klikněte na **OK**.
+4. Klikněte na **OK**.
 
 ## <a name="example"></a>Příklad
  Následující příklad ukazuje, jak vytvořit filtr pro zarážku v počítači s názvem `marvin` a vlákno s názvem `fourier1`.

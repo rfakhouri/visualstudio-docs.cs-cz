@@ -25,12 +25,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f034797a773602f714ce69193ce6987ba9560bf5
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: 9e6ebd09188e737e75c9e5f66ed95411e1a9453d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526699"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106199"
 ---
 # <a name="custom-task-panes"></a>Vlastní podokna úloh
   Panely uživatelského rozhraní, které jsou obvykle ukotven k okraji okna v aplikaci Microsoft Office jsou podokna úloh. Vlastní podokna úloh poskytují způsob, jak vytvořit vlastní podokna úloh a poskytuje uživatelům známou rozhraní pro přístup k funkcím vašeho řešení. Rozhraní může například obsahovat ovládací prvky, na kterých běží kód pro úpravy dokumentů a zobrazení dat ze zdroje dat.
@@ -126,7 +126,7 @@ ms.locfileid: "57526699"
 
  [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Automaticky vyčistí prostředky využívané třídou vlastního podokna úloh, když doplňku VSTO je uvolněna. Nevolejte <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Remove%2A> nebo <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.RemoveAt%2A> metody v `ThisAddIn_Shutdown` obslužná rutina události ve vašem projektu. Tyto metody vyvolá výjimku <xref:System.ObjectDisposedException>, protože [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] vyčistí prostředky využívané třídou <xref:Microsoft.Office.Tools.CustomTaskPane> objektu před `ThisAddIn_Shutdown` je volána. Další informace o `ThisAddIn_Shutdown`, naleznete v tématu [události v projektech pro systém Office](../vsto/events-in-office-projects.md)
 
-##  <a name="Managing"></a> Správa vlastních podoken úloh ve více oken aplikace
+## <a name="Managing"></a> Správa vlastních podoken úloh ve více oken aplikace
  Při vytváření vlastního podokna úloh v aplikaci, která používá více oken pro zobrazení dokumenty a další položky, budete muset udělat dodatečné kroky k zajištění, že v podokně úloh je viditelné, pokud uživatel očekává, že bude.
 
  Vlastní podokna úloh ve všech aplikacích jsou spojeny s oknem rámce dokumentu, který se uživateli zobrazí zobrazení dokumentu nebo položky. V podokně úloh je viditelná pouze v případě, že je přidružené okno viditelné. Ale u některých aplikací není použití oken s rámečkem v dokumentu stejným způsobem.
@@ -137,7 +137,7 @@ ms.locfileid: "57526699"
 
 - [Word, aplikace InfoPath a PowerPoint](#WordAndInfoPath)
 
-##  <a name="Outlook"></a> Aplikace Outlook
+## <a name="Outlook"></a> Aplikace Outlook
  Při vytváření vlastního podokna úloh pro aplikaci Outlook souvisí s konkrétní okno Průzkumníka nebo inspektoru vlastního podokna úloh. Průzkumníci jsou windows, které zobrazují obsah složky a kontroly jsou windows, které zobrazí položky jako je například e-mailovou zprávu nebo úkol.
 
  Pokud chcete zobrazit vlastního podokna úloh s více Průzkumníka nebo kontrola systému windows, musíte vytvořit novou instanci třídy vlastního podokna úloh po otevření Průzkumníka nebo inspektoru okno. K tomuto účelu zpracovat událost, která se vyvolá, když se vytvoří oknem Průzkumníka nebo Inspector a pak vytvořte v podokně úloh v obslužné rutině události. Můžete také zpracovávat Explorer a kontrola události ke skrytí nebo zobrazení podokna úloh v závislosti na tom, které okno je viditelný.
@@ -167,7 +167,7 @@ ms.locfileid: "57526699"
 
  Pokud je explicitně neodebírejte vlastního podokna úloh, okna aplikace Outlook se může zobrazit více instancí vlastního podokna úloh. Outlook někdy recykluje windows a windows recyklován uchovávat odkazy na všechny vlastní podokna úloh, které byly připojeny k nim.
 
-##  <a name="WordAndInfoPath"></a> Word, aplikace InfoPath a PowerPoint
+## <a name="WordAndInfoPath"></a> Word, aplikace InfoPath a PowerPoint
  Word, aplikace InfoPath a PowerPoint zobrazit jednotlivé dokumenty v okně s rámečkem jiného dokumentu. Při vytváření vlastního podokna úloh pro tyto aplikace vlastního podokna úloh souvisí pouze s určitým dokumentem. Pokud uživatel otevře jiný dokument, vlastního podokna úloh je skrytý, dokud starší dokumentu opět viditelný.
 
  Pokud chcete zobrazit vlastního podokna úloh s více dokumenty, vytvořte novou instanci třídy vlastního podokna úloh, když uživatel vytvoří nový dokument nebo otevře existující dokument. K tomuto účelu zpracování událostí, které jsou vyvolány při vytvoření nebo otevření dokumentu a pak vytvořte v podokně úloh v obslužných rutinách událostí. Můžete také zpracovávat události dokumentu ke skrytí nebo zobrazení podokna úloh podle toho, který dokument je zobrazen.
@@ -177,43 +177,43 @@ ms.locfileid: "57526699"
 ### <a name="word-events"></a>Události aplikace Word
  Pokud chcete monitorovat stav okna dokumentu ve Wordu, mohou zpracovávat následující události:
 
--   <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeClose>
+- <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeClose>
 
--   <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentOpen>
+- <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentOpen>
 
--   <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.NewDocument>
+- <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.NewDocument>
 
--   <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.WindowActivate>
+- <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.WindowActivate>
 
--   <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.WindowDeactivate>
+- <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.WindowDeactivate>
 
 ### <a name="infopath-events"></a>Události aplikace InfoPath
  Pokud chcete monitorovat stav okna dokumentu v aplikaci InfoPath, mohou zpracovávat následující události:
 
--   <xref:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.NewXDocument>
+- <xref:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.NewXDocument>
 
--   <xref:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.WindowActivate>
+- <xref:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.WindowActivate>
 
--   <xref:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.WindowDeactivate>
+- <xref:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.WindowDeactivate>
 
--   <xref:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.XDocumentBeforeClose>
+- <xref:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.XDocumentBeforeClose>
 
--   <xref:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.XDocumentOpen>
+- <xref:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.XDocumentOpen>
 
 ### <a name="powerpoint-events"></a>Události aplikace PowerPoint
  Pokud chcete monitorovat stav okna dokumentu v aplikaci PowerPoint, mohou zpracovávat následující události:
 
--   [Microsoft.Office.Interop.PowerPoint.EApplication_Event.AfterNewPresentation](/previous-versions/office/developer/office-2010/ff761105(v%3doffice.14))
+- [Microsoft.Office.Interop.PowerPoint.EApplication_Event.AfterNewPresentation](/previous-versions/office/developer/office-2010/ff761105(v%3doffice.14))
 
--   [Microsoft.Office.Interop.PowerPoint.EApplication_Event.AfterPresentationOpen](/previous-versions/office/developer/office-2010/ff762843(v%3doffice.14))
+- [Microsoft.Office.Interop.PowerPoint.EApplication_Event.AfterPresentationOpen](/previous-versions/office/developer/office-2010/ff762843(v%3doffice.14))
 
--   [Microsoft.Office.Interop.PowerPoint.EApplication_Event.NewPresentation](/previous-versions/office/developer/office-2010/ff761498(v%3doffice.14))
+- [Microsoft.Office.Interop.PowerPoint.EApplication_Event.NewPresentation](/previous-versions/office/developer/office-2010/ff761498(v%3doffice.14))
 
--   [Microsoft.Office.Interop.PowerPoint.EApplication_Event.PresentationOpen](/previous-versions/office/developer/office-2010/ff760423(v=office.14))
+- [Microsoft.Office.Interop.PowerPoint.EApplication_Event.PresentationOpen](/previous-versions/office/developer/office-2010/ff760423(v=office.14))
 
--   [Microsoft.Office.Interop.PowerPoint.EApplication_Event.WindowActivate](/previous-versions/office/developer/office-2010/ff761153(v=office.14))
+- [Microsoft.Office.Interop.PowerPoint.EApplication_Event.WindowActivate](/previous-versions/office/developer/office-2010/ff761153(v=office.14))
 
--   [Microsoft.Office.Interop.PowerPoint.EApplication_Event.WindowDeactivate](/previous-versions/office/developer/office-2010/ff763093(v=office.14))
+- [Microsoft.Office.Interop.PowerPoint.EApplication_Event.WindowDeactivate](/previous-versions/office/developer/office-2010/ff763093(v=office.14))
 
 ## <a name="see-also"></a>Viz také:
 - [Postupy: Přidání vlastního podokna úloh do aplikace](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)

@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a2338e2402167987767ac5c9527113c4b0ff81d6
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 7f039154265e9031713eb5511bb1c51a63e5b422
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54867322"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109176"
 ---
 # <a name="how-to-programmatically-cache-a-data-source-in-an-office-document"></a>Postupy: Zdroj dat v dokumentu systému Office do mezipaměti prostřednictvím kódu programu
   Můžete programově přidat datového objektu do datové mezipaměti v dokumentu voláním `StartCaching` metoda hostitele položky, jako například <xref:Microsoft.Office.Tools.Word.Document>, <xref:Microsoft.Office.Tools.Excel.Workbook>, nebo <xref:Microsoft.Office.Tools.Excel.Worksheet>. Odebrat datový objekt z mezipaměti dat voláním `StopCaching` metoda položky hostitele.
@@ -34,19 +34,19 @@ ms.locfileid: "54867322"
 
 ## <a name="to-programmatically-cache-a-data-object"></a>Chcete-li datový objekt mezipaměti prostřednictvím kódu programu
 
-1.  Datový objekt na úrovni třídy, ne uvnitř metodu deklarujte. Tento příklad předpokládá, že deklarujete <xref:System.Data.DataSet> s názvem `dataSet1` , které chcete ukládat do mezipaměti prostřednictvím kódu programu.
+1. Datový objekt na úrovni třídy, ne uvnitř metodu deklarujte. Tento příklad předpokládá, že deklarujete <xref:System.Data.DataSet> s názvem `dataSet1` , které chcete ukládat do mezipaměti prostřednictvím kódu programu.
 
      [!code-csharp[Trin_VstcoreDataExcel#12](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#12)]
      [!code-vb[Trin_VstcoreDataExcel#12](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#12)]
 
-2.  Vytvoření instance objektu data a následně zavolat `StartCaching` metoda instance dokumentu nebo listu a předat mu název datového objektu.
+2. Vytvoření instance objektu data a následně zavolat `StartCaching` metoda instance dokumentu nebo listu a předat mu název datového objektu.
 
      [!code-csharp[Trin_VstcoreDataExcel#13](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#13)]
      [!code-vb[Trin_VstcoreDataExcel#13](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#13)]
 
 ## <a name="to-stop-caching-a-data-object"></a>Zastavit ukládání do mezipaměti datový objekt
 
-1.  Volání `StopCaching` metoda instance dokumentu nebo listu a předat mu název datového objektu. Tento příklad předpokládá, že máte <xref:System.Data.DataSet> s názvem `dataSet1` , kterou chcete zastavit ukládání do mezipaměti.
+1. Volání `StopCaching` metoda instance dokumentu nebo listu a předat mu název datového objektu. Tento příklad předpokládá, že máte <xref:System.Data.DataSet> s názvem `dataSet1` , kterou chcete zastavit ukládání do mezipaměti.
 
      [!code-csharp[Trin_VstcoreDataExcel#14](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#14)]
      [!code-vb[Trin_VstcoreDataExcel#14](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#14)]
