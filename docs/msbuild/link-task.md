@@ -30,12 +30,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 55d84dc8aed00cf037efc8b35efa13fa712092c7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 58691d5c6a7f44361d40a50898395ed1200a06c6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56627152"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064363"
 ---
 # <a name="link-task"></a>odkaz – úloha
 Zabalí nástroj linker Visual C++ *link.exe*. Nástroj linker propojení objektových souborů Common Object File Format (COFF) a knihovny, které chcete vytvořit spustitelný soubor (*.exe*) soubor nebo dynamická knihovna (DLL). Další informace najdete v tématu [možnosti Linkeru](/cpp/build/reference/linker-options).
@@ -43,7 +43,7 @@ Zabalí nástroj linker Visual C++ *link.exe*. Nástroj linker propojení objekt
 ## <a name="parameters"></a>Parametry
  Následující text popisuje parametry **odkaz** úloh. Většinu úkolů parametrů a několik sad parametrů, odpovídají možnost příkazového řádku.
 
--   **AdditionalDependencies**
+- **AdditionalDependencies**
 
      Volitelné **String []** parametru.
 
@@ -51,7 +51,7 @@ Zabalí nástroj linker Visual C++ *link.exe*. Nástroj linker propojení objekt
 
      Další informace najdete v tématu [vstupní soubory LINK](/cpp/build/reference/link-input-files).
 
--   **AdditionalLibraryDirectories**
+- **AdditionalLibraryDirectories**
 
      Volitelné **String []** parametru.
 
@@ -59,7 +59,7 @@ Zabalí nástroj linker Visual C++ *link.exe*. Nástroj linker propojení objekt
 
      Další informace najdete v tématu [/Libpath (další proměnná Libpath)](/cpp/build/reference/libpath-additional-libpath).
 
--   **AdditionalManifestDependencies**
+- **AdditionalManifestDependencies**
 
      Volitelné **String []** parametru.
 
@@ -67,7 +67,7 @@ Zabalí nástroj linker Visual C++ *link.exe*. Nástroj linker propojení objekt
 
      Další informace najdete v tématu [/MANIFESTDEPENDENCY (určení závislostí manifestu)](/cpp/build/reference/manifestdependency-specify-manifest-dependencies). Viz také [konfiguračních souborů vydavatele](https://docs.microsoft.com/windows/desktop/SbsCs/publisher-configuration-files).
 
--   **AdditionalOptions**
+- **AdditionalOptions**
 
      Volitelné **řetězec** parametru.
 
@@ -75,7 +75,7 @@ Zabalí nástroj linker Visual C++ *link.exe*. Nástroj linker propojení objekt
 
      Další informace najdete v tématu [možnosti Linkeru](/cpp/build/reference/linker-options).
 
--   **AddModuleNamesToAssembly**
+- **AddModuleNamesToAssembly**
 
      Volitelné **String []** parametru.
 
@@ -83,7 +83,7 @@ Zabalí nástroj linker Visual C++ *link.exe*. Nástroj linker propojení objekt
 
      Další informace najdete v tématu [/ASSEMBLYMODULE (Přidání modulu MSIL do sestavení)](/cpp/build/reference/assemblymodule-add-a-msil-module-to-the-assembly).
 
--   **AllowIsolation**
+- **AllowIsolation**
 
      Volitelné **logická** parametru.
 
@@ -91,7 +91,7 @@ Zabalí nástroj linker Visual C++ *link.exe*. Nástroj linker propojení objekt
 
      Další informace najdete v tématu [/ALLOWISOLATION (vyhledání manifestu)](/cpp/build/reference/allowisolation-manifest-lookup).
 
--   **AssemblyDebug**
+- **AssemblyDebug**
 
      Volitelné **logická** parametru.
 
@@ -99,7 +99,7 @@ Zabalí nástroj linker Visual C++ *link.exe*. Nástroj linker propojení objekt
 
      Další informace najdete v tématu [/assemblydebug (přidání atributu DebuggableAttribute)](/cpp/build/reference/assemblydebug-add-debuggableattribute).
 
--   **AssemblyLinkResource**
+- **AssemblyLinkResource**
 
      Volitelné **String []** parametru.
 
@@ -107,13 +107,13 @@ Zabalí nástroj linker Visual C++ *link.exe*. Nástroj linker propojení objekt
 
      Další informace najdete v tématu [/ASSEMBLYLINKRESOURCE (odkaz na prostředek rozhraní .NET Framework)](/cpp/build/reference/assemblylinkresource-link-to-dotnet-framework-resource).
 
--   **AttributeFileTracking**
+- **AttributeFileTracking**
 
      Implicitní **logická** parametru.
 
      Povolí podrobnější souborů sledování k zachycení odkazu přírůstkové od chování. Vždy vrátí `true`.
 
--   **BaseAddress**
+- **BaseAddress**
 
      Volitelné **řetězec** parametru.
 
@@ -121,7 +121,7 @@ Zabalí nástroj linker Visual C++ *link.exe*. Nástroj linker propojení objekt
 
      Další informace najdete v tématu [propojovacího (základní adresa)](/cpp/build/reference/base-base-address).
 
--   **BuildingInIDE**
+- **BuildingInIDE**
 
      Volitelné **logická** parametru.
 
@@ -129,7 +129,7 @@ Zabalí nástroj linker Visual C++ *link.exe*. Nástroj linker propojení objekt
 
      Tento parametr nemá žádný ekvivalent linkeru.
 
--   **CLRImageType**
+- **CLRImageType**
 
      Volitelné **řetězec** parametru.
 
@@ -137,17 +137,17 @@ Zabalí nástroj linker Visual C++ *link.exe*. Nástroj linker propojení objekt
 
      Zadejte jednu z následujících hodnot, z nichž každý odpovídá možností propojovacího programu.
 
-    -   **Výchozí** - *\<žádné >*
+    - **Výchozí** - *\<žádné >*
 
-    -   **ForceIJWImage** - **/CLRIMAGETYPE:IJW**
+    - **ForceIJWImage** - **/CLRIMAGETYPE:IJW**
 
-    -   **ForcePureILImage** -   **/CLRIMAGETYPE: PURE**
+    - **ForcePureILImage** -   **/CLRIMAGETYPE: PURE**
 
-    -   **ForceSafeILImage** - **Safe**
+    - **ForceSafeILImage** - **Safe**
 
     Další informace najdete v tématu [/CLRIMAGETYPE (zadání typu bitové kopie modulu CLR)](/cpp/build/reference/clrimagetype-specify-type-of-clr-image).
 
--   **CLRSupportLastError**
+- **CLRSupportLastError**
 
      Volitelné **řetězec** parametru.
 
@@ -155,15 +155,15 @@ Zabalí nástroj linker Visual C++ *link.exe*. Nástroj linker propojení objekt
 
      Zadejte jednu z následujících hodnot, z nichž každý odpovídá možností propojovacího programu.
 
-    -   **Povolené** - **/CLRSupportLastError**
+    - **Povolené** - **/CLRSupportLastError**
 
-    -   **Zakázané** - **/CLRSupportLastError:NO**
+    - **Zakázané** - **/CLRSupportLastError:NO**
 
-    -   **SystemDlls** - **/CLRSupportLastError:SYSTEMDLL**
+    - **SystemDlls** - **/CLRSupportLastError:SYSTEMDLL**
 
     Další informace najdete v tématu [/CLRSUPPORTLASTERROR (zachování kódu poslední chyby pro volání PInvoke)](/cpp/build/reference/clrsupportlasterror-preserve-last-error-code-for-pinvoke-calls).
 
--   **CLRThreadAttribute**
+- **CLRThreadAttribute**
 
      Volitelné **řetězec** parametru.
 
@@ -171,15 +171,15 @@ Zabalí nástroj linker Visual C++ *link.exe*. Nástroj linker propojení objekt
 
      Zadejte jednu z následujících hodnot, z nichž každý odpovídá možností propojovacího programu.
 
-    -   **DefaultThreadingAttribute** - **/CLRTHREADATTRIBUTE: žádné**
+    - **DefaultThreadingAttribute** - **/CLRTHREADATTRIBUTE: žádné**
 
-    -   **MTAThreadingAttribute** - **/CLRTHREADATTRIBUTE:MTA**
+    - **MTAThreadingAttribute** - **/CLRTHREADATTRIBUTE:MTA**
 
-    -   **STAThreadingAttribute** - **/CLRTHREADATTRIBUTE:STA**
+    - **STAThreadingAttribute** - **/CLRTHREADATTRIBUTE:STA**
 
     Další informace najdete v tématu [/CLRTHREADATTRIBUTE (atribut vlákna modulu CLR nastavit)](/cpp/build/reference/clrthreadattribute-set-clr-thread-attribute).
 
--   **CLRUnmanagedCodeCheck**
+- **CLRUnmanagedCodeCheck**
 
      Volitelné **logická** parametru.
 
@@ -187,7 +187,7 @@ Zabalí nástroj linker Visual C++ *link.exe*. Nástroj linker propojení objekt
 
     Další informace najdete v tématu [/CLRUNMANAGEDCODECHECK (přidat atribut SuppressUnmanagedCodeSecurityAttribute)](/cpp/build/reference/clrunmanagedcodecheck-add-suppressunmanagedcodesecurityattribute).
 
--   **CreateHotPatchableImage**
+- **CreateHotPatchableImage**
 
      Volitelné **řetězec** parametru.
 
@@ -195,17 +195,17 @@ Zabalí nástroj linker Visual C++ *link.exe*. Nástroj linker propojení objekt
 
      Zadejte jednu z následujících hodnot, které odpovídá možností propojovacího programu.
 
-    -   **Povolené** - **/FUNCTIONPADMIN**
+    - **Povolené** - **/FUNCTIONPADMIN**
 
-    -   **X86Image** - **/FUNCTIONPADMIN:5**
+    - **X86Image** - **/FUNCTIONPADMIN:5**
 
-    -   **X64Image** - **/FUNCTIONPADMIN:6**
+    - **X64Image** - **/FUNCTIONPADMIN:6**
 
-    -   **ItaniumImage** - **/FUNCTIONPADMIN:16**
+    - **ItaniumImage** - **/FUNCTIONPADMIN:16**
 
     Další informace najdete v tématu [/FUNCTIONPADMIN (vytvořit bitovou kopii opravitelnou za provozu)](/cpp/build/reference/functionpadmin-create-hotpatchable-image).
 
--   **DataExecutionPrevention**
+- **DataExecutionPrevention**
 
      Volitelné **logická** parametru.
 
@@ -213,7 +213,7 @@ Zabalí nástroj linker Visual C++ *link.exe*. Nástroj linker propojení objekt
 
      Další informace najdete v tématu [/NXCOMPAT (kompatibilní s předcházením spuštění dat)](/cpp/build/reference/nxcompat-compatible-with-data-execution-prevention).
 
--   **DelayLoadDLLs**
+- **DelayLoadDLLs**
 
      Volitelné **String []** parametru.
 
@@ -221,7 +221,7 @@ Zabalí nástroj linker Visual C++ *link.exe*. Nástroj linker propojení objekt
 
      Další informace najdete v tématu [/delayload (import odloženého načtení)](/cpp/build/reference/delayload-delay-load-import).
 
--   **DelaySign**
+- **DelaySign**
 
      Volitelné **logická** parametru.
 
@@ -229,7 +229,7 @@ Zabalí nástroj linker Visual C++ *link.exe*. Nástroj linker propojení objekt
 
      Další informace najdete v tématu [/delaysign (částečně podepsání sestavení)](/cpp/build/reference/delaysign-partially-sign-an-assembly).
 
--   **Ovladač**
+- **Ovladač**
 
      Volitelné **řetězec** parametru.
 
@@ -237,17 +237,17 @@ Zabalí nástroj linker Visual C++ *link.exe*. Nástroj linker propojení objekt
 
      Zadejte jednu z následujících hodnot, z nichž každý odpovídá možností propojovacího programu.
 
-    -   **NotSet** - *\<none>*
+    - **NotSet** - *\<none>*
 
-    -   **Ovladač** - **Driver/Driver**
+    - **Ovladač** - **Driver/Driver**
 
-    -   **UpOnly** - **/DRIVER:UPONLY**
+    - **UpOnly** - **/DRIVER:UPONLY**
 
-    -   **WDM** - **/DRIVER:WDM**
+    - **WDM** - **/DRIVER:WDM**
 
     Další informace najdete v tématu [Driver/Driver (ovladač režimu jádra Windows NT)](/cpp/build/reference/driver-windows-nt-kernel-mode-driver).
 
--   **EmbedManagedResourceFile**
+- **EmbedManagedResourceFile**
 
      Volitelné **String []** parametru.
 
@@ -255,7 +255,7 @@ Zabalí nástroj linker Visual C++ *link.exe*. Nástroj linker propojení objekt
 
      Další informace najdete v tématu [narozdíl od (vložení spravovaného prostředku)](/cpp/build/reference/assemblyresource-embed-a-managed-resource).
 
--   **EnableCOMDATFolding**
+- **EnableCOMDATFolding**
 
      Volitelné **logická** parametru.
 
@@ -263,7 +263,7 @@ Zabalí nástroj linker Visual C++ *link.exe*. Nástroj linker propojení objekt
 
      Další informace najdete v tématu `ICF[= iterations]` argument [/OPT (optimalizace)](/cpp/build/reference/opt-optimizations).
 
--   **EnableUAC**
+- **EnableUAC**
 
      Volitelné **logická** parametru.
 
@@ -271,7 +271,7 @@ Zabalí nástroj linker Visual C++ *link.exe*. Nástroj linker propojení objekt
 
      Další informace najdete v tématu [/MANIFESTUAC (vložené informace UAC v manifestu)](/cpp/build/reference/manifestuac-embeds-uac-information-in-manifest).
 
--   **EntryPointSymbol**
+- **EntryPointSymbol**
 
      Volitelné **řetězec** parametru.
 
@@ -279,7 +279,7 @@ Zabalí nástroj linker Visual C++ *link.exe*. Nástroj linker propojení objekt
 
      Další informace najdete v tématu [/Entry (symbol vstupního bodu)](/cpp/build/reference/entry-entry-point-symbol).
 
--   **FixedBaseAddress**
+- **FixedBaseAddress**
 
      Volitelné **logická** parametru.
 
@@ -287,7 +287,7 @@ Zabalí nástroj linker Visual C++ *link.exe*. Nástroj linker propojení objekt
 
      Další informace najdete v tématu [/fixed (pevná základní adresa)](/cpp/build/reference/fixed-fixed-base-address).
 
--   **ForceFileOutput**
+- **ForceFileOutput**
 
      Volitelné **řetězec** parametru.
 
@@ -295,15 +295,15 @@ Zabalí nástroj linker Visual C++ *link.exe*. Nástroj linker propojení objekt
 
      Zadejte jednu z následujících hodnot, z nichž každý odpovídá možnosti příkazového řádku.
 
-    -   **Povolené** -   **/FORCE**
+    - **Povolené** -   **/FORCE**
 
-    -   **MultiplyDefinedSymbolOnly** - **/FORCE:MULTIPLE**
+    - **MultiplyDefinedSymbolOnly** - **/FORCE:MULTIPLE**
 
-    -   **UndefinedSymbolOnly** -   **/FORCE: NEROZPOZNANÝ**
+    - **UndefinedSymbolOnly** -   **/FORCE: NEROZPOZNANÝ**
 
     Další informace najdete v tématu [/Force (vynucení výstupu souboru)](/cpp/build/reference/force-force-file-output).
 
--   **ForceSymbolReferences**
+- **ForceSymbolReferences**
 
      Volitelné **String []** parametru.
 
@@ -311,7 +311,7 @@ Zabalí nástroj linker Visual C++ *link.exe*. Nástroj linker propojení objekt
 
      Další informace najdete v tématu [parametr/include (vynucení odkazů na symboly)](/cpp/build/reference/include-force-symbol-references).
 
--   **FunctionOrder**
+- **FunctionOrder**
 
      Volitelné **řetězec** parametru.
 
@@ -319,7 +319,7 @@ Zabalí nástroj linker Visual C++ *link.exe*. Nástroj linker propojení objekt
 
      Další informace najdete v tématu [/Order (Put funkcí v pořadí)](/cpp/build/reference/order-put-functions-in-order).
 
--   **GenerateDebugInformation**
+- **GenerateDebugInformation**
 
      Volitelné **logická** parametru.
 
@@ -327,7 +327,7 @@ Zabalí nástroj linker Visual C++ *link.exe*. Nástroj linker propojení objekt
 
      Další informace najdete v tématu [/Debug (Generovat ladicí informace)](/cpp/build/reference/debug-generate-debug-info).
 
--   **GenerateManifest**
+- **GenerateManifest**
 
      Volitelné **logická** parametru.
 
@@ -335,7 +335,7 @@ Zabalí nástroj linker Visual C++ *link.exe*. Nástroj linker propojení objekt
 
      Další informace najdete v tématu [volbu/manifest (vytvoření manifestu sestavení vedle sebe)](/cpp/build/reference/manifest-create-side-by-side-assembly-manifest).
 
--   **GenerateMapFile**
+- **GenerateMapFile**
 
      Volitelné **logická** parametru.
 
@@ -343,7 +343,7 @@ Zabalí nástroj linker Visual C++ *link.exe*. Nástroj linker propojení objekt
 
      Další informace najdete v tématu [parametr/map (generování souboru mapování)](/cpp/build/reference/map-generate-mapfile).
 
--   **HeapCommitSize**
+- **HeapCommitSize**
 
      Volitelné **řetězec** parametru.
 
@@ -351,7 +351,7 @@ Zabalí nástroj linker Visual C++ *link.exe*. Nástroj linker propojení objekt
 
      Další informace najdete v tématu `commit` argument v [/HEAP (nastavení velikosti haldy)](/cpp/build/reference/heap-set-heap-size). Další informace naleznete **HeapReserveSize** parametru.
 
--   **HeapReserveSize**
+- **HeapReserveSize**
 
      Volitelné **řetězec** parametru.
 
@@ -359,7 +359,7 @@ Zabalí nástroj linker Visual C++ *link.exe*. Nástroj linker propojení objekt
 
      Další informace najdete v tématu `reserve` argument v [/HEAP (nastavení velikosti haldy)](/cpp/build/reference/heap-set-heap-size). Další informace naleznete **HeapCommitSize** parametr v této tabulce.
 
--   **IgnoreAllDefaultLibraries**
+- **IgnoreAllDefaultLibraries**
 
      Volitelné **logická** parametru.
 
@@ -367,7 +367,7 @@ Zabalí nástroj linker Visual C++ *link.exe*. Nástroj linker propojení objekt
 
      Další informace najdete v tématu [: / NODEFAULTLIB (ignorování knihoven)](/cpp/build/reference/nodefaultlib-ignore-libraries).
 
--   **IgnoreEmbeddedIDL**
+- **IgnoreEmbeddedIDL**
 
      Volitelné **logická** parametru.
 
@@ -375,7 +375,7 @@ Zabalí nástroj linker Visual C++ *link.exe*. Nástroj linker propojení objekt
 
      Další informace najdete v tématu [/IGNOREIDL (Nezpracovávat atributy do MIDL)](/cpp/build/reference/ignoreidl-don-t-process-attributes-into-midl).
 
--   **IgnoreImportLibrary**
+- **IgnoreImportLibrary**
 
      Volitelné **logická** parametru.
 
@@ -383,7 +383,7 @@ Zabalí nástroj linker Visual C++ *link.exe*. Nástroj linker propojení objekt
 
      Tento parametr neodpovídá možností propojovacího programu.
 
--   **IgnoreSpecificDefaultLibraries**
+- **IgnoreSpecificDefaultLibraries**
 
      Volitelné **String []** parametru.
 
@@ -391,7 +391,7 @@ Zabalí nástroj linker Visual C++ *link.exe*. Nástroj linker propojení objekt
 
      Další informace najdete v tématu [: / NODEFAULTLIB (ignorování knihoven)](/cpp/build/reference/nodefaultlib-ignore-libraries).
 
--   **ImageHasSafeExceptionHandlers**
+- **ImageHasSafeExceptionHandlers**
 
      Volitelné **logická** parametru.
 
@@ -399,13 +399,13 @@ Zabalí nástroj linker Visual C++ *link.exe*. Nástroj linker propojení objekt
 
      Další informace najdete v tématu [/SAFESEH (bitová kopie má bezpečné obslužné rutiny výjimek)](/cpp/build/reference/safeseh-image-has-safe-exception-handlers).
 
--   **ImportLibrary**
+- **ImportLibrary**
 
      Název knihovny importu zadané uživatelem, který nahrazuje výchozí název knihovny.
 
      Další informace najdete v tématu [/IMPLIB (pojmenování knihovny importu)](/cpp/build/reference/implib-name-import-library).
 
--   **KeyContainer**
+- **KeyContainer**
 
      Volitelné **řetězec** parametru.
 
@@ -413,7 +413,7 @@ Zabalí nástroj linker Visual C++ *link.exe*. Nástroj linker propojení objekt
 
      Další informace najdete v tématu [/keycontainer (určení kontejneru klíčů pro podpis sestavení)](/cpp/build/reference/keycontainer-specify-a-key-container-to-sign-an-assembly). Další informace naleznete **KeyFile** parametr v této tabulce.
 
--   **KeyFile**
+- **KeyFile**
 
      Volitelné **řetězec** parametru.
 
@@ -421,7 +421,7 @@ Zabalí nástroj linker Visual C++ *link.exe*. Nástroj linker propojení objekt
 
      Další informace najdete v tématu [/keyfile (zadat klíč nebo dvojici klíčů k podepsání sestavení)](/cpp/build/reference/keyfile-specify-key-or-key-pair-to-sign-an-assembly). Další informace naleznete **KeyContainer** parametru.
 
--   **LargeAddressAware**
+- **LargeAddressAware**
 
      Volitelné **logická** parametru.
 
@@ -429,7 +429,7 @@ Zabalí nástroj linker Visual C++ *link.exe*. Nástroj linker propojení objekt
 
      Další informace najdete v tématu [/LARGEADDRESSAWARE (zpracování velkých adres)](/cpp/build/reference/largeaddressaware-handle-large-addresses).
 
--   **LinkDLL**
+- **LinkDLL**
 
      Volitelné **logická** parametru.
 
@@ -437,7 +437,7 @@ Zabalí nástroj linker Visual C++ *link.exe*. Nástroj linker propojení objekt
 
      Další informace najdete v tématu [/DLL (sestavení knihovny DLL)](/cpp/build/reference/dll-build-a-dll).
 
--   **LinkErrorReporting**
+- **LinkErrorReporting**
 
      Volitelné **řetězec** parametru.
 
@@ -445,17 +445,17 @@ Zabalí nástroj linker Visual C++ *link.exe*. Nástroj linker propojení objekt
 
      Zadejte jednu z následujících hodnot, z nichž každý odpovídá možnosti příkazového řádku.
 
-    -   **NoErrorReport** -   **/errorreport: žádné**
+    - **NoErrorReport** -   **/errorreport: žádné**
 
-    -   **PromptImmediately** - **/ERRORREPORT:PROMPT**
+    - **PromptImmediately** - **/ERRORREPORT:PROMPT**
 
-    -   **QueueForNextLogin** - **/ERRORREPORT:QUEUE**
+    - **QueueForNextLogin** - **/ERRORREPORT:QUEUE**
 
-    -   **SendErrorReport** -   **/errorreport: Send**
+    - **SendErrorReport** -   **/errorreport: Send**
 
     Další informace najdete v tématu [/errorreport (sestava interními chybami linkeru)](/cpp/build/reference/errorreport-report-internal-linker-errors).
 
--   **LinkIncremental**
+- **LinkIncremental**
 
      Volitelné **logická** parametru.
 
@@ -463,7 +463,7 @@ Zabalí nástroj linker Visual C++ *link.exe*. Nástroj linker propojení objekt
 
      Další informace najdete v tématu [/INCREMENTAL (inkrementální odkaz)](/cpp/build/reference/incremental-link-incrementally).
 
--   **LinkLibraryDependencies**
+- **LinkLibraryDependencies**
 
      Volitelné **logická** parametru.
 
@@ -471,7 +471,7 @@ Zabalí nástroj linker Visual C++ *link.exe*. Nástroj linker propojení objekt
 
      Tento parametr neodpovídá možností propojovacího programu.
 
--   **LinkStatus**
+- **LinkStatus**
 
      Volitelné **logická** parametru.
 
@@ -479,7 +479,7 @@ Zabalí nástroj linker Visual C++ *link.exe*. Nástroj linker propojení objekt
 
      Další informace najdete v tématu `STATUS` argument [parametru/LTCG (generování kódu při propojování odkaz)](/cpp/build/reference/ltcg-link-time-code-generation).
 
--   **LinkTimeCodeGeneration**
+- **LinkTimeCodeGeneration**
 
      Volitelné **řetězec** parametru.
 
@@ -487,21 +487,21 @@ Zabalí nástroj linker Visual C++ *link.exe*. Nástroj linker propojení objekt
 
      Zadejte jednu z následujících hodnot, z nichž každý odpovídá možnosti příkazového řádku.
 
-    -   **Výchozí** - *\<žádné >*
+    - **Výchozí** - *\<žádné >*
 
-    -   **UseLinkTimeCodeGeneration** - **/LTCG**
+    - **UseLinkTimeCodeGeneration** - **/LTCG**
 
-    -   **PGInstrument** - **/LTCG:PGInstrument**
+    - **PGInstrument** - **/LTCG:PGInstrument**
 
-    -   **PGOptimization** - **/LTCG:PGOptimize**
+    - **PGOptimization** - **/LTCG:PGOptimize**
 
-    -   **PGUpdate**
+    - **PGUpdate**
 
          \- **/LTCG:PGUpdate**
 
     Další informace najdete v tématu [parametru/LTCG (generování kódu při propojování odkaz)](/cpp/build/reference/ltcg-link-time-code-generation).
 
--   **ManifestFile**
+- **ManifestFile**
 
      Volitelné **řetězec** parametru.
 
@@ -509,7 +509,7 @@ Zabalí nástroj linker Visual C++ *link.exe*. Nástroj linker propojení objekt
 
      Další informace najdete v tématu [manifestfile (pojmenování souboru manifestu)](/cpp/build/reference/manifestfile-name-manifest-file).
 
--   **MapExports**
+- **MapExports**
 
      Volitelné **logická** parametru.
 
@@ -517,13 +517,13 @@ Zabalí nástroj linker Visual C++ *link.exe*. Nástroj linker propojení objekt
 
      Další informace najdete v tématu `EXPORTS` argument [parametr/MapInfo (zahrnout informace do souboru mapování)](/cpp/build/reference/mapinfo-include-information-in-mapfile).
 
--   **MapFileName**
+- **MapFileName**
 
      Volitelné **řetězec** parametru.
 
      Výchozí název souboru mapy se změní na zadaný název souboru.
 
--   **MergedIDLBaseFileName**
+- **MergedIDLBaseFileName**
 
      Volitelné **řetězec** parametru.
 
@@ -531,7 +531,7 @@ Zabalí nástroj linker Visual C++ *link.exe*. Nástroj linker propojení objekt
 
      Další informace najdete v tématu [/IDLOUT (MIDL název výstupních souborů)](/cpp/build/reference/idlout-name-midl-output-files).
 
--   **MergeSections**
+- **MergeSections**
 
      Volitelné **řetězec** parametru.
 
@@ -539,7 +539,7 @@ Zabalí nástroj linker Visual C++ *link.exe*. Nástroj linker propojení objekt
 
      Další informace najdete v tématu [/Merge (sloučení oddílů)](/cpp/build/reference/merge-combine-sections).
 
--   **MidlCommandFile**
+- **MidlCommandFile**
 
      Volitelné **řetězec** parametru.
 
@@ -547,13 +547,13 @@ Zabalí nástroj linker Visual C++ *link.exe*. Nástroj linker propojení objekt
 
      Další informace najdete v tématu [/MIDL (Možnosti příkazového řádku zadejte MIDL)](/cpp/build/reference/midl-specify-midl-command-line-options).
 
--   **MinimumRequiredVersion**
+- **MinimumRequiredVersion**
 
      Volitelné **řetězec** parametru.
 
      Určuje minimální požadovanou verzi subsystému. Argumenty jsou desetinná čísla v rozsahu 0 až 65535.
 
--   **ModuleDefinitionFile**
+- **ModuleDefinitionFile**
 
      Volitelné **řetězec** parametru.
 
@@ -561,7 +561,7 @@ Zabalí nástroj linker Visual C++ *link.exe*. Nástroj linker propojení objekt
 
      Další informace najdete v tématu [def (zadání souboru definice modulu)](/cpp/build/reference/def-specify-module-definition-file).
 
--   **MSDOSStubFileName**
+- **MSDOSStubFileName**
 
      Volitelné **řetězec** parametru.
 
@@ -569,7 +569,7 @@ Zabalí nástroj linker Visual C++ *link.exe*. Nástroj linker propojení objekt
 
      Další informace najdete v tématu [/stub (název souboru zástupného kódu MS-DOS zástupné procedury)](/cpp/build/reference/stub-ms-dos-stub-file-name).
 
--   **NoEntryPoint**
+- **NoEntryPoint**
 
      Volitelné **logická** parametru.
 
@@ -577,13 +577,13 @@ Zabalí nástroj linker Visual C++ *link.exe*. Nástroj linker propojení objekt
 
      Další informace najdete v tématu [NOENTRY (bez vstupního bodu)](/cpp/build/reference/noentry-no-entry-point).
 
--   **ObjectFiles**
+- **ObjectFiles**
 
      Implicitní **String []** parametru.
 
      Určuje soubory objektů, které jsou propojeny.
 
--   **OptimizeReferences**
+- **OptimizeReferences**
 
      Volitelné **logická** parametru.
 
@@ -591,7 +591,7 @@ Zabalí nástroj linker Visual C++ *link.exe*. Nástroj linker propojení objekt
 
      Další informace najdete v tématu `REF` argument v [/OPT (optimalizace)](/cpp/build/reference/opt-optimizations).
 
--   **OutputFile**
+- **OutputFile**
 
      Volitelné **řetězec** parametru.
 
@@ -599,19 +599,19 @@ Zabalí nástroj linker Visual C++ *link.exe*. Nástroj linker propojení objekt
 
      Další informace najdete v tématu [/OUT (název výstupního souboru)](/cpp/build/reference/out-output-file-name).
 
--   **PerUserRedirection**
+- **PerUserRedirection**
 
      Volitelné **logická** parametru.
 
      Pokud `true` a je povolen výstup registru, vynutí registru zapisuje do **HKEY_CLASSES_ROOT** přesměrovat na **HKEY_CURRENT_USER**.
 
--   **PreprocessOutput**
+- **PreprocessOutput**
 
      Volitelné `ITaskItem[]` parametru.
 
      Definuje pole objektů preprocesoru výstupní položky, které lze používat a, protože ho vygeneroval úlohy.
 
--   **PreventDllBinding**
+- **PreventDllBinding**
 
      Volitelné **logická** parametru.
 
@@ -619,7 +619,7 @@ Zabalí nástroj linker Visual C++ *link.exe*. Nástroj linker propojení objekt
 
      Další informace najdete v tématu [/ALLOWBIND (zabránit vazbě knihoven DLL)](/cpp/build/reference/allowbind-prevent-dll-binding).
 
--   **Profile**
+- **Profile**
 
      Volitelné **logická** parametru.
 
@@ -627,7 +627,7 @@ Zabalí nástroj linker Visual C++ *link.exe*. Nástroj linker propojení objekt
 
      Další informace najdete v tématu [/Profile (profiler nástrojů výkonu)](/cpp/build/reference/profile-performance-tools-profiler).
 
--   **ProfileGuidedDatabase**
+- **ProfileGuidedDatabase**
 
      Volitelné **řetězec** parametru.
 
@@ -635,7 +635,7 @@ Zabalí nástroj linker Visual C++ *link.exe*. Nástroj linker propojení objekt
 
      Další informace najdete v tématu [/PGD (určení databáze pro optimalizace na základě profilu)](/cpp/build/reference/pgd-specify-database-for-profile-guided-optimizations).
 
--   **ProgramDatabaseFile**
+- **ProgramDatabaseFile**
 
      Volitelné **řetězec** parametru.
 
@@ -643,7 +643,7 @@ Zabalí nástroj linker Visual C++ *link.exe*. Nástroj linker propojení objekt
 
      Další informace najdete v tématu [/pdb (použití databáze programu)](/cpp/build/reference/pdb-use-program-database).
 
--   **RandomizedBaseAddress**
+- **RandomizedBaseAddress**
 
      Volitelné **logická** parametru.
 
@@ -651,13 +651,13 @@ Zabalí nástroj linker Visual C++ *link.exe*. Nástroj linker propojení objekt
 
      Další informace najdete v tématu [možnost/DynamicBase (použití adres náhodného generování rozložení prostoru)](/cpp/build/reference/dynamicbase-use-address-space-layout-randomization).
 
--   **RegisterOutput**
+- **RegisterOutput**
 
      Volitelné **logická** parametru.
 
      Pokud `true`, zaregistruje primární výstup tohoto sestavení.
 
--   **SectionAlignment**
+- **SectionAlignment**
 
      Volitelné **celé číslo** parametru.
 
@@ -665,7 +665,7 @@ Zabalí nástroj linker Visual C++ *link.exe*. Nástroj linker propojení objekt
 
      Další informace najdete v tématu [/align (zarovnání oddílů)](/cpp/build/reference/align-section-alignment).
 
--   **SetChecksum**
+- **SetChecksum**
 
      Volitelné **logická** parametru.
 
@@ -673,7 +673,7 @@ Zabalí nástroj linker Visual C++ *link.exe*. Nástroj linker propojení objekt
 
      Další informace najdete v tématu [/Release (nastavení kontrolního součtu)](/cpp/build/reference/release-set-the-checksum).
 
--   **ShowProgress**
+- **ShowProgress**
 
      Volitelné **řetězec** parametru.
 
@@ -681,29 +681,29 @@ Zabalí nástroj linker Visual C++ *link.exe*. Nástroj linker propojení objekt
 
      Zadejte jednu z následujících hodnot, z nichž každý odpovídá možnosti příkazového řádku.
 
-    -   **NotSet** - *\<none>*
+    - **NotSet** - *\<none>*
 
-    -   **LinkVerbose** - **/VERBOSE**
+    - **LinkVerbose** - **/VERBOSE**
 
-    -   **LinkVerboseLib** - **/VERBOSE:Lib**
+    - **LinkVerboseLib** - **/VERBOSE:Lib**
 
-    -   **LinkVerboseICF** - **/VERBOSE:ICF**
+    - **LinkVerboseICF** - **/VERBOSE:ICF**
 
-    -   **LinkVerboseREF** - **/VERBOSE:REF**
+    - **LinkVerboseREF** - **/VERBOSE:REF**
 
-    -   **LinkVerboseSAFESEH** - **/VERBOSE:SAFESEH**
+    - **LinkVerboseSAFESEH** - **/VERBOSE:SAFESEH**
 
-    -   **LinkVerboseCLR** - **/VERBOSE:CLR**
+    - **LinkVerboseCLR** - **/VERBOSE:CLR**
 
     Další informace najdete v tématu [verbose (Tisk zprávy o průběhu)](/cpp/build/reference/verbose-print-progress-messages).
 
--   **Zdroje**
+- **Zdroje**
 
      Vyžaduje `ITaskItem[]` parametru.
 
      Definuje pole objektů položky nástroje MSBuild zdrojových souborů, které lze používat a, protože ho vygeneroval úlohy.
 
--   **SpecifySectionAttributes**
+- **SpecifySectionAttributes**
 
      Volitelné **řetězec** parametru.
 
@@ -711,7 +711,7 @@ Zabalí nástroj linker Visual C++ *link.exe*. Nástroj linker propojení objekt
 
      Další informace najdete v tématu [/Section (určit atributy oddílu)](/cpp/build/reference/section-specify-section-attributes).
 
--   **StackCommitSize**
+- **StackCommitSize**
 
      Volitelné **řetězec** parametru.
 
@@ -719,7 +719,7 @@ Zabalí nástroj linker Visual C++ *link.exe*. Nástroj linker propojení objekt
 
      Další informace najdete v tématu `commit` argument [/Stack (přidělení zásobníku)](/cpp/build/reference/stack-stack-allocations).
 
--   **StackReserveSize**
+- **StackReserveSize**
 
      Volitelné **řetězec** parametru.
 
@@ -727,7 +727,7 @@ Zabalí nástroj linker Visual C++ *link.exe*. Nástroj linker propojení objekt
 
      Další informace najdete v tématu `reserve` argument [/Stack (přidělení zásobníku)](/cpp/build/reference/stack-stack-allocations).
 
--   **StripPrivateSymbols**
+- **StripPrivateSymbols**
 
      Volitelné **řetězec** parametru.
 
@@ -735,7 +735,7 @@ Zabalí nástroj linker Visual C++ *link.exe*. Nástroj linker propojení objekt
 
      Další informace najdete v tématu [/PDBSTRIPPED (odstranění privátních symbolů)](/cpp/build/reference/pdbstripped-strip-private-symbols).
 
--   **Subsystém**
+- **Subsystém**
 
      Volitelné **řetězec** parametru.
 
@@ -743,29 +743,29 @@ Zabalí nástroj linker Visual C++ *link.exe*. Nástroj linker propojení objekt
 
      Zadejte jednu z následujících hodnot, z nichž každý odpovídá možnosti příkazového řádku.
 
-    -   **NotSet** - *\<none>*
+    - **NotSet** - *\<none>*
 
-    -   **Konzola** -   **/Subsystem: Console**
+    - **Konzola** -   **/Subsystem: Console**
 
-    -   **Windows** - **/SUBSYSTEM:WINDOWS**
+    - **Windows** - **/SUBSYSTEM:WINDOWS**
 
-    -   **Nativní** - **souboru**
+    - **Nativní** - **souboru**
 
-    -   **Aplikace EFI** - **/SUBSYSTEM:EFI_APPLICATION**
+    - **Aplikace EFI** - **/SUBSYSTEM:EFI_APPLICATION**
 
-    -   **EFI Boot Service Driver** - **/SUBSYSTEM:EFI_BOOT_SERVICE_DRIVER**
+    - **EFI Boot Service Driver** - **/SUBSYSTEM:EFI_BOOT_SERVICE_DRIVER**
 
-    -   **PAMĚŤ ROM EFI** - **/SUBSYSTEM:EFI_ROM**
+    - **PAMĚŤ ROM EFI** - **/SUBSYSTEM:EFI_ROM**
 
-    -   **EFI Runtime** - **/SUBSYSTEM:EFI_RUNTIME_DRIVER**
+    - **EFI Runtime** - **/SUBSYSTEM:EFI_RUNTIME_DRIVER**
 
-    -   **WindowsCE** - **/SUBSYSTEM:WINDOWSCE**
+    - **WindowsCE** - **/SUBSYSTEM:WINDOWSCE**
 
-    -   **POSIX** - **/SUBSYSTEM:POSIX**
+    - **POSIX** - **/SUBSYSTEM:POSIX**
 
     Další informace najdete v tématu [/Subsystem (určení subsystému)](/cpp/build/reference/subsystem-specify-subsystem).
 
--   **SupportNobindOfDelayLoadedDLL**
+- **SupportNobindOfDelayLoadedDLL**
 
      Volitelné **logická** parametru.
 
@@ -773,7 +773,7 @@ Zabalí nástroj linker Visual C++ *link.exe*. Nástroj linker propojení objekt
 
      Další informace najdete v tématu `NOBIND` argument [/delay (nastavení importu odloženého načtení)](/cpp/build/reference/delay-delay-load-import-settings).
 
--   **SupportUnloadOfDelayLoadedDLL**
+- **SupportUnloadOfDelayLoadedDLL**
 
      Volitelné **logická** parametru.
 
@@ -781,7 +781,7 @@ Zabalí nástroj linker Visual C++ *link.exe*. Nástroj linker propojení objekt
 
      Další informace najdete v tématu `UNLOAD` argument [/delay (nastavení importu odloženého načtení)](/cpp/build/reference/delay-delay-load-import-settings).
 
--   **SuppressStartupBanner**
+- **SuppressStartupBanner**
 
      Volitelné **logická** parametru.
 
@@ -789,7 +789,7 @@ Zabalí nástroj linker Visual C++ *link.exe*. Nástroj linker propojení objekt
 
      Další informace najdete v tématu [/nologo (Potlačit úvodní nápis při spouštění) (linker)](/cpp/build/reference/nologo-suppress-startup-banner-linker).
 
--   **SwapRunFromCD**
+- **SwapRunFromCD**
 
      Volitelné **logická** parametru.
 
@@ -797,7 +797,7 @@ Zabalí nástroj linker Visual C++ *link.exe*. Nástroj linker propojení objekt
 
      Další informace najdete v tématu `CD` argument [swaprun (Načtení výstupu linkeru do odkládacího souboru)](/cpp/build/reference/swaprun-load-linker-output-to-swap-file). Další informace naleznete **SwapRunFromNET** parametru.
 
--   **SwapRunFromNET**
+- **SwapRunFromNET**
 
      Volitelné **logická** parametru.
 
@@ -805,7 +805,7 @@ Zabalí nástroj linker Visual C++ *link.exe*. Nástroj linker propojení objekt
 
      Další informace najdete v tématu `NET` argument [swaprun (Načtení výstupu linkeru do odkládacího souboru)](/cpp/build/reference/swaprun-load-linker-output-to-swap-file). Další informace naleznete **SwapRunFromCD** parametr v této tabulce.
 
--   **TargetMachine**
+- **TargetMachine**
 
      Volitelné **řetězec** parametru.
 
@@ -813,33 +813,33 @@ Zabalí nástroj linker Visual C++ *link.exe*. Nástroj linker propojení objekt
 
      Zadejte jednu z následujících hodnot, z nichž každý odpovídá možnosti příkazového řádku.
 
-    -   **NotSet** - *\<none>*
+    - **NotSet** - *\<none>*
 
-    -   **MachineARM** - **/MACHINE:ARM**
+    - **MachineARM** - **/MACHINE:ARM**
 
-    -   **MachineEBC** - **/MACHINE:EBC**
+    - **MachineEBC** - **/MACHINE:EBC**
 
-    -   **MachineIA64** - **/MACHINE:IA64**
+    - **MachineIA64** - **/MACHINE:IA64**
 
-    -   **MachineMIPS** - **/MACHINE:MIPS**
+    - **MachineMIPS** - **/MACHINE:MIPS**
 
-    -   **MachineMIPS16** - **/MACHINE:MIPS16**
+    - **MachineMIPS16** - **/MACHINE:MIPS16**
 
-    -   **MachineMIPSFPU** - **/MACHINE:MIPSFPU**
+    - **MachineMIPSFPU** - **/MACHINE:MIPSFPU**
 
-    -   **MachineMIPSFPU16** - **/MACHINE:MIPSFPU16**
+    - **MachineMIPSFPU16** - **/MACHINE:MIPSFPU16**
 
-    -   **MachineSH4** - **/MACHINE:SH4**
+    - **MachineSH4** - **/MACHINE:SH4**
 
-    -   **MachineTHUMB** - **/MACHINE:THUMB**
+    - **MachineTHUMB** - **/MACHINE:THUMB**
 
-    -   **MachineX64** - **/MACHINE:X 64**
+    - **MachineX64** - **/MACHINE:X 64**
 
-    -   **MachineX86** - **/MACHINE:X 86**
+    - **MachineX86** - **/MACHINE:X 86**
 
     Další informace najdete v tématu [/Machine (zadání cílové platformy)](/cpp/build/reference/machine-specify-target-platform).
 
--   **TerminalServerAware**
+- **TerminalServerAware**
 
      Volitelné **logická** parametru.
 
@@ -847,13 +847,13 @@ Zabalí nástroj linker Visual C++ *link.exe*. Nástroj linker propojení objekt
 
      Další informace najdete v tématu [parametr/TSAWARE (vytvoření Terminálový Server aplikace s)](/cpp/build/reference/tsaware-create-terminal-server-aware-application).
 
--   **TrackerLogDirectory**
+- **TrackerLogDirectory**
 
      Volitelné **řetězec** parametru.
 
      Určuje adresář protokolu sledovacího modulu.
 
--   **TreatLinkerWarningAsErrors**
+- **TreatLinkerWarningAsErrors**
 
      Volitelné **logická** parametru.
 
@@ -861,7 +861,7 @@ Zabalí nástroj linker Visual C++ *link.exe*. Nástroj linker propojení objekt
 
      Další informace najdete v tématu [/WX (zpracovávat upozornění linkeru jako chyb)](/cpp/build/reference/wx-treat-linker-warnings-as-errors).
 
--   **TurnOffAssemblyGeneration**
+- **TurnOffAssemblyGeneration**
 
      Volitelné **logická** parametru.
 
@@ -869,7 +869,7 @@ Zabalí nástroj linker Visual C++ *link.exe*. Nástroj linker propojení objekt
 
      Další informace najdete v tématu [parametr/noassembly (vytvoření modulu MSIL)](/cpp/build/reference/noassembly-create-a-msil-module).
 
--   **TypeLibraryFile**
+- **TypeLibraryFile**
 
      Volitelné **řetězec** parametru.
 
@@ -877,7 +877,7 @@ Zabalí nástroj linker Visual C++ *link.exe*. Nástroj linker propojení objekt
 
      Další informace najdete v tématu [/TLBOUT (pojmenování souboru .tlb)](/cpp/build/reference/tlbout-name-dot-tlb-file).
 
--   **TypeLibraryResourceID**
+- **TypeLibraryResourceID**
 
      Volitelné **celé číslo** parametru.
 
@@ -885,7 +885,7 @@ Zabalí nástroj linker Visual C++ *link.exe*. Nástroj linker propojení objekt
 
      Další informace najdete v tématu [/TLBID (určení ID prostředku pro knihovnu typů)](/cpp/build/reference/tlbid-specify-resource-id-for-typelib).
 
--   **UACExecutionLevel**
+- **UACExecutionLevel**
 
      Volitelné **řetězec** parametru.
 
@@ -893,15 +893,15 @@ Zabalí nástroj linker Visual C++ *link.exe*. Nástroj linker propojení objekt
 
      Zadejte jednu z následujících hodnot, z nichž každý odpovídá možnosti příkazového řádku.
 
-    -   **AsInvoker** - `level='asInvoker'`
+    - **AsInvoker** - `level='asInvoker'`
 
-    -   **HighestAvailable** - `level='highestAvailable'`
+    - **HighestAvailable** - `level='highestAvailable'`
 
-    -   **RequireAdministrator** - `level='requireAdministrator'`
+    - **RequireAdministrator** - `level='requireAdministrator'`
 
     Další informace najdete v tématu `level` argument [/MANIFESTUAC (vložené informace UAC v manifestu)](/cpp/build/reference/manifestuac-embeds-uac-information-in-manifest).
 
--   **UACUIAccess**
+- **UACUIAccess**
 
      Volitelné **logická** parametru.
 
@@ -909,13 +909,13 @@ Zabalí nástroj linker Visual C++ *link.exe*. Nástroj linker propojení objekt
 
      Další informace najdete v tématu `uiAccess` argument [/MANIFESTUAC (vložené informace UAC v manifestu)](/cpp/build/reference/manifestuac-embeds-uac-information-in-manifest).
 
--   **UseLibraryDependencyInputs**
+- **UseLibraryDependencyInputs**
 
      Volitelné **logická** parametru.
 
      Pokud `true`, jsou použity vstupy nástroje librarian spíše než soubor knihovny sám při knihovny výstupy závislostí projektu se připojují.
 
--   **Verze**
+- **Verze**
 
      Volitelné **řetězec** parametru.
 

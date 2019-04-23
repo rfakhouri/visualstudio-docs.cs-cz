@@ -19,12 +19,12 @@ caps.latest.revision: 38
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f0d77d78cdcf889b22d9cf6901b6beae41aaaee4
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 4391f4cf989b51a49b874e6eccdcceb28f609003
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59366728"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060550"
 ---
 # <a name="how-to-collect-performance-data-for-a-web-site"></a>Postupy: Shromažďování dat výkonu pro webovou stránku
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,25 +46,25 @@ Můžete použít **Průvodce výkonem** ke shromažďování dat výkonu pro [!
   
 ### <a name="to-profile-a-web-site-project"></a>Chcete-li Profilovat webového projektu  
   
-1.  Otevřít [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] webový projekt v [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] nebo [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)].  
+1. Otevřít [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] webový projekt v [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] nebo [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)].  
   
-2.  Na **analyzovat** nabídky, klikněte na tlačítko **spustit Průvodce výkonem**.  
+2. Na **analyzovat** nabídky, klikněte na tlačítko **spustit Průvodce výkonem**.  
   
-3.  Na první stránce průvodce vyberte metodu profilace a potom klikněte na tlačítko **Další**. Další informace o metodách profilace naleznete v tématu [metody kolekce výkonu Principy](../profiling/understanding-performance-collection-methods.md). Všimněte si, že metoda profilace vizualizátor souběžnosti není k dispozici pro webové aplikace.  
+3. Na první stránce průvodce vyberte metodu profilace a potom klikněte na tlačítko **Další**. Další informace o metodách profilace naleznete v tématu [metody kolekce výkonu Principy](../profiling/understanding-performance-collection-methods.md). Všimněte si, že metoda profilace vizualizátor souběžnosti není k dispozici pro webové aplikace.  
   
-4.  V **kterou aplikaci chcete Profilovat?** rozevíracího seznamu, zkontrolujte, že je vybrána aktuální projekt a potom klikněte na tlačítko **Další**.  
+4. V **kterou aplikaci chcete Profilovat?** rozevíracího seznamu, zkontrolujte, že je vybrána aktuální projekt a potom klikněte na tlačítko **Další**.  
   
-5.  Na třetí stránce průvodce můžete k přidání dat interakce vrstev profilování (TIP), data z JavaScript spuštěný ve webové stránky, nebo obojí.  
+5. Na třetí stránce průvodce můžete k přidání dat interakce vrstev profilování (TIP), data z JavaScript spuštěný ve webové stránky, nebo obojí.  
   
-    -   Chcete-li shromažďovat interakce vrstev, vyberte **povolit profilaci interakce vrstev** zaškrtávací políčko.  
+    - Chcete-li shromažďovat interakce vrstev, vyberte **povolit profilaci interakce vrstev** zaškrtávací políčko.  
   
-    -   Chcete-li shromažďovat data z JavaScript spuštěný ve webové stránky, vyberte **Profilovat jazyk JavaScript** zaškrtávací políčko.  
+    - Chcete-li shromažďovat data z JavaScript spuštěný ve webové stránky, vyberte **Profilovat jazyk JavaScript** zaškrtávací políčko.  
   
-6.  Klikněte na tlačítko **Další**.  
+6. Klikněte na tlačítko **Další**.  
   
-7.  Na čtvrté stránce průvodce, klikněte na tlačítko **Dokončit**.  
+7. Na čtvrté stránce průvodce, klikněte na tlačítko **Dokončit**.  
   
-8.  Pro vytvoření relace výkonu [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] spuštění aplikace a webové stránky v prohlížeči. Vykonává funkce, které chcete profil a potom ukončete prohlížeč.  
+8. Pro vytvoření relace výkonu [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] spuštění aplikace a webové stránky v prohlížeči. Vykonává funkce, které chcete profil a potom ukončete prohlížeč.  
   
      Profiler generuje datový soubor a zobrazuje souhrnné zobrazení dat v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] hlavního okna.  
   
@@ -90,9 +90,9 @@ Můžete použít **Průvodce výkonem** ke shromažďování dat výkonu pro [!
   
 6. Na třetí stránce průvodce můžete k přidání dat interakce vrstev profilování (TIP), data z JavaScript spuštěný ve webové stránky, nebo obojí.  
   
-   -   Chcete-li shromažďovat interakce vrstev, vyberte **povolit profilaci interakce vrstev** zaškrtávací políčko.  
+   - Chcete-li shromažďovat interakce vrstev, vyberte **povolit profilaci interakce vrstev** zaškrtávací políčko.  
   
-   -   Chcete-li shromažďovat data z JavaScript spuštěný ve webové stránky, vyberte **Profilovat jazyk JavaScript** zaškrtávací políčko.  
+   - Chcete-li shromažďovat data z JavaScript spuštěný ve webové stránky, vyberte **Profilovat jazyk JavaScript** zaškrtávací políčko.  
   
 7. Klikněte na tlačítko **Další**.  
   

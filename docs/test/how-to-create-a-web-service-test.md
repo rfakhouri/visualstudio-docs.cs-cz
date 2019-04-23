@@ -10,12 +10,12 @@ ms.assetid: fbcd57ee-06ad-4260-8694-09f8e0f93e39
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3f1172cff8abc53867f4a13cacdf16fe2d1f065e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3fd640a79a81e2306c8abd1c3c5279b1fc8f335f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55954969"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065360"
 ---
 # <a name="how-to-create-a-web-service-test"></a>Postupy: Vytvoření testu webové služby
 
@@ -31,21 +31,21 @@ Visual Studio Enterprise
 
 ## <a name="to-test-a-web-service"></a>K otestování webové služby
 
-1.  Vytvoření nového testu výkonnosti webu. Poté, co v prohlížeči se otevře, zvolte **Zastavit**.
+1. Vytvoření nového testu výkonnosti webu. Poté, co v prohlížeči se otevře, zvolte **Zastavit**.
 
-2.  V **editoru testu výkonnosti webu**, klikněte pravým tlačítkem na test výkonnosti webu a vyberte **přidat požadavek webové služby**.
+2. V **editoru testu výkonnosti webu**, klikněte pravým tlačítkem na test výkonnosti webu a vyberte **přidat požadavek webové služby**.
 
-3.  V **Url** vlastnosti nového požadavku zadejte název webové služby, například **http://localhost/storecsvs/InstantOrder.asmx**.
+3. V **Url** vlastnosti nového požadavku zadejte název webové služby, například **http://localhost/storecsvs/InstantOrder.asmx**.
 
-4.  Otevřete samostatnou relaci prohlížeče a zadejte adresu URL *.asmx* stránku **adresu** nástrojů. Zvolte metodu, která má být testována, a prohlédněte si zprávu protokolu SOAP. Obsahuje hlavičku `SOAPAction`.
+4. Otevřete samostatnou relaci prohlížeče a zadejte adresu URL *.asmx* stránku **adresu** nástrojů. Zvolte metodu, která má být testována, a prohlédněte si zprávu protokolu SOAP. Obsahuje hlavičku `SOAPAction`.
 
-5.  V **editoru testu výkonnosti webu**, klikněte pravým tlačítkem na žádost a vyberte **přidat hlavičku** přidáte novou hlavičku. V **název** vlastnost, typ `SOAPAction`. V **hodnotu** vlastnost, zadejte hodnotu, která se zobrazí v `SOAPAction`, jako například `"http://tempuri.org/CheckStatus"`.
+5. V **editoru testu výkonnosti webu**, klikněte pravým tlačítkem na žádost a vyberte **přidat hlavičku** přidáte novou hlavičku. V **název** vlastnost, typ `SOAPAction`. V **hodnotu** vlastnost, zadejte hodnotu, která se zobrazí v `SOAPAction`, jako například `"http://tempuri.org/CheckStatus"`.
 
-6.  Rozbalte uzel adresy URL v editoru, zvolte **tělo řetězce** uzel a **typ obsahu** vlastnosti zadejte hodnotu `text/xml`.
+6. Rozbalte uzel adresy URL v editoru, zvolte **tělo řetězce** uzel a **typ obsahu** vlastnosti zadejte hodnotu `text/xml`.
 
-7.  Vraťte se do prohlížeče v kroku 4, zvolte oddíl XML požadavku protokolu SOAP z stránku popisu webové služby a zkopírujte do schránky.
+7. Vraťte se do prohlížeče v kroku 4, zvolte oddíl XML požadavku protokolu SOAP z stránku popisu webové služby a zkopírujte do schránky.
 
-8.  Obsah kódu XML je podobný následujícímu příkladu:
+8. Obsah kódu XML je podobný následujícímu příkladu:
 
      ```xml
      <?xml version="1.0" encoding="utf-8"?>

@@ -6,12 +6,12 @@ ms.assetid: 9d9c7fbb-ebae-4b20-9dd8-3c9070c0d0d1
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: cdd01551472a3cf619d9156e0db20ad3b7c4931e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 93fa86fcac429b38c1e727f39f8c94611310119c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54788053"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60062595"
 ---
 # <a name="image-library-viewer"></a>Prohlížeč knihovny obrázků
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -152,7 +152,7 @@ Nástroj Prohlížeč knihovny obrázků Visual Studio můžete načíst a vyhle
 |||  
 |-|-|  
 |**Atribut**|**Definice**|  
-|Typ|[Povinné] Typ nativního prostředku, XAML nebo PNG|  
+|Type|[Povinné] Typ nativního prostředku, XAML nebo PNG|  
 |ID|[Povinné] Část celého čísla ID nativní prostředky|  
   
  **Ovládací prvek ImageList**  
@@ -224,9 +224,9 @@ Nástroj Prohlížeč knihovny obrázků Visual Studio můžete načíst a vyhle
   
 ## <a name="notes"></a>Poznámky  
   
--   Ve výchozím nastavení nástroj přetáhne v několika manifesty bitové kopie k dispozici v instalačním adresáři sady Visual Studio. Je pouze jeden, který má veřejně použitelné monikery **Microsoft.VisualStudio.ImageCatalog** manifestu. Identifikátor GUID: ae27a6b0-e345-4288-96df-5eaf394ee369 (proveďte **není** přepsat tento identifikátor GUID ve vlastním manifestu) typu: KnownMonikers  
+- Ve výchozím nastavení nástroj přetáhne v několika manifesty bitové kopie k dispozici v instalačním adresáři sady Visual Studio. Je pouze jeden, který má veřejně použitelné monikery **Microsoft.VisualStudio.ImageCatalog** manifestu. Identifikátor GUID: ae27a6b0-e345-4288-96df-5eaf394ee369 (proveďte **není** přepsat tento identifikátor GUID ve vlastním manifestu) typu: KnownMonikers  
   
--   Nástroj se pokusí při spuštění načíst všechny manifesty bitové kopie, které najde, tak může trvat několik sekund, aplikace bude ve skutečnosti zobrazovat. Také může být pomalý nebo že při načítání manifesty.  
+- Nástroj se pokusí při spuštění načíst všechny manifesty bitové kopie, které najde, tak může trvat několik sekund, aplikace bude ve skutečnosti zobrazovat. Také může být pomalý nebo že při načítání manifesty.  
   
 ## <a name="sample-output"></a>Vzorový výstup  
  Tento nástroj negeneruje žádný výstup.

@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c2be46e61438c555fc7ee7d523b3ff9b758c0a15
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5b6e661a79f190e5befdbcf5c28ec0f4bd29ebf4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54782994"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061577"
 ---
 # <a name="how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-or-designer"></a>Postupy: Vytvoření LINQ na třídy SQL namapovaných na tabulky a zobrazení (O/R Designer)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,9 +32,9 @@ LINQ na třídy SQL, které jsou mapovány na databázové tabulky a zobrazení 
 
 #### <a name="to-create-linq-to-sql-classes-that-are-mapped-to-database-tables-or-views"></a>K vytvoření LINQ na třídy SQL, které jsou mapovány do databáze tabulky a zobrazení
 
-1.  V **Server**/**Průzkumník databáze**, rozbalte **tabulky** nebo **zobrazení** a vyhledejte databázové tabulky nebo zobrazení, který má pro použití ve vaší aplikaci.
+1. V **Server**/**Průzkumník databáze**, rozbalte **tabulky** nebo **zobrazení** a vyhledejte databázové tabulky nebo zobrazení, který má pro použití ve vaší aplikaci.
 
-2.  Přetáhněte tabulku nebo zobrazení do [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].
+2. Přetáhněte tabulku nebo zobrazení do [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].
 
      Třídu entity se vytvoří a zobrazí na návrhové ploše. Třída entity má vlastnosti, které se mapují na sloupce ve vybrané tabulky nebo zobrazení.
 
@@ -43,22 +43,22 @@ LINQ na třídy SQL, které jsou mapovány na databázové tabulky a zobrazení 
 
 #### <a name="to-create-an-object-data-source-based-on-linq-to-sql-entity-classes"></a>Chcete-li vytvořit zdroj dat objektu, který je založen na LINQ třídy SQL entity
 
-1.  Na **sestavení** nabídky, klikněte na tlačítko **sestavit řešení** k sestavení projektu.
+1. Na **sestavení** nabídky, klikněte na tlačítko **sestavit řešení** k sestavení projektu.
 
-2.  Na **Data** nabídky, klikněte na tlačítko **zobrazit zdroje dat**.
+2. Na **Data** nabídky, klikněte na tlačítko **zobrazit zdroje dat**.
 
-3.  V **zdroje dat** okna, klikněte na tlačítko **přidat nový zdroj dat**.
+3. V **zdroje dat** okna, klikněte na tlačítko **přidat nový zdroj dat**.
 
-4.  Klikněte na tlačítko **objekt** na **zvolte typ zdroje dat** stránce a potom klikněte na tlačítko **Další**.
+4. Klikněte na tlačítko **objekt** na **zvolte typ zdroje dat** stránce a potom klikněte na tlačítko **Další**.
 
-5.  Rozbalte uzly a vyhledejte a vyberte třídu.
+5. Rozbalte uzly a vyhledejte a vyberte třídu.
 
     > [!NOTE]
     > Pokud **zákazníka** třída není k dispozici, zavřete průvodce, sestavte projekt a spusťte průvodce znovu.
 
-6.  Klikněte na tlačítko **Dokončit** vytvořit zdroj dat a přidat **zákazníka** třídu entity **zdroje dat** okna.
+6. Klikněte na tlačítko **Dokončit** vytvořit zdroj dat a přidat **zákazníka** třídu entity **zdroje dat** okna.
 
-7.  Přetáhněte položky z **zdroje dat** okna do formuláře.
+7. Přetáhněte položky z **zdroje dat** okna do formuláře.
 
 ## <a name="see-also"></a>Viz také:
 

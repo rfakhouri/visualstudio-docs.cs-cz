@@ -9,12 +9,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 071a18af0532a55946087f7c47535405d0d3b40e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 28e2358b92080bd56cfda9d395f87e5c188da221
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54769340"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60062916"
 ---
 # <a name="setting-a-background-image-on-a-diagram"></a>Nastavení obrázku pozadí v diagramu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,21 +25,21 @@ V [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Visualization and Modeling SDK, m
   
 #### <a name="to-set-a-background-image-for-a-generated-designer"></a>Nastavit obrázek pozadí pro vygenerovaného návrháře  
   
-1.  Zkopírujte soubor obrázku, který chcete použít jako pozadí diagramu do adresáře Dsl\Resources pro aktuální projekt.  
+1. Zkopírujte soubor obrázku, který chcete použít jako pozadí diagramu do adresáře Dsl\Resources pro aktuální projekt.  
   
-2.  V **Průzkumníka řešení**, klikněte pravým tlačítkem na složku Dsl\Resources, přejděte na **přidat**a potom klikněte na tlačítko **existující položku**.  
+2. V **Průzkumníka řešení**, klikněte pravým tlačítkem na složku Dsl\Resources, přejděte na **přidat**a potom klikněte na tlačítko **existující položku**.  
   
-3.  V **přidat existující položku** dialogové okno, přejděte do složky Dsl\Resources.  
+3. V **přidat existující položku** dialogové okno, přejděte do složky Dsl\Resources.  
   
-4.  V **soubory typu** klikněte na možnost **soubory bitových kopií**.  
+4. V **soubory typu** klikněte na možnost **soubory bitových kopií**.  
   
-5.  Klikněte na soubor obrázku, který jste zkopírovali do adresáře a potom klikněte na tlačítko **přidat**.  
+5. Klikněte na soubor obrázku, který jste zkopírovali do adresáře a potom klikněte na tlačítko **přidat**.  
   
-6.  Klikněte pravým tlačítkem na Dsl a klikněte na tlačítko **vlastnosti** otevřete vlastnosti projektu Dsl.  
+6. Klikněte pravým tlačítkem na Dsl a klikněte na tlačítko **vlastnosti** otevřete vlastnosti projektu Dsl.  
   
-7.  Na **prostředky** klikněte na tlačítko **tento projekt neobsahuje soubor výchozích prostředků. Vytvořte si ho kliknutím sem.**  
+7. Na **prostředky** klikněte na tlačítko **tento projekt neobsahuje soubor výchozích prostředků. Vytvořte si ho kliknutím sem.**  
   
-8.  Přidat soubor bitové kopie do souboru prostředků přetažením obrázek ze **Průzkumníka řešení** do okna zdroje.  
+8. Přidat soubor bitové kopie do souboru prostředků přetažením obrázek ze **Průzkumníka řešení** do okna zdroje.  
   
 9. Otevřete nabídku Soubor a klikněte na možnost Uložit vlastnosti projektu.  
   

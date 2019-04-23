@@ -13,12 +13,12 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 276d3306d908fa8af4e58f38c965b73c1fff9284
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 5a45720c739087c2caf43314cbcbc8aea162534c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59659811"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064840"
 ---
 # <a name="how-to-select-the-files-to-build"></a>Postupy: Výběr souborů k sestavení
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Při vytváření projektu, který obsahuje několik souborů, můžete vytvoři
   
 #### <a name="to-declare-items-individually"></a>Chcete-li deklarovat položky jednotlivě  
   
--   Použití `Include` atributy podobně jako následující:  
+- Použití `Include` atributy podobně jako následující:  
   
      `<CSFile Include="form1.cs"/>`  
   
@@ -45,7 +45,7 @@ Při vytváření projektu, který obsahuje několik souborů, můžete vytvoři
   
 #### <a name="to-declare-multiple-items"></a>Chcete-li deklarovat více položek  
   
--   Použití `Include` atributy podobně jako následující:  
+- Použití `Include` atributy podobně jako následující:  
   
      `<CSFile Include="form1.cs;form2.cs"/>`  
   
@@ -66,19 +66,19 @@ Při vytváření projektu, který obsahuje několik souborů, můžete vytvoři
   
 #### <a name="to-include-all-jpg-files-in-the-images-directory-and-subdirectories"></a>Zahrnout všechny soubory .jpg Imagí adresáře a podadresáře  
   
--   Pomocí následujících `Include` atribut:  
+- Pomocí následujících `Include` atribut:  
   
      `Include="Images\**\*.jpg"`  
   
 #### <a name="to-include-all-jpg-files-starting-with-img"></a>Chcete-li zahrnout všechny soubory .jpg počínaje "img"  
   
--   Pomocí následujících `Include` atribut:  
+- Pomocí následujících `Include` atribut:  
   
      `Include="Images\**\img*.jpg"`  
   
 #### <a name="to-include-all-files-in-directories-with-names-ending-in-jpgs"></a>Chcete-li zahrnout všechny soubory v adresářích s názvy končící na "formátu JPG využívá"  
   
--   Použijte jednu z následujících `Include` atributy:  
+- Použijte jednu z následujících `Include` atributy:  
   
      `Include="Images\**\*jpgs\*.*"`  
   
@@ -91,7 +91,7 @@ Při vytváření projektu, který obsahuje několik souborů, můžete vytvoři
   
 #### <a name="to-use-all-visual-c-or-visual-basic-files-as-inputs"></a>Použití všech Visual C# nebo Visual Basic souborů jako vstupy  
   
--   Použití `Include` atributy podobný následujícímu:  
+- Použití `Include` atributy podobný následujícímu:  
   
      `<CSC Sources="@(CSFile)">...</CSC>`  
   

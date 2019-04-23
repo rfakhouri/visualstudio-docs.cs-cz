@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 59ed3b8e62bbb2086581d89016d4609ab215f0de
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 65b06ada96387ac4bff022c92e4025718b0291d9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604948"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064294"
 ---
 # <a name="trusted-application-deployment-overview"></a>Důvěryhodné Přehled nasazení aplikace
 Toto téma obsahuje přehled o tom, jak nasadit [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace, které se zvýšenými oprávněními pomocí technologie Trusted Application Deployment.
@@ -75,9 +75,9 @@ Musíte následujícím postupem využít výhod nasazení důvěryhodné aplika
 
  Pokud se nasazení aplikace ve spravovaném prostředí klasické pracovní plochy, máte následující možnosti pro přidání certifikátu do úložiště důvěryhodných vydavatelů:
 
--   <xref:System.Security.Cryptography?displayProperty=fullName> Oboru názvů.
+- <xref:System.Security.Cryptography?displayProperty=fullName> Oboru názvů.
 
--   *CertMgr.exe*, který je součástí aplikace Internet Explorer a proto existuje ve Windows 98 a všech novějších verzích. Další informace najdete v tématu [Certmgr.exe (nástroj Certificate Manager)](/dotnet/framework/tools/certmgr-exe-certificate-manager-tool).
+- *CertMgr.exe*, který je součástí aplikace Internet Explorer a proto existuje ve Windows 98 a všech novějších verzích. Další informace najdete v tématu [Certmgr.exe (nástroj Certificate Manager)](/dotnet/framework/tools/certmgr-exe-certificate-manager-tool).
 
 ### <a name="create-a-clickonce-application"></a>Vytvoření aplikace ClickOnce
  A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace je [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] klientská aplikace spolu se soubory manifestu, které popisují aplikace a zadat parametry instalace. Můžete zapnout program do [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace s použitím **publikovat** v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Alternativně můžete generovat všechny soubory potřebné pro [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] nasazení pomocí nástrojů, které jsou součástí [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]. Podrobné pokyny o [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] nasazení, najdete v článku [názorný postup: Ruční nasazení aplikace ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).

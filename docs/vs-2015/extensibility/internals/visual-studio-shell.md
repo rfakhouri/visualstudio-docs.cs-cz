@@ -11,12 +11,12 @@ ms.assetid: cb124ef4-1a6b-4bfe-bfbf-295ef9c07f36
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 31afa6229a7eeb39c146d40992effd8969e76725
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2ec79aab58e167ff2c935317897ba10a042a2e5a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54770369"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065542"
 ---
 # <a name="visual-studio-shell"></a>Visual Studio Shell
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -40,17 +40,17 @@ ms.locfileid: "54770369"
   
 - Sledování prostředí celý výběr, kontextu a měny. Prostředí sleduje následující typy položek:  
   
-  -   Aktuální projekt  
+  - Aktuální projekt  
   
-  -   Aktuální položku projektu nebo ID aktuální položky <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>  
+  - Aktuální položku projektu nebo ID aktuální položky <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>  
   
-  -   Aktuální výběr **vlastnosti** okno nebo `SelectionContainer`  
+  - Aktuální výběr **vlastnosti** okno nebo `SelectionContainer`  
   
-  -   Kontextu uživatelského rozhraní ID nebo CmdUIGuids, které řídí, zda se příkazy, nabídky a panely nástrojů  
+  - Kontextu uživatelského rozhraní ID nebo CmdUIGuids, které řídí, zda se příkazy, nabídky a panely nástrojů  
   
-  -   Aktuálně aktivní prvky, jako jsou aktivní okno, dokument a vhodný  
+  - Aktuálně aktivní prvky, jako jsou aktivní okno, dokument a vhodný  
   
-  -   Atributy kontextu uživatele, které řídí, dynamická Nápověda  
+  - Atributy kontextu uživatele, které řídí, dynamická Nápověda  
   
   Prostředí také zprostředkovává komunikaci mezi nainstalovaných rozšíření VSPackages a službami. Podporuje základní funkce prostředí a je zpřístupní pro všechny balíčky VSPackages integrováno v [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Tyto základní funkce zahrnují následující položky:  
   

@@ -1,5 +1,5 @@
 ---
-title: 'Průvodce: Zobrazení vlastních podoken úloh s e-mailové zprávy v aplikaci Outlook'
+title: 'Návod: Zobrazení vlastních podoken úloh s e-mailové zprávy v aplikaci Outlook'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,14 +16,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 69c68397c8695fd0d9c3c1ef48a38e316c537641
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 583c15a5b605671e09ac47a42d49b068393ffe2e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56606443"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60062552"
 ---
-# <a name="walkthrough-display-custom-task-panes-with-email-messages-in-outlook"></a>Průvodce: Zobrazení vlastních podoken úloh s e-mailové zprávy v aplikaci Outlook
+# <a name="walkthrough-display-custom-task-panes-with-email-messages-in-outlook"></a>Návod: Zobrazení vlastních podoken úloh s e-mailové zprávy v aplikaci Outlook
   Tento návod ukazuje, jak zobrazit jedinečnou instanci vlastního podokna úloh s každou e-mailové zprávy, který je vytvořen nebo otevřen. Uživatelům můžete zobrazit nebo skrýt podokno úloh s použitím tlačítko na pásu karet z každého e-mailové zprávy.
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
@@ -35,17 +35,17 @@ ms.locfileid: "56606443"
 
  Tento návod znázorňuje následující úlohy:
 
--   Návrh uživatelského rozhraní (UI) z vlastního podokna úloh.
+- Návrh uživatelského rozhraní (UI) z vlastního podokna úloh.
 
--   Vytvoření vlastního uživatelského rozhraní pásu karet.
+- Vytvoření vlastního uživatelského rozhraní pásu karet.
 
--   Zobrazení vlastního uživatelského rozhraní pásu karet pomocí e-mailové zprávy.
+- Zobrazení vlastního uživatelského rozhraní pásu karet pomocí e-mailové zprávy.
 
--   Vytvoření třídy pro správu Inspector windows a vlastní podokna úloh.
+- Vytvoření třídy pro správu Inspector windows a vlastní podokna úloh.
 
--   Inicializace a Uklízení prostředky využívané třídou doplňku VSTO.
+- Inicializace a Uklízení prostředky využívané třídou doplňku VSTO.
 
--   Synchronizace přepínací tlačítko pásu karet pomocí vlastního podokna úloh.
+- Synchronizace přepínací tlačítko pásu karet pomocí vlastního podokna úloh.
 
 > [!NOTE]
 >  Váš počítač může v následujících pokynech zobrazovat odlišné názvy nebo umístění některých prvků uživatelského rozhraní sady Visual Studio. Tyto prvky jsou určeny edicí sady Visual Studio a použitým nastavením. Další informace najdete v tématu [přizpůsobení integrovaného vývojového prostředí sady Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
@@ -64,7 +64,7 @@ ms.locfileid: "56606443"
 
 ### <a name="to-create-a-new-project"></a>Chcete-li vytvořit nový projekt
 
-1.  Vytvoření **doplňku aplikace Outlook** projektu s názvem **OutlookMailItemTaskPane**. Použití **doplňku aplikace Outlook** šablony projektu. Další informace najdete v tématu [jak: Vytvářet projekty pro Office v sadě Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
+1. Vytvoření **doplňku aplikace Outlook** projektu s názvem **OutlookMailItemTaskPane**. Použití **doplňku aplikace Outlook** šablony projektu. Další informace najdete v tématu [jak: Vytvářet projekty pro Office v sadě Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Otevře *ThisAddIn.cs* nebo *ThisAddIn.vb* soubor kódu a přidá **OutlookMailItemTaskPane** projektu **Průzkumníka řešení**.
 
@@ -73,47 +73,47 @@ ms.locfileid: "56606443"
 
 ### <a name="to-design-the-user-interface-of-the-custom-task-pane"></a>K návrhu uživatelského rozhraní vlastního podokna úloh
 
-1.  V **Průzkumníka řešení**, klikněte na tlačítko **OutlookMailItemTaskPane** projektu.
+1. V **Průzkumníka řešení**, klikněte na tlačítko **OutlookMailItemTaskPane** projektu.
 
-2.  Na **projektu** nabídky, klikněte na tlačítko **přidat uživatelský ovládací prvek**.
+2. Na **projektu** nabídky, klikněte na tlačítko **přidat uživatelský ovládací prvek**.
 
-3.  V **přidat novou položku** dialogové okno pole, změňte název uživatelský ovládací prvek **TaskPaneControl**a potom klikněte na tlačítko **přidat**.
+3. V **přidat novou položku** dialogové okno pole, změňte název uživatelský ovládací prvek **TaskPaneControl**a potom klikněte na tlačítko **přidat**.
 
      Uživatelský ovládací prvek se otevře v návrháři.
 
-4.  Z **běžné ovládací prvky** karty **nástrojů**, přetáhněte **textového pole** ovládacího prvku do uživatelského ovládacího prvku.
+4. Z **běžné ovládací prvky** karty **nástrojů**, přetáhněte **textového pole** ovládacího prvku do uživatelského ovládacího prvku.
 
 ## <a name="design-the-user-interface-of-the-ribbon"></a>Návrh uživatelského rozhraní na pásu karet
  Jedním z cílů tohoto doplňku VSTO je poskytnout uživatelům způsob, jak skrýt nebo zobrazit podokno úloh na pásu karet každou e-mailové zprávy. K poskytování uživatelského rozhraní, vytvoření vlastního uživatelského rozhraní pásu karet, která zobrazuje přepínací tlačítko, které mohou uživatelé kliknout a zobrazit nebo skrýt podokno úloh.
 
 ### <a name="to-create-a-custom-ribbon-ui"></a>Vytvoření vlastního uživatelského rozhraní pásu karet
 
-1.  Na **projektu** nabídky, klikněte na tlačítko **přidat novou položku**.
+1. Na **projektu** nabídky, klikněte na tlačítko **přidat novou položku**.
 
-2.  V **přidat novou položku** dialogu **pás karet (vizuální návrhář)**.
+2. V **přidat novou položku** dialogu **pás karet (vizuální návrhář)**.
 
-3.  Změňte název nového pásu karet na **ManageTaskPaneRibbon**a klikněte na tlačítko **přidat**.
+3. Změňte název nového pásu karet na **ManageTaskPaneRibbon**a klikněte na tlačítko **přidat**.
 
      *ManageTaskPaneRibbon.cs* nebo *ManageTaskPaneRibbon.vb* soubor se otevře v Návrháři pásu karet a zobrazí výchozí kartu a skupinu.
 
-4.  V Návrháři pásu karet klikněte na tlačítko **group1**.
+4. V Návrháři pásu karet klikněte na tlačítko **group1**.
 
-5.  V **vlastnosti** okno, nastaveno **popisek** vlastnost **správce podokna úloh**.
+5. V **vlastnosti** okno, nastaveno **popisek** vlastnost **správce podokna úloh**.
 
-6.  Z **ovládací prvky Ribbon Office** karty **nástrojů**, přetáhněte ovládací prvek ToggleButton na **správce podokna úloh** skupiny.
+6. Z **ovládací prvky Ribbon Office** karty **nástrojů**, přetáhněte ovládací prvek ToggleButton na **správce podokna úloh** skupiny.
 
-7.  Klikněte na tlačítko **toggleButton1**.
+7. Klikněte na tlačítko **toggleButton1**.
 
-8.  V **vlastnosti** okno, nastaveno **popisek** vlastnost **zobrazit podokno úloh**.
+8. V **vlastnosti** okno, nastaveno **popisek** vlastnost **zobrazit podokno úloh**.
 
 ## <a name="display-the-custom-ribbon-user-interface-with-email-messages"></a>Zobrazit vlastní uživatelské rozhraní pásu karet pomocí e-mailové zprávy
  Vlastního podokna úloh, který vytvoříte v tomto návodu je navržen pro zobrazí pouze v systému windows Inspector, které obsahují e-mailové zprávy. Proto nastavte vlastnosti, které chcete zobrazit vlastní uživatelské rozhraní pásu karet pouze pomocí těchto oken.
 
 ### <a name="to-display-the-custom-ribbon-ui-with-email-messages"></a>Zobrazit vlastní uživatelské rozhraní pásu karet pomocí e-mailové zprávy
 
-1.  V Návrháři pásu karet klikněte na tlačítko **ManageTaskPaneRibbon** pásu karet.
+1. V Návrháři pásu karet klikněte na tlačítko **ManageTaskPaneRibbon** pásu karet.
 
-2.  V **vlastnosti** okna, klikněte rozevírací seznam vedle **RibbonType**a vyberte **Microsoft.Outlook.Mail.Compose** a  **Microsoft.Outlook.Mail.Read**.
+2. V **vlastnosti** okna, klikněte rozevírací seznam vedle **RibbonType**a vyberte **Microsoft.Outlook.Mail.Compose** a  **Microsoft.Outlook.Mail.Read**.
 
 ## <a name="create-a-class-to-manage-inspector-windows-and-custom-task-panes"></a>Vytvořte třídu pro správu inspector windows a vlastních podoken úloh
  Existuje několik případů, ve kterých doplňku VSTO musí určit, které vlastního podokna úloh spojené s konkrétní e-mailové zprávy. Tyto případy zahrnují následující:
@@ -128,34 +128,34 @@ ms.locfileid: "56606443"
 
 ### <a name="to-create-a-class-to-manage-inspector-windows-and-custom-task-panes"></a>Pro vytvoření třídy pro správu inspector windows a vlastních podoken úloh
 
-1.  V **Průzkumníku řešení**, klikněte pravým tlačítkem myši *ThisAddIn.cs* nebo *ThisAddIn.vb* souboru a pak klikněte na tlačítko **zobrazit kód**.
+1. V **Průzkumníku řešení**, klikněte pravým tlačítkem myši *ThisAddIn.cs* nebo *ThisAddIn.vb* souboru a pak klikněte na tlačítko **zobrazit kód**.
 
-2.  Na začátek souboru přidejte následující příkazy.
+2. Na začátek souboru přidejte následující příkazy.
 
      [!code-csharp[Trin_OutlookMailItemTaskPane#2](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#2)]
      [!code-vb[Trin_OutlookMailItemTaskPane#2](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#2)]
 
-3.  Přidejte následující kód, který *ThisAddIn.cs* nebo *ThisAddIn.vb* souboru mimo `ThisAddIn` třídy (Visual C#, přidejte tento kód `OutlookMailItemTaskPane` oboru názvů). `InspectorWrapper` Třída spravuje pár <xref:Microsoft.Office.Interop.Outlook.Inspector> a <xref:Microsoft.Office.Tools.CustomTaskPane> objekty. Definici této třídy v následujících krocích se dokončí.
+3. Přidejte následující kód, který *ThisAddIn.cs* nebo *ThisAddIn.vb* souboru mimo `ThisAddIn` třídy (Visual C#, přidejte tento kód `OutlookMailItemTaskPane` oboru názvů). `InspectorWrapper` Třída spravuje pár <xref:Microsoft.Office.Interop.Outlook.Inspector> a <xref:Microsoft.Office.Tools.CustomTaskPane> objekty. Definici této třídy v následujících krocích se dokončí.
 
      [!code-csharp[Trin_OutlookMailItemTaskPane#3](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#3)]
      [!code-vb[Trin_OutlookMailItemTaskPane#3](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#3)]
 
-4.  Přidejte následující konstruktor za kód, který jste přidali v předchozím kroku. Tento konstruktor vytvoří a inicializuje nového vlastního podokna úloh, který je přidružen <xref:Microsoft.Office.Interop.Outlook.Inspector> objekt, který je předán. V jazyce C#, konstruktor také připisuje obslužných rutin událostí k <xref:Microsoft.Office.Interop.Outlook.InspectorEvents_Event.Close> událost <xref:Microsoft.Office.Interop.Outlook.Inspector> objekt a <xref:Microsoft.Office.Tools.CustomTaskPane.VisibleChanged> událost <xref:Microsoft.Office.Tools.CustomTaskPane> objektu.
+4. Přidejte následující konstruktor za kód, který jste přidali v předchozím kroku. Tento konstruktor vytvoří a inicializuje nového vlastního podokna úloh, který je přidružen <xref:Microsoft.Office.Interop.Outlook.Inspector> objekt, který je předán. V jazyce C#, konstruktor také připisuje obslužných rutin událostí k <xref:Microsoft.Office.Interop.Outlook.InspectorEvents_Event.Close> událost <xref:Microsoft.Office.Interop.Outlook.Inspector> objekt a <xref:Microsoft.Office.Tools.CustomTaskPane.VisibleChanged> událost <xref:Microsoft.Office.Tools.CustomTaskPane> objektu.
 
      [!code-csharp[Trin_OutlookMailItemTaskPane#4](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#4)]
      [!code-vb[Trin_OutlookMailItemTaskPane#4](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#4)]
 
-5.  Přidejte následující metodu za kód, který jste přidali v předchozím kroku. Tato metoda je obslužná rutina události <xref:Microsoft.Office.Tools.CustomTaskPane.VisibleChanged> událost <xref:Microsoft.Office.Tools.CustomTaskPane> objekt, který je součástí `InspectorWrapper` třídy. Tento kód aktualizuje stav přepínacího tlačítka vždy, když uživatel otevře nebo zavře vlastního podokna úloh.
+5. Přidejte následující metodu za kód, který jste přidali v předchozím kroku. Tato metoda je obslužná rutina události <xref:Microsoft.Office.Tools.CustomTaskPane.VisibleChanged> událost <xref:Microsoft.Office.Tools.CustomTaskPane> objekt, který je součástí `InspectorWrapper` třídy. Tento kód aktualizuje stav přepínacího tlačítka vždy, když uživatel otevře nebo zavře vlastního podokna úloh.
 
      [!code-csharp[Trin_OutlookMailItemTaskPane#5](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#5)]
      [!code-vb[Trin_OutlookMailItemTaskPane#5](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#5)]
 
-6.  Přidejte následující metodu za kód, který jste přidali v předchozím kroku. Tato metoda je obslužná rutina události <xref:Microsoft.Office.Interop.Outlook.InspectorEvents_Event.Close> událost <xref:Microsoft.Office.Interop.Outlook.Inspector> objekt, který obsahuje aktuální e-mailové zprávy. Obslužná rutina události uvolní prostředky při zavření e-mailové zprávy. Obslužná rutina události taky odstraní aktuální vlastního podokna úloh z `CustomTaskPanes` kolekce. To pomáhá zabránit více instancí vlastního podokna úloh po otevření další e-mailové zprávy.
+6. Přidejte následující metodu za kód, který jste přidali v předchozím kroku. Tato metoda je obslužná rutina události <xref:Microsoft.Office.Interop.Outlook.InspectorEvents_Event.Close> událost <xref:Microsoft.Office.Interop.Outlook.Inspector> objekt, který obsahuje aktuální e-mailové zprávy. Obslužná rutina události uvolní prostředky při zavření e-mailové zprávy. Obslužná rutina události taky odstraní aktuální vlastního podokna úloh z `CustomTaskPanes` kolekce. To pomáhá zabránit více instancí vlastního podokna úloh po otevření další e-mailové zprávy.
 
      [!code-csharp[Trin_OutlookMailItemTaskPane#6](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#6)]
      [!code-vb[Trin_OutlookMailItemTaskPane#6](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#6)]
 
-7.  Přidejte následující kód za kód, který jste přidali v předchozím kroku. Později v tomto návodu bude volat tuto vlastnost z metody v Uživatelském rozhraní pásu karet vlastní zobrazení nebo skrytí vlastního podokna úloh.
+7. Přidejte následující kód za kód, který jste přidali v předchozím kroku. Později v tomto návodu bude volat tuto vlastnost z metody v Uživatelském rozhraní pásu karet vlastní zobrazení nebo skrytí vlastního podokna úloh.
 
      [!code-csharp[Trin_OutlookMailItemTaskPane#7](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#7)]
      [!code-vb[Trin_OutlookMailItemTaskPane#7](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#7)]
@@ -201,23 +201,23 @@ ms.locfileid: "56606443"
 
 ### <a name="to-build-your-project"></a>K sestavení projektu
 
-1.  V **Průzkumníku řešení**, klikněte pravým tlačítkem myši **OutlookMailItemTaskPane** projektu a pak klikněte na tlačítko **sestavení**. Ověřte, že se projekt zkompiluje bez chyb.
+1. V **Průzkumníku řešení**, klikněte pravým tlačítkem myši **OutlookMailItemTaskPane** projektu a pak klikněte na tlačítko **sestavení**. Ověřte, že se projekt zkompiluje bez chyb.
 
 ## <a name="synchronize-the-ribbon-toggle-button-with-the-custom-task-pane"></a>Synchronizovat přepínací tlačítko pásu karet pomocí vlastního podokna úloh
  Přepínací tlačítko se zobrazí stisknuto, když se zobrazuje podokno úloh, se zobrazí na nesmí být stisknuto po skrytí podokna úloh. Chcete-li synchronizovat stav tlačítka s vlastní podokno úloh, upravte <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton.Click> obslužná rutina události přepínacího tlačítka.
 
 ### <a name="to-synchronize-the-custom-task-pane-with-the-toggle-button"></a>Synchronizace vlastního podokna úloh s přepínací tlačítko
 
-1.  V Návrháři pásu karet klikněte dvakrát na **zobrazit podokno úloh** přepínacího tlačítka.
+1. V Návrháři pásu karet klikněte dvakrát na **zobrazit podokno úloh** přepínacího tlačítka.
 
      Visual Studio vygeneruje obslužnou rutinu události s názvem automaticky `toggleButton1_Click`, která zpracovává <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton.Click> události přepínacího tlačítka. Visual Studio také otevře *ManageTaskPaneRibbon.cs* nebo *ManageTaskPaneRibbon.vb* souboru v editoru kódu.
 
-2.  Přidejte následující příkazy k hornímu okraji *ManageTaskPaneRibbon.cs* nebo *ManageTaskPaneRibbon.vb* souboru.
+2. Přidejte následující příkazy k hornímu okraji *ManageTaskPaneRibbon.cs* nebo *ManageTaskPaneRibbon.vb* souboru.
 
      [!code-csharp[Trin_OutlookMailItemTaskPane#14](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ManageTaskPaneRibbon.cs#14)]
      [!code-vb[Trin_OutlookMailItemTaskPane#14](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ManageTaskPaneRibbon.vb#14)]
 
-3.  Nahradit `toggleButton1_Click` obslužné rutiny události s následujícím kódem. Když uživatel klikne na přepínací tlačítko, tato metoda skryje nebo zobrazí vlastního podokna úloh, která souvisí s aktuálním okně Inspektor.
+3. Nahradit `toggleButton1_Click` obslužné rutiny události s následujícím kódem. Když uživatel klikne na přepínací tlačítko, tato metoda skryje nebo zobrazí vlastního podokna úloh, která souvisí s aktuálním okně Inspektor.
 
      [!code-csharp[Trin_OutlookMailItemTaskPane#15](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ManageTaskPaneRibbon.cs#15)]
      [!code-vb[Trin_OutlookMailItemTaskPane#15](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ManageTaskPaneRibbon.vb#15)]
@@ -262,11 +262,11 @@ ms.locfileid: "56606443"
 ## <a name="next-steps"></a>Další kroky
  Další informace o tom, jak vytvořit vlastní podokna úloh naleznete v těchto tématech:
 
--   Vytvoření vlastního podokna úloh v doplňku VSTO pro jinou aplikaci. Další informace o aplikacích, které podporují vlastní podokna úloh, naleznete v tématu [vlastní podokna úloh](../vsto/custom-task-panes.md).
+- Vytvoření vlastního podokna úloh v doplňku VSTO pro jinou aplikaci. Další informace o aplikacích, které podporují vlastní podokna úloh, naleznete v tématu [vlastní podokna úloh](../vsto/custom-task-panes.md).
 
--   Automatizace aplikací sady Microsoft Office s použitím vlastního podokna úloh. Další informace najdete v tématu [názorný postup: Automatizace aplikace z vlastního podokna úloh](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md).
+- Automatizace aplikací sady Microsoft Office s použitím vlastního podokna úloh. Další informace najdete v tématu [názorný postup: Automatizace aplikace z vlastního podokna úloh](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md).
 
--   Vytvoření tlačítka pásu karet v Excelu, který umožňuje skrýt nebo zobrazit vlastního podokna úloh. Další informace najdete v tématu [názorný postup: Synchronizace vlastního podokna úloh s tlačítkem pásu karet](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md).
+- Vytvoření tlačítka pásu karet v Excelu, který umožňuje skrýt nebo zobrazit vlastního podokna úloh. Další informace najdete v tématu [názorný postup: Synchronizace vlastního podokna úloh s tlačítkem pásu karet](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md).
 
 ## <a name="see-also"></a>Viz také:
 - [Vlastní podokna úloh](../vsto/custom-task-panes.md)

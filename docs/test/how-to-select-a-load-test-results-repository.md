@@ -15,12 +15,12 @@ ms.assetid: fa0c4dd9-612f-4a57-b8eb-458f129d9cda
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6d1b324eb2122559eb45a22bc463458d4f6661ef
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 602327d49733077e3c180c0e192027be6374afe6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55941075"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065633"
 ---
 # <a name="how-to-select-a-load-test-results-repository"></a>Postupy: Vyberte úložiště výsledků zátěžového testu
 
@@ -32,26 +32,26 @@ Výsledky testu z agentů nebo místního počítače můžete uložit na každ�
 
 ## <a name="identify-a-results-store-for-load-test-data"></a>Identifikace úložiště výsledků pro data zátěžového testu
 
-1.  V **Průzkumníka řešení**, otevřete soubor zátěžového testu.
+1. V **Průzkumníka řešení**, otevřete soubor zátěžového testu.
 
-2.  Z **zátěžový Test** nástrojů, zvolte **spravovat testovací Kontroléry**. **Spravovat testovací Kontrolér** se zobrazí dialogové okno. Používáte-li agent vzdáleně, je zapotřebí zvolit kontrolér.
+2. Z **zátěžový Test** nástrojů, zvolte **spravovat testovací Kontroléry**. **Spravovat testovací Kontrolér** se zobrazí dialogové okno. Používáte-li agent vzdáleně, je zapotřebí zvolit kontrolér.
 
      ![Vlastnosti připojení úložiště výsledků zátěžového testu](../test/media/loadtestconnectionproperties.png) vlastnosti připojení úložiště výsledků zátěžového testu
 
-3.  V **úložiště výsledků zátěžového testu**, klikněte na tlačítko **(...)**  zobrazíte **vlastnosti připojení** dialogové okno.
+3. V **úložiště výsledků zátěžového testu**, klikněte na tlačítko **(...)**  zobrazíte **vlastnosti připojení** dialogové okno.
 
-4.  V **název serveru**, zadejte název serveru, na kterém jste spustili `LoadTest` skripty.
+4. V **název serveru**, zadejte název serveru, na kterém jste spustili `LoadTest` skripty.
 
     > [!TIP]
     > Pokud používáte SQL Express na místním počítači pro úložiště zátěžového testu, zadejte \<názevpočítače > \sqlexpress (například **Můjpočítač\sqlexpress**).
 
-5.  V části **Přihlaste se k serveru**, můžete zvolit **použít ověřování Windows**. Můžete zadat uživatelské jméno a heslo, ale pokud tak učiníte, musíte vybrat možnost **uložit heslo**.
+5. V části **Přihlaste se k serveru**, můžete zvolit **použít ověřování Windows**. Můžete zadat uživatelské jméno a heslo, ale pokud tak učiníte, musíte vybrat možnost **uložit heslo**.
 
-6.  V části **připojit k databázi**, zvolte **vyberte nebo zadejte název databáze**. Vyberte **LoadTest** z rozevíracího seznamu.
+6. V části **připojit k databázi**, zvolte **vyberte nebo zadejte název databáze**. Vyberte **LoadTest** z rozevíracího seznamu.
 
-7.  Zvolte **OK**. Připojení můžete otestovat pomocí příkazu **Test připojení**.
+7. Zvolte **OK**. Připojení můžete otestovat pomocí příkazu **Test připojení**.
 
-8.  Zvolte **Zavřít** v **spravovat testovací Kontrolér** dialogové okno.
+8. Zvolte **Zavřít** v **spravovat testovací Kontrolér** dialogové okno.
 
 ## <a name="see-also"></a>Viz také:
 

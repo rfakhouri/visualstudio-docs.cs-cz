@@ -16,12 +16,12 @@ caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 473afbdbbeb510434d45bf28dc02a3ff636d2b9c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1e8f3e5b87879d34ab61f0b50e5e4b91e84933b5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54788090"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063085"
 ---
 # <a name="unable-to-attach-to-the-process"></a>Nelze připojit k procesu.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,26 +42,26 @@ Nelze se připojit k procesu. Komponenty ladicího programu na server přijal p�
   
 ### <a name="to-solve-scenario-1"></a>Chcete-li vyřešit scénář 1  
   
--   Spuštění ladicího programu a spravované aplikace v rámci stejné uživatelské jméno a heslo.  
+- Spuštění ladicího programu a spravované aplikace v rámci stejné uživatelské jméno a heslo.  
   
 ### <a name="to-solve-scenario-2"></a>Chcete-li vyřešit scénář 2  
   
-1.  Z **Start** nabídce zvolte **ovládací panely**.  
+1. Z **Start** nabídce zvolte **ovládací panely**.  
   
-2.  V Ovládacích panelech poklikejte na **nástroje pro správu**.  
+2. V Ovládacích panelech poklikejte na **nástroje pro správu**.  
   
-3.  V okně nástroje pro správu, klikněte dvakrát na **místní zásady zabezpečení**.  
+3. V okně nástroje pro správu, klikněte dvakrát na **místní zásady zabezpečení**.  
   
-4.  V okně místní zásady zabezpečení, vyberte **místní zásady**.  
+4. V okně místní zásady zabezpečení, vyberte **místní zásady**.  
   
-5.  V **zásady** sloupce, klikněte dvakrát na **přístup k síti: Model sdílení a zabezpečení pro místní účty**.  
+5. V **zásady** sloupce, klikněte dvakrát na **přístup k síti: Model sdílení a zabezpečení pro místní účty**.  
   
-6.  V **přístup k síti: Model sdílení a zabezpečení pro místní účty** dialogové okno pole, změňte nastavení zabezpečení na **Classic**a klikněte na tlačítko **OK**.  
+6. V **přístup k síti: Model sdílení a zabezpečení pro místní účty** dialogové okno pole, změňte nastavení zabezpečení na **Classic**a klikněte na tlačítko **OK**.  
   
     > [!CAUTION]
     >  Změna modelu zabezpečení a klasickým modelem může způsobit neočekávaný přístup ke sdíleným souborům a komponenty DCOM. Pokud tuto změnu ověřit vzdáleného uživatele s vaší místní uživatelský účet a spíše než hosta. Pokud vzdálený uživatel odpovídá uživatelské jméno a heslo, tento uživatel bude mít přístup k žádné složky nebo objekt modelu DCOM, se kterými jste sdíleli navýšení kapacity. Pokud používáte tento model zabezpečení, ujistěte se, že všechny uživatelské účty na počítači silná hesla nebo nastavení ostrůvku izolované sítě pro ladění a ladit počítače před neoprávněným přístupem.  
   
-7.  Zavřete všechna okna.  
+7. Zavřete všechna okna.  
   
 ## <a name="see-also"></a>Viz také  
  [Nastavení a příprava ladicího programu](../debugger/debugger-settings-and-preparation.md)

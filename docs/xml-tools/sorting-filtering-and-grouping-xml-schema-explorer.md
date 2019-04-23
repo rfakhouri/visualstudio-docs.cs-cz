@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 200ac7f9a38a242d6140902374d477339747b9b4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 740fd46d453a6e6a51285d418374d036d83bc598
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55914003"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065023"
 ---
 # <a name="sorting-filtering-and-grouping-xml-schema-explorer"></a>Řazení, filtrování a seskupování (Průzkumník schémat XML)
 
@@ -23,41 +23,41 @@ Toto téma popisuje možnosti, které jsou k dispozici prostřednictvím **řaze
 
  Jsou k dispozici následující možnosti filtru. Ve výchozím nastavení **zobrazit obory názvů** a **zobrazit soubory schémat** jsou vybrané možnosti.
 
--   **Zobrazit obory názvů**.
+- **Zobrazit obory názvů**.
 
--   **Zobrazit soubory schémat**.
+- **Zobrazit soubory schémat**.
 
--   **Zobrazit tvůrce (pořadí/volba/all)**.
+- **Zobrazit tvůrce (pořadí/volba/all)**.
 
 ## <a name="sorting-options"></a>Možnosti řazení
 
  Jsou k dispozici následující možnosti řazení. Výchozí hodnota je **řazení podle typu**. **Řadit podle** možnosti se nevztahují na soubory a obory názvů.
 
--   **Seřadit podle typu**.
+- **Seřadit podle typu**.
 
--   **Seřadit podle názvu**.
+- **Seřadit podle názvu**.
 
--   **Zdokumentujte pořadí**.
+- **Zdokumentujte pořadí**.
 
 ### <a name="sort-by-type"></a>Seřadit podle typu
 
  Když **řazení podle typu** je vybraná možnost, jsou globální uzly seřazeny v uvedeném pořadí. Uzly jsou pak seřazená podle abecedy v rámci jednotlivých skupin.
 
-1.  `import` uzly.
+1. `import` uzly.
 
-2.  `include` uzly.
+2. `include` uzly.
 
-3.  `redefine` uzly.
+3. `redefine` uzly.
 
-4.  `attribute` uzly.
+4. `attribute` uzly.
 
-5.  `attributeGroup` uzly.
+5. `attributeGroup` uzly.
 
-6.  `complexType` uzly.
+6. `complexType` uzly.
 
-7.  `simpleType` uzly.
+7. `simpleType` uzly.
 
-8.  `element` uzly.
+8. `element` uzly.
 
 9. `group` uzly.
 
@@ -65,13 +65,13 @@ Toto téma popisuje možnosti, které jsou k dispozici prostřednictvím **řaze
 
  Když **seřadit podle názvu** je vybraná možnost, jsou globální uzly seřazeny v následujícím pořadí:
 
-1.  `import` uzly (v abecedním pořadí oborů názvů).
+1. `import` uzly (v abecedním pořadí oborů názvů).
 
-2.  `include` uzly (v abecedním pořadí podle `schemaLocation` atributy).
+2. `include` uzly (v abecedním pořadí podle `schemaLocation` atributy).
 
-3.  `redefine` uzly (v abecedním pořadí podle `schemaLocation` atributy).
+3. `redefine` uzly (v abecedním pořadí podle `schemaLocation` atributy).
 
-4.  Jiné globální uzly v abecedním pořadí.
+4. Jiné globální uzly v abecedním pořadí.
 
 ### <a name="document-order"></a>Pořadí dokumentů
 

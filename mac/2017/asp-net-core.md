@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 07/13/2017
 ms.assetid: 6E8B0C90-33D6-4546-8207-CE0787584565
 ms.custom: video
-ms.openlocfilehash: ee22f8d2055715a2ea64ebde473c8e491a724c25
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: ae4d824a4746889447650efdb4dada061b7c712b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59666895"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064762"
 ---
 # <a name="getting-started-with-aspnet-core"></a>Začínáme s ASP.NET Core
 
@@ -63,6 +63,7 @@ public static void Main(string[] args)
     host.Run();
 }
 ```
+
 Aplikace ASP.NET Core vytvoří webový server v jeho hlavní metoda konfigurací a spuštění hostitele prostřednictvím instance [ `WebHostBuilder` ](/aspnet/core/fundamentals/hosting). Tato Tvůrce poskytuje metody, které umožňují hostitele nakonfigurovat. V aplikaci šablony jsou použité následující konfigurace:
 
 * `UseKestrel`: Určuje, že Kestrel server budou používat aplikaci
@@ -104,8 +105,8 @@ public class Startup
 
 Tato třída při spuštění musí vždycky dodržovat následující pravidla:
 
- - Vždy musí být veřejné
- - Musí obsahovat dvě veřejné metody: `ConfigureServices` a `Configure`
+- Vždy musí být veřejné
+- Musí obsahovat dvě veřejné metody: `ConfigureServices` a `Configure`
 
 `ConfigureServices` Metoda definuje služby, které budou používat vaši aplikaci.
 

@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dabed6cb449d51564dafbcddb3a17ccea1cda374
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: e111b0d04b8e703a694917985a0559c05584e25b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56638163"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065503"
 ---
 # <a name="deploy-clickonce-applications-for-testing-and-production-servers-without-resigning"></a>Nasazení aplikací ClickOnce pro testování a produkční servery bez opětovného podpisu
 Tento článek popisuje funkce zavedené v rozhraní .NET Framework verze 3.5, která umožňuje nasazení aplikací ClickOnce z více umístění v síti bez opětovné podepsání nebo změna ClickOnce, manifesty ClickOnce.
@@ -34,9 +34,9 @@ Tento článek popisuje funkce zavedené v rozhraní .NET Framework verze 3.5, k
 
  Vývojáři třetích stran a nezávislé výrobce softwaru můžete vyjádřit výslovný souhlas k této funkci snadnější svým zákazníkům aktualizovat svoje aplikace. Tuto funkci můžete použít v následujících situacích:
 
--   Při aktualizaci aplikace, není při první instalaci aplikace.
+- Při aktualizaci aplikace, není při první instalaci aplikace.
 
--   Pokud existuje pouze jedna konfigurace aplikace na počítači. Například pokud aplikace je nakonfigurovaná tak, aby odkazoval na dvou různých databázích, nemůžete použít tuto funkci.
+- Pokud existuje pouze jedna konfigurace aplikace na počítači. Například pokud aplikace je nakonfigurovaná tak, aby odkazoval na dvou různých databázích, nemůžete použít tuto funkci.
 
 ## <a name="exclude-deploymentprovider-from-deployment-manifests"></a>Vyloučení deploymentProvider manifesty nasazení
  V rozhraní .NET Framework 2.0 a rozhraní .NET Framework 3.0, musí každá aplikace ClickOnce, která nainstaluje systém, hledá offline dostupnosti seznamu `deploymentProvider` v manifestu nasazení. `deploymentProvider` Se často označuje jako umístění aktualizace; je umístění, kde ClickOnce vyhledá aktualizace aplikace. Tento požadavek, spolu s potřebu vydavatelé aplikací k podepisování svých nasazení bylo obtížné zjišťovat společnosti k aktualizaci aplikace ClickOnce od dodavatele nebo jiné aplikace třetí strany. Také umožňuje složitější nasazení stejnou aplikaci z více míst ve stejné síti.

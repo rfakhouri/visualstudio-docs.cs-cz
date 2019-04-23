@@ -11,12 +11,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 640217b9ee9a8cb51ed11931d0d66b2c98e0a165
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f938e08d2bc9363be5e3f9e1ac247dea36f25a80
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54803406"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064827"
 ---
 # <a name="link-uml-model-updates-by-using-transactions"></a>Propojení aktualizací modelu UML pomocí transakcí
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,15 +62,15 @@ Při definování rozšíření do návrhářů UML v sadě Visual Studio, můž
   
  Všimněte si následujícího:  
   
--   Musí vždy zahrnovat `Commit()` na konci transakce. Pokud je transakce vyřazena bez potvrzení, transakce bude vrácena zpět. To znamená, že model se obnoví do stavu při zahájení transakce.  
+- Musí vždy zahrnovat `Commit()` na konci transakce. Pokud je transakce vyřazena bez potvrzení, transakce bude vrácena zpět. To znamená, že model se obnoví do stavu při zahájení transakce.  
   
--   Pokud dojde k výjimce, která není zachycena uvnitř transakce, transakce bude vrácena zpět. Je časté vzor k uzavření `using` transakce dovnitř bloku `try…catch` bloku.  
+- Pokud dojde k výjimce, která není zachycena uvnitř transakce, transakce bude vrácena zpět. Je časté vzor k uzavření `using` transakce dovnitř bloku `try…catch` bloku.  
   
--   Můžete vnořovat transakce.  
+- Můžete vnořovat transakce.  
   
--   Můžete zadat libovolný neprázdný název a `BeginTransaction()`.  
+- Můžete zadat libovolný neprázdný název a `BeginTransaction()`.  
   
--   Tyto transakcemi má vliv pouze Store modelu UML. Modelování transakci nemá vliv: proměnné, externí úložiště, jako jsou soubory a databáze, diagramy vrstev a modely kódu.  
+- Tyto transakcemi má vliv pouze Store modelu UML. Modelování transakci nemá vliv: proměnné, externí úložiště, jako jsou soubory a databáze, diagramy vrstev a modely kódu.  
   
 ## <a name="example"></a>Příklad  
   

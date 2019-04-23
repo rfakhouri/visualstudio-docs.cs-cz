@@ -11,12 +11,12 @@ ms.assetid: 33416226-9083-41b5-b153-10d2bf35c012
 caps.latest.revision: 41
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c288da9345435969f7843f753625ce5471bb1878
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 55c4ebc96d93d9b068c29d24727d40975518b1ef
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54776469"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60062825"
 ---
 # <a name="installing-an-isolated-shell-application"></a>Instalace aplikací izolovaného prostředí
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,13 +45,13 @@ K instalaci prostředí aplikace musíte provést následující kroky.
   
 #### <a name="to-prepare-a-shell-application-for-msi-deployment"></a>Příprava aplikace prostředí pro nasazení Instalační služby MSI  
   
-1.  Upravte každý soubor .vsixmanifest ve vašem řešení.  
+1. Upravte každý soubor .vsixmanifest ve vašem řešení.  
   
      V `Identifier` element, přidejte `InstalledByMSI` elementu a `SystemComponent` prvek a nastavte jejich hodnoty na `true`.  
   
      Tyto prvky zabránit pokusu o instalaci komponenty a uživatele z jejich odinstalace s použitím instalátor VSIX **rozšíření a aktualizace** dialogové okno.  
   
-2.  Pro každý projekt, který obsahuje VSIX manifest upravte úlohy sestavení do výstupního obsahu do umístění, ze kterého se nainstaluje vaše MSI. Ve výstupu sestavení obsahovat VSIX manifest, ale nevytvářejte soubor VSIX.  
+2. Pro každý projekt, který obsahuje VSIX manifest upravte úlohy sestavení do výstupního obsahu do umístění, ze kterého se nainstaluje vaše MSI. Ve výstupu sestavení obsahovat VSIX manifest, ale nevytvářejte soubor VSIX.  
   
 ## <a name="creating-an-msi-for-your-shell"></a>Vytváří se soubor MSI pro vaše prostředí  
  K vytvoření vašeho balíčku MSI, doporučujeme použít [sady nástrojů XML Instalační služby systému Windows](http://go.microsoft.com/fwlink/?LinkId=82720) protože nabízí větší flexibilitu než standardní projektu instalace.  
@@ -85,7 +85,7 @@ K instalaci prostředí aplikace musíte provést následující kroky.
   
 ##### <a name="to-set-the-layout-of-shell-components"></a>Nastavit rozložení součásti prostředí  
   
-1.  Vytvořit hierarchii `Directory` prvky představující všechny adresáře vytvořit v systému souborů na cílovém počítači, jak ukazuje následující příklad.  
+1. Vytvořit hierarchii `Directory` prvky představující všechny adresáře vytvořit v systému souborů na cílovém počítači, jak ukazuje následující příklad.  
   
     ```xml  
     <Directory Id="TARGETDIR" Name="SourceDir">  
@@ -105,7 +105,7 @@ K instalaci prostředí aplikace musíte provést následující kroky.
   
      Tyto adresáře jsou označovány `Id` při zadané soubory, které musí být nainstalována.  
   
-2.  Určete součásti, které prostředí a aplikace prostředí vyžaduje jako v následujícím příkladu.  
+2. Určete součásti, které prostředí a aplikace prostředí vyžaduje jako v následujícím příkladu.  
   
     > [!NOTE]
     >  Některé prvky mohou odkazovat na definice v jiných souborech WXS.  
@@ -123,7 +123,7 @@ K instalaci prostředí aplikace musíte provést následující kroky.
     </Feature>  
     ```  
   
-    1.  `ComponentRef` Element odkazuje na jiný soubor WXS, který označuje soubory, které vyžaduje aktuální komponenty. Například GeneralProfile má následující definice v HelpAbout.wxs.  
+    1. `ComponentRef` Element odkazuje na jiný soubor WXS, který označuje soubory, které vyžaduje aktuální komponenty. Například GeneralProfile má následující definice v HelpAbout.wxs.  
   
         ```xml  
         <Fragment Id="FragmentProfiles">  
@@ -139,7 +139,7 @@ K instalaci prostředí aplikace musíte provést následující kroky.
   
          `DirectoryRef` Element určuje, kde se tyto soubory přejděte v počítači uživatele. `Directory` Element určuje, že se nainstaluje do podadresáře a pro každou `File` element představuje soubor, který je sestaven nebo, který existuje v rámci tohoto řešení a identifikuje, ve kterém tento soubor můžete najít při vytvoření souboru Instalační služby MSI.  
   
-    2.  `ComponentGroupRef` Element odkazuje skupina jiných součástí (nebo komponenty a skupiny součástí). Například `ComponentGroupRef` pod proměnná je definovaná následujícím způsobem v Application.wxs.  
+    2. `ComponentGroupRef` Element odkazuje skupina jiných součástí (nebo komponenty a skupiny součástí). Například `ComponentGroupRef` pod proměnná je definovaná následujícím způsobem v Application.wxs.  
   
         ```xml  
         <ComponentGroup Id="ApplicationGroup">  
@@ -166,15 +166,15 @@ K instalaci prostředí aplikace musíte provést následující kroky.
   
 ##### <a name="to-integrate-registry-entries-into-the-msi"></a>K integraci položky registru do MSI  
   
-1.  V **přizpůsobení prostředí** složku, otevřete *ProjectName*. reg.  
+1. V **přizpůsobení prostředí** složku, otevřete *ProjectName*. reg.  
   
-2.  Nahraďte všechny výskyty $RootFolder$ token s cestou cílový adresář instalace.  
+2. Nahraďte všechny výskyty $RootFolder$ token s cestou cílový adresář instalace.  
   
-3.  Přidejte další položky registru, které vaše aplikace vyžaduje.  
+3. Přidejte další položky registru, které vaše aplikace vyžaduje.  
   
-4.  Otevřete ApplicationRegistry.wxs.  
+4. Otevřete ApplicationRegistry.wxs.  
   
-5.  Pro každou položku registru v *ProjectName*.reg, přidejte odpovídající blok registru, jako následující příklady ukazují.  
+5. Pro každou položku registru v *ProjectName*.reg, přidejte odpovídající blok registru, jako následující příklady ukazují.  
   
     |*ProjectName*.reg|ApplicationRegisty.wxs|  
     |-----------------------|----------------------------|  
@@ -186,24 +186,24 @@ K instalaci prostředí aplikace musíte provést následující kroky.
 ## <a name="creating-a-setup-bootstrapper"></a>Vytvoření nastavení zaváděcí nástroj  
  Dokončené MSI se nainstaluje jenom v případě, že všechny požadované součásti jsou nainstalována jako první. K usnadnění činnost koncového uživatele, vytvořte instalační program, který shromažďuje a nainstaluje všechny požadované součásti před instalací aplikace. Aby se zajistilo úspěšné instalaci, proveďte tyto akce:  
   
--   Vynuťte instalaci správcem.  
+- Vynuťte instalaci správcem.  
   
--   Zjištění, zda je nainstalována aplikace Visual Studio Shell (izolovaný režim).  
+- Zjištění, zda je nainstalována aplikace Visual Studio Shell (izolovaný režim).  
   
--   Spuštění prostředí pro jeden nebo oba instalační programy v pořadí.  
+- Spuštění prostředí pro jeden nebo oba instalační programy v pořadí.  
   
--   Zpracujte požadavky na restartování.  
+- Zpracujte požadavky na restartování.  
   
--   Spusťte vaše MSI.  
+- Spusťte vaše MSI.  
   
 ### <a name="enforcing-installation-by-administrator"></a>Vynucování instalace správcem  
  Tento postup je potřeba povolit instalační program pro přístup k požadované adresáře, jako je například \Program Files\\.  
   
 ##### <a name="to-enforce-installation-by-administrator"></a>Vynutit instalaci správcem  
   
-1.  Otevřete místní nabídku pro projekt instalace a klikněte na tlačítko **vlastnosti**.  
+1. Otevřete místní nabídku pro projekt instalace a klikněte na tlačítko **vlastnosti**.  
   
-2.  V části **konfigurační vlastnosti/Linkeru/Manifest soubor**, nastavte **úroveň spuštění nástroje Řízení uživatelských účtů** k **requireAdministrator**.  
+2. V části **konfigurační vlastnosti/Linkeru/Manifest soubor**, nastavte **úroveň spuštění nástroje Řízení uživatelských účtů** k **requireAdministrator**.  
   
      Tato vlastnost vloží atributu, který vyžaduje, aby program spustit jako správce do vloženého souboru manifestu.  
   
@@ -252,15 +252,15 @@ dwResult = ExecCmd("Vs_IsoShellLP.exe /norestart /q", TRUE);
   
  Ke zpracování se restartuje, proveďte tyto akce:  
   
--   Nastavení registru a při spuštění Windows pokračovat instalace.  
+- Nastavení registru a při spuštění Windows pokračovat instalace.  
   
--   Proveďte restart double zaváděcího nástroje.  
+- Proveďte restart double zaváděcího nástroje.  
   
--   Odstraňte klíč ResumeData prostředí Instalační služby.  
+- Odstraňte klíč ResumeData prostředí Instalační služby.  
   
--   Restartujte Windows.  
+- Restartujte Windows.  
   
--   Obnovení počáteční cesty MSI.  
+- Obnovení počáteční cesty MSI.  
   
 ### <a name="setting-the-registry-to-resume-setup-when-windows-starts"></a>Nastavení registru, aby při spuštění Windows pokračovat v instalaci  
  Klíč registru HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce\ spustí při spuštění systému s oprávněními správce a pak se vymažou. HKEY_CURRENT_USER obsahuje podobné klíč, ale běží v režimu normálního uživatele a není vhodná pro zařízení. Instalace může pokračovat vložením řetězcovou hodnotu v RunOnce klíč, který volá vaše instalační služby. Doporučujeme však volat instalační služba prostřednictvím **/restartuje** nebo podobně jako parametr, aby aplikaci oznámilo, že je obnovení místo spuštění. Můžete použít také parametry k označení, kde se v procesu instalace, což se hodí hlavně v zařízení, které mohou vyžadovat vícenásobné restartování.  

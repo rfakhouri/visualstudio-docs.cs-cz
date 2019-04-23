@@ -9,12 +9,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 149f9360569978cf3ec15fd60154ad6f1408362f
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 79f991954c1c54811496628576283c3c0b4330a2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59656593"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065106"
 ---
 # <a name="cannot-create-an-association-ltassociation-namegt---property-types-do-not-match"></a>Nelze vytvořit přidružení &lt;název přidružení&gt; – typy vlastností se neshodují.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,13 +27,13 @@ Nelze vytvořit přidružení \<název přidružení > – typy vlastností se n
   
 ### <a name="to-correct-this-error"></a>Oprava této chyby  
   
-1.  Zkontrolujte zprávy a poznamenejte si vlastnosti v zprávy.  
+1. Zkontrolujte zprávy a poznamenejte si vlastnosti v zprávy.  
   
-2.  Klikněte na tlačítko **OK** zavřete dialogové okno.  
+2. Klikněte na tlačítko **OK** zavřete dialogové okno.  
   
-3.  Zkontrolujte **vlastnosti přidružení** a vyberte vlastnosti stejného datového typu.  
+3. Zkontrolujte **vlastnosti přidružení** a vyberte vlastnosti stejného datového typu.  
   
-4.  Klikněte na **OK**.  
+4. Klikněte na **OK**.  
   
 ## <a name="see-also"></a>Viz také  
  [Postupy: Vytvoření přidružení (vztah) mezi třídy LINQ to SQL (O/R Designer)](../data-tools/how-to-create-an-association-relationship-between-linq-to-sql-classes-o-r-designer.md)   

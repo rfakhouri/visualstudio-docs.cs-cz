@@ -8,12 +8,12 @@ ms.assetid: 6832fe39-04d5-4d94-8a18-3e2730bad423
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c8142e8d08cc34d3574539c195eab3443717f55a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: fc0e9c9a8983d58b7b672be6c1cafb7360e25d28
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55935989"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60062337"
 ---
 # <a name="how-to-configure-aspnet-profiler-for-load-tests-using-test-settings-in-visual-studio"></a>Postupy: Konfigurace služby ASP.NET profiler pro zátěžové testy pomocí nastavení testů v sadě Visual Studio
 
@@ -35,26 +35,26 @@ Další informace najdete v tématu [jak: Vytvořit nastavení testu pro distrib
 
 Před provedením kroků v tomto postupu je nutné otevřít nastavení testů ze sady Visual Studio a vyberte **dat a diagnostiky** stránky.
 
-1.  Vyberte roli pro shromažďování dat profiler technologie ASP.NET.
+1. Vyberte roli pro shromažďování dat profiler technologie ASP.NET.
 
     > [!WARNING]
     > Tato role musí být webový server.
 
-2.  Vyberte **Profiler technologie ASP.NET** Povolit shromažďování dat profilování ASP.NET, a klikněte na tlačítko **konfigurovat**.
+2. Vyberte **Profiler technologie ASP.NET** Povolit shromažďování dat profilování ASP.NET, a klikněte na tlačítko **konfigurovat**.
 
      Zobrazí se dialogové okno Konfigurace shromažďování dat profilování ASP.NET.
 
-3.  V **vzorkovací frekvence Profiler**, zadejte hodnotu, která označuje, kolik procesoru nepřerušených hodinových cyklů čekat mezi pořizováním vzorků profilování technologie ASP.NET.
+3. V **vzorkovací frekvence Profiler**, zadejte hodnotu, která označuje, kolik procesoru nepřerušených hodinových cyklů čekat mezi pořizováním vzorků profilování technologie ASP.NET.
 
-4.  Chcete-li povolit profilaci interakce vrstev, vyberte **povolit profilaci interakce vrstev**.
+4. Chcete-li povolit profilaci interakce vrstev, vyberte **povolit profilaci interakce vrstev**.
 
      Profilování interakce vrstev počítá počet požadavků, které se odesílají do webového serveru pro každý artefakt (například *MyPage.aspx* nebo *CompanyLogo.gif*) a dobu obsloužení jednotlivých požadavků. Profilování interakce vrstev dále shromažďuje informace o tom, která připojení ADO.NET byla použita jako součást požadavku na stránku a kolik dotazů a volání uložené procedury bylo provedeno jako součást řešení této žádosti.
 
      Jsou shromažďovány dvě různé sady informací o časování:
 
-    -   Informace o časování (minimum, maximum, průměr a součet) pro obsluhu každého webového požadavku.
+    - Informace o časování (minimum, maximum, průměr a součet) pro obsluhu každého webového požadavku.
 
-    -   Informace o časování (minimum, maximum, průměr a součet) spuštění každého dotazu.
+    - Informace o časování (minimum, maximum, průměr a součet) spuštění každého dotazu.
 
 Pomocí technologie ASP.NET profiler diagnostických dat adaptéru nakonfigurované v nastavení testu lze shromažďovat data ve webové aplikaci ASP.NET profilování technologie ASP.NET.
 

@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f3f937b819628414430104782459da65d350dd69
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: e329631f0bdeb79a068e4a791158f94cec3904ee
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56597709"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061928"
 ---
 # <a name="outlook-object-model-overview"></a>Přehled modelu objektů aplikace Outlook
   Vývoj doplňků VSTO pro aplikaci Microsoft Office Outlook, můžete pracovat s objekty, které jsou k dispozici v modelu objektů aplikace Outlook. Model objektů aplikace Outlook obsahuje třídy a rozhraní, které představují položky v uživatelském rozhraní. Například <xref:Microsoft.Office.Interop.Outlook.Application> objekt představuje celé aplikace <xref:Microsoft.Office.Interop.Outlook.Folder> objekt představuje složku, která obsahuje e-mailové zprávy nebo jiné položky a <xref:Microsoft.Office.Interop.Outlook.MailItem> objekt představuje e-mailové zprávy.
@@ -37,21 +37,21 @@ ms.locfileid: "56597709"
 ## <a name="access-objects-in-an-outlook-project"></a>Přístup k objektům v projektu aplikace Outlook
  Aplikace Outlook obsahuje mnoho objektů, se kterými můžete pracovat. Objektový model efektivně používat, byste měli znát následující objekty nejvyšší úrovně:
 
--   <xref:Microsoft.Office.Interop.Outlook.Application>
+- <xref:Microsoft.Office.Interop.Outlook.Application>
 
--   <xref:Microsoft.Office.Interop.Outlook.Explorer>
+- <xref:Microsoft.Office.Interop.Outlook.Explorer>
 
--   <xref:Microsoft.Office.Interop.Outlook.Inspector>
+- <xref:Microsoft.Office.Interop.Outlook.Inspector>
 
--   <xref:Microsoft.Office.Interop.Outlook.Folder>
+- <xref:Microsoft.Office.Interop.Outlook.Folder>
 
--   <xref:Microsoft.Office.Interop.Outlook.MailItem>
+- <xref:Microsoft.Office.Interop.Outlook.MailItem>
 
--   <xref:Microsoft.Office.Interop.Outlook.AppointmentItem>
+- <xref:Microsoft.Office.Interop.Outlook.AppointmentItem>
 
--   <xref:Microsoft.Office.Interop.Outlook.TaskItem>
+- <xref:Microsoft.Office.Interop.Outlook.TaskItem>
 
--   <xref:Microsoft.Office.Interop.Outlook.ContactItem>
+- <xref:Microsoft.Office.Interop.Outlook.ContactItem>
 
 ### <a name="application-object"></a>Objekt aplikace
  <xref:Microsoft.Office.Interop.Outlook.Application> Objekt představuje aplikaci Outlook a je to objekt nejvyšší úrovně v modelu objektů aplikace Outlook. Některé z vašich nejdůležitějších členům tohoto objektu patří:
@@ -72,22 +72,22 @@ ms.locfileid: "56597709"
 
  Chcete-li získat <xref:Microsoft.Office.Interop.Outlook.Explorer> objektu, proveďte jednu z následujících akcí:
 
--   Použití <xref:Microsoft.Office.Interop.Outlook._Application.Explorers%2A> vlastnost <xref:Microsoft.Office.Interop.Outlook.Application> objektu pro přístup k veškerému <xref:Microsoft.Office.Interop.Outlook.Explorer> objekty v aplikaci Outlook.
+- Použití <xref:Microsoft.Office.Interop.Outlook._Application.Explorers%2A> vlastnost <xref:Microsoft.Office.Interop.Outlook.Application> objektu pro přístup k veškerému <xref:Microsoft.Office.Interop.Outlook.Explorer> objekty v aplikaci Outlook.
 
--   Použití <xref:Microsoft.Office.Interop.Outlook._Application.ActiveExplorer%2A> metodu <xref:Microsoft.Office.Interop.Outlook.Application> můžete získat <xref:Microsoft.Office.Interop.Outlook.Explorer> , že má právě fokus.
+- Použití <xref:Microsoft.Office.Interop.Outlook._Application.ActiveExplorer%2A> metodu <xref:Microsoft.Office.Interop.Outlook.Application> můžete získat <xref:Microsoft.Office.Interop.Outlook.Explorer> , že má právě fokus.
 
--   Použití `GetExplorer` metodu <xref:Microsoft.Office.Interop.Outlook.Folder> můžete získat <xref:Microsoft.Office.Interop.Outlook.Explorer> pro aktuální složku.
+- Použití `GetExplorer` metodu <xref:Microsoft.Office.Interop.Outlook.Folder> můžete získat <xref:Microsoft.Office.Interop.Outlook.Explorer> pro aktuální složku.
 
 ### <a name="inspector-object"></a>Kontrola objektu
  <xref:Microsoft.Office.Interop.Outlook.Inspector> Objekt představuje okno, které zobrazí konkrétní položce například e-mailové zprávy, úkolu nebo události. <xref:Microsoft.Office.Interop.Outlook.Inspector> Objekt obsahuje metody a vlastnosti, které vám umožní upravit v okně a události, které jsou vyvolány při změně okna.
 
  Chcete-li získat <xref:Microsoft.Office.Interop.Outlook.Inspector> objektu, proveďte jednu z následujících akcí:
 
--   Použití <xref:Microsoft.Office.Interop.Outlook._Application.Inspectors%2A> vlastnost <xref:Microsoft.Office.Interop.Outlook.Application> objektu pro přístup k veškerému <xref:Microsoft.Office.Interop.Outlook.Inspector> objekty v aplikaci Outlook.
+- Použití <xref:Microsoft.Office.Interop.Outlook._Application.Inspectors%2A> vlastnost <xref:Microsoft.Office.Interop.Outlook.Application> objektu pro přístup k veškerému <xref:Microsoft.Office.Interop.Outlook.Inspector> objekty v aplikaci Outlook.
 
--   Použití <xref:Microsoft.Office.Interop.Outlook._Application.ActiveInspector%2A> metodu <xref:Microsoft.Office.Interop.Outlook.Application> můžete získat <xref:Microsoft.Office.Interop.Outlook.Inspector> , že má právě fokus.
+- Použití <xref:Microsoft.Office.Interop.Outlook._Application.ActiveInspector%2A> metodu <xref:Microsoft.Office.Interop.Outlook.Application> můžete získat <xref:Microsoft.Office.Interop.Outlook.Inspector> , že má právě fokus.
 
--   Použití `GetInspector` metoda konkrétní položky, jako například <xref:Microsoft.Office.Interop.Outlook.MailItem> nebo <xref:Microsoft.Office.Interop.Outlook.AppointmentItem>, k načtení Inspector, který je spojen s ním.
+- Použití `GetInspector` metoda konkrétní položky, jako například <xref:Microsoft.Office.Interop.Outlook.MailItem> nebo <xref:Microsoft.Office.Interop.Outlook.AppointmentItem>, k načtení Inspector, který je spojen s ním.
 
 ### <a name="folder-object"></a>Objekt složky
  <xref:Microsoft.Office.Interop.Outlook.Folder> Objekt představuje složku, která obsahuje e-mailové zprávy, kontakty, úkoly a další položky. Aplikace Outlook poskytuje 16 výchozí <xref:Microsoft.Office.Interop.Outlook.Folder> objekty.
@@ -118,7 +118,7 @@ ms.locfileid: "56597709"
 
  Příklad, který ukazuje, jak vytvořit nový kontakt, naleznete v tématu [jak: Přidávání položky ke kontaktům aplikace Outlook prostřednictvím kódu programu](../vsto/how-to-programmatically-add-an-entry-to-outlook-contacts.md). Příklad, který ukazuje, jak vyhledat existující kontakt, naleznete v tématu [jak: Hledání konkrétního kontaktu prostřednictvím kódu programu](../vsto/how-to-programmatically-search-for-a-specific-contact.md).
 
-##  <a name="refdoc"></a> Použijte dokumentaci modelu objektů aplikace Outlook
+## <a name="refdoc"></a> Použijte dokumentaci modelu objektů aplikace Outlook
  Podrobnější informace o modelu objektů aplikace Outlook mohou odkazovat na primární sestavení vzájemné spolupráce (PIA) odkaz na aplikaci Outlook a referenční dokumentace objektového modelu VBA.
 
 ### <a name="primary-interop-assembly-reference"></a>Odkaz na primární spolupracující sestavení

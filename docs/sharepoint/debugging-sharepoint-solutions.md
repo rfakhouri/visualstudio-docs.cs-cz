@@ -15,27 +15,27 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 57133b97ede20c0ed28eecbec6e3cea964f9558a
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: cffed1a3905ca1a1aceb9d2cfdcf4abc89f83574
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57873107"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060797"
 ---
 # <a name="debug-sharepoint-solutions"></a>Ladění řešení služby SharePoint
   Můžete ladit řešení služby SharePoint pomocí [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ladicího programu. Při spuštění ladění, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] nasadí soubory projektu pro SharePoint server a instanci webu služby SharePoint otevře ve webovém prohlížeči. Následující části popisují, jak ladit aplikace SharePoint v [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
--   [Povolit ladění](#enable-debugging)
+- [Povolit ladění](#enable-debugging)
 
--   [Proces nasazení a ladění F5](#f5-debug-and-deployment-process)
+- [Proces nasazení a ladění F5](#f5-debug-and-deployment-process)
 
--   [Funkcí projektu SharePoint](#sharepoint-project-features)
+- [Funkcí projektu SharePoint](#sharepoint-project-features)
 
--   [Ladění pracovních postupů](#debug-workflows)
+- [Ladění pracovních postupů](#debug-workflows)
 
--   [Ladění přijímačů událostí funkce](#debug-feature-event-receivers)
+- [Ladění přijímačů událostí funkce](#debug-feature-event-receivers)
 
--   [Povolit ehanced ladicí informace](#enable-enhanced-debugging-information)
+- [Povolit ehanced ladicí informace](#enable-enhanced-debugging-information)
 
 ## <a name="enable-debugging"></a>Povolení ladění
  Při prvním ladění řešení služby SharePoint v [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], dialogové okno vás upozorní, že v souboru web.config není nakonfigurována pro povolení ladění. (V souboru web.config se vytvoří při instalaci serveru SharePoint. Další informace najdete v tématu [práce se soubory Web.config](http://go.microsoft.com/fwlink/?LinkID=149266).) Dialogové okno nabízí možnost buď spuštění projektu bez ladění nebo upravte soubor web.config pro povolení ladění. Pokud se rozhodnete první možnost, projekt běží normálně. Pokud se rozhodnete druhou možnost, v souboru web.config nastaven na:
@@ -77,11 +77,11 @@ ms.locfileid: "57873107"
 
  Chcete-li změny a zakázat ladění, změňte následující [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] v souboru web.config:
 
--   Vypnout zásobník volání (`CallStack="false"`)
+- Vypnout zásobník volání (`CallStack="false"`)
 
--   Povolit vlastní chyby v [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] (`<customErrors mode="On" />`)
+- Povolit vlastní chyby v [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] (`<customErrors mode="On" />`)
 
--   Zakázat ladění kompilace (`<compilation debug="false">`)
+- Zakázat ladění kompilace (`<compilation debug="false">`)
 
 ## <a name="f5-debug-and-deployment-process"></a>Proces nasazení a ladění F5
  Při spuštění projektu služby SharePoint v režimu ladění, procesu nasazení Sharepointu provádí následující úlohy:

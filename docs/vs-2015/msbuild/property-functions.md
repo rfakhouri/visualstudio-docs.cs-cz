@@ -11,12 +11,12 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8bcb8aadc2fb2a2f836fccde56e283b38cbc213d
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 85fb100e09dd61e836404ecf98f8f7292ff2ee86
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649235"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065178"
 ---
 # <a name="property-functions"></a>Funkce vlastností
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,45 +27,45 @@ V rozhraní .NET Framework verze 4 a 4.5 lze použít funkce vlastností k vyhod
   
  **V tomto tématu:**  
   
--   [Syntaxe funkce vlastností](#BKMK_Syntax)  
+- [Syntaxe funkce vlastností](#BKMK_Syntax)  
   
-    -   [Funkce vlastností řetězce](#BKMK_String)  
+    - [Funkce vlastností řetězce](#BKMK_String)  
   
-    -   [Funkce statických vlastností](#BKMK_Static)  
+    - [Funkce statických vlastností](#BKMK_Static)  
   
-    -   [Volání metody Instance ve statické vlastnosti](#BKMK_InstanceMethods)  
+    - [Volání metody Instance ve statické vlastnosti](#BKMK_InstanceMethods)  
   
-    -   [MSBuild Property Functions](#BKMK_PropertyFunctions)  
+    - [MSBuild Property Functions](#BKMK_PropertyFunctions)  
   
--   [Vnořené vlastnosti funkce](#BKMK_Nested)  
+- [Vnořené vlastnosti funkce](#BKMK_Nested)  
   
--   [MSBuild DoesTaskHostExist](#BKMK_DoesTaskHostExist)  
+- [MSBuild DoesTaskHostExist](#BKMK_DoesTaskHostExist)  
   
--   [MSBuild GetDirectoryNameOfFileAbove](#BKMK_GetDirectoryNameOfFileAbove)  
+- [MSBuild GetDirectoryNameOfFileAbove](#BKMK_GetDirectoryNameOfFileAbove)  
   
--   [MSBuild GetRegistryValue](#BKMK_GetRegistryValue)  
+- [MSBuild GetRegistryValue](#BKMK_GetRegistryValue)  
   
--   [MSBuild GetRegistryValueFromView](#BKMK_GetRegistryValueFromView)  
+- [MSBuild GetRegistryValueFromView](#BKMK_GetRegistryValueFromView)  
   
--   [MSBuild MakeRelative](#BKMK_MakeRelative)  
+- [MSBuild MakeRelative](#BKMK_MakeRelative)  
   
--   [MSBuild ValueOrDefault](#BKMK_ValueOrDefault)  
+- [MSBuild ValueOrDefault](#BKMK_ValueOrDefault)  
   
-##  <a name="BKMK_Syntax"></a> Syntaxe funkce vlastností  
+## <a name="BKMK_Syntax"></a> Syntaxe funkce vlastností  
  Toto jsou tři druhy vlastnost funkce. Každá funkce má odlišnou syntaxi:  
   
--   Funkce vlastností řetězců (instance)  
+- Funkce vlastností řetězců (instance)  
   
--   Funkce statických vlastností  
+- Funkce statických vlastností  
   
--   Funkce vlastností MSBuild  
+- Funkce vlastností MSBuild  
   
-###  <a name="BKMK_String"></a> Funkce vlastností řetězce  
+### <a name="BKMK_String"></a> Funkce vlastností řetězce  
  Všechny hodnoty vlastností sestavení jsou jenom řetězcové hodnoty. Provozovat na jakoukoli hodnotu vlastnosti můžete použít metody řetězců (instance). Název jednotky (prvních tří znaků) může například extrahovat z vlastnosti sestavení, který představuje úplnou cestu pomocí tohoto kódu:  
   
  `$(ProjectOutputFolder.Substring(0,3))`  
   
-###  <a name="BKMK_Static"></a> Funkce statických vlastností  
+### <a name="BKMK_Static"></a> Funkce statických vlastností  
  Ve vašem skriptu sestavení můžete přistupovat statické vlastnosti a metody mnoha systémových tříd. Chcete-li získat hodnotu statická vlastnost, použijte následující syntaxi, kde *třídy* je název třídy systému a *vlastnost* je název vlastnosti.  
   
  `$([Class]::Property)`  
@@ -166,7 +166,7 @@ V rozhraní .NET Framework verze 4 a 4.5 lze použít funkce vlastností k vyhod
   
 - System.IO.File::ReadAllText  
   
-###  <a name="BKMK_InstanceMethods"></a> Volání metody Instance ve statické vlastnosti  
+### <a name="BKMK_InstanceMethods"></a> Volání metody Instance ve statické vlastnosti  
  Pokud přistupujete statickou vlastnost, která vrací instanci objektu, můžete vyvolat metody instance tohoto objektu. Chcete-li vyvolat metodu instance, použijte následující syntaxi, kde *třídy* je název třídy systému *vlastnost* je název vlastnosti, *– metoda* je název Metoda, a *(parametry)* je seznam parametrů pro metodu:  
   
  `$([Class]::Property.Method(Parameters))`  
@@ -177,7 +177,7 @@ V rozhraní .NET Framework verze 4 a 4.5 lze použít funkce vlastností k vyhod
   
  `<Today>$([System.DateTime]::Now.ToString("yyyy.MM.dd"))</Today>`  
   
-###  <a name="BKMK_PropertyFunctions"></a> Funkce vlastností MSBuild  
+### <a name="BKMK_PropertyFunctions"></a> Funkce vlastností MSBuild  
  Několik statických metod v sestavení je přístupná poskytnout aritmetický bitový logický a podporu řídicí znak. Tyto metody přistupujete pomocí následující syntaxe, kde *metoda* je název metody a *parametry* je seznam parametrů pro metodu.  
   
  `$([MSBuild]::Method(Parameters))`  
@@ -207,7 +207,7 @@ V rozhraní .NET Framework verze 4 a 4.5 lze použít funkce vlastností k vyhod
 |int BitwiseXor (int první, int sekundu)|Provedení bitové operace `XOR` prvního a druhého (první ^ druhé).|  
 |int BitwiseNot(int first)|Provedení bitové operace `NOT` (~ první).|  
   
-##  <a name="BKMK_Nested"></a> Vnořené vlastnosti funkce  
+## <a name="BKMK_Nested"></a> Vnořené vlastnosti funkce  
  Můžete kombinovat funkce vlastností formuláře složitější funguje, jak ukazuje následující příklad.  
   
  `$([MSBuild]::BitwiseAnd(32,   $([System.IO.File]::GetAttributes(tempFile))))`  
@@ -216,7 +216,7 @@ V rozhraní .NET Framework verze 4 a 4.5 lze použít funkce vlastností k vyhod
   
  Vnořené vlastnosti funkce může také zobrazit metadata. Další informace najdete v tématu [dávkování](../msbuild/msbuild-batching.md).  
   
-##  <a name="BKMK_DoesTaskHostExist"></a> MSBuild DoesTaskHostExist  
+## <a name="BKMK_DoesTaskHostExist"></a> MSBuild DoesTaskHostExist  
  `DoesTaskHostExist` Vlastnost funkce v nástroji MSBuild vrátí, zda je hostitel úloh aktuálně nainstalované pro zadané hodnoty modulu runtime a architektury.  
   
  Tato vlastnost funkce má následující syntaxi:  
@@ -225,7 +225,7 @@ V rozhraní .NET Framework verze 4 a 4.5 lze použít funkce vlastností k vyhod
 $[MSBuild]::DoesTaskHostExist(string theRuntime, string theArchitecture)  
 ```  
   
-##  <a name="BKMK_GetDirectoryNameOfFileAbove"></a> MSBuild GetDirectoryNameOfFileAbove  
+## <a name="BKMK_GetDirectoryNameOfFileAbove"></a> MSBuild GetDirectoryNameOfFileAbove  
  MSBuild `GetDirectoryNameOfFileAbove` vlastnost funkce hledá soubor v adresářích nad aktuálního adresáře v cestě.  
   
  Tato vlastnost funkce má následující syntaxi:  
@@ -240,7 +240,7 @@ $[MSBuild]::GetDirectoryNameOfFileAbove(string ThePath, string TheFile)
 <Import Project="$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory), EnlistmentInfo.props))\EnlistmentInfo.props" Condition=" '$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory), EnlistmentInfo.props))' != '' " />  
 ```  
   
-##  <a name="BKMK_GetRegistryValue"></a> MSBuild GetRegistryValue  
+## <a name="BKMK_GetRegistryValue"></a> MSBuild GetRegistryValue  
  MSBuild `GetRegistryValue` vlastnost funkce vrací hodnotu klíče registru. Tato funkce přebírá dva argumenty, název klíče a název hodnoty a vrátí hodnotu z registru. Pokud nezadáte název hodnoty, vrátí se výchozí hodnota.  
   
  Následující příklady ukazují, jak tato funkce slouží:  
@@ -252,7 +252,7 @@ $([MSBuild]::GetRegistryValue(`HKEY_LOCAL_MACHINE\SOFTWARE\(SampleName)`, `(Samp
   
 ```  
   
-##  <a name="BKMK_GetRegistryValueFromView"></a> MSBuild GetRegistryValueFromView  
+## <a name="BKMK_GetRegistryValueFromView"></a> MSBuild GetRegistryValueFromView  
  MSBuild `GetRegistryValueFromView` vlastnost funkce získá data registru systému daný klíč registru, hodnotu a jeden nebo více seřazené registru zobrazení. Klíče a hodnoty budou prohledány v každém zobrazení registru v pořadí, dokud se nenachází.  
   
  Syntaxe pro tuto funkci vlastnost je:  
@@ -277,7 +277,7 @@ $([MSBuild]::GetRegistryValue(`HKEY_LOCAL_MACHINE\SOFTWARE\(SampleName)`, `(Samp
   
  získá data SLRuntimeInstallPath ReferenceAssemblies klíče, nejprve v 64bitovém registru zobrazení a poté v zobrazení 32bitového registru.  
   
-##  <a name="BKMK_MakeRelative"></a> MSBuild MakeRelative  
+## <a name="BKMK_MakeRelative"></a> MSBuild MakeRelative  
  MSBuild `MakeRelative` vlastnost funkce vrátí relativní cesta druhý cestu relativní vzhledem k první cesta. Každá cesta může být soubor nebo složku.  
   
  Tato vlastnost funkce má následující syntaxi:  
@@ -306,7 +306,7 @@ Output:
 -->  
 ```  
   
-##  <a name="BKMK_ValueOrDefault"></a> MSBuild ValueOrDefault  
+## <a name="BKMK_ValueOrDefault"></a> MSBuild ValueOrDefault  
  MSBuild `ValueOrDefault` vlastnost funkce vrátí první argument, pokud má hodnotu null nebo prázdný. Pokud první argument je null nebo prázdný, funkce vrátí druhý argument.  
   
  Následující příklad ukazuje, jak tuto funkci použít.  

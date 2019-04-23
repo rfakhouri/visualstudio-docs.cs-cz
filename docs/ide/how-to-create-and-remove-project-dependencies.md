@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 476e72e50ac796412fbeef1c180a3340764fb121
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 14c31acc336818a8846d2ddf7981f64e045f68e8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55907657"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60062149"
 ---
 # <a name="how-to-create-and-remove-project-dependencies"></a>Postupy: Vytváření a odebírání závislostí projektu
 
@@ -47,18 +47,18 @@ Při sestavování řešení, které obsahuje více projektů, může být nezby
 
 ## <a name="to-remove-dependencies-from-projects"></a>Chcete-li odebrat závislosti z projektů
 
-1.  V **Průzkumníka řešení**, vyberte projekt.
+1. V **Průzkumníka řešení**, vyberte projekt.
 
-2.  Na **projektu** nabídce zvolte **závislosti projektu**.
+2. Na **projektu** nabídce zvolte **závislosti projektu**.
 
      **Závislosti projektu** zobrazí se dialogové okno.
 
     > [!NOTE]
     > **Závislosti projektu** možnost dostupná jenom v řešení s více než jeden projekt.
 
-3.  Na **závislosti** kartu, vyberte projekt z **projektu** rozevírací nabídky.
+3. Na **závislosti** kartu, vyberte projekt z **projektu** rozevírací nabídky.
 
-4.  V **závisí na** pole, zrušte zaškrtnutí políček vedle jiné projekty, které už nejsou závislosti tohoto projektu.
+4. V **závisí na** pole, zrušte zaškrtnutí políček vedle jiné projekty, které už nejsou závislosti tohoto projektu.
 
 ## <a name="see-also"></a>Viz také:
 

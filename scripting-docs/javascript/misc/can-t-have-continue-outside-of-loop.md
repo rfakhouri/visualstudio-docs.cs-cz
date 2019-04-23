@@ -14,35 +14,35 @@ ms.assetid: d2d95259-b2bc-4069-9876-60c30ad600a3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9b0356e524228e22def9b17dd134e3e011185203
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 421cc23fb807a571b2b36f5f1def5df46a99492b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841101"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064801"
 ---
 # <a name="cant-have-continue-outside-of-loop"></a>Příkaz 'continue' nemůže být uveden mimo smyčku
 Pokusili jste se použít **pokračovat** příkaz mimo smyčku. **Pokračovat** příkaz se dá použít jenom v těle a:  
   
--   `do-while` smyčky,  
+- `do-while` smyčky,  
   
--   `while` smyčky,  
+- `while` smyčky,  
   
--   **pro** smyčku,  
+- **pro** smyčku,  
   
--   **pro/in** smyčky.  
+- **pro/in** smyčky.  
   
 ### <a name="to-correct-this-error"></a>Oprava této chyby  
   
--   Ujistěte se, **pokračovat** příkazu se zobrazí v těle a:  
+- Ujistěte se, **pokračovat** příkazu se zobrazí v těle a:  
   
-    -   `do-while` smyčky,  
+    - `do-while` smyčky,  
   
-    -   `while` smyčky,  
+    - `while` smyčky,  
   
-    -   **pro** smyčku,  
+    - **pro** smyčku,  
   
-    -   **pro/in** smyčky.  
+    - **pro/in** smyčky.  
   
 ## <a name="see-also"></a>Viz také  
  [Continue – příkaz](../../javascript/reference/continue-statement-javascript.md)   

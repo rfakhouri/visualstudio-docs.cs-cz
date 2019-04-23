@@ -17,12 +17,12 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 38ea7865d625e2d5a04591848ecc7c3375d654f7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 30bb4050399bf7a6d9120f7e5454b26ce505af35
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54783885"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061551"
 ---
 # <a name="how-to-specify-a-start-menu-name-for-a-clickonce-application"></a>Postupy: Určení názvu úvodní nabídky pro aplikaci ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,17 +37,17 @@ Když [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikace se nainsta
   
 ### <a name="to-specify-a-start-menu-name"></a>K určení názvu úvodní nabídky  
   
-1.  S projekt vybraný v **Průzkumníka řešení**na **projektu** nabídky, klikněte na tlačítko **vlastnosti**.  
+1. S projekt vybraný v **Průzkumníka řešení**na **projektu** nabídky, klikněte na tlačítko **vlastnosti**.  
   
-2.  Klikněte na tlačítko **publikovat** kartu.  
+2. Klikněte na tlačítko **publikovat** kartu.  
   
-3.  Klikněte na tlačítko **možnosti** tlačítko Otevřít **možnosti publikování** dialogové okno.  
+3. Klikněte na tlačítko **možnosti** tlačítko Otevřít **možnosti publikování** dialogové okno.  
   
-4.  Klikněte na tlačítko **popis**.  
+4. Klikněte na tlačítko **popis**.  
   
-5.  V **možnosti publikování** dialogového okna zadejte název, který má být zobrazen v **název produktu**.  
+5. V **možnosti publikování** dialogového okna zadejte název, který má být zobrazen v **název produktu**.  
   
-6.  Volitelně můžete zadat název vydavatele v **název vydavatele**.  
+6. Volitelně můžete zadat název vydavatele v **název vydavatele**.  
   
 ## <a name="see-also"></a>Viz také  
  [Publikování aplikací ClickOnce](../deployment/publishing-clickonce-applications.md)   

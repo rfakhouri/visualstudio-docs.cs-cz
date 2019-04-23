@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: de77349ec3e8ddc4fd0b4716bc39bd84024d981c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e75a732ddc9c56e7305e4ebbfec6a188fb6df2bb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942099"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60062071"
 ---
 # Postupy: Hledání témat v obsahu
 
@@ -33,9 +33,9 @@ V **obsah** kartu, můžete použít obsah (TOC) k nalezení informací o. Obsah
 
 Můžete filtrovat-li zúžit rozsah témat, která se zobrazí v obsahu **obsah** kartu. Zobrazí v seznamu jenom v případě, že obsahují kořen termínu, který zadáte. Například pokud zadáte "problém" jako filtr, pouze produkty, které obsahují text "problém" nebo "problém" zobrazí. Uzly, jejichž nadpisy neobsahují daný výraz, jsou sbaleny do jednoho uzlu se třemi tečkami (**...** ).
 
-1.  Zvolte **obsah** kartu.
+1. Zvolte **obsah** kartu.
 
-2.  V **filtrovat obsahy** text zadejte termín.
+2. V **filtrovat obsahy** text zadejte termín.
 
 > [!NOTE]
 > Pokud filtru trvá dlouhou dobu spuštění, můžete zobrazit výsledky rychleji pomocí `title:` operátoru pro rozšířené hledání.
@@ -44,9 +44,9 @@ Můžete filtrovat-li zúžit rozsah témat, která se zobrazí v obsahu **obsah
 
 Pokud jste otevřeli téma pomocí rejstříku nebo funkcí fulltextového vyhledávání, můžete určit, kde je v tomto tématu v obsahu pomocí synchronizace obsahu s oknem tématu.
 
-1.  Zobrazte téma.
+1. Zobrazte téma.
 
-2.  Klikněte na tlačítko **zobrazit téma v obsahu** tlačítko na panelu nástrojů nebo stisknete klávesu **Ctrl**+**S**.
+2. Klikněte na tlačítko **zobrazit téma v obsahu** tlačítko na panelu nástrojů nebo stisknete klávesu **Ctrl**+**S**.
 
      **Obsah** kartě se otevře a zobrazí se umístění tématu v obsahu.
 

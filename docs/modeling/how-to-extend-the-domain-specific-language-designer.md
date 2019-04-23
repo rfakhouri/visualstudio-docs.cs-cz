@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a5343fc177afce6baa6d9f4727d118606cc1b57
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: 85a4356837180d13428acf34636f28cca668a423
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58415964"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063150"
 ---
 # <a name="how-to-extend-the-domain-specific-language-designer"></a>Postupy: Rozšíření Návrháře DSL
 
@@ -26,23 +26,23 @@ Nastavení, která obsahuje kód vaše rozšíření projektu a projekt VSIX, kt
 
 ### <a name="to-create-a-dsl-designer-extension-solution"></a>K vytvoření řešení rozšíření návrháře DSL
 
-1.  Vytvořte nový projekt pomocí **knihovny tříd** šablony projektu. Tento projekt bude obsahovat kódu rozšíření.
+1. Vytvořte nový projekt pomocí **knihovny tříd** šablony projektu. Tento projekt bude obsahovat kódu rozšíření.
 
-2.  Vytvořte nový **projekt VSIX** projektu.
+2. Vytvořte nový **projekt VSIX** projektu.
 
      Vyberte **přidat do řešení**.
 
      *Source.extension.vsixmanifest* se otevře v editoru manifestu VSIX.
 
-3.  Nad pole obsahu, klikněte na tlačítko **přidat obsah**.
+3. Nad pole obsahu, klikněte na tlačítko **přidat obsah**.
 
-4.  V **přidat obsah** dialogové okno, nastavte **vyberte typ obsahu** k **Komponenta MEF**a nastavte **projektu** do projektu knihovny tříd.
+4. V **přidat obsah** dialogové okno, nastavte **vyberte typ obsahu** k **Komponenta MEF**a nastavte **projektu** do projektu knihovny tříd.
 
-5.  Klikněte na tlačítko **vybrat vydání** a ujistěte se, že **Visual Studio Enterprise** je zaškrtnuté políčko.
+5. Klikněte na tlačítko **vybrat vydání** a ujistěte se, že **Visual Studio Enterprise** je zaškrtnuté políčko.
 
-6.  Ujistěte se, že projekt VSIX je projekt při spuštění řešení.
+6. Ujistěte se, že projekt VSIX je projekt při spuštění řešení.
 
-7.  V projektu knihovny tříd přidejte odkazy na následující sestavení:
+7. V projektu knihovny tříd přidejte odkazy na následující sestavení:
 
      Microsoft.VisualStudio.CoreUtility
 
@@ -68,17 +68,17 @@ Chcete-li testovat žádný rozšíření v tomto tématu, sestavte a spusťte �
 
 Pokud chcete nasadit rozšíření do hlavní sady Visual Studio a na jiné počítače, postupujte takto:
 
-1.  V projektu VSIX v přihrádce najít instalační soubor VSIX\\*\*\\\*.VSIX
+1. V projektu VSIX v přihrádce najít instalační soubor VSIX\\*\*\\\*.VSIX
 
-2.  Zkopírujte tento soubor do cílového počítače a v Průzkumníku Windows (nebo Průzkumníka souborů), poklepejte na něj.
+2. Zkopírujte tento soubor do cílového počítače a v Průzkumníku Windows (nebo Průzkumníka souborů), poklepejte na něj.
 
      Správce rozšíření sady Visual Studio otevře potvrďte, že je nainstalovaná rozšíření.
 
 Toto rozšíření odinstalovat, postupujte podle těchto kroků:
 
-1.  V sadě Visual Studio na **nástroje** nabídky, klikněte na tlačítko **Správce rozšíření**.
+1. V sadě Visual Studio na **nástroje** nabídky, klikněte na tlačítko **Správce rozšíření**.
 
-2.  Vyberte požadované rozšíření a odstranit ji.
+2. Vyberte požadované rozšíření a odstranit ji.
 
 ## <a name="add-a-shortcut-menu-command"></a>Přidat příkaz místní nabídky
 

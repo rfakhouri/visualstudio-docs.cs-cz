@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e83bf0c3c0bd63ed994784e89252dd2a5479590f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 49908ba5110cf59d0aa4fff6f91bf356ec72c3c2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56687078"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065282"
 ---
 # <a name="localizing-vsix-packages"></a>Lokalizace balíčků VSIX
 
@@ -53,7 +53,7 @@ Když vytvoříte soubor vsixlangpack, je nutné nastavit `Include in Vsix` vlas
 
 1. V **Průzkumníka řešení**, klikněte pravým tlačítkem na soubor Extension.vsixlangpack a pak klikněte na tlačítko **vlastnosti**.
 
-2.  V **mřížky vlastností**, klikněte na tlačítko **zahrnout do Vsix**a přiřadíte jí hodnotu `true`.
+2. V **mřížky vlastností**, klikněte na tlačítko **zahrnout do Vsix**a přiřadíte jí hodnotu `true`.
 
 ## <a name="example"></a>Příklad
 

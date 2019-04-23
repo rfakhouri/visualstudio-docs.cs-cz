@@ -1,5 +1,5 @@
 ---
-title: 'Průvodce: Zobrazení souvisejících dat v aplikaci WPF | Dokumentace Microsoftu'
+title: 'Návod: Zobrazení souvisejících dat v aplikaci WPF | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-data-tools
@@ -19,14 +19,14 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 873f20383a3a35dcfc7b51128d07d5efc1d11519
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 400e16918f01697eecce2af608ba89e041ca6449
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54763901"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065386"
 ---
-# <a name="walkthrough-displaying-related-data-in-a-wpf-application"></a>Průvodce: Zobrazení souvisejících dat v aplikaci WPF
+# <a name="walkthrough-displaying-related-data-in-a-wpf-application"></a>Návod: Zobrazení souvisejících dat v aplikaci WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 V tomto návodu vytvoříte aplikaci WPF, která zobrazí data z tabulek databáze, které mají vztah nadřízenosti /. Data zapouzdřena v entitách v modelu Entity Data Model. Nadřazená entita obsahuje přehled informací o sadu objednávky. Tato entita se jednotlivé vlastnosti je vázána na jiný ovládací prvek v aplikaci. Podřízené entity obsahuje podrobnosti pro jednotlivé objednávky. Tuto sadu dat je vázán na <xref:System.Windows.Controls.DataGrid> ovládacího prvku.  
@@ -61,19 +61,19 @@ V tomto návodu vytvoříte aplikaci WPF, která zobrazí data z tabulek databá
   
 #### <a name="to-create-a-new-wpf-project"></a>Chcete-li vytvořit nový projekt WPF  
   
-1.  Spusťte Visual Studio.  
+1. Spusťte Visual Studio.  
   
-2.  Na **souboru** nabídky, přejděte k **nový**a potom klikněte na tlačítko **projektu**.  
+2. Na **souboru** nabídky, přejděte k **nový**a potom klikněte na tlačítko **projektu**.  
   
-3.  Rozbalte **Visual C#** nebo **jazyka Visual Basic**a pak vyberte **Windows**.  
+3. Rozbalte **Visual C#** nebo **jazyka Visual Basic**a pak vyberte **Windows**.  
   
-4.  Ujistěte se, že **rozhraní .NET Framework 4** výběru v poli se seznamem v horní části dialogového okna. <xref:System.Windows.Controls.DataGrid> Ovládací prvek, který můžete použít v tomto průvodci je dostupná jenom v rozhraní .NET Framework 4.  
+4. Ujistěte se, že **rozhraní .NET Framework 4** výběru v poli se seznamem v horní části dialogového okna. <xref:System.Windows.Controls.DataGrid> Ovládací prvek, který můžete použít v tomto průvodci je dostupná jenom v rozhraní .NET Framework 4.  
   
-5.  Vyberte **aplikace WPF** šablony projektu.  
+5. Vyberte **aplikace WPF** šablony projektu.  
   
-6.  V **název** zadejte `AdventureWorksOrdersViewer`.  
+6. V **název** zadejte `AdventureWorksOrdersViewer`.  
   
-7.  Klikněte na **OK**.  
+7. Klikněte na **OK**.  
   
      Visual Studio vytvoří `AdventureWorksOrdersViewer` projektu.  
   
@@ -102,9 +102,9 @@ V tomto návodu vytvoříte aplikaci WPF, která zobrazí data z tabulek databá
   
 6. Na **zvolte vaše databázové objekty** stránce, rozbalte **tabulky**a pak vyberte následující tabulky:  
   
-   -   **Podrobnosti prodejní objednávky**  
+   - **Podrobnosti prodejní objednávky**  
   
-   -   **SalesOrderHeader**  
+   - **SalesOrderHeader**  
   
 7. Klikněte na tlačítko **Dokončit**.  
   
@@ -192,15 +192,15 @@ V tomto návodu vytvoříte aplikaci WPF, která zobrazí data z tabulek databá
   
 #### <a name="to-test-the-application"></a>Testování aplikace  
   
-1.  Stisknutím klávesy **F5**.  
+1. Stisknutím klávesy **F5**.  
   
      Aplikace vytvoří a spustí. Ověřte následující:  
   
-    -   **ID prodejní objednávky** zobrazí pole se seznamem **71774**. Toto je první ID objednávky v dané entitě.  
+    - **ID prodejní objednávky** zobrazí pole se seznamem **71774**. Toto je první ID objednávky v dané entitě.  
   
-    -   Pro jednotlivé objednávky v vyberete **ID prodejní objednávky** – pole se seznamem, pořadí podrobné informace se zobrazí v <xref:System.Windows.Controls.DataGrid>.  
+    - Pro jednotlivé objednávky v vyberete **ID prodejní objednávky** – pole se seznamem, pořadí podrobné informace se zobrazí v <xref:System.Windows.Controls.DataGrid>.  
   
-2.  Ukončete aplikaci.  
+2. Ukončete aplikaci.  
   
 ## <a name="next-steps"></a>Další kroky  
  Po dokončení tohoto návodu, přečtěte si, jak používat **zdroje dat** okna v sadě Visual Studio k vytvoření vazby WPF ovládací prvky na jiné typy datových zdrojů. Další informace najdete v tématu [WPF vytvoření vazby ovládacích prvků do datové služby WCF](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md) a [WPF vytvoření vazby ovládacích prvků do datové sady](../data-tools/bind-wpf-controls-to-a-dataset.md).  

@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 472535a44e8cc9fe2aef40e1e3bf81c57bfcbe98
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 351247f50560896d53267fcf8d7f4a66a81b9461
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59663169"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065477"
 ---
 # <a name="analyze-cpu-usage"></a>Analýza využití procesoru
 
@@ -31,7 +31,7 @@ Obvykle místní počítač nejlepší replikuje provádění nainstalované apl
 >[!NOTE]
 >Windows 7 nebo novější je nutné použít [Profiler výkonu](../profiling/profiling-feature-tour.md).
 
-##  <a name="collect-cpu-usage-data"></a>Shromažďovat data o využití procesoru
+## <a name="collect-cpu-usage-data"></a>Shromažďovat data o využití procesoru
 
 1. V projektu sady Visual Studio nastavte konfiguraci řešení na **vydání** a vyberte **místního počítače** jako cíl nasazení.
 
@@ -59,7 +59,7 @@ Diagnostické zprávy je seřazený podle **celkový čas procesoru**, od nejvy�
 Od verze Visual Studio 2019, můžete kliknout na **rozbalit kritickou cestu** a **zobrazit kritickou cestu** tlačítka zobrazíte volá funkci, která používají nejvyšší procento procesoru v zobrazení stromu volání.
 ::: moniker-end
 
-###  <a name="BKMK_Call_tree_data_columns"></a> Sloupce dat využití procesoru
+### <a name="BKMK_Call_tree_data_columns"></a> Sloupce dat využití procesoru
 
 |||
 |-|-|
@@ -67,11 +67,11 @@ Od verze Visual Studio 2019, můžete kliknout na **rozbalit kritickou cestu** a
 |**Vlastní čas procesoru [jednotka, %]**|![Vlastní % rovnice](../profiling/media/cpu_use_wt_selflpercentequation.png "CPU_USE_WT_SelflPercentEquation")<br /><br /> Milisekund a procento využití procesoru používá volání funkce ve vybraném časovém rozsahu, s výjimkou funkce volané funkce.|
 |**Modul**|Název modulu, který obsahuje funkci.
 
-###  <a name="BKMK_The_CPU_Usage_call_tree"></a> Využití procesoru strom volání
+### <a name="BKMK_The_CPU_Usage_call_tree"></a> Využití procesoru strom volání
 
 Zobrazení stromu volání, vyberte nadřazený uzel v sestavě. **Využití procesoru** stránka se otevře **volající/volaný** zobrazení. V **aktuální zobrazení** rozevíracího seznamu vyberte **stromu volání**.
 
-####  <a name="BKMK_Call_tree_structure"></a> Struktura stromu volání
+#### <a name="BKMK_Call_tree_structure"></a> Struktura stromu volání
 
 ::: moniker range=">=vs-2019"
 ![Volání stromovou strukturu](../profiling/media/vs-2019/cpu-use-wt-getmaxnumbercalltree-annotated.png "volání stromové struktury")
@@ -87,7 +87,7 @@ Zobrazení stromu volání, vyberte nadřazený uzel v sestavě. **Využití pro
 |![3. krok](../profiling/media/procguid_3.png "ProcGuid_3")|Uzlu druhé úrovně jsou podřízeny metody uživatelského kódu a asynchronní rutiny, které volá nebo vytváří systémový kód a kód architektury druhé úrovně.|
 |![4. krok](../profiling/media/procguid_4.png "ProcGuid_4")|Podřízené uzly metody mají data pouze pro volání metody nadřazené. Pokud zakážete **Zobrazit externí kód**, mohou metody aplikace obsahovat také uzel **[Externí kód]**.|
 
-####  <a name="BKMK_External_Code"></a> Externí kód
+#### <a name="BKMK_External_Code"></a> Externí kód
 
 Systém a o funkcích rozhraní, které jsou spouštěny ve vašem kódu, se nazývají *externí kód*. Externí kód funkce spuštění a zastavení aplikace, vykreslení uživatelského rozhraní, řízení práce s vlákny a poskytují další nižší úrovně služby do aplikace. Ve většině případů nepotřebujete externí kód, takže využití procesoru volání stromu shromáždí externí funkce metody uživatele do jednoho **[externí kód]** uzlu.
 
@@ -108,7 +108,7 @@ Chcete-li najít název funkce, které hledáte, použijte vyhledávací pole. N
 ![Hledat vnořené externí kód](../profiling/media/cpu_use_wt_showexternalcodetoowide_found.png "vyhledávání pro vnořené externí kód")
 ::: moniker-end
 
-###  <a name="BKMK_Asynchronous_functions_in_the_CPU_Usage_call_tree"></a> Asynchronní funkce ve stromu volání využití procesoru
+### <a name="BKMK_Asynchronous_functions_in_the_CPU_Usage_call_tree"></a> Asynchronní funkce ve stromu volání využití procesoru
 
  Když kompilátor narazí na asynchronní metodu, vytvoří třídu skryté k řízení provádění metody. Třída je koncepčně stavového stroje. Třída má vygenerovaný kompilátorem funkce, které volají asynchronní metody původní a zpětná volání, Plánovač a iterátory, které jsou potřebné k jejich spuštění. Když nadřazené metody volá původní metody, kompilátor odebere metodu z kontextu spuštění nadřazeného elementu a spustí třídy skryté metody v kontextu systému a rozhraní framework kód, který určuje provádění aplikace. Asynchronní metody jsou často, ale ne vždy spouštěny na jeden nebo více různých vláken. Tento kód se zobrazí v **využití procesoru** strom volání jako podřízené objekty **[externí kód]** uzel bezprostředně pod nejvyšší uzel stromu.
 

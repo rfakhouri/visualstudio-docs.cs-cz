@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a35e679ebff8a0a262b329298b0f2d135eb9dc8
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: 794400a14cac5b85f813e7a384c650c581a719e2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526682"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061616"
 ---
 # <a name="use-the-memory-windows-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Použití okna paměť v ladicím programu sady Visual Studio (C#, C++, Visual Basic, F#)
 
@@ -84,7 +84,7 @@ Ve výchozím nastavení obsah paměti se zobrazí jako celá čísla 1 bajt v �
 
 **Chcete-li změnit formát obsah paměti:**
 
--  Klikněte pravým tlačítkem **paměti** okna a zvolte formáty, které chcete v místní nabídce.
+- Klikněte pravým tlačítkem **paměti** okna a zvolte formáty, které chcete v místní nabídce.
 
 **Chcete-li změnit počet sloupců v okně paměti:**
 

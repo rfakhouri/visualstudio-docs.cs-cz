@@ -11,12 +11,12 @@ ms.assetid: 5b3b5b08-5e9b-41be-ac72-c63957faed22
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 14bf97822957088f704ffbfefe24ea20b55f14ac
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 71ead1b49c9bcefc193f8e1c896b35a478a771a3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54789690"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064853"
 ---
 # <a name="test-area-1-add-toopen-from-source-control"></a>Testovací oblast 1: Přidat / otevřít ze správy zdrojového kódu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -26,32 +26,32 @@ Tento zdroj – ovládací prvek modulu plug-in testu pozadí oblasti uvedení �
 ## <a name="command-menu-access"></a>Přístup do příkazu nabídky  
  Následující [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] integrované vývojové prostředí nabídky cesty se používají v testovacích případů:  
   
--   Pro [!INCLUDE[vsvss](../../includes/vsvss-md.md)], otevřít ze správy zdrojového kódu: **Soubor**, **otevřít**, **projektu**/**řešení**; hledejte v [!INCLUDE[vsvss](../../includes/vsvss-md.md)] umístění.  
+- Pro [!INCLUDE[vsvss](../../includes/vsvss-md.md)], otevřít ze správy zdrojového kódu: **Soubor**, **otevřít**, **projektu**/**řešení**; hledejte v [!INCLUDE[vsvss](../../includes/vsvss-md.md)] umístění.  
   
--   Pro další ovládací prvek moduly plug-in zdrojového kódu otevřete ze správy zdrojového kódu: **Soubor**, **správy zdrojového kódu**, **otevřít ze správy zdrojových kódů**.  
+- Pro další ovládací prvek moduly plug-in zdrojového kódu otevřete ze správy zdrojového kódu: **Soubor**, **správy zdrojového kódu**, **otevřít ze správy zdrojových kódů**.  
   
--   Přidáte do správy zdrojového kódu: **Soubor**, **správy zdrojového kódu**, **přidat řešení do soubor správy zdrojového kódu**, **správy zdrojového kódu**, **přidat do správy zdrojových kódůvybranýchprojektů**.  
+- Přidáte do správy zdrojového kódu: **Soubor**, **správy zdrojového kódu**, **přidat řešení do soubor správy zdrojového kódu**, **správy zdrojového kódu**, **přidat do správy zdrojových kódůvybranýchprojektů**.  
   
--   Místní nabídky (projekt nebo řešení), **přidat řešení do správy zdrojových kódů**.  
+- Místní nabídky (projekt nebo řešení), **přidat řešení do správy zdrojových kódů**.  
   
--   Přidáte ze správy zdrojového kódu: **Soubor**, **správy zdrojového kódu**, **přidat projekt ze správy zdrojových kódů**.  
+- Přidáte ze správy zdrojového kódu: **Soubor**, **správy zdrojového kódu**, **přidat projekt ze správy zdrojových kódů**.  
   
--   Pro [!INCLUDE[vsvss](../../includes/vsvss-md.md)], přidejte ze zdrojového ovládacího prvku je k dispozici také z **souboru**, **přidat**, **existující projekt**; hledejte v [!INCLUDE[vsvss](../../includes/vsvss-md.md)] umístění.  
+- Pro [!INCLUDE[vsvss](../../includes/vsvss-md.md)], přidejte ze zdrojového ovládacího prvku je k dispozici také z **souboru**, **přidat**, **existující projekt**; hledejte v [!INCLUDE[vsvss](../../includes/vsvss-md.md)] umístění.  
   
     > [!NOTE]
     >  Cestu k místnímu souboru nebo místní služby IIS (web server) je možné v tomto testu.  
   
 ## <a name="expected-behavior"></a>Očekávané chování  
   
--   Pro každý typ podporovaný projektu by měl uživatel možné "Přidat" a "Otevřít v" správy zdrojového kódu.  
+- Pro každý typ podporovaný projektu by měl uživatel možné "Přidat" a "Otevřít v" správy zdrojového kódu.  
   
--   Při přidání projektu do správy zdrojových kódů, odpovídající \< *ProjectName*> se vytvoří soubor .vspscc (informačního souboru projektu). Obsahuje informace o připojení a seznam souborech vyloučení. Neodstraňujte tento soubor, protože obsahuje informace specifické pro projekt.  
+- Při přidání projektu do správy zdrojových kódů, odpovídající \< *ProjectName*> se vytvoří soubor .vspscc (informačního souboru projektu). Obsahuje informace o připojení a seznam souborech vyloučení. Neodstraňujte tento soubor, protože obsahuje informace specifické pro projekt.  
   
--   Při přidání řešení do správy zdrojových kódů, odpovídající \< *SolutionName*> se vytvoří soubor .vssscc (triple S). Textový soubor obsahuje informace o připojení a soubor seznamu vyloučení, podobně jako do informačního souboru projektu. Tento soubor je dočasný a existuje pouze v databázi správy zdrojových kódů.  
+- Při přidání řešení do správy zdrojových kódů, odpovídající \< *SolutionName*> se vytvoří soubor .vssscc (triple S). Textový soubor obsahuje informace o připojení a soubor seznamu vyloučení, podobně jako do informačního souboru projektu. Tento soubor je dočasný a existuje pouze v databázi správy zdrojových kódů.  
   
--   Při otevření řešení ze správy zdrojového kódu \< *SolutionName*> soubor .vsscc (double S), která existuje pouze v databázi správy zdrojových kódů, je vytvořeno místně do dočasného souboru. Tento soubor obsahuje cestu ze složky řešení připojení do souboru řešení. Tento soubor je dočasný a místní kopie se odstraní po dokončení operace "Otevřít ze správy zdrojového kódu".  
+- Při otevření řešení ze správy zdrojového kódu \< *SolutionName*> soubor .vsscc (double S), která existuje pouze v databázi správy zdrojových kódů, je vytvořeno místně do dočasného souboru. Tento soubor obsahuje cestu ze složky řešení připojení do souboru řešení. Tento soubor je dočasný a místní kopie se odstraní po dokončení operace "Otevřít ze správy zdrojového kódu".  
   
--   Po přidání projektu do správy zdrojového kódu můžete provádět všechny akce správy zdrojů na něm (prohlédněte si Get a tak dále).  
+- Po přidání projektu do správy zdrojového kódu můžete provádět všechny akce správy zdrojů na něm (prohlédněte si Get a tak dále).  
   
 ## <a name="test-cases"></a>Testovací případy  
  Tady jsou konkrétní testovací případy pro přidání / otevřít ze správy zdrojových kódů testovací oblast.  

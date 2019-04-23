@@ -17,12 +17,12 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ff3be8231ede73649ed09569b18fd255882a5221
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f2bd66ca5e5cc7e5884e98ddf4d5c2ba5df15742
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54777461"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065140"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>Vytvoření kódu v době návrhu pomocí textových šablon T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,17 +42,17 @@ Textové šablony T4 návrhu umožňují generování programového kódu a dal�
   
 #### <a name="to-create-a-design-time-t4-template-in-visual-studio"></a>Chcete-li vytvořit šablonu T4 doby návrhu v sadě Visual Studio  
   
-1.  Vytvoření [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] projektu nebo otevření stávajícího.  
+1. Vytvoření [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] projektu nebo otevření stávajícího.  
   
      Třeba na **souboru** nabídce zvolte **nový**, **projektu**.  
   
-2.  Přidejte do projektu soubor textové šablony a přiřaďte jí název, který má příponu **.tt**.  
+2. Přidejte do projektu soubor textové šablony a přiřaďte jí název, který má příponu **.tt**.  
   
      Chcete-li to provést, v **Průzkumníka řešení**, v místní nabídce projektu zvolte **přidat**, **nová položka**. V **přidat novou položku** dialogové okno Vyberte **textové šablony** v prostředním podokně.  
   
      Všimněte si, že **Custom Tool** vlastnost souboru je **TextTemplatingFileGenerator**.  
   
-3.  Otevřete soubor. Bude již obsahovat následující direktivy:  
+3. Otevřete soubor. Bude již obsahovat následující direktivy:  
   
     ```  
     <#@ template hostspecific="false" language="C#" #>  
@@ -61,17 +61,17 @@ Textové šablony T4 návrhu umožňují generování programového kódu a dal�
   
      Pokud jste přidali šablony, která má [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] projekt, bude atribut language "`VB`".  
   
-4.  Přidejte nějaký text na konci souboru. Příklad:  
+4. Přidejte nějaký text na konci souboru. Příklad:  
   
     ```  
     Hello, world!  
     ```  
   
-5.  Uložte soubor.  
+5. Uložte soubor.  
   
      Můžete se setkat **upozornění zabezpečení** okno se zprávou s žádostí o potvrzení, že chcete danou šablonou spustit. Klikněte na **OK**.  
   
-6.  V **Průzkumníka řešení**, rozbalte uzel soubor šablony a zjistíte, který má příponu souboru **.txt**. Tento soubor obsahuje text vytvořený ze šablony.  
+6. V **Průzkumníka řešení**, rozbalte uzel soubor šablony a zjistíte, který má příponu souboru **.txt**. Tento soubor obsahuje text vytvořený ze šablony.  
   
     > [!NOTE]
     >  Pokud váš projekt je projekt jazyka Visual Basic, musíte kliknout na **zobrazit všechny soubory** Chcete-li zobrazit výstupní soubor.  
@@ -150,9 +150,9 @@ Textové šablony T4 návrhu umožňují generování programového kódu a dal�
   
 #### <a name="to-generate-program-code-or-resources"></a>Ke generování programového kódu nebo prostředkům  
   
-1.  Změňte – direktiva output vygenerovat soubor příslušného typu, například cs, VB, .resx nebo XML.  
+1. Změňte – direktiva output vygenerovat soubor příslušného typu, například cs, VB, .resx nebo XML.  
   
-2.  Vložte kód, který bude generování kódu řešení, která požadujete. Například, pokud chcete generovat tři deklarace pole celé číslo v třídě:  
+2. Vložte kód, který bude generování kódu řešení, která požadujete. Například, pokud chcete generovat tři deklarace pole celé číslo v třídě:  
   
     ```csharp  
   
@@ -185,7 +185,7 @@ Textové šablony T4 návrhu umožňují generování programového kódu a dal�
   
     ```  
   
-3.  Uložte soubor a zkontrolujte vygenerovaný soubor, který nyní obsahuje následující kód:  
+3. Uložte soubor a zkontrolujte vygenerovaný soubor, který nyní obsahuje následující kód:  
   
     ```  
     class MyGeneratedClass {  
@@ -295,7 +295,7 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
 > [!TIP]
 >  Textové šablony běží ve vlastní doméně aplikace a služby jsou dostupné přes zařazování. V této situaci je spolehlivější než GetService() GetCOMService().  
   
-##  <a name="Regenerating"></a> Znova se generuje kód automaticky  
+## <a name="Regenerating"></a> Znova se generuje kód automaticky  
  Obvykle několik souborů v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] řešení jsou generovány s jedním vstupním modelem. Každý soubor se generuje z vlastní šablony, ale šablony, které všechny odkazovat do stejného modelu.  
   
  Pokud se změní modelu zdroje, byste měli znovu spustit všechny šablony v řešení. Chcete-li to provést ručně, zvolte **Transformovat všechny šablony** na **sestavení** nabídky.  
@@ -320,25 +320,25 @@ Error("An error message");
 Warning("A warning message");  
 ```  
   
-##  <a name="Converting"></a> Převod existující soubor do šablony  
+## <a name="Converting"></a> Převod existující soubor do šablony  
  Užitečné funkce šablon je, že vypadají velmi podobně jako soubory, které generují, společně s Některé vložené programového kódu. To naznačuje užitečný způsob vytváření šablony. Nejprve vytvořit soubor běžné jako prototyp, například [!INCLUDE[csprcs](../includes/csprcs-md.md)] souboru a poté postupné zavádění generování kódu, který se liší výsledného souboru.  
   
 #### <a name="to-convert-an-existing-file-to-a-design-time-template"></a>Chcete-li převést existující soubor do šablony návrhu  
   
-1.  Na vaše [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] projektu, přidejte soubor typu, který chcete vygenerovat, například `.cs`, `.vb`, nebo `.resx` souboru.  
+1. Na vaše [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] projektu, přidejte soubor typu, který chcete vygenerovat, například `.cs`, `.vb`, nebo `.resx` souboru.  
   
-2.  Vyzkoušejte nový soubor, abyste měli jistotu, že funguje.  
+2. Vyzkoušejte nový soubor, abyste měli jistotu, že funguje.  
   
-3.  V Průzkumníku řešení změnit příponu názvu souboru na **.tt**.  
+3. V Průzkumníku řešení změnit příponu názvu souboru na **.tt**.  
   
-4.  Ověřte následující vlastnosti **.tt** souboru:  
+4. Ověřte následující vlastnosti **.tt** souboru:  
   
     |||  
     |-|-|  
     |**Vlastní nástroj =**|**TextTemplatingFileGenerator**|  
     |**Akce sestavení =**|**Žádné**|  
   
-5.  Na začátek souboru vložte následující řádky:  
+5. Na začátek souboru vložte následující řádky:  
   
     ```  
     <#@ template debug="false" hostspecific="false" language="C#" #>  
@@ -349,13 +349,13 @@ Warning("A warning message");
   
      Nastavte `extension` atribut příponu názvu souboru pro typ souboru, který chcete vygenerovat, například `.cs`, `.resx`, nebo `.xml`.  
   
-6.  Uložte soubor.  
+6. Uložte soubor.  
   
      Pomocné soubor je vytvořen, se zadanou příponou. Její vlastnosti jsou správné pro typ souboru. Například **akce sestavení** by být vlastnost souboru .cs **kompilaci**.  
   
      Ověřte, že vygenerovaný soubor obsahuje obsah jako původní soubor.  
   
-7.  Identifikujte část souboru, který chcete měnit. Například na součást, která se zobrazí pouze za určitých podmínek nebo součást, která se opakuje, nebo kde konkrétní hodnoty liší. Vložit generování kódu. Uložte soubor a ověřte, že je správně vygenerován pomocný soubor. Tento krok opakujte.  
+7. Identifikujte část souboru, který chcete měnit. Například na součást, která se zobrazí pouze za určitých podmínek nebo součást, která se opakuje, nebo kde konkrétní hodnoty liší. Vložit generování kódu. Uložte soubor a ověřte, že je správně vygenerován pomocný soubor. Tento krok opakujte.  
   
 ## <a name="guidelines-for-code-generation"></a>Pokyny pro generování kódu  
  Podrobnosti najdete na [pokyny pro textové šablony T4 zápis](../modeling/guidelines-for-writing-t4-text-templates.md).  

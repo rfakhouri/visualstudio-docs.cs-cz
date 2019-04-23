@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 180cf2cece705afb6094e49ef23a3dc3f953d0c4
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 58c68f8b61adab90f8437658d6efd04f0ca47818
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59669143"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065516"
 ---
 # <a name="walkthrough-using-profiler-apis"></a>Návod: Použití rozhraní API profileru
 
@@ -60,12 +60,12 @@ DataCollection.CurrentId);
 
 #### <a name="to-create-the-code-to-profile"></a>Chcete-li vytvořit kód pro profil
 
-1.  Vytvořte nový projekt C# v sadě Visual Studio nebo pomocí příkazového řádku sestavení, v závislosti na vašich předvoleb.
+1. Vytvořte nový projekt C# v sadě Visual Studio nebo pomocí příkazového řádku sestavení, v závislosti na vašich předvoleb.
 
     > [!NOTE]
     >  Sestavení musí odkazovat *Microsoft.VisualStudio.Profiler.dll* knihovny, umístěný ve *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools* adresáře.
 
-2.  Zkopírujte a vložte následující kód do vašeho projektu:
+2. Zkopírujte a vložte následující kód do vašeho projektu:
 
     ```csharp
     using System;
@@ -148,23 +148,23 @@ DataCollection.CurrentId);
 
 #### <a name="to-collect-and-view-data-at-the-command-line"></a>Můžete shromažďovat a zobrazovat data na příkazovém řádku
 
-1.  Zkompilujte ladicí verze ukázek kódu, který jste vytvořili v postupu "Vytvoření kódu pro profil" dříve v tomto návodu.
+1. Zkompilujte ladicí verze ukázek kódu, který jste vytvořili v postupu "Vytvoření kódu pro profil" dříve v tomto návodu.
 
-2.  Chcete-li Profilovat spravované aplikace, zadejte následující příkaz nastavit příslušné proměnné prostředí:
+2. Chcete-li Profilovat spravované aplikace, zadejte následující příkaz nastavit příslušné proměnné prostředí:
 
      **VsPerfCLREnv /traceon**
 
-3.  Zadejte následující příkaz: **VSInstr \<filename>.exe**
+3. Zadejte následující příkaz: **VSInstr \<filename>.exe**
 
-4.  Zadejte následující příkaz: **/Start:trace VSPerfCmd/output:\<název souboru > .vsp**
+4. Zadejte následující příkaz: **/Start:trace VSPerfCmd/output:\<název souboru > .vsp**
 
-5.  Zadejte následující příkaz: **Nástroj VSPerfCmd /globaloff**
+5. Zadejte následující příkaz: **Nástroj VSPerfCmd /globaloff**
 
-6.  Spuštění programu.
+6. Spuštění programu.
 
-7.  Zadejte následující příkaz: **/ Shutdown VSPerfCmd**
+7. Zadejte následující příkaz: **/ Shutdown VSPerfCmd**
 
-8.  Zadejte následující příkaz: **VSPerfReport/calltrace:\<název souboru > .vsp**
+8. Zadejte následující příkaz: **VSPerfReport/calltrace:\<název souboru > .vsp**
 
      ODPOVĚĎ. *sdíleného svazku clusteru* vytvoří soubor v aktuálním adresáři s Výsledná data o výkonu.
 

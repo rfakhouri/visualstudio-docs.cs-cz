@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 54284b9e1e55e4e3a3ba8b8237b9420cbf195089
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: b5c763e18f30bec27837e248a27546df821ef33f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56704043"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065581"
 ---
 # <a name="attach-after-a-launch"></a>Připojit po spuštění
 Po spuštění programu, relace ladění je připraven k připojení ladicího stroje (DE) do uvedeného programu.
@@ -23,9 +23,9 @@ Po spuštění programu, relace ladění je připraven k připojení ladicího s
 ## <a name="design-decisions"></a>Rozhodnutí o návrhu
  Protože komunikace je snazší v rámci sdílené adresní prostor, musíte zvolit mezi dva přístupy návrhu: nastavit komunikaci mezi ladicí relaci a DE. Nebo můžete nastavit komunikaci mezi DE a program. Zvolte z následujících možností:
 
--   Pokud to dává větší smysl nastavení komunikace mezi ladicí relaci a DE, relace ladění společně vytvoří DE a dotaz, DE se připojit k programu. Tento návrh ponechá ladicí relaci a DE společně v jeden adresní prostor a běhového prostředí a program společně v jiném.
+- Pokud to dává větší smysl nastavení komunikace mezi ladicí relaci a DE, relace ladění společně vytvoří DE a dotaz, DE se připojit k programu. Tento návrh ponechá ladicí relaci a DE společně v jeden adresní prostor a běhového prostředí a program společně v jiném.
 
--   Pokud to dává větší smysl nastavení komunikace mezi DE a program, vytvoří prostředí run-time společně DE. Tento návrh opustí SDM v jeden adresní prostor DE, běhové prostředí a program společně v jiném. Tento návrh je typický pro Zavedenými, které je implementováno s interpretu pro spuštění skriptovací jazyky.
+- Pokud to dává větší smysl nastavení komunikace mezi DE a program, vytvoří prostředí run-time společně DE. Tento návrh opustí SDM v jeden adresní prostor DE, běhové prostředí a program společně v jiném. Tento návrh je typický pro Zavedenými, které je implementováno s interpretu pro spuštění skriptovací jazyky.
 
     > [!NOTE]
     >  Jak DE připojí k programu je závislý na implementaci. Komunikace mezi DE a program je také závislý na implementaci.

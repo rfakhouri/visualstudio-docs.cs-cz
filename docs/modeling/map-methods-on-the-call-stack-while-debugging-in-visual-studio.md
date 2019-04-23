@@ -28,21 +28,32 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5866a26fdcc8bed88713bf92e1c38bfb3b04ba8f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 139e76911825866375a0f524c53dd23b8967f9ed
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924538"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063163"
 ---
 # <a name="map-methods-on-the-call-stack-while-debugging-in-visual-studio"></a>Mapování metod v zásobníku volání při ladění v sadě Visual Studio
+
 Vytvořte mapu kódu pro vizuální sledování zásobníku volání během ladění. Můžete si dělat poznámky na mapě ke sledování kódu činnosti tak, abyste se mohli zaměřit na hledání chyb.
 
  ![Ladění se zásobníky volání na mapách kódu](../debugger/media/debuggermap_overview.png)
 
  Budete potřebovat:
 
-- [Visual Studio Enterprise](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)
+ ::: moniker range="vs-2017"
+
+- [Visual Studio Enterprise](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+- [Visual Studio Enterprise](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)
+
+::: moniker-end
 
 - Kód, který lze ladit, jako je Visual C#, Visual Basic, C++, JavaScript nebo X ++
 
@@ -66,9 +77,9 @@ Vytvořte mapu kódu pro vizuální sledování zásobníku volání během lad�
 
 ## <a name="MapStack"></a> Mapování zásobníku volání
 
-1.  Spusťte ladění. (Klávesnice: **F5**)
+1. Spusťte ladění. (Klávesnice: **F5**)
 
-2.  Až se vaše aplikace přejde do režimu přerušení nebo přejdete na funkci, zvolte **mapy kódu**. (Klávesnice: **Ctrl** + **Shift** + **`**)
+2. Až se vaše aplikace přejde do režimu přerušení nebo přejdete na funkci, zvolte **mapy kódu**. (Klávesnice: **Ctrl** + **Shift** + **`**)
 
      ![Vyberte mapu kódu pro spuštění mapování zásobníku volání](../debugger/media/debuggermap_choosecodemap.png)
 
@@ -79,16 +90,19 @@ Vytvořte mapu kódu pro vizuální sledování zásobníku volání během lad�
      Na mapě se automaticky aktualizovat, když budete pokračovat v ladění. Zobrazit [aktualizace mapy s následujícím zásobníkem volání](#UpdateMap).
 
 ## <a name="MakeNotes"></a> Tvorba poznámek o kódu
+
  Přidejte komentáře pro sledování, co se děje v kódu. Chcete-li přidat nový řádek v komentáři, stiskněte **Shift + Return**.
 
  ![Přidat komentář do zásobníku volání na mapě kódu](../debugger/media/debuggermap_addcomment.png)
 
 ## <a name="UpdateMap"></a> Aktualizace mapy s následujícím zásobníkem volání.
+
  Spuštění vaší aplikace na další zarážku nebo krok do funkce. Mapování přidá nový zásobník volání.
 
  ![Aktualizace mapy kódu s následujícím zásobníkem volání.](../debugger/media/debuggermap_addclearcallstack.png)
 
 ## <a name="AddRelatedCode"></a> Přidání souvisejícího kódu do mapy
+
  Nyní máte k dispozici mapu – co dále? Pokud pracujete s C# nebo Visual Basic, přidejte položky, jako je například pole, vlastnosti a jiné metody, můžete sledovat, co se děje v kódu.
 
  Poklepejte na metodu a zobrazte její definici kódu tak, nebo použijte místní nabídku pro metodu. (Klávesnice: Vyberte metodu na mapě a stiskněte klávesu **F12**)
@@ -113,6 +127,7 @@ Vytvořte mapu kódu pro vizuální sledování zásobníku volání během lad�
  ![Metody, které používají pole na mapě kódu zásobníku volání](../debugger/media/debuggermap_foundallreferences.png)
 
 ## <a name="FindBugs"></a> Najít chyby pomocí mapy
+
  Vizualizace kódu můžete nalézt chyby rychleji. Předpokládejme například, že hledáte chyby v programu kreslení. Když nakreslíte čáru a pokusíte se vrátit akci zpět, nic se nestane, dokud nenakreslíte další čáru.
 
  Proto nastavte zarážky v `clear`, `undo`, a `Repaint` metody, spustit ladění a vytvořit mapu podobné následujícímu:
@@ -149,11 +164,11 @@ Vytvořte mapu kódu pro vizuální sledování zásobníku volání během lad�
 
    Otevřít **rozložení** nabídky na panelu nástrojů mapy:
 
-  -   Změňte výchozí rozložení.
+  - Změňte výchozí rozložení.
 
-  -   Chcete-li zastavit automatické uspořádání mapy, vypněte **při ladění automaticky rozmístit**.
+  - Chcete-li zastavit automatické uspořádání mapy, vypněte **při ladění automaticky rozmístit**.
 
-  -   Chcete-li změnit uspořádání mapy co při přidávání položek, vypněte **Inkrementální rozložení**.
+  - Chcete-li změnit uspořádání mapy co při přidávání položek, vypněte **Inkrementální rozložení**.
 
 - **Mohu sdílet mapu s ostatními?**
 
@@ -185,7 +200,7 @@ Vytvořte mapu kódu pro vizuální sledování zásobníku volání během lad�
 
 - [Najít chyby pomocí mapy](#FindBugs)
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Mapování závislostí napříč vaším řešením](../modeling/map-dependencies-across-your-solutions.md)
 - [Použití map kódu k ladění aplikací](../modeling/use-code-maps-to-debug-your-applications.md)

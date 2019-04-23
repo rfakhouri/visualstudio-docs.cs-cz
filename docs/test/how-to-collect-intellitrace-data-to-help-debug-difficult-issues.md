@@ -11,12 +11,12 @@ ms.assetid: 02b6716f-569e-4961-938a-e790a0c74b5c
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0cac9e52c74b9dc830fa801005a22f0123ee2e41
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ce5b03c7973a2b6dd9766f200528ae71cf6e4cfa
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55926551"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065269"
 ---
 # <a name="how-to-collect-intellitrace-data-to-help-debug-difficult-issues"></a>Postupy: Shromažďování dat IntelliTrace pro ladění složitých problémů
 
@@ -51,11 +51,11 @@ Před provedením kroků v tomto postupu je nutné otevřít nastavení testu po
 
 ### <a name="to-configure-the-data-to-collect-with-the-intellitrace-diagnostic-data-adapter"></a>Konfigurace dat pro shromažďování dat prostřednictvím adaptéru diagnostiky dat technologie IntelliTrace
 
-1.  Vyberte roli, kterou chcete použít pro shromažďování dat IntelliTrace.
+1. Vyberte roli, kterou chcete použít pro shromažďování dat IntelliTrace.
 
-2.  Vyberte **IntelliTrace**.
+2. Vyberte **IntelliTrace**.
 
-3.  Pokud přidáváte IntelliTrace pro roli webového klienta nebo pro webovou aplikaci ASP.NET, je také nutné vybrat **ASP.NET Client Proxy pro IntelliTrace a dopad testu**.
+3. Pokud přidáváte IntelliTrace pro roli webového klienta nebo pro webovou aplikaci ASP.NET, je také nutné vybrat **ASP.NET Client Proxy pro IntelliTrace a dopad testu**.
 
      Tento server proxy umožňuje shromažďovat informace o voláních http z klienta na webový server pro adaptéry diagnostických dat IntelliTrace a dopad testu.
 
@@ -64,22 +64,22 @@ Před provedením kroků v tomto postupu je nutné otevřít nastavení testu po
     >
     > **runas /user:domain\name /profile cmd.exe**
 
-4.  Zvolte **konfigurovat** pro **IntelliTrace** upravit výchozí nastavení technologie IntelliTrace.
+4. Zvolte **konfigurovat** pro **IntelliTrace** upravit výchozí nastavení technologie IntelliTrace.
 
      Zobrazí se dialogové okno pro konfiguraci dat, která budou shromažďována.
 
     > [!WARNING]
     > Pokud povolíte shromažďování dat IntelliTrace, nebude fungovat shromažďování dat pokrytí kódu.
 
-5.  Zvolte **Obecné** kartu. Vyberte **pouze události IntelliTrace** Chcete-li zaznamenávat podstatné diagnostické události, které mají minimální dopad na výkon při testování.
+5. Zvolte **Obecné** kartu. Vyberte **pouze události IntelliTrace** Chcete-li zaznamenávat podstatné diagnostické události, které mají minimální dopad na výkon při testování.
 
      -nebo-
 
      Vyberte **události IntelliTrace a informací o volání** pro záznam diagnostických událostí a metoda úroveň trasování, které ukazuje informace o volání. Tato úroveň trasování může mít vliv na výkon při spuštění testů.
 
-6.  Chcete-li shromažďovat data z vaší aplikace technologie ASP.NET, na kterém běží na serveru služby IIS, vyberte **shromažďovat data z aplikací ASP.NET, které jsou spuštěny na serveru služby IIS**. Nastavte a nakonfigurujte testovacího agenta v roli webového serveru. Zobrazit [instalace a konfigurace testovacích agentů](../test/lab-management/install-configure-test-agents.md).
+6. Chcete-li shromažďovat data z vaší aplikace technologie ASP.NET, na kterém běží na serveru služby IIS, vyberte **shromažďovat data z aplikací ASP.NET, které jsou spuštěny na serveru služby IIS**. Nastavte a nakonfigurujte testovacího agenta v roli webového serveru. Zobrazit [instalace a konfigurace testovacích agentů](../test/lab-management/install-configure-test-agents.md).
 
-7.  Zvolte **moduly** kartu. Vyberte buď **shromažďování dat ze všech modulů kromě následujících** a používat **přidat** pro přidání do seznamu modulů a **odebrat** pro odebrání modulu. Tato volba umožňuje zahrnout všechny moduly, které jsou spuštěny v systému kromě modulů, jež zadáte.
+7. Zvolte **moduly** kartu. Vyberte buď **shromažďování dat ze všech modulů kromě následujících** a používat **přidat** pro přidání do seznamu modulů a **odebrat** pro odebrání modulu. Tato volba umožňuje zahrnout všechny moduly, které jsou spuštěny v systému kromě modulů, jež zadáte.
 
      -nebo-
 
@@ -88,7 +88,7 @@ Před provedením kroků v tomto postupu je nutné otevřít nastavení testu po
     > [!NOTE]
     > Pokud je to možné, vyberte konkrétní postupy, které chcete sledovat. To je doporučeno pro optimální výkon.
 
-8.  Zvolte **procesy** kartu. Vyberte **shromažďování dat ze všech procesů kromě následujících** a používat **přidat** pro přidání do seznamu procesů a **odebrat** pro odebrání procesu. Tato volba umožňuje zahrnout všechny procesy, které jsou spuštěny v systému kromě procesů, jež zadáte.
+8. Zvolte **procesy** kartu. Vyberte **shromažďování dat ze všech procesů kromě následujících** a používat **přidat** pro přidání do seznamu procesů a **odebrat** pro odebrání procesu. Tato volba umožňuje zahrnout všechny procesy, které jsou spuštěny v systému kromě procesů, jež zadáte.
 
      -nebo-
 

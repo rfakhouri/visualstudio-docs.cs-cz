@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 63215d6350a4922ed416c8c48f006cd23c9e0728
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 273dc6770f2928ed65d6a473b7f1986bc353687e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58323721"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060810"
 ---
 # <a name="run-profiling-tools-with-or-without-the-debugger"></a>Spouštění nástrojů pro profilaci s ladicím programem nebo bez něj
 
@@ -33,7 +33,7 @@ Abychom pomohli, rozhodněte, které nástroje a výsledky použití, zvažte n�
 - Stejně jako operace nezbytné ladicí program jako zachycení výjimky a události načtení modulu se změní na samotný ladicí program doby výkonu.
 - Sestavení pro vydání údaje o výkonu **Profiler výkonu** nástroje jsou přesné a přesné. Výsledky nástroje integrované v ladicím programu jsou zvláště užitečná pro porovnání s další měření spojené s laděním.
 
-##  <a name="BKMK_Quick_start__Collect_diagnostic_data"></a> Shromažďování dat profilace během ladění
+## <a name="BKMK_Quick_start__Collect_diagnostic_data"></a> Shromažďování dat profilace během ladění
 
 Při spuštění ladění v sadě Visual Studio tak, že vyberete **ladění** > **spustit ladění** nebo stiskněte **F5**, **Diagnostickénástroje** ve výchozím nastavení se zobrazí okno. Chcete-li jej spustit ručně, vyberte **ladění** > **Windows** > **zobrazit diagnostické nástroje**. **Diagnostické nástroje** okno s informacemi o událostech, proces, využití paměti a procesoru.
 

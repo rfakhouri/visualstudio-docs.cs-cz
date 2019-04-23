@@ -26,12 +26,12 @@ caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fcb5126d5281a62c9af55ba9e4283df4e1c3819c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1da5ba504c22f78ebd3c0705bd5ee903fb4a2997
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54769941"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060563"
 ---
 # <a name="how-to-find-which-dll-your-program-crashed-in"></a>Postupy: Hledání knihovny DLL které Program selhal v
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,17 +43,17 @@ POZNÁMKA:]
   
 ### <a name="to-find-where-a-crash-occurred-using-the-modules-window"></a>Najde, pro které selhání došlo k použití okna moduly  
   
-1.  Poznamenejte si adresu, kde došlo k selhání.  
+1. Poznamenejte si adresu, kde došlo k selhání.  
   
-2.  Na **ladění** nabídce zvolte **Windows**a klikněte na tlačítko **moduly**.  
+2. Na **ladění** nabídce zvolte **Windows**a klikněte na tlačítko **moduly**.  
   
-3.  V **moduly** okně Najít **adresu** sloupce. Budete muset použít posuvník a prohlédněte si ho.  
+3. V **moduly** okně Najít **adresu** sloupce. Budete muset použít posuvník a prohlédněte si ho.  
   
-4.  Klikněte na tlačítko **adresu** tlačítko v horní části Tento sloupec seřadit podle adresy knihovny DLL.  
+4. Klikněte na tlačítko **adresu** tlačítko v horní části Tento sloupec seřadit podle adresy knihovny DLL.  
   
-5.  Kontrola seřazeného seznamu k nalezení knihovny DLL, jejichž rozsah adres obsahuje umístění při selhání.  
+5. Kontrola seřazeného seznamu k nalezení knihovny DLL, jejichž rozsah adres obsahuje umístění při selhání.  
   
-6.  Podívejte se na **název** a **cesta** sloupce, které chcete zobrazit název knihovny DLL a cestu.  
+6. Podívejte se na **název** a **cesta** sloupce, které chcete zobrazit název knihovny DLL a cestu.  
   
 ## <a name="see-also"></a>Viz také  
  [Postupy: Ladění nativních knihoven DLL](../debugger/how-to-debug-native-dlls.md)   

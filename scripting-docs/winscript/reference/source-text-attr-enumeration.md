@@ -13,12 +13,12 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 05faeddf43c91ce0f45d54d2f6b6ed46cf8d2a4f
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: f34121ca50ae2467addb29809e7a3792063642ec
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58157984"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60062447"
 ---
 # <a name="sourcetextattr-enumeration"></a>SOURCE_TEXT_ATTR – výčet
 Popisují atributy jednoho znaku zdrojového textu.  
@@ -44,11 +44,11 @@ enum enum_SOURCE_TEXT_ATTR{    SOURCETEXT_ATTR_KEYWORD    = 0x0001,    SOURCETEX
 ## <a name="remarks"></a>Poznámky  
  Obvykle `IDebugDocumentHost::GetScriptTextAttributes`, `IActiveScriptDebug::GetScriptletTextAttributes`, a `IActiveScriptDebug::GetScriptTextAttributes` metody vrátí jeden atribut text na znak, pokud:  
   
--   Je nastavený příznak GETATTRTYPE_DEPSCAN, v takovém případě může metoda vrátit příznaky SOURCETEXT_ATTR_IDENTIFIER a SOURCETEXT_ATTR_MEMBERLOOKUP  
+- Je nastavený příznak GETATTRTYPE_DEPSCAN, v takovém případě může metoda vrátit příznaky SOURCETEXT_ATTR_IDENTIFIER a SOURCETEXT_ATTR_MEMBERLOOKUP  
   
--   Je nastavený příznak GETATTRFLAG_THIS, v takovém případě může metoda vrátit příznak SOURCETEXT_ATTR_THIS  
+- Je nastavený příznak GETATTRFLAG_THIS, v takovém případě může metoda vrátit příznak SOURCETEXT_ATTR_THIS  
   
--   Je nastavený příznak GETATTRFLAG_HUMANTEXT, v takovém případě může metoda vrátit SOURCETEXT_ATTR_HUMANTEXT příznak.  
+- Je nastavený příznak GETATTRFLAG_HUMANTEXT, v takovém případě může metoda vrátit SOURCETEXT_ATTR_HUMANTEXT příznak.  
   
 ## <a name="see-also"></a>Viz také  
  [Konstanty, výčty a struktury ladicího programu aktivních skriptů](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)

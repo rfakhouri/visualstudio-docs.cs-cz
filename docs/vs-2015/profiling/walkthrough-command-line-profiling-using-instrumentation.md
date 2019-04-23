@@ -1,5 +1,5 @@
 ---
-title: 'Průvodce: Profilace z příkazového řádku pomocí instrumentace | Dokumentace Microsoftu'
+title: 'Návod: Profilace z příkazového řádku pomocí instrumentace | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -13,37 +13,37 @@ caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 053904df9a4930385d25c90c310c3199ce1d664f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d5b7e8dbe12f9c57c101c8f877dfcb0c6ee3196f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54755430"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064690"
 ---
-# <a name="walkthrough-command-line-profiling-using-instrumentation"></a>Průvodce: Příkazový řádek, profilace s použitím instrumentace
+# <a name="walkthrough-command-line-profiling-using-instrumentation"></a>Návod: Příkazový řádek, profilace s použitím instrumentace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Tento názorný postup vás provede profilace [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] samostatnou aplikaci pro shromáždění podrobných časových a údaje o počtu volání pomocí metody instrumentace z nástrojů pro profilaci. V tomto návodu provedete následující úlohy:  
   
--   Použití [VSInstr](../profiling/vsinstr.md) nástroj příkazového řádku ke generování instrumentované binární soubory.  
+- Použití [VSInstr](../profiling/vsinstr.md) nástroj příkazového řádku ke generování instrumentované binární soubory.  
   
--   Použití [VSPerfCLREnv](../profiling/vsperfclrenv.md) nástroj k nastavení proměnných prostředí pro shromažďování dat profilování rozhraní .NET.  
+- Použití [VSPerfCLREnv](../profiling/vsperfclrenv.md) nástroj k nastavení proměnných prostředí pro shromažďování dat profilování rozhraní .NET.  
   
--   Použití [VSPerfCmd](../profiling/vsperfcmd.md) nástroje ke shromažďování dat profilace.  
+- Použití [VSPerfCmd](../profiling/vsperfcmd.md) nástroje ke shromažďování dat profilace.  
   
--   Použití [VSPerfReport](../profiling/vsperfreport.md) nástroj pro generování sestav na základě souboru dat profilování.  
+- Použití [VSPerfReport](../profiling/vsperfreport.md) nástroj pro generování sestav na základě souboru dat profilování.  
   
 ## <a name="prerequisites"></a>Požadavky  
   
--   [!INCLUDE[vsprvsts](../includes/vsprvsts-md.md)]  
+- [!INCLUDE[vsprvsts](../includes/vsprvsts-md.md)]  
   
--   Zprostředkující Principy jazyka C#  
+- Zprostředkující Principy jazyka C#  
   
--   Zprostředkující znalost práce pomocí nástrojů příkazového řádku  
+- Zprostředkující znalost práce pomocí nástrojů příkazového řádku  
   
--   Kopie [peopletrax – ukázka](../profiling/peopletrax-sample-profiling-tools.md)  
+- Kopie [peopletrax – ukázka](../profiling/peopletrax-sample-profiling-tools.md)  
   
--   Pro práci s profilace na základě informací poskytnutých, je nejlepší mít ladění k dispozici informace o symbolech. Další informace najdete v tématu [jak: Informace o symbolech Windows odkaz](../profiling/how-to-reference-windows-symbol-information.md).  
+- Pro práci s profilace na základě informací poskytnutých, je nejlepší mít ladění k dispozici informace o symbolech. Další informace najdete v tématu [jak: Informace o symbolech Windows odkaz](../profiling/how-to-reference-windows-symbol-information.md).  
   
 ## <a name="command-line-profiling-using-the-instrumentation-method"></a>Příkazového řádku pro profilaci pomocí metody instrumentace  
  Instrumentace je metodu profilace, podle kterého obsahují speciálně vytvořených verze profilovaných binárních souborů testu funkce, které shromažďovat informace o časování na vstupu a výstupu funkcí v instrumentovaném modulu. Vzhledem k tomu, že tato metoda profilování invazivnější než vzorkování, budou vám účtovány větší množství režie. Instrumentované binární soubory jsou také větší než ladění nebo vydání binární soubory a nejsou určeny pro nasazení.  
@@ -53,19 +53,19 @@ Tento názorný postup vás provede profilace [!INCLUDE[dnprdnshort](../includes
   
 #### <a name="to-profile-the-peopletrax-application-by-using-the-instrumentation-method"></a>Chcete-li Profilovat aplikaci PeopleTrax pomocí metody instrumentace  
   
-1.  Nainstalovat ukázkovou aplikaci PeopleTrax a vytvořit vydanou verzi.  
+1. Nainstalovat ukázkovou aplikaci PeopleTrax a vytvořit vydanou verzi.  
   
-2.  Otevřete okno příkazového řádku a přidejte **nástrojů pro profilaci sady** adresáře do místní proměnné prostředí Path.  
+2. Otevřete okno příkazového řádku a přidejte **nástrojů pro profilaci sady** adresáře do místní proměnné prostředí Path.  
   
-3.  Změňte pracovní adresář na adresář obsahující PeopleTrax binární soubory.  
+3. Změňte pracovní adresář na adresář obsahující PeopleTrax binární soubory.  
   
-4.  Vytvořte adresář obsahující soubor na základě sestav. Zadejte následující příkaz:  
+4. Vytvořte adresář obsahující soubor na základě sestav. Zadejte následující příkaz:  
   
     ```  
     md Reports  
     ```  
   
-5.  Pomocí nástroje příkazového řádku VSInstr instrumentace binárních souborů v aplikaci. Na samostatné řádky příkazu zadejte následující příkazy:  
+5. Pomocí nástroje příkazového řádku VSInstr instrumentace binárních souborů v aplikaci. Na samostatné řádky příkazu zadejte následující příkazy:  
   
     ```  
     VSInstr PeopleTrax.exe  
@@ -77,19 +77,19 @@ Tento názorný postup vás provede profilace [!INCLUDE[dnprdnshort](../includes
   
      **Poznámka:** ve výchozím nastavení, uloží nástroj VSInstr neinstrumentovaného záloha původního souboru. Název záložního souboru má příponu. orig. Například původní verzi "MyApp.exe" by se uložila jako "MyApp.exe.orig."  
   
-6.  Zadejte následující příkaz nastavit příslušné proměnné prostředí:  
+6. Zadejte následující příkaz nastavit příslušné proměnné prostředí:  
   
     ```  
     VsPerfCLREnv /traceon  
     ```  
   
-7.  Chcete-li spustit profiler, zadejte následující příkaz:  
+7. Chcete-li spustit profiler, zadejte následující příkaz:  
   
     ```  
     VsPerfCmd /start:trace /output:Reports\Report.vsp  
     ```  
   
-8.  Po spuštění profileru v režimu trace spusťte instrumentovanou verzí procesu PeopleTrax.exe shromažďovat data.  
+8. Po spuštění profileru v režimu trace spusťte instrumentovanou verzí procesu PeopleTrax.exe shromažďovat data.  
   
      **PeopleTrax** se zobrazí okno aplikace.  
   

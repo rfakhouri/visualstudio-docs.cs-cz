@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7eb266eda25198f6d270ebcf48086141a73dcb9c
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 940cf70047437c8aa3182121e8b1585b448018f8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59665451"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060734"
 ---
 # <a name="deploy-an-office-solution-by-using-clickonce"></a>Nasazení řešení Office s použitím technologie ClickOnce
   Vaše řešení pro Office v méně kroků můžete nasadit, když použijete ClickOnce. Když publikujete aktualizace, vaše řešení je automaticky rozpozná a nainstaluje. Technologie ClickOnce ale vyžaduje, aby bylo řešení nainstalováno zvlášť pro každého uživatele počítače. Proto byste měli zvážit použití Instalační služby systému Windows (*MSI*) je-li více než jeden uživatel vaše řešení bude používat ve stejném počítači.
@@ -45,7 +45,7 @@ ms.locfileid: "59665451"
 
   Další informace o tom, jak nasadit řešení pro Office vytvořením souboru Instalační služby systému Windows najdete v tématu [nasazení řešení Office s použitím Instalační služby systému Windows](../vsto/deploying-an-office-solution-by-using-windows-installer.md).
 
-##  <a name="Publish"></a> Publikování řešení
+## <a name="Publish"></a> Publikování řešení
  Řešení můžete publikovat pomocí **Průvodce publikováním** nebo **Návrháře projektu**. V tomto postupu budete používat **Návrháře projektu** protože poskytuje kompletní sadu možnosti publikování. Zobrazit [Průvodci publikováním &#40;vývoj pro Office v sadě Visual Studio&#41;](../vsto/publish-wizard-office-development-in-visual-studio.md).
 
 #### <a name="to-publish-the-solution"></a>Publikování řešení
@@ -62,11 +62,11 @@ ms.locfileid: "59665451"
 
     Můžete zadat některý z následujících typů cest.
 
-   -   Místní cesta (například *C:\FolderName\FolderName*).
+   - Místní cesta (například *C:\FolderName\FolderName*).
 
-   -   Cestu (Uniform Naming Convention) do složky v síti (například  *\\\ServerName\FolderName*).
+   - Cestu (Uniform Naming Convention) do složky v síti (například  *\\\ServerName\FolderName*).
 
-   -   Relativní cesta (například *PublishFolder\\*, což je složka, ve kterém je projekt publikován ve výchozím nastavení).
+   - Relativní cesta (například *PublishFolder\\*, což je složka, ve kterém je projekt publikován ve výchozím nastavení).
 
 5. V **adresa URL složky instalace** pole, zadejte plně kvalifikovanou cestu k umístění, ve kterém řešení najdou koncoví uživatelé.
 
@@ -133,12 +133,12 @@ ms.locfileid: "59665451"
 
 14. Zkopírujte soubory řešení do umístění instalace, které jste zadali v předchozím kroku tohoto postupu.
 
-##  <a name="Trust"></a> Rozhodnutí o způsobu zajištění důvěryhodnosti řešení
+## <a name="Trust"></a> Rozhodnutí o způsobu zajištění důvěryhodnosti řešení
  Aby bylo možné řešení spustit v počítačích uživatelů, musíte buď zajistit jeho důvěryhodnost, nebo uživatelé musejí při instalaci řešení reagovat na výzvu k potvrzení jeho důvěryhodnosti. Pokud chcete zajistit důvěryhodnost řešení, podepište manifesty pomocí certifikátu, který určuje známého a důvěryhodného vydavatele. Zobrazit [důvěryhodnosti řešení pomocí podepsání manifestů aplikace a nasazení](../vsto/granting-trust-to-office-solutions.md#Signing).
 
  Pokud nasazujete přizpůsobení úrovni dokumentu a chcete dokument umístit do složky v počítači uživatele nebo zpřístupnit dokument na webu služby SharePoint, ujistěte se, zda sada Office považuje umístění dokumentu. Zobrazit [udělit důvěryhodnost dokumenty](../vsto/granting-trust-to-documents.md).
 
-##  <a name="Helping"></a> Pomoc uživatelům s instalací řešení
+## <a name="Helping"></a> Pomoc uživatelům s instalací řešení
  Uživatelé mohou nainstalovat řešení spuštěním instalační program, otevřou manifest nasazení nebo během přizpůsobení na úrovni dokumentu, přímo otevřou dokument. Osvědčeným postupem je instalace řešení pomocí instalačního programu. Ostatní dva přístupy nezajišťují, že je nainstalovaný požadovaný software. Pokud uživatelé chtějí otevřít dokument z umístění instalace, musejí jej přidat do seznamu důvěryhodných umístění v Centru zabezpečení aplikace Office.
 
 ### <a name="opening-the-document-of-a-document-level-customization"></a>Otevření dokumentu přizpůsobení na úrovni dokumentu
@@ -151,34 +151,34 @@ ms.locfileid: "59665451"
 
 ##### <a name="to-add-the-vsto-mime-type-to-iis-60"></a>Přidání typu MIME .vsto do služby IIS 6.0
 
-1.  Na serveru, na kterém běží služby IIS 6.0, zvolte **Start** > **všechny programy** > **nástroje pro správu**  >   **Internetové informační služby (IIS) správce**.
+1. Na serveru, na kterém běží služby IIS 6.0, zvolte **Start** > **všechny programy** > **nástroje pro správu**  >   **Internetové informační služby (IIS) správce**.
 
-2.  Zvolte název počítače, **weby** složku nebo webový server, který konfigurujete.
+2. Zvolte název počítače, **weby** složku nebo webový server, který konfigurujete.
 
-3.  V panelu nabídky zvolte **akce** > **vlastnosti**.
+3. V panelu nabídky zvolte **akce** > **vlastnosti**.
 
-4.  Na **hlavičky protokolu HTTP** , vyberte **typy MIME** tlačítko.
+4. Na **hlavičky protokolu HTTP** , vyberte **typy MIME** tlačítko.
 
-5.  V **typy MIME** okna, vyberte **nový** tlačítko.
+5. V **typy MIME** okna, vyberte **nový** tlačítko.
 
-6.  V **typ MIME** okno, zadejte **.vsto** jako rozšíření, zadejte **application/x-ms-vsto** jako MIME typu a poté použijte nová nastavení.
+6. V **typ MIME** okno, zadejte **.vsto** jako rozšíření, zadejte **application/x-ms-vsto** jako MIME typu a poté použijte nová nastavení.
 
     > [!NOTE]
     >  Aby se změny projevily, je nutné restartovat službu Publikování na webu nebo počkat na recyklaci pracovního procesu. Musíte pak vyprázdnit diskovou mezipaměť prohlížeče a poté se pokusí otevřít *.vsto* soubor znovu.
 
 ##### <a name="to-add-the-vsto-mime-type-to-iis-70"></a>Chcete-li přidat typ MIME .vsto do služby IIS 7.0
 
-1.  Na serveru, na kterém běží služby IIS 7.0, zvolte **Start** > **všechny programy** > **Příslušenství**.
+1. Na serveru, na kterém běží služby IIS 7.0, zvolte **Start** > **všechny programy** > **Příslušenství**.
 
-2.  Otevřete místní nabídku pro **příkazového řádku**a klikněte na tlačítko **spustit jako správce.**
+2. Otevřete místní nabídku pro **příkazového řádku**a klikněte na tlačítko **spustit jako správce.**
 
-3.  V **otevřít** zadejte následující cestu a klikněte na tlačítko **OK** tlačítko.
+3. V **otevřít** zadejte následující cestu a klikněte na tlačítko **OK** tlačítko.
 
     ```cmd
     %windir%\system32\inetsrv
     ```
 
-4.  Zadejte následující příkaz a poté použijte nová nastavení.
+4. Zadejte následující příkaz a poté použijte nová nastavení.
 
     ```cmd
     set config /section:staticContent /+[fileExtension='.vsto',mimeType='application/x-ms-vsto']
@@ -187,7 +187,7 @@ ms.locfileid: "59665451"
     > [!NOTE]
     >  Aby se změny projevily, je nutné restartovat službu Publikování na webu nebo počkat na recyklaci pracovního procesu. Musíte pak vyprázdnit diskovou mezipaměť prohlížeče a poté se pokusí otevřít *.vsto* soubor znovu.
 
-##  <a name="Put"></a> Umístění dokumentu řešení do počítače koncového uživatele (pouze přizpůsobení na úrovni dokumentu)
+## <a name="Put"></a> Umístění dokumentu řešení do počítače koncového uživatele (pouze přizpůsobení na úrovni dokumentu)
  Můžete kopírovat dokument řešení do počítače koncového uživatele pro ně tak, že vytvoříte akci po nasazení. Tímto způsobem, uživatel nebude muset ručně kopírovat dokument z umístění instalace na svém počítači po instalaci vašeho řešení. Bude nutné vytvořit třídu, která definuje akci po nasazení, vytváření a publikování řešení, upravit manifest aplikace a znovu podepsat manifest aplikace a nasazení.
 
  V následujících postupech se předpokládá, že je název vašeho projektu **ExcelWorkbook** a že řešení publikujete do vytvořené složky s názvem **C:\publish** ve vašem počítači.
@@ -221,21 +221,21 @@ ms.locfileid: "59665451"
 
 ### <a name="build-and-publish-the-solution"></a>Sestavení a publikování řešení
 
-1.  V **Průzkumníka řešení**, otevřete místní nabídku **FileCopyPDA** projektu a klikněte na tlačítko **sestavení**.
+1. V **Průzkumníka řešení**, otevřete místní nabídku **FileCopyPDA** projektu a klikněte na tlačítko **sestavení**.
 
-2.  Otevřete místní nabídku **ExcelWorkbook** projektu a klikněte na tlačítko **sestavení**.
+2. Otevřete místní nabídku **ExcelWorkbook** projektu a klikněte na tlačítko **sestavení**.
 
-3.  Otevřete místní nabídku **ExcelWorkbook** projektu a klikněte na tlačítko **přidat odkaz**.
+3. Otevřete místní nabídku **ExcelWorkbook** projektu a klikněte na tlačítko **přidat odkaz**.
 
-4.  V **přidat odkaz** dialogového okna zvolte **projekty** kartě **FileCopyPDA**a klikněte na tlačítko **OK** tlačítko.
+4. V **přidat odkaz** dialogového okna zvolte **projekty** kartě **FileCopyPDA**a klikněte na tlačítko **OK** tlačítko.
 
-5.  V **Průzkumníka řešení**, zvolte **ExcelWorkbook** projektu.
+5. V **Průzkumníka řešení**, zvolte **ExcelWorkbook** projektu.
 
-6.  V řádku nabídek zvolte **projektu** > **novou složku**.
+6. V řádku nabídek zvolte **projektu** > **novou složku**.
 
-7.  Zadejte **Data**a klikněte na tlačítko **Enter** klíč.
+7. Zadejte **Data**a klikněte na tlačítko **Enter** klíč.
 
-8.  V **Průzkumníka řešení**, zvolte **Data** složky.
+8. V **Průzkumníka řešení**, zvolte **Data** složky.
 
 9. V panelu nabídky zvolte **projektu** > **přidat existující položku**.
 
@@ -253,13 +253,13 @@ ms.locfileid: "59665451"
 
 ### <a name="modify-the-application-manifest"></a>Úprava manifestu aplikace
 
-1.  Otevřete adresář řešení **c:\publish**, s použitím **Průzkumníka souborů**.
+1. Otevřete adresář řešení **c:\publish**, s použitím **Průzkumníka souborů**.
 
-2.  Otevřete **soubory aplikace** složku a poté otevřete složku, která odpovídá nejnovější publikované verzi vašeho řešení.
+2. Otevřete **soubory aplikace** složku a poté otevřete složku, která odpovídá nejnovější publikované verzi vašeho řešení.
 
-3.  Otevřít **ExcelWorkbook.dll.manifest** souboru v textovém editoru, jako je například Poznámkový blok.
+3. Otevřít **ExcelWorkbook.dll.manifest** souboru v textovém editoru, jako je například Poznámkový blok.
 
-4.  Po `</vstav3:update>` prvku, přidejte následující kód. Pro atribut class `<vstav3:entryPoint>` elementu, použijte následující syntaxi: *NamespaceName.ClassName*. V následujícím příkladu název oboru názvů a třídy jsou stejné, takže je výsledný název vstupního bodu `FileCopyPDA.FileCopyPDA`.
+4. Po `</vstav3:update>` prvku, přidejte následující kód. Pro atribut class `<vstav3:entryPoint>` elementu, použijte následující syntaxi: *NamespaceName.ClassName*. V následujícím příkladu název oboru názvů a třídy jsou stejné, takže je výsledný název vstupního bodu `FileCopyPDA.FileCopyPDA`.
 
     ```xml
     <vstav3:postActions>
@@ -280,11 +280,11 @@ ms.locfileid: "59665451"
 
 ### <a name="re-sign-the-application-and-deployment-manifests"></a>Opětovné podepsání aplikace a manifestů nasazení
 
-1.  V **%USERPROFILE%\Documents\Visual Studio 2013\Projects\ExcelWorkbook\ExcelWorkbook** složka, Kopírovat **ExcelWorkbook_TemporaryKey.pfx** soubor certifikátu a vložte ho do  *PublishFolder* **\Application Files\ExcelWorkbook**\__MostRecentPublishedVersion_ složky.
+1. V **%USERPROFILE%\Documents\Visual Studio 2013\Projects\ExcelWorkbook\ExcelWorkbook** složka, Kopírovat **ExcelWorkbook_TemporaryKey.pfx** soubor certifikátu a vložte ho do  *PublishFolder* **\Application Files\ExcelWorkbook**\__MostRecentPublishedVersion_ složky.
 
-2.  Otevřete příkazový řádek sady Visual Studio a potom změňte adresáře na **c:\publish\Application Files\ExcelWorkbook**\__MostRecentPublishedVersion_ složky (například **c:\publish\Application Files\ExcelWorkbook_1_0_0_4**).
+2. Otevřete příkazový řádek sady Visual Studio a potom změňte adresáře na **c:\publish\Application Files\ExcelWorkbook**\__MostRecentPublishedVersion_ složky (například **c:\publish\Application Files\ExcelWorkbook_1_0_0_4**).
 
-3.  Podepište upravený manifest aplikace spuštěním následujícího příkazu:
+3. Podepište upravený manifest aplikace spuštěním následujícího příkazu:
 
     ```cmd
     mage -sign ExcelWorkbook.dll.manifest -certfile ExcelWorkbook_TemporaryKey.pfx
@@ -292,7 +292,7 @@ ms.locfileid: "59665451"
 
      Zobrazí se zpráva „ExcelWorkbook.dll.manifest successfully signed“ („Soubor ExcelWorkbook.dll.manifest byl úspěšně podepsán.“).
 
-4.  Přejděte **c:\publish** složky a pak aktualizace a znaménko nasazení manifestu spuštěním následujícího příkazu:
+4. Přejděte **c:\publish** složky a pak aktualizace a znaménko nasazení manifestu spuštěním následujícího příkazu:
 
     ```cmd
     mage -update ExcelWorkbook.vsto -appmanifest "Application Files\Ex
@@ -304,38 +304,38 @@ ms.locfileid: "59665451"
 
      Zobrazí se zpráva „ExcelWorkbook.vsto successfully signed“ („Soubor ExcelWorkbook.vsto byl úspěšně podepsán.“).
 
-5.  Kopírovat *ExcelWorkbook.vsto* do souboru **c:\publish\Application Files\ExcelWorkbook**\__část MostRecentVersionNumber_ adresáře.
+5. Kopírovat *ExcelWorkbook.vsto* do souboru **c:\publish\Application Files\ExcelWorkbook**\__část MostRecentVersionNumber_ adresáře.
 
-##  <a name="SharePoint"></a> Umístění dokumentu řešení na server, na kterém běží SharePoint (pouze přizpůsobení na úrovni dokumentu)
+## <a name="SharePoint"></a> Umístění dokumentu řešení na server, na kterém běží SharePoint (pouze přizpůsobení na úrovni dokumentu)
  Přizpůsobení na úrovni dokumentu můžete pro koncové uživatele publikovat pomocí služby SharePoint. Když uživatelé přejdou na web služby SharePoint a dokument otevřou, modul runtime automaticky nainstaluje řešení ze sdílené síťové složky do místního počítače uživatele. Jakmile je řešení nainstalováno místně, bude přizpůsobení nadále fungovat i v případě, že je dokument zkopírován do jiného umístění, například na plochu.
 
 #### <a name="to-put-the-document-on-a-server-thats-running-sharepoint"></a>Umístění dokumentu na server, na kterém je spuštěna služba SharePoint
 
-1.  Přidejte dokument řešení do knihovny dokumentů na webu služby SharePoint.
+1. Přidejte dokument řešení do knihovny dokumentů na webu služby SharePoint.
 
-2.  Proveďte jeden z následujících postupů:
+2. Proveďte jeden z následujících postupů:
 
-    -   Pomocí konfiguračního nástroje sady Office přidejte server, na němž je spuštěna služba SharePoint, do Centra zabezpečení v aplikaci Word nebo Excel na všech počítačích uživatelů.
+    - Pomocí konfiguračního nástroje sady Office přidejte server, na němž je spuštěna služba SharePoint, do Centra zabezpečení v aplikaci Word nebo Excel na všech počítačích uživatelů.
 
          Zobrazit [zásady zabezpečení a nastavení v aplikaci Office 2010](http://go.microsoft.com/fwlink/?LinkId=99227).
 
-    -   Postarejte se, aby každý uživatel provedl následující kroky.
+    - Postarejte se, aby každý uživatel provedl následující kroky.
 
-        1.  V místním počítači, spusťte aplikaci Word nebo Excel, zvolte **souboru** kartu a klikněte na tlačítko **možnosti** tlačítko.
+        1. V místním počítači, spusťte aplikaci Word nebo Excel, zvolte **souboru** kartu a klikněte na tlačítko **možnosti** tlačítko.
 
-        2.  V **centrum** dialogového okna zvolte **důvěryhodná umístění** tlačítko.
+        2. V **centrum** dialogového okna zvolte **důvěryhodná umístění** tlačítko.
 
-        3.  Vyberte **Povolit důvěryhodná umístění v síti (nedoporučuje se)** zaškrtněte políčko a klikněte na tlačítko **přidat nové umístění** tlačítko.
+        3. Vyberte **Povolit důvěryhodná umístění v síti (nedoporučuje se)** zaškrtněte políčko a klikněte na tlačítko **přidat nové umístění** tlačítko.
 
-        4.  V **cesta** zadejte adresu URL knihovny dokumentů služby SharePoint, která obsahuje dokument, který jste nahráli (například *http://SharePointServerName/TeamName/ProjectName/DocumentLibraryName*).
+        4. V **cesta** zadejte adresu URL knihovny dokumentů služby SharePoint, která obsahuje dokument, který jste nahráli (například *http://SharePointServerName/TeamName/ProjectName/DocumentLibraryName*).
 
              Nepřidávejte název výchozí webové stránky, jako například *default.aspx* nebo *AllItems.aspx*.
 
-        5.  Vyberte **podsložky tohoto umístění jsou také důvěryhodné** zaškrtněte políčko a klikněte na tlačítko **OK** tlačítko.
+        5. Vyberte **podsložky tohoto umístění jsou také důvěryhodné** zaškrtněte políčko a klikněte na tlačítko **OK** tlačítko.
 
              Když uživatelé otevřou dokument z webu služby SharePoint, dokument se otevře a nainstaluje se přizpůsobení. Uživatelé mohou dokument zkopírovat na svou plochu. Přizpůsobení bude stále možné spustit, protože vlastnosti v dokumentu odkazují na síťové umístění dokumentu.
 
-##  <a name="Custom"></a> Vytvoření vlastního instalačního programu
+## <a name="Custom"></a> Vytvoření vlastního instalačního programu
  Můžete vytvořit vlastní instalační program pro vaše řešení pro Office, namísto použití instalačního programu, který je vytvořen při publikování řešení. Například můžete použít znak ve skriptu ke spuštění instalace, nebo můžete použít dávkový soubor k instalaci řešení bez zásahu uživatele. Tyto scénáře fungují nejlépe, pokud jsou požadované součásti již nainstalovány v počítačích koncových uživatelů.
 
  Jako součást procesu vlastní instalace volejte instalační nástroj pro řešení Office (*VSTOInstaller.exe*), který je ve výchozím nastavení nainstalován v následujícím umístění:
@@ -369,12 +369,12 @@ ms.locfileid: "59665451"
 |-401|Řešení nelze odinstalovat.|
 |-500|Operace byla zrušena, protože řešení nelze nainstalovat nebo odinstalovat nebo nelze stáhnout manifest nasazení.|
 
-##  <a name="Update"></a> Publikování aktualizace
+## <a name="Update"></a> Publikování aktualizace
  Pokud chcete aktualizovat řešení, můžete je znovu publikovat s použitím **Návrháře projektu** nebo **Průvodce publikováním**, a poté zkopírovat aktualizované řešení do umístění instalace. Při kopírování souborů do umístění instalace je nutné přepsat předchozí soubory.
 
  Při příštím až řešení příště vyhledat aktualizace, bude najít a automaticky načte novou verzi.
 
-##  <a name="Location"></a> Změna umístění instalace řešení
+## <a name="Location"></a> Změna umístění instalace řešení
  Po publikování řešení můžete přidat nebo změnit cestu instalace. Změnit cestu instalace může být vhodné z některého z následujících důvodů:
 
 - Instalační program byl zkompilován ještě předtím, než byla známa cesta instalace.
@@ -410,40 +410,40 @@ ms.locfileid: "59665451"
 
 #### <a name="to-update-the-assemblylocation-property-in-a-document"></a>Aktualizace vlastnosti _AssemblyLocation v dokumentu
 
-1.  Na **souboru** kartě **informace**, které ukazuje následující obrázek.
+1. Na **souboru** kartě **informace**, které ukazuje následující obrázek.
 
      ![Informace o kartě v aplikaci Excel](../vsto/media/vsto-infotab.png "kartě informace jsou v aplikaci Excel")
 
-2.  V **vlastnosti** klikněte na položku **Upřesnit vlastnosti**, které ukazuje následující obrázek.
+2. V **vlastnosti** klikněte na položku **Upřesnit vlastnosti**, které ukazuje následující obrázek.
 
      ![Upřesňující vlastnosti v aplikaci Excel. ](../vsto/media/vsto-advanceddocumentproperties.png "Rozšířené vlastnosti v aplikaci Excel.")
 
-3.  Na **vlastní** kartu **vlastnosti** klikněte na položku _AssemblyLocation, jako je vidět na následujícím obrázku.
+3. Na **vlastní** kartu **vlastnosti** klikněte na položku _AssemblyLocation, jako je vidět na následujícím obrázku.
 
      ![Vlastnost AssemblyLocation. ](../vsto/media/vsto-assemblylocationproperty.png "The AssemblyLocation vlastnost.")
 
      **Hodnotu** pole obsahuje identifikátor manifestu nasazení.
 
-4.  Před identifikátor zadejte plně kvalifikovanou cestu souboru, za nímž následuje panelu ve formátu *cesta*|*identifikátor* (například *File://ServerName/ Název_složky/FileName | 74744e4b-e4d6-41eb-84f7-ad20346fe2d9*.
+4. Před identifikátor zadejte plně kvalifikovanou cestu souboru, za nímž následuje panelu ve formátu *cesta*|*identifikátor* (například *File://ServerName/ Název_složky/FileName | 74744e4b-e4d6-41eb-84f7-ad20346fe2d9*.
 
      Další informace o tom, jak formátovat tento identifikátor, naleznete v tématu [přehled vlastností dokumentu vlastní](../vsto/custom-document-properties-overview.md).
 
-5.  Zvolte **OK** tlačítko a pak uložte a zavřete dokument.
+5. Zvolte **OK** tlačítko a pak uložte a zavřete dokument.
 
-6.  Nainstalujte řešení do zadaného umístění tak, že spustíte instalační program bez parametru /url.
+6. Nainstalujte řešení do zadaného umístění tak, že spustíte instalační program bez parametru /url.
 
-##  <a name="Roll"></a> Vrácení řešení zpět na předchozí verzi
+## <a name="Roll"></a> Vrácení řešení zpět na předchozí verzi
  Když vrátíte řešení zpět, budou uživatelé opět používat předchozí verzi tohoto řešení.
 
 #### <a name="to-roll-back-a-solution"></a>Vrácení řešení zpět
 
-1.  Otevřete umístění instalace řešení.
+1. Otevřete umístění instalace řešení.
 
-2.  Na nejvyšší úrovni složky pro publikování, odstraňte manifest nasazení ( *.vsto* souboru).
+2. Na nejvyšší úrovni složky pro publikování, odstraňte manifest nasazení ( *.vsto* souboru).
 
-3.  Vyhledejte podsložku pro verzi, kterou chcete vrátit zpět.
+3. Vyhledejte podsložku pro verzi, kterou chcete vrátit zpět.
 
-4.  Zkopírujte manifest nasazení z této podsložky do složky na nejvyšší úrovni.
+4. Zkopírujte manifest nasazení z této podsložky do složky na nejvyšší úrovni.
 
      Například, chcete-li vrátit zpět řešení, která je volána **OutlookAddIn1** z verze 1.0.0.1 na verzi 1.0.0.0, zkopírujte soubor **OutlookAddIn1.vsto** z **OutlookAddIn1_1_0_0_0** složky. Vložte soubor do na nejvyšší úrovni složky manifest nasazení specifické verze pro pro publikování **OutlookAddIn1_1_0_0_1** , který byl již existuje.
 

@@ -12,12 +12,12 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 11a8f649256c9c25f045f4417d293e7b6ff842a7
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 77f57eeda2f193170f4cd4f8b09d92989962e7fd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59655384"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061590"
 ---
 # <a name="walkthrough-creating-an-inline-task"></a>Návod: Vytvoření vložené úlohy
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,15 +47,15 @@ ms.locfileid: "59655384"
   
 #### <a name="to-create-and-modify-a-project-file"></a>K vytvoření a úprava souboru projektu  
   
-1.  V sadě Visual Studio na **souboru** nabídky, klikněte na tlačítko **nový** a potom klikněte na tlačítko **projektu**.  
+1. V sadě Visual Studio na **souboru** nabídky, klikněte na tlačítko **nový** a potom klikněte na tlačítko **projektu**.  
   
-2.  V **nový projekt** dialogovém okně Visual C# typ projektu a pak vyberte **formulářová aplikace Windows** šablony. V **název** zadejte `InlineTasks`. Zadejte **umístění** pro řešení, například `D:\`. Ujistěte se, že **vytvořit adresář pro řešení** je vybrána, **přidat do správy zdrojových kódů** zaškrtnuté není, a **název řešení** je `InlineTasks`.  
+2. V **nový projekt** dialogovém okně Visual C# typ projektu a pak vyberte **formulářová aplikace Windows** šablony. V **název** zadejte `InlineTasks`. Zadejte **umístění** pro řešení, například `D:\`. Ujistěte se, že **vytvořit adresář pro řešení** je vybrána, **přidat do správy zdrojových kódů** zaškrtnuté není, a **název řešení** je `InlineTasks`.  
   
      Klikněte na tlačítko **OK** k vytvoření souboru projektu.  
   
-3.  V **Průzkumníka řešení**, klikněte pravým tlačítkem na uzel projektu InlineTasks a potom klikněte na tlačítko **uvolnit projekt**.  
+3. V **Průzkumníka řešení**, klikněte pravým tlačítkem na uzel projektu InlineTasks a potom klikněte na tlačítko **uvolnit projekt**.  
   
-4.  Znovu klikněte pravým tlačítkem na uzel projektu a pak klikněte na tlačítko **upravit InlineTasks.csproj**.  
+4. Znovu klikněte pravým tlačítkem na uzel projektu a pak klikněte na tlačítko **upravit InlineTasks.csproj**.  
   
      Soubor projektu se zobrazí v editoru kódu.  
   

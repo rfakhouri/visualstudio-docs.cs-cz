@@ -1,5 +1,5 @@
 ---
-title: 'Průvodce: Vytváření rozšíření projektu SharePoint | Dokumentace Microsoftu'
+title: 'Návod: Vytváření rozšíření projektu SharePoint | Dokumentace Microsoftu'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,38 +14,38 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0f85077ba5f510f545fe854866bfaebb322d0d24
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 832af0383d2ff00b4f2d415257abdfbe3ad4bf91
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56630961"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60062350"
 ---
-# <a name="walkthrough-create-a-sharepoint-project-extension"></a>Průvodce: Vytváření rozšíření projektu SharePoint
+# <a name="walkthrough-create-a-sharepoint-project-extension"></a>Návod: Vytváření rozšíření projektu SharePoint
   Tento návod ukazuje, jak vytvořit rozšíření pro projekty služby SharePoint. Rozšíření projektu můžete použít pro reakci na události na úrovni projektu, například pokud je projekt přidat, odstranit nebo přejmenovat. Můžete také přidat vlastní vlastnosti nebo odpovědět při změně hodnoty vlastnosti. Na rozdíl od rozšíření položky projektu projektu rozšíření nemůže být spojeny s konkrétní typ projektu služby SharePoint. Při vytváření rozšíření projektu rozšíření načte při otevření jakékoliv projektu služby SharePoint v [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
  V tomto návodu vytvoříte vlastní logickou vlastnost, která se přidá do jakéhokoli projektu SharePoint vytvoří v [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Pokud je nastavena na **True**, novou vlastnost přidá nebo mapuje složku Obrázky prostředků do vašeho projektu. Pokud je nastavena na **False**, složce bitové kopie je odebrána, pokud existuje. Další informace najdete v tématu [postupy: Přidání a odebrání mapovaných složek](../sharepoint/how-to-add-and-remove-mapped-folders.md).
 
  Tento návod demonstruje následující úkoly:
 
--   Vytváření [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] rozšíření pro projekty služby SharePoint, který provede následující akce:
+- Vytváření [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] rozšíření pro projekty služby SharePoint, který provede následující akce:
 
-    -   Přidá vlastní vlastnost projektu v okně Vlastnosti. Vlastnost se vztahuje do jakéhokoli projektu SharePoint.
+    - Přidá vlastní vlastnost projektu v okně Vlastnosti. Vlastnost se vztahuje do jakéhokoli projektu SharePoint.
 
-    -   Přidat mapovanou složku do projektu používá model objektu projektu služby SharePoint.
+    - Přidat mapovanou složku do projektu používá model objektu projektu služby SharePoint.
 
-    -   Používá [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] modelu automatizačních objektů (DTE) pro mapovanou složku odstranit z projektu.
+    - Používá [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] modelu automatizačních objektů (DTE) pro mapovanou složku odstranit z projektu.
 
--   Vytváření [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Extension (VSIX) balíčku pro nasazení sestavení rozšíření vlastnost projektu.
+- Vytváření [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Extension (VSIX) balíčku pro nasazení sestavení rozšíření vlastnost projektu.
 
--   Ladění a testování vlastnosti projektu.
+- Ladění a testování vlastnosti projektu.
 
 ## <a name="prerequisites"></a>Požadavky
  Budete potřebovat následující komponenty na vývojovém počítači k dokončení tohoto návodu:
 
--   Podporované edice systému [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)], SharePoint a [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
+- Podporované edice systému [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)], SharePoint a [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
--   [!INCLUDE[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)]. Tento návod používá **projekt VSIX** šablony [!INCLUDE[TLA2#tla_sdk](../sharepoint/includes/tla2sharptla-sdk-md.md)] k vytvoření balíčku VSIX k nasazení rozšíření vlastnosti projektu. Další informace najdete v tématu [rozšíření nástrojů SharePoint v sadě Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).
+- [!INCLUDE[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)]. Tento návod používá **projekt VSIX** šablony [!INCLUDE[TLA2#tla_sdk](../sharepoint/includes/tla2sharptla-sdk-md.md)] k vytvoření balíčku VSIX k nasazení rozšíření vlastnosti projektu. Další informace najdete v tématu [rozšíření nástrojů SharePoint v sadě Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).
 
 ## <a name="create-the-projects"></a>Vytváření projektů
  K dokončení tohoto návodu, je nutné vytvořit dva projekty:
@@ -58,58 +58,58 @@ ms.locfileid: "56630961"
 
 #### <a name="to-create-the-vsix-project"></a>Vytvoření projektu VSIX
 
-1.  Spustit [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
+1. Spustit [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
-2.  V panelu nabídky zvolte **souboru** > **nový** > **projektu**.
+2. V panelu nabídky zvolte **souboru** > **nový** > **projektu**.
 
-3.  V **nový projekt** dialogového okna rozbalte **Visual C#** nebo **jazyka Visual Basic** uzly a klikněte na tlačítko **rozšiřitelnost** uzlu.
+3. V **nový projekt** dialogového okna rozbalte **Visual C#** nebo **jazyka Visual Basic** uzly a klikněte na tlačítko **rozšiřitelnost** uzlu.
 
     > [!NOTE]
     >  Tento uzel je dostupná jenom v případě, že nainstalujete Visual Studio SDK. Další informace najdete v oddílu požadavky dříve v tomto tématu.
 
-4.  V horní části dialogového okna zvolte **rozhraní .NET Framework 4.5** v seznam verzí rozhraní .NET Framework a klikněte na tlačítko **projekt VSIX** šablony.
+4. V horní části dialogového okna zvolte **rozhraní .NET Framework 4.5** v seznam verzí rozhraní .NET Framework a klikněte na tlačítko **projekt VSIX** šablony.
 
-5.  V **název** zadejte **ProjectExtensionPackage**a klikněte na tlačítko **OK** tlačítko.
+5. V **název** zadejte **ProjectExtensionPackage**a klikněte na tlačítko **OK** tlačítko.
 
      **ProjectExtensionPackage** projekt se objeví v **Průzkumníka řešení**.
 
 #### <a name="to-create-the-extension-project"></a>Chcete-li vytvořit projekt rozšíření
 
-1.  V **Průzkumníka řešení**, otevřete místní nabídku pro uzel řešení, zvolte **přidat**a klikněte na tlačítko **nový projekt**.
+1. V **Průzkumníka řešení**, otevřete místní nabídku pro uzel řešení, zvolte **přidat**a klikněte na tlačítko **nový projekt**.
 
-2.  V **nový projekt** dialogového okna rozbalte **Visual C#** nebo **jazyka Visual Basic** uzly a klikněte na tlačítko **Windows**.
+2. V **nový projekt** dialogového okna rozbalte **Visual C#** nebo **jazyka Visual Basic** uzly a klikněte na tlačítko **Windows**.
 
-3.  V horní části dialogového okna zvolte **rozhraní .NET Framework 4.5** v seznam verzí rozhraní .NET Framework a klikněte na tlačítko **knihovny tříd** šablony projektu.
+3. V horní části dialogového okna zvolte **rozhraní .NET Framework 4.5** v seznam verzí rozhraní .NET Framework a klikněte na tlačítko **knihovny tříd** šablony projektu.
 
-4.  V **název** zadejte **ProjectExtension**a klikněte na tlačítko **OK** tlačítko.
+4. V **název** zadejte **ProjectExtension**a klikněte na tlačítko **OK** tlačítko.
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Přidá **ProjectExtension** projektu do řešení a otevře soubor výchozího kódu Class1.
 
-5.  Odstraňte soubor kódu Class1 z projektu.
+5. Odstraňte soubor kódu Class1 z projektu.
 
 ## <a name="configure-the-project"></a>Konfigurace projektu
  Před napsáním kódu pro vytváření rozšíření projektu přidejte soubory kódu a odkazy na sestavení do projektu rozšíření.
 
 #### <a name="to-configure-the-project"></a>Konfigurace projektu
 
-1.  Přidat soubor kódu, který je pojmenován **CustomProperty** ProjectExtension projektu.
+1. Přidat soubor kódu, který je pojmenován **CustomProperty** ProjectExtension projektu.
 
-2.  Otevřete místní nabídku **ProjectExtension** projektu a klikněte na tlačítko **přidat odkaz**.
+2. Otevřete místní nabídku **ProjectExtension** projektu a klikněte na tlačítko **přidat odkaz**.
 
-3.  V **správce odkazů - CustomProperty** dialogového okna zvolte **Framework** uzel a potom zaškrtněte políčko vedle System.ComponentModel.Composition a System.Windows.Forms sestavení.
+3. V **správce odkazů - CustomProperty** dialogového okna zvolte **Framework** uzel a potom zaškrtněte políčko vedle System.ComponentModel.Composition a System.Windows.Forms sestavení.
 
-4.  Zvolte **rozšíření** uzlu, zaškrtněte políčko vedle Microsoft.VisualStudio.SharePoint a EnvDTE sestavení a klikněte na tlačítko **OK** tlačítko.
+4. Zvolte **rozšíření** uzlu, zaškrtněte políčko vedle Microsoft.VisualStudio.SharePoint a EnvDTE sestavení a klikněte na tlačítko **OK** tlačítko.
 
-5.  V **Průzkumníka řešení**v části **odkazy** složku **ProjectExtension** projektu, zvolte **EnvDTE**.
+5. V **Průzkumníka řešení**v části **odkazy** složku **ProjectExtension** projektu, zvolte **EnvDTE**.
 
-6.  V **vlastnosti** okno Změnit **Embed Interop Types** vlastnost **False**.
+6. V **vlastnosti** okno Změnit **Embed Interop Types** vlastnost **False**.
 
 ## <a name="define-the-new-sharepoint-project-property"></a>Definovat nové vlastnosti projektu služby SharePoint
  Vytvořte třídu, která definuje rozšíření projektu a chování nové vlastnosti projektu. Chcete-li definovat nový projekt rozšíření, třída implementuje <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension> rozhraní. Toto rozhraní implementujte, kdykoli budete chtít definovat rozšíření projektu služby SharePoint. Přidejte také <xref:System.ComponentModel.Composition.ExportAttribute> do třídy. Tento atribut umožňuje [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] zjišťovat a načíst vaše <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension> implementace. Předat <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension> typ konstruktoru atributu.
 
 #### <a name="to-define-the-new-sharepoint-project-property"></a>Chcete-li definovat nové vlastnosti projektu služby SharePoint
 
-1.  Vložte následující kód do souboru CustomProperty.
+1. Vložte následující kód do souboru CustomProperty.
 
      [!code-vb[SPExt_ProjectExtension#1](../sharepoint/codesnippet/VisualBasic/projectextension/customproperty.vb#1)]
      [!code-csharp[SPExt_ProjectExtension#1](../sharepoint/codesnippet/CSharp/projectextension/customproperty.cs#1)]
@@ -119,35 +119,35 @@ ms.locfileid: "56630961"
 
 #### <a name="to-build-the-solution"></a>Abyste mohli sestavit řešení
 
-1.  V panelu nabídky zvolte **sestavení** > **sestavit řešení**.
+1. V panelu nabídky zvolte **sestavení** > **sestavit řešení**.
 
 ## <a name="create-a-vsix-package-to-deploy-the-project-property-extension"></a>Vytvoření balíčku VSIX k nasazení rozšíření vlastností projektu
  Pokud chcete nasadit rozšíření projektu, použijte VSIX projekt ve vašem řešení k vytvoření balíčku VSIX. Nejprve nakonfigurujte VSIX balíček úpravou souboru source.extension.vsixmanifest, který je součástí projektu VSIX. Potom vytvořte VSIX balíček vytvořením řešení.
 
 #### <a name="to-configure-and-create-the-vsix-package"></a>Konfigurace a vytvoření balíčku VSIX
 
-1.  V **Průzkumníka řešení**, otevřete místní nabídku pro soubor source.extension.vsixmanifest a klikněte na tlačítko **otevřete** tlačítko.
+1. V **Průzkumníka řešení**, otevřete místní nabídku pro soubor source.extension.vsixmanifest a klikněte na tlačítko **otevřete** tlačítko.
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Otevře soubor v Návrháři manifestu. Informace, které se zobrazí v **metadat** kartě se zobrazí také v **rozšíření a aktualizace**. Všechny balíčky VSIX vyžadují soubor extension.vsixmanifest. Další informace o tomto souboru najdete v tématu [odkaz 1.0 schématu rozšíření VSIX](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).
 
-2.  V **název produktu** zadejte **vlastní vlastnost projektu**.
+2. V **název produktu** zadejte **vlastní vlastnost projektu**.
 
-3.  V **Autor** zadejte **Contoso**.
+3. V **Autor** zadejte **Contoso**.
 
-4.  V **popis** zadejte **vlastní vlastnost projektu služby SharePoint, která přepíná mapování složky prostředku bitové kopie do projektu**.
+4. V **popis** zadejte **vlastní vlastnost projektu služby SharePoint, která přepíná mapování složky prostředku bitové kopie do projektu**.
 
-5.  Zvolte **prostředky** kartu a klikněte na tlačítko **nový** tlačítko.
+5. Zvolte **prostředky** kartu a klikněte na tlačítko **nový** tlačítko.
 
      **Přidat nové aktivum** zobrazí se dialogové okno.
 
-6.  V **typ** klikněte na položku **Microsoft.VisualStudio.MefComponent**.
+6. V **typ** klikněte na položku **Microsoft.VisualStudio.MefComponent**.
 
     > [!NOTE]
     >  Tato hodnota odpovídá `MEFComponent` element v souboru extension.vsixmanifest. Tento prvek určuje název sestavení rozšíření v balíčku souboru VSIX. Další informace najdete v tématu [MEFComponent – Element (VSX schéma)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).
 
-7.  V **zdroj** klikněte na položku **projekt v aktuálním řešení** přepínač.
+7. V **zdroj** klikněte na položku **projekt v aktuálním řešení** přepínač.
 
-8.  V **projektu** klikněte na položku **ProjectExtension**.
+8. V **projektu** klikněte na položku **ProjectExtension**.
 
      Tato hodnota určuje název sestavení, které vytváříte v projektu.
 
@@ -168,37 +168,37 @@ ms.locfileid: "56630961"
 
 #### <a name="to-debug-and-test-the-extension-in-an-experimental-instance-of-visual-studio"></a>Ladění a testování rozšíření v experimentální instanci sady Visual Studio
 
-1.  Restartujte [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] s přihlašovacími údaji správce a pak otevřete ProjectExtensionPackage řešení.
+1. Restartujte [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] s přihlašovacími údaji správce a pak otevřete ProjectExtensionPackage řešení.
 
-2.  Spustit sestavení pro ladění projektu buď pomocí tlačítka **F5** klíče nebo na panelu nabídek, výběrem **ladění** > **spustit ladění**.
+2. Spustit sestavení pro ladění projektu buď pomocí tlačítka **F5** klíče nebo na panelu nabídek, výběrem **ladění** > **spustit ladění**.
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] nainstaluje rozšíření do %UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0Exp\Extensions\Contoso\Custom Property\1 projektu. 0 a spustí experimentální instanci [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
-3.  V experimentální instanci [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], vytvoření projektu služby SharePoint pro řešení farmy a použijte výchozí hodnoty pro ostatní hodnoty v průvodci.
+3. V experimentální instanci [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], vytvoření projektu služby SharePoint pro řešení farmy a použijte výchozí hodnoty pro ostatní hodnoty v průvodci.
 
-    1.  V panelu nabídky zvolte **souboru** > **nový** > **projektu**.
+    1. V panelu nabídky zvolte **souboru** > **nový** > **projektu**.
 
-    2.  V horní části **nový projekt** dialogového okna zvolte **rozhraní .NET Framework 3.5** v seznam verzí rozhraní .NET Framework.
+    2. V horní části **nový projekt** dialogového okna zvolte **rozhraní .NET Framework 3.5** v seznam verzí rozhraní .NET Framework.
 
          Rozšíření nástrojů SharePoint vyžaduje funkce v této verzi [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)].
 
-    3.  V části **šablony** uzlu, rozbalte **Visual C#** nebo **jazyka Visual Basic** uzlu, vyberte **SharePoint** uzel a klikněte na tlačítko **2010** uzlu.
+    3. V části **šablony** uzlu, rozbalte **Visual C#** nebo **jazyka Visual Basic** uzlu, vyberte **SharePoint** uzel a klikněte na tlačítko **2010** uzlu.
 
-    4.  Zvolte **projektu služby SharePoint 2010** šablony a pak zadejte **ModuleTest** jako název projektu.
+    4. Zvolte **projektu služby SharePoint 2010** šablony a pak zadejte **ModuleTest** jako název projektu.
 
-4.  V **Průzkumníka řešení**, zvolte **ModuleTest** uzel projektu.
+4. V **Průzkumníka řešení**, zvolte **ModuleTest** uzel projektu.
 
      Nové vlastní vlastnost **složka obrázky mapy** se zobrazí v **vlastnosti** okno s výchozí hodnotou **False**.
 
-5.  Změňte hodnotu této vlastnosti na **True**.
+5. Změňte hodnotu této vlastnosti na **True**.
 
      Složka prostředků obrázků se přidá do projektu služby SharePoint.
 
-6.  Hodnota dané vlastnosti se vraťte do **False**.
+6. Hodnota dané vlastnosti se vraťte do **False**.
 
      Pokud se rozhodnete **Ano** tlačítko **odstranit složku Obrázky?** dialogové okno, bitové kopie z projektu služby SharePoint se odstraní složka prostředků.
 
-7.  Ukončete experimentální instanci [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
+7. Ukončete experimentální instanci [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
 ## <a name="see-also"></a>Viz také:
 - [Rozšíření projektů SharePoint](../sharepoint/extending-sharepoint-projects.md)

@@ -11,12 +11,12 @@ ms.assetid: b6a5e8b2-0ae1-4fc3-812d-09d40051b435
 caps.latest.revision: 32
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8dd9b637571bfd7d2480992c7a2fef74a0d5b393
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: dc94d11a5ed118f0133657ebf5b966623a199d64
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54777520"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064385"
 ---
 # <a name="creating-custom-editors-and-designers"></a>Vytváření vlastních editorů a návrhářů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,23 +51,23 @@ Integrovaného vývojového prostředí (IDE) sady Visual Studio může hostovat
 ## <a name="editor-design-decisions"></a>Rozhodnutí o návrhu editoru  
  Následující dotazy týkající se návrhu vám pomůže zvolit typ editoru nejlepší vhodné pro vaši aplikaci:  
   
--   Vaše aplikace uloží svoje data v souborech nebo ne? Pokud svá data se uloží v souborech, že bude ve formátu vlastních nebo standardních?  
+- Vaše aplikace uloží svoje data v souborech nebo ne? Pokud svá data se uloží v souborech, že bude ve formátu vlastních nebo standardních?  
   
      Pokud používáte standardní formát souboru, budou ostatní typy projektů, kromě projektu pro otevírání a čtení a zápisu dat do nich. Pokud používáte vlastní formát, ale pouze typ projektu bude pro otevírání a čtení a zápisu dat do nich.  
   
      Pokud váš projekt používá soubory, pak můžete přizpůsobit standardní editor. Pokud váš projekt nepoužívá soubory, ale místo toho používá položky v databázi nebo jiného úložiště, měli byste vytvořit vlastní editor.  
   
--   Potřebuje váš editor k hostování ovládacích prvků ActiveX?  
+- Potřebuje váš editor k hostování ovládacích prvků ActiveX?  
   
      Pokud editor hostuje ovládací prvky ActiveX, editoru aktivace na místě, jak je uvedeno v pak implementovat [aktivace na místě](../misc/in-place-activation.md). Pokud není hostitelem ovládacích prvků ActiveX, pak použijte zjednodušená vkládání editor nebo přizpůsobení [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] výchozí editor.  
   
--   Editor bude podporovat více zobrazení? Pokud chcete, aby zobrazení editoru mají být zobrazeny ve stejnou dobu jako výchozí editor, musí podporovat několik zobrazení.  
+- Editor bude podporovat více zobrazení? Pokud chcete, aby zobrazení editoru mají být zobrazeny ve stejnou dobu jako výchozí editor, musí podporovat několik zobrazení.  
   
      Pokud editor musí podporovat více zobrazení, data dokumentu a objekty zobrazení dokumentu v editoru musí být samostatné objekty. Další informace najdete v tématu [podpora více zobrazení dokumentů](../extensibility/supporting-multiple-document-views.md).  
   
      Pokud editor podporuje několik zobrazení, máte v úmyslu použít [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] základní implementaci vyrovnávací paměti textu editoru (<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> objekt) pro váš datový objekt dokumentu? To znamená, že chcete podporovat váš editor zobrazení – souběžně s [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] základní editor? Tuto možnost je základem Návrhář formulářů...  
   
--   Pokud potřebujete k hostování externím editoru, editoru jde vložit uvnitř [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]?  
+- Pokud potřebujete k hostování externím editoru, editoru jde vložit uvnitř [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]?  
   
      Pokud může být vložen, by měl vytvořit okno hostitele pro externí editor a poté zavolejte <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A> metoda a nastavte <xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY> hodnotu výčtu pro `DP_External`. Pokud editoru nemůže být vložený, rozhraní IDE vytvoří pro ni automaticky samostatném okně  
   
