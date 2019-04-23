@@ -9,21 +9,21 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 98ed22a9a6e570c5e47c6b51ddf4486334205a0f
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 1d388db50ae935ef85b720177bd31c832a353d31
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59661266"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080556"
 ---
 # <a name="searching-the-schema-set"></a>Hledání v sadě schémat
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Průzkumníka schémat XML umožňuje hledat schéma nastavit následujícími způsoby:  
   
--   Hledání klíčových slov.  
+- Hledání klíčových slov.  
   
--   Hledání podle schématu.  
+- Hledání podle schématu.  
   
 ## <a name="keyword-search"></a>Hledání klíčových slov  
  Provádět vyhledávání – klíčové slovo tak, že zadáte podřetězce v **hledání SchemaSet** textového pole panelu nástrojů Průzkumník schémat XML.  
@@ -32,11 +32,11 @@ Průzkumníka schémat XML umožňuje hledat schéma nastavit následujícími z
   
  Průzkumníka schémat XML vyhledá schéma, nastavte následující:  
   
--   Žádné `name` nebo `ref` atributy, které odpovídají zadané klíčové slovo. To umožňuje najít prvky, atributy, typy, a tak dále podle názvu.  
+- Žádné `name` nebo `ref` atributy, které odpovídají zadané klíčové slovo. To umožňuje najít prvky, atributy, typy, a tak dále podle názvu.  
   
--   `schemaLocation` Atributy #include.  
+- `schemaLocation` Atributy #include.  
   
--   `namespace` Atributy příkazy pro import.  
+- `namespace` Atributy příkazy pro import.  
   
 ## <a name="schema-specific-search"></a>Konkrétní schéma vyhledávání  
  Průzkumníka schémat XML také zahrnuje integrované hledání, kterým můžete přistupovat pomocí místní nabídky Průzkumníka schémat XML. Další informace o dostupných kontextové nabídky, naleznete v tématu [kontextové nabídky](../xml-tools/context-menus-xml-schema-explorer.md). Můžete také provádět konkrétní schéma vyhledávání ze zobrazení spuštění; Další informace najdete v části "Nastavit informace o schématu" v [zobrazení Start](../xml-tools/start-view.md) tématu.  

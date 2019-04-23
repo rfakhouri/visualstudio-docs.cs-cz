@@ -18,12 +18,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 94a8f4f8fe0d1f93ce3467291a20377234db29f4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 45f650283c850a9dce3ae71c7eefbff2ef378535
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54791190"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080706"
 ---
 # <a name="add-validation-to-an-n-tier-dataset"></a>Přidávání ověřování do vícevrstvé datové sady
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,14 +58,14 @@ End Sub
   
 #### <a name="to-add-validation-during-changes-to-individual-column-values"></a>Přidání ověřování při změnách hodnot jednotlivých sloupců  
   
-1.  Otevřete datovou sadu v Návrháři dvojitým kliknutím **XSD** ve **Průzkumníka řešení**. Další informace najdete v tématu [jak: Otevření datové sady v návrháři datových sad](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
+1. Otevřete datovou sadu v Návrháři dvojitým kliknutím **XSD** ve **Průzkumníka řešení**. Další informace najdete v tématu [jak: Otevření datové sady v návrháři datových sad](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
   
-2.  Poklepejte na sloupec, který chcete ověřit. Tato akce vytvoří <xref:System.Data.DataTable.ColumnChanging> obslužné rutiny události.  
+2. Poklepejte na sloupec, který chcete ověřit. Tato akce vytvoří <xref:System.Data.DataTable.ColumnChanging> obslužné rutiny události.  
   
     > [!NOTE]
     >  Návrhář Dataset nevytváří automaticky obslužnou rutinu události pro událost C#. Kód, který je potřeba ke zpracování událostí v jazyce C# je zahrnuta v další části. `SampleColumnChangingEvent` je vytvořen a pak připojeno <xref:System.Data.DataTable.ColumnChanging> událost v <xref:System.Data.DataTable.EndInit%2A> metody.  
   
-3.  Přidejte kód pro ověření, že `e.ProposedValue` obsahuje data, která splňují požadavky aplikace. Pokud navrhovaná hodnota není přijatelná, nastavte sloupec, aby označoval, že obsahuje chybu.  
+3. Přidejte kód pro ověření, že `e.ProposedValue` obsahuje data, která splňují požadavky aplikace. Pokud navrhovaná hodnota není přijatelná, nastavte sloupec, aby označoval, že obsahuje chybu.  
   
      Následující příklad kódu ověřuje, **množství** sloupec obsahuje více než 0. Pokud **množství** je menší než nebo rovna 0, sloupec je nastaven na chybu. `Else` Klauzule vymaže chybu, pokud **množství** je větší než 0. Kód v obslužné rutině události měnící sloupec by měl vypadat takto:  
   
@@ -117,18 +117,18 @@ End Sub
   
 #### <a name="to-add-validation-during-changes-to-whole-rows"></a>Přidání ověřování při změnách celých řádků  
   
-1.  Otevřete datovou sadu v Návrháři dvojitým kliknutím **XSD** ve **Průzkumníka řešení**. Další informace najdete v tématu [jak: Otevření datové sady v návrháři datových sad](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
+1. Otevřete datovou sadu v Návrháři dvojitým kliknutím **XSD** ve **Průzkumníka řešení**. Další informace najdete v tématu [jak: Otevření datové sady v návrháři datových sad](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
   
-2.  Poklepejte na záhlaví tabulky dat v návrháři.  
+2. Poklepejte na záhlaví tabulky dat v návrháři.  
   
      Je vytvořena dílčí třída s `RowChanging` obslužná rutina události a otevře v editoru kódu.  
   
     > [!NOTE]
     >  Návrhář Dataset nevytváří automaticky obslužnou rutinu události pro <xref:System.Data.DataTable.RowChanging> události v projektech C#. Je nutné vytvořit metodu ke zpracování <xref:System.Data.DataTable.RowChanging> události a spouštění kódu k připojení události do metody inicializace tabulky.  
   
-3.  Přidejte uživatelský kód do částečné deklarace třídy.  
+3. Přidejte uživatelský kód do částečné deklarace třídy.  
   
-4.  Následující kód ukazuje, kam přidat uživatelský kód pro ověření během <xref:System.Data.DataTable.RowChanging> událostí v jazyce Visual Basic:  
+4. Následující kód ukazuje, kam přidat uživatelský kód pro ověření během <xref:System.Data.DataTable.RowChanging> událostí v jazyce Visual Basic:  
   
     ```vb  
     Partial Class OrdersDataTable  
@@ -145,7 +145,7 @@ End Sub
     End Class  
     ```  
   
-5.  Následující kód ukazuje, jak vytvořit `RowChanging` obslužné rutiny události a kam přidat uživatelský kód pro ověření během <xref:System.Data.DataTable.RowChanging> události pro jazyk C#:  
+5. Následující kód ukazuje, jak vytvořit `RowChanging` obslužné rutiny události a kam přidat uživatelský kód pro ověření během <xref:System.Data.DataTable.RowChanging> události pro jazyk C#:  
   
     ```csharp  
     partial class OrdersDataTable  

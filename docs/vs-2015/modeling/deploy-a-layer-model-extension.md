@@ -12,12 +12,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 63538797f335cab770f3748d946b08de6b44c609
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: dfea4ecc735fbf91e623f6d40b287353e17ce7a1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54800104"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080602"
 ---
 # <a name="deploy-a-layer-model-extension"></a>Nasazení rozšíření pro modelování vrstev
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,40 +39,40 @@ Ostatní uživatelé sady Visual Studio můžete nainstalovat rozšíření, kte
   
 #### <a name="to-uninstall-the-extension"></a>Chcete-li odinstalovat rozšíření  
   
-1.  V sadě Visual Studio na **nástroje** nabídky, klikněte na tlačítko **rozšíření a aktualizace**.  
+1. V sadě Visual Studio na **nástroje** nabídky, klikněte na tlačítko **rozšíření a aktualizace**.  
   
-2.  Klikněte na název rozšíření a pak klikněte na tlačítko **odinstalovat**.  
+2. Klikněte na název rozšíření a pak klikněte na tlačítko **odinstalovat**.  
   
 ## <a name="installing-an-extension-on-a-team-foundation-build-server"></a>Instalace rozšíření na serveru Team Foundation Build  
  [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] servery obvykle nemají nainstalovanou sadu Visual Studio, a proto nelze nainstalovat VSIX poklepáním. Instalace [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] obsahuje některé součásti umožňující spustit příponu VSIX, ale je nutné nainstalovat rozšíření ručně.  
   
 #### <a name="to-install-your-layer-extension-on-a-includeesprbuildincludesesprbuild-mdmd-server"></a>Instalace rozšíření vrstvy na [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] serveru  
   
-1.  Kopírovat **VSIX** soubory z vývojového počítače do [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] počítače.  
+1. Kopírovat **VSIX** soubory z vývojového počítače do [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] počítače.  
   
      Uložte soubor VSIX v jednom z následujících umístění:  
   
-    -   Instalace pro všechny uživatele a služby:  
+    - Instalace pro všechny uživatele a služby:  
   
          %ProgramFiles%\Microsoft Visual Studio [version]\Common7\IDE\Extensions\Microsoft  
   
-    -   Chcete-li nainstalovat pouze pro síťovou službu, na kterém běží [!INCLUDE[esprbuild](../includes/esprbuild-md.md)]:  
+    - Chcete-li nainstalovat pouze pro síťovou službu, na kterém běží [!INCLUDE[esprbuild](../includes/esprbuild-md.md)]:  
   
          %WinDir%\ServiceProfiles\NetworkService\AppData\Local\Microsoft\VisualStudio\\[version]\Extensions\Microsoft  
   
-    -   Pokud jste nakonfigurovali [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] ke spuštění v interaktivním režimu jako určitý uživatel, můžete nainstalovat pouze pro tohoto uživatele:  
+    - Pokud jste nakonfigurovali [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] ke spuštění v interaktivním režimu jako určitý uživatel, můžete nainstalovat pouze pro tohoto uživatele:  
   
          %LocalAppData%\Microsoft\VisualStudio\\[version]\Extensions\Microsoft  
   
         > [!NOTE]
         >  % LocalAppData % je obvykle *DriveName*: uživatelé*uživatelské jméno*AppDataLocal.  
   
-2.  Každý soubor VSIX rozbalte do složky ve stejném umístění:  
+2. Každý soubor VSIX rozbalte do složky ve stejném umístění:  
   
-    1.  Změna přípony názvu souboru z **VSIX** k **ZIP**.  
+    1. Změna přípony názvu souboru z **VSIX** k **ZIP**.  
   
-    2.  Extrahujte obsah souboru .zip do složky.  
+    2. Extrahujte obsah souboru .zip do složky.  
   
-    3.  Smazat soubor .zip  
+    3. Smazat soubor .zip  
   
-3.  Restartujte [!INCLUDE[esprbuild](../includes/esprbuild-md.md)].
+3. Restartujte [!INCLUDE[esprbuild](../includes/esprbuild-md.md)].

@@ -13,12 +13,12 @@ caps.latest.revision: 9
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 14569a915dc1da4d8628283dfa1aae5338502de1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3765b9804224549c98b57cd1b0a44f0330d278b5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54779831"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080576"
 ---
 # <a name="messages-view"></a>Zobrazení zpráv
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,21 +34,21 @@ Zobrazení zpráv Spy ++
   
 #### <a name="to-open-a-messages-view-for-a-window-process-or-thread"></a>Otevření zobrazení zpráv pro okna, procesu nebo vlákna  
   
-1.  Přesuňte fokus [zobrazení Windows](../debugger/windows-view.md), [zobrazení procesů](../debugger/processes-view.md), nebo [zobrazení vláken](../debugger/threads-view.md) okno.  
+1. Přesuňte fokus [zobrazení Windows](../debugger/windows-view.md), [zobrazení procesů](../debugger/processes-view.md), nebo [zobrazení vláken](../debugger/threads-view.md) okno.  
   
-2.  Najít uzel pro položku, jejíž zprávy, které chcete prověřit a vyberte ji.  
+2. Najít uzel pro položku, jejíž zprávy, které chcete prověřit a vyberte ji.  
   
-3.  Z **Spy** nabídce zvolte **zprávy protokolu**.  
+3. Z **Spy** nabídce zvolte **zprávy protokolu**.  
   
      [Dialogové okno možností zpráv](../debugger/message-options-dialog-box.md) otevře.  
   
-4.  Vyberte požadované možnosti pro zprávu, kterou chcete zobrazit.  
+4. Vyberte požadované možnosti pro zprávu, kterou chcete zobrazit.  
   
-5.  Stisknutím klávesy **OK** zahájíte protokolování zpráv.  
+5. Stisknutím klávesy **OK** zahájíte protokolování zpráv.  
   
      Otevře se okno pro zobrazení zprávy a s **zprávy** nabídka se přidá na panel nástrojů nástroje Spy ++. V závislosti na vybrané možnosti, zprávy začít Streamovat do aktivního okna zobrazení zprávy.  
   
-6.  Pokud máte dostatek zpráv, zvolte **zastavit protokolování** z **zprávy** nabídky.  
+6. Pokud máte dostatek zpráv, zvolte **zastavit protokolování** z **zprávy** nabídky.  
   
 ## <a name="in-this-section"></a>V tomto oddílu  
  [Řízení zobrazení zpráv](../debugger/how-to-control-messages-view.md)  

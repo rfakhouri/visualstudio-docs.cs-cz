@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: b674239d4d3b800680479830fbb16392e0cdeaf4
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: d2ce13fc55c94514bb9da24e43a5c54671becde5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56713552"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080654"
 ---
 # <a name="how-to-specify-a-net-framework-version-for-debugging-c-visual-basic-f"></a>Postupy: Určení verze rozhraní .NET Framework pro ladění (C#, Visual Basic, F#)
 
@@ -52,7 +52,7 @@ Ve výjimečných případech, kde se zobrazí tato chyba můžete nastavit klí
 
 5. Po přejití do {449EC4CC-30D2-4032-9256-EE18EB41B62B}, podívejte se **název** sloupce a najít CLRVersionForDebugging klíč.
 
-   1.  Pokud klíč neexistuje, klikněte pravým tlačítkem na {449EC4CC-30D2-4032-9256-EE18EB41B62B} a klikněte na tlačítko **novou řetězcovou hodnotu**. Klikněte pravým tlačítkem na novou řetězcovou hodnotu, klikněte na tlačítko **přejmenovat**a typ `CLRVersionForDebugging`.
+   1. Pokud klíč neexistuje, klikněte pravým tlačítkem na {449EC4CC-30D2-4032-9256-EE18EB41B62B} a klikněte na tlačítko **novou řetězcovou hodnotu**. Klikněte pravým tlačítkem na novou řetězcovou hodnotu, klikněte na tlačítko **přejmenovat**a typ `CLRVersionForDebugging`.
 
 6. Dvakrát klikněte na panel **CLRVersionForDebugging**.
 

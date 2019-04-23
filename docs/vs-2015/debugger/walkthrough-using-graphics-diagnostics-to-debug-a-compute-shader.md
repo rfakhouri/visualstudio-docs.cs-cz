@@ -1,5 +1,5 @@
 ---
-title: 'Průvodce: Použití diagnostiky grafiky k ladění výpočetního shaderu | Dokumentace Microsoftu'
+title: 'Návod: Použití diagnostiky grafiky k ladění výpočetního shaderu | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -9,25 +9,25 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0a57a77e401564b3bd32897a9b32d9773d959a17
-ms.sourcegitcommit: 447f2174bdecdd471d8a8e11c19554977db620a0
+ms.openlocfilehash: db33a55c5ced7c1bbbf4b238185beac43ac290f8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2019
-ms.locfileid: "55089189"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080343"
 ---
-# <a name="walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader"></a>Průvodce: Použití diagnostiky grafiky k ladění výpočetního shaderu
+# <a name="walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader"></a>Návod: Použití diagnostiky grafiky k ladění výpočetního shaderu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Tento návod ukazuje, jak použít nástrojů Diagnostika grafiky sady Visual Studio k vyšetření výpočetního shaderu, který generuje nesprávné výsledky.  
   
  Tento návod ilustruje tyto úkoly:  
   
--   Použití **seznam událostí grafiky** k vyhledání potenciálních zdrojů problému.  
+- Použití **seznam událostí grafiky** k vyhledání potenciálních zdrojů problému.  
   
--   Použití **zásobník volání událostí grafiky** k zjištění, který výpočetní shader je proveden DirectCompute `Dispatch` událostí.  
+- Použití **zásobník volání událostí grafiky** k zjištění, který výpočetní shader je proveden DirectCompute `Dispatch` událostí.  
   
--   Použití **fáze zřetězení grafiky** okno a ladicího programu HLSL Zkoumejte výpočetní shader, který je zdrojem potíží.  
+- Použití **fáze zřetězení grafiky** okno a ladicího programu HLSL Zkoumejte výpočetní shader, který je zdrojem potíží.  
   
 ## <a name="scenario"></a>Scénář  
  V tomto scénáři jste napsali simulaci dynamiky kapalin, která používá rozhraní DirectCompute k provádění výpočetně nejnáročnějších částí aktualizace simulace. Při spuštění aplikace vykreslování datové sady a uživatelského rozhraní vypadá správně, ale simulace se nechová podle očekávání. Pomocí diagnostiky grafiky můžete zaznamenat problém do protokolu grafiky, tak, že ladíte aplikaci. Problém je v aplikace vypadá například takto:  
