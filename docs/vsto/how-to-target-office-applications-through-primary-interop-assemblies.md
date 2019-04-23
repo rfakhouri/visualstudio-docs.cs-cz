@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4901a4a04a2d4702a365f9b1f65406c4537b1182
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 074b01e78fd398a43548febf81ba03b61a8646b4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614321"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079629"
 ---
 # <a name="how-to-target-office-applications-through-primary-interop-assemblies"></a>Postupy: Cílení na aplikace Office primárních sestaveních vzájemné spolupráce
   Když vytvoříte nový projekt sady Office, Visual Studio automaticky přidá odkazy na aplikace Microsoft Office primární sestavení interop (PIA), které jsou nezbytné k sestavení projektu. Je nutné přidat odkazy na další sestavení PIA v následujících scénářích:
@@ -36,18 +36,18 @@ ms.locfileid: "56614321"
 
 ## <a name="to-add-a-reference-to-a-primary-interop-assembly"></a>Chcete-li přidat odkaz na primární spolupracující sestavení
 
-1.  Otevřete si projekt Office a vyberte název projektu v **Průzkumníka řešení**.
+1. Otevřete si projekt Office a vyberte název projektu v **Průzkumníka řešení**.
 
-2.  Na **projektu** nabídky, klikněte na tlačítko **přidat odkaz**.
+2. Na **projektu** nabídky, klikněte na tlačítko **přidat odkaz**.
 
-3.  Na **Framework** kartu, vyberte PIA, které chcete v **název komponenty** seznamu. Další informace o dostupných primární definiční sestavení Microsoft Office, naleznete v tématu [primární spolupracující sestavení Office](../vsto/office-primary-interop-assemblies.md).
+3. Na **Framework** kartu, vyberte PIA, které chcete v **název komponenty** seznamu. Další informace o dostupných primární definiční sestavení Microsoft Office, naleznete v tématu [primární spolupracující sestavení Office](../vsto/office-primary-interop-assemblies.md).
 
      Pokud projekt zaměřen [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] nebo novější, **Embed Interop Types** pro odkaz na sestavení je nastavena na **True** ve výchozím nastavení. Pomocí tohoto nastavení vaše řešení nevyžaduje PIA v počítačích koncových uživatelů. Další informace najdete v tématu [návrhu a vytvořte řešení pro systém Office](../vsto/designing-and-creating-office-solutions.md).
 
     > [!NOTE]
     >  V projektech pro systém Office, vždy přidat odkazy na sestavení PIA sady Office pomocí **.NET** karty **přidat odkaz** dialogové okno místo **COM** kartu. Další informace najdete v tématu [primární spolupracující sestavení Office](../vsto/office-primary-interop-assemblies.md).
 
-4.  Klikněte na **OK**.
+4. Klikněte na **OK**.
 
      Název sestavení se zobrazí v **odkazy** složky **Průzkumníka řešení**.
 

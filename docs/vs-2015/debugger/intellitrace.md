@@ -22,12 +22,12 @@ caps.latest.revision: 142
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 28e1a926800bcd4c63bdc83336fbba41c38579eb
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: c9097a8c067ce4e04dd54f879a6c1388f854d7ec
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57869396"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079302"
 ---
 # <a name="intellitrace"></a>IntelliTrace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ Věnovat méně času laděním aplikace, zaznamenávejte a trasujte historii pr
 |**Shromažďovat IntelliTrace data z nasazené aplikace**|-   [Použití samostatného kolektoru IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md)|  
 |**Spuštění ladění ze souboru protokolu IntelliTrace (soubor .iTrace).**|-   [Použití uložených dat řešení IntelliTrace](../debugger/using-saved-intellitrace-data.md)|  
   
-##  <a name="IntelliTraceSupport"></a> Které aplikace můžete ladit pomocí nástroje IntelliTrace?  
+## <a name="IntelliTraceSupport"></a> Které aplikace můžete ladit pomocí nástroje IntelliTrace?  
   
 |||  
 |-|-|  
@@ -64,7 +64,7 @@ Věnovat méně času laděním aplikace, zaznamenávejte a trasujte historii pr
 > [!NOTE]
 >  Pokud chcete ladit proces, který je již spuštěn, nelze použít nástroj IntelliTrace. Nástroj IntelliTrace je nutné spustit při spuštění procesu.  
   
-##  <a name="IntelliTraceVSTraditional"></a> Proč ladit pomocí nástroje IntelliTrace?  
+## <a name="IntelliTraceVSTraditional"></a> Proč ladit pomocí nástroje IntelliTrace?  
  Tradiční nebo *live* ladění zobrazuje pouze aplikace aktuální stav, s omezenými daty o minulých událostech. Buď musíte odvodit tyto události na základě aktuálního stavu aplikace, nebo musíte znovu vyvolat tyto události opětovného spuštění aplikace.  
   
  Nástroj IntelliTrace rozšiřuje toto tradiční ladění zaznamenáváním určitých událostí a dat v těchto bodech v čase. Díky tomu můžete zjistit, co se stalo ve vaší aplikaci bez restartování, zejména v případě, že jste již překročili kde je chyba. Nástroj IntelliTrace je ve výchozím nastavení zapnutý při tradičním ladění a shromažďuje data automaticky a transparentně. To umožňuje snadno přepínat mezi tradičním laděním a laděním pomocí nástroje IntelliTrace a zobrazovat zaznamenané informace. Zobrazit [funkce IntelliTrace](../debugger/intellitrace-features.md) a [jaká data shromažďuje nástroj IntelliTrace?](#WhatData)  
@@ -101,7 +101,7 @@ Věnovat méně času laděním aplikace, zaznamenávejte a trasujte historii pr
   
    To je užitečné, pokud chcete diagnostikovat problémy s aplikacemi v nasazení. Zobrazit [použití samostatného kolektoru IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md).  
   
-##  <a name="WhatData"></a> Jaká data shromažďuje nástroj IntelliTrace?  
+## <a name="WhatData"></a> Jaká data shromažďuje nástroj IntelliTrace?  
  **Shromažďování informací o událostech**  
   
  Ve výchozím nastavení nástroj IntelliTrace zaznamenává pouze události IntelliTrace: ladicí program událostmi, výjimkami, události rozhraní .NET Framework a další systémové události, které mohou pomoci s laděním. Můžete zvolit druhy událostí IntelliTrace, které chcete shromažďovat. Události ladicího programu a výjimky jsou shromažďovány vždy. Zobrazit [nakonfigurujte nástroj IntelliTrace](http://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e).  
@@ -112,27 +112,27 @@ Věnovat méně času laděním aplikace, zaznamenávejte a trasujte historii pr
   
    Aby nedocházelo k poklesu výkonu, nezaznamenává nástroj IntelliTrace každou možnou hodnotu události ladicího programu. Zaznamenává pouze tyto hodnoty:  
   
-  -   Hodnoty v **lokální** okna. Zachovat **lokální** otevřené pro tyto hodnoty vidět okno.  
+  - Hodnoty v **lokální** okna. Zachovat **lokální** otevřené pro tyto hodnoty vidět okno.  
   
-  -   Hodnoty v **automatické hodnoty** okno pouze tehdy, pokud **automatické hodnoty** je otevřeno okno  
+  - Hodnoty v **automatické hodnoty** okno pouze tehdy, pokud **automatické hodnoty** je otevřeno okno  
   
-  -   Hodnoty v Datových tipech, které se zobrazují při přesunutí ukazatele myši nad proměnnou v okně zdroje s cílem zobrazit její hodnotu. Nástroj IntelliTrace neshromažďuje hodnoty v připnutých Datových tipech.  
+  - Hodnoty v Datových tipech, které se zobrazují při přesunutí ukazatele myši nad proměnnou v okně zdroje s cílem zobrazit její hodnotu. Nástroj IntelliTrace neshromažďuje hodnoty v připnutých Datových tipech.  
   
 - **Výjimky**  
   
    Nástroj IntelliTrace zaznamenává typ výjimky a zprávu pro tyto druhy výjimek:  
   
-  -   Zpracované výjimky, když je výjimka vyvolána a zachycena  
+  - Zpracované výjimky, když je výjimka vyvolána a zachycena  
   
-  -   Nezpracované výjimky  
+  - Nezpracované výjimky  
   
 - **Události rozhraní .NET framework**  
   
    Standardně nástroj IntelliTrace zaznamenává nejběžnější události rozhraní .NET Framework. Příklad:  
   
-  -   V případě události Přístup k souboru nástroj IntelliTrace shromažďuje název souboru.  
+  - V případě události Přístup k souboru nástroj IntelliTrace shromažďuje název souboru.  
   
-  -   V případě události Zaškrtnutí políčka shromažďuje nástroj IntelliTrace stav zaškrtávacího políčka a text.  
+  - V případě události Zaškrtnutí políčka shromažďuje nástroj IntelliTrace stav zaškrtávacího políčka a text.  
   
 - **Události aplikace SharePoint 2010 a SharePoint 2013**  
   
@@ -142,11 +142,11 @@ Věnovat méně času laděním aplikace, zaznamenávejte a trasujte historii pr
   
    Další informace:  
   
-  -   [Použití samostatného kolektoru IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md)  
+  - [Použití samostatného kolektoru IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md)  
   
-  -   [Použití uložených dat řešení IntelliTrace](../debugger/using-saved-intellitrace-data.md)  
+  - [Použití uložených dat řešení IntelliTrace](../debugger/using-saved-intellitrace-data.md)  
   
-  -   [Návod: Ladění aplikace SharePoint s použitím technologie IntelliTrace](http://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4)  
+  - [Návod: Ladění aplikace SharePoint s použitím technologie IntelliTrace](http://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4)  
   
   **Shromažďují se informace o voláních funkcí**  
   
@@ -169,7 +169,7 @@ Věnovat méně času laděním aplikace, zaznamenávejte a trasujte historii pr
   
  Pro řízení množství informací o voláních shromažďovaných nástrojem IntelliTrace zadejte pouze ty moduly, které vás zajímají. To může pomoci zvýšit výkon vaší aplikace během shromažďování. Zobrazit [nakonfigurujte nástroj IntelliTrace](http://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e).  
   
-##  <a name="AffectPerformance"></a> Moje aplikace zpomalí nástroj IntelliTrace?  
+## <a name="AffectPerformance"></a> Moje aplikace zpomalí nástroj IntelliTrace?  
  Nástroj IntelliTrace standardně shromažďuje pouze data pro vybrané události IntelliTrace. To může nebo nemusí zpomalit aplikaci v závislosti na struktuře a organizaci kódu. Například pokud nástroj IntelliTrace zaznamenává událost často, může to zpomalit vaši aplikaci. Může mít také můžete zvážení refaktoringu vaší aplikace.  
   
  Shromažďování informací o voláních může aplikaci výrazně zpomalit. Může také dojít ke zvětšení všech souborů protokolu IntelliTrace (.iTrace) ukládaných na disk. Pro minimalizaci negativních dopadů shromažďujte informace o volání pouze u modulů, které vás zajímají.  Chcete-li změnit maximální velikost souborů .iTrace, přejděte na **nástroje**, **možnosti**, **IntelliTrace**, **Upřesnit**. Zobrazit [nakonfigurujte nástroj IntelliTrace](http://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e).  

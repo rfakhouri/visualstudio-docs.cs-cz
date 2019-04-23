@@ -14,12 +14,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 613a1ac89242daeee9b6647f63946eae23c9af1e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7b13931746cc9668ea18ead71babd5140e971818
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54802055"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079276"
 ---
 # <a name="create-xml-documentation-comments-for-javascript-intellisense"></a>Vytvoření komentářů k dokumentaci XML pro technologie IntelliSense jazyka JavaScript
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "54802055"
   
 ### <a name="to-create-xml-documentation-comments-for-a-javascript-function"></a>Chcete-li vytvořit dokumentační komentáře XML pro funkce jazyka JavaScript  
   
--   Ve funkci, přidejte [ \<summary >](../ide/summary-javascript.md), [ \<param >](../ide/param-javascript.md), a [ \<vrátí >](../ide/returns-javascript.md) elementy a předcházet každý element s třemi lomítky (/ / / / /).  
+- Ve funkci, přidejte [ \<summary >](../ide/summary-javascript.md), [ \<param >](../ide/param-javascript.md), a [ \<vrátí >](../ide/returns-javascript.md) elementy a předcházet každý element s třemi lomítky (/ / / / /).  
   
     > [!NOTE]
     >  Každý prvek musí být na jednom řádku.  
@@ -52,7 +52,7 @@ ms.locfileid: "54802055"
     }  
     ```  
   
--   Chcete-li zobrazit dokumentační komentáře XML, zadejte název a levou závorku funkce, která je označena dokumentační komentáře XML, jako v následujícím příkladu:  
+- Chcete-li zobrazit dokumentační komentáře XML, zadejte název a levou závorku funkce, která je označena dokumentační komentáře XML, jako v následujícím příkladu:  
   
     ```javascript  
     var areaVal = getArea(  
@@ -62,7 +62,7 @@ ms.locfileid: "54802055"
   
 ### <a name="to-create-xml-documentation-comments-for-a-javascript-field"></a>Chcete-li vytvořit komentáře dokumentace XML pro pole jazyka JavaScript  
   
--   V definici funkce nebo objekt konstruktoru přidat [ \<pole >](../ide/field-javascript.md) prvek před třemi lomítky (/ / / / /).  
+- V definici funkce nebo objekt konstruktoru přidat [ \<pole >](../ide/field-javascript.md) prvek před třemi lomítky (/ / / / /).  
   
      Následující příklad ukazuje použití `<field>` prvek funkce konstruktoru. Další příklady najdete v tématu [ \<pole >](../ide/field-javascript.md).  
   
@@ -73,13 +73,13 @@ ms.locfileid: "54802055"
     }  
     ```  
   
--   Chcete-li zobrazit dokumentační komentáře XML, vytvoření objektu pomocí funkce konstruktoru, který je označen dokumentační komentáře XML, jako v následujícím příkladu.  
+- Chcete-li zobrazit dokumentační komentáře XML, vytvoření objektu pomocí funkce konstruktoru, který je označen dokumentační komentáře XML, jako v následujícím příkladu.  
   
     ```javascript  
     var eng = new Engine();  
     ```  
   
--   Na dalším řádku zadejte název objektu a období zobrazíte informace technologie IntelliSense pro pole.  
+- Na dalším řádku zadejte název objektu a období zobrazíte informace technologie IntelliSense pro pole.  
   
     ```javascript  
     eng.  
@@ -87,7 +87,7 @@ ms.locfileid: "54802055"
   
 ### <a name="to-create-xml-documentation-comments-for-an-overloaded-function"></a>Chcete-li vytvořit dokumentační komentáře XML pro přetížené funkce  
   
-1.  Ve funkci, přidejte [ \<podpis >](../ide/signature-javascript.md) – element pro jednotlivá přetížení. V těchto elementech, přidat ostatní prvky `<summary>`, `<param>`, a `<returns>`, před každý element s tři lomítka (/ / / / /).  
+1. Ve funkci, přidejte [ \<podpis >](../ide/signature-javascript.md) – element pro jednotlivá přetížení. V těchto elementech, přidat ostatní prvky `<summary>`, `<param>`, a `<returns>`, před každý element s tři lomítka (/ / / / /).  
   
      Následující příklad ukazuje přetížené funkce jazyka JavaScript. V tomto příkladu přetížení lišit podle typu parametru.  
   
@@ -107,7 +107,7 @@ ms.locfileid: "54802055"
     }  
     ```  
   
-2.  Chcete-li zobrazit dokumentační komentáře XML, zadejte název a levou závorku funkce, která je označena dokumentační komentáře XML, jako v následujícím příkladu:  
+2. Chcete-li zobrazit dokumentační komentáře XML, zadejte název a levou závorku funkce, která je označena dokumentační komentáře XML, jako v následujícím příkladu:  
   
     ```javascript  
     calc(  
@@ -115,7 +115,7 @@ ms.locfileid: "54802055"
   
 ### <a name="to-create-localized-intellisense"></a>Chcete-li vytvořit lokalizovanou IntelliSense  
   
-1.  Vytvořte soubor XML, který se dokumentační komentáře ve formátu OpenAjax MessageBundle.  
+1. Vytvořte soubor XML, který se dokumentační komentáře ve formátu OpenAjax MessageBundle.  
   
     > [!IMPORTANT]
     >  MessageBundle je doporučený formát. Tento formát není podporován v Microsoft Ajax nebo soubory .winmd. Další informace o použití alternativní `VSDoc` formátování naleznete v tématu [ \<umístění >](../ide/loc-javascript.md).  
@@ -131,14 +131,14 @@ ms.locfileid: "54802055"
   
     ```  
   
-2.  V souboru .js přidejte následující kód. `<loc>` Elementu musí být deklarován před veškerým skriptem a řídí stejnými pravidly používání, jako `<reference>` elementu. Další informace najdete v tématu [technologie IntelliSense jazyka JavaScript](../ide/javascript-intellisense.md) a [ \<umístění >](../ide/loc-javascript.md).  
+2. V souboru .js přidejte následující kód. `<loc>` Elementu musí být deklarován před veškerým skriptem a řídí stejnými pravidly používání, jako `<reference>` elementu. Další informace najdete v tématu [technologie IntelliSense jazyka JavaScript](../ide/javascript-intellisense.md) a [ \<umístění >](../ide/loc-javascript.md).  
   
     ```javascript  
     /// <loc filename="messageFilename.xml" format="messagebundle"/>  
   
     ```  
   
-3.  V souboru .js přidejte dokumentace elementů XML a popisy výchozí. Nastavte `locid` hodnoty tak, aby odpovídaly odpovídajícího atributu `name` hodnoty atributů ze souboru sajdkáry. Výchozí popis se nahradí lokalizované informace technologie IntelliSense, pokud je k dispozici.  
+3. V souboru .js přidejte dokumentace elementů XML a popisy výchozí. Nastavte `locid` hodnoty tak, aby odpovídaly odpovídajícího atributu `name` hodnoty atributů ze souboru sajdkáry. Výchozí popis se nahradí lokalizované informace technologie IntelliSense, pokud je k dispozici.  
   
     ```javascript  
     function add(a,b)   
@@ -150,7 +150,7 @@ ms.locfileid: "54802055"
   
     ```  
   
-4.  Chcete-li zobrazit dokumentační komentáře XML, zadejte název a levou závorku funkce, jako v následujícím příkladu:  
+4. Chcete-li zobrazit dokumentační komentáře XML, zadejte název a levou závorku funkce, jako v následujícím příkladu:  
   
     ```javascript  
     add(  
@@ -159,4 +159,4 @@ ms.locfileid: "54802055"
 ## <a name="see-also"></a>Viz také  
  [JavaScript IntelliSense](../ide/javascript-intellisense.md)   
  [Dokumentační komentáře XML](../ide/xml-documentation-comments-javascript.md)   
- [NIB: Průvodce: Technologie IntelliSense jazyka JavaScript v ASP.NET](http://msdn.microsoft.com/4f6e0cc2-7f48-4dbf-abb0-7fb743a2d05b)
+ [NIB: Návod: Technologie IntelliSense jazyka JavaScript v ASP.NET](http://msdn.microsoft.com/4f6e0cc2-7f48-4dbf-abb0-7fb743a2d05b)

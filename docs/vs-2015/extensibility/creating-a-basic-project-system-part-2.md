@@ -12,12 +12,12 @@ ms.assetid: aee48fc6-a15f-4fd5-8420-7f18824de220
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f1d02b8701f5740de8a747406fc18da3e9f8e6cc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6004e7346ab4bb4bb8d95c04fbbbdd86e1527001
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54755519"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079601"
 ---
 # <a name="creating-a-basic-project-system-part-2"></a>Vytvoření systému základního projektu, část 2
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,15 +28,15 @@ První názorný postup v této sérii [vytvoření základního systému projek
   
  Tento návod se naučíte k provedení následujících úkolů:  
   
--   Vytvořte šablonu sady Visual Studio.  
+- Vytvořte šablonu sady Visual Studio.  
   
--   Nasazení šablony sady Visual Studio.  
+- Nasazení šablony sady Visual Studio.  
   
--   Vytvořit podřízený uzel typu projektu v **nový projekt** dialogové okno.  
+- Vytvořit podřízený uzel typu projektu v **nový projekt** dialogové okno.  
   
--   Povolte nahrazení parametrů v šabloně Visual Studio.  
+- Povolte nahrazení parametrů v šabloně Visual Studio.  
   
--   Vytvoření stránky vlastností projektu.  
+- Vytvoření stránky vlastností projektu.  
   
 > [!NOTE]
 >  Kroky v tomto názorném postupu jsou založeny na projektu v jazyce C#. S výjimkou konkrétní přípony názvů souborů a kód, můžete však použít stejný postup pro projekt jazyka Visual Basic.  
@@ -120,9 +120,9 @@ První názorný postup v této sérii [vytvoření základního systému projek
 ## <a name="adding-a-minimal-vsct-file"></a>Přidává se soubor minimálního .vsct  
  Visual Studio musí být spuštěn v režimu instalace rozpoznat nové nebo upravené šablony sady Visual Studio. Režim instalace vyžaduje souboru .vsct nacházet. Proto je nutné přidat minimální .vsct soubor do projektu.  
   
-1.  Přidejte soubor XML s názvem SimpleProject.vsct SimpleProject projektu.  
+1. Přidejte soubor XML s názvem SimpleProject.vsct SimpleProject projektu.  
   
-2.  Nahraďte obsah souboru SimpleProject.vsct následujícím kódem.  
+2. Nahraďte obsah souboru SimpleProject.vsct následujícím kódem.  
   
     ```  
     <?xml version="1.0" encoding="utf-8" ?>  
@@ -131,25 +131,25 @@ První názorný postup v této sérii [vytvoření základního systému projek
     </CommandTable>  
     ```  
   
-3.  Nastavte **akce sestavení** tohoto souboru do **VSCTCompile**. Můžete to provedete pouze v souboru .csproj, nikoli v **vlastnosti** okna. Ujistěte se, že **akce sestavení** tohoto souboru nastavena na **žádný** v tomto okamžiku.  
+3. Nastavte **akce sestavení** tohoto souboru do **VSCTCompile**. Můžete to provedete pouze v souboru .csproj, nikoli v **vlastnosti** okna. Ujistěte se, že **akce sestavení** tohoto souboru nastavena na **žádný** v tomto okamžiku.  
   
-    1.  Klikněte pravým tlačítkem na uzel SimpleProject a potom klikněte na tlačítko **upravit SimpleProject.csproj**.  
+    1. Klikněte pravým tlačítkem na uzel SimpleProject a potom klikněte na tlačítko **upravit SimpleProject.csproj**.  
   
-    2.  V souboru .csproj vyhledejte položku SimpleProject.vsct.  
+    2. V souboru .csproj vyhledejte položku SimpleProject.vsct.  
   
         ```  
         <None Include="SimpleProject.vsct" />  
         ```  
   
-    3.  Změňte akci sestavení na **VSCTCompile**.  
+    3. Změňte akci sestavení na **VSCTCompile**.  
   
         ```  
         <VSCTCompile Include="SimpleProject.vsct" />  
         ```  
   
-    4.  soubor projektu a zavřete editor.  
+    4. soubor projektu a zavřete editor.  
   
-    5.  Uložit SimpleProject uzlu a pak v **Průzkumníka řešení** klikněte na tlačítko **znovu načíst projekt**.  
+    5. Uložit SimpleProject uzlu a pak v **Průzkumníka řešení** klikněte na tlačítko **znovu načíst projekt**.  
   
 ## <a name="examining-the-visual-studio-template-build-steps"></a>Zkoumání kroky sestavení šablony sady Visual Studio  
  Systém sestavení projektu VSPackage při změně souboru .vstemplate nebo je znovu sestavit projekt, který obsahuje soubor .vstemplate obvykle běží v režimu instalace sady Visual Studio. Můžete absolvovat tak, že nastavíte úroveň podrobností MSBuild na normální nebo vyšší.  
@@ -209,11 +209,11 @@ ZipProjects:
   
  Tato část ukazuje, jak vytvořit podřízený uzel typu projektu SimpleProject konzoly.  
   
-1.  Přejmenovat složku \Templates\Projects\SimpleProject\ \Templates\Projects\ConsoleApp\\.  
+1. Přejmenovat složku \Templates\Projects\SimpleProject\ \Templates\Projects\ConsoleApp\\.  
   
-2.  V **vlastnosti** okna, vyberte všechny pět souborů ve složce \Templates\Projects\ConsoleApp\ a ujistěte se, že **akce sestavení** je nastavena na **ZipProject**.  
+2. V **vlastnosti** okna, vyberte všechny pět souborů ve složce \Templates\Projects\ConsoleApp\ a ujistěte se, že **akce sestavení** je nastavena na **ZipProject**.  
   
-3.  V souboru SimpleProject.vstemplate, přidejte následující řádek na konci \<TemplateData > části, těsně před uzavírací značku.  
+3. V souboru SimpleProject.vstemplate, přidejte následující řádek na konci \<TemplateData > části, těsně před uzavírací značku.  
   
     ```  
     <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>  
@@ -221,11 +221,11 @@ ZipProjects:
   
      To způsobí, že šablony Konzolová aplikace se zobrazí v konzole podřízený uzel i v nadřazeném uzlu SimpleProject, která je jednu úroveň nad podřízený uzel.  
   
-4.  Uložte soubor SimpleProject.vstemplate.  
+4. Uložte soubor SimpleProject.vstemplate.  
   
-5.  V souboru .csproj přidejte \<OutputSubPath > pro každý prvek ZipProject. Uvolněte projekt jako předtím a upravte soubor projektu.  
+5. V souboru .csproj přidejte \<OutputSubPath > pro každý prvek ZipProject. Uvolněte projekt jako předtím a upravte soubor projektu.  
   
-6.  Vyhledejte \<ZipProject > elementy. U každého \<ZipProject > element, přidejte \<OutputSubPath > element a přiřaďte jí hodnotu konzoly. ZipProject  
+6. Vyhledejte \<ZipProject > elementy. U každého \<ZipProject > element, přidejte \<OutputSubPath > element a přiřaďte jí hodnotu konzoly. ZipProject  
   
     ```  
     <ZipProject Include="Templates\Projects\ConsoleApp\AssemblyInfo.cs">  
@@ -245,7 +245,7 @@ ZipProjects:
         </ZipProject>  
     ```  
   
-7.  Přidejte tuto \<PropertyGroup > do souboru projektu:  
+7. Přidejte tuto \<PropertyGroup > do souboru projektu:  
   
     ```  
     <PropertyGroup>  
@@ -253,7 +253,7 @@ ZipProjects:
     </PropertyGroup>  
     ```  
   
-8.  Uložte soubor projektu a znovu načíst projekt.  
+8. Uložte soubor projektu a znovu načíst projekt.  
   
 ## <a name="testing-the-project-type-child-node"></a>Testování podřízený uzel typu projektu  
  Soubor projektu zobrazíte testu, zda **konzoly** podřízený uzel se zobrazí v **nový projekt** dialogové okno.  
@@ -285,15 +285,15 @@ ZipProjects:
   
 #### <a name="to-substitute-project-template-parameters"></a>K nahrazení parametrů šablony projektu  
   
-1.  V souboru SimpleProjectNode.cs odeberte `AddFileFromTemplate` metody.  
+1. V souboru SimpleProjectNode.cs odeberte `AddFileFromTemplate` metody.  
   
-2.  Vyhledejte v souboru \Templates\Projects\ConsoleApp\SimpleProject.myproj \<RootNamespace > Vlastnosti a změňte její hodnotu na $safeprojectname$.  
+2. Vyhledejte v souboru \Templates\Projects\ConsoleApp\SimpleProject.myproj \<RootNamespace > Vlastnosti a změňte její hodnotu na $safeprojectname$.  
   
     ```  
     <RootNamespace>$safeprojectname$</RootNamespace>  
     ```  
   
-3.  V souboru \Templates\Projects\SimpleProject\Program.cs nahraďte obsah souboru následujícím kódem:  
+3. V souboru \Templates\Projects\SimpleProject\Program.cs nahraďte obsah souboru následujícím kódem:  
   
     ```  
     using System;  
@@ -315,11 +315,11 @@ ZipProjects:
     }  
     ```  
   
-4.  SimpleProject projekt znovu sestavte a spusťte ladění. Experimentální instanci aplikace by se zobrazit.  
+4. SimpleProject projekt znovu sestavte a spusťte ladění. Experimentální instanci aplikace by se zobrazit.  
   
-5.  Vytvořte novou SimpleProject konzolovou aplikaci. (V **typy projektů** vyberte **SimpleProject**. V části **instalované šablony sady Visual Studio**vyberte **konzolovou aplikaci**.)  
+5. Vytvořte novou SimpleProject konzolovou aplikaci. (V **typy projektů** vyberte **SimpleProject**. V části **instalované šablony sady Visual Studio**vyberte **konzolovou aplikaci**.)  
   
-6.  V nově vytvořeného projektu otevřete soubor Program.cs. Měl by vypadat nějak takto (identifikátor GUID hodnoty v souboru se bude lišit.):  
+6. V nově vytvořeného projektu otevřete soubor Program.cs. Měl by vypadat nějak takto (identifikátor GUID hodnoty v souboru se bude lišit.):  
   
     ```  
     using System;  
@@ -348,11 +348,11 @@ ZipProjects:
   
  Na stránce vlastností, které vytvoříte v této části vám umožní změnit a uložení těchto vlastností projektu:  
   
--   AssemblyName  
+- AssemblyName  
   
--   OutputType  
+- OutputType  
   
--   RootNamespace.  
+- RootNamespace.  
   
 1. V souboru SimpleProjectPackage.cs, přidejte tuto `ProvideObject` atribut `SimpleProjectPackage` třídy:  
   

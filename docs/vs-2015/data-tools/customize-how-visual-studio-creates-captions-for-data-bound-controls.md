@@ -20,12 +20,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 20611035ba37c509be7e41d8468d0c3d893334b2
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 1b3bba0d47e77b9e712a375627e2e4aebc6702b3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59647950"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079477"
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>Úprava způsobu, kterým Visual Studio vytváří titulky pro ovládací prvky vázané daty
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,21 +60,21 @@ Při přetažení položky z [okna zdroje dat](http://msdn.microsoft.com/library
 
 ### <a name="to-modify-the-smart-captioning-behavior-of-the-data-sources-window"></a>Chcete-li změnit inteligentní titulků chování okna zdroje dat
 
-1.  Otevřete okno příkazového řádku kliknutím **Start** a potom **spustit**.
+1. Otevřete okno příkazového řádku kliknutím **Start** a potom **spustit**.
 
-2.  Typ `regedit` v **spustit** dialogové okno a klikněte na tlačítko **OK**.
+2. Typ `regedit` v **spustit** dialogové okno a klikněte na tlačítko **OK**.
 
-3.  Rozbalte **HKEY_CURRENT_USER** uzlu.
+3. Rozbalte **HKEY_CURRENT_USER** uzlu.
 
-4.  Rozbalte **softwaru** uzlu.
+4. Rozbalte **softwaru** uzlu.
 
-5.  Rozbalte **Microsoft** uzlu.
+5. Rozbalte **Microsoft** uzlu.
 
-6.  Rozbalte **VisualStudio** uzlu.
+6. Rozbalte **VisualStudio** uzlu.
 
-7.  Klikněte pravým tlačítkem myši **10.0** uzel a vytvořte nový **klíč** s názvem `Data Designers`.
+7. Klikněte pravým tlačítkem myši **10.0** uzel a vytvořte nový **klíč** s názvem `Data Designers`.
 
-8.  Klikněte pravým tlačítkem myši **návrháře dat** uzel a vytvořte nový **řetězcovou hodnotu** s názvem `SmartCaptionExpression`.
+8. Klikněte pravým tlačítkem myši **návrháře dat** uzel a vytvořte nový **řetězcovou hodnotu** s názvem `SmartCaptionExpression`.
 
 9. Klikněte pravým tlačítkem myši **návrháře dat** uzel a vytvořte nový **řetězcovou hodnotu** s názvem `SmartCaptionReplacement`.
 
@@ -96,21 +96,21 @@ Při přetažení položky z [okna zdroje dat](http://msdn.microsoft.com/library
 
 ### <a name="to-turn-off-the-smart-captioning-feature"></a>Chcete-li vypnout funkci inteligentního titulků
 
-1.  Otevřete okno příkazového řádku kliknutím **Start** a potom **spustit**.
+1. Otevřete okno příkazového řádku kliknutím **Start** a potom **spustit**.
 
-2.  Typ `regedit` v **spustit** dialogové okno a klikněte na tlačítko **OK**.
+2. Typ `regedit` v **spustit** dialogové okno a klikněte na tlačítko **OK**.
 
-3.  Rozbalte **HKEY_CURRENT_USER** uzlu.
+3. Rozbalte **HKEY_CURRENT_USER** uzlu.
 
-4.  Rozbalte **softwaru** uzlu.
+4. Rozbalte **softwaru** uzlu.
 
-5.  Rozbalte **Microsoft** uzlu.
+5. Rozbalte **Microsoft** uzlu.
 
-6.  Rozbalte **VisualStudio** uzlu.
+6. Rozbalte **VisualStudio** uzlu.
 
-7.  Klikněte pravým tlačítkem myši **10.0** uzel a vytvořte nový **klíč** s názvem `Data Designers`.
+7. Klikněte pravým tlačítkem myši **10.0** uzel a vytvořte nový **klíč** s názvem `Data Designers`.
 
-8.  Klikněte pravým tlačítkem myši **návrháře dat** uzel a vytvořte nový **řetězcovou hodnotu** s názvem `SmartCaptionExpression`.
+8. Klikněte pravým tlačítkem myši **návrháře dat** uzel a vytvořte nový **řetězcovou hodnotu** s názvem `SmartCaptionExpression`.
 
 9. Klikněte pravým tlačítkem myši **návrháře dat** uzel a vytvořte nový **řetězcovou hodnotu** s názvem `SmartCaptionReplacement`.
 

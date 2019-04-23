@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9887214edae870ca79796a7a667b15f8536e8bb4
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 5caa0804ae4d90a23ae59195d2e610653437babe
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56710978"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079341"
 ---
 # <a name="assembly-element-visual-studio-templates"></a>Assembly – element (šablony sady Visual Studio)
 Určuje informace o sestavení, který používá šablonu přidáte odkaz na toto sestavení do projektů.
@@ -52,7 +52,7 @@ Určuje informace o sestavení, který používá šablonu přidáte odkaz na to
 
  Tento text určuje sestavení, které chcete přidat do projektu při vytváření instance šablony položky. Tento název sestavení musí být zadán v jednom z následujících způsobů:
 
--   Jako název úplné sestavení. Příklad:
+- Jako název úplné sestavení. Příklad:
 
     ```
     <Assembly>
@@ -60,7 +60,7 @@ Určuje informace o sestavení, který používá šablonu přidáte odkaz na to
     </Assembly>
     ```
 
--   Jako jednoduchý text odkazu. Příklad:
+- Jako jednoduchý text odkazu. Příklad:
 
     ```
     <Assembly> System </Assembly>

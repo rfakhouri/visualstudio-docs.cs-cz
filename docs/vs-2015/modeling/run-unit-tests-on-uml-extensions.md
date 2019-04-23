@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 493193e24fcee2b3f3290546abc656faee7d88a7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e37f6d7891e561beecdf0f9146d647822940571b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54790244"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079847"
 ---
 # <a name="run-unit-tests-on-uml-extensions"></a>Spouštění testování částí v rozšířeních UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,20 +50,20 @@ K udržení stabilní prostřednictvím po sobě jdoucích změn kódu, doporuč
   
  Tuto funkci podporovat kterou verzí sady Visual Studio najdete v tématu [podporované verze pro nástroje architektury a modelování](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
-##  <a name="Host"></a> Nastavení testu jednotek pro rozšíření VSIX  
+## <a name="Host"></a> Nastavení testu jednotek pro rozšíření VSIX  
  Metody v rozšíření modelování obvykle pracovat diagram, který je již otevřen. Metody jako například použít importů MEF **IDiagramContext** a **ILinkedUndoContext**. Testovací prostředí, musíte nastavit kontext, před spuštěním testů.  
   
 #### <a name="to-set-up-a-unit-test-that-executes-in-includevsprvsincludesvsprvs-mdmd"></a>Nastavení, který se spustí v testu jednotek [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]  
   
-1.  Vytvořte projekt rozšíření UML a projekt testu jednotek.  
+1. Vytvořte projekt rozšíření UML a projekt testu jednotek.  
   
-    1.  **Projekt rozšíření UML.** Obvykle to vytvoříte pomocí příkazu, gesta nebo šablony projektu ověřování. Viz například [definování příkazu nabídky v diagramu modelování](../modeling/define-a-menu-command-on-a-modeling-diagram.md).  
+    1. **Projekt rozšíření UML.** Obvykle to vytvoříte pomocí příkazu, gesta nebo šablony projektu ověřování. Viz například [definování příkazu nabídky v diagramu modelování](../modeling/define-a-menu-command-on-a-modeling-diagram.md).  
   
-    2.  **Projekt testování částí.** Další informace najdete v tématu [svůj kód testu jednotek](../test/unit-test-your-code.md).  
+    2. **Projekt testování částí.** Další informace najdete v tématu [svůj kód testu jednotek](../test/unit-test-your-code.md).  
   
-2.  Vytvoření [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] řešení, které obsahuje projekt modelování UML. Toto řešení bude používat jako počáteční stav testů. By měla být oddělena od řešení, ve kterém píšete rozšíření UML a jeho testování částí. Další informace najdete v tématu [vytvořit modelování projektů a diagramů UML](../modeling/create-uml-modeling-projects-and-diagrams.md).  
+2. Vytvoření [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] řešení, které obsahuje projekt modelování UML. Toto řešení bude používat jako počáteční stav testů. By měla být oddělena od řešení, ve kterém píšete rozšíření UML a jeho testování částí. Další informace najdete v tématu [vytvořit modelování projektů a diagramů UML](../modeling/create-uml-modeling-projects-and-diagrams.md).  
   
-3.  **V projektu rozšíření UML**, upravíte soubor .csproj jako text a ujistěte se, že tyto řádky zobrazit `true`:  
+3. **V projektu rozšíření UML**, upravíte soubor .csproj jako text a ujistěte se, že tyto řádky zobrazit `true`:  
   
     ```  
     <CopyBuildOutputToOutputDirectory>true</CopyBuildOutputToOutputDirectory>  
@@ -72,33 +72,33 @@ K udržení stabilní prostřednictvím po sobě jdoucích změn kódu, doporuč
   
      Chcete-li upravit soubor .csproj jako text, zvolte **uvolnit projekt** v místní nabídce projektu v Průzkumníku řešení. Klikněte na tlačítko **upravit. .csproj**. Po úpravě textu, zvolte **znovu načíst projekt**.  
   
-4.  V projektu rozšíření UML, přidejte následující řádek, který **Properties\AssemblyInfo.cs**. To umožňuje testování částí pro přístup k metodám, které chcete testovat:  
+4. V projektu rozšíření UML, přidejte následující řádek, který **Properties\AssemblyInfo.cs**. To umožňuje testování částí pro přístup k metodám, které chcete testovat:  
   
     ```csharp  
     [assembly:InternalsVisibleTo("MyUnitTests")] // Name of unit tests assembly.  
     ```  
   
-5.  **V projektu testování částí**, přidejte následující odkazy na sestavení:  
+5. **V projektu testování částí**, přidejte následující odkazy na sestavení:  
   
-    -   *Projekt pro rozšíření UML*  
+    - *Projekt pro rozšíření UML*  
   
-    -   **EnvDTE.dll**  
+    - **EnvDTE.dll**  
   
-    -   **Microsoft.VisualStudio.ArchitectureTools.Extensibility.dll**  
+    - **Microsoft.VisualStudio.ArchitectureTools.Extensibility.dll**  
   
-    -   **Microsoft.VisualStudio.ComponentModelHost.dll**  
+    - **Microsoft.VisualStudio.ComponentModelHost.dll**  
   
-    -   **Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll**  
+    - **Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll**  
   
-    -   **Microsoft.VisualStudio.Uml.Interfaces.dll**  
+    - **Microsoft.VisualStudio.Uml.Interfaces.dll**  
   
-    -   **Microsoft.VSSDK.TestHostFramework.dll**  
+    - **Microsoft.VSSDK.TestHostFramework.dll**  
   
-6.  Předpona atributu `[HostType("VS IDE")]` do jednotlivých testovacích metod, včetně metod inicializace.  
+6. Předpona atributu `[HostType("VS IDE")]` do jednotlivých testovacích metod, včetně metod inicializace.  
   
      Tím se zajistí, že test bude spuštěn v experimentální instanci sady Visual Studio.  
   
-##  <a name="DTE"></a> Přístup k DTE a modelstore modelu  
+## <a name="DTE"></a> Přístup k DTE a modelstore modelu  
  Zápis metody k otevření projektu modelování v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Obvykle chcete otevřít řešení pouze jednou v každém testovacím běhu. Metoda spustit jenom jednou, předpona metody `[AssemblyInitialize]` atribut. Nezapomeňte, že potřebujete atribut [HostType ("VS IDE")] v jednotlivých testovacích metod.  Příklad:  
   
 ```csharp  
@@ -166,7 +166,7 @@ namespace UnitTests
   
  Pokud instance <xref:EnvDTE.Project?displayProperty=fullName> představuje projekt modelování a lze jej přetypovat do a z <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.IModelingProject>.  
   
-##  <a name="Opening"></a> Otevření diagramu modelu  
+## <a name="Opening"></a> Otevření diagramu modelu  
  Pro každý test nebo třída testů je obvykle chcete pracovat Otevřít diagram. V následujícím příkladu `[ClassInitialize]` atribut, který spustí tuto metodu před jinými metodami v této testovací třídy. Znovu nezapomeňte, že potřebujete každou metodu testu atribut [HostType ("VS IDE")]:  
   
 ```csharp  
@@ -211,7 +211,7 @@ public class MyTestClass
   
 ```  
   
-##  <a name="UiThread"></a> Provádění změn modelu ve vlákně uživatelského rozhraní  
+## <a name="UiThread"></a> Provádění změn modelu ve vlákně uživatelského rozhraní  
  Pokud testy nebo metody v rámci testu, provést změny modelu úložiště, musíte je spouštět ve vlákně uživatelského rozhraní. Pokud to neprovedete, může se zobrazit `AccessViolationException`. Ve volání metody Invoke uvést kód testovací metody:  
   
 ```  
@@ -231,7 +231,7 @@ using Microsoft.VSSDK.Tools.VsIdeTesting;
     }  
 ```  
   
-##  <a name="MEF"></a> Testování příkazu, gesta a další součásti MEF  
+## <a name="MEF"></a> Testování příkazu, gesta a další součásti MEF  
  Deklarace vlastností, které mají používat komponent MEF `[Import]` atribut a jehož hodnoty jsou nastavené podle jejich hostitelů. Tyto vlastnosti obvykle zahrnují IDiagramContext, SVsServiceProvider a ILinkedUndoContext. Pokud testujete metodu, která používá některou z těchto vlastností, je nutné nastavit jejich hodnoty před spuštěním testované metody. Například, pokud jste napsali rozšíření příkazu podobné tento kód:  
   
 ```  
