@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 5366e33da9af7a845a7f5e5a5e3a901b7d091fa3
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9685d1621f0e81adbbb034c250974b7bc9b36993
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55947339"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064580"
 ---
 # <a name="code-generation-compilation-and-naming-conventions-in-microsoft-fakes"></a>Vytváření, kompilace a konvence pojmenování kódu v Napodobeniny Microsoft
 
@@ -20,8 +20,8 @@ Tento článek popisuje možnosti a problémy v generování kódu rozhraní Fak
 
 **Požadavky**
 
--   Visual Studio Enterprise
--   Rozhraní .NET Framework projektu
+- Visual Studio Enterprise
+- Rozhraní .NET Framework projektu
 
 > [!NOTE]
 > Projekty .NET standard teď nejsou podporovány.
@@ -62,23 +62,23 @@ Například následující *.fakes* soubor generuje provizorní kód pro typy v 
 
 Řetězce filtru používají k definování, jak odpovídající by mělo být provedeno jednoduchou gramatiku:
 
--   Filtry jsou malá a velká písmena ve výchozím nastavení; filtry provádějí porovnání podřetězců:
+- Filtry jsou malá a velká písmena ve výchozím nastavení; filtry provádějí porovnání podřetězců:
 
      `el` odpovídá "hello"
 
--   Přidání `!` na konec filtrovacího umožňuje přesnou shodu malá a velká písmena:
+- Přidání `!` na konec filtrovacího umožňuje přesnou shodu malá a velká písmena:
 
      `el!` neodpovídá "hello"
 
      `hello!` odpovídá "hello"
 
--   Přidání `*` na konec filtrovacího umožňuje porovnání předpony řetězce:
+- Přidání `*` na konec filtrovacího umožňuje porovnání předpony řetězce:
 
      `el*` neodpovídá "hello"
 
      `he*` odpovídá "hello"
 
--   Několik filtrů ve středníkem oddělený seznam zkombinují je vyhodnoceno jako disjunkce:
+- Několik filtrů ve středníkem oddělený seznam zkombinují je vyhodnoceno jako disjunkce:
 
      `el;wo` odpovídá "hello" a "world"
 
@@ -114,9 +114,9 @@ Generátor falešného kódu generuje typy překrytí a zástupných procedur ty
 
  Pokud je překryté sestavení pojmenováno silně a chcete získat přístup k vnitřním typům sestavení:
 
--   Zkušební sestava i falešné sestavení musí mít silný název.
+- Zkušební sestava i falešné sestavení musí mít silný název.
 
--   Přidání veřejné klíče testu a sestavení Fakes **InternalsVisibleToAttribute** atributy v překrytých sestaveních. Zde je, jak by vypadal příklad atributů v kódu překrytého sestavení, pokud je překryté sestavení pojmenováno silně:
+- Přidání veřejné klíče testu a sestavení Fakes **InternalsVisibleToAttribute** atributy v překrytých sestaveních. Zde je, jak by vypadal příklad atributů v kódu překrytého sestavení, pokud je překryté sestavení pojmenováno silně:
 
     ```csharp
     // FileSystem\AssemblyInfo.cs
@@ -161,19 +161,19 @@ Kompilace falešných sestavení může podstatně prodloužit dobu sestavení. 
 
 V projektech jednotkových testů přidejte odkaz na kompilovaná falešná sestavení, které jsou umístěné v části fakesassemblies adresáře ve složce projektu.
 
-1.  Vytvořte novou knihovnu tříd s verzí modulu runtime .NET odpovídající testovacímu projektu. Nazvěte ji třeba Fakes.Prebuild. Odeberte *class1.cs* soubor z projektu, není potřeba.
+1. Vytvořte novou knihovnu tříd s verzí modulu runtime .NET odpovídající testovacímu projektu. Nazvěte ji třeba Fakes.Prebuild. Odeberte *class1.cs* soubor z projektu, není potřeba.
 
-2.  Přidáte odkaz na všechna systémová sestavení a sestavení třetích stran, které potřebujete napodobeniny.
+2. Přidáte odkaz na všechna systémová sestavení a sestavení třetích stran, které potřebujete napodobeniny.
 
-3.  Přidat *.fakes* soubor pro každé sestavení a sestavení.
+3. Přidat *.fakes* soubor pro každé sestavení a sestavení.
 
-4.  Z testovacího projektu
+4. Z testovacího projektu
 
-    -   Ujistěte se, že budete mít odkaz na napodobeninu knihovny runtime DLL:
+    - Ujistěte se, že budete mít odkaz na napodobeninu knihovny runtime DLL:
 
          *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PublicAssemblies\Microsoft.QualityTools.Testing.Fakes.dll*
 
-    -   Pro každé sestavení, kterou jste vytvořili falešné sestavení, přidejte odkaz na odpovídající soubor knihovny DLL v *fakes.prebuild\fakesassemblies k* složky vašeho projektu.
+    - Pro každé sestavení, kterou jste vytvořili falešné sestavení, přidejte odkaz na odpovídající soubor knihovny DLL v *fakes.prebuild\fakesassemblies k* složky vašeho projektu.
 
 ### <a name="avoid-assembly-name-clashing"></a>Vyhněte se kolidující název sestavení
 
@@ -270,9 +270,9 @@ attribute of the Assembly element in the .fakes:
 
 Následující pravidla jsou aplikována rekurzivně:
 
--   Jelikož napodobeniny používají C# ke generování sestavení Fakes, jakýkoli znak, který vyprodukuje neplatný C# token je převeden na "_" (podtržítko).
+- Jelikož napodobeniny používají C# ke generování sestavení Fakes, jakýkoli znak, který vyprodukuje neplatný C# token je převeden na "_" (podtržítko).
 
--   Jestliže výsledný název koliduje se členem deklarovaného typu, se používá schéma číslování přidáním čítač dvěma číslicemi, začínající od 01.
+- Jestliže výsledný název koliduje se členem deklarovaného typu, se používá schéma číslování přidáním čítač dvěma číslicemi, začínající od 01.
 
 ## <a name="see-also"></a>Viz také:
 

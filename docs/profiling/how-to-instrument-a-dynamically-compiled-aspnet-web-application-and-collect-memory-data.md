@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: ad83886b6545aa8f498f0304dc172f68976e9c72
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: a37ef652fa91cf4412f27bf03d9d62f9d83f880f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59652727"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60057263"
 ---
 # <a name="how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line"></a>Postupy: Instrumentace dynamicky kompilované webové aplikace ASP.NET a shromažďovat paměťová data pomocí příkazového řádku profileru
 Toto téma popisuje způsob použití [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] příkazového řádku nástrojů pro profilaci shromažďovat podrobná data paměti .NET přidělení a objekt doba života pro dynamicky kompilovaných [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] webovou aplikaci s použitím metoda profilace instrumentace.
@@ -31,11 +31,11 @@ Toto téma popisuje způsob použití [!INCLUDE[vsprvs](../code-quality/includes
 
 #### <a name="to-configure-the-aspnet-web-application-and-the-web-server"></a>Konfigurace webové aplikace ASP.NET a webového serveru
 
-1.  Upravit *web.config* soubor cílové aplikace. Zobrazit [jak: Úprava souborů web.config za účelem instrumentace a profilování dynamicky kompilovaných webových aplikací ASP.NET](../profiling/how-to-modify-web-config-files-to-instrument-dynamically-compiled-aspnet-apps.md).
+1. Upravit *web.config* soubor cílové aplikace. Zobrazit [jak: Úprava souborů web.config za účelem instrumentace a profilování dynamicky kompilovaných webových aplikací ASP.NET](../profiling/how-to-modify-web-config-files-to-instrument-dynamically-compiled-aspnet-apps.md).
 
-2.  Otevřete okno příkazového řádku na počítači, který je hostitelem webové aplikace.
+2. Otevřete okno příkazového řádku na počítači, který je hostitelem webové aplikace.
 
-3.  Inicializujte proměnné prostředí profilování. Zadejte:
+3. Inicializujte proměnné prostředí profilování. Zadejte:
 
      **VSPerfClrEnv /globaltracegc**
 
@@ -43,11 +43,11 @@ Toto téma popisuje způsob použití [!INCLUDE[vsprvs](../code-quality/includes
 
      **VSPerfClrEnv /globaltracegclife**
 
-    -   **/globaltracegc** umožňuje shromažďování data o přidělování paměti.
+    - **/globaltracegc** umožňuje shromažďování data o přidělování paměti.
 
-    -   **/globaltracegclife** povoluje shromažďování data o přidělování paměti a životnosti objektů.
+    - **/globaltracegclife** povoluje shromažďování data o přidělování paměti a životnosti objektů.
 
-4.  Restartujte počítač.
+4. Restartujte počítač.
 
 ## <a name="run-the-profiling-session"></a>Spuštění relace profilování
 
@@ -83,7 +83,7 @@ Toto téma popisuje způsob použití [!INCLUDE[vsprvs](../code-quality/includes
 
 #### <a name="to-start-and-stop-data-collection"></a>Spuštění a zastavení shromažďování dat
 
--   Následující páry možností spouští a zastavují sběr dat. Každou možnost zadejte na samostatný příkazový řádek. Sběr dat lze zapnout a vypnout několikrát.
+- Následující páry možností spouští a zastavují sběr dat. Každou možnost zadejte na samostatný příkazový řádek. Sběr dat lze zapnout a vypnout několikrát.
 
     |Možnost|Popis|
     |------------|-----------------|
@@ -91,7 +91,7 @@ Toto téma popisuje způsob použití [!INCLUDE[vsprvs](../code-quality/includes
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Spustí (**/processon**) nebo zastaví (**/processoff**) sběr dat pro proces určený identifikátorem procesu (`PID`).|
     |[/threadon](../profiling/threadon-and-threadoff.md) **:** `TID` [/threadoff](../profiling/threadon-and-threadoff.md) **:** `TID`|Spustí (**/threadon**) nebo zastaví (**/threadoff**) sběr dat pro vlákno určené pomocí ID vlákna (`TID`).|
 
--   Můžete také použít **VSPerfCmd.exe**[/mark](../profiling/mark.md) možnost k vložení profilovací značky do datového souboru. **/Mark** příkaz přidá identifikátor, časové razítko a volitelný uživatelem definovaný textový řetězec. Značky lze použít k filtrování dat v zobrazení data a sestavy profileru.
+- Můžete také použít **VSPerfCmd.exe**[/mark](../profiling/mark.md) možnost k vložení profilovací značky do datového souboru. **/Mark** příkaz přidá identifikátor, časové razítko a volitelný uživatelem definovaný textový řetězec. Značky lze použít k filtrování dat v zobrazení data a sestavy profileru.
 
 ## <a name="end-the-profiling-session"></a>Ukončit relaci profilování
  Chcete-li ukončit relaci profilování, zavřete cíl [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] webovou aplikaci, zastavte Internetová informační služba () pro profilovaný proces zastavte a poté vypněte profiler. Potom restartujte službu IIS.
@@ -117,13 +117,13 @@ Toto téma popisuje způsob použití [!INCLUDE[vsprvs](../code-quality/includes
 
 #### <a name="to-restore-the-application-and-computer-configuration"></a>Chcete-li obnovit konfiguraci aplikace a počítače
 
-1.  Nahradit *web.config* souboru kopií původního souboru.
+1. Nahradit *web.config* souboru kopií původního souboru.
 
-2.  (Volitelné). Vyčistěte proměnné prostředí profilování. Zadejte:
+2. (Volitelné). Vyčistěte proměnné prostředí profilování. Zadejte:
 
      **Nástroj VSPerfCmd /globaloff**
 
-3.  Restartujte počítač.
+3. Restartujte počítač.
 
 ## <a name="see-also"></a>Viz také:
 - [Webové aplikace ASP.NET profilu](../profiling/command-line-profiling-of-aspnet-web-applications.md)

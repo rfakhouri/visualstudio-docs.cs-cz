@@ -14,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: a5c70375e7b7b47b9c345c13b5529ea29e1eed45
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 0212f7ef1c5b506ce7a1efbde60e7c46a424bfa3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55925512"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043897"
 ---
 # <a name="how-to-create-a-nullable-type-in-class-designer"></a>Postupy: Vytvoření typu s možnou hodnotou Null v Návrháři tříd
 
@@ -29,9 +29,9 @@ A *typ připouštějící hodnotu Null* je hodnotový typ, který jste rozšíř
 
 Typy s možnou hodnotou Null jsou instance <xref:System.Nullable%601> struktury. Každá instance typu s možnou hodnotou Null má dvě veřejné vlastnosti jen pro čtení `HasValue` a `Value`:
 
--   `HasValue` je typu `bool` a určuje, zda je proměnná obsahuje definovanou hodnotu. `True` znamená to, že proměnná obsahuje hodnotu než null. Můžete otestovat pomocí příkazu pro definovanou hodnotou `if (x.HasValue)` nebo `if (y != null)`.
+- `HasValue` je typu `bool` a určuje, zda je proměnná obsahuje definovanou hodnotu. `True` znamená to, že proměnná obsahuje hodnotu než null. Můžete otestovat pomocí příkazu pro definovanou hodnotou `if (x.HasValue)` nebo `if (y != null)`.
 
--   `Value` je stejného typu jako základní typ. Pokud `HasValue` je `True`, `Value` obsahuje smysluplnou hodnotu. Pokud `HasValue` je `False`, přístup k `Value` vyvolá výjimku neplatná operace.
+- `Value` je stejného typu jako základní typ. Pokud `HasValue` je `True`, `Value` obsahuje smysluplnou hodnotu. Pokud `HasValue` je `False`, přístup k `Value` vyvolá výjimku neplatná operace.
 
 Ve výchozím nastavení, pokud deklarujete proměnnou jako typ s možnou hodnotou Null nemá žádné definované hodnoty (`HasValue` je `False`), jiné než výchozí hodnotu jeho základní typ hodnoty.
 
@@ -43,26 +43,26 @@ Další informace o typech s povolenou hodnotou Null v jazyce C# najdete v téma
 
 ## <a name="to-add-a-nullable-type-by-using-the-class-designer"></a>Chcete-li přidat typ připouštějící hodnotu Null pomocí návrháře tříd
 
-1.  V diagramu tříd rozšiřte existující třídy nebo vytvořte novou třídu.
+1. V diagramu tříd rozšiřte existující třídy nebo vytvořte novou třídu.
 
-2.  Přidání třídy do projektu, na **Diagram tříd** nabídky, klikněte na tlačítko **přidat** > **přidat třídu**.
+2. Přidání třídy do projektu, na **Diagram tříd** nabídky, klikněte na tlačítko **přidat** > **přidat třídu**.
 
-3.  Rozbalte obrazec třídy na **Diagram tříd** nabídky, klikněte na tlačítko **Rozbalit**.
+3. Rozbalte obrazec třídy na **Diagram tříd** nabídky, klikněte na tlačítko **Rozbalit**.
 
-4.  Vyberte obrazec třídy. Na **Diagram tříd** nabídky, klikněte na tlačítko **přidat** > **pole**. Nové pole, která má výchozí název **pole** se zobrazí na obrazec třídy a také **podrobností třídy** okna.
+4. Vyberte obrazec třídy. Na **Diagram tříd** nabídky, klikněte na tlačítko **přidat** > **pole**. Nové pole, která má výchozí název **pole** se zobrazí na obrazec třídy a také **podrobností třídy** okna.
 
-5.  V **název** sloupec **podrobností třídy** okna (nebo ve třídě obrazce samotné), změňte název nového pole na platný a smysluplný název.
+5. V **název** sloupec **podrobností třídy** okna (nebo ve třídě obrazce samotné), změňte název nového pole na platný a smysluplný název.
 
-6.  V **typ** sloupec **podrobností třídy** okna, deklarujte typ jako typ s možnou hodnotou Null tak, že zadáte následující:
+6. V **typ** sloupec **podrobností třídy** okna, deklarujte typ jako typ s možnou hodnotou Null tak, že zadáte následující:
 
     - `int?` (Visual C#)
     - `Nullable(Of Integer)` (Visual Basic)
 
 ## <a name="to-add-a-nullable-type-by-using-the-code-editor"></a>Chcete-li přidat typ připouštějící hodnotu Null pomocí editoru kódu
 
-1.  Přidání třídy do projektu. Vyberte uzel projektu v **Průzkumníku řešení**a dále **projektu** nabídky, klikněte na tlačítko **přidat třídu**.
+1. Přidání třídy do projektu. Vyberte uzel projektu v **Průzkumníku řešení**a dále **projektu** nabídky, klikněte na tlačítko **přidat třídu**.
 
-2.  V souboru .cs nebo .vb pro novou třídu přidejte jeden nebo více typů s povolenou hodnotou Null v této nové třídě do deklarace třídy.
+2. V souboru .cs nebo .vb pro novou třídu přidejte jeden nebo více typů s povolenou hodnotou Null v této nové třídě do deklarace třídy.
 
     ```csharp
     // Declare a nullable type in Visual C#:
@@ -79,11 +79,11 @@ Další informace o typech s povolenou hodnotou Null v jazyce C# najdete v téma
     End Class
     ```
 
-3.  Ze zobrazení tříd přetáhněte přes novou ikonu třídy na návrhové ploše návrháře tříd. Tvar třídy se zobrazí v diagramu tříd.
+3. Ze zobrazení tříd přetáhněte přes novou ikonu třídy na návrhové ploše návrháře tříd. Tvar třídy se zobrazí v diagramu tříd.
 
-4.  Rozbalit podrobnosti pro třídu tvar a přesuňte ukazatel myši nad členy třídy. Popisek zobrazí deklarace každého člena.
+4. Rozbalit podrobnosti pro třídu tvar a přesuňte ukazatel myši nad členy třídy. Popisek zobrazí deklarace každého člena.
 
-5.  Pravým tlačítkem myši na obrazec třídy a klikněte na tlačítko **podrobností třídy**. Můžete zobrazit nebo upravit vlastnosti nového typu **podrobností třídy** okna.
+5. Pravým tlačítkem myši na obrazec třídy a klikněte na tlačítko **podrobností třídy**. Můžete zobrazit nebo upravit vlastnosti nového typu **podrobností třídy** okna.
 
 ## <a name="see-also"></a>Viz také:
 

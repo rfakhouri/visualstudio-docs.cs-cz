@@ -20,12 +20,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 578835b770a9895b00513b6907956bc3bb9f9da7
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 001f3a3c74f792fbe3028b6915cb350d359221a1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59653755"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043133"
 ---
 # <a name="insert-new-records-into-a-database"></a>Vkládání nových záznamů do databáze
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,7 +62,7 @@ Vkládání nových záznamů do databáze, můžete `TableAdapter.Update` metod
   
 #### <a name="to-insert-new-records-into-a-database-by-using-the-tableadapterinsert-method"></a>Chcete-li vkládání nových záznamů do databáze s použitím TableAdapter.Insert – metoda  
   
--   Volání objektu TableAdapter `Insert` metodu předáním hodnoty pro každý sloupec jako parametry.  
+- Volání objektu TableAdapter `Insert` metodu předáním hodnoty pro každý sloupec jako parametry.  
   
     > [!NOTE]
     >  Pokud nemáte k dispozici instance, vytvořte instanci objektu TableAdapter, které chcete použít.  
@@ -77,7 +77,7 @@ Vkládání nových záznamů do databáze, můžete `TableAdapter.Update` metod
   
 #### <a name="to-insert-new-records-into-a-database-by-using-command-objects"></a>Chcete-li vkládání nových záznamů do databáze pomocí příkazu objektů  
   
--   Vytvořte nový objekt příkazu a pak nastavte jeho `Connection`, `CommandType`, a `CommandText` vlastnosti.  
+- Vytvořte nový objekt příkazu a pak nastavte jeho `Connection`, `CommandType`, a `CommandText` vlastnosti.  
   
      [!code-csharp[VbRaddataSaving#16](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Class1.cs#16)]
      [!code-vb[VbRaddataSaving#16](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Class1.vb#16)]  

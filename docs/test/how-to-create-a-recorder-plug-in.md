@@ -8,12 +8,12 @@ ms.assetid: 6fe13be1-aeb5-4927-9bff-35950e194da9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e86f026ec4d4133635ba5cf9d6c37970abe6e139
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: e49fbb3411aee98fce5899c522b9743b3f2afa33
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58415898"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060290"
 ---
 # <a name="how-to-create-a-recorder-plug-in"></a>Postupy: Vytvoření modulu plug-in rekordéru
 
@@ -33,20 +33,20 @@ Následující postupy popisují, jak vytvořit základní kód pro rekordér mo
 
 ### <a name="to-create-a-recorder-plug-in"></a>Můžete vytvořit modul plug-in rekordéru
 
-1.  Otevřete řešení, která obsahuje webový výkon a projekt zátěžového testu pomocí testu výkonnosti webu, pro kterou chcete vytvořit modul plug-in rekordéru.
+1. Otevřete řešení, která obsahuje webový výkon a projekt zátěžového testu pomocí testu výkonnosti webu, pro kterou chcete vytvořit modul plug-in rekordéru.
 
-2.  Přidat nový **knihovny tříd** projektu do řešení.
+2. Přidat nový **knihovny tříd** projektu do řešení.
 
-3.  V **Průzkumníku řešení**, v nová knihovně tříd projektové složky, klikněte pravým tlačítkem **odkazy** a pak zvolte položku **přidat odkaz**.
+3. V **Průzkumníku řešení**, v nová knihovně tříd projektové složky, klikněte pravým tlačítkem **odkazy** a pak zvolte položku **přidat odkaz**.
 
     > [!TIP]
     > Příklad nové složky projektu knihovny třídy je **RecorderPlugins**.
 
      **Přidat odkaz** se zobrazí dialogové okno.
 
-4.  Vyberte **.NET** kartu.
+4. Vyberte **.NET** kartu.
 
-5.  Přejděte dolů a vyberte možnost **Microsoft.VisualStudio.QualityTools.WebTestFramework** a klikněte na tlačítko **OK**.
+5. Přejděte dolů a vyberte možnost **Microsoft.VisualStudio.QualityTools.WebTestFramework** a klikněte na tlačítko **OK**.
 
      **Microsoft.VisualStudio.QualityTools.WebTestFramework** se přidá **odkazy** složky **Průzkumníku řešení**.
 
@@ -88,11 +88,11 @@ Po kompilaci modulu plug-in rekordéru, umístěte výslednou knihovnu DLL jedn�
 
 ### <a name="execute-the-recorder-plug-in"></a>Spuštění modulu plug-in rekordéru
 
-1.  Vytvoření nového testu výkonnosti webu.
+1. Vytvoření nového testu výkonnosti webu.
 
      **Povolit WebTestRecordPlugins** zobrazí dialogové okno.
 
-2.  Zaškrtněte políčko pro doplněk rekordéru a zvolte **OK**.
+2. Zaškrtněte políčko pro doplněk rekordéru a zvolte **OK**.
 
      Po dokončení nahrávání testu výkonnosti webu bude spuštěn nový modul plug-in rekordéru.
 

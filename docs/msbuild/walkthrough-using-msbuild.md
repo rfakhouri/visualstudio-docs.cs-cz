@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ae318a4fbfe7e452ab995ad53d961d288c0cbcf5
-ms.sourcegitcommit: 847d192013eb8225776243045c9b5a53d1ba4a59
+ms.openlocfilehash: fadc901ce09c6e85541956d800201a53b6d73490
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/15/2019
-ms.locfileid: "59584399"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054962"
 ---
 # <a name="walkthrough-use-msbuild"></a>Návod: Použití nástroje MSBuild
 
@@ -56,13 +56,13 @@ Můžete spustit nástroj MSBuild ze sady Visual Studio nebo z **příkazové ok
 
 **K prozkoumání souboru projektu**
 
-1.  V **Průzkumníka řešení**, klikněte na uzel projektu **BuildApp**.
+1. V **Průzkumníka řešení**, klikněte na uzel projektu **BuildApp**.
 
-2.  V **vlastnosti** prohlížeče, Všimněte si, že **soubor projektu** vlastnost *BuildApp.csproj*. Všechny soubory projektu jsou pojmenované s příponou *proj*. Pokud jste vytvořili projekt jazyka Visual Basic, název souboru projektu by *BuildApp.vbproj*.
+2. V **vlastnosti** prohlížeče, Všimněte si, že **soubor projektu** vlastnost *BuildApp.csproj*. Všechny soubory projektu jsou pojmenované s příponou *proj*. Pokud jste vytvořili projekt jazyka Visual Basic, název souboru projektu by *BuildApp.vbproj*.
 
-3.  Klikněte pravým tlačítkem na uzel projektu a pak klikněte na **uvolnit projekt**.
+3. Klikněte pravým tlačítkem na uzel projektu a pak klikněte na **uvolnit projekt**.
 
-4.  Znovu klikněte pravým tlačítkem na uzel projektu a pak klikněte na **upravit BuildApp.csproj**.
+4. Znovu klikněte pravým tlačítkem na uzel projektu a pak klikněte na **upravit BuildApp.csproj**.
 
      Soubor projektu se zobrazí v editoru kódu.
 
@@ -222,16 +222,20 @@ $(PropertyName)
 4. Zkontrolujte výstup příkazu. Zobrazí se tyto dva řádky (.NET Framework verze se může lišit):
 
     ::: moniker range=">=vs-2019"
+
     ```
     Configuration is Debug
     MSBuildToolsPath is C:\Program Files (x86)\Microsoft Visual Studio\2019\<Visual Studio SKU>\MSBuild\15.0\Bin
     ```
+
     ::: moniker-end
     ::: moniker range="vs-2017"
+
     ```
     Configuration is Debug
     MSBuildToolsPath is C:\Program Files (x86)\Microsoft Visual Studio\2017\<Visual Studio SKU>\MSBuild\15.0\Bin
     ```
+
     ::: moniker-end
 
 > [!NOTE]
@@ -263,13 +267,13 @@ $(PropertyName)
 
 **Chcete-li nastavit hodnotu vlastnosti z příkazového řádku**
 
-1.  Z **příkazové okno**, zadejte a spusťte tento řádek:
+1. Z **příkazové okno**, zadejte a spusťte tento řádek:
 
     ```cmd
     msbuild buildapp.csproj -t:HelloWorld -p:Configuration=Release
     ```
 
-2.  Zkontrolujte výstup příkazu. Zobrazí se tento řádek:
+2. Zkontrolujte výstup příkazu. Zobrazí se tento řádek:
 
     ```
     Configuration is Release.
@@ -381,21 +385,21 @@ Chcete-li změnit oddělovač typ položky, použijte následující syntaxi, kd
 
 **Chcete-li zobrazit položky typu hodnoty na jeden řádek**
 
-1.  Z editoru kódu nahraďte tento řádek úloha zprávy:
+1. Z editoru kódu nahraďte tento řádek úloha zprávy:
 
     ```xml
     <Message Text="Compile item type contains @(Compile, '%0A%0D')" />
     ```
 
-2.  Uložte soubor projektu.
+2. Uložte soubor projektu.
 
-3.  Z **příkazové okno**, zadejte a spusťte tento řádek:
+3. Z **příkazové okno**, zadejte a spusťte tento řádek:
 
     ```cmd
     msbuild buildapp.csproj -t:HelloWorld
     ```
 
-4.  Zkontrolujte výstup příkazu. Měli byste vidět tyto řádky:
+4. Zkontrolujte výstup příkazu. Měli byste vidět tyto řádky:
 
     ```
     Compile item type contains Form1.cs

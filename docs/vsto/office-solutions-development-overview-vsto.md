@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1c9c834d3fbb49775d9462ac5e6ce3d27127f793
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 45b9dba16a0a8ebf6baaf2f1d7660035294fd80d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628777"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061954"
 ---
 # <a name="office-solutions-development-overview-vsto"></a>Přehled vývoje řešení pro Office (VSTO)
   Pomocí aplikace Microsoft Office jako front-endu řešení, můžete využít známé uživatelské rozhraní aplikace Microsoft Office a nástrojů, jako jsou funkce zpracování textu ve Wordu, funkce pro analýzu dat aplikace Excel a funkcím pro správu e-mailu aplikace Outlook . Můžete vyvíjet řešení v sadě Visual Studio k přizpůsobení aplikace Office a přidejte konkrétní funkce, které potřebujete pro své podnikové procesy. Například můžete zapnout Word do smlouvy generátor, který sestaví kontrakty si již existující částí, které mohou být provedeny upravovatelného nebo nejde upravit. Pomocí aplikace Excel můžete vytvořit přizpůsobené pro různé projekty listu aplikace automatizované rozpočtu. Uživatelům můžete taky využít řešení pro systém office v režimu offline, což je komplexní řešení více praktické, než by se použily, pokud používáte architekturu založenou na web.
@@ -43,11 +43,11 @@ ms.locfileid: "56628777"
 
  Další informace o přizpůsobení najdete v následujících tématech:
 
--   [Začínáme s programováním přizpůsobení na úrovni dokumentu pro Excel](../vsto/getting-started-programming-document-level-customizations-for-excel.md)
+- [Začínáme s programováním přizpůsobení na úrovni dokumentu pro Excel](../vsto/getting-started-programming-document-level-customizations-for-excel.md)
 
--   [Začínáme s programováním přizpůsobení na úrovni dokumentu pro Word](../vsto/getting-started-programming-document-level-customizations-for-word.md)
+- [Začínáme s programováním přizpůsobení na úrovni dokumentu pro Word](../vsto/getting-started-programming-document-level-customizations-for-word.md)
 
--   [Architektura přizpůsobení na úrovni dokumentu](../vsto/architecture-of-document-level-customizations.md)
+- [Architektura přizpůsobení na úrovni dokumentu](../vsto/architecture-of-document-level-customizations.md)
 
 ### <a name="vsto-add-ins"></a>Doplňky VSTO
  Doplňky VSTO obsahovat sestavení, který je přidružen k aplikaci Microsoft Office. Obvykle doplňku VSTO spustí při spuštění přidružené aplikace, i když se uživatelé můžou také doplňků VSTO po načtení aplikace je už spuštěná. Funkce doplňků VSTO, které vytvoříte jsou k dispozici pro aplikace, samostatně, bez ohledu na to, které jsou otevřené dokumenty.
@@ -56,9 +56,9 @@ ms.locfileid: "56628777"
 
  Další informace o doplňcích VSTO naleznete v následujících tématech:
 
--   [Začínáme s programováním doplňků VSTO](../vsto/getting-started-programming-vsto-add-ins.md)
+- [Začínáme s programováním doplňků VSTO](../vsto/getting-started-programming-vsto-add-ins.md)
 
--   [Architektura doplňků VSTO](../vsto/architecture-of-vsto-add-ins.md)
+- [Architektura doplňků VSTO](../vsto/architecture-of-vsto-add-ins.md)
 
 ## <a name="automate-office-applications-by-using-primary-interop-assemblies"></a>Automatizace aplikací Office pomocí primárních sestavení vzájemné spolupráce
  Do vašeho řešení prostřednictvím kódu programu napsáním kódu, který má přístup k aplikačním objektový model začlenit funkce aplikace Office. Objektové modely jsou uspořádání tříd, které zprostředkovávají funkce prostřednictvím různých vlastností a metod. Objektový model pro každou aplikaci sady Office se liší.
@@ -69,9 +69,9 @@ ms.locfileid: "56628777"
 
  Další informace o použití sestavení PIA v řešeních pro systém Office VSTO naleznete v následujících tématech:
 
--   [Psaní kódu v řešeních pro systém Office](../vsto/writing-code-in-office-solutions.md)
+- [Psaní kódu v řešeních pro systém Office](../vsto/writing-code-in-office-solutions.md)
 
--   [Primární spolupracující sestavení Office](../vsto/office-primary-interop-assemblies.md)
+- [Primární spolupracující sestavení Office](../vsto/office-primary-interop-assemblies.md)
 
 ## <a name="run-microsoft-vsto-office-solutions-on-end-user-computers"></a>Spustit řešení sady Office Microsoft VSTO na počítačích koncových uživatelů
  Když vytvoříte řešení VSTO Office, zvažte, jak požadavky na nasazení může ovlivnit vaše možnosti vývoje.

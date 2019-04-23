@@ -9,12 +9,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6f59af23f25fee628ec20b77e10e0a48afdd564d
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 6971da256d638b8248e49235a4d8d3ded71dc10e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59669052"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056767"
 ---
 # <a name="how-to-create-an-association-relationship-between-linq-to-sql-classes-or-designer"></a>Postupy: Vytvoření přidružení (vztah) mezi třídy LINQ to SQL (O/R Designer)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,15 +38,15 @@ Přidružení mezi třídami entit v [!INCLUDE[vbtecdlinq](../includes/vbtecdlin
   
 ### <a name="to-create-an-association-between-entity-classes"></a>Vytvoření přidružení mezi třídami entit  
   
-1.  Klikněte pravým tlačítkem na třídu entity, která představuje nadřazené třídu v přidružení, přejděte na **přidat**a potom klikněte na tlačítko **přidružení**.  
+1. Klikněte pravým tlačítkem na třídu entity, která představuje nadřazené třídu v přidružení, přejděte na **přidat**a potom klikněte na tlačítko **přidružení**.  
   
-2.  Ověřte, že správné **nadřazené třídu** výběru v **Editor asociace** dialogové okno.  
+2. Ověřte, že správné **nadřazené třídu** výběru v **Editor asociace** dialogové okno.  
   
-3.  Vyberte **podřízené třídy** v poli se seznamem.  
+3. Vyberte **podřízené třídy** v poli se seznamem.  
   
-4.  Vyberte **vlastnosti přidružení** , které se týkají třídy. Obvykle to se mapuje na vztah cizího klíče definovanými v databázi. Například v přidružení zákazníci a objednávky **vlastnosti přidružení** jsou CustomerID pro každou třídu.  
+4. Vyberte **vlastnosti přidružení** , které se týkají třídy. Obvykle to se mapuje na vztah cizího klíče definovanými v databázi. Například v přidružení zákazníci a objednávky **vlastnosti přidružení** jsou CustomerID pro každou třídu.  
   
-5.  Klikněte na tlačítko **OK** vytváření přidružení.  
+5. Klikněte na tlačítko **OK** vytváření přidružení.  
   
 ## <a name="see-also"></a>Viz také  
  [Nástroje LINQ to SQL v sadě Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   

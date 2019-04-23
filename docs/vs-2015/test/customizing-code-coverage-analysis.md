@@ -8,12 +8,12 @@ ms.assetid: f6337c35-acae-4c5f-b5d9-ac5ff687ef18
 caps.latest.revision: 18
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 70e74c1c4d5b8cc93f4afaeebc74f5fc0579a692
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 404192923d25e3eccc0bb40064569bec3e6c6cec
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54768030"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059250"
 ---
 # <a name="customizing-code-coverage-analysis"></a>Přizpůsobení analýzy pokrytí kódu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -183,11 +183,11 @@ Ve výchozím nastavení analyzuje nástroj pokrytí kódu Visual Studio všechn
 ### <a name="to-customize-run-settings-in-a-command-line-test"></a>Přizpůsobení parametrů spuštění v testu příkazového řádku  
  Pro spuštění testů z příkazového řádku se používá příkaz vstest.console.exe. Soubor nastavení je parametr tohoto nástroje. Další informace najdete v tématu [použití konzole VSTest.console z příkazového řádku](http://msdn.microsoft.com/library/852812d8-b3bb-407e-bc43-04d511fcb27a).  
   
-1.  Spusťte příkazový řádek pro vývojáře v sadě Visual Studio:  
+1. Spusťte příkazový řádek pro vývojáře v sadě Visual Studio:  
   
      Na Windows **Start**, zvolte **všechny programy**, **sady Microsoft Visual Studio**, **Visual Studio Tools**, **pro vývojáře Příkazový řádek**.  
   
-2.  Spusťte:  
+2. Spusťte:  
   
      `vstest.console.exe MyTestAssembly.dll /EnableCodeCoverage /Settings:CodeCoverage.runsettings`  
   
@@ -208,7 +208,7 @@ Ve výchozím nastavení analyzuje nástroj pokrytí kódu Visual Studio všechn
   
    Výsledky jsou zobrazeny v souhrnné části zprávy o sestavení.  
   
-##  <a name="sample"></a> Ukázkový soubor s příponou .runsettings  
+## <a name="sample"></a> Ukázkový soubor s příponou .runsettings  
  Zkopírujte tento kód a upravte jej podle svých potřeb. Toto je výchozí soubor s příponou .runsettings.  
   
  (Pro jiné účely soubor s příponou .runsettings naleznete v tématu [konfigurace testů jednotek s použitím souboru .runsettings](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md).)  

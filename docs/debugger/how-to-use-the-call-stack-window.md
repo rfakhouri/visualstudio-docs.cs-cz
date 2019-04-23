@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 58b8e9bc37cde33a09a06503755f2646cca6f75c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2673ed9a69a80b2e9ab9275ff54909e33e4434f4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55018797"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059276"
 ---
 # <a name="view-the-call-stack-and-use-the-call-stack-window-in-the-debugger"></a>Zobrazení zásobníku volání a použití okna zásobník volání v ladicím programu
 
@@ -60,7 +60,7 @@ Když [symboly ladění](#bkmk_symbols) nejsou k dispozici pro celý zásobník 
 
 ## <a name="display-non-user-code-in-the-call-stack-window"></a>Zobrazení kódu nepocházejícího od uživatele v okně zásobník volání
 
--   Klikněte pravým tlačítkem myši **zásobník volání** okna a vyberte **zobrazit externí kód**.
+- Klikněte pravým tlačítkem myši **zásobník volání** okna a vyberte **zobrazit externí kód**.
 
 Neuživatelský kód je jakýkoli kód, který se zobrazí při [pouze můj kód](../debugger/just-my-code.md) je povolená. Ve spravovaném kódu jsou ve výchozím nastavení skryje neuživatelský kód snímků. Zobrazí se následující zápis místo snímků neuživatelský kód:
 
@@ -68,29 +68,29 @@ Neuživatelský kód je jakýkoli kód, který se zobrazí při [pouze můj kód
 
 ## <a name="bkmk_switch"></a> Přepnout na jiný rámec zásobníku (Změna kontextu ladicího programu)
 
-1.  V **zásobník volání** okna, klikněte pravým tlačítkem na snímek zásobníku, jehož kód a data, která chcete zobrazit.
+1. V **zásobník volání** okna, klikněte pravým tlačítkem na snímek zásobníku, jehož kód a data, která chcete zobrazit.
 
     Nebo můžete dvakrát kliknout na snímek v **zásobník volání** okna přepnout na rámec.
 
-2.  Vyberte **přepnout na rámec**.
+2. Vyberte **přepnout na rámec**.
 
      Zelená šipka s vlnitým ocáskem se objeví vedle snímku zásobníku, který jste vybrali. Spuštění ukazatele zůstane v původním rámci stále označeno žlutou šipkou. Pokud vyberete **krok** nebo **pokračovat** z **ladění** nabídky, spuštění bude pokračovat v původním rámci, ne ve vámi vybraném.
 
 ## <a name="view-the-source-code-for-a-function-on-the-call-stack"></a>Zobrazit zdrojový kód pro funkci v zásobníku volání
 
--   V **zásobník volání** okna, klikněte pravým tlačítkem na funkci, jejíž zdrojový kód chcete zobrazit a vybrat **přejít ke zdrojovému kódu**.
+- V **zásobník volání** okna, klikněte pravým tlačítkem na funkci, jejíž zdrojový kód chcete zobrazit a vybrat **přejít ke zdrojovému kódu**.
 
 ## <a name="run-to-a-specific-function-from-the-call-stack-window"></a>Spuštění specifické funkce z okna zásobník volání
 
--  V **zásobník volání** okna, vyberte funkci, klepněte pravým tlačítkem myši a klikněte na tlačítko **spustit ke kurzoru**.
+- V **zásobník volání** okna, vyberte funkci, klepněte pravým tlačítkem myši a klikněte na tlačítko **spustit ke kurzoru**.
 
 ## <a name="set-a-breakpoint-on-the-exit-point-of-a-function-call"></a>Nastavení zarážky ve výstupním bodě volání funkce
 
--   Zobrazit [nastavení zarážky na volání funkce zásobníku](../debugger/using-breakpoints.md#BKMK_Set_a_breakpoint_in_the_call_stack_window).
+- Zobrazit [nastavení zarážky na volání funkce zásobníku](../debugger/using-breakpoints.md#BKMK_Set_a_breakpoint_in_the_call_stack_window).
 
 ## <a name="display-calls-to-or-from-another-thread"></a>Zobrazení volání do nebo z jiného vlákna
 
--   Klikněte pravým tlačítkem myši **zásobník volání** okna a vyberte **zahrnout hovory do/z jiných podprocesů**.
+- Klikněte pravým tlačítkem myši **zásobník volání** okna a vyberte **zahrnout hovory do/z jiných podprocesů**.
 
 ## <a name="visually-trace-the-call-stack"></a>Vizuální trasování zásobníku volání
 
@@ -104,11 +104,11 @@ V sadě Visual Studio Enterprise (pouze) můžete zobrazit map kódu pro zásobn
 
 ## <a name="view-the-disassembly-code-for-a-function-on-the-call-stack-c-c-visual-basic-f"></a>Zobrazení zpětného překladu funkce v zásobníku volání (C#, C++, Visual Basic, F#)
 
--   V **zásobník volání** okna, klikněte pravým tlačítkem na funkci, jejíž zpětně přeložený kód chcete zobrazit a vybrat **přejít na zpětný překlad**.
+- V **zásobník volání** okna, klikněte pravým tlačítkem na funkci, jejíž zpětně přeložený kód chcete zobrazit a vybrat **přejít na zpětný překlad**.
 
 ## <a name="change-the-optional-information-displayed"></a>Změna zobrazených volitelných informací
 
--   Klikněte pravým tlačítkem **zásobník volání** okna a nastavení nebo vymazat **zobrazit \<**  _informace, které mají_ **>**.
+- Klikněte pravým tlačítkem **zásobník volání** okna a nastavení nebo vymazat **zobrazit \<**  _informace, které mají_ **>**.
 
 ## <a name="bkmk_symbols"></a> Načtení symbolů pro modul (C#, C++, Visual Basic, F#)
 
@@ -118,25 +118,25 @@ Zobrazit [zadání symbolu (.pdb) a zdrojových souborů](../debugger/specify-sy
 
 ### <a name="to-load-symbols"></a>Načtení symbolů
 
-1.  V **zásobník volání** okna, klikněte pravým tlačítkem na rámce zásobníku pro symboly, které nejsou načtené. Snímek bude nepřístupný.
+1. V **zásobník volání** okna, klikněte pravým tlačítkem na rámce zásobníku pro symboly, které nejsou načtené. Snímek bude nepřístupný.
 
-2.  Přejděte na **načíst symboly** a pak vyberte **Microsoft Symbol Servers** (Pokud je k dispozici), nebo vyhledejte cestu k symbolu.
+2. Přejděte na **načíst symboly** a pak vyberte **Microsoft Symbol Servers** (Pokud je k dispozici), nebo vyhledejte cestu k symbolu.
 
 ### <a name="to-set-the-symbol-path"></a>Chcete-li nastavit cestu k symbolu
 
-1.  V **zásobník volání** okně zvolte **nastavení symbolu** z místní nabídky.
+1. V **zásobník volání** okně zvolte **nastavení symbolu** z místní nabídky.
 
      **Možnosti** zobrazí se dialogové okno a **symboly** zobrazí se stránka.
 
-2.  Vyberte **Symbol nastavení**.
+2. Vyberte **Symbol nastavení**.
 
-3.  V **možnosti** dialogovém okně klikněte na ikonu složky.
+3. V **možnosti** dialogovém okně klikněte na ikonu složky.
 
      V **Symbol umístění souborů (.pdb)** pole, se zobrazí kurzor.
 
-4.  Zadejte cestu adresáře do umístění symbolu v počítači, který ladíte. Pro místní a vzdálené ladění, je cesta k místnímu počítači.
+4. Zadejte cestu adresáře do umístění symbolu v počítači, který ladíte. Pro místní a vzdálené ladění, je cesta k místnímu počítači.
 
-5.  Vyberte **OK** zavřete **možnosti** dialogové okno.
+5. Vyberte **OK** zavřete **možnosti** dialogové okno.
 
 ## <a name="see-also"></a>Viz také:
 

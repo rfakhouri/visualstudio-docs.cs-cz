@@ -9,12 +9,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1626c9c027b12d6a8df8d3169e7d79cefba66006
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: c392323905676706835a94bd86fcd53e3f6b8cc7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59659616"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054778"
 ---
 # <a name="query-datasets"></a>Datové sady dotazů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ K vyhledání konkrétních záznamů v datové sadě, použijte metodu FindBy v
   
 #### <a name="to-find-a-row-in-a-typed-dataset-with-a-primary-key-value"></a>Najít řádek v typové datové sady s hodnotou primárního klíče  
   
--   Chcete-li vyhledejte řádek, zavolejte silného typu `FindBy` metodu, která používá primární klíč v tabulce.  
+- Chcete-li vyhledejte řádek, zavolejte silného typu `FindBy` metodu, která používá primární klíč v tabulce.  
   
      V následujícím příkladu `CustomerID` primární klíč je sloupec `Customers` tabulky. To znamená, že generované `FindBy` je metoda `FindByCustomerID`. Tento příklad ukazuje, jak přiřadit konkrétní <xref:System.Data.DataRow> proměnné s použitím vytvořeného `FindBy` metody.  
   
@@ -42,7 +42,7 @@ K vyhledání konkrétních záznamů v datové sadě, použijte metodu FindBy v
   
 #### <a name="to-find-a-row-in-an-untyped-dataset-with-a-primary-key-value"></a>Najít řádek v netypovou datovou sadu s hodnotu primárního klíče  
   
--   Volání <xref:System.Data.DataRowCollection.Find%2A> metodu <xref:System.Data.DataRowCollection> kolekce, které se předá jako parametr primární klíč.  
+- Volání <xref:System.Data.DataRowCollection.Find%2A> metodu <xref:System.Data.DataRowCollection> kolekce, které se předá jako parametr primární klíč.  
   
      Následující příklad ukazuje, jak deklarovat nový řádek, který volá `foundRow` a přiřaďte ho na návratový typ <xref:System.Data.DataRowCollection.Find%2A> metody. Pokud je nalezen primární klíč, obsah index sloupce 1 jsou zobrazeny v okně se zprávou.  
   
@@ -53,7 +53,7 @@ K vyhledání konkrétních záznamů v datové sadě, použijte metodu FindBy v
   
 #### <a name="to-find-rows-based-on-the-values-in-any-column"></a>K vyhledání řádků na základě hodnot v libovolný sloupec  
   
--   Tabulky dat jsou vytvořeny pomocí<xref:System.Data.DataTable.Select%2A> metodu, která vrací pole <xref:System.Data.DataRow>předán s založené na výrazu <xref:System.Data.DataTable.Select%2A> metody. Další informace o vytváření platné výrazy, naleznete v části "Syntaxe výrazu" na stránce <xref:System.Data.DataColumn.Expression%2A> vlastnost.  
+- Tabulky dat jsou vytvořeny pomocí<xref:System.Data.DataTable.Select%2A> metodu, která vrací pole <xref:System.Data.DataRow>předán s založené na výrazu <xref:System.Data.DataTable.Select%2A> metody. Další informace o vytváření platné výrazy, naleznete v části "Syntaxe výrazu" na stránce <xref:System.Data.DataColumn.Expression%2A> vlastnost.  
   
      Následující příklad ukazuje způsob použití <xref:System.Data.DataTable.Select%2A> metodu <xref:System.Data.DataTable> najít konkrétní řádky.  
   
@@ -82,14 +82,14 @@ Kromě toho obou tabulek muset být naplněný daty pro záznamy, které se maj�
   
 #### <a name="to-return-the-child-records-of-a-selected-parent-record"></a>Vrátit podřízené záznamy vybraný nadřazený záznam  
   
--   Volání <xref:System.Data.DataRow.GetChildRows%2A> metoda konkrétní `Customers` data řádku a vrátí řádky z pole `Orders` tabulky:  
+- Volání <xref:System.Data.DataRow.GetChildRows%2A> metoda konkrétní `Customers` data řádku a vrátí řádky z pole `Orders` tabulky:  
   
      [!code-csharp[VbRaddataDatasets#6](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataDatasets/CS/Form1.cs#6)]
      [!code-vb[VbRaddataDatasets#6](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataDatasets/VB/Form1.vb#6)]  
   
 #### <a name="to-return-the-parent-record-of-a-selected-child-record"></a>Chcete-li vrátit nadřazený záznam vybraný podřízený záznam  
   
--   Volání <xref:System.Data.DataRow.GetParentRow%2A> metoda konkrétní `Orders` řádek dat a vrátí jeden řádek z `Customers` tabulky:  
+- Volání <xref:System.Data.DataRow.GetParentRow%2A> metoda konkrétní `Orders` řádek dat a vrátí jeden řádek z `Customers` tabulky:  
   
      [!code-csharp[VbRaddataDatasets#7](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataDatasets/CS/Form1.cs#7)]
      [!code-vb[VbRaddataDatasets#7](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataDatasets/VB/Form1.vb#7)]

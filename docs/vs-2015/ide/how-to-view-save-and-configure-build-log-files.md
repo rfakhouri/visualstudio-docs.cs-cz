@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6826a2f2618ee77944102245781a8df3b2a4596b
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 496fcdf28f8ce9b0809988949d435c064734b508
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54760054"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053559"
 ---
 # <a name="how-to-view-save-and-configure-build-log-files"></a>Postupy: Zobrazování, ukládání a konfigurace souborů protokolu sestavení
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,23 +25,23 @@ Po sestavení projektu v integrovaném vývojovém prostředí sady Visual Studi
   
 ### <a name="to-view-the-build-log-file-for-a-c-project"></a>Chcete-li zobrazit soubor protokolu sestavení pro projekt jazyka C++  
   
-1.  V **Windows Explorer** nebo **Průzkumníka souborů**, otevřete následující soubor: \\...\Visual Studio *verze*\Projects\\  *ProjectName*\\*ProjectName*\Debug\\*ProjectName*txt  
+1. V **Windows Explorer** nebo **Průzkumníka souborů**, otevřete následující soubor: \\...\Visual Studio *verze*\Projects\\  *ProjectName*\\*ProjectName*\Debug\\*ProjectName*txt  
   
 ### <a name="to-create-a-build-log-file-for-a-managed-code-project"></a>Chcete-li vytvořit soubor protokolu sestavení pro projekt spravovaného kódu  
   
-1.  V panelu nabídky zvolte **sestavení**, **sestavit řešení**.  
+1. V panelu nabídky zvolte **sestavení**, **sestavit řešení**.  
   
-2.  V **výstup** okně měli na očích informace ze sestavení a potom ho zkopírujte do schránky.  
+2. V **výstup** okně měli na očích informace ze sestavení a potom ho zkopírujte do schránky.  
   
-3.  Otevřete textový editor, jako je například Poznámkový blok, vložte informace do souboru a pak ho uložte.  
+3. Otevřete textový editor, jako je například Poznámkový blok, vložte informace do souboru a pak ho uložte.  
   
 ### <a name="to-change-the-amount-of-information-included-in-the-build-log"></a>Chcete-li změnit množství informací o zahrnutých do protokolu sestavení  
   
-1.  V panelu nabídky zvolte **nástroje**, **možnosti**.  
+1. V panelu nabídky zvolte **nástroje**, **možnosti**.  
   
-2.  Na **projekty a řešení** zvolte **sestavíte a spustíte** stránky.  
+2. Na **projekty a řešení** zvolte **sestavíte a spustíte** stránky.  
   
-3.  V **podrobnosti výstupu sestavení projektu nástroje MSBuild** seznamu, vyberte jednu z následujících hodnot a klikněte na tlačítko **OK** tlačítko.  
+3. V **podrobnosti výstupu sestavení projektu nástroje MSBuild** seznamu, vyberte jednu z následujících hodnot a klikněte na tlačítko **OK** tlačítko.  
   
     |Úroveň podrobností|Popis|  
     |---------------------|-----------------|  

@@ -17,12 +17,12 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3d797b0881ef06d8934df52473ae8178e520f96f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 27690ab275d0c7ef2a090fa8ef2e42887ae9daeb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54753744"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043846"
 ---
 # <a name="how-to-disable-url-activation-of-clickonce-applications-by-using-the-designer"></a>Postupy: Zakázání aktivace adresy URL aplikací ClickOnce pomocí Návrháře
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,17 +37,17 @@ Obvykle [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikace se autom
   
 #### <a name="to-disable-url-activation-for-your-application"></a>Chcete-li zákaz aktivace adresy URL pro vaši aplikaci  
   
-1.  Klikněte pravým tlačítkem na název vašeho projektu v **Průzkumníka řešení**a klikněte na tlačítko **vlastnosti**.  
+1. Klikněte pravým tlačítkem na název vašeho projektu v **Průzkumníka řešení**a klikněte na tlačítko **vlastnosti**.  
   
-2.  Na **vlastnosti** stránky, klikněte na tlačítko **publikovat** kartu.  
+2. Na **vlastnosti** stránky, klikněte na tlačítko **publikovat** kartu.  
   
-3.  Klikněte na tlačítko **možnosti**.  
+3. Klikněte na tlačítko **možnosti**.  
   
-4.  Klikněte na tlačítko **manifesty**.  
+4. Klikněte na tlačítko **manifesty**.  
   
-5.  Zaškrtněte políčko s popiskem **blokovat aplikaci při aktivaci prostřednictvím adresy URL**.  
+5. Zaškrtněte políčko s popiskem **blokovat aplikaci při aktivaci prostřednictvím adresy URL**.  
   
-6.  Při nasazování aplikace.  
+6. Při nasazování aplikace.  
   
 ## <a name="see-also"></a>Viz také  
  [Publikování aplikací ClickOnce](../deployment/publishing-clickonce-applications.md)

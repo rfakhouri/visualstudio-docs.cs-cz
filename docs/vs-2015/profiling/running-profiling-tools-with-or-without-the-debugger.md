@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 910c2f6e71820c079eb92fdc7adf61d9e67d0001
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 806eeba9b3dfee8dc45c90f0a6d2f99ed0772ec7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54783387"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054063"
 ---
 # <a name="running-profiling-tools-with-or-without-the-debugger"></a>Spuštění nástroje pro profilaci s nebo bez ladicího programu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,19 +26,19 @@ Visual Studio nyní nabízí možnost výkonu nástroje, z nichž některé (nap
   
  Tady je pár otázek, které vám můžou pomoct rozhodnout, jaký druh nástroj je nejvhodnější pro vaše účely:  
   
-1.  Byl nalezen problém najít, když se vyvinula aplikaci, nebo se jednalo ve vydané verzi?  
+1. Byl nalezen problém najít, když se vyvinula aplikaci, nebo se jednalo ve vydané verzi?  
   
      Pokud se problém, který se zabývají byl nalezen během vývoje, pravděpodobně není nutné ke spuštění nástroje pro sledování výkonu v sestavení pro vydání. Pokud byl nalezen v prodejní verzi, by měl reprodukujte problém s konfiguraci vydané verze a následně se rozhodnete, zda by ladicí program nápovědy pro další zkoumání.  
   
-2.  Zpracování potíže způsobené náročnou na procesor  
+2. Zpracování potíže způsobené náročnou na procesor  
   
      Mnoho problémů jsou z důvodu problémů s výkonem externí například soubor vstupně-výstupních operací nebo rychlost odezvy sítě, takže neprovádějte velký rozdíl, ať už spouštíte nástroje Sledování výkonu s nebo bez ladicího programu. Pokud je váš problém způsobený volání náročnou na procesor, rozdíl mezi konfiguracemi vydání a ladění může být značné a měli byste pravděpodobně zkontrolujte-li tento problém existuje před použitím nástroje integrované v ladicím programu v sestavení pro vydání  
   
-3.  Je třeba přesně měřit výkon, nebo je přijatelné přibližný počet?  
+3. Je třeba přesně měřit výkon, nebo je přijatelné přibližný počet?  
   
      Ladění sestavení chybí některé optimalizace, které poskytují buildy vydaných verzí, například vkládání volání funkce a konstanty, čištění nevyužitých kódu cesty a ukládání proměnné takovým způsobem, který nelze použít pro ladicí program. Na samotný ladicí program změní časy výkon, protože provede některé operace, které jsou nezbytné pro ladění (například zachycení výjimky a události načtení modulu). Čísla výkon v nástrojích pro integrované v ladicím programu jsou tak přesné pouze v rámci desítky milisekund. Jsou mnohem přesnější čísla výkonu pro konfiguraci vydání nástroje bez ladicího programu.  
   
-##  <a name="BKMK_Quick_start__Collect_diagnostic_data"></a> Shromažďování dat profilace během ladění  
+## <a name="BKMK_Quick_start__Collect_diagnostic_data"></a> Shromažďování dat profilace během ladění  
  Následující část se zabývá místním ladění. Můžete získat informace o ladění na zařízení nebo vzdálené ladění, v dalších částech.  
   
 1. Otevřete projekt, který chcete ladit, pak klikněte na **ladění / spuštění ladění** (nebo **Start** na panelu nástrojů nebo **F5**).  

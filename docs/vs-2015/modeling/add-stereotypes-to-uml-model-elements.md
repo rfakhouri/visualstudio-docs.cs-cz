@@ -11,12 +11,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d60d20e7fd62ee05b6c74f580ef60e23c577c96f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 092c07e9aa5f2999bcf3a28977151878123f6bfc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54801815"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043643"
 ---
 # <a name="add-stereotypes-to-uml-model-elements"></a>Přidávání stereotypů k elementům modelu UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,51 +29,51 @@ Stereotyp můžete přidat na prvek modelu UML poznámku a zadat speciální vla
   
 ### <a name="to-link-a-profile-to-a-model-or-a-package"></a>Odkaz na model nebo balíček profilu  
   
-1.  Otevřít **Průzkumníku modelů UML**. Na **architektura** nabídky, přejděte k **Windows**a potom klikněte na tlačítko **Průzkumníku modelů UML**.  
+1. Otevřít **Průzkumníku modelů UML**. Na **architektura** nabídky, přejděte k **Windows**a potom klikněte na tlačítko **Průzkumníku modelů UML**.  
   
-2.  Vyhledejte balíček nebo model, který obsahuje všechny prvky, které chcete použít stereotypy v profilu.  
+2. Vyhledejte balíček nebo model, který obsahuje všechny prvky, které chcete použít stereotypy v profilu.  
   
-3.  Klikněte pravým tlačítkem na balíček nebo model a pak klikněte na tlačítko **vlastnosti**.  
+3. Klikněte pravým tlačítkem na balíček nebo model a pak klikněte na tlačítko **vlastnosti**.  
   
-4.  V **vlastnosti** okno, nastaveno **profily** vlastnost profily, které obsahují Stereotypy, které chcete použít.  
+4. V **vlastnosti** okno, nastaveno **profily** vlastnost profily, které obsahují Stereotypy, které chcete použít.  
   
      Stereotypy profilu bude nyní k dispozici na všechny prvky uvnitř modelu nebo balíčku. Pokud balíček obsahuje další balíčky, Stereotypy bude také k dispozici na prvky v nich obsažené.  
   
 ### <a name="to-add-stereotypes-to-model-elements-or-relationships"></a>K přidávání stereotypů k prvkům modelu nebo vztahy  
   
-1.  Klikněte pravým tlačítkem na model prvku nebo vztahu, v diagramu nebo v **Průzkumníku modelů UML**a potom klikněte na tlačítko **vlastnosti**.  
+1. Klikněte pravým tlačítkem na model prvku nebo vztahu, v diagramu nebo v **Průzkumníku modelů UML**a potom klikněte na tlačítko **vlastnosti**.  
   
     > [!NOTE]
     >  Pokud chcete přidat do několika prvků stejného Stereotypy, můžete vybrat několik prvků a klikněte pravým tlačítkem na jeden z nich.  
   
-2.  Klikněte na tlačítko **Stereotypy** vlastnosti a vyberte Stereotypy, které chcete použít.  
+2. Klikněte na tlačítko **Stereotypy** vlastnosti a vyberte Stereotypy, které chcete použít.  
   
      Vybrané Stereotypy se zobrazí v rámci "odlišené dvojitou» v prvku modelu pro většinu typů prvků a vztahů.  
   
     > [!NOTE]
     >  Pokud nevidíte **Stereotypy** vlastnost, nebo pokud chcete stereotyp nezobrazí, ověřte, zda prvek modelu je uvnitř balíčku nebo modelu, ke kterému je propojená příslušný profil.  
   
-3.  Některé Stereotypy umožní nastavit hodnoty dalších vlastností pro ovládací prvek modelu. Chcete-li zobrazit tyto vlastnosti, rozbalte **Stereotypy** vlastnost.  
+3. Některé Stereotypy umožní nastavit hodnoty dalších vlastností pro ovládací prvek modelu. Chcete-li zobrazit tyto vlastnosti, rozbalte **Stereotypy** vlastnost.  
   
 ### <a name="to-create-model-elements-within-a-package"></a>Chcete-li vytvořit prvky modelu v rámci balíčku  
   
-1.  Vytvoření balíčku v diagramu tříd UML, nebo v **Průzkumníku modelů UML**.  
+1. Vytvoření balíčku v diagramu tříd UML, nebo v **Průzkumníku modelů UML**.  
   
-2.  Do balíčku přidáte prvky modelu, v jednom z následujících způsobů:  
+2. Do balíčku přidáte prvky modelu, v jednom z následujících způsobů:  
   
-    -   V diagramu tříd UML klikněte na nástroj pro daný element a klikněte do balíčku v diagramu.  
-  
-         \- nebo –  
-  
-    -   V Průzkumníku modelů UML, klikněte pravým tlačítkem na balíček, přejděte na **přidat**a potom klikněte na typ elementu.  
+    - V diagramu tříd UML klikněte na nástroj pro daný element a klikněte do balíčku v diagramu.  
   
          \- nebo –  
   
-    -   V Průzkumníku modelů UML přetáhněte existující prvek do balíčku.  
+    - V Průzkumníku modelů UML, klikněte pravým tlačítkem na balíček, přejděte na **přidat**a potom klikněte na typ elementu.  
   
          \- nebo –  
   
-    -   Odkaz na balíček diagramu a pak vytvořte prvků v diagramu.  
+    - V Průzkumníku modelů UML přetáhněte existující prvek do balíčku.  
+  
+         \- nebo –  
+  
+    - Odkaz na balíček diagramu a pak vytvořte prvků v diagramu.  
   
          Chcete-li to provést, klikněte pravým tlačítkem na prázdnou část diagramu a potom klikněte na **vlastnosti**. V **vlastnosti** okno, nastavte **odkazovaný balíček** pro vámi požadovaný balíček.  
   

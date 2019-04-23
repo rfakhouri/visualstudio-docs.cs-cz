@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 05360ca6e557ae0153715497b85792bc2fb6e2fc
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: fbf9c2f914bbe0bed741a407faf1d0055a4b43a7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56693032"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043717"
 ---
 # <a name="mssccprjscc-file"></a>MSSCCPRJ. Soubor SCC
 Umístíte-li sady Visual Studio řešení nebo projekt pod správou zdrojového kódu pomocí rozhraní IDE, rozhraní IDE obdrží dvě klíčové informace. Informace pocházejí z ve formě řetězce modul plug-in správy zdrojového kódu. Tyto řetězce "AuxPath" a "Název_projektu", jsou neprůhledné rozhraní IDE, ale slouží modul plug-in provede najít řešení nebo projektu ve správě verzí. Rozhraní IDE obvykle získá tyto řetězce při prvním voláním [sccgetprojpath –](../extensibility/sccgetprojpath-function.md), a pak ukládá je do souboru řešení nebo projektu pro budoucí volání [sccopenproject –](../extensibility/sccopenproject-function.md). Když je vložená v soubory řešení a projektu, řetězce "AuxPath" a "Název_projektu" se neaktualizují automaticky, když uživatel větve, větve, nebo zkopíruje soubory řešení a projektu, které jsou ve správě verzí. Pokud chcete mít jistotu, že soubory řešení a projektu, přejděte na jejich správné umístění ve správě verzí, musí uživatelé ručně aktualizujte řetězce. Vzhledem k tomu, že řetězce mají být neprůhledný, nemusí být vždy jasné jak by měly být aktualizovány.
@@ -25,19 +25,19 @@ Umístíte-li sady Visual Studio řešení nebo projekt pod správou zdrojového
 
  Zdrojový ovládací prvek modulu plug-in, který podporuje *MSSCCPRJ.SCC* souboru musí dodržovat následující pokyny:
 
--   Může existovat pouze jeden *MSSCCPRJ.SCC* souboru jednotlivých adresářích.
+- Může existovat pouze jeden *MSSCCPRJ.SCC* souboru jednotlivých adresářích.
 
--   *MSSCCPRJ.SCC* soubor může obsahovat "AuxPath" a "Název_projektu" pro více souborů, které jsou pod správou zdrojových kódů v rámci zadaného adresáře.
+- *MSSCCPRJ.SCC* soubor může obsahovat "AuxPath" a "Název_projektu" pro více souborů, které jsou pod správou zdrojových kódů v rámci zadaného adresáře.
 
--   Řetězec "AuxPath" nesmí obsahovat uvozovky uvnitř. To může mít kolem něj uvozovky jako oddělovače (například pár dvojitých uvozovek slouží k označení prázdný řetězec). Integrované vývojové prostředí odstraní všechny nabídky z řetězce "AuxPath" přečtení z *MSSCCPRJ.SCC* souboru.
+- Řetězec "AuxPath" nesmí obsahovat uvozovky uvnitř. To může mít kolem něj uvozovky jako oddělovače (například pár dvojitých uvozovek slouží k označení prázdný řetězec). Integrované vývojové prostředí odstraní všechny nabídky z řetězce "AuxPath" přečtení z *MSSCCPRJ.SCC* souboru.
 
--   "Název_projektu" řetězce ve *MSSCCPRJ. Soubor SCC* musí odpovídat přesně řetězec vrácený z `SccGetProjPath` funkce. Pokud řetězec vrácený funkcí nemá uvozovky kolem něj zobrazí řetězec *MSSCCPRJ.SCC* soubor musí obsahovat uvozovky kolem něj a naopak.
+- "Název_projektu" řetězce ve *MSSCCPRJ. Soubor SCC* musí odpovídat přesně řetězec vrácený z `SccGetProjPath` funkce. Pokud řetězec vrácený funkcí nemá uvozovky kolem něj zobrazí řetězec *MSSCCPRJ.SCC* soubor musí obsahovat uvozovky kolem něj a naopak.
 
--   *MSSCCPRJ.SCC* soubor se vytvoří nebo aktualizuje pokaždé, když se soubor nachází pod správou zdrojových kódů.
+- *MSSCCPRJ.SCC* soubor se vytvoří nebo aktualizuje pokaždé, když se soubor nachází pod správou zdrojových kódů.
 
--   Pokud *MSSCCPRJ.SCC* soubor odstraní, poskytovatel by měl znovu při příštím provádí operaci správy zdrojových kódů týkající se tohoto adresáře.
+- Pokud *MSSCCPRJ.SCC* soubor odstraní, poskytovatel by měl znovu při příštím provádí operaci správy zdrojových kódů týkající se tohoto adresáře.
 
--   *MSSCCPRJ.SCC* souboru musí striktně řídit definovaném formátu.
+- *MSSCCPRJ.SCC* souboru musí striktně řídit definovaném formátu.
 
 ## <a name="an-illustration-of-the-mssccprjscc-file-format"></a>Obrázek MSSCCPRJ. Formát souboru SCC
  Tady je příklad *MSSCCPRJ.SCC* formát souboru (čísla řádků jsou k dispozici pouze jako vodítko a by neměly být obsažené v těle souboru):

@@ -8,12 +8,12 @@ ms.assetid: de10dabb-02ed-403b-9e6f-0b735524988c
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 555b3714dffa69e79d0c0e57effaa3e294905709
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 094402a8d3951b329385a27d6524452570183244
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55932573"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60062370"
 ---
 # <a name="load-test-run-settings-properties"></a>Vlastnosti nastavení běhu zátěžového testu
 
@@ -88,27 +88,27 @@ Další informace najdete v tématu [konfigurovat zátěžovým testem nastaven�
 |**Model připojení WebTest**|Tato volba určuje použití připojení z zátěžový testovací agent na webový server pro testy výkonnosti webu, které jsou spouštěny v rámci zátěžového testu. K dispozici jsou tři webového výkonu testu připojení modelu možnosti:<br /><br /> – **Připojení na uživatele** modelu simuluje chování uživatele, který používá skutečný prohlížeč. Pokud je simulované aplikace Internet Explorer 6 nebo Internet Explorer 7, jednotlivé virtuální uživatele, který spouští test výkonnosti webu používá jeden nebo dva vyhrazené připojení k webovému serveru. První připojení při prvním požadavku v testu výkonnosti webu. Druhé připojení může použít, pokud stránka obsahuje více než jeden závislý požadavek. Tyto požadavky jsou vydávány paralelně s použitím dvě připojení. Tato připojení údaje znovu použijí pro následné požadavky v testu výkonnosti webu. Připojení zavřená, po dokončení testu výkonnosti webu. Navracení k tomuto modelu je, že počet připojení, která je otevřena v počítači agenta může být vysoká (až do dvojnásobku uživatelské zatížení). Prostředky, které jsou potřebné k podpoře tento počet vysokou připojení v důsledku toho může omezit uživatelské zatížení, které mohou být řízeny z agenta testu zatížení. Pokud je simulované aplikace Internet Explorer 8, jsou podporovány šest souběžných připojení.<br />– **Fondu připojení** modelu šetří prostředky na zátěžový testovací agent při sdílení připojení k webovému serveru mezi víc uživateli test výkonu virtuální web. Pokud uživatelské zatížení je větší než velikost fondu připojení, testů webového výkonu, které jsou spouštěny v různých virtuálních uživatelů budou sdílet připojení. To může znamenat, že tento test výkonnosti webu jeden muset počkat, než se vydá požadavek na, jestli používáte jiného testu výkonnosti webu je připojení. Průměrná doba testu výkonnosti webu čeká předtím, než odešle, že žádost je sledován pomocí funkce čítač výkonu zátěžového testu Průměrná doba čekání připojení. Tato hodnota musí být menší než průměrná doba odezvy stránky. Pokud není, je pravděpodobně příliš malá velikost fondu připojení.<br />– **Testem** model Určuje použití vyhrazené připojení pro každou iteraci testu.|
 |**Velikosti fondu připojení WebTest**|Určuje maximální počet připojení, aby mezi zátěžový testovací agent a webový server. To se týká pouze **fondu připojení** modelu.|
 
-##  <a name="change-run-setting-properties"></a>Změna vlastností parametrů spuštění
+## <a name="change-run-setting-properties"></a>Změna vlastností parametrů spuštění
  K zátěžovému testu lze přidat více parametrů spuštění s různými nastaveními vlastností a spouštět tak zátěžový test za jiných podmínek. Lze například přidat nové nastavení testu a použít jinou vzorkovací frekvenci či zadat delší dobu běhu. Můžete použít pouze jeden parametr spuštění najednou a je nutné zadat, která spuštění pro označením jako aktivní. Příklad najdete v tématu [jak: Vyberte aktivního parametru spuštění pro zátěžový test](../test/how-to-select-the-active-run-setting-for-a-load-test.md).
 
 ### <a name="to-change-run-settings"></a>Chcete-li změnit nastavení běhu
 
-1.  Otevřete zátěžový test.
+1. Otevřete zátěžový test.
 
-2.  Rozbalte **parametrů běhu** složky.
+2. Rozbalte **parametrů běhu** složky.
 
-3.  Zvolte **parametrů běhu** uzlu.
+3. Zvolte **parametrů běhu** uzlu.
 
-4.  Na **zobrazení** nabídce zvolte **okno vlastností**.
+4. Na **zobrazení** nabídce zvolte **okno vlastností**.
 
      **Okno vlastností** se zobrazí a zobrazí se vlastnosti pro vybraný parametr spuštění.
 
-5.  Použití **okno vlastností** Změna parametrů běhu. Například změnit dobu spuštění **00:05:00** na test běžel pět minut.
+5. Použití **okno vlastností** Změna parametrů běhu. Například změnit dobu spuštění **00:05:00** na test běžel pět minut.
 
     > [!NOTE]
     > Úplný seznam vlastností parametrů spuštění a jejich popis najdete v části [vlastností parametrů spuštění zátěžového testu](../test/load-test-run-settings-properties.md).
 
-6.  Po dokončení změn vlastností uložte zátěžového testu. Na **souboru** nabídce zvolte **Uložit**.
+6. Po dokončení změn vlastností uložte zátěžového testu. Na **souboru** nabídce zvolte **Uložit**.
 
 > [!NOTE]
 > Mapování sady čítačů jsou taky součástí parametrů běhu. Další informace najdete v tématu [určení sad čítačů a mezních pravidel pro počítače v rámci zátěžového testu](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md).

@@ -11,12 +11,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 728241c4f8cf8609c453f83f0237d2bdc8410f35
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: caf878f6ea43a7f041285fb02b2f32175ca862b1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54800339"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60057183"
 ---
 # <a name="how-to-use-the-expression-editor"></a>Postupy: Používání editoru výrazů
 Je Editor výrazů [!INCLUDE[wfd1](../includes/wfd1-md.md)] ovládací prvek, který se používá v mnoha aktivit pracovního postupu jako způsob zadávání a vyhodnocování těchto výrazů. Editor výrazů nabízí plnohodnotný IDE editační rozhraní, včetně IntelliSense, zabarvení, ParamInfo podtržení vlnovkou u chyb, kromě jiných funkcí. Kompilátor ověří výraz poté, co je zadána. Pokud výraz není platný, zobrazí se ikona chyby. V editoru můžete otevřít také jako **Editor výrazů** dialogové okno.  
@@ -25,29 +25,29 @@ Je Editor výrazů [!INCLUDE[wfd1](../includes/wfd1-md.md)] ovládací prvek, kt
   
  **Editor výrazů** chová takto:  
   
--   Pokud fokus není v editoru výrazů, vypadá jako na běžný ovládací prvek TextBlock.  
+- Pokud fokus není v editoru výrazů, vypadá jako na běžný ovládací prvek TextBlock.  
   
--   V editoru výrazů po výběru vypadat a jak se bude chovat jako ovládací prvek editoru výrazů. Po ztratí fokus, it znovu vypadá jako regulární TextBlock.  
+- V editoru výrazů po výběru vypadat a jak se bude chovat jako ovládací prvek editoru výrazů. Po ztratí fokus, it znovu vypadá jako regulární TextBlock.  
   
--   Pokud vám soustředit se na Editor výrazů v Návrháři postupu provádění se změněným hostováním, pak se chová stejně jako textové pole. Jakmile v Návrháři postupu provádění se změněným hostováním se ztratí fokus, editoru výrazů bude vypadat jako regulární TextBlock znovu.  
+- Pokud vám soustředit se na Editor výrazů v Návrháři postupu provádění se změněným hostováním, pak se chová stejně jako textové pole. Jakmile v Návrháři postupu provádění se změněným hostováním se ztratí fokus, editoru výrazů bude vypadat jako regulární TextBlock znovu.  
   
 > [!NOTE]
 >  Technologie IntelliSense pro Editor výrazů je k dispozici jen uvnitř sady [!INCLUDE[vs2010](../includes/vs2010-md.md)]. V obou [!INCLUDE[vs2010](../includes/vs2010-md.md)] a provádění se změněným hostováním scénáře, kompilátor ověří výraz poté, co se zadají a editor výrazů zobrazuje ikonu chyby, pokud výraz není platný.  
   
 ### <a name="using-the-expression-editor"></a>Pomocí editoru výrazů  
   
-1.  V [!INCLUDE[vs2010](../includes/vs2010-md.md)], otevřete projekt nového nebo existujícího pracovního postupu.  
+1. V [!INCLUDE[vs2010](../includes/vs2010-md.md)], otevřete projekt nového nebo existujícího pracovního postupu.  
   
-2.  Přidání, například <xref:System.Activities.Statements.Assign> aktivitu do pracovního postupu.  
+2. Přidání, například <xref:System.Activities.Statements.Assign> aktivitu do pracovního postupu.  
   
     > [!NOTE]
     >  Více aktivit pracovního postupu mít editory výrazu. Výraz objekty TextBlock se také zobrazují v Návrhář proměnných, Návrhář argumentů a Návrhář dynamických argumentů. <xref:System.Activities.Statements.Assign> Aktivita slouží jako příklad.  
   
-3.  Klikněte na levý výraz editoru v Návrháři aktivit pro <xref:System.Activities.Statements.Assign> aktivity.  
+3. Klikněte na levý výraz editoru v Návrháři aktivit pro <xref:System.Activities.Statements.Assign> aktivity.  
   
      Šedé vodoznak řetězce  **\<k >** a  **\<zadejte výraz jazyka VB. >** jsou výchozí text řetězce pro výraz editory v <xref:System.Activities.Statements.Assign> aktivity.  
   
-4.  Při zadávání výrazu. Pokud zadáte řetězec, ujistěte se, že chcete vložit řetězec v uvozovkách. Pokud budete chtít vázat argument výrazu na proměnnou, ponechte uvozovky.  
+4. Při zadávání výrazu. Pokud zadáte řetězec, ujistěte se, že chcete vložit řetězec v uvozovkách. Pokud budete chtít vázat argument výrazu na proměnnou, ponechte uvozovky.  
   
      Jakmile budete hotovi, vyberte oblast nebo oblasti mimo Editor výrazů přesune fokus na jiné části návrháře. To způsobí, že kompilátor, aby ověření výrazu, jak je popsáno výše.  
   

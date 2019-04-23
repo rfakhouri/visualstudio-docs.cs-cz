@@ -11,12 +11,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: afa0cc3144840d547ea41cab21551fdcaae69980
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0ddfc51c54c04ad0d79d7ef180a027cbd253ac09
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54796884"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043504"
 ---
 # <a name="about-domain-specific-languages"></a>O jazycích specifických pro konkrétní domény
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,15 +62,15 @@ Na rozdíl od pro obecné účely jazyka, jako je C# nebo UML jazyka specifické
 ## <a name="aspects-of-graphical-domain-specific-development"></a>Aspekty vývoje grafické specifického pro doménu  
  Grafické jazyka specifického pro doménu, musí obsahovat následující funkce:  
   
--   Zápis  
+- Zápis  
   
--   Doménový model  
+- Doménový model  
   
--   Generování artefaktu  
+- Generování artefaktu  
   
--   Serializace  
+- Serializace  
   
--   Integrace se sadou Visual Studio  
+- Integrace se sadou Visual Studio  
   
 ### <a name="notation"></a>Zápis  
  Jazyka specifického pro doménu, musí mít poměrně malého počtu prvků, které lze snadno definované a rozšířená tak, aby představují konstrukce jazyka specifického pro doménu. Zápis se skládá z tvary, které zastupují elementy, a konektorů, které představují vztahy mezi elementy, na ploše Grafický diagram. V [!INCLUDE[dsl](../includes/dsl-md.md)], tvary můžou být dále rozšiřována a vylepšili o představují prvky jazyka specifického pro doménu.  
@@ -92,27 +92,27 @@ Na rozdíl od pro obecné účely jazyka, jako je C# nebo UML jazyka specifické
 ## <a name="benefits-of-domain-specific-development"></a>Výhody vývoj specifického pro doménu  
  Jazyka specifického pro doménu může poskytnout následující výhody:  
   
--   Obsahuje konstruktory, které přesně odpovídají místo problém.  
+- Obsahuje konstruktory, které přesně odpovídají místo problém.  
   
      Na rozdíl od pro obecné účely jazyků jazyka specifického pro doménu se skládá z prvky a vztahy, které představují přímo logiku místo problém. Například pojistku aplikace musí zahrnovat elementy pro zásady a deklarace identity. Jazyka specifického pro doménu usnadňuje návrh aplikace a najít a opravit chyby logiky.  
   
--   Umožňuje nevývojáře a uživatelů, kteří neznáte domény pochopit celkový návrh.  
+- Umožňuje nevývojáře a uživatelů, kteří neznáte domény pochopit celkový návrh.  
   
      S použitím grafického jazyka specifického pro doménu, můžete vytvořit vizuální reprezentaci domény tak, aby nevývojáře, můžete snadno seznámit se s návrhem aplikace.  
   
--   Usnadňuje vytvoření prototypu poslední aplikace.  
+- Usnadňuje vytvoření prototypu poslední aplikace.  
   
      Vývojáři mohou použít kód, který generuje jejich model k vytvoření prototypu aplikace, která můžete zobrazit na klienty.  
   
 ## <a name="the-process-of-domain-specific-development"></a>Proces vývoje specifického pro doménu  
  Většina vývojových týmů, které používají jazyky specifickými pro doménu použijte následující postup vytvoření a používání svoje modely:  
   
--   Tým odlišuje části proměnné domény, z části, které nikdy nezmění.  
+- Tým odlišuje části proměnné domény, z části, které nikdy nezmění.  
   
--   Vývojáři psát kód pro pevnou části a nechat Rozšiřovací body proměnné částí.  
+- Vývojáři psát kód pro pevnou části a nechat Rozšiřovací body proměnné částí.  
   
--   Vedoucí softwarový vývojář nebo architekt vytvoří jazyka specifického pro doménu, zahrnující vzory návrhu pevné částí domény a Rozšiřovací body proměnné částí.  
+- Vedoucí softwarový vývojář nebo architekt vytvoří jazyka specifického pro doménu, zahrnující vzory návrhu pevné částí domény a Rozšiřovací body proměnné částí.  
   
--   Vedoucí softwarový vývojář nebo architekt nasadí vývojářům různé aplikace, které vytvoří tým jazyka specifického pro doménu.  
+- Vedoucí softwarový vývojář nebo architekt nasadí vývojářům různé aplikace, které vytvoří tým jazyka specifického pro doménu.  
   
--   Každý vývojář vytvoří model, který platí pro konkrétní aplikaci.
+- Každý vývojář vytvoří model, který platí pro konkrétní aplikaci.

@@ -10,12 +10,12 @@ helpviewer_keywords:
 ms.assetid: 3bac375d-8bd5-41be-a8de-32eb33c5cfac
 caps.latest.revision: 20
 manager: jillfra
-ms.openlocfilehash: b37fe476c7654cc21a3b81f4a68aa4abc0348bb1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 833783267c70c0a201e4b84bc5031bce517dc0a2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54766270"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054479"
 ---
 # <a name="support-for-settings-categories"></a>Podpora pro kategorie nastavení
 Nastavení kategorie se skládá ze skupiny z možností, které přizpůsobení integrovaného vývojového prostředí (IDE). Například nastavení můžete řídit rozložení [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] windows a obsah nabídky. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
@@ -29,11 +29,11 @@ Nastavení kategorie se skládá ze skupiny z možností, které přizpůsobení
   
  Rozhraní spravovaného balíčku (MPF) podporuje vytváření kategorie nastavení minimální další kód.  
   
--   Vytvoření balíčku VSPackage k poskytnutí kontejner pro kategorii tak vytváření podtříd <xref:Microsoft.VisualStudio.Shell.Package> třídy.  
+- Vytvoření balíčku VSPackage k poskytnutí kontejner pro kategorii tak vytváření podtříd <xref:Microsoft.VisualStudio.Shell.Package> třídy.  
   
--   Vytvořit kategorii, samotný to odvozením z <xref:Microsoft.VisualStudio.Shell.DialogPage> třídy.  
+- Vytvořit kategorii, samotný to odvozením z <xref:Microsoft.VisualStudio.Shell.DialogPage> třídy.  
   
--   Připojení s nimi <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute>.  
+- Připojení s nimi <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute>.  
   
 ## <a name="support-for-settings-categories"></a>Podpora pro kategorie nastavení  
  <xref:Microsoft.VisualStudio.Shell.Package> Třída poskytuje podporu pro vytváření kategorie. <xref:Microsoft.VisualStudio.Shell.DialogPage> Třída implementuje kategorii. Výchozí implementace <xref:Microsoft.VisualStudio.Shell.DialogPage> nabízí jeho veřejné vlastnosti uživatele jako kategorie. Další informace najdete v tématu [vytvoření kategorie nastavení](../extensibility/creating-a-settings-category.md).  

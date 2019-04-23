@@ -10,12 +10,12 @@ ms.assetid: e61c49f3-3161-45b1-9220-08b5459065a2
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4d835660995e92df1f6aca94ae9b9b3ccebb5d87
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ed1bd922b390d5b6e90c68b08683e1b9bdb46f32
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970761"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059575"
 ---
 # <a name="how-to-view-web-page-response-time-in-a-load-test-using-the-load-test-analyzer"></a>Postupy: Zobrazení doby odezvy webové stránky v zátěžovém testu pomocí Analyzéru zátěžového testu
 
@@ -25,15 +25,15 @@ ms.locfileid: "55970761"
 
 Při spuštění testu výkonnosti webu ve stresu v rámci zátěžového testu, bude možné analyzovat následující informace pro každou stránku:
 
--   Průměrná doba odezvy stránky.
+- Průměrná doba odezvy stránky.
 
--   Procento iterace testu, které splňují cílovou dobu odezvy stránky.
+- Procento iterace testu, které splňují cílovou dobu odezvy stránky.
 
--   Doba odezvy webové stránky můžete analyzovat pomocí zobrazení tabulek nebo zobrazení grafů **Analyzéru zátěžového testu**:
+- Doba odezvy webové stránky můžete analyzovat pomocí zobrazení tabulek nebo zobrazení grafů **Analyzéru zátěžového testu**:
 
--   Analýza odezvy webové stránky v tabulkovém zobrazení
+- Analýza odezvy webové stránky v tabulkovém zobrazení
 
--   Analýza odezvy webové stránky v zobrazení grafů
+- Analýza odezvy webové stránky v zobrazení grafů
 
 ## <a name="view-response-time-data-in-a-table"></a>Zobrazit data o době odezvy v tabulce
 

@@ -12,12 +12,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 167e4f4b8977ed847823fb6db101f207142d6b4d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5c6743f7466f1b6d2e17c1dbf9da523c87e63e77
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54799740"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060316"
 ---
 # <a name="how-to-change-text-case-in-the-editor"></a>Postupy: Změna velikosti písmen v editoru
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,11 +31,11 @@ Příkazy nabídky nebo klávesové zkratky můžete použít k převodu přípa
   
 #### <a name="to-switch-text-to-upper-case"></a>Chcete-li přepnout text na velká písmena  
   
-1.  Vyberte text, který má být převeden.  
+1. Vyberte text, který má být převeden.  
   
-2.  Na **upravit** nabídce vyberte možnost **Upřesnit**.  
+2. Na **upravit** nabídce vyberte možnost **Upřesnit**.  
   
-3.  Chcete-li převést text na velká písmena, zvolte **Ujistěte se, velká písmena**, nebo stiskněte klávesu **CTRL**+**SHIFT**+**U**.  
+3. Chcete-li převést text na velká písmena, zvolte **Ujistěte se, velká písmena**, nebo stiskněte klávesu **CTRL**+**SHIFT**+**U**.  
   
      – nebo –  
   

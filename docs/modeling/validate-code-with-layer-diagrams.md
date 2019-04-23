@@ -19,12 +19,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6286c787b1f69c0e44541e156b06440c7267f79d
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 05e09dfc70ae5bc4adf85562f48c5cc8c4874bc6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57870357"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055818"
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>Ověřování kódu pomocí diagramů závislostí
 
@@ -79,17 +79,17 @@ Nastane, ověřování závislostí v reálném čase a zobrazují se chyby okam
 
 Vrstvy můžete propojit s weby, dokumenty Office, místo textových souborů a soubory v projektech, které jsou sdíleny napříč více aplikacemi, ale proces ověření nebude zahrnovat je. Chyby ověřování se neobjeví pro odkazy na projekty nebo sestavení, které jsou připojeny k samostatným vrstvám a v případě, že se mezi těmito vrstvami neobjeví závislosti. Tyto odkazy jsou považovány za závislosti jen tehdy, pokud kód tyto odkazy používá.
 
-1.  Na diagram závislostí, vyberte jednu nebo více vrstev, klikněte pravým tlačítkem na svůj výběr a potom klikněte na tlačítko **zobrazit odkazy**.
+1. Na diagram závislostí, vyberte jednu nebo více vrstev, klikněte pravým tlačítkem na svůj výběr a potom klikněte na tlačítko **zobrazit odkazy**.
 
-2.  V **Průzkumník vrstev**, podívejte se na **podporuje ověřování** sloupce. Pokud je hodnota false, položka ověřování nepodporuje.
+2. V **Průzkumník vrstev**, podívejte se na **podporuje ověřování** sloupce. Pokud je hodnota false, položka ověřování nepodporuje.
 
 ## <a name="include-other-net-assemblies-and-projects-for-validation"></a>Zahrnutí dalších projektů a sestavení .NET pro ověřování
 
 Při přetažení položky do diagramu závislost, odkazy odpovídající sestavení nebo projekty .NET přidány automaticky do **odkazy vrstvy** složky v projektu modelování. Tato složka obsahuje odkazy na sestavení a projekty, které jsou analyzovány během ověřování. Můžete zahrnout další sestavení a projekty .NET pro ověření bez ručně přetahovat na diagram závislostí.
 
-1.  V **Průzkumníka řešení**, klikněte pravým tlačítkem na projekt modelování nebo **odkazy vrstvy** složku a pak klikněte na tlačítko **přidat odkaz**.
+1. V **Průzkumníka řešení**, klikněte pravým tlačítkem na projekt modelování nebo **odkazy vrstvy** složku a pak klikněte na tlačítko **přidat odkaz**.
 
-2.  V **přidat odkaz** dialogovém okně vyberte projekty nebo sestavení a klikněte na **OK**.
+2. V **přidat odkaz** dialogovém okně vyberte projekty nebo sestavení a klikněte na **OK**.
 
 ## <a name="validate-code-manually"></a>Ověřování kódu ručně
 
@@ -97,19 +97,19 @@ Pokud máte diagramu otevřete závislostí, který je propojen s položkami ře
 
 ### <a name="validate-code-from-an-open-dependency-diagram"></a>Ověření kódu z diagramu otevřete závislostí
 
-1.  Klikněte pravým tlačítkem na plochu diagramu a potom klikněte na tlačítko **ověřit architekturu**.
+1. Klikněte pravým tlačítkem na plochu diagramu a potom klikněte na tlačítko **ověřit architekturu**.
 
     > [!NOTE]
     > Ve výchozím nastavení **akce sestavení** vlastnost na závislost soubor diagramu (.layerdiagram) nastavena na **ověřit** tak, aby diagram je součástí procesu ověřování.
 
      **Seznam chyb** okno hlásí chyby, ke kterým dochází. Další informace o chybách ověřování najdete v části [řešit problémy s ověřením vrstvy](#troubleshoot-layer-validation-issues).
 
-2.  Chcete-li zobrazit zdroje každé chyby, klikněte dvakrát na chybu v **seznam chyb** okna.
+2. Chcete-li zobrazit zdroje každé chyby, klikněte dvakrát na chybu v **seznam chyb** okna.
 
     > [!NOTE]
     > Visual Studio může namísto zdroje chyby zobrazit mapu kódu. K tomu dojde, pokud kód obsahuje závislost na sestavení, které není specifikováno diagram závislostí nebo kód chybí závislost, která je zadána diagram závislostí. Projděte si mapu kódu nebo kód určující, zda by měla závislost existovat. Další informace o mapách kódu najdete v tématu [mapování závislostí napříč vaším řešením](../modeling/map-dependencies-across-your-solutions.md).
 
-3.  Ke správě chyb, naleznete v tématu [vyřešení chyb ověření vrstvy](#resolve-layer-validation-errors).
+3. Ke správě chyb, naleznete v tématu [vyřešení chyb ověření vrstvy](#resolve-layer-validation-errors).
 
 ### <a name="validate-code-at-the-command-prompt"></a>Ověřování kódu v příkazovém řádku
 
@@ -183,15 +183,15 @@ K otevření souboru projektu modelování (.modelproj) použijte textový edito
 
 \- nebo –
 
-1.  V **Průzkumníka řešení**, klikněte pravým tlačítkem na projekt modelování obsahující diagram závislostí nebo diagramy a pak klikněte na **vlastnosti**.
+1. V **Průzkumníka řešení**, klikněte pravým tlačítkem na projekt modelování obsahující diagram závislostí nebo diagramy a pak klikněte na **vlastnosti**.
 
-2.  V **vlastnosti** okno, nastavte projekt modelování **ověřit architekturu** vlastnost **True**.
+2. V **vlastnosti** okno, nastavte projekt modelování **ověřit architekturu** vlastnost **True**.
 
     To zahrne projekt modelování do ověřovacího procesu.
 
-3.  V **Průzkumníka řešení**, klikněte na soubor diagramu (.layerdiagram) závislost, kterou chcete použít pro ověřování.
+3. V **Průzkumníka řešení**, klikněte na soubor diagramu (.layerdiagram) závislost, kterou chcete použít pro ověřování.
 
-4.  V **vlastnosti** okno, ujistěte se, že v diagramu **akce sestavení** je nastavena na **ověřit**.
+4. V **vlastnosti** okno, ujistěte se, že v diagramu **akce sestavení** je nastavena na **ověřit**.
 
     To zahrnuje diagram závislostí do ověřovacího procesu.
 

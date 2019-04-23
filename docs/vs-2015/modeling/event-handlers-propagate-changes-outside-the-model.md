@@ -12,12 +12,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c723e0a2cc76b6432fc6f209a7edf4a988a0b3fd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 24ef57b545360cccbf75039b5f64a0f53e636dd8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54796301"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059900"
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>Obslužné rutiny události šíří změny mimo model
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,13 +30,13 @@ V produktu Visualization and Modeling SDK, můžete definovat obslužné rutiny 
   
 1. Vyberte typ události, ke které chcete monitorovat. Chcete-li zobrazit úplný seznam, podívejte se na vlastnosti <xref:Microsoft.VisualStudio.Modeling.EventManagerDirectory>. Každou vlastnost odpovídá typu události. Nejčastěji používané události, které typy jsou:  
   
-   -   `ElementAdded` – aktivuje, pokud prvek modelu, vztah odkazu, obrazec nebo spojnici se vytvoří.  
+   - `ElementAdded` – aktivuje, pokud prvek modelu, vztah odkazu, obrazec nebo spojnici se vytvoří.  
   
-   -   ElementPropertyChanged – aktivuje, když hodnota `Normal` doménovou vlastnost se změní. Událost se aktivuje jenom v případě, že novém i starém hodnoty nejsou shodné. Události nejde použít u vypočtené a vlastní vlastnosti úložiště.  
+   - ElementPropertyChanged – aktivuje, když hodnota `Normal` doménovou vlastnost se změní. Událost se aktivuje jenom v případě, že novém i starém hodnoty nejsou shodné. Události nejde použít u vypočtené a vlastní vlastnosti úložiště.  
   
         Ho nejde použít u vlastnosti rolí, které odpovídají vztah odkazy. Místo toho použijte `ElementAdded` monitorování doménového vztahu.  
   
-   -   `ElementDeleted` – aktivuje po prvku modelu, relace, obrazec nebo spojnici byl odstraněn. Budete k němu přístup hodnoty vlastností elementu, ale nebude mít žádné vztahy s ostatními prvky.  
+   - `ElementDeleted` – aktivuje po prvku modelu, relace, obrazec nebo spojnici byl odstraněn. Budete k němu přístup hodnoty vlastností elementu, ale nebude mít žádné vztahy s ostatními prvky.  
   
 2. Přidat definici částečné třídy pro _YourDsl_**DocData** v samostatném souboru kódu v **DslPackage** projektu.  
   
@@ -166,11 +166,11 @@ private static void AlbumTitleAdjuster(object sender,
   
  Pokud píšete událost, která aktualizuje ve storu:  
   
--   Použití `store.InUndoRedoOrRollback` vyhnout se provádění změn k prvkům modelu v vrácení zpět. Správce transakcí všechno, co nastavíte v úložišti zpět do původního stavu.  
+- Použití `store.InUndoRedoOrRollback` vyhnout se provádění změn k prvkům modelu v vrácení zpět. Správce transakcí všechno, co nastavíte v úložišti zpět do původního stavu.  
   
--   Použití `store.InSerializationTransaction` pro vyvarování změny při načítání modelu ze souboru.  
+- Použití `store.InSerializationTransaction` pro vyvarování změny při načítání modelu ze souboru.  
   
--   Změny způsobí další události, které mají být aktivované. Ujistěte se, že byste se vyhnout nekonečnou smyčku.  
+- Změny způsobí další události, které mají být aktivované. Ujistěte se, že byste se vyhnout nekonečnou smyčku.  
   
 ## <a name="store-event-types"></a>Typy událostí Store  
  Každý typ události odpovídá kolekci v Store.EventManagerDirectory. Můžete přidat nebo odebrat obslužných rutin událostí v okamžiku, ale je obvykle při načtení dokumentu je přidat.  

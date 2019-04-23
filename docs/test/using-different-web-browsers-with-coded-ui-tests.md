@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 822ce0a2f0e8632706a4a1551cc53aafb23563ed
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: 2e397d587032bb6a8c125d38c10000e6a496c2d2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57983026"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060329"
 ---
 # <a name="use-different-web-browsers-with-coded-ui-tests"></a>Používání jiných webových prohlížečů v programových testech uživatelského rozhraní
 
@@ -24,13 +24,13 @@ Nejdřív nainstalujte [součásti Selenium pro programové uživatelského rozh
 
 ## <a name="whats-supported-across-all-web-browsers"></a>Co je podporováno ve všech webových prohlížečích?
 
--   [Přidání vlastního kódu pro řízení funkcí](https://devblogs.microsoft.com/devops/coded-ui-test-configuring-search-properties-while-recording-on-internet-explorer/) například vlastnosti, vyhledávání a podprocesy přehrávání.
+- [Přidání vlastního kódu pro řízení funkcí](https://devblogs.microsoft.com/devops/coded-ui-test-configuring-search-properties-while-recording-on-internet-explorer/) například vlastnosti, vyhledávání a podprocesy přehrávání.
 
--   Automaticky otevíraná okna a dialogová okna
+- Automaticky otevíraná okna a dialogová okna
 
--   [Spustit základní JavaScript bez návratového typu](https://devblogs.microsoft.com/devops/introducing-javascript-execution-on-internetexplorer-and-crossbrowser-in-coded-ui-test/)
+- [Spustit základní JavaScript bez návratového typu](https://devblogs.microsoft.com/devops/introducing-javascript-execution-on-internetexplorer-and-crossbrowser-in-coded-ui-test/)
 
--   Hledat oblasti odolnosti (pomocí inteligentní shody) a [vylepšení výkonu](https://devblogs.microsoft.com/devops/guidelines-on-improving-performance-of-coded-ui-test-playback/)
+- Hledat oblasti odolnosti (pomocí inteligentní shody) a [vylepšení výkonu](https://devblogs.microsoft.com/devops/guidelines-on-improving-performance-of-coded-ui-test-playback/)
 
 ## <a name="why-should-i-use-coded-ui-tests-across-multiple-web-browser-types"></a>Proč bych měl používat programové testy UI napříč několika typy webových prohlížečů?
 
@@ -78,17 +78,17 @@ Další informace o vytváření a používání kódované UI testy, naleznete 
 
 Chcete-li povolit ladění webové aplikace, je nutné dokončit následující možnosti konfigurace:
 
-1.  Povolit volbu Pouze vlastní kód:
+1. Povolit volbu Pouze vlastní kód:
 
-    1.  Na **nástroje** nabídce zvolte **možnosti** a klikněte na tlačítko **ladění**.
+    1. Na **nástroje** nabídce zvolte **možnosti** a klikněte na tlačítko **ladění**.
 
-    2.  Vyberte **povolit volbu pouze vlastní kód**.
+    2. Vyberte **povolit volbu pouze vlastní kód**.
 
-2.  Zakázání výjimek CLR:
+2. Zakázání výjimek CLR:
 
-    1.  Na **ladění** nabídce zvolte **výjimky**.
+    1. Na **ladění** nabídce zvolte **výjimky**.
 
-    2.  Pro **výjimky modulu Common Language Runtime**, zrušte zaškrtnutí políčka **uživatelem neošetřené**.
+    2. Pro **výjimky modulu Common Language Runtime**, zrušte zaškrtnutí políčka **uživatelem neošetřené**.
 
 Pokud nevidíte možnost změnit `BrowserWindow.CurrentBrowser` v programovém testu uživatelského rozhraní, může pomocí verze sady Visual Studio, který nepodporuje programové testy UI pomocí různých webových prohlížečů. Pokud chcete použít tyto programové testy UI, musíte použít edici sady Visual Studio Enterprise.
 

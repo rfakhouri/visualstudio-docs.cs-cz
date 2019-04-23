@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: be8d42a5a4557b39a02e724eb54b5434c1b454ea
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 4a6c48d878f2bacd8317878366980ecc317f7adb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59659966"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055259"
 ---
 # <a name="how-to-use-xml-snippets"></a>Postupy: Použití fragmentů XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,46 +31,46 @@ Fragmenty XML lze vyvolat pomocí následujících dvou příkazů v místní na
   
 #### <a name="to-insert-snippets-from-the-shortcut-menu"></a>Chcete-li vložit fragmenty kódu z místní nabídky  
   
-1.  Umístěte kurzor na místo, kam chcete vložit fragment kódu XML.  
+1. Umístěte kurzor na místo, kam chcete vložit fragment kódu XML.  
   
-2.  Klikněte pravým tlačítkem a vyberte **Vložit fragment**.  
+2. Klikněte pravým tlačítkem a vyberte **Vložit fragment**.  
   
      Zobrazí se seznam dostupných fragmentů XML.  
   
-3.  Fragment kódu vyberte ze seznamu pomocí myši nebo zadáním názvu fragmentu kódu a stisknutím klávesy TAB nebo ENTER.  
+3. Fragment kódu vyberte ze seznamu pomocí myši nebo zadáním názvu fragmentu kódu a stisknutím klávesy TAB nebo ENTER.  
   
 #### <a name="to-insert-snippets-using-the-intellisense-menu"></a>Chcete-li vložit fragmenty kódu technologie IntelliSense nabídky  
   
-1.  Umístěte kurzor na místo, kam chcete vložit fragment kódu XML.  
+1. Umístěte kurzor na místo, kam chcete vložit fragment kódu XML.  
   
-2.  Z **upravit** nabídky, přejděte k **IntelliSense**a pak vyberte **Vložit fragment**.  
+2. Z **upravit** nabídky, přejděte k **IntelliSense**a pak vyberte **Vložit fragment**.  
   
      Zobrazí se seznam dostupných fragmentů XML.  
   
-3.  Vyberte fragment kódu ze seznamu pomocí myši nebo zadáním názvu fragmentu kódu a stisknutím klávesy TAB nebo ENTER.  
+3. Vyberte fragment kódu ze seznamu pomocí myši nebo zadáním názvu fragmentu kódu a stisknutím klávesy TAB nebo ENTER.  
   
 #### <a name="to-insert-snippets-through-the-intellisense-complete-word-list"></a>Chcete-li vložit fragmenty kódu prostřednictvím seznamu technologie IntelliSense dokončit slovo  
   
-1.  Umístěte kurzor na místo, kam chcete vložit fragment kódu XML.  
+1. Umístěte kurzor na místo, kam chcete vložit fragment kódu XML.  
   
-2.  Začněte psát fragment kódu XML, který chcete přidat do souboru. Pokud je zapnuté automatické dokončování, zobrazí se seznam dokončit slovo technologie IntelliSense. Pokud se nezobrazí, stiskněte klávesu CTRL + MEZERNÍK jej aktivovat.  
+2. Začněte psát fragment kódu XML, který chcete přidat do souboru. Pokud je zapnuté automatické dokončování, zobrazí se seznam dokončit slovo technologie IntelliSense. Pokud se nezobrazí, stiskněte klávesu CTRL + MEZERNÍK jej aktivovat.  
   
-3.  Vyberte ze seznamu úplné slovo fragment kódu XML.  
+3. Vyberte ze seznamu úplné slovo fragment kódu XML.  
   
-4.  Stiskněte klávesu TAB, kartu, která se má vyvolat fragment kódu XML.  
+4. Stiskněte klávesu TAB, kartu, která se má vyvolat fragment kódu XML.  
   
 > [!NOTE]
 >  Můžou nastat případy při získání vyvolání není fragment kódu XML. Například, pokud se pokusíte vložit `xs:complexType` element v rámci `xs:element` uzlu editoru není generování fragmentu XML. Když `xs:complexType` element se používá v `xs:element` uzel, tak editor neobsahuje žádná data k vložení neexistují žádné povinné atributy nebo dílčí prvky,.  
   
 #### <a name="to-insert-snippets-using-the-shortcut-name"></a>Chcete-li vložit fragmenty kódu pomocí názvu odkazu  
   
-1.  Umístěte kurzor na místo, kam chcete vložit fragment kódu XML.  
+1. Umístěte kurzor na místo, kam chcete vložit fragment kódu XML.  
   
-2.  Typ `<` podokna editoru.  
+2. Typ `<` podokna editoru.  
   
-3.  Stisknutím klávesy ESC zavřete seznam dokončit slovo technologie IntelliSense.  
+3. Stisknutím klávesy ESC zavřete seznam dokončit slovo technologie IntelliSense.  
   
-4.  Zadejte místní název fragmentu kódu a stiskněte klávesu TAB k vyvolání fragment kódu XML.  
+4. Zadejte místní název fragmentu kódu a stiskněte klávesu TAB k vyvolání fragment kódu XML.  
   
 ## <a name="surround-with"></a>Obklopit fragmentem  
  Následující postupy popisují, jak získat přístup k **obklopit fragmentem** příkazu.  
@@ -80,23 +80,23 @@ Fragmenty XML lze vyvolat pomocí následujících dvou příkazů v místní na
   
 #### <a name="to-use-surround-with-from-the-context-menu"></a>Použití příkazu Obklopit s v místní nabídce  
   
-1.  Vyberte text, který se před a za v editoru XML.  
+1. Vyberte text, který se před a za v editoru XML.  
   
-2.  Klikněte pravým tlačítkem a vyberte **obklopit fragmentem**.  
+2. Klikněte pravým tlačítkem a vyberte **obklopit fragmentem**.  
   
      Zobrazí se seznam dostupných obklopí fragmentem fragmentů XML.  
   
-3.  Fragment kódu vyberte ze seznamu pomocí myši nebo zadáním názvu fragmentu kódu a stisknutím klávesy TAB nebo ENTER.  
+3. Fragment kódu vyberte ze seznamu pomocí myši nebo zadáním názvu fragmentu kódu a stisknutím klávesy TAB nebo ENTER.  
   
 #### <a name="to-use-surround-with-from-the-intellisense-menu"></a>Použití příkazu Obklopit s z nabídky technologie Intellisense  
   
-1.  Vyberte text, který se před a za v editoru XML.  
+1. Vyberte text, který se před a za v editoru XML.  
   
-2.  Z **upravit** nabídky, přejděte k **IntelliSense**a pak vyberte **obklopit fragmentem**.  
+2. Z **upravit** nabídky, přejděte k **IntelliSense**a pak vyberte **obklopit fragmentem**.  
   
      Zobrazí se seznam dostupných obklopí fragmentem fragmentů XML.  
   
-3.  Fragment kódu vyberte ze seznamu pomocí myši nebo zadáním názvu fragmentu kódu a stisknutím klávesy TAB nebo ENTER.  
+3. Fragment kódu vyberte ze seznamu pomocí myši nebo zadáním názvu fragmentu kódu a stisknutím klávesy TAB nebo ENTER.  
   
 ## <a name="using-xml-snippets"></a>Použití fragmentů XML  
  Po zvolení fragmentu XML je automaticky vložen text fragmentu kódu na pozici kurzoru. Jsou zvýrazněny všechna upravitelné pole v tomto fragmentu kódu a je automaticky vybrána první upravitelné pole. Aktuálně vybrané pole je zabalená.  

@@ -9,12 +9,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 348ddd00d6f6db0ac4080030d2ecaa5b73c57f18
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: f14924ac9464cc6239564f775a122551a9d94c15
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335191"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055194"
 ---
 # <a name="appliesto-element-visual-studio-templates"></a>AppliesTo – element (šablony sady Visual Studio)
 
@@ -60,19 +60,19 @@ Je vyžadována textová hodnota. Tento text určuje schopnosti projektu.
 
 Platná syntaxe výrazu je definována takto:
 
--   Výraz schopnosti, například "(VisualC &#124; CSharp) + (MSTest &#124; NUnit)".
+- Výraz schopnosti, například "(VisualC &#124; CSharp) + (MSTest &#124; NUnit)".
 
--   "&#124;" Je operátor OR.
+- "&#124;" Je operátor OR.
 
--   "&" A "+" znaky jsou oba operátory.
+- "&" A "+" znaky jsou oba operátory.
 
--   Znak "!" je operátor NOT.
+- Znak "!" je operátor NOT.
 
--   Závorky určují pořadí vyhodnocování.
+- Závorky určují pořadí vyhodnocování.
 
--   Hodnota null nebo prázdný výraz jsou vyhodnoceny jako shoda.
+- Hodnota null nebo prázdný výraz jsou vyhodnoceny jako shoda.
 
--   Schopnosti projektu mohou používat libovolné znaky kromě těchto vyhrazených znaků: "'' :;,+-*/\\! ~&#124;& %$@^() ={}<> []? \t\b\n\r
+- Schopnosti projektu mohou používat libovolné znaky kromě těchto vyhrazených znaků: "'' :;,+-*/\\! ~&#124;& %$@^() ={}<> []? \t\b\n\r
 
 ## <a name="example"></a>Příklad
 

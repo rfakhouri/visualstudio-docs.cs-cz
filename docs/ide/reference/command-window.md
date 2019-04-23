@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f4e16d6dc3eb7529e2e13ed333cacaf93e36d728
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: a3c38701ce222090f14b6880489eea4d22f053d5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59653876"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061759"
 ---
 # <a name="command-window"></a>Příkazové okno
 **Příkaz** okno se používá ke spuštění příkazů nebo přímo v aliasy [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrované vývojové prostředí (IDE). Můžete spustit příkazy nabídek a příkazů, které nejsou zobrazeny na jakékoliv nabídky. Pro zobrazení **příkaz** okně zvolte **ostatní Windows** z **zobrazení** nabídky a vybereme **příkazové okno**.
@@ -80,13 +80,13 @@ Edit.ReplaceInFiles /case /pattern:regex var[1-3]+ oldpar
 
  V tomto příkladu
 
--   `Edit.ReplaceInFiles` příkaz
+- `Edit.ReplaceInFiles` příkaz
 
--   `/case` a `/pattern:regex` přepínače (začíná znakem lomítka [/])
+- `/case` a `/pattern:regex` přepínače (začíná znakem lomítka [/])
 
--   `regex` je hodnota `/pattern` přepnout; `/case` přepínač nemá žádnou hodnotu.
+- `regex` je hodnota `/pattern` přepnout; `/case` přepínač nemá žádnou hodnotu.
 
--   `var[1-3]+` a `oldpar` jsou parametry
+- `var[1-3]+` a `oldpar` jsou parametry
 
     > [!NOTE]
     >  Příkaz, parametrů, přepínače nebo hodnotu, která obsahuje mezery, musí mít dvojitých uvozovek na obou stranách.

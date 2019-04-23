@@ -1,5 +1,5 @@
 ---
-title: 'Průvodce: Ladění webového formuláře | Dokumentace Microsoftu'
+title: 'Návod: Ladění webového formuláře | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -23,14 +23,14 @@ caps.latest.revision: 34
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ee796418658ec0825a76d60607b77813f84e4144
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ad6fa498fe9b89854f7fe3c74af9636b5b59e47f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54777894"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053816"
 ---
-# <a name="walkthrough-debugging-a-web-form"></a>Průvodce: Ladění webového formuláře
+# <a name="walkthrough-debugging-a-web-form"></a>Návod: Ladění webového formuláře
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Kroky v tomto názorném postupu ukazují, jak ladit [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] webovou aplikaci, označované také jako webového formuláře. To ukazuje, jak spustit a zastavit provádění, nastavit zarážky a zkontrolovat proměnné v **Watch** okna.  
@@ -42,25 +42,25 @@ Kroky v tomto názorném postupu ukazují, jak ladit [!INCLUDE[vstecasp](../incl
   
 ### <a name="to-create-the-web-form"></a>Chcete-li vytvořit webový formulář  
   
-1.  Pokud už máte řešení otevřené, zavřete ho.  
+1. Pokud už máte řešení otevřené, zavřete ho.  
   
-2.  Na **souboru** nabídky, klikněte na tlačítko **nový**a potom klikněte na tlačítko **webu**.  
+2. Na **souboru** nabídky, klikněte na tlačítko **nový**a potom klikněte na tlačítko **webu**.  
   
      **Nový web** zobrazí se dialogové okno.  
   
-3.  V **šablony** podokně klikněte na tlačítko **Web ASP.NET s**.  
+3. V **šablony** podokně klikněte na tlačítko **Web ASP.NET s**.  
   
-4.  Na **umístění** řádek, klikněte na tlačítko **HTTP** ze seznamu a do textového pole zadejte **http://localhost/WebSite**.  
+4. Na **umístění** řádek, klikněte na tlačítko **HTTP** ze seznamu a do textového pole zadejte **http://localhost/WebSite**.  
   
-5.  V **jazyk** klikněte na možnost **Visual C#** nebo **jazyka Visual Basic**.  
+5. V **jazyk** klikněte na možnost **Visual C#** nebo **jazyka Visual Basic**.  
   
-6.  Klikněte na tlačítko **OK**.  
+6. Klikněte na tlačítko **OK**.  
   
      [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Vytvoří nový projekt a zobrazí výchozí zdrojový kód HTML. Také vytvoří nový virtuální adresář s názvem **webu** pod **výchozí webový server** ve službě IIS.  
   
-7.  Klikněte na tlačítko **návrhu** karty na dolní okraj.  
+7. Klikněte na tlačítko **návrhu** karty na dolní okraj.  
   
-8.  Klikněte na tlačítko **nástrojů** kartu na levý okraj, nebo ho vyberte na **zobrazení** nabídky.  
+8. Klikněte na tlačítko **nástrojů** kartu na levý okraj, nebo ho vyberte na **zobrazení** nabídky.  
   
      **Nástrojů** otevře.  
   
@@ -90,7 +90,7 @@ Kroky v tomto názorném postupu ukazují, jak ladit [!INCLUDE[vstecasp](../incl
   
 ### <a name="to-debug-the-web-form"></a>Chcete-li ladit webový formulář  
   
-1.  V okně Default.aspx.cs nebo Default.aspx.vb klikněte na levý okraj na stejném řádku jako text, který jste přidali:  
+1. V okně Default.aspx.cs nebo Default.aspx.vb klikněte na levý okraj na stejném řádku jako text, který jste přidali:  
   
     ```  
     ' Visual Basic  
@@ -102,19 +102,19 @@ Kroky v tomto názorném postupu ukazují, jak ladit [!INCLUDE[vstecasp](../incl
   
      Zobrazí se červená tečka a text řádku se zvýrazní červeně. Tato červená tečka představuje zarážku. Při spuštění aplikace pomocí ladicího programu v tomto místě ladicí program přeruší provádění, když je tento řádek kódu dosažen. Poté lze zobrazit stav aplikace a ladit ji. Další informace najdete v tématu [zarážky](http://msdn.microsoft.com/fe4eedc1-71aa-4928-962f-0912c334d583).  
   
-2.  Na **ladění** nabídky, klikněte na tlačítko **spustit ladění**.  
+2. Na **ladění** nabídky, klikněte na tlačítko **spustit ladění**.  
   
-3.  **Ladění není povoleno** zobrazí se dialogové okno. Vyberte **upravit soubor Web.config pro povolení ladění** možnost a klikněte na tlačítko **OK**.  
+3. **Ladění není povoleno** zobrazí se dialogové okno. Vyberte **upravit soubor Web.config pro povolení ladění** možnost a klikněte na tlačítko **OK**.  
   
      Aplikace Internet Explorer spustí a zobrazí stránky, které je navrženo.  
   
-4.  V aplikaci Internet Explorer klikněte na tlačítko.  
+4. V aplikaci Internet Explorer klikněte na tlačítko.  
   
      V [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], tím přejdete na řádku kde jste nastavili zarážku na znakovou stránku Default.aspx.cs nebo Default.aspx.vb. Tento řádek by měl být zvýrazněn žlutou barvou. Nyní lze zobrazit proměnné aplikace a řídit její spuštění. Vaše aplikace zastaví provádění a čeká příkaz od vás.  
   
-5.  Na **ladění** nabídky, klikněte na tlačítko **Windows**, klikněte na **Watch**a potom klikněte na tlačítko **Watch1**.  
+5. Na **ladění** nabídky, klikněte na tlačítko **Windows**, klikněte na **Watch**a potom klikněte na tlačítko **Watch1**.  
   
-6.  V **Watch** okno, zadejte **TextBox1.Text**.  
+6. V **Watch** okno, zadejte **TextBox1.Text**.  
   
      **Watch** okno zobrazuje hodnotu proměnné `TextBox1.Text`:  
   
@@ -122,7 +122,7 @@ Kroky v tomto názorném postupu ukazují, jak ladit [!INCLUDE[vstecasp](../incl
     ""  
     ```  
   
-7.  Na **ladění** nabídky, klikněte na tlačítko **Krokovat s přeskočením**.  
+7. Na **ladění** nabídky, klikněte na tlačítko **Krokovat s přeskočením**.  
   
      Hodnota `TextBox1.Text` se změnami **Watch** okno ke čtení:  
   
@@ -130,7 +130,7 @@ Kroky v tomto názorném postupu ukazují, jak ladit [!INCLUDE[vstecasp](../incl
     "Button was clicked!"  
     ```  
   
-8.  Na **ladění** nabídky, klikněte na tlačítko **pokračovat**.  
+8. Na **ladění** nabídky, klikněte na tlačítko **pokračovat**.  
   
 9. V aplikaci Internet Explorer klikněte na tlačítko znovu.  
   
@@ -144,9 +144,9 @@ Kroky v tomto názorném postupu ukazují, jak ladit [!INCLUDE[vstecasp](../incl
   
 ### <a name="to-attach-to-the-web-form-for-debugging"></a>Připojení k webového formuláře pro ladění  
   
-1.  V systému [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] lze ladicí program připojit ke spuštěnému procesu. Pro největší efektivity dosáhnete, ladění, kompilace spustitelného souboru jako ladicí verze s soubory symbolů (PDB).  
+1. V systému [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] lze ladicí program připojit ke spuštěnému procesu. Pro největší efektivity dosáhnete, ladění, kompilace spustitelného souboru jako ladicí verze s soubory symbolů (PDB).  
   
-2.  V okně Default.aspx.cs nebo Default.aspx.vb klikněte na levý okraj řádku, který jste přidali znovu nastavit zarážku:  
+2. V okně Default.aspx.cs nebo Default.aspx.vb klikněte na levý okraj řádku, který jste přidali znovu nastavit zarážku:  
   
     ```  
     ' Visual Basic  
@@ -156,17 +156,17 @@ Kroky v tomto názorném postupu ukazují, jak ladit [!INCLUDE[vstecasp](../incl
     textBox1.Text = "Button was clicked!";  
     ```  
   
-3.  Na **ladění** nabídky, klikněte na tlačítko **spustit bez ladění**.  
+3. Na **ladění** nabídky, klikněte na tlačítko **spustit bez ladění**.  
   
      Webový formulář spustí v Internet Exploreru, ale není připojen ladicí program.  
   
-4.  Připojení k [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] procesu. Další informace najdete v tématu [ladění nasazené webové aplikace](../debugger/debugging-deployed-web-applications.md).  
+4. Připojení k [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] procesu. Další informace najdete v tématu [ladění nasazené webové aplikace](../debugger/debugging-deployed-web-applications.md).  
   
-5.  V aplikaci Internet Explorer klikněte na tlačítko na formuláři.  
+5. V aplikaci Internet Explorer klikněte na tlačítko na formuláři.  
   
      V [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], dostanete k zarážce v Default.aspx.cs, Default.aspx.vb nebo Default.aspx.  
   
-6.  Po dokončení ladění na **ladění** nabídky, klikněte na tlačítko **Zastavit ladění**.  
+6. Po dokončení ladění na **ladění** nabídky, klikněte na tlačítko **Zastavit ladění**.  
   
 ## <a name="see-also"></a>Viz také  
  [Ladění aplikací ASP.NET a AJAX](../debugger/debugging-aspnet-and-ajax-applications.md)

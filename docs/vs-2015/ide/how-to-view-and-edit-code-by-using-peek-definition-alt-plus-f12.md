@@ -9,12 +9,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 24db36d6bb3a431d5ee3848eb8a6a794980f919a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a4c170b533b1eadb60be2ec1ca5d5fe000c5b4d6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54777300"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055728"
 ---
 # <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>Postupy: Zobrazení a úpravy kódu s použitím funkce Náhled definice (Alt + F12)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Můžete použít **definice operace Peek** příkaz k zobrazení a úpravám k�
   
 #### <a name="to-open-a-peek-definition-window"></a>Otevření okna Náhled definice  
   
-1.  Můžete najít **definice operace Peek** tak, že otevřete místní nabídku pro metodu, která chcete prozkoumat. (Klávesnice: Alt+F12)  
+1. Můžete najít **definice operace Peek** tak, že otevřete místní nabídku pro metodu, která chcete prozkoumat. (Klávesnice: Alt+F12)  
   
      Tento obrázek ukazuje **definice operace Peek** okna pro metodu s názvem `Print()`:  
   
@@ -38,33 +38,33 @@ Můžete použít **definice operace Peek** příkaz k zobrazení a úpravám k�
   
      Zobrazí se okno Definice pod `printer.Print(“Hello World!”)` řádku v původním souboru. Okno neskryje žádný kód v původním souboru. Řádky, které následují `printer.Print(“Hello World!”)` volání se zobrazí pod oknem definice.  
   
-2.  Kurzor můžete přesunout na jiné místo v okně definice kódu. Můžete se i nadále pohybovat v původním okně kódu nad nebo pod oknem definice.  
+2. Kurzor můžete přesunout na jiné místo v okně definice kódu. Můžete se i nadále pohybovat v původním okně kódu nad nebo pod oknem definice.  
   
-3.  Můžete zkopírovat řetězec v okně definice a vložit ho do původního kódu. Můžete také přetáhnout řetězec z okna definice do původního kódu, aniž by byl v okně definice odstraněn.  
+3. Můžete zkopírovat řetězec v okně definice a vložit ho do původního kódu. Můžete také přetáhnout řetězec z okna definice do původního kódu, aniž by byl v okně definice odstraněn.  
   
-4.  Můžete zavřít okno Definice výběrem klávesy Esc nebo **zavřete** tlačítko na kartě okna definice.  
+4. Můžete zavřít okno Definice výběrem klávesy Esc nebo **zavřete** tlačítko na kartě okna definice.  
   
 #### <a name="to-open-a-peek-definition-window-from-within-a-peek-definition-window"></a>Otevření okna Náhled definice z okna Náhled definice  
   
--   Pokud už máte **definice operace Peek** otevřené okno, můžete volat **definice operace Peek** znovu na kód v tomto okně. Otevře se jiné okno definice. Vedle karty okna definice se zobrazí sada teček s popisem cesty, která slouží k navigaci mezi okny definice. Popisek tlačítka na každé tečce zobrazuje název souboru a cestu k souboru definice, který tečka přestavuje.  
+- Pokud už máte **definice operace Peek** otevřené okno, můžete volat **definice operace Peek** znovu na kód v tomto okně. Otevře se jiné okno definice. Vedle karty okna definice se zobrazí sada teček s popisem cesty, která slouží k navigaci mezi okny definice. Popisek tlačítka na každé tečce zobrazuje název souboru a cestu k souboru definice, který tečka přestavuje.  
   
      ![Náhled okna nejvyšší úrovně v okně Náhled](../ide/media/peekwithinpeek.png "PeekWithinPeek")  
   
 #### <a name="to-use-peek-definition-with-multiple-results"></a>Použití náhledu definice s více výsledky  
   
--   Pokud používáte **definice operace Peek** na kód, který obsahuje více než jednu definici (například částečné třídy), seznam výsledků se zobrazí napravo od zobrazení definice kódu. Můžete zvolit některý z výsledků v seznamu k zobrazení jeho definice.  
+- Pokud používáte **definice operace Peek** na kód, který obsahuje více než jednu definici (například částečné třídy), seznam výsledků se zobrazí napravo od zobrazení definice kódu. Můžete zvolit některý z výsledků v seznamu k zobrazení jeho definice.  
   
      ![Okno náhledu z více výsledků](../ide/media/peekmultiple.png "PeekMultiple")  
   
 #### <a name="to-edit-inside-the-peek-definition-window"></a>Provádění úprav v okně Náhled definice  
   
--   Při zahájení úprav v **definice operace Peek** okna, soubor, který modifikujte, automaticky se otevře jako samostatná karta v editoru kódu a odráží změny, které jste již provedli. Ujistěte se, rušit a ukládat změny v můžete pokračovat **definice operace Peek** okně a na kartě budou odrážet provedené změny. I když toto okno zavřete bez uložení změn, lze na této kartě provádět, rušit a ukládat změny, což vás přenese přesně tam, kde jste v tomto okně skončili.  
+- Při zahájení úprav v **definice operace Peek** okna, soubor, který modifikujte, automaticky se otevře jako samostatná karta v editoru kódu a odráží změny, které jste již provedli. Ujistěte se, rušit a ukládat změny v můžete pokračovat **definice operace Peek** okně a na kartě budou odrážet provedené změny. I když toto okno zavřete bez uložení změn, lze na této kartě provádět, rušit a ukládat změny, což vás přenese přesně tam, kde jste v tomto okně skončili.  
   
      ![Úpravy v rámci okna Náhled](../ide/media/peekedit.png "PeekEdit")  
   
 #### <a name="to-use-keyboard-shortcuts-for-peek-definition"></a>Použití klávesových zkratek pro náhled definice  
   
--   Můžete použít tyto klávesové zkratky v **definice operace Peek** okno:  
+- Můžete použít tyto klávesové zkratky v **definice operace Peek** okno:  
   
     |Funkce|Klávesová zkratka|  
     |-------------------|-----------------------|  

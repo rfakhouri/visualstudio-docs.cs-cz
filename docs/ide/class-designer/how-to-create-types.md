@@ -17,44 +17,44 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 28d4fbcd5581a2cbc860d90a6ba5557c9156cba7
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: abee206f67aa019476fcd5085b4ff872338b4d1f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55919636"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056026"
 ---
 # <a name="how-to-create-types-by-using-class-designer"></a>Postupy: Vytváření typů pomocí návrháře tříd
 
 K navrhování nových typů pro C# a projekty Visual Basic, vytvořte je v diagramu tříd. Existující typy najdete v tématu [jak: Zobrazení existujících typů](how-to-view-existing-types.md).
 
-##  <a name="CreateType"></a> Vytvořte nový typ
+## <a name="CreateType"></a> Vytvořte nový typ
 
-1.  V **nástrojů**v části **návrhář tříd**, přetáhněte jeden z nich do diagramu tříd:
+1. V **nástrojů**v části **návrhář tříd**, přetáhněte jeden z nich do diagramu tříd:
 
-    -   **Třída** nebo **abstraktní třídy**
+    - **Třída** nebo **abstraktní třídy**
 
-    -   **Výčet**
+    - **Výčet**
 
-    -   **Rozhraní**
+    - **Rozhraní**
 
-    -   **Struktura** (VB) nebo **struktura** (C#)
+    - **Struktura** (VB) nebo **struktura** (C#)
 
-    -   **Delegát**
+    - **Delegát**
 
-    -   **Modul** (pouze VB)
+    - **Modul** (pouze VB)
 
-2.  Pojmenujte typ. Poté vyberte jeho úroveň přístupu.
+2. Pojmenujte typ. Poté vyberte jeho úroveň přístupu.
 
-3.  Vyberte soubor, do kterého chcete přidat počáteční kód pro daný typ:
+3. Vyberte soubor, do kterého chcete přidat počáteční kód pro daný typ:
 
-    -   Chcete-li vytvořit nový soubor a přidat jej do aktuálního projektu, vyberte **vytvořit nový soubor** a název souboru.
+    - Chcete-li vytvořit nový soubor a přidat jej do aktuálního projektu, vyberte **vytvořit nový soubor** a název souboru.
 
-    -   Přidání kódu do existujícího souboru, vyberte **přidat do existujícího souboru**.
+    - Přidání kódu do existujícího souboru, vyberte **přidat do existujícího souboru**.
 
          Pokud má vaše řešení projekt, které sdílejí kód mezi více aplikacemi, můžete přidat nový typ do diagramu tříd v projektu aplikace, ale pouze pokud odpovídající soubor třídy je ve stejném projektu aplikace nebo je ve sdíleném projektu.
 
-4.  Nyní přidejte další položky pro definování typu:
+4. Nyní přidejte další položky pro definování typu:
 
     |||
     |-|-|
@@ -67,7 +67,7 @@ K navrhování nových typů pro C# a projekty Visual Basic, vytvořte je v diag
 
      Zobrazit [vytváření členů](creating-and-configuring-type-members.md#create-members).
 
-##  <a name="CustAttributeType"></a> Použít vlastní atribut na typ
+## <a name="CustAttributeType"></a> Použít vlastní atribut na typ
 
 1. Klikněte na tvar typu v diagramu tříd.
 
@@ -77,7 +77,7 @@ K navrhování nových typů pro C# a projekty Visual Basic, vytvořte je v diag
 
    Vlastní atributy jsou použity k typu.
 
-##  <a name="CustAttributeMember"></a> Použít vlastní atribut na člen typu
+## <a name="CustAttributeMember"></a> Použít vlastní atribut na člen typu
 
 1. Klikněte na název člena ve tvaru jeho typu v diagramu tříd nebo na jeho řádku v okně Detaily třídy.
 

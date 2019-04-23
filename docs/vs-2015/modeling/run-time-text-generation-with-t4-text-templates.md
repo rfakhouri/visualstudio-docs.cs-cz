@@ -14,12 +14,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2290ec08ea64a2775b3e4ced171dbf14399219cb
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 37fa7bafb77c67d29ff9625fa04388f9dd826f8e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867668"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059263"
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>Generování textu za běhu pomocí textových šablon T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,16 +53,16 @@ This report is Company Confidential.
   
 #### <a name="to-create-a-run-time-text-template"></a>Vytvoření šablony textu za běhu  
   
-1.  V Průzkumníku řešení v místní nabídce projektu zvolte **přidat**, **nová položka**.  
+1. V Průzkumníku řešení v místní nabídce projektu zvolte **přidat**, **nová položka**.  
   
-2.  V **přidat novou položku** dialogu **textové šabloně běhu**. (V [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] podívejte se do části **běžné Items\General**.)  
+2. V **přidat novou položku** dialogu **textové šabloně běhu**. (V [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] podívejte se do části **běžné Items\General**.)  
   
-3.  Zadejte název souboru šablony.  
+3. Zadejte název souboru šablony.  
   
     > [!NOTE]
     >  Název souboru šablony se použije jako název třídy v generovaném kódu. Proto by neměl mít mezery ani interpunkci.  
   
-4.  Zvolte **přidat**.  
+4. Zvolte **přidat**.  
   
      Je vytvořen nový soubor, který má příponu **.tt**. Jeho **Custom Tool** je nastavena na **TextTemplatingFilePreprocessor**. Obsahuje následující řádky:  
   
@@ -79,18 +79,18 @@ This report is Company Confidential.
   
 #### <a name="to-convert-an-existing-text-file-to-a-run-time-template"></a>Pro převod existujícího textového souboru do šablony za běhu  
   
-1.  Zahrnutí souboru do vaší [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] projektu. V Průzkumníku řešení v místní nabídce projektu zvolte **přidat**, **existující položku**.  
+1. Zahrnutí souboru do vaší [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] projektu. V Průzkumníku řešení v místní nabídce projektu zvolte **přidat**, **existující položku**.  
   
-2.  Souboru sady **vlastní nástroje** vlastnost **TextTemplatingFilePreprocessor**. V Průzkumníku řešení zvolte v místní nabídce souboru **vlastnosti**.  
+2. Souboru sady **vlastní nástroje** vlastnost **TextTemplatingFilePreprocessor**. V Průzkumníku řešení zvolte v místní nabídce souboru **vlastnosti**.  
   
     > [!NOTE]
     >  Pokud už je vlastnost nastavena, ujistěte se, že je **TextTemplatingFilePreprocessor** a ne **TextTemplatingFileGenerator**. K tomu může dojít, pokud zahrnete soubor, který už má rozšíření **.tt**.  
   
-3.  Změnit příponu názvu souboru na **.tt**. I když tento krok je volitelný, pomůže vám vyhnout se v editoru nesprávné otevření souboru.  
+3. Změnit příponu názvu souboru na **.tt**. I když tento krok je volitelný, pomůže vám vyhnout se v editoru nesprávné otevření souboru.  
   
-4.  Odeberte všechny mezery ani interpunkci z hlavní část názvu souboru. Například by nesprávné "Můj Web Page.tt", ale "MyWebPage.tt" je správná. Název souboru se použije jako název třídy v generovaném kódu.  
+4. Odeberte všechny mezery ani interpunkci z hlavní část názvu souboru. Například by nesprávné "Můj Web Page.tt", ale "MyWebPage.tt" je správná. Název souboru se použije jako název třídy v generovaném kódu.  
   
-5.  Vložte následující řádek na začátku souboru. Pokud pracujete v projektu jazyka Visual Basic, nahraďte "C#" a "VB".  
+5. Vložte následující řádek na začátku souboru. Pokud pracujete v projektu jazyka Visual Basic, nahraďte "C#" a "VB".  
   
      `<#@ template language="C#" #>`  
   

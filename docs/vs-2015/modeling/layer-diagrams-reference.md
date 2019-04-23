@@ -22,12 +22,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 40a8901b60c25e29f038aee634ed54519501a925
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1c9ea6398ca02291bb9dc11693c98336cd33b14b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54803836"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061984"
 ---
 # <a name="layer-diagrams-reference"></a>Diagramy vrstev: Odkaz
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +63,7 @@ V sadě Visual Studio, můžete použít *diagram vrstev* můžete vizualizovat 
 |4|**Komentář**|Slouží k přidání obecné poznámky diagramu nebo prvku v diagramu.|  
 |5|**Odkaz na komentář**|Použijte k propojení komentářů k prvkům v diagramu.|  
   
-##  <a name="Explorer"></a> Průzkumník vrstev  
+## <a name="Explorer"></a> Průzkumník vrstev  
  Můžete propojit s každou vrstvu artefaktů ve vašem řešení, jako jsou projekty, třídy, obory názvů, soubory projektu a jiné části vašeho softwaru. Číslo ve vrstvě zobrazuje počet artefaktů, které jsou spojeny s vrstvou. Ale při čtení počtu artefaktů ve vrstvě mějte na paměti následující:  
   
 - Pokud vrstva odkazuje na artefakt, který obsahuje jiné artefakty, ale vrstva není propojena přímo s jiným artefaktem, pak číslo obsahuje pouze propojené artefakty. Jiné artefakty jsou však zahrnuty do analýzy během ověřování vrstvy.  
@@ -80,7 +80,7 @@ V sadě Visual Studio, můžete použít *diagram vrstev* můžete vizualizovat 
   
 #### <a name="to-examine-the-linked-artifacts"></a>Prozkoumat propojených artefaktů  
   
--   V diagramu vrstev otevřete místní nabídku pro jednu nebo více vrstev a klikněte na tlačítko **zobrazit odkazy**.  
+- V diagramu vrstev otevřete místní nabídku pro jednu nebo více vrstev a klikněte na tlačítko **zobrazit odkazy**.  
   
      **Průzkumník vrstev** otevře a zobrazí artefakty, které jsou propojeny s vrstvami vybrané. **Průzkumník vrstev** má sloupec, který zobrazuje vlastnosti propojení artefaktů.  
   

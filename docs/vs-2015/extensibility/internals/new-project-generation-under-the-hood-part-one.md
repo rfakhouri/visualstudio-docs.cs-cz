@@ -11,29 +11,29 @@ ms.assetid: 66778698-0258-467d-8b8b-c351744510eb
 caps.latest.revision: 30
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e4d28305f8ccd1a6b212b520a7501164be2cc0ee
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6f26c093f09cd5b7b99f00ee69a81be99c769e2e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54777632"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054235"
 ---
-# <a name="new-project-generation-under-the-hood-part-one"></a>Nová generace projektů: Pod pokličkou část 1
+# <a name="new-project-generation-under-the-hood-part-one"></a>Nová generace projektů: Pod kapotou, část 1
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Někdy mluvit o tom, jak vytvořit vlastní typ projektu? Zajímat, co přesně se stane při vytvoření nového projektu? Pojďme provést náhled pod pokličkou a zjistěte, co se skutečně děje.  
   
  Následuje několik úloh, které můžete koordinuje sady Visual Studio:  
   
--   Zobrazí strom všech typů dostupných projektů.  
+- Zobrazí strom všech typů dostupných projektů.  
   
--   Zobrazí seznam šablon aplikací pro každý typ projektu a umožňuje vybrat jednu.  
+- Zobrazí seznam šablon aplikací pro každý typ projektu a umožňuje vybrat jednu.  
   
--   Shromažďuje informace o projektu pro aplikaci, jako je název projektu nebo cesty.  
+- Shromažďuje informace o projektu pro aplikaci, jako je název projektu nebo cesty.  
   
--   Tyto informace se předává do objekt pro vytváření projektu.  
+- Tyto informace se předává do objekt pro vytváření projektu.  
   
--   Vygeneruje položky projektu a složek v aktuálním řešení.  
+- Vygeneruje položky projektu a složek v aktuálním řešení.  
   
 ## <a name="the-new-project-dialog-box"></a>Dialogovém okně Nový projekt  
  Všechno začíná, když vyberete typ projektu pro nový projekt. Začněme tím, že kliknete na **nový projekt** na **souboru** nabídky. **Nový projekt** dialogového okna vypadající podobný následujícímu:  
@@ -92,7 +92,7 @@ devenv /installvstemplates
 ##### <a name="developeractivity"></a>DeveloperActivity  
  Pokud tento podklíč je k dispozici, je řízena pozice kořenový uzel v dialogovém okně nastavení pro vývojáře. Například  
   
- REG_SZ DeveloperActivity VC #  
+ DeveloperActivity REG_SZVC#  
   
  Označuje, že Visual C# bude kořenový uzel Pokud Visual Studio je nastaven pro [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] vývoje. V opačném případě bude podřízený uzel **jiné jazyky**.  
   
@@ -116,11 +116,11 @@ devenv /installvstemplates
   
  Při **nový projekt** otevře se dialogové okno, [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] prochází skrz ProjectTemplates složky a znovu vytvoří jeho strukturu v **typy projektů** stromu se některé změny:  
   
--   Kořenový uzel ve **typy projektů** stromu se určuje podle šablony aplikace.  
+- Kořenový uzel ve **typy projektů** stromu se určuje podle šablony aplikace.  
   
--   Název uzlu může být lokalizována a může obsahovat speciální znaky.  
+- Název uzlu může být lokalizována a může obsahovat speciální znaky.  
   
--   Pořadí řazení lze změnit.  
+- Pořadí řazení lze změnit.  
   
 ##### <a name="finding-the-root-node-for-a-project-type"></a>Pro typ projektu nalezení kořenového uzlu.  
  Když Visual Studio prochází ProjectTemplates složek, otevře všechny soubory ZIP a extrahuje soubory .vstemplate. Soubor .vstemplate používá XML pro popis šablony aplikace. Další informace najdete v tématu [nová generace projektů: Pod pokličkou, část 2](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md).  

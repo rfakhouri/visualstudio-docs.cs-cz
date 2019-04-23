@@ -9,12 +9,12 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cc9ba407e91ddc8125d2836c8e2bb4329d5ad91f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2f4de1b8202f95a76dd6688a8dcfcc786a435aed
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54798555"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059069"
 ---
 # <a name="how-to-include-prerequisites-with-a-clickonce-application"></a>Postupy: Zahrnutí nezbytných součástí s aplikací ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,17 +24,17 @@ Před distribucí požadovaného softwaru se [!INCLUDE[ndptecclick](../includes/
 > [!NOTE]
 >  Přidání instalačního balíčku pro rozhraní .NET Framework naleznete v tématu [Průvodce nasazením rozhraní .NET Framework pro vývojáře](http://msdn.microsoft.com/library/ee942965\(v=vs.110\).aspx).  
   
-##  <a name="Package"></a> K přidání instalačního balíčku pomocí souboru Package.xml  
+## <a name="Package"></a> K přidání instalačního balíčku pomocí souboru Package.xml  
   
-1.  V Průzkumníku souborů otevřete **balíčky** složky.  
+1. V Průzkumníku souborů otevřete **balíčky** složky.  
   
      Ve výchozím nastavení cesta je C:\Program Files\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages na 32bitové verzi systému a C:\Program Files (x86) \Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages v 64bitovém systému.  
   
-2.  Otevřete složku požadovaného softwaru, který chcete přidat a potom otevřete složku jazyka nainstalované verze aplikace [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] (například **en** pro angličtinu).  
+2. Otevřete složku požadovaného softwaru, který chcete přidat a potom otevřete složku jazyka nainstalované verze aplikace [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] (například **en** pro angličtinu).  
   
-3.  V poznámkovém bloku, otevřete **Package.xml** souboru.  
+3. V poznámkovém bloku, otevřete **Package.xml** souboru.  
   
-4.  Vyhledejte **název** element, který obsahuje **http://go.microsoft.com/fwlink**a zkopírujte adresu URL. Zahrnout **LinkID** část.  
+4. Vyhledejte **název** element, který obsahuje **http://go.microsoft.com/fwlink**a zkopírujte adresu URL. Zahrnout **LinkID** část.  
   
     > [!NOTE]
     >  Pokud ne **název** obsahuje element **http://go.microsoft.com/fwlink**, otevřete **Product.xml** soubor v kořenové složce požadovaného softwaru a vyhledejte **fwlink** řetězec.  
@@ -42,11 +42,11 @@ Před distribucí požadovaného softwaru se [!INCLUDE[ndptecclick](../includes/
     > [!IMPORTANT]
     >  Některé požadované softwarové programy mohou mít několik instalačních balíčků (například v 32bitových nebo 64bitových systémech). Pokud je položek víc **název** elementy obsahovat **fwlink**, musí zopakovat zbývající kroky pro každý z nich.  
   
-5.  Vložte adresu URL do adresního řádku prohlížeče a pak po zobrazení výzvy ke spuštění nebo uložení, zvolte **Uložit**.  
+5. Vložte adresu URL do adresního řádku prohlížeče a pak po zobrazení výzvy ke spuštění nebo uložení, zvolte **Uložit**.  
   
      Tento krok stáhne instalační soubor do počítače.  
   
-6.  Zkopírujte soubor do kořenové složky požadovaného softwaru.  
+6. Zkopírujte soubor do kořenové složky požadovaného softwaru.  
   
      V případě požadovaného softwaru Windows Installer 4.5 zkopírujte soubor do složky \Packages\WindowsInstaller4_5.  
   

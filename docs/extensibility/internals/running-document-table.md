@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9c91aa3cbad7fd58fbd819e46f3f3428f68801e9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 093c2e33b8fe3918c280bb68dabda54808cc5e3a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56618936"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060823"
 ---
 # <a name="running-document-table"></a>Spuštění tabulky dokumentů
 Rozhraní IDE udržuje seznam všech aktuálně otevřených dokumentů v vnitřní struktury nazvané spuštěnou tabulku dokumentů (r...). Tento seznam obsahuje všechny otevřené dokumenty v paměti, bez ohledu na to, zda tyto dokumenty jsou právě upravována. Dokument je všechny položky, které se ukládají, včetně souborů v projektu nebo souboru hlavního projektu (například soubor .vcxproj).
@@ -52,9 +52,9 @@ Rozhraní IDE udržuje seznam všech aktuálně otevřených dokumentů v vnitř
 
  Integrované vývojové prostředí rámcový používá také k resurface (přenést do popředí) otevřený dokument, pokud si uživatel vyžádá tohoto dokumentu. Další informace najdete v tématu [zobrazení souborů pomocí příkazu Otevřít soubor](../../extensibility/internals/displaying-files-by-using-the-open-file-command.md). Pokud chcete zjistit, zda je soubor otevřen v r..., proveďte následující.
 
--   Dotaz na dokument moniker (to znamená, že cesta celého dokumentu) a zjistěte, zda je položka otevřít.
+- Dotaz na dokument moniker (to znamená, že cesta celého dokumentu) a zjistěte, zda je položka otevřít.
 
--   ID hierarchie nebo položky můžete klást projektový systém pro celý dokument cestu a potom vyhledat položku v r....
+- ID hierarchie nebo položky můžete klást projektový systém pro celý dokument cestu a potom vyhledat položku v r....
 
 ## <a name="see-also"></a>Viz také
 - [Využití RDT_ReadLock](../../extensibility/internals/rdt-readlock-usage.md)

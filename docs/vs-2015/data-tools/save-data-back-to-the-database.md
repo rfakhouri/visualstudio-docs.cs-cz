@@ -26,12 +26,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b2358e177f049d9eda17bcb54baf6a547605419c
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: b0489dec1c2d6cb3d7559a2bdd029ccab6c3ce5f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59653096"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056806"
 ---
 # <a name="save-data-back-to-the-database"></a>Ukládání dat zpět do databáze
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -249,11 +249,11 @@ Proces aktualizace dvoufázová a roli DataRowVersion v úspěšná aktualizace
   
  Pro druhý řádek, ale `Update` metoda automaticky vyvolá příkaz správná data a odešle ji do databáze. Určité syntaxe příkazu jazyka SQL, závisí na dialekt SQL, který podporuje základnímu úložišti dat. Ale stojí následující obecné vlastnosti přenášená příkazu SQL:  
   
--   Přenášená příkaz jazyka SQL je příkazu UPDATE. Adaptér mohl použít příkazu UPDATE, protože hodnota <xref:System.Data.DataRow.RowState%2A> vlastnost <xref:System.Data.DataRowState>.  
+- Přenášená příkaz jazyka SQL je příkazu UPDATE. Adaptér mohl použít příkazu UPDATE, protože hodnota <xref:System.Data.DataRow.RowState%2A> vlastnost <xref:System.Data.DataRowState>.  
   
--   Přenášená příkaz jazyka SQL obsahuje klauzuli WHERE označující, že je cílem příkazu UPDATE na řádku kde `CustomerID = 'c400'`. Tuto část příkazu SELECT cílový řádek odlišuje od všech ostatních vzhledem k tomu, `CustomerID` je primárním klíčem cílové tabulky. Informace pro klauzuli WHERE je odvozený od původní verze záznamu (`DataRowVersion.Original`), v případě, že jste změnili hodnoty, které jsou nutné k identifikaci řádku.  
+- Přenášená příkaz jazyka SQL obsahuje klauzuli WHERE označující, že je cílem příkazu UPDATE na řádku kde `CustomerID = 'c400'`. Tuto část příkazu SELECT cílový řádek odlišuje od všech ostatních vzhledem k tomu, `CustomerID` je primárním klíčem cílové tabulky. Informace pro klauzuli WHERE je odvozený od původní verze záznamu (`DataRowVersion.Original`), v případě, že jste změnili hodnoty, které jsou nutné k identifikaci řádku.  
   
--   Přenášená příkaz jazyka SQL obsahuje klauzuli SET k nastavení nových hodnot položek upravené sloupce.  
+- Přenášená příkaz jazyka SQL obsahuje klauzuli SET k nastavení nových hodnot položek upravené sloupce.  
   
     > [!NOTE]
     >  Pokud objektu TableAdapter `UpdateCommand` vlastnost byla nastavena na název uložené procedury, adaptér konstruovat příkazu SQL. Místo toho volá uloženou proceduru s příslušnými parametry předané.  

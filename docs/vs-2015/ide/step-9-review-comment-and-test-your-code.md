@@ -9,12 +9,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b03c6c7af9cfedcf7e45a61dba826d99b300ffbe
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f601c9cc404d605d5fb0ddf7ad149a595f77ef77
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54796734"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059861"
 ---
 # <a name="step-9-review-comment-and-test-your-code"></a>Krok 9: Kontrola, okomentování a otestování kódu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ Dále přidáte komentář do vašeho kódu. Komentář je Všimněte si, že ne
   
 ### <a name="to-add-comments"></a>Chcete-li přidat komentáře  
   
-1.  Přidejte následující komentář do kódu.  
+1. Přidejte následující komentář do kódu.  
   
      [!code-csharp[VbExpressTutorial1Step9_10#1](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial1step9_10/cs/form1.cs#1)]
      [!code-vb[VbExpressTutorial1Step9_10#1](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial1step9_10/vb/form1.vb#1)]  
@@ -64,7 +64,7 @@ Dále přidáte komentář do vašeho kódu. Komentář je Všimněte si, že ne
     >   
     >  K aktivování výstřižku při zadávání kódu, zadejte ji a stiskněte klávesu Tabulátor. Mnoho fragmentů se nachází v **IntelliSense** okna, což je důvod, proč zvolit klávesu Tabulátor dvakrát: nejprve k vybrání fragmentu z **IntelliSense** okna a poté ke sdělení rozhraní IDE má fragment použít. (Technologie IntelliSense podporuje `if` fragment kódu, ale ne `ifelse` fragment kódu.)  
   
-2.  Než svůj program spustíte, uložte program výběrem **Uložit vše** tlačítka panelu nástrojů, které se zobrazí takto.  
+2. Než svůj program spustíte, uložte program výběrem **Uložit vše** tlačítka panelu nástrojů, které se zobrazí takto.  
   
      ![Uložit všechny tlačítka panelu nástrojů](../ide/media/express-iconsaveall.png "Express_IconSaveAll")  
 Tlačítko Uložit vše  
@@ -78,19 +78,19 @@ Prohlížeč obrázků
   
 ### <a name="to-test-your-program"></a>Testovat váš program  
   
-1.  Stisknutím klávesy F5 nebo vyberte **spustit ladění** tlačítka panelu nástrojů.  
+1. Stisknutím klávesy F5 nebo vyberte **spustit ladění** tlačítka panelu nástrojů.  
   
-2.  Zvolte **zobrazit obrázek** tlačítko spustit kód, který jste napsali. Nejprve program otevře **otevřít soubor** dialogové okno. Ověřte, že vaše filtry se zobrazí v **soubory typu** rozevírací seznam v dolní části dialogového okna. Potom přejděte na obrázek a otevřete jej. Obvykle lze najít vzorové obrázky dodávané s operačním systémem Windows ve vaší **dokumenty** složky, uvnitř **Moje Obrázky\Příklady obrázků** složky.  
+2. Zvolte **zobrazit obrázek** tlačítko spustit kód, který jste napsali. Nejprve program otevře **otevřít soubor** dialogové okno. Ověřte, že vaše filtry se zobrazí v **soubory typu** rozevírací seznam v dolní části dialogového okna. Potom přejděte na obrázek a otevřete jej. Obvykle lze najít vzorové obrázky dodávané s operačním systémem Windows ve vaší **dokumenty** složky, uvnitř **Moje Obrázky\Příklady obrázků** složky.  
   
     > [!NOTE]
     >  Pokud nevidíte žádné obrázky v **vyberte soubor s obrázkem** dialogové okno, ujistěte se, že "všechny soubory (*.\*)" filtru je vybrali v rozevíracím seznamu v dolní pravé části dialogových oken.  
   
-3.  Načíst obrázek a zobrazí se ve vašem ovládacím prvku PictureBox. Zkuste změnit velikost formuláře přetažením jeho okrajů. Protože máte váš ovládací prvek PictureBox ukotven uvnitř kontejneru TableLayoutPanel, který je sám ukotven uvnitř formuláře, oblast vašeho obrázku změní velikost sebe sama tak, aby je stejně široká jako formulář a vyplní horních 90 procent formuláře. To je důvod, proč jste použili kontejnery TableLayoutPanel a FlowLayoutPanel: Udržují správnou velikost, když ji uživatel změní formuláře.  
+3. Načíst obrázek a zobrazí se ve vašem ovládacím prvku PictureBox. Zkuste změnit velikost formuláře přetažením jeho okrajů. Protože máte váš ovládací prvek PictureBox ukotven uvnitř kontejneru TableLayoutPanel, který je sám ukotven uvnitř formuláře, oblast vašeho obrázku změní velikost sebe sama tak, aby je stejně široká jako formulář a vyplní horních 90 procent formuláře. To je důvod, proč jste použili kontejnery TableLayoutPanel a FlowLayoutPanel: Udržují správnou velikost, když ji uživatel změní formuláře.  
   
      Nyní větší obrázky překračují hranice prohlížeče obrázků. V dalším kroku přidáte kód, aby obrázky pasovaly do okna.  
   
 ### <a name="to-continue-or-review"></a>Chcete-li pokračovat nebo přezkoumat  
   
--   Přechod k dalšímu kroku výukového programu naleznete v tématu [krok 10: Napsat kód pro přídavná tlačítka a zaškrtávací políčko](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md).  
+- Přechod k dalšímu kroku výukového programu naleznete v tématu [krok 10: Napsat kód pro přídavná tlačítka a zaškrtávací políčko](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md).  
   
--   Chcete-li vrátit k předchozímu kroku tutoriálu, přečtěte si téma [krok 8: Napsat kód pro zobrazení obslužné rutiny události obrázku tlačítka](../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md).
+- Chcete-li vrátit k předchozímu kroku tutoriálu, přečtěte si téma [krok 8: Napsat kód pro zobrazení obslužné rutiny události obrázku tlačítka](../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md).

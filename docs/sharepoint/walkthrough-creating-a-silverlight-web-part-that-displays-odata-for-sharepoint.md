@@ -1,5 +1,5 @@
 ---
-title: 'Průvodce: Vytvoření webové části Silverlight, která zobrazuje data OData pro službu SharePoint | Dokumentace Microsoftu'
+title: 'Návod: Vytvoření webové části Silverlight, která zobrazuje data OData pro službu SharePoint | Dokumentace Microsoftu'
 ms.date: 02/22/2017
 ms.topic: conceptual
 f1_keywords:
@@ -12,14 +12,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ee8e4b412422d6f385e39f4fdbf44e151313c0a2
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a331e94ad57fc4ca23dc859415c61609025f799b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605117"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60058249"
 ---
-# <a name="walkthrough-create-a-silverlight-web-part-that-displays-odata-for-sharepoint"></a>Průvodce: Vytvoření webové části Silverlight, která zobrazuje data OData pro službu SharePoint
+# <a name="walkthrough-create-a-silverlight-web-part-that-displays-odata-for-sharepoint"></a>Návod: Vytvoření webové části Silverlight, která zobrazuje data OData pro službu SharePoint
   SharePoint 2010 zveřejňuje data seznamu pomocí protokolu OData. V Sharepointu službu OData je implementováno služba RESTful ListData.svc. Tento návod ukazuje, jak vytvořit webové části služby SharePoint, který je hostitelem aplikace Silverlight. Aplikace programu Silverlight zobrazí informace o seznamu Sharepointu oznámení pomocí ListData.svc. Další informace najdete v tématu [rozhraní REST služby SharePoint Foundation](http://go.microsoft.com/fwlink/?LinkId=225999) a [Open Data Protocol](http://go.microsoft.com/fwlink/?LinkId=226000).
 
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
@@ -27,9 +27,9 @@ ms.locfileid: "56605117"
 ## <a name="prerequisites"></a>Požadavky
  K dokončení tohoto návodu budete potřebovat následující komponenty:
 
--   Podporované vydání systému Microsoft Windows a SharePoint.
+- Podporované vydání systému Microsoft Windows a SharePoint.
 
--   [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)].
+- [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)].
 
 ## <a name="create-a-silverlight-application-and-silverlight-web-part"></a>Vytvoření aplikace Silverlight a webové části Silverlight
  Nejprve vytvořte aplikaci Silverlight v sadě Visual Studio. Silverlight aplikace načte data ze seznamu Sharepointu oznámení pomocí služby ListData.svc.
@@ -68,30 +68,30 @@ ms.locfileid: "56605117"
 
 #### <a name="to-customize-the-silverlight-application"></a>Chcete-li přizpůsobit aplikaci Silverlight
 
-1.  Přidáte odkaz na sestavení do System.Windows.Data v aplikaci Silverlight. Další informace najdete v tématu [jak: Přidání nebo odebrání odkazů pomocí dialogového okna Přidat odkaz](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).
+1. Přidáte odkaz na sestavení do System.Windows.Data v aplikaci Silverlight. Další informace najdete v tématu [jak: Přidání nebo odebrání odkazů pomocí dialogového okna Přidat odkaz](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).
 
-2.  V **Průzkumníka řešení**, otevřete místní nabídku pro **odkazy**a klikněte na tlačítko **přidat odkaz na službu**.
+2. V **Průzkumníka řešení**, otevřete místní nabídku pro **odkazy**a klikněte na tlačítko **přidat odkaz na službu**.
 
     > [!NOTE]
     >  Pokud používáte jazyk Visual Basic, je třeba zvolit **zobrazit všechny soubory** ikonu v horní části **Průzkumníka řešení** zobrazíte **odkazy** uzlu.
 
-3.  V poli Adresa **přidat odkaz na službu** dialogového okna zadejte adresu URL Sharepointového webu, jako například **http://MySPSite**a klikněte na tlačítko **Přejít** tlačítko.
+3. V poli Adresa **přidat odkaz na službu** dialogového okna zadejte adresu URL Sharepointového webu, jako například **http://MySPSite**a klikněte na tlačítko **Přejít** tlačítko.
 
      Když Silverlight vyhledá službu SharePoint OData ListData.svc, nahradí adresu s adresou URL kompletní. V tomto příkladu http://myserver stane http://myserver/_vti_bin/ListData.svc.
 
-4.  Zvolte **OK** tlačítko Přidat odkaz na službu do projektu a použijte výchozí název služby ServiceReference1.
+4. Zvolte **OK** tlačítko Přidat odkaz na službu do projektu a použijte výchozí název služby ServiceReference1.
 
-5.  V panelu nabídky zvolte **sestavení** > **sestavit řešení**.
+5. V panelu nabídky zvolte **sestavení** > **sestavit řešení**.
 
-6.  Přidáte nový zdroj dat do projektu založeného na službě SharePoint. Chcete-li to provést na řádku nabídek, zvolte **zobrazení** > **ostatní Windows** > **zdroje dat**.
+6. Přidáte nový zdroj dat do projektu založeného na službě SharePoint. Chcete-li to provést na řádku nabídek, zvolte **zobrazení** > **ostatní Windows** > **zdroje dat**.
 
      **Zdroje dat** okno zobrazuje všechny dostupné dat seznamu služby SharePoint, jako je například úlohy, oznámení a kalendář.
 
-7.  Přidání dat seznam oznámení do aplikace Silverlight. "Oznámení" můžete přetáhnout z **zdroje dat** okna do návrháře Silverlightu.
+7. Přidání dat seznam oznámení do aplikace Silverlight. "Oznámení" můžete přetáhnout z **zdroje dat** okna do návrháře Silverlightu.
 
      Tím se vytvoří ovládací prvek mřížky vázán na seznam oznámení webu služby SharePoint.
 
-8.  Změnit velikost ovládacího prvku mřížky k vešel na stránku technologie Silverlight.
+8. Změnit velikost ovládacího prvku mřížky k vešel na stránku technologie Silverlight.
 
 9. V souboru MainPage.xaml kódu (*MainPage.xaml.cs* pro jazyk Visual C# nebo *MainPage.xaml.vb* v jazyce Visual Basic), přidejte následující odkazy na obor názvů.
 
@@ -159,6 +159,7 @@ ms.locfileid: "56605117"
         }
     }
     ```
+
      Nezapomeňte nahradit *ServerName* zástupný symbol s názvem serveru, na němž je spuštěna služba SharePoint.
 
 12. Přidejte následující postup zpracování chyb.
@@ -195,34 +196,34 @@ ms.locfileid: "56605117"
 
 #### <a name="to-modify-the-silverlight-web-part"></a>Upravit webovou část Silverlight
 
-1.  Otevřete místní nabídku pro projekt webové části Silverlight (**SLWebPartTest**) a klikněte na tlačítko **vlastnosti**.
+1. Otevřete místní nabídku pro projekt webové části Silverlight (**SLWebPartTest**) a klikněte na tlačítko **vlastnosti**.
 
-2.  V **vlastnosti** okna, vyberte **SharePoint** kartu.
+2. V **vlastnosti** okna, vyberte **SharePoint** kartu.
 
-3.  Pokud ještě není vybraná, vyberte **povolit Silverlight ladění (místo ladění skripty)** zaškrtávací políčko.
+3. Pokud ještě není vybraná, vyberte **povolit Silverlight ladění (místo ladění skripty)** zaškrtávací políčko.
 
-4.  Uložte projekt.
+4. Uložte projekt.
 
 ## <a name="test-the-silverlight-web-part"></a>Testování webové části technologie Silverlight
  Otestujte novou webovou část Silverlight na Sharepointu a ujistěte se, že se data seznamu služby SharePoint zobrazí správně.
 
 #### <a name="to-test-the-silverlight-web-part"></a>K otestování webové části technologie Silverlight
 
-1.  Zvolte **F5** klíč k sestavení a spuštění řešení služby SharePoint.
+1. Zvolte **F5** klíč k sestavení a spuštění řešení služby SharePoint.
 
-2.  V Sharepointu na **Akce webu** nabídce zvolte **nová stránka**.
+2. V Sharepointu na **Akce webu** nabídce zvolte **nová stránka**.
 
-3.  V **nová stránka** dialogové okno, zadejte název, jako například **testu části webu SL**a klikněte na tlačítko **vytvořit** tlačítko.
+3. V **nová stránka** dialogové okno, zadejte název, jako například **testu části webu SL**a klikněte na tlačítko **vytvořit** tlačítko.
 
-4.  V návrháři stránky na **nástroje pro úpravu** kartě **vložit**.
+4. V návrháři stránky na **nástroje pro úpravu** kartě **vložit**.
 
-5.  V pruhu karet, zvolte **webové části**.
+5. V pruhu karet, zvolte **webové části**.
 
-6.  V **kategorie** zvolte **vlastní** složky.
+6. V **kategorie** zvolte **vlastní** složky.
 
-7.  V **webových částí** seznamu, zvolte webové části Silverlight a klikněte na tlačítko **přidat** tlačítko pro přidání webové části do návrháře.
+7. V **webových částí** seznamu, zvolte webové části Silverlight a klikněte na tlačítko **přidat** tlačítko pro přidání webové části do návrháře.
 
-8.  Po provedení všechny nové funkce do webové stránky, který chcete, zvolte **stránky** kartu a klikněte na tlačítko **uložit a zavřít** tlačítko na panelu nástrojů.
+8. Po provedení všechny nové funkce do webové stránky, který chcete, zvolte **stránky** kartu a klikněte na tlačítko **uložit a zavřít** tlačítko na panelu nástrojů.
 
      Webové části Silverlight by měl nyní zobrazování oznámení data z webu služby SharePoint. Ve výchozím nastavení na stránce uložený v seznamu stránky webu služby SharePoint.
 

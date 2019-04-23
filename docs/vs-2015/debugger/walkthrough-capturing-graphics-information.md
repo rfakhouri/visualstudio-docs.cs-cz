@@ -1,5 +1,5 @@
 ---
-title: 'Průvodce: Zaznamenání grafických informací | Dokumentace Microsoftu'
+title: 'Návod: Zaznamenání grafických informací | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -9,32 +9,32 @@ caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5ad2f63bdbbad7d4427454e69806b06937b259b3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 9ebd0453347084d1662c6bc7837fc1e96f498fbd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54775058"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053881"
 ---
-# <a name="walkthrough-capturing-graphics-information"></a>Průvodce: Zaznamenání grafických informací
+# <a name="walkthrough-capturing-graphics-information"></a>Návod: Zaznamenání grafických informací
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Tento návod ukazuje, jak používat [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] diagnostiky grafiky k ručně zachytit informace grafiky z aplikace Direct3D.  
   
  Tento návod ilustruje tyto úkoly:  
   
--   Zachycení diagnostiky grafiky do vaší aplikace  
+- Zachycení diagnostiky grafiky do vaší aplikace  
   
--   Zachycení informací grafiky  
+- Zachycení informací grafiky  
   
 ## <a name="capturing-graphics-information"></a>Zachycení informací grafiky  
  Použití nástrojů diagnostiky grafiky, je nejprve nutné zachytit informace grafiky, která ho využívá. K povolení funkce capture, použijte **spustit diagnostiku** příkaz, který připojí nástroj Diagnostika grafiky do vaší aplikace při spuštění.  
   
 #### <a name="to-enable-the-capture-of-graphics-information-after-a-project-or-solution-is-loaded"></a>Chcete-li povolit zachycení informací grafiky po projekt nebo řešení je načteno  
   
-1.  V [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], načtení souboru projektu nebo řešení pro aplikaci, kterou chcete zachytit informace grafiky z.  
+1. V [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], načtení souboru projektu nebo řešení pro aplikaci, kterou chcete zachytit informace grafiky z.  
   
-2.  Na panelu nástrojů diagnostiky grafiky **spustit diagnostiku**.  
+2. Na panelu nástrojů diagnostiky grafiky **spustit diagnostiku**.  
   
 #### <a name="to-enable-the-capture-of-graphics-information-without-loading-a-project-or-solution"></a>Chcete-li povolit zachycení informací grafiky bez načítání projektu nebo řešení  
   
@@ -59,7 +59,7 @@ Tento návod ukazuje, jak používat [!INCLUDE[vsprvs](../includes/vsprvs-md.md)
 ## <a name="next-steps"></a>Další kroky  
  Tento názorný postup ukázal, jak lze zachytit informace grafiky ručně. V dalším kroku vezměte v úvahu tuto možnost:  
   
--   Zjistěte, jak analyzovat zachycené informace grafiky pomocí nástrojů diagnostiky grafiky. Zobrazit [přehled](../debugger/overview-of-visual-studio-graphics-diagnostics.md).  
+- Zjistěte, jak analyzovat zachycené informace grafiky pomocí nástrojů diagnostiky grafiky. Zobrazit [přehled](../debugger/overview-of-visual-studio-graphics-diagnostics.md).  
   
 ## <a name="see-also"></a>Viz také  
  [Zaznamenání grafických informací](../debugger/capturing-graphics-information.md)

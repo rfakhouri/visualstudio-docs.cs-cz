@@ -9,12 +9,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5156af5f8532879bc748627fb62b0b4b6fba4af2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5e5956414b7d298c5bf198d6e1e7daf3bceb6638
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54776012"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056364"
 ---
 # <a name="step-5-add-enter-event-handlers-for-the-numericupdown-controls"></a>Krok 5: Přidání obslužných rutin událostí pro ovládací prvky NumericUpDown
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,13 +26,13 @@ V páté části tohoto tutoriálu přidáte obslužné rutiny událostí Enter 
   
 ### <a name="to-verify-the-default-behavior"></a>Ověření výchozího chování  
   
-1.  Spusťte program a spusťte kvíz.  
+1. Spusťte program a spusťte kvíz.  
   
      V ovládacím prvku NumericUpDown pro sčítání bliká kurzor vedle **0** (nula).  
   
-2.  Zadejte `3`a Všimněte si, že ovládací prvek zobrazuje **30**.  
+2. Zadejte `3`a Všimněte si, že ovládací prvek zobrazuje **30**.  
   
-3.  Zadejte `5`a Všimněte si, že **350** se zobrazí, ale změny **100** po druhém.  
+3. Zadejte `5`a Všimněte si, že **350** se zobrazí, ale změny **100** po druhém.  
   
      Než vyřešíte tento problém, rozmyslete si, co se děje. Zvažte, proč **0** nezmizela poté zadáte `3` a proč **350** změněn na **100** , ale nikoliv okamžitě.  
   
@@ -40,18 +40,18 @@ V páté části tohoto tutoriálu přidáte obslužné rutiny událostí Enter 
   
 ### <a name="to-add-an-enter-event-handler-for-a-numericupdown-control"></a>Chcete-li přidat obslužné rutiny událostí Enter pro ovládací prvek NumericUpDown  
   
-1.  Zvolte první ovládací prvek NumericUpDown (s názvem "SUMA") ve formuláři a potom v **vlastnosti** dialogového okna zvolte **události** ikonu na panelu nástrojů.  
+1. Zvolte první ovládací prvek NumericUpDown (s názvem "SUMA") ve formuláři a potom v **vlastnosti** dialogového okna zvolte **události** ikonu na panelu nástrojů.  
   
      **Události** kartu **vlastnosti** dialogové okno zobrazí všechny události, které můžete reagovat (zpracovat) pro položku, kterou zvolíte ve formuláři. Vzhledem k tomu, že jste zvolili ovládací prvek NumericUpDown, přísluší všechny uvedené události k němu.  
   
-2.  Zvolte **Enter** události, zadejte `answer_Enter`a potom stiskněte klávesu Enter.  
+2. Zvolte **Enter** události, zadejte `answer_Enter`a potom stiskněte klávesu Enter.  
   
      ![Dialogové okno Vlastnosti](../ide/media/express-answerenter.png "Express_AnswerEnter")  
 Dialogové okno Vlastnosti  
   
      Právě jste přidali obslužné rutiny událostí Enter pro součtový ovládací prvek NumericUpDown a pojmenovali jste obslužnou rutinu **answer_Enter**.  
   
-3.  V metodě pro **answer_Enter** obslužná rutina události, přidejte následující kód.  
+3. V metodě pro **answer_Enter** obslužná rutina události, přidejte následující kód.  
   
      [!code-csharp[VbExpressTutorial3Step5_6#11](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial3step5_6/cs/form1.cs#11)]
      [!code-vb[VbExpressTutorial3Step5_6#11](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial3step5_6/vb/form1.vb#11)]  
@@ -60,18 +60,18 @@ Dialogové okno Vlastnosti
   
      Další řádek ověří, zda byl answerBox úspěšně převeden (přetypován) z objektu na NumericUpDown ovládací prvek. Pokud převod neúspěšný, proměnné by mít hodnotu `null` (C#) nebo `Nothing` (Visual Basic). Třetí řádek získá délku odpovědi, která se zobrazí v ovládacím prvku NumericUpDown, a čtvrtý řádek vybere aktuální hodnotu v ovládacím prvku v závislosti na této délce. Nyní když kvízu vybere ovládací prvek, sady Visual Studio vyvolá tuto událost, což způsobí, že aktuální odpovědi má být vybrán. Jakmile kvízu začne zadávat různé odpovědi, předchozí odpověď je vymazána a nahrazena novou odpovědí.  
   
-4.  V Návrháři Windows Forms vyberte rozdíl ovládacího prvku NumericUpDown.  
+4. V Návrháři Windows Forms vyberte rozdíl ovládacího prvku NumericUpDown.  
   
-5.  V **události** stránce **vlastnosti** dialogové okno, posuňte se dolů **Enter** události, klikněte na šipku rozevíracího seznamu na konci řádku a klikněte na tlačítko `answer_Enter`obslužná rutina události, který jste právě přidali.  
+5. V **události** stránce **vlastnosti** dialogové okno, posuňte se dolů **Enter** události, klikněte na šipku rozevíracího seznamu na konci řádku a klikněte na tlačítko `answer_Enter`obslužná rutina události, který jste právě přidali.  
   
-6.  Opakujte předchozí krok pro násobící a podílové ovládací prvky NumericUpDown.  
+6. Opakujte předchozí krok pro násobící a podílové ovládací prvky NumericUpDown.  
   
-7.  Uložte program a spusťte jej.  
+7. Uložte program a spusťte jej.  
   
      Když vyberete ovládací prvek NumericUpDown, existující hodnota se vybere automaticky a potom vymazána po spuštění zadat jiné hodnoty.  
   
 ### <a name="to-continue-or-review"></a>Chcete-li pokračovat nebo přezkoumat  
   
--   Přechod k dalšímu kroku výukového programu naleznete v tématu [krok 6: Přidejte problém odečtení](../ide/step-6-add-a-subtraction-problem.md).  
+- Přechod k dalšímu kroku výukového programu naleznete v tématu [krok 6: Přidejte problém odečtení](../ide/step-6-add-a-subtraction-problem.md).  
   
--   Chcete-li vrátit k předchozímu kroku tutoriálu, přečtěte si téma [krok 4: Přidejte metodu CheckTheAnswer()](../ide/step-4-add-the-checktheanswer-parens-method.md).
+- Chcete-li vrátit k předchozímu kroku tutoriálu, přečtěte si téma [krok 4: Přidejte metodu CheckTheAnswer()](../ide/step-4-add-the-checktheanswer-parens-method.md).

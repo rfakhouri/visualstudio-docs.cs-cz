@@ -1,5 +1,5 @@
 ---
-title: Sestavování a čištění projektů a řešení
+title: Sestavování a čištění projektů a řešení
 ms.date: 11/04/2016
 ms.technology: vs-ide-compile
 ms.topic: conceptual
@@ -23,12 +23,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e6b970fdda47bab704def8859cb3489bce13bcb
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 73a15890dd35f341760561bbd730795e62b1478b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55925381"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60057872"
 ---
 # <a name="build-and-clean-projects-and-solutions-in-visual-studio"></a>Sestavení a vyčištění projektů a řešení v sadě Visual Studio
 
@@ -42,44 +42,44 @@ Pomocí postupů v tomto tématu můžete vytvářet, znovu sestavit nebo vyčis
 
 ## <a name="to-build-rebuild-or-clean-an-entire-solution"></a>Pokud chcete vytvořit, znovu sestavit nebo vyčištění celé řešení
 
-1.  V **Průzkumníka řešení**, zvolte nebo otevřete řešení.
+1. V **Průzkumníka řešení**, zvolte nebo otevřete řešení.
 
-2.  V panelu nabídky zvolte **sestavení**a pak vyberte jednu z následujících příkazů:
+2. V panelu nabídky zvolte **sestavení**a pak vyberte jednu z následujících příkazů:
 
-    -   Zvolte **sestavení** nebo **sestavit řešení** zkompilovat pouze ty soubory a komponenty, které se změnily od posledního sestavení projektu.
+    - Zvolte **sestavení** nebo **sestavit řešení** zkompilovat pouze ty soubory a komponenty, které se změnily od posledního sestavení projektu.
 
         > [!NOTE]
         > **Sestavení** příkaz bude **sestavit řešení** Pokud řešení obsahuje více než jeden projekt.
 
-    -   Zvolte **znovu sestavit řešení** "clean" řešení a následně vytvořit všechny soubory projektu a komponent.
+    - Zvolte **znovu sestavit řešení** "clean" řešení a následně vytvořit všechny soubory projektu a komponent.
 
-    -   Zvolte **Vyčistit řešení** odstranit všechny pomocných a výstupních souborů. Pouze projekt a součást soubory vlevo nových instancí přechodný a výstupních souborů může pak být sestavena.
+    - Zvolte **Vyčistit řešení** odstranit všechny pomocných a výstupních souborů. Pouze projekt a součást soubory vlevo nových instancí přechodný a výstupních souborů může pak být sestavena.
 
 ## <a name="to-build-or-rebuild-a-single-project"></a>Chcete-li sestavit nebo opětovně sestavit jeden projekt
 
-1.  V **Průzkumníka řešení**, zvolte nebo otevřete projekt.
+1. V **Průzkumníka řešení**, zvolte nebo otevřete projekt.
 
-2.  V panelu nabídky zvolte **sestavení**a klikněte na tlačítko buď **sestavení** *ProjectName* nebo **znovu sestavit** *ProjectName*.
+2. V panelu nabídky zvolte **sestavení**a klikněte na tlačítko buď **sestavení** *ProjectName* nebo **znovu sestavit** *ProjectName*.
 
-    -   Zvolte **sestavení** *ProjectName* sestavit pouze ty součásti, které se změnily od posledního sestavení projektu.
+    - Zvolte **sestavení** *ProjectName* sestavit pouze ty součásti, které se změnily od posledního sestavení projektu.
 
-    -   Zvolte **znovu sestavit** *ProjectName* "clean" projekt a pak vytvářet soubory projektu a všechny součásti projektu.
+    - Zvolte **znovu sestavit** *ProjectName* "clean" projekt a pak vytvářet soubory projektu a všechny součásti projektu.
 
 ## <a name="to-build-only-the-startup-project-and-its-dependencies"></a>Sestavit pouze projekt po spuštění a jeho závislosti
 
-1.  V panelu nabídky zvolte **nástroje** > **možnosti**.
+1. V panelu nabídky zvolte **nástroje** > **možnosti**.
 
-2.  V **možnosti** dialogového okna rozbalte **projekty a řešení** uzel a klikněte na tlačítko **sestavíte a spustíte** stránky.
+2. V **možnosti** dialogového okna rozbalte **projekty a řešení** uzel a klikněte na tlačítko **sestavíte a spustíte** stránky.
 
      **Sestavíte a spustíte** > **projekty a řešení** > **možnosti** zobrazí se dialogové okno.
 
-3.  Vyberte **pouze při spuštění sestavit projekty a závislosti** zaškrtávací políčko.
+3. Vyberte **pouze při spuštění sestavit projekty a závislosti** zaškrtávací políčko.
 
      Když je toto políčko zaškrtnuto, pouze aktuální spouštěcí projekt a jeho závislosti jsou vytvořeny při proveďte některý z následujících kroků:
 
-    -   V panelu nabídky zvolte **ladění** > **Start** (**F5**).
+    - V panelu nabídky zvolte **ladění** > **Start** (**F5**).
 
-    -   V panelu nabídky zvolte **sestavení** > **sestavit řešení** (**Ctrl**+**Shift** +  **B**).
+    - V panelu nabídky zvolte **sestavení** > **sestavit řešení** (**Ctrl**+**Shift** +  **B**).
 
     Když toto políčko zaškrtnuté, všechny projekty, jejich závislosti a soubory řešení jsou vytvořeny při spuštění některou z předchozích příkazů. Ve výchozím nastavení je toto políčko zaškrtnuté.
 

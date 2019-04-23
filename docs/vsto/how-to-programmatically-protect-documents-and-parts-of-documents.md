@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2c7d284e116f72b5f1c19017cf234ea42832c202
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: ac93b71d67bc842b2498fbd4d017b17d9ddcf00c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56613411"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60062601"
 ---
 # <a name="how-to-programmatically-protect-documents-and-parts-of-documents"></a>Postupy: Zamykání dokumentů a částí dokumentů
   Přidat ochranu do dokumentů aplikace Microsoft Office Word zabráníte uživatelům provádět veškeré úpravy dokumentu.
@@ -37,19 +37,19 @@ ms.locfileid: "56613411"
 
 ### <a name="to-protect-a-document-that-is-part-of-a-document-level-customization"></a>K ochraně dokumentu, který je součástí přizpůsobení na úrovni dokumentu
 
-1.  Volání <xref:Microsoft.Office.Tools.Word.Document.Protect%2A> metodu `ThisDocument` třídu ve vašem projektu.
+1. Volání <xref:Microsoft.Office.Tools.Word.Document.Protect%2A> metodu `ThisDocument` třídu ve vašem projektu.
 
      [!code-vb[Trin_VstcoreWordAutomation#111](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#111)]
      [!code-csharp[Trin_VstcoreWordAutomation#111](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#111)]
 
 ### <a name="to-exclude-a-bookmark-control-from-document-protection"></a>Ovládací prvek bookmark vyloučit z ochrany dokumentu
 
-1.  Chránit pomocí celý dokument <xref:Microsoft.Office.Tools.Word.Document.Protect%2A> metody.
+1. Chránit pomocí celý dokument <xref:Microsoft.Office.Tools.Word.Document.Protect%2A> metody.
 
      [!code-vb[Trin_VstcoreWordAutomation#111](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#111)]
      [!code-csharp[Trin_VstcoreWordAutomation#111](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#111)]
 
-2.  Vyloučit `Bookmark1` z ochrany dokumentu.
+2. Vyloučit `Bookmark1` z ochrany dokumentu.
 
      [!code-vb[Trin_VstcoreWordAutomation#112](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#112)]
      [!code-csharp[Trin_VstcoreWordAutomation#112](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#112)]
@@ -61,7 +61,7 @@ ms.locfileid: "56613411"
 
 ### <a name="to-protect-a-document-by-using-an-application-level-vsto-add-in"></a>K ochraně dokumentu pomocí úrovni aplikace doplňku VSTO
 
-1.  Volání <xref:Microsoft.Office.Interop.Word._Document.Protect%2A> metodu <xref:Microsoft.Office.Interop.Word.Document> , který chcete chránit.
+1. Volání <xref:Microsoft.Office.Interop.Word._Document.Protect%2A> metodu <xref:Microsoft.Office.Interop.Word.Document> , který chcete chránit.
 
      Následující příklad kódu chrání aktivní dokument. Pokud chcete použít tento příklad kódu, spusťte jej z `ThisAddIn` třídu ve vašem projektu.
 

@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8ced873db6c1a3c9adbe40625ed44817eb6703d9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 460b948ea7b5bace1b91143d46a4ca2f4c823608
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614893"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043455"
 ---
 # <a name="saving-a-standard-document"></a>Uložení standardního dokumentu
 Prostředí zpracovává uložit, uložit jako a uložte všechny příkazy. Když uživatel vybere **Uložit**, **uložit jako**, nebo **Uložit vše** z **souboru** nabídky nebo zavření řešení, což vede k  **Uložit vše**, spustí následující proces.
@@ -50,11 +50,11 @@ Prostředí zpracovává uložit, uložit jako a uložte všechny příkazy. Kdy
 
 #### <a name="to-change-file-ownership-to-the-miscellaneous-files-project"></a>Chcete-li změnit vlastnictví souborů ostatních souborech projektu
 
-1.  Služba pro dotazování <xref:Microsoft.VisualStudio.Shell.Interop.SVsExternalFilesManager> rozhraní.
+1. Služba pro dotazování <xref:Microsoft.VisualStudio.Shell.Interop.SVsExternalFilesManager> rozhraní.
 
      Ukazatel na <xref:Microsoft.VisualStudio.Shell.Interop.IVsExternalFilesManager2> je vrácena.
 
-2.  Volání <xref:Microsoft.VisualStudio.Shell.Interop.IVsExternalFilesManager2.TransferDocument%2A> (`pszMkDocumentNew`, `punkWindowFrame`) způsob přenosu dokumentu do nové hierarchie. Provedení příkazu Uložit jako hierarchii volá tuto metodu.
+2. Volání <xref:Microsoft.VisualStudio.Shell.Interop.IVsExternalFilesManager2.TransferDocument%2A> (`pszMkDocumentNew`, `punkWindowFrame`) způsob přenosu dokumentu do nové hierarchie. Provedení příkazu Uložit jako hierarchii volá tuto metodu.
 
 ## <a name="see-also"></a>Viz také
 - <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>

@@ -9,12 +9,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dfbaf72f39bd4a61458abc1e2f75572e210c6cfe
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 4a06ad526cd16335a664ae833f61cb0052a215fc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54786007"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054936"
 ---
 # <a name="customizing-copy-behavior"></a>Přizpůsobení chování kopírování
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -217,7 +217,7 @@ partial class MyDslClipboardCommandSet // EDIT NAME
  **Umožní uživateli přetáhnout prvky.**  
  Zobrazit [jak: Přidání obslužné rutiny operace přetažení myší](../modeling/how-to-add-a-drag-and-drop-handler.md).  
   
-##  <a name="customizeLinks"></a> Přizpůsobení chování kopírování propojení  
+## <a name="customizeLinks"></a> Přizpůsobení chování kopírování propojení  
  Když uživatel zkopíruje element, standardní chování je, že všechny vložené prvky jsou zkopírovány také. Standardní chování kopírování můžete upravit. V definici DSL vybrat roli na jedné straně relace a okno sady vlastností **šíří kopírování** hodnotu.  
   
  ![Rozšíří kopie vlastností doménová role](../modeling/media/dslpropagatescopy.png "DslPropagatesCopy")  
@@ -291,9 +291,9 @@ using Microsoft.VisualStudio.Modeling.Diagrams.ExtensionEnablement;
   
  Ve své třídě ElementOperations definujte dvě metody:  
   
--   `CanMerge(ModelElement targetElement, System.Windows.Forms.IDataObject data)` který určuje, zda source element můžete přetahovat do tvar target, konektoru nebo diagramu.  
+- `CanMerge(ModelElement targetElement, System.Windows.Forms.IDataObject data)` který určuje, zda source element můžete přetahovat do tvar target, konektoru nebo diagramu.  
   
--   `MergeElementGroupPrototype(ModelElement targetElement, ElementGroupPrototype sourcePrototype)` zahrnující prvek zdroje do cíle.  
+- `MergeElementGroupPrototype(ModelElement targetElement, ElementGroupPrototype sourcePrototype)` zahrnující prvek zdroje do cíle.  
   
 ### <a name="canmerge"></a>CanMerge()  
  `CanMerge()` je volána k určení zpětnou vazbu, která by se měly provádět uživateli při pohybu myši v diagramu. Parametry metody jsou elementu nad tím, které je najedete myší a údaje o zdroji, odkud byla provedena operace přetažení. Uživatel můžete přetáhnout z libovolné místo na obrazovce. Zdrojový objekt proto může být mnoho různých typů a je možné serializovat v různých formátech. Pokud je zdroj modelu DSL nebo UML, parametr data je serializace <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype>. Operace přetažení, kopírování a sady nástrojů znázornit ElementGroupPrototypes fragmenty modelů.  

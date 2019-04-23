@@ -13,12 +13,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7aae4ee1006a7a329bc8ad5ca9f93b756e309458
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6211e33f8ef14687df3c70841ef61a2f25d10457
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54760799"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60062396"
 ---
 # <a name="customizing-file-storage-and-xml-serialization"></a>Přizpůsobení souborového úložiště a serializace XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,17 +35,17 @@ Když uživatel uloží instanci, nebo *modelu*, jazyka specifického pro domén
 ## <a name="model-and-diagram-files"></a>Model a soubory diagramu  
  Každý model je obvykle uložen ve dvou souborech:  
   
--   Soubor modelu má název například **Model1.mydsl**. Ukládá prvků modelu a vztahy a jejich vlastnosti. Přípona souboru, jako **.mydsl** závisí **FileExtension** vlastnost **Editor** uzlu v definici DSL.  
+- Soubor modelu má název například **Model1.mydsl**. Ukládá prvků modelu a vztahy a jejich vlastnosti. Přípona souboru, jako **.mydsl** závisí **FileExtension** vlastnost **Editor** uzlu v definici DSL.  
   
--   Soubor diagramu má název například **Model1.mydsl.diagram**. Ukládají se tvary, konektory a jejich pozice, barvy, tlouštěk čáry a další podrobnosti o vzhled diagramu. Pokud uživatel odstraní **.diagram** souboru, důležité informace v modelu nedojde ke ztrátě. Rozložení diagramu je ztraceny. Při otevření souboru modelu výchozí sadu obrazců a konektorů se vytvoří.  
+- Soubor diagramu má název například **Model1.mydsl.diagram**. Ukládají se tvary, konektory a jejich pozice, barvy, tlouštěk čáry a další podrobnosti o vzhled diagramu. Pokud uživatel odstraní **.diagram** souboru, důležité informace v modelu nedojde ke ztrátě. Rozložení diagramu je ztraceny. Při otevření souboru modelu výchozí sadu obrazců a konektorů se vytvoří.  
   
 #### <a name="to-change-the-file-extension-of-a-dsl"></a>Chcete-li změnit příponu souboru DSL  
   
-1.  Otevřete definici DSL. V Průzkumníku DSL klikněte na uzel Editor.  
+1. Otevřete definici DSL. V Průzkumníku DSL klikněte na uzel Editor.  
   
-2.  V okně Vlastnosti upravte **FileExtension** vlastnost. Nezahrnují počáteční "." z přípony názvu souboru.  
+2. V okně Vlastnosti upravte **FileExtension** vlastnost. Nezahrnují počáteční "." z přípony názvu souboru.  
   
-3.  V Průzkumníku řešení, změňte název soubory šablon dvou položek v **DslPackage\ProjectItemTemplates**. Tyto soubory obsahují názvy, které tento formát:  
+3. V Průzkumníku řešení, změňte název soubory šablon dvou položek v **DslPackage\ProjectItemTemplates**. Tyto soubory obsahují názvy, které tento formát:  
   
      `myDsl.diagram`  
   
@@ -81,17 +81,17 @@ Když uživatel uloží instanci, nebo *modelu*, jazyka specifického pro domén
   
  Všimněte si následujících o serializovaný model:  
   
--   Každý uzel XML má název, který je stejný jako název třídy domény, s tím rozdílem, že je počáteční písmeno malá písmena. Například `familyTreeModel` a `person`.  
+- Každý uzel XML má název, který je stejný jako název třídy domény, s tím rozdílem, že je počáteční písmeno malá písmena. Například `familyTreeModel` a `person`.  
   
--   Vlastnosti domény, jako je název a roknarozeni serializují jako atributy v uzlů XML. Znovu počáteční znaky názvu vlastnosti je převeden na malá písmena.  
+- Vlastnosti domény, jako je název a roknarozeni serializují jako atributy v uzlů XML. Znovu počáteční znaky názvu vlastnosti je převeden na malá písmena.  
   
--   Každý vztah je serializován jako uzel XML vnořit do zdroje konci vztahu. Uzel má stejný název jako vlastnost zdrojové role, ale s počáteční znak malé písmeno.  
+- Každý vztah je serializován jako uzel XML vnořit do zdroje konci vztahu. Uzel má stejný název jako vlastnost zdrojové role, ale s počáteční znak malé písmeno.  
   
      Například v definici DSL, která se nazývá role **lidé** pochází na **FamilyTree** třídy.  V souboru XML, to představuje uzel s názvem `people` vnořené uvnitř `familyTreeModel` uzlu.  
   
--   Konci každý vztah obsažení serializován jako uzel vnořen v souladu s relace. Například `people` uzel obsahuje několik `person` uzly.  
+- Konci každý vztah obsažení serializován jako uzel vnořen v souladu s relace. Například `people` uzel obsahuje několik `person` uzly.  
   
--   Cílový element end relace každý odkaz je serializován jako *moniker*, který kóduje odkaz na target element.  
+- Cílový element end relace každý odkaz je serializován jako *moniker*, který kóduje odkaz na target element.  
   
      Třeba v části `person` uzlu, může být `children` vztah. Tento uzel obsahuje monikery, například:  
   
@@ -125,33 +125,33 @@ Když uživatel uloží instanci, nebo *modelu*, jazyka specifického pro domén
   
 #### <a name="to-set-a-domain-class-to-be-referenced-by-id-monikers"></a>Chcete-li nastavit doménová třída může odkazovat monikery ID  
   
-1.  Ujistěte se, že **je klíčem Monikeru** je `false` pro každou doménovou vlastnost ve třídě a její základní třídy.  
+1. Ujistěte se, že **je klíčem Monikeru** je `false` pro každou doménovou vlastnost ve třídě a její základní třídy.  
   
-    1.  V okně Průzkumník DSL, rozbalte **Data Behavior\Class serializace Xml\\**_\<doménová třída >_**\Element Data**.  
+    1. V okně Průzkumník DSL, rozbalte **Data Behavior\Class serializace Xml\\**_\<doménová třída >_**\Element Data**.  
   
-    2.  Ověřte, že **je klíčem Monikeru** je `false` pro každou doménovou vlastnost.  
+    2. Ověřte, že **je klíčem Monikeru** je `false` pro každou doménovou vlastnost.  
   
-    3.  Pokud má doménová třída základní třídu, opakujte postup v dané třídě.  
+    3. Pokud má doménová třída základní třídu, opakujte postup v dané třídě.  
   
-2.  Nastavte **serializovat Id**  =  `true` pro doménovou třídu.  
+2. Nastavte **serializovat Id**  =  `true` pro doménovou třídu.  
   
      Tato vlastnost najdete v části **chování serializace Xml**.  
   
 #### <a name="to-set-a-domain-class-to-be-referenced-by-qualified-key-monikers"></a>Chcete-li nastavit doménová třída může odkazovat kvalifikovaný zástupných názvů klíčů  
   
--   Nastavte **je klíčem Monikeru** doménovou vlastnost existující doménové třídy. Typ vlastnosti musí být `string`.  
+- Nastavte **je klíčem Monikeru** doménovou vlastnost existující doménové třídy. Typ vlastnosti musí být `string`.  
   
-    1.  V okně Průzkumník DSL, rozbalte **Data Behavior\Class serializace Xml\\**_\<doménová třída >_**\Element Data**a pak vyberte doménová vlastnost.  
+    1. V okně Průzkumník DSL, rozbalte **Data Behavior\Class serializace Xml\\**_\<doménová třída >_**\Element Data**a pak vyberte doménová vlastnost.  
   
-    2.  V okně Vlastnosti nastavte **je klíčem Monikeru** k `true`.  
+    2. V okně Vlastnosti nastavte **je klíčem Monikeru** k `true`.  
   
--   \- nebo –  
+- \- nebo –  
   
      Vytvořit novou pomocí třídy domény **doménovou třídu s názvem** nástroj.  
   
      Tento nástroj vytvoří novou třídu, která má doménová vlastnost, která volá název. **Je název elementu** a **je klíčem Monikeru** vlastnosti této vlastnosti domény jsou inicializovány na hodnotu `true`.  
   
--   \- nebo –  
+- \- nebo –  
   
      Vytvořte vztah dědičnosti z třídy domény na jinou třídu, která má klíčovou vlastnost moniker.  
   
@@ -160,11 +160,11 @@ Když uživatel uloží instanci, nebo *modelu*, jazyka specifického pro domén
   
  Existuje několik metod, které se vyhnout této situaci:  
   
--   Nastavte **je název elementu**  =  `true` pro vlastnost klíče domény. Vyberte vlastnost domény v definici DSL diagramu a potom v okně Vlastnosti nastavte hodnotu.  
+- Nastavte **je název elementu**  =  `true` pro vlastnost klíče domény. Vyberte vlastnost domény v definici DSL diagramu a potom v okně Vlastnosti nastavte hodnotu.  
   
      Když uživatel vytvoří novou instanci třídy, tato hodnota způsobí, že vlastnost domain pro automaticky přiřadit jinou hodnotu. Výchozí chování přidá číslo na konec názvu třídy. Přesto uživateli možnost měnit název duplicitní, ale je v případě, když uživatel není nastavená hodnota před uložením modelu.  
   
--   Povolení ověřování pro DSL. V Průzkumníku DSL vyberte Editor\Validation a nastavte **používá...**  vlastností `true`.  
+- Povolení ověřování pro DSL. V Průzkumníku DSL vyberte Editor\Validation a nastavte **používá...**  vlastností `true`.  
   
      Je automaticky generovaných ověřování, která kontroluje pro metodu nejednoznačnosti. Metoda je `Load` ověření kategorie. Tím je zajištěno, že uživatel, zobrazí upozornění, že nemusí být možné znovuotevření daného souboru.  
   
@@ -204,7 +204,7 @@ Když uživatel uloží instanci, nebo *modelu*, jazyka specifického pro domén
 ## <a name="customizing-the-structure-of-the-xml"></a>Přizpůsobení struktury XML  
  Chcete-li provést následující úpravy, rozbalte **chování serializace Xml** uzel v Průzkumník DSL. V části doménovou třídou rozbalte uzel Data elementu zobrazíte seznam vlastností a vztahů, které pocházejí na tuto třídu. Vyberte vztah a upravit jeho možnosti v okně Vlastnosti.  
   
--   Nastavte **vynechat Element** chcete vynechat, nechte zdrojový uzel role, byste museli opustit prostý seznam cílových elementů na hodnotu true. Neměli nastavte tuto možnost, pokud existuje více než jeden vztah mezi zdrojové a cílové třídy.  
+- Nastavte **vynechat Element** chcete vynechat, nechte zdrojový uzel role, byste museli opustit prostý seznam cílových elementů na hodnotu true. Neměli nastavte tuto možnost, pokud existuje více než jeden vztah mezi zdrojové a cílové třídy.  
   
     ```  
   
@@ -218,7 +218,7 @@ Když uživatel uloží instanci, nebo *modelu*, jazyka specifického pro domén
   
     ```  
   
--   Nastavte **použijte úplný formát** vložit cílové uzly do uzlů představujících instance relace. Tato možnost je nastavena automaticky při přidání vlastnosti domény do doménového vztahu.  
+- Nastavte **použijte úplný formát** vložit cílové uzly do uzlů představujících instance relace. Tato možnost je nastavena automaticky při přidání vlastnosti domény do doménového vztahu.  
   
     ```  
   
@@ -236,7 +236,7 @@ Když uživatel uloží instanci, nebo *modelu*, jazyka specifického pro domén
   
     ```  
   
--   Nastavte **reprezentace** = **Element** mít doménovou vlastnost uložený jako prvek místo jako hodnotu atributu.  
+- Nastavte **reprezentace** = **Element** mít doménovou vlastnost uložený jako prvek místo jako hodnotu atributu.  
   
     ```  
     <person name="Elizabeth I" birthYear="1533">  
@@ -244,7 +244,7 @@ Když uživatel uloží instanci, nebo *modelu*, jazyka specifického pro domén
     </person>  
     ```  
   
--   Změna pořadí serializovat atributy a vztahy, klikněte pravým tlačítkem na položku v rámci elementu Data a použít **nahoru** nebo **přesunout dolů** příkazů nabídky.  
+- Změna pořadí serializovat atributy a vztahy, klikněte pravým tlačítkem na položku v rámci elementu Data a použít **nahoru** nebo **přesunout dolů** příkazů nabídky.  
   
 ## <a name="major-customization-using-program-code"></a>Hlavní přizpůsobení pomocí kódu programu  
  Můžete nahradit části nebo všechny algoritmy serializace.  
@@ -253,13 +253,13 @@ Když uživatel uloží instanci, nebo *modelu*, jazyka specifického pro domén
   
 #### <a name="to-customize-the-serialization-of-a-particular-class"></a>K přizpůsobení serializaci určité třídy  
   
-1.  Nastavte **je vlastní** v uzlu pro danou třídu v rámci **chování serializace Xml**.  
+1. Nastavte **je vlastní** v uzlu pro danou třídu v rámci **chování serializace Xml**.  
   
-2.  Transformovat všechny šablony, sestavte řešení a zjistěte případné chyby kompilace. Jaký kód je nutné zadat vysvětlují komentáře u každé chyby.  
+2. Transformovat všechny šablony, sestavte řešení a zjistěte případné chyby kompilace. Jaký kód je nutné zadat vysvětlují komentáře u každé chyby.  
   
 #### <a name="to-provide-your-own-serialization-for-the-whole-model"></a>Chcete-li zadat vlastní serializace pro celý model  
   
-1.  Přepište metody v Dsl\GeneratedCode\SerializationHelper.cs  
+1. Přepište metody v Dsl\GeneratedCode\SerializationHelper.cs  
   
 ## <a name="options-in-xml-serialization-behavior"></a>Možnosti v chování serializace Xml  
  V Průzkumníku DSL uzel chování serializace Xml obsahuje podřízený uzel pro každou doménovou třídu, relace, tvar, konektor a diagram tříd. Pod každým z těchto uzlů je uveden seznam vlastností a vztahů zdroje na prvku. Vztahy jsou reprezentovány ve své vlastní vpravo a pod jejich zdrojové třídy.  

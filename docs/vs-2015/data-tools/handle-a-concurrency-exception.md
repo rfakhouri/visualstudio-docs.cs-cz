@@ -21,12 +21,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c18b34cd3a38f41279885658a8d354ff6f9e8fe7
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 7ee82187adac74f90b6f5cb8485c68452d8329b0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59650171"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060707"
 ---
 # <a name="handle-a-concurrency-exception"></a>Zpracování výjimky souběžnosti
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,24 +35,24 @@ Výjimky souběžnosti (<xref:System.Data.DBConcurrencyException>) jsou vyvolán
   
  Tento názorný postup vás provede následující postup:  
   
-1.  Vytvořte nový **aplikace Windows** projektu.  
+1. Vytvořte nový **aplikace Windows** projektu.  
   
-2.  Vytvořit novou datovou sadu založenou na Northwind `Customers` tabulky.  
+2. Vytvořit novou datovou sadu založenou na Northwind `Customers` tabulky.  
   
-3.  Vytvořit formulář s <xref:System.Windows.Forms.DataGridView> zobrazit data.  
+3. Vytvořit formulář s <xref:System.Windows.Forms.DataGridView> zobrazit data.  
   
-4.  Vyplnit data z datové sady `Customers` tabulky v databázi Northwind.  
+4. Vyplnit data z datové sady `Customers` tabulky v databázi Northwind.  
   
-5.  Použití [nástroje Visual Database Tools](http://msdn.microsoft.com/6b145922-2f00-47db-befc-bf351b4809a1) v sadě Visual Studio pro přímý přístup k `Customers` tabulka dat a změňte záznam.  
+5. Použití [nástroje Visual Database Tools](http://msdn.microsoft.com/6b145922-2f00-47db-befc-bf351b4809a1) v sadě Visual Studio pro přímý přístup k `Customers` tabulka dat a změňte záznam.  
   
-6.  Změnit stejného záznamu na jinou hodnotu, aktualizovat datovou sadu a pokusí se zapsat změny do databáze, což vede k chybě souběžnosti vyvolaných.  
+6. Změnit stejného záznamu na jinou hodnotu, aktualizovat datovou sadu a pokusí se zapsat změny do databáze, což vede k chybě souběžnosti vyvolaných.  
   
-7.  Zachytávat chyby a pak zobrazit různé verze záznamu, které uživateli umožňují určit, zda chcete pokračovat a aktualizaci databáze, nebo také aktualizaci zrušit.  
+7. Zachytávat chyby a pak zobrazit různé verze záznamu, které uživateli umožňují určit, zda chcete pokračovat a aktualizaci databáze, nebo také aktualizaci zrušit.  
   
 ## <a name="prerequisites"></a>Požadavky  
  Pokud chcete dokončit tento návod, potřebujete:  
   
--   Přístup k ukázkové databázi Northwind pomocí oprávnění k provedení aktualizace.
+- Přístup k ukázkové databázi Northwind pomocí oprávnění k provedení aktualizace.
   
 > [!NOTE]
 >  Dialogová okna a příkazy nabídek, které se zobrazí může lišit od těch popsaných v nápovědě v závislosti na aktivních nastaveních nebo edici, kterou používáte. Chcete-li změnit nastavení, zvolte **nastavení importu a exportu** na **nástroje** nabídky. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
@@ -62,13 +62,13 @@ Výjimky souběžnosti (<xref:System.Data.DBConcurrencyException>) jsou vyvolán
   
 #### <a name="to-create-a-new-windows-application-project"></a>Chcete-li vytvořit nový projekt aplikace Windows  
   
-1.  Na **souboru** nabídky, vytvořte nový projekt.  
+1. Na **souboru** nabídky, vytvořte nový projekt.  
   
-2.  V **typy projektů** podokně, vyberte programovací jazyk.  
+2. V **typy projektů** podokně, vyberte programovací jazyk.  
   
-3.  V **šablony** vyberte **aplikace Windows**.  
+3. V **šablony** vyberte **aplikace Windows**.  
   
-4.  Pojmenujte projekt `ConcurrencyWalkthrough`a pak vyberte **OK**.  
+4. Pojmenujte projekt `ConcurrencyWalkthrough`a pak vyberte **OK**.  
   
      Visual Studio přidá projekt do **Průzkumníka řešení** a zobrazí nový formulář v návrháři.  
   
@@ -77,35 +77,35 @@ Výjimky souběžnosti (<xref:System.Data.DBConcurrencyException>) jsou vyvolán
   
 #### <a name="to-create-the-northwinddataset"></a>Chcete-li vytvořit NorthwindDataSet  
   
-1.  Na **Data** nabídce zvolte **zdroje přidat nová Data**.  
+1. Na **Data** nabídce zvolte **zdroje přidat nová Data**.  
   
      [Průvodce konfigurací zdroje dat](http://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f) otevře.  
   
-2.  Na **zvolte typ zdroje dat**obrazovky, vyberte **databáze**.  
+2. Na **zvolte typ zdroje dat**obrazovky, vyberte **databáze**.  
   
-3.  Vyberte připojení ze seznamu dostupných připojení k ukázkové databázi Northwind. Pokud připojení není k dispozici v seznamu připojení, vyberte**nové připojení**  
+3. Vyberte připojení ze seznamu dostupných připojení k ukázkové databázi Northwind. Pokud připojení není k dispozici v seznamu připojení, vyberte**nové připojení**  
   
     > [!NOTE]
     >  Pokud se připojujete k místní databázový soubor, vyberte **ne** když se zobrazí výzva, pokud byste chtěli přidat soubor do projektu.  
   
-4.  Na **uložit připojovací řetězec do konfiguračního souboru aplikace**obrazovky, vyberte **Další**.  
+4. Na **uložit připojovací řetězec do konfiguračního souboru aplikace**obrazovky, vyberte **Další**.  
   
-5.  Rozbalte **tabulky** uzel a vyberte `Customers` tabulky. Výchozí název pro tuto datovou sadu by měl být `NorthwindDataSet`.  
+5. Rozbalte **tabulky** uzel a vyberte `Customers` tabulky. Výchozí název pro tuto datovou sadu by měl být `NorthwindDataSet`.  
   
-6.  Vyberte **Dokončit** na datovou sadu přidat do projektu.  
+6. Vyberte **Dokončit** na datovou sadu přidat do projektu.  
   
 ## <a name="create-a-data-bound-datagridview-control"></a>Vytvoření ovládacího prvku DataGridView vázaný na data  
  V této části vytvoříte <xref:System.Windows.Forms.DataGridView> přetažením **zákazníkům** položky **zdroje dat** okna do formuláře Windows.  
   
 #### <a name="to-create-a-datagridview-control-that-is-bound-to-the-customers-table"></a>Vytvoření ovládacího prvku DataGridView, který je vázán k tabulce Zákazníci  
   
-1.  Na **Data** nabídce zvolte **zobrazit zdroje dat** otevřít **okna zdroje dat**.  
+1. Na **Data** nabídce zvolte **zobrazit zdroje dat** otevřít **okna zdroje dat**.  
   
-2.  V **zdroje dat** okna, rozbalte **NorthwindDataSet** uzlu a pak vyberte **zákazníkům** tabulky.  
+2. V **zdroje dat** okna, rozbalte **NorthwindDataSet** uzlu a pak vyberte **zákazníkům** tabulky.  
   
-3.  Vyberte šipku dolů na uzel tabulky a pak vyberte **DataGridView** v rozevíracím seznamu.  
+3. Vyberte šipku dolů na uzel tabulky a pak vyberte **DataGridView** v rozevíracím seznamu.  
   
-4.  Přetáhněte tabulku na prázdnou oblast formuláře.  
+4. Přetáhněte tabulku na prázdnou oblast formuláře.  
   
      A <xref:System.Windows.Forms.DataGridView> ovládací prvek s názvem `CustomersDataGridView` a <xref:System.Windows.Forms.BindingNavigator> s názvem `CustomersBindingNavigator` jsou přidány do formuláře, který je vázán <xref:System.Windows.Forms.BindingSource>. Je to, v důsledku vázán na `Customers` tabulku v `NorthwindDataSet`.  
   
@@ -114,11 +114,11 @@ Výjimky souběžnosti (<xref:System.Data.DBConcurrencyException>) jsou vyvolán
   
 #### <a name="to-test-the-form"></a>K otestování formuláře  
   
-1.  Vyberte **F5** ke spuštění aplikace  
+1. Vyberte **F5** ke spuštění aplikace  
   
      Formulář se zobrazí s <xref:System.Windows.Forms.DataGridView> ovládacím prvkem, který je naplněný daty z `Customers` tabulky.  
   
-2.  Na **ladění** nabídce vyberte možnost**Zastavit ladění**.  
+2. Na **ladění** nabídce vyberte možnost**Zastavit ladění**.  
   
 ## <a name="handleconcurrency-errors"></a>Handleconcurrency chyby  
  Způsob zpracování chyb je závisí na konkrétní obchodní pravidla, kterými se řídí vaše aplikace. V tomto návodu používáme následující strategie s ukázkovým jak tohandle došlo k chybě souběžnosti.  
@@ -135,13 +135,13 @@ Výjimky souběžnosti (<xref:System.Data.DBConcurrencyException>) jsou vyvolán
   
 #### <a name="to-enable-the-handling-of-concurrency-errors"></a>Povolit zpracování chyb souběžnosti  
   
-1.  Vytvoření obslužné rutiny vlastních chyb.  
+1. Vytvoření obslužné rutiny vlastních chyb.  
   
-2.  Zobrazit možnosti pro uživatele.  
+2. Zobrazit možnosti pro uživatele.  
   
-3.  Zpracování odpovědi uživatele.  
+3. Zpracování odpovědi uživatele.  
   
-4.  Znovu odeslal aktualizaci nebo obnovit data v datové sadě.  
+4. Znovu odeslal aktualizaci nebo obnovit data v datové sadě.  
   
 ### <a name="addcode-to-handle-the-concurrency-exception"></a>Addcode ke zpracování výjimky souběžnosti  
  Když se pokusíte provést aktualizace a získá vyvolána výjimka, obvykle chcete udělat něco s informacemi, které poskytuje vyvolanou výjimku.  
@@ -153,12 +153,12 @@ Výjimky souběžnosti (<xref:System.Data.DBConcurrencyException>) jsou vyvolán
   
 ##### <a name="to-add-error-handling-for-the-concurrency-error"></a>Přidání zpracování chyb pro došlo k chybě souběžnosti  
   
-1.  Přidejte následující kód níže `Form1_Load` metody:  
+1. Přidejte následující kód níže `Form1_Load` metody:  
   
      [!code-csharp[VbRaddataConcurrency#1](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataConcurrency/CS/Form1.cs#1)]
      [!code-vb[VbRaddataConcurrency#1](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataConcurrency/VB/Form1.vb#1)]  
   
-2.  Nahradit `CustomersBindingNavigatorSaveItem_Click` metoda se má volat `UpdateDatabase` metodu tak, aby vypadala takto:  
+2. Nahradit `CustomersBindingNavigatorSaveItem_Click` metoda se má volat `UpdateDatabase` metodu tak, aby vypadala takto:  
   
      [!code-csharp[VbRaddataConcurrency#2](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataConcurrency/CS/Form1.cs#2)]
      [!code-vb[VbRaddataConcurrency#2](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataConcurrency/VB/Form1.vb#2)]  
@@ -168,7 +168,7 @@ Výjimky souběžnosti (<xref:System.Data.DBConcurrencyException>) jsou vyvolán
   
 ##### <a name="to-create-the-message-to-display-to-the-user"></a>Chcete-li vytvořit zprávu zobrazit pro uživatele  
   
--   Vytvoření zprávy přidáním následujícího kódu **Editor kódu**. Tento kód níže zadejte `UpdateDatabase` metody.  
+- Vytvoření zprávy přidáním následujícího kódu **Editor kódu**. Tento kód níže zadejte `UpdateDatabase` metody.  
   
      [!code-csharp[VbRaddataConcurrency#4](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataConcurrency/CS/Form1.cs#4)]
      [!code-vb[VbRaddataConcurrency#4](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataConcurrency/VB/Form1.vb#4)]  
@@ -178,7 +178,7 @@ Výjimky souběžnosti (<xref:System.Data.DBConcurrencyException>) jsou vyvolán
   
 ##### <a name="to-process-the-user-input-from-the-message-box"></a>Uživatel zpracovat vstup z okna se zprávou  
   
--   Přidejte následující kód za kód, který byl přidán v předchozí části.  
+- Přidejte následující kód za kód, který byl přidán v předchozí části.  
   
      [!code-csharp[VbRaddataConcurrency#3](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataConcurrency/CS/Form1.cs#3)]
      [!code-vb[VbRaddataConcurrency#3](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataConcurrency/VB/Form1.vb#3)]  
@@ -188,24 +188,24 @@ Výjimky souběžnosti (<xref:System.Data.DBConcurrencyException>) jsou vyvolán
   
 #### <a name="to-test-the-form"></a>K otestování formuláře  
   
-1.  Vyberte **F5** ke spuštění aplikace.  
+1. Vyberte **F5** ke spuštění aplikace.  
   
-2.  Po zobrazení formuláře necháte spuštěné a přejděte do integrovaného vývojového prostředí sady Visual Studio.  
+2. Po zobrazení formuláře necháte spuštěné a přejděte do integrovaného vývojového prostředí sady Visual Studio.  
   
-3.  Na **zobrazení** nabídce zvolte **Průzkumníka serveru**.  
+3. Na **zobrazení** nabídce zvolte **Průzkumníka serveru**.  
   
-4.  V **Průzkumníka serveru**, rozbalte připojení, vaše aplikace používá a potom rozbalte **tabulky** uzlu.  
+4. V **Průzkumníka serveru**, rozbalte připojení, vaše aplikace používá a potom rozbalte **tabulky** uzlu.  
   
-5.  Klikněte pravým tlačítkem myši **zákazníkům** tabulku a pak vyberte **zobrazit Data tabulky**.  
+5. Klikněte pravým tlačítkem myši **zákazníkům** tabulku a pak vyberte **zobrazit Data tabulky**.  
   
-6.  V prvním záznamu (`ALFKI`) změnit `ContactName` k `Maria Anders2`.  
+6. V prvním záznamu (`ALFKI`) změnit `ContactName` k `Maria Anders2`.  
   
     > [!NOTE]
     >  Přejděte na jiný řádek pro potvrzení změn.  
   
-7.  Přepněte `ConcurrencyWalkthrough`běží formuláře.  
+7. Přepněte `ConcurrencyWalkthrough`běží formuláře.  
   
-8.  V první záznam ve formuláři (`ALFKI`), změňte`ContactName` k `Maria Anders1`.  
+8. V první záznam ve formuláři (`ALFKI`), změňte`ContactName` k `Maria Anders1`.  
   
 9. Vyberte tlačítko **Uložit**.  
   

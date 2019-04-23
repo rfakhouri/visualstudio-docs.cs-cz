@@ -20,12 +20,12 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0dd4b04f3ded38717c14503cdc21d4c9433bd23f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 348cb15ebc348d6c0ece5e7118e896cc6a21b23b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54770244"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043193"
 ---
 # <a name="troubleshooting-specific-errors-in-clickonce-deployments"></a>Řešení konkrétních chyb v nasazeních ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,15 +44,15 @@ Toto téma uvádí následující běžné chyby, které se mohou vyskytnout př
 #### <a name="error-message-says-unable-to-retrieve-application-files-missing-in-deployment-or-application-download-has-been-interrupted-check-for-network-errors-and-try-again-later"></a>Říká chybová zpráva "Nepodařilo se načíst aplikace. Soubory v nasazení chybí"nebo"stažení aplikace byla přerušena, zkontrolujte chyby sítě a zkuste to znovu později"  
  Tato zpráva znamená, že jeden nebo více souborů se na ně odkazovat [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifesty nelze stáhnout. Nejjednodušší způsob, jak ladění této chyby je pokus stáhnout adresu URL, která [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] říká nelze stáhnout. Tady jsou některé možné příčiny:  
   
--   Pokud soubor protokolu říká "zakázáno (403)" nebo "(404) Not found" Ověřte, že webový server je nakonfigurován tak, aby neblokovala stažení tohoto souboru. Další informace najdete v tématu [serveru a problémy s konfigurací klienta v nasazeních ClickOnce](../deployment/server-and-client-configuration-issues-in-clickonce-deployments.md).  
+- Pokud soubor protokolu říká "zakázáno (403)" nebo "(404) Not found" Ověřte, že webový server je nakonfigurován tak, aby neblokovala stažení tohoto souboru. Další informace najdete v tématu [serveru a problémy s konfigurací klienta v nasazeních ClickOnce](../deployment/server-and-client-configuration-issues-in-clickonce-deployments.md).  
   
--   Pokud soubor .config je blokován nastavením serveru, najdete v části "Chyba stahování při pokusu o instalaci [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikaci, která obsahuje soubor .config" dále v tomto tématu.  
+- Pokud soubor .config je blokován nastavením serveru, najdete v části "Chyba stahování při pokusu o instalaci [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikaci, která obsahuje soubor .config" dále v tomto tématu.  
   
--   Určení, zda situaci došlo, protože `deploymentProvider` odkazuje adresy URL v manifestu nasazení do jiného umístění než adresa URL pro aktivaci.  
+- Určení, zda situaci došlo, protože `deploymentProvider` odkazuje adresy URL v manifestu nasazení do jiného umístění než adresa URL pro aktivaci.  
   
--   Ujistěte se, že všechny soubory jsou k dispozici na serveru. [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] protokolu by měl zjistíte soubor, který nebyl nalezen.  
+- Ujistěte se, že všechny soubory jsou k dispozici na serveru. [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] protokolu by měl zjistíte soubor, který nebyl nalezen.  
   
--   Podívejte se, jestli jsou problémy se síťovým připojením; Tato zpráva se zobrazí-li klientský počítač přešel do režimu offline během stahování.  
+- Podívejte se, jestli jsou problémy se síťovým připojením; Tato zpráva se zobrazí-li klientský počítač přešel do režimu offline během stahování.  
   
 #### <a name="download-error-when-you-try-to-install-a-clickonce-application-that-has-a-config-file"></a>Chyba při pokusu o instalaci aplikace ClickOnce, která obsahuje soubor .config stahování  
  Ve výchozím nastavení aplikace pro Windows v jazyce Visual Basic zahrnuje soubor App.config. Bude problém když se uživatel pokusí nainstalovat z webového serveru, který používá Windows Server 2003, protože daný operační systém blokuje instalaci souborech .config z bezpečnostních důvodů. Chcete-li soubor .config k instalaci, klikněte na tlačítko **použít příponu ".deploy"** v **možnosti publikování** dialogové okno.  
@@ -67,11 +67,11 @@ Toto téma uvádí následující běžné chyby, které se mohou vyskytnout př
 #### <a name="you-updated-your-application-on-the-server-but-the-client-does-not-download-the-update"></a>Aktualizovat aplikaci na serveru, ale klient nestáhne aktualizace  
  Tento problém může vyřešit provedením jedné z následujících úloh:  
   
--   Zkontrolujte `deploymentProvider` adresy URL v manifestu nasazení. Ujistěte se, že aktualizujete bitů ve stejném umístění, která `deploymentProvider` odkazuje na.  
+- Zkontrolujte `deploymentProvider` adresy URL v manifestu nasazení. Ujistěte se, že aktualizujete bitů ve stejném umístění, která `deploymentProvider` odkazuje na.  
   
--   Zkontrolujte interval aktualizace v manifestu nasazení. Pokud tento interval je nastaven jako pravidelný interval, jako je například jednou každých 6 hodin [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] nebudou zjišťovat aktualizace až do uplynutí tohoto intervalu. Můžete změnit manifest vyhledávat aktualizace pokaždé, když spuštění aplikace. Změna intervalu aktualizace je vhodná možnost při vývoji ověření probíhá instalace aktualizací, ale může zpomalit aktivace aplikací.  
+- Zkontrolujte interval aktualizace v manifestu nasazení. Pokud tento interval je nastaven jako pravidelný interval, jako je například jednou každých 6 hodin [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] nebudou zjišťovat aktualizace až do uplynutí tohoto intervalu. Můžete změnit manifest vyhledávat aktualizace pokaždé, když spuštění aplikace. Změna intervalu aktualizace je vhodná možnost při vývoji ověření probíhá instalace aktualizací, ale může zpomalit aktivace aplikací.  
   
--   Zkuste znovu spustit aplikaci v nabídce Start. [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] může být zjištěny aktualizace na pozadí, ale zobrazí výzvu k instalaci na další aktivace.  
+- Zkuste znovu spustit aplikaci v nabídce Start. [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] může být zjištěny aktualizace na pozadí, ale zobrazí výzvu k instalaci na další aktivace.  
   
 #### <a name="during-update-you-receive-an-error-that-has-the-following-log-entry-the-reference-in-the-deployment-does-not-match-the-identity-defined-in-the-application-manifest"></a>Při aktualizaci zobrazí chybová zpráva, která má následující záznam protokolu: "Odkaz v nasazení neodpovídá identitě definované v manifestu aplikace"  
  K této chybě může dojít, protože jste ručně upravit manifesty nasazení a aplikace a způsobit popis identity sestavení v jednom manifestu přestane být synchronní k ostatním. Identita sestavení se skládá z jeho název, verzi, jazykovou verzi a token veřejného klíče. Popisy identity ve vaší manifesty zkontrolujte a opravte případné rozdíly.  
@@ -84,9 +84,9 @@ Toto téma uvádí následující běžné chyby, které se mohou vyskytnout př
   
  Měli byste provést následující:  
   
--   Ověřte, zda jsou všechny jedinečné identity v manifestu nasazení, identita manifestu aplikace a identitu hlavní aplikace EXE.  
+- Ověřte, zda jsou všechny jedinečné identity v manifestu nasazení, identita manifestu aplikace a identitu hlavní aplikace EXE.  
   
--   Ověřte, že vaše cesty k souborům nejsou delší než 100 znaků. Pokud vaše aplikace obsahuje, které jsou příliš dlouhé cesty k souborům, může být delší než omezení na maximální délku cesty, které můžete ukládat. Zkuste, zkrácení cesty a znovu nainstalujte.  
+- Ověřte, že vaše cesty k souborům nejsou delší než 100 znaků. Pokud vaše aplikace obsahuje, které jsou příliš dlouhé cesty k souborům, může být delší než omezení na maximální délku cesty, které můžete ukládat. Zkuste, zkrácení cesty a znovu nainstalujte.  
   
 #### <a name="privatepath-settings-in-application-config-file-are-not-honored"></a>Nastavení PrivatePath v konfiguračním souboru aplikace se neuplatňují.  
  Pokud chcete použít nastavení PrivatePath (definovaných cest Fusion), musíte aplikaci požádat o oprávnění úplný vztah důvěryhodnosti. Zkuste změnit manifestu aplikace k vyžádání úplný vztah důvěryhodnosti a pak to zkuste znovu.  
@@ -115,9 +115,9 @@ Toto téma uvádí následující běžné chyby, které se mohou vyskytnout př
 #### <a name="you-tried-to-sign-with-a-certificate-in-your-certificate-store-and-a-received-blank-message-box"></a>Pokusili jste se přihlásit pomocí certifikátu v úložišti certifikátů a přijatou zprávu prázdné pole  
  V **podepisování** dialogové okno, musíte:  
   
--   Vyberte **přihlašování pomocí uloženého certifikátu**, a  
+- Vyberte **přihlašování pomocí uloženého certifikátu**, a  
   
--   Vyberte certifikát ze seznamu. první certifikát není výchozí výběr.  
+- Vyberte certifikát ze seznamu. první certifikát není výchozí výběr.  
   
 #### <a name="clicking-the-dont-sign-button-causes-an-exception"></a>Kliknutím na tlačítko "Není znak" způsobí výjimku  
  Tento problém se o známý problém. Všechny [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] jsou vyžadovány k podpisu manifestů. Stačí vybrat jednu z možností podepisování a potom klikněte na tlačítko **OK**.  

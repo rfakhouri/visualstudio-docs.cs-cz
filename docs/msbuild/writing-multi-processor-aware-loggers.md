@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6322e860cb45cecc3db5d5060e1322c41d57e695
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 0ecae68c3c5d9569f2c63d484c53696bbec42e55
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56634224"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043804"
 ---
 # <a name="write-multi-processor-aware-loggers"></a>Zápis více procesorů protokolovacích
 Schopnost [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] výhod více procesorů může zkrátit čas sestavení projektu, ale také zvyšuje složitost vytváření protokolování událostí. V prostředí s jedním procesorem události, zprávy, upozornění a chyby do protokolovacího nástroje předvídatelným, sekvenčním způsobem. V prostředí s více procesory mohou však události z různých zdrojů dorazí, ve stejnou dobu nebo mimo pořadí. K poskytování v takovém případě [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] poskytuje více-procesorů s ohledem na protokolovací nástroj a nový model protokolování a umožňuje vám vytvořit vlastní "předávající Protokolovací nástroje".
@@ -62,9 +62,9 @@ public interface INodeLogger: ILogger
 
  Existují dva způsoby, jak pomocí distribuované protokolování, následujícím způsobem:
 
--   Přizpůsobení předem kovodělných předávající protokolovací nástroj s názvem <xref:Microsoft.Build.BuildEngine.ConfigurableForwardingLogger>.
+- Přizpůsobení předem kovodělných předávající protokolovací nástroj s názvem <xref:Microsoft.Build.BuildEngine.ConfigurableForwardingLogger>.
 
--   Napište vlastní vlastního předávajícího protokolovacího nástroje.
+- Napište vlastní vlastního předávajícího protokolovacího nástroje.
 
 Můžete upravit ConfigurableForwardingLogger tak, aby vyhovoval vašim požadavkům. K tomuto účelu volání protokolovacího nástroje příkazového řádku pomocí *MSBuild.exe*a vypsat události sestavení, které chcete předat do centrálního uzlu protokolovacího nástroje.
 

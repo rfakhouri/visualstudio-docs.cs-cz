@@ -27,12 +27,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a233518f34fdafdb45822f4bc12c3edc452f50cb
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 39cdb98f14823b02c8d4d2b60575eddca6da0420
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56598853"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055350"
 ---
 # <a name="windows-forms-controls-on-office-documents-overview"></a>Ovládací prvky Windows Forms na dokumenty Office – přehled
   Ovládací prvky Windows Forms jsou objekty, které mohou uživatelé komunikovat s a zadejte skript nebo manipulaci s daty. V projektech na úrovni dokumentu pro aplikaci Microsoft Office Excel a Microsoft Office Word můžete přidat ovládací prvky Windows Forms k dokumentu nebo sešitu ve vašem projektu v době návrhu nebo prostřednictvím kódu programu přidáte těchto ovládacích prvků za běhu. Tyto ovládací prvky můžete programově přidat otevřeného dokumentu nebo listu za běhu v doplňku VSTO pro Excel nebo Word.
@@ -42,19 +42,20 @@ ms.locfileid: "56598853"
  [!INCLUDE[appliesto_controls](../vsto/includes/appliesto-controls-md.md)]
 
 ## <a name="use-windows-forms-controls"></a>Použití ovládacích prvků Windows Forms
- Můžete přidat ovládací prvky Windows Forms k dokumentům a prvky přizpůsobitelné uživatelského rozhraní (UI), včetně podokna akcí, vlastní podokna úloh a Windows Forms. Ovládací prvky Windows Forms v dokumentech jako na tyto další prvky uživatelského rozhraní obvykle mají stejné chování, ale existuje několik rozdílů. Informace najdete v tématu [omezení Windows Forms ovládací prvky v dokumentech Office](../vsto/limitations-of-windows-forms-controls-on-office-documents.md).
 
- Rozhodnutí, jestli se má přidat do dokumentu nebo jiný prvek uživatelského rozhraní ovládacích prvků Windows Forms závisí na několika faktorech. Při navrhování uživatelského rozhraní vašeho řešení, zvažte použití ovládacích prvků Windows Forms, jak je popsáno v následující tabulce.
+Můžete přidat ovládací prvky Windows Forms k dokumentům a prvky přizpůsobitelné uživatelského rozhraní (UI), včetně podokna akcí, vlastní podokna úloh a Windows Forms. Ovládací prvky Windows Forms v dokumentech jako na tyto další prvky uživatelského rozhraní obvykle mají stejné chování, ale existuje několik rozdílů. Informace najdete v tématu [omezení Windows Forms ovládací prvky v dokumentech Office](../vsto/limitations-of-windows-forms-controls-on-office-documents.md).
 
- V dokumentu.
- -   Pokud chcete zobrazit ovládací prvky 100 % času.
+Rozhodnutí, jestli se má přidat do dokumentu nebo jiný prvek uživatelského rozhraní ovládacích prvků Windows Forms závisí na několika faktorech. Při navrhování uživatelského rozhraní vašeho řešení, zvažte použití ovládacích prvků Windows Forms, jak je popsáno v následující tabulce.
+
+V dokumentu.
+- Pokud chcete zobrazit ovládací prvky 100 % času.
 
 - Pokud chcete, aby uživatelé pro zadávání dat přímo v dokumentu, například v založené na formulářích dokumenty, kde je uzamčen na úpravy plochu.
 
 - Když chcete ovládacích prvků pro zobrazení tato data v dokumentu. Například při přidávání tlačítek do jednotlivých řádků seznamu objektů, je by představám souladu s každou položku seznamu.
 
-  V podokně Akce nebo vlastního podokna úloh.
-  -   Pokud chcete poskytovat kontextové informace pro uživatele.
+V podokně Akce nebo vlastního podokna úloh.
+- Pokud chcete poskytovat kontextové informace pro uživatele.
 
 - Když chcete pouze výsledky se zobrazí v dokumentu a ne ovládací prvky dotazu a data.
 
@@ -62,8 +63,8 @@ ms.locfileid: "56598853"
 
 - Pokud chcete zajistit, že ovládací prvky nejsou v konfliktu za dokumentu.
 
-  Ve formuláři Windows.
-  -   Pokud chcete určit velikost uživatelského rozhraní.
+Ve formuláři Windows.
+- Pokud chcete určit velikost uživatelského rozhraní.
 
 - Pokud chcete zabránit uživatelům ve skryjete nebo odstranění ovládacích prvků.
 
@@ -80,32 +81,32 @@ ms.locfileid: "56598853"
 ### <a name="create-custom-user-controls"></a>Vytvoření vlastních uživatelských ovládacích prvků
  Můžete přidat uživatelský ovládací prvek do projektu a pak ho přidat do **nástrojů**. Potom můžete přetáhnout uživatelského ovládacího prvku přímo do dokumentu stejným způsobem můžete přidat ovládacího prvku Windows Forms do dokumentu. Existují některé co je potřeba vzít v úvahu při vytváření uživatelských ovládacích prvků:
 
--   Nevytvářejte **zapečetěné** uživatelského ovládacího prvku. Při přetažení ovládacího prvku do dokumentu sady Visual Studio generuje obálkovou třídu odvozenou z ovládacího prvku uživatel ji rozšířit a podporovat jejich použití v dokumentu. Pokud uživatelský ovládací prvek **zapečetěné**, Visual Studio nelze generovat obálkovou třídu.
+- Nevytvářejte **zapečetěné** uživatelského ovládacího prvku. Při přetažení ovládacího prvku do dokumentu sady Visual Studio generuje obálkovou třídu odvozenou z ovládacího prvku uživatel ji rozšířit a podporovat jejich použití v dokumentu. Pokud uživatelský ovládací prvek **zapečetěné**, Visual Studio nelze generovat obálkovou třídu.
 
--   Uživatelské ovládací prvky musí mít <xref:System.Runtime.InteropServices.ComVisibleAttribute> atribut nastaven na **true**. Uživatelské ovládací prvky vytvořené v projektu aplikace Office mají tento atribut nastavený na **true** ve výchozím nastavení, ale uživatelské ovládací prvky, které jsou součástí mimo projekty nemusí mít tento atribut nastavený na **true**.
+- Uživatelské ovládací prvky musí mít <xref:System.Runtime.InteropServices.ComVisibleAttribute> atribut nastaven na **true**. Uživatelské ovládací prvky vytvořené v projektu aplikace Office mají tento atribut nastavený na **true** ve výchozím nastavení, ale uživatelské ovládací prvky, které jsou součástí mimo projekty nemusí mít tento atribut nastavený na **true**.
 
--   Po přidání uživatelského ovládacího prvku dokument nelze přejmenovat nebo odstranit <xref:System.Windows.Forms.UserControl> třídy z projektu. Pokud potřebujete změnit název uživatelského ovládacího prvku musíte nejprve odstranit z dokumentu a pak ho znovu přidat po změně názvu.
+- Po přidání uživatelského ovládacího prvku dokument nelze přejmenovat nebo odstranit <xref:System.Windows.Forms.UserControl> třídy z projektu. Pokud potřebujete změnit název uživatelského ovládacího prvku musíte nejprve odstranit z dokumentu a pak ho znovu přidat po změně názvu.
 
 ### <a name="arrange-controls-at-design-time"></a>Uspořádání ovládacích prvků v době návrhu
  Pokud přidáte více ovládacích prvků do dokumentů aplikace Word a Excel v době návrhu, můžete rychle nastavit zarovnání všech vybraných ovládacích prvků pomocí **Microsoft Office Word** a **aplikace Microsoft Office Excel**panelů nástrojů v sadě Visual Studio. Panely nástrojů jsou k dispozici pouze v případě, že je otevřen v Návrháři dokumentu nebo sešitu.
 
  Když vyberete více ovládacích prvků v návrháři, vám pomůže následující tlačítka na panely nástrojů uspořádat ovládací prvky:
 
--   **Zarovnat doleva**
+- **Zarovnat doleva**
 
--   **Zarovnat centra**
+- **Zarovnat centra**
 
--   **Zarovnat doprava**
+- **Zarovnat doprava**
 
--   **Zarovnat nahoru**
+- **Zarovnat nahoru**
 
--   **Zarovnat středy**
+- **Zarovnat středy**
 
--   **Zarovnat dolů**
+- **Zarovnat dolů**
 
--   **Stejné vodorovné mezery**
+- **Stejné vodorovné mezery**
 
--   **Stejné svislé mezery**
+- **Stejné svislé mezery**
 
 > [!NOTE]
 >  V projektech aplikace Word tato tlačítka jsou povolena pouze v případě, že nejsou vybrané ovládací prvky v textu. Ve výchozím nastavení jsou ovládací prvky, které přidáte do dokumentu v době návrhu v textu.

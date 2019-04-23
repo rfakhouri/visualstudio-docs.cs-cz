@@ -13,12 +13,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f6b3b1ebf4f25f1f37d2094a0e53447a4418044a
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 29d4ee5455a05bfac98debc2f6ebdbb06b813f31
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57870600"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059848"
 ---
 # <a name="model-user-requirements"></a>Modelování uživatelských požadavků
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,7 +62,7 @@ Visual Studio vám pomáhá pochopit, diskutovat a sdělovat požadavky uživate
   
  Všimněte si, že většina typů diagramu můžete používat pro jiné účely. Přehled typů diagramu, naleznete v tématu [vytváření modelů pro aplikaci](../modeling/create-models-for-your-app.md). Základní informace o vytvoření diagramů naleznete v tématu [modelů a diagramů UML upravit](../modeling/edit-uml-models-and-diagrams.md).  
   
-##  <a name="UseCases"></a> Popisující, jak se váš systém používá  
+## <a name="UseCases"></a> Popisující, jak se váš systém používá  
  Vytvořte diagramy případu použití a popisují, kdo používá systém a co využijí ho. Případ použití představuje cíl uživatele systému a postup jejich provést k dosažení cíle.  
   
  Jako příklad online jídla prodej systému musí umožňovat zákazníkům z nabídky vyberte položky a musí umožňovat zadání restaurace aktualizace v nabídce. To lze shrnout v diagramu případu použití:  
@@ -93,7 +93,7 @@ Visual Studio vám pomáhá pochopit, diskutovat a sdělovat požadavky uživate
 |Prvků v diagramu případu použití|[Diagramy případů použití UML: Referenční dokumentace](../modeling/uml-use-case-diagrams-reference.md)|  
 |Postupy při vývoji kódu z případy použití|[Modelování architektury aplikace](../modeling/model-your-app-s-architecture.md)|  
   
-##  <a name="RequirementsClasses"></a> Definuje termíny používané k popisu požadavků  
+## <a name="RequirementsClasses"></a> Definuje termíny používané k popisu požadavků  
  Můžete použít diagramy tříd UML a pomohou vám vytvořit konzistentní slovník business koncepty použité k těmto účelům:  
   
 - Uživatelé sami fattica firmy, ve kterém systém funguje.  
@@ -140,7 +140,7 @@ Visual Studio vám pomáhá pochopit, diskutovat a sdělovat požadavky uživate
   
  V diagramu tříd koncepční není obvykle vhodné umístit šipky na přidružení relevantní. Je to proto diagramu nepředstavuje implementace. Asociace reprezentují vztahy mezi objekty reálného světa. Následující [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozšíření nastavit jiné směrové šipky jako výchozí: [Ukázka: Funkce modelování UML domény](http://go.microsoft.com/fwlink/?LinkId=213849).  
   
-##  <a name="BusinessRules"></a> Zobrazení obchodních pravidel  
+## <a name="BusinessRules"></a> Zobrazení obchodních pravidel  
  Obchodní pravidlo je požadavek, který není spojen s případem použití konkrétní a by měl v celém systému.  
   
  Mnoho obchodní pravidla jsou omezení na vztahy mezi koncepční třídy. Můžete napsat tyto *statické obchodní pravidla* jako komentáře přidružené k příslušné třídy v diagramu tříd koncepční. Příklad:  
@@ -161,7 +161,7 @@ Visual Studio vám pomáhá pochopit, diskutovat a sdělovat požadavky uživate
 |Elementy diagramu koncepční tříd|[Diagramy tříd UML: Referenční dokumentace](../modeling/uml-class-diagrams-reference.md)|  
 |Postupy při vývoji kódu, který splňuje obchodní pravidla|[Modelování architektury aplikace](../modeling/model-your-app-s-architecture.md)|  
   
-##  <a name="QoSRequirements"></a> Popisující kvality požadavků na služby  
+## <a name="QoSRequirements"></a> Popisující kvality požadavků na služby  
  Existuje několik kategorií kvality služby. Jsou to tyto země:  
   
 - Výkon  
@@ -185,7 +185,7 @@ Visual Studio vám pomáhá pochopit, diskutovat a sdělovat požadavky uživate
 |Připojení dalších dokumentů s případy použití|[Propojení případu použití s dokumenty a diagramy](../modeling/link-a-use-case-to-documents-and-diagrams.md)|  
 |Postupy při vývoji kódu, který dodržuje kvality požadavků na služby|[Modelování architektury aplikace](../modeling/model-your-app-s-architecture.md)|  
   
-##  <a name="Workflow"></a> Zobrazuje pracovní postup mezi uživateli a systému  
+## <a name="Workflow"></a> Zobrazuje pracovní postup mezi uživateli a systému  
  Diagram aktivity můžete použít k zobrazení toku práce mezi různé případy použití. Je často užitečné Začněte model požadavků náčrt diagramu aktivit znázorňující hlavních úloh, které uživatelé provádějí - systémem i mimo něj.  
   
  Příklad:  
@@ -206,7 +206,7 @@ Visual Studio vám pomáhá pochopit, diskutovat a sdělovat požadavky uživate
 |Prvků v diagramu činnosti|[Diagramy činnosti UML: Referenční dokumentace](../modeling/uml-activity-diagrams-reference.md)|  
 |Postupy při vývoji kódu z diagramů aktivit|[Modelování architektury aplikace](../modeling/model-your-app-s-architecture.md)|  
   
-##  <a name="Sequences"></a> Zobrazení interakce mezi uživateli a systému  
+## <a name="Sequences"></a> Zobrazení interakce mezi uživateli a systému  
  Sekvenční diagram můžete použít k zobrazení výměny zpráv mezi systémem a externí aktéry nebo mezi částmi systému. To poskytuje přehled kroky v případu použití, který zobrazuje velmi jasně sekvence interakcí. Sekvenční diagramy jsou zvláště užitečné, pokud existuje, že několik interakci stranami v případu použití a taky Pokud váš systém používá rozhraní API.  
   
  Příklad:  

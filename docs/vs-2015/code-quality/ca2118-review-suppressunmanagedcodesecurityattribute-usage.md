@@ -15,12 +15,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ebe26e81bdee6be1b2e3a795f50c753d9bb66814
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: eb76233e968ad8212d15fbcc815c31ffd0f1838a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54770556"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059172"
 ---
 # <a name="ca2118-review-suppressunmanagedcodesecurityattribute-usage"></a>CA2118: Zkontrolujte použití SuppressUnmanagedCodeSecurityAttribute
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,11 +44,11 @@ ms.locfileid: "54770556"
 
  Výchozí zásady zabezpečení neuděluje oprávnění nespravovaného kódu na sestavení, pokud je spuštěn v místním počítači nebo je členem jedné z následujících skupin:
 
--   Moje skupina počítačů zóny kódu
+- Moje skupina počítačů zóny kódu
 
--   Microsoft Strong Name kódová skupina
+- Microsoft Strong Name kódová skupina
 
--   Skupiny kódu silného názvu ECMA
+- Skupiny kódu silného názvu ECMA
 
 ## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
  Pečlivě zkontrolujte kód a ujistěte se, že tento atribut je nezbytně nutné. Pokud nejste obeznámeni s spravovaný kód zabezpečení nebo není srozumitelný bezpečnostních důsledcích pomocí tohoto atributu, odeberte ho z vašeho kódu. Pokud je vyžadován atribut, musíte zajistit, že volající speciálně nemůžete použít kód. Pokud váš kód nemá oprávnění k provedení nespravovaného kódu, tento atribut nemá žádný vliv a měly by se odebrat.

@@ -11,12 +11,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f5d619a18fa38c09b25f2d8367f3f767ac5bdc11
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 9ea2068bce101eb27a81da4925e0fef6ffa8c534
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59651079"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054441"
 ---
 # <a name="target-build-order"></a>Pořadí sestavení cílů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -107,19 +107,19 @@ Pokud vstup pro jeden cíl závisí na výstupu jiný cíl, musejí být seřaze
 ## <a name="determining-the-target-build-order"></a>Určení pořadí sestavení cíle  
  MSBuild určuje pořadí sestavení cílů následujícím způsobem:  
   
-1.  `InitialTargets` cíle jsou spuštěny.  
+1. `InitialTargets` cíle jsou spuštěny.  
   
-2.  Cíle zadané na příkazovém řádku ve **/target** přepínače jsou spuštěny. Pokud zadáte žádné cíle na příkazovém řádku, pak bude `DefaultTargets` spuštění cíle. Pokud ani jedno je k dispozici, došlo k prvnímu cíli běží.  
+2. Cíle zadané na příkazovém řádku ve **/target** přepínače jsou spuštěny. Pokud zadáte žádné cíle na příkazovém řádku, pak bude `DefaultTargets` spuštění cíle. Pokud ani jedno je k dispozici, došlo k prvnímu cíli běží.  
   
-3.  `Condition` Atribut cíle vyhodnocena. Pokud `Condition` atribut je k dispozici a je vyhodnocena jako `false`, cíl není spuštěn a nemá žádné další vliv na sestavení.  
+3. `Condition` Atribut cíle vyhodnocena. Pokud `Condition` atribut je k dispozici a je vyhodnocena jako `false`, cíl není spuštěn a nemá žádné další vliv na sestavení.  
   
-4.  Před provedením cíl jeho `DependsOnTargets` spuštění cíle.  
+4. Před provedením cíl jeho `DependsOnTargets` spuštění cíle.  
   
-5.  Před provedením cíl libovolného cílového, který zobrazí ho v `BeforeTargets` atribut běží.  
+5. Před provedením cíl libovolného cílového, který zobrazí ho v `BeforeTargets` atribut běží.  
   
-6.  Před provedením cíl jeho `Inputs` atribut a `Outputs` jsou porovnány atribut. Pokud nástroj MSBuild zjistí, že všechny výstupní soubory jsou aktuální s ohledem na odpovídající vstupní soubor nebo soubory, pak nástroj MSBuild spustí cíl. V opačném případě MSBuild vynechává cíl.  
+6. Před provedením cíl jeho `Inputs` atribut a `Outputs` jsou porovnány atribut. Pokud nástroj MSBuild zjistí, že všechny výstupní soubory jsou aktuální s ohledem na odpovídající vstupní soubor nebo soubory, pak nástroj MSBuild spustí cíl. V opačném případě MSBuild vynechává cíl.  
   
-7.  Poté, co je cíl proveden nebo vynechán, všechny cíl, který zobrazí ho v `AfterTargets` atribut běží.  
+7. Poté, co je cíl proveden nebo vynechán, všechny cíl, který zobrazí ho v `AfterTargets` atribut běží.  
   
 ## <a name="see-also"></a>Viz také  
  [Cíle](../msbuild/msbuild-targets.md)

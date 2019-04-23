@@ -15,12 +15,12 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 13dc2eda358e86cd324bc154b856028b3db8979b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0b4a5e7e626e7cf9510047f0b016ff80ea8203e1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54787387"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056780"
 ---
 # <a name="uml-component-diagrams-guidelines"></a>Diagramy komponent UML: Pokyny
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ V sadě Visual Studio, můžete nakreslit *diagram komponent* na zobrazit pomoc�
   
   Diagram komponent lze využít k reprezentaci návrhu bez ohledu na to, jaký jazyk nebo platformu používá nebo bude používat.  
   
-##  <a name="OtherDiagrams"></a> Vztah k jiným diagramům  
+## <a name="OtherDiagrams"></a> Vztah k jiným diagramům  
  Diagram komponent lze použít společně s jinými diagramy.  
   
 |Jiný diagram|Umožňuje diskutovat a sdělovat tyto aspekty návrhu|  
@@ -51,7 +51,7 @@ V sadě Visual Studio, můžete nakreslit *diagram komponent* na zobrazit pomoc�
 |Diagramy činností|-Vnitřní zpracování provádějí komponenty jako odpověď na příchozí zprávy.<br /><br /> Další informace najdete v tématu [diagramy činnosti UML: Pokyny pro](../modeling/uml-activity-diagrams-guidelines.md).|  
 |Diagramy vrstev|– Logické vrstvy architektury pro vaše komponenty.<br /><br /> Další informace najdete v tématu [diagramy vrstev: Referenční dokumentace](../modeling/layer-diagrams-reference.md).|  
   
-##  <a name="Basics"></a> Základní kroky pro vytvoření diagramů komponent  
+## <a name="Basics"></a> Základní kroky pro vytvoření diagramů komponent  
  Referenční informace o elementů v diagramech komponent, naleznete v tématu [diagramy komponent UML: Referenční dokumentace](../modeling/uml-component-diagrams-reference.md).  
   
  Další informace o tom, jak pomocí diagramů komponent při navrhování naleznete v tématu [modelování architektury aplikace](../modeling/model-your-app-s-architecture.md).  
@@ -61,13 +61,13 @@ V sadě Visual Studio, můžete nakreslit *diagram komponent* na zobrazit pomoc�
   
 #### <a name="to-create-a-component-diagram"></a>Chcete-li vytvořit diagram komponent  
   
-1.  Na **architektura** nabídky, klikněte na tlačítko **nové UML nebo diagramu vrstev**.  
+1. Na **architektura** nabídky, klikněte na tlačítko **nové UML nebo diagramu vrstev**.  
   
-2.  V části **šablony**, klikněte na tlačítko **Diagram komponent UML**.  
+2. V části **šablony**, klikněte na tlačítko **Diagram komponent UML**.  
   
-3.  Pojmenujte diagram.  
+3. Pojmenujte diagram.  
   
-4.  V **přidat k projektu modelování**, vyberte existující projekt modelování z řešení, nebo **vytvořit nový projekt modelování**a potom klikněte na tlačítko **OK**...  
+4. V **přidat k projektu modelování**, vyberte existující projekt modelování z řešení, nebo **vytvořit nový projekt modelování**a potom klikněte na tlačítko **OK**...  
   
      Nový diagram komponent se zobrazí s UML **Diagram komponent** sady nástrojů. Sada nástrojů obsahuje požadované prvky a vztahy.  
   
@@ -80,25 +80,25 @@ V sadě Visual Studio, můžete nakreslit *diagram komponent* na zobrazit pomoc�
   
 ##### <a name="to-create-components"></a>Vytváření komponent  
   
-1.  Klikněte na tlačítko **komponenty** na panelu nástrojů a potom klikněte na prázdnou část diagramu.  
+1. Klikněte na tlačítko **komponenty** na panelu nástrojů a potom klikněte na prázdnou část diagramu.  
   
      \- nebo –  
   
      Zkopírujte a vložte existující komponentu.  
   
-    1.  Najděte existující komponentu v diagramu nebo v **Průzkumníku modelů UML**.  
+    1. Najděte existující komponentu v diagramu nebo v **Průzkumníku modelů UML**.  
   
-    2.  Klikněte pravým tlačítkem na komponentu a potom klikněte na tlačítko **kopírování**.  
+    2. Klikněte pravým tlačítkem na komponentu a potom klikněte na tlačítko **kopírování**.  
   
-    3.  Otevřete diagram, v němž se má zkopírovaná komponenta zobrazit.  
+    3. Otevřete diagram, v němž se má zkopírovaná komponenta zobrazit.  
   
-    4.  Klikněte pravým tlačítkem na prázdnou část diagramu a potom klikněte na tlačítko **vložit**.  
+    4. Klikněte pravým tlačítkem na prázdnou část diagramu a potom klikněte na tlačítko **vložit**.  
   
          Zobrazí se kopie komponenty pod novým názvem.  
   
-2.  Po kliknutí na název komponenty jej můžete změnit.  
+2. Po kliknutí na název komponenty jej můžete změnit.  
   
-3.  Pokud chcete zobrazit pouze záhlaví komponenty, klikněte na dvojitou šipku (5).  
+3. Pokud chcete zobrazit pouze záhlaví komponenty, klikněte na dvojitou šipku (5).  
   
 ### <a name="showing-the-ports-of-a-component"></a>Zobrazení portů komponenty  
  A *port* (2, 3) představuje skupinu zpráv nebo volání operace, které předávají do nebo z komponenty. Skupinu popisuje rozhraní, které definuje typ daného portu. Port může rozhraní buď poskytovat, nebo vyžadovat.  
@@ -144,24 +144,24 @@ V sadě Visual Studio, můžete nakreslit *diagram komponent* na zobrazit pomoc�
   
 ##### <a name="to-add-a-port-for-an-existing-interface-to-a-component"></a>Přidání portu pro existující rozhraní do komponenty  
   
--   Najděte rozhraní v **Průzkumníku modelů UML** a potom z něj přetáhněte na komponentu.  
+- Najděte rozhraní v **Průzkumníku modelů UML** a potom z něj přetáhněte na komponentu.  
   
      -nebo-  
   
--   Zkopírujte a vložte odkaz z diagramu do rozhraní.  
+- Zkopírujte a vložte odkaz z diagramu do rozhraní.  
   
-    1.  V diagramu tříd nebo diagramu komponent klikněte pravým tlačítkem na rozhraní a pak klikněte na **kopírování**.  
+    1. V diagramu tříd nebo diagramu komponent klikněte pravým tlačítkem na rozhraní a pak klikněte na **kopírování**.  
   
-    2.  V diagramu komponent klikněte pravým tlačítkem na komponentu a potom klikněte na tlačítko **vložit odkaz**.  
+    2. V diagramu komponent klikněte pravým tlačítkem na komponentu a potom klikněte na tlačítko **vložit odkaz**.  
   
          Na komponentě se zobrazí poskytované rozhraní. Poblíž se zobrazí značka Akce.  
   
         > [!NOTE]
         >  Pokud používáte **vložit** místo **vložit odkaz**, vytvoří se nové rozhraní s novým názvem.  
   
-    3.  Pokud jste chtěli vytvořit požadované rozhraní, klikněte na značku akce a potom klikněte na tlačítko **převést na požadované rozhraní**.  
+    3. Pokud jste chtěli vytvořit požadované rozhraní, klikněte na značku akce a potom klikněte na tlačítko **převést na požadované rozhraní**.  
   
-##  <a name="Parts"></a> Zobrazení vnitřních částí komponenty  
+## <a name="Parts"></a> Zobrazení vnitřních částí komponenty  
  ![Diagram komponent zobrazení vnitřních částí](../modeling/media/uml-compshowing.png "UML_CompShowing")  
   
  Do komponenty (1) lze umístit části (3), pomocí nichž je možné zobrazit, jak je komponenta složena z menších komponent, které vzájemně spolupracují.  
@@ -180,9 +180,9 @@ V sadě Visual Studio, můžete nakreslit *diagram komponent* na zobrazit pomoc�
   
 #### <a name="to-add-parts-to-a-component"></a>Přidání částí do komponenty  
   
-1.  Vytvořte část pro každou hlavní funkční jednotku, kterou považujete za součást nadřazené komponenty.  
+1. Vytvořte část pro každou hlavní funkční jednotku, kterou považujete za součást nadřazené komponenty.  
   
-    1.  Klikněte na tlačítko **komponenty** v panelu nástrojů a pak klikněte na tlačítko uvnitř nadřazené komponenty (1).  
+    1. Klikněte na tlačítko **komponenty** v panelu nástrojů a pak klikněte na tlačítko uvnitř nadřazené komponenty (1).  
   
          Nová část (3) se zobrazí uvnitř nadřazené komponenty.  
   
@@ -202,9 +202,9 @@ V sadě Visual Studio, můžete nakreslit *diagram komponent* na zobrazit pomoc�
   
          Nová část (3) se zobrazí uvnitř nadřazené komponenty. Jejím typem je komponenta, kterou jste zkopírovali.  
   
-    2.  Název nové části můžete změnit poté, co na něj kliknete. Její typ měnit nelze.  
+    2. Název nové části můžete změnit poté, co na něj kliknete. Její typ měnit nelze.  
   
-    3.  Do nové části můžete přidat poskytované a požadované rozhraní (4, 5). Klikněte na tlačítko **poskytované rozhraní** nebo **požadované rozhraní** nástroje a potom klikněte do části.  
+    3. Do nové části můžete přidat poskytované a požadované rozhraní (4, 5). Klikněte na tlačítko **poskytované rozhraní** nebo **požadované rozhraní** nástroje a potom klikněte do části.  
   
          \- nebo –  
   
@@ -212,15 +212,15 @@ V sadě Visual Studio, můžete nakreslit *diagram komponent* na zobrazit pomoc�
   
          Rozhraní jsou přidána do typu části a zobrazí se přímo na části. Nadřazená komponenta v případě potřeby upraví jeho velikost.  
   
-2.  Propojte části mezi sebou.  
+2. Propojte části mezi sebou.  
   
-    -   Použití **závislost** nástroj pro připojení portů různých částí (6).  
+    - Použití **závislost** nástroj pro připojení portů různých částí (6).  
   
-3.  Připojte části k portům nadřazené komponenty:  
+3. Připojte části k portům nadřazené komponenty:  
   
-    1.  Na nadřazené komponentě vytvořte jeden nebo více portů (7). Klikněte na tlačítko **požadované rozhraní** nebo **poskytované rozhraní** na panelu nástrojů a potom klikněte na nadřazenou komponentu.  
+    1. Na nadřazené komponentě vytvořte jeden nebo více portů (7). Klikněte na tlačítko **požadované rozhraní** nebo **poskytované rozhraní** na panelu nástrojů a potom klikněte na nadřazenou komponentu.  
   
-    2.  Delegujte (9) port jedné části nebo více částem. Klikněte na tlačítko **delegování** nástroj, pak port na nadřazené komponentě a port na části. Stejným způsobem můžete připojit porty, které buď poskytují, nebo vyžadují rozhraní.  
+    2. Delegujte (9) port jedné části nebo více částem. Klikněte na tlačítko **delegování** nástroj, pak port na nadřazené komponentě a port na části. Stejným způsobem můžete připojit porty, které buď poskytují, nebo vyžadují rozhraní.  
   
 ### <a name="showing-the-parts-of-a-part"></a>Zobrazení částí části  
  Poté, co jste rozložili komponentu na jednotlivé části, můžete rovněž rozložit jednotlivé typy částí na vlastní vnitřní části.  
@@ -229,13 +229,13 @@ V sadě Visual Studio, můžete nakreslit *diagram komponent* na zobrazit pomoc�
   
 ##### <a name="to-place-a-parts-type-on-a-diagram"></a>Umístění typu části do diagramu  
   
-1.  Určete plně kvalifikovaný název typu části.  
+1. Určete plně kvalifikovaný název typu části.  
   
      Klikněte pravým tlačítkem na části a pak klikněte na tlačítko **vlastnosti**.  
   
      Název typu se zobrazí v **typ** pole v okně Vlastnosti.  
   
-2.  Vyhledejte typ části v **Průzkumníku modelů UML**.  
+2. Vyhledejte typ části v **Průzkumníku modelů UML**.  
   
      Klikněte na tlačítko **zobrazení**, přejděte na **ostatní Windows**a potom klikněte na tlačítko **Průzkumníku modelů UML**.  
   
@@ -245,9 +245,9 @@ V sadě Visual Studio, můžete nakreslit *diagram komponent* na zobrazit pomoc�
   
      Pokud chcete, můžete zde jeho název změnit.  
   
-3.  Otevřete nebo vytvořte další diagram komponent.  
+3. Otevřete nebo vytvořte další diagram komponent.  
   
-4.  Přetáhněte typ z Průzkumníku modelů UML do diagramu.  
+4. Přetáhněte typ z Průzkumníku modelů UML do diagramu.  
   
      Typ se v diagramu zobrazí jako komponenta.  
   
@@ -255,7 +255,7 @@ V sadě Visual Studio, můžete nakreslit *diagram komponent* na zobrazit pomoc�
   
      Nyní můžete dovnitř přidat části.  
   
-##  <a name="Designing"></a> Navrhování komponent  
+## <a name="Designing"></a> Navrhování komponent  
   
 ### <a name="describing-how-the-parts-collaborate"></a>Popis způsobu spolupráce částí  
  Můžete nakreslit sekvenční diagram zobrazující způsob, jak spolu části vzájemně spolupracují v reakci na zprávu, která dorazí na nadřazenou komponentu.  
@@ -274,23 +274,23 @@ V sadě Visual Studio, můžete nakreslit *diagram komponent* na zobrazit pomoc�
   
 ##### <a name="to-draw-a-sequence-diagram-that-shows-collaboration-between-parts"></a>Nakreslení sekvenčního diagramu, který zobrazuje spolupráci mezi částmi  
   
-1.  Vytvořte nový sekvenční diagram.  
+1. Vytvořte nový sekvenční diagram.  
   
      Další informace najdete v tématu [UML Sequence Diagrams: Pokyny pro](../modeling/uml-sequence-diagrams-guidelines.md).  
   
-2.  Vytvořte životnost pro externí komponentu, uživatele, zařízení nebo jiný objekt aktor (1), který odesílá zprávy této komponentě.  
+2. Vytvořte životnost pro externí komponentu, uživatele, zařízení nebo jiný objekt aktor (1), který odesílá zprávy této komponentě.  
   
      Můžete nastavit **objektu Actor** vlastnosti této životnosti na hodnotu true, to znamená, že je mimo uvažovanou komponentu. Nad životností se zobrazí obrázek postavičky.  
   
-3.  Vytvořte životnost pro poskytované rozhraní (2) této komponenty, na kterou vybraný objekt aktor odesílá zprávy.  
+3. Vytvořte životnost pro poskytované rozhraní (2) této komponenty, na kterou vybraný objekt aktor odesílá zprávy.  
   
-4.  Vytvořte životnost pro každou část (3) komponenty.  
+4. Vytvořte životnost pro každou část (3) komponenty.  
   
-5.  Vytvořte životnost pro každé požadované rozhraní (4) komponenty.  
+5. Vytvořte životnost pro každé požadované rozhraní (4) komponenty.  
   
-6.  Nakreslete zprávy od externího objektu aktor (5). Zobrazte způsob předávání zpráv do částí a způsob spolupráce při odpovídání na zprávu.  
+6. Nakreslete zprávy od externího objektu aktor (5). Zobrazte způsob předávání zpráv do částí a způsob spolupráce při odpovídání na zprávu.  
   
-7.  V případě potřeby zobrazte zprávy odeslané do požadovaného rozhraní (6). V rámci spuštění zprávy nezobrazujte žádné podrobnosti.  
+7. V případě potřeby zobrazte zprávy odeslané do požadovaného rozhraní (6). V rámci spuštění zprávy nezobrazujte žádné podrobnosti.  
   
 ### <a name="is-the-component-more-than-its-parts"></a>Je komponenta více než její části?  
  V některých případech není komponenta nic víc než název připojený ke kolekci částí. Veškerou práci provádí části a v době spuštění neexistuje žádný kód či jiný artefakt, který by představoval komponentu.  
@@ -309,11 +309,11 @@ V sadě Visual Studio, můžete nakreslit *diagram komponent* na zobrazit pomoc�
 ### <a name="defining-data-and-classes"></a>Definování dat a tříd  
  Diagram tříd UML lze použít k popisu podrobného obsahu:  
   
--   Rozhraní komponent. Když do komponenty přidáváte vyžadovaný nebo poskytovaný port, zobrazí se rozhraní v Průzkumníku modelů UML. Můžete jej přetáhnout nebo zkopírovat do diagramu tříd UML, čímž zobrazíte jeho atributy, operace a vztahy s jinými rozhraními.  
+- Rozhraní komponent. Když do komponenty přidáváte vyžadovaný nebo poskytovaný port, zobrazí se rozhraní v Průzkumníku modelů UML. Můžete jej přetáhnout nebo zkopírovat do diagramu tříd UML, čímž zobrazíte jeho atributy, operace a vztahy s jinými rozhraními.  
   
--   Data předaná v parametrech operací v rozhraní.  
+- Data předaná v parametrech operací v rozhraní.  
   
--   Data uložená v komponentách, například jak ukazují toky objektů v diagramech aktivit.  
+- Data uložená v komponentách, například jak ukazují toky objektů v diagramech aktivit.  
   
 ### <a name="general-dependencies-between-components"></a>Obecné závislosti mezi komponentami  
  Diagram komponent lze použít pouze k zobrazení hlavních částí návrhu a jejich vzájemných závislostí.  

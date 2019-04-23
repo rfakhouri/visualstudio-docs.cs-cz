@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: d521e621436d02329b21e37a2ebfc47eef65f0b8
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 94712279b09a4def616ed264483b894c673bafc4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55931023"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60062084"
 ---
 # <a name="create-parameterized-tableadapter-queries"></a>Vytvoření parametrizovaných dotazů TableAdapter
 
@@ -38,40 +38,40 @@ Vytvoření parametrizovaných dotazů TableAdapter v **Návrhář Dataset**. M�
 
 ### <a name="to-create-a-parameterized-query-in-the-dataset-designer"></a>Vytvoření parametrického dotazu v návrháři datových sad
 
--   Vytvoření nového TableAdapter, přidáte klauzuli WHERE se požadované parametry do příkazu SQL. Další informace najdete v tématu [vytvoření a konfigurace objektů TableAdapter](../data-tools/create-and-configure-tableadapters.md).
+- Vytvoření nového TableAdapter, přidáte klauzuli WHERE se požadované parametry do příkazu SQL. Další informace najdete v tématu [vytvoření a konfigurace objektů TableAdapter](../data-tools/create-and-configure-tableadapters.md).
 
      -nebo-
 
--   Přidáte dotaz na existující TableAdapter, přidáte klauzuli WHERE se požadované parametry do příkazu SQL.
+- Přidáte dotaz na existující TableAdapter, přidáte klauzuli WHERE se požadované parametry do příkazu SQL.
 
 ### <a name="to-create-a-parameterized-query-while-designing-a-data-bound-form"></a>Chcete-li vytvořit parametrický dotaz při návrhu formuláře vázané na data
 
-1.  Vyberte ovládací prvek na formuláři, který je již vázán na datovou sadu. Další informace najdete v tématu [ovládací prvky vazby Windows Forms k datům v sadě Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md).
+1. Vyberte ovládací prvek na formuláři, který je již vázán na datovou sadu. Další informace najdete v tématu [ovládací prvky vazby Windows Forms k datům v sadě Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md).
 
-2.  Na **Data** nabídce vyberte možnost **přidat dotaz**.
+2. Na **Data** nabídce vyberte možnost **přidat dotaz**.
 
-3.  Dokončení **Tvůrce kritérií vyhledávání** dialogovém okně Přidání klauzuli WHERE se požadované parametry pro příkaz jazyka SQL.
+3. Dokončení **Tvůrce kritérií vyhledávání** dialogovém okně Přidání klauzuli WHERE se požadované parametry pro příkaz jazyka SQL.
 
 ### <a name="to-add-a-query-to-an-existing-data-bound-form"></a>Chcete-li přidat dotaz do existujícího formuláře vázané na data
 
-1.  Otevřete formulář v nástrojích pro **Návrháře formulářů Windows**.
+1. Otevřete formulář v nástrojích pro **Návrháře formulářů Windows**.
 
-2.  Na **Data** nabídce vyberte možnost **přidat dotaz** nebo **inteligentní značky dat**.
+2. Na **Data** nabídce vyberte možnost **přidat dotaz** nebo **inteligentní značky dat**.
 
     > [!NOTE]
     > Pokud **přidat dotaz** není k dispozici na **Data** nabídku, vyberte ovládací prvek na formuláři, zobrazí zdroj dat, které chcete přidat Parametrizace do. Například, pokud data ve formuláři se zobrazí <xref:System.Windows.Forms.DataGridView> ovládací prvek, vyberte ji. Pokud formulář pro zobrazení dat v jednotlivých ovládacích prvků, vyberte libovolný ovládací prvek vázaný na data.
 
-3.  V **tabulky zdroje dat vyberte** oblasti, vyberte tabulku, do které chcete přidat parametrizace.
+3. V **tabulky zdroje dat vyberte** oblasti, vyberte tabulku, do které chcete přidat parametrizace.
 
-4.  Zadejte název **nový název dotazu** pole, pokud vytváříte nový dotaz.
+4. Zadejte název **nový název dotazu** pole, pokud vytváříte nový dotaz.
 
      -nebo-
 
      Vybrat dotaz v **existující název dotazu** pole.
 
-5.  V **Text dotazu** zadejte dotaz, který používá parametry.
+5. V **Text dotazu** zadejte dotaz, který používá parametry.
 
-6.  Vyberte **OK**.
+6. Vyberte **OK**.
 
      Ovládací prvek pro vstupní parametr a s **zatížení** tlačítko se přidá na formulář v nástrojích <xref:System.Windows.Forms.ToolStrip> ovládacího prvku.
 
@@ -92,11 +92,11 @@ Pokud tento dotaz na objektu typu TableAdapter, můžete dotazovat na pro všech
 
 Pokud chcete povolit dotaz tak, aby přijímal hodnoty null:
 
-1.  V **Návrhář Dataset**, vyberte dotaz TableAdapter, které je potřeba přijmout hodnoty null parametrů.
+1. V **Návrhář Dataset**, vyberte dotaz TableAdapter, které je potřeba přijmout hodnoty null parametrů.
 
-2.  V **vlastnosti** okně **parametry**, pak klikněte na tlačítko se třemi tečkami (**...** ) tlačítko Otevřít **Editor kolekce parametrů**.
+2. V **vlastnosti** okně **parametry**, pak klikněte na tlačítko se třemi tečkami (**...** ) tlačítko Otevřít **Editor kolekce parametrů**.
 
-3.  Vyberte parametr, který povoluje hodnoty null a nastavte **AllowDbNull** vlastnost `true`.
+3. Vyberte parametr, který povoluje hodnoty null a nastavte **AllowDbNull** vlastnost `true`.
 
 ## <a name="see-also"></a>Viz také:
 

@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6aa788fafd7b07f1224bb4abf6bfe527109b3bc6
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: a6ad2051212a943cea805579f0f1ab083af60602
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56692648"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60057248"
 ---
 # <a name="folder-element-visual-studio-project-templates"></a>Folder – element (šablony projektů Visual Studio)
 Určuje složku, která se přidá do projektu.
@@ -62,7 +62,7 @@ Určuje složku, která se přidá do projektu.
 
  Uspořádat do složek v šabloně položky projektu můžete použít některý z následujících metod:
 
--   Do šablony zahrnout složky *ZIP* a přidejte do projektu *.vstemplate* souboru zadáte cestu k souboru v `ProjectItem` elementy bez `Folder` prvky. Toto je doporučená metoda. Příklad:
+- Do šablony zahrnout složky *ZIP* a přidejte do projektu *.vstemplate* souboru zadáte cestu k souboru v `ProjectItem` elementy bez `Folder` prvky. Toto je doporučená metoda. Příklad:
 
      `...`
 
@@ -72,7 +72,7 @@ Určuje složku, která se přidá do projektu.
 
      `...`
 
--   Do šablony zahrnout složky *ZIP* a přidejte do projektu *.vstemplate* soubor s `Folder` elementy. Příklad:
+- Do šablony zahrnout složky *ZIP* a přidejte do projektu *.vstemplate* soubor s `Folder` elementy. Příklad:
 
      `...`
 
@@ -86,7 +86,7 @@ Určuje složku, která se přidá do projektu.
 
      `...`
 
--   Nezahrnují složek v šabloně *ZIP* souboru, ale přidat složky pomocí `TargetFileName` atribut `ProjectItem` elementu. Příklad:
+- Nezahrnují složek v šabloně *ZIP* souboru, ale přidat složky pomocí `TargetFileName` atribut `ProjectItem` elementu. Příklad:
 
      `...`
 

@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2230dab0fc32a6aa4a88c5b4d6254a09caaa9e61
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 56a3f450cd41db34596c6fd5bbe9b07292aa5070
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56609160"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055701"
 ---
 # <a name="save-and-export-performance-tools-data"></a>Uložení a export dat nástrojů pro měření výkonu
 Tento článek popisuje, jak uložit a exportovat datových souborů výkonu.
@@ -25,23 +25,23 @@ Tento článek popisuje, jak uložit a exportovat datových souborů výkonu.
 
 #### <a name="to-save-an-analyzed-performance-report-from-the-performance-explorer"></a>Chcete-li uložit zprávu o analýze výkonu z prohlížeč výkonu
 
-1.  V části **sestavy**, klikněte pravým tlačítkem na soubor dat profilování, který chcete analyzovat a pak klikněte na tlačítko **uložit analyzovat**.
+1. V části **sestavy**, klikněte pravým tlačítkem na soubor dat profilování, který chcete analyzovat a pak klikněte na tlačítko **uložit analyzovat**.
 
-2.  V **uložit Data analyzovat** dialogové okno pole, zadejte adresář a pak zadejte název souboru.
+2. V **uložit Data analyzovat** dialogové okno pole, zadejte adresář a pak zadejte název souboru.
 
-3.  Klikněte na tlačítko **uložit.**
+3. Klikněte na tlačítko **uložit.**
 
 #### <a name="to-save-an-analyzed-performance-report-from-the-report-view-window"></a>Chcete-li uložit zprávu o analýze výkonu z okna zobrazení sestavy
 
-1.  Otevření dat profilování (. *Vsp*) soubor v okně zobrazení sestavy.
+1. Otevření dat profilování (. *Vsp*) soubor v okně zobrazení sestavy.
 
-2.  (Volitelné) Použijte filtr na data. Další informace najdete v tématu [filtr zobrazení sestav výkonu](../profiling/performance-report-view-filter.md).
+2. (Volitelné) Použijte filtr na data. Další informace najdete v tématu [filtr zobrazení sestav výkonu](../profiling/performance-report-view-filter.md).
 
-3.  Klikněte na tlačítko **uložit analyzovat** na panelu nástrojů okna zobrazení sestavy.
+3. Klikněte na tlačítko **uložit analyzovat** na panelu nástrojů okna zobrazení sestavy.
 
-4.  V **uložit Data analyzovat** dialogové okno pole, zadejte adresář a pak zadejte název souboru.
+4. V **uložit Data analyzovat** dialogové okno pole, zadejte adresář a pak zadejte název souboru.
 
-5.  Klikněte na tlačítko **uložit.**
+5. Klikněte na tlačítko **uložit.**
 
 ## <a name="how-to-export-profiling-tools-reports-to-an-xml-or-csv-file"></a>Postupy: Nástroje pro profilaci export sestavy do souboru .xml nebo .csv
  Můžete exportovat z jednoho nebo více zobrazení sestav. *vsp* souboru nebo. *vsps* profilace datový soubor jako bude čárkami oddělený nebo soubor XML. Můžete filtrovat data v okně zobrazení sestava před exportem nebo mohou exportovat sestavy zobrazení celého datového souboru z **prohlížeč výkonu** okna.
@@ -51,39 +51,39 @@ Tento článek popisuje, jak uložit a exportovat datových souborů výkonu.
 
 #### <a name="to-export-performance-reports-from-the-performance-explorer-window"></a>Export sestavy o výkonu z okna prohlížeče výkonu
 
-1.  V **prohlížeč výkonu**, vyberte sestavu a klikněte pravým tlačítkem a vyberte **exportovat**.
+1. V **prohlížeč výkonu**, vyberte sestavu a klikněte pravým tlačítkem a vyberte **exportovat**.
 
      **Export sestavy** zobrazí se dialogové okno.
 
-2.  Vyberte zobrazení sestav, který chcete exportovat.
+2. Vyberte zobrazení sestav, který chcete exportovat.
 
-3.  V části **předpona sestavy**, zadejte předponu, kterou chcete přidat k názvu sestavy.
+3. V části **předpona sestavy**, zadejte předponu, kterou chcete přidat k názvu sestavy.
 
-4.  V části **umístění exportované sestavy**, zadejte adresář.
+4. V části **umístění exportované sestavy**, zadejte adresář.
 
-5.  V části **formát exportované sestavy**, vyberte (oddělený čárkami) (\*CSV\), nebo XML Data (\*.xml\).
+5. V části **formát exportované sestavy**, vyberte (oddělený čárkami) (\*CSV\), nebo XML Data (\*.xml\).
 
-6.  Klikněte na tlačítko **exportovat**.
+6. Klikněte na tlačítko **exportovat**.
 
      Každé zobrazení sestavy se uloží do samostatného souboru, který je pojmenován \<předpony > _\<název zobrazení sestavy >.\< sdílený svazek clusteru&#124;xml >
 
 #### <a name="to-export-performance-reports-from-the-report-view-window"></a>Export sestavy o výkonu z okna zobrazení sestavy
 
-1.  Otevřít. *vsp* souborů v okně zobrazení sestavy.
+1. Otevřít. *vsp* souborů v okně zobrazení sestavy.
 
-2.  (Volitelné) Použijte filtr na data. Další informace najdete v tématu [filtr zobrazení sestav výkonu](../profiling/performance-report-view-filter.md).
+2. (Volitelné) Použijte filtr na data. Další informace najdete v tématu [filtr zobrazení sestav výkonu](../profiling/performance-report-view-filter.md).
 
-3.  Klikněte na tlačítko **Export sestavy** na panelu nástrojů okna zobrazení sestavy.
+3. Klikněte na tlačítko **Export sestavy** na panelu nástrojů okna zobrazení sestavy.
 
-4.  Vyberte zobrazení sestav, který chcete exportovat.
+4. Vyberte zobrazení sestav, který chcete exportovat.
 
-5.  V části **předpona sestavy**, zadejte předponu, kterou chcete přidat k názvu sestavy.
+5. V části **předpona sestavy**, zadejte předponu, kterou chcete přidat k názvu sestavy.
 
-6.  V části **umístění exportované sestavy**, zadejte adresář.
+6. V části **umístění exportované sestavy**, zadejte adresář.
 
-7.  V části **formát exportované sestavy**, vyberte (oddělený čárkami) (\*CSV), nebo XML Data (\*.xml).
+7. V části **formát exportované sestavy**, vyberte (oddělený čárkami) (\*CSV), nebo XML Data (\*.xml).
 
-8.  Klikněte na tlačítko **exportovat**.
+8. Klikněte na tlačítko **exportovat**.
 
      Každé zobrazení sestavy se uloží do samostatného souboru, který je pojmenován \<předpony > _\<název zobrazení sestavy >.\< sdílený svazek clusteru&#124;xml >
 

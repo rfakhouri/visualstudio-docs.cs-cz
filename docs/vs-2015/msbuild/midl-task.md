@@ -27,12 +27,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 883c56ce2bd272e508bc79d1d0c07db02350862d
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: c1404ae5fce31eb59d2bb484ce1d97956f4cfefc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59657425"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60062032"
 ---
 # <a name="midl-task"></a>MIDL – úloha
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ Zabalí nástroj kompilátoru Microsoft Interface Definition Language (MIDL), mi
 ## <a name="parameters"></a>Parametry  
  Následující tabulka popisuje parametry **MIDL** úloh. Většinu úkolů parametrů a několik sad parametrů, odpovídají možnost příkazového řádku.  
   
--   **AdditionalIncludeDirectories**  
+- **AdditionalIncludeDirectories**  
   
      Volitelné **String []** parametru.  
   
@@ -50,7 +50,7 @@ Zabalí nástroj kompilátoru Microsoft Interface Definition Language (MIDL), mi
   
      Další informace najdete v tématu **/I** možnost v "Příkazového řádku MIDL" [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) webu.  
   
--   **AdditionalOptions**  
+- **AdditionalOptions**  
   
      Volitelné **řetězec** parametru.  
   
@@ -58,7 +58,7 @@ Zabalí nástroj kompilátoru Microsoft Interface Definition Language (MIDL), mi
   
      Další informace najdete v tématu "Reference k příkazovému řádku MIDL" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) webu.  
   
--   **ApplicationConfigurationMode**  
+- **ApplicationConfigurationMode**  
   
      Volitelné **logická** parametru.  
   
@@ -66,7 +66,7 @@ Zabalí nástroj kompilátoru Microsoft Interface Definition Language (MIDL), mi
   
      Další informace najdete v tématu **/app_config** možnost v "Příkazového řádku MIDL" [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) webu.  
   
--   **ClientStubFile**  
+- **ClientStubFile**  
   
      Volitelné **řetězec** parametru.  
   
@@ -74,7 +74,7 @@ Zabalí nástroj kompilátoru Microsoft Interface Definition Language (MIDL), mi
   
      Další informace najdete v tématu **/cstub** možnost v "Příkazového řádku MIDL" [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) webu. Viz také **ServerStubFile** parametr v této tabulce.  
   
--   **CPreprocessOptions**  
+- **CPreprocessOptions**  
   
      Volitelné **řetězec** parametru.  
   
@@ -82,7 +82,7 @@ Zabalí nástroj kompilátoru Microsoft Interface Definition Language (MIDL), mi
   
      Další informace najdete v tématu **/cpp_opt** možnost v "Příkazového řádku MIDL" [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) webu.  
   
--   **DefaultCharType**  
+- **DefaultCharType**  
   
      Volitelné **řetězec** parametru.  
   
@@ -98,7 +98,7 @@ Zabalí nástroj kompilátoru Microsoft Interface Definition Language (MIDL), mi
   
      Další informace najdete v tématu **/char** možnost v "Příkazového řádku MIDL" [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) webu.  
   
--   **DllDataFileName**  
+- **DllDataFileName**  
   
      Volitelné **řetězec** parametru.  
   
@@ -106,7 +106,7 @@ Zabalí nástroj kompilátoru Microsoft Interface Definition Language (MIDL), mi
   
      Další informace najdete v tématu **/dlldata** možnost v "Příkazového řádku MIDL" [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) webu.  
   
--   **EnableErrorChecks**  
+- **EnableErrorChecks**  
   
      Volitelné **řetězec** parametru.  
   
@@ -114,7 +114,7 @@ Zabalí nástroj kompilátoru Microsoft Interface Definition Language (MIDL), mi
   
      Zadejte jednu z následujících hodnot, z nichž každý odpovídá možnosti příkazového řádku.  
   
-    |Value|Možnost příkazového řádku|  
+    |Hodnota|Možnost příkazového řádku|  
     |-----------|--------------------------|  
     |**Žádné**|**/ Error none**|  
     |**EnableCustom**|**/error**|  
@@ -122,7 +122,7 @@ Zabalí nástroj kompilátoru Microsoft Interface Definition Language (MIDL), mi
   
      Další informace najdete v tématu **/Error** možnost v "Příkazového řádku MIDL" [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) webu.  
   
--   **ErrorCheckAllocations**  
+- **ErrorCheckAllocations**  
   
      Volitelné **logická** parametru.  
   
@@ -130,7 +130,7 @@ Zabalí nástroj kompilátoru Microsoft Interface Definition Language (MIDL), mi
   
      Další informace najdete v tématu **/Error allocation** možnost v "Příkazového řádku MIDL" [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) webu.  
   
--   **ErrorCheckBounds**  
+- **ErrorCheckBounds**  
   
      Volitelné **logická** parametru.  
   
@@ -138,7 +138,7 @@ Zabalí nástroj kompilátoru Microsoft Interface Definition Language (MIDL), mi
   
      Další informace najdete v tématu **/Error bounds_check** možnost v "Příkazového řádku MIDL" [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) webu.  
   
--   **ErrorCheckEnumRange**  
+- **ErrorCheckEnumRange**  
   
      Volitelné **logická** parametru.  
   
@@ -146,7 +146,7 @@ Zabalí nástroj kompilátoru Microsoft Interface Definition Language (MIDL), mi
   
      Další informace najdete v tématu **/Error enum** možnost Nápověda příkazového řádku (**/?**) pro midl.exe.  
   
--   **ErrorCheckRefPointers**  
+- **ErrorCheckRefPointers**  
   
      Volitelné **logická** parametru.  
   
@@ -154,7 +154,7 @@ Zabalí nástroj kompilátoru Microsoft Interface Definition Language (MIDL), mi
   
      Další informace najdete v tématu **/Error ref** možnost v "Příkazového řádku MIDL" [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) webu.  
   
--   **ErrorCheckStubData**  
+- **ErrorCheckStubData**  
   
      Volitelné **logická** parametru.  
   
@@ -162,7 +162,7 @@ Zabalí nástroj kompilátoru Microsoft Interface Definition Language (MIDL), mi
   
      Další informace najdete v tématu **/Error stub_data** možnost v "Příkazového řádku MIDL" [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) webu.  
   
--   **GenerateClientFiles**  
+- **GenerateClientFiles**  
   
      Volitelné **řetězec** parametru.  
   
@@ -177,7 +177,7 @@ Zabalí nástroj kompilátoru Microsoft Interface Definition Language (MIDL), mi
   
      Další informace najdete v tématu **/Client** možnost v "Příkazového řádku MIDL" [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) webu.  
   
--   **GenerateServerFiles**  
+- **GenerateServerFiles**  
   
      Volitelné **řetězec** parametru.  
   
@@ -185,14 +185,14 @@ Zabalí nástroj kompilátoru Microsoft Interface Definition Language (MIDL), mi
   
      Zadejte jednu z následujících hodnot, z nichž každý odpovídá možnosti příkazového řádku.  
   
-    |Hodnota|Možnost příkazového řádku|  
+    |Value|Možnost příkazového řádku|  
     |-----------|--------------------------|  
     |**Žádné**|**/ Server žádné**|  
     |**Zástupné procedury**|**Zástupná Procedura/Server**|  
   
      Další informace najdete v tématu **/server** možnost v "Příkazového řádku MIDL" [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) webu.  
   
--   **GenerateStublessProxies**  
+- **GenerateStublessProxies**  
   
      Volitelné **logická** parametru.  
   
@@ -200,7 +200,7 @@ Zabalí nástroj kompilátoru Microsoft Interface Definition Language (MIDL), mi
   
      Další informace najdete v tématu **/oicf** možnost v "Příkazového řádku MIDL" [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) webu.  
   
--   **GenerateTypeLibrary**  
+- **GenerateTypeLibrary**  
   
      Volitelné **logická** parametru.  
   
@@ -208,7 +208,7 @@ Zabalí nástroj kompilátoru Microsoft Interface Definition Language (MIDL), mi
   
      Další informace najdete v tématu **/notlb** možnost v "Příkazového řádku MIDL" [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) webu.  
   
--   **HeaderFileName**  
+- **HeaderFileName**  
   
      Volitelné **řetězec** parametru.  
   
@@ -216,7 +216,7 @@ Zabalí nástroj kompilátoru Microsoft Interface Definition Language (MIDL), mi
   
      Další informace najdete v tématu **/h** nebo **/header** možnost v "Příkazového řádku MIDL" [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) webu.  
   
--   **IgnoreStandardIncludePath**  
+- **IgnoreStandardIncludePath**  
   
      Volitelné **logická** parametru.  
   
@@ -224,7 +224,7 @@ Zabalí nástroj kompilátoru Microsoft Interface Definition Language (MIDL), mi
   
      Další informace najdete v tématu **/no_def_idir** možnost v "Příkazového řádku MIDL" [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) webu.  
   
--   **InterfaceIdentifierFileName**  
+- **InterfaceIdentifierFileName**  
   
      Volitelné **řetězec** parametru.  
   
@@ -232,7 +232,7 @@ Zabalí nástroj kompilátoru Microsoft Interface Definition Language (MIDL), mi
   
      Další informace najdete v tématu **/iid** možnost v "Příkazového řádku MIDL" [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) webu.  
   
--   **LocaleID**  
+- **LocaleID**  
   
      Volitelné **int** parametru.  
   
@@ -240,7 +240,7 @@ Zabalí nástroj kompilátoru Microsoft Interface Definition Language (MIDL), mi
   
      Další informace najdete v tématu **/LCID** možnost v "Příkazového řádku MIDL" [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) webu. Také naleznete v tématu "Národní prostředí ID přiřazené službou Microsoft" na webu MSDN.  
   
--   **MkTypLibCompatible**  
+- **MkTypLibCompatible**  
   
      Volitelné **logická** parametru.  
   
@@ -248,7 +248,7 @@ Zabalí nástroj kompilátoru Microsoft Interface Definition Language (MIDL), mi
   
      Další informace najdete v tématu **/mktyplib203** možnost v "Příkazového řádku MIDL" [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) webu. Také naleznete v tématu "Syntaxi souboru ODL" na webu MSDN.  
   
--   **OutputDirectory**  
+- **OutputDirectory**  
   
      Volitelné **řetězec** parametru.  
   
@@ -256,7 +256,7 @@ Zabalí nástroj kompilátoru Microsoft Interface Definition Language (MIDL), mi
   
      Další informace najdete v tématu **/out** možnost v "Příkazového řádku MIDL" [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) webu.  
   
--   **PreprocessorDefinitions**  
+- **PreprocessorDefinitions**  
   
      Volitelné **String []** parametru.  
   
@@ -264,7 +264,7 @@ Zabalí nástroj kompilátoru Microsoft Interface Definition Language (MIDL), mi
   
      Další informace najdete v tématu **/D** možnost v "Příkazového řádku MIDL" [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) webu. Další informace naleznete **UndefinePreprocessorDefinitions** parametr v této tabulce.  
   
--   **ProxyFileName**  
+- **ProxyFileName**  
   
      Volitelné **řetězec** parametru.  
   
@@ -272,7 +272,7 @@ Zabalí nástroj kompilátoru Microsoft Interface Definition Language (MIDL), mi
   
      Další informace najdete v tématu **/proxy** možnost v "Příkazového řádku MIDL" [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) webu.  
   
--   **RedirectOutputAndErrors**  
+- **RedirectOutputAndErrors**  
   
      Volitelné **řetězec** parametru.  
   
@@ -280,7 +280,7 @@ Zabalí nástroj kompilátoru Microsoft Interface Definition Language (MIDL), mi
   
      Další informace najdete v tématu **/o** možnost v "Příkazového řádku MIDL" [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) webu.  
   
--   **ServerStubFile**  
+- **ServerStubFile**  
   
      Volitelné **řetězec** parametru.  
   
@@ -288,13 +288,13 @@ Zabalí nástroj kompilátoru Microsoft Interface Definition Language (MIDL), mi
   
      Další informace najdete v tématu **/sstub** možnost v "Příkazového řádku MIDL" [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) webu. Další informace naleznete **ClientStubFile** parametr v této tabulce.  
   
--   **Zdroj**  
+- **Zdroj**  
   
      Vyžaduje `ITaskItem[]` parametru.  
   
      Určuje seznam zdrojových souborů, oddělené mezerami.  
   
--   **StructMemberAlignment**  
+- **StructMemberAlignment**  
   
      Volitelné **řetězec** parametru.  
   
@@ -302,7 +302,7 @@ Zabalí nástroj kompilátoru Microsoft Interface Definition Language (MIDL), mi
   
      Zadejte jednu z následujících hodnot, z nichž každý odpovídá možnosti příkazového řádku.  
   
-    |Hodnota|Možnost příkazového řádku|  
+    |Value|Možnost příkazového řádku|  
     |-----------|--------------------------|  
     |**NotSet**|*\<žádné >*|  
     |**1**|**/Zp1**|  
@@ -312,7 +312,7 @@ Zabalí nástroj kompilátoru Microsoft Interface Definition Language (MIDL), mi
   
      Další informace najdete v tématu **/zp** možnost v "Příkazového řádku MIDL" [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) webu. **/Zp** možnost je ekvivalentní **/pack** možnost a starší **/ align** možnost.  
   
--   **SuppressCompilerWarnings**  
+- **SuppressCompilerWarnings**  
   
      Volitelné **logická** parametru.  
   
@@ -320,7 +320,7 @@ Zabalí nástroj kompilátoru Microsoft Interface Definition Language (MIDL), mi
   
      Další informace najdete v tématu **/no_warn** možnost v "Příkazového řádku MIDL" [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) webu.  
   
--   **SuppressStartupBanner**  
+- **SuppressStartupBanner**  
   
      Volitelné `Boolean` parametru.  
   
@@ -328,7 +328,7 @@ Zabalí nástroj kompilátoru Microsoft Interface Definition Language (MIDL), mi
   
      Další informace najdete v tématu **/nologo** možnost v "Příkazového řádku MIDL" [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) webu.  
   
--   **TargetEnvironment**  
+- **TargetEnvironment**  
   
      Volitelné **řetězec** parametru.  
   
@@ -345,13 +345,13 @@ Zabalí nástroj kompilátoru Microsoft Interface Definition Language (MIDL), mi
   
      Další informace najdete v tématu **/env** možnost v "Příkazového řádku MIDL" [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) webu.  
   
--   **TrackerLogDirectory**  
+- **TrackerLogDirectory**  
   
      Volitelné `String` parametru.  
   
      Určuje zprostředkující adresář, kde jsou uloženy protokoly sledování pro tuto úlohu.  
   
--   **TypeLibFormat**  
+- **TypeLibFormat**  
   
      Volitelné **řetězec** parametru.  
   
@@ -366,7 +366,7 @@ Zabalí nástroj kompilátoru Microsoft Interface Definition Language (MIDL), mi
   
      Další informace najdete v tématu **/newtlb** a **/oldtlb** možnosti v "Příkazového řádku MIDL" [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) webu.  
   
--   **TypeLibraryName**  
+- **TypeLibraryName**  
   
      Volitelné **řetězec** parametru.  
   
@@ -374,7 +374,7 @@ Zabalí nástroj kompilátoru Microsoft Interface Definition Language (MIDL), mi
   
      Další informace najdete v tématu **/TLB** možnost v "Příkazového řádku MIDL" [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) webu.  
   
--   **UndefinePreprocessorDefinitions**  
+- **UndefinePreprocessorDefinitions**  
   
      Volitelné **String []** parametru.  
   
@@ -382,7 +382,7 @@ Zabalí nástroj kompilátoru Microsoft Interface Definition Language (MIDL), mi
   
      Další informace najdete v tématu **/U** možnost v "Příkazového řádku MIDL" [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) webu. Další informace naleznete **PreprocessorDefinitions** parametr v této tabulce.  
   
--   **ValidateAllParameters**  
+- **ValidateAllParameters**  
   
      Volitelné `Boolean` parametru.  
   
@@ -390,7 +390,7 @@ Zabalí nástroj kompilátoru Microsoft Interface Definition Language (MIDL), mi
   
      Další informace najdete v tématu **/ robust** a **/no_robust** možnosti v "Příkazového řádku MIDL" [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) webu.  
   
--   **WarnAsError**  
+- **WarnAsError**  
   
      Volitelné `Boolean` parametru.  
   
@@ -400,7 +400,7 @@ Zabalí nástroj kompilátoru Microsoft Interface Definition Language (MIDL), mi
   
      Další informace najdete v tématu **/WX** možnosti v "Příkazového řádku MIDL" [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) webu. Další informace naleznete **WarningLevel** parametr v této tabulce.  
   
--   **WarningLevel**  
+- **WarningLevel**  
   
      Volitelné **řetězec** parametru.  
   

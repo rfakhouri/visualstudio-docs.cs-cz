@@ -8,30 +8,30 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ad05083fa8cb1310e9be0b0dabb8333cb840a466
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 46ce6f92acb7ed6e92af07729a14720d3a8421a8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55941488"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043248"
 ---
 # <a name="tutorial-1-create-a-picture-viewer"></a>Kurz 1: Vytvoření prohlížeče obrázků
 
 V tomto kurzu vytvoříte program, který načte obrázek ze souboru a zobrazí jej v okně. Další informace o použití **Návrháře formulářů Windows** se přetáhnout prvky jako tlačítka a pole obrázků ve formuláři, nastavit jejich vlastnosti a plynule změnit velikost formuláře pomocí kontejnerů. Můžete také začít psát kód. Získáte informace o následujících postupech:
 
--   Vytvořte nový projekt.
+- Vytvořte nový projekt.
 
--   Otestujte (vylaďte) aplikaci.
+- Otestujte (vylaďte) aplikaci.
 
--   Přidejte základní ovládací prvky jako zaškrtávací políčka a tlačítka do formuláře.
+- Přidejte základní ovládací prvky jako zaškrtávací políčka a tlačítka do formuláře.
 
--   Umístit ovládací prvky na formulář pomocí rozložení.
+- Umístit ovládací prvky na formulář pomocí rozložení.
 
--   Přidat **otevřít soubor** a **barva** dialogová okna do formuláře.
+- Přidat **otevřít soubor** a **barva** dialogová okna do formuláře.
 
--   Pište kód pomocí technologie IntelliSense a fragmentů kódu.
+- Pište kód pomocí technologie IntelliSense a fragmentů kódu.
 
--   Zápis obslužné rutiny události.
+- Zápis obslužné rutiny události.
 
 Jakmile skončíte, program bude vypadat jako na následujícím obrázku:
 

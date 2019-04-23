@@ -8,12 +8,12 @@ ms.assetid: efd27f00-7fe5-45f8-9b97-371af732be97
 caps.latest.revision: 4
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 14438e23e73e6c69ecfe94ee7ada379b0d2fad15
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5d48535bf8e2eb0c5204be0b06701b54cc6e365b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54783378"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60058171"
 ---
 # <a name="writing-to-the-user-settings-store"></a>Zápis do úložiště uživatelských nastavení
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,30 +22,30 @@ Uživatelská nastavení jsou zapisovatelné nastavení, jako je v **Nástroje /
   
 ### <a name="backing-up-your-user-settings"></a>Zálohování nastavení uživatele  
   
-1.  Musíte být schopni obnovit nastavení externí nástroje, aby mohli ladit a opakujte tento postup. Chcete-li to provést, musíte uložit původní nastavení tak, aby je mohli obnovit podle potřeby.  
+1. Musíte být schopni obnovit nastavení externí nástroje, aby mohli ladit a opakujte tento postup. Chcete-li to provést, musíte uložit původní nastavení tak, aby je mohli obnovit podle potřeby.  
   
-2.  Otevřete Regedit.exe.  
+2. Otevřete Regedit.exe.  
   
-3.  Přejděte na nástroje HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0Exp\External\\.  
+3. Přejděte na nástroje HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0Exp\External\\.  
   
     > [!NOTE]
     >  Ujistěte se, že máte před sebou klíč, který obsahuje \14.0Exp\ a ne \14.0\\. Když spustíte experimentální instanci sady Visual Studio, uživatelská nastavení jsou v podregistru "14.0Exp".  
   
-4.  Klikněte pravým tlačítkem na podklíč \External Tools\ a potom klikněte na tlačítko **exportovat**. Ujistěte se, že **Vybraná větev** zaškrtnuto.  
+4. Klikněte pravým tlačítkem na podklíč \External Tools\ a potom klikněte na tlačítko **exportovat**. Ujistěte se, že **Vybraná větev** zaškrtnuto.  
   
-5.  Výsledný soubor externí Tools.reg uložte.  
+5. Výsledný soubor externí Tools.reg uložte.  
   
-6.  Později, pokud chcete obnovit nastavení externí nástroje, vyberte klíč registru HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0Exp\External Tools\ a klikněte na tlačítko **odstranit** v místní nabídce.  
+6. Později, pokud chcete obnovit nastavení externí nástroje, vyberte klíč registru HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0Exp\External Tools\ a klikněte na tlačítko **odstranit** v místní nabídce.  
   
-7.  Když **Potvrdit odstranění klíče** dialogové okno se zobrazí, klikněte na tlačítko **Ano**.  
+7. Když **Potvrdit odstranění klíče** dialogové okno se zobrazí, klikněte na tlačítko **Ano**.  
   
-8.  Klikněte pravým tlačítkem na externí Tools.reg soubor, který jste předtím uložili, klikněte na tlačítko **otevřít v programu**a potom klikněte na tlačítko **Editor registru**.  
+8. Klikněte pravým tlačítkem na externí Tools.reg soubor, který jste předtím uložili, klikněte na tlačítko **otevřít v programu**a potom klikněte na tlačítko **Editor registru**.  
   
 ## <a name="writing-to-the-user-settings-store"></a>Zápis do úložiště uživatelských nastavení  
   
-1.  Vytvořte projekt VSIX s názvem UserSettingsStoreExtension a pak přidejte vlastní příkaz s názvem UserSettingsStoreCommand. Další informace o tom, jak vytvořit vlastní příkaz najdete v tématu [vytváření rozšíření pomocí příkazu nabídky](../extensibility/creating-an-extension-with-a-menu-command.md)  
+1. Vytvořte projekt VSIX s názvem UserSettingsStoreExtension a pak přidejte vlastní příkaz s názvem UserSettingsStoreCommand. Další informace o tom, jak vytvořit vlastní příkaz najdete v tématu [vytváření rozšíření pomocí příkazu nabídky](../extensibility/creating-an-extension-with-a-menu-command.md)  
   
-2.  V souboru UserSettingsStoreCommand.cs, přidejte následující příkazy using:  
+2. V souboru UserSettingsStoreCommand.cs, přidejte následující příkazy using:  
   
     ```csharp  
     using System.Collections.Generic;  
@@ -53,7 +53,7 @@ Uživatelská nastavení jsou zapisovatelné nastavení, jako je v **Nástroje /
     using Microsoft.VisualStudio.Shell.Settings;  
     ```  
   
-3.  V MenuItemCallback odstraňte tělo metody a získat uživatelské nastavení uložená, následujícím způsobem:  
+3. V MenuItemCallback odstraňte tělo metody a získat uživatelské nastavení uložená, následujícím způsobem:  
   
     ```csharp  
     private void MenuItemCallback(object sender, EventArgs e)  
@@ -63,7 +63,7 @@ Uživatelská nastavení jsou zapisovatelné nastavení, jako je v **Nástroje /
     }  
     ```  
   
-4.  Teď zjistěte, zda poznámkového bloku již nastaven jako externího nástroje. Je nutné iterovat všechny externí nástroje pro zjištění nastavení ToolCmd "Poznámkový blok", následujícím způsobem:  
+4. Teď zjistěte, zda poznámkového bloku již nastaven jako externího nástroje. Je nutné iterovat všechny externí nástroje pro zjištění nastavení ToolCmd "Poznámkový blok", následujícím způsobem:  
   
     ```csharp  
     private void MenuItemCallback(object sender, EventArgs e)  
@@ -87,7 +87,7 @@ Uživatelská nastavení jsou zapisovatelné nastavení, jako je v **Nástroje /
   
     ```  
   
-5.  Pokud program Poznámkový blok není nastavený jako externího nástroje, nastavte ho následujícím způsobem:  
+5. Pokud program Poznámkový blok není nastavený jako externího nástroje, nastavte ho následujícím způsobem:  
   
     ```vb  
     private void MenuItemCallback(object sender, EventArgs e)  
@@ -123,10 +123,10 @@ Uživatelská nastavení jsou zapisovatelné nastavení, jako je v **Nástroje /
     }  
     ```  
   
-6.  Testování kódu. Mějte na paměti, že ho Poznámkový blok přidá jako externího nástroje, takže se musí vrátit registru před jejím spuštěním podruhé.  
+6. Testování kódu. Mějte na paměti, že ho Poznámkový blok přidá jako externího nástroje, takže se musí vrátit registru před jejím spuštěním podruhé.  
   
-7.  Sestavte kód a spusťte ladění.  
+7. Sestavte kód a spusťte ladění.  
   
-8.  Na **nástroje** nabídky, klikněte na tlačítko **vyvolat UserSettingsStoreCommand**. Tato možnost přidá Poznámkový blok a **nástroje** nabídky.  
+8. Na **nástroje** nabídky, klikněte na tlačítko **vyvolat UserSettingsStoreCommand**. Tato možnost přidá Poznámkový blok a **nástroje** nabídky.  
   
 9. Teď byste měli vidět Poznámkový blok v nabídce Nástroje / možnosti nabídky a kliknutím na **Poznámkový blok** by měl vyvolat instance poznámkového bloku.

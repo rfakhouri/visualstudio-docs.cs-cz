@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 22704b0d754b9d77c45c1a7beb49e2e8863a3eb0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b6da7ef473f279c968c676c768e89a6f1145ae4c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54789230"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059159"
 ---
 # <a name="keyboard-shortcuts-and-modifier-keys-in-blend"></a>Klávesové zkratky a modifikační klávesy v Blendu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,8 +40,8 @@ Klávesové zkratky můžete urychlit práci díky snížení akce, které by vy
 ## <a name="modifier-keys"></a>Modifikační klávesy  
  Některé klávesové zkratky nejsou přidruženy položek nabídky, což znamená, že nemůžete použít [!INCLUDE[blend_subs](../includes/blend-subs-md.md)] uživatelské rozhraní pro jejich zjišťování. V následujících tématech seznamu klávesové zkratky, které mění chování nástroje nebo, které mění akce, jako je například změna velikosti objektu:  
   
--   [Modifikační klávesy návrhové plochy](../designers/artboard-modifier-keys-in-blend.md)  
+- [Modifikační klávesy návrhové plochy](../designers/artboard-modifier-keys-in-blend.md)  
   
--   [Modifikační klávesy nástroje Pero](../designers/pen-tool-modifier-keys-in-blend.md)  
+- [Modifikační klávesy nástroje Pero](../designers/pen-tool-modifier-keys-in-blend.md)  
   
--   [Modifikační klávesy nástroje Přímý výběr](../designers/direct-selection-tool-modifier-keys-in-blend.md)
+- [Modifikační klávesy nástroje Přímý výběr](../designers/direct-selection-tool-modifier-keys-in-blend.md)

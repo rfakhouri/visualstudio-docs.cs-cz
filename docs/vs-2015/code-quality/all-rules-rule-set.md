@@ -9,18 +9,18 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: e1b60c67cab2ed624d00b0c34ddcb01c213a3806
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 41757f4bf9054199584ead564edb3c2942877d5f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54775230"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060023"
 ---
 # <a name="all-rules-rule-set"></a>Sada pravidel Všechna pravidla
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Sada pravidel všechna pravidla obsahuje všechna pravidla pro spravovaný i nativní kód. Sada pravidel obsahuje všechna pravidla, které jsou popsány v následujících tématech:  
   
-1.  [Upozornění Analýzy kódu pro C/C++](../code-quality/code-analysis-for-c-cpp-warnings.md)  
+1. [Upozornění Analýzy kódu pro C/C++](../code-quality/code-analysis-for-c-cpp-warnings.md)  
   
-2.  [Upozornění Analýzy kódu pro spravovaný kód](../code-quality/code-analysis-for-managed-code-warnings.md)
+2. [Upozornění Analýzy kódu pro spravovaný kód](../code-quality/code-analysis-for-managed-code-warnings.md)

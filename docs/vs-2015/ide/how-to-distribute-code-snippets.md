@@ -11,12 +11,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bf0cff7902bfbf62dbb0e0929cf924505d37aed2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d1878fd1ce91842e8d03b6e78de244380df8eb2b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54799029"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054557"
 ---
 # <a name="how-to-distribute-code-snippets"></a>Postupy: Distribuce fragmentů kódu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,9 +28,9 @@ Můžete jednoduše poskytnout fragmenty svého kódu přátelům a nechat nains
 ## <a name="setting-up-the-extension"></a>Nastavení rozšíření  
  V tomto postupu použijeme stejný fragmentu kódu Hello World vytvořené v [názorný postup: Vytvoření fragmentu kódu](../ide/walkthrough-creating-a-code-snippet.md). Jsme dodá .snippet text, takže není nutné vrátit zpět a si ho.  
   
-1.  Vytvořte nový projekt VSIX s názvem **TestSnippet**. (**Soubor / nový / Project / Visual C# (nebo Visual Basic / rozšíření**)  
+1. Vytvořte nový projekt VSIX s názvem **TestSnippet**. (**Soubor / nový / Project / Visual C# (nebo Visual Basic / rozšíření**)  
   
-2.  V **TestSnippet** projektu, přidejte nový soubor XML a jeho volání **VBCodeSnippet.snippet**. Nahraďte obsah následujícím kódem:  
+2. V **TestSnippet** projektu, přidejte nový soubor XML a jeho volání **VBCodeSnippet.snippet**. Nahraďte obsah následujícím kódem:  
   
     ```xml  
     <?xml version="1.0" encoding="utf-8"?>  
@@ -58,19 +58,19 @@ Můžete jednoduše poskytnout fragmenty svého kódu přátelům a nechat nains
   
 #### <a name="setting-up-the-directory-structure"></a>Nastavení struktury adresáře  
   
-1.  V Průzkumníku řešení vyberte uzel projektu a přidejte složku, která má název, který chcete fragment kódu na Správce fragmentů kódů. V tomto případě by měl být **HelloWorldVB**.  
+1. V Průzkumníku řešení vyberte uzel projektu a přidejte složku, která má název, který chcete fragment kódu na Správce fragmentů kódů. V tomto případě by měl být **HelloWorldVB**.  
   
-2.  Soubor .snippet přesunout **HelloWorldVB** složky.  
+2. Soubor .snippet přesunout **HelloWorldVB** složky.  
   
-3.  V Průzkumníku řešení a vyberte soubor .snippet **vlastnosti** Ujistěte se, že okno **akce sestavení** je nastavena na **obsahu**, **kopírovat do výstupu Adresář** je nastavena na **vždy Kopírovat**, a **zahrnout do VSIX** je nastavena na **true**.  
+3. V Průzkumníku řešení a vyberte soubor .snippet **vlastnosti** Ujistěte se, že okno **akce sestavení** je nastavena na **obsahu**, **kopírovat do výstupu Adresář** je nastavena na **vždy Kopírovat**, a **zahrnout do VSIX** je nastavena na **true**.  
   
 #### <a name="adding-the-pkgdef-file"></a>Přidává se soubor .pkgdef  
   
-1.  Přidat textový soubor, který **HelloWorldVB** složku a pojmenujte ho **HelloWorldVB.pkgdef**. Tento soubor se používá k přidání určité klíče registru. V tomto případě přidá nový klíč  
+1. Přidat textový soubor, který **HelloWorldVB** složku a pojmenujte ho **HelloWorldVB.pkgdef**. Tento soubor se používá k přidání určité klíče registru. V tomto případě přidá nový klíč  
   
      **HKCU\Software\Microsoft\VisualStudio\14.0\Languages\CodeExpansions\Basic**.  
   
-2.  Přidejte následující řádky do souboru.  
+2. Přidejte následující řádky do souboru.  
   
     ```  
     // Visual Basic   
@@ -80,23 +80,23 @@ Můžete jednoduše poskytnout fragmenty svého kódu přátelům a nechat nains
   
      Pokud si projdete tento klíč, najdete v článku určení různých jazycích.  
   
-3.  V Průzkumníku řešení a vyberte soubor .pkgdef **vlastnosti** Ujistěte se, že okno **akce sestavení** je nastavena na **obsahu**, **kopírovat do výstupního adresáře**  je nastavena na **vždy Kopírovat**, a **zahrnout do VSIX** je nastavena na **true**.  
+3. V Průzkumníku řešení a vyberte soubor .pkgdef **vlastnosti** Ujistěte se, že okno **akce sestavení** je nastavena na **obsahu**, **kopírovat do výstupního adresáře**  je nastavena na **vždy Kopírovat**, a **zahrnout do VSIX** je nastavena na **true**.  
   
-4.  Přidejte soubor .pkgdef jako prostředek v manifestu VSIX. V souboru source.extension.vsixmanifest, přejděte **prostředky** kartě a klikněte na tlačítko **nový**.  
+4. Přidejte soubor .pkgdef jako prostředek v manifestu VSIX. V souboru source.extension.vsixmanifest, přejděte **prostředky** kartě a klikněte na tlačítko **nový**.  
   
-5.  V **přidat nové aktivum** dialogové okno, nastavte **typ** k **Microsoft.VisualStudio.VsPackage**, **typ** k **souborů v systém souborů**a **cesta** k **HelloWorldVB.pkgdef** (které by se zobrazit v rozevíracím seznamu).  
+5. V **přidat nové aktivum** dialogové okno, nastavte **typ** k **Microsoft.VisualStudio.VsPackage**, **typ** k **souborů v systém souborů**a **cesta** k **HelloWorldVB.pkgdef** (které by se zobrazit v rozevíracím seznamu).  
   
 ### <a name="testing-the-snippet"></a>Fragment kódu pro testování  
   
-1.  Nyní, abyste měli jistotu, že fragment kódu funguje v experimentální instanci sady Visual Studio. Experimentální instanci je druhý kopie sady Visual Studio, která je oddělená od ten, který můžete použít k zápisu kódu. Umožňuje pracovat na rozšíření, aniž by to ovlivnilo vývojového prostředí.  
+1. Nyní, abyste měli jistotu, že fragment kódu funguje v experimentální instanci sady Visual Studio. Experimentální instanci je druhý kopie sady Visual Studio, která je oddělená od ten, který můžete použít k zápisu kódu. Umožňuje pracovat na rozšíření, aniž by to ovlivnilo vývojového prostředí.  
   
-2.  Sestavte projekt a spusťte ladění. Druhou instanci aplikace Visual Studio by se zobrazit.  
+2. Sestavte projekt a spusťte ladění. Druhou instanci aplikace Visual Studio by se zobrazit.  
   
-3.  V experimentální instanci aplikace, přejděte na **nástroje / kód Správce fragmentů** a nastavit **jazyk** k **základní**. HelloWorldVB by se měla zobrazit jako jedna ze složek a byste měli rozbalte složku zobrazíte HelloWorldVB fragment kódu.  
+3. V experimentální instanci aplikace, přejděte na **nástroje / kód Správce fragmentů** a nastavit **jazyk** k **základní**. HelloWorldVB by se měla zobrazit jako jedna ze složek a byste měli rozbalte složku zobrazíte HelloWorldVB fragment kódu.  
   
-4.  Otestujte fragment kódu. V experimentální instanci aplikace otevřete projekt jazyka Visual Basic a otevřete jeden ze souborů kódu. Umístěte ukazatel myši kamkoli v kódu, klikněte pravým tlačítkem a v místní nabídce vyberte příkaz **Vložit fragment**.  
+4. Otestujte fragment kódu. V experimentální instanci aplikace otevřete projekt jazyka Visual Basic a otevřete jeden ze souborů kódu. Umístěte ukazatel myši kamkoli v kódu, klikněte pravým tlačítkem a v místní nabídce vyberte příkaz **Vložit fragment**.  
   
-5.  Měli byste vidět HelloWorldVB jako jedna ze složek. Poklepejte na něj. Zobrazí se automaticky otevírané okno **Vložit fragment kódu: HellowWorldVB >** , který má rozevíracího seznamu **HelloWorldVB**. Klikněte na rozevírací nabídku HelloWorldVB. Měli byste vidět následující řádek do souboru přidán:  
+5. Měli byste vidět HelloWorldVB jako jedna ze složek. Poklepejte na něj. Zobrazí se automaticky otevírané okno **Vložit fragment kódu: HellowWorldVB >** , který má rozevíracího seznamu **HelloWorldVB**. Klikněte na rozevírací nabídku HelloWorldVB. Měli byste vidět následující řádek do souboru přidán:  
   
     ```vb  
     Console.WriteLine("Hello, World!")  

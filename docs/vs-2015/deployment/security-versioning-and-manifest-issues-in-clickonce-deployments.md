@@ -24,12 +24,12 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1227dea199ebff465fc2dde3ec30568bb50e9ec6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e971271d17c88780ec543ffc12ed4c6ebcc48f23
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54786164"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043677"
 ---
 # <a name="security-versioning-and-manifest-issues-in-clickonce-deployments"></a>Problémy se zabezpečením, správou verzí a manifestem v nasazeních ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,11 +67,11 @@ Existuje řada různých problémů s [!INCLUDE[ndptecclick](../includes/ndptecc
   
  Pokud jste upravili ručně aplikace nebo nasazení manifestů, vám může mít je neúmyslně poškodit. Poškozená manifestu zabrání správné [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] instalace. Tyto chyby můžete ladit v době běhu kliknutím **podrobnosti** na **Chyba ClickOnce** dialogové okno a čtení chybová zpráva v protokolu. Protokol se zobrazí jedna z následujících zpráv:  
   
--   Popis chyby syntaxe a číslo řádku a znak pozici, kde došlo k chybě.  
+- Popis chyby syntaxe a číslo řádku a znak pozici, kde došlo k chybě.  
   
--   Název elementu nebo atributu použitého v rozporu se schéma manifestu. Pokud jste ručně přidali XML do vaší manifesty, budete muset porovnání dodatky k schémat manifestů. Další informace najdete v tématu [Manifest nasazení ClickOnce](../deployment/clickonce-deployment-manifest.md) a [Manifest aplikace ClickOnce](../deployment/clickonce-application-manifest.md).  
+- Název elementu nebo atributu použitého v rozporu se schéma manifestu. Pokud jste ručně přidali XML do vaší manifesty, budete muset porovnání dodatky k schémat manifestů. Další informace najdete v tématu [Manifest nasazení ClickOnce](../deployment/clickonce-deployment-manifest.md) a [Manifest aplikace ClickOnce](../deployment/clickonce-application-manifest.md).  
   
--   Došlo ke konfliktu ID. Odkazy závislostí v manifesty nasazení a aplikace musí být jedinečný v obou jejich `name` a `publicKeyToken` atributy. Pokud oba atributy odpovídají mezi dva prvky v rámci manifestu, analýza manifestu nebude úspěšný.  
+- Došlo ke konfliktu ID. Odkazy závislostí v manifesty nasazení a aplikace musí být jedinečný v obou jejich `name` a `publicKeyToken` atributy. Pokud oba atributy odpovídají mezi dva prvky v rámci manifestu, analýza manifestu nebude úspěšný.  
   
 ## <a name="precautions-when-manually-changing-manifests-or-applications"></a>Bezpečnostní opatření při ruční změna manifesty nebo aplikace  
  Při aktualizaci manifestu aplikace ji musíte znovu podepsat manifest aplikace a manifest nasazení. Manifest nasazení obsahuje odkaz na manifest aplikace, která obsahuje hodnotu hash pro tento soubor a jeho digitální podpis.  

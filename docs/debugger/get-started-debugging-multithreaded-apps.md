@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5535228f8e070128cfa2479d8017d3a88dc0915c
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: f07791a02c5e84722e8193f21b7ed2fe37bdd7f9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58790248"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064281"
 ---
 # <a name="get-started-debugging-multithreaded-applications-c-visual-basic-c"></a>Začínáme s laděním vícevláknových aplikací (C#, Visual Basic, C++)
 
@@ -234,17 +234,17 @@ Nejprve musíte projekt aplikace s více vlákny. Následuje příklad.
 
 ### <a name="ShowThreadsInSource"></a>Zjišťovat značky vlákna  
 
-1.  Na panelu nástrojů ladění vyberte **zobrazit vlákna ve zdroji** tlačítko ![zobrazit vlákna ve zdroji](../debugger/media/dbg-multithreaded-show-threads.png "ThreadMarker").
+1. Na panelu nástrojů ladění vyberte **zobrazit vlákna ve zdroji** tlačítko ![zobrazit vlákna ve zdroji](../debugger/media/dbg-multithreaded-show-threads.png "ThreadMarker").
 
 2. Stisknutím klávesy **F11** jednou pro přechod na ladicí program jeden řádek kódu.
 
-3.  Podívejte se na ovládací prvek na levé straně okna. Na tomto řádku se zobrazí *značky vlákna* ikonu ![značky vlákna](../debugger/media/dbg-thread-marker.png "ThreadMarker") , která připomíná dvě kroucená vlákna. Značky vlákna označuje, že je vlákno zastavené v tomto umístění.
+3. Podívejte se na ovládací prvek na levé straně okna. Na tomto řádku se zobrazí *značky vlákna* ikonu ![značky vlákna](../debugger/media/dbg-thread-marker.png "ThreadMarker") , která připomíná dvě kroucená vlákna. Značky vlákna označuje, že je vlákno zastavené v tomto umístění.
 
     Značky vlákna mohou být částečně zakryty podle zarážku.
 
-4.  Ukazatel myši značky vlákna. DataTip nezobrazí číslo ID názvu a vlákna pro každé vlákno zastavené. V tomto případě název je pravděpodobně `<noname>`.
+4. Ukazatel myši značky vlákna. DataTip nezobrazí číslo ID názvu a vlákna pro každé vlákno zastavené. V tomto případě název je pravděpodobně `<noname>`.
 
-5.  Vyberte značku vlákno zobrazíte dostupné možnosti v místní nabídce.
+5. Vyberte značku vlákno zobrazíte dostupné možnosti v místní nabídce.
 
 ### <a name="ParallelStacks"></a>Zobrazit vlákna umístění
 
@@ -260,7 +260,7 @@ V **paralelní zásobníky** okně můžete přepínat mezi zobrazení vláken a
     - Zadaná dvě vlákna `ServerClass.InstanceMethod`, z nichž jeden je aktuální vlákno (žlutá šipka), zatímco jiné vlákno se zastavila v `Thread.Sleep`.
     - Nové vlákno (napravo) se také spouští ale se zastaví na `ThreadHelper.ThreadStart`.
 
-2.  Klikněte pravým tlačítkem na položky v **paralelní zásobníky** okno zobrazte dostupné možnosti v místní nabídce.
+2. Klikněte pravým tlačítkem na položky v **paralelní zásobníky** okno zobrazte dostupné možnosti v místní nabídce.
 
     Můžete provádět různé akce z těchto nabídek klikněte pravým tlačítkem, ale pro účely tohoto kurzu vám ukážeme některé tyto podrobnosti v **paralelní sledování** okno (další oddíly).
 
@@ -292,14 +292,14 @@ Můžete označit příznakem vlákna a mějte přehled o důležitých vlákna 
 
     Vybraných vláken jsou označeny. Teď můžete filtrovat, chcete-li zobrazit pouze vlákna s příznakem.
 
-3.  V **paralelní sledování** okna, vyberte **zobrazit pouze s příznakem vlákna** tlačítko ![zobrazit vlákna s příznakem](../debugger/media/dbg-threads-show-flagged.png "ThreadMarker").
+3. V **paralelní sledování** okna, vyberte **zobrazit pouze s příznakem vlákna** tlačítko ![zobrazit vlákna s příznakem](../debugger/media/dbg-threads-show-flagged.png "ThreadMarker").
 
     V seznamu se zobrazí pouze vlákna s příznakem.
 
     > [!TIP]
     > Po označena příznakem některá vlákna mohou klikněte pravým tlačítkem na řádek kódu v editoru kódu a zvolte **spustit vlákna s příznakem do pozice kurzoru**. Nezapomeňte vybrat, že kód, že všechna vlákna příznakem dosáhne. Visual Studio se pozastaví vláken na vybraný řádek kódu, usnadňují určit pořadí provedení [zmrazení a uvolnění vláken](#bkmk_freeze).
 
-4.  Vyberte **zobrazit pouze s příznakem vlákna** tlačítko přepnete zpět do **zobrazit všechna vlákna** režimu.
+4. Vyberte **zobrazit pouze s příznakem vlákna** tlačítko přepnete zpět do **zobrazit všechna vlákna** režimu.
 
 5. Odstranění označení vlákna, kliknete pravým tlačítkem na jeden nebo více vlákna s příznakem v **paralelní sledování** okna a vyberte **Unflag**.
 
@@ -308,17 +308,17 @@ Můžete označit příznakem vlákna a mějte přehled o důležitých vlákna 
 > [!TIP]
 > Můžete zablokovat a odblokovat (pozastavení a obnovení) určit pořadí, ve kterém provádění vlákna pracovních vláken. To může pomoct vyřešit potíže se souběžností například zablokování a konflikty časování.
 
-1.  V **paralelní sledování** okna se všechny řádky vybraný, klikněte pravým tlačítkem a vyberte **ukotvit**.
+1. V **paralelní sledování** okna se všechny řádky vybraný, klikněte pravým tlačítkem a vyberte **ukotvit**.
 
     V druhém sloupci se zobrazí ikona pozastavení pro každý řádek. Ikona pozastavení označuje, že vlákno je zmrazen.
 
-2.  Zrušte výběr všech ostatních řádků tak, že vyberete pouze jeden řádek.
+2. Zrušte výběr všech ostatních řádků tak, že vyberete pouze jeden řádek.
 
-3.  Klikněte pravým tlačítkem na řádek a vyberte **uvolnit**.
+3. Klikněte pravým tlačítkem na řádek a vyberte **uvolnit**.
 
     Ikona pozastavení zanikne na tento řádek, která udává, že vlákno je již zmrazen.
 
-4.  Přepněte na editor kódu a stiskněte klávesu **F11**. Spouští pouze nezmrazený vlákno.
+4. Přepněte na editor kódu a stiskněte klávesu **F11**. Spouští pouze nezmrazený vlákno.
 
     Aplikace může také vytvořit instanci některá nová vlákna. Veškerá nová vlákna bez příznaku jsou a nejsou zmrazen.
 

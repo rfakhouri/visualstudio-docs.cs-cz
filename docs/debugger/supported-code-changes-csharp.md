@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9e840a8bb19b48c5cd4526ad80526bd62fcf8fa0
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: f20f61ffc4a6e4105a96b58c3dc73e7154e7c9cd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526176"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055785"
 ---
 # <a name="supported-code-changes-c-and-visual-basic"></a>Podporované změny kódu (C# a Visual Basic)
 Upravit a pokračovat zpracovává většinu typů změn kódu uvnitř těla metody. Během ladění, ale nejde použít většinu změn mimo těl metod a několik změn v rámci těla metod. Nepodporované změny použít, musíte Zastavit ladění a znovu s novou verzi kódu.
@@ -45,7 +45,7 @@ Následující tabulka uvádí změny, které mohou být provedeny C# a kód jaz
 ## <a name="unsupported-changes-to-code"></a>Nepodporované změny kódu
  Následující změny nejde použít u C# a kód jazyka Visual Basic během relace ladění:
 
--   Změny aktuálního příkazu nebo jiné aktivní příkaz.
+- Změny aktuálního příkazu nebo jiné aktivní příkaz.
 
      Aktivní příkazy zahrnout všechny příkazy, funkce v zásobníku volání, které byly volány zobrazíte aktuální příkaz.
 
@@ -77,7 +77,7 @@ Následující tabulka uvádí změny, které mohou být provedeny C# a kód jaz
 |asynchronní metody nebo výrazy lambda|Upravit asynchronní metody nebo lambda v projekt cílí na rozhraní .NET Framework 4 a snížení (viz [podrobnosti](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits))|
 |Iterátory|Upravit iterátor v projekt cílí na rozhraní .NET Framework 4 a snížení (viz [podrobnosti](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits))|
 
-## <a name="unsafe-code"></a>Nezabezpečený kód
+## <a name="unsafe-code"></a>Nebezpečný kód
  Změny nezabezpečený kód mají stejná omezení jako změny bezpečný kód, jeden další omezení: Upravit a pokračovat nepodporuje změny nebezpečný kód, který ukončí v rámci metody, která obsahuje `stackalloc` operátor.
 
 ## <a name="unsupported-app-scenarios"></a>Scénáře pro nepodporované aplikace
@@ -90,19 +90,19 @@ Nepodporované aplikace a platformy obsahují ASP.NET 5, Silverlight 5 a Windows
 ## <a name="unsupported-scenarios"></a>Nepodporované scénáře
  Upravit a pokračovat není k dispozici v následujících scénářích ladění:
 
--   Ladění ve smíšeném režimu (nativní a spravovaná).
+- Ladění ve smíšeném režimu (nativní a spravovaná).
 
--   Ladění SQL.
+- Ladění SQL.
 
--   Ladění zotavení po havárii. Watson s výpisem paměti.
+- Ladění zotavení po havárii. Watson s výpisem paměti.
 
--   Ladění aplikace vložený modul runtime.
+- Ladění aplikace vložený modul runtime.
 
--   Ladění aplikace s využitím připojit k procesu (**ladit > připojit k procesu**) namísto spuštění aplikace výběrem **Start** z **ladění** nabídky.
+- Ladění aplikace s využitím připojit k procesu (**ladit > připojit k procesu**) namísto spuštění aplikace výběrem **Start** z **ladění** nabídky.
 
--   Ladění optimalizovaného kódu.
+- Ladění optimalizovaného kódu.
 
--   Ladění starou verzi kódu po nové verze se nepovedlo sestavit kvůli chybám sestavení.
+- Ladění starou verzi kódu po nové verze se nepovedlo sestavit kvůli chybám sestavení.
 
 ## <a name="see-also"></a>Viz také
 - [Upravit a pokračovat (Visual C#)](../debugger/edit-and-continue-visual-csharp.md)

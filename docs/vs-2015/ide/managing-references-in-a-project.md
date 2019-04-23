@@ -23,12 +23,12 @@ caps.latest.revision: 55
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 48d6849a6656f5914d11250e26681e208cdb7487
-ms.sourcegitcommit: b7f25ae08e45fcaa84a84276b588cf6799cc7620
+ms.openlocfilehash: e344fa63a9778d0db45ceeb0e313faa4c6448241
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57567212"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60057093"
 ---
 # <a name="managing-references-in-a-project"></a>Správa odkazů v projektu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,19 +41,19 @@ Předtím, než můžete napsat kód proti externí komponentě nebo připojené
   
  Můžete vytvořit odkaz na následující typy komponent nebo služeb Team Foundation:  
   
--   Odkazy na aplikace pro Windows Store  
+- Odkazy na aplikace pro Windows Store  
   
--   Knihovny tříd rozhraní .NET framework nebo sestavení  
+- Knihovny tříd rozhraní .NET framework nebo sestavení  
   
--   COM – součásti  
+- COM – součásti  
   
--   Jiné sestavení nebo knihovny tříd projektů ve stejném řešení  
+- Jiné sestavení nebo knihovny tříd projektů ve stejném řešení  
   
--   webové služby XML  
+- webové služby XML  
   
 ## <a name="windows-store-app-references"></a>Odkazy na aplikace pro Windows Store  
   
-### <a name="project-references"></a>Odkazy na projekt  
+### <a name="project-references"></a>Odkazy na projekty  
  Univerzální platforma Windows (UPW) projekty, které cílí na Windows 10 můžete vytvořit odkazy na jiné projekty UWP v řešení nebo projekty Windows Store nebo binárních souborech, které se zaměřují [!INCLUDE[win81](../includes/win81-md.md)]za předpokladu, že tyto projekty nepoužívají rozhraní API, která jsou zastaralé ve Windows 10. Další informace najdete v tématu [přesunout z Windows 8 modulu Runtime pro UPW](https://msdn.microsoft.com/library/windows/apps/dn954974.aspx).  
   
  Pokud budete chtít změnit cíl [!INCLUDE[win81](../includes/win81-md.md)] projektů pro Windows 10, najdete v článku [přenosy, migrace a upgrade projektů sady Visual Studio](../porting/porting-migrating-and-upgrading-visual-studio-projects.md)  
@@ -63,9 +63,9 @@ Předtím, než můžete napsat kód proti externí komponentě nebo připojené
   
  Pokud zjistíte, že není podporováno rozšíření SDK, které odkazuje vaše aplikace, je nutné provést následující kroky:  
   
-1.  Podívejte se na název projektu, který je příčinou chyby. Platformy, na kterou váš projekt je cílen na verzi je uvedena v závorkách vedle názvu projektu. Například **MyProjectName (Windows 8.1)** znamená, že váš projekt **MyProjectName** je zaměřen na verzi platformy [!INCLUDE[win81](../includes/win81-md.md)].  
+1. Podívejte se na název projektu, který je příčinou chyby. Platformy, na kterou váš projekt je cílen na verzi je uvedena v závorkách vedle názvu projektu. Například **MyProjectName (Windows 8.1)** znamená, že váš projekt **MyProjectName** je zaměřen na verzi platformy [!INCLUDE[win81](../includes/win81-md.md)].  
   
-2.  Přejděte na web dodavatele, který vlastní nepodporovanou sadu SDK rozšíření a nainstalujte verzi sady SDK rozšíření se závislostmi, které jsou kompatibilní s verzí platformy, na kterou váš projekt cílí.  
+2. Přejděte na web dodavatele, který vlastní nepodporovanou sadu SDK rozšíření a nainstalujte verzi sady SDK rozšíření se závislostmi, které jsou kompatibilní s verzí platformy, na kterou váš projekt cílí.  
   
     > [!NOTE]
     >  Jedním ze způsobů a zjistěte, zda rozšíření SDK má závislosti na dalších rozšířeních SDK je restartovat aplikaci Visual Studio, vytvořte nový projekt C# Windows Store, klikněte pravým tlačítkem na projekt a zvolte **přidat odkaz**, přejděte  **Windows** záložku, přejděte **rozšíření** dílčí kartu, vyberte sadu rozšíření SDK a podívejte se na v pravém podokně **správce odkazů**. Pokud existují závislosti, budou uvedeny zde.  
@@ -73,20 +73,20 @@ Předtím, než můžete napsat kód proti externí komponentě nebo připojené
     > [!IMPORTANT]
     >  Pokud váš projekt je cílen na verzi Windows 10 a v předchozím kroku nainstalované rozšíření SDK obsahuje závislost na balíčku Microsoft Visual C++ Runtime, verze balíčku Microsoft Visual C++ Runtime, který je kompatibilní s Windows 10 je v14.0 a je nainstalovaná pomocí sady Visual Studio 2015.  
   
-3.  Pokud jste v předchozím kroku nainstalované rozšíření SDK má závislosti na dalších rozšířeních SDK, navštivte weby dodavatelů, kteří závislosti vlastní a nainstalujte verze těchto závislostí, které jsou kompatibilní s verzí platformy vaší Projekt je cílen na verzi.  
+3. Pokud jste v předchozím kroku nainstalované rozšíření SDK má závislosti na dalších rozšířeních SDK, navštivte weby dodavatelů, kteří závislosti vlastní a nainstalujte verze těchto závislostí, které jsou kompatibilní s verzí platformy vaší Projekt je cílen na verzi.  
   
-4.  Restartujte Visual Studio a otevřete aplikaci.  
+4. Restartujte Visual Studio a otevřete aplikaci.  
   
-5.  Klikněte pravým tlačítkem na **odkazy** uzlu v projektu, který způsobil chybu a zvolte **přidat odkaz**  
+5. Klikněte pravým tlačítkem na **odkazy** uzlu v projektu, který způsobil chybu a zvolte **přidat odkaz**  
   
-6.  Klikněte na tlačítko **Windows** kartu a potom **rozšíření** dílčí kartu a potom zrušte zaškrtnutí políček pro staré SDK rozšíření a zaškrtněte políčka pro nové SDK rozšíření. Klikněte na **OK**.  
+6. Klikněte na tlačítko **Windows** kartu a potom **rozšíření** dílčí kartu a potom zrušte zaškrtnutí políček pro staré SDK rozšíření a zaškrtněte políčka pro nové SDK rozšíření. Klikněte na **OK**.  
   
 ## <a name="adding-a-reference-at-design-time"></a>Přidání odkazu v době návrhu  
  Pokud provedete odkaz na sestavení v projektu, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] vyhledá sestavení v následujících umístěních:  
   
--   Aktuální adresář projektu. (Můžete vyhledat tato sestavení pomocí **Procházet** tab.)  
+- Aktuální adresář projektu. (Můžete vyhledat tato sestavení pomocí **Procházet** tab.)  
   
--   Další adresáře projektu ve stejném řešení. (Můžete vyhledat tato sestavení na **projekty** tab.)  
+- Další adresáře projektu ve stejném řešení. (Můžete vyhledat tato sestavení na **projekty** tab.)  
   
 > [!NOTE]
 >  Všechny projekty obsahují implicitní odkaz na mscorlib. Projekty Visual Basic obsahují implicitní odkaz na `Microsoft.VisualBasic`.  
@@ -119,4 +119,4 @@ Předtím, než můžete napsat kód proti externí komponentě nebo připojené
 ## <a name="see-also"></a>Viz také  
  [Řešení potíží s poškozenými odkazy](../ide/troubleshooting-broken-references.md)   
  [Programování se sestaveními](http://msdn.microsoft.com/library/25918b15-701d-42c7-95fc-c290d08648d6)   
- [Postupy: Přidání nebo odebrání odkazů pomocí Správce odkazů](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md)
+ [Postupy: Přidání nebo odebrání odkazů pomocí správce odkazů](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md)

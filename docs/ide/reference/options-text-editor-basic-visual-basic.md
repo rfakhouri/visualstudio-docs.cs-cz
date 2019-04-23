@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 60ef24f91d7b450de4ed4779a6d128032bd8b564
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: aa331fea595c2143dd3ab47aa562fbd61277f81f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59661695"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043617"
 ---
 # <a name="options-text-editor-basic-visual-basic-advanced"></a>Rozšířené možnosti, textový Editor, Basic (Visual Basic)
 **VB konkrétní** stránce vlastností **základní** složky **textový Editor** složky **možnosti** (**nástroje** nabídky) dialogové okno obsahuje následující vlastnosti:
@@ -81,19 +81,19 @@ Pokud je vybráno, svislé čáry zobrazí v editoru tento řádek nahoru strukt
 
 **Hezký výpis (přeformátování) kódu** přeformátuje textový editor kódu podle potřeby. Pokud je vybraná tato možnost, bude se editor kódu:
 
--   Zarovnat kód do umístění správné tabulátoru
+- Zarovnat kód do umístění správné tabulátoru
 
--   Recase klíčová slova, proměnných a objektů na správnou velikost.
+- Recase klíčová slova, proměnných a objektů na správnou velikost.
 
--   Přidat chybějící `Then` do `If...Then` – příkaz
+- Přidat chybějící `Then` do `If...Then` – příkaz
 
--   Přidat závorky k volání funkce
+- Přidat závorky k volání funkce
 
--   Přidat chybí koncové uvozovky na řetězce
+- Přidat chybí koncové uvozovky na řetězce
 
--   U vydavatelských exponenciální zápis
+- U vydavatelských exponenciální zápis
 
--   U vydavatelských kalendářních dat
+- U vydavatelských kalendářních dat
 
 **Automatické vkládání koncových konstruktorů**
 

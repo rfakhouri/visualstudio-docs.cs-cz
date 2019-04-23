@@ -19,12 +19,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 90f0c73abb33a2da9c2735bcbc16b5559437bc65
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 836f3485eb923476271d6a2bae7899d66bd67db7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54765009"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054622"
 ---
 # <a name="working-with-visual-c-code-class-designer"></a>Práce s kódem jazyka Visual C++ (návrhář tříd)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,19 +33,19 @@ Vizuální návrhová plocha, volá se zobrazí návrhář tříd *diagram tří
   
  Návrhář tříd podporuje následující prvky kódu jazyka C++:  
   
--   Třídy (se podobá obrazec spravovanou třídu s tím rozdílem, že může mít více vztahů dědičnosti)  
+- Třídy (se podobá obrazec spravovanou třídu s tím rozdílem, že může mít více vztahů dědičnosti)  
   
--   Anonymní třídy (zobrazí se vygenerovaný název anonymního typu zobrazení tříd)  
+- Anonymní třídy (zobrazí se vygenerovaný název anonymního typu zobrazení tříd)  
   
--   Třída šablony  
+- Třída šablony  
   
--   Struktura  
+- Struktura  
   
--   Výčet  
+- Výčet  
   
--   (Zobrazí se po zpracování zobrazení makro) – makro  
+- (Zobrazí se po zpracování zobrazení makro) – makro  
   
--   Definice TypeDef  
+- Definice TypeDef  
   
 > [!NOTE]
 >  To však není stejný jako diagram tříd UML, který vytvoříte v projektu modelování. Další informace najdete v tématu [diagramů tříd UML: Referenční dokumentace](../modeling/uml-class-diagrams-reference.md).  
@@ -84,27 +84,27 @@ Vizuální návrhová plocha, volá se zobrazí návrhář tříd *diagram tří
 ### <a name="troubleshooting-other-error-messages"></a>Řešení potíží s další chybové zprávy  
  Pomoc při řešení problémů s chybami a upozorněními můžete najít na veřejných fórech Microsoft Developer Network (MSDN). Zobrazit [návrháře fórum Visual Studio třídy](http://go.microsoft.com/fwlink/?linkid=160754).  
   
-##  <a name="limitations"></a> Omezení pro prvky kódu C++  
+## <a name="limitations"></a> Omezení pro prvky kódu C++  
   
--   Když se načte projektu Visual C++, funkce návrháře tříd způsobem jen pro čtení. Můžete změnit diagramu tříd, ale nemůžete ukládat změny z diagramu tříd zpět ke zdrojovému kódu.  
+- Když se načte projektu Visual C++, funkce návrháře tříd způsobem jen pro čtení. Můžete změnit diagramu tříd, ale nemůžete ukládat změny z diagramu tříd zpět ke zdrojovému kódu.  
   
--   Návrhář tříd podporuje pouze nativní C++ sémantiku. Pro projekty Visual C++, které jsou kompilovány do spravovaného kódu návrhář tříd vizualizovat pouze prvky kódu, které jsou nativní typy. Proto můžete přidat diagramu tříd do projektu, ale návrhář tříd nebude možné vizualizovat prvků, ve kterém `IsManaged` je nastavena na `true` (tzn. typy hodnot a odkazové typy).  
+- Návrhář tříd podporuje pouze nativní C++ sémantiku. Pro projekty Visual C++, které jsou kompilovány do spravovaného kódu návrhář tříd vizualizovat pouze prvky kódu, které jsou nativní typy. Proto můžete přidat diagramu tříd do projektu, ale návrhář tříd nebude možné vizualizovat prvků, ve kterém `IsManaged` je nastavena na `true` (tzn. typy hodnot a odkazové typy).  
   
--   Návrhář tříd pro projekty Visual C++ čte pouze definici typu. Předpokládejme například, definice typu v souboru hlaviček (.h) a definovat jeho členy v souboru implementace (.cpp). Pokud vyvoláte "Zobrazit Diagram tříd" v souboru implementace (.cpp), nezobrazí nic návrhář tříd. Další příklad – pokud vyvoláte "Zobrazit Diagram tříd" na soubor .cpp, který používá `#include` příkazu zahrnout další soubory, ale neobsahuje žádné definice tříd skutečné, návrhář tříd znovu nezobrazí nic.  
+- Návrhář tříd pro projekty Visual C++ čte pouze definici typu. Předpokládejme například, definice typu v souboru hlaviček (.h) a definovat jeho členy v souboru implementace (.cpp). Pokud vyvoláte "Zobrazit Diagram tříd" v souboru implementace (.cpp), nezobrazí nic návrhář tříd. Další příklad – pokud vyvoláte "Zobrazit Diagram tříd" na soubor .cpp, který používá `#include` příkazu zahrnout další soubory, ale neobsahuje žádné definice tříd skutečné, návrhář tříd znovu nezobrazí nic.  
   
--   Soubory IDL (.idl), které definují rozhraní COM a knihoven typů, se nezobrazují v diagramech, pokud jsou kompilovány do nativního kódu C++.  
+- Soubory IDL (.idl), které definují rozhraní COM a knihoven typů, se nezobrazují v diagramech, pokud jsou kompilovány do nativního kódu C++.  
   
--   Návrhář tříd nepodporuje globální funkce a proměnné.  
+- Návrhář tříd nepodporuje globální funkce a proměnné.  
   
--   Návrhář tříd nepodporuje sjednocení. Toto je speciální typ třídy, ve kterém je paměť přidělená je pouze množství potřebné pro největší datový člen Evropské unie.  
+- Návrhář tříd nepodporuje sjednocení. Toto je speciální typ třídy, ve kterém je paměť přidělená je pouze množství potřebné pro největší datový člen Evropské unie.  
   
--   Návrhář tříd nezobrazuje základní datové typy, jako `int` a `char`.  
+- Návrhář tříd nezobrazuje základní datové typy, jako `int` a `char`.  
   
--   Návrhář tříd nezobrazuje typy, které jsou definovány mimo aktuální projekt, pokud projekt nemá správné odkazy na tyto typy.  
+- Návrhář tříd nezobrazuje typy, které jsou definovány mimo aktuální projekt, pokud projekt nemá správné odkazy na tyto typy.  
   
--   Návrhář tříd můžete zobrazit, ale ne vztahy mezi vnořeného typu a ostatními typy vnořené typy.  
+- Návrhář tříd můžete zobrazit, ale ne vztahy mezi vnořeného typu a ostatními typy vnořené typy.  
   
--   Návrhář tříd nemůže zobrazit typy, které jsou neplatné nebo které jsou odvozeny od typu void.  
+- Návrhář tříd nemůže zobrazit typy, které jsou neplatné nebo které jsou odvozeny od typu void.  
   
 ## <a name="see-also"></a>Viz také  
  [Navrhování a zobrazování tříd a typů](../ide/designing-and-viewing-classes-and-types.md)   

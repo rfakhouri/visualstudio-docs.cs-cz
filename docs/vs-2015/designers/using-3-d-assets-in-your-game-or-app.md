@@ -16,12 +16,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0ca0150b44bbed9f411af25c5ce3805e553e8272
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c475366c190e5ac008394f8642f64da022532a0a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54775108"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064736"
 ---
 # <a name="using-3-d-assets-in-your-game-or-app"></a>Používání 3D prostředků ve hře nebo aplikaci
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,9 +35,9 @@ Tento článek popisuje, jak můžete [!INCLUDE[vsprvs](../includes/vsprvs-md.md
   
 #### <a name="to-add-the-build-customizations-to-your-project"></a>Chcete-li přidat vlastní sestavení do projektu  
   
-1.  V **Průzkumníka řešení**, otevřete místní nabídku pro projekt a klikněte na tlačítko **závislosti sestavení**, **přizpůsobení sestavení**. **Visual C++ soubory vlastního nastavení sestavení** se zobrazí dialogové okno.  
+1. V **Průzkumníka řešení**, otevřete místní nabídku pro projekt a klikněte na tlačítko **závislosti sestavení**, **přizpůsobení sestavení**. **Visual C++ soubory vlastního nastavení sestavení** se zobrazí dialogové okno.  
   
-2.  V části **dostupné soubory úpravy sestavení**, zaškrtněte políčka, která odpovídají typům aktiv, které chcete použít v projektu, jak je popsáno v této tabulce:  
+2. V části **dostupné soubory úpravy sestavení**, zaškrtněte políčka, která odpovídají typům aktiv, které chcete použít v projektu, jak je popsáno v této tabulce:  
   
     |Typ prostředku|Název přizpůsobení sestavení|  
     |----------------|------------------------------|  
@@ -45,7 +45,7 @@ Tento článek popisuje, jak můžete [!INCLUDE[vsprvs](../includes/vsprvs-md.md
     |3D modely|**MeshContentTask (.targets, .props)**|  
     |Shadery|**ShaderGraphContentTask(.targets, .props)**|  
   
-3.  Zvolte **OK** tlačítko.  
+3. Zvolte **OK** tlačítko.  
   
 ## <a name="including-assets-in-your-build"></a>Vložení aktiv do vašeho sestavení  
  Teď, když váš projekt ví o různých druzích 3D prostředky, které chcete použít, dalším krokem je určit, které soubory jsou 3D prostředků a které druhy aktiv se.  
@@ -76,13 +76,13 @@ Tento článek popisuje, jak můžete [!INCLUDE[vsprvs](../includes/vsprvs-md.md
   
 #### <a name="to-configure-content-pipeline-properties"></a>Konfigurace vlastností kanálu obsahu  
   
-1.  V **Průzkumníka řešení**ve vašem projektu otevřete místní nabídku pro soubor aktiv a klikněte na tlačítko **vlastnosti**. Asset **stránku vlastností** se zobrazí dialogové okno.  
+1. V **Průzkumníka řešení**ve vašem projektu otevřete místní nabídku pro soubor aktiv a klikněte na tlačítko **vlastnosti**. Asset **stránku vlastností** se zobrazí dialogové okno.  
   
-2.  Ujistěte se, že **konfigurace** a **platformy** vlastnosti jsou nastaveny na hodnoty, které chcete použít pro své změny.  
+2. Ujistěte se, že **konfigurace** a **platformy** vlastnosti jsou nastaveny na hodnoty, které chcete použít pro své změny.  
   
-3.  V části **vlastnosti konfigurace**, vyberte uzel obsahu kanálu – například **obsah kanálu obrazu** pro prostředky textury a obrazu – a v tabulce vlastností nastavte vlastnosti na odpovídající hodnoty. Například, chcete-li generování Mipmap pro textury během sestavení, nastavte **generovat Mips** vlastnost **Ano**.  
+3. V části **vlastnosti konfigurace**, vyberte uzel obsahu kanálu – například **obsah kanálu obrazu** pro prostředky textury a obrazu – a v tabulce vlastností nastavte vlastnosti na odpovídající hodnoty. Například, chcete-li generování Mipmap pro textury během sestavení, nastavte **generovat Mips** vlastnost **Ano**.  
   
-4.  Zvolte **OK** tlačítko.  
+4. Zvolte **OK** tlačítko.  
   
 ### <a name="image-content-pipeline-configuration"></a>Konfigurace zřetězení obrazového obsahu  
  Při použití nástroje obsahu kanálu obrázku k tvorbě prostředku textury můžete komprimovat textury různými způsoby, uvádí, zda by měl být vygenerován v okamžiku sestavení úrovní MIP a změnit název výstupního souboru.  

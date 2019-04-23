@@ -11,23 +11,23 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 781e1cce1d363ade1d236c8e17f9c3feeb4b0f5c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 745fea2ebaba478d9c405ab51db607e5eb025cc7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913285"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60058002"
 ---
 # <a name="customizing-the-model-explorer"></a>Přizpůsobení Průzkumníka modelů
 Je můžete změnit vzhled a chování Průzkumníka pro návrháře jazyka specifického pro doménu následujícím způsobem:
 
--   Změňte název okna.
+- Změňte název okna.
 
--   Změníte ikonu karty.
+- Změníte ikonu karty.
 
--   Změňte ikony pro uzly.
+- Změňte ikony pro uzly.
 
--   Skrytí uzlů.
+- Skrytí uzlů.
 
 ## <a name="changing-the-window-title"></a>Změna záhlaví okna
  Chcete-li změnit název okna Průzkumníka vygenerovaný, vyberte **chování Průzkumníka** v **Průzkumník DSL**a pak v **vlastnosti** okno, nastavte  **Název** vlastnost na název, který chcete.
@@ -66,25 +66,25 @@ Je můžete změnit vzhled a chování Průzkumníka pro návrháře jazyka spec
 
 #### <a name="to-display-a-property"></a>Chcete-li zobrazit vlastnosti
 
-1.  Otevřete řešení, které jste vytvořili v předchozím kroku.
+1. Otevřete řešení, které jste vytvořili v předchozím kroku.
 
-2.  Ujistěte se, že **komentář** odkazuje jenom jednu doménovou třídu nastavením násobnost role s názvem vlastnosti **Predmety** k 0..1. Název vlastnosti by měla být **subjektu**, a název relace by měla být **CommentReferencesSubject**.
+2. Ujistěte se, že **komentář** odkazuje jenom jednu doménovou třídu nastavením násobnost role s názvem vlastnosti **Predmety** k 0..1. Název vlastnosti by měla být **subjektu**, a název relace by měla být **CommentReferencesSubject**.
 
-3.  V **Průzkumník DSL**, klikněte pravým tlačítkem na **chování Průzkumníka** a potom klikněte na tlačítko **přidat nové nastavení uzlu Průzkumníka**.
+3. V **Průzkumník DSL**, klikněte pravým tlačítkem na **chování Průzkumníka** a potom klikněte na tlačítko **přidat nové nastavení uzlu Průzkumníka**.
 
      **ExplorerNodeSettings** uzel se zobrazí v části **vlastní nastavení uzlu** uzlu.
 
-4.  Vyberte **ExplorerNodeSettings**a pak v **vlastnosti** okno, nastavte **třídy** k **komentář**.
+4. Vyberte **ExplorerNodeSettings**a pak v **vlastnosti** okno, nastavte **třídy** k **komentář**.
 
-5.  Klikněte pravým tlačítkem **komentář** uzel a potom klikněte na **přidat novou cestu vlastnosti**.
+5. Klikněte pravým tlačítkem **komentář** uzel a potom klikněte na **přidat novou cestu vlastnosti**.
 
      Zobrazí se nový uzel s názvem **zobrazena vlastnost**.
 
-6.  Vyberte **zobrazena vlastnost**a pak v **vlastnosti** okna, klikněte na pole hodnoty z **cesta k vlastnosti**. Vyberte **komentář**, pak **CommentReferencesSubject**, pak **FlowElement**. Výsledná cesta by měla vypadat podobně jako **CommentReferencesSubject.Subject/! Předmět**.
+6. Vyberte **zobrazena vlastnost**a pak v **vlastnosti** okna, klikněte na pole hodnoty z **cesta k vlastnosti**. Vyberte **komentář**, pak **CommentReferencesSubject**, pak **FlowElement**. Výsledná cesta by měla vypadat podobně jako **CommentReferencesSubject.Subject/! Předmět**.
 
-7.  V poli hodnota **vlastnost**vyberte **název**.
+7. V poli hodnota **vlastnost**vyberte **název**.
 
-8.  Transformovat všechny šablony a potom sestavíte a spustíte vašeho řešení.
+8. Transformovat všechny šablony a potom sestavíte a spustíte vašeho řešení.
 
 9. Ve vygenerovaném návrháři Otevřete diagram vzorku.
 
@@ -97,17 +97,17 @@ Je můžete změnit vzhled a chování Průzkumníka pro návrháře jazyka spec
 
 #### <a name="to-hide-an-explorer-node"></a>Chcete-li skrýt uzlu Průzkumníka
 
-1.  Otevřete řešení, které jste vytvořili v předchozím kroku.
+1. Otevřete řešení, které jste vytvořili v předchozím kroku.
 
-2.  V **Průzkumník DSL**, klikněte pravým tlačítkem na **chování Průzkumníka** a potom klikněte na tlačítko **přidat novou cestu domény**.
+2. V **Průzkumník DSL**, klikněte pravým tlačítkem na **chování Průzkumníka** a potom klikněte na tlačítko **přidat novou cestu domény**.
 
      A **doménové cestě** uzel se zobrazí v části **skryté uzly**.
 
-3.  Vyberte **doménová cesta**a pak v **vlastnosti** okna, klikněte na pole hodnoty z **cesta definice**. Vyberte **FlowGraph**, pak **FlowGraphHasComments**. Výsledná cesta by měla vypadat podobně jako **FlowGraphHasComments.Comments**
+3. Vyberte **doménová cesta**a pak v **vlastnosti** okna, klikněte na pole hodnoty z **cesta definice**. Vyberte **FlowGraph**, pak **FlowGraphHasComments**. Výsledná cesta by měla vypadat podobně jako **FlowGraphHasComments.Comments**
 
-4.  Transformovat všechny šablony a potom sestavíte a spustíte vašeho řešení.
+4. Transformovat všechny šablony a potom sestavíte a spustíte vašeho řešení.
 
-5.  Ve vygenerovaném návrháři Otevřete diagram vzorku.
+5. Ve vygenerovaném návrháři Otevřete diagram vzorku.
 
      V Průzkumníku by měl zobrazit pouze **Actors** uzel a by neměl zobrazit **komentáře** uzlu.
 

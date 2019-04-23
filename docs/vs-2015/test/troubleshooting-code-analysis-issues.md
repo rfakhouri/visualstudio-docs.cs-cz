@@ -9,28 +9,28 @@ caps.latest.revision: 7
 author: erickson-doug
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 04eac41c65f00e27251a492ff503bb28a2cd9dac
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 4816783edabbd93fbb536c94f2638fcb4f8d6bb3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54779517"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043052"
 ---
 # <a name="troubleshooting-code-analysis-issues"></a>Řešení potíží s Analýzou kódu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Toto téma obsahuje informace o odstraňování potíží pro následující problémy s analýzou kódu sady Visual Studio.  
   
--   [Změny v Visual Studio 2010 pravidlo Set nejsou v předchozích verzích sady Visual Studio](#ChildRuleSetChangesInPreviousVersions)  
+- [Změny v Visual Studio 2010 pravidlo Set nejsou v předchozích verzích sady Visual Studio](#ChildRuleSetChangesInPreviousVersions)  
   
-##  <a name="ChildRuleSetChangesInPreviousVersions"></a> Změny v Visual Studio 2010 pravidlo Set nejsou v předchozích verzích sady Visual Studio  
+## <a name="ChildRuleSetChangesInPreviousVersions"></a> Změny v Visual Studio 2010 pravidlo Set nejsou v předchozích verzích sady Visual Studio  
  Když vytvoříte pravidlo nastavit [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] , která obsahuje podřízenou sadu pravidel, nejde použít ke změně podřízené sady pravidel v nastavují spuštění analýzu kódu na počítačích, které používají starší verzi sady Visual Studio. Pokud chcete tento problém vyřešit, musíte Vynutit přepsání sady pravidel nadřazený, který je sada pravidel, která obsahuje podřízené sady pravidel.  
   
-1.  Otevřít nadřazený pravidlo nastavené [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)].  
+1. Otevřít nadřazený pravidlo nastavené [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)].  
   
-2.  Proveďte změnu, jako je například přidávání nebo odebírání pravidlo a potom uložte sady pravidel.  
+2. Proveďte změnu, jako je například přidávání nebo odebírání pravidlo a potom uložte sady pravidel.  
   
-3.  Znovu otevřít sadu pravidel, zrušení změny a potom uložte pravidlo znovu nastavit.  
+3. Znovu otevřít sadu pravidel, zrušení změny a potom uložte pravidlo znovu nastavit.  
   
 ## <a name="see-also"></a>Viz také  
  [Analýza kvality aplikace](../code-quality/analyzing-application-quality-by-using-code-analysis-tools.md)   

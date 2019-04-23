@@ -26,12 +26,12 @@ caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5a38b84c5b45ba8111977701d9026f22f90abf50
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2ebcb793a0fc653931e1ea271340294aea532e02
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54761112"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055363"
 ---
 # <a name="how-to-debug-injected-code"></a>Postupy: Ladění vloženého kódu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,25 +49,25 @@ POZNÁMKA:]
   
 ### <a name="to-turn-on-source-annotation"></a>Chcete-li ve zdrojové poznámky  
   
--   Klikněte pravým tlačítkem myši **zpětný překlad** okna a zvolte **zobrazit zdrojový kód** z místní nabídky.  
+- Klikněte pravým tlačítkem myši **zpětný překlad** okna a zvolte **zobrazit zdrojový kód** z místní nabídky.  
   
      Pokud znáte umístění atributu v okně zdroje, můžete použít nabídku k vyhledání kódu injektovaného do **zpětný překlad** okna.  
   
 ### <a name="to-view-injected-code"></a>Chcete-li zobrazit vloženého kódu  
   
-1.  Ladicí program musí být v režimu přerušení.  
+1. Ladicí program musí být v režimu přerušení.  
   
-2.  V okně zdrojového kódu umístěte kurzor na slovo před atribut, jehož vloženého kódu, které chcete zobrazit.  
+2. V okně zdrojového kódu umístěte kurzor na slovo před atribut, jehož vloženého kódu, které chcete zobrazit.  
   
-3.  Klikněte pravým tlačítkem a vyberte **přejít na zpětný překlad** z místní nabídky.  
+3. Klikněte pravým tlačítkem a vyberte **přejít na zpětný překlad** z místní nabídky.  
   
      Pokud je atribut umístění u aktuální bod provádění, můžete vybrat **zpětný překlad** okna **ladění** nabídky.  
   
 ### <a name="to-view-the-disassembly-code-at-the-current-execution-point"></a>Chcete-li zobrazit zpětný překlad kódu v aktuální bod provádění  
   
-1.  Ladicí program musí být v režimu přerušení.  
+1. Ladicí program musí být v režimu přerušení.  
   
-2.  Z **ladění** nabídce zvolte **Windows**a klikněte na tlačítko **zpětný překlad**.  
+2. Z **ladění** nabídce zvolte **Windows**a klikněte na tlačítko **zpětný překlad**.  
   
 ## <a name="see-also"></a>Viz také  
  [Zabezpečení ladicího programu](../debugger/debugger-security.md)   

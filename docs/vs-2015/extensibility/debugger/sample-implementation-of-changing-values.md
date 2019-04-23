@@ -11,12 +11,12 @@ ms.assetid: ee2d955b-12ca-4f27-89aa-c2d0e768b6b6
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 66b949ee2bd065186c13f32e788eea8f40faf34d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 4a7b35c2a96ae31d698ff2294878adc45e3d6572
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54752611"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056403"
 ---
 # <a name="sample-implementation-of-changing-values"></a>Ukázková implementace změny hodnot
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,13 +31,13 @@ ms.locfileid: "54752611"
   
  Tato implementace `IDebugProperty2::SetValueAsString` provádí následující úlohy:  
   
-1.  Vyhodnotí výraz, který má hodnotu.  
+1. Vyhodnotí výraz, který má hodnotu.  
   
-2.  Váže přidruženého [IDebugField](../../extensibility/debugger/reference/idebugfield.md) objektu do jeho umístění v paměti a vytvářet [IDebugObject](../../extensibility/debugger/reference/idebugobject.md) objektu.  
+2. Váže přidruženého [IDebugField](../../extensibility/debugger/reference/idebugfield.md) objektu do jeho umístění v paměti a vytvářet [IDebugObject](../../extensibility/debugger/reference/idebugobject.md) objektu.  
   
-3.  Převede hodnotu na řadu bajtů.  
+3. Převede hodnotu na řadu bajtů.  
   
-4.  Volání [SetValue](../../extensibility/debugger/reference/idebugobject-setvalue.md) k uložení počet bajtů v paměti.  
+4. Volání [SetValue](../../extensibility/debugger/reference/idebugobject-setvalue.md) k uložení počet bajtů v paměti.  
   
 ## <a name="managed-code"></a>Spravovaný kód  
  Toto je implementace `IDebugProperty2::SetValueAsString` ve spravovaném kódu.  

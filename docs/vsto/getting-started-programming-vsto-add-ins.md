@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1b16b8e4e15c304f6e349d2f831ca879a4f7a183
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 7b709012dafe0db3dcc0959908a1e6b4d9e07e21
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56618832"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061983"
 ---
 # <a name="get-started-programming-vsto-add-ins"></a>Začínáme s programováním doplňků VSTO
   Doplňky VSTO můžete použít k automatizaci aplikace Microsoft Office, rozšíření funkcí aplikace a přizpůsobení uživatelského rozhraní (UI) aplikace. Informace o porovnání doplňků VSTO pro jiné druhy řešení pro Office můžete vytvořit pomocí sady Visual Studio najdete v tématu [přehled vývoje řešení pro Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).
@@ -40,19 +40,19 @@ ms.locfileid: "56618832"
 
  Další informace o objektové modely z konkrétní aplikace Microsoft Office naleznete v následujících tématech:
 
--   [Přehled modelu objektů aplikace Excel](../vsto/excel-object-model-overview.md)
+- [Přehled modelu objektů aplikace Excel](../vsto/excel-object-model-overview.md)
 
--   [Přehled modelu objektů aplikace Word](../vsto/word-object-model-overview.md)
+- [Přehled modelu objektů aplikace Word](../vsto/word-object-model-overview.md)
 
--   [Přehled modelu objektů aplikace Outlook](../vsto/outlook-object-model-overview.md)
+- [Přehled modelu objektů aplikace Outlook](../vsto/outlook-object-model-overview.md)
 
--   [InfoPath – řešení](../vsto/infopath-solutions.md)
+- [InfoPath – řešení](../vsto/infopath-solutions.md)
 
--   [Řešení pro aplikaci PowerPoint](../vsto/powerpoint-solutions.md)
+- [Řešení pro aplikaci PowerPoint](../vsto/powerpoint-solutions.md)
 
--   [Projektová řešení](../vsto/project-solutions.md)
+- [Projektová řešení](../vsto/project-solutions.md)
 
--   [Přehled modelu objektů aplikace Visio](../vsto/visio-object-model-overview.md)
+- [Přehled modelu objektů aplikace Visio](../vsto/visio-object-model-overview.md)
 
 ## <a name="customize-the-user-interface-of-applications"></a>Přizpůsobení uživatelského rozhraní aplikací
  Existuje několik různých způsobů přizpůsobení uživatelského rozhraní hostitelské aplikace pomocí doplňku VSTO:

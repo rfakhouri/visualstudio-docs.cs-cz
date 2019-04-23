@@ -24,12 +24,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a0e944d2ed8538a72082bdc52ee72058907ed9d5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 3d28efe175bb5bf3e5088918375f580d8076cff9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56633275"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055298"
 ---
 # <a name="combine-vba-and-document-level-customizations"></a>Kombinování přizpůsobení na úrovni dokumentu a VBA
   Používat Visual Basic for Applications (VBA) kódu v dokumentu, který je součástí přizpůsobení úrovni dokumentu pro aplikaci Microsoft Office Word nebo Microsoft Office Excel. Můžete volat kód VBA v dokumentu z vlastního nastavení sestavení nebo projektu, aby umožňoval kód VBA v dokumentu k volání kódu v sestavení přizpůsobení můžete nakonfigurovat.
@@ -86,17 +86,17 @@ Globals.Sheet1.Application.Run("MyMacro", missing, missing, missing,
 ## <a name="requirements"></a>Požadavky
  Před povolením kód VBA, chcete-li volat vlastního nastavení sestavení, váš projekt musí splňovat následující požadavky:
 
--   Dokument musí mít jednu z následujících přípony názvů souborů:
+- Dokument musí mít jednu z následujících přípony názvů souborů:
 
-    -   Pro Word: *DOCM* nebo *doc*
+    - Pro Word: *DOCM* nebo *doc*
 
-    -   Pro aplikaci Excel: *.xlsm*, *.xltm*, *.xls*, nebo *.xlt*
+    - Pro aplikaci Excel: *.xlsm*, *.xltm*, *.xls*, nebo *.xlt*
 
--   Dokument již musí obsahovat projekt VBA, který má kód VBA v ní.
+- Dokument již musí obsahovat projekt VBA, který má kód VBA v ní.
 
--   Kód VBA v dokumentu musíte bude moct spouštět bez výzvy pro uživatele povolit makra. VBA kód ke spuštění tak, že přidáte do seznamu důvěryhodných umístění v nastavení Centra zabezpečení pro aplikaci Word nebo Excel umístění projektu Office, kterému můžete důvěřovat.
+- Kód VBA v dokumentu musíte bude moct spouštět bez výzvy pro uživatele povolit makra. VBA kód ke spuštění tak, že přidáte do seznamu důvěryhodných umístění v nastavení Centra zabezpečení pro aplikaci Word nebo Excel umístění projektu Office, kterému můžete důvěřovat.
 
--   Projekt sady Office musí obsahovat alespoň jednu veřejnou třídu, která obsahuje jeden nebo více veřejné členy, které jsou vystaveny pro jazyk VBA.
+- Projekt sady Office musí obsahovat alespoň jednu veřejnou třídu, která obsahuje jeden nebo více veřejné členy, které jsou vystaveny pro jazyk VBA.
 
      Můžete zpřístupnit metody, vlastnosti a události pro jazyk VBA. Třída, která zveřejníte může být třída položky hostitele (například `ThisDocument` pro Word, nebo `ThisWorkbook` a `Sheet1` pro Excel) nebo jiné třídy, které definujete ve vašem projektu. Další informace o hostitelských položkách naleznete v tématu [hostovat položky a hostujte Přehled ovládacích prvků](../vsto/host-items-and-host-controls-overview.md).
 
@@ -109,11 +109,11 @@ Globals.Sheet1.Application.Run("MyMacro", missing, missing, missing,
 
    Chcete-li to provést, je třeba provést následující hlavní kroky:
 
-  1.  Vystavení třídy do modelu COM.
+  1. Vystavení třídy do modelu COM.
 
-  2.  Přepsat **GetAutomationObject** metoda třídy položku hostitele ve vašem projektu a vrátit instanci třídy, které jsou vystaveny pro jazyk VBA.
+  2. Přepsat **GetAutomationObject** metoda třídy položku hostitele ve vašem projektu a vrátit instanci třídy, které jsou vystaveny pro jazyk VBA.
 
-  3.  Nastavte **ReferenceAssemblyFromVbaProject** vlastnost všechny hostitele položku třídy v projektu a **True**. To vloží vlastní nastavení sestavení knihovny typů do sestavení a přidá odkaz na knihovnu typů do projektu VBA v dokumentu.
+  3. Nastavte **ReferenceAssemblyFromVbaProject** vlastnost všechny hostitele položku třídy v projektu a **True**. To vloží vlastní nastavení sestavení knihovny typů do sestavení a přidá odkaz na knihovnu typů do projektu VBA v dokumentu.
 
   Podrobné pokyny najdete v tématu [jak: Vystavení kódu do VBA v projektu jazyka Visual Basic](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md) a [jak: Vystavení kódu v aplikaci Visual C pro jazyk VBA&#35; projektu](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md).
 
@@ -174,7 +174,7 @@ GetManagedClass(pdispInteropObject Object) As Object
 
  Tato metoda vrátí objekt, který představuje třídu, která je vystavena pro jazyk VBA. V technologii IntelliSense zobrazí členy a parametry metody vráceného objektu.
 
-##  <a name="Guidelines"></a> Pokyny pro přidání kód VBA v dokumentu
+## <a name="Guidelines"></a> Pokyny pro přidání kód VBA v dokumentu
  Existují různé kopie dokumentu ve kterém můžete přidat kód VBA, který volá do přizpůsobení úrovni dokumentu.
 
  Jak vyvíjet a testovat vaše řešení, můžete napsat kód VBA v dokumentu, který se otevře při ladění nebo spuštění projektu v sadě Visual Studio (to znamená, že dokument ve výstupní složce sestavení). Ale libovolný kód VBA, který jste do tohoto dokumentu přidejte budou přepsány při příštím sestavení projektu, protože Visual Studio nahradí kopii dokumentu ze složky projektu hlavní dokument ve výstupní složce sestavení.
@@ -201,7 +201,7 @@ GetManagedClass(pdispInteropObject Object) As Object
 ### <a name="on-the-end-user-computer"></a>V počítači koncového uživatele
  Pokud koncoví uživatelé budou VBA vývojáři, kteří jsou volání do služeb, které zadáte v přizpůsobení na úrovni dokumentu, můžete jim říct volání kódu s použitím `CallVSTOAssembly` vlastnost nebo `GetManagedClass` metoda v jejich kopií dokumentu. Při publikování aktualizací do řešení kód VBA v dokumentu v počítači koncového uživatele nedojde k přepsání, protože dokument není upraven metodou publikovat aktualizace.
 
-##  <a name="PropertyTasks"></a> Úlohy prováděné ve vlastnostech položky hostitele
+## <a name="PropertyTasks"></a> Úlohy prováděné ve vlastnostech položky hostitele
  Při použití **EnableVbaCallers** a **ReferenceAssemblyFromVbaProject** vlastnosti, Visual Studio provede různé sady úloh.
 
 ### <a name="enablevbacallers"></a>EnableVbaCallers
@@ -229,9 +229,9 @@ GetManagedClass(pdispInteropObject Object) As Object
 
 2. To přidá odkaz na následující knihovny typů v projektu VBA v dokumentu:
 
-   -   Knihovny typů pro vaše vlastní nastavení sestavení.
+   - Knihovny typů pro vaše vlastní nastavení sestavení.
 
-   -   Microsoft Visual Studio Tools for Office spuštění modulu 9.0 knihovny typů. Je součástí této knihovny typů [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)].
+   - Microsoft Visual Studio Tools for Office spuštění modulu 9.0 knihovny typů. Je součástí této knihovny typů [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)].
 
    Když **ReferenceAssemblyFromVbaProject** je nastavena zpět na **False**, Visual Studio provede následující úlohy:
 

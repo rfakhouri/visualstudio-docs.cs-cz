@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 826967355b26e06e5d9f0bd26f3efcf745006fe9
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: 880f098d96c23236a065894629a36a746ecedce7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57525437"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60062726"
 ---
 # <a name="walkthrough-using-xslt-intellisense"></a>Návod: Používání XSLT IntelliSense
 
@@ -21,7 +21,7 @@ Tento návod ukazuje, jak pomocí technologie IntelliSense XSLT na hodnotu autom
 
 ## <a name="to-use-intellisense-in-the-name-attribute-of-xslwith-param-and-xslcall-template-elements"></a>Použití technologie IntelliSense v atributu name xsl: s param a Call-šablony elementů
 
-1.  Vytvořte nový soubor XSLT a zkopírujte následující kód:
+1. Vytvořte nový soubor XSLT a zkopírujte následující kód:
 
     ```xml
     <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
@@ -45,7 +45,7 @@ Tento návod ukazuje, jak pomocí technologie IntelliSense XSLT na hodnotu autom
     </xsl:stylesheet>
     ```
 
-2.  Kurzor po vložení `<xsl:template name="msg23" match="msg23">` a stiskněte klávesu **Enter**. Začněte psát následující `xsl:call-template` element:
+2. Kurzor po vložení `<xsl:template name="msg23" match="msg23">` a stiskněte klávesu **Enter**. Začněte psát následující `xsl:call-template` element:
 
     ```xml
     <xsl:call-template name="localized-message">
@@ -54,7 +54,7 @@ Tento návod ukazuje, jak pomocí technologie IntelliSense XSLT na hodnotu autom
 
      Seznam názvů šablony se zobrazí v `name=""` atribut `xsl:call-template` element během psaní.
 
-3.  Kurzor po vložení `<xsl:call-template name="localized-message">` a stiskněte klávesu **Enter**. Začněte psát následující `xsl:with-param` element:
+3. Kurzor po vložení `<xsl:call-template name="localized-message">` a stiskněte klávesu **Enter**. Začněte psát následující `xsl:with-param` element:
 
     ```xml
     <xsl:with-param name="msgcode">msg23</xsl:with-param>
@@ -64,7 +64,7 @@ Tento návod ukazuje, jak pomocí technologie IntelliSense XSLT na hodnotu autom
 
 ## <a name="to-use-intellisense-in-the-mode-attribute-of-an-xslapply-templates-element"></a>Použití technologie IntelliSense v režimu atribut xsl: použít šablony – element
 
-1.  Vytvořte nový soubor XSLT a zkopírujte následující kód:
+1. Vytvořte nový soubor XSLT a zkopírujte následující kód:
 
     ```xml
     <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
@@ -111,7 +111,7 @@ Tento návod ukazuje, jak pomocí technologie IntelliSense XSLT na hodnotu autom
     </xsl:stylesheet>
     ```
 
-2.  Kurzor po vložení `<xsl:apply-templates select="phone" />` a stiskněte klávesu **Enter**. Začněte psát následující `xsl: apply-templates` element:
+2. Kurzor po vložení `<xsl:apply-templates select="phone" />` a stiskněte klávesu **Enter**. Začněte psát následující `xsl: apply-templates` element:
 
     ```xml
     <xsl:apply-templates select="phone"  mode="accountNumber">
@@ -121,7 +121,7 @@ Tento návod ukazuje, jak pomocí technologie IntelliSense XSLT na hodnotu autom
 
 ## <a name="to-use-intellisense-in-the-stylesheet-prefix-and-result-prefix-attributes-of-an-xslnamespace-alias-element"></a>Použití technologie IntelliSense v atributech šablony stylů předpony a předpon výsledek XSL: Namespace-alias – element
 
-1.  Vytvořte nový soubor XSLT a zkopírujte následující kód:
+1. Vytvořte nový soubor XSLT a zkopírujte následující kód:
 
     ```xml
     <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:alt="http://www.w3.org/1999/XSL/Transform-alternate"
@@ -152,7 +152,7 @@ Tento návod ukazuje, jak pomocí technologie IntelliSense XSLT na hodnotu autom
     </xsl:stylesheet>
     ```
 
-2.  Kurzor po vložení `<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:alt="http://www.w3.org/1999/XSL/Transform-alternate" version="1.0">` a stiskněte klávesu **Enter**. Začněte psát následující `xsl:namespace-alias` element:
+2. Kurzor po vložení `<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:alt="http://www.w3.org/1999/XSL/Transform-alternate" version="1.0">` a stiskněte klávesu **Enter**. Začněte psát následující `xsl:namespace-alias` element:
 
     ```xml
     <xsl:namespace-alias stylesheet-prefix="alt" result-prefix="xsl"/>

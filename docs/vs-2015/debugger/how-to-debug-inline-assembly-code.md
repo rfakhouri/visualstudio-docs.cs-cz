@@ -21,12 +21,12 @@ caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 55ccb6ffd319f725fade42a6e8490f0b0dc22b0f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ece89b3e05e775b5aea50be3643653b258667935
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54766641"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055103"
 ---
 # <a name="how-to-debug-inline-assembly-code"></a>Postupy: Ladění vnořeného kódu sestavení
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,9 +40,9 @@ POZNÁMKA:]
   
 #### <a name="to-debug-inline-assembly-code"></a>Chcete-li ladit kód vloženého sestavení  
   
-1.  Použití **zpětný překlad** okna, chcete-li zobrazit pokyny k sestavení.  
+1. Použití **zpětný překlad** okna, chcete-li zobrazit pokyny k sestavení.  
   
-2.  Použití **zaregistruje** okno k zobrazení obsahu registru.  
+2. Použití **zaregistruje** okno k zobrazení obsahu registru.  
   
 ## <a name="see-also"></a>Viz také  
  [Zabezpečení ladicího programu](../debugger/debugger-security.md)   

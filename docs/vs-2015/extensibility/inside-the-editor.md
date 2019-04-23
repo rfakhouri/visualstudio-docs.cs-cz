@@ -10,12 +10,12 @@ ms.assetid: 822cbb8d-7ab4-40ee-bd12-44016ebcce81
 caps.latest.revision: 32
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 034afff7b907a8f9079242e26105a46a68e8da6d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 83bc344cf4c99efd426066a47c240b710ef455e4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54776433"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056039"
 ---
 # <a name="inside-the-editor"></a>Práce v editoru
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ Editoru se skládá z několika různé subsystémy, které mají zachovat edito
   
 - [IntelliSense](../extensibility/inside-the-editor.md#intellisense)  
   
-##  <a name="overview"></a> Přehled subsystémů  
+## <a name="overview"></a> Přehled subsystémů  
   
 ### <a name="text-model-subsystem"></a>Subsystém modelu text  
  Subsystém modelu text zodpovídá za představující text a povolení její zpracování. Obsahuje podsystém modelu text <xref:Microsoft.VisualStudio.Text.ITextBuffer> rozhraní, které popisuje posloupnost znaků, které se mají zobrazit, můžete v editoru. Tento text můžete upravit, sledovány a jinak pracovat mnoha způsoby. Textový model také poskytuje typy pro následující aspekty:  
@@ -76,7 +76,7 @@ Editoru se skládá z několika různé subsystémy, které mají zachovat edito
   
 ## <a name="a-closer-look-at-the-text-model-and-the-text-view"></a>Bližší pohled na textový Model a zobrazení textu  
   
-###  <a name="textmodel"></a> Textový Model  
+### <a name="textmodel"></a> Textový Model  
  Subsystém modelu textu se skládá z různých seskupení typů text. Patří mezi ně textovou vyrovnávací paměť, textových snímků a rozsahy text.  
   
 #### <a name="text-buffers-and-text-snapshots"></a>Vyrovnávací paměti textu a textových snímků.  
@@ -149,7 +149,7 @@ abXefYj
   
  Vývojáři můžou definovat jejich vlastní typy obsahu a zaregistrovat pomocí <xref:Microsoft.VisualStudio.Utilities.IContentTypeRegistryService>. Mnoho funkcí editoru lze definovat s ohledem na konkrétní typ obsahu pomocí <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>. Například okraje editoru, vylepšení a obslužné rutiny myši můžete definovat tak, aby se vztahují pouze na editorů, které zobrazí konkrétní typy obsahu.  
   
-###  <a name="textview"></a> Zobrazení textu  
+### <a name="textview"></a> Zobrazení textu  
  Zobrazení součástí vzor model view controller (MVC) definuje textové zobrazení, formát zobrazení, grafické prvky, jako je například posuvník a blikajícím kurzorem. Všechny prvky prezentace editoru sady Visual Studio jsou založeny na WPF.  
   
 #### <a name="text-views"></a>Zobrazení textu  
@@ -184,21 +184,21 @@ abXefYj
 ## <a name="editor-features"></a>Funkce editoru  
  Funkce editoru jsou navrženy tak, aby definice funkce je oddělený od jeho implementace. Editor zahrnuje tyto funkce:  
   
--   Značky a třídění  
+- Značky a třídění  
   
--   Vylepšení  
+- Vylepšení  
   
--   Projekce  
+- Projekce  
   
--   Sbalování  
+- Sbalování  
   
--   Myš a klíč vazby  
+- Myš a klíč vazby  
   
--   Operace a primitiv  
+- Operace a primitiv  
   
--   IntelliSense  
+- IntelliSense  
   
-###  <a name="tagsandclassifiers"></a> Značky a třídění  
+### <a name="tagsandclassifiers"></a> Značky a třídění  
  Klíčová slova jsou značky, které jsou spojeny s rozsah textu. Jejich lze zobrazit různými způsoby, například pomocí barevné zvýrazňování textu, podtržení, grafické nebo automaticky otevíraná okna. Třídění je jeden typ značky.  
   
  Jiné druhy značky jsou <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag> pro zvýraznění textu <xref:Microsoft.VisualStudio.Text.Tagging.OutliningRegionTag> pro sbalení, a <xref:Microsoft.VisualStudio.Text.Tagging.ErrorTag> chyby kompilace.  
@@ -230,14 +230,14 @@ abXefYj
   
  <xref:Microsoft.VisualStudio.Text.Classification.IClassificationFormatMap> Je mapování typ klasifikace na sadu vlastností pro formátování textu. Implementace formát mapy v editoru zpracovává všechny exporty z formátů klasifikace.  
   
-###  <a name="adornments"></a> Vylepšení  
+### <a name="adornments"></a> Vylepšení  
  Vylepšení jsou grafické efekty, které přímo nesouvisejí s písma a barvy znaků v textové zobrazení. Například podtržení červená vlnovka, který se používá k označení – kompilace kódu v řadě programovacích jazyků je vložený dalších úprav a popisy tlačítek jsou místní vylepšení. Vylepšení jsou odvozeny z <xref:System.Windows.UIElement> a implementovat <xref:Microsoft.VisualStudio.Text.Tagging.ITag>. Jsou dva speciální typy dalších úprav značky <xref:Microsoft.VisualStudio.Text.Tagging.SpaceNegotiatingAdornmentTag>, pro vylepšení, které zabírají stejné místo jako text v zobrazení, a <xref:Microsoft.VisualStudio.Text.Tagging.ErrorTag>, pro podtržení vlnovku.  
   
  Vložený vylepšení jsou obrázky, které tvoří část zobrazení formátovaného textu. Tyto jsou uspořádány do různých vrstev pořadí vykreslování. Existují tři předdefinované vrstvy, následujícím způsobem: text, blikajícího kurzoru a výběru. Vývojáři však můžete definovat další vrstvy a seřadit je podle vztahu mezi sebou. Jsou tři druhy vložený vylepšení grafické doplňky textu relativní (které přesunutí přesun text a se odstraní při odstranění textu), relativní k zobrazení grafických doplňků, (které jste prováděli pomocí jiné textové části zobrazení) a řídí vlastník vylepšení (na Vývojář musí spravovat jejich umístění).  
   
  Místní vylepšení jsou obrázky, které se zobrazí v malém okně nad zobrazení textu, například popisky.  
   
-###  <a name="projection"></a> Projekce  
+### <a name="projection"></a> Projekce  
  Projekce je postup pro vytváření jiný typ textové vyrovnávací paměti, která ve skutečnosti neukládá textu, ale místo toho kombinuje text z jiné textové vyrovnávací paměti. Například projekce vyrovnávací paměť lze zřetězit text ze dvou dalších vyrovnávací paměti a zobrazí výsledky, pokud je v jediné vyrovnávací paměti nebo skrýt části textu v jedné vyrovnávací paměti. Projekce vyrovnávací paměť může fungovat jako zdrojová vyrovnávací paměť do vyrovnávací paměti jiného projekce. Chcete-li uspořádat text mnoha různými způsoby lze sestavit sadu vyrovnávacích pamětí, které se týkají projekcí. (Takové sadě se taky říká *vyrovnávací paměti grafu*.) Funkce sbalování text sady Visual Studio je implementovaný s využitím vyrovnávací paměti projekce ke skrytí sbalených textu a editoru sady Visual Studio pro stránky ASP.NET používá projekce pro podporu vložené jazyků, jako je například Visual Basic a C#.  
   
  <xref:Microsoft.VisualStudio.Text.Projection.IProjectionBuffer> Je vytvořena pomocí <xref:Microsoft.VisualStudio.Text.Projection.IProjectionBufferFactoryService>. Projekce vyrovnávací paměť je reprezentována seřazená posloupnost <xref:Microsoft.VisualStudio.Text.ITrackingSpan> objekty, které jsou označovány jako *zdrojové rozsahy*. Obsah tyto rozsahy jsou uvedené jako posloupnost znaků. Textové vyrovnávací paměti, ze kterých se vykreslují zdrojové rozsahy jsou pojmenovány *zdrojové vyrovnávací paměti*. Klienti projekce vyrovnávací paměti není potřeba mějte na paměti, že se liší od vyrovnávací paměť běžného textu.  
@@ -271,18 +271,18 @@ P: ABCDEvwxyz
 ##### <a name="events-and-projection-buffers"></a>Události a projekce vyrovnávací paměti  
  Při změně vyrovnávací paměti projekce změny odesílají z projekce vyrovnávací paměť do vyrovnávací paměti, které jsou na ní závislé. Po změně všechny vyrovnávací paměti jsou vyvolány události změny vyrovnávací paměti, počínaje nejhlubší vyrovnávací paměti.  
   
-###  <a name="outlining"></a> Sbalování  
+### <a name="outlining"></a> Sbalování  
  Sbalení je schopnost rozbalit nebo sbalit různé bloky textu v textovém zobrazení. Sbalení je definována jako typ z <xref:Microsoft.VisualStudio.Text.Tagging.ITag>, v stejným způsobem, jak jsou definovány vylepšení. A <xref:Microsoft.VisualStudio.Text.Tagging.OutliningRegionTag> jsou klíčová slova, která definuje, které můžete rozbalit nebo sbalit oblast textu. Pokud chcete použít, osnovy, je nutné naimportovat <xref:Microsoft.VisualStudio.Text.Outlining.IOutliningManagerService> zobrazíte <xref:Microsoft.VisualStudio.Text.Outlining.IOutliningManager>. Sbalování správce vytvoří výčet sbalí a rozbalí různé bloky, které jsou reprezentovány ve formě <xref:Microsoft.VisualStudio.Text.Outlining.ICollapsible> objektů a vyvolává události odpovídajícím způsobem.  
   
-###  <a name="mousebindings"></a> Vazby myši  
+### <a name="mousebindings"></a> Vazby myši  
  Vazby myši propojit různé příkazy pohyby myší. Myši vazby jsou definované pomocí <xref:Microsoft.VisualStudio.Text.Editor.IMouseProcessorProvider>, a klávesové zkratky jsou definované pomocí <xref:Microsoft.VisualStudio.Text.Editor.IKeyProcessorProvider>. <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewHost> Automaticky inicializuje všechny vazby a připojí je k události myši v zobrazení.  
   
  <xref:Microsoft.VisualStudio.Text.Editor.IMouseProcessor> Rozhraní obsahuje předběžného zpracování a následného zpracování obslužné rutiny události různých myši. Úchyt pro jednu z událostí, můžete přepsat některé metody v <xref:Microsoft.VisualStudio.Text.Editor.MouseProcessorBase>.  
   
-###  <a name="editoroperations"></a> Editor operace  
+### <a name="editoroperations"></a> Editor operace  
  Editor operací můžete použít k automatizaci interakci s editoru pro skriptování nebo z jiných důvodů. Můžete importovat <xref:Microsoft.VisualStudio.Text.Operations.IEditorOperationsFactoryService> přístup k operacím na daný <xref:Microsoft.VisualStudio.Text.Editor.ITextView>. Pak můžete tyto objekty k úpravě výběru, posuňte zobrazení nebo přesune blikající kurzor do různých částí zobrazení.  
   
-###  <a name="intellisense"></a> IntelliSense  
+### <a name="intellisense"></a> IntelliSense  
  Technologie IntelliSense podporuje doplňování výrazů, signaturám (označované také jako informace o parametrech), rychlé informace a návrhy.  
   
  Dokončování příkazů obsahuje místní seznam potenciální dokončování pro názvy metod, prvky XML a další prvky kódu nebo značky. Obecně platí gesto uživatele vyvolá relace dokončení. Relace zobrazí seznam možných dokončení, a uživatel může vybrat jednu nebo zavřít seznamu. <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionBroker> Zodpovídá za vytvoření a aktivace <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSession>. <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource> Vypočítá <xref:Microsoft.VisualStudio.Language.Intellisense.CompletionSet> položek dokončení pro relaci.  

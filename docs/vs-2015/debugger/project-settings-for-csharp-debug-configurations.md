@@ -23,12 +23,12 @@ caps.latest.revision: 25
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: dd897e0d340bed3c82ab47a9e315915456d10480
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6fd484422cdae8cfc04cab169feefdd452f178a5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54757087"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056676"
 ---
 # <a name="project-settings-for--c-debug-configurations"></a>Nastavení projektu pro konfiguraci ladění jazyka C#
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Můžete změnit nastavení projektu pro konfiguraci ladění jazyka C# v **str�
 > [!WARNING]
 >  Toto téma se nevztahuje na aplikace Windows Store. Zobrazit [spustíte relaci ladění (VB, C#, C++ a XAML)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)  
   
-##  <a name="BKMK_Debug_tab"></a> Ladění kartu  
+## <a name="BKMK_Debug_tab"></a> Ladění kartu  
   
 |**Nastavení**|**Popis**|  
 |-----------------|---------------------|  
@@ -50,7 +50,7 @@ Můžete změnit nastavení projektu pro konfiguraci ladění jazyka C# v **str�
 |**Povolit ladění nespravovaného kódu**|Umožňuje ladit volání nativního (nespravovaného) kódu Win32 z vaší spravované aplikace.|  
 |**Povolit ladění SQL serveru**|Umožňuje ladění objektů databáze systému SQL Server.|  
   
-##  <a name="BKMK_Build_tab"></a> Vytvořit kartu  
+## <a name="BKMK_Build_tab"></a> Vytvořit kartu  
   
 |Nastavení|Popis|  
 |-------------|-----------------|  

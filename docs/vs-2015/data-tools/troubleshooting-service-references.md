@@ -17,12 +17,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8af0f56d75d231cdde2dc156519e08d580ad4f5f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: cff1677ab9209ce2a51b7587c410731a71e27eb0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54804666"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056716"
 ---
 # <a name="troubleshooting-service-references"></a>Řešení potíží s odkazy na služby
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,25 +33,25 @@ Toto téma obsahuje seznam běžných problémů, které mohou nastat při prác
 
  Chcete-li vyřešit tuto chybu:
 
-1.  V **Průzkumníka řešení**, poklikejte na soubor app.config a otevře jej.
+1. V **Průzkumníka řešení**, poklikejte na soubor app.config a otevře jej.
 
-2.  Vyhledejte `MaxReceivedMessageSize` vlastnosti a změňte ji na vyšší hodnotu.
+2. Vyhledejte `MaxReceivedMessageSize` vlastnosti a změňte ji na vyšší hodnotu.
 
 ## <a name="cannot-find-a-service-in-my-solution"></a>Nelze najít službu v mém řešení
  Po kliknutí **zjišťování** tlačítko **přidat odkazy na služby** dialogové okno, jeden nebo více projektů knihovny služby WCF v řešení se nezobrazují v seznamu služeb. Tato situace může nastat, pokud knihovna služby byl přidán do řešení, ale nebyl dosud zkompilována.
 
  Chcete-li vyřešit tuto chybu:
 
--   V **Průzkumníka řešení**, klikněte pravým tlačítkem na projekt knihovny služby WCF a klikněte na tlačítko **sestavení**.
+- V **Průzkumníka řešení**, klikněte pravým tlačítkem na projekt knihovny služby WCF a klikněte na tlačítko **sestavení**.
 
 ## <a name="error-accessing-a-service-over-a-remote-desktop"></a>Chyba při přístupu ke službě přes vzdálenou plochu
  Když uživatel pracuje s WCF hostované webové služby přes připojení ke vzdálené ploše a uživatel nemá oprávnění správce, bude použito ověřování NTLM. Pokud uživatel nemá oprávnění správce, uživatel může zobrazit následující chybová zpráva: "Požadavek HTTP Neoprávněný se schématem autorizace klienta"Anonymní". Záhlaví ověření přijaté ze serveru byla: NTLM"."
 
  Chcete-li vyřešit tuto chybu:
 
-1.  V projektu webové stránky, otevřete **vlastnosti** stránky.
+1. V projektu webové stránky, otevřete **vlastnosti** stránky.
 
-2.  Na **možnosti spuštění** kartu, zrušte **ověřování protokolem NTLM** zaškrtávací políčko.
+2. Na **možnosti spuštění** kartu, zrušte **ověřování protokolem NTLM** zaškrtávací políčko.
 
     > [!NOTE]
     > Měli byste vypnout ověřování protokolem NTLM pouze pro webové stránky, které obsahují výhradně služby WCF. Zabezpečení služeb WCF je spravována prostřednictvím konfigurace v souboru web.config. Díky ověřování protokolem NTLM zbytečné.
@@ -70,32 +70,32 @@ Toto téma obsahuje seznam běžných problémů, které mohou nastat při prác
 
  Chcete-li tuto chybu vyřešit, budete muset ručně znovu sestavit projekt služby:
 
-1.  Na **nástroje** nabídky, klikněte na tlačítko **možnosti**.
+1. Na **nástroje** nabídky, klikněte na tlačítko **možnosti**.
 
-2.  V **možnosti** dialogového okna rozbalte **projekty a řešení**a pak vyberte **Obecné**.
+2. V **možnosti** dialogového okna rozbalte **projekty a řešení**a pak vyberte **Obecné**.
 
-3.  Ujistěte se, že **zobrazit pokročilé konfigurace sestavení** zaškrtávací políčko zaškrtnuto a pak klikněte na **OK**.
+3. Ujistěte se, že **zobrazit pokročilé konfigurace sestavení** zaškrtávací políčko zaškrtnuto a pak klikněte na **OK**.
 
-4.  Načtěte projekt služby WCF. Další informace najdete v tématu [NIB jak: Vytváření řešení vícenásobného projektu](http://msdn.microsoft.com/02ecd6dd-0114-46fe-b335-ba9c5e3020d6).
+4. Načtěte projekt služby WCF. Další informace najdete v tématu [NIB jak: Vytváření řešení vícenásobného projektu](http://msdn.microsoft.com/02ecd6dd-0114-46fe-b335-ba9c5e3020d6).
 
-5.  V **nástroje Configuration Manager** dialogové okno, nastavte **konfigurace aktivního řešení** k **ladění**. Další informace najdete v tématu [jak: Vytvoření a úprava konfigurací](../ide/how-to-create-and-edit-configurations.md).
+5. V **nástroje Configuration Manager** dialogové okno, nastavte **konfigurace aktivního řešení** k **ladění**. Další informace najdete v tématu [jak: Vytvoření a úprava konfigurací](../ide/how-to-create-and-edit-configurations.md).
 
-6.  V **Průzkumníka řešení**, vyberte projekt služby WCF.
+6. V **Průzkumníka řešení**, vyberte projekt služby WCF.
 
-7.  Na **sestavení** nabídky, klikněte na tlačítko **znovu sestavit** znovu sestavit projekt služby WCF.
+7. Na **sestavení** nabídky, klikněte na tlačítko **znovu sestavit** znovu sestavit projekt služby WCF.
 
 ## <a name="wcf-data-services-do-not-display-in-the-browser"></a>Služby WCF Data Services nezobrazují v prohlížeči
  Když se pokusí zobrazit reprezentaci XML dat [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)], může aplikace Internet Explorer chybně interpretovat data jako informační kanál RSS. Zkontrolujte, zda je zakázána možnost zobrazení informačních kanálů RSS.
 
  Chcete-li vyřešit tuto chybu, zakažte informační kanály RSS:
 
-1.  V Internet Exploreru na **nástroje** nabídky, klikněte na tlačítko **Možnosti Internetu**.
+1. V Internet Exploreru na **nástroje** nabídky, klikněte na tlačítko **Možnosti Internetu**.
 
-2.  Na **obsahu** kartě **informační kanály** klikněte na tlačítko **nastavení**.
+2. Na **obsahu** kartě **informační kanály** klikněte na tlačítko **nastavení**.
 
-3.  V **nastavení informačního kanálu** dialogové okno, zrušte **zapnout zobrazení pro čtení informačního kanálu** zaškrtněte políčko a potom klikněte na tlačítko **OK**.
+3. V **nastavení informačního kanálu** dialogové okno, zrušte **zapnout zobrazení pro čtení informačního kanálu** zaškrtněte políčko a potom klikněte na tlačítko **OK**.
 
-4.  Klikněte na tlačítko **OK** zavřete **Možnosti Internetu** dialogové okno.
+4. Klikněte na tlačítko **OK** zavřete **Možnosti Internetu** dialogové okno.
 
 ## <a name="see-also"></a>Viz také:
 

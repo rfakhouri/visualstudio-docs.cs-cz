@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 4EB95F75-BC2E-4982-9564-2975805712D8
-ms.openlocfilehash: 13ec6d14efa8719b79bcfc39a5402b9c192bbe67
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 428c5ceb878d2ec0f4185ad70772672733fda517
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59656619"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60062981"
 ---
 # <a name="uninstalling-visual-studio-for-mac"></a>Odinstalace sady Visual Studio pro Mac
 
@@ -48,12 +48,14 @@ Spusťte skript, proveďte následující kroky:
     ```bash
     cd /location/of/file
     ```
+
 3. Spustitelný soubor skriptu a spustit ji s **sudo**:
 
     ```bash
     chmod +x ./uninstall-vsmac.sh
     sudo ./uninstall-vsmac.sh
     ```
+
 4. Nakonec odstraňte skript pro odinstalaci.
 
 ### <a name="net-core-script"></a>Skript .NET core
@@ -68,12 +70,14 @@ Spusťte skript, proveďte následující kroky:
     ```bash
     cd /location/of/file
     ```
+
 3. Spustitelný soubor skriptu a spustit ji s **sudo**:
 
     ```bash
     chmod +x ./dotnet-uninstall-pkgs.sh
     sudo ./dotnet-uninstall-pkgs.sh
     ```
+
 4. Nakonec odstraňte skript pro odinstalaci .NET Core.
 
 ## <a name="uninstall-visual-studio-for-mac"></a>Uninstall Visual Studio for Mac

@@ -10,12 +10,12 @@ helpviewer_keywords:
 ms.assetid: 3b052047-f6db-46dd-b3bf-da1c348ee410
 caps.latest.revision: 33
 manager: jillfra
-ms.openlocfilehash: e0e4c47ebeece4720a80b50a4f95921e204dbca6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ba4b166cc409dd2c50c258a9b82ee34c22e9b084
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54772111"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054765"
 ---
 # <a name="managing-the-toolbox"></a>Správa sady nástrojů
 [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] Umožňuje VSPackage, například návrháři nebo editoru pro správu členství a vzhled **nástrojů**.  
@@ -27,9 +27,9 @@ ms.locfileid: "54772111"
   
  Tato podpora je omezena na editorů a návrhářů, které vyžadují:  
   
-1.  Implementace objektu factory pro instance editoru nebo návrháře. Další informace o implementaci objektu factory návrháři nebo editoru, najdete v části [objekty pro vytváření editoru](../extensibility/editor-factories.md).  
+1. Implementace objektu factory pro instance editoru nebo návrháře. Další informace o implementaci objektu factory návrháři nebo editoru, najdete v části [objekty pro vytváření editoru](../extensibility/editor-factories.md).  
   
-2.  Registrace na kartu panelu nástrojů, která automaticky se aktivuje v případě, že je k dispozici editoru nebo návrháře.  
+2. Registrace na kartu panelu nástrojů, která automaticky se aktivuje v případě, že je k dispozici editoru nebo návrháře.  
   
 ## <a name="controlling-the-toolbox"></a>Řízení panelu nástrojů  
  Doplnění podpory služby automation [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] poskytuje následující rozhraní k poskytování rozšíření VSPackages větší kontrolu nad jak **nástrojů** spravuje.  

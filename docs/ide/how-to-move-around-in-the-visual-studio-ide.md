@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 18239c01707e63acaf7602ec77dad3bc6b42a884
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 5933d89e38d040b088879f10911f2f1fff049aab
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55908475"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60057885"
 ---
 # <a name="how-to-move-around-in-the-visual-studio-ide"></a>Postupy: Pohyb v integrovaném vývojovém prostředí sady Visual Studio
 
@@ -43,9 +43,9 @@ Přejít zpět a vpřed cyklu procházet otevřených souborů v editoru podle p
 
 ### <a name="to-move-through-open-files-in-order-of-use"></a>Chcete-li procházet soubory lze otevřít v pořadí podle používání
 
--   Chcete-li aktivovat otevřených dokumentů v pořadí, které byly naposledy změněny, stiskněte **Ctrl**+**-**.
+- Chcete-li aktivovat otevřených dokumentů v pořadí, které byly naposledy změněny, stiskněte **Ctrl**+**-**.
 
--   Chcete-li aktivovat otevřené dokumenty v obráceném pořadí, stiskněte **Ctrl**+**Shift**+**-**.
+- Chcete-li aktivovat otevřené dokumenty v obráceném pořadí, stiskněte **Ctrl**+**Shift**+**-**.
 
     > [!NOTE]
     > **Přejděte zpět** a **přejít vpřed** také najdete na **zobrazení** nabídky.
@@ -63,20 +63,20 @@ Můžete také přepnout na určitý soubor otevřít v editoru, bez ohledu na t
 
 ### <a name="to-switch-to-specific-files-in-the-editor"></a>Přepnout na konkrétní soubory v editoru
 
--   Stisknutím klávesy **Ctrl**+**kartu** zobrazíte **IDE Navigátor**. Podržte stisknutou klávesu **Ctrl** klíč a stiskněte klávesu **kartu** opakovaně, dokud vyberte soubor, který máte v úmyslu přepnout na.
+- Stisknutím klávesy **Ctrl**+**kartu** zobrazíte **IDE Navigátor**. Podržte stisknutou klávesu **Ctrl** klíč a stiskněte klávesu **kartu** opakovaně, dokud vyberte soubor, který máte v úmyslu přepnout na.
 
     > [!TIP]
     > Pořadí, ve kterém můžete projít **aktivních souborů** seznamu, podržte stisknutou klávesu **Ctrl**+**Shift** klávesy a stisknutím kláves **kartu**.
 
     \- nebo –
 
--   V pravém horním rohu editoru zvolte **aktivních souborů** tlačítko a pak vyberte soubor ze seznamu přepnout na.
+- V pravém horním rohu editoru zvolte **aktivních souborů** tlačítko a pak vyberte soubor ze seznamu přepnout na.
 
     \- nebo –
 
--   V panelu nabídky zvolte **okno** > **Windows**.
+- V panelu nabídky zvolte **okno** > **Windows**.
 
--   V seznamu, vyberte soubor, který chcete zobrazit a pak zvolte **aktivovat**.
+- V seznamu, vyberte soubor, který chcete zobrazit a pak zvolte **aktivovat**.
 
 ## <a name="navigate-among-tool-windows-in-the-ide"></a>Procházet okna nástrojů v prostředí IDE
 
@@ -87,7 +87,7 @@ Můžete také přepnout na určitý soubor otevřít v editoru, bez ohledu na t
 
 ### <a name="to-switch-to-a-specific-tool-window-in-the-ide"></a>Přejděte do okna konkrétní nástroje v integrovaném vývojovém prostředí
 
--   Stisknutím klávesy **Alt**+**F7** zobrazíte **IDE Navigátor**. Podržte stisknutou klávesu **Alt** klíč a stiskněte klávesu **F7** opakovaně neprojeví, dokud nevyberete máte v úmyslu přepněte do okna.
+- Stisknutím klávesy **Alt**+**F7** zobrazíte **IDE Navigátor**. Podržte stisknutou klávesu **Alt** klíč a stiskněte klávesu **F7** opakovaně neprojeví, dokud nevyberete máte v úmyslu přepněte do okna.
 
     > [!TIP]
     > Pořadí, ve kterém můžete projít **aktivní nástroj Windows** seznamu, podržte stisknutou klávesu **Shift**+**Alt** klávesy a stisknutím kláves **F7**.

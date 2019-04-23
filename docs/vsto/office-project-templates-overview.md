@@ -30,12 +30,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c64fac3e69a1b7678b9583f8529dd7b94201932e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 49cb0af47f34abbda5bd212d8ce535e98c44d6b5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614685"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054570"
 ---
 # <a name="office-project-templates-overview"></a>Přehled šablon projektů Office
   Nástroje Microsoft Office developer tools v sadě Visual Studio obsahují šablony projektů pro vytváření následujících typů řešení pro systém Office:
@@ -53,7 +53,7 @@ ms.locfileid: "56614685"
 > [!NOTE]
 > Nástroje pro vývoj pro Office jsou součástí určitých edicí sady Visual Studio. Další informace najdete v tématu [konfigurace počítače pro vývoj řešení pro systém Office](../vsto/configuring-a-computer-to-develop-office-solutions.md).
 
-##  <a name="DocLevel"></a> Přizpůsobení na úrovni dokumentu
+## <a name="DocLevel"></a> Přizpůsobení na úrovni dokumentu
  **Office** uzlu **nový projekt** dialogové okno obsahuje následující šablony projektů, které vám pomůžou začít vytvářet přizpůsobení na úrovni dokumentu pro Word a Excel:
 
 - **Pro Word 2013 a 2016 VSTO dokumentu**
@@ -81,17 +81,17 @@ ms.locfileid: "56614685"
 
  Informace, jak začít pracovat s těmito typy projektů, naleznete v následujících tématech:
 
--   [Programování přizpůsobení na úrovni dokumentu](../vsto/programming-document-level-customizations.md)
+- [Programování přizpůsobení na úrovni dokumentu](../vsto/programming-document-level-customizations.md)
 
--   [Řešení aplikace Word](../vsto/word-solutions.md)
+- [Řešení aplikace Word](../vsto/word-solutions.md)
 
--   [Řešení pro aplikaci Excel](../vsto/excel-solutions.md)
+- [Řešení pro aplikaci Excel](../vsto/excel-solutions.md)
 
--   [Návod: Vytvoření prvního přizpůsobení na úrovni dokumentu pro Word](../vsto/walkthrough-creating-your-first-document-level-customization-for-word.md)
+- [Návod: Vytvoření prvního přizpůsobení na úrovni dokumentu pro Word](../vsto/walkthrough-creating-your-first-document-level-customization-for-word.md)
 
--   [Návod: Vytvoření prvního přizpůsobení na úrovni dokumentu pro Excel](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)
+- [Návod: Vytvoření prvního přizpůsobení na úrovni dokumentu pro Excel](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)
 
-##  <a name="AppLevel"></a> Doplňky VSTO
+## <a name="AppLevel"></a> Doplňky VSTO
  **Office/SharePoint** uzlu **nový projekt** dialogové okno obsahuje následující šablony projektů, které vám pomůžou začít vytvářet doplňky VSTO.
 
 - **Doplněk aplikace Excel 2013 a 2016 VSTO**
@@ -157,7 +157,7 @@ ms.locfileid: "56614685"
 |Uživatelé mohou dokument otevřít a upravit, pokud není nastaven jen pro čtení. Jakékoli uložené změny se uchovávají v originálu dokumentu.|Uživatelé mohou šablonu otevřít a vytvořit pomocí ní místní kopii jako nový dokument. Nemohou originál upravovat, pokud jim neudělíte speciální oprávnění.|
 |Po otevření vyvolá dokument <xref:Microsoft.Office.Tools.Word.Document.Open> událostí.|Po otevření vyvolá šablona <xref:Microsoft.Office.Tools.Word.Document.New> událostí.|
 
-##  <a name="Limitations"></a> Omezení globálních šablon a doplňků aplikace Excel (souborů .xla)
+## <a name="Limitations"></a> Omezení globálních šablon a doplňků aplikace Excel (souborů .xla)
  Dokumenty, sešity a šablony nemusejí správně fungovat jako globální šablony nebo doplňky VSTO pro Excel (souborů .xla).
 
 ## <a name="word-templates"></a>Šablony aplikace Word

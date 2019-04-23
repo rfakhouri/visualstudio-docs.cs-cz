@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b48863234d7d624c183a6e02967411280655c5fc
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 2b34803ac047c411f3e77652949841227caef38e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56703185"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055382"
 ---
 # <a name="extend-solutions"></a>Rozšíření řešení
 Řešení je seskupení jednoho nebo více projektů, které vzájemně spolupracují na vytvoření aplikace.
@@ -21,6 +21,6 @@ ms.locfileid: "56703185"
 ## <a name="in-this-section"></a>V tomto oddílu
  Následující postupy ukazují některé způsoby, ve kterém můžete rozšířit řešení.
 
-1.  [Rozšíření filtru Průzkumníka řešení](../extensibility/extending-the-solution-explorer-filter.md) vysvětluje, jak filtrovat, co se zobrazí v Průzkumníku řešení.
+1. [Rozšíření filtru Průzkumníka řešení](../extensibility/extending-the-solution-explorer-filter.md) vysvětluje, jak filtrovat, co se zobrazí v Průzkumníku řešení.
 
-2.  [Správa načítání projektů v řešení](../extensibility/managing-project-loading-in-a-solution.md) vysvětluje, jak Správa načítání projektů pro zlepšení výkonu, pokud uživatel načte řešení.
+2. [Správa načítání projektů v řešení](../extensibility/managing-project-loading-in-a-solution.md) vysvětluje, jak Správa načítání projektů pro zlepšení výkonu, pokud uživatel načte řešení.

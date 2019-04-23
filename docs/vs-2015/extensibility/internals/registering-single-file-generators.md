@@ -11,12 +11,12 @@ ms.assetid: db7592c0-1273-4843-9617-6e2ddabb6ca8
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 6c6722078f2f25bfb2a14b44e001b0f2921e8ad5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: bf0d5e29138f27956dff52571296395507d44976
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54804935"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055415"
 ---
 # <a name="registering-single-file-generators"></a>Registrace generátorů tvořených jedním souborem
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ Zpřístupnit ve vlastní nástroj [!INCLUDE[vsprvs](../../includes/vsprvs-md.md
   
 ### <a name="to-register-a-custom-tool"></a>K registraci vlastního nástroje  
   
-1.  Buď registrovat vlastní nástroj knihovny DLL v [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] místního registru nebo v systémovém registru, v části HKEY_CLASSES_ROOT.  
+1. Buď registrovat vlastní nástroj knihovny DLL v [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] místního registru nebo v systémovém registru, v části HKEY_CLASSES_ROOT.  
   
      Například tady je registrační informace pro spravované MSDataSetGenerator vlastní nástroj, který se dodává s [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]:  
   
@@ -38,17 +38,17 @@ Zpřístupnit ve vlastní nástroj [!INCLUDE[vsprvs](../../includes/vsprvs-md.md
     "Assembly"="Microsoft.VSDesigner, Version=14.0.0.0, Culture=Neutral, PublicKeyToken=b03f5f7f11d50a3a"  
     ```  
   
-2.  Vytvořte klíč registru v požadovaný [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] hive v rámci generátorů\\*GUID* kde *GUID* identifikátor GUID určen systém projektu konkrétní jazyk nebo služby. Název klíče bude programový název vlastního nástroje. Vlastní nástroj klíč má následující hodnoty:  
+2. Vytvořte klíč registru v požadovaný [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] hive v rámci generátorů\\*GUID* kde *GUID* identifikátor GUID určen systém projektu konkrétní jazyk nebo služby. Název klíče bude programový název vlastního nástroje. Vlastní nástroj klíč má následující hodnoty:  
   
-    -   (Výchozí)  
+    - (Výchozí)  
   
          Volitelné. Poskytuje uživatelsky přívětivý popis vlastního nástroje. Tento parametr je nepovinný, ale doporučený.  
   
-    -   IDENTIFIKÁTOR CLSID  
+    - IDENTIFIKÁTOR CLSID  
   
          Povinný parametr. Určuje identifikátor knihovně tříd rozhraní komponenty modelu COM, který implementuje <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>.  
   
-    -   GeneratesDesignTimeSource  
+    - GeneratesDesignTimeSource  
   
          Povinný parametr. Určuje, zda typy z soubory vytvořené jazykem tohoto vlastního nástroje jsou k dispozici pro vizuální návrháře. Hodnota tohoto parametru musí být 0 (nula) typy nejsou k dispozici pro vizuální návrháře nebo 1 (jeden) pro typy, které jsou k dispozici pro vizuální návrháře.  
   

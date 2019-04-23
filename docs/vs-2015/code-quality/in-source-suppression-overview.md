@@ -12,19 +12,19 @@ caps.latest.revision: 42
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: b7f0b3ef2b680dbe4675ef6e8875ef30a1f210bc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 046ae576880c6749c6bb033f66124c0085dfab16
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54793665"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60057157"
 ---
 # <a name="in-source-suppression-overview"></a>Přehled potlačování ve zdroji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Potlačení v zdroje je možnost potlačit nebo ignorovat porušení zásad analýzy kódu ve spravovaném kódu tak, že přidáte **SuppressMessage** atribut segmentů kódu, které způsobují porušení zásad. **SuppressMessage** atribut je podmíněný atribut, který je součástí metadata IL sestavení spravovaného kódu jenom v případě, že je definován symbol kompilace CODE_ANALYSIS v době kompilace.  
   
- V jazyce C + +/ CLI, použijte makra CA_SUPPRESS_MESSAGE nebo CA_GLOBAL_SUPPRESS_MESSAGE v souboru hlaviček, chcete-li přidat atribut.  
+ V C++vyhodnocovací, použijte makra CA_SUPPRESS_MESSAGE nebo CA_GLOBAL_SUPPRESS_MESSAGE v souboru hlaviček, chcete-li přidat atribut.  
   
  Zabránit potlačení v zdroje metadat přesouvání omylem byste neměli používat potlačení v zdroje u sestavení pro vydání. Vzhledem k zpracování potlačení-source může být také snížený výkon vaší aplikace zahrnutím potlačení v zdroje metadat.  
   
@@ -54,27 +54,27 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
   
  kde:  
   
--   **Pravidlo kategorie** – kategorie, ve které je definováno pravidlo. Další informace o kategoriích pravidla analýzy kódu, naleznete v tématu [spravovaného kódu upozornění analýzy kódu pro](../code-quality/code-analysis-for-managed-code-warnings.md).  
+- **Pravidlo kategorie** – kategorie, ve které je definováno pravidlo. Další informace o kategoriích pravidla analýzy kódu, naleznete v tématu [spravovaného kódu upozornění analýzy kódu pro](../code-quality/code-analysis-for-managed-code-warnings.md).  
   
--   **Id pravidla** -identifikátor pravidla. Podpora zahrnuje jak krátký a dlouhý název identifikátor pravidla. Krátký název je CAXXXX; dlouhý název je CAXXXX:FriendlyTypeName.  
+- **Id pravidla** -identifikátor pravidla. Podpora zahrnuje jak krátký a dlouhý název identifikátor pravidla. Krátký název je CAXXXX; dlouhý název je CAXXXX:FriendlyTypeName.  
   
--   **Odůvodnění** – text, který se používá k dokumentu důvod pro potlačení zprávy.  
+- **Odůvodnění** – text, který se používá k dokumentu důvod pro potlačení zprávy.  
   
--   **Id zprávy** – jedinečný identifikátor pro každou zprávu problém.  
+- **Id zprávy** – jedinečný identifikátor pro každou zprávu problém.  
   
--   **Obor** – cíl, na kterém je potlačeno upozornění. Pokud cíl není zadán, je nastavena na cíl atributu. Podporované obory, patří:  
+- **Obor** – cíl, na kterém je potlačeno upozornění. Pokud cíl není zadán, je nastavena na cíl atributu. Podporované obory, patří:  
   
-    -   Modul  
+    - Modul  
   
-    -   Obor názvů  
+    - Obor názvů  
   
-    -   Prostředek  
+    - Prostředek  
   
-    -   Typ  
+    - Type  
   
-    -   Člen  
+    - Člen  
   
--   **Cíl** – identifikátor, který se používá k určení cíle, na kterém je potlačeno upozornění. Musí obsahovat položky plně kvalifikovaný název.  
+- **Cíl** – identifikátor, který se používá k určení cíle, na kterém je potlačeno upozornění. Musí obsahovat položky plně kvalifikovaný název.  
   
 ## <a name="suppressmessage-usage"></a>SuppressMessage využití  
  Upozornění analýzy kódu jsou potlačeny na úrovni, do které instanci **SuppressMessage** atribut se používá. Účelem tohoto objektu je úzce spárovat informace o potlačení kódu kde dojde k porušení zásady.  

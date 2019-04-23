@@ -9,12 +9,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 348dc0cdce8345f0b7de4fb15dcd7175f496dba7
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: a3ba746f9e4dcd8da45a002c5c763384558342ec
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59652915"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053907"
 ---
 # <a name="the-property-ltproperty-namegt-cannot-be-deleted-because-it-is-participating-in-the-association-ltassociation-namegt"></a>Vlastnost &lt;název vlastnosti&gt; nejde odstranit, protože se účastní asociace &lt;název přidružení&gt;
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,13 +25,13 @@ Vybraná vlastnost je nastavena jako **přidružení vlastnost** pro přidružen
   
 ### <a name="to-correct-this-error"></a>Oprava této chyby  
   
-1.  Vyberte Asociační čára na Návrháře relací objektů, která se připojuje datové třídy uvedené v chybové zprávě.  
+1. Vyberte Asociační čára na Návrháře relací objektů, která se připojuje datové třídy uvedené v chybové zprávě.  
   
-2.  Dvakrát klikněte na řádek otevřít **Editor asociace** dialogové okno.  
+2. Dvakrát klikněte na řádek otevřít **Editor asociace** dialogové okno.  
   
-3.  Odebere vlastnost z **vlastnosti přidružení**.  
+3. Odebere vlastnost z **vlastnosti přidružení**.  
   
-4.  Zkuste znovu odstranit vlastnost.  
+4. Zkuste znovu odstranit vlastnost.  
   
 ## <a name="see-also"></a>Viz také  
  [Nástroje LINQ to SQL v sadě Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   

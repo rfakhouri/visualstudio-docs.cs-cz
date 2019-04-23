@@ -16,12 +16,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dd53eef6cb5dc7b7144375f5d0f6b47e11913ed3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e439521d9a81bc418eb403bb87ee9576605b8e66
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54778339"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055495"
 ---
 # <a name="how-to-find-topics-in-the-table-of-contents"></a>Postupy: Hledání témat v obsahu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,9 +36,9 @@ V **obsah** kartu, můžete použít obsah (TOC) k nalezení informací o. Obsah
   
 #### <a name="to-filter-the-toc"></a>Filtrování obsahu  
   
-1.  Zvolte **obsah** kartu.  
+1. Zvolte **obsah** kartu.  
   
-2.  V **filtrovat obsahy** text zadejte termín.  
+2. V **filtrovat obsahy** text zadejte termín.  
   
 > [!NOTE]
 >  Pokud filtru trvá dlouhou dobu spuštění, můžete zobrazit výsledky rychleji pomocí `title:` operátoru pro rozšířené hledání.  
@@ -48,9 +48,9 @@ V **obsah** kartu, můžete použít obsah (TOC) k nalezení informací o. Obsah
   
 #### <a name="to-synchronize-the-toc-with-the-topic-window"></a>Synchronizace obsahu s oknem tématu  
   
-1.  Zobrazte téma.  
+1. Zobrazte téma.  
   
-2.  Klikněte na tlačítko **zobrazit téma v obsahu** tlačítko na panelu nástrojů nebo stisknutím kláves Ctrl + S.  
+2. Klikněte na tlačítko **zobrazit téma v obsahu** tlačítko na panelu nástrojů nebo stisknutím kláves Ctrl + S.  
   
      **Obsah** kartě se otevře a zobrazí se umístění tématu v obsahu.  
   

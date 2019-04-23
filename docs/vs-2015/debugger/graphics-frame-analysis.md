@@ -11,12 +11,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b02f1035a8b149ba8cfc1152bb83d1410bd86350
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d93c18f1b62ef7171fb35af896a8e9adbc461680
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54781274"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053530"
 ---
 # <a name="graphics-frame-analysis"></a>Analýza grafických snímků
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -139,7 +139,7 @@ Analýza grafických snímků v analyzátoru grafiky sady Visual Studio použijt
   
  Analýza snímků omezuje počet 10 opakování. Pokud má vaše platforma agresivní spotřeby nebo prostřednictvím brány hodiny, může způsobit analýza snímků ohlásit chybu, protože došlo k překročení limitu opakování a selhání. Je možné zmírnit potíže resetováním řízení spotřeby vaší platformě a hodiny, bude méně agresivní, pokud ji povolí platformu omezování rychlosti.  
   
-##  <a name="HardwareSupport"></a> Hardwarovou podporu  
+## <a name="HardwareSupport"></a> Hardwarovou podporu  
   
 ### <a name="timestamps-and-occlusion-queries"></a>Časová razítka a uzavření dotazů  
  Časová razítka jsou podporované na všech platformách, které podporují analýzu snímků. Hloubka uzavření dotazy – vyžadované pro čítač pixelů Occluded – jsou podporovány na platformách, které podporují úroveň funkcí 9.2 nebo vyšší.  
@@ -182,7 +182,7 @@ Analýza grafických snímků v analyzátoru grafiky sady Visual Studio použijt
 > [!NOTE]
 >  To platí jenom pro rozhraní Direct3D volání rozhraní API, které používáte, není úrovní funkcí. Za předpokladu, že používáte rozhraní Direct3D 11, Direct3D 11.1 a Direct3D 11.2 rozhraní API, můžete použít jakýkoli úroveň funkcí vám líbí a analýza snímků budou prostě fungovat.  
   
-##  <a name="Variants"></a> Varianty  
+## <a name="Variants"></a> Varianty  
  Každá změna, kterou analýza snímků se provede tak, jak je vykreslen blok při přehrávání se označuje jako *variant*. Varianty, které zkoumá analýza snímků odpovídají běžné, je poměrně snadné provedených změn může zlepšit výkon při vykreslování nebo kvality vaší aplikace – například nezmenšit velikost této textury, komprese textur nebo povolte různé druhy anti-aliasing. Varianty přepsání kontextu obvykle vykreslování a parametry vaší aplikace. Toto je souhrn:  
   
 |Variant|Popis|  

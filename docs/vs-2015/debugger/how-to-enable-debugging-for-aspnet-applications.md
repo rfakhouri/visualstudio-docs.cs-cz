@@ -18,12 +18,12 @@ caps.latest.revision: 40
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0dbedf6f2bc0832fa3ba54f691cbf713ccb533a9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3a229111a2aa4dd633d0728d3a1156c6a8048094
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54757545"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059952"
 ---
 # <a name="how-to-enable-debugging-for-aspnet-applications"></a>Postupy: Povolit ladění pro aplikace ASP.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,32 +35,32 @@ Pokud chcete povolit ladění, je nutné ho povolit jak **vlastnosti projektu** 
   
 ### <a name="to-enable-aspnet-debugging-in-the-project-properties-visual-basicc"></a>Povolení ladění ASP.NET ve vlastnostech projektu (jazyk Visual Basic nebo C#)  
   
-1.  V **Průzkumníka řešení**, klikněte pravým tlačítkem na název webového projektu a vyberte **vlastnosti**.  
+1. V **Průzkumníka řešení**, klikněte pravým tlačítkem na název webového projektu a vyberte **vlastnosti**.  
   
-2.  Na stránce vlastností projektu klikněte na tlačítko **webové** kartu.  
+2. Na stránce vlastností projektu klikněte na tlačítko **webové** kartu.  
   
-3.  V části **ladicí programy**, vyberte **ASP.NET** zaškrtávací políčko.  
+3. V části **ladicí programy**, vyberte **ASP.NET** zaškrtávací políčko.  
   
 ### <a name="to-enable-debugging-in-the-webconfig-file"></a>Povolení ladění v souboru web.config  
   
-1.  Otevřete soubor web.config použitím standardního textového editoru nebo parseru XML.  
+1. Otevřete soubor web.config použitím standardního textového editoru nebo parseru XML.  
   
     > [!NOTE]  
     > K souboru však nelze přistupovat vzdáleně pomocí webového prohlížeče. Z bezpečnostních důvodů konfiguruje [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] službu Microsoft IIS pro zabránění přímého přístupu prohlížeče k souborům Web.config. Jestliže se pokusíte přistoupit ke konfiguračnímu souboru z prohlížeče, zobrazí se chyba přístupu protokolu HTTP 403 (zakázáno).  
   
-2.  Soubor web.config je soubor XML, obsahuje proto vnořené oddíly označené značkami. Vyhledejte element `configuration/system.web/compilation`. Pokud element compilation neexistuje, vytvořte jej.  
+2. Soubor web.config je soubor XML, obsahuje proto vnořené oddíly označené značkami. Vyhledejte element `configuration/system.web/compilation`. Pokud element compilation neexistuje, vytvořte jej.  
   
-3.  Pokud element `compilation` neobsahuje atribut `debug`, přidejte tento atribut do elementu.  
+3. Pokud element `compilation` neobsahuje atribut `debug`, přidejte tento atribut do elementu.  
   
-4.  Ujistěte se, že je hodnota atributu `debug` nastavena na `true`.  
+4. Ujistěte se, že je hodnota atributu `debug` nastavena na `true`.  
   
 Soubor web.config by měl vypadat jako následující příklad. Mezi elementy configuration a system.web mohou být oddíly.  
   
--   oddíly elementů mezi elementy configuration a system.web  
+- oddíly elementů mezi elementy configuration a system.web  
   
--   oddíly elementů mezi elementy system.web a compilation  
+- oddíly elementů mezi elementy system.web a compilation  
   
--   Element compilation může obsahovat jiné atributy a elementy  
+- Element compilation může obsahovat jiné atributy a elementy  
   
 ## <a name="example"></a>Příklad  
   
@@ -79,7 +79,7 @@ Soubor web.config by měl vypadat jako následující příklad. Mezi elementy c
 ```  
   
 ## <a name="robust-programming"></a>Robustní programování  
-[!INCLUDE[vstecasp](../includes/vstecasp-md.md)] automaticky detekuje jakékoli změny v souboru Web.config a aplikuje nové nastavení konfigurace. Není nutné restartovat počítač nebo restartujte server IIS se změny projevily.  
+[!INCLUDE[vstecasp](../includes/vstecasp-md.md)] automaticky detekuje jakékoli změny do souborů Web.config a aplikuje nové nastavení konfigurace. Není nutné restartovat počítač nebo restartujte server IIS se změny projevily.  
   
 Webová stránka může obsahovat více virtuálních adresářů a podadresářů a soubory Web.config mohou existovat v každém z nich. Aplikace [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] dědí nastavení ze souborů Web.config, které jsou v cestě adresy URL výše. Hierarchické konfigurační soubory umožňují změnit nastavení pro několik aplikací [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] současně, jako například pro všechny aplikace v hierarchii pod ní. Je-li však element `debug` nastaven v souboru v nižší hierarchii, přepíše vyšší hodnotu.  
   

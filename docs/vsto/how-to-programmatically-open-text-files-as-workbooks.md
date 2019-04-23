@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8d53c21247e18f198fdac1c22a3b38c0bc5348b6
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 61e51f6274bc22ed0d34d33f5ff85bfbfbd927bd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56633912"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060135"
 ---
 # <a name="how-to-programmatically-open-text-files-as-workbooks"></a>Postupy: Otevírání textových souborů jako sešitů prostřednictvím kódu programu
   Jako sešit můžete otevřít textový soubor. Musíte předat název textového souboru, který chcete otevřít. Můžete zadat několik volitelných parametrů, jako je číslo řádku, které analýza kódu na začátku a sloupec formát dat v souboru.
@@ -33,9 +33,9 @@ ms.locfileid: "56633912"
 ## <a name="compile-the-code"></a>Kompilace kódu
  Tento příklad vyžaduje následující součásti:
 
--   Oddělených čárkou textový soubor s názvem `Test.txt` , který obsahuje alespoň tři řádky textu.
+- Oddělených čárkou textový soubor s názvem `Test.txt` , který obsahuje alespoň tři řádky textu.
 
--   Textový soubor `Test.txt` ukládaly na jednotce c:.
+- Textový soubor `Test.txt` ukládaly na jednotce c:.
 
 ## <a name="see-also"></a>Viz také:
 - [Práce se sešity](../vsto/working-with-workbooks.md)

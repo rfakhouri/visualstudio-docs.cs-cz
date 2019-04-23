@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b5a272c01f76787e60e7796173b52b563f8e8718
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 708d9c7e41a3be24f9eaf28d86da94d47b187a93
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56702041"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054011"
 ---
 # <a name="managed-extensibility-framework-in-the-editor"></a>Managed Extensibility Framework v editor
 Editor je sestavena pomocí Managed Extensibility Framework (MEF) komponenty. Můžete vytvářet vlastní komponent MEF, rozšíření editoru, a váš kód může spotřebovat i součásti editoru.
@@ -82,25 +82,25 @@ internal IClassificationTypeRegistryService ClassificationRegistry;
 
 #### <a name="to-consume-editor-functionality-from-a-mef-component-part"></a>Využívání funkce editoru v součásti MEF
 
-1.  Přidání odkazů na *System.Composition.ComponentModel.dll*, což je v globální mezipaměti sestavení (GAC) a editor sestavení.
+1. Přidání odkazů na *System.Composition.ComponentModel.dll*, což je v globální mezipaměti sestavení (GAC) a editor sestavení.
 
-2.  Přidejte příslušné příkazy using.
+2. Přidejte příslušné příkazy using.
 
     ```
     using System.ComponentModel.Composition;
     using Microsoft.VisualStudio.Text;
     ```
 
-3.  Přidat `[Import]` atribut do vašeho rozhraní služby následujícím způsobem.
+3. Přidat `[Import]` atribut do vašeho rozhraní služby následujícím způsobem.
 
     ```
     [Import]
     ITextBufferFactoryService textBufferService;
     ```
 
-4.  Když zakoupíte službu, můžete využívat některou z jeho součástí.
+4. Když zakoupíte službu, můžete využívat některou z jeho součástí.
 
-5.  Když kompilujete sestavení, vložit ho do *.. \Common7\IDE\Components\* složce instalace sady Visual Studio.
+5. Když kompilujete sestavení, vložit ho do *.. \Common7\IDE\Components\* složce instalace sady Visual Studio.
 
 ## <a name="see-also"></a>Viz také:
 - [Jazykové služby a editor Rozšiřovací body](../extensibility/language-service-and-editor-extension-points.md)

@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 70300e7d6090e7c8155281e771522bec08308f5b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f4b920706a6a43f52ab861d392efe4b30f28c4ca
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56629661"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056572"
 ---
 # <a name="how-to-publish-a-project-that-has-a-specific-locale"></a>Postupy: Publikování projektu s konkrétním národním
 Není, že aplikace obsahuje součásti, které mají různá národní prostředí. V tomto scénáři by vytvářet řešení, která se má několik projektů a potom publikovat samostatné projekty pro každé národní prostředí. Tento postup ukazuje, jak pomocí makra publikování první projekt v řešení s použitím národního prostředí "en". Pokud chcete vyzkoušet tuto proceduru s národním prostředí než "en", nezapomeňte nastavit `localeString` v makru tak, aby odpovídaly národní prostředí, který používáte (pro příklad, "de" nebo "de-DE").
@@ -35,13 +35,13 @@ Není, že aplikace obsahuje součásti, které mají různá národní prostře
 
 ### <a name="to-create-the-publishing-macro"></a>Chcete-li vytvořit publikování – makro
 
-1.  Otevřete Průzkumník maker na **nástroje** nabídky, přejděte k **makra**a potom klikněte na tlačítko **– makro Explorer**.
+1. Otevřete Průzkumník maker na **nástroje** nabídky, přejděte k **makra**a potom klikněte na tlačítko **– makro Explorer**.
 
-2.  Vytvořte nový modul makra. V aplikaci – makro Explorer vyberte **MyMacros**. Na **nástroje** nabídky, přejděte k **makra**a potom klikněte na tlačítko **nový modul – makro**. Název modulu **PublishSpecificCulture**.
+2. Vytvořte nový modul makra. V aplikaci – makro Explorer vyberte **MyMacros**. Na **nástroje** nabídky, přejděte k **makra**a potom klikněte na tlačítko **nový modul – makro**. Název modulu **PublishSpecificCulture**.
 
-3.  V aplikaci – makro Explorer rozbalte **MyMacros** uzlu a pak otevřete **publikovat všechny projekty poklikáním** modulu poklepáním (nebo z **nástroje** nabídky, přejděte k **Makra**a potom klikněte na tlačítko **Macros IDE**).
+3. V aplikaci – makro Explorer rozbalte **MyMacros** uzlu a pak otevřete **publikovat všechny projekty poklikáním** modulu poklepáním (nebo z **nástroje** nabídky, přejděte k **Makra**a potom klikněte na tlačítko **Macros IDE**).
 
-4.  V integrovaném vývojovém prostředí makra, přidejte následující kód do modulu, po `Import` příkazy:
+4. V integrovaném vývojovém prostředí makra, přidejte následující kód do modulu, po `Import` příkazy:
 
     ```vb
     Module PublishSpecificCulture
@@ -135,31 +135,31 @@ Není, že aplikace obsahuje součásti, které mají různá národní prostře
     End Module
     ```
 
-5.  Zavřete Macros IDE. Fokus vrátí do sady Visual Studio.
+5. Zavřete Macros IDE. Fokus vrátí do sady Visual Studio.
 
 ### <a name="to-publish-a-project-for-a-specific-locale"></a>Chcete-li publikovat projekt pro specifické národní prostředí
 
-1.  Vytvoření projektu jazyka Visual Basic aplikací Windows, na **souboru** nabídky, přejděte k **nový**a potom klikněte na tlačítko **projektu**.
+1. Vytvoření projektu jazyka Visual Basic aplikací Windows, na **souboru** nabídky, přejděte k **nový**a potom klikněte na tlačítko **projektu**.
 
-2.  V **nový projekt** dialogu **aplikace Windows** z **jazyka Visual Basic** uzlu. Pojmenujte projekt *PublishLocales*.
+2. V **nový projekt** dialogu **aplikace Windows** z **jazyka Visual Basic** uzlu. Pojmenujte projekt *PublishLocales*.
 
-3.  Klikněte na tlačítko Form1. V **vlastnosti** okně v části **návrhu**, změnit **jazyk** vlastnost z **(výchozí)** k **Angličtina**. Změnit **Text** vlastnost formuláře **MyForm**.
+3. Klikněte na tlačítko Form1. V **vlastnosti** okně v části **návrhu**, změnit **jazyk** vlastnost z **(výchozí)** k **Angličtina**. Změnit **Text** vlastnost formuláře **MyForm**.
 
      Všimněte si, že lokalizovaný prostředek knihovny DLL se nevytvoří, dokud se v případě potřeby zapíná. Například jsou vytvořeny při změně textu formuláře nebo jeden z jeho ovládacích prvků po zadání nové národní prostředí.
 
-4.  Publikování *PublishLocales* pomocí integrovaného vývojového prostředí sady Visual Studio.
+4. Publikování *PublishLocales* pomocí integrovaného vývojového prostředí sady Visual Studio.
 
      V **Průzkumníka řešení**vyberte *PublishLocales*. Na **projektu** nabídce vyberte možnost **vlastnosti**. V Návrháři projektu na **publikovat** určete umístění pro publikování, **http://localhost/PublishLocales**a potom klikněte na tlačítko **publikovat**.
 
      Když se objeví publikované webové stránky, zavřete ho. (V tomto kroku budete muset projekt publikovat; není nutné k jeho instalaci.)
 
-5.  Publikování *PublishLocales* znovu vyvoláním makra v okně Příkazový řádek sady Visual Studio. Chcete-li zobrazit okno příkazového řádku na **zobrazení** nabídky, přejděte na **ostatní Windows** a potom klikněte na tlačítko **příkazové okno**, nebo stiskněte klávesu **Ctrl** + **Alt**+**A**. V okně příkazového řádku zadejte `macros`; automatické dokončování vám poskytne seznam dostupných maker. Vyberte následující makra a stiskněte klávesu ENTER:
+5. Publikování *PublishLocales* znovu vyvoláním makra v okně Příkazový řádek sady Visual Studio. Chcete-li zobrazit okno příkazového řádku na **zobrazení** nabídky, přejděte na **ostatní Windows** a potom klikněte na tlačítko **příkazové okno**, nebo stiskněte klávesu **Ctrl** + **Alt**+**A**. V okně příkazového řádku zadejte `macros`; automatické dokončování vám poskytne seznam dostupných maker. Vyberte následující makra a stiskněte klávesu ENTER:
 
      `Macros.MyMacros.PublishSpecificCulture.PublishProjectFirstProjectWithEnLocale`
 
-6.  Při procesu publikování bude úspěšné, vygeneruje se zpráva, že "publikování bylo úspěšné pro *PublishLocales\PublishLocales.vbproj*. Publikování byl jazyk "en". " Klikněte na tlačítko **OK** v okně se zprávou. Když se objeví publikované webové stránky, klikněte na tlačítko **nainstalovat**.
+6. Při procesu publikování bude úspěšné, vygeneruje se zpráva, že "publikování bylo úspěšné pro *PublishLocales\PublishLocales.vbproj*. Publikování byl jazyk "en". " Klikněte na tlačítko **OK** v okně se zprávou. Když se objeví publikované webové stránky, klikněte na tlačítko **nainstalovat**.
 
-7.  Hledat v *C:\Inetpub\wwwroot\PublishLocales\en*. Měli byste vidět nainstalovaných souborů, jako je například manifestů, *setup.exe*a publikovat soubor webovou stránku, kromě lokalizovaný prostředek knihovny DLL. (Ve výchozím nastavení technologie ClickOnce přidá *.deploy* rozšíření na souborů exe a DLL; odeberete toto rozšíření po nasazení.)
+7. Hledat v *C:\Inetpub\wwwroot\PublishLocales\en*. Měli byste vidět nainstalovaných souborů, jako je například manifestů, *setup.exe*a publikovat soubor webovou stránku, kromě lokalizovaný prostředek knihovny DLL. (Ve výchozím nastavení technologie ClickOnce přidá *.deploy* rozšíření na souborů exe a DLL; odeberete toto rozšíření po nasazení.)
 
 ## <a name="see-also"></a>Viz také:
 - [Publikování aplikací ClickOnce](../deployment/publishing-clickonce-applications.md)

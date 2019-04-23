@@ -16,21 +16,21 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d2c81a0da3c60bc9b3cfaec357dab0fe2bb33706
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a24fde5f04a88de7eec34836df38bc1cca8669ab
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56654019"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060628"
 ---
 # <a name="how-to-programmatically-insert-text-into-word-documents"></a>Postupy: Vkládání textu do dokumentů aplikace Word prostřednictvím kódu programu
   Existují tři základní způsoby vkládání textu do dokumentů aplikace Microsoft Office Word:
 
--   Vložte text v rozsahu.
+- Vložte text v rozsahu.
 
--   Nahraďte text v rozsahu novým textem.
+- Nahraďte text v rozsahu novým textem.
 
--   Použití <xref:Microsoft.Office.Interop.Word.Selection.TypeText%2A> metodu <xref:Microsoft.Office.Interop.Word.Selection> objektu pro vložení textu na výběr nebo kurzor.
+- Použití <xref:Microsoft.Office.Interop.Word.Selection.TypeText%2A> metodu <xref:Microsoft.Office.Interop.Word.Selection> objektu pro vložení textu na výběr nebo kurzor.
 
 > [!NOTE]
 >  Můžete také vložit text do ovládacích prvků obsahu a záložky. Další informace najdete v tématu [ovládací prvky obsahu](../vsto/content-controls.md) a [Bookmark – ovládací prvek](../vsto/bookmark-control.md).
@@ -42,7 +42,7 @@ ms.locfileid: "56654019"
 
 ### <a name="to-insert-text-in-a-range"></a>Chcete-li vložit text v rozsahu
 
-1.  Zadejte rozsah na začátku dokumentu a vložit text **nový Text**.
+1. Zadejte rozsah na začátku dokumentu a vložit text **nový Text**.
 
      Následující příklad kódu je možné v přizpůsobení na úrovni dokumentu.
 
@@ -54,7 +54,7 @@ ms.locfileid: "56654019"
      [!code-vb[Trin_VstcoreWordAutomationAddIn#51](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#51)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#51](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#51)]
 
-2.  Vyberte <xref:Microsoft.Office.Interop.Word.Range> objektu, který se rozšířila z jeden znak a délka byl vložen text.
+2. Vyberte <xref:Microsoft.Office.Interop.Word.Range> objektu, který se rozšířila z jeden znak a délka byl vložen text.
 
      [!code-vb[Trin_VstcoreWordAutomation#52](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#52)]
      [!code-csharp[Trin_VstcoreWordAutomation#52](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#52)]
@@ -64,7 +64,7 @@ ms.locfileid: "56654019"
 
 ### <a name="to-replace-text-in-a-range"></a>Nahradí text v rozsahu
 
-1.  Vytvoření <xref:Microsoft.Office.Interop.Word.Range> objekt, který se skládá z prvních 12 znaků v dokumentu.
+1. Vytvoření <xref:Microsoft.Office.Interop.Word.Range> objekt, který se skládá z prvních 12 znaků v dokumentu.
 
      Následující příklad kódu je možné v přizpůsobení na úrovni dokumentu.
 
@@ -76,12 +76,12 @@ ms.locfileid: "56654019"
      [!code-vb[Trin_VstcoreWordAutomationAddIn#53](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#53)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#53](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#53)]
 
-2.  Nahraďte řetězcem, tyto znaky **nový Text**.
+2. Nahraďte řetězcem, tyto znaky **nový Text**.
 
      [!code-vb[Trin_VstcoreWordAutomation#54](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#54)]
      [!code-csharp[Trin_VstcoreWordAutomation#54](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#54)]
 
-3.  Vyberte oblast.
+3. Vyberte oblast.
 
      [!code-vb[Trin_VstcoreWordAutomation#55](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#55)]
      [!code-csharp[Trin_VstcoreWordAutomation#55](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#55)]

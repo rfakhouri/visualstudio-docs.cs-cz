@@ -8,12 +8,12 @@ ms.assetid: 20221de4-2a9e-4787-b99a-b5855bb90872
 caps.latest.revision: 18
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 70392f50ecd13539012672bf71900c30845af734
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 4977a6394a5732d92391c3405519345484a6629f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54783368"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056923"
 ---
 # <a name="code-generation-compilation-and-naming-conventions-in-microsoft-fakes"></a>Vytváření, kompilace a konvence pojmenování kódu v Napodobeniny Microsoft
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,9 +22,9 @@ Toto téma popisuje možnosti a problémy v generování kódu rozhraní Fakes a
   
  **Požadavky**  
   
--   Visual Studio Enterprise  
+- Visual Studio Enterprise  
   
-##  <a name="BKMK_In_this_topic"></a> V tomto tématu  
+## <a name="BKMK_In_this_topic"></a> V tomto tématu  
  [Vytváření a kompilování kódu](#BKMK_Code_generation_and_compilation)  
   
 - [Konfigurace generování provizorního kódu](#BKMK_Configuring_code_generation_of_stubs) • [filtrování typů](#BKMK_Type_filtering) • [vytváření provizorního kódu konkrétních tříd a virtuálních metodách](#BKMK_Stubbing_concrete_classes_and_virtual_methods) • [vnitřní typy](#BKMK_Internal_types) • [ Optimalizace doby sestavení](#BKMK_Optimizing_build_times) • [kolizi názvů sestavení](#BKMK_Avoiding_assembly_name_clashing)  
@@ -37,9 +37,9 @@ Toto téma popisuje možnosti a problémy v generování kódu rozhraní Fakes a
   
 - [Pokyny](#BKMK_Guidance)  
   
-##  <a name="BKMK_Code_generation_and_compilation"></a> Vytváření a kompilování kódu  
+## <a name="BKMK_Code_generation_and_compilation"></a> Vytváření a kompilování kódu  
   
-###  <a name="BKMK_Configuring_code_generation_of_stubs"></a> Konfigurace generování provizorního kódu  
+### <a name="BKMK_Configuring_code_generation_of_stubs"></a> Konfigurace generování provizorního kódu  
  Generování provizorních typů je nakonfigurovaný v souboru XML, který má příponu souboru .fakes. Rámec falešného kódu integruje do procesu sestavení prostřednictvím úkolů MSBuild a tyto soubory detekuje během sestavení. Generátor falešného kódu kompiluje provizorní typy do sestavení a přidá odkaz na projekt.  
   
  Následující příklad ilustruje provizorní typy definované v knihovně FileSystem.dll:  
@@ -51,7 +51,7 @@ Toto téma popisuje možnosti a problémy v generování kódu rozhraní Fakes a
   
 ```  
   
-###  <a name="BKMK_Type_filtering"></a> Filtrování podle typu  
+### <a name="BKMK_Type_filtering"></a> Filtrování podle typu  
  Filtry lze nastavit v souboru .fakes omezit typy, které by měla být prázdná. Můžete přidat množství vymazat, přidat a odebrat elementy v prvku StubGeneration pro sestavení seznamu vybraných typů.  
   
  Například tento soubor fakes generuje provizorní kód pro typy v oborech názvů System a System.IO, ale vynechá jakýkoli typ obsahující "Handle" v systému:  
@@ -72,27 +72,27 @@ Toto téma popisuje možnosti a problémy v generování kódu rozhraní Fakes a
   
  Řetězce filtru používají k definování, jak odpovídající by mělo být provedeno jednoduchou gramatiku:  
   
--   Filtry jsou malá a velká písmena ve výchozím nastavení; filtry provádějí porovnání podřetězců:  
+- Filtry jsou malá a velká písmena ve výchozím nastavení; filtry provádějí porovnání podřetězců:  
   
      `el` odpovídá "hello"  
   
--   Přidání `!` filtr na konec filtrovacího řetězce se přesná shoda malá a velká písmena:  
+- Přidání `!` filtr na konec filtrovacího řetězce se přesná shoda malá a velká písmena:  
   
      `el!` neodpovídá "hello"  
   
      `hello!` odpovídá "hello"  
   
--   Přidání `*` na konec filtrovacího řetězce se provede porovnání předpony řetězce:  
+- Přidání `*` na konec filtrovacího řetězce se provede porovnání předpony řetězce:  
   
      `el*` neodpovídá "hello"  
   
      `he*` odpovídá "hello"  
   
--   Několik filtrů ve středníkem oddělený seznam zkombinují je vyhodnoceno jako disjunkce:  
+- Několik filtrů ve středníkem oddělený seznam zkombinují je vyhodnoceno jako disjunkce:  
   
      `el;wo` odpovídá "hello" a "world"  
   
-###  <a name="BKMK_Stubbing_concrete_classes_and_virtual_methods"></a> Vytváření provizorního kódu konkrétních tříd a virtuálních metod  
+### <a name="BKMK_Stubbing_concrete_classes_and_virtual_methods"></a> Vytváření provizorního kódu konkrétních tříd a virtuálních metod  
  Ve výchozím nastavení jsou zástupné typy generovány pro všechny nezapečetěné třídy. Je možné omezit typy zástupných procedur pro abstraktní třídy pomocí konfiguračního souboru .fakes:  
   
 ```xml  
@@ -109,7 +109,7 @@ Toto téma popisuje možnosti a problémy v generování kódu rozhraní Fakes a
 </Fakes>  
 ```  
   
-###  <a name="BKMK_Internal_types"></a> Vnitřní typy  
+### <a name="BKMK_Internal_types"></a> Vnitřní typy  
  Generátor falešného kódu bude generovat překrývající a provizorní typy, které jsou pro falešné sestavení viditelné. Chcete-li zviditelnit vnitřní typy překrytého sestavení pro falešné a testovací sestavení, přidejte <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> atributy do kódu překrytého sestavení, které dává viditelnost generovanému falešnému sestavení a testovacímu sestavení. Tady je příklad:  
   
 ```csharp  
@@ -164,26 +164,26 @@ Toto téma popisuje možnosti a problémy v generování kódu rozhraní Fakes a
   
  V příkladu výše hodnoty `Alternate_public_key` a `Test_assembly_public_key` může být stejný.  
   
-###  <a name="BKMK_Optimizing_build_times"></a> Optimalizace doby sestavení  
+### <a name="BKMK_Optimizing_build_times"></a> Optimalizace doby sestavení  
  Kompilace falešných sestavení může podstatně prodloužit dobu sestavení. Dobu sestavení lze minimalizovat generováním falešných sestavení pro systémová sestavení technologie .NET a sestavení třetích stran v odděleném centralizovaném projektu. Protože tato sestavení se jen zřídka mění na svém počítači, můžete využít tyto vygenerované napodobeniny sestavení v jiných projektech.  
   
  V projektech jednotkových testů můžete jednoduše provést odkaz na kompilovaná falešná sestavení, které jsou umístěny v podadresáři fakesassemblies adresáře ve složce projektu.  
   
-1.  Vytvořte novou knihovnu tříd s verzí modulu runtime .NET odpovídající testovacímu projektu. Nazvěte ji třeba Fakes.Prebuild. Odstraňte soubor class1.cs z projektu, není potřeba.  
+1. Vytvořte novou knihovnu tříd s verzí modulu runtime .NET odpovídající testovacímu projektu. Nazvěte ji třeba Fakes.Prebuild. Odstraňte soubor class1.cs z projektu, není potřeba.  
   
-2.  Přidáte odkaz na všechna systémová sestavení a sestavení třetích stran, které potřebujete napodobeniny.  
+2. Přidáte odkaz na všechna systémová sestavení a sestavení třetích stran, které potřebujete napodobeniny.  
   
-3.  Pro každého z těchto sestavení přidejte soubor s příponou .fakes a sestavení.  
+3. Pro každého z těchto sestavení přidejte soubor s příponou .fakes a sestavení.  
   
-4.  Z testovacího projektu  
+4. Z testovacího projektu  
   
-    -   Ujistěte se, že budete mít odkaz na napodobeninu knihovny runtime DLL:  
+    - Ujistěte se, že budete mít odkaz na napodobeninu knihovny runtime DLL:  
   
          C:\Program Files\Microsoft Visual Studio 12.0\Common7\IDE\PublicAssemblies\Microsoft.QualityTools.Testing.Fakes.dll  
   
-    -   Pro každé sestavení, že jste vytvořili falešné sestavení, přidejte odkaz na odpovídající soubor knihovny DLL ve složce fakes.prebuild\fakesassemblies k projektu.  
+    - Pro každé sestavení, že jste vytvořili falešné sestavení, přidejte odkaz na odpovídající soubor knihovny DLL ve složce fakes.prebuild\fakesassemblies k projektu.  
   
-###  <a name="BKMK_Avoiding_assembly_name_clashing"></a> Kolizi názvů sestavení  
+### <a name="BKMK_Avoiding_assembly_name_clashing"></a> Kolizi názvů sestavení  
  V prostředí Team Build jsou všechna výstupní sestavení sloučena do jednoho adresáře. V případě více projektů používá falešné třídy může se stát, že napodobeniny sestavení z rozdílných verzí navzájem přepisují. Například projekt testproject1 vyžaduje napodobeninu knihovny mscorlib.dll rozhraní .NET Framework 2.0 a projekt testproject2 vyžaduje napodobeninu knihovny mscorlib.dll rozhraní .NET Framework 4 mscorlib.fakes.dll na mscorlib. Fakes.dll falešné sestavení.  
   
  K tomuto problému vyhnout, napodobeniny automaticky vytvořila verze kvalifikovaný pro reference mimo projekt názvy falešných sestavení při přidávání souborů .fakes. Verze kvalifikovaný název sestavení napodobenin vloží číslo verze, když vytváříte název sestavení napodobenin:  
@@ -201,9 +201,9 @@ attribute of the Assembly element in the .fakes:
   
 ```  
   
-##  <a name="BKMK_Fakes_naming_conventions"></a> Konvence pojmenovávání napodobenin  
+## <a name="BKMK_Fakes_naming_conventions"></a> Konvence pojmenovávání napodobenin  
   
-###  <a name="BKMK_Shim_type_and_stub_type_naming_conventions"></a> Překrývajících a provizorních zadejte zásady vytváření názvů  
+### <a name="BKMK_Shim_type_and_stub_type_naming_conventions"></a> Překrývajících a provizorních zadejte zásady vytváření názvů  
  **Obory názvů**  
   
 - . Napodobeniny přípona se přidá do oboru názvů.  
@@ -228,7 +228,7 @@ attribute of the Assembly element in the .fakes:
   
 - Vnořené struktury typů zkopírovány pro typy překrytí.  
   
-###  <a name="BKMK_Shim_delegate_property_or_stub_delegate_field_naming_conventions"></a> Vlastností překrývajícího delegáta se zakázaným inzerováním delegáta zásady vytváření názvů polí  
+### <a name="BKMK_Shim_delegate_property_or_stub_delegate_field_naming_conventions"></a> Vlastností překrývajícího delegáta se zakázaným inzerováním delegáta zásady vytváření názvů polí  
  **Základní pravidla** pro pojmenovávání polí, počínaje prázdným názvem:  
   
 - Je připojen název metody.  
@@ -254,13 +254,13 @@ attribute of the Assembly element in the .fakes:
   
  **Poznámky**  
   
--   **Gettery a settery indexerů** je zacházeno podobně jako na vlastnost. Výchozí název indexeru je `Item`.  
+- **Gettery a settery indexerů** je zacházeno podobně jako na vlastnost. Výchozí název indexeru je `Item`.  
   
--   **Typ parametru** názvy jsou transformovány a spojeny.  
+- **Typ parametru** názvy jsou transformovány a spojeny.  
   
--   **Návratový typ** se ignoruje, pokud existuje existovala dvojznačnost přetížení. Pokud je to tento případ, návratový typ je přidáván na konec názvu  
+- **Návratový typ** se ignoruje, pokud existuje existovala dvojznačnost přetížení. Pokud je to tento případ, návratový typ je přidáván na konec názvu  
   
-###  <a name="BKMK_Parameter_type_naming_conventions"></a> Konvence pojmenovávání parametrických typů  
+### <a name="BKMK_Parameter_type_naming_conventions"></a> Konvence pojmenovávání parametrických typů  
   
 |Zadaný|Připojený řetězec je...|  
 |-----------|-------------------------|  
@@ -275,16 +275,16 @@ attribute of the Assembly element in the .fakes:
 |A **argument obecné metody** `!!i` metody `M<MMethod>`|`Mi`|  
 |A **vnořený typ**`N.T`|`N` je připojeno, pak `T`|  
   
-###  <a name="BKMK_Recursive_rules"></a> Rekurzivní pravidla  
+### <a name="BKMK_Recursive_rules"></a> Rekurzivní pravidla  
  Následující pravidla jsou aplikována rekurzivně:  
   
--   Jelikož napodobeniny používají C# ke generování sestavení Fakes, jakýkoli znak, který vyprodukuje neplatný C# token je převeden na "_" (podtržítko).  
+- Jelikož napodobeniny používají C# ke generování sestavení Fakes, jakýkoli znak, který vyprodukuje neplatný C# token je převeden na "_" (podtržítko).  
   
--   Jestliže výsledný název koliduje se členem deklarovaného typu, se používá schéma číslování přidáním čítač dvěma číslicemi, začínající od 01.  
+- Jestliže výsledný název koliduje se členem deklarovaného typu, se používá schéma číslování přidáním čítač dvěma číslicemi, začínající od 01.  
   
-##  <a name="BKMK_External_resources"></a> Externí prostředky  
+## <a name="BKMK_External_resources"></a> Externí prostředky  
   
-###  <a name="BKMK_Guidance"></a> Doprovodné materiály  
+### <a name="BKMK_Guidance"></a> Doprovodné materiály  
  [Testování pro nepřetržité dodávky s Visual Studio 2012 – kapitola 2: Testování částí: Testování uvnitř](http://go.microsoft.com/fwlink/?LinkID=255188)  
   
 ## <a name="see-also"></a>Viz také  

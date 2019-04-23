@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3c583ee2dd652a81410a756a5297e570afb20f76
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 9f4c165f3e882cea71ee4aaff9f2358c27ce6a2b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59366442"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053439"
 ---
 # <a name="step-4-use-the-full-flask-web-project-template"></a>Krok 4: Použití úplné šablony webového projektu Flask
 
@@ -169,6 +169,7 @@ Aplikace  *\_ \_init\_\_.py* souboru obsahuje řádek do
 ```python
 app.jinja_env.add_extension('pyjade.ext.jinja.PyJadeExtension')
 ```
+
 V *šablony* složky, uvidíte *.jade* soubory místo *.html* šablony a zobrazení v *views.py* najdete v těchto souborů v jejich volání `flask.render_template`. Zobrazení kódu jinak je stejný.
 
 Otevření jedné ze *.jade* soubory, můžete zobrazit stručnější výraz šablony. Například tady je obsah *templates/layout.jade* jako autor šablony "Webový projekt Flask/Jade":

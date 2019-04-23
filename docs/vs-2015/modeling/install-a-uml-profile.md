@@ -11,12 +11,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2ae3ee33f47a60a74148698424ad58397e0cb577
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0187f7dede25900cdf3a78fdbfe2899e5f318472
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54790178"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043442"
 ---
 # <a name="install-a-uml-profile"></a>Instalace profilu UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,21 +29,21 @@ Visual Studio můžete rozšířit tak, že profil UML. Profil, který umožňuj
   
 ### <a name="to-install-a-uml-profile-on-your-computer"></a>Instalace profilu UML v počítači  
   
-1.  Profil by měl mít ve formě rozšíření sady Visual Studio (`.vsix`) soubor. Ve stejném souboru může být jiné funkce.  
+1. Profil by měl mít ve formě rozšíření sady Visual Studio (`.vsix`) soubor. Ve stejném souboru může být jiné funkce.  
   
      Přesunout `.vsix` souboru do vhodného umístění v počítači.  
   
-2.  Dvakrát klikněte `.vsix` souboru v Průzkumníku Windows (nebo Průzkumníka souborů), nebo otevřete ho v rámci [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)].  
+2. Dvakrát klikněte `.vsix` souboru v Průzkumníku Windows (nebo Průzkumníka souborů), nebo otevřete ho v rámci [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)].  
   
-3.  Klikněte na tlačítko **nainstalovat** v dialogovém okně, které se zobrazí.  
+3. Klikněte na tlačítko **nainstalovat** v dialogovém okně, které se zobrazí.  
   
-4.  Chcete-li odinstalovat nebo dočasně zakázat rozšíření, otevřete **Správce rozšíření** z **nástroje** nabídky.  
+4. Chcete-li odinstalovat nebo dočasně zakázat rozšíření, otevřete **Správce rozšíření** z **nástroje** nabídky.  
   
 ### <a name="to-uninstall-or-disable-a-profile-extension"></a>Odinstalace nebo zakázání rozšíření profilu  
   
-1.  V sadě Visual Studio **nástroje** nabídky, klikněte na tlačítko **Správce rozšíření**.  
+1. V sadě Visual Studio **nástroje** nabídky, klikněte na tlačítko **Správce rozšíření**.  
   
-2.  Klikněte na rozšíření, které chcete odebrat a potom klikněte na tlačítko **zakázat** nebo **odinstalovat**.  
+2. Klikněte na rozšíření, které chcete odebrat a potom klikněte na tlačítko **zakázat** nebo **odinstalovat**.  
   
 ## <a name="see-also"></a>Viz také  
  [Přizpůsobení modelu pomocí profilů a stereotypů](../modeling/customize-your-model-with-profiles-and-stereotypes.md)   

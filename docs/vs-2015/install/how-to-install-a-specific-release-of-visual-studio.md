@@ -11,12 +11,12 @@ caps.latest.revision: 20
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: b5f74512d0c035a82845d77f4b3df12633036f03
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: fdf7417364d834b00369e211f584caa2ab4cbdf5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54756357"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054466"
 ---
 # <a name="how-to-install-a-specific-release-of-visual-studio"></a>Postupy: Instalace konkrétní verze sady Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,18 +46,18 @@ ms.locfileid: "54756357"
 >  V závislosti na jazyku, který chcete použít nahraďte "CSY" (pro angličtinu) s jedním z následujících hodnot:
 >
 > - Kontextová nápověda (pro čínštinu (zjednodušenou))
->   -   Sada CHT (pro čínština (tradiční))
->   -   Sada CSY (pro čeština)
->   -   DEU (pro němčinu)
->   -   Sada ESN (pro španělštinu)
->   -   FRA (pro francouzština)
->   -   Sada ITA (pro italština)
->   -   jpa (pro japonština)
->   -   Sada kor (pro korejština)
->   -   PLK (pro polština)
->   -   PTB (pro portugalština)
->   -   RU (pro ruština)
->   -   REV (pro turečtina)
+>   - Sada CHT (pro čínština (tradiční))
+>   - Sada CSY (pro čeština)
+>   - DEU (pro němčinu)
+>   - Sada ESN (pro španělštinu)
+>   - FRA (pro francouzština)
+>   - Sada ITA (pro italština)
+>   - jpa (pro japonština)
+>   - Sada kor (pro korejština)
+>   - PLK (pro polština)
+>   - PTB (pro portugalština)
+>   - RU (pro ruština)
+>   - REV (pro turečtina)
 
 ## <a name="see-also"></a>Viz také
  [Příručka správce sady Visual Studio](../install/visual-studio-administrator-guide.md)

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a9d5f137fdce3a50f95b3dfa641bd684d5aab060
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 8a2e6bf4ffd22c6f4e3c63315a1c4a221f621c08
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55952694"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063033"
 ---
 # <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>Postupy: Úprava příkazu standardní nabídky v jazyce specifickém pro doménu
 
@@ -28,15 +28,15 @@ Můžete změnit chování některé standardní příkazy, které jsou automati
 
 ### <a name="to-discover-what-commands-you-can-modify"></a>Pokud chcete zjistit, jaké příkazy, které můžete upravit
 
-1.  V `DslPackage` projekt, otevřete `GeneratedCode\CommandSet.cs`. Tento soubor jazyka C# najdete v okně Průzkumník řešení jako pobočka `CommandSet.tt`.
+1. V `DslPackage` projekt, otevřete `GeneratedCode\CommandSet.cs`. Tento soubor jazyka C# najdete v okně Průzkumník řešení jako pobočka `CommandSet.tt`.
 
-2.  Hledání třídy v tomto souboru, jejichž názvy končí "`CommandSet`", například `Language1CommandSet` a `Language1ClipboardCommandSet`.
+2. Hledání třídy v tomto souboru, jejichž názvy končí "`CommandSet`", například `Language1CommandSet` a `Language1ClipboardCommandSet`.
 
-3.  Každá třída set příkazu, zadejte "`override`" následované mezerou. Technologie IntelliSense zobrazí seznam metod, které můžete přepsat. Každý příkaz nemá dvojici metod, jejichž názvy začínají "`ProcessOnStatus`"a"`ProcessOnMenu`".
+3. Každá třída set příkazu, zadejte "`override`" následované mezerou. Technologie IntelliSense zobrazí seznam metod, které můžete přepsat. Každý příkaz nemá dvojici metod, jejichž názvy začínají "`ProcessOnStatus`"a"`ProcessOnMenu`".
 
-4.  Poznačte si příkazu nastavit třídy obsahuje příkaz, který chcete upravit.
+4. Poznačte si příkazu nastavit třídy obsahuje příkaz, který chcete upravit.
 
-5.  Zavřete soubor bez uložení úprav.
+5. Zavřete soubor bez uložení úprav.
 
     > [!NOTE]
     > Obvykle byste neměli upravovat soubory, které byly vytvořeny. Veškeré úpravy budou ztraceny při příštím tyto soubory jsou vygenerovány.
@@ -47,15 +47,15 @@ Vytvořte nový soubor, který obsahuje částečné deklarace třídy příkazu
 
 ### <a name="to-extend-the-command-set-class"></a>K rozšíření příkazu Set – třída
 
-1.  V Průzkumníku řešení v projektu DslPackage otevřete složku GeneratedCode a podívejte se do části CommandSet.tt a otevřete její vygenerovaný soubor CommandSet.cs. Poznámka: obor názvů a název první třídy, která je definována existuje. Například může se zobrazit:
+1. V Průzkumníku řešení v projektu DslPackage otevřete složku GeneratedCode a podívejte se do části CommandSet.tt a otevřete její vygenerovaný soubor CommandSet.cs. Poznámka: obor názvů a název první třídy, která je definována existuje. Například může se zobrazit:
 
      `namespace Company.Language1`
 
      `{ ...  internal partial class Language1CommandSet : ...`
 
-2.  V **DslPackage**, vytvořte složku s názvem **vlastní kód**. V této složce, vytvořte nový soubor třídy `CommandSet.cs`.
+2. V **DslPackage**, vytvořte složku s názvem **vlastní kód**. V této složce, vytvořte nový soubor třídy `CommandSet.cs`.
 
-3.  V novém souboru zápisu částečná deklarace, který má stejný obor názvů a název jako vygenerovanou dílčí třídu. Příklad:
+3. V novém souboru zápisu částečná deklarace, který má stejný obor názvů a název jako vygenerovanou dílčí třídu. Příklad:
 
     ```csharp
     using System;
@@ -128,17 +128,17 @@ Pokud váš kód provede změny Store, jako je například vytvoření, odstran�
 
 Následující fragmenty jsou často užitečné v rámci těchto metod:
 
--   `this.CurrentSelection`. Obrazec, který klikli pravým tlačítkem myši uživatele je vždy součástí tohoto seznamu obrazců a konektorů. Pokud uživatel klikne na prázdnou část diagramu, diagramu je jediným členem seznamu.
+- `this.CurrentSelection`. Obrazec, který klikli pravým tlačítkem myši uživatele je vždy součástí tohoto seznamu obrazců a konektorů. Pokud uživatel klikne na prázdnou část diagramu, diagramu je jediným členem seznamu.
 
--   `this.IsDiagramSelected()` - `true` Pokud uživatel klikne na prázdnou část diagramu.
+- `this.IsDiagramSelected()` - `true` Pokud uživatel klikne na prázdnou část diagramu.
 
--   `this.IsCurrentDiagramEmpty()`
+- `this.IsCurrentDiagramEmpty()`
 
--   `this.IsSingleSelection()` -uživatel nevybrali více tvarů
+- `this.IsSingleSelection()` -uživatel nevybrali více tvarů
 
--   `this.SingleSelection` – vybraný tvar nebo diagram, který klikli pravým tlačítkem myši uživatele
+- `this.SingleSelection` – vybraný tvar nebo diagram, který klikli pravým tlačítkem myši uživatele
 
--   `shape.ModelElement as MyLanguageElement` -prvku modelu reprezentovány ve tvaru.
+- `shape.ModelElement as MyLanguageElement` -prvku modelu reprezentovány ve tvaru.
 
 Další informace o tom, jak přejít z elementu a o tom, jak vytvořit objekty a propojení najdete v tématu [navigace a aktualizace modelu v programovém kódu](../modeling/navigating-and-updating-a-model-in-program-code.md).
 
