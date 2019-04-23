@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: df723845fe99b32cd41231353142e0f03b667977
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b8f87f831c8076b22a61d7032d16be8d13f21b62
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55941397"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075295"
 ---
 # <a name="create-r-markdown-documents"></a>Vytváření dokumentů R Markdown
 
@@ -33,6 +33,7 @@ Nástroje R pro Visual Studio (RTVS) obsahuje šablonu položky R Markdown, edit
     install.packages("rmarkdown")
 
     ```
+
 1. Vytvořit nový soubor R Markdown pomocí **souboru** > **nový** > **souboru** příkaz nabídky a vyberete **R**  >  **R Markdown** ze seznamu. V kontextu projektu, klikněte pravým tlačítkem na projekt v Průzkumníku řešení a vyberte **přidat R Markdown** (nebo **přidat** > **nová položka** a vyberete **R Markdown** ze seznamu).
 
 1. Výchozí obsah nového souboru jsou následující:

@@ -10,19 +10,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be6a1b70326e2eca32c1be2c27382e55c51bc5f1
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 485c9e7152b3ed533c08e3f4f48409455849c43e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56681865"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075048"
 ---
 # <a name="how-to-refresh-the-view"></a>Postupy: Aktualizujte zobrazení
 Spy ++ "snímek" systémových tabulek a aktualizuje zobrazení na základě těchto informací. Je důležité, pravidelně aktualizovat systémová zobrazení. Pokud máte nástroje Spy ++ zobrazení otevřete a neaktualizovali zobrazení, neuvidíte tyto procesy, vlákna a windows, které jsou následně vytvořené. Také může se zobrazit položky, které už existují. **Aktualizovat** příkaz je k dispozici pro všechna zobrazení s výjimkou zobrazení zpráv.
 
 ### <a name="to-refresh-the-currently-active-view"></a>Chcete-li aktualizovat aktuálně aktivnímu zobrazení.
 
--   Zvolte **aktualizovat** z **okno** nabídek nebo kliknutím **aktualizovat** tlačítko na panelu nástrojů.
+- Zvolte **aktualizovat** z **okno** nabídek nebo kliknutím **aktualizovat** tlačítko na panelu nástrojů.
 
 ## <a name="see-also"></a>Viz také
 - [Použití nástroje Spy++](../debugger/using-spy-increment.md)

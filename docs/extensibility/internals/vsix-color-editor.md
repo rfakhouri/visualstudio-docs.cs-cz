@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4417761767f9796da54ea4d742646efe6eea3ac0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 1578db2775a076258023b05ec9d3f010ba6222a4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56598307"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074749"
 ---
 # <a name="vsix-color-editor"></a>Editor barev VSIX
 Nástroj editoru barev rozšíření sady Visual Studio můžete vytvářet a upravovat vlastní barvy pro sadu Visual Studio. Nástroj může také generovat klíče motivů prostředků tak, aby barvy můžete použít v kódu. Tento nástroj je užitečný pro provádění barvy pro rozšíření sady Visual Studio, který podporuje motivů. Tento nástroj můžete otevřít soubory .pkgdef a XML. Visual Studio motivů (.vstheme soubory) je možné rozšíření barva Editor sady Visual Studio tak, že změníte příponu .xml. Kromě toho lze importovat .vstheme soubory do aktuálního souboru .xml.
@@ -28,13 +28,13 @@ Nástroj editoru barev rozšíření sady Visual Studio můžete vytvářet a up
 
  Barva token se skládá ze čtyř prvků:
 
--   **Název kategorie:** Logické seskupení pro sadu barev. Použijte stávající název kategorie, pokud jsou již barvy, které jsou specifické pro požadovaný prvek uživatelského rozhraní nebo skupiny prvků uživatelského rozhraní.
+- **Název kategorie:** Logické seskupení pro sadu barev. Použijte stávající název kategorie, pokud jsou již barvy, které jsou specifické pro požadovaný prvek uživatelského rozhraní nebo skupiny prvků uživatelského rozhraní.
 
--   **Název tokenu:** Nastaví popisný název pro barvu tokenu a tokenu. Sady zahrnují na pozadí a popředí (text) token názvy, jakož i jejich stavů, a ty by měly být pojmenovány tak, aby se snadno rozpoznat páry a stavy, které se vztahují na.
+- **Název tokenu:** Nastaví popisný název pro barvu tokenu a tokenu. Sady zahrnují na pozadí a popředí (text) token názvy, jakož i jejich stavů, a ty by měly být pojmenovány tak, aby se snadno rozpoznat páry a stavy, které se vztahují na.
 
--   **Hodnoty barvy (nebo bubliny):** Třeba každý barevný motiv. Vždy vytvořte textu a pozadí hodnot barev v párech. Barvy jsou párovat pro pozadí a popředí, tak, aby vždy čitelné barevném pozadí, na kterém je vykreslen barva textu (popředí). Tyto barvy jsou propojeny a použije se současně v uživatelském rozhraní. Pokud na pozadí není určena pro použití s textem, nedefinují barvu popředí.
+- **Hodnoty barvy (nebo bubliny):** Třeba každý barevný motiv. Vždy vytvořte textu a pozadí hodnot barev v párech. Barvy jsou párovat pro pozadí a popředí, tak, aby vždy čitelné barevném pozadí, na kterém je vykreslen barva textu (popředí). Tyto barvy jsou propojeny a použije se současně v uživatelském rozhraní. Pokud na pozadí není určena pro použití s textem, nedefinují barvu popředí.
 
--   **Název systémové barvy:** Pro použití v zobrazení s vysokým kontrastem.
+- **Název systémové barvy:** Pro použití v zobrazení s vysokým kontrastem.
 
 ## <a name="how-to-use-the-tool"></a>Jak používat nástroj
  Co je to možné, a kde je to vhodné, by měl znovu použít existující sady Visual Studio barvy místo provedení nové značky. V případech, kde jsou definovány žádné odpovídající barvy, měl by být vlastních barev však vytvořen zachovat kompatibilitu s rozšíření motivů.

@@ -10,27 +10,27 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 98c63d2eff11997a37d27f71d01403b59f276e2b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 971eb3184fc12b9ed72675fbcd46a893981b4c9e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56679135"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072952"
 ---
 # <a name="program-control"></a>Řízení programu
 V sadě Visual Studio ladění, všechny následující krokování a pokračování rutiny probíhají na úrovni aplikace:
 
--   Nastavení dalšího příkazu, to znamená, že nastavení počítače na další instrukci, který se spustí v konkrétní snímek prostředí
+- Nastavení dalšího příkazu, to znamená, že nastavení počítače na další instrukci, který se spustí v konkrétní snímek prostředí
 
--   Provádění, to znamená, že budete pokračovat, ukončete režim krokování
+- Provádění, to znamená, že budete pokračovat, ukončete režim krokování
 
--   Krokování na další instrukci
+- Krokování na další instrukci
 
--   Pokračujte v aktuálním režimu krokování
+- Pokračujte v aktuálním režimu krokování
 
--   Pozastavení vláken součástí programu
+- Pozastavení vláken součástí programu
 
--   Obnovování vláken součástí programu
+- Obnovování vláken součástí programu
 
 > [!NOTE]
 >  Zobrazení zásobníku volání se implementuje na úrovni vlákna. Informace o snímcích výčet při zobrazení zásobníku volání pro vlákno, musí implementovat všechny metody [IEnumDebugFrameInfo2](../../extensibility/debugger/reference/ienumdebugframeinfo2.md) rozhraní.

@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eed10c7535a08a299f43138774935f4c65eafffa
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9a7514e3ff0c876a669f514a7e17bb02b73c19c2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924393"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075022"
 ---
 # <a name="how-to-use-transactions-to-update-the-model"></a>Postupy: Používání transakcí k aktualizaci modelu
 Transakce, ujistěte se, že změny, které byly provedeny do úložiště jsou považovány za skupinu. Změny, které jsou seskupeny může být potvrzena nebo vrácena zpět jako jednu jednotku.
@@ -57,9 +57,9 @@ catch (Exception ex)
 ## <a name="rolling-back-a-transaction"></a>Vrácení transakce zpět
  Aby se zajistilo, že Store zůstává ve nebo se vrátí do stavu před transakce, můžete použít některý z těchto taktika:
 
-1.  Vyvolat výjimku, která není zachycena uvnitř oboru transakce.
+1. Vyvolat výjimku, která není zachycena uvnitř oboru transakce.
 
-2.  Explicitně navrátit transakci:
+2. Explicitně navrátit transakci:
 
     ```csharp
     this.Store.TransactionManager.CurrentTransaction.Rollback();

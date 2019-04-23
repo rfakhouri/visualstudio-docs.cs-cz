@@ -10,19 +10,19 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: eb1b1c1d79bab15baa8e8afcab719b3081e7265b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 1d6e7c2536b7c5556139ce7a9b56756e20fd3648
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56712096"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072861"
 ---
 # <a name="how-to-clear-the-undo-stack"></a>Postupy: Vymazat zásobník vrácení zpátky
 Následující postup vysvětluje, jak vymazat zásobník akcí zpět.
 
 ## <a name="to-clear-the-undo-stack"></a>Vymazat zásobník vrácení zpátky
 
-1.  Zrušte zaškrtnutí políčka použít zásobník akcí zpět [IOleUndoManager::DiscardFrom](/windows/desktop/api/ocidl/nf-ocidl-ioleundomanager-discardfrom) metody. Následuje příklad:
+1. Zrušte zaškrtnutí políčka použít zásobník akcí zpět [IOleUndoManager::DiscardFrom](/windows/desktop/api/ocidl/nf-ocidl-ioleundomanager-discardfrom) metody. Následuje příklad:
 
     ```
     HRESULT CCmdWindow::ClearUndoStack()

@@ -8,24 +8,24 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c93ddfc85e318a2095f757c6131b151a5414c884
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 4ececa58d04ea7cfebe6178faae724038e353f06
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55956932"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075089"
 ---
 # <a name="tutorial-2-create-a-timed-math-quiz"></a>Kurz 2: Vytvoření matematického kvízu
 
 V tomto kurzu vytvoříte kvíz, ve kterém hráč musí odpovědět na čtyři náhodné aritmetické úlohy v zadaném čase. Získáte informace o následujících postupech:
 
--   Generovat náhodná čísla pomocí <xref:System.Random> třídy.
+- Generovat náhodná čísla pomocí <xref:System.Random> třídy.
 
--   Aktivovat události dojde v určitém čase pomocí k <xref:System.Windows.Forms.Timer> ovládacího prvku.
+- Aktivovat události dojde v určitém čase pomocí k <xref:System.Windows.Forms.Timer> ovládacího prvku.
 
--   Kontrolovat tok programu pomocí `if else` příkazy.
+- Kontrolovat tok programu pomocí `if else` příkazy.
 
--   Proveďte základní aritmetické operace v kódu.
+- Proveďte základní aritmetické operace v kódu.
 
 Po dokončení, kvíz vypadat jako na následujícím obrázku, s výjimkou s různými počty:
 

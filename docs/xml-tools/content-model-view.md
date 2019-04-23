@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b858d0b5fb8aab1dabb90ae47d234869412adf2e
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: b5f275683309d630f147940e97f924496af79179
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57525788"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074815"
 ---
 # <a name="content-model-view"></a>Zobrazení modelu obsahu
 
@@ -41,7 +41,7 @@ Pokud návrhové ploše je prázdné, editoru XML **Průzkumníka schémat XML**
 
 Na panelu navigace s popisem cesty v dolní části zobrazení modelu obsahu zobrazuje umístění vybraného uzlu v sadě schémat.
 
-## <a name="context-menus"></a>Kontextové nabídky
+## <a name="context-menus"></a>Místní nabídky
 
 Když kliknete pravým tlačítkem na položku na návrhovou plochu nebo **pracovní prostor** panelu, zobrazí se kontextová nabídka. Následující tabulka popisuje možnosti, které jsou k dispozici pro zobrazení modelu obsahu návrhovou plochu.
 
@@ -97,13 +97,13 @@ S použitím se posuvníky nezobrazovaly nebo tak, že se můžete pohybovat ná
 
 Funkce Zpět/znovu je povolená v zobrazení modelu obsahu pro následující akce:
 
--   Přidání jednoho uzlu pomocí přetahování.
+- Přidání jednoho uzlu pomocí přetahování.
 
--   Přidání více uzlů z výsledků hledání v Průzkumníkovi schémat.
+- Přidání více uzlů z výsledků hledání v Průzkumníkovi schémat.
 
--   Přidávání uzlů ze zobrazení spuštění.
+- Přidávání uzlů ze zobrazení spuštění.
 
--   Odstraňuje se jeden nebo více uzlů.
+- Odstraňuje se jeden nebo více uzlů.
 
 ## <a name="zoom"></a>Lupa
 
@@ -111,9 +111,9 @@ Přiblížení je k dispozici v pravém dolním rohu zobrazení modelu obsahu.
 
 Zvětšení lze řídit následujícími způsoby:
 
--   Tím, že se **Ctrl** klíč a zprovozňování myši kol, když myš je přesunutá na plochu zobrazení modelu obsahu.
+- Tím, že se **Ctrl** klíč a zprovozňování myši kol, když myš je přesunutá na plochu zobrazení modelu obsahu.
 
--   Pomocí posuvníku. Posuvník zobrazuje aktuální úroveň přiblížení.
+- Pomocí posuvníku. Posuvník zobrazuje aktuální úroveň přiblížení.
 
 Posuvník přiblížení je neprůhledný, když vyberte ho, najeďte myší nad ním nebo použijte **Ctrl** kolečkem myši pro přiblížení; v jinou dobu, je transparentní.
 

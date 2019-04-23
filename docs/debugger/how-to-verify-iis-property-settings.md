@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a5941dec4b21e044873a2ae95ae7682867b4bd67
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3dd516151f7a3656da1bae195870e8cc29528cfa
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55037015"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075243"
 ---
 # <a name="how-to-verify-iis-property-settings"></a>Postupy: Ověření nastavení vlastnosti služby IIS
 
@@ -37,11 +37,11 @@ Můžete nastavit vlastnosti pro webovou aplikaci pomocí nástroje pro správu 
 
 1. Otevřít **nástroje pro správu** okno: Na **Start** nabídky, přejděte k **programy**a potom klikněte na tlačítko **nástroje pro správu**. Pokud **nástroje pro správu** se nezobrazují v **programy** nabídky a pak vyhledejte ho **ovládací panely**.
 
-   -   Ve Windows 2000, vyberte **Správce služeb Internetu**.
+   - Ve Windows 2000, vyberte **Správce služeb Internetu**.
 
-   -   Na Windows XP, vyberte **Internetová informační služba**.
+   - Na Windows XP, vyberte **Internetová informační služba**.
 
-   -   V systému Windows Server 2003, dvakrát klikněte na panel **Správa serveru**.
+   - V systému Windows Server 2003, dvakrát klikněte na panel **Správa serveru**.
 
         **Správa serveru** otevře se okno. V části **aplikační Server**, klikněte na tlačítko **spravovat tento aplikační server**.
 
@@ -53,23 +53,23 @@ Můžete nastavit vlastnosti pro webovou aplikaci pomocí nástroje pro správu 
 
 4. Ověřte nastavení zabezpečení pro webové aplikace:
 
-   1.  Ve webové aplikaci **vlastnosti** okna, klikněte na tlačítko **zabezpečení adresáře** kartu a klikněte na tlačítko **upravit**.
+   1. Ve webové aplikaci **vlastnosti** okna, klikněte na tlačítko **zabezpečení adresáře** kartu a klikněte na tlačítko **upravit**.
 
-   2.  V **metody ověřování** dialogu **povolit anonymní přístup** a **ověření integrované Windows** Pokud ještě nejsou vybraná.
+   2. V **metody ověřování** dialogu **povolit anonymní přístup** a **ověření integrované Windows** Pokud ještě nejsou vybraná.
 
-   3.  Klikněte na tlačítko **OK** zavřete **metody ověřování** dialogové okno.
+   3. Klikněte na tlačítko **OK** zavřete **metody ověřování** dialogové okno.
 
 5. Pro aplikaci knihovny ATL Server ověřte, zda je příkaz DEBUG. přidružený rozšíření ISAPI. Další informace najdete v tématu [jak: Příkaz DEBUG. přidružit rozšíření](https://msdn.microsoft.com/library/50d261d3-4bd4-41c0-b44e-3591086f121e).
 
 6. Pro [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplikace, ujistěte se, že virtuální složka pro aplikace má název aplikace v **Správce Internetové informační služby (IIS)**, **Správce služeb Internetu** nebo  **Internetová informační služba**.
 
-   1.  Ve webové aplikaci **vlastnosti** okna, vyberte **Directory** kartu, pokud je aplikace ve virtuálním adresáři, nebo **domovský adresář** kartu, pokud je aplikace Adresa webové stránky.
+   1. Ve webové aplikaci **vlastnosti** okna, vyberte **Directory** kartu, pokud je aplikace ve virtuálním adresáři, nebo **domovský adresář** kartu, pokud je aplikace Adresa webové stránky.
 
-   2.  Ověřte, že název v **místní cesta** odpovídá názvu adresáře, ve skutečnosti nasazená aplikace.
+   2. Ověřte, že název v **místní cesta** odpovídá názvu adresáře, ve skutečnosti nasazená aplikace.
 
-   3.  V části **nastavení aplikace**, zadejte název kořenového adresáře, který obsahuje aplikace.
+   3. V části **nastavení aplikace**, zadejte název kořenového adresáře, který obsahuje aplikace.
 
-   4.  Klikněte na tlačítko **OK** zavřete **vlastnosti** dialogové okno.
+   4. Klikněte na tlačítko **OK** zavřete **vlastnosti** dialogové okno.
 
 7. Pro [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplikace, klikněte na tlačítko **ASP.NET** kartě a ověřte, že správnou verzi [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] je zadán.
 

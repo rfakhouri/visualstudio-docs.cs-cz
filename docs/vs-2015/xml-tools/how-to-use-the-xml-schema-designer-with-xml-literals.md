@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7855a5dc8c6524dd28a730a81df1c291e04ec466
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 05c32bfc6c3220739c433ef519b696953bc8b1b4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59653603"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074944"
 ---
 # <a name="how-to-use-the-xml-schema-designer-with-xml-literals"></a>Postupy: Používání Návrháře schémat XML s literály XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,25 +23,25 @@ Toto téma popisuje postup zobrazení schématu přidružené k literálu v proj
   
 ### <a name="to-create-a-new-visual-basic-console-application-project"></a>Chcete-li vytvořit nový projekt konzolové aplikace v jazyce Visual Basic  
   
-1.  Start Visual Studio 2010.  
+1. Start Visual Studio 2010.  
   
-2.  Z **souboru** nabídce vyberte možnost **nový**a pak vyberte **projektu**. Zobrazí se dialogové okno **Nový projekt**. Pro **typy projektů**vyberte **jiné jazyky,** a pak vyberte **jazyka Visual Basic**. Pro **šablony**, vyberte konzolové aplikace. Zadejte `XMLLiterals` v **název** pole a umístění projektu v **umístění** pole. Klikněte na **OK**.  
+2. Z **souboru** nabídce vyberte možnost **nový**a pak vyberte **projektu**. Zobrazí se dialogové okno **Nový projekt**. Pro **typy projektů**vyberte **jiné jazyky,** a pak vyberte **jazyka Visual Basic**. Pro **šablony**, vyberte konzolové aplikace. Zadejte `XMLLiterals` v **název** pole a umístění projektu v **umístění** pole. Klikněte na **OK**.  
   
      Vytvoření nového projektu. Projekt XMLLiterals obsahuje jeden zdrojový soubor Visual Basic, Module1.vb.  
   
 ### <a name="to-add-an-existing-xsd-file-to-the-project"></a>Chcete-li přidat existující soubor XSD do projektu  
   
-1.  Otevřete nový textový soubor v Notepad.Copy ukázkového kódu schématu XML z [nákupní pořadí schématu](../xml-tools/sample-xsd-file-simple-schema.md) a vložte ji do souboru.  
+1. Otevřete nový textový soubor v Notepad.Copy ukázkového kódu schématu XML z [nákupní pořadí schématu](../xml-tools/sample-xsd-file-simple-schema.md) a vložte ji do souboru.  
   
-2.  Uložte soubor v některém umístění s názvem PurchaseOrderSchema.xsd.  
+2. Uložte soubor v některém umístění s názvem PurchaseOrderSchema.xsd.  
   
-3.  V Průzkumníku řešení klikněte pravým tlačítkem na název projektu, vyberte **přidat**a pak vyberte **existující položku...** . **AddExisting položky** zobrazí se dialogové okno. Přejděte k souboru PurchaseOrderSchema.xsd, vyberte ji a pak klikněte na tlačítko **přidat**.  
+3. V Průzkumníku řešení klikněte pravým tlačítkem na název projektu, vyberte **přidat**a pak vyberte **existující položku...** . **AddExisting položky** zobrazí se dialogové okno. Přejděte k souboru PurchaseOrderSchema.xsd, vyberte ji a pak klikněte na tlačítko **přidat**.  
   
      Projekt XMLLiterals teď obsahuje dva soubory: Module1.vb a PurchaseOrderSchema.xsd.  
   
 ### <a name="to-add-visual-basic-code-with-an-xml-literal-based-on-the-xsd-file-included-in-the-project"></a>Přidání kódu jazyka Visual Basic s XML literál, na základě souboru XSD, které jsou součástí projektu  
   
-1.  Kód v souboru Module1.vb nahraďte následujícím kódem:  
+1. Kód v souboru Module1.vb nahraďte následujícím kódem:  
   
     ```  
     Imports <xmlns:ns="http://tempuri.org/PurchaseOrderSchema.xsd">  
@@ -70,6 +70,6 @@ Toto téma popisuje postup zobrazení schématu přidružené k literálu v proj
     End Module  
     ```  
   
-2.  Klikněte pravým tlačítkem na libovolný uzel XML literál XML nebo import oboru názvů XML a vyberte **zobrazit v Průzkumníkovi schémat**.  
+2. Klikněte pravým tlačítkem na libovolný uzel XML literál XML nebo import oboru názvů XML a vyberte **zobrazit v Průzkumníkovi schémat**.  
   
      Průzkumníka schémat XML se zobrazí vedle souboru jazyka Visual Basic, který má XML literál assotiated se schématem XML nastaven.

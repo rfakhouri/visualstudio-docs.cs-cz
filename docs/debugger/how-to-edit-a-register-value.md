@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 430ee5d0b36196c85d7c81b63503bfcc471d7664
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 00e1e849ba12303041d23b89e65230c2a5aafc9b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56717107"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075094"
 ---
 # <a name="how-to-edit-a-register-value-c-c-visual-basic-f"></a>Postupy: Úprava hodnoty registru (C#, C++, Visual Basic, F#)
 
@@ -32,9 +32,9 @@ Okno registrů je k dispozici pouze v případě, že je povoleno ladění úrov
 
 ### <a name="to-change-the-value-of-a-register"></a>Chcete-li změnit hodnoty registru
 
-1.  V **zaregistruje** okno, použijte klávesu TAB nebo přesuňte kurzor myši přejděte k hodnotě, kterou chcete změnit. Když začnete psát, musí být kurzor umístěn před hodnota, kterou chcete přepsat.
+1. V **zaregistruje** okno, použijte klávesu TAB nebo přesuňte kurzor myši přejděte k hodnotě, kterou chcete změnit. Když začnete psát, musí být kurzor umístěn před hodnota, kterou chcete přepsat.
 
-2.  Zadejte novou hodnotu.
+2. Zadejte novou hodnotu.
 
     > [!CAUTION]
     >  Změna hodnot registru (zejména v registrech EIP a EBP) může mít vliv na provádění programu.

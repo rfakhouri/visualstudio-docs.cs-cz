@@ -9,12 +9,12 @@ ms.assetid: 08a7fe98-a7f7-4b8d-94a3-ec82b65a2aaf
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: de19f24040d285392c2ed2a69776c8ecf39c9f36
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ef80a10954e9cf58db04e46f11934ffd86974bea
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55910789"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075165"
 ---
 # <a name="how-to-specify-if-test-failures-are-saved-to-test-logs-using-the-load-test-editor"></a>Postupy: Určení, zda jsou ukládána selhání testů pro testování protokolů pomocí editoru zátěžových testů
 
@@ -27,17 +27,17 @@ Po vytvoření zátěžového testu pomocí **nového Průvodce zátěžovým te
 
 ## <a name="to-specify-if-the-test-log-is-saved-when-a-test-fails-in-a-scenario"></a>Určení, zda bude protokol testu při selhání testu ve scénáři uložen
 
-1.  Otevřete zátěžový test.
+1. Otevřete zátěžový test.
 
      **Editoru zátěžových testů** se zobrazí. Zobrazí se strom zátěžového testu.
 
-2.  V zátěžového testu stromů **parametrů běhu** složky, vyberte uzel parametrů spuštění, který chcete zadat maximální počet iterací testu.
+2. V zátěžového testu stromů **parametrů běhu** složky, vyberte uzel parametrů spuštění, který chcete zadat maximální počet iterací testu.
 
-3.  Na **zobrazení** nabídce vyberte možnost **okno vlastností**.
+3. Na **zobrazení** nabídce vyberte možnost **okno vlastností**.
 
      Vlastnosti parametrů běhu kategorií a jsou zobrazeny v **vlastnosti** okna.
 
-4.  V **při selhání testu uložit protokol** vlastnosti, vyberte buď **True** nebo **False** k určení, zda chcete uložit protokol testu v případě selhání testu ve scénáři.
+4. V **při selhání testu uložit protokol** vlastnosti, vyberte buď **True** nebo **False** k určení, zda chcete uložit protokol testu v případě selhání testu ve scénáři.
 
      Po dokončení změn vlastnosti, zvolte **Uložit** na **souboru** nabídky.
 

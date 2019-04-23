@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Pronajmout sadu Visual Studio Professional nebo Visual Studio Enterprise na základě – měsíční nebo roční s bez dlouhodobé smlouvy.
 searchscope: VS Subscription
-ms.openlocfilehash: 253c81344b8a1536fb25dfd18216db8b3fd5b260
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 0f20db92099dfadadf710e9f3da24846b10406ac
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59655982"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074762"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>Nákup cloudových předplatných sady Visual Studio Professional a Visual Studio Enterprise
 
@@ -64,12 +64,12 @@ Pokud jste zakoupili více než jedno předplatné, pokračujte [portál pro spr
 
 ## <a name="manage-subscriptions"></a>Zrušit obnovení Cloudová předplatná, které jste zakoupili
 
-*   Chcete-li změnit počet zakoupených předplatných:
+* Chcete-li změnit počet zakoupených předplatných:
 
 > [!div class="mx-imgBorder"]
 > ![Změnit předplatné](_img/buy-vs-subscriptions/manage-subscriptions.png)
 
-*   Pokud chcete zrušit tyto odběry, snižte počet předplatných na nulu (0). Se nesmí obnovit na začátku dalšího fakturačního období (prvního dne následujícího měsíce pro měsíční Cloudová předplatná, 12 měsíců později pro roční Cloudová předplatná).
+* Pokud chcete zrušit tyto odběry, snižte počet předplatných na nulu (0). Se nesmí obnovit na začátku dalšího fakturačního období (prvního dne následujícího měsíce pro měsíční Cloudová předplatná, 12 měsíců později pro roční Cloudová předplatná).
 
 ## <a name="buy-cloud-subscriptions-now"></a>Koupit cloudových předplatných
 

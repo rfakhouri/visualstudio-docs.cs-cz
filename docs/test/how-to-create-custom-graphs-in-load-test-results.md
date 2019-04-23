@@ -9,12 +9,12 @@ ms.assetid: 17fcafce-76f9-4411-9389-6e5376eab236
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a03d16f74623d935e8f4f09b0f397672ad226487
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 6df80340f57ba40597af67d57ba1bda3da778f4b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55932402"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075126"
 ---
 # <a name="how-to-create-custom-graphs-in-load-test-results"></a>Postupy: Vytváření vlastních grafů v načítání výsledků testu
 
@@ -26,7 +26,7 @@ Následující postup můžete provést při spuštění zátěžového testu ne
 
 ## <a name="to-create-a-custom-load-test-results-graph"></a>K vytvoření grafu výsledků vlastní zátěžového testu
 
-1.  Na **zátěžový Test** nástrojů, zvolte **přidat nový graf**.
+1. Na **zátěžový Test** nástrojů, zvolte **přidat nový graf**.
 
      \- nebo –
 
@@ -34,11 +34,11 @@ Následující postup můžete provést při spuštění zátěžového testu ne
 
      **Zadejte název grafu** se zobrazí dialogové okno.
 
-2.  V části **název grafu**, zadejte název pro graf a zvolte **OK**.
+2. V části **název grafu**, zadejte název pro graf a zvolte **OK**.
 
      Nový graf se zobrazí v **Analyzéru zátěžového testu**. Zobrazí se v panelu aktuálně vybranému grafu. nahradí grafu, který se zobrazí v panelu.
 
-3.  Nový graf přizpůsobte tak, že přidáte čítače. Další informace najdete v tématu [jak: Přidání a odstranění čítačů pro grafy](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md).
+3. Nový graf přizpůsobte tak, že přidáte čítače. Další informace najdete v tématu [jak: Přidání a odstranění čítačů pro grafy](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md).
 
 ## <a name="see-also"></a>Viz také:
 

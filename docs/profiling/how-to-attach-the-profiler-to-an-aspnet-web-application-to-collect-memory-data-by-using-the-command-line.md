@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 7a1580c2ec230df2560e34f80a076aeca0baf2c5
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 3ebe328970b34a9fdc6cc7f3717a6aec28b560ff
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59659576"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075152"
 ---
 # <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-memory-data-by-using-the-command-line"></a>Postupy: Připojení profileru k webové aplikaci ASP.NET ke shromažďování dat paměti pomocí příkazového řádku
 Tento článek popisuje způsob použití [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] příkazového řádku nástrojů pro profilaci k připojení profileru k [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] webovou aplikaci a shromažďování dat o počtu a velikosti přidělení paměti rozhraní .NET Framework. Může také shromažďovat data o životnosti objektů paměti rozhraní .NET Framework.
@@ -38,7 +38,7 @@ Tento článek popisuje způsob použití [!INCLUDE[vsprvs](../code-quality/incl
 
     **Vsperfclrenv –** {**/globalsamplegc** &#124; **/globalsamplegclife**} [**/samplelineoff**]
 
-   -   Možnosti **/globalsamplegc** a **/globalsamplegclife** zadejte typ shromažďovaných údajů paměti.
+   - Možnosti **/globalsamplegc** a **/globalsamplegclife** zadejte typ shromažďovaných údajů paměti.
 
         Zadejte právě jeden z následujících možností.
 
@@ -47,7 +47,7 @@ Tento článek popisuje způsob použití [!INCLUDE[vsprvs](../code-quality/incl
        |**/globalsamplegc**|Povolí shromažďování dat o přidělování paměti.|
        |**/globalsamplegclife**|Povoluje shromažďování data o přidělování paměti a životnosti objektů.|
 
-   -   Možnost **/samplelineoff** zakáže přiřazení shromážděných dat ke konkrétnímu zdroji řádků kódu. Pokud je tato možnost zadána, je přiřazen data na úrovni funkce.
+   - Možnost **/samplelineoff** zakáže přiřazení shromážděných dat ke konkrétnímu zdroji řádků kódu. Pokud je tato možnost zadána, je přiřazen data na úrovni funkce.
 
 3. Restartujte počítač a nastavit novou konfiguraci prostředí.
 
@@ -90,7 +90,7 @@ Tento článek popisuje způsob použití [!INCLUDE[vsprvs](../code-quality/incl
 
 #### <a name="to-start-and-stop-data-collection"></a>Spuštění a zastavení shromažďování dat
 
--   Následující páry **VSPerfCmd** možností spouští a zastavují sběr dat. Každou možnost zadejte na samostatný příkazový řádek. Sběr dat lze zapnout a vypnout několikrát.
+- Následující páry **VSPerfCmd** možností spouští a zastavují sběr dat. Každou možnost zadejte na samostatný příkazový řádek. Sběr dat lze zapnout a vypnout několikrát.
 
     |Možnost|Popis|
     |------------|-----------------|

@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 88d5b4729ec24ef9594e3c0528a8d09156f23b1b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b4d2a6195fc2357eecc6f9e011a1a7a4c3fff789
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55926266"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073044"
 ---
 # <a name="how-to-manage-word-wrap-in-the-editor"></a>Postupy: Správa zalamování řádků v editoru
 
@@ -28,19 +28,19 @@ Můžete nastavit a zrušit **zalamování** možnost. Když nastavíte tuto mo�
 
 ## <a name="to-set-word-wrap-preferences"></a>Nastavení aplikace word wrap předvoleb
 
-1.  Na **nástroje** nabídce vyberte možnost **možnosti**.
+1. Na **nástroje** nabídce vyberte možnost **možnosti**.
 
-2.  V **textový Editor** složky, zvolte **Obecné** možnosti **všechny jazyky** podsložky globální nastavení této možnosti.
+2. V **textový Editor** složky, zvolte **Obecné** možnosti **všechny jazyky** podsložky globální nastavení této možnosti.
 
      – nebo –
 
      Zvolte **Obecné** možnosti v podsložce pro jazyk, ve kterém jsou programování.
 
-3.  V části **nastavení**zaškrtněte nebo zrušte **zalamování** možnost.
+3. V části **nastavení**zaškrtněte nebo zrušte **zalamování** možnost.
 
      Když **zalamování řádků** je vybraná možnost, **brazit piktogramy pro zalamování řádků** je povolená možnost.
 
-4.  Vyberte **brazit piktogramy pro zalamování** možnost, pokud chcete zobrazit indikátor vrátit šipku, kde dlouhý řádek zalamuje na další řádek. Pokud nechcete zobrazovat indikátor šipky, zrušte zaškrtnutí tohoto políčka.
+4. Vyberte **brazit piktogramy pro zalamování** možnost, pokud chcete zobrazit indikátor vrátit šipku, kde dlouhý řádek zalamuje na další řádek. Pokud nechcete zobrazovat indikátor šipky, zrušte zaškrtnutí tohoto políčka.
 
     > [!NOTE]
     > Tyto šipky připomenutí nejsou přidány do kódu; jsou pouze pro účely zobrazení.

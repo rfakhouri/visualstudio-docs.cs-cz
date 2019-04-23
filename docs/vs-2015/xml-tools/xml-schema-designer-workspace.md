@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6d0b14b9f1cbbb81cc814546c5965e505a42885d
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 6200b96992638ccf5ad009ac103551824219135f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59656541"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074957"
 ---
 # <a name="xml-schema-designer-workspace"></a>Pracovní prostor Návrháře schémat XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,29 +26,29 @@ Návrhář schématu XML (XSD Designer) je grafický nástroj, který umožňuje
 ## <a name="adding-nodes-to-the-workspace"></a>Přidání uzlů do pracovního prostoru  
  Můžete přidat uzly do pracovního prostoru následujícími způsoby:  
   
--   V části "Nastavit informace o schématu" [zobrazení Start](../xml-tools/start-view.md), klikněte na tlačítko **přidat** odkaz vedle typ globální uzlu.  
+- V části "Nastavit informace o schématu" [zobrazení Start](../xml-tools/start-view.md), klikněte na tlačítko **přidat** odkaz vedle typ globální uzlu.  
   
--   Přetáhnout myší globální uzlů, soubor uzly a uzly oboru názvů z Průzkumníka schémat XML do libovolné ze tří zobrazení. Další informace najdete v části "Přetahování a vyřadit uzly" v [Průzkumníka schémat XML](../xml-tools/xml-schema-explorer.md).  
+- Přetáhnout myší globální uzlů, soubor uzly a uzly oboru názvů z Průzkumníka schémat XML do libovolné ze tří zobrazení. Další informace najdete v části "Přetahování a vyřadit uzly" v [Průzkumníka schémat XML](../xml-tools/xml-schema-explorer.md).  
   
--   Pomocí místní nabídky v Průzkumník schémat XML. Další informace najdete v tématu [kontextové nabídky](../xml-tools/context-menus-xml-schema-explorer.md).  
+- Pomocí místní nabídky v Průzkumník schémat XML. Další informace najdete v tématu [kontextové nabídky](../xml-tools/context-menus-xml-schema-explorer.md).  
   
--   Hledání v Průzkumníkovi XSD a klikněte na tlačítko **přidá zvýrazněné uzly do pracovního prostoru** tlačítko na panelu souhrnu výsledků. Další informace najdete v tématu [hledání sady schématu](../xml-tools/searching-the-schema-set.md).  
+- Hledání v Průzkumníkovi XSD a klikněte na tlačítko **přidá zvýrazněné uzly do pracovního prostoru** tlačítko na panelu souhrnu výsledků. Další informace najdete v tématu [hledání sady schématu](../xml-tools/searching-the-schema-set.md).  
   
 ## <a name="view-switching"></a>Přepnutí zobrazení  
  Chcete-li přepnout zobrazení, použijte jednu z následujících:  
   
--   Panel nástrojů návrháře XSD.  
+- Panel nástrojů návrháře XSD.  
   
--   Kontextové nabídky zobrazení modelu obsahu a zobrazení grafu.  
+- Kontextové nabídky zobrazení modelu obsahu a zobrazení grafu.  
   
--   Vodoznaky na stránce zobrazení Start nebo vodoznak na prázdné zobrazení modelu obsahu nebo zobrazení grafu.  
+- Vodoznaky na stránce zobrazení Start nebo vodoznak na prázdné zobrazení modelu obsahu nebo zobrazení grafu.  
   
--   Klávesové zkratky: CTRL + 1 pro počátečního zobrazení, CTRL + 2 pro zobrazení grafu a CTRL + 3 pro zobrazení modelu obsahu.  
+- Klávesové zkratky: CTRL + 1 pro počátečního zobrazení, CTRL + 2 pro zobrazení grafu a CTRL + 3 pro zobrazení modelu obsahu.  
   
 ## <a name="in-this-section"></a>V tomto oddílu  
   
--   [Počáteční zobrazení](../xml-tools/start-view.md)  
+- [Počáteční zobrazení](../xml-tools/start-view.md)  
   
--   [Zobrazení grafu](../xml-tools/graph-view.md)  
+- [Zobrazení grafu](../xml-tools/graph-view.md)  
   
--   [Zobrazení modelu obsahu](../xml-tools/content-model-view.md)
+- [Zobrazení modelu obsahu](../xml-tools/content-model-view.md)

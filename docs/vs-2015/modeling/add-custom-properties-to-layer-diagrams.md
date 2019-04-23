@@ -11,12 +11,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 511f19e48f91c6719c8b0021ff7eae4071ce89b6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7349bc8c76b749c4306f7483e807507b99a11cff
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54779337"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075204"
 ---
 # <a name="add-custom-properties-to-layer-diagrams"></a>Přidání vlastních vlastností do diagramů vrstev
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,20 +32,23 @@ Při psaní kódu rozšíření pro diagramy vrstev můžete ukládat hodnoty li
 > [!IMPORTANT]
 >  Chcete-li zobrazit vlastnosti, musí provést následující změnu v každém počítači, kde chcete mít viditelné vlastnosti vrstvy.  
 > 
-> 1. Spusťte program Poznámkový blok s použitím **spustit jako správce**. Otevřít `%ProgramFiles%\Microsoft Visual Studio [version]\Common7\IDE\Extensions\Microsoft\Architecture Tools\ExtensibilityRuntime\extension.vsixmanifest`  
->    2.  Uvnitř `Content` prvku, přidejte:  
+>  1. Spusťte program Poznámkový blok s použitím **spustit jako správce**. Otevřít `%ProgramFiles%\Microsoft Visual Studio [version]\Common7\IDE\Extensions\Microsoft\Architecture Tools\ExtensibilityRuntime\extension.vsixmanifest`  
+>  
+>  2. Uvnitř `Content` prvku, přidejte:  
 > 
->    ```xml  
->    <MefComponent>Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.Provider.dll</MefComponent>  
->    ```  
->    3.  V části **Visual Studio Tools** části Visual Studio aplikaci nabídky start, otevřete **Developer Command Prompt**.  
+>     ```xml  
+>     <MefComponent>Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.Provider.dll</MefComponent>  
+>     ```  
+>
+>  3. V části **Visual Studio Tools** části Visual Studio aplikaci nabídky start, otevřete **Developer Command Prompt**.  
 > 
->    Zadejte:  
+>     Zadejte:  
 > 
->    `devenv /rootSuffix /updateConfiguration`  
+>     `devenv /rootSuffix /updateConfiguration`  
 > 
->    `devenv /rootSuffix Exp /updateConfiguration`  
->    4.  Restartujte sadu Visual Studio.  
+>     `devenv /rootSuffix Exp /updateConfiguration`  
+>    
+>  4. Restartujte sadu Visual Studio.  
   
  **Ujistěte se, že je váš kód v projektu VSIX**  
   
@@ -66,15 +69,15 @@ public class MyProperty
   
  Můžete definovat vlastnosti v <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerElement> nebo některý z jeho odvozených tříd, mezi které patří:  
   
--   `ILayerModel` -model  
+- `ILayerModel` -model  
   
--   `ILayer` -Každá vrstva  
+- `ILayer` -Každá vrstva  
   
--   `ILayerDependencyLink` -propojení mezi vrstvami  
+- `ILayerDependencyLink` -propojení mezi vrstvami  
   
--   `ILayerComment`  
+- `ILayerComment`  
   
--   `ILayerCommentLink`  
+- `ILayerCommentLink`  
   
 ## <a name="example"></a>Příklad  
  Následující kód je typický vlastní popisovač vlastnosti. Definuje booleovskou vlastnost na modelu vrstvy (`ILayerModel`), který umožňuje uživateli zadat hodnoty pro vlastní ověřovací metodu.  
