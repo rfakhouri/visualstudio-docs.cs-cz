@@ -13,25 +13,25 @@ caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4ac39a776cb7e6c2c9cbce648c0b3ca3ebc86783
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 0291cfe93492c357401ce371d58683c6815aa12b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54770742"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052815"
 ---
 # <a name="empty-timeline-segment"></a>Prázdný segment časové osy
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Ve Vizualizátor souběžnosti, proč se části časové osy je prázdný (má bílé pozadí) závisí na typu vašeho kanálu.  
   
--   Pro kanál vlákna CPU znamená to, že vlákno neexistoval při tuto část časové osy. Pokud vás zajímá ve vlákně, najdete jeho provádění části pomocí ovládacího prvku přiblížení nebo posouvání vodorovně.  
+- Pro kanál vlákna CPU znamená to, že vlákno neexistoval při tuto část časové osy. Pokud vás zajímá ve vlákně, najdete jeho provádění části pomocí ovládacího prvku přiblížení nebo posouvání vodorovně.  
   
--   Pro kanál vstupně-výstupních operací znamená to, že žádný přístup k disku došlo k jménem Cílový proces od tohoto okamžiku v čase.  
+- Pro kanál vstupně-výstupních operací znamená to, že žádný přístup k disku došlo k jménem Cílový proces od tohoto okamžiku v čase.  
   
--   Pro kanál rozhraní DirectX znamená to, že se žádná práce GPU provedla jménem Cílový proces během této části časové osy.  
+- Pro kanál rozhraní DirectX znamená to, že se žádná práce GPU provedla jménem Cílový proces během této části časové osy.  
   
--   Pro značky kanál znamená to, že nevygenerovaly se žádné značky.  
+- Pro značky kanál znamená to, že nevygenerovaly se žádné značky.  
   
 ## <a name="see-also"></a>Viz také  
  [Zobrazení vláken](../profiling/threads-view-parallel-performance.md)   

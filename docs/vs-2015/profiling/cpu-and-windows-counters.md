@@ -14,12 +14,12 @@ caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3a540648977c76c354ab21a75b79305c0310a4e7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7b16691a3837bcdeee87b40b36b5b669d671b938
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54800437"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046243"
 ---
 # <a name="cpu-and-windows-counters"></a>Čítače procesoru a systému Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Visual Studio Profiler umožňuje shromažďovat data o výkonu, který byl vyge
   
  **Požadavky**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
 > [!NOTE]
 >  Rozšířené funkce zabezpečení v systému Windows 8 a Windows Server 2012 vyžadují významné změny ve způsobu, jakým profiler systému Visual Studio na těchto platformách shromažďuje data. Aplikace Windows Store také vyžadují nové techniky kolekce. Zobrazit [nástroje pro výkon v aplikacích Windows 8 a Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
@@ -104,13 +104,13 @@ Visual Studio Profiler umožňuje shromažďovat data o výkonu, který byl vyge
   
 ##### <a name="to-view-a-list-of-a-list-of-window-counters-that-are-supported-on-the-current-platform"></a>Chcete-li zobrazit seznam seznam čítačů okno, které jsou podporovány na aktuální platformě  
   
-1.  V prohlížeči výkonu, klikněte pravým tlačítkem na relaci výkonu a pak klikněte na tlačítko **vlastnosti**.  
+1. V prohlížeči výkonu, klikněte pravým tlačítkem na relaci výkonu a pak klikněte na tlačítko **vlastnosti**.  
   
-2.  Klikněte na tlačítko **čítače Windows**.  
+2. Klikněte na tlačítko **čítače Windows**.  
   
-3.  Vyberte **shromáždit čítače Windows**.  
+3. Vyberte **shromáždit čítače Windows**.  
   
-4.  Z **kategorie čítače** vyberte čítačů skupiny. Čítače Windows pro skupiny se zobrazí v seznamu.  
+4. Z **kategorie čítače** vyberte čítačů skupiny. Čítače Windows pro skupiny se zobrazí v seznamu.  
   
      **Poznámka:** Klikněte na tlačítko **zrušit** vrátit k předchozí konfiguraci kolekce čítačů.  
   
@@ -119,9 +119,9 @@ Visual Studio Profiler umožňuje shromažďovat data o výkonu, který byl vyge
   
 ##### <a name="to-list-of-cpu-counters-that-are-supported-on-the-current-platform"></a>Do seznamu čítače CPU, které jsou podporované na aktuální platformě  
   
-1.  Otevřete okno příkazového řádku.  
+1. Otevřete okno příkazového řádku.  
   
-2.  Typ  
+2. Type  
   
      **\<Visual Studio výkonu nástroje adresář >/querycounters \VSPerfCmd**  
   

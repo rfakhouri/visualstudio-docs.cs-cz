@@ -11,12 +11,12 @@ ms.assetid: 09618d9d-d115-45b6-bccc-de328994b39c
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 417988d6c44f6382644905a69fcb29aeb128146e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 78867fa94851e373ae4d47cd82cd1084a941638c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54758860"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053023"
 ---
 # <a name="wizard-interface-idtwizard"></a>Rozhraní průvodce (IDTWizard)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -40,23 +40,23 @@ STDMETHOD(Execute)(THIS_
   
  Následující informace popisují <xref:EnvDTE.IDTWizard> rozhraní, které průvodce musí implementovat pro práci [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] integrovaného vývojového prostředí. Volání rozhraní IDE <xref:EnvDTE.IDTWizard.Execute%2A> metoda v průvodci, předají se jí následující:  
   
--   Objekt DTE  
+- Objekt DTE  
   
      Objekt DTE je kořen modelu automatizace.  
   
--   Popisovač do dialogového okna okno, jak je znázorněno v segmentu kódu `hwndOwner ([in] long)`.  
+- Popisovač do dialogového okna okno, jak je znázorněno v segmentu kódu `hwndOwner ([in] long)`.  
   
      Tento průvodce využívá `hwndOwner` jako nadřazený pro dialogové okno průvodce.  
   
--   Kontextové parametry předány rozhraní jako typ variant SAFEARRAY jak je znázorněno v segmentu kódu `[in] SAFEARRAY (VARIANT)* ContextParams`.  
+- Kontextové parametry předány rozhraní jako typ variant SAFEARRAY jak je znázorněno v segmentu kódu `[in] SAFEARRAY (VARIANT)* ContextParams`.  
   
      Kontextové parametry obsahují pole hodnot, které jsou specifické pro typ, který se spouští Průvodce a aktuální stav projektu. Rozhraní IDE předá kontextové parametry průvodce. Další informace najdete v tématu [kontextových parametrů](../../extensibility/internals/context-parameters.md).  
   
--   Vlastní parametry předané do rozhraní jako hodnotu typu variant pro SAFEARRAY jak je znázorněno v segmentu kódu `[in] SAFEARRAY (VARIANT)* CustomParams`.  
+- Vlastní parametry předané do rozhraní jako hodnotu typu variant pro SAFEARRAY jak je znázorněno v segmentu kódu `[in] SAFEARRAY (VARIANT)* CustomParams`.  
   
      Vlastní parametry obsahovat pole uživatelem definované parametry. Vlastní parametry souboru .vsz předává do integrovaného vývojového prostředí. Hodnoty jsou určeny `Param=` příkazy. Další informace najdete v tématu [vlastní parametry](../../extensibility/internals/custom-parameters.md).  
   
--   Návratové hodnoty pro rozhraní  
+- Návratové hodnoty pro rozhraní  
   
     ```  
     wizardResultSuccess = -1,  

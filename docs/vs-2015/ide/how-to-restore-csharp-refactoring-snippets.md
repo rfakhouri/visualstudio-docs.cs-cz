@@ -12,12 +12,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c9ebd6b96a24b10601257d5eefc58014ef7058c9
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 9f81514db881ad26a5fa827b0bde11df2467f23d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54782593"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050809"
 ---
 # <a name="how-to-restore-c-refactoring-snippets"></a>Postupy: Obnovení C# fragmentů kódu refaktoringu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,23 +30,23 @@ Operace refaktoringu jazyka C# využívají fragmenty kódu v následujícím ad
   
 ### <a name="to-verify-c-refactoring-snippets-are-available-through-the-code-snippet-manager"></a>Ověření jazyka C# jsou k dispozici prostřednictvím Správce fragmentů kódu refaktoringu fragmenty kódu  
   
-1.  V **nástroje** nabídce vyberte možnost **Správce fragmentů kódů**.  
+1. V **nástroje** nabídce vyberte možnost **Správce fragmentů kódů**.  
   
-2.  V **Správce fragmentů kódů** dialogu **Visual C#** z **jazyk** rozevíracího seznamu.  
+2. V **Správce fragmentů kódů** dialogu **Visual C#** z **jazyk** rozevíracího seznamu.  
   
      A **refaktoringu** složky by se měla zobrazit v seznamu stromu zobrazení složek.  
   
 ### <a name="to-restore-refactoring-see-comment-in-code-snippet-manager"></a>K obnovení refaktoring viz komentář ve Správci fragmentů kódu  
   
-1.  Pokud **refaktoringu** složka není se zobrazí v seznamu složek zobrazení stromu Správce fragmentů kódů a pak pomocí tohoto postupu můžete přidat fragmentů kódu refaktoringu zpět do Správce fragmentů kódů.  
+1. Pokud **refaktoringu** složka není se zobrazí v seznamu složek zobrazení stromu Správce fragmentů kódů a pak pomocí tohoto postupu můžete přidat fragmentů kódu refaktoringu zpět do Správce fragmentů kódů.  
   
-2.  V **nástroje** nabídce vyberte možnost **Správce fragmentů kódů**.  
+2. V **nástroje** nabídce vyberte možnost **Správce fragmentů kódů**.  
   
-3.  V **Správce fragmentů kódů** dialogu **Visual C#** z **jazyk** rozevíracího seznamu.  
+3. V **Správce fragmentů kódů** dialogu **Visual C#** z **jazyk** rozevíracího seznamu.  
   
-4.  Klikněte na **Přidat**. **Složka fragmentů kódů** zobrazí se dialogové okno, které vám pomůže najít a zadejte adresář, který chcete přidat zpět do Správce fragmentů kódů,.  
+4. Klikněte na **Přidat**. **Složka fragmentů kódů** zobrazí se dialogové okno, které vám pomůže najít a zadejte adresář, který chcete přidat zpět do Správce fragmentů kódů,.  
   
-5.  Vyhledejte **refaktoringu** složku, jehož cesta k adresáři je:  
+5. Vyhledejte **refaktoringu** složku, jehož cesta k adresáři je:  
   
      *Instalační adresář*\Microsoft Visual Studio 14.0\VC#\Snippets\\*ID jazyka*\Refactoring  
   
@@ -54,7 +54,7 @@ Operace refaktoringu jazyka C# využívají fragmenty kódu v následujícím ad
   
      C:\Program Files\Microsoft Visual Studio 14.0\VC#\Snippets\1033\Refactoring.  
   
-6.  Klikněte na tlačítko **otevřít** v **složka fragmentů kódů** dialogové okno a potom klikněte na **OK** ve Správci fragmentů kódu.  
+6. Klikněte na tlačítko **otevřít** v **složka fragmentů kódů** dialogové okno a potom klikněte na **OK** ve Správci fragmentů kódu.  
   
 ## <a name="see-also"></a>Viz také  
  [Fragmenty kódu jazyka Visual C#](../ide/visual-csharp-code-snippets.md)   

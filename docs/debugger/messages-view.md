@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: db9d64119a94e2358a6f52e6e1269fca8d726cbb
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 6b20ed28518c9156e82c6fe75ecceda74c66615d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56694397"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049126"
 ---
 # <a name="messages-view"></a>Zobrazení zpráv
 Každé okno má datové proudy přidružené zpráv. Zobrazí okno pro zobrazení zprávy tohoto datového proudu zpráv. Popisovač okna, kód zprávy a zpráva se zobrazí. Můžete vytvořit zobrazení zprávy pro vlákna nebo procesu stejně. To umožňuje zobrazit zprávy, pošle se všem oknům vlastní konkrétní proces nebo vlákno, které je zvláště užitečné pro zaznamenání inicializace zprávy okna.
@@ -30,21 +30,21 @@ Každé okno má datové proudy přidružené zpráv. Zobrazí okno pro zobrazen
 
 #### <a name="to-open-a-messages-view-for-a-window-process-or-thread"></a>Otevření zobrazení zpráv pro okna, procesu nebo vlákna
 
-1.  Přesuňte fokus [zobrazení Windows](../debugger/windows-view.md), [zobrazení procesů](../debugger/processes-view.md), nebo [zobrazení vláken](../debugger/threads-view.md) okno.
+1. Přesuňte fokus [zobrazení Windows](../debugger/windows-view.md), [zobrazení procesů](../debugger/processes-view.md), nebo [zobrazení vláken](../debugger/threads-view.md) okno.
 
-2.  Najít uzel pro položku, jejíž zprávy, které chcete prověřit a vyberte ji.
+2. Najít uzel pro položku, jejíž zprávy, které chcete prověřit a vyberte ji.
 
-3.  Z **Spy** nabídce zvolte **zprávy protokolu**.
+3. Z **Spy** nabídce zvolte **zprávy protokolu**.
 
      [Dialogové okno možností zpráv](../debugger/message-options-dialog-box.md) otevře.
 
-4.  Vyberte požadované možnosti pro zprávu, kterou chcete zobrazit.
+4. Vyberte požadované možnosti pro zprávu, kterou chcete zobrazit.
 
-5.  Stisknutím klávesy **OK** zahájíte protokolování zpráv.
+5. Stisknutím klávesy **OK** zahájíte protokolování zpráv.
 
      Otevře se okno pro zobrazení zprávy a s **zprávy** nabídka se přidá na panel nástrojů nástroje Spy ++. V závislosti na vybrané možnosti, zprávy začít Streamovat do aktivního okna zobrazení zprávy.
 
-6.  Pokud máte dostatek zpráv, zvolte **zastavit protokolování** z **zprávy** nabídky.
+6. Pokud máte dostatek zpráv, zvolte **zastavit protokolování** z **zprávy** nabídky.
 
 ## <a name="in-this-section"></a>V tomto oddílu
  [Řízení zobrazení zpráv](../debugger/how-to-control-messages-view.md) vysvětluje, jak spravovat zobrazení zpráv.

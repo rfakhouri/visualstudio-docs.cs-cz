@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 03b11b478ef441dc7a09902a7185bfdf45e20dc3
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 48ac65ef8fb7a67783a3c9c5a9652accf86821fc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57868947"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051037"
 ---
 # <a name="specify-the-path-to-profiling-tools-command-line-tools"></a>Zadejte cestu k nástrojům příkazového řádku pro profilaci
 
@@ -34,21 +34,21 @@ Cesta k [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] příkazového
 Na 64bitových počítačích zadejte cestu podle cílové platformy profilované aplikace.
 
 ::: moniker range=">=vs-2019"
--   Pro 32bitové aplikace je výchozí adresář nástrojů profilování:
+- Pro 32bitové aplikace je výchozí adresář nástrojů profilování:
 
      (nativní) *Microsoft Visual Studio\2019\Team nástroje Tools\PerfSDK* (spravované) *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools*
 
--   Pro 64bitové aplikace je výchozí adresář nástrojů profilování:
+- Pro 64bitové aplikace je výchozí adresář nástrojů profilování:
 
      (nativní) *Microsoft Visual Studio\2019\Team nástroje Tools\x64\PerfSDK* (spravované) *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools\x64*
 ::: moniker-end
 
 ::: moniker range="vs-2017"
--   Pro 32bitové aplikace je výchozí adresář nástrojů profilování:
+- Pro 32bitové aplikace je výchozí adresář nástrojů profilování:
 
      (nativní) *Microsoft Visual Studio\2017\Team nástroje Tools\PerfSDK* (spravované) *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools*
 
--   Pro 64bitové aplikace je výchozí adresář nástrojů profilování:
+- Pro 64bitové aplikace je výchozí adresář nástrojů profilování:
 
      (nativní) *Microsoft Visual Studio\2017\Team nástroje Tools\x64\PerfSDK* (spravované) *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools\x64*
 ::: moniker-end

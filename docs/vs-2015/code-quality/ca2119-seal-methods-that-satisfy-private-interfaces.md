@@ -15,12 +15,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 6768bb0100b3bb0052898efc6a57017fca3702b9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2a120bb5eaab49e2652715c2583f898949b506a3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54754764"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061499"
 ---
 # <a name="ca2119-seal-methods-that-satisfy-private-interfaces"></a>CA2119: Zapečeťte metody, které vyhovují privátním rozhraním
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,15 +41,15 @@ ms.locfileid: "54754764"
 ## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
  Chcete-li opravit porušení tohoto pravidla, zabránit metody přepsání mimo sestavení pomocí jedné z následujících akcí:
 
--   Ujistěte se, že deklarující typ `sealed` (`NotInheritable` v jazyce Visual Basic).
+- Ujistěte se, že deklarující typ `sealed` (`NotInheritable` v jazyce Visual Basic).
 
--   Změňte přístupnost deklarující typ, který má `internal` (`Friend` v jazyce Visual Basic).
+- Změňte přístupnost deklarující typ, který má `internal` (`Friend` v jazyce Visual Basic).
 
--   Odebrání všech veřejných konstruktorů deklarujícího typu.
+- Odebrání všech veřejných konstruktorů deklarujícího typu.
 
--   Implementace metody bez použití `virtual` modifikátor.
+- Implementace metody bez použití `virtual` modifikátor.
 
--   Explicitně implementujte metodu.
+- Explicitně implementujte metodu.
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
  Je bezpečné potlačit upozornění z tohoto pravidla, pokud po pečlivou revizi, neexistují žádné problémy se zabezpečením, která může být zneužitelné, pokud je přepsána metoda mimo sestavení.

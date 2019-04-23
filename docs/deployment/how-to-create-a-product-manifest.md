@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 48bed4a357809a672b1fc80063ca6743670cbb42
-ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
+ms.openlocfilehash: 68f3006104b50876f6d2716ff4eb1efe0a705284
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58568098"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60057404"
 ---
 # <a name="how-to-create-a-product-manifest"></a>Postupy: Vytvoření manifestu produktu
 Pokud chcete nasadit požadavky pro vaši aplikaci, můžete vytvořit balíček zaváděcího nástroje. Balíček zaváděcího nástroje obsahuje jeden produkt soubor manifestu ale manifest balíčku pro každé národní prostředí. Manifest balíčku obsahuje lokalizace specifických aspektů vašeho balíčku. Jedná se o řetězce, licenční smlouvy s koncovým uživatelem a jazykových sad.
@@ -34,11 +34,11 @@ Pokud chcete nasadit požadavky pro vaši aplikaci, můžete vytvořit balíček
 
 #### <a name="to-create-the-product-manifest"></a>K vytvoření manifestu produktu
 
-1.  Vytvořte adresář pro balíček zaváděcího nástroje. Tento příklad používá C:\package.
+1. Vytvořte adresář pro balíček zaváděcího nástroje. Tento příklad používá C:\package.
 
-2.  V sadě Visual Studio vytvořte nový XML soubor s názvem *product.xml*a uložit ho. tím *C:\package* složky.
+2. V sadě Visual Studio vytvořte nový XML soubor s názvem *product.xml*a uložit ho. tím *C:\package* složky.
 
-3.  Přidejte následující kód XML pro popis kódu XML obor názvů a produktu pro balíček. Nahraďte kód produktu jedinečný identifikátor pro balíček.
+3. Přidejte následující kód XML pro popis kódu XML obor názvů a produktu pro balíček. Nahraďte kód produktu jedinečný identifikátor pro balíček.
 
     ```xml
     <Product
@@ -46,7 +46,7 @@ Pokud chcete nasadit požadavky pro vaši aplikaci, můžete vytvořit balíček
     ProductCode="Custom.Bootstrapper.Package">
     ```
 
-4.  Přidejte kód jazyka XML k určení, zda balíček obsahuje závislost. Tento příklad používá závislost na Microsoft Windows Installer 3.1.
+4. Přidejte kód jazyka XML k určení, zda balíček obsahuje závislost. Tento příklad používá závislost na Microsoft Windows Installer 3.1.
 
     ```xml
     <RelatedProducts>
@@ -54,7 +54,7 @@ Pokud chcete nasadit požadavky pro vaši aplikaci, můžete vytvořit balíček
       </RelatedProducts>
     ```
 
-5.  Přidejte XML pro všechny soubory, které jsou součástí balíčku zaváděcího nástroje. Tento příklad používá název souboru balíčku *CorePackage.msi*.
+5. Přidejte XML pro všechny soubory, které jsou součástí balíčku zaváděcího nástroje. Tento příklad používá název souboru balíčku *CorePackage.msi*.
 
     ```xml
     <PackageFiles>
@@ -62,16 +62,16 @@ Pokud chcete nasadit požadavky pro vaši aplikaci, můžete vytvořit balíček
     </PackageFiles>
     ```
 
-6.  Zkopírovat nebo přesunout *CorePackage.msi* do souboru *C:\package* složky.
+6. Zkopírovat nebo přesunout *CorePackage.msi* do souboru *C:\package* složky.
 
-7.  Přidejte kód jazyka XML k instalaci balíčku zaváděcího nástroje příkazů. Zaváděcí nástroj automaticky přidá **/qn** příznak, který *MSI* soubor, který bude instalaci v bezobslužném režimu. Pokud je soubor *.exe*, zaváděcí nástroj spustí *.exe* souboru prostředí. Následující kód XML ukazuje žádné argumenty *CorePackage.msi*, ale můžete vložit argument příkazového řádku do `Arguments` atribut.
+7. Přidejte kód jazyka XML k instalaci balíčku zaváděcího nástroje příkazů. Zaváděcí nástroj automaticky přidá **/qn** příznak, který *MSI* soubor, který bude instalaci v bezobslužném režimu. Pokud je soubor *.exe*, zaváděcí nástroj spustí *.exe* souboru prostředí. Následující kód XML ukazuje žádné argumenty *CorePackage.msi*, ale můžete vložit argument příkazového řádku do `Arguments` atribut.
 
     ```xml
     <Commands>
         <Command PackageFile="CorePackage.msi" Arguments="">
     ```
 
-8.  Přidejte následující kód XML do zkontrolujte, jestli je nainstalovaný balíček zaváděcího nástroje. Nahraďte kód produktu identifikátoru GUID distribuovatelnou komponentu.
+8. Přidejte následující kód XML do zkontrolujte, jestli je nainstalovaný balíček zaváděcího nástroje. Nahraďte kód produktu identifikátoru GUID distribuovatelnou komponentu.
 
     ```xml
     <InstallChecks>

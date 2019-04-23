@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5fd3e7867b74c9dab923e91fd76424e88b309743
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1631f1b93f79c21914f990620f7e0047c301163f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55931608"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054323"
 ---
 # <a name="create-lookup-tables-in-wpf-applications"></a>Vytváření vyhledávacích tabulek v aplikacích WPF
 
@@ -31,49 +31,49 @@ Předpokládejme například tabulku `Orders` v prodejní databázi. Každý z�
 
 ## <a name="to-create-a-lookup-table"></a>Vytvoření vyhledávací tabulky
 
-1.  Jedním z následujících typů zdrojů dat se souvisejícími daty, přidejte do projektu:
+1. Jedním z následujících typů zdrojů dat se souvisejícími daty, přidejte do projektu:
 
-    -   Datová sada nebo modelu Entity Data Model.
+    - Datová sada nebo modelu Entity Data Model.
 
-    -   WCF Data Service, služby WCF nebo webové službě. Další informace najdete v tématu [jak: Připojte se k datům ve službě](../data-tools/how-to-connect-to-data-in-a-service.md).
+    - WCF Data Service, služby WCF nebo webové službě. Další informace najdete v tématu [jak: Připojte se k datům ve službě](../data-tools/how-to-connect-to-data-in-a-service.md).
 
-    -   Objekty. Další informace najdete v tématu [svázat objekty v sadě Visual Studio](bind-objects-in-visual-studio.md).
+    - Objekty. Další informace najdete v tématu [svázat objekty v sadě Visual Studio](bind-objects-in-visual-studio.md).
 
     > [!NOTE]
     > Než vytvoříte vyhledávací tabulky, musí existovat dvě souvisejících tabulky nebo objekty jako zdroj dat pro projekt.
 
-2.  Otevřít **Návrhář WPF**a ujistěte se, že návrhář obsahuje kontejner, který je platný cíl pro položky v **zdroje dat** okna.
+2. Otevřít **Návrhář WPF**a ujistěte se, že návrhář obsahuje kontejner, který je platný cíl pro položky v **zdroje dat** okna.
 
      Další informace o platné cíle přetažení najdete v tématu [ovládací prvky WPF vytvoření vazby k datům v sadě Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md).
 
-3.  Na **Data** nabídky, klikněte na tlačítko **zobrazit zdroje dat** otevřít **zdroje dat** okna.
+3. Na **Data** nabídky, klikněte na tlačítko **zobrazit zdroje dat** otevřít **zdroje dat** okna.
 
-4.  Rozbalte uzly v **zdroje dat** okna, dokud se nezobrazí nadřazená tabulka nebo objekt a související podřízené tabulky nebo objektu.
+4. Rozbalte uzly v **zdroje dat** okna, dokud se nezobrazí nadřazená tabulka nebo objekt a související podřízené tabulky nebo objektu.
 
     > [!NOTE]
     > Související podřízené tabulky nebo objektu je uzel, který se zobrazí jako jeden podřízený uzel v rámci nadřazené tabulky nebo objektu.
 
-5.  Klikněte na rozevírací nabídku pro podřízený uzel a vyberte **podrobnosti**.
+5. Klikněte na rozevírací nabídku pro podřízený uzel a vyberte **podrobnosti**.
 
-6.  Podřízený uzel.
+6. Podřízený uzel.
 
-7.  V části podřízený uzel klikněte na rozevírací nabídky, které se týkají data podřízené a nadřazené položky. (V předchozím příkladu je to **CustomerID** uzlu.) Vyberte jednu z následujících typů ovládacích prvků, které podporují vazbu vyhledávání:
+7. V části podřízený uzel klikněte na rozevírací nabídky, které se týkají data podřízené a nadřazené položky. (V předchozím příkladu je to **CustomerID** uzlu.) Vyberte jednu z následujících typů ovládacích prvků, které podporují vazbu vyhledávání:
 
-    -   **ComboBox**
+    - **ComboBox**
 
-    -   **ListBox**
+    - **ListBox**
 
-    -   **ListView**
+    - **ListView**
 
         > [!NOTE]
         > Pokud **ListBox** nebo **ListView** ovládací prvek se nezobrazí v seznamu těchto ovládacích prvků můžete přidat do seznamu. Informace najdete v tématu [nastavení ovládacího prvku, který má být vytvořen při přetažení z okna zdroje dat](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
 
-    -   Vlastní ovládací prvek, který je odvozen od <xref:System.Windows.Controls.Primitives.Selector>.
+    - Vlastní ovládací prvek, který je odvozen od <xref:System.Windows.Controls.Primitives.Selector>.
 
         > [!NOTE]
         > Pro informace o tom, jak přidat vlastní ovládací prvky pro seznam ovládacích prvků můžete určit pro položky v **zdroje dat** okna, naleznete v tématu [přidání vlastních ovládacích prvků do okna zdroje dat](../data-tools/add-custom-controls-to-the-data-sources-window.md).
 
-8.  Přetáhněte podřízený uzel z **zdroje dat** okna do kontejneru v Návrháře WPF. (V předchozím příkladu je podřízený uzel **objednávky** uzlu.)
+8. Přetáhněte podřízený uzel z **zdroje dat** okna do kontejneru v Návrháře WPF. (V předchozím příkladu je podřízený uzel **objednávky** uzlu.)
 
      Visual Studio generuje XAML, který vytvoří nové ovládací prvky vázané na data pro každou z položek, které se při přetahování. XAML také přidá nový <xref:System.Windows.Data.CollectionViewSource> podřízené tabulky nebo objektu k prostředkům cíl přetažení. U některých zdrojů dat sady Visual Studio také vygeneruje kód pro načtení dat do tabulky nebo objektu. Další informace najdete v tématu [ovládací prvky WPF vytvoření vazby k datům v sadě Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md).
 

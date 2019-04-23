@@ -7,24 +7,24 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Další informace o benefitech Visual Studio App Center, které jsou součástí předplatných sady Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: 2333c7d47fdb0108576d87345d6a4124c36b50dc
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 0d9f673e0b78b708883beb797809eac1303e2ff6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59662312"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049498"
 ---
 # <a name="visual-studio-app-center-in-visual-studio-subscriptions"></a>Visual Studio App Center v předplatných sady Visual Studio
 
 App Center je řídicím střediskem pro aplikace.
 
--  Automaticky sestavit aplikaci, testovat na skutečných zařízeních a distribuovat testerům beta verzí
--  Shromážděte analýzy chování uživatelů, včetně vlastních událostí a zpráv o chybách.
--  Přidání nabízených oznámení do vaší aplikace během několika minut
+- Automaticky sestavit aplikaci, testovat na skutečných zařízeních a distribuovat testerům beta verzí
+- Shromážděte analýzy chování uživatelů, včetně vlastních událostí a zpráv o chybách.
+- Přidání nabízených oznámení do vaší aplikace během několika minut
 
 ## <a name="activation-steps"></a>Postup aktivace
 Začínáme se službou Visual Studio App Center je snadný.
-1.  Přihlaste se k webu [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
+1. Přihlaste se k webu [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
 2. Vyhledejte dlaždici Visual Studio App Center a klikněte na tlačítko **Začínáme**.
     > [!div class="mx-imgBorder"]
@@ -59,15 +59,15 @@ Nejste si jistí které předplatné používáte?  Připojte se k [ https://my.
 
 ### <a name="q--i-get-an-error-that-my-browser-is-unsupported--whats-wrong"></a>DOTAZ:  Obdržím chybu, že v prohlížeči se nepodporuje.  Co je?
 O:  App Center vyžaduje novější funkce, které nemusí být k dispozici některé starší prohlížeče.  Pokud váš prohlížeč není podporovaný, postupujte podle těchto kroků:
-1.  Otevřete jiný prohlížeč, jako je například Microsoft Edge nebo nejnovější verze Google Chrome nebo Firefox a Safari.
-2.  Připojení ke službě Visual Studio [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) a přihlaste se.
-3.  Nyní klikněte na **Začínáme** odkaz na dlaždici Visual Studio App Center.
+1. Otevřete jiný prohlížeč, jako je například Microsoft Edge nebo nejnovější verze Google Chrome nebo Firefox a Safari.
+2. Připojení ke službě Visual Studio [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) a přihlaste se.
+3. Nyní klikněte na **Začínáme** odkaz na dlaždici Visual Studio App Center.
 
 Teď by měl být mít přístup k portálu App Center a vytvořte si účet.
 
 ## <a name="support-resources"></a>Informační zdroje podpory
--  Potřebujete pomoc s App Center?
+- Potřebujete pomoc s App Center?
     - Získejte Rady a odpovědi od týmu App Center v [aplikace centrum nápovědy](https://intercom.help/appcenter/).
     - Podívejte se na dokončení [dokumentace k App Center](/appcenter/)
--  Potřebujete pomoc se prodeje, předplatnými, účty a fakturací pro předplatná sady Visual Studio, obraťte se na Visual Studio [podpora předplatných](https://visualstudio.microsoft.com/subscriptions/support/).
--  Máte dotaz k Visual Studio IDE, DevOps služby Azure nebo jiných produktů Visual Studio nebo služeb?  Navštivte [Visual Studio – podpora](https://visualstudio.microsoft.com/support/).
+- Potřebujete pomoc se prodeje, předplatnými, účty a fakturací pro předplatná sady Visual Studio, obraťte se na Visual Studio [podpora předplatných](https://visualstudio.microsoft.com/subscriptions/support/).
+- Máte dotaz k Visual Studio IDE, DevOps služby Azure nebo jiných produktů Visual Studio nebo služeb?  Navštivte [Visual Studio – podpora](https://visualstudio.microsoft.com/support/).

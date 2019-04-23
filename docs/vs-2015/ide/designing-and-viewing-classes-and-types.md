@@ -17,12 +17,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b4d9636a29485430be92ab622ae8ce56712f22aa
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c41dc9df835cc3799a35620730927b338224ea14
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54756856"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045041"
 ---
 # <a name="designing-and-viewing-classes-and-types"></a>Navrhování a zobrazování tříd a typů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,11 +31,11 @@ Návrh, vizualizovat a Refaktorovat třídy a další typy v kódu pomocí návr
   
  Tady jsou další informace o tom, co můžete učinit s diagramy tříd:  
   
--   **Návrh**: Úpravy kódu úpravou diagramu tříd. Přidat nové prvky a odstraňte nežádoucí. Vaše změny se projeví v kódu.  
+- **Návrh**: Úpravy kódu úpravou diagramu tříd. Přidat nové prvky a odstraňte nežádoucí. Vaše změny se projeví v kódu.  
   
--   **Vizualizujte**: Struktura projektu pochopit zobrazením třídy v projektu v diagramu. Přizpůsobte diagramu tak, aby se mohli soustředit na podrobnosti o projektu, které vám nejvíce záleží. Uložení diagramu pro pozdější použití pro demonstraci nebo dokumentaci.  
+- **Vizualizujte**: Struktura projektu pochopit zobrazením třídy v projektu v diagramu. Přizpůsobte diagramu tak, aby se mohli soustředit na podrobnosti o projektu, které vám nejvíce záleží. Uložení diagramu pro pozdější použití pro demonstraci nebo dokumentaci.  
   
--   **Refaktorovat**: Přepište metody, přejmenujte identifikátory, refaktorace parametry a implementovat rozhraní a abstraktní třídy.  
+- **Refaktorovat**: Přepište metody, přejmenujte identifikátory, refaktorace parametry a implementovat rozhraní a abstraktní třídy.  
   
 ## <a name="in-this-section"></a>V tomto oddílu  
  [Práce s třídami a ostatními typy (Návrhář tříd)](../ide/working-with-classes-and-other-types-class-designer.md)  

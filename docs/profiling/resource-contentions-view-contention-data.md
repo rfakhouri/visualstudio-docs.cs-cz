@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 408b13892d24689fb163aea0105a47028defad59
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: efadc6917f565f5449a76b6a8b91b309356a00bb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56622069"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051309"
 ---
 # <a name="resource-contentions-view---contention-data"></a>Zobrazení kolizí prostředku – data kolizí
 Zobrazení kolizí prostředku obsahuje data kolize prostředků, které byly zdroj kolizní události. Kolize událost nastane, pokud funkce ve vlákně je nuceni čekat přístup k prostředku, protože funkce v jiném vlákně má získat výhradní přístup k prostředku. Každý prostředek je kořenový uzel stromu volání, která zobrazuje cesty spuštění funkce, jejichž výsledkem kolizní události.
@@ -30,9 +30,9 @@ Zobrazení kolizí prostředku obsahuje data kolize prostředků, které byly zd
 ### <a name="function-values"></a>Hodnoty – funkce
  Hodnoty funkcí jsou založeny na instance, ke které došlo v provádění cestu ve stromu volání funkce.
 
--   Výhradní hodnoty jsou založené na události, ke kterým došlo při provádění funkce příkazy v těle jeho funkce. Události, ke kterým došlo ve funkcích, které byly volány funkce nejsou součástí výhradní hodnoty.
+- Výhradní hodnoty jsou založené na události, ke kterým došlo při provádění funkce příkazy v těle jeho funkce. Události, ke kterým došlo ve funkcích, které byly volány funkce nejsou součástí výhradní hodnoty.
 
--   Celkové hodnoty jsou založené na události, ke kterým došlo při provádění funkce nebo funkce volané funkce.
+- Celkové hodnoty jsou založené na události, ke kterým došlo při provádění funkce nebo funkce volané funkce.
 
 ### <a name="percentage-values"></a>Procento hodnoty
  Procento hodnoty jsou založeny na celkový čas nebo kolize události v dat profilování. Pokud je filtrování sestav nebo zobrazení běhu profilování, čas zablokování a tento počet sporů: v filtrovaná data se používají jako celková hodnota.

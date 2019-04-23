@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b638bb1e300fd03d358c338c10dec4844f4e4adc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: edce61d7f5cf8f84c021b759fdaee1c06bf68ccb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54801489"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044917"
 ---
 # <a name="visualizing-eventsource-events-as-markers"></a>Vizualizace událostí EventSource v podobě značek
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,11 +26,11 @@ Vizualizátor souběžnosti můžete zobrazit události EventSource jako značky
   
 ### <a name="marker-type"></a>Typ značky  
   
-1.  Události, které mají [operační kód](http://msdn.microsoft.com/d97953df-669b-4c55-b1a8-925022b339b7) win: spuštění nebo win: zastavení jsou považovány za začátku nebo konci rozsahu, v uvedeném pořadí.  Vnořený nebo překrývající se rozsahy nelze zobrazit. Nelze zobrazit páry událostí, které v jednom vlákně začínají i končí na další.  
+1. Události, které mají [operační kód](http://msdn.microsoft.com/d97953df-669b-4c55-b1a8-925022b339b7) win: spuštění nebo win: zastavení jsou považovány za začátku nebo konci rozsahu, v uvedeném pořadí.  Vnořený nebo překrývající se rozsahy nelze zobrazit. Nelze zobrazit páry událostí, které v jednom vlákně začínají i končí na další.  
   
-2.  Událost, jejichž operační kód není win: Start ani win: zastavení je považováno za příznak značky, pokud jeho [úroveň](http://msdn.microsoft.com/dfa4e0a9-4d89-4f50-aef9-1dae0dc11726) (pole EVENT_RECORD. EVENT_HEADER. EVENT_DESCRIPTOR) je win: podrobné nebo vyšší.  
+2. Událost, jejichž operační kód není win: Start ani win: zastavení je považováno za příznak značky, pokud jeho [úroveň](http://msdn.microsoft.com/dfa4e0a9-4d89-4f50-aef9-1dae0dc11726) (pole EVENT_RECORD. EVENT_HEADER. EVENT_DESCRIPTOR) je win: podrobné nebo vyšší.  
   
-3.  Ve všech ostatních případech je událost považována za zprávu.  
+3. Ve všech ostatních případech je událost považována za zprávu.  
   
 ### <a name="importance"></a>Význam  
  Následující tabulka definuje, jak se úroveň události mapuje na významu značky.  

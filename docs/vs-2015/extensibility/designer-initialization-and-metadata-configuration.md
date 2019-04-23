@@ -11,12 +11,12 @@ ms.assetid: f7fe9a7e-f669-4642-ad5d-186b2e6e6ec9
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e50fbbc3c834fc33f77f3aecef6b51ef9037ecb7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7d1bfcfc3176e14900553504a66307ff6e8dcf5a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54757032"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049254"
 ---
 # <a name="designer-initialization-and-metadata-configuration"></a>Inicializace návrháře a konfigurace metadat
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,15 +31,15 @@ Manipulace s metadata a filtrování atributů přiřazených pomocí návrhář
 ### <a name="customizing-initialization"></a>Přizpůsobení inicializace  
  Přizpůsobení návrháře, komponenty nebo plochu návrháře zahrnuje:  
   
-1.  Úprava metadata návrháře a efektivně mění způsob, jakým určitým <xref:System.Type> je nedostupná nebo převést.  
+1. Úprava metadata návrháře a efektivně mění způsob, jakým určitým <xref:System.Type> je nedostupná nebo převést.  
   
      To se obvykle provádí prostřednictvím <xref:System.Drawing.Design.UITypeEditor> nebo <xref:System.ComponentModel.TypeConverter> mechanismy.  
   
      Například, když <xref:System.Windows.Forms>– založené na návrháři jsou inicializovány [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] upravuje prostředí <xref:System.Drawing.Design.UITypeEditor> pro <xref:System.Web.UI.WebControls.Image> objekty používané pomocí návrháře pro použití resource Manageru k získání rastrové obrázky, spíše než v systému souborů.  
   
-2.  Integrace s prostředím, například přihlášení k odběru událostí nebo získávání informací o konfiguraci projektu. Můžete získat informace o konfiguraci projektu a přihlášení k odběru událostí prostřednictvím provedeného <xref:System.ComponentModel.Design.ITypeResolutionService> rozhraní.  
+2. Integrace s prostředím, například přihlášení k odběru událostí nebo získávání informací o konfiguraci projektu. Můžete získat informace o konfiguraci projektu a přihlášení k odběru událostí prostřednictvím provedeného <xref:System.ComponentModel.Design.ITypeResolutionService> rozhraní.  
   
-3.  Změny uživatelského prostředí aktivací odpovídající **nástrojů** kategorií nebo omezení použitelnosti návrháře použitím instance <xref:System.ComponentModel.ToolboxItemFilterAttribute> třídy do návrháře.  
+3. Změny uživatelského prostředí aktivací odpovídající **nástrojů** kategorií nebo omezení použitelnosti návrháře použitím instance <xref:System.ComponentModel.ToolboxItemFilterAttribute> třídy do návrháře.  
   
 ### <a name="designer-initialization-by-a-vspackage"></a>Inicializace návrháře pomocí VSPackage  
  VSPackage partnerova návrháře inicializace:  

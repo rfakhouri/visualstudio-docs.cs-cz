@@ -8,12 +8,12 @@ ms.assetid: 7b866776-f2d5-4823-8d15-919f889db26f
 caps.latest.revision: 31
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 74d86998657a380e4cef1f3ee6ca0d87bccb3507
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c2514454f1aa1c1899c45edac80f7990d8208fdd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54765096"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052087"
 ---
 # <a name="test-windows-uwp-and-81-phone-apps-with-coded-ui-tests"></a>Testování aplikací pro UPW a aplikací pro Windows Phone 8.1 pomocí programových testů uživatelského rozhraní
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,23 +22,23 @@ Pomocí tohoto průvodce použijte k vytvoření testů uživatelského rozhran�
   
 ## <a name="create-a-simple-windows-phone-app"></a>Vytvoření jednoduché aplikace pro Windows Phone  
   
-1.  Vytvořte nový projekt pro prázdnou aplikaci pro Windows Phone pomocí šablony Visual C# nebo Visual Basic.  
+1. Vytvořte nový projekt pro prázdnou aplikaci pro Windows Phone pomocí šablony Visual C# nebo Visual Basic.  
   
      ![Vytvoření nové aplikace pro Windows Phone](../test/media/cuit-phone-app-newproject.png "CUIT_Phone_App_NewProject")  
   
-2.  V Průzkumníku řešení otevřete MainPage.xaml. Z panelu nástrojů přetáhněte ovládací prvek button a ovládací prvek textbox na návrhovou plochu.  
+2. V Průzkumníku řešení otevřete MainPage.xaml. Z panelu nástrojů přetáhněte ovládací prvek button a ovládací prvek textbox na návrhovou plochu.  
   
      ![Do MainPage.xaml přidejte ovládací](../test/media/cuit-phone-app-addcontrols.png "CUIT_Phone_App_AddControls")  
   
-3.  V okně Vlastnosti název ovládacího prvku tlačítko.  
+3. V okně Vlastnosti název ovládacího prvku tlačítko.  
   
      ![Pojmenujte ovládací prvek tlačítko](../test/media/cuit-phone-namebutton.png "CUIT_Phone_NameButton")  
   
-4.  Název ovládacího prvku textbox.  
+4. Název ovládacího prvku textbox.  
   
      ![Název ovládacího prvku textbox](../test/media/cuit-phone-nametesxtbox.png "CUIT_Phone_NameTesxtBox")  
   
-5.  Na návrhové ploše poklikejte na ovládací prvek tlačítka a přidejte následující kód:  
+5. Na návrhové ploše poklikejte na ovládací prvek tlačítka a přidejte následující kód:  
   
     ```csharp  
     private void button_Click_1(object sender, RoutedEventArgs e)  
@@ -58,15 +58,15 @@ Pomocí tohoto průvodce použijte k vytvoření testů uživatelského rozhran�
     End Class  
     ```  
   
-6.  Stisknutím klávesy F5 spusťte aplikaci Windows Phone v emulátoru a ověřte, že je funkční.  
+6. Stisknutím klávesy F5 spusťte aplikaci Windows Phone v emulátoru a ověřte, že je funkční.  
   
      ![Spustit Windows Phone app](../test/media/cuit-phone-runapp.png "CUIt_Phone_RunApp")  
   
-7.  Ukončete emulátoru.  
+7. Ukončete emulátoru.  
   
 ## <a name="deploy-the-windows-phone-app"></a>Nasazení Windows Phone app  
   
-1.  Než programového testu UI lze mapovat ovládací prvky vaší aplikace, budete muset tuto aplikaci nasadit.  
+1. Než programového testu UI lze mapovat ovládací prvky vaší aplikace, budete muset tuto aplikaci nasadit.  
   
      ![Nasazení Windows Phone app](../test/media/cuit-phone-deploy.png "CUIT_Phone_Deploy")  
   
@@ -287,7 +287,7 @@ Pomocí tohoto průvodce použijte k vytvoření testů uživatelského rozhran�
   
 ## <a name="run-the-coded-ui-test"></a>Spustit programový test uživatelského rozhraní  
   
-1.  Sestavte test a poté jej spusťte pomocí Průzkumníka testů.  
+1. Sestavte test a poté jej spusťte pomocí Průzkumníka testů.  
   
      ![Sestavení a spuštění testů pomocí Průzkumníku testů](../test/media/cuit-phone-runtestexplorer.png "CUIT_Phone_RunTestExplorer")  
   
@@ -299,7 +299,7 @@ Pomocí tohoto průvodce použijte k vytvoření testů uživatelského rozhran�
   
      ![Výsledky Průzkumníka testů](../test/media/cuit-phone-runtestexplorerresults.png "CUIT_Phone_RunTestExplorerResults")  
   
-##  <a name="TestingPhoneAppsCodedUI_DataDriven"></a> Použití s daty kódované testy uživatelského rozhraní pro aplikace z Windows Phone  
+## <a name="TestingPhoneAppsCodedUI_DataDriven"></a> Použití s daty kódované testy uživatelského rozhraní pro aplikace z Windows Phone  
  K testování různých podmínek, programový test UI lze spustit několikrát s různými sadami dat.  
   
  S daty programové testy uživatelského rozhraní pro Windows Phone jsou definovány pomocí atributu DataRow v testovací metodě. V následujícím příkladu, x a y pomocí hodnoty 1 a 2 pro první iterace a -1 -2 pro druhý iteraci tohoto testu.  
@@ -317,7 +317,7 @@ public void DataDrivingDemo_MyTestMethod(int x, int y)
 ### <a name="q-do-i-have-to-deploy-the-windows-phone-app-in-the-emulator-in-order-to-map-ui-controls"></a>DOTAZ: Je nutné nasadit aplikace pro Windows Phone v emulátoru, aby mapování ovládacích prvků uživatelského rozhraní?  
  **A**: Ano, Tvůrce programového testu uživatelského rozhraní vyžaduje, aby emulátor používat, a do zařízení nasadit aplikaci. V opačném případě vyvolá chybová zpráva s oznámením, že nebyly nalezeny žádné běžící emulátor.  
   
-###  <a name="TestingPhoneAppsCodedUI_EmulatorDevice"></a> DOTAZ: Můžete testy spouštět pouze emulátor nebo můžu také použít fyzické zařízení?  
+### <a name="TestingPhoneAppsCodedUI_EmulatorDevice"></a> DOTAZ: Můžete testy spouštět pouze emulátor nebo můžu také použít fyzické zařízení?  
  **A**: Jednu z možností je podporována. Cíl pro spuštění testu se vybírá změnou typu emulátor nebo výběru zařízení na panelu nástrojů zařízení. Pokud je vybrané zařízení, telefonní modré zařízení musí být připojené k některé z portu USB počítače.  
   
  ![Vyberte verzi emulátoru nebo fyzická zařízení](../test/media/cuit-phone-testtarget.png "CUIT_Phone_TestTarget")  

@@ -17,12 +17,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9a7a48039699c5bb35e07a21e5c5c3be8ae8585f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 918462bff3c2ac8dc57cb9c2c55a7d901707683c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54785910"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051541"
 ---
 # <a name="how-to-create-project-templates"></a>Postupy: Vytváření šablon projektu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,24 +31,24 @@ Tento postup umožňuje vytvořit pomocí šablony **exportovat šablonu** prův
   
 ### <a name="to-create-a-custom-project-template-with-the-standard-export-template-wizard"></a>Chcete-li vytvořit vlastní šablonu projektu pomocí standardního Průvodce exportovat šablonu  
   
-1.  Vytvoření projektu.  
+1. Vytvoření projektu.  
   
     > [!NOTE]
     >  Při pojmenování projektu, který bude sloužit jako zdroj šablony, používejte pouze znaky platný identifikátor. Šablonu exportovat z projektu s názvem se neplatné znaky. mohou způsobit chyby kompilace v budoucnu projekty založené na šabloně. Další informace o platný identifikátor znaků naleznete v tématu [deklarované názvy elementů](http://msdn.microsoft.com/library/09d8843b-c0dc-4afe-9dab-87c439a69e66).  
   
-2.  Upravte projekt, dokud nebude připravený exportovat jako šablonu.  
+2. Upravte projekt, dokud nebude připravený exportovat jako šablonu.  
   
-3.  Podle potřeby upravte soubory kódu k označení, kde by měla probíhat náhrada parametru. Další informace o nahrazení parametru najdete v tématu [jak: Nahrazení parametrů v šabloně](../ide/how-to-substitute-parameters-in-a-template.md).  
+3. Podle potřeby upravte soubory kódu k označení, kde by měla probíhat náhrada parametru. Další informace o nahrazení parametru najdete v tématu [jak: Nahrazení parametrů v šabloně](../ide/how-to-substitute-parameters-in-a-template.md).  
   
-4.  Na **souboru** nabídky, klikněte na tlačítko **exportovat šablonu**. **Exportovat šablonu** otevře se průvodce.  
+4. Na **souboru** nabídky, klikněte na tlačítko **exportovat šablonu**. **Exportovat šablonu** otevře se průvodce.  
   
-5.  Klikněte na tlačítko **projektu šablony**.  
+5. Klikněte na tlačítko **projektu šablony**.  
   
-6.  Pokud máte více než jeden projekt v aktuálním řešení, vyberte projekty, které chcete exportovat do šablony.  
+6. Pokud máte více než jeden projekt v aktuálním řešení, vyberte projekty, které chcete exportovat do šablony.  
   
-7.  Klikněte na **Další**.  
+7. Klikněte na **Další**.  
   
-8.  Vyberte ikonu a image ve verzi preview pro šablonu. Zobrazí **nový projekt** dialogové okno.  
+8. Vyberte ikonu a image ve verzi preview pro šablonu. Zobrazí **nový projekt** dialogové okno.  
   
 9. Zadejte název šablony a popis.  
   

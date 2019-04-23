@@ -11,18 +11,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 958628194e4ea768de5a47dc66476345bff6c4f3
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 1e89f74d940182cd92fd15f726676f0979d21186
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56625332"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047212"
 ---
 # <a name="deploy-project-types"></a>Nasazování typů projektů
 [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] nainstaluje nový agregátor typu projektu (*ProjectAggregator2.dll*) a také balíček Instalační služby systému Windows pro automatické distribuce signatur (*ProjectAggregator2.msi*). Je nutné použít nový agregátor pro typy projektů spravovaného kódu. ProjectAggregator2 obejde omezení [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] projektu agregátorem, který brání typy projektů spravovaný kód podle vašich představ. Následující kroky popisují, jak změnit vašeho balíčku VSPackage pro použití se novému agregátoru.
 
-1.  Odeberte projekt NativeHierarchyWrapper z vašeho řešení.
+1. Odeberte projekt NativeHierarchyWrapper z vašeho řešení.
 
-2.  Odebrání binárních souborů NativeHierarchyWrapper vašeho nastavení.
+2. Odebrání binárních souborů NativeHierarchyWrapper vašeho nastavení.
 
-3.  Přidat *ProjectAggregator2.msi* do vašeho nastavení.
+3. Přidat *ProjectAggregator2.msi* do vašeho nastavení.

@@ -9,12 +9,12 @@ ms.assetid: 2ada376d-f168-455d-9643-6acb535360c1
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7f56491a8268e939f7bd455c4afef6813116ef9f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c22d9327deb0c04790a3adfc809d9ae5da483916
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55950601"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059887"
 ---
 # <a name="add-a-data-source-to-a-web-performance-test"></a>Přidání zdroje dat do testu výkonnosti webu
 
@@ -34,7 +34,9 @@ Chceme použít ukázkovou aplikaci ASP.NET. Má tři *.aspx* stránky – vých
 
 ## <a name="create-a-sql-database"></a>Vytvoření databáze SQL
 
-1. Pokud nemáte Visual Studio Enterprise, můžete ho stáhnout [stahování sady Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) stránky.
+::: moniker range="vs-2017"
+
+1. Pokud nemáte Visual Studio Enterprise, můžete ho stáhnout [stahování sady Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) stránky.
 
 2. Vytvoření databáze SQL.
 
@@ -59,6 +61,38 @@ Chceme použít ukázkovou aplikaci ASP.NET. Má tři *.aspx* stránky – vých
 7. Přidání dat do pole.
 
      ![Přidání dat do pole](../test/media/web_test_databinding_sql_addnewfieldsadddata.png)
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. Pokud nemáte Visual Studio Enterprise, můžete ho stáhnout [stahování sady Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) stránky.
+
+2. Vytvoření databáze SQL.
+
+     ![Přidat novou databázi SQL.](../test/media/web_test_databinding_sql_addnewdb.png)
+
+3. Vytvořte projekt databáze.
+
+     ![Vytvoření nového projektu z databáze](../test/media/web_test_databinding_sql_addnewdbproject.png)
+
+4. Přidání tabulky do databázového projektu.
+
+     ![Přidá novou tabulku na databázový projekt](../test/media/web_test_databinding_sql_addnewdbtablename.png)
+
+5. Přidejte pole do tabulky.
+
+     ![Přidejte pole do tabulky](../test/media/web_test_databinding_sql_addnewdbaddfields.png)
+
+6. Publikujte projekt databáze.
+
+     ![Publikujte projekt databáze z Průzkumníka řešení](../test/media/web_test_databinding_sql_addnewdbpublish.png)
+
+7. Přidání dat do pole.
+
+     ![Přidání dat do pole](../test/media/web_test_databinding_sql_addnewfieldsadddata.png)
+
+::: moniker-end
 
 ## <a name="add-the-data-source"></a>Přidat zdroj dat
 

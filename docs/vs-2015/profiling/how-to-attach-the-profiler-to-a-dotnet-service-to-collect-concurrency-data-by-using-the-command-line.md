@@ -9,12 +9,12 @@ caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 34db2b987f64329ead90ab6570fd98b78eb4934f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 42b1610736d7f53d85dffb98313bcab55bb10afd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54799683"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046614"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-service-to-collect-concurrency-data-by-using-the-command-line"></a>Postupy: Připojit Profiler ke službě .NET ke shromažďování dat souběžnosti pomocí příkazového řádku
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,21 +33,21 @@ Toto téma popisuje způsob použití [!INCLUDE[vsprvs](../includes/vsprvs-md.md
   
 #### <a name="to-attach-the-profiler-to-a-net-framework-service"></a>K připojení Profiler ke službě rozhraní .NET Framework  
   
-1.  Nainstalujte službu.  
+1. Nainstalujte službu.  
   
-2.  Otevřete okno příkazového řádku.  
+2. Otevřete okno příkazového řádku.  
   
-3.  Inicializujte proměnné prostředí profilování. Typ:  
+3. Inicializujte proměnné prostředí profilování. Typ:  
   
      [Vsperfclrenv –](../profiling/vsperfclrenv.md) **/globalsampleon** [**/samplelineoff**]  
   
-    -   **/globalsampleon** umožňuje vzorkování.  
+    - **/globalsampleon** umožňuje vzorkování.  
   
-    -   **/samplelineoff** zakáže přiřazení shromážděných dat ke konkrétnímu zdroji řádků kódu. Pokud je tato možnost zadána, data přiřazena pouze funkcí.  
+    - **/samplelineoff** zakáže přiřazení shromážděných dat ke konkrétnímu zdroji řádků kódu. Pokud je tato možnost zadána, data přiřazena pouze funkcí.  
   
-4.  Restartujte počítač.  
+4. Restartujte počítač.  
   
-5.  Spusťte profiler. Typ:  
+5. Spusťte profiler. Typ:  
   
      [Nástroj VSPerfCmd](../profiling/vsperfcmd.md) **/start:concurrency/output:** `OutputFile` [`Options`]  
   
@@ -66,22 +66,22 @@ Toto téma popisuje způsob použití [!INCLUDE[vsprvs](../includes/vsprvs-md.md
     |[/automark](../profiling/automark.md) **:** `Interval`|Použití s **/wincounter** pouze. Určuje počet milisekund mezi událostmi sběru čítače výkonu Windows. Výchozí hodnota je 500 ms.|  
     |[/Events](../profiling/events-vsperfcmd.md) **:** `Config`|Určuje událost trasování událostí pro Windows (ETW) má být shromážděn během profilování. Události trasování událostí pro Windows jsou shromážděny v samostatném (ETL) soubor.|  
   
-6.  V případě potřeby spusťte službu.  
+6. V případě potřeby spusťte službu.  
   
-7.  Připojení profileru ke službě. Typ:  
+7. Připojení profileru ke službě. Typ:  
   
      **Nástroj VSPerfCmd / připojit:** `PID` [[targetclr](../profiling/targetclr.md)**:**`Version`]  
   
-    -   `PID` Určuje ID procesu nebo názvem procesu služby. ID všech spuštěných procesů lze zobrazit ve Správci úloh Windows.  
+    - `PID` Určuje ID procesu nebo názvem procesu služby. ID všech spuštěných procesů lze zobrazit ve Správci úloh Windows.  
   
-    -   **targetclr:** `Version` Určuje verzi modulu common language runtime (CLR) do profilu je do aplikace načtena více než jedna verze modulu runtime. Volitelné.  
+    - **targetclr:** `Version` Určuje verzi modulu common language runtime (CLR) do profilu je do aplikace načtena více než jedna verze modulu runtime. Volitelné.  
   
-## <a name="controlling-data-collection"></a>Řízení kolekce dat  
+## <a name="controlling-data-collection"></a>Řízení shromažďování dat  
  Zatímco je služba spuštěna, lze sběr dat řídit spouštěním či pozastavováním zápisu dat do souboru použitím možností VSPerfCmd.exe. Řízení sběru dat umožňuje shromažďovat data pro určitou část provádění programu, například spouštění či ukončování aplikace.  
   
 #### <a name="to-start-and-stop-data-collection"></a>Spuštění a zastavení shromažďování dat  
   
--   Následující páry **VSPerfCmd** možností spouští a zastavují sběr dat. Každou možnost zadejte na samostatný příkazový řádek. Sběr dat lze zapnout a vypnout několikrát.  
+- Následující páry **VSPerfCmd** možností spouští a zastavují sběr dat. Každou možnost zadejte na samostatný příkazový řádek. Sběr dat lze zapnout a vypnout několikrát.  
   
     |Možnost|Popis|  
     |------------|-----------------|  
@@ -89,21 +89,21 @@ Toto téma popisuje způsob použití [!INCLUDE[vsprvs](../includes/vsprvs-md.md
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Spustí (**/processon**) nebo zastaví (**/processoff**) sběr dat pro proces určený identifikátorem procesu (`PID`).|  
     |**/ attach:**{`PID`&#124;`ProcName`} [/ detach](../profiling/detach.md)[: {`PID`&#124;`ProcName`}]|**/ attach** spustí sběr dat pro proces určený pomocí ID procesu nebo názvem procesu. **/ detach** zastaví sběr dat pro zadaný proces nebo pro všechny procesy, pokud konkrétní proces není zadán.|  
   
--   Můžete také použít **VSPerfCmd.exe**[/mark](../profiling/mark.md) možnost k vložení profilovací značky do datového souboru. **/Mark** příkaz přidá identifikátor, časové razítko a volitelný uživatelem definovaný textový řetězec. Značky lze použít k filtrování dat v zobrazení data a sestavy profileru. Následující páry možností VSPerfCmd spouští a zastavují sběr dat. Každou možnost zadejte na samostatný příkazový řádek. Sběr dat lze zapnout a vypnout několikrát.  
+- Můžete také použít **VSPerfCmd.exe**[/mark](../profiling/mark.md) možnost k vložení profilovací značky do datového souboru. **/Mark** příkaz přidá identifikátor, časové razítko a volitelný uživatelem definovaný textový řetězec. Značky lze použít k filtrování dat v zobrazení data a sestavy profileru. Následující páry možností VSPerfCmd spouští a zastavují sběr dat. Každou možnost zadejte na samostatný příkazový řádek. Sběr dat lze zapnout a vypnout několikrát.  
   
 ## <a name="ending-the-profiling-session"></a>Ukončení relace profilování  
  Chcete-li ukončit relaci profilování, profiler nesmí pokračovat ve shromažďování dat. Zastavit shromažďování dat od aplikace profilované za použití metody souběžnosti zastavením služby nebo vyvoláním **VSPerfCmd / detach** možnost. Poté je zapotřebí vyvolat **VSPerfCmd/Shutdown** možnost profiler vypne a uzavře soubor dat profilování. **VSPerfClrEnv /globaloff** příkaz vymaže proměnné prostředí profilování, ale konfigurace systému není obnovena, až po restartování počítače.  
   
 #### <a name="to-end-a-profiling-session"></a>Chcete-li ukončit relaci profilování  
   
-1.  Proveďte jednu z následujících-li odpojit profiler od cílové aplikace.  
+1. Proveďte jednu z následujících-li odpojit profiler od cílové aplikace.  
   
-    -   Zastavte službu.  
+    - Zastavte službu.  
   
          -nebo-  
   
-    -   Typ **VSPerfCmd / odpojit.**  
+    - Typ **VSPerfCmd / odpojit.**  
   
-2.  Vypněte profiler. Typ:  
+2. Vypněte profiler. Typ:  
   
      **Nástroj VSPerfCmd**[vypnutí](../profiling/shutdown.md)

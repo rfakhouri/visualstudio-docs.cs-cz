@@ -15,12 +15,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: a31dfbae3ca07f913a5ddad3cf0a788cd9c62b73
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 11e1d9614c4f2a512c56f84117d28363e80c6b90
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54762502"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048098"
 ---
 # <a name="ca1305-specify-iformatprovider"></a>CA1305: Určete IFormatProvider
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,11 +35,11 @@ ms.locfileid: "54762502"
 ## <a name="cause"></a>Příčina
  Metoda nebo konstruktor volá jeden nebo více členů, které mají přetížení <xref:System.IFormatProvider?displayProperty=fullName> parametr a tato metoda nebo konstruktor nevolá přetížení přebírající <xref:System.IFormatProvider> parametru. Toto pravidlo ignoruje volání [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] metody, které jsou popsány jako ignoruje <xref:System.IFormatProvider> parametr a také následující metody:
 
--   <xref:System.Activator.CreateInstance%2A?displayProperty=fullName>
+- <xref:System.Activator.CreateInstance%2A?displayProperty=fullName>
 
--   <xref:System.Resources.ResourceManager.GetObject%2A?displayProperty=fullName>
+- <xref:System.Resources.ResourceManager.GetObject%2A?displayProperty=fullName>
 
--   <xref:System.Resources.ResourceManager.GetString%2A?displayProperty=fullName>
+- <xref:System.Resources.ResourceManager.GetString%2A?displayProperty=fullName>
 
 ## <a name="rule-description"></a>Popis pravidla
  Když <xref:System.Globalization.CultureInfo?displayProperty=fullName> nebo <xref:System.IFormatProvider> objektu není zadán, výchozí hodnota zadaná pomocí přetíženého členu nemusí mít ve všech národních prostředích požadovaný efekt. Navíc [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] členy zvolte výchozí jazykovou verzi a formátování podle předpokladů, které nemusí být správná pro váš kód. Pokud chcete mít jistotu, že kód funguje podle očekávání pro vaše scénáře, by měla poskytnout informace specifické jazykové verze podle následujících pokynů:

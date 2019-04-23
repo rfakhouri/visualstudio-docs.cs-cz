@@ -16,12 +16,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6fb0fc574af033f34afb3995edeaffe5e408d740
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 490ee064903a0e2d119da891681da719e237acec
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54799727"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049400"
 ---
 # <a name="how-to-visualize-a-collection-association-class-designer"></a>Postupy: Vizualizace asociace kolekce (návrhář tříd)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,11 +30,11 @@ Vlastnosti a pole, které jsou kolekce jiných typů lze zobrazit v diagramu tř
   
 ### <a name="to-create-a-collection-association"></a>Vytvoření přidružení kolekce  
   
-1.  V kódu vytvořte vlastnost nebo pole, jehož typ je sám vytvořit kolekce silného typu.  
+1. V kódu vytvořte vlastnost nebo pole, jehož typ je sám vytvořit kolekce silného typu.  
   
-2.  Rozbalte položku třídy tak, aby vlastnosti a pole se zobrazí v diagramu tříd.  
+2. Rozbalte položku třídy tak, aby vlastnosti a pole se zobrazí v diagramu tříd.  
   
-3.  Ve třídě, klikněte pravým tlačítkem na pole nebo vlastnost a zvolte **zobrazit jako přidružení kolekce**.  
+3. Ve třídě, klikněte pravým tlačítkem na pole nebo vlastnost a zvolte **zobrazit jako přidružení kolekce**.  
   
      Vlastnost nebo pole se zobrazí jako Asociační čára na shromážděný typ propojení.  
   

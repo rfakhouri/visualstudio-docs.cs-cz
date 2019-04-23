@@ -21,12 +21,12 @@ caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 85c5cef12ed92cbd37b303aa7bd1e23cbced76ae
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 4eadb8c9553873f43ad9435ad43fae00f57affcb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59653863"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050702"
 ---
 # <a name="devenv-command-line-switches"></a>Devenv – přepínače příkazového řádku
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -46,24 +46,24 @@ DEVENV umožňuje nastavit různé možnosti pro integrované vývojové prostř
   
  Syntaxe pravidla pro `devenv` přepínače se podobají těm pro další nástroje pro příkazový řádek DOSU. Následující syntaxe pravidla se vztahují na všechny `devenv` přepínače a jejich argumenty:  
   
--   Příkazy začínají `devenv`.  
+- Příkazy začínají `devenv`.  
   
--   Přepínače nerozlišují malá a velká písmena.  
+- Přepínače nerozlišují malá a velká písmena.  
   
--   Při zadávání řešení nebo projektu, první argument je název souboru řešení nebo soubor projektu, včetně cesta k souboru.  
+- Při zadávání řešení nebo projektu, první argument je název souboru řešení nebo soubor projektu, včetně cesta k souboru.  
   
--   Pokud první argument je soubor, který není řešení nebo projektu, tento soubor se otevře ve vhodném editoru v nové instanci integrovaného vývojového prostředí.  
+- Pokud první argument je soubor, který není řešení nebo projektu, tento soubor se otevře ve vhodném editoru v nové instanci integrovaného vývojového prostředí.  
   
--   Když zadáte název souboru projektu namísto názvu souboru řešení `devenv` příkaz vyhledá nadřazené složce souboru projektu, který má stejný název souboru řešení. Například příkaz `devenv /build myproject1.vbproj` vyhledá nadřazené složky pro soubor řešení s názvem "myproject1.sln".  
+- Když zadáte název souboru projektu namísto názvu souboru řešení `devenv` příkaz vyhledá nadřazené složce souboru projektu, který má stejný název souboru řešení. Například příkaz `devenv /build myproject1.vbproj` vyhledá nadřazené složky pro soubor řešení s názvem "myproject1.sln".  
   
     > [!NOTE]
     >  Jeden a pouze jeden soubor řešení, která odkazuje na tento projekt se musí nacházet v nadřazené složky. Pokud nadřazená složka neobsahuje žádný soubor řešení, která odkazuje na tento projekt, nebo pokud nadřazená složka obsahuje dva nebo více souborů řešení, které na ni odkazují, pak dočasné řešení se vytvoří soubor, který má název pro tento projekt a na něj odkazuje.  
   
--   Když cesty k souborům a názvy souborů obsahují mezery, je nutné je uzavřít do dvojitých uvozovek (""). Například "c:\project\\".  
+- Když cesty k souborům a názvy souborů obsahují mezery, je nutné je uzavřít do dvojitých uvozovek (""). Například "c:\project\\".  
   
--   Vložte jeden znak mezery mezi přepínače a argumenty na stejném řádku. Například příkaz **devenv/log výstup.txt** otevře rozhraní IDE a vypíše všechny výstup.txt zaznamenávat informace o dané relace.  
+- Vložte jeden znak mezery mezi přepínače a argumenty na stejném řádku. Například příkaz **devenv/log výstup.txt** otevře rozhraní IDE a vypíše všechny výstup.txt zaznamenávat informace o dané relace.  
   
--   Nelze použít porovnávání vzorů syntaxe v poznámce `devenv` příkazy.  
+- Nelze použít porovnávání vzorů syntaxe v poznámce `devenv` příkazy.  
   
 ## <a name="devenv-switches"></a>Přepínače nástroje devenv  
  Použijte následující přepínače příkazového řádku pro zobrazení integrovaného vývojového prostředí a popisuje úlohu provést.  

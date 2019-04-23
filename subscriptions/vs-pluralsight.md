@@ -7,12 +7,12 @@ ms.date: 01/25/2019
 ms.topic: conceptual
 description: Další informace o předplatné školení Pluralsight, který je součástí vybraných předplatných sady Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: 0aeedfbbfe2394bb28469023de654cf4a3a00b95
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: f0028d8dffb70e38ef818a8de7945b22f9664328
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59660213"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044274"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Pluralsight – školení v předplatných sady Visual Studio
 
@@ -103,9 +103,9 @@ O: Ano, jako předplatitel sady Visual Studio získáte přístup k expertní ka
 O:  Na konci platnosti vašeho bezplatného předplatného Pluralsight můžete koupit předplatné přímo od společnosti Pluralsight.  Obraťte se prosím na [Pluralsight](http://www.pluralsight.com) úplné podrobnosti.
 
 ## <a name="support-resources"></a>Informační zdroje podpory
--  [Centrum pro nápovědu Pluralsight](https://help.pluralsight.com/help) poskytuje pomoc s kurzy Pluralsight trvá nebo na webu Pluralsight.
--  Potřebujete pomoc se prodeje, předplatnými, účty a fakturací pro předplatná sady Visual Studio, obraťte se na Visual Studio [podpora předplatných](https://visualstudio.microsoft.com/subscriptions/support/).
--  Máte dotaz k Visual Studio IDE, DevOps služby Azure nebo jiných produktů Visual Studio nebo služeb?  Navštivte [Visual Studio – podpora](https://visualstudio.microsoft.com/support/).
+- [Centrum pro nápovědu Pluralsight](https://help.pluralsight.com/help) poskytuje pomoc s kurzy Pluralsight trvá nebo na webu Pluralsight.
+- Potřebujete pomoc se prodeje, předplatnými, účty a fakturací pro předplatná sady Visual Studio, obraťte se na Visual Studio [podpora předplatných](https://visualstudio.microsoft.com/subscriptions/support/).
+- Máte dotaz k Visual Studio IDE, DevOps služby Azure nebo jiných produktů Visual Studio nebo služeb?  Navštivte [Visual Studio – podpora](https://visualstudio.microsoft.com/support/).
 
 ## <a name="next-steps"></a>Další kroky
 Po vytvoření účtu, jste připravení začít školení.  Navštivte [ https://www.pluralsight.com ](http://www.pluralsight.com) a klepněte na **přihlášení** v pravém horním rohu stránky a spusťte nový kurz nebo vraťte se do kurzu již probíhá.

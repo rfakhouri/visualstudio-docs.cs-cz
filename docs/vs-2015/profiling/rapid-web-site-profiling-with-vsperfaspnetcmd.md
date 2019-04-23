@@ -12,14 +12,14 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1b269ef28218fd51e3a87f331c44096cd80773f7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: dbfe242434cdc953ec29fdd10a318c435abadc1a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54760294"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049826"
 ---
-# <a name="rapid-web-site-profiling-with-vsperfaspnetcmd"></a>Pohotová profilace webových stránek pomocí VSPerfASPNETCmd
+# <a name="rapid-web-site-profiling-with-vsperfaspnetcmd"></a>Pohotové profilování webových stránek pomocí VSPerfASPNETCmd
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 **VSPerfASPNETCmd** nástroj příkazového řádku vám umožní snadno profilu [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] webové aplikace. Ve srovnání s [VSPerfCmd](../profiling/vsperfcmd.md) nástroj příkazového řádku, možnosti jsou zmenšeny, musí být nastaveny žádné proměnné prostředí a restartování počítače se nevyžaduje. Pomocí **VSPerfASPNETCmd** upřednostňovanou metodou pro profilaci s samostatný profiler. Další informace najdete v tématu [jak: Instalovat samostatný Profiler](../profiling/how-to-install-the-stand-alone-profiler.md).  
@@ -82,7 +82,7 @@ ms.locfileid: "54760294"
   
  **Memory vsperfaspnetcmd**[**: Životnost**] **/tip**_websiteUrl_  
   
-##  <a name="UsingNoWait"></a> Pomocí možnosti/nowait  
+## <a name="UsingNoWait"></a> Pomocí možnosti/nowait  
  Ve výchozím nastavení, nevrátí příkazový řádek po **vsperfaspnetcmd** příkazu. Následující syntaxe možnost můžete použít k vynucení příkazového řádku k vrácení. Pak můžete provádět další operace v okně příkazového řádku. Chcete-li ukončit profilace, použijte **/Shutdown** možnost v samostatném **vsperfaspnetcmd** příkazu.  
   
  Spuštění profilování:  

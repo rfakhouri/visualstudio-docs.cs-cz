@@ -8,12 +8,12 @@ ms.assetid: 8fb1334b-d78c-405f-98b4-786e9f6b58d7
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4cf661407273cfe731867fc79bef0f13d19c1f95
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0b5151f739dfe464ae948eb4b4716f659b7a7913
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54781299"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044184"
 ---
 # <a name="appliesto-element-visual-studio-templates"></a>AppliesTo – element (šablony sady Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,19 +54,19 @@ Určuje volitelný výraz, který musí odpovídat jedné nebo více možnostem 
   
  Platná syntaxe výrazu je definována takto:  
   
--   Výraz schopnosti, například "(VisualC &#124; CSharp) + (MSTest &#124; NUnit)".  
+- Výraz schopnosti, například "(VisualC &#124; CSharp) + (MSTest &#124; NUnit)".  
   
--   "&#124;" Je operátor OR.  
+- "&#124;" Je operátor OR.  
   
--   "&" A "+" znaky jsou oba operátory.  
+- "&" A "+" znaky jsou oba operátory.  
   
--   Znak "!" je operátor NOT.  
+- Znak "!" je operátor NOT.  
   
--   Závorky určují pořadí vyhodnocování.  
+- Závorky určují pořadí vyhodnocování.  
   
--   Hodnota null nebo prázdný výraz jsou vyhodnoceny jako shoda.  
+- Hodnota null nebo prázdný výraz jsou vyhodnoceny jako shoda.  
   
--   Schopnosti projektu mohou používat libovolné znaky kromě těchto vyhrazených znaků: "'' :;,+-*/\\! ~&#124;& %$@^() ={}<> []? \t\b\n\r  
+- Schopnosti projektu mohou používat libovolné znaky kromě těchto vyhrazených znaků: "'' :;,+-*/\\! ~&#124;& %$@^() ={}<> []? \t\b\n\r  
   
 ## <a name="example"></a>Příklad  
  Následující příklad ukazuje tři různé šablony. `Template1` vztahuje na všechny typy projektů jazyka C# nebo jakýkoli jiný typ projektu, který podporuje `WindowsAppContainer` funkce. `Template2` platí pro všechny projekty jazyka C# jakéhokoli druhu. `Template3` platí pro projekty jazyka C#, které nejsou `WindowsAppContainer` projekty.  

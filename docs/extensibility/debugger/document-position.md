@@ -10,21 +10,21 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2f025ca2d73e98f8191969510f866cb7eb1d0eea
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: fc9d1e793405b2eb83fe4f72980a71e44d1acbd1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56695949"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051788"
 ---
 # <a name="document-position"></a>Pozice dokumentu
 V [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ladění, *pozice dokumentu*:
 
--   Poskytuje abstrakci pozice ve zdrojovém souboru, jak ví, rozhraní IDE. Většina jazyků v současné době pozice dokumentu můžete představit jako pozici ve zdrojovém souboru.
+- Poskytuje abstrakci pozice ve zdrojovém souboru, jak ví, rozhraní IDE. Většina jazyků v současné době pozice dokumentu můžete představit jako pozici ve zdrojovém souboru.
 
--   Popisuje umístění ve zdrojovém dokumentu do ladicího stroje.
+- Popisuje umístění ve zdrojovém dokumentu do ladicího stroje.
 
--   Je implementováno [IDebugDocumentPosition2](../../extensibility/debugger/reference/idebugdocumentposition2.md) rozhraní.
+- Je implementováno [IDebugDocumentPosition2](../../extensibility/debugger/reference/idebugdocumentposition2.md) rozhraní.
 
 ## <a name="see-also"></a>Viz také:
 - [Kontext kódu](../../extensibility/debugger/code-context.md)

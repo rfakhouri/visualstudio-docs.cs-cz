@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 01f229e3763777784fab193034eb79a643f5da13
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: 9b1799ac2e7124f79d10dcc8860a994e2f182ea7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416185"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051346"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>Postupy: Vytváření řešení jazyka specifického pro doménu
 Jazyka specifického pro doménu (DSL) se vytvoří s použitím specializovaná řešení sady Visual Studio.
@@ -54,9 +54,9 @@ Před zahájením tohoto postupu, tyto součásti nainstalujte:
 
 3. Zadejte příponu názvu souboru na **přípona souboru** stránky. By měl být jedinečný ve vašem počítači a ve všech počítačích, na kterém chcete nainstalovat DSL. Zobrazí se zpráva **žádné aplikace ani editory sady Visual Studio toto rozšíření využít**.
 
-   -   Pokud přípona názvu souboru jste použili v předchozí experimentální DSL, která plně nenainstalovali, můžete vymazat jejich odhlašování pomocí **resetovat experimentální instanci** nástroj, který se nachází v nabídce sady Visual Studio SDK.
+   - Pokud přípona názvu souboru jste použili v předchozí experimentální DSL, která plně nenainstalovali, můžete vymazat jejich odhlašování pomocí **resetovat experimentální instanci** nástroj, který se nachází v nabídce sady Visual Studio SDK.
 
-   -   Pokud jiné rozšíření sady Visual Studio, který používá tuto příponu souboru byl plně nainstalován v počítači, vezměte v úvahu odinstalujete ji. Na **nástroje** nabídky, klikněte na tlačítko **Správce rozšíření**.
+   - Pokud jiné rozšíření sady Visual Studio, který používá tuto příponu souboru byl plně nainstalován v počítači, vezměte v úvahu odinstalujete ji. Na **nástroje** nabídky, klikněte na tlačítko **Správce rozšíření**.
 
 4. Zkontrolujte a v případě potřeby upravit, pole na zbývajících stránkách průvodce. Pokud jste s nastavením spokojeni, klikněte na tlačítko **Dokončit**. Další informace o nastaveních, která najdete v tématu [stránky průvodce Návrhář DSL](#settings).
 
@@ -85,15 +85,15 @@ Zadejte novou příponu souboru.
 
  Pokud se zobrazí seznam nástrojů nebo balíčky, proveďte jednu z následujících akcí:
 
--   Zadejte jinou příponu souboru.
+- Zadejte jinou příponu souboru.
 
      \- nebo –
 
--   Resetujte experimentální instanci sady Visual Studio. Zruší registraci všech DSL, které jste dříve vytvořili. Na **Start** nabídky, klikněte na tlačítko **všechny programy**, **Microsoft Visual Studio 2010 SDK**, **nástroje**a potom **resetovat Microsoft Visual Studio 2010 experimentální instanci**. Můžete znovu sestavit jiných DSL, který chcete znovu použít.
+- Resetujte experimentální instanci sady Visual Studio. Zruší registraci všech DSL, které jste dříve vytvořili. Na **Start** nabídky, klikněte na tlačítko **všechny programy**, **Microsoft Visual Studio 2010 SDK**, **nástroje**a potom **resetovat Microsoft Visual Studio 2010 experimentální instanci**. Můžete znovu sestavit jiných DSL, který chcete znovu použít.
 
      \- nebo –
 
--   Pokud rozšíření aplikace Visual Studio, který používá tuto příponu souboru byl plně nainstalován v počítači, odinstalujte ji. Na **nástroje** nabídky, klikněte na tlačítko **Správce rozšíření**.
+- Pokud rozšíření aplikace Visual Studio, který používá tuto příponu souboru byl plně nainstalován v počítači, odinstalujte ji. Na **nástroje** nabídky, klikněte na tlačítko **Správce rozšíření**.
 
 ### <a name="product-settings-page"></a>Stránka nastavení produktu
  **Jaký je název produktu, který nový jazyk specifický pro doménu patří?**

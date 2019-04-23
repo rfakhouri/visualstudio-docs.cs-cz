@@ -15,12 +15,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: e7447e45108d8755195ad3c7484d55415c520846
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 4ec8c14da5c691f6f9740c6df86cb38aeb9fac5e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54754859"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60057638"
 ---
 # <a name="ca2236-call-base-class-methods-on-iserializable-types"></a>CA2236: Volejte metody základní třídy u typů ISerializable
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,9 +35,9 @@ ms.locfileid: "54754859"
 ## <a name="cause"></a>Příčina
  Typ je odvozen od typu, který implementuje <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> platí rozhraní a jeden z následujících podmínek:
 
--   Tento typ implementuje konstruktor serializace, to znamená, konstruktor s <xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName>, <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName> parametru signatury, ale nevolá Serializační konstruktor základního typu.
+- Tento typ implementuje konstruktor serializace, to znamená, konstruktor s <xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName>, <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName> parametru signatury, ale nevolá Serializační konstruktor základního typu.
 
--   Tento typ implementuje <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A?displayProperty=fullName> metoda ale nevolá <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> metodu základního typu.
+- Tento typ implementuje <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A?displayProperty=fullName> metoda ale nevolá <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> metodu základního typu.
 
 ## <a name="rule-description"></a>Popis pravidla
  Probíhá vlastní serializace, typ implementuje <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> metoda k serializaci polí a Serializační konstruktor deserializovat pole. Pokud typ je odvozen z typu, který implementuje <xref:System.Runtime.Serialization.ISerializable> základní typ rozhraní <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> konstruktoru serializace a metoda by měla být volána k serializaci nebo rušení-serialize pole ze základního typu. Typ, jinak nebude serializovat a deserializovaný správně. Všimněte si, že pokud odvozený typ nepřidá všechna nová pole, typ není nutné provádět <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> metoda ani Serializační konstruktor nebo volejte základní typ ekvivalenty.

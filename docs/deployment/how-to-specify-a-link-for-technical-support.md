@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b0acf30ee16669901da89a23587729599c7b4039
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 7a050ae24ddb5b796acf101e0432a5b64cd28031
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56620080"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051671"
 ---
 # <a name="how-to-specify-a-link-for-technical-support"></a>Postupy: Určení obsahu pro technickou podporu
 Při publikování [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace, **adresu URL podpory** vlastnost identifikuje webové stránky nebo sdílené složky, kde mohou uživatelé získat informace o aplikaci. Tato vlastnost je volitelná. Pokud je zadán, adresa URL se zobrazí v vstupní aplikace **přidat nebo odebrat programy** dialogové okno.
@@ -34,15 +34,15 @@ Při publikování [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.
 
 ### <a name="to-specify-a-support-url"></a>Chcete-li určit adresu URL podpory
 
-1.  S projekt vybraný v **Průzkumníka řešení**na **projektu** nabídky, klikněte na tlačítko **vlastnosti**.
+1. S projekt vybraný v **Průzkumníka řešení**na **projektu** nabídky, klikněte na tlačítko **vlastnosti**.
 
-2.  Klikněte na tlačítko **publikovat** kartu.
+2. Klikněte na tlačítko **publikovat** kartu.
 
-3.  Klikněte na tlačítko **možnosti** tlačítko Otevřít **možnosti publikování** dialogové okno.
+3. Klikněte na tlačítko **možnosti** tlačítko Otevřít **možnosti publikování** dialogové okno.
 
-4.  Klikněte na tlačítko **popis**.
+4. Klikněte na tlačítko **popis**.
 
-5.  V **adresu URL podpory** pole, zadejte plně kvalifikovanou cestu k webové stránky, webové stránky nebo UNC sdílené složky.
+5. V **adresu URL podpory** pole, zadejte plně kvalifikovanou cestu k webové stránky, webové stránky nebo UNC sdílené složky.
 
 ## <a name="see-also"></a>Viz také:
 - [Publikování aplikací ClickOnce](../deployment/publishing-clickonce-applications.md)

@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ee24cd3dac57f3daca340eabacdbf05f20d35156
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c65b2be057836811c8b91ef5ee0d1f1743b24ea9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55923041"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045411"
 ---
 # <a name="how-to-create-and-modify-mip-levels"></a>Postupy: Vytvoření a úprava úrovní MIP
 Tento dokument popisuje způsob použití **Editor obrázků** k tvorbě a úpravám *úrovní MIP* pro textury místa úrovně of-Detail (lod Level).
@@ -23,9 +23,9 @@ Tento dokument popisuje způsob použití **Editor obrázků** k tvorbě a úpra
 
 #### <a name="to-generate-mip-levels"></a>Generování úrovní MIP
 
-1.  Začněte základní texturou, jak je popsáno v [jak: Vytvoření základní textury](../designers/how-to-create-a-basic-texture.md). Pro dosažení nejlepších výsledků určete texturu, která má šířku a výšku, které jsou násobky 2, například 256, 512, 1024, a tak dále.
+1. Začněte základní texturou, jak je popsáno v [jak: Vytvoření základní textury](../designers/how-to-create-a-basic-texture.md). Pro dosažení nejlepších výsledků určete texturu, která má šířku a výšku, které jsou násobky 2, například 256, 512, 1024, a tak dále.
 
-2.  Generování úrovní MIP. Na **režim editoru obrázků** nástrojů, zvolte **Upřesnit** > **nástroje** > **generovat Mips**.
+2. Generování úrovní MIP. Na **režim editoru obrázků** nástrojů, zvolte **Upřesnit** > **nástroje** > **generovat Mips**.
 
      Všimněte si, že **přejít na další úroveň Mip** a **přejít na předchozí úroveň Mip** tlačítek se zobrazí na **režim editoru obrázků** nástrojů. Pokud **vlastnosti** se zobrazí okno, Všimněte si také, že vlastnosti jen pro čtení **úroveň Mip** a **počet úrovní Mip** teď budou zobrazovat v dialogovém okně Vlastnosti obrázku.
 
@@ -34,9 +34,9 @@ Tento dokument popisuje způsob použití **Editor obrázků** k tvorbě a úpra
 
 #### <a name="to-modify-an-individual-mip-level"></a>Úprava jednotlivých úrovní MIP
 
-1.  Vyberte úroveň MIP, kterou chcete upravit. Na **režim editoru obrázků** nástrojů, použijte **přejít na další úroveň MIP** a **přejít na předchozí úroveň MIP** tlačítka mezi úrovněmi MIP pohybovat.
+1. Vyberte úroveň MIP, kterou chcete upravit. Na **režim editoru obrázků** nástrojů, použijte **přejít na další úroveň MIP** a **přejít na předchozí úroveň MIP** tlačítka mezi úrovněmi MIP pohybovat.
 
-2.  Po výběru úrovně MIP, kterou chcete upravit, můžete použít nástroje pro kreslení k její změně bez změny obsahu jiných úrovních MIP. Kreslicí nástroje jsou k dispozici na **Editor obrázků** nástrojů. Po vybrání nástroje můžete změnit jeho vlastnosti v **vlastnosti** okna. Informace o nástroje pro kreslení a jejich vlastnostech naleznete v tématu [Editor obrázků](../designers/image-editor.md).
+2. Po výběru úrovně MIP, kterou chcete upravit, můžete použít nástroje pro kreslení k její změně bez změny obsahu jiných úrovních MIP. Kreslicí nástroje jsou k dispozici na **Editor obrázků** nástrojů. Po vybrání nástroje můžete změnit jeho vlastnosti v **vlastnosti** okna. Informace o nástroje pro kreslení a jejich vlastnostech naleznete v tématu [Editor obrázků](../designers/image-editor.md).
 
 > [!NOTE]
 >  Pokud není potřeba upravovat obsah jednotlivých úrovní MIP, což lze provést k dosažení určitých efektů, doporučujeme generovat mipmapy ze zdrojových textur v okamžiku sestavení. To pomáhá zajistit, že úrovně MIP zůstanou synchronizovány se zdrojovou texturou vzhledem k tomu, že změny na úrovni MIP nejsou automaticky propagovány na další úrovně. Další informace o způsobu generování Mipmap v okamžiku sestavení naleznete v tématu [jak: Export textury obsahující mipmapy](../designers/how-to-export-a-texture-that-contains-mipmaps.md).

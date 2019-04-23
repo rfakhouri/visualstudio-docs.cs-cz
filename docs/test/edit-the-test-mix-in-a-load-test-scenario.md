@@ -11,12 +11,12 @@ ms.assetid: 303e1d70-5d98-424a-b51e-e0898e16d3f8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1aa698c2c152b33d111ffe893ec22fbf9eec4316
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: e1c58cae9983cc14878ba548177bf9ba6ad44255
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59652173"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044654"
 ---
 # <a name="edit-the-test-mix-to-specify-which-web-performance-unit-and-coded-ui-tests-to-include-in-a-load-test-scenario"></a>Úpravy poměru testů určit, které webového výkonu, jednotek a programové testy uživatelského rozhraní mají být zahrnuty do scénáře zátěžového testu
 
@@ -41,37 +41,37 @@ Můžete přidat další testy webového výkonu a jednotku s různými text sc�
 
 ### <a name="to-add-more-tests-to-an-existing-scenario"></a>Chcete-li přidat další testy do existujícího scénáře
 
-1.  Otevřete zátěžový test.
+1. Otevřete zátěžový test.
 
-2.  V **editoru zátěžových testů**, klikněte pravým tlačítkem na existující scénář a pak zvolte **přidat testy**.
+2. V **editoru zátěžových testů**, klikněte pravým tlačítkem na existující scénář a pak zvolte **přidat testy**.
 
      **Přidat testy** se zobrazí dialogové okno. Webového výkonu, jednotek a programové testy uživatelského rozhraní v rámci vašeho řešení, které ještě nejsou ve vašem scénáři je možné přidat do scénáře.
 
-3.  V **dostupné testy** podokně, vyberte webového výkonu, jednotek a programové testy uživatelského rozhraní, které chcete přidat. Klikněte na šipku doprava, chcete-li přidat testy **vybrané testy** podokně.
+3. V **dostupné testy** podokně, vyberte webového výkonu, jednotek a programové testy uživatelského rozhraní, které chcete přidat. Klikněte na šipku doprava, chcete-li přidat testy **vybrané testy** podokně.
 
-4.  Po dokončení přidávání testů, zvolte **OK**.
+4. Po dokončení přidávání testů, zvolte **OK**.
 
      Testy jsou přidány do kombinace testů. Nová distribuce se automaticky přiřadí testy v kombinaci testů.
 
-5.  (Volitelné) Upravte poměr ovládacího prvku k určení distribuci testů. Další informace najdete v tématu [o ovládacím prvku kombinace](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md).
+5. (Volitelné) Upravte poměr ovládacího prvku k určení distribuci testů. Další informace najdete v tématu [o ovládacím prvku kombinace](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md).
 
-##  <a name="remove-tests-from-a-scenario"></a>Odebrat testy ze scénáře
+## <a name="remove-tests-from-a-scenario"></a>Odebrat testy ze scénáře
  ![Odebrání testu z existujícího testu zatížení](../test/media/ltest_removetest.png)
 
 ### <a name="to-remove-tests-from-a-scenario"></a>Chcete-li odebrat testy ze scénáře
 
-1.  Otevřete zátěžový test.
+1. Otevřete zátěžový test.
 
-2.  V **editoru zátěžového testu**, v zátěžového testování stromu, klikněte pravým tlačítkem na scénář, ze kterého chcete odebrat test a vyberte **upravit kombinaci testů**. **Upravit kombinaci testů** se zobrazí dialogové okno.
+2. V **editoru zátěžového testu**, v zátěžového testování stromu, klikněte pravým tlačítkem na scénář, ze kterého chcete odebrat test a vyberte **upravit kombinaci testů**. **Upravit kombinaci testů** se zobrazí dialogové okno.
 
-3.  Vyberte v mřížce webového výkonu, jednotek nebo programový test uživatelského rozhraní a klikněte na tlačítko **odebrat**.
+3. Vyberte v mřížce webového výkonu, jednotek nebo programový test uživatelského rozhraní a klikněte na tlačítko **odebrat**.
 
     > [!NOTE]
     > Po odebrání test upravte kombinaci testů do upřednostňovaných distribučních.
 
-4.  Po dokončení odebírání testů, zvolte **OK**.
+4. Po dokončení odebírání testů, zvolte **OK**.
 
-##  <a name="EditingTestMixAboutMixControl"></a> O ovládacím prvku kombinace
+## <a name="EditingTestMixAboutMixControl"></a> O ovládacím prvku kombinace
  Ovládací prvek kombinace umožňuje upravit procento zatížení, která je distribuovaná mezi testy, typu prohlížeče nebo typy sítí ve scénáři testu zatížení. Procentní hodnoty se upravit posunutím jezdce. Úpravy poměru testů určuje pravděpodobnost, že virtuální uživatel spustí konkrétní test ve scénáři testu zatížení.
 
  Při přesunutí posuvníku procentuální hodnoty všechny dostupné položky změnit. Pokud máte více než dvě položky, velikost, přidat nebo odebrat rovnoměrně distribuovaných mezi ostatní položky. Je možné toto chování přepsat. Pokud vyberete zaškrtávací políčko ve sloupci zámek pro konkrétní položku, uzamknout specifikované procentuální hodnotou pro danou položku. Pak při přesunutí posuvníku, velikost, přidat nebo odebrat platí jenom pro všechny zbývající položky odemknout.

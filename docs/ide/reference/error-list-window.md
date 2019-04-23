@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5fe70a8c7daeac86ea3a354f81d8462ca7f4e451
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 603faab80e185e7d22cba1ee544502d790afcdc0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55933974"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051009"
 ---
 # <a name="error-list-window"></a>Okno Seznam chyb
 
@@ -29,17 +29,17 @@ ms.locfileid: "55933974"
 
 **Seznam chyb** okno umožňuje provádět následující úkoly:
 
--   Zobrazte chyby, varování a zprávy vytvořené při psaní kódu.
+- Zobrazte chyby, varování a zprávy vytvořené při psaní kódu.
 
--   Najděte chyby syntaxe zaznamenané technologií IntelliSense.
+- Najděte chyby syntaxe zaznamenané technologií IntelliSense.
 
--   Vyhledejte chyby v nasazení, některé statické analýzy chyby a chyby zjištěné při použití zásad šablony organizace.
+- Vyhledejte chyby v nasazení, některé statické analýzy chyby a chyby zjištěné při použití zásad šablony organizace.
 
--   Dvakrát klikněte na libovolný záznam chybové zprávy pro otevření souboru, kde dojde k problému a přesunout do umístění chyby.
+- Dvakrát klikněte na libovolný záznam chybové zprávy pro otevření souboru, kde dojde k problému a přesunout do umístění chyby.
 
--   Filtrovat položky, které se zobrazí a které sloupce informací se zobrazí pro každou položku.
+- Filtrovat položky, které se zobrazí a které sloupce informací se zobrazí pro každou položku.
 
--   Hledejte konkrétní termíny a nastavte obor hledání pouze na aktuální projekt nebo dokument.
+- Hledejte konkrétní termíny a nastavte obor hledání pouze na aktuální projekt nebo dokument.
 
 Chcete-li zobrazit **seznam chyb**, zvolte **zobrazení** > **seznam chyb**, nebo stiskněte klávesu **Ctrl** + **\\** + **E**.
 
@@ -53,14 +53,14 @@ Existují dva typy filtru v dva rozevírací seznamy, jeden na pravé straně pa
 
 Můžete omezit rozsah hledání můžete analyzovat a zpracovat skupiny chyb. Například můžete chtít zaměřit na základní chyby, které brání kompilaci projektu. Možnosti vytváření oboru zahrnují:
 
-1.  **Otevřít dokumenty**: Zobrazit chyby, varování a zprávy pro otevřené dokumenty.
+1. **Otevřít dokumenty**: Zobrazit chyby, varování a zprávy pro otevřené dokumenty.
 
-2.  **Aktuální projekt**: Zobrazit chyby, varování a zprávy z aktuálně vybraného dokumentu v projektu **Editor** nebo vybraný projekt v **Průzkumníka řešení**.
+2. **Aktuální projekt**: Zobrazit chyby, varování a zprávy z aktuálně vybraného dokumentu v projektu **Editor** nebo vybraný projekt v **Průzkumníka řešení**.
 
     > [!NOTE]
     > Filtrovaný seznam chyb, upozornění a zpráv se změní, pokud je projekt aktuálně vybraného dokumentu liší od projektu vybraného v **Průzkumníka řešení**.
 
-3.  **Aktuální dokument**: Zobrazí chyby, varování a zprávy pro aktuálně vybraného dokumentu v **Editor** nebo **Průzkumníka řešení**.
+3. **Aktuální dokument**: Zobrazí chyby, varování a zprávy pro aktuálně vybraného dokumentu v **Editor** nebo **Průzkumníka řešení**.
 
 Pokud na výsledek hledání je aktuálně použit filtr, zobrazí se název filtru v **seznam chyb** záhlaví okna. **Chyby**, **upozornění**, a **zprávy** tlačítka pak zobrazí počet filtrovaných položek zobrazených společně s celkový počtem položek. Například tlačítka zobrazit "x z y chyb". Pokud není použit žádný filtr, záhlaví říká pouze "Seznam chyb".
 

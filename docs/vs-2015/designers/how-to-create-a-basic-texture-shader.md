@@ -9,12 +9,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 66a25c56e50db0caecf4aa7a314be529e2caba12
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 9dda948921c702367859afe32ad75a7998460587
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54793431"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048564"
 ---
 # <a name="how-to-create-a-basic-texture-shader"></a>Postupy: Vytvoření shaderu základní textury
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,15 +23,15 @@ Tento dokument popisuje způsob použití návrháře shaderu a orientovaného g
   
  Tento dokument vysvětluje tyto činnosti:  
   
--   Odebrání uzlů z grafu shaderu  
+- Odebrání uzlů z grafu shaderu  
   
--   Přidání uzlů do grafu  
+- Přidání uzlů do grafu  
   
--   Nastavení parametrů shaderu  
+- Nastavení parametrů shaderu  
   
--   Nastavení viditelnost parametru  
+- Nastavení viditelnost parametru  
   
--   Spojující uzly  
+- Spojující uzly  
   
 ## <a name="creating-a-basic-texture-shader"></a>Vytvoření shaderu základní textury  
  Basic, jeden textury shaderu můžete implementovat pomocí zápisu hodnoty barev a alfa vzorek textury přímo do konečné výstupní barva.  

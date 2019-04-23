@@ -1,5 +1,5 @@
 ---
-title: 'Průvodce: Generování kódu pomocí textových šablon | Dokumentace Microsoftu'
+title: 'Návod: Generování kódu pomocí textových šablon | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -12,14 +12,14 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6c59d6ba8b6e807b4380a3f7abad3869e5108448
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8c374dc5cc616f58cb81a1191b095971561df9b1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54782482"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052880"
 ---
-# <a name="walkthrough-generating-code-by-using-text-templates"></a>Průvodce: Generování kódu pomocí textových šablon
+# <a name="walkthrough-generating-code-by-using-text-templates"></a>Návod: Generování kódu pomocí textových šablon
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Generování kódu umožňuje vytvářet programový kód, který je silně typované a ještě můžete snadno změnit při změně modelu zdroje. Tento rozdíl oproti alternativní postup psaní naprosto obecné program, který přijímá konfigurační soubor, který je flexibilnější, ale výsledky v kódu, který není ani tak snadno přečíst a změnit, ani tyto dobrého výkonu. Tento návod ukazuje tuto výhodu.  
@@ -86,9 +86,9 @@ foreach (XmlNode artist in catalog.SelectNodes("artist"))
   
 ##### <a name="to-create-the-project"></a>Vytvoření projektu  
   
-1.  Na **souboru** klikněte na nabídku **nový** a potom klikněte na tlačítko **projektu**.  
+1. Na **souboru** klikněte na nabídku **nový** a potom klikněte na tlačítko **projektu**.  
   
-2.  Klikněte na tlačítko **Visual C#** uzel a potom v **šablony** podokně klikněte na tlačítko **konzolové aplikace.**  
+2. Klikněte na tlačítko **Visual C#** uzel a potom v **šablony** podokně klikněte na tlačítko **konzolové aplikace.**  
   
 ### <a name="add-a-prototype-xml-file-to-the-project"></a>Přidání souboru XML prototyp do projektu  
  Účelem tohoto souboru je poskytnout ukázky typy uzlů XML, které chcete, aby vaše aplikace bude moct číst. To může být soubor, který se použije pro testování vašich aplikací. Šablona vytvoří třída jazyka C# pro každý typ uzlu v tomto souboru.  

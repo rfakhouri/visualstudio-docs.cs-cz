@@ -17,12 +17,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8962dd95aa46ae75a2d214738e7713ae9da42534
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a28076b8c394818c248a5a18c7bc91d484f2c28a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54775199"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045795"
 ---
 # <a name="remove-parameters-refactoring-c"></a>Refaktoring pro odebrání parametrů (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "54775199"
   
 ### <a name="to-remove-parameters"></a>Chcete-li odebrat parametry  
   
-1.  Vytvořte konzolovou aplikaci s názvem `RemoveParameters`a potom nahraďte `Program` následujícím kódem.  
+1. Vytvořte konzolovou aplikaci s názvem `RemoveParameters`a potom nahraďte `Program` následujícím kódem.  
   
     ```csharp  
     class A  
@@ -55,19 +55,19 @@ ms.locfileid: "54775199"
     }  
     ```  
   
-2.  Umístěte kurzor na metodu `A`, buď v deklaraci metody nebo volání metody.  
+2. Umístěte kurzor na metodu `A`, buď v deklaraci metody nebo volání metody.  
   
-3.  Z **Refaktorovat** nabídce vyberte možnost **odebrání parametrů** zobrazíte **odebrání parametrů** dialogové okno.  
+3. Z **Refaktorovat** nabídce vyberte možnost **odebrání parametrů** zobrazíte **odebrání parametrů** dialogové okno.  
   
      Můžete také zadat klávesovou zkratku CTRL + R, V zobrazení **odebrání parametrů** dialogové okno.  
   
      Můžete také kliknout pravým tlačítkem kurzor, přejděte na **Refaktorovat**a potom klikněte na tlačítko **odebrání parametrů** zobrazíte **odebrání parametrů** dialogové okno.  
   
-4.  Použití **parametry** pole, umístěte kurzor na `int i`a potom klikněte na tlačítko **odebrat**.  
+4. Použití **parametry** pole, umístěte kurzor na `int i`a potom klikněte na tlačítko **odebrat**.  
   
-5.  Klikněte na **OK**.  
+5. Klikněte na **OK**.  
   
-6.  V **náhled změn – odebrání parametrů** dialogové okno, klikněte na tlačítko **použít**.  
+6. V **náhled změn – odebrání parametrů** dialogové okno, klikněte na tlačítko **použít**.  
   
 ## <a name="remarks"></a>Poznámky  
  Odebrat parametry z deklarace metody nebo volání metody. Umístěte kurzor do pole Název metody prohlášení nebo delegáta a odebrání Parametry vyvolání.  

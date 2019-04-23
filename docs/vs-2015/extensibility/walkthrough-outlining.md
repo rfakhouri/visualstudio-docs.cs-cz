@@ -1,5 +1,5 @@
 ---
-title: 'Průvodce: Sbalování | Dokumentace Microsoftu'
+title: 'Návod: Sbalování | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -10,14 +10,14 @@ ms.assetid: d75a44aa-265a-44d4-9c28-457f59c4ff9f
 caps.latest.revision: 31
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 3a5d54bdd3d2b7fad348df195560ad5b3cc461f3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7c1dd3d28b9978b52c95b5ff905d57720ed10f5d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54798362"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054701"
 ---
-# <a name="walkthrough-outlining"></a>Průvodce: Sbalování
+# <a name="walkthrough-outlining"></a>Návod: Sbalování
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Budete moct implementovat založený na jazyce funkce, jako je například sbalování tak, že definujete druhy textu oblastí, které chcete rozbalit nebo sbalit. Můžete definovat oblastí v rámci služby jazyka, nebo můžete definovat vlastní název souboru příponu a obsah zadejte a použít definici oblasti s pouze tímto typem nebo oblasti definice můžete použít k existujícímu typu obsahu (jako je například "text"). Tento návod ukazuje, jak definovat a zobrazení sbalování oblastí.  
@@ -29,11 +29,11 @@ Budete moct implementovat založený na jazyce funkce, jako je například sbalo
   
 #### <a name="to-create-a-mef-project"></a>Chcete-li vytvořit projekt rozhraní MEF  
   
-1.  Vytvoření projektu VSIX. Pojmenujte řešení `OutlineRegionTest`.  
+1. Vytvoření projektu VSIX. Pojmenujte řešení `OutlineRegionTest`.  
   
-2.  Přidejte do projektu šablony položky editoru třídění. Další informace najdete v tématu [vytváření rozšíření pomocí šablony položky editoru](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
+2. Přidejte do projektu šablony položky editoru třídění. Další informace najdete v tématu [vytváření rozšíření pomocí šablony položky editoru](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
   
-3.  Odstraníte existující soubory tříd.  
+3. Odstraníte existující soubory tříd.  
   
 ## <a name="implementing-an-outlining-tagger"></a>Implementace sbalování Označovatel  
  Sbalování oblastí jsou označené nástrojem druh značky (<xref:Microsoft.VisualStudio.Text.Tagging.OutliningRegionTag>). Tato značka poskytuje standardní sbalování chování. Ohraničené oblasti můžete rozbalit nebo sbalit. Ohraničené oblasti je označená jako sbaleného znaménko PLUS nebo mínus, pokud se rozbalí a rozbalená oblast je potřeba svislou čárou.  
@@ -42,39 +42,39 @@ Budete moct implementovat založený na jazyce funkce, jako je například sbalo
   
 #### <a name="to-implement-an-outlining-tagger"></a>K implementaci sbalování označovatel  
   
-1.  Přidejte soubor třídy a pojmenujte ho `OutliningTagger`.  
+1. Přidejte soubor třídy a pojmenujte ho `OutliningTagger`.  
   
-2.  Importujte následující obory názvů.  
+2. Importujte následující obory názvů.  
   
      [!code-csharp[VSSDKOutlineRegionTest#1](../snippets/csharp/VS_Snippets_VSSDK/vssdkoutlineregiontest/cs/outliningtagger.cs#1)]
      [!code-vb[VSSDKOutlineRegionTest#1](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkoutlineregiontest/vb/outliningtagger.vb#1)]  
   
-3.  Vytvořte třídu s názvem `OutliningTagger`, a jeho implementaci <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601>:  
+3. Vytvořte třídu s názvem `OutliningTagger`, a jeho implementaci <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601>:  
   
      [!code-csharp[VSSDKOutlineRegionTest#2](../snippets/csharp/VS_Snippets_VSSDK/vssdkoutlineregiontest/cs/outliningtagger.cs#2)]
      [!code-vb[VSSDKOutlineRegionTest#2](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkoutlineregiontest/vb/outliningtagger.vb#2)]  
   
-4.  Přidáte některá pole ke sledování textové vyrovnávací paměti a snímek a accumulate sady řádků, které by měly být označeny jako sbalování oblastí. Tento kód obsahuje seznam objektů, které oblasti (chcete zadat později), které představují sbalování oblastí.  
+4. Přidáte některá pole ke sledování textové vyrovnávací paměti a snímek a accumulate sady řádků, které by měly být označeny jako sbalování oblastí. Tento kód obsahuje seznam objektů, které oblasti (chcete zadat později), které představují sbalování oblastí.  
   
      [!code-csharp[VSSDKOutlineRegionTest#3](../snippets/csharp/VS_Snippets_VSSDK/vssdkoutlineregiontest/cs/outliningtagger.cs#3)]
      [!code-vb[VSSDKOutlineRegionTest#3](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkoutlineregiontest/vb/outliningtagger.vb#3)]  
   
-5.  Přidat označovatel konstruktor, který inicializuje pole, analyzuje vyrovnávací paměti a přidá obslužnou rutinu události pro <xref:Microsoft.VisualStudio.Text.ITextBuffer.Changed> událostí.  
+5. Přidat označovatel konstruktor, který inicializuje pole, analyzuje vyrovnávací paměti a přidá obslužnou rutinu události pro <xref:Microsoft.VisualStudio.Text.ITextBuffer.Changed> událostí.  
   
      [!code-csharp[VSSDKOutlineRegionTest#4](../snippets/csharp/VS_Snippets_VSSDK/vssdkoutlineregiontest/cs/outliningtagger.cs#4)]
      [!code-vb[VSSDKOutlineRegionTest#4](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkoutlineregiontest/vb/outliningtagger.vb#4)]  
   
-6.  Implementace <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601.GetTags%2A> zahrnuje metodu, která vytvoří instanci značky. Tento příklad předpokládá, že rozsahy v <xref:Microsoft.VisualStudio.Text.NormalizedSpanCollection> předaný metodě jsou souvislé, i když to nemusí být vždy případu. Tato metoda vytvoří nová značka span pro každou sbalování oblastí.  
+6. Implementace <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601.GetTags%2A> zahrnuje metodu, která vytvoří instanci značky. Tento příklad předpokládá, že rozsahy v <xref:Microsoft.VisualStudio.Text.NormalizedSpanCollection> předaný metodě jsou souvislé, i když to nemusí být vždy případu. Tato metoda vytvoří nová značka span pro každou sbalování oblastí.  
   
      [!code-csharp[VSSDKOutlineRegionTest#5](../snippets/csharp/VS_Snippets_VSSDK/vssdkoutlineregiontest/cs/outliningtagger.cs#5)]
      [!code-vb[VSSDKOutlineRegionTest#5](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkoutlineregiontest/vb/outliningtagger.vb#5)]  
   
-7.  Deklarace `TagsChanged` obslužné rutiny události.  
+7. Deklarace `TagsChanged` obslužné rutiny události.  
   
      [!code-csharp[VSSDKOutlineRegionTest#6](../snippets/csharp/VS_Snippets_VSSDK/vssdkoutlineregiontest/cs/outliningtagger.cs#6)]
      [!code-vb[VSSDKOutlineRegionTest#6](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkoutlineregiontest/vb/outliningtagger.vb#6)]  
   
-8.  Přidat `BufferChanged` obslužná rutina události, která reaguje na <xref:Microsoft.VisualStudio.Text.ITextBuffer.Changed> události analýzou textové vyrovnávací paměti.  
+8. Přidat `BufferChanged` obslužná rutina události, která reaguje na <xref:Microsoft.VisualStudio.Text.ITextBuffer.Changed> události analýzou textové vyrovnávací paměti.  
   
      [!code-csharp[VSSDKOutlineRegionTest#7](../snippets/csharp/VS_Snippets_VSSDK/vssdkoutlineregiontest/cs/outliningtagger.cs#7)]
      [!code-vb[VSSDKOutlineRegionTest#7](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkoutlineregiontest/vb/outliningtagger.vb#7)]  
@@ -104,12 +104,12 @@ Budete moct implementovat založený na jazyce funkce, jako je například sbalo
   
 #### <a name="to-implement-a-tagger-provider"></a>Pro implementaci zprostředkovatele označovatel  
   
-1.  Vytvořte třídu s názvem `OutliningTaggerProvider` , který implementuje <xref:Microsoft.VisualStudio.Text.Tagging.ITaggerProvider>a exportovat ho pomocí atributů ContentType a typů.  
+1. Vytvořte třídu s názvem `OutliningTaggerProvider` , který implementuje <xref:Microsoft.VisualStudio.Text.Tagging.ITaggerProvider>a exportovat ho pomocí atributů ContentType a typů.  
   
      [!code-csharp[VSSDKOutlineRegionTest#12](../snippets/csharp/VS_Snippets_VSSDK/vssdkoutlineregiontest/cs/outliningtagger.cs#12)]
      [!code-vb[VSSDKOutlineRegionTest#12](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkoutlineregiontest/vb/outliningtagger.vb#12)]  
   
-2.  Implementace <xref:Microsoft.VisualStudio.Text.Tagging.ITaggerProvider.CreateTagger%2A> metodu tak, že přidáte `OutliningTagger` vlastností vyrovnávací paměti.  
+2. Implementace <xref:Microsoft.VisualStudio.Text.Tagging.ITaggerProvider.CreateTagger%2A> metodu tak, že přidáte `OutliningTagger` vlastností vyrovnávací paměti.  
   
      [!code-csharp[VSSDKOutlineRegionTest#13](../snippets/csharp/VS_Snippets_VSSDK/vssdkoutlineregiontest/cs/outliningtagger.cs#13)]
      [!code-vb[VSSDKOutlineRegionTest#13](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkoutlineregiontest/vb/outliningtagger.vb#13)]  
@@ -119,11 +119,11 @@ Budete moct implementovat založený na jazyce funkce, jako je například sbalo
   
 #### <a name="to-build-and-test-the-outlineregiontest-solution"></a>Pro vytváření a testování OutlineRegionTest řešení  
   
-1.  Sestavte řešení.  
+1. Sestavte řešení.  
   
-2.  Při spuštění tohoto projektu v ladicím programu, je vytvořena instance druhou instanci aplikace Visual Studio.  
+2. Při spuštění tohoto projektu v ladicím programu, je vytvořena instance druhou instanci aplikace Visual Studio.  
   
-3.  Vytvořte textový soubor. Zadejte nějaký text, který obsahuje levou složenou závorku a pravou složenou závorku.  
+3. Vytvořte textový soubor. Zadejte nějaký text, který obsahuje levou složenou závorku a pravou složenou závorku.  
   
     ```  
     [  
@@ -131,7 +131,7 @@ Budete moct implementovat založený na jazyce funkce, jako je například sbalo
     ]  
     ```  
   
-4.  Měla by existovat sbalování oblastí, obsahující oba složené závorky. Byste měli být schopni klepněte na znaménko MINUS nalevo od levou složenou závorku sbalte sbalování oblastí. Když sbalen oblast, na symbol tří teček (...) by se měla zobrazit nalevo od sbaleného regionu a automaticky otevíraného okna obsahující text **najetí na text** by se měla zobrazit při přesunutí ukazatele myši na tři tečky.  
+4. Měla by existovat sbalování oblastí, obsahující oba složené závorky. Byste měli být schopni klepněte na znaménko MINUS nalevo od levou složenou závorku sbalte sbalování oblastí. Když sbalen oblast, na symbol tří teček (...) by se měla zobrazit nalevo od sbaleného regionu a automaticky otevíraného okna obsahující text **najetí na text** by se měla zobrazit při přesunutí ukazatele myši na tři tečky.  
   
 ## <a name="see-also"></a>Viz také  
  [Návod: Propojení typu obsahu příponu názvu souboru](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

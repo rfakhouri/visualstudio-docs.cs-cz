@@ -1,5 +1,5 @@
 ---
-title: 'Průvodce: Konfigurace a používání vlastní sady pravidel | Dokumentace Microsoftu'
+title: 'Návod: Konfigurace a používání vlastní sady pravidel | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,35 +12,35 @@ caps.latest.revision: 42
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 14f67aee6bba5f0cafc67a4a16184f3b769a2bae
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: da7b1f1bda7fac222d0d47c6bf2a15eaf3a8396f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54780102"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052061"
 ---
-# <a name="walkthrough-configuring-and-using-a-custom-rule-set"></a>Průvodce: Konfigurace a používání vlastní sady pravidel
+# <a name="walkthrough-configuring-and-using-a-custom-rule-set"></a>Návod: Konfigurace a používání vlastní sady pravidel
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Tento návod ukazuje, jak pomocí nástrojů pro analýzu kódu, které jsou nakonfigurované na použití vlastní *sada pravidel, která* na knihovny tříd. Můžete vybrat sadu pravidel, která má vztah k typu projektu, který jste zadali pro vaše řešení, nebo můžete vybrat alternativní pravidlo sady ke splnění se specifickými požadavky, jako je skenování starší verzi kódu pro problémy, které lze napravit pevná způsobem. V obou případech sady pravidel se taky dají upravit a vyladit je požadavky projektu.  
   
  V tomto podrobném návodu přesune se krokování přes tyto procesy:  
   
--   Vytvoření knihovny tříd.  
+- Vytvoření knihovny tříd.  
   
--   Vyberte **základní pravidla obecných zásad návrhu společnosti Microsoft** sadu pravidel analýzy kódu.  
+- Vyberte **základní pravidla obecných zásad návrhu společnosti Microsoft** sadu pravidel analýzy kódu.  
   
--   Přidejte vlastní kód do třídy.  
+- Přidejte vlastní kód do třídy.  
   
--   Spustíte analýzu kódu.  
+- Spustíte analýzu kódu.  
   
--   Přizpůsobení sady pravidel.  
+- Přizpůsobení sady pravidel.  
   
--   Spustit analýzu kódu a podívejte se, jak funguje chování přizpůsobení sady pravidel.  
+- Spustit analýzu kódu a podívejte se, jak funguje chování přizpůsobení sady pravidel.  
   
 ## <a name="prerequisites"></a>Požadavky  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], nebo [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], nebo [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
 ## <a name="using-rule-sets-with-code-analysis"></a>Použití sad pravidel analýzy kódu  
  Nejprve vytvořte jednoduchou třídu knihovny.  
@@ -148,9 +148,9 @@ Tento návod ukazuje, jak pomocí nástrojů pro analýzu kódu, které jsou nak
   
 #### <a name="run-code-analysis-on-the-rulesetsample-project-for-the-second-time"></a>Spustit analýzu kódu na projektu RuleSetSample podruhé  
   
-1.  Na **analyzovat** nabídky, klikněte na tlačítko **spustit analýzu kódu na RuleSetSample**.  
+1. Na **analyzovat** nabídky, klikněte na tlačítko **spustit analýzu kódu na RuleSetSample**.  
   
-2.  V okně Seznam chyb, Všimněte si, že po kliknutí na **upozornění**, už se nezobrazují upozornění porušení CA1704 pro pravidlo "Identifikátory by měly být zadány správně".  
+2. V okně Seznam chyb, Všimněte si, že po kliknutí na **upozornění**, už se nezobrazují upozornění porušení CA1704 pro pravidlo "Identifikátory by měly být zadány správně".  
   
 ## <a name="see-also"></a>Viz také  
  [Postupy: Konfigurace analýzy kódu pro spravovaný projekt kódu](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)   

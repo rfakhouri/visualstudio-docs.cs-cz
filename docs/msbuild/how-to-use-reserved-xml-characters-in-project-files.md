@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 02c5693a2edca0d81e21e73215e00f25aae939eb
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: c79dfa33af5e0e80db682f272c5673856dbbcd8d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603866"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044628"
 ---
 # <a name="how-to-use-reserved-xml-characters-in-project-files"></a>Postupy: Použití vyhrazených znaků XML v souborech projektu
 Při vytváření souborů projektu, můžete potřebovat použít vyhrazené znaky jazyka XML, třeba v hodnotách vlastnosti nebo hodnoty parametrů úloh. Nicméně některé znaky vyhrazené musí nahradit odpovídajícími pojmenovaná entita, tak, aby soubor projektu může být analyzován.
@@ -34,7 +34,7 @@ Při vytváření souborů projektu, můžete potřebovat použít vyhrazené zn
 
 #### <a name="to-use-double-quotes-in-a-project-file"></a>Použití dvojitých uvozovek v souboru projektu
 
--   Nahraďte odpovídající entity s názvem dvojité uvozovky &amp;quot;. Například umístit dvojitých uvozovek `EXEFile` seznam položek, zadejte:
+- Nahraďte odpovídající entity s názvem dvojité uvozovky &amp;quot;. Například umístit dvojitých uvozovek `EXEFile` seznam položek, zadejte:
 
     ```xml
     <Message Text="The output file is &quot;@(EXEFile)&quot;."/>

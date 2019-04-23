@@ -15,12 +15,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5e7528e8a589cb64e4debc8c1e119f8f59a6244c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8b5dc42932334b54bb46664da14af7df8dcfe131
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54766607"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050778"
 ---
 # <a name="how-to-create-a-policyactivity-rule-set-legacy"></a>Postupy: Vytvoření sady pravidel aktivit zásad (starší verze)
 Toto téma popisuje, jak vytvořit pravidlo zásad aktivity, nastavte pomocí starší verze [!INCLUDE[wfd1](../includes/wfd1-md.md)] , který cílí [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] nebo [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
@@ -32,33 +32,33 @@ Toto téma popisuje, jak vytvořit pravidlo zásad aktivity, nastavte pomocí st
   
 ### <a name="to-select-or-create-a-rule-set-for-a-policyactivity-activity"></a>Vybrat nebo vytvořit sadu pravidel pro aktivit zásad aktivity  
   
-1.  Klikněte pravým tlačítkem myši [aktivitě PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019)a potom klikněte na **vlastnosti** otevřete **vlastnosti** okno.  
+1. Klikněte pravým tlačítkem myši [aktivitě PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019)a potom klikněte na **vlastnosti** otevřete **vlastnosti** okno.  
   
-2.  Klikněte na tlačítko **RuleSetReference** vlastnost.  
+2. Klikněte na tlačítko **RuleSetReference** vlastnost.  
   
-3.  Proveďte jednu z těchto akcí:  
+3. Proveďte jednu z těchto akcí:  
   
-    -   Klikněte na tlačítko **RuleSetReference** symbol tří teček **[...]** a potom vyberte existující sadu pravidel [vyberte pravidlo nastavte dialogové okno (starší verze)](../workflow-designer/select-rule-set-dialog-box-legacy.md). Potom přejděte ke kroku 10.  
-  
-         -nebo-  
-  
-    -   Zadejte název pro sadu pravidel. Klikněte na tlačítko **RuleSetReference** symbol tří teček **[...]** a pak vyberte **upravit** v [vyberte pravidlo nastavte dialogové okno (starší verze)](../workflow-designer/select-rule-set-dialog-box-legacy.md).  
+    - Klikněte na tlačítko **RuleSetReference** symbol tří teček **[...]** a potom vyberte existující sadu pravidel [vyberte pravidlo nastavte dialogové okno (starší verze)](../workflow-designer/select-rule-set-dialog-box-legacy.md). Potom přejděte ke kroku 10.  
   
          -nebo-  
   
-    -   Zadejte název pro sadu pravidel. Rozbalte **RuleSetReference** vlastnosti a vyberte symbol tří teček **[...]**  v **definice sady pravidel** vlastnost.  
+    - Zadejte název pro sadu pravidel. Klikněte na tlačítko **RuleSetReference** symbol tří teček **[...]** a pak vyberte **upravit** v [vyberte pravidlo nastavte dialogové okno (starší verze)](../workflow-designer/select-rule-set-dialog-box-legacy.md).  
+  
+         -nebo-  
+  
+    - Zadejte název pro sadu pravidel. Rozbalte **RuleSetReference** vlastnosti a vyberte symbol tří teček **[...]**  v **definice sady pravidel** vlastnost.  
   
          [Pravidlo nastavte dialogové okno editoru (starší verze)](../workflow-designer/rule-set-editor-dialog-box-legacy.md) otevře.  
   
-4.  V [pravidlo nastavte dialogové okno editoru (starší verze)](../workflow-designer/rule-set-editor-dialog-box-legacy.md), klikněte na tlačítko **přidat pravidlo** přidáte nové pravidlo do sady pravidel.  
+4. V [pravidlo nastavte dialogové okno editoru (starší verze)](../workflow-designer/rule-set-editor-dialog-box-legacy.md), klikněte na tlačítko **přidat pravidlo** přidáte nové pravidlo do sady pravidel.  
   
-5.  Zadejte **název**, **Priority**, a **přehodnocení** vlastnosti, nebo ponechte výchozí hodnoty.  
+5. Zadejte **název**, **Priority**, a **přehodnocení** vlastnosti, nebo ponechte výchozí hodnoty.  
   
-6.  Zadejte text **podmínku**.  
+6. Zadejte text **podmínku**.  
   
-7.  Zadejte text **pak akce** a **Else akce**.  
+7. Zadejte text **pak akce** a **Else akce**.  
   
-8.  Klikněte na tlačítko **přidat pravidlo** znovu přidáte další pravidlo.  
+8. Klikněte na tlačítko **přidat pravidlo** znovu přidáte další pravidlo.  
   
 9. Až budete hotovi, klikněte na tlačítko **OK**.  
   

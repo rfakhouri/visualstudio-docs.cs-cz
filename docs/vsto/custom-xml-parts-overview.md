@@ -23,12 +23,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: eef9744e5d5b66d39eee9e9332f3ed49616c6067
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 517cd2230430bf0758b729f50b1d947685aaf6be
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616219"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052776"
 ---
 # <a name="custom-xml-parts-overview"></a>Přehled vlastních částí XML
   Vložit XML data do dokumentů pro některé aplikace Microsoft Office. Při vložení dat XML v dokumentu s názvem data *vlastní část XML*.
@@ -47,13 +47,13 @@ ms.locfileid: "56616219"
 
  Další informace o struktuře Open XML a vlastní části XML najdete v následujících článcích:
 
--   [Úvod do formátů souborů Office (2007) Open XML](/previous-versions/office/developer/office-2007/aa338205(v=office.12))
+- [Úvod do formátů souborů Office (2007) Open XML](/previous-versions/office/developer/office-2007/aa338205(v=office.12))
 
--   [Postupy: Manipulace s dokumenty formáty Open XML](/previous-versions/office/developer/office-2007/aa982683(v=office.12))
+- [Postupy: Manipulace s dokumenty formáty Open XML](/previous-versions/office/developer/office-2007/aa982683(v=office.12))
 
--   [Návod: Formát XML aplikace Word 2007](/previous-versions/office/developer/office-2007/bb266220(v=office.12))
+- [Návod: Formát XML aplikace Word 2007](/previous-versions/office/developer/office-2007/bb266220(v=office.12))
 
--   [Vytváření dokumentů aplikace Word 2007 pomocí formáty Open XML](/previous-versions/office/developer/office-2007/bb264572(v=office.12))
+- [Vytváření dokumentů aplikace Word 2007 pomocí formáty Open XML](/previous-versions/office/developer/office-2007/bb264572(v=office.12))
 
 > [!NOTE]
 >  Aplikace Excel, Word a PowerPoint také umožňují používat vlastní části XML v dokumentech, které jsou uloženy v binárním formátu. Pokud dokument je uložený v binárním formátu, nelze však přidat ani upravit vlastní části XML bez spuštění aplikace Microsoft Office.
@@ -66,9 +66,9 @@ ms.locfileid: "56616219"
 
  Pokud chcete vytvořit vlastní část XML pomocí sady Visual Studio, přidejte novou <xref:Microsoft.Office.Core.CustomXMLPart> k <xref:Microsoft.Office.Core.CustomXMLParts> kolekce v dokumentu. Další informace naleznete v následujících tématech:
 
--   [Postupy: Přidání vlastních částí XML do přizpůsobení na úrovni dokumentu](../vsto/how-to-add-custom-xml-parts-to-document-level-customizations.md)
+- [Postupy: Přidání vlastních částí XML do přizpůsobení na úrovni dokumentu](../vsto/how-to-add-custom-xml-parts-to-document-level-customizations.md)
 
--   [Postupy: Přidání vlastních částí XML do dokumentů s použitím doplňků VSTO](../vsto/how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins.md)
+- [Postupy: Přidání vlastních částí XML do dokumentů s použitím doplňků VSTO](../vsto/how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins.md)
 
 ### <a name="modify-xml-parts-without-starting-the-office-application"></a>Úprava částí XML bez spuštění aplikace sady Office
  Můžete přidat nebo upravit vlastní část XML bez spuštění aplikace Excel, PowerPoint nebo Word. To je užitečné, pokud budete chtít pracovat s daty XML v dokumentu na počítači, na kterém není nainstalovaný, například server aplikace Microsoft Office.

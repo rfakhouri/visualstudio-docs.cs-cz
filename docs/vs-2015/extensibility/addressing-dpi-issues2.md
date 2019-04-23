@@ -6,12 +6,12 @@ ms.assetid: 359184aa-f5b6-4b6c-99fe-104655b3a494
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: a5c5ae2abeea1e1e6b5a2fe360ff8515e5096341
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 43f13ebc6a3f7a430b3608eba37284a85c3c5eab
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54759788"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049539"
 ---
 # <a name="addressing-dpi-issues"></a>Řešení problémů s nastavením DPI
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -120,15 +120,15 @@ VsUI::DpiHelper::LogicalToDeviceUnits(&hBitmap);
   
  Pro přístup k DPI pomocných funkcí ze spravovaného kódu, který se spustí do prostředí sady Visual Studio:  
   
--   Využívání projekt musí odkazovat na nejnovější verzi prostředí MPF. Příklad:  
+- Využívání projekt musí odkazovat na nejnovější verzi prostředí MPF. Příklad:  
   
     ```csharp  
     <Reference Include="Microsoft.VisualStudio.Shell.14.0.dll" />  
     ```  
   
--   Ujistěte se projekt odkazuje **System.Windows.Forms**, **PresentationCore**, a **PresentationUI**.  
+- Ujistěte se projekt odkazuje **System.Windows.Forms**, **PresentationCore**, a **PresentationUI**.  
   
--   V kódu, použijte **Microsoft.VisualStudio.PlatformUI** obor názvů a volání statické funkce DpiHelper třídy. U podporovaných typů (body, velikosti, obdélníky a tak dále) jsou za předpokladu škálování funkcí rozšíření, které vrací nové objekty. Příklad:  
+- V kódu, použijte **Microsoft.VisualStudio.PlatformUI** obor názvů a volání statické funkce DpiHelper třídy. U podporovaných typů (body, velikosti, obdélníky a tak dále) jsou za předpokladu škálování funkcí rozšíření, které vrací nové objekty. Příklad:  
   
     ```csharp  
     using Microsoft.VisualStudio.PlatformUI;  
@@ -207,13 +207,13 @@ xmlns:vsui="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.V
   
  Protože WPF škálovaly uživatelského rozhraní pro aktuální DPI BitmapScalingMode vlastnost nastavit UIElement, by měl ovládací prvek obrázku pomocí bitové kopie prescaled jako svůj zdroj bude vypadat dvakrát nebo třikrát větší než. Následuje několik způsobů, jak tento efekt čítače:  
   
--   Pokud znáte dimenze původní bitové kopie na 100 %, můžete zadat přesný velikost ovládacího prvku obrázek. Tyto velikosti, bude odrážet že použít velikost uživatelského rozhraní před Škálováním.  
+- Pokud znáte dimenze původní bitové kopie na 100 %, můžete zadat přesný velikost ovládacího prvku obrázek. Tyto velikosti, bude odrážet že použít velikost uživatelského rozhraní před Škálováním.  
   
     ```xaml  
     <Image Source="{Binding Path=SelectedImage, Converter={StaticResource DpiPrescaleImageSourceConverter}}" Width="16" Height="16" />  
     ```  
   
--   Pokud velikost původní bitové kopie není znám, LayoutTransform umožňuje škálovat směrem dolů, do konečného objektu Image. Příklad:  
+- Pokud velikost původní bitové kopie není znám, LayoutTransform umožňuje škálovat směrem dolů, do konečného objektu Image. Příklad:  
   
     ```xaml  
     <Image Source="{Binding Path=SelectedImage, Converter={StaticResource DpiPrescaleImageSourceConverter}}" >  
@@ -344,9 +344,9 @@ public int GetHostInfo(DOCHOSTUIINFO info)
   
 ## <a name="tips"></a>Tipy  
   
-1.  Pokud se změní vlastnost dokumentu v ovládacím prvku WebOC, můžete potřebovat přidružení IDocHostUIHandler třídy dokumentu.  
+1. Pokud se změní vlastnost dokumentu v ovládacím prvku WebOC, můžete potřebovat přidružení IDocHostUIHandler třídy dokumentu.  
   
-2.  Pokud výše uvedené nebude fungovat, je známý problém s WebOC není ujímají změnu příznaku DPI. Nejspolehlivější způsob, jak to opravy je přepnete optické přiblížení WebOC význam dvě volání s dvě různé hodnoty pro procento zvětšení. Kromě toho pokud toto řešení je potřeba, může být potřeba provádět při každém volání navigace.  
+2. Pokud výše uvedené nebude fungovat, je známý problém s WebOC není ujímají změnu příznaku DPI. Nejspolehlivější způsob, jak to opravy je přepnete optické přiblížení WebOC význam dvě volání s dvě různé hodnoty pro procento zvětšení. Kromě toho pokud toto řešení je potřeba, může být potřeba provádět při každém volání navigace.  
   
     ```csharp  
     // browser2 is a SHDocVw.IWebBrowser2 in this case  

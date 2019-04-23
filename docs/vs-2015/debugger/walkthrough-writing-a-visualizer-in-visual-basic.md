@@ -1,5 +1,5 @@
 ---
-title: 'Průvodce: Zápis Vizualizéru v jazyce Visual Basic | Dokumentace Microsoftu'
+title: 'Návod: Zápis Vizualizéru v jazyce Visual Basic | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -17,14 +17,14 @@ caps.latest.revision: 25
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e56cf1bcd061ba38d2855c2c8841b410e68032b0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e297708d4e89bb1fdcef06366f2790254aeab812
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54786338"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050567"
 ---
-# <a name="walkthrough-writing-a-visualizer-in-visual-basic"></a>Průvodce: Zápis Vizualizéru v jazyce Visual Basic
+# <a name="walkthrough-writing-a-visualizer-in-visual-basic"></a>Návod: Zápis Vizualizéru v jazyce Visual Basic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Tento návod ukazuje, jak napsat Jednoduchý vizualizér pomocí [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]. Vizualizaci, kterou vytvoříte v tomto názorném postupu se zobrazí obsah řetězce pomocí Windows Forms okno se zprávou. Tento vizualizér jednoduchým řetězcem je základní příklad, který znázorňuje, jak můžete vytvořit vizualizéry pro ostatní typy dat pro více projektů.  
@@ -52,20 +52,20 @@ Tento návod ukazuje, jak napsat Jednoduchý vizualizér pomocí [!INCLUDE[vbprv
   
 #### <a name="to-rename-class1vb-and-add-microsoftvisualstudiodebuggervisualizers"></a>Přejmenovat Class1.vb a přidat Microsoft.VisualStudio.DebuggerVisualizers  
   
-1.  V **Průzkumníka řešení**, klikněte pravým tlačítkem na **Class1.vb**a v místní nabídce klikněte na tlačítko **přejmenovat**.  
+1. V **Průzkumníka řešení**, klikněte pravým tlačítkem na **Class1.vb**a v místní nabídce klikněte na tlačítko **přejmenovat**.  
   
-2.  Změňte název na něco smysluplného, například DebuggerSide.vb z Class1.vb.  
+2. Změňte název na něco smysluplného, například DebuggerSide.vb z Class1.vb.  
   
     > [!NOTE]
     >  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] automaticky změní deklaraci třídy v DebuggerSide.vb tak, aby odpovídaly nový název souboru.  
   
-3.  V **Průzkumníka řešení**, klikněte pravým tlačítkem na **Moje první Vizualizéru**a v místní nabídce klikněte na tlačítko **přidat odkaz**.  
+3. V **Průzkumníka řešení**, klikněte pravým tlačítkem na **Moje první Vizualizéru**a v místní nabídce klikněte na tlačítko **přidat odkaz**.  
   
-4.  V **přidat odkaz** dialogovém okně **.NET** klikněte na tlačítko Microsoft.VisualStudio.DebuggerVisualizers.DLL.  
+4. V **přidat odkaz** dialogovém okně **.NET** klikněte na tlačítko Microsoft.VisualStudio.DebuggerVisualizers.DLL.  
   
-5.  Klikněte na tlačítko **OK**.  
+5. Klikněte na tlačítko **OK**.  
   
-6.  V DebuggerSide.vb, přidejte následující příkaz, kterým `Imports` příkazy:  
+6. V DebuggerSide.vb, přidejte následující příkaz, kterým `Imports` příkazy:  
   
     ```  
     Imports Microsoft.VisualStudio.DebuggerVisualizers  
@@ -105,13 +105,13 @@ Tento návod ukazuje, jak napsat Jednoduchý vizualizér pomocí [!INCLUDE[vbprv
   
 #### <a name="to-add-systemwindowsforms"></a>Chcete-li přidat System.Windows.Forms  
   
-1.  V **Průzkumníka řešení**, klikněte pravým tlačítkem na **odkazy**a v místní nabídce klikněte na tlačítko **přidat odkaz**.  
+1. V **Průzkumníka řešení**, klikněte pravým tlačítkem na **odkazy**a v místní nabídce klikněte na tlačítko **přidat odkaz**.  
   
-2.  V **přidat odkaz** dialogovém okně **.NET** klikněte na tlačítko **System.Windows.Forms**.  
+2. V **přidat odkaz** dialogovém okně **.NET** klikněte na tlačítko **System.Windows.Forms**.  
   
-3.  Klikněte na tlačítko **OK**.  
+3. Klikněte na tlačítko **OK**.  
   
-4.  V DebuggerSide.cs, přidejte následující příkaz, kterým `Imports` příkazy:  
+4. V DebuggerSide.cs, přidejte následující příkaz, kterým `Imports` příkazy:  
   
     ```  
     Imports System.Windows.Forms  
@@ -122,7 +122,7 @@ Tento návod ukazuje, jak napsat Jednoduchý vizualizér pomocí [!INCLUDE[vbprv
   
 #### <a name="to-show-the-visualizer-output-in-a-dialog-box"></a>Chcete-li zobrazit výstup vizualizéru v dialogovém okně  
   
-1.  V `Show` metodu, přidejte následující řádek kódu:  
+1. V `Show` metodu, přidejte následující řádek kódu:  
   
     ```  
     MessageBox.Show(objectProvider.GetObject().ToString())  
@@ -130,20 +130,20 @@ Tento návod ukazuje, jak napsat Jednoduchý vizualizér pomocí [!INCLUDE[vbprv
   
      Tento příklad kódu neobsahuje zpracování chyb. By měly zahrnovat zpracování chyb v reálné vizualizéru nebo jakékoli jiné aplikace.  
   
-2.  Na **sestavení** nabídky, klikněte na tlačítko **sestavení MyFirstVisualizer**. Projekt má sestavit úspěšně. Než budete pokračovat, opravte případné chyby sestavení.  
+2. Na **sestavení** nabídky, klikněte na tlačítko **sestavení MyFirstVisualizer**. Projekt má sestavit úspěšně. Než budete pokračovat, opravte případné chyby sestavení.  
   
 ## <a name="add-the-necessary-attribute"></a>Přidejte atribut nezbytné  
  To je ladicí program side kódu. Ještě jeden krok, je však: vizualizéru se skládá z atributu, který dává pokyn na straně laděného procesu, které kolekce tříd.  
   
 #### <a name="to-add-the-debugee-side-code"></a>Chcete-li přidat kódu na straně laděného objektu  
   
-1.  Přidejte následující kód atribut DebuggerSide.vb, po `Imports` příkazy ale předtím, než `namespace MyFirstVisualizer`:  
+1. Přidejte následující kód atribut DebuggerSide.vb, po `Imports` příkazy ale předtím, než `namespace MyFirstVisualizer`:  
   
     ```  
     <Assembly: System.Diagnostics.DebuggerVisualizer(GetType(MyFirstVisualizer.DebuggerSide), GetType(VisualizerObjectSource), Target:=GetType(System.String), Description:="My First Visualizer")>  
     ```  
   
-2.  Na **sestavení** nabídky, klikněte na tlačítko **sestavení MyFirstVisualizer**. Projekt má sestavit úspěšně. Než budete pokračovat, opravte případné chyby sestavení.  
+2. Na **sestavení** nabídky, klikněte na tlačítko **sestavení MyFirstVisualizer**. Projekt má sestavit úspěšně. Než budete pokračovat, opravte případné chyby sestavení.  
   
 ## <a name="create-a-test-harness"></a>Vytvořit testovací prostředí  
  V tomto okamžiku je dokončena první vizualizér. Pokud jste postupovali podle kroků správně, může sestavení vizualizéru a nainstalujte ho do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Před instalací vizualizéru do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], ale měli otestovat a ujistit se, že běží správně. Teď vytvoříte testovací prostředí pro spuštění vizualizéru bez instalace do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
@@ -177,17 +177,17 @@ Tento návod ukazuje, jak napsat Jednoduchý vizualizér pomocí [!INCLUDE[vbprv
   
 #### <a name="to-add-necessary-references-to-mytestconsole"></a>Chcete-li přidat potřebné odkazy na MyTestConsole  
   
-1.  V **Průzkumníka řešení**, klikněte pravým tlačítkem na **MyTestConsole**a v místní nabídce klikněte na tlačítko **přidat odkaz**.  
+1. V **Průzkumníka řešení**, klikněte pravým tlačítkem na **MyTestConsole**a v místní nabídce klikněte na tlačítko **přidat odkaz**.  
   
-2.  V **přidat odkaz** dialogovém okně **.NET** klikněte na tlačítko Microsoft.VisualStudio.DebuggerVisualizers.  
+2. V **přidat odkaz** dialogovém okně **.NET** klikněte na tlačítko Microsoft.VisualStudio.DebuggerVisualizers.  
   
-3.  Klikněte na tlačítko **OK**.  
+3. Klikněte na tlačítko **OK**.  
   
-4.  Klikněte pravým tlačítkem na **MyTestConsole**a potom klikněte na tlačítko **přidat odkaz** znovu.  
+4. Klikněte pravým tlačítkem na **MyTestConsole**a potom klikněte na tlačítko **přidat odkaz** znovu.  
   
-5.  V **přidat odkaz** dialogové okno, klikněte na tlačítko **projekty** kartu a potom vyberte MyFirstVisualizer.  
+5. V **přidat odkaz** dialogové okno, klikněte na tlačítko **projekty** kartu a potom vyberte MyFirstVisualizer.  
   
-6.  Klikněte na tlačítko **OK**.  
+6. Klikněte na tlačítko **OK**.  
   
 ## <a name="finish-your-test-harness-and-test-your-visualizer"></a>Dokončení testovací prostředí a testování vaší Vizualizéru  
  Teď přidejte kód k dokončení testovací prostředí.  

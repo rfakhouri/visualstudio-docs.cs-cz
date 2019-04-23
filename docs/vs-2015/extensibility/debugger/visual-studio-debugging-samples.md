@@ -12,18 +12,18 @@ ms.assetid: fbcc42a7-7851-487f-b981-8c4ae7ec7347
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f52a0cd8b0cd28ce19e4ace9f7bc80bdafe79dc9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 19144365a428fdde8915f481ce8d12841bddc003
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54764333"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051556"
 ---
 # <a name="visual-studio-debugging-samples"></a>Ukázky ladění sady Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Dvě ukázky ukazují, jak rozšířit pomocí ladicího programu sady Visual Studio [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)].  
   
--   Je součástí vzorku Chyba při vyhodnocování výrazu ladicího programu, pro spravované jazyky, [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)]. V [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] okna, klikněte na tlačítko **ukázky** klikněte na tlačítko **všechny** nebo **jazyka C#** v seznamu jazyků a pak klikněte na tlačítko **ladicí program**.  
+- Je součástí vzorku Chyba při vyhodnocování výrazu ladicího programu, pro spravované jazyky, [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)]. V [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] okna, klikněte na tlačítko **ukázky** klikněte na tlačítko **všechny** nebo **jazyka C#** v seznamu jazyků a pak klikněte na tlačítko **ladicí program**.  
   
--   Visual Studio ladit modul vzorek, nativním jazyce, je k dispozici na Galerie kódu na webu MSDN. Další informace najdete v článku na této stránce na webu společnosti Microsoft: [Visual Studio ladit modul ukázka](http://go.microsoft.com/fwlink/?LinkId=150236).
+- Visual Studio ladit modul vzorek, nativním jazyce, je k dispozici na Galerie kódu na webu MSDN. Další informace najdete v článku na této stránce na webu společnosti Microsoft: [Visual Studio ladit modul ukázka](http://go.microsoft.com/fwlink/?LinkId=150236).

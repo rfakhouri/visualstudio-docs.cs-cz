@@ -1,5 +1,5 @@
 ---
-title: 'Průvodce: Chybějící objekty z důvodu stavu zařízení | Dokumentace Microsoftu'
+title: 'Návod: Chybějící objekty z důvodu stavu zařízení | Dokumentace Microsoftu'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 1b0d2bbd-0729-4aa5-8308-70c5bf1468c5
@@ -8,25 +8,25 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e42e1ce4cc1ccc0a01905046b33e4587964f8ce
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 0e85aa8fc5af3f32f117b112e8624962a49d90c6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56712070"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047449"
 ---
-# <a name="walkthrough-missing-objects-due-to-device-state"></a>Průvodce: Chybějící objekty z důvodu stavu zařízení
+# <a name="walkthrough-missing-objects-due-to-device-state"></a>Návod: Chybějící objekty z důvodu stavu zařízení
 Tento návod ukazuje, jak používat [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] diagnostiky grafiky k prozkoumání objekt, který je z důvodu chybějící správně nakonfigurovaný. stav zařízení.
 
  Tento návod ukazuje, jak:
 
--   Použití **seznam událostí grafiky** k vyhledání potenciálních zdrojů problému.
+- Použití **seznam událostí grafiky** k vyhledání potenciálních zdrojů problému.
 
--   Použití **fáze zřetězení grafiky** okna zkontrolovat dopad `DrawIndexed` volání rozhraní API Direct3D.
+- Použití **fáze zřetězení grafiky** okna zkontrolovat dopad `DrawIndexed` volání rozhraní API Direct3D.
 
--   Použití **historie pixelů grafiky** okno přesněji řečeno nalezení problému.
+- Použití **historie pixelů grafiky** okno přesněji řečeno nalezení problému.
 
--   Kontrolovat stav zařízení pro potenciální problémy nebo chyby v konfiguraci.
+- Kontrolovat stav zařízení pro potenciální problémy nebo chyby v konfiguraci.
 
 ## <a name="scenario"></a>Scénář
  Jedním z důvodů, že objekty neobjeví, kde se očekává v 3D aplikaci je chybná konfigurace zařízení grafiky, která způsobí, že objekty, které chcete vyloučit z vykreslování – například když pořadí vinutí způsobí, že trojúhelníky vyřazeny chybu , nebo když hloubky testovací funkce způsobí, že všechny obrazové body v objekt, který má být odmítnut.

@@ -22,12 +22,12 @@ caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 821396989a2de9444fdbf3499709588d00e66b45
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 8315a797aec5fcedbf33df6ca96f41879b57d971
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54834820"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054297"
 ---
 # <a name="debug-multithreaded-applications-in-visual-studio"></a>Ladění vícevláknových aplikací v sadě Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -77,8 +77,9 @@ Seznámení s funkcemi, s důrazem na funkce jak ladění vlákna do [!INCLUDE[v
  [Postupy: Použití okna vláken GPU](../debugger/how-to-use-the-gpu-threads-window.md) vyhledejte a práce s vlákny, která běží na GPU během ladění.
 
 ## <a name="related-sections"></a>Související oddíly
- [Použití zarážek](../debugger/using-breakpoints.md)
- -   Použijte filtry zarážek, když chcete umístit zarážky na jednotlivá vlákna.
+
+[Použití zarážek](../debugger/using-breakpoints.md)
+- Použijte filtry zarážek, když chcete umístit zarážky na jednotlivá vlákna.
 
 - Zarážky s trasováním umožňuje trasování spuštění programu bez přerušení. To může být užitečné pro studium problémů například zablokování.
 

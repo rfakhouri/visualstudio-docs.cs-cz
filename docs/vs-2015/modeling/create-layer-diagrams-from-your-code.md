@@ -14,12 +14,12 @@ caps.latest.revision: 64
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1597d71ac0eef5d044e0378cc71a9f109b2fc99e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a3ff96a68d66c95d4f1302ba2f419c873e8f077d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54762341"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050209"
 ---
 # <a name="create-layer-diagrams-from-your-code"></a>Vytváření diagramů vrstev z kódu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Můžete vizualizovat váš softwarový systém logické architektury vysoké ú
   
  Diagram vrstev umožňuje uspořádat položky řešení sady Visual Studio do logických, abstraktních skupin nazvaných *vrstvy*. Pomocí vrstev můžete popsat hlavní úlohy, které provádějí tyto artefakty, nebo hlavní komponenty systému. Každá vrstva může obsahovat další vrstvy, které popisují podrobnější úlohy. Můžete také určit zamýšlené nebo existující *závislosti* mezi vrstvami. Tyto závislosti, které jsou reprezentovány šipkami, zobrazují, které vrstvy mohou použít nebo právě používají funkce představované ostatními vrstvami. Chcete-li si udržet architektonickou kontrolu nad kódem, zobrazte zamýšlené závislosti v diagramu a potom ověřte kód proti diagramu.  
   
-##  <a name="CreateDiagram"></a> Vytvoření diagramu vrstev  
+## <a name="CreateDiagram"></a> Vytvoření diagramu vrstev  
  Před vytvořením diagramu vrstev zkontrolujte, zda má vaše řešení projekt modelování. Zobrazit [vytvořit modelování projektů a diagramů UML](../modeling/create-uml-modeling-projects-and-diagrams.md).  
   
 > [!IMPORTANT]
@@ -40,13 +40,13 @@ Můžete vizualizovat váš softwarový systém logické architektury vysoké ú
   
 #### <a name="to-add-a-new-layer-diagram-to-a-modeling-project"></a>Přidání nového diagramu vrstev do projektu modelování  
   
-1.  Na **architektura** nabídce zvolte **nové UML nebo diagramu vrstev**.  
+1. Na **architektura** nabídce zvolte **nové UML nebo diagramu vrstev**.  
   
-2.  V části **šablony**, zvolte **Diagram vrstev**.  
+2. V části **šablony**, zvolte **Diagram vrstev**.  
   
-3.  Pojmenujte diagram.  
+3. Pojmenujte diagram.  
   
-4.  V **přidat k projektu modelování**, vyhledejte a vyberte existující projekt modelování z řešení.  
+4. V **přidat k projektu modelování**, vyhledejte a vyberte existující projekt modelování z řešení.  
   
      -nebo-  
   
@@ -55,9 +55,9 @@ Můžete vizualizovat váš softwarový systém logické architektury vysoké ú
     > [!NOTE]
     >  Diagram vrstev musí existovat v projektu modelování. Můžete jej však propojit s položkami kdekoli v řešení.  
   
-5.  Nezapomeňte uložit projekt modelování i diagram vrstev.  
+5. Nezapomeňte uložit projekt modelování i diagram vrstev.  
   
-##  <a name="CreateLayers"></a> Vytvořit vrstvu z artefaktů  
+## <a name="CreateLayers"></a> Vytvořit vrstvu z artefaktů  
  Vrstvy můžete vytvářet z položek řešení sady Visual Studio, jako jsou projekty, soubory kódu, obory názvů, třídy a metody. Tím se automaticky vytvoří spojení mezi vrstvami a položkami, čímž dojde k jejich zahrnutí do procesu ověření vrstev.  
   
  Vrstvy můžete spojovat i s položkami, které ověřování nepodporují, jako například dokumenty aplikace Word nebo prezentace aplikace PowerPoint, takže vrstvu můžete přidružit ke specifikacím nebo plánům. Vrstvy můžete také spojovat se soubory v projektech, které jsou sdíleny napříč více aplikacemi, ale proces ověření nebude zahrnovat ty vrstvy, které se zobrazí s obecnými názvy, například „Vrstva 1“ a „Vrstva 2“.  
@@ -80,19 +80,19 @@ Můžete vizualizovat váš softwarový systém logické architektury vysoké ú
   
  Číslo ve vrstvě udává počet artefaktů, které jsou spojeny s vrstvou. Při čtení tohoto čísla však pamatujte na následující skutečnosti:  
   
--   Pokud vrstva odkazuje na artefakt, který obsahuje jiné artefakty, ale vrstva není propojena přímo s jiným artefaktem, pak číslo obsahuje pouze propojené artefakty. Jiné artefakty jsou však zahrnuty do analýzy během ověřování vrstvy.  
+- Pokud vrstva odkazuje na artefakt, který obsahuje jiné artefakty, ale vrstva není propojena přímo s jiným artefaktem, pak číslo obsahuje pouze propojené artefakty. Jiné artefakty jsou však zahrnuty do analýzy během ověřování vrstvy.  
   
      Pokud je vrstva například spojena s jedním oborem názvů, pak počet propojených artefaktů je 1, přestože obor názvů obsahuje třídy. Pokud vrstva obsahuje rovněž propojení s jednotlivými třídami v oboru názvů, bude počet zahrnovat propojené třídy.  
   
--   Pokud například vrstva obsahuje jiné vrstvy, které jsou spojeny s artefakty, pak je vrstva kontejneru také propojena s těmito artefakty, i když číslo vrstvy kontejneru tyto artefakty neobsahuje.  
+- Pokud například vrstva obsahuje jiné vrstvy, které jsou spojeny s artefakty, pak je vrstva kontejneru také propojena s těmito artefakty, i když číslo vrstvy kontejneru tyto artefakty neobsahuje.  
   
-##  <a name="Managing"></a> Správa propojení mezi vrstvami a artefakty  
+## <a name="Managing"></a> Správa propojení mezi vrstvami a artefakty  
   
-1.  V diagramu vrstev otevřete místní nabídku vrstvy a klikněte na tlačítko **zobrazit odkazy**.  
+1. V diagramu vrstev otevřete místní nabídku vrstvy a klikněte na tlačítko **zobrazit odkazy**.  
   
      **Průzkumník vrstev** zobrazuje propojení artefaktů pro vybranou vrstvu.  
   
-2.  Ke správě těchto propojení použijte následující úlohy:  
+2. Ke správě těchto propojení použijte následující úlohy:  
   
 |**Komu**|**V Průzkumníku vrstev**|  
 |------------|---------------------------|  
@@ -102,7 +102,7 @@ Můžete vizualizovat váš softwarový systém logické architektury vysoké ú
 |Vytvoření nové vrstvy z existujícího propojení artefaktu|Přetáhněte propojení artefaktu do prázdné oblasti na diagramu.|  
 |Ověřte, zda propojený artefakt podporuje ověřování proti diagramu vrstev.|Podívejte se na **podporuje ověřování** sloupec pro propojení artefaktu.|  
   
-##  <a name="Discovering"></a> Provádět zpětnou analýzu existujících závislostí  
+## <a name="Discovering"></a> Provádět zpětnou analýzu existujících závislostí  
  Závislost existuje všude, kde artefakt, který je spojen s jednou vrstvou, odkazuje na artefakt, který je přidružen k jiné vrstvě. Třída v jedné vrstvě například deklaruje proměnnou, která má třídu v jiné vrstvě. Je možné provádět zpětnou analýzu existujících závislostí pro artefakty, které jsou propojeny s vrstvami v diagramu.  
   
 > [!NOTE]
@@ -112,7 +112,7 @@ Můžete vizualizovat váš softwarový systém logické architektury vysoké ú
   
   Obvykle se zobrazí nějaké závislosti, které by neměly existovat. Tyto závislosti lze upravit, aby odpovídaly zamýšlenému návrhu.  
   
-##  <a name="EditDependencies"></a> Úprava vrstev a závislostí za účelem zobrazení zamýšleného návrhu  
+## <a name="EditDependencies"></a> Úprava vrstev a závislostí za účelem zobrazení zamýšleného návrhu  
  Chcete-li zobrazit popis změn, které máte v plánu provést v systému nebo v požadované architektuře, upravte diagram vrstev:  
   
 |**Komu**|**Proveďte tyto kroky**|  
@@ -123,17 +123,17 @@ Můžete vizualizovat váš softwarový systém logické architektury vysoké ú
 |Zadání toho, aby artefakty spojené s vrstvou nesměly patřit zadanému oboru názvů|Zadejte obory názvů do vrstvy **zakázané obory názvů** vlastnost. Použijte středník (**;**) k oddělení oborů názvů.|  
 |Zadání toho, aby artefakty spojené s vrstvou musely patřit jednomu ze zadaných oborů názvů|Zadejte obor názvů vrstvy **požadované obory názvů** vlastnost. Použijte středník (**;**) k oddělení oborů názvů.|  
   
-##  <a name="EditLayout"></a> Změna způsobu zobrazení prvků v diagramu  
+## <a name="EditLayout"></a> Změna způsobu zobrazení prvků v diagramu  
  Velikost, tvar, barvu a polohu vrstev nebo barvu závislostí můžete změnit úpravou jejich vlastností.  
   
-##  <a name="Codemaps"></a> Zjišťování vzorců a závislostí v mapě kódu  
+## <a name="Codemaps"></a> Zjišťování vzorců a závislostí v mapě kódu  
  Při vytváření diagramů vrstev, můžete také vytvořit **map kódu**. Tyto diagramy vám můžou pomoct odhalit vzory a závislostí při zkoumání kódu. Prozkoumejte sestavení, oborů názvů a třídy – které často odpovídají existujících vrstev pomocí Průzkumníka řešení, zobrazení tříd nebo prohlížeči objektů. Další informace o mapách kódu naleznete v tématu:  
   
--   [Mapování závislostí napříč vaším řešením](../modeling/map-dependencies-across-your-solutions.md)  
+- [Mapování závislostí napříč vaším řešením](../modeling/map-dependencies-across-your-solutions.md)  
   
--   [Použití map kódu k ladění aplikací](../modeling/use-code-maps-to-debug-your-applications.md)  
+- [Použití map kódu k ladění aplikací](../modeling/use-code-maps-to-debug-your-applications.md)  
   
--   [Nalezení potenciálních problémů pomocí analyzátorů mapy kódu](../modeling/find-potential-problems-using-code-map-analyzers.md)  
+- [Nalezení potenciálních problémů pomocí analyzátorů mapy kódu](../modeling/find-potential-problems-using-code-map-analyzers.md)  
   
 ## <a name="see-also"></a>Viz také  
  [Video pro kanál 9: Návrh a ověření architektury pomocí diagramů vrstev](http://go.microsoft.com/fwlink/?LinkID=252073)   

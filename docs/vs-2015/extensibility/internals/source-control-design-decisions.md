@@ -10,12 +10,12 @@ ms.assetid: 5f60ec1a-5a74-4362-8293-817a4dd73872
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 6948290350bf931bb3b8af58bb060f755348f188
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 89d125dc52340e8528ee9692d5de00784632e6f2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54794547"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047906"
 ---
 # <a name="source-control-design-decisions"></a>Rozhodnutí o návrhu správy zdrojového kódu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,11 +30,11 @@ Následující rozhodnutí o návrhu pro projekty třeba zvážit při implement
 ## <a name="will-the-project-include-special-files"></a>Projekt bude obsahovat speciální soubory?  
  Další rozhodnutí o návrhu důležité je, zda strukturu projektu používá speciální soubory. Speciální soubory jsou skryté soubory, které tvoří základ soubory, které jsou viditelné v Průzkumníku řešení a vrácení se změnami a rezervace dialogová okna. Pokud používáte speciální souborů, postupujte podle následujících pokynů:  
   
-1.  Nepřidružujte speciální soubory k kořenový uzel projektu – to znamená s projektem samotném souboru. Váš soubor projektu musí být jeden soubor.  
+1. Nepřidružujte speciální soubory k kořenový uzel projektu – to znamená s projektem samotném souboru. Váš soubor projektu musí být jeden soubor.  
   
-2.  Když jsou speciální soubory přidat, odebrat nebo přejmenovat v projektu odpovídající <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocumentsEvents2> události musí být aktivována s příznakem, který označuje soubory jsou speciální soubory. Tyto události jsou nazývány prostředím v reakci na projektu volání odpovídající <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2> metody.  
+2. Když jsou speciální soubory přidat, odebrat nebo přejmenovat v projektu odpovídající <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocumentsEvents2> události musí být aktivována s příznakem, který označuje soubory jsou speciální soubory. Tyto události jsou nazývány prostředím v reakci na projektu volání odpovídající <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2> metody.  
   
-3.  Když projekt nebo editor volá <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> pro soubor, speciální soubory přidružené k tento soubor nejsou rezervovány automaticky. Speciální soubory v předejte ho spolu s nadřazený soubor. Zjistí vztah mezi všechny soubory, které jsou předány v prostředí a odpovídajícím způsobem Skrýt speciální soubory v Uživatelském rozhraní vrácení se změnami.  
+3. Když projekt nebo editor volá <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> pro soubor, speciální soubory přidružené k tento soubor nejsou rezervovány automaticky. Speciální soubory v předejte ho spolu s nadřazený soubor. Zjistí vztah mezi všechny soubory, které jsou předány v prostředí a odpovídajícím způsobem Skrýt speciální soubory v Uživatelském rozhraní vrácení se změnami.  
   
 ## <a name="see-also"></a>Viz také  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A>   

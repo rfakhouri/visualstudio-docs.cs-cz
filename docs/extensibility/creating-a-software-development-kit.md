@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ddc6849aa5c0dec07fc7dbdd08a950809624015d
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: e9882fd89e149a8b24813ec9edb53e86b0e72b59
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59661217"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052074"
 ---
 # <a name="create-a-software-development-kit"></a>Vytvořit sadu software development kit
 (SDK) software development kit je kolekce rozhraní API, která může odkazovat jako jedna položka v sadě Visual Studio. **Správce odkazů** dialogové okno obsahuje všechny sady SDK, které jsou relevantní pro projekt. Když přidáte sadu SDK do projektu, rozhraní API, jsou k dispozici v sadě Visual Studio.
@@ -30,7 +30,7 @@ ms.locfileid: "59661217"
 
 - [Rozšíření sady SDK](#ExtensionSDKs)
 
-##  <a name="PlatformSDKs"></a> Sady SDK platformy
+## <a name="PlatformSDKs"></a> Sady SDK platformy
  Sady SDK platformy jsou nezbytné pro vývoj aplikací pro platformu. Například [!INCLUDE[win81](../debugger/includes/win81_md.md)] SDK je vyžadována k vývoji aplikací pro [!INCLUDE[win81](../debugger/includes/win81_md.md)].
 
 ### <a name="installation"></a>Instalace
@@ -58,7 +58,7 @@ ms.locfileid: "59661217"
 | *Architektura* složky | Všechny podporované *architektura* může existovat složka. Visual Studio podporuje následující architektury: x86, x64, ARM a neutral. Poznámka: Win32 mapuje na x86 a AnyCPU mapuje na neutrální.<br /><br /> Nástroj MSBuild vyhledá pouze v části *\CommonConfiguration\neutral* pro sad SDK platformy. |
 | *SDKManifest.xml* | Tento soubor popisuje, jak by měl mít Visual Studio využívat sadu SDK. Podívejte se na Manifest sady SDK pro [!INCLUDE[win81](../debugger/includes/win81_md.md)]:<br /><br /> `<FileList             DisplayName = "Windows"             PlatformIdentity = "Windows, version=8.1"             TargetFramework = ".NET for Windows Store apps, version=v4.5.1; .NET Framework, version=v4.5.1"             MinVSVersion = "14.0">              <File Reference = "Windows.winmd">                <ToolboxItems VSCategory = "Toolbox.Default" />             </File> </FileList>`<br /><br /> **DisplayName:** Hodnota, která prohlížeče objektů se zobrazí v seznamu Procházet.<br /><br /> **PlatformIdentity:** Existence tohoto atributu instruuje Visual Studio a nástroje MSBuild, sady SDK je sadu SDK platformy a že odkazy přidány z něj neměla Kopírovat místně.<br /><br /> **TargetFramework:** Tento atribut se používá sada Visual Studio k zajištění, který pouze projekty, které cílí stejné rozhraní uvedená hodnota tohoto atributu můžou využívat sadu SDK.<br /><br /> **MinVSVersion:** Tento atribut se používá sada Visual Studio používat pouze se sadami SDK služby, které se vztahují k němu.<br /><br /> **Referenční dokumentace:** Tento atribut musí být zadán pouze odkazy, které obsahují ovládací prvky. Informace o tom, jak určit, zda odkaz obsahuje ovládací prvky najdete níže. |
 
-##  <a name="ExtensionSDKs"></a> Rozšíření sady SDK
+## <a name="ExtensionSDKs"></a> Rozšíření sady SDK
  Následující části popisují, co potřebujete k nasazení rozšíření sady SDK.
 
 ### <a name="installation"></a>Instalace
@@ -72,13 +72,13 @@ ms.locfileid: "59661217"
 
  Pokud chcete použít jiné umístění, musíte udělat jednu ze dvou kroků:
 
-1.  Zadejte ji v klíči registru:
+1. Zadejte ji v klíči registru:
 
      **HKLM\Software\Microsoft\Microsoft SDKs\<target platform>\v<platform version number\>\ExtensionSDKs\<SDKName>\<SDKVersion>**\
 
      a přidejte podklíč (výchozí), který má hodnotu `<path to SDK><SDKName><SDKVersion>`.
 
-2.  Přidat vlastnost MSBuild `SDKReferenceDirectoryRoot` do souboru projektu. Hodnota této vlastnosti je středníkem oddělený seznam adresářů, ve kterých jsou umístěny rozšíření sady SDK, kterou chcete odkazovat.
+2. Přidat vlastnost MSBuild `SDKReferenceDirectoryRoot` do souboru projektu. Hodnota této vlastnosti je středníkem oddělený seznam adresářů, ve kterých jsou umístěny rozšíření sady SDK, kterou chcete odkazovat.
 
 ### <a name="installation-layout"></a>Instalace rozložení
  Rozšíření sady SDK mají následující rozložení instalace:
@@ -191,10 +191,10 @@ MoreInfo = "https://msdn.microsoft.com/MySDK">
 
 16. Odkaz na soubor: Zadat pouze odkazy, které obsahují ovládací prvky nebo jsou soubory nativního Winmd. Informace o tom, jak určit, zda odkaz obsahuje ovládací prvky najdete v tématu [zadat umístění položky panelu nástrojů](#ToolboxItems) níže.
 
-##  <a name="ToolboxItems"></a> Zadejte umístění položky panelu nástrojů
+## <a name="ToolboxItems"></a> Zadejte umístění položky panelu nástrojů
  Prvek ToolBoxItems *SDKManifest.xml* schéma určuje kategorii a umístění položky panelu nástrojů sady SDK pro platformu a rozšíření. Následující příklady ukazují, jak zadat jiné umístění. To se vztahuje na odkazy WinMD a DLL.
 
-1.  Umístit ovládací prvky v kategorii výchozí sady nástrojů.
+1. Umístit ovládací prvky v kategorii výchozí sady nástrojů.
 
     ```
     <File Reference = "sample.winmd">
@@ -202,7 +202,7 @@ MoreInfo = "https://msdn.microsoft.com/MySDK">
     </File>
     ```
 
-2.  Umístit ovládací prvky v rámci určité kategorie název.
+2. Umístit ovládací prvky v rámci určité kategorie název.
 
     ```
     <File Reference = "sample.winmd">
@@ -210,7 +210,7 @@ MoreInfo = "https://msdn.microsoft.com/MySDK">
     </File>
     ```
 
-3.  Umístit ovládací prvky v rámci určité kategorie názvy.
+3. Umístit ovládací prvky v rámci určité kategorie názvy.
 
     ```
     <File Reference = "sample.winmd">
@@ -221,7 +221,7 @@ MoreInfo = "https://msdn.microsoft.com/MySDK">
     </File>
     ```
 
-4.  Umístit ovládací prvky v rámci názvy různých kategorií v programu Blend a Visual Studio.
+4. Umístit ovládací prvky v rámci názvy různých kategorií v programu Blend a Visual Studio.
 
     ```
     // Blend accepts a slightly different structure for the category name because it allows a path rather than a single category.
@@ -231,7 +231,7 @@ MoreInfo = "https://msdn.microsoft.com/MySDK">
     </File>
     ```
 
-5.  Zobrazení výčtu určité ovládací prvky jinak v programu Blend a Visual Studio.
+5. Zobrazení výčtu určité ovládací prvky jinak v programu Blend a Visual Studio.
 
     ```
     <File Reference = "sample.winmd">
@@ -242,7 +242,7 @@ MoreInfo = "https://msdn.microsoft.com/MySDK">
     </File>
     ```
 
-6.  Zobrazení výčtu specifických kontrolních mechanismů a umístit je na cestě Visual Studio běžné nebo pouze ve skupině všechny ovládací prvky.
+6. Zobrazení výčtu specifických kontrolních mechanismů a umístit je na cestě Visual Studio běžné nebo pouze ve skupině všechny ovládací prvky.
 
     ```
     <File Reference = "sample.winmd">
@@ -253,7 +253,7 @@ MoreInfo = "https://msdn.microsoft.com/MySDK">
     </File>
     ```
 
-7.  Zobrazení výčtu specifických kontrolních mechanismů a zobrazit pouze konkrétní sady v ChooseItems bez nich se na panelu nástrojů.
+7. Zobrazení výčtu specifických kontrolních mechanismů a zobrazit pouze konkrétní sady v ChooseItems bez nich se na panelu nástrojů.
 
     ```
     <File Reference = "sample.winmd">

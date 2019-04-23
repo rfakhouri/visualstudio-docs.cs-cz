@@ -12,12 +12,12 @@ ms.assetid: ad9beac3-4f8d-4093-ad0e-6fb00444a709
 caps.latest.revision: 27
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8057aa7f2e69d88f6e9cbdf20f9d13105aa031c1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ab746bfd3e8854fddd83f3fdde49a5d0dda397ca
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54762140"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052789"
 ---
 # <a name="support-for-user-settings"></a>Podpora pro uživatelská nastavení
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -26,9 +26,9 @@ VSPackage může definovat jeden nebo více kategorií nastavení, které jsou s
   
  Položky registru, který se označuje jako bod vlastní nastavení a identifikátor GUID definuje kategorie nastavení na VSPackage. VSPackage může podporovat více kategorie nastavení, každý definovaný pomocí vlastního nastavení bodu.  
   
--   Implementace nastavení, které jsou založeny na sestavení vzájemné spolupráce (pomocí <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings> rozhraní) by měl vytvořit vlastní nastavení bodu pomocí úpravy registru nebo pomocí skriptu registrátoru (souboru .rgs). Další informace najdete v tématu [vytváření skriptů registrátoru](http://msdn.microsoft.com/library/cbd5024b-8061-4a71-be65-7fee90374a35).  
+- Implementace nastavení, které jsou založeny na sestavení vzájemné spolupráce (pomocí <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings> rozhraní) by měl vytvořit vlastní nastavení bodu pomocí úpravy registru nebo pomocí skriptu registrátoru (souboru .rgs). Další informace najdete v tématu [vytváření skriptů registrátoru](http://msdn.microsoft.com/library/cbd5024b-8061-4a71-be65-7fee90374a35).  
   
--   Kód, který používá Managed Package Framework (MPF) by měl vytvořit vlastní nastavení bodů připojením <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> VSPackage pro každý bod vlastní nastavení.  
+- Kód, který používá Managed Package Framework (MPF) by měl vytvořit vlastní nastavení bodů připojením <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> VSPackage pro každý bod vlastní nastavení.  
   
      Pokud jeden VSPackage podporuje několik bodů vlastní nastavení, každý vlastního nastavení bodu je implementováno samostatné třídy a každé registraci jedinečnou instanci <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> třídy. V důsledku toho nastavení implementující třída může podporovat více než jednu kategorii nastavení.  
   

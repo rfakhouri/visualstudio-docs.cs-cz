@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 10683f2bd740a92b41c0063da15d093248396bd5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 24a365ba239e4d87e179bfecd664aa31aef0f359
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56619391"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050822"
 ---
 # <a name="how-to-programmatically-create-word-tables"></a>Postupy: Vytváření tabulek aplikace Word prostřednictvím kódu programu
   <xref:Microsoft.Office.Interop.Word.Tables> Kolekce je členem skupiny <xref:Microsoft.Office.Interop.Word.Document>, <xref:Microsoft.Office.Tools.Word.Document>, <xref:Microsoft.Office.Interop.Word.Selection>, a <xref:Microsoft.Office.Interop.Word.Range> třídy, což znamená, že můžete vytvořit tabulku v některém z těchto kontextech. Můžete použít <xref:Microsoft.Office.Interop.Word.Tables.Add%2A> metodu <xref:Microsoft.Office.Interop.Word.Tables> kolekce přidat tabulku v zadaném rozsahu.
@@ -51,7 +51,7 @@ ms.locfileid: "56619391"
 
 ### <a name="to-apply-a-style-to-a-table"></a>Pokud chcete použít styl na tabulku
 
-1.  Použití <xref:Microsoft.Office.Interop.Word.Table.Style%2A> vlastnost použít jeden z předdefinovaných stylů Word do tabulky.
+1. Použití <xref:Microsoft.Office.Interop.Word.Table.Style%2A> vlastnost použít jeden z předdefinovaných stylů Word do tabulky.
 
      Pokud chcete použít následující příklad kódu, spusťte jej z `ThisDocument` třídu ve vašem projektu.
 
@@ -84,7 +84,7 @@ ms.locfileid: "56619391"
 
 ### <a name="to-apply-a-style-to-a-table"></a>Pokud chcete použít styl na tabulku
 
-1.  Použití <xref:Microsoft.Office.Interop.Word.Table.Style%2A> vlastnost použít jeden z předdefinovaných stylů Word do tabulky.
+1. Použití <xref:Microsoft.Office.Interop.Word.Table.Style%2A> vlastnost použít jeden z předdefinovaných stylů Word do tabulky.
 
      Následující příklad kódu používá aktivního dokumentu. Pokud chcete použít tento příklad, spusťte jej z `ThisAddIn` třídu ve vašem projektu.
 

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5aa6e2fdcbca0a434af044b842cf2b4ece10c8ef
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 28a533fff657e9e6cf426124bf65068f15190e7a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59667336"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046562"
 ---
 # <a name="how-to-specify-which-target-to-build-first"></a>Postupy: Zadejte cíl, které nejdřív sestavit
 Soubor projektu může obsahovat jednu nebo více `Target` prvky, které definují, jak je sestaven projekt. [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) Modulu sestavení první ho najde a projektu všechny závislosti, pokud soubor projektu obsahuje `DefaultTargets` atribut, `InitialTargets` atribut nebo cíl je zadán v příkazovém řádku pomocí **– Cíl** přepnout.
@@ -35,7 +35,7 @@ Soubor projektu může obsahovat jednu nebo více `Target` prvky, které definuj
 
 #### <a name="to-specify-more-than-one-initial-target"></a>Chcete-li zadat více než jeden počáteční cíl
 
--   Počáteční cíle, oddělené středníky, v seznamu `InitialTargets` atribut `Project` elementu. Například pro spuštění `Clean` target a pak `Compile` cílové, zadejte:
+- Počáteční cíle, oddělené středníky, v seznamu `InitialTargets` atribut `Project` elementu. Například pro spuštění `Clean` target a pak `Compile` cílové, zadejte:
 
      `<Project InitialTargets="Clean;Compile">`
 
@@ -52,7 +52,7 @@ Soubor projektu může obsahovat jednu nebo více `Target` prvky, které definuj
 
 #### <a name="to-specify-more-than-one-default-target"></a>Chcete-li zadat více než jeden výchozí cíl
 
--   Výchozí cíle, oddělené středníky, v seznamu `DefaultTargets` atribut `Project` elementu. Například pro spuštění `Clean` target a pak `Compile` cílové, zadejte:
+- Výchozí cíle, oddělené středníky, v seznamu `DefaultTargets` atribut `Project` elementu. Například pro spuštění `Clean` target a pak `Compile` cílové, zadejte:
 
      `<Project DefaultTargets="Clean;Compile">`
 
@@ -61,13 +61,13 @@ Soubor projektu může obsahovat jednu nebo více `Target` prvky, které definuj
 
 #### <a name="to-use-a-target-other-than-the-default-target-first"></a>Nejprve použít jiný cíl než výchozí cíl
 
--   Zadejte cíl jako první použití cílové **-target** přepínač příkazového řádku. Příklad:
+- Zadejte cíl jako první použití cílové **-target** přepínač příkazového řádku. Příklad:
 
      `msbuild file.proj -target:Clean`
 
 #### <a name="to-use-several-targets-other-than-the-default-targets-first"></a>Nejprve použít několik cílů jiné než výchozí cíle
 
--   Seznam cílů, oddělené středníky nebo čárkami, pomocí **-target** přepínač příkazového řádku. Příklad:
+- Seznam cílů, oddělené středníky nebo čárkami, pomocí **-target** přepínač příkazového řádku. Příklad:
 
      `msbuild <file name>.proj -t:Clean;Compile`
 

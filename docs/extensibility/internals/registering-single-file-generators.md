@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ba7e6a97e3ee04f43eb7509e77f2e6972042473c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 5f16385452fa0fa0f4e706da1856185355aa95a5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603649"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047186"
 ---
 # <a name="registering-single-file-generators"></a>Registrace generátorů tvořených jedním souborem
 Zpřístupnit ve vlastní nástroj [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], je třeba jej zaregistrovat tak [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] lze vytvořit instanci a přidruží ji k konkrétní typ projektu.
@@ -38,15 +38,15 @@ Zpřístupnit ve vlastní nástroj [!INCLUDE[vsprvs](../../code-quality/includes
 
 2. Vytvořte klíč registru v požadovaný [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] hive v rámci generátorů\\*GUID* kde *GUID* identifikátor GUID určen systém projektu konkrétní jazyk nebo služby. Název klíče bude programový název vlastního nástroje. Vlastní nástroj klíč má následující hodnoty:
 
-   -   (Výchozí)
+   - (Výchozí)
 
         Volitelné. Poskytuje uživatelsky přívětivý popis vlastního nástroje. Tento parametr je nepovinný, ale doporučený.
 
-   -   IDENTIFIKÁTOR CLSID
+   - IDENTIFIKÁTOR CLSID
 
         Povinný parametr. Určuje identifikátor knihovně tříd rozhraní komponenty modelu COM, který implementuje <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>.
 
-   -   GeneratesDesignTimeSource
+   - GeneratesDesignTimeSource
 
         Povinný parametr. Určuje, zda typy z soubory vytvořené jazykem tohoto vlastního nástroje jsou k dispozici pro vizuální návrháře. Hodnota tohoto parametru musí být 0 (nula) typy nejsou k dispozici pro vizuální návrháře nebo 1 (jeden) pro typy, které jsou k dispozici pro vizuální návrháře.
 

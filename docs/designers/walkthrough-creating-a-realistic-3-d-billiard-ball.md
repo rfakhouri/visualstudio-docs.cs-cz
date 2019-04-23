@@ -1,5 +1,5 @@
 ---
-title: 'Průvodce: Vytvoření realistické 3D kulečníkové koule'
+title: 'Návod: Vytvoření realistické 3D kulečníkové koule'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: af8eb0f3-bf6a-4d1c-ab47-dcd88ab04efa
@@ -8,14 +8,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 241416a8c874a131b4c766bc0a707019d9ea12f1
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9f5788b2c6b2dab4b6f0f7a6c520aa1f2ab5f9ef
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55946153"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050631"
 ---
-# <a name="walkthrough-create-a-realistic-3d-billiard-ball"></a>Průvodce: Vytvoření realistické trojrozměrné kulečníkové koule
+# <a name="walkthrough-create-a-realistic-3d-billiard-ball"></a>Návod: Vytvoření realistické trojrozměrné kulečníkové koule
 
 Tento návod ukazuje, jak vytvořit realistické 3D kulečníkové koule pomocí shaderu Designer a editoru obrázků v sadě Visual Studio. Vzhled 3D kulečníkové koule je dosaženo kombinací několika technik shaderu se vhodnými prostředky textur.
 
@@ -23,11 +23,11 @@ Tento návod ukazuje, jak vytvořit realistické 3D kulečníkové koule pomocí
 
 Budete potřebovat následující komponenty a dovednosti k dokončení tohoto návodu:
 
--   Nástroj pro sestavení textur do mapy krychle, jako je například nástroj DirectX Texture, který je součástí červen 2010 rozhraní DirectX SDK.
+- Nástroj pro sestavení textur do mapy krychle, jako je například nástroj DirectX Texture, který je součástí červen 2010 rozhraní DirectX SDK.
 
--   Důvěrně editoru obrázků v sadě Visual Studio.
+- Důvěrně editoru obrázků v sadě Visual Studio.
 
--   Znalost návrháře shaderu v sadě Visual Studio.
+- Znalost návrháře shaderu v sadě Visual Studio.
 
 ## <a name="create-the-basic-appearance-with-shape-and-texture"></a>Vytvoření základního vzhledu pomocí tvaru a textury
 

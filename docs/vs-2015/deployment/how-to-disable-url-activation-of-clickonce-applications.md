@@ -17,12 +17,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c22128d20bf83a8c6f2295b79653eabb3439c4b9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 345e58b2c2a783bc9ffda8b915bf8baa66ad375a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54795883"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046965"
 ---
 # <a name="how-to-disable-url-activation-of-clickonce-applications"></a>Postupy: Zakázání aktivace adresy URL aplikací ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,13 +37,13 @@ Obvykle [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikace se autom
   
 #### <a name="to-disable-url-activation-for-your-application"></a>Chcete-li zákaz aktivace adresy URL pro vaši aplikaci  
   
-1.  Otevření manifestu nasazení v MageUI.exe. Pokud jste ještě nevytvořili, jednu, postupujte podle kroků v [názorný postup: Ruční nasazení aplikace ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
+1. Otevření manifestu nasazení v MageUI.exe. Pokud jste ještě nevytvořili, jednu, postupujte podle kroků v [názorný postup: Ruční nasazení aplikace ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
   
-2.  Vyberte **možnosti nasazení** kartu.  
+2. Vyberte **možnosti nasazení** kartu.  
   
-3.  Zrušte **automaticky spustit po instalaci aplikace** zaškrtávací políčko.  
+3. Zrušte **automaticky spustit po instalaci aplikace** zaškrtávací políčko.  
   
-4.  Uložit a podepsání manifestu.  
+4. Uložit a podepsání manifestu.  
   
 ## <a name="see-also"></a>Viz také  
  [Publikování aplikací ClickOnce](../deployment/publishing-clickonce-applications.md)

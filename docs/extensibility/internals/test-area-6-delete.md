@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7f62b580b72f7910f8d5a688acc8df61361286c0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a1763e51a09ba797bd22c85ba998e1533aa18f97
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56627919"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050757"
 ---
 # <a name="test-area-6-delete"></a>Testovací oblast 6: Odstranit
 Tato oblast testovací modul plug-in správy zdrojového kódu zahrnuje akce odstranění.
@@ -36,13 +36,13 @@ Tato oblast testovací modul plug-in správy zdrojového kódu zahrnuje akce ods
 ## <a name="expected-behavior"></a>Očekávané chování
  Očekávané chování u testovací případy v testovací oblast odstranění je:
 
--   Odstraněné položky už nejsou viditelné v rámci **Průzkumníka řešení**.
+- Odstraněné položky už nejsou viditelné v rámci **Průzkumníka řešení**.
 
--   Nadřazený odstraněný projekt nebo položku je rezervován podle potřeby (případně s výzvou.)
+- Nadřazený odstraněný projekt nebo položku je rezervován podle potřeby (případně s výzvou.)
 
--   Po odstranění rezervovaný nebo položka se přidala, se nezobrazí v **čekající vrácení se změnami** okna.
+- Po odstranění rezervovaný nebo položka se přidala, se nezobrazí v **čekající vrácení se změnami** okna.
 
--   Položka stále existuje v rámci úložiště správy zdrojových kódů, i po jejím odstranění a musí být ručně odstraněna.
+- Položka stále existuje v rámci úložiště správy zdrojových kódů, i po jejím odstranění a musí být ručně odstraněna.
 
 |Akce|Testovací kroky|Chcete-li ověřit očekávané výsledky|
 |------------|----------------|--------------------------------|

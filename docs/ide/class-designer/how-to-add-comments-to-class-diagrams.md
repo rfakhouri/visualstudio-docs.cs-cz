@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 39b220ddc42857040a51b2308c6d4a83d931de09
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ad54dc716e02eabcc064d87213d01491f43eae82
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970540"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052308"
 ---
 # <a name="how-to-add-comments-to-class-diagrams"></a>Postupy: Přidání komentářů do diagramů tříd
 
@@ -31,9 +31,9 @@ Obrazec komentáře můžete změnit velikost, ale nemůže změnit dalších as
 
 ## <a name="to-add-a-comment"></a>A přidejte komentář.
 
-1.  Přetáhněte komentář z **panel nástrojů návrhář tříd** do diagramu tříd.
+1. Přetáhněte komentář z **panel nástrojů návrhář tříd** do diagramu tříd.
 
-2.  Klikněte na nový komentář obrazec v diagramu a zadejte požadovaný text.
+2. Klikněte na nový komentář obrazec v diagramu a zadejte požadovaný text.
 
 ## <a name="see-also"></a>Viz také:
 

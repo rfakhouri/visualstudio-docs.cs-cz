@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0fad2851be48c0b3dfc3546794d5b9907f55918a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: ae63dd41e18b9226967b77b8adec2f45d05d9447
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56637370"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60057170"
 ---
 # <a name="how-to-map-schemas-to-worksheets-inside-visual-studio"></a>Postupy: Mapování schémat na listy v prostředí Visual Studio
   Můžete namapovat schématu XML listu listu je otevřen v sadě Visual Studio. Můžete používat stejné nástroje Microsoft Office Excel, které používáte, pokud se sešit otevřít mimo sadu Visual Studio. Office project vytvoří stejné objekty, zda mapování schématu do listu před nebo po vytvoření řešení pro Excel.
@@ -34,28 +34,28 @@ ms.locfileid: "56637370"
 
 ## <a name="to-map-an-xml-schema-to-an-excel-worksheet-in-visual-studio"></a>K mapování schématu XML listu aplikace Excel v sadě Visual Studio
 
-1.  Otevřete Excelový sešit nebo šablonu projektu v sadě Visual Studio.
+1. Otevřete Excelový sešit nebo šablonu projektu v sadě Visual Studio.
 
-2.  Klepněte na listu přesunout fokus do návrháře.
+2. Klepněte na listu přesunout fokus do návrháře.
 
-3.  Na pásu karet klikněte na tlačítko **Developer** kartu.
+3. Na pásu karet klikněte na tlačítko **Developer** kartu.
 
     > [!NOTE]
     >  Pokud **Developer** karta není zobrazena, musíte ji nejdříve zobrazit. Další informace najdete v tématu [jak: Zobrazení karty Vývojář na pásu karet](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
 
-4.  V **XML** klikněte na možnost **zdroj**.
+4. V **XML** klikněte na možnost **zdroj**.
 
      **XML použitého jako zdroj** otevře se okno.
 
-5.  V **XML použitého jako zdroj** okna, klikněte na tlačítko **mapování XML**.
+5. V **XML použitého jako zdroj** okna, klikněte na tlačítko **mapování XML**.
 
      **Mapování XML** zobrazí se dialogové okno.
 
-6.  V **mapování XML** dialogové okno, klikněte na tlačítko **přidat**.
+6. V **mapování XML** dialogové okno, klikněte na tlačítko **přidat**.
 
-7.  Přejděte do souboru schématu, vyberte ji a pak klikněte na tlačítko **otevřít**.
+7. Přejděte do souboru schématu, vyberte ji a pak klikněte na tlačítko **otevřít**.
 
-8.  Klikněte na **OK**.
+8. Klikněte na **OK**.
 
      Schéma je vyjádřena v **XML použitého jako zdroj** okna. Ve vašem projektu, typovaného <xref:System.Data.DataSet> je generován a základě schématu a <xref:System.Windows.Forms.BindingSource> se vytvoří.
 

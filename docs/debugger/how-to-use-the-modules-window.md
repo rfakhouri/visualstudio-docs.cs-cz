@@ -25,12 +25,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0425929908f17b33de71a49b03ae8de729f28309
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 400961eaa14b87d70a685a87be5df48ac92c8281
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56681892"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047550"
 ---
 # <a name="view-dlls-and-executables-in-the-modules-window-c-c-visual-basic-f"></a>V okně moduly zobrazení knihovny DLL a spustitelné soubory (C#, C++, Visual Basic, F#)
 
@@ -73,9 +73,9 @@ Ve výchozím nastavení **moduly** okno seřadí podle pořadí načítání mo
 
 **Chcete-li změnit chování pro konkrétní modul načítání symbolů:**
 
-1.  V **moduly** okna, klikněte pravým tlačítkem na modul.
+1. V **moduly** okna, klikněte pravým tlačítkem na modul.
 
-1.  V místní nabídce vyberte nebo zrušte výběr **vždy zatížení automaticky**. Změny se projeví v další relace ladění.
+1. V místní nabídce vyberte nebo zrušte výběr **vždy zatížení automaticky**. Změny se projeví v další relace ladění.
 
 ## <a name="see-also"></a>Viz také:
 - [Pozastavení provádění](/previous-versions/visualstudio/visual-studio-2010/7z9se2d8(v=vs.100))

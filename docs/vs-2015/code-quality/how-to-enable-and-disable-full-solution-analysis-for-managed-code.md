@@ -11,12 +11,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 6b9efdb5ea3e7ccbee9aefb724e847db6a37c2a0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: fddc41d264f30f6de5a2f69b098865cf3d997147
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54755788"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044821"
 ---
 # <a name="how-to-enable-and-disable-full-solution-analysis-for-managed-code"></a>Postupy: Povolení a zákaz úplné analýzy řešení pro spravovaný kód
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,11 +30,11 @@ POZNÁMKA:]
   
 #### <a name="to-toggle-full-solution-analysis"></a>Chcete-li přepnout úplné analýzy řešení  
   
-1.  V hlavní nabídce v sadě Visual Studio, zvolte **nástroje** &#124; **možnosti** zobrazíte **možnosti** dialogové okno.  
+1. V hlavní nabídce v sadě Visual Studio, zvolte **nástroje** &#124; **možnosti** zobrazíte **možnosti** dialogové okno.  
   
-2.  V **možnosti** dialogového okna zvolte **textový Editor** &#124; **jazyka C#** nebo **základní** &#124; **Upřesnit**.  
+2. V **možnosti** dialogového okna zvolte **textový Editor** &#124; **jazyka C#** nebo **základní** &#124; **Upřesnit**.  
   
-3.  Vyberte **povolení úplné analýzy řešení** zaškrtávací políčko pro povolení úplné analýzy řešení, nebo zrušte zaškrtnutí políčka pro jeho zakázání. Zvolte **OK** tlačítko až budete hotovi.  
+3. Vyberte **povolení úplné analýzy řešení** zaškrtávací políčko pro povolení úplné analýzy řešení, nebo zrušte zaškrtnutí políčka pro jeho zakázání. Zvolte **OK** tlačítko až budete hotovi.  
   
      ![Povolte úplné řešení analýzy zaškrtávací políčko. ](../code-quality/media/fsa-toolsoptions.png "FSA_ToolsOptions")  
   

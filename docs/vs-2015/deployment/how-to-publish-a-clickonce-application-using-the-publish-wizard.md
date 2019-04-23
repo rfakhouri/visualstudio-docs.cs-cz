@@ -18,12 +18,12 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 45ca2bd23c6da7d86b65cc05c0b0dee670e2718f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 48b5d8406f5b5c6d43afadf9e544914e6133090c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54774950"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046935"
 ---
 # <a name="how-to-publish-a-clickonce-application-using-the-publish-wizard"></a>Postupy: Publikování aplikace ClickOnce pomocí průvodce publikováním
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,11 +50,11 @@ Pro aplikaci ClickOnce zpřístupnit uživatelům, je nutné ji publikovat na sd
   
 4. V **jak budou uživatelé aplikaci instalovat?** vyberte umístění, odkud budou uživatelé instalovat aplikaci:  
   
-   -   Pokud budou uživatelé instalovat z webového serveru, klikněte na tlačítko **z webu** a zadejte adresu URL, která odpovídá cestu souboru zadanou v předchozím kroku. Klikněte na **Další**. (Tato možnost se obvykle používá při zadání adresy FTP jako umístění pro publikování. Přímé stažení ze serveru FTP není podporováno. Proto je nutné zadat adresu URL zde.)  
+   - Pokud budou uživatelé instalovat z webového serveru, klikněte na tlačítko **z webu** a zadejte adresu URL, která odpovídá cestu souboru zadanou v předchozím kroku. Klikněte na **Další**. (Tato možnost se obvykle používá při zadání adresy FTP jako umístění pro publikování. Přímé stažení ze serveru FTP není podporováno. Proto je nutné zadat adresu URL zde.)  
   
-   -   Pokud uživatelé nainstalují aplikace přímo ze sdílené složky, klikněte na tlačítko **ze sdílené složky UNC cestu nebo sdílená složka**a potom klikněte na tlačítko **Další**. (To je pro publikování umístění formuláře c:\deploy\myapp nebo \\\server\myapp.)  
+   - Pokud uživatelé nainstalují aplikace přímo ze sdílené složky, klikněte na tlačítko **ze sdílené složky UNC cestu nebo sdílená složka**a potom klikněte na tlačítko **Další**. (To je pro publikování umístění formuláře c:\deploy\myapp nebo \\\server\myapp.)  
   
-   -   Pokud budou uživatelé instalovat z vyměnitelných médií, klikněte na tlačítko **z disku CD-ROM nebo DVD-ROM**a potom klikněte na tlačítko **Další**.  
+   - Pokud budou uživatelé instalovat z vyměnitelných médií, klikněte na tlačítko **z disku CD-ROM nebo DVD-ROM**a potom klikněte na tlačítko **Další**.  
   
 5. Na **bude aplikace dostupná offline?** klikněte na příslušnou možnost:  
   

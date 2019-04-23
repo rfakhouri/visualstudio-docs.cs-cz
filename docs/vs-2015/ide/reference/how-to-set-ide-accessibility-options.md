@@ -11,12 +11,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e01d73457a0b6bf6da2114a4ae967c25f9953a9a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 18f03e2bd37d8275685f34a65c9ab96740ed80a3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59670322"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051618"
 ---
 # <a name="how-to-set-ide-accessibility-options"></a>Postupy: Nastavení možností usnadnění přístupu v integrovaném vývojovém prostředí
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -42,11 +42,11 @@ ms.locfileid: "59670322"
   
 ##### <a name="to-change-the-size-of-text-in-text-based-tool-windows-and-editors"></a>Chcete-li změnit velikost textu v oknech nástroje pracujícího s textem a editory  
   
-1.  Z **nástroje** nabídce zvolte **možnosti**.  
+1. Z **nástroje** nabídce zvolte **možnosti**.  
   
-2.  Zvolte **písma a barvy** na **prostředí** složky.  
+2. Zvolte **písma a barvy** na **prostředí** složky.  
   
-3.  Vyberte možnost na **zobrazit nastavení pro** rozevírací nabídky.  
+3. Vyberte možnost na **zobrazit nastavení pro** rozevírací nabídky.  
   
      Chcete-li změnit velikost písma textu v editoru, zvolte **textový Editor**.  
   
@@ -56,16 +56,16 @@ ms.locfileid: "59670322"
   
      Chcete-li změnit velikost písma textu v příkazu dokončení automaticky otevíraná okna, zvolte **dokončování**.  
   
-4.  Z **zobrazení položek**vyberte **prostý Text**.  
+4. Z **zobrazení položek**vyberte **prostý Text**.  
   
-5.  V **písmo**, vyberte nový typ písma.  
+5. V **písmo**, vyberte nový typ písma.  
   
-6.  V **velikost**, vyberte novou velikost písma.  
+6. V **velikost**, vyberte novou velikost písma.  
   
     > [!NOTE]
     >  Chcete-li obnovit velikost okna textových nástrojů a editory, zvolte **použít výchozí hodnoty**.  
   
-7.  Zvolte **OK**.  
+7. Zvolte **OK**.  
   
 ### <a name="changing-the-colors-used-in-the-ide"></a>Změna barvy použité v integrovaném vývojovém prostředí  
  Můžete také změnit výchozí barvy pro text, okraj ukazatele, prázdné znaky a prvky kódu v editoru.  
@@ -75,40 +75,40 @@ ms.locfileid: "59670322"
   
 ##### <a name="to-change-the-color-of-items-in-the-editor"></a>Chcete-li změnit barva položek v editoru  
   
-1.  Z **nástroje** nabídce zvolte **možnosti**.  
+1. Z **nástroje** nabídce zvolte **možnosti**.  
   
-2.  Zvolte **písma a barvy** z **prostředí** složky.  
+2. Zvolte **písma a barvy** z **prostředí** složky.  
   
-3.  V **zobrazit nastavení pro**, zvolte **textový Editor**.  
+3. V **zobrazit nastavení pro**, zvolte **textový Editor**.  
   
-4.  Z **zobrazení položek**, vyberte nějakou položku, jejichž zobrazení je potřeba změnit, jako například **prostý Text**, **okraj indikátoru**, **viditelné prázdné znaky**, **Atributu HTML Name**, nebo **atribut XML**.  
+4. Z **zobrazení položek**, vyberte nějakou položku, jejichž zobrazení je potřeba změnit, jako například **prostý Text**, **okraj indikátoru**, **viditelné prázdné znaky**, **Atributu HTML Name**, nebo **atribut XML**.  
   
-5.  Zobrazení nastavení vyberte z následujících možností: **Popředí položky**, **položky pozadí**, a **tučné**.  
+5. Zobrazení nastavení vyberte z následujících možností: **Popředí položky**, **položky pozadí**, a **tučné**.  
   
-6.  Zvolte **OK**.  
+6. Zvolte **OK**.  
   
 ## <a name="toolbars"></a>Panely nástrojů  
  Vylepšení nástrojů použitelnost a přístupnost, přidáním textu tlačítka na panelu nástrojů.  
   
 #### <a name="to-assign-text-to-toolbar-buttons"></a>Přiřadit text tlačítka na panelu nástrojů  
   
-1.  Z **nástroje** nabídce zvolte **vlastní**.  
+1. Z **nástroje** nabídce zvolte **vlastní**.  
   
-2.  V **vlastní** dialogové okno, vyberte **příkazy** kartu.  
+2. V **vlastní** dialogové okno, vyberte **příkazy** kartu.  
   
-3.  Vyberte **nástrojů** a pak zvolte možnost, která obsahuje tlačítko, které chcete zobrazit text pro název panelu nástrojů.  
+3. Vyberte **nástrojů** a pak zvolte možnost, která obsahuje tlačítko, které chcete zobrazit text pro název panelu nástrojů.  
   
-4.  V seznamu vyberte příkaz, který máte v úmyslu změnit.  
+4. V seznamu vyberte příkaz, který máte v úmyslu změnit.  
   
-5.  Zvolte **změnit výběr**.  
+5. Zvolte **změnit výběr**.  
   
-6.  Zvolte **obrázků a textu**.  
+6. Zvolte **obrázků a textu**.  
   
 #### <a name="to-modify-the-buttons-displayed-text"></a>Chcete-li na tlačítko změnit zobrazený text  
   
-1.  Znovu vyberte **změnit výběr**.  
+1. Znovu vyberte **změnit výběr**.  
   
-2.  V blízkosti **název**, vložit zadejte nový popisek vybraného tlačítka.  
+2. V blízkosti **název**, vložit zadejte nový popisek vybraného tlačítka.  
   
 ## <a name="see-also"></a>Viz také  
  [Funkce pro usnadnění přístupu sady Visual Studio](../../ide/reference/accessibility-features-of-visual-studio.md)   

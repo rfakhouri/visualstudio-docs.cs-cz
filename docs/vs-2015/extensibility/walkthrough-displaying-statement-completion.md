@@ -1,5 +1,5 @@
 ---
-title: 'Průvodce: Zobrazení dokončování příkazů | Dokumentace Microsoftu'
+title: 'Návod: Zobrazení dokončování příkazů | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -10,14 +10,14 @@ ms.assetid: f3152c4e-7673-4047-a079-2326941d1c83
 caps.latest.revision: 37
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 06377a3bc8bd192a7c3f66d359350148fe912239
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: db4e63beb1e3d4ff53e547492ae9eae7ee8001e8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54774886"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045015"
 ---
-# <a name="walkthrough-displaying-statement-completion"></a>Průvodce: Zobrazení dokončování příkazů
+# <a name="walkthrough-displaying-statement-completion"></a>Návod: Zobrazení dokončování příkazů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Doplňování výrazů založený na jazyce lze implementovat definováním identifikátory, pro které chcete poskytnout dokončení a potom aktivuje relace dokončení. Můžete definovat dokončování příkazů v rámci služby jazyka, definovat vlastní příponu názvu souboru a typu obsahu a pak zobrazí dokončení právě daného typu, nebo můžete aktivovat dokončování pro existující typ obsahu, například "ve formátu prostého textu". Tento návod ukazuje, jak aktivovat doplňování výrazů pro typ obsahu "jako prostý text", což je typ obsahu textových souborů. Typ obsahu "text" je nadřazeného člena pro všechny ostatní typy obsahu, včetně kódu a soubory XML.  
@@ -33,13 +33,13 @@ Doplňování výrazů založený na jazyce lze implementovat definováním iden
   
 #### <a name="to-create-a-mef-project"></a>Chcete-li vytvořit projekt rozhraní MEF  
   
-1.  Vytvořte projekt VSIX C#. (V **nový projekt** dialogového okna, vyberte **Visual C# / rozšíření**, pak **projekt VSIX**.) Pojmenujte řešení `CompletionTest`.  
+1. Vytvořte projekt VSIX C#. (V **nový projekt** dialogového okna, vyberte **Visual C# / rozšíření**, pak **projekt VSIX**.) Pojmenujte řešení `CompletionTest`.  
   
-2.  Přidejte do projektu šablony položky editoru třídění. Další informace najdete v tématu [vytváření rozšíření pomocí šablony položky editoru](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
+2. Přidejte do projektu šablony položky editoru třídění. Další informace najdete v tématu [vytváření rozšíření pomocí šablony položky editoru](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
   
-3.  Odstraníte existující soubory tříd.  
+3. Odstraníte existující soubory tříd.  
   
-4.  Přidejte následující odkazy do projektu a ujistěte se, že **CopyLocal** je nastavena na `false`:  
+4. Přidejte následující odkazy do projektu a ujistěte se, že **CopyLocal** je nastavena na `false`:  
   
      Microsoft.VisualStudio.Editor  
   
@@ -58,39 +58,39 @@ Doplňování výrazů založený na jazyce lze implementovat definováním iden
   
 #### <a name="to-implement-the-completion-source"></a>K implementaci zdroji dokončení  
   
-1.  Přidejte soubor třídy a pojmenujte ho `TestCompletionSource`.  
+1. Přidejte soubor třídy a pojmenujte ho `TestCompletionSource`.  
   
-2.  Přidejte tyto importy:  
+2. Přidejte tyto importy:  
   
      [!code-csharp[VSSDKCompletionTest#1](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletionsource.cs#1)]
      [!code-vb[VSSDKCompletionTest#1](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletionsource.vb#1)]  
   
-3.  Upravte deklaraci třídy pro `TestCompletionSource` tak, aby implementuje <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource>:  
+3. Upravte deklaraci třídy pro `TestCompletionSource` tak, aby implementuje <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource>:  
   
      [!code-csharp[VSSDKCompletionTest#2](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletionsource.cs#2)]
      [!code-vb[VSSDKCompletionTest#2](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletionsource.vb#2)]  
   
-4.  Přidat soukromé pole pro poskytovatele zdrojového kódu, textovou vyrovnávací paměť a seznam <xref:Microsoft.VisualStudio.Language.Intellisense.Completion> objekty (které odpovídají identifikátory, které se účastní relace dokončení):  
+4. Přidat soukromé pole pro poskytovatele zdrojového kódu, textovou vyrovnávací paměť a seznam <xref:Microsoft.VisualStudio.Language.Intellisense.Completion> objekty (které odpovídají identifikátory, které se účastní relace dokončení):  
   
      [!code-csharp[VSSDKCompletionTest#3](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletionsource.cs#3)]
      [!code-vb[VSSDKCompletionTest#3](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletionsource.vb#3)]  
   
-5.  Přidáte konstruktor, který nastaví poskytovatel správy zdrojových a vyrovnávací paměti. `TestCompletionSourceProvider` Třída je definována v dalších krocích:  
+5. Přidáte konstruktor, který nastaví poskytovatel správy zdrojových a vyrovnávací paměti. `TestCompletionSourceProvider` Třída je definována v dalších krocích:  
   
      [!code-csharp[VSSDKCompletionTest#4](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletionsource.cs#4)]
      [!code-vb[VSSDKCompletionTest#4](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletionsource.vb#4)]  
   
-6.  Implementace <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource.AugmentCompletionSession%2A> metodu tak, že přidáte dokončení sady, která obsahuje dokončování, které chcete poskytnout v kontextu. Každá sada dokončení obsahuje sadu <xref:Microsoft.VisualStudio.Language.Intellisense.Completion> dokončování a odpovídá na kartě okna dokončování. (V projektech Visual Basic jsou pojmenovány karty okna dokončování **běžné** a **všechny**.) Metoda FindTokenSpanAtPosition je definována v dalším kroku.  
+6. Implementace <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource.AugmentCompletionSession%2A> metodu tak, že přidáte dokončení sady, která obsahuje dokončování, které chcete poskytnout v kontextu. Každá sada dokončení obsahuje sadu <xref:Microsoft.VisualStudio.Language.Intellisense.Completion> dokončování a odpovídá na kartě okna dokončování. (V projektech Visual Basic jsou pojmenovány karty okna dokončování **běžné** a **všechny**.) Metoda FindTokenSpanAtPosition je definována v dalším kroku.  
   
      [!code-csharp[VSSDKCompletionTest#5](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletionsource.cs#5)]
      [!code-vb[VSSDKCompletionTest#5](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletionsource.vb#5)]  
   
-7.  Tyto metody slouží k vyhledání aktuálního slova z pozice kurzoru:  
+7. Tyto metody slouží k vyhledání aktuálního slova z pozice kurzoru:  
   
      [!code-csharp[VSSDKCompletionTest#6](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletionsource.cs#6)]
      [!code-vb[VSSDKCompletionTest#6](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletionsource.vb#6)]  
   
-8.  Implementace `Dispose()` metody:  
+8. Implementace `Dispose()` metody:  
   
      [!code-csharp[VSSDKCompletionTest#7](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletionsource.cs#7)]
      [!code-vb[VSSDKCompletionTest#7](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletionsource.vb#7)]  
@@ -100,17 +100,17 @@ Doplňování výrazů založený na jazyce lze implementovat definováním iden
   
 #### <a name="to-implement-the-completion-source-provider"></a>Pro implementaci zprostředkovatele zdroje dokončení  
   
-1.  Přidejte třídu pojmenovanou `TestCompletionSourceProvider` , který implementuje <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSourceProvider>. Tato třída se exportovat <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> "prostého textu" a <xref:Microsoft.VisualStudio.Utilities.NameAttribute> "dokončení testu".  
+1. Přidejte třídu pojmenovanou `TestCompletionSourceProvider` , který implementuje <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSourceProvider>. Tato třída se exportovat <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> "prostého textu" a <xref:Microsoft.VisualStudio.Utilities.NameAttribute> "dokončení testu".  
   
      [!code-csharp[VSSDKCompletionTest#8](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletionsource.cs#8)]
      [!code-vb[VSSDKCompletionTest#8](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletionsource.vb#8)]  
   
-2.  Import <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService>, který se používá k vyhledání ve zdroji dokončování aktuálního slova.  
+2. Import <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService>, který se používá k vyhledání ve zdroji dokončování aktuálního slova.  
   
      [!code-csharp[VSSDKCompletionTest#9](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletionsource.cs#9)]
      [!code-vb[VSSDKCompletionTest#9](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletionsource.vb#9)]  
   
-3.  Implementace <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSourceProvider.TryCreateCompletionSource%2A> metoda pro vytvoření instance zdroje dokončení.  
+3. Implementace <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSourceProvider.TryCreateCompletionSource%2A> metoda pro vytvoření instance zdroje dokončení.  
   
      [!code-csharp[VSSDKCompletionTest#10](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletionsource.cs#10)]
      [!code-vb[VSSDKCompletionTest#10](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletionsource.vb#10)]  
@@ -120,24 +120,24 @@ Doplňování výrazů založený na jazyce lze implementovat definováním iden
   
 #### <a name="to-implement-the-completion-command-handler-provider"></a>Pro implementaci zprostředkovatele obslužné rutiny dokončení příkazu  
   
-1.  Přidejte do ní soubor `TestCompletionCommandHandler`.  
+1. Přidejte do ní soubor `TestCompletionCommandHandler`.  
   
-2.  Přidejte tyto pomocí příkazů:  
+2. Přidejte tyto pomocí příkazů:  
   
      [!code-csharp[VSSDKCompletionTest#11](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletioncommandhandler.cs#11)]
      [!code-vb[VSSDKCompletionTest#11](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletioncommandhandler.vb#11)]  
   
-3.  Přidejte třídu pojmenovanou `TestCompletionHandlerProvider` , který implementuje <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener>. Exportovat pomocí této třídy <xref:Microsoft.VisualStudio.Utilities.NameAttribute> "obslužné rutiny tokenů dokončení", <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> "prostého textu" a <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute> z <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Editable>.  
+3. Přidejte třídu pojmenovanou `TestCompletionHandlerProvider` , který implementuje <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener>. Exportovat pomocí této třídy <xref:Microsoft.VisualStudio.Utilities.NameAttribute> "obslužné rutiny tokenů dokončení", <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> "prostého textu" a <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute> z <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Editable>.  
   
      [!code-csharp[VSSDKCompletionTest#12](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletioncommandhandler.cs#12)]
      [!code-vb[VSSDKCompletionTest#12](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletioncommandhandler.vb#12)]  
   
-4.  Import <xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService>, což umožňuje převod z <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> k <xref:Microsoft.VisualStudio.Text.Editor.ITextView>, <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionBroker>a <xref:Microsoft.VisualStudio.Shell.SVsServiceProvider> , která umožňuje přístup ke standardním službám Visual Studio.  
+4. Import <xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService>, což umožňuje převod z <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> k <xref:Microsoft.VisualStudio.Text.Editor.ITextView>, <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionBroker>a <xref:Microsoft.VisualStudio.Shell.SVsServiceProvider> , která umožňuje přístup ke standardním službám Visual Studio.  
   
      [!code-csharp[VSSDKCompletionTest#13](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletioncommandhandler.cs#13)]
      [!code-vb[VSSDKCompletionTest#13](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletioncommandhandler.vb#13)]  
   
-5.  Implementace <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener.VsTextViewCreated%2A> metoda pro vytvoření instance obslužná rutina příkazu.  
+5. Implementace <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener.VsTextViewCreated%2A> metoda pro vytvoření instance obslužná rutina příkazu.  
   
      [!code-csharp[VSSDKCompletionTest#14](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletioncommandhandler.cs#14)]
      [!code-vb[VSSDKCompletionTest#14](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletioncommandhandler.vb#14)]  
@@ -195,13 +195,13 @@ Doplňování výrazů založený na jazyce lze implementovat definováním iden
   
 #### <a name="to-build-and-test-the-completiontest-solution"></a>Pro vytváření a testování CompletionTest řešení  
   
-1.  Sestavte řešení.  
+1. Sestavte řešení.  
   
-2.  Při spuštění tohoto projektu v ladicím programu, je vytvořena instance druhou instanci aplikace Visual Studio.  
+2. Při spuštění tohoto projektu v ladicím programu, je vytvořena instance druhou instanci aplikace Visual Studio.  
   
-3.  Vytvořte textový soubor a zadejte nějaký text, který obsahuje slovo "Přidání".  
+3. Vytvořte textový soubor a zadejte nějaký text, který obsahuje slovo "Přidání".  
   
-4.  Při psaní nejprve "a" a potom "d", by měl zobrazit seznam, který obsahuje "Přidání" a "úpravy". Všimněte si, že je vybraná sčítání. Pokud zadáte jiný "d", v seznamu by měla obsahovat pouze "Přidání", který je teď vybrán. Můžete potvrdit "Přidání" stisknutím klávesy MEZERNÍK, tabulátor nebo Enter nebo zavřete seznam tak, že zadáte Esc ani jiného klíče.  
+4. Při psaní nejprve "a" a potom "d", by měl zobrazit seznam, který obsahuje "Přidání" a "úpravy". Všimněte si, že je vybraná sčítání. Pokud zadáte jiný "d", v seznamu by měla obsahovat pouze "Přidání", který je teď vybrán. Můžete potvrdit "Přidání" stisknutím klávesy MEZERNÍK, tabulátor nebo Enter nebo zavřete seznam tak, že zadáte Esc ani jiného klíče.  
   
 ## <a name="see-also"></a>Viz také  
  [Návod: Propojení typu obsahu příponu názvu souboru](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

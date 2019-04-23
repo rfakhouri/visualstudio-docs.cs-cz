@@ -13,21 +13,21 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c74db546307767b352387b1627310794ec833b0f
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: c420c4546a836d1440bdb150eba1319ad6218622
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59650379"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050243"
 ---
 # <a name="building-multiple-projects-in-parallel-with-msbuild"></a>Paralelní sestavování více projektů současně pomocí nástroje MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Nástroj MSBuild lze použít pro rychlejší sestavení více projektů tak, že budou tyto projekty spuštěny paralelně. Pro paralelní spuštění sestavení je možné na počítači s více jádry nebo s více procesory použít následující nastavení:  
   
--   Přepínač příkazového řádku `/maxcpucount`.  
+- Přepínač příkazového řádku `/maxcpucount`.  
   
--   Parametr úlohy <xref:Microsoft.Build.Tasks.MSBuild.BuildInParallel%2A> na úlohu nástroje MSBuild.  
+- Parametr úlohy <xref:Microsoft.Build.Tasks.MSBuild.BuildInParallel%2A> na úlohu nástroje MSBuild.  
   
 > [!NOTE]
 >  **/Verbosity** (**/v**) přepínač pomocí nástroje příkazového řádku může také ovlivnit výkon sestavení. Výkon sestavení se může snížit, je-li podrobnost informací protokolu sestavení nastavena na možnosti podrobné nebo diagnostické, které se používají pro řešení potíží. Další informace najdete v tématu [získávání protokolů sestavení](../msbuild/obtaining-build-logs-with-msbuild.md) a [Reference k příkazovému řádku](../msbuild/msbuild-command-line-reference.md).  

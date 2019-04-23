@@ -14,12 +14,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a949d72783f3d8ac1c2f0338e4ad7057f74653aa
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: cb0502128b95716b0598b373be81519a06911f06
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54766410"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052802"
 ---
 # <a name="define-packages-and-namespaces"></a>Definování balíčků a oborů názvů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ V sadě Visual Studio *balíčku* je kontejner pro definice elementů UML, jako 
   
  [Vlastnosti balíčků](#Properties)  
   
-##  <a name="Namespaces"></a> Obory názvů  
+## <a name="Namespaces"></a> Obory názvů  
  Balíčky jsou užitečné pro oddělení práce do různých oblastí. Každý balíček definuje obor názvů tak, aby názvy, které jsou definovány v různých balíčcích nejsou v konfliktu mezi sebou.  
   
  Vlastnost kvalifikovaný název každého prvku je úplný název balíčku, do které patří, a potom podle názvu vlastního elementu. Například, pokud váš balíček se nazývá `MyPackage`, třídu v rámci balíčku, budou mít úplný název jako `MyPackage::MyClass`. Protože každý prvek se nachází v modelu, každý kvalifikovaný název začíná názvem modelu.  
@@ -58,20 +58,20 @@ V sadě Visual Studio *balíčku* je kontejner pro definice elementů UML, jako 
   
  Balíčky jsou kontejnery. Je-li přesunout nebo odstranit balíček, tříd, balíčky a další věci definované uvnitř ho také přesunutí nebo odstranění. Totéž platí další prvky, které definují obory názvů.  
   
-##  <a name="Packages"></a> Vytváření a zobrazení balíčků  
+## <a name="Packages"></a> Vytváření a zobrazení balíčků  
  Balíček můžete vytvářet v diagramu tříd UML, nebo v Průzkumníku modelů UML.  
   
 #### <a name="to-create-a-package-in-a-uml-class-diagram"></a>Chcete-li vytvořit balíček v diagramu tříd UML  
   
-1.  Otevřete diagram tříd UML, nebo vytvořte novou.  
+1. Otevřete diagram tříd UML, nebo vytvořte novou.  
   
-2.  Klikněte na tlačítko **balíčku** nástroj.  
+2. Klikněte na tlačítko **balíčku** nástroj.  
   
-3.  Klikněte kamkoli v diagramu. Zobrazí se nový balíček tvar.  
+3. Klikněte kamkoli v diagramu. Zobrazí se nový balíček tvar.  
   
      Klikněte na tlačítko v existující balíček vnořit jeden balíček v jiném.  
   
-4.  Zadejte nový název pro balíček.  
+4. Zadejte nový název pro balíček.  
   
 #### <a name="to-create-a-package-in-uml-model-explorer"></a>Chcete-li vytvořit balíček v Průzkumníku modelů UML  
   
@@ -92,12 +92,12 @@ V sadě Visual Studio *balíčku* je kontejner pro definice elementů UML, jako 
   
 #### <a name="to-show-an-existing-package-on-a-uml-class-diagram"></a>Chcete-li zobrazit existující balíček v diagramu tříd UML  
   
--   Přetáhněte tento balíček z Průzkumníku modelů UML na diagram tříd.  
+- Přetáhněte tento balíček z Průzkumníku modelů UML na diagram tříd.  
   
     > [!NOTE]
     >  Tím se vytvoří zobrazení balíčku na tomto diagramu. Nezobrazí se nutně všechny prvky, že balíček obsahuje. Ujistěte se, že se zobrazí veškerý obsah pro balíček, že ji zobrazte v Průzkumníku modelů UML.  
   
-##  <a name="Elements"></a> Vytvoření modelu elementů v rámci balíčky  
+## <a name="Elements"></a> Vytvoření modelu elementů v rámci balíčky  
  Existují čtyři způsoby, ve kterých můžete umístit prvky modelu uvnitř balíčku:  
   
 - Přidáte nový prvek do balíčku v Průzkumníku modelů UML.  
@@ -112,98 +112,98 @@ V sadě Visual Studio *balíčku* je kontejner pro definice elementů UML, jako 
   
 #### <a name="to-create-an-element-in-a-package-in-uml-model-explorer"></a>Chcete-li vytvořit element v balíčku v Průzkumníku modelů UML  
   
-1.  Otevřít **Průzkumníku modelů UML**. Na **zobrazení** nabídky, přejděte k **ostatní Windows**a potom klikněte na tlačítko **Průzkumníku modelů UML**.  
+1. Otevřít **Průzkumníku modelů UML**. Na **zobrazení** nabídky, přejděte k **ostatní Windows**a potom klikněte na tlačítko **Průzkumníku modelů UML**.  
   
-2.  Klikněte pravým tlačítkem na balíček nebo model, ke kterému chcete přidat nový prvek.  
+2. Klikněte pravým tlačítkem na balíček nebo model, ke kterému chcete přidat nový prvek.  
   
-3.  Přejděte na **přidat**a potom klikněte na typ prvku, který chcete přidat.  
+3. Přejděte na **přidat**a potom klikněte na typ prvku, který chcete přidat.  
   
      Nový prvek se zobrazí pod balíček.  
   
-4.  Zadejte název pro nový prvek.  
+4. Zadejte název pro nový prvek.  
   
     > [!NOTE]
     >  Nový prvek se nezobrazí na jakýkoliv diagram. Vytvoření zobrazení nového elementu, ji můžete přetáhnout z Průzkumníku modelů UML do diagramu. Diagram musí být typ, který se zobrazí tento typ elementu.  
   
 #### <a name="to-create-an-element-in-a-package-on-a-uml-class-diagram"></a>Chcete-li vytvořit element v balíčku v diagramu tříd UML  
   
-1.  Otevřete diagram třídy, na kterém se zobrazí balíčku.  
+1. Otevřete diagram třídy, na kterém se zobrazí balíčku.  
   
-    -   Pokud jste to ještě neudělali, vytvořte nový balíček.  
+    - Pokud jste to ještě neudělali, vytvořte nový balíček.  
   
-    -   Chcete-li existující balíček se zobrazí v diagramu tříd, můžete přetáhnout balíček z **Průzkumníku modelů UML** do diagramu tříd.  
+    - Chcete-li existující balíček se zobrazí v diagramu tříd, můžete přetáhnout balíček z **Průzkumníku modelů UML** do diagramu tříd.  
   
-2.  Klikněte na nástroj pro třídy, rozhraní nebo výčet nebo balíčku.  
+2. Klikněte na nástroj pro třídy, rozhraní nebo výčet nebo balíčku.  
   
-3.  Klikněte na balíček, ve kterém chcete vložit nový prvek.  
+3. Klikněte na balíček, ve kterém chcete vložit nový prvek.  
   
      Nový prvek se zobrazí uvnitř balíčku.  
   
 #### <a name="to-create-all-the-elements-of-a-diagram-in-a-specified-package"></a>Chcete-li vytvořit všechny prvky diagramu v zadaném balíčku  
   
-1.  Vytvoření balíčku, pokud jste to ještě neudělali.  
+1. Vytvoření balíčku, pokud jste to ještě neudělali.  
   
-2.  Otevřete diagram komponent, diagram případu použití nebo diagram tříd UML.  
+2. Otevřete diagram komponent, diagram případu použití nebo diagram tříd UML.  
   
-3.  Otevřete vlastnosti diagramu. Klikněte pravým tlačítkem na prázdnou část diagramu a potom klikněte na tlačítko **vlastnosti**.  
+3. Otevřete vlastnosti diagramu. Klikněte pravým tlačítkem na prázdnou část diagramu a potom klikněte na tlačítko **vlastnosti**.  
   
-4.  V **odkazovaný balíček** vlastnosti, vyberte balíček, který má obsahovat obsah do diagramu.  
+4. V **odkazovaný balíček** vlastnosti, vyberte balíček, který má obsahovat obsah do diagramu.  
   
-5.  Vytvoření nových prvků v diagramu. Tyto budou umístěny do balíčku.  
+5. Vytvoření nových prvků v diagramu. Tyto budou umístěny do balíčku.  
   
-    -   **Kvalifikovaný název** jednotlivých prvků bude začínat úplný název balíčku.  
+    - **Kvalifikovaný název** jednotlivých prvků bude začínat úplný název balíčku.  
   
-    -   V **Průzkumníku modelů UML**, se zobrazí každý prvek v rámci balíčku.  
+    - V **Průzkumníku modelů UML**, se zobrazí každý prvek v rámci balíčku.  
   
-##  <a name="Moving"></a> Přesouvání elementů do proměnné a z balíčků  
+## <a name="Moving"></a> Přesouvání elementů do proměnné a z balíčků  
  Jeden nebo více prvků lze přesunout, nebo z balíčku.  
   
  Pokud přesunete balíčku, celý její obsah se přesune s ním.  
   
 #### <a name="to-move-an-element-into-or-out-of-a-package"></a>Přesunout element do nebo z něj balíček  
   
--   V Průzkumníku modelů UML přetáhněte prvek do nebo z něj stromu, jejichž kořenový adresář je balíček.  
+- V Průzkumníku modelů UML přetáhněte prvek do nebo z něj stromu, jejichž kořenový adresář je balíček.  
   
      Kvalifikovaný název elementu se změní na zobrazit jeho nové vlastnícího balíčku nebo modelu.  
   
      \- nebo –  
   
--   V diagramu tříd přetáhněte prvek do balíčku obrazce.  
+- V diagramu tříd přetáhněte prvek do balíčku obrazce.  
   
      Kvalifikovaný název elementu se změní na zobrazit jeho nové vlastnícího balíčku.  
   
     > [!NOTE]
     >  Přetáhněte element z balíčku do prázdné části diagramu, jeho vlastnícího balíčku nezmění. Tímto způsobem můžete vytvořit diagram, který zobrazuje prvky z několika balíčky bez nutnosti zobrazit balíčky sami.  
   
-##  <a name="Pasting"></a> Vkládání elementů do balíčku  
+## <a name="Pasting"></a> Vkládání elementů do balíčku  
  Element můžete vložit do balíčku. Pokud skupina souvisejících prvků vložíte do balíčku, bude také vložit vztahy mezi nimi.  
   
 #### <a name="to-paste-elements-into-a-package-on-a-uml-class-diagram"></a>Chcete-li vložit prvky do balíčku v diagramu tříd UML  
   
-1.  V diagramu tříd UML vyberte všechny elementy, které chcete kopírovat. Klikněte pravým tlačítkem na jeden z nich a pak klikněte na tlačítko **kopírování**.  
+1. V diagramu tříd UML vyberte všechny elementy, které chcete kopírovat. Klikněte pravým tlačítkem na jeden z nich a pak klikněte na tlačítko **kopírování**.  
   
-2.  Klikněte pravým tlačítkem na balíček a pak klikněte na tlačítko **vložit**.  
+2. Klikněte pravým tlačítkem na balíček a pak klikněte na tlačítko **vložit**.  
   
     > [!NOTE]
     >  Balíček může být v různých diagramu.  
   
-##  <a name="Import"></a> Importovat relace mezi balíčky  
+## <a name="Import"></a> Importovat relace mezi balíčky  
  Můžete definovat vztah import mezi balíčky pomocí **importovat** nástroj.  
   
  Import znamená, že elementy definovaných v importované balíčku, které jsou prvky na konci šipku relace, jsou efektivně definovány také v importu balíčku. Elementy jehož viditelnosti je definován jako **balíčku** budou viditelné také v importu balíčku.  
   
  Vyhněte se vytváření smyčky ve vztazích importu.  
   
-##  <a name="References"></a> Odkazy z jednoho Namespace  
+## <a name="References"></a> Odkazy z jednoho Namespace  
  Pokud chcete odkazovat na prvek jeden balíček z jiného, musíte použít kvalifikovaný název daného elementu.  
   
  Předpokládejme například, že balíček `SalesCommon` definuje typ `CustomerAddress`. V dalším balíčku `RestaurantSales`, můžete definovat typ `MealOrder`, který má atribut typu adresy zákazníka. Máte dvě možnosti:  
   
--   Zadejte typ atributu pomocí plně kvalifikovaného názvu `SalesCommon::CustomerAddress`. Byste měli dělat pouze pokud mohou `CustomerAddress` má jeho **viditelnost** vlastnost nastavena na hodnotu **veřejné**.  
+- Zadejte typ atributu pomocí plně kvalifikovaného názvu `SalesCommon::CustomerAddress`. Byste měli dělat pouze pokud mohou `CustomerAddress` má jeho **viditelnost** vlastnost nastavena na hodnotu **veřejné**.  
   
--   Vytvoří vztah Import z `RestaurantSales` balíček do `SalesCommon` balíčku. Můžete použít `CustomerAddress` bez použití jeho kvalifikovaný název.  
+- Vytvoří vztah Import z `RestaurantSales` balíček do `SalesCommon` balíčku. Můžete použít `CustomerAddress` bez použití jeho kvalifikovaný název.  
   
-##  <a name="Properties"></a> Vlastnosti balíčků  
+## <a name="Properties"></a> Vlastnosti balíčků  
  Každý balíček má následující vlastnosti. Pokud chcete zobrazit vlastnosti, klikněte pravým tlačítkem na balíček, v diagramu nebo v Průzkumníku modelů UML a potom klikněte na **vlastnosti**.  
   
 |Vlastnost|Výchozí hodnota|Popis|  

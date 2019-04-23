@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b4fba419605dd332346885dbf93460c1a4e53c9d
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: f0ebc1e4707b0240791524cb0b6b4ba75be897cd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223179"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050606"
 ---
 # <a name="how-to-change-fonts-and-colors-for-the-editor-in-visual-studio"></a>Postupy: Změna písma a barev v editoru v sadě Visual Studio
 
@@ -33,20 +33,20 @@ Můžete změnit výchozí řez písma, nastavit velikost písma a změnit barvy
 
 ## <a name="change-the-default-font-face-size-and-colors"></a>Změna výchozí řez písma, velikosti a barvy
 
-1.  Vyberte **možnosti** z **nástroje** nabídky a **prostředí** složky, vyberte **písma a barvy**.
+1. Vyberte **možnosti** z **nástroje** nabídky a **prostředí** složky, vyberte **písma a barvy**.
 
      [Písma a barvy, prostředí, dialogové okno Možnosti](../../ide/reference/fonts-and-colors-environment-options-dialog-box.md) otevře.
 
-2.  V **zobrazit nastavení pro**vyberte **textový Editor**.
+2. V **zobrazit nastavení pro**vyberte **textový Editor**.
 
-3.  Upravit **písmo** a **velikost** možnosti, jak změnit vzhled písma a velikost pro všechny elementy textu v editoru všechny.
+3. Upravit **písmo** a **velikost** možnosti, jak změnit vzhled písma a velikost pro všechny elementy textu v editoru všechny.
 
-4.  Vyberte odpovídající položku v **zobrazení položek**a potom změňte **popředí položky** a **položky pozadí** možnosti.
+4. Vyberte odpovídající položku v **zobrazení položek**a potom změňte **popředí položky** a **položky pozadí** možnosti.
 
     > [!TIP]
     > Klikněte na tlačítko **použít výchozí hodnoty** obnovíte výchozí nastavení.
 
-5.  Klikněte na **OK**.
+5. Klikněte na **OK**.
 
 ## <a name="see-also"></a>Viz také:
 

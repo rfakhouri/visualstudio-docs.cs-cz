@@ -11,23 +11,23 @@ ms.assetid: 2243d24a-c3d2-41d1-abbb-6db21a2db9ee
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c59ef3bdbbd96db82c8e865379907d95227628ab
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 028ad25495ba01d9763c8bec3bbb9c4480d72ff8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54791036"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054583"
 ---
 # <a name="threads"></a>Vlákna
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Z hlediska architektury ladicího programu **vlákno**:  
   
--   Je základní jednotka výpočtu. Vlákno spouští postupně jeho instrukce v rámci jednoho volání zásobníku, přechod z jednoho kódu kontextu na další.  
+- Je základní jednotka výpočtu. Vlákno spouští postupně jeho instrukce v rámci jednoho volání zásobníku, přechod z jednoho kódu kontextu na další.  
   
--   Můžete identifikovat samostatně a program běží a může být s názvem, pozastavit a obnovit. Vlákno můžete také zobrazit výčet jeho přidružené zásobníku a za určitých podmínek, lze přesunout do jiného zásobníku. Zadaný kontext rámec zásobníku, vlákno může vrátit jeho přidružené logické vlákno, pokud existuje. Vlákno obsahuje vlastnosti, jako je počet pozastavit, které mohou být zobrazeny v okně vlákna v integrovaném vývojovém prostředí.  
+- Můžete identifikovat samostatně a program běží a může být s názvem, pozastavit a obnovit. Vlákno můžete také zobrazit výčet jeho přidružené zásobníku a za určitých podmínek, lze přesunout do jiného zásobníku. Zadaný kontext rámec zásobníku, vlákno může vrátit jeho přidružené logické vlákno, pokud existuje. Vlákno obsahuje vlastnosti, jako je počet pozastavit, které mohou být zobrazeny v okně vlákna v integrovaném vývojovém prostředí.  
   
--   Je reprezentován [IDebugThread2](../../extensibility/debugger/reference/idebugthread2.md) rozhraní, obvykle vytvoří pomocí ladicího stroje (DE) nebo virtuální počítač v důsledku spuštění programu.  
+- Je reprezentován [IDebugThread2](../../extensibility/debugger/reference/idebugthread2.md) rozhraní, obvykle vytvoří pomocí ladicího stroje (DE) nebo virtuální počítač v důsledku spuštění programu.  
   
 ## <a name="see-also"></a>Viz také  
  [Programy](../../extensibility/debugger/programs.md)   

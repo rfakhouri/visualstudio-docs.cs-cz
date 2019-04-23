@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a8d2a359d49102daf4c221632fd275f9ef06e324
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 58b2495adf66f6c83bc631650e2a0f06f5b7cdd0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54963980"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047382"
 ---
 # <a name="persist-the-property-of-a-project-item"></a>Zachovat vlastnosti položky projektu
 Můžete chtít zachovat vlastnosti, které přidáte do položky projektu, jako je například autor zdrojového souboru. To lze provést uložení vlastnost v souboru projektu.
@@ -27,7 +27,7 @@ Můžete chtít zachovat vlastnosti, které přidáte do položky projektu, jako
 
 ## <a name="to-obtain-the-project-hierarchy-with-the-dte-object"></a>Chcete-li získat hierarchii projektu s objekt DTE
 
-1.  Přidejte následující kód do vašeho balíčku VSPackage:
+1. Přidejte následující kód do vašeho balíčku VSPackage:
 
     ```csharp
     EnvDTE.DTE dte = (EnvDTE.DTE)Package.GetGlobalService(typeof(EnvDTE.DTE));
@@ -41,7 +41,7 @@ Můžete chtít zachovat vlastnosti, které přidáte do položky projektu, jako
 
 ## <a name="to-persist-the-project-item-property-with-the-dte-object"></a>Zachovat vlastnosti položky projektu s objekt DTE
 
-1.  Přidejte následující kód do kódu uvedeného v metodě v předchozím postupu:
+1. Přidejte následující kód do kódu uvedeného v metodě v předchozím postupu:
 
     ```csharp
     IVsBuildPropertyStorage buildPropertyStorage =
@@ -58,7 +58,7 @@ Můžete chtít zachovat vlastnosti, které přidáte do položky projektu, jako
 
 ## <a name="to-obtain-the-project-hierarchy-using-ivsmonitorselection"></a>Chcete-li získat hierarchii projektu pomocí IVsMonitorSelection
 
-1.  Přidejte následující kód do vašeho balíčku VSPackage:
+1. Přidejte následující kód do vašeho balíčku VSPackage:
 
     ```csharp
     IVsHierarchy hierarchy = null;
@@ -102,7 +102,7 @@ Můžete chtít zachovat vlastnosti, které přidáte do položky projektu, jako
 
 ## <a name="to-persist-the-selected-project-item-property-given-the-project-hierarchy"></a>Zachovat položky vlastnosti vybraného projektu dána hierarchie projektu
 
-1.  Přidejte následující kód do kódu uvedeného v metodě v předchozím postupu:
+1. Přidejte následující kód do kódu uvedeného v metodě v předchozím postupu:
 
     ```csharp
     IVsBuildPropertyStorage buildPropertyStorage =

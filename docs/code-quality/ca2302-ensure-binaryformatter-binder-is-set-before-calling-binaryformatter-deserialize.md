@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: fb997d8184ea9459b46eee95bfe2863e8c1c6ed0
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: f8f2e98edd0cb1094422576b484be34f4f7ba8de
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59367360"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047121"
 ---
 # <a name="ca2302-ensure-binaryformatterbinder-is-set-before-calling-binaryformatterdeserialize"></a>CA2302: Než zavoláte BinaryFormatter.Deserialize, ujistěte se, že je nastavený BinaryFormatter.Binder
 
@@ -34,25 +34,24 @@ A <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter?displayPr
 
 [!INCLUDE[insecure-deserializers-description](includes/insecure-deserializers-description-md.md)]
 
-Toto pravidlo vyhledá <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter?displayProperty=nameWithType> deserializace volání metody nebo odkazy, když <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> při jeho <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Binder> může mít hodnotu null. Pokud chcete zakázat všechny deserializace pomocí <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> bez ohledu na to <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Binder> vlastnost zakázat toto pravidlo a [CA2301](ca2301-do-not-call-binaryformatter-deserialize-without-first-setting-binaryformatter-binder.md)a povolit pravidlo [CA2300](ca2300-do-not-use-insecure-deserializer-binaryformatter.md).
+Toto pravidlo vyhledá <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter?displayProperty=nameWithType> metody deserializace volá nebo kdy se odkazuje <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Binder> může mít hodnotu null. Pokud chcete zakázat všechny deserializace pomocí <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> bez ohledu na to <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Binder> vlastnost zakázat toto pravidlo a [CA2301](ca2301-do-not-call-binaryformatter-deserialize-without-first-setting-binaryformatter-binder.md)a povolit pravidlo [CA2300](ca2300-do-not-use-insecure-deserializer-binaryformatter.md).
 
 ## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
 
 - Pokud je to možné, použijte zabezpečené serializátor, a **Nepovolit útočníkovi zadat libovolný typ k deserializaci**. Některé bezpečnější serializátory patří:
   - <xref:System.Runtime.Serialization.DataContractSerializer?displayProperty=nameWithType>
   - <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer?displayProperty=nameWithType>
-  - <xref:System.Web.Script.Serialization.JavaScriptSerializer?displayProperty=nameWithType> -Nikdy nepoužívejte <xref:System.Web.Script.Serialization.SimpleTypeResolver?displayProperty=nameWithType>. Pokud je nutné použít typ překladače, musí omezit deserializovaný typy očekávané seznamu.
+  - <xref:System.Web.Script.Serialization.JavaScriptSerializer?displayProperty=nameWithType> -Nikdy nepoužívejte <xref:System.Web.Script.Serialization.SimpleTypeResolver?displayProperty=nameWithType>. Pokud je nutné použít typ překladače, omezení deserializovaný typy k očekávaným seznamem.
   - <xref:System.Xml.Serialization.XmlSerializer?displayProperty=nameWithType>
-  - NewtonSoft Json.NET - TypeNameHandling.None použití. Pokud musíte použít jinou hodnotu pro TypeNameHandling, je nutné na očekávaný seznam omezit deserializovaný typy.
+  - NewtonSoft Json.NET - TypeNameHandling.None použití. Pokud musíte použít jinou hodnotu pro TypeNameHandling, omezte na očekávaným seznamem s vlastní ISerializationBinder deserializovaný typy.
   - Protocol Buffers
-- Ujistěte se, serializovaná data manipulovat testování. Po serializaci podepište kryptograficky serializovaná data. Před deserializace, ověřte kryptografický podpis. Musí chránit kryptografické klíče je zveřejněn a byste navrhnout pro rotace klíčů.
+- Ujistěte se, manipulací serializovaná data. Po serializaci podepište kryptograficky serializovaná data. Před deserializace ověřte kryptografický podpis. Je zveřejněn chránit kryptografické klíče a návrh pro rotace klíčů.
 - Zakázání deserializovaný typů. Implementovat vlastní <xref:System.Runtime.Serialization.SerializationBinder?displayProperty=nameWithType>. Před deserializace s <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter>, nastavte <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Binder> vlastnost instance vašeho vlastního <xref:System.Runtime.Serialization.SerializationBinder>. V přepsané <xref:System.Runtime.Serialization.SerializationBinder.BindToType%2A> metodu, pokud neočekávaný typ poté vyvolají výjimku.
   - Ujistěte se, že všechny cesty kódu <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Binder> sadu vlastností.
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
 
-- Je bezpečné potlačit upozornění tohoto pravidla, pokud víte, že vstup je důvěryhodný. Vezměte v úvahu, že může v průběhu času měnit toky důvěryhodnosti hranice a data vaší aplikace.
-- Je bezpečné pro potlačení tohoto upozornění, pokud jste provedli jednu z výše uvedených opatření.
+[!INCLUDE[insecure-deserializers-common-safe-to-suppress](includes/insecure-deserializers-common-safe-to-suppress-md.md)]
 
 ## <a name="pseudo-code-examples"></a>Příklady pseudo kódu
 
@@ -123,6 +122,7 @@ End Class
 ```
 
 ### <a name="solution"></a>Řešení
+
 ```csharp
 using System;
 using System.IO;
@@ -144,7 +144,7 @@ public class BookRecordSerializationBinder : SerializationBinder
         }
         else
         {
-            throw new ArgumentException("Unexpected type", "typeName");
+            throw new ArgumentException("Unexpected type", nameof(typeName));
         }
     }
 }
@@ -197,7 +197,7 @@ Public Class BookRecordSerializationBinder
         If typeName = "BinaryFormatterVB.BookRecord" Or typeName = "BinaryFormatterVB.AisleLocation" Then
             Return Nothing
         Else
-            Throw New ArgumentException("Unexpected type", "typeName")
+            Throw New ArgumentException("Unexpected type", NameOf(typeName))
         End If
     End Function
 End Class

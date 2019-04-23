@@ -13,23 +13,23 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ae57c63b9ec97d72d7da7b7ed7de54028c3e32e3
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 9f7b463721b840847bf609ec70f8818e904fdd0b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59658835"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60058301"
 ---
 # <a name="how-to-display-urls-as-links-in-the-editor"></a>Postupy: Zobrazení adres URL ve formě odkazů v editoru
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Můžete mít editoru kódu považovat Uniform Resource Locator (URL) ve vašem kódu jako aktivní vazby. Při použití této funkce adresy URL:  
   
--   Zobrazí podtržené.  
+- Zobrazí podtržené.  
   
--   Zobrazení **popisek** při najetí myši na.  
+- Zobrazení **popisek** při najetí myši na.  
   
--   Pokus o otevření webové stránky, když označené vám **CTRL** + levým tlačítkem myši na odkaz. Ve výchozím nastavení zobrazí se v interní webový prohlížeč na webovém serveru.  
+- Pokus o otevření webové stránky, když označené vám **CTRL** + levým tlačítkem myši na odkaz. Ve výchozím nastavení zobrazí se v interní webový prohlížeč na webovém serveru.  
   
 > [!NOTE]
 >  Dialogová okna a příkazy nabídek, které vidíte, se mohou lišit od těch popsaných v nápovědě v závislosti na aktivních nastaveních nebo edici. Chcete-li změnit nastavení, zvolte **nastavení importu a exportu** na **nástroje** nabídky. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
@@ -38,17 +38,17 @@ Můžete mít editoru kódu považovat Uniform Resource Locator (URL) ve vašem 
   
 #### <a name="to-display-urls-as-links"></a>Pro zobrazení adresy URL jako odkazy  
   
-1.  Na **nástroje** nabídky, klikněte na tlačítko **možnosti**.  
+1. Na **nástroje** nabídky, klikněte na tlačítko **možnosti**.  
   
-2.  Klikněte na tlačítko **textový Editor**.  
+2. Klikněte na tlačítko **textový Editor**.  
   
-3.  Chcete-li změnit možnosti pouze pro jeden jazyk, rozbalte složku pro daný jazyk a zvolte **Obecné**.  
+3. Chcete-li změnit možnosti pouze pro jeden jazyk, rozbalte složku pro daný jazyk a zvolte **Obecné**.  
   
      —nebo—  
   
      Chcete-li změnit možnosti pro všechny jazyky, rozbalte **všechny jazyky** složky a vyberte **Obecné**.  
   
-4.  V části **zobrazení**vyberte **povolit navigaci adres URL jedním kliknutím**.  
+4. V části **zobrazení**vyberte **povolit navigaci adres URL jedním kliknutím**.  
   
 ## <a name="see-also"></a>Viz také  
  [Vlastní nastavení editoru](../../ide/customizing-the-editor.md)   

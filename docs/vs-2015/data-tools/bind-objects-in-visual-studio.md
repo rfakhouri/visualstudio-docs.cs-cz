@@ -19,12 +19,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 96acd1039f9293e6efb64f2726fc53a4c33cdc31
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: ee820bc246e11b722d663ecc6a6037f182bc2c33
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59667180"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053114"
 ---
 # <a name="bind-objects-in-visual-studio"></a>Vytvoření vazby objektů v sadě Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,17 +42,17 @@ Visual Studio poskytuje nástroje návrhu pro práci s vlastní objekty jako zdr
 ## <a name="examples-of-using-custom-objects-as-data-sources"></a>Příklady použití vlastních objektů jako zdroje dat
  I když existují aplikací způsoby, jak implementovat logiku vaše aplikace při práci s objekty jako zdroj dat, pro SQL databáze existuje jsou několik standardních operací, které se dá zjednodušit pomocí objektů TableAdapter generované – Visual Studio. Tato stránka vysvětluje, jak implementovat tyto standardní procesy pomocí TableAdapters.It není určen jako vodítko pro vytváření vlastních objektů. Například se obvykle provádí následující standardní operace bez ohledu na konkrétní implementaci objekty nebo aplikace logiky:
 
--   Načítání dat do objektů (obvykle z databáze).
+- Načítání dat do objektů (obvykle z databáze).
 
--   Vytvoření typové kolekci objektů.
+- Vytvoření typové kolekci objektů.
 
--   Přidání objektů do a odebrání objektů z kolekce.
+- Přidání objektů do a odebrání objektů z kolekce.
 
--   Zobrazení dat objektů pro uživatele ve formuláři.
+- Zobrazení dat objektů pro uživatele ve formuláři.
 
--   Změna/úprava dat v objektu.
+- Změna/úprava dat v objektu.
 
--   Ukládání dat z objektů zpět do databáze.
+- Ukládání dat z objektů zpět do databáze.
 
 > [!NOTE]
 >  Pokud chcete lépe pochopit a poskytuje kontext pro příkladech na této stránce, doporučujeme provést následující: [Návod: Připojování k datům v objektech (Windows Forms)](http://msdn.microsoft.com/library/21a7fba2-b38b-4726-8cbe-d22154b75a05). Tento návod vytvoří objekty zde popsané.

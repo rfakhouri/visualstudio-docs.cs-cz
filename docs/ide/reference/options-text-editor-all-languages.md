@@ -42,12 +42,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a8b1b7c4ea16151c94c825b6e5467e40e3e6099b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 2ef04af4fda717d3f2fa6a90ba6b9ffdc681d5a6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55929333"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052425"
 ---
 # <a name="options-text-editor-all-languages"></a>Možnosti, textový editor, všechny jazyky
 
@@ -115,9 +115,9 @@ Pokud je vybráno, zobrazí **navigační panel** v horní části stránky edit
 
 Tato možnost nastaví chování editoru, když umístíte kurzor na prázdný řádek, nothing, vyberte a zkopírujte nebo vyjmutí.
 
--   Pokud je vybraná tato možnost, prázdný řádek zkopíruje nebo vyjmutí. Pokud pak vložíte, je vložen nový, prázdný řádek.
+- Pokud je vybraná tato možnost, prázdný řádek zkopíruje nebo vyjmutí. Pokud pak vložíte, je vložen nový, prázdný řádek.
 
--   Pokud tato možnost vybrána, příkaz Cut odstraní prázdné řádky. Nicméně se zajistilo uchování dat do schránky. Proto pokud použijete příkaz Paste, je vložit obsah naposledy zkopírovaný do schránky. Pokud není nic se zkopírovala dříve, není nic vloženo.
+- Pokud tato možnost vybrána, příkaz Cut odstraní prázdné řádky. Nicméně se zajistilo uchování dat do schránky. Proto pokud použijete příkaz Paste, je vložit obsah naposledy zkopírovaný do schránky. Pokud není nic se zkopírovala dříve, není nic vloženo.
 
 Toto nastavení nemá žádný vliv na kopírování nebo vyjmutí, když řádek není prázdný. Pokud není nic vybráno, celý řádek zkopíruje nebo vyjmutí. Pokud pak vložte text celý řádek a jeho ukončovacího znaku jsou vloženy.
 

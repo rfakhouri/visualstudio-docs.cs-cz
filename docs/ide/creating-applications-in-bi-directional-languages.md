@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 21851bc26ec69207c95a41e988b20b5df3c70c39
-ms.sourcegitcommit: b7f25ae08e45fcaa84a84276b588cf6799cc7620
+ms.openlocfilehash: d09ad8644c30be76c38cf4b819d09ee1c470cb39
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57567257"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048176"
 ---
 # <a name="create-applications-in-bidirectional-languages"></a>Vytváření aplikací v obousměrných jazycích
 
@@ -28,11 +28,11 @@ Visual Studio můžete vytvářet aplikace pro správné zobrazení textu v jazy
 
 ## <a name="types-of-applications-that-support-bidirectional-languages"></a>Typy aplikací, které podporují obousměrné jazyky
 
--  Aplikace Windows
+- Aplikace Windows
 
    Můžete vytvořit plně obousměrné aplikace, které zahrnují podporu pro obousměrný text zprava doleva pořadí čtení a zrcadlení (reverzní rozložení windows, nabídek, dialogová okna a tak dále). S výjimkou zrcadlení, tyto funkce jsou dostupné ve výchozím nastavení nebo nastavení vlastností. Zrcadlení se podporuje ze své podstaty pro některé funkce, jako jsou okna se zprávou. Ale v ostatních případech je nutné implementovat zrcadlení v kódu. Další informace najdete v tématu [obousměrná podpora pro aplikace Windows Forms](/dotnet/framework/winforms/advanced/bi-directional-support-for-windows-forms-applications).
 
--  Webové aplikace
+- Webové aplikace
 
    Webové služby podporují odesílání a přijímání UTF-8 a text v kódu Unicode, díky kterým jsou vhodné pro aplikace, které se týkají obousměrných jazyků. Webové klientské aplikace závisí na prohlížeče pro jeho uživatelské rozhraní, takže stupeň obousměrná podpora v webové aplikace závisí na tom, jak dobře webového prohlížeče podporuje tyto funkce obousměrné. V sadě Visual Studio můžete vytvářet aplikace s podporou arabský nebo hebrejský text, pořadí čtení zprava doleva, kódování souborů a nastavení místní jazykové verze. Další informace najdete v tématu [obousměrná podpora pro webové aplikace ASP.NET](https://msdn.microsoft.com/Library/5576f9b1-9b86-41ef-8354-092d366bcd03).
 

@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c3c582696dfba5abdcf132308477e586575777a6
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a236b30552007112663ad9f985ddc94995fe1ef8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56612618"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050021"
 ---
 # <a name="how-to-hide-controls-on-worksheets-when-printing"></a>Postupy: Skrytí ovládacích prvků na listech při tisku
   Při tisku dokumentu aplikace Microsoft Office Excel, který obsahuje ovládací prvky Windows Forms, ovládací prvky jsou viditelné na tisk listů. Ovládací prvky lze skrýt při tisku na listu.
@@ -35,11 +35,11 @@ ms.locfileid: "56612618"
 
 ## <a name="to-hide-controls-when-a-worksheet-is-printed"></a>Chcete-li skrýt ovládací prvky, pokud list vytisknout
 
-1.  Vytvoření nebo otevření projektu aplikace Excel v sadě Visual Studio a ověřte, že **List1** je zobrazen v návrháři. Informace o vytváření projektů, naleznete v tématu [jak: Vytvářet projekty pro Office v sadě Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
+1. Vytvoření nebo otevření projektu aplikace Excel v sadě Visual Studio a ověřte, že **List1** je zobrazen v návrháři. Informace o vytváření projektů, naleznete v tématu [jak: Vytvářet projekty pro Office v sadě Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
-2.  Z **běžné ovládací prvky** karty **nástrojů**, přetáhněte <xref:Microsoft.Office.Tools.Excel.Controls.Button> ovládací prvek buňky v `Sheet1`.
+2. Z **běžné ovládací prvky** karty **nástrojů**, přetáhněte <xref:Microsoft.Office.Tools.Excel.Controls.Button> ovládací prvek buňky v `Sheet1`.
 
-3.  V **vlastnosti** okno, nastaveno <xref:Microsoft.Office.Tools.Excel.Controls.Button.PrintObject%2A> vlastnost **False**.
+3. V **vlastnosti** okno, nastaveno <xref:Microsoft.Office.Tools.Excel.Controls.Button.PrintObject%2A> vlastnost **False**.
 
 ## <a name="see-also"></a>Viz také:
 - [Ovládací prvky v dokumentech Office](../vsto/controls-on-office-documents.md)

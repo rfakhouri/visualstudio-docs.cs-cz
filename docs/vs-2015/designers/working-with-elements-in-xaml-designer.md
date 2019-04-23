@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 49ec96150eda9bf0a62b9767fefbfd5936aef840
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: c5a6e0ae31068144cb7de5ff83ac562db8f833d9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54774162"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045137"
 ---
 # <a name="working-with-elements-in-xaml-designer"></a>Práce s elementy v Návrháři XAML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,13 +28,13 @@ Můžete přidat prvky – ovládací prvky, rozložení a tvary – do vaší a
   
 #### <a name="to-add-an-element-to-a-layout"></a>Chcete-li přidat element do rozložení  
   
--   V Návrháři XAML proveďte jednu z následujících akcí:  
+- V Návrháři XAML proveďte jednu z následujících akcí:  
   
-    -   Klikněte dvakrát na prvek v **nástrojů** (Vybrat prvek na panelu nástrojů nebo stisknutím klávesy Enter).  
+    - Klikněte dvakrát na prvek v **nástrojů** (Vybrat prvek na panelu nástrojů nebo stisknutím klávesy Enter).  
   
-    -   Přetáhněte element z **nástrojů** na návrhovou plochu.  
+    - Přetáhněte element z **nástrojů** na návrhovou plochu.  
   
-    -   V **nástrojů**, vyberte jeden z kreslících nástrojů (například [Elipsa](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.shapes.ellipse.aspx) nebo [obdélník](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.shapes.rectangle.aspx)) a následně nakreslete prvek v panelu aktivní.  
+    - V **nástrojů**, vyberte jeden z kreslících nástrojů (například [Elipsa](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.shapes.ellipse.aspx) nebo [obdélník](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.shapes.rectangle.aspx)) a následně nakreslete prvek v panelu aktivní.  
   
 ## <a name="changing-the-layering-order-of-elements"></a>Změna pořadí vrstev elementů  
  Pokud existují dva prvky na návrhovou plochu v Návrháři XAML, jeden prvek se zobrazí před jiným v pořadí vrstev. V dolní části seznamu elementů v Osnova dokumentu okna je nejvíce vpředu prvek (s výjimkou, kdy **ZIndex** je nastavena vlastnost pro daný element). Při vkládání elementů do stránky, formuláře nebo kontejner rozložení, element automaticky umístěn před další prvky v elementu aktivní kontejner. Chcete-li změnit pořadí prvků, můžete použít **pořadí** příkazy nebo přetáhnout prvky v rámci stromů objektů v okně osnovy dokumentu.  
@@ -47,13 +47,13 @@ Můžete přidat prvky – ovládací prvky, rozložení a tvary – do vaší a
   
   - Klikněte pravým tlačítkem myši na prvek v okně Osnova dokumentu nebo na návrhovou plochu, pro kterou chcete změnit pořadí vrstev, přejděte na **pořadí**a pak klikněte na jednu z následujících akcí:  
   
-    -   **Přenést do popředí** elementu uvést úplně přenést do popředí pořadí.  
+    - **Přenést do popředí** elementu uvést úplně přenést do popředí pořadí.  
   
-    -   **Přenést blíž** vám elementu vpřed o jednu úroveň v pořadí.  
+    - **Přenést blíž** vám elementu vpřed o jednu úroveň v pořadí.  
   
-    -   **Přenést dál** odeslat zpět o jednu úroveň element v pořadí.  
+    - **Přenést dál** odeslat zpět o jednu úroveň element v pořadí.  
   
-    -   **Přenést do pozadí** odesílat elementu úplně přenést do pozadí pořadí.  
+    - **Přenést do pozadí** odesílat elementu úplně přenést do pozadí pořadí.  
   
     Změnit **ZIndex** vlastnost **rozložení** oddíl v okně Vlastnosti. Pro překrývající se prvky, **ZIndex** vlastnost má přednost před pořadí prvků, které jsou zobrazeny v okně Osnova dokumentu. Element, který má nižší **ZIndex** hodnota se zobrazí v popředí při prvky překrývat.  
   
@@ -64,15 +64,15 @@ Můžete přidat prvky – ovládací prvky, rozložení a tvary – do vaší a
   
 #### <a name="to-align-two-or-more-elements-by-using-menu-commands"></a>Chcete-li zarovnat nejmíň dva elementy pomocí příkazů nabídky  
   
-1.  Vyberte prvky, které chcete, aby bylo v souladu. Stisknutím a podržením klávesy Ctrl a vyberte prvky můžete vybrat více než jeden element.  
+1. Vyberte prvky, které chcete, aby bylo v souladu. Stisknutím a podržením klávesy Ctrl a vyberte prvky můžete vybrat více než jeden element.  
   
-2.  Vyberte jednu z následujících vlastností v rámci **HorizontalAlignment** v **rozložení** části okna vlastnosti: **Vlevo**, **Center**, **vpravo**, nebo **Stretch**.  
+2. Vyberte jednu z následujících vlastností v rámci **HorizontalAlignment** v **rozložení** části okna vlastnosti: **Vlevo**, **Center**, **vpravo**, nebo **Stretch**.  
   
-3.  Vyberte jednu z následujících vlastností v rámci **VerticalAlignment** v **rozložení** části okna vlastnosti: **Horní**, **Center**, **dolní**, nebo **Stretch**.  
+3. Vyberte jednu z následujících vlastností v rámci **VerticalAlignment** v **rozložení** části okna vlastnosti: **Horní**, **Center**, **dolní**, nebo **Stretch**.  
   
 #### <a name="to-align-two-or-more-elements-by-using-snaplines"></a>Chcete-li zarovnat dva nebo více prvků pomocí zarovnávacích čar  
   
--   V Návrháři XAML, v rozložení, který obsahuje alespoň dva prvky přetáhněte nebo jeden z elementů velikost tak, aby na hraničních zařízeních je v souladu s jiný element.  
+- V Návrháři XAML, v rozložení, který obsahuje alespoň dva prvky přetáhněte nebo jeden z elementů velikost tak, aby na hraničních zařízeních je v souladu s jiný element.  
   
      Když jsou zarovnány okrajů, *hranicích zarovnání* se zobrazí k označení zarovnání. Hranicích zarovnání je red přerušovanou čáru. Hranice pro zarovnání se zobrazí pouze tehdy, když **přichycování k zarovnávacím čárám** je povolená. Pro ilustraci na návrhovou plochu, zobrazující hranici zarovnání, najdete v článku [vytvoření uživatelského rozhraní pomocí návrháře XAML](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md).  
   
@@ -81,13 +81,13 @@ Můžete přidat prvky – ovládací prvky, rozložení a tvary – do vaší a
   
 #### <a name="to-change-an-elements-margins-in-the-properties-window"></a>Chcete-li změnit okrajů elementu v okně Vlastnosti  
   
-1.  Vyberte prvek, jehož okraje, kterou chcete změnit.  
+1. Vyberte prvek, jehož okraje, kterou chcete změnit.  
   
-2.  V části **rozložení** v okně Vlastnosti změňte hodnotu (v pixelech nebo jednotkách nezávislých na zařízení, které jsou přibližně 1/96 palce) pro některý z **okraj** vlastnosti (**horní**, **Vlevo**, **vpravo**, nebo **dolní**).  
+2. V části **rozložení** v okně Vlastnosti změňte hodnotu (v pixelech nebo jednotkách nezávislých na zařízení, které jsou přibližně 1/96 palce) pro některý z **okraj** vlastnosti (**horní**, **Vlevo**, **vpravo**, nebo **dolní**).  
   
 #### <a name="to-change-an-elements-margins-in-the-artboard"></a>Chcete-li změnit okrajů elementu v návrhové ploše  
   
--   Změna okrajů elementu vzhledem k jeho kontejner rozložení, klikněte na tlačítko *doplňků pro úpravy okrajů* , který se kolem elementu v návrhové ploše, když elementu je vybraná a není kontejner rozložení. Obrázek, na kterém doplňků pro úpravy rozpětí, naleznete v tématu [vytvoření uživatelského rozhraní pomocí návrháře XAML](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md).  
+- Změna okrajů elementu vzhledem k jeho kontejner rozložení, klikněte na tlačítko *doplňků pro úpravy okrajů* , který se kolem elementu v návrhové ploše, když elementu je vybraná a není kontejner rozložení. Obrázek, na kterém doplňků pro úpravy rozpětí, naleznete v tématu [vytvoření uživatelského rozhraní pomocí návrháře XAML](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md).  
   
      Pokud je okrajů otevřen, svisle nebo vodorovně, není tento okraj nastaven. Pokud okrajů zavřen, je okraj nastaven.  
   
@@ -101,9 +101,9 @@ Můžete přidat prvky – ovládací prvky, rozložení a tvary – do vaší a
   
 #### <a name="to-group-elements-into-a-new-layout-container"></a>Které prvky do nového kontejneru rozložení  
   
-1.  Vyberte prvky, které chcete seskupit. (K výběru několika elementů, stiskněte a podržte klávesu Ctrl a klikněte na ně.)  
+1. Vyberte prvky, které chcete seskupit. (K výběru několika elementů, stiskněte a podržte klávesu Ctrl a klikněte na ně.)  
   
-2.  Klikněte pravým tlačítkem na vybrané elementy, přejděte na **seskupit do**a potom klikněte na typ kontejner rozložení, ve kterém chcete bude skupina nacházet.  
+2. Klikněte pravým tlačítkem na vybrané elementy, přejděte na **seskupit do**a potom klikněte na typ kontejner rozložení, ve kterém chcete bude skupina nacházet.  
   
     > [!TIP]
     >  Pokud vyberete <xref:Windows.UI.Xaml.Controls.Viewbox>, <xref:Windows.UI.Xaml.Controls.Border>, nebo <xref:Windows.UI.Xaml.Controls.ScrollViewer> k seskupení elementů, prvky jsou umístěny v novém <xref:Windows.UI.Xaml.Controls.Grid> panelu v rámci <xref:Windows.UI.Xaml.Controls.Viewbox>, <xref:Windows.UI.Xaml.Controls.Border>, nebo <xref:Windows.UI.Xaml.Controls.ScrollViewer>. Pokud oddělíte prvky v jednom z těchto kontejnerů rozložení, pouze <xref:Windows.UI.Xaml.Controls.Viewbox>, <xref:Windows.UI.Xaml.Controls.Border>, nebo <xref:Windows.UI.Xaml.Controls.ScrollViewer> se odstraní a <xref:Windows.UI.Xaml.Controls.Grid> panelu zůstane. Chcete-li odstranit `Grid` panelu, znovu zrušit seskupení elementů.  
@@ -119,7 +119,7 @@ Můžete přidat prvky – ovládací prvky, rozložení a tvary – do vaší a
   
 #### <a name="to-reset-the-element-layout"></a>Chcete-li obnovit rozložení elementu  
   
--   V okně Osnova dokumentu nebo návrhové ploše, klikněte pravým tlačítkem na elementu, zvolte **rozložení**, **resetování** *PropertyName*, kde *PropertyName*je vlastnost, kterou chcete obnovit (nebo zvolte **rozložení**, **Obnovit vše** resetovat všechny vlastnosti rozložení pro element).  
+- V okně Osnova dokumentu nebo návrhové ploše, klikněte pravým tlačítkem na elementu, zvolte **rozložení**, **resetování** *PropertyName*, kde *PropertyName*je vlastnost, kterou chcete obnovit (nebo zvolte **rozložení**, **Obnovit vše** resetovat všechny vlastnosti rozložení pro element).  
   
 ## <a name="see-also"></a>Viz také  
  [Vytvoření uživatelského rozhraní pomocí Návrháře XAML](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)

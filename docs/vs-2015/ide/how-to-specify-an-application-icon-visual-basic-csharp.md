@@ -13,12 +13,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7f794f1c988215f8899dce495f725b3a9c14a435
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b10434f92a5d310d2f53c4a1c1ff7ab3a84bc1ca
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54788162"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045771"
 ---
 # <a name="how-to-specify-an-application-icon-visual-basic-c"></a>Postupy: Určení ikony aplikace (Visual Basic, C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,13 +32,13 @@ ms.locfileid: "54788162"
   
 ### <a name="to-specify-an-application-icon"></a>K určení ikony aplikace  
   
-1.  V **Průzkumníka řešení**, zvolte uzel projektu (ne **řešení** uzlu).  
+1. V **Průzkumníka řešení**, zvolte uzel projektu (ne **řešení** uzlu).  
   
-2.  V panelu nabídky zvolte **projektu**, **vlastnosti**.  
+2. V panelu nabídky zvolte **projektu**, **vlastnosti**.  
   
-3.  Když **Návrháře projektu** se zobrazí, zvolte **aplikace** kartu.  
+3. Když **Návrháře projektu** se zobrazí, zvolte **aplikace** kartu.  
   
-4.  **(Visual Basic)**  v **ikonu** , zvolte soubor ikony (ICO).  
+4. **(Visual Basic)**  v **ikonu** , zvolte soubor ikony (ICO).  
   
      **C#** téměř **ikonu** klikněte na položku  **\<Procházet... >** tlačítko a pak přejděte do umístění souboru s ikonou, která chcete.  
   

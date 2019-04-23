@@ -15,12 +15,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 8690a1f05f54fbac9427f4a03412e0a8054c51d2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 795d48b96392057a3f96cf3a67f3c49de8aee9b9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54779919"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052165"
 ---
 # <a name="ca1824-mark-assemblies-with-neutralresourceslanguageattribute"></a>CA1824: Označte sestavení pomocí NeutralResourcesLanguageAttribute
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,13 +45,13 @@ ms.locfileid: "54779919"
 
 #### <a name="to-specify-the-language-of-the-resource-of-the-neutral-culture"></a>Pokud chcete určit jazyk prostředků neutrální jazykovou verzi
 
-1.  V **Průzkumníka řešení**, klikněte pravým tlačítkem na projekt a potom klikněte na tlačítko **vlastnosti**.
+1. V **Průzkumníka řešení**, klikněte pravým tlačítkem na projekt a potom klikněte na tlačítko **vlastnosti**.
 
-2.  V levém navigačním panelu vyberte **aplikace**a potom klikněte na tlačítko **informace o sestavení**.
+2. V levém navigačním panelu vyberte **aplikace**a potom klikněte na tlačítko **informace o sestavení**.
 
-3.  V **informace o sestavení** dialogového okna, vyberte jazyk ze **neutrální jazyk** rozevíracího seznamu.
+3. V **informace o sestavení** dialogového okna, vyberte jazyk ze **neutrální jazyk** rozevíracího seznamu.
 
-4.  Klikněte na **OK**.
+4. Klikněte na **OK**.
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
  Je přípustné potlačit upozornění tohoto pravidla. Však může snížit výkon při spuštění.

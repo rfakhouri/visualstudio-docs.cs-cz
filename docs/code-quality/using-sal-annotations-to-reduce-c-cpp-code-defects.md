@@ -12,47 +12,47 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: becbf24e8f957925584e9049b38b41cb6c511683
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ab90a2e03aae60f3027b61d1f3358c05f490ebdf
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55919700"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045093"
 ---
 # <a name="using-sal-annotations-to-reduce-cc-code-defects"></a>Použití poznámek SAL k snížení míry výskytu závad kódu C/C++
 Poznámky SAL je poznámka jazyk Microsoft zdrojového kódu. S použitím kódu poznámek ke zdroji, můžete provést záměr za kódu explicitní. Tyto poznámky také povolit automatické statické analýzy nástroje pro analýzu kódu přesněji, se výrazně menší počet falešně pozitivních výsledků a falešně negativní.
 
  Články v této části dokumentace popisují aspekty SAL zadejte referenční SAL syntaxi a poskytnout příklady jeho použití.
 
--   [Porozumění SAL](../code-quality/understanding-sal.md)
+- [Porozumění SAL](../code-quality/understanding-sal.md)
 
      Poskytuje informace a příklady, které ukazují základní poznámky SAL.
 
--   [Zadávání poznámek k parametrům funkcí a návratovým hodnotám](../code-quality/annotating-function-parameters-and-return-values.md)
+- [Zadávání poznámek k parametrům funkcí a návratovým hodnotám](../code-quality/annotating-function-parameters-and-return-values.md)
 
      Obsahuje poznámky SAL pro funkce a parametry funkce.
 
--   [Zadávání poznámek k chování funkcí](../code-quality/annotating-function-behavior.md)
+- [Zadávání poznámek k chování funkcí](../code-quality/annotating-function-behavior.md)
 
      Obsahuje poznámky SAL pro funkce a chování funkce.
 
--   [Zadávání poznámek ke strukturám a třídám](../code-quality/annotating-structs-and-classes.md)
+- [Zadávání poznámek ke strukturám a třídám](../code-quality/annotating-structs-and-classes.md)
 
      Obsahuje poznámky SAL pro struktury a třídy.
 
--   [Zadávání poznámek o chování při zamykání](../code-quality/annotating-locking-behavior.md)
+- [Zadávání poznámek o chování při zamykání](../code-quality/annotating-locking-behavior.md)
 
      Vysvětluje způsob použití anotací SAL mechanismů zámku.
 
--   [Určení, kdy a kde se má poznámka použít](../code-quality/specifying-when-and-where-an-annotation-applies.md)
+- [Určení, kdy a kde se má poznámka použít](../code-quality/specifying-when-and-where-an-annotation-applies.md)
 
      Uvádí, které určují podmínku nebo oboru (umístění) se další poznámky SAL poznámky SAL.
 
--   [Vnitřní funkce](../code-quality/intrinsic-functions.md)
+- [Vnitřní funkce](../code-quality/intrinsic-functions.md)
 
      Obsahuje seznam vnitřních poznámky SAL.
 
--   [Doporučené postupy a příklady](../code-quality/best-practices-and-examples-sal.md)
+- [Doporučené postupy a příklady](../code-quality/best-practices-and-examples-sal.md)
 
      Poskytuje příklady, které ukazují, jak použití anotací SAL. Také popisuje běžné nástrahy.
 

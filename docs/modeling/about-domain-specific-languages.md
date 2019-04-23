@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 63d7e895f0a7e57160e10c4b6020b2bf73ae477d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 4684a0256e01cafe79fc90ae1ae97dfc2be047d6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55939486"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046818"
 ---
 # <a name="about-domain-specific-languages"></a>O jazycích specifických pro konkrétní domény
 
@@ -24,11 +24,11 @@ Známé DSL zahrnují regulárních výrazů a SQL. Každý DSL je mnohem lepš�
 
 Vaše podnikání a váš projekt také řešit speciální sadu koncepty, které by mohly být popsané společně s DSL. Můžete například definovat DSL pro jednu z těchto aplikací:
 
--   Plán cesty navigace na webu.
+- Plán cesty navigace na webu.
 
--   Vzájemné propojení diagramy pro elektronických komponent.
+- Vzájemné propojení diagramy pro elektronických komponent.
 
--   Sítě dopravní pásy a zpracování zařízení pro letišti sobě.
+- Sítě dopravní pásy a zpracování zařízení pro letišti sobě.
 
 Při návrhu DSL, můžete definovat *doménové třídy* pro všechny důležité koncepty v doméně, třeba webové stránky, lamp nebo letiště stolu vrácení se změnami. Můžete definovat *vztahy domén* jako hypertextový odkaz, při přenosu nebo dopravní pás koncepty propojit dohromady.
 
@@ -114,12 +114,12 @@ Jazyka specifického pro doménu může poskytnout následující výhody:
 
 Většina vývojových týmů, které používají jazyky specifickými pro doménu použijte následující postup vytvoření a používání svoje modely:
 
--   Tým odlišuje části proměnné domény, z části, které nikdy nezmění.
+- Tým odlišuje části proměnné domény, z části, které nikdy nezmění.
 
--   Vývojáři psát kód pro pevnou části a nechat Rozšiřovací body proměnné částí.
+- Vývojáři psát kód pro pevnou části a nechat Rozšiřovací body proměnné částí.
 
--   Vedoucí softwarový vývojář nebo architekt vytvoří jazyka specifického pro doménu, zahrnující vzory návrhu pevné částí domény a Rozšiřovací body proměnné částí.
+- Vedoucí softwarový vývojář nebo architekt vytvoří jazyka specifického pro doménu, zahrnující vzory návrhu pevné částí domény a Rozšiřovací body proměnné částí.
 
--   Vedoucí softwarový vývojář nebo architekt nasadí vývojářům různé aplikace, které vytvoří tým jazyka specifického pro doménu.
+- Vedoucí softwarový vývojář nebo architekt nasadí vývojářům různé aplikace, které vytvoří tým jazyka specifického pro doménu.
 
--   Každý vývojář vytvoří model, který platí pro konkrétní aplikaci.
+- Každý vývojář vytvoří model, který platí pro konkrétní aplikaci.

@@ -15,12 +15,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: a00a980f5984b05bd1f77a83d4c95d4da0f3ff03
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 37f84bff4802c703bb61b36e9c1933a31cd6c5e3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54784154"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045444"
 ---
 # <a name="ca2240-implement-iserializable-correctly"></a>CA2240: Implementujte správně ISerializable
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,9 +35,9 @@ ms.locfileid: "54784154"
 ## <a name="cause"></a>Příčina
  Externě viditelný typ je přiřadit k <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> platí rozhraní a jeden z následujících podmínek:
 
--   Typ dědí, ale nepřepisuje <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A?displayProperty=fullName> metoda a typ deklaruje pole instancí, které nejsou označené <xref:System.NonSerializedAttribute?displayProperty=fullName> atribut.
+- Typ dědí, ale nepřepisuje <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A?displayProperty=fullName> metoda a typ deklaruje pole instancí, které nejsou označené <xref:System.NonSerializedAttribute?displayProperty=fullName> atribut.
 
--   Typ není zapečetěná a tento typ implementuje <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> metodu, která není externě viditelnou a přepisovatelnou.
+- Typ není zapečetěná a tento typ implementuje <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> metodu, která není externě viditelnou a přepisovatelnou.
 
 ## <a name="rule-description"></a>Popis pravidla
  Instance pole, které jsou deklarovány v typu, který dědí <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> rozhraní nejsou automaticky součástí procesu serializace. Chcete-li zahrnují pole, musí implementovat typ <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> metody a konstruktoru serializace. Pokud pole nesmí být serializován, použije <xref:System.NonSerializedAttribute> atributu na pole explicitně určit rozhodnutí.
@@ -58,7 +58,7 @@ ms.locfileid: "54784154"
  [!code-vb[FxCop.Usage.ImplementISerializableCorrectly#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Usage.ImplementISerializableCorrectly/vb/FxCop.Usage.ImplementISerializableCorrectly.vb#1)]
 
 ## <a name="example"></a>Příklad
- V následujícím příkladu řeší dvě předchozí porušení tím, že poskytuje přepisovatelný provádění [ISerializable.GetObjectData] (<!-- TODO: review code entity reference <xref:assetId:///ISerializable.GetObjectData?qualifyHint=False&amp;autoUpgrade=False>  -->) ve třídě knihy a tím, že poskytuje implementace <!-- TODO: review code entity reference <xref:assetId:///ISerializable.GetObjectData?qualifyHint=False&amp;autoUpgrade=False>  --> na knihovna tříd.
+ V následujícím příkladu řeší tím, že poskytuje přepisovatelný provádění [ISerializable.GetObjectData] (dvě předchozí porušení<!-- TODO: review code entity reference <xref:assetId:///ISerializable.GetObjectData?qualifyHint=False&amp;autoUpgrade=False>  -->) ve třídě knihy a tím, že poskytuje implementace <!-- TODO: review code entity reference <xref:assetId:///ISerializable.GetObjectData?qualifyHint=False&amp;autoUpgrade=False>  --> v knihovně tříd.
 
  [!code-cpp[FxCop.Usage.ImplementISerializableCorrectly2#1](../snippets/cpp/VS_Snippets_CodeAnalysis/FxCop.Usage.ImplementISerializableCorrectly2/cpp/FxCop.Usage.ImplementISerializableCorrectly2.cpp#1)]
  [!code-csharp[FxCop.Usage.ImplementISerializableCorrectly2#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.ImplementISerializableCorrectly2/cs/FxCop.Usage.ImplementISerializableCorrectly2.cs#1)]

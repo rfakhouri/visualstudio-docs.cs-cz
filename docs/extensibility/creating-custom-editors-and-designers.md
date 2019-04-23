@@ -11,14 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c29b5c5e80f8a0381a2c42704d14a8ea9fc3cae5
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: a806e434bebb5a561534fb8aec19d16dc9e28ffd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56721066"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60057430"
 ---
 # <a name="create-custom-editors-and-designers"></a>Vytváření vlastních editorů a návrhářů
+
 Integrovaného vývojového prostředí (IDE) sady Visual Studio může hostovat různé druhy editoru:
 
 - Základní editor sady Visual Studio
@@ -29,10 +30,11 @@ Integrovaného vývojového prostředí (IDE) sady Visual Studio může hostovat
 
 - Návrháři
 
-  Následující informace vám umožňuje vybrat typ editoru, které potřebujete.
+Následující informace vám umožňuje vybrat typ editoru, které potřebujete.
 
 ## <a name="types-of-editor"></a>Typy editoru
- Informace o základní editor sady Visual Studio najdete v tématu [rozšířit jazyk a editor služby](../extensibility/extending-the-editor-and-language-services.md).
+
+Informace o základní editor sady Visual Studio najdete v tématu [rozšířit jazyk a editor služby](../extensibility/extending-the-editor-and-language-services.md).
 
 ### <a name="custom-editors"></a>Vlastních editorech
  Vlastní editor je ten, který je navržen pro práci v specializované okolností. Můžete vytvořit editor jehož funkce je pro čtení a zápis dat do konkrétního úložiště, jako je Microsoft Exchange server. Pokud chcete editor, který spolupracuje s vaší typ projektu, nebo pokud chcete, aby editor, který má několik konkrétní příkazy, zvolte vlastní editor. Upozorňujeme, že uživatelé nebudou moct použít vlastní editor k úpravě standard [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projekty.
@@ -70,24 +72,36 @@ Integrovaného vývojového prostředí (IDE) sady Visual Studio může hostovat
    Pokud může být vložen, by měl vytvořit okno hostitele pro externí editor a poté zavolejte <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A> metoda a nastavte <xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY> hodnotu výčtu pro `DP_External`. Pokud editoru nemůže být vložený, rozhraní IDE vytvoří pro ni automaticky samostatném okně
 
 ## <a name="in-this-section"></a>V tomto oddílu
-- [Návod: Vytvoření vlastního editoru](../extensibility/walkthrough-creating-a-custom-editor.md) vysvětluje, jak vytvořit vlastní editor.
 
-- [Návod: Přidání funkcí do vlastního editoru](../extensibility/walkthrough-adding-features-to-a-custom-editor.md) vysvětluje, jak přidat funkce do vlastní editor.
+[Návod: Vytvoření vlastního editoru](../extensibility/walkthrough-creating-a-custom-editor.md)\
+Vysvětluje, jak vytvořit vlastní editor.
 
-- [Návrháře konfigurace inicializace a metadata](../extensibility/designer-initialization-and-metadata-configuration.md) vysvětluje, jak inicializovat návrháře.
+[Návod: Přidání funkcí do vlastního editoru](../extensibility/walkthrough-adding-features-to-a-custom-editor.md)\
+Vysvětluje, jak přidat funkce do vlastní editor.
 
-- [Podpora pro vracení zpět k Návrháři zadat](../extensibility/supplying-undo-support-to-designers.md) vysvětluje, jak poskytovat podpora pro vracení zpět pro profesionální návrháře.
+[Návrháře konfigurace inicializace a metadat](../extensibility/designer-initialization-and-metadata-configuration.md)\
+Vysvětluje, jak inicializovat návrháře.
 
-- [Barevné zvýrazňování syntaxe ve vlastních editorech](../extensibility/syntax-coloring-in-custom-editors.md) vysvětluje rozdíl mezi barevné zvýrazňování v základní editor a ve vlastních editorech syntaxe.
+[Podpora pro vracení zpět dodávek do návrháře](../extensibility/supplying-undo-support-to-designers.md)\
+Vysvětluje, jak poskytovat podpora pro vracení zpět pro profesionální návrháře.
 
-- [Zdokumentujte zobrazení dat a dokumentu ve vlastních editorech](../extensibility/document-data-and-document-view-in-custom-editors.md) vysvětluje, jak implementovat dat dokumentů a zobrazení dokumentu ve vlastních editorech.
+[Barevné zvýrazňování syntaxe ve vlastních editorech](../extensibility/syntax-coloring-in-custom-editors.md)\
+Vysvětluje rozdíl mezi barevné zvýrazňování v základní editor a ve vlastních editorech syntaxe.
+
+[Data dokumentu a zobrazení dokumentu ve vlastních editorech](../extensibility/document-data-and-document-view-in-custom-editors.md)\
+Vysvětluje, jak implementovat dat dokumentů a zobrazení dokumentu ve vlastních editorech.
 
 ## <a name="related-sections"></a>Související oddíly
-- [Starší verze rozhraní v editoru](../extensibility/legacy-interfaces-in-the-editor.md) vysvětluje, jak získat přístup k základní editor pomocí starší verze rozhraní API.
 
-- [Vývoj služby starší verze jazyka](../extensibility/internals/developing-a-legacy-language-service.md) vysvětluje, jak implementovat službu jazyka.
+[Starší verze rozhraní v editoru](../extensibility/legacy-interfaces-in-the-editor.md)\
+Vysvětluje, jak získat přístup k základní editor pomocí starší verze rozhraní API.
 
-- [Rozšíření dalších částí sady Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md) vysvětluje, jak vytvořit prvky uživatelského rozhraní, které odpovídají zbytek [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
+[Vývoj služby starší verze jazyka](../extensibility/internals/developing-a-legacy-language-service.md)\
+Vysvětluje, jak implementovat službu jazyka.
+
+[Rozšíření dalších částí sady Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)\
+Vysvětluje, jak vytvořit prvky uživatelského rozhraní, které odpovídají zbytek [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
 
 ## <a name="see-also"></a>Viz také:
+
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>

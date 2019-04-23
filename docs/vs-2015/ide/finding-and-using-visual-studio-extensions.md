@@ -15,12 +15,12 @@ caps.latest.revision: 47
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bae12b01a8fc1c879526bbf5df568c9ec40041c9
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 2070c9c68719e51357f3cd5fed4bee3cfbc35fcf
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867758"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051905"
 ---
 # <a name="finding-and-using-visual-studio-extensions"></a>Hledání a používání rozšíření Visual Studia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,9 +54,9 @@ Rozšíření sady Visual Studio jsou balíčky kódu, které v prostředí Visu
 
  Pokud chcete zakázat automatické aktualizace, můžete zakázat funkci pro všechny přípony nebo pouze konkrétní rozšíření.
 
--   Chcete-li zakázat automatické aktualizace pro všechna rozšíření, klikněte na tlačítko **změnit nastavení rozšíření a aktualizace** odkaz na **rozšíření a aktualizace** dialogové okno a zrušte zaškrtnutí políčka **automaticky aktualizovat rozšíření**.
+- Chcete-li zakázat automatické aktualizace pro všechna rozšíření, klikněte na tlačítko **změnit nastavení rozšíření a aktualizace** odkaz na **rozšíření a aktualizace** dialogové okno a zrušte zaškrtnutí políčka **automaticky aktualizovat rozšíření**.
 
--   Chcete-li zakázat automatické aktualizace pro konkrétní příponu, zrušte zaškrtnutí políčka **automaticky aktualizovat toto rozšíření** možnost v podokně podrobností rozšíření na pravé straně **rozšíření a aktualizace** dialogového okna.
+- Chcete-li zakázat automatické aktualizace pro konkrétní příponu, zrušte zaškrtnutí políčka **automaticky aktualizovat toto rozšíření** možnost v podokně podrobností rozšíření na pravé straně **rozšíření a aktualizace** dialogového okna.
 
 > [!NOTE]
 >  Od verze Visual Studio 2015 Update 2, můžete zadat (v **Nástroje / možnosti / prostředí / rozšíření a aktualizace**) určuje, zda chcete automatické aktualizace pro rozšíření vázaná na uživatele, všechna rozšíření uživatele nebo obě (výchozí nastavení).

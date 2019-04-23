@@ -1,5 +1,5 @@
 ---
-title: 'Průvodce: Pomocí klávesové zkratky s rozšířením editoru | Dokumentace Microsoftu'
+title: 'Návod: Pomocí klávesové zkratky s rozšířením editoru | Dokumentace Microsoftu'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,14 +10,14 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0d2abc185d06aa74e47bb2a36bd17df12a9db5c8
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 0e8d4acb5bc43a174187fa74714a9ff24ef0a67c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56710302"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048685"
 ---
-# <a name="walkthrough-use-a-shortcut-key-with-an-editor-extension"></a>Průvodce: Pomocí klávesové zkratky s rozšířením editoru
+# <a name="walkthrough-use-a-shortcut-key-with-an-editor-extension"></a>Návod: Pomocí klávesové zkratky s rozšířením editoru
 Klávesové zkratky můžete reagovat v rozšíření editoru. Následující návod ukazuje, jak přidat grafického doplňku zobrazení k zobrazení textu s použitím klávesovou zkratku. Tento názorný postup je založen na šabloně editor grafického doplňku zobrazení, a umožňuje vám přidat dalších úprav s použitím na znak +.
 
 ## <a name="prerequisites"></a>Požadavky
@@ -61,9 +61,9 @@ Před Visual Studio 2017 verze 15.6 se implementace jediný způsob, jak zpracov
 
  Příkaz filtru je implementace <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>, která zpracovává příkaz po vytvoření instance dalších úprav.
 
-1.  Přidejte soubor třídy a pojmenujte ho `KeyBindingCommandFilter`.
+1. Přidejte soubor třídy a pojmenujte ho `KeyBindingCommandFilter`.
 
-2.  Přidejte následující příkazy using.
+2. Přidejte následující příkazy using.
 
     ```csharp
     using System;
@@ -74,13 +74,13 @@ Před Visual Studio 2017 verze 15.6 se implementace jediný způsob, jak zpracov
 
     ```
 
-3.  Třída s názvem KeyBindingCommandFilter by měla dědit z <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>.
+3. Třída s názvem KeyBindingCommandFilter by měla dědit z <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>.
 
     ```csharp
     internal class KeyBindingCommandFilter : IOleCommandTarget
     ```
 
-4.  Přidáte soukromé pole pro zobrazení textu, další příkaz v příkazu řetězec a příznak označuje, zda příkaz filtru již byla přidána.
+4. Přidáte soukromé pole pro zobrazení textu, další příkaz v příkazu řetězec a příznak označuje, zda příkaz filtru již byla přidána.
 
     ```csharp
     private IWpfTextView m_textView;
@@ -89,7 +89,7 @@ Před Visual Studio 2017 verze 15.6 se implementace jediný způsob, jak zpracov
     internal bool m_adorned;
     ```
 
-5.  Přidáte konstruktor, který nastaví zobrazení textu.
+5. Přidáte konstruktor, který nastaví zobrazení textu.
 
     ```csharp
     public KeyBindingCommandFilter(IWpfTextView textView)
@@ -99,7 +99,7 @@ Před Visual Studio 2017 verze 15.6 se implementace jediný způsob, jak zpracov
     }
     ```
 
-6.  Implementace `QueryStatus()` metodu následujícím způsobem.
+6. Implementace `QueryStatus()` metodu následujícím způsobem.
 
     ```csharp
     int IOleCommandTarget.QueryStatus(ref Guid pguidCmdGroup, uint cCmds, OLECMD[] prgCmds, IntPtr pCmdText)
@@ -108,7 +108,7 @@ Před Visual Studio 2017 verze 15.6 se implementace jediný způsob, jak zpracov
     }
     ```
 
-7.  Implementace `Exec()` metoda tak Fialová box se přidá do zobrazení, pokud znaménko plus (**+**) znaku.
+7. Implementace `Exec()` metoda tak Fialová box se přidá do zobrazení, pokud znaménko plus (**+**) znaku.
 
     ```csharp
     int IOleCommandTarget.Exec(ref Guid pguidCmdGroup, uint nCmdID, uint nCmdexecopt, IntPtr pvaIn, IntPtr pvaOut)
@@ -135,7 +135,7 @@ Před Visual Studio 2017 verze 15.6 se implementace jediný způsob, jak zpracov
 ## <a name="add-the-command-filter-prior-to-visual-studio-2017-version-156"></a>Přidat filtr příkazu (před Visual Studio 2017 verze 15.6)
  Zprostředkovatel grafického doplňku musíte přidat příkaz filtru k zobrazení textu. V tomto příkladu poskytovateli implementuje <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener> k naslouchání události vytváření zobrazení textu. Tento zprostředkovatel dalších úprav zároveň exportuje dalších úprav vrstvu, která definuje pořadí vykreslování dalších úprav.
 
-1.  V souboru KeyBindingTestTextViewCreationListener, přidejte následující příkazy using:
+1. V souboru KeyBindingTestTextViewCreationListener, přidejte následující příkazy using:
 
     ```csharp
     using System;
@@ -150,7 +150,7 @@ Před Visual Studio 2017 verze 15.6 se implementace jediný způsob, jak zpracov
 
     ```
 
-2.  K získání adaptéru zobrazení textu, je nutné naimportovat <xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService>.
+2. K získání adaptéru zobrazení textu, je nutné naimportovat <xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService>.
 
     ```csharp
     [Import(typeof(IVsEditorAdaptersFactoryService))]
@@ -158,7 +158,7 @@ Před Visual Studio 2017 verze 15.6 se implementace jediný způsob, jak zpracov
 
     ```
 
-3.  Změnit <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener.TextViewCreated%2A> metodu tak, že se přidá `KeyBindingCommandFilter`.
+3. Změnit <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener.TextViewCreated%2A> metodu tak, že se přidá `KeyBindingCommandFilter`.
 
     ```csharp
     public void TextViewCreated(IWpfTextView textView)
@@ -167,7 +167,7 @@ Před Visual Studio 2017 verze 15.6 se implementace jediný způsob, jak zpracov
     }
     ```
 
-4.  `AddCommandFilter` Obslužná rutina získá adaptér zobrazení textu a přidá příkaz Filtr.
+4. `AddCommandFilter` Obslužná rutina získá adaptér zobrazení textu a přidá příkaz Filtr.
 
     ```csharp
     void AddCommandFilter(IWpfTextView textView, KeyBindingCommandFilter commandFilter)
@@ -256,6 +256,7 @@ Obslužná rutina příkazu je implementace <xref:Microsoft.VisualStudio.Command
        return false;
    }
    ```
+
    7. Zkopírujte definici dalších úprav vrstvy z *KeyBindingTestTextViewCreationListener.cs* do souboru *KeyBindingCommandHandler.cs* a odstraňte  *KeyBindingTestTextViewCreationListener.cs* souboru:
 
    ```csharp
@@ -319,8 +320,8 @@ private void CreateVisuals(ITextViewLine line)
 
 ## <a name="build-and-test-the-code"></a>Vytváření a testování kódu
 
-1.  Sestavte řešení KeyBindingTest a spustíte ji v experimentální instanci aplikace.
+1. Sestavte řešení KeyBindingTest a spustíte ji v experimentální instanci aplikace.
 
-2.  Vytvořte nebo otevřete textový soubor. Zadejte slova, některé obsahující znak "a" a pak zadejte **+** kdekoli v zobrazení textu.
+2. Vytvořte nebo otevřete textový soubor. Zadejte slova, některé obsahující znak "a" a pak zadejte **+** kdekoli v zobrazení textu.
 
      Na každý "a" znak v souboru by se zobrazit fialový čtverec.

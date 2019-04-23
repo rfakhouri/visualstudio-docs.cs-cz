@@ -11,12 +11,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a47f29f2731756d4607ff611a450c4f988e4413e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 9e67b6e999078523c11ba2b59175743e4a8f3d33
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54768858"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044232"
 ---
 # <a name="how-to-intercept-a-click-on-a-shape-or-decorator"></a>Postupy: Zachycení kliknutí na obrazec nebo dekorátor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,11 +47,11 @@ public partial class MyShape // change
   
 #### <a name="to-intercept-a-click-on-an-icon-decorator"></a>K zachycení kliknutí na dekoratér ikony  
   
-1.  Otevřete nebo vytvořte řešení DSL.  
+1. Otevřete nebo vytvořte řešení DSL.  
   
-2.  Vyberte nebo vytvořte obrazec, který má dekoratér ikony a mapování na doménovou třídu.  
+2. Vyberte nebo vytvořte obrazec, který má dekoratér ikony a mapování na doménovou třídu.  
   
-3.  V souboru kódu, která je oddělená od souborů v `GeneratedCode` složku, vytvořte novou podtřídu třídy ImageField:  
+3. V souboru kódu, která je oddělená od souborů v `GeneratedCode` složku, vytvořte novou podtřídu třídy ImageField:  
   
     ```  
     using Microsoft.VisualStudio.Modeling;  
@@ -89,7 +89,7 @@ public partial class MyShape // change
   
      Měli byste nastavit Handled na hodnotu true, pokud nechcete, aby se události mají být předány nadřazeného obrazce.  
   
-4.  Přepište metodu InitializeShapeFields v vaše classs obrazce tak, že přidáte následující definice částečné třídy.  
+4. Přepište metodu InitializeShapeFields v vaše classs obrazce tak, že přidáte následující definice částečné třídy.  
   
     ```  
     public partial class MyShape // change  
@@ -116,9 +116,9 @@ public partial class MyShape // change
     }  
     ```  
   
-1.  Sestavte a spusťte řešení.  
+1. Sestavte a spusťte řešení.  
   
-2.  Poklepejte na ikonu na instanci daného tvaru. Testovací zpráva by se zobrazit.  
+2. Poklepejte na ikonu na instanci daného tvaru. Testovací zpráva by se zobrazit.  
   
 ## <a name="intercepting-clicks-and-drags-on-compartmentshape-lists"></a>Zachycení kliknutí a přetáhne v CompartmentShape seznamech  
  Následující příklad umožňuje uživatelům změnit pořadí položek v obrazce oddílu jejich přetažením. Pokud chcete spustit tento kód:  
@@ -135,19 +135,19 @@ public partial class MyShape // change
   
    Stručně řečeno kód pracuje následujícím způsobem. V tomto příkladu `ClassShape` je název obrazce oddílu.  
   
--   Sada obslužných rutin událostí myši je připojen ke každé instanci oddílu při jeho vytváření.  
+- Sada obslužných rutin událostí myši je připojen ke každé instanci oddílu při jeho vytváření.  
   
--   `ClassShape.MouseDown` Události uloží aktuální položky.  
+- `ClassShape.MouseDown` Události uloží aktuální položky.  
   
--   Když ukazatel myši přesune z aktuální položka je vytvořena instance AkceMysi, který nastaví kurzor a zachytí myš, dokud se neuvolní.  
+- Když ukazatel myši přesune z aktuální položka je vytvořena instance AkceMysi, který nastaví kurzor a zachytí myš, dokud se neuvolní.  
   
      Aby se předešlo kolizi s další akce myši, jako je například výběr textu položky, není vytvořen AkceMysi, dokud myši opustí původní položka.  
   
      Alternativa k vytváření AkceMysi by jednoduše MouseUp naslouchat. Nicméně to nebude fungovat správně v případě, že uživatel uvolní tlačítko myši po přetažení mimo oddílu. AkceMysi je schopen provést příslušnou akci bez ohledu na to, kde se uvolní tlačítko myši.  
   
--   Když se uvolní tlačítko myši, uspořádá MouseAction.MouseUp pořadí odkazů mezi prvky modelu.  
+- Když se uvolní tlačítko myši, uspořádá MouseAction.MouseUp pořadí odkazů mezi prvky modelu.  
   
--   Změna pořadí role aktivuje pravidlo, které aktualizuje zobrazení. Toto chování je již definován a není vyžadován žádný další kód.  
+- Změna pořadí role aktivuje pravidlo, které aktualizuje zobrazení. Toto chování je již definován a není vyžadován žádný další kód.  
   
 ```csharp  
 using Microsoft.VisualStudio.Modeling;  

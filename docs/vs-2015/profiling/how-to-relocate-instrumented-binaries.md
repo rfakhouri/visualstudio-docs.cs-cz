@@ -16,12 +16,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: bd9c728b2b682582d63fde551b73e6604e283991
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 00b39b91b0a776438199d1df3c212cb9fe40f338
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54757121"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048371"
 ---
 # <a name="how-to-relocate-instrumented-binaries"></a>Postupy: Přemístit instrumentované binární soubory
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,17 +30,17 @@ Během instrumentace testy jsou vloženy do binárního souboru k měření výk
   
  **Požadavky**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
 ### <a name="to-relocate-instrumented-binary"></a>K přesunutí instrumentovaný binární soubor  
   
-1.  V **prohlížeč výkonu**, klikněte pravým tlačítkem na relaci výkonu a pak klikněte na tlačítko **vlastnosti**.  
+1. V **prohlížeč výkonu**, klikněte pravým tlačítkem na relaci výkonu a pak klikněte na tlačítko **vlastnosti**.  
   
-2.  V **stránky vlastností**, klikněte na tlačítko **binární** vlastnosti.  
+2. V **stránky vlastností**, klikněte na tlačítko **binární** vlastnosti.  
   
-3.  Vyberte **přemístění instrumentovaných binárních souborů** zaškrtávací políčko.  
+3. Vyberte **přemístění instrumentovaných binárních souborů** zaškrtávací políčko.  
   
-4.  Zadejte umístění pro instrumentované binární soubor.  
+4. Zadejte umístění pro instrumentované binární soubor.  
   
 ## <a name="see-also"></a>Viz také  
  [Konfigurace výkonnostních relací](../profiling/configuring-performance-sessions.md)   

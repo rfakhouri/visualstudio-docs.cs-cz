@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0bcd3855b5dd2fc701b78c5745a9053d19dc7fcf
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 89152fcb003886087704107f2d4c2a66d3313cc3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59658250"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050359"
 ---
 # <a name="template-directory-description-vsdir-files"></a>Soubory popisu adresáře šablon (.Vsdir)
 Soubor popisu adresáře šablon (.vsdir) je textový soubor, který umožňuje integrované vývojové prostředí (IDE) pro zobrazení složek, souborů průvodce .vsz a souborů šablon, které jsou spojené s projektem v dialogových oknech. Obsah zahrnuje jeden záznam na souboru nebo složky. Všechny soubory .vsdir v odkazované umístění jsou sloučeny, i když jediný projektový soubor je obvykle zadáváno popisující více složek, průvodců nebo soubory šablon.
@@ -50,17 +50,17 @@ SourceFile.cpp|{E59935A1-6156-11d1-87A6-00A0C91E2A46}|#122|110|#123|0|0|0|#124
 
  Při vytváření souboru průvodce byste také zvážit následující problémy.
 
--   Libovolné nepovinné pole pro kterou neexistují žádná smysluplná data by měla obsahovat hodnotu 0 (nula) jako zástupný symbol.
+- Libovolné nepovinné pole pro kterou neexistují žádná smysluplná data by měla obsahovat hodnotu 0 (nula) jako zástupný symbol.
 
--   Pokud není lokalizovaný název zadán, použije se v souboru průvodce název relativní cestu.
+- Pokud není lokalizovaný název zadán, použije se v souboru průvodce název relativní cestu.
 
--   DLLPath přepíše clsidPackage pro umístění ikony.
+- DLLPath přepíše clsidPackage pro umístění ikony.
 
--   Pokud není definována žádná ikona, IDE nahradí výchozí ikonu pro soubor, který se má toto rozšíření.
+- Pokud není definována žádná ikona, IDE nahradí výchozí ikonu pro soubor, který se má toto rozšíření.
 
--   Pokud není navrhované základní název zadán, použije se 'Project'.
+- Pokud není navrhované základní název zadán, použije se 'Project'.
 
--   Pokud odstraníte soubory .vsz, složky nebo soubory šablon, musíte také odebrat jejich přidružené záznamy ze souboru .vsdir.
+- Pokud odstraníte soubory .vsz, složky nebo soubory šablon, musíte také odebrat jejich přidružené záznamy ze souboru .vsdir.
 
 ## <a name="see-also"></a>Viz také
 - [Průvodci](../../extensibility/internals/wizards.md)

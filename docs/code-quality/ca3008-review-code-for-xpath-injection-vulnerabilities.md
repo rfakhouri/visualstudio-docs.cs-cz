@@ -1,5 +1,5 @@
 ---
-title: 'CA3008: Revize kódu pro výraz XPath vkládání chyb zabezpečení'
+title: 'CA3008: Zkontrolujte ohrožení zabezpečení injektáží XPath v kódu'
 ms.date: 04/03/2019
 ms.topic: reference
 author: dotpaul
@@ -11,13 +11,13 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: e66b75160df0e8ecf9d33601ee383ec71cd62c4d
-ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/04/2019
-ms.locfileid: "59018799"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044808"
 ---
-# <a name="ca3008-review-code-for-xpath-injection-vulnerabilities"></a>CA3008: Revize kódu pro výraz XPath vkládání chyb zabezpečení
+# <a name="ca3008-review-code-for-xpath-injection-vulnerabilities"></a>CA3008: Zkontrolujte ohrožení zabezpečení injektáží XPath v kódu
 
 |||
 |-|-|
@@ -26,7 +26,7 @@ ms.locfileid: "59018799"
 |Kategorie|Microsoft.Security|
 |Narušující změna|Pevné|
 
-## <a name="cause"></a>příčina
+## <a name="cause"></a>Příčina
 
 Potenciálně nedůvěryhodný vstup požadavku HTTP dosáhne dotaz XPath.
 

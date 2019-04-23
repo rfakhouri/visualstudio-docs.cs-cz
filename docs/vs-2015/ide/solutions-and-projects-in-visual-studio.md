@@ -50,12 +50,12 @@ caps.latest.revision: 41
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 32b2f33af3c34cf6245e511cbd54d6ce7cc3a2bd
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: cd93fdc527e38b820bc7df6387ca6f8e9078bfd6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54795249"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045326"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Řešení a projekty v sadě Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -84,23 +84,23 @@ Při vytváření aplikace, aplikace, webu, webové aplikace, script, modulu plu
 
 ## <a name="in-this-section"></a>V tomto oddílu
 
--   [Vytváření řešení a projektů](../ide/creating-solutions-and-projects.md)
+- [Vytváření řešení a projektů](../ide/creating-solutions-and-projects.md)
 
--   [Přidávání a odebírání projektových položek](../ide/adding-and-removing-project-items.md)
+- [Přidávání a odebírání projektových položek](../ide/adding-and-removing-project-items.md)
 
--   [Správa vlastností projektů a řešení](../ide/managing-project-and-solution-properties.md)
+- [Správa vlastností projektů a řešení](../ide/managing-project-and-solution-properties.md)
 
--   [Správa odkazů v projektu](../ide/managing-references-in-a-project.md)
+- [Správa odkazů v projektu](../ide/managing-references-in-a-project.md)
 
--   [Vlastnosti aplikace](../ide/application-properties.md)
+- [Vlastnosti aplikace](../ide/application-properties.md)
 
--   [Správa sestavení a podepsání manifestu](../ide/managing-assembly-and-manifest-signing.md)
+- [Správa sestavení a podepsání manifestu](../ide/managing-assembly-and-manifest-signing.md)
 
--   [Postupy: Určení ikony aplikace (Visual Basic, C#)](../ide/how-to-specify-an-application-icon-visual-basic-csharp.md)
+- [Postupy: Určení ikony aplikace (Visual Basic, C#)](../ide/how-to-specify-an-application-icon-visual-basic-csharp.md)
 
--   [Cílení na konkrétní verzi rozhraní .NET Framework](../ide/targeting-a-specific-dotnet-framework-version.md)
+- [Cílení na konkrétní verzi rozhraní .NET Framework](../ide/targeting-a-specific-dotnet-framework-version.md)
 
--   [Vytváření šablon projektů a položek](../ide/creating-project-and-item-templates.md)
+- [Vytváření šablon projektů a položek](../ide/creating-project-and-item-templates.md)
 
 ## <a name="see-also"></a>Viz také
  [Integrované vývojové prostředí sady Visual Studio](../ide/visual-studio-ide.md)

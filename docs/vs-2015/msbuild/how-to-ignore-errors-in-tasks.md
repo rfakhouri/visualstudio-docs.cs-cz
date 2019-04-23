@@ -12,12 +12,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3c641e1f84e90a9e805630d8711f13e3d212ab17
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 5025cc3e9dc0e13c3ae4658d129f5d0ac94f6fd6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59668077"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60062136"
 ---
 # <a name="how-to-ignore-errors-in-tasks"></a>Postupy: Ignorování chyb v úlohách
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ Občas můžete chtít sestavení bude odolný vůči chybám chyb v určité ú
   
 #### <a name="to-ignore-an-error-in-a-task"></a>Chcete-li ignorovat chybu v rámci úlohy  
   
--   Použití `ContinueOnError` atribut úkolu. Příklad:  
+- Použití `ContinueOnError` atribut úkolu. Příklad:  
   
      `<Delete Files="@(Files)" ContinueOnError="WarnAndContinue"/>`  
   

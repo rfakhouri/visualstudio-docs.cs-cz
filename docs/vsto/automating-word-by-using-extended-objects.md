@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6cdcb13c493fbffb147d2f91c48bfff5b37e3a6d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: c75708afa3c230dcc4bba308cf2d7c97b77d802b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56598265"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050923"
 ---
 # <a name="automate-word-by-using-extended-objects"></a>Automatizace aplikace Word s použitím rozšířených objektů
   Při vývoji řešení aplikace Word v sadě Visual Studio, můžete použít *hostovat položky* a *hostování ovládacího prvku*s ve vašich řešeních. Jedná se o objekty, které rozšiřují některé běžně používané objekty v objektovém modelu aplikace Word (to znamená, objektový model, který je zveřejněný prostřednictvím primárních sestavení vzájemné spolupráce pro aplikaci Word), například <xref:Microsoft.Office.Interop.Word.Document> a <xref:Microsoft.Office.Interop.Word.ContentControl> objekty. Rozšířené objekty se chovají jako objekty aplikace Word, které jsou založeny na, ale přidávají další události a možnosti vázání dat na objekty.
@@ -46,13 +46,13 @@ ms.locfileid: "56598265"
 
  Další informace o hostitelské ovládací prvky, které můžete použít v projektech aplikace Word naleznete v následujících tématech:
 
--   [Ovládací prvky obsahu](../vsto/content-controls.md)
+- [Ovládací prvky obsahu](../vsto/content-controls.md)
 
--   [BOOKMARK – ovládací prvek](../vsto/bookmark-control.md)
+- [BOOKMARK – ovládací prvek](../vsto/bookmark-control.md)
 
--   [XmlNode – ovládací prvek](../vsto/xmlnode-control.md)
+- [XmlNode – ovládací prvek](../vsto/xmlnode-control.md)
 
--   [XmlNodes – ovládací prvek](../vsto/xmlnodes-control.md)
+- [XmlNodes – ovládací prvek](../vsto/xmlnodes-control.md)
 
 ## <a name="see-also"></a>Viz také:
 - [Postupy: Přidání ovládacích prvků obsahu do dokumentů aplikace Word](../vsto/how-to-add-content-controls-to-word-documents.md)

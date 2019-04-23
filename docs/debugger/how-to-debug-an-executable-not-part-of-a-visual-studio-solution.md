@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 49636dc4a43d56afe6d9307fc7ec2ddd44a6c37f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 2db4cf8a678b6c20693dcc9c1e730d83f0d5ca7a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56690198"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051333"
 ---
 # <a name="debug-an-app-that-isnt-part-of-a-visual-studio-solution-c-c-visual-basic-f"></a>Ladit aplikaci, která není součástí řešení sady Visual Studio (C++, C#, Visual Basic, F#)
 
@@ -58,7 +58,7 @@ V těchto situacích můžete vytvořit projekt Visual Studio EXE pro aplikace, 
 
 ### <a name="to-import-an-app-into-an-existing-visual-studio-solution"></a>Importovat aplikace do existujícího řešení sady Visual Studio
 
-1.  V jazyce C++ C#, nebo Visual Basic řešení otevřít v sadě Visual Studio, vyberte **souboru** > **přidat** > **existující projekt**.
+1. V jazyce C++ C#, nebo Visual Basic řešení otevřít v sadě Visual Studio, vyberte **souboru** > **přidat** > **existující projekt**.
 
 1. V **otevřít projekt** dialogu **všechny soubory projektu**, pokud ještě není vybraná, v rozevíracím seznamu vedle **název_souboru**.
 

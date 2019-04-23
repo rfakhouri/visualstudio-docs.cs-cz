@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 108ccd07c5e15a264fcd1dc5efe6f5052cd052f6
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 28f6cf6424799cfbe68734d8fa077eea3c2b2c1a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335533"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047395"
 ---
 # <a name="manage-universal-windows-projects"></a>Spravovat projekty pro Universal Windows
 
@@ -25,11 +25,11 @@ Spouští se v sadě Visual Studio 2015, nenainstalujete sadu Visual Studio SDK 
 
 ### <a name="navigate-the-shared-project"></a>Přejděte sdílený projekt
 
-1.  Vytvořte projekt VSIX C# s názvem **TestUniversalProject**. (**Souboru** > **nové** > **projektu** a potom **jazyka C#**  >   **Rozšiřitelnost** > **balíčku sady Visual Studio**). Přidat **vlastního příkazu** šablony položky projektu (na **Průzkumníka řešení**, klikněte pravým tlačítkem na uzel projektu a vyberte **přidat** > **nová položka** , pak přejděte na **rozšiřitelnost**). Název souboru **TestUniversalProject**.
+1. Vytvořte projekt VSIX C# s názvem **TestUniversalProject**. (**Souboru** > **nové** > **projektu** a potom **jazyka C#**  >   **Rozšiřitelnost** > **balíčku sady Visual Studio**). Přidat **vlastního příkazu** šablony položky projektu (na **Průzkumníka řešení**, klikněte pravým tlačítkem na uzel projektu a vyberte **přidat** > **nová položka** , pak přejděte na **rozšiřitelnost**). Název souboru **TestUniversalProject**.
 
-2.  Přidejte odkaz na *Microsoft.VisualStudio.Shell.Interop.12.1.DesignTime.dll* a *Microsoft.VisualStudio.Shell.Interop.14.0.DesignTime.dll* (v **rozšíření** části).
+2. Přidejte odkaz na *Microsoft.VisualStudio.Shell.Interop.12.1.DesignTime.dll* a *Microsoft.VisualStudio.Shell.Interop.14.0.DesignTime.dll* (v **rozšíření** části).
 
-3.  Otevřít *TestUniversalProject.cs* a přidejte následující `using` příkazy:
+3. Otevřít *TestUniversalProject.cs* a přidejte následující `using` příkazy:
 
     ```csharp
     using EnvDTE;
@@ -42,7 +42,7 @@ Spouští se v sadě Visual Studio 2015, nenainstalujete sadu Visual Studio SDK 
     using System.Windows.Forms;
     ```
 
-4.  V `TestUniversalProject` třídy přidat soukromé pole odkazující **výstup** okna.
+4. V `TestUniversalProject` třídy přidat soukromé pole odkazující **výstup** okna.
 
     ```csharp
     public sealed class TestUniversalProject
@@ -52,7 +52,7 @@ Spouští se v sadě Visual Studio 2015, nenainstalujete sadu Visual Studio SDK 
     }
     ```
 
-5.  Nastavení odkazu na podokno výstup uvnitř TestUniversalProject konstruktor:
+5. Nastavení odkazu na podokno výstup uvnitř TestUniversalProject konstruktor:
 
     ```csharp
     private TestUniversalProject(Package package)
@@ -77,7 +77,7 @@ Spouští se v sadě Visual Studio 2015, nenainstalujete sadu Visual Studio SDK 
     }
     ```
 
-6.  Odebrat z existujícího kódu `ShowMessageBox` metody:
+6. Odebrat z existujícího kódu `ShowMessageBox` metody:
 
     ```csharp
     private void ShowMessageBox(object sender, EventArgs e)
@@ -85,7 +85,7 @@ Spouští se v sadě Visual Studio 2015, nenainstalujete sadu Visual Studio SDK 
     }
     ```
 
-7.  Získáte objekt DTE, který budeme používat v tomto návodu několika různým účelům. Také ujistěte se, že je načtené řešení, když dojde ke kliknutí na tlačítko nabídky.
+7. Získáte objekt DTE, který budeme používat v tomto návodu několika různým účelům. Také ujistěte se, že je načtené řešení, když dojde ke kliknutí na tlačítko nabídky.
 
     ```csharp
     private void ShowMessageBox(object sender, EventArgs e)
@@ -103,7 +103,7 @@ Spouští se v sadě Visual Studio 2015, nenainstalujete sadu Visual Studio SDK 
     }
     ```
 
-8.  Najdete sdíleného projektu. Sdílený projekt je čistě kontejneru; nepodporuje sestavení ani vytvářet výstupy. Následující metoda vyhledá první sdíleného projektu v řešení tím, že hledají <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> objekt, který má schopnost sdíleného projektu.
+8. Najdete sdíleného projektu. Sdílený projekt je čistě kontejneru; nepodporuje sestavení ani vytvářet výstupy. Následující metoda vyhledá první sdíleného projektu v řešení tím, že hledají <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> objekt, který má schopnost sdíleného projektu.
 
     ```csharp
     private IVsHierarchy FindSharedProject()
@@ -306,7 +306,7 @@ Spouští se v sadě Visual Studio 2015, nenainstalujete sadu Visual Studio SDK 
 
 ### <a name="manage-the-shared-items-in-the-platform-project"></a>Správa sdílených položek v projektu platformy
 
-1.  Najdete sdílené položky v projektu platformy. Položky ve sdíleném projektu se zobrazí v projektu platformy jako sdílené položky. Nelze zobrazit, je **Průzkumníku řešení**, ale můžete procházet hierarchii projektu je vyhledat. Následující metoda provede hierarchii a shromažďuje všechny sdílené položky. Volitelně vypíše titulek každé položky. Sdílené položky jsou označeny novou vlastnost <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID7.VSHPROPID_IsSharedItem>.
+1. Najdete sdílené položky v projektu platformy. Položky ve sdíleném projektu se zobrazí v projektu platformy jako sdílené položky. Nelze zobrazit, je **Průzkumníku řešení**, ale můžete procházet hierarchii projektu je vyhledat. Následující metoda provede hierarchii a shromažďuje všechny sdílené položky. Volitelně vypíše titulek každé položky. Sdílené položky jsou označeny novou vlastnost <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID7.VSHPROPID_IsSharedItem>.
 
     ```csharp
     private void InspectHierarchyItems(IVsHierarchy hier, uint itemid, int level, List<uint> itemIds, bool getSharedItems, bool printItems)
@@ -338,7 +338,7 @@ Spouští se v sadě Visual Studio 2015, nenainstalujete sadu Visual Studio SDK 
     }
     ```
 
-2.  V `ShowMessageBox` metodu, přidejte následující kód, který vás položky hierarchie projektu platformy. Vložit jej `foreach` bloku.
+2. V `ShowMessageBox` metodu, přidejte následující kód, který vás položky hierarchie projektu platformy. Vložit jej `foreach` bloku.
 
     ```csharp
     output.OutputStringThreadSafe("Walk the active platform project:\n");
@@ -346,7 +346,7 @@ Spouští se v sadě Visual Studio 2015, nenainstalujete sadu Visual Studio SDK 
     this.InspectHierarchyItems(activePlatformHier, (uint)VSConstants.VSITEMID.Root, 1, sharedItemIds, true, true);
     ```
 
-3.  Čtení sdílené položky. Sdílené položky se zobrazí v projektu platformy jako skryté propojené soubory a může číst všechny vlastnosti jako běžný propojené soubory. Následující kód načte úplnou cestu první sdílené položky.
+3. Čtení sdílené položky. Sdílené položky se zobrazí v projektu platformy jako skryté propojené soubory a může číst všechny vlastnosti jako běžný propojené soubory. Následující kód načte úplnou cestu první sdílené položky.
 
     ```csharp
     var sharedItemId = sharedItemIds[0];
@@ -355,7 +355,7 @@ Spouští se v sadě Visual Studio 2015, nenainstalujete sadu Visual Studio SDK 
     output.OutputStringThreadSafe(string.Format("Shared item full path: {0}\n", fullPath));
     ```
 
-4.  Nyní vyzkoušejte. Stisknutím klávesy **F5** spustit experimentální instanci aplikace. Vytvoření C# projekt aplikace pro univerzální centra v experimentální instanci aplikace (v **nový projekt** dialogovém okně **Visual C#**   >  **Windows**  >  **Windows 8** > **univerzální** > **aplikace rozcestníku**) přejděte **nástroje** nabídky a klikněte na tlačítko  **Vyvolání TestUniversalProject**a vrátit se změnami text **výstup** podokně. By měl vypadat přibližně takto:
+4. Nyní vyzkoušejte. Stisknutím klávesy **F5** spustit experimentální instanci aplikace. Vytvoření C# projekt aplikace pro univerzální centra v experimentální instanci aplikace (v **nový projekt** dialogovém okně **Visual C#**   >  **Windows**  >  **Windows 8** > **univerzální** > **aplikace rozcestníku**) přejděte **nástroje** nabídky a klikněte na tlačítko  **Vyvolání TestUniversalProject**a vrátit se změnami text **výstup** podokně. By měl vypadat přibližně takto:
 
     ```
     Found shared project: HubApp.Shared

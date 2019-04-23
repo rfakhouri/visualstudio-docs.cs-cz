@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 905979e0bc563e7525f1385a484e9b44b523a1f9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: dbfb1780cfb8a64ebe20fc45f02992e60d7bb201
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56613983"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049032"
 ---
 # <a name="lines-view"></a>Zobrazení řádků
 Zobrazení řádků je k dispozici pouze pro data profileru, která byla shromážděna pomocí metody vzorkování. Zobrazení není k dispozici pro data, která byla shromážděna pomocí instrumentace.
@@ -30,17 +30,17 @@ Zobrazení řádků je k dispozici pouze pro data profileru, která byla shromá
 
  Příkaz je identifikován následující:
 
--   Zdrojový soubor, který obsahuje Function – příkaz
+- Zdrojový soubor, který obsahuje Function – příkaz
 
--   Funkce, která obsahuje příkaz.
+- Funkce, která obsahuje příkaz.
 
--   Zdrojový řádek, ve kterém se spustí příkaz.
+- Zdrojový řádek, ve kterém se spustí příkaz.
 
--   Znak ve zdrojovém řádku, ve kterém se spustí příkaz.
+- Znak ve zdrojovém řádku, ve kterém se spustí příkaz.
 
--   Řádku zdroje, u které končí příkaz.
+- Řádku zdroje, u které končí příkaz.
 
--   Znak ve zdrojovém řádku, kdy příkaz skončí.
+- Znak ve zdrojovém řádku, kdy příkaz skončí.
 
 ## <a name="see-also"></a>Viz také:
 - [Zobrazení řádků](../profiling/lines-view-sampling-data.md)

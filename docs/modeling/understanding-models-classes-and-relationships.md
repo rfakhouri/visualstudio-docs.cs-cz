@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ea744b4939b128f99a38f52e0b4b509c8da25c7
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d486ae5c056be37c0284d39fabaa6945f5c91659
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55944244"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045028"
 ---
 # <a name="understanding-models-classes-and-relationships"></a>Porozumění modelům, třídám a vztahům
 Jazyka specifického pro doménu (DSL) je definován v jeho souboru definice DSL, společně s jakýkoli vlastní program kód, který může zapisovat. Většina programového kódu v řešení DSL je generována z tohoto souboru.
@@ -61,13 +61,13 @@ Jazyka specifického pro doménu (DSL) je definován v jeho souboru definice DSL
 
  Chcete-li uspořádat diagramem definice DSL, můžete:
 
--   Zaměnit hlavní a odkazovat pomocí zobrazení **přenést stromu zde** a **rozdělit strom** příkazy. Klikněte pravým tlačítkem na jednu doménovou třídu najdete v těchto příkazů.
+- Zaměnit hlavní a odkazovat pomocí zobrazení **přenést stromu zde** a **rozdělit strom** příkazy. Klikněte pravým tlačítkem na jednu doménovou třídu najdete v těchto příkazů.
 
--   Změnit pořadí doménové třídy a třídy tvar stisknutím kombinace kláves Ctrl + šipka nahoru a Ctrl + šipka dolů.
+- Změnit pořadí doménové třídy a třídy tvar stisknutím kombinace kláves Ctrl + šipka nahoru a Ctrl + šipka dolů.
 
--   Sbalit či rozbalit třídy pomocí ikony v pravém horním rohu každé obrazce.
+- Sbalit či rozbalit třídy pomocí ikony v pravém horním rohu každé obrazce.
 
--   Kliknutím na znaménko minus (-) v dolní části doménovou třídu sbalení části stromu.
+- Kliknutím na znaménko minus (-) v dolní části doménovou třídu sbalení části stromu.
 
 ## <a name="inheritance"></a>Dědičnost
  Doménové třídy lze definovat pomocí dědičnosti. Chcete-li vytvořit odvození dědičnosti, klikněte na nástroj dědičnosti, klikněte na tlačítko odvozené třídy a pak klikněte na základní třídu. Prvek modelu má všechny vlastnosti, které jsou definovány ve třídě vlastní domény, společně se všemi vlastnostmi zděděné ze základní třídy. Také dědí její role ve vztazích.

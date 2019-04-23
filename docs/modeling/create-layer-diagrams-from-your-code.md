@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c9ba42ca1a4fefa337e488f3bb3e2879a0446aea
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: b9822dda92a096e3c497d468865d3ed9fd56e16d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223231"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046914"
 ---
 # <a name="create-dependency-diagrams-from-your-code"></a>Vytváření diagramů závislostí z kódu
 
@@ -43,13 +43,13 @@ Než začnete vytvářet diagram závislostí, ujistěte se, že má vaše řeš
 > [!NOTE]
 > Diagramy závislostí nejsou podporovány pro projekty .NET Core v sadě Visual Studio.
 
-1.  Na **architektura** nabídce zvolte **nový Diagram závislostí**.
+1. Na **architektura** nabídce zvolte **nový Diagram závislostí**.
 
-2.  V části **šablony**, zvolte **diagram závislostí**.
+2. V části **šablony**, zvolte **diagram závislostí**.
 
-3.  Pojmenujte diagram.
+3. Pojmenujte diagram.
 
-4.  V **přidat k projektu modelování**, vyhledejte a vyberte existující projekt modelování z řešení.
+4. V **přidat k projektu modelování**, vyhledejte a vyberte existující projekt modelování z řešení.
 
      -nebo-
 
@@ -58,7 +58,7 @@ Než začnete vytvářet diagram závislostí, ujistěte se, že má vaše řeš
     > [!NOTE]
     > Diagram závislostí musí existovat v projektu modelování. Můžete jej však propojit s položkami kdekoli v řešení.
 
-5.  Nezapomeňte uložit projekt modelování i diagram závislostí.
+5. Nezapomeňte uložit projekt modelování i diagram závislostí.
 
 ## <a name="drag-and-drop-or-copy-and-paste-from-a-code-map"></a>Přetahování, nebo zkopírujte a vložte z mapy kódu
 
@@ -101,19 +101,19 @@ Než začnete vytvářet diagram závislostí, ujistěte se, že má vaše řeš
 
  Číslo ve vrstvě udává počet artefaktů, které jsou spojeny s vrstvou. Při čtení tohoto čísla však pamatujte na následující skutečnosti:
 
--   Pokud vrstva odkazuje na artefakt, který obsahuje jiné artefakty, ale vrstva není propojena přímo s jiným artefaktem, pak číslo obsahuje pouze propojené artefakty. Jiné artefakty jsou však zahrnuty do analýzy během ověřování vrstvy.
+- Pokud vrstva odkazuje na artefakt, který obsahuje jiné artefakty, ale vrstva není propojena přímo s jiným artefaktem, pak číslo obsahuje pouze propojené artefakty. Jiné artefakty jsou však zahrnuty do analýzy během ověřování vrstvy.
 
      Pokud je vrstva například spojena s jedním oborem názvů, pak počet propojených artefaktů je 1, přestože obor názvů obsahuje třídy. Pokud vrstva obsahuje rovněž propojení s jednotlivými třídami v oboru názvů, bude počet zahrnovat propojené třídy.
 
--   Pokud například vrstva obsahuje jiné vrstvy, které jsou spojeny s artefakty, pak je vrstva kontejneru také propojena s těmito artefakty, i když číslo vrstvy kontejneru tyto artefakty neobsahuje.
+- Pokud například vrstva obsahuje jiné vrstvy, které jsou spojeny s artefakty, pak je vrstva kontejneru také propojena s těmito artefakty, i když číslo vrstvy kontejneru tyto artefakty neobsahuje.
 
 ## <a name="Managing"></a> Správa propojení mezi vrstvami a artefakty
 
-1.  Na diagram závislostí, otevřete místní nabídku vrstvy a klikněte na tlačítko **zobrazit odkazy**.
+1. Na diagram závislostí, otevřete místní nabídku vrstvy a klikněte na tlačítko **zobrazit odkazy**.
 
      **Průzkumník vrstev** zobrazuje propojení artefaktů pro vybranou vrstvu.
 
-2.  Ke správě těchto propojení použijte následující úlohy:
+2. Ke správě těchto propojení použijte následující úlohy:
 
 |**Komu**|**V Průzkumníku vrstev**|
 |-|-|
@@ -150,11 +150,11 @@ Než začnete vytvářet diagram závislostí, ujistěte se, že má vaše řeš
 ## <a name="Codemaps"></a> Zjišťování vzorců a závislostí v mapě kódu
  Při vytváření diagramů závislostí, můžete také vytvořit **map kódu**. Tyto diagramy vám můžou pomoct odhalit vzory a závislostí při zkoumání kódu. Prozkoumejte sestavení, oborů názvů a třídy – které často odpovídají existujících vrstev pomocí Průzkumníka řešení, zobrazení tříd nebo prohlížeči objektů. Další informace o mapách kódu naleznete v tématu:
 
--   [Mapování závislostí napříč vaším řešením](../modeling/map-dependencies-across-your-solutions.md)
+- [Mapování závislostí napříč vaším řešením](../modeling/map-dependencies-across-your-solutions.md)
 
--   [Použití map kódu k ladění aplikací](../modeling/use-code-maps-to-debug-your-applications.md)
+- [Použití map kódu k ladění aplikací](../modeling/use-code-maps-to-debug-your-applications.md)
 
--   [Nalezení potenciálních problémů pomocí analyzátorů mapy kódu](../modeling/find-potential-problems-using-code-map-analyzers.md)
+- [Nalezení potenciálních problémů pomocí analyzátorů mapy kódu](../modeling/find-potential-problems-using-code-map-analyzers.md)
 
 ## <a name="see-also"></a>Viz také
 

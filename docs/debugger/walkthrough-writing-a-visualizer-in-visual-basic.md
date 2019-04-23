@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d30e789d0ae3fa3e717be9739b94439a7d6a31a2
-ms.sourcegitcommit: 847d192013eb8225776243045c9b5a53d1ba4a59
+ms.openlocfilehash: be3fb721fd058f127b4d361c769d4cdfdc1e4b92
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/15/2019
-ms.locfileid: "59584542"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050886"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-visual-basic"></a>Návod: Zápis Vizualizéru v jazyce Visual Basic
 Tento návod ukazuje, jak napsat Jednoduchý vizualizér pomocí [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]. Vizualizaci, kterou vytvoříte v tomto názorném postupu se zobrazí obsah řetězce pomocí Windows Forms okno se zprávou. Tento vizualizér jednoduchým řetězcem je základní příklad, který znázorňuje, jak můžete vytvořit vizualizéry pro ostatní typy dat pro více projektů.
@@ -106,15 +106,15 @@ Kód vizualizéru musí být umístěn v knihovně DLL, který bude číst ladic
 
 ### <a name="to-add-systemwindowsforms"></a>Chcete-li přidat System.Windows.Forms
 
-1.  V **Průzkumníka řešení**, klikněte pravým tlačítkem na **odkazy**a v místní nabídce klikněte na tlačítko **přidat odkaz**.
+1. V **Průzkumníka řešení**, klikněte pravým tlačítkem na **odkazy**a v místní nabídce klikněte na tlačítko **přidat odkaz**.
 
 2. V **přidat odkaz** dialogovém okně **Procházet** kartu, vyberte možnost **Procházet**a najít System.Windows.Forms.DLL.
 
     Můžete najít DLL v *C:\Windows\Microsoft.NET\Framework\v4.0.30319*.
 
-3.  Klikněte na **OK**.
+3. Klikněte na **OK**.
 
-4.  V DebuggerSide.cs, přidejte následující příkaz, kterým `Imports` příkazy:
+4. V DebuggerSide.cs, přidejte následující příkaz, kterým `Imports` příkazy:
 
     ```vb
     Imports System.Windows.Forms
@@ -125,7 +125,7 @@ Kód vizualizéru musí být umístěn v knihovně DLL, který bude číst ladic
 
 ### <a name="to-show-the-visualizer-output-in-a-dialog-box"></a>Chcete-li zobrazit výstup vizualizéru v dialogovém okně
 
-1.  V `Show` metodu, přidejte následující řádek kódu:
+1. V `Show` metodu, přidejte následující řádek kódu:
 
     ```vb
     MessageBox.Show(objectProvider.GetObject().ToString())
@@ -133,20 +133,20 @@ Kód vizualizéru musí být umístěn v knihovně DLL, který bude číst ladic
 
      Tento příklad kódu neobsahuje zpracování chyb. By měly zahrnovat zpracování chyb v reálné vizualizéru nebo jakékoli jiné aplikace.
 
-2.  Na **sestavení** nabídky, klikněte na tlačítko **sestavení MyFirstVisualizer**. Projekt má sestavit úspěšně. Než budete pokračovat, opravte případné chyby sestavení.
+2. Na **sestavení** nabídky, klikněte na tlačítko **sestavení MyFirstVisualizer**. Projekt má sestavit úspěšně. Než budete pokračovat, opravte případné chyby sestavení.
 
 ## <a name="add-the-necessary-attribute"></a>Přidejte atribut nezbytné
  To je ladicí program side kódu. Ještě jeden krok, je však: vizualizéru se skládá z atributu, který dává pokyn na straně laděného procesu, které kolekce tříd.
 
 ### <a name="to-add-the-debugee-side-code"></a>Chcete-li přidat kódu na straně laděného objektu
 
-1.  Přidejte následující kód atribut DebuggerSide.vb, po `Imports` příkazy ale předtím, než `namespace MyFirstVisualizer`:
+1. Přidejte následující kód atribut DebuggerSide.vb, po `Imports` příkazy ale předtím, než `namespace MyFirstVisualizer`:
 
     ```vb
     <Assembly: System.Diagnostics.DebuggerVisualizer(GetType(MyFirstVisualizer.DebuggerSide), GetType(VisualizerObjectSource), Target:=GetType(System.String), Description:="My First Visualizer")>
     ```
 
-2.  Na **sestavení** nabídky, klikněte na tlačítko **sestavení MyFirstVisualizer**. Projekt má sestavit úspěšně. Než budete pokračovat, opravte případné chyby sestavení.
+2. Na **sestavení** nabídky, klikněte na tlačítko **sestavení MyFirstVisualizer**. Projekt má sestavit úspěšně. Než budete pokračovat, opravte případné chyby sestavení.
 
 ## <a name="create-a-test-harness"></a>Vytvořit testovací prostředí
  V tomto okamžiku je dokončena první vizualizér. Pokud jste postupovali podle kroků správně, může sestavení vizualizéru a nainstalujte ho do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Před instalací vizualizéru do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], ale měli otestovat a ujistit se, že běží správně. Teď vytvoříte testovací prostředí pro spuštění vizualizéru bez instalace do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
@@ -183,17 +183,17 @@ Kód vizualizéru musí být umístěn v knihovně DLL, který bude číst ladic
 
 ### <a name="to-add-necessary-references-to-mytestconsole"></a>Chcete-li přidat potřebné odkazy na MyTestConsole
 
-1.  V **Průzkumníka řešení**, klikněte pravým tlačítkem na **MyTestConsole**a v místní nabídce klikněte na tlačítko **přidat odkaz**.
+1. V **Průzkumníka řešení**, klikněte pravým tlačítkem na **MyTestConsole**a v místní nabídce klikněte na tlačítko **přidat odkaz**.
 
-2.  V **přidat odkaz** dialogovém okně **Procházet** klikněte na tlačítko Microsoft.VisualStudio.DebuggerVisualizers.
+2. V **přidat odkaz** dialogovém okně **Procházet** klikněte na tlačítko Microsoft.VisualStudio.DebuggerVisualizers.
 
-3.  Klikněte na **OK**.
+3. Klikněte na **OK**.
 
-4.  Klikněte pravým tlačítkem na **MyTestConsole**a potom klikněte na tlačítko **přidat odkaz** znovu.
+4. Klikněte pravým tlačítkem na **MyTestConsole**a potom klikněte na tlačítko **přidat odkaz** znovu.
 
-5.  V **přidat odkaz** dialogové okno, klikněte na tlačítko **projekty** kartu a potom vyberte MyFirstVisualizer.
+5. V **přidat odkaz** dialogové okno, klikněte na tlačítko **projekty** kartu a potom vyberte MyFirstVisualizer.
 
-6.  Klikněte na tlačítko **OK**.
+6. Klikněte na tlačítko **OK**.
 
 ## <a name="finish-your-test-harness-and-test-your-visualizer"></a>Dokončení testovací prostředí a testování vaší Vizualizéru
  Teď přidejte kód k dokončení testovací prostředí.

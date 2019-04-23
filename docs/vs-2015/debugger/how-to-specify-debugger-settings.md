@@ -23,12 +23,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4ad4e95f9032c3182da3fe59cee16e4ccc3066c4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 54cb1f67aa1738126fd78e2406c076a4fefa8823
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54799127"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051453"
 ---
 # <a name="how-to-specify-debugger-settings"></a>Postupy: Určení nastavení ladicího programu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,15 +37,15 @@ V [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], můžete zadat různá nastaven�
   
 ### <a name="to-set-debugger-options"></a>Chcete-li nastavit možnosti ladicího programu  
   
-1.  Na **nástroje** nabídky, klikněte na tlačítko **možnosti**.  
+1. Na **nástroje** nabídky, klikněte na tlačítko **možnosti**.  
   
-2.  V **možnosti** dialogovém okně Otevřít **ladění** složky.  
+2. V **možnosti** dialogovém okně Otevřít **ladění** složky.  
   
-3.  V **ladění** složky, zvolte kategorii požadované možnosti.  
+3. V **ladění** složky, zvolte kategorii požadované možnosti.  
   
      Nejběžnější možnosti jsou umístěny v **Obecné** kategorie. Další informace najdete v tématu [Obecné, ladění, dialogové okno Možnosti](../debugger/general-debugging-options-dialog-box.md).  
   
-4.  Vyberte nebo zrušte zaškrtnutí možnosti na požadovanou možnost. Stisknutím klávesy F1 zobrazíte nápovědu o možnostech.  
+4. Vyberte nebo zrušte zaškrtnutí možnosti na požadovanou možnost. Stisknutím klávesy F1 zobrazíte nápovědu o možnostech.  
   
 ## <a name="see-also"></a>Viz také  
  [Obecné, ladění, dialogové okno Možnosti](../debugger/general-debugging-options-dialog-box.md)   

@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ee7c0ee30ebe5a424439aab8e06c18c10fc679bf
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e9f605e761380b3dc856926dff5bd1712753a8ba
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942112"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045678"
 ---
 # <a name="how-to-configure-projects-to-target-platforms"></a>Postupy: Konfigurace projektů pro cílové platformy
 
@@ -35,20 +35,20 @@ Visual Studio umožňuje nastavení aplikací na různých platformách, včetn�
 
 ### <a name="to-configure-a-project-to-target-a-64-bit-platform"></a>Ke konfiguraci projektu cílit na 64bitové platformě
 
-1.  V panelu nabídky zvolte **sestavení** > **nástroje Configuration Manager**.
+1. V panelu nabídky zvolte **sestavení** > **nástroje Configuration Manager**.
 
-2.  V **platformou aktivního řešení** seznamu, zvolte 64bitovou platformu pro řešení do cíle a klikněte na tlačítko **Zavřít** tlačítko.
+2. V **platformou aktivního řešení** seznamu, zvolte 64bitovou platformu pro řešení do cíle a klikněte na tlačítko **Zavřít** tlačítko.
 
-    1.  Pokud se nezobrazí platforma, která chcete v **platformou aktivního řešení** klikněte na položku **nový**.
+    1. Pokud se nezobrazí platforma, která chcete v **platformou aktivního řešení** klikněte na položku **nový**.
 
          **Nová platforma řešení** zobrazí se dialogové okno.
 
-    2.  V **zadejte nebo vyberte novou platformu** klikněte na položku **x64**.
+    2. V **zadejte nebo vyberte novou platformu** klikněte na položku **x64**.
 
         > [!NOTE]
         >  Pokud vaše konfigurace zadejte nový název, bude pravděpodobně nutné upravit nastavení v **Návrháře projektu** pro zaměření na správnou platformu.
 
-    3.  Pokud chcete tato nastavení zkopírovat z aktuální konfiguraci platformy, vyberte jej a klikněte na tlačítko **OK** tlačítko.
+    3. Pokud chcete tato nastavení zkopírovat z aktuální konfiguraci platformy, vyberte jej a klikněte na tlačítko **OK** tlačítko.
 
 Jsou aktualizovány vlastnosti pro všechny projekty, které se zaměřují 64bitové platformě a optimalizují se další sestavení projektu pro 64bitové platformy.
 

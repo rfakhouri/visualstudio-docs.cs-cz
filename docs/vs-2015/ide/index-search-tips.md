@@ -14,12 +14,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a05e767330f0c1df5b30af6660a3f6e5ba4971e4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1072d38adac020a1b9976d17f98ddf8882d7cb22
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54764975"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044210"
 ---
 # <a name="index-search-tips"></a>Tipy pro vyhledávání v rejstříku
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,32 +31,32 @@ Máte přístup k informacím v indexu zadáním klíčových slov. Toto téma n
   
 ### <a name="general-guidelines"></a>Obecné pokyny  
   
--   Projděte si index položky. Ne všechna témata jsou indexovány stejným způsobem, a ten, který nejvíce může pomoci při může být vyšší nebo nižší v seznamu, než jste očekávali.  
+- Projděte si index položky. Ne všechna témata jsou indexovány stejným způsobem, a ten, který nejvíce může pomoci při může být vyšší nebo nižší v seznamu, než jste očekávali.  
   
--   Vynechte články, jako je například "e" nebo "the", protože je index ignoruje.  
+- Vynechte články, jako je například "e" nebo "the", protože je index ignoruje.  
   
--   Reverse slova, která zadáte Pokud nenajdete položky, které jste očekávali.  
+- Reverse slova, která zadáte Pokud nenajdete položky, které jste očekávali.  
   
      Pokud žádné odpovídající položky "ladění kódu vnořeného sestavení" nezobrazovala, zkuste například zadat, "sestavení kódu, ladění vloženého".  
   
--   Použití filtrů s **Index** kartu ke snížení počtu výsledků.  
+- Použití filtrů s **Index** kartu ke snížení počtu výsledků.  
   
 ### <a name="syntax-tips"></a>Syntaxe tipy  
  Pokud nenajdete položku slovo nebo frázi, které jste zadali, zkuste následující:  
   
--   Zadejte první několik písmen, nebo kořenový slova. Zadáním dílčí řetězec můžete získat na témata, která byla indexované klíčová slova, která jsou množného nebo jednotného čísla.  
+- Zadejte první několik písmen, nebo kořenový slova. Zadáním dílčí řetězec můžete získat na témata, která byla indexované klíčová slova, která jsou množného nebo jednotného čísla.  
   
      Zadejte například "vlastnosti" spusťte hledání nad vlastnosti a vlastnosti.  
   
--   Zadejte gerund (-ing) formy akce pro úlohu chcete provést. Chcete-li najít konkrétnější index položky, přidejte slovo, které popisuje přesně to, co chcete.  
+- Zadejte gerund (-ing) formy akce pro úlohu chcete provést. Chcete-li najít konkrétnější index položky, přidejte slovo, které popisuje přesně to, co chcete.  
   
      Zadejte například "spuštěno", chcete-li získat další položky nebo "spuštěné programy" získat méně.  
   
--   Zadejte přídavných samostatné jmen. Chcete-li zúžit výsledky, přidejte slovo, které popisuje přesně to, co chcete.  
+- Zadejte přídavných samostatné jmen. Chcete-li zúžit výsledky, přidejte slovo, které popisuje přesně to, co chcete.  
   
      Zadejte například "Modelu COM +" získat širokou škálu položky nebo "komponenty modelu COM +" získat méně.  
   
--   Zadejte synonymum aplikace word nebo příkaz, který hledáte.  
+- Zadejte synonymum aplikace word nebo příkaz, který hledáte.  
   
      Například pokud jste zadali gerund "building" "vytváření" místo toho vyzkoušet.  
   

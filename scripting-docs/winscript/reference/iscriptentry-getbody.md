@@ -17,12 +17,12 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1a2cb9757c0a9683a00768d8947dfe33749e4bb9
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 7f8f1ad24660401d575af2724b788387fd546af8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58147940"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064915"
 ---
 # <a name="iscriptentrygetbody"></a>IScriptEntry::GetBody
 Vrátí text, který odpovídá do těla `IScriptEntry` skriptovém bloku, blok funkce nebo skriptletu.  
@@ -39,11 +39,11 @@ HRESULT GetBody(
  `pbstr`  
  [out] Text, který je v těle jednoho z následujících akcí:  
   
--   `IScriptEntry` Bloku skriptu  
+- `IScriptEntry` Bloku skriptu  
   
--   `IScriptEntry` Funkce v bloku – funkce  
+- `IScriptEntry` Funkce v bloku – funkce  
   
--   `IScriptEntry` Skriptletu obslužné rutiny události  
+- `IScriptEntry` Skriptletu obslužné rutiny události  
   
 ## <a name="return-value"></a>Návratová hodnota  
  `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  

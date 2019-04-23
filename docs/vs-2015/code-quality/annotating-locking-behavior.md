@@ -33,12 +33,12 @@ caps.latest.revision: 11
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: 8d855fb41624e357a62d9eb773cc5e42606572f7
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 66c4aafb380d50ec0faafce931b8ce73e5138e6f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54834370"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052386"
 ---
 # <a name="annotating-locking-behavior"></a>Zadávání poznámek o chování při zamykání
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,11 +58,11 @@ Předejdete tak chybám souběžnosti ve vašem vícevláknovém programu, vždy
   
  Některé vlákno pravidel vlastnictví brát v úvahu:  
   
--   Číselník zámky nebudou uncounted zámky, které mají jasné vlákno vlastnictví.  
+- Číselník zámky nebudou uncounted zámky, které mají jasné vlákno vlastnictví.  
   
--   Vzájemně vyloučené přístupy a kritické oddíly se počítají zámků, které se mají vymazat vlákno vlastnictví.  
+- Vzájemně vyloučené přístupy a kritické oddíly se počítají zámků, které se mají vymazat vlákno vlastnictví.  
   
--   Semaforů a události se počítají zámků, které nemají vlastnictví vymazat vlákna.  
+- Semaforů a události se počítají zámků, které nemají vlastnictví vymazat vlákna.  
   
 ## <a name="locking-annotations"></a>Uzamčení poznámky  
  V následující tabulce jsou uvedeny zamykání poznámky.  

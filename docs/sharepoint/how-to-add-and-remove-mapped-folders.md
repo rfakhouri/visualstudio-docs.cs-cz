@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 21ecf370134558d7b47faad1c215fa9a65019316
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: d5d1acc40b23c979a5746c50be50a584d11112b5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56646210"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046978"
 ---
 # <a name="how-to-add-and-remove-mapped-folders"></a>Postupy: Přidání a odebrání mapovaných složek
   Některé složky v Sharepointu, běžně používají, jako je Image a rozložení, jsou hluboko vložené hierarchie souborů. Mapování těchto složek do projektu služby SharePoint pro přístup k nim snadněji. Mapované složky jsou složky v projektu služby SharePoint, které odpovídají na fyzické umístění souborů v instalaci SharePoint serveru.
@@ -33,23 +33,23 @@ Mapované složky můžete přidat do projektu pomocí příkazů na panelu nab�
 
 #### <a name="to-add-mapped-folders-to-a-project"></a>Chcete-li přidat mapované složky do projektu
 
-1.  V panelu nabídky zvolte **souboru** > **nový** > **projektu**.
+1. V panelu nabídky zvolte **souboru** > **nový** > **projektu**.
 
-2.  V **nový projekt** dialogového okna rozbalte buď **jazyka Visual Basic** nebo **Visual C#**  uzlu, rozbalte **Office/SharePoint** uzel a klikněte na tlačítko **řešení služby SharePoint** uzlu.
+2. V **nový projekt** dialogového okna rozbalte buď **jazyka Visual Basic** nebo **Visual C#**  uzlu, rozbalte **Office/SharePoint** uzel a klikněte na tlačítko **řešení služby SharePoint** uzlu.
 
-3.  V seznamu šablon projektu vyberte **Sharepointu 2013 vizuální webová část** šablony.
+3. V seznamu šablon projektu vyberte **Sharepointu 2013 vizuální webová část** šablony.
 
-4.  V **název** zadejte **projekt testproject1 vyžaduje**a klikněte na tlačítko **OK** tlačítko.
+4. V **název** zadejte **projekt testproject1 vyžaduje**a klikněte na tlačítko **OK** tlačítko.
 
-5.  V **Průvodce přizpůsobením SharePoint**, zvolte **Dokončit** tlačítko Zachovat výchozí nastavení.
+5. V **Průvodce přizpůsobením SharePoint**, zvolte **Dokončit** tlačítko Zachovat výchozí nastavení.
 
-6.  V **Průzkumníka řešení**, zvolte uzel projektu a pak na panelu nabídek zvolte **projektu** > **přidat SharePoint "Image" namapované složky**.
+6. V **Průzkumníka řešení**, zvolte uzel projektu a pak na panelu nabídek zvolte **projektu** > **přidat SharePoint "Image" namapované složky**.
 
      Složku s názvem **Imagí** se zobrazí ve vašem projektu a obsahuje podsložku s názvem projekt testproject1 vyžaduje. Tato mapovaná složka bude obsahovat bitových kopií pro projektu vizuální webové části.
 
-7.  V **Průzkumníka řešení**, zvolte uzel projektu a pak na panelu nabídek zvolte **projektu** > **přidat Sharepointové namapované složky** zobrazíte  **Přidat složku služby SharePoint mapovat** dialogové okno.
+7. V **Průzkumníka řešení**, zvolte uzel projektu a pak na panelu nabídek zvolte **projektu** > **přidat Sharepointové namapované složky** zobrazíte  **Přidat složku služby SharePoint mapovat** dialogové okno.
 
-8.  Ve stromovém zobrazení složek, které jsou k dispozici pro mapování, zvolte **prostředky** složky a klikněte na tlačítko **OK** tlačítko.
+8. Ve stromovém zobrazení složek, které jsou k dispozici pro mapování, zvolte **prostředky** složky a klikněte na tlačítko **OK** tlačítko.
 
      Složku s názvem **prostředky** se zobrazí ve vašem projektu. Tato složka může ukládat položky, jako jsou soubory prostředků řetězce. Podsložky může být užitečné pro uspořádání obsahu z namapované složky, ale vytvoření automaticky při přidání mapovaná složka s použitím **přidat Sharepointové namapované složky** příkazu. Chcete-li přidat podsložky, zvolte **prostředky** složky a potom na panelu nabídek zvolte **projektu** > **novou složku**.
 
@@ -58,25 +58,25 @@ Mapované složky můžete přidat do projektu pomocí příkazů na panelu nab�
 
 #### <a name="to-change-the-deployment-location-of-a-mapped-folder"></a>Chcete-li změnit umístění nasazení z namapované složky
 
-1.  V projektu, který jste vytvořili dříve zvolte na mapovanou složku.
+1. V projektu, který jste vytvořili dříve zvolte na mapovanou složku.
 
-2.  V **vlastnosti** okno, zvolte tři tečky (![ASP.NET – Návrhář mobilních řešení Elipsa](../sharepoint/media/mwellipsis.gif "elipsa ASP.NET – Návrhář mobilních řešení")) tlačítko **nasazení umístění** vlastnost.
+2. V **vlastnosti** okno, zvolte tři tečky (![ASP.NET – Návrhář mobilních řešení Elipsa](../sharepoint/media/mwellipsis.gif "elipsa ASP.NET – Návrhář mobilních řešení")) tlačítko **nasazení umístění** vlastnost.
 
-3.  V **přidat Sharepointové namapované složky** dialogové okno, přejděte do složky, do kterého chcete mapovanou složku tak, aby odkazoval.
+3. V **přidat Sharepointové namapované složky** dialogové okno, přejděte do složky, do kterého chcete mapovanou složku tak, aby odkazoval.
 
-4.  Vyberte uzel a klikněte na tlačítko **OK** tlačítko.
+4. Vyberte uzel a klikněte na tlačítko **OK** tlačítko.
 
 ## <a name="rename-or-remove-mapped-folders"></a>Přejmenování a odebrání mapovaných složek
 
 #### <a name="to-rename-or-remove-a-mapped-folder"></a>Přejmenování nebo odstranění mapované složky
 
-1.  V projektu, který jste vytvořili dříve zvolte na mapovanou složku.
+1. V projektu, který jste vytvořili dříve zvolte na mapovanou složku.
 
-2.  Chcete-li přejmenovat mapovanou složku, otevřete místní nabídku, zvolte **přejmenovat**, zadejte nový název a stiskněte klávesu Enter.
+2. Chcete-li přejmenovat mapovanou složku, otevřete místní nabídku, zvolte **přejmenovat**, zadejte nový název a stiskněte klávesu Enter.
 
      Jako alternativu můžete zvolit mapovaná složka, kterou chcete přejmenovat, otevřete **vlastnosti** okna a pak nastavte hodnotu **název složky** vlastnost na nový název.
 
-3.  Pro mapovanou složku odeberte z projektu, otevřete místní nabídku, vyberte **odstranit**a klikněte na tlačítko **OK** tlačítko v dialogovém okně potvrďte odstranění.
+3. Pro mapovanou složku odeberte z projektu, otevřete místní nabídku, vyberte **odstranit**a klikněte na tlačítko **OK** tlačítko v dialogovém okně potvrďte odstranění.
 
 ## <a name="see-also"></a>Viz také:
 - [Vývoj řešení služby SharePoint](../sharepoint/developing-sharepoint-solutions.md)

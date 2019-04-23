@@ -11,12 +11,12 @@ ms.assetid: 63f4bd42-3cfb-4eee-af68-e8334976539e
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0a0d656aea42fff774e5e9c58068eff7039cfe79
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 54f9c7b982f1774c79d7cd1e7c0affa29dfbb65d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936951"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60058210"
 ---
 # <a name="analyzing-load-test-virtual-user-activity-in-the-details-view-of-the-load-test-analyzer"></a>Analýza aktivity virtuálních uživatelů zátěžového testu v podrobném zobrazení Analyzéru zátěžového testu
 
@@ -45,11 +45,11 @@ ms.locfileid: "55936951"
 
  Panel výsledků filtru je zobrazen v **graf aktivity virtuálního uživatele**. Panel výsledků filtru můžete filtrovat podle následujících akcí:
 
--   **Zobrazit pouze výsledky s protokoly** zobrazí pouze výsledky, které mají protokolů testu k nim má přiřazené testů.
+- **Zobrazit pouze výsledky s protokoly** zobrazí pouze výsledky, které mají protokolů testu k nim má přiřazené testů.
 
--   **Zobrazit úspěšné výsledky** úspěšné výsledky se zobrazí.
+- **Zobrazit úspěšné výsledky** úspěšné výsledky se zobrazí.
 
--   **Zobrazit výsledky s chybami** zobrazuje výsledky s chybami, které vám mohou pomoci při ladění.
+- **Zobrazit výsledky s chybami** zobrazuje výsledky s chybami, které vám mohou pomoci při ladění.
 
 ## <a name="tasks"></a>Úlohy
 

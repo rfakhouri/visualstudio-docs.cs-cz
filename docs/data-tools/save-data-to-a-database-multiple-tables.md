@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b5f2296e7dbd6c40327ed516f4da2bf51b8dd4cd
-ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
+ms.openlocfilehash: 9e4a30c3aa85969a4cbf712f2f4018c24169ff6d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "58268552"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051411"
 ---
 # <a name="save-data-to-a-database-multiple-tables"></a>Uložení dat do databáze (více tabulek)
 
@@ -31,15 +31,15 @@ Data můžete uložit ve vaší aplikaci zpět do databáze pomocí volání `Up
 
 Úlohy v tomto návodu zahrnují:
 
--  Vytvoření a konfigurace zdroje dat ve vaší aplikaci se [Průvodce konfigurací zdroje dat](../data-tools/media/data-source-configuration-wizard.png).
+- Vytvoření a konfigurace zdroje dat ve vaší aplikaci se [Průvodce konfigurací zdroje dat](../data-tools/media/data-source-configuration-wizard.png).
 
--  Ovládací prvky položek v nastavení [okna zdroje dat](add-new-data-sources.md#data-sources-window). Další informace najdete v tématu [nastavení ovládacího prvku, který má být vytvořen při přetažení z okna zdroje dat](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
+- Ovládací prvky položek v nastavení [okna zdroje dat](add-new-data-sources.md#data-sources-window). Další informace najdete v tématu [nastavení ovládacího prvku, který má být vytvořen při přetažení z okna zdroje dat](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
 
--  Vytváření ovládacích prvků vázaných na data přetažením položek z **zdroje dat** okna do formuláře.
+- Vytváření ovládacích prvků vázaných na data přetažením položek z **zdroje dat** okna do formuláře.
 
--  Úprava několik záznamů ve všech tabulkách v datové sadě.
+- Úprava několik záznamů ve všech tabulkách v datové sadě.
 
--  Úprava kódu pro odesílání aktualizovaná data v datové sadě zpět do databáze.
+- Úprava kódu pro odesílání aktualizovaná data v datové sadě zpět do databáze.
 
 ## <a name="prerequisites"></a>Požadavky
 

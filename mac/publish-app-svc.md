@@ -12,12 +12,12 @@ ms.prod: visual-studio-mac
 ms.custom: video
 ms.workload:
 - azure
-ms.openlocfilehash: d6e4e605a838ef354b8aef7227d2825fef8b7e7f
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: c6aa04ceb08daeb303ae6c421fe34465a9ebcda4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58856298"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053220"
 ---
 # <a name="publish-a-web-app-to-azure-app-service-using-visual-studio-for-mac"></a>Publikování webové aplikace do služby Azure App Service pomocí sady Visual Studio pro Mac
 
@@ -25,9 +25,9 @@ Nástroj publikování můžete použít k publikování aplikace ASP.NET Core d
 
 ## <a name="prerequisites"></a>Požadavky
 
- - [2019 Visual Studio pro Mac](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs4mac2019) nainstalované s ASP.NET Core povolena.
- - Předplatné Azure. Pokud ještě nemáte předplatné, [ZDARMA zaregistrovat](https://azure.microsoft.com/free/dotnet/), což zahrnuje 200 USD v kreditech na 30 dnů a 12 měsíců oblíbených služeb zdarma.
- - Projekt ASP.NET Core. Pokud projekt ještě nemáte, můžete si [vytvořte novou](~/create-new-projects.md).
+- [2019 Visual Studio pro Mac](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs4mac2019) nainstalované s ASP.NET Core povolena.
+- Předplatné Azure. Pokud ještě nemáte předplatné, [ZDARMA zaregistrovat](https://azure.microsoft.com/free/dotnet/), což zahrnuje 200 USD v kreditech na 30 dnů a 12 měsíců oblíbených služeb zdarma.
+- Projekt ASP.NET Core. Pokud projekt ještě nemáte, můžete si [vytvořte novou](~/create-new-projects.md).
 
 ## <a name="publish-to-azure-app-service"></a>Publikování do Azure App Service
 

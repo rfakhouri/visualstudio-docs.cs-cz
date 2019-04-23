@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a6002ed1748a5848e43628c88ec0395a0d4053ed
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 829ceea8f4acf0f884e3345e05053d368489d9ea
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56712018"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049019"
 ---
 # <a name="get-started-with-language-service-and-editor-extensions"></a>Začínáme s rozšířeními service a editoru jazyka
 Rozšíření editoru slouží k přidání služby jazykové vlastnosti zahrnující například sbalování, párování složených závorek, technologie IntelliSense a návrhy, programovacího jazyka nebo jakýkoli typ obsahu. Můžete také přizpůsobit vzhled a chování editoru sady Visual Studio, například text barevné zvýrazňování, okrajů, vylepšení a další vizuální prvky. Můžete také definovat vlastní typ obsahu a definujte vzhled a chování textové zobrazení, ve kterých se zobrazí váš obsah.
@@ -82,9 +82,9 @@ Rozšíření editoru slouží k přidání služby jazykové vlastnosti zahrnuj
 
  Můžete také vytvořit editor komponent MEF z rozšíření sady Visual Studio balíček. Najdete v následujících návodech podrobnosti:
 
--   [Návod: Použití příkazů prostředí s rozšířením editoru](../extensibility/walkthrough-using-a-shell-command-with-an-editor-extension.md)
+- [Návod: Použití příkazů prostředí s rozšířením editoru](../extensibility/walkthrough-using-a-shell-command-with-an-editor-extension.md)
 
--   [Návod: Pomocí klávesové zkratky s rozšířením editoru](../extensibility/walkthrough-using-a-shortcut-key-with-an-editor-extension.md)
+- [Návod: Pomocí klávesové zkratky s rozšířením editoru](../extensibility/walkthrough-using-a-shortcut-key-with-an-editor-extension.md)
 
 ## <a name="see-also"></a>Viz také:
 - [Jazykové služby a editor Rozšiřovací body](../extensibility/language-service-and-editor-extension-points.md)

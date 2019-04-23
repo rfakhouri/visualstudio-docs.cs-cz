@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a7c1bcb041101cf90957d02991ab1619d47051b5
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 88bd7571179d7841cc239052b7bf9f410761174c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335127"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044028"
 ---
 # <a name="references-page-project-designer-visual-basic"></a>Stránka Odkazy, návrhář projektu (Visual Basic)
 
@@ -82,11 +82,11 @@ Kliknutím na toto tlačítko přístup **cesty odkazů** dialogové okno.
 
  Vyberte obor názvů zadané uživatelem v seznamu oborů názvů, zadejte název, který chcete nahradit v **importovat obory názvů** pole a potom klikněte na toto tlačítko Změnit na novém oboru názvů. Je aktivní, pouze pokud vybraný obor názvů je ten, který jste přidali do seznamu pomocí tlačítka **přidat Import uživatelů** tlačítko. Můžete přidat:
 
--   Třídy nebo obory názvů, jako například <xref:System.Math?displayProperty=fullName>.
+- Třídy nebo obory názvů, jako například <xref:System.Math?displayProperty=fullName>.
 
--   Alias importuje, jako například `VB=Microsoft.VisualBasic`.
+- Alias importuje, jako například `VB=Microsoft.VisualBasic`.
 
--   Obory názvů XML, jako například `<xmlns:xsl="http://www.w3.org/1999/XSL/Transform">`.
+- Obory názvů XML, jako například `<xmlns:xsl="http://www.w3.org/1999/XSL/Transform">`.
 
 ## <a name="see-also"></a>Viz také
 

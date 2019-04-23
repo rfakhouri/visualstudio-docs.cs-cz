@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 32c96bf9e206a70f5de38459460d8bdcaee571cc
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: c5d7d5fa0a53ead2f49f89df37943d734a1b73fb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59666556"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045339"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Zadání symbolu (.pdb) a zdrojových souborů v ladicím programu sady Visual Studio (C#, C++, Visual Basic, F#)
 
@@ -128,9 +128,9 @@ Na **nástroje** > **možnosti** > **ladění** > **symboly** stránky, můžete
 
 4. Zadejte moduly, které má ladicí program k načtení z **Symbol umístění souborů (.pdb)** při spuštění.
 
-   -  Vyberte **načíst všechny moduly, kromě vyloučených** (výchozí) pro načtení všech symbolů pro všechny moduly v umístění souboru se symboly, s výjimkou výslovně vyloučit moduly. Chcete-li vyloučit některé moduly, vyberte **zadat vyloučené moduly**, vyberte **+** ikonu, zadejte názvy modulů, které chcete vyloučit a vyberte **OK**.
+   - Vyberte **načíst všechny moduly, kromě vyloučených** (výchozí) pro načtení všech symbolů pro všechny moduly v umístění souboru se symboly, s výjimkou výslovně vyloučit moduly. Chcete-li vyloučit některé moduly, vyberte **zadat vyloučené moduly**, vyberte **+** ikonu, zadejte názvy modulů, které chcete vyloučit a vyberte **OK**.
 
-   -  Chcete-li načíst pouze moduly, které zadáte z umístění souborů se symboly, vyberte **zatížení pouze určité moduly**. Vyberte **zadat zahrnuté moduly**, vyberte **+** ikonu, zadejte názvy modulů, které chcete zahrnout a pak vyberte **OK**. Soubory symbolů pro ostatní moduly nejsou načtené.
+   - Chcete-li načíst pouze moduly, které zadáte z umístění souborů se symboly, vyberte **zatížení pouze určité moduly**. Vyberte **zadat zahrnuté moduly**, vyberte **+** ikonu, zadejte názvy modulů, které chcete zahrnout a pak vyberte **OK**. Soubory symbolů pro ostatní moduly nejsou načtené.
 
 5. Vyberte **OK**.
 
@@ -199,7 +199,7 @@ Sestavení s **/debug** k vytvoření *PDB* souboru. Můžete vytvářet aplikac
 
 Nastavte *web.config* souboru aplikace ASP.NET na režim ladění. Režim ladění způsobí, že technologie ASP.NET generuje dynamicky generované soubory a umožňuje ladicímu program připojit k aplikaci technologie ASP.NET. Visual Studio nastaví automaticky při spuštění ladění, pokud jste vytvořili projekt ze šablony webových projektů.
 
-##  <a name="manage-symbols-while-debugging"></a>Správa symbolů při ladění
+## <a name="manage-symbols-while-debugging"></a>Správa symbolů při ladění
 
 Můžete použít **moduly**, **zásobník volání**, **lokální**, **automatické hodnoty**, ani na žádného **Watch** okna pro načtení symboly nebo změnit možnosti symbolů při ladění. Další informace najdete v tématu [poznat více do hloubky pomocí jak ladicí program připojí k vaší aplikaci](../debugger/debugger-tips-and-tricks.md#modules_window).
 
@@ -224,10 +224,10 @@ Během ladění, **moduly** okno zobrazuje moduly kódu, ladicí program se zpra
 
 Aby ladicí program proniknout do kódu, který nemá symbol nebo zdrojové soubory, které jsou k dispozici několika způsoby:
 
--  S vnořením do kódu.
--  Přepnutí do kódu od zarážky nebo výjimky.
--  Přepnout na jiné vlákno.
--  Změna zásobníku dvojitým kliknutím na snímek v **zásobník volání** okna.
+- S vnořením do kódu.
+- Přepnutí do kódu od zarážky nebo výjimky.
+- Přepnout na jiné vlákno.
+- Změna zásobníku dvojitým kliknutím na snímek v **zásobník volání** okna.
 
 Pokud k tomu dojde, ladicí program zobrazí **nebyly načteny žádné symboly** nebo **nenačten žádný zdroj** stránky, které pomáhá vyhledat a načíst potřebné symboly nebo zdroje.
 
@@ -235,11 +235,11 @@ Pokud k tomu dojde, ladicí program zobrazí **nebyly načteny žádné symboly*
 
 **Použití stránky dokumentu nebyly načteny žádné symboly vám pomůže najít a načíst chybějící symboly:**
 
--   Chcete-li změnit cesty pro hledání, zvolte nevybranou cestu nebo vyberte **novou cestu** nebo **nová cesta VSTS** a zadejte nebo vyberte novou cestu. Vyberte **načíst** hledání cest a načtení souboru symbolů, pokud je nalezen.
--   Chcete-li přepsání jakékoli volby symbolu a opakujte hledání cesty, vyberte **Procházet a vyhledat \<executable-name >**. Načtení souboru symbolů, je-li nalezeno, nebo **Průzkumníka souborů** otevře, takže můžete ručně vybrat soubor symbolů.
--   Chcete-li otevřít **možnosti** > **ladění** > **symboly** stránce **zobrazit nastavení symbolů**.
--   Chcete-li zobrazit rozebrání v novém okně jednou, vyberte **zobrazit zpětný překlad**, nebo vyberte **dialogové okno Možnosti** nastavení možnosti chcete vždy zobrazit rozebrání, když nebyly nalezeny zdrojové soubory nebo soubory symbolu.
--   Chcete-li zobrazit umístění, prohledávat a výsledek, rozbalte **informace o načítání symbolů**.
+- Chcete-li změnit cesty pro hledání, zvolte nevybranou cestu nebo vyberte **novou cestu** nebo **nová cesta VSTS** a zadejte nebo vyberte novou cestu. Vyberte **načíst** hledání cest a načtení souboru symbolů, pokud je nalezen.
+- Chcete-li přepsání jakékoli volby symbolu a opakujte hledání cesty, vyberte **Procházet a vyhledat \<executable-name >**. Načtení souboru symbolů, je-li nalezeno, nebo **Průzkumníka souborů** otevře, takže můžete ručně vybrat soubor symbolů.
+- Chcete-li otevřít **možnosti** > **ladění** > **symboly** stránce **zobrazit nastavení symbolů**.
+- Chcete-li zobrazit rozebrání v novém okně jednou, vyberte **zobrazit zpětný překlad**, nebo vyberte **dialogové okno Možnosti** nastavení možnosti chcete vždy zobrazit rozebrání, když nebyly nalezeny zdrojové soubory nebo soubory symbolu.
+- Chcete-li zobrazit umístění, prohledávat a výsledek, rozbalte **informace o načítání symbolů**.
 
 Pokud ladicí program nalezne *PDB* po spuštění jedné z možností a může načíst zdrojový soubor pomocí informací v souboru *PDB* souboru, zobrazí zdroj. V opačném případě se zobrazí **nenačten žádný zdroj** stránka, která popisuje problém s odkazy na akce, které mohou problém vyřešit.
 

@@ -5,12 +5,12 @@ ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e7c7e93fa0ba58f7888212c48e28d21bd564ae7c
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: 3cf836ed59dadba71314aa38cd4d2907bee384a6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526305"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051632"
 ---
 # <a name="walkthrough-use-xslt-hierarchy"></a>Návod: Používání hierarchie XSLT
 
@@ -69,7 +69,7 @@ V příkladu v tomto tématu ukazuje ladění v odkazované šablony stylů.
     </xsl:stylesheet>
     ```
 
-3.  Přidejte následující *xslinclude.xsl* souboru:
+3. Přidejte následující *xslinclude.xsl* souboru:
 
     ```xml
     <?xml version='1.0'?>
@@ -103,11 +103,11 @@ V příkladu v tomto tématu ukazuje ladění v odkazované šablony stylů.
     </xsl:stylesheet>
     ```
 
-4.  Přidejte zarážku na instrukci `<xsl:include href="xslincludefile.xsl" />`.
+4. Přidejte zarážku na instrukci `<xsl:include href="xslincludefile.xsl" />`.
 
-5.  Spusťte ladění.
+5. Spusťte ladění.
 
-6.  Pokud ladicí program se zastaví podle instrukce `<xsl:include href="xslincludefile.xsl" />`, stiskněte **Krokovat s vnořením** tlačítko. Ladění lze pokračovat v odkazované šablony stylů. V hierarchii je viditelná a Návrhář zobrazí správné cestě.
+6. Pokud ladicí program se zastaví podle instrukce `<xsl:include href="xslincludefile.xsl" />`, stiskněte **Krokovat s vnořením** tlačítko. Ladění lze pokračovat v odkazované šablony stylů. V hierarchii je viditelná a Návrhář zobrazí správné cestě.
 
 ## <a name="see-also"></a>Viz také:
 

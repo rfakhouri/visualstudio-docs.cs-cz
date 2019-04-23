@@ -18,12 +18,12 @@ caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: baa5381013e955dcf4b8e301bba52a28e39bfc18
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 66e9e5a3f0a46f54346c71d85bad03846c12f937
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54779774"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050307"
 ---
 # <a name="how-to-use-the-parallel-watch-window"></a>Postupy: Použití okna paralelního sledování
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,47 +45,47 @@ V okně paralelního sledování můžete najednou zobrazit hodnoty, které obsa
   
 ### <a name="to-display-the-parallel-watch-window"></a>Chcete-li zobrazit okno paralelního sledování  
   
-1.  Nastavte zarážku v kódu.  
+1. Nastavte zarážku v kódu.  
   
-2.  V panelu nabídky zvolte **ladění**, **spustit ladění**. Vyčkat, než aplikace k dosažení zarážky.  
+2. V panelu nabídky zvolte **ladění**, **spustit ladění**. Vyčkat, než aplikace k dosažení zarážky.  
   
-3.  V panelu nabídky zvolte **ladění**, **Windows**, **paralelní sledování**a klikněte na tlačítko okna kukátka. Můžete otevřít až čtyři windows.  
+3. V panelu nabídky zvolte **ladění**, **Windows**, **paralelní sledování**a klikněte na tlačítko okna kukátka. Můžete otevřít až čtyři windows.  
   
 ### <a name="to-add-a-watch-expression"></a>Přidání výrazu kukátka  
   
--   Vyberte  **\<Přidat kukátko >** a pak zadejte výrazu.  
+- Vyberte  **\<Přidat kukátko >** a pak zadejte výrazu.  
   
 ### <a name="to-flag-or-unflag-a-thread"></a>Chcete-li označit nebo zrušit označení vlákna  
   
--   Vyberte sloupec příznaku pro řádek, nebo otevřete místní nabídku pro vlákno a zvolte **příznak** nebo **Unflag**.  
+- Vyberte sloupec příznaku pro řádek, nebo otevřete místní nabídku pro vlákno a zvolte **příznak** nebo **Unflag**.  
   
 ### <a name="to-display-only-flagged-threads"></a>Chcete-li zobrazit pouze vlákna označená příznakem  
   
--   V levém horním rohu klikněte na tlačítko Zobrazit pouze s příznakem **paralelní sledování** okna.  
+- V levém horním rohu klikněte na tlačítko Zobrazit pouze s příznakem **paralelní sledování** okna.  
   
 ### <a name="to-switch-frames"></a>Chcete-li přepnout snímků  
   
--   Poklepejte na sloupec rámce. (Klávesnice: Vyberte řádek a stiskněte klávesu Enter.)  
+- Poklepejte na sloupec rámce. (Klávesnice: Vyberte řádek a stiskněte klávesu Enter.)  
   
 ### <a name="to-sort-a-column"></a>Chcete-li seřadit sloupec  
   
--   Vyberte záhlaví sloupce.  
+- Vyberte záhlaví sloupce.  
   
 ### <a name="to-group-threads"></a>Do skupiny vláken  
   
--   Otevřete místní nabídku pro okno paralelního sledování, zvolte **Group**a pak zvolte položku odpovídající podnabídky.  
+- Otevřete místní nabídku pro okno paralelního sledování, zvolte **Group**a pak zvolte položku odpovídající podnabídky.  
   
 ### <a name="to-freeze-or-thaw-threads"></a>Chcete-li zmrazit nebo odblokovat vlákna  
   
--   Otevřete místní nabídku pro řádek a zvolte **ukotvit** nebo **uvolnit**.  
+- Otevřete místní nabídku pro řádek a zvolte **ukotvit** nebo **uvolnit**.  
   
 ### <a name="to-export-the-data-in-the-parallel-watch-window"></a>Export dat v okně paralelního sledování  
   
--   Zvolte **otevřít v aplikaci Excel** tlačítko a pak zvolte **otevřít v aplikaci Excel** nebo **Export do souboru CSV**.  
+- Zvolte **otevřít v aplikaci Excel** tlačítko a pak zvolte **otevřít v aplikaci Excel** nebo **Export do souboru CSV**.  
   
 ### <a name="to-filter-by-a-boolean-expression"></a>Chcete-li filtrovat podle logického výrazu  
   
--   Zadejte logický výraz v **filtrovat podle logického výrazu** pole. Ladicí program vyhodnotí výraz pro každý kontext vlákna. Pouze řádky, kde je hodnota `true` jsou zobrazeny.  
+- Zadejte logický výraz v **filtrovat podle logického výrazu** pole. Ladicí program vyhodnotí výraz pro každý kontext vlákna. Pouze řádky, kde je hodnota `true` jsou zobrazeny.  
   
 ## <a name="see-also"></a>Viz také  
  [Ladění vícevláknových aplikací](../debugger/debug-multithreaded-applications-in-visual-studio.md)   

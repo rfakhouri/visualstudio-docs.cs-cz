@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 719ced495580bd8ec16eec7e3f422e3ae1f1ccc3
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4232a057c97d3d457a60d97fa000090c18428f66
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56643584"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050497"
 ---
 # <a name="detect-system-requirements"></a>Zjistit požadavky na systém
 VSPackage nemůže fungovat, pokud je nainstalována aplikace Visual Studio. Když spravovat instalaci vašeho balíčku VSPackage pomocí Instalační služby systému Windows, můžete nakonfigurovat instalační program a zjistit, zda je nainstalována aplikace Visual Studio. Můžete také nakonfigurovat tak, zkontrolujte systém, hledá další požadavky, například konkrétní verzi Windows nebo určité množství paměti RAM.
@@ -24,11 +24,11 @@ VSPackage nemůže fungovat, pokud je nainstalována aplikace Visual Studio. Kdy
 ## <a name="detect-visual-studio-editions"></a>Zjištění edice sady Visual Studio
  Pokud chcete zjistit, jestli je nainstalovaná edice sady Visual Studio, ověřte, že hodnota **nainstalovat** klíč registru je *(REG_DWORD) 1* v příslušné složce, jak je uvedeno v následující tabulce. Všimněte si, že hierarchii edice sady Visual Studio:
 
-1.  Enterprise
+1. Enterprise
 
-2.  Professional
+2. Professional
 
-3.  Komunita
+3. Komunita
 
 Při instalaci na novější verzi klíče registru pro tuto verzi jsou přidány stejně jako u starších edicích. To znamená, pokud je nainstalovaná edice Enterprise, **nainstalovat** klíč nastavený na *1* pro organizace, a také pro edice Professional a Community. Proto je potřeba zkontrolovat pouze pro nejnovější verzi, které potřebujete.
 

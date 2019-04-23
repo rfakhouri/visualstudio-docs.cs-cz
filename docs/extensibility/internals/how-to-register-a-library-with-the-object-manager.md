@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fb764b453caa0a6230929fdc5fd002eb56550d67
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 62af216c2c748aafd5128a861fec5033f0ba5d37
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56609060"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051983"
 ---
 # <a name="how-to-register-a-library-with-the-object-manager"></a>Postupy: Registrace knihovny pomocí Správce objektů
 Procházení symbolů nástrojů, jako je například **zobrazení tříd**, **prohlížeče objektů**, **volání prohlížeče** a **výsledky hledáni symbolu**, vám umožní zobrazit symboly v projektu nebo v externích součástí. Symboly zahrnovat obory názvů, třídy, rozhraní, metody a další prvky jazyka. Knihovny sledovat tyto symboly a zpřístupnit jim [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] správce objektů, které naplňuje nástroje s daty.
@@ -38,7 +38,7 @@ Procházení symbolů nástrojů, jako je například **zobrazení tříd**, **p
 
 ### <a name="to-register-a-library-with-the-object-manager"></a>Registrace knihovny pomocí Správce objektů
 
-1.  Vytvoření knihovny.
+1. Vytvoření knihovny.
 
     ```vb
     Private m_CallBrowserLibrary As CallBrowser.Library = Nothing
@@ -55,7 +55,7 @@ Procházení symbolů nástrojů, jako je například **zobrazení tříd**, **p
 
     ```
 
-2.  Získání odkazu na objekt <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2> zadejte a volat <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.RegisterSimpleLibrary%2A> metody.
+2. Získání odkazu na objekt <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2> zadejte a volat <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.RegisterSimpleLibrary%2A> metody.
 
     ```vb
     Private Sub RegisterLibrary()
@@ -111,7 +111,7 @@ Procházení symbolů nástrojů, jako je například **zobrazení tříd**, **p
 
 ### <a name="to-unregister-a-library-with-the-object-manager"></a>Zrušení registrace knihovny pomocí Správce objektů
 
-1.  Získání odkazu na objekt <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2> zadejte a volat <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.UnregisterLibrary%2A> metody.
+1. Získání odkazu na objekt <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2> zadejte a volat <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.UnregisterLibrary%2A> metody.
 
     ```vb
     Private Sub UnregisterLibrary()

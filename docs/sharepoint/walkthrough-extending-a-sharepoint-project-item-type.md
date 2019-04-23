@@ -1,5 +1,5 @@
 ---
-title: 'Průvodce: Rozšiřování typu položky projektu služby SharePoint | Dokumentace Microsoftu'
+title: 'Návod: Rozšiřování typu položky projektu služby SharePoint | Dokumentace Microsoftu'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,27 +14,27 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 150f267b7663bdb6335d1fe39f463e1b8635bfbf
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a88bfb7d117f646a74c4242cbf851711e9179196
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56620522"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60057859"
 ---
-# <a name="walkthrough-extend-a-sharepoint-project-item-type"></a>Průvodce: Rozšíření typu položky projektu SharePoint
+# <a name="walkthrough-extend-a-sharepoint-project-item-type"></a>Návod: Rozšíření typu položky projektu SharePoint
   Můžete použít **Model Připojení obchodních dat** položku projektu pro vytvoření modelu služby připojení dat obchodní (BDC) ve službě SharePoint. Ve výchozím nastavení když vytvoříte model pomocí tuto položku projektu data v modelu se uživatelům nezobrazí. Musíte také vytvořit externí seznam na Sharepointu a umožňují uživatelům zobrazovat data.
 
  V tomto návodu vytvoříte rozšíření pro **Model Připojení obchodních dat** položky projektu. Mohou vývojáři rozšíření vytvořit externí seznam v jejich projektu, který zobrazuje data v modelu služby BDC. Tento návod demonstruje následující úkoly:
 
--   Vytváření rozšíření pro Visual Studio, který provádí dvě hlavní úlohy:
+- Vytváření rozšíření pro Visual Studio, který provádí dvě hlavní úlohy:
 
-    -   Generuje externí seznam, který zobrazuje data v modelu služby BDC. Rozšíření používá objektový model pro projekt systému SharePoint ke generování *Elements.xml* soubor, který definuje seznam. Také přidá soubor do projektu tak, aby byl nasazen spolu s modelem služby BDC.
+    - Generuje externí seznam, který zobrazuje data v modelu služby BDC. Rozšíření používá objektový model pro projekt systému SharePoint ke generování *Elements.xml* soubor, který definuje seznam. Také přidá soubor do projektu tak, aby byl nasazen spolu s modelem služby BDC.
 
-    -   Přidá položky místní nabídky k **Model Připojení obchodních dat** položky v projektu **Průzkumníka řešení**. Vývojáři mohou kliknutím na tuto položku nabídky generovat externí seznam pro model služby BDC.
+    - Přidá položky místní nabídky k **Model Připojení obchodních dat** položky v projektu **Průzkumníka řešení**. Vývojáři mohou kliknutím na tuto položku nabídky generovat externí seznam pro model služby BDC.
 
--   Vytváření rozšíření aplikace Visual Studio (VSIX) balíčku pro nasazení sestavení rozšíření.
+- Vytváření rozšíření aplikace Visual Studio (VSIX) balíčku pro nasazení sestavení rozšíření.
 
--   Testování rozšíření.
+- Testování rozšíření.
 
 ## <a name="prerequisites"></a>Požadavky
  Budete potřebovat následující komponenty na vývojovém počítači k dokončení tohoto návodu:
@@ -60,76 +60,76 @@ ms.locfileid: "56620522"
 
 #### <a name="to-create-the-vsix-project"></a>Vytvoření projektu VSIX
 
-1.  Spustit [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
+1. Spustit [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
-2.  V panelu nabídky zvolte **souboru** > **nový** > **projektu**.
+2. V panelu nabídky zvolte **souboru** > **nový** > **projektu**.
 
-3.  V **nový projekt** dialogového okna rozbalte **Visual C#** nebo **jazyka Visual Basic** uzly a klikněte na tlačítko **rozšiřitelnost** uzlu.
+3. V **nový projekt** dialogového okna rozbalte **Visual C#** nebo **jazyka Visual Basic** uzly a klikněte na tlačítko **rozšiřitelnost** uzlu.
 
     > [!NOTE]
     >  **Rozšiřitelnost** uzel je dostupný jenom v případě, že nainstalujete Visual Studio SDK. Další informace najdete v oddílu požadavky dříve v tomto tématu.
 
-4.  V seznamu v horní části **nový projekt** dialogového okna zvolte **rozhraní .NET Framework 4.5**.
+4. V seznamu v horní části **nový projekt** dialogového okna zvolte **rozhraní .NET Framework 4.5**.
 
      Rozšíření nástrojů SharePoint vyžaduje funkce v této verzi rozhraní .NET Framework.
 
-5.  Zvolte **projekt VSIX** šablony.
+5. Zvolte **projekt VSIX** šablony.
 
-6.  V **název** zadejte **GenerateExternalDataLists**a klikněte na tlačítko **OK** tlačítko.
+6. V **název** zadejte **GenerateExternalDataLists**a klikněte na tlačítko **OK** tlačítko.
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Přidá **GenerateExternalDataLists** projektu **Průzkumníka řešení**.
 
-7.  Pokud se soubor source.extension.vsixmanifest neotevře automaticky, otevřete místní nabídku v projektu GenerateExternalDataLists a zvolte **otevřít**
+7. Pokud se soubor source.extension.vsixmanifest neotevře automaticky, otevřete místní nabídku v projektu GenerateExternalDataLists a zvolte **otevřít**
 
-8.  Ověřte, zda soubor source.extension.vsixmanifest obsahuje neprázdnou položku (zadejte Contoso) pro pole Autor, uložte soubor a zavřete jej.
+8. Ověřte, zda soubor source.extension.vsixmanifest obsahuje neprázdnou položku (zadejte Contoso) pro pole Autor, uložte soubor a zavřete jej.
 
 #### <a name="to-create-the-extension-project"></a>Chcete-li vytvořit projekt rozšíření
 
-1.  V **Průzkumníka řešení**, otevřete místní nabídku **GenerateExternalDataLists** uzel řešení, zvolte **přidat**a klikněte na tlačítko **nový projekt**.
+1. V **Průzkumníka řešení**, otevřete místní nabídku **GenerateExternalDataLists** uzel řešení, zvolte **přidat**a klikněte na tlačítko **nový projekt**.
 
-2.  V **přidat nový projekt** dialogového okna rozbalte **Visual C#** nebo **jazyka Visual Basic** uzly a klikněte na tlačítko **Windows** uzlu.
+2. V **přidat nový projekt** dialogového okna rozbalte **Visual C#** nebo **jazyka Visual Basic** uzly a klikněte na tlačítko **Windows** uzlu.
 
-3.  V seznamu v horní části dialogového okna zvolte **rozhraní .NET Framework 4.5**.
+3. V seznamu v horní části dialogového okna zvolte **rozhraní .NET Framework 4.5**.
 
-4.  V seznamu šablon projektu vyberte **knihovny tříd**.
+4. V seznamu šablon projektu vyberte **knihovny tříd**.
 
-5.  V **název** zadejte **BdcProjectItemExtension**a klikněte na tlačítko **OK** tlačítko.
+5. V **název** zadejte **BdcProjectItemExtension**a klikněte na tlačítko **OK** tlačítko.
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Přidá **BdcProjectItemExtension** projektu do řešení a otevře soubor výchozího kódu Class1.
 
-6.  Odstraňte soubor kódu Class1 z projektu.
+6. Odstraňte soubor kódu Class1 z projektu.
 
 ## <a name="configure-the-extension-project"></a>Konfigurace projektu rozšíření
  Než napíšete kód pro vytvoření rozšíření položky projektu, přidejte soubory kódu a odkazy na sestavení do projektu rozšíření.
 
 #### <a name="to-configure-the-project"></a>Konfigurace projektu
 
-1.  V projektu BdcProjectItemExtension přidejte dva soubory kódu, které mají následující názvy:
+1. V projektu BdcProjectItemExtension přidejte dva soubory kódu, které mají následující názvy:
 
-    -   ProjectItemExtension
+    - ProjectItemExtension
 
-    -   GenerateExternalDataLists
+    - GenerateExternalDataLists
 
-2.  Zvolte projekt BdcProjectItemExtension a pak na panelu nabídek zvolte **projektu** > **přidat odkaz**.
+2. Zvolte projekt BdcProjectItemExtension a pak na panelu nabídek zvolte **projektu** > **přidat odkaz**.
 
-3.  V části **sestavení** uzlu, vyberte **Framework** uzlu a zaškrtněte políčko pro každé následující sestavení:
+3. V části **sestavení** uzlu, vyberte **Framework** uzlu a zaškrtněte políčko pro každé následující sestavení:
 
-    -   System.ComponentModel.Composition
+    - System.ComponentModel.Composition
 
-    -   WindowsBase
+    - WindowsBase
 
-4.  V části **sestavení** uzlu, vyberte **rozšíření** uzel a potom zaškrtněte políčko pro následující sestavení:
+4. V části **sestavení** uzlu, vyberte **rozšíření** uzel a potom zaškrtněte políčko pro následující sestavení:
 
-    -   Microsoft.VisualStudio.SharePoint
+    - Microsoft.VisualStudio.SharePoint
 
-5.  Zvolte **OK** tlačítko.
+5. Zvolte **OK** tlačítko.
 
 ## <a name="define-the-project-item-extension"></a>Definování rozšíření položky projektu
  Vytvořte třídu, která definuje rozšíření **Model Připojení obchodních dat** položky projektu. Chcete-li definovat rozšíření, třída implementuje <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension> rozhraní. Toto rozhraní implementujte, kdykoli budete chtít rozšířit existující typ položky projektu.
 
 #### <a name="to-define-the-project-item-extension"></a>Chcete-li definovat rozšíření položky projektu
 
-1.  Vložte následující kód do souboru s kódem ProjectItemExtension.
+1. Vložte následující kód do souboru s kódem ProjectItemExtension.
 
     > [!NOTE]
     >  Po přidání tohoto kódu bude mít projekt několik chyb kompilace. K těmto chybám předejdete přidáním kódu v dalších krocích.
@@ -142,7 +142,7 @@ ms.locfileid: "56620522"
 
 #### <a name="to-create-the-external-data-lists"></a>Chcete-li vytvořit seznam externích dat
 
-1.  Vložte následující kód do souboru s kódem GenerateExternalDataLists.
+1. Vložte následující kód do souboru s kódem GenerateExternalDataLists.
 
      [!code-vb[SPExtensibility.ProjectItemExtension.BDCGenerateExternalDataLists#2](../sharepoint/codesnippet/VisualBasic/generateexternaldatalists/bdcprojectitemextension/generateexternaldatalists.vb#2)]
      [!code-csharp[SPExtensibility.ProjectItemExtension.BDCGenerateExternalDataLists#2](../sharepoint/codesnippet/CSharp/generateexternaldatalists/bdcprojectitemextension/generateexternaldatalists.cs#2)]
@@ -152,35 +152,35 @@ ms.locfileid: "56620522"
 
 #### <a name="to-build-the-solution"></a>Abyste mohli sestavit řešení
 
-1.  V panelu nabídky zvolte **sestavení** > **sestavit řešení**.
+1. V panelu nabídky zvolte **sestavení** > **sestavit řešení**.
 
 ## <a name="create-a-vsix-package-to-deploy-the-project-item-extension"></a>Vytvoření balíčku VSIX k nasazení rozšíření položky projektu
  Pokud chcete nasadit rozšíření, použijte VSIX projekt ve vašem řešení k vytvoření balíčku VSIX. Nejprve nakonfigurujte VSIX balíček úpravou souboru source.extension.vsixmanifest, který je součástí projektu VSIX. Potom vytvořte VSIX balíček vytvořením řešení.
 
 #### <a name="to-configure-and-create-the-vsix-package"></a>Konfigurace a vytvoření balíčku VSIX
 
-1.  V **Průzkumníka řešení**, otevřete místní nabídku pro soubor source.extension.vsixmanifest v projektu GenerateExternalDataLists a zvolte **otevřete**.
+1. V **Průzkumníka řešení**, otevřete místní nabídku pro soubor source.extension.vsixmanifest v projektu GenerateExternalDataLists a zvolte **otevřete**.
 
      Visual Studio otevře soubor v editoru manifestu. Soubor source.extension.vsixmanifest je že základem pro soubor extension.vsixmanifest nutného pro všechny balíčky VSIX. Další informace o tomto souboru najdete v tématu [odkaz 1.0 schématu rozšíření VSIX](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).
 
-2.  V **název produktu** zadejte **Generátor seznamu externích dat**.
+2. V **název produktu** zadejte **Generátor seznamu externích dat**.
 
-3.  V **Autor** zadejte **Contoso**.
+3. V **Autor** zadejte **Contoso**.
 
-4.  V **popis** zadejte **rozšíření pro položky projektu Model Připojení obchodních dat, které lze použít pro vygenerování seznamu externích dat**.
+4. V **popis** zadejte **rozšíření pro položky projektu Model Připojení obchodních dat, které lze použít pro vygenerování seznamu externích dat**.
 
-5.  Na **prostředky** kartu Editor, zvolte **nový** tlačítko.
+5. Na **prostředky** kartu Editor, zvolte **nový** tlačítko.
 
      **Přidat nové aktivum** zobrazí se dialogové okno.
 
-6.  V **typ** klikněte na položku **Microsoft.VisualStudio.MefComponent**.
+6. V **typ** klikněte na položku **Microsoft.VisualStudio.MefComponent**.
 
     > [!NOTE]
     >  Tato hodnota odpovídá `MefComponent` element v souboru extension.vsixmanifest. Tento prvek určuje název sestavení rozšíření v balíčku souboru VSIX. Další informace najdete v tématu [MEFComponent – Element (VSX schéma)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).
 
-7.  V **zdroj** klikněte na položku **projekt v aktuálním řešení**.
+7. V **zdroj** klikněte na položku **projekt v aktuálním řešení**.
 
-8.  V **projektu** klikněte na položku **BdcProjectItemExtension**a klikněte na tlačítko **OK** tlačítko.
+8. V **projektu** klikněte na položku **BdcProjectItemExtension**a klikněte na tlačítko **OK** tlačítko.
 
 9. V panelu nabídky zvolte **sestavení** > **sestavit řešení**.
 
@@ -195,33 +195,33 @@ ms.locfileid: "56620522"
 
 #### <a name="to-start-debugging-the-extension"></a>Chcete-li začít ladit rozšíření
 
-1.  V případě potřeby restartujte sadu Visual Studio s přihlašovacími údaji správce a pak otevřete řešení GenerateExternalDataLists.
+1. V případě potřeby restartujte sadu Visual Studio s přihlašovacími údaji správce a pak otevřete řešení GenerateExternalDataLists.
 
-2.  V projektu BdcProjectItemExtension otevřete soubor s kódem ProjectItemExtension a přidejte zarážku na řádek kódu `Initialize` metody.
+2. V projektu BdcProjectItemExtension otevřete soubor s kódem ProjectItemExtension a přidejte zarážku na řádek kódu `Initialize` metody.
 
-3.  Otevřete soubor s kódem GenerateExternalDataLists a na první řádek kódu přidejte zarážku `GenerateExternalDataLists_Execute` metody.
+3. Otevřete soubor s kódem GenerateExternalDataLists a na první řádek kódu přidejte zarážku `GenerateExternalDataLists_Execute` metody.
 
-4.  Spuštění ladění zvolením **F5** klíče nebo na panelu nabídek, výběrem **ladění** > **spustit ladění**.
+4. Spuštění ladění zvolením **F5** klíče nebo na panelu nabídek, výběrem **ladění** > **spustit ladění**.
 
      Visual Studio nainstaluje rozšíření do %UserProfile%\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\Contoso\External Data List Generator\1. 0 a spustí experimentální instanci sady Visual Studio. Položku projektu budete testovat v této instanci aplikace Visual Studio.
 
 #### <a name="to-test-the-extension"></a>Chcete-li testovat rozšíření
 
-1.  V experimentální instanci sady Visual Studio na panelu nabídek zvolte **souboru** > **nový** > **projektu**.
+1. V experimentální instanci sady Visual Studio na panelu nabídek zvolte **souboru** > **nový** > **projektu**.
 
-2.  V **nový projekt** dialogového okna rozbalte **šablony** uzlu, rozbalte **Visual C#** uzlu, rozbalte **SharePoint** uzel a pak Zvolte **2010**.
+2. V **nový projekt** dialogového okna rozbalte **šablony** uzlu, rozbalte **Visual C#** uzlu, rozbalte **SharePoint** uzel a pak Zvolte **2010**.
 
-3.  V seznamu v horní části dialogového okna, ujistěte se, že **rozhraní .NET Framework 3.5** zaškrtnuto. Projekty pro [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] vyžadují tuto verzí rozhraní .NET Framework.
+3. V seznamu v horní části dialogového okna, ujistěte se, že **rozhraní .NET Framework 3.5** zaškrtnuto. Projekty pro [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] vyžadují tuto verzí rozhraní .NET Framework.
 
-4.  V seznamu šablon projektu vyberte **projektu služby SharePoint 2010**.
+4. V seznamu šablon projektu vyberte **projektu služby SharePoint 2010**.
 
-5.  V **název** zadejte **SharePointProjectTestBDC**a klikněte na tlačítko **OK** tlačítko.
+5. V **název** zadejte **SharePointProjectTestBDC**a klikněte na tlačítko **OK** tlačítko.
 
-6.  Průvodce přizpůsobením SharePoint zadejte adresu URL webu, který chcete použít pro ladění, zvolte **nasadit jako řešení farmy**a klikněte na tlačítko **Dokončit** tlačítko.
+6. Průvodce přizpůsobením SharePoint zadejte adresu URL webu, který chcete použít pro ladění, zvolte **nasadit jako řešení farmy**a klikněte na tlačítko **Dokončit** tlačítko.
 
-7.  Otevřete místní nabídku projektu SharePointProjectTestBDC, vyberte možnost **přidat**a klikněte na tlačítko **nová položka**.
+7. Otevřete místní nabídku projektu SharePointProjectTestBDC, vyberte možnost **přidat**a klikněte na tlačítko **nová položka**.
 
-8.  V **přidat NewItem – SharePointProjectTestBDC** dialogového okna rozbalte uzel nainstalovaného jazyka, rozbalte položku **SharePoint** uzlu.
+8. V **přidat NewItem – SharePointProjectTestBDC** dialogového okna rozbalte uzel nainstalovaného jazyka, rozbalte položku **SharePoint** uzlu.
 
 9. Zvolte **2010** uzel a klikněte na tlačítko **Model Připojení obchodních dat (pouze řešení farmy)** šablony.
 
@@ -262,35 +262,35 @@ ms.locfileid: "56620522"
 
 #### <a name="to-remove-the-external-data-list-from-the-sharepoint-site"></a>Odebrat seznam externích dat z webu služby SharePoint
 
-1.  V oblasti Snadné spuštění webu služby SharePoint, zvolte **Entity1DataList** seznamu.
+1. V oblasti Snadné spuštění webu služby SharePoint, zvolte **Entity1DataList** seznamu.
 
-2.  Na pásu karet na webu služby SharePoint, zvolte **seznamu** kartu.
+2. Na pásu karet na webu služby SharePoint, zvolte **seznamu** kartu.
 
-3.  Na **seznamu** kartě **nastavení** skupině, zvolte **nastavení seznamu**.
+3. Na **seznamu** kartě **nastavení** skupině, zvolte **nastavení seznamu**.
 
-4.  V části **oprávnění a správa**, zvolte **odstranit tento seznam**a klikněte na tlačítko **OK** potvrďte, že chcete odeslat seznam do odpadkového koše.
+4. V části **oprávnění a správa**, zvolte **odstranit tento seznam**a klikněte na tlačítko **OK** potvrďte, že chcete odeslat seznam do odpadkového koše.
 
-5.  Zavřete webový prohlížeč.
+5. Zavřete webový prohlížeč.
 
 #### <a name="to-remove-the-bdc-model-from-the-sharepoint-site"></a>Odebrat model služby BDC z webu služby SharePoint
 
-1.  V experimentální instanci sady Visual Studio na panelu nabídek zvolte **sestavení** > **odvolat**.
+1. V experimentální instanci sady Visual Studio na panelu nabídek zvolte **sestavení** > **odvolat**.
 
      Visual Studio odebere model služby BDC z webu služby SharePoint.
 
 #### <a name="to-remove-the-project-item-extension-from-visual-studio"></a>Chcete-li odebrat rozšíření položky projektu v sadě Visual Studio
 
-1.  V experimentální instanci sady Visual Studio na panelu nabídek zvolte **nástroje** > **rozšíření a aktualizace**.
+1. V experimentální instanci sady Visual Studio na panelu nabídek zvolte **nástroje** > **rozšíření a aktualizace**.
 
      **Rozšíření a aktualizace** zobrazí se dialogové okno.
 
-2.  V seznamu rozšíření zvolte **Generátor seznamu externích dat**a klikněte na tlačítko **odinstalovat** tlačítko.
+2. V seznamu rozšíření zvolte **Generátor seznamu externích dat**a klikněte na tlačítko **odinstalovat** tlačítko.
 
-3.  V dialogovém okně, které se zobrazí, zvolte **Ano** potvrďte, že chcete odinstalovat rozšíření.
+3. V dialogovém okně, které se zobrazí, zvolte **Ano** potvrďte, že chcete odinstalovat rozšíření.
 
-4.  Zvolte **restartovat nyní** dokončete odinstalaci.
+4. Zvolte **restartovat nyní** dokončete odinstalaci.
 
-5.  Zavřete obě instance programu Visual Studio (experimentální instanci a instanci, ve kterém je otevřené řešení GenerateExternalDataLists).
+5. Zavřete obě instance programu Visual Studio (experimentální instanci a instanci, ve kterém je otevřené řešení GenerateExternalDataLists).
 
 ## <a name="see-also"></a>Viz také:
 - [Rozšíření systému projektu služby SharePoint](../sharepoint/extending-the-sharepoint-project-system.md)

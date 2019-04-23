@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 48b77e07524b6bcabd00de1d8082261e81807a72
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 8d3f453770dbb389a688db0a9edcc8e97e179858
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56644455"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051312"
 ---
 # <a name="create-sharepoint-features"></a>Vytvoření funkcí služby SharePoint
   Funkce služby SharePoint můžete použít k seskupení souvisejících položek projektu služby SharePoint pro snazší nasazení. Můžete vytvořit funkce, nastavit obory a označit jiné funkce jako závislosti pomocí funkce návrháře služby SharePoint. Návrhář také vygeneruje manifest, který je soubor XML, který popisuje každou funkci.
@@ -26,9 +26,9 @@ ms.locfileid: "56644455"
 ## <a name="add-features-to-the-sharepoint-solution"></a>Přidání funkce do řešení služby SharePoint
  Funkce můžete přidat do řešení služby SharePoint pomocí Průzkumníka řešení nebo Průzkumníku balíčků. Můžete použít jednu z následujících metod přidáte funkci.
 
--   V **Průzkumníka řešení**, otevřete místní nabídku pro **funkce**a klikněte na tlačítko **přidat funkci**.
+- V **Průzkumníka řešení**, otevřete místní nabídku pro **funkce**a klikněte na tlačítko **přidat funkci**.
 
--   V **Průzkumník balení**, otevřete místní nabídku pro balíček a klikněte na tlačítko **přidat funkci**.
+- V **Průzkumník balení**, otevřete místní nabídku pro balíček a klikněte na tlačítko **přidat funkci**.
 
 ## <a name="using-the-feature-designer"></a>Pomocí návrháře funkcí
  Řešení služby SharePoint mohou obsahovat jednu nebo více funkcí služby SharePoint, jsou seskupené v uzlu funkce v Průzkumníku řešení. Každá funkce má svůj vlastní **funkce návrháře** , můžete použít pro přizpůsobení vlastnosti funkce. Další informace najdete v tématu [jak: Přizpůsobení funkce služby SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md). K rozlišení funkce od sebe, můžete nakonfigurovat vlastnosti funkce, jako je například název, popis, verze a obor.

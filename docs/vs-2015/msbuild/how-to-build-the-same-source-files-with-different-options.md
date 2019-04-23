@@ -14,12 +14,12 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0ce859a1fd6ee491ecf22003f5ef99936136496a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 3bce742d4ce0374cb7270b964354d65a03e917d0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59663140"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045600"
 ---
 # <a name="how-to-build-the-same-source-files-with-different-options"></a>Postupy: Sestavení stejných zdrojových souborů s různými možnostmi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Při sestavování projektů často kompilaci stejné komponenty s možnostmi ji
   
 #### <a name="to-set-a-group-of-properties-based-on-another-property"></a>Chcete-li nastavit skupinu vlastností na základě jiné vlastnosti  
   
--   Použití `Condition` atribut `PropertyGroup` element podobný následujícímu:  
+- Použití `Condition` atribut `PropertyGroup` element podobný následujícímu:  
   
     ```  
     <PropertyGroup Condition="'$(Flavor)'=='DEBUG'">  
@@ -44,7 +44,7 @@ Při sestavování projektů často kompilaci stejné komponenty s možnostmi ji
   
 #### <a name="to-define-a-property-based-on-another-property"></a>Chcete-li definovat vlastnost podle jiné vlastnosti  
   
--   Použití `Condition` atribut `Property` element podobný následujícímu:  
+- Použití `Condition` atribut `Property` element podobný následujícímu:  
   
     ```  
     <DebugType Condition="'$(Flavor)'=='DEBUG'">full</DebugType>  
@@ -55,7 +55,7 @@ Při sestavování projektů často kompilaci stejné komponenty s možnostmi ji
   
 #### <a name="to-set-a-project-property-at-the-command-line"></a>Nastavení vlastnosti projektu na příkazovém řádku  
   
--   Použití **/property** přepnout s vlastností a hodnota vlastnosti. Příklad:  
+- Použití **/property** přepnout s vlastností a hodnota vlastnosti. Příklad:  
   
     ```  
     msbuild file.proj /property:Flavor=Debug  

@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b6cdd551a0cf8ee085359f5545dd16dfac163c4d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d42c9698c6d3a247601909909c49fa92d2d29978
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54761691"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056663"
 ---
 # <a name="how-to-invoke-a-windows-communication-foundation-contract-operation-legacy"></a>Postupy: Vyvolání operace kontraktu technologie Windows Communication Foundation (starší verze)
 Toto téma popisuje, jak vyvolat [!INCLUDE[indigo1](../includes/indigo1-md.md)] smlouvy operace pomocí starší verze [!INCLUDE[wfd1](../includes/wfd1-md.md)] , který cílí [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] nebo [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
@@ -25,27 +25,27 @@ Toto téma popisuje, jak vyvolat [!INCLUDE[indigo1](../includes/indigo1-md.md)] 
   
 ### <a name="to-invoke-a-wcf-contract-operation-from-a-sendactivity-activity"></a>K vyvolání operace kontraktu WCF z SendActivity aktivity  
   
-1.  Dvakrát klikněte **SendActivity** aktivity v Návrháři nebo klikněte na tři tečky vedle položky **ServiceOperationInfo** vlastnost v **vlastnosti** podokně.  
+1. Dvakrát klikněte **SendActivity** aktivity v Návrháři nebo klikněte na tři tečky vedle položky **ServiceOperationInfo** vlastnost v **vlastnosti** podokně.  
   
-2.  Když **zvolte operaci** zobrazí se dialogové okno, klikněte na tlačítko **Import** v pravém horním rohu dialogového okna.  
+2. Když **zvolte operaci** zobrazí se dialogové okno, klikněte na tlačítko **Import** v pravém horním rohu dialogového okna.  
   
      [Procházet a vybrat typ dialogovému oknu rozhraní .NET (starší verze)](../workflow-designer/browse-and-select-a-dotnet-type-dialog-box-legacy.md) otevře.  
   
-3.  Vyhledejte sestavení nebo projekt, který obsahuje kontrakt, který chcete.  
+3. Vyhledejte sestavení nebo projekt, který obsahuje kontrakt, který chcete.  
   
-4.  Zvolte smlouvu a klikněte na tlačítko **OK**.  
+4. Zvolte smlouvu a klikněte na tlačítko **OK**.  
   
-5.  V části **dostupné operace**, vyberte operaci, která chcete vyvolat a klikněte na tlačítko **OK**.  
+5. V části **dostupné operace**, vyberte operaci, která chcete vyvolat a klikněte na tlačítko **OK**.  
   
 ### <a name="to-specify-a-channel-token"></a>K určení tokenu kanálu  
   
-1.  Vyberte <xref:System.Workflow.Activities.SendActivity> aktivity v návrháři.  
+1. Vyberte <xref:System.Workflow.Activities.SendActivity> aktivity v návrháři.  
   
-2.  V **vlastnosti** podokně, zadejte název <xref:System.Workflow.Activities.ChannelToken>. Tento název jednoznačně identifikuje token kanálu.  
+2. V **vlastnosti** podokně, zadejte název <xref:System.Workflow.Activities.ChannelToken>. Tento název jednoznačně identifikuje token kanálu.  
   
-3.  Rozbalte uzel token kanálu a zadejte název pro koncový bod klienta, které budete používat v <xref:System.Workflow.Activities.ChannelToken.EndpointName%2A> pole. Konfigurace koncového bodu se stejným názvem v konfiguračním souboru se použije ke konfiguraci kanálu.  
+3. Rozbalte uzel token kanálu a zadejte název pro koncový bod klienta, které budete používat v <xref:System.Workflow.Activities.ChannelToken.EndpointName%2A> pole. Konfigurace koncového bodu se stejným názvem v konfiguračním souboru se použije ke konfiguraci kanálu.  
   
-4.  Pokud ho ještě neexistuje, vytvořte v konfiguračním souboru konfigurace koncového bodu. Další informace o konfiguraci vašeho klienta najdete v tématu [přehled klientů WCF](http://msdn.microsoft.com/library/f60d9bc5-8ade-4471-8ecf-5a07a936c82d).  
+4. Pokud ho ještě neexistuje, vytvořte v konfiguračním souboru konfigurace koncového bodu. Další informace o konfiguraci vašeho klienta najdete v tématu [přehled klientů WCF](http://msdn.microsoft.com/library/f60d9bc5-8ade-4471-8ecf-5a07a936c82d).  
   
 ## <a name="see-also"></a>Viz také  
  [Zvolte dialogové okno operaci (starší verze)](../workflow-designer/choose-operation-dialog-box-legacy.md)   

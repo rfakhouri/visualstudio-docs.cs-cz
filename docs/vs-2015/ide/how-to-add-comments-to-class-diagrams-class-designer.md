@@ -15,12 +15,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 476d117b04b648c2893885700d94a157399cea15
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: bcf6a06ee89bcc3ba691b38e98cf8bf43d9c063b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54802419"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048044"
 ---
 # <a name="how-to-add-comments-to-class-diagrams-class-designer"></a>Postupy: Přidání komentářů do diagramů tříd (návrhář tříd)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,11 +33,11 @@ Tvary komentářů můžete opatřit poznámkami diagramy tříd. Obrazec koment
   
 ### <a name="to-add-a-comment"></a>A přidejte komentář.  
   
-1.  Přetáhněte komentář z **panel nástrojů návrhář tříd** do diagramu tříd.  
+1. Přetáhněte komentář z **panel nástrojů návrhář tříd** do diagramu tříd.  
   
-2.  Klikněte na nový komentář obrazec v diagramu a zadejte požadovaný text.  
+2. Klikněte na nový komentář obrazec v diagramu a zadejte požadovaný text.  
   
 ## <a name="see-also"></a>Viz také  
  [Práce s diagramy tříd (návrhář tříd)](../ide/working-with-class-diagrams-class-designer.md)   
  [Práce s diagramy tříd (návrhář tříd)](../ide/working-with-class-diagrams-class-designer.md)   
- [Postupy: Přizpůsobení diagramů tříd (návrhář tříd)](../ide/how-to-customize-class-diagrams-class-designer.md)
+ [Postupy: Přizpůsobení diagramů tříd (Návrhář tříd)](../ide/how-to-customize-class-diagrams-class-designer.md)

@@ -1,5 +1,5 @@
 ---
-title: 'Průvodce: Rozšířené datové vazby v projektech na úrovni dokumentu'
+title: 'Návod: Rozšířené datové vazby v projektech na úrovni dokumentu'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,14 +15,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: aa8370dcf36eb13b6ba1491efc5def55a93fff34
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: aabd45871e55fd22b9b9e35597555fd13b15d6eb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56643103"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052529"
 ---
-# <a name="walkthrough-complex-data-binding-in-a-document-level-project"></a>Průvodce: Rozšířené datové vazby v projektech na úrovni dokumentu
+# <a name="walkthrough-complex-data-binding-in-a-document-level-project"></a>Návod: Rozšířené datové vazby v projektech na úrovni dokumentu
   Tento návod ukazuje základní informace o rozšířené datové vazby v projektech na úrovni dokumentu. Více buněk v listu aplikace Microsoft Office Excel můžete vázat na pole v databázi Northwind SQL serveru.
 
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]
@@ -40,20 +40,20 @@ ms.locfileid: "56643103"
 ## <a name="prerequisites"></a>Požadavky
  K dokončení tohoto návodu budete potřebovat následující komponenty:
 
--   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
+- [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
--   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] nebo [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].
+- [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] nebo [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].
 
--   Přístup k serveru s ukázkovou databází Northwind SQL Server.
+- Přístup k serveru s ukázkovou databází Northwind SQL Server.
 
--   Oprávnění ke čtení a zápis do databáze serveru SQL Server.
+- Oprávnění ke čtení a zápis do databáze serveru SQL Server.
 
 ## <a name="create-a-new-project"></a>Vytvoření nového projektu
  Prvním krokem je vytvoření projektu sešitu aplikace Excel.
 
 ### <a name="to-create-a-new-project"></a>Chcete-li vytvořit nový projekt
 
-1.  Vytvořte projekt sešitu aplikace Excel s názvem **Moje složité datové vazby**. V průvodci vyberte **vytvoříte nový textový dokument**.
+1. Vytvořte projekt sešitu aplikace Excel s názvem **Moje složité datové vazby**. V průvodci vyberte **vytvoříte nový textový dokument**.
 
      Další informace najdete v tématu [jak: Vytvářet projekty pro Office v sadě Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
@@ -91,15 +91,15 @@ ms.locfileid: "56643103"
 
 #### <a name="to-add-a-list-object"></a>Chcete-li přidat objekt seznamu
 
-1.  Ověřte, že **Moje komplexní Data Binding.xlsx** sešitu je otevřen v návrháři aplikace Visual Studio s **List1** zobrazí.
+1. Ověřte, že **Moje komplexní Data Binding.xlsx** sešitu je otevřen v návrháři aplikace Visual Studio s **List1** zobrazí.
 
-2.  Otevřít **zdroje dat** okna a vyberte **zaměstnanci** uzlu.
+2. Otevřít **zdroje dat** okna a vyberte **zaměstnanci** uzlu.
 
-3.  Klikněte na šipku rozevíracího seznamu, který se zobrazí.
+3. Klikněte na šipku rozevíracího seznamu, který se zobrazí.
 
-4.  Vyberte **ListObject** v rozevíracím seznamu.
+4. Vyberte **ListObject** v rozevíracím seznamu.
 
-5.  Přetáhněte **zaměstnanci** tabulky do buňky **A6**.
+5. Přetáhněte **zaměstnanci** tabulky do buňky **A6**.
 
      A <xref:Microsoft.Office.Tools.Excel.ListObject> ovládací prvek s názvem `EmployeesListObject` se vytvoří v buňce **A6**. Ve stejnou dobu <xref:System.Windows.Forms.BindingSource> s názvem `EmployeesBindingSource`, tabulka adaptéru a <xref:System.Data.DataSet> instance jsou přidány do projektu. Ovládací prvek vázaný <xref:System.Windows.Forms.BindingSource>, která je dále vázán na <xref:System.Data.DataSet> instance.
 
@@ -132,7 +132,7 @@ ms.locfileid: "56643103"
 
 ### <a name="to-save-changes-to-the-database"></a>Uložte změny do databáze
 
-1.  Přidat obslužnou rutinu události pro <xref:System.Windows.Forms.Control.Click> událost `button`a přidejte následující kód k provedení všech změn, které byly provedeny v datové sadě zpět do databáze.
+1. Přidat obslužnou rutinu události pro <xref:System.Windows.Forms.Control.Click> událost `button`a přidejte následující kód k provedení všech změn, které byly provedeny v datové sadě zpět do databáze.
 
      [!code-csharp[Trin_VstcoreDataExcel#10](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet3.cs#10)]
      [!code-vb[Trin_VstcoreDataExcel#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet3.vb#10)]
@@ -142,33 +142,33 @@ ms.locfileid: "56643103"
 
 ### <a name="to-test-the-data-binding"></a>Můžete otestovat vazbu dat
 
--   Stisknutím klávesy **F5**.
+- Stisknutím klávesy **F5**.
 
      Ověřte, že po otevření sešitu objekt seznam je vyplněn daty z **zaměstnanci** tabulky.
 
 ### <a name="to-modify-data"></a>Úprava dat
 
-1.  Klikněte na buňku **B7**, který by měl obsahovat název **Davolio**.
+1. Klikněte na buňku **B7**, který by měl obsahovat název **Davolio**.
 
-2.  Zadejte název **Anderson**a potom stiskněte klávesu **Enter**.
+2. Zadejte název **Anderson**a potom stiskněte klávesu **Enter**.
 
 ### <a name="to-modify-a-column-header"></a>Chcete-li změnit záhlaví sloupce
 
-1.  Klikněte na buňku, která obsahuje hlavičku sloupce **LastName**.
+1. Klikněte na buňku, která obsahuje hlavičku sloupce **LastName**.
 
-2.  Typ **příjmení**, včetně mezery mezi slovy dvě a potom stiskněte klávesu **Enter**.
+2. Typ **příjmení**, včetně mezery mezi slovy dvě a potom stiskněte klávesu **Enter**.
 
 ### <a name="to-save-data"></a>Chcete-li uložit data
 
-1.  Klikněte na tlačítko **Uložit** na listu.
+1. Klikněte na tlačítko **Uložit** na listu.
 
-2.  Ukončete aplikaci Excel. Klikněte na tlačítko **ne** po zobrazení výzvy se uložit provedené změny.
+2. Ukončete aplikaci Excel. Klikněte na tlačítko **ne** po zobrazení výzvy se uložit provedené změny.
 
-3.  Stisknutím klávesy **F5** spusťte projekt znovu.
+3. Stisknutím klávesy **F5** spusťte projekt znovu.
 
      Objekt seznam je vyplněn daty z **zaměstnanci** tabulky.
 
-4.  Všimněte si, že název v buňce **B7** je stále **Anderson**, které jsou data změnit provedli a uložili zpět do databáze. Záhlaví sloupce **LastName** má změnit zpět na původní podobě bez mezer, protože databáze není vázán na záhlaví sloupce a nebyla uložena změny provedené v listu.
+4. Všimněte si, že název v buňce **B7** je stále **Anderson**, které jsou data změnit provedli a uložili zpět do databáze. Záhlaví sloupce **LastName** má změnit zpět na původní podobě bez mezer, protože databáze není vázán na záhlaví sloupce a nebyla uložena změny provedené v listu.
 
 ### <a name="to-add-new-rows"></a>Chcete-li přidat nové řádky
 
@@ -184,44 +184,44 @@ ms.locfileid: "56643103"
 
 ### <a name="to-delete-rows"></a>Chcete-li odstranit řádky
 
--   Klikněte pravým tlačítkem na číslo 16 (řádek 16) na levé listu a potom klikněte na tlačítko **odstranit**.
+- Klikněte pravým tlačítkem na číslo 16 (řádek 16) na levé listu a potom klikněte na tlačítko **odstranit**.
 
 ### <a name="to-sort-the-rows-in-the-list"></a>Chcete-li seřadit řádky v seznamu
 
-1.  Zvolte buňky uvnitř seznamu.
+1. Zvolte buňky uvnitř seznamu.
 
      Tlačítek se zobrazí v záhlaví jednotlivých sloupců.
 
-2.  Klikněte na tlačítko se šipkou v **příjmení** záhlaví sloupce.
+2. Klikněte na tlačítko se šipkou v **příjmení** záhlaví sloupce.
 
-3.  Klikněte na tlačítko **seřadit vzestupně**.
+3. Klikněte na tlačítko **seřadit vzestupně**.
 
      Řádky jsou seřazená podle abecedy podle příjmení.
 
 ### <a name="to-filter-information"></a>Pro filtrování informací
 
-1.  Zvolte buňky uvnitř seznamu.
+1. Zvolte buňky uvnitř seznamu.
 
-2.  Klikněte na tlačítko se šipkou v **název** záhlaví sloupce.
+2. Klikněte na tlačítko se šipkou v **název** záhlaví sloupce.
 
-3.  Klikněte na tlačítko **zástupce**.
+3. Klikněte na tlačítko **zástupce**.
 
      V seznamu se zobrazí pouze řádky, které obsahují **prodejní zástupce** v **název** sloupce.
 
-4.  Klikněte na tlačítko se šipkou v **název** znovu záhlaví sloupce.
+4. Klikněte na tlačítko se šipkou v **název** znovu záhlaví sloupce.
 
-5.  Klikněte na tlačítko **(vše)**.
+5. Klikněte na tlačítko **(vše)**.
 
      Filtrování se odebere a zobrazí všechny řádky.
 
 ## <a name="next-steps"></a>Další kroky
  Tento návod ukazuje základy vazby tabulky v databázi s objektem seznamu. Tady jsou některé úlohy, které by mohl pocházet Další:
 
--   Data do mezipaměti tak, aby ho můžete použít v režimu offline. Další informace najdete v tématu [jak: Mezipaměť dat pro použití v režimu offline nebo na serveru](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md).
+- Data do mezipaměti tak, aby ho můžete použít v režimu offline. Další informace najdete v tématu [jak: Mezipaměť dat pro použití v režimu offline nebo na serveru](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md).
 
--   Nasazení řešení. Další informace najdete v tématu [nasazení řešení Office](../vsto/deploying-an-office-solution.md).
+- Nasazení řešení. Další informace najdete v tématu [nasazení řešení Office](../vsto/deploying-an-office-solution.md).
 
--   Vytvoření záznamů master/detail vztah mezi polem a tabulku. Další informace najdete v tématu [názorný postup: Vytvořte relaci hlavní podrobností pomocí datové sady v mezipaměti](../vsto/walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md).
+- Vytvoření záznamů master/detail vztah mezi polem a tabulku. Další informace najdete v tématu [názorný postup: Vytvořte relaci hlavní podrobností pomocí datové sady v mezipaměti](../vsto/walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md).
 
 ## <a name="see-also"></a>Viz také:
 - [Vytvoření vazby dat k ovládacím prvkům v řešeních pro systém Office](../vsto/binding-data-to-controls-in-office-solutions.md)

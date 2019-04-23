@@ -12,12 +12,12 @@ ms.assetid: a3d4b15b-a91e-41ba-b235-e62632d11bc5
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 72f9f1a098d17d7e6dd0b5cd8218b35f3408695e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 31a9b093fc912be9db573b89d8c6b09e927c8b87
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54760310"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048720"
 ---
 # <a name="saving-data-in-project-files"></a>Ukládání dat v souborech projektu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Podtyp projektu můžete uložit a načíst data specifická pro podtyp v soubor
   
 #### <a name="to-save-a-build-related-data-in-the-project-file"></a>Chcete-li uložit sestavení související data v souboru projektu  
   
--   Volání <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetPropertyValue%2A> metody uložte úplnou cestu souboru projektu.  
+- Volání <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetPropertyValue%2A> metody uložte úplnou cestu souboru projektu.  
   
     ```  
     private SpecializedProject project;  
@@ -49,7 +49,7 @@ Podtyp projektu můžete uložit a načíst data specifická pro podtyp v soubor
   
 #### <a name="to-retrieve-build-related-data-from-the-project-file"></a>K načtení sestavení související data ze souboru projektu  
   
--   Volání <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.GetPropertyValue%2A> metodu pro načtení úplnou cestu souboru projektu.  
+- Volání <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.GetPropertyValue%2A> metodu pro načtení úplnou cestu souboru projektu.  
   
     ```  
     private SpecializedProject project;  
@@ -66,7 +66,7 @@ Podtyp projektu můžete uložit a načíst data specifická pro podtyp v soubor
   
 #### <a name="to-save-non-build-related-data-in-the-project-file"></a>Chcete-li uložit mimo sestavení související data v souboru projektu  
   
-1.  Implementace <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.IsFragmentDirty%2A> metodou ke zjištění, zda XML fragment se změnila od posledního uložení do jeho aktuálního souboru.  
+1. Implementace <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.IsFragmentDirty%2A> metodou ke zjištění, zda XML fragment se změnila od posledního uložení do jeho aktuálního souboru.  
   
     ```  
     public int IsFragmentDirty(uint storage, out int pfDirty)  
@@ -96,7 +96,7 @@ Podtyp projektu můžete uložit a načíst data specifická pro podtyp v soubor
     }  
     ```  
   
-2.  Implementace <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Save%2A> metody k uložení dat XML v souboru projektu.  
+2. Implementace <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Save%2A> metody k uložení dat XML v souboru projektu.  
   
     ```  
     public int Save(ref Guid guidFlavor, uint storage, out string pbstrXMLFragment, int fClearDirty)  
@@ -147,7 +147,7 @@ Podtyp projektu můžete uložit a načíst data specifická pro podtyp v soubor
   
 #### <a name="to-retrieve-non-build-related-data-in-the-project-file"></a>Načíst související data bez sestavení v souboru projektu  
   
-1.  Implementace <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.InitNew%2A> metody k inicializaci vlastnosti rozšíření projektu a další data nezávislé na sestavení. Tato metoda je volána, pokud neexistuje žádná data konfigurace XML v souboru projektu.  
+1. Implementace <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.InitNew%2A> metody k inicializaci vlastnosti rozšíření projektu a další data nezávislé na sestavení. Tato metoda je volána, pokud neexistuje žádná data konfigurace XML v souboru projektu.  
   
     ```  
     public int InitNew(ref Guid guidFlavor, uint storage)  
@@ -163,7 +163,7 @@ Podtyp projektu můžete uložit a načíst data specifická pro podtyp v soubor
         return VSConstants.S_OK;  
     ```  
   
-2.  Implementace <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Load%2A> metodu pro načtení dat XML ze souboru projektu.  
+2. Implementace <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Load%2A> metodu pro načtení dat XML ze souboru projektu.  
   
     ```  
     public int Load(ref Guid guidFlavor, uint storage, string pszXMLFragment)  

@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Další informace o benefitech Office 365 pro vývojáře, které jsou součástí vašeho předplatného sady Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: a655a731533bcf9952265cd3697956c278eeae6b
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 31dae1adaaa4fd500357988471718f6ea074a40c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59659073"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052100"
 ---
 # <a name="the-office-365-developer-subscription-benefit-in-visual-studio-subscriptions"></a>Zvýhodněné předplatné Office 365 pro vývojáře v předplatných sady Visual Studio
 
@@ -82,6 +82,6 @@ Nejste si jistí které předplatné používáte?  Připojte se k [ https://my.
 
 ## <a name="support-resources"></a>Informační zdroje podpory
 
--  Potřebujete pomoc s vaším předplatným Office pro vývojáře? Podívejte se [podporují](https://developer.microsoft.com/office/support) prostředků [Office Dev Center](https://developer.microsoft.com/office).
--  Potřebujete pomoc se prodeje, předplatnými, účty a fakturací pro předplatná sady Visual Studio, obraťte se na Visual Studio [podpora předplatných](https://visualstudio.microsoft.com/subscriptions/support/).
--  Máte dotaz k Visual Studio IDE, DevOps služby Azure nebo jiných produktů Visual Studio nebo služeb?  Navštivte [Visual Studio – podpora](https://visualstudio.microsoft.com/support/).
+- Potřebujete pomoc s vaším předplatným Office pro vývojáře? Podívejte se [podporují](https://developer.microsoft.com/office/support) prostředků [Office Dev Center](https://developer.microsoft.com/office).
+- Potřebujete pomoc se prodeje, předplatnými, účty a fakturací pro předplatná sady Visual Studio, obraťte se na Visual Studio [podpora předplatných](https://visualstudio.microsoft.com/subscriptions/support/).
+- Máte dotaz k Visual Studio IDE, DevOps služby Azure nebo jiných produktů Visual Studio nebo služeb?  Navštivte [Visual Studio – podpora](https://visualstudio.microsoft.com/support/).

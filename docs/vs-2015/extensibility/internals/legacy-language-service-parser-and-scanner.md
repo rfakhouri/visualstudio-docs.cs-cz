@@ -11,12 +11,12 @@ ms.assetid: 1ac3de27-a23b-438d-9593-389e45839cfa
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4d5110c0289a630640fdb2c2383234173d931c72
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f1db922974c587cdeadc131d17c44cbab4b49af0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54776451"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048538"
 ---
 # <a name="legacy-language-service-parser-and-scanner"></a>Analyzátor a skener služby starší verze jazyka
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ namespace MyNamespace
 |Název tokenu|Typ tokenu|  
 |----------------|----------------|  
 |obor názvů, třídy, veřejná, void, int|klíčové slovo|  
-|=| – operátor|  
+|=|– operátor|  
 |{ } ( ) ;|Oddělovač|  
 |MyNamespace, MyClass, MáFunkce, arg1, var1|identifikátor|  
 |MyNamespace|– obor názvů|  
@@ -82,29 +82,29 @@ namespace MyNamespace
   
  Předpokládejme, že služba jazyka podporuje odpovídající složené závorky.  
   
-1.  Uživatel zadá uzavírací složená závorka (}).  
+1. Uživatel zadá uzavírací složená závorka (}).  
   
-2.  Vložení složené závorky na pozici kurzoru ve zdrojovém souboru a kurzor je rozšířená o jednu.  
+2. Vložení složené závorky na pozici kurzoru ve zdrojovém souboru a kurzor je rozšířená o jednu.  
   
-3.  <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A> Metodu <xref:Microsoft.VisualStudio.Package.Source> třída se nazývá s typem pravou složenou závorku.  
+3. <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A> Metodu <xref:Microsoft.VisualStudio.Package.Source> třída se nazývá s typem pravou složenou závorku.  
   
-4.  <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A> Volání metod <xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A> metoda ve <xref:Microsoft.VisualStudio.Package.Source> třídy se získat token na pozici těsně před aktuální pozici kurzoru. Tento token odpovídá typu pravou složenou závorku).  
+4. <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A> Volání metod <xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A> metoda ve <xref:Microsoft.VisualStudio.Package.Source> třídy se získat token na pozici těsně před aktuální pozici kurzoru. Tento token odpovídá typu pravou složenou závorku).  
   
-    1.  <xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A> Volání metod <xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A> metodu <xref:Microsoft.VisualStudio.Package.Colorizer> objekt k získání všech tokenů na aktuálním řádku.  
+    1. <xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A> Volání metod <xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A> metodu <xref:Microsoft.VisualStudio.Package.Colorizer> objekt k získání všech tokenů na aktuálním řádku.  
   
-    2.  <xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A> Volání metod <xref:Microsoft.VisualStudio.Package.IScanner.SetSource%2A> metodu <xref:Microsoft.VisualStudio.Package.IScanner> objekt s textem aktuálního řádku.  
+    2. <xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A> Volání metod <xref:Microsoft.VisualStudio.Package.IScanner.SetSource%2A> metodu <xref:Microsoft.VisualStudio.Package.IScanner> objekt s textem aktuálního řádku.  
   
-    3.  <xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A> Opakovaně volá metodu <xref:Microsoft.VisualStudio.Package.IScanner.ScanTokenAndProvideInfoAboutIt%2A> metodu <xref:Microsoft.VisualStudio.Package.IScanner> objekt ke shromažďování všech tokenů z aktuálního řádku.  
+    3. <xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A> Opakovaně volá metodu <xref:Microsoft.VisualStudio.Package.IScanner.ScanTokenAndProvideInfoAboutIt%2A> metodu <xref:Microsoft.VisualStudio.Package.IScanner> objekt ke shromažďování všech tokenů z aktuálního řádku.  
   
-    4.  <xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A> Metoda volá privátní metodu <xref:Microsoft.VisualStudio.Package.Source> třídy k získání tokenu, který obsahuje požadované místo, a předá v seznamu tokenů získané z <xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A> metody.  
+    4. <xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A> Metoda volá privátní metodu <xref:Microsoft.VisualStudio.Package.Source> třídy k získání tokenu, který obsahuje požadované místo, a předá v seznamu tokenů získané z <xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A> metody.  
   
-5.  Tím <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A> metoda vyhledá token trigger příznak <xref:Microsoft.VisualStudio.Package.TokenTriggers> na token, který je vrácen z <xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A> metoda; to znamená, že token, který představuje pravou složenou závorku).  
+5. Tím <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A> metoda vyhledá token trigger příznak <xref:Microsoft.VisualStudio.Package.TokenTriggers> na token, který je vrácen z <xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A> metoda; to znamená, že token, který představuje pravou složenou závorku).  
   
-6.  Pokud příznak trigger <xref:Microsoft.VisualStudio.Package.TokenTriggers> nenajde, <xref:Microsoft.VisualStudio.Package.Source.MatchBraces%2A> metodu <xref:Microsoft.VisualStudio.Package.Source> třída se nazývá.  
+6. Pokud příznak trigger <xref:Microsoft.VisualStudio.Package.TokenTriggers> nenajde, <xref:Microsoft.VisualStudio.Package.Source.MatchBraces%2A> metodu <xref:Microsoft.VisualStudio.Package.Source> třída se nazývá.  
   
-7.  <xref:Microsoft.VisualStudio.Package.Source.MatchBraces%2A> Metoda začíná operace analýzy s hodnotou z důvodu analýzy <xref:Microsoft.VisualStudio.Package.ParseReason>. Takže v konečném důsledku volá tuto operaci <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> metodu <xref:Microsoft.VisualStudio.Package.LanguageService> třídy. Pokud asynchronní analýza kódu je povoleno, toto volání <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> vyvolá metodu ve vlákně na pozadí.  
+7. <xref:Microsoft.VisualStudio.Package.Source.MatchBraces%2A> Metoda začíná operace analýzy s hodnotou z důvodu analýzy <xref:Microsoft.VisualStudio.Package.ParseReason>. Takže v konečném důsledku volá tuto operaci <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> metodu <xref:Microsoft.VisualStudio.Package.LanguageService> třídy. Pokud asynchronní analýza kódu je povoleno, toto volání <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> vyvolá metodu ve vlákně na pozadí.  
   
-8.  Při dokončení operace analýzy, obslužné rutiny dokončení vnitřní (označované také jako metody zpětného volání) s názvem `HandleMatchBracesResponse` je volána <xref:Microsoft.VisualStudio.Package.Source> třídy. Toto volání provádí automaticky <xref:Microsoft.VisualStudio.Package.LanguageService> základní třídy, ne společnost analyzátor.  
+8. Při dokončení operace analýzy, obslužné rutiny dokončení vnitřní (označované také jako metody zpětného volání) s názvem `HandleMatchBracesResponse` je volána <xref:Microsoft.VisualStudio.Package.Source> třídy. Toto volání provádí automaticky <xref:Microsoft.VisualStudio.Package.LanguageService> základní třídy, ne společnost analyzátor.  
   
 9. `HandleMatchBracesResponse` Metoda získá seznam rozsahy z <xref:Microsoft.VisualStudio.Package.AuthoringSink> objekt, který je uložen v <xref:Microsoft.VisualStudio.Package.ParseRequest> objektu. (Značka span je <xref:Microsoft.VisualStudio.TextManager.Interop.TextSpan> struktura, která určuje rozsah řádků a znaků ve zdrojovém souboru.) Tento seznam rozsahy obvykle obsahuje dva rozsahy, jeden pro otevírací a uzavírací závorky.  
   

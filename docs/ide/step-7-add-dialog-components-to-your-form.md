@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bab093c450a7913ea0f1d3e94b6d04e287c6c539
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9e93bd1c254f16b8034a267be90a90573b7ac86e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55911075"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047797"
 ---
 # <a name="step-7-add-dialog-components-to-your-form"></a>Krok 7: Přidejte do svého formuláře komponenty dialogových oken
 Chcete-li povolit programu otevírání souborů obrázků a výběr barvy pozadí, v tomto kroku přidáte <xref:System.Windows.Forms.OpenFileDialog> komponenty a <xref:System.Windows.Forms.ColorDialog> komponentu do formuláře.
@@ -24,25 +24,25 @@ Chcete-li povolit programu otevírání souborů obrázků a výběr barvy pozad
 
 ## <a name="to-add-dialog-components-to-your-form"></a>Přidat do svého formuláře komponenty dialogových oken
 
-1.  Zvolte **Návrháře formulářů Windows** (**Form1.cs [Design]** nebo **Form1.vb [Design]**) a pak otevřete **dialogová okna** skupiny  **Panel nástrojů**.
+1. Zvolte **Návrháře formulářů Windows** (**Form1.cs [Design]** nebo **Form1.vb [Design]**) a pak otevřete **dialogová okna** skupiny  **Panel nástrojů**.
 
     > [!NOTE]
     >  **Dialogová okna** skupiny **nástrojů** komponentami, které otevírají mnoho užitečných dialogových oken, které je možné použít pro otevírání a ukládání souborů, procházení složek a výběru písma a barvy. V tomto projektu použijete dvě komponenty dialogového okna: OpenFileDialog – a ColorDialog
 
-2.  K přidání komponenty s názvem **openFileDialog1** do formuláře dvakrát klikněte na panel **OpenFileDialog**. K přidání komponenty s názvem **colorDialog1** do formuláře dvakrát klikněte na panel **ColorDialog** v **nástrojů**. (Můžete použít v dalším kroku výukového programu.) Měli byste vidět plochu v dolní části **Návrháře formulářů Windows** (pod **prohlížeče obrázků** formuláře), který má ikonu pro každou z komponent dvou dialogových oken, které jste přidali, jak je znázorněno na následujícím obrázku.
+2. K přidání komponenty s názvem **openFileDialog1** do formuláře dvakrát klikněte na panel **OpenFileDialog**. K přidání komponenty s názvem **colorDialog1** do formuláře dvakrát klikněte na panel **ColorDialog** v **nástrojů**. (Můžete použít v dalším kroku výukového programu.) Měli byste vidět plochu v dolní části **Návrháře formulářů Windows** (pod **prohlížeče obrázků** formuláře), který má ikonu pro každou z komponent dvou dialogových oken, které jste přidali, jak je znázorněno na následujícím obrázku.
 
      ![Komponenty dialogového okna](../ide/media/express_dialogsadded.png)
 **dialogové okno** komponenty
 
-3.  Zvolte **openFileDialog1** ikonu v oblasti v dolní části **Návrháře formulářů Windows**. Nastavte dvě vlastnosti:
+3. Zvolte **openFileDialog1** ikonu v oblasti v dolní části **Návrháře formulářů Windows**. Nastavte dvě vlastnosti:
 
-    -   Nastavte **filtr** vlastnost následující (můžete zkopírovat a vložit):
+    - Nastavte **filtr** vlastnost následující (můžete zkopírovat a vložit):
 
         ```
         JPEG Files (*.jpg)|*.jpg|PNG Files (*.png)|*.png|BMP Files (*.bmp)|*.bmp|All files (*.*)|*.*
         ```
 
-    -   Nastavte **název** vlastnost na následující: **Vyberte soubor s obrázkem**
+    - Nastavte **název** vlastnost na následující: **Vyberte soubor s obrázkem**
 
          **Filtr** nastavení vlastností zadejte druhy typů souborů, které se zobrazí v **vybrat obrázek** dialogové okno souboru.
 
@@ -51,6 +51,6 @@ Chcete-li povolit programu otevírání souborů obrázků a výběr barvy pozad
 
 ## <a name="to-continue-or-review"></a>Chcete-li pokračovat nebo přezkoumat
 
--   Přechod k dalšímu kroku výukového programu naleznete v tématu [krok 8: Napsat kód pro zobrazení obslužné rutiny události obrázku tlačítka](../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md).
+- Přechod k dalšímu kroku výukového programu naleznete v tématu [krok 8: Napsat kód pro zobrazení obslužné rutiny události obrázku tlačítka](../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md).
 
--   Chcete-li vrátit k předchozímu kroku tutoriálu, přečtěte si téma [krok 6: Pojmenovat vaše tlačítka](../ide/step-6-name-your-button-controls.md).
+- Chcete-li vrátit k předchozímu kroku tutoriálu, přečtěte si téma [krok 6: Pojmenovat vaše tlačítka](../ide/step-6-name-your-button-controls.md).

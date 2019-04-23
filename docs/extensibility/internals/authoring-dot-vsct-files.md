@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 442d78f494381021bd480f5649dbb6957bec5ae1
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: 84c7a5194e48e73fbabf60b7c9ef89e6cb04d855
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56954047"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053077"
 ---
 # <a name="author-vsct-files"></a>Vytváření souborů .vsct
 Tento dokument ukazuje, jak vytvářet *.vsct* soubor k přidání položek nabídky, panely nástrojů a jiných prvcích uživatelského rozhraní (UI) do integrovaného vývojového prostředí (IDE) sady Visual Studio. Pomocí těchto kroků při přidávání prvků uživatelského rozhraní do balíčku sady Visual Studio (balíček VSPackage správy kódu), který ještě není *.vsct* souboru.
@@ -30,7 +30,7 @@ Tento dokument ukazuje, jak vytvářet *.vsct* soubor k přidání položek nab�
 
 #### <a name="to-create-the-file-structure"></a>Chcete-li vytvořit strukturu souborů
 
-1.  Přidat *.vsct* soubor do projektu pomocí následujících kroků v [jak: Vytvoření souboru .vsct](../../extensibility/internals/how-to-create-a-dot-vsct-file.md).
+1. Přidat *.vsct* soubor do projektu pomocí následujících kroků v [jak: Vytvoření souboru .vsct](../../extensibility/internals/how-to-create-a-dot-vsct-file.md).
 
 2. Přidejte požadované obory názvů `CommandTable` elementu, jak je znázorněno v následujícím příkladu:
 
@@ -40,7 +40,7 @@ Tento dokument ukazuje, jak vytvářet *.vsct* soubor k přidání položek nab�
 
     ```
 
-3.  V `CommandTable` elementu, přidejte `Commands` – element pro hostování všech vlastních nabídkami, panely nástrojů, skupin a příkazy. Tak, aby vaše vlastní elementy uživatelského rozhraní můžete načíst, `Commands` element musí mít jeho `Package` atribut nastaven na hodnotu názvu balíčku.
+3. V `CommandTable` elementu, přidejte `Commands` – element pro hostování všech vlastních nabídkami, panely nástrojů, skupin a příkazy. Tak, aby vaše vlastní elementy uživatelského rozhraní můžete načíst, `Commands` element musí mít jeho `Package` atribut nastaven na hodnotu názvu balíčku.
 
      Po `Commands` elementu, přidejte `Symbols` element definovat identifikátory GUID pro balíček a názvy a identifikátory příkazů prvků uživatelského rozhraní.
 
@@ -51,9 +51,9 @@ Tento dokument ukazuje, jak vytvářet *.vsct* soubor k přidání položek nab�
 
 1. V horní části `CommandTable` prvku, přidejte jej `Extern` – element pro každé externích souborů se odkazuje, a nastavit `href` atribut pro název souboru. Následující soubory hlaviček pro přístup k prostředkům v sadě Visual Studio může odkazovat:
 
-   -   *Stdidcmd.h*: Definuje ID pro všechny příkazy, které jsou vystavené sady Visual Studio.
+   - *Stdidcmd.h*: Definuje ID pro všechny příkazy, které jsou vystavené sady Visual Studio.
 
-   -   *Vsshlids.h*: Obsahuje ID příkazu pro nabídky sady Visual Studio.
+   - *Vsshlids.h*: Obsahuje ID příkazu pro nabídky sady Visual Studio.
 
 2. Pokud váš balíček volá všechny příkazy, které jsou definovány pomocí sady Visual Studio nebo další balíčky, přidejte `UsedCommands` elementu po `Commands` elementu. Vyplnit tento element s [usedcommand –](../../extensibility/usedcommand-element.md) – element pro každý příkaz, který je volání není součástí vašeho balíčku. Nastavte `guid` a `id` atributy `UsedCommand` prvků, které mají hodnoty GUID a ID příkazů pro volání.
 
@@ -64,15 +64,15 @@ Tento dokument ukazuje, jak vytvářet *.vsct* soubor k přidání položek nab�
 
 #### <a name="to-declare-ui-elements"></a>Chcete-li deklarovat prvky uživatelského rozhraní
 
-1.  V `Symbols` prvku, přidejte tři [guidsymbol –](../../extensibility/guidsymbol-element.md) elementy. Každý `GuidSymbol` obsahuje element `name` atribut a `value` atribut. Nastavte `name` atribut, aby odrážely účel elementu. `value` Atribut má identifikátor GUID. (Generovat identifikátor GUID na **nástroje** nabídce vyberte možnost **Create GUID**a pak vyberte **formát registru**.)
+1. V `Symbols` prvku, přidejte tři [guidsymbol –](../../extensibility/guidsymbol-element.md) elementy. Každý `GuidSymbol` obsahuje element `name` atribut a `value` atribut. Nastavte `name` atribut, aby odrážely účel elementu. `value` Atribut má identifikátor GUID. (Generovat identifikátor GUID na **nástroje** nabídce vyberte možnost **Create GUID**a pak vyberte **formát registru**.)
 
      První `GuidSymbol` element představuje váš balíček a obvykle nemá žádné podřízené položky. Druhá `GuidSymbol` element představuje příkaz nastavit a bude obsahovat všechny symboly, které definují nabídek, skupiny a příkazy. Třetí `GuidSymbol` element představuje vaše úložiště imagí a obsahuje symboly pro všechny ikony pro příkazy. Pokud máte k dispozici žádné příkazy, které používají ikony, můžete vynechat třetí `GuidSymbol` elementu.
 
-2.  V `GuidSymbol` elementu, který představuje vaši sadu příkazů, přidejte jeden nebo více [idsymbol –](../../extensibility/idsymbol-element.md) elementy. Každá z těchto představují nabídky, nástrojů, skupiny nebo příkaz, který chcete přidat do uživatelského rozhraní.
+2. V `GuidSymbol` elementu, který představuje vaši sadu příkazů, přidejte jeden nebo více [idsymbol –](../../extensibility/idsymbol-element.md) elementy. Každá z těchto představují nabídky, nástrojů, skupiny nebo příkaz, který chcete přidat do uživatelského rozhraní.
 
      Pro každou `IDSymbol` element, nastaven `name` atribut název bude odkazovat na odpovídající nabídky, skupiny nebo příkaz a pak nastavte `value` element šestnáctkového čísla, která bude představovat jeho ID příkazu. Žádné dva `IDSymbol` prvky, které mají stejnou nadřazenou položku může mít stejnou hodnotu.
 
-3.  Pokud některý z vašich prvky uživatelského rozhraní vyžadují ikony, přidejte `IDSymbol` – element pro každé ikony `GuidSymbol` elementu, který představuje vaše úložiště imagí.
+3. Pokud některý z vašich prvky uživatelského rozhraní vyžadují ikony, přidejte `IDSymbol` – element pro každé ikony `GuidSymbol` elementu, který představuje vaše úložiště imagí.
 
 ### <a name="put-ui-elements-in-the-ide"></a>Vložit prvky uživatelského rozhraní v rozhraní IDE
  [Nabídky](../../extensibility/menus-element.md), [skupiny](../../extensibility/groups-element.md), a [tlačítka](../../extensibility/buttons-element.md) elementy obsahovat definice pro všechny nabídky, skupiny a příkazy, které jsou definovány v balíčku. Do integrovaného vývojového prostředí pomocí těchto nabídek, skupiny a příkazy [nadřazené](../../extensibility/parent-element.md) element, který je součástí definice prvku uživatelského rozhraní nebo pomocí [commandplacement –](../../extensibility/commandplacement-element.md) element, který je definovaný jinde.
@@ -96,14 +96,14 @@ Tento dokument ukazuje, jak vytvářet *.vsct* soubor k přidání položek nab�
 
 3. Pokud přidáváte nové příkazy rozhraní IDE, přidejte `Buttons` elementu `Commands` elementu. Pak pro každý příkaz, přidejte [tlačítko](../../extensibility/button-element.md) elementu `Buttons` element.
 
-   1.  Nastavte `guid` a `id` atributy každého `Button` element a pak nastavte `type` atribut na typ, který chcete tlačítko. Můžete také nastavit `priority` atribut vytvořit relativní pozici příkazu v nadřazené skupině.
+   1. Nastavte `guid` a `id` atributy každého `Button` element a pak nastavte `type` atribut na typ, který chcete tlačítko. Můžete také nastavit `priority` atribut vytvořit relativní pozici příkazu v nadřazené skupině.
 
        > [!NOTE]
        >  Použití `type="button"` pro standardní příkazy a tlačítka na panely nástrojů.
 
-   2.  V `Button` elementu, přidat [řetězce](../../extensibility/strings-element.md) element, který obsahuje [ButtonText](../../extensibility/buttontext-element.md) elementu a [CommandName](../../extensibility/commandname-element.md) elementu. `ButtonText` Element poskytuje textový popisek pro položku nabídky nebo popisu tlačítka pro tlačítko toolbar. `CommandName` Element poskytuje název příkazu, pro použití v příkazu dobře.
+   2. V `Button` elementu, přidat [řetězce](../../extensibility/strings-element.md) element, který obsahuje [ButtonText](../../extensibility/buttontext-element.md) elementu a [CommandName](../../extensibility/commandname-element.md) elementu. `ButtonText` Element poskytuje textový popisek pro položku nabídky nebo popisu tlačítka pro tlačítko toolbar. `CommandName` Element poskytuje název příkazu, pro použití v příkazu dobře.
 
-   3.  Pokud váš příkaz ikonu, vytvořte [ikonu](../../extensibility/icon-element.md) element v `Button` elementu a nastavte jeho `guid` a `id` atributů `Bitmap` – element pro ikonu.
+   3. Pokud váš příkaz ikonu, vytvořte [ikonu](../../extensibility/icon-element.md) element v `Button` elementu a nastavte jeho `guid` a `id` atributů `Bitmap` – element pro ikonu.
 
        > [!NOTE]
        >  Tlačítka panelu nástrojů musí mít ikony.
@@ -120,9 +120,9 @@ Tento dokument ukazuje, jak vytvářet *.vsct* soubor k přidání položek nab�
 
     Cílem `Parent` je prvek nabídky nebo skupinu, která bude obsahovat nabídky, skupiny nebo příkaz.
 
-   1.  Nastavte `guid` atribut název `GuidSymbol` element, který definuje sadu příkazů. Pokud cílový element není součástí vašeho balíčku, použijte identifikátor guid tuto sadu příkazů, jak jsou definovány v odpovídající *.vsct* souboru.
+   1. Nastavte `guid` atribut název `GuidSymbol` element, který definuje sadu příkazů. Pokud cílový element není součástí vašeho balíčku, použijte identifikátor guid tuto sadu příkazů, jak jsou definovány v odpovídající *.vsct* souboru.
 
-   2.  Nastavte `id` atribut tak, aby odpovídaly `id` atribut target nabídky nebo skupiny. Seznam nabídek a skupiny, které jsou přístupné pomocí sady Visual Studio, naleznete v tématu [identifikátory GUID a ID sady Visual Studio nabídky](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md) nebo [identifikátory GUID a ID sady Visual Studio panely nástrojů](../../extensibility/internals/guids-and-ids-of-visual-studio-toolbars.md).
+   2. Nastavte `id` atribut tak, aby odpovídaly `id` atribut target nabídky nebo skupiny. Seznam nabídek a skupiny, které jsou přístupné pomocí sady Visual Studio, naleznete v tématu [identifikátory GUID a ID sady Visual Studio nabídky](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md) nebo [identifikátory GUID a ID sady Visual Studio panely nástrojů](../../extensibility/internals/guids-and-ids-of-visual-studio-toolbars.md).
 
    Pokud máte velký počet prvků uživatelského rozhraní, umístíte do integrovaného vývojového prostředí, nebo pokud máte prvky, které by se měla objevit na více místech, definovat jejich umístění v [commandplacements –](../../extensibility/commandplacements-element.md) elementu, jak je znázorněno v následujícím postupu.
 
@@ -145,79 +145,79 @@ Tento dokument ukazuje, jak vytvářet *.vsct* soubor k přidání položek nab�
 
 1. Chcete-li prvek uživatelského rozhraní viditelná pouze v určitých uživatelského rozhraní kontextech, například při načtení řešení, použijte omezení viditelnosti.
 
-   1.  Po `Commands` elementu, přidejte `VisibilityConstraints` elementu.
+   1. Po `Commands` elementu, přidejte `VisibilityConstraints` elementu.
 
-   2.  Pro každou položku uživatelského rozhraní pro omezení, přidejte [visibilityitem –](../../extensibility/visibilityitem-element.md) elementu.
+   2. Pro každou položku uživatelského rozhraní pro omezení, přidejte [visibilityitem –](../../extensibility/visibilityitem-element.md) elementu.
 
-   3.  Pro každou `VisibilityItem` element, nastaven `guid` a `id` atributů, které mají v nabídce, skupiny, nebo příkaz a pak nastavte `context` atribut kontextu uživatelského rozhraní, který chcete, jak jsou definovány v <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80> třídy.
+   3. Pro každou `VisibilityItem` element, nastaven `guid` a `id` atributů, které mají v nabídce, skupiny, nebo příkaz a pak nastavte `context` atribut kontextu uživatelského rozhraní, který chcete, jak jsou definovány v <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80> třídy.
 
 2. Pokud chcete nastavit viditelnost nebo dostupnost položky uživatelského rozhraní v kódu, použijte nejméně jeden z následujících příznaků příkazů:
 
-   -   `DefaultDisabled`
+   - `DefaultDisabled`
 
-   -   `DefaultInvisible`
+   - `DefaultInvisible`
 
-   -   `DynamicItemStart`
+   - `DynamicItemStart`
 
-   -   `DynamicVisibility`
+   - `DynamicVisibility`
 
-   -   `NoShowOnMenuController`
+   - `NoShowOnMenuController`
 
-   -   `NotInTBList`
+   - `NotInTBList`
 
    Další informace najdete v tématu [CommandFlag](../../extensibility/command-flag-element.md) elementu.
 
 3. Chcete-li změnit způsob, jakým se zobrazí element nebo dynamicky měnit její vzhled, použijte jednu nebo více z následujících příznaků příkazů:
 
-   -   `AlwaysCreate`
+   - `AlwaysCreate`
 
-   -   `CommandWellOnly`
+   - `CommandWellOnly`
 
-   -   `DefaultDocked`
+   - `DefaultDocked`
 
-   -   `DontCache`
+   - `DontCache`
 
-   -   `DynamicItemStart`
+   - `DynamicItemStart`
 
-   -   `FixMenuController`
+   - `FixMenuController`
 
-   -   `IconAndText`
+   - `IconAndText`
 
-   -   `Pict`
+   - `Pict`
 
-   -   `StretchHorizontally`
+   - `StretchHorizontally`
 
-   -   `TextMenuUseButton`
+   - `TextMenuUseButton`
 
-   -   `TextChanges`
+   - `TextChanges`
 
-   -   `TextOnly`
+   - `TextOnly`
 
    Další informace najdete v tématu [CommandFlag](../../extensibility/command-flag-element.md) elementu.
 
 4. Chcete-li změnit, jak prvek reaguje při přijetí příkazů, použijte nejméně jeden z následujících příznaků příkazů:
 
-   -   `AllowParams`
+   - `AllowParams`
 
-   -   `CaseSensitive`
+   - `CaseSensitive`
 
-   -   `CommandWellOnly`
+   - `CommandWellOnly`
 
-   -   `FilterKeys`
+   - `FilterKeys`
 
-   -   `NoAutoComplete`
+   - `NoAutoComplete`
 
-   -   `NoButtonCustomize`
+   - `NoButtonCustomize`
 
-   -   `NoKeyCustomize`
+   - `NoKeyCustomize`
 
-   -   `NoToolbarClose`
+   - `NoToolbarClose`
 
-   -   `PostExec`
+   - `PostExec`
 
-   -   `RouteToDocs`
+   - `RouteToDocs`
 
-   -   `TextIsAnchorCommand`
+   - `TextIsAnchorCommand`
 
    Další informace najdete v tématu [CommandFlag](../../extensibility/command-flag-element.md) elementu.
 

@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9776a6340fb96954c0d79694ce79dc577363f2b9
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 1c21b3e03eba03503c769e07ca2a2d90c24c59dc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56705947"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045224"
 ---
 # <a name="attach-to-the-program"></a>Připojit k programu
 Po registraci svých programů s příslušný port je nutné připojit ladicí program k program, který chcete ladit.
@@ -43,16 +43,16 @@ Po registraci svých programů s příslušný port je nutné připojit ladicí 
 
   Po `IDebugEngine2::Attach` metoda je volána, postupujte podle těchto kroků ve vaší implementaci `IDebugEngine2::Attach` metody:
 
-1.  Odeslání [IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md) objekt SDM události. Další informace najdete v tématu [odesílání událostí](../../extensibility/debugger/sending-events.md).
+1. Odeslání [IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md) objekt SDM události. Další informace najdete v tématu [odesílání událostí](../../extensibility/debugger/sending-events.md).
 
-2.  Volání [GetProgramId](../../extensibility/debugger/reference/idebugprogram2-getprogramid.md) metodu [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) objekt, který byl předán `IDebugEngine2::Attach` metoda.
+2. Volání [GetProgramId](../../extensibility/debugger/reference/idebugprogram2-getprogramid.md) metodu [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) objekt, který byl předán `IDebugEngine2::Attach` metoda.
 
      Tím se vrátí `GUID` , který se používá k identifikaci program. `GUID` Musí být uložen v objektu, že představuje místní program určený k DE, a to je vrácena, pokud `IDebugProgram2::GetProgramId` metoda je volána na `IDebugProgram2` rozhraní.
 
     > [!NOTE]
     >  Pokud se rozhodnete implementovat `IDebugProgramNodeAttach2` rozhraní programu `GUID` je předán `IDebugProgramNodeAttach2::OnAttach` metoda. To `GUID` se používá v programu `GUID` vrácených `IDebugProgram2::GetProgramId` metody.
 
-3.  Odeslání [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) události objektu oznámit SDM, místní `IDebugProgram2` byl vytvořen objekt představující program DE. Podrobnosti najdete v tématu [odesílání událostí](../../extensibility/debugger/sending-events.md).
+3. Odeslání [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) události objektu oznámit SDM, místní `IDebugProgram2` byl vytvořen objekt představující program DE. Podrobnosti najdete v tématu [odesílání událostí](../../extensibility/debugger/sending-events.md).
 
     > [!NOTE]
     >  To není stejné `IDebugProgram2` objekt, který byl předán `IDebugEngine2::Attach` metody. Dříve předaný `IDebugProgram2` objekt rozezná pouze port a je samostatný objekt.

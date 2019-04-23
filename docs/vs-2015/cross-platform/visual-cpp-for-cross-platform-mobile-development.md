@@ -11,12 +11,12 @@ caps.latest.revision: 12
 author: corob-msft
 ms.author: corob
 manager: jillfra
-ms.openlocfilehash: ec4bc799c3a808a7259e4dd39565e2e21940ca56
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: e947800c82036b061b2f48303733690a95ec53bc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59665699"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053972"
 ---
 # <a name="visual-c-for-cross-platform-mobile-development"></a>Visual C++ for Cross-Platform Mobile Development
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,11 +27,11 @@ Můžete vytvářet nativní aplikace C++ pro iOS, Android a Windows a sdílet s
   
  Vývoj pomocí jazyka Visual C++ pro vývoj mobilních řešení pro různé platformy má několik výhod:  
   
-1.  **Snadná instalace.** Instalační program sady Visual Studio získá a nainstaluje potřebné nástroje třetích stran a sady SDK potřebujete k vývoji aplikací nebo knihovny pro Android a iOS. Konfigurace a nastavení je jednoduché a většinou automatické.  
+1. **Snadná instalace.** Instalační program sady Visual Studio získá a nainstaluje potřebné nástroje třetích stran a sady SDK potřebujete k vývoji aplikací nebo knihovny pro Android a iOS. Konfigurace a nastavení je jednoduché a většinou automatické.  
   
-2.  **Sestavení výkonných a dobře známého prostředí.** Projekty a sdílet řešení pro různé platformy můžete jednoduše vytvořte pomocí šablony sady Visual Studio. Spravujte vlastnosti pro všechny projekty pomocí jednoho rozhraní pro běžné. Upravit veškerý kód v editoru sady Visual Studio a využijte výhod integrovaných multiplatformní IntelliSense, dokončování kódu a zvýrazňování chyb.  
+2. **Sestavení výkonných a dobře známého prostředí.** Projekty a sdílet řešení pro různé platformy můžete jednoduše vytvořte pomocí šablony sady Visual Studio. Spravujte vlastnosti pro všechny projekty pomocí jednoho rozhraní pro běžné. Upravit veškerý kód v editoru sady Visual Studio a využijte výhod integrovaných multiplatformní IntelliSense, dokončování kódu a zvýrazňování chyb.  
   
-3.  **Jednotné možnosti ladění.** Sledování a procházejte kódem po krocích C++ na všech platformách, včetně zařízení s Androidem a emulátory, simulátory Iosu a zařízení a zařízení s Windows nebo Windows Phone a emulátory pomocí špičkové ladicí nástroje v sadě Visual Studio.  
+3. **Jednotné možnosti ladění.** Sledování a procházejte kódem po krocích C++ na všech platformách, včetně zařízení s Androidem a emulátory, simulátory Iosu a zařízení a zařízení s Windows nebo Windows Phone a emulátory pomocí špičkové ladicí nástroje v sadě Visual Studio.  
   
 ## <a name="get-the-tools"></a>Získání nástrojů  
  Visual C++ pro vývoj mobilních řešení pro různé platformy je Instalovatelná možnost, která je součástí sady Visual Studio 2015. Požadavky a pokyny k instalaci najdete v tématu [instalaci Visual C++ pro vývoj mobilních řešení napříč platformami](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md). K vytvoření kódu pro iOS, potřebujete také do počítače Mac a Apple iOS vývojářský účet. Další informace najdete v tématu [instalace a konfigurace nástrojů pro vytváření pomocí iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md).  
@@ -41,55 +41,55 @@ Můžete vytvářet nativní aplikace C++ pro iOS, Android a Windows a sdílet s
   
  Visual C++ pro vývoj Multiplatformních mobilních aplikací obsahuje několik šablon můžete začít pracovat na své aplikace:  
   
--   Aplikace OpenGLES 2 (Android, iOS, Windows Universal)  
+- Aplikace OpenGLES 2 (Android, iOS, Windows Universal)  
   
      Vytvoří řešení, které obsahuje sadu projektů k sestavení aplikace Nativeactivity pro Android, aplikace pro iOS a Universal Windows app, společně s sdílené knihovny kódu C++. Tyto aplikace pomocí knihovny pro konkrétní platformu vytvořené pomocí společný kód C++ OpenGL ES k vykreslení na stejnou datovou krychli pokryjte v každé aplikaci. Při instalaci sady Visual Studio pro tuto šablonu použít, je nutné zahrnout možnost Universal Windows nástroje pro vývoj aplikací.  
   
--   Aplikace s Nativeactivity (Android)  
+- Aplikace s Nativeactivity (Android)  
   
      Vytvoří kompletní aplikace C++ OpenGL jako projekt aplikace Android Native Activity.  
   
--   Aplikace OpenGLES (Android, iOS)  
+- Aplikace OpenGLES (Android, iOS)  
   
      Vytvoří řešení sadu projektů k sestavení aplikace Nativeactivity pro Android a aplikace pro iOS. Tyto aplikace pomocí knihovny pro konkrétní platformu vytvořené pomocí společný kód C++ OpenGL ES k vykreslení na stejnou datovou krychli pokryjte v každé aplikaci.  
   
--   Sdílená knihovna (Android, iOS)  
+- Sdílená knihovna (Android, iOS)  
   
      Vytvoří řešení s projekty k vytvoření souboru s Androidem dynamická knihovna (.so) a soubor statická knihovna (.a) pro iOS pomocí společný kód C++ ve sdíleném projektu.  
   
--   Základní aplikace (Android, Ant)  
+- Základní aplikace (Android, Ant)  
   
      Vytvoří aplikaci pro Android "Hello, World" projekt aplikace, který používá jenom pro zdrojový kód v Javě a Ant sestavovací systém.  
   
--   Základní aplikace (Android, Gradle)  
+- Základní aplikace (Android, Gradle)  
   
      Vytvoří aplikaci pro Android "Hello, World" projekt aplikace, který používá jenom pro zdrojový kód v Javě a Gradle sestavovací systém.  
   
--   Základní knihovna (Android, Ant)  
+- Základní knihovna (Android, Ant)  
   
      Vytvoří aplikaci pro Android "Hello, World" projekt knihovny, který používá jenom pro zdrojový kód v Javě a Ant sestavovací systém.  
   
--   Základní knihovna (Android, Gradle)  
+- Základní knihovna (Android, Gradle)  
   
      Vytvoří aplikaci pro Android "Hello, World" projekt knihovny, který používá jenom pro zdrojový kód v Javě a Gradle sestavovací systém.  
   
--   Dynamická sdílená knihovna (Android)  
+- Dynamická sdílená knihovna (Android)  
   
      Vytvoří soubor s Androidem dynamická knihovna (.so) s využitím kódu jazyka C++.  
   
--   Aplikace OpenGLES 2 (iOS)  
+- Aplikace OpenGLES 2 (iOS)  
   
      Vytvoří sadu projektů k sestavení aplikace pro iOS OpenGL ES 2 řešení. Aplikace používá knihovny kódu C++ OpenGL ES k nakreslení pokryjte datovou krychli v aplikaci pro iOS. Tato aplikace může být dobrým výchozím bodem pro import knihoven C++ do aplikace pro iOS zobrazuje.  
   
--   Statická knihovna (Android)  
+- Statická knihovna (Android)  
   
      Vytvoří projekt pro vytvoření statické knihovny pro Android. Můžete pouze jeden dynamické knihovny v aplikaci pro Android, ale můžete propojit libovolný počet statických knihoven.  
   
--   Statická knihovna (iOS)  
+- Statická knihovna (iOS)  
   
      Vytvoří projekt pro vytvoření statické knihovny pro iOS.  
   
--   Projekt makefile (Android)  
+- Projekt makefile (Android)  
   
      Vytvoří obálku projektů pro projekty souborů pravidel s Androidem.  
   
@@ -98,12 +98,12 @@ Můžete vytvářet nativní aplikace C++ pro iOS, Android a Windows a sdílet s
   
 ## <a name="in-this-section"></a>V tomto oddílu  
   
-1.  [Instalace komponenty Visual C++ for Cross-Platform Mobile Development](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)  
+1. [Instalace komponenty Visual C++ for Cross-Platform Mobile Development](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)  
   
-2.  [Instalace a konfigurace nástrojů pro vytváření pomocí iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md)  
+2. [Instalace a konfigurace nástrojů pro vytváření pomocí iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md)  
   
-3.  [Vytvoření aplikace s NativeActivity pro Android](../cross-platform/create-an-android-native-activity-app.md)  
+3. [Vytvoření aplikace s NativeActivity pro Android](../cross-platform/create-an-android-native-activity-app.md)  
   
-4.  [Vytvoření aplikace OpenGL ES na Androidu a iOS](../cross-platform/build-an-opengl-es-application-on-android-and-ios.md)  
+4. [Vytvoření aplikace OpenGL ES na Androidu a iOS](../cross-platform/build-an-opengl-es-application-on-android-and-ios.md)  
   
-5.  [Příklady vývoje multiplatformních mobilních řešení](../cross-platform/cross-platform-mobile-development-examples.md)
+5. [Příklady vývoje multiplatformních mobilních řešení](../cross-platform/cross-platform-mobile-development-examples.md)

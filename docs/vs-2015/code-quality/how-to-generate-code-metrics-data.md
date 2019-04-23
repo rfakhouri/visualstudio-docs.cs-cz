@@ -13,12 +13,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2ec6063f859333b54adaabea0c68af9fd884845b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: aeba6a777dd060f310f9cbb8801b2405cd76f6b2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54768698"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045626"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>Postupy: Generování dat metrik kódu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,15 +31,15 @@ Můžete se rozhodnout generování výsledků metrik kódu pro celé řešení 
   
 ### <a name="to-generate-code-metrics-results-for-an-entire-solution"></a>Ke generování výsledků metrik kódu pro celé řešení  
   
--   Klikněte na tlačítko **nabídce analyzovat**a potom klikněte na tlačítko **CalculateCode metriky pro řešení**.  
+- Klikněte na tlačítko **nabídce analyzovat**a potom klikněte na tlačítko **CalculateCode metriky pro řešení**.  
   
      \- nebo –  
   
--   V **Průzkumníka řešení**, klikněte pravým tlačítkem na řešení a potom klikněte na tlačítko **CalculateCode metriky**.  
+- V **Průzkumníka řešení**, klikněte pravým tlačítkem na řešení a potom klikněte na tlačítko **CalculateCode metriky**.  
   
      \- nebo –  
   
--   V **výsledků metrik kódu** okna, klikněte na tlačítko **CalculateCode metriky pro řešení** tlačítko.  
+- V **výsledků metrik kódu** okna, klikněte na tlačítko **CalculateCode metriky pro řešení** tlačítko.  
   
      Výsledky jsou generovány a **výsledků metrik kódu** se zobrazí okno.  
   
@@ -57,7 +57,7 @@ Můžete se rozhodnout generování výsledků metrik kódu pro celé řešení 
   
 ### <a name="to-view-the-results-details"></a>Chcete-li zobrazit detaily výsledků  
   
--   Rozbalte stromovou strukturu v **hierarchie** sloupce.  
+- Rozbalte stromovou strukturu v **hierarchie** sloupce.  
   
 ## <a name="see-also"></a>Viz také  
  [Měření složitosti a udržovatelnosti spravovaného kódu](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)

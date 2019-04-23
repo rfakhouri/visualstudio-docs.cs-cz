@@ -9,12 +9,12 @@ caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b6d205a3a8abddadc714aea4aa913ff064518920
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 91c993697103417eb3ba39e3c6d2929baee9311a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59663476"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046420"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-service-to-collect-memory-data-by-using-the-command-line"></a>Postupy: Připojit Profiler ke službě .NET ke shromažďování dat paměti pomocí příkazového řádku
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -88,16 +88,16 @@ Toto téma popisuje způsob použití [!INCLUDE[vsprvs](../includes/vsprvs-md.md
 
     **Nástroj VSPerfCmd**[/ attach](../profiling/attach.md) **:**{`PID`&#124;`ProcName`} [[targetclr](../profiling/targetclr.md)**:**`Version`]    
 
-   -   Zadejte ID procesu nebo název procesu služby. ID procesů a názvy všech spuštěných procesů lze zobrazit ve Správci úloh Windows.  
+   - Zadejte ID procesu nebo název procesu služby. ID procesů a názvy všech spuštěných procesů lze zobrazit ve Správci úloh Windows.  
 
-   -   **targetclr:** `Version` Určuje verzi modulu common language runtime (CLR) do profilu je do aplikace načtena více než jedna verze modulu runtime. Volitelné.  
+   - **targetclr:** `Version` Určuje verzi modulu common language runtime (CLR) do profilu je do aplikace načtena více než jedna verze modulu runtime. Volitelné.  
 
 ## <a name="controlling-data-collection"></a>Řízení shromažďování dat  
  Služba je spuštěná, ale můžete použít **VSPerfCmd.exe** možnosti zastavení a spuštění zápisu dat do datového souboru profilování. Řízení sběru dat umožňuje shromažďovat data pro určitou část provádění programu, například spouštění či ukončování aplikace.  
 
 #### <a name="to-start-and-stop-data-collection"></a>Spuštění a zastavení shromažďování dat  
 
--   Následující páry **VSPerfCmd** možností spouští a zastavují sběr dat. Každou možnost zadejte na samostatný příkazový řádek. Sběr dat lze zapnout a vypnout několikrát.  
+- Následující páry **VSPerfCmd** možností spouští a zastavují sběr dat. Každou možnost zadejte na samostatný příkazový řádek. Sběr dat lze zapnout a vypnout několikrát.  
 
     |Možnost|Popis|  
     |------------|-----------------|  
@@ -110,23 +110,23 @@ Toto téma popisuje způsob použití [!INCLUDE[vsprvs](../includes/vsprvs-md.md
 
 #### <a name="to-end-a-profiling-session"></a>Chcete-li ukončit relaci profilování  
 
-1.  Proveďte jednu z následujících-li odpojit profiler od cílové aplikace:  
+1. Proveďte jednu z následujících-li odpojit profiler od cílové aplikace:  
 
-    -   Zastavte službu.  
+    - Zastavte službu.  
 
          -nebo-  
 
-    -   Typ **VSPerfCmd / odpojení**  
+    - Typ **VSPerfCmd / odpojení**  
 
-2.  Vypněte profiler. Typ:  
+2. Vypněte profiler. Typ:  
 
      **/ Shutdown VSPerfCmd**  
 
-3.  (Volitelné) Vyčistěte proměnné prostředí profilování. Typ:  
+3. (Volitelné) Vyčistěte proměnné prostředí profilování. Typ:  
 
      **Vsperfclrenv – /globaloff**  
 
-4.  Restartujte počítač.  
+4. Restartujte počítač.  
 
 ## <a name="see-also"></a>Viz také  
  [Profilace služeb](../profiling/command-line-profiling-of-services.md)   

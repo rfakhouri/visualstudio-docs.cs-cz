@@ -11,12 +11,12 @@ caps.latest.revision: 63
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ef029cc6e931509997ad6f094adedc7d96e4bcd3
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: f5805483b78798aabc3641c6aa17379370c6a199
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59670316"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046239"
 ---
 # <a name="define-a-menu-command-on-a-modeling-diagram"></a>Definování příkazu nabídky v diagramu modelování
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,9 +31,9 @@ V sadě Visual Studio můžete definovat další položky nabídky v místních 
 ## <a name="defining-the-menu-command"></a>Definování příkazu nabídky  
  Chcete-li vytvořit příkaz nabídky pro UML designer, musíte vytvořit třídu, která definuje chování příkazu a vložit tuto třídu v Visual Studio integrace rozšíření (VSIX). VSIX funguje jako kontejner, který může příkaz nainstalovat. Existují dva alternativní způsoby definování příkazu nabídky:  
 
--   **Vytvoření příkazu nabídky ve vlastním souboru VSIX pomocí šablony projektu.** Toto je rychlejší metoda. Pokud nechcete vaše příkazy nabídek kombinovat s jinými typy rozšíření například rozšířeními ověřování, položky vlastního panelu nástrojů nebo obslužnými rutinami gest, použijte ji.  
+- **Vytvoření příkazu nabídky ve vlastním souboru VSIX pomocí šablony projektu.** Toto je rychlejší metoda. Pokud nechcete vaše příkazy nabídek kombinovat s jinými typy rozšíření například rozšířeními ověřování, položky vlastního panelu nástrojů nebo obslužnými rutinami gest, použijte ji.  
 
--   **Vytvořte samostatný příkaz nabídky a projekty VSIX.** Tuto metodu použijte, pokud chcete sloučit několik typů rozšíření do stejného VSIX. Například pokud váš příkaz nabídky očekává, že model bude dodržovat zvláštní omezení, můžete ho vložit do stejného VSIX jako metodu ověřování.  
+- **Vytvořte samostatný příkaz nabídky a projekty VSIX.** Tuto metodu použijte, pokud chcete sloučit několik typů rozšíření do stejného VSIX. Například pokud váš příkaz nabídky očekává, že model bude dodržovat zvláštní omezení, můžete ho vložit do stejného VSIX jako metodu ověřování.  
 
 #### <a name="to-create-a-menu-command-in-its-own-vsix"></a>Chcete-li vytvořit příkaz nabídky ve vlastním souboru VSIX  
 
@@ -55,13 +55,13 @@ V sadě Visual Studio můžete definovat další položky nabídky v místních 
 
 1. Vytvořte projekt knihovny tříd v novém řešení Visual Studio nebo v existujícím řešení.  
 
-   1.  Na **souboru** nabídce zvolte **nový**, **projektu**.  
+   1. Na **souboru** nabídce zvolte **nový**, **projektu**.  
 
-   2.  V části **nainstalované šablony**vyberte **Visual C#** nebo **jazyka Visual Basic**. V prostředním sloupci zvolte **knihovny tříd**.  
+   2. V části **nainstalované šablony**vyberte **Visual C#** nebo **jazyka Visual Basic**. V prostředním sloupci zvolte **knihovny tříd**.  
 
-   3.  Nastavte **řešení** označující, zda chcete vytvořit nové řešení nebo přidat součást do řešení VSIX, který jste již otevřeli.  
+   3. Nastavte **řešení** označující, zda chcete vytvořit nové řešení nebo přidat součást do řešení VSIX, který jste již otevřeli.  
 
-   4.  Nastavte projekt název a umístění a klikněte na tlačítko OK.  
+   4. Nastavte projekt název a umístění a klikněte na tlačítko OK.  
 
 2. Přidejte následující odkazy do projektu.  
 
@@ -142,23 +142,23 @@ V sadě Visual Studio můžete definovat další položky nabídky v místních 
 
 #### <a name="to-add-a-menu-command-to-a-vsix-project"></a>Přidání příkazu nabídky do projektu VSIX  
 
-1.  Tento postup není nutné, pokud jste vytvořili příkaz nabídky s vlastním souborem VSIX.  
+1. Tento postup není nutné, pokud jste vytvořili příkaz nabídky s vlastním souborem VSIX.  
 
-2.  Vytvořte projekt VSIX, pokud vaše řešení již existuje.  
+2. Vytvořte projekt VSIX, pokud vaše řešení již existuje.  
 
-    1.  V **Průzkumníka řešení**, v místní nabídce řešení zvolte **přidat**, **nový projekt**.  
+    1. V **Průzkumníka řešení**, v místní nabídce řešení zvolte **přidat**, **nový projekt**.  
 
-    2.  V části **nainstalované šablony**, rozbalte **Visual C#** nebo **jazyka Visual Basic**, klikněte na tlačítko **rozšiřitelnost**. V prostředním sloupci zvolte **projekt VSIX**.  
+    2. V části **nainstalované šablony**, rozbalte **Visual C#** nebo **jazyka Visual Basic**, klikněte na tlačítko **rozšiřitelnost**. V prostředním sloupci zvolte **projekt VSIX**.  
 
-3.  V Průzkumníku řešení v místní nabídce projektu VSIX zvolte **nastavit jako spouštěný projekt**.  
+3. V Průzkumníku řešení v místní nabídce projektu VSIX zvolte **nastavit jako spouštěný projekt**.  
 
-4.  Otevřít **source.extension.vsixmanifest**.  
+4. Otevřít **source.extension.vsixmanifest**.  
 
-    1.  Na **metadat** kartu, nastavte název souboru VSIX.  
+    1. Na **metadat** kartu, nastavte název souboru VSIX.  
 
-    2.  Na **cíle instalace** kartu, nastavte verze sady Visual Studio jako cíle.  
+    2. Na **cíle instalace** kartu, nastavte verze sady Visual Studio jako cíle.  
 
-    3.  Na **prostředky** kartě **nový**a v dialogovém okně nastavte:  
+    3. Na **prostředky** kartě **nový**a v dialogovém okně nastavte:  
 
          **Typ** = **Komponenta MEF**  
 
@@ -166,7 +166,7 @@ V sadě Visual Studio můžete definovat další položky nabídky v místních 
 
          **Projekt** = *váš projekt knihovny tříd*  
 
-##  <a name="Implementing"></a> Implementace příkazu nabídky  
+## <a name="Implementing"></a> Implementace příkazu nabídky  
  Příkaz nabídky implementuje požadované metody pro <xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement.ICommandExtension>.  
 
 |||  
@@ -209,57 +209,57 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
 
  Nicméně byste měli vědět, že úložiště modelu není bezpečné pro vlákna. Vždy doporučujeme provádět aktualizace pomocí vlákna uživatelského rozhraní (UI) a pokud je to možné, zabránit uživateli v provádění úprav probíhá operace na pozadí. Příklad najdete v tématu [aktualizace modelu UML z vlákna na pozadí](../modeling/update-a-uml-model-from-a-background-thread.md).  
 
-##  <a name="Executing"></a> Spouštění příkazu nabídky  
+## <a name="Executing"></a> Spouštění příkazu nabídky  
  Pro účely testování proveďte příkaz v režimu ladění.  
 
 #### <a name="to-test-the-menu-command"></a>Chcete-li otestovat příkaz nabídky  
 
-1.  Stisknutím klávesy **F5**, nebo **ladění** nabídce zvolte **spustit ladění**.  
+1. Stisknutím klávesy **F5**, nebo **ladění** nabídce zvolte **spustit ladění**.  
 
      Experimentální instanci [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] spustí.  
 
      **Řešení potíží s**: Pokud se nová [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nespustí:  
 
-    -   Pokud máte více než jeden projekt, ujistěte se, že projekt VSIX je nastaven jako projekt po spuštění řešení.  
+    - Pokud máte více než jeden projekt, ujistěte se, že projekt VSIX je nastaven jako projekt po spuštění řešení.  
 
-    -   V Průzkumníku řešení zvolte v místní nabídce startupu nebo projektu, **vlastnosti**. V editoru vlastností projektu, vyberte **ladění** kartu. Ujistěte se, že řetězec v **externí program Start** pole je úplný název cesty [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], obvykle:  
+    - V Průzkumníku řešení zvolte v místní nabídce startupu nebo projektu, **vlastnosti**. V editoru vlastností projektu, vyberte **ladění** kartu. Ujistěte se, že řetězec v **externí program Start** pole je úplný název cesty [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], obvykle:  
 
          `C:\Program Files\Microsoft Visual Studio [version]\Common7\IDE\devenv.exe`  
 
-2.  V experimentální instanci [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]otevřete nebo vytvořte projekt modelování a otevřete nebo vytvořte diagram modelování. Použijte diagram, který patří k jednomu z typů, které jsou uvedeny v atributech vaší třídy příkazu nabídky.  
+2. V experimentální instanci [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]otevřete nebo vytvořte projekt modelování a otevřete nebo vytvořte diagram modelování. Použijte diagram, který patří k jednomu z typů, které jsou uvedeny v atributech vaší třídy příkazu nabídky.  
 
-3.  Otevřete místní nabídku kdekoli v diagramu. Váš příkaz se zobrazí v nabídce.  
+3. Otevřete místní nabídku kdekoli v diagramu. Váš příkaz se zobrazí v nabídce.  
 
      **Řešení potíží s**: Pokud příkaz v nabídce nezobrazí, ujistěte se, že:  
 
-    -   Projekt příkazu nabídky je uveden jako Komponenta MEF na **prostředky** kartu **source.extensions.manifest** v projektu VSIX.  
+    - Projekt příkazu nabídky je uveden jako Komponenta MEF na **prostředky** kartu **source.extensions.manifest** v projektu VSIX.  
 
-    -   Parametry `Import` a `Export` jsou platné.  
+    - Parametry `Import` a `Export` jsou platné.  
 
-    -   `QueryStatus` Metoda není nastavení `command`.`Enabled` nebo `Visible` polím `false`.  
+    - `QueryStatus` Metoda není nastavení `command`.`Enabled` nebo `Visible` polím `false`.  
 
-    -   Typ modelového diagramu, že používáte (UML třídy, sekvence a tak dále) je uveden jako jeden z atributů třídy příkazu nabídky `[ClassDesignerExtension]`, `[SequenceDesignerExtension]` a tak dále.  
+    - Typ modelového diagramu, že používáte (UML třídy, sekvence a tak dále) je uveden jako jeden z atributů třídy příkazu nabídky `[ClassDesignerExtension]`, `[SequenceDesignerExtension]` a tak dále.  
 
-##  <a name="Installing"></a> Instalace a odinstalace rozšíření  
+## <a name="Installing"></a> Instalace a odinstalace rozšíření  
  Můžete nainstalovat [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] rozšíření ve vašem počítači i v jiných počítačích.  
 
 #### <a name="to-install-an-extension"></a>Instalace rozšíření  
 
-1.  V počítači, vyhledejte **VSIX** soubor, který byl vytvořen vaším projektem VSIX.  
+1. V počítači, vyhledejte **VSIX** soubor, který byl vytvořen vaším projektem VSIX.  
 
-    1.  V **Průzkumníka řešení**, v místní nabídce projektu VSIX zvolte **otevřít složku v Průzkumníku Windows**.  
+    1. V **Průzkumníka řešení**, v místní nabídce projektu VSIX zvolte **otevřít složku v Průzkumníku Windows**.  
 
-    2.  Vyhledejte soubor **bin\\\*\\**_YourProject_**VSIX.**  
+    2. Vyhledejte soubor **bin\\\*\\**_YourProject_**VSIX.**  
 
-2.  Kopírovat **VSIX** souboru k cílovému počítači, na kterém chcete nainstalovat rozšíření. To může být vlastní počítač nebo jiný.  
+2. Kopírovat **VSIX** souboru k cílovému počítači, na kterém chcete nainstalovat rozšíření. To může být vlastní počítač nebo jiný.  
 
      Cílový počítač musí mít některou z edicí systému [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] , který jste zadali v **source.extension.vsixmanifest**.  
 
-3.  V cílovém počítači, otevřete **VSIX** souboru, například poklepáním.  
+3. V cílovém počítači, otevřete **VSIX** souboru, například poklepáním.  
 
      **Instalační program rozšíření sady Visual Studio** otevře a nainstaluje rozšíření.  
 
-4.  Spusťte nebo restartujte [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)].  
+4. Spusťte nebo restartujte [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)].  
 
 #### <a name="to-uninstall-an-extension"></a>Odinstalace rozšíření  
 
@@ -273,7 +273,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
 
    *%LocalAppData%* **\Local\Microsoft\VisualStudio\\[version]\Extensions**  
 
-##  <a name="MenuExample"></a> Příklad  
+## <a name="MenuExample"></a> Příklad  
  Následující příklad ukazuje kód pro příkaz nabídky, který bude Zamění názvy dvou prvků v diagramu tříd. Tento kód musí být součástí [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozšíření projektu a nainstalovat, jak je popsáno v předchozích částech.  
 
 ```  
