@@ -20,27 +20,27 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d805333bd8a2cce43340e61573b082dfdff7db0e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: cdfa5724b25a551a65318fea3ebcaf52d7f397ba
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56610905"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60084569"
 ---
 # <a name="troubleshoot-errors-in-office-solutions"></a>Řešení potíží s chybami v řešeních pro systém Office
   Při provádění následujících úloh při vývoji řešení pro systém Office v sadě Visual Studio se můžete setkat s problémy:
 
--   [Vytvářet, upgradovat a otevřít projekty](#creating)
+- [Vytvářet, upgradovat a otevřít projekty](#creating)
 
--   [Pomocí návrhářů](#designers)
+- [Pomocí návrhářů](#designers)
 
--   [Psaní kódu](#code)
+- [Psaní kódu](#code)
 
--   [Sestavení projektů](#building)
+- [Sestavení projektů](#building)
 
--   [Ladění projektů](#debugging)
+- [Ladění projektů](#debugging)
 
-##  <a name="creating"></a> Vytvářet, upgradovat a otevřít projekty
+## <a name="creating"></a> Vytvářet, upgradovat a otevřít projekty
  Při vytváření nebo otevírání projektů Office, mohou se vyskytnout následující chyby.
 
 ### <a name="the-project-cannot-be-created"></a>Projekt nejde vytvořit.
@@ -60,13 +60,13 @@ ms.locfileid: "56610905"
 
  K těmto chybám může dojít, že se že pokusíte vytvořit projekt, který je založen na sešit, který měl jeho osobní údaje, pomocí metadat. K této chybě předejít, proveďte následující kroky před vytvořením projektu.
 
-1.  Otevřete sešit v Excelu.
+1. Otevřete sešit v Excelu.
 
-2.  V aplikaci Excel otevřete v Centru zabezpečení.
+2. V aplikaci Excel otevřete v Centru zabezpečení.
 
-3.  Na **možnosti ochrany osobních údajů** vymazat kartu **odebrat osobní údaje z vlastností souboru uložit** zaškrtávací políčko.
+3. Na **možnosti ochrany osobních údajů** vymazat kartu **odebrat osobní údaje z vlastností souboru uložit** zaškrtávací políčko.
 
-4.  Sešit uložte a zavřete aplikaci Excel.
+4. Sešit uložte a zavřete aplikaci Excel.
 
 ### <a name="cannot-open-a-project-after-migration"></a>Projekt nejde otevřít po migraci
  Po Office, které řešení je migrovat na systém Microsoft Office 2010 nelze projekt otevírán ve vývojovém počítači s pouze systému Microsoft Office 2007 nainstalovaný. Může se zobrazit následující chyby.
@@ -84,17 +84,17 @@ ms.locfileid: "56610905"
 
  Po dokončení upgradu projektu můžete odinstalovat Visual Studio 2005 Tools for Office Second Edition Runtime z vývojového počítače. Pokud není používán jinými řešeními sady Office.
 
-##  <a name="designers"></a> Pomocí návrhářů
+## <a name="designers"></a> Pomocí návrhářů
  Při práci s dokumentu, sešitu nebo listu návrháře v projekty na úrovni dokumentu, mohou se vyskytnout následující chyby.
 
 ### <a name="designer-failed-to-load-correctly"></a>Návrhář se nenačetl správně
  Visual Studio nemůže otevřít návrháře v následujících případech:
 
--   Aplikace Excel nebo Word je již otevřen a je zobrazení modálního dialogového okna. Otevřít návrháře, zkontrolujte, zda aplikace Excel nebo Word má modální dialogové okno otevřít a zavřít všechny otevřené modálních dialogových oken. Pokud nejsou otevřeny žádné modálních dialogových oken, může být nějakou jinou akci, která je požadována aplikace Excel nebo Word reaguje.
+- Aplikace Excel nebo Word je již otevřen a je zobrazení modálního dialogového okna. Otevřít návrháře, zkontrolujte, zda aplikace Excel nebo Word má modální dialogové okno otevřít a zavřít všechny otevřené modálních dialogových oken. Pokud nejsou otevřeny žádné modálních dialogových oken, může být nějakou jinou akci, která je požadována aplikace Excel nebo Word reaguje.
 
--   Projekt je momentálně laděna. Otevřete návrháři, zastavte nebo ukončete ladění.
+- Projekt je momentálně laděna. Otevřete návrháři, zastavte nebo ukončete ladění.
 
--   VSTO Excelový doplněk, který je nainstalován na vývojovém počítači je zobrazení dialogového okna, při spuštění aplikace Excel. Vytvoření projektu úrovni dokumentu aplikace Excel, musíte nejprve zakázat doplňku VSTO.
+- VSTO Excelový doplněk, který je nainstalován na vývojovém počítači je zobrazení dialogového okna, při spuštění aplikace Excel. Vytvoření projektu úrovni dokumentu aplikace Excel, musíte nejprve zakázat doplňku VSTO.
 
 ### <a name="controls-appear-as-black-rectangles-on-the-document-or-worksheet"></a>Ovládací prvky se zobrazí jako černá obdélníků v dokumentu nebo listu
  Pokud jste skupinu pro ovládací prvky v dokumentu nebo listu, Visual Studio již nerozpoznává ovládací prvky. Seskupené ovládací prvky nelze přistupovat ve **vlastnosti** okně a zobrazí jako černá obdélníků v dokumentu nebo sešitu. Aby bylo možné obnovit jejich funkce musíte oddělit ovládací prvky.
@@ -105,10 +105,10 @@ ms.locfileid: "56610905"
 ### <a name="insert-clip-art-command-does-nothing-in-the-visual-studio-designer"></a>Příkaz Insert klip obrázky neprovede v návrháři aplikace Visual Studio
  Pokud aplikace Excel nebo Word je otevřen v návrháři aplikace Visual Studio, kliknutím na tlačítko **klipart** tlačítko **ilustrace** nelze otevřít kartu na pásu karet **klipart** podokna úloh. Chcete-li přidat klipart, je nutné otevřít kopii sešitu nebo dokument, který je ve složce hlavní projekt (nelze kopírovat, který je v *\bin* složky) mimo sadu Visual Studio, přidejte klipart a pak uložte sešit nebo dokumentu.
 
-##  <a name="code"></a> Psaní kódu
+## <a name="code"></a> Psaní kódu
  Pokud píšete kód v projektech Office, mohou se vyskytnout následující chyby.
 
-### <a name="some-events-of-office-objects-are-not-accessible-when-using-c"></a>Některé události z objektů sady Office nejsou přístupné, při použití jazyka C#
+### <a name="some-events-of-office-objects-are-not-accessible-when-using-c"></a>Některé události z objektů sady Office nejsou přístupné, při použití jazyka C\#
  V některých případech se může zobrazit chyba kompilátoru následujícím postupem při pokusu o přístup k určité události instance Office primární sestavení vzájemné spolupráce (PIA) zadejte v projektu jazyka Visual C#.
 
  "Byla zjištěna dvojznačnost mezi"Microsoft.Office.Interop.Excel._Application.NewWorkbook"a"Microsoft.Office.Interop.Excel.AppEvents_Event.NewWorkbook."
@@ -170,7 +170,7 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
 
  I když jste importovali obor názvů aplikaci Word nebo Excel a mají přístup ke všem třídám dovnitř musí plně kvalifikovat všechny typy s Word nebo Excel k odebrání oboru názvů nejednoznačnost.
 
-##  <a name="building"></a> Sestavení projektů
+## <a name="building"></a> Sestavení projektů
  Při sestavování projektů Office, mohou se vyskytnout následující chyby.
 
 ### <a name="cannot-build-a-document-level-project-that-is-based-on-a-document-with-restricted-permissions"></a>Nelze sestavit projekt úrovni dokumentu, který je založen na dokument s omezenými oprávněními
@@ -183,7 +183,7 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
 ### <a name="compiler-errors-occur-after-a-namedrange-control-is-deleted"></a>Po odstranění ovládacím prvkem namedrange dojít k chybám kompilátoru
  Pokud odstraníte <xref:Microsoft.Office.Tools.Excel.NamedRange> ovládacího prvku z listu, který není v aktivním listu v návrháři, automaticky vygenerovaný kód nemusí být odebráno z projektu a může dojít k chybám kompilátoru. Pokud chcete mít jistotu, kód se odebere, byste měli vždy vybrat list, který obsahuje <xref:Microsoft.Office.Tools.Excel.NamedRange> ovládacího prvku k němu aktivního listu před odstraněním ovládacího prvku. Pokud automaticky generovaný kód není odstraněn, když odstraníte ovládací prvek, může způsobit návrháře odstranit kód tak, že aktivace listu a listu bude označena jako upravená tak, aby provedením změny. Při opětovném sestavování projektu kódu se odebere.
 
-##  <a name="debugging"></a> Ladění projektů
+## <a name="debugging"></a> Ladění projektů
  Při ladění projektů Office, mohou se vyskytnout následující chyby.
 
 ### <a name="prompt-to-uninstall-appears-when-you-publish-and-install-a-solution-on-the-development-computer"></a>Řádek pro odinstalaci se zobrazí, když publikujete a instalaci řešení na vývojovém počítači

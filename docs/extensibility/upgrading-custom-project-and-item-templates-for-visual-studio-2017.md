@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: efad4455ab5d3cb0daa16482e303cc82296cc2e4
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
-ms.translationtype: MT
+ms.openlocfilehash: 7c50bb7bf6c61a8061b3817c53027a3dd6e5b29f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323984"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102624"
 ---
 # <a name="upgrade-custom-project-and-item-templates-for-visual-studio-2017"></a>Upgrade vlastních šablon projektů a položek pro Visual Studio 2017
 
@@ -32,36 +32,36 @@ Na jiných místech (od uživatele) musí obsahovat manifest(.vstman) soubor, kt
 
 ## <a name="how-to-update-a-vsix-extension-with-project-or-item-templates"></a>Postup aktualizace rozšíření VSIX projekt nebo šablony položek
 
-1.  Otevřete řešení v sadě Visual Studio 2017. Zobrazí se výzva k upgradu kód. Klikněte na **OK**.
+1. Otevřete řešení v sadě Visual Studio 2017. Zobrazí se výzva k upgradu kód. Klikněte na **OK**.
 
-2.  Po dokončení upgradu, budete muset změnit verzi cíle instalace. V projektu VSIX, otevřete soubor source.extension.vsixmanifest a vyberte **cíle instalace** kartu. Pokud **rozsah verzí** pole je **[14.0]**, klikněte na tlačítko **upravit** a změnit tak, aby obsahovala Visual Studio 2017. Například můžete nastavit **[14.0,15.0]** nainstalovat rozšíření pro Visual Studio 2015 nebo Visual Studio 2017 nebo do **[15.0]** k její instalaci pouze Visual Studio 2017.
+2. Po dokončení upgradu, budete muset změnit verzi cíle instalace. V projektu VSIX, otevřete soubor source.extension.vsixmanifest a vyberte **cíle instalace** kartu. Pokud **rozsah verzí** pole je **[14.0]**, klikněte na tlačítko **upravit** a změnit tak, aby obsahovala Visual Studio 2017. Například můžete nastavit **[14.0,15.0]** nainstalovat rozšíření pro Visual Studio 2015 nebo Visual Studio 2017 nebo do **[15.0]** k její instalaci pouze Visual Studio 2017.
 
-3.  Znovu zkompilujte kód.
+3. Znovu zkompilujte kód.
 
-4.  Zavřete Visual Studio.
+4. Zavřete Visual Studio.
 
-5.  Nainstalujte VSIX.
+5. Nainstalujte VSIX.
 
-6.  Otestovat aktualizaci následujícím způsobem:
+6. Otestovat aktualizaci následujícím způsobem:
 
-    1.  Skenování změnu souboru se aktivuje pomocí následujícího klíče registru:
+    1. Skenování změnu souboru se aktivuje pomocí následujícího klíče registru:
 
          **Přidat reg hklm\software\microsoft\visualstudio\15.0\VSTemplate /v DisableTemplateScanning /t REG_DWORD /d 1 /reg:32**
 
-    2.  Po přidání klíče spustit **devenv/installvstemplates**.
+    2. Po přidání klíče spustit **devenv/installvstemplates**.
 
-    3.  Znovu otevřete Visual Studio. Měli byste najít vaše šablony v očekávaném umístění.
+    3. Znovu otevřete Visual Studio. Měli byste najít vaše šablony v očekávaném umístění.
 
     > [!NOTE]
     >  Šablony projektů Visual Studio Extensibility nejsou k dispozici, když existuje klíč registru. Je nutné odstranit klíč registru (a znovu spusťte **devenv/installvstemplates**) k jejich použití.
 
 ## <a name="other-recommendations-for-deploying-project-and-item-templates"></a>Další doporučení pro nasazení šablony projektů a položek
 
--   Vyhněte se použití soubory ZIP šablony. Metoda ZIP šablony, které soubory musí mít nekomprimované získat prostředků a obsahu, tak budou costlier používat. Místo toho byste měli nasadit šablony projektů a položek jako samostatné soubory podle jejich vlastní adresáře pro urychlení inicializace šablony. Pro rozšíření VSIX budou úlohy sestavení sady SDK automaticky rozbalte všechny ZIP šablony při vytváření souboru VSIX.
+- Vyhněte se použití soubory ZIP šablony. Metoda ZIP šablony, které soubory musí mít nekomprimované získat prostředků a obsahu, tak budou costlier používat. Místo toho byste měli nasadit šablony projektů a položek jako samostatné soubory podle jejich vlastní adresáře pro urychlení inicializace šablony. Pro rozšíření VSIX budou úlohy sestavení sady SDK automaticky rozbalte všechny ZIP šablony při vytváření souboru VSIX.
 
--   Vyhněte se použití balíčku/resource ID položky pro šablonu název, popis, ikona nebo ve verzi preview, aby se zabránilo načítání sestavení zbytečné prostředků při zjišťování šablon. Lokalizované manifesty místo, můžete použít k vytvoření šablony položky pro každé národní prostředí, která používá lokalizované názvy nebo vlastnosti.
+- Vyhněte se použití balíčku/resource ID položky pro šablonu název, popis, ikona nebo ve verzi preview, aby se zabránilo načítání sestavení zbytečné prostředků při zjišťování šablon. Lokalizované manifesty místo, můžete použít k vytvoření šablony položky pro každé národní prostředí, která používá lokalizované názvy nebo vlastnosti.
 
--   Chcete-li zahrnout šablony jako souboru položky, generování manifestu nemusí poskytnout očekávané výsledky. V takovém případě budete muset přidat ručně vygenerovaný manifest do projektu VSIX.
+- Chcete-li zahrnout šablony jako souboru položky, generování manifestu nemusí poskytnout očekávané výsledky. V takovém případě budete muset přidat ručně vygenerovaný manifest do projektu VSIX.
 
 ## <a name="file-changes-in-project-and-item-templates"></a>Změny souborů šablon projektů a položek
 Jsme zobrazí body rozdíl mezi Visual Studio 2015 a Visual Studio 2017 verze souborů šablon, takže můžete vytvořit nové soubory správně.

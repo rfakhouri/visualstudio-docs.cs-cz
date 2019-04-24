@@ -12,12 +12,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 595c5f326ba7af25f3b6517f9955db18056e38f9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: c129ddf016e02fe6c29d5cf63fe57ba07fbd4e95
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54794323"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087973"
 ---
 # <a name="collecting-detailed-timing-data-by-using-instrumentation"></a>Shromažďování podrobných dat časování pomocí instrumentace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,11 +26,11 @@ ms.locfileid: "54794323"
   
  Metoda instrumentace můžete zadat pomocí jedné z následujících postupů:  
   
--   Na první stránce průvodce Profilováním, vyberte **instrumentace**.  
+- Na první stránce průvodce Profilováním, vyberte **instrumentace**.  
   
--   Na **prohlížeč výkonu** nástrojů v **metoda** klikněte na možnost **instrumentace**.  
+- Na **prohlížeč výkonu** nástrojů v **metoda** klikněte na možnost **instrumentace**.  
   
--   Na **Obecné** stránky dialogové okno Vlastnosti relace výkonu, vyberte **instrumentace**.  
+- Na **Obecné** stránky dialogové okno Vlastnosti relace výkonu, vyberte **instrumentace**.  
   
 ## <a name="common-tasks"></a>Obecné úlohy  
  Můžete zadat další možnosti v _relace výkonu_**stránky vlastností** dialogovému oknu relace výkonu. Chcete-li otevřít toto dialogové okno:  

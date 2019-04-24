@@ -17,12 +17,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 280cc2fa94b8ea8167da2168cd4fff90bb8fa612
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 76c55d45e279a3fcf6579c77bf7d226c7baf13d2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59663229"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102975"
 ---
 # <a name="create-lookup-tables-in-windows-forms-applications"></a>Vytváření vyhledávacích tabulek v aplikacích Windows Forms
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,25 +35,25 @@ Termín *vyhledávací tabulka* popisuje ovládací prvky, které jsou vázány 
   
 ## <a name="to-databind-a-lookup-control"></a>Vytvoření datové vazby ovládacího prvku vyhledávání  
   
-1.  Otevřít **zdroje dat** okna.  
+1. Otevřít **zdroje dat** okna.  
   
     > [!NOTE]
     > Vyhledávací tabulky vyžadují dvě souvisejících tabulky nebo objekty jsou k dispozici v **zdroje dat** okna.
   
-2.  Rozbalte uzly v **zdroje dat** okna, dokud se nezobrazí nadřazená tabulka a všechny její sloupce a také související podřízené tabulky a všechny jejich sloupce.  
+2. Rozbalte uzly v **zdroje dat** okna, dokud se nezobrazí nadřazená tabulka a všechny její sloupce a také související podřízené tabulky a všechny jejich sloupce.  
   
     > [!NOTE]
     >  Uzel podřízené tabulky je uzel, který je zobrazen v podřízeném uzlu, který lze rozbalit v nadřazené tabulce.  
   
-3.  Změňte typ přetažení podřízené tabulky na **podrobnosti** tak, že vyberete **podrobnosti** ze seznamu ovládacího prvku na uzlu podřízené tabulky. Další informace najdete v tématu [nastavení ovládacího prvku, který má být vytvořen při přetažení z okna zdroje dat](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).  
+3. Změňte typ přetažení podřízené tabulky na **podrobnosti** tak, že vyberete **podrobnosti** ze seznamu ovládacího prvku na uzlu podřízené tabulky. Další informace najdete v tématu [nastavení ovládacího prvku, který má být vytvořen při přetažení z okna zdroje dat](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).  
   
-4.  Vyhledejte uzel, který odpovídá oběma tabulkám ( `CustomerID` uzlu v předchozím příkladu). Změnit jeho typ přetažení <xref:System.Windows.Forms.ComboBox> tak, že vyberete **– pole se seznamem** ze seznamu ovládacích prvků.  
+4. Vyhledejte uzel, který odpovídá oběma tabulkám ( `CustomerID` uzlu v předchozím příkladu). Změnit jeho typ přetažení <xref:System.Windows.Forms.ComboBox> tak, že vyberete **– pole se seznamem** ze seznamu ovládacích prvků.  
   
-5.  Přetáhněte hlavní uzel podřízené tabulky z **zdroje dat** okna do formuláře.  
+5. Přetáhněte hlavní uzel podřízené tabulky z **zdroje dat** okna do formuláře.  
   
      Na formuláři se zobrazí ovládací prvky s datovou vazbou (včetně popisků) a pruh nástrojů (<xref:System.Windows.Forms.BindingNavigator>). A [datovou sadu](../data-tools/dataset-tools-in-visual-studio.md), TableAdapter, <xref:System.Windows.Forms.BindingSource>, a <xref:System.Windows.Forms.BindingNavigator> zobrazují v panelu komponent.  
   
-6.  Nyní přetáhněte hlavní uzel nadřazené tabulky z **zdroje dat** okno přímo na ovládací prvek vyhledávání ( <xref:System.Windows.Forms.ComboBox>).  
+6. Nyní přetáhněte hlavní uzel nadřazené tabulky z **zdroje dat** okno přímo na ovládací prvek vyhledávání ( <xref:System.Windows.Forms.ComboBox>).  
   
      Nyní jsou vytvořeny vazby vyhledávání. Specifické vlastnosti, které byly nastaveny na ovládacím prvku, naleznete v tabulce níže.  
   

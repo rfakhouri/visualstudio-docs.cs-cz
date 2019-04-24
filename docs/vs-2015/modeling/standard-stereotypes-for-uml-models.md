@@ -12,12 +12,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3ebf931773577add65a7479c7dcd90da9c58c556
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: fbd12f7579cc401284515de1f950ad2a9809dbca
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54770701"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116586"
 ---
 # <a name="standard-stereotypes-for-uml-models"></a>Standardní stereotypy pro modely UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,37 +41,37 @@ Přidávání stereotypů k elementům modelu UML na další informace pro čte�
   
 #### <a name="to-link-a-profile-to-a-model-or-a-package"></a>Odkaz na model nebo balíček profilu  
   
-1.  Otevřít **Průzkumníku modelů UML**. Na **architektura** nabídky, přejděte k **Windows**a potom klikněte na tlačítko **Průzkumníku modelů UML**.  
+1. Otevřít **Průzkumníku modelů UML**. Na **architektura** nabídky, přejděte k **Windows**a potom klikněte na tlačítko **Průzkumníku modelů UML**.  
   
-2.  Vyhledejte balíček nebo model, který obsahuje všechny prvky, na které budete chtít použít stereotypy v profilu.  
+2. Vyhledejte balíček nebo model, který obsahuje všechny prvky, na které budete chtít použít stereotypy v profilu.  
   
-3.  Klikněte pravým tlačítkem na balíček nebo model a pak klikněte na tlačítko **vlastnosti**.  
+3. Klikněte pravým tlačítkem na balíček nebo model a pak klikněte na tlačítko **vlastnosti**.  
   
-4.  V **vlastnosti** okno, nastaveno **profily** vlastnost profily, které chcete.  
+4. V **vlastnosti** okno, nastaveno **profily** vlastnost profily, které chcete.  
   
 #### <a name="to-remove-the-link-between-a-profile-and-a-model-or-package"></a>Odebere propojení mezi profil a model nebo balíček  
   
-1.  V Průzkumníku modelů UML, klikněte pravým tlačítkem na model nebo balíček a pak klikněte na tlačítko **vlastnosti**.  
+1. V Průzkumníku modelů UML, klikněte pravým tlačítkem na model nebo balíček a pak klikněte na tlačítko **vlastnosti**.  
   
-2.  V okně Vlastnosti nastavte **profily** vlastnost prázdná.  
+2. V okně Vlastnosti nastavte **profily** vlastnost prázdná.  
   
     > [!NOTE]
     >  Profil, který lze odpojit pouze v případě, že žádný z elementů v modelu nebo balíček použít tento profil stereotypy.  
   
 #### <a name="to-apply-a-stereotype-to-a-model-element"></a>Chcete-li použít stereotyp na prvek modelu  
   
-1.  Klikněte pravým tlačítkem myši na prvek modelu v diagramu nebo v **Průzkumníku modelů UML**a potom klikněte na tlačítko **vlastnosti**.  
+1. Klikněte pravým tlačítkem myši na prvek modelu v diagramu nebo v **Průzkumníku modelů UML**a potom klikněte na tlačítko **vlastnosti**.  
   
-2.  Klikněte na tlačítko **Stereotypy** vlastnosti a vyberte Stereotypy, které chcete použít.  
+2. Klikněte na tlačítko **Stereotypy** vlastnosti a vyberte Stereotypy, které chcete použít.  
   
      Vybrané Stereotypy se zobrazí v rámci "odlišené dvojitou» v prvku modelu pro většinu typů element.  
   
     > [!NOTE]
     >  Pokud nevidíte **Stereotypy** vlastnost, nebo pokud chcete stereotyp nezobrazí, ověřte, zda prvek modelu je uvnitř balíčku nebo modelu, ke kterému je propojená příslušný profil.  
   
-3.  Některé Stereotypy umožní nastavit hodnoty dalších vlastností pro ovládací prvek modelu. Chcete-li zobrazit tyto vlastnosti, rozbalte **Stereotypy** vlastnost.  
+3. Některé Stereotypy umožní nastavit hodnoty dalších vlastností pro ovládací prvek modelu. Chcete-li zobrazit tyto vlastnosti, rozbalte **Stereotypy** vlastnost.  
   
-###  <a name="L2"></a> UML Standard Profile L2  
+### <a name="L2"></a> UML Standard Profile L2  
  Následující Stereotypy umožňuje specialize význam elementů modelu UML, pokud odkaz na profil, který byl odebrán z modelu.  
   
  Přesné význam těchto Stereotypy je určena vlastní místní konvence a všechny nástroje, které můžete použít ke zpracování modelu.  
@@ -108,10 +108,10 @@ Přidávání stereotypů k elementům modelu UML na další informace pro čte�
 |specifikace|Třída, rozhraní, součástí|Definuje chování komponenty nebo objektu bez definování, jak to funguje interně.|  
 |Subsystém|Součást|Součástí rozsáhlém systému. Subsystém na diagramu případu použití je komponenta s stereotyp subsystému.|  
 |trasování|Závislost|Element klient je součástí návrhu, která provádí od dodavatele. Dva elementy end třídy této závislosti jsou obvykle v různých modelech. Jedním z těchto modelů je realizace druhé.|  
-|– typ|Třída|Určuje chování objektu s informacemi o tom, jak je implementován. Objekt je členem typu, pokud odpovídá specifikaci.|  
+| – typ|Třída|Určuje chování objektu s informacemi o tom, jak je implementován. Objekt je členem typu, pokud odpovídá specifikaci.|  
 |nástroj|Třída|Kolekce statické funkce. Třída nemá žádné instance.|  
   
-###  <a name="L3"></a> L3 standardním profilu UML  
+### <a name="L3"></a> L3 standardním profilu UML  
  Následující Stereotypy umožňuje specialize význam elementů modelu UML, není-li profil, který se odpojil z modelu.  
   
  Přesné význam těchto Stereotypy je určena vlastní místní konvence a všechny nástroje, které můžete použít ke zpracování modelu.  
@@ -122,7 +122,7 @@ Přidávání stereotypů k elementům modelu UML na další informace pro čte�
 |metaModel|Model|Definuje Modelovací jazyk, jako je například hodnotu typu variant UML nebo jazyka specifického pro doménu.|  
 |systemModel|Model|Model, který je kolekce modelů, které se vztahují na stejném systému, například specifikace, realizace a trasování vztahy mezi nimi.|  
   
-##  <a name="NetProfile"></a> Profil jazyka C#  
+## <a name="NetProfile"></a> Profil jazyka C#  
  Stereotypy definované v tomto profilu umožňují určit, že prvek modelu je určená pro překlad do kódu programu. Každý stereotyp definuje další vlastnosti, které můžete nastavit na prvek modelu.  
   
  Chcete-li zpřístupnit tyto Stereotypy, propojte model nebo balíček profil jazyka C#. Prvky modelu v tomto modelu nebo balíček lze následně použít stereotypy.  

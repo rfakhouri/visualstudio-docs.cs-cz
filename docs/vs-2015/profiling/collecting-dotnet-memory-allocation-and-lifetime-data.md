@@ -12,12 +12,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 232707cd8fa51b8b69c67e1e66cb0790f4938031
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: c40c2f824518ed00dacc41094c1b567f5de248ae
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54794212"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112816"
 ---
 # <a name="collecting-net-memory-allocation-and-lifetime-data"></a>Shromažďování dat o alokaci paměti a době platnosti objektů .NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,9 +37,9 @@ ms.locfileid: "54794212"
   
  S použitím vzorkování nebo metoda profilace instrumentace lze shromažďovat data.  
   
--   Při použití metody vzorkování profileru sleduje všechna přidělení paměti .NET a objekty, které jsou vytvořeny procesem, který byl spuštěn, nebo připojené k.  
+- Při použití metody vzorkování profileru sleduje všechna přidělení paměti .NET a objekty, které jsou vytvořeny procesem, který byl spuštěn, nebo připojené k.  
   
--   Při použití metody instrumentace profileru sleduje pouze přidělení paměti .NET a objekty, které jsou generovány instrumentované moduly.  
+- Při použití metody instrumentace profileru sleduje pouze přidělení paměti .NET a objekty, které jsou generovány instrumentované moduly.  
   
 > [!IMPORTANT]
 >  Při shromažďování dat paměti .NET (přidělení, správu životnosti objektů nebo obě) pomocí metody vzorkování, jsou ignorovány všechny události zadané uživatelem vzorkování a události přidělení paměti odpovídající slouží ke shromažďování dat.  
@@ -50,11 +50,11 @@ ms.locfileid: "54794212"
   
 ### <a name="to-collect-net-memory-data"></a>Ke shromažďování dat paměti .NET  
   
-1.  V **prohlížeč výkonu**, klikněte pravým tlačítkem na relaci výkonu a pak klikněte na tlačítko **vlastnosti**.  
+1. V **prohlížeč výkonu**, klikněte pravým tlačítkem na relaci výkonu a pak klikněte na tlačítko **vlastnosti**.  
   
-2.  Na _relace výkonu_**stránky vlastností** dialogové okno, klikněte na tlačítko **Obecné** kartu a vyberte **.NET shromažďovat informace o přidělení paměti objektu** zaškrtávací políčko.  
+2. Na _relace výkonu_**stránky vlastností** dialogové okno, klikněte na tlačítko **Obecné** kartu a vyberte **.NET shromažďovat informace o přidělení paměti objektu** zaškrtávací políčko.  
   
-3.  Chcete-li shromažďovat data o životním cyklu objektu rozhraní .NET, vyberte **také shromažďovat informace o životnosti objektů .NET** zaškrtávací políčko.  
+3. Chcete-li shromažďovat data o životním cyklu objektu rozhraní .NET, vyberte **také shromažďovat informace o životnosti objektů .NET** zaškrtávací políčko.  
   
 ## <a name="common-tasks"></a>Obecné úlohy  
  Můžete zadat další možnosti v _relace výkonu_**stránky vlastností** dialogovému oknu relace výkonu. Chcete-li otevřít toto dialogové okno:  

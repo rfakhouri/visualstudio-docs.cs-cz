@@ -8,12 +8,12 @@ ms.assetid: b63d4b71-3b74-4872-b2d1-f0bd1a9a8544
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9f8cb4c3c2cba9f7734aa50c95f28bb6cef6bcba
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MT
+ms.openlocfilehash: 1e55e4fd2e67c07110fcd3351e492ec94ccc47fa
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928878"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087843"
 ---
 # <a name="how-to-create-a-test-setting-for-a-distributed-load-test"></a>Postupy: Vytvořit nastavení testu pro distribuovaný zátěžový test
 
@@ -25,11 +25,11 @@ Například můžete použít adaptér diagnostiky dat Profiler technologie ASP.
 
 Nastavení testu pro sadu Visual Studio jsou uloženy v souboru. Nastavení testu definuje následující informace o jednotlivých rolích:
 
--   Sadu rolí, které jsou požadovány pro vaši testovanou aplikaci
+- Sadu rolí, které jsou požadovány pro vaši testovanou aplikaci
 
--   Role se použije ke spuštění testů
+- Role se použije ke spuštění testů
 
--   Adaptéry diagnostických dat pro každou roli
+- Adaptéry diagnostických dat pro každou roli
 
 Při spuštění testů vyberte nastavení testu jako aktivní test nastavení v závislosti na tom, co vyžadujete pro tento konkrétní spuštění testu. Soubor nastavení testu je uložen jako součást vašeho řešení. Název souboru má příponu *.testsettings*.
 
@@ -43,33 +43,33 @@ Postupujte podle těchto kroků k vytvoření a odebrání nastavení testu v r�
 
 ### <a name="to-add-a-test-settings-for-a-distributed-load-test"></a>Chcete-li přidat nastavení testu pro distribuovaný zátěžový test
 
-1.  V **Průzkumníka řešení**, klikněte pravým tlačítkem na **položky řešení**, přejděte na **přidat**a klikněte na tlačítko **nová položka**.
+1. V **Průzkumníka řešení**, klikněte pravým tlačítkem na **položky řešení**, přejděte na **přidat**a klikněte na tlačítko **nová položka**.
 
      **Přidat novou položku** zobrazí se dialogové okno.
 
-2.  V **nainstalované šablony** podokně zvolte **nastavení testu**.
+2. V **nainstalované šablony** podokně zvolte **nastavení testu**.
 
-3.  (Volitelné) V **název** pole, změňte název souboru nastavení testu.
+3. (Volitelné) V **název** pole, změňte název souboru nastavení testu.
 
-4.  Zvolte **přidat**.
+4. Zvolte **přidat**.
 
      Nový soubor nastavení testu se zobrazí v **Průzkumníka řešení**v části **položky řešení** složky.
 
     > [!NOTE]
     > Seznam nastavení testu, které zobrazí Visual Studio Enterprise je odvozen ze seznamu souborů s nastavením testu v **položky řešení** složky. Například soubory nastavení v testu **položky řešení** složky se zobrazí při použití **vybrat aktivní nastavení testu** možnost **testování** nabídky. To znamená, že pokud přesunete soubor nastavení testu do jiného umístění v hierarchii řešení, může už sloužit jako nastavení testu z integrovaného vývojového prostředí sady Visual Studio.
 
-5.  **Nastavení testu** se zobrazí dialogové okno. **Obecné** je vybrána stránka.
+5. **Nastavení testu** se zobrazí dialogové okno. **Obecné** je vybrána stránka.
 
      Teď můžete upravit a uložit hodnoty nastavení testu.
 
     > [!NOTE]
     > Každé nastavení testu, které vytvoříte, je uvedeno jako volba pro **vybrat aktivní nastavení testu** a **upravit nastavení testu** možnosti **testování** nabídky.
 
-6.  V části **název**, zadejte název pro nastavení testu.
+6. V části **název**, zadejte název pro nastavení testu.
 
-7.  (Volitelné) V části **popis**, zadejte popis nastavení testu, aby ostatní členové týmu věděli, co je určený pro.
+7. (Volitelné) V části **popis**, zadejte popis nastavení testu, aby ostatní členové týmu věděli, co je určený pro.
 
-8.  (Volitelné) Chcete-li vybrat výchozí schéma pojmenování pro vaše testovací běhy, vyberte **výchozí schéma pojmenování**. Chcete-li definovat vlastní schéma pojmenování, vyberte **uživatelem definované schéma** a pak zadejte text, který má v **text předpony**. Chcete-li datum a časové razítko se připojit k názvu běhu testu, vyberte **připojit časové razítko**.
+8. (Volitelné) Chcete-li vybrat výchozí schéma pojmenování pro vaše testovací běhy, vyberte **výchozí schéma pojmenování**. Chcete-li definovat vlastní schéma pojmenování, vyberte **uživatelem definované schéma** a pak zadejte text, který má v **text předpony**. Chcete-li datum a časové razítko se připojit k názvu běhu testu, vyberte **připojit časové razítko**.
 
 9. Zvolte **role**.
 
@@ -154,27 +154,27 @@ Postupujte podle těchto kroků k vytvoření a odebrání nastavení testu v r�
 
      **Instalační a čistící skripty** zobrazí se stránka.
 
-    1.  Zadejte umístění souboru skriptu v **instalační skript** nebo zvolte tři tečky (**...** ) a vyhledejte skript nastavení.
+    1. Zadejte umístění souboru skriptu v **instalační skript** nebo zvolte tři tečky (**...** ) a vyhledejte skript nastavení.
 
-    2.  Zadejte umístění souboru skriptu v **skript pro vyčištění** nebo zvolte tři tečky (**...** ) a vyhledejte skript vyčištění.
+    2. Zadejte umístění souboru skriptu v **skript pro vyčištění** nebo zvolte tři tečky (**...** ) a vyhledejte skript vyčištění.
 
 24. Chcete-li spustit testy pomocí jiného hostitele, zvolte **hostitele**.
 
-    1.  V **typ hostitele**, ověřte, že **výchozí** zaškrtnuto.
+    1. V **typ hostitele**, ověřte, že **výchozí** zaškrtnuto.
 
         > [!NOTE]
         > **ASP.NET** v **hostovat typ** není podporována v zátěžových testech.
 
-    2.  Použití **spuštění testu v 32bitové nebo 64bitové** procesu rozevíracího seznamu vyberte, jestli chcete, aby webové testy výkonu a jednotky v zátěžovém testu ke spuštění jako 32bitový nebo 64bitové proces.
+    2. Použití **spuštění testu v 32bitové nebo 64bitové** procesu rozevíracího seznamu vyberte, jestli chcete, aby webové testy výkonu a jednotky v zátěžovém testu ke spuštění jako 32bitový nebo 64bitové proces.
 
         > [!NOTE]
         > Pro maximální flexibilitu byste kompilace webového výkonu a načtěte projekty testů s použitím **jakýkoli procesor** konfigurace. Poté můžete spouštět na 32bitových a 64bitových agentech. Kompilace webového výkonu a zátěžové testování projektů pomocí **64-bit** konfigurace nenabízí žádnou výhodu.
 
 25. (Volitelné) Chcete-li omezit dobu pro jednotlivé testovací běhy a jednotlivé testy, zvolte **časový limit testu.**
 
-    1.  Chcete-li přerušit testovací běh při překročení časového limitu, vyberte **přerušit spuštění testu, pokud překročí celkový čas** a potom zadejte hodnotu pro toto omezení.
+    1. Chcete-li přerušit testovací běh při překročení časového limitu, vyberte **přerušit spuštění testu, pokud překročí celkový čas** a potom zadejte hodnotu pro toto omezení.
 
-    2.  Chcete-li jednotlivé testy selhat při překročení časového limitu, vyberte **označit individuální test jako neúspěšný, pokud jeho doba běhu překročí**a zadejte hodnotu pro toto omezení.
+    2. Chcete-li jednotlivé testy selhat při překročení časového limitu, vyberte **označit individuální test jako neúspěšný, pokud jeho doba běhu překročí**a zadejte hodnotu pro toto omezení.
 
 26. Přeskočit **Jednotkový Test**. Zátěžové testy toto nastavení nepoužívají.
 
