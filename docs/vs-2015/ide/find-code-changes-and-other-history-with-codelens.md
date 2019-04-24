@@ -9,12 +9,12 @@ caps.latest.revision: 134
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b3c9c1ac41247a4576661ed7f985fe1e5385b3dd
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
-ms.translationtype: MT
+ms.openlocfilehash: aa18bed0ff4dfa24de114f0b15c109dfba777c56
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58195109"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055233"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>Nalezení změn kódu a další historie pomocí CodeLensu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Soustředit na svou práci při můžete zjistit, co se stalo s kódu – bez op
   
  Zvolte indikátory, které chcete zobrazit nebo vypněte a zapněte funkci CodeLens, přejděte na **nástroje**, **možnosti**, **textový Editor**, **všechny jazyky** , **CodeLens**.  
   
-##  <a name="FindReferences"></a> Najít odkazy na kód  
+## <a name="FindReferences"></a> Najít odkazy na kód  
  Budete potřebovat:  
   
 - Visual Studio Enterprise nebo Professional sady Visual Studio  
@@ -55,7 +55,7 @@ Soustředit na svou práci při můžete zjistit, co se stalo s kódu – bez op
   
   ![Funkce CodeLens &#45; odkazy na mapě kódu](../ide/media/codelensmappedreferences.png "CodeLensMappedReferences")  
   
-##  <a name="FindCodeHistory"></a> Vyhledejte historii vašeho kódu a propojené položky  
+## <a name="FindCodeHistory"></a> Vyhledejte historii vašeho kódu a propojené položky  
  Zkontrolujte historii vašeho kódu a zjistěte, co se stalo se váš kód. Nebo můžete zkontrolovat změny předtím, než se sloučí do kódu to vám umožní lépe pochopit změny v další větve, jak může ovlivnit váš kód.  
   
  Budete potřebovat:  
@@ -175,38 +175,38 @@ Soustředit na svou práci při můžete zjistit, co se stalo s kódu – bez op
   
  ![Obraťte se na možnosti pro položku](../ide/media/codelensitemcontactmenu.png "CodeLensItemContactMenu")  
   
-##  <a name="FindRunUnitTests"></a> Vyhledání testů jednotek pro kód  
+## <a name="FindRunUnitTests"></a> Vyhledání testů jednotek pro kód  
  Další informace o testování částí, které existují pro váš kód bez otevření Průzkumníka testů. Budete potřebovat:  
   
--   Visual Studio Enterprise nebo Professional sady Visual Studio  
+- Visual Studio Enterprise nebo Professional sady Visual Studio  
   
--   Kód Visual C# .NET nebo Visual Basic .NET  
+- Kód Visual C# .NET nebo Visual Basic .NET  
   
--   A [projekt testu jednotek](../test/unit-test-your-code.md) , který má testování částí pro kód aplikace  
+- A [projekt testu jednotek](../test/unit-test-your-code.md) , který má testování částí pro kód aplikace  
   
-1.  Přejděte ke kódu aplikace, který má testování částí.  
+1. Přejděte ke kódu aplikace, který má testování částí.  
   
-2.  Zkontrolujte testů pro tento kód (**Alt + 3**).  
+2. Zkontrolujte testů pro tento kód (**Alt + 3**).  
   
      ![Funkce CodeLens &#45; stav testu zvolte v editoru kódu](../ide/media/codelenschoosetestindicator.png "CodeLensChooseTestIndicator")  
   
-3.  Pokud se zobrazí výstražná ikona ![CodeLens &#45; testování částí ještě nebyl spuštěn upozornění](../ide/media/codelenstestwarningicon.png "CodeLensTestWarningIcon"), spusťte testy.  
+3. Pokud se zobrazí výstražná ikona ![CodeLens &#45; testování částí ještě nebyl spuštěn upozornění](../ide/media/codelenstestwarningicon.png "CodeLensTestWarningIcon"), spusťte testy.  
   
      ![Funkce CodeLens &#45; zobrazení testů jednotek není ještě spuštěna](../ide/media/codelenstestsnotyetrun.png "CodeLensTestsNotYetRun")  
   
-4.  Zkontrolujte definici testu, dvakrát klikněte na položku testů v okno indikátor CodeLens v editoru otevřete soubor kódu.  
+4. Zkontrolujte definici testu, dvakrát klikněte na položku testů v okno indikátor CodeLens v editoru otevřete soubor kódu.  
   
      ![Funkce CodeLens &#45; přejít k definici testu jednotek](../ide/media/codelensunittestdefinition.png "CodeLensUnitTestDefinition")  
   
-5.  Zkontrolujte výsledky testu. Zvolte indikátor stavu testu (![CodeLens &#45; testování částí se nezdařilo – ikona](../ide/media/codelenstestfailedicon.png "CodeLensTestFailedIcon") nebo ![CodeLens &#45; jednotky test proběhl úspěšně ikonu](../ide/media/codelenstestpassedicon.png "CodeLensTestPassedIcon")), nebo stiskněte klávesu **Alt + 1**.  
+5. Zkontrolujte výsledky testu. Zvolte indikátor stavu testu (![CodeLens &#45; testování částí se nezdařilo – ikona](../ide/media/codelenstestfailedicon.png "CodeLensTestFailedIcon") nebo ![CodeLens &#45; jednotky test proběhl úspěšně ikonu](../ide/media/codelenstestpassedicon.png "CodeLensTestPassedIcon")), nebo stiskněte klávesu **Alt + 1**.  
   
      ![Funkce CodeLens &#45; zobrazit výsledky testů jednotek](../ide/media/codelensunittestresult.png "CodeLensUnitTestResult")  
   
-6.  Pokud chcete zobrazit, kolik lidí změnilo tento test, kdo změnil nebo kolik změny byly provedeny s tímto testem [vyhledejte historii vašeho kódu a propojené položky](#FindCodeHistory).  
+6. Pokud chcete zobrazit, kolik lidí změnilo tento test, kdo změnil nebo kolik změny byly provedeny s tímto testem [vyhledejte historii vašeho kódu a propojené položky](#FindCodeHistory).  
   
-##  <a name="QA"></a> Q & A  
+## <a name="QA"></a> Q & A  
   
-###  <a name="ChangeOrTurnOff"></a> DOTAZ: Jak se vypnout nebo na zapnout funkce CodeLens? Nebo zvolte které indikátory zobrazíte?  
+### <a name="ChangeOrTurnOff"></a> DOTAZ: Jak se vypnout nebo na zapnout funkce CodeLens? Nebo zvolte které indikátory zobrazíte?  
  **ODPOVĚĎ:**  Můžete zapnout ukazatele nebo vypnutí, s výjimkou indikátor odkazů. Přejděte na **nástroje**, **možnosti**, **textový Editor**, **všechny jazyky**, **CodeLens**.  
   
  Když jsou indikátory zapnuté, můžete také otevřít možnosti funkce CodeLens z indikátorů.  
@@ -217,21 +217,21 @@ Soustředit na svou práci při můžete zjistit, co se stalo s kódu – bez op
   
  ![Změnit soubor&#45;indikátory na úrovni zapnutí a vypnutí](../ide/media/codelensfilelevelonandoff.png "CodeLensFileLevelOnAndOff")  
   
-###  <a name="NoIndicators"></a> DOTAZ: Pokud je funkce CodeLens?  
+### <a name="NoIndicators"></a> DOTAZ: Pokud je funkce CodeLens?  
  **ODPOVĚĎ:** CodeLens se zobrazí ve Vizuálu C# kód .NET a Visual Basic .NET na úrovni metody, třídy, indexerů a vlastnost. CodeLens se zobrazí na úrovni pro všechny ostatní typy souborů.  
   
--   Ujistěte se, že je zapnutá funkce CodeLens. Přejděte na **nástroje**, **možnosti**, **textový Editor**, **všechny jazyky**, **CodeLens**.  
+- Ujistěte se, že je zapnutá funkce CodeLens. Přejděte na **nástroje**, **možnosti**, **textový Editor**, **všechny jazyky**, **CodeLens**.  
   
--   Pokud je váš kód uložen v sadě TFS, ujistěte se, jestli indexování kódu je zapnutá pomocí [codeindex – příkaz](../ide/codeindex-command.md) s [příkaz TFS Config](http://msdn.microsoft.com/94424190-3b6b-4f33-a6b6-5807f4225b62).  
+- Pokud je váš kód uložen v sadě TFS, ujistěte se, jestli indexování kódu je zapnutá pomocí [codeindex – příkaz](../ide/codeindex-command.md) s [příkaz TFS Config](http://msdn.microsoft.com/94424190-3b6b-4f33-a6b6-5807f4225b62).  
   
--   Indikátory související s aplikací TFS se zobrazí pouze v případě, že jsou pracovní položky propojeny s kódem a máte oprávnění otevírat propojené pracovní položky. [Potvrďte, že máte oprávnění člena týmu.](/azure/devops/organizations/security/view-permissions)  
+- Indikátory související s aplikací TFS se zobrazí pouze v případě, že jsou pracovní položky propojeny s kódem a máte oprávnění otevírat propojené pracovní položky. [Potvrďte, že máte oprávnění člena týmu.](/azure/devops/organizations/security/view-permissions)  
   
--   Pokud kód aplikace nemá testování částí, nejsou zobrazeny indikátory testu jednotek. Indikátory stavu testu se automaticky zobrazí v projektech testů. Pokud víte, že váš kód aplikace má testování částí, ale nejsou zobrazeny indikátory testu, zkuste sestavit řešení (**Ctrl + Shift + B**).  
+- Pokud kód aplikace nemá testování částí, nejsou zobrazeny indikátory testu jednotek. Indikátory stavu testu se automaticky zobrazí v projektech testů. Pokud víte, že váš kód aplikace má testování částí, ale nejsou zobrazeny indikátory testu, zkuste sestavit řešení (**Ctrl + Shift + B**).  
   
 ### <a name="q-why-dont-i-see-the-work-item-details-for-a-commit"></a>DOTAZ: Proč nevidím podrobnosti pracovní položky pro potvrzení změn?  
  **ODPOVĚĎ:** Příčinou může být funkce CodeLens nelze najít pracovní položky v TFS. Zkontrolujte, že jste připojeni k týmovému projektu, který má ty pracovní položky a zda máte oprávnění k zobrazení pracovní položky. To může dojít, pokud se popis potvrzení obsahuje nesprávné informace o ID pracovních položek v sadě TFS.  
   
-###  <a name="NoLync"></a> DOTAZ: Proč nevidím indikátory služby Lync nebo Skype?  
+### <a name="NoLync"></a> DOTAZ: Proč nevidím indikátory služby Lync nebo Skype?  
  **ODPOVĚĎ:** Se nezobrazí, pokud nejsou přihlášeni ke službě Lync nebo Skype pro firmy, nemáte jednu z těchto nainstalován nebo nemáte podporovanou konfiguraci. Ale stále můžete odesílat e-mailu:  
   
  ![Funkce CodeLens &#45; vlastník sady změn kontaktujte e-mailem](../ide/media/codelenscodesendmailchangesetnolync1.png "CodeLensCodeSendMailChangesetNoLync1")  
@@ -251,13 +251,13 @@ Soustředit na svou práci při můžete zjistit, co se stalo s kódu – bez op
   
  Použití klávesnice:  
   
-1.  Stisknutím klávesy **Alt + T + O** otevřít **možnosti** pole.  
+1. Stisknutím klávesy **Alt + T + O** otevřít **možnosti** pole.  
   
-2.  Stisknutím klávesy **šipka nahoru** nebo **šipka dolů** přejdete **prostředí** uzlu, stiskněte klávesu **šipka vlevo** rozbalte uzel.  
+2. Stisknutím klávesy **šipka nahoru** nebo **šipka dolů** přejdete **prostředí** uzlu, stiskněte klávesu **šipka vlevo** rozbalte uzel.  
   
-3.  Stisknutím klávesy **šipka dolů** přejdete na **písma a barvy**.  
+3. Stisknutím klávesy **šipka dolů** přejdete na **písma a barvy**.  
   
-4.  Stisknutím klávesy **kartu** přejdete **zobrazit nastavení pro** seznamu a potom stiskněte klávesu **šipka dolů** vyberte **CodeLens**.  
+4. Stisknutím klávesy **kartu** přejdete **zobrazit nastavení pro** seznamu a potom stiskněte klávesu **šipka dolů** vyberte **CodeLens**.  
   
 ### <a name="q-can-i-move-the-codelens-heads-up-display"></a>DOTAZ: Lze přesunout pohotové zobrazení funkce CodeLens?  
  **ODPOVĚĎ:** Ano, zvolte ![CodeLens &#45; ukotvit jako okno](../ide/media/codelensdockwindow.png "CodeLensDockWindow") k dokování CodeLens jako okna.  
@@ -269,17 +269,17 @@ Soustředit na svou práci při můžete zjistit, co se stalo s kódu – bez op
 ### <a name="q-how-do-i-refresh-the-indicators"></a>DOTAZ: Jak mohu aktualizovat indikátory?  
  **ODPOVĚĎ:** To závisí na ukazatele:  
   
--   **Odkazy na**: Tento indikátor se aktualizuje automaticky při změně kódu. Pokud máte tento ukazatel jako samostatné okno ukotveno, aktualizujte indikátoru ručně tady:  
+- **Odkazy na**: Tento indikátor se aktualizuje automaticky při změně kódu. Pokud máte tento ukazatel jako samostatné okno ukotveno, aktualizujte indikátoru ručně tady:  
   
      ![Funkce CodeLens &#45; ukotvit jako okno](../ide/media/codelensviewreferencesdocked.png "CodeLensViewReferencesDocked")  
   
--   **Tým**: Aktualizujte tyto ukazatele ručně k tady:  
+- **Tým**: Aktualizujte tyto ukazatele ručně k tady:  
   
      ![Funkce CodeLens &#45; aktualizovat indikátory](../ide/media/codelensrefreshindicatorsfromcode.png "CodeLensRefreshIndicatorsFromCode")  
   
--   **Test**: [Vyhledání testů jednotek pro kód](#FindRunUnitTests) aktualizovat tento ukazatel.  
+- **Test**: [Vyhledání testů jednotek pro kód](#FindRunUnitTests) aktualizovat tento ukazatel.  
   
-###  <a name="LocalVersion"></a> DOTAZ: Co je "Místní verze"?  
+### <a name="LocalVersion"></a> DOTAZ: Co je "Místní verze"?  
  **ODPOVĚĎ:** **Místní verze** šipka ukazuje na poslední sady změn ve vaší místní verzi tohoto souboru. Pokud na serveru existují novější sady změn, zobrazují se nad nebo pod **místní verze** šipku, v závislosti na pořadí použitém k řazení sady změn.  
   
 ### <a name="q-can-i-manage-how-codelens-processes-code-to-show-history-and-linked-items"></a>DOTAZ: Můžete spravovat způsob, jak funkce CodeLens zpracuje kód k zobrazení historie a propojené položky?  
