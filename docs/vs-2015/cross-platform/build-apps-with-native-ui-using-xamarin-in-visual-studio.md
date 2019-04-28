@@ -8,12 +8,12 @@ ms.assetid: 30f137e6-595d-4ce7-b8f5-415b07c1caa2
 caps.latest.revision: 33
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: b1c7bb825cdc64619ac2234c431bb306e58ec293
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8a719a1420d4d2e64438865a41cc24da114fbc2d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105289"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443067"
 ---
 # <a name="build-apps-with-native-ui-using-xamarin-in-visual-studio"></a>Vytváření aplikací s nativním uživatelským rozhraním pomocí Xamarinu v sadě Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,12 +35,12 @@ Jakmile jste udělali kroky [nastavení a instalaci](../cross-platform/setup-and
 - [Další postup](#next)
 
 > [!TIP]
->  Najdete kompletní zdrojový kód pro tento projekt v [mobile-samples úložišti na Githubu](https://github.com/xamarin/mobile-samples/tree/master/Weather).
+> Najdete kompletní zdrojový kód pro tento projekt v [mobile-samples úložišti na Githubu](https://github.com/xamarin/mobile-samples/tree/master/Weather).
 >
->   Pokud máte potíže nebo dochází k chybám, zveřejněte ji prosím dotazy na [forums.xamarin.com](http://forums.xamarin.com). Mnoho chyb se dají vyřešit aktualizaci na nejnovější sady SDK vyžadované Xamarin, které jsou popsány v [zpráva k vydání verze Xamarinu](https://developer.xamarin.com/releases/) pro každou platformu.
+> Pokud máte potíže nebo dochází k chybám, zveřejněte ji prosím dotazy na [forums.xamarin.com](http://forums.xamarin.com). Mnoho chyb se dají vyřešit aktualizaci na nejnovější sady SDK vyžadované Xamarin, které jsou popsány v [zpráva k vydání verze Xamarinu](https://developer.xamarin.com/releases/) pro každou platformu.
 >
 > [!NOTE]
->  Dokumentaci pro vývojáře Xamarinu pro několik kurzy rychlý start a podrobné informace o části nabízí také, jak je uvedeno níže. Na těchto stránkách Ujistěte se, že je v pravém horním rohu stránky zobrazíte návody pro Visual Studio specifické pro vybraná "Visual Studio".
+> Dokumentaci pro vývojáře Xamarinu pro několik kurzy rychlý start a podrobné informace o části nabízí také, jak je uvedeno níže. Na těchto stránkách Ujistěte se, že je v pravém horním rohu stránky zobrazíte návody pro Visual Studio specifické pro vybraná "Visual Studio".
 >
 > - Aplikace Xamarin s nativním uživatelským rozhraním:
 >
@@ -230,7 +230,7 @@ Jakmile jste udělali kroky [nastavení a instalaci](../cross-platform/setup-and
 1. V **Průzkumníka řešení**, rozbalte **WeatherApp.Droid**>**prostředky**>**rozložení** složky a Otevřete **Main.axml**. Tím se otevře soubor v vizuálního návrháře. (Pokud se zobrazí chybu s jazykem Java, najdete v tomto [blogový příspěvek](http://forums.xamarin.com/discussion/32365/connection-to-the-layout-renderer-failed-in-xs-5-7-and-xamarinvs-3-9).)
 
     > [!TIP]
-    >  V projektu je mnoho dalších souborů. Zkoumání jejich je nad rámec tohoto tématu, ale pokud budete chtít věnovat struktura projekt pro Android o trochu výkonnější, naleznete v tématu [podrobné informace o části 2](http://developer.xamarin.com/guides/android/getting_started/hello,android/hello,android_deepdive/) Hello Android tématu na xamarin.com.
+    > V projektu je mnoho dalších souborů. Zkoumání jejich je nad rámec tohoto tématu, ale pokud budete chtít věnovat struktura projekt pro Android o trochu výkonnější, naleznete v tématu [podrobné informace o části 2](http://developer.xamarin.com/guides/android/getting_started/hello,android/hello,android_deepdive/) Hello Android tématu na xamarin.com.
 
 2. Vyberte a odstraňte výchozí tlačítko, které se zobrazí v návrháři.
 
@@ -239,7 +239,7 @@ Jakmile jste udělali kroky [nastavení a instalaci](../cross-platform/setup-and
 4. Z **nástrojů**, přetáhněte **RelativeLayout** ovládacího prvku do návrháře. Tento ovládací prvek budete používat jako nadřazený kontejner pro ostatní ovládací prvky.
 
     > [!TIP]
-    >  Pokud v každém okamžiku zřejmě není ke správnému zobrazení rozložení, uložte soubor a přepínání mezi **návrhu** a **zdroj** karty aktualizovat.
+    > Pokud v každém okamžiku zřejmě není ke správnému zobrazení rozložení, uložte soubor a přepínání mezi **návrhu** a **zdroj** karty aktualizovat.
 
 5. V **vlastnosti** okno, nastaveno **pozadí** vlastnosti (ve skupině styl) `#545454`.
 
@@ -256,7 +256,7 @@ Jakmile jste udělali kroky [nastavení a instalaci](../cross-platform/setup-and
     |**stylu textu**|`bold`|
 
     > [!TIP]
-    >  Všimněte si, že mnoho vlastností neobsahují rozevírací seznam hodnot, které můžete vybrat.  Může být obtížné odhadnout jaké řetězcovou hodnotu pro jakékoli dané vlastnosti. Máte nějaké návrhy, zkuste najít, název vlastnosti v [R.attr](http://developer.android.com/reference/android/R.attr.html) třídy stránky.
+    > Všimněte si, že mnoho vlastností neobsahují rozevírací seznam hodnot, které můžete vybrat.  Může být obtížné odhadnout jaké řetězcovou hodnotu pro jakékoli dané vlastnosti. Máte nějaké návrhy, zkuste najít, název vlastnosti v [R.attr](http://developer.android.com/reference/android/R.attr.html) třídy stránky.
     >
     >  Navíc rychlé webové vyhledávání často vede na stránku [ http://stackoverflow.com/ ](http://stackoverflow.com/) kde ostatní používá stejnou vlastnost.
 
@@ -523,7 +523,7 @@ Jakmile jste udělali kroky [nastavení a instalaci](../cross-platform/setup-and
      ![Počasí aplikace pro Android a Windows Phone](../cross-platform/media/xamarin-getstarted-results.png "Xamarin_GetStarted_Results")
 
 > [!TIP]
->  Úplný zdrojový kód pro tento projekt je v [mobile-samples úložišti na Githubu](https://github.com/xamarin/mobile-samples/tree/master/Weather).
+> Úplný zdrojový kód pro tento projekt je v [mobile-samples úložišti na Githubu](https://github.com/xamarin/mobile-samples/tree/master/Weather).
 
 ## <a name="Windows"></a> Návrh uživatelského rozhraní pro Windows Phone
  Nyní jsme budete návrh uživatelského rozhraní pro Windows Phone, připojte ho ke sdílenému kódu a pak spusťte aplikaci.
@@ -629,7 +629,7 @@ Jakmile jste udělali kroky [nastavení a instalaci](../cross-platform/setup-and
      ![Verze běžící aplikace pro Windows](../cross-platform/media/xamarin-getstarted-results-windows.png "Xamarin_GetStarted_Results_Windows")
 
 > [!TIP]
->  Úplný zdrojový kód pro tento projekt je v [mobile-samples úložišti na Githubu](https://github.com/xamarin/mobile-samples/tree/master/Weather).
+> Úplný zdrojový kód pro tento projekt je v [mobile-samples úložišti na Githubu](https://github.com/xamarin/mobile-samples/tree/master/Weather).
 
 ## <a name="next"></a> Další kroky
  **Do řešení přidat uživatelského rozhraní pro iOS**

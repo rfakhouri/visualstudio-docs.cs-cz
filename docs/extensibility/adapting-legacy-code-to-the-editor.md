@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 4d0e9bcd9943dafc9dcbe9beb62433a62b55dc8e
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227602"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62843996"
 ---
 # <a name="adapt-legacy-code-to-the-editor"></a>Přizpůsobení staršího kódu do editoru
 Editor sady Visual Studio obsahuje řadu funkcí, které se dá dostat z existujícího kódu komponenty. Následující pokyny ukazují, jak přizpůsobit komponentu rozhraní MEF, například VSPackage, využívat funkce editoru. Podle pokynů také ukazují, jak využít adaptéry služby editoru spravovaným a nespravovaným kódem.
@@ -38,7 +38,7 @@ Pokud chcete používat tuto službu v komponentě rozhraní MEF, postupujte pod
 ## <a name="switch-between-the-new-editor-api-and-the-legacy-api"></a>Přepínání mezi nové rozhraní API editoru a starší verze rozhraní API
 Pomocí následující metody můžete přepínat mezi objektem editoru a starší verze rozhraní.
 
-|Metoda|Převod|
+|Metoda|Konverze|
 |------------|----------------|
 |<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService.GetBufferAdapter%2A>|Převede <xref:Microsoft.VisualStudio.Text.ITextBuffer> do <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>.|
 |<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService.GetDataBuffer%2A>|Převede <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> do <xref:Microsoft.VisualStudio.Text.ITextBuffer>.|
@@ -49,7 +49,7 @@ Pomocí následující metody můžete přepínat mezi objektem editoru a starš
 ## <a name="create-adapters"></a>Vytvořit adaptéry
 Použijte následující metody k vytvoření adaptérů pro starší verze rozhraní.
 
-|Metoda|Převod|
+|Metoda|Konverze|
 |------------|----------------|
 |<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService.CreateVsCodeWindowAdapter%2A>|Vytvoří <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow>.|
 |<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService.CreateVsTextBufferAdapter%2A>|Vytvoří <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> pro určitou vlastnost <xref:Microsoft.VisualStudio.Utilities.IContentType>.|

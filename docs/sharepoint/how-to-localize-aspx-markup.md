@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 25768f44ee51ee94d456d0652ab7575def3a259d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4cd3c17a9e771ad9a1aee7526f24e3a8282f208d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60057565"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443104"
 ---
 # <a name="how-to-localize-aspx-markup"></a>Postupy: Lokalizace značek ASPX
   [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] stránky (.aspx) obvykle používají pevně zakódované řetězcové hodnoty. Chcete-li lokalizovat tyto řetězce, je nahraďte výrazy, které odkazují na lokalizované prostředky.
@@ -36,7 +36,7 @@ ms.locfileid: "60057565"
     2. Chcete-li přidat soubor prostředků v **Průzkumníka řešení**, otevřete místní nabídku pro položku Sharepointového projektu a klikněte na tlačítko **přidat** > **nová položka**. V části **jazyka Visual Basic** nebo **Visual C#**  uzlu, vyberte **soubor prostředků** šablony.
 
     > [!NOTE]
-    >  Ujistěte se, že přidání souborů prostředků do položky projektu služby SharePoint, který povolí vlastnost typ nasazení. Tato vlastnost je vyžadováno později v tomto postupu. Pokud vaše řešení nemá žádné položky projektu služby SharePoint, můžete přidat prázdný projekt SharePoint a odeberte výchozí *Elements.xml* souboru.
+    > Ujistěte se, že přidání souborů prostředků do položky projektu služby SharePoint, který povolí vlastnost typ nasazení. Tato vlastnost je vyžadováno později v tomto postupu. Pokud vaše řešení nemá žádné položky projektu služby SharePoint, můžete přidat prázdný projekt SharePoint a odeberte výchozí *Elements.xml* souboru.
 
 2. Pojmenujte soubor prostředků výchozího jazyka jméno dle vašeho výběru s *RESX* rozšíření, například MyAppResources.resx. Použijte stejný základní název pro každý lokalizovaný soubor prostředků, ale přidat jazykovou verzi [!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)]. Například pojmenujte německý lokalizovaný prostředek *MyAppResources.de-DE.resx*.
 

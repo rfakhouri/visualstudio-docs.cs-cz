@@ -13,12 +13,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 766ecde2da88c2a666470c790f6399cce198b2a7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9b1ad310385d5c8c8cecaee408d049a172d53e1e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60053153"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436848"
 ---
 # <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>Postupy: Vytváření nebo aktualizace standardních zásad vracení zpět se změnami analýzy kódu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "60053153"
 Může vyžadovat spustit analýzu kódu na všechny projekty kódu v týmovém projektu s použitím zásad vracení se změnami kód analýzy. Vyžadování analýzy kódu můžete zlepšit kvalitu kódu, který je vrácen do báze kódu.  
   
 > [!NOTE]
->  Tato funkce je dostupná jenom v případě, že používáte Team Foundation Server.  
+> Tato funkce je dostupná jenom v případě, že používáte Team Foundation Server.  
   
  Zásady vrácení se změnami analýzy kódu se nastavují v nastavení týmového projektu a použít na všech projektů kódu v týmovém projektu. Spuštění analýzy kódu jsou nakonfigurované pro projekty kódu v souboru projektu (.xxproj) pro projekt kódu. Spuštění analýzy kódu jsou prováděny v místním počítači. Pokud povolíte zásady analýzy kódu vrácení se změnami, musí být zkompilovány soubory v projektu kódu, které se mají být vráceny se změnami po jejich poslední úpravy a analýza kódu spuštění, který obsahuje minimálně pravidla v nastavení týmového projektu musí být provedeny v počítači kde jazyka c kající změny byly provedeny.  
   

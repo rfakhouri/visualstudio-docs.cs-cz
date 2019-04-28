@@ -13,12 +13,12 @@ caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 81bb2392a4ea6d9860cdcf2beeadcfe4e6ec7940
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fd8732a914581b39566bac88fe73698850893f77
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091606"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434273"
 ---
 # <a name="performance-report-overview"></a>Přehled sestav výkonu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,9 +26,9 @@ ms.locfileid: "60091606"
 Můžete zobrazit data profilování relace výkonu v **sestavu výkonu** okno integrovaného vývojového prostředí (IDE) Visual Studio Team System Development Edition. Data profilace se uloží do souborů .vsp a .vsps. Zobrazení sestav systému windows umožňují zobrazit a analyzovat problémy s výkonem aplikací.  
   
 > [!CAUTION]
->  Soubor dat profilování obsahuje citlivé informace, jako je název počítače, na verzi operačního systému, cesty k souborům, informace o paměti a další informace o nastavení počítače. Je vhodné ponechat striktní kontrolu nad distribuci dat, v jeho nativní .vsp formátu a při exportu do souboru XML nebo CSV.  
+> Soubor dat profilování obsahuje citlivé informace, jako je název počítače, na verzi operačního systému, cesty k souborům, informace o paměti a další informace o nastavení počítače. Je vhodné ponechat striktní kontrolu nad distribuci dat, v jeho nativní .vsp formátu a při exportu do souboru XML nebo CSV.  
 >   
->  Pokud jako součást relace výkonu se shromažďují data události trasování, další informace se může zobrazit události sledování souboru protokolu (ETL). Tyto informace zahrnují své domény a uživatelské jméno; Proto je vhodné ponechat striktní kontrolu nad rozdělení souboru protokolu.  
+> Pokud jako součást relace výkonu se shromažďují data události trasování, další informace se může zobrazit události sledování souboru protokolu (ETL). Tyto informace zahrnují své domény a uživatelské jméno; Proto je vhodné ponechat striktní kontrolu nad rozdělení souboru protokolu.  
   
 ## <a name="performance-report-window"></a>Okno sestavy výkonu  
  Sestava výkonu okno je okno nástroje, který se používá k zobrazení, spravovat a filtrovat data o výkonu a obsahuje ovládací prvek přizpůsobitelné dotazu.  

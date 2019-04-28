@@ -18,12 +18,12 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 48b5d8406f5b5c6d43afadf9e544914e6133090c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 430154b1f9b9f652052dc828c921d3ded16a3787
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60046935"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442704"
 ---
 # <a name="how-to-publish-a-clickonce-application-using-the-publish-wizard"></a>Postupy: Publikování aplikace ClickOnce pomocí průvodce publikováním
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,10 +33,10 @@ Pro aplikaci ClickOnce zpřístupnit uživatelům, je nutné ji publikovat na sd
  Před spuštěním Průvodce publikováním byste měli odpovídajícím způsobem nastavit vlastnosti publikování. Například pokud chcete určit klíč k podepsání aplikace ClickOnce, můžete tak učinit na **podepisování** stránku **Návrháře projektu**. Další informace najdete v tématu [zabezpečení aplikací ClickOnce](../deployment/securing-clickonce-applications.md).  
   
 > [!NOTE]
->  Při instalaci více než jednu verzi aplikace s použitím technologie ClickOnce, instalace přesune starší verze této aplikace do složky s názvem Archiv v umístění pro publikování, který zadáte. Archivace dřívějších verzí tímto způsobem udržuje instalační adresář čistý od složek starší verze.  
+> Při instalaci více než jednu verzi aplikace s použitím technologie ClickOnce, instalace přesune starší verze této aplikace do složky s názvem Archiv v umístění pro publikování, který zadáte. Archivace dřívějších verzí tímto způsobem udržuje instalační adresář čistý od složek starší verze.  
   
 > [!NOTE]
->  Dialogová okna a příkazy nabídek, které se zobrazí mohou lišit od těch popsaných v nápovědě v závislosti na aktivních nastaveních nebo edici. Chcete-li změnit nastavení, klikněte na tlačítko **nastavení importu a exportu** na **nástroje** nabídky. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Dialogová okna a příkazy nabídek, které se zobrazí mohou lišit od těch popsaných v nápovědě v závislosti na aktivních nastaveních nebo edici. Chcete-li změnit nastavení, klikněte na tlačítko **nastavení importu a exportu** na **nástroje** nabídky. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ### <a name="to-publish-to-a-file-share-or-path"></a>K publikování do sdílené složky nebo cesta  
   
@@ -83,7 +83,7 @@ Pro aplikaci ClickOnce zpřístupnit uživatelům, je nutné ji publikovat na sd
 4. Na **jak budou uživatelé aplikaci instalovat?** klikněte na z **CD-ROM nebo DVD-ROM**a potom klikněte na tlačítko **Další**.  
   
    > [!NOTE]
-   >  Pokud chcete, aby se instalace spustila automaticky při vložení disku CD-ROM do jednotky, otevřete **publikovat** stránku **Návrháře projektu** a klikněte na tlačítko **možnosti** tlačítko a pak na **možnosti publikování** průvodce, vyberte **pro instalace z CD automaticky spustit instalační program po vložení disku CD**.  
+   > Pokud chcete, aby se instalace spustila automaticky při vložení disku CD-ROM do jednotky, otevřete **publikovat** stránku **Návrháře projektu** a klikněte na tlačítko **možnosti** tlačítko a pak na **možnosti publikování** průvodce, vyberte **pro instalace z CD automaticky spustit instalační program po vložení disku CD**.  
   
 5. Pokud distribuujete aplikaci na disku CD-ROM, můžete chtít poskytnout aktualizace z webu. V **kde bude aplikace vyhledávat aktualizace?** stránce, zvolte možnost aktualizace:  
   
@@ -98,7 +98,7 @@ Pro aplikaci ClickOnce zpřístupnit uživatelům, je nutné ji publikovat na sd
     Stav publikování se zobrazí v oznamovací oblasti.  
   
    > [!NOTE]
-   >  Po dokončení publikování budete muset použít CD-RW nebo DVD-RW ke zkopírování souborů z umístění zadaného v kroku 3 na médium CD-ROM nebo DVD-ROM.  
+   > Po dokončení publikování budete muset použít CD-RW nebo DVD-RW ke zkopírování souborů z umístění zadaného v kroku 3 na médium CD-ROM nebo DVD-ROM.  
   
 ## <a name="see-also"></a>Viz také  
  [ClickOnce – zabezpečení a nasazení](../deployment/clickonce-security-and-deployment.md)   

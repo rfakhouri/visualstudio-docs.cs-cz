@@ -12,12 +12,12 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 449e273659df1e3b6846ff8e7e3d8d6943ba69f4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a4d158e3c624a63863e5a8305dd0b9b4b5ef10ea
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079821"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444215"
 ---
 # <a name="add-commands-and-gestures-to-layer-diagrams"></a>Přidávání příkazů a gest do diagramů vrstev
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ Můžete definovat příkazy kontextové nabídky a obslužné rutiny gesta v di
  Pokud chcete, můžete definovat několik obslužných rutin příkazů a gest ve stejném projektu sady Visual Studio. Můžete také kombinovat několik takových projektů do jednoho souboru VSIX. Můžete například definovat jeden VSIX obsahující příkazy vrstvy, jazyka specifického pro doménu a příkazy pro diagramy UML.  
   
 > [!NOTE]
->  Můžete také přizpůsobit ověřování architektury, ve které uživatelé zdroji kód srovnáván s diagramy vrstvy. Architektura ověření by měl definovat v samostatném projektu sady Visual Studio. Můžete ho přidat do stejného VSIX jako další rozšíření. Další informace najdete v tématu [přidání ověřování vlastní architektury do diagramů vrstev](../modeling/add-custom-architecture-validation-to-layer-diagrams.md).  
+> Můžete také přizpůsobit ověřování architektury, ve které uživatelé zdroji kód srovnáván s diagramy vrstvy. Architektura ověření by měl definovat v samostatném projektu sady Visual Studio. Můžete ho přidat do stejného VSIX jako další rozšíření. Další informace najdete v tématu [přidání ověřování vlastní architektury do diagramů vrstev](../modeling/add-custom-architecture-validation-to-layer-diagrams.md).  
   
 ## <a name="requirements"></a>Požadavky  
  Zobrazit [požadavky](../modeling/extend-layer-diagrams.md#prereqs).  
@@ -65,7 +65,7 @@ Můžete definovat příkazy kontextové nabídky a obslužné rutiny gesta v di
 1. Vytvořte projekt knihovny tříd v nové nebo existující řešení sady Visual Studio. V **nový projekt** dialogové okno, klikněte na tlačítko **Visual C#** a potom klikněte na tlačítko **knihovny tříd**. Tento projekt bude obsahovat příkaz nebo třídy obslužné rutiny gesta.  
   
     > [!NOTE]
-    >  Můžete definovat více než jednu třídu obslužné rutiny příkazu nebo gesta v jedné knihovně tříd, ale měli byste definovat třídy ověřování vrstvy v samostatné knihovně tříd.  
+    > Můžete definovat více než jednu třídu obslužné rutiny příkazu nebo gesta v jedné knihovně tříd, ale měli byste definovat třídy ověřování vrstvy v samostatné knihovně tříd.  
   
 2. Určete nebo vytvořte VSIX projekt ve vašem řešení. Projekt VSIX obsahuje soubor s názvem **source.extension.vsixmanifest**. Přidání projektu VSIX:  
   

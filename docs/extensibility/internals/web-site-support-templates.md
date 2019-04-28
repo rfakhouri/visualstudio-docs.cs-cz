@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: fc5370db9c090fe5a7dcd9852d3df94e05f08e1f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116495"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62856853"
 ---
 # <a name="web-site-support-templates"></a>Šablony podpory webu
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Šablony projektů a položek webu poskytují opakovaně použitelných a přizpůsobitelné webové stránky projektů a položek zástupné procedury, které zrychlení procesu vývoje tak, že odeberete potřebu vytvářet nové webových projektů a položek od začátku. Další informace o [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] šablony, najdete v článku [vytváření projektů a šablon položek](../../ide/creating-project-and-item-templates.md).

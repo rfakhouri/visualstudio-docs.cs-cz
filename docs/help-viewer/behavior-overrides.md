@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4b881ee7a782d7c5f90a447c1719bb88afd1d332
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56314595"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62557574"
 ---
 # <a name="help-content-manager-overrides"></a>Přepíše Help Content Manager
 
@@ -31,7 +31,7 @@ Můžete změnit výchozí chování aplikace Help Viewer a funkcí souvisejíc�
 
 ### <a name="registry-key-values"></a>Hodnoty klíče registru
 
-|Hodnota klíče registru|Typ|Data|Popis|
+|Hodnota klíče registru|Type|Data|Popis|
 |------------------|----|----|-----------|
 |NewContentAndUpdateService|odkazy řetězců|\<Adresa URL protokolu HTTP pro koncový bod služby\>|Definování koncového bodu služby jedinečný|
 |UseOnlineHelp|dword|`0` Chcete-li určit místní nápovědy `1` k určení online nápovědy|Definovat výchozí nápovědy online nebo offline|
@@ -56,7 +56,7 @@ Můžete změnit výchozí chování aplikace Help Viewer a funkcí souvisejíc�
 
 Následující dva chování můžete řídit pomocí nastavení hodnoty klíčů registru v editoru registru.
 
-|Úloha|Klíč registru|Hodnota|Data|
+|Úloha|Klíč registru|Value|Data|
 |----------|-----|------|----|
 |Přepsat Priorita úlohy BITS|HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node (na 64-bit machine)\Microsoft\Help\v2.3|BITSPriority|**popředí**, **vysokou**, **normální**, nebo **nízké**|
 |Přejděte na místní úložiště obsahu v síťové sdílené složce|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Help\ v2.3\Catalogs\VisualStudio15|LocationPath|"*ContentStoreNetworkShare*"|

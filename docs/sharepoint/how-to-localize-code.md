@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fbcf07b462e280f522741b8329d34c2907f5b454
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8b848bdb4d0b71f5762601204195f0e81a1c2733
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60066283"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443083"
 ---
 # <a name="how-to-localize-code"></a>Postupy: Lokalizace kódu
   Nelokalizovaný kód používá pevně zakódované řetězcové hodnoty. Chcete-li lokalizovat řetězce kódu, nahraďte je voláními do <xref:System.Web.HttpContext.GetGlobalResourceObject%2A>, což je metoda, která odkazuje na lokalizované prostředky.
@@ -32,7 +32,7 @@ ms.locfileid: "60066283"
      Zvolte **soubor prostředků** šablony.
 
     > [!NOTE]
-    >  Nezapomeňte přidat soubor prostředků do položky projektu SharePoint tak, aby vlastnost typ nasazení je k dispozici. Tato vlastnost je vyžadováno později v tomto postupu.
+    > Nezapomeňte přidat soubor prostředků do položky projektu SharePoint tak, aby vlastnost typ nasazení je k dispozici. Tato vlastnost je vyžadováno později v tomto postupu.
 
 2. Pojmenujte soubor prostředků výchozího jazyka jméno dle vašeho výběru s *RESX* rozšíření, jako například *MyAppResources.resx*.
 

@@ -7,12 +7,12 @@ ms.date: 12/11/2017
 ms.topic: conceptual
 description: Postup přiřazení předplatných sady Visual Studio pro vaši koncoví uživatelé, pro partnery MPN.
 searchscope: VS Subscription
-ms.openlocfilehash: 1cd8e25a0ba1eaddf6f0ab5096e366f577f510e6
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 8a0a0f3b6b093c023a8a0129c34d16aa75fffdaf
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59667765"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412391"
 ---
 # <a name="managing-visual-studio-subscriptions-offered-through-the-microsoft-partner-network-mpn"></a>Správa předplatných sady Visual Studio nabízí prostřednictvím Microsoft Partner Network (MPN)
 
@@ -65,7 +65,7 @@ Předplatitele Microsoft Action Pack a předplatná sady Visual Studio
 
 > [!NOTE]
 > Role technického kontaktu se vyžaduje pro předplatná sady Visual Studio
->     - PG 8 – předplatná sady Visual Studio přiřazení pro partnery s kompetencí
+> - PG 8 – předplatná sady Visual Studio přiřazení pro partnery s kompetencí
 
 ## <a name="need-help"></a>Potřebujete pomoc?
 Předplatitelé a správci programu by měl fungovat přímo s týmem podpory programu Microsoft Partner Network pomoc při řešení potíží s odběrateli přístup k předplatných. Přejděte [Support pro partnery](https://partner.microsoft.com/support) stránky žádostí o pomoc. (Přihlašovací údaje MPN nutné.)

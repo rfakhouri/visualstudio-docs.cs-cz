@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ebd8317af13ab542936b5f5d2f886b937bc6e65d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 7c04b8bd4ab956fe60191237910db35e2e463d3e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54758419"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442951"
 ---
 # <a name="export-uml-diagrams-to-image-files"></a>Export diagramů UML do souborů obrázků
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ Můžete to taky dokumentu UML z [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pr
  Následující kód definuje příkaz místní nabídky, označované také jako příkazu nabídky kontext, který obrázek uloží do souboru.  
   
 > [!NOTE]
->  Chcete-li tento kód fungovat jako příkaz nabídky, musí být začlenit do komponentu MEF. Další informace najdete v tématu [definování příkazu nabídky v diagramu modelování](../modeling/define-a-menu-command-on-a-modeling-diagram.md).  
+> Chcete-li tento kód fungovat jako příkaz nabídky, musí být začlenit do komponentu MEF. Další informace najdete v tématu [definování příkazu nabídky v diagramu modelování](../modeling/define-a-menu-command-on-a-modeling-diagram.md).  
   
  Tento kód použije první <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation.IShape.GetObject%2A> zobrazíte <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram> základní implementace. Tento typ má metodu <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.CreateBitmap%2A>.  
   

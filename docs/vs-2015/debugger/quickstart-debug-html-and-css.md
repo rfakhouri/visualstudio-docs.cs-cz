@@ -21,12 +21,12 @@ caps.latest.revision: 104
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7dd7afa571b83cb5d1b12018da2f1e812a3a5fbd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1820b1c9838e5558ea6ee96f2abdbcf88a24e4b0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60068155"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446126"
 ---
 # <a name="quickstart-debug-html-and-css"></a>Rychlý start: Ladění kódu HTML a CSS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,7 +61,7 @@ Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "wi
  Průzkumník modelu DOM se dozvíte, zobrazení vykreslené stránky a Průzkumníka modelu DOM můžete změnit hodnoty a hned vidět výsledky. To umožňuje testovat změny bez zastavení a restartování ladicího programu. Zdrojový kód v projektu nemění, když pracujete s stránce tímto způsobem, takže když najdete odpovídající kód opravy provedete změny zdrojového kódu.  
   
 > [!TIP]
->  Aby se zabránilo zastavení a restartování ladicího programu, když provedete změny zdrojového kódu, můžete aktualizovat aplikace pomocí **aktualizovat Windows app** tlačítko na panelu nástrojů ladění (nebo stisknutím klávesy F4). Další informace najdete v tématu [aktualizace aplikace (JavaScript)](../debugger/refresh-an-app-javascript.md).  
+> Aby se zabránilo zastavení a restartování ladicího programu, když provedete změny zdrojového kódu, můžete aktualizovat aplikace pomocí **aktualizovat Windows app** tlačítko na panelu nástrojů ladění (nebo stisknutím klávesy F4). Další informace najdete v tématu [aktualizace aplikace (JavaScript)](../debugger/refresh-an-app-javascript.md).  
   
  Můžete použít Průzkumníka modelu DOM do:  
   
@@ -74,12 +74,12 @@ Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "wi
   Při ladění aplikací často potřebujete k výběru elementů v Průzkumníku modelu DOM. Při výběru prvku hodnoty zobrazené na kartách na pravé straně Průzkumníka modelu DOM automaticky aktualizovat tak, aby odrážely vybraný element v Průzkumníku modelu DOM. Jde o karty: **Styly**, **vypočítané**, **rozložení**. Windows Store apps podporuje také **události** a **změny** karty. Další informace o výběru elementů naleznete v tématu [výběru elementů](#SelectingElements).  
   
 > [!TIP]
->  Pokud se zavře okno Průzkumníka modelu DOM, zvolte **ladění**>**Windows** > **Průzkumníka modelu DOM** znovu otevřít. V okně se zobrazí jenom při relaci ladění skriptu.  
+> Pokud se zavře okno Průzkumníka modelu DOM, zvolte **ladění**>**Windows** > **Průzkumníka modelu DOM** znovu otevřít. V okně se zobrazí jenom při relaci ladění skriptu.  
   
  V postupu, který následuje přejdeme procesem interaktivně pomocí Průzkumníka modelu DOM ladění aplikace. Vytvoříme aplikaci, která bude `FlipView` ovládací prvek a pak ho ladit. Aplikace obsahuje několik chyb.  
   
 > [!WARNING]
->  Následující ukázkové aplikace je aplikace Windows Store. Stejné funkce jsou podporované pro Cordova, ale aplikace bude odlišná.  
+> Následující ukázkové aplikace je aplikace Windows Store. Stejné funkce jsou podporované pro Cordova, ale aplikace bude odlišná.  
   
 #### <a name="to-debug-by-inspecting-the-live-dom"></a>Chcete-li ladit zkontrolováním live DOM  
   
@@ -183,14 +183,14 @@ Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "wi
 10. Přepněte do aplikace Visual Studio a zvolte **Průzkumníka modelu DOM** kartu.  
   
     > [!TIP]
-    >  Můžete stisknutím Alt + Tab nebo F12 přepínat mezi Visual Studio a spuštěné aplikaci.  
+    > Můžete stisknutím Alt + Tab nebo F12 přepínat mezi Visual Studio a spuštěné aplikaci.  
   
 11. V okně Průzkumníka modelu DOM, vyberte požadovaný prvek DIV oddílu, který má ID `"fView"`. Chcete-li zobrazit a vybrat správný prvek DIV pomocí kláves se šipkami. (Klávesy se šipkou doprava umožňuje zobrazit podřízené položky elementu.)  
   
      ![DOM Explorer](../debugger/media/js-dom-explorer.png "JS_DOM_Explorer")  
   
     > [!TIP]
-    >  Můžete také vybrat DIV element v levém dolním rohu okna konzoly jazyka JavaScript tak, že zadáte `select(fView)` na >> vstupní řádek a pak stiskněte klávesu Enter.  
+    > Můžete také vybrat DIV element v levém dolním rohu okna konzoly jazyka JavaScript tak, že zadáte `select(fView)` na >> vstupní řádek a pak stiskněte klávesu Enter.  
   
      Hodnoty, které se zobrazují na karty na pravé straně okna Průzkumníka modelu DOM automaticky aktualizovat tak, aby odrážely v Průzkumníku modelu DOM aktuálního elementu.  
   
@@ -209,7 +209,7 @@ Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "wi
 15. Vyberte `width: 100px;height: 100px;`, stiskněte klávesu Delete a potom stiskněte klávesu Enter. Po stisknutí klávesy Enter, nové hodnoty se okamžitě projeví v emulátoru telefonu nebo simulátoru, i když ještě zastavit ladicí relaci.  
   
     > [!IMPORTANT]
-    >  Jak můžete aktualizovat atributy v okně Průzkumníka modelu DOM, můžete také aktualizovat hodnoty, které se zobrazují na **styly**, **vypočítané**, a **rozložení** karty. Další informace najdete v tématu [styly ladění šablon stylů CSS pomocí Průzkumníka modelu DOM](../debugger/debug-css-styles-using-dom-explorer.md) a [ladění rozložení pomocí Průzkumníka modelu DOM](../debugger/debug-layout-using-dom-explorer.md).  
+    > Jak můžete aktualizovat atributy v okně Průzkumníka modelu DOM, můžete také aktualizovat hodnoty, které se zobrazují na **styly**, **vypočítané**, a **rozložení** karty. Další informace najdete v tématu [styly ladění šablon stylů CSS pomocí Průzkumníka modelu DOM](../debugger/debug-css-styles-using-dom-explorer.md) a [ladění rozložení pomocí Průzkumníka modelu DOM](../debugger/debug-layout-using-dom-explorer.md).  
   
 16. Přepněte do aplikace tak, že vyberete Phone emulátoru nebo simulátoru, nebo pomocí kombinace kláves Alt + Tab.  
   
@@ -281,7 +281,7 @@ Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "wi
   Pokud budete chtít zvýraznit elementy, jsou zvýrazněny prvky, které najedete myší v simulátoru. Barvy pro zvýrazněné elementy odpovídat pole modelu, který se zobrazí **rozložení** karty Průzkumníku modelu DOM.  
   
 > [!NOTE]
->  Zvýrazňování elementů podržením ukazatele nad nich je jenom částečně podporovány v emulátoru Windows Phone.  
+> Zvýrazňování elementů podržením ukazatele nad nich je jenom částečně podporovány v emulátoru Windows Phone.  
   
  Příklad, který ukazuje, jak vybrat prvky pomocí **Select element** tlačítko, naleznete v tématu [styly ladění šablon stylů CSS pomocí Průzkumníka modelu DOM](../debugger/debug-css-styles-using-dom-explorer.md).  
   

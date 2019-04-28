@@ -13,18 +13,18 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2c67ff6e458f8350ef36a8a454e017b3ce6ea114
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: 85704ed9e9a9493ef02e4d4d68a84a2d1623533f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58144924"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446860"
 ---
 # <a name="idisperror-interface"></a>IDispError – rozhraní
 Poskytuje podrobné kontextové informace o chybě.  
   
 > [!NOTE]
->  Toto rozhraní není implementováno.  
+> Toto rozhraní není implementováno.  
   
  Kromě metod zděděných z `IUnknown`, `IDispError` rozhraní poskytuje následující metody.  
   

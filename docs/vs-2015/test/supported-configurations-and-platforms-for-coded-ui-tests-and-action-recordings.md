@@ -10,12 +10,12 @@ ms.assetid: 544742b5-4ec1-4d51-b941-72b2f6ff17bc
 caps.latest.revision: 108
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3337aed321d642fac5ef065d78cfd8cb1191c3a8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 880f0096f33bf08d3415b79edfb8445143e18587
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109043"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446019"
 ---
 # <a name="supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings"></a>Podporované konfigurace a platformy pro programové testy uživatelského rozhraní a zaznamenávání akcí
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ ms.locfileid: "60109043"
 V následující tabulce jsou uvedeny podporované konfigurace a platformy pro programové testy uživatelského rozhraní pro Visual Studio Enterprise. Tyto konfigurace platí také pro záznamy akcí vytvořené pomocí [!INCLUDE[MTRlong](../includes/mtrlong-md.md)].  
   
 > [!NOTE]
->  Programový test UI musí mít stejná oprávnění jako testovaná aplikace.  
+> Programový test UI musí mít stejná oprávnění jako testovaná aplikace.  
   
  **Požadavky**  
   
@@ -39,7 +39,7 @@ V následující tabulce jsou uvedeny podporované konfigurace a platformy pro p
 |.NET|.NET 2.0, 3.0, 3.5, 4 a 4.5. **Poznámka:** [!INCLUDE[TCMext](../includes/tcmext-md.md)] a sady Visual Studio vyžadují provoz rozhraní .NET 4. Nicméně aplikace vyvinuté pomocí uvedených verzí rozhraní .NET jsou podporovány.|  
   
 > [!NOTE]
->  *Uživatelské rozhraní Synchronization.n* je funkce, kde je ověřeno přehrávání ve frontě zpráv každého ovládacího prvku. Pokud ovládací prvek neodpověděl na událost, která mu byla zaslána, událost je odeslána znovu.  
+> *Uživatelské rozhraní Synchronization.n* je funkce, kde je ověřeno přehrávání ve frontě zpráv každého ovládacího prvku. Pokud ovládací prvek neodpověděl na událost, která mu byla zaslána, událost je odeslána znovu.  
   
 ## <a name="platform-support"></a>Podpora platformy  
   

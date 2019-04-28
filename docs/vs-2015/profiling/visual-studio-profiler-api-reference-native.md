@@ -12,12 +12,12 @@ caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 911d80c0116664d93eebe431719a3e834eea6d8e
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
-ms.translationtype: MT
+ms.openlocfilehash: 3b296ae403658f4d39558c28e11a425adee7650a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54774825"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431121"
 ---
 # <a name="visual-studio-profiler-api-reference-native"></a>Referenční dokumentace rozhraní API produktu Visual Studio Profiler (nativní)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "54774825"
 Rozhraní API pro Visual Studio Profiler můžete použít k programovému řízení objemu shromážděných dat a vkládání značek časovým razítkem a profil během profilace. Pokud chcete používat nativní rozhraní API, zahrnout soubor hlaviček VSPerf.h a přidejte VSPerf.lib ve vašem projektu.  
   
 > [!NOTE]
->  Ve výchozím nastavení, VSPerf.h a VSPerf.lib jsou umístěny v \<jednotky >: adresář nástroje Tools\PerfSDK \Program Files\Microsoft 9\Team sady Visual Studio.  
+> Ve výchozím nastavení, VSPerf.h a VSPerf.lib jsou umístěny v \<jednotky >: adresář nástroje Tools\PerfSDK \Program Files\Microsoft 9\Team sady Visual Studio.  
   
 ## <a name="in-this-section"></a>V tomto oddílu  
  [CommentMarkAtProfile](../profiling/commentmarkatprofile.md)  

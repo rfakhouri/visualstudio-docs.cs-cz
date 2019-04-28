@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 71d7dc0fc208fa3c108019f6324c3d053673e918
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 252b554542df23e2d3197dfe28100546a6d25b32
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60070833"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411455"
 ---
 # <a name="t4-template-directive"></a>T4 – direktiva Template
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -212,7 +212,7 @@ This is the common footer.
  Jako základní třídu lze také použít běžnou ručně psanou třídu. Základní třída musí poskytovat metody používané v odvozené třídě.  
   
 > [!WARNING]
->  Pokud používáte `inherits` a `hostspecific` , definujte hostspecific = "trueFromBase" v odvozené třídě a host = "true" v základní třídě. To zabraňuje dvojité definici vlastnosti `Host` vlastnost v generovaném kódu.  
+> Pokud používáte `inherits` a `hostspecific` , definujte hostspecific = "trueFromBase" v odvozené třídě a host = "true" v základní třídě. To zabraňuje dvojité definici vlastnosti `Host` vlastnost v generovaném kódu.  
   
 ### <a name="inheritance-in-a-design-time-text-template"></a>Dědičnost v textové šabloně návrhu  
  Šablona textu v době návrhu je soubor, jehož **Custom Tool** je nastavena na **TextTemplatingFileGenerator**. Tato šablona vygeneruje výstupní soubor kódu nebo textu, který tvoří součást vaší [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] projektu. Při vygenerování výstupního souboru je šablona nejdříve přeložena do souboru programového mezikódu, který není obvykle vidět. `inherits` Atribut určuje základní třídu pro tento mezikód.  

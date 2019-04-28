@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7397da630a5fd6f2c649d6f448627d7c77c55128
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9417c2116dde909bda948e7d9140d7f52b090d68
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059120"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430480"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-1"></a>Návod: Vytvoření vlastní položky projektu akce pomocí šablony položky, část 1
   Systém projektu služby SharePoint v sadě Visual Studio můžete rozšířit tak, že vytvoříte svůj vlastní projekt typy položek. V tomto návodu vytvoříte položku projektu, který lze přidat do projektu služby SharePoint pro vytvoření vlastní akce na Sharepointovém webu. Vlastní akce ho přidá položku nabídky **Akce webu** nabídku z webu služby SharePoint.
@@ -44,7 +44,7 @@ ms.locfileid: "60059120"
   Toto je samostatný návodu. Po dokončení tohoto návodu, můžete zvýšit položky projektu tak, že přidáte průvodce k šabloně položky. Další informace najdete v tématu [názorný postup: Vytvoření vlastní položky projektu akce pomocí šablony položky, část 2](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md).
 
 > [!NOTE]
->  Můžete si stáhnout ukázky z [Githubu](https://github.com/SharePoint/PnP/tree/master/Samples/Workflow.Activities) , který ukazuje, jak vytvořit vlastní aktivity pracovního postupu.
+> Můžete si stáhnout ukázky z [Githubu](https://github.com/SharePoint/PnP/tree/master/Samples/Workflow.Activities) , který ukazuje, jak vytvořit vlastní aktivity pracovního postupu.
 
 ## <a name="prerequisites"></a>Požadavky
  Budete potřebovat následující komponenty na vývojovém počítači k dokončení tohoto návodu:
@@ -81,7 +81,7 @@ ms.locfileid: "60059120"
 4. V **nový projekt** dialogového okna rozbalte **Visual C#** nebo **jazyka Visual Basic** uzly a klikněte na tlačítko **rozšiřitelnost** uzlu.
 
     > [!NOTE]
-    >  **Rozšiřitelnost** uzel je dostupný jenom v případě, že nainstalujete Visual Studio SDK. Další informace najdete v oddílu požadavky dříve v tomto tématu.
+    > **Rozšiřitelnost** uzel je dostupný jenom v případě, že nainstalujete Visual Studio SDK. Další informace najdete v oddílu požadavky dříve v tomto tématu.
 
 5. Zvolte **projekt VSIX** šablony.
 
@@ -164,7 +164,7 @@ ms.locfileid: "60059120"
 2. V seznamu položek projektu, zvolte **soubor ikony** položky.
 
     > [!NOTE]
-    >  V projektech Visual Basicu, je nutné vybrat **Obecné** uzel k zobrazení **soubor ikony** položky.
+    > V projektech Visual Basicu, je nutné vybrat **Obecné** uzel k zobrazení **soubor ikony** položky.
 
 3. V **název** zadejte **CustomAction_SolutionExplorer.ico**a klikněte na tlačítko **přidat** tlačítko.
 
@@ -197,7 +197,7 @@ ms.locfileid: "60059120"
 3. Nahraďte obsah souboru následující kód XML a pak uložte a zavřete soubor.
 
     > [!NOTE]
-    >  Následující kód XML je k šabloně položky Visual C#. Pokud vytváříte šablonu položky Visual Basic, nahraďte hodnotu `ProjectType` element s `VisualBasic`.
+    > Následující kód XML je k šabloně položky Visual C#. Pokud vytváříte šablonu položky Visual Basic, nahraďte hodnotu `ProjectType` element s `VisualBasic`.
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>
@@ -310,7 +310,7 @@ ms.locfileid: "60059120"
 6. V **typ** klikněte na položku **Microsoft.VisualStudio.ItemTemplate**.
 
     > [!NOTE]
-    >  Tato hodnota odpovídá `ItemTemplate` element v souboru extension.vsixmanifest. Tento prvek určuje podsložce v balíčku souboru VSIX, který obsahuje šablonu položky projektu. Další informace najdete v tématu [ItemTemplate – Element (VSX schéma)](/previous-versions/visualstudio/visual-studio-2010/dd393681\(v\=vs.100\)).
+    > Tato hodnota odpovídá `ItemTemplate` element v souboru extension.vsixmanifest. Tento prvek určuje podsložce v balíčku souboru VSIX, který obsahuje šablonu položky projektu. Další informace najdete v tématu [ItemTemplate – Element (VSX schéma)](/previous-versions/visualstudio/visual-studio-2010/dd393681\(v\=vs.100\)).
 
 7. V **zdroj** klikněte na položku **projekt v aktuálním řešení**.
 
@@ -323,7 +323,7 @@ ms.locfileid: "60059120"
 10. V **typ** klikněte na položku **Microsoft.VisualStudio.MefComponent**.
 
     > [!NOTE]
-    >  Tato hodnota odpovídá `MefComponent` element v souboru extension.vsixmanifest. Tento prvek určuje název sestavení rozšíření v balíčku souboru VSIX. Další informace najdete v tématu [MEFComponent – Element (VSX schéma)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).
+    > Tato hodnota odpovídá `MefComponent` element v souboru extension.vsixmanifest. Tento prvek určuje název sestavení rozšíření v balíčku souboru VSIX. Další informace najdete v tématu [MEFComponent – Element (VSX schéma)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).
 
 11. V **zdroj** klikněte na položku **projekt v aktuálním řešení**.
 
@@ -425,7 +425,7 @@ ms.locfileid: "60059120"
      Vlastní akce se zabalí a nasadí na Sharepointovém webu, který je zadán v **adresa URL webu** vlastnost projektu. Webový prohlížeč otevře výchozí stránku webu.
 
     > [!NOTE]
-    >  Pokud **ladění skriptů zakázáno** dialogové okno se zobrazí, zvolte **Ano** tlačítka pokračovat v ladění projektu.
+    > Pokud **ladění skriptů zakázáno** dialogové okno se zobrazí, zvolte **Ano** tlačítka pokračovat v ladění projektu.
 
 4. Na **Akce webu** nabídce zvolte **středisko pro vývojáře služby SharePoint**, ověřte, že v prohlížeči se otevře web https://docs.microsoft.com/sharepoint/dev/a pak zavřete webový prohlížeč.
 

@@ -14,12 +14,12 @@ ms.assetid: 80a52e93-4a04-4ab2-8adc-a7847c2dc20b
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 16a4fca95380ad00338b2708f48f13f105a86da0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 3296613ffbe3148caa04989dfc9d609334b4c200
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54764585"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435991"
 ---
 # <a name="sdk-helpers-for-debugging"></a>Pomocníci sad SDK pro ladění
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "54764585"
 Tyto funkce a deklarace jsou globální pomocných funkcí pro provádění ladicími stroji vyhodnocovače výrazů a poskytovatelé symbol v jazyce C++.  
   
 > [!NOTE]
->  V tuto chvíli neexistují žádné spravované verze těchto funkcí a deklarace.  
+> V tuto chvíli neexistují žádné spravované verze těchto funkcí a deklarace.  
   
 ## <a name="overview"></a>Přehled  
  Aby ladicí stroj, vyhodnocovače výrazů a symbol zprostředkovatele pro Visual Studio musí být zaregistrovaný. To se provádí nastavením podklíče a položky, jinak známé jako "nastavení metriky." Následující globální funkce jsou navrženy k usnadnění procesu aktualizace tyto metriky. V části na umístění registru a zjistěte, rozložení podklíč registru, který se aktualizuje pomocí těchto funkcí.  
@@ -239,7 +239,7 @@ HRESULT EnumMetricSections(
  Metriky se čtou a zapisují do registru, konkrétně v `VisualStudio` podklíči.  
   
 > [!NOTE]
->  Ve většině případů, metriky, se zapíšou do klíče HKEY_LOCAL_MACHINE. Někdy ale HKEY_CURRENT_USER být cílový klíč. Dbgmetric.lib zpracovává oba klíče. Při získávání metriku, vyhledá HKEY_CURRENT_USER první pak HKEY_LOCAL_MACHINE. Při nastavení metriky parametr určuje, které klíč nejvyšší úrovně se má použít.  
+> Ve většině případů, metriky, se zapíšou do klíče HKEY_LOCAL_MACHINE. Někdy ale HKEY_CURRENT_USER být cílový klíč. Dbgmetric.lib zpracovává oba klíče. Při získávání metriku, vyhledá HKEY_CURRENT_USER první pak HKEY_LOCAL_MACHINE. Při nastavení metriky parametr určuje, které klíč nejvyšší úrovně se má použít.  
   
  *[klíč registru]*\  
   
@@ -271,7 +271,7 @@ HRESULT EnumMetricSections(
 |*[hodnota metriky]*|Hodnota přiřazená k metriku. Typ by měl mít (string, number, atd.) závisí na metriku.|  
   
 > [!NOTE]
->  Všechny identifikátory GUID se ukládají ve formátu `{GUID}`. Například, `{123D150B-FA18-461C-B218-45B3E4589F9B}`.  
+> Všechny identifikátory GUID se ukládají ve formátu `{GUID}`. Například, `{123D150B-FA18-461C-B218-45B3E4589F9B}`.  
   
 ### <a name="debug-engines"></a>Ladicí stroje  
  Následuje uspořádání metrik ladicí moduly v registru. `Engine` je název typu metrika. ladicí stroj a odpovídá *[typ metriky]* ve výše uvedené podstromu registru.  
@@ -350,7 +350,7 @@ HRESULT EnumMetricSections(
  Následuje uspořádání metrik Chyba při vyhodnocování výrazu v registru. `ExpressionEvaluator` je název typu Metrika pro vyhodnocovací filtr výrazů a odpovídá *[typ metriky]*.  
   
 > [!NOTE]
->  Typ metriky pro `ExpressionEvaluator` není definovaný v dbgmetric.h, protože se předpokládá, že všechny metriky změny pro vyhodnocení výrazu půjdou přes metriky funkce Chyba při vyhodnocování výrazu odpovídající (rozložení `ExpressionEvaluator` podklíč je trochu složité, takže podrobné informace jsou skryty uvnitř dbgmetric.lib).  
+> Typ metriky pro `ExpressionEvaluator` není definovaný v dbgmetric.h, protože se předpokládá, že všechny metriky změny pro vyhodnocení výrazu půjdou přes metriky funkce Chyba při vyhodnocování výrazu odpovídající (rozložení `ExpressionEvaluator` podklíč je trochu složité, takže podrobné informace jsou skryty uvnitř dbgmetric.lib).  
   
  `ExpressionEvaluator`\  
   

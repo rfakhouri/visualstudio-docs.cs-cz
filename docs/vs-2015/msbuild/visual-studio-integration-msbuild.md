@@ -19,12 +19,12 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 048307c6c8117a77a57da6dc20f2615ae82feb0c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e8a2bd058faa2c3ef9d17a82ad08dd3ad28842a8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117496"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445637"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Integrace sady Visual Studio (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,7 +64,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 ```  
   
 > [!NOTE]
->  Některé názvy typů položek jsou pro [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , ale nejsou uvedené v tomto rozevíracím seznamu.  
+> Některé názvy typů položek jsou pro [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , ale nejsou uvedené v tomto rozevíracím seznamu.  
   
 ## <a name="in-process-compilers"></a>Vnitroprocesové kompilátory  
  Pokud je to možné, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] se pokusí použít verzi v procesu [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] kompilátoru pro zajištění zvýšeného výkonu. (Nevztahuje se na [!INCLUDE[csprcs](../includes/csprcs-md.md)].) Aby to fungovalo správně musí být splněny následující podmínky:  

@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 95bc529db8129c4e9af1ed9f9dc3d91de9686223
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58145652"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411395"
 ---
 # <a name="iactivescriptauthoraddnameditem"></a>IActiveScriptAuthor::AddNamedItem
 Přidá název položky kořenové úrovně skriptu pro vytváření oboru názvů vyhledávacího stroje. A *kořenovou položku* je objekt obsahující vlastnosti a metody a mohou obsahovat také zdroj událostí.  
@@ -59,7 +59,7 @@ HRESULT AddNamedItem(
 ## <a name="return-value"></a>Návratová hodnota  
  `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
   
-|Hodnota|Popis|  
+|Value|Popis|  
 |-----------|-----------------|  
 |`S_OK`|Metoda byla úspěšná.|  
   

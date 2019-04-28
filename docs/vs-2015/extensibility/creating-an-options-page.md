@@ -10,12 +10,12 @@ ms.assetid: 9f4e210c-4b47-4daa-91fa-1c301c4587f9
 caps.latest.revision: 63
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 204c141fb1bb8021ce1908b9c0db7fcf3e0104bc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7b5897f6c4463cc5a3c7928a722ed5a0a09e42b3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059742"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430579"
 ---
 # <a name="creating-an-options-page"></a>Vytvoření stránky Možnosti
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -92,7 +92,7 @@ Tento návod vytvoří jednoduchou stránku Nástroje/možnosti, které použív
     ```  
   
     > [!NOTE]
-    >  Výchozí implementace <xref:Microsoft.VisualStudio.Shell.DialogPage> podporuje vlastnosti, které mají odpovídající převaděče nebo které jsou struktury nebo polí, která se dá rozšířit do vlastnosti, které mají odpovídající převaděče. Seznam převaděčů najdete v tématu <xref:System.ComponentModel> oboru názvů.  
+    > Výchozí implementace <xref:Microsoft.VisualStudio.Shell.DialogPage> podporuje vlastnosti, které mají odpovídající převaděče nebo které jsou struktury nebo polí, která se dá rozšířit do vlastnosti, které mají odpovídající převaděče. Seznam převaděčů najdete v tématu <xref:System.ComponentModel> oboru názvů.  
   
 6. Sestavte projekt a spusťte ladění.  
   

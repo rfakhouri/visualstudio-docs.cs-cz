@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ab8c437285a55013e2c0367865044ee12ba061ed
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: de101e33e94889a44fe9bc4e21db857763b1c9aa
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071805"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63447034"
 ---
 # <a name="registry-entries-for-vsto-add-ins"></a>Položky registru pro doplňky VSTO
   Při nasazení doplňků VSTO, které jsou vytvořené pomocí sady Visual Studio, musíte vytvořit konkrétní sady položek registru. Tyto položky registru poskytují informace, které umožní aplikaci Microsoft Office zjišťovat a načíst doplňku VSTO.
@@ -33,7 +33,7 @@ ms.locfileid: "60071805"
  Další informace o tom, jak použít položky registru během procesu načtení pro doplňky VSTO najdete v tématu [doplňků VSTO architektura](../vsto/architecture-of-vsto-add-ins.md).
 
 > [!NOTE]
->  V tomto tématu se text *ID doplňku* představuje jedinečné ID pro váš doplněk VSTO. Ve výchozím nastavení ID je název vašeho sestavení doplňku VSTO.
+> V tomto tématu se text *ID doplňku* představuje jedinečné ID pro váš doplněk VSTO. Ve výchozím nastavení ID je název vašeho sestavení doplňku VSTO.
 
 ## <a name="register-vsto-add-ins-for-the-current-user-vs-all-users"></a>Registrace doplňků VSTO pro aktuálního uživatele a všichni uživatelé
  Když doplňku VSTO je nainstalována, lze jej zaregistrovat dvěma způsoby:

@@ -21,11 +21,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7a050ae24ddb5b796acf101e0432a5b64cd28031
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60051671"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62898568"
 ---
 # <a name="how-to-specify-a-link-for-technical-support"></a>Postupy: Určení obsahu pro technickou podporu
 Při publikování [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace, **adresu URL podpory** vlastnost identifikuje webové stránky nebo sdílené složky, kde mohou uživatelé získat informace o aplikaci. Tato vlastnost je volitelná. Pokud je zadán, adresa URL se zobrazí v vstupní aplikace **přidat nebo odebrat programy** dialogové okno.

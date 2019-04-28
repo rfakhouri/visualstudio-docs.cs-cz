@@ -10,12 +10,12 @@ ms.assetid: 2f70863b-425b-4e65-86b4-d6a898e29dc7
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f7bc8ca8e9b38283c647cfde2d593e292d44ce43
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
-ms.translationtype: MT
+ms.openlocfilehash: ecdacfc4ac65e0dc18512bfb56eb870545c66a9b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54835065"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443477"
 ---
 # <a name="adding-items-to-the-add-new-item-dialog-boxes"></a>Přidávání položek do dialogových oken Přidat novou položku
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ ms.locfileid: "54835065"
 Proces přidávání položek do **přidat novou položku** spustí dialogové okno s klíči registru. Jak je znázorněno v následující položky registru, obsahuje cestu a název adresáře, ve které položky k dispozici v části AddItemTemplates **přidat novou položku** jsou umístěny dialogové okno.  
   
 > [!NOTE]
->  Tabulka ihned po segmentu kódu obsahuje další informace o položku registru.  
+> Tabulka ihned po segmentu kódu obsahuje další informace o položku registru.  
   
  V této části se nachází v části [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\14.0Exp\Projects].  
   
@@ -37,14 +37,14 @@ Proces přidávání položek do **přidat novou položku** spustí dialogové o
   
  "SortPriority"=dword:00000064  
   
-|Název|Typ|Data (ze souboru .rgs)|Popis|  
+|Název|Type|Data (ze souboru .rgs)|Popis|  
 |----------|----------|-----------------------------|-----------------|  
 |@ (Výchozí)|REG_SZ|#% IDS_ADDITEM_TEMPLATES_ENTRY %|ID prostředku pro **přidat položku** šablony.|  
 |Val TemplatesDir|REG_SZ|%TEMPLATE_PATH%\ SomeProjectItems|Cesta položky projektu zobrazí v dialogovém okně pro **přidat novou položku** průvodce.|  
 |Val SortPriority|REG_DWORD|100 ([!INCLUDE[vcprx64](../../includes/vcprx64-md.md)])|Určuje pořadí řazení v uzlu stromu soubory zobrazené v **přidat novou položku** dialogové okno.|  
   
 > [!NOTE]
->  Identifikátory GUID pro typy projektů jazyka Visual C# a Visual Basic jsou následující:[!INCLUDE[csprcs](../../includes/csprcs-md.md)]: {FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}[!INCLUDE[vbprvb](../../includes/vbprvb-md.md)]: {F184B08F-C81C-45F6-A57F-5ABD9991F28F}  
+> Identifikátory GUID pro typy projektů jazyka Visual C# a Visual Basic jsou následující:[!INCLUDE[csprcs](../../includes/csprcs-md.md)]: {FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}[!INCLUDE[vbprvb](../../includes/vbprvb-md.md)]: {F184B08F-C81C-45F6-A57F-5ABD9991F28F}  
   
  Adresář uvedený TemplateDirs, což je % TEMPLATE_PATH%\SomeProjectItems, je uzel na levé straně **přidat novou položku** dialog box stromu. Další prvky ve stromu jsou založeny na podadresáře v tomto kořenovém adresáři. Položky v pravém podokně jsou k dispozici mají být přidány do projektu soubory **přidat novou položku** dialogové okno.  
   
@@ -53,7 +53,7 @@ Proces přidávání položek do **přidat novou položku** spustí dialogové o
  Však není nutné mít všechno v jednom souboru .vsdir. Můžete mít jednu projektový soubor pro každou položku v adresáři. Další informace najdete v tématu [průvodce (. Soubor vsz)](../../extensibility/internals/wizard-dot-vsz-file.md) a [popisu adresáře šablon (. Soubory VSDIR)](../../extensibility/internals/template-directory-description-dot-vsdir-files.md).  
   
 > [!NOTE]
->  .Vsdir soubory v adresářích šablony jsou volitelné. Pokud chcete pouze umístit prvek projektu v adresáři a zobrazit je v **přidat novou položku** dialogovém okně můžete umístit tento soubor v adresáři šablony zadaných v příkazu TemplatesDir. Soubor se pak zobrazí v pravém podokně **přidat novou položku** dialogové okno pro daný projekt. Ale pokud chcete zobrazit lokalizované titulek pro soubor nebo ikonu, musí obsahovat jeden nebo více souborů .vsdir v adresáři šablony.  
+> .Vsdir soubory v adresářích šablony jsou volitelné. Pokud chcete pouze umístit prvek projektu v adresáři a zobrazit je v **přidat novou položku** dialogovém okně můžete umístit tento soubor v adresáři šablony zadaných v příkazu TemplatesDir. Soubor se pak zobrazí v pravém podokně **přidat novou položku** dialogové okno pro daný projekt. Ale pokud chcete zobrazit lokalizované titulek pro soubor nebo ikonu, musí obsahovat jeden nebo více souborů .vsdir v adresáři šablony.  
   
 ## <a name="grouping-project-items"></a>Seskupení položek projektu  
  Pokud budete chtít obsahují šablony skupiny do složek v **přidat novou položku** dialogové okno pole stromu, musí mít podadresářích v kořenovém adresáři šablony položky v nich. Když **přidat novou položku** dialogové okno se zobrazí uživatelům, budou také naleznete v tématu podsložky a mít možnost vybrat elementy projektu z nich.  

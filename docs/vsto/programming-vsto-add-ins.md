@@ -32,12 +32,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6b9b809750e658b6a5e496e2d90b7b396157f87a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e5de89bdeade136577e05c700ec242a956a03455
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079009"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425839"
 ---
 # <a name="program-vsto-add-ins"></a>Programování doplňků VSTO
   Při vytvoření doplňku VSTO můžete rozšířit aplikace Microsoft Office, můžete psát kód přímo `ThisAddIn` třídu ve vašem projektu. Tato třída slouží k provádění úloh, jako je například přístup k modelu objektu hostitelské aplikace Microsoft Office, přizpůsobení uživatelského rozhraní (UI) aplikace a zveřejnění objekty v doplňku VSTO pro ostatní řešení pro Office.
@@ -54,7 +54,7 @@ ms.locfileid: "60079009"
  Existují dva výchozích obslužných rutin událostí v `ThisAddIn` třídy. Pro spuštění kódu při načtení doplňku VSTO, přidejte kód pro `ThisAddIn_Startup` obslužné rutiny události. Pro spuštění kódu těsně před plánovaným doplňku VSTO uvolněna, přidejte kód pro `ThisAddIn_Shutdown` obslužné rutiny události. Další informace o těchto obslužných rutin událostí, naleznete v tématu [události v projektech pro systém Office](../vsto/events-in-office-projects.md).
 
 > [!NOTE]
->  V Outlooku, ve výchozím nastavení `ThisAddIn_Shutdown` obslužná rutina události není vždy volá se, když doplňku VSTO je uvolněna. Další informace najdete v tématu [události v projektech pro systém Office](../vsto/events-in-office-projects.md).
+> V Outlooku, ve výchozím nastavení `ThisAddIn_Shutdown` obslužná rutina události není vždy volá se, když doplňku VSTO je uvolněna. Další informace najdete v tématu [události v projektech pro systém Office](../vsto/events-in-office-projects.md).
 
 ### <a name="access-the-object-model-of-the-host-application"></a>Přístup k modelu objektu hostitelské aplikace
  Chcete-li získat přístup k modelu objektu hostitelské aplikace, použijte `Application` pole `ThisAddIn` třídy. Toto pole vrátí objekt, který představuje aktuální instanci aplikace hostitele. V následující tabulce jsou uvedeny typ vrácené hodnoty pro `Application` pole v každém projektu doplňku VSTO.

@@ -23,12 +23,12 @@ caps.latest.revision: 48
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c7161d8115f8cc99f830293cdf5f957a2264f5a0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8d7d4524f1839179ac253265d95f191caf1c50af
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60041179"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445670"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Postupy: Přidání nebo odebrání odkazů pomocí Správce odkazů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -99,7 +99,7 @@ Můžete použít **správce odkazů** dialogové okno Přidat a spravovat odkaz
 - Můžete byste se vyhnout přidávání odkazů na soubory do výstupů jiného projektu ve stejném řešení, protože to může způsobit chyby kompilace. Místo toho použijte **projekty** karty **přidat odkaz** dialogové okno k vytvoření odkazů typu projekt projekt. Toto usnadňuje vývoj v týmu povolením lepší správy knihoven tříd, které vytvoříte ve svých projektech. Další informace najdete v tématu [řešení potíží s nefunkční odkazy](../ide/troubleshooting-broken-references.md).  
   
 - > [!NOTE]
-    >  V sadě Visual Studio 2015 je odkaz na soubor místo odkazu na projekt vytvořen, pokud cílová verze rozhraní .NET Framework jednoho projektu je verze 4.5 a cílová verze jiného projektu je verze 2, 3, 3.5 nebo 4.0.  
+    > V sadě Visual Studio 2015 je odkaz na soubor místo odkazu na projekt vytvořen, pokud cílová verze rozhraní .NET Framework jednoho projektu je verze 4.5 a cílová verze jiného projektu je verze 2, 3, 3.5 nebo 4.0.  
   
 #### <a name="to-display-an-assembly-in-the-add-reference-dialog-box"></a>Zobrazení sestavení v dialogovém okně Přidat odkaz  
   
@@ -181,7 +181,7 @@ Můžete použít **správce odkazů** dialogové okno Přidat a spravovat odkaz
  Sada SDK je kolekce souborů, které sada Visual Studio považuje za jedinou součást. Na kartě rozšíření jsou sady SDK, které platí pro projekt, ze kterých **správce odkazů** bylo vyvoláno dialogové jsou uvedeny jako jedna položka. Po přidání do projektu je veškerý obsah sady SDK využíván sadou Visual Studio tak, že uživatel nemusí provádět žádné další akce za účelem využití obsahu sady SDK v prostředí IntelliSense, sadě nástrojů, návrhářích, Prohlížeči objektů, sestavení, nasazení, ladění a balení. Informace o tom, jak zobrazit vaši sadu SDK na kartě rozšíření najdete v tématu [vytváření Software Development Kit](../extensibility/creating-a-software-development-kit.md).  
   
 > [!NOTE]
->  Pokud se projekt odkazuje na sadu SDK, která závisí na jiné sadě SDK, sada Visual Studio nebude využívat druhou sadu SDK, pokud uživatel ručně nepřidá odkaz na tuto druhou sadu SDK. Když uživatel vybere sadu SDK na **rozšíření** karta, **správce odkazů** dialogové okno pomáhá uživateli určit závislosti sady SDK uvedením nejen název a verzi sady SDK, ale také název všechny sady SDK závislosti v podokně podrobností. Pokud si uživatel nevšimne závislostí a přidá pouze sadu SDK, nástroj MSBuild vyzve uživatele k přidání závislostí.  
+> Pokud se projekt odkazuje na sadu SDK, která závisí na jiné sadě SDK, sada Visual Studio nebude využívat druhou sadu SDK, pokud uživatel ručně nepřidá odkaz na tuto druhou sadu SDK. Když uživatel vybere sadu SDK na **rozšíření** karta, **správce odkazů** dialogové okno pomáhá uživateli určit závislosti sady SDK uvedením nejen název a verzi sady SDK, ale také název všechny sady SDK závislosti v podokně podrobností. Pokud si uživatel nevšimne závislostí a přidá pouze sadu SDK, nástroj MSBuild vyzve uživatele k přidání závislostí.  
   
  Pokud typ projektu nepodporuje **rozšíření**, nebude tato karta se v **správce odkazů** dialogové okno.  
   
@@ -207,7 +207,7 @@ Můžete použít **správce odkazů** dialogové okno Přidat a spravovat odkaz
     ```  
   
     > [!NOTE]
-    >  Pokud tuto vlastnost přidáte, může být sestavení pomalejší.  
+    > Pokud tuto vlastnost přidáte, může být sestavení pomalejší.  
   
 ## <a name="recent"></a>Nedávné  
  Kartu Nedávné podporují karty Sestavení, COM, Windows a Procházet. Tato karta obsahuje seznam součástí, které byly v poslední době přidány do projektu.  

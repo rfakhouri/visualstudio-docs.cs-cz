@@ -20,12 +20,12 @@ caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 360384118f5c2d02801b63b8836800eca5e26d78
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6496d38e753d2338966916d1d7855abca77ace34
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60102247"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438481"
 ---
 # <a name="how-to-debug-from-a-dll-project"></a>Postupy: Ladění z projektu knihovny DLL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ Chcete-li spustit ladění projektu knihovny DLL, musíte zadat volající aplik
  Pokud je spravovaná knihovna DLL volána pomocí nativního kódu a chcete obojí ladit, můžete toto určíte ve vlastnostech projektu. Další informace najdete v tématu [jak: Ladění ve smíšeném režimu](../debugger/how-to-debug-in-mixed-mode.md).  
   
 > [!NOTE]
->  V edicích Express sady Visual Studio nelze zadat externí volající aplikace. Místo toho potřebujete přidat spustitelný projekt do řešení, nastavte jako spouštěný projekt a volat metody v knihovně DLL z spustitelný projekt.  
+> V edicích Express sady Visual Studio nelze zadat externí volající aplikace. Místo toho potřebujete přidat spustitelný projekt do řešení, nastavte jako spouštěný projekt a volat metody v knihovně DLL z spustitelný projekt.  
   
 ### <a name="to-specify-the-calling-application-in-a-c-project"></a>Chcete-li určit volající aplikace v projektu jazyka C++  
   

@@ -11,12 +11,12 @@ helpviewer_keywords:
 ms.assetid: 262ada44-7689-44d8-bacb-9c6d33834d4e
 caps.latest.revision: 11
 manager: jillfra
-ms.openlocfilehash: dee3f9f906f217befe3a4b7b80c068de9d6e6136
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f9d930765a427d32836f464a424b5cd898090ac5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60093966"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436534"
 ---
 # <a name="upgrading-custom-projects"></a>Upgrade vlastních projektů
 Pokud změníte informací uchovávaných v souboru projektu mezi různými verzemi sady Visual Studio, produktu, je nutné pro podporu upgradu váš soubor projektu ze staré na novou verzi. Pro podporu upgradu, která umožňuje vás k účasti **Průvodce převodu Visual Studio**, implementovat <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> rozhraní. Toto rozhraní obsahuje pouze mechanismus k dispozici pro upgrade kopírování. Upgrade projektu se stane, jako součást řešení otevře. <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> Rozhraní je implementováno objekt pro vytváření projektu, nebo by měl být dosažitelný alespoň z objekt pro vytváření projektu.  
@@ -109,7 +109,7 @@ Pokud změníte informací uchovávaných v souboru projektu mezi různými verz
   4. Prostředí volá `IVsProjectUpgrade::UpgradeProject` podruhé k určení, zda objekt projektu by měl upgradovat. Ale tento přišla na nový, druhé instance projektu "project2". Jedná se o projekt, který je v řešení otevřen.  
   
       > [!NOTE]
-      >  V instanci, která svůj první projekt Project1, se umístí do neaktivního stavu, pak musí vracet <xref:Microsoft.VisualStudio.VSConstants.S_OK> z prvního volání vaše <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade.UpgradeProject%2A> implementace. Zobrazit [základního projektu](http://msdn.microsoft.com/385fd2a3-d9f1-4808-87c2-a3f05a91fc36) implementace `IVsProjectUpgrade::UpgradeProject`.  
+      > V instanci, která svůj první projekt Project1, se umístí do neaktivního stavu, pak musí vracet <xref:Microsoft.VisualStudio.VSConstants.S_OK> z prvního volání vaše <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade.UpgradeProject%2A> implementace. Zobrazit [základního projektu](http://msdn.microsoft.com/385fd2a3-d9f1-4808-87c2-a3f05a91fc36) implementace `IVsProjectUpgrade::UpgradeProject`.  
   
   5. Volání <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> a předejte hodnotu <xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditFlags> pro `rgfQueryEdit` parametru.  
   

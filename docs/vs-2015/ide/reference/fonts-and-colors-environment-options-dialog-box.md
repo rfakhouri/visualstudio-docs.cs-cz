@@ -27,12 +27,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a1a66ae20065546d5a42b990d0ba0009d0657ed0
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 1cd4b57e2dccbb26c3b6ceba1be51fa5022469cb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59656021"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437156"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Písma a barvy, prostředí, dialogové okno Možnosti
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ ms.locfileid: "59656021"
 **Písma a barvy** stránku **možnosti** dialogové okno umožňuje vytvořit vlastní písma a barvy režim pro různé prvky uživatelského rozhraní v integrovaném vývojovém prostředí (IDE). Toto dialogové okno se zpřístupní po kliknutí **Nástroje / možnosti**a pak vyberete **prostředí / písma a barvy**. Pokud se tato stránka se nezobrazí v seznamu, vyberte **zobrazit všechna nastavení** v **možnosti** dialogové okno.  
   
 > [!NOTE]
->  Dialogová okna a příkazy nabídek, které vidíte, se mohou lišit od těch popsaných v nápovědě v závislosti na aktivních nastaveních nebo edici. Chcete-li změnit nastavení, zvolte **nastavení importu a exportu** na **nástroje** nabídky. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Dialogová okna a příkazy nabídek, které vidíte, se mohou lišit od těch popsaných v nápovědě v závislosti na aktivních nastaveních nebo edici. Chcete-li změnit nastavení, zvolte **nastavení importu a exportu** na **nástroje** nabídky. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  Barevné schéma změny se projeví během relace, ve kterém je provedete. Změny barev můžete vyhodnotit otevřením jiná instance sady Visual Studio a vytváření podmínky, za kterých očekáváte, že vaše změny se můžou použít.  
   
@@ -56,7 +56,7 @@ ms.locfileid: "59656021"
    Změny styl písma, velikosti a zobrazení nastavení barev pro tiskárnu vliv na vzhled textu v dokumentu.  
   
   > [!NOTE]
-  >  Podle potřeby, můžete vybrat různé výchozí písmo pro tisk než, který používá pro zobrazení v textovém editoru. To může být užitečné při tisku kódu, který obsahuje jednobajtových a dvoubajtových znaků.  
+  > Podle potřeby, můžete vybrat různé výchozí písmo pro tisk než, který používá pro zobrazení v textovém editoru. To může být užitečné při tisku kódu, který obsahuje jednobajtových a dvoubajtových znaků.  
   
 - **Dokončování příkazů**  
   
@@ -75,7 +75,7 @@ ms.locfileid: "59656021"
    Změny písmo, velikost a barvu zobrazit nastavení pro tuto položku vliv na vzhled textu v oknech nástrojů, které mají výstupní podokna v integrovaném vývojovém prostředí. Například okno výstup, okno příkazového řádku, hodnot proměnných atd.  
   
   > [!NOTE]
-  >  Změní text **[všechny textový nástroj Windows]** položky projeví během relace, ve kterém je provedete. Můžete si vyzkoušet tyto změny tak, že otevřete jinou instanci aplikace Visual Studio.  
+  > Změní text **[všechny textový nástroj Windows]** položky projeví během relace, ve kterém je provedete. Můžete si vyzkoušet tyto změny tak, že otevřete jinou instanci aplikace Visual Studio.  
   
   **Použít výchozí nastavení**  
   Obnoví písma a barvy hodnoty seznamu položky vybrané v **zobrazit nastavení pro**. **Použití** tlačítko se zobrazí, když jsou k dispozici pro výběr jiné režimy zobrazení. Můžete například zvolit ze dvou režimů tiskárny.  
@@ -90,7 +90,7 @@ ms.locfileid: "59656021"
   Zobrazí seznam položek, pro které můžete změnit barvu popředí a pozadí.  
   
 > [!NOTE]
->  **Prostý Text** je výchozí zobrazení položky. V důsledku toho vlastnosti přiřazená **ve formátu prostého textu** podle vlastností, které jsou přiřazeny k ostatním položkám zobrazení, budou ignorovány. Například, pokud přiřadíte k modrou barvu **ve formátu prostého textu** a na zelenou barvu **identifikátor**, všechny identifikátory se zobrazí zeleně. V tomto příkladu **identifikátor** přepsání vlastnosti **ve formátu prostého textu** vlastnosti.  
+> **Prostý Text** je výchozí zobrazení položky. V důsledku toho vlastnosti přiřazená **ve formátu prostého textu** podle vlastností, které jsou přiřazeny k ostatním položkám zobrazení, budou ignorovány. Například, pokud přiřadíte k modrou barvu **ve formátu prostého textu** a na zelenou barvu **identifikátor**, všechny identifikátory se zobrazí zeleně. V tomto příkladu **identifikátor** přepsání vlastnosti **ve formátu prostého textu** vlastnosti.  
   
  Zobrazit položky patří:  
   
@@ -214,7 +214,7 @@ ms.locfileid: "59656021"
  Zobrazí dialogové okno barev můžete nastavit vlastní barvu pro vybranou položku v zobrazení seznamu položek.  
   
 > [!NOTE]
->  Nastavení barev pro zobrazení vašeho počítače může být omezena vaši schopnost definovat vlastní barvy. Například, pokud je váš počítač nastavený na zobrazení 256 barev a vybrat vlastní barvu z **barva** dialogové okno, integrovaném vývojovém prostředí výchozí hodnoty na nejbližší dostupné **základní barvy** a zobrazí v černé barvy **Barva** pole ve verzi preview.  
+> Nastavení barev pro zobrazení vašeho počítače může být omezena vaši schopnost definovat vlastní barvy. Například, pokud je váš počítač nastavený na zobrazení 256 barev a vybrat vlastní barvu z **barva** dialogové okno, integrovaném vývojovém prostředí výchozí hodnoty na nejbližší dostupné **základní barvy** a zobrazí v černé barvy **Barva** pole ve verzi preview.  
   
  **Pozadí položky**  
  Obsahuje paletu barev, ze kterého můžete nastavit barvu pozadí položky vybrané v **zobrazení položek**. Protože některé položky se týkají a proto vhodné ponechat schéma konzistentní zobrazení, změna barvy pozadí textu změní také výchozí hodnoty pro prvky, jako jsou Chyba kompilátoru, – klíčové slovo nebo operátora.  

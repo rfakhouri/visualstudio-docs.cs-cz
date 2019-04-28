@@ -15,12 +15,12 @@ caps.latest.revision: 47
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2070c9c68719e51357f3cd5fed4bee3cfbc35fcf
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f4878827ae65a8f42e8225c7daab207a27a0614a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60051905"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426378"
 ---
 # <a name="finding-and-using-visual-studio-extensions"></a>Hledání a používání rozšíření Visual Studia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Rozšíření sady Visual Studio jsou balíčky kódu, které v prostředí Visu
  Můžete použít **rozšíření a aktualizace** dialogové okno instalace rozšíření sady Visual Studio a ukázky z webů a dalších míst a pak povolit, zakázat, aktualizovat nebo je odinstalovat. (**Nástrojů / rozšíření a aktualizace**, nebo typ **rozšíření** v **Snadné spuštění** okno). Dialogové okno zobrazuje také aktualizace nainstalovaných ukázek a rozšíření. Můžete také stáhnout rozšíření z webů nebo získat od jiných vývojářů.
 
 > [!NOTE]
->  Spouští se v sadě Visual Studio 2015, rozšíření hostované ve Galerii Visual Studio se automaticky aktualizují.  Toto nastavení můžete změnit **rozšíření a aktualizace** dialogového okna.  Naleznete v části **automatické aktualizace rozšíření** níže podrobnosti.
+> Spouští se v sadě Visual Studio 2015, rozšíření hostované ve Galerii Visual Studio se automaticky aktualizují.  Toto nastavení můžete změnit **rozšíření a aktualizace** dialogového okna.  Naleznete v části **automatické aktualizace rozšíření** níže podrobnosti.
 
 ## <a name="finding-visual-studio-extensions"></a>Vyhledání rozšíření sady Visual Studio
  Můžete nainstalovat rozšíření z [Visual Studio Marketplace](https://marketplace.visualstudio.com/) nebo [Galerie ukázek](https://code.msdn.microsoft.com/vstudio) na webu společnosti Microsoft. Rozšíření mohou být ovládací prvky, ukázky, šablony, nástroje nebo jiné součásti, které přidávají funkcionalitu do aplikace Visual Studio. Visual Studio podporuje rozšíření ve formátu balíčku VSIX – to zahrnuje šablony projektu, šablony položek, položky **nástrojů** položky, komponenty spravovaných rozšíření Framework (MEF) a rozšíření VSPackages. Můžete také stáhnout a nainstalovat rozšíření založená na Instalační služby MSI, ale **rozšíření a aktualizace** dialogové okno nelze povolit ani zakázat. Galerie Visual Studio obsahuje rozšíření VSIX a instalační služby MSI.
@@ -59,7 +59,7 @@ Rozšíření sady Visual Studio jsou balíčky kódu, které v prostředí Visu
 - Chcete-li zakázat automatické aktualizace pro konkrétní příponu, zrušte zaškrtnutí políčka **automaticky aktualizovat toto rozšíření** možnost v podokně podrobností rozšíření na pravé straně **rozšíření a aktualizace** dialogového okna.
 
 > [!NOTE]
->  Od verze Visual Studio 2015 Update 2, můžete zadat (v **Nástroje / možnosti / prostředí / rozšíření a aktualizace**) určuje, zda chcete automatické aktualizace pro rozšíření vázaná na uživatele, všechna rozšíření uživatele nebo obě (výchozí nastavení).
+> Od verze Visual Studio 2015 Update 2, můžete zadat (v **Nástroje / možnosti / prostředí / rozšíření a aktualizace**) určuje, zda chcete automatické aktualizace pro rozšíření vázaná na uživatele, všechna rozšíření uživatele nebo obě (výchozí nastavení).
 
 ## <a name="sample-master-copies-and-working-copies"></a>Ukázka hlavní kopie a pracovní kopie
  Při instalaci online ukázky je řešení uloženo na dvou místech:
@@ -89,4 +89,4 @@ Rozšíření sady Visual Studio jsou balíčky kódu, které v prostředí Visu
  Visual Studio i nadále podporuje rozšíření, které instaluje Microsoft Installer (MSI) ale není až **rozšíření a aktualizace** dialogové okno bez úprav.
 
 > [!TIP]
->  Pokud rozšíření využívajícím MSI obsahuje soubor extension.vsixmanifest, rozšíření se zobrazí v **rozšíření a aktualizace** dialogové okno.
+> Pokud rozšíření využívajícím MSI obsahuje soubor extension.vsixmanifest, rozšíření se zobrazí v **rozšíření a aktualizace** dialogové okno.

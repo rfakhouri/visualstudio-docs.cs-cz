@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5f16385452fa0fa0f4e706da1856185355aa95a5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3d5d9e4cd0baa2343a68a3d86a96110c97b6cbb7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60047186"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426818"
 ---
 # <a name="registering-single-file-generators"></a>Registrace generátorů tvořených jedním souborem
 Zpřístupnit ve vlastní nástroj [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], je třeba jej zaregistrovat tak [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] lze vytvořit instanci a přidruží ji k konkrétní typ projektu.
@@ -51,7 +51,7 @@ Zpřístupnit ve vlastní nástroj [!INCLUDE[vsprvs](../../code-quality/includes
         Povinný parametr. Určuje, zda typy z soubory vytvořené jazykem tohoto vlastního nástroje jsou k dispozici pro vizuální návrháře. Hodnota tohoto parametru musí být 0 (nula) typy nejsou k dispozici pro vizuální návrháře nebo 1 (jeden) pro typy, které jsou k dispozici pro vizuální návrháře.
 
    > [!NOTE]
-   >  Je nutné zaregistrovat vlastní nástroj samostatně pro každý jazyk, pro které chcete vlastní nástroj být k dispozici.
+   > Je nutné zaregistrovat vlastní nástroj samostatně pro každý jazyk, pro které chcete vlastní nástroj být k dispozici.
 
     Například MSDataSetGenerator registruje sama sebe jednou pro každý jazyk:
 

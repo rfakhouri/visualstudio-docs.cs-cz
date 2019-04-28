@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9330a41d0888532640774891386011f6b8dbfc24
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0de96057326a9e4b6a64865ef34972d5542aff30
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60106017"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443003"
 ---
 # <a name="directed-graph-markup-language-dgml-reference"></a>Referenční dokumentace jazyka přímého značení grafů (DGML)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ Orientovaný jazyka přímého značení grafů (DGML) popisuje informace, kter�
  Všimněte si, že některých verzích sady Visual Studio podporují pouze podmnožinu funkcí jazyka DGML, naleznete v tématu [podporované verze pro nástroje architektury a modelování](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
 > [!NOTE]
->  Při úpravách souboru .dgml usnadňuje technologie IntelliSense určení atributů, které jsou k dispozici pro každý prvek, a jejich hodnot. Pro určení barvy v atributu použijte názvy pro běžné barvy, například „Blue“ (modrá) nebo šestnáctkové hodnoty ARGB, jako je například „#ffa0b1c3“. Jazyk DGML používá malou podmnožinu formátů definice barev Windows Presentation Foundation (WPF). Další informace najdete v tématu [třída barvy](http://go.microsoft.com/fwlink/?LinkId=182345).  
+> Při úpravách souboru .dgml usnadňuje technologie IntelliSense určení atributů, které jsou k dispozici pro každý prvek, a jejich hodnot. Pro určení barvy v atributu použijte názvy pro běžné barvy, například „Blue“ (modrá) nebo šestnáctkové hodnoty ARGB, jako je například „#ffa0b1c3“. Jazyk DGML používá malou podmnožinu formátů definice barev Windows Presentation Foundation (WPF). Další informace najdete v tématu [třída barvy](http://go.microsoft.com/fwlink/?LinkId=182345).  
   
 ## <a name="DGML"></a> Syntaxe jazyka DGML  
  Následující tabulka popisuje typy prvků, které se používají v jazyce DGML:  
@@ -70,7 +70,7 @@ Orientovaný jazyka přímého značení grafů (DGML) popisuje informace, kter�
    Tento volitelný prvek obsahuje seznam `<Node/>` prvky, které definují uzly na mapě. Další informace najdete v tématu `<Node/>` elementu.  
   
   > [!NOTE]
-  >  Při odkazování nedefinovaného uzlu v `<Link/>` vytvoří element, mapy `<Node/>` element automaticky.  
+  > Při odkazování nedefinovaného uzlu v `<Link/>` vytvoří element, mapy `<Node/>` element automaticky.  
   
    Příklad:  
   
@@ -151,7 +151,7 @@ Orientovaný jazyka přímého značení grafů (DGML) popisuje informace, kter�
    Tento prvek definuje jedno propojení, které připojuje zdrojový uzel k cílovému uzlu. Zobrazí se v rámci `<Links></Links>` element seznamu.  
   
   > [!NOTE]
-  >  Pokud tento prvek odkazuje na nedefinovaný uzel, mapy dokumentu automaticky vytvoří uzel, který má zadané atributy, pokud existuje.  
+  > Pokud tento prvek odkazuje na nedefinovaný uzel, mapy dokumentu automaticky vytvoří uzel, který má zadané atributy, pokud existuje.  
   
    Tento prvek musí obsahovat následující atributy:  
   

@@ -11,12 +11,12 @@ ms.assetid: 0da81b98-f5e3-40d3-ba9a-94551378d0b4
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 3e5808d23f34c6d9cfa5c355092e0fd55b5f4270
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9a8c6d236f9f11f53e79e4239868815c7bbe9137
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60048656"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436922"
 ---
 # <a name="vsix-extension-schema-20-reference"></a>VSIX Extension Schema 2.0 – referenční informace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "60048656"
 Soubor manifestu VSIX nasazení popisuje obsah balíčku VSIX. Formát souboru se řídí schéma. Verze 2.0 tato schématu podporuje přidávání vlastních typů a atributů.  Je možné rozšířit schéma manifestu. Manifestu zaváděcího programu ignoruje XML elementů a atributů, které ho nerozumí.  
   
 > [!IMPORTANT]
->  Visual Studio 2015 můžete načíst soubory VSIX v sadě Visual Studio 2010, Visual Studio 2012 nebo Visual Studio 2013 formátech.  
+> Visual Studio 2015 můžete načíst soubory VSIX v sadě Visual Studio 2010, Visual Studio 2012 nebo Visual Studio 2013 formátech.  
   
 ## <a name="package-manifest-schema"></a>Schéma manifestu balíčku  
  Kořenový element souboru manifestu XML je `<PackageManifest>`, s jeden atribut `Version`, což je verze manifestu formátu. Pokud hlavní změny provedené ve formátu, formátu verze se změní. Toto téma popisuje formát manifestu verze 2.0, která je určená v manifestu tak, že nastavíte `Version` atributu na hodnotu verze = "2.0".  
@@ -129,7 +129,7 @@ Soubor manifestu VSIX nasazení popisuje obsah balíčku VSIX. Formát souboru s
         - Jedna verze # - jenom určená verze.  
   
         > [!IMPORTANT]
-        >  Verze 2.0 VSIX schématu byla zavedena v sadě Visual Studio 2012. Pro toto schéma používají, musíte mít Visual Studio 2012 nebo později na počítači nainstalovaný a použít VSIXInstaller.exe, které jsou součástí tohoto produktu. Můžete cílit starší verze sady Visual Studio s Visual Studio 2012 nebo novější VSIXInstaller, ale pouze pomocí novější verze Instalační služby.  
+        > Verze 2.0 VSIX schématu byla zavedena v sadě Visual Studio 2012. Pro toto schéma používají, musíte mít Visual Studio 2012 nebo později na počítači nainstalovaný a použít VSIXInstaller.exe, které jsou součástí tohoto produktu. Můžete cílit starší verze sady Visual Studio s Visual Studio 2012 nebo novější VSIXInstaller, ale pouze pomocí novější verze Instalační služby.  
   
     - `AnyAttribute*` – Tím `<InstallationTarget>` element umožňuje neuzavřenou množinu atributy, které bude přístupné za běhu jako slovník dvojice název hodnota.  
   

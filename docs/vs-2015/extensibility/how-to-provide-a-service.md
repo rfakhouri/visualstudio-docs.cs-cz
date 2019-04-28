@@ -10,12 +10,12 @@ ms.assetid: 12bc1f12-47b1-44f6-b8db-862aa88d50d1
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: ba007a8084355445f0404a9b0f7a2c1cee7b2005
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 565a8a91797c826b6419dc5a8488d7d3baf9cddc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60108179"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435914"
 ---
 # <a name="how-to-provide-a-service"></a>Postupy: Poskytování služby
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ VSPackage může poskytovat služby, které můžete použít jiné balíčky VS
  Další informace o službách najdete v tématu [základy služeb](../extensibility/internals/service-essentials.md) .  
   
 > [!NOTE]
->  VSPackage blížící se nenačte, Visual Studio čeká na všechny žádosti o služby, které poskytuje VSPackage byl dodán. Neumožňuje nové požadavky pro tyto služby. Neměli volat explicitně <xref:Microsoft.VisualStudio.Shell.Interop.IProfferService.RevokeService%2A> metoda odvolání přístupu služby při uvolnění.  
+> VSPackage blížící se nenačte, Visual Studio čeká na všechny žádosti o služby, které poskytuje VSPackage byl dodán. Neumožňuje nové požadavky pro tyto služby. Neměli volat explicitně <xref:Microsoft.VisualStudio.Shell.Interop.IProfferService.RevokeService%2A> metoda odvolání přístupu služby při uvolnění.  
   
 #### <a name="implementing-a-service"></a>Implementace služby  
   
@@ -91,7 +91,7 @@ VSPackage může poskytovat služby, které můžete použít jiné balíčky VS
      Tento atribut zaregistruje `SMyService` pomocí sady Visual Studio.  
   
     > [!NOTE]
-    >  Pokud chcete zaregistrovat službu, která nahrazuje jinou se stejným názvem, použijte <xref:Microsoft.VisualStudio.Shell.ProvideServiceOverrideAttribute>. Poznámka: Tento pouze jedno přepsání služby je povolen.  
+    > Pokud chcete zaregistrovat službu, která nahrazuje jinou se stejným názvem, použijte <xref:Microsoft.VisualStudio.Shell.ProvideServiceOverrideAttribute>. Poznámka: Tento pouze jedno přepsání služby je povolen.  
   
 ### <a name="adding-a-service"></a>Přidání služeb  
   
@@ -119,7 +119,7 @@ VSPackage může poskytovat služby, které můžete použít jiné balíčky VS
     ```  
   
     > [!NOTE]
-    >  Visual Studio může odmítnout žádost o poskytování služeb. Dělá to, pokud jiné VSPackage již poskytuje službu.  
+    > Visual Studio může odmítnout žádost o poskytování služeb. Dělá to, pokud jiné VSPackage již poskytuje službu.  
   
 3. Nyní můžete získat službu a použijte její metody. Ukážeme to v inicializátoru, ale můžete získat službu kamkoli chcete používat službu.  
   

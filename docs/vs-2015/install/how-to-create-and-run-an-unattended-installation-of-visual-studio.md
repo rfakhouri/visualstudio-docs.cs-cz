@@ -12,12 +12,12 @@ caps.latest.revision: 44
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: deabd34896b327f7cbbb35c7af75f5810dcfbf17
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 26e059d4fdc8eadd422924dd6bbda6f7c945ccfb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040543"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433055"
 ---
 # <a name="how-to-create-and-run-an-unattended-installation-of-visual-studio"></a>Postupy: Vytvoření a spuštění bezobslužné instalace sady Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Spuštěním instalační aplikace sady [!INCLUDE[vsprvs](../includes/vsprvs-md.
      Síťová cesta instalační aplikace sady [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] se podobá \\ \\ *ServerName*\IDEinstall\\*produktu*.exe.
 
     > [!NOTE]
-    >  Instalace může selhat, pokud libovolnou kombinaci název a cesta k souboru je delší než 260 znaků. Maximální délka cesty v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] je 221 znaků.  Název místní cesty by neměl přesáhnout 70 znaků a název síťové cesty by neměl překročit 39 znaků.
+    > Instalace může selhat, pokud libovolnou kombinaci název a cesta k souboru je delší než 260 znaků. Maximální délka cesty v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] je 221 znaků.  Název místní cesty by neměl přesáhnout 70 znaků a název síťové cesty by neměl překročit 39 znaků.
 
      Instalace může rovněž selhat, pokud názvy složek v cestě obsahují vložené mezery (například "\\\\*ServerName*\IDE instalace" nebo \\ \\ *ServerName*\Visual studio\\).
 
@@ -46,16 +46,16 @@ Spuštěním instalační aplikace sady [!INCLUDE[vsprvs](../includes/vsprvs-md.
  K nasazení [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] v bezobslužném režimu, je třeba upravit soubor AdminDeployment.xml. Chcete-li to provést, musíte nejprve vytvořit soubor AdminDeployment.xml pomocí `/CreateAdminFile`  *\<umístění souboru >* parametr příkazového řádku. Potom tento soubor můžete použít k vložení nasazení systému Visual Studio do vaší sítě nebo stáhnout do instalace, jestliže je tento soubor *jednotka*: \IDEinstall\packages adresáře. Soubor AdminDeployment.xml není jedinečný operační systém, architekturu, edice sady Visual Studio nebo jazyk operačního systému.
 
 > [!CAUTION]
->  V některých případech není nainstalována v soubor AdminDeployment.xml uvedeny jako vybrané položky. Pokud chcete tento problém vyřešit, umístěte položky označené jako "vybrané ="yes"" na **end** AdminDeployment.xml souboru.
+> V některých případech není nainstalována v soubor AdminDeployment.xml uvedeny jako vybrané položky. Pokud chcete tento problém vyřešit, umístěte položky označené jako "vybrané ="yes"" na **end** AdminDeployment.xml souboru.
 >
->  Pokud nechcete instalovat volitelné závislosti položku, musíte nejprve vybrat nadřazený a zrušte označení volitelné závislosti po nadřazeným prvkem, jak je znázorněno na následujícím snímku obrazovky:
+> Pokud nechcete instalovat volitelné závislosti položku, musíte nejprve vybrat nadřazený a zrušte označení volitelné závislosti po nadřazeným prvkem, jak je znázorněno na následujícím snímku obrazovky:
 >
->  ![Instalace položek na konci soubor AdminDeployment.xml](../install/media/vs2015-install-endoffileadmindeploy.PNG "vs2015_Install_EndOfFileAdminDeploy")
+> ![Instalace položek na konci soubor AdminDeployment.xml](../install/media/vs2015-install-endoffileadmindeploy.PNG "vs2015_Install_EndOfFileAdminDeploy")
 >
->  Dalším způsobem, jak to provést, je jednoduše vynechejte volitelné podřízené objekty nadřazeného – jinými slovy, nesmí obsahovat žádný "vybrané ="no"" položky – ale přesto musíte umístit všechny "vybrané ="yes"" položky na konci soubor AdminDeployment.xml.
+> Dalším způsobem, jak to provést, je jednoduše vynechejte volitelné podřízené objekty nadřazeného – jinými slovy, nesmí obsahovat žádný "vybrané ="no"" položky – ale přesto musíte umístit všechny "vybrané ="yes"" položky na konci soubor AdminDeployment.xml.
 
 > [!IMPORTANT]
->  Během instalace se počítač automaticky restartuje jednou nebo vícekrát. Po restartování, je nutné se přihlásit pod stejným uživatelským účtem, pomocí kterého byl použit k provedení instalace před restartováním počítače. Automatické restartování můžete vyhnout instalací nezbytných komponent před spuštěním bezobslužné instalace. Další informace najdete v oddílu s názvem "Vyhnout se restartování během instalace" v [Visual Studio Administrator Guide](../install/visual-studio-administrator-guide.md).
+> Během instalace se počítač automaticky restartuje jednou nebo vícekrát. Po restartování, je nutné se přihlásit pod stejným uživatelským účtem, pomocí kterého byl použit k provedení instalace před restartováním počítače. Automatické restartování můžete vyhnout instalací nezbytných komponent před spuštěním bezobslužné instalace. Další informace najdete v oddílu s názvem "Vyhnout se restartování během instalace" v [Visual Studio Administrator Guide](../install/visual-studio-administrator-guide.md).
 
  Schéma souboru AdminDeployment obsahuje následující prvky:
 
@@ -71,7 +71,7 @@ Spuštěním instalační aplikace sady [!INCLUDE[vsprvs](../includes/vsprvs-md.
 |BundleCustomizations|NoCacheOnlyMode|Ano&#124;výchozí|Zabrání předběžnému naplnění mezipaměti balíčku.|
 
 > [!WARNING]
->  Instalační aplikace bude respektovat stav výběru položky SelectableItem, i když je skrytý. Například pokud chcete volitelná položka vždy nainstalována, můžete ji označit jako skrytou a vybranou.
+> Instalační aplikace bude respektovat stav výběru položky SelectableItem, i když je skrytý. Například pokud chcete volitelná položka vždy nainstalována, můžete ji označit jako skrytou a vybranou.
 
 #### <a name="to-create-an-unattended-installation-of-visual-studio"></a>Vytvoření bezobslužné instalace sady Visual Studio
 
@@ -100,7 +100,7 @@ Spuštěním instalační aplikace sady [!INCLUDE[vsprvs](../includes/vsprvs-md.
  Pokud otevřete **ovládací panely** a znovu spusťte instalaci aplikace, můžete upravit funkce sady Visual Studio, odinstalovat programovací jazyky a opravit nebo odinstalovat Visual Studio.
 
 > [!NOTE]
->  Přihlašovací údaje pro správu musí mít v místním počítači pro použití režimu údržby.
+> Přihlašovací údaje pro správu musí mít v místním počítači pro použití režimu údržby.
 
 #### <a name="to-maintain-an-installation-on-a-client-computer"></a>Údržba instalace na klientském počítači
 

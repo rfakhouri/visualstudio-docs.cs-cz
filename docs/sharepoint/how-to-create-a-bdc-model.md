@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e4e05eae6339d55d16fb0cf6ba6ebeb9d1f4f296
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9126a0d3bb552f525247cbfb2243504a1effaa92
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60106654"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435475"
 ---
 # <a name="how-to-create-a-bdc-model"></a>Postupy: Vytvoření modelu služby BDC
   Obchodní Data připojení (BDC) model můžete vytvořit pomocí šablony pro tento druh položky a následným přidáním modelu do jakéhokoli projektu SharePoint. Další informace najdete v tématu [vytvoření modelu připojení obchodních dat](../sharepoint/creating-a-business-data-connectivity-model.md). Další informace o tom, jak návrhu modelu naleznete v tématu [navrhování modelu připojení obchodních dat](../sharepoint/designing-a-business-data-connectivity-model.md).
@@ -28,7 +28,7 @@ ms.locfileid: "60106654"
 1. V panelu nabídky zvolte **souboru** > **nový** > **projektu**.
 
     > [!NOTE]
-    >  Pokud vaše rozhraní IDE nastaveno pro použití vývojového nastavení jazyka Visual Basic, zvolte **souboru** > **nový projekt**.
+    > Pokud vaše rozhraní IDE nastaveno pro použití vývojového nastavení jazyka Visual Basic, zvolte **souboru** > **nový projekt**.
 
      **Nový projekt** zobrazí se dialogové okno.
 
@@ -43,7 +43,7 @@ ms.locfileid: "60106654"
      Bude testovat model na webu služby SharePoint, který jste zadali.
 
     > [!IMPORTANT]
-    >  Vzhledem k tomu, že modely služby BDC podporují pouze řešení farmy je nutné nasadit projekt jako řešení farmy.
+    > Vzhledem k tomu, že modely služby BDC podporují pouze řešení farmy je nutné nasadit projekt jako řešení farmy.
 
      Je vytvořen prázdný projekt SharePoint.
 

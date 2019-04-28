@@ -1,52 +1,51 @@
 ---
 title: IEnumDebugCustomAttributes::Clone | Dokumentace Microsoftu
-ms.date: 11/15/2016
-ms.prod: visual-studio-dev14
-ms.technology: vs-ide-sdk
+ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - IEnumCustomAttributes::Clone
 helpviewer_keywords:
 - IEnumDebugCustomAttributes::Clone
 ms.assetid: e6825000-e195-42b4-b296-bfe1e533d79b
-caps.latest.revision: 9
+author: gregvanl
 ms.author: gregvanl
 manager: jillfra
+ms.workload:
+- vssdk
 ms.openlocfilehash: a0cabc640329ffd6cb070cdd7550b88119185692
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54781803"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62551553"
 ---
 # <a name="ienumdebugcustomattributesclone"></a>IEnumDebugCustomAttributes::Clone
-[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+Vytvoří čítač, který obsahuje stejného stavu jako aktuální enumerátor výčtu.
 
-Vytvoří čítač, který obsahuje stejného stavu jako aktuální enumerátor výčtu.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```cpp#  
-HRESULT Clone (   
-   IEnumCustomAttributes** ppEnum  
-);  
-```  
-  
-```csharp  
-int Clone(  
-   out IEnumDebugCustomAttributes ppEnum  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- ppEnum  
- [out] Vrátí kopii objektu tento výčet jako samostatný objekt.  
-  
-## <a name="return-value"></a>Návratová hodnota  
- Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.  
-  
-## <a name="remarks"></a>Poznámky  
- Kopírování výčet má stejného stavu jako původní v době, kdy tato metoda je volána. Ale tuto kopii a původní stavy jsou oddělené a je možné změnit individuálně.  
-  
-## <a name="see-also"></a>Viz také  
- [IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md)
+## <a name="syntax"></a>Syntaxe
+
+```cpp
+HRESULT Clone ( 
+   IEnumCustomAttributes** ppEnum
+);
+```
+
+```csharp
+int Clone(
+   out IEnumDebugCustomAttributes ppEnum
+);
+```
+
+#### <a name="parameters"></a>Parametry
+ ppEnum
+
+ [out] Vrátí kopii objektu tento výčet jako samostatný objekt.
+
+## <a name="return-value"></a>Návratová hodnota
+ Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.
+
+## <a name="remarks"></a>Poznámky
+ Kopírování výčet má stejného stavu jako původní v době, kdy tato metoda je volána. Ale tuto kopii a původní stavy jsou oddělené a je možné změnit individuálně.
+
+## <a name="see-also"></a>Viz také
+- [IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md)

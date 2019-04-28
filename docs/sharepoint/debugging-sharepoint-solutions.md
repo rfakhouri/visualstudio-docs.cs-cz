@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cffed1a3905ca1a1aceb9d2cfdcf4abc89f83574
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 60aa38d5042625393132ffceb3cc226f44e67645
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060797"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443497"
 ---
 # <a name="debug-sharepoint-solutions"></a>Ladění řešení služby SharePoint
   Můžete ladit řešení služby SharePoint pomocí [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ladicího programu. Při spuštění ladění, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] nasadí soubory projektu pro SharePoint server a instanci webu služby SharePoint otevře ve webovém prohlížeči. Následující části popisují, jak ladit aplikace SharePoint v [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
@@ -103,7 +103,7 @@ ms.locfileid: "60060797"
 8. Pro pracovní postupy, přidruží k knihovny služby SharePoint, seznamu nebo web, který jste vybrali v pracovním postupu **Průvodce přizpůsobením SharePoint**.
 
    > [!NOTE]
-   >  Toto přidružení dojde pouze v případě, že jste vybrali **automaticky přidružení pracovního postupu** v průvodci.
+   > Toto přidružení dojde pouze v případě, že jste vybrali **automaticky přidružení pracovního postupu** v průvodci.
 
 9. Spouští přizpůsobitelné příkazy po nasazení.
 
@@ -126,7 +126,7 @@ ms.locfileid: "60060797"
  Při ladění projektů pracovních postupů [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] přidá šablona pracovního postupu (v závislosti na jeho typu) do knihovny nebo do seznamu. Šablona pracovního postupu potom lze spustit ručně nebo pomocí přidání nebo aktualizaci položky. Pak můžete použít [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ladění pracovního postupu.
 
 > [!NOTE]
->  Pokud chcete přidat odkazy na jiná sestavení, ujistěte se, že tato sestavení jsou nainstalované v globální mezipaměti sestavení ( [!INCLUDE[TLA2#tla_gac](../sharepoint/includes/tla2sharptla-gac-md.md)]). V opačném případě se nezdaří řešení pracovního postupu. Informace o postupu při instalaci sestavení naleznete v tématu [ručně spustit pracovní postup na dokument nebo položku](https://support.office.com/article/Manually-start-a-workflow-on-a-document-or-item-5C106E0E-6FF2-4A75-AF99-F01653BC7963).
+> Pokud chcete přidat odkazy na jiná sestavení, ujistěte se, že tato sestavení jsou nainstalované v globální mezipaměti sestavení ( [!INCLUDE[TLA2#tla_gac](../sharepoint/includes/tla2sharptla-gac-md.md)]). V opačném případě se nezdaří řešení pracovního postupu. Informace o postupu při instalaci sestavení naleznete v tématu [ručně spustit pracovní postup na dokument nebo položku](https://support.office.com/article/Manually-start-a-workflow-on-a-document-or-item-5C106E0E-6FF2-4A75-AF99-F01653BC7963).
 
  Proces nasazení, ale nespustí pracovního postupu. Pracovní postup je nutné spustit z webu služby SharePoint. Pracovní postup můžete spustit také pomocí klientské aplikace, jako je například Microsoft Office Word 2010, nebo pomocí samostatného kódu na straně serveru. Použijte jeden z přístupů podle **Průvodce přizpůsobením SharePoint**.
 

@@ -20,11 +20,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5b109fd995f54ede3aa2c8a6381cb9e6296a6970
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60074970"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62847507"
 ---
 # <a name="how-to-specify-debugger-settings"></a>Postupy: Určení nastavení ladicího programu
 V [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], můžete zadat různá nastavení pro chování ladicího programu, včetně zobrazení proměnné, určuje, zda jsou uvedeny některé upozornění, jak nastavit zarážky a jak zásadní ovlivňuje spuštěné programy. Určení nastavení ladicího programu v **možnosti** dialogové okno.

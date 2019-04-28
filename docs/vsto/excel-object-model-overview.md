@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bfee8d6183a8292f5c39140ada9d4787e4f027ac
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: df1045cd0b35a2c8d4afa765167693032c6d9936
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104538"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441810"
 ---
 # <a name="excel-object-model-overview"></a>Přehled modelu objektů aplikace Excel
   K vývoji řešení, která používají Microsoft Office Excel, můžete pracovat s objekty poskytované objektovému modelu Excelu. Toto téma představuje nejdůležitější objekty:
@@ -80,7 +80,7 @@ ms.locfileid: "60104538"
  V aplikaci Excel <xref:Microsoft.Office.Interop.Excel.Application> objekt představuje samotná aplikace Excel. <xref:Microsoft.Office.Interop.Excel.Application> Objekt poskytuje spoustu informací o běžící aplikaci možnosti použít pro tuto instanci a otevřete aktuální uživatelské objekty v instanci.
 
 > [!NOTE]
->  Neměli nastavíte <xref:Microsoft.Office.Interop.Excel.ApplicationClass.EnableEvents%2A> vlastnost <xref:Microsoft.Office.Interop.Excel.Application> objektu v aplikaci Excel a **false**. Nastavení této vlastnosti na hodnotu false zabrání Excelu vyvolání žádné události, včetně událostí hostitelské ovládací prvky.
+> Neměli nastavíte <xref:Microsoft.Office.Interop.Excel.ApplicationClass.EnableEvents%2A> vlastnost <xref:Microsoft.Office.Interop.Excel.Application> objektu v aplikaci Excel a **false**. Nastavení této vlastnosti na hodnotu false zabrání Excelu vyvolání žádné události, včetně událostí hostitelské ovládací prvky.
 
 ### <a name="workbook-object"></a>Objekt sešitu
  <xref:Microsoft.Office.Interop.Excel.Workbook> Objekt představuje jeden sešitu aplikace Excel.

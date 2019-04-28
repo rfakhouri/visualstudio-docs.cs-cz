@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 395c45b19559833549c9613278f1a4ddbb06f30a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ffd060ca442d0979c76781ae4467b28af69a42b3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104060"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415210"
 ---
 # <a name="expose-types-to-visual-designers"></a>Vystavení typů pro vizuální návrháře
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] aby bylo možné zobrazit vizuálního návrháře musí mít přístup do definice třídy a typ v době návrhu. Tříd jsou načteny z předdefinovanou sadu sestavení, které zahrnují závislost kompletní sadu aktuální projekt (odkazy a jejich závislosti). Může být také nezbytné pro vizuální návrháře tříd pro přístup k a typy, které jsou definovány v souborech generovaných vlastních nástrojů.
@@ -27,7 +27,7 @@ ms.locfileid: "60104060"
  Systém projektu obsahuje plnou podporu pro sledování změn do výstupního souboru vlastní nástroj, za předpokladu, že tyto změny jsou výsledkem spustit vlastní nástroj. Pokaždé, když je spustit vlastní nástroj, se vygeneruje nové dočasné přenositelné Spustitelné, a příslušné oznámení se odesílají do návrháře.
 
 > [!NOTE]
->  Protože dočasných spustitelný generování souboru probíhá na pozadí, jsou pro uživatele hlášeny žádné chyby, pokud kompilace se nezdaří.
+> Protože dočasných spustitelný generování souboru probíhá na pozadí, jsou pro uživatele hlášeny žádné chyby, pokud kompilace se nezdaří.
 
  Vlastní nástroje, které budou využívat podporu dočasné PE musí postupovat podle následujících pravidel:
 

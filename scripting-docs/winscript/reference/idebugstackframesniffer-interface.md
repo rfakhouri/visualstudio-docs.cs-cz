@@ -13,18 +13,18 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0e753261098133eb97f5010dcef5f602d283aac4
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: 5c9181b5013a9584a2a686ed0e499698be0b62b9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58149481"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432261"
 ---
 # <a name="idebugstackframesniffer-interface"></a>IDebugStackFrameSniffer – rozhraní
 Poskytuje způsob, jak vytvořit výčet logického zásobníku známé komponenta. Toto rozhraní implementují obvykle skriptovací stroje. Použití Správce ladění procesu toto rozhraní najít všechny rámce zásobníku přidružené k dané vlákno.  
   
 > [!NOTE]
->  Ladicí program volá tato rozhraní z vlákna, které vás zajímají. Skriptovací stroj musí identifikovat aktuální vlákno a vrátí odpovídající enumerátor.  
+> Ladicí program volá tato rozhraní z vlákna, které vás zajímají. Skriptovací stroj musí identifikovat aktuální vlákno a vrátí odpovídající enumerátor.  
   
 ## <a name="methods"></a>Metody  
  Kromě metod zděděných z `IUnknown`, `IDebugStackFrameSniffer` rozhraní poskytuje následující metody.  

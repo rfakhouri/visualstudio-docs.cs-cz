@@ -14,18 +14,18 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6b6ee9413a2394d0477cd1c7b1a0caf83dd6ad6d
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: d6cb4a3beb12d2b33b8b13441df66116fe449d09
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59651380"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431155"
 ---
 # <a name="creating-and-managing-databases-and-data-tier-applications-in-visual-studio"></a>Vytváření a Správa databází a aplikací datové vrstvy v sadě Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 [DŮLEŽITÉ]
->  Databázové projekty, které byly obsaženy v předchozích verzích [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] jsou teď součástí [!INCLUDE[sql_Denali_long](../includes/sql-denali-long-md.md)] nástroje. Další informace najdete v tématu [SQL Server Developer Tools](http://go.microsoft.com/fwlink/?LinkId=228126).
+> Databázové projekty, které byly obsaženy v předchozích verzích [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] jsou teď součástí [!INCLUDE[sql_Denali_long](../includes/sql-denali-long-md.md)] nástroje. Další informace najdete v tématu [SQL Server Developer Tools](http://go.microsoft.com/fwlink/?LinkId=228126).
 
  Databázové projekty můžete vytvářet nové databáze nové aplikace datové vrstvy (DAC) a k aktualizaci stávajících databází a aplikací datové vrstvy. Databázové projekty a projekty DAC umožňují použít verzi ovládacího prvku a projekt správy techniky k vývoji vaší databáze, jako v podstatě stejným způsobem, platí tyto techniky pro spravovaný nebo nativní kód. Vám může pomoct váš vývojový tým, správou změn databáze a databázové servery tak, že vytvoříte *DAC projektu*, *databázový projekt*, nebo *serverový projekt* a vložení v systému správy verzí. Členy týmu můžete pak rezervace souborů vytvořit, sestavit a otestovat změny v *izolované vývojové prostředí*, nebo izolovaného prostoru, než je sdílet s týmem. K zajištění kvality kódu, můžete dokončit váš tým a testovat všechny změny pro konkrétní verzi databáze v testovacím prostředí před nasazením změny do produkčního prostředí.
 

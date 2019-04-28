@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2be0a0e62942c369d47947582bf746332e201577
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: fccd422a0f24a65532e648a1254aecedc484903e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56623811"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425682"
 ---
 # <a name="registering-a-project-type"></a>Registrace typu projektu
 Když vytvoříte nový typ projektu, je nutné vytvořit položky registru, které umožňují [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] nerozpozná a nenahraje a pracovat s vašeho typu projektu. Tyto položky registru obvykle vytvoříte pomocí souboru registru skript (.rgs).
@@ -25,7 +25,7 @@ Když vytvoříte nový typ projektu, je nutné vytvořit položky registru, kte
  V následujícím příkladu příkazy z registru poskytují výchozí cesty a data kde je to možné, za nímž následuje tabulku, která obsahuje položky z registru skriptu příkazu for each. Tabulky poskytují položkami skriptu a další informace o dotazech.
 
 > [!NOTE]
->  Do registru následující informace slouží jako příklad typu a účely položky v registru skripty, které vás bude psaní registrace typu projektu. Skutečné položky a jejich použití se může lišit v závislosti na konkrétní požadavky na typu projektu. Zkontrolujte dostupných najít takový, který připomíná typ projektu, kterou vyvíjíte a pak zkontrolujte skript registru pro tuto ukázku.
+> Do registru následující informace slouží jako příklad typu a účely položky v registru skripty, které vás bude psaní registrace typu projektu. Skutečné položky a jejich použití se může lišit v závislosti na konkrétní požadavky na typu projektu. Zkontrolujte dostupných najít takový, který připomíná typ projektu, kterou vyvíjíte a pak zkontrolujte skript registru pro tuto ukázku.
 
  Následující příklady jsou z HKEY_CLASSES_ROOT.
 
@@ -193,7 +193,7 @@ Když vytvoříte nový typ projektu, je nutné vytvořit položky registru, kte
 
 |Název|Typ|Data|Popis|
 |----------|----------|----------|-----------------|
-|`@`|REG_SZ|Žádná|Výchozí hodnota, která označuje, že následující položky jsou pro různé soubory projektů položky.|
+|`@`|REG_SZ|Žádný|Výchozí hodnota, která označuje, že následující položky jsou pro různé soubory projektů položky.|
 |`@`|REG_SZ|`#%IDS_ADDITEM_TEMPLATES_ENTRY%`|Hodnota ID prostředku pro soubory šablon přidat nové položky.|
 |`TemplatesDir`|REG_SZ|`%TEMPLATE_PATH%\FigPrjProjectItems`|Výchozí cesta položky, které se zobrazí v **přidat novou položku** dialogové okno.|
 |`SortPriority`|REG_DWORD|`100 (vcprx64)`|Stanovuje pořadí řazení pro zobrazení v uzlu stromu **přidat novou položku** dialogové okno.|

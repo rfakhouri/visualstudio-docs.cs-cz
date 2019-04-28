@@ -12,12 +12,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7692e418c3e01b89a8dcf775350c062600351ac3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5bcb562d89ee68320c48cc778be3294a2af5c719
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60093043"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426944"
 ---
 # <a name="how-to-add-a-command-to-the-shortcut-menu"></a>Postupy: Přidání příkazu do místní nabídky
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ Příkazy nabídky můžete přidat do vašeho jazyka specifického pro doménu 
    Ukázky najdete v tématu [Visualization and Modeling SDK webu](http://go.microsoft.com/fwlink/?LinkID=185579).  
   
 > [!NOTE]
->  Můžete také upravit chování některé existující příkazy, jako je vyjmutí, vložení, Vybrat vše a tisk přepsáním metody v CommandSet.cs. Další informace najdete v tématu [jak: Úprava příkazu standardní nabídky](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).  
+> Můžete také upravit chování některé existující příkazy, jako je vyjmutí, vložení, Vybrat vše a tisk přepsáním metody v CommandSet.cs. Další informace najdete v tématu [jak: Úprava příkazu standardní nabídky](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).  
   
 ## <a name="defining-a-command-using-mef"></a>Definování příkazu pomocí MEF  
  Spravované rozšíření Framework (MEF) obsahuje alternativní metodu pro definování příkazy nabídky v nabídce diagramu. Jeho primárním účelem je umožnit DSL prodloužit vámi nebo jiné smluvní strany. Uživatele můžete nainstalovat jenom DSL nebo nainstalovat DSL a rozšíření. MEF, ale také snižuje práci po počáteční pracovní umožňující MEF v DSL definující příkazy místní nabídky.  
@@ -90,7 +90,7 @@ Příkazy nabídky můžete přidat do vašeho jazyka specifického pro doménu 
     ```  
   
     > [!NOTE]
-    >  Každé tlačítko nebo skupiny je určený identifikátor GUID a identifikátor celé číslo. Můžete vytvořit několik skupin a tlačítka se stejným GUID. Musí však mít různé identifikátory. Názvy GUID a ID názvy jsou přeloženy na skutečné identifikátory GUID a číselné ID v `<Symbols>` uzlu.  
+    > Každé tlačítko nebo skupiny je určený identifikátor GUID a identifikátor celé číslo. Můžete vytvořit několik skupin a tlačítka se stejným GUID. Musí však mít různé identifikátory. Názvy GUID a ID názvy jsou přeloženy na skutečné identifikátory GUID a číselné ID v `<Symbols>` uzlu.  
   
 3. Přidáte omezení viditelnosti pro příkaz tak, aby se načetl pouze v rámci jazyka specifického pro doménu. Další informace najdete v tématu [visibilityconstraints – Element](../extensibility/visibilityconstraints-element.md).  
   
@@ -120,7 +120,7 @@ Příkazy nabídky můžete přidat do vašeho jazyka specifického pro doménu 
 5. Nahraďte `{000...000}` s identifikátorem GUID, který identifikuje skupiny a položkami nabídky. Chcete-li získat nový identifikátor GUID, použijte **Create GUID** nástroj **nástroje** nabídky.  
   
     > [!NOTE]
-    >  Pokud chcete přidat další skupiny nebo položky nabídky, můžete použít stejný identifikátor GUID. Ale musíte použít nové hodnoty `IDSymbols`.  
+    > Pokud chcete přidat další skupiny nebo položky nabídky, můžete použít stejný identifikátor GUID. Ale musíte použít nové hodnoty `IDSymbols`.  
   
 6. V kódu, který jste zkopírovali z tohoto postupu nahraďte každý výskyt následující řetězce s vlastními řetězci:  
   
@@ -298,7 +298,7 @@ private const int cmdidMyContextMenuCommand = 1;
  Použijte stejnou hodnotu GUID jako vložený v **Commands.vsct**.  
   
 > [!NOTE]
->  Pokud změníte části symboly VSCT souboru, je nutné změnit tyto deklarace tak, aby odpovídaly. Také by se měl zvýšit číslo verze v Package.tt  
+> Pokud změníte části symboly VSCT souboru, je nutné změnit tyto deklarace tak, aby odpovídaly. Také by se měl zvýšit číslo verze v Package.tt  
   
  Zaregistrujte vaše příkazy nabídek jako součást této sady příkazů. `GetMenuCommands()` je volána při inicializaci diagramu:  
   

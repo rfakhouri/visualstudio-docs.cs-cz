@@ -11,12 +11,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 416baf8988f8d17a336f9fbef1eb0f9d9a72046b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 54d7bac2db7b1fb2a0a9e8b830a13646acd5300d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109000"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428267"
 ---
 # <a name="synchronized-settings-in-visual-studio"></a>Synchronizovaná nastavení v sadě Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ Při použití stejného účtu individuálního nastavení pro přihlášení k
  Nastavení dají synchronizovat do všech libovolná edice sady Visual Studio 2015, včetně edice Express a komunity. Nastavení jsou také synchronizovat napříč produkty řady Visual Studio, jako je například prolnutí. Všechny tyto produkty řady však může mít svůj vlastní nastavení, která se nesdílejí s Visual Studio. Například se nastavení specifické pro Blend v počítači A sdílet pomocí programu Blend v počítači B, ale ne s Visual Studio na počítači A a B.
 
 > [!WARNING]
->  Nastavení nejsou synchronizovány mezi Visual Studio 2013 a Visual Studio 2015. Při prvním otevření sady Visual Studio 2015, nastavení ze sady Visual Studio 2013 se migrují, ale proto se nedají migrovat zpět na Visual Studio 2013, po který.
+> Nastavení nejsou synchronizovány mezi Visual Studio 2013 a Visual Studio 2015. Při prvním otevření sady Visual Studio 2015, nastavení ze sady Visual Studio 2013 se migrují, ale proto se nedají migrovat zpět na Visual Studio 2013, po který.
 
 ## <a name="see-also"></a>Viz také
  [Přizpůsobení integrovaného vývojového prostředí](../ide/personalizing-the-visual-studio-ide.md)

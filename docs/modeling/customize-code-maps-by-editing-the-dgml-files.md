@@ -20,12 +20,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 78026f091d9ed61d38d5cf9bd98ec16d85e193c6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c9e41b99e7f2dd9349bc04bd4988dbf103095c94
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60047720"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441638"
 ---
 # <a name="customize-code-maps-by-editing-the-dgml-files"></a>Přizpůsobení map kódu úpravou souborů DGML
 
@@ -117,7 +117,7 @@ Přizpůsobení map kódu, můžete upravit jeho soubor Directed Graph Markup La
 - Skupiny prvky kódu a odkazy na základě určitých podmínek
 
 > [!TIP]
->  Pokud máte opakující se styly napříč mnoha prvků kódu nebo odkazy, můžete zvážit tyto prvky kódu nebo propojení použit kategorii a pak na tuto kategorii použít styl. Další informace najdete v tématu [přiřadit kategorie pro prvky kódu a odkazy](#AssignCategories) a [přiřazení vlastností prvky kódu a odkazy](#AssignProperties).
+> Pokud máte opakující se styly napříč mnoha prvků kódu nebo odkazy, můžete zvážit tyto prvky kódu nebo propojení použit kategorii a pak na tuto kategorii použít styl. Další informace najdete v tématu [přiřadit kategorie pro prvky kódu a odkazy](#AssignCategories) a [přiřazení vlastností prvky kódu a odkazy](#AssignProperties).
 
 ##### <a name="to-apply-a-custom-style-to-a-single-code-element"></a>Použití vlastního stylu na jediného prvku kódu
 
@@ -555,7 +555,7 @@ Přizpůsobení map kódu, můžete upravit jeho soubor Directed Graph Markup La
  Můžete propojit dokumenty nebo adresy URL pro prvky kódu nebo k propojení úpravou souboru .dgml na mapě a přidání `Reference` atribut `<Node/>` – element pro element kódu nebo `<Link/>` – element pro odkaz. Pak můžete otevřít a zobrazit tento obsah z elementu kódu nebo odkaz. `Reference` Atribut určuje cestu k obsahu. To může být cesta relativní k umístění souboru .dgml nebo absolutní cesta.
 
 > [!CAUTION]
->  Pokud použijete relativní cestu a soubor .dgml bude přesunut do jiného umístění, pak tuto cestu nebude možné interpretovat. Při pokusu o otevření a zobrazení propojeného obsahu, dojde k chybě oznamující, že obsah nelze zobrazit.
+> Pokud použijete relativní cestu a soubor .dgml bude přesunut do jiného umístění, pak tuto cestu nebude možné interpretovat. Při pokusu o otevření a zobrazení propojeného obsahu, dojde k chybě oznamující, že obsah nelze zobrazit.
 
  Můžete například chtít propojit následujících prvků kódu:
 
@@ -580,7 +580,7 @@ Přizpůsobení map kódu, můžete upravit jeho soubor Directed Graph Markup La
    - V `<Node/>` nebo `<Link/>` elementu, přidejte `Reference` atribut k určení umístění prvku kódu.
 
      > [!NOTE]
-     >  Může mít pouze jeden `Reference` atribut na prvek.
+     > Může mít pouze jeden `Reference` atribut na prvek.
 
      Příklad:
 

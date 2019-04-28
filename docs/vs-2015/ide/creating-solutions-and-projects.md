@@ -18,12 +18,12 @@ caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d91263dc0f66c048e308505e461c8b1536b77a06
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7fd6d8c63d8b0b56af20ac1211802524336d06bc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109807"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437582"
 ---
 # <a name="creating-solutions-and-projects"></a>Vytváření řešení a projektů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ ms.locfileid: "60109807"
 Projekty jsou logické kontejnery pro všechno, co potřebujete k sestavení aplikace. Při vytváření projektu výběrem **souboru &#124; nový &#124; projektu** v hlavní nabídce [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] vytvoří řešení, které ho obsahuje. Potom přidáte další nové nebo existující projekty do řešení v případě potřeby. Můžete vytvářet projekty z existujících souborů kódu a můžete vytvořit dočasné projekty (pouze .NET), který bude odstraněn, až budete hotovi s nimi.  
   
 > [!NOTE]
->  Popisy v tomto tématu jsou založeny na Visual Studio Community edition. Dialogová okna a příkazy nabídek, které vidíte, se mohou lišit od těch zde popsaných v závislosti na vašem nastavení nebo verzi systému Visual Studio. Chcete-li změnit nastavení, zvolte **nastavení importu a exportu** na **nástroje** nabídky. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Popisy v tomto tématu jsou založeny na Visual Studio Community edition. Dialogová okna a příkazy nabídek, které vidíte, se mohou lišit od těch zde popsaných v závislosti na vašem nastavení nebo verzi systému Visual Studio. Chcete-li změnit nastavení, zvolte **nastavení importu a exportu** na **nástroje** nabídky. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="create-a-project-from-an-installed-project-template"></a>Vytvoření projektu ze šablony projektu nainstalované  
  **Soubor &#124; nový &#124; projektu** v hlavní nabídce zobrazíte dialogové okno Nový projekt. V levém podokně v části **Intalled &#124; šablony** zvolili programovací jazyk a platformu nebo technologii, a potom vyberte z dostupných šablon v prostředním podokně.  
@@ -42,7 +42,7 @@ Projekty jsou logické kontejnery pro všechno, co potřebujete k sestavení apl
  Pokud máte kolekci dojde ke ztrátě zdrojových souborů, můžete snadno vytvořit projekt, který je obsahuje. Zvolte **souboru &#124; nový &#124;projekt z existujícího kódu** spustit **vytvořit projekt z existujících souborů kódu pomocí průvodce** a postupujte podle zobrazených výzev.  
   
 > [!TIP]
->  Tato možnost je nejvhodnější pro poměrně jednoduchá kolekce souborů.  
+> Tato možnost je nejvhodnější pro poměrně jednoduchá kolekce souborů.  
   
 ## <a name="create-a-temporary-project-c-and-visual-basic"></a>Vytvoření dočasného projektu (C# a Visual Basic)  
  Při práci s dočasné projekty, můžete vytvořit a experimentovat s projektem .NET bez zadání umístění na disku. Při vytváření projektu stačí vyberte typ projektu a šablonu a zadejte název do **nový projekt** dialogové okno. Kdykoli při práci s dočasný projekt, ho můžete uložit nebo ho zahodit.  
@@ -83,7 +83,7 @@ Projekty jsou logické kontejnery pro všechno, co potřebujete k sestavení apl
  Řešení můžete odstranit trvale, ale ne prostřednictvím [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Před odstraněním řešení, přesuňte všechny projekty, které můžete chtít znovu použít v jiné řešení. Potom k odstranění adresáře, který obsahuje soubory řešení .sln a .suo, použijte Průzkumník souborů.  
   
 > [!NOTE]
->  Soubor .suo je skrytý soubor, který není ve výchozím nastavení Průzkumníku souborů zobrazen.  
+> Soubor .suo je skrytý soubor, který není ve výchozím nastavení Průzkumníku souborů zobrazen.  
   
 ##### <a name="to-delete-a-solution"></a>Odstranit řešení  
   

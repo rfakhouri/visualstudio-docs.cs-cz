@@ -14,12 +14,12 @@ ms.assetid: 19f483b6-4d3e-424e-9d68-dc129c788e47
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c799d2733c4deca07cdcbe087b1b694f9d1725e6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: fb85bc64164acc09aef6464b69e72b7c6cf46d77
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54790824"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63405624"
 ---
 # <a name="binding-keyboard-shortcuts-to-menu-items"></a>Vytváření vazeb mezi klávesovými zkratkami a položkami nabídky
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ K vytvoření vazby příkazu nabídky vlastní klávesové zkratky, stačí př
 4. Zkuste různé kombinace kláves, dokud nenaleznete, která není namapována.  
   
    > [!NOTE]
-   >  Klávesové zkratky, které používají ALT může otevřít nabídku a ne přímo provedení příkazu. Proto **zkratku aktuálně používá** pole nesmí být prázdný, když zadáte zástupce, který zahrnuje ALT. Můžete ověřit, že zástupce není otevřete nabídku podle uzavírací **možnosti** dialogové okno a potom stisknutím kláves.  
+   > Klávesové zkratky, které používají ALT může otevřít nabídku a ne přímo provedení příkazu. Proto **zkratku aktuálně používá** pole nesmí být prázdný, když zadáte zástupce, který zahrnuje ALT. Můžete ověřit, že zástupce není otevřete nabídku podle uzavírací **možnosti** dialogové okno a potom stisknutím kláves.  
   
    Následující postup předpokládá, že máte existující balíčku VSPackage pomocí příkazu nabídky. Pokud potřebujete pomoc, to provedete, podívejte se na [vytváření rozšíření pomocí příkazu nabídky](../extensibility/creating-an-extension-with-a-menu-command.md).  
   
@@ -55,7 +55,7 @@ K vytvoření vazby příkazu nabídky vlastní klávesové zkratky, stačí př
 2. Vytvořte prázdnou `<KeyBindings>` části po `<Commands>` Pokud ještě není k dispozici.  
   
    > [!WARNING]
-   >  Další informace o klávesové zkratky, naleznete v tématu [klávesové zkratky](../extensibility/keybinding-element.md).  
+   > Další informace o klávesové zkratky, naleznete v tématu [klávesové zkratky](../extensibility/keybinding-element.md).  
   
     V `<KeyBindings>` části, vytvořte `<KeyBinding>` položka.  
   

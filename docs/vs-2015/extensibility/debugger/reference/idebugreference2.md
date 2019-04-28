@@ -12,12 +12,12 @@ ms.assetid: 3cfed312-f532-4bce-84a5-1677c14567d7
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 91c7525c293f4fe60dd446866d6e704c721a0795
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: ac7e825bd33c184d580ada96843366f6d1627f22
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54760936"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438971"
 ---
 # <a name="idebugreference2"></a>IDebugReference2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "54760936"
 Toto rozhraní představuje odkaz na vlastnost rámce zásobníku nebo některé jiné vlastnosti.  
   
 > [!NOTE]
->  `IDebugReference2` je vyhrazený pro budoucí použití a všechny jeho metody by měly vrátit `E_NOTIMPL`.  
+> `IDebugReference2` je vyhrazený pro budoucí použití a všechny jeho metody by měly vrátit `E_NOTIMPL`.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -59,7 +59,7 @@ IDebugReference2 : IUnknown
 ## <a name="remarks"></a>Poznámky  
   
 > [!NOTE]
->  Toto použití "vlastnosti" neměly by být zaměňovány s znamená členské proměnné třídy, i když `IDebugReference2` může představovat taková entita.  
+> Toto použití "vlastnosti" neměly by být zaměňovány s znamená členské proměnné třídy, i když `IDebugReference2` může představovat taková entita.  
   
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) představuje vlastnost, zatímco `IDebugReference2` představuje odkaz na vlastnost, obvykle odkaz na objekt v programu, který se právě ladí.  
   

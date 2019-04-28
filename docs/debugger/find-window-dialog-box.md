@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 392c0150c9bfb653a3a52c11c0d31097e04c9cc1
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56682827"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62849984"
 ---
 # <a name="find-window-dialog-box"></a>Dialogové okno vyhledávacího okna
 Použijte toto dialogové okno Vybrat a zobrazit její vlastnosti nebo zprávy. Chcete-li zobrazit toto dialogové okno, zvolte **najít okno** z **Spy** nabídky.

@@ -11,12 +11,12 @@ ms.assetid: 4948c494-3d4d-4f50-b3f9-959e73f90e4d
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f253f053f9f8fc9a7e377d78ae46307262c13006
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 03bb20abf32f7c320ed56f4a649a9f43453e7694
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54782696"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63447259"
 ---
 # <a name="important-commands-for-language-service-filters"></a>Důležité příkazy pro filtry služby jazyka
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ Pokud chcete vytvořit filtr služby plnohodnotný jazyk, vezměte v úvahu nás
 ## <a name="commands-to-handle"></a>Příkazy ke zpracování  
   
 > [!NOTE]
->  Není to povinné pro filtrování pro každý příkaz v následující tabulce.  
+> Není to povinné pro filtrování pro každý příkaz v následující tabulce.  
   
 |Příkaz|Popis|  
 |-------------|-----------------|  

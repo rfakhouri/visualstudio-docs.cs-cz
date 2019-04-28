@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 32ab1bb6d4bde8f6e75fdaeb4416372cdc236318
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: aebe1faf31d53fb44cf5efddbee154018e42a365
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56698999"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62847763"
 ---
 # <a name="how-to-run-the-worker-process-under-a-user-account"></a>Postupy: Spuštění pracovního procesu v rámci uživatelského účtu
 Nastavení počítače tak, aby mohly běžet [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] pracovního procesu (aspnet_wp.exe nebo w3wp.exe) v rámci uživatelského účtu, postupujte podle těchto kroků.
@@ -45,21 +45,22 @@ Nastavení počítače tak, aby mohly běžet [!INCLUDE[vstecasp](../code-qualit
 
 4. Na [!INCLUDE[winxpsvr](../debugger/includes/winxpsvr_md.md)], ve výchozím nastavení je nainstalována služba IIS 6.0. Odpovídající pracovní proces je w3wp.exe.To v režimu aspnet_wp.exe jako pracovní proces služby IIS 6.0, postupujte takto:
 
-   1.  Klikněte na tlačítko **Start**, klikněte na tlačítko **nástroje pro správu** a klikněte na tlačítko **Internetová informační služba**.
+   1. Klikněte na tlačítko **Start**, klikněte na tlačítko **nástroje pro správu** a klikněte na tlačítko **Internetová informační služba**.
 
-   2.  V **Internetová informační služba** dialogové okno, klikněte pravým tlačítkem na **weby** složky a vyberte **vlastnosti**.
+   2. V **Internetová informační služba** dialogové okno, klikněte pravým tlačítkem na **weby** složky a vyberte **vlastnosti**.
 
-   3.  V **webové servery – vlastnosti** dialogového okna zvolte **služby**.
+   3. V **webové servery – vlastnosti** dialogového okna zvolte **služby**.
 
-   4.  Vyberte **spustit webovou službu v izolovaném režimu IIS6.0**.
+   4. Vyberte **spustit webovou službu v izolovaném režimu IIS6.0**.
 
-   5.  Zavřít **vlastnosti** dialogové okno a **Správce služeb Internetu**.
+   5. Zavřít **vlastnosti** dialogové okno a **Správce služeb Internetu**.
 
 5. Otevřete příkazový řádek Windows a obnovení serveru spuštěním:
 
    ```cmd
    iisreset
    ```
+
    – nebo –
 
    ```cmd

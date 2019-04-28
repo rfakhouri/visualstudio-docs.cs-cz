@@ -11,12 +11,12 @@ ms.assetid: 0b40d495-f17f-4bb9-ace8-b365a7172784
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 0ef8bdb5f35ed727a207140dde6cf20f5645e5b3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 736031f1de24144f7b5f68ed44710e0c894df41a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60074122"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445723"
 ---
 # <a name="visual-studio-shell-integrated"></a>Visual Studio Shell (integrovaný režim)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ Prostředí sady Visual Studio integrované zahrnuje integrované vývojové pro
  Prostředí sady Visual Studio integrované je ve skutečnosti kombinace prostředí sady Visual Studio, samostatný plus další instalace, patří mezi ně konkrétní komponenty prostředí integrated shell.  Aplikace integrované prostředí by měl obsahovat obě izolovaného prostředí Distribuovatelný balíček z [Distribuovatelný balíček prostředí Microsoft Visual Studio Shell (izolovaný režim)](http://go.microsoft.com/fwlink/?LinkId=616022) a také Distribuovatelný balíček prostředí integrated shell z [Microsoft Visual Studio Shell (integrovaný režim) Redistributable Package](http://go.microsoft.com/fwlink/?LinkId=616021).  
   
 > [!NOTE]
->  Před přístupem k Distribuovatelné balíčky izolovaného a integrovaného prostředí, budete požádáni o vyplnění stručného zákaznického dotazníku.  Po vyplnění, budete přesměrováni na stránku Visual Studio Connect s odkazy na stažení balíčku k opětovné distribuci.  Odkazy ke stažení najdete na následné návštěvy webu Visual Studio Connect pod **programy &#124; VISUAL STUDIO 2015 integrované a IZOLOVANÉHO prostředí** kartu.  
+> Před přístupem k Distribuovatelné balíčky izolovaného a integrovaného prostředí, budete požádáni o vyplnění stručného zákaznického dotazníku.  Po vyplnění, budete přesměrováni na stránku Visual Studio Connect s odkazy na stažení balíčku k opětovné distribuci.  Odkazy ke stažení najdete na následné návštěvy webu Visual Studio Connect pod **programy &#124; VISUAL STUDIO 2015 integrované a IZOLOVANÉHO prostředí** kartu.  
   
  Pokud nainstalujete na stejném počítači jako s plnou verzí sady Visual Studio vaší aplikace integrované prostředí, součásti vaší aplikace bude integrovat přímo do sady Visual Studio.  
   

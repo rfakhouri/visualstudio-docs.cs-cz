@@ -12,12 +12,12 @@ caps.latest.revision: 53
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 28f8cd324079a50a20312022ea6daaba843f8564
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1aaff1fa5d31fe22c8a0b079498ffc07a11b9a7e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60100323"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446741"
 ---
 # <a name="walkthrough-creating-a-custom-text-template-host"></a>Návod: Vytvoření vlastního hostitele textových šablon
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ A *textové šablony*<em>hostitele</em> poskytuje prostředí, která umožňuje
  Můžete napsat vlastního hostitele. Pokud chcete použít *transformace textové šablony* mimo [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nebo pokud chcete integrovat vlastní nástroje, které tuto funkci. Pokud chcete vytvořit vlastního hostitele, je nutné vytvořit třídu, která dědí z <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>. Dokumentaci jednotlivých metod najdete v tématu <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>.  
   
 > [!WARNING]
->  Pokud píšete [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozšíření nebo balíčku, vezměte v úvahu místo vytváření vlastního hostitele použijete službu šablonování textu. Další informace najdete v tématu [volání transformací textu v rozšíření VS](../modeling/invoking-text-transformation-in-a-vs-extension.md).  
+> Pokud píšete [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozšíření nebo balíčku, vezměte v úvahu místo vytváření vlastního hostitele použijete službu šablonování textu. Další informace najdete v tématu [volání transformací textu v rozšíření VS](../modeling/invoking-text-transformation-in-a-vs-extension.md).  
   
  Tento návod obsahuje následující úlohy:  
   
@@ -732,7 +732,7 @@ A *textové šablony*<em>hostitele</em> poskytuje prostředí, která umožňuje
 2. Přidejte do souboru následující kód:  
   
     > [!NOTE]
-    >  Programovací jazyk textové šablony se nemusí shodovat s jazykem vlastního hostitele.  
+    > Programovací jazyk textové šablony se nemusí shodovat s jazykem vlastního hostitele.  
   
     ```csharp  
     Text Template Host Test  
@@ -785,7 +785,7 @@ A *textové šablony*<em>hostitele</em> poskytuje prostředí, která umožňuje
      `<YOUR PATH>CustomHost\bin\Debug\CustomHost.exe`  
   
     > [!NOTE]
-    >  Místo zadání adresy můžete soubor CustomHost.exe přejděte v **Windows Explorer** a potom tento soubor přetáhnout do okna příkazového řádku.  
+    > Místo zadání adresy můžete soubor CustomHost.exe přejděte v **Windows Explorer** a potom tento soubor přetáhnout do okna příkazového řádku.  
   
 3. Zadejte mezeru.  
   
@@ -796,7 +796,7 @@ A *textové šablony*<em>hostitele</em> poskytuje prostředí, která umožňuje
      `C:\<YOUR PATH>TestTemplate.tt`  
   
     > [!NOTE]
-    >  Místo zadání adresy můžete soubor testtemplate.TT vyhledat Procházet v **Windows Explorer** a potom tento soubor přetáhnout do okna příkazového řádku.  
+    > Místo zadání adresy můžete soubor testtemplate.TT vyhledat Procházet v **Windows Explorer** a potom tento soubor přetáhnout do okna příkazového řádku.  
   
      Aplikace vlastního hostitele se spustí a dokončí proces transformace textové šablony.  
   

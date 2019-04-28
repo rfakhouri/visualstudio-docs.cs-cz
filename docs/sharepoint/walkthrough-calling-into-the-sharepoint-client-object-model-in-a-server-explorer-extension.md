@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 13ea06abff2237c0b9262ba01dcb243afe6c3c3a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4881604c4fe2ab85f4c32361eddb5f5bb228b3cd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063111"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430447"
 ---
 # <a name="walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension"></a>Návod: Volání do objektového modelu klienta SharePoint v rozšíření Průzkumníka serveru
   Tento návod ukazuje, jak volat z rozšíření pro objektového modelu klienta SharePoint **připojení služby SharePoint** uzel v **Průzkumníka serveru**. Další informace o tom, jak pomocí objektového modelu klienta SharePoint, naleznete v tématu [volání do objektových modelů služby SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).
@@ -36,7 +36,7 @@ ms.locfileid: "60063111"
 - Ladění a testování rozšíření.
 
 > [!NOTE]
->  Rozšíření, které vytvoříte v tomto názorném postupu se podobá rozšíření, které vytvoříte v [názorný postup: Rozšíření Průzkumníka serveru pro zobrazení částí webu](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md). Tento návod používá objektového modelu serveru SharePoint, ale tento návod provede stejné úlohy pomocí objektového modelu klienta.
+> Rozšíření, které vytvoříte v tomto názorném postupu se podobá rozšíření, které vytvoříte v [názorný postup: Rozšíření Průzkumníka serveru pro zobrazení částí webu](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md). Tento návod používá objektového modelu serveru SharePoint, ale tento návod provede stejné úlohy pomocí objektového modelu klienta.
 
 ## <a name="prerequisites"></a>Požadavky
  Budete potřebovat následující komponenty na vývojovém počítači k dokončení tohoto návodu:
@@ -69,7 +69,7 @@ Znalost následujících konceptů je užitečná, ale není požadována k doko
 3. V **nový projekt** dialogového okna rozbalte **Visual C#** nebo **jazyka Visual Basic** uzly a klikněte na tlačítko **rozšiřitelnost**.
 
     > [!NOTE]
-    >  **Rozšiřitelnost** uzel je dostupný jenom v případě, že nainstalujete Visual Studio SDK. Další informace najdete v oddílu požadavky dříve v tomto tématu.
+    > **Rozšiřitelnost** uzel je dostupný jenom v případě, že nainstalujete Visual Studio SDK. Další informace najdete v oddílu požadavky dříve v tomto tématu.
 
 4. V horní části dialogového okna zvolte **rozhraní .NET Framework 4.5** v seznam verzí rozhraní .NET Framework.
 
@@ -161,7 +161,7 @@ Znalost následujících konceptů je užitečná, ale není požadována k doko
 1. Vložte následující kód do **SiteNodeExtension** soubor kódu **WebPartNodeExtension** projektu.
 
     > [!NOTE]
-    >  Po přidání tohoto kódu bude mít projekt několik chyb kompilace. K těmto chybám předejdete přidáním kódu v dalších krocích.
+    > Po přidání tohoto kódu bude mít projekt několik chyb kompilace. K těmto chybám předejdete přidáním kódu v dalších krocích.
 
      [!code-csharp[SPExtensibility.SPExplorer.WebPartNode#1](../sharepoint/codesnippet/CSharp/webpartnode/webpartnodeextension/sitenodeextension.cs#1)]
      [!code-vb[SPExtensibility.SPExplorer.WebPartNode#1](../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnode.webpartnode/webpartnodeextension/sitenodeextension.vb#1)]
@@ -205,7 +205,7 @@ Znalost následujících konceptů je užitečná, ale není požadována k doko
 6. V **přidat nové aktivum** v dialogu **typ** klikněte na položku **Microsoft.VisualStudio.MefComponent**.
 
     > [!NOTE]
-    >  Tato hodnota odpovídá `MefComponent` element v souboru extension.vsixmanifest. Tento prvek určuje název sestavení rozšíření v balíčku souboru VSIX. Další informace najdete v tématu [MEFComponent – Element (VSX schéma)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).
+    > Tato hodnota odpovídá `MefComponent` element v souboru extension.vsixmanifest. Tento prvek určuje název sestavení rozšíření v balíčku souboru VSIX. Další informace najdete v tématu [MEFComponent – Element (VSX schéma)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).
 
 7. V **zdroj** klikněte na položku **projekt v aktuálním řešení**.
 

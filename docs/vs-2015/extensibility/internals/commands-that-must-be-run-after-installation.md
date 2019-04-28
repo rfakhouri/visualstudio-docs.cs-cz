@@ -10,12 +10,12 @@ ms.assetid: c9601f2e-2c6e-4da9-9a6e-e707319b39e2
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8448b00085ab7e7a151c935eee4d8a8b1423bd1b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 158119759f8e90161e1f3b5267be498dfc1c9b38
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54794817"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441530"
 ---
 # <a name="commands-that-must-be-run-after-installation"></a>Příkazy, které se musí spustit po instalaci
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -23,14 +23,14 @@ ms.locfileid: "54794817"
 Pokud nasazení vašeho rozšíření pomocí souboru MSI, je nutné spustit `devenv /setup` jako součást vaší instalaci sady Visual Studio ke zjištění vašich rozšíření.  
   
 > [!NOTE]
->  Informace v tomto tématu se vztahují na hledání DevEnv za použití Visual Studio 2008 a starší. Informace o tom, jak zjistit DevEnv pomocí novější verze sady Visual Studio najdete v tématu [zjišťování požadavky na systém](../../extensibility/internals/detecting-system-requirements.md).  
+> Informace v tomto tématu se vztahují na hledání DevEnv za použití Visual Studio 2008 a starší. Informace o tom, jak zjistit DevEnv pomocí novější verze sady Visual Studio najdete v tématu [zjišťování požadavky na systém](../../extensibility/internals/detecting-system-requirements.md).  
   
 ## <a name="finding-devenvexe"></a>Hledání devenv.exe  
  Můžete najít všechny verze devenv.exe z registru hodnot, které [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] instalační programy zápisu, pomocí RegLocator tabulka a tabulka AppSearch k ukládání hodnot registru jako vlastnosti. Další informace najdete v tématu [zjišťování požadavky na systém](../../extensibility/internals/detecting-system-requirements.md).  
   
 ### <a name="reglocator-table-rows-to-locate-devenvexe-from-different-versions-of-visual-studio"></a>Řádky tabulky RegLocator najít devenv.exe z různých verzí sady Visual Studio  
   
-|Signature_|Kořenové|Key|Název|Typ|  
+|Signature_|Kořenové|Key|Název|Type|  
 |-----------------|----------|---------|----------|----------|  
 |RL_DevenvExe_2002|2|SOFTWARE\Microsoft\VisualStudio\7.0\Setup\VS|EnvironmentPath|2|  
 |RL_DevenvExe_2003|2|SOFTWARE\Microsoft\VisualStudio\7.1\Setup\VS|EnvironmentPath|2|  
@@ -59,7 +59,7 @@ Pokud nasazení vašeho rozšíření pomocí souboru MSI, je nutné spustit `de
   
 ### <a name="customaction-table-rows-to-run-devenvexe"></a>Řádky tabulky CustomAction ke spuštění devenv.exe  
   
-|Akce|Typ|Zdroj|Target|  
+|Akce|Type|Source|Target|  
 |------------|----------|------------|------------|  
 |CA_RunDevenv2002|1586|DEVENV_EXE_2002|/setup|  
 |CA_RunDevenv2003|1586|DEVENV_EXE_2003|/setup|  
@@ -69,7 +69,7 @@ Pokud nasazení vašeho rozšíření pomocí souboru MSI, je nutné spustit `de
  Vlastní akce musí být vytvořen do tabulky InstallExecuteSequence naplánovat pro provedení během instalace. Použijte odpovídající vlastnost v jednotlivých řádcích sloupce podmínka zabráníte tak případnému vlastní akci spuštění jestli verzi [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] není nainstalovaná v systému.  
   
 > [!NOTE]
->  `Null` Vlastnosti vyhodnotit `False` při použití v podmínkách.  
+> `Null` Vlastnosti vyhodnotit `False` při použití v podmínkách.  
   
  Hodnota pořadí sloupce pro všechny vlastní akce závisí na jiné pořadí hodnoty v balíčku Instalační služby systému Windows. Pořadí hodnot by měl být devenv.exe vlastní akce Spustit jako nejblíže bezprostředně před parametr InstallFinalize standardních akcí.  
   

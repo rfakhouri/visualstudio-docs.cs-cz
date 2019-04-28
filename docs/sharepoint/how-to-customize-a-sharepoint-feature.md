@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e54d2dc388ca308e037fb8ff918f521ee16e9092
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e7a00f3c58f917e7355a63ebca71c74127826a2e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60067258"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63429218"
 ---
 # <a name="how-to-customize-a-sharepoint-feature"></a>Postupy: Přizpůsobení funkce služby SharePoint
   Můžete vytvořit a přizpůsobit funkce služby SharePoint pomocí návrháře funkcí v sadě Visual Studio. Můžete například nastavit obor funkce a přidat další funkce jako závislosti. Ve výchozím nastavení je otevřený Návrhář funkce při přidání nové funkce v Průzkumníku řešení nebo Průzkumníku balíčků služby SharePoint.
@@ -49,7 +49,7 @@ ms.locfileid: "60067258"
 2. Rozbalte funkce, rozbalte FeatureName, rozbalte FeatureName.feature a pak otevřete  *\<FeatureName >. Template.xml* souboru.
 
     > [!NOTE]
-    >  Když otevřete soubor manifestu XML funkce šablony, soubory se automaticky ověří a upozornění, která se zobrazí v okně Seznam chyb můžete ignorovat.
+    > Když otevřete soubor manifestu XML funkce šablony, soubory se automaticky ověří a upozornění, která se zobrazí v okně Seznam chyb můžete ignorovat.
 
 ## <a name="change-the-manifest-template"></a>Změny v šabloně manifestu
  Můžete změnit kód XML pro soubor manifestu funkce v editoru XML sady Visual Studio nebo v podokně šablony manifestu. Jakékoli změny kódu XML se sloučí do souboru manifestu balíčku pro funkci. Můžete například změnit v šabloně manifestu pro přizpůsobení vlastnost funkce.
@@ -70,7 +70,7 @@ ms.locfileid: "60067258"
  Můžete zakázat funkce návrháře a vytvořit *feature.xml* soubor ručně. Při prvním provedení tohoto postupu, aktuální nastavení v Návrháři funkce se ukládají do souboru XML šablony funkce. Potom můžete upravit nebo přepsat kód XML.
 
 > [!NOTE]
->  Je-li přidat nebo odebrat položky Sharepointového projektu v souboru XML, Designer funkce je zakázáno, tyto položky projektu nejsou zabaleny.
+> Je-li přidat nebo odebrat položky Sharepointového projektu v souboru XML, Designer funkce je zakázáno, tyto položky projektu nejsou zabaleny.
 
 #### <a name="to-overwrite-packaged-manifest-file-by-disabling-the-designer"></a>K přepsání souboru manifestu balíčku zakázáním návrháře
 

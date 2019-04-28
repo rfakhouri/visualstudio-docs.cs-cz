@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ea3f72a26938a50cddbb622565173be603436ba3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: dc0f56331c11c6c33561774d38ef79e286a4133a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60092757"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445568"
 ---
 # <a name="create-outlook-form-regions"></a>Vytváření oblastí formulářů aplikace Outlook
   Oblasti formuláře můžete použít k přizpůsobení formulářů aplikace Microsoft Office Outlook. Visual Studio poskytuje pokročilé nástroje, které usnadňují návrh, vývoj a ladění oblasti formuláře.
@@ -90,7 +90,7 @@ ms.locfileid: "60092757"
 - Úložiště formulářů Outlooku (*.ofs*) soubor.
 
     > [!NOTE]
-    >  Tento soubor je přidat do projektu pouze pokud import oblasti formuláře, která je navržená v Outlooku.
+    > Tento soubor je přidat do projektu pouze pokud import oblasti formuláře, která je navržená v Outlooku.
 
 #### <a name="form-region-factory-class"></a>Třída objekt pro vytváření oblasti formuláře
  Soubor kódu oblasti formuláře obsahuje částečné třídy, která implementuje <xref:Microsoft.Office.Tools.Outlook.IFormRegionFactory> rozhraní. Toto je třída objekt pro vytváření oblasti formuláře. Třída objekt pro vytváření oblasti formuláře zodpovídá za vytvoření nové instance oblasti formuláře.
@@ -110,7 +110,7 @@ ms.locfileid: "60092757"
  Návrhářem oblasti formuláře umožňuje navrhovat rozložení a vzhled oblasti formuláře. Přetáhněte ovládací prvky spravovaného na plochu návrháře, poklepejte na ovládací prvky pro otevření obslužné rutiny událostí a nastavte vlastnosti **vlastnosti** okna.
 
 > [!NOTE]
->  Můžete najít vlastnosti, které ovlivňují způsob, jak se oblast formuláře zobrazí v aplikaci Outlook pod **Manifest** uzlu **vlastnosti** okno.
+> Můžete najít vlastnosti, které ovlivňují způsob, jak se oblast formuláře zobrazí v aplikaci Outlook pod **Manifest** uzlu **vlastnosti** okno.
 
  Návrhářem oblasti formuláře je k dispozici pouze v případě, že vyberete **navrhnout novou oblast formuláře** v **vyberte způsob vytvoření oblasti formuláře** stránku **novou oblast formuláře Outlooku** Průvodce.
 
@@ -138,7 +138,7 @@ ms.locfileid: "60092757"
  Můžete změnit vlastnosti oblasti formuláře v `InitializeManifest` metoda třídy objekt pro vytváření oblasti formuláře.
 
 > [!NOTE]
->  Import oblasti formuláře, musí být pracujete v projektu, který cílí stejnou verzi aplikace Outlook, kterou jste nainstalovali na vývojovém počítači. Například pokud máte nainstalovanou aplikaci Outlook 2010, import formuláře oblasti se pouze pracovní v projektu bylo vytvořeno s použitím **doplňku aplikace Outlook 2010** šablony projektu.
+> Import oblasti formuláře, musí být pracujete v projektu, který cílí stejnou verzi aplikace Outlook, kterou jste nainstalovali na vývojovém počítači. Například pokud máte nainstalovanou aplikaci Outlook 2010, import formuláře oblasti se pouze pracovní v projektu bylo vytvořeno s použitím **doplňku aplikace Outlook 2010** šablony projektu.
 
 ### <a name="update-an-imported-form-regions-design"></a>Aktualizovat na oblast formuláře importované návrhu
  Můžete přidat, odebrat nebo změnit ovládacích prvků na oblast formuláře. Než to uděláte, zálohujte veškerý kód, který jste přidali do souboru kódu oblasti formuláře. Pak otevřete *.ofs* souboru v aplikaci Outlook, upravit oblast formuláře a následně změny uložte. Použití **novou oblast formuláře Outlooku** průvodce importujte upravené *.ofs* souboru. Potom můžete vložit kód do souboru kódu novou oblast formuláře.

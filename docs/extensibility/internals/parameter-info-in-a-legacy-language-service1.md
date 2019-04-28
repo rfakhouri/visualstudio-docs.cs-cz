@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0530e5547fd17e1db84e7164039b507cb4583703
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 836788e0d9d44c7da5dda44ce80f76ab91642dda
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60086310"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63423969"
 ---
 # <a name="parameter-info-in-a-legacy-language-service"></a>Informace o parametrech ve službě starší verze jazyka
 Popisu tlačítka technologie IntelliSense informace o parametrech poskytuje uživatelům nápovědu, kde jsou v jazykové konstrukce.
@@ -27,7 +27,7 @@ Popisu tlačítka technologie IntelliSense informace o parametrech poskytuje už
  Služby starší verze jazyka jsou implementovány jako součást sady VSPackage, ale novější způsob implementace funkce služba jazyka je pro použití rozšíření MEF. Další informace najdete v tématu [rozšíření pro Editor a jazykových služeb](../../extensibility/extending-the-editor-and-language-services.md).
 
 > [!NOTE]
->  Doporučujeme vám, že začnete používat nový editor API co nejdříve. Tím vylepšíme výkonu vaší služby jazyka a umožňují využívat nové funkce editoru.
+> Doporučujeme vám, že začnete používat nový editor API co nejdříve. Tím vylepšíme výkonu vaší služby jazyka a umožňují využívat nové funkce editoru.
 
 ## <a name="how-parameter-info-tooltips-work"></a>Jak fungují popisky informace o parametru
  Po zadání příkazu v editoru sady VSPackage zobrazí okno malé popisku obsahující definici příkazu uživatel píše. Například, pokud zadáte příkaz Microsoft Foundation Classes (MFC) (například `pMainFrame ->UpdateWindow`) a stisknutím klávesy otevírací závorkou zahajte seznam parametrů, návrhy metod zobrazí definici `UpdateWindow` metody.

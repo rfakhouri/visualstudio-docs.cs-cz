@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: eb7b7e847c116f3aab38a12ec9801988bb8b3fc1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60111542"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62912841"
 ---
 # <a name="stepping-in-break-mode"></a>Krokování v režimu pozastavení
 Následující část popisuje proces, který nastane, pokud je v režimu přerušení ladicího programu a musí krokovat kód:

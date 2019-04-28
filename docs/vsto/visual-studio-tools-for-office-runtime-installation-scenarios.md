@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 39360019e798a5f76bfe5344aca6f02abbbfa6a3
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 507bce496405f615343a9c109ff71196d814af08
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56638605"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438728"
 ---
 # <a name="visual-studio-tools-for-office-runtime-installation-scenarios"></a>Visual Studio Tools for Office runtime instalace scénáře
   Můžete nainstalovat Visual Studio 2010 Tools for Office runtime třemi způsoby:
@@ -46,7 +46,7 @@ ms.locfileid: "56638605"
  Při instalaci nástroje Office developer tools v sadě Visual Studio, rozšíření Office pro [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] se vždy instalují na vývojovém počítači. Rozšíření Office pro rozhraní .NET Framework 3.5 instalují pouze v případě, že rozhraní .NET Framework 3.5 už existuje ve vývojovém počítači. Pokud je po instalaci nainstalovat rozhraní .NET Framework 3.5 [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)], modul runtime automaticky nainstaluje rozšíření Office pro rozhraní .NET Framework 3.5 při prvním vytvoření projektu aplikace Office cílí na rozhraní .NET Framework 3.5.
 
 > [!WARNING]
->  Nelze vytvořit projekt sady Office, který se zaměřuje rozhraní .NET Framework 3.5 pomocí [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] nebo novější.
+> Nelze vytvořit projekt sady Office, který se zaměřuje rozhraní .NET Framework 3.5 pomocí [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] nebo novější.
 
  Další informace o tom, jak Office developer tools nainstalovat, naleznete v tématu [jak: Konfigurace počítače pro vývoj řešení pro systém Office](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md).
 

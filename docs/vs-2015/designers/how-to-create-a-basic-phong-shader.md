@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 78ff2ecf77d3d8943601b8bd0779fa37811ec2d2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7153c02f5cd3d494edb56b218512ba5de87f318a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60113752"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438423"
 ---
 # <a name="how-to-create-a-basic-phong-shader"></a>Postupy: Vytvoření základního Phongova shaderu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ Tento dokument popisuje způsob použití návrháře shaderu a orientovaného g
    Následující obrázek znázorňuje dokončené shader graf a náhled shaderu použité pro model čajové konvice.  
   
 > [!NOTE]
->  K předvedení lépe efekt shaderu na tomto obrázku, byl zadán oranžové barvy s použitím **MaterialDiffuse** byl zadán parametr shaderu a dokončení se kovové hledání s použitím **MaterialSpecular** a **MaterialSpecularPower** parametry. Informace o parametrech materiálu, naleznete v části Náhled shadery v [návrháře shaderu](../designers/shader-designer.md).  
+> K předvedení lépe efekt shaderu na tomto obrázku, byl zadán oranžové barvy s použitím **MaterialDiffuse** byl zadán parametr shaderu a dokončení se kovové hledání s použitím **MaterialSpecular** a **MaterialSpecularPower** parametry. Informace o parametrech materiálu, naleznete v části Náhled shadery v [návrháře shaderu](../designers/shader-designer.md).  
   
  ![Graf shaderu a náhled vlivu](../designers/media/digit-lighting-graph.png "číslice. osvětlení grafu")  
   
@@ -62,9 +62,9 @@ Tento dokument popisuje způsob použití návrháře shaderu a orientovaného g
  Následující obrázek znázorňuje shaderu, který je popsaný v tomto dokumentu se použijí na 3D model. **MaterialSpecular** je nastavena na (1,00 0,50, 0.20 a novější, 0,00) a jeho **MaterialSpecularPower** je nastavena na 16.  
   
 > [!NOTE]
->  **MaterialSpecular** vlastnost určuje zřejmý dokončit materiál povrchu. Vysoce lesklý povrch například lupy nebo plasty obvykle mají odlesky barva, která je jasně odstín prázdné. Kovové surface obvykle mají odlesky barva, která se blíží k jeho rozptýlení barvy. Povrch Satén dokončit obvykle mají odlesky barva, která je tmavé stínování šedé.  
+> **MaterialSpecular** vlastnost určuje zřejmý dokončit materiál povrchu. Vysoce lesklý povrch například lupy nebo plasty obvykle mají odlesky barva, která je jasně odstín prázdné. Kovové surface obvykle mají odlesky barva, která se blíží k jeho rozptýlení barvy. Povrch Satén dokončit obvykle mají odlesky barva, která je tmavé stínování šedé.  
 >   
->  **MaterialSpecularPower** vlastnost určuje, jak velký odlesky jsou. Simulace vysoké množství odrazů využívá méně výrazné, lokalizované informace zvýrazní. Velmi nízké odlesků umožňuje simulovat velký, úklidem světla, které mohou oversaturate a skrýt barvu celého povrchu.  
+> **MaterialSpecularPower** vlastnost určuje, jak velký odlesky jsou. Simulace vysoké množství odrazů využívá méně výrazné, lokalizované informace zvýrazní. Velmi nízké odlesků umožňuje simulovat velký, úklidem světla, které mohou oversaturate a skrýt barvu celého povrchu.  
   
  ![Použít pro model osvětlení Phong](../designers/media/digit-lighting-model.png "Model osvětlení číslice")  
   

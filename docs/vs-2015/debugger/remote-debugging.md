@@ -19,12 +19,12 @@ caps.latest.revision: 81
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a6fe3d3f144b192ef14ff52c942c75d9edd1be85
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 41b3e662668967d07e2a304d589d498dd2c7b51d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60076208"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446102"
 ---
 # <a name="remote-debugging"></a>Vzdálené ladění
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ Můžete buď stáhnout nástroje remote tools přímo v zařízení nebo na ser
 2. Na stránce pro stahování zvolte verzi nástrojů, který odpovídá operačnímu systému (x 86, x64 nebo verzi ARM) a stáhněte si nástroje remote tools.
   
     > [!IMPORTANT]
-    >  Doporučujeme že nainstalovat nejnovější verzi nástrojů remote tools, která odpovídá verzi sady Visual Studio. Verze se nedoporučuje.  
+    > Doporučujeme že nainstalovat nejnovější verzi nástrojů remote tools, která odpovídá verzi sady Visual Studio. Verze se nedoporučuje.  
     >   
     >  Kromě toho musíte nainstalovat nástroje remote tools, které mají stejnou architekturu jako operační systém, na kterém chcete nainstalovat. Jinými slovy Pokud chcete ladit 32bitovou aplikaci na vzdáleném počítači s 64bitovým operačním systémem, musíte nainstalovat 64bitová verze produktu remote tools na vzdáleném počítači.  
   
@@ -145,7 +145,7 @@ Můžete najít vzdáleného ladicího programu (**msvsmon.exe**) na počítači
    Seznam čísel portů používaných ve výchozím nastavení, najdete v části [přiřazení portů vzdáleného ladicího programu](../debugger/remote-debugger-port-assignments.md).  
   
    > [!WARNING]
-  >  Můžete také spustit nástroje Remote Tools v režimu bez ověřování, ale tento režim se rozhodně nedoporučuje. Při spuštění v tomto režimu není žádné zabezpečení sítě. Zvolte režim bez ověřování jenom v případě, že jste si jisti, že síť není ohroženy škodlivými nebo nevyžádanými daty.
+  > Můžete také spustit nástroje Remote Tools v režimu bez ověřování, ale tento režim se rozhodně nedoporučuje. Při spuštění v tomto režimu není žádné zabezpečení sítě. Zvolte režim bez ověřování jenom v případě, že jste si jisti, že síť není ohroženy škodlivými nebo nevyžádanými daty.
 
 ## <a name="bkmk_configureService"></a> (Volitelné) Konfigurovat vzdálený ladicí program jako službu
  Pro ladění v technologii ASP.NET a jiné prostředí serveru, musíte buď spustit vzdálený ladicí program jako správce nebo, je vždy spuštěn, chcete-li spustit vzdálený ladicí program jako službu.
@@ -192,7 +192,7 @@ Můžete najít vzdáleného ladicího programu (**msvsmon.exe**) na počítači
   
 5. Proveďte změny následujících vlastností:  
   
-   |Nastavení|Value|
+   |Nastavení|Hodnota|
    |-|-|  
    |Vzdálený příkaz|C:\remotetemp\mymfc.exe|  
    |Pracovní adresář|C:\remotetemp|  
@@ -221,7 +221,7 @@ Můžete najít vzdáleného ladicího programu (**msvsmon.exe**) na počítači
 11. V počítači, Visual Studio měli byste vidět zastavením spuštění na zarážce.  
   
     > [!TIP]
-    >  Alternativně můžete nasadit soubory jako samostatný krok. V **Průzkumníku řešení klikněte** klikněte pravým tlačítkem myši **mymfc** uzel a klikněte na tlačítko **nasadit**.  
+    > Alternativně můžete nasadit soubory jako samostatný krok. V **Průzkumníku řešení klikněte** klikněte pravým tlačítkem myši **mymfc** uzel a klikněte na tlačítko **nasadit**.  
   
     Pokud máte souborům bez kódu, které je potřeba v aplikaci použít, budete muset zahrnout je do projektu sady Visual Studio. Vytvořte složku projektu pro další soubory (v **Průzkumníka řešení**, klikněte na tlačítko **Add / novou složku**.) Pak přidejte soubory do složky (v **Průzkumníku řešení**, klikněte na tlačítko **přidat nebo existující položky**, vyberte soubory.). Na **vlastnosti** stránky pro každý soubor, nastavte **kopírovat do výstupního adresáře** k **vždy Kopírovat**.  
   
@@ -253,7 +253,7 @@ Můžete najít vzdáleného ladicího programu (**msvsmon.exe**) na počítači
 10. Zkopírujte spustitelný soubor, který jste právě sestavili ze sady Visual Studio do nově vytvořené složky na vzdáleném počítači.
   
     > [!CAUTION]
-    >  Nedovolte, aby byly změny v kódu nebo opětovné sestavení (nebo je nutné tento krok opakovat). Spustitelný soubor, který jste zkopírovali do vzdáleného počítače se musí přesně odpovídat, místní zdroje a symbolů.
+    > Nedovolte, aby byly změny v kódu nebo opětovné sestavení (nebo je nutné tento krok opakovat). Spustitelný soubor, který jste zkopírovali do vzdáleného počítače se musí přesně odpovídat, místní zdroje a symbolů.
 
     Můžete zkopírovat projektu ručně, pomocí příkazu Xcopy, Robocopy, Powershellu nebo jiné možnosti.
   

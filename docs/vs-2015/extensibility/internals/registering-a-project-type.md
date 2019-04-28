@@ -12,12 +12,12 @@ ms.assetid: dfc0e231-6b4e-447d-9d64-0e66dea3394a
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 9f56de9b3ce3f1faf5a63fa6b8fd8574a57b82f3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 63e0140b752adda02aba6126580ec08ee1f7536a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54774308"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436622"
 ---
 # <a name="registering-a-project-type"></a>Registrace typu projektu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ Když vytvoříte nový typ projektu, je nutné vytvořit položky registru, kte
  V následujícím příkladu příkazy z registru poskytují výchozí cesty a data kde je to možné, za nímž následuje tabulku, která obsahuje položky z registru skriptu příkazu for each. Tabulky poskytují položkami skriptu a další informace o dotazech.  
   
 > [!NOTE]
->  Do registru následující informace slouží jako příklad typu a účely položky v registru skripty, které vás bude psaní registrace typu projektu. Skutečné položky a jejich použití se může lišit v závislosti na konkrétní požadavky na typu projektu. Zkontrolujte dostupných najít takový, který připomíná typ projektu, kterou vyvíjíte a pak zkontrolujte skript registru pro tuto ukázku.  
+> Do registru následující informace slouží jako příklad typu a účely položky v registru skripty, které vás bude psaní registrace typu projektu. Skutečné položky a jejich použití se může lišit v závislosti na konkrétní požadavky na typu projektu. Zkontrolujte dostupných najít takový, který připomíná typ projektu, kterou vyvíjíte a pak zkontrolujte skript registru pro tuto ukázku.  
   
  Následující příklady jsou z HKEY_CLASSES_ROOT.  
   
@@ -195,7 +195,7 @@ Když vytvoříte nový typ projektu, je nutné vytvořit položky registru, kte
   
 |Název|Typ|Data|Popis|  
 |----------|----------|----------|-----------------|  
-|`@`|REG_SZ|Žádná|Výchozí hodnota, která označuje, že následující položky jsou pro různé soubory projektů položky.|  
+|`@`|REG_SZ|Žádný|Výchozí hodnota, která označuje, že následující položky jsou pro různé soubory projektů položky.|  
 |`@`|REG_SZ|`#%IDS_ADDITEM_TEMPLATES_ENTRY%`|Hodnota ID prostředku pro soubory šablon přidat nové položky.|  
 |`TemplatesDir`|REG_SZ|`%TEMPLATE_PATH%\FigPrjProjectItems`|Výchozí cesta položky, které se zobrazí v **přidat novou položku** dialogové okno.|  
 |`SortPriority`|REG_DWORD|`100 (vcprx64)`|Stanovuje pořadí řazení pro zobrazení v uzlu stromu **přidat novou položku** dialogové okno.|  

@@ -20,11 +20,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1134ac538487487834b754407a3cc1a90175c56b
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526022"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62849944"
 ---
 # <a name="expressions-in-the-visual-studio-debugger"></a>Výrazy v ladicím programu sady Visual Studio
 Ladicího programu sady Visual Studio obsahuje hodnotitele výrazu, které pracují při zadání výrazu v **QuickWatch** dialogovém okně **Watch** okna, nebo **okamžité** okna. Vyhodnocení výrazu jsou také v práci **zarážky** okno a mnoha dalších místech v ladicím programu.
@@ -106,7 +106,7 @@ Vnitřní funkce ladicího programu:
 |**Windows 8**|WindowsGetStringLen(), WindowsGetStringRawBuffer()<br /><br /> Tyto funkce vyžadují proces, který je právě laděna, aby byla spuštěna v systému Windows 8. Ladění s výpisem paměti soubory vygenerované ze zařízení s Windows 8 také vyžaduje, aby Visual Studio počítače s Windows 8. Nicméně pokud zařízení s Windows 8 ladíte vzdáleně, počítač Visual Studio může běžet Windows 7.|
 |**Různé**|__log2<br /><br /> Vrátí základní 2 zadané celé číslo, zaokrouhlí na nejbližší menší celé číslo v protokolu.|
 
-## <a name="ccli---unsupported-expressions"></a>C + +/ CLI - nepodporované výrazy
+## <a name="ccli---unsupported-expressions"></a>C++/ CLI - nepodporované výrazy
 
 - Přetypování, které se týkají ukazatele nebo uživatelem definované přetypování, nejsou podporovány.
 

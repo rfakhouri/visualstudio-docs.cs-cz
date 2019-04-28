@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8773b9f80299c1a46b6a57506d09f9f4ca32b998
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d56a36693d995687a2dddede3d60ada44c8d32bd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060771"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436205"
 ---
 # <a name="debugging-or-disabling-project-code-in-xaml-designer"></a>Ladění nebo zakázání kódu projektu v Návrháři XAML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -80,12 +80,12 @@ V mnoha případech může být způsobeno neošetřenými výjimkami v Návrhá
      Můžete přepínat na tlačítko znovu pro opětovné povolení kódu projektu.  
   
     > [!NOTE]
-    >  Pro projekty, které cílí ARM nebo X64 procesory, Visual Studio nelze spustit kód projektu v návrháři, proto **zakázat kód projektu** je tlačítko neaktivní v návrháři.  
+    > Pro projekty, které cílí ARM nebo X64 procesory, Visual Studio nelze spustit kód projektu v návrháři, proto **zakázat kód projektu** je tlačítko neaktivní v návrháři.  
   
 - Možnost způsobí, že návrháře znovu načíst a zakáže pak veškerý kód pro přidružený projekt.  
   
     > [!NOTE]
-    >  Zakázání kódu projektu může vést ke ztrátám v návrhovém. Alternativou je pro ladění kódu spuštěného v návrháři.  
+    > Zakázání kódu projektu může vést ke ztrátám v návrhovém. Alternativou je pro ladění kódu spuštěného v návrháři.  
   
 ## <a name="see-also"></a>Viz také  
  [Návrh XAML v sadě Visual Studio a Blend pro Visual Studio](../designers/designing-xaml-in-visual-studio.md)

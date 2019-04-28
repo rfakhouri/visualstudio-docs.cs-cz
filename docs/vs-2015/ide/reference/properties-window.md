@@ -21,12 +21,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: beb0296834986648f47357da50d4022c1f632823
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 582905042938d79a1885279bd19c18f48b49bb84
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59658783"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438036"
 ---
 # <a name="properties-window"></a>Okno vlastností
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -58,25 +58,25 @@ Toto okno k zobrazení a změna vlastností návrhu a událostí vybraných obje
  Zobrazí události objektu.  
   
 > [!NOTE]
->  To **vlastnosti** ovládací prvek panelu nástrojů okna je pouze k dispozici, když je formulář nebo návrhář ovládacího prvku je aktivní v kontextu [!INCLUDE[csprcs](../../includes/csprcs-md.md)] projektu. Při úpravách souborů XAML, události se zobrazí na samostatné kartě v okně Vlastnosti.  
+> To **vlastnosti** ovládací prvek panelu nástrojů okna je pouze k dispozici, když je formulář nebo návrhář ovládacího prvku je aktivní v kontextu [!INCLUDE[csprcs](../../includes/csprcs-md.md)] projektu. Při úpravách souborů XAML, události se zobrazí na samostatné kartě v okně Vlastnosti.  
   
  Zprávy  
  Obsahuje seznam všech zpráv Windows. Umožňuje přidat nebo odstranit zadané funkce obslužné rutiny pro zprávy zadané pro vybranou třídu.  
   
 > [!NOTE]
->  To **vlastnosti** ovládací prvek panelu nástrojů okna je k dispozici pouze při **zobrazení tříd** aktivní okno v kontextu [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] projektu.  
+> To **vlastnosti** ovládací prvek panelu nástrojů okna je k dispozici pouze při **zobrazení tříd** aktivní okno v kontextu [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] projektu.  
   
  Overrides  
  Obsahuje seznam všech virtuálních funkcí pro vybranou třídu a umožňuje přidat nebo odstranit přepisující funkce.  
   
 > [!NOTE]
->  To **vlastnosti** ovládací prvek panelu nástrojů okna je k dispozici pouze při **zobrazení tříd** aktivní okno v kontextu [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] projektu.  
+> To **vlastnosti** ovládací prvek panelu nástrojů okna je k dispozici pouze při **zobrazení tříd** aktivní okno v kontextu [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] projektu.  
   
  Podokno s popisem  
  Zobrazuje typ vlastnosti a krátký popis vlastnosti. Popis vlastnosti vypínat a zapínat pomocí příkazu popis v místní nabídce můžete vypnout.  
   
 > [!NOTE]
->  To **vlastnosti** ovládací prvek panelu nástrojů okna není k dispozici při úpravách souborů XAML v návrháři.  
+> To **vlastnosti** ovládací prvek panelu nástrojů okna není k dispozici při úpravách souborů XAML v návrháři.  
   
  Zobrazení miniatur  
  Zobrazí vizuální znázornění aktuálně vybraného prvku při úpravách souborů XAML v návrháři.  

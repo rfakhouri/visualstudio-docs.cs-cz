@@ -13,12 +13,12 @@ caps.latest.revision: 12
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: 96f4d628d32aec9a0f7eb2d091a017edfba3d8ac
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: e130f2248ae6715b3248226c780bc162e1ff01ef
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54773145"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426649"
 ---
 # <a name="how-to-specify-additional-code-information-by-using-analysisassume"></a>Postupy: Určení dalších informací o kódu pomocí __analysis_assume
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Můžete zadat informace pro nástroj pro analýzu kódu pro kód C/C++, který 
  Nástroj pro analýzu kódu předpokládá, že je reprezentována výrazem podmínka pravdivá v místě, kde funkce se zobrazí a bude platit pořád, dokud je změněn výrazu, například v přiřazením do proměnné.  
   
 > [!NOTE]
->  `__analysis_assume` nemá žádný vliv optimalizace kódu. Mimo nástroj pro analýzu kódu `__analysis_assume` je definován jako no-op.  
+> `__analysis_assume` nemá žádný vliv optimalizace kódu. Mimo nástroj pro analýzu kódu `__analysis_assume` je definován jako no-op.  
   
 ## <a name="example"></a>Příklad  
  Následující kód používá `__analysis_assume` Chcete-li opravit toto upozornění analýzy kódu [C6388](../code-quality/c6388.md):  

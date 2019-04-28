@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7d0a24301f7571225ed1002ce4e331f29fd4d77c
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57873868"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62824139"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Scénář: Změna návrhu pomocí vizualizace a modelování
 
@@ -95,7 +95,7 @@ Další informace:
 
 - [Mapování závislostí napříč vaším řešením](../modeling/map-dependencies-across-your-solutions.md)
 
-- [Postupy: Přidání diagramů tříd do projektů (návrhář tříd)](../ide/class-designer/how-to-add-class-diagrams-to-projects.md)
+- [Postupy: Přidání diagramů tříd do projektů (Návrhář tříd)](../ide/class-designer/how-to-add-class-diagrams-to-projects.md)
 
 - [Sada Modeling SDK pro Visual Studio – jazyky specifické pro doménu](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)
 
@@ -383,7 +383,7 @@ Diagram třídy má následující hlavní funkce:
 
 Jako výchozí bod pro zkoumání a probírání existujících tříd můžete použít Návrháře tříd pro vytvoření diagramů tříd z kódu.
 
-- [Postupy: Přidání diagramů tříd do projektů (návrhář tříd)](../ide/class-designer/how-to-add-class-diagrams-to-projects.md)
+- [Postupy: Přidání diagramů tříd do projektů (Návrhář tříd)](../ide/class-designer/how-to-add-class-diagrams-to-projects.md)
 
 #### <a name="summary-strengths-of-class-diagrams"></a>Shrnutí: Silné stránky diagramů tříd
  Diagramy tříd umožňují definovat:

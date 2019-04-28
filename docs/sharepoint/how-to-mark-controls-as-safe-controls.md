@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0d2dfe0da64abb9540724c05d13b84715a684af0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 30bb597288c19328bb71ce7b5212200991d7181e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082032"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443070"
 ---
 # <a name="how-to-mark-controls-as-safe-controls"></a>Postupy: Označení ovládacích prvků jako bezpečných
   Pro zabezpečení SharePoint rozlišuje mezi webové ovládací prvky, které jsou chráněné proti injektáži skriptu a webové ovládací prvky, které nejsou. Ovládací prvky, chráněné nebo *bezpečné ovládací prvky*, je přístupný nedůvěryhodným uživatelům. Můžete označit ovládacích prvků jako bezpečných ve vlastnosti položky bezpečných ovládacích prvků položky Sharepointového projektu nebo v **návrháři balíčku** při přidávání sestavení do balíčku. Další informace naleznete v tématu
@@ -27,7 +27,7 @@ ms.locfileid: "60082032"
 - [soubor Web.config Změna nastavení](http://go.microsoft.com/fwlink/?LinkId=178965) a [registrace do webové části sestavení jako ovládací prvek bezpečný](http://go.microsoft.com/fwlink/?LinkId=171013).
 
 > [!IMPORTANT]
->  Tyto postupy jsou pro ilustraci. Označení ovládacích prvků jako bezpečných pouze v případě, že jste si jisti, že jsou zabezpečené.
+> Tyto postupy jsou pro ilustraci. Označení ovládacích prvků jako bezpečných pouze v případě, že jste si jisti, že jsou zabezpečené.
 
 ## <a name="marking-safe-controls-in-the-safe-control-entries-property"></a>Označení bezpečné ovládací prvky ve vlastnosti položky bezpečného řízení
 
@@ -85,7 +85,7 @@ ms.locfileid: "60082032"
 
 12. Zadejte hodnoty pro vlastnosti v následující tabulce.
 
-    |Název vlastnosti|Hodnota|
+    |Název vlastnosti|Value|
     |-------------------|-----------|
     |Obor názvů|Plně kvalifikovaný obor názvů pro ovládací prvek, jako například **BdcModelProject1.VisualWebPart1**.|
     |Název typu|Button1|
@@ -94,7 +94,7 @@ ms.locfileid: "60082032"
     |Zabezpečeno proti skriptům|Nechte **bezpečné skriptu proti** zrušte zaškrtnutí políčka.|
 
     > [!NOTE]
-    >  **Název sestavení** hodnotu pro sestavení pomocí přidat **Upřesnit** karty **návrháři balíčku** nemůže být token, musí být sestavení se silným názvem. Další informace najdete v tématu [vytvoření a použití sestavení](http://go.microsoft.com/fwlink/?LinkId=177513).
+    > **Název sestavení** hodnotu pro sestavení pomocí přidat **Upřesnit** karty **návrháři balíčku** nemůže být token, musí být sestavení se silným názvem. Další informace najdete v tématu [vytvoření a použití sestavení](http://go.microsoft.com/fwlink/?LinkId=177513).
 
 13. Zvolte **kartu** klávesy vytvořte jinou položku bezpečný ovládací prvek.
 

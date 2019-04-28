@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d0799bdff6957e811c365fe153a722d25e306366
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 25365c5599d299189b07ec5c30124aac0004f390
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60086673"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444954"
 ---
 # <a name="walkthrough-display-light-bulb-suggestions"></a>Návod: Zobrazení návrhů
 Ikony žárovky jsou ikony v editoru sady Visual Studio, které se rozbalí a zobrazí sadu akcí, například opravy problémů, které jsou identifikované analyzátorů integrované kódu a refaktoring kódu.
@@ -177,7 +177,7 @@ Ikony žárovky jsou ikony v editoru sady Visual Studio, které se rozbalí a zo
 6. Implementace <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource.GetSuggestedActions%2A> metodu, která vrací pole <xref:Microsoft.VisualStudio.Language.Intellisense.SuggestedActionSet> objektů, které obsahují různé <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction> objekty. Tato metoda je volána při rozbalení žárovky.
 
     > [!WARNING]
-    >  Ujistěte se, že implementace `HasSuggestedActionsAsync()` a `GetSuggestedActions()` jsou konzistentní vzhledem k aplikacím; který je, pokud `HasSuggestedActionsAsync()` vrátí `true`, pak `GetSuggestedActions()` by měl mít některé akce pro zobrazení. V mnoha případech `HasSuggestedActionsAsync()` je volána těsně před `GetSuggestedActions()`, ale není to vždy. Například, pokud uživatel vyvolá akce žárovky stisknutím kombinace kláves (**CTRL +** .) pouze `GetSuggestedActions()` je volána.
+    > Ujistěte se, že implementace `HasSuggestedActionsAsync()` a `GetSuggestedActions()` jsou konzistentní vzhledem k aplikacím; který je, pokud `HasSuggestedActionsAsync()` vrátí `true`, pak `GetSuggestedActions()` by měl mít některé akce pro zobrazení. V mnoha případech `HasSuggestedActionsAsync()` je volána těsně před `GetSuggestedActions()`, ale není to vždy. Například, pokud uživatel vyvolá akce žárovky stisknutím kombinace kláves (**CTRL +** .) pouze `GetSuggestedActions()` je volána.
 
     ```csharp
     public IEnumerable<SuggestedActionSet> GetSuggestedActions(ISuggestedActionCategorySet requestedActionCategories, SnapshotSpan range, CancellationToken cancellationToken)
@@ -326,7 +326,7 @@ Ikony žárovky jsou ikony v editoru sady Visual Studio, které se rozbalí a zo
     ```
 
     > [!WARNING]
-    >  Akce žárovky **Invoke** metoda neočekává se zobrazit uživatelské rozhraní. Pokud vaše akce vyvolali nové uživatelské rozhraní (třeba ve verzi preview nebo výběr dialogové okno), nezobrazují přímo v rámci uživatelského rozhraní **Invoke** metoda, ale místo toho naplánovat zobrazit uživatelské rozhraní po návratu z **Invoke**.
+    > Akce žárovky **Invoke** metoda neočekává se zobrazit uživatelské rozhraní. Pokud vaše akce vyvolali nové uživatelské rozhraní (třeba ve verzi preview nebo výběr dialogové okno), nezobrazují přímo v rámci uživatelského rozhraní **Invoke** metoda, ale místo toho naplánovat zobrazit uživatelské rozhraní po návratu z **Invoke**.
 
 10. K dokončení provádění, přidejte `Dispose()` a `TryGetTelemetryId()` metody.
 

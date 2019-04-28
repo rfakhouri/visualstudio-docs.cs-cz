@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 81020496c1e80718d1aa0995791762d55ef70a76
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9cc23e140f0bfa2654cef1c3faeb805620a683b0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104496"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438530"
 ---
 # <a name="walkthrough-create-your-first-document-level-customization-for-excel"></a>Návod: Vytvoření prvního přizpůsobení na úrovni dokumentu pro Excel
   Tento úvodní názorný postup ukazuje, jak k vytvoření přizpůsobení na úrovni dokumentu pro aplikaci Microsoft Office Excel. Funkce, které vytvoříte v tento druh řešení jsou k dispozici pouze při otevření konkrétní sešitu. Nelze použít přizpůsobení úrovni dokumentu provést změny celou aplikaci, například zobrazení novou kartu pásu karet při otevření libovolné sešitu.
@@ -106,7 +106,7 @@ ms.locfileid: "60104496"
      **Tento text byl přidán s použitím návrháře.**
 
 > [!WARNING]
->  Pokud přidáte tento řádek textu do buňky **A2**, se přepíše jiným kódem v tomto příkladu.
+> Pokud přidáte tento řádek textu do buňky **A2**, se přepíše jiným kódem v tomto příkladu.
 
 ## <a name="add-text-to-a-worksheet-programmatically"></a>Přidejte text do listu prostřednictvím kódu programu
  V dalším kroku přidejte kód do souboru kódu List1. Nový kód používá objektový model aplikace Excel k přidání druhý řádek textu do sešitu. Ve výchozím nastavení List1 soubor kódu obsahuje následující generovaného kódu:

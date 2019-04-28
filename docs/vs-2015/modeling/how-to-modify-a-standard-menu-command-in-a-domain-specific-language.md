@@ -12,12 +12,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 53b75732c636a551e3a000008d3ddcca2aa686cb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 966a81f7863f71296bb7b6bd307a5e3a5241c783
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60058477"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441038"
 ---
 # <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>Postupy: Úprava příkazu standardní nabídky v jazyce specifickém pro doménu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ Můžete změnit chování některé standardní příkazy, které jsou automati
    Toto téma vysvětluje postup.  
   
 > [!NOTE]
->  Pokud chcete vytvořit vlastní příkazy nabídek, přečtěte si téma [jak: Přidání příkazu do místní nabídky](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).  
+> Pokud chcete vytvořit vlastní příkazy nabídek, přečtěte si téma [jak: Přidání příkazu do místní nabídky](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).  
   
 ## <a name="what"></a> Jaké příkazy lze upravit?  
   
@@ -52,7 +52,7 @@ Můžete změnit chování některé standardní příkazy, které jsou automati
 5. Zavřete soubor bez uložení úprav.  
   
     > [!NOTE]
-    >  Obvykle byste neměli upravovat soubory, které byly vytvořeny. Veškeré úpravy budou ztraceny při příštím tyto soubory jsou vygenerovány.  
+    > Obvykle byste neměli upravovat soubory, které byly vytvořeny. Veškeré úpravy budou ztraceny při příštím tyto soubory jsou vygenerovány.  
   
 ## <a name="extend"></a> Rozšíření příslušný příkaz set – třída  
  Vytvořte nový soubor, který obsahuje částečné deklarace třídy příkazu set.  
@@ -90,7 +90,7 @@ Můžete změnit chování některé standardní příkazy, které jsou automati
  Následující příklad zakazuje odstranění položky nabídky, když uživatel vybral více než jeden tvar.  
   
 > [!NOTE]
->  Tato metoda nemá vliv, zda příkaz je k dispozici prostřednictvím jedním stisknutím tlačítka. Například zakázání odstranění položky nabídky nezabraňuje příkaz vyvolání pomocí klávesu Delete.  
+> Tato metoda nemá vliv, zda příkaz je k dispozici prostřednictvím jedním stisknutím tlačítka. Například zakázání odstranění položky nabídky nezabraňuje příkaz vyvolání pomocí klávesu Delete.  
   
 ```  
 /// <summary>  

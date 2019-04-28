@@ -9,12 +9,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 98a7159f750a036ed588fd01761e20a2a23ee84e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 802ff20facead891f05ac4727d1c091d095c50a2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059965"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442497"
 ---
 # <a name="step-6-name-your-button-controls"></a>Krok 6: Pojmenování tlačítkových ovládacích prvků
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "60059965"
 Ve formuláři je pouze jeden ovládací prvek PictureBox. Při přidávání jej rozhraní IDE automaticky pojmenuje **pictureBox1**. Existuje pouze jeden CheckBox, který se nazývá **checkBox1**. Brzy napíšete kód a tento kód bude odkazovat na ovládací prvek CheckBox a PictureBox. Protože se nachází pouze jednu roli od každého z těchto ovládacích prvků, budete vědět, co znamenají, až se zobrazí **pictureBox1** nebo **checkBox1** ve vašem kódu.  
   
 > [!NOTE]
->  V jazyce Visual Basic je výchozí první písmeno ovládacího prvku je počáteční velkým písmenem, takže názvy jsou **PictureBox1**, **CheckBox1**, a tak dále.  
+> V jazyce Visual Basic je výchozí první písmeno ovládacího prvku je počáteční velkým písmenem, takže názvy jsou **PictureBox1**, **CheckBox1**, a tak dále.  
   
  Existují čtyři tlačítka na formuláři a rozhraní IDE je pojmenovalo **button1**, **button2**, **button3**, a **button4**. Jen pohlédnutím na jejich názvy nevíte, které tlačítko je **Zavřít** tlačítko a který je **zobrazit obrázek** tlačítko. To je důvod, proč poskytuje své ovládací prvky tlačítek informativnějších názvů je užitečné.  
   
@@ -36,7 +36,7 @@ Ve formuláři je pouze jeden ovládací prvek PictureBox. Při přidávání je
 Okno Vlastnosti s názvem closeButton  
   
     > [!NOTE]
-    >  Pokud se pokusíte změnit název tlačítka na **closeButton**, s mezerou mezi slovy, zavřít a tlačítko, rozhraní IDE zobrazí chybovou zprávu: "Hodnota vlastnosti není platná." Mezery (a několik jiných znaků) nejsou povoleny v názvech ovládacích prvků.  
+    > Pokud se pokusíte změnit název tlačítka na **closeButton**, s mezerou mezi slovy, zavřít a tlačítko, rozhraní IDE zobrazí chybovou zprávu: "Hodnota vlastnosti není platná." Mezery (a několik jiných znaků) nejsou povoleny v názvech ovládacích prvků.  
   
 2. Přejmenujte další tři tlačítka na **backgroundButton**, **tlacitkoVymazat**, a **showButton**. Názvy můžete ověřit výběrem ovládacího prvku selektoru rozevíracího seznamu v **vlastnosti** okna. Nové názvy tlačítek se zobrazí.  
   
@@ -53,14 +53,14 @@ Karta Form1.cs s kódem Visual C#
      Díváte se na kód nazvaný `showButton_Click()`. Rozhraní IDE toto přidal do kódu formuláře při otevření souboru kódu **showButton** tlačítko. V době návrhu když otevřete soubor kódu pro ovládací prvek ve formuláři, kód je generován pro ovládací prvek Pokud ještě neexistuje. Tento kód se označuje jako *metoda*, spustí při spuštění programu a zvolte ovládacího prvku – v takovém případě **zobrazit obrázek** tlačítko.  
   
     > [!NOTE]
-    >  V tomto kurzu kódu jazyka Visual Basic, který je automaticky generován byl zjednodušen odebráním všeho mezi závorkami, (). Pokaždé, když se v takovém případě můžete odebrat stejný kód. Váš program bude fungovat v obou případech. Pro zbývající část kurzů je všechen automaticky generovaný kód zjednodušen, kdykoli je to možné.  
+    > V tomto kurzu kódu jazyka Visual Basic, který je automaticky generován byl zjednodušen odebráním všeho mezi závorkami, (). Pokaždé, když se v takovém případě můžete odebrat stejný kód. Váš program bude fungovat v obou případech. Pro zbývající část kurzů je všechen automaticky generovaný kód zjednodušen, kdykoli je to možné.  
   
 5. Zvolte znovu kartu Návrhář formulářové aplikace Windows (**Form1.cs [Design]** ve Vizuálu C#, **Form1.vb [Design]** v jazyce Visual Basic) a pak otevřete soubor kódu **Vymazat obrázek** tlačítko pro vytvoření metody pro něj v kódu formuláře. Tento postup opakujte pro zbývající dvě tlačítka. Pokaždé, když, rozhraní IDE přidá novou metodu do souboru kódu formuláře.  
   
 6. Chcete-li přidat další metodu, otevřete soubor kódu pro ovládací prvek CheckBox v Návrháři formulářů Windows rozhraní IDE, přidejte `checkBox1_CheckedChanged()` metody. Tato metoda je volána pokaždé, když uživatel vybere nebo zruší zaškrtávací políčko.  
   
     > [!NOTE]
-    >  Při práci na programu se často přesouváte mezi editorem kódu a Návrhář formulářů Windows. Rozhraní IDE usnadňuje navigaci v projektu. Použití **Průzkumníka řešení** otevřít Návrhář formulářů Windows dvojitým kliknutím **Form1.cs** v jazyce Visual C# nebo **Form1.vb** v jazyce Visual Basic nebo na panelu nabídek zvolte **Zobrazení**, **návrháře**.  
+    > Při práci na programu se často přesouváte mezi editorem kódu a Návrhář formulářů Windows. Rozhraní IDE usnadňuje navigaci v projektu. Použití **Průzkumníka řešení** otevřít Návrhář formulářů Windows dvojitým kliknutím **Form1.cs** v jazyce Visual C# nebo **Form1.vb** v jazyce Visual Basic nebo na panelu nabídek zvolte **Zobrazení**, **návrháře**.  
   
      Následující znázorňuje nový kód, na který se zobrazí v editoru kódu.  
   

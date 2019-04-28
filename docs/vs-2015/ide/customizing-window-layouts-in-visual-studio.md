@@ -24,12 +24,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 337c57c79e55c5113bb4411a091d2c29a954c342
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: bb97c86176dd29278f64ab467557e663ee9e6d2e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60098581"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437545"
 ---
 # <a name="customizing-window-layouts-in-visual-studio"></a>Přizpůsobení rozložení oken v sadě Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -77,7 +77,7 @@ V sadě Visual Studio můžete přizpůsobit pozici, velikost a chování systé
   Okna nástroje dokument lze uspořádat přetažením pomocí příkazů na **okno** nabídky a kliknutím pravým tlačítkem myši záhlaví okna, které uspořádáváte.
 
 > [!NOTE]
->  Váš počítač může v následujících pokynech zobrazovat odlišné názvy nebo umístění některých prvků uživatelského rozhraní sady Visual Studio. Tyto prvky jsou určeny edicí sady Visual Studio a použitým nastavením. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+> Váš počítač může v následujících pokynech zobrazovat odlišné názvy nebo umístění některých prvků uživatelského rozhraní sady Visual Studio. Tyto prvky jsou určeny edicí sady Visual Studio a použitým nastavením. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
 ### <a name="docking-windows"></a>Ukotvení Windows
  Když klikněte a přetáhněte záhlaví panelu nástrojů nebo okna dokumentu na kartě, zobrazí se kosočtverce vodítka. Během operace přetažení když ukazatel myši je nad jednu ze šipek v kosočtverec, na vystínovanou oblast se zobrazí, který ukazuje, kde Ukotvit okno Pokud nyní uvolněte tlačítko myši.
@@ -106,16 +106,16 @@ V sadě Visual Studio můžete přizpůsobit pozici, velikost a chování systé
  ![Automaticky skrýt](../ide/media/vs2015-auto-hide.png "vs2015_auto_hide")
 
 > [!NOTE]
->  Chcete-li nastavit, zda možnost automaticky skrýt pracuje v nástroji windows samostatně nebo jako ukotvené skupiny, zaškrtněte nebo zrušte **automaticky skrýt ovlivní pouze aktivní okna nástrojů** v **možnosti** dialogové okno. Další informace najdete v tématu [Obecné, prostředí, dialogové okno Možnosti](../ide/reference/general-environment-options-dialog-box.md).
+> Chcete-li nastavit, zda možnost automaticky skrýt pracuje v nástroji windows samostatně nebo jako ukotvené skupiny, zaškrtněte nebo zrušte **automaticky skrýt ovlivní pouze aktivní okna nástrojů** v **možnosti** dialogové okno. Další informace najdete v tématu [Obecné, prostředí, dialogové okno Možnosti](../ide/reference/general-environment-options-dialog-box.md).
 
 > [!NOTE]
->  Okna nástrojů, které mají povolenou funkci automaticky skrýt se mohou dočasně ukázat ve zobrazení, pokud má okno fokus. Chcete-li skrýt okno znovu, vyberte položku mimo aktuální okno. Pokud okno ztratí fokus, karta se zasune zpět mimo zobrazení.
+> Okna nástrojů, které mají povolenou funkci automaticky skrýt se mohou dočasně ukázat ve zobrazení, pokud má okno fokus. Chcete-li skrýt okno znovu, vyberte položku mimo aktuální okno. Pokud okno ztratí fokus, karta se zasune zpět mimo zobrazení.
 
 ### <a name="specifying-a-monitor"></a>Určení monitoru
  Pokud máte druhý monitor a váš operační systém jej podporuje, můžete zvolit, který monitor má zobrazit okno. Můžete dokonce seskupit více oken v "do"řad na jiných monitorech.
 
 > [!TIP]
->  Můžete vytvořit více instancí **Průzkumníka řešení** a přesunout na jiný monitor. Klikněte pravým tlačítkem myši okno a zvolte **nové zobrazení Průzkumníka řešení**. Všechna okna můžete vrátit zpět na původní monitor poklikáním při výběru klávesy Ctrl.
+> Můžete vytvořit více instancí **Průzkumníka řešení** a přesunout na jiný monitor. Klikněte pravým tlačítkem myši okno a zvolte **nové zobrazení Průzkumníka řešení**. Všechna okna můžete vrátit zpět na původní monitor poklikáním při výběru klávesy Ctrl.
 
 ### <a name="reset-name-and-switch-between-window-layouts"></a>Resetování, název a přepínání rozložení oken
  Rozhraní IDE může vrátit do původního rozložení okna pro kolekci nastavení pomocí **resetovat rozložení okna** příkazu. Když spustíte tento příkaz, provedou se tyto akce:

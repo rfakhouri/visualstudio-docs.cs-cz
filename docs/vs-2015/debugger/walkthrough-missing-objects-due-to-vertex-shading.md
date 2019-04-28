@@ -9,14 +9,14 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cc1f87ac6ce94a1ef474388f75b33aa963b19f8d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d54fdce78528f348e99436c3a58d15e1cbe861b7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60046377"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444270"
 ---
-# <a name="walkthrough-missing-objects-due-to-vertex-shading"></a>Návod: Chybějící objekty z důvodu použití funkce Vertex Shading
+# <a name="walkthrough-missing-objects-due-to-vertex-shading"></a>Návod: Chybějící objekty z důvodu použití vertex shaderu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Tento návod ukazuje, jak používat [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nástrojů diagnostiky grafiky k prozkoumání objekt, který nebyl nalezen z důvodu chyby, ke které dojde během fáze vertex shader.  
@@ -64,7 +64,7 @@ Tento návod ukazuje, jak používat [!INCLUDE[vsprvs](../includes/vsprvs-md.md)
     V **fáze zřetězení grafiky** okně **vstupní Assembler** fáze ukazuje geometrie objektu před jeho transformovaný a **Vertex Shader** fáze zobrazuje stejné objekt po je transformaci. V tomto scénáři, víte, že jakmile se zobrazí v nenajdete chybějícím objektu **vstupní Assembler** fáze, ale nic se zobrazí v **Vertex Shader** fázi.  
   
    > [!NOTE]
-   >  Pokud jiných geometrie fází – například, Shader trupu, Shader domény a Shader geometrie fází – proces objektu, mohou být příčinou problému. Obvykle problém souvisí s první fáze, ve kterém se nezobrazuje výsledek, nebo se zobrazí neočekávaným způsobem.  
+   > Pokud jiných geometrie fází – například, Shader trupu, Shader domény a Shader geometrie fází – proces objektu, mohou být příčinou problému. Obvykle problém souvisí s první fáze, ve kterém se nezobrazuje výsledek, nebo se zobrazí neočekávaným způsobem.  
   
 4. Zastavte při dosažení volání draw, která odpovídá chybějícím objektu. V tomto scénáři **fáze zřetězení grafiky** okno znamená, že byl vydán geometrii GPU (označená miniaturu vstupní Assembler), ale nezobrazí v cíle vykreslování, protože došlo k chybě během fáze shader vrcholu (označená miniaturu Vertex Shader):  
   
@@ -107,7 +107,7 @@ Tento návod ukazuje, jak používat [!INCLUDE[vsprvs](../includes/vsprvs-md.md)
     ![Kód, který nastaví konstantní vyrovnávací paměti objektu](../debugger/media/gfx-diag-demo-missing-object-shader-step-7.png "gfx_diag_demo_missing_object_shader_step_7")  
   
    > [!TIP]
-   >  Pokud jsou současně ladění vaší aplikace, můžete nastavit zarážku na tomto místě a při vykreslení dalšího snímku se dostanou. Pak si můžete prohlédnout členy `m_marbleConstantBufferData` potvrdit, že hodnota `projection` člen je nastavený na samými nulami, když se naplní vyrovnávací paměť konstant.  
+   > Pokud jsou současně ladění vaší aplikace, můžete nastavit zarážku na tomto místě a při vykreslení dalšího snímku se dostanou. Pak si můžete prohlédnout členy `m_marbleConstantBufferData` potvrdit, že hodnota `projection` člen je nastavený na samými nulami, když se naplní vyrovnávací paměť konstant.  
   
    Po vyhledání umístění, kde se naplní vyrovnávací paměť konstant a zjistit, že jeho hodnoty pocházejí z proměnné `m_marbleConstantBufferData`, dalším krokem je zjistit, kde `m_marbleConstantBufferData.projection` člen je nastavený na samými nulami. Můžete použít **najít všechny odkazy** rychle vyhledávat kód, který změní hodnotu `m_marbleConstantBufferData.projection`.  
   

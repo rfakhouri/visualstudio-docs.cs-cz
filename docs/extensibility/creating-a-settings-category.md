@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2c757f2ee7dc69e53f492d4dfa37c2ca95b4af70
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 304b2afd734527b80a465fc5074077bf8b0661fe
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60100583"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411337"
 ---
 # <a name="create-a-settings-category"></a>Vytvoření kategorie nastavení
 
@@ -37,7 +37,7 @@ Chcete-li spustit Tento názorný postup, musíte nejdřív dokončit první č�
 
 2. Otevřít *VSPackage.resx* a přidejte tyto tři řetězcové prostředky:
 
-    |Název|Value|
+    |Název|Hodnota|
     |----------|-----------|
     |106|Moje kategorie|
     |107|Moje nastavení|
@@ -46,7 +46,7 @@ Chcete-li spustit Tento názorný postup, musíte nejdřív dokončit první č�
      Tím se vytvoří prostředky tento název kategorie "My kategorie", objektu "nastavení" a "A OptionInteger OptionFloat" Popis kategorie.
 
     > [!NOTE]
-    >  Z těchto tří pouze na název kategorie se nezobrazují v **nastavení importu a exportu** průvodce.
+    > Z těchto tří pouze na název kategorie se nezobrazují v **nastavení importu a exportu** průvodce.
 
 3. V *MyToolsOptionsPackage.cs*, přidejte `float` vlastnost s názvem `OptionFloat` k `OptionPageGrid` třídy, jak je znázorněno v následujícím příkladu.
 
@@ -76,7 +76,7 @@ Chcete-li spustit Tento názorný postup, musíte nejdřív dokončit první č�
     ```
 
     > [!NOTE]
-    >  `OptionPageGrid` Kategorii s názvem "My kategorie" nyní se skládá ze dvou vlastností `OptionInteger` a `OptionFloat`.
+    > `OptionPageGrid` Kategorii s názvem "My kategorie" nyní se skládá ze dvou vlastností `OptionInteger` a `OptionFloat`.
 
 4. Přidat <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> k `MyToolsOptionsPackage` třídy a poskytněte CategoryName "My kategorie", jí ObjectName "Nastavení" a isToolsOptionPage nastavena na hodnotu true. Nastavení categoryResourceID, objectNameResourceID a DescriptionResourceID na odpovídající prostředek řetězce, který ID vytvořili dříve.
 

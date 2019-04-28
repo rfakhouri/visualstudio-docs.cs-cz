@@ -12,12 +12,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b28a0d68c6e480c7b13a6ab3aa95b93838496383
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: dcfc73feb762ecc50412ca2dc67818e2fb60a64d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59650028"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441729"
 ---
 # <a name="environment-options-dialog-box"></a>Dialogové okno Možnosti prostředí
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "59650028"
 Můžete použít na stránkách **prostředí** složky **možnosti** dialogové okno nastavit jak některé prvky integrovaného vývojového prostředí (IDE), zobrazení a chování. Stránky prostředí, v řádku nabídek, výběrem dostanete **nástroje**, **možnosti**a pak vyberete **prostředí**.  
   
 > [!NOTE]
->  V závislosti na aktivním nastavení a použité edici sady Visual Studio se dialogová okna a příkazy nabídek, které se zobrazují ve vašem počítači, mohou lišit od popisu v nápovědě. Chcete-li změnit nastavení, zvolte **nastavení importu a exportu** na **nástroje** nabídky. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> V závislosti na aktivním nastavení a použité edici sady Visual Studio se dialogová okna a příkazy nabídek, které se zobrazují ve vašem počítači, mohou lišit od popisu v nápovědě. Chcete-li změnit nastavení, zvolte **nastavení importu a exportu** na **nástroje** nabídky. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 |Pokud chcete|Další informace naleznete v tématu|  
 |----------------------------------|---------|  

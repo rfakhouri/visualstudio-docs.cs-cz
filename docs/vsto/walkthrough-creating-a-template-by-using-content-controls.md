@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 565d735e2d822d6cc7b353ffdf106b30201c22d4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3feb17c2cfc51326f125fb6991b37ccde1f9b1bd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60074372"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438565"
 ---
 # <a name="walkthrough-create-a-template-by-using-content-controls"></a>Návod: Vytvoření šablony s použitím ovládacích prvků obsahu
   Tento návod ukazuje, jak vytvořit přizpůsobení úrovni dokumentu, který používá ovládací prvky obsahu k vytvoření obsahu strukturovaných a opakovaně použitelné šablony aplikace Microsoft Office Word.
@@ -83,7 +83,7 @@ ms.locfileid: "60074372"
 5. Na pásu karet klikněte na tlačítko **Developer** kartu.
 
    > [!NOTE]
-   >  Pokud **Developer** karta není zobrazena, musíte ji nejdříve zobrazit. Další informace najdete v tématu [jak: Zobrazení karty Vývojář na pásu karet](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
+   > Pokud **Developer** karta není zobrazena, musíte ji nejdříve zobrazit. Další informace najdete v tématu [jak: Zobrazení karty Vývojář na pásu karet](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
 
 6. V **ovládací prvky** klikněte na položku **Text** tlačítko ![plaintextcontentcontrol –](../vsto/media/plaintextcontrol.gif "plaintextcontentcontrol –") přidáte <xref:Microsoft.Office.Tools.Word.PlainTextContentControl>do první buňky.
 

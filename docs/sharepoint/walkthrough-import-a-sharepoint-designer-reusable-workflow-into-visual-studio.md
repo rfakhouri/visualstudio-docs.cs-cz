@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 702c671922d8ea7a1552504be062b7b31de16a09
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c7d1373339fac4768e2af1eda5770d5058ae8078
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60053933"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446604"
 ---
 # <a name="walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio"></a>Návod: Import opakovaně použitelného pracovního postupu návrháře služby SharePoint do sady Visual Studio
   Tento návod ukazuje, jak pro import opakovaně použitelného pracovního postupu v Návrháři SharePoint 2010 do vytvoří [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projektu pracovního postupu služby SharePoint.
@@ -124,7 +124,7 @@ ms.locfileid: "60053933"
  Protože [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] můžete importovat pouze *.wsp* soubory, je nutné uložit opakovaně použitelného pracovního postupu jako *.wsp* souboru a nasadit ho do Sharepointu, než je naimportujete do [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
 > [!IMPORTANT]
->  Pokud se zobrazí chyba za běhu provedením následujících kroků, budete muset provést postup v systému, který má přístup k webu služby SharePoint.
+> Pokud se zobrazí chyba za běhu provedením následujících kroků, budete muset provést postup v systému, který má přístup k webu služby SharePoint.
 
 #### <a name="to-save-and-deploy-the-reusable-workflow"></a>Uložení a nasazení opakovaně použitelného pracovního postupu
 
@@ -170,7 +170,7 @@ ms.locfileid: "60053933"
 6. V **zadat nový zdroj projektu** stránce, přejděte do umístění v systému, které jste dříve uložili *.wsp* soubor, otevřete soubor a klikněte na tlačítko **Další** tlačítko.
 
    > [!NOTE]
-   >  Zvolte **Dokončit** tlačítko naimportovány všechny položky k dispozici v *.wsp* souboru.
+   > Zvolte **Dokončit** tlačítko naimportovány všechny položky k dispozici v *.wsp* souboru.
 
     Zobrazí se seznam dostupných pro import opakovaně použitelných pracovních postupů.
 
@@ -256,7 +256,7 @@ ms.locfileid: "60053933"
 12. V **spustit nový pracovní postup** zvolte odkaz pro **SPD pracovní postup Test**a klikněte na tlačítko **Start** tlačítko započít pracovní postup.
 
     > [!NOTE]
-    >  Alternativně je můžete automatické přidružení pracovního postupu se seznamem spuštěním Průvodce nastavení pracovního postupu a nastavení automatické přidružení pracovního postupu.
+    > Alternativně je můžete automatické přidružení pracovního postupu se seznamem spuštěním Průvodce nastavení pracovního postupu a nastavení automatické přidružení pracovního postupu.
 
      Všimněte si, že dvě akce provádí pracovní postup: název se zobrazí v úkolu **přiřazeno** sloupce a oznámení se zobrazí v **oznámení** seznamu.
 

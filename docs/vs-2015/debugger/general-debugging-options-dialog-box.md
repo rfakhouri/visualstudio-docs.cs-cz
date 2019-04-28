@@ -22,12 +22,12 @@ caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7efd2c988791d0de4f414a48e5c47bc70b05b784
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
-ms.translationtype: MT
+ms.openlocfilehash: cf4a3b699d3854ef2a502fb1bf1d7fb2d6204acb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54834902"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446479"
 ---
 # <a name="general-debugging-options-dialog-box"></a>Obecné, ladění, dialogové okno Možnosti
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -91,7 +91,7 @@ ms.locfileid: "54834902"
  Sdělí ladicímu programu sady Visual Studio, aby získal zdrojové soubory ze zdrojových serverů, které implementují SrcSrv (`srcsrv.dll`) protokolu. Team Foundation Server a ladění nástroje pro Windows jsou dva servery zdroje, které implementují protokol. Další informace o nastavení SrcSrv naleznete v dokumentaci k ladění nástroje pro Windows. Kromě toho najdete v článku [zadejte symbolu (.pdb) a zdrojových souborů](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  
   
 > [!IMPORTANT]
->  Protože čtení souborů PDB může spustit libovolný kód v souborech, ujistěte se, že serveru důvěřujete.  
+> Protože čtení souborů PDB může spustit libovolný kód v souborech, ujistěte se, že serveru důvěřujete.  
   
  **Vytisknout diagnostickou zprávu zdrojového serveru do okna výstup**  
  Pokud je povolena podpora zdrojového serveru, toto nastavení zapne diagnostické zobrazení.  
@@ -134,7 +134,7 @@ ms.locfileid: "54834902"
  **Použít spravovaný režim kompatibility**  
  Nahradí výchozí modul ladění pomocí starší verze, chcete-li povolit tyto scénáře:  
   
-- Používáte jazyk rozhraní .NET Framework než C#, VB, nebo F# , který obsahuje vlastní vyhodnocení výrazu (to zahrnuje C + +/ CLI).  
+- Používáte jazyk rozhraní .NET Framework než C#, VB, nebo F# , který obsahuje vlastní vyhodnocení výrazu (to zahrnuje C++vyhodnocovací).  
   
 - Chcete povolit funkce upravit a pokračovat pro projekty v jazyce C++ při ladění ve smíšeném režimu.  
   

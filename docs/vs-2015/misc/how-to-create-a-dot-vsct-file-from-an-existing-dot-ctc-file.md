@@ -9,12 +9,12 @@ helpviewer_keywords:
 ms.assetid: 700e80a4-c1e1-4178-af53-45e86dd2c08b
 caps.latest.revision: 9
 manager: jillfra
-ms.openlocfilehash: 2d5ba5a271cd7132d9750fc0569b801022aeb932
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7b963436e9d968dd5ba3829e97d0fd0c52e49641
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117849"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443011"
 ---
 # <a name="how-to-create-a-vsct-file-from-an-existing-ctc-file"></a>Postupy: Vytvoření. Vsct soubor z existující. Soubor CTC
 Můžete vytvořit souboru .vsct založený na formátu XML z existujícího souboru zdrojové tabulky .ctc příkazu. Díky tomu mohou využít výhod nového založený na formátu XML [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] formátu kompilátoru příkaz tabulky (VSCT).  
@@ -42,7 +42,7 @@ Můžete vytvořit souboru .vsct založený na formátu XML z existujícího sou
      Tím se vytvoří nový .vsct XML příkaz tabulky zdrojový soubor. Stejně jako jakýkoli jiný soubor .vsct, můžete pomocí Vsct.exe, kompilátor VSCT Zkompilujte soubor.  
   
     > [!NOTE]
-    >  Přeformátování komentáře XML, lze vylepšit čitelnost souboru .vsct.  
+    > Přeformátování komentáře XML, lze vylepšit čitelnost souboru .vsct.  
   
 ## <a name="see-also"></a>Viz také  
  [Postupy: Vytvoření. Soubor Vsct](../extensibility/internals/how-to-create-a-dot-vsct-file.md)   

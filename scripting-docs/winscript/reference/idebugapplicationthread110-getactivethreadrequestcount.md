@@ -13,18 +13,18 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d9bda0cc59560d90ebc0a382d858c881e7372c15
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: 3df2f0c44e42cf9e2c2aa846db4b88821fd73996
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58145067"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440569"
 ---
 # <a name="idebugapplicationthread110getactivethreadrequestcount"></a>IDebugApplicationThread110::GetActiveThreadRequestCount
 Vrátí počet vláken požadavků z vlákna PDM přepínání mechanismy, které jsou právě zpracovávána. Toto číslo je obvykle 0 nebo 1. Nicméně číslo může být vyšší, pokud jedno vlákno volání spustil zpracování, ale které jsou aktivuje synchronní volání z vlákna, nebo v opačném případě se pozastaví vlákna a umožňuje příchozí volání na opětovné zpracování (například, že se budou spouštět [ Iremotedebugapplicationevents – rozhraní](../../winscript/reference/iremotedebugapplicationevents-interface.md) událost, která je vydané pro vlákno ladicího programu).  
   
 > [!IMPORTANT]
->  [Idebugapplicationthread110 – rozhraní](../../winscript/reference/idebugapplicationthread110-interface.md) je implementováno komponentou Pdm verze 11.0 nebo novější. Nachází se v souboru activdbg100.h.  
+> [Idebugapplicationthread110 – rozhraní](../../winscript/reference/idebugapplicationthread110-interface.md) je implementováno komponentou Pdm verze 11.0 nebo novější. Nachází se v souboru activdbg100.h.  
   
 ## <a name="syntax"></a>Syntaxe  
   

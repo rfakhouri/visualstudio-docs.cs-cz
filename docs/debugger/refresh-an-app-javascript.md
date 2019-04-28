@@ -19,12 +19,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: 1a0b90e5d863d41c46057e38c5f87bdad2481581
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0ee4c97c4ecbf665bbaef39b658a4b96715acb23
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088025"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408634"
 ---
 # <a name="refresh-a-uwp-app-in-visual-studio"></a>Aktualizace aplikace pro UPW v sadě Visual Studio
 
@@ -43,7 +43,7 @@ ms.locfileid: "60088025"
 - Projektů a položek změny vlastností, jako jsou například změny vybrané ladění zařízení, nebo změny akce balíčku souboru (v okně Vlastnosti).
 
 > [!IMPORTANT]
->  Pokud změníte odkazy, změňte manifest balíčku nebo provést další změny, které uvedli v předchozím seznamu, budete muset zastavit a restartovat ladicí program k aktualizaci zdrojové soubory HTML, CSS a JavaScriptu.
+> Pokud změníte odkazy, změňte manifest balíčku nebo provést další změny, které uvedli v předchozím seznamu, budete muset zastavit a restartovat ladicí program k aktualizaci zdrojové soubory HTML, CSS a JavaScriptu.
 
 ### <a name="to-refresh-an-app"></a>Chcete-li aktualizovat aplikaci
 

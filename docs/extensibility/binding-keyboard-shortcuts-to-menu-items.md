@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7d99ff4013b7cdb16cea8b8c3231709d2e5b0aff
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 8dc28a64d42d2184734142c68aef95cbc3b1d245
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56705856"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63410122"
 ---
 # <a name="bind-keyboard-shortcuts-to-menu-items"></a>Vytvoření vazby klávesové zkratky a položkami nabídky
 K vytvoření vazby příkazu nabídky vlastní klávesové zkratky, stačí přidat položku *.vsct* souborů pro balíček. Toto téma vysvětluje, jak namapovat na vlastní tlačítka, položka nabídky nebo panelu nástrojů příkazu Klávesové zkratky a použít mapování klávesnice v editoru výchozí nebo omezit na vlastní editor.
@@ -42,7 +42,7 @@ K vytvoření vazby příkazu nabídky vlastní klávesové zkratky, stačí př
 4. Zkuste různé kombinace kláves, dokud nenaleznete, která není namapována.
 
    > [!NOTE]
-   >  Klávesové zkratky, které používají **Alt** může otevřít nabídku a ne přímo provedení příkazu. Proto **zkratku aktuálně používá** pole nesmí být prázdný, když zadáte zástupce, který zahrnuje **Alt**. Můžete ověřit, že zástupce není otevřete nabídku podle uzavírací **možnosti** dialogové okno a potom stisknutím kláves.
+   > Klávesové zkratky, které používají **Alt** může otevřít nabídku a ne přímo provedení příkazu. Proto **zkratku aktuálně používá** pole nesmí být prázdný, když zadáte zástupce, který zahrnuje **Alt**. Můžete ověřit, že zástupce není otevřete nabídku podle uzavírací **možnosti** dialogové okno a potom stisknutím kláves.
 
    Následující postup předpokládá, že máte existující balíčku VSPackage pomocí příkazu nabídky. Pokud potřebujete pomoc, to provedete, podívejte se na [vytváření rozšíření pomocí příkazu nabídky](../extensibility/creating-an-extension-with-a-menu-command.md).
 
@@ -53,7 +53,7 @@ K vytvoření vazby příkazu nabídky vlastní klávesové zkratky, stačí př
 2. Vytvořte prázdnou `<KeyBindings>` části po `<Commands>` Pokud ještě není k dispozici.
 
    > [!WARNING]
-   >  Další informace o klávesové zkratky, naleznete v tématu [klávesové zkratky](../extensibility/keybinding-element.md).
+   > Další informace o klávesové zkratky, naleznete v tématu [klávesové zkratky](../extensibility/keybinding-element.md).
 
     V `<KeyBindings>` části, vytvořte `<KeyBinding>` položka.
 

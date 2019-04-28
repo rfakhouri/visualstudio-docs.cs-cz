@@ -13,12 +13,12 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0b5a8c0ec9d7dfcae3cd97b0018de355ae7748a4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ace9f28c0726a762e0ffe2abcf0538c5a629b06c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116846"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443501"
 ---
 # <a name="cvhrege"></a>CV_HREG_e
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "60116846"
 Určuje cílový registru.  
   
 > [!NOTE]
->  Vzhledem k tomu, `CV_HREG_e` výčet je příliš velký, aby duplicitní v celém rozsahu tady, zkrácenou verzi se poskytuje jako odkaz. Chybějící položky jsou zapisované kurzívou. V souboru hlaviček cvconst.h je k dispozici úplný výčet.  
+> Vzhledem k tomu, `CV_HREG_e` výčet je příliš velký, aby duplicitní v celém rozsahu tady, zkrácenou verzi se poskytuje jako odkaz. Chybějící položky jsou zapisované kurzívou. V souboru hlaviček cvconst.h je k dispozici úplný výčet.  
   
 ## <a name="syntax"></a>Syntaxe  
   

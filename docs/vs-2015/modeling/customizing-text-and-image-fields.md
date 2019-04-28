@@ -9,12 +9,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3c1e6aa853d2f8202ed42652a0d0f70a7300c0b5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5069f6d45d72606bce7de2866c6328864fcde21f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60077164"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433245"
 ---
 # <a name="customizing-text-and-image-fields"></a>Přizpůsobení textových a obrazových polí
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -93,7 +93,7 @@ public virtual StyleSetResourceId GetFontId(ShapeElement parentShape)
  Pokud ne, pak mají přednost před `InitializeShapeFields` metoda obrazec třídy a přiřadit hodnoty k odpovídající `Default...` vlastnosti textového pole.  
   
 > [!WARNING]
->  K přepsání `InitializeShapeFields()`, je nutné nastavit **Generates Double Derived** vlastnost obrazec třídy na `true` v definici DSL.  
+> K přepsání `InitializeShapeFields()`, je nutné nastavit **Generates Double Derived** vlastnost obrazec třídy na `true` v definici DSL.  
   
  V tomto příkladu má tvar textové pole, který se použije pro uživatele komentáře. Chceme použít standardní komentář písma. Protože je standardní písmo ze sady styl, jsme nastavili výchozí písmo id:  
   
@@ -202,7 +202,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
  V tomto příkladu je ikona změnit závisí na stavu prvku modelu obrazce.  
   
 > [!WARNING]
->  Tento příklad ukazuje, jak vytvořit dynamické image dekoratér. Pokud chcete přepnout mezi jednu nebo dvě bitové kopie v závislosti na stavu modelu proměnné, je jednodušší vytvořte několik dekoratéry bitové kopie, vyhledejte na stejné pozici ve tvaru a pak nastavte filtr viditelnosti závisí na konkrétní hodnoty modelu, ale Proměnná. Pokud chcete nastavit tento filtr, vyberte mapový tvar v definici DSL, otevřete okno Podrobnosti DSL a klikněte na kartu Dekorátory.  
+> Tento příklad ukazuje, jak vytvořit dynamické image dekoratér. Pokud chcete přepnout mezi jednu nebo dvě bitové kopie v závislosti na stavu modelu proměnné, je jednodušší vytvořte několik dekoratéry bitové kopie, vyhledejte na stejné pozici ve tvaru a pak nastavte filtr viditelnosti závisí na konkrétní hodnoty modelu, ale Proměnná. Pokud chcete nastavit tento filtr, vyberte mapový tvar v definici DSL, otevřete okno Podrobnosti DSL a klikněte na kartu Dekorátory.  
   
  Pokud chcete spustit tento příklad kódu, vytvořte nové řešení DSL pomocí minimální jazykový šablony. Přidat logickou doménová vlastnost, která `AlternateState` do ExampleElement doménové třídy. Přidejte do třídy ExampleShape dekoratér ikony a vytvořit obrazovou k souboru rastrového obrázku. Klikněte na tlačítko **Transformovat všechny šablony**. Přidejte nový soubor kódu v projektu DSL a vložte následující kód.  
   

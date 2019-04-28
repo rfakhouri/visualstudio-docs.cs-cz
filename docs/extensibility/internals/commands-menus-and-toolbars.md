@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a0634105b9b071ac4155adb3248abd2b4be19b29
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56606261"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62861981"
 ---
 # <a name="commands-menus-and-toolbars"></a>Příkazy, nabídky a panely nástrojů
 Nabídky a panely nástrojů jsou způsob, jak uživatelům přístup k příkazům v vašeho balíčku VSPackage. Příkazy jsou funkce, které provádět úlohy, jako je například tisk dokumentu, aktualizuje zobrazení nebo vytvoření nového souboru. Nabídky a panely nástrojů jsou vhodné grafické způsoby, jak uživatelům k dispozici vaše příkazy. Související příkazy jsou obvykle Clusterované společně na stejném nabídky nebo panelu nástrojů.

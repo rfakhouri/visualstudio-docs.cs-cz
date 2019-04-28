@@ -11,12 +11,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 90bf88beafee6f263695b3614cf6385419b33efe
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 020c934d3427dda77c41fb410143972d6f48656b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54797592"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438101"
 ---
 # <a name="working-with-3-d-assets-for-games-and-apps"></a>Práce s 3D prostředky pro hry a aplikace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ Tento dokument popisuje [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nástroje, 
  Můžete použít [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] návrháře shaderu, které je založené na grafu shaderu návrhářský nástroj, chcete-li vytvořit vlastní vizuálních efektů bez znalosti programování HLSL.  
   
 > [!NOTE]
->  Další informace o tom, jak začít s programování pro rozhraní DirectX, naleznete v tématu [DirectX](http://go.microsoft.com/fwlink/p/?LinkId=224633). Další informace o tom, jak ladit aplikaci založené na rozhraní DirectX naleznete v tématu [diagnostiky grafiky (ladění grafiky DirectX)](../debugger/visual-studio-graphics-diagnostics.md).  
+> Další informace o tom, jak začít s programování pro rozhraní DirectX, naleznete v tématu [DirectX](http://go.microsoft.com/fwlink/p/?LinkId=224633). Další informace o tom, jak ladit aplikaci založené na rozhraní DirectX naleznete v tématu [diagnostiky grafiky (ladění grafiky DirectX)](../debugger/visual-studio-graphics-diagnostics.md).  
   
 ## <a name="directx-version-compatibility"></a>Kompatibilita verzí DirectX  
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozhraní DirectX se používá k vykreslení 2D a 3D aktiv. Můžete vybrat zobrazovací jednotky rozhraní DirectX 11 nebo zobrazovací jednotky softwaru Windows Advanced Rasterizační platformě WARP (). Renderer rozhraní DirectX 11 poskytuje vysoce výkonné, hardwarově urychlené vykreslování na rozhraní DirectX 11 a DirectX 10 GPU. WARP renderer pomáhá, ujistěte se, že vaše prostředky fungovat s širokou škálu počítače – to zahrnuje počítače, které nemají moderní grafický hardware a počítače, které jste integrovali hardwarovou akceleraci. Další informace o WARP najdete v tématu [Windows Advanced Rasterizační platformě WARP () průvodce](http://go.microsoft.com/fwlink/p/?LinkId=224634).  

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d4b5fd1be29a5c22bcae371faaf7be8c6b70c4e1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c30289034c50cc6d754f54ccec3fafcd0f964d15
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60057547"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437408"
 ---
 # <a name="rules-propagate-changes-within-the-model"></a>Pravidla šířící změny v modelu
 Můžete vytvořit pravidlo úložiště, které rozšíří změnu z jednoho elementu do druhého v produktu Visualization and Modeling SDK (vmsdk následující položky). Když dojde ke změně k libovolnému prvku v Store, jsou naplánovány pravidla má být spuštěna, většinou když nejkrajnější transakce se potvrzeny. Existují různé typy pravidel pro různé druhy událostí, jako je například přidání elementu nebo jejím odstranění. Pravidla můžete připojit na konkrétní typy prvků, tvary nebo diagramů. Mnoho integrovaných funkcí, které jsou definovány pomocí pravidel: například pravidla ujistěte se, že diagramu se aktualizuje při změně modelu. Doménově specifického jazyka můžete přizpůsobit tak, že přidáte vlastní pravidla.
@@ -68,7 +68,7 @@ namespace ExampleNamespace
 ```
 
 > [!NOTE]
->  Kód pravidlo by měl změnit stav pouze prvky uvnitř Store; To znamená pravidlo by měl změnit pouze prvky modelu, relace, tvary, konektory, diagramů nebo jejich vlastností. Pokud chcete změny na prostředky mimo úložišti, definujte Store události. Další informace najdete v tématu [obslužné rutiny rozšíření změny mimo the Model událostí](../modeling/event-handlers-propagate-changes-outside-the-model.md)
+> Kód pravidlo by měl změnit stav pouze prvky uvnitř Store; To znamená pravidlo by měl změnit pouze prvky modelu, relace, tvary, konektory, diagramů nebo jejich vlastností. Pokud chcete změny na prostředky mimo úložišti, definujte Store události. Další informace najdete v tématu [obslužné rutiny rozšíření změny mimo the Model událostí](../modeling/event-handlers-propagate-changes-outside-the-model.md)
 
 ### <a name="to-define-a-rule"></a>Chcete definovat pravidlo
 

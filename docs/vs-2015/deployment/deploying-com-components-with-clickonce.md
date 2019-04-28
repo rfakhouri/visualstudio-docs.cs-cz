@@ -19,12 +19,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 63328af2211f18fe553c32b018ed0a8422a1857f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 282945f473f2799b92b24321383190ca38557cbc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60066348"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422775"
 ---
 # <a name="deploying-com-components-with-clickonce"></a>Nasazování komponent COM s ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,7 +65,7 @@ Nasazení komponent modelu COM, starší verze tradičně těžký úkol. Souč�
 2. V **nový projekt** dialogové okno, vyberte **jazyka Visual Basic** uzel a vyberte možnost **ActiveX DLL** projektu. V **název** zadejte `VB6Hello`.  
   
     > [!NOTE]
-    >  S modelem COM bez registrace, jsou podporovány pouze typy projektu ActiveX knihovny DLL a ovládacího prvku ActiveX ActiveX EXE a dokument ActiveX typy projektů nejsou podporovány.  
+    > S modelem COM bez registrace, jsou podporovány pouze typy projektu ActiveX knihovny DLL a ovládacího prvku ActiveX ActiveX EXE a dokument ActiveX typy projektů nejsou podporovány.  
   
 3. V **Průzkumníka řešení**, dvakrát klikněte na panel **Class1.vb** otevřete textový editor.  
   
@@ -80,7 +80,7 @@ Nasazení komponent modelu COM, starší verze tradičně těžký úkol. Souč�
 5. Začlenění komponenty. Z **sestavení** nabídky, klikněte na tlačítko **sestavit řešení**.  
   
 > [!NOTE]
->  Bez registrace modelu COM podporuje pouze knihovny DLL a modelu COM Určuje typy projektů. Exe nelze použít s modelu COM bez registrace  
+> Bez registrace modelu COM podporuje pouze knihovny DLL a modelu COM Určuje typy projektů. Exe nelze použít s modelu COM bez registrace  
   
  Nyní můžete vytvořit aplikace pro systém Windows a přidejte odkaz na komponentu COM do ní.  
   
@@ -128,7 +128,7 @@ Nasazení komponent modelu COM, starší verze tradičně těžký úkol. Souč�
    Teď, když stisknete klávesu F5, že aplikace funguje podle očekávání, ale je nyní spuštěna v rámci modelu COM bez registrace Aby bylo možné prokázat, zkuste součásti VB6Ahoj.dll a spustit RegFreeComDemo1.exe mimo rozhraní IDE sady Visual Studio. Tentokrát při klepnutí na tlačítko, stále funguje. Pokud přejmenujete dočasně manifestu aplikace, se znovu nezdaří.  
   
 > [!NOTE]
->  Chybí komponenty modelu COM můžete simulovat dočasně zrušení registrace. Otevřete příkazový řádek, přejděte do složky systému tak, že zadáte `cd /d %windir%\system32`, poté zrušte registraci součásti tak, že zadáte `regsvr32 /u VB6Hello.dll`. Můžete ho zaregistrovat znovu tak, že zadáte `regsvr32 VB6Hello.dll`.  
+> Chybí komponenty modelu COM můžete simulovat dočasně zrušení registrace. Otevřete příkazový řádek, přejděte do složky systému tak, že zadáte `cd /d %windir%\system32`, poté zrušte registraci součásti tak, že zadáte `regsvr32 /u VB6Hello.dll`. Můžete ho zaregistrovat znovu tak, že zadáte `regsvr32 VB6Hello.dll`.  
   
  Posledním krokem je publikovat aplikace pomocí [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]:  
   

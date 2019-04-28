@@ -13,18 +13,18 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4329af4e440eb9ee0de57a64e6ab55b48b6375b4
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: 7c83a6e3a41ed7087338989d5cb077fa070e724b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58150410"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434268"
 ---
 # <a name="idebugdocumenttextevents-interface"></a>IDebugDocumentTextEvents – rozhraní
 Poskytuje události, které naznačují změny přidružené textový dokument.  
   
 > [!NOTE]
->  Při události v tomto rozhraní fire změní textu dokumentu. Obslužné rutiny událostí může načíst nový text pomocí `IDebugDocumentText` rozhraní.  
+> Při události v tomto rozhraní fire změní textu dokumentu. Obslužné rutiny událostí může načíst nový text pomocí `IDebugDocumentText` rozhraní.  
   
  Kromě metod zděděných z `IUnknown`, `IDebugDocumentTextEvents` rozhraní poskytuje následující metody.  
   

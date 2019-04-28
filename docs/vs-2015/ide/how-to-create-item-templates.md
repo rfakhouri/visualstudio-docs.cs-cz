@@ -14,12 +14,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 587d0a3fb571a0cb5934f56fca1ffa0ad34d3086
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4484ec75cf44fc60c72091fb17cce510efdb9cd4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60108786"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417035"
 ---
 # <a name="how-to-create-item-templates"></a>Postupy: Vytváření šablon položek
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ Kroky v [prvního postupu](#to-add-a-custom-project-item-template-to-the-add-new
      Soubory pro šablonu jsou přidány do souboru ZIP a zkopírovány jakékoli adresáře, zadejte v dialogovém okně. Výchozí umístění je **... \Users\\< uživatelské jméno\>\Documents\Visual Studio \<verze > \My exportované šablony\\**  složky.  
   
     > [!WARNING]
-    >  V dřívějších verzích sady Visual Studio, je výchozí umístění **... \Users\\< uživatelské jméno\>\Documents\Visual Studio \<verze > \Templates\ItemTemplates**.  
+    > V dřívějších verzích sady Visual Studio, je výchozí umístění **... \Users\\< uživatelské jméno\>\Documents\Visual Studio \<verze > \Templates\ItemTemplates**.  
   
 ### <a name="to-enable-the-item-template-to-be-used-in-a-store-project"></a>K povolení šablony položky, který se má použít v projektu úložiště  
   

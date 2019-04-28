@@ -10,12 +10,12 @@ ms.assetid: 91b167a3-280a-498b-8fc2-f67859a2c64e
 caps.latest.revision: 29
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bfadcb962e63a38f4f8190c2dd9c02f4e2ac4643
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9541180ba8740cdc12a038f81c4ef74d47fcc1aa
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60107993"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446232"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Spouštění testů částí pomocí Průzkumníka testů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -77,7 +77,7 @@ Chcete-li spustit testy jednotky ze sady Visual Studio nebo projektů testován�
 ### <a name="BKMK_Run_tests_after_every_build"></a> Spustit testy po každém sestavení  
   
 > [!WARNING]
->  Spuštění testů jednotky po každém sestavení je podporováno v sadě Visual Studio Enterprise.  
+> Spuštění testů jednotky po každém sestavení je podporováno v sadě Visual Studio Enterprise.  
   
 |||  
 |-|-|  
@@ -201,7 +201,7 @@ TEST_METHOD(Method1)
    ![Filtruje testy v Průzkumníku testů](../test/media/ute-filtertestlist.png "UTE_FilterTestList")  
   
 > [!NOTE]
->  Hledání jsou malá a velká písmena a odpovídají libovolné části hodnoty kritérií zadaného řetězce.  
+> Hledání jsou malá a velká písmena a odpovídají libovolné části hodnoty kritérií zadaného řetězce.  
   
 |Kvalifikátor|Popis|  
 |---------------|-----------------|  
@@ -253,7 +253,7 @@ FullName:"MyClass" - FullName:"PerfTest"
 1. V editoru sady Visual Studio nastavte zarážku v jedné nebo více testovacích metod, které chcete ladit.  
   
    > [!NOTE]
-   >  Vzhledem k tomu, že zkušební metody lze spustit v libovolném pořadí, nastavte zarážky v všechny testovací metody, které chcete ladit.  
+   > Vzhledem k tomu, že zkušební metody lze spustit v libovolném pořadí, nastavte zarážky v všechny testovací metody, které chcete ladit.  
   
 2. V Průzkumníku testů vyberte testovací metody a pak zvolte **ladit vybrané testy** v místní nabídce.  
   
@@ -267,7 +267,7 @@ FullName:"MyClass" - FullName:"PerfTest"
 ### <a name="BKMK_Analyzeunit_test_code_coverage"></a> Analyzovat pokrytí kódem jednotkového testu  
   
 > [!NOTE]
->  Pokrytí kódem jednotkového testu je k dispozici pouze v sadě Visual Studio Enterprise.  
+> Pokrytí kódem jednotkového testu je k dispozici pouze v sadě Visual Studio Enterprise.  
   
  Můžete určit množství kódu produktu, který je skutečně testován prostřednictvím testů jednotky pomocí nástroje pokrytí kódu sady Visual Studio. Můžete spustit pokrytí kódem u vybraných testů nebo u všech testů v řešení.  
   

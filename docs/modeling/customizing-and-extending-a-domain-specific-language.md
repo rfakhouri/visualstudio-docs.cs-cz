@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8383e82091ec9cc62f5b08dcc89f1e1e74239030
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fd399bb0d18d4a12493530932705b938a5f6dd67
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096787"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63414857"
 ---
 # <a name="customizing-and-extending-a-domain-specific-language"></a>Přizpůsobení a rozšíření jazyka specifického pro doménu
 Visual Studio modelování a vmsdk následující (sada SDK vizualizace položky) nabízí několik úrovní, ve kterém můžete definovat nástrojů pro modelování:
@@ -28,7 +28,7 @@ Visual Studio modelování a vmsdk následující (sada SDK vizualizace položky
 3. Rozšíření nástrojů pro modelování pomocí kódu programu. Vmsdk následující položky je navržená speciálně pro usnadnění integrace vašich rozšíření s kódem, který je generován z definice DSL.  Další informace najdete v tématu [psaní kódu pro úpravu jazyka specifického pro doménu](../modeling/writing-code-to-customise-a-domain-specific-language.md).
 
 > [!NOTE]
->  Po aktualizaci souboru definic DSL, nezapomeňte kliknout na **Transformovat všechny šablony** na panelu nástrojů Průzkumník řešení před opětovné sestavování svého řešení.
+> Po aktualizaci souboru definic DSL, nezapomeňte kliknout na **Transformovat všechny šablony** na panelu nástrojů Průzkumník řešení před opětovné sestavování svého řešení.
 
 ## <a name="customShapes"></a> V této části
 

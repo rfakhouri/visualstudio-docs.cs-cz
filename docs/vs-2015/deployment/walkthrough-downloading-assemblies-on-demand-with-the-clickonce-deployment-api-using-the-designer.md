@@ -18,12 +18,12 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4513a1fa35ab45cf36a8c86572eecd6043ee7415
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 009a2a264ac1605983378197b427cfe7490e5cae
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60086842"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434954"
 ---
 # <a name="walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>Návod: Stahování sestavení na vyžádání pomocí nasazení ClickOnce pomocí návrháře rozhraní API
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,10 +31,10 @@ ms.locfileid: "60086842"
 Ve výchozím nastavení, všechna sestavení součástí [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikace se stáhne při prvním spuštění aplikace. Ale může být součástí vaší aplikace, které jsou používány malého počtu uživatelů. V takovém případě budete chtít stáhnout sestavení pouze v případě, že můžete vytvořit jeden z jeho typy. Následující návod ukazuje, jak označit určité sestavení v aplikaci jako "volitelné", a jak si je stáhnout pomocí tříd v <xref:System.Deployment.Application> obor názvů, když je modul common language runtime požaduje.  
   
 > [!NOTE]
->  Vaše aplikace bude mít ke spuštění v režimu plné důvěryhodnosti k použití tohoto postupu.  
+> Vaše aplikace bude mít ke spuštění v režimu plné důvěryhodnosti k použití tohoto postupu.  
   
 > [!NOTE]
->  Dialogová okna a příkazy nabídek, které vidíte, se mohou lišit od těch popsaných v nápovědě v závislosti na aktivních nastaveních nebo edici. Chcete-li změnit nastavení, klikněte na tlačítko **nastavení importu a exportu** na **nástroje** nabídky. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Dialogová okna a příkazy nabídek, které vidíte, se mohou lišit od těch popsaných v nápovědě v závislosti na aktivních nastaveních nebo edici. Chcete-li změnit nastavení, klikněte na tlačítko **nastavení importu a exportu** na **nástroje** nabídky. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="creating-the-projects"></a>Vytváření projektů  
   
@@ -43,7 +43,7 @@ Ve výchozím nastavení, všechna sestavení součástí [!INCLUDE[ndptecclick]
 1. Vytvoření nového projektu Windows Forms v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Na **souboru** nabídky, přejděte k **přidat**a potom klikněte na tlačítko **nový projekt**. Zvolte **knihovny tříd** projektu v dialogovém okně a pojmenujte ho `ClickOnceLibrary`.  
   
     > [!NOTE]
-    >  V jazyce Visual Basic, doporučujeme vám, že upravíte vlastnosti projektu, chcete-li změnit kořenový obor názvů pro tento projekt do `Microsoft.Samples.ClickOnceOnDemand` nebo do oboru názvů podle vašeho výběru. Pro jednoduchost jsou tyto dva projekty v tomto názorném postupu ve stejném oboru názvů.  
+    > V jazyce Visual Basic, doporučujeme vám, že upravíte vlastnosti projektu, chcete-li změnit kořenový obor názvů pro tento projekt do `Microsoft.Samples.ClickOnceOnDemand` nebo do oboru názvů podle vašeho výběru. Pro jednoduchost jsou tyto dva projekty v tomto názorném postupu ve stejném oboru názvů.  
   
 2. Definovat třídu s názvem `DynamicClass` s jedinou vlastnost s názvem `Message`.  
   
@@ -53,7 +53,7 @@ Ve výchozím nastavení, všechna sestavení součástí [!INCLUDE[ndptecclick]
 3. Vyberte projekt Windows Forms v **Průzkumníka řešení**. Přidejte odkaz na <xref:System.Deployment.Application> sestavení a projektu odkaz `ClickOnceLibrary` projektu.  
   
     > [!NOTE]
-    >  V jazyce Visual Basic, doporučujeme vám, že upravíte vlastnosti projektu, chcete-li změnit kořenový obor názvů pro tento projekt do `Microsoft.Samples.ClickOnceOnDemand` nebo do oboru názvů podle vašeho výběru. Pro jednoduchost jsou tyto dva projekty v tomto názorném postupu umístěny v stejný obor názvů.  
+    > V jazyce Visual Basic, doporučujeme vám, že upravíte vlastnosti projektu, chcete-li změnit kořenový obor názvů pro tento projekt do `Microsoft.Samples.ClickOnceOnDemand` nebo do oboru názvů podle vašeho výběru. Pro jednoduchost jsou tyto dva projekty v tomto názorném postupu umístěny v stejný obor názvů.  
   
 4. Klikněte pravým tlačítkem na formuláři, klikněte na tlačítko **zobrazit kód** z nabídky a přidejte následující odkazy na formuláři.  
   

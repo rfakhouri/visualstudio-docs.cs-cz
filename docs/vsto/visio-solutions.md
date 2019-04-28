@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: beb51866fdce18c640e41cb90a5f357fda6e5190
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: d2e47227f9da4e691575b7136011deff15db25db
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628894"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438749"
 ---
 # <a name="visio-solutions"></a>Řešení pro aplikaci Visio
   Visual Studio poskytuje šablony projektu, které slouží k vytváření doplňků VSTO pro aplikaci Microsoft Office Visio. Doplňky VSTO slouží k automatizaci aplikace Visio rozšířit funkce aplikace Visio a přizpůsobení uživatelského rozhraní (UI) aplikace Visio.
@@ -32,7 +32,7 @@ ms.locfileid: "56628894"
  **Platí pro:** Informace v tomto tématu se vztahují na projekty doplňku VSTO pro Visio 2010. Další informace najdete v tématu [Dostupné funkce podle aplikace Office a typu projektu](../vsto/features-available-by-office-application-and-project-type.md).
 
 > [!NOTE]
->  Zajímá vás vývoj řešení, které rozšiřují Office prostředí napříč [více platforem](https://dev.office.com/add-in-availability)? Podívejte se na nové [Office Add-ins modelu](https://dev.office.com/docs/add-ins/overview/office-add-ins). Doplňky sady Office mají malé náklady v porovnání s doplňky VSTO a řešení a je můžete vytvořit s využitím téměř jakékoli webové programování technologie, jako je například HTML5, JavaScript, CSS3 a XML.
+> Zajímá vás vývoj řešení, které rozšiřují Office prostředí napříč [více platforem](https://dev.office.com/add-in-availability)? Podívejte se na nové [Office Add-ins modelu](https://dev.office.com/docs/add-ins/overview/office-add-ins). Doplňky sady Office mají malé náklady v porovnání s doplňky VSTO a řešení a je můžete vytvořit s využitím téměř jakékoli webové programování technologie, jako je například HTML5, JavaScript, CSS3 a XML.
 
 ## <a name="automate-visio-by-using-the-visio-object-model"></a>Automatizace Visia s použitím modelu objektů aplikace Visio
  Objektový model aplikace Visio poskytuje mnoho tříd, které můžete použít k automatizaci aplikace Visio k vytváření diagramů pro organizační diagramy, vývojových diagramů, projekt časové osy, diagramy sítě, prostory office a další. Rozhraní API umožňuje psát kód k provedení běžných úloh:

@@ -13,12 +13,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: acba0174fde52886d3be7ec6288148171fe40cca
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c45f3ac7cfec727eb0a27fc79e5fe09237e8f8c3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104977"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437594"
 ---
 # <a name="creating-applications-in-bi-directional-languages"></a>Vytváření aplikací v obousměrných jazycích
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "60104977"
 Visual Studio můžete vytvářet aplikace pro správné zobrazení textu v jazycích napsané-doleva, včetně arabština a hebrejština. Pro některé funkce stačí nastavit vlastnosti. V ostatních případech je nutné implementovat v kódu funkce.  
   
 > [!NOTE]
->  Pokud chcete zadat a zobrazit obousměrných jazycích, musíte pracovat s verzí Windows, který je nakonfigurován příslušný jazyk. To může být buď anglickou verzi systému Windows s odpovídající jazyková sada nainstalovaná nebo správně lokalizovanou verzi Windows.  
+> Pokud chcete zadat a zobrazit obousměrných jazycích, musíte pracovat s verzí Windows, který je nakonfigurován příslušný jazyk. To může být buď anglickou verzi systému Windows s odpovídající jazyková sada nainstalovaná nebo správně lokalizovanou verzi Windows.  
   
 ## <a name="types-of-application-that-support-bi-directional-languages"></a>Typy aplikací tuto podporu obousměrné jazyky  
   
@@ -66,7 +66,7 @@ Visual Studio můžete vytvářet aplikace pro správné zobrazení textu v jazy
 - Obsah souboru. Můžete otevřít nebo uložit soubory s kódováním Unicode nebo s vybranou znakovou stránkou.  
   
     > [!NOTE]
-    >  Editor kódu je zvláštní případ. Podrobnosti najdete níže.  
+    > Editor kódu je zvláštní případ. Podrobnosti najdete níže.  
   
 - Datové prvky. **Průzkumník serveru** správně zobrazí tyto prvky a bylo možné upravovat.  
   
@@ -79,10 +79,10 @@ Visual Studio můžete vytvářet aplikace pro správné zobrazení textu v jazy
 - Kód a text literálu. V editoru kódu (což je také textového editoru) vám pomůže arabské nebo hebrejské název třídy, funkce, proměnné, vlastnosti, řetězcové literály, atributy a tak dále. Editor ale nepodporuje pořadí čtení zprava doleva. text vždy začíná na levém okraji.  
   
     > [!TIP]
-    >  Doporučujeme, umístěte řetězcové literály do souborů prostředků místo pevného kódování je do vašich aplikací. Další informace najdete v tématu [názorný postup: Lokalizace formulářů Windows](http://msdn.microsoft.com/9a96220d-a19b-4de0-9f48-01e5d82679e5).  
+    > Doporučujeme, umístěte řetězcové literály do souborů prostředků místo pevného kódování je do vašich aplikací. Další informace najdete v tématu [názorný postup: Lokalizace formulářů Windows](http://msdn.microsoft.com/9a96220d-a19b-4de0-9f48-01e5d82679e5).  
   
     > [!NOTE]
-    >  Musíte být konzistentní vzhledem k aplikacím v jak odkazovat na objekty s názvem v těchto jazycích. Pokud používáte kašidy názvů Arabské proměnné, musíte vždycky použít kašida k odkazování na tuto proměnnou nebo způsobí chyby.  
+    > Musíte být konzistentní vzhledem k aplikacím v jak odkazovat na objekty s názvem v těchto jazycích. Pokud používáte kašidy názvů Arabské proměnné, musíte vždycky použít kašida k odkazování na tuto proměnnou nebo způsobí chyby.  
   
 - Komentáře ke kódu. Vytvoření komentářů v arabské nebo hebrejské. Můžete také těchto jazyků v nástroji Tvůrce komentář.  
   

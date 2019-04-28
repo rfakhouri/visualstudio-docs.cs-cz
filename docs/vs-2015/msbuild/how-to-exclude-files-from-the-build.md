@@ -13,12 +13,12 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: bd1535841a01b6e188383d74ed3b6124b4a325f6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0cd59df3b6056040445ac8de79e064a939aff145
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60052556"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440061"
 ---
 # <a name="how-to-exclude-files-from-the-build"></a>Postupy: Vyloučení souborů ze sestavení
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -76,7 +76,7 @@ V souboru projektu můžete použít zástupné znaky jako vstupy pro sestavení
     ```  
   
     > [!NOTE]
-    >  Je nutné zadat cestu pro oba atributy. Pokud použijete absolutní cestu k určení umístění souboru v `Include` atribut, musíte taky použít absolutní cesta ve `Exclude` atribut; Pokud použijete relativní cestu ve `Include` atributu, musí také použít relativní cestu ve `Exclude`atribut.  
+    > Je nutné zadat cestu pro oba atributy. Pokud použijete absolutní cestu k určení umístění souboru v `Include` atribut, musíte taky použít absolutní cesta ve `Exclude` atribut; Pokud použijete relativní cestu ve `Include` atributu, musí také použít relativní cestu ve `Exclude`atribut.  
   
 ## <a name="using-conditions-to-exclude-a-file-or-directory-from-the-inputs-for-a-build"></a>Pomocí podmínky vyloučení souboru nebo adresáře ze vstupů pro sestavení  
  Pokud jsou položky, které chcete zahrnout, například v sestavení pro ladění, ale nikoli sestavení pro vydání, můžete použít `Condition` atribut k určení podmínek, za které chcete zahrnout položky.  

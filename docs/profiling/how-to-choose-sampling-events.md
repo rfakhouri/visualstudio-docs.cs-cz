@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6133ed465f786fa20fd26f32ae12ad11bd40d727
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9dac636beeab5188c7958232d46cf3fe4a4b5f32
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063762"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439507"
 ---
 # <a name="how-to-choose-sampling-events"></a>Postupy: Výběr událostí vzorkování
 Ve výchozím nastavení [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] nástrojů pro profilaci sady shromažďuje údaje o výkonu v intervalu, který je zadán jako počet cyklů procesoru, které jsou používány profilovaný proces. Výchozí počet cyklů v intervalu je 10 000 000, což je na 1 počítači gv přibližně na 0,01 sekund. Počet cyklů v intervalu můžete změnit, a můžete změnit událost vzorku. Následující ukázkové události jsou k dispozici:
@@ -37,7 +37,7 @@ Ve výchozím nastavení [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md
 - Čítač výkonu – čítače CPU pro problémy výkonu na nízké úrovni.
 
 > [!IMPORTANT]
->  Pokud pomocí metody vzorkování se shromažďování dat paměti .NET (přidělení správu životnosti objektů nebo obojí), jsou ignorovány všechny zadané uživatelem vzorkování událostí a přidělení paměti odpovídající události kolekce paměti nebo obojí, se používá ke shromažďování dat.
+> Pokud pomocí metody vzorkování se shromažďování dat paměti .NET (přidělení správu životnosti objektů nebo obojí), jsou ignorovány všechny zadané uživatelem vzorkování událostí a přidělení paměti odpovídající události kolekce paměti nebo obojí, se používá ke shromažďování dat.
 
 ### <a name="to-select-a-sample-event"></a>Vybrat událost vzorku
 
@@ -48,7 +48,7 @@ Ve výchozím nastavení [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md
 3. Z **událost vzorku** rozevíracího seznamu vyberte událost vzorku, kterou chcete použít pro profilování aplikace.
 
     > [!NOTE]
-    >  **Dostupných čítačů výkonu** jsou povolené jenom v případě, že vyberete **čítač výkonu** z **událost vzorku** rozevíracího seznamu.
+    > **Dostupných čítačů výkonu** jsou povolené jenom v případě, že vyberete **čítač výkonu** z **událost vzorku** rozevíracího seznamu.
 
 4. Pokud vyberete **čítač výkonu**, vyberte konkrétní čítač procesoru z **dostupných čítačů výkonu** ovládací prvek zobrazení stromové struktury.
 

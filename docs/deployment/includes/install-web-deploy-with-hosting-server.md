@@ -1,10 +1,10 @@
 ---
 ms.openlocfilehash: 0fc18fab56f5b46ef097cdf699e4f0569dc190c9
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58342685"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62904357"
 ---
 Nástroj nasazení webu 3.6 pro servery hostující poskytuje další konfiguraci funkce, které umožňují vytváření souboru s nastavením publikování v uživatelském rozhraní.
 

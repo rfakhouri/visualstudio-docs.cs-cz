@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d548a3a6ad0c381d6119c06ba7d2cb56e6a9440e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8a2e67692daed4d00b841b7472e7d13ede0ca500
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60075399"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420417"
 ---
 # <a name="step-8-write-code-for-the-show-a-picture-button-event-handler"></a>Krok 8: Napsat kód pro zobrazení obslužné rutiny události obrázku tlačítka
 
@@ -79,7 +79,7 @@ Rozhraní IDE má výkonný nástroj zvaný technologie IntelliSense, která vá
          Další informace o DialogResult najdete v tématu [DialogResult](<xref:System.Windows.Forms.DialogResult>).
 
         > [!NOTE]
-        >  První řádek kódu by měl být úplný. Pro jazyk Visual C# to mělo být jako následující.
+        > První řádek kódu by měl být úplný. Pro jazyk Visual C# to mělo být jako následující.
         >
         >  `if (openFileDialog1.ShowDialog() == DialogResult.OK)`
         >

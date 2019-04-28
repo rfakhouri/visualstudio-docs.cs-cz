@@ -19,12 +19,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e901e5b34fb807a17cfc5143decc3a63b75194d7
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 9a85b8ef5dd99da6c82c9f63da31bec783a7c9a7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59650704"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438022"
 ---
 # <a name="shell-command"></a>Prostředí – příkaz
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -60,7 +60,7 @@ Tools.Shell [/command] [/output] [/dir:folder] path [args]
  Předdefinované alias `Shell` lze použít místo `Tools.Shell`.  
   
 > [!CAUTION]
->  Pokud `path` argument určuje cestu k adresáři, jakož i název souboru, celý název cesty by měl uzavřete do literálu uvozovky ("" "), protože v následujících tématech:  
+> Pokud `path` argument určuje cestu k adresáři, jakož i název souboru, celý název cesty by měl uzavřete do literálu uvozovky ("" "), protože v následujících tématech:  
   
 ```  
 Tools.Shell """C:\Program Files\SomeFile.exe"""  
@@ -73,7 +73,7 @@ Tools.Shell """C:\Program Files\SomeFile.exe"""
 ```  
   
 > [!CAUTION]
->  Pokud není uzavřít řetězec cesty v uvozovkách literálu ("" "), Windows použije pouze část řetězce až po první místo. Například pokud výše uvedené cestě řetězec nebyly správně v uvozovkách, by vypadalo Windows pro soubor s názvem "Program", které jsou umístěné v kořenovém adresáři C:\. Pokud spustitelný soubor C:\Program.exe byly ve skutečnosti k dispozici, i jeden nainstaloval nedovolené úmyslné poškozování, Windows by pokus o spuštění tohoto programu místo požadované "c:\Program Files\SomeFile.exe" program.  
+> Pokud není uzavřít řetězec cesty v uvozovkách literálu ("" "), Windows použije pouze část řetězce až po první místo. Například pokud výše uvedené cestě řetězec nebyly správně v uvozovkách, by vypadalo Windows pro soubor s názvem "Program", které jsou umístěné v kořenovém adresáři C:\. Pokud spustitelný soubor C:\Program.exe byly ve skutečnosti k dispozici, i jeden nainstaloval nedovolené úmyslné poškozování, Windows by pokus o spuštění tohoto programu místo požadované "c:\Program Files\SomeFile.exe" program.  
   
 ## <a name="example"></a>Příklad  
  Následující příkaz využívá xcopy.exe zkopírovat soubor `MyText.txt` do `Text` složky. Zobrazí se výstup z xcopy.exe v obou **příkazové okno** a **výstup** okna.  

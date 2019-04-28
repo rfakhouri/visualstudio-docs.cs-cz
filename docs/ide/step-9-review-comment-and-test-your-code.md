@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ff907289233bf0a7bea8321df35c8f755f16fe5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 899b4ffee17849bf1165def3025506eb75d940a0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049747"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435435"
 ---
 # <a name="step-9-review-comment-and-test-your-code"></a>Krok 9: Zkontrolujte, komentáře a testování kódu
 Dále přidáte komentář do vašeho kódu. Komentář je Všimněte si, že nedojde ke změně způsobu, jakým se chová program. To usnadňuje pro čtenáře kódu pochopit jeho význam. Přidání komentářů do kódu je dobré se naučit do. V jazyce Visual C# dvě lomítka (/ /) značí řádek jako komentáře. V jazyce Visual Basic jednoduché uvozovky (') slouží k označení řádku jako komentáře. Po přidání komentáře otestujete váš program. Je vhodné spustit a otestovat kód často při práci na svých projektech, takže můžete zachytit a opravit případné problémy dříve, než kód složitější. Tento postup se nazývá *iterativnější testování*.
@@ -52,10 +52,10 @@ Dále přidáte komentář do vašeho kódu. Komentář je Všimněte si, že ne
      [!code-csharp[VbExpressTutorial1Step9_10#1](../ide/codesnippet/CSharp/step-9-review-comment-and-test-your-code_1.cs)]
 
     > [!NOTE]
-    >  Vaše **showButton** tlačítka <xref:System.Windows.Forms.Control.Click> obslužná rutina události je nyní dokončena a pracuje. Zahájili jste psaní kódu, počínaje `if` příkazu. `if` Příkaz je, jak říct vašemu programu: "Zkontroluj tuto jednu věc a pokud je PRAVDA, proveď tyto akce." V takovém případě říkáte programu, otevřete **otevřít soubor** dialogové okno, a pokud uživatel vybere soubor a klikne **OK** tlačítko, načte soubor do **PictureBox**.
+    > Vaše **showButton** tlačítka <xref:System.Windows.Forms.Control.Click> obslužná rutina události je nyní dokončena a pracuje. Zahájili jste psaní kódu, počínaje `if` příkazu. `if` Příkaz je, jak říct vašemu programu: "Zkontroluj tuto jednu věc a pokud je PRAVDA, proveď tyto akce." V takovém případě říkáte programu, otevřete **otevřít soubor** dialogové okno, a pokud uživatel vybere soubor a klikne **OK** tlačítko, načte soubor do **PictureBox**.
 
     > [!TIP]
-    >  Rozhraní IDE je sestaveno k usnadnění psaní kódu a *fragmenty kódu* jsou jedním ze způsobů, který provádí. Fragment je zástupce, který se rozbalí do malého bloku kódu.
+    > Rozhraní IDE je sestaveno k usnadnění psaní kódu a *fragmenty kódu* jsou jedním ze způsobů, který provádí. Fragment je zástupce, který se rozbalí do malého bloku kódu.
     >
     >  Zobrazí se všechny dostupné Výstřižky. V panelu nabídky zvolte **nástroje** > **Správce fragmentů kódů**. Pro jazyk Visual C# `if` fragment kódu je v **Visual C#** . V jazyce Visual Basic `if` fragmenty kódu jsou v **podmínkách a smyčkách** > **vzorů v kódu**. Tento správce můžete použít k vyhledání existujících fragmentů nebo přidání vlastních fragmentů.
     >
@@ -80,7 +80,7 @@ Dále přidáte komentář do vašeho kódu. Komentář je Všimněte si, že ne
 2. Zvolte **zobrazit obrázek** tlačítko spustit kód, který jste napsali. Nejprve program otevře **otevřít soubor** dialogové okno. Ověřte, že vaše filtry se zobrazí v **soubory typu** rozevírací seznam v dolní části dialogového okna. Potom přejděte na obrázek a otevřete jej. Obvykle lze najít vzorové obrázky dodávané s operačním systémem Windows ve vaší *dokumenty* složky, uvnitř *Moje Obrázky\Příklady obrázků* složky.
 
     > [!NOTE]
-    >  Pokud nevidíte žádné obrázky v **vyberte soubor s obrázkem** dialogové okno, ujistěte se, že **všechny soubory (*.\*)**  filtru je vybrali v rozevíracím seznamu v dolní pravé části dialogových oken.
+    > Pokud nevidíte žádné obrázky v **vyberte soubor s obrázkem** dialogové okno, ujistěte se, že **všechny soubory (*.\*)**  filtru je vybrali v rozevíracím seznamu v dolní pravé části dialogových oken.
 
 3. Načíst obrázek a zobrazí se ve vašem ovládacím prvku PictureBox. Zkuste změnit velikost formuláře přetažením jeho okrajů. Protože máte váš ovládací prvek PictureBox ukotven uvnitř kontejneru TableLayoutPanel, který je sám ukotven uvnitř formuláře, oblast vašeho obrázku změní velikost sebe sama tak, aby je stejně široká jako formulář a vyplní horních 90 procent formuláře. To je důvod, proč jste použili <xref:System.Windows.Forms.TableLayoutPanel> a <xref:System.Windows.Forms.FlowLayoutPanel> kontejnerů: Udržují správnou velikost, když ji uživatel změní formuláře.
 

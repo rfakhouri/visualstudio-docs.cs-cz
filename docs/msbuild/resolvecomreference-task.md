@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 86155da1a14516992841aa5e19de2606eb09fbd8
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 123aa52b5062d8ac083f054074df2c65ba77f80d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56639060"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431302"
 ---
 # <a name="resolvecomreference-task"></a>Resolvecomreference – úloha
 Přebírá seznam jednoho nebo více typů názvy knihoven nebo *.tlb* soubory a řeší tyto knihovny typů do umístění na disku.
@@ -70,7 +70,7 @@ Přebírá seznam jednoho nebo více typů názvy knihoven nebo *.tlb* soubory a
 |`WrapperTool`|Nepovinná položka metadat.<br /><br /> Určuje, že nástrojem obálky, který se používá ke generování sestavení obálky pro tuto knihovnu typů. Pokud není zadána tato metadata položky, úkol používá výchozí nástroj obálky "tlbimp". Jsou k dispozici, malá a velká písmena výběr typelibs:<br /><br /> -   `Primary`: Nástroj obálky, když chcete použít pro komponenty modelu COM již generované primární definiční sestavení. Použijete-li tento nástroj obálky, nezadávejte obálky výstupní adresář, protože, které způsobí selhání úlohy.<br />-   `TLBImp`: Při generování sestavení vzájemné spolupráce pro komponenty modelu COM, použijte tento nástroj obálky.<br />-   `AXImp`: Nástroj obálky, když chcete generování sestavení vzájemné spolupráce pro ovládací prvek ActiveX.|
 
 > [!NOTE]
->  Další informace, které poskytnete k jednoznačné identifikaci knihovny typů, větší možnost, že úloha se přeloží správný soubor na disku.
+> Další informace, které poskytnete k jednoznačné identifikaci knihovny typů, větší možnost, že úloha se přeloží správný soubor na disku.
 
 ## <a name="remarks"></a>Poznámky
  Kromě výše uvedených parametrů zdědí tento úkol parametry ze <xref:Microsoft.Build.Utilities.Task> třídy. Seznam těchto dalších parametrů a jejich popisy najdete v tématu [Task – základní třída](../msbuild/task-base-class.md).

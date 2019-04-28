@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dc428d70e036da311d2cf3050cec9e94a13782e3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 47d53ad2579ce24f6d5fde2503a0acc98b4f7f5c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60089975"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444126"
 ---
 # <a name="how-to-set-breakpoints-in-workflows"></a>Postupy: Nastavení zarážek v pracovních postupech
 Při použití [!INCLUDE[wfd1](../includes/wfd1-md.md)], můžete nastavit zarážky na grafické pracovních postupů, jako byste to udělali v kódu jazyka Visual Basic nebo C#. Podle očekávání, zastaví provádění pracovního postupu u každé zarážky, které jste nastavili.  
@@ -22,13 +22,13 @@ Při použití [!INCLUDE[wfd1](../includes/wfd1-md.md)], můžete nastavit zará
  Zarážka má tři stavy: *Čekající*, *vázán*, a *chyba*. Pokud nastavíte zarážku, čeká na vyřízení a je reprezentována solid červenou ikonu. Při načítání pracovního postupu typu modulu runtime vázán. Pokud zadáte nesprávný formát pro zarážku, jako je například název aktivity, která není platná, zobrazí se okno aplikace chyba. Zarážka je přidána do okna zarážky, ale je označena s malým "x".  
   
 > [!NOTE]
->  Nastavení zarážek v pracovních postupech, vyvolali se nepodporuje.  
+> Nastavení zarážek v pracovních postupech, vyvolali se nepodporuje.  
 > 
 > [!WARNING]
->  Ujistěte se, že vyberete možnost **povolit volbu pouze vlastní kód (pouze spravované)** z **nástroje**, **možnosti**, **ladění** nabídku před ladění. Pokud máte dvou sekvencí, které jsou vnořené uvnitř jiné pořadí a nastavit bod přerušení na první vnitřní pořadí, stisknutím klávesy **F11** nebude ladění do druhé vnitřní pořadí, pokud <strong>povolit volbu pouze vlastní kód (pouze spravované)</strong>možnost není vybraná.  
+> Ujistěte se, že vyberete možnost **povolit volbu pouze vlastní kód (pouze spravované)** z **nástroje**, **možnosti**, **ladění** nabídku před ladění. Pokud máte dvou sekvencí, které jsou vnořené uvnitř jiné pořadí a nastavit bod přerušení na první vnitřní pořadí, stisknutím klávesy **F11** nebude ladění do druhé vnitřní pořadí, pokud <strong>povolit volbu pouze vlastní kód (pouze spravované)</strong>možnost není vybraná.  
 > 
 > [!WARNING]
->  V pracovním postupu nebudete získáte zarážky pokud úplná cesta k vlastnosti souboru XAML není přesné. Úplná cesta k souboru XAML není přesné po přesunutí projektu nebo řešení do jiné složky nebo do jiného počítače. Vyberte kombinaci kláves Ctrl + S uložte a aktualizujte vlastnost úplnou cestu.  
+> V pracovním postupu nebudete získáte zarážky pokud úplná cesta k vlastnosti souboru XAML není přesné. Úplná cesta k souboru XAML není přesné po přesunutí projektu nebo řešení do jiné složky nebo do jiného počítače. Vyberte kombinaci kláves Ctrl + S uložte a aktualizujte vlastnost úplnou cestu.  
   
 ### <a name="to-set-a-breakpoint-on-an-activity-in-the-design-view"></a>Chcete-li nastavit zarážku pro aktivitu v návrhovém zobrazení  
   

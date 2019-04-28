@@ -8,12 +8,12 @@ ms.assetid: 47926aa1-3b41-410d-bca8-f77fc950cbe7
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8de4960548b363c99b9625553c47b2cbad2df2de
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d5e45c91e9dadb0f457e3a2ecfa2e5484fbe0e78
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063683"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412336"
 ---
 # <a name="managing-universal-windows-projects"></a>Správa projektů univerzálních aplikací pro Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -235,7 +235,7 @@ Univerzální aplikace pro Windows jsou aplikace, které se zaměřují na Windo
     ```  
   
     > [!IMPORTANT]
-    >  Pokud uživatel otevřel v experimentální instanci projektu aplikace C++ universal Windows, kódu výše vyvolá výjimku. Jedná se o známý problém. Chcete-li zabránit výjimku, nahraďte `foreach` blokovat nad následujícím kódem:  
+    > Pokud uživatel otevřel v experimentální instanci projektu aplikace C++ universal Windows, kódu výše vyvolá výjimku. Jedná se o známý problém. Chcete-li zabránit výjimku, nahraďte `foreach` blokovat nad následujícím kódem:  
   
     ```csharp  
     var importingProjects = sharedAssetsProject.EnumImportingProjects();  
@@ -525,7 +525,7 @@ Univerzální aplikace pro Windows jsou aplikace, které se zaměřují na Windo
 9. Změna sdílené položky. Nelze změnit sdílené položky v projektu platformy. Místo toho je třeba upravit ve sdíleném projektu, který je vlastníkem skutečné z těchto položek. Můžete získat ID odpovídající položky ve sdíleném projektu s <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject.IsDocumentInProject%2A>, poskytují úplnou cestu sdílené položky. Potom můžete upravit sdílené položky. Pro projekty, které platformy jsou příslušné změny distribuovány.  
   
     > [!IMPORTANT]
-    >  Měli byste najít položku projektu určuje, jestli je sdílené položky před změnou ho.  
+    > Měli byste najít položku projektu určuje, jestli je sdílené položky před změnou ho.  
   
      Následující metoda upraví název souboru položky projektu.  
   

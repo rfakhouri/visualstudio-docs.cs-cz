@@ -15,18 +15,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 60c1ef43854e3fd4a08851afadf4e1caf43334c8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 73e940f6d302d28713c0345f77d6c78c8223e363
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050919"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440284"
 ---
 # <a name="beginners-guide-to-cpu-sampling"></a>Průvodce vzorkováním procesoru pro začátečníky
 Nástroje pro profilaci v sadě Visual Studio můžete použít k analýze problémů s výkonem aplikace. Tento postup vám ukáže, jak používat data **Vzorkování**.
 
 > [!NOTE]
->  Doporučujeme použít raději nástroj [Využití procesoru](../profiling/beginners-guide-to-performance-profiling.md) v okně Diagnostické nástroje než starší nástroj Vzorkování procesoru, pokud nepotřebujete specializované funkce, jako je například podpora instrumentace.
+> Doporučujeme použít raději nástroj [Využití procesoru](../profiling/beginners-guide-to-performance-profiling.md) v okně Diagnostické nástroje než starší nástroj Vzorkování procesoru, pokud nepotřebujete specializované funkce, jako je například podpora instrumentace.
 
  **Vzorkování** je metoda statistické profilace, která vám předvede funkce provádějící nejvíce práce uživatelského režimu v aplikaci. Vzorkování je vhodným místem, odkud můžete začít vyhledávat oblasti aplikace, které můžete zrychlit.
 
@@ -35,7 +35,7 @@ Nástroje pro profilaci v sadě Visual Studio můžete použít k analýze probl
  Pokud potřebná data nezískáte pomocí **vzorkování**, můžete v nástrojích pro profilaci použít jiné metody shromažďování, které poskytují různé druhy užitečných informací. Další informace o těchto dalších metodách, naleznete v tématu [jak: Výběr metod kolekcí](../profiling/how-to-choose-collection-methods.md).
 
 > [!TIP]
->  Pokud profilujete kód, který volá funkce Windows, by měl Ujistěte se, že máte nejnovější. *pdb* soubory. Bez těchto souborů se v zobrazeních sestav zobrazí seznam funkcí Windows, jejichž názvy jsou nesrozumitelné a obtížně pochopitelné. Další informace o tom, abyste měli jistotu, že máte soubory, které potřebujete, najdete v části [jak: Referenční informace o symbolech Windows](../profiling/how-to-reference-windows-symbol-information.md).
+> Pokud profilujete kód, který volá funkce Windows, by měl Ujistěte se, že máte nejnovější. *pdb* soubory. Bez těchto souborů se v zobrazeních sestav zobrazí seznam funkcí Windows, jejichž názvy jsou nesrozumitelné a obtížně pochopitelné. Další informace o tom, abyste měli jistotu, že máte soubory, které potřebujete, najdete v části [jak: Referenční informace o symbolech Windows](../profiling/how-to-reference-windows-symbol-information.md).
 
 ## <a name="create-and-run-a-performance-session"></a>Vytvoření a spuštění relace výkonu
  Abyste získali data potřebná k analýze, musíte nejprve vytvořit výkonnostní relaci a potom ji spustit. S oběma úlohami vám pomůže **Průvodce výkonu**.
@@ -47,7 +47,7 @@ Nástroje pro profilaci v sadě Visual Studio můžete použít k analýze probl
 1. Otevřete řešení v sadě Visual Studio. Nastavte konfiguraci na Verze. (Na panelu nástrojů vyhledejte pole **Konfigurace řešení**, které je ve výchozím nastavení nastaveno na **Ladit**. Změňte nastavení na **Verze**.)
 
     > [!IMPORTANT]
-    >  Pokud nejste správcem na počítači, který používáte, musíte při použití profileru spustit Visual Studio jako správce. (Pravým tlačítkem myši klikněte na ikonu aplikace Visual Studio a potom klikněte na **Spustit jako správce**.
+    > Pokud nejste správcem na počítači, který používáte, musíte při použití profileru spustit Visual Studio jako správce. (Pravým tlačítkem myši klikněte na ikonu aplikace Visual Studio a potom klikněte na **Spustit jako správce**.
 
 2. V nabídce **Ladit** vyberte **Profiler** a potom **Profiler výkonu**.
 

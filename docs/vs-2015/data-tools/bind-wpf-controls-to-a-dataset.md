@@ -18,12 +18,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 70fe24a642ef1bb5dc872f2b4e48438a26aaea07
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 80233f0786018bf1b4b18dbfa990a143d298f559
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039999"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439514"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>Vytvoření vazby ovládacích prvků WPF k datové sadě
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -175,7 +175,7 @@ V tomto návodu vytvoříte aplikaci WPF, která obsahuje ovládací prvky váza
 4. Klikněte na rozevírací nabídku vedle položky **thumbnailphoto nastavuje** uzel a vyberte možnost **Image**.  
   
     > [!NOTE]
-    >  Ve výchozím nastavení, položky v **zdroje dat** okno, které představují obrázky mají jejich výchozího ovládacího prvku nastavte na **žádný**. Je to proto, že obrázky jsou uloženy jako pole bajtů v databázích a pole bajtů může obsahovat cokoli od jednoduchých pole bajtů na spustitelný soubor velké aplikace.  
+    > Ve výchozím nastavení, položky v **zdroje dat** okno, které představují obrázky mají jejich výchozího ovládacího prvku nastavte na **žádný**. Je to proto, že obrázky jsou uloženy jako pole bajtů v databázích a pole bajtů může obsahovat cokoli od jednoduchých pole bajtů na spustitelný soubor velké aplikace.  
   
 5. Z **zdroje dat** okno, přetáhněte **produktu** uzlů na řádek mřížky pod řádkem, který obsahuje tlačítka.  
   
@@ -226,7 +226,7 @@ V tomto návodu vytvoříte aplikaci WPF, která obsahuje ovládací prvky váza
      [!code-vb[Data_WPFDATASET#4](../snippets/visualbasic/VS_Snippets_ProTools/data_wpfdataset/vb/mainwindow.xaml.vb#4)]  
   
     > [!NOTE]
-    >  V tomto příkladu `Save` metodu `TableAdapter` a uložte změny. To je vhodné v tomto názorném postupu, protože mění jenom jednu datovou tabulku. Pokud je potřeba uložit změny do několika tabulek dat, případně můžete použít `UpdateAll` metodu `TableAdapterManager` , který generuje sada Visual Studio s vaší datové sadě. Další informace najdete v tématu [TableAdapterManager – přehled](http://msdn.microsoft.com/library/33076d42-6b41-491a-ac11-6c6339aea650).  
+    > V tomto příkladu `Save` metodu `TableAdapter` a uložte změny. To je vhodné v tomto názorném postupu, protože mění jenom jednu datovou tabulku. Pokud je potřeba uložit změny do několika tabulek dat, případně můžete použít `UpdateAll` metodu `TableAdapterManager` , který generuje sada Visual Studio s vaší datové sadě. Další informace najdete v tématu [TableAdapterManager – přehled](http://msdn.microsoft.com/library/33076d42-6b41-491a-ac11-6c6339aea650).  
   
 ## <a name="test-the-application"></a>Testování aplikace  
  Sestavte a spusťte aplikaci. Ověřte, že můžete zobrazit a aktualizovat záznamy produktů.  

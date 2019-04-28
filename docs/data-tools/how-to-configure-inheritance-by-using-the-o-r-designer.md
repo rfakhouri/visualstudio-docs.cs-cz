@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: c57df245e897452d0bb8f3ae32d6490af9ee91fa
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 8927e6140792c12f42f1822afd0e715881384f1c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063007"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63402807"
 ---
 # <a name="how-to-configure-inheritance-by-using-the-or-designer"></a>Postupy: Konfigurace dědičnosti pomocí Návrháře relací objektů
 **Návrhář relací objektů** (**O/R Designer**) podporují koncept dědičnosti jedné tabulky, jak často je implementován v relačních systémech. V dědičnosti jedné tabulky je izolované databáze tabulku, která obsahuje pole pro informace o nadřazené i podřízené informace. Sloupec diskriminátoru s relačními daty, obsahuje hodnotu, která určuje, která třída libovolný záznam patří.
@@ -33,12 +33,12 @@ Vytvoření objektu modelu, který používá dědičnosti (a odpovídá relačn
 4. Klikněte na tlačítko **dědičnosti** v **Návrhář relací objektů** karty **nástrojů**a potom klikněte na podtřídu (tabulky, které jste přejmenovali) a připojte ho k základní třídy.
 
     > [!NOTE]
-    >  Klikněte na tlačítko **dědičnosti** položky v **nástrojů** a uvolněte tlačítko myši, klikněte na druhé kopie třídy, kterou jste vytvořili v kroku 3 a pak klikněte na první třídy, kterou jste vytvořili v kroku 2. Šipka na čáru dědičnosti odkazuje na první třídy.
+    > Klikněte na tlačítko **dědičnosti** položky v **nástrojů** a uvolněte tlačítko myši, klikněte na druhé kopie třídy, kterou jste vytvořili v kroku 3 a pak klikněte na první třídy, kterou jste vytvořili v kroku 2. Šipka na čáru dědičnosti odkazuje na první třídy.
 
 5. V každé třídě odstraňte všechny vlastnosti objektu, které nechcete zobrazit a které nejsou používány pro přidružení. Pokud se pokusíte odstranit vlastnosti objektu použité pro přidružení zobrazí chybová zpráva: [Vlastnost \<název vlastnosti > nejde odstranit, protože se účastní asociace \<název přidružení >](../data-tools/the-property-property-name-cannot-be-deleted-because-it-is-participating-in-the-association-association-name.md).
 
     > [!NOTE]
-    >  Protože odvozené třídy dědí vlastnosti definované v její základní třídě, stejné sloupce se nedá definovat v každé třídě. (Sloupce jsou implementovány jako vlastnosti). Vytvoření sloupce v odvozené třídě můžete povolit tak, že nastavíte modifikátor dědičnosti na vlastnost v základní třídě. Další informace najdete v tématu [základní informace o dědičnosti (Visual Basic)](/dotnet/visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics).
+    > Protože odvozené třídy dědí vlastnosti definované v její základní třídě, stejné sloupce se nedá definovat v každé třídě. (Sloupce jsou implementovány jako vlastnosti). Vytvoření sloupce v odvozené třídě můžete povolit tak, že nastavíte modifikátor dědičnosti na vlastnost v základní třídě. Další informace najdete v tématu [základní informace o dědičnosti (Visual Basic)](/dotnet/visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics).
 
 6. Vybrat čáru dědičnosti v **O/R Designer**.
 

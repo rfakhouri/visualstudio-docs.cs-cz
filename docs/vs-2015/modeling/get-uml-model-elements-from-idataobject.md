@@ -11,12 +11,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ded3910e74120433038132eb0135a869ea92d58d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: a5f60338a8a856b4c6ef8fa913d6d7168ff67bb9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54755100"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427029"
 ---
 # <a name="get-uml-model-elements-from-idataobject"></a>Získávání elementů modelu UML z objektu IDataObject
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "54755100"
 Když uživatel přetáhne prvky z libovolného zdroje do diagramu, přetažené prvky jsou zakódovány `System.Windows.Forms.IDataObject`. Kódování závisí na typu zdrojového objektu. Následující fragment ukazuje, jak načíst prvky, pokud je zdroj UML diagram.  
   
 > [!NOTE]
->  Většinu operací, které je třeba provést v modelech UML lze provést pomocí typů definovaných v sestavení **Microsoft.VisualStudio.Uml.Interfaces** a  **Microsoft.VisualStudio.ArchitectureTools.Extensibility**. Ale k tomuto účelu, budete muset použít některé třídy, které jsou součástí implementace nástroje modelu UML. Například `ShapeElement` v tomto fragmentu není stejný jako UML `IShape`. Aby se snížilo riziko uvedení modelu a diagramů do nekonzistentního stavu, je lepší vyhýbat se použití metod na tyto třídy implementace, jedině pokud neexistuje žádná alternativa.  
+> Většinu operací, které je třeba provést v modelech UML lze provést pomocí typů definovaných v sestavení **Microsoft.VisualStudio.Uml.Interfaces** a  **Microsoft.VisualStudio.ArchitectureTools.Extensibility**. Ale k tomuto účelu, budete muset použít některé třídy, které jsou součástí implementace nástroje modelu UML. Například `ShapeElement` v tomto fragmentu není stejný jako UML `IShape`. Aby se snížilo riziko uvedení modelu a diagramů do nekonzistentního stavu, je lepší vyhýbat se použití metod na tyto třídy implementace, jedině pokud neexistuje žádná alternativa.  
   
 ## <a name="code-sample"></a>Ukázka kódu  
  Váš projekt musí odkazovat na následující [!INCLUDE[TLA2#tla_net](../includes/tla2sharptla-net-md.md)] sestavení:  

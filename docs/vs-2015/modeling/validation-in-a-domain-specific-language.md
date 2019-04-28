@@ -12,12 +12,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cc3890ee8392088592aef16dcc120637da74e285
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 19ba3b3ee9e68a7329c077567136697b3acbe502
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60113453"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437479"
 ---
 # <a name="validation-in-a-domain-specific-language"></a>Ověřování v jazyce specifickém pro doménu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Jako autoři jazyka specifického pro doménu (DSL) můžete definovat omezení 
  Ověření je zvlášť důležité při psaní textové šablony nebo jiné nástroje, které zpracovávají modely vašich uživatelů. Ověření zajišťuje, že modely splňují předpoklady předpokládá, že pomocí těchto nástrojů.  
   
 > [!WARNING]
->  Můžete také povolit omezení ověření je definovat v samostatném rozšíření vašeho DSL, společně s příkazy rozšíření nabídky a obslužné rutiny gesta. Uživatelé mohou nainstalovat tato rozšíření kromě vašeho DSL. Další informace najdete v tématu [rozšíření vašeho DSL pomocí MEF](../modeling/extend-your-dsl-by-using-mef.md).  
+> Můžete také povolit omezení ověření je definovat v samostatném rozšíření vašeho DSL, společně s příkazy rozšíření nabídky a obslužné rutiny gesta. Uživatelé mohou nainstalovat tato rozšíření kromě vašeho DSL. Další informace najdete v tématu [rozšíření vašeho DSL pomocí MEF](../modeling/extend-your-dsl-by-using-mef.md).  
   
 ## <a name="running-validation"></a>Spouštění ověření  
  Když uživatel upravuje model, to znamená, že instance jazyka specifického pro doménu tyto akce můžete spustit ověření:  
@@ -52,7 +52,7 @@ Jako autoři jazyka specifického pro doménu (DSL) můžete definovat omezení 
  Každá metoda ověřování hlásí chyby, které nalezne.  
   
 > [!NOTE]
->  Metody ověřování zprávy o chybách, ale neměňte modelu. Pokud chcete upravit nebo zakázat některé změny, přečtěte si [alternativy k ověření](#alternatives).  
+> Metody ověřování zprávy o chybách, ale neměňte modelu. Pokud chcete upravit nebo zakázat některé změny, přečtěte si [alternativy k ověření](#alternatives).  
   
 #### <a name="to-define-a-validation-constraint"></a>Chcete-li definovat omezení ověření  
   
@@ -320,7 +320,7 @@ private void TestForCircularLinks(ValidationContext context)
 ```  
   
 > [!NOTE]
->  Můžete před metodu s tolika `[ValidationMethod()]` atributy, jak chcete. Přidejte metodu pro standardní i vlastní kategorie.  
+> Můžete před metodu s tolika `[ValidationMethod()]` atributy, jak chcete. Přidejte metodu pro standardní i vlastní kategorie.  
   
  Chcete-li vyvolat vlastní ověřování:  
   
@@ -342,7 +342,7 @@ validationController.ValidateCustom
  **Při pokusu o neplatný změnu vrátit zpět transakci.** Můžete také definovat pravidla pro tento účel, ale v některých případech je možné přepsat obslužné rutiny vlastnosti **OnValueChanging()**, nebo o přepsání metody, jako `OnDeleted().` vrácení zpět transakcí, použití `this.Store.TransactionManager.CurrentTransaction.Rollback().` Další informace informace najdete v tématu [obslužné rutiny změny hodnoty vlastnosti domény](../modeling/domain-property-value-change-handlers.md).  
   
 > [!WARNING]
->  Ujistěte se, že uživatel zná, že změna byla upravena nebo vrácena zpět. Například použít `System.Windows.Forms.MessageBox.Show("message").`  
+> Ujistěte se, že uživatel zná, že změna byla upravena nebo vrácena zpět. Například použít `System.Windows.Forms.MessageBox.Show("message").`  
   
 ## <a name="see-also"></a>Viz také  
  [Procházení a aktualizace modelu v programovém kódu](../modeling/navigating-and-updating-a-model-in-program-code.md)   

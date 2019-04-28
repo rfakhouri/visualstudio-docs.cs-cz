@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 967727fce010c38e2ef44a0b7e73ec10b257cce0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 322c8d4b766619a6404a315fb83298bf5416fba4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096228"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445322"
 ---
 # <a name="walkthrough-create-an-inline-task"></a>Návod: Vytvoření vložené úlohy
 Úlohy nástroje MSBuild se obvykle vytvářejí kompilováním třídy, která implementuje <xref:Microsoft.Build.Framework.ITask> rozhraní. Od verze rozhraní .NET Framework verze 4, můžete vytvořit úlohy vložené v souboru projektu. Není nutné vytvořit samostatné sestavení pro hostování úkolu. Další informace najdete v tématu [vložené úlohy](../msbuild/msbuild-inline-tasks.md).
@@ -103,7 +103,7 @@ Vytvoření a spuštění úloh, pomocí sady Visual Studio a **Visual Studio ok
     `Hello, world!`
 
    > [!NOTE]
-   >  Pokud se nezobrazí zpráva hello, zkuste to znovu uložit soubor projektu a pak spusťte úlohu Hello.
+   > Pokud se nezobrazí zpráva hello, zkuste to znovu uložit soubor projektu a pak spusťte úlohu Hello.
 
    Podle střídavě editoru kódu a **okno příkazového řádku**, můžete změnit soubor projektu a rychle zobrazit výsledky.
 

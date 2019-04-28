@@ -8,12 +8,12 @@ ms.assetid: 51b53778-469c-4cc9-854c-4e4992d6389b
 caps.latest.revision: 32
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 229893e13da06253398da32cfef4a85402a4787a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4929464f04ecb630f4c6898f7b2cc1ce132a79a9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60094551"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445974"
 ---
 # <a name="testing-sharepoint-2010-applications-with-coded-ui-tests"></a>Testování aplikací pro SharePoint 2010 pomocí programových testů uživatelského rozhraní
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,19 +39,19 @@ Zahrnutí programových testů UI v aplikaci SharePoint slouží k ověření, �
  ![Webové části služby SharePoint](../test/media/cuit-sharepoint.png "CUIT_SharePoint")  
   
 > [!NOTE]
->  Pokud záznam akce ověření akce před vygenerováním kódu. Vzhledem k tomu, že existují různé chování spojené s myší najedete, je ve výchozím nastavení. Nezapomeňte odebrat redundantní ukazatele z programových testů uživatelského rozhraní. Provedete to tak, že upravíte kód testu, nebo pomocí [editoru programového testu UI](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md).  
+> Pokud záznam akce ověření akce před vygenerováním kódu. Vzhledem k tomu, že existují různé chování spojené s myší najedete, je ve výchozím nastavení. Nezapomeňte odebrat redundantní ukazatele z programových testů uživatelského rozhraní. Provedete to tak, že upravíte kód testu, nebo pomocí [editoru programového testu UI](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md).  
   
 ## <a name="including-testing-of-office-2010-controls-within-your-sharepoint-app"></a>Včetně testování Office 2010 ovládací prvky v rámci vaší aplikace SharePoint  
  Jak povolit automatizaci pro některé webové části do aplikaci Sharepointu office 2010, budete muset provést některé změny drobné úpravy v kódu.  
   
 > [!WARNING]
->  Podpora pro ovládací prvky aplikace Visio a PowerPoint 2010 se nepodporuje.  
+> Podpora pro ovládací prvky aplikace Visio a PowerPoint 2010 se nepodporuje.  
   
 ### <a name="excel-2010-cell-controls"></a>Ovládací prvky aplikace Excel 2010 buňky  
  Zahrnout ovládací prvky Excelu buňky, je třeba provést některé změny v kódu programového testu uživatelského rozhraní.  
   
 > [!WARNING]
->  Zadávání textu v libovolnou buňku aplikace Excel, za nímž následuje klíče akci šipku, nezaznamenává správně. Vyberte buňky pomocí myši.  
+> Zadávání textu v libovolnou buňku aplikace Excel, za nímž následuje klíče akci šipku, nezaznamenává správně. Vyberte buňky pomocí myši.  
   
  Záznamu akce na prázdnou buňku, je třeba upravit kód, double klikněte na buňku a následnému provedením operace text nastavení. To je potřeba proto klikněte na buňku, následované žádnou akci klávesnice aktivuje `textarea` v buňce. Jednoduše záznam `setvalue` na prázdnou buňku by vyhledejte `editbox` která není k dispozici, dokud se kliklo na buňku. Příklad:  
   

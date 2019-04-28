@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 51dfdc95748690f43809244dc14ae2662d8aec39
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b00f89b60c7e884bfaf71e971722530b44a78b4e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60086595"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445693"
 ---
 # <a name="help-viewer-administrator-guide"></a>Příručka správce Help Vieweru
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +51,7 @@ Aplikace Help Viewer umožňuje spravovat místní instalace nápovědy pro sí�
 - Výchozí zdroj pro nápovědu bude stále Online.  
   
   > [!TIP]
-  >  Výchozí zdroj pro nápovědu můžete změnit úpravou klíče registru HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\14.0\help\UseOnlineHelp. Další informace najdete v tématu [správce obsahu nápovědy přepíše](../ide/help-content-manager-overrides.md).  
+  > Výchozí zdroj pro nápovědu můžete změnit úpravou klíče registru HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\14.0\help\UseOnlineHelp. Další informace najdete v tématu [správce obsahu nápovědy přepíše](../ide/help-content-manager-overrides.md).  
   
 - Klienti se pořád výzva k instalaci základního obsahu nápovědy při prvním spuštění sady Visual Studio. Tuto výzvu můžete zakázat úpravou klíče registru HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\14.0\Help\DisableFirstRunHelpSelection.  
   
@@ -78,7 +78,7 @@ Aplikace Help Viewer umožňuje spravovat místní instalace nápovědy pro sí�
 - Uživatelé musí mít práva správce k aktualizaci, přidání nebo odebrání místního obsahu nápovědy po jeho instalaci.  
   
   > [!TIP]
-  >  Pokud uživatelé nemají oprávnění správce, doporučujeme zakázat kartu spravovat obsah v Help Viewer. Další informace najdete v tématu [správce obsahu nápovědy přepíše](../ide/help-content-manager-overrides.md).  
+  > Pokud uživatelé nemají oprávnění správce, doporučujeme zakázat kartu spravovat obsah v Help Viewer. Další informace najdete v tématu [správce obsahu nápovědy přepíše](../ide/help-content-manager-overrides.md).  
   
   Upozornění:  
   

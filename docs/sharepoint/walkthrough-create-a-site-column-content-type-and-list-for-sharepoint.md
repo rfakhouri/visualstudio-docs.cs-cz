@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4f2c79787317c3d759322e5bd7f7beed4a43892a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e39ea4041ab9806c7ca857680af5c5c04510eba9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60057729"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430704"
 ---
 # <a name="walkthrough-create-a-site-column-content-type-and-list-for-sharepoint"></a>Návod: Vytvoření sloupce webu, typu obsahu a seznamu pro službu SharePoint
   Následující postupy ukazují, jak vytvořit vlastní sloupce webu služby SharePoint, nebo *pole*– stejně jako typ obsahu, který používá sloupce webu. Také ukazuje, jak vytvořit seznam, který používá nového typu obsahu.
@@ -112,7 +112,7 @@ ms.locfileid: "60057729"
 6. Po typ obsahu návrháře zobrazení v **sloupce** kartu, přidejte tři sloupce, které jste definovali dříve webu: **Jméno pacienta**, **pacientů ID**, a **lékař název**. Pro přidání těchto sloupců, vyberte v seznamu sloupců webu první seznam **zobrazovaný název**a pak zvolte každý sloupec v seznamu, jeden po druhém.
 
     > [!TIP]
-    >  Seznam sloupců webu zvolte rychleji, můžete filtrovat tak, že zadáte několik prvních písmen názvu sloupce.
+    > Seznam sloupců webu zvolte rychleji, můžete filtrovat tak, že zadáte několik prvních písmen názvu sloupce.
 
 7. Kromě tři sloupce vlastního webu, přidejte **komentáře** sloupce webu ze seznamu sloupců webu.
 
@@ -164,7 +164,7 @@ ms.locfileid: "60057729"
      Vlastní seznam sloupců se vztahuje pouze na tento seznam. Při přidání vlastního seznamu sloupců do seznamu se nový seznam typ obsahu, včetně všech sloupců, přidá se do seznamu a nastavit jako výchozí seznam.
 
     > [!TIP]
-    >  Pokud zvolíte sloupce ze seznamu sloupců webu, použije se existující sloupec webu. Nicméně pokud zadáte hodnotu pro název sloupce bez výběru žádné sloupce v seznamu, vlastní seznam sloupců je vytvořena, i v případě, že sloupce se stejným názvem již existuje v seznamu.
+    > Pokud zvolíte sloupce ze seznamu sloupců webu, použije se existující sloupec webu. Nicméně pokud zadáte hodnotu pro název sloupce bez výběru žádné sloupce v seznamu, vlastní seznam sloupců je vytvořena, i v případě, že sloupce se stejným názvem již existuje v seznamu.
 
      Volitelně můžete místo nastavení datový typ pro sloupec vlastní seznam, který se **jeden řádek textu**, může místo toho nastavte datový typ pro tento sloupec k vyhledávání a jeho hodnoty by načteny z tabulky nebo jiného seznamu. Informace o sloupcích vyhledávání najdete v tématu [vztahy seznamu v Sharepointu 2010](http://go.microsoft.com/fwlink/?LinkId=224994) a [vyhledávání a seznam relací](http://go.microsoft.com/fwlink/?LinkID=224995).
 

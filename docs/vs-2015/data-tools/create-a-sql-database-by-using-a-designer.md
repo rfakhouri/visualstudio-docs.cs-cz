@@ -25,12 +25,12 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: acab2df1ff39d5f245baf27642f1ab71104671a7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f816095992379748b6d1888b5df54dc5433a8306
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069780"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436971"
 ---
 # <a name="create-a-sql-database-by-using-a-designer"></a>Vytvoření databáze SQL pomocí návrháře
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -180,14 +180,14 @@ Můžete zkoumat základní úkoly, jako je například přidávání tabulek a 
 6. Přidejte data pro nejméně tři objednávky.  
   
     > [!IMPORTANT]
-    >  Přesvědčte se, zda jsou všechna ID objednávek a množství objednávek celými čísly a že každé ID zákazníka odpovídá hodnotě uvedené ve sloupci ID zákazníka v tabulce Zákazníci.  
+    > Přesvědčte se, zda jsou všechna ID objednávek a množství objednávek celými čísly a že každé ID zákazníka odpovídá hodnotě uvedené ve sloupci ID zákazníka v tabulce Zákazníci.  
   
 7. Na panelu nabídek vyberte **souboru** > **Uložit vše**.  
   
 8. Na panelu nabídek vyberte **souboru** > **zavřít řešení**.  
   
     > [!NOTE]
-    >  Jako nejvhodnější postup můžete zálohovat soubor databáze, který jste právě vytvořili, zkopírováním a vložením kopie do jiného umístění nebo pojmenováním kopie jiným názvem.  
+    > Jako nejvhodnější postup můžete zálohovat soubor databáze, který jste právě vytvořili, zkopírováním a vložením kopie do jiného umístění nebo pojmenováním kopie jiným názvem.  
   
 ## <a name="next-steps"></a>Další kroky  
  Teď, když máte místní databázový soubor s ukázkovými daty, můžete dokončit některé názorné postupy, které popisují databázové úlohy.

@@ -13,12 +13,12 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: acfb3a5c88ba730960ac0f90a7b9263c2d02a204
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 931c753239345950f3a7db178a87007eab4da289
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54794157"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440896"
 ---
 # <a name="da0023-high-gc-cpu-time"></a>DA0023: Vysoký čas procesoru uvolňování paměti
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ Id pravidla | DA0023 |
  Toto pravidlo je vyvoláno, když množství času, který byl stráven uvolňování paměti je důležité ve srovnání s časem zpracování celkový počet aplikací.  
   
 > [!NOTE]
->  Když podíl času, který byl stráven uvolňování paměti je příliš ve srovnání s časem zpracování celkový počet aplikací, [DA0024: Nadměrný čas procesoru uvolňování paměti](../profiling/da0024-excessive-gc-cpu-time.md) namísto toto pravidlo aktivuje se upozornění.  
+> Když podíl času, který byl stráven uvolňování paměti je příliš ve srovnání s časem zpracování celkový počet aplikací, [DA0024: Nadměrný čas procesoru uvolňování paměti](../profiling/da0024-excessive-gc-cpu-time.md) namísto toto pravidlo aktivuje se upozornění.  
   
 ## <a name="how-to-investigate-a-warning"></a>Zkoumání upozornění  
  Dvakrát klikněte na zprávu v okně Seznam chyb, přejděte [zobrazení značky](../profiling/marks-view.md) dat profilování. Najít **paměť .NET CLR\\% času v uvolňování paměti** sloupce. Zjistěte, jestli konkrétní fázích provádění programu kde je těžší než ostatní fáze režie uvolňování paměti spravované paměti. Ohlášení porovnat hodnoty % času v uvolňování paměti hodnota, která se frekvence uvolňování paměti **Počet úklidů 0**, **Počet úklidů 1**, **Počet úklidů 2** hodnoty .  

@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: conceptdev
 ms.author: crdun
 manager: jillfra
-ms.openlocfilehash: 184004d24d685c0e7242f9ba5b34f679cc581d26
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d2959164c9c585ae2661517922464dd63845a836
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105029"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443045"
 ---
 # <a name="getting-started-with-visual-studio-tools-for-unity"></a>Začínáme s nástroji Visual Studio Tools for Unity
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "60105029"
 V této části se dozvíte, jak nainstalovat Visual Studio Tools for Unity a nakonfigurovat svým projektem Unity pro práci s aplikací Visual Studio.  
   
 > [!IMPORTANT]
->  Unity 5.2 přidá integrovanou podporu pro Visual Studio Tools pro Unity 2.1, což zjednodušuje nastavení projektu. Abyste mohli využívat tohoto objektu, budete potřebovat Unity verze 5.2.0 nebo vyšší na Windows a Visual Studio Tools for Unity verze 2.1 nebo vyšší.  
+> Unity 5.2 přidá integrovanou podporu pro Visual Studio Tools pro Unity 2.1, což zjednodušuje nastavení projektu. Abyste mohli využívat tohoto objektu, budete potřebovat Unity verze 5.2.0 nebo vyšší na Windows a Visual Studio Tools for Unity verze 2.1 nebo vyšší.  
   
 ## <a name="prerequisites"></a>Požadavky  
  Chcete-li použít Visual Studio Tools for Unity, budete potřebovat:  
@@ -55,7 +55,7 @@ V této části se dozvíte, jak nainstalovat Visual Studio Tools for Unity a na
      [Stáhněte si Visual Studio 2010 Tools for Unity](https://visualstudiogallery.msdn.microsoft.com/6e536faa-ce73-494a-a746-6a14753015f1)  
   
 > [!NOTE]
->  Expresní verze sady Visual Studio nepodporují rozšíření, jako je Visual Studio Tools for Unity. Visual Studio Community je bezplatné verze sady Visual Studio, které podporuje Visual Studio Tools for Unity a další rozšíření. Pro většinu uživatelů Visual Studio Community je vhodnější než Express.  
+> Expresní verze sady Visual Studio nepodporují rozšíření, jako je Visual Studio Tools for Unity. Visual Studio Community je bezplatné verze sady Visual Studio, které podporuje Visual Studio Tools for Unity a další rozšíření. Pro většinu uživatelů Visual Studio Community je vhodnější než Express.  
   
 ## <a name="your-first-unity-project-with-visual-studio-tools-for-unity"></a>Svůj první projekt Unity s Visual Studio Tools for Unity  
  Teď, když máte všechno, co potřebujete, jste připraveni svůj první projekt Unity pomocí sady Visual Studio. Nastavení projektu Unity, se liší v závislosti na tom, jaké verze rozhraní Unity a Visual Studio Tools for Unity jsou nainstalované. Proveďte následující postup pro verzi Unity a Visual Studio Tools for Unity, kterou jste nainstalovali.  

@@ -12,13 +12,13 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 5ccdd4cd8bafc4bc4a899ea47d62ec10e578569c
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58148201"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62909320"
 ---
-# <a name="new-project-generation-under-the-hood-part-two"></a>Nová generace projektů: Pod pokličkou část 2
+# <a name="new-project-generation-under-the-hood-part-two"></a>Nová generace projektů: Pod kapotou, část 2
 
 V [nová generace projektů: Pod pokličkou, část jednoho](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md) jsme viděli jak **nový projekt** pole se vyplní dialogového okna. Předpokládejme, že jste vybrali **aplikace Visual C# Windows**, vyplněné **název** a **umístění** textová pole a kliknutí na OK.
 
@@ -156,5 +156,5 @@ namespace Simple
 
 ## <a name="see-also"></a>Viz také:
 
-- [Nová generace projektů: Pod pokličkou část 1](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)
+- [Nová generace projektů: Pod kapotou, část 1](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)
 - [MSBuild](../../msbuild/msbuild.md)

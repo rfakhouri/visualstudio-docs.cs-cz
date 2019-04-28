@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 58d5fd0bfe1c8d5f5896d365a7b0ecfdb8da25b3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 71797d3e080ad4fbbb1256914e98bc3a62f9fb01
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60068220"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415518"
 ---
 # <a name="how-to-access-the-built-in-fonts-and-color-ccheme"></a>Postupy: Přístup k vestavěné písma a barev ccheme
 Integrovaného vývojového prostředí (IDE) sady Visual Studio obsahuje schéma písma a barvy, který je spojen s okno editoru. Toto schéma prostřednictvím můžete přistupovat <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> rozhraní.
@@ -39,7 +39,7 @@ Integrovaného vývojového prostředí (IDE) sady Visual Studio obsahuje schém
      Tento identifikátor GUID slouží k jednoznačné identifikaci kategorii. Rozhraní IDE výchozí písma a barvy specifikace opětovně používá tuto kategorii.
 
     > [!NOTE]
-    >  Při načítání dat písma a barvy s <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> nebo jiných rozhraní rozšíření VSPackages použít tento identifikátor GUID k odkazování předdefinované informace.
+    > Při načítání dat písma a barvy s <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> nebo jiných rozhraní rozšíření VSPackages použít tento identifikátor GUID k odkazování předdefinované informace.
 
 2. Název kategorie musí přidat do tabulky řetězců uvnitř sady VSPackage prostředky (*.rc*) souboru, takže může být lokalizována, podle potřeby při zobrazení v rozhraní IDE.
 

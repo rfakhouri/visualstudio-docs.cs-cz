@@ -34,12 +34,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 938f0c9ce735ddfbca07bb9f2448fa71d243b634
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 213535d983f95f304b8e0fba3241fa502577f0f4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59658027"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438058"
 ---
 # <a name="pre-build-eventpost-build-event-command-line-dialog-box"></a>Dialogové okno Příkazový řádek události před sestavením/po sestavení
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -47,14 +47,14 @@ ms.locfileid: "59658027"
 Můžete zadat před nebo po sestavení událostí [stránka události sestavení, Návrhář projektu (C#)](../../ide/reference/build-events-page-project-designer-csharp.md) přímo v úpravách pole, nebo ho můžete vybrat makra před instrumentací a po sestavení ze seznamu dostupných maker.  
   
 > [!NOTE]
->  Události před sestavením nebudou spuštěny, pokud je aktuální projekt a není aktivováno žádné sestavení.  
+> Události před sestavením nebudou spuštěny, pokud je aktuální projekt a není aktivováno žádné sestavení.  
   
 ## <a name="ui-element-list"></a>Seznam prvků uživatelského rozhraní  
  **Pole pro úpravy příkazového řádku**  
  Obsahuje události, které chcete spustit pro před sestavením nebo po sestavení.  
   
 > [!NOTE]
->  Přidat `call` než vše post-build příkazy, které spouštějí soubory .bat. Například `call C:\MyFile.bat` nebo `call C:\MyFile.bat call C:\MyFile2.bat`.  
+> Přidat `call` než vše post-build příkazy, které spouštějí soubory .bat. Například `call C:\MyFile.bat` nebo `call C:\MyFile.bat call C:\MyFile2.bat`.  
   
  **Makra**  
  Rozbalí textové pole k zobrazení seznamu maker vložit do textového pole pro příkazový řádek.  

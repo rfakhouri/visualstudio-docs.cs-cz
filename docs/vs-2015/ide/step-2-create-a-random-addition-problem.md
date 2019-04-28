@@ -9,12 +9,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 318caec1f96bc0b69a6fe9540231608a8636e107
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 07e5c91038013f51199212a3215490bbfdf34257
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099493"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442617"
 ---
 # <a name="step-2-create-a-random-addition-problem"></a>Krok 2: Vytvoření úlohy sčítání náhodných čísel
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "60099493"
 V druhé části tohoto kurzu je náročnější kvíz přidáním matematických úlohy, které jsou založeny na náhodných čísel. Také vytvořit metoda s názvem `StartTheQuiz()` a která vyplní úlohy a spustí časovač odpočítávání. Později v tomto kurzu přidáte odčítání, násobení a dělení.  
   
 > [!NOTE]
->  Toto téma je součástí série kurzů o základních principech kódování. Přehled kurzu, naleznete v tématu [kurz 2: Vytvoření matematického kvízu](../ide/tutorial-2-create-a-timed-math-quiz.md).  
+> Toto téma je součástí série kurzů o základních principech kódování. Přehled kurzu, naleznete v tématu [kurz 2: Vytvoření matematického kvízu](../ide/tutorial-2-create-a-timed-math-quiz.md).  
   
 ### <a name="to-create-a-random-addition-problem"></a>Chcete-li vytvořit náhodnou úlohu sčítání  
   
@@ -46,7 +46,7 @@ V druhé části tohoto kurzu je náročnější kvíz přidáním matematickýc
 4. Do formuláře přidat dvě celočíselné proměnné a pojmenujte je **addend1** a **addend2**.  
   
     > [!NOTE]
-    >  Celočíselná proměnná je označována jako int v jazyce C# nebo Integer v jazyce Visual Basic. Tento typ proměnné ukládá kladné nebo záporné číslo od -2147483648 do 2147483647 a můžete ukládat pouze celá čísla bez desetinných čísel.  
+    > Celočíselná proměnná je označována jako int v jazyce C# nebo Integer v jazyce Visual Basic. Tento typ proměnné ukládá kladné nebo záporné číslo od -2147483648 do 2147483647 a můžete ukládat pouze celá čísla bez desetinných čísel.  
   
      Podobná syntaxe umožňuje přidat proměnnou celého čísla, jako jste přidali `Random` objektu, jak ukazuje následující kód.  
   
@@ -66,7 +66,7 @@ Next – metoda
      Pokud zadáte tečku po objektu, technologie IntelliSense zobrazí seznam členů objektu, jako jsou vlastnosti, metody a události.  
   
     > [!NOTE]
-    >  Při použití `Next()` metodou `Random` objektu, například při volání `randomizer.Next(50)`, získat náhodné číslo, které je menší než 50 (od 0 do 49). V tomto příkladu jste volali `randomizer.Next(51)`. Použili jste 51 a nikoli 50, aby dvě náhodná čísla sečetla pro odpověď, která je od 0 do 100. Pokud předáte 50 až `Next()` metoda, zvolí číslo od 0 do 49, takže nejvyšší možná odpověď je 98, ne 100. Po spuštění prvních dvou příkazů v metodě, každé dvě celočíselné proměnné `addend1` a `addend2`, drží náhodné číslo od 0 do 50. Tento snímek obrazovky ukazuje kód Visual C#, ale IntelliSense funguje stejným způsobem jako v jazyce Visual Basic.  
+    > Při použití `Next()` metodou `Random` objektu, například při volání `randomizer.Next(50)`, získat náhodné číslo, které je menší než 50 (od 0 do 49). V tomto příkladu jste volali `randomizer.Next(51)`. Použili jste 51 a nikoli 50, aby dvě náhodná čísla sečetla pro odpověď, která je od 0 do 100. Pokud předáte 50 až `Next()` metoda, zvolí číslo od 0 do 49, takže nejvyšší možná odpověď je 98, ne 100. Po spuštění prvních dvou příkazů v metodě, každé dvě celočíselné proměnné `addend1` a `addend2`, drží náhodné číslo od 0 do 50. Tento snímek obrazovky ukazuje kód Visual C#, ale IntelliSense funguje stejným způsobem jako v jazyce Visual Basic.  
   
      Prohlédněte si blíže tyto příkazy.  
   

@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a67b2e1d9cbbad4a9b3426d264e6fecf8623e5a7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4d0136c1e2f27e3053733b32d536e86684f62c39
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105082"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444931"
 ---
 # <a name="what39s-new-in-the-visual-studio-2015-sdk"></a>Co&#39;s nového ve Visual Studio 2015 SDK
 Visual Studio SDK obsahuje následující nové a aktualizované funkce pro Visual Studio 2015, Visual Studio 2015, aktualizovat a Visual Studio 2017.
@@ -57,9 +57,9 @@ Visual Studio SDK obsahuje následující nové a aktualizované funkce pro Visu
  Šablony položek VS SDK použít NuGet pro jejich odkazů a vytváření buildů, takže získáte výhody NuGet ve výchozím nastavení.
 
 > [!NOTE]
->  Můžete nadále používat referenční sestavení nainstalovaná sada SDK pro VS s vašimi projekty (umístěný ve skupinovém rámečku \<umístění instalace aplikace Visual Studio > \ VSSDK\VisualStudioIntegration\Common\Assemblies) a není potřeba mít existující projekty rozšiřitelnosti upgradovat na používaly balíčky NuGet.  Projekt **odkazuje / přidat odkaz na** dialogového okna i nadále používat referenční sestavení nainstalovaná sada SDK pro VS.
+> Můžete nadále používat referenční sestavení nainstalovaná sada SDK pro VS s vašimi projekty (umístěný ve skupinovém rámečku \<umístění instalace aplikace Visual Studio > \ VSSDK\VisualStudioIntegration\Common\Assemblies) a není potřeba mít existující projekty rozšiřitelnosti upgradovat na používaly balíčky NuGet.  Projekt **odkazuje / přidat odkaz na** dialogového okna i nadále používat referenční sestavení nainstalovaná sada SDK pro VS.
 >
->  Pokud chcete upravit existující projekty použít NuGet, přečtěte si téma [jak: Migrace na Visual Studio 2015 rozšíření VSPackages](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2015.md) která má část o aktualizaci rozšíření projekty do balíčků NuGet.
+> Pokud chcete upravit existující projekty použít NuGet, přečtěte si téma [jak: Migrace na Visual Studio 2015 rozšíření VSPackages](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2015.md) která má část o aktualizaci rozšíření projekty do balíčků NuGet.
 
 ## <a name="light-bulbs"></a>Ikony žárovky
  Poskytuje jednu z nejzajímavějších nové způsoby psaní kódu rozšíření projektu Roslyn. Další informace najdete v tématu [Roslyn](https://github.com/dotnet/Roslyn).

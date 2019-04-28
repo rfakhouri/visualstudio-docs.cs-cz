@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d7a486ea4a448cb30b64631589f003854e8b1b40
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: c9d005ef8bade9f83027c216d875d24aad602449
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56644390"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63418355"
 ---
 # <a name="how-to-add-a-deleter-method"></a>Postupy: Přidání metody odstranění
   Můžete povolit koncový uživatel odstranit záznam dat z externí seznam na Sharepointovém webu tak, že přidání metody odstranění do modelu. Další informace najdete v tématu [navrhování modelu připojení obchodních dat](../sharepoint/designing-a-business-data-connectivity-model.md).
@@ -58,10 +58,10 @@ ms.locfileid: "56644390"
 5. Přidejte kód do metody odstranění, které chcete odstranit záznam. Následující příklad odstraní řádek z prodejní objednávky pomocí ukázkovou databází AdventureWorks pro SQL Server.
 
    > [!NOTE]
-   >  Tento příklad používá dva vstupní parametry.
+   > Tento příklad používá dva vstupní parametry.
 
    > [!NOTE]
-   >  Nahraďte hodnotu `ServerName` pole s názvem vašeho serveru.
+   > Nahraďte hodnotu `ServerName` pole s názvem vašeho serveru.
 
     [!code-csharp[SP_BDC#6](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/salesorderdetailservice.cs#6)]
     [!code-vb[SP_BDC#6](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/salesorderdetailservice.vb#6)]

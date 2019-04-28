@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: bf1eb0001ca7c8b87fa44b5ea861df9d9fcba84d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: f1e780a67ee419a8cae661570802e5d85081f1fd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56644338"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445807"
 ---
 # <a name="register-extensions-of-the-net-framework"></a>Registrace rozšíření rozhraní .NET Framework
 Můžete vyvíjet sestavení, která rozšiřuje konkrétní verzi rozhraní .NET Framework. Povolit sestavení se zobrazí v sadě Visual Studio **Add References** dialogové okno, je nutné přidat složku obsahující do systémového registru.
@@ -27,7 +27,7 @@ Můžete vyvíjet sestavení, která rozšiřuje konkrétní verzi rozhraní .NE
  Pomocí tohoto klíče zaregistrujte tuto složku: **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\\.NETFramework\v4.0.21006\AssemblyFoldersEx\TreyResearch\\**. Byla tato výchozí hodnota klíče: **C:\TreyResearch\Extensions4**.
 
 > [!NOTE]
->  Číslo sestavení rozhraní .NET Framework verze se může lišit.
+> Číslo sestavení rozhraní .NET Framework verze se může lišit.
 
  K registraci sestavení 32-bit na 64bitovém počítači, použijte Wow6432 uzlu, například: **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\.NETFramework\v4.0.21006\AssemblyFoldersEx\TreyResearch\\**.
 

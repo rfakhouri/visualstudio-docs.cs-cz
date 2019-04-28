@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6da4d0642738fca2f35adbc2ec4e039e3edf11b2
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: ac41f4da29b95ba1fcd1601f98104956d584212a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604476"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419499"
 ---
 # <a name="how-to-expose-code-to-vba-in-a-visual-c-project"></a>Postupy: Vystavení kódu do VBA ve Vizuálu C# projektu
   Kód ve Vizuálu můžete zveřejnit C# projektu jazyka Visual Basic pro kód Applications (VBA) Pokud chcete, aby dva typy kódu komunikovat mezi sebou.
@@ -42,7 +42,7 @@ ms.locfileid: "56604476"
     Další informace o formátech soubor dokumentu, které podporují makra najdete v tématu [kombinovat VBA a přizpůsobení na úrovni dokumentu](../vsto/combining-vba-and-document-level-customizations.md).
 
    > [!NOTE]
-   >  Tuto funkci nelze použít v projektech aplikace Word šablony.
+   > Tuto funkci nelze použít v projektech aplikace Word šablony.
 
 2. Ujistěte se, že kód VBA v dokumentu může spustit bez výzvy pro uživatele povolit makra. VBA kód ke spuštění tak, že přidáte do seznamu důvěryhodných umístění v nastavení Centra zabezpečení pro aplikaci Word nebo Excel umístění projektu Office, kterému můžete důvěřovat.
 
@@ -93,7 +93,7 @@ ms.locfileid: "56604476"
 10. V **vlastnosti** okna, vyberte **ReferenceAssemblyFromVbaProject** vlastnost a změňte hodnotu na **True**.
 
     > [!NOTE]
-    >  Pokud sešit nebo dokument už neobsahuje kód VBA, nebo pokud kód VBA v dokumentu není důvěryhodný pro spuštění, zobrazí se chybová zpráva při nastavení **ReferenceAssemblyFromVbaProject** vlastnost **True**. Je to proto, že Visual Studio nelze upravit projektu VBA v dokumentu v této situaci.
+    > Pokud sešit nebo dokument už neobsahuje kód VBA, nebo pokud kód VBA v dokumentu není důvěryhodný pro spuštění, zobrazí se chybová zpráva při nastavení **ReferenceAssemblyFromVbaProject** vlastnost **True**. Je to proto, že Visual Studio nelze upravit projektu VBA v dokumentu v této situaci.
 
 11. Klikněte na tlačítko **OK** ve zprávě, která se zobrazí. Tato zpráva upozorní, že pokud přidáte VBA kód v sešitu nebo při spuštění projektu z dokumentu [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], kód VBA budou ztraceny při příštím sestavení projektu. Je to proto, že dokument v buildu výstupní složky je přepsána pokaždé, když vytváříte projekt.
 

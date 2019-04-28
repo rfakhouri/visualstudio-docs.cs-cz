@@ -8,12 +8,12 @@ ms.assetid: a859595f-6517-43f2-9d61-c706cb55a388
 caps.latest.revision: 25
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5289804eb85b9af4fff090f98cc97f8d2c9ec676
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d3854f4844fba3b3c1a0a519f06d59d31c4f7072
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60100401"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445879"
 ---
 # <a name="using-different-web-browsers-with-coded-ui-tests"></a>Používání jiných webových prohlížečů v programových testech uživatelského rozhraní
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +59,7 @@ Programové testy UI mohou automatizovat testování webových aplikací tím, �
  **Záznam:** K záznamu testu webové aplikace pomocí aplikace Internet Explorer, je nutné použít Tvůrce programového testu UI. Volitelně můžete pomocí předdefinované sady vlastností přidat kód pro ověření a přizpůsobení testovaných ovládacích prvků, jak byste to obvykle udělali v případě programových testů UI. Další informace najdete v tématu [pomocí uživatelského rozhraní automatizace k testu kódu](../test/use-ui-automation-to-test-your-code.md).  
   
 > [!NOTE]
->  Programové testy UI nelze zaznamenat pomocí prohlížečů Google Chrome nebo Mozilla Firefox.  
+> Programové testy UI nelze zaznamenat pomocí prohlížečů Google Chrome nebo Mozilla Firefox.  
   
  **Přehrávání pomocí aplikace Internet Explorer:** Pokud není explicitně zadán žádný prohlížeč, testy poběží v Internet Exploreru ve výchozím nastavení. Můžete explicitně uvést prohlížeče tak, že nastavíte **BrowserWindow.CurrentBrowser** vlastností v kódu testu. Pro aplikaci Internet Explorer by měla být tato vlastnost nastavená na **IE** nebo **aplikace Internet Explorer**.  
   
@@ -76,7 +76,7 @@ Programové testy UI mohou automatizovat testování webových aplikací tím, �
 3. Zvýrazněte rozšíření a zvolte možnost **Stáhnout**.  
   
    > [!TIP]
-   >  Můžete také stáhnout součásti Selenium pro programové testování uživatelského rozhraní pro různé prohlížeče z [tady](http://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d/).  
+   > Můžete také stáhnout součásti Selenium pro programové testování uživatelského rozhraní pro různé prohlížeče z [tady](http://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d/).  
   
    Další informace o vytváření a používání kódované UI testy, naleznete v tématu [vytváření programových testů UI](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate).  
   

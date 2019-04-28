@@ -11,12 +11,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 213237037225b18128ab149f384466e5fab0d668
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: cd50f4c80e5e67f6fb7582dc2bc22963151b42fe
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104678"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433116"
 ---
 # <a name="define-a-work-item-link-handler"></a>Definování obslužné rutiny odkazu pracovní položky
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -152,7 +152,7 @@ namespace WorkItems
  Pro účely testování spusťte obslužnou rutina odkazu v režimu ladění.  
   
 > [!WARNING]
->  Musíte už být připojení k TFS zdrojového kódu ovládacího prvku (SCC) vytvořit nebo propojit s pracovní položkou. Pokud se pokusíte otevřít připojení k jiné SCC TFS, Visual Studio automaticky zavře aktuální řešení. Ujistěte se, že jste již připojeni k příslušné SCC než se pokusíte vytvořit nebo propojit s pracovní položkou. V pozdějších verzích sady Visual Studio příkazy nabídky nejsou k dispozici v případě, že nejste připojeni k SCC.  
+> Musíte už být připojení k TFS zdrojového kódu ovládacího prvku (SCC) vytvořit nebo propojit s pracovní položkou. Pokud se pokusíte otevřít připojení k jiné SCC TFS, Visual Studio automaticky zavře aktuální řešení. Ujistěte se, že jste již připojeni k příslušné SCC než se pokusíte vytvořit nebo propojit s pracovní položkou. V pozdějších verzích sady Visual Studio příkazy nabídky nejsou k dispozici v případě, že nejste připojeni k SCC.  
   
 #### <a name="to-test-the-link-handler"></a>Testování obslužné rutiny odkazu  
   
@@ -221,7 +221,7 @@ public void OnWorkItemLinked
 ```  
   
 > [!NOTE]
->  Chcete-li tento příklad fungoval, musíte přidat odkaz na projekt `System.Drawing.dll`a importovat obor názvů `Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation`. Tyto doplňky však nejsou požadována pro jiné implementace `OnWorkItemLinked`.  
+> Chcete-li tento příklad fungoval, musíte přidat odkaz na projekt `System.Drawing.dll`a importovat obor názvů `Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation`. Tyto doplňky však nejsou požadována pro jiné implementace `OnWorkItemLinked`.  
   
 ### <a name="listening-for-link-removal"></a>Poslouchání odstranění propojení  
  `OnWorkItemRemoved` je volána těsně před každý odkaz na pracovní položku, která je odstraňována. Pokud odstranění prvku modelu budou odebrány všechny odkazy.  

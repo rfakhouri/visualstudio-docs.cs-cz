@@ -11,12 +11,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8e85d511bfeec2ddda4b68b0297b18ac541949a4
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: eeadf0de5563a4882c067960559414167e729173
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58160560"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422231"
 ---
 # <a name="active-script-profiler-interfaces"></a>Rozhraní profileru aktivních skriptů
 Aktivní rozhraní Profiler skriptů umožňují přijímat profilování události z [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] modul.  
@@ -47,9 +47,9 @@ Aktivní rozhraní Profiler skriptů umožňují přijímat profilování událo
 - [Konstanty, výčty a struktury profileru aktivních skriptů](../../winscript/reference/active-script-profiler-constants-enumerations-and-structures.md)  
   
 > [!NOTE]
->  Aktivní skriptovací rozhraní Profiler byly nejprve vydané s aplikací Internet Explorer 8. `IActiveScriptProfilerControl2` a `IActiveScriptProfilerCallback2` rozhraní se objevily nejdřív pomocí aplikace Internet Explorer 9. [Iactivescriptprofilercontrol3 – rozhraní](../../winscript/reference/iactivescriptprofilercontrol3-interface.md), [iactivescriptprofilercallback3 – rozhraní](../../winscript/reference/iactivescriptprofilercallback3-interface.md), a [iactivescriptprofilerheapenum – rozhraní](../../winscript/reference/iactivescriptprofilerheapenum-interface.md) byly rozhraní prvního vydání s aplikací Internet Explorer 10. [Iactivescriptprofilercontrol5 – rozhraní](../../winscript/reference/iactivescriptprofilercontrol5-interface.md) prvního vydání s aplikací Internet Explorer 11.  
+> Aktivní skriptovací rozhraní Profiler byly nejprve vydané s aplikací Internet Explorer 8. `IActiveScriptProfilerControl2` a `IActiveScriptProfilerCallback2` rozhraní se objevily nejdřív pomocí aplikace Internet Explorer 9. [Iactivescriptprofilercontrol3 – rozhraní](../../winscript/reference/iactivescriptprofilercontrol3-interface.md), [iactivescriptprofilercallback3 – rozhraní](../../winscript/reference/iactivescriptprofilercallback3-interface.md), a [iactivescriptprofilerheapenum – rozhraní](../../winscript/reference/iactivescriptprofilerheapenum-interface.md) byly rozhraní prvního vydání s aplikací Internet Explorer 10. [Iactivescriptprofilercontrol5 – rozhraní](../../winscript/reference/iactivescriptprofilercontrol5-interface.md) prvního vydání s aplikací Internet Explorer 11.  
 >   
->  V aplikaci Internet Explorer 8 a Internet Explorer 9, pouze [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] jazyk používá tato rozhraní pro podporu profilace skriptu.  
+> V aplikaci Internet Explorer 8 a Internet Explorer 9, pouze [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] jazyk používá tato rozhraní pro podporu profilace skriptu.  
   
 ## <a name="see-also"></a>Viz také  
  [Referenční dokumentace skriptovacích rozhraní systému Windows](../../winscript/reference/windows-script-interfaces-reference.md)

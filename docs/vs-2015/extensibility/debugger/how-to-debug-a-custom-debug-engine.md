@@ -11,12 +11,12 @@ ms.assetid: df27a8d6-3938-45ff-b47f-b684e80b38a0
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 7effa937a8faa0a238f8be2505ddf47223010bc1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b7e710cec4536a5a1327580e56c60cb23ca36f4c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039946"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436363"
 ---
 # <a name="how-to-debug-a-custom-debug-engine"></a>Postupy: Ladění vlastního ladicího stroje
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -24,10 +24,10 @@ ms.locfileid: "60039946"
 Typ projektu spustí ladicí stroj (DE) z <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg.DebugLaunch%2A> metody. To znamená, že je DE spuštění pod kontrolou instance [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] řízení typ projektu. Ale tuto instanci [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] nelze ladit DE. Následují kroky, aby bylo možné ladit vaše vlastní DE.  
   
 > [!NOTE]
->  :     V postupu "Ladění vlastní Debug Engine" je nutné počkat DE spuštění než budete moct připojit k němu. Pokud jste na začátku vaše DE, který se zobrazí při spuštění DE okno se zprávou, můžete připojit v daném okamžiku a zrušte zaškrtnutí pole zprávy pokračujte. Tímto způsobem můžete zachytit všechny DE události.  
+> :     V postupu "Ladění vlastní Debug Engine" je nutné počkat DE spuštění než budete moct připojit k němu. Pokud jste na začátku vaše DE, který se zobrazí při spuštění DE okno se zprávou, můžete připojit v daném okamžiku a zrušte zaškrtnutí pole zprávy pokračujte. Tímto způsobem můžete zachytit všechny DE události.  
   
 > [!WARNING]
->  Musíte mít nainstalován předtím, než se pokusíte následující postupy vzdálené ladění. Zobrazit [vzdálené ladění](../../debugger/remote-debugging.md) podrobnosti.  
+> Musíte mít nainstalován předtím, než se pokusíte následující postupy vzdálené ladění. Zobrazit [vzdálené ladění](../../debugger/remote-debugging.md) podrobnosti.  
   
 ### <a name="debugging-a-custom-debug-engine"></a>Ladění vlastního ladicího stroje  
   

@@ -17,12 +17,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3c83ebc4b2a58976f8848f4576d8b30ad7778db2
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 491d6c044b22a89e8ea61a78d5dd70e0a348b893
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59650431"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441453"
 ---
 # <a name="command-window"></a>Příkazové okno
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -62,7 +62,7 @@ ms.locfileid: "59650431"
 |Posuňte se dolů v okně.|Obsah příkazového okna|Šipka dolů nebo CTRL + ŠIPKA DOLŮ|  
   
 > [!TIP]
->  Část nebo celý předchozího příkazu můžete zkopírovat na vstupním řádku posouvání, aby ji mohl, zvýraznění nebo jeho část a pak stisknutím klávesy ENTER.  
+> Část nebo celý předchozího příkazu můžete zkopírovat na vstupním řádku posouvání, aby ji mohl, zvýraznění nebo jeho část a pak stisknutím klávesy ENTER.  
   
 ## <a name="mark-mode"></a>Režim označení  
  Po kliknutí na libovolný předchozí řádek v **příkaz** okna, posunete automaticky do režimu označení. To vám umožňuje vybrat, upravit a zkopírujte text z předchozích příkazů, jako by v libovolném textovém editoru a vložte je do aktuálního řádku.  
@@ -104,7 +104,7 @@ Edit.ReplaceInFiles /case /pattern:regex var[1-3]+ oldpar
 - `var[1-3]+` a `oldpar` jsou parametry  
   
   > [!NOTE]
-  >  Příkaz, parametrů, přepínače nebo hodnotu, která obsahuje mezery, musí mít dvojitých uvozovek na obou stranách.  
+  > Příkaz, parametrů, přepínače nebo hodnotu, která obsahuje mezery, musí mít dvojitých uvozovek na obou stranách.  
   
   Pozice přepínače a parametry jsou navzájem zaměnitelné volně na příkazovém řádku s výjimkou produktů [prostředí](../../ide/reference/shell-command.md) příkaz, který vyžaduje svou přepínače a parametry v určitém pořadí.  
   

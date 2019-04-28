@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e7f559c76bdaf4ca363a374566f4f820cc47dc14
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56621770"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62839482"
 ---
 # <a name="idiasegmentgetlength"></a>IDiaSegment::get_length
 Získá počet bajtů v segmentu.

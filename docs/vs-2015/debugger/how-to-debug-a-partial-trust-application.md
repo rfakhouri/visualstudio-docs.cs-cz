@@ -18,12 +18,12 @@ caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8340867406e99fd6c6f84d1dc84d89a395a338fb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 61b5a5d04e9c59d9c4034cb97c8ec0fd79264d48
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60106862"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437322"
 ---
 # <a name="how-to-debug-a-partial-trust-application"></a>Postupy: Ladění aplikace s částečnou důvěryhodností
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ Platí pro Windows a konzolových aplikací.
  Později můžete vrátit a zobrazit oprávnění, která jste přidali během ladění. Pokud jste měli k přidání oprávnění při ladění, pravděpodobně znamená, že budete muset přidat uživatel vyjádřit souhlas výzvy v tomto okamžiku ve vašem kódu.  
   
 > [!NOTE]
->  Ladicí program vizualizéry vyžadují, aby větší oprávnění než je povoleno hodnotou aplikace s částečnou důvěryhodností. Vizualizéry nenačte, když se zastaví v kódu s částečným vztahem důvěryhodnosti. Chcete-li ladit pomocí vizualizéru, musíte spustit kód s úplným vztahem důvěryhodnosti.  
+> Ladicí program vizualizéry vyžadují, aby větší oprávnění než je povoleno hodnotou aplikace s částečnou důvěryhodností. Vizualizéry nenačte, když se zastaví v kódu s částečným vztahem důvěryhodnosti. Chcete-li ladit pomocí vizualizéru, musíte spustit kód s úplným vztahem důvěryhodnosti.  
   
 ### <a name="to-choose-a-zone-for-your-partial-trust-application"></a>Chcete-li zvolit zóny pro vaši aplikaci částečným vztahem důvěryhodnosti  
   

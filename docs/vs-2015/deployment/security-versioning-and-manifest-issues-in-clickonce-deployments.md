@@ -24,12 +24,12 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e971271d17c88780ec543ffc12ed4c6ebcc48f23
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a4864d37cb5930075b292ee765bce9b288794019
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60043677"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444987"
 ---
 # <a name="security-versioning-and-manifest-issues-in-clickonce-deployments"></a>Problémy se zabezpečením, správou verzí a manifestem v nasazeních ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -88,7 +88,7 @@ Existuje řada různých problémů s [!INCLUDE[ndptecclick](../includes/ndptecc
  Pokud chcete přesunout nebo kopírovat aplikaci, je nutné také aktualizovat `deploymentProvider` cestu, takže ve skutečnosti instalaci klienta z nové umístění. Aktualizuje se tato cesta je většinou žádný problém, pokud jste nainstalovali aplikace. Pro online aplikace, které jsou vždy spouštěny pomocí původní adresu URL, nastavení `deploymentProvider` je volitelný. Pokud `deploymentProvider` je nastavena, budou zachované; v opačném případě adresy URL pro spuštění aplikace se použije jako základní adresu URL pro stahování souborů aplikace.  
   
 > [!NOTE]
->  Při každé aktualizaci manifestu je zapotřebí také soubor znovu podepsat.  
+> Při každé aktualizaci manifestu je zapotřebí také soubor znovu podepsat.  
   
 ## <a name="see-also"></a>Viz také  
  [Řešení potíží s nasazením ClickOnce](../deployment/troubleshooting-clickonce-deployments.md)   

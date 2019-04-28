@@ -17,12 +17,12 @@ caps.latest.revision: 42
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: aa74d6ca668203f7b13f11307ac59ef5270aac9b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 7d598cc245421aafb05cbf91fe2b7a95e39564a2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117704"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444320"
 ---
 # <a name="walkthrough-debugging-a-multithreaded-application"></a>Návod: Ladění vícevláknových aplikací
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -124,7 +124,7 @@ Thread::Sleep(3000);
 2. Přejděte **umístění ladění** nástrojů a klikněte na tlačítko **vlákna** seznamu.  
   
     > [!NOTE]
-    >  Tento panel nástrojů můžete rozpoznat podle tří viditelného seznamů: **Proces**, **vlákna**, a **rámce zásobníku**.  
+    > Tento panel nástrojů můžete rozpoznat podle tří viditelného seznamů: **Proces**, **vlákna**, a **rámce zásobníku**.  
   
 3. Všimněte si, kolik vlákna se zobrazují v seznamu.  
   

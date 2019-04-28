@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 3adf4a26563560803f820d70ef6c6d5171e791d5
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56703211"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62891684"
 ---
 # <a name="bitflags-used-by-specific-commands"></a>Příznaky Bitflag používané konkrétními příkazy
 Chování počet funkcí v rozhraní API modulu Plug-in zdroje ovládacího prvku, které lze upravit tak, že nastavíte jeden nebo více bits jedinou hodnotu. Tyto hodnoty jsou označovány jako bitové příznaky. Různé příznaky bitflag používané rozhraní API modulu Plug-in zdroje ovládacího prvku je podrobně popsaný tady, seskupené podle funkce, která je používá.
@@ -23,7 +23,7 @@ Chování počet funkcí v rozhraní API modulu Plug-in zdroje ovládacího prvk
 ## <a name="checked-out-flag"></a>Rezervovat příznak
  Tento příznak může nastavit buď [sccadd –](../extensibility/sccadd-function.md) nebo [scccheckin –](../extensibility/scccheckin-function.md).
 
-|Příznak|Hodnota|Popis|
+|Příznak|Value|Popis|
 |----------|-----------|-----------------|
 |`SCC_KEEP_CHECKEDOUT`|0x1000|Ponechte soubor rezervován.|
 
@@ -40,7 +40,7 @@ Chování počet funkcí v rozhraní API modulu Plug-in zdroje ovládacího prvk
 ## <a name="diff-flags"></a>Příznaky diff
  [Sccdiff –](../extensibility/sccdiff-function.md) používá tyto příznaky pro určení oboru rozdílové operaci. `SCC_DIFF_QD_xxx` Příznaky se vzájemně vylučují. Pokud některý z nich není zadána, žádný vizuální zpětnou vazbu je má být poskytnut. V "rychlé diff" (hloubka fronty), modul plug-in neurčuje, čím se liší, pouze pokud je jiný soubor. Pokud žádná z těchto příznaků není zadán, že se provádí "visual diff"; podrobný soubor rozdíly jsou vypočítané a zobrazí. Pokud hf požadovaný není podporován, modul plug-in přesune dalšímu nejlepší. Například pokud rozhraní IDE požaduje kontrolní součet a modulu plug-in ji nepodporuje, modul plug-in nepodporuje full obsah zkontrolujte (stále mnohem rychleji než zobrazení vizuálu).
 
-|Příznak|Hodnota|Popis|
+|Příznak|Value|Popis|
 |----------|-----------|-----------------|
 |`SCC_DIFF_IGNORECASE`|0x0002|Ignorujte velká rozdíly.|
 |`SCC_DIFF_IGNORESPACE`|0x0004|Ignorujte prázdné znaky rozdíly. **Poznámka:**  `SCC_DIFF_IGNORECASE` a `SCC_DIFF_IGNORESPACE` příznaky jsou volitelné příznaky bitflag.|
@@ -52,7 +52,7 @@ Chování počet funkcí v rozhraní API modulu Plug-in zdroje ovládacího prvk
 ## <a name="populatelist-flag"></a>Příznak PopulateList
  Tento příznak se používá [sccpopulatelist –](../extensibility/sccpopulatelist-function.md) v `fOptions` parametru.
 
-|Příznak|Hodnota|Popis|
+|Příznak|Value|Popis|
 |----------|-----------|-----------------|
 |`SCC_PL_DIR`|0x00000001L|Rozhraní IDE dojde k předání adresáře, nikoli soubory.|
 
@@ -68,7 +68,7 @@ Chování počet funkcí v rozhraní API modulu Plug-in zdroje ovládacího prvk
 ## <a name="openproject-flags"></a>Příznaky OpenProject
  Tyto příznaky jsou používány [sccopenproject –](../extensibility/sccopenproject-function.md) v `dwFlags` parametru.
 
-|Hodnota možnosti|Hodnota|Popis|
+|Hodnota možnosti|Value|Popis|
 |------------------|-----------|-----------------|
 |SCC_OP_CREATEIFNEW|0x00000001L|Pokud projekt neexistuje ve správě zdrojového kódu, vytvořte ho. Pokud není tento příznak nastaven, zobrazit výzvu uživateli pro projekt pro vytvoření (není-li `SCC_OP_SILENTOPEN` zadán příznak).|
 |SCC_OP_SILENTOPEN|0x00000002L|Nezobrazovat výzvu k vytvoření projektu. jenom vrátit `SCC_E_UNKNOWNPROJECT`.|
@@ -76,7 +76,7 @@ Chování počet funkcí v rozhraní API modulu Plug-in zdroje ovládacího prvk
 ## <a name="get-flags"></a>Získat příznaky
  Tyto příznaky jsou používány [sccget –](../extensibility/sccget-function.md) a [scccheckout –](../extensibility/scccheckout-function.md).
 
-|Příznak|Hodnota|Popis|
+|Příznak|Value|Popis|
 |----------|-----------|-----------------|
 |`SCC_GET_ALL`|0x00000001L|Rozhraní IDE je předání adresáře, nikoli soubory: Získáte všechny soubory v těchto adresářích.|
 |`SCC_GET_RECURSIVE`|0x00000002L|Rozhraní IDE je předání adresáře: Získejte tyto adresáře a jejich podsložky.|
@@ -84,7 +84,7 @@ Chování počet funkcí v rozhraní API modulu Plug-in zdroje ovládacího prvk
 ## <a name="noption-values"></a>nOption hodnoty
  Tyto příznaky jsou používány [sccsetoption –](../extensibility/sccsetoption-function.md) v `nOption` parametru.
 
-|Příznak|Hodnota|Popis|
+|Příznak|Value|Popis|
 |----------|-----------|-----------------|
 |`SCC_OPT_EVENTQUEUE`|0x00000001L|Nastavit stav fronty událostí.|
 |`SCC_OPT_USERDATA`|0x00000002L|Určení uživatelských dat pro `SCC_OPT_NAMECHANGEPFN`.|
@@ -96,7 +96,7 @@ Chování počet funkcí v rozhraní API modulu Plug-in zdroje ovládacího prvk
 ## <a name="dwval-bitflags"></a>příznaky bitflag dwVal
  Tyto příznaky jsou používány [sccsetoption –](../extensibility/sccsetoption-function.md) v `dwVal` parametru.
 
-|Příznak|Hodnota|Popis|Používá `nOption` hodnota|
+|Příznak|Value|Popis|Používá `nOption` hodnota|
 |----------|-----------|-----------------|-----------------------------|
 |`SCC_OPT_EQ_DISABLE`|0x00L|Pozastaví činnost fronty událostí.|`SCC_OPT_EVENTQUEUE`|
 |`SCC_OPT_EQ_ENABLE`|0x01L|Povolí protokolování fronty událostí.|`SCC_OPT_EVENTQUEUE`|

@@ -9,12 +9,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bec6c539963d54bfa1d866ccc4811425bba9e3a4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 807d2b7de34acda52dd05ff8263ae3303dca61c6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60068571"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441922"
 ---
 # <a name="step-1-create-a-project-and-add-a-table-to-your-form"></a>Krok 1: Vytvoření projektu a přidání tabulky do formuláře
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ Prvním krokem při vytváření porovnávací hry je vytvořit projekt a přida
    1. Nastavte **BackColor** vlastnost **CornflowerBlue**. Chcete-li to provést, otevřete **BackColor** dialogové okno kliknutím na šipku rozevíracího seznamu vedle položky **BackColor** vlastnost **vlastnosti** okna.  Poté vyberte položku **webové** kartu **BackColor** dialogové okno k zobrazení seznamu názvů dostupných barev.  
   
       > [!NOTE]
-      >  Barvy nejsou zobrazeny v abecedním pořadí a položka CornflowerBlue je v dolní části seznamu.  
+      > Barvy nejsou zobrazeny v abecedním pořadí a položka CornflowerBlue je v dolní části seznamu.  
   
    2. Nastavte **Dock** vlastnost **vyplnit** výběrem rozevírací tlačítko vedle vlastnosti a kliknutím na velké prostřední tlačítko. Rozšíříte tak tabulku, aby zahrnovala celý formulář.  
   
@@ -77,12 +77,12 @@ Prvním krokem při vytváření porovnávací hry je vytvořit projekt a přida
         Levá horní buňka v kontejneru TableLayoutPanel by měla nyní obsahovat černé pole zarovnané na střed na modrém pozadí.  
   
        > [!NOTE]
-       >  Písmo Webdings je písmo ikon dodávané s operačním systémem Windows. Ve vaší porovnávací hře musí hráči hledat dvojice ikon, takže toto písmo použijete k zobrazení ikon, které mají být spárovány. Namísto vložení hodnoty **c** v **Text** vlastnost, zkuste zadat různá písmena a zjistit, jaké ikony se zobrazí. Vykřičník je pavouk, velké písmeno N je oko a čárka je čili paprička.  
+       > Písmo Webdings je písmo ikon dodávané s operačním systémem Windows. Ve vaší porovnávací hře musí hráči hledat dvojice ikon, takže toto písmo použijete k zobrazení ikon, které mají být spárovány. Namísto vložení hodnoty **c** v **Text** vlastnost, zkuste zadat různá písmena a zjistit, jaké ikony se zobrazí. Vykřičník je pavouk, velké písmeno N je oko a čárka je čili paprička.  
   
 8. Zvolte svůj ovládací prvek popisku a zkopírujte jej na další buňku v kontejneru TableLayoutPanel. (Stiskněte klávesy Ctrl + C nebo na panelu nabídek zvolte **upravit**, **kopírování**.) Potom jej vložte. (Stiskněte klávesy Ctrl + V nebo v řádku nabídek zvolte **upravit**, **vložit**.) Kopie prvního popisku se zobrazí v druhé buňce kontejneru TableLayoutPanel. Vložit jej znovu a ve třetí buňce se zobrazí další popisek. Pokračujte ve vkládání `Label` ovládací prvky, dokud nejsou vyplněny všechny buňky.  
   
    > [!NOTE]
-   >  Pokud popisek vložíte příliš často, rozhraní IDE přidá do kontejneru TableLayoutPanel nový řádek tak, aby bylo místo pro přidání nového ovládacího prvku popisku. Akci můžete vrátit zpět. Chcete-li novou buňku odstranit, stiskněte klávesy Ctrl + Z nebo na panelu nabídek zvolte **upravit**, **zpět**.  
+   > Pokud popisek vložíte příliš často, rozhraní IDE přidá do kontejneru TableLayoutPanel nový řádek tak, aby bylo místo pro přidání nového ovládacího prvku popisku. Akci můžete vrátit zpět. Chcete-li novou buňku odstranit, stiskněte klávesy Ctrl + Z nebo na panelu nabídek zvolte **upravit**, **zpět**.  
   
     Rozvržení vašeho formuláře je nyní hotovo. Mělo by vypadat jako na následujícím obrázku.  
   

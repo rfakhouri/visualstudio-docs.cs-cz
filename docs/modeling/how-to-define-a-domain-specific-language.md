@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 77fb772588b41460ddd68ae0a20b4593d1fda628
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 77c0a76ae326621ed00a523d8cf484b9aecb53c4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091028"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445199"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>Jak se definuje jazyk specifický pro doménu
 Do definice jazyka specifického pro doménu (DSL), vytvoříte ze šablony řešení sady Visual Studio. Klíčovou součástí řešení je diagramem definice DSL, která je uložena v DslDefinition.dsl. Definice DSL definuje třídy a tvary DSL. Po úpravě a přidáte k těmto prvkům můžete přidat kód programu k přizpůsobení DSL podrobněji.
@@ -106,7 +106,7 @@ Pokud chcete vytvořit nový jazyk specifický pro doménu, vytvořte nové ře�
  Ukončete experimentální instanci sady Visual Studio.
 
 > [!NOTE]
->  Změně DSL už budete moci zobrazit tvary v ukázce soubor testu. Nicméně je možné vytvářet nové elementy.
+> Změně DSL už budete moci zobrazit tvary v ukázce soubor testu. Nicméně je možné vytvářet nové elementy.
 
 ### <a name="modifying-the-template-dsl"></a>Úprava šablony DSL
  Přejmenovat a zachovat některé nebo všechny doménové třídy a třídy tvar v šabloně definici DSL. Vaše nové názvy třídy musí být platné názvy CLR bez mezery ani interpunkci.
@@ -135,7 +135,7 @@ Pokud chcete vytvořit nový jazyk specifický pro doménu, vytvořte nové ře�
   Následující části popisují, jak vytvořit nejužitečnější typy funkcí DSL. Existuje mnoho dalších vzorech, se kterými lze zkonstruovat DSL, ale ty se používají nejčastěji.
 
 > [!NOTE]
->  Po přidání funkce, nezapomeňte kliknout na **Transformovat všechny šablony** na panelu nástrojů Průzkumník řešení před sestavení a spuštění vašeho DSL.
+> Po přidání funkce, nezapomeňte kliknout na **Transformovat všechny šablony** na panelu nástrojů Průzkumník řešení před sestavení a spuštění vašeho DSL.
 
  Následující obrázek ukazuje třídy a vztahy část DSL, která slouží jako příklad v tomto tématu.
 
@@ -146,7 +146,7 @@ Pokud chcete vytvořit nový jazyk specifický pro doménu, vytvořte nové ře�
  ![Instance modelu generované DSL](../modeling/media/music_instance.png)
 
 > [!NOTE]
->  "Model" odkazuje na instanci tohoto kódu DSL, která uživatelé vytvářet a obvykle se zobrazí jako diagram. Toto téma popisuje diagramem definice DSL a diagramech modelů, které se zobrazí při použití vašeho DSL.
+> "Model" odkazuje na instanci tohoto kódu DSL, která uživatelé vytvářet a obvykle se zobrazí jako diagram. Toto téma popisuje diagramem definice DSL a diagramech modelů, které se zobrazí při použití vašeho DSL.
 
 ## <a name="classes"></a> Definování doménové třídy
  Doménové třídy představoval pojmy tohoto kódu DSL. Instance jsou *elementům modelu*. Například v **MusicLibrary** DSL může mít doménové třídy s názvem **alba** a **skladby**.
@@ -183,7 +183,7 @@ Pokud chcete vytvořit nový jazyk specifický pro doménu, vytvořte nové ře�
  Další informace najdete v tématu [vlastnosti vztahů domény](../modeling/properties-of-domain-relationships.md) a [Vlastnosti rolí domény](../modeling/properties-of-domain-roles.md).
 
 > [!NOTE]
->  Vkládání není stejný jako dědičnosti. Podřízené položky v vztah obsažení nedědí ze svých nadřazených složek funkce.
+> Vkládání není stejný jako dědičnosti. Podřízené položky v vztah obsažení nedědí ze svých nadřazených složek funkce.
 
 ### <a name="add-domain-properties-to-each-domain-class"></a>Přidání vlastnosti domény do každé doménové třídy
  Vlastnosti domény ukládání hodnot. Můžete například: Název, název, data publikování.
@@ -294,7 +294,7 @@ Pokud chcete vytvořit nový jazyk specifický pro doménu, vytvořte nové ře�
    2. Klikněte pravým tlačítkem na uzel v rámci **karty panelu nástrojů** , který má stejný název jako vaše DSL, například MusicLibrary. Klikněte na tlačítko **přidat nástroj pro Element**.
 
        > [!NOTE]
-       >  Pokud kliknete pravým tlačítkem **nástroje** uzlu, neuvidíte **přidat nástroj pro Element**. Místo toho klikněte na uzel nad ním.
+       > Pokud kliknete pravým tlačítkem **nástroje** uzlu, neuvidíte **přidat nástroj pro Element**. Místo toho klikněte na uzel nad ním.
 
    3. V okně Vlastnosti nový nástroj prvek vybraný, nastavte **třídy** do doménové třídy, které jste nedávno přidali.
 
@@ -462,7 +462,7 @@ Pokud chcete vytvořit nový jazyk specifický pro doménu, vytvořte nové ře�
          V části **vlastnost Display, vlastnost**, vyberte vlastnost, která má být zobrazen v seznamu. V příkladu je to název.
 
 > [!NOTE]
->  S použitím cesty pole v mapě Dekoratéru a prostoru pro mapování polí, můžete provést složitější vztahy mezi doménovými třídami a obrazce oddílu.
+> S použitím cesty pole v mapě Dekoratéru a prostoru pro mapování polí, můžete provést složitější vztahy mezi doménovými třídami a obrazce oddílu.
 
 #### <a name="to-define-a-tool-for-creating-the-shape"></a>Chcete-li definovat nástroj pro vytváření tvar
 
@@ -473,7 +473,7 @@ Pokud chcete vytvořit nový jazyk specifický pro doménu, vytvořte nové ře�
 3. Klikněte pravým tlačítkem na uzel v rámci **karty panelu nástrojů** , který má stejný název jako vaše DSL, například MusicLibrary. Klikněte na tlačítko **přidat nástroj pro Element**.
 
     > [!NOTE]
-    >  Pokud kliknete pravým tlačítkem **nástroje** uzlu, neuvidíte **přidat nástroj pro Element**. Místo toho klikněte na uzel nad ním.
+    > Pokud kliknete pravým tlačítkem **nástroje** uzlu, neuvidíte **přidat nástroj pro Element**. Místo toho klikněte na uzel nad ním.
 
 4. V okně Vlastnosti nový nástroj prvek vybraný, nastavte **třídy** do doménové třídy, které jste nedávno přidali.
 

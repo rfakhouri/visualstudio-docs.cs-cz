@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d8ca2366111e0e87e8e95db66f9bdb146016adb8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 63d313534fab789c5e4e79fb644111314e054250
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040129"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445151"
 ---
 # <a name="how-to-migrate-a-domain-specific-language-to-a-new-version"></a>Postupy: Migrace jazyka specifického pro doménu na novou verzi
 Můžete migrovat projekty, které definice a používání jazyka specifického pro doménu na [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] oproti verzi [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] , který byl distribuován s [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)].
@@ -53,7 +53,7 @@ Můžete migrovat projekty, které definice a používání jazyka specifického
    - Vyberte projekt nebo řešení zobrazíte seznam změn, které způsobí, že nástroj.
 
        > [!NOTE]
-       >  Zaškrtávací políčka, které se zobrazují vedle názvu složky nemají žádný vliv. Je třeba rozbalit složky ke kontrole projekty a řešení.
+       > Zaškrtávací políčka, které se zobrazují vedle názvu složky nemají žádný vliv. Je třeba rozbalit složky ke kontrole projekty a řešení.
 
 4. Převod projektů.
 
@@ -74,7 +74,7 @@ Můžete migrovat projekty, které definice a používání jazyka specifického
    2. Klikněte na tlačítko **Transformovat všechny šablony** tlačítko v hlavičce Průzkumníku řešení.
 
        > [!NOTE]
-       >  Tento krok můžete provést zbytečné. Další informace najdete v tématu [jak automatizovat Transformovat všechny šablony](/previous-versions/visualstudio/visual-studio-2012/ff521399\(v\=vs.110\)).
+       > Tento krok můžete provést zbytečné. Další informace najdete v tématu [jak automatizovat Transformovat všechny šablony](/previous-versions/visualstudio/visual-studio-2012/ff521399\(v\=vs.110\)).
 
 6. Aktualizujte váš vlastní kód v projektech převedený.
 

@@ -9,12 +9,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f4c6b72c521b15c1087b71ddb7241268cf56d64c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5ddd76bab4d007a9476dde75f46f3f2bc77be865
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60070248"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442532"
 ---
 # <a name="step-4-lay-out-your-form-with-a-tablelayoutpanel-control"></a>Krok 4: Rozvržení formuláře pomocí ovládacího prvku TableLayoutPanel
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Skupiny kontejnerů
 TableLayoutPanel – ovládací prvek  
   
     > [!NOTE]
-    >  Po přidání vašeho kontejneru TableLayoutPanel, pokud se zobrazí okno uvnitř formuláře s názvem **úlohy kontejneru TableLayoutPanel**, klikněte kamkoli do formuláře, abyste jej zavřeli. Později v tomto kurzu se dozvíte další informace o tomto okně.  
+    > Po přidání vašeho kontejneru TableLayoutPanel, pokud se zobrazí okno uvnitř formuláře s názvem **úlohy kontejneru TableLayoutPanel**, klikněte kamkoli do formuláře, abyste jej zavřeli. Později v tomto kurzu se dozvíte další informace o tomto okně.  
   
      Všimněte si, jak panel nástrojů rozšíří na pokrytí formuláře po výběru jeho karty a ukončí se po klikněte kamkoli mimo něj. To je funkce automatického skrytí rozhraní IDE. Chcete-li ho nebo vypnout pro kterékoliv okno výběrem ikony připínáčku v pravém horním rohu okna k přepnutí automatického schovávání a zamknutí na místě. Takto se zobrazí ikona připínáčku.  
   
@@ -62,7 +62,7 @@ Okno Vlastnosti s vybraná výplň
 7. Poté, co nastavíte kontejneru TableLayoutPanel **Dock** vlastnost **vyplnit**, panel vyplní celý formulář. Pokud změníte velikost formuláře znovu, kontejner TableLayoutPanel zůstane ukotvený a změní velikost sebe sama na vhodnou.  
   
     > [!NOTE]
-    >  TableLayoutPanel funguje jako tabulka v aplikaci Microsoft Office Word: Má řádky a sloupce a jednotlivé buňky může zahrnovat více řádků a sloupců. Každá buňka může obsahovat jeden ovládací prvek (například tlačítko, zaškrtávací políčko nebo jmenovku). Váš kontejner TableLayoutPanel bude mít `PictureBox` prvek rozložený přes celý horní řádek, `CheckBox` ovládacího prvku v jeho levé dolní buňky a čtyři `Button` ovládacích prvků v jejich pravém dolním rohu buňky.  
+    > TableLayoutPanel funguje jako tabulka v aplikaci Microsoft Office Word: Má řádky a sloupce a jednotlivé buňky může zahrnovat více řádků a sloupců. Každá buňka může obsahovat jeden ovládací prvek (například tlačítko, zaškrtávací políčko nebo jmenovku). Váš kontejner TableLayoutPanel bude mít `PictureBox` prvek rozložený přes celý horní řádek, `CheckBox` ovládacího prvku v jeho levé dolní buňky a čtyři `Button` ovládacích prvků v jejich pravém dolním rohu buňky.  
   
 8. V současné době kontejner TableLayoutPanel má dva stejně velké řádky a dva stejně velké sloupce. Budete muset změnit jejich velikost, takže horní řádek a sloupec vpravo jsou oba mnohem větší. V Návrháři formulářů Windows vyberte kontejner TableLayoutPanel. V pravém horním rohu je malé černé trojúhelníkové tlačítko, které se zobrazí takto.  
   

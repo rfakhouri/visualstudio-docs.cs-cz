@@ -27,12 +27,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 39cdb98f14823b02c8d4d2b60575eddca6da0420
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 927451ed35ce4bbdfbff7531b2828b0571354f34
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60055350"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445364"
 ---
 # <a name="windows-forms-controls-on-office-documents-overview"></a>Ovládací prvky Windows Forms na dokumenty Office – přehled
   Ovládací prvky Windows Forms jsou objekty, které mohou uživatelé komunikovat s a zadejte skript nebo manipulaci s daty. V projektech na úrovni dokumentu pro aplikaci Microsoft Office Excel a Microsoft Office Word můžete přidat ovládací prvky Windows Forms k dokumentu nebo sešitu ve vašem projektu v době návrhu nebo prostřednictvím kódu programu přidáte těchto ovládacích prvků za běhu. Tyto ovládací prvky můžete programově přidat otevřeného dokumentu nebo listu za běhu v doplňku VSTO pro Excel nebo Word.
@@ -109,7 +109,7 @@ Ve formuláři Windows.
 - **Stejné svislé mezery**
 
 > [!NOTE]
->  V projektech aplikace Word tato tlačítka jsou povolena pouze v případě, že nejsou vybrané ovládací prvky v textu. Ve výchozím nastavení jsou ovládací prvky, které přidáte do dokumentu v době návrhu v textu.
+> V projektech aplikace Word tato tlačítka jsou povolena pouze v případě, že nejsou vybrané ovládací prvky v textu. Ve výchozím nastavení jsou ovládací prvky, které přidáte do dokumentu v době návrhu v textu.
 
 ### <a name="prevent-old-data-from-appearing-in-excel-workbooks-during-loading"></a>Zabránit zobrazování v sešitech aplikace Excel během načítání stará data
  Když přidáte ovládací prvky Windows Forms do dokumentů nebo listů v době návrhu, zůstávají ovládací prvky v dokumentu, při zavření dokumentu. Ovládacích prvků přidaných v době návrhu se také označují jako *statické ovládací prvky*.

@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: alexhomer1
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 309dbfcac8e5c4c38e65f8901c699dc2fa51c7a1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: bfcdb3906f405b9f7ba4650be13f4522ab559ee8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104173"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446222"
 ---
 # <a name="run-unit-tests-for-store-apps-in-visual-studio"></a>Spuštění testů jednotek pro aplikace pro Store v sadě Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "60104173"
 Toto téma popisuje, jak spustit testování částí pomocí Průzkumníka testů v sadě Microsoft Visual Studio
 
 > [!NOTE]
->  Témata v této části popisují funkce Visual Studio Express pro Windows 8. Visual Studio Community, Enterprise a Professional poskytují další funkce pro testování částí.
+> Témata v této části popisují funkce Visual Studio Express pro Windows 8. Visual Studio Community, Enterprise a Professional poskytují další funkce pro testování částí.
 >
 > - Použijte libovolné rozhraní testování částí třetích stran nebo open zdroj, který byl vytvořen adaptér doplněk pro aplikaci Microsoft Test Explorer. Můžete také analyzovat a zobrazit informace o pokrytí kódu pro vaše testy.
 >   - Spusťte testy po každém sestavení. Můžete také použít Microsoft Fakes, izolované rozhraní pro spravovaný kód testy zaměřit se na váš vlastní kód nahrazením testovací kód pro systém a funkce třetích stran.
@@ -118,7 +118,7 @@ Toto téma popisuje, jak spustit testování částí pomocí Průzkumníka test
 1. V editoru sady Visual Studio nastavte zarážku v jedné nebo více testovacích metod, které chcete ladit.
 
    > [!NOTE]
-   >  Vzhledem k tomu, že zkušební metody lze spustit v libovolném pořadí, nastavte zarážky v všechny testovací metody, které chcete ladit.
+   > Vzhledem k tomu, že zkušební metody lze spustit v libovolném pořadí, nastavte zarážky v všechny testovací metody, které chcete ladit.
 
 2. V Průzkumníku testů vyberte testovací metody a pak zvolte **ladit vybrané testy** v místní nabídce.
 

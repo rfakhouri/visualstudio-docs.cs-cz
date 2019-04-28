@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b939640b0676ae34eedeed96c8a4b6b21a5a37e4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 6ea209b380948196ee20cc4e2085fa46fab76efc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599516"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441845"
 ---
 # <a name="design-and-create-office-solutions"></a>Návrh a vytvoření řešení pro systém Office
 
@@ -54,7 +54,7 @@ Visual Studio obsahuje šablony projektů, které můžete použít k vytvořen�
   Pokud Visual Studio změní cílového rozhraní .NET Framework pro váš projekt a jsou pomocí technologie ClickOnce k nasazení svého řešení, ujistěte se, že vyberete odpovídající verzi rozhraní .NET Framework v **požadavky** dialogové okno. Tento výběr nezmění automaticky, když změníte cílový rámec pro váš projekt. Další informace najdete v tématu [jak: Instalace požadovaných součástí v počítačích koncových uživatelů, které spouštějí řešení Office](https://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98).
 
 > [!NOTE]
->  Nelze cíleny na rozhraní.NET Framework 3.5 nebo starší v projektech Office, které vytvoříte pomocí [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)]. Projekty Office vytvořené pomocí [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] vyžadují funkce, které byly poprvé představeny v [!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)]
+> Nelze cíleny na rozhraní.NET Framework 3.5 nebo starší v projektech Office, které vytvoříte pomocí [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)]. Projekty Office vytvořené pomocí [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] vyžadují funkce, které byly poprvé představeny v [!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)]
 
 ### <a name="understand-when-the-office-pias-are-required-on-end-user-computers"></a>Seznamte se s při sestavení PIA sady Office jsou nutné v počítačích koncových uživatelů
  Ve výchozím nastavení, Office sestavení primární spolupráce (PIA) nemusí být nainstalovaný na počítačích koncových uživatelů, pokud **Embed Interop Types** každého odkazu Office PIA v projektu je nastavena na **True**, což je výchozí hodnota. V tomto scénáři se vloží informace o typu pro typy PIA, které se používají ve vašem řešení do řešení sestavení při vytváření projektu. V době běhu informace o vloženém typu použít místo PIA pro volání do modelu COM založené na objektovém aplikace Office. Další informace o jak typy ze sestavení PIA jsou součástí vašeho řešení, najdete v části [ekvivalence typů a vestavěné typy spolupráce](/dotnet/framework/interop/type-equivalence-and-embedded-interop-types).

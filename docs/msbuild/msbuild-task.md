@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 87f600e3872de2211d893fa32b7cbcd2600825bd
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 23c691730e50cc8d34eddbb60da6d7d671a85dfc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59667544"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437853"
 ---
 # <a name="msbuild-task"></a>MSBuild – úloha
 Sestaví [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] projekty z jiného [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] projektu.
@@ -65,7 +65,7 @@ Sestaví [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuil
  [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3.5, ale nabízí dvě nové vyhrazené položky metadat, vlastnosti a AdditionalProperties, které poskytují flexibilní způsob, jak předat různé vlastnosti pro různé projekty jsou sestaveny [úlohy nástroje MSBuild](../msbuild/msbuild-task.md).
 
 > [!NOTE]
->  Tyto nové položky metadat se vztahují pouze na položek předaných v atributu projektů [úlohy nástroje MSBuild](../msbuild/msbuild-task.md).
+> Tyto nové položky metadat se vztahují pouze na položek předaných v atributu projektů [úlohy nástroje MSBuild](../msbuild/msbuild-task.md).
 
 ## <a name="multi-processor-build-benefits"></a>Výhody víceprocesorového víceprocesorová sestavení
  Jeden z největších výhod používání tato nová metadata nastane, pokud sestavujete svoje projekty paralelně na systému s více procesory. Metadata vám umožňuje konsolidovat všechny projekty do jednoho [úlohy nástroje MSBuild](../msbuild/msbuild-task.md) volání bez nutnosti provádět všechny dávkování nebo podmíněné [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] úlohy. A při volání jedné [úlohy nástroje MSBuild](../msbuild/msbuild-task.md), všechny projekty, které jsou uvedené v atributu projekty budou vytvořeny paralelně. (Pouze, ale pokud `BuildInParallel=true` atribut nachází v [úlohy nástroje MSBuild](../msbuild/msbuild-task.md).) Další informace najdete v tématu [sestavování více projektů současně](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md).
@@ -74,7 +74,7 @@ Sestaví [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuil
  Běžný scénář, kdy je při vytváření více souborů řešení pomocí [úlohy nástroje MSBuild](../msbuild/msbuild-task.md), různé konfigurace sestavení používá se jenom. Možná budete chtít vytvořit a1 řešení pomocí a2 řešení a konfigurace ladění pomocí konfigurace vydané verze. V [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 2.0, tento soubor projektu by vypadat nějak takto:
 
 > [!NOTE]
->  V následujícím příkladu "..." představuje soubory další řešení.
+> V následujícím příkladu "..." představuje soubory další řešení.
 
 ### <a name="aproj"></a>a.proj
 

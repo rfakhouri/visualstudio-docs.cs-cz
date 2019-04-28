@@ -20,12 +20,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 153773d27d4f27a6987f7984955dde26b187b65e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6d93d9f771da9387661603f3eb71301e9d9aead7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116510"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427132"
 ---
 # <a name="walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt"></a>Návod: Vytvoření vlastního Bootstrapperu pro zobrazena výzva týkající se ochrany osobních údajů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -128,7 +128,7 @@ Můžete nakonfigurovat aplikace ClickOnce automaticky aktualizovat při sestave
     6. V **spouštěcí objekt** rozevírací nabídky vyberte **Module1**.  
   
        > [!NOTE]
-       >  Zakázání aplikační platformu zakáže funkce, jako jsou vizuální styly Windows XP, události aplikace, úvodní obrazovka, jedna instance aplikace a další. Další informace najdete v tématu [stránka aplikace, Návrhář projektu (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md).  
+       > Zakázání aplikační platformu zakáže funkce, jako jsou vizuální styly Windows XP, události aplikace, úvodní obrazovka, jedna instance aplikace a další. Další informace najdete v tématu [stránka aplikace, Návrhář projektu (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md).  
   
        Visual C# pouze pro vývojáře:  
   
@@ -154,12 +154,12 @@ Můžete nakonfigurovat aplikace ClickOnce automaticky aktualizovat při sestave
 1. Vytvořte adresář **UpdateConsentDialog** v %PROGRAMFILES%\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages.  
   
     > [!NOTE]
-    >  Budete potřebovat oprávnění správce k vytvoření této složky.  
+    > Budete potřebovat oprávnění správce k vytvoření této složky.  
   
 2. V adresáři UpdateConsentDialog vytvořte podadresář s názvem en.  
   
     > [!NOTE]
-    >  Vytvořte nový adresář pro každé národní prostředí. Například můžete přidat podadresáře pro národní prostředí cs a Německo. Tyto adresáře by obsahoval francouzštinu a češtinu řetězce a jazykových sad v případě potřeby.  
+    > Vytvořte nový adresář pro každé národní prostředí. Například můžete přidat podadresáře pro národní prostředí cs a Německo. Tyto adresáře by obsahoval francouzštinu a češtinu řetězce a jazykových sad v případě potřeby.  
   
 #### <a name="step-2-to-create-the-productxml-manifest-file"></a>Krok 2: Chcete-li vytvořit soubor manifestu product.xml  
   
@@ -224,7 +224,7 @@ Můžete nakonfigurovat aplikace ClickOnce automaticky aktualizovat při sestave
 4. Vytvořte dokument s názvem eula.rtf pro licenční podmínky pro software.  
   
     > [!NOTE]
-    >  Licenční podmínky pro software by měl obsahovat informace o licencích, záruk, závazků a místními zákony. Tyto soubory by měl být specifické pro národní prostředí, proto se ujistěte, že je soubor uložen ve formátu, který podporuje znaky znakové sady MBCS a UNICODE. Vyhledejte právního oddělení o obsah licenčních podmínek softwaru.  
+    > Licenční podmínky pro software by měl obsahovat informace o licencích, záruk, závazků a místními zákony. Tyto soubory by měl být specifické pro národní prostředí, proto se ujistěte, že je soubor uložen ve formátu, který podporuje znaky znakové sady MBCS a UNICODE. Vyhledejte právního oddělení o obsah licenčních podmínek softwaru.  
   
 5. Uložte dokument do en podadresář v adresáři UpdateConsentDialog zaváděcí nástroj.  
   
@@ -244,7 +244,7 @@ Můžete nakonfigurovat aplikace ClickOnce automaticky aktualizovat při sestave
 4. Vyberte **dialogové okno aktualizace**.  
   
     > [!NOTE]
-    >  Budete muset zavřít a znovu otevřete Visual Studio zobrazíte dialogové okno aktualizace souhlas v dialogovém okně požadavky.  
+    > Budete muset zavřít a znovu otevřete Visual Studio zobrazíte dialogové okno aktualizace souhlas v dialogovém okně požadavky.  
   
 5. Klikněte na **OK**.  
   

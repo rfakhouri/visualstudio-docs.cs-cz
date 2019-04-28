@@ -33,12 +33,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2d14077ff7547a1b8009ce6621c111174c582a5c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 55ef0a3528afca626c0a1cbf5c10735c9e83fcb4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60095032"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443874"
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Služby Windows Communication Foundation a služby WCF Data Services v sadě Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -137,14 +137,14 @@ Visual Studio poskytuje nástroje pro práci s Windows Communication Foundation 
     ```
 
     > [!NOTE]
-    >  Nahraďte *ServiceReference* s oborem názvů pro odkaz na službu a nahraďte *Service1Client* s názvem služby.
+    > Nahraďte *ServiceReference* s oborem názvů pro odkaz na službu a nahraďte *Service1Client* s názvem služby.
 
 3. Zobrazí se seznam technologie IntelliSense pomocí přetížení konstruktoru. Vyberte `endpointConfigurationName As String` přetížení.
 
 4. Po přetížení, zadejte `=` *ConfigurationName*, kde *ConfigurationName* je název koncového bodu, který chcete použít.
 
     > [!NOTE]
-    >  Pokud si nejste jisti názvy dostupné koncové body, najdete je v souboru app.config.
+    > Pokud si nejste jisti názvy dostupné koncové body, najdete je v souboru app.config.
 
 #### <a name="to-find-the-available-endpoints-for-a-wcf-service"></a>Chcete-li najít dostupné koncové body služby WCF
 
@@ -164,7 +164,7 @@ Visual Studio poskytuje nástroje pro práci s Windows Communication Foundation 
  Ve výchozím nastavení když se přidá odkaz na službu do projektu je nakonfigurován k volání metody synchronně. Můžete změnit chování při volání metody asynchronně změnou nastavení v **nastavit odkaz na službu** dialogové okno.
 
 > [!NOTE]
->  Tato možnost nastavená na základě služby. Pokud jedna metoda pro službu je volána asynchronně, všechny metody musí být volána asynchronně.
+> Tato možnost nastavená na základě služby. Pokud jedna metoda pro službu je volána asynchronně, všechny metody musí být volána asynchronně.
 
  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]
 

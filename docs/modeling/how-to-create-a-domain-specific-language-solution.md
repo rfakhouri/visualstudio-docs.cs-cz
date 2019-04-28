@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b1799ac2e7124f79d10dcc8860a994e2f182ea7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0ac8a47aeca8875dabe3fdf388e9a73d68ec514e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60051346"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445202"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>Postupy: Vytváření řešení jazyka specifického pro doménu
 Jazyka specifického pro doménu (DSL) se vytvoří s použitím specializovaná řešení sady Visual Studio.
@@ -63,7 +63,7 @@ Před zahájením tohoto postupu, tyto součásti nainstalujte:
     Průvodce vytvoří řešení, která má dva projekty, které jsou pojmenovány **Dsl** a **DslPackage**.
 
    > [!NOTE]
-   >  Pokud se zobrazí zpráva, která vás upozorní, není ke spuštění textové šablony z nedůvěryhodných zdrojů, klikněte na tlačítko **OK**. Můžete nastavit tato zpráva se zobrazí znovu.
+   > Pokud se zobrazí zpráva, která vás upozorní, není ke spuštění textové šablony z nedůvěryhodných zdrojů, klikněte na tlačítko **OK**. Můžete nastavit tato zpráva se zobrazí znovu.
 
 ## <a name="settings"></a> Na stránkách průvodce návrhářem DSL
  Můžete nechat několik polí nezmění z výchozí hodnoty. Nicméně Ujistěte se, že pole přípona souboru je nastavit.

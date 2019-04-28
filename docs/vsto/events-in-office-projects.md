@@ -32,12 +32,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6318108523f072beaae85c51604dbb45982a244f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0fdea53ec99c4f95fb4bb9526b3f154bea5b662b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60094850"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441828"
 ---
 # <a name="events-in-office-projects"></a>Události v projektech pro systém Office
   Každá šablona projektu Office automaticky vygeneruje několik obslužných rutin událostí. Obslužné rutiny událostí pro přizpůsobení na úrovni dokumentu se mírně liší od obslužné rutiny událostí pro doplňky VSTO.
@@ -82,7 +82,7 @@ ms.locfileid: "60094850"
     - `ThisWorkbook_Shutdown`
 
 > [!NOTE]
->  Neodebírejte ovládacích prvků při prostřednictvím kódu programu **vypnutí** obslužná rutina události dokumentu. Prvky uživatelského rozhraní dokumentu již nejsou k dispozici při **vypnutí** dojde k události. Pokud chcete odebrání ovládacích prvků, než aplikaci zavře, přidejte svůj kód na jinou obslužnou rutinu události, jako například **BeforeClose** nebo **BeforeSave**.
+> Neodebírejte ovládacích prvků při prostřednictvím kódu programu **vypnutí** obslužná rutina události dokumentu. Prvky uživatelského rozhraní dokumentu již nejsou k dispozici při **vypnutí** dojde k události. Pokud chcete odebrání ovládacích prvků, než aplikaci zavře, přidejte svůj kód na jinou obslužnou rutinu události, jako například **BeforeClose** nebo **BeforeSave**.
 
 ### <a name="event-handler-method-declarations"></a>Deklarace metody obslužné rutiny událostí
  Všechny deklarace metody obslužné rutiny události má stejné argumenty předány: *odesílatele* a *e*. V aplikaci Excel *odesílatele* argument odkazuje na listu, jako například `Sheet1` nebo `Sheet2`; v aplikaci Word *odesílatele* argument odkazuje na dokument. *e* argument odkazuje na standardní argumenty události, které se nepoužívají v tomto případě.
@@ -95,7 +95,7 @@ ms.locfileid: "60094850"
  Následující příklad kódu ukazuje výchozích obslužných rutin událostí v projektech na úrovni dokumentu pro Excel.
 
 > [!NOTE]
->  Následující příklad kódu ukazuje obslužné rutiny událostí v `Sheet1` třídy. Názvy obslužných rutin událostí v jiných třídách položku hostitele odpovídat názvu třídy. Například v `Sheet2` třídy, **spuštění** má název obslužné rutiny události `Sheet2_Startup`. V `ThisWorkbook` třídy, **spuštění** má název obslužné rutiny události `ThisWorkbook_Startup`.
+> Následující příklad kódu ukazuje obslužné rutiny událostí v `Sheet1` třídy. Názvy obslužných rutin událostí v jiných třídách položku hostitele odpovídat názvu třídy. Například v `Sheet2` třídy, **spuštění** má název obslužné rutiny události `Sheet2_Startup`. V `ThisWorkbook` třídy, **spuštění** má název obslužné rutiny události `ThisWorkbook_Startup`.
 
  [!code-csharp[Trin_VstcoreExcelAutomation#83](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#83)]
  [!code-vb[Trin_VstcoreExcelAutomation#83](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#83)]
@@ -150,7 +150,7 @@ ms.locfileid: "60094850"
 - <xref:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.Close> Událost <xref:Microsoft.Office.Interop.Outlook.Explorer> objektu.
 
 > [!NOTE]
->  Můžete vynutit, Outlook, aby se vyvolala <xref:Microsoft.Office.Tools.AddInBase.Shutdown> událostí při jejím ukončení úpravou registru. Nicméně pokud toto nastavení se vrátí správcem, libovolný kód přidat do `ThisAddIn_Shutdown` metoda už nespouští při ukončení aplikace Outlook. Další informace najdete v tématu [vypnutí změní pro aplikaci Outlook 2010](http://go.microsoft.com/fwlink/?LinkID=184614).
+> Můžete vynutit, Outlook, aby se vyvolala <xref:Microsoft.Office.Tools.AddInBase.Shutdown> událostí při jejím ukončení úpravou registru. Nicméně pokud toto nastavení se vrátí správcem, libovolný kód přidat do `ThisAddIn_Shutdown` metoda už nespouští při ukončení aplikace Outlook. Další informace najdete v tématu [vypnutí změní pro aplikaci Outlook 2010](http://go.microsoft.com/fwlink/?LinkID=184614).
 
 ## <a name="see-also"></a>Viz také:
 - [Vývoj řešení pro systém Office](../vsto/developing-office-solutions.md)

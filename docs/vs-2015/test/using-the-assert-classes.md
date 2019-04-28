@@ -13,12 +13,12 @@ ms.assetid: da1b7a0d-4f1d-4d50-a07e-7b3ff60053f9
 caps.latest.revision: 29
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9b44932d9c9cd1defb691527fea40c4cf39d2fe5
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
-ms.translationtype: MT
+ms.openlocfilehash: 338a18bb48c20c20fa1f89583ed0d4af84c99d5e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54834619"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408398"
 ---
 # <a name="using-the-assert-classes"></a>Používání tříd Assert
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ Používání tříd Assert oboru názvů UnitTestingFramework ověření konkr�
  Pokaždé, když se test vytváří výsledek neprůkazné, je vyvolána AssertInconclusiveException. Obvykle přidáte příkazem Assert.Inconclusive test, který se stále pracujete označující, že ještě není připraven ke spuštění.  
   
 > [!NOTE]
->  Alternativní strategií je označit test, který není připraven ke spuštění s atributem ignorovat. Má to ale nevýhodou, že nelze snadno vygenerujete sestavu pro počet testů, že ještě zbývá k implementaci.  
+> Alternativní strategií je označit test, který není připraven ke spuštění s atributem ignorovat. Má to ale nevýhodou, že nelze snadno vygenerujete sestavu pro počet testů, že ještě zbývá k implementaci.  
   
  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.UnitTestAssertException>  
   

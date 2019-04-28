@@ -20,12 +20,12 @@ caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 01bfaf5ee9143a3122f779ab8292210b90da771f
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: dd4043b34cc809af92fc5bbd1c44e322261096e9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59650393"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437991"
 ---
 # <a name="signing-page-project-designer"></a>Stránka Podepisování, návrhář projektu (C#)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -86,7 +86,7 @@ Použití **podepisování** stránku **Návrháře projektu** k podepsání man
  Mějte na paměti, že zpoždění podepsané se nespustí a není možné ladit. Můžete však použít [Sn.exe (nástroj Strong Name)](http://msdn.microsoft.com/library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6) s `-Vr` možnost pro přeskočení ověření během vývoje.  
   
 > [!NOTE]
->  Při podpisu sestavení, nemusí mít vždy přístup k privátnímu klíči. Organizace může například mít úzce strážených pár klíčů, aby vývojáři nemuseli přístup k každý den. Veřejný klíč může být k dispozici, ale přístup k privátnímu klíči omezen na několika jednotlivcům. V takovém případě můžete použít *zpožděné* nebo *částečné podepsání* poskytnout veřejný klíč, přidání soukromého klíče odložit, dokud je předáno sestavení.  
+> Při podpisu sestavení, nemusí mít vždy přístup k privátnímu klíči. Organizace může například mít úzce strážených pár klíčů, aby vývojáři nemuseli přístup k každý den. Veřejný klíč může být k dispozici, ale přístup k privátnímu klíči omezen na několika jednotlivcům. V takovém případě můžete použít *zpožděné* nebo *částečné podepsání* poskytnout veřejný klíč, přidání soukromého klíče odložit, dokud je předáno sestavení.  
   
 ## <a name="see-also"></a>Viz také  
  [Referenční dokumentace k vlastnostem projektu](../../ide/reference/project-properties-reference.md)   

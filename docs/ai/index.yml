@@ -1,10 +1,4 @@
 ### YamlMime:YamlDocument
-ms.openlocfilehash: d5e59a74d67bd7dc6afed622863f4e501fe95bee
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
-ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62548242"
 documentType: LandingData
 title: Visual Studio Tools for AI
 metadata:
@@ -18,32 +12,32 @@ metadata:
   ms.topic: landing-page
   ms.date: 10-25-2017
 abstract:
-  description: Visual Studio Tools for AI je integrované vývojové prostředí pro sestavení, testování a nasazení řešení hloubkového učení. Další informace o použití nástroje AI pomocí našich šablon rychlý start, kurzů a ukázek.
+  description: 'Visual Studio Tools for AI je integrované vývojové prostředí pro sestavení, testování a nasazení řešení hloubkového učení. Další informace o použití nástroje AI pomocí našich šablon rychlý start, kurzů a ukázek.'
 sections:
-- title: Zprovoznění během 5 minut
-  items:
-  - type: paragraph
-    text: 'Další informace o spuštění řešení hloubkového učení pomocí:'
-  - type: list
-    style: icon48
+  - title: Zprovoznění během 5 minut
     items:
-    - image:
-        src: media/Tensorflow_logo.png
-      text: TensorFlow a Python
-      href: tensorflow-local.md
-- title: Podrobné kurzy
-  items:
-  - type: paragraph
-    text: 'Informace o vývoji pro hloubkové učení řešení:'
-  - type: list
-    style: ordered
+      - type: paragraph
+        text: 'Další informace o spuštění řešení hloubkového učení pomocí:'
+      - type: list
+        style: icon48
+        items:
+          - image:
+              src: media/Tensorflow_logo.png
+            text: TensorFlow a Python
+            href: tensorflow-local.md
+  - title: Podrobné kurzy
     items:
-    - html: <a href="/visualstudio/ai/tensorflow-vm">Trénování TensorFlow modelu v cloudu</a>
-- title: Ukázky
-  items:
-  - type: list
-    style: unordered
-    className: spaced noBullet
+      - type: paragraph
+        text: 'Informace o vývoji pro hloubkové učení řešení:'
+      - type: list
+        style: ordered
+        items:
+          - html: <a href="/visualstudio/ai/tensorflow-vm">Trénování TensorFlow modelu v cloudu</a>
+  - title: Ukázky
     items:
-    - html: <a href="https://github.com/Microsoft/samples-for-ai">Ukázky úložiště</a>
-    - html: <a href="https://gallery.cortanaintelligence.com/projects">Galerie služby Machine Learning</a>
+      - type: list
+        style: unordered
+        className: spaced noBullet
+        items:
+          - html: '<a href="https://github.com/Microsoft/samples-for-ai">Ukázky úložiště</a>'
+          - html: '<a href="https://gallery.cortanaintelligence.com/projects">Galerie služby Machine Learning</a>'

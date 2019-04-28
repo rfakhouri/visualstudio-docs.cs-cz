@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a3c38701ce222090f14b6880489eea4d22f053d5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d7f9edfb6b0c10a37aade6a9d37a5689e587890d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061759"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438107"
 ---
 # <a name="command-window"></a>Příkazové okno
 **Příkaz** okno se používá ke spuštění příkazů nebo přímo v aliasy [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrované vývojové prostředí (IDE). Můžete spustit příkazy nabídek a příkazů, které nejsou zobrazeny na jakékoliv nabídky. Pro zobrazení **příkaz** okně zvolte **ostatní Windows** z **zobrazení** nabídky a vybereme **příkazové okno**.
@@ -89,7 +89,7 @@ Edit.ReplaceInFiles /case /pattern:regex var[1-3]+ oldpar
 - `var[1-3]+` a `oldpar` jsou parametry
 
     > [!NOTE]
-    >  Příkaz, parametrů, přepínače nebo hodnotu, která obsahuje mezery, musí mít dvojitých uvozovek na obou stranách.
+    > Příkaz, parametrů, přepínače nebo hodnotu, která obsahuje mezery, musí mít dvojitých uvozovek na obou stranách.
 
 Pozice přepínače a parametry jsou navzájem zaměnitelné volně na příkazovém řádku s výjimkou produktů [prostředí](../../ide/reference/shell-command.md) příkaz, který vyžaduje svou přepínače a parametry v určitém pořadí.
 

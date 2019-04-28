@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: conceptdev
 ms.author: crdun
 manager: jillfra
-ms.openlocfilehash: eed341b5ae43f52e7df35d820012e760166e096f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: cd05f5ebad1a07e818e377b90aeb5e137f296cd9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60073424"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443366"
 ---
 # <a name="using-visual-studio-tools-for-unity"></a>Používání sady Visual Studio Tools for Unity
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -117,7 +117,7 @@ V této části se dozvíte, jak používat Visual Studio Tools pro Unity a inte
      ![Tato ikona zobrazuje že VSTU je připojen k Unity. ](../cross-platform/media/vstu-connection-connected.png "vstu_connection_connected")  
   
 > [!TIP]
->  Pokud se zobrazí ikona moduly značka zaškrtnutí, jste již připojeni k instanci Unity.  
+> Pokud se zobrazí ikona moduly značka zaškrtnutí, jste již připojeni k instanci Unity.  
   
  **Vybrat instanci Unity** některé informace o jednotlivých Unity, jež se můžete připojit k zobrazí se dialogové okno.  
   
@@ -136,7 +136,7 @@ V této části se dozvíte, jak používat Visual Studio Tools pro Unity a inte
  Číslo portu UDP soket, který komunikuje přes tuto instanci Unity.  
   
 > [!IMPORTANT]
->  Vzhledem k tomu, že Visual Studio Tools for Unity a instanci Unity komunikují přes soket sítě UDP, brány firewall může požádat o něm. Pokud k tomu dojde, budete muset autorizovat připojení tak, aby mohla komunikovat VSTU a Unity.  
+> Vzhledem k tomu, že Visual Studio Tools for Unity a instanci Unity komunikují přes soket sítě UDP, brány firewall může požádat o něm. Pokud k tomu dojde, budete muset autorizovat připojení tak, aby mohla komunikovat VSTU a Unity.  
   
 ### <a name="debugging-your-project-in-a-unity-player"></a> Ladění projektu v Unity Playeru  
  Visual Studio Tools for Unity můžete připojit přímo k aplikaci spuštěné v samostatné player, když nejsou spuštěné Unity editoru nebo chcete-li ladit problémy, které je specifických pro platformu Unity.  
@@ -154,7 +154,7 @@ V této části se dozvíte, jak používat Visual Studio Tools pro Unity a inte
 - V Unity Playeru Web, v místní nabídce zvolte **verze kanálu** a ujistěte se, že **vývoj** je povolená možnost.  
   
   > [!IMPORTANT]
-  >  V Unity 4.2 nebo novější **verze kanálu** položka kontextové nabídky je k dispozici v kontextové nabídce webového Spouštěče pouze při **Alt** se stiskne klávesa, jako je otevřen v místní nabídce. Pokud webového Spouštěče běží v systému Mac OS X, stiskněte **možnost** klíče místo.  
+  > V Unity 4.2 nebo novější **verze kanálu** položka kontextové nabídky je k dispozici v kontextové nabídce webového Spouštěče pouze při **Alt** se stiskne klávesa, jako je otevřen v místní nabídce. Pokud webového Spouštěče běží v systému Mac OS X, stiskněte **možnost** klíče místo.  
   
   Nakonec se ujistěte, jestli že jste připojení k instanci Unity, který chcete ladit. Informace o tom, jak to udělat, najdete v článku [připojení sady Visual Studio k Unity](#connecting-visual-studio-to-unity) oddílu.  
   
@@ -162,7 +162,7 @@ V této části se dozvíte, jak používat Visual Studio Tools pro Unity a inte
  Mnoho vývojářů Unity píšete kód komponenty jako externí knihovny DLL tak, aby funkce, které vytvářejí můžete snadno sdílet s jinými projekty. Visual Studio Tools for Unity usnadňuje ladění kódu v těchto knihoven DLL bez problémů s jiným kódem ve vašem Unity projektu.  
   
 > [!NOTE]
->  V současné době Visual Studio Tools for Unity podporuje pouze spravované knihovny DLL. Nepodporuje ladění nativního kódu knihovny DLL, jako jsou napsané v jazyce C++.  
+> V současné době Visual Studio Tools for Unity podporuje pouze spravované knihovny DLL. Nepodporuje ladění nativního kódu knihovny DLL, jako jsou napsané v jazyce C++.  
   
  Všimněte si, že podle scénáře popsaného zde předpokládá, že máte zdrojový kód – to znamená, že vyvíjíte nebo opětovného použití kódu první strany nebo máte zdrojový kód do knihovny třetích stran a naplánujte nasazení ve vašem Unity projektu jako knihovny DLL. Tento scénář nepopisuje ladění knihovny DLL pro kterou nemají zdrojový kód.  
   

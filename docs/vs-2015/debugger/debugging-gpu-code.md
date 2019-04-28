@@ -14,12 +14,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 07e3c15fad2758de965d0e13c2b64ac3ceebd2fe
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: dc5a54b1dee2345f42abd3a00b39c11388185d03
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114129"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434868"
 ---
 # <a name="debugging-gpu-code"></a>Ladění kódu GPU
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Můžete ladit kód jazyka C++, na kterém běží na grafický procesor (GPU). 
  Ladění se podporuje na [!INCLUDE[win7](../includes/win7-md.md)], [!INCLUDE[win8](../includes/win8-md.md)], [!INCLUDE[winsvr08_r2](../includes/winsvr08-r2-md.md)], a [!INCLUDE[winserver8](../includes/winserver8-md.md)]. Pro ladění v softwarovém emulátoru [!INCLUDE[win8](../includes/win8-md.md)], nebo [!INCLUDE[winserver8](../includes/winserver8-md.md)] je povinný. Pro ladění na hardwaru, je nutné nainstalovat ovladače pro grafickou kartu. Ne všichni dodavatelé hardwaru implementuje všechny funkce ladicího programu. Omezení v dokumentaci dodavatele.  
   
 > [!NOTE]
->  Nezávislí dodavatelé hardwaru, kteří požadují pro podporu ladění GPU v sadě Visual Studio vytvořit knihovnu DLL, která implementuje rozhraní VSD3DDebug a cíle své vlastní ovladače.  
+> Nezávislí dodavatelé hardwaru, kteří požadují pro podporu ladění GPU v sadě Visual Studio vytvořit knihovnu DLL, která implementuje rozhraní VSD3DDebug a cíle své vlastní ovladače.  
   
 ## <a name="configuring-gpu-debugging"></a>Konfigurace ladění GPU  
  Ladicí program nelze přerušit na kód CPU a GPU kódu v rámci stejné aplikace. Ve výchozím nastavení ladicí program přeruší na procesoru kódu. Ladění kódu GPU, použijte jeden z následujících dvou kroků:  

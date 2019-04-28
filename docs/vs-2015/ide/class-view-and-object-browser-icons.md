@@ -18,12 +18,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7cb80c7ad81708724750660560d65cfef722af86
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: ef14396e681f77eca469f40b2253c8a64296423d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54785046"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422858"
 ---
 # <a name="class-view-and-object-browser-icons"></a>Ikony zobrazení třídy a prohlížeče objektů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ Třídy zobrazení ** a **prohlížeče objektů** zobrazení ikon představují
  Následující signální ikony platí pro všechny předchozí ikony a určit jejich přístupnost.  
   
 > [!NOTE]
->  Pokud váš projekt je zahrnutý v databázi správy zdrojů, další signální ikony zobrazují označuje stav správy zdrojového kódu, například vráceny se změnami nebo rezervovány.  
+> Pokud váš projekt je zahrnutý v databázi správy zdrojů, další signální ikony zobrazují označuje stav správy zdrojového kódu, například vráceny se změnami nebo rezervovány.  
   
 |Ikona|Popis|  
 |----------|-----------------|  

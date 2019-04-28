@@ -16,12 +16,12 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8337fa86173b62a6576be6d3abe8d76dbef427d7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 95f863a8b33f6cbff7e592b0a7a45e664494d826
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040066"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427238"
 ---
 # <a name="accessing-local-and-remote-data-in-clickonce-applications"></a>Přístup k lokálním a vzdáleným datům v aplikacích ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ Většina aplikací spotřebovávají nebo vytvářejí data. [!INCLUDE[ndpteccl
  Do adresáře dat je určená pro data spravované aplikace, které jsou data, která aplikace explicitně uchovává a udržuje. Všechny statické, nezávislé soubory nejsou označeny jako "data" v manifestu aplikace se místo toho jsou umístěny v adresáři aplikace. Tento adresář je, kde jsou umístěné spustitelné soubory (.exe) a sestavení aplikace.  
   
 > [!NOTE]
->  Když [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikace se odinstaluje, odebere se také jeho Data adresáře. Nikdy nepoužívejte datový adresář k uložení dat spravované end uživatele, jako jsou například dokumenty.  
+> Když [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikace se odinstaluje, odebere se také jeho Data adresáře. Nikdy nepoužívejte datový adresář k uložení dat spravované end uživatele, jako jsou například dokumenty.  
   
 #### <a name="marking-data-files-in-a-clickonce-distribution"></a>Označení datové soubory v distribuci ClickOnce  
  Umístit existující soubor do adresáře dat, je třeba označit existující soubor jako datový soubor v vaše [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] souboru manifestu aplikace vaší aplikace. Další informace najdete v tématu [jak: Zahrnutí datového souboru do aplikace ClickOnce](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md).  
@@ -52,7 +52,7 @@ Většina aplikací spotřebovávají nebo vytvářejí data. [!INCLUDE[ndpteccl
  Čtení z adresáře dat vyžaduje, aby vaše [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] žádosti o oprávnění ke čtení; podobně zápisu do adresáře, vyžaduje oprávnění k zápisu. Vaše aplikace nebude mít toto oprávnění automaticky, pokud je nakonfigurován na spuštění s úplnou důvěryhodností. Další informace o zvyšování oprávnění pro vaši aplikaci pomocí rozhraní zvýšení úrovně oprávnění nebo Trusted Application Deployment najdete v tématu [zabezpečení aplikací ClickOnce](../deployment/securing-clickonce-applications.md).  
   
 > [!NOTE]
->  Pokud vaše organizace nepoužívá Trusted Application Deployment a zvýšení oprávnění se vypnulo, uplatnění oprávnění se nezdaří.  
+> Pokud vaše organizace nepoužívá Trusted Application Deployment a zvýšení oprávnění se vypnulo, uplatnění oprávnění se nezdaří.  
   
  Poté, co vaše aplikace má tato oprávnění, má přístup do adresáře dat pomocí volání metody třídy v rámci <xref:System.IO>. Můžete získat cestu do adresáře dat v rámci prvku Windows Forms [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikace s použitím <xref:System.Deployment.Application.ApplicationDeployment.DataDirectory%2A> vlastnosti definované v <xref:System.Deployment.Application.ApplicationDeployment.CurrentDeployment%2A> vlastnost <xref:System.Deployment.Application.ApplicationDeployment>. Toto je nejpohodlnější a doporučený způsob pro přístup k datům. Následující příklad kódu ukazuje, jak to provést u textového souboru s názvem CSV.txt, kterou jste zadali ve vašem nasazení jako datový soubor.  
   

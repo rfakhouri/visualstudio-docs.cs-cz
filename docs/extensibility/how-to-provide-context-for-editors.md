@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0adc498ebaaf7ea1b5de033d4d589d99545da976
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f37550dbea8b3633c79358822fa8f2bdf1ecb6d0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60068233"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417150"
 ---
 # <a name="how-to-provide-context-for-editors"></a>Postupy: Poskytuje kontext pro editory
 Pro editor kontext je aktivní, pouze v případě, že je editor má právě fokus, nebo má fokus, bezprostředně před byl přesunut fokus panelu nástrojů. Můžete zadat kontextu editoru provedením následujících úloh:
@@ -65,7 +65,7 @@ Pro editor kontext je aktivní, pouze v případě, že je editor má právě fo
      Když **dynamická Nápověda** volání okno <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContextUpdate.UpdateUserContext%2A> k označení, že se aktualizuje, editoru nebo návrháře v tu chvíli můžete aktualizovat kontext odpovídajícím způsobem pro nadřazené místní kontejner objektů a dat a všechny kontejnery objektů a dat kontext.
 
     > [!NOTE]
-    >  `SetDirty` Příznak je automaticky nastaven na `true` vždy, když přidá nebo odebere z kontejneru objektů a dat rámci kontextu. **Dynamická Nápověda** okno jen volá <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContextUpdate.UpdateUserContext%2A> na kontejner a kontext dat pokud `SetDirty` příznak je nastaven na `true`. Resetuje na `false` po aktualizaci.
+    > `SetDirty` Příznak je automaticky nastaven na `true` vždy, když přidá nebo odebere z kontejneru objektů a dat rámci kontextu. **Dynamická Nápověda** okno jen volá <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContextUpdate.UpdateUserContext%2A> na kontejner a kontext dat pokud `SetDirty` příznak je nastaven na `true`. Resetuje na `false` po aktualizaci.
 
 3. Volání <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.AddAttribute%2A> k přidání kontextu do kolekce aktivní kontext nebo <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.RemoveAttribute%2A> odebrat kontext.
 
@@ -73,7 +73,7 @@ Pro editor kontext je aktivní, pouze v případě, že je editor má právě fo
  Pokud vytváříte vlastní editor, je třeba provést všechny tři postupy v tomto článku poskytují kontext v editoru.
 
 > [!NOTE]
->  Správně aktivovat editoru nebo návrháře oken a ujistěte se, že směrování příkazů aktualizaci správně, je nutné volat <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.Show%2A> komponenty k němu okno fokus.
+> Správně aktivovat editoru nebo návrháře oken a ujistěte se, že směrování příkazů aktualizaci správně, je nutné volat <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.Show%2A> komponenty k němu okno fokus.
 
  SEID je kolekce vlastností, které se mění v závislosti na výběru. SEID informace jsou k dispozici prostřednictvím globálního výběru. Do události aktivované přes drátové sítě globální výběr <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx> rozhraní, a seznam všechno, co se vybral (aktuální editor, aktuální okno nástroje, aktuální hierarchií a tak dále).
 

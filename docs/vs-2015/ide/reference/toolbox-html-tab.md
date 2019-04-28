@@ -15,12 +15,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6c0603bd820990789af0d9bbca147acd7004e1a1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 35c5b1275ced5eb7f2fee85c0592be2b5ed94533
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097528"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419757"
 ---
 # <a name="toolbox-html-tab"></a>Sada nástrojů, karta HTML
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -96,7 +96,7 @@ ms.locfileid: "60097528"
  Další informace najdete v tématu [vstupní ovládací prvky HTML](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [deklarativní syntaxe HtmlInputText serverového ovládacího prvku](http://msdn.microsoft.com/87060d90-a11c-434d-9fc9-b03a8487041e), [Přehled ovládacího prvku textového pole webového serveru](http://msdn.microsoft.com/library/ab354bc1-f23a-48fc-93d8-d4d7c1b7396f), <xref:System.Web.UI.HtmlControls.HtmlInputText>, a <xref:System.Web.UI.WebControls.TextBox>.  
   
 > [!IMPORTANT]
->  Doporučujeme, abyste ověřili všechny uživatelský vstup. Další informace najdete v tématu [ověřování uživatelského vstupu v ASP.NET Web Pages](http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).  
+> Doporučujeme, abyste ověřili všechny uživatelský vstup. Další informace najdete v tématu [ověřování uživatelského vstupu v ASP.NET Web Pages](http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).  
   
  **Vstup (soubor)**  
  ![Stránka HTML pole souboru](../../ide/reference/media/vxfilefield.gif "vxFilefield")  
@@ -112,7 +112,7 @@ ms.locfileid: "60097528"
  Další informace najdete v tématu [vstupní ovládací prvky HTML](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [deklarativní syntaxe HtmlInputFile serverového ovládacího prvku](http://msdn.microsoft.com/a817b4a0-056f-4c17-a696-b9fdcde43db6), a <xref:System.Web.UI.HtmlControls.HtmlInputFile>.  
   
 > [!IMPORTANT]
->  Doporučujeme, abyste ověřili všechny uživatelský vstup. Další informace najdete v tématu [ověřování uživatelského vstupu v ASP.NET Web Pages](http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).  
+> Doporučujeme, abyste ověřili všechny uživatelský vstup. Další informace najdete v tématu [ověřování uživatelského vstupu v ASP.NET Web Pages](http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).  
   
  **Vstup (heslo)**  
  ![Visual Studio Password Field](../../ide/reference/media/vxpassword.gif "vxPassword")  
@@ -128,7 +128,7 @@ ms.locfileid: "60097528"
  Další informace najdete v tématu [vstupní ovládací prvky HTML](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [deklarativní syntaxe HtmlInputPassword serverového ovládacího prvku](http://msdn.microsoft.com/df703dd0-1624-4e5a-a547-c97f2f331b9f), [jak: Nastavení ovládacího prvku TextBox webového serveru pro zadání hesla](http://msdn.microsoft.com/library/5b5069f3-64a1-435a-aee6-da263f4e6310), a [názorný postup: Ověřování uživatelských vstupů na webové stránky formuláře](http://msdn.microsoft.com/library/7141d6ba-34f3-410b-b5cd-2102a24cb436).  
   
 > [!IMPORTANT]
->  Pokud aplikace přenáší uživatelská jména a hesla, měli byste nakonfigurovat vašeho webu na používání vrstvy SSL (Secure Sockets) k šifrování přenosu. Další informace najdete v tématu "Zabezpečení připojení pomocí protokolu SSL" [provozní příručce služby IIS](http://go.microsoft.com/fwlink/?linkid=47856). Kromě toho se doporučuje, abyste ověřili všechny uživatelský vstup. Další informace najdete v tématu [ověřování uživatelského vstupu v ASP.NET Web Pages](http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).  
+> Pokud aplikace přenáší uživatelská jména a hesla, měli byste nakonfigurovat vašeho webu na používání vrstvy SSL (Secure Sockets) k šifrování přenosu. Další informace najdete v tématu "Zabezpečení připojení pomocí protokolu SSL" [provozní příručce služby IIS](http://go.microsoft.com/fwlink/?linkid=47856). Kromě toho se doporučuje, abyste ověřili všechny uživatelský vstup. Další informace najdete v tématu [ověřování uživatelského vstupu v ASP.NET Web Pages](http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).  
   
  **Vstup (zaškrtávací políčko)**  
  ![Webová stránka HTML nástrojů zaškrtávací políčko možnost](../../ide/reference/media/vxcheckbox.gif "vxCheckbox")  
@@ -183,7 +183,7 @@ ms.locfileid: "60097528"
  Další informace najdete v tématu [deklarativní syntaxe HtmlTextArea serverového ovládacího prvku](http://msdn.microsoft.com/5a103ffa-235b-4452-ba2b-a4fb8ba8cb87), <xref:System.Web.UI.HtmlControls.HtmlTextArea>, a <xref:System.Web.UI.WebControls.TextBox>.  
   
 > [!IMPORTANT]
->  Doporučujeme, abyste ověřili všechny uživatelský vstup. Další informace najdete v tématu [ověřování uživatelského vstupu v ASP.NET Web Pages](http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).  
+> Doporučujeme, abyste ověřili všechny uživatelský vstup. Další informace najdete v tématu [ověřování uživatelského vstupu v ASP.NET Web Pages](http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).  
   
  **Tabulka**  
  ![Snímek obrazovky HTMLpageToolbarTable](../../ide/reference/media/vxtable.gif "vxTable")  

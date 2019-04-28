@@ -9,12 +9,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a343cb508933b91f5400ff6bc17c285a54bd2e87
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: bd1a9a2a269c173ef9dcb47b39921073802fe1ee
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60076796"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438415"
 ---
 # <a name="how-to-create-a-basic-texture"></a>Postupy: Vytvoření základní textury
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ Tento dokument ukazuje, jak použít Editor obrázků pro vytvoření základní
 5. Na panelu nástrojů editoru obrázků **vyplnit** nástroj a potom stiskněte a podržte klávesu Shift a vyberte libovolný bod v bitové kopii. Pomocí klávesy Shift způsobí, že alfa hodnota barvy výplně nahradit barvu v obrázku; v opačném případě hodnotu alfa slouží k blend barvu výplně spolu s barvu v obrázku.  
   
    > [!IMPORTANT]
-   >  Tento krok, společně s výběr barvy v předchozím kroku, zajistí, že základní bitová kopie je připravená pro cílovou texturu "terč", který se vykreslí. Když je na obrázku vyplněna průhledný černý –, a proto je černá ohraničení cíle – bude existovat žádné třepící artefakty kolem cíl.  
+   > Tento krok, společně s výběr barvy v předchozím kroku, zajistí, že základní bitová kopie je připravená pro cílovou texturu "terč", který se vykreslí. Když je na obrázku vyplněna průhledný černý –, a proto je černá ohraničení cíle – bude existovat žádné třepící artefakty kolem cíl.  
   
 6. Na panelu nástrojů editoru obrázků **Elipsa** nástroj.  
   
@@ -70,7 +70,7 @@ Tento dokument ukazuje, jak použít Editor obrázků pro vytvoření základní
 11. Použití **Elipsa** nástroj, nakreslete kruh z pixel souřadnice `(3, 3)` pixel koordinovat `(508, 508)`. Chcete-li nakreslit kruh další snadno, můžete stisknutím klávesy a podržte klávesu Shift při kreslení.  
   
     > [!NOTE]
-    >  Pixel souřadnice aktuální pozici ukazatele myši se zobrazují na [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] stavový řádek.  
+    > Pixel souřadnice aktuální pozici ukazatele myši se zobrazují na [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] stavový řádek.  
   
 12. Změna barvy pozadí. Nastavte **R** k `44`, **G** k `165`, **B** k `211`, a **A** k `255`.  
   

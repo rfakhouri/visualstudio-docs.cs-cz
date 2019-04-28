@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 99ba60021410f1965e05f7c5479231013d53cb71
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56697621"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62904223"
 ---
 # <a name="processes-view"></a>Zobrazení procesů
 Zobrazí se v zobrazení zobrazí strom všech aktivních procesů ve vašem systému. Název modulu a ID procesu se zobrazí. Zobrazení procesů použijte, pokud chcete prozkoumat konkrétní systém procesu, která obvykle odpovídá prováděnému programu. Procesy jsou označeny názvů modulů, nebo jsou určené "systémové procesy."

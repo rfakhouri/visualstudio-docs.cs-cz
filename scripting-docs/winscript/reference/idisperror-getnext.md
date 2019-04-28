@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 491e16454f52fb621306280351e1288f3de3a5e0
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: 4af2d239c26c156fad0be7fb45bc04f601d35c83
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58160063"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437278"
 ---
 # <a name="idisperrorgetnext"></a>IDispError::GetNext
 Načte další `IDispError` objektu.  
@@ -42,7 +42,7 @@ HRESULT GetNext(
 ## <a name="return-value"></a>Návratová hodnota  
  Metoda vrátí `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
   
-|Hodnota|Popis|  
+|Value|Popis|  
 |-----------|-----------------|  
 |`S_OK`|Metoda byla úspěšná.|  
   
@@ -50,7 +50,7 @@ HRESULT GetNext(
  Tato metoda načte další `IDispError` objektu. Pokud je to poslední `IDispError` objektu, tato metoda vrátí hodnotu NULL.  
   
 > [!NOTE]
->  Tato metoda není implementována.  
+> Tato metoda není implementována.  
   
 ## <a name="see-also"></a>Viz také  
  [IDispError – rozhraní](../../winscript/reference/idisperror-interface.md)

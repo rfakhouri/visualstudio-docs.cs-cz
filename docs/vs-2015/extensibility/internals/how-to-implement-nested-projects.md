@@ -11,12 +11,12 @@ ms.assetid: d20b8d6a-f0e0-4115-b3a3-edda893ae678
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 5100fb42cba7c993861ef5b9fa0682400b0cfa4a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 427ef425c64323246ffe1141d081fd7d921506a6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54792192"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435240"
 ---
 # <a name="how-to-implement-nested-projects"></a>Postupy: Implementace vnořených projektů
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Při vytváření jsou typu vnořený projekt existuje několik dalších kroků
 1. Integrované vývojové prostředí (IDE) načte informace o souboru a spuštění projektu nadřazený projekt voláním <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory> rozhraní. Nadřazený projekt je vytvořen a přidán do řešení.  
   
    > [!NOTE]
-   >  V tomto okamžiku je příliš stará v procesu pro nadřazený projekt na vytvoření vnořený projekt, protože nadřazený projekt musí být vytvořen před vytvořením podřízené projekty. Toto pořadí nadřazeného projektu nastavení můžete použít podřízené projekty a podřízené projekty můžete získat informace z nadřazené projektů v případě potřeby. Toto pořadí je, pokud to není nutné provádět na klienty, jako je například Správa zdrojového kódu (SCC) a Průzkumník řešení.  
+   > V tomto okamžiku je příliš stará v procesu pro nadřazený projekt na vytvoření vnořený projekt, protože nadřazený projekt musí být vytvořen před vytvořením podřízené projekty. Toto pořadí nadřazeného projektu nastavení můžete použít podřízené projekty a podřízené projekty můžete získat informace z nadřazené projektů v případě potřeby. Toto pořadí je, pokud to není nutné provádět na klienty, jako je například Správa zdrojového kódu (SCC) a Průzkumník řešení.  
   
     Nadřazený projekt musí čekat <xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject.OpenChildren%2A> metoda volána integrovaným vývojovým prostředím, před jeho vnořené (podřízené) je možné vytvořit projekt nebo projekty.  
   
@@ -57,7 +57,7 @@ Při vytváření jsou typu vnořený projekt existuje několik dalších kroků
     Pokud ještě neexistuje, nadřazený projekt vytvoří identifikátor GUID pro každý projekt vnořené voláním `CoCreateGuid`.  
   
    > [!NOTE]
-   >  `CoCreateGuid` je rozhraní API modelu COM volána, když se má vytvořit identifikátor GUID. Další informace najdete v tématu `CoCreateGuid` a identifikátory GUID v knihovně MSDN.  
+   > `CoCreateGuid` je rozhraní API modelu COM volána, když se má vytvořit identifikátor GUID. Další informace najdete v tématu `CoCreateGuid` a identifikátory GUID v knihovně MSDN.  
   
     Nadřazený projekt ukládá tento identifikátor GUID v jeho souboru projektu, který se má načíst další čas, který je otevřen v integrovaném vývojovém prostředí. Přejděte ke kroku 4 pro další informace týkající se volání `AddVirtualProjectEX` načíst `guidProjectID` pro podřízený projekt.  
   
@@ -66,7 +66,7 @@ Při vytváření jsou typu vnořený projekt existuje několik dalších kroků
      Protože nadřazené a podřízené projekty jsou vytvořena prostřednictvím kódu programu, můžete nastavit vlastnosti pro vnořené projekty v tomto okamžiku.  
   
     > [!NOTE]
-    >  Pouze dostáváte kontextové informace z vnořený projekt, ale můžete také požádat, pokud nadřazený projekt má jakýkoli kontext pro danou položku tak, že zkontrolujete <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID>. Tímto způsobem můžete přidat další atributy Dynamická nápověda a možnosti nabídky konkrétní jednotlivých vnořených projektů.  
+    > Pouze dostáváte kontextové informace z vnořený projekt, ale můžete také požádat, pokud nadřazený projekt má jakýkoli kontext pro danou položku tak, že zkontrolujete <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID>. Tímto způsobem můžete přidat další atributy Dynamická nápověda a možnosti nabídky konkrétní jednotlivých vnořených projektů.  
   
 10. V hierarchii je sestaven pro zobrazení v Průzkumníku řešení pomocí volání <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetNestedHierarchy%2A> metody.  
   

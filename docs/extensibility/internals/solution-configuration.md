@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0d8da1446682c36549440e9b9e38ce110e0b35ba
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: e2683c3a2ea80aad341b7fab4fb35d13ea5379c7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614819"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63429054"
 ---
 # <a name="solution-configuration"></a>Konfigurace řešení
 Konfigurace řešení ukládání vlastností na úrovni řešení. Chování odkazují **Start** klíč (F5) a **sestavení** příkazy. Tyto příkazy ve výchozím nastavení, sestavit a spustit konfiguraci ladění. Oba příkazy se spustí v kontextu konfigurace řešení. To znamená, že uživatel můžete očekávat F5 pro spuštění a sestavení bez ohledu aktivním řešení se konfigurují prostřednictvím nastavení. Prostředí je určená k optimalizaci pro řešení než projektů při rozhodování o vytváření a spouštění.
@@ -23,7 +23,7 @@ Konfigurace řešení ukládání vlastností na úrovni řešení. Chování od
  Standardní panel nástrojů sady Visual Studio obsahuje tlačítko Start a konfigurace řešení rozevírací seznam napravo od tlačítko Start. Tento seznam umožňuje uživatelům zvolit konfiguraci tak, aby se má spustit při stisknutí klávesy F5, vytvářet své vlastní konfigurace řešení nebo upravit existující konfiguraci.
 
 > [!NOTE]
->  Nejsou žádná rozšíření rozhraní vytvořit nebo upravit konfiguraci řešení. Je nutné použít `DTE.SolutionBuilder`. Existují však rozšiřitelnost rozhraní API pro správu sestavení řešení. Další informace naleznete v tématu <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2>.
+> Nejsou žádná rozšíření rozhraní vytvořit nebo upravit konfiguraci řešení. Je nutné použít `DTE.SolutionBuilder`. Existují však rozšiřitelnost rozhraní API pro správu sestavení řešení. Další informace naleznete v tématu <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2>.
 
  Tady je implementace konfigurace řešení podporována typem projektu:
 

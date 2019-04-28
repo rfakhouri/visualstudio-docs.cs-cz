@@ -9,12 +9,12 @@ helpviewer_keywords:
 ms.assetid: 7d316945-06e0-4d8e-ba3a-0ef96fc75399
 caps.latest.revision: 26
 manager: jillfra
-ms.openlocfilehash: 9c673fd7eb2b51e611256efb427baa0174d29462
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 192274d087731f68cb7e01c1da20e80cbfef0360
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54767592"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446413"
 ---
 # <a name="in-place-activation"></a>Aktivace na místě
 Pokud je zobrazení editoru hostitelem ActiveX nebo jiné aktivní ovládací prvky, je nutné implementovat editor zobrazení jako ovládací prvek ActiveX nebo jako objekt aktivního dokumentu data pomocí modelu aktivace na místě.  
@@ -25,7 +25,7 @@ Pokud je zobrazení editoru hostitelem ActiveX nebo jiné aktivní ovládací pr
  Pokud se rozhodnete implementovat ovládací prvek ActiveX, které můžete hostovat jiné vložené objekty. Pokud se rozhodnete implementovat datový objekt dokumentu, omezí rám okna vaši schopnost používat ovládací prvky ActiveX.  
   
 > [!NOTE]
->  <xref:Microsoft.VisualStudio.OLE.Interop.IOleDocument> a <xref:Microsoft.VisualStudio.OLE.Interop.IOleDocumentView> rozhraní umožňující oddělit data a zobrazení. Ale sady Visual Studio nepodporuje tuto funkci a tato rozhraní se používají pouze k vyjádření objekt zobrazení dokumentu.  
+> <xref:Microsoft.VisualStudio.OLE.Interop.IOleDocument> a <xref:Microsoft.VisualStudio.OLE.Interop.IOleDocumentView> rozhraní umožňující oddělit data a zobrazení. Ale sady Visual Studio nepodporuje tuto funkci a tato rozhraní se používají pouze k vyjádření objekt zobrazení dokumentu.  
   
  Editory, které používají <xref:Microsoft.VisualStudio.Shell.Interop.SOleComponentUIManager> služba může poskytovat nabídky, nástrojů a integrace příkaz voláním metody <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager> rozhraní implementované <xref:Microsoft.VisualStudio.Shell.Interop.SOleComponentUIManager> služby. Editory můžete také nabízí další funkce sady Visual Studio, jako je například výběr sledování a správu vrátit zpět. Další informace najdete v tématu [vytváření vlastních editorů a návrhářů](../extensibility/creating-custom-editors-and-designers.md).  
   
@@ -36,7 +36,7 @@ Pokud je zobrazení editoru hostitelem ActiveX nebo jiné aktivní ovládací pr
 Editor aktivace na místě  
   
 > [!NOTE]
->  Objekty v tomto kreslení, pouze `CYourEditorFactory` objekt je potřeba vytvořit standardní editor. Pokud vytváříte vlastní editor, není nutné implementovat <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2> protože editor budou mít svůj vlastní mechanismus privátní trvalosti. Další informace najdete v tématu [vytváření vlastních editorů a návrhářů](../extensibility/creating-custom-editors-and-designers.md).  
+> Objekty v tomto kreslení, pouze `CYourEditorFactory` objekt je potřeba vytvořit standardní editor. Pokud vytváříte vlastní editor, není nutné implementovat <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2> protože editor budou mít svůj vlastní mechanismus privátní trvalosti. Další informace najdete v tématu [vytváření vlastních editorů a návrhářů](../extensibility/creating-custom-editors-and-designers.md).  
   
  Všechna rozhraní, které jsou implementovány vytvořit místní aktivace editoru zobrazují na jedné `CYourEditorDocument` objektu, ale tato konfigurace podporuje pouze jedno zobrazení z dat dokumentu. Další informace o podpoře více zobrazení data vašeho dokumentu, naleznete v tématu [podpora více zobrazení dokumentů](../extensibility/supporting-multiple-document-views.md).  
   

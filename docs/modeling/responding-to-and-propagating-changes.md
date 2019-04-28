@@ -10,11 +10,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 375f6996c91c294dd3b630c9ab987ff4b2d6cbdb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60078639"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62824004"
 ---
 # <a name="responding-to-and-propagating-changes"></a>Reagování na změny a šíření změn
 Po elementu se vytvoří, odstraní nebo aktualizuje, můžete napsat kód, který šíří změny dalších součástí modelu, nebo k externím prostředkům, jako jsou soubory, databáze nebo další komponenty.

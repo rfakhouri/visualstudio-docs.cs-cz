@@ -11,12 +11,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1c71becfb04115faefe88d5018c238ead38e4c88
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: c619ae6efd1de48319bf9c0398ee8ab4e3cd57ee
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54796747"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442960"
 ---
 # <a name="edit-uml-sequence-diagrams-by-using-the-uml-api"></a>Úpravy sekvenčních diagramů UML pomocí rozhraní API UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,7 +75,7 @@ public class MySequenceDiagramCommand : ICommandExtension
  Existují dva druhy sekvenční diagramy: ty, které jsou ručně vytvořeny v projektu modelování UML a ty, které byly generovány z programového kódu. Použití `UmlMode` vlastnost ke zjišťování, které sekvence diagramu můžete mít.  
   
 > [!NOTE]
->  Tato vlastnost vrátí hodnotu false pouze pro sekvenční diagramy generované z kódu pomocí sady Visual Studio 2013 nebo starší. To zahrnuje kód generovaný pořadí diagramy migrovat z 2013 a starší. Tato verze sady Visual Studio nepodporuje, generuje se nový sekvenční diagramy.  
+> Tato vlastnost vrátí hodnotu false pouze pro sekvenční diagramy generované z kódu pomocí sady Visual Studio 2013 nebo starší. To zahrnuje kód generovaný pořadí diagramy migrovat z 2013 a starší. Tato verze sady Visual Studio nepodporuje, generuje se nový sekvenční diagramy.  
   
  Například, pokud chcete provést příkaz nabídky, která se zobrazí pouze na sekvenční diagramy UML pak bude `QueryStatus()` metoda může zahrnovat následující příkaz:  
   

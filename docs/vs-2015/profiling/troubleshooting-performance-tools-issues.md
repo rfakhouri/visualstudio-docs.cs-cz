@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 91ccf1637d6b8a1f612031c8d59deeef8e07efc7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 575f17c641eb057dc01fb3302098bd9f8b47f9c5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60077352"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431614"
 ---
 # <a name="troubleshooting-performance-tools-issues"></a>Řešení potíží s výkonem problémy s nástroji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,4 +48,4 @@ Při použití nástrojů pro profilaci setkat s jedním z následujících prob
 - Vložte informace symbolu souboru dat profilování (.vsp). Další informace najdete v tématu [ukládání informací o symbolech s datových souborů výkonu](../profiling/saving-symbol-information-with-performance-data-files.md).  
   
 > [!NOTE]
->  Analytický modul vyžaduje, aby soubor typu .pdb stejnou verzi jako soubor kompilované aplikace. Soubor PDB z dřívější nebo pozdější sestavování souboru aplikace nebude fungovat.
+> Analytický modul vyžaduje, aby soubor typu .pdb stejnou verzi jako soubor kompilované aplikace. Soubor PDB z dřívější nebo pozdější sestavování souboru aplikace nebude fungovat.

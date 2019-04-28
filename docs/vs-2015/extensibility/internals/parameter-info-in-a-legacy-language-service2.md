@@ -12,12 +12,12 @@ ms.assetid: a117365d-320d-4bb5-b61d-3e6457b8f6bc
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 986a392dc381b972c9e4d4bfa6dda06fe1aa878e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d1fddc99c40e2472688a25ade121c2c762ade5da
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60087739"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437922"
 ---
 # <a name="parameter-info-in-a-legacy-language-service"></a>Informace o parametrech ve službě starší verze jazyka
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Informace o parametru technologie IntelliSense je popisek, který zobrazuje podp
  Služby starší verze jazyka jsou implementovány jako součást sady VSPackage, ale novější způsob implementace funkce služba jazyka je pro použití rozšíření MEF. Další informace najdete v tématu [rozšíření pro Editor a jazykových služeb](../../extensibility/extending-the-editor-and-language-services.md).  
   
 > [!NOTE]
->  Doporučujeme vám, že začnete používat nový editor API co nejdříve. Tím vylepšíme výkonu vaší služby jazyka a umožňují využívat nové funkce editoru.  
+> Doporučujeme vám, že začnete používat nový editor API co nejdříve. Tím vylepšíme výkonu vaší služby jazyka a umožňují využívat nové funkce editoru.  
   
 ## <a name="implementation"></a>Implementace  
  Analyzátor měli nastavit hodnotu aktivační událost <xref:Microsoft.VisualStudio.Package.TokenTriggers> nastavena při nalezení znak start seznamu parametrů (často otevřena závorka). Měli nastavit <xref:Microsoft.VisualStudio.Package.TokenTriggers> aktivovat po nalezení znaku oddělovače parametr (často čárkami). To způsobí, že informace o parametru popisku aktualizovat a zobrazit další parametr tučným písmem. Analyzátor měli nastavit hodnotu aktivační událost <xref:Microsoft.VisualStudio.Package.TokenTriggers> při Pokud najde parametr seznamu koncový znak (často pravá závorka).  
@@ -37,7 +37,7 @@ Informace o parametru technologie IntelliSense je popisek, který zobrazuje podp
  <xref:Microsoft.VisualStudio.Package.TokenTriggers> Hodnota triggeru zahájí volání <xref:Microsoft.VisualStudio.Package.Source.MethodTip%2A> metodu, která volá <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> metoda analyzátoru s analýzy důvod <xref:Microsoft.VisualStudio.Package.ParseReason>. Pokud analyzátor shledá, že je před seznam parametrů počáteční znak identifikátoru rozpoznaný název metody, vrátí seznam spárování metod podpisů v <xref:Microsoft.VisualStudio.Package.AuthoringScope> objektu. Pokud nebyly nalezeny žádné podpisy metod, zobrazí se popis tlačítka informace o parametru podpisem první v seznamu. Tento popis je pak aktualizovat, protože je zadán více podpisu. Zadávaný koncový znak seznamu parametr popisu tlačítka informace o parametru se odebere ze zobrazení.  
   
 > [!NOTE]
->  Chcete-li zajistit, aby popis tlačítka informace o parametru je ve správném formátu, je nutné přepsat vlastnosti na <xref:Microsoft.VisualStudio.Package.Methods> třída slouží k poskytování příslušných znaků. Základní <xref:Microsoft.VisualStudio.Package.Methods> předpokládá třídy C# – styl podpis metody. Zobrazit <xref:Microsoft.VisualStudio.Package.Methods> třídy podrobnosti o tom, jak to lze provést.  
+> Chcete-li zajistit, aby popis tlačítka informace o parametru je ve správném formátu, je nutné přepsat vlastnosti na <xref:Microsoft.VisualStudio.Package.Methods> třída slouží k poskytování příslušných znaků. Základní <xref:Microsoft.VisualStudio.Package.Methods> předpokládá třídy C# – styl podpis metody. Zobrazit <xref:Microsoft.VisualStudio.Package.Methods> třídy podrobnosti o tom, jak to lze provést.  
   
 ## <a name="enabling-support-for-the-parameter-info"></a>Povolení podpory pro informace o parametru  
  Pro podporu parametru informacích, je nutné nastavit `ShowCompletion` s názvem parametru <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> k `true`. Služba jazyka přečte hodnotu této položky registru z <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableCodeSense%2A> vlastnost.  

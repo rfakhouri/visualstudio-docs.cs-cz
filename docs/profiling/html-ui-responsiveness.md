@@ -17,12 +17,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: 35249e13bce2a22853b8e04ed0f0e3e2be1cdd4a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: cc7c049e0b1c5962b831e9084685b205acda38fd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60064346"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433439"
 ---
 # <a name="analyze-html-ui-responsiveness-in-universal-windows-apps"></a>Analýza odezvy uživatelského rozhraní HTML v univerzálních aplikací pro Windows
 Toto téma popisuje, jak izolovat problémy s výkonem ve svých aplikacích pomocí Profiler odezvy uživatelského rozhraní, nástroj výkon, který je k dispozici pro univerzální aplikace pro Windows.
@@ -85,7 +85,7 @@ Toto téma popisuje, jak izolovat problémy s výkonem ve svých aplikacích pom
 4. Volitelně můžete přidat uživatelské značky pro kódu pomocí [označit kód pro analýzu](#ProfileMark).
 
     > [!TIP]
-    >  Uživatelské značky pomáhají identifikovat problém rychlost odezvy při zobrazení dat profileru. Můžete například přidat uživatelskou značku na začátku a konci části kódu, který je příčinou problém s rychlostí odezvy.
+    > Uživatelské značky pomáhají identifikovat problém rychlost odezvy při zobrazení dat profileru. Můžete například přidat uživatelskou značku na začátku a konci části kódu, který je příčinou problém s rychlostí odezvy.
 
 5. Spusťte Profiler odezvy uživatelského rozhraní podle pokynů uvedených v předchozí části.
 
@@ -122,7 +122,7 @@ Toto téma popisuje, jak izolovat problémy s výkonem ve svých aplikacích pom
     - Další události podle [události odkaz na Profiler](#profiler-event-reference).
 
     > [!TIP]
-    >  Většina využitelné informace v profileru se zobrazí v grafu podrobnosti časové osy.
+    > Většina využitelné informace v profileru se zobrazí v grafu podrobnosti časové osy.
 
 12. K oblasti vybraných v využití procesoru nebo grafu vizuální propustnost (FPS), zvolte **přiblížit** (tlačítko nebo místní nabídka) Chcete-li získat podrobnější informace. Časová osa grafu se změny zobrazit jenom vybrané časové období.
 
@@ -148,7 +148,7 @@ if (performance && performance.mark) {
  Popis události se zobrazí jako popisek při umístění ukazatele myši nad uživatelskou značku. Můžete přidat tolik uživatelské značky, podle potřeby.
 
 > [!NOTE]
->  `console.timeStamp`, příkaz Chrome se rovněž zobrazuje jako značku uživatele.
+> `console.timeStamp`, příkaz Chrome se rovněž zobrazuje jako značku uživatele.
 
  Následující obrázek znázorňuje pravítka diagnostiky značkou jednoho uživatele a jeho popis.
 
@@ -193,7 +193,7 @@ if (performance.mark && performance.measure) {
  Graf využití procesoru ukazuje množství čas strávený na všech vláknech aplikace kombinování hodnoty využití procesoru pro jeden nebo více procesorů do jednoho procentuální hodnotu. Hodnota využití procesoru může překročit 100 % jeho obsahu, když se používá více než jeden procesor.
 
 > [!NOTE]
->  Využití GPU se nezobrazují v grafu.
+> Využití GPU se nezobrazují v grafu.
 
  Tento příklad ukazuje, jak vypadá graf využití procesoru:
 
@@ -238,7 +238,7 @@ if (performance.mark && performance.measure) {
  Graf zobrazuje pracovní vlákno uživatelského rozhraní a práce na pozadí podprocesů, které může přispět ke zpomalení aktualizace sady visual. Grafu nezobrazí JavaScript JIT práce, asynchronní práce GPU, prováděné mimo hostitelského procesu (jako je například RuntimeBroker.exe a dwm.exe pracovní) nebo práce pro oblasti modulu Windows Runtime, které ještě nebyly byla instrumentována pro profilaci (například vstupně-výstupních operací disku).
 
 > [!TIP]
->  Při výskytu události na vlákně na pozadí, zobrazí se v závorkách vedle názvu události ID vlákna.
+> Při výskytu události na vlákně na pozadí, zobrazí se v závorkách vedle názvu události ID vlákna.
 
  Tento příklad ukazuje, jaké na časové ose grafu podrobností vypadá po kliknutí na naslouchací proces událostí pro modelu DOM událost vybrat:
 
@@ -269,7 +269,7 @@ if (performance.mark && performance.measure) {
     - Pro časovače, naslouchacích procesů událostí (události modelu DOM), rozložení události a zpětná volání snímků animace, joinkind barevně souhrn vybrané události a všechny její podřízené **souhrn celkové doby** oddílu (barevně okruhu). Každou barevně řezu obrázku představuje typ události. Popisy tlačítek zadejte název typu události.
 
     > [!TIP]
-    >  Podrobnosti o grafu časové osy a **souhrn celkové doby** může pomoct najít pro optimalizaci. Pokud některý z těchto zobrazení zobrazuje velký počet malých úlohy, události může být Release candidate pro optimalizaci. Například aplikace může být aktualizace elementů modelu DOM často, což vede k velkým počtem rozložení a analýza událostí HTML. Je možné optimalizovat výkon tím, že tuto práci do dávek.
+    > Podrobnosti o grafu časové osy a **souhrn celkové doby** může pomoct najít pro optimalizaci. Pokud některý z těchto zobrazení zobrazuje velký počet malých úlohy, události může být Release candidate pro optimalizaci. Například aplikace může být aktualizace elementů modelu DOM často, což vede k velkým počtem rozložení a analýza událostí HTML. Je možné optimalizovat výkon tím, že tuto práci do dávek.
 
 ### <a name="FilterTimelineDetails"></a> Filtrovat podrobnosti časové osy
  Zobrazení podrobnosti časové osy na určitou událost můžete filtrovat výběrem **filtru na události** z místní nabídky pro určité události. Když vyberete tuto možnost, mají rozsah zobrazení časové osy a mřížky pro zvolenou událost. Výběr v graf využití procesoru, také obory na konkrétní události.
@@ -288,7 +288,7 @@ if (performance.mark && performance.measure) {
  Chcete-li filtrovat aktivity vlákno uživatelského rozhraní, zrušte **aktivita uživatelského rozhraní** možnost.
 
 > [!TIP]
->  Zrušte zaškrtnutí tohoto políčka a vyberte možnost provoz sítě k prozkoumání problémů souvisejících s latencí sítě.
+> Zrušte zaškrtnutí tohoto políčka a vyberte možnost provoz sítě k prozkoumání problémů souvisejících s latencí sítě.
 
  Pokud chcete vyfiltrovat uživatelské míry, zrušte **uživatelské míry** možnost. Uživatelské míry jsou události nejvyšší úrovně s žádné podřízené položky.
 

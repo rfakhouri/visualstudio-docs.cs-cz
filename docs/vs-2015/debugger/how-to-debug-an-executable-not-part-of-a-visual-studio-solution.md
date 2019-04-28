@@ -22,12 +22,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e913d67442d21cb1a0895721c22ede9b69363f53
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d871d469fc71beaa5c3e3323aad08eda3f546729
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60068701"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434483"
 ---
 # <a name="how-to-debug-an-executable-not-part-of-a-visual-studio-solution"></a>Postupy: Ladit spustitelný soubor není součástí řešení sady Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,7 +61,7 @@ V některých případech můžete chtít ladit spustitelný soubor, který nen�
 5. Spusťte spustitelný soubor výběrem příkazu ke spuštění, například **Start**, z **ladění** nabídky.  
   
     > [!NOTE]
-    >  Ne všechny programovací jazyky podporují projekty EXE. Nainstalujte [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] Pokud chcete tuto funkci používat.  
+    > Ne všechny programovací jazyky podporují projekty EXE. Nainstalujte [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] Pokud chcete tuto funkci používat.  
   
      Jestliže ladíte spustitelný soubor bez zdrojového kódu, je k dispozici funkce ladění jsou omezeny, ať už jste připojení ke spuštěnému spustitelnému souboru nebo přidat spustitelného souboru k [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] řešení. Pokud spustitelný soubor byl vytvořen bez ladicích informací v kompatibilním formátu, je k dispozici funkce jsou dále omezená. Pokud máte zdrojový kód, nejlepším řešením je import zdrojového kódu do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] a vytvoření ladicího sestavení spustitelného souboru v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   

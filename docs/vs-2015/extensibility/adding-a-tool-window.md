@@ -11,12 +11,12 @@ ms.assetid: 8e16c381-03c8-404e-92ef-3614cdf3150a
 caps.latest.revision: 53
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: cc12854574f21c1d75f57bae592d6a504db9b189
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9099bc79a555f908ddda12dc9da83f015791fd86
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60087563"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444833"
 ---
 # <a name="adding-a-tool-window"></a>Přidání panelu nástrojů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ V tomto podrobném návodu se dozvíte, jak vytvořit okno nástroje a integrova
 1. Vytvoření projektu s názvem **FirstToolWin** VSIX šablony a přidat šablonu vlastního nástroje okna položku s názvem **FirstToolWindow**.  
   
     > [!NOTE]
-    >  Další informace o vytváření rozšíření pomocí panelu nástrojů najdete v tématu [vytváření rozšíření pomocí panelu nástrojů](../extensibility/creating-an-extension-with-a-tool-window.md).  
+    > Další informace o vytváření rozšíření pomocí panelu nástrojů najdete v tématu [vytváření rozšíření pomocí panelu nástrojů](../extensibility/creating-an-extension-with-a-tool-window.md).  
   
 ## <a name="add-a-control-to-the-tool-window"></a>Přidání ovládacího prvku panel nástrojů  
   
@@ -264,7 +264,7 @@ public System.Windows.Controls.MediaElement MediaPlayer
      První parametr s názvem `Style` a jeho hodnota může být `Tabbed`, což znamená, že v okně budou karty ve stávajícím okně. Je určené pozici ukotvení `Window` parametr, n takovém případě identifikátor GUID **Průzkumníka řešení**.  
   
     > [!NOTE]
-    >  Další informace o typech oken v integrovaném vývojovém prostředí najdete v tématu <xref:EnvDTE.vsWindowType>.  
+    > Další informace o typech oken v integrovaném vývojovém prostředí najdete v tématu <xref:EnvDTE.vsWindowType>.  
   
 ## <a name="testing-the-tool-window"></a>Testování panel nástrojů  
   

@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 4c0792871835d8adea52c1e4adfdfd2c38f7d617
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60107785"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62857784"
 ---
 # <a name="test-area-7-share"></a>Testovací oblast 7: Sdílet
 Tento test oblast obsahuje informace o sdílení položek mezi umístěními prostřednictvím **sdílené složky** příkazu.

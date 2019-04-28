@@ -18,12 +18,12 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5b7576faf84b564e1ea10ef9def69819e5c77fa6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e0ef4264629e40380f12fb07623bb9274547713c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60046952"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441576"
 ---
 # <a name="how-to-specify-which-files-are-published-by-clickonce"></a>Postupy: Určení souborů k publikování aplikací ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -95,7 +95,7 @@ Při publikování [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] spolu 
 4. V **soubory aplikace** dialogové okno, vyberte **skupiny** pole pro soubor, který chcete zahrnout do nové skupiny.  
   
     > [!NOTE]
-    >  Soubory musí mít **akce sestavení** vlastnost nastavena na hodnotu **obsahu** před názvy souborů se zobrazí v **soubory aplikace** dialogové okno.  
+    > Soubory musí mít **akce sestavení** vlastnost nastavena na hodnotu **obsahu** před názvy souborů se zobrazí v **soubory aplikace** dialogové okno.  
   
 5. V **skupina pro stažení** pole, vyberte  **\<nový … >** z rozevíracího seznamu.  
   
@@ -114,7 +114,7 @@ Při publikování [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] spolu 
 5. V **skupina pro stažení** vyberte skupinu z rozevíracího seznamu.  
   
     > [!NOTE]
-    >  Nelze změnit **skupina pro stažení** pro soubory, které jsou požadovány pro spuštění aplikace.  
+    > Nelze změnit **skupina pro stažení** pro soubory, které jsou požadovány pro spuštění aplikace.  
   
 ## <a name="see-also"></a>Viz také  
  [Publikování aplikací ClickOnce](../deployment/publishing-clickonce-applications.md)   

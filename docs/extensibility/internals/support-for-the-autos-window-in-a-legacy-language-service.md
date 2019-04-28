@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 7fdff9237ef30884d5bfaad424edfffec62a8f58
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56613255"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62908422"
 ---
 # <a name="support-for-the-autos-window-in-a-legacy-language-service"></a>Podpora okna Automatické hodnoty ve službě starší verze jazyka
 **Automatické hodnoty** okno zobrazuje výrazy, jako jsou proměnné a parametry, které jsou v oboru, když se laděný program pozastaví (buď z důvodu zarážky nebo výjimky). Výraz může obsahovat proměnné, místní nebo globální a parametry, které byly změněny v místním oboru. **Automatické hodnoty** okno může také obsahovat instance třídy, struktury nebo jiný typ. Cokoli, co můžete vyhodnotit vyhodnocovače výrazů může potenciálně zobrazený v **automatické hodnoty** okna.

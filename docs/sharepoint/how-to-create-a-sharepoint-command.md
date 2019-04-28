@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 49d253b63b682d81903003d6bdd148922989f274
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d804acd19d585bf9517ce9b8d771290a1f1c214a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082318"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435458"
 ---
 # <a name="how-to-create-a-sharepoint-command"></a>Postupy: Vytvoření příkazu SharePoint
   Pokud chcete použít objektový model serveru v rozšíření nástrojů služby SharePoint, je třeba vytvořit vlastní *příkaz serveru SharePoint* pro volání rozhraní API. Příkaz serveru SharePoint definujete v sestavení, které můžete volat přímo do objektového modelu serveru.
@@ -33,7 +33,7 @@ ms.locfileid: "60082318"
     - Cílí AnyCPU nebo x64 platformy. Ve výchozím nastavení cílovou platformu pro projekty knihovny tříd je AnyCPU. Další informace o výběru cílové platformy najdete v tématu [jak: Konfigurace projektů pro cílové platformy](../ide/how-to-configure-projects-to-target-platforms.md).
 
     > [!NOTE]
-    >  Příkaz serveru SharePoint nemůže implementovat ve stejném projektu, který definuje rozšíření nástrojů SharePoint, protože příkazů služby SharePoint cílí na rozhraní .NET Framework 3.5 a SharePoint cíl rozšíření nástroje [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]. Je nutné definovat všechny příkazy služby SharePoint, které jsou používány rozšíření testovacího projektu. Další informace najdete v tématu [nasadit rozšíření pro nástroje služby SharePoint v sadě Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).
+    > Příkaz serveru SharePoint nemůže implementovat ve stejném projektu, který definuje rozšíření nástrojů SharePoint, protože příkazů služby SharePoint cílí na rozhraní .NET Framework 3.5 a SharePoint cíl rozšíření nástroje [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]. Je nutné definovat všechny příkazy služby SharePoint, které jsou používány rozšíření testovacího projektu. Další informace najdete v tématu [nasadit rozšíření pro nástroje služby SharePoint v sadě Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).
 
 2. Přidejte odkazy na následující sestavení:
 

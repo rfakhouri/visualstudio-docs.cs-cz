@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a8c5c2f7afd885e295e9c9f462f5effe016fc5e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: adad85955805aa9349a3655ec9b817e17fd3c712
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60046549"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430747"
 ---
 # <a name="step-3-assign-a-random-icon-to-each-label"></a>Krok 3: Přiřaďte jednotlivým jmenovkám náhodné ikony
 Pokud se ikony každou hru zobrazí ve stejných buňkách, není to zrovna náročné. Abyste tomu předešli, přiřaďte ikony náhodně k ovládacím prvkům popisku ve formuláři pomocí `AssignIconsToSquares()` metody.
@@ -33,7 +33,7 @@ Pokud se ikony každou hru zobrazí ve stejných buňkách, není to zrovna nár
      [!code-vb[VbExpressTutorial4Step2_3_4#14](../ide/codesnippet/VisualBasic/step-3-assign-a-random-icon-to-each-label_2.vb)]
 
     > [!NOTE]
-    >  Názvy „iconLabel“ a „ovládací prvek“ se používají, protože jsou popisné. Tyto názvy můžete nahradit libovolnými názvy a kód by měl pracovat přesně stejně, dokud nezměníte název v každém výroku uvnitř smyčky.
+    > Názvy „iconLabel“ a „ovládací prvek“ se používají, protože jsou popisné. Tyto názvy můžete nahradit libovolnými názvy a kód by měl pracovat přesně stejně, dokud nezměníte název v každém výroku uvnitř smyčky.
 
      `AssignIconsToSquares()` Metoda iteruje jednotlivé ovládací prvky popisku v kontejneru TableLayoutPanel a pro každý z nich spustí stejný příkaz. Tyto příkazy vyžádají náhodnou ikonu ze seznamu, který jste přidali v [krok 2: Přidejte náhodný objekt a seznam ikon](../ide/step-2-add-a-random-object-and-a-list-of-icons.md). (To je důvod, proč jste zahrnuli dvě z každé ikony v seznamu, aby se spárovaly ikony přiřazené k náhodnému ovládacímu prvku popisku.)
 
@@ -67,7 +67,7 @@ Pokud se ikony každou hru zobrazí ve stejných buňkách, není to zrovna nár
      Ikony jsou nyní viditelné, protože jste je neskryli. Skrýt hráče, můžete nastavit každý popisek **ForeColor** vlastnost na stejnou barvu jako jeho **BackColor** vlastnost.
 
     > [!TIP]
-    >  Dalším způsobem, jak skrýt ovládací prvky jako popisky je nastavit jejich **Visible** vlastnost **False**.
+    > Dalším způsobem, jak skrýt ovládací prvky jako popisky je nastavit jejich **Visible** vlastnost **False**.
 
 6. Chcete-li skrýt ikony, ukončete program a odeberte značky komentáře komentovaného řádku kódu uvnitř `For Each` smyčky.
 

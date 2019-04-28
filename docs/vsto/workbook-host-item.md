@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b8ffe18ea3407480faa69a6b9b3ba4309b28b279
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: e30ab9ce498134426caa35e0c3c9f9652f683535
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56625256"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445530"
 ---
 # <a name="workbook-host-item"></a>Hostitelská položka Workbook
   <xref:Microsoft.Office.Tools.Excel.Workbook> Hostitelský objekt je typ, který rozšiřuje <xref:Microsoft.Office.Interop.Excel.Workbook> typu ze sestavení primární spolupráce pro aplikaci Excel. <xref:Microsoft.Office.Tools.Excel.Workbook> Hostitelský objekt poskytuje všechny stejné vlastnosti, metody a události <xref:Microsoft.Office.Interop.Excel.Workbook> objektu, ale poskytuje taky další funkce.
@@ -49,7 +49,7 @@ ms.locfileid: "56625256"
  <xref:Microsoft.Office.Tools.Excel.Workbook> Hostitelský objekt nepostupuje jako kontejner pro hostitelské ovládací prvky. Proto všechny viditelné ovládací prvky nelze přidat do sešitu, ale můžete přidat komponenty, například <xref:System.Data.DataSet>tak, aby komponenty mohou sdílet všechny listy. V projektu úrovni dokumentu součásti, které jsou k dispozici v sešitu můžete najít na **komponenty** kartě **Data** kartu, a **všechny formuláře Windows** kartě  **Panel nástrojů**.
 
 > [!NOTE]
->  Vývojářské nástroje balíku Office v sadě Visual Studio sdílené sešity nepodporuje.
+> Vývojářské nástroje balíku Office v sadě Visual Studio sdílené sešity nepodporuje.
 
 ## <a name="understand-workbook-host-items-in-vsto-add-in-projects"></a>Vysvětlení položek hostitele pracovního sešitu v projekty doplňků VSTO
  V doplňku VSTO projektů, můžete vygenerovat <xref:Microsoft.Office.Tools.Excel.Workbook> hostitelský objekt za běhu pro libovolný sešit, který je otevřen v aplikaci Excel. Ke generování <xref:Microsoft.Office.Tools.Excel.Workbook> hostitelský objekt, použijte `GetVstoObject` metody. Další informace najdete v tématu [rozšíření Wordových dokumentů a Excelových sešitů v doplňcích VSTO za běhu](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).

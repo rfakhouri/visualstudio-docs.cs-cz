@@ -12,12 +12,12 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 581d6d1f6e5923569f4d98705226d2336978bfc5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 29950be152c140a8315f96f8752b1fa906c3f801
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60067557"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442930"
 ---
 # <a name="rules-propagate-changes-within-the-model"></a>Pravidla šířící změny v modelu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -73,7 +73,7 @@ namespace ExampleNamespace
 ```  
 
 > [!NOTE]
->  Kód pravidlo by měl změnit stav pouze prvky uvnitř Store; To znamená pravidlo by měl změnit pouze prvky modelu, relace, tvary, konektory, diagramů nebo jejich vlastností. Pokud chcete změny na prostředky mimo úložišti, definujte Store události. Další informace najdete v tématu [obslužné rutiny rozšíření změny mimo the Model událostí](../modeling/event-handlers-propagate-changes-outside-the-model.md)  
+> Kód pravidlo by měl změnit stav pouze prvky uvnitř Store; To znamená pravidlo by měl změnit pouze prvky modelu, relace, tvary, konektory, diagramů nebo jejich vlastností. Pokud chcete změny na prostředky mimo úložišti, definujte Store události. Další informace najdete v tématu [obslužné rutiny rozšíření změny mimo the Model událostí](../modeling/event-handlers-propagate-changes-outside-the-model.md)  
 
 ### <a name="to-define-a-rule"></a>Chcete definovat pravidlo  
 

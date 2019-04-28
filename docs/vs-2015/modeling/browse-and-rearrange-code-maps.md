@@ -24,12 +24,12 @@ caps.latest.revision: 91
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9b9744cf6d3ff8be30d06ffa877f96940fd20a24
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ffb29ee31390c512802bfd16c7b94333d0c6c403
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60055246"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433445"
 ---
 # <a name="browse-and-rearrange-code-maps"></a>Procházení a změna uspořádání map kódu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -103,7 +103,7 @@ Změna uspořádání položek na mapách kódu, aby se daly snadněji číst a 
 - Souhrnným odkazem představuje všechny vztahy, které odkazují ve stejném směru mezi dvěma skupinami.  
   
 > [!TIP]
->  Ve výchozím nastavení zobrazuje propojení mezi skupinami pouze pro vybrané uzly na mapě. Chcete-li změnit toto chování můžete zobrazit nebo skrýt souhrnná propojení mezi skupinami, klikněte na tlačítko **rozložení** na kód mapování nástrojů a vyberte **Upřesnit**, pak **zobrazit všechny odkazy napříč skupinami** nebo **Skrýt všechny odkazy napříč skupinami**. Zobrazit [skrýt nebo zobrazit uzlům a propojením](#HidingShowing) další podrobnosti.  
+> Ve výchozím nastavení zobrazuje propojení mezi skupinami pouze pro vybrané uzly na mapě. Chcete-li změnit toto chování můžete zobrazit nebo skrýt souhrnná propojení mezi skupinami, klikněte na tlačítko **rozložení** na kód mapování nástrojů a vyberte **Upřesnit**, pak **zobrazit všechny odkazy napříč skupinami** nebo **Skrýt všechny odkazy napříč skupinami**. Zobrazit [skrýt nebo zobrazit uzlům a propojením](#HidingShowing) další podrobnosti.  
   
 |**Komu**|**Proveďte tyto kroky**|  
 |------------|-----------------------------|  
@@ -118,7 +118,7 @@ Změna uspořádání položek na mapách kódu, aby se daly snadněji číst a 
  Skrytí uzlů umožňuje vynechat tyto uzly při použití algoritmů rozložení. Ve výchozím nastavení jsou propojení mezi skupinami skryta. Propojení mezi skupinami jsou jednotlivá propojení, která spojují uzly mezi skupinami. Pokud jsou skupiny sbaleny, mapy agreguje všechny odkazy napříč skupinami do jediného propojení mezi skupinami. Pokud skupinu rozbalíte a vyberete v ní uzly, zobrazí se propojení mezi skupinami, která znázorňují závislosti v této skupině.  
   
 > [!CAUTION]
->  Než budete sdílet mapy, který byl vytvořen v sadě Visual Studio Enterprise s uživateli používajícími systém Visual Studio Professional, ujistěte se, že chcete zobrazit všechny uzly nebo propojení mezi skupinami, které chcete, aby viděli i ostatní. V opačném případě uživatelé nebudou moci tyto položky zobrazit.  
+> Než budete sdílet mapy, který byl vytvořen v sadě Visual Studio Enterprise s uživateli používajícími systém Visual Studio Professional, ujistěte se, že chcete zobrazit všechny uzly nebo propojení mezi skupinami, které chcete, aby viděli i ostatní. V opačném případě uživatelé nebudou moci tyto položky zobrazit.  
   
 ### <a name="to-hide-or-show-nodes"></a>Skrytí nebo zobrazení uzlů  
   
@@ -153,7 +153,7 @@ Změna uspořádání položek na mapách kódu, aby se daly snadněji číst a 
  Pokud chcete procházet hierarchii nebo pro zjednodušení mapy, můžete zobrazit více nebo méně položek na mapě. Můžete také přejmenovat položky a přidání komentářů do položky.  
   
 > [!CAUTION]
->  Než budete sdílet mapy, která byla vytvořena pomocí sady Visual Studio Enterprise s těmi, kteří používají Visual Professional, ujistěte se, že všechny prvky kódu, který chcete, aby viděli i ostatní jsou viditelné na mapě. V opačném případě nebudou tito uživatelé se nepovedlo načíst prvky odstraněné kódu.  
+> Než budete sdílet mapy, která byla vytvořena pomocí sady Visual Studio Enterprise s těmi, kteří používají Visual Professional, ujistěte se, že všechny prvky kódu, který chcete, aby viděli i ostatní jsou viditelné na mapě. V opačném případě nebudou tito uživatelé se nepovedlo načíst prvky odstraněné kódu.  
   
 ### <a name="add-a-node-for-a-code-element"></a>Přidat uzel pro prvek kódu  
   
@@ -267,7 +267,7 @@ Změna uspořádání položek na mapách kódu, aby se daly snadněji číst a 
 3. Pokud seznam neobsahuje kategorii ani vlastnost, zvolte **+** v **legendy** pole a pak zvolte **vlastnost uzlu**, **kategorie uzlu** , **Vlastnost propojení**, nebo **propojit kategorie**. Zvolte vlastnost nebo kategorie. Kategorie nebo vlastnost se teď zobrazí v **legendy** pole.  
   
     > [!NOTE]
-    >  Chcete-li vytvořit a přiřadit kategorie nebo vlastnosti pro prvek kódu, můžete upravit na mapě souboru .dgml. Zobrazit [mapy kódu přizpůsobit úpravou souborů DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).  
+    > Chcete-li vytvořit a přiřadit kategorie nebo vlastnosti pro prvek kódu, můžete upravit na mapě souboru .dgml. Zobrazit [mapy kódu přizpůsobit úpravou souborů DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).  
   
 4. V **legendy** pole, klikněte na ikonu vedle kategorie nebo vlastnosti, které jste přidali nebo chcete změnit.  
   
@@ -290,7 +290,7 @@ Změna uspořádání položek na mapách kódu, aby se daly snadněji číst a 
     |Určité barvy nebo ikony|Otevřete seznam hodnot kategorií nebo vlastností. Výběr barvy nebo ikony.|  
   
     > [!NOTE]
-    >  Změna uspořádání, odstranit nebo dočasně zakázat styly **legendy** pole. Zobrazit [úprava pole Legenda](#ModifyLegend).  
+    > Změna uspořádání, odstranit nebo dočasně zakázat styly **legendy** pole. Zobrazit [úprava pole Legenda](#ModifyLegend).  
   
 ## <a name="ModifyLegend"></a> Úprava pole Legenda  
  Změna uspořádání, odstranit nebo dočasně zakázat styly **legendy** pole:  

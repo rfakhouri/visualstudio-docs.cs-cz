@@ -16,12 +16,12 @@ caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e44e8166fb4f03f28d96203dc7efc09d3913224c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: daa4eba0949262e0bfbfa67c9b0ab3ee814558e4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60086192"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440835"
 ---
 # <a name="create-custom-views-of-native-objects"></a>Vytváření vlastních zobrazení nativních objektů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Rozhraní Visual Studio Natvis umožňuje přizpůsobit způsob, jakým Visual S
  Nahrazuje Natvis **autoexp.dat –** soubor, který se používal v dřívějších verzích sady Visual Studio a nabízí syntaxi XML, lepší diagnostiku, správu verzí a podporu více souborů.  
 
 > [!NOTE]
->  Rozhraní Natvis nelze použít pro vizualizace při:  
+> Rozhraní Natvis nelze použít pro vizualizace při:  
 > 
 > - Ladění projektu C++ Windows klasické pracovní plochy s nastaveným typem ladicí program **smíšené**.  
 >   - Provádíte ladění ve smíšeném režimu v aplikaci klasické pracovní plochy Windows v spravovaný režim kompatibility (**nástroje / Možnosti / ladění / obecné / použít spravovaný režim kompatibility**).  
@@ -304,7 +304,7 @@ Rozhraní Visual Studio Natvis umožňuje přizpůsobit způsob, jakým Visual S
  V `DisplayString` výrazu, `x` a `y`, které jsou členy objektu `CPoint`, jsou uvnitř složených závorek a jejich hodnoty jsou vyhodnocovány. Výraz také ukazuje, jak může uniknout složenou závorku pomocí dvojitých složených závorek ( `{{` nebo `}}` ).  
 
 > [!NOTE]
->  `DisplayString` Element je jediným prvkem, který přijímá libovolné řetězce a syntaxi složených závorek. Všechny ostatní prvky vizualizace přijímají pouze výrazy, které jsou vyhodnocovány pomocí ladicího programu.  
+> `DisplayString` Element je jediným prvkem, který přijímá libovolné řetězce a syntaxi složených závorek. Všechny ostatní prvky vizualizace přijímají pouze výrazy, které jsou vyhodnocovány pomocí ladicího programu.  
 
 ### <a name="BKMK_StringView"></a> StringView  
  `StringView` Element definuje výraz, jehož hodnota bude zaslána zabudovanému vizualizátoru textu. Předpokládejme například, že máme následující vizualizaci `ATL::CStringT` typu:  
@@ -336,7 +336,7 @@ Rozhraní Visual Studio Natvis umožňuje přizpůsobit způsob, jakým Visual S
  ![CStringT data with StringView visualizer](../debugger/media/dbg-natvis-stringview-cstringt.png "DBG_NATVIS_StringView_CStringT")  
 
 > [!NOTE]
->  Všimněte si, že výraz `{m_pszData,su}` obsahuje specifikátor formátu jazyka C++ `su` k zobrazení hodnoty jako řetězce Unicode. Zobrazit [specifikátory formátu v jazyce C++](../debugger/format-specifiers-in-cpp.md) Další informace.  
+> Všimněte si, že výraz `{m_pszData,su}` obsahuje specifikátor formátu jazyka C++ `su` k zobrazení hodnoty jako řetězce Unicode. Zobrazit [specifikátory formátu v jazyce C++](../debugger/format-specifiers-in-cpp.md) Další informace.  
 
 ### <a name="BKMK_Expand"></a> Rozbalte položku  
  `Expand` Uzel slouží k úpravě dceřiných vizualizovaných typů když je uživatel rozbalí v oknech proměnných. Přijímá seznam podřízených uzlů, které určují podřízené prvky.  
@@ -368,7 +368,7 @@ Rozhraní Visual Studio Natvis umožňuje přizpůsobit způsob, jakým Visual S
  Výrazy uvedené v `Width` a `Height` prvky jsou vyhodnoceny a zobrazena ve sloupci hodnota. `[Raw View]` Uzlu je automaticky vytvořen aplikací ladicího programu pokaždé, když se používá vlastní rozšíření. Je rozbalen na snímku obrazovky výše ukazují, jak se liší od jeho vizualizaci nezpracovaným zobrazením objektu. Výchozí rozšíření sady Visual Studio vytvoří podstrom pro základní třídu a jsou uvedeny všechny datové členy základní třídy jako podřízené objekty.  
 
 > [!NOTE]
->  Pokud výraz prvku položky odkazuje na komplexní typ, `Item` samotný uzel je rozšiřitelné.  
+> Pokud výraz prvku položky odkazuje na komplexní typ, `Item` samotný uzel je rozšiřitelné.  
 
 #### <a name="BKMK_ArrayItems_expansion"></a> Rozšíření ArrayItems  
  Použití `ArrayItems` uzel ladicí program sady Visual Studio při interpretaci typu jako pole a zobrazení jeho jednotlivých prvků. Vizualizace pro `std::vector` je typickým příkladem:  

@@ -14,12 +14,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 52a2d7c239c9a4f3508f4bdb2077928e44ff802a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 56e39a8ed17cfa99bd8141e2176d42dd7d3d6274
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60107037"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424854"
 ---
 # <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>Návod: Vytvoření datové služby WCF s WPF a Entity Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -89,12 +89,12 @@ Tento návod ukazuje, jak vytvořit jednoduchou [!INCLUDE[ss_data_service](../in
 6. Pokud databáze vyžaduje heslo, zvolte **Ano, zahrnout citlivá data v připojovacím řetězci** přepínač a klikněte na tlačítko **Další** tlačítko.  
   
    > [!NOTE]
-   >  Pokud se zobrazí dialogové okno, vyberte **Ano** k uložení souboru do projektu.  
+   > Pokud se zobrazí dialogové okno, vyberte **Ano** k uložení souboru do projektu.  
   
 7. Na **zvolíte verzi** zvolte **Entity Framework 5.0** přepínač a klikněte na tlačítko **Další** tlačítko.  
   
    > [!NOTE]
-   >  Pokud chcete používat nejnovější verzi Entity Framework 6 služby WCF, budete muset nainstalovat balíček zprostředkovatele NuGet pro rozhraní WCF Data Services Entity Framework. Zobrazit [pomocí WCF Data Services – 5.6.0 s Entity Framework 6 +](http://blogs.msdn.com/b/odatateam/archive/2013/10/02/using-wcf-data-services-5-6-0-with-entity-framework-6.aspx).  
+   > Pokud chcete používat nejnovější verzi Entity Framework 6 služby WCF, budete muset nainstalovat balíček zprostředkovatele NuGet pro rozhraní WCF Data Services Entity Framework. Zobrazit [pomocí WCF Data Services – 5.6.0 s Entity Framework 6 +](http://blogs.msdn.com/b/odatateam/archive/2013/10/02/using-wcf-data-services-5-6-0-with-entity-framework-6.aspx).  
   
 8. Na **zvolte vaše databázové objekty** stránce, rozbalte **tabulky** uzlu, vyberte **zákazníkům** zaškrtněte políčko a klikněte na tlačítko **Dokončit** tlačítko.  
   
@@ -129,7 +129,7 @@ Tento návod ukazuje, jak vytvořit jednoduchou [!INCLUDE[ss_data_service](../in
     Zobrazí se reprezentace dat z tabulky Customers v jazyce XML.  
   
    > [!NOTE]
-   >  V některých případech bude aplikace Internet Explorer chybně interpretovat data jako informační kanál RSS. Zkontrolujte, zda je zakázána možnost zobrazení informačních kanálů RSS. Další informace najdete v tématu [řešení potíží s odkazy na služby](../data-tools/troubleshooting-service-references.md).  
+   > V některých případech bude aplikace Internet Explorer chybně interpretovat data jako informační kanál RSS. Zkontrolujte, zda je zakázána možnost zobrazení informačních kanálů RSS. Další informace najdete v tématu [řešení potíží s odkazy na služby](../data-tools/troubleshooting-service-references.md).  
   
 8. Zavřete okno prohlížeče.  
   

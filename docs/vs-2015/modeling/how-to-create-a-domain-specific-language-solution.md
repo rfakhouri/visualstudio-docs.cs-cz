@@ -15,12 +15,12 @@ caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 57c843b7c556ac409a63d5e6c01e2699da59958b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e9afaa8fc74ef893b3b916c66907ae5d1a3af55f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099569"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441082"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>Postupy: Vytváření řešení jazyka specifického pro doménu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ Vytvoření jazyka specifického pro doménu (DSL) pomocí specializovaný [!INC
        **Průvodce návrháře jazyka specifického pro doménu** se zobrazí.  
   
       > [!NOTE]
-      >  Název, který zadáte nejlépe, by měl být platný Visual C# identifikátor, protože může být použit pro generování kódu.  
+      > Název, který zadáte nejlépe, by měl být platný Visual C# identifikátor, protože může být použit pro generování kódu.  
   
       ![Vytvoření dialogového okna DSL](../modeling/media/create-dsldialog.png "Create_DSLDialog")  
   
@@ -76,7 +76,7 @@ Vytvoření jazyka specifického pro doménu (DSL) pomocí specializovaný [!INC
     Průvodce vytvoří řešení, která má dva projekty, které jsou pojmenovány **Dsl** a **DslPackage**.  
   
    > [!NOTE]
-   >  Pokud se zobrazí zpráva, která vás upozorní, není ke spuštění textové šablony z nedůvěryhodných zdrojů, klikněte na tlačítko **OK**. Můžete nastavit tato zpráva se zobrazí znovu.  
+   > Pokud se zobrazí zpráva, která vás upozorní, není ke spuštění textové šablony z nedůvěryhodných zdrojů, klikněte na tlačítko **OK**. Můžete nastavit tato zpráva se zobrazí znovu.  
   
 ## <a name="settings"></a> Na stránkách průvodce návrhářem DSL  
  Můžete nechat několik polí nezmění z výchozí hodnoty. Nicméně Ujistěte se, že pole přípona souboru je nastavit.  

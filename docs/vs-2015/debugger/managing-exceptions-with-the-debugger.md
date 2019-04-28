@@ -33,12 +33,12 @@ caps.latest.revision: 40
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2a8bc2e1f4c78e32db6fa5e09ec50bdd182f4fa6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6e50f19c4889e5f15c7dc3d458d1347912ecbc1d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040961"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439180"
 ---
 # <a name="managing-exceptions-with-the-debugger"></a>Správa výjimek pomocí ladicího programu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,10 +54,10 @@ Výjimkou je údaj o chybovém stavu, ke které dojde při spuštění programu.
 - Pokud jste nastavili [pouze můj kód](../debugger/just-my-code.md), a ladicí program na přerušení na jakékoli výjimce, která není ošetřena v uživatelském kódu.  
   
 > [!NOTE]
->  Technologie ASP.NET obsahuje obslužnou rutinu výjimky nejvyšší úrovně, která se zobrazí chybové stránky v prohlížeči. To není přerušit provádění, není-li **pouze můj kód** zapnutý. Příklad najdete v tématu [nastavení ladicího programu, pokračujte na uživatelem neošetřené výjimky](../debugger/managing-exceptions-with-the-debugger.md#BKMK_UserUnhandled) níže.  
+> Technologie ASP.NET obsahuje obslužnou rutinu výjimky nejvyšší úrovně, která se zobrazí chybové stránky v prohlížeči. To není přerušit provádění, není-li **pouze můj kód** zapnutý. Příklad najdete v tématu [nastavení ladicího programu, pokračujte na uživatelem neošetřené výjimky](../debugger/managing-exceptions-with-the-debugger.md#BKMK_UserUnhandled) níže.  
   
 > [!NOTE]
->  V aplikaci Visual Basic ladicí program spravuje všechny chyby jako výjimky, i v případě, že se používá ve stylu chyba obslužné rutiny chyb.  
+> V aplikaci Visual Basic ladicí program spravuje všechny chyby jako výjimky, i v případě, že se používá ve stylu chyba obslužné rutiny chyb.  
   
 ## <a name="managing-exceptions-with-the-exception-settings-window"></a>Správa výjimek pomocí okna Nastavení výjimek  
  Můžete použít **nastavení výjimek** okně zadejte výjimky (nebo sadu výjimek) způsobí přerušení ladicího programu a kdy se má přerušit. Můžete přidat nebo odstranit výjimky nebo výjimky na přerušení na zadat. Při řešení otevřené kliknutím otevřete toto okno **ladění / Windows / nastavení výjimek**.  
@@ -162,7 +162,7 @@ Výjimkou je údaj o chybovém stavu, ke které dojde při spuštění programu.
  Pokud chcete přidat výjimku výjimky přístupu k paměti GPU, výjimky modulu Runtime jazyka JavaScript nebo kategorií výjimky Win32, budete muset zahrnout kód chyby, stejně jako popis.  
   
 > [!TIP]
->  Zkontrolujte pravopis! **Nastavení výjimek** okna nebude kontrolovat přítomnost přidané výjimky. Pokud zadáte **Sytem.UriTemplateMatchException**, zobrazí se položka pro tuto výjimku (a ne pro **System.UriTemplateMatchException**).  
+> Zkontrolujte pravopis! **Nastavení výjimek** okna nebude kontrolovat přítomnost přidané výjimky. Pokud zadáte **Sytem.UriTemplateMatchException**, zobrazí se položka pro tuto výjimku (a ne pro **System.UriTemplateMatchException**).  
   
  Nastavení výjimek jsou zachované v soubor .suo řešení, takže se vztahují na konkrétní řešení. Nastavení konkrétní výjimky nelze opětovně použít napříč řešeními. V tomto okamžiku jsou trvalé pouze přidaných výjimek; odstraněné výjimky nejsou. Jinými slovy můžete přidat výjimku, zavřete a znovu otevřete řešení a výjimka bude stále existovat. Ale pokud odstraníte výjimku a zavřete a znova otevřete řešení, se znovu zobrazí výjimka.  
   

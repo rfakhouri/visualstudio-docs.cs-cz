@@ -11,12 +11,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 943493273808afdb2dfb099ff1f44900028e4dd6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 36b821219b02fa77171d89214d8cf4813ce92303
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54803550"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433392"
 ---
 # <a name="choosing-a-domain-specific-language-solution-template"></a>Výběr šablony řešení jazyka specifického pro doménu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ K vytváření řešení jazyka specifického pro doménu, vyberte jednu z šabl
  Následující šablony řešení jsou k dispozici v Průvodci návrháře jazyka specifického pro doménu.  
   
 > [!NOTE]
->  Účel šablony je poskytnout výchozí DSL. Šablony s názvem třídy a komponenty diagramy nejsou úplné diagramy UML. Pokud chcete vytvořit UML model, vezměte v úvahu nástroje, které poskytují sadu diagramy, které jsou integrované jednoho modelu pomocí modelování UML. Jsou rozšiřitelný a je možné integrovat se službou vašeho DSL pomocí ModelBus. Další informace najdete v tématu [vytváření modelů pro aplikaci](../modeling/create-models-for-your-app.md).  
+> Účel šablony je poskytnout výchozí DSL. Šablony s názvem třídy a komponenty diagramy nejsou úplné diagramy UML. Pokud chcete vytvořit UML model, vezměte v úvahu nástroje, které poskytují sadu diagramy, které jsou integrované jednoho modelu pomocí modelování UML. Jsou rozšiřitelný a je možné integrovat se službou vašeho DSL pomocí ModelBus. Další informace najdete v tématu [vytváření modelů pro aplikaci](../modeling/create-models-for-your-app.md).  
   
 |Šablona|Funkce|Popis|  
 |--------------|--------------|-----------------|  

@@ -9,12 +9,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ec546997d5c6ff75a3ccba1e60e9fe7a4b5b7c74
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8085864ebdb73e8233322a2f91a044dec95dc126
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60112595"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431054"
 ---
 # <a name="how-to-execute-an-xslt-transformation-from-the-xml-editor"></a>Postupy: Provedení transformace XSLT z editoru XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ XML Editor lze přidružit k dokumentu XML, šablony stylů XSLT provedení tran
 3. Klikněte na tlačítko **ShowXSL výstup** tlačítko **editoru XML** nástrojů.  
   
     > [!NOTE]
-    >  Pokud není k dispozici žádné šablony stylů přidružené k dokumentu XML, dialogové okno zobrazí výzvu k zadání šablony stylů k použití.  
+    > Pokud není k dispozici žádné šablony stylů přidružené k dokumentu XML, dialogové okno zobrazí výzvu k zadání šablony stylů k použití.  
     >   
     >  Výsledný výstup z transformace XSLT se zobrazí v novém okně dokumentu.  
   
@@ -51,7 +51,7 @@ XML Editor lze přidružit k dokumentu XML, šablony stylů XSLT provedení tran
 2. Zadejte v dokumentu XML **vstup** pole dokumentu **vlastnosti** okna.  
   
     > [!NOTE]
-    >  Dokument XML je vstupní dokument použitý pro transformaci. Pokud dokument není zadán při spuštění transformace XSLT **otevřít soubor** zobrazí se dialogové okno a zadáte dokumentu v daném čase.  
+    > Dokument XML je vstupní dokument použitý pro transformaci. Pokud dokument není zadán při spuštění transformace XSLT **otevřít soubor** zobrazí se dialogové okno a zadáte dokumentu v daném čase.  
   
 3. Klikněte na tlačítko **ShowXSLT výstup** tlačítko **editoru XML** nástrojů.  
   

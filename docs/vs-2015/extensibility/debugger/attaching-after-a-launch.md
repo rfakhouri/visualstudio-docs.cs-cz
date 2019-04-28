@@ -10,12 +10,12 @@ ms.assetid: 5a3600a1-dc20-4e55-b2a4-809736a6ae65
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 71b26fc2d26e180af25919dde5d3c4ee1bc1f891
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 693cf6d746f51862415f2f30e46d48a998047f14
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60113115"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437438"
 ---
 # <a name="attaching-after-a-launch"></a>Připojení po spuštění
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Poté, co byl spuštěn program, relace ladění je připraven k připojit ladic
 - Pokud to dává větší smysl pro usnadnění komunikace mezi DE a program, běhové prostředí společně vytvoří DE. Kvůli tomu SDM v jeden adresní prostor a DE, běhové prostředí a program v jiném společně. Toto je typická Zavedenými, které je implementováno s interpretu pro spuštění skriptovací jazyky.  
   
     > [!NOTE]
-    >  Jak DE připojí k programu je závislý na implementaci. Komunikace mezi DE a program je také závislý na implementaci.  
+    > Jak DE připojí k programu je závislý na implementaci. Komunikace mezi DE a program je také závislý na implementaci.  
   
 ## <a name="implementation"></a>Implementace  
  Prostřednictvím kódu programu, když správce ladění relace (SDM) nejprve obdrží [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) objektu, který představuje program spustit, volá [připojit](../../extensibility/debugger/reference/idebugprogram2-attach.md) metodu předáním [ IDebugEventCallback2](../../extensibility/debugger/reference/idebugeventcallback2.md) objektu, který je pozdější sloužící k předávání výjimky ladění zpět do SDM. `IDebugProgram2::Attach` Pak zavolá metodu [OnAttach](../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) metody. Další informace o způsobu SDM přijímá `IDebugProgram2` rozhraní najdete v tématu [upozornění portu](../../extensibility/debugger/notifying-the-port.md).  

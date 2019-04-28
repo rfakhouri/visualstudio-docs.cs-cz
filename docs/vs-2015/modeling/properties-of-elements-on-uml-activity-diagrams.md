@@ -14,12 +14,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b8106fde63769d40f220165a072fff137da353f7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: a442d3a116fa527271cad5acd2ffc7f7fec5d076
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54760642"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444441"
 ---
 # <a name="properties-of-elements-on-uml-activity-diagrams"></a>Vlastnosti elementů v diagramech činnosti UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "54760642"
 Každý prvek v diagramu na diagram činností UML, má vlastnosti. Pokud chcete zobrazit vlastnosti elementu, klikněte pravým tlačítkem na elementu v diagramu nebo v **Průzkumníku modelů UML** a potom klikněte na tlačítko **vlastnosti**. Vlastnosti se zobrazí v **vlastnosti** okna.  
   
 > [!NOTE]
->  Toto téma se věnuje vlastnosti elementů v diagramech činnosti UML. Informace o tom, jak přečíst diagramy činnosti UML, naleznete v tématu [diagramy činnosti UML: Referenční dokumentace](../modeling/uml-activity-diagrams-reference.md). Další informace o tom, jak nakreslit diagramy činnosti UML, naleznete v tématu [diagramy činnosti UML: Pokyny pro](../modeling/uml-activity-diagrams-guidelines.md).  
+> Toto téma se věnuje vlastnosti elementů v diagramech činnosti UML. Informace o tom, jak přečíst diagramy činnosti UML, naleznete v tématu [diagramy činnosti UML: Referenční dokumentace](../modeling/uml-activity-diagrams-reference.md). Další informace o tom, jak nakreslit diagramy činnosti UML, naleznete v tématu [diagramy činnosti UML: Pokyny pro](../modeling/uml-activity-diagrams-guidelines.md).  
   
 ## <a name="properties-of-elements"></a>Vlastnosti elementů  
   

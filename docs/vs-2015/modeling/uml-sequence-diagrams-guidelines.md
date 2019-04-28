@@ -23,12 +23,12 @@ caps.latest.revision: 55
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a6f112224bdb2f94bdb6c4242a5ea0d273db23ec
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7ebb3108ce7a1ee43d1355494a82cc4aee37dbc7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039707"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445668"
 ---
 # <a name="uml-sequence-diagrams-guidelines"></a>Sekvenční diagramy UML: Pokyny
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -83,7 +83,7 @@ V sadě Visual Studio, můžete nakreslit *sekvenční diagram* k zobrazení int
  Úplný seznam elementů v sekvenčních diagramech, naleznete v tématu [UML Sequence Diagrams: Referenční dokumentace](../modeling/uml-sequence-diagrams-reference.md).  
   
 > [!NOTE]
->  Podrobné pokyny k vytvoření všech diagramů modelování jsou popsány v [modelů a diagramů UML upravit](../modeling/edit-uml-models-and-diagrams.md).  
+> Podrobné pokyny k vytvoření všech diagramů modelování jsou popsány v [modelů a diagramů UML upravit](../modeling/edit-uml-models-and-diagrams.md).  
   
 #### <a name="to-create-a-sequence-diagram"></a>Chcete-li vytvořit sekvenční diagram  
   
@@ -104,7 +104,7 @@ V sadě Visual Studio, můžete nakreslit *sekvenční diagram* k zobrazení int
 1. Přetáhněte **životnosti** (1) z **nástrojů** do diagramu k reprezentaci instance tříd, komponenty, objekty actor nebo zařízení.  
   
     > [!NOTE]
-    >  Můžete také vytvořit životnosti přetažením existující třídy, rozhraní, objektu actor nebo komponenty z **Průzkumníku modelů UML** do diagramu. Tím se vytvoří životnost představující instanci zvoleného typu.  
+    > Můžete také vytvořit životnosti přetažením existující třídy, rozhraní, objektu actor nebo komponenty z **Průzkumníku modelů UML** do diagramu. Tím se vytvoří životnost představující instanci zvoleného typu.  
   
 2. Nakreslete zprávy zobrazující, jak spolupracovat životnosti k dosažení určitého cíle.  
   
@@ -115,7 +115,7 @@ V sadě Visual Studio, můžete nakreslit *sekvenční diagram* k zobrazení int
 3. Chcete-li zobrazit zprávu, která pochází z neznámého zdroje událostí (9) nebo vysílá Neznámý příjemcům (10), nakreslete asynchronních zpráv z nebo na prázdné místo v diagramu. Tyto zprávy se nazývají *nalezenými zprávami* (9) a *ztracené zprávy* (10).  
   
     > [!NOTE]
-    >  Chcete-li přesunout skupinu životností se ztracenými či nalezenými zprávami, podle následujícího postupu vyberte životnosti předtím, než je přesunete: Nakreslit obdélník kolem těchto životnosti, nebo když stisknete a podržíte **CTRL** klíče při výběru každé životnosti. Pokud používáte **Vybrat vše** nebo **CTRL**+**A** vyberete všechny životnosti a následně je přesunete, ztracené nebo nalezené zprávy připojené k těmto životnostem nepřesune. Pokud k této situaci dojde, můžete tyto zprávy přesunout samostatně.  
+    > Chcete-li přesunout skupinu životností se ztracenými či nalezenými zprávami, podle následujícího postupu vyberte životnosti předtím, než je přesunete: Nakreslit obdélník kolem těchto životnosti, nebo když stisknete a podržíte **CTRL** klíče při výběru každé životnosti. Pokud používáte **Vybrat vše** nebo **CTRL**+**A** vyberete všechny životnosti a následně je přesunete, ztracené nebo nalezené zprávy připojené k těmto životnostem nepřesune. Pokud k této situaci dojde, můžete tyto zprávy přesunout samostatně.  
   
 4. Nakreslete sekvenční diagramy pro každou hlavní zprávu do stejné součásti nebo systému.  
   
@@ -136,7 +136,7 @@ V sadě Visual Studio, můžete nakreslit *sekvenční diagram* k zobrazení int
      Kopie zprávy a všechny její podpůrné zprávy se přidá na konec provádění výskyt nebo na konci životnosti.  
   
     > [!NOTE]
-    >  Vložená zpráva se zobrazí vždy na konci výskyt provádění nebo životnost. Po vložení ho ji můžete přetáhnout až starší pozice.  
+    > Vložená zpráva se zobrazí vždy na konci výskyt provádění nebo životnost. Po vložení ho ji můžete přetáhnout až starší pozice.  
   
 #### <a name="to-display-and-edit-the-signature-text-for-a-message"></a>Můžete zobrazit a upravit text podpis zprávy  
   
@@ -161,7 +161,7 @@ V sadě Visual Studio, můžete nakreslit *sekvenční diagram* k zobrazení int
 1. V **Průzkumníku modelů UML**, najít interakce zobrazující sekvenční diagram.  
   
     > [!NOTE]
-    >  Interakce se nezobrazí v **Průzkumníku modelů UML** dokud nepřidáte první životnosti v sekvenčním diagramu.  
+    > Interakce se nezobrazí v **Průzkumníku modelů UML** dokud nepřidáte první životnosti v sekvenčním diagramu.  
   
 2. Přetáhněte interakci do balíčku.  
   
@@ -193,7 +193,7 @@ V sadě Visual Studio, můžete nakreslit *sekvenční diagram* k zobrazení int
  Pomocí **odkazy komentářů**, můžete propojit s komentáři životnosti, spuštění, interakcí a fragmenty.  
   
 > [!CAUTION]
->  Pokud chcete připojit komentář na konkrétní místo v pořadí, propojte ho ke spuštění výskyt, použití interakcí, nebo fragment. Nepropojovat ho s životnost, protože v takovém případě ji není zůstanou připojené správné okamžiku v sekvenci.  
+> Pokud chcete připojit komentář na konkrétní místo v pořadí, propojte ho ke spuštění výskyt, použití interakcí, nebo fragment. Nepropojovat ho s životnost, protože v takovém případě ji není zůstanou připojené správné okamžiku v sekvenci.  
   
  Použijte komentář:  
   
@@ -268,7 +268,7 @@ V sadě Visual Studio, můžete nakreslit *sekvenční diagram* k zobrazení int
  Můžete vytvořit nové životnosti ze třídy, které jsou již definovány, například v diagramu tříd.  
   
 > [!NOTE]
->  Ujistěte se, že máte existující sekvenční diagram před provedením této úlohy.  
+> Ujistěte se, že máte existující sekvenční diagram před provedením této úlohy.  
   
 ##### <a name="to-create-a-lifeline-from-an-existing-type"></a>Vytvořte životnost z existujícího typu  
   
@@ -283,7 +283,7 @@ V sadě Visual Studio, můžete nakreslit *sekvenční diagram* k zobrazení int
      Zobrazí se nové životnosti s názvem instance, jehož typ je typ, kterou jste přetáhli.  
   
   > [!NOTE]
-  >  Tato akce tolikrát, kolikrát chcete, můžete opakovat. Tím se vytvoří životnosti s názvy jiné instance.  
+  > Tato akce tolikrát, kolikrát chcete, můžete opakovat. Tím se vytvoří životnosti s názvy jiné instance.  
   
 ##### <a name="to-change-the-type-of-a-lifeline"></a>Chcete-li změnit typ životnosti  
   
@@ -313,7 +313,7 @@ V sadě Visual Studio, můžete nakreslit *sekvenční diagram* k zobrazení int
          Pokud zprávy zahrnuje parametry ve formě "(parameter: type)", zobrazí se v seznamu parametrů novou operaci.  
   
         > [!NOTE]
-        >  Pokud chcete přidat nové zprávy v sekvenčním diagramu je nutné tento krok opakovat.  
+        > Pokud chcete přidat nové zprávy v sekvenčním diagramu je nutné tento krok opakovat.  
   
 3. Chcete-li zobrazit novou třídu nebo rozhraní podrobně, přidejte do diagramu tříd nebo komponenty.  
   
@@ -366,7 +366,7 @@ V sadě Visual Studio, můžete nakreslit *sekvenční diagram* k zobrazení int
      Nový sekvenční diagram se zobrazí ve vašem řešení. Obsahuje životnosti, které jste použili k vytvoření použitím interakce.  
   
     > [!NOTE]
-    >  Pouze životnosti, pro kterou jste použili k vytvoření použitím interakce budou zahrnuty. Nový diagram nebude obsahovat životnosti, které jste vytvořili po interakce použít, i v případě použití interakce je nyní zahrnuje.  
+    > Pouze životnosti, pro kterou jste použili k vytvoření použitím interakce budou zahrnuty. Nový diagram nebude obsahovat životnosti, které jste vytvořili po interakce použít, i v případě použití interakce je nyní zahrnuje.  
   
 #### <a name="to-create-a-reusable-sequence-from-existing-messages"></a>Vytvoření opakovaně použitelné pořadí z existujících zpráv  
   
@@ -407,14 +407,14 @@ V sadě Visual Studio, můžete nakreslit *sekvenční diagram* k zobrazení int
 3. Chcete-li přejmenovat skupinu, klikněte na název.  
   
     > [!NOTE]
-    >  Název skupiny budou ztraceny, když rozšiřujete skupině.  
+    > Název skupiny budou ztraceny, když rozšiřujete skupině.  
   
 #### <a name="to-expand-a-collapsed-group"></a>Chcete-li rozbalit sbalené skupiny  
   
 - Klikněte pravým tlačítkem na sbalený životnost a potom klikněte na tlačítko **Rozbalit**.  
   
     > [!NOTE]
-    >  Název skupiny se ztratí, společně s odkazy ze skupiny na komentáře nebo pracovní položky.  
+    > Název skupiny se ztratí, společně s odkazy ze skupiny na komentáře nebo pracovní položky.  
   
 ## <a name="Fragments"></a> Popis struktury řízení pomocí fragmentů  
  Kombinované fragmenty (13) můžete použít k definování smyčky, větve a souběžné zpracování v sekvenčním diagramu. Případně zvažte místo toho použití diagramu činnosti. Diagram činnosti není tak užitečné zobrazují zpráv mezi objekty actor, ale v některých případech je lepší zobrazují smyčky, větve a souběžnosti.  
@@ -426,7 +426,7 @@ V sadě Visual Studio, můžete nakreslit *sekvenční diagram* k zobrazení int
 1. Vyberte zprávu nebo s posloupností zpráv všechno začíná na stejném výskyt provádění nebo životnost.  
   
     > [!NOTE]
-    >  Pomocí šipek. zprávy, není výskyty spuštění, přejděte na zprávy.  
+    > Pomocí šipek. zprávy, není výskyty spuštění, přejděte na zprávy.  
   
 2. Klikněte pravým tlačítkem na zprávy, přejděte na **obklopit fragmentem**a potom klikněte na typ fragment, která požadujete.  
   

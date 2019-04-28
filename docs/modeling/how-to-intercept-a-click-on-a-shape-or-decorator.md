@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 531e723bbc7c1b288a73f1ea036cb24efcf8ce4a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2b4677413fd06176136935e583073f611d1a127a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056108"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445185"
 ---
 # <a name="how-to-intercept-a-click-on-a-shape-or-decorator"></a>Postupy: Zachycení kliknutí na obrazec nebo dekorátor
 Následující postupy ukazují, jak zachycení kliknutí na obrazec nebo ikonu dekoratér. Můžete zachytit klikne na tlačítko, dvakrát klikne, přetáhne, a dalších gesta a aby prvek reagovat.
@@ -34,7 +34,7 @@ public partial class MyShape // change
 ```
 
 > [!NOTE]
->  Nastavte `e.Handled` k `true`, pokud chcete události mají být předány obsahující tvar nebo diagram.
+> Nastavte `e.Handled` k `true`, pokud chcete události mají být předány obsahující tvar nebo diagram.
 
 ## <a name="to-intercept-clicks-on-decorators"></a>Aby se zachytily kliknutí na Dekorátorů
  Obrázek dekoratéry se přenášejí na instanci třídy ImageField, který má metodu OnDoubleClick. Pokud píšete podtřídy třídy ImageField je možné zachytit kliknutí. Pole se nastavují v metodě InitializeShapeFields. Proto je nutné změnit metody pro vytvoření instance vaší podtřídy místo regulární ImageField. Metoda InitializeShapeFields je vygenerovaný kód ve třídě tvaru. Třída obrazce můžete přepsat, pokud nastavíte jeho `Generates Double Derived` vlastnost, jak je popsáno v následujícím postupu.

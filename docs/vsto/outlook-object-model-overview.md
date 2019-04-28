@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e329631f0bdeb79a068e4a791158f94cec3904ee
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d2ad5a5424844896541e46d2afbc158320c7e5a3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061928"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442400"
 ---
 # <a name="outlook-object-model-overview"></a>Přehled modelu objektů aplikace Outlook
   Vývoj doplňků VSTO pro aplikaci Microsoft Office Outlook, můžete pracovat s objekty, které jsou k dispozici v modelu objektů aplikace Outlook. Model objektů aplikace Outlook obsahuje třídy a rozhraní, které představují položky v uživatelském rozhraní. Například <xref:Microsoft.Office.Interop.Outlook.Application> objekt představuje celé aplikace <xref:Microsoft.Office.Interop.Outlook.Folder> objekt představuje složku, která obsahuje e-mailové zprávy nebo jiné položky a <xref:Microsoft.Office.Interop.Outlook.MailItem> objekt představuje e-mailové zprávy.
@@ -65,7 +65,7 @@ ms.locfileid: "60061928"
   Chcete-li získat instanci <xref:Microsoft.Office.Interop.Outlook.Application> objektu, použití pole aplikace `ThisAddIn` třídu ve vašem projektu. Další informace najdete v tématu [doplňků Program VSTO](../vsto/programming-vsto-add-ins.md).
 
 > [!NOTE]
->  Pokud chcete vyhnout upozornění zabezpečení při použití vlastnosti a metody, které jsou blokovány ochrana modelů objektů aplikace Outlook, získání objektů aplikace Outlook z pole aplikace `ThisAddIn` třídy. Další informace najdete v tématu [specifické aspekty zabezpečení pro řešení Office](../vsto/specific-security-considerations-for-office-solutions.md).
+> Pokud chcete vyhnout upozornění zabezpečení při použití vlastnosti a metody, které jsou blokovány ochrana modelů objektů aplikace Outlook, získání objektů aplikace Outlook z pole aplikace `ThisAddIn` třídy. Další informace najdete v tématu [specifické aspekty zabezpečení pro řešení Office](../vsto/specific-security-considerations-for-office-solutions.md).
 
 ### <a name="explorer-object"></a>Průzkumník objektů
  <xref:Microsoft.Office.Interop.Outlook.Explorer> Objekt představuje okno, které se zobrazí obsah složky obsahující položky, jako jsou e-mailové zprávy, úlohy nebo události. <xref:Microsoft.Office.Interop.Outlook.Explorer> Objekt obsahuje metody a vlastnosti, které vám umožní upravit v okně a události, které jsou vyvolány při změně okna.

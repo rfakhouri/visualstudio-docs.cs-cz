@@ -9,12 +9,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1dc742b62fd30c4d5d3e012b2237edcfabd8ed0a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b1e806b5600c0199c1f131ebc3008cc9f8ee1c68
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110021"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441994"
 ---
 # <a name="step-1-create-a-windows-forms-application-project"></a>Krok 1: Vytvoření projektu formulářové aplikace Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ Dialogové okno Nový projekt
 4. Následující obrázek znázorňuje, co teď byste měli vidět v rozhraní sady Visual Studio.  
   
     > [!NOTE]
-    >  Rozložení okna nemusí vypadat přesně jako na tomto obrázku. Přesné rozložení okna závisí na verzi sady Visual Studio, programovací jazyk, který používáte a dalších faktorů. Nicméně byste měli ověřit, že zobrazí všechna tři okna.  
+    > Rozložení okna nemusí vypadat přesně jako na tomto obrázku. Přesné rozložení okna závisí na verzi sady Visual Studio, programovací jazyk, který používáte a dalších faktorů. Nicméně byste měli ověřit, že zobrazí všechna tři okna.  
   
      ![Okno integrovaného vývojového prostředí](../ide/media/express-ideoverview-visio.png "Express_IDEOverview_Visio")  
 Okno integrovaného vývojového prostředí  
@@ -57,7 +57,7 @@ Okno integrovaného vývojového prostředí
     - **Okno vlastností** v tomto okně můžete změnit vlastnosti položek, které vyberete v jiných oknech. Například pokud zvolíte Form1, můžete změnit jeho název nastavením **Text** vlastnost a můžete změnit barvu pozadí nastavením **Backcolor** vlastnost.  
   
     > [!NOTE]
-    >  Horní řádek v **Průzkumníka řešení** ukazuje **řešení "PictureViewer" (1 projekt)**, což znamená, že Visual Studio vytvořila řešení za vás. Řešení může obsahovat více než jeden projekt, ale prozatím budete pracovat s řešeními, která obsahují pouze jeden projekt.  
+    > Horní řádek v **Průzkumníka řešení** ukazuje **řešení "PictureViewer" (1 projekt)**, což znamená, že Visual Studio vytvořila řešení za vás. Řešení může obsahovat více než jeden projekt, ale prozatím budete pracovat s řešeními, která obsahují pouze jeden projekt.  
   
 6. V panelu nabídky zvolte **souboru**, **Uložit vše**.  
   

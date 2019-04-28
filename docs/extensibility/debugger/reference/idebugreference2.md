@@ -12,18 +12,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d34b7a915f2eb2bd1ddf9440c543d652de8eb892
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: b1096755c1647f976b76ab61be1c24b358d4363d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56713331"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412629"
 ---
 # <a name="idebugreference2"></a>IDebugReference2
 Toto rozhraní představuje odkaz na vlastnost rámce zásobníku nebo některé jiné vlastnosti.
 
 > [!NOTE]
->  `IDebugReference2` je vyhrazený pro budoucí použití a všechny jeho metody by měly vrátit `E_NOTIMPL`.
+> `IDebugReference2` je vyhrazený pro budoucí použití a všechny jeho metody by měly vrátit `E_NOTIMPL`.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -57,7 +57,7 @@ IDebugReference2 : IUnknown
 ## <a name="remarks"></a>Poznámky
 
 > [!NOTE]
->  Toto použití "vlastnosti" neměly by být zaměňovány s znamená členské proměnné třídy, i když `IDebugReference2` může představovat taková entita.
+> Toto použití "vlastnosti" neměly by být zaměňovány s znamená členské proměnné třídy, i když `IDebugReference2` může představovat taková entita.
 
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) představuje vlastnost, zatímco `IDebugReference2` představuje odkaz na vlastnost, obvykle odkaz na objekt v programu, který se právě ladí.
 

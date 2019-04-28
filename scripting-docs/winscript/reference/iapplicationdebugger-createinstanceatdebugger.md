@@ -17,18 +17,18 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 601f20c530ec5e275139d1e70d3df58fa88cd715
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: 95489464128e706e755432bee991c5481f5af8bc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58147628"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425831"
 ---
 # <a name="iapplicationdebuggercreateinstanceatdebugger"></a>IApplicationDebugger::CreateInstanceAtDebugger
 Povolí vytváření objektů v procesu ladicího programu pomocí kódu, který je mimo proces v ladicím programu.  
   
 > [!IMPORTANT]
->  Tato metoda by neměla být implementována, protože umožňuje nedůvěryhodný kód k vytvoření libovolného objektů ve vlákně důvěryhodné ladicího programu.  
+> Tato metoda by neměla být implementována, protože umožňuje nedůvěryhodný kód k vytvoření libovolného objektů ve vlákně důvěryhodné ladicího programu.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -61,7 +61,7 @@ HRESULT CreateInstanceAtDebugger(
 ## <a name="return-value"></a>Návratová hodnota  
  Metoda vrátí `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
   
-|Hodnota|Popis|  
+|Value|Popis|  
 |-----------|-----------------|  
 |`S_OK`|Metoda byla úspěšná.|  
   

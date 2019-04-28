@@ -17,12 +17,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 88644f3bf768f1b3467467a31edbd83e8e5f151c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: db9a3e08e14e7fadca6df9e32361c0b042f565e9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039874"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438337"
 ---
 # <a name="how-to-debug-with-code-center-premium-source"></a>Postupy: Ladění se zdrojem webu Code Center Premium
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,12 +56,12 @@ S [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] ladicího programu,
      `src=https://codepremium.msdn.microsoft.com/source/Visual%20Studio%202010/SP1/`  
   
    > [!NOTE]
-   >  Nezapomeňte zahrnout do adresy koncové lomítko<strong>/</strong> na konci cesty.  
+   > Nezapomeňte zahrnout do adresy koncové lomítko<strong>/</strong> na konci cesty.  
   
      Přesuňte tato místa k hornímu okraji seznam a ověřit, že tyto symboly jsou načten jako první.  
   
    > [!NOTE]
-   >  Tato umístění Code Center Premium musí být uvedena nejprve tak, aby byly první umístění, které jsou načteny. V sadě Visual Studio 2010, nelze přesunout všechny výše uvedené servery **Microsoft Symbol Servers** položku, která je důvod, proč je nutné zrušit zaškrtnutí políčka.  
+   > Tato umístění Code Center Premium musí být uvedena nejprve tak, aby byly první umístění, které jsou načteny. V sadě Visual Studio 2010, nelze přesunout všechny výše uvedené servery **Microsoft Symbol Servers** položku, která je důvod, proč je nutné zrušit zaškrtnutí políčka.  
    > 
    >  Chcete-li načíst symboly z symbolů Microsoft během relace ladění, postupujte takto:  
    > 
@@ -113,7 +113,7 @@ S [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] ladicího programu,
     `https://codepremium.msdn.microsoft.com/source/Visual%20Studio%202010/SP1/`  
   
    > [!NOTE]
-   >  Nezapomeňte zahrnout do adresy koncové lomítko<strong>/</strong> na konci cesty.  
+   > Nezapomeňte zahrnout do adresy koncové lomítko<strong>/</strong> na konci cesty.  
   
 4. Pro každý spravovaný projekt ve vašem řešení proveďte následující  
   

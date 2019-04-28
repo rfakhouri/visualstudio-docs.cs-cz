@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ebc8e008152936da9d1d8fee86e99e54d15ce09c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: f441cb5e6f8febf374a9ea024db9bec95960e11b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56639021"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444859"
 ---
 # <a name="da0039-very-high-rate-of-lock-contentions"></a>DA0039: Velmi vysoké míře sporů zámků platformy
 
@@ -31,7 +31,7 @@ ms.locfileid: "56639021"
 
  Při profilování pomocí vzorkování, paměti .NET nebo metodám sporu prostředků, musíte shromáždit alespoň 25 vzorky k aktivaci tohoto pravidla.
 
-## <a name="cause"></a>příčina
+## <a name="cause"></a>Příčina
  Systém údaje o výkonu, která se shromažďují se data profilace označuje, že došlo k příliš vysoké míře sporů zámků při spuštění aplikace. Vezměte v úvahu profilaci znovu pomocí metody profilace souběžného zpracování najít příčinu spory.
 
 ## <a name="rule-description"></a>Popis pravidla
@@ -46,7 +46,7 @@ ms.locfileid: "56639021"
  Toto pravidlo vyvolá při měření v průběhu spuštění profilování označuje, že je příliš vysoký počet zámků. Zámků zpoždění spuštění vlákna, která čekají na zámek. Dokonce i poměrně malý objem kolize zámků při testech jednotek nebo v zátěžových testech, které běží na hardwaru nižší by mělo být vypátráno.
 
 > [!NOTE]
->  Jestliže je míra sporů zámků platformy nahlášené v Profilování dat zásadní, ale ne příliš velké, [DA0038: Vysoká míra konfliktů zámků](../profiling/da0038-high-rate-of-lock-contentions.md) namísto toto upozornění se aktivuje informační zprávy.
+> Jestliže je míra sporů zámků platformy nahlášené v Profilování dat zásadní, ale ne příliš velké, [DA0038: Vysoká míra konfliktů zámků](../profiling/da0038-high-rate-of-lock-contentions.md) namísto toto upozornění se aktivuje informační zprávy.
 
 ## <a name="how-to-investigate-a-warning"></a>Zkoumání upozornění
  Dvakrát klikněte na zprávu, přejděte [značky](../profiling/marks-view.md) zobrazení dat profilování.  Najít **.NET CLR LocksAndThreads\Contention sazba za sekundu** sloupce. Zjistěte, jestli konkrétní fázích provádění programu kde je těžší než ostatní fáze kolize zámků.

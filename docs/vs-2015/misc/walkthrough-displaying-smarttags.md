@@ -9,12 +9,12 @@ helpviewer_keywords:
 ms.assetid: 10bb4f69-b259-41f0-b91a-69b04385d9a5
 caps.latest.revision: 31
 manager: jillfra
-ms.openlocfilehash: a14fcb8e81261962e8851347a54d7c8d52565d20
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 116f76324a2150413c0ae6d08bc99e114efcc50e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110437"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436516"
 ---
 # <a name="walkthrough-displaying-smarttags"></a>Návod: Zobrazení inteligentní značky
 Inteligentní značky jsou zastaralé a místo toho použití žárovky. Zobrazit [názorný postup: Zobrazování návrhů](../extensibility/walkthrough-displaying-light-bulb-suggestions.md).  
@@ -24,7 +24,7 @@ Inteligentní značky jsou zastaralé a místo toho použití žárovky. Zobrazi
  I když se inteligentní značky jsou součástí implementace technologie IntelliSense v editoru, inteligentní značky můžete implementovat podle vytváření podtříd <xref:Microsoft.VisualStudio.Language.Intellisense.SmartTag>a potom provádění <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601> rozhraní a <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider> rozhraní.  
   
 > [!NOTE]
->  Podobným způsobem je možné implementovat další druhy značky.  
+> Podobným způsobem je možné implementovat další druhy značky.  
   
  Následující návod ukazuje, jak vytvořit inteligentní značku, která se zobrazí na aktuální slovo a má dvě doporučené akce: **Převést na velká písmena** a **převést na malá písmena**.  
   
@@ -183,4 +183,4 @@ Inteligentní značky jsou zastaralé a místo toho použití žárovky. Zobrazi
 5. Když kliknete na tlačítko, mají být zobrazeny dva doporučené akce: **Převést na velká písmena** a **převést na malá písmena**. Pokud kliknete na první akci, veškerý text v aktuálního slova mají být převedeny na velká písmena. Pokud kliknete na druhou akci, veškerý text mají být převedeny na malá písmena.  
   
 ## <a name="see-also"></a>Viz také  
- [Návod: Propojení typu obsahu příponu názvu souboru](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+ [Návod: Propojení typu obsahu s příponou názvu souboru](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

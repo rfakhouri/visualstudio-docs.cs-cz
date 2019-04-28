@@ -11,12 +11,12 @@ ms.assetid: f4ad4dd3-b39e-42df-ad89-d403cdf24a2b
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 702cac3c224b958a4de37b03814ecea7390ae217
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 0b37d93adbd2accb7a12fb176ab15aafc6914190
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54781505"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441510"
 ---
 # <a name="configuration-options-overview"></a>Přehled možností konfigurace
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Projekty v [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] může podporovat ví
 |MyConfig|Není k dispozici|\<Nastavení MyConfig Win64 >|  
   
 > [!NOTE]
->  Nelze vytvořit konfigurace řešení "MyConfig", který vylučuje platformy "Win32", není-li projekt, který cílíte nepodporuje Win32.  
+> Nelze vytvořit konfigurace řešení "MyConfig", který vylučuje platformy "Win32", není-li projekt, který cílíte nepodporuje Win32.  
   
  Změna aktivní konfigurace řešení vybere sadu konfigurace projektu, které jsou vytvořené, spouštět, ladit nebo nasazení v tomto řešení. Například pokud změníte konfiguraci aktivního řešení od vydání verze pro ladění, všechny projekty v rámci tohoto řešení jsou automaticky vytvořené s konfigurací projektu uvedené v konfiguraci řešení ladění. Konfigurace projektu jsou obvykle také pojmenované ladění pouze tehdy, pokud uživatel má ručních změn v prostředí Configuration Manageru.  
   

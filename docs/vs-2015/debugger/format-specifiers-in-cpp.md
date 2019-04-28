@@ -28,12 +28,12 @@ caps.latest.revision: 45
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ba950d55dcb4a4a0e1a06b40b1ed00ee3f58e54e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9f620cbf5d522b99965268f35c00ff8e874f1542
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116209"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440079"
 ---
 # <a name="format-specifiers-in-c"></a>Specifikátory formátu v jazyce C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ Můžete změnit formát, ve kterém se zobrazí hodnota v **Watch** okna pomoc�
  Můžete také použít specifikátory formátu v **okamžité** okně **příkaz** okna a dokonce i ve zdrojových oknech. Pokud pozastavíte výraz v těchto oknech, výsledek se zobrazí v datovém tipu. Zobrazení datového tipu odráží specifikátor formátu.  
   
 > [!NOTE]
->  Visual Studio nativní ladicí program změní na novém ladicím modulu. Jako součást této změně přidání některých nových specifikátorů formátu a některých jejich starých verzí byly odebrány. Starší ladicí program je stále používán, když provedete spolupráce (smíšená nativní a spravovaná) ladění pomocí C++vyhodnocovací. Následující části v tomto tématu uvádí specifikátory formátu pro každý ladicí stroj.  
+> Visual Studio nativní ladicí program změní na novém ladicím modulu. Jako součást této změně přidání některých nových specifikátorů formátu a některých jejich starých verzí byly odebrány. Starší ladicí program je stále používán, když provedete spolupráce (smíšená nativní a spravovaná) ladění pomocí C++vyhodnocovací. Následující části v tomto tématu uvádí specifikátory formátu pro každý ladicí stroj.  
 > 
 > - [Specifikátory formátu](#BKMK_Visual_Studio_2012_format_specifiers) popisuje specifikátory formátu v novém ladicím modulu.  
 >   - [Specifikátory formátu pro interop ladění s C++vyhodnocovací](#BKMK_Format_specifiers_for_interop_debugging_and_C___edit_and_continue) popisuje specifikátory formátu staršího modulu pro ladění.  
@@ -92,7 +92,7 @@ int main() {
 |!|Formát RAW ignorující přizpůsobení zobrazení typu všech dat|\<přizpůsobit reprezentace >|4|  
   
 > [!NOTE]
->  Když **hv** je k dispozici specifikátor formátu, ladicí program se pokusí zjistit délku vyrovnávací paměti a zobrazit odpovídající počet prvků. Protože není vždy možné pro ladicí program najít přesnou vyrovnávací paměti velikost pole, měli byste používat specifikátor velikosti `(pBuffer,[bufferSize])` kdykoli je to možné. **Hv** specifikátor formátu je určené pro scénáře, kde velikost vyrovnávací paměti není snadno k dispozici  
+> Když **hv** je k dispozici specifikátor formátu, ladicí program se pokusí zjistit délku vyrovnávací paměti a zobrazit odpovídající počet prvků. Protože není vždy možné pro ladicí program najít přesnou vyrovnávací paměti velikost pole, měli byste používat specifikátor velikosti `(pBuffer,[bufferSize])` kdykoli je to možné. **Hv** specifikátor formátu je určené pro scénáře, kde velikost vyrovnávací paměti není snadno k dispozici  
   
 ### <a name="BKMK_Size_specifiers_for_pointers_as_arrays_in_Visual_Studio_2012"></a> Velikost specifikátoru pro ukazatele jako pole  
  Pokud máte ukazatel na objekt, který chcete zobrazit v poli, můžete použít k zadání počtu elementů pole celé číslo nebo výraz:  

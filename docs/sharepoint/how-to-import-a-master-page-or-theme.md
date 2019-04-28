@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1be553955abdc42c2a9b4d09ff857e9236b1a002
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6cac959fb4f9c52849e6e121943fd847deb923d0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60081903"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427404"
 ---
 # <a name="how-to-import-a-master-page-or-theme"></a>Postupy: Import stránky předlohy nebo motivu
   Můžete zadat stránky na webu služby SharePoint jednotný vzhled vytvořením a použitím stránky předlohy a motivů. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] neposkytuje šablon pro tyto elementy, ale můžete vytvořit v aplikaci SharePoint Designer a importujte je do [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Další informace najdete v tématu [stavebních bloků: Stránky a uživatelské rozhraní](http://go.microsoft.com/fwlink/?LinkID=182095) na webu společnosti Microsoft.
@@ -48,7 +48,7 @@ ms.locfileid: "60081903"
 8. Pokud jste přidali na stránku předlohy, změňte jeho **řešení konfliktů při nasazení** nastavení **automatické** ve vlastnostech modulu.
 
     > [!NOTE]
-    >  Pokud název hlavní stránky je stejná jako název existující stránky předlohy, která je označena jako výchozí stránky předlohy nebo vlastní stránky předlohy, může dojít k chybám. Informace o tom, jak tento problém vyřešit, najdete v části [názorný postup: Import vlastní stránky předlohy a stránky webu s obrázkem](../sharepoint/walkthrough-import-a-custom-master-page-and-site-page-with-an-image.md).
+    > Pokud název hlavní stránky je stejná jako název existující stránky předlohy, která je označena jako výchozí stránky předlohy nebo vlastní stránky předlohy, může dojít k chybám. Informace o tom, jak tento problém vyřešit, najdete v části [názorný postup: Import vlastní stránky předlohy a stránky webu s obrázkem](../sharepoint/walkthrough-import-a-custom-master-page-and-site-page-with-an-image.md).
 
 9. V modulu, otevřete *Elements.xml*.
 
@@ -81,7 +81,7 @@ ms.locfileid: "60081903"
      Hodnota **webové** znamená, že hlavní stránka se vztahuje pouze na webu, který je aktuálně zadaný v projektu. Hodnota **lokality** znamená, že hlavní stránka se vztahuje na aktuální kolekci webů, která zahrnuje všechny podřízené lokality a kořenového webu. Nemůžete použít jiné hodnoty.
 
     > [!NOTE]
-    >  Vzhledem k tomu, že motivy použít pouze na úrovni kolekce webů, doporučujeme, že nenastavíte oboru motiv na nic jiného než **lokality**. Pokud, motiv se používá v podřízeným webem, může dojít k chybám.
+    > Vzhledem k tomu, že motivy použít pouze na úrovni kolekce webů, doporučujeme, že nenastavíte oboru motiv na nic jiného než **lokality**. Pokud, motiv se používá v podřízeným webem, může dojít k chybám.
 
 12. V panelu nabídky zvolte **sestavení** > **nasadit řešení**.
 

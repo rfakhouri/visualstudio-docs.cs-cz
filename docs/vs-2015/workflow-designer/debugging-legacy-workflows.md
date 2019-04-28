@@ -13,18 +13,18 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b98c520dc96b6f3c6467bbcaf8e48d9cff8791d2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 80edcfb171e8e87c384a05b889a8fa11b1e7a723
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60048733"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439193"
 ---
 # <a name="debugging-legacy-workflows"></a>Ladění starších verzí pracovních postupů
 Pokud používáte starší [!INCLUDE[wfd1](../includes/wfd1-md.md)] v [!INCLUDE[vs_current_long](../includes/vs-current-long-md.md)] sestavit [!INCLUDE[wf](../includes/wf-md.md)] aplikace, že target.NET rozhraní Framework 3.0 nebo 3.5, můžete ladit vaše pracovní postupy, jako ostatní programy nastavením zarážek, připojení k procesům a kontrole vláken a Zásobník volání. Máte také možnost vzdáleného ladění.  
   
 > [!NOTE]
->  Pokud instalaci a odinstalaci na svém počítači více verzí sady Visual Studio, ladění WF3 může selhat s jedním ze dvou následujících možností:  
+> Pokud instalaci a odinstalaci na svém počítači více verzí sady Visual Studio, ladění WF3 může selhat s jedním ze dvou následujících možností:  
 > 
 > - Nejsou vaše zarážky.  
 >   - Zobrazí se následující zpráva:  

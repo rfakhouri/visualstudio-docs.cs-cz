@@ -33,12 +33,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3ba05030a0f842d6905be384739a9d797634092f
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 1cd368730ec4df91840984525bf0042963587e68
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59652628"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444717"
 ---
 # <a name="documents-environment-options-dialog-box"></a>Dokumenty, prostředí, dialogové okno Možnosti
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ ms.locfileid: "59652628"
 Pomocí této stránky **možnosti** dialogové okno pro řízení zobrazování dokumentů v integrovaném vývojovém prostředí (IDE) a spravovat externí změny dokumentů a souborů. Toto dialogové okno se zpřístupní po kliknutí **možnosti** na **nástroje** nabídky a následným výběrem **dokumenty** v **prostředí** uzlu. Pokud **dokumenty** se nezobrazují v seznamu vyberte **zobrazit všechna nastavení** v **možnosti** dialogové okno.  
   
 > [!NOTE]
->  Dostupné možnosti v dialogových oknech, názvy a umístění příkazů, které vidíte, mohou lišit od informací uvedených v nápovědě v závislosti na aktivních nastaveních nebo edici. Chcete-li změnit nastavení, zvolte **nastavení importu a exportu** na **nástroje** nabídky. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Dostupné možnosti v dialogových oknech, názvy a umístění příkazů, které vidíte, mohou lišit od informací uvedených v nápovědě v závislosti na aktivních nastaveních nebo edici. Chcete-li změnit nastavení, zvolte **nastavení importu a exportu** na **nástroje** nabídky. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  **Znovu použít aktuální okno dokumentu, je-li uložit**  
  Pokud je vybráno, zavře aktuální dokument, pokud byla uložena a ve stejném okně se otevře nový dokument. Pokud vaše aktuální dokument nebyl uložen, zůstane otevřený a je otevřen nový dokument v samostatném okně. Tato možnost vybrána, nové dokumenty vždy otevře v samostatném systému windows.  
@@ -75,7 +75,7 @@ Pomocí této stránky **možnosti** dialogové okno pro řízení zobrazování
  Výběr této možnosti se zobrazí **různé soubory** uzel v **Průzkumníka řešení**. Různé soubory jsou soubory, které nejsou přiřazeny k projektu nebo řešení, ale může objevit v **Průzkumníka řešení** pro vaše pohodlí.  
   
 > [!NOTE]
->  Vyberte tuto možnost **zobrazit v prohlížeči** příkaz **souboru** nabídku webové dokumenty, které nejsou zahrnuty v aktivní webové aplikace.  
+> Vyberte tuto možnost **zobrazit v prohlížeči** příkaz **souboru** nabídku webové dokumenty, které nejsou zahrnuty v aktivní webové aplikace.  
   
  **\<** *n* **> položek uložených v ostatních souborech projektu**  
  Určuje počet souborů pro uchování v **MiscellaneousFiles** složky **Průzkumníka řešení**. Tyto soubory jsou uvedené i v případě, že už nejsou otevřená v editoru. Můžete zadat libovolný celé číslo od 0 do 256. Výchozí hodnota je 0.  

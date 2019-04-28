@@ -12,12 +12,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 032e5a33c7cf70d48913739459c619b5d0302dea
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: ddd4ae3ed3a1a2a239c0efac0f25d04f589f8fa5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54795509"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437542"
 ---
 # <a name="designing-classes-and-types-class-designer"></a>Navrhování tříd a typů (návrhář tříd)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,22 +25,22 @@ ms.locfileid: "54795509"
 Pomocí **návrhář tříd**, nejde vizualizovat pouze tříd a typů, ale je také navrhnout. Následující témata popisují, jak to udělat.  
   
 > [!NOTE]
->  Při práci s návrhář tříd, měli byste zkontrolovat kód, který vysílá před spouští aby bylo možné ověřit, zda kód je vhodný pro kontext zabezpečení.  
+> Při práci s návrhář tříd, měli byste zkontrolovat kód, který vysílá před spouští aby bylo možné ověřit, zda kód je vhodný pro kontext zabezpečení.  
   
 ## <a name="in-this-section"></a>V tomto oddílu  
- [Postupy: Vytváření typů pomocí návrháře tříd](../ide/how-to-create-types-by-using-class-designer.md)  
+ [Postupy: Vytváření typů pomocí Návrháře tříd](../ide/how-to-create-types-by-using-class-designer.md)  
   
  Popisuje, jak můžete vytvořit typ diagramu tříd.  
   
- [Postupy: Vytvoření dědičnosti mezi typy (návrhář tříd)](../ide/how-to-create-inheritance-between-types-class-designer.md)  
+ [Postupy: Definice dědičnosti mezi typy (Návrhář tříd)](../ide/how-to-create-inheritance-between-types-class-designer.md)  
   
  Vysvětluje, jak definovat vztah dědičnosti mezi typy.  
   
- [Postupy: Vytvoření asociací mezi typy (návrhář tříd)](../ide/how-to-create-associations-between-types-class-designer.md)  
+ [Postupy: Vytvoření asociací mezi typy (Návrhář tříd)](../ide/how-to-create-associations-between-types-class-designer.md)  
   
  Popisuje, jak definovat asociace v diagramu tříd.  
   
- [Postupy: Vizualizace asociace kolekce (návrhář tříd)](../ide/how-to-visualize-a-collection-association-class-designer.md)  
+ [Postupy: Vizualizace asociace kolekce (Návrhář tříd)](../ide/how-to-visualize-a-collection-association-class-designer.md)  
   
  Vysvětluje, jak definovat asociace kolekce v Návrháři tříd.  
   

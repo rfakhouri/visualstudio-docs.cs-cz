@@ -8,12 +8,12 @@ ms.assetid: e48ecfb2-f4b5-4d3a-b4a2-7a4d62fa4ec0
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 3d719a52535614b8cddf1c31aeb97e41c7614767
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 196fc4bddba0cfa6addb786148cd3876e1ec8260
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045080"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430012"
 ---
 # <a name="composite-patterns-for-visual-studio"></a>Složené vzory pro sadu Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -433,7 +433,7 @@ Složené vzory kombinovat elementy interakce a návrhu v různých konfigurací
  Klíčovým konceptem sady výběr v seznamu je, že je založené na řádek, to znamená, že když bude proveden výběr celého řádku je zvolen jako celek. Naopak mřížky můžete povolit konkrétní buňky, které chcete vybrat, aniž by to ovlivnilo ostatní aspekt řádku. Mřížka mohou také obsahovat hierarchii vnořené řádků (například TreeGrid), které umožňují celý větví úrovně hierarchie k vybrané a možnost to interakcí se nadřazených řádků. Výběr v seznamu se zobrazí podle jednoduchých zvýraznit barvy na celý řádek dat. Fokus je zobrazen v jednom pixelu tečkovaná ohraničení kolem aktuálního upravitelné řádku nebo buňky (řádek, pokud všechny buňky jsou jen pro čtení).
 
 > [!NOTE]
->  **Fokus** a **výběr** jsou různé koncepty. *Fokus* slouží jako ukazatel toho, které uživatelského rozhraní je určená – element pro vstup není explicitně směrovat na jiný objekt, zatímco *výběr* týká stavu zařazení objektu v sadě objekty, na kterých následné operace může proběhnout.
+> **Fokus** a **výběr** jsou různé koncepty. *Fokus* slouží jako ukazatel toho, které uživatelského rozhraní je určená – element pro vstup není explicitně směrovat na jiný objekt, zatímco *výběr* týká stavu zařazení objektu v sadě objekty, na kterých následné operace může proběhnout.
 
  Výběry v seznamech může být souvislé, nesouvislé, nebo oblast. Když je povolené, souvislý více výběrů a nesouvislý by měl vždy být podporován výběr, při podporu pro výběr oblasti (pole) je volitelný. Výběr oblasti lze inicializovat pomocí přetahování v prázdné místo v seznamu obsahu.
 

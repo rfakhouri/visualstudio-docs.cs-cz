@@ -26,12 +26,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8cc47445f9d2024f5d8a83c8f376bc0299b8ea4e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 61c81cef552c18eab5aa737b3460d539abfbdcfc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60103638"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63447008"
 ---
 # <a name="ribbon-designer"></a>Návrhář pásu karet
   Návrhář pásu karet je vizuální návrhové plátno. Chcete-li přidat vlastní karty, skupiny a ovládací prvky na pásu karet aplikace Microsoft Office pomocí Návrháře pásu karet.
@@ -47,7 +47,7 @@ ms.locfileid: "60103638"
 - [Přidání ovládacích prvků do zobrazení Backstage](#CustomizingMicrosoftOfficeButton)
 
 > [!NOTE]
->  Zde jsou některé úkoly, které nelze provést pomocí Návrháře pásu karet. Další informace o těchto úlohách a způsob jejich provedení, najdete v části [přehled pásu karet](../vsto/ribbon-overview.md).
+> Zde jsou některé úkoly, které nelze provést pomocí Návrháře pásu karet. Další informace o těchto úlohách a způsob jejich provedení, najdete v části [přehled pásu karet](../vsto/ribbon-overview.md).
 
  ![odkaz na video](../vsto/media/playvideo.gif "odkaz na video") související video ukázku naleznete v tématu [postup: Použít Návrháře pásu karet k přizpůsobení pásu karet Outlooku? ](http://go.microsoft.com/fwlink/?LinkID=130312).
 

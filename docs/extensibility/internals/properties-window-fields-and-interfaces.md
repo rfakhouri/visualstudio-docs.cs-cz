@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 03f3c9ca624f0cccae5f9a21573fdcf01b7e9143
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1bf74bb93901cbd1637efd22690b8b1ba52f6b97
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060225"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425737"
 ---
 # <a name="properties-window-fields-and-interfaces"></a>Pole a rozhraní okna Vlastnosti
 Model pro výběr k určení, které informace se zobrazují v **vlastnosti** okna je založen na okně, které má fokus v integrovaném vývojovém prostředí. Každé okno a objekt v rámci vybrané okno může mít objekt kontextu jeho výběr do kontextu globálního výběru. Prostředí aktualizuje kontext globálního výběru s hodnotami z okna rámce, když je toto okno fokus. Při změně fokusu zločinců se stejně kontext výběru.
@@ -81,7 +81,7 @@ V dolní části **vlastnosti** okně oblasti popisu zobrazí informace souvisej
 1. Přidat `helpstringdll` atribut příkaz library v knihovně typů (`typelib`).
 
    > [!NOTE]
-   >  Tento krok je volitelný, pokud knihovna typů nachází v objektový soubor knihovny (.olb).
+   > Tento krok je volitelný, pokud knihovna typů nachází v objektový soubor knihovny (.olb).
 
 2. Zadejte `helpstringcontext` atributy pro řetězce. Můžete také určit `helpstring` atributy.
 

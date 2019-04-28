@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 94e3ccc30507ccd7995c4d4fad548fe5ff425365
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 264b7cd4d60ebc963d794e0ca06fc16fd5edc7d7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60094605"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445345"
 ---
 # <a name="how-to-manage-control-layout-on-actions-panes"></a>Postupy: Správa rozložení ovládacích prvků v podoknech akcí
   Podokna akcí je ukotven na pravém rohu dokumentu nebo sešitu ve výchozím nastavení; ale ho lze ukotvit vlevo, horní nebo dolní. Pokud používáte více uživatelských ovládacích prvků, můžete napsat kód správně zásobníku uživatelské ovládací prvky v podokně Akce. Další informace najdete v tématu [přehled podokna akcí](../vsto/actions-pane-overview.md).
@@ -29,10 +29,10 @@ ms.locfileid: "60094605"
  Zásobník pořadí ovládacích prvků závisí na, jestli je ukotven v podokně Akce vodorovně nebo svisle.
 
 > [!NOTE]
->  Pokud uživatel změní velikost podokna akcí za běhu, můžete nastavit ovládací prvky pro změnu velikosti s podoknem akcí. Můžete použít <xref:System.Windows.Forms.Control.Anchor%2A> vlastnost ovládacího prvku Windows Forms do ovládacích prvků ukotvení pro podokna akcí. Další informace najdete v tématu [jak: Ukotvení ovládacích prvků ve Windows Forms](/dotnet/framework/winforms/controls/how-to-anchor-controls-on-windows-forms).
+> Pokud uživatel změní velikost podokna akcí za běhu, můžete nastavit ovládací prvky pro změnu velikosti s podoknem akcí. Můžete použít <xref:System.Windows.Forms.Control.Anchor%2A> vlastnost ovládacího prvku Windows Forms do ovládacích prvků ukotvení pro podokna akcí. Další informace najdete v tématu [jak: Ukotvení ovládacích prvků ve Windows Forms](/dotnet/framework/winforms/controls/how-to-anchor-controls-on-windows-forms).
 
 > [!NOTE]
->  Váš počítač může v následujících pokynech zobrazovat odlišné názvy nebo umístění některých prvků uživatelského rozhraní sady Visual Studio. Tyto prvky jsou určeny edicí sady Visual Studio a použitým nastavením. Další informace najdete v tématu [přizpůsobení integrovaného vývojového prostředí sady Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
+> Váš počítač může v následujících pokynech zobrazovat odlišné názvy nebo umístění některých prvků uživatelského rozhraní sady Visual Studio. Tyto prvky jsou určeny edicí sady Visual Studio a použitým nastavením. Další informace najdete v tématu [přizpůsobení integrovaného vývojového prostředí sady Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="to-set-the-stack-order-of-the-actions-pane-controls"></a>K nastavení pořadí zásobníku ovládacích prvků podokna akce
 

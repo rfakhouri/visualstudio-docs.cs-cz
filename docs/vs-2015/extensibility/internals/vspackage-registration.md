@@ -11,12 +11,12 @@ ms.assetid: ecd20da8-b04b-4141-a8f4-a2ef91dd597a
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: ec9bb626b44365dc27d46a235a1ee4895f3eb5c6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5dab1d68b9cf3e69c2f7a4a03d6e91a4fbab1907
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60074555"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440806"
 ---
 # <a name="vspackage-registration"></a>Registrace balíčku VSPackage
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -24,14 +24,14 @@ ms.locfileid: "60074555"
 Rozšíření VSPackages musíte poradit [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] , že jsou nainstalované a měli byste jej načíst. Tento proces se provádí pomocí zápisu informací do registru. To je typické úlohy instalačního programu.  
   
 > [!NOTE]
->  Přijaté praxe je během vývoje VSPackage používat samoobslužné registrace. Ale [!INCLUDE[vsipprvsip](../../includes/vsipprvsip-md.md)] partneři nelze odeslat vlastních produktů s využitím samoregistračního jako součást instalace.  
+> Přijaté praxe je během vývoje VSPackage používat samoobslužné registrace. Ale [!INCLUDE[vsipprvsip](../../includes/vsipprvsip-md.md)] partneři nelze odeslat vlastních produktů s využitím samoregistračního jako součást instalace.  
   
  Položky registru do balíčku Instalační služby systému Windows jsou obecně provedené v tabulce registru. Přípony souborů budete taky moct registrovat v tabulce registru. Ale instalační služby systému Windows obsahuje integrovanou podporu prostřednictvím programový identifikátor (ProgId), třída, rozšíření a operaci tabulky. Další informace najdete v tématu [databázových tabulek](http://msdn.microsoft.com/library/aa368259\(VS.85\).aspx).  
   
  Ujistěte se, že vaše položky registru jsou spojeny s komponenta, která je vhodná pro vaši zvolenou strategii vedle sebe. Položky registru pro sdílený soubor například by měly být přidružené komponenty tento soubor Instalační služby systému Windows. Položky registru pro konkrétní verzi souboru, by měly být přidružené tento soubor komponenty. V opačném případě instalace nebo odinstalace vašeho balíčku VSPackage pro jednu verzi [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] by mohlo narušit vaše VSPackage v dalších verzích. Další informace najdete v tématu [podporuje více verzí sady Visual Studio](../../extensibility/supporting-multiple-versions-of-visual-studio.md)  
   
 > [!NOTE]
->  Nejjednodušší způsob, jak spravovat registraci se má používat stejná data v stejné soubory, které pro vývojáře registrace i registrace čas instalace. Některé nástroje pro vývoj instalačního programu například může spotřebovat soubor ve formátu .reg v okamžiku sestavení. Pokud vývojáři udržovat .reg soubory pro každodenní vývoj a ladění, tyto stejné soubory mohou být zahrnuty v instalačním programu automaticky. Pokud nemůžete sdílet automaticky registrační data, musíte zajistit, že je aktuální kopii instalačního programu registrační data.  
+> Nejjednodušší způsob, jak spravovat registraci se má používat stejná data v stejné soubory, které pro vývojáře registrace i registrace čas instalace. Některé nástroje pro vývoj instalačního programu například může spotřebovat soubor ve formátu .reg v okamžiku sestavení. Pokud vývojáři udržovat .reg soubory pro každodenní vývoj a ladění, tyto stejné soubory mohou být zahrnuty v instalačním programu automaticky. Pokud nemůžete sdílet automaticky registrační data, musíte zajistit, že je aktuální kopii instalačního programu registrační data.  
   
 ## <a name="registering-unmanaged-vspackages"></a>Registrace balíčků VSPackage nespravované  
  Nespravované rozšíření VSPackages (včetně těch, které generuje šablonou balíček služby Visual Studio) knihovny ATL – vizuální styl .rgs soubory použít k ukládání informací o registraci. Formát souboru .rgs je specifická pro knihovny ATL a nejde je využívat obecně jako-je při instalaci nástroje pro vytváření. Informace o registraci pro instalační program balíčku VSPackage musí být udržovány odděleně. Například vývojáři můžou synchronizaci souborů ve formátu .reg s .rgs změny souborů. Soubor .reg můžete sloučit s RegEdit při vývojových pracích nebo používané instalační program.  
@@ -40,7 +40,7 @@ Rozšíření VSPackages musíte poradit [!INCLUDE[vsprvs](../../includes/vsprvs
  Nástroj RegPkg načteme spravované VSPackage atributy registrace a buď přímo do registru nebo soubory ve formátu .reg zápisu, které mohou být spotřebovány instalační program, zapsat informace.  
   
 > [!NOTE]
->  Nástroj RegPkg není distribuovatelné součásti a nelze použít k registraci balíčku VSPackage v systému uživatele.  
+> Nástroj RegPkg není distribuovatelné součásti a nelze použít k registraci balíčku VSPackage v systému uživatele.  
   
 ## <a name="why-vspackages-should-not-self-register-at-install-time"></a>Proč rozšíření VSPackages by měl samoobslužné nezaregistroval v době instalace  
  Vaše instalační programy VSPackage neměli byste tedy spoléhat na automatickou registraci. Na první pohled zachování hodnot registru balíčku VSPackage pouze v balíčku VSPackage samotný vypadá jako dobrý nápad. Oznámeno, že vývojáři potřebují k dispozici hodnoty registru pro své běžné práci a testování, je vhodné vyhnout zachování samostatnou kopii dat registru v instalačním programu. Instalační program můžete spolehnout na samotný balíčku VSPackage pro zápis hodnoty registru.  

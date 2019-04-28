@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 12f0c8f2235db4c5eb332d52a454bd0093a34b68
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56606669"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62842786"
 ---
 # <a name="msbuild-concepts"></a>Koncepty nástroje MSBuild
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] poskytuje základní schéma XML, které vám umožní řídit, jak sestavení platformy sestavení softwaru. Chcete-li v sestavení a jak mají být sestaveny určete součásti, použijte tyto čtyři části nástroje MSBuild: vlastnosti, položky, úlohy a cíle.

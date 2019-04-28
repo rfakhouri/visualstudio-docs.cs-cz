@@ -10,12 +10,12 @@ ms.assetid: bdd2e3a7-ae6e-4e88-be1a-e0e3b7ddbbcc
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: a18d82ecc0d5bbffa8fb0eb4799910f32a10784a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: b66015ef2e2ab0c8105b6f84486fa890adbf8b1f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54783894"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438400"
 ---
 # <a name="properties-window-buttons"></a>Tlačítka okna Vlastnosti
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ V závislosti na vývojový jazyk a typ produktu, jsou některá tlačítka zobr
  **Stránky vlastností** tlačítko je k dispozici Pokud `ISpecifyPropertyPages` není implementována pro vybraný objekt. Zobrazení vlastností závislé na konfiguraci, které jsou obvykle spojené s řešeními a projekty stránky vlastností projektu, ale mohou být také být spojeny s položkami projektu (například v aplikaci Visual C++).  
   
 > [!NOTE]
->  Nelze přidat tlačítka panelu nástrojů **vlastnosti** okna pomocí nespravovaného kódu. Chcete-li přidat tlačítko panelu nástrojů, musíte vytvořit spravovaný objekt, který je odvozen z <xref:System.Windows.Forms.Design.PropertyTab>.  
+> Nelze přidat tlačítka panelu nástrojů **vlastnosti** okna pomocí nespravovaného kódu. Chcete-li přidat tlačítko panelu nástrojů, musíte vytvořit spravovaný objekt, který je odvozen z <xref:System.Windows.Forms.Design.PropertyTab>.  
   
 ## <a name="see-also"></a>Viz také  
  [Rozšíření vlastností](../../extensibility/internals/extending-properties.md)

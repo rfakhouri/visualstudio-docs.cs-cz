@@ -12,12 +12,12 @@ caps.latest.revision: 68
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: aaca69818524df134aa9ad7514ee5e0227b6a812
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b1dd1598d73cdbd77bc6fe0cb35e639c0fb484b0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60084983"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443432"
 ---
 # <a name="walkthrough-test-first-support-with-the-generate-from-usage-feature"></a>Návod: Podpora včasného testování funkcí generování před využitím
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,7 +66,7 @@ Dialogové okno Nový projekt
 2. Vyhledejte prohlášení pro třídu `UnitTest1` a přejmenujte ho na `AutomobileTest`. V jazyce C# Pokud `UnitTest1()` konstruktor je k dispozici, přejmenujte ho na `AutomobileTest()`.  
   
     > [!NOTE]
-    >  Technologie IntelliSense teď poskytuje dvě možnosti pro doplňování příkazů IntelliSense: *doplňovacím režimem* a *režim návrhu*. Použijte režim návrhu pro situace, ve kterých se používají třídy a členy, než jsou definovány. Při otevření okno technologie IntelliSense můžete stisknutím CTRL + ALT + MEZERNÍK, chcete-li přepnout mezi doplňovacím režimem a režimem návrhu. Zobrazit [pomocí technologie IntelliSense](../ide/using-intellisense.md) Další informace. Režim návrhu vám pomůže při psaní `Automobile` v dalším kroku.  
+    > Technologie IntelliSense teď poskytuje dvě možnosti pro doplňování příkazů IntelliSense: *doplňovacím režimem* a *režim návrhu*. Použijte režim návrhu pro situace, ve kterých se používají třídy a členy, než jsou definovány. Při otevření okno technologie IntelliSense můžete stisknutím CTRL + ALT + MEZERNÍK, chcete-li přepnout mezi doplňovacím režimem a režimem návrhu. Zobrazit [pomocí technologie IntelliSense](../ide/using-intellisense.md) Další informace. Režim návrhu vám pomůže při psaní `Automobile` v dalším kroku.  
   
 3. Vyhledejte `TestMethod1()` metoda a přejmenujte ho na `DefaultAutomobileIsInitializedCorrectly()`. V této metodě vytvoření nové instance třídy s názvem `Automobile`, jak je znázorněno na následujících obrázcích. Zobrazí se podtržení vlnovkou, což znamená chybu v době kompilace a inteligentní značky se zobrazí v části název typu. Přesné umístění inteligentní značky se liší v závislosti na tom, zda používáte [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] nebo [!INCLUDE[csprcs](../includes/csprcs-md.md)].  
   

@@ -10,12 +10,12 @@ ms.assetid: e9f715dc-12b7-439b-bdf3-f3dc75e62f1c
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 853a3f8db3623156e000c9360981933091ef9afd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 85e466e7ebb6294a77e89040260c16fe0043e372
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60106959"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437672"
 ---
 # <a name="authoring-vsct-files"></a>Vytváření obsahu. Soubory Vsct
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -86,7 +86,7 @@ Tento dokument ukazuje, jak vytvářet souboru .vsct přidání položek nabídk
     Nastavte `guid` a `id` atributy `Menu` element a pak nastavte `type` atribut na typ, který chcete nabídky. Můžete také nastavit `priority` atribut vytvořit relativní umístění v nabídce v nadřazené skupině.  
   
    > [!NOTE]
-   >  `priority` Atribut se nedá použít u kontextové nabídky a panely nástrojů.  
+   > `priority` Atribut se nedá použít u kontextové nabídky a panely nástrojů.  
   
 2. Všechny příkazy v integrovaném vývojovém prostředí sady Visual Studio musí být hostovány příkaz skupin, které jsou přímo podřízené nabídek a panelů nástrojů. Pokud přidáváte nové nabídky nebo panely nástrojů rozhraní IDE, tyto musí obsahovat novou skupinu příkazů. Můžete také přidat skupinu příkazů do existující nabídky a panely nástrojů tak, aby vaše příkazy můžete vizuálně seskupit.  
   
@@ -99,14 +99,14 @@ Tento dokument ukazuje, jak vytvářet souboru .vsct přidání položek nabídk
    1. Nastavte `guid` a `id` atributy každého `Button` element a pak nastavte `type` atribut na typ, který chcete tlačítko. Můžete také nastavit `priority` atribut vytvořit relativní pozici příkazu v nadřazené skupině.  
   
       > [!NOTE]
-      >  Použití `type="button"` pro standardní příkazy a tlačítka na panely nástrojů.  
+      > Použití `type="button"` pro standardní příkazy a tlačítka na panely nástrojů.  
   
    2. V `Button` elementu, přidat [řetězce](../../extensibility/strings-element.md) element, který obsahuje [ButtonText](../../extensibility/buttontext-element.md) elementu a [CommandName](../../extensibility/commandname-element.md) elementu. `ButtonText` Element poskytuje textový popisek pro položku nabídky nebo popisu tlačítka pro tlačítko toolbar. `CommandName` Element poskytuje název příkazu, pro použití v příkazu dobře.  
   
    3. Pokud váš příkaz ikonu, vytvořte [ikonu](../../extensibility/icon-element.md) element v `Button` elementu a nastavte jeho `guid` a `id` atributů `Bitmap` – element pro ikonu.  
   
       > [!NOTE]
-      >  Tlačítka panelu nástrojů musí mít ikony.  
+      > Tlačítka panelu nástrojů musí mít ikony.  
   
       Další informace najdete v tématu [MenuCommands Vs. OleMenuCommands](../../misc/menucommands-vs-olemenucommands.md).  
   

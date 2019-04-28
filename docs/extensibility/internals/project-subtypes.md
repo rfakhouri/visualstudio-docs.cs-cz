@@ -11,18 +11,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 027dc559c33b5b8f10a4555985e8b2a5a5a416c5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 73cf7fe43dcbe15bdeedf6822c9172533e6d420b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604935"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63423072"
 ---
 # <a name="project-subtypes"></a>Podtypy projektů
 Podtypy projektů vám umožní přizpůsobit nebo flavor chování systémů projektů [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Vlastní nastavení zahrnují ukládá další data v souboru projektu, přidání nebo filtrování položek v **přidat novou položku** dialogové okno, řízení, jak ladit a nasadit, sestavení a rozšíření projektu **vlastnost Stránky** dialogové okno. Rozšíření VSPackages implementovat podtypů projektů pomocí modelu COM agregace.
 
 > [!NOTE]
->  Systém projektu Visual C++ nepodporuje podtypů projektů. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] samotný podtypů projektů používá k implementaci projekty systému SQL Server a inteligentní zařízení.
+> Systém projektu Visual C++ nepodporuje podtypů projektů. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] samotný podtypů projektů používá k implementaci projekty systému SQL Server a inteligentní zařízení.
 
 ## <a name="in-this-section"></a>V tomto oddílu
 - [Návrh podtypů projektů](../../extensibility/internals/project-subtypes-design.md)

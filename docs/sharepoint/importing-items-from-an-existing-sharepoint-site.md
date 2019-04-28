@@ -18,18 +18,18 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 206cd77ae3c648add62b17c86a4966e6174c345c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 58f4dd6df35b9101ed3cd2a45943efc8078229f8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082578"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444359"
 ---
 # <a name="import-items-from-an-existing-sharepoint-site"></a>Import položek z existující stránky SharePoint
   Šablona projektu importovat balíček řešení služby SharePoint, můžete znovu použít prvky, jako jsou typy obsahu a pole z existujících webů služby SharePoint v novém [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] řešení služby SharePoint. Ačkoli můžete spustit nejvíce importované řešení bez jakýchkoli úprav, existují určitá omezení a problémy, které byste měli zvážit, zejména v případě, že upravíte všechny položky po importu.
 
 > [!NOTE]
->  Pro import opakovaně použitelných pracovních postupů, použijte šablonu projektu Import opakovaně použitelného pracovního postupu. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [Pokyny pro import opakovaně použitelných pracovních postupů](../sharepoint/guidelines-for-importing-reusable-workflows.md).
+> Pro import opakovaně použitelných pracovních postupů, použijte šablonu projektu Import opakovaně použitelného pracovního postupu. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [Pokyny pro import opakovaně použitelných pracovních postupů](../sharepoint/guidelines-for-importing-reusable-workflows.md).
 
 ## <a name="supported-sharepoint-solutions"></a>Podporované řešení služby SharePoint
  [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)] plně podporuje import řešení vytvořená v [!INCLUDE[wss_14_short](../sharepoint/includes/wss-14-short-md.md)] a [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)].

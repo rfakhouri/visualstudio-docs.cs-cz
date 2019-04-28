@@ -6,12 +6,12 @@ ms.assetid: d22b5186-9e03-4e85-afc9-7cbe28522a6d
 caps.latest.revision: 14
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 96a4795d83c4ef4b5bad2d7dc2d5f06f2f3ab4cf
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 18ea10e25117ee5bf52c6369e575d70a989435db
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097229"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444518"
 ---
 # <a name="learn-app-building-basics-with-xamarinforms-in-visual-studio"></a>Základy vytváření aplikací s Xamarin.Forms v sadě Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Jakmile jste udělali kroky [nastavení a instalaci](../cross-platform/setup-and
 - [Dokončení uživatelského rozhraní pomocí přirozený vzhled a chování napříč platformami](#finish)
 
 > [!TIP]
->  Najdete kompletní zdrojový kód pro tento projekt v [ukázky xamarin forms úložišti na Githubu](https://github.com/xamarin/xamarin-forms-samples/tree/master/Weather).
+> Najdete kompletní zdrojový kód pro tento projekt v [ukázky xamarin forms úložišti na Githubu](https://github.com/xamarin/xamarin-forms-samples/tree/master/Weather).
 
 ## <a name="solution"></a> Nastavení řešení
  Tyto kroky vytvoří řešení Xamarin.Forms, která obsahuje PCL pro sdílený kód a dva balíčky NuGet pro přidání.
@@ -59,7 +59,7 @@ Jakmile jste udělali kroky [nastavení a instalaci](../cross-platform/setup-and
     - **WeatherApp.WinPhone (Windows Phone 8.1)**: projekt obsahující nativní kód Windows Phone.
 
     > [!NOTE]
-    >  Můžete odstranit kterýkoli z projektů pro platformu, která nejsou cílení zdarma. Pro účely tohoto návodu jsme budete odkazovat projekty Android, iOS a Windows Phone 8.1. Práce s UWP a Windows 8.1 projekty je velmi podobně jako při práci s projektem Windows Phone 8.1.
+    > Můžete odstranit kterýkoli z projektů pro platformu, která nejsou cílení zdarma. Pro účely tohoto návodu jsme budete odkazovat projekty Android, iOS a Windows Phone 8.1. Práce s UWP a Windows 8.1 projekty je velmi podobně jako při práci s projektem Windows Phone 8.1.
 
      V rámci každé nativní projektu mají přístup do nativní návrháře pro odpovídající platformu a můžete implementovat platformy jednotlivých obrazovek a funkčnosti podle potřeby.
 

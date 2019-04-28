@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0ea782140405b55a6c5a90b01fb466586f66cc38
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5741b286af454493f543b2c39c894341c87df1b1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054102"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444908"
 ---
 # <a name="writing-to-the-user-settings-store"></a>Zápis do úložiště uživatelských nastavení
 Uživatelská nastavení jsou zapisovatelné nastavení, jako je v **Nástroje / možnosti** dialogového okna, okna vlastností a některých dalších dialogových oknech. Rozšíření sady Visual Studio může použít k ukládání malé množství dat. Tento návod ukazuje, jak přidat program Poznámkový blok se sadou Visual Studio jako externího nástroje ve čtení a zápisu do úložiště uživatelských nastavení.
@@ -27,7 +27,7 @@ Uživatelská nastavení jsou zapisovatelné nastavení, jako je v **Nástroje /
 3. Přejděte na nástroje HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0Exp\External\\.
 
     > [!NOTE]
-    >  Ujistěte se, že máte před sebou klíč, který obsahuje \14.0Exp\ a ne \14.0\\. Když spustíte experimentální instanci sady Visual Studio, uživatelská nastavení jsou v podregistru "14.0Exp".
+    > Ujistěte se, že máte před sebou klíč, který obsahuje \14.0Exp\ a ne \14.0\\. Když spustíte experimentální instanci sady Visual Studio, uživatelská nastavení jsou v podregistru "14.0Exp".
 
 4. Klikněte pravým tlačítkem na podklíč \External Tools\ a potom klikněte na tlačítko **exportovat**. Ujistěte se, že **Vybraná větev** zaškrtnuto.
 

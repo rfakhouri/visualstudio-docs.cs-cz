@@ -15,12 +15,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c7d57643661edec90f12a54a2482b59d83bbb3c8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fd4e61960616245d459140e351386ae7b55adc22
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040947"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441712"
 ---
 # <a name="how-to-change-fonts-and-colors-in-the-editor"></a>Postupy: Změna písma a barev v editoru
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Můžete změnit výchozí řez písma, nastavit velikost písma a změnit barvy
 - **Popředí položky**, **položky pozadí**, a **tučné** možnosti můžete nastavit pro každý typ textu elementu. Například, pokud změna barev a vyberte **tučné** pro **komentář** a **záložky**, nebude mít jiné typy textových prvků.  
   
 > [!NOTE]
->  Dialogová okna a příkazy nabídek, zobrazí se mohou lišit od těch popsaných v **pomáhají** v závislosti na aktivních nastaveních nebo edici. Chcete-li změnit nastavení, zvolte **nastavení importu a exportu** na **nástroje** nabídky. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Dialogová okna a příkazy nabídek, zobrazí se mohou lišit od těch popsaných v **pomáhají** v závislosti na aktivních nastaveních nebo edici. Chcete-li změnit nastavení, zvolte **nastavení importu a exportu** na **nástroje** nabídky. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ### <a name="to-change-the-default-font-face-size-and-colors"></a>Chcete-li změnit výchozí řez písma, velikosti a barvy  
   
@@ -49,7 +49,7 @@ Můžete změnit výchozí řez písma, nastavit velikost písma a změnit barvy
 4. Vyberte odpovídající položku v **zobrazení položek**a potom změňte **popředí položky** a **položky pozadí** možnosti.  
   
     > [!TIP]
-    >  Klikněte na tlačítko **použít výchozí hodnoty** obnovíte výchozí nastavení.  
+    > Klikněte na tlačítko **použít výchozí hodnoty** obnovíte výchozí nastavení.  
   
 5. Klikněte na **OK**.  
   

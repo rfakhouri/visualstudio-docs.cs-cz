@@ -12,12 +12,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8c374dc5cc616f58cb81a1191b095971561df9b1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 37abc4862b12ab11239b2dd8a24b8c18acab2a51
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60052880"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446699"
 ---
 # <a name="walkthrough-generating-code-by-using-text-templates"></a>Návod: Generování kódu pomocí textových šablon
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Generování kódu umožňuje vytvářet programový kód, který je silně typo
  V tomto příkladu projektu šablona načte ukázkový soubor XML a vygeneruje třídy, které odpovídají každého typu uzlu. V kódu ručně psanou můžete použít tyto třídy pro navigaci souboru XML. Aplikace můžete použít také u jiných souborů, které používají stejné typy uzlů. Účelem ukázkový soubor XML je poskytnout příklady, všechny typy uzlů, které chcete, aby se vaše aplikace.  
   
 > [!NOTE]
->  Aplikace [xsd.exe](http://go.microsoft.com/fwlink/?LinkId=178765), který je součástí [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], můžete ze souborů XML vygenerovat třídy silného typu. Jako příklad je k dispozici šablona je vidět tady.  
+> Aplikace [xsd.exe](http://go.microsoft.com/fwlink/?LinkId=178765), který je součástí [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], můžete ze souborů XML vygenerovat třídy silného typu. Jako příklad je k dispozici šablona je vidět tady.  
   
  Tady je ukázkový soubor:  
   
@@ -142,7 +142,7 @@ namespace MyProject
 2. V **přidat novou položku** dialogové okno Vyberte **textové šablony** z **šablony** podokně.  
   
    > [!NOTE]
-   >  Ujistěte se, že přidáte textové šablony a ne Předzpracované textové šablony.  
+   > Ujistěte se, že přidáte textové šablony a ne Předzpracované textové šablony.  
   
 3. V souboru v direktivě šablony změnit `hostspecific` atribut `true`.  
   

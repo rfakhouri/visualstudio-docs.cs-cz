@@ -1,5 +1,5 @@
 ---
-title: 'Průvodce: Základní Editor vytváří a registruje typem souboru Editor | Dokumentace Microsoftu'
+title: 'Návod: Základní Editor vytváří a registruje typem souboru Editor | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -10,14 +10,14 @@ ms.assetid: 24d2bffd-a35c-46db-8515-fd60b884b7fb
 caps.latest.revision: 30
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 9e900fa7d7bb65d5f55faab00c779247114278eb
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: c791d991f797a9ccc581fa6d79b0400c17c84e0e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54778491"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442264"
 ---
-# <a name="walkthrough-creating-a-core-editor-and-registering-an-editor-file-type"></a>Průvodce: Vytvoření základní Editor a registrace typu souboru editoru
+# <a name="walkthrough-creating-a-core-editor-and-registering-an-editor-file-type"></a>Návod: Vytvoření základní Editor a registrace typu souboru editoru
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Tento návod ukazuje, jak vytvořit VSPackage, která se spustí [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] základní editor nějaký soubor, který má příponu názvu souboru .myext je načteno.  
@@ -28,25 +28,25 @@ Tento návod ukazuje, jak vytvořit VSPackage, která se spustí [!INCLUDE[vsprv
 ## <a name="locations-for-the-visual-studio-package-project-template"></a>Umístění pro projekt sady Visual Studio balíček šablony  
  Šablona projektu balíček Visual Studio najdete ve třech různých umístěních v **nový projekt** dialogové okno:  
   
-1.  V části rozšiřitelnosti Visual Basic. Je výchozí jazyk projektu jazyka Visual Basic.  
+1. V části rozšiřitelnosti Visual Basic. Je výchozí jazyk projektu jazyka Visual Basic.  
   
-2.  V jazyce C# rozšiřitelnosti. Je výchozí jazyk projektu C#.  
+2. V jazyce C# rozšiřitelnosti. Je výchozí jazyk projektu C#.  
   
-3.  V části Další typy rozšíření projektu. Výchozí jazyk projektu je C++.  
+3. V části Další typy rozšíření projektu. Výchozí jazyk projektu je C++.  
   
 ### <a name="to-create-the-vspackage"></a>Vytvoření sady VSPackage  
   
--   Spustit [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] a vytvořit [!INCLUDE[csprcs](../includes/csprcs-md.md)] VSPackage s názvem `MyPackage`, jak je uvedeno v [názorný postup: Vytvoření příkazu nabídky VSPackage](http://msdn.microsoft.com/d699c149-5d1e-47ff-94c7-e1222af02c32).  
+- Spustit [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] a vytvořit [!INCLUDE[csprcs](../includes/csprcs-md.md)] VSPackage s názvem `MyPackage`, jak je uvedeno v [názorný postup: Vytvoření příkazu nabídky VSPackage](http://msdn.microsoft.com/d699c149-5d1e-47ff-94c7-e1222af02c32).  
   
 ### <a name="to-add-the-editor-factory"></a>Chcete-li přidat objekt factory editoru  
   
-1.  Klikněte pravým tlačítkem myši **MyPackage** projektu, přejděte na **přidat** a potom klikněte na tlačítko **třídy**.  
+1. Klikněte pravým tlačítkem myši **MyPackage** projektu, přejděte na **přidat** a potom klikněte na tlačítko **třídy**.  
   
-2.  V **přidat novou položku** dialogové okno pole, ujistěte se, že **třídy** šablonu vyberou, typ `EditorFactory.cs` pro název a pak klikněte na tlačítko **přidat** přidání třídy do projektu.  
+2. V **přidat novou položku** dialogové okno pole, ujistěte se, že **třídy** šablonu vyberou, typ `EditorFactory.cs` pro název a pak klikněte na tlačítko **přidat** přidání třídy do projektu.  
   
      Soubor EditorFactory.cs by měl být automaticky otevřít.  
   
-3.  Odkazujte na následující sestavení z vašeho kódu.  
+3. Odkazujte na následující sestavení z vašeho kódu.  
   
     ```vb  
     Imports System.Runtime.InteropServices  
@@ -69,7 +69,7 @@ Tento návod ukazuje, jak vytvořit VSPackage, která se spustí [!INCLUDE[vsprv
   
     ```  
   
-4.  Přidejte identifikátor GUID `EditorFactory` třídy tak, že přidáte `Guid` atribut bezprostředně před deklaraci třídy.  
+4. Přidejte identifikátor GUID `EditorFactory` třídy tak, že přidáte `Guid` atribut bezprostředně před deklaraci třídy.  
   
      Můžete generovat nový identifikátor GUID pomocí programu guidgen.exe [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] příkazového řádku, nebo kliknutím na **Create GUID** na **nástroje** nabídky. Identifikátor GUID se tady použít. je pouze příklad; Nepoužívejte ho ve vašem projektu.  
   
@@ -81,7 +81,7 @@ Tento návod ukazuje, jak vytvořit VSPackage, která se spustí [!INCLUDE[vsprv
     [Guid("0eea3187-c5fa-48d4-aa72-b5eecd3b17b1")]   
     ```  
   
-5.  V definici třídy přidejte dvě soukromé proměnné tak, aby obsahovala nadřazeného balíčku a poskytovatele služeb.  
+5. V definici třídy přidejte dvě soukromé proměnné tak, aby obsahovala nadřazeného balíčku a poskytovatele služeb.  
   
     ```vb  
     Class EditorFactory  
@@ -98,7 +98,7 @@ Tento návod ukazuje, jak vytvořit VSPackage, která se spustí [!INCLUDE[vsprv
   
     ```  
   
-6.  Přidejte konstruktor veřejnou třídu, která přijímá jeden parametr typu <xref:Microsoft.VisualStudio.Shell.Package>:  
+6. Přidejte konstruktor veřejnou třídu, která přijímá jeden parametr typu <xref:Microsoft.VisualStudio.Shell.Package>:  
   
     ```vb  
     Public Sub New(ByVal parentPackage As Package)  
@@ -113,7 +113,7 @@ Tento návod ukazuje, jak vytvořit VSPackage, která se spustí [!INCLUDE[vsprv
     }  
     ```  
   
-7.  Upravit `EditorFactory` deklarace jsou odvozeny z třídy <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> rozhraní.  
+7. Upravit `EditorFactory` deklarace jsou odvozeny z třídy <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> rozhraní.  
   
     ```vb  
     Class EditorFactory Implements IVsEditorFacto  
@@ -124,7 +124,7 @@ Tento návod ukazuje, jak vytvořit VSPackage, která se spustí [!INCLUDE[vsprv
   
     ```  
   
-8.  Klikněte pravým tlačítkem na <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>, klikněte na tlačítko **implementovat rozhraní**a potom klikněte na tlačítko **implementovat rozhraní explicitně**.  
+8. Klikněte pravým tlačítkem na <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>, klikněte na tlačítko **implementovat rozhraní**a potom klikněte na tlačítko **implementovat rozhraní explicitně**.  
   
      Tento postup přidá čtyři metody, které je třeba implementovat v <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> rozhraní.  
   
@@ -320,20 +320,20 @@ Tento návod ukazuje, jak vytvořit VSPackage, která se spustí [!INCLUDE[vsprv
   
 ### <a name="to-register-the-editor-factory"></a>K registraci objekt factory editoru  
   
-1.  V **Průzkumníka řešení**, poklikejte na soubor Resources.resx a otevře se do tabulky řetězců, ve kterém položka **řetězec1 je** vybrané.  
+1. V **Průzkumníka řešení**, poklikejte na soubor Resources.resx a otevře se do tabulky řetězců, ve kterém položka **řetězec1 je** vybrané.  
   
-2.  Změna názvu identifikátor, který `IDS_EDITORNAME` a text, který má **MyPackage editoru.** Tento řetězec se zobrazí jako název editoru.  
+2. Změna názvu identifikátor, který `IDS_EDITORNAME` a text, který má **MyPackage editoru.** Tento řetězec se zobrazí jako název editoru.  
   
-3.  Otevřete soubor VSPackage.resx a přidejte nový řetězec, nastavte název na **101** a hodnota, která má `IDS_EDITORNAME`. To poskytuje balíček s ID prostředku pro přístup k řetězci, který jste právě vytvořili.  
+3. Otevřete soubor VSPackage.resx a přidejte nový řetězec, nastavte název na **101** a hodnota, která má `IDS_EDITORNAME`. To poskytuje balíček s ID prostředku pro přístup k řetězci, který jste právě vytvořili.  
   
     > [!NOTE]
-    >  Pokud soubor VSPackage.resx obsahuje jiný řetězec, který `name` atribut nastaven na **101**, jiný jedinečný, číselná hodnota, nahraďte tady a v následujících krocích.  
+    > Pokud soubor VSPackage.resx obsahuje jiný řetězec, který `name` atribut nastaven na **101**, jiný jedinečný, číselná hodnota, nahraďte tady a v následujících krocích.  
   
-4.  V **Průzkumníka řešení**, otevřete soubor MyPackagePackage.cs.  
+4. V **Průzkumníka řešení**, otevřete soubor MyPackagePackage.cs.  
   
      Jedná se o soubor hlavního balíčku.  
   
-5.  Přidejte následující atributy uživatele těsně před `Guid` atribut.  
+5. Přidejte následující atributy uživatele těsně před `Guid` atribut.  
   
     ```vb  
     <ProvideEditorFactoryAttribute(GetType(EditorFactory), 101)> _  
@@ -349,7 +349,7 @@ Tento návod ukazuje, jak vytvořit VSPackage, která se spustí [!INCLUDE[vsprv
   
      <xref:Microsoft.VisualStudio.Shell.ProvideEditorExtensionAttribute> Atribut přidruží přípona souboru .myext objekt pro vytváření editoru tak, aby pokaždé, když soubor, který je, že se načte rozšíření, je vyvolán objekt pro vytváření editoru.  
   
-6.  Přidejte privátní proměnnou, která `MyPackage` třídu před konstruktor a přiřaďte mu typ `EditorFactory`.  
+6. Přidejte privátní proměnnou, která `MyPackage` třídu před konstruktor a přiřaďte mu typ `EditorFactory`.  
   
     ```vb  
     Private editorFactory As EditorFactory  
@@ -359,7 +359,7 @@ Tento návod ukazuje, jak vytvořit VSPackage, která se spustí [!INCLUDE[vsprv
     private EditorFactory editorFactory;  
     ```  
   
-7.  Najít `Initialize` – metoda (možná budete muset otevřít `Package Members` počet skrytých oblastí:) a přidejte následující kód po volání `base.Initialize()`.  
+7. Najít `Initialize` – metoda (možná budete muset otevřít `Package Members` počet skrytých oblastí:) a přidejte následující kód po volání `base.Initialize()`.  
   
     ```vb  
     'Create our editor factory and register it.   
@@ -374,7 +374,7 @@ Tento návod ukazuje, jak vytvořit VSPackage, která se spustí [!INCLUDE[vsprv
   
     ```  
   
-8.  Kompilace programu a ujistěte se, že zde nejsou žádné chyby.  
+8. Kompilace programu a ujistěte se, že zde nejsou žádné chyby.  
   
      Tento krok zaregistruje objekt factory editoru v experimentální podregistru pro [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Pokud se zobrazí výzva k přepsání souboru resource.h, klikněte na tlačítko **OK**.  
   

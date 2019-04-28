@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e47934dd8aa2cea7a89f6e2ca0ff777227eba745
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: 391095acc1d2f541a3c497abeac5ae7248baa4e8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58144946"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446624"
 ---
 # <a name="idebugdocumenthelperaddunicodetext"></a>IDebugDocumentHelper::AddUnicodeText
 Připojí řetězec s kódováním Unicode na konci tohoto dokumentu.  
@@ -42,7 +42,7 @@ HRESULT AddUnicodeText(
 ## <a name="return-value"></a>Návratová hodnota  
  Metoda vrátí `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
   
-|Hodnota|Popis|  
+|Value|Popis|  
 |-----------|-----------------|  
 |`S_OK`|Metoda byla úspěšná.|  
 |`E_FAIL`|Metodu se nepodařilo přidat znaky.|  
@@ -51,7 +51,7 @@ HRESULT AddUnicodeText(
  Tato metoda generuje `IDebugDocumentTextEvents` oznámení.  
   
 > [!NOTE]
->  Pokud tato metoda je volána po `AddDeferredText` zavolání `E_FAIL` je vrácena.  
+> Pokud tato metoda je volána po `AddDeferredText` zavolání `E_FAIL` je vrácena.  
   
 ## <a name="see-also"></a>Viz také  
  [IDebugDocumentHelper Interface](../../winscript/reference/idebugdocumenthelper-interface.md)   

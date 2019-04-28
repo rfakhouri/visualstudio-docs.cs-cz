@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 29ee2b487299351b2d71a9b495257a939fb59f6c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 162f8df09b1f6ce9372a57728d653d5d3c20a551
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60070144"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415718"
 ---
 # <a name="register-the-program"></a>Registrace programu
 Po ladicí stroj získal port, reprezentovaný [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) rozhraní, je dalším krokem při povolení ladění programu registrace s portem. Po registraci do programu je k dispozici pro ladění pomocí jedné z následujících způsobů:
@@ -38,7 +38,7 @@ Po ladicí stroj získal port, reprezentovaný [IDebugPort2](../../extensibility
      Následující příklad ukazuje ladicí stroj spuštění programu a její registrací pomocí portu.
 
     > [!NOTE]
-    >  Tento vzorový kód není jediným způsobem, jak spustit a pokračovat v procesu. Tento kód je především Příklad registrace programu s portem.
+    > Tento vzorový kód není jediným způsobem, jak spustit a pokračovat v procesu. Tento kód je především Příklad registrace programu s portem.
 
     ```cpp
     // This is an IDebugEngineLaunch2 method.

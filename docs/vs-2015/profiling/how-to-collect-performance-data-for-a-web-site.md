@@ -19,12 +19,12 @@ caps.latest.revision: 38
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4391f4cf989b51a49b874e6eccdcceb28f609003
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3307b5372852d6f3e269264a02fa2c90cb1acd22
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060550"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432788"
 ---
 # <a name="how-to-collect-performance-data-for-a-web-site"></a>Postupy: Shromažďování dat výkonu pro webovou stránku
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "60060550"
 Můžete použít **Průvodce výkonem** ke shromažďování dat výkonu pro [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] webovou aplikaci. Můžete profilovat webové aplikace, která je otevřen v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], nebo můžete Profilovat [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] web, který je umístěn v místním počítači a ne otevřít v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] integrovaného vývojového prostředí.  
   
 > [!NOTE]
->  **Průvodce výkonem** umožňuje přidat dat (TIP) interakce vrstev, údaje o výkonu JScript nebo obojí, aby se shromážděná data profilace. Možnost TIP shromažďuje data z procesů na straně serveru. Profilace JScript shromažďuje data ze skriptů, které běží na místním nebo vzdáleném webovém serveru. Ve většině případů měli byste vybrat pouze jednu z možností.  
+> **Průvodce výkonem** umožňuje přidat dat (TIP) interakce vrstev, údaje o výkonu JScript nebo obojí, aby se shromážděná data profilace. Možnost TIP shromažďuje data z procesů na straně serveru. Profilace JScript shromažďuje data ze skriptů, které běží na místním nebo vzdáleném webovém serveru. Ve většině případů měli byste vybrat pouze jednu z možností.  
   
  V závislosti na nastavení oprávnění uživatelského přístupu, které správce má k dispozici jednotlivý uživatel může nebo nemusí mít oprávnění k vytvoření relace profileru v počítači, který je hostitelem procesu ASP.NET. Následující příklady znázorňují možné rozdíly mezi uživateli:  
   

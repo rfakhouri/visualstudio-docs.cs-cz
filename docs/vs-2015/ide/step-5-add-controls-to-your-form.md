@@ -9,12 +9,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3eb3e244fba620913581330c74825140c9dd76d7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e05e8c313e6c2345964386c9c4f08c1bb6f16089
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60081577"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442561"
 ---
 # <a name="step-5-add-controls-to-your-form"></a>Krok 5: Přidání ovládacích prvků do formuláře
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,14 +37,14 @@ V tomto kroku přidáte ovládací prvky, například `PictureBox` ovládacího 
 Úlohy třídy PictureBox  
   
     > [!NOTE]
-    >  Pokud omylem přidáte nesprávný typ ovládacího prvku do vašeho kontejneru TableLayoutPanel, můžete ho odstranit. Klikněte pravým tlačítkem na ovládací prvek a klikněte na tlačítko **odstranit** v kontextové nabídce. Můžete také odebrat ovládací prvky z formuláře pomocí panelu nabídek. V panelu nabídky zvolte **upravit**, **zpět**, nebo **upravit**, **odstranit**.  
+    > Pokud omylem přidáte nesprávný typ ovládacího prvku do vašeho kontejneru TableLayoutPanel, můžete ho odstranit. Klikněte pravým tlačítkem na ovládací prvek a klikněte na tlačítko **odstranit** v kontextové nabídce. Můžete také odebrat ovládací prvky z formuláře pomocí panelu nabídek. V panelu nabídky zvolte **upravit**, **zpět**, nebo **upravit**, **odstranit**.  
   
 5. Zvolte **ukotvit v nadřazeném kontejneru** odkaz. Tím se automaticky nastaví ovládací prvek PictureBox **Dock** vlastnost **vyplnit**. Tento údaj zobrazíte, zvolte ovládací prvek PictureBox vyberte ho, přejděte na **vlastnosti** okna, a ujistěte se, že **Dock** je nastavena na **vyplnit**.  
   
 6. Nechejte PictureBox roztáhnout oba sloupce změnou jeho **ColumnSpan** vlastnost. Vyberte ovládací prvek PictureBox a nastavte jeho **ColumnSpan** vlastnost **2**. Také když je PictureBox prázdný, budete chtít zobrazit prázdný rámeček. Nastavte jeho **BorderStyle** vlastnost **Fixed3D**.  
   
     > [!NOTE]
-    >  Pokud se nezobrazí **ColumnSpan** vlastnost pro váš ovládací prvek PictureBox, pak je pravděpodobné, že ovládací prvek PictureBox byl přidán do formuláře, nikoli do TableLayoutPanel. Chcete-li tento problém vyřešit, zvolte ovládací prvek PictureBox, odstraňte ji, vyberte TableLayoutPanel a potom přidejte nový prvek PictureBox.  
+    > Pokud se nezobrazí **ColumnSpan** vlastnost pro váš ovládací prvek PictureBox, pak je pravděpodobné, že ovládací prvek PictureBox byl přidán do formuláře, nikoli do TableLayoutPanel. Chcete-li tento problém vyřešit, zvolte ovládací prvek PictureBox, odstraňte ji, vyberte TableLayoutPanel a potom přidejte nový prvek PictureBox.  
   
 7. Vyberte TableLayoutPanel ve formuláři a potom přidat **zaškrtávací políčko** ovládacího prvku na formuláři. Dvakrát klikněte **zaškrtávací políčko** položky v panelu nástrojů a přidat nový ovládací prvek CheckBox do další volné buňky v tabulce. Protože PictureBox zabírá v kontejneru TableLayoutPanel první dvě buňky, ovládací prvek CheckBox je přidán do levé dolní buňky. Zvolte **Text** vlastnost a zadejte hledané klíčové slovo **Stretch**, jak je znázorněno na následujícím obrázku.  
   
@@ -54,7 +54,7 @@ TextBox – ovládací prvek s vlastností Stretch
 8. Vyberte TableLayoutPanel ve formuláři a potom přejděte ke **kontejnery** skupině na panelu nástrojů (kde jste získali váš ovládací prvek) a dvakrát klikněte **FlowLayoutPanel** položky pro přidání nového ovládacího prvku do poslední buňky v ovládacím prvku PictureBox (vpravo dole). Potom ukotvěte FlowLayoutPanel v TableLayoutPanel (výběrem **ukotvit v nadřazeném kontejneru** v seznamu úloh černého trojúhelníku panelu FlowLayoutPanel nebo nastavením panelu FlowLayoutPanel **ukotvit** Vlastnost **vyplnit**).  
   
     > [!NOTE]
-    >  FlowLayoutPanel je kontejner, který uspořádá jiné ovládací prvky do úhledných řádků v pořadí. Když změníte velikost FlowLayoutPanel, pokud má místo k rozložení všech ovládacích prvků v jediném řádku, udělá to. V opačném případě je uspořádá na řádcích, jednoho nad druhým. Použijete FlowLayoutPanel k podržení čtyř tlačítek. Pokud jsou tlačítka uspořádány, jeden v druhém při přidání, ujistěte se, že je vybraná FlowLayoutPanel před přidáním tlačítek. I když bylo uvedeno dříve, že každá buňka může obsahovat pouze jeden ovládací prvek, pravém dolním rohu buňky kontejneru TableLayoutPanel má čtyři ovládací prvky tlačítka. Je to proto, že do buňky obsahující další ovládací prvky můžete umístit ovládací prvek. Tento druh ovládacího prvku se nazývá kontejner a FlowLayoutPanel je kontejner.  
+    > FlowLayoutPanel je kontejner, který uspořádá jiné ovládací prvky do úhledných řádků v pořadí. Když změníte velikost FlowLayoutPanel, pokud má místo k rozložení všech ovládacích prvků v jediném řádku, udělá to. V opačném případě je uspořádá na řádcích, jednoho nad druhým. Použijete FlowLayoutPanel k podržení čtyř tlačítek. Pokud jsou tlačítka uspořádány, jeden v druhém při přidání, ujistěte se, že je vybraná FlowLayoutPanel před přidáním tlačítek. I když bylo uvedeno dříve, že každá buňka může obsahovat pouze jeden ovládací prvek, pravém dolním rohu buňky kontejneru TableLayoutPanel má čtyři ovládací prvky tlačítka. Je to proto, že do buňky obsahující další ovládací prvky můžete umístit ovládací prvek. Tento druh ovládacího prvku se nazývá kontejner a FlowLayoutPanel je kontejner.  
   
 ### <a name="to-add-buttons"></a>Přidat tlačítka  
   
@@ -63,14 +63,14 @@ TextBox – ovládací prvek s vlastností Stretch
 2. Obvykle přidáte další tlačítka pomocí panelu nástrojů. Tentokrát vyberte možnost **button2**a pak na panelu nabídek zvolte **upravit**, **kopírování** (nebo stiskněte kombinaci kláves Ctrl + C). V panelu nabídky zvolte **upravit**, **vložte** (nebo stiskněte klávesy Ctrl + V) k vložení kopie vašeho tlačítka. Nyní jej vložte znovu. IDE nyní přidalo **button3** a **button4** do FlowLayoutPanel.  
   
     > [!NOTE]
-    >  Můžete zkopírovat a vložit libovolný ovládací prvek. Rozhraní IDE pojmenuje a umístí nové ovládací prvky logickým způsobem. Pokud vložíte ovládací prvek do kontejneru, rozhraní IDE zvolí další logický prostor pro umístění.  
+    > Můžete zkopírovat a vložit libovolný ovládací prvek. Rozhraní IDE pojmenuje a umístí nové ovládací prvky logickým způsobem. Pokud vložíte ovládací prvek do kontejneru, rozhraní IDE zvolí další logický prostor pro umístění.  
   
 3. Vyberte první tlačítko a nastavte jeho **Text** vlastnost **zobrazit obrázek**. Nastavte **Text** vlastnosti dalších tří tlačítek na **Vymazat obrázek**, **nastavit barvu pozadí**, a **Zavřít**.  
   
 4. Dalším krokem je změnit velikost tlačítek a uspořádat je tak, aby jejich zarovnání bylo k pravé straně panelu. Vyberte FlowLayoutPanel a podívejte se na jeho **FlowDirection** vlastnost. Změňte ji tak, že je nastavena na **RightToLeft**. Jakmile provedete, tlačítka by měl vlastní vyrovnání v rámci na pravou stranu buňky a jejich pořadí se obrátit tak, aby **zobrazit obrázek** je tlačítko na pravé straně.  
   
     > [!NOTE]
-    >  Pokud jsou tlačítka stále v nesprávném pořadí, můžete přetáhnout tlačítka kolem kontejneru FlowLayoutPanel k změně jejich uspořádání v libovolném pořadí. Můžete zvolit tlačítko a přetáhnout je doleva nebo doprava.  
+    > Pokud jsou tlačítka stále v nesprávném pořadí, můžete přetáhnout tlačítka kolem kontejneru FlowLayoutPanel k změně jejich uspořádání v libovolném pořadí. Můžete zvolit tlačítko a přetáhnout je doleva nebo doprava.  
   
 5. Zvolte **Zavřít** tlačítko a vyberte ji. Podržte stisknutou klávesu CTRL a vyberte další tři tlačítka tak, aby byly všechny vybrány. Zatímco jsou všechna tlačítka vybrána, přejděte **vlastnosti** okno a posouvejte nahoru až **AutoSize** vlastnost. Tato vlastnost říká tlačítku, že automaticky změní velikost sebe sama na vhodnou všechen text. Nastavte ho na **true**. Tlačítka by měla být nyní správně velká a být ve správném pořadí. (Dokud jsou vybrány všechna čtyři tlačítka, můžete změnit všechny čtyři **AutoSize** vlastnosti ve stejnou dobu.) Následující obrázek znázorňuje čtyři tlačítka.  
   
