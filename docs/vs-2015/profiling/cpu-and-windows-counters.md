@@ -14,12 +14,12 @@ caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7b16691a3837bcdeee87b40b36b5b669d671b938
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: eceadf1b1bf82876a20027a9d29c8336e381d18d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60046243"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434305"
 ---
 # <a name="cpu-and-windows-counters"></a>Čítače procesoru a systému Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Visual Studio Profiler umožňuje shromažďovat data o výkonu, který byl vyge
 - [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
 > [!NOTE]
->  Rozšířené funkce zabezpečení v systému Windows 8 a Windows Server 2012 vyžadují významné změny ve způsobu, jakým profiler systému Visual Studio na těchto platformách shromažďuje data. Aplikace Windows Store také vyžadují nové techniky kolekce. Zobrazit [nástroje pro výkon v aplikacích Windows 8 a Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
+> Rozšířené funkce zabezpečení v systému Windows 8 a Windows Server 2012 vyžadují významné změny ve způsobu, jakým profiler systému Visual Studio na těchto platformách shromažďuje data. Aplikace Windows Store také vyžadují nové techniky kolekce. Zobrazit [nástroje pro výkon v aplikacích Windows 8 a Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
   
 ## <a name="windows-counters"></a>Čítače Windows  
  Čítače Windows jsou součástí infrastruktury diagnostiky Windows, který poskytuje informace o výkonu operačního systému nebo aplikace, služby nebo ovladače. Čítače Windows závisí na konfiguraci počítače aktuální a nemusí být k dispozici na jiných počítačích. Čítače výkonu Windows jsou shromážděny v Profilování datové soubory jako profilovací značky, které lze použít k filtrování zobrazení a sestavy.  

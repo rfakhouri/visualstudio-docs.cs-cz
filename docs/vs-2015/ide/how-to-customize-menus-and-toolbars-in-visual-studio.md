@@ -28,12 +28,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 69e18d2baabd7bffcf794def593022b898bcd940
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 91223021ce6f05b91d47e7b7019fb0c5c02243db
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60094525"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63416789"
 ---
 # <a name="how-to-customize-menus-and-toolbars-in-visual-studio"></a>Postupy: Přizpůsobení nabídek a panelů nástrojů v sadě Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ ms.locfileid: "60094525"
 Visual Studio si můžete přizpůsobit nejen tak, že přidáte nebo odeberete panely nástrojů a nabídky na řádku nabídek, ale také tak, že přidáte nebo odeberete příkazy na jakémkoli daném panelu nástrojů nebo nabídce.
 
 > [!WARNING]
->  Po přizpůsobení panelu nástrojů nebo nabídky, ujistěte se, že jeho zaškrtávací políčko zaškrtnuto v **vlastní** dialogové okno. V opačném případě se vaše změny po ukončení a opětovném spuštění sady Visual Studio nezachovají.
+> Po přizpůsobení panelu nástrojů nebo nabídky, ujistěte se, že jeho zaškrtávací políčko zaškrtnuto v **vlastní** dialogové okno. V opačném případě se vaše změny po ukončení a opětovném spuštění sady Visual Studio nezachovají.
 
  **V tomto tématu:**
 
@@ -84,14 +84,14 @@ Visual Studio si můžete přizpůsobit nejen tak, že přidáte nebo odeberete 
     - Chcete-li vlastní panel nástrojů odebrat, zvolte jej v **panely nástrojů** seznamu a klikněte na tlačítko **odstranit** tlačítko.
 
         > [!IMPORTANT]
-        >  Můžete odstranit panely nástrojů, které vytvoříte, ale ne výchozí panely nástrojů.
+        > Můžete odstranit panely nástrojů, které vytvoříte, ale ne výchozí panely nástrojů.
 
     - Chcete-li přesunout do jiné umístění ukotvení panelu nástrojů, zvolte jej v **panely nástrojů** klikněte na položku **změnit výběr** tlačítko a pak v zobrazeném seznamu zvolte umístění.
 
          Panel nástrojů můžete také přetáhnout pomocí jeho levého okraje na libovolné místo v hlavní oblasti ukotvení.
 
         > [!NOTE]
-        >  Další informace o možnostech zlepšení použitelnosti a přístupnosti panelů nástrojů naleznete v tématu [jak: Nastavení možností usnadnění přístupu IDE](../ide/reference/how-to-set-ide-accessibility-options.md).
+        > Další informace o možnostech zlepšení použitelnosti a přístupnosti panelů nástrojů naleznete v tématu [jak: Nastavení možností usnadnění přístupu IDE](../ide/reference/how-to-set-ide-accessibility-options.md).
 
 ## <a name="bkmk_customize"></a> Přizpůsobení nabídky nebo panelu nástrojů
 

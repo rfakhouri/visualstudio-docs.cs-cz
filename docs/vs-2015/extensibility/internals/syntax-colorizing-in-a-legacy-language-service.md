@@ -13,12 +13,12 @@ ms.assetid: 1ca1736a-f554-42e4-a9c7-fe8c3c1717df
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 585208150047b32adfdac916146268751a2a1287
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 64e57ebc80320ccc133261781eb8ee6611c8e2a0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54771472"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441229"
 ---
 # <a name="syntax-colorizing-in-a-legacy-language-service"></a>Barevné zvýrazňování syntaxe ve službě starší verze jazyka
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Barevné zvýrazňování syntaxe je funkce, která způsobí, že různé prvky
  Služby starší verze jazyka jsou implementovány jako součást sady VSPackage, ale novější způsob implementace funkce služba jazyka je pro použití rozšíření MEF. Další informace najdete v tématu [rozšíření pro Editor a jazykových služeb](../../extensibility/extending-the-editor-and-language-services.md).  
   
 > [!NOTE]
->  Doporučujeme vám, že začnete používat nový editor API co nejdříve. Tím vylepšíme výkonu vaší služby jazyka a umožňují využívat nové funkce editoru.  
+> Doporučujeme vám, že začnete používat nový editor API co nejdříve. Tím vylepšíme výkonu vaší služby jazyka a umožňují využívat nové funkce editoru.  
   
 ## <a name="implementation"></a>Implementace  
  Pro podporu zabarvení, zahrnuje rozhraní spravovaného balíčku (MPF) <xref:Microsoft.VisualStudio.Package.Colorizer> třídy, která implementuje <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> rozhraní. Tato třída komunikuje <xref:Microsoft.VisualStudio.Package.IScanner> k určení tokenu a barvy. Další informace o skenery, naleznete v tématu [starší verze jazyka analyzátor a skener služby](../../extensibility/internals/legacy-language-service-parser-and-scanner.md). <xref:Microsoft.VisualStudio.Package.Colorizer> Třídy pak označí každý znak token s informace o barvě a vrátí tyto informace do editoru zobrazení zdrojového souboru.  
@@ -39,10 +39,10 @@ Barevné zvýrazňování syntaxe je funkce, která způsobí, že různé prvky
  Chcete-li zadat vlastní které lze zabarvit položek, je nutné přepsat <xref:Microsoft.VisualStudio.Package.LanguageService.GetItemCount%2A> a <xref:Microsoft.VisualStudio.Package.LanguageService.GetColorableItem%2A> metodu na <xref:Microsoft.VisualStudio.Package.LanguageService> třídy. První metoda vrátí počet vlastních které lze zabarvit položek, které podporuje služba jazyka a druhá získá vlastní které lze zabarvit položky podle indexu. Vytvoříte výchozí seznam položek, které lze zabarvit vlastní. V konstruktoru služby jazyka vše, co je potřeba je zadat každou které lze zabarvit položku s názvem. Visual Studio automaticky zpracovává případ, které si uživatel vybere jinou sadu položek, které lze zabarvit. Tento název se zobrazí v **písma a barvy** stránku vlastností na **možnosti** dialogové okno (k dispozici v sadě Visual Studio **nástroje** nabídky) a tento název určuje, které Barva uživatele přepsal. Možnosti uživatele jsou uloženy v mezipaměti v registru a přistupuje název barvy. **Písma a barvy** stránku vlastností jsou uvedeny všechny názvy barev v abecedním pořadí, tak můžete seskupit vlastních barev před každý název barvy s vaším jménem jazyk; například "**TestLanguage - Comment**"a"**TestLanguage – klíčové slovo**". Nebo můžete seskupit podle typu, které lze zabarvit položky "**komentář (TestLanguage)**"a"**– klíčové slovo (TestLanguage)**". Seskupení podle názvu jazyka je upřednostňována.  
   
 > [!CAUTION]
->  Důrazně doporučujeme zahrnout název jazyka název které lze zabarvit položky pro zabránění kolizím s existující názvy, které lze zabarvit položky.  
+> Důrazně doporučujeme zahrnout název jazyka název které lze zabarvit položky pro zabránění kolizím s existující názvy, které lze zabarvit položky.  
   
 > [!NOTE]
->  Pokud změníte název jedné z vašich barvy během vývoje, je nutné obnovit mezipaměti, která sadě Visual Studio vytvoří při prvním, které používaly barev. Můžete tak učinit spuštěním **resetovat experimentální Hive** z nabídky aplikace Visual Studio SDK.  
+> Pokud změníte název jedné z vašich barvy během vývoje, je nutné obnovit mezipaměti, která sadě Visual Studio vytvoří při prvním, které používaly barev. Můžete tak učinit spuštěním **resetovat experimentální Hive** z nabídky aplikace Visual Studio SDK.  
   
  Všimněte si, že první položka v seznamu položek, které lze zabarvit nikdy odkazován. Visual Studio vždy poskytuje výchozí barvy textu a atributy pro danou položku. Nejjednodušší způsob řešení problémů s tím je zadat položku které lze zabarvit zástupný text jako první položku.  
   

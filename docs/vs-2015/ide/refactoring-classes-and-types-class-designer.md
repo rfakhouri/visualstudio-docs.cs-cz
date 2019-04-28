@@ -20,12 +20,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1fae6a503323d42d4f759a30b4db790a88079815
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: eaee3dae25f5f2e5544a2521a7bce0201b45a3e2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60048395"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441155"
 ---
 # <a name="refactoring-classes-and-types-class-designer"></a>Refaktoring tříd a typů (návrhář tříd)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "60048395"
 Když refaktorujete kód, můžete bylo snazší porozumět, udržovat a efektivnější tak, že změníte její interní strukturu a způsobu jeho objektů navržena, není externí chování. Ke snížení práci, kterou musíte udělat a riziko zavlečení chyby při refaktorování kódu jazyka Visual C# .NET, Visual Basic .NET nebo C++ v projektu sady Visual Studio pomocí návrháře tříd a okně podrobností třídy.  
   
 > [!NOTE]
->  Soubory projektu může být jen pro čtení, protože projekt je pod správou zdrojového kódu a není rezervován; jedná o Odkazovaný projekt; nebo jeho soubory označené jako jen pro čtení na disku. Při práci v projektu v jednom z těchto stavů, zobrazí se různé způsoby, jak uložit práci v závislosti na stavu projektu. To platí pro refaktoring kódu a také na kód, který změníte jiným způsobem, jako je například Přímá úprava. Další informace najdete v tématu [zobrazení jen pro čtení informací (návrhář tříd)](http://msdn.microsoft.com/33e2d3a9-1668-4d10-ae56-fa09b3156e0a).  
+> Soubory projektu může být jen pro čtení, protože projekt je pod správou zdrojového kódu a není rezervován; jedná o Odkazovaný projekt; nebo jeho soubory označené jako jen pro čtení na disku. Při práci v projektu v jednom z těchto stavů, zobrazí se různé způsoby, jak uložit práci v závislosti na stavu projektu. To platí pro refaktoring kódu a také na kód, který změníte jiným způsobem, jako je například Přímá úprava. Další informace najdete v tématu [zobrazení jen pro čtení informací (návrhář tříd)](http://msdn.microsoft.com/33e2d3a9-1668-4d10-ae56-fa09b3156e0a).  
   
 ## <a name="common-tasks"></a>Obecné úlohy  
   
@@ -65,7 +65,7 @@ Když refaktorujete kód, můžete bylo snazší porozumět, udržovat a efektiv
 3. Chcete-li přesunout fokus z buňky, stiskněte **ENTER** klíče nebo klikněte na tlačítko mimo buňku.  
   
     > [!NOTE]
-    >  V okně podrobností třídy můžete změnit název člena, ale není typu.  
+    > V okně podrobností třídy můžete změnit název člena, ale není typu.  
   
 ##### <a name="to-rename-a-name-in-the-properties-window"></a>Chcete-li přejmenovat na název v okně Vlastnosti  
   

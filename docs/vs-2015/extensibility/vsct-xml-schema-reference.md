@@ -11,12 +11,12 @@ ms.assetid: 49e7efae-e713-4762-a824-96fdaf92cdc9
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 9d95275f5b4ffd91f993fc3e5a650d3d160fa2a4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: e56de828d3b357762da98cde3b9591033c6b5d19
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54797301"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441481"
 ---
 # <a name="vsct-xml-schema-reference"></a>XML schéma VSCT – referenční informace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,10 +26,10 @@ Poskytuje tabulku elementy schématu tabulky kompilátoru příkaz, povolené po
  Soubor konfigurace (.vsct) založený na formátu XML příkaz tabulka definuje příkaz prvky, které poskytuje VSPackage integrovaného vývojového prostředí (IDE). Tyto prvky patří položek nabídky, nabídky, panely nástrojů a pole se seznamem.  
   
 > [!NOTE]
->  Kompilátor VSCT lze spustit v souboru .vsct preprocesor. Protože to je obvykle zahrnuje C++ preprocesoru, že můžete definovat a makra, které mají stejnou syntaxi, která se používá v souborech C++. Příklady jsou součástí .vsct souboru, který **nový projekt** průvodcem pro projekt VSPackage.  
+> Kompilátor VSCT lze spustit v souboru .vsct preprocesor. Protože to je obvykle zahrnuje C++ preprocesoru, že můžete definovat a makra, které mají stejnou syntaxi, která se používá v souborech C++. Příklady jsou součástí .vsct souboru, který **nový projekt** průvodcem pro projekt VSPackage.  
   
 ## <a name="optional-elements"></a>Volitelné prvky  
- Některé VSCT prvky jsou volitelné. Pokud `Parent` argument nezadáte, bude mlčky předpokládané Group_Undefined:0. Pokud `Icon` argument nezadáte, bude mlčky předpokládané guidOfficeIcon:msotcidNoIcon. Když je definována klávesovou zkratku, emulace, která se obvykle nepoužívá, je volitelný.  
+ Některé VSCT prvky jsou volitelné. Pokud `Parent` argument nezadá, Group_Undefined:0 bude možné implicitní. Pokud `Icon` argument nezadáte, bude mlčky předpokládané guidOfficeIcon:msotcidNoIcon. Když je definována klávesovou zkratku, emulace, která se obvykle nepoužívá, je volitelný.  
   
  Rastrový obrázek položky může být vložen v době kompilace, tak, že zadáte umístění pruhu rastrového obrázku v `href` argument. Vymazat bitmapu je zkopírované během sloučení spíše než extrahovaná ze zdroje knihovny DLL. Když `href` argument je k dispozici, `usedList` volitelně argument a všechny sloty v pruhu rastrového obrázku jsou považovány za použít.  
   

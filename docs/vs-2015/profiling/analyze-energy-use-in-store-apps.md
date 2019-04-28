@@ -14,25 +14,25 @@ caps.latest.revision: 39
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b61f367384c8ff11de72f16586a98a5d54f0ee06
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 67dd471808b938428d1c9e3f2d5b10c36f2bc914
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54790350"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435108"
 ---
 # <a name="analyze-energy-use-in-store-apps"></a>Analýza spotřeby energie v aplikacích pro Store
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio **spotřeba energie** profiler pomáhá analyzovat spotřebu energie aplikací pro Windows Store na s nízkou spotřebou, na kterých běží všechny nebo část času, na vlastní baterie. Na zařízení napájeném z baterie může aplikace s příliš vysokou spotřebou energie způsobit tak velkou nespokojenost zákazníka, že ji může dokonce i odinstalovat. Optimalizace využití energie můžete zlepšit přijetí a používání aplikace zákazníky.  
   
-##  <a name="BKMK_What_the_Energy_Consumption_tool_is__how_it_works__and_what_it_measures"></a> Co je profiler spotřeba energie, jak to funguje a co měří  
+## <a name="BKMK_What_the_Energy_Consumption_tool_is__how_it_works__and_what_it_measures"></a> Co je profiler spotřeba energie, jak to funguje a co měří  
  Profiler Spotřeba energie shromažďuje údaje o činnosti displeje, procesoru a síťových připojení zařízení během relace profilování. Poté vygeneruje odhady množství energie použité pro tyto činnosti a celkové množství energie použité pro relaci profilování.  
   
 > [!NOTE]
->  Energetický profiler provádí odhad výkonu a spotřeby energie pomocí softwarového modelu standardního hardwaru referenčního zařízení, jež reprezentuje tablety s nízkou spotřebou, na kterých by vaše aplikace mohla běžet. Pro dosažení co nejlepšího odhadu doporučujeme shromáždit profilová data u tabletů s nízkou spotřebou.  
+> Energetický profiler provádí odhad výkonu a spotřeby energie pomocí softwarového modelu standardního hardwaru referenčního zařízení, jež reprezentuje tablety s nízkou spotřebou, na kterých by vaše aplikace mohla běžet. Pro dosažení co nejlepšího odhadu doporučujeme shromáždit profilová data u tabletů s nízkou spotřebou.  
 >   
->  Ačkoliv model poskytuje dobré odhady pro řadu zařízení s nízkou spotřebou, skutečné hodnoty zařízení, která profilujete, budou pravděpodobně odlišné. Použijte tyto hodnoty pro nalezení aktivit displeje, procesoru a sítě, které jsou v porovnání s využitím jiných prostředků náročné, takže by mohly představovat vhodné kandidáty na optimalizaci.  
+> Ačkoliv model poskytuje dobré odhady pro řadu zařízení s nízkou spotřebou, skutečné hodnoty zařízení, která profilujete, budou pravděpodobně odlišné. Použijte tyto hodnoty pro nalezení aktivit displeje, procesoru a sítě, které jsou v porovnání s využitím jiných prostředků náročné, takže by mohly představovat vhodné kandidáty na optimalizaci.  
   
  Profiler spotřeba energie používá tyto definice *power* a *energie*:  
   
@@ -46,7 +46,7 @@ Visual Studio **spotřeba energie** profiler pomáhá analyzovat spotřebu energ
   
   Například plně nabitá baterie v tabletu uchovává určité množství energie. Při využívání této energie pro provádění úloh, jako je například komunikace po síti, výpočty hodnot nebo zobrazování grafického obsahu, se výkon spotřebovává různou rychlostí. Pro libovolné časové období se celkové množství spotřebovaného výkonu poměřuje také energií.  
   
-##  <a name="BKMK_Identify_scenarios_with_user_marks"></a> Určit scénáře s uživatelskými značkami  
+## <a name="BKMK_Identify_scenarios_with_user_marks"></a> Určit scénáře s uživatelskými značkami  
  Můžete přidat *uživatelské značky* do vlastních profilovacích dat. Chcete-li usnadníte identifikaci oblastí na časové ose.  
   
  ![Značky uživatele na časové ose](../profiling/media/profilers-usermarktimeline.png "PROFILERS_UserMarkTimeline")  
@@ -61,7 +61,7 @@ Visual Studio **spotřeba energie** profiler pomáhá analyzovat spotřebu energ
   
 > [!NOTE]
 > - Obor názvů Windows.Foundation.Diagnostics.loggingchannel implementuje [Windows.Foundation.IClosable](http://msdn.microsoft.com/library/windows/apps/windows.foundation.iclosable.aspx) rozhraní (předpokládané podobě [rozhraní System.IDisposable](http://msdn.microsoft.com/library/System.IDisposable.aspx) v C# a VB). Aby se zabránilo nevrácení prostředků operačního systému, volejte [LoggingChannel.Close](http://msdn.microsoft.com/library/windows/apps/windows.foundation.diagnostics.loggingchannel.close.aspx)() (Windows.Foundation.Diagnostics.LoggingChannel.Dispose() v C# a VB) po dokončení protokolovacího kanálu.  
->   -   Každý otevřený protokolovací kanál musí mít jedinečný název. Pokus o vytvoření nového protokolovacího kanálu se stejným názvem, jaké má jiný kanál, způsobil výjimku.  
+>   - Každý otevřený protokolovací kanál musí mít jedinečný název. Pokus o vytvoření nového protokolovacího kanálu se stejným názvem, jaké má jiný kanál, způsobil výjimku.  
   
  Viz ukázku Windows SDK [ukázka LoggingSession](http://code.msdn.microsoft.com/windowsapps/LoggingSession-Sample-ccd52336) příklady.  
   
@@ -77,34 +77,34 @@ if (performance && performance.mark) {
   
  *markDescription* je řetězec, který obsahuje zprávu zobrazíte v popisu uživatelské značky.  
   
-##  <a name="BKMK_Configure_your_environment_for_profiling"></a> Konfigurace prostředí pro profilaci  
+## <a name="BKMK_Configure_your_environment_for_profiling"></a> Konfigurace prostředí pro profilaci  
  Pro získání kvalitních odhadů je vhodné provést profilaci využití energie aplikací na zařízení s nízkou spotřebou, které je napájeno bateriemi. Protože aplikaci Visual Studio nelze na většině z těchto zařízení spustit, bude třeba k tomuto zařízení pomocí nástrojů Visual Studio Remote Tools připojit počítač, na kterém aplikace Visual Studio běží. Pro připojení ke vzdálenému zařízení je třeba nakonfigurovat jak projekt aplikace Visual Studio, tak vzdálené zařízení. Zobrazit [aplikace Windows Store spustit ve vzdáleném počítači](../debugger/run-windows-store-apps-on-a-remote-machine.md) Další informace.  
   
 > [!TIP]
 > - Nedoporučujeme provádět energetickou profilaci na simulátoru Windows Store ani na počítači, na kterém běží aplikace Visual Studio. Profilace přímo na příslušném zařízení poskytuje mnohem realističtější data.  
->   -   Provádějte profilaci na cílovém zařízení v době, kdy je zařízení napájeno bateriemi.  
->   -   Zavřete ostatní aplikace, které by mohly využívat stejné prostředky (síť, procesor nebo displej).  
+>   - Provádějte profilaci na cílovém zařízení v době, kdy je zařízení napájeno bateriemi.  
+>   - Zavřete ostatní aplikace, které by mohly využívat stejné prostředky (síť, procesor nebo displej).  
   
-##  <a name="BKMK_Collect_energy_profile_data_for_your_app"></a> Shromažďování dat o energetickém profilu vaší aplikace  
+## <a name="BKMK_Collect_energy_profile_data_for_your_app"></a> Shromažďování dat o energetickém profilu vaší aplikace  
   
-1.  Na **ladění** nabídce zvolte **spustit diagnostické nástroje bez ladění**.  
+1. Na **ladění** nabídce zvolte **spustit diagnostické nástroje bez ladění**.  
   
      ![Zvolte spotřebu energie v centra diagnostiky](../profiling/media/energyprof-diagnosticshub.png "ENERGYPROF_DiagnosticsHub")  
   
-2.  Zvolte **spotřeba energie** a klikněte na tlačítko **Start**.  
+2. Zvolte **spotřeba energie** a klikněte na tlačítko **Start**.  
   
     > [!NOTE]
-    >  Při spuštění **spotřeba energie** profiler, může se zobrazit **řízení uživatelských účtů** okno povolení ke spuštění VsEtwCollector.exe. Zvolte **Ano**.  
+    > Při spuštění **spotřeba energie** profiler, může se zobrazit **řízení uživatelských účtů** okno povolení ke spuštění VsEtwCollector.exe. Zvolte **Ano**.  
   
-3.  Spusťte v aplikaci shromažďování dat.  
+3. Spusťte v aplikaci shromažďování dat.  
   
-4.  Pokud chcete profilaci zastavit, přepněte zpět do sady Visual Studio (Alt + Tab) a zvolte **zastavit shromažďování** na stránce centra diagnostiky.  
+4. Pokud chcete profilaci zastavit, přepněte zpět do sady Visual Studio (Alt + Tab) a zvolte **zastavit shromažďování** na stránce centra diagnostiky.  
   
      ![Shromažďování dat ukončit](../profiling/media/xamlprof-stopcollection.png "XAMLProf_StopCollection")  
   
      Aplikace Visual Studio analyzuje shromážděná data a zobrazuje výsledky.  
   
-##  <a name="BKMK_Collect_energy_profile_data_for_an_installed_app"></a> Shromažďování dat o energetickém profilu nainstalované aplikace  
+## <a name="BKMK_Collect_energy_profile_data_for_an_installed_app"></a> Shromažďování dat o energetickém profilu nainstalované aplikace  
  Nástroj Spotřeba energie lze spustit pouze v aplikacích pro Windows Store 8.1, které jsou spouštěny z řešení aplikace Visual Studio nebo jsou instalovány z Windows Store. Pokud je řešení otevřené v sadě Visual Studio, je výchozí cíl **spouštěný projekt**. Zacílení nainstalované aplikace:  
   
 1. Zvolte **změnit cíl** a klikněte na tlačítko **nainstalovaná aplikace**.  
@@ -117,7 +117,7 @@ if (performance && performance.mark) {
   
    Pokud chcete profilaci zastavit, přepněte zpět do sady Visual Studio (Alt + Tab) a zvolte **zastavit shromažďování** na stránce centra diagnostiky.  
   
-##  <a name="BKMK_Analyze_energy_profile_data"></a> Analýza dat energetického profilu  
+## <a name="BKMK_Analyze_energy_profile_data"></a> Analýza dat energetického profilu  
  Data energetického profilu se zobrazují v okně dokumentu aplikace Visual Studio:  
   
  ![Stránka sestavy profileru energie](../profiling/media/energyprof-all.png "ENERGYPROF_All")  
@@ -135,7 +135,7 @@ if (performance && performance.mark) {
   
  Najděte oblast, kde výkon prostředku dosáhl vrcholu. Přiřaďte tuto oblast k funkci vaší aplikace. Pomocí ovládacích panelů časové osy můžete tuto oblast přiblížit. Pokud vás zajímá využití sítě, rozbalte **sítě** uzlu v **prostředky (zapnuto/vypnuto)** grafu se porovnat čas, který byl síťové připojení otevřené, s dobou, která aplikace přijímala nebo přenosu data přes dané připojení. Zkrácení doby, po kterou je síť zbytečně otevřená, představuje velmi efektivní optimalizaci.  
   
-##  <a name="BKMK_Optimize_energy_use"></a> Optimalizace spotřeby energie  
+## <a name="BKMK_Optimize_energy_use"></a> Optimalizace spotřeby energie  
  Kromě přenosu dat vynakládají síťová připojení energii také na inicializaci, udržování a ukončování připojení. Některé sítě udržují připojení po určitou dobu po odeslání nebo přijetí dat, aby umožnily přenos většího množství dat v rámci jednoho připojení. Můžete použít **prostředky (zapnuto/vypnuto)** podokně způsobu, jakým aplikace komunikuje s připojením.  
   
  ![Prostředky &#40;na&#47;vypnout&#41; podokně](../profiling/media/energyprof-resources.png "ENERGYPROF_Resources")  
@@ -146,10 +146,10 @@ if (performance && performance.mark) {
   
  Spotřebu energie displeje lze ovlivnit hůře. Většina obrazovek potřebuje více energie k zobrazení světlých barev než tmavších barev, takže jedním ze způsobů, jak snížit spotřebu, je použití tmavého pozadí.  
   
-##  <a name="BKMK_Other_resources"></a> Další prostředky  
+## <a name="BKMK_Other_resources"></a> Další prostředky  
   
--   **Stav připojení a správa spotřeby** oddíly pro [jazyka C# / VB/C++ a XAML](http://msdn.microsoft.com/0ee0b706-8432-4d49-9801-306ed90764e1) a [jazyka JavaScript a HTML](http://msdn.microsoft.com/372afa6a-1c7c-4657-967d-03a77cd8e933) Windows Dev Center popisují rozhraní Windows API, které poskytují informace o síťovém připojení, které vaše aplikace může používat minimalizovat náklady na síťový provoz.  
+- **Stav připojení a správa spotřeby** oddíly pro [jazyka C# / VB/C++ a XAML](http://msdn.microsoft.com/0ee0b706-8432-4d49-9801-306ed90764e1) a [jazyka JavaScript a HTML](http://msdn.microsoft.com/372afa6a-1c7c-4657-967d-03a77cd8e933) Windows Dev Center popisují rozhraní Windows API, které poskytují informace o síťovém připojení, které vaše aplikace může používat minimalizovat náklady na síťový provoz.  
   
      Simulátor aplikace Visual Studio pro aplikace pro Windows Store umožňuje simulovat vlastnosti datového připojení rozhraní API pro síťové informace. Zobrazit [aplikace spustit Windows Store v simulátoru](../debugger/run-windows-store-apps-in-the-simulator.md)  
   
--   **Časování funkcí jazyka JavaScript** a **využití procesoru** nástroje pomáhá snížit zatížení procesoru při je způsobeno neefektivními funkcemi. Zobrazit [analýza využití procesoru](../profiling/analyze-cpu-usage-in-a-windows-universal-app.md).
+- **Časování funkcí jazyka JavaScript** a **využití procesoru** nástroje pomáhá snížit zatížení procesoru při je způsobeno neefektivními funkcemi. Zobrazit [analýza využití procesoru](../profiling/analyze-cpu-usage-in-a-windows-universal-app.md).

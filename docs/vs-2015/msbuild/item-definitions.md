@@ -11,12 +11,12 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a9298f57e3b1f4a05effcb82a39e14503c9cbf74
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7097311c3d1aae718096c3bf74ec04c3e5ea8818
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60090756"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433591"
 ---
 # <a name="item-definitions"></a>Definice položek
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ ms.locfileid: "60090756"
  Metadata položky, která je definována v ItemDefinitionGroup – je jenom deklarace výchozí metadat. Metadata nelze použít, dokud nedefinujete položku, která se používá ItemGroup tak, aby obsahovala hodnoty metadat.  
   
 > [!NOTE]
->  V mnoha příkladech v tomto tématu se zobrazí ItemDefinitionGroup – element, ale pro přehlednost je vynecháno jeho odpovídající ItemGroup definici.  
+> V mnoha příkladech v tomto tématu se zobrazí ItemDefinitionGroup – element, ale pro přehlednost je vynecháno jeho odpovídající ItemGroup definici.  
   
  Metadata explicitně definované v ItemGroup má přednost před metadat v ItemDefinitionGroup –. Metadata v ItemDefinitionGroup – platí jenom pro nedefinovaný metadata ItemGroup. Příklad:  
   
@@ -61,7 +61,7 @@ ms.locfileid: "60090756"
  V tomto příkladu je použít výchozí metadat "m" k položce "i", protože metadata "m" není explicitně určené položky "i". Výchozí metadat "n" však není použít k položce "i", protože metadata "n" je již definován položky "i".  
   
 > [!NOTE]
->  Názvy – Element XML a parametru jsou případ\-citlivé. Položka metadat a položky\/názvy vlastností nejsou případu\-citlivé. ItemDefinitionGroup – položky, které mají názvy, které se liší pouze velikostí písma proto mají být považována za stejné ItemGroup.  
+> Názvy – Element XML a parametru jsou případ\-citlivé. Položka metadat a položky\/názvy vlastností nejsou případu\-citlivé. ItemDefinitionGroup – položky, které mají názvy, které se liší pouze velikostí písma proto mají být považována za stejné ItemGroup.  
   
 ## <a name="value-sources"></a>Hodnota zdroje  
  Hodnoty pro metadata, která je definována v ItemDefinitionGroup – mohou pocházet z mnoha různých zdrojů, následujícím způsobem:  
@@ -83,7 +83,7 @@ ms.locfileid: "60090756"
 - Oddíl CDATA \< \! \[CDATA\[nic tady není analyzovat\]\]\>  
   
 > [!NOTE]
->  Metadata položky ze ItemGroup není užitečné při deklaraci ItemDefinitionGroup – metadat, protože ItemDefinitionGroup – prvky se zpracovávají před ItemGroup prvky.  
+> Metadata položky ze ItemGroup není užitečné při deklaraci ItemDefinitionGroup – metadat, protože ItemDefinitionGroup – prvky se zpracovávají před ItemGroup prvky.  
   
 ## <a name="additive-and-multiple-definitions"></a>Additive a několik definic  
  Při přidávání definic nebo používání více ItemDefinitionGroups, mějte na paměti následující:  
@@ -128,7 +128,7 @@ ms.locfileid: "60090756"
  V tomto příkladu, dříve definovanou hodnotu pro metadata "m" \(m1\) přidá novou hodnotu \(m2\), tak, aby konečná hodnota "m1; m2".  
   
 > [!NOTE]
->  Tato situace může také nastat ve stejném ItemDefinitionGroup –.  
+> Tato situace může také nastat ve stejném ItemDefinitionGroup –.  
   
  Při přepsání dříve definovaných metadat poslední specifikace přednost. V následujícím příkladu přejde konečná hodnota metadat "m" z "m1" na "m1a".  
   
@@ -159,7 +159,7 @@ ms.locfileid: "60090756"
  V takovém případě je součástí výchozí metadat "m1" položka "i", pouze v případě, že hodnota vlastnosti "Konfigurace" je "Debug".  
   
 > [!NOTE]
->  V podmínkách jsou podporovány pouze odkazy na místních metadat.  
+> V podmínkách jsou podporovány pouze odkazy na místních metadat.  
   
  Odkazy na metadata definované v předchozích ItemDefinitionGroup – jsou místní položka není definice skupiny. To znamená oboru odkazů jsou položky\-konkrétní. Příklad:  
   

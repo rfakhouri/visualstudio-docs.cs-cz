@@ -12,12 +12,12 @@ ms.assetid: bb6e74c3-93e4-4ef7-afc7-1c9b342f083b
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f15499d4075491c8eab8660fb51fba49b983f77a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d92baa824dbb70dd591cadef99775f943c651aef
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60103526"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436147"
 ---
 # <a name="how-to-support-outlining-in-a-legacy-language-service"></a>Postupy: Podpora osnovy ve službě starší verze jazyka
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ Sbalení se používá k rozbalit nebo sbalit různé oblasti textu. Sbalování
  Služby starší verze jazyka jsou implementovány jako součást sady VSPackage, ale novější způsob implementace funkce služba jazyka je pro použití rozšíření MEF. Další informace o nový způsob implementace sbalování najdete v tématu [názorný postup: Sbalování](../../extensibility/walkthrough-outlining.md).  
   
 > [!NOTE]
->  Doporučujeme vám, že začnete používat nový editor API co nejdříve. Tím vylepšíme výkonu vaší služby jazyka a umožňují využívat nové funkce editoru.  
+> Doporučujeme vám, že začnete používat nový editor API co nejdříve. Tím vylepšíme výkonu vaší služby jazyka a umožňují využívat nové funkce editoru.  
   
  Následující ukazuje, jak podporovat tento příkaz pro vaši službu jazyka.  
   
@@ -45,8 +45,8 @@ Sbalení se používá k rozbalit nebo sbalit různé oblasti textu. Sbalování
  Můžete volat <xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningSession.AddOutlineRegions%2A> metodu pro více oblastí osnovy tak, že zadáte v těchto oblastech `rgOutlnReg` parametr. `rgOutlnReg` Parametr je <xref:Microsoft.VisualStudio.TextManager.Interop.NewOutlineRegion> struktury. Tento proces vám umožňují určit různé vlastnosti skryté oblasti, jako je například, jestli je konkrétní oblasti rozbalená nebo sbalená.  
   
 > [!NOTE]
->  Buďte opatrní skrytí znaky nového řádku. Skrytý text by měl rozšířit od samého začátku první řádek poslední znak na posledním řádku oddíl, zanechá viditelný posledním znakem nového řádku.  
+> Buďte opatrní skrytí znaky nového řádku. Skrytý text by měl rozšířit od samého začátku první řádek poslední znak na posledním řádku oddíl, zanechá viditelný posledním znakem nového řádku.  
   
 ## <a name="see-also"></a>Viz také  
  [Postupy: Poskytování podpory skrytého textu ve službě starší verze jazyka](../../extensibility/internals/how-to-provide-hidden-text-support-in-a-legacy-language-service.md)   
- [Postupy: Rozšířená podpora osnovy ve službě starší verze jazyka](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)
+ [Postupy: Poskytování rozšířené podpory osnovy ve službě starší verze jazyka](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)

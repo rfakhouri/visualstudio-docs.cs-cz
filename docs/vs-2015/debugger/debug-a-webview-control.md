@@ -14,12 +14,12 @@ caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1ffb19e85d7294c082f7eecb0dbffd8aa436a03c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0f2da5b3122bd97fcbef0db7124049372c21983f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60065464"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422087"
 ---
 # <a name="debug-a-webview-control"></a>Ladění ovládacího prvku WebView
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "wi
 4. (Volitelné) Ne Express verzích sady Visual Studio se zakázat ladění just-in-time (JIT) výběrem **nástroje**, **možnosti**, **ladění**, **Just-In-Time**, a potom zakázat JIT ladění skriptu.  
   
     > [!NOTE]
-    >  Zakázat ladění JIT, tak můžete skrýt dialogová okna neošetřených výjimek, ke kterým došlo u některých webových stránek. V aplikaci Visual Studio Express ladění JIT vždy zakázána.  
+    > Zakázat ladění JIT, tak můžete skrýt dialogová okna neošetřených výjimek, ke kterým došlo u některých webových stránek. V aplikaci Visual Studio Express ladění JIT vždy zakázána.  
   
 5. Stisknutím klávesy F5 spusťte ladění.  
   
@@ -82,7 +82,7 @@ Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "wi
      ![Cílit na výběr v okně konzoly jazyka JavaScript](../debugger/media/js-console-target.png "JS_Console_Target")  
   
     > [!NOTE]
-    >  Pomocí konzoly můžete pracovat s jedním `WebView`, `iFrame`, sdílet smlouvy nebo webového pracovního procesu v čase. Každý prvek vyžaduje samostatnou instanci hostitele webové platformy (WWAHost.exe). Najednou můžete pracovat s jednoho hostitele.  
+    > Pomocí konzoly můžete pracovat s jedním `WebView`, `iFrame`, sdílet smlouvy nebo webového pracovního procesu v čase. Každý prvek vyžaduje samostatnou instanci hostitele webové platformy (WWAHost.exe). Najednou můžete pracovat s jednoho hostitele.  
   
 6. Zobrazení a úpravám proměnných ve vaší aplikaci nebo pomocí příkazů konzole, jak je popsáno v [rychlý start: Ladění JavaScriptu](../debugger/quickstart-debug-javascript-using-the-console.md) a [příkazy konzoly jazyka JavaScript](../debugger/javascript-console-commands.md).  
   

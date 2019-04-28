@@ -11,12 +11,12 @@ caps.latest.revision: 16
 author: erickson-doug
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: daa26ed2e893d4e11b9f2e18ef5127aafe847b96
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3f3a00a4ec5a013dc860a05ed48364178e3f23cf
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60108333"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442881"
 ---
 # <a name="analyze-visual-basic-and-c-code-quality-in-store-apps-using-visual-studio-static-code-analysis"></a>Analýza kvality kódu jazyka Visual Basic a C# v aplikacích pro Store pomocí sady Visual Studio statické analýzy kódu
 
@@ -27,7 +27,7 @@ Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "wi
  Nástroj pro analýzu kódu v sadě Visual Studio Express prozkoumá váš kód pro sadu běžné závady a porušování programovacím vhodné. Upozornění analýzy kódu se liší od kompilátoru chyby a upozornění, protože nástroj pro analýzu kódu hledá vzory v konkrétním kódu, které jsou platné, ale přesto vytvořit problémy pro vy nebo ostatní uživatelé, kteří používají váš kód. Analýzy kódu můžete také vyhledat chyby v kódu, které je obtížné vyhledat pomocí testování. Spuštění nástroje Analýza kódu v pravidelných intervalech během procesu vývoje můžete zvýšit tak kvalitu dokončené aplikace.
 
 > [!NOTE]
->  V sadě Visual Studio Ultimate, Visual Studio Premium a Visual Studio Professional můžete použít všechny funkce pro analýzu kódu. Zobrazit [analýza kvality aplikace pomocí nástrojů pro analýzu kódu](http://msdn.microsoft.com/library/dd264897.aspx) v knihovně MSDN.
+> V sadě Visual Studio Ultimate, Visual Studio Premium a Visual Studio Professional můžete použít všechny funkce pro analýzu kódu. Zobrazit [analýza kvality aplikace pomocí nástrojů pro analýzu kódu](http://msdn.microsoft.com/library/dd264897.aspx) v knihovně MSDN.
 
 ## <a name="in-this-topic"></a>V tomto tématu
  Informace o:
@@ -69,7 +69,7 @@ Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "wi
  Po zjištění problému ho mohli vyřešit ve vašem kódu. Pak znovu spusťte analýzu kódu, abyste měli jistotu, že již nezobrazuje upozornění v okně analýzy kódu, a nová upozornění, že jste kód opravili správně nebyla vyvolána.
 
 > [!TIP]
->  Můžete znovu spustit analýzu kódu v okně analýzy kódu. Klikněte na tlačítko **analyzovat** tlačítko a zvolte obor analýzy. Můžete znovu spustit analýzu na celé řešení nebo vybraný projekt.
+> Můžete znovu spustit analýzu kódu v okně analýzy kódu. Klikněte na tlačítko **analyzovat** tlačítko a zvolte obor analýzy. Můžete znovu spustit analýzu na celé řešení nebo vybraný projekt.
 
 ## <a name="BKMK_Suppress"></a> Potlačení upozornění analýzy kódu
  Existují situace, kdy byste se mohli rozhodnot Neopravovat upozornění analýzy kódu. Můžete se rozhodnout, že řešení upozornění vyžaduje příliš mnoho nahrávání ve vztahu k pravděpodobnost, že problém vzniknou v žádné Skutečná implementace kódu. Nebo může domnívat, že je nevhodná pro konkrétní kontext, který se používá v tomto upozornění analýzy. Jednotlivá upozornění můžete potlačit tak, aby se nebude zobrazovat v okně analýzy kódu.

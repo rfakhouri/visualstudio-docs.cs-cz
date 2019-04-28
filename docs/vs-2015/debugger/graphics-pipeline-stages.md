@@ -11,12 +11,12 @@ caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cd93ddb6e1d574460593f992f880ccd53d800842
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9eee83ba90248c15387771f355919e345375ff05
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097333"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420163"
 ---
 # <a name="graphics-pipeline-stages"></a>Fáze zřetězení grafiky
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ V okně fáze zřetězení grafiky pomáhá pochopit, jak je transformovat volá
 - V **fáze zřetězení grafiky** okně vyhledejte fázi shaderu, který odpovídá shaderu chcete prověřit. Pak níže image ve verzi preview použijte odkaz na název fázi shaderu – například pomocí následujícího odkazu **Vertex Shader obj:30** Chcete-li zobrazit zdrojový kód shaderu vrcholu.  
   
     > [!TIP]
-    >  Číslo objektu **obj:30**, identifikuje tento shader v celém rozhraní analyzátoru grafiky sady například v okně objekt tabulky a pixel historie.  
+    > Číslo objektu **obj:30**, identifikuje tento shader v celém rozhraní analyzátoru grafiky sady například v okně objekt tabulky a pixel historie.  
   
 ##### <a name="to-debug-a-shader"></a>K ladění shaderu  
   
@@ -59,7 +59,7 @@ V okně fáze zřetězení grafiky pomáhá pochopit, jak je transformovat volá
  V okně fáze zřetězení vizualizuje pouze fáze kanálu, které byly aktivní během volání draw. Každá fáze zřetězení grafiky transformuje vstupu z předchozí fáze a předá výsledek do další fáze. Úplně první fáze – vstupního assembleru – přebírá index a vrcholu data z vaší aplikace jako vstup; poslední fáze – slučovací modul výstupu – kombinuje nově vykresleny spolu s aktuálním obsahu framebuffer pixelů nebo cíl vykreslování jako jeho výstup, chcete-li vytvořit finální image se zobrazí na obrazovce.  
   
 > [!NOTE]
->  Výpočetní shadery nepodporuje **fáze zřetězení grafiky** okna.  
+> Výpočetní shadery nepodporuje **fáze zřetězení grafiky** okna.  
   
  **Vstupní Assembler**  
  Vstupní Assembler načte index a vrcholu dat zadaný hodnotou vaší aplikace a sestavuje pro hardwarovou akceleraci.  
@@ -67,7 +67,7 @@ V okně fáze zřetězení grafiky pomáhá pochopit, jak je transformovat volá
  V okně fáze zřetězení je výstup assembleru vstup vizualizovat jako drátový model. Chcete-li podrobněji podíváme na výsledek, vyberte **vstupní Assembler** v **fáze zřetězení grafiky** okně deskách vrcholy v úplnou 3D pomocí Editoru modelů.  
   
 > [!NOTE]
->  Pokud `POSITION` sémantické se nenachází ve výstupu vstupní assembler a nezobrazí se v **vstupního assembleru** fázi.  
+> Pokud `POSITION` sémantické se nenachází ve výstupu vstupní assembler a nezobrazí se v **vstupního assembleru** fázi.  
   
  **Vertex Shader**  
  Shader vrcholů fáze zpracovává vrcholy, obvykle provádí operace, jako je transformace, změny vzhledu a osvětlení. Vrchol shaderů vytvořit stejný počet vrcholů, které tyto přebírá jako vstup.  
@@ -75,7 +75,7 @@ V okně fáze zřetězení grafiky pomáhá pochopit, jak je transformovat volá
  V okně fáze zřetězení je výstup Vertex Shader vizualizuje jako drátěný rastrového obrázku. Chcete-li podrobněji podíváme na výsledek, vyberte **Vertex Shader** v **fáze zřetězení grafiky** windows zobrazíte zpracovaných vrcholy v editoru obrázků.  
   
 > [!NOTE]
->  Pokud `POSITION` nebo `SV_POSITION` sémantiku nejsou k dispozici ve výstupu vertex shader a nezobrazí se v **Vertex Shader** fázi.  
+> Pokud `POSITION` nebo `SV_POSITION` sémantiku nejsou k dispozici ve výstupu vertex shader a nezobrazí se v **Vertex Shader** fázi.  
   
  **Shader trupu** (Direct3D 11 a Direct3D 12 jenom)  
  Procesy hull shader fáze řízení body, které definují nižšího řádu surface například řádku, trojúhelník nebo quad. Jako výstup produkuje opravu vyššího řádu geometrie a konstanty opravy, které jsou předány do fáze teselace – funkce.  

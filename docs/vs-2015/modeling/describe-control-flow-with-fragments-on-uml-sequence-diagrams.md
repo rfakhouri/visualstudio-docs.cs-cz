@@ -17,12 +17,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 829e219056b7c0a74226dd933ab38b8559ebd6b2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c296be2e3a00efcdf48bdd6e4442e88fc32b3695
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60107083"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422542"
 ---
 # <a name="describe-control-flow-with-fragments-on-uml-sequence-diagrams"></a>Popis toku řízení pomocí fragmentů v sekvenčních diagramech UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ V sekvenčním diagramu UML *kombinované fragmenty* umožňují zobrazit smyčk
  Do kombinovaného fragmentu se skládá z jedné nebo více *interakce operandy*, a každá z těchto obklopuje jeden nebo více zpráv, interakcí nebo kombinované fragmenty.  
   
 > [!NOTE]
->  Toto téma se věnuje fragmentů v sekvenčních diagramech. Další informace o tom, jak číst sekvenčních diagramech UML, naleznete v tématu [UML Sequence Diagrams: Referenční dokumentace](../modeling/uml-sequence-diagrams-reference.md). Další informace o tom, jak nakreslit sekvenční diagramy UML, naleznete v tématu [UML Sequence Diagrams: Pokyny pro](../modeling/uml-sequence-diagrams-guidelines.md).  
+> Toto téma se věnuje fragmentů v sekvenčních diagramech. Další informace o tom, jak číst sekvenčních diagramech UML, naleznete v tématu [UML Sequence Diagrams: Referenční dokumentace](../modeling/uml-sequence-diagrams-reference.md). Další informace o tom, jak nakreslit sekvenční diagramy UML, naleznete v tématu [UML Sequence Diagrams: Pokyny pro](../modeling/uml-sequence-diagrams-guidelines.md).  
   
  ![Kombinované Fragment používá dva operandy interakce](../modeling/media/uml-seqfragments.png "UML_SeqFragments")  
   
@@ -45,7 +45,7 @@ V sekvenčním diagramu UML *kombinované fragmenty* umožňují zobrazit smyčk
 3. Operandem interakce můžete vybrat samostatně kliknutím dovnitř. V tomto příkladu je vybraná operand nejvyšší interakce, tak, aby uvidíte jeho hranice. Obvykle je viditelná pouze zřejmý mezi operandy interakce.  
   
     > [!NOTE]
-    >  Vyberte horní interakce operand, že nesmí kliknete na tlačítko Zavřít příliš do horní části kombinovaného fragmentu.  
+    > Vyberte horní interakce operand, že nesmí kliknete na tlačítko Zavřít příliš do horní části kombinovaného fragmentu.  
   
 4. Chrání. Operandem interakce může poskytnout ochranu. Popisuje podmínky, pod kterým bude provedena zprávy uvnitř operand interakce.  
   
@@ -57,7 +57,7 @@ V sekvenčním diagramu UML *kombinované fragmenty* umožňují zobrazit smyčk
 1. Vyberte jednu zprávu nebo s posloupností zpráv, všechny začíná stejné výskyt životnosti nebo spuštění.  
   
    > [!NOTE]
-   >  Pokud vyberete více než jedna zpráva, že musí tvořit bez přerušení pořadí.  
+   > Pokud vyberete více než jedna zpráva, že musí tvořit bez přerušení pořadí.  
   
 2. Klikněte pravým tlačítkem na zprávy, přejděte na **obklopit fragmentem**a potom klikněte na typ kombinovaného fragmentu, můžete se například **Alt kombinovat Fragment**.  
   
@@ -100,7 +100,7 @@ V sekvenčním diagramu UML *kombinované fragmenty* umožňují zobrazit smyčk
 - Klikněte pravým tlačítkem na název kombinovaného fragmentu a potom klikněte na tlačítko **vlastnosti**.  
   
     > [!NOTE]
-    >  Různé druhy kombinovaného fragmentu mají různé vlastnosti.  
+    > Různé druhy kombinovaného fragmentu mají různé vlastnosti.  
   
 ## <a name="KindsOfFragment"></a> Druhy kombinovaného fragmentu  
   

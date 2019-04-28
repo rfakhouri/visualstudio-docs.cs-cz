@@ -11,23 +11,23 @@ ms.assetid: ee2d955b-12ca-4f27-89aa-c2d0e768b6b6
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4a7b35c2a96ae31d698ff2294878adc45e3d6572
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6a7f8f8c352db4f2fcd0230f4eac66e8bddb94e6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056403"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436674"
 ---
 # <a name="sample-implementation-of-changing-values"></a>Ukázková implementace změny hodnot
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 > [!IMPORTANT]
->  V sadě Visual Studio 2015 je zastaralý tímto způsobem implementace vyhodnocovače výrazů. Informace o implementace vyhodnocovače výrazů modulu CLR najdete v tématu [vyhodnocovače výrazů modulu CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) a [spravované ukázka Chyba při vyhodnocování výrazu](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+> V sadě Visual Studio 2015 je zastaralý tímto způsobem implementace vyhodnocovače výrazů. Informace o implementace vyhodnocovače výrazů modulu CLR najdete v tématu [vyhodnocovače výrazů modulu CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) a [spravované ukázka Chyba při vyhodnocování výrazu](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
  Každý místní zobrazí v **lokální** má okno [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) objekt přidružen. To `IDebugProperty2` objekt obsahuje název, hodnotu a typ na místní. Když uživatel změní hodnotu místní, Visual Studio volá [SetValueAsString](../../extensibility/debugger/reference/idebugproperty2-setvalueasstring.md) aktualizovat hodnoty místní proměnné v paměti. V tomto příkladu je reprezentována místní `CFieldProperty` třídu, která implementuje `IDebugProperty2` rozhraní.  
   
 > [!NOTE]
->  Pro **Watch** a **QuickWatch** výrazy, mění hodnotu je reprezentována `CValueProperty` třídy v ukázce MyCEE. Ale implementace `IDebugProperty2::SetValueAsString` je stejný, jak je znázorněno zde.  
+> Pro **Watch** a **QuickWatch** výrazy, mění hodnotu je reprezentována `CValueProperty` třídy v ukázce MyCEE. Ale implementace `IDebugProperty2::SetValueAsString` je stejný, jak je znázorněno zde.  
   
  Tato implementace `IDebugProperty2::SetValueAsString` provádí následující úlohy:  
   

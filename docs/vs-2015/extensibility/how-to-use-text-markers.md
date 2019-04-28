@@ -10,12 +10,12 @@ ms.assetid: 76eed51c-eecb-4579-823e-13df2f0526b9
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: bca32c007e29e910f167df66c92d04bec637f9b3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 25c3c4f3a3d9a253b9ec671892d0d44ccf9ca3ab
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105452"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430964"
 ---
 # <a name="how-to-use-text-markers"></a>Postupy: Použití značek Text
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,12 +29,12 @@ Textu značky lze použít k úpravě <xref:Microsoft.VisualStudio.TextManager.I
 1. Získání instance <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager> třídy.  
   
     > [!NOTE]
-    >  Základní editor automaticky aplikuje standardní text značky na všechny dokumenty, které je úpravy a neměl by být nutné explicitní použití standardního textu značky.  
+    > Základní editor automaticky aplikuje standardní text značky na všechny dokumenty, které je úpravy a neměl by být nutné explicitní použití standardního textu značky.  
   
 2. Získat Identifikátor značky typu značky jsou zajímá voláním <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager.GetRegisteredMarkerTypeID%2A> metodu s `GUID` text značky chcete pracovat.  
   
     > [!NOTE]
-    >  Nepoužívejte `GUID` sady VSPackage nebo služby, která obsahuje text značky.  
+    > Nepoužívejte `GUID` sady VSPackage nebo služby, která obsahuje text značky.  
   
 3. Použití ID typu značky získán voláním <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager.GetRegisteredMarkerTypeID%2A> metodu jako parametr pro volání <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines.CreateLineMarker%2A> metoda nebo <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStream.CreateStreamMarker%2A> způsob, jak použít značku textu pro danou oblast textu.  
   
@@ -58,4 +58,4 @@ Textu značky lze použít k úpravě <xref:Microsoft.VisualStudio.TextManager.I
  [Text značky pomocí starší verze rozhraní API](../extensibility/using-text-markers-with-the-legacy-api.md)   
  [Postupy: Přidání standardní Text značky](../extensibility/how-to-add-standard-text-markers.md)   
  [Postupy: Vytvoření vlastního textu značky](../extensibility/how-to-create-custom-text-markers.md)   
- [Postupy: Implementace označování chyb](../extensibility/how-to-implement-error-markers.md)
+ [Postupy: Implementace chybových značek](../extensibility/how-to-implement-error-markers.md)

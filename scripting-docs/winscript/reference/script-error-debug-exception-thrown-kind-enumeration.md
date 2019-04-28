@@ -11,18 +11,18 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b9dae0161e3337411a56e316e04cf467a1f05e6a
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: 3be6989195eacdd4d70bd13790d55e4f6cfc769d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58155716"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443637"
 ---
 # <a name="scripterrordebugexceptionthrownkind-enumeration"></a>Výčet SCRIPT_ERROR_DEBUG_EXCEPTION_THROWN_KIND
 Označuje druh vyvolané výjimky. Tento výčet je používán [IActiveScriptErrorDebug110::GetExceptionThrownKind](../../winscript/reference/iactivescripterrordebug110-getexceptionthrownkind.md) metody.  
   
 > [!IMPORTANT]
->  Tyto konstanty jsou implementovány modulem PDM verze 11.0 nebo novější. Nachází se v souboru activdbg100.h.  
+> Tyto konstanty jsou implementovány modulem PDM verze 11.0 nebo novější. Nachází se v souboru activdbg100.h.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -32,7 +32,7 @@ typedef SCRIPT_ERROR_DEBUG_EXCEPTION_THROWN_KIND
   
 ## <a name="members"></a>Členové  
   
-|Člen|Hodnota|Popis|  
+|Člen|Value|Popis|  
 |------------|-----------|-----------------|  
 |ETK_FIRST_CHANCE|0x00000000|Tato výjimka je výjimka první příležitosti.|  
 |ETK_USER_UNHANDLED|0x00000001|Tato výjimka není ošetřena v uživatelském kódu.|  

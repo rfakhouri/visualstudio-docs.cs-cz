@@ -13,18 +13,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2b8640636e48e2addedd5a59d30deb060cfdf118
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 49c211faf577df33bc6e7404eaa9631e734c9c36
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56721867"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435320"
 ---
 # <a name="the-structure-of-the-contenttypesxml-file"></a>Struktura souboru [Content_types].xml
 Obsahuje informace o druzích obsah v balíčku souboru VSIX. Visual Studio používá k instalaci balíčku souboru [Content_Types] .xml, ale nenainstaluje samotný soubor.
 
 > [!NOTE]
->  I když toto téma se týká pouze soubory XML [Content_Type], které se používají v balíčků VSIX, typ souboru [Content_Types] .xml je součástí *Open Packaging konvence (OPC)* standard. Další informace najdete v tématu [OPC: Nová standardní pro balení vaše Data](http://go.microsoft.com/fwlink/?LinkID=148207) na webové stránce MSDN.
+> I když toto téma se týká pouze soubory XML [Content_Type], které se používají v balíčků VSIX, typ souboru [Content_Types] .xml je součástí *Open Packaging konvence (OPC)* standard. Další informace najdete v tématu [OPC: Nová standardní pro balení vaše Data](http://go.microsoft.com/fwlink/?LinkID=148207) na webové stránce MSDN.
 
 ## <a name="attributes-and-elements"></a>Atributy a elementy
  Následující části popisují kořenovým prvkem a jeho atributy a podřízené prvky.

@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 93c30d9966dabdf7ad7b42bbad6ecbae5679e636
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 53e227b2fdf97c406a86b31cee2a3c450948ee6b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60070332"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434782"
 ---
 # <a name="save-data-in-project-files"></a>Ukládání dat v souborech projektu
 Podtyp projektu můžete uložit a načíst data specifická pro podtyp v souboru projektu. Managed Package Framework (MPF) poskytuje dvě rozhraní k provedení této úlohy:
@@ -206,7 +206,7 @@ Podtyp projektu můžete uložit a načíst data specifická pro podtyp v soubor
     ```
 
 > [!NOTE]
->  Všechny příklady kódu, které jsou uvedeny v tomto tématu jsou součástí většího příkladu v [VSSDK ukázky](https://aka.ms/vs2015sdksamples).
+> Všechny příklady kódu, které jsou uvedeny v tomto tématu jsou součástí většího příkladu v [VSSDK ukázky](https://aka.ms/vs2015sdksamples).
 
 ## <a name="see-also"></a>Viz také:
 - [Zachovat data v souboru projektu MSBuild](../extensibility/internals/persisting-data-in-the-msbuild-project-file.md)

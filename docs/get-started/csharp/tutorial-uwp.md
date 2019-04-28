@@ -14,12 +14,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: cbb5eeaaa69852b43d2189c4ca9d308cff75ba98
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: a2a65534cda2571c36bb0c2caa16bf2f3394a804
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59656155"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435057"
 ---
 # <a name="tutorial-create-your-first-universal-windows-platform-application-in-visual-studio-with-xaml-and-c35"></a>Kurz: Vytvoření první aplikace pro univerzální platformu Windows v sadě Visual Studio pomocí XAML a C&#35;
 
@@ -70,7 +70,7 @@ Nejprve vytvořte projekt univerzální platformy Windows. Typ projektu obsahuje
 
    > [!NOTE]
    > Pokud je to první sady Visual Studio jste použili k vytvoření aplikace pro UPW, **nastavení** může otevřít dialogové okno. Zvolte **vývojářský režim**a klikněte na tlačítko **Ano**.<br><br>
-   ![Povolení režimu pro vývojáře v dialogovém okně Nastavení UPW](media/enable-developer-mode.png)<br><br>Další balíčky režimu pro vývojáře Visual Studio nainstaluje za vás. Po dokončení instalace balíčku, zavřete **nastavení** dialogové okno.
+   > ![Povolení režimu pro vývojáře v dialogovém okně Nastavení UPW](media/enable-developer-mode.png)<br><br>Další balíčky režimu pro vývojáře Visual Studio nainstaluje za vás. Po dokončení instalace balíčku, zavřete **nastavení** dialogové okno.
 
 ## <a name="create-the-application"></a>Vytvoření aplikace
 

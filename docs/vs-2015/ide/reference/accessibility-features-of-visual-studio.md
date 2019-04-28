@@ -12,12 +12,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: aa41d340aff0c56975d2af66031b5d0d2343a0ff
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1d6c0a8fd4110b2e75d634a8ecfd5e397bb459f8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061798"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441144"
 ---
 # <a name="accessibility-features-of-visual-studio"></a>Funkce pro usnadnění přístupu sady Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ Kromě funkcí a nástrojů usnadnění v Windows následující funkce Ujistět
 - Automatické dokončování pro metody a parametrů
 
 > [!IMPORTANT]
->  Informace v této části se vztahují jenom na uživatele, kteří licencují produkty společnosti Microsoft ve Spojených státech. Pokud jste získali mimo Spojené státy tento produkt, můžete použít kartu pobočka informace, která byla součástí vašeho softwarového balíčku nebo můžete navštívit [kontaktujte nás stránku pro společnosti Microsoft Support](http://support.microsoft.com/ContactUs) a klikněte na tlačítko  **Vyhledejte po celém světě Microsoft pobočky** odkaz (v dolní části stránky). Tato stránka poskytuje seznam telefonních čísel a adres společnosti Microsoft služby podpory. Můžete se obrátit na pobočku společnosti a zjistěte, zda typy produktů a služeb, které jsou popsány v této části jsou k dispozici ve vaší oblasti. Informace o usnadnění jsou k dispozici v dalších jazycích včetně japonštiny a francouzštiny.
+> Informace v této části se vztahují jenom na uživatele, kteří licencují produkty společnosti Microsoft ve Spojených státech. Pokud jste získali mimo Spojené státy tento produkt, můžete použít kartu pobočka informace, která byla součástí vašeho softwarového balíčku nebo můžete navštívit [kontaktujte nás stránku pro společnosti Microsoft Support](http://support.microsoft.com/ContactUs) a klikněte na tlačítko  **Vyhledejte po celém světě Microsoft pobočky** odkaz (v dolní části stránky). Tato stránka poskytuje seznam telefonních čísel a adres společnosti Microsoft služby podpory. Můžete se obrátit na pobočku společnosti a zjistěte, zda typy produktů a služeb, které jsou popsány v této části jsou k dispozici ve vaší oblasti. Informace o usnadnění jsou k dispozici v dalších jazycích včetně japonštiny a francouzštiny.
 
  Další informace naleznete v následujících tématech:
 

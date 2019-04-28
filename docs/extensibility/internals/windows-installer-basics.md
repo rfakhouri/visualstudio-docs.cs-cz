@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bf47b5c6aa84cb5d5cc961e34161435dc27dd517
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9978e12d5b4d94a5f860bfdd5d3dc90ae6fef3ad
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60066257"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431014"
 ---
 # <a name="windows-installer-basics"></a>Základní informace o Instalační službě systému Windows
 Instalační program Windows instaluje a odinstaluje aplikací nebo softwarové produkty na počítači uživatele, provedení těchto úloh v jednotkách nazývaných součásti Instalační služby systému Windows (říká se jim WICs nebo pouze komponenty). Identifikátor GUID identifikuje každý WIC, což je základní jednotkou instalace a pro nastavení pomocí Instalační služby systému Windows pro počítání odkazů.
@@ -53,7 +53,7 @@ Instalační program Windows instaluje a odinstaluje aplikací nebo softwarové 
  Dvě sady pravidel určit nasazení prostředků prostřednictvím součásti vašeho nastavení. Jedna sada pravidel se spravuje pomocí Instalační služby systému Windows, samostatně, zatímco druhá sada jako autor instalace by měl vynutit.
 
 > [!NOTE]
->  Vynucení pravidla Instalační služby systému Windows dojde pouze v případě, že spuštění ověření souboru .msi. Nicméně můžete se zobrazí se upozornění považovat za těchto pravidel osvědčených postupů. Další informace najdete v tématu [ověřování databáze instalace](/windows/desktop/Msi/validating-an-installation-database) a [ověřování balíčku](/windows/desktop/Msi/package-validation).
+> Vynucení pravidla Instalační služby systému Windows dojde pouze v případě, že spuštění ověření souboru .msi. Nicméně můžete se zobrazí se upozornění považovat za těchto pravidel osvědčených postupů. Další informace najdete v tématu [ověřování databáze instalace](/windows/desktop/Msi/validating-an-installation-database) a [ověřování balíčku](/windows/desktop/Msi/package-validation).
 
 #### <a name="installer-enforced-rules"></a>Pravidla vynucovat instalačního programu
 

@@ -13,18 +13,18 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a40b1a6f194ef0f335d8c6516b101250b0d980fe
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: 44df7168c241c9a750354e1a603d6c5ba96dabd2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58158406"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440535"
 ---
 # <a name="idebugapplicationthread110-interface"></a>IDebugApplicationThread110 – rozhraní
 Poskytuje další funkce pro [idebugapplicationthread – rozhraní](../../winscript/reference/idebugapplicationthread-interface.md) rozhraní.  
   
 > [!IMPORTANT]
->  Toto rozhraní je implementováno komponentou PDM verze 11.0 nebo novější. Nachází se v souboru activdbg100.h.  
+> Toto rozhraní je implementováno komponentou PDM verze 11.0 nebo novější. Nachází se v souboru activdbg100.h.  
   
 ## <a name="methods"></a>Metody  
  `IDebugApplicationThread110` Rozhraní poskytuje následující metody.  

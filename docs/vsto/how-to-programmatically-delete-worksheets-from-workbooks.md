@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1ea87ac85ed187becb2f463dfe95fd3dcb812f28
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9ecc39e72a336c390c85f1caf2c80c6643acbb61
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60066549"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412540"
 ---
 # <a name="how-to-programmatically-delete-worksheets-from-workbooks"></a>Postupy: Odstraňování listů ze sešitů prostřednictvím kódu programu
   Můžete odstranit všechny listu v sešitu. Pokud chcete odstranit tabulku, pomocí hostitelská položka worksheet nebo přistupovat ke listu pomocí kolekce listů sešitu.
@@ -29,7 +29,7 @@ ms.locfileid: "60066549"
  Pokud v době návrhu v přizpůsobení na úrovni dokumentu byla přidána do listu, použijte <xref:Microsoft.Office.Tools.Excel.Worksheet.Delete%2A> metoda odstranění zadaného listu. Následující kód do listu odstraní ze sešitu odkazem hostitelská položka worksheet přímo.
 
 > [!IMPORTANT]
->  Tento kód se spustí jenom v projektech, které vytvoříte pomocí některého z následujících šablon projektu:
+> Tento kód se spustí jenom v projektech, které vytvoříte pomocí některého z následujících šablon projektu:
 >
 > - Sešit aplikace Excel 2013
 > - Šablonu v Excelu 2013
@@ -55,7 +55,7 @@ ms.locfileid: "60066549"
   Následující kód odstraní tabulku ze sešitu odkazováním na listu prostřednictvím indexové číslo **seznamy** kolekce. Tento kód předpokládá, že se vytvořil programově do nového listu.
 
 > [!IMPORTANT]
->  Pokud chcete k provedení této úlohy v jakýkoli jiný typ projektu, je nutné přidat odkaz na **Microsoft.Office.Interop.Excel** sestavení a pak pomocí třídy z tohoto sestavení k otevření sešitu a odstranění listu. Další informace najdete v tématu [jak: Cílení na aplikace Office primárních sestaveních vzájemné spolupráce](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md) a [odkaz na primární spolupracující sestavení aplikace Excel 2010](http://go.microsoft.com/fwlink/?LinkId=189585).
+> Pokud chcete k provedení této úlohy v jakýkoli jiný typ projektu, je nutné přidat odkaz na **Microsoft.Office.Interop.Excel** sestavení a pak pomocí třídy z tohoto sestavení k otevření sešitu a odstranění listu. Další informace najdete v tématu [jak: Cílení na aplikace Office primárních sestaveních vzájemné spolupráce](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md) a [odkaz na primární spolupracující sestavení aplikace Excel 2010](http://go.microsoft.com/fwlink/?LinkId=189585).
 
 ### <a name="to-delete-a-worksheet-by-using-the-sheets-collection-of-the-excel-workbook"></a>Chcete-li odstranit listu pomocí kolekce listech sešitu aplikace Excel
 

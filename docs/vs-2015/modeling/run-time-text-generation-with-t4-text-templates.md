@@ -14,12 +14,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 37fa7bafb77c67d29ff9625fa04388f9dd826f8e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 586ad1d68ce1d0310b30b8bdac8aa2fb55acdeb5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059263"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411877"
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>Generování textu za běhu pomocí textových šablon T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,7 +60,7 @@ This report is Company Confidential.
 3. Zadejte název souboru šablony.  
   
     > [!NOTE]
-    >  Název souboru šablony se použije jako název třídy v generovaném kódu. Proto by neměl mít mezery ani interpunkci.  
+    > Název souboru šablony se použije jako název třídy v generovaném kódu. Proto by neměl mít mezery ani interpunkci.  
   
 4. Zvolte **přidat**.  
   
@@ -84,7 +84,7 @@ This report is Company Confidential.
 2. Souboru sady **vlastní nástroje** vlastnost **TextTemplatingFilePreprocessor**. V Průzkumníku řešení zvolte v místní nabídce souboru **vlastnosti**.  
   
     > [!NOTE]
-    >  Pokud už je vlastnost nastavena, ujistěte se, že je **TextTemplatingFilePreprocessor** a ne **TextTemplatingFileGenerator**. K tomu může dojít, pokud zahrnete soubor, který už má rozšíření **.tt**.  
+    > Pokud už je vlastnost nastavena, ujistěte se, že je **TextTemplatingFilePreprocessor** a ne **TextTemplatingFileGenerator**. K tomu může dojít, pokud zahrnete soubor, který už má rozšíření **.tt**.  
   
 3. Změnit příponu názvu souboru na **.tt**. I když tento krok je volitelný, pomůže vám vyhnout se v editoru nesprávné otevření souboru.  
   

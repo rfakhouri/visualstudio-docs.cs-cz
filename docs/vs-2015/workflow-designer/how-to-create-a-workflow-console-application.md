@@ -9,12 +9,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 33666c0e5d63d8d4d33d544fcfe18d8c185ce843
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a436027fc4194f762fc4b28545fdf5d4bd3b95b6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60044349"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444610"
 ---
 # <a name="how-to-create-a-workflow-console-application"></a>Postupy: Vytvoření konzolové aplikace pracovního postupu
 [!INCLUDE[wf](../includes/wf-md.md)] umožňuje vytvářet pracovní postupy pro spouštění systému nebo lidské procesy. [!INCLUDE[wfd1](../includes/wfd1-md.md)] Poskytuje na návrhovou plochu pro vytváření těchto pracovních postupů. [!INCLUDE[wfd2](../includes/wfd2-md.md)] Slouží k vytváření pracovních postupů v rámci [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nebo je možné integrovat do jiných aplikací, které změna hostitele návrháře.  
@@ -40,7 +40,7 @@ ms.locfileid: "60044349"
 7. V **řešení** pole, zadejte název nového řešení. Klikněte na tlačítko **OK** k vytvoření aplikace.  
   
     > [!NOTE]
-    >  Pokud chcete přidat Konzolová aplikace pracovního postupu do existujícího řešení, otevřete toto řešení [!INCLUDE[vs2010](../includes/vs2010-md.md)], klikněte pravým tlačítkem na řešení v **Průzkumníka řešení**a vyberte **přidat**, pak  **Nový projekt...** Chcete-li otevřít **nový projekt** dialogové okno. Pokračujte, jak je popsáno výše v tomto postupu.  
+    > Pokud chcete přidat Konzolová aplikace pracovního postupu do existujícího řešení, otevřete toto řešení [!INCLUDE[vs2010](../includes/vs2010-md.md)], klikněte pravým tlačítkem na řešení v **Průzkumníka řešení**a vyberte **přidat**, pak  **Nový projekt...** Chcete-li otevřít **nový projekt** dialogové okno. Pokračujte, jak je popsáno výše v tomto postupu.  
   
 8. Šablona projektu vytvoří definici pracovního postupu v XAML a definice aplikace konzoly je ve zdrojovém kódu. [!INCLUDE[wfd2](../includes/wfd2-md.md)] Se otevře a zobrazí na plátně pro pracovní postup, který jste vytvořili.  
   

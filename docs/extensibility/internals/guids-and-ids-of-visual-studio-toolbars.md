@@ -16,18 +16,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 552f14885a95bf5c8461d6ca9db7ef2dbe204c73
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 4a9dc406665dc754f0c57c401f672cd4799183ef
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56643753"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63418458"
 ---
 # <a name="guids-and-ids-of-visual-studio-toolbars"></a>Identifikátory GUID a ID sady Visual Studio panelů nástrojů
 Toto téma uvádí hodnoty GUID a ID panelů nástrojů, které jsou součástí integrovaného vývojového prostředí (IDE) sady Visual Studio a skupin, které obsahují. Tyto hodnoty jsou definovány v *.vsct* soubory, které se instalují jako součást sady Visual Studio SDK. Další informace najdete v tématu [příkazy definované prostředím IDE, nabídky a skupiny](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).
 
 > [!NOTE]
->  Mnohé z panelů nástrojů sady Visual Studio nejsou definovány tak, že Visual Studio a jejich identifikátoru GUID a ID hodnoty nejsou veřejné. Toto téma obsahuje seznam pouze panely nástrojů, které jsou definovány v sadě Visual Studio SDK *.vsct* soubory.
+> Mnohé z panelů nástrojů sady Visual Studio nejsou definovány tak, že Visual Studio a jejich identifikátoru GUID a ID hodnoty nejsou veřejné. Toto téma obsahuje seznam pouze panely nástrojů, které jsou definovány v sadě Visual Studio SDK *.vsct* soubory.
 
  Další informace o tom, jak pracovat s objekty integrovaného vývojového prostředí, které jsou definovány v *.vsct* soubory, naleznete v tématu [rozšířit nabídek a příkazů](../../extensibility/extending-menus-and-commands.md).
 
@@ -108,7 +108,7 @@ Toto téma uvádí hodnoty GUID a ID panelů nástrojů, které jsou součástí
  Panely nástrojů lze zobrazit přímo v integrovaném vývojovém prostředí nebo v oknech nástrojů třeba **Průzkumníka řešení**. Protože nástroj windows nejsou definovány v *.vsct* soubory panelech nástrojů není definovali nadřazených objektů. Místo toho jsou umístěny v kódu. V následující tabulce jsou uvedeny panely nástrojů, které se zobrazují na okna nástrojů v prostředí IDE a příkaz skupiny, které obsahují.
 
 > [!NOTE]
->  Panely nástrojů a skupiny použijte identifikátor GUID `guidSHLMainMenu`, s výjimkou pomocí syntaxe GUID:ID uvedeno jinak. Kde GUID je zadaný pro panel nástrojů, platí i pro skupiny, ke kterým sestup z panelu nástrojů.
+> Panely nástrojů a skupiny použijte identifikátor GUID `guidSHLMainMenu`, s výjimkou pomocí syntaxe GUID:ID uvedeno jinak. Kde GUID je zadaný pro panel nástrojů, platí i pro skupiny, ke kterým sestup z panelu nástrojů.
 
 |Panel nástrojů|Panel nástrojů|Skupiny|
 |-----------------|-------------|------------|

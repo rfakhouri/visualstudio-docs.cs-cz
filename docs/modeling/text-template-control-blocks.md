@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 344975f0f28c8fc8ee6f8a213b519f0b17e5880a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3a3396caf4f1ade860f4727095d3305d86e837c3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105341"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434173"
 ---
 # <a name="text-template-control-blocks"></a>Řídicí bloky textových šablon
 Řídicí bloky umožňují napsat kód v textové šabloně, aby bylo možné odlišit výstup. Existují tři druhy řídicí bloky, které se rozlišují výhradně podle jejich otvírací závorky:
@@ -62,11 +62,11 @@ Found another one!
 ```
 
 > [!WARNING]
->  Vždy pomocí {...} pro vymezení vnořených příkazů, které obsahují Vložit prostý text. Následující příklad nemusí fungovat správně:
+> Vždy pomocí {...} pro vymezení vnořených příkazů, které obsahují Vložit prostý text. Následující příklad nemusí fungovat správně:
 >
->  `<# if (ShouldPrint) #> Some text. -- WRONG`
+> `<# if (ShouldPrint) #> Some text. -- WRONG`
 >
->  Místo toho by měl obsahovat {složené závorky}, následujícím způsobem:
+> Místo toho by měl obsahovat {složené závorky}, následujícím způsobem:
 
 ```
 
@@ -115,7 +115,7 @@ Some text.
 ```
 
 > [!NOTE]
->  Řídicí blok funkce třídy nesmí následovat standardní řídicí bloky ve stejném souboru šablony. Ale toto omezení se nevztahuje na výsledek použití `<#@include#>` direktivy. Každý vkládaného souboru může mít standardními bloky a bloky s funkcí třídy.
+> Řídicí blok funkce třídy nesmí následovat standardní řídicí bloky ve stejném souboru šablony. Ale toto omezení se nevztahuje na výsledek použití `<#@include#>` direktivy. Každý vkládaného souboru může mít standardními bloky a bloky s funkcí třídy.
 
  Můžete vytvořit funkci, která generuje výstup s využitím vkládání služby bloky textu a výraz uvnitř řídicí blok funkcí třídy. Příklad:
 

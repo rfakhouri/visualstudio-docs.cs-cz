@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a236b30552007112663ad9f985ddc94995fe1ef8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: bb7ee0a937e6cb901704763e1f4ead478d99e0e8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050021"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419443"
 ---
 # <a name="how-to-hide-controls-on-worksheets-when-printing"></a>Postupy: Skrytí ovládacích prvků na listech při tisku
   Při tisku dokumentu aplikace Microsoft Office Excel, který obsahuje ovládací prvky Windows Forms, ovládací prvky jsou viditelné na tisk listů. Ovládací prvky lze skrýt při tisku na listu.
@@ -28,10 +28,10 @@ ms.locfileid: "60050021"
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]
 
 > [!NOTE]
->  Pokud skrýt ovládací prvky, které zobrazují data, například <xref:Microsoft.Office.Tools.Excel.Controls.TextBox>, nebudou viditelné v tištěné listu dat v ovládacím prvku.
+> Pokud skrýt ovládací prvky, které zobrazují data, například <xref:Microsoft.Office.Tools.Excel.Controls.TextBox>, nebudou viditelné v tištěné listu dat v ovládacím prvku.
 
 > [!NOTE]
->  Váš počítač může v následujících pokynech zobrazovat odlišné názvy nebo umístění některých prvků uživatelského rozhraní sady Visual Studio. Tyto prvky jsou určeny edicí sady Visual Studio a použitým nastavením. Další informace najdete v tématu [přizpůsobení integrovaného vývojového prostředí sady Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
+> Váš počítač může v následujících pokynech zobrazovat odlišné názvy nebo umístění některých prvků uživatelského rozhraní sady Visual Studio. Tyto prvky jsou určeny edicí sady Visual Studio a použitým nastavením. Další informace najdete v tématu [přizpůsobení integrovaného vývojového prostředí sady Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="to-hide-controls-when-a-worksheet-is-printed"></a>Chcete-li skrýt ovládací prvky, pokud list vytisknout
 

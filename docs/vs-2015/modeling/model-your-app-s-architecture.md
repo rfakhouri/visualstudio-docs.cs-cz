@@ -11,12 +11,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0a6e551dd2f045684168947d2c5a4e63089928c1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: be66bf02294c12d39bcfd28793bb036696296476
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60098438"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417784"
 ---
 # <a name="model-your-app39s-architecture"></a>Modelování aplikace&#39;s architektury
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ K zajištění, že softwarový systém nebo aplikace splňuje uživatelů potř
  Účel modelu je, abyste snížili nejasnosti, ke kterým dochází v přirozeném jazyce popisy a vy i vaši kolegové vizualizovat návrhu a diskutovat o alternativní návrhy. Model je třeba použít společně s další dokumenty nebo diskusí. Model samostatně, nepředstavuje kompletní specifikaci architektury.  
   
 > [!NOTE]
->  V tomto tématu "systém" znamená, že software, který vyvíjíte. Může být velkou kolekci mnoho softwarové a hardwarové součásti, nebo jedné aplikace nebo součást aplikace.  
+> V tomto tématu "systém" znamená, že software, který vyvíjíte. Může být velkou kolekci mnoho softwarové a hardwarové součásti, nebo jedné aplikace nebo součást aplikace.  
   
  Architektura systému je možné rozdělit do dvou oblastí:  
   

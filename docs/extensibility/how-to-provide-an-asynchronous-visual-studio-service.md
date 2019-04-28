@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a9a03c4282fb7c2719f0f408759be972ead0f866
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110294"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62862937"
 ---
 # <a name="how-to-provide-an-asynchronous-visual-studio-service"></a>Postupy: Poskytování asynchronní služby sady Visual Studio
 Pokud chcete získat službu bez blokování vlákna uživatelského rozhraní, by měl vytvořit asynchronní služby a načíst balíček ve vlákně na pozadí. K tomuto účelu můžete použít <xref:Microsoft.VisualStudio.Shell.AsyncPackage> spíše než <xref:Microsoft.VisualStudio.Shell.Package>a přidejte službu s asynchronní balíček speciální asynchronní metody.

@@ -30,12 +30,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5cee90bd16f0b7a151ca826517f081a89518ff5b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d443a38750904df26fdfffc65104bcde31c8d6fc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060654"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437604"
 ---
 # <a name="creating-and-configuring-type-members-class-designer"></a>Vytváření a konfigurace členů typů (návrhář tříd)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ Můžete přidat tyto členy typů pro třídu diagramu a konfigurovat je v **po
 |Modul (pouze VB)|metoda, vlastnost, pole, událost, konstruktor, konstanta|  
   
 > [!NOTE]
->  Když přístupové objekty get a set nepotřebují další logiku, můžete deklaraci vlastnosti zestručnit pomocí automaticky implementovaných vlastností (pouze jazyk C#). Chcete-li zobrazit úplný podpis z **Diagram tříd** nabídce zvolte **změnit formát členů**, **zobrazit úplný podpis**. Další informace o automaticky implementovaných vlastnostech naleznete v tématu [implemented Properties](http://msdn.microsoft.com/library/aa55fa97-ccec-431f-b5e9-5ac789fd32b7).  
+> Když přístupové objekty get a set nepotřebují další logiku, můžete deklaraci vlastnosti zestručnit pomocí automaticky implementovaných vlastností (pouze jazyk C#). Chcete-li zobrazit úplný podpis z **Diagram tříd** nabídce zvolte **změnit formát členů**, **zobrazit úplný podpis**. Další informace o automaticky implementovaných vlastnostech naleznete v tématu [implemented Properties](http://msdn.microsoft.com/library/aa55fa97-ccec-431f-b5e9-5ac789fd32b7).  
   
 ## <a name="common-tasks"></a>Obecné úlohy  
   
@@ -85,10 +85,10 @@ Můžete přidat tyto členy typů pro třídu diagramu a konfigurovat je v **po
 - Okno podrobností třídy  
   
 > [!NOTE]
->  Pomocí postupů v tomto oddíle můžete také vytvořit konstruktory a destruktory. Nezapomínejte, že konstruktory a destruktory jsou zvláštní druhy metod a jako takové se zobrazují v **metody** ve tvarech diagramu třídy a v oddílu **metody** sekce třídy V mřížce okno podrobností.  
+> Pomocí postupů v tomto oddíle můžete také vytvořit konstruktory a destruktory. Nezapomínejte, že konstruktory a destruktory jsou zvláštní druhy metod a jako takové se zobrazují v **metody** ve tvarech diagramu třídy a v oddílu **metody** sekce třídy V mřížce okno podrobností.  
   
 > [!NOTE]
->  Parametr je jediná entita, kterou můžete přidat k delegátu. Upozorňujeme, že postup s názvem „Vytvoření členu pomocí panelu nástrojů okna podrobností třídy“ není pro tuto akci platný.  
+> Parametr je jediná entita, kterou můžete přidat k delegátu. Upozorňujeme, že postup s názvem „Vytvoření členu pomocí panelu nástrojů okna podrobností třídy“ není pro tuto akci platný.  
   
 #### <a name="to-create-a-member-using-class-designer"></a>Vytvoření členu pomocí Návrháře třídy  
   
@@ -182,7 +182,7 @@ Můžete přidat tyto členy typů pro třídu diagramu a konfigurovat je v **po
 3. Upravte hodnoty v polích v mřížce okno podrobností třídy. Po každé úpravě stiskněte klávesu ENTER nebo jinak přesuňte fokus z upravovaného pole, například stisknutím klávesy TAB. Úpravy se v kódu projeví okamžitě.  
   
     > [!NOTE]
-    >  Pokud chcete změnit pouze název členu, můžete to provést úpravou na místě.  
+    > Pokud chcete změnit pouze název členu, můžete to provést úpravou na místě.  
   
 ## <a name="AddMethodParams"></a> Přidávání parametrů k metodám  
  Přidání parametrů do metody pomocí okna podrobností třídy. Parametry lze konfigurovat jako povinné, či volitelné. Zadání hodnoty pro **volitelné výchozí** vlastnost parametru dáte návrháři pokyn, aby vygeneroval kód jako volitelný parametr.  
@@ -216,10 +216,10 @@ Můžete přidat tyto členy typů pro třídu diagramu a konfigurovat je v **po
   V okně Vlastnosti zobrazí stejné vlastnosti parametru v okně podrobností třídy: **Název**, **typ**, **modifikátor**, **Souhrn**, jakož i **volitelné výchozí** vlastnost. Změnou vlastnosti na jednom místě aktualizujete hodnotu vlastnosti globálně, včetně zobrazení hodnoty v jiném umístění.  
   
 > [!NOTE]
->  Chcete-li přidat parametr do delegáta, přečtěte si téma [vytváření členů](../ide/creating-and-configuring-type-members-class-designer.md#CreateMembers).  
+> Chcete-li přidat parametr do delegáta, přečtěte si téma [vytváření členů](../ide/creating-and-configuring-type-members-class-designer.md#CreateMembers).  
   
 > [!NOTE]
->  Ačkoli je destruktor metoda, nemůže mít parametry.  
+> Ačkoli je destruktor metoda, nemůže mít parametry.  
   
 ### <a name="HowToAddParameterToMethod"></a> Přidání parametru k metodě  
   
@@ -254,7 +254,7 @@ Můžete přidat tyto členy typů pro třídu diagramu a konfigurovat je v **po
 4. V okně Vlastnosti zadejte hodnotu **volitelné výchozí** vlastnost. Nastavením vlastnosti Volitelné výchozí nastavíte daný parametr na volitelný.  
   
     > [!NOTE]
-    >  Volitelné parametry musí být posledními parametry v seznamu parametrů.  
+    > Volitelné parametry musí být posledními parametry v seznamu parametrů.  
   
 ## <a name="ClassDetailsUsageNotes"></a> Poznámky k použití okna podrobností třídy  
  Při používání okna podrobností třídy mějte prosím na paměti následující tipy.  

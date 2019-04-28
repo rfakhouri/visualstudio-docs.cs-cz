@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e6da5a791237aefa037b2cb16bffef34576ac6e7
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57869860"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62545893"
 ---
 # <a name="ca1717-only-flagsattribute-enums-should-have-plural-names"></a>CA1717: Pouze výčty FlagsAttribute by měly mít názvy v množném čísle
 
@@ -30,7 +30,7 @@ ms.locfileid: "57869860"
 |Kategorie|Microsoft.Naming|
 |Narušující změna|Narušující|
 
-## <a name="cause"></a>příčina
+## <a name="cause"></a>Příčina
 
 Název výčtu končí v množném čísle word a výčet není označen atributem <xref:System.FlagsAttribute?displayProperty=fullName> atribut.
 

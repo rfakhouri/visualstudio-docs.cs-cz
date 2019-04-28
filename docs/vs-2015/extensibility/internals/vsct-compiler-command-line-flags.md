@@ -11,12 +11,12 @@ ms.assetid: 9dc6c33f-e6cf-4cf2-9b05-e8f7bfac1cfb
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 935734d3ab21fd4ce69afaaf5fd4eef9ac417089
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 98cd0ec51ead200a904baeb409551cd1084f1f11
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54792499"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440817"
 ---
 # <a name="vsct-compiler-command-line-flags"></a>Příznaky příkazového řádku pro kompilátor VSCT
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -52,7 +52,7 @@ Syntax: vsct <infile> [<outfile>] [-S[symbols file]] [-D<preprocessor-define>]*
 ```  
   
 > [!NOTE]
->  Znaky - (pomlčka) a / (lomítko) jsou obě přijaté zápis pro ukazování parametry příkazového řádku.  
+> Znaky - (pomlčka) a / (lomítko) jsou obě přijaté zápis pro ukazování parametry příkazového řádku.  
   
  Přijatelné příznaků a jejich význam jsou.  
   
@@ -61,7 +61,7 @@ Syntax: vsct <infile> [<outfile>] [-S[symbols file]] [-D<preprocessor-define>]*
 |-D|Zadejte libovolné další definované symboly.|  
 |-I|Značí, že další cesty, které má být použit při řešení odkazů na soubory zahrnutí.|  
 |-L|Zadejte <xref:System.Globalization.CultureInfo> název jazykové verze, například "en US".|  
-|-E|Generování C# objektů v určeném oboru názvů pro příkaz položky, za nímž následuje [C&#124;H&#124;N]:*filename*kde C = C#, H = hlaviček jazyka C++, N = oboru názvů. Obor názvů se vyžaduje pro jazyk C#.|  
+|-E|Generování C# objektů v určeném oboru názvů pro příkaz položky, za nímž následuje [C&#124;H&#124;N]:*filename*kde C = C#, H = C++ záhlaví, N = oboru názvů. Obor názvů se vyžaduje pro jazyk C#.|  
 |-v|Podrobný výstup.|  
   
  Přepínač -L instruuje kompilátor, aby vyberte skupinu pro řetězce pro vytvoření .cto binární soubor, který odpovídá daný <xref:System.Globalization.CultureInfo> název jazykové verze. Název zadaná jazyková verze by měl odpovídat atribut Language jednoho nebo víc [Strings – Element](../../extensibility/strings-element.md) v souboru .vsct. Pokud prvek řetězců nemá žádný atribut Language, je zděděno z obsahuje [commandtable – Element](../../extensibility/commandtable-element.md).  

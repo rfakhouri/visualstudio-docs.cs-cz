@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 70594f8c881289bd394f33353f237bdab71c91f1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3c094ad703727903e7109d6a748b8383e4cad7d6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60077365"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435486"
 ---
 # <a name="how-to-add-or-remove-sharepoint-connections"></a>Postupy: Přidání nebo odebrání připojení služby SharePoint
   Průzkumníku serveru vám umožňuje procházet servery služby SharePoint, stejně jako datová připojení. Však před můžete procházet obsah webu služby SharePoint je třeba přidat ji **připojení služby SharePoint** uzlu.
@@ -41,7 +41,7 @@ ms.locfileid: "60077365"
 3. Vyberte lokalitu a pak na panelu nabídek zvolte **upravit** > **odstranit**.
 
     > [!NOTE]
-    >  Tento krok nedojde k odstranění podkladové lokality; Odstraní pouze připojení z **Průzkumníka serveru**.
+    > Tento krok nedojde k odstranění podkladové lokality; Odstraní pouze připojení z **Průzkumníka serveru**.
 
 ## <a name="see-also"></a>Viz také:
 - [Procházet připojení služby SharePoint pomocí Průzkumníka serveru](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)

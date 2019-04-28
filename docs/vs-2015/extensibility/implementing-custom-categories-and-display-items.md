@@ -11,12 +11,12 @@ ms.assetid: 99311a93-d642-4344-bbf9-ff6e7fa5bf7f
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f84d66a1dc51baffe743b1f7c16b4bf0ff15ef3a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 474d5c66507b56bea609568b6acfe9f5eff75e9c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117899"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63414609"
 ---
 # <a name="implementing-custom-categories-and-display-items"></a>Implementace vlastní kategorie a zobrazit položky
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -90,7 +90,7 @@ VSPackage může poskytnout kontrolu nad písma a barvy jeho textu, aby [!INCLUD
   - Zobrazení informací pro každého člena **kategorie**.  
   
   > [!NOTE]
-  >  Každý **kategorie** musí obsahovat alespoň jeden **položky zobrazení**.  
+  > Každý **kategorie** musí obsahovat alespoň jeden **položky zobrazení**.  
   
 - Využívá integrovaného vývojového prostředí `T:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup` rozhraní definovat sjednocení několik kategorií.  
   
@@ -122,7 +122,7 @@ VSPackage může poskytnout kontrolu nad písma a barvy jeho textu, aby [!INCLUD
      To lze provést prostřednictvím systému implementované <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> rozhraní. I když především pro podporu trvalost, <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetItem%2A> metodu je možné získat informace o písma a barvy pro **zobrazení položek**. Další informace najdete v tématu [přístup k uložené písmo a barvy nastavení](../extensibility/accessing-stored-font-and-color-settings.md).  
   
     > [!NOTE]
-    >  Chcete-li zajistit, aby získala při dotazování na výsledky jsou správné, může být vhodné použít <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorCacheManager> rozhraní k určení, pokud se před voláním metody načítání potřebuje vyprázdnění mezipaměti a aktualizace <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> rozhraní.  
+    > Chcete-li zajistit, aby získala při dotazování na výsledky jsou správné, může být vhodné použít <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorCacheManager> rozhraní k určení, pokud se před voláním metody načítání potřebuje vyprázdnění mezipaměti a aktualizace <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> rozhraní.  
   
 ## <a name="see-also"></a>Viz také  
  <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService%2A>   

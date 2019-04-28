@@ -24,12 +24,12 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b56f926006b952b0e92a791e36bb821f3df0197d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 54160bbdfe834a1b3226f4445b862c151bcf35c3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54773692"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63423282"
 ---
 # <a name="code-access-security-for-clickonce-applications"></a>Zabezpečení přístupu ke kódu pro aplikace ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ Aplikace ClickOnce jsou založeny na rozhraní .NET Framework a jsou v souladu s
 - Pokud aplikace vyžaduje oprávnění plné důvěryhodnosti, koncový uživatel může zobrazit výzva k udělení oprávnění k aplikaci. To znamená, že aplikace neposkytuje skutečně ClickOnce prostředí a na řádku může být potenciálně matoucí pro méně zkušených uživatelů.  
   
   > [!NOTE]
-  >  Při instalaci aplikace z vyměnitelných médií, jako je například disk CD-ROM, uživatel není vyzván. Kromě toho správce sítě můžete nakonfigurovat zásady sítě tak, aby se uživatelům nebude výzva při instalaci aplikace z důvěryhodného zdroje. Další informace najdete v tématu [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md).  
+  > Při instalaci aplikace z vyměnitelných médií, jako je například disk CD-ROM, uživatel není vyzván. Kromě toho správce sítě můžete nakonfigurovat zásady sítě tak, aby se uživatelům nebude výzva při instalaci aplikace z důvěryhodného zdroje. Další informace najdete v tématu [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md).  
   
   Pokud chcete omezit oprávnění pro aplikaci ClickOnce, můžete upravit oprávnění zabezpečení přístupu kódu pro vaši aplikaci na vyžádání, která nejlíp odpovídá oprávnění, která vaše aplikace vyžaduje zóny. Ve většině případů vyberete zónu, ze kterého je aplikace nasazena. Například pokud vaše aplikace je podniková aplikace, můžete použít **místní Intranet** zóny. Pokud je vaše aplikace internetovou aplikaci, můžete použít **Internet** zóny.  
   

@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 59f26e4e8972f02740db45760e5b2e876c300bd1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ca57c279ceabd03f48ffaa564d42f7d023b39887
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045398"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434188"
 ---
 # <a name="using-the-settings-store"></a>Použití úložiště nastavení
 Existují dva typy nastavení úložišť:
@@ -82,6 +82,6 @@ Existují dva typy nastavení úložišť:
 2. Přejděte do HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0Exp_Config\InstalledProducts\\.
 
     > [!NOTE]
-    >  Ujistěte se, že máte před sebou klíč, který obsahuje \14.0Exp_Config\ a ne \14.0_Config\\. Když spustíte experimentální instanci sady Visual Studio, nastavení konfigurace jsou v podregistru "14.0Exp_Config".
+    > Ujistěte se, že máte před sebou klíč, který obsahuje \14.0Exp_Config\ a ne \14.0_Config\\. Když spustíte experimentální instanci sady Visual Studio, nastavení konfigurace jsou v podregistru "14.0Exp_Config".
 
 3. Rozbalte uzel \Installed Products\. Pokud má zpráva v předchozích krocích **nástroje Microsoft Windows Phone Developer nainstalovány: Hodnota TRUE**, \Installed Products\ by mělo obsahovat uzel Microsoft Windows Phone Developer Tools. Pokud má zpráva **nástroje Microsoft Windows Phone Developer nainstalovány: False**, pak \Installed Products\ by neměla obsahovat uzel Microsoft Windows Phone Developer Tools.

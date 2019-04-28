@@ -12,12 +12,12 @@ ms.assetid: 6905845e-e88e-4805-adcf-21da39108ec7
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 496ace3193ec2a78033b2e429f6fa7c6cbf11a07
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4b2ce01cf315404fbd37e1936ac445a37c9a3f72
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091522"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430927"
 ---
 # <a name="how-to-access-the-built-in-fonts-and-color-scheme"></a>Postupy: Přístup k vestavěné písma a barvy schéma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ Integrovaného vývojového prostředí (IDE) sady Visual Studio obsahuje schém
     Tento identifikátor GUID slouží k jednoznačné identifikaci kategorii<strong>.</strong> Rozhraní IDE výchozí písma a barvy specifikace opětovně používá tuto kategorii.  
   
    > [!NOTE]
-   >  Při načítání dat písma a barvy s <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> nebo jiných rozhraní rozšíření VSPackages použít tento identifikátor GUID k odkazování předdefinované informace.  
+   > Při načítání dat písma a barvy s <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> nebo jiných rozhraní rozšíření VSPackages použít tento identifikátor GUID k odkazování předdefinované informace.  
   
 2. Název kategorie musí přidat do tabulky řetězců uvnitř sady VSPackage soubor prostředků (.rc), tak, aby může být lokalizována, podle potřeby při zobrazení v rozhraní IDE.  
   

@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9cc24e259ac5aaa8526d5855a1662c146e1438ff
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6c4655d251d9020c1b8b4474865126dc98fa982f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60112153"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420677"
 ---
 # <a name="display-files-by-using-the-open-file-command"></a>Zobrazení souborů pomocí příkazu Otevřít soubor
 Následující kroky popisují, jak zachází s integrovaného vývojového prostředí **otevřít soubor** příkaz, který je k dispozici na **souboru** v nabídce [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Kroky také popisují, jak by měl projekty reakce na volání, které pocházejí z tohoto příkazu.
@@ -31,7 +31,7 @@ Následující kroky popisují, jak zachází s integrovaného vývojového pros
     - Pokud soubor není otevřen, zavolá rozhraní IDE <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A> k dotazování každý projekt k určení, které projekty můžou otevřít soubor.
 
         > [!NOTE]
-        >  Ve vaší implementaci projektu <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A>, zadejte hodnotu priority, která určuje úroveň, na které váš projekt otevře soubor. Hodnoty priority jsou součástí <xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY> výčtu.
+        > Ve vaší implementaci projektu <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A>, zadejte hodnotu priority, která určuje úroveň, na které váš projekt otevře soubor. Hodnoty priority jsou součástí <xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY> výčtu.
 
 2. Každý projekt jako odpověď vrátí úroveň priority, která určuje význam umístí na se projekt k otevření souboru.
 

@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 26b917b04314c99ba6575842b8e102113b22b469
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 8204b13aa0405d01590e4aeb0fe43a92b41c226f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596956"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431261"
 ---
 # <a name="how-to-add-an-updater-method"></a>Postupy: Přidání aktualizační metody
   Můžete povolit uživatelům aktualizovat tak, že vytvoříte obchodních dat v Sharepointovém seznamu externích *Updater* metody. Další informace najdete v tématu [navrhování modelu připojení obchodních dat](../sharepoint/designing-a-business-data-connectivity-model.md).
@@ -50,7 +50,7 @@ ms.locfileid: "56596956"
      Další informace najdete v tématu [navrhování modelu připojení obchodních dat](../sharepoint/designing-a-business-data-connectivity-model.md).
 
    > [!NOTE]
-   >  Pokud identifikátor entity typu představuje pole v databázové tabulce, který je generován automaticky, nastavte **pole předběžný Aktualizátor** vlastnost **True**.
+   > Pokud identifikátor entity typu představuje pole v databázové tabulce, který je generován automaticky, nastavte **pole předběžný Aktualizátor** vlastnost **True**.
 
 4. V **Průzkumníka řešení**, otevřete místní nabídku souboru služby kód, který byl vygenerován pro entitu a pak zvolte **zobrazit kód**.
 
@@ -59,7 +59,7 @@ ms.locfileid: "56596956"
 5. Přidejte kód do metody Update k aktualizaci dat. Následující příklad aktualizuje informace o kontaktu v ukázkové databázi AdventureWorks pro SQL Server.
 
    > [!NOTE]
-   >  Nahraďte hodnotu `ServerName` pole s názvem vašeho serveru.
+   > Nahraďte hodnotu `ServerName` pole s názvem vašeho serveru.
 
     [!code-csharp[SP_BDC#5](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#5)]
     [!code-vb[SP_BDC#5](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#5)]

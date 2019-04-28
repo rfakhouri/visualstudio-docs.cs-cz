@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: aba73d5fc6c1609a3347178765ba516840b5176e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e2a7cd6143b9c97bbcd06337d38ae169dfa94305
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061686"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438615"
 ---
 # <a name="walkthrough-change-worksheet-formatting-using-checkbox-controls"></a>Návod: Změna formátování listů s použitím ovládacích prvků CheckBox
   Tento návod ukazuje základy používání zaškrtávacích políček na list aplikace Microsoft Office Excel Změna formátování. Nástroje pro vývoj pro Office v sadě Visual Studio použije k vytvoření a přidání kódu do projektu. Výsledek jako úplnou vzorovou najdete v ukázce ovládací prvky aplikace Excel v [Office Ukázky a návody vývoje](../vsto/office-development-samples-and-walkthroughs.md).
@@ -35,7 +35,7 @@ ms.locfileid: "60061686"
 - Otestování vašeho projektu.
 
 > [!NOTE]
->  Váš počítač může v následujících pokynech zobrazovat odlišné názvy nebo umístění některých prvků uživatelského rozhraní sady Visual Studio. Tyto prvky jsou určeny edicí sady Visual Studio a použitým nastavením. Další informace najdete v tématu [přizpůsobení integrovaného vývojového prostředí sady Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
+> Váš počítač může v následujících pokynech zobrazovat odlišné názvy nebo umístění některých prvků uživatelského rozhraní sady Visual Studio. Tyto prvky jsou určeny edicí sady Visual Studio a použitým nastavením. Další informace najdete v tématu [přizpůsobení integrovaného vývojového prostředí sady Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="prerequisites"></a>Požadavky
  K dokončení tohoto návodu budete potřebovat následující komponenty:
@@ -73,14 +73,14 @@ ms.locfileid: "60061686"
 
 5. Přetáhněte druhý zaškrtávací políčko na nebo blízko ní buňky **B4** a změnit následující vlastnosti:
 
-    |Vlastnost|Value|
+    |Vlastnost|Hodnota|
     |--------------|-----------|
     |**Název**|**applyItalicFont**|
     |**Text**|**Kurzíva**|
 
 6. Přetáhněte třetí zaškrtávací políčko na nebo blízko ní buňky **B6** a změnit následující vlastnosti:
 
-    |Vlastnost|Value|
+    |Vlastnost|Hodnota|
     |--------------|-----------|
     |**Název**|**applyUnderlineFont**|
     |**Text**|**Podtržení**|
@@ -94,7 +94,7 @@ ms.locfileid: "60061686"
      V dalším kroku při přetahování <xref:Microsoft.Office.Tools.Excel.NamedRange> ovládacího prvku do listu.
 
     > [!NOTE]
-    >  Můžete také přidat <xref:Microsoft.Office.Tools.Excel.NamedRange> ovládacího prvku tak, že zadáte **textFont** do **název** pole.
+    > Můžete také přidat <xref:Microsoft.Office.Tools.Excel.NamedRange> ovládacího prvku tak, že zadáte **textFont** do **název** pole.
 
 #### <a name="to-add-text-to-a-namedrange-control"></a>Chcete-li přidat text do ovládacího prvku NamedRange
 

@@ -16,12 +16,12 @@ caps.latest.revision: 51
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1f2d3f0bd70a4c7be82b991eb5397065fe3d4ee7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3e78e23d7e176dffef1531da1af28d318253d9d1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116164"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431445"
 ---
 # <a name="just-in-time-debugging-in-visual-studio"></a>Ladění za běhu v sadě Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -92,7 +92,7 @@ Akce, které byste měli provést, když se zobrazí sadě Visual Studio Just-in
 5. Zavřít **Editor registru** okna.
 
 > [!NOTE]
->  Pokud chcete zakázat Just-In-Time ladění pro aplikace na straně serveru a tyto kroky nepomohly problém vyřešit, vypněte ladění na straně serveru v nastavení aplikace služby IIS a zkuste to znovu.
+> Pokud chcete zakázat Just-In-Time ladění pro aplikace na straně serveru a tyto kroky nepomohly problém vyřešit, vypněte ladění na straně serveru v nastavení aplikace služby IIS a zkuste to znovu.
 
 #### <a name="to-enable-just-in-time-debugging-of-a-windows-form"></a>Chcete-li povolit Just-In-Time ladění formuláře Windows
 
@@ -140,7 +140,7 @@ static void Main(string[] args)
 ```
 
 > [!IMPORTANT]
->  Aby se tento postup provést [konfiguraci vydané verze](../debugger/how-to-set-debug-and-release-configurations.md), musí si vypnout [pouze můj kód](../debugger/just-my-code.md). V sadě Visual Studio, klikněte na tlačítko **Nástroje / možnosti**. V **možnosti** dialogového okna, vyberte **ladění**. Zrušte zaškrtnutí z **povolit volbu pouze vlastní kód**.
+> Aby se tento postup provést [konfiguraci vydané verze](../debugger/how-to-set-debug-and-release-configurations.md), musí si vypnout [pouze můj kód](../debugger/just-my-code.md). V sadě Visual Studio, klikněte na tlačítko **Nástroje / možnosti**. V **možnosti** dialogového okna, vyberte **ladění**. Zrušte zaškrtnutí z **povolit volbu pouze vlastní kód**.
 
  Sestavte řešení (v sadě Visual Studio, zvolte **sestavení / Rebuild řešení**). Můžete ladit nebo konfiguraci vydané verze. Další informace o konfiguracích sestavení naleznete v tématu [Principy konfigurací sestavení](../ide/understanding-build-configurations.md).
 
@@ -157,7 +157,7 @@ static void Main(string[] args)
  Neklikejte na **zrušit**! Za několik sekund, měli byste vidět dvě tlačítka **ladění** a **ukončit program**. Klikněte na tlačítko **ladění**.
 
 > [!CAUTION]
->  Pokud vaše aplikace obsahuje nedůvěryhodný kód, zobrazí se dialogové okno s upozorněním zabezpečení. Toto dialogové okno umožňuje rozhodnout, jestli chcete pokračovat v ladění. Než budete pokračovat s laděním, rozhodněte, zda kódu důvěřujete. Napsali jste kód sami? Důvěřujete kodéru? Pokud aplikace běží na vzdáleném počítači, poznáváte název procesu? I v případě, že aplikace běží místně, který nemusí nutně znamenat, že jí lze důvěřovat. Zvažte možnost škodlivý kód spuštěný ve vašem počítači. Pokud se rozhodnete, že kód Chystáte se ladit, je důvěryhodný, klikněte na tlačítko **ladění**. V opačném případě klikněte na tlačítko **Neladit**.
+> Pokud vaše aplikace obsahuje nedůvěryhodný kód, zobrazí se dialogové okno s upozorněním zabezpečení. Toto dialogové okno umožňuje rozhodnout, jestli chcete pokračovat v ladění. Než budete pokračovat s laděním, rozhodněte, zda kódu důvěřujete. Napsali jste kód sami? Důvěřujete kodéru? Pokud aplikace běží na vzdáleném počítači, poznáváte název procesu? I v případě, že aplikace běží místně, který nemusí nutně znamenat, že jí lze důvěřovat. Zvažte možnost škodlivý kód spuštěný ve vašem počítači. Pokud se rozhodnete, že kód Chystáte se ladit, je důvěryhodný, klikněte na tlačítko **ladění**. V opačném případě klikněte na tlačítko **Neladit**.
 
  **Ladicí program za běhu sady Visual Studio** okno se zobrazí:
 

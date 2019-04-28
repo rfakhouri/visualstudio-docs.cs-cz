@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: bbc2135f292197a1856eaea8d80c03d1c41adff3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 96d18ae0684dab5b6dc5c4001b93804bb13aa75e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60053803"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444259"
 ---
 # <a name="walkthrough-using-intellitrace"></a>Návod: Používání IntelliTrace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ Nástroj IntelliTrace můžete použít ke shromažďování informací o určit
 5. Spusťte ladění obvyklým způsobem. (Stiskněte **F5** nebo klikněte na tlačítko **ladění / spuštění ladění**.  
   
     > [!TIP]
-    >  Zachovat **lokální** a **automatické hodnoty** windows otevřete během ladění zobrazovat a poznamenejte si hodnoty v těchto oknech.  
+    > Zachovat **lokální** a **automatické hodnoty** windows otevřete během ladění zobrazovat a poznamenejte si hodnoty v těchto oknech.  
   
 6. Provádění zastaví na zarážce. Pokud se nezobrazí **diagnostické nástroje** okna, klikněte na tlačítko **ladění / Windows / události IntelliTrace**.  
   
@@ -87,7 +87,7 @@ Nástroj IntelliTrace můžete použít ke shromažďování informací o určit
 1. Zapněte shromažďování dat volání. (Na **nástroje / Možnosti / IntelliTrace / Obecné**vyberte **události IntelliTrace a informací o volání**. IntelliTrace se spustí shromažďování těchto informací při spuštění další relace ladění.  
   
     > [!TIP]
-    >  To může zpomalit vaši aplikaci a zvětšit velikost všech protokolů souborů IntelliTrace (.iTrace) ukládaných na disk. Chcete-li získat většinu dat volání, ale minimalizování negativních dopadů, zaznamenávejte data z pouze modulů, které vás zajímají. Chcete-li změnit maximální velikost souborů .iTrace, přejděte na **nástroje / Možnosti / IntelliTrace / pokročilé**a zadat maximální množství místa na disku. Výchozí hodnota je 250 MB.  
+    > To může zpomalit vaši aplikaci a zvětšit velikost všech protokolů souborů IntelliTrace (.iTrace) ukládaných na disk. Chcete-li získat většinu dat volání, ale minimalizování negativních dopadů, zaznamenávejte data z pouze modulů, které vás zajímají. Chcete-li změnit maximální velikost souborů .iTrace, přejděte na **nástroje / Možnosti / IntelliTrace / pokročilé**a zadat maximální množství místa na disku. Výchozí hodnota je 250 MB.  
   
 2. Spusťte ladění konzolovou aplikaci C# vytvořené v předchozí části. Provádění zastaví na zarážce. Pokud se nezobrazí **diagnostické nástroje** okna, klikněte na tlačítko **ladění / Windows / události IntelliTrace**.  
   
@@ -98,6 +98,6 @@ Nástroj IntelliTrace můžete použít ke shromažďování informací o určit
      Vyberte jednu z volání funkce a dvojím kliknutím ho. Měli byste vidět funkce vstupní a výstupní body, jakož i volání, že aktuální volání dalších funkcí a IntelliTrace události vyvolané službou volání. Pokud nemáte historické ladění zapnuté, tato akce zapne ho. Další informace o historické ladění, naleznete v tématu [historické ladění](../debugger/historical-debugging.md).  
   
     > [!NOTE]
-    >  Uvidíte, že některá volání jsou neaktivní. Je to proto, že nástroj IntelliTrace nezaznamenal data z odpovídajících modulů. Pro zobrazení těchto dat, nástroj IntelliTrace na shromažďování dat z těchto modulů. Informace o zadávání moduly, naleznete v tématu [funkce IntelliTrace](../debugger/intellitrace-features.md).  
+    > Uvidíte, že některá volání jsou neaktivní. Je to proto, že nástroj IntelliTrace nezaznamenal data z odpovídajících modulů. Pro zobrazení těchto dat, nástroj IntelliTrace na shromažďování dat z těchto modulů. Informace o zadávání moduly, naleznete v tématu [funkce IntelliTrace](../debugger/intellitrace-features.md).  
   
 ## <a name="next-steps"></a>Další kroky

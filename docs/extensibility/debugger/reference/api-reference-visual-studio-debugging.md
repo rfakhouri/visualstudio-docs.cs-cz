@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7d415644897d7dd481f47c93a3b951db23fda843
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: b61cb7f3f5d739a80a0ce18ba62baa92aed48319
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56686350"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63414159"
 ---
 # <a name="api-reference-visual-studio-debugging"></a>Referenční informace pro rozhraní API (Ladění sady Visual Studio)
 Část odkaz obsahuje koncepční přehled rozhraní API, průvodce, který ukazuje syntaxi a použití pro všechny prvky rozhraní API a celé řady různých doprovodných příklady kódu. Všechny odkazy abecedním pořadí podle kategorie.
@@ -37,10 +37,10 @@ ms.locfileid: "56686350"
 |E_ACCESSDENIED|Obecná chyba odepření přístupu.|0x80070005|
 
 > [!NOTE]
->  Když [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] ladění metoda vrátí `S_OK`, se předpokládá, že ven parametr ukazatele jsou platné, to znamená, se žádné ověření provádějí na si parametr ukazatele při `S_OK` se vrátí.
+> Když [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] ladění metoda vrátí `S_OK`, se předpokládá, že ven parametr ukazatele jsou platné, to znamená, se žádné ověření provádějí na si parametr ukazatele při `S_OK` se vrátí.
 >
 > [!NOTE]
->  Neplatný nebo `NULL` [parametry out] může způsobit, že rozhraní IDE k selhání.
+> Neplatný nebo `NULL` [parametry out] může způsobit, že rozhraní IDE k selhání.
 
 ## <a name="see-also"></a>Viz také
 - [Rozhraní](../../../extensibility/debugger/reference/interfaces-visual-studio-debugging.md)

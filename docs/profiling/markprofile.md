@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5756047dc88dc01e044787cd5e3a71456e3e85c9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 0d7640b4f846dd4fa5a9f8b16ead7019ca3ba821
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56625007"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430928"
 ---
 # <a name="markprofile"></a>MarkProfile
 `MarkProfile` Metoda vloží značku profilu v. *Vsp* souboru. Profilování pro vlákna obsahující `MarkProfile` funkce musí být ON pro značku má být vložen.
@@ -52,7 +52,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI MarkProfile( long lMarker );
  Profilace stav podprocesu, který obsahuje funkci profilu značky musí být na značky a komentáře vložená značka příkaz nebo s funkcí rozhraní API (CommentMarkAtProfile, CommentMarkProfile nebo MarkProfile).
 
 > [!IMPORTANT]
->  Metoda MarkProfile by měla sloužit s pouze profilaci instrumentace.
+> Metoda MarkProfile by měla sloužit s pouze profilaci instrumentace.
 
 ## <a name="net-framework-equivalent"></a>Ekvivalent .NET framework
  *Microsoft.VisualStudio.Profiler.dll*

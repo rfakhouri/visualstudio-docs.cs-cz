@@ -14,12 +14,12 @@ ms.assetid: 1ca2079a-44dd-479f-a1e3-e04a14d0739e
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5c49ab90dae8f30dae075906bb9c7ecb7881428f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 66fa8ba2396185bd402e4bc31a3da6b1f8bf95ab
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60065074"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446499"
 ---
 # <a name="expected--in-regular-expression-javascript"></a>V regulárním výrazu byl očekáván znak ']' (JavaScript)
 Se pokusil vytvořit třídu znaků shody regulárního výrazu, ale neobsahuje pravou závorku. Jednotlivý znak literálu kombinace lze sestavit do třídy znaků tak, že je umístíte do hranatých závorek. Třída znaků odpovídá jeden libovolný znak, který ji obsahuje. Například / [abc] / odpovídá jakémukoli znaku z písmen "a", "b" nebo "c".  
@@ -29,7 +29,7 @@ Se pokusil vytvořit třídu znaků shody regulárního výrazu, ale neobsahuje 
 - Přidejte pravou závorku regulárnímu výrazu.  
   
     > [!NOTE]
-    >  Pokud chcete odpovídat jedné závorky, před něj zpětné lomítko - \\[– aby nebyl interpretován jako znak zvláštní podle [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)].  
+    > Pokud chcete odpovídat jedné závorky, před něj zpětné lomítko - \\[– aby nebyl interpretován jako znak zvláštní podle [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)].  
   
 ## <a name="see-also"></a>Viz také  
  [Objekt regulárního výrazu](../../javascript/reference/regular-expression-object-javascript.md)   

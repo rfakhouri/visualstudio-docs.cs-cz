@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.assetid: d25990e0-e782-4a79-9d9a-1caf3c56c6a2
 caps.latest.revision: 10
 manager: jillfra
-ms.openlocfilehash: 81bf6c5ef975d7ce154c1d8bb987e962dfdf4ec2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0b65fa016d0d2e09a4200004de3f473503604f6e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040738"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442866"
 ---
 # <a name="how-to-manually-package-an-extension-vsix-deployment"></a>Postupy: Ručně balíček rozšíření (VSIX nasazení)
 Můžete vytvořit balíček VSIX zabalit [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozšíření pro nasazení. Existují tři způsoby, jak vytvořit balíček:  
@@ -29,7 +29,7 @@ Můžete vytvořit balíček VSIX zabalit [!INCLUDE[vsprvs](../includes/vsprvs-m
  Chcete-li ručně balíček rozšíření, přidat soubor s příponou extension.manifest a souboru [Content_Types] .xml do projektu rozšíření, vytvořte z nich v komprimovaném souboru spolu s výstupu sestavení a přejmenujte komprimovaný soubor tak, aby měl příponu názvu souboru .vsix. Rozšíření zabalit, musí být typu, který je podporován [VSIX schématu](http://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).  
   
 > [!NOTE]
->  Názvy souborů v balíčků VSIX nesmí obsahovat mezery ani znaky, které jsou vyhrazené v identifikátory URI (Uniform Resource), jako jsou definované v části [ \[RFC2396\]](http://go.microsoft.com/fwlink/?LinkId=90339).  
+> Názvy souborů v balíčků VSIX nesmí obsahovat mezery ani znaky, které jsou vyhrazené v identifikátory URI (Uniform Resource), jako jsou definované v části [ \[RFC2396\]](http://go.microsoft.com/fwlink/?LinkId=90339).  
   
 #### <a name="to-manually-create-a-vsix-package"></a>Ruční vytvoření balíčku VSIX  
   

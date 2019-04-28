@@ -8,12 +8,12 @@ ms.assetid: ef96a249-5eef-402a-a8d5-d74cb49239bd
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 2a6d3b302825ca8ba33c9d0c44dbe18929c20ce2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 44b1083a9de4a5fe3e86ae37814f6df85f8c1e56
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60081459"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435492"
 ---
 # <a name="walkthrough-creating-an-sdk-using-c-or-visual-basic"></a>Návod: Vytvoření sady SDK pomocí jazyka C# nebo Visual Basic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ V tomto podrobném návodu se dozvíte, jak pomocí Visual C# vytvořit na sadu 
 8. V **konfigurace** sloupce, ověřte, že **SimpleMath** řádek je nastavena na **vydání**a klikněte na tlačítko **Zavřít** tlačítko tak, aby přijímal Změňte.  
   
     > [!IMPORTANT]
-    >  Sada SDK pro komponentu SimpleMath obsahuje pouze jednu konfiguraci. Tato konfigurace musí být sestavení pro vydání, nebo aplikace, které používají součást nebudou předávat certifikaci[!INCLUDE[win8_appstore_long](../includes/win8-appstore-long-md.md)].  
+    > Sada SDK pro komponentu SimpleMath obsahuje pouze jednu konfiguraci. Tato konfigurace musí být sestavení pro vydání, nebo aplikace, které používají součást nebudou předávat certifikaci[!INCLUDE[win8_appstore_long](../includes/win8-appstore-long-md.md)].  
   
 9. V **Průzkumníka řešení**, otevřete místní nabídku **SimpleMath** uzel projektu a klikněte na tlačítko **sestavení**.  
   

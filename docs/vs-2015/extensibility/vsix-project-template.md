@@ -11,12 +11,12 @@ ms.assetid: b6c82167-e2a5-4cff-8c8b-2d72e2a9092c
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e8bc80e28979a1adf86f4b0490f84cc393450521
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2386f1be805f6347fc32fba4ee8bfe57c8602329
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096128"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436905"
 ---
 # <a name="vsix-project-template"></a>Šablona projektu VSIX
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,13 +26,13 @@ Použijte šablonu projektu VSIX zabalit jeden nebo více rozšíření sady Vis
  VSIX instalace podporuje rozšíření VSPackages, sestavení, MEF komponenty, šablony projektů, šablony položek, ovládací prvky panelu nástrojů a rozšíření vlastních typů.  
   
 > [!NOTE]
->  Pokud chcete používat projekty VSIX, musíte nainstalovat Visual Studio SDK. Další informace o sadě Visual Studio SDK naleznete v tématu [Visual Studio SDK](../extensibility/visual-studio-sdk.md).  
+> Pokud chcete používat projekty VSIX, musíte nainstalovat Visual Studio SDK. Další informace o sadě Visual Studio SDK naleznete v tématu [Visual Studio SDK](../extensibility/visual-studio-sdk.md).  
   
 ## <a name="where-to-find-the-vsix-project-template"></a>Kde najít šablonou projektu VSIX  
  Šablona projektu VSIX je k dispozici v **nový projekt** dialogové okno. Rozbalte buď **jazyka Visual Basic** uzlu nebo **Visual C#** uzel a klikněte na tlačítko **rozšiřitelnost**.  
   
 > [!TIP]
->  Ujistěte se, že rozhraní .NET Framework 4.5 nebo vyšší je zadán v rozevírací nabídce v horní části **nový projekt** dialogové okno.  
+> Ujistěte se, že rozhraní .NET Framework 4.5 nebo vyšší je zadán v rozevírací nabídce v horní části **nový projekt** dialogové okno.  
   
 ## <a name="uses-of-the-vsix-project-template"></a>Použití šablony projektu VSIX  
  Šablona projektu VSIX má dvě hlavní využití:  

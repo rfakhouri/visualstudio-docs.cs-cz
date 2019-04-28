@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 74ae6a4510efc63a633e627fdd0b165aa547b2be
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: bee99bc546eca3787db1f9cd082359afb6881d10
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60041991"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63421154"
 ---
 # <a name="walkthrough-my-first-wpf-desktop-application"></a>Návod: Moje první Desktopová aplikace WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ name = "Úvod" ></a> Tento názorný postup obsahuje úvod do vývoje Windows Pr
      Všimněte si, že když změníte `<Window` značku na `<NavigationWindow`, technologie Intellisense automaticky změní uzavírací značku `</NavigationWindow>` také.  
   
     > [!NOTE]
-    >  Po změně značky, pokud **seznam chyb** je otevřeno okno může dojít k několika chybám. Nedělejte si starosti, budou změny provedené v dalších několika krocích tyto go okamžitě.  
+    > Po změně značky, pokud **seznam chyb** je otevřeno okno může dojít k několika chybám. Nedělejte si starosti, budou změny provedené v dalších několika krocích tyto go okamžitě.  
   
 3. Zvolte `<Grid>` a `</Grid>` značky a odstranit je.  
   
@@ -307,14 +307,14 @@ name = "Úvod" ></a> Tento názorný postup obsahuje úvod do vývoje Windows Pr
      ![Obrázek vodoznaku návodu](../designers/media/wpf-watermark.png "WPF_watermark")  
   
     > [!NOTE]
-    >  Případně můžete vytvořit vlastní image a uložte ho jako `watermark.png`.  
+    > Případně můžete vytvořit vlastní image a uložte ho jako `watermark.png`.  
   
 2. V **Průzkumníka řešení**, otevřete místní nabídku **ExpenseIt –** uzlu a zvolte **přidat**, **existující položku**.  
   
 3. V **přidat existující položku** dialogového okna, vyhledejte **watermark.png** image, kterou jste právě přidali, vyberte jej a klikněte na tlačítko **přidat** tlačítko.  
   
     > [!NOTE]
-    >  Budete muset Rozbalit **typy souborů** seznam a zvolte **soubory bitových kopií**.  
+    > Budete muset Rozbalit **typy souborů** seznam a zvolte **soubory bitových kopií**.  
   
 4. Otevřít **ExpenseItHome.xaml** a přidejte následující kód XAML přímo nad `</Grid>` značku na vytvoření bitové kopie na pozadí:  
   

@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d6baf0c32d087ea804bb8e221745337c73b64114
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: e8684ad4b9429a5499660ef4ad6fdd8133dccaa5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56639261"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442418"
 ---
 # <a name="optional-parameters-in-office-solutions"></a>Volitelné parametry v řešeních pro systém Office
   Mnoho metod v objektové modely aplikací sady Microsoft Office přijmout volitelné parametry. Pokud používáte Visual Basic pro vývoj řešení pro Office v sadě Visual Studio, nemáte předat hodnotu pro volitelné parametry, protože jsou automaticky použity výchozí hodnoty pro každý parametr chybí. Ve většině případů můžete vynechat volitelné parametry v projektech Visual C#. Ale nejde vynechat volitelné **ref** parametry `ThisDocument` tříd v projektech aplikace Word úrovni dokumentu.
@@ -33,7 +33,7 @@ ms.locfileid: "56639261"
  Další informace o práci s volitelnými parametry v projektech Visual C# a Visual Basic najdete v tématu [pojmenované a nepovinné argumenty &#40;C&#35; programováním&#41; ](/dotnet/csharp/programming-guide/classes-and-structs/named-and-optional-arguments) a [volitelné parametry &#40;Jazyka Visual Basic&#41;](/dotnet/visual-basic/programming-guide/language-features/procedures/optional-parameters).
 
 > [!NOTE]
->  V dřívějších verzích sady Visual Studio musíte předat hodnotu pro každý volitelný parametr v projektech Visual C#. Pro usnadnění práce těchto projektů zahrnout globální proměnnou s názvem `missing` , můžete předat volitelný parametr Pokud chcete použít výchozí hodnotu parametru. Projekty Visual C# pro Office v sadě Visual Studio stále zahrnuje `missing` proměnnou, ale obvykle není nutné ho používat při vývoji řešení pro systém Office v [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)], s výjimkou při volání metody s volitelným **ref** v parametrech `ThisDocument` tříd v projektech na úrovni dokumentu pro aplikaci Word.
+> V dřívějších verzích sady Visual Studio musíte předat hodnotu pro každý volitelný parametr v projektech Visual C#. Pro usnadnění práce těchto projektů zahrnout globální proměnnou s názvem `missing` , můžete předat volitelný parametr Pokud chcete použít výchozí hodnotu parametru. Projekty Visual C# pro Office v sadě Visual Studio stále zahrnuje `missing` proměnnou, ale obvykle není nutné ho používat při vývoji řešení pro systém Office v [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)], s výjimkou při volání metody s volitelným **ref** v parametrech `ThisDocument` tříd v projektech na úrovni dokumentu pro aplikaci Word.
 
 ## <a name="example-in-excel"></a>Příklad v aplikaci Excel
  <xref:Microsoft.Office.Tools.Excel.Worksheet.CheckSpelling%2A> Metoda má mnoho nepovinných parametrů. Můžete zadat hodnoty pro některé parametry a přijměte výchozí hodnotu ostatních, jak je znázorněno v následujícím příkladu kódu. Tento příklad vyžaduje úrovni dokumentu projekt s třídou list s názvem `Sheet1`.

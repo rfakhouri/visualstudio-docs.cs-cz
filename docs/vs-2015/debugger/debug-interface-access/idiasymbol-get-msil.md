@@ -13,12 +13,12 @@ caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0474c200f6ef3a5be282aa42b32935d490f2035c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 451f9b610f6493c83706f881c16e4fe577274ce9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54756251"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435800"
 ---
 # <a name="idiasymbolgetmsil"></a>IDiaSymbol::get_msil
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ HRESULT get_msil ( 
  Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí `S_FALSE` nebo kód chyby.  
   
 > [!NOTE]
->  Vrácená hodnota `S_FALSE` znamená, že vlastnost není k dispozici pro symbol.  
+> Vrácená hodnota `S_FALSE` znamená, že vlastnost není k dispozici pro symbol.  
   
 ## <a name="see-also"></a>Viz také  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7f039154265e9031713eb5511bb1c51a63e5b422
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 23ea89b25ca1bd1e7aa48ab1782d23bd7db057f0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109176"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437107"
 ---
 # <a name="how-to-programmatically-cache-a-data-source-in-an-office-document"></a>Postupy: Zdroj dat v dokumentu systému Office do mezipaměti prostřednictvím kódu programu
   Můžete programově přidat datového objektu do datové mezipaměti v dokumentu voláním `StartCaching` metoda hostitele položky, jako například <xref:Microsoft.Office.Tools.Word.Document>, <xref:Microsoft.Office.Tools.Excel.Workbook>, nebo <xref:Microsoft.Office.Tools.Excel.Worksheet>. Odebrat datový objekt z mezipaměti dat voláním `StopCaching` metoda položky hostitele.
@@ -52,7 +52,7 @@ ms.locfileid: "60109176"
      [!code-vb[Trin_VstcoreDataExcel#14](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#14)]
 
     > [!NOTE]
-    >  Nevolejte `StopCaching` z obslužné rutiny události pro `Shutdown` události z dokumentu nebo sešitu. Časem `Shutdown` událost se vyvolá, je příliš pozdě upravit datovou mezipaměť. Další informace o `Shutdown` událostí, naleznete v tématu [události v projektech pro systém Office](../vsto/events-in-office-projects.md).
+    > Nevolejte `StopCaching` z obslužné rutiny události pro `Shutdown` události z dokumentu nebo sešitu. Časem `Shutdown` událost se vyvolá, je příliš pozdě upravit datovou mezipaměť. Další informace o `Shutdown` událostí, naleznete v tématu [události v projektech pro systém Office](../vsto/events-in-office-projects.md).
 
 ## <a name="see-also"></a>Viz také:
 

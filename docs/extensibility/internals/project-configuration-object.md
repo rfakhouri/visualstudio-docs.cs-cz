@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e25e2f2359cabff9a4e95a7d64d2f0846df8f49f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: d96766918f554e2b99dd8abc5faea9badaf69b5e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56631741"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63423100"
 ---
 # <a name="project-configuration-object"></a>Objekt konfigurace projektu
 Objekt konfigurace projektu spravuje zobrazení informací o konfiguraci v uživatelském rozhraní.
@@ -26,7 +26,7 @@ Objekt konfigurace projektu spravuje zobrazení informací o konfiguraci v uživ
  Zprostředkovatel konfigurace projektu slouží ke správě konfigurace projektu. Prostředí a další balíčky, k získání přístupu k načtení informací o konfiguraci projektu, volání rozhraní připojené k objektu zprostředkovatele konfigurace projektu.
 
 > [!NOTE]
->  Nejde vytvořit nebo upravit konfigurační soubory řešení prostřednictvím kódu programu. Je nutné použít `DTE.SolutionBuilder`. Zobrazit [konfigurace řešení](../../extensibility/internals/solution-configuration.md) Další informace.
+> Nejde vytvořit nebo upravit konfigurační soubory řešení prostřednictvím kódu programu. Je nutné použít `DTE.SolutionBuilder`. Zobrazit [konfigurace řešení](../../extensibility/internals/solution-configuration.md) Další informace.
 
  K publikování zobrazovaný název, který se má použít v konfiguraci, uživatelského rozhraní, by měly implementovat projektu <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfg.get_DisplayName%2A>. Prostředí volá <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2.GetCfgs%2A>, který vrátí seznam hodnot `IVsCfg` ukazatele, které vám umožní získat zobrazované názvy pro konfigurace a platforma informace uvedené v Uživatelském prostředí. Aktivní konfigurace a platforma jsou určeny v konfiguraci aktivního řešení uložit konfiguraci projektu. <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager.FindActiveProjectCfg%2A> Metodu je možné načíst aktivní konfiguraci projektu.
 
@@ -35,7 +35,7 @@ Objekt konfigurace projektu spravuje zobrazení informací o konfiguraci v uživ
  Je další způsob, jak poskytnout přístup k projektu konfigurace prostředí a jiné projekty pro projekty poskytnout implementaci položky `IVsCfgProvider2::GetCfgs` metoda vrátí jeden nebo více objektů konfigurace. Projekty mohou také implementovat <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2>, který dědí z `IVsProjectCfg` a tím z `IVsCfg`, poskytnout informace specifické pro konfiguraci. <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2> podporuje platformy a funkce pro přidání, odstranění a přejmenování konfigurace projektu.
 
 > [!NOTE]
->  Vzhledem k tomu, že Visual Studio už není omezené na dva typy konfigurace, neměl by být zapsaný kód, který zpracovává konfigurace s předpoklady o počet konfigurací ani by měly být za předpokladu zapsány, který projekt, který obsahuje pouze jednu konfigurace je nutně ladění nebo maloobchodního prodeje. Díky použití <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfg.get_IsReleaseOnly%2A> a <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfg.get_IsDebugOnly%2A> zastaralé.
+> Vzhledem k tomu, že Visual Studio už není omezené na dva typy konfigurace, neměl by být zapsaný kód, který zpracovává konfigurace s předpoklady o počet konfigurací ani by měly být za předpokladu zapsány, který projekt, který obsahuje pouze jednu konfigurace je nutně ladění nebo maloobchodního prodeje. Díky použití <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfg.get_IsReleaseOnly%2A> a <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfg.get_IsDebugOnly%2A> zastaralé.
 
  Volání `QueryInterface` objekt vrácený z`IVsGetCfgProvider::GetCfgProvider` načte `IVsCfgProvider2`. Pokud `IVsGetCfgProvider` nebyl nalezen voláním `QueryInterface` na `IVsProject3` objektu projektu, můžete přístup k objektu zprostředkovatele konfigurace voláním `QueryInterface` v prohlížeči hierarchie kořenového objektu pro objekt vrácený pro `IVsHierarchy::GetProperty(VSITEM_ROOT, VSHPROPID_BrowseObject)`, nebo prostřednictvím ukazatel na poskytovatele konfigurace pro `IVsHierarchy::GetProperty(VSITEM_ROOT, VSHPROPID_ConfigurationProvider)`.
 

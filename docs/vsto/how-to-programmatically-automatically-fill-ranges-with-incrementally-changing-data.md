@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e4caede15b17478bb9649f09d9341931511b655f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: edb3a1bfaad8d662fb51a8527da6bef183fd05c4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117886"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428174"
 ---
 # <a name="how-to-programmatically-automatically-fill-ranges-with-incrementally-changing-data"></a>Postupy: Prostřednictvím kódu programu automaticky vyplnit oblastí s přírůstkově se měnícími daty
   <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> Metodu <xref:Microsoft.Office.Interop.Excel.Range> objektu umožňuje automaticky vyplnit rozsah v listu s hodnotami. Nejčastěji <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> metoda se používá k ukládání postupně zvýšením nebo snížením hodnoty v rozsahu. Můžete určit chování zadáním volitelné konstanta z <xref:Microsoft.Office.Interop.Excel.XlAutoFillType> výčtu.
@@ -34,7 +34,7 @@ ms.locfileid: "60117886"
 - Rozsah, který chcete vyplnit, předán jako parametr <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> metody. Tento cílový rozsah musí obsahovat oblast, která obsahuje počáteční hodnotu.
 
     > [!NOTE]
-    >  Nelze předat <xref:Microsoft.Office.Tools.Excel.NamedRange> řízení místo <xref:Microsoft.Office.Interop.Excel.Range>. Další informace najdete v tématu [programová omezení hostitelských položek a hostitelských ovládacích prvků](../vsto/programmatic-limitations-of-host-items-and-host-controls.md).
+    > Nelze předat <xref:Microsoft.Office.Tools.Excel.NamedRange> řízení místo <xref:Microsoft.Office.Interop.Excel.Range>. Další informace najdete v tématu [programová omezení hostitelských položek a hostitelských ovládacích prvků](../vsto/programmatic-limitations-of-host-items-and-host-controls.md).
 
 ## <a name="example"></a>Příklad
  [!code-csharp[Trin_VstcoreExcelAutomation#49](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#49)]

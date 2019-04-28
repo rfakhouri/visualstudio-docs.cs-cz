@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 04867207ee8510a99ec19dc3f32175abedb39bf9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 13a26ec22060985705f6a1b54cf691c50ae07f1a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054635"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435215"
 ---
 # <a name="how-to-search-for-topics"></a>Postupy: Vyhledávání témat
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Funkce fulltextového vyhledávání můžete použít k vyhledání všech tém
 2. Ve vyhledávacím dotazu zadejte které operátory logických nebo rozšířené vyhledávání má použít pro vyhledávání, pokud existuje. K vyhledání všech dostupnou nápovědu, nepoužívejte operátory.  
   
     > [!NOTE]
-    >  V **možnosti prohlížeče** dialogovém okně můžete zadat další předvolby, například maximální počet výsledků hledání pro zobrazení na čas a jestli se mají zahrnout obsah v angličtině, pokud vaše primární národní prostředí není anglické.  
+    > V **možnosti prohlížeče** dialogovém okně můžete zadat další předvolby, například maximální počet výsledků hledání pro zobrazení na čas a jestli se mají zahrnout obsah v angličtině, pokud vaše primární národní prostředí není anglické.  
   
 3. Stiskněte klávesu Enter.  
   

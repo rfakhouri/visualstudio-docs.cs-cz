@@ -16,12 +16,12 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 82f3d4a3ae9bc587fef038186afe9faef880571c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 971ca4e94f28016335483a03f4b0121de587f00d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114727"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439960"
 ---
 # <a name="rename-refactoring-c"></a>Refaktoring pro přejmenování (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "60114727"
 **Přejmenovat** je refaktoringu funkce v sadě Visual Studio integrovaného vývojového prostředí (IDE), která poskytuje snadný způsob, jak přejmenovat identifikátory pro symboly kód například pole, lokálních proměnných, metod, obory názvů, vlastností a typy. **Přejmenovat** lze použít, chcete-li změnit názvy v komentářích a v řetězcích a ke změně deklarace a volání identifikátoru.  
   
 > [!NOTE]
->  Při použití správy zdrojového kódu pro Visual Studio, získejte nejnovější verzi zdroje předtím, než se pokusíte provést refaktoring pro přejmenování.  
+> Při použití správy zdrojového kódu pro Visual Studio, získejte nejnovější verzi zdroje předtím, než se pokusíte provést refaktoring pro přejmenování.  
   
  Refaktoring pro přejmenování je k dispozici následující funkce sady Visual Studio:  
   
@@ -116,7 +116,7 @@ ms.locfileid: "60114727"
 2. V deklaraci pro `MethodB`, typ nebo smažte vše přes metoda identifikátor. Inteligentní značky řádku se zobrazí pod tento identifikátor.  
   
     > [!NOTE]
-    >  Lze vyvolat pouze refaktoring pro přejmenování pomocí inteligentních značek v deklaraci identifikátoru.  
+    > Lze vyvolat pouze refaktoring pro přejmenování pomocí inteligentních značek v deklaraci identifikátoru.  
   
 3. Zadejte klávesovou zkratku SHIFT + ALT + F10 a stiskněte klávesu šipka dolů k zobrazení v nabídce inteligentních značek.  
   
@@ -144,7 +144,7 @@ ms.locfileid: "60114727"
  Pokud **přejmenovat přetížení** je zaškrtnuto, přejmenuje modul Refaktorujte `Derived.Method(int i)` protože přetěžuje `Derived.Method()`, `Base.Method(int i)` vzhledem k tomu, že je přepsána `Derived.Method(int i)`, a `Base.Method()` vzhledem k tomu, že je přetížení `Base.Method(int i)`.  
   
 > [!NOTE]
->  Při přejmenování člena, který byl definován v odkazovaném sestavení dialogové okno vysvětluje, že se přejmenování způsobit chyby buildu.  
+> Při přejmenování člena, který byl definován v odkazovaném sestavení dialogové okno vysvětluje, že se přejmenování způsobit chyby buildu.  
   
 ## <a name="renaming-properties-of-anonymous-types"></a>Přejmenování vlastností anonymních typů  
  Při přejmenování vlastností anonymních typů operaci přejmenování rozšíří na vlastnosti v jiných anonymní typy, které mají stejné vlastnosti. Toto chování ilustrují následující příklady.  

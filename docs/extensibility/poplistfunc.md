@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 54b73a7f34c663661ae9cc2e2805e5fb6bd11480
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 83e54cf1b0e6f15b1a6c5dc0af379a8b88bd77f4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56696438"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434241"
 ---
 # <a name="poplistfunc"></a>POPLISTFUNC
 Toto zpětné volání je zadán do [sccpopulatelist –](../extensibility/sccpopulatelist-function.md) integrovaným vývojovým prostředím a modulu plug-in správy zdrojového kódu slouží k aktualizaci seznamu souborů nebo adresářů (také zadaný pro `SccPopulateList` funkce).
@@ -47,7 +47,7 @@ typedef BOOL (*POPLISTFUNC) (
 
 ## <a name="return-value"></a>Návratová hodnota
 
-|Hodnota|Popis|
+|Value|Popis|
 |-----------|-----------------|
 |`TRUE`|Modul plug-in můžete dál volání této funkce.|
 |`FALSE`|Na straně integrovaného vývojového prostředí (například z důvodu nedostatku paměti situace) došlo k potížím. Modul plug-in by se měla zastavit operaci.|
@@ -56,7 +56,7 @@ typedef BOOL (*POPLISTFUNC) (
  Pro každý soubor, který chce, aby se modul plug-in správy zdrojového kódu pro přidání nebo odebrání ze seznamu souborů, které volá tuto funkci a předává jí `lpFileName`. `fAddRemove` Příznak označuje nového souboru do seznamu přidat nebo odstranit původní soubor. `nStatus` Parametr poskytuje stav souboru. Po dokončení přidávání a odstraňování souborů modulu plug-in SCC vrátí z [sccpopulatelist –](../extensibility/sccpopulatelist-function.md) volání.
 
 > [!NOTE]
->  `SCC_CAP_POPULATELIST` Bit funkce se vyžaduje pro Visual Studio.
+> `SCC_CAP_POPULATELIST` Bit funkce se vyžaduje pro Visual Studio.
 
 ## <a name="see-also"></a>Viz také:
 - [Funkce zpětného volání implementované integrovaným vývojovým prostředím](../extensibility/callback-functions-implemented-by-the-ide.md)

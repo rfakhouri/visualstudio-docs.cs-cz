@@ -21,12 +21,12 @@ caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4eadb8c9553873f43ad9435ad43fae00f57affcb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0cb2d42db65c5eb77aae324d2c10c25010eb8b8f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050702"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444734"
 ---
 # <a name="devenv-command-line-switches"></a>Devenv – přepínače příkazového řádku
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,10 +34,10 @@ ms.locfileid: "60050702"
 DEVENV umožňuje nastavit různé možnosti pro integrované vývojové prostředí (IDE) a také vytváření, ladění a nasazení projektů z příkazového řádku. Spuštění rozhraní IDE ze skriptu nebo soubor .bat, například noční sestavení skript, nebo spuštění integrovaného vývojového prostředí v konkrétní konfiguraci, použijte tyto přepínače.  
   
 > [!NOTE]
->  Pro úlohy související s buildem teď doporučujeme použít nástroj MSBuild namísto nástroje devenv. Další informace najdete v tématu [Reference k příkazovému řádku](../../msbuild/msbuild-command-line-reference.md).  
+> Pro úlohy související s buildem teď doporučujeme použít nástroj MSBuild namísto nástroje devenv. Další informace najdete v tématu [Reference k příkazovému řádku](../../msbuild/msbuild-command-line-reference.md).  
   
 > [!NOTE]
->  Chcete-li použít musíte spustit devenv jako správce [/Setup (devenv.exe)](../../ide/reference/setup-devenv-exe.md) a [/installvstemplates (devenv.exe)](../../ide/reference/installvstemplates-devenv-exe.md) přepínače.  
+> Chcete-li použít musíte spustit devenv jako správce [/Setup (devenv.exe)](../../ide/reference/setup-devenv-exe.md) a [/installvstemplates (devenv.exe)](../../ide/reference/installvstemplates-devenv-exe.md) přepínače.  
   
 ## <a name="devenv-switch-syntax"></a>Syntaxe – přepínač nástroje devenv  
  Ve výchozím nastavení příkazy nástroje devenv předat nástroji devenv.com přepínače.  
@@ -57,7 +57,7 @@ DEVENV umožňuje nastavit různé možnosti pro integrované vývojové prostř
 - Když zadáte název souboru projektu namísto názvu souboru řešení `devenv` příkaz vyhledá nadřazené složce souboru projektu, který má stejný název souboru řešení. Například příkaz `devenv /build myproject1.vbproj` vyhledá nadřazené složky pro soubor řešení s názvem "myproject1.sln".  
   
     > [!NOTE]
-    >  Jeden a pouze jeden soubor řešení, která odkazuje na tento projekt se musí nacházet v nadřazené složky. Pokud nadřazená složka neobsahuje žádný soubor řešení, která odkazuje na tento projekt, nebo pokud nadřazená složka obsahuje dva nebo více souborů řešení, které na ni odkazují, pak dočasné řešení se vytvoří soubor, který má název pro tento projekt a na něj odkazuje.  
+    > Jeden a pouze jeden soubor řešení, která odkazuje na tento projekt se musí nacházet v nadřazené složky. Pokud nadřazená složka neobsahuje žádný soubor řešení, která odkazuje na tento projekt, nebo pokud nadřazená složka obsahuje dva nebo více souborů řešení, které na ni odkazují, pak dočasné řešení se vytvoří soubor, který má název pro tento projekt a na něj odkazuje.  
   
 - Když cesty k souborům a názvy souborů obsahují mezery, je nutné je uzavřít do dvojitých uvozovek (""). Například "c:\project\\".  
   

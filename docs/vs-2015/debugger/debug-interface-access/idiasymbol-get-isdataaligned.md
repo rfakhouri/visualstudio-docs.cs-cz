@@ -13,12 +13,12 @@ caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 09d655e1718e1f4332b886120009d5584f7602ae
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 86c701765f9c8a67f7b95368d02febc1d254c696
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54791641"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422003"
 ---
 # <a name="idiasymbolgetisdataaligned"></a>IDiaSymbol::get_isDataAligned
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ HRESULT get_isDataAligned(
  Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí `S_FALSE` nebo kód chyby.  
   
 > [!NOTE]
->  Vrácená hodnota `S_FALSE` znamená, že vlastnost není k dispozici pro symbol.  
+> Vrácená hodnota `S_FALSE` znamená, že vlastnost není k dispozici pro symbol.  
   
 ## <a name="remarks"></a>Poznámky  
  Tato vlastnost nastavena obecně při spustitelný soubor je zkompilován s zarovnání dat jiný než výchozí. Kompilátor C++ společnosti Microsoft můžete například změnit zarovnání dat s parametrem příkazového řádku/zp<em>#</em>, kde *#* je hodnota bajtu.  

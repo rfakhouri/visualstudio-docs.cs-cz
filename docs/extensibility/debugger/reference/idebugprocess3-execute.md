@@ -12,18 +12,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 295db356ea11bb24eb8e121aca0fe54c015ef5e9
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 5f9afe4bb5087c7589415a6ae7fc143f5fd01b21
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56721950"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63413221"
 ---
 # <a name="idebugprocess3execute"></a>IDebugProcess3::Execute
 Se bude spouštět dál tento proces v zastaveném stavu. Vymazat všechny předchozí stav provádění (například krok) a proces začne provádět znovu.
 
 > [!NOTE]
->  Tato metoda by měla být použita místo [Execute](../../../extensibility/debugger/reference/idebugprogram2-execute.md).
+> Tato metoda by měla být použita místo [Execute](../../../extensibility/debugger/reference/idebugprogram2-execute.md).
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -51,7 +51,7 @@ int Execute(
  Když uživatel spustí provádění z zastaven nějaký jiný proces na vlákno, tato metoda je volána k tomuto procesu. Tato metoda je volána, i když uživatel vybere **Start** příkaz **ladění** nabídky v integrovaném vývojovém prostředí. Implementace této metody může být stejně jednoduché jako volání funkce [Resume](../../../extensibility/debugger/reference/idebugthread2-resume.md) metodu na aktuální vlákno v procesu.
 
 > [!WARNING]
->  Neodesílat událostí ukončení nebo okamžité (synchronní) události, která [události](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) při zpracování tohoto volání; v opačném případě ladicí program může přestat reagovat.
+> Neodesílat událostí ukončení nebo okamžité (synchronní) události, která [události](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) při zpracování tohoto volání; v opačném případě ladicí program může přestat reagovat.
 
 ## <a name="see-also"></a>Viz také
 - [IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)

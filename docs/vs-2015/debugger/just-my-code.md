@@ -14,12 +14,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e105ef33202781dcf3a2f82706827156e76548eb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 560ab40811bc53c97e7097e510144d62aeddfbb2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60084333"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63421816"
 ---
 # <a name="just-my-code"></a>Pouze můj kód
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,13 +32,13 @@ Vývojáři, kteří používají jazycích rozhraní .NET Framework obeznámeni
  ![Povolit volbu pouze vlastní kód v dialogovém okně Možnosti](../debugger/media/dbg-justmycode-options.png "DBG_JustMyCode_Options")  
   
 > [!NOTE]
->  **Povolit volbu pouze vlastní kód** nastavení je globální nastavení, které platí pro všechny projekty aplikace Visual Studio ve všech jazycích.  
+> **Povolit volbu pouze vlastní kód** nastavení je globální nastavení, které platí pro všechny projekty aplikace Visual Studio ve všech jazycích.  
   
 ### <a name="BKMK_Override_call_stack_filtering"></a> Přepsat filtrování zásobníku volání  
  V zobrazení zásobníku volání, jako jsou okna zásobník volání a úlohy funkce pouze můj kód sbalí neuživatelský kód do rámce s poznámkami s popiskem `[External Code]`. Chcete-li zobrazit sbalený rámce, zvolte **zobrazit externí kód** v místní nabídce zásobníku volání zobrazit.  
   
 > [!NOTE]
->  **Zobrazit externí kód** nastavení je uložit do aktuálního uživatele profileru. Použije se na všechny projekty ve všech jazycích, které jsou otevřeny uživatelem.  
+> **Zobrazit externí kód** nastavení je uložit do aktuálního uživatele profileru. Použije se na všechny projekty ve všech jazycích, které jsou otevřeny uživatelem.  
   
 ## <a name="BKMK__NET_Framework_Just_My_Code"></a> Rozhraní .NET framework pouze můj kód  
   

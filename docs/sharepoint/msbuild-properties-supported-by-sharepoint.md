@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b561a4aebe34ac943b0163e66dfbf2edf423eedb
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: f53083c49504146aca545da73bd38950493efcd8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599685"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63429206"
 ---
 # <a name="msbuild-properties-supported-by-sharepoint"></a>Vlastnosti nástroje MsBuild podporované službou SharePoint
   Žádné [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] vlastnosti definované v souboru Microsoft.VisualStudio.SharePoint.targets, soubor projektu nebo uživatelský soubor projektu je možné v [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projektů služby SharePoint. Kromě společné [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] vlastnosti zadaný v projektu služby SharePoint definuje další vlastnosti, které jsou specifické pro projekty SharePoint.
@@ -49,7 +49,7 @@ ms.locfileid: "56599685"
  Zajišťuje tak flexibilitu, namísto použití pevně zakódované řetězce v **příkazový řádek před nasazením** a **příkazový řádek po nasazení** polí na stránce Vlastnosti služby SharePoint můžete použít služby SharePoint vlastnosti jako argumenty. Například místo určení konkrétní [!INCLUDE[TLA2#tla_url](../sharepoint/includes/tla2sharptla-url-md.md)] řetězec pro Sharepointový web, můžete místo toho použít `$(SharePointSiteUrl)`.
 
 > [!NOTE]
->  Můžete použít buď [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] syntaxi proměnných `$(` *propertyName* `)` nebo syntaxi proměnných prostředí `%` *propertyName* `%` můžete zadat vlastnost.
+> Můžete použít buď [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] syntaxi proměnných `$(` *propertyName* `)` nebo syntaxi proměnných prostředí `%` *propertyName* `%` můžete zadat vlastnost.
 
 ## <a name="see-also"></a>Viz také:
 

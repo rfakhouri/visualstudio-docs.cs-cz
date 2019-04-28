@@ -15,12 +15,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 217cef39fb3f8564d4ac51878e515622706811ed
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 6bbdcb2e2ac8f905a2b52cfb41ed90217d215b4b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54764619"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431545"
 ---
 # <a name="ca1045-do-not-pass-types-by-reference"></a>CA1045: Nepředávejte typy odkazem
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ ms.locfileid: "54764619"
  I když vrácené hodnoty jsou běžné a nejčastěji používá správné použití `out` a `ref` parametry vyžaduje zprostředkující návrhu a dovednosti kódování. Knihovna architektům, kteří návrhu pro širokou veřejnost, by neměli očekávat uživatelům pracovat s `out` nebo `ref` parametry.
 
 > [!NOTE]
->  Při práci s parametry, které jsou velké struktury další prostředky, které jsou nutné ke zkopírování těchto struktur může způsobit, že vliv výkon při předání hodnotou. V těchto případech můžete zvážit použití `ref` nebo `out` parametry.
+> Při práci s parametry, které jsou velké struktury další prostředky, které jsou nutné ke zkopírování těchto struktur může způsobit, že vliv výkon při předání hodnotou. V těchto případech můžete zvážit použití `ref` nebo `out` parametry.
 
 ## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
  Chcete-li opravit porušení tohoto pravidla, která je způsobeno tím, typ hodnoty, mají metoda vrátit objekt jako jeho návratovou hodnotu. Metoda musí vracet více hodnot, změnit návrh jej vrátí jednu instanci objektu, který obsahuje hodnoty.

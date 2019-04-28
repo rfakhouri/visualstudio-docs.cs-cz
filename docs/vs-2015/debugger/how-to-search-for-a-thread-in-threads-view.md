@@ -11,12 +11,12 @@ caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e7987b4da158572d22d609b095877f6d125512c9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: d5974bc962faf439af8de5d50bf51bad3d824647
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54776224"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439091"
 ---
 # <a name="how-to-search-for-a-thread-in-threads-view"></a>Postupy: Hledání vlákna v zobrazení vláken
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ Můžete vyhledat konkrétního vlákna v zobrazení vláken pomocí jeho ID neb
 4. Zrušte zaškrtnutí všech polí, u kterých nechcete k určení hodnot.  
   
    > [!TIP]
-   >  Chcete-li najít všechna vlákna vlastní modul, zrušte **vlákna** textové pole a typ modulu název v **modulu** pole. Pak pomocí **najít další** pokračujte hledání vláken.  
+   > Chcete-li najít všechna vlákna vlastní modul, zrušte **vlákna** textové pole a typ modulu název v **modulu** pole. Pak pomocí **najít další** pokračujte hledání vláken.  
   
 5. Zvolte **nahoru** nebo **dolů** pro počáteční směr hledání.  
   

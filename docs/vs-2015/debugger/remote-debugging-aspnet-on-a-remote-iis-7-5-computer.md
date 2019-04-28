@@ -9,12 +9,12 @@ caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5873033e160a8354db70565606dcb399da13e073
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: c43f392cddfd5ea36180d9b2675db82469f86ce0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109520"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446073"
 ---
 # <a name="remote-debugging-aspnet-on-a-remote-iis-computer"></a>Vzdálené ladění ASP.NET na počítači vzdálené služby IIS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +63,7 @@ Po instalaci, ujistěte se, že vzdálený ladicí program je spuštěn na cílo
 1. Zkopírujte adresář projektu ASP.NET ze sady Visual Studio do místního adresáře (který nazveme **C:\Publish**) na počítač s Windows serverem. Můžete zkopírovat projektu ručně, pomocí příkazu Xcopy, nasazení webu, Robocopy, Powershellu nebo jiné možnosti.
 
     > [!CAUTION]
-    >  Pokud potřebujete provést změny v kódu nebo znovu sestavit, musíte znovu publikovat a opakujte tento krok. Spustitelný soubor, který jste zkopírovali do vzdáleného počítače se musí přesně odpovídat, místní zdroje a symbolů.
+    > Pokud potřebujete provést změny v kódu nebo znovu sestavit, musíte znovu publikovat a opakujte tento krok. Spustitelný soubor, který jste zkopírovali do vzdáleného počítače se musí přesně odpovídat, místní zdroje a symbolů.
 1. Ujistěte se, že soubor web.config obsahuje správnou verzi rozhraní .NET Framework.  Například je nainstalovaná ve výchozím nastavení v systému Windows Server 2008 R2 rozhraní .NET Framework verze 4.0.30319, ale jsme vytvořili ASP.NET 4.5.2 verze. Pokud aplikace technologie ASP.NET 4.0 běží na počítač s Windows serverem, musíte změnit verzi:
   
     ```xml

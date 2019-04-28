@@ -17,12 +17,12 @@ caps.latest.revision: 56
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7a57e7e42e1cfc2690732881e6702315d1b0f4d4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 363a9eda86a55da2dd773a2cef5a40fc53f0a81e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088883"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424500"
 ---
 # <a name="uml-class-diagrams-guidelines"></a>Diagramy tříd UML: Pokyny
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ V sadě Visual Studio, můžete použít *diagram tříd UML* pro popis datovýc
  Tuto funkci podporovat kterou verzí sady Visual Studio najdete v tématu [podporované verze pro nástroje architektury a modelování](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
 > [!NOTE]
->  Toto téma se zabývá diagramy tříd UML. Existuje jiný typ diagramu tříd, který lze vytvořit a použít jej k vizualizaci kódu programu. Zobrazit [navrhování a zobrazování tříd a typů](http://go.microsoft.com/fwlink/?LinkId=142231).  
+> Toto téma se zabývá diagramy tříd UML. Existuje jiný typ diagramu tříd, který lze vytvořit a použít jej k vizualizaci kódu programu. Zobrazit [navrhování a zobrazování tříd a typů](http://go.microsoft.com/fwlink/?LinkId=142231).  
   
 ## <a name="Using"></a> Použití diagramů tříd UML  
  Diagram tříd UML lze použít pro různé účely:  
@@ -82,7 +82,7 @@ V sadě Visual Studio, můžete použít *diagram tříd UML* pro popis datovýc
  Referenční informace o prvcích diagramu tříd UML lze najdete v tématu [diagramů tříd UML: Referenční dokumentace](../modeling/uml-class-diagrams-reference.md).  
   
 > [!NOTE]
->  Podrobné pokyny k vytvoření všech diagramů modelování jsou popsány v [modelů a diagramů UML upravit](../modeling/edit-uml-models-and-diagrams.md).  
+> Podrobné pokyny k vytvoření všech diagramů modelování jsou popsány v [modelů a diagramů UML upravit](../modeling/edit-uml-models-and-diagrams.md).  
   
 #### <a name="to-create-a-uml-class-diagram"></a>Vytvoření diagramu tříd UML  
   
@@ -185,7 +185,7 @@ V sadě Visual Studio, můžete použít *diagram tříd UML* pro popis datovýc
   Lze rovněž napsat název typu, který ještě nebyl v modelu definován. Zobrazí se název v části **nespecifikované typy** v Průzkumníku modelů UML.  
   
 > [!NOTE]
->  Pokud bude v modelu následně definována třída nebo rozhraní tohoto názvu, budou se starší atributy a operace stále odkazovat na prvek v seznamu Nespecifikované typy. Pokud je chcete změnit, aby se odkazovaly na novou třídu, je nutné u každého atributu a operace obnovit typ vybráním nové třídy z rozevírací nabídky.  
+> Pokud bude v modelu následně definována třída nebo rozhraní tohoto názvu, budou se starší atributy a operace stále odkazovat na prvek v seznamu Nespecifikované typy. Pokud je chcete změnit, aby se odkazovaly na novou třídu, je nutné u každého atributu a operace obnovit typ vybráním nové třídy z rozevírací nabídky.  
   
 #### <a name="multiple-types"></a>Více typů  
  Lze nastavit násobnost atributu, operace nebo typu parametru.  
@@ -273,9 +273,9 @@ visibility operation-name (parameter1 : Type1, ...) : Type
  Každý typ může být typem, který byl definován v modelu, standardním typem, jako je například Integer či String, nebo může jít o název nového typu, který ještě nebyl definován.  
   
 > [!NOTE]
->  Pokud do seznamu parametrů napíšete název bez typu, označuje tato položka název parametru namísto typu. V tomto příkladu budou MenuItem a Integer názvy dvou parametrů s nespecifikovanými typy:  
+> Pokud do seznamu parametrů napíšete název bez typu, označuje tato položka název parametru namísto typu. V tomto příkladu budou MenuItem a Integer názvy dvou parametrů s nespecifikovanými typy:  
 >   
->  `AddItem(MenuItem, Integer) /* parameter names, not types! */`  
+> `AddItem(MenuItem, Integer) /* parameter names, not types! */`  
   
  Pro nastavení násobnosti typu v signatuře zadejte násobnost do hranatých závorek za názvem typu. Například takto:  
   

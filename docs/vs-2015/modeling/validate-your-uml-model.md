@@ -12,12 +12,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5114e7b32bd22b341489e15ac354cc24b3c6d7d7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f795928677f4a232c3ae3cec0d3bab9d9266cb35
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60113310"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437464"
 ---
 # <a name="validate-your-uml-model"></a>Ověření modelu UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Některé z modelů UML, které nakreslíte v sadě Visual Studio může být po
 - **Příkaz ověření.** Volání ověřovací kdykoli, klikněte na tlačítko **ověřit Model UML** na **architektura** nabídky.  
   
   > [!NOTE]
-  >  Příkaz se zobrazí jenom v případě, že omezení ověření jsou nainstalovány.  
+  > Příkaz se zobrazí jenom v případě, že omezení ověření jsou nainstalovány.  
   
 - **Při uložení modelu.** Omezení ověřování lze použít při uložení modelu. Účelem těchto omezení je pomohou Ujistěte se, že neukládejte modelu, který je neplatný podle interpretace váš projekt.  
   

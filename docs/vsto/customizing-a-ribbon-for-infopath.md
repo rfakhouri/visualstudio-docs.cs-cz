@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bdd39b0ffa59342df669fa619ea5a86a41cef79b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 6ec01b49ca61fcf295884deafa280c8ee33a2b4c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602231"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437447"
 ---
 # <a name="customize-a-ribbon-for-infopath"></a>Přizpůsobte pás karet pro aplikaci InfoPath
   Při vlastním nastavení pásu karet v aplikaci Microsoft Office InfoPath, musíte zvážit, kde se zobrazí váš vlastní pás karet v aplikaci. [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)] můžete zobrazit na pásu karet v následující tři typy InfoPath aplikace pro windows:
@@ -36,7 +36,7 @@ ms.locfileid: "56602231"
   V okně Náhled umožňuje uživatelům a návrháři před kroky vytiskněte náhled na stránkách formuláře nebo šabloně.
 
 > [!NOTE]
->  **AddIns** karta není zobrazena v okně Náhled tisku. Pokud chcete na vlastní kartě se zobrazí v okně Náhled, ujistěte se, že **OfficeId** vlastnost karty není nastavena na **TabAddIns**.
+> **AddIns** karta není zobrazena v okně Náhled tisku. Pokud chcete na vlastní kartě se zobrazí v okně Náhled, ujistěte se, že **OfficeId** vlastnost karty není nastavena na **TabAddIns**.
 
  Musíte zadat typ každé okno, ve kterém chcete, aby vaše pásu karet se zobrazí pásu karet.
 

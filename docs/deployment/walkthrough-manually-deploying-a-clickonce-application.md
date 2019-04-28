@@ -1,5 +1,5 @@
 ---
-title: 'Průvodce: Ruční nasazení aplikace ClickOnce | Dokumentace Microsoftu'
+title: 'Návod: Ruční nasazení aplikace ClickOnce | Dokumentace Microsoftu'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -20,14 +20,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 39d482b6e2b0e2cdd9fce553a1cb11b1b27e9467
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 60173bd8a48b067757bbccfad42a2feaf5633082
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628101"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63405799"
 ---
-# <a name="walkthrough-manually-deploy-a-clickonce-application"></a>Průvodce: Ruční nasazení aplikace ClickOnce
+# <a name="walkthrough-manually-deploy-a-clickonce-application"></a>Návod: Ruční nasazení aplikace ClickOnce
 Pokud Visual Studio nelze použít k nasazení vaší [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace, nebo potřebujete používat funkce pokročilého nasazení, jako je například nasazení důvěryhodné aplikace, měli byste použít *Mage.exe* nástroj příkazového řádku k vytvoření vašeho [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifesty. Tento návod popisuje, jak vytvořit [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] nasazení pomocí příkazového řádku verze (*Mage.exe*) nebo grafický verze (*MageUI.exe*) generování manifestu a Nástroj pro úpravy.
 
 ## <a name="prerequisites"></a>Požadavky
@@ -54,7 +54,7 @@ Pokud Visual Studio nelze použít k nasazení vaší [!INCLUDE[ndptecclick](../
    Předplatné nasazení s certifikátem Authenticode. Pomocí sady Visual Studio, můžete vygenerovat certifikát testu *MageUI.exe*, nebo *MakeCert.exe* a *Pvk2Pfx.exe* nástroje, nebo můžete certifikát můžete získat z certifikátu Autorita (CA). Pokud budete chtít použít nasazení důvěryhodné aplikace, musíte také provést jednorázová instalace certifikátu do všech klientských počítačů. Další informace najdete v tématu [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md).
 
   > [!NOTE]
-  >  Můžete se přihlásit taky nasazení certifikátem CNG, který můžete získat od certifikační autority.
+  > Můžete se přihlásit taky nasazení certifikátem CNG, který můžete získat od certifikační autority.
 
 - Ujistěte se, že aplikace nemá manifest s informacemi o nástroji Řízení uživatelských účtů.
 
@@ -73,7 +73,7 @@ Pokud Visual Studio nelze použít k nasazení vaší [!INCLUDE[ndptecclick](../
 2. V adresáři nasazení, který jste právě vytvořili vytvořte podadresář s verzí. Pokud je to poprvé, že nasazujete aplikace, název podadresáře verze **1.0.0.0**.
 
    > [!NOTE]
-   >  Verze vašeho nasazení může být liší od verze vaší aplikace.
+   > Verze vašeho nasazení může být liší od verze vaší aplikace.
 
 3. Zkopírujte všechny soubory aplikace do podadresáře verze, včetně spustitelných souborů, sestavení, prostředky a datové soubory. V případě potřeby můžete vytvořit další podadresářů, které obsahují další soubory.
 
@@ -86,7 +86,7 @@ Pokud Visual Studio nelze použít k nasazení vaší [!INCLUDE[ndptecclick](../
    ```
 
    > [!NOTE]
-   >  Nezapomeňte použít tečku (.) po `-FromDirectory` možnost, která označuje aktuální adresář. Pokud neuvedete, tečky, musíte zadat cestu k souborům aplikace.
+   > Nezapomeňte použít tečku (.) po `-FromDirectory` možnost, která označuje aktuální adresář. Pokud neuvedete, tečky, musíte zadat cestu k souborům aplikace.
 
 6. Podepsat manifest aplikace certifikátem Authenticode. Nahraďte *mycert.pfx* s cestou k souboru certifikátu. Nahraďte *hesel* heslem pro váš soubor certifikátu.
 
@@ -121,7 +121,7 @@ Pokud Visual Studio nelze použít k nasazení vaší [!INCLUDE[ndptecclick](../
 2. V adresáři nasazení, který jste právě vytvořili vytvořte podadresář s verzí. Pokud je to poprvé, že nasazujete aplikace, název podadresáře verze **1.0.0.0**.
 
    > [!NOTE]
-   >  Verze vašeho nasazení je pravděpodobně odlišná od verze aplikace.
+   > Verze vašeho nasazení je pravděpodobně odlišná od verze aplikace.
 
 3. Zkopírujte všechny soubory aplikace do podadresáře verze, včetně spustitelných souborů, sestavení, prostředky a datové soubory. V případě potřeby můžete vytvořit další podadresářů, které obsahují další soubory.
 

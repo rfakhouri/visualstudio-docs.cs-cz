@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8af9386d192c6dd96669dbfada298317cf5fe0e5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 1378cddbc9770af923a98f1b7083a8792874b5b3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56646301"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63429289"
 ---
 # <a name="merge-xml-in-feature-and-package-manifests"></a>Sloučení XML do manifestů funkce a balíku
   Součásti a balíčky jsou definovány [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] soubory manifestu. Tyto zabalených manifestů jsou kombinací dat vygenerovaných z návrháře a vlastní [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] zadané v šabloně manifestu uživateli. Během vytváření balíčků [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] sloučí vlastní [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] příkazy s poskytnutou návrháře [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] k balení [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] soubor manifestu. Podobné prvky, s výjimkami uvedenými později v sloučit výjimky jsou sloučeny, aby [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] chyby ověření po nasazení souborů do služby SharePoint a chcete-li manifest soubory menší a efektivnější.
@@ -55,7 +55,7 @@ ms.locfileid: "56646301"
 |CustomUpgradeActionParameter|Název|
 
 > [!NOTE]
->  Protože je jediný způsob, jak upravovat prvek CustomUpgradeAction ve vlastní [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] editoru nelze sloučit efekt je nízká.
+> Protože je jediný způsob, jak upravovat prvek CustomUpgradeAction ve vlastní [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] editoru nelze sloučit efekt je nízká.
 
 ## <a name="package-manifest-elements"></a>Elementy manifestu balíčku
  V následující tabulce je seznam všech prvků manifestu balíčku, které lze sloučit a jejich jedinečný klíč, který se použije pro porovnání.

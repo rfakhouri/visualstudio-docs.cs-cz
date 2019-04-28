@@ -8,19 +8,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fb9f1ec1eafb0dbea7ca5437d80a32e4fe9d9dc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c8f136b28c30c1fe79eda2f7c97540cb60a3ffda
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60043119"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63407550"
 ---
 # <a name="using-the-microsoft-monitoring-agent-c-visual-basic"></a>Použití služby Microsoft Monitoring Agent (C#, Visual Basic)
 
 Místně můžete monitorovat webové aplikace ASP.NET hostované službou IIS a službu SharePoint 2010 nebo 2013 aplikací pro chyby, problémy s výkonem nebo jiné problémy s použitím **agenta Microsoft Monitoring Agent**. Můžete uložit diagnostické události z agenta do souboru protokolu IntelliTrace (.iTrace). V protokolu pak můžete otevřít v sadě Visual Studio Enterprise (ale ne edice Professional nebo Community) pro ladění problémů s všechny diagnostické nástroje sady Visual Studio. Může také shromažďovat diagnostická data IntelliTrace a metoda dat spuštěním agenta v **trasování** režimu. Microsoft Monitoring Agent je možné integrovat s [Application Insights](/azure/application-insights/) a [System Center Operation Manageru](/previous-versions/system-center/system-center-2012-R2/hh205987(v=sc.12)). Agenta Microsoft Monitoring Agent změnit prostředí cílového systému, když je nainstalovaná.
 
 > [!NOTE]
->  Může také shromažďovat data IntelliTrace diagnostiky a metoda pro webový server, SharePoint, WPF a Windows aplikace formuláře na vzdálených počítačích beze změny cílového prostředí s použitím **samostatného kolektoru IntelliTrace**. Samostatný kolektor má větší dopad na výkon ve srovnání se spouštěním agenta Microsoft Monitoring Agent **monitorování** režimu. Zobrazit [použití samostatného kolektoru IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md).
+> Může také shromažďovat data IntelliTrace diagnostiky a metoda pro webový server, SharePoint, WPF a Windows aplikace formuláře na vzdálených počítačích beze změny cílového prostředí s použitím **samostatného kolektoru IntelliTrace**. Samostatný kolektor má větší dopad na výkon ve srovnání se spouštěním agenta Microsoft Monitoring Agent **monitorování** režimu. Zobrazit [použití samostatného kolektoru IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md).
 
  Pokud používáte System Center 2012, použijte agenta Microsoft Monitoring Agent pomocí nástroje Operations Manager dostávat upozornění na problémy a vytváření pracovních položek sady Team Foundation Server s odkazy na uložené protokoly IntelliTrace. Můžete přiřadit tyto pracovní položky ostatním uživatelům k dalšímu ladění. Zobrazit [integrace nástroje Operations Manager s procesy vývoje](/previous-versions/system-center/system-center-2012-R2/jj614609(v=sc.12)) a [sledování pomocí agenta Microsoft Monitoring Agent](/previous-versions/system-center/system-center-2012-R2/dn465153(v=sc.12)).
 
@@ -59,7 +59,7 @@ Místně můžete monitorovat webové aplikace ASP.NET hostované službou IIS a
      Ujistěte se, že tento adresář vytvořit před zahájením monitorování. Aby se zabránilo zpomalení vaší aplikace, vyberte umístění na místním vysokorychlostním disku, který není velmi aktivní.
 
     > [!IMPORTANT]
-    >  Protokoly nástroje IntelliTrace může obsahovat osobní a citlivé údaje. Omezte tento adresář pouze na ty identity, které musí pracovat se soubory. Zkontrolujte zásady ochrany osobních údajů vaší společnosti.
+    > Protokoly nástroje IntelliTrace může obsahovat osobní a citlivé údaje. Omezte tento adresář pouze na ty identity, které musí pracovat se soubory. Zkontrolujte zásady ochrany osobních údajů vaší společnosti.
 
 5. Ke spuštění podrobné úrovni funkcí monitorování nebo k monitorování aplikací služby SharePoint, měl fond aplikací, který je hostitelem vaší webové aplikaci nebo aplikaci služby SharePoint oprávnění čtení a zápisu do adresáře protokolu IntelliTrace. [DOTAZ: Jak můžu nastavit oprávnění pro fond aplikací?](#FullPermissionsITLog)
 
@@ -257,7 +257,7 @@ Agent zaznamenává hodnoty `id`, `Employee.Id`, `Employee.Name` a `Employee` ob
 3. Zkopírujte protokol k zabezpečení sdílené složky a potom otevřete protokol z počítače, který má Visual Studio Enterprise (ale ne edice Professional nebo Community).
 
    > [!IMPORTANT]
-   >  Buďte opatrní při sdílení protokolů IntelliTrace, protože mohou obsahovat osobní a citlivé údaje. Ujistěte se, kdo má přístup k tyto protokoly má oprávnění k oprávněn prohlížet tato data. Zkontrolujte zásady ochrany osobních údajů vaší společnosti.
+   > Buďte opatrní při sdílení protokolů IntelliTrace, protože mohou obsahovat osobní a citlivé údaje. Ujistěte se, kdo má přístup k tyto protokoly má oprávnění k oprávněn prohlížet tato data. Zkontrolujte zásady ochrany osobních údajů vaší společnosti.
 
    **Další:** [Diagnostika zaznamenané události v sadě Visual Studio Enterprise](../debugger/diagnose-problems-after-deployment.md#InvestigateEvents)
 

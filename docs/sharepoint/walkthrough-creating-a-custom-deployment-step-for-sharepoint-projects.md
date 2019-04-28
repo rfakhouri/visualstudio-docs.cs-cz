@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2d4f42793c061436fee83e007def9f1d7e1d8f7c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: facf9b32553ada46ed969aa6e616f20eb378fd60
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040169"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430421"
 ---
 # <a name="walkthrough-create-a-custom-deployment-step-for-sharepoint-projects"></a>Návod: Vytvoření vlastního kroku nasazení pro projekty SharePoint
   Při nasazení projektu služby SharePoint, aplikace Visual Studio provede série kroků nasazení v určitém pořadí. Visual Studio obsahuje mnoho vestavěné kroky nasazení, ale můžete také vytvořit svoje vlastní.
@@ -74,7 +74,7 @@ ms.locfileid: "60040169"
 3. V **nový projekt** dialogového okna rozbalte **Visual C#** nebo **jazyka Visual Basic** uzly a klikněte na tlačítko **rozšiřitelnost** uzlu.
 
     > [!NOTE]
-    >  **Rozšiřitelnost** uzel je dostupný jenom v případě, že nainstalujete Visual Studio SDK. Další informace najdete v oddílu požadavky dříve v tomto tématu.
+    > **Rozšiřitelnost** uzel je dostupný jenom v případě, že nainstalujete Visual Studio SDK. Další informace najdete v oddílu požadavky dříve v tomto tématu.
 
 4. V horní části dialogového okna zvolte **rozhraní .NET Framework 4.5** v seznam verzí rozhraní .NET Framework.
 
@@ -147,7 +147,7 @@ ms.locfileid: "60040169"
 1. V **DeploymentStepExtension** projektu, otevřete soubor kódu UpgradeStep a vložte následující kód do něj.
 
     > [!NOTE]
-    >  Po přidání tohoto kódu, bude mít projekt několik chyb kompilace, ale zmizí při vložení kódu v dalších krocích.
+    > Po přidání tohoto kódu, bude mít projekt několik chyb kompilace, ale zmizí při vložení kódu v dalších krocích.
 
      [!code-csharp[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#1](../sharepoint/codesnippet/CSharp/UpgradeDeploymentStep/deploymentstepextension/upgradestep.cs#1)]
      [!code-vb[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#1](../sharepoint/codesnippet/VisualBasic/upgradedeploymentstep/deploymentstepextension/upgradestep.vb#1)]
@@ -205,7 +205,7 @@ ms.locfileid: "60040169"
 6. V **typ** klikněte na položku **Microsoft.VisualStudio.MefComponent**.
 
     > [!NOTE]
-    >  Tato hodnota odpovídá `MefComponent` element v souboru extension.vsixmanifest. Tento prvek určuje název sestavení rozšíření v balíčku souboru VSIX. Další informace najdete v tématu [MEFComponent – Element (VSX schéma)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).
+    > Tato hodnota odpovídá `MefComponent` element v souboru extension.vsixmanifest. Tento prvek určuje název sestavení rozšíření v balíčku souboru VSIX. Další informace najdete v tématu [MEFComponent – Element (VSX schéma)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).
 
 7. V **zdroj** klikněte na položku **projekt v aktuálním řešení**.
 
@@ -218,7 +218,7 @@ ms.locfileid: "60040169"
 10. V **typ** seznamu, zadejte **SharePoint.Commands.v4**.
 
     > [!NOTE]
-    >  Tento prvek určuje vlastní rozšíření, které chcete zahrnout do rozšíření aplikace Visual Studio. Další informace najdete v tématu [Asset – Element (VSX schéma)](https://msdn.microsoft.com/9fcfc098-edc7-484b-9d4c-acd17829d737).
+    > Tento prvek určuje vlastní rozšíření, které chcete zahrnout do rozšíření aplikace Visual Studio. Další informace najdete v tématu [Asset – Element (VSX schéma)](https://msdn.microsoft.com/9fcfc098-edc7-484b-9d4c-acd17829d737).
 
 11. V **zdroj** klikněte na položku **projekt v aktuálním řešení**.
 
@@ -262,7 +262,7 @@ ms.locfileid: "60040169"
 6. V části **co je úroveň důvěryhodnosti pro toto řešení SharePoint**, zvolte **nasadit jako řešení farmy** přepínač.
 
    > [!NOTE]
-   >  Krok nasazení upgradu nepodporuje řešení v izolovaném prostoru.
+   > Krok nasazení upgradu nepodporuje řešení v izolovaném prostoru.
 
 7. Zvolte **Dokončit** tlačítko.
 

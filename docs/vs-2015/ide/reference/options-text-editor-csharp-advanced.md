@@ -20,12 +20,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ed1260d414c21d40bd0dc57f885cf5996594b7d6
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 4c8b957517a7b539f74a9715b92b8a2945d3fe5c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59664544"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441373"
 ---
 # <a name="options-text-editor-c-advanced"></a>Možnosti, textový editor, C#, upřesnit
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "59664544"
 Použijte toto dialogové okno Upravit nastavení editoru formátování, refaktoring kódu a dokumentační komentáře XML pro jazyk Visual C#. Toto dialogové okno, klikněte na tlačítko **možnosti** na **nástroje** nabídky, rozbalte **textový Editor** složky, rozbalte **jazyka C#** a potom klikněte na tlačítko  **Pokročilé**.  
   
 > [!NOTE]
->  Dialogová okna a příkazy nabídek, které vidíte, se mohou lišit od těch popsaných v nápovědě v závislosti na aktivních nastaveních nebo edici. Chcete-li změnit nastavení, zvolte **nastavení importu a exportu** na **nástroje** nabídky. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Dialogová okna a příkazy nabídek, které vidíte, se mohou lišit od těch popsaných v nápovědě v závislosti na aktivních nastaveních nebo edici. Chcete-li změnit nastavení, zvolte **nastavení importu a exportu** na **nástroje** nabídky. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="outlining"></a>Sbalování  
  Po otevření souborů vstoupit do režimu sbalování  

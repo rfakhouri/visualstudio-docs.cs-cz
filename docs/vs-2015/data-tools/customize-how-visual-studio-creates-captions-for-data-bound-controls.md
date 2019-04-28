@@ -20,12 +20,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1b3bba0d47e77b9e712a375627e2e4aebc6702b3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 960100db5a257ab30431c1edee2bce9ded21d46d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079477"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431185"
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>Úprava způsobu, kterým Visual Studio vytváří titulky pro ovládací prvky vázané daty
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "60079477"
 Při přetažení položky z [okna zdroje dat](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992) do Návrháře formulářů Windows, zvláštní pozornost vstupu do play: názvy sloupců v popiscích titulek jsou přeformátována na řetězec čitelnější, pokud dvě nebo více slov jsou nenašel se nedá zřetězit dohromady. Můžete změnit způsob, ve kterém jsou tyto popisky vytvořené, tak, že nastavíte **SmartCaptionExpression**, **SmartCaptionReplacement**, a **SmartCaptionSuffix** hodnoty v **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\10.0\Data návrháři** klíč registru.
 
 > [!NOTE]
->  Tento klíč registru neexistuje, dokud ho vytvoříte.
+> Tento klíč registru neexistuje, dokud ho vytvoříte.
 
  Inteligentní titulky řídí regulárních výrazů do hodnoty **SmartCaptionExpression** hodnotu. Přidávání **návrháře dat** klíč registru přepisuje výchozí regulární výraz, který řídí titulků. Další informace o formátování regulárních výrazů, naleznete v tématu [pomocí regulárních výrazů v sadě Visual Studio](../ide/using-regular-expressions-in-visual-studio.md).
 
@@ -54,9 +54,9 @@ Při přetažení položky z [okna zdroje dat](http://msdn.microsoft.com/library
 |**SmartCaptionSuffix**|:|Hodnota představuje znak připojenou k vráceného řetězce. Například, pokud je popisek `Company Name`, přípona umožňuje `Company Name:`|
 
 > [!CAUTION]
->  Měli byste být opatrní při teď zrovna nic nedělá v editoru registru. Registr zálohovali začnete upravovat. Pokud Editor registru používán správně, můžete způsobit vážné problémy, které mohou vyžadovat přeinstalaci operačního systému. Microsoft nezaručuje, že lze vyřešit problémy způsobující pomocí Editoru registru nesprávně. Pomocí Editoru registru na vlastní nebezpečí.
+> Měli byste být opatrní při teď zrovna nic nedělá v editoru registru. Registr zálohovali začnete upravovat. Pokud Editor registru používán správně, můžete způsobit vážné problémy, které mohou vyžadovat přeinstalaci operačního systému. Microsoft nezaručuje, že lze vyřešit problémy způsobující pomocí Editoru registru nesprávně. Pomocí Editoru registru na vlastní nebezpečí.
 >
->  Následujícím článku znalostní báze obsahuje pokyny pro zálohování, úpravy a obnovení registru: [Popis registru Windows Microsoft](http://support.microsoft.com/default.aspx?scid=kb;en-us;256986) (http://support.microsoft.com/default.aspx?scid=kb; en-us; 256986)
+> Následujícím článku znalostní báze obsahuje pokyny pro zálohování, úpravy a obnovení registru: [Popis registru Windows Microsoft](http://support.microsoft.com/default.aspx?scid=kb;en-us;256986) (http://support.microsoft.com/default.aspx?scid=kb; en-us; 256986)
 
 ### <a name="to-modify-the-smart-captioning-behavior-of-the-data-sources-window"></a>Chcete-li změnit inteligentní titulků chování okna zdroje dat
 

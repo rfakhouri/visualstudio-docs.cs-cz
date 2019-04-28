@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: bd61d4bf97ce25d291268856a3e85729c98c1312
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59658394"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62859476"
 ---
 # <a name="registering-project-and-item-templates"></a>Registrace šablon projektů a položek
 Typy projektů musíte zaregistrovat adresáře, kde se nachází jejich šablony projektů a položek projektů. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] informace o registraci přidružený k vaší typy projektů používá k určení, co se má zobrazit v **přidat nový projekt** a **přidat novou položku** dialogových oknech.
@@ -37,7 +37,7 @@ Typy projektů musíte zaregistrovat adresáře, kde se nachází jejich šablon
 "ProjectTemplatesDir"="C:\\MyProduct\\MyProjectTemplates"
 ```
 
-|Name|Typ|Popis|
+|Název|Typ|Popis|
 |----------|----------|-----------------|
 |@|REG_SZ|Výchozí název projektů tohoto druhu.|
 |displayName|REG_SZ|ID prostředku, který se má načíst z satelitní knihovny DLL název zaregistrován balíčky.|
@@ -55,7 +55,7 @@ Typy projektů musíte zaregistrovat adresáře, kde se nachází jejich šablon
 "SortPriority"=dword:00000064
 ```
 
-| Name | Typ | Popis |
+| Název | Typ | Popis |
 |--------------------------|-----------| - |
 | @ | REG_SZ | ID prostředku pro přidat položku šablony. |
 | TemplatesDir | REG_SZ | Cesta položky projektu zobrazí v dialogovém okně **přidat novou položku** průvodce. |
@@ -82,7 +82,7 @@ Typy projektů musíte zaregistrovat adresáře, kde se nachází jejich šablon
 "SortPriority"=dword:00000064
 ```
 
-|Name|Typ|Popis|
+|Název|Typ|Popis|
 |----------|----------|-----------------|
 |CommonFindFilesFilter|REG_DWORD|Vytvoří jeden z běžných filtrů filtr na **najít v souborech** dialogové okno. Běžné filtry jsou uvedeny v seznamu filtru před filtry, které nejsou označeny jako běžné.|
 |CommonOpenFilesFilter|REG_DWORD|Vytvoří jeden z běžných filtrů filtr na **otevřít soubor** dialogové okno. Běžné filtry jsou uvedeny v seznamu filtru před filtry, které nejsou označeny jako běžné.|

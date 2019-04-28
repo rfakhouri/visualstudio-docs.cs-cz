@@ -16,12 +16,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c1cde6d36a1244976a2cc95dd9c1d3698be40df0
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: a0ce02a76d32a967e2c7e5f06818b5838337f9b1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59652615"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433681"
 ---
 # <a name="options-dialog-box--projects-and-solutions-build-and-run"></a>Dialogové okno Možnosti, projekty a řešení, sestavit a spustit
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ V tomto dialogovém okně můžete zadat maximální počet projekty Visual C++ 
   
  **Spustit, pokud projekty jsou zastaralé**  
  > [!NOTE]
->  Tento seznam se vztahuje na [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] pouze pro projekty.  
+> Tento seznam se vztahuje na [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] pouze pro projekty.  
   
  Ve výchozím nastavení, zobrazí se zpráva Pokud konfigurace projektu je zastaralý. když stisknutím klávesy F5 nebo vyberte **ladění**, **Start** na řádku nabídek. Můžete určit, zda chcete i přesto se projekt sestavil a určuje, zda se zobrazí zpráva. Tuto možnost použijte k určení, zda zpráva se zobrazí a jaké chování sestavení by měl být pokud zpráva se nezobrazí.  
   
@@ -54,7 +54,7 @@ V tomto dialogovém okně můžete zadat maximální počet projekty Visual C++ 
  Pokud při spuštění sestavení z dojde k chybám sestavení **sestavení** nabídky, se zobrazí zpráva. Můžete zadat, jestli se má pokračovat spuštěním aplikace a určuje, zda zpráva se zobrazí pokaždé, když se chyby, která sestavení. Tuto možnost použijte k určení, zda zpráva se zobrazí a jaké chování je třeba pokud se nezobrazí zpráva.  
   
 > [!NOTE]
->  Tato možnost se vztahuje na [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] pouze pro projekty.  
+> Tato možnost se vztahuje na [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] pouze pro projekty.  
   
  **Dotázat se na spuštění**  
  Zobrazí okno se zprávou, které chyby sestavení pokaždé, když dojde k.  
@@ -73,7 +73,7 @@ V tomto dialogovém okně můžete zadat maximální počet projekty Visual C++ 
   
  **Úroveň podrobností MSBuild projektu sestavení protokolu souborů**  
  > [!NOTE]
->  Tato možnost se týká pouze projektů Visual C++.  
+> Tato možnost se týká pouze projektů Visual C++.  
   
  Určuje, kolik informací je zapsána do souboru protokolu sestavení, které se nacházejí v \\... \\ *ProjectName*\Debug\\*ProjectName*. log.  
   

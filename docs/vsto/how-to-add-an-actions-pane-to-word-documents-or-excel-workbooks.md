@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f1d72d3da8adeff7b8280bda84eb92b730679fea
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f9696640358626c254f1792fc29a31a41d4bafb3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60085841"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427910"
 ---
 # <a name="how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks"></a>Postupy: Přidání podokna akcí do wordových dokumentů nebo excelových sešitů
   K přidání podokna akcí do dokumentů aplikace Microsoft Office Word nebo sešitu aplikace Microsoft Excel, vytvoření uživatelského ovládacího prvku Windows Forms. Pak přidejte uživatelský ovládací prvek <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> vlastnost `ThisDocument.ActionsPane` pole (slova) nebo `ThisWorkbook.ActionsPane` pole (Excel) ve vašem projektu.
@@ -28,7 +28,7 @@ ms.locfileid: "60085841"
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
 > [!NOTE]
->  Váš počítač může v následujících pokynech zobrazovat odlišné názvy nebo umístění některých prvků uživatelského rozhraní sady Visual Studio. Tyto prvky jsou určeny edicí sady Visual Studio a použitým nastavením. Další informace najdete v tématu [přizpůsobení integrovaného vývojového prostředí sady Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
+> Váš počítač může v následujících pokynech zobrazovat odlišné názvy nebo umístění některých prvků uživatelského rozhraní sady Visual Studio. Tyto prvky jsou určeny edicí sady Visual Studio a použitým nastavením. Další informace najdete v tématu [přizpůsobení integrovaného vývojového prostředí sady Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="creating-the-user-control"></a>Vytvoření uživatelského ovládacího prvku
  Následující postup ukazuje, jak vytvořit uživatelský ovládací prvek aplikace Word nebo Excel projektu. Také přidá tlačítko do uživatelského ovládacího prvku, který zapíše text do dokumentem nebo sešitem, když dojde ke kliknutí na.
@@ -42,12 +42,12 @@ ms.locfileid: "60085841"
 3. V **přidat novou položku** dialogu **ovládacího prvku podokna akcí**, pojmenujte ho **HelloControl**a klikněte na tlačítko **přidat**.
 
     > [!NOTE]
-    >  Můžete také přidat **uživatelský ovládací prvek** položky do projektu. Třídy generované **ovládacího prvku podokna akcí** a **uživatelský ovládací prvek** položky jsou funkčně ekvivalentní.
+    > Můžete také přidat **uživatelský ovládací prvek** položky do projektu. Třídy generované **ovládacího prvku podokna akcí** a **uživatelský ovládací prvek** položky jsou funkčně ekvivalentní.
 
 4. Z **Windows Forms** karty **nástrojů** přetáhněte **tlačítko** ovládacího prvku do ovládacího prvku.
 
     > [!NOTE]
-    >  Pokud ovládací prvek není viditelný v návrháři, dvakrát klikněte na tlačítko **HelloControl** v **Průzkumníka řešení**.
+    > Pokud ovládací prvek není viditelný v návrháři, dvakrát klikněte na tlačítko **HelloControl** v **Průzkumníka řešení**.
 
 5. Přidejte kód, který <xref:System.Windows.Forms.Control.Click> obslužná rutina události tlačítka. Následující příklad ukazuje kód pro dokument aplikace Microsoft Office Word.
 

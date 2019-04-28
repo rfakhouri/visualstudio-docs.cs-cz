@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 046e0e5ab33d3eece5c44fcadb31ca93700587e5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60093654"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62939459"
 ---
 # <a name="changes-to-the-design-of-office-projects-that-target-the-net-framework-4-or-the-net-framework-45"></a>Změny v návrhu projektů Office cílených na rozhraní .NET Framework 4 nebo .NET Framework 4.5
   Počínaje [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)], Visual Studio zavádí několik změn v návrhu projektů Office, které se zaměřují [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] nebo novější. Pokud jste se seznámili s projekty sady Office v předchozích verzích sady Visual Studio, je třeba tyto změny předtím, než vývoj projektů Office cílených těchto verzí rozhraní .NET Framework 4.0 nebo novější. Ve výchozím nastavení cílit na všechny projekty, které vytvoříte pomocí sady Visual Studio 2013 nebo novější rozhraní .NET Framework 4.0 nebo novější.

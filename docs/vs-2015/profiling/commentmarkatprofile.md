@@ -12,12 +12,12 @@ caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 20211a2526062a67a3e23896512f072edc6ae44d
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
-ms.translationtype: MT
+ms.openlocfilehash: 35ef5e1033224969f4dae1e42036b860f89bbd8f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54791423"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63416654"
 ---
 # <a name="commentmarkatprofile"></a>CommentMarkAtProfile
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +63,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkAtProfile (
  Profilace stav podprocesu, který obsahuje funkci profilu značky musí být na značky a komentáře vložená značka příkaz nebo s funkcí rozhraní API (CommentMarkAtProfile, CommentMarkProfile nebo MarkProfile). Profil značky jsou globální v oboru. Například profil značky vložení v jednom vlákně slouží k označení začátku nebo konci segmentu dat v jakékoli vlákno do souboru .vsp.  
   
 > [!IMPORTANT]
->  CommentMarkAtProfile metody by měla sloužit s pouze instrumentace.  
+> CommentMarkAtProfile metody by měla sloužit s pouze instrumentace.  
   
 ## <a name="net-framework-equivalent"></a>Ekvivalent v rozhraní .NET Framework  
  Microsoft.VisualStudio.Profiler.dll  

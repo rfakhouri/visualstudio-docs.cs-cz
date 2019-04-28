@@ -22,12 +22,12 @@ caps.latest.revision: 93
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 980b7e0f54c058650a393c35467a73d926ec6638
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c5976f2d701ecf051625c93ab6b70fb88ed15108
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088727"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433330"
 ---
 # <a name="customize-code-maps-by-editing-the-dgml-files"></a>Přizpůsobení map kódu úpravou souborů DGML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ Přizpůsobení map kódu, můžete upravit soubor Directed Graph Markup Languag
  Úpravou souboru .dgml mapy kódu v textovém editoru nebo editoru XML. Pokud mapování je součástí řešení sady Visual Studio, vyberte ho v **Průzkumníka řešení**, otevřete místní nabídku a zvolte **otevřít v programu**, **Editor (textový) XML**.  
   
 > [!NOTE]
->  K vytvoření kódových map, musíte mít Visual Studio Enterprise. Při úpravě mapy kódu v sadě Visual Studio se vyčistí všechny nepoužívané prvky a atributy DGML odstraněním při uložení souboru .dgml. Vytvoří také prvky kódu automaticky při ručním přidání nových propojení. Při ukládání souboru .dgml mohou být všechny atributy, které byly přidány do prvku, uspořádány podle abecedy.  
+> K vytvoření kódových map, musíte mít Visual Studio Enterprise. Při úpravě mapy kódu v sadě Visual Studio se vyčistí všechny nepoužívané prvky a atributy DGML odstraněním při uložení souboru .dgml. Vytvoří také prvky kódu automaticky při ručním přidání nových propojení. Při ukládání souboru .dgml mohou být všechny atributy, které byly přidány do prvku, uspořádány podle abecedy.  
   
 ## <a name="OrganizeNodes"></a> Seskupit elementy kódu  
  Můžete přidat nové skupiny nebo převést existující uzly do skupiny.  
@@ -120,7 +120,7 @@ Přizpůsobení map kódu, můžete upravit soubor Directed Graph Markup Languag
 - Skupiny prvky kódu a odkazy na základě určitých podmínek  
   
 > [!TIP]
->  Pokud máte opakující se styly napříč mnoha prvků kódu nebo odkazy, můžete zvážit tyto prvky kódu nebo propojení použit kategorii a pak na tuto kategorii použít styl. Další informace najdete v tématu [přiřadit kategorie pro prvky kódu a odkazy](#AssignCategories) a [přiřazení vlastností prvky kódu a odkazy](#AssignProperties).  
+> Pokud máte opakující se styly napříč mnoha prvků kódu nebo odkazy, můžete zvážit tyto prvky kódu nebo propojení použit kategorii a pak na tuto kategorii použít styl. Další informace najdete v tématu [přiřadit kategorie pro prvky kódu a odkazy](#AssignCategories) a [přiřazení vlastností prvky kódu a odkazy](#AssignProperties).  
   
 ##### <a name="to-apply-a-custom-style-to-a-single-code-element"></a>Použití vlastního stylu na jediného prvku kódu  
   
@@ -558,7 +558,7 @@ Přizpůsobení map kódu, můžete upravit soubor Directed Graph Markup Languag
  Můžete propojit dokumenty nebo adresy URL pro prvky kódu nebo k propojení úpravou souboru .dgml na mapě a přidání `Reference` atribut `<Node/>` – element pro element kódu nebo `<Link/>` – element pro odkaz. Pak můžete otevřít a zobrazit tento obsah z elementu kódu nebo odkaz. `Reference` Atribut určuje cestu k obsahu. To může být cesta relativní k umístění souboru .dgml nebo absolutní cesta.  
   
 > [!CAUTION]
->  Pokud použijete relativní cestu a soubor .dgml bude přesunut do jiného umístění, pak tuto cestu nebude možné interpretovat. Při pokusu o otevření a zobrazení propojeného obsahu, dojde k chybě oznamující, že obsah nelze zobrazit.  
+> Pokud použijete relativní cestu a soubor .dgml bude přesunut do jiného umístění, pak tuto cestu nebude možné interpretovat. Při pokusu o otevření a zobrazení propojeného obsahu, dojde k chybě oznamující, že obsah nelze zobrazit.  
   
  Můžete například chtít propojit následujících prvků kódu:  
   
@@ -583,7 +583,7 @@ Přizpůsobení map kódu, můžete upravit soubor Directed Graph Markup Languag
    - V `<Node/>` nebo `<Link/>` elementu, přidejte `Reference` atribut k určení umístění prvku kódu.  
   
      > [!NOTE]
-     >  Může mít pouze jeden `Reference` atribut na prvek.  
+     > Může mít pouze jeden `Reference` atribut na prvek.  
   
      Příklad:  
   

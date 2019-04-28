@@ -25,12 +25,12 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 93fd3bcff6fa16a4fb28521c58ff2caad6edafbb
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: efbdccf4d5774322b42a517831b22186103347b1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59667908"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430890"
 ---
 # <a name="mt-task"></a>MT – úloha
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ Zabalí nástroj Microsoft Manifest mt.exe. Další informace najdete v tématu 
  Následující tabulka popisuje parametry **MT** úloh. Většinu úkolů parametrů a několik sad parametrů, odpovídají možnost příkazového řádku.  
   
 > [!NOTE]
->  Dokumentace mt.exe používá pomlčkou (**-**) jako předponu pro možnosti příkazového řádku, ale toto téma používá lomítko (**/**). Buď předpona je přijatelné.  
+> Dokumentace mt.exe používá pomlčkou (**-**) jako předponu pro možnosti příkazového řádku, ale toto téma používá lomítko (**/**). Buď předpona je přijatelné.  
   
 |Parametr|Popis|  
 |---------------|-----------------|  

@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 940cf70047437c8aa3182121e8b1585b448018f8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9e5c6282c446fbc9ef24433e40452cca2b1b905a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060734"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441859"
 ---
 # <a name="deploy-an-office-solution-by-using-clickonce"></a>Nasazení řešení Office s použitím technologie ClickOnce
   Vaše řešení pro Office v méně kroků můžete nasadit, když použijete ClickOnce. Když publikujete aktualizace, vaše řešení je automaticky rozpozná a nainstaluje. Technologie ClickOnce ale vyžaduje, aby bylo řešení nainstalováno zvlášť pro každého uživatele počítače. Proto byste měli zvážit použití Instalační služby systému Windows (*MSI*) je-li více než jeden uživatel vaše řešení bude používat ve stejném počítači.
@@ -83,7 +83,7 @@ ms.locfileid: "60060734"
 9. Pokud vaše řešení cílí na rozhraní .NET Framework 4.5, také vybrat **Visual Studio 2010 Tools for Office Runtime** zaškrtávací políčko.
 
     > [!NOTE]
-    >  Ve výchozím nastavení toto zaškrtávací políčko nezobrazuje. Aby se toto zaškrtávací políčko zobrazilo, je nutné vytvořit balíček zaváděcího nástroje. Zobrazit [vytvoření balíčku zaváděcího nástroje pro Office 2013 VSTO doplněk pomocí Visual Studio 2012](create-vsto-add-ins-for-office-by-using-visual-studio.md).
+    > Ve výchozím nastavení toto zaškrtávací políčko nezobrazuje. Aby se toto zaškrtávací políčko zobrazilo, je nutné vytvořit balíček zaváděcího nástroje. Zobrazit [vytvoření balíčku zaváděcího nástroje pro Office 2013 VSTO doplněk pomocí Visual Studio 2012](create-vsto-add-ins-for-office-by-using-visual-studio.md).
 
 10. V části **Zadejte prosím umístění pro nainstalování součástí**, zvolte jednu z možností, které se zobrazí a klikněte na tlačítko **OK** tlačítko.
 
@@ -100,7 +100,7 @@ ms.locfileid: "60060734"
 11. Zvolte **aktualizace** tlačítko, určete, jak často chcete každý koncový uživatel doplňku VSTO nebo vlastní nastavení pro kontrolu aktualizací a klikněte na tlačítko **OK** tlačítko.
 
     > [!NOTE]
-    >  Pokud nasazení provádíte pomocí disku CD-ROM nebo vyměnitelné jednotky, zvolte **nikdy Nezjišťovat dostupnost aktualizací** přepínač.
+    > Pokud nasazení provádíte pomocí disku CD-ROM nebo vyměnitelné jednotky, zvolte **nikdy Nezjišťovat dostupnost aktualizací** přepínač.
 
      Informace o tom, jak publikovat aktualizace najdete v tématu [publikování aktualizace](#Update).
 
@@ -129,7 +129,7 @@ ms.locfileid: "60060734"
       ![Struktura složky publikování](../vsto/media/publishfolderstructure.png "publikovat struktura složek")
 
     > [!NOTE]
-    >  Technologie ClickOnce přidá *.deploy* rozšíření sestavení tak, aby zabezpečená Instalace Internetové informační služby (IIS) soubory neblokovala kvůli nebezpečné příponě. Když uživatel nainstaluje řešení, technologie ClickOnce odebere *.deploy* rozšíření.
+    > Technologie ClickOnce přidá *.deploy* rozšíření sestavení tak, aby zabezpečená Instalace Internetové informační služby (IIS) soubory neblokovala kvůli nebezpečné příponě. Když uživatel nainstaluje řešení, technologie ClickOnce odebere *.deploy* rozšíření.
 
 14. Zkopírujte soubory řešení do umístění instalace, které jste zadali v předchozím kroku tohoto postupu.
 
@@ -164,7 +164,7 @@ ms.locfileid: "60060734"
 6. V **typ MIME** okno, zadejte **.vsto** jako rozšíření, zadejte **application/x-ms-vsto** jako MIME typu a poté použijte nová nastavení.
 
     > [!NOTE]
-    >  Aby se změny projevily, je nutné restartovat službu Publikování na webu nebo počkat na recyklaci pracovního procesu. Musíte pak vyprázdnit diskovou mezipaměť prohlížeče a poté se pokusí otevřít *.vsto* soubor znovu.
+    > Aby se změny projevily, je nutné restartovat službu Publikování na webu nebo počkat na recyklaci pracovního procesu. Musíte pak vyprázdnit diskovou mezipaměť prohlížeče a poté se pokusí otevřít *.vsto* soubor znovu.
 
 ##### <a name="to-add-the-vsto-mime-type-to-iis-70"></a>Chcete-li přidat typ MIME .vsto do služby IIS 7.0
 
@@ -185,7 +185,7 @@ ms.locfileid: "60060734"
     ```
 
     > [!NOTE]
-    >  Aby se změny projevily, je nutné restartovat službu Publikování na webu nebo počkat na recyklaci pracovního procesu. Musíte pak vyprázdnit diskovou mezipaměť prohlížeče a poté se pokusí otevřít *.vsto* soubor znovu.
+    > Aby se změny projevily, je nutné restartovat službu Publikování na webu nebo počkat na recyklaci pracovního procesu. Musíte pak vyprázdnit diskovou mezipaměť prohlížeče a poté se pokusí otevřít *.vsto* soubor znovu.
 
 ## <a name="Put"></a> Umístění dokumentu řešení do počítače koncového uživatele (pouze přizpůsobení na úrovni dokumentu)
  Můžete kopírovat dokument řešení do počítače koncového uživatele pro ně tak, že vytvoříte akci po nasazení. Tímto způsobem, uživatel nebude muset ručně kopírovat dokument z umístění instalace na svém počítači po instalaci vašeho řešení. Bude nutné vytvořit třídu, která definuje akci po nasazení, vytváření a publikování řešení, upravit manifest aplikace a znovu podepsat manifest aplikace a nasazení.
@@ -300,7 +300,7 @@ ms.locfileid: "60060734"
     ```
 
     > [!NOTE]
-    >  V předchozím příkladu nahraďte část MostRecentVersionNumber číslo verze naposledy publikované verze vašeho řešení (například **1_0_0_4**).
+    > V předchozím příkladu nahraďte část MostRecentVersionNumber číslo verze naposledy publikované verze vašeho řešení (například **1_0_0_4**).
 
      Zobrazí se zpráva „ExcelWorkbook.vsto successfully signed“ („Soubor ExcelWorkbook.vsto byl úspěšně podepsán.“).
 
@@ -386,7 +386,7 @@ ms.locfileid: "60060734"
   Pokud chcete pro řešení změnit cestu instalace, je nutné aktualizovat instalační program, který poté uživatelé musejí spustit. V případě přizpůsobení na úrovni dokumentu musejí uživatelé také aktualizovat vlastnost v dokumentu tak, aby odkazovala na nové umístění.
 
 > [!NOTE]
->  Pokud nechcete žádat uživatele, aby aktualizovali vlastnosti dokumentu, které požádejte uživatele, aby získali aktualizovaný dokument z umístění instalace.
+> Pokud nechcete žádat uživatele, aby aktualizovali vlastnosti dokumentu, které požádejte uživatele, aby získali aktualizovaný dokument z umístění instalace.
 
 #### <a name="to-change-the-installation-path-in-the-setup-program"></a>Změna cesty instalace v instalačním programu
 
@@ -401,10 +401,10 @@ ms.locfileid: "60060734"
    ```
 
    > [!NOTE]
-   >  Pokud se zobrazí zpráva, že bude zrušena platnost podpisu spustitelného souboru, znamená to, že certifikát, pomocí něhož bylo řešení podepsáno, již není platný a vydavatel je neznámý. V důsledku toho budou uživatelé muset před instalací řešení potvrdit, že zdroj řešení považují za důvěryhodný.
+   > Pokud se zobrazí zpráva, že bude zrušena platnost podpisu spustitelného souboru, znamená to, že certifikát, pomocí něhož bylo řešení podepsáno, již není platný a vydavatel je neznámý. V důsledku toho budou uživatelé muset před instalací řešení potvrdit, že zdroj řešení považují za důvěryhodný.
 
    > [!NOTE]
-   >  Chcete-li zobrazit aktuální hodnotu adresy URL, spusťte `setup.exe /url`.
+   > Chcete-li zobrazit aktuální hodnotu adresy URL, spusťte `setup.exe /url`.
 
    Pro přizpůsobení na úrovni dokumentu musí uživatelé otevřít dokument a poté aktualizovat jeho vlastnosti _AssemblyLocation. To mohou uživatelé provést pomocí následujícího postupu.
 
@@ -454,7 +454,7 @@ ms.locfileid: "60060734"
      Až uživatel příště otevře aplikaci nebo upravený dokument, bude detekována změna manifestu nasazení. Předchozí verze řešení pro Office se spustí z mezipaměti technologie ClickOnce.
 
 > [!NOTE]
->  Místní data jsou uložena pouze pro jednu předchozí verzi řešení. Pokud vrátíte zpět dvě verze, místní data zachována. Další informace o místních datech naleznete v tématu [přístup k lokálním a vzdáleným datům v aplikacích ClickOnce](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md).
+> Místní data jsou uložena pouze pro jednu předchozí verzi řešení. Pokud vrátíte zpět dvě verze, místní data zachována. Další informace o místních datech naleznete v tématu [přístup k lokálním a vzdáleným datům v aplikacích ClickOnce](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md).
 
 ## <a name="see-also"></a>Viz také:
 

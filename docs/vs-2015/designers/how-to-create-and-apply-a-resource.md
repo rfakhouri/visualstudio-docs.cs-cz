@@ -12,12 +12,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c6b387acd7494396d118915f94a93ca88ec67199
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 47c7385ba54e432e42575f5b8cbae29172ddf62b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60118224"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434476"
 ---
 # <a name="how-to-create-and-apply-a-resource"></a>Vytvoření a použití prostředku
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +63,7 @@ Styly a šablony pro elementy v Návrháři XAML jsou uloženy v opakovaně pou�
    - Platí pro ovládací prvek prostředku šablony stylů nebo ovládací prvek. Otevřete místní nabídku pro ovládací prvek v okno osnovy dokumentu, zvolte **upravit šablonu** nebo **upravit další šablony**, zvolte **aplikovat zdroj**a klikněte na tlačítko Název šablony ovládací prvek ze zobrazeného seznamu.  
   
      > [!NOTE]
-     >  **Úprava šablony** se používá k aplikování šablon ovládacích prvků. **Upravit další šablony** se používá k aplikování jiné typy šablon.  
+     > **Úprava šablony** se používá k aplikování šablon ovládacích prvků. **Upravit další šablony** se používá k aplikování jiné typy šablon.  
   
      Prostředky je možné použít bez ohledu na to jsou kompatibilní. Například prostředek štětce lze použít u **popředí** vlastnost <xref:Windows.UI.Xaml.Controls.TextBox> ovládacího prvku.  
   

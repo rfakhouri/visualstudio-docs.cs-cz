@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff97af6b45242a884d7067f74f486c13356f8d8b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 4ecd968c5be30e50550fb29a5c44cb7065630a63
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56625397"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442342"
 ---
 # <a name="da0024-excessive-gc-cpu-time"></a>DA0024: Nadměrný čas procesoru uvolňování paměti
 
@@ -31,7 +31,7 @@ ms.locfileid: "56625397"
 
  Při profilování pomocí vzorkování, paměti .NET nebo metodám sporu prostředků, musíte shromáždit minimálně 10 vzorky k aktivaci tohoto pravidla.
 
-## <a name="cause"></a>příčina
+## <a name="cause"></a>Příčina
  Údaje o výkonu systému, která byla shromážděna během profilování označuje, že množství času stráveného při uvolňování paměti je příliš vysoká ve srovnání s časem zpracování celkový počet aplikací.
 
 ## <a name="rule-description"></a>Popis pravidla
@@ -42,7 +42,7 @@ ms.locfileid: "56625397"
  Toto pravidlo je vyvoláno, když množství času stráveného při uvolňování paměti je příliš vysoká. ve srovnání s časem zpracování celkový počet aplikací.
 
 > [!NOTE]
->  Když poměr doby trvání uvolňování paměti je důležité, ale ne příliš velké ve srovnání s časem zpracování celkový počet aplikací [DA0023: Vysoký čas procesoru uvolňování paměti](../profiling/da0023-high-gc-cpu-time.md) namísto toto pravidlo aktivuje se upozornění.
+> Když poměr doby trvání uvolňování paměti je důležité, ale ne příliš velké ve srovnání s časem zpracování celkový počet aplikací [DA0023: Vysoký čas procesoru uvolňování paměti](../profiling/da0023-high-gc-cpu-time.md) namísto toto pravidlo aktivuje se upozornění.
 
 ## <a name="how-to-investigate-a-warning"></a>Zkoumání upozornění
  Dvakrát klikněte na zprávu v okně Seznam chyb, přejděte [zobrazení značky](../profiling/marks-view.md) dat profilování. Najít **paměť .NET CLR\\% času v uvolňování paměti** sloupce. Zjistěte, jestli konkrétní fázích provádění programu kde je těžší než ostatní fáze režie uvolňování paměti spravované paměti. Ohlášení porovnat hodnoty % času v uvolňování paměti hodnota, která se frekvence uvolňování paměti **Počet úklidů 0**, **Počet úklidů 1**, **Počet úklidů 2** hodnoty .

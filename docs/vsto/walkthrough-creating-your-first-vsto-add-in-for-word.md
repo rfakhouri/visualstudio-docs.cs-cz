@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b68884d5cf5b6603d3b0ecdb9885e3466859001b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ed5c5e5b03ce7ee0ffbd361b896f288f6b93a806
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079289"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438503"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-word"></a>Návod: Vytvoření vašeho prvního doplňku VSTO pro Word
   Tento úvodní názorný postup ukazuje, jak k vytvoření doplňku VSTO pro Microsoft Office Word. Funkce, které vytvoříte v tento druh řešení jsou k dispozici aplikace samostatně, bez ohledu na to, které jsou otevřené dokumenty.
@@ -83,7 +83,7 @@ ms.locfileid: "60079289"
     [!code-csharp[Trin_WordAddInTutorial#1](../vsto/codesnippet/CSharp/FirstWordAddIn/ThisAddIn.cs#1)]
 
    > [!NOTE]
-   >  Tento kód používá hodnotu indexu 1 pro přístup k prvního odstavce <xref:Microsoft.Office.Interop.Word._Document.Paragraphs%2A> kolekce. Přestože Visual Basic a Visual C# použít pole založené na 0, spodní hranice pole většina kolekcí v objektovém modelu aplikace Word je 1. Další informace najdete v tématu [psaní kódu v řešeních pro systém Office](../vsto/writing-code-in-office-solutions.md).
+   > Tento kód používá hodnotu indexu 1 pro přístup k prvního odstavce <xref:Microsoft.Office.Interop.Word._Document.Paragraphs%2A> kolekce. Přestože Visual Basic a Visual C# použít pole založené na 0, spodní hranice pole většina kolekcí v objektovém modelu aplikace Word je 1. Další informace najdete v tématu [psaní kódu v řešeních pro systém Office](../vsto/writing-code-in-office-solutions.md).
 
 2. Pokud používáte C#, přidejte následující kód vyžaduje k `ThisAddIn_Startup` obslužné rutiny události. Tento kód slouží k připojení `Application_DocumentBeforeSave` obslužné rutině události <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> událostí.
 

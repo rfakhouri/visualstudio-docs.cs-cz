@@ -12,12 +12,12 @@ ms.assetid: aee48fc6-a15f-4fd5-8420-7f18824de220
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 6004e7346ab4bb4bb8d95c04fbbbdd86e1527001
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b4709cc5f011dd55445583c46dd96894b979647c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079601"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435554"
 ---
 # <a name="creating-a-basic-project-system-part-2"></a>Vytvoření systému základního projektu, část 2
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ První názorný postup v této sérii [vytvoření základního systému projek
 - Vytvoření stránky vlastností projektu.  
   
 > [!NOTE]
->  Kroky v tomto názorném postupu jsou založeny na projektu v jazyce C#. S výjimkou konkrétní přípony názvů souborů a kód, můžete však použít stejný postup pro projekt jazyka Visual Basic.  
+> Kroky v tomto názorném postupu jsou založeny na projektu v jazyce C#. S výjimkou konkrétní přípony názvů souborů a kód, můžete však použít stejný postup pro projekt jazyka Visual Basic.  
   
 ## <a name="creating-a-visual-studio-template"></a>Vytvoření šablony sady Visual Studio  
  [Vytvoření základního systému projektu, část 1](../extensibility/creating-a-basic-project-system-part-1.md) ukazuje, jak vytvořit šablonu základního projektu a přidejte do systém projektu. Také ukazuje, jak zaregistrovat pomocí této šablony pomocí sady Visual Studio <xref:Microsoft.VisualStudio.Shell.ProvideProjectFactoryAttribute> atribut, který zapisuje úplnou cestu ke složce \Templates\Projects\SimpleProject\ v systémovém registru.  
@@ -100,7 +100,7 @@ První názorný postup v této sérii [vytvoření základního systému projek
 - \<ProjectType > element názvy typů projektů v **nový projekt** dialogové okno. Tento název se nahradí parametr název projektu ProvideProjectFactory atributu.  
   
   > [!NOTE]
-  >  \<ProjectType > element musí odpovídat `LanguageVsTemplate` argument `ProvideProjectFactory` atributu v souboru SimpleProjectPackage.cs.  
+  > \<ProjectType > element musí odpovídat `LanguageVsTemplate` argument `ProvideProjectFactory` atributu v souboru SimpleProjectPackage.cs.  
   
   \<TemplateContent > část popisuje tyto soubory, které jsou generovány při vytvoření nového projektu:  
   
@@ -115,7 +115,7 @@ První názorný postup v této sérii [vytvoření základního systému projek
   Další informace o prvcích ve schématu šablony Visual Studio, najdete v článku [Visual Studio odkaz na schéma šablon](../extensibility/visual-studio-template-schema-reference.md).  
   
 > [!NOTE]
->  Pokud projekt obsahuje více než jedna šablona Visual Studio, každá šablona je do samostatné složky. Musí mít každý soubor v této složce **akce sestavení** nastavena na **ZipProject**.  
+> Pokud projekt obsahuje více než jedna šablona Visual Studio, každá šablona je do samostatné složky. Musí mít každý soubor v této složce **akce sestavení** nastavena na **ZipProject**.  
   
 ## <a name="adding-a-minimal-vsct-file"></a>Přidává se soubor minimálního .vsct  
  Visual Studio musí být spuštěn v režimu instalace rozpoznat nové nebo upravené šablony sady Visual Studio. Režim instalace vyžaduje souboru .vsct nacházet. Proto je nutné přidat minimální .vsct soubor do projektu.  

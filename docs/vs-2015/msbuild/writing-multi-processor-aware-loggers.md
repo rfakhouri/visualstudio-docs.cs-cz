@@ -13,12 +13,12 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ec8cefeaf005c17ecb09d109c161b5cbae3dc03a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 0d2eaf41ac66cd1bdf680145bef43b17cc29a505
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59655345"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425872"
 ---
 # <a name="writing-multi-processor-aware-loggers"></a>Zápis protokolovacích nástrojů pro více procesorů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,7 +81,7 @@ msbuild.exe myproj.proj/distributedlogger:XMLCentralLogger,MyLogger,Version=1.0.
 ```  
   
 > [!NOTE]
->  Hvězdička (*) musí oddělovat názvy dvou protokolovacích v `/dl` přepnout.  
+> Hvězdička (*) musí oddělovat názvy dvou protokolovacích v `/dl` přepnout.  
   
  Použití ConfigurableForwardingLogger se podobá použití jiných protokolovacího nástroje (jak je uvedeno v [získávání protokolů sestavení](../msbuild/obtaining-build-logs-with-msbuild.md)), s tím rozdílem, že připojíte protokolovač ConfigurableForwardingLogger místo typické [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] protokolovací nástroj a zadejte jako parametry události, které chcete ConfigurableForwardingLogger předat do centrálního uzlu.  
   

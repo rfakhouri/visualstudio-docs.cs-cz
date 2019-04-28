@@ -9,12 +9,12 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6b060f35abf79d76e17f847e6b4b296c253a4b30
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 437e541fab1559c65c410d94a8911c158aa3592e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54766108"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438925"
 ---
 # <a name="memory-usage"></a>Využití paměti
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,18 +34,18 @@ Vyhledání nevrácené paměti a neefektivní paměti během ladění s integro
   Můžete také použít nástroj paměti mimo ladicí program. Zobrazit [využití paměti bez ladění](http://msdn.microsoft.com/library/8883bc5f-df86-4f84-aa2b-a21150f499b0).  
   
 > [!NOTE]
->  **Podpora vlastního alokátoru** profiler nativní paměť funguje tak, že shromažďování přidělení [trasování událostí pro Windows](https://msdn.microsoft.com/library/windows/desktop/bb968803\(v=vs.85\).aspx) data událostí, protože ho vygeneroval za běhu.  Na úrovni zdroje byly anotované alokátorů CRT a sadu Windows SDK tak, aby jejich přidělení dat se dají zachytit.  Při psaní vlastních alokátorů, než všechny funkce, které vrací ukazatel na nově přidělenou haldy paměti může být doplněny pomocí [__declspec](http://msdn.microsoft.com/library/832db681-e8e1-41ca-b78c-cd9d265cdb87)(alokátoru), jak je znázorněno v následujícím příkladu myMalloc:  
+> **Podpora vlastního alokátoru** profiler nativní paměť funguje tak, že shromažďování přidělení [trasování událostí pro Windows](https://msdn.microsoft.com/library/windows/desktop/bb968803\(v=vs.85\).aspx) data událostí, protože ho vygeneroval za běhu.  Na úrovni zdroje byly anotované alokátorů CRT a sadu Windows SDK tak, aby jejich přidělení dat se dají zachytit.  Při psaní vlastních alokátorů, než všechny funkce, které vrací ukazatel na nově přidělenou haldy paměti může být doplněny pomocí [__declspec](http://msdn.microsoft.com/library/832db681-e8e1-41ca-b78c-cd9d265cdb87)(alokátoru), jak je znázorněno v následujícím příkladu myMalloc:  
 >   
->  `__declspec(allocator) void* myMalloc(size_t size)`  
+> `__declspec(allocator) void* myMalloc(size_t size)`  
   
 ## <a name="analyze-memory-use-with-the-debugger"></a>Analýza využití paměti v ladicím programu  
   
 > [!NOTE]
->  Protože shromažďování paměti, že data může ovlivnit výkon ladění ve smíšeném režimu nebo nativní aplikace, jsou ve výchozím nastavení zakázané snímky paměti. Pokud chcete povolit snímky smíšený režim nebo nativní aplikace, spustíte relaci ladění (Klávesová zkratka: **F5**). Když **diagnostické nástroje** okna se zobrazí, vyberte na kartě využití paměti a klikněte na tlačítko **povolit snímky**.  
+> Protože shromažďování paměti, že data může ovlivnit výkon ladění ve smíšeném režimu nebo nativní aplikace, jsou ve výchozím nastavení zakázané snímky paměti. Pokud chcete povolit snímky smíšený režim nebo nativní aplikace, spustíte relaci ladění (Klávesová zkratka: **F5**). Když **diagnostické nástroje** okna se zobrazí, vyberte na kartě využití paměti a klikněte na tlačítko **povolit snímky**.  
 >   
->  ![Povolit snímky](../profiling/media/dbgdiag-mem-mixedtoolbar-enablesnapshot.png "DBGDIAG_MEM_MixedToolbar_EnableSnapshot")  
+> ![Povolit snímky](../profiling/media/dbgdiag-mem-mixedtoolbar-enablesnapshot.png "DBGDIAG_MEM_MixedToolbar_EnableSnapshot")  
 >   
->  Zastavit (Klávesová zkratka: **SHIFT + F5**) a znovu spusťte ladění.  
+> Zastavit (Klávesová zkratka: **SHIFT + F5**) a znovu spusťte ladění.  
   
  Pokaždé, když chcete zaznamenat stav paměti, vyberte **pořídit snímek** na **využití paměti** souhrnný panel nástrojů.  
   
@@ -53,7 +53,7 @@ Vyhledání nevrácené paměti a neefektivní paměti během ladění s integro
   
 > [!TIP]
 > - Pokud chcete vytvořit standardní hodnoty pro porovnání paměti, vezměte v úvahu pořízení snímku na začátku vaší relace ladění.  
->   -   Vzhledem k tomu může být náročné k zaznamenání profilu paměti operace, která vás zajímá, když aplikace často přiděluje a zrušení přidělení paměti, nastavit zarážky na začátku a konci operace nebo krokovat operaci najít konkrétní bod, který paměť změněna.  
+>   - Vzhledem k tomu může být náročné k zaznamenání profilu paměti operace, která vás zajímá, když aplikace často přiděluje a zrušení přidělení paměti, nastavit zarážky na začátku a konci operace nebo krokovat operaci najít konkrétní bod, který paměť změněna.  
   
 ## <a name="viewing-memory-snapshot-details"></a>Zobrazení podrobností snímek paměti  
  Řádky tabulku souhrnu využití paměti obsahuje seznam snímků, které jste provedli během relace ladění.  
@@ -104,13 +104,13 @@ Vyhledání nevrácené paměti a neefektivní paměti během ladění s integro
   
  **Zobrazení typů** zobrazuje počet a velikost typů ve snímku.  
   
--   Zvolte ikonu instance (![ikonu instance ve sloupci Typ objektu](../misc/media/dbg-mma-instancesicon.png "DBG_MMA_InstancesIcon")) z vybraného typu k zobrazení informací o objektech vybraného typu ve snímku.  
+- Zvolte ikonu instance (![ikonu instance ve sloupci Typ objektu](../misc/media/dbg-mma-instancesicon.png "DBG_MMA_InstancesIcon")) z vybraného typu k zobrazení informací o objektech vybraného typu ve snímku.  
   
      **Instance** zobrazení zobrazí každou instanci daného typu. Výběr instance zobrazí, které vedlo k vytvoření instance v zásobníku volání **zásobník volání přidělení** podokně.  
   
      ![Zobrazení instancí](../profiling/media/dbgdiag-mem-native-instances.png "DBGDIAG_MEM_Native_Instances")  
   
--   Zvolte **zobrazení zásobníků** v **režim zobrazení** seznamu zobrazíte zásobník přidělení pro vybraný typ.  
+- Zvolte **zobrazení zásobníků** v **režim zobrazení** seznamu zobrazíte zásobník přidělení pro vybraný typ.  
   
      ![Stacks View](../profiling/media/dbgdiag-mem-native-stacksview.png "DBGDIAG_MEM_Native_StacksView")  
   

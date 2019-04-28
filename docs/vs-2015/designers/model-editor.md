@@ -12,12 +12,12 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 370f6992fb044f5bd7f3593e63afeab46c82830b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 81f2766e5c382f8beaa4cb20472da6e0e6fc94e2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60072289"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432627"
 ---
 # <a name="model-editor"></a>Editor modelů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -157,7 +157,7 @@ Tento dokument popisuje, jak pracovat [!INCLUDE[vsprvs](../includes/vsprvs-md.md
 2. V **vlastnosti** okno, zadejte hodnoty **otočení**, **škálování**, a **překlad** vlastnosti.  
   
    > [!IMPORTANT]
-   >  Pro **otočení** vlastnost, zadejte úhel otočení kolem každé ze tří OS. Otáčení probíhá postupně. Ujistěte se tedy, že je otáčení správně naplánováno nejprve podle osy x, poté y a poté z.  
+   > Pro **otočení** vlastnost, zadejte úhel otočení kolem každé ze tří OS. Otáčení probíhá postupně. Ujistěte se tedy, že je otáčení správně naplánováno nejprve podle osy x, poté y a poté z.  
   
    Použitím nástrojů modelování můžete vytvářet transformace rychle, ale nikoli přesně. Nastavením vlastností objektu můžete určit transformace přesně, ale nikoli rychle. Doporučujeme použít nástroje modelování tak, abyste se dostali „dostatečně blízko“ k požadovaným transformacím, a poté doladit hodnoty vlastností.  
   

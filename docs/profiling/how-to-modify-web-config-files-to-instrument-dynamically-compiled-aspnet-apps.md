@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 7237cd9991dcd2140ed13bb082a5efc43d85dc47
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 257d6142fd53914a15e8503121cab1215182ec04
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105146"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422925"
 ---
 # <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>Postupy: Úprava souborů web.config za účelem instrumentace a profilování dynamicky kompilovaných webových aplikací ASP.NET
 Můžete použít [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] nástrojů pro profilaci sady metody instrumentace ke shromažďování podrobných dat časování, data o přidělování paměti .NET a životnosti objektů .NET z dynamicky zkompilován [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] webové aplikace.
@@ -21,7 +21,7 @@ Můžete použít [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] nás
  Toto téma popisuje postup úpravy *web.config* konfigurační soubor instrumentace a profilování [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] webové aplikace.
 
 > [!NOTE]
->  Není nutné upravovat *web.config* souborů při použití metoda profilování vzorkování nebo instrumentaci předkompilované [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] modulu.
+> Není nutné upravovat *web.config* souborů při použití metoda profilování vzorkování nebo instrumentaci předkompilované [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] modulu.
 
  Kořenovém adresáři *web.config* soubor je **konfigurace** elementu. Účelem instrumentace a profilování dynamicky kompilovaných [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] webovou aplikaci, musíte přidat nebo upravit následující prvky:
 

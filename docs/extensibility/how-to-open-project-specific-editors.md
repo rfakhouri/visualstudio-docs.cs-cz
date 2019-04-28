@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 11374ca0a65a5b430b819a9ef1bdf57f7434e923
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8482f2704fe81482d95c2c8e73ae6e8c8ffd272d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60053751"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417146"
 ---
 # <a name="how-to-open-project-specific-editors"></a>Postupy: Otevřít editoru pro konkrétní projekt
 Pokud je soubor položky jsou otevírány projekt vnitřně vázán na konkrétní editor pro tento projekt, musí projekt otevřete soubor pomocí editoru specifické pro projekt. Soubor není možné delegovat na rozhraní IDE mechanismus zvolení editoru. Například namísto použití editoru standardního rastrových obrázků, můžete použít tuto možnost editoru pro konkrétní projekt k určení editoru konkrétní rastrový obrázek, který rozpoznává informace v souboru, který je jedinečný pro váš projekt.
@@ -29,7 +29,7 @@ Pokud je soubor položky jsou otevírány projekt vnitřně vázán na konkrétn
 1. Volání <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.FindAndLockDocument%2A> – metoda (`RDT_EditLock`) k určení, zda soubor (datový objekt dokumentu) je již otevřen.
 
     > [!NOTE]
-    >  Další informace o data dokumentu a objekty zobrazení dokumentu najdete v tématu [dokumentu zobrazení dat a dokumentu ve vlastních editorech](../extensibility/document-data-and-document-view-in-custom-editors.md).
+    > Další informace o data dokumentu a objekty zobrazení dokumentu najdete v tématu [dokumentu zobrazení dat a dokumentu ve vlastních editorech](../extensibility/document-data-and-document-view-in-custom-editors.md).
 
 2. Pokud soubor již je otevřen, resurface soubor voláním <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.IsDocumentOpen%2A> metoda a zadáte třeba hodnotu IDO_ActivateIfOpen pro `grfIDO` parametru.
 

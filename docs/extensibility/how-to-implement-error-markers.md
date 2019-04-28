@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d96fffad2159d8a8f7a8ab785ad9d5d8f35186f8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 67ef0d68df50d89f0ec22631a731ea9eb50dad46
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60078214"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415494"
 ---
 # <a name="how-to-implement-error-markers"></a>Postupy: Implementace označování chyb
 Označování chyb (nebo červené podtržení vlnovkou) jsou nejobtížnější přizpůsobení editoru textu k implementaci. Však výhody, které nabízejí uživatelům vaší VSPackage můžete mnohem převažují nad náklady a umožnit jim. Označování chyb myš označit text, který předpokládá, že nesprávné s podtržení nebo podtrženo červenou čáru vaše analyzátoru jazyka. Tento ukazatel pomáhá programátoři vizuálně zobrazením nesprávný kód.
@@ -45,7 +45,7 @@ Označování chyb (nebo červené podtržení vlnovkou) jsou nejobtížnější
 1. V zobrazení se filtruje je filtr získá ukazatel na úkol zprostředkovatele spojeného s data tohoto zobrazení.
 
     > [!NOTE]
-    >  Stejný filtr příkaz můžete použít pro metodu tipy, dokončování příkazů, označování chyb a tak dále.
+    > Stejný filtr příkaz můžete použít pro metodu tipy, dokončování příkazů, označování chyb a tak dále.
 
 2. Když filtr dostane událost označující, že přesunete na jiný řádek, vytvoří se úkol ke kontrole chyb.
 

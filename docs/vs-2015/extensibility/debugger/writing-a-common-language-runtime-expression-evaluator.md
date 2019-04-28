@@ -12,18 +12,18 @@ ms.assetid: bd79d57f-8e0a-4e14-a417-0b1de28fa1b2
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 2db9290f35c2b12469ecf96633967c2979b370e5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 961a4d646a61fedda381f9451902b3bcdcc956d6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54765483"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435281"
 ---
 # <a name="writing-a-common-language-runtime-expression-evaluator"></a>Zápis vyhodnocovače výrazů modulu CLR
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 > [!IMPORTANT]
->  V sadě Visual Studio 2015 je zastaralý tímto způsobem implementace vyhodnocovače výrazů. Informace o implementace vyhodnocovače výrazů modulu CLR najdete v tématu [vyhodnocovače výrazů modulu CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) a [spravované ukázka Chyba při vyhodnocování výrazu](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+> V sadě Visual Studio 2015 je zastaralý tímto způsobem implementace vyhodnocovače výrazů. Informace o implementace vyhodnocovače výrazů modulu CLR najdete v tématu [vyhodnocovače výrazů modulu CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) a [spravované ukázka Chyba při vyhodnocování výrazu](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
  Chyba při vyhodnocování výrazu (EE) je součástí ladicího stroje (DE), která zpracovává syntaxi a sémantiku programovací jazyk, který vytvořil laděného kódu. Výrazy musí být vyhodnocena v rámci kontextu programovací jazyk. Například v některých jazycích znamená výraz "A + B" "sum A a B." V jiných jazycích stejný výraz může znamenat "A nebo b" Díky tomu se samostatnou EE musí být napsané pro každý programovací jazyk, který generuje kód objektu k ladění v rozhraní IDE sady Visual Studio.  
   

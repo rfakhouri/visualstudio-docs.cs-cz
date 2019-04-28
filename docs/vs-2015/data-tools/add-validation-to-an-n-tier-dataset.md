@@ -18,12 +18,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 45f650283c850a9dce3ae71c7eefbff2ef378535
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 773af4469f8d72acb6768e62cd2091c396d36b45
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60080706"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439543"
 ---
 # <a name="add-validation-to-an-n-tier-dataset"></a>Přidávání ověřování do vícevrstvé datové sady
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,10 +33,10 @@ Přidání ověřování do datové sady, která je rozdělena na n vrstvého ř
 Návrhář DataSet poskytuje funkce pro vytvořit dílčí třídy, na které můžete přidat uživatelský kód pro sloupec – a řádku - Změna události tabulek dat v datové sadě. Další informace o přidání kódu k datové sadě v Nvrstvých řešeních viz [přidání kódu do datových sad v n vrstvé aplikace](../data-tools/add-code-to-datasets-in-n-tier-applications.md), a [přidejte kód do prvků TableAdapters ve víceúrovňových aplikacích](../data-tools/add-code-to-tableadapters-in-n-tier-applications.md). Další informace o dílčích třídách naleznete v tématu [jak: Rozdělení třídy na částečné třídy (návrhář tříd)](../ide/how-to-split-a-class-into-partial-classes-class-designer.md) nebo [částečné třídy a metody](http://msdn.microsoft.com/library/804cecb7-62db-4f97-a99f-60975bd59fa1).  
   
 > [!NOTE]
->  Když oddělíte datové sady od adaptérů tabulky (nastavením **projektu DataSet** vlastnost), existující částečné třídy v projektu nebudou automaticky přesunuty. Existující částečné třídy datové sady je nutné ručně přesunout do projektu datové sady.  
+> Když oddělíte datové sady od adaptérů tabulky (nastavením **projektu DataSet** vlastnost), existující částečné třídy v projektu nebudou automaticky přesunuty. Existující částečné třídy datové sady je nutné ručně přesunout do projektu datové sady.  
   
 > [!NOTE]
->  Návrhář Dataset nevytváří automaticky obslužné rutiny událostí v jazyce C# pro <xref:System.Data.DataTable.ColumnChanging> a <xref:System.Data.DataTable.RowChanging> události. Budete muset ručně vytvořit obslužnou rutinu události a připojí obslužnou rutinu události do základní události. Následující postupy popisují postup vytvoření obslužné rutiny události požadované v jazyce Visual Basic i C#.  
+> Návrhář Dataset nevytváří automaticky obslužné rutiny událostí v jazyce C# pro <xref:System.Data.DataTable.ColumnChanging> a <xref:System.Data.DataTable.RowChanging> události. Budete muset ručně vytvořit obslužnou rutinu události a připojí obslužnou rutinu události do základní události. Následující postupy popisují postup vytvoření obslužné rutiny události požadované v jazyce Visual Basic i C#.  
   
 ## <a name="validatechanges-to-individual-columns"></a>Validatechanges jednotlivých sloupcích  
  Ověřte hodnoty v jednotlivých sloupcích pomocí manipulace <xref:System.Data.DataTable.ColumnChanging> událostí. <xref:System.Data.DataTable.ColumnChanging> Událost se vyvolá, když se změní hodnota ve sloupci. Vytvořte obslužnou rutinu události pro <xref:System.Data.DataTable.ColumnChanging> události poklepáním na požadovaný sloupec v datové sadě.  
@@ -52,7 +52,7 @@ End Sub
 ```  
   
 > [!NOTE]
->  V projektech C# vytvoří Návrhář datových sad pouze částečné třídy pro datovou sadu a jednotlivé tabulky v datové sadě. Návrhář Dataset nevytváří automaticky obslužné rutiny událostí pro <xref:System.Data.DataTable.ColumnChanging> a <xref:System.Data.DataTable.RowChanging> události v jazyce C# jako je tomu v jazyce Visual Basic. V projektech C# budete muset ručně vytvořit metodu ke zpracování události a metody do základní události připojení. Následující postup obsahuje kroky k vytvoření obslužné rutiny události požadované v jazyce Visual Basic i C#.  
+> V projektech C# vytvoří Návrhář datových sad pouze částečné třídy pro datovou sadu a jednotlivé tabulky v datové sadě. Návrhář Dataset nevytváří automaticky obslužné rutiny událostí pro <xref:System.Data.DataTable.ColumnChanging> a <xref:System.Data.DataTable.RowChanging> události v jazyce C# jako je tomu v jazyce Visual Basic. V projektech C# budete muset ručně vytvořit metodu ke zpracování události a metody do základní události připojení. Následující postup obsahuje kroky k vytvoření obslužné rutiny události požadované v jazyce Visual Basic i C#.  
   
  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   
@@ -63,7 +63,7 @@ End Sub
 2. Poklepejte na sloupec, který chcete ověřit. Tato akce vytvoří <xref:System.Data.DataTable.ColumnChanging> obslužné rutiny události.  
   
     > [!NOTE]
-    >  Návrhář Dataset nevytváří automaticky obslužnou rutinu události pro událost C#. Kód, který je potřeba ke zpracování událostí v jazyce C# je zahrnuta v další části. `SampleColumnChangingEvent` je vytvořen a pak připojeno <xref:System.Data.DataTable.ColumnChanging> událost v <xref:System.Data.DataTable.EndInit%2A> metody.  
+    > Návrhář Dataset nevytváří automaticky obslužnou rutinu události pro událost C#. Kód, který je potřeba ke zpracování událostí v jazyce C# je zahrnuta v další části. `SampleColumnChangingEvent` je vytvořen a pak připojeno <xref:System.Data.DataTable.ColumnChanging> událost v <xref:System.Data.DataTable.EndInit%2A> metody.  
   
 3. Přidejte kód pro ověření, že `e.ProposedValue` obsahuje data, která splňují požadavky aplikace. Pokud navrhovaná hodnota není přijatelná, nastavte sloupec, aby označoval, že obsahuje chybu.  
   
@@ -124,7 +124,7 @@ End Sub
      Je vytvořena dílčí třída s `RowChanging` obslužná rutina události a otevře v editoru kódu.  
   
     > [!NOTE]
-    >  Návrhář Dataset nevytváří automaticky obslužnou rutinu události pro <xref:System.Data.DataTable.RowChanging> události v projektech C#. Je nutné vytvořit metodu ke zpracování <xref:System.Data.DataTable.RowChanging> události a spouštění kódu k připojení události do metody inicializace tabulky.  
+    > Návrhář Dataset nevytváří automaticky obslužnou rutinu události pro <xref:System.Data.DataTable.RowChanging> události v projektech C#. Je nutné vytvořit metodu ke zpracování <xref:System.Data.DataTable.RowChanging> události a spouštění kódu k připojení události do metody inicializace tabulky.  
   
 3. Přidejte uživatelský kód do částečné deklarace třídy.  
   

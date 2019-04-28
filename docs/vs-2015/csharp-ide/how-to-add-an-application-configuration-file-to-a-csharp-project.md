@@ -13,12 +13,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0c85690b34f0db705fe2a17e2f98d5b4f11433b3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b26a152567da3b6285653ba8e14a72bce664ce0d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60044973"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434517"
 ---
 # <a name="how-to-add-an-application-configuration-file-to-a-c-project"></a>Postupy: Přidejte do konfiguračního souboru aplikace C# projektu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "60044973"
 Přidejte konfigurační soubor aplikace (soubor app.config) do projektu C#, můžete přizpůsobit, jak modul common language runtime vyhledá a načte soubory sestavení. Další informace o konfiguračních souborech aplikace najdete v tématu [jak modul Runtime vyhledává sestavení](http://msdn.microsoft.com/library/772ac6f4-64d2-4cfb-92fd-58096dcd6c34).  
   
 > [!NOTE]
->  Windows Store nepodporuje <xref:System.Configuration>. Aplikace pro Store v důsledku toho neobsahují šablonu souboru app.config.  
+> Windows Store nepodporuje <xref:System.Configuration>. Aplikace pro Store v důsledku toho neobsahují šablonu souboru app.config.  
   
  Při sestavování projektu vývojové prostředí automaticky zkopíruje do souboru app.config, se změní název souboru kopie tak, aby odpovídaly spustitelný soubor a kopie je následně přesunuto do adresáře bin.  
   

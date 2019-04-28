@@ -11,18 +11,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ce0f09c1749621838729e1e4f64feb3ca8b07628
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 92d6605f85aff7cd99abd4046999f484332a2faa
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117561"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431331"
 ---
 # <a name="load-vspackages"></a>Načtení rozšíření VSPackages
 Rozšíření VSPackages se načtou do sady Visual Studio pouze v případě jejich funkce je povinný. Například VSPackage se načte, když Visual Studio používá objekt pro vytváření projektu nebo služba, která implementuje sady VSPackage. Tato funkce je volána opožděné načtení, který se používá vždy, když je možné zvýšit výkon.
 
 > [!NOTE]
->  Visual Studio můžete určit určité VSPackage informace, jako jsou příkazy, které nabízí VSPackage bez načtení sady VSPackage.
+> Visual Studio můžete určit určité VSPackage informace, jako jsou příkazy, které nabízí VSPackage bez načtení sady VSPackage.
 
  Rozšíření VSPackages lze nastavit na automaticky načíst v kontextu konkrétní uživatelské rozhraní (UI), například při otevření řešení. <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> Atribut nastaví tento kontext.
 

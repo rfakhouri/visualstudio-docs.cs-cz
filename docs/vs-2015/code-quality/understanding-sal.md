@@ -9,12 +9,12 @@ caps.latest.revision: 20
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: e4c9884517120647e8d0d5bff263496900c2318c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0a898096c282a22201d60995693144cc0e187812
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104015"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435387"
 ---
 # <a name="understanding-sal"></a>Porozumění SAL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -246,7 +246,7 @@ void OutOptCaller()
  `_Inout_` je používaná k anotaci ukazatel parametrem, který může změnit funkci. Ukazatel musí odkazovat na platný inicializovaná data před voláním, a i v případě, že se změní, musí mít platnou hodnotu stále při návratu. Poznámka Určuje, že funkce mohou volně číst a zapisovat do vyrovnávací paměti na jeden element. Volající musí poskytnout vyrovnávací paměti a inicializujte ji.  
   
 > [!NOTE]
->  Stejně jako `_Out_`, `_Inout_` musí vyrovnat upravitelné hodnoty.  
+> Stejně jako `_Out_`, `_Inout_` musí vyrovnat upravitelné hodnoty.  
   
 ```cpp  
   

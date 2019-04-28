@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7f7fbb6c8e6a6310b736ade599ad7854bc4255c0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ece6ecc2d7a1a49d77643e18beced76403c13cc5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60070737"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428782"
 ---
 # <a name="support-for-user-settings"></a>Podpora pro uživatelská nastavení
 VSPackage může definovat jeden nebo více kategorií nastavení, které jsou skupiny proměnných stavu, které se zachovávají po kliknutí **Importovat/exportovat nastavení** příkaz **nástroje** nabídky. Pokud chcete povolit tento trvalost, použijte nastavení rozhraní API v [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)].
@@ -34,7 +34,7 @@ VSPackage může definovat jeden nebo více kategorií nastavení, které jsou s
  Vlastní nastavení body se vytvoří v registru v následujícím umístění: HKLM\Software\Microsoft\VisualStudio\\*\<verze >* \UserSettings\\`<CSPName>`, kde `<CSPName>` je název vlastního nastavení bodu podporuje VSPackage a  *\<verze >* je verze [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], například 8.0.
 
 > [!NOTE]
->  Kořenová cesta HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<verze >* lze přepsat pomocí alternativního root, kdy [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] je integrované vývojové prostředí (IDE) inicializovat. Další informace najdete v tématu [přepínače příkazového řádku](../../extensibility/command-line-switches-visual-studio-sdk.md).
+> Kořenová cesta HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<verze >* lze přepsat pomocí alternativního root, kdy [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] je integrované vývojové prostředí (IDE) inicializovat. Další informace najdete v tématu [přepínače příkazového řádku](../../extensibility/command-line-switches-visual-studio-sdk.md).
 
  Struktura položky registru je znázorněno níže:
 

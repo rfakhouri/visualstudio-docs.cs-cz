@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2126d59d223e4923609071fa130b1cac465073ad
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 4e07bdd71300ed485862a4a95f1f9cbc06b32772
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616947"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63402652"
 ---
 # <a name="idiaaddressmapputimagealign"></a>IDiaAddressMap::put_imageAlign
 Nastaví zarovnání obrázku.
@@ -44,7 +44,7 @@ HRESULT put_imageAlign ( 
  Aktuální zarovnání obrázku se dá načíst pomocí volání [idiaaddressmap::get_imagealign –](../../debugger/debug-interface-access/idiaaddressmap-get-imagealign.md) metody.
 
 > [!NOTE]
->  Na obrázku je již načten v době, kdy tuto metodu lze volat. `put_imageAlign` Metoda se typicky používá při image byla přesunuta nebo změnit, a nové zarovnání je povinný.
+> Na obrázku je již načten v době, kdy tuto metodu lze volat. `put_imageAlign` Metoda se typicky používá při image byla přesunuta nebo změnit, a nové zarovnání je povinný.
 
 ## <a name="see-also"></a>Viz také
 - [IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md)

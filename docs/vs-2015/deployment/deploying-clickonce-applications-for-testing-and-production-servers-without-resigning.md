@@ -20,12 +20,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c853e24da3f203d67874d7b9740d3239abd78c14
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5c7cc8a9d1767a289112b18dbfe7c81b9a010bae
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60066595"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422782"
 ---
 # <a name="deploying-clickonce-applications-for-testing-and-production-servers-without-resigning"></a>Nasazování aplikací ClickOnce pro testovací a produkční servery bez opětovného podepsání
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "60066595"
 Toto téma popisuje nové funkce zavedena v rozhraní .NET Framework verze 3.5, která umožňuje nasazení aplikací ClickOnce z více umístění v síti bez opětovné podepsání nebo změna ClickOnce, manifesty ClickOnce.  
   
 > [!NOTE]
->  Opětovné podepisování je stále upřednostňovanou metodou pro nasazení nové verze aplikací. Kdykoli je to možné, použijte metodu opětovného podepisování. Další informace najdete v tématu [Mage.exe (Manifest Generation and Editing Tool)](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1).  
+> Opětovné podepisování je stále upřednostňovanou metodou pro nasazení nové verze aplikací. Kdykoli je to možné, použijte metodu opětovného podepisování. Další informace najdete v tématu [Mage.exe (Manifest Generation and Editing Tool)](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1).  
   
  Vývojáři třetích stran a nezávislé výrobce softwaru můžete vyjádřit výslovný souhlas s touto funkcí snadnější svým zákazníkům aktualizovat svoje aplikace. Tuto funkci můžete použít v následujících situacích:  
   

@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b1219543c438c79ad1add068262d9556dd2d7ce8
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: b2f2a7c134142668613cc38cee9357e42cb95096
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58159332"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433932"
 ---
 # <a name="idebugdocumenthelperadddeferredtext"></a>IDebugDocumentHelper::AddDeferredText
 Pomocná rutina upozorní, že daný text je k dispozici, ale neposkytuje znaky.  
@@ -57,7 +57,7 @@ HRESULT AddDeferredText(
  Předpokládá se, že jediné volání `IDebugDocumentText::GetText` můžete získat znaky z více volání `AddDeferredText`. Pomocné třídy mohou také požádat o stejný rozsah znaků odložené více než jednou.  
   
 > [!NOTE]
->  Volání `AddDeferredText` by neměl být směšovat s voláními `AddUnicodeText` nebo `AddDBCSText`. Pokud k tomu dojde, `E_FAIL` je vrácena.  
+> Volání `AddDeferredText` by neměl být směšovat s voláními `AddUnicodeText` nebo `AddDBCSText`. Pokud k tomu dojde, `E_FAIL` je vrácena.  
   
 ## <a name="see-also"></a>Viz také  
  [IDebugDocumentHelper Interface](../../winscript/reference/idebugdocumenthelper-interface.md)   

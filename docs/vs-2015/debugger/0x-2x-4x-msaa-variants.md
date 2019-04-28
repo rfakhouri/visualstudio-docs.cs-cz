@@ -9,12 +9,12 @@ caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4b188be0a8ff3c8bac6dc8fd2b5474756a1565f3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f6cc62e4ba56cb7be461bbf3cee5435cb404b7fe
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60090018"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439976"
 ---
 # <a name="0x2x4x-msaa-variants"></a>0 x / 2 x / 4 x MSAA variant
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Přepsání více ukázka vyhlazování (MSAA) nastavení ve všech cíle vykres
  Pokud vaše aplikace ještě nemá MSAA povolena, 2 x MSAA a 4 variant x MSAA udávající náklady relativní výkon povolení v aplikaci. Po přijatelně nízké náklady na zvažte povolení MSAA vylepšit kvalitu vaší aplikace.  
   
 > [!NOTE]
->  Hardware nemusí podporovat plně MSAA pro všechny formáty. Pokud některá z těchto variant dojde k omezení hardwaru, který nemůže být pracoval kolem, jeho sloupec v tabulce souhrnu výkonu je prázdný a je vytvořen chybovou zprávu.  
+> Hardware nemusí podporovat plně MSAA pro všechny formáty. Pokud některá z těchto variant dojde k omezení hardwaru, který nemůže být pracoval kolem, jeho sloupec v tabulce souhrnu výkonu je prázdný a je vytvořen chybovou zprávu.  
   
 ## <a name="remarks"></a>Poznámky  
  Ukázka počet a kvalita ukázky argumenty ve volání přepsat tyto varianty `ID3DDevice::CreateTexture2D` , vytvoření cíle vykreslování. Konkrétně se tyto parametry přepsat při:  

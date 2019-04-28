@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bf2fd868927a7e8380d5c079c2f8dc86d5385961
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 8f322d18afdb8e14ee87ae31d30dd6bdd57b07c5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628413"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431287"
 ---
 # <a name="design-a-business-data-connectivity-model"></a>Navrhování modelu připojení obchodních dat
   Vývoj modelu služby připojení dat obchodní (BDC) přidáním entit a metody do souboru modelu. Popisuje, entita kolekce datových polí. Entity mohou například představovat tabulky v databázi. Metoda provede úlohu například přidávání, odstraňování nebo aktualizace dat reprezentovaný entity. Další informace najdete v tématu [integraci obchodních dat do služby SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md).
@@ -96,7 +96,7 @@ ms.locfileid: "56628413"
  Můžete také nastavit oprávnění zabezpečení pro jednotlivé modely nebo typy externího obsahu. Další informace o tom, jak nastavit oprávnění zabezpečení modelu najdete v tématu [správy modelu služby BDC](http://go.microsoft.com/fwlink/?LinkID=178884). Další informace o tom, jak nastavit oprávnění zabezpečení externího typu obsahu najdete v tématu [externího typu obsahu správu](http://go.microsoft.com/fwlink/?LinkID=178885).
 
 > [!NOTE]
->  Pomocí těchto nastavení můžete ladit řešení na váš místní SharePoint Server. Další informace o tom, jak nakonfigurovat nastavení služby BDC týkající se zabezpečení na provozním serveru SharePoint, naleznete v tématu [Přehled zabezpečení služby Připojení obchodních dat](http://go.microsoft.com/fwlink/?LinkID=178886).
+> Pomocí těchto nastavení můžete ladit řešení na váš místní SharePoint Server. Další informace o tom, jak nakonfigurovat nastavení služby BDC týkající se zabezpečení na provozním serveru SharePoint, naleznete v tématu [Přehled zabezpečení služby Připojení obchodních dat](http://go.microsoft.com/fwlink/?LinkID=178886).
 
 ### <a name="retract-models-that-become-corrupt"></a>Odvolání modely, které poškozené
  Při prvním spuštění ladicího programu sady Visual Studio nasadí celý model do služby SharePoint. Pokaždé, když po tomto datu aktualizace nástroje Visual Studio modelu ve službě SharePoint obsahující všechny změny provedené mezi nasazeními.

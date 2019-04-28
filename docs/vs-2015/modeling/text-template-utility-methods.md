@@ -11,12 +11,12 @@ caps.latest.revision: 52
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 84f5b5de8b28062023d851e38e26930718d599e7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 0da69de4a91ebabce4af99e26195b349ef5daa60
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54790229"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411412"
 ---
 # <a name="text-template-utility-methods"></a>Pomocné metody textových šablon
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "54790229"
 Existuje několik metod, které jsou vám k dispozici vždy při psaní kódu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] textové šablony. Tyto metody jsou definovány v <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation>.  
   
 > [!TIP]
->  Můžete také použít jiné metody a služby poskytované hostitelské prostředí v běžné šablony textu (ne Předzpracované). Například můžete vyřešit cesty k souborům, protokolování chyb a získat služby poskytované [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] a načíst všechny balíčky.  Další informace najdete v tématu [přístup k sadě Visual Studio z textové šablony](http://msdn.microsoft.com/0556f20c-fef4-41a9-9597-53afab4ab9e4).  
+> Můžete také použít jiné metody a služby poskytované hostitelské prostředí v běžné šablony textu (ne Předzpracované). Například můžete vyřešit cesty k souborům, protokolování chyb a získat služby poskytované [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] a načíst všechny balíčky.  Další informace najdete v tématu [přístup k sadě Visual Studio z textové šablony](http://msdn.microsoft.com/0556f20c-fef4-41a9-9597-53afab4ab9e4).  
   
 ## <a name="write-methods"></a>Zápis metod  
  Můžete použít `Write()` a `WriteLine()` metody přidat text uvnitř bloku standardní kódu, namísto použití bloku kódu výrazu. Následující bloky kódu dva jsou funkčně ekvivalentní.  

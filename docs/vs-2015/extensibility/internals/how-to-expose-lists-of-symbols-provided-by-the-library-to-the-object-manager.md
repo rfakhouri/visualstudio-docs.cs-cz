@@ -14,12 +14,12 @@ ms.assetid: 19757068-bdaa-4e7e-85d6-f8ce5026a859
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: ca01f28b7f0ad7c1e4bad5ee13e6e21a5f2f7e2f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 888ffbf255816fb04d84cb72219df2cfeae73f45
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60106771"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431655"
 ---
 # <a name="how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager"></a>Postupy: Zveřejnění seznamů symbolů poskytovaných knihovnou správci objektů
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,9 +29,9 @@ Nástroje procházení symbolů **zobrazení tříd**, **prohlížeče objektů*
  Knihovny může zobrazit žádostí o data, když je vyvolán nástroj, rozbalení uzlu nebo zobrazení. Při prvním vyvolání nástroje procházení symbolů, požádá o objekt Správce knihovny k poskytování seznamu nejvyšší úrovně. Když je uživatel rozbalí seznam uzlů, knihovna poskytuje seznam podřízené položky v tomto uzlu. Každý objekt správce dotaz obsahuje index položky, které vás zajímají. Zobrazíte nový seznam musí správce objekt zjistit, kolik položek jsou v seznamu Typ položky, jejich názvy, usnadnění přístupu a jiné vlastnosti.  
   
 > [!NOTE]
->  Následující příklady spravovaného kódu ukazují, jak poskytnout seznamů symbolů prostřednictvím implementace <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> rozhraní. Objekt správce volá metody v tomto rozhraní a používá získaných dat k naplnění nebo aktualizovat nástroje procházení symbolů.  
+> Následující příklady spravovaného kódu ukazují, jak poskytnout seznamů symbolů prostřednictvím implementace <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> rozhraní. Objekt správce volá metody v tomto rozhraní a používá získaných dat k naplnění nebo aktualizovat nástroje procházení symbolů.  
 >   
->  Pro nativní kód používaná implementace poskytovatele symbolů, použijte <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectList2> rozhraní.  
+> Pro nativní kód používaná implementace poskytovatele symbolů, použijte <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectList2> rozhraní.  
   
 ## <a name="providing-lists-of-symbols-to-the-object-manager"></a>Poskytuje seznam symboly správci objektů  
   

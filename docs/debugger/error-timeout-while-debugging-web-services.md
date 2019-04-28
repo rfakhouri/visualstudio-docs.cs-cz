@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9979f723a342aaefee80f9410c28aa68047b5e57
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56683542"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62850202"
 ---
 # <a name="error-timeout-while-debugging-web-services"></a>Chyba: Během ladění webových služeb vypršel časový limit
 Když provádíte krokování do webové služby XML z volající kód, volání může někdy vypršení časového limitu, což má za následek, že se nemůže pokračovat v ladění. Může zobrazit chybová zpráva takovou situaci.

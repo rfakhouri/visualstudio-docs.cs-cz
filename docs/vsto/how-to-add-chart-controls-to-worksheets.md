@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2e3d51f35be039c5eafe15956b2d403c11005b68
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fccd328c521789c8ebb4b32c49b2a03a46027eb5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056312"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427764"
 ---
 # <a name="how-to-add-chart-controls-to-worksheets"></a>Postupy: Přidání ovládacích prvků graf do listů
   Můžete přidat <xref:Microsoft.Office.Tools.Excel.Chart> ovládacích prvků na list aplikace Microsoft Office Excel v době návrhu a za běhu v přizpůsobeních na úrovni dokumentu. Můžete také přidat <xref:Microsoft.Office.Tools.Excel.Chart> ovládacích prvků za běhu v doplňcích VSTO.
@@ -39,7 +39,7 @@ ms.locfileid: "60056312"
  Můžete přidat <xref:Microsoft.Office.Tools.Excel.Chart> ovládacího prvku do listu stejným způsobem, přidejte grafu z v rámci aplikace.
 
 > [!NOTE]
->  <xref:Microsoft.Office.Tools.Excel.Chart> Ovládací prvek není k dispozici **nástrojů** nebo **zdroje dat** okna.
+> <xref:Microsoft.Office.Tools.Excel.Chart> Ovládací prvek není k dispozici **nástrojů** nebo **zdroje dat** okna.
 
 ### <a name="to-add-a-chart-host-control-to-a-worksheet-in-excel"></a>Přidání hostitelského ovládacího prvku grafu do listu aplikace Excel
 

@@ -13,12 +13,12 @@ caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c2634bfbd2e6870976965c81c314756cb3abb7de
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 580637cf1058c8bfbd10ac7812e59c802830d95e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54790879"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437344"
 ---
 # <a name="idiasymbolgetregisterid"></a>IDiaSymbol::get_registerId
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ HRESULT get_registerId ( 
  Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí `S_FALSE` nebo kód chyby.  
   
 > [!NOTE]
->  Vrácená hodnota `S_FALSE` znamená, že vlastnost není k dispozici pro symbol.  
+> Vrácená hodnota `S_FALSE` znamená, že vlastnost není k dispozici pro symbol.  
   
 ## <a name="remarks"></a>Poznámky  
  Pokud symbol je relativní vzhledem k registru, to znamená, pokud symbolu [locationtype – výčet](../../debugger/debug-interface-access/locationtype.md) je nastavena na `LocIsRegRel`, použijte `get_registerId` metoda za nímž následuje volání [idiasymbol::get_offset –](../../debugger/debug-interface-access/idiasymbol-get-offset.md) metodu k získání posun z registru, kde se nachází symbolu.  

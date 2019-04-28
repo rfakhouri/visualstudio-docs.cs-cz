@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d6a3807dc91b129ba4b337f57e3f857e4f379581
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: b443c4530a71897d11731c023af57215eac8706a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56696686"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434193"
 ---
 # <a name="using-text-markers-with-the-legacy-api"></a>Text značky pomocí starší verze rozhraní API
 Text značky je plovoucí rozsah textu ve vyrovnávací paměti, může mít vliv na zobrazení a chování oblast textu. Značky zahrnují zarážky, záložek, podtržení vlnovkou a oblastí jen pro čtení. Text značky jsou v podstatě totéž barevné zvýrazňování syntaxe. Barevné zvýrazňování syntaxe je rychlý způsob, jak komunikovat syntaxi jazyka, který je spojen s oblast textu. Barevné zvýrazňování syntaxe obecně vyžádá, když Windows překreslí obrazovky, když rychlost je důležité. Barevné zvýrazňování syntaxe změní barvu textu. Text značky můžete změnit mnoho dalších vlastností textu. Text značky můžete "float" a použít zvláštní chování a obarvení.
@@ -23,16 +23,16 @@ Text značky je plovoucí rozsah textu ve vyrovnávací paměti, může mít vli
  Kvůli výkonu režii spojenou s text značky nevytvářejte mnoho značek pro vaše vyrovnávací paměti textu. Každá značka se aktualizuje pokaždé, když se, že uživatel upraví obsah vyrovnávací paměti.
 
 > [!NOTE]
->  Uživatelé mohou změnit barvu typ viditelný značky, ale ne jeho tvar a styl. Další informace najdete v tématu [písma a barvy, prostředí, dialogové okno Možnosti](../ide/reference/fonts-and-colors-environment-options-dialog-box.md).
+> Uživatelé mohou změnit barvu typ viditelný značky, ale ne jeho tvar a styl. Další informace najdete v tématu [písma a barvy, prostředí, dialogové okno Možnosti](../ide/reference/fonts-and-colors-environment-options-dialog-box.md).
 
 ## <a name="related-topics"></a>Související témata
 
 | Název | Popis |
 | - | - |
-| [Postupy: Přidání standardní Text značky](../extensibility/how-to-add-standard-text-markers.md) | Popisuje postup přidání standardní text značky typ poskytovaný modulem [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] základní editor k zobrazení textu. |
-| [Postupy: Implementace označování chyb](../extensibility/how-to-implement-error-markers.md) | Popisuje, jak implementovat instance [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] značky, který se používá k označení chyby pomocí červené podtržení vlnovkou. |
-| [Postupy: Vytvoření vlastního textu značky](../extensibility/how-to-create-custom-text-markers.md) | Popisuje, jak vytvořit a přidat typ značky vlastní text k zobrazení textu. |
-| [Postupy: Použití značek Text](../extensibility/how-to-use-text-markers.md) | Vysvětluje, jak přidat text značky. |
+| [Postupy: Přidání standardních textových značek](../extensibility/how-to-add-standard-text-markers.md) | Popisuje postup přidání standardní text značky typ poskytovaný modulem [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] základní editor k zobrazení textu. |
+| [Postupy: Implementace chybových značek](../extensibility/how-to-implement-error-markers.md) | Popisuje, jak implementovat instance [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] značky, který se používá k označení chyby pomocí červené podtržení vlnovkou. |
+| [Postupy: Vytvoření vlastních textových značek](../extensibility/how-to-create-custom-text-markers.md) | Popisuje, jak vytvořit a přidat typ značky vlastní text k zobrazení textu. |
+| [Postupy: Použití textových značek](../extensibility/how-to-use-text-markers.md) | Vysvětluje, jak přidat text značky. |
 | [Práce v základní editoru](../extensibility/inside-the-core-editor.md) | Popisuje funkce základní editor a poskytuje podrobné informace o tom, jak přizpůsobit základní editor. |
 | [Funkce editoru](https://msdn.microsoft.com/library/bdac940d-1f14-4019-a01f-fd0bb3dc7198) | Popisuje funkce dostupné v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] základní editor. |
 

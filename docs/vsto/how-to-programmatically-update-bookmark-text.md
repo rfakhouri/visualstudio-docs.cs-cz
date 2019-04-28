@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 12a64f35e7d530b80e44f3098035093509766c60
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 436fefd425da46cea6a8cd1aba95fb9eb14362f7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60113024"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63418964"
 ---
 # <a name="how-to-programmatically-update-bookmark-text"></a>Postupy: Programově aktualizovat textu záložky
   Můžete vložit text do zástupný symbol záložky v dokumentu aplikace Microsoft Office Word tak, aby text můžete načíst později, nebo k nahrazení textu v záložce. Pokud vyvíjíte přizpůsobení úrovni dokumentu, můžete také aktualizovat text <xref:Microsoft.Office.Tools.Word.Bookmark> ovládací prvek, který je vázán na data. Další informace najdete v tématu [vytvoření vazby dat k ovládacím prvkům v řešeních pro systém Office](../vsto/binding-data-to-controls-in-office-solutions.md).
@@ -45,7 +45,7 @@ ms.locfileid: "60113024"
 1. Vytvořit proceduru, která přijímá `bookmark` argument pro název záložky a `newText` argument řetězec, který má přiřadit <xref:Microsoft.Office.Tools.Word.Bookmark.Text%2A> vlastnost.
 
     > [!NOTE]
-    >  Přiřazení text, který má <xref:Microsoft.Office.Tools.Word.Bookmark.Text%2A> nebo <xref:Microsoft.Office.Tools.Word.Bookmark.FormattedText%2A> vlastnost <xref:Microsoft.Office.Tools.Word.Bookmark> ovládací prvek nezpůsobí záložku, která se má odstranit.
+    > Přiřazení text, který má <xref:Microsoft.Office.Tools.Word.Bookmark.Text%2A> nebo <xref:Microsoft.Office.Tools.Word.Bookmark.FormattedText%2A> vlastnost <xref:Microsoft.Office.Tools.Word.Bookmark> ovládací prvek nezpůsobí záložku, která se má odstranit.
 
      [!code-vb[Trin_VstcoreWordAutomation#63](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#63)]
      [!code-csharp[Trin_VstcoreWordAutomation#63](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#63)]
@@ -62,7 +62,7 @@ ms.locfileid: "60113024"
 1. Vytvořit proceduru, která má `bookmark` argument název <xref:Microsoft.Office.Interop.Word.Bookmark>a `newText` argument řetězec, který má přiřadit <xref:Microsoft.Office.Interop.Word.Range.Text%2A> vlastnost záložky.
 
     > [!NOTE]
-    >  Přiřazení text do nativní aplikace Word <xref:Microsoft.Office.Interop.Word.Bookmark> objekt způsobí, že na záložku, která se má odstranit.
+    > Přiřazení text do nativní aplikace Word <xref:Microsoft.Office.Interop.Word.Bookmark> objekt způsobí, že na záložku, která se má odstranit.
 
      [!code-vb[Trin_VstcoreWordAutomation#65](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#65)]
      [!code-csharp[Trin_VstcoreWordAutomation#65](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#65)]

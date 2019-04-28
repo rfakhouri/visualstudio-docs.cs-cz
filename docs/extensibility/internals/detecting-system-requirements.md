@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4232a057c97d3d457a60d97fa000090c18428f66
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c65df25645a13f58dce9ddec69acf6834a77210f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050497"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420707"
 ---
 # <a name="detect-system-requirements"></a>Zjistit požadavky na systém
 VSPackage nemůže fungovat, pokud je nainstalována aplikace Visual Studio. Když spravovat instalaci vašeho balíčku VSPackage pomocí Instalační služby systému Windows, můžete nakonfigurovat instalační program a zjistit, zda je nainstalována aplikace Visual Studio. Můžete také nakonfigurovat tak, zkontrolujte systém, hledá další požadavky, například konkrétní verzi Windows nebo určité množství paměti RAM.
@@ -33,7 +33,7 @@ VSPackage nemůže fungovat, pokud je nainstalována aplikace Visual Studio. Kdy
 Při instalaci na novější verzi klíče registru pro tuto verzi jsou přidány stejně jako u starších edicích. To znamená, pokud je nainstalovaná edice Enterprise, **nainstalovat** klíč nastavený na *1* pro organizace, a také pro edice Professional a Community. Proto je potřeba zkontrolovat pouze pro nejnovější verzi, které potřebujete.
 
 > [!NOTE]
->  V 64bitové verzi systému editor registru, 32bitová verze klíče se zobrazí v části **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\\**. Klíče aplikace Visual Studio jsou v rámci **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\DevDiv\vs\Servicing\\**.
+> V 64bitové verzi systému editor registru, 32bitová verze klíče se zobrazí v části **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\\**. Klíče aplikace Visual Studio jsou v rámci **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\DevDiv\vs\Servicing\\**.
 
 |Produkt|Key|
 |-------------|---------|

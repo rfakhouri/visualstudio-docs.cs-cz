@@ -14,12 +14,12 @@ author: John-Hart
 ms.author: johnhart
 manager: jillfra
 ms.workload: office
-ms.openlocfilehash: d85e125ee09d459d23b3b709f58d5af43e76e984
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 165ef1256a0150e0942d85c4f876c8b3f5e15c72
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56611864"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422918"
 ---
 # <a name="replaceable-parameters"></a>Nahraditelné parametry
   Nahraditelné parametry, nebo *tokeny*, je možné zadat hodnoty pro položky řešení služby SharePoint, skutečné hodnoty nejsou známá v době návrhu v souborech projektu. Jsou to funkce podobná standardní [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] tokeny šablony. Další informace najdete v tématu [parametry šablony](../ide/template-parameters.md).
@@ -86,7 +86,7 @@ ms.locfileid: "56611864"
   Dodatečné přípony souborů můžou, ale přidat do seznamu. Přidat `<TokenReplacementFileExtensions>` element na jakékoli PropertyGroup v souboru projektu služby SharePoint, který je definován před \<Import > souboru cíle služby SharePoint.
 
 > [!NOTE]
->  Protože náhradních tokenů dochází po kompilaci projektu, neměli byste přidávat přípony souborů pro typy souborů, které jsou kompilovány jako *.cs*, *.vb* nebo *RESX*. Tokeny jsou nahrazena jenom v souborech, které nejsou zkompilovány.
+> Protože náhradních tokenů dochází po kompilaci projektu, neměli byste přidávat přípony souborů pro typy souborů, které jsou kompilovány jako *.cs*, *.vb* nebo *RESX*. Tokeny jsou nahrazena jenom v souborech, které nejsou zkompilovány.
 
  Například, chcete-li přidat přípony názvů souborů (*.myextension* a *.yourextension*) do seznamu přípon názvů souborů náhradních tokenů, přidejte následující příkaz pro projekt (*.csproj* ) souboru:
 

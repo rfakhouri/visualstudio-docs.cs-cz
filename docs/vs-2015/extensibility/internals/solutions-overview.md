@@ -10,12 +10,12 @@ ms.assetid: 3b21e3a1-170a-4485-941e-6b04b7b27886
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8daa7922b1f1ba7cb90cca9a77a6db14977c7518
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fb3bb85ab172404262c147cce285cebaf756afc9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60077612"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432080"
 ---
 # <a name="solutions-overview"></a>Přehled řešení
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "60077612"
  Žádné VSPackage lze zapisovat do obou typů souborů řešení. Vzhledem k povaze soubory existují dvě různá rozhraní implementována pro zápis do nich. <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps> Rozhraní textové informace zapisuje do souboru .sln a <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts> rozhraní zapíše do souboru .suo binární datové proudy.  
   
 > [!NOTE]
->  Projekt není nutné explicitně zápis záznamu pro samotné do souboru řešení. prostředí, která zpracovává pro projekt. Proto pokud chcete přidat další obsah konkrétně do souboru řešení, není potřeba registrovat vašeho balíčku VSPackage tímto způsobem.  
+> Projekt není nutné explicitně zápis záznamu pro samotné do souboru řešení. prostředí, která zpracovává pro projekt. Proto pokud chcete přidat další obsah konkrétně do souboru řešení, není potřeba registrovat vašeho balíčku VSPackage tímto způsobem.  
   
  Každý VSPackage podpora trvalosti řešení používá tři rozhraní <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence> rozhraní, které je implementované prostředí a volané sady VSPackage, a `IVsPersistSolutionProps` a `IVsPersistSolutionOpts`, které jsou obě implementované sady VSPackage. `IVsPersistSolutionOpts` Rozhraní pouze musí implementovat, pokud má být sady VSPackage zapsaného do souboru .suo soukromé informace.  
   
@@ -44,7 +44,7 @@ ms.locfileid: "60077612"
    Konkrétní informace týkající se použití těchto souborů můžete najít v [řešení (. SLN) soubor](../../extensibility/internals/solution-dot-sln-file.md) a [uživatelské možnosti řešení (. Soubor suo)](../../extensibility/internals/solution-user-options-dot-suo-file.md).  
   
 > [!NOTE]
->  Pokud chcete vytvořit novou konfiguraci řešení skládající se z konfigurace dva projekty a vyloučení třetí ze sestavení, budete muset použít uživatelské rozhraní vlastností stránky nebo služby automation. Správce konfigurace sestavení řešení a jejich vlastnosti nelze změnit přímo, ale můžete pracovat s použitím správci sestavení řešení `SolutionBuild` třídy z DTE v modelu automatizace. Další informace o konfiguraci řešení najdete v tématu [konfigurace řešení](../../extensibility/internals/solution-configuration.md).  
+> Pokud chcete vytvořit novou konfiguraci řešení skládající se z konfigurace dva projekty a vyloučení třetí ze sestavení, budete muset použít uživatelské rozhraní vlastností stránky nebo služby automation. Správce konfigurace sestavení řešení a jejich vlastnosti nelze změnit přímo, ale můžete pracovat s použitím správci sestavení řešení `SolutionBuild` třídy z DTE v modelu automatizace. Další informace o konfiguraci řešení najdete v tématu [konfigurace řešení](../../extensibility/internals/solution-configuration.md).  
   
 ## <a name="see-also"></a>Viz také  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage>   

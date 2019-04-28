@@ -11,12 +11,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 092c07e9aa5f2999bcf3a28977151878123f6bfc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5bba638a595a01f17e4b7e4f8269a69cb6e466a1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60043643"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430488"
 ---
 # <a name="add-stereotypes-to-uml-model-elements"></a>Přidávání stereotypů k elementům modelu UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,14 +44,14 @@ Stereotyp můžete přidat na prvek modelu UML poznámku a zadat speciální vla
 1. Klikněte pravým tlačítkem na model prvku nebo vztahu, v diagramu nebo v **Průzkumníku modelů UML**a potom klikněte na tlačítko **vlastnosti**.  
   
     > [!NOTE]
-    >  Pokud chcete přidat do několika prvků stejného Stereotypy, můžete vybrat několik prvků a klikněte pravým tlačítkem na jeden z nich.  
+    > Pokud chcete přidat do několika prvků stejného Stereotypy, můžete vybrat několik prvků a klikněte pravým tlačítkem na jeden z nich.  
   
 2. Klikněte na tlačítko **Stereotypy** vlastnosti a vyberte Stereotypy, které chcete použít.  
   
      Vybrané Stereotypy se zobrazí v rámci "odlišené dvojitou» v prvku modelu pro většinu typů prvků a vztahů.  
   
     > [!NOTE]
-    >  Pokud nevidíte **Stereotypy** vlastnost, nebo pokud chcete stereotyp nezobrazí, ověřte, zda prvek modelu je uvnitř balíčku nebo modelu, ke kterému je propojená příslušný profil.  
+    > Pokud nevidíte **Stereotypy** vlastnost, nebo pokud chcete stereotyp nezobrazí, ověřte, zda prvek modelu je uvnitř balíčku nebo modelu, ke kterému je propojená příslušný profil.  
   
 3. Některé Stereotypy umožní nastavit hodnoty dalších vlastností pro ovládací prvek modelu. Chcete-li zobrazit tyto vlastnosti, rozbalte **Stereotypy** vlastnost.  
   

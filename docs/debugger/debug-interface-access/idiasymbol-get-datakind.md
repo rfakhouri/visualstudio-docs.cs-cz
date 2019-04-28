@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 98ab9edd260a190e1eb73b16a2ac71ed271ccdf7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: cf4a0324046383557c9c32afae2e6f05a41124ba
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56632300"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63401987"
 ---
 # <a name="idiasymbolgetdatakind"></a>IDiaSymbol::get_dataKind
 Načte proměnné klasifikace dat symbolu.
@@ -39,7 +39,7 @@ HRESULT get_dataKind ( 
  Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí `S_FALSE` nebo kód chyby.
 
 > [!NOTE]
->  Vrácená hodnota `S_FALSE` znamená, že vlastnost není k dispozici pro symbol.
+> Vrácená hodnota `S_FALSE` znamená, že vlastnost není k dispozici pro symbol.
 
 ## <a name="requirements"></a>Požadavky
 

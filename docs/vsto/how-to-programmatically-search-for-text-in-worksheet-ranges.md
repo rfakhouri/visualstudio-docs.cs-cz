@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 800dcfaa7ae171d1bf3812bef3a8bedda3f2bd21
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 3e0befc61b39030bd7144cef10b54e70dc71e33a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616973"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419549"
 ---
 # <a name="how-to-programmatically-search-for-text-in-worksheet-ranges"></a>Postupy: Programově hledání textu v oblastech listů
   <xref:Microsoft.Office.Interop.Excel.Range.Find%2A> Metodu <xref:Microsoft.Office.Interop.Excel.Range> objektu umožňuje hledat text v rámci rozsahu. Tento text může být také všechny chybové řetězce, které se mohou objevit v buňkách listů jako `#NULL!` nebo `#VALUE!`. Další informace o chybové řetězce, naleznete v tématu [buňky chybové hodnoty](/office/vba/excel/Concepts/Cells-and-Ranges/cell-error-values).
@@ -29,7 +29,7 @@ ms.locfileid: "56616973"
  Následující příklad hledá oblast s názvem `Fruits` a upraví písma buněk, které obsahují slovo "apples". Tento postup také používá <xref:Microsoft.Office.Interop.Excel.Range.FindNext%2A> metodu, která používá dříve hledání nastavení a opakujte hledání. Zadejte buňku, po které chcete hledat a <xref:Microsoft.Office.Interop.Excel.Range.FindNext%2A> ostatní se postará metody.
 
 > [!NOTE]
->  <xref:Microsoft.Office.Interop.Excel.Range.FindNext%2A> Vyhledávací metody zabalí zpět na začátek rozsahu vyhledávání, poté co dosáhne konce rozsahu. Váš kód musíte zajistit, že hledání není obtékat kolem v nekonečné smyčce. Ukázkový postup ukazuje jeden způsob, jak se o to postarají pomocí <xref:Microsoft.Office.Interop.Excel.Range.Address%2A> vlastnost.
+> <xref:Microsoft.Office.Interop.Excel.Range.FindNext%2A> Vyhledávací metody zabalí zpět na začátek rozsahu vyhledávání, poté co dosáhne konce rozsahu. Váš kód musíte zajistit, že hledání není obtékat kolem v nekonečné smyčce. Ukázkový postup ukazuje jeden způsob, jak se o to postarají pomocí <xref:Microsoft.Office.Interop.Excel.Range.Address%2A> vlastnost.
 
  ![odkaz na video](../vsto/media/playvideo.gif "odkaz na video") související video ukázku naleznete v tématu [postup: Použít metodu Find v doplňku aplikace Excel? ](http://go.microsoft.com/fwlink/?LinkID=130294).
 

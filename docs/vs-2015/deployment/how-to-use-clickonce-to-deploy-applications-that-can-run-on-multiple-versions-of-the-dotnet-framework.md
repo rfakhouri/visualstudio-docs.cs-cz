@@ -17,12 +17,12 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 95bd19ffaf966b74e66f08c4a49c5c60658002f5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 10243821a665d473983dfb729b53186e8ed38244
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60095474"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432926"
 ---
 # <a name="how-to-use-clickonce-to-deploy-applications-that-can-run-on-multiple-versions-of-the-net-framework"></a>Postupy: Použití ClickOnce k nasazení aplikací, které můžou běžet na více verzích rozhraní .NET Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "60095474"
 Můžete nasadit aplikaci, která se zaměřuje na více verzí rozhraní .NET Framework pomocí nasazení technologie ClickOnce. To vyžaduje generovat a aktualizujte manifesty aplikace a nasazení.  
   
 > [!NOTE]
->  Před změnou aplikace pro cílení na více verzí rozhraní .NET Framework, měli byste zajistit, že vaše aplikace spuštěná ve více verzích rozhraní .NET Framework. Modul common language runtime verze se liší mezi [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)] oproti .NET Framework 2.0, .NET Framework 3.0 a rozhraní .NET Framework 3.5.  
+> Před změnou aplikace pro cílení na více verzí rozhraní .NET Framework, měli byste zajistit, že vaše aplikace spuštěná ve více verzích rozhraní .NET Framework. Modul common language runtime verze se liší mezi [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)] oproti .NET Framework 2.0, .NET Framework 3.0 a rozhraní .NET Framework 3.5.  
   
  Tento postup vyžaduje následující kroky:  
   

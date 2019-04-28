@@ -18,12 +18,12 @@ caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 85f57d03ac52562c5cbebc27f410570c03e33d3f
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 7795a5577a385542828a3d7c14670696f630544d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59668168"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430440"
 ---
 # <a name="troubleshooting-net-framework-targeting-errors"></a>Řešení potíží s cílením na rozhraní .NET Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ Toto téma popisuje chyby nástroje MSBuild, kterým by mohlo dojít z důvodu o
 ```  
   
 > [!NOTE]
->  Po zavření a znovu otevřít projekt, měli byste také znovu vytvořit jej pro zajištění správně přeložit všechny odkazy.  
+> Po zavření a znovu otevřít projekt, měli byste také znovu vytvořit jej pro zajištění správně přeložit všechny odkazy.  
   
 ## <a name="see-also"></a>Viz také  
  [Postupy: Cílení na určitou verzi rozhraní .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md)   

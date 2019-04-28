@@ -13,18 +13,18 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a5112f52e9d48417cfd63a514d22a034168c1aea
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: 3c1727c8d1526199d179fe137c9bf899959bc2ba
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58152113"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422206"
 ---
 # <a name="applicationnodeeventfilter-enumeration"></a>APPLICATION_NODE_EVENT_FILTER – výčet
 Určuje typy uzlů mají vyloučit při filtrování kód dokumenty. Použít v [IDebugApplicationNode100::GetExcludedDocuments](../../winscript/reference/idebugapplicationnode100-getexcludeddocuments.md) a [IDebugApplicationNode100::SetFilterForEventSink](../../winscript/reference/idebugapplicationnode100-setfilterforeventsink.md)  
   
 > [!IMPORTANT]
->  Tyto konstanty jsou implementovány pomocí PDM v10.0 a větší. Nachází se v souboru activdbg100.h.  
+> Tyto konstanty jsou implementovány pomocí PDM v10.0 a větší. Nachází se v souboru activdbg100.h.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -34,7 +34,7 @@ typedef enum tagAPPLICATION_NODE_EVENT_FILTER {    FILTER_EXCLUDE_NOTHING = 0,  
   
 ## <a name="members"></a>Členové  
   
-|Člen|Hodnota|Popis|  
+|Člen|Value|Popis|  
 |------------|-----------|-----------------|  
 |FILTER_EXCLUDE_NOTHING|0x00000000|Odesílání všech událostí.|  
 |FILTER_EXCLUDE_ANONYMOUS_CODE|0x00000001|Vyloučení uzlů anonymní kódu. Tyto uzly jsou používány JScript modul runtime pro `new Function([args,] <code>)'`.|  

@@ -18,12 +18,12 @@ caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: aeaba355e101bd8e48126bfa01f95668a37abe3e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 45588d06cddd919d8ff0f96329cce5f6054edd00
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60081421"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431423"
 ---
 # <a name="javascript-console-commands"></a>Příkazy konzoly jazyka JavaScript
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "wi
  Pokud je zavření okna konzoly jazyka JavaScript, lze jej otevřít při ladění v sadě Visual Studio výběrem **ladění** > **Windows** > **jazyka JavaScript Konzola**.  
   
 > [!NOTE]
->  Pokud okno není k dispozici během relace ladění, ujistěte se, že typ ladicího programu je nastaven na **skript** ve vlastnostech ladění pro projekt.  
+> Pokud okno není k dispozici během relace ladění, ujistěte se, že typ ladicího programu je nastaven na **skript** ve vlastnostech ladění pro projekt.  
   
 ## <a name="console-object-commands"></a>příkazy konzoly objektu  
  Tato tabulka ukazuje syntaxi `console` objekt příkazy, můžete použít v okně konzoly jazyka JavaScript nebo, že můžete použít k odesílání zpráv do konzoly z vašeho kódu. Tento objekt obsahuje počtem formulářů, aby mohl rozlišit mezi informační zprávy a chybové zprávy, pokud chcete.  
@@ -43,7 +43,7 @@ Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "wi
  Můžete použít delší formě v příkazu `window.console.[command]` potřebujete nedocházelo k záměnám možné s místní objekty s názvem konzoly.  
   
 > [!TIP]
->  Starší verze sady Visual Studio nepodporují kompletní sadu příkazů. Pomocí IntelliSense na objekt konzoly a získat rychlé informace o podporovaných příkazů.  
+> Starší verze sady Visual Studio nepodporují kompletní sadu příkazů. Pomocí IntelliSense na objekt konzoly a získat rychlé informace o podporovaných příkazů.  
   
 |Příkaz|Popis|Příklad|  
 |-------------|-----------------|-------------|  

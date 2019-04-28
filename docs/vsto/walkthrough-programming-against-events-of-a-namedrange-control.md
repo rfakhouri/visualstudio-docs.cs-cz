@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: dee6c5dadb1634f384fd04d67cb0701b2e972799
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9b510e7464708891db0cab23d61cb22896a74602
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049929"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446919"
 ---
 # <a name="walkthrough-program-against-events-of-a-namedrange-control"></a>Návod: Program ošetření událostí ovládacího prvku NamedRange
   Tento návod ukazuje, jak přidat <xref:Microsoft.Office.Tools.Excel.NamedRange> ovládacího prvku na list aplikace Microsoft Office Excel a program před jeho událostmi s využitím vývojových nástrojů Office v sadě Visual Studio.
@@ -37,7 +37,7 @@ ms.locfileid: "60049929"
 - Otestování vašeho projektu.
 
 > [!NOTE]
->  Váš počítač může v následujících pokynech zobrazovat odlišné názvy nebo umístění některých prvků uživatelského rozhraní sady Visual Studio. Tyto prvky jsou určeny edicí sady Visual Studio a použitým nastavením. Další informace najdete v tématu [přizpůsobení integrovaného vývojového prostředí sady Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
+> Váš počítač může v následujících pokynech zobrazovat odlišné názvy nebo umístění některých prvků uživatelského rozhraní sady Visual Studio. Tyto prvky jsou určeny edicí sady Visual Studio a použitým nastavením. Další informace najdete v tématu [přizpůsobení integrovaného vývojového prostředí sady Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="prerequisites"></a>Požadavky
  K dokončení tohoto návodu budete potřebovat následující komponenty:
@@ -119,7 +119,7 @@ ms.locfileid: "60049929"
      [!code-vb[Trin_VstcoreHostControlsExcel#26](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#26)]
 
     > [!NOTE]
-    >  Vzhledem k tomu, že poklikáte na buňku v oblasti aplikace Excel přejde do režimu úprav <xref:Microsoft.Office.Tools.Excel.NamedRange.Change> události dojde, když se výběr je přesunut mimo rozsah, i v případě, že nedošlo k žádným změnám na text.
+    > Vzhledem k tomu, že poklikáte na buňku v oblasti aplikace Excel přejde do režimu úprav <xref:Microsoft.Office.Tools.Excel.NamedRange.Change> události dojde, když se výběr je přesunut mimo rozsah, i v případě, že nedošlo k žádným změnám na text.
 
 ## <a name="add-code-to-respond-to-the-selectionchange-event"></a>Přidejte kód pro reakce na SelectionChange – událost
 
@@ -131,7 +131,7 @@ ms.locfileid: "60049929"
      [!code-vb[Trin_VstcoreHostControlsExcel#27](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#27)]
 
     > [!NOTE]
-    >  Vzhledem k tomu, že poklikáte na buňku v oblasti aplikace Excel způsobí, že přesunutí do rozsahu, <xref:Microsoft.Office.Tools.Excel.NamedRange.SelectionChange> před dojde k události <xref:Microsoft.Office.Tools.Excel.NamedRange.BeforeDoubleClick> dojde k události.
+    > Vzhledem k tomu, že poklikáte na buňku v oblasti aplikace Excel způsobí, že přesunutí do rozsahu, <xref:Microsoft.Office.Tools.Excel.NamedRange.SelectionChange> před dojde k události <xref:Microsoft.Office.Tools.Excel.NamedRange.BeforeDoubleClick> dojde k události.
 
 ## <a name="test-the-application"></a>Testování aplikace
  Teď můžete otestovat sešit ověřit tento text popisující událostí <xref:Microsoft.Office.Tools.Excel.NamedRange> ovládací prvek je vložen do jiné oblasti s názvem při události jsou vyvolány.

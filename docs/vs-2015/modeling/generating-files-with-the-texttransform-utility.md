@@ -12,12 +12,12 @@ caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 75438b5a2ffa5917f667ab3fdc3a9bd3528f0e55
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 607eda7550819e4150f026a0671ed744ba9c10a7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54802106"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427047"
 ---
 # <a name="generating-files-with-the-texttransform-utility"></a>Generování souborů pomocí nástroje TextTransform
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "54802106"
 TextTransform.exe je nástroj příkazového řádku, který vám pomůže transformace textové šablony. Při volání TextTransform.exe zadáte jako argument název soubor textové šablony. TextTransform.exe zavolá stroj pro transformaci textu a zpracuje textové šablony. TextTransform.exe je obvykle volána pomocí skriptů. Není však obvykle vyžaduje, protože provedením transformace textu ve Visual Studiu nebo v procesu sestavení.  
   
 > [!NOTE]
->  Pokud chcete provést transformaci textu jako součást procesu sestavení, zvažte použití nástroje MSBuild úlohy transformace textu. Další informace najdete v tématu [generování kódu v procesu sestavení](../modeling/code-generation-in-a-build-process.md). V počítači, ve kterém [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] je nainstalovaný, můžete je zapsat také aplikace nebo [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozšíření, které můžete transformace textových šablon. Další informace najdete v tématu [zpracování textových šablon pomocí vlastního hostitele](../modeling/processing-text-templates-by-using-a-custom-host.md).  
+> Pokud chcete provést transformaci textu jako součást procesu sestavení, zvažte použití nástroje MSBuild úlohy transformace textu. Další informace najdete v tématu [generování kódu v procesu sestavení](../modeling/code-generation-in-a-build-process.md). V počítači, ve kterém [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] je nainstalovaný, můžete je zapsat také aplikace nebo [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozšíření, které můžete transformace textových šablon. Další informace najdete v tématu [zpracování textových šablon pomocí vlastního hostitele](../modeling/processing-text-templates-by-using-a-custom-host.md).  
   
  TextTransform.exe se nachází v následujícím adresáři:  
   

@@ -17,23 +17,23 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 59d9179bb0a3c3c2f08bbccafbca5db0202208e3
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
-ms.translationtype: MT
+ms.openlocfilehash: 8b48335ccaa8bd21cf9f6e108d043ecf706903bb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54867958"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441885"
 ---
 # <a name="debug-office-projects"></a>Ladění projektů Office
   Můžete ladit projekty Office s použitím stejného Microsoft [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] nástrojů, které používáte pro jiné [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projekty. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Funkce, jako je možnost Vložit zarážky a proměnné v zobrazení ladicího programu **lokální** okna, jsou také k dispozici při ladění projektů Office. Další informace o [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] nástroje pro ladění, naleznete v tématu [ladit v sadě Visual Studio](../debugger/debugging-in-visual-studio.md).
 
 > [!TIP]
->  Pro zjednodušení, ladění, zavřete všechny otevřené instance aplikace Office, než sestavení a ladění.
+> Pro zjednodušení, ladění, zavřete všechny otevřené instance aplikace Office, než sestavení a ladění.
 
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
 > [!NOTE]
->  Zajímá vás vývoj řešení, které rozšiřují Office prostředí napříč [více platforem](https://dev.office.com/add-in-availability)? Podívejte se na nové [Office Add-ins modelu](https://dev.office.com/docs/add-ins/overview/office-add-ins). Doplňky sady Office mají malé náklady v porovnání s doplňky VSTO a řešení a je můžete vytvořit s využitím téměř jakékoli webové programování technologie, jako je například HTML5, JavaScript, CSS3 a XML.
+> Zajímá vás vývoj řešení, které rozšiřují Office prostředí napříč [více platforem](https://dev.office.com/add-in-availability)? Podívejte se na nové [Office Add-ins modelu](https://dev.office.com/docs/add-ins/overview/office-add-ins). Doplňky sady Office mají malé náklady v porovnání s doplňky VSTO a řešení a je můžete vytvořit s využitím téměř jakékoli webové programování technologie, jako je například HTML5, JavaScript, CSS3 a XML.
 
 ## <a name="start-and-stop-the-debugger"></a>Spuštění a zastavení ladicího programu
  Můžete spustit ladění projektu pro Office, stejně jako spuštění ladění jiných [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projekty; třeba, stisknutí klávesy **F5** klíč. Při spuštění ladění projektu doplňku VSTO spuštěn nový proces pro cílové aplikace Office a načtení doplňku VSTO.

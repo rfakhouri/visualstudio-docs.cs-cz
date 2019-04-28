@@ -10,12 +10,12 @@ ms.assetid: 6e32ed81-c604-4a32-9012-8db3bec7c846
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: bbe6f59bdddb19b236cfba1256324a52765b78a6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ac681879e0f7ad0902358be23d74d57ccee406f8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60103495"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435973"
 ---
 # <a name="how-to-create-custom-text-markers"></a>Postupy: Vytvoření vlastního textu značky
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ Pokud chcete vytvořit vlastní text značky zvýraznění nebo organizaci kódu
     *\<Packageguid došlo k chybě >* je identifikátor GUID balíčku VSPackage implementace objektu automatizace.  
   
    > [!NOTE]
-   >  Kořenová cesta HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<verze >* monitorconfigurationoverride lze přepsat náhradní root při inicializaci prostředí sady Visual Studio, pro další informace naleznete v tématu [Přepínače příkazového řádku](../extensibility/command-line-switches-visual-studio-sdk.md).  
+   > Kořenová cesta HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<verze >* monitorconfigurationoverride lze přepsat náhradní root při inicializaci prostředí sady Visual Studio, pro další informace naleznete v tématu [Přepínače příkazového řádku](../extensibility/command-line-switches-visual-studio-sdk.md).  
   
 2. Vytvořit čtyři hodnoty v rámci HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<verze >* \Text Editor\External značky\\*\<MarkerGUID >*  
   
@@ -93,4 +93,4 @@ Pokud chcete vytvořit vlastní text značky zvýraznění nebo organizaci kódu
  [Text značky pomocí starší verze rozhraní API](../extensibility/using-text-markers-with-the-legacy-api.md)   
  [Postupy: Přidání standardní Text značky](../extensibility/how-to-add-standard-text-markers.md)   
  [Postupy: Implementace označování chyb](../extensibility/how-to-implement-error-markers.md)   
- [Postupy: Použití značek Text](../extensibility/how-to-use-text-markers.md)
+ [Postupy: Použití textových značek](../extensibility/how-to-use-text-markers.md)

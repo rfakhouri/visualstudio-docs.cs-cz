@@ -21,12 +21,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7ee82187adac74f90b6f5cb8485c68452d8329b0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 421360421a732935d452053630c17cda319f4b0d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060707"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434497"
 ---
 # <a name="handle-a-concurrency-exception"></a>Zpracování výjimky souběžnosti
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ Výjimky souběžnosti (<xref:System.Data.DBConcurrencyException>) jsou vyvolán
 - Přístup k ukázkové databázi Northwind pomocí oprávnění k provedení aktualizace.
   
 > [!NOTE]
->  Dialogová okna a příkazy nabídek, které se zobrazí může lišit od těch popsaných v nápovědě v závislosti na aktivních nastaveních nebo edici, kterou používáte. Chcete-li změnit nastavení, zvolte **nastavení importu a exportu** na **nástroje** nabídky. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Dialogová okna a příkazy nabídek, které se zobrazí může lišit od těch popsaných v nápovědě v závislosti na aktivních nastaveních nebo edici, kterou používáte. Chcete-li změnit nastavení, zvolte **nastavení importu a exportu** na **nástroje** nabídky. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="create-a-new-project"></a>Vytvoření nového projektu  
  Začnete vašeho návodu tak, že vytvoříte novou aplikaci pro Windows.  
@@ -86,7 +86,7 @@ Výjimky souběžnosti (<xref:System.Data.DBConcurrencyException>) jsou vyvolán
 3. Vyberte připojení ze seznamu dostupných připojení k ukázkové databázi Northwind. Pokud připojení není k dispozici v seznamu připojení, vyberte**nové připojení**  
   
     > [!NOTE]
-    >  Pokud se připojujete k místní databázový soubor, vyberte **ne** když se zobrazí výzva, pokud byste chtěli přidat soubor do projektu.  
+    > Pokud se připojujete k místní databázový soubor, vyberte **ne** když se zobrazí výzva, pokud byste chtěli přidat soubor do projektu.  
   
 4. Na **uložit připojovací řetězec do konfiguračního souboru aplikace**obrazovky, vyberte **Další**.  
   
@@ -149,7 +149,7 @@ Výjimky souběžnosti (<xref:System.Data.DBConcurrencyException>) jsou vyvolán
  V této části přidáte kód, který se pokouší aktualizovat databázi. Můžete také zpracována <xref:System.Data.DBConcurrencyException> , která může získat vyvolána, stejně jako všechny ostatní výjimky.  
   
 > [!NOTE]
->  `CreateMessage` a `ProcessDialogResults` metody se přidají později v tomto názorném postupu.  
+> `CreateMessage` a `ProcessDialogResults` metody se přidají později v tomto názorném postupu.  
   
 ##### <a name="to-add-error-handling-for-the-concurrency-error"></a>Přidání zpracování chyb pro došlo k chybě souběžnosti  
   
@@ -201,7 +201,7 @@ Výjimky souběžnosti (<xref:System.Data.DBConcurrencyException>) jsou vyvolán
 6. V prvním záznamu (`ALFKI`) změnit `ContactName` k `Maria Anders2`.  
   
     > [!NOTE]
-    >  Přejděte na jiný řádek pro potvrzení změn.  
+    > Přejděte na jiný řádek pro potvrzení změn.  
   
 7. Přepněte `ConcurrencyWalkthrough`běží formuláře.  
   

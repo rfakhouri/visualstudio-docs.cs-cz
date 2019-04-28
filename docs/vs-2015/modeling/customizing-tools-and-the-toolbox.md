@@ -15,12 +15,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 47b108cfbef8831f9650c7e1af29d528aa8abaa2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2a91615fc711d98970c1aace57cbef814e6fc2a0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60077261"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433213"
 ---
 # <a name="customizing-tools-and-the-toolbox"></a>Přizpůsobení nástrojů a panelu nástrojů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,7 +64,7 @@ Editor
 - Odstraňte karty a nástroje.  
   
 > [!IMPORTANT]
->  Chcete-li přidat nebo vložit položky v Průzkumníku DSL, klikněte pravým tlačítkem na nadřazený nový uzel. Například pokud chcete přidat nástroj, klikněte pravým tlačítkem na kartu a ne **nástroje** uzlu. Chcete-li přidat na kartě, klikněte pravým tlačítkem **Editor** uzlu.  
+> Chcete-li přidat nebo vložit položky v Průzkumníku DSL, klikněte pravým tlačítkem na nadřazený nový uzel. Například pokud chcete přidat nástroj, klikněte pravým tlačítkem na kartu a ne **nástroje** uzlu. Chcete-li přidat na kartě, klikněte pravým tlačítkem **Editor** uzlu.  
   
  **Panelu nástrojů ikonu** vlastnost každý nástroj odkazuje na soubor rastrového obrázku velikosti 16 x 16. Tyto soubory jsou obvykle uloženy v **Dsl\Resources** složky.  
   
@@ -191,7 +191,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
   Je nutné zadat nějaký kód programu k provedení těchto úprav. Chcete-li zjistit, jaký kód je nutné zadat, jeden z těchto polí a transformovat všechny šablony potom sestavte řešení. Zpráva o chybě dojde. Klikněte dvakrát na zprávy o chybě zobrazíte komentář, který vysvětluje, jaký kód že je nutné přidat.  
   
 > [!NOTE]
->  Chcete-li přidat vlastní kód, vytvořte definici částečné třídy v souboru kódu odděleně od kódu souborů ve složkách GeneratedCode. Abyste se vyhnuli ztrátě práce, byste neměli upravovat soubory generovaného kódu. Další informace najdete v tématu [přepisování a rozšiřování třídy generované v](../modeling/overriding-and-extending-the-generated-classes.md).  
+> Chcete-li přidat vlastní kód, vytvořte definici částečné třídy v souboru kódu odděleně od kódu souborů ve složkách GeneratedCode. Abyste se vyhnuli ztrátě práce, byste neměli upravovat soubory generovaného kódu. Další informace najdete v tématu [přepisování a rozšiřování třídy generované v](../modeling/overriding-and-extending-the-generated-classes.md).  
   
 #### <a name="creating-custom-connection-code"></a>Vytváří se připojení vlastní kód  
  V každé propojení propojovací direktiva, **zdrojové direktivy rolí, které** kartě definuje, jaké typy lze přetáhnout. Podobně **cílové direktivy rolí, které** definuje kartu pro jaké typy lze přetáhnout. Pro každý typ, můžete dále určit, jestli se má povolit připojení (pro tento odkaz propojovací direktiva) tak, že nastavíte **vlastní přijetí** příznak a pak zadáním zvláštní kód.  

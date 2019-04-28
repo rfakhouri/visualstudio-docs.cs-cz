@@ -13,12 +13,12 @@ caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e12981a5b1942e1a3873cb10bd4d1bb2ea2cfef0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 37fd166696d8fbcc913f26fb654ea5e709eb3a3d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54767240"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63423024"
 ---
 # <a name="idiasymbolgetisstripped"></a>IDiaSymbol::get_isStripped
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ HRESULT get_isStripped(
  Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí `S_FALSE` nebo kód chyby.  
   
 > [!NOTE]
->  Vrácená hodnota `S_FALSE` znamená, že vlastnost není k dispozici pro symbol.  
+> Vrácená hodnota `S_FALSE` znamená, že vlastnost není k dispozici pro symbol.  
   
 ## <a name="remarks"></a>Poznámky  
  Tato vlastnost je k dispozici `SymTagExe` typu symbolu (naleznete v tématu [Exe](../../debugger/debug-interface-access/exe.md)).  

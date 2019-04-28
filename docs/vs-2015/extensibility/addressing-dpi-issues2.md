@@ -6,12 +6,12 @@ ms.assetid: 359184aa-f5b6-4b6c-99fe-104655b3a494
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 43f13ebc6a3f7a430b3608eba37284a85c3c5eab
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 70b20a463563c54ce0b8ac81b9acab042b0389eb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049539"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443959"
 ---
 # <a name="addressing-dpi-issues"></a>Řešení problémů s nastavením DPI
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -116,7 +116,7 @@ VsUI::DpiHelper::LogicalToDeviceUnits(&hBitmap);
 ```  
   
 > [!NOTE]
->  Nepoužívejte pomocné funkce v úrovni modulu nebo třídy statické proměnné. Statické knihovny používá také pro synchronizaci vláken a můžete narazit na problémy s inicializací pořadí. Tyto statické převést na nestatické členské proměnné nebo zabalit je do funkce (tak že získat postavená na první přístup).  
+> Nepoužívejte pomocné funkce v úrovni modulu nebo třídy statické proměnné. Statické knihovny používá také pro synchronizaci vláken a můžete narazit na problémy s inicializací pořadí. Tyto statické převést na nestatické členské proměnné nebo zabalit je do funkce (tak že získat postavená na první přístup).  
   
  Pro přístup k DPI pomocných funkcí ze spravovaného kódu, který se spustí do prostředí sady Visual Studio:  
   

@@ -13,12 +13,12 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 67cf59965d47b2a0e29bbe6280d69acf0000a20d
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: a992f8512d4927eeb58d6437ccb830abda688b28
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58149572"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443684"
 ---
 # <a name="iwebappdiagnosticsobjectinitialization-interface"></a>IWebAppDiagnosticsObjectInitialization – rozhraní
 Toto rozhraní je možné implementovat na třídy, které implementují [IWebAppDiagnosticsSetup::CreateObjectWithSiteAtWebApp](../../winscript/reference/iwebappdiagnosticssetup-createobjectwithsiteatwebapp.md). [Iwebappdiagnosticssetup – rozhraní](../../winscript/reference/iwebappdiagnosticssetup-interface.md) je implementováno prostřednictvím objektu, který implementuje [idebugapplication – rozhraní](../../winscript/reference/idebugapplication-interface.md). Ve většině případů se tento objekt PDM.  
@@ -26,7 +26,7 @@ Toto rozhraní je možné implementovat na třídy, které implementují [IWebAp
  Po vytvoření objektu [IWebAppDiagnosticsObjectInitialization::Initialize](../../winscript/reference/iwebappdiagnosticsobjectinitialization-initialize.md) je volána s odkazem na aplikaci PDM ladění a `hPassToObject` parametr `CreateObjectWithSiteAtWebApp`.  
   
 > [!IMPORTANT]
->  `IWebAppDiagnosticsObjectInitialization` najdete v souboru activdbg100.h.  
+> `IWebAppDiagnosticsObjectInitialization` najdete v souboru activdbg100.h.  
   
 ## <a name="methods"></a>Metody  
  Toto rozhraní poskytuje následující metody.  

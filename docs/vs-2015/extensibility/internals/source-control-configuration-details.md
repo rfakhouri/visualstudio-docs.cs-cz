@@ -10,12 +10,12 @@ ms.assetid: adbee9fc-7a2e-4abe-a3b8-e6615bcd797f
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 51fac40d0bffe570ac1f374872fb4572c1c83441
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5faa0ce575647038ac5ac7839b6dc066b7b51ce6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109462"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432071"
 ---
 # <a name="source-control-configuration-details"></a>Podrobnosti konfigurace správy zdrojového kódu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ Kvůli implementaci správy zdrojového kódu, musíte správně nakonfigurovat 
  Předtím, než projekt nebo editor uloží soubor, musí volat <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFile%2A> nebo <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFiles%2A>. Pro soubory projektu jsou řešení, které ví, kdy se má uložit soubor projektu automaticky dokončit těchto volání. Editory zodpovídají za provedení těchto volání, pokud editor provádění `IVsPersistDocData2` používá pomocnou funkci <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SaveDocDataToFile%2A>. Pokud editor implementuje `IVsPersistDocData2` v tímto způsobem, pak volání `IVsQueryEditQuerySave2::QuerySaveFile` nebo `IVsQueryEditQuerySave2::QuerySaveFiles` se provádí za vás.  
   
 > [!NOTE]
->  Vždy provádět tyto volání preventivně – to znamená, že v době, kdy je schopný přijímat zrušení editoru.  
+> Vždy provádět tyto volání preventivně – to znamená, že v době, kdy je schopný přijímat zrušení editoru.  
   
 ## <a name="request-permission-to-add-remove-or-rename-files-in-the-project"></a>Požádat o oprávnění, které chcete přidat, odebrat nebo přejmenovat soubory v projektu  
  Před projektu můžete přidat, přejmenovat nebo odstranit soubor nebo adresář, musí volat odpovídající `IVsTrackProjectDocuments2::OnQuery*` metody k žádosti o oprávnění z prostředí. Pokud je povoleno, pak projektu musíte dokončit operaci a poté zavolejte odpovídající `IVsTrackProjectDocuments2::OnAfter*` metoda oznámit prostředí, operace se dokončila. Projekt musí volat metody <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2> rozhraní pro všechny soubory (například speciální) a ne jenom nadřazených souborů. Volání souboru jsou povinné, ale volání adresáře jsou volitelné. Pokud váš projekt obsahuje informace o adresáři, pak by měly volat odpovídající <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2> metody, ale pokud tyto informace nemusí, pak prostředí se odvodit informace o adresář.  

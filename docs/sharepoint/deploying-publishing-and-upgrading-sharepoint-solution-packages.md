@@ -16,18 +16,18 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 093016b3924d7882901a2b2c1bda060571d5bff4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: a49ad82cc6cbb2eef8a8746b2c94575925ab1ddd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56618403"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436726"
 ---
 # <a name="deploy-publish-and-upgrade-sharepoint-solution-packages"></a>Nasazení, publikování a upgrade balíčků řešení služby SharePoint
   Poté, co při vývoji řešení služby SharePoint v sadě Visual Studio, můžete nasadit jeho souboru balíčku (.wsp) na místním serveru SharePoint nebo ji publikovat na Sharepointový server vzdálený, nebo místní. Pokud nasazujete soubory, můžete přizpůsobit, jak nasadit soubory balíčku (.wsp).
 
 > [!NOTE]
->  V současné době pouze řešení v izolovaném prostoru, můžete ho publikovat do vzdálených serverů služby SharePoint. Další informace najdete v tématu [aspekty řešení v izolovaném prostoru](../sharepoint/sandboxed-solution-considerations.md).
+> V současné době pouze řešení v izolovaném prostoru, můžete ho publikovat do vzdálených serverů služby SharePoint. Další informace najdete v tématu [aspekty řešení v izolovaném prostoru](../sharepoint/sandboxed-solution-considerations.md).
 
 ## <a name="deploy-publish-and-upgrade"></a>Nasazení, publikování a upgrade
  *Nasazení* odkazuje na kopírování souboru řešení služby SharePoint vytvořená z projektu služby SharePoint v sadě Visual Studio na místního hostitele. V nasazeném řešení můžete nakonfigurovat jednotlivé kroky nasazení, jako je například recyklace fondu Internetové informační služby (IIS), aktivuje se po nasazení řešení a tak dále. Pokud chcete nasadit, použijte **nasazení** příkaz **sestavení** nabídky. Další informace najdete v tématu [jak: Úprava konfigurace nasazení služby SharePoint](../sharepoint/how-to-edit-a-sharepoint-deployment-configuration.md) a [jak: Nasazení a publikování řešení služby SharePoint na místní Sharepointový web](../sharepoint/how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site.md).

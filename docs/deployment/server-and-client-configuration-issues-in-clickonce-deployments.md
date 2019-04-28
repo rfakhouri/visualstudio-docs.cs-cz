@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 85c3e70fd1d88bfa82d1aa55fe27505414986415
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 5be4e6546d5900fbd3274ab1eb8d55622fb2c58b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59654084"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406788"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>Problémy s konfigurací serveru a klienta v nasazeních ClickOnce
 Pokud používáte Internetové informační služby (IIS) v systému Windows Server a vaše nasazení obsahuje typ souboru, který se nedokáže rozpoznat Windows, jako je například Microsoft Word soubor, služba IIS odmítne přenášet tento soubor a nasazení se nezdaří.
@@ -57,7 +57,7 @@ Pokud používáte Internetové informační služby (IIS) v systému Windows Se
  V současné době [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] zařízení se spustí jenom v případě, že adresa URL pro manifest nasazení se otevře pomocí aplikace Internet Explorer. Nasazení, jehož adresa URL se spustí z jiné aplikace, jako je například aplikace Microsoft Office Outlook se úspěšně spustí jenom v případě, že aplikace Internet Explorer je nastaven jako výchozí webový prohlížeč.
 
 > [!NOTE]
->  Mozilla Firefox se podporuje, pokud poskytovatel nasazení není prázdné nebo je nainstalované rozhraní Microsoft .NET Framework – Pomocník rozšíření. Toto rozšíření je součástí balíčku rozhraní .NET Framework 3.5 SP1. Pro podporu XBAP NPWPF modul plug-in se aktivuje v případě potřeby.
+> Mozilla Firefox se podporuje, pokud poskytovatel nasazení není prázdné nebo je nainstalované rozhraní Microsoft .NET Framework – Pomocník rozšíření. Toto rozšíření je součástí balíčku rozhraní .NET Framework 3.5 SP1. Pro podporu XBAP NPWPF modul plug-in se aktivuje v případě potřeby.
 
 ## <a name="activate-clickonce-applications-through-browser-scripting"></a>Aktivace aplikace ClickOnce pomocí prohlížeče skriptování
  Pokud jste si vytvořili vlastní webovou stránku, která spustí [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace pomocí aktivní skriptování, můžete zjistit, že aplikace se nespustí na některých počítačích. Aplikace Internet Explorer obsahuje nastavení, nazvané **Automatické dotazování pro stahování souborů**, což má vliv na toto chování. Toto nastavení je k dispozici na **zabezpečení** kartu v jeho **možnosti** nabídky, která má vliv na toto chování. Je volána **Automatické dotazování pro stahování souborů**, a je uvedena pod **stáhne** kategorie. Je nastavena na **povolit** ve výchozím nastavení pro intranet webových stránek a **zakázat** ve výchozím nastavení pro internetové webové stránky. Když toto nastavení je **zakázat**, žádný pokus o aktivaci [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace prostřednictvím kódu programu (například přiřazením jeho adresy URL `document.location` vlastnost) se zablokují. V této situaci uživatelé můžou spouštět aplikace jenom do uživatelem iniciované stahování, například kliknutím na hypertextový odkaz nastavený na adresu URL vaší aplikace.
@@ -75,7 +75,7 @@ Pokud používáte Internetové informační služby (IIS) v systému Windows Se
 ```
 
 > [!NOTE]
->  Můžete provést ověřování protokolem NTLM (NT – výzva odezva) fungovat, pokud webu se výzva k zadání přihlašovacích údajů než výchozí pověření, a v dialogovém okně zabezpečení kliknete **OK** po zobrazení výzvy Pokud budete chtít uložte zadané přihlašovací údaje pro budoucí relace. Toto řešení však nebude fungovat pro základní ověřování.
+> Můžete provést ověřování protokolem NTLM (NT – výzva odezva) fungovat, pokud webu se výzva k zadání přihlašovacích údajů než výchozí pověření, a v dialogovém okně zabezpečení kliknete **OK** po zobrazení výzvy Pokud budete chtít uložte zadané přihlašovací údaje pro budoucí relace. Toto řešení však nebude fungovat pro základní ověřování.
 
 ## <a name="use-third-party-web-servers"></a>Použijte webové servery třetích stran
  Pokud provádíte nasazení [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace z webového serveru, než je služba IIS, vám může dojít k potížím Pokud server vrací nesprávný typ obsahu pro klíč [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] soubory, jako je například manifest nasazení a manifest aplikace. Chcete-li tento problém vyřešit, najdete v nápovědě webový server dokumentace o tom, jak přidat nové typy obsahu na serveru a ujistěte se, že všechny mapování přípon názvů souborů uvedené v následující tabulce jsou na místě.

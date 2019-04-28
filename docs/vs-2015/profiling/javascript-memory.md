@@ -23,12 +23,12 @@ caps.latest.revision: 54
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6c3ecb692bf450a1d9f4bbd3408d0033bac8c290
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 816db8b2bc5d78541dc089d75ff155b98231ffd5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60086608"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435656"
 ---
 # <a name="javascript-memory"></a>Paměti jazyka JavaScript
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -114,12 +114,12 @@ Analyzátor paměti jazyka JavaScript je k dispozici v sadě Visual Studio, kter
 - [Zobrazení souhrnu využití paměti za provozu](#LiveMemory). Pomocí grafu využití paměti můžete hledat náhlé zvýšení využití paměti nebo průběžně zvýšení využití paměti, která je výsledkem konkrétní akce. Souhrnné zobrazení využití paměti za provozu můžete pořizovat snímky haldy. Snímky se zobrazí jako kolekci v části grafu využití paměti.  
   
     > [!TIP]
-    >  Špička využití paměti se zobrazí při pořídíte snímek. Pomocí snímku souhrny pro přesnější údaj o růstu.  
+    > Špička využití paměti se zobrazí při pořídíte snímek. Pomocí snímku souhrny pro přesnější údaj o růstu.  
   
 - [Zobrazit souhrn snímku](#SnapshotSummary). Můžete zobrazit souhrnné informace snímku během nebo po relaci profilace paměti. Odkaz na podrobnosti o snímku a rozdílové zobrazení snímků pomocí souhrny snímku.  
   
     > [!TIP]
-    >  Snímek diff zobrazení obvykle poskytne velmi užitečné informace o nevracení paměti.  
+    > Snímek diff zobrazení obvykle poskytne velmi užitečné informace o nevracení paměti.  
   
 - [Zobrazit podrobnosti snímku](#SnapshotDetails). Zobrazí podrobné informace o data o využití paměti pro jeden snímek.  
   
@@ -137,7 +137,7 @@ Analyzátor paměti jazyka JavaScript je k dispozici v sadě Visual Studio, kter
 4. Opakujte tento scénář 1 – 4 dalších místech.  
   
    > [!TIP]
-   >  Opakováním testovací scénář několikrát, může pomoci, ujistěte se, že inicializace práci je možné filtrovat mimo výsledky.  
+   > Opakováním testovací scénář několikrát, může pomoci, ujistěte se, že inicializace práci je možné filtrovat mimo výsledky.  
   
 5. Přepněte do aplikace Visual Studio (stisknutím klávesy Alt + Tab).  
   
@@ -148,7 +148,7 @@ Analyzátor paměti jazyka JavaScript je k dispozici v sadě Visual Studio, kter
     ![Snímek směrného plánu](../profiling/media/js-mem-leak-workflow-baseline.png "JS_Mem_Leak_Workflow_Baseline")  
   
    > [!TIP]
-   >  Pro přesnější kontrolu nad časování snímky, můžete použít [přidružit zdrojového kódu s daty o využití paměti](#JSConsoleCommands) příkaz v kódu.  
+   > Pro přesnější kontrolu nad časování snímky, můžete použít [přidružit zdrojového kódu s daty o využití paměti](#JSConsoleCommands) příkaz v kódu.  
   
 7. Přepnout do vaší aplikace a opakujte scénář testování (pouze jednou znovu).  
   
@@ -179,7 +179,7 @@ Analyzátor paměti jazyka JavaScript je k dispozici v sadě Visual Studio, kter
     - **Objekty přidané mezi snímku č. 2 a #3**  
   
     > [!TIP]
-    >  Pomocí filtrované zobrazení objekty přetrvávající ze snímku předchozí nevracení paměti prozkoumat. Například, pokud je počet objektů rozdílové +205 /-195, toto zobrazení zobrazí 10 objekty zbyly a jedná se pravděpodobně kandidáty na nevracení paměti.  
+    > Pomocí filtrované zobrazení objekty přetrvávající ze snímku předchozí nevracení paměti prozkoumat. Například, pokud je počet objektů rozdílové +205 /-195, toto zobrazení zobrazí 10 objekty zbyly a jedná se pravděpodobně kandidáty na nevracení paměti.  
   
      Následující obrázek znázorňuje rozdílové zobrazení objekty přetrvávající ze snímku č. 2.  
   
@@ -206,7 +206,7 @@ Analyzátor paměti jazyka JavaScript je k dispozici v sadě Visual Studio, kter
  K vytvoření snímku aktuálního stavu využití paměti vaší aplikace, zvolte **trvat snímek haldy** z paměti grafu. Souhrnnou dlaždici snímků, které se zobrazí v obou za využití paměti summary (když aplikace běží) a Souhrn snímku (když je aplikace pozastavená), poskytuje informace o haldu využívanou jazykem JavaScript a odkazy na podrobnější informace. Pokud budete postupovat dva nebo více snímků, snímku poskytuje další informace o porovnávání jeho data, která z předchozího snímku.  
   
 > [!NOTE]
->  Analyzátor paměti jazyka JavaScript vynutí uvolňování paměti před jednotlivých snímků. To pomáhá zajistit konzistentní výsledky spuštění.  
+> Analyzátor paměti jazyka JavaScript vynutí uvolňování paměti před jednotlivých snímků. To pomáhá zajistit konzistentní výsledky spuštění.  
   
  Tady je příklad snímku souhrnu při trvat několik snímků.  
   
@@ -242,14 +242,14 @@ Analyzátor paměti jazyka JavaScript je k dispozici v sadě Visual Studio, kter
 - **Typy**. Ukazuje instanci počet a celkovou velikost objektů v haldě, seskupené podle typu objektu. Ve výchozím nastavení ty jsou seřazené podle počtu instancí.  
   
   > [!TIP]
-  >  Obvykle rozdílových zobrazeních typů na objekt haldy jsou nejužitečnější zobrazení pro identifikaci nevracení paměti; Tato zobrazení nabízejí **oboru** filtr vám pomůže identifikovat přes objekty vlevo.  
+  > Obvykle rozdílových zobrazeních typů na objekt haldy jsou nejužitečnější zobrazení pro identifikaci nevracení paměti; Tato zobrazení nabízejí **oboru** filtr vám pomůže identifikovat přes objekty vlevo.  
   
 - **Kořeny**. Nachází hierarchické zobrazení objektů z kořenové objekty prostřednictvím podřízené odkazy. Ve výchozím nastavení podřízené uzly jsou seřazené podle uchovávané velikosti sloupce, s největší v horní části.  
   
 - **Dominantní objekty**. Zobrazí seznam objektů v haldě, které mají exkluzivní odkazy na jiné objekty. Dominantní objekty jsou seřazené podle uchovávané velikosti.  
   
   > [!TIP]
-  >  Když odeberete dominantního objektu z paměti, získáte zpět všechny paměti, který uchovává objekt. Pro několik aplikací zobrazení dominantních objektů může pomoci objasnit paměti uchovávané velikosti, protože můžete prozkoumat kompletní objekt řetězce odkazů.  
+  > Když odeberete dominantního objektu z paměti, získáte zpět všechny paměti, který uchovává objekt. Pro několik aplikací zobrazení dominantních objektů může pomoci objasnit paměti uchovávané velikosti, protože můžete prozkoumat kompletní objekt řetězce odkazů.  
   
   Všechny tři zobrazení zobrazit podobné typy hodnot, včetně:  
   
@@ -285,7 +285,7 @@ Analyzátor paměti jazyka JavaScript je k dispozici v sadě Visual Studio, kter
 - **Objekty přetrvávající ze snímku č\<číslo >**. Tento filtr ukazuje rozdíl mezi objekty do haldy přidávají nebo odebírají z haldy ve srovnání s referenčním snímkem a předchozí snímek. Například, pokud snímku souhrn zobrazuje +205 /-195 v počet objektů, tento filtr se seznámíte deset objekty, které byly přidány, ale neodeberou.  
   
   > [!TIP]
-  >  K zobrazení velmi užitečné informace v tomto filtru, postupujte podle kroků popsaných v [izolovat nevracení paměti](#Isolate).  
+  > K zobrazení velmi užitečné informace v tomto filtru, postupujte podle kroků popsaných v [izolovat nevracení paměti](#Isolate).  
   
 - **Objekty přidané mezi snímek č\<číslo > a #\<číslo >**. Tento filtr zobrazí všechny objekty do haldy z předchozího snímku.  
   
@@ -294,7 +294,7 @@ Analyzátor paměti jazyka JavaScript je k dispozici v sadě Visual Studio, kter
   Chcete-li zobrazit odkazy na objekty, které se neshodují. aktuální **oboru** filtr, vyberte **zobrazit neshodné odkazy** v seznamu nastavení ![nastavení rozevírací&#45;dolů seznam v analyzátoru paměti ](../profiling/media/js-mem-settings.png "JS_Mem_Settings") v pravém horním rohu podokna. Pokud povolíte toto nastavení, neodpovídající odkazy se zobrazí s textem šedá.  
   
 > [!TIP]
->  Doporučujeme, abyste postupovali podle kroků v [izolovat nevracení paměti](#Isolate) a pak použít objekty zbyly **oboru** filtr k identifikaci objektů, které jsou nevrácení paměti.  
+> Doporučujeme, abyste postupovali podle kroků v [izolovat nevracení paměti](#Isolate) a pak použít objekty zbyly **oboru** filtr k identifikaci objektů, které jsou nevrácení paměti.  
   
 ## <a name="FoldObjects"></a> Zobrazit objekty podle dominantního objektu  
  V zobrazení typů a dominantních objektů vyberte, jestli se má zobrazit objekty složeny do jejich dominantních objektů (Toto je výchozí zobrazení dominantních objektů kartě). Pokud je vybráno toto zobrazení, pouze dominantních objektů jsou uvedeny v zobrazení nejvyšší úrovně objektů. (Objekty, které jsou potomky – globální objekty jsou skryté zobrazení nejvyšší úrovně.) U některých aplikací to vysvětlit objektů, které způsobují nevracení paměti díky snížení šumu v datech.  
@@ -315,7 +315,7 @@ Analyzátor paměti jazyka JavaScript je k dispozici v sadě Visual Studio, kter
  V zobrazení typů a dominantních objektů dolním podokně obsahuje seznam odkazů na objekt zobrazující sdílené odkazy. Při výběru objektu v horním podokně seznam odkazů na objekt zobrazí všechny objekty, které odkazují na tento objekt.  
   
 > [!NOTE]
->  Cyklické odkazy jsou uvedeny hvězdičkou (*) a informační popisek a nelze rozšířit. By se jinak, zabránit vám v procházení stromu odkaz a identifikaci objektů, které se zachováním paměti.  
+> Cyklické odkazy jsou uvedeny hvězdičkou (*) a informační popisek a nelze rozšířit. By se jinak, zabránit vám v procházení stromu odkaz a identifikaci objektů, které se zachováním paměti.  
   
  Pokud chcete další pomoc určení ekvivalentních objektů, zvolte **zobrazit ID objektů** v seznamu nastavení ![nastavení rozevírací&#45;dolů seznam v analyzátoru paměti](../profiling/media/js-mem-settings.png "JS_Mem_Settings ") v pravém horním rohu v horním podokně. Tato možnost zobrazuje ID objektů vedle názvů objektů v **identifikátory** seznamu (ID se zobrazí ve všech zobrazeních, ne jenom odkazy na seznamu objektů). Objekty, které mají stejné ID. jsou sdílené odkazy.  
   
@@ -349,7 +349,7 @@ Analyzátor paměti jazyka JavaScript je k dispozici v sadě Visual Studio, kter
 - `performance.mark` Nastaví uživatele mark (inverzní trojúhelník), který se zobrazí na časové ose grafu paměti v souhrnném zobrazení, zatímco je aplikace spuštěna. Tento příkaz má jeden argument řetězec, který popisuje události a se zobrazí jako popisek v grafu paměti. Tento popis nesmí překročit 100 znaků.  
   
 > [!TIP]
->  Použití `console.takeHeapSnapshot` pro urychlení analýzy při opakování scénáře využití paměti.  
+> Použití `console.takeHeapSnapshot` pro urychlení analýzy při opakování scénáře využití paměti.  
   
  Tyto příkazy vyvolat výjimku, pokud je přidat do vaší aplikace a spusťte aplikaci mimo analýzu paměti jazyka JavaScript. Však můžete zkontrolovat, jestli existují příkazy před jejich použitím. (Příkazy neexistují v rané fázi fáze spuštění relace.) Chcete-li zkontrolovat, jestli může bezpečně volat `takeHeapSnapshot`, použijte tento kód:  
   

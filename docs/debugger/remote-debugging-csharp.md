@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: c2e388154e0efa129a916fd0461a01317edbb870
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
-ms.translationtype: MT
+ms.openlocfilehash: 4c646f8f6dc228d42d6efb5ec44f3ec19a53a551
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355160"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408539"
 ---
 # <a name="remote-debugging-a-c-or-visual-basic-project-in-visual-studio"></a>Vzdálené ladění projektu C# nebo Visual Basic v sadě Visual Studio
 Ladění aplikace Visual Studio, který byl nasazen na jiný počítač, nainstalovat a spustit nástroje remote tools v počítači, kam jste nasadili aplikaci, nakonfigurujte projekt tak, aby připojení ke vzdálenému počítači ze sady Visual Studio a spusťte aplikaci.
@@ -90,7 +90,7 @@ Ladicí program nemůže nasadit Visual C# nebo Visual Basic desktopové aplikac
 10. Zkopírujte spustitelný soubor, který jste právě sestavili ze sady Visual Studio do nově vytvořené složky na vzdáleném počítači.
 
     > [!CAUTION]
-    >  Nedovolte, aby byly změny v kódu nebo opětovné sestavení (nebo je nutné tento krok opakovat). Spustitelný soubor, který jste zkopírovali do vzdáleného počítače se musí přesně odpovídat, místní zdroje a symbolů.
+    > Nedovolte, aby byly změny v kódu nebo opětovné sestavení (nebo je nutné tento krok opakovat). Spustitelný soubor, který jste zkopírovali do vzdáleného počítače se musí přesně odpovídat, místní zdroje a symbolů.
 
     Můžete zkopírovat projektu ručně, pomocí příkazu Xcopy, Robocopy, Powershellu nebo jiné možnosti.
 

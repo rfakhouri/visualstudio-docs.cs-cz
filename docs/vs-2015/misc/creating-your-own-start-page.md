@@ -11,12 +11,12 @@ helpviewer_keywords:
 ms.assetid: a0df5b9c-0932-4e54-86f0-28530ad9d684
 caps.latest.revision: 22
 manager: jillfra
-ms.openlocfilehash: 662ee0ba4659e09b02f120bac5b3eaa728add6d9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: cc465ca5bc9474aaba51042d453a57ee7ec124ec
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60037892"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432304"
 ---
 # <a name="creating-your-own-start-page"></a>Vytvoření vlastní úvodní stránky
 Pomocí šablony projektu stránka Start nebo tak, že vytvoříte prázdnou stránku spuštění můžete vytvořit vlastní úvodní stránky.  
@@ -31,7 +31,7 @@ Pomocí šablony projektu stránka Start nebo tak, že vytvoříte prázdnou str
 1. Stáhněte a nainstalujte [šablonu projektu úvodní stránka](http://go.microsoft.com/fwlink/?LinkId=186204) z Galerie sady Visual Studio.  
   
     > [!WARNING]
-    >  V tuto chvíli se neupgradovala šablony projektů Visual Studio 2010 úvodní stránku. Informace o tom, jak upgradovat tuto šablonu naleznete v tématu [jak: Vlastní úvodní stránku sady Visual Studio upgradovat](../misc/how-to-upgrade-a-visual-studio-custom-start-page.md).  
+    > V tuto chvíli se neupgradovala šablony projektů Visual Studio 2010 úvodní stránku. Informace o tom, jak upgradovat tuto šablonu naleznete v tématu [jak: Vlastní úvodní stránku sady Visual Studio upgradovat](../misc/how-to-upgrade-a-visual-studio-custom-start-page.md).  
   
 2. Po instalaci šablony, vytvořte nový projekt úvodní stránka s ním.  
   
@@ -101,4 +101,4 @@ Pomocí šablony projektu stránka Start nebo tak, že vytvoříte prázdnou str
   
 ## <a name="see-also"></a>Viz také  
  [Přizpůsobení úvodní stránky](../ide/customizing-the-start-page-for-visual-studio.md)   
- [Návod: Přidání XAML vlastní úvodní stránku](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)
+ [Návod: Přidání vlastního souboru XAML na úvodní stránku](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)

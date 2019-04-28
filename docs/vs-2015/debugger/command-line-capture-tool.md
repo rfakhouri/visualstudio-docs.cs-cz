@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: be0b661c85165ff348eccf7d55507ce228100091
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 208ff7f9bbfc2d07669a8b485edffc8dfc4cd54f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54792136"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437809"
 ---
 # <a name="command-line-capture-tool"></a>Nástroj příkazového řádku pro zachytávání
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -79,7 +79,7 @@ DXCap.exe –info
  V režimu ověřování `events` určuje sadu událostí grafiky jsou porovnány jejichž okamžitou výsledky. Například `-examine present,draw,copy,clear` omezuje porovnávání pouze události, které patří do těchto kategorií.  
   
 > [!TIP]
->  Doporučujeme začít se `-examine present,draw,copy,clear` vzhledem k tomu, že to bude odhalit většinu problémů, ale trvá mnohem kratší dobu než rozsáhlejší sadu událostí. V případě potřeby můžete zadat větší nebo jinou sadu událostí můžete ověřovat tyto události a odhalit další druhy problémů.  
+> Doporučujeme začít se `-examine present,draw,copy,clear` vzhledem k tomu, že to bude odhalit většinu problémů, ale trvá mnohem kratší dobu než rozsáhlejší sadu událostí. V případě potřeby můžete zadat větší nebo jinou sadu událostí můžete ověřovat tyto události a odhalit další druhy problémů.  
   
  `-haltonfail`  
  V režimu ověřování `-haltonfail` zastaví ověření, když se zjistí rozdíly mezi hardwarem a WARP renderer. Ověření se obnoví po stisknutí klávesy.  
@@ -140,7 +140,7 @@ DXCap.exe –c "C:\Program Files\Internet Explorer\iexplorer.exe" "www.fishgl.co
  Příkaz v předchozím příkladu jsou zaznamenány informace grafiky z desktopové verzi Internet Exploreru při zobrazení webové stránky v www.fishgl.com využívající rozhraní API WebGL k vykreslení 3D obsahu.  
   
 > [!NOTE]
->  Protože k němu jsou předány argumenty příkazového řádku, které se zobrazí po aplikaci, je nutné zadat argumenty, které jsou určené pro DXCap.exe před použitím `–c` možnost.  
+> Protože k němu jsou předány argumenty příkazového řádku, které se zobrazí po aplikaci, je nutné zadat argumenty, které jsou určené pro DXCap.exe před použitím `–c` možnost.  
   
 ### <a name="capture-graphics-information-from-a-windows-store-app"></a>Zachytit informace grafiky z aplikace pro Windows Store.  
  Můžete zachytit informace grafiky z aplikace pro Windows Store.  

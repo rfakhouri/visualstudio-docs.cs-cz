@@ -14,12 +14,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 012ab6828364af155b52bc19d9a83564b2126a6b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ee7657b12741cf65583317ba87bd465e15eb02bb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088675"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440970"
 ---
 # <a name="link-a-use-case-to-documents-and-diagrams"></a>Propojení případu použití s dokumenty a diagramy
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,7 +81,7 @@ Propojení případu použití v diagramu případu použití do jiného diagram
 3. S novou artefakt vybrali, zadejte nebo vložte adresu URL do **hypertextový odkaz** vlastnost.  
   
     > [!NOTE]
-    >  Pokud chcete zadat cestu k souboru, je nejlepší zvolte soubor, buď v běžné pracovní prostor (počínaje "\\\\"), nebo soubor v rámci řešení sady Visual Studio. Tím se zajistí, že cesta k souboru zůstane v platnosti v počítači jiného člena týmu, nebo pokud se přesune řešení. Chcete-li dokument jako dokument aplikace Word je přidat do vašeho řešení, klikněte pravým tlačítkem na řešení v Průzkumníku řešení, přejděte na **přidat** a potom klikněte na tlačítko **existující položku**.  
+    > Pokud chcete zadat cestu k souboru, je nejlepší zvolte soubor, buď v běžné pracovní prostor (počínaje "\\\\"), nebo soubor v rámci řešení sady Visual Studio. Tím se zajistí, že cesta k souboru zůstane v platnosti v počítači jiného člena týmu, nebo pokud se přesune řešení. Chcete-li dokument jako dokument aplikace Word je přidat do vašeho řešení, klikněte pravým tlačítkem na řešení v Průzkumníku řešení, přejděte na **přidat** a potom klikněte na tlačítko **existující položku**.  
   
 ## <a name="see-also"></a>Viz také  
  [Diagramy případů použití UML: Referenční dokumentace](../modeling/uml-use-case-diagrams-reference.md)   

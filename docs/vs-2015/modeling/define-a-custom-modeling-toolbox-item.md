@@ -11,12 +11,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: becc123cab729aff7d1306bb0ee13aee521444ec
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fc8bcd7a373ab6ee63e32b5873fd149001137511
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105042"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433177"
 ---
 # <a name="define-a-custom-modeling-toolbox-item"></a>Definování vlastní položky sady nástrojů pro modelování
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ K usnadnění vytváření elementu nebo skupiny prvků podle vzoru, který čas
 - Dvojice propojené přidružení k reprezentaci vzor pozorovatel třídy.  
   
 > [!NOTE]
->  Tato metoda slouží k vytvoření nástroje pro element. To znamená můžete vytvořit nástroje, které můžete přetáhnout z panelu nástrojů do diagramu. Nelze vytvořit konektor nástroje.  
+> Tato metoda slouží k vytvoření nástroje pro element. To znamená můžete vytvořit nástroje, které můžete přetáhnout z panelu nástrojů do diagramu. Nelze vytvořit konektor nástroje.  
   
 ## <a name="DefineTool"></a> Definování vlastního nástroje modelování  
   
@@ -136,7 +136,7 @@ K usnadnění vytváření elementu nebo skupiny prvků podle vzoru, který čas
  Můžete upravit soubor rastrového obrázku v sadě Visual Studio a nastavit jeho výšku a šířku na 16 v okně Vlastnosti.  
   
 > [!NOTE]
->  Pokud začnete používat soubor .tbxinfo po pomocí diagramu soubory sami, můžete zjistit, že sada nástrojů obsahuje původní a nové verze položku sady nástrojů. To může také dojít, pokud název souboru diagramu bylo zadáno chybně v souboru .tbxinfo. Pokud k tomu dojde, v místní nabídce na panelu nástrojů zvolte **resetování nástrojů**. Položky vlastního panelu nástrojů zmizí. Restartujte Visual Studio a správné vlastní položky se zobrazí.  
+> Pokud začnete používat soubor .tbxinfo po pomocí diagramu soubory sami, můžete zjistit, že sada nástrojů obsahuje původní a nové verze položku sady nástrojů. To může také dojít, pokud název souboru diagramu bylo zadáno chybně v souboru .tbxinfo. Pokud k tomu dojde, v místní nabídce na panelu nástrojů zvolte **resetování nástrojů**. Položky vlastního panelu nástrojů zmizí. Restartujte Visual Studio a správné vlastní položky se zobrazí.  
   
 ## <a name="Extension"></a> Jak se bude distribuovat položky panelu nástrojů v rozšíření sady Visual Studio  
  Můžete distribuovat položky panelu nástrojů na jiné [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] uživatelů podle jejich balení do rozšíření aplikace Visual Studio (VSIX). Příkazy, profily a další rozšíření můžete zabalit do stejného souboru VSIX. Další informace najdete v tématu [nasazení rozšíření sady Visual Studio](http://go.microsoft.com/fwlink/?LinkId=160780).  
@@ -164,7 +164,7 @@ K usnadnění vytváření elementu nebo skupiny prvků podle vzoru, který čas
     - V Průzkumníku řešení v místní nabídce projektu VSIX zvolte **přidat**, **existující položku**. V dialogovém okně nastavte **objekty typu: Všechny soubory**. Vyhledejte soubory, vyberte je všechny a zvolte **přidat**.  
   
         > [!NOTE]
-        >  V tomto projektu nemůže otevřít soubory diagramu v editoru modelů.  
+        > V tomto projektu nemůže otevřít soubory diagramu v editoru modelů.  
   
 5. Nastavte následující vlastnosti všech souborů, které jste právě přidali. Můžete nastavit jejich vlastnosti ve stejnou dobu tak, že je vyberete v Průzkumníku řešení. Dejte pozor, abyste změnit vlastnosti další soubory v projektu.  
   
@@ -185,7 +185,7 @@ K usnadnění vytváření elementu nebo skupiny prvků podle vzoru, který čas
     - Typ = `Microsoft.VisualStudio.ArchitectureTools.CustomToolboxItems`  
   
         > [!NOTE]
-        >  To však není jednou z možností v rozevíracím seznamu. Je nutné zadat pomocí klávesnice.  
+        > To však není jednou z možností v rozevíracím seznamu. Je nutné zadat pomocí klávesnice.  
   
     - **Zdroj** = **soubor v systému souborů**.  
   

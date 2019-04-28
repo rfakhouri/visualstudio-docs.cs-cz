@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 49e4618e2262575ffaa642d55ae140529f86942b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c8f746c3ee084613a10b89bd492a6174ffb49012
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60038467"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63421287"
 ---
 # <a name="overview-of-the-programming-model-of-sharepoint-tools-extensions"></a>Přehled programovacího modelu SharePoint rozšíření nástrojů
   Při vytváření rozšíření pro nástroje služby SharePoint v sadě Visual Studio, můžete začít implementací jeden nebo více rozhraní rozšíření, které jsou vystaveny nástroje služby SharePoint. Ve většině případů bude také použít jiné typy poskytované nástroje služby SharePoint k implementaci funkcí v rozšíření. V některých scénářích můžete také použít typy v jiné objektové modely, které poskytuje Visual Studio a SharePoint. Musí pochopit účel každé z těchto objektové modely a vědět, jak pomocí nich mezi sebou můžete vytvořit rozšíření pro nástroje služby SharePoint.
@@ -50,7 +50,7 @@ ms.locfileid: "60038467"
 - *Visual Studio automatizace a integrace objektové modely*. Tyto modely objektů použijte pro přístup k Visual Studio funkce, které jsou nad rámec objektového modelu SharePoint tools.
 
     > [!NOTE]
-    >  Můžete převést některé objekty v objektového modelu SharePoint tools na objekty v sadě Visual Studio automatizaci a integraci objektové modely a naopak, použití služby projektu služby SharePoint. Další informace najdete v tématu [převod mezi systémovými typy projektů SharePoint a jinými typy projektů Visual Studio](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md).
+    > Můžete převést některé objekty v objektového modelu SharePoint tools na objekty v sadě Visual Studio automatizaci a integraci objektové modely a naopak, použití služby projektu služby SharePoint. Další informace najdete v tématu [převod mezi systémovými typy projektů SharePoint a jinými typy projektů Visual Studio](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md).
 
 - *SharePoint server a klienta objektové modely*. Tyto modely objektů použijte k úpravě webu služby SharePoint nebo k načtení dat z webu služby SharePoint z kontextu rozšíření nástrojů služby SharePoint.
 

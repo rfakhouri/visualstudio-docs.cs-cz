@@ -8,18 +8,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7815f3b8788ac2fd3eaece89d6e2dbeeb49426d2
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: bf6bc8ae841ad8ba0d3fd376176bdff2332fb958
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56608354"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431994"
 ---
 # <a name="pf"></a>PF
 *VSPerfCmd.exe* **PF** parametr nastaví profilování událost, která vede na chyby stránek a volitelně změní počet chyb stránek v intervalu vzorkování z výchozí hodnoty 10.
 
 > [!NOTE]
->  **PF** nelze použít v 64bitových systémech.
+> **PF** nelze použít v 64bitových systémech.
 
 **PF** jde použít jenom v příkazovém řádku, který také obsahuje **spuštění** nebo **připojit** možnost.
 

@@ -12,12 +12,12 @@ ms.assetid: f6411557-2f4b-4e9f-b02e-fce12a6ac7e9
 caps.latest.revision: 40
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 234f8ffbb3fdde48ca844386d5e5a716f74e8969
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ac07a2c6becd46a2536e6a9b3340d075d5f078f2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054727"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63403247"
 ---
 # <a name="adding-a-command-to-the-solution-explorer-toolbar"></a>Přidání příkazu do panelu nástrojů Průzkumník řešení
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Tento návod ukazuje, jak přidat tlačítko **Průzkumníka řešení** nástro
  Další informace o nabídkách, příkazy nástrojů a souborů .vsct najdete v tématu [příkazy, nabídky a panely nástrojů](../extensibility/internals/commands-menus-and-toolbars.md).  
   
 > [!NOTE]
->  Určuje způsob zobrazení nabídek a příkazů ve vašich balíčcích VSPackage pomocí souborů tabulky příkazů XML (.vsct) namísto soubory konfigurace (.ctc) tabulky příkazů. Další informace najdete v tématu [tabulky příkazů aplikace Visual Studio (. Vsct) soubory](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).  
+> Určuje způsob zobrazení nabídek a příkazů ve vašich balíčcích VSPackage pomocí souborů tabulky příkazů XML (.vsct) namísto soubory konfigurace (.ctc) tabulky příkazů. Další informace najdete v tématu [tabulky příkazů aplikace Visual Studio (. Vsct) soubory](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).  
   
 ## <a name="prerequisites"></a>Požadavky  
  Spouští se v sadě Visual Studio 2015, nenainstalujete sadu Visual Studio SDK ze služby Stažení softwaru. Je zahrnut jako volitelná funkce v instalačním programu sady Visual Studio. VS SDK můžete také nainstalovat později. Další informace najdete v tématu [instalace sady Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  

@@ -11,17 +11,17 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d98755912674670d614d4b063075500427c1d996
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 2a0858a3f1f1e98f7f6d0bde87036126ec31320f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604675"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428831"
 ---
 # <a name="support-for-project-and-configuration-properties"></a>Podpora vlastností projektu a konfigurace
 **Vlastnosti** okna [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrované vývojové prostředí (IDE) můžete zobrazit vlastnosti projektu a konfigurace. Stránky vlastností pro vlastní typ projektu můžete zadat tak, aby uživatel může nastavit vlastnosti pro vaši aplikaci.
 
- Vyberte uzel projektu v **Průzkumníka řešení** a pak levým na **vlastnosti** na **projektu** nabídku, můžete otevřít dialogové okno, které obsahuje projekt a konfiguraci Vlastnosti. V [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] a [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]a typy odvozené z těchto jazyků toto dialogové okno se zobrazí jako stránka s kartami v projektu [Obecné, prostředí, dialogové okno Možnosti](../../ide/reference/general-environment-options-dialog-box.md). Další informace najdete v tématu [není v sestavení: Průvodce: Vystavení vlastností konfigurace projektů a (C#)](https://msdn.microsoft.com/library/d850d63b-25e2-4505-9f3d-eb038d7c1d0e).
+ Vyberte uzel projektu v **Průzkumníka řešení** a pak levým na **vlastnosti** na **projektu** nabídku, můžete otevřít dialogové okno, které obsahuje projekt a konfiguraci Vlastnosti. V [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] a [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]a typy odvozené z těchto jazyků toto dialogové okno se zobrazí jako stránka s kartami v projektu [Obecné, prostředí, dialogové okno Možnosti](../../ide/reference/general-environment-options-dialog-box.md). Další informace najdete v tématu [není v sestavení: Návod: Vystavení vlastností konfigurace projektů a (C#)](https://msdn.microsoft.com/library/d850d63b-25e2-4505-9f3d-eb038d7c1d0e).
 
  Managed Package Framework pro projekty (MPFProj) poskytuje pomocné třídy pro vytváření a správu nový systém projektů. Zdrojového kódu a kompilace pokyny najdete v [MPF projektů – Visual Studio 2013](https://github.com/tunnelvisionlabs/MPFProj10).
 
@@ -51,7 +51,7 @@ ms.locfileid: "56604675"
  Je odpovědností se projekt uchová vlastnosti projektu a konfigurace souboru projektu.
 
 > [!NOTE]
->  Projekt můžete optimalizovat trvalost zachování pouze hodnoty vlastností, které se liší od výchozí hodnoty.
+> Projekt můžete optimalizovat trvalost zachování pouze hodnoty vlastností, které se liší od výchozí hodnoty.
 
 ## <a name="support-for-project-and-configuration-properties"></a>Podpora vlastností projektu a konfigurace
  `Microsoft.VisualStudio.Package.SettingsPage` Třída implementuje stránky vlastností projektu a konfigurace. Výchozí implementace `SettingsPage` nabízí veřejné vlastnosti uživatele v mřížce obecných vlastností. `Microsoft.VisualStudio.Package.HierarchyNode.GetPropertyPageGuids` Metoda vybere třídy odvozené od `SettingsPage` pro mřížek vlastností projektu. `Microsoft.VisualStudio.Package.ProjectNode.GetConfigPropertyPageGuids` Metoda vybere třídy odvozené od `SettingsPage` pro mřížek vlastností konfigurace. Typ projektu by měly přepsat tyto metody k výběru příslušné vlastnosti stránky.
@@ -63,7 +63,7 @@ ms.locfileid: "56604675"
 - `Microsoft.VisualStudio.Package.SettingsPage.GetConfigProperty` a `Microsoft.VisualStudio.Package.SettingsPage.SetConfigProperty` zachovat vlastnosti konfigurace.
 
   > [!NOTE]
-  >  Implementace `Microsoft.VisualStudio.Package.SettingsPage` a `Microsoft.VisualStudio.Package.ProjectNode` třídy použijte `Microsoft.Build.BuildEngine` (MSBuild) metody pro získání a nastavení vlastností projektu a konfigurace ze souboru projektu.
+  > Implementace `Microsoft.VisualStudio.Package.SettingsPage` a `Microsoft.VisualStudio.Package.ProjectNode` třídy použijte `Microsoft.Build.BuildEngine` (MSBuild) metody pro získání a nastavení vlastností projektu a konfigurace ze souboru projektu.
 
   Odvozujete od třídy `SettingsPage` musí implementovat `Microsoft.VisualStudio.Package.SettingsPage.ApplyChanges` a `Microsoft.VisualStudio.Package.SettingsPage.BindProperties` zachovat vlastnosti projektu nebo konfigurace souboru projektu.
 
@@ -81,7 +81,7 @@ ms.locfileid: "56604675"
  <xref:System.ComponentModel.CategoryAttribute>, <xref:System.ComponentModel.DisplayNameAttribute>, A <xref:System.ComponentModel.DescriptionAttribute> atributy určují, rozložení, označování popisky a popis vlastností projektu a konfigurační stránce obecných vlastností. Tyto atributy určit kategorii, zobrazí název a popis možnosti, v uvedeném pořadí.
 
 > [!NOTE]
->  Ekvivalentní atributy, SRCategory, LocDisplayName a SRDescription, použití řetězcových prostředků pro lokalizaci a jsou definovány v [MPF projektů – Visual Studio 2013](https://github.com/tunnelvisionlabs/MPFProj10).
+> Ekvivalentní atributy, SRCategory, LocDisplayName a SRDescription, použití řetězcových prostředků pro lokalizaci a jsou definovány v [MPF projektů – Visual Studio 2013](https://github.com/tunnelvisionlabs/MPFProj10).
 
  Předpokládejme následující fragment kódu:
 

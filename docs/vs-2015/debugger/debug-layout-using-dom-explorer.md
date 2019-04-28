@@ -18,12 +18,12 @@ caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2e9292464ee117cf79a249c1c1a0636edb931c1d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8b9d0d2a3250785e5ff60d65a6bf1264892c6f98
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063229"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434118"
 ---
 # <a name="debug-layout-using-dom-explorer"></a>Ladění rozložení pomocí průzkumníka modelu DOM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "wi
  **Rozložení** karty Průzkumníku modelu DOM zobrazí [šablon stylů CSS rámečkový model](http://go.microsoft.com/fwlink/?LinkID=238778) pro vybraný element ve [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] aplikace, aplikace Windows Phone Store nebo aplikace vytvořená pomocí nástrojů Visual Studio pro Apache Cordova. Tento vizuální reprezentaci modelu pole můžete použít k identifikaci a změnit rozložení související hodnoty, které mají vliv vzhled elementů.  
   
 > [!TIP]
->  Změny provedené v **rozložení** kartě nejsou trvalé. Můžete dělat trvalé změny zdrojového kódu a pak aktualizujte aplikaci pomocí **aktualizovat Windows app** tlačítko (pouze aplikace Windows Store a Windows Phone Store) na panelu nástrojů ladění. Díky tomu se můžete vyhnout restartování ladicího programu.  
+> Změny provedené v **rozložení** kartě nejsou trvalé. Můžete dělat trvalé změny zdrojového kódu a pak aktualizujte aplikaci pomocí **aktualizovat Windows app** tlačítko (pouze aplikace Windows Store a Windows Phone Store) na panelu nástrojů ladění. Díky tomu se můžete vyhnout restartování ladicího programu.  
   
  Úprava stránky rozložení, které nejsou zobrazeny v modelu pole pomocí Průzkumníka modelu DOM, naleznete v tématu [rychlý start: Ladění kódu HTML a CSS](../debugger/quickstart-debug-html-and-css.md) a [styly ladění šablon stylů CSS pomocí Průzkumníka modelu DOM](../debugger/debug-css-styles-using-dom-explorer.md).  
   
@@ -76,21 +76,21 @@ Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "wi
 7. Otevřete část 4 posouvání nebo flicking.  
   
     > [!TIP]
-    >  Pozice Phone emulátor ani simulátor vpravo vedle okna sady Visual Studio, protože okamžitě uvidíte výsledky výběru a změny stylů CSS.  
+    > Pozice Phone emulátor ani simulátor vpravo vedle okna sady Visual Studio, protože okamžitě uvidíte výsledky výběru a změny stylů CSS.  
   
      Když se načte 4 části, naleznete v tématu nižší imagí nevypadají správně. Vyjmutí na polovinu (s levé poloviční chybějící) se zobrazí každý obrázek položky.  
   
 8. Přepněte do aplikace Visual Studio a zvolte **vybrat Element** v Průzkumníku modelu DOM (nebo stiskněte kombinaci kláves Ctrl + B). Změní se režim výběru, takže budete moci kliknutím vybrat položku a aplikace se zobrazí v popředí. Po kliknutí se režim přepne zpět.  
   
     > [!TIP]
-    >  Vybrat elementy HTML přímo v Průzkumníku modelu DOM můžete také použít klávesy se šipkami nebo jiné metody. Další informace o výběru elementů naleznete v tématu [rychlý start: Ladění kódu HTML a CSS](../debugger/quickstart-debug-html-and-css.md).  
+    > Vybrat elementy HTML přímo v Průzkumníku modelu DOM můžete také použít klávesy se šipkami nebo jiné metody. Další informace o výběru elementů naleznete v tématu [rychlý start: Ladění kódu HTML a CSS](../debugger/quickstart-debug-html-and-css.md).  
   
 9. V emulátoru telefonu nebo simulátoru vyberte šedou pravé polovině některou k imagí, které se odstraní v polovině. Zvýraznění se objeví kolem vybraný prvek, jak je vidět v emulátoru Windows Phone:  
   
      ![Výběr prvku modelu DOM](../debugger/media/js-css-layout-select.png "JS_CSS_Layout_Select")  
   
     > [!TIP]
-    >  Simulátor podporuje prvky zobrazit pole zvýraznění kolem elementů modelu DOM dřív, než vyberete jeden ukazatel myši. Emulátor Windows Phone to nepodporuje.  
+    > Simulátor podporuje prvky zobrazit pole zvýraznění kolem elementů modelu DOM dřív, než vyberete jeden ukazatel myši. Emulátor Windows Phone to nepodporuje.  
   
      Když vyberete prvek modelu DOM, Průzkumníka modelu DOM automaticky vybere odpovídající element IMG v sadě Visual Studio. Element vybrána v Průzkumníku modelu DOM vypadá takto:  
   
@@ -114,7 +114,7 @@ Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "wi
 11. Pokud chcete zjistit, jak je okraj doleva pravidlo použito, zvolte **vypočítané** kartu a podívejte se do části pravidlo okraj doleva. Uvidíte, že toto pravidlo se nastaví pomocí 5em hodnotu, ale je vypočítaná hodnota 66.66px nebo 146.66px, v závislosti na cílové zařízení.  
   
     > [!TIP]
-    >  **Vypočítané** kartě se zobrazí, že je levý okraj pravidlo nastavené `..hubpage .hub. section4 .sub-image-row img` selektor šablon stylů CSS v hub.css nalezen. V této ukázkové aplikaci, která je, kde budete muset provést opravu.  
+    > **Vypočítané** kartě se zobrazí, že je levý okraj pravidlo nastavené `..hubpage .hub. section4 .sub-image-row img` selektor šablon stylů CSS v hub.css nalezen. V této ukázkové aplikaci, která je, kde budete muset provést opravu.  
   
      Můžete také použít **rozložení** kartu k testování změny hodnot rozložení.  
   

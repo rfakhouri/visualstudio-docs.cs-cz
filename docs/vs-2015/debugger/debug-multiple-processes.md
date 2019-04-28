@@ -20,12 +20,12 @@ caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cb9ff8e31004a3b314102ad6b0e64cd72cab6467
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9a2679825d41a6360dde05e7511d607f8be69dfa
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039693"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434109"
 ---
 # <a name="debug-multiple-processes"></a>Ladění více procesů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,7 +64,7 @@ Tady je postup spuštění procesů ladění, přepínání mezi procesy, přeru
 - [Spustit ladění více procesů v řešení sady Visual Studio](#BKMK_Start_debugging_multiple_processes_in_a_Visual_Studio_solution) • [změňte spouštěný projekt](#BKMK_Change_the_startup_project) • [spuštění určitého projektu v řešení](#BKMK_Start_a_specific_project_in_a_solution) • [spustit více projektů v řešení](#BKMK_Start_multiple_projects_in_a_solution) • [připojit k procesu](#BKMK_Attach_to_a_process) • [automaticky spustit proces v ladicím programu](#BKMK_Automatically_start_an_process_in_the_debugger)  
   
 > [!NOTE]
->  Ladicí program nepřipojí automaticky k podřízenému procesu, který je spuštěn procesem ladění i v případě, že je podřízený projekt ve stejném řešení. Ladění podřízeného procesu:  
+> Ladicí program nepřipojí automaticky k podřízenému procesu, který je spuštěn procesem ladění i v případě, že je podřízený projekt ve stejném řešení. Ladění podřízeného procesu:  
 > 
 > - Připojte se k podřízenému procesu po jeho spuštění.  
 > 
@@ -166,7 +166,7 @@ Tady je postup spuštění procesů ladění, přepínání mezi procesy, přeru
 ### <a name="BKMK_Break__step__and_continue_commands"></a> Přerušit, krokovat a pokračovat příkazy  
   
 > [!NOTE]
->  Ve výchozím nastavení "break", pokračovat a kroku ladicího programu příkazy vliv na všechny procesy, které jsou právě laděny. Chcete-li toto chování změnit, přečtěte si téma [konfigurace chování spuštění více procesů](#BKMK_Configure_the_execution_behavior_of_multiple_processes)  
+> Ve výchozím nastavení "break", pokračovat a kroku ladicího programu příkazy vliv na všechny procesy, které jsou právě laděny. Chcete-li toto chování změnit, přečtěte si téma [konfigurace chování spuštění více procesů](#BKMK_Configure_the_execution_behavior_of_multiple_processes)  
   
 ||||  
 |-|-|-|  
@@ -197,7 +197,7 @@ Tady je postup spuštění procesů ladění, přepínání mezi procesy, přeru
   Například pokud spustíte ladění procesu v řešení sady Visual Studio, připojit k jiným procesem, který je již spuštěn a klikněte na tlačítko **Zastavit ladění**, relace ladění skončí, proces spuštěný v sadě Visual Studio je ukončen, zatímco proces, který jste připojili, zůstane spuštěn. Následující postupy můžete použít k řízení způsobu, jakým zastavujete ladění.  
   
 > [!NOTE]
->  **Přerušit všechny procesy při přerušení jednoho procesu** možnost nemá vliv na zastavení ladění nebo ukončení a odpojení od procesů.  
+> **Přerušit všechny procesy při přerušení jednoho procesu** možnost nemá vliv na zastavení ladění nebo ukončení a odpojení od procesů.  
   
  **Chcete-li změnit Zastavit ladění vliv na jednotlivé procesy**  
   

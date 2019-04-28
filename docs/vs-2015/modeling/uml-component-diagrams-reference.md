@@ -19,12 +19,12 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 91300aea88c86d0791db5bd73b91c3b5069ad607
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 581906741bb43eb221c6a0b6f6bb9aeccd2f3945
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59656983"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424387"
 ---
 # <a name="uml-component-diagrams-reference"></a>Diagramy komponent UML: Odkaz
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ V sadě Visual Studio *diagram komponent* ukazuje části návrhu pro softwarov�
  Další informace o tom, jak pomocí diagramů komponent při navrhování naleznete v tématu [modelování architektury aplikace](../modeling/model-your-app-s-architecture.md).  
 
 > [!NOTE]
->  Toto téma popisuje elementy, které můžete použít v diagramech komponent. Podrobnější informace o tom, jak nakreslit diagramy komponent naleznete v tématu [diagramy komponent UML: Pokyny pro](../modeling/uml-component-diagrams-guidelines.md). Další informace o tom, jak nakreslit diagramy modelování obecně naleznete v tématu [modelů a diagramů UML upravit](../modeling/edit-uml-models-and-diagrams.md).  
+> Toto téma popisuje elementy, které můžete použít v diagramech komponent. Podrobnější informace o tom, jak nakreslit diagramy komponent naleznete v tématu [diagramy komponent UML: Pokyny pro](../modeling/uml-component-diagrams-guidelines.md). Další informace o tom, jak nakreslit diagramy modelování obecně naleznete v tématu [modelů a diagramů UML upravit](../modeling/edit-uml-models-and-diagrams.md).  
 
 ## <a name="reading-component-diagrams"></a>Čtení diagramů komponent  
  Následující tabulka popisuje prvky, které můžete použít v diagramu komponent spolu s jejich hlavní vlastnosti. Úplný seznam vlastnosti prvků, naleznete v tématu [vlastnosti elementů v diagramech komponent UML](../modeling/properties-of-elements-on-uml-component-diagrams.md).  

@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4a6c48d878f2bacd8317878366980ecc317f7adb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ba4d98a1d6a59a35bf4aa279831036eecec99989
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60055259"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440587"
 ---
 # <a name="how-to-use-xml-snippets"></a>Postupy: Použití fragmentů XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ Fragmenty XML lze vyvolat pomocí následujících dvou příkazů v místní na
  Následující postupy popisují, jak získat přístup k **Vložit fragment** příkazu.  
   
 > [!NOTE]
->  **Vložit fragment** příkaz je také k dispozici prostřednictvím klávesové zkratky (CTRL + K, a CTRL + X).  
+> **Vložit fragment** příkaz je také k dispozici prostřednictvím klávesové zkratky (CTRL + K, a CTRL + X).  
   
 #### <a name="to-insert-snippets-from-the-shortcut-menu"></a>Chcete-li vložit fragmenty kódu z místní nabídky  
   
@@ -60,7 +60,7 @@ Fragmenty XML lze vyvolat pomocí následujících dvou příkazů v místní na
 4. Stiskněte klávesu TAB, kartu, která se má vyvolat fragment kódu XML.  
   
 > [!NOTE]
->  Můžou nastat případy při získání vyvolání není fragment kódu XML. Například, pokud se pokusíte vložit `xs:complexType` element v rámci `xs:element` uzlu editoru není generování fragmentu XML. Když `xs:complexType` element se používá v `xs:element` uzel, tak editor neobsahuje žádná data k vložení neexistují žádné povinné atributy nebo dílčí prvky,.  
+> Můžou nastat případy při získání vyvolání není fragment kódu XML. Například, pokud se pokusíte vložit `xs:complexType` element v rámci `xs:element` uzlu editoru není generování fragmentu XML. Když `xs:complexType` element se používá v `xs:element` uzel, tak editor neobsahuje žádná data k vložení neexistují žádné povinné atributy nebo dílčí prvky,.  
   
 #### <a name="to-insert-snippets-using-the-shortcut-name"></a>Chcete-li vložit fragmenty kódu pomocí názvu odkazu  
   
@@ -76,7 +76,7 @@ Fragmenty XML lze vyvolat pomocí následujících dvou příkazů v místní na
  Následující postupy popisují, jak získat přístup k **obklopit fragmentem** příkazu.  
   
 > [!NOTE]
->  **Obklopit fragmentem** příkaz je také k dispozici prostřednictvím klávesové zkratky (CTRL + K, a CTRL + S).  
+> **Obklopit fragmentem** příkaz je také k dispozici prostřednictvím klávesové zkratky (CTRL + K, a CTRL + S).  
   
 #### <a name="to-use-surround-with-from-the-context-menu"></a>Použití příkazu Obklopit s v místní nabídce  
   

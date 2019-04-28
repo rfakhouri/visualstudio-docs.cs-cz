@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a4d4d6a8399d3d40eaefe86ed9cbb3105729f08a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 126aa1ad57aa5f8961803b8443365c208f5623ff
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60118016"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63421255"
 ---
 # <a name="walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service"></a>Návod: Vytvoření aplikace WPF plochy připojené k mobilní službě Azure
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,14 +56,14 @@ Windows Presentation Foundation (WPF) můžete rychle vytvářet moderní aplika
 3. V levém podokně vyberte **WindowsAzure.MobileServices**a poté v pravém podokně vyberte **nainstalovat** tlačítko.  
   
     > [!NOTE]
-    >  Pokud **ve verzi Preview** se zobrazí dialogové okno, projděte si navrhované změny a klikněte na tlačítko **OK** tlačítko.  
+    > Pokud **ve verzi Preview** se zobrazí dialogové okno, projděte si navrhované změny a klikněte na tlačítko **OK** tlačítko.  
   
 4. V **přijetí licence** dialogové okno, zkontrolujte licenční podmínky a přijměte je kliknutím **souhlasím** tlačítko.  
   
      Přidá potřebné odkazy do **Průzkumníka řešení**.  
   
     > [!NOTE]
-    >  Pokud nesouhlasíte s licenčními podmínkami, zvolte **nesouhlasím** tlačítko. Nebudete moct dokončit zbytek návodu.  
+    > Pokud nesouhlasíte s licenčními podmínkami, zvolte **nesouhlasím** tlačítko. Nebudete moct dokončit zbytek návodu.  
   
 ## <a name="create-the-user-interface"></a>Vytvoření uživatelského rozhraní  
  Dalším krokem je vytvoření uživatelského rozhraní pro aplikaci. Nejdřív vytvoříte opakovaně použitelné uživatelský ovládací prvek, který zobrazí standardní vedle sebe dva podokno rozložení. Budete přidat uživatelský ovládací prvek do hlavního okna aplikace a přidat ovládací prvky k zadávání a zobrazování dat a napsání kódu pro definování interakci s back-end mobilní službě.  
@@ -288,7 +288,7 @@ Windows Presentation Foundation (WPF) můžete rychle vytvářet moderní aplika
      ![Hlavní okno MainWindow v návrháři](../designers/media/wpfquickstart2.PNG "WPFQuickStart2")  
   
     > [!NOTE]
-    >  Při dalším několik postupů můžou se zobrazovat chyby v **seznam chyb** Pokud je otevřený. Nedělejte si starosti; Tyto chyby zmizí po dokončení zbývajících postupy.  
+    > Při dalším několik postupů můžou se zobrazovat chyby v **seznam chyb** Pokud je otevřený. Nedělejte si starosti; Tyto chyby zmizí po dokončení zbývajících postupy.  
   
 6. V **Průzkumníku řešení**, rozbalte **souboru MainWindow.xaml** uzlu a otevřít **MainWindow.xaml.cs** nebo **soubor MainWindow.xaml.vb** souboru.  
   
@@ -482,7 +482,7 @@ Windows Presentation Foundation (WPF) můžete rychle vytvářet moderní aplika
 3. V **novou mobilní službu** dialogového okna, vyberte **URL** textového pole a zadejte `wpfquickstart01`.  
   
     > [!NOTE]
-    >  Budete muset změnit číselnou část adresy URL. Microsoft Azure vyžaduje jedinečnou adresu URL pro každou mobilní službu.  
+    > Budete muset změnit číselnou část adresy URL. Microsoft Azure vyžaduje jedinečnou adresu URL pro každou mobilní službu.  
   
      Tím se nastaví adresu URL pro službu `https://wpfquickstart01.azure-mobile.net/`.  
   
@@ -491,7 +491,7 @@ Windows Presentation Foundation (WPF) můžete rychle vytvářet moderní aplika
 5. V **oblasti** klikněte na položku datové centrum, ve které chcete nasadit na mobilní službu a klikněte na tlačítko **Další** tlačítko (šipka doprava).  
   
     > [!NOTE]
-    >  Pro tuto službu budete používat výchozí **back-ENDU** nastavení **JavaScript**.  
+    > Pro tuto službu budete používat výchozí **back-ENDU** nastavení **JavaScript**.  
   
 6. Pokud vytváříte novou databázi na **nastavení databáze** stránku, **SERVER** seznamu zvolte **nový SQL server database**, zadejte vaše **přihlášení k serveru SQL NÁZEV** a **heslo**a klikněte na tlačítko **Complete** (zaškrtnutí).  
   

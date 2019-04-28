@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 15bb3c7bca9db7e268dde998e210629a8167497f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ad39c8b8bad373cd7892a1eeda89b149622913a7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109553"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430366"
 ---
 # <a name="walkthrough-create-and-debug-a-sharepoint-workflow-solution"></a>Návod: Vytváření a ladění řešení pracovního postupu služby SharePoint
   Tento návod ukazuje, jak vytvořit šablonu základního sekvenčního pracovního postupu. Pracovní postup kontroluje vlastnosti knihovny dokumentů sdílené k určení, zda byly zkontrolovány dokumentu. Pokud byly zkontrolovány dokumentu, dokončení pracovního postupu.
@@ -35,9 +35,9 @@ ms.locfileid: "60109553"
 - Zpracování události aktivit pracovního postupu.
 
 > [!NOTE]
->  I když tento návod používá projekt sekvenčního pracovního postupu, proces je stejný jako pro projekt stavu počítače pracovního postupu.
+> I když tento návod používá projekt sekvenčního pracovního postupu, proces je stejný jako pro projekt stavu počítače pracovního postupu.
 >
->  Také váš počítač může zobrazit jiné názvy nebo umístění pro některé uživatele sady Visual Studio prvky rozhraní v následujících pokynech. Tyto prvky jsou určeny edicí sady Visual Studio a použitým nastavením. Další informace najdete v tématu [přizpůsobení integrovaného vývojového prostředí sady Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
+> Také váš počítač může zobrazit jiné názvy nebo umístění pro některé uživatele sady Visual Studio prvky rozhraní v následujících pokynech. Tyto prvky jsou určeny edicí sady Visual Studio a použitým nastavením. Další informace najdete v tématu [přizpůsobení integrovaného vývojového prostředí sady Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="prerequisites"></a>Požadavky
  K dokončení tohoto návodu budete potřebovat následující komponenty:

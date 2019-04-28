@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 70960cc92d60ebbffa34dda75557dfcb9a1a0d67
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ab220b8a21db60918462e4c060ce613171e3faad
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60092718"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442367"
 ---
 # <a name="how-to-add-a-command-to-the-shortcut-menu"></a>Postupy: Přidání příkazu do místní nabídky
 
@@ -118,7 +118,7 @@ V tomto tématu použijte metodu, pokud:
 5. Nahraďte `{000...000}` s identifikátorem GUID, který identifikuje skupiny a položkami nabídky. Chcete-li získat nový identifikátor GUID, použijte **Create GUID** nástroj **nástroje** nabídky.
 
     > [!NOTE]
-    >  Pokud chcete přidat další skupiny nebo položky nabídky, můžete použít stejný identifikátor GUID. Ale musíte použít nové hodnoty `IDSymbols`.
+    > Pokud chcete přidat další skupiny nebo položky nabídky, můžete použít stejný identifikátor GUID. Ale musíte použít nové hodnoty `IDSymbols`.
 
 6. V kódu, který jste zkopírovali z tohoto postupu nahraďte každý výskyt následující řetězce s vlastními řetězci:
 
@@ -296,7 +296,7 @@ private const int cmdidMyContextMenuCommand = 1;
  Použijte stejnou hodnotu GUID jako vložený v **Commands.vsct**.
 
 > [!NOTE]
->  Pokud změníte části symboly VSCT souboru, je nutné změnit tyto deklarace tak, aby odpovídaly. Také by se měl zvýšit číslo verze v Package.tt
+> Pokud změníte části symboly VSCT souboru, je nutné změnit tyto deklarace tak, aby odpovídaly. Také by se měl zvýšit číslo verze v Package.tt
 
  Zaregistrujte vaše příkazy nabídek jako součást této sady příkazů. `GetMenuCommands()` je volána při inicializaci diagramu:
 

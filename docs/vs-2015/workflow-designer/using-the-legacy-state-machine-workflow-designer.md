@@ -18,12 +18,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e96d1db524d5a80a9f298fa84ca1ccf27e28fbf4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 54469f2e255ff9ea726ea1b6c13abcb55c33252d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54752684"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444122"
 ---
 # <a name="using-the-legacy-state-machine-workflow-designer"></a>Používání starší verze návrháře postupu provádění stavového stroje
 Při vytváření nového projektu pracovního postupu stavu počítače v [!INCLUDE[vs2010](../includes/vs2010-md.md)] , zaměřuje na buď [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] nebo [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)], můžete použít buď **Konzolová aplikace pracovního postupu stavu počítače** nebo  **Stav počítače pracovního postupu knihovny** šablony starší verzi projektu. Pokud zvolíte některou z těchto šablon projektů stavu počítače, zobrazí se jako starší verzi pracovního postupu návrháře uživatelské rozhraní návrháře stav počítače. Informace o šablonách projektů starší verze stavu počítače najdete v tématu [jak: Vytváření konzolových aplikací pracovních postupů stavového stroje (starší verze)](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md) a [jak: Vytvoření knihovny pracovních postupů stavového stroje (starší verze)](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md).  
@@ -53,9 +53,9 @@ Při vytváření nového projektu pracovního postupu stavu počítače v [!INC
  Při přetažení nový **umístit aktivitu StateActivity** na návrhovou plochu pracovního postupu můžete přidat [EventDrivenActivity](http://go.microsoft.com/fwlink?LinkID=65029), [StateInitializationActivity](http://go.microsoft.com/fwlink?LinkID=65044), [ StateFinalizationActivity](http://go.microsoft.com/fwlink?LinkID=65043), nebo další **umístit aktivitu StateActivity** aktivitám v podobě podřízené aktivity.  
   
 > [!CAUTION]
->  Při vytváření pracovních postupů pomocí návrháře postupu provádění stavu počítače, je třeba sledovat struktura pracovního postupu při návrhu se **Osnova dokumentu** zobrazení okna. Zobrazení struktury pracovní postup stavového stroje v **Osnova dokumentu** zobrazení okna zrcadlí logické rozložení aktivit v souboru označení pracovního postupu. Fyzické rozložení aktivit pracovního postupu, jak se objeví na návrhové ploše nemusí zrcadlí logické rozložení aktivit v souboru označení pracovního postupu.  
+> Při vytváření pracovních postupů pomocí návrháře postupu provádění stavu počítače, je třeba sledovat struktura pracovního postupu při návrhu se **Osnova dokumentu** zobrazení okna. Zobrazení struktury pracovní postup stavového stroje v **Osnova dokumentu** zobrazení okna zrcadlí logické rozložení aktivit v souboru označení pracovního postupu. Fyzické rozložení aktivit pracovního postupu, jak se objeví na návrhové ploše nemusí zrcadlí logické rozložení aktivit v souboru označení pracovního postupu.  
 >   
->  Chcete-li otevřít **Osnova dokumentu** okno na **zobrazení** nabídky, přejděte **ostatní Windows**a pak vyberte **Osnova dokumentu**.  
+> Chcete-li otevřít **Osnova dokumentu** okno na **zobrazení** nabídky, přejděte **ostatní Windows**a pak vyberte **Osnova dokumentu**.  
   
 ## <a name="see-also"></a>Viz také  
  [Postupy: Vytváření konzolových aplikací pracovních postupů stavového stroje (starší verze)](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md)   

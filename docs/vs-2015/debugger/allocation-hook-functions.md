@@ -24,12 +24,12 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d8d2aff47737443b998cfae8d16c3d95a5eb1d2a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: b617f0c154c14113370fff257c6837ce8314134a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54794942"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439940"
 ---
 # <a name="allocation-hook-functions"></a>Funkce háku přidělení
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ ms.locfileid: "54794942"
 Funkce háku přidělení, nainstalovat pomocí [_CrtSetAllocHook](http://msdn.microsoft.com/library/405df37b-2fd1-42c8-83bc-90887f17f29d), je volána pokaždé, když přidělená, znovu přidělený nebo uvolnění paměti. Tento typ připojení je použít k mnoha různým účelům. Použije k testování způsob, jakým aplikace zpracovává situace nedostatku paměti, například nebo prozkoumat vzory přidělování nebo do protokolu informace o přidělení paměti pro pozdější analýzu.  
   
 > [!NOTE]
->  Mějte na paměti omezení týkající se použití funkce knihovny run-time jazyka C ve funkci háku přidělení, je popsáno v [zavěšení přidělení a přidělení paměti jazyka C Run-Time](../debugger/allocation-hooks-and-c-run-time-memory-allocations.md).  
+> Mějte na paměti omezení týkající se použití funkce knihovny run-time jazyka C ve funkci háku přidělení, je popsáno v [zavěšení přidělení a přidělení paměti jazyka C Run-Time](../debugger/allocation-hooks-and-c-run-time-memory-allocations.md).  
   
  Funkce háku přidělení by měl mít prototyp vypadat asi takto:  
   

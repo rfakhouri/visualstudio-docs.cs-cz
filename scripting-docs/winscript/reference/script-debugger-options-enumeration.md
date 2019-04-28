@@ -13,18 +13,18 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 25f74902e2fea451ae5ddaf75d215c3a6c70b050
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: 404d3939e0a328beb5e2413d25885fddf8478ead
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58155040"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443645"
 ---
 # <a name="scriptdebuggeroptions-enumeration"></a>Výčet SCRIPT_DEBUGGER_OPTIONS
 Označuje sadu možností a/nebo funkce, které se vztahují na připojený ladicí program. Použít v [IDebugApplicationNode100::GetExcludedDocuments](../../winscript/reference/idebugapplicationnode100-getexcludeddocuments.md) a [IDebugApplicationNode100::SetFilterForEventSink](../../winscript/reference/idebugapplicationnode100-setfilterforeventsink.md)  
   
 > [!IMPORTANT]
->  Tyto konstanty jsou implementovány pomocí PDM v10.0 a větší. Nachází se v souboru activdbg100.h.  
+> Tyto konstanty jsou implementovány pomocí PDM v10.0 a větší. Nachází se v souboru activdbg100.h.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -34,7 +34,7 @@ typedef SCRIPT_DEBUGGER_OPTIONS
   
 ## <a name="members"></a>Členové  
   
-|Člen|Hodnota|Popis|  
+|Člen|Value|Popis|  
 |------------|-----------|-----------------|  
 |SDO_NONE|0x00000000|Nejsou nastaveny žádné možnosti.|  
 |SDO_ENABLE_FIRST_CHANCE_EXCEPTIONS|0x00000001|Označuje, že spuštění skriptu by měla vyvolat události BREAKREASON_ERROR, kdy je vyvolána výjimka. Tato možnost může nastavit ladicím programem nebo nastavit kódem uživatele prostřednictvím `Debug.enableFirstChanceExceptions(<true&#124;false>)`.|  

@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f4ac6947f8424c3b9aa7429ee378b4bb89be73ca
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55921589"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62545238"
 ---
 # <a name="ca1809-avoid-excessive-locals"></a>CA1809: Vyhněte se nadměrným lokálním hodnotám
 
@@ -30,7 +30,7 @@ ms.locfileid: "55921589"
 |Kategorie|Microsoft.Performance|
 |Narušující změna|Nenarušující|
 
-## <a name="cause"></a>příčina
+## <a name="cause"></a>Příčina
  Člen obsahuje více než 64 místních proměnných, z nichž některé mohou být vygenerovaný kompilátorem.
 
 ## <a name="rule-description"></a>Popis pravidla

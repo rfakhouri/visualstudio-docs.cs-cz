@@ -11,16 +11,16 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bb3168a53ca503a60a8aa5009d02a0f3a4d72b94
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: d9705555ad76663e1fb1bc402d5b050649d934ec
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56710809"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411187"
 ---
 # <a name="implement-type-visualizers-and-custom-viewers"></a>Implementace vizualizérů typů a vlastních prohlížečů
 > [!IMPORTANT]
->  V sadě Visual Studio 2015 je zastaralý tímto způsobem implementace vyhodnocovače výrazů. Informace o implementace vyhodnocovače výrazů modulu CLR najdete v tématu [vyhodnocovače výrazů modulu CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) a [ukázka Chyba při vyhodnocování výrazu spravované](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
+> V sadě Visual Studio 2015 je zastaralý tímto způsobem implementace vyhodnocovače výrazů. Informace o implementace vyhodnocovače výrazů modulu CLR najdete v tématu [vyhodnocovače výrazů modulu CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) a [ukázka Chyba při vyhodnocování výrazu spravované](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
 
  Vizualizérů typů a vlastních prohlížečů může uživatel zobrazit data určitého typu tak, aby lépe vystihuje než jednoduché výpis šestnáctkových čísel. Vyhodnocovače výrazů (EE) můžete přidružit konkrétní typy dat nebo proměnné vlastních prohlížečů. Tyto vlastní prohlížeče jsou implementované EE. EE může také podporovat vizualizátory, externí typ, které může pocházet z jiného dodavatele třetích stran nebo dokonce koncového uživatele.
 

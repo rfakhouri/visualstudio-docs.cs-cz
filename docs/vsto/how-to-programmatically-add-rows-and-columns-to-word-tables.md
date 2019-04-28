@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c590ed271897ac6aebb875bafcb1b6b50a753629
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 780d794874ae87f3310810f2b46127fdf2eb46c5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60078016"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419585"
 ---
 # <a name="how-to-programmatically-add-rows-and-columns-to-word-tables"></a>Postupy: Programové přidání řádků a sloupců do tabulek aplikace Word
   V tabulce aplikace Microsoft Office Word buňky jsou uspořádány do řádků a sloupců. Můžete použít <xref:Microsoft.Office.Interop.Word.Rows.Add%2A> metodu <xref:Microsoft.Office.Interop.Word.Rows> objektu pro přidání řádků do tabulky a <xref:Microsoft.Office.Interop.Word.Columns.Add%2A> metodu <xref:Microsoft.Office.Interop.Word.Columns> objektu, který chcete přidat sloupce.
@@ -30,7 +30,7 @@ ms.locfileid: "60078016"
  Následující příklady kódu je možné v přizpůsobení na úrovni dokumentu. Pokud chcete použít tyto příklady, spustit je z `ThisDocument` třídu ve vašem projektu. Tyto příklady předpokládají, že dokument související s přizpůsobením již má alespoň jednu tabulku.
 
 > [!IMPORTANT]
->  Tento kód se spustí jenom v projektech, které vytvoříte pomocí některého z následujících šablon projektu:
+> Tento kód se spustí jenom v projektech, které vytvoříte pomocí některého z následujících šablon projektu:
 >
 > - Dokument aplikace Word 2013
 > - Šablona pro Word 2013
@@ -57,9 +57,9 @@ ms.locfileid: "60078016"
  Můžete použít následující příklady kódu v doplňku VSTO. Pokud chcete použít příklady, spusťte z `ThisAddIn` třídu ve vašem projektu. Tyto příklady předpokládají, že aktivní dokument už má alespoň jednu tabulku.
 
 > [!IMPORTANT]
->  Tento kód se spustí jenom v projektech, které vytvoříte pomocí šablony doplňků VSTO pro Word.
+> Tento kód se spustí jenom v projektech, které vytvoříte pomocí šablony doplňků VSTO pro Word.
 >
->  Pokud chcete k provedení této úlohy v jakýkoli jiný typ projektu, je nutné přidat odkaz na **Microsoft.Office.Interop.Word** sestavení a pak pomocí třídy z tohoto sestavení k přidávání řádků a sloupců do tabulek. Další informace najdete v tématu [jak: Cílení na aplikace Office primárních sestaveních vzájemné spolupráce](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md) a [odkaz na primární spolupracující sestavení aplikace Word 2010](http://go.microsoft.com/fwlink/?LinkId=189588).
+> Pokud chcete k provedení této úlohy v jakýkoli jiný typ projektu, je nutné přidat odkaz na **Microsoft.Office.Interop.Word** sestavení a pak pomocí třídy z tohoto sestavení k přidávání řádků a sloupců do tabulek. Další informace najdete v tématu [jak: Cílení na aplikace Office primárních sestaveních vzájemné spolupráce](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md) a [odkaz na primární spolupracující sestavení aplikace Word 2010](http://go.microsoft.com/fwlink/?LinkId=189588).
 
 ### <a name="to-add-a-row-to-a-table"></a>Chcete-li přidat řádek do tabulky
 

@@ -10,12 +10,12 @@ ms.assetid: d2928498-f27c-46b4-a9cd-cba41fd85a10
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c94963b0ebfc6df454870222059a460b2868427d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 58b4350812900bc11e8aaa3222b3b0898db19e13
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54799903"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440790"
 ---
 # <a name="vspackage-setup-scenarios"></a>Scénáře instalace balíčku VSPackage
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -45,13 +45,13 @@ Sdílené instalačního programu balíčku VSPackage
  Jak je znázorněno na obrázku, sdílené komponenty jsou součástí Feat_Common funkci, která je vždy nainstalován. Tím, že funkce Feat_VS2002 a Feat_VS2003 viditelné, uživatelé si můžou vybrat během instalace do verzí [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] chtějí balíčku VSPackage pro integraci. Uživatele můžete také používat režim údržby Instalační služby systému Windows k přidání nebo odebrání funkcí, které v tomto případě přidává a odebírá VSPackage registrační informace z různých verzí [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
   
 > [!NOTE]
->  Sloupec zobrazení funkce nastavení na hodnotu 0 skrývá ho. Hodnota sloupec nízké úrovně, jako je například 1, zajistí, že bude vždy nainstalován. Další informace najdete v tématu [INSTALLLEVEL vlastnost](http://msdn.microsoft.com/library/aa369536\(VS.85\).aspx) a [tabulka funkcí](http://msdn.microsoft.com/library/aa368585.aspx).  
+> Sloupec zobrazení funkce nastavení na hodnotu 0 skrývá ho. Hodnota sloupec nízké úrovně, jako je například 1, zajistí, že bude vždy nainstalován. Další informace najdete v tématu [INSTALLLEVEL vlastnost](http://msdn.microsoft.com/library/aa369536\(VS.85\).aspx) a [tabulka funkcí](http://msdn.microsoft.com/library/aa368585.aspx).  
   
 ## <a name="scenario-2-shared-vspackage-update"></a>Scénář 2: Aktualizace sdílené VSPackage  
  V tomto scénáři je dodáván aktualizovanou verzi instalačního programu balíčku VSPackage ve scénáři 1. Pro účely diskuse, tato aktualizace přidává podporu pro [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], ale mohou být také jednodušší zabezpečení opravy nebo oprava chyby aktualizace service pack. Pravidla Instalační služby Windows pro instalaci součásti novější vyžadují, nejsou znovu zkopírovány beze změny součástí už v systému. V takovém případě systém s verze 1.0 již přepsat aktualizované součásti Comp_MyVSPackage.dll a umožněte uživatelům si vybrat, chcete-li přidat novou funkci Feat_VS2005 s jeho součásti Comp_VS2005_Reg.  
   
 > [!CAUTION]
->  Vždy, když je VSPackage sdílen mezi více verzí [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], je nezbytné, že novějšími verzemi sady VSPackage zachování zpětné kompatibility se staršími verzemi sady [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Pokud nejde udržovat zpětnou kompatibilitu, je nutné použít vedle sebe, privátní balíčky VSPackages. Další informace najdete v tématu [podporuje více verzí sady Visual Studio](../../extensibility/supporting-multiple-versions-of-visual-studio.md).  
+> Vždy, když je VSPackage sdílen mezi více verzí [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], je nezbytné, že novějšími verzemi sady VSPackage zachování zpětné kompatibility se staršími verzemi sady [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Pokud nejde udržovat zpětnou kompatibilitu, je nutné použít vedle sebe, privátní balíčky VSPackages. Další informace najdete v tématu [podporuje více verzí sady Visual Studio](../../extensibility/supporting-multiple-versions-of-visual-studio.md).  
   
  ![Obrázek balíčku aktualizace VS sdílené VS](../../extensibility/internals/media/vs-sharedpackageupdate.gif "VS_SharedPackageUpdate")  
 Sdílené instalačního programu aktualizace balíčku VSPackage  

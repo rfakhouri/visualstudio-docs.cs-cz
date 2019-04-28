@@ -10,18 +10,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f6c0d6928236c151e182c90056641432e4706952
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 101bc22cd33b3438e0dc82542c20b1bb103cb617
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59651292"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63418691"
 ---
 # <a name="add-items-to-the-add-new-item-dialog-box"></a>Přidání položek do dialogových oken přidat novou položku
 Proces přidávání položek do **přidat novou položku** spustí dialogové okno s klíči registru. Jak je znázorněno v následující položky registru **AddItemTemplates** oddíl obsahuje cestu a název adresáře, ve které položky k dispozici v **přidat novou položku** jsou umístěny dialogové okno.
 
 > [!NOTE]
->  Tabulka ihned po segmentu kódu obsahuje další informace o položku registru.
+> Tabulka ihned po segmentu kódu obsahuje další informace o položku registru.
 
  V této části se nachází v rámci **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\14.0Exp\Projects**.
 
@@ -35,14 +35,14 @@ Proces přidávání položek do **přidat novou položku** spustí dialogové o
 
  **SortPriority** = dword:00000064
 
-| Name | Type | Data (z *.rgs* souboru) | Popis |
+| Název | Type | Data (z *.rgs* souboru) | Popis |
 |------------------|-----------| - | - |
 | @ (Výchozí) | REG_SZ | #% IDS_ADDITEM_TEMPLATES_ENTRY % | ID prostředku pro **přidat položku** šablony. |
 | Val TemplatesDir | REG_SZ | TEMPLATE_PATH %\\&lt;SomeProjectItems&gt; | Cesta položky projektu zobrazí v dialogovém okně pro **přidat novou položku** průvodce. |
 | Val SortPriority | REG_DWORD | 100 ([!INCLUDE[vcprx64](../../extensibility/internals/includes/vcprx64_md.md)]) | Určuje pořadí řazení v uzlu stromu soubory zobrazené v **přidat novou položku** dialogové okno. |
 
 > [!NOTE]
->  Identifikátory GUID pro Visual C# a typy projektů jazyka Visual Basic jsou následující:
+> Identifikátory GUID pro Visual C# a typy projektů jazyka Visual Basic jsou následující:
 > - [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]: {FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}
 > - [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]: {F184B08F-C81C-45F6-A57F-5ABD9991F28F}
 
@@ -53,7 +53,7 @@ Proces přidávání položek do **přidat novou položku** spustí dialogové o
  Ale není potřeba mít všechno v jednom *.vsdir* souboru. Můžete mít jednu *.vsdir* soubor pro každou položku v adresáři. Další informace najdete v tématu [soubor průvodce (.vsz)](../../extensibility/internals/wizard-dot-vsz-file.md) a [soubory popis (.vsdir) adresář šablon](../../extensibility/internals/template-directory-description-dot-vsdir-files.md).
 
 > [!NOTE]
->  *.Vsdir* soubory v adresářích šablony jsou volitelné. Pokud chcete pouze umístit prvek projektu v adresáři a zobrazit je v **přidat novou položku** dialogovém okně můžete umístit tento soubor do adresáře šablon podle **TemplatesDir** příkazu. Soubor se pak zobrazí v pravém podokně **přidat novou položku** dialogové okno pro daný projekt. Ale pokud chcete zobrazit lokalizované titulek pro soubor nebo ikonu, je nutné zahrnout alespoň jeden *.vsdir* soubor v adresáři šablony.
+> *.Vsdir* soubory v adresářích šablony jsou volitelné. Pokud chcete pouze umístit prvek projektu v adresáři a zobrazit je v **přidat novou položku** dialogovém okně můžete umístit tento soubor do adresáře šablon podle **TemplatesDir** příkazu. Soubor se pak zobrazí v pravém podokně **přidat novou položku** dialogové okno pro daný projekt. Ale pokud chcete zobrazit lokalizované titulek pro soubor nebo ikonu, je nutné zahrnout alespoň jeden *.vsdir* soubor v adresáři šablony.
 
 ## <a name="group-project-items"></a>Seskupení položek projektu
  Pokud budete chtít obsahují šablony skupiny do složek v **přidat novou položku** dialogové okno pole stromu, musí mít podadresářích v kořenovém adresáři šablony položky v nich. Když **přidat novou položku** dialogové okno se zobrazí uživatelům, budou také naleznete v tématu podsložky a mít možnost vybrat elementy projektu z nich.

@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.assetid: 5233d3ff-6e89-4401-b449-51b4686becca
 caps.latest.revision: 33
 manager: jillfra
-ms.openlocfilehash: 3118ce72cd75baaf15fc66eedc5f2cd48c6f43d6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 10b57508c498607533a9a9b1fbbcf3b15b6f7a4f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096592"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422732"
 ---
 # <a name="making-custom-projects-version-aware"></a>Vytváření vlastních projektů s ohledem na verzi
 Ve vaší vlastní projektový systém můžete povolit projektech tohoto typu se načíst ve více verzích sady Visual Studio. Můžete také zabránit projektech tohoto typu načítání v dřívější verzi sady Visual Studio. Můžete také povolit tento projekt v případě, že projekt vyžaduje opravu, převod nebo vyřazení identifikovat na novější verzi.  
@@ -37,7 +37,7 @@ Ve vaší vlastní projektový systém můžete povolit projektech tohoto typu s
 6. `VSPUVF_PROJECT_DEPRECATED`: Označuje, že tento projekt už není podporovaná.  
   
 > [!NOTE]
->  Aby nedocházelo k záměně, není kombinovat upgradu příznaky, při jejich nastavení. Například nejednoznačný stav upgradu, jako Nevytvářejte `VSPUVF_PROJECT_SAFEREPAIR | VSPUVF_PROJECT_DEPRECATED`.  
+> Aby nedocházelo k záměně, není kombinovat upgradu příznaky, při jejich nastavení. Například nejednoznačný stav upgradu, jako Nevytvářejte `VSPUVF_PROJECT_SAFEREPAIR | VSPUVF_PROJECT_DEPRECATED`.  
   
  Typy projektu mohou implementovat funkci `UpgradeProjectFlavor_CheckOnly` z `IVsProjectFlavorUpgradeViaFactory2` rozhraní. Chcete-li tato funkce pracovat, `IVsProjectUpgradeViaFactory4.UpgradeProject_CheckOnly` ji musí volat implementaci již bylo zmíněno dříve. Toto volání je již implementováno v systému základního projektu jazyka Visual Basic nebo C#. Vliv tato funkce umožňuje typů projektu také určit požadavky na upgrade projektu, kromě co bylo zjištěno systému základního projektu. Kompatibilita dialogové okno zobrazuje nejzávažnějších z těchto dvou požadavků.  
   
@@ -72,7 +72,7 @@ Ve vaší vlastní projektový systém můžete povolit projektech tohoto typu s
      Pokud se rozhodnete implementovat tento kód, zobrazí se dialogové okno kompatibilita projektu. Pole se dialogové okno požádá uživatele o souhlas pro označení všech zadaných projektů jako nekompatibilní. Pokud uživatel souhlasí, `AskForUserConsentToBreakAssetCompat` vrátí `S_OK`; v opačném případě `AskForUserConsentToBreakAssetCompat` vrátí `OLE_E_PROMPTSAVECANCELLED`.  
   
     > [!WARNING]
-    >  V nejběžnějších scénářů `IVsHierarchy` pole bude obsahovat pouze jednu položku.  
+    > V nejběžnějších scénářů `IVsHierarchy` pole bude obsahovat pouze jednu položku.  
   
 3. Pokud `AskForUserConsentToBreakAssetCompat` vrátí `S_OK`, součást netelefonuje, ani přijímá změny, které porušit kompatibilitu.  
   
@@ -98,7 +98,7 @@ Ve vaší vlastní projektový systém můžete povolit projektech tohoto typu s
      Další informace naleznete v tématu <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.SetProperty%2A>.  
   
 > [!IMPORTANT]
->  Je nutné implementovat `VSHPROPID_MinimumDesignTimeCompatVersion` vlastnost projektu označit jako kompatibilní nebo nekompatibilní. Například pokud systém projektu používá souboru projektu MSBuild, přidejte do souboru projektu `<MinimumVisualStudioVersion>` vlastnost, jejíž hodnota se rovná odpovídající sestavení `VSHPROPID_MinimumDesignTimeCompatVersion` hodnotu vlastnosti.  
+> Je nutné implementovat `VSHPROPID_MinimumDesignTimeCompatVersion` vlastnost projektu označit jako kompatibilní nebo nekompatibilní. Například pokud systém projektu používá souboru projektu MSBuild, přidejte do souboru projektu `<MinimumVisualStudioVersion>` vlastnost, jejíž hodnota se rovná odpovídající sestavení `VSHPROPID_MinimumDesignTimeCompatVersion` hodnotu vlastnosti.  
   
 ## <a name="detecting-whether-a-project-is-incompatible"></a>Zjištění, zda projekt je nekompatibilní  
  Projekt, který je kompatibilní s aktuální verzí sady Visual Studio musí být udržovány načítání. Kromě toho projekt, který není kompatibilní nelze upgradovat nebo opravit. Proto se projekt musí být kontrolované kompatibility dvakrát: první, když se považuje pro upgrade nebo opravu a druhé, než je načten.  
@@ -129,7 +129,7 @@ IVsProjectUpgradeViaFactory::UpgradeProject_CheckOnly(
    Nové implementace v `IVsProjectUpgradeViaFactory4` a `IVsProjectFlavorUpgradeViaFactory2` povolit zadávání typ migrace vybraný k vyšší přesností.  
   
 > [!NOTE]
->  Můžete ukládat do mezipaměti výsledek kontroly kompatibility pomocí `UpgradeProject_CheckOnly` metoda, takže ji můžete použít také následných volání `CreateProject`.  
+> Můžete ukládat do mezipaměti výsledek kontroly kompatibility pomocí `UpgradeProject_CheckOnly` metoda, takže ji můžete použít také následných volání `CreateProject`.  
   
  Například pokud `UpgradeProject_CheckOnly` a `CreateProject` metody, které jsou určeny pro [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] s SP1 projektový systém zkontrolujte soubor projektu a zjistíte, že `<MinimumVisualStudioVersion>` vlastnost sestavení je "11.0", Visual Studio 2010 s aktualizací SP1 nebudou načtení projektu. Kromě toho **řešení Navigátor** by označoval, že projekt je "nekompatibilní" a nebude načten.  
   

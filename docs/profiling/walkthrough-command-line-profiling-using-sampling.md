@@ -1,5 +1,5 @@
 ---
-title: 'Průvodce: Profilace z příkazového řádku pomocí vzorkování | Dokumentace Microsoftu'
+title: 'Návod: Profilace z příkazového řádku pomocí vzorkování | Dokumentace Microsoftu'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,14 +11,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bf9fd3006ab584dddfcb089ae31fb945fe69049a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 1c76fd1d18b41073bf92ed18dadeeeb3a90c9209
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56624890"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433615"
 ---
-# <a name="walkthrough-command-line-profiling-using-sampling"></a>Průvodce: Příkazový řádek profilování pomocí vzorkování
+# <a name="walkthrough-command-line-profiling-using-sampling"></a>Návod: Příkazový řádek profilování pomocí vzorkování
 
 Tento návod ukazuje, jak chcete-li Profilovat aplikaci pomocí nástroje příkazového řádku a vzorkování identifikovat problémy s výkonem.
 
@@ -41,7 +41,7 @@ V tomto podrobném návodu postupujte podle těchto kroků:
 Vzorkování je metodě profilování pomocí kterého konkrétní proces pravidelně dotazovaní určit aktivní funkce. Výsledná data poskytuje přehled o četnosti funkce byla vrcholu zásobníku volání při procesu vzorkováno.
 
 > [!NOTE]
->  Chcete-li získat cestu k nástrojů pro profilaci, naleznete v tématu [zadejte cestu k nástrojům příkazového řádku](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Na 64bitových počítačích jsou k dispozici 64bitové i 32bitové verze nástrojů. Použití nástroje příkazového řádku profileru, musíte přidat cestu k nástrojům do proměnné prostředí PATH v okně příkazového řádku nebo ho přidejte do příkazu samého.
+> Chcete-li získat cestu k nástrojů pro profilaci, naleznete v tématu [zadejte cestu k nástrojům příkazového řádku](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Na 64bitových počítačích jsou k dispozici 64bitové i 32bitové verze nástrojů. Použití nástroje příkazového řádku profileru, musíte přidat cestu k nástrojům do proměnné prostředí PATH v okně příkazového řádku nebo ho přidejte do příkazu samého.
 
 ### <a name="to-profile-the-peopletrax-application-by-using-the-sampling-method"></a>Chcete-li Profilovat aplikaci PeopleTrax pomocí metody vzorkování
 

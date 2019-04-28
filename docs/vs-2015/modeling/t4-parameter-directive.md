@@ -9,12 +9,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c7971dc3402a344a5318fd8415404e7a45ae8485
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 3e350b353d90143a0805455b29bfe0a14aad25cb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54803476"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411603"
 ---
 # <a name="t4-parameter-directive"></a>T4 – direktiva Parameter
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -106,4 +106,4 @@ string resultText = t.TransformText();
 ## <a name="obtaining-arguments-from-texttemplateexe"></a>Získání argumenty z TextTemplate.exe  
   
 > [!IMPORTANT]
->  `parameter` Směrnice nenačte hodnoty nastavené v `–a` parametr `TextTransform.exe` nástroj. K získání těchto hodnot, nastavte `hostSpecific="true"` v `template` směrnice a použití `this.Host.ResolveParameterValue("","","argName")`.
+> `parameter` Směrnice nenačte hodnoty nastavené v `–a` parametr `TextTransform.exe` nástroj. K získání těchto hodnot, nastavte `hostSpecific="true"` v `template` směrnice a použití `this.Host.ResolveParameterValue("","","argName")`.

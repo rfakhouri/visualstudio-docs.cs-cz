@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c1ce45aea2f39751822a3dda6f388bd2d8095775
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 791c50e6839190fa3700c335896f24f0714a64bc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605091"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415146"
 ---
 # <a name="configuration-options-overview"></a>Přehled možností konfigurace
 Projekty v [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] může podporovat více konfigurací, které je možné sestavit, ladění, běhu a/nebo nasazené. Konfigurace je popsané společně s pojmenovanou sadu vlastností, obvykle přepínače kompilátoru a umístění souborů typu sestavení. Ve výchozím nastavení, nová řešení obsahovat dvě konfigurace *ladění* a *vydání*. Tyto konfigurace lze použít pomocí jejich výchozí nastavení, nebo upravit tak, aby podle svých specifických požadavků řešení nebo projektu. Některé balíčky se dají dvěma způsoby: jako ActiveX editor nebo jako součást na místě. Projekty není nutné pro podporu více konfigurací, ale. Pokud není k dispozici pouze jedné konfigurace, tuto konfiguraci je namapována na všechny konfigurace řešení.
@@ -36,7 +36,7 @@ Projekty v [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] může p
 |*MyConfig*|Není k dispozici|\<Nastavení MyConfig Win64 >|
 
 > [!NOTE]
->  Nelze vytvořit *MyConfig* konfiguraci řešení, která nezahrnuje Win32 platformy, pokud cílíte projekt, nepodporuje Win32.
+> Nelze vytvořit *MyConfig* konfiguraci řešení, která nezahrnuje Win32 platformy, pokud cílíte projekt, nepodporuje Win32.
 
  Změna aktivní konfigurace řešení vybere sadu konfigurace projektu, které je vytvořené, spouštět, ladit nebo nasazení v tomto řešení. Například, pokud změníte konfiguraci aktivního řešení z *vydání* k *ladění*, všechny projekty v rámci tohoto řešení jsou automaticky vytvořené s konfigurací projektu podle konfigurace řešení ladění. Konfigurace projektu se také nazývají *ladění* pouze tehdy, pokud uživatel má ručních změn v prostředí Configuration Manageru.
 

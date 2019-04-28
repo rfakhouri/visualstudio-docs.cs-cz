@@ -53,18 +53,18 @@ caps.latest.revision: 53
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d45fcbd8bd84bb9b6510d4143d3250e2e67ad1b6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0dc80bd821a85c475adba7fbbc264ab6b5a76a9b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60085374"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431128"
 ---
 # <a name="dataset-tools-in-visual-studio"></a>Nástroje datové sady v sadě Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 POZNÁMKA:]
->  Datové sady a související třídy jsou starší verze technologie .NET v rané fázi 2000s, která umožňují aplikacím pro práci s daty v paměti z databáze se odpojené aplikace. Jsou zvláště užitečné pro aplikace, které umožňují uživatelům upravovat data a zachová tak změny zpět do databáze. I když datové sady ukázaly jako velmi úspěšná technologie, doporučujeme použít rozhraní Entity Framework nové aplikace .NET. Entity Framework poskytuje přirozenější způsob, jak fungují s tabulkovými daty jako objektové modely a je jednodušší programovací rozhraní.
+> Datové sady a související třídy jsou starší verze technologie .NET v rané fázi 2000s, která umožňují aplikacím pro práci s daty v paměti z databáze se odpojené aplikace. Jsou zvláště užitečné pro aplikace, které umožňují uživatelům upravovat data a zachová tak změny zpět do databáze. I když datové sady ukázaly jako velmi úspěšná technologie, doporučujeme použít rozhraní Entity Framework nové aplikace .NET. Entity Framework poskytuje přirozenější způsob, jak fungují s tabulkovými daty jako objektové modely a je jednodušší programovací rozhraní.
 
  Objekt DataSet je objekt v paměti, který je v podstatě zkrácené databáze. Obsahuje objekty DataTable, objekt DataColumn a objekt DataRow, ve kterých můžete ukládat a upravit data z jedné nebo víc databází, aniž byste museli udržovat otevřené připojení. Datovou sadu uchovává informace o změny dat, takže aktualizace můžete sledovat a odesílá zpět do databáze, když vaše aplikace bude znovu připojeny.
 

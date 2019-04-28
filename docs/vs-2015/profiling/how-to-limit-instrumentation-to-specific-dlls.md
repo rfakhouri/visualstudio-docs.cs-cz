@@ -11,12 +11,12 @@ caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1806e39e70d98ce7f47dda6bbc32a8f261b96acd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5dc2fe8e6f9b0ed1e6970943ab5eedf1b62eb961
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091314"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432679"
 ---
 # <a name="how-to-limit-instrumentation-to-specific-dlls"></a>Postupy: Omezení instrumentace na konkrétní knihovny DLL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,7 +68,7 @@ Pomocí metody profilace instrumentace můžete omezit shromažďování dat pro
 7. Volitelné. Pokud chcete přidat další soubory .dll, klikněte pravým tlačítkem na **cíle** a pak vyberte **přidat cílový binární**. Vyberte soubory z **přidat cílový binární** dialogové okno.  
   
     > [!NOTE]
-    >  Nezadávejte spustitelný soubor (.exe), která zpracovává knihovny DLL.  
+    > Nezadávejte spustitelný soubor (.exe), která zpracovává knihovny DLL.  
   
 ## <a name="see-also"></a>Viz také  
  [Řízení sběru dat](../profiling/controlling-data-collection.md)   

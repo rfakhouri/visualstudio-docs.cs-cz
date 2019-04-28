@@ -20,12 +20,12 @@ caps.latest.revision: 53
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0c76ed1b24350a10891df69687080988603553fa
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 4945efddb91142ce04f5b117129428ec4a054fc3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54776232"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427261"
 ---
 # <a name="application-deployment-prerequisites"></a>Nezbytné součásti nasazení aplikace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ K zajištění, že vaše aplikace se nainstaluje a úspěšně spuštěn, je nu
   [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] rozpozná chybějící požadované součásti a požadavky můžete nainstalovat pomocí zaváděcí nástroj. Další informace najdete v tématu [jak: Instalace předpokladů s aplikací ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md).  
   
 > [!NOTE]
->  Chcete-li změnit hodnoty v manifestech vygenerovat pomocí nástrojů, jako [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] a MageUI.exe, budete muset upravit manifest aplikace v textovém editoru a nové podepsání manifestů aplikace a nasazení. Další informace najdete v tématu [jak: Opětovné podepisování manifestů aplikace a nasazení](../deployment/how-to-re-sign-application-and-deployment-manifests.md).  
+> Chcete-li změnit hodnoty v manifestech vygenerovat pomocí nástrojů, jako [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] a MageUI.exe, budete muset upravit manifest aplikace v textovém editoru a nové podepsání manifestů aplikace a nasazení. Další informace najdete v tématu [jak: Opětovné podepisování manifestů aplikace a nasazení](../deployment/how-to-re-sign-application-and-deployment-manifests.md).  
   
  Pokud používáte Visual Studio a ClickOnce k nasazení vaší aplikace, balíčky zaváděcího nástroje, které jsou vybrány ve výchozím nastavení závisí na verzi rozhraní .NET Framework v řešení. Nicméně pokud změníte cílovou verzi rozhraní .NET Framework, je nutné aktualizovat možnosti v **dialogové okno požadavky** ručně.  
   

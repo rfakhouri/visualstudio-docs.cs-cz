@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0a457ba0dcc6fb7f8a95a982b6dabd93f9d0207e
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: c2c9a8b15b5095ac346ba047d6668aada7647a31
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58150098"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412437"
 ---
 # <a name="idebugapplicationhandleruntimeerror"></a>IDebugApplication::HandleRuntimeError
 Způsobí, že chcete blokovat aktuální vlákno a odešle oznámení o chybě integrovaného vývojového prostředí v ladicím programu.  
@@ -58,7 +58,7 @@ HRESULT HandleRuntimeError(
 ## <a name="return-value"></a>Návratová hodnota  
  Metoda vrátí `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
   
-|Hodnota|Popis|  
+|Value|Popis|  
 |-----------|-----------------|  
 |`S_OK`|Metoda byla úspěšná.|  
   
@@ -66,7 +66,7 @@ HRESULT HandleRuntimeError(
  Modul jazyka volá tuto metodu v kontextu vlákna, které způsobí chybu za běhu. Tato metoda způsobí, že chcete blokovat aktuální vlákno a odešle oznámení o chybě k odeslání do ladicího programu integrovaného vývojového prostředí. Když ladicí program IDE obnoví aplikace, vrátí tato metoda s akcí, jež mají být provedeny.  
   
 > [!NOTE]
->  Při selhání za běhu může být volána modul jazyka ve vláknu provádět tyto úkoly, jako výčet rámců zásobníku nebo vyhodnocení výrazů.  
+> Při selhání za běhu může být volána modul jazyka ve vláknu provádět tyto úkoly, jako výčet rámců zásobníku nebo vyhodnocení výrazů.  
   
 ## <a name="see-also"></a>Viz také  
  [Idebugapplication – rozhraní](../../winscript/reference/idebugapplication-interface.md)   

@@ -23,12 +23,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 77fa9442289851aff91d8d9bfc55e581edfa774a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e9ce2388dbf61ef3af524f0debc776891dca004f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117536"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436499"
 ---
 # <a name="ribbon-xml"></a>Pás karet – XML
   Položky pásu karet (XML) umožňuje přizpůsobit pás karet pomocí XML. Pomocí položky pásu karet (XML), pokud chcete přizpůsobit pás karet tak, aby položky pásu karet (vizuální návrhář) nepodporuje. Porovnání můžete dělat s každou položku najdete v tématu [přehled pásu karet](../vsto/Ribbon-overview.md).
@@ -60,7 +60,7 @@ ms.locfileid: "60117536"
 - Definujte metodu zpětného volání ve třídě pásu karet.
 
 > [!NOTE]
->  Outlook vyžaduje další krok. Další informace najdete v tématu [přizpůsobte pás karet pro aplikaci Outlook](../vsto/customizing-a-ribbon-for-outlook.md).
+> Outlook vyžaduje další krok. Další informace najdete v tématu [přizpůsobte pás karet pro aplikaci Outlook](../vsto/customizing-a-ribbon-for-outlook.md).
 
  Názorný postup ukazuje, jak automatizovat aplikace pásu karet, najdete v části [názorný postup: Vytvoření vlastní karty pomocí kódu XML pásu karet](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md).
 

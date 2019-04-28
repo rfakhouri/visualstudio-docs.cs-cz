@@ -13,12 +13,12 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d6152e374aee2eac273e0feca28c068c666e23d0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 777d20ecb51b09b282f88dc08464727b9ff2a945
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110983"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432980"
 ---
 # <a name="active-script-profiling-overview"></a>Přehled profilace aktivních skriptů
 [Aktivní rozhraní Profiler skriptů](../winscript/reference/active-script-profiler-interfaces.md) povolit profilaci skriptovací stroje. Aktivní profilace skriptu se skládá z následujících částí:  
@@ -35,7 +35,7 @@ ms.locfileid: "60110983"
  Implementuje modul jazyka [iactivescriptprofilercontrol – rozhraní](../winscript/reference/iactivescriptprofilercontrol-interface.md).  
   
 > [!NOTE]
->  [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] CLR kontroluje JS_PROFILER proměnnou prostředí při vytváření k určení, zda by měla být povolená profilace. Pokud tato proměnná je nastavena na identifikátor CLSID profileru, modul runtime jazyka vytvoří instanci objektu COM profileru, použití hodnotu proměnné k určení, které profileru, chcete-li vytvořit.  
+> [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] CLR kontroluje JS_PROFILER proměnnou prostředí při vytváření k určení, zda by měla být povolená profilace. Pokud tato proměnná je nastavena na identifikátor CLSID profileru, modul runtime jazyka vytvoří instanci objektu COM profileru, použití hodnotu proměnné k určení, které profileru, chcete-li vytvořit.  
   
 ## <a name="host"></a>Hostitel  
  Hostitel vytvoří modul jazyka a poskytuje modul jazyka pomocí skriptů, které má být proveden. Inteligentního hostitele také poskytuje kontext dokumentu, který je možné poskytovat lepší informace při ladění nebo profilování pomocí ladicího programu a profileru.  

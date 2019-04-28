@@ -14,12 +14,12 @@ ms.assetid: e6c0e636-5ec3-450e-b395-fc4bb9d75918
 caps.latest.revision: 35
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 350f0c873a0b6692d16dcbc987db32b63f68be72
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 643ffd8dc48eb6b0fc35ea035c8c599efbea85c6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54789585"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438959"
 ---
 # <a name="options-and-options-pages"></a>Možnosti a stránky Možnosti
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -61,7 +61,7 @@ Kliknutím na **možnosti** na **nástroje** se otevře nabídka **možnosti** d
 - <xref:System.ComponentModel.DescriptionAttribute> Určuje popis možnosti.  
   
   > [!NOTE]
-  >  Ekvivalentní atributy, SRCategory, LocDisplayName a SRDescription, použití řetězcových prostředků pro lokalizaci a jsou definovány v [spravovaný projekt ukázky](http://go.microsoft.com/fwlink/?LinkId=122774).  
+  > Ekvivalentní atributy, SRCategory, LocDisplayName a SRDescription, použití řetězcových prostředků pro lokalizaci a jsou definovány v [spravovaný projekt ukázky](http://go.microsoft.com/fwlink/?LinkId=122774).  
   
   Předpokládejme následující fragment kódu:  
   
@@ -86,4 +86,4 @@ Kliknutím na **možnosti** na **nástroje** se otevře nabídka **možnosti** d
  Vlastnosti automatizace cestu registru je určen tím, že zkombinujete <xref:Microsoft.VisualStudio.Shell.Package.ApplicationRegistryRoot%2A>, slovo, vlastnosti automatizace a možnosti stránce kategorie a název. Například, pokud na stránce Možnosti má kategorii mé kategorie, název mé stránky mřížky a <xref:Microsoft.VisualStudio.Shell.Package.ApplicationRegistryRoot%2A>, HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp a pak vlastnost automatizace má klíč registru, HKEY_LOCAL_MACHINE\SOFTWARE\ Microsoft\VisualStudio\8.0Exp\AutomationProperties\My Category\My mřížky stránky.  
   
 > [!NOTE]
->  Kanonický název mé stránky mřížky Category.My, je hodnota podklíče název tohoto klíče.
+> Kanonický název mé stránky mřížky Category.My, je hodnota podklíče název tohoto klíče.

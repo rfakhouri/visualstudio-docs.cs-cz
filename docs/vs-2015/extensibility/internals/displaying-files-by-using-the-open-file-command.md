@@ -12,12 +12,12 @@ ms.assetid: 4fff0576-b2f3-4f17-9769-930f926f273c
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 96953d77e82dfcec79257da47845ece8281ec869
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: dd0018df4efb023357e10ab8050f6cf5e9eba1fb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60106095"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438217"
 ---
 # <a name="displaying-files-by-using-the-open-file-command"></a>Zobrazení souborů pomocí příkazu Otevřít soubor
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Následující kroky popisují, jak zachází s integrovaného vývojového pros
     - Pokud soubor není otevřen, zavolá rozhraní IDE <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A> k dotazování každý projekt k určení, které projekty můžou otevřít soubor.  
   
         > [!NOTE]
-        >  Ve vaší implementaci projektu <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A>, zadejte hodnotu priority, která určuje úroveň, na které váš projekt otevře soubor. Hodnoty priority jsou součástí <xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY> výčtu.  
+        > Ve vaší implementaci projektu <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A>, zadejte hodnotu priority, která určuje úroveň, na které váš projekt otevře soubor. Hodnoty priority jsou součástí <xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY> výčtu.  
   
 2. Každý projekt jako odpověď vrátí úroveň priority, která určuje význam umístí na se projekt k otevření souboru.  
   
@@ -57,4 +57,4 @@ Následující kroky popisují, jak zachází s integrovaného vývojového pros
  [Zobrazení souborů pomocí příkazu Otevřít](../../extensibility/internals/displaying-files-by-using-the-open-with-command.md)   
  [Otevření a uložení položek projektu](../../extensibility/internals/opening-and-saving-project-items.md)   
  [Postupy: Otevřít editoru pro konkrétní projekt](../../extensibility/how-to-open-project-specific-editors.md)   
- [Postupy: Otevřít standardních editorů](../../extensibility/how-to-open-standard-editors.md)
+ [Postupy: Otevření standardních editorů](../../extensibility/how-to-open-standard-editors.md)

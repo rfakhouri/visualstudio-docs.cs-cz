@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 99d776e7d9891ca231fde4531b558de66568904f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 96704b52fb31085fad7546687a8803c85bcfbb47
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56641465"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63418626"
 ---
 # <a name="elimination-of-sak-files"></a>Odstranění ~ SAK soubory
 Zdrojový ovládací prvek modulu Plug-in API 1.2 *~ SAK* soubory byly nahrazeny příznaky funkcí a nových funkcí, které zjišťují, zda zdroj modulu plug-in podporuje ovládací prvek *MSSCCPRJ* Souborová služba a sdílenými registracemi.
@@ -48,7 +48,7 @@ Pro moduly plug-in, které podporují pokročilé funkce, které jsou k dispozic
  **[HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl]DoNotCreateTemporaryFilesInSourceControl** = *dword:00000001*
 
 > [!NOTE]
->  Pokud tento klíč registru je nastavena na *DWORD: 00000000*odpovídá klíči se neexistující a sady Visual Studio dál pokoušet o vytvoření dočasné soubory. Nicméně pokud nastavení klíče registru *DWORD: 00000001*, Visual Studio nebude pokoušet o vytvoření dočasné soubory. Místo toho předpokládá, že modul plug-in správy zdrojového kódu není podporováno *MSSCCPRJ.SCC* souboru a sdílenými registracemi nepodporuje.
+> Pokud tento klíč registru je nastavena na *DWORD: 00000000*odpovídá klíči se neexistující a sady Visual Studio dál pokoušet o vytvoření dočasné soubory. Nicméně pokud nastavení klíče registru *DWORD: 00000001*, Visual Studio nebude pokoušet o vytvoření dočasné soubory. Místo toho předpokládá, že modul plug-in správy zdrojového kódu není podporováno *MSSCCPRJ.SCC* souboru a sdílenými registracemi nepodporuje.
 
 ## <a name="see-also"></a>Viz také:
 - [Co je nového v zdrojový ovládací prvek modulu Plug-in API verze 1.2](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)

@@ -9,12 +9,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a4d0eb491a2dbe0b6fc290cefb665bcb931f8a1a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2f162f827fa1866b5ca241bd9aaae2aadffb56e6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60048871"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428612"
 ---
 # <a name="step-8-write-code-for-the-show-a-picture-button-event-handler"></a>Krok 8: Napsání kódu pro obslužnou rutinu události zobrazení tlačítka s obrázkem
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ Kód Visual C#
     3. Zadejte tečku (`.`) (mnoho programátorů to tečku.) Protože jste zadali tečku ihned po **openFileDialog1**, **IntelliSense** otevře se okno vyplněné se všemi **OpenFileDialog** vlastnostmi a metodami komponenty. Jedná se o stejné vlastnosti, které se zobrazují v **vlastnosti** okno při výběru v Návrháři formulářů Windows. Můžete také metody, které říct komponentě, aby provedla věci (jako je otevření dialogového okna).  
   
         > [!NOTE]
-        >  **IntelliSense** můžete v okně zobrazí vlastnosti a metody. Pokud chcete zjistit, co je zobrazeno, podívejte se na ikonu na levé straně každé položky v **IntelliSense** okna. Vidíte obrázek bloku vedle každé metody a obrázek klíče (nebo spanner) vedle jednotlivých vlastností. Je zde také ikona blesku vedle každé události. Tyto obrázky se zobrazí takto.  
+        > **IntelliSense** můžete v okně zobrazí vlastnosti a metody. Pokud chcete zjistit, co je zobrazeno, podívejte se na ikonu na levé straně každé položky v **IntelliSense** okna. Vidíte obrázek bloku vedle každé metody a obrázek klíče (nebo spanner) vedle jednotlivých vlastností. Je zde také ikona blesku vedle každé události. Tyto obrázky se zobrazí takto.  
   
          ![Ikona metody](../ide/media/express-iconmethod.png "Express_IconMethod")  
 Ikona metody  
@@ -72,21 +72,21 @@ Ikona události
     5. Při použití metody u ovládacího prvku nebo komponenty (označované jako *volání metody*), je třeba přidat závorky. Zadejte proto počáteční a ihned po "g" v `ShowDialog`: `()` To by teď měl vypadat takto: "openFileDialog1.ShowDialog()".  
   
         > [!NOTE]
-        >  Metody jsou důležitou součástí každého programu a tento kurz ukázal několik způsobů, jak používat metody. Můžete volat metodu komponenty, které sděluje, má něco udělat, jako jste volali **OpenFileDialog** komponenty `ShowDialog()` metody. Můžete vytvořit vlastní metody, aby váš program prováděl akce, jako vytváříte nyní, volá se, `showButton_Click()` metodu, která otevře dialogové okno a obrázek, když uživatel vybere tlačítko.  
+        > Metody jsou důležitou součástí každého programu a tento kurz ukázal několik způsobů, jak používat metody. Můžete volat metodu komponenty, které sděluje, má něco udělat, jako jste volali **OpenFileDialog** komponenty `ShowDialog()` metody. Můžete vytvořit vlastní metody, aby váš program prováděl akce, jako vytváříte nyní, volá se, `showButton_Click()` metodu, která otevře dialogové okno a obrázek, když uživatel vybere tlačítko.  
   
     6. Pro jazyk Visual C# přidejte mezeru a pak přidejte dva symboly rovná se (`==`). V jazyce Visual Basic přidejte mezeru a pak používat jediný symbol rovnítka (`=`). (Visual C# a Visual Basic používá odlišné operátory rovnosti.)  
   
     7. Přidejte další mezeru. Jakmile provedete, jiné **IntelliSense** otevře se okno. Začněte zadáním `DialogResult` a stiskněte klávesu TAB a přidejte ji.  
   
         > [!NOTE]
-        >  Při psaní kódu pro volání metody, někdy vrací hodnotu. V takovém případě **OpenFileDialog** komponenty `ShowDialog()` metoda vrátí hodnotu DialogResult. DialogResult je zvláštní hodnota, která zjistíte, co se stalo v dialogovém okně. **OpenFileDialog** komponenta může vést k výběru uživatele **OK** nebo **zrušit**, takže jeho `ShowDialog()` metoda vrátí buď DialogResult.OK nebo DialogResult.Cancel.  
+        > Při psaní kódu pro volání metody, někdy vrací hodnotu. V takovém případě **OpenFileDialog** komponenty `ShowDialog()` metoda vrátí hodnotu DialogResult. DialogResult je zvláštní hodnota, která zjistíte, co se stalo v dialogovém okně. **OpenFileDialog** komponenta může vést k výběru uživatele **OK** nebo **zrušit**, takže jeho `ShowDialog()` metoda vrátí buď DialogResult.OK nebo DialogResult.Cancel.  
   
     8. Zadejte tečku k otevření hodnotu DialogResult **IntelliSense** okna. Zadejte písmeno `O` a stiskněte klávesu TAB k vložení **OK**.  
   
          Další informace o `DialogResult`, naleznete v tématu [DialogResult](http://msdn.microsoft.com/library/system.windows.forms.dialogresult.aspx).  
   
         > [!NOTE]
-        >  První řádek kódu by měl být úplný. Pro jazyk Visual C# to mělo být jako následující.  
+        > První řádek kódu by měl být úplný. Pro jazyk Visual C# to mělo být jako následující.  
         >   
         >  `if (openFileDialog1.ShowDialog() == DialogResult.OK)`  
         >   

@@ -9,12 +9,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3c9d088be89e2cf963df65a0163713c297615121
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 90a24ef7b5bff321d460834a8fdde24e3e6cfd75
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097476"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434444"
 ---
 # <a name="how-to-model-3-d-terrain"></a>Postupy: Model 3D terénu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ Tento dokument popisuje způsob použití Editoru modelů a vytvořte model 3D t
 2. Přidáte do roviny do scény. V **nástrojů**v části **tvary**vyberte **roviny** a přesuňte jej na návrhovou plochu.  
   
    > [!TIP]
-   >  Pro usnadnění práce s objekt roviny, můžete ho rámce v návrhové ploše. V **vyberte** režimu, vyberte objekt roviny a pak na panelu nástrojů editoru modelů, zvolte **orámovat objekt** tlačítko.  
+   > Pro usnadnění práce s objekt roviny, můžete ho rámce v návrhové ploše. V **vyberte** režimu, vyberte objekt roviny a pak na panelu nástrojů editoru modelů, zvolte **orámovat objekt** tlačítko.  
   
 3. Zadejte režimu výběru ploch. Na panelu nástrojů editoru modelů **tváří vybrat**.  
   
@@ -62,7 +62,7 @@ Tento dokument popisuje způsob použití Editoru modelů a vytvořte model 3D t
 7. Změna bodu, aby vytvořil terénu funkci. V režimu výběru bodu, vyberte jednu z bodů a pak na panelu nástrojů editoru modelů, zvolte **přeložit** nástroj. Pole, který představuje bod se zobrazí na návrhové ploše. Použijte na zelenou šipku a přesunout do pole a změna výšky bodu. Opakujte tento krok pro různých fázích pro vytvoření zajímavých funkcí terénu.  
   
    > [!TIP]
-   >  Můžete vybrat několik bodů najednou k jejich úpravě jednotným způsobem.  
+   > Můžete vybrat několik bodů najednou k jejich úpravě jednotným způsobem.  
   
    Model terénu je dokončena. Tady je znovu finálního modelu s Phongova stínování použít:  
   

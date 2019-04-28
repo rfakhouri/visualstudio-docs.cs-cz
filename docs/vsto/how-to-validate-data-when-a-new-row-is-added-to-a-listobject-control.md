@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d8aefab319b9b197b9b7df0e23fec71aa3cb64d1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7c729896083c7d32a48ba39906d8e9a0ebde4b59
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039308"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420953"
 ---
 # <a name="how-to-validate-data-when-a-new-row-is-added-to-a-listobject-control"></a>Postupy: Ověření dat při přidání nového řádku do ovládacího prvku ListObject
   Uživatelé můžou přidávat nové řádky <xref:Microsoft.Office.Tools.Excel.ListObject> ovládací prvek, který je vázán na data. Před potvrzením změny do zdroje dat. můžete ověřit data uživatele.
@@ -30,7 +30,7 @@ ms.locfileid: "60039308"
  Vždy, když se přidá řádek do <xref:Microsoft.Office.Tools.Excel.ListObject> , který je vázán na data, <xref:Microsoft.Office.Tools.Excel.ListObject.BeforeAddDataBoundRow> událost se vyvolá. Tato událost provádět ověřování dat dokáže zpracovat. Pokud vaše aplikace vyžaduje, že lze přidat pouze zaměstnanci ve věku 18 až 65 ke zdroji dat, ověřte například, že věk zadali spadá do rozsahu před přidáním řádku.
 
 > [!NOTE]
->  Vždy byste měli zkontrolovat vstupu uživatele na serveru kromě klienta. Další informace najdete v tématu [zabezpečené klientské aplikace](/dotnet/framework/data/adonet/secure-client-applications).
+> Vždy byste měli zkontrolovat vstupu uživatele na serveru kromě klienta. Další informace najdete v tématu [zabezpečené klientské aplikace](/dotnet/framework/data/adonet/secure-client-applications).
 
 ### <a name="to-validate-data-when-a-new-row-is-added-to-data-bound-listobject"></a>Ověření dat při nový řádek je přidat do vázané na data ListObject
 

@@ -17,12 +17,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0b0587f6c1c5d7577d8fddffb73db31f09248fae
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a5d7339ac0e79ac318dcf3913be97bec6847ec69
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60075646"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430547"
 ---
 # <a name="how-to-manage-build-configurations-with-visual-basic-developer-settings-applied"></a>Postupy: Správa konfigurací sestavení s použitými nastaveními vývojáře jazyka Visual Basic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ Ve výchozím nastavení jsou všechny možnosti rozšířené sestavení konfig
 2. Rozbalte **projekty a řešení**a klikněte na tlačítko **Obecné**.  
   
     > [!NOTE]
-    >  **Obecné** uzlu je viditelný i v případě **zobrazit všechna nastavení** možnost není zaškrtnutá. Pokud chcete zobrazit všechny dostupné možnosti, klikněte na tlačítko **zobrazit všechna nastavení**.  
+    > **Obecné** uzlu je viditelný i v případě **zobrazit všechna nastavení** možnost není zaškrtnutá. Pokud chcete zobrazit všechny dostupné možnosti, klikněte na tlačítko **zobrazit všechna nastavení**.  
   
 3. Klikněte na tlačítko **zobrazit pokročilé konfigurace sestavení**.  
   

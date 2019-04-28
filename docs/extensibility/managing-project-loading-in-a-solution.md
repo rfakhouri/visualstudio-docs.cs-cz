@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7a383096d164f1b08e2411a7bc808e96f8a6262e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5dcd8293bc11645b8ad934d1826286a8df51e5e9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061304"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431306"
 ---
 # <a name="manage-project-loading-in-a-solution"></a>Správa načítání projektů v řešení
 Řešení sady Visual Studio může obsahovat velký počet projektů. Výchozí chování sady Visual Studio je načíst všechny projekty v řešení v době, kdy je otevřené řešení a nikoli do povolí uživateli přístup žádným z projektů, dokud všechny z nich dokončení načítání. Při procesu načítání projektu bude trvat více než dvě minuty, se zobrazí indikátor průběhu zobrazující počet projekty a celkovém počtu projektů. Uživatel může při práci v řešení s více projekty uvolnění projektů, ale tento postup má i určité nevýhody: jako součást příkazu znovu sestavit řešení nejsou sestaveny uvolněné projekty a popisy technologie IntelliSense typů a členů uzavřený projekty se nezobrazí.
@@ -44,7 +44,7 @@ pSolution.SetProperty((int)__VSPROPID4.VSPROPID_ActiveSolutionLoadManager, objLo
  Pokud se správce zatížení řešení pro správu obecně načítání řešení, se dá implementovat jako součást sady VSPackage. Balíček musí být nastavená na autoload tak, že přidáte <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> na VSPackage s hodnotou <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionOpening_guid>. Správci řešení zatížení můžete v aktivovat <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> metody.
 
 > [!NOTE]
->  Další informace o balíčcích autoloading najdete v tématu [načítání rozšíření VSPackages](../extensibility/loading-vspackages.md).
+> Další informace o balíčcích autoloading najdete v tématu [načítání rozšíření VSPackages](../extensibility/loading-vspackages.md).
 
  Vzhledem k tomu, že Visual Studio rozpozná pouze poslední řešení zatížení správce aktivaci, by měl obecné řešení zatížení správci vždy zjistit, zda je před aktivací sami stávající správce zatížení. Pokud volání `GetProperty()` řešení služby pro [__VSPROPID4. VSPROPID_ActiveSolutionLoadManager](<xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4.VSPROPID_ActiveSolutionLoadManager>) vrátí `null`, neexistuje žádný správce zatížení aktivního řešení. Pokud nevrací hodnotu null, zkontrolujte, zda je objekt stejný jako správce zatížení vašeho řešení.
 

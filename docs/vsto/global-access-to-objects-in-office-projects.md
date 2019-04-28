@@ -30,12 +30,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6e5b27eaff0b462e257d1d972c5b950cd1f5ab1a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7266e7fa26574332bcb343b552eea2b707a8672b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60066764"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427948"
 ---
 # <a name="global-access-to-objects-in-office-projects"></a>Globální přístup k objektům v projektech pro systém Office
   Při vytváření projektu aplikace Office, Visual Studio automaticky vygeneruje třídu pojmenovanou `Globals` v projektu. Můžete použít `Globals` pro přístup k několika položek jiného projektu za běhu v žádném kódu v projektu.
@@ -74,7 +74,7 @@ ms.locfileid: "60066764"
  Kód, který se pokouší použít `Globals` třídy před inicializací dokumentu nebo doplňku VSTO může vyvolat výjimku běhu. Například použití `Globals` při deklarování proměnné úrovni třídy může selhat, protože `Globals` třída nebyla pravděpodobně inicializována s odkazy na všechny položky hostitele před vytvořením instance deklarovanému objektu.
 
 > [!NOTE]
->  `Globals` Třída je inicializována nikdy v době návrhu, ale v návrháři se vytvářejí instance ovládacího prvku. To znamená, že je-li vytvořit uživatelský ovládací prvek, který používá vlastnost `Globals` třídy z uvnitř třídy uživatelského ovládacího prvku, je nutné zkontrolovat, zda vlastnost vrací **null** předtím, než se pokusíte použít vráceného objektu.
+> `Globals` Třída je inicializována nikdy v době návrhu, ale v návrháři se vytvářejí instance ovládacího prvku. To znamená, že je-li vytvořit uživatelský ovládací prvek, který používá vlastnost `Globals` třídy z uvnitř třídy uživatelského ovládacího prvku, je nutné zkontrolovat, zda vlastnost vrací **null** předtím, než se pokusíte použít vráceného objektu.
 
 ## <a name="see-also"></a>Viz také:
 - [Přístup k pásu karet za běhu](../vsto/accessing-the-ribbon-at-run-time.md)

@@ -25,12 +25,12 @@ caps.latest.revision: 34
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 42d7c9798527498f2803d814515faefd62c3ace9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 624be251be9b560f5996a16f3012825d04834758
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60077495"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431517"
 ---
 # <a name="how-to-use-the-disassembly-window"></a>Postupy: Použití okna zpětného překladu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,7 +60,7 @@ Tato funkce je dostupná jenom v případě, že je povoleno ladění na úrovni
   Pravděpodobně se nikdy máte touha nebo potřebujete zobrazíte pokyny strojového kódu v jejich a číselné formuláře, nikoli jazyk sestavení. Ale pokud chcete udělat, je použití okna paměť pro tento účel nebo zvolte kód bajtů z místní nabídky v okně zpětný překlad.  
   
 > [!NOTE]
->  Dialogová okna a příkazy nabídek, které vidíte, se mohou lišit od těch popsaných v nápovědě v závislosti na aktivních nastaveních nebo edici. Chcete-li změnit nastavení, zvolte **nastavení importu a exportu** na **nástroje** nabídky. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Dialogová okna a příkazy nabídek, které vidíte, se mohou lišit od těch popsaných v nápovědě v závislosti na aktivních nastaveních nebo edici. Chcete-li změnit nastavení, zvolte **nastavení importu a exportu** na **nástroje** nabídky. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ### <a name="to-display-the-disassembly-window"></a>Chcete-li zobrazit okno zpětného překladu  
   

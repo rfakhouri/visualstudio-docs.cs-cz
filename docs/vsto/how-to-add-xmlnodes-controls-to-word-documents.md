@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0bbfa139605a6196cf57a5a887d9cb74f54527f7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b54a341cd9dd949f892537ee384afb4984aecc02
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60090729"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419695"
 ---
 # <a name="how-to-add-xmlnodes-controls-to-word-documents"></a>Postupy: Přidání ovládacích prvků XMLNodes do dokumentů aplikace Word
   **Důležité** informace uvedené v tomto tématu týkající se Microsoft Word je zobrazené výhradně pro výhod a užívání o jednotlivci i organizacemi, kteří se nacházejí mimo Spojené státy a jeho území nebo kteří používají nebo vývoj programy, které běží na produkty Microsoft Word, které byly licencovaných společností Microsoft před 2010 dne, kdy Microsoft odebrána implementace konkrétní funkce související s vlastní XML z aplikace Microsoft Word. Tyto informace týkající se Microsoft Word nemusí být přečteny nebo používány jednotlivcům i organizacím v USA nebo v jeho území, které používáte, nebo vývoji programů, které běží na produkty Microsoft Word, které byly licencovaných společností Microsoft po 10. ledna 2010 ; tyto produkty se chovají stejně jako produkty licenci před tímto datem nebo zakoupených a licencovaná pro použití mimo území Spojených států.
@@ -30,7 +30,7 @@ ms.locfileid: "60090729"
  Informace o mapování neopakujícími prvků schématu XML, naleznete v tématu [jak: Přidání ovládacích prvků XMLNode do dokumentů aplikace Word](../vsto/how-to-add-xmlnode-controls-to-word-documents.md).
 
 > [!NOTE]
->  <xref:Microsoft.Office.Tools.Word.XMLNodes> Ovládací prvek není k dispozici **nástrojů** nebo **zdroje dat** okna ani může být vytvořili prostřednictvím kódu programu.
+> <xref:Microsoft.Office.Tools.Word.XMLNodes> Ovládací prvek není k dispozici **nástrojů** nebo **zdroje dat** okna ani může být vytvořili prostřednictvím kódu programu.
 
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
@@ -39,7 +39,7 @@ ms.locfileid: "60090729"
 1. V dokumentu v návrháři aplikace Visual Studio na pásu karet, klepněte **Developer** kartu.
 
     > [!NOTE]
-    >  Pokud **Developer** karta není zobrazena, musíte ji nejdříve zobrazit. Další informace najdete v tématu [jak: Zobrazení karty Vývojář na pásu karet](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
+    > Pokud **Developer** karta není zobrazena, musíte ji nejdříve zobrazit. Další informace najdete v tématu [jak: Zobrazení karty Vývojář na pásu karet](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
 
 2. V **XML** klikněte na možnost **schématu**.
 

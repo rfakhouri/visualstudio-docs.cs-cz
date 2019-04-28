@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 889cf092ae77eae7ef190c48b2949ddca646dc2a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a397646823d133b66e66bb2bb5d10c2ae358ae53
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097294"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430869"
 ---
 # <a name="step-10-write-code-for-additional-buttons-and-a-check-box"></a>Krok 10: Napište kód pro přídavná tlačítka a zaškrtávací políčko
 Nyní jste připraveni provést další čtyři metody. Mohli byste zkopírovat a vložit tento kód, ale pokud chcete získat maximum z tohoto kurzu zadejte kód a používat technologii IntelliSense.
@@ -23,7 +23,7 @@ Nyní jste připraveni provést další čtyři metody. Mohli byste zkopírovat 
  ![odkaz na video](../data-tools/media/playvideo.gif)video verzi tohoto tématu naleznete v tématu [kurz 1: Vytvoření prohlížeče obrázků v jazyce Visual Basic - Video 5](http://go.microsoft.com/fwlink/?LinkId=205216) nebo [kurz 1: Vytvoření prohlížeče obrázků v C# – Video 5](http://go.microsoft.com/fwlink/?LinkId=205206). Tato videa používají starší verzi sady Visual Studio, takže existují mírné rozdíly v některých příkazech nabídek a jiných prvcích uživatelského rozhraní. Nicméně koncepty a postupy fungují podobně jako v aktuální verzi sady Visual Studio.
 
 > [!NOTE]
->  Jako osvědčený postup: Vždy komentujte svůj kód. Komentáře jsou informace pro osobu, která ke čtení a stojí za čas, aby byl srozumitelnější kód. Vše na řádku komentáře je programem ignorováno. V jazyce Visual C# komentujete řádek zadáním dvou lomítek na začátku (/ /), a v jazyce Visual Basic komentujete řádek začínající jednoduché uvozovky (').
+> Jako osvědčený postup: Vždy komentujte svůj kód. Komentáře jsou informace pro osobu, která ke čtení a stojí za čas, aby byl srozumitelnější kód. Vše na řádku komentáře je programem ignorováno. V jazyce Visual C# komentujete řádek zadáním dvou lomítek na začátku (/ /), a v jazyce Visual Basic komentujete řádek začínající jednoduché uvozovky (').
 
 ## <a name="to-write-code-for-additional-buttons-and-a-check-box"></a>Napsat kód pro přídavná tlačítka a zaškrtávací políčko
 

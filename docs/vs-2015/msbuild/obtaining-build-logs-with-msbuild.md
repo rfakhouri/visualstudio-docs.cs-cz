@@ -12,12 +12,12 @@ caps.latest.revision: 30
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5ee565786f4a1f7c1127217eeb551352ae02b72f
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: c88288a7bed453ca14e9c14fd43706b97be04044
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59663411"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430848"
 ---
 # <a name="obtaining-build-logs-with-msbuild"></a>Získávání protokolů o sestavení pomocí nástroje MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "59663411"
 S použitím přepínače pomocí nástroje MSBuild, můžete určit, kolik data sestavení, které chcete zkontrolovat a určuje, zda chcete uložit data sestavení do jednoho nebo více souborů. Můžete také určit vlastní protokolovací nástroj pro shromažďování dat sestavení. Informace o parametrech příkazového řádku MSBuild, které toto téma nepopisuje najdete v tématu [Reference k příkazovému řádku](../msbuild/msbuild-command-line-reference.md).  
   
 > [!NOTE]
->  Pokud vytváříte projekty s použitím rozhraní IDE sady Visual Studio, je možné řešit sestavení kontrolou protokolů o sestavení. Další informace najdete v tématu [jak: Zobrazování, ukládání a konfigurace souborů protokolu sestavení](../ide/how-to-view-save-and-configure-build-log-files.md).  
+> Pokud vytváříte projekty s použitím rozhraní IDE sady Visual Studio, je možné řešit sestavení kontrolou protokolů o sestavení. Další informace najdete v tématu [jak: Zobrazování, ukládání a konfigurace souborů protokolu sestavení](../ide/how-to-view-save-and-configure-build-log-files.md).  
   
 ## <a name="setting-the-level-of-detail"></a>Nastavení úrovně podrobností  
  Při vytváření projektu pomocí nástroje MSBuild bez zadání úroveň podrobností protokolu výstupu zobrazí následující informace:  

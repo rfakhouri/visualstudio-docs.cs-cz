@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d1a1e161c0559013571a2ceaa775cfe428c1345c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1ca2401333f7678b821b5c6fa68f7953a91996d0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060420"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440025"
 ---
 # <a name="calculated-and-custom-storage-properties"></a>Vypočtené a vlastní vlastnosti úložiště
 Všechny vlastnosti domény v jazyka specifického pro doménu (DSL) je možné zobrazit v diagramu a v Průzkumníku jazyk uživatele a je přístupný pomocí kódu programu. Vlastnosti se však liší v tak, že jejich hodnoty jsou uloženy.
@@ -50,7 +50,7 @@ Všechny vlastnosti domény v jazyka specifického pro doménu (DSL) je možné 
      Dsl\GeneratedCode\DomainClasses.cs nebo DomainRelationships.cs otevře. Nad volání metody zvýrazněný, komentář vás vyzve k zadání implementace u metody Get*YourProperty*().
 
     > [!NOTE]
-    >  Tento soubor je vygenerován z DslDefinition.dsl. Pokud jste tento soubor upravit, vaše změny budou ztraceny při příštím kliknutí na **Transformovat všechny šablony**. Místo toho přidejte požadovanou metodu v samostatném souboru.
+    > Tento soubor je vygenerován z DslDefinition.dsl. Pokud jste tento soubor upravit, vaše změny budou ztraceny při příštím kliknutí na **Transformovat všechny šablony**. Místo toho přidejte požadovanou metodu v samostatném souboru.
 
 6. Vytvořte nebo otevřete soubor třídy do samostatné složky, například CustomCode\\*YourDomainClass*. cs.
 

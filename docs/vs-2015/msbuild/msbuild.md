@@ -12,12 +12,12 @@ caps.latest.revision: 62
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b204a0f3bda5eab9291d4201fbea3c39a3f62ca6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2534726de9f4aeb015753e0b1ea6870f2120e014
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050397"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425904"
 ---
 # <a name="msbuild"></a>MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ ms.locfileid: "60050397"
   V integrovaném vývojovém prostředí sady Visual Studio můžete napsat kód, ale spustit sestavení pomocí nástroje MSBuild. Jako další alternativu můžete sestavit kód v rozhraní IDE na vývojovém počítači, ale pomocí příkazového řádku MSBuild sestavit kód, který je integrován od více vývojářů.  
   
 > [!NOTE]
->  Team Foundation Build můžete použít k automatické kompilaci, testování, nasazení aplikace. Systém sestavení může automaticky spouštět sestavení, pokud vývojáři vrácení kódu se změnami (například jako součást strategie Nepřetržitá integrace) nebo podle plánu (například noční sestavení ověřovacího testu sestavení). Team Foundation Build kompiluje kód pomocí nástroje MSBuild. Další informace najdete v tématu [sestavte aplikaci](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692).  
+> Team Foundation Build můžete použít k automatické kompilaci, testování, nasazení aplikace. Systém sestavení může automaticky spouštět sestavení, pokud vývojáři vrácení kódu se změnami (například jako součást strategie Nepřetržitá integrace) nebo podle plánu (například noční sestavení ověřovacího testu sestavení). Team Foundation Build kompiluje kód pomocí nástroje MSBuild. Další informace najdete v tématu [sestavte aplikaci](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692).  
   
  Toto téma obsahuje přehled MSBuild. Úvodní tutoriál naleznete v tématu [názorný postup: Použití nástroje MSBuild](../msbuild/walkthrough-using-msbuild.md).  
   
@@ -83,7 +83,7 @@ MSBuild.exe MyProj.proj /property:Configuration=Debug
  Další informace o [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] možnosti příkazového řádku najdete v tématu [Reference k příkazovému řádku](../msbuild/msbuild-command-line-reference.md).  
   
 > [!IMPORTANT]
->  Před stažením projektu určete důvěryhodnost kódu.  
+> Před stažením projektu určete důvěryhodnost kódu.  
   
 ## <a name="BKMK_ProjectFile"></a> Soubor projektu  
  [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] používá formát souboru projektu založeného na XML, který je jednoduchý a rozšiřitelný. [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] Formát souboru projektu umožňuje vývojářům popsat položky, které mají být vytvořeny, a také jak mají být sestaveny pro různé operační systémy a konfigurace. Kromě toho formát souboru projektu umožňuje vývojářům vytvářet opakovaná pravidla sestavení, které můžete promítnout do samostatných souborů tak, aby sestavení mohou být provedena konzistentně v různých projektech v rámci produktu.  
@@ -193,7 +193,7 @@ MSBuild.exe MyProj.proj /property:Configuration=Debug
   
 |Název|Popis|  
 |-----------|-----------------|  
-|[Návod: Vytváření souboru projektu MSBuild od začátku](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)|Ukazuje, jak vytvořit soubor základního projektu postupně pouze text pomocí editoru.|  
+|[Návod: Vytvoření souboru projektu MSBuild od začátku](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)|Ukazuje, jak vytvořit soubor základního projektu postupně pouze text pomocí editoru.|  
 |[Návod: Použití nástroje MSBuild](../msbuild/walkthrough-using-msbuild.md)|Představuje stavebními bloky nástroje MSBuild a ukazuje, jak psát, manipulaci a ladit projekty MSBuild bez zavření Visual Studio IDE.|  
 |[Koncepty nástroje MSBuild](../msbuild/msbuild-concepts.md)|Nabízí čtyři stavební kameny nástroje MSBuild: vlastnosti, položky, cíle a úkoly.|  
 |[Položky](../msbuild/msbuild-items.md)|Popisuje obecné principy za [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] souboru formátu a jak přizpůsobit kusy dohromady.|  

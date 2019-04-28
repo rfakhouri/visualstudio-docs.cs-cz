@@ -12,12 +12,12 @@ caps.latest.revision: 10
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: 5e334d4e081c4afcb8046e3bbe3026fc0edbb20e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0eaf2f50239249a2aec85cfa88fc610946d5f700
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099361"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436710"
 ---
 # <a name="quick-start-code-analysis-for-cc"></a>Rychlý start: Analýza kódu pro C/C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ Zlepšit kvalitu vaší aplikace při spuštění analýzy kódu pravidelně na 
     2. Ve výchozím nastavení analýza kódu sestavu upozornění z kódu, který je automaticky generován externí nástroje. Chcete-li zobrazit upozornění z generovaného kódu, zrušte **potlačit Výsledky generovaného kódu** zaškrtávací políčko.  
   
         > [!NOTE]
-        >  Tato možnost není potlačit chyby analýzy kódu a upozornění z generovaného kódu při chyby a upozornění se zobrazí ve formulářích a šablony. Můžete jak zobrazit a spravovat zdrojový kód pro formuláře nebo šablony.  
+        > Tato možnost není potlačit chyby analýzy kódu a upozornění z generovaného kódu při chyby a upozornění se zobrazí ve formulářích a šablony. Můžete jak zobrazit a spravovat zdrojový kód pro formuláře nebo šablony.  
   
 3. Chcete-li spustit nástroj Analýza kódu pokaždé, když se sestavení projektu použitím vybrané konfigurace, vyberte **povolit analýzu kódu pro C/C++ při sestavení** zaškrtávací políčko. Můžete také spustit analýzu kódu ručně tak, že otevřete **analyzovat** nabídky a následným výběrem možnosti **spustit analýzu kódu na** *ProjectName*.  
   
@@ -94,7 +94,7 @@ Zlepšit kvalitu vaší aplikace při spuštění analýzy kódu pravidelně na 
  Po zjištění problému ho mohli vyřešit ve vašem kódu. Pak znovu spusťte analýzu kódu, abyste měli jistotu, že již nezobrazuje upozornění v okně analýzy kódu, a nová upozornění, že jste kód opravili správně nebyla vyvolána.  
   
 > [!TIP]
->  Můžete znovu spustit analýzu kódu v okně analýzy kódu. Zvolte **analyzovat** tlačítko a zvolte obor analýzy. Můžete znovu spustit analýzu na celé řešení nebo vybraný projekt.  
+> Můžete znovu spustit analýzu kódu v okně analýzy kódu. Zvolte **analyzovat** tlačítko a zvolte obor analýzy. Můžete znovu spustit analýzu na celé řešení nebo vybraný projekt.  
   
 ## <a name="BKMK_Suppress"></a> Potlačení upozornění analýzy kódu  
  Existují situace, kdy byste se mohli rozhodnot Neopravovat upozornění analýzy kódu. Můžete se rozhodnout, že řešení upozornění vyžaduje příliš mnoho nahrávání ve vztahu k pravděpodobnost, že problém vzniknou v žádné Skutečná implementace kódu. Nebo může domnívat, že je nevhodná pro konkrétní kontext, který se používá v tomto upozornění analýzy. Jednotlivá upozornění můžete potlačit tak, aby se nebude zobrazovat v okně analýzy kódu.  

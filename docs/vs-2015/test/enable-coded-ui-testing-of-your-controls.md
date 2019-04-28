@@ -8,12 +8,12 @@ ms.assetid: 5ef1188f-89dc-413d-801d-0efdaf9b0427
 caps.latest.revision: 24
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 332926de13053339c4e98f2d533d9e39213be4d5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9d6162f26bbfcf3f3bce8f2a3db649fbf1b63a52
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040287"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63416511"
 ---
 # <a name="enable-coded-ui-testing-of-your-controls"></a>Povolení programového testování uživatelského rozhraní pro vaše ovládací prvky
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -78,7 +78,7 @@ Ovládací prvek lze snadněji testovat, pokud se rozhodnete implementovat podpo
 4. Přepsat <xref:System.Windows.Forms.AccessibleObject.Bounds%2A>, <xref:System.Windows.Forms.AccessibleObject.Name%2A>, <xref:System.Windows.Forms.AccessibleObject.Parent%2A>, <xref:System.Windows.Forms.AccessibleObject.Role%2A>, <xref:System.Windows.Forms.AccessibleObject.State%2A>, <xref:System.Windows.Forms.AccessibleObject.Navigate%2A>, a <xref:System.Windows.Forms.AccessibleObject.Select%2A> vlastnosti a metody pro objekt usnadnění podřízený ovládací prvek.  
   
 > [!NOTE]
->  Toto téma začíná ukázka usnadnění přístupu v <xref:System.Windows.Forms.AccessibleObject> v tomto postupu a pak sestavení zabývat v další postupy. Pokud chcete vytvořit pracovní verzi vzorku přístupnost, vytvořte konzolovou aplikaci a pak nahraďte kód v souboru Program.cs se vzorovým kódem. Bude potřeba přidat odkazy na dostupnost, System.Drawing a System.Windows.Forms. Měli byste změnit **Embed Interop Types** pro usnadnění přístupu k **False** k vyloučení upozornění sestavení. Můžete změnit typ výstupu projektu do z **konzolovou aplikaci** k **aplikace Windows** tak, aby se nezobrazí okno konzoly při spuštění aplikace.  
+> Toto téma začíná ukázka usnadnění přístupu v <xref:System.Windows.Forms.AccessibleObject> v tomto postupu a pak sestavení zabývat v další postupy. Pokud chcete vytvořit pracovní verzi vzorku přístupnost, vytvořte konzolovou aplikaci a pak nahraďte kód v souboru Program.cs se vzorovým kódem. Bude potřeba přidat odkazy na dostupnost, System.Drawing a System.Windows.Forms. Měli byste změnit **Embed Interop Types** pro usnadnění přístupu k **False** k vyloučení upozornění sestavení. Můžete změnit typ výstupu projektu do z **konzolovou aplikaci** k **aplikace Windows** tak, aby se nezobrazí okno konzoly při spuštění aplikace.  
   
 ## <a name="customproprties"></a> Implementace vlastnosti zprostředkovatele podpory vlastní vlastnosti ověření  
  Jakmile implementujete základní podporu pro záznam a přehrávání a vlastnost ověření, můžete zpřístupnit vlastní vlastnosti ovládacího prvku pro programové testy UI implementací <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider> modulu plug-in. Například následující postup vytvoří vlastnost poskytovatele, který umožňuje programové testy uživatelského rozhraní pro přístup k vlastnosti stavu ovládacího prvku grafu CurveLegend podřízených ovládacích prvků.  
@@ -324,7 +324,7 @@ Ovládací prvek lze snadněji testovat, pokud se rozhodnete implementovat podpo
 11. Sestavit binární soubory a zkopírujte je do **%ProgramFiles%\Common\Microsoft Shared\VSTT\10.0\UITestExtensionPackages**.  
   
 > [!NOTE]
->  Tento balíček rozšíření uplatní na libovolný ovládací prvek, který je typu "Text". Pokud testujete více ovládacích prvků stejného typu, musíte je samostatně otestujete a spravovat, které balíčky rozšíření se nasazují po zaznamenání testů.  
+> Tento balíček rozšíření uplatní na libovolný ovládací prvek, který je typu "Text". Pokud testujete více ovládacích prvků stejného typu, musíte je samostatně otestujete a spravovat, které balíčky rozšíření se nasazují po zaznamenání testů.  
   
 ## <a name="codegeneration"></a> Nepodporuje generování kódu díky implementaci třídy pro přístup k vlastní vlastnosti  
  Tvůrce programového testu uživatelského rozhraní generuje kód ze záznamu relace, používá <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl> tříd pro vaše ovládací prvky přístupu.  
@@ -512,7 +512,7 @@ Assert.AreEqual(this.AssertMethod3ExpectedValues.UIATextState, uIAText.State);
 4. Sestavit binární soubory a zkopírujte je do %ProgramFiles%\Common Files\Microsoft Shared\VSTT\10.0\UITestExtensionPackages.  
   
 > [!NOTE]
->  Filtr akce není závislý na implementaci usnadnění nebo zprostředkovatel vlastností.  
+> Filtr akce není závislý na implementaci usnadnění nebo zprostředkovatel vlastností.  
   
 ## <a name="debug-your-property-provider-or-action-filter"></a>Ladění zprostředkovatele vlastnost nebo filtr akce  
  Filtr vlastnosti zprostředkovatele a akce jsou implementované v rozšíření balíčku, který je načten a spustit pomocí Tvůrce programového testu uživatelského rozhraní v procesu nezávisle na aplikaci.  

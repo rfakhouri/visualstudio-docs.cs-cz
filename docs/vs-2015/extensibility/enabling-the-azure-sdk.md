@@ -11,12 +11,12 @@ ms.assetid: 1c323afd-fb4e-449a-adaa-bb7a5d3b1468
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 3870027762675f4f9791fa720ae932aedf0b5f90
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1830e014a32129b8e63c78d179eed12f3375b035
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061330"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432160"
 ---
 # <a name="enabling-the-azure-sdk"></a>Povolení sady Azure SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Sady Azure SDK for .NET pomáhá vytvářet, konfigurovat, sestavení, ladění,
      Postupujte podle pokynů v instalačním programu.  
   
     > [!NOTE]
-    >  Instalace nástrojů Azure, musíte mít Internetové informační služby 7.0 a aby byly nainstalovány součásti vývoj aplikací ASP.NET. Pokud tyto součásti nejsou nainstalovány, instalační program nástroje Azure vás vyzve k instalaci.  
+    > Instalace nástrojů Azure, musíte mít Internetové informační služby 7.0 a aby byly nainstalovány součásti vývoj aplikací ASP.NET. Pokud tyto součásti nejsou nainstalovány, instalační program nástroje Azure vás vyzve k instalaci.  
   
 ## <a name="see-also"></a>Viz také  
  [Azure](https://azure.microsoft.com/)   

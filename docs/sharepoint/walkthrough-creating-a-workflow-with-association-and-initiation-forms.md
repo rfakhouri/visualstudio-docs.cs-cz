@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 43ee8d26338b6d15530c51191c3368d3fc556d2c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 08c63966528a2ae34d5a9d776ee111ecee96b22f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60081733"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430381"
 ---
 # <a name="walkthrough-create-a-workflow-with-association-and-initiation-forms"></a>Návod: Vytvoření pracovního postupu pomocí formulářů přidružení a inicializace
   Tento návod ukazuje, jak vytvořit základní sekvenční pracovní postup, který zahrnuje použití formuláře pro asociaci a. Jedná se o ASPX formuláře, které umožňují parametry se mají přidat do pracovního postupu, pokud je první související (formulář přidružení) správcem služby SharePoint a při spuštění pracovního postupu uživatelem (inicializační formulář).
@@ -50,9 +50,9 @@ ms.locfileid: "60081733"
 - Ruční spuštění pracovního postupu.
 
 > [!NOTE]
->  I když tento návod používá projekt sekvenčního pracovního postupu, proces je stejný pro pracovní postupy stavu počítače.
+> I když tento návod používá projekt sekvenčního pracovního postupu, proces je stejný pro pracovní postupy stavu počítače.
 >
->  Kromě toho, že váš počítač může zobrazit jiné názvy nebo umístění některých [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] prvky uživatelského rozhraní v následujících pokynech. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Edicí a nastavení, které používáte určit tyto prvky. Další informace najdete v tématu [přizpůsobení integrovaného vývojového prostředí sady Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
+> Kromě toho, že váš počítač může zobrazit jiné názvy nebo umístění některých [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] prvky uživatelského rozhraní v následujících pokynech. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Edicí a nastavení, které používáte určit tyto prvky. Další informace najdete v tématu [přizpůsobení integrovaného vývojového prostředí sady Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="prerequisites"></a>Požadavky
  K dokončení tohoto návodu budete potřebovat následující komponenty:
@@ -134,7 +134,7 @@ ms.locfileid: "60081733"
 3. Rozbalte **ExpenseReportAssocForm.aspx** ve **Průzkumníka řešení** zobrazíte jeho závislých souborů.
 
     > [!NOTE]
-    >  Pokud je váš projekt v [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)], je nutné vybrat **zobrazit všechny soubory** tlačítko k provedení tohoto kroku.
+    > Pokud je váš projekt v [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)], je nutné vybrat **zobrazit všechny soubory** tlačítko k provedení tohoto kroku.
 
 4. Otevřete místní nabídku pro soubor ExpenseReportAssocForm.aspx a zvolte **zobrazit kód**.
 
@@ -325,7 +325,7 @@ ms.locfileid: "60081733"
     ```
 
     > [!NOTE]
-    >  V kódu, nahraďte `somedomain\\someuser` s doména a uživatelské jméno, pro kterou se vytvoří úkol, například "`Office\\JoeSch`". Pro účely testování je nejjednodušší na používání účtu, který vyvíjíte s.
+    > V kódu, nahraďte `somedomain\\someuser` s doména a uživatelské jméno, pro kterou se vytvoří úkol, například "`Office\\JoeSch`". Pro účely testování je nejjednodušší na používání účtu, který vyvíjíte s.
 
 3. Níže `MethodInvoking` metodu, přidejte v následujícím příkladu:
 

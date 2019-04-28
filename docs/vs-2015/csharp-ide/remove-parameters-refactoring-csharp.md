@@ -17,12 +17,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a28076b8c394818c248a5a18c7bc91d484f2c28a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 40a884fe2ae6aaf73256d8edbcbd083a193b0342
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045795"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444618"
 ---
 # <a name="remove-parameters-refactoring-c"></a>Refaktoring pro odebrání parametrů (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "60045795"
  Proveďte operaci odebrání parametrů tak, že první umístíte kurzor na metodu, indexer nebo delegáta. Zatímco ukazatel je v umístění, která se má vyvolat odebrat `Parameters` operace, klikněte na tlačítko **Refaktorovat** nabídky, stiskněte klávesovou zkratku, nebo v místní nabídce vyberte příkaz.  
   
 > [!NOTE]
->  Nemůžete odebrat první parametr metody rozšíření.  
+> Nemůžete odebrat první parametr metody rozšíření.  
   
 ### <a name="to-remove-parameters"></a>Chcete-li odebrat parametry  
   
@@ -73,7 +73,7 @@ ms.locfileid: "60045795"
  Odebrat parametry z deklarace metody nebo volání metody. Umístěte kurzor do pole Název metody prohlášení nebo delegáta a odebrání Parametry vyvolání.  
   
 > [!CAUTION]
->  Odeberte parametry umožňuje odebrat parametr, který se odkazuje v těle člena, ale neodebere odkazy na tento parametr v těle metody. Do kódu, což může představovat chyby sestavení. Můžete však použít **náhled změn** dialogové okno zrevidujete váš kód před provedením operace refaktoringu názvů.  
+> Odeberte parametry umožňuje odebrat parametr, který se odkazuje v těle člena, ale neodebere odkazy na tento parametr v těle metody. Do kódu, což může představovat chyby sestavení. Můžete však použít **náhled změn** dialogové okno zrevidujete váš kód před provedením operace refaktoringu názvů.  
   
  Pokud parametr odebírá se změní při volání metody, pokud chcete odebrání parametru také odebrat úpravy. Například pokud volání metody se změnil z  
   

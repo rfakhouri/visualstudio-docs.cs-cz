@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cf0462b4d6aac29c87d71506e3a535f21e2b91a7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 717badcc52088568ae348dbb1b712b2202cc7a72
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60103397"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415549"
 ---
 # <a name="how-to-create-custom-text-markers"></a>Postupy: Vytvoření vlastního textu značky
 Pokud chcete vytvořit vlastní text značky zvýraznění nebo organizaci kódu, je nutné provést následující kroky:
@@ -41,7 +41,7 @@ Pokud chcete vytvořit vlastní text značky zvýraznění nebo organizaci kódu
     `<PackageGUID>` identifikátor GUID sady VSPackage implementuje objekt automatizace.
 
    > [!NOTE]
-   >  Kořenová cesta **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\\<verze >** monitorconfigurationoverride lze přepsat náhradní root při inicializaci prostředí sady Visual Studio, pro další informace naleznete v tématu [Přepínače příkazového řádku](../extensibility/command-line-switches-visual-studio-sdk.md).
+   > Kořenová cesta **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\\<verze >** monitorconfigurationoverride lze přepsat náhradní root při inicializaci prostředí sady Visual Studio, pro další informace naleznete v tématu [Přepínače příkazového řádku](../extensibility/command-line-switches-visual-studio-sdk.md).
 
 2. Vytvořit čtyři hodnoty v rámci **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\\<verze > \Text Editor\External značky\\\<MarkerGUID >**
 

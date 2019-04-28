@@ -11,12 +11,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6b432dd6dd0a19f6509ad1ff133424fcbc387fb6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: f732fd66439897b67f150ddb9603b7d67003eff2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54790544"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431373"
 ---
 # <a name="workflow-designer-shell-features"></a>Funkce prostředí návrháře postupu provádění
 [!INCLUDE[wfd1](../includes/wfd1-md.md)] se skládá ze tří hlavních oblastech uživatelského rozhraní: na plochu návrháře, panelu navigace s popisem cesty nad ním a pod ním prostředí. Na panelu navigace s popisem cesty umístěný v horní části obrazovky, slouží k zobrazení seznamu nadřazených členů aktuální kořenovou aktivitu. [!INCLUDE[crdefault](../includes/crdefault-md.md)][Jak: Pomocí navigace s popisem cesty](../workflow-designer/how-to-use-breadcrumb-navigation.md). Na plochu návrháře umístěn ve středu obrazovky, slouží k vytváření pracovních postupů. Prostředí, které jsou umístěné v dolní části obrazovky obsahuje řadu tlačítek pro Správa aktuálního zobrazení.  
@@ -28,7 +28,7 @@ ms.locfileid: "54790544"
  Přehledovou mapu jako malé verze celá aktivita zobrazí aktuální kořenové navigace s popisem cesty, včetně všech jeho podřízených prvků a všemi podřízenými rozšířené. Zde je zobrazení, obdélník se oranžové ohraničení, která zvýrazňuje část aktivity aktuálně zobrazený v editoru. Přetahování obdélník kolem přehledovou mapu posune návrháře pracovních postupů a změní zobrazení editoru.  
   
 > [!NOTE]
->  [!INCLUDE[wfd2](../includes/wfd2-md.md)] Virtualizované uživatelské rozhraní. Návrháři aktivit jsou generovány pouze v případě potřeby. Část pracovního postupu byl nakreslen nikdy na návrhové ploše, část se zobrazí jako bílá na přehledovou mapu. Posouvání kolem přehledovou mapu zcela kreslení pracovního postupu.  
+> [!INCLUDE[wfd2](../includes/wfd2-md.md)] Virtualizované uživatelské rozhraní. Návrháři aktivit jsou generovány pouze v případě potřeby. Část pracovního postupu byl nakreslen nikdy na návrhové ploše, část se zobrazí jako bílá na přehledovou mapu. Posouvání kolem přehledovou mapu zcela kreslení pracovního postupu.  
   
 ## <a name="copying-or-saving-workflows-as-images"></a>Kopírování nebo ukládání pracovních postupů jako obrázky  
  Pracovní postupy dá zkopírovali v formát rastrového obrázku nebo uložit ve formátu rastrový obrázek nebo vektoru. Kopírování nebo ukládání obrazu poskytuje způsob, jak exportovat zobrazení celého aktivity aktuální kořenové navigace s popisem cesty, včetně všech jeho podřízených prvků a všemi podřízenými rozšířené na jiném programu.  

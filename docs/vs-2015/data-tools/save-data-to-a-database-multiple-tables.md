@@ -19,12 +19,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cd19af4bc2533d2bd4e7c21dd49eae53510ae429
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d794e135c38858522c19c6842573445ab9fb669f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60118211"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425022"
 ---
 # <a name="save-data-to-a-database-multiple-tables"></a>Uložení dat do databáze (více tabulek)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Jedním z nejběžnějších scénářů při vývoji aplikace je zobrazení dat
  Data můžete uložit ve vaší aplikaci zpět do databáze pomocí volání `Update` metody třídy TableAdapter. Při přetažení tabulky z **zdroje dat** okna do formuláře, kód, který je potřeba k uložení dat se automaticky přidá. Žádné další tabulky, které jsou přidány k formuláři vyžadují ruční přidání tohoto kódu. Tento návod ukazuje, jak přidat kód pro uložení aktualizací z více než jedné tabulky.  
   
 > [!NOTE]
->  Dialogová okna a příkazy nabídek, které se zobrazí může lišit od těch popsaných v nápovědě v závislosti na aktivních nastaveních nebo edici, kterou používáte. Chcete-li změnit nastavení, zvolte **nastavení importu a exportu** na **nástroje** nabídky. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Dialogová okna a příkazy nabídek, které se zobrazí může lišit od těch popsaných v nápovědě v závislosti na aktivních nastaveních nebo edici, kterou používáte. Chcete-li změnit nastavení, zvolte **nastavení importu a exportu** na **nástroje** nabídky. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  Úlohy v tomto návodu zahrnují:  
   
@@ -118,7 +118,7 @@ Jedním z nejběžnějších scénářů při vývoji aplikace je zobrazení dat
 2. Přetáhněte související **objednávky** uzlu z **zdroje dat** okna do **Form1**.  
   
     > [!NOTE]
-    >  Související **objednávky** uzel se nachází pod **Fax** sloupce a je podřízený uzel **zákazníkům** uzlu.  
+    > Související **objednávky** uzel se nachází pod **Fax** sloupce a je podřízený uzel **zákazníkům** uzlu.  
   
      A <xref:System.Windows.Forms.DataGridView> ovládacího prvku a pruh nástrojů (<xref:System.Windows.Forms.BindingNavigator>) pro procházení záznamů se zobrazí ve formuláři. OrdersTableAdapter a <xref:System.Windows.Forms.BindingSource> zobrazují v panelu komponent.  
   
@@ -126,7 +126,7 @@ Jedním z nejběžnějších scénářů při vývoji aplikace je zobrazení dat
  Databáze můžete aktualizovat pomocí volání `Update` metody **zákazníkům** a **objednávky** objekty TableAdapter. Ve výchozím nastavení, obslužná rutina události **Uložit** tlačítko<xref:System.Windows.Forms.BindingNavigator> je přidán do formuláře kód k odeslání aktualizací do databáze. Tento postup upravuje kód k odesílání aktualizací ve správném pořadí. Tím se eliminuje možnost vyvolání chyby referenční integrity. Kód také implementuje obalením volání update v bloku try-catch – zpracování chyb. Můžete upravit kód tak, aby odpovídaly potřebám vaší aplikace.  
   
 > [!NOTE]
->  Tento návod pro přehlednost nepoužívá transakce. Pokud chcete aktualizovat dvě nebo více souvisejících tabulek, ale obsahovat veškerou logiku aktualizací v rámci transakce. Transakce je proces, který zaručuje, že všechny související změny do databáze úspěšní, než se změny potvrdí. Další informace najdete v tématu [transakce a souběžnost](http://msdn.microsoft.com/library/f46570de-9e50-4fe6-8710-a8c31fa8569b).  
+> Tento návod pro přehlednost nepoužívá transakce. Pokud chcete aktualizovat dvě nebo více souvisejících tabulek, ale obsahovat veškerou logiku aktualizací v rámci transakce. Transakce je proces, který zaručuje, že všechny související změny do databáze úspěšní, než se změny potvrdí. Další informace najdete v tématu [transakce a souběžnost](http://msdn.microsoft.com/library/f46570de-9e50-4fe6-8710-a8c31fa8569b).  
   
 #### <a name="to-add-update-logic-to-the-application"></a>Chcete-li přidat logiku aktualizací do aplikace  
   

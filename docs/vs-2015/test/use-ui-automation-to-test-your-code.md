@@ -17,12 +17,12 @@ ms.assetid: ad9e3eaa-ab86-436e-95b8-dc20eb1f8b2a
 caps.latest.revision: 87
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8840c570d4de2544a5cdb4831f083e5a3598ca72
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: f9a7d4288258ab3e90a7eec6ba3de7ac6892ee93
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60113791"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442894"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>Použití automatizace uživatelského rozhraní k testování kódu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -98,7 +98,7 @@ Automatizované testy, které ovládají aplikaci prostřednictvím jejího uži
     **Pozastavit záznam**, například pokud budete muset řešit příchozí pošty, zvolte **pozastavit**.
 
    > [!WARNING]
-   >  Všechny akce provedené v klientských počítačích, bude zaznamenán. Pozastavte záznam, pokud provádíte akce, které může vést k citlivá data nebudou zahrnuty v záznamu.
+   > Všechny akce provedené v klientských počítačích, bude zaznamenán. Pozastavte záznam, pokud provádíte akce, které může vést k citlivá data nebudou zahrnuty v záznamu.
 
     **Chcete-li odstranit některé akce** , který jste si poznamenali omylem, zvolte **upravit akce**.
 
@@ -113,7 +113,7 @@ Automatizované testy, které ovládají aplikaci prostřednictvím jejího uži
     ![Programový test uživatelského rozhraní, které cílí na element](../test/media/codedui-1.png "CodedUI_1")
 
    > [!TIP]
-   >  Střídání nahrávání akcí a ověření hodnot. Generování kódu na konci každé posloupnost akcí nebo ověření. Pokud chcete, bude možné později vložit nové akce a ověření.
+   > Střídání nahrávání akcí a ověření hodnot. Generování kódu na konci každé posloupnost akcí nebo ověření. Pokud chcete, bude možné později vložit nové akce a ověření.
 
     Další podrobnosti najdete v tématu [ověřování vlastnosti ovládacích prvků](#VerifyingCodeUsingCUITGenerateAssertions).
 
@@ -230,7 +230,7 @@ Automatizované testy, které ovládají aplikaci prostřednictvím jejího uži
   Použití klávesnice k výběru ovládacího prvku uživatelského rozhraní, najeďte myší ovládací prvek pomocí myši. Potom podržte klávesu **Ctrl** klíč a **můžu** klíče ve stejnou dobu. Verze klíče. Tvůrce programového testu UT zaznamenané ovládacího prvku.
 
 > [!WARNING]
->  Pokud používáte Microsoft Lync, je třeba nejprve spustit Tvůrce programového testu UI zavřít Lync. Microsoft Lync, dochází ke kolizím s **Ctrl + I** klávesové zkratky.
+> Pokud používáte Microsoft Lync, je třeba nejprve spustit Tvůrce programového testu UI zavřít Lync. Microsoft Lync, dochází ke kolizím s **Ctrl + I** klávesové zkratky.
 
  *Můžu nelze zaznamenat najedete myší na ovládací prvek. Je možné vyřešit?*
  **Ruční nahrávání se ukazatel myši nachází**
@@ -255,7 +255,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
  V případě potřeby výchozí přiřazení klávesnice Ctrl + Shift + R, který se používá k aplikování ukázání událostí myši v programových testů UI může nakonfigurován k používání různých klíčů.
 
 > [!WARNING]
->  Není nutné změnit přiřazení klávesnice pro události myši při najetí myší za běžných okolností. Buďte opatrní při přiřazení přiřazení klávesnice. Podle vašeho výběru mohou být již používá jinde v rámci sady Visual Studio nebo aplikaci právě testováno.
+> Není nutné změnit přiřazení klávesnice pro události myši při najetí myší za běžných okolností. Buďte opatrní při přiřazení přiřazení klávesnice. Podle vašeho výběru mohou být již používá jinde v rámci sady Visual Studio nebo aplikaci právě testováno.
 
  Chcete-li změnit přiřazení klávesnice, je třeba upravit následující konfigurační soubor:
 
@@ -356,7 +356,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
   ```
 
   > [!WARNING]
-  >  Tento soubor by neměl upravit, protože se znovu vygeneruje, když vytvoříte další testy.
+  > Tento soubor by neměl upravit, protože se znovu vygeneruje, když vytvoříte další testy.
 
    Upravit verze těchto metod můžete nastavit zkopírováním UIMap.cs. Například může vytvořit parametrizovanou verzi, která lze volat z testovací metody:
 
@@ -487,7 +487,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 - <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert>
 - [Zlepšení kvality kódu](http://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)
-- [Návod: Vytváření, úpravy a údržba programového testu UI](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
+- [Návod: Vytváření, upravování a údržba programového testu uživatelského rozhraní](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
 - [Anatomie programového testu UI](../test/anatomy-of-a-coded-ui-test.md)
 - [Doporučené postupy pro programové testy UI](../test/best-practices-for-coded-ui-tests.md)
 - [Testování rozsáhlé aplikace s více mapami uživatelského rozhraní](../test/testing-a-large-application-with-multiple-ui-maps.md)

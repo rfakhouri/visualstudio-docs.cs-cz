@@ -14,12 +14,12 @@ caps.latest.revision: 45
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 61c56636eec92f28468533b7c4d9a51e6f120363
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0588d887cc1ba36a1ebb71df933686f68be524fc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054494"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426614"
 ---
 # <a name="run-windows-store-apps-in-the-simulator"></a>Spouštění v simulátoru Windows Store apps
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Simulátor aplikace Visual Studio pro aplikace Windows Store je aplikace klasick
  Zobrazit [aplikace spustit na Windows Phone v emulátoru](../debugger/run-windows-phone-apps-in-the-emulator.md) informace Windows Phone.  
   
 > [!IMPORTANT]
->  Simulátor aplikace Visual Studio 2015 neobsahuje informace o zeměpisné poloze tlačítko. Je to proto, že simulátor systému Windows 10 neobsahuje informace o zeměpisné poloze simulace. Pokud potřebujete udělat tento druh simulace, můžete použít simulátor aplikace Visual Studio 2013 na Windows 8.1 nebo starší operační systémy.  
+> Simulátor aplikace Visual Studio 2015 neobsahuje informace o zeměpisné poloze tlačítko. Je to proto, že simulátor systému Windows 10 neobsahuje informace o zeměpisné poloze simulace. Pokud potřebujete udělat tento druh simulace, můžete použít simulátor aplikace Visual Studio 2013 na Windows 8.1 nebo starší operační systémy.  
   
 ## <a name="BKMK_Set_the_simulator_as_the_target"></a> Nastavit jako cíl simulátoru  
  Ke spuštění vaší aplikace Windows Store v simulátoru, vyberte **simulátor** z rozevíracího seznamu vedle položky **spustit ladění** tlačítko na ladicí program **standardní** nástrojů.  
@@ -86,10 +86,10 @@ Simulátor aplikace Visual Studio pro aplikace Windows Store je aplikace klasick
  Orientace zařízení mezi na výšku a šířku můžete přepnout otočením v simulátoru 90 stupňů vede libovolným směrem.  
   
 > [!NOTE]
->  Simulátor nerespektuje [DisplayProperties.AutoRotationPreferences](http://go.microsoft.com/fwlink/?LinkId=249460) vlastnost projektu. Například, pokud váš projekt nastaví orientaci `Landscape`a potom otočit simulator pro orientaci na výšku, obraz simulátor také se otočí a se změněnou velikostí. Vyzkoušejte nastavení na příslušném zařízení.  
+> Simulátor nerespektuje [DisplayProperties.AutoRotationPreferences](http://go.microsoft.com/fwlink/?LinkId=249460) vlastnost projektu. Například, pokud váš projekt nastaví orientaci `Landscape`a potom otočit simulator pro orientaci na výšku, obraz simulátor také se otočí a se změněnou velikostí. Vyzkoušejte nastavení na příslušném zařízení.  
   
 > [!NOTE]
->  Pokud otočíte simulátoru tak, aby jednomu z okrajů simulátoru je větší, než se zobrazí na obrazovce, simulátor je automaticky přizpůsobí na obrazovce. Simulátor nezmění původní velikost, pokud znovu otočit.  
+> Pokud otočíte simulátoru tak, aby jednomu z okrajů simulátoru je větší, než se zobrazí na obrazovce, simulátor je automaticky přizpůsobí na obrazovce. Simulátor nezmění původní velikost, pokud znovu otočit.  
   
 ## <a name="BKMK_Change_the_simulated_screen_size_and_resolution"></a> Změna velikosti obrazovky s Simulovaná a řešení  
  Chcete-li změnit velikost simulované obrazovky a rozlišení, zvolte **změnit rozlišení** tlačítko na paletě a v seznamu vyberte novou velikost a řešení.  
@@ -97,13 +97,13 @@ Simulátor aplikace Visual Studio pro aplikace Windows Store je aplikace klasick
  Velikost obrazovky a rozlišení, které jsou uvedené jako *palce šířka obrazovky, pixel šířka a výška pixel*. Mějte na paměti, že se simulované velikosti obrazovky a rozlišení. Souřadnice umístění na simulátoru jsou přeloženy na souřadnice velikost vybraného zařízení a řešení.  
   
 > [!NOTE]
->  Škálovaná verze bitmapové obrázky můžete uložit ve vaší aplikaci a Windows se načte správné bitové kopie pro aktuální měřítko. Další informace najdete v tématu [Responzivní návrh 101](https://msdn.microsoft.com/library/windows/apps/dn958435.aspx). Ale pokud změníte na simulátoru řešení tak, že Windows vybere jinou image podle rozlišení, budete muset zastavte a restartujte relaci ladění zobrazíte novou bitovou kopii.  
+> Škálovaná verze bitmapové obrázky můžete uložit ve vaší aplikaci a Windows se načte správné bitové kopie pro aktuální měřítko. Další informace najdete v tématu [Responzivní návrh 101](https://msdn.microsoft.com/library/windows/apps/dn958435.aspx). Ale pokud změníte na simulátoru řešení tak, že Windows vybere jinou image podle rozlišení, budete muset zastavte a restartujte relaci ladění zobrazíte novou bitovou kopii.  
   
 ## <a name="BKMK_Capture_a_screenshot_of_your_app_for_submission_to_the_Microsoft_Store"></a> Zachytit snímek obrazovky aplikace k odeslání do Windows Store  
  Při odeslání aplikace do app storu Windows, musíte zahrnout snímky obrazovky aplikace.  
   
 > [!NOTE]
->  Na snímku obrazovky je uložen na aktuální řešení simulátoru. Chcete-li změnit na řešení, zvolte **změnit rozlišení** tlačítko.  
+> Na snímku obrazovky je uložen na aktuální řešení simulátoru. Chcete-li změnit na řešení, zvolte **změnit rozlišení** tlačítko.  
   
 - Chcete-li vytvořit snímky obrazovek pro vaši aplikaci v simulátoru, zvolte **zachytit snímek obrazovky do schránky** tlačítko.  
   

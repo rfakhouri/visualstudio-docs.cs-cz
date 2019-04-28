@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7069da816d8f693fc38856d1218f5f9f6284dd4c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ddeba1539cf68d53f4b9f931d2bcd18a159028fd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063605"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438696"
 ---
 # <a name="walkthrough-bind-data-to-controls-on-a-word-actions-pane"></a>Návod: Vytvoření vazby dat s ovládacími prvky v podokně akcí aplikace Word
   Tento návod ukazuje vytváření datových vazeb k ovládacím prvkům v podokně akcí ve Wordu. Ovládací prvky ukazují záznamů master/detail relace mezi tabulkami v databázi serveru SQL Server.
@@ -38,7 +38,7 @@ ms.locfileid: "60063605"
 - Zobrazit podokno akcí, když se aplikace otevře.
 
 > [!NOTE]
->  Váš počítač může v následujících pokynech zobrazovat odlišné názvy nebo umístění některých prvků uživatelského rozhraní sady Visual Studio. Tyto prvky jsou určeny edicí sady Visual Studio a použitým nastavením. Další informace najdete v tématu [přizpůsobení integrovaného vývojového prostředí sady Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
+> Váš počítač může v následujících pokynech zobrazovat odlišné názvy nebo umístění některých prvků uživatelského rozhraní sady Visual Studio. Tyto prvky jsou určeny edicí sady Visual Studio a použitým nastavením. Další informace najdete v tématu [přizpůsobení integrovaného vývojového prostředí sady Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="prerequisites"></a>Požadavky
  K dokončení tohoto návodu budete potřebovat následující komponenty:
@@ -78,7 +78,7 @@ ms.locfileid: "60063605"
 1. Pokud **zdroje dat** okno se nezobrazuje, zobrazit ho tím, na panelu nabídek, výběrem **zobrazení** > **ostatní Windows**  >   **Zdroje dat**.
 
    > [!NOTE]
-   >  Pokud **zobrazit zdroje dat** není k dispozici, klikněte na dokumentu aplikace Word a zkontrolovat znovu.
+   > Pokud **zobrazit zdroje dat** není k dispozici, klikněte na dokumentu aplikace Word a zkontrolovat znovu.
 
 2. Klikněte na tlačítko **přidat nový zdroj dat** spustit **Průvodce konfigurací zdroje dat**.
 
@@ -111,7 +111,7 @@ ms.locfileid: "60063605"
 4. Vyberte `SuppliersBindingNavigator` v **komponenty** na hlavním panelu a stiskněte klávesu **odstranit**. Nebudete používat `SuppliersBindingNavigator` v tomto názorném postupu.
 
     > [!NOTE]
-    >  Odstraňuje `SuppliersBindingNavigator` veškerý kód, který byl vygenerován pro něj nebude odstraněn. Můžete odebrat tento kód.
+    > Odstraňuje `SuppliersBindingNavigator` veškerý kód, který byl vygenerován pro něj nebude odstraněn. Můžete odebrat tento kód.
 
 5. Přesuňte pole se seznamem tak, aby se v popisku a změnit **velikost** vlastnost **171, 21**.
 
@@ -129,7 +129,7 @@ ms.locfileid: "60063605"
 
 11. Klikněte pravým tlačítkem myši <xref:System.Windows.Forms.Button>, klikněte na tlačítko **vlastnosti** v místní nabídce a změnit následující vlastnosti.
 
-    |Vlastnost|Value|
+    |Vlastnost|Hodnota|
     |--------------|-----------|
     |**Název**|**Vložit**|
     |**Text**|**Vložit**|

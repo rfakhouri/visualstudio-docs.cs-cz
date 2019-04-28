@@ -34,12 +34,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fc5dfaa203e3e915075ad819fa859be46b9e2b7a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: dd61ea128093735a69ad9b1f30cddc593b5856a4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60095344"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440443"
 ---
 # <a name="start-a-debugging-session-for-a-store-app-in-visual-studio-vb-c-c-and-xaml"></a>Spuštění ladicí relace pro Store app v sadě Visual Studio (VB, C#, C++ a XAML)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "wi
  Toto téma popisuje způsob spuštění ladicí relace pro Store aplikace napsané v XAML a Visual C++, Visual C# nebo Visual Basic. Ladění aplikace zahrnuje konfiguraci relace ladění i volba způsob, jak spustit aplikaci.
 
 > [!NOTE]
->  Pro aplikace napsané v jazyce JavaScript a HTML naleznete v tématu [spustíte relaci ladění (JavaScript)](../debugger/start-a-debugging-session-for-store-apps-in-visual-studio-javascript.md).
+> Pro aplikace napsané v jazyce JavaScript a HTML naleznete v tématu [spustíte relaci ladění (JavaScript)](../debugger/start-a-debugging-session-for-store-apps-in-visual-studio-javascript.md).
 
 ## <a name="BKMK_In_this_topic"></a> V tomto tématu
  [Snadný způsob, jak spustit ladění](#BKMK_The_easy_way_to_start_debugging)
@@ -152,7 +152,7 @@ Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "wi
     ![Dialogové okno Vyberte připojení vzdáleného ladicího programu](../debugger/media/vsrun-selectremotedebuggerdlg.png "VSRUN_SelectRemoteDebuggerDlg")
 
   > [!NOTE]
-  >  **Vyberte připojení vzdáleného ladicího programu** dialogové okno zobrazí počítače, které jsou na místní podsíť a počítačů, které jsou připojené přímo k sadě Visual Studio počítači pomocí kabelu Ethernet. Chcete-li určit jiný počítač, zadejte název do **název počítače** pole.
+  > **Vyberte připojení vzdáleného ladicího programu** dialogové okno zobrazí počítače, které jsou na místní podsíť a počítačů, které jsou připojené přímo k sadě Visual Studio počítači pomocí kabelu Ethernet. Chcete-li určit jiný počítač, zadejte název do **název počítače** pole.
 
   ![Platí pouze pro Windows Phone](../debugger/media/phone-only-content.png "phone_only_content")
 
@@ -210,7 +210,7 @@ Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "wi
  Ve výchozím nastavení musíte zadat přihlašovací údaje ke spuštění vzdáleného ladicího programu.
 
 > [!IMPORTANT]
->  Můžete také spustit vzdálený ladicí program v režimu bez ověřování, ale tento režim se rozhodně nedoporučuje. Při spuštění v tomto režimu není žádné zabezpečení sítě. Na možnost Režim bez ověřování klikněte pouze v případě, že jste si jisti, že není síť ohrožena škodlivými nebo nevyžádanými daty.
+> Můžete také spustit vzdálený ladicí program v režimu bez ověřování, ale tento režim se rozhodně nedoporučuje. Při spuštění v tomto režimu není žádné zabezpečení sítě. Na možnost Režim bez ověřování klikněte pouze v případě, že jste si jisti, že není síť ohrožena škodlivými nebo nevyžádanými daty.
 
  Chcete-li odebrat požadavek na ověření:
 
@@ -250,7 +250,7 @@ Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "wi
  Chcete-li nastavit nainstalovanou aplikaci pro spuštění v režimu ladění, postupujte takto:
 
 > [!NOTE]
->  Když spustíte tento postup, nesmí být spuštěná aplikace.
+> Když spustíte tento postup, nesmí být spuštěná aplikace.
 
 1. Na **ladění** nabídce zvolte **ladit nainstalovaný balíček aplikace**
 

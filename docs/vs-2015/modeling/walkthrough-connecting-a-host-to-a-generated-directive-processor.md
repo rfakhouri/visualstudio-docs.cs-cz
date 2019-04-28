@@ -12,12 +12,12 @@ caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8832f31724d5e688b93dcca76cce8e1a496c9ced
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 40be072c9ebc518068d9f02a28507b011bec125a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60083215"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446768"
 ---
 # <a name="walkthrough-connecting-a-host-to-a-generated-directive-processor"></a>Návod: Připojení hostitele k procesoru vygenerovaných direktiv
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ Můžete napsat vlastního hostitele, který zpracovává textových šablon. Z�
  V tomto podrobném návodu rozbalte vlastního hostitele tak, aby podporoval textové šablony, které volají procesory direktiv. Při definování jazyka specifického pro doménu, generuje *procesor direktiv* pro doménový model. Procesor direktiv usnadňuje uživatelům zapisovat šablony, které přístup k modelu, přičemž redukuje nutnost psaní sestavení a importovat direktivy v šablonách.  
   
 > [!WARNING]
->  Tento návod vychází [názorný postup: Vytváření vlastního hostitele textových šablon](../modeling/walkthrough-creating-a-custom-text-template-host.md). Tento návod proveďte jako první.  
+> Tento návod vychází [názorný postup: Vytváření vlastního hostitele textových šablon](../modeling/walkthrough-creating-a-custom-text-template-host.md). Tento návod proveďte jako první.  
   
  Tento návod zahrnuje následující úlohy:  
   
@@ -68,7 +68,7 @@ Můžete napsat vlastního hostitele, který zpracovává textových šablon. Z�
 2. Na **sestavení** nabídky, klikněte na tlačítko **sestavit řešení**.  
   
    > [!IMPORTANT]
-   >  Tento krok vygeneruje procesoru direktiv a přidá klíč pro něj v registru.  
+   > Tento krok vygeneruje procesoru direktiv a přidá klíč pro něj v registru.  
   
 3. Na **ladění** nabídky, klikněte na tlačítko **spustit ladění**.  
   
@@ -120,7 +120,7 @@ Můžete napsat vlastního hostitele, který zpracovává textových šablon. Z�
 5. Vyhledejte kód pro vlastnost `StandardAssemblyReferences`a nahraďte ho následujícím kódem:  
   
     > [!NOTE]
-    >  V tomto kroku přidáte odkazy na sestavení, které jsou vyžadované procesoru vygenerovaných direktiv, která bude podporovat hostitele.  
+    > V tomto kroku přidáte odkazy na sestavení, které jsou vyžadované procesoru vygenerovaných direktiv, která bude podporovat hostitele.  
   
     ```csharp  
     //the host can provide standard assembly references  
@@ -156,7 +156,7 @@ Můžete napsat vlastního hostitele, který zpracovává textových šablon. Z�
 6. Vyhledejte kód pro funkci `ResolveDirectiveProcessor`a nahraďte ho následujícím kódem:  
   
     > [!IMPORTANT]
-    >  Tento kód obsahuje pevně zakódovaný odkazy na název procesoru vygenerovaných direktiv, ke kterému chcete připojit. Můžete snadno provést to obecnější, v takovém případě vyhledá všechny procesory direktiv uvedený v registru a pokusí se najít shodu. V takovém případě hostitele bude pracovat se žádné procesoru vygenerovaných direktiv.  
+    > Tento kód obsahuje pevně zakódovaný odkazy na název procesoru vygenerovaných direktiv, ke kterému chcete připojit. Můžete snadno provést to obecnější, v takovém případě vyhledá všechny procesory direktiv uvedený v registru a pokusí se najít shodu. V takovém případě hostitele bude pracovat se žádné procesoru vygenerovaných direktiv.  
   
     ```csharp  
     //the engine calls this method based on the directives the user has   
@@ -241,7 +241,7 @@ Můžete napsat vlastního hostitele, který zpracovává textových šablon. Z�
 2. Do tohoto textového souboru přidejte následující text:  
   
     > [!NOTE]
-    >  Programovací jazyk textové šablony se nemusí shodovat s vlastního hostitele.  
+    > Programovací jazyk textové šablony se nemusí shodovat s vlastního hostitele.  
   
     ```csharp  
     Text Template Host Test  
@@ -325,7 +325,7 @@ Můžete napsat vlastního hostitele, který zpracovává textových šablon. Z�
      `<YOUR PATH>CustomHost\bin\Debug\CustomHost.exe`  
   
     > [!NOTE]
-    >  Místo zadání adresy můžete soubor CustomHost.exe přejděte v **Windows Explorer**a potom tento soubor přetáhnout do okna příkazového řádku.  
+    > Místo zadání adresy můžete soubor CustomHost.exe přejděte v **Windows Explorer**a potom tento soubor přetáhnout do okna příkazového řádku.  
   
 3. Zadejte mezeru.  
   
@@ -336,7 +336,7 @@ Můžete napsat vlastního hostitele, který zpracovává textových šablon. Z�
      `<YOUR PATH>TestTemplateWithDP.txt`  
   
     > [!NOTE]
-    >  Místo zadání adresy můžete procházet k souboru TestTemplateWithDP.txt v **Windows Explorer**a potom tento soubor přetáhnout do okna příkazového řádku.  
+    > Místo zadání adresy můžete procházet k souboru TestTemplateWithDP.txt v **Windows Explorer**a potom tento soubor přetáhnout do okna příkazového řádku.  
   
      Aplikace vlastního hostitele se spustí a začne proces transformace textových šablon.  
   

@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0ac57569802bbab5317f59e5311e4871a6e74ba1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f82e469997a7d072ab04e4c5ef6df0f36a8dc9ec
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60093056"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419487"
 ---
 # <a name="how-to-programmatically-save-workbooks"></a>Postupy: Ukládání sešitů prostřednictvím kódu programu
   Existuje několik způsobů, jak uložit sešit. Sešit můžete uložit beze změny cesty. Pokud sešit nebyl uložen před, byste měli uložit sešit tak, že zadáte cestu. Bez explicitního cesty aplikace Microsoft Office Excel uloží soubor s názvem, který byl zadán při vytvoření rovnou uložil do aktuální složky. Můžete také uložit kopii tohoto sešitu beze změny otevřít sešit v paměti.
@@ -46,7 +46,7 @@ ms.locfileid: "60093056"
  Zadaný sešit můžete uložit do nového umístění nebo s novým názvem, volitelně může být zadáno formát souboru, hesla, režimu přístupu a další.
 
 > [!NOTE]
->  Můžete chtít nastavit <xref:Microsoft.Office.Interop.Excel._Application.DisplayAlerts%2A> vlastnost **False** před uložením sešitu s novou cestu, protože ukládá v některé formáty vyžaduje zásah. Nastavení této vlastnosti na **False** způsobí, že aplikace Excel a použijte všechny výchozí hodnoty.
+> Můžete chtít nastavit <xref:Microsoft.Office.Interop.Excel._Application.DisplayAlerts%2A> vlastnost **False** před uložením sešitu s novou cestu, protože ukládá v některé formáty vyžaduje zásah. Nastavení této vlastnosti na **False** způsobí, že aplikace Excel a použijte všechny výchozí hodnoty.
 
 ### <a name="to-save-a-workbook-associated-with-a-document-level-customization"></a>Uložte sešit přidružené k přizpůsobení úrovni dokumentu
 

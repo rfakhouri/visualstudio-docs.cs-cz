@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 44c93b0c9a651bd23c34179bc9e21fcd77bad15f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: bce461f4b120d1d9a37c5433b590ed1f7b227131
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60052263"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445306"
 ---
 # <a name="walkthrough-create-an-msbuild-project-file-from-scratch"></a>Návod: Vytvoření souboru projektu MSBuild od začátku
 Programovací jazyky, které jsou cíleny rozhraní .NET Framework používají soubory projektu MSBuild k popisu a řízení procesu sestavení aplikace. Při použití sady Visual Studio k vytvoření souboru projektu MSBuild je odpovídající kód XML je automaticky přidán do souboru. Však může být pro vás užitečné porozumět uspořádání XML a jak můžete změnit, aby řídil sestavení.
@@ -148,11 +148,13 @@ Váš soubor minimálního projektu by měl vypadat následovně:
 Úkoly v cíl sestavení jsou spouštěny postupně. V tomto případě kompilátor Visual C# `Csc` úkolu je jediným úkolem. Očekává seznam zdrojových souborů pro kompilaci, a ten je dán hodnotu `Compile` položky. `Compile` Položka odkazuje na právě jeden zdrojový soubor *Helloworld.cs*.
 
 > [!NOTE]
->  V prvku položky můžete použít zástupný znak hvězdička (\*) k odkazování na všechny soubory, které mají *.cs* příponu názvu souboru následujícím způsobem:
+> V prvku položky můžete použít zástupný znak hvězdička (\*) k odkazování na všechny soubory, které mají *.cs* příponu názvu souboru následujícím způsobem:
 >
->  `<Compile Include="*.cs" />`
+> ```xml
+> <Compile Include="*.cs" />
+> ```
 >
->  Však nedoporučujeme použití zástupných znaků protože to ztěžuje ladění a selektivní Pokud jsou zdrojové soubory přidány nebo odstraněny.
+> Však nedoporučujeme použití zástupných znaků protože to ztěžuje ladění a selektivní Pokud jsou zdrojové soubory přidány nebo odstraněny.
 
 ## <a name="extend-the-path-to-include-msbuild"></a>Rozšíření cesty, aby zahrnovala nástroj MSBuild
  Před zpřístupněním MSBuild je třeba rozšířit proměnnou prostředí CESTU, aby zahrnovala složku rozhraní.NET Framework.
@@ -179,9 +181,9 @@ Váš soubor minimálního projektu by měl vypadat následovně:
      **Hello, world!** Zobrazí se zpráva.
 
 > [!NOTE]
->  Zobrazte podrobnosti o sestavení zvýšením úrovně podrobností. Nastavit úroveň podrobností na "podrobné", zadejte na příkazovém řádku tento příkaz:
+> Zobrazte podrobnosti o sestavení zvýšením úrovně podrobností. Nastavit úroveň podrobností na "podrobné", zadejte na příkazovém řádku tento příkaz:
 >
->  **Nástroj MSBuild helloworld.csproj - t: sestavení - podrobností: podrobné**
+> **Nástroj MSBuild helloworld.csproj - t: sestavení - podrobností: podrobné**
 
 ## <a name="add-build-properties"></a>Přidání vlastností sestavení
  Můžete přidat vlastnosti sestavení do souboru projektu k dalšímu řízení sestavení. Nyní přidejte tyto vlastnosti:
@@ -240,17 +242,17 @@ Váš soubor projektu by měl nyní vypadat následovně:
 ```
 
 > [!NOTE]
->  Doporučujeme, abyste přidali zpětné lomítko (\\) oddělovač cesty na konec názvu složky při jeho zadání v `OutputPath` element místo jeho přidání `OutputAssembly` atribut `Csc` úloh. Proto
+> Doporučujeme, abyste přidali zpětné lomítko (\\) oddělovač cesty na konec názvu složky při jeho zadání v `OutputPath` element místo jeho přidání `OutputAssembly` atribut `Csc` úloh. Proto
 >
->  `<OutputPath>Bin\</OutputPath>`
+> `<OutputPath>Bin\</OutputPath>`
 >
->  `OutputAssembly=="$(OutputPath)$(AssemblyName).exe" />`
+> `OutputAssembly=="$(OutputPath)$(AssemblyName).exe" />`
 >
->  je lepší než
+> je lepší než
 >
->  `<OutputPath>Bin</OutputPath>`
+> `<OutputPath>Bin</OutputPath>`
 >
->  `OutputAssembly=="$(OutputPath)\$(AssemblyName).exe" />`
+> `OutputAssembly=="$(OutputPath)\$(AssemblyName).exe" />`
 
 ## <a name="test-the-build-properties"></a>Testování vlastností sestavení
  Teď můžete vytvářet aplikace pomocí souboru projektu, ve které jste použili vlastnosti sestavení k určení výstupní složky a názvu aplikace.

@@ -8,12 +8,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 71f92543b73eddb26f82e787f5c81f53d3aeddb8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 780745e2b4213d8fdd130fe03cac292b233c5b0c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60102663"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430678"
 ---
 # <a name="ca5351-do-not-use-broken-cryptographic-algorithms"></a>CA5351: Nepoužívejte poškozené kryptografické algoritmy
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "60102663"
 |Narušující změna|Pevné|  
   
 > [!NOTE]
->  Toto upozornění byl naposledy aktualizován. listopadu 2015.  
+> Toto upozornění byl naposledy aktualizován. listopadu 2015.  
   
 ## <a name="cause"></a>Příčina  
  Funkce, jako hashování <xref:System.Security.Cryptography.MD5> a šifrovacích algoritmů, jako <xref:System.Security.Cryptography.DES> a <xref:System.Security.Cryptography.RC2> můžete zveřejnit významné riziko a může vést k úniku citlivých informací pomocí technik triviální útoků, jako jsou například útoky hrubou silou a kolize hodnot hash.  

@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 047728f00fae9dbf3cf2511300beaa84c2201cdd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 88ac74d0e2c666926c5b88976146878991729628
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039827"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427912"
 ---
 # <a name="how-to-add-a-custom-task-pane-to-an-application"></a>Postupy: Přidání vlastního podokna úloh do aplikace
   Můžete přidat uvedených vlastního podokna úloh do aplikace pomocí doplňku VSTO. Další informace najdete v tématu [vlastní podokna úloh](../vsto/custom-task-panes.md).
@@ -26,7 +26,7 @@ ms.locfileid: "60039827"
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
 > [!NOTE]
->  Váš počítač může v následujících pokynech zobrazovat odlišné názvy nebo umístění některých prvků uživatelského rozhraní sady Visual Studio. Tyto prvky jsou určeny edicí sady Visual Studio a použitým nastavením. Další informace najdete v tématu [přizpůsobení integrovaného vývojového prostředí sady Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
+> Váš počítač může v následujících pokynech zobrazovat odlišné názvy nebo umístění některých prvků uživatelského rozhraní sady Visual Studio. Tyto prvky jsou určeny edicí sady Visual Studio a použitým nastavením. Další informace najdete v tématu [přizpůsobení integrovaného vývojového prostředí sady Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="add-a-custom-task-pane-to-an-application"></a>Přidání vlastního podokna úloh do aplikace
 
@@ -55,7 +55,7 @@ ms.locfileid: "60039827"
      [!code-csharp[Trin_TaskPaneBasic#2](../vsto/codesnippet/CSharp/Trin_TaskPaneBasic/ThisAddIn.cs#2)]
 
     > [!NOTE]
-    >  Tento kód přidruží vlastního podokna úloh aktivního okna aplikace. U některých aplikací můžete upravit tento kód a zajistěte tak, že se zobrazí v podokně úloh s jinými dokumenty nebo položek v aplikaci. Další informace najdete v tématu [vlastní podokna úloh](../vsto/custom-task-panes.md).
+    > Tento kód přidruží vlastního podokna úloh aktivního okna aplikace. U některých aplikací můžete upravit tento kód a zajistěte tak, že se zobrazí v podokně úloh s jinými dokumenty nebo položek v aplikaci. Další informace najdete v tématu [vlastní podokna úloh](../vsto/custom-task-panes.md).
 
 ## <a name="see-also"></a>Viz také:
 - [Přizpůsobení uživatelského rozhraní systému Office](../vsto/office-ui-customization.md)

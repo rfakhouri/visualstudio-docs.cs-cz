@@ -17,12 +17,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7f70b18bb2b648231e3cada312fd241375be3193
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2d152ce38c445955988ec76a2e328691eac152ca
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099842"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63416943"
 ---
 # <a name="how-to-create-associations-between-types-class-designer"></a>Postupy: Vytvoření asociací mezi typy (návrhář tříd)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Asociační čáry v Návrháři tříd zobrazují vztah tříd v diagramu. Asoc
  Ačkoli můžete zobrazit všechna pole a vlastnosti jako přidružení, je vhodnější jako přidružení zobrazit pouze důležité členy nebo přidružení v závislosti na tom, co chcete v diagramu zdůraznit. (Můžete zobrazit méně důležité členy jako běžné členy nebo je zcela skrýt.)  
   
 > [!NOTE]
->  Návrhář tříd podporuje pouze jednosměrná přidružení.  
+> Návrhář tříd podporuje pouze jednosměrná přidružení.  
   
 ### <a name="to-define-an-association-line-in-the-class-diagram"></a>Definování asociační čáry v diagramu tříd  
   

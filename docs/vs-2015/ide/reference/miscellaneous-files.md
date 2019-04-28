@@ -21,12 +21,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: aadb6b0212f760ab16efd677e02e1d922ae52e12
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 266db8199160f58c62b7587f55029cff2bb26c29
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59658488"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441692"
 ---
 # <a name="miscellaneous-files"></a>Ostatní soubory
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ Můžete chtít použít [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] editory
  Ve složce ostatní soubory představuje soubory jako odkazy. I když tato složka není součástí řešení, když otevřete řešení, některé nebo všechny ostatní soubory, které byly otevřeny při posledním zavření řešení jsou znovu otevřít, v závislosti na nastavení pro složku.  
   
 > [!NOTE]
->  Některé soubory, které nejsou uvedeny ve složce ostatní soubory jsou soubory, které nelze upravovat v rámci rozhraní IDE, jako jsou soubory ZIP a DOC soubory. Integrované vývojové prostředí nebude sledovat soubory, které lze upravovat pouze prostřednictvím externího editoru.  
+> Některé soubory, které nejsou uvedeny ve složce ostatní soubory jsou soubory, které nelze upravovat v rámci rozhraní IDE, jako jsou soubory ZIP a DOC soubory. Integrované vývojové prostředí nebude sledovat soubory, které lze upravovat pouze prostřednictvím externího editoru.  
   
 ## <a name="commands-available-in-the-ide"></a>Příkazy, které jsou k dispozici v integrovaném vývojovém prostředí  
  Nabídky, panely nástrojů a příkazy obsahují mění v závislosti na formát souboru je otevřít. Když otevřete textový soubor, například se zobrazí panelu nástrojů textového editoru a jeho příkazy jsou k dispozici. Když potom otevřete soubor schématu XML, zobrazí se panel nástrojů schématu XML. Při úpravách schématu XML, nejsou k dispozici příkazy nástrojů textového editoru (nebo na panelu nástrojů, samotné). Schéma XML je aktivní okno a v důsledku toho se kontext aktuálního výběru. Při přepínání mezi soubor projektu a soubor různé všechny příkazy související s projektem zmizí a zobrazí pouze ty, které jsou přímo souvisí s různé souboru.  

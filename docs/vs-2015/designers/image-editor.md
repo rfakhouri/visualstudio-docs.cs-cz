@@ -12,12 +12,12 @@ caps.latest.revision: 47
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 08fd0d6e33de0c032ab63f013fca7ee3174b260e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: eba06da32c04fa0ac8824d3cd1c8d024d96c3091
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60077378"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434399"
 ---
 # <a name="image-editor"></a>Editor obrázků
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -82,7 +82,7 @@ Tento dokument popisuje, jak pracovat [!INCLUDE[vsprvs](../includes/vsprvs-md.md
  Než začnete pracovat s bitovou kopii, kterou jste právě vytvořili, můžete změnit její výchozí konfiguraci. Například můžete změnit jeho rozměry nebo formát barev, které používá. Informace o konfiguraci těchto a dalších vlastností bitové kopie, naleznete v tématu [obrázku vlastnosti](#ImageProperties).  
   
 > [!NOTE]
->  Před uložením svou práci, nezapomeňte nastavit **formát barev** vlastnosti, pokud chcete použít formát konkrétní barev. Pokud formát souboru podporuje kompresi, můžete upravit nastavení komprese při ukládání souboru poprvé nebo když zvolíte **uložit jako**.  
+> Před uložením svou práci, nezapomeňte nastavit **formát barev** vlastnosti, pokud chcete použít formát konkrétní barev. Pokud formát souboru podporuje kompresi, můžete upravit nastavení komprese při ukládání souboru poprvé nebo když zvolíte **uložit jako**.  
   
 ## <a name="working-with-the-image-editor"></a>Práce pomocí editoru obrázků  
  Tato část popisuje způsob použití editoru obrázků k úpravě texturami a obrázky.  
@@ -136,7 +136,7 @@ Tento dokument popisuje, jak pracovat [!INCLUDE[vsprvs](../includes/vsprvs-md.md
 |**Trim**|Ořízne obrázek, který se aktivního výběru.|  
   
 ### <a name="working-with-mip-levels"></a>Práce s úrovní MIP  
- Některé formáty obrázků – například plochy DirectDraw (.dds) – podpora úrovní MIP pro textury místa úrovně of-Detail lod (Level). Informace o tom, jak vytvořit a pracovat s úrovní MIP, naleznete v tématu [jak: Vytvoření a úprava úrovní MIP](../designers/how-to-create-and-modify-mip-levels.md)  
+ Některé formáty obrázků – například plochy DirectDraw (.dds) – podpora úrovní MIP pro textury místa úrovně of-Detail lod (Level). Informace o tom, jak vytvořit a pracovat s úrovní MIP, naleznete v tématu [jak: Vytvoření a úprava úrovní MIP](../designers/how-to-create-and-modify-mip-levels.md)  
   
 ### <a name="working-with-transparency"></a>Práce s transparentnosti  
  Některé formáty obrázků – například plochy DirectDraw (.dds) – podporují průhlednost. Existuje několik způsobů, transparentnosti je možné, v závislosti na nástroje, které používáte. Chcete-li určit úroveň průhlednosti pro výběr barev, v **vlastnosti** okno, nastavte **A** (alfa) součást výběr barvy. Tady je způsob různé druhy nástroje pro řízení použití průhlednosti:  
@@ -166,7 +166,7 @@ Tento dokument popisuje, jak pracovat [!INCLUDE[vsprvs](../includes/vsprvs-md.md
 |Hloubka řezu|Aktuální hloubce řezu. Je možné zobrazit pouze první řez; všechny ostatní řezy budou ztraceny, při uložení image.|  
   
 > [!NOTE]
->  Vzhledem k tomu, **otočit o** vlastnost se vztahuje na všechny nástroje a vybrané oblasti se vždy zobrazí v dolní části **vlastnosti** okno společně s další vlastnosti nástroje. **Otočit o** je vždy zobrazen, protože celého obrázku je implicitně vybrána, když není žádný výběr nebo aktivní nástroj. Další informace o **otočit o** vlastnost, naleznete v tématu [vlastnosti nástroje](#ToolProperties).  
+> Vzhledem k tomu, **otočit o** vlastnost se vztahuje na všechny nástroje a vybrané oblasti se vždy zobrazí v dolní části **vlastnosti** okno společně s další vlastnosti nástroje. **Otočit o** je vždy zobrazen, protože celého obrázku je implicitně vybrána, když není žádný výběr nebo aktivní nástroj. Další informace o **otočit o** vlastnost, naleznete v tématu [vlastnosti nástroje](#ToolProperties).  
   
 #### <a name="resizing-images"></a>Změna velikosti obrázků  
  Tady jsou dva způsoby, jak změnit velikost obrázku. Editor obrázků v obou případech se používá bi lineární interpolace k Převzorkovat na obrázku.  

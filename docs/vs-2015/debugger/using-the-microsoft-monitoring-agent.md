@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c6ea3c9a5ecb0fa10c6b020f3af8a51a65952c9a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 06db94841a45f648461822c5f205cb68bbb2b1c2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082071"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437715"
 ---
 # <a name="using-the-microsoft-monitoring-agent"></a>Použití služby Microsoft Monitoring Agent
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,7 +62,7 @@ Místně můžete monitorovat webové aplikace ASP.NET hostované službou IIS a
      Ujistěte se, že tento adresář vytvořit před zahájením monitorování. Aby se zabránilo zpomalení vaší aplikace, vyberte umístění na místním vysokorychlostním disku, který není velmi aktivní.  
   
     > [!IMPORTANT]
-    >  Protokoly nástroje IntelliTrace může obsahovat osobní a citlivé údaje. Omezte tento adresář pouze na ty identity, které musí pracovat se soubory. Zkontrolujte zásady ochrany osobních údajů vaší společnosti.  
+    > Protokoly nástroje IntelliTrace může obsahovat osobní a citlivé údaje. Omezte tento adresář pouze na ty identity, které musí pracovat se soubory. Zkontrolujte zásady ochrany osobních údajů vaší společnosti.  
   
 5. Ke spuštění podrobné úrovni funkcí monitorování nebo k monitorování aplikací služby SharePoint, měl fond aplikací, který je hostitelem vaší webové aplikaci nebo aplikaci služby SharePoint oprávnění čtení a zápisu do adresáře protokolu IntelliTrace. [DOTAZ: Jak můžu nastavit oprávnění pro fond aplikací?](#FullPermissionsITLog)  
   
@@ -259,7 +259,7 @@ Místně můžete monitorovat webové aplikace ASP.NET hostované službou IIS a
 3. Zkopírujte protokol k zabezpečení sdílené složky a potom otevřete protokol z počítače, který má Visual Studio Enterprise (ale ne edice Professional nebo Community).  
   
    > [!IMPORTANT]
-   >  Buďte opatrní při sdílení protokolů IntelliTrace, protože mohou obsahovat osobní a citlivé údaje. Ujistěte se, kdo má přístup k tyto protokoly má oprávnění k oprávněn prohlížet tato data. Zkontrolujte zásady ochrany osobních údajů vaší společnosti.  
+   > Buďte opatrní při sdílení protokolů IntelliTrace, protože mohou obsahovat osobní a citlivé údaje. Ujistěte se, kdo má přístup k tyto protokoly má oprávnění k oprávněn prohlížet tato data. Zkontrolujte zásady ochrany osobních údajů vaší společnosti.  
   
    **Další:** [Diagnostika zaznamenané události v sadě Visual Studio Enterprise](../debugger/diagnose-problems-after-deployment.md#InvestigateEvents)  
   

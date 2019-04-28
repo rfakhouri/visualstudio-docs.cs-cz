@@ -12,12 +12,12 @@ ms.assetid: 95fa5214-b12e-4e1f-84e5-cc4c2d86b0d7
 caps.latest.revision: 34
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 600cae730cacad4f54433b8179b97eb131a64fab
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7dde910c5622a67ad002a085ace746ebc68e8857
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60076104"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439230"
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>Návod: Použití konfiguračního souboru k definování zdroje dat
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -73,7 +73,7 @@ Tento návod ukazuje, jak používat zdroj dat definované v souboru app.config 
 ```  
   
 > [!NOTE]
->  Název sestavení musí odpovídat sestavení Microsoft Visual Studio .NET Framework, kterou používáte. Pokud používáte Visual Studio .NET Framework 3.5, nastavte 9.0.0.0 verzi. Pokud používáte Visual Studio .NET Framework 2.0, nastavte 8.0.0.0 verzi.  
+> Název sestavení musí odpovídat sestavení Microsoft Visual Studio .NET Framework, kterou používáte. Pokud používáte Visual Studio .NET Framework 3.5, nastavte 9.0.0.0 verzi. Pokud používáte Visual Studio .NET Framework 2.0, nastavte 8.0.0.0 verzi.  
   
 ## <a name="define-connection-strings"></a>Definujte připojovací řetězce  
  Připojovací řetězce definují určité informace o poskytovateli pro přístup ke zdrojům dat. Připojovací řetězce, které jsou definované v konfiguračních souborech poskytují informace poskytovatele opakovaně použitelné dat v aplikaci. V této části vytvoříte dva připojovací řetězce, které se použijí podle zdroje dat, které jsou definovány v části vlastní konfigurace.  
@@ -266,10 +266,10 @@ Tento návod ukazuje, jak používat zdroj dat definované v souboru app.config 
 4. Sestavte řešení a spuštění testů MyTestMethod a MyTestMethod2.  
   
 > [!IMPORTANT]
->  Nasaďte položky jako zdroje dat, takže jsou přístupné pro test v adresáři nasazení.  
+> Nasaďte položky jako zdroje dat, takže jsou přístupné pro test v adresáři nasazení.  
   
 ## <a name="see-also"></a>Viz také  
  [Testování částí kódu](../test/unit-test-your-code.md)   
  [Vytváření a spouštění testů jednotek pro existující kód](http://msdn.microsoft.com/e8370b93-085b-41c9-8dec-655bd886f173)   
  [Testování aplikace](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)   
- [Postupy: Vytvoření testu jednotek řízené daty](../test/how-to-create-a-data-driven-unit-test.md)
+ [Postupy: Vytvoření testu částí řízeného daty](../test/how-to-create-a-data-driven-unit-test.md)

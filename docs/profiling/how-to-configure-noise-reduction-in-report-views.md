@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 99a844bbc32b3b974469fea832aaaebdcefb24f9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b55587bfde894c6104d805d9aae291191d1200ae
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60046575"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439148"
 ---
 # <a name="how-to-configure-noise-reduction-in-report-views"></a>Postupy: Konfigurace snížení šumu v zobrazeních sestav
 Sestavy o výkonu lze nakonfigurovat pro snížení šumu tím, že omezíte množství dat, která jsou zobrazena v zobrazení stromu volání a přidělení. Pomocí snížení šumu jsou nejvážnějších problémy s výkonem. To je užitečné při analýze sestavy o výkonu.
@@ -41,7 +41,7 @@ Sestavy o výkonu lze nakonfigurovat pro snížení šumu tím, že omezíte mno
     1. Vyberte **povolení ořezávání**. Toto je výchozí nastavení.
 
         > [!NOTE]
-        >  Pokud je povolené snížení šumu na informačním panelu se zobrazí v sestavě. Další informace najdete v tématu [zobrazení stromu volání](../profiling/call-tree-view.md) a [přidělení – zobrazení](../profiling/dotnet-memory-allocations-view.md).
+        > Pokud je povolené snížení šumu na informačním panelu se zobrazí v sestavě. Další informace najdete v tématu [zobrazení stromu volání](../profiling/call-tree-view.md) a [přidělení – zobrazení](../profiling/dotnet-memory-allocations-view.md).
 
     2. Nakonfigurovat pomocí nastavení hodnoty **hodnotu** rozevíracího seznamu a výběrem příslušné nastavení.
 
@@ -64,7 +64,7 @@ Sestavy o výkonu lze nakonfigurovat pro snížení šumu tím, že omezíte mno
     1. Vyberte **Povolit skládání**. Toto je výchozí nastavení.
 
         > [!NOTE]
-        >  Pokud je povolené snížení šumu na informačním panelu se zobrazí v sestavě. Další informace najdete v tématu [zobrazení stromu volání](../profiling/call-tree-view.md) a [přidělení – zobrazení](../profiling/dotnet-memory-allocations-view.md).
+        > Pokud je povolené snížení šumu na informačním panelu se zobrazí v sestavě. Další informace najdete v tématu [zobrazení stromu volání](../profiling/call-tree-view.md) a [přidělení – zobrazení](../profiling/dotnet-memory-allocations-view.md).
 
     2. Nakonfigurovat pomocí nastavení hodnoty **hodnotu** rozevíracího seznamu a vyberte příslušné nastavení.
 

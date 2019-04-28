@@ -9,12 +9,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d6c3410468a53b978165dfcae228b71985fcbe51
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 59259d8186803d966e79f27012e6be6c22b47dd8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117756"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63414709"
 ---
 # <a name="how-to-create-a-basic-color-shader"></a>Postupy: Vytvoření shaderu základní barvy
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +51,7 @@ Tento dokument ukazuje způsob použití návrháře shaderu a orientovaného gr
    Následující obrázek znázorňuje dokončené shader graf a náhled shaderu použitý pro datovou krychli.  
   
 > [!NOTE]
->  Na obrázku byl zadán oranžovou barvou lépe demonstruje účinek shaderu.  
+> Na obrázku byl zadán oranžovou barvou lépe demonstruje účinek shaderu.  
   
  ![Graf shaderu a výsledek na 3&#45;D modelu](../designers/media/digit-flat-color-effect.png "číslice paušální barva efekt")  
   

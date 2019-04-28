@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be197adc10cf02839b5c61c02f5327fc6115d343
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f080957774b33ca00787f061708426a62bd7768f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60101493"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440298"
 ---
 # <a name="attach"></a>Připojit
 *VSPerfCmd.exe* **připojit** možnost zahájení profilace vzorku spuštěný proces zadaný pomocí ID procesu (PID).
@@ -21,7 +21,7 @@ ms.locfileid: "60101493"
  Použít **připojit** možnost, je nutné zadat **ukázka** metoda ve variantě pro spuštění.
 
 > [!NOTE]
->  Pokud **Start** s byl zadán příkaz **Crosssession** možnost, všechna volání do **VSPerfCmd /Attach** nebo **VSPerfCmd/Detach** musí také zadejte **Crosssession**.
+> Pokud **Start** s byl zadán příkaz **Crosssession** možnost, všechna volání do **VSPerfCmd /Attach** nebo **VSPerfCmd/Detach** musí také zadejte **Crosssession**.
 
 ## <a name="syntax"></a>Syntaxe
 

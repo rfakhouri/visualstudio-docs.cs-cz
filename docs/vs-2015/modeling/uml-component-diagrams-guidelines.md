@@ -15,12 +15,12 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0b4a5e7e626e7cf9510047f0b016ff80ea8203e1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ef8a152293ef5e1cf9137540abb5590eb43c057a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056780"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424453"
 ---
 # <a name="uml-component-diagrams-guidelines"></a>Diagramy komponent UML: Pokyny
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +57,7 @@ V sadě Visual Studio, můžete nakreslit *diagram komponent* na zobrazit pomoc�
  Další informace o tom, jak pomocí diagramů komponent při navrhování naleznete v tématu [modelování architektury aplikace](../modeling/model-your-app-s-architecture.md).  
   
 > [!NOTE]
->  Podrobné pokyny k vytvoření všech diagramů modelování jsou popsány v [modelů a diagramů UML upravit](../modeling/edit-uml-models-and-diagrams.md).  
+> Podrobné pokyny k vytvoření všech diagramů modelování jsou popsány v [modelů a diagramů UML upravit](../modeling/edit-uml-models-and-diagrams.md).  
   
 #### <a name="to-create-a-component-diagram"></a>Chcete-li vytvořit diagram komponent  
   
@@ -157,7 +157,7 @@ V sadě Visual Studio, můžete nakreslit *diagram komponent* na zobrazit pomoc�
          Na komponentě se zobrazí poskytované rozhraní. Poblíž se zobrazí značka Akce.  
   
         > [!NOTE]
-        >  Pokud používáte **vložit** místo **vložit odkaz**, vytvoří se nové rozhraní s novým názvem.  
+        > Pokud používáte **vložit** místo **vložit odkaz**, vytvoří se nové rozhraní s novým názvem.  
   
     3. Pokud jste chtěli vytvořit požadované rozhraní, klikněte na značku akce a potom klikněte na tlačítko **převést na požadované rozhraní**.  
   

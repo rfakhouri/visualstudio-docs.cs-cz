@@ -28,12 +28,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 139e76911825866375a0f524c53dd23b8967f9ed
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 8641a677ae36ad5a3c1f0f4344fc5c12b8798d7d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063163"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445139"
 ---
 # <a name="map-methods-on-the-call-stack-while-debugging-in-visual-studio"></a>Mapování metod v zásobníku volání při ladění v sadě Visual Studio
 
@@ -114,7 +114,7 @@ Vytvořte mapu kódu pro vizuální sledování zásobníku volání během lad�
  ![Zobrazit pole v metodu na mapě kódu zásobníku volání](../debugger/media/debuggermap_showfields.png)
 
 > [!NOTE]
->  Ve výchozím nastavení přidávání položek do mapy také přidá nadřazené uzly skupiny, například třídy, oboru názvů a sestavení. I to je užitečné, abyste mohli mapy jednoduché vypnutím této funkce pomocí **zahrnout nadřazené položky** tlačítko na panelu nástrojů mapy nebo stisknutím klávesy **CTRL** při přidávání položek.
+> Ve výchozím nastavení přidávání položek do mapy také přidá nadřazené uzly skupiny, například třídy, oboru názvů a sestavení. I to je užitečné, abyste mohli mapy jednoduché vypnutím této funkce pomocí **zahrnout nadřazené položky** tlačítko na panelu nástrojů mapy nebo stisknutím klávesy **CTRL** při přidávání položek.
 
  ![Pole související s metodu na mapě kódu zásobníku volání](../debugger/media/debuggermap_showedfields.png)
 

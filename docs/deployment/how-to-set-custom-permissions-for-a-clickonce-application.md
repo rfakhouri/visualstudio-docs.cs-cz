@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d275875b18941df63e0f6ee3c17f427334eab88a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2c8a6fd6625726f749afcf20b80f83178a47ab92
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60058541"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63407009"
 ---
 # <a name="how-to-set-custom-permissions-for-a-clickonce-application"></a>Postupy: Nastavení vlastních oprávnění pro aplikaci ClickOnce
 Můžete nasadit [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikaci, která používá výchozí oprávnění pro zóny Internetu a místního intranetu. Alternativně můžete vytvořit vlastní zónu pro konkrétní oprávnění, které aplikace potřebuje. Můžete to provést úpravou oprávnění zabezpečení na **zabezpečení** stránku **Návrháře projektu**.
@@ -46,7 +46,7 @@ Můžete nasadit [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md
 7. Před `</applicationRequestMinimum>` prvku, přidejte kód XML pro oprávnění, která vaše aplikace vyžaduje.
 
     > [!NOTE]
-    >  Můžete použít `ToXml` metoda oprávnění nastavená pro generování kódu XML pro manifest aplikace. Například pro generování kódu XML pro <xref:System.Security.Permissions.EnvironmentPermission> sadu oprávnění, volání <xref:System.Security.Permissions.EnvironmentPermission.ToXml%2A> metody.
+    > Můžete použít `ToXml` metoda oprávnění nastavená pro generování kódu XML pro manifest aplikace. Například pro generování kódu XML pro <xref:System.Security.Permissions.EnvironmentPermission> sadu oprávnění, volání <xref:System.Security.Permissions.EnvironmentPermission.ToXml%2A> metody.
 
 ## <a name="see-also"></a>Viz také:
 - [Zabezpečení aplikací ClickOnce](../deployment/securing-clickonce-applications.md)

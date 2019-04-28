@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 87dda9c975f35ac8b48e60acd3e692f9b3a070d4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 25b30db78706dce95188289187ce55011ce1362d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60103511"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441736"
 ---
 # <a name="how-to-protect-parts-of-documents-by-using-content-controls"></a>Postupy: Ochrana částí dokumentů pomocí ovládacích prvků obsahu
   Když chráníte část dokumentu, zabránit uživatelům v měnit nebo odstraňovat obsah v této části dokumentu. Existuje několik způsobů, jak může ochrana částí dokumentu aplikace Microsoft Office Word s použitím ovládacích prvků obsahu:
@@ -73,7 +73,7 @@ ms.locfileid: "60103511"
 - Chcete chránit prostor, který již obsahuje ovládací prvky obsahu, ale text nebo jiné položky, které chcete chránit, nejsou v ovládacích prvcích obsahu.
 
 > [!NOTE]
->  Pokud jste vytvořili <xref:Microsoft.Office.Tools.Word.GroupContentControl> , která obsahuje vložené ovládací prvky obsahu, embedded ovládacích prvků obsahu nejsou chráněné automaticky. Pokud chcete zabránit uživatelům v úpravách vložené ovládací prvek obsahu, použijte **LockContents** vlastnost ovládacího prvku.
+> Pokud jste vytvořili <xref:Microsoft.Office.Tools.Word.GroupContentControl> , která obsahuje vložené ovládací prvky obsahu, embedded ovládacích prvků obsahu nejsou chráněné automaticky. Pokud chcete zabránit uživatelům v úpravách vložené ovládací prvek obsahu, použijte **LockContents** vlastnost ovládacího prvku.
 
 ### <a name="to-protect-an-area-of-a-document-at-design-time"></a>K ochraně oblast dokumentu v době návrhu
 
@@ -82,7 +82,7 @@ ms.locfileid: "60103511"
 2. Na pásu karet klikněte na tlačítko **Developer** kartu.
 
     > [!NOTE]
-    >  Pokud **Developer** karta není zobrazena, musíte ji nejdříve zobrazit. Další informace najdete v tématu [jak: Zobrazení karty Vývojář na pásu karet](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
+    > Pokud **Developer** karta není zobrazena, musíte ji nejdříve zobrazit. Další informace najdete v tématu [jak: Zobrazení karty Vývojář na pásu karet](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
 
 3. V **ovládací prvky** klikněte na položku **skupiny** tlačítko rozevíracího seznamu a pak klikněte na tlačítko **skupiny**.
 

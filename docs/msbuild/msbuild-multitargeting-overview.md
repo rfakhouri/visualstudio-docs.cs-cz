@@ -8,18 +8,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eb31cf48194f48188b714fb7afb14de053cb584d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 60770dfa64c1a648d2a7ae56b38d66fe39e46183
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60043491"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445735"
 ---
 # <a name="msbuild-multitargeting-overview"></a>Přehled cílení na více verzí nástroje MSBuild
 Pomocí nástroje MSBuild můžete zkompilovat aplikaci pro spuštění v jedné z několika verzí rozhraní .NET Framework a v jedné z několika platformách systému. Například můžete zkompilovat aplikaci pro spuštění v rozhraní .NET Framework 2.0 na 32bitové platformě a zkompilovat stejnou aplikaci spustit v rozhraní .NET Framework 4.5 na 64bitové platformě.
 
 > [!IMPORTANT]
->  Bez ohledu název "cílení na více verzí" můžete projekt cílit pouze jedno rozhraní a pouze jedné platformy najednou.
+> Bez ohledu název "cílení na více verzí" můžete projekt cílit pouze jedno rozhraní a pouze jedné platformy najednou.
 
  Toto jsou některé funkce cílí na MSBuild:
 

@@ -24,12 +24,12 @@ caps.latest.revision: 48
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fc40611a8ba5cded6d631e0f52157d4aadb45ff3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 280160127cc147cddd91a79c4290f80a311ee792
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60092094"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434864"
 ---
 # <a name="how-to-use-the-threads-window"></a>Postupy: Použití okna vláken
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -132,7 +132,7 @@ V **vlákna** okna, můžete prozkoumat a pracujte s vlákny v aplikaci, kterou 
  Zmrazení nebo uvolnění vlákna ve spravovaném kódu mění pozastavený počet. Ve spravovaném kódu zmrazené vlákno je pozastavené počet 1. Zmrazené vlákno v nativním kódu, nemá pozastavený počet 0, pokud vlákna se pozastavilo, tak `SuspendThread` volání.  
   
 > [!NOTE]
->  Při ladění volání z nativního kódu pro spravovaný kód spravovaný kód běží ve stejné fyzické vlákno v nativním kódu, která ji zavolala. Pozastavení nebo zmrazení nativních vláken se taky zablokuje spravovaného kódu.  
+> Při ladění volání z nativního kódu pro spravovaný kód spravovaný kód běží ve stejné fyzické vlákno v nativním kódu, která ji zavolala. Pozastavení nebo zmrazení nativních vláken se taky zablokuje spravovaného kódu.  
   
 #### <a name="to-freeze-or-thaw-execution-of-a-thread"></a>Chcete-li zmrazit nebo odblokovat spuštění vlákna  
   

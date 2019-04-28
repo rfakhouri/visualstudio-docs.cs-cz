@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d030b4a59f2140b99df19e141f2d872c1e8fc394
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: a7ac9c63a8524de17541a46f4fecb9e8d9a5ff69
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616453"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63423307"
 ---
 # <a name="project-configuration-for-output"></a>Konfigurace projektu pro výstup
 Všechny konfigurace může podporovat sadu procesy sestavení, které se vytvoří výstupní položky, jako jsou soubory spustitelný soubor nebo prostředek. Tyto položky výstupu jsou privátní pro uživatele a mohou být umístěny ve skupinách, které jsou propojeny související typy výstupu, jako je například spustitelné soubory (.exe, .dll, LIB) a zdrojových souborů (.idl, souborů .h).
@@ -25,7 +25,7 @@ Všechny konfigurace může podporovat sadu procesy sestavení, které se vytvo�
  Konstrukce vypracovanou organizací cccppf implementace `IVsOutputGroup` umožňuje projekty do výstupů skupiny podle využití. Například knihovny DLL mohou být seskupeny s jeho databázi programu (PDB).
 
 > [!NOTE]
->  Soubor PDB obsahuje informace o ladění a je vytvořen, pokud je zadán parametr "Generovat ladicí informace při sestavování .dll nebo .exe. Soubor PDB se obvykle generuje pro ladění pouze v konfiguraci projektu.
+> Soubor PDB obsahuje informace o ladění a je vytvořen, pokud je zadán parametr "Generovat ladicí informace při sestavování .dll nebo .exe. Soubor PDB se obvykle generuje pro ladění pouze v konfiguraci projektu.
 
  Projekt musí vracet stejný počet skupin pro každou konfiguraci, která ho podporuje, i když počet výstupů obsažena ve skupině, které se mohou lišit od konfigurace. Například Matt v projektu knihovny DLL může zahrnovat mattd.dll a mattd.pdb v konfiguraci ladění, ale pouze matt.dll v prodejní konfiguraci.
 

@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fc50da1cec68103045365a021e039dd18eced85e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 2621b88622e99ac95533e388197e483f2925f897
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56717647"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420838"
 ---
 # <a name="symbolsearchinfofields"></a>SYMBOL_SEARCH_INFO_FIELDS
 Určuje typ informací o symbolu pro načtení.
@@ -51,7 +51,7 @@ public enum enum_SYMBOL_SEARCH_INFO_FIELDS
  Tyto příznaky jsou předávány jako parametr [GetSymbolInfo](../../../extensibility/debugger/reference/idebugmodule3-getsymbolinfo.md) vrácená metodou ke zjištění množství informací.
 
 > [!NOTE]
->  V současné době pouze `SSIF_VERBOSE_SEARCH_INFO` se podporuje, a musí být zadán jako `dwFlags` parametr `IDebugModule3::GetSymbolInfo`. Všechny ostatní hodnoty vrátí chybu.
+> V současné době pouze `SSIF_VERBOSE_SEARCH_INFO` se podporuje, a musí být zadán jako `dwFlags` parametr `IDebugModule3::GetSymbolInfo`. Všechny ostatní hodnoty vrátí chybu.
 
 ## <a name="requirements"></a>Požadavky
  Záhlaví: msdbg.h

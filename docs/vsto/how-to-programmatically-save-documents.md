@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 965f8d9661d30d23365fe324f7102e15fafec77c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0e455df89a3dfece2c5d4c8cd36a26af816f720a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056273"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419450"
 ---
 # <a name="how-to-programmatically-save-documents"></a>Postupy: Ukládání dokumentů prostřednictvím kódu programu
   Existuje několik způsobů k uložení dokumentů Microsoft Office Word. Dokument lze uložit beze změny název dokumentu nebo ukládáte dokument s novým názvem.
@@ -54,14 +54,14 @@ ms.locfileid: "60056273"
  Pomocí této metody SaveAs uložit dokument s novým názvem. Tuto metodu lze použít <xref:Microsoft.Office.Tools.Word.Document> hostitelský objekt v úrovni dokumentu projektu aplikace Word nebo nativní <xref:Microsoft.Office.Interop.Word.Document> objektu v každém projektu aplikace Word. Tato metoda vyžaduje, zadejte nový název souboru, ale další argumenty jsou volitelné.
 
 > [!NOTE]
->  Pokud se zobrazuje **SaveAs** dialogovému oknu uvnitř <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> obslužná rutina události `ThisDocument` a nastavte *zrušit* parametr **false**, může aplikace neočekávané ukončení. Pokud jste nastavili *zrušit* parametr **true**, se zobrazí chybová zpráva označující, že automatické ukládání je zakázané.
+> Pokud se zobrazuje **SaveAs** dialogovému oknu uvnitř <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> obslužná rutina události `ThisDocument` a nastavte *zrušit* parametr **false**, může aplikace neočekávané ukončení. Pokud jste nastavili *zrušit* parametr **true**, se zobrazí chybová zpráva označující, že automatické ukládání je zakázané.
 
 ### <a name="to-save-the-document-associated-with-a-document-level-customization-with-a-new-name"></a>Chcete-li uložit dokument přidružený k přizpůsobení úrovni dokumentu s novým názvem.
 
 1. Volání <xref:Microsoft.Office.Tools.Word.Document.SaveAs%2A> metodu `ThisDocument` třídu ve vašem projektu, pomocí plně kvalifikovaný název a cesta k souboru. Pokud soubor s tímto názvem již existuje v této složce, je tiše přepsána. Pokud chcete použít tento příklad kódu, spusťte jej z `ThisDocument` třídy.
 
     > [!NOTE]
-    >  <xref:Microsoft.Office.Tools.Word.Document.SaveAs%2A> Metoda vyvolá výjimku, pokud cílový adresář neexistuje, nebo jestli neexistují nějaké jiné problémy uložení souboru. Je vhodné použít **try... catch** blokovat kolem <xref:Microsoft.Office.Tools.Word.Document.SaveAs%2A> metoda nebo uvnitř volání metody.
+    > <xref:Microsoft.Office.Tools.Word.Document.SaveAs%2A> Metoda vyvolá výjimku, pokud cílový adresář neexistuje, nebo jestli neexistují nějaké jiné problémy uložení souboru. Je vhodné použít **try... catch** blokovat kolem <xref:Microsoft.Office.Tools.Word.Document.SaveAs%2A> metoda nebo uvnitř volání metody.
 
      [!code-vb[Trin_VstcoreWordAutomation#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#10)]
      [!code-csharp[Trin_VstcoreWordAutomation#10](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#10)]
@@ -73,7 +73,7 @@ ms.locfileid: "60056273"
      Následující příklad kódu uloží aktivní dokument s novým názvem. Pokud chcete použít tento příklad kódu, spusťte jej z `ThisDocument` nebo `ThisAddIn` třídu ve vašem projektu.
 
     > [!NOTE]
-    >  <xref:Microsoft.Office.Interop.Word._Document.SaveAs%2A> Metoda vyvolá výjimku, pokud cílový adresář neexistuje, nebo jestli neexistují nějaké jiné problémy uložení souboru. Je vhodné použít **try... catch** blokovat kolem <xref:Microsoft.Office.Interop.Word._Document.SaveAs%2A> metoda nebo uvnitř volání metody.
+    > <xref:Microsoft.Office.Interop.Word._Document.SaveAs%2A> Metoda vyvolá výjimku, pokud cílový adresář neexistuje, nebo jestli neexistují nějaké jiné problémy uložení souboru. Je vhodné použít **try... catch** blokovat kolem <xref:Microsoft.Office.Interop.Word._Document.SaveAs%2A> metoda nebo uvnitř volání metody.
 
      [!code-vb[Trin_VstcoreWordAutomationAddIn#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#10)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#10](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#10)]

@@ -12,12 +12,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9c4876aedd12b2284982304b16049691ce6c9b0d
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 92dac82de96323e1d057991e6570715371c9b272
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59652888"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438051"
 ---
 # <a name="projects-and-solutions-options-dialog-box"></a>Projekty a řešení – dialogové okno Možnosti
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "59652888"
 Nastaví výchozí cestu [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] složky projektu a určí výchozí chování **výstup** okně **seznamu úkolů**, a **Průzkumníka řešení** jako projekty jsou vyvíjeny a sestaven. Chcete-li získat přístup k tomuto dialogovému oknu, klikněte na tlačítko **Nástroje / možnosti** rozbalte **projekty a řešení**a klikněte na tlačítko **Obecné**.  
   
 > [!NOTE]
->  Dostupné možnosti v dialogových oknech, názvy a umístění příkazů, které vidíte, mohou lišit od informací uvedených v nápovědě v závislosti na aktivních nastaveních nebo edici. Tato stránka nápovědy byl zapsán s **obecného vývojového nastavení** v úvahu. Chcete-li zobrazit nebo změnit nastavení, zvolte **nastavení importu a exportu** na **nástroje** nabídky. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Dostupné možnosti v dialogových oknech, názvy a umístění příkazů, které vidíte, mohou lišit od informací uvedených v nápovědě v závislosti na aktivních nastaveních nebo edici. Tato stránka nápovědy byl zapsán s **obecného vývojového nastavení** v úvahu. Chcete-li zobrazit nebo změnit nastavení, zvolte **nastavení importu a exportu** na **nástroje** nabídky. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="settings"></a>Nastavení  
  **Umístění projektů**  

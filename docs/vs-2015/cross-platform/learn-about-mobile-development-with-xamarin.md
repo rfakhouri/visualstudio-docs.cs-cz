@@ -6,12 +6,12 @@ ms.assetid: e970d936-1df4-4c0c-96e3-ef6191295882
 caps.latest.revision: 14
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 346cc2b68193a72d532ba0542cc406e4afa75234
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d709dc2b5262f4fbad341b0b77d45a90b138ed6f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097385"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443981"
 ---
 # <a name="learn-about-mobile-development-with-xamarin"></a>Informace o vývoji pro mobilní zařízení v Xamarinu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -19,9 +19,9 @@ ms.locfileid: "60097385"
 Toto téma vás přesměruje na přehled materiál, který vám pomůže pochopit, vývoj multiplatformních mobilních aplikací s využitím kódu Xamarin. Pokud jste ještě nenainstalovali aplikaci Visual Studio a Xamarin, spusťte [nastavení a instalaci](../cross-platform/setup-and-install.md) procesu nejprve, pak se sem vraťte pro seznámení se základními tyto prostředky jsou spuštěné instalační programy.  
   
 > [!NOTE]
->  Pokud není uvedeno jinak, doporučujeme nejdřív čtení pouze stránky propojené přímo tady a ne pobočkách stránky. Pokud po dokončení tohoto seznamu je stále spuštěn proces instalace, můžete přejít zpět a prozkoumat další témata.  
+> Pokud není uvedeno jinak, doporučujeme nejdřív čtení pouze stránky propojené přímo tady a ne pobočkách stránky. Pokud po dokončení tohoto seznamu je stále spuštěn proces instalace, můžete přejít zpět a prozkoumat další témata.  
 >   
->  Také neváhejte tématech označený "Essentials" a vraťte se na témata "Dozvědět více o" později.  
+> Také neváhejte tématech označený "Essentials" a vraťte se na témata "Dozvědět více o" později.  
   
 ## <a name="essentials-introduction-to-xamarin"></a>Základy: Úvod do Xamarin  
  *10-20 minut*  

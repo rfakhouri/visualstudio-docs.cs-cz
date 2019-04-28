@@ -8,12 +8,12 @@ ms.assetid: 6b0f72a4-70ca-4e55-b236-2ea1034fd8a7
 caps.latest.revision: 32
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4852dc5b65f00f7d298f5f1a15d39ff041022578
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 61c802ebca49c15a3a7baa785400f90621a27e9f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54791989"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63416470"
 ---
 # <a name="extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel"></a>Rozšiřování programových testů UI a záznamů akcí k podpoře Microsoft Excel
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ Testovací rozhraní pro programové testy uživatelského rozhraní a zaznamen�
   Získat ukázky z tohoto [blogový příspěvek](http://go.microsoft.com/fwlink/?LinkID=185592).  
   
 > [!NOTE]
->  Ukázka je určena pro použití s Microsoft Excel 2010. Ukázka může pracovat s jinými verzemi aplikace Microsoft Excel, ale není aktuálně podporován.  
+> Ukázka je určena pro použití s Microsoft Excel 2010. Ukázka může pracovat s jinými verzemi aplikace Microsoft Excel, ale není aktuálně podporován.  
   
 ## <a name="details-about-the-sample"></a>Podrobnosti o ukázku  
  Následující části obsahují informace o ukázce a jeho strukturu.  

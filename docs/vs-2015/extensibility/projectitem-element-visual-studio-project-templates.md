@@ -13,12 +13,12 @@ ms.assetid: 82879fbe-7756-42cd-9a07-c10edf5b4673
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e4f480275c29906f3bb941187ff537e3a02a1f45
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 84fb371460bc697660e176ca9df4c984d2b234bf
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099127"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438374"
 ---
 # <a name="projectitem-element-visual-studio-project-templates"></a>ProjectItem – element (šablony projektů Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "60099127"
 Určuje soubor, který je součástí šablony projektu.  
   
 > [!NOTE]
->  `ProjectItem` Element přijímá různé atributy v závislosti na tom, jestli je šablona pro projekt nebo položku. Toto téma vysvětluje, `ProjectItem` – element pro šablony projektů. Pro vysvětlení, `ProjectItem` – element pro šablony položek, naleznete v tématu [ProjectItem – Element (šablony položek aplikace Visual Studio)](../extensibility/projectitem-element-visual-studio-item-templates.md).  
+> `ProjectItem` Element přijímá různé atributy v závislosti na tom, jestli je šablona pro projekt nebo položku. Toto téma vysvětluje, `ProjectItem` – element pro šablony projektů. Pro vysvětlení, `ProjectItem` – element pro šablony položek, naleznete v tématu [ProjectItem – Element (šablony položek aplikace Visual Studio)](../extensibility/projectitem-element-visual-studio-item-templates.md).  
   
  \<Vstemplate – >  
  \<TemplateContent>  

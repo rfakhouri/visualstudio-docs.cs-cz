@@ -1,20 +1,14 @@
 ---
 layout: LandingPage
 title: Vývoj mobilních aplikací pomocí C++
-description: Vytvářejte nativní aplikace s C++ pro iOS, Android a Windows zařízení pomocí sady Visual Studio.
+description: 'Vytvářejte nativní aplikace s C++ pro iOS, Android a Windows zařízení pomocí sady Visual Studio.'
 ms.date: 10/31/2018
 author: jasongroce
 ms.author: jasgro
 ms.topic: landing-page
 ms.technology: vs-ide-mobile
 ms.workload:
-- apexprodleads
-ms.openlocfilehash: d9c50abb749829843c7794688b94bf84f5bc1fb3
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
-ms.translationtype: MT
-ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58324549"
+  - apexprodleads
 ---
 # <a name="mobile-development-with-c-documentation"></a>Vývoj mobilních aplikací pomocí dokumentace k C++
 

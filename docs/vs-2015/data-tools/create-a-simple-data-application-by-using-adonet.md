@@ -14,12 +14,12 @@ caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 234c289cd039485163aa201516c418bacaed590b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9b41d199ab634ef5eeb2a6baaef8401919870b63
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60047422"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436980"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>Vytvoření jednoduché datové aplikace pomocí ADO.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Když vytvoříte aplikaci, která zpracovává data v databázi, provedete zák
  Tento článek ukazuje jednoduchý způsob, jak získat data z databáze způsobem, velmi rychle. Pokud vaše aplikace potřebuje upravovat data nejsou v netriviálních způsoby a aktualizaci databáze, měli byste zvážit používající nástroj Entity Framework a použití datových vazeb se automaticky synchronizovat ovládacích prvků uživatelského rozhraní na změny v podkladových datech.  
   
 > [!IMPORTANT]
->  Chcete-li být kód jednoduchý, neměl by zahrnovat zpracování výjimek připravené pro produkční prostředí.  
+> Chcete-li být kód jednoduchý, neměl by zahrnovat zpracování výjimek připravené pro produkční prostředí.  
   
  **V tomto tématu**  
   
@@ -78,7 +78,7 @@ Když vytvoříte aplikaci, která zpracovává data v databázi, provedete zák
 3. U každého formuláře přidejte textová pole, tlačítka a další ovládací prvky, které se zobrazují na následujících obrázcích. Pro každý ovládací prvek nastavte vlastnosti, které jsou popsány v tabulce.  
   
    > [!NOTE]
-   >  Skupinový rámeček a ovládací prvky popisku přehlednosti, ale nepoužívají se v kódu.  
+   > Skupinový rámeček a ovládací prvky popisku přehlednosti, ale nepoužívají se v kódu.  
   
    **Navigační formulář**  
   
@@ -135,7 +135,7 @@ Když vytvoříte aplikaci, která zpracovává data v databázi, provedete zák
 5. V **hodnotu** sloupce, zadejte svůj připojovací řetězec (bez jakékoli mimo uvozovky) a pak uložte provedené změny.  
   
 > [!NOTE]
->  V reálné aplikaci byste měli uložit připojovací řetězec bezpečně, jak je popsáno v [připojovací řetězce a konfigurační soubory](http://msdn.microsoft.com/library/37df2641-661e-407a-a3fb-7bf9540f01e8).  
+> V reálné aplikaci byste měli uložit připojovací řetězec bezpečně, jak je popsáno v [připojovací řetězce a konfigurační soubory](http://msdn.microsoft.com/library/37df2641-661e-407a-a3fb-7bf9540f01e8).  
   
 ## <a name="BKMK_retrievetheconnectionstring"></a> Načtení připojovacího řetězce  
   

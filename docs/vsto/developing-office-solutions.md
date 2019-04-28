@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cf2ef7aac4b9e9b54beeed0d4a6d6be31983c30e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 6d4ee308c5c689644c9fd9ca6e85493a081e2cdf
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602257"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440753"
 ---
 # <a name="develop-office-solutions"></a>Vývoj řešení pro systém Office
   Po návrh projektu pomocí nástroje Office developer tools v sadě Visual Studio a nastavit soubory projektu, můžete začít se soustředit na implementaci kódu a vlastní uživatelské rozhraní (UI).
@@ -27,7 +27,7 @@ ms.locfileid: "56602257"
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
 > [!NOTE]
->  Zajímá vás vývoj řešení, které rozšiřují Office prostředí napříč [více platforem](https://dev.office.com/add-in-availability)? Podívejte se na nové [Office Add-ins modelu](https://dev.office.com/docs/add-ins/overview/office-add-ins). Doplňky sady Office mají malé náklady v porovnání s doplňky VSTO a řešení a je můžete vytvořit s využitím téměř jakékoli webové programování technologie, jako je například HTML5, JavaScript, CSS3 a XML.
+> Zajímá vás vývoj řešení, které rozšiřují Office prostředí napříč [více platforem](https://dev.office.com/add-in-availability)? Podívejte se na nové [Office Add-ins modelu](https://dev.office.com/docs/add-ins/overview/office-add-ins). Doplňky sady Office mají malé náklady v porovnání s doplňky VSTO a řešení a je můžete vytvořit s využitím téměř jakékoli webové programování technologie, jako je například HTML5, JavaScript, CSS3 a XML.
 
 ## <a name="office-solutions-programming-model"></a>Programovací model řešení pro systém Office
  Objektový model Office poskytuje širokou škálu objekty, které můžete programovat proti. Pokaždé, když se program řešení pro systém Office pomocí spravovaného kódu, můžete napsat kód, který používá typy v sestavení primární spolupráce sady Office. V řešení, které vytvoříte pomocí šablony projektů pro Office v sadě Visual Studio také napsat kód přímo proti generované třídy ve vašem projektu. Další informace najdete v tématu [psaní kódu v řešeních pro systém Office](../vsto/writing-code-in-office-solutions.md).

@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a92554843c1bdde48123515cb2548b2c513ef756
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 84b569a843a3ee414143dbfffb0dba6e881f5567
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60092302"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63418380"
 ---
 # <a name="legacy-language-service-parser-and-scanner"></a>Analyzátor a skener služby starší verze jazyka
 Analyzátor je srdce komunity služby jazyka. Třídy jazyka Managed Package Framework (MPF) vyžadují analyzátoru jazyka pro výběr informací o kódu se zobrazí. Analyzátor oddělí text do lexikální tokenů a pak identifikuje těchto tokenů podle typu a funkce.
@@ -66,7 +66,7 @@ namespace MyNamespace
  Na rozdíl od analyzátor, který se používá jako součást kompilátor (kde tokeny jsou převedeny na nějakou formu spustitelného kódu) lze volat analyzátoru služby jazyka pro mnoho různých důvodů, proč a v mnoha různých kontextech. Implementace tohoto přístupu v <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> metodu <xref:Microsoft.VisualStudio.Package.LanguageService> třída je jenom na vás. Je důležité mít na paměti, která <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> metoda může být volána na vlákně na pozadí.
 
 > [!CAUTION]
->  <xref:Microsoft.VisualStudio.Package.ParseRequest> Struktura obsahuje odkaz na <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> objektu. To <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> objekt nelze použít ve vlákně na pozadí. Ve skutečnosti mnoho základních tříd MPF nelze použít ve vlákně na pozadí. Patří mezi ně <xref:Microsoft.VisualStudio.Package.Source>, <xref:Microsoft.VisualStudio.Package.ViewFilter>, <xref:Microsoft.VisualStudio.Package.CodeWindowManager> třídy a další třídu, která přímo nebo nepřímo komunikuje s zobrazení.
+> <xref:Microsoft.VisualStudio.Package.ParseRequest> Struktura obsahuje odkaz na <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> objektu. To <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> objekt nelze použít ve vlákně na pozadí. Ve skutečnosti mnoho základních tříd MPF nelze použít ve vlákně na pozadí. Patří mezi ně <xref:Microsoft.VisualStudio.Package.Source>, <xref:Microsoft.VisualStudio.Package.ViewFilter>, <xref:Microsoft.VisualStudio.Package.CodeWindowManager> třídy a další třídu, která přímo nebo nepřímo komunikuje s zobrazení.
 
  Tento analyzátor obvykle analyzuje soubor první čas celý zdroj je volána, nebo když analýzy z důvodu hodnotu <xref:Microsoft.VisualStudio.Package.ParseReason> je uveden. Následující volání <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> metoda zpracování malou část analyzovaný kód a mohou být provedeny mnohem rychleji s využitím výsledky předchozí operace úplné analýzy. <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> Metoda komunikuje výsledky operace analýzy prostřednictvím <xref:Microsoft.VisualStudio.Package.AuthoringSink> a <xref:Microsoft.VisualStudio.Package.AuthoringScope> objekty. <xref:Microsoft.VisualStudio.Package.AuthoringSink> Objektu se používá ke shromažďování informací z určitého důvodu analýzy, například informace o rozsahy párování závorek nebo složených podpisy metod, které mají seznamy parametrů. <xref:Microsoft.VisualStudio.Package.AuthoringScope> Poskytuje kolekce deklarace a podpisy metod a také podporu přejít na rozšířených upravit možnosti (**přejít k definici**, **přejít na deklaraci**, **přejít na Odkazovat**).
 

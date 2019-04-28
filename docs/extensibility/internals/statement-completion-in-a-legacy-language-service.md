@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5a8301bb5daf0334a48078690a15b1f3d2991698
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: dcc86d8c43703b0274c5282c9f4f843f760e697c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56622797"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428911"
 ---
 # <a name="statement-completion-in-a-legacy-language-service"></a>Dokončování příkazů ve službě starší verze jazyka
 Doplňování výrazů je proces, podle kterého jazyková služba pomáhá uživatelům dokončit – klíčové slovo jazyka nebo element, kterou zahájil psaní v editoru core. Toto téma popisuje, jak dokončování funguje a jak implementovat ve vaší službě jazyka.
@@ -24,7 +24,7 @@ Doplňování výrazů je proces, podle kterého jazyková služba pomáhá uži
  Služby starší verze jazyka jsou implementovány jako součást sady VSPackage, ale novější způsob implementace funkce služba jazyka je pro použití rozšíření MEF. Další informace o nový způsob implementace dokončování příkazů najdete v tématu [názorný postup: Zobrazení dokončování příkazů](../../extensibility/walkthrough-displaying-statement-completion.md).
 
 > [!NOTE]
->  Doporučujeme vám, že začnete používat nový editor API co nejdříve. Tím vylepšíme výkonu vaší služby jazyka a umožňují využívat nové funkce editoru.
+> Doporučujeme vám, že začnete používat nový editor API co nejdříve. Tím vylepšíme výkonu vaší služby jazyka a umožňují využívat nové funkce editoru.
 
 ## <a name="implementing-statement-completion"></a>Implementace dokončování příkazů
  Dokončování příkazů v základní editor aktivuje speciální uživatelské rozhraní, které interaktivně vám pomůže snadno a rychle psát kód. Dokončování příkazů pomáhá zobrazením relevantní objekty nebo třídy když potřeba jsou, díky tomu není, můžete si museli pamatovat konkrétní prvky nebo by bylo nutné je vyhledat v referenčním tématu nápovědy.

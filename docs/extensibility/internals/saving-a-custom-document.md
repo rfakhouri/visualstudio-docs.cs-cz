@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f32f710b6e9749628716181ecf309f2520be041d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0f02c4a98920fc575b5ab7c557dd469deb76a586
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60078262"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427459"
 ---
 # <a name="saving-a-custom-document"></a>Uložení vlastního dokumentu
 Obslužné rutiny prostředí **Uložit**, **uložit jako**, a **Uložit vše** příkazy. Když uživatel klikne **Uložit**, **uložit jako**, **nebo Uložit vše** na **souboru** nabídky nebo zavření řešení, což vede k Uložit vše, následující proces se provádí.
@@ -39,7 +39,7 @@ Obslužné rutiny prostředí **Uložit**, **uložit jako**, a **Uložit vše** 
      V případě vlastní editor komunikace mezi datový objekt dokumentu a projekt je privátní. Proto jakékoli obavy speciální stálost jsou zpracovány mezi těmito dvěma objekty.
 
     > [!NOTE]
-    >  Pokud se rozhodnete implementovat vlastní trvalost, nezapomeňte volat <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFiles%2A> metoda šetří čas. Tato metoda zkontroluje, aby se zajistilo, že se můžete bezpečně uložit soubor (například soubor není jen pro čtení).
+    > Pokud se rozhodnete implementovat vlastní trvalost, nezapomeňte volat <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFiles%2A> metoda šetří čas. Tato metoda zkontroluje, aby se zajistilo, že se můžete bezpečně uložit soubor (například soubor není jen pro čtení).
 
 ## <a name="see-also"></a>Viz také
 - <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>

@@ -11,12 +11,12 @@ caps.latest.revision: 41
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 2aef2183cde96bfb5faa1bb62fa341f901dd7018
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 274aa497e004ddafee9a56b028f3001bb8deb630
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54759241"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437088"
 ---
 # <a name="creating-and-using-code-analysis-check-in-policies"></a>Vytváření a používání zásad vrácení se změnami Analýzy kódu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ Při použití Team Foundation verze ovládacího prvku (TFVC), můžete vytvoř
  Zásada je aplikována úspěšně, pokud je místní sestavení aktuální a na většině nedávných zdrojových souborech byla provedena analýza kódu. Minimálně musí pravidla analýzy kódu, které jsou povoleny v projektu kódu obsahovat stejná pravidla jako ty, které jsou definovány v zásadách vrácení se změnami týmového projektu. Pravidla, která je určená jako chyby v nastavení týmového projektu musí být také zadána jako chyby v projektu kódu  
   
 > [!IMPORTANT]
->  Zásady vrácení se změnami analýzy kódu nelze použít pro webové projekty. Je možné použít pro projekty webových aplikací.  
+> Zásady vrácení se změnami analýzy kódu nelze použít pro webové projekty. Je možné použít pro projekty webových aplikací.  
   
  Zásady vrácení se změnami analýzy vytváření kódu s použitím nastavení týmového projektu [!INCLUDE[esprscc](../includes/esprscc-md.md)]. Zásady vrácení se změnami jsou zadány a vynucovány pro týmový projekt, ale nastavují spuštění analýzu kódu jsou konfiguraci a spuštění nad jednotlivými projekty kódu na místních vývojových počítačích. Tato část popisuje, jak určit zásady analýzy kódu vrácení se změnami pro týmový projekt a implementace vlastních zásad analýzy kódu pro spravovaný kód.  
   

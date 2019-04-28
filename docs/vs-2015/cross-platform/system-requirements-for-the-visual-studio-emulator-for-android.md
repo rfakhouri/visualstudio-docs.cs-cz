@@ -8,12 +8,12 @@ ms.assetid: 35e766ad-269f-41e4-ba23-74a556c315f3
 caps.latest.revision: 7
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: fc09d8570eed04c559e1b94f65319739bbc4ee13
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b1b77dc7e01ae791379dda52b305ebcdbbf68447
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60103288"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433915"
 ---
 # <a name="system-requirements-for-the-visual-studio-emulator-for-android"></a>Systémové požadavky pro emulátor sady Visual Studio pro Android
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ Emulátor Visual Studia pro Android běží jako virtuální počítač na Hyper
  Instalační program se pokusí o konfiguraci těchto předpokladů pro vás tiše při instalaci emulátoru. Když instalační program úspěšně nakonfiguruje požadavky, emulátor jednoduše funguje podle očekávání. Jinak budete muset ručně povolte tyto požadavky. Pokud máte ručně konfigurovat požadavky související s postupy a nástroje se o tytéž kroky popsané [tady](https://msdn.microsoft.com/library/windows/apps/jj863509\(v=vs.105\).aspx) pro emulátor Windows Phone.
 
 > [!IMPORTANT]
->  Instalační program pro emulátor zkontroluje požadavky pro spuštění emulátoru Visual Studia pro Android. Pokud požadavky nejsou k dispozici, ale nevyžaduje je zobrazí upozornění.
+> Instalační program pro emulátor zkontroluje požadavky pro spuštění emulátoru Visual Studia pro Android. Pokud požadavky nejsou k dispozici, ale nevyžaduje je zobrazí upozornění.
 
  Toto téma obsahuje následující části.
 

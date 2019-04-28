@@ -19,12 +19,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 256489e41c769452f9505f95ec64ec9aee853c67
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 45f8d742af1cd6a0ed73f3beda24e829b417e81f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54777452"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424317"
 ---
 # <a name="uml-use-case-diagrams-reference"></a>Diagramy případů použití UML: Odkaz
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ V sadě Visual Studio *diagramu případu použití* shrnuje, kdo používá va�
  Tuto funkci podporovat kterou verzí sady Visual Studio najdete v tématu [podporované verze pro nástroje architektury a modelování](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
 > [!NOTE]
->  Toto téma popisuje elementy, které jsou k dispozici v diagramech případů použití. Další informace o tom, jak nakreslit diagramy případů použití, naleznete v tématu [diagramy případu použití UML: Pokyny pro](../modeling/uml-use-case-diagrams-guidelines.md). Další informace o tom, jak vytvořit a kreslit diagramy modelování najdete v tématu [modelů a diagramů UML upravit](../modeling/edit-uml-models-and-diagrams.md).  
+> Toto téma popisuje elementy, které jsou k dispozici v diagramech případů použití. Další informace o tom, jak nakreslit diagramy případů použití, naleznete v tématu [diagramy případu použití UML: Pokyny pro](../modeling/uml-use-case-diagrams-guidelines.md). Další informace o tom, jak vytvořit a kreslit diagramy modelování najdete v tématu [modelů a diagramů UML upravit](../modeling/edit-uml-models-and-diagrams.md).  
   
 ## <a name="reading-use-case-diagrams"></a>Diagramy případů použití čtení  
  Tabulky v následujících částech popisují prvky, které jsou k dispozici na diagram případu použití, spolu s jejich hlavní vlastnosti. Úplný seznam vlastností, naleznete v tématu [diagramy případů použití vlastnosti elementů v UML](../modeling/properties-of-elements-on-uml-use-case-diagrams.md).  

@@ -18,12 +18,12 @@ caps.latest.revision: 61
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ef782929b24d6f5e06c8e64aec53763481c503eb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ddeb3fa5414208c610a7a21e176d55b0b0f985b5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60051698"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435179"
 ---
 # <a name="how-to-sign-application-and-deployment-manifests"></a>Postupy: Přihlášení aplikace a manifestů nasazení
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ Pokud chcete publikovat aplikaci pomocí nasazení ClickOnce, manifesty aplikace
  Informace o vytváření souborů klíčů naleznete v tématu [jak: Vytvoření páru veřejného a privátního klíče](http://msdn.microsoft.com/library/05026813-f3bd-4d7c-9e0b-fc588eb3d114).  
   
 > [!NOTE]
->  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] podporuje pouze soubory klíčů Personal Information Exchange (PFX), které mají .pfx příponu. Ale můžete vybrat jiné typy certifikátů z úložiště certifikátů Windows aktuálního uživatele klepnutím **vybírat Store** na **podepisování** stránky vlastností projektu.  
+> [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] podporuje pouze soubory klíčů Personal Information Exchange (PFX), které mají .pfx příponu. Ale můžete vybrat jiné typy certifikátů z úložiště certifikátů Windows aktuálního uživatele klepnutím **vybírat Store** na **podepisování** stránky vlastností projektu.  
   
 ### <a name="to-sign-application-and-deployment-manifests-using-a-certificate"></a>K podepsání aplikace a nasazení manifesty pomocí certifikátu  
   
@@ -48,7 +48,7 @@ Pokud chcete publikovat aplikaci pomocí nasazení ClickOnce, manifesty aplikace
      **Vyberte certifikát, který** dialogové okno se zobrazí a zobrazí se obsah z úložiště certifikátů Windows.  
   
     > [!TIP]
-    >  Vyberete-li **kliknutím sem můžete zobrazit vlastnosti certifikátu**, **podrobnosti o certifikátu** zobrazí se dialogové okno. Toto dialogové okno obsahuje podrobné informace o certifikátu a obsahuje další možnosti. Můžete kliknout na **certifikáty** chcete zobrazit další informace.  
+    > Vyberete-li **kliknutím sem můžete zobrazit vlastnosti certifikátu**, **podrobnosti o certifikátu** zobrazí se dialogové okno. Toto dialogové okno obsahuje podrobné informace o certifikátu a obsahuje další možnosti. Můžete kliknout na **certifikáty** chcete zobrazit další informace.  
   
 3. Vyberte certifikát, který chcete použít k podepsání manifestů.  
   
@@ -65,7 +65,7 @@ Pokud chcete publikovat aplikaci pomocí nasazení ClickOnce, manifesty aplikace
 3. V **dialogové okno Vybrat soubor** pole, přejděte do umístění souboru s klíčem (.pfx), který chcete použít a potom klikněte na tlačítko **otevřít**.  
   
     > [!NOTE]
-    >  Tato možnost podporuje pouze soubory, které mají .pfx příponu. Pokud máte soubor s klíčem nebo certifikátem v jiném formátu, uložte ho do úložiště certifikátů Windows a vyberte certifikát, který je popsaný v předchozím postupu. Vybraný účel certifikátu by měl zahrnovat podepisování kódu.  
+    > Tato možnost podporuje pouze soubory, které mají .pfx příponu. Pokud máte soubor s klíčem nebo certifikátem v jiném formátu, uložte ho do úložiště certifikátů Windows a vyberte certifikát, který je popsaný v předchozím postupu. Vybraný účel certifikátu by měl zahrnovat podepisování kódu.  
   
      **Zadejte heslo pro otevření souboru** zobrazí se dialogové okno. (Pokud je soubor .pfx již uložen v úložišti certifikátů Windows nebo není chráněn heslem, nezobrazí se výzva k zadání hesla.)  
   
@@ -83,7 +83,7 @@ Pokud chcete publikovat aplikaci pomocí nasazení ClickOnce, manifesty aplikace
  Podepisování manifestů ClickOnce je nepovinné pro aplikace založené na .exe. Následující postupy ukazují, jak vygenerovat nepodepsané manifesty ClickOnce.  
   
 > [!IMPORTANT]
->  Nepodepsané manifesty mohou zjednodušit vývoj a testování vaší aplikace. Nepodepsané manifesty však představují podstatná bezpečnostní rizika v produkčním prostředí. Pouze zvažte použití nepodepsaných manifestů, pokud vaše aplikace ClickOnce funguje na počítačích v rámci sítě intranet, který je zcela izolována od Internetu nebo jiných zdrojů škodlivého kódu.  
+> Nepodepsané manifesty mohou zjednodušit vývoj a testování vaší aplikace. Nepodepsané manifesty však představují podstatná bezpečnostní rizika v produkčním prostředí. Pouze zvažte použití nepodepsaných manifestů, pokud vaše aplikace ClickOnce funguje na počítačích v rámci sítě intranet, který je zcela izolována od Internetu nebo jiných zdrojů škodlivého kódu.  
   
  Ve výchozím nastavení ClickOnce automaticky generuje podepsané manifesty, pokud jeden nebo více souborů výslovně vyloučeno z generované hodnoty hash. Jinými slovy, publikování výsledků aplikace podepsané manifesty, pokud jsou všechny soubory zahrnuty v algoritmu hodnoty hash, i když **podepsat manifesty ClickOnce** zrušení zaškrtnutí políčka.  
   
@@ -104,7 +104,7 @@ Pokud chcete publikovat aplikaci pomocí nasazení ClickOnce, manifesty aplikace
 2. Otevřít **soubory aplikace** dialogové okno a nastavte **Hash** k **vyloučit** pro soubory, které chcete vyloučit z generované hodnoty hash.  
   
     > [!NOTE]
-    >  Vyloučení souboru z hodnoty hash konfiguruje ClickOnce k zakázání automatického podepisování manifestů, takže není nutné nejprve publikovat s podepsanými manifesty, jak je znázorněno v předchozím postupu.  
+    > Vyloučení souboru z hodnoty hash konfiguruje ClickOnce k zakázání automatického podepisování manifestů, takže není nutné nejprve publikovat s podepsanými manifesty, jak je znázorněno v předchozím postupu.  
   
 3. Publikování aplikace.  
   

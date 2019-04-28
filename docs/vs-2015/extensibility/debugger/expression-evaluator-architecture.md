@@ -12,18 +12,18 @@ ms.assetid: aad7c4c6-1dc1-4d32-b975-f1fdf76bdeda
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e217b297dce18f4bca7dd5606a4ccf13240d9433
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: e8e0aa8f5cc45e0f6e012ecb3f0a27a22725a259
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54795683"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63421230"
 ---
 # <a name="expression-evaluator-architecture"></a>Architektura vyhodnocovače výrazů
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 > [!IMPORTANT]
->  V sadě Visual Studio 2015 je zastaralý tímto způsobem implementace vyhodnocovače výrazů. Informace o implementace vyhodnocovače výrazů modulu CLR najdete v tématu [vyhodnocovače výrazů modulu CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) a [spravované ukázka Chyba při vyhodnocování výrazu](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+> V sadě Visual Studio 2015 je zastaralý tímto způsobem implementace vyhodnocovače výrazů. Informace o implementace vyhodnocovače výrazů modulu CLR najdete v tématu [vyhodnocovače výrazů modulu CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) a [spravované ukázka Chyba při vyhodnocování výrazu](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
  Integrace proprietární jazyk do balíčku ladění sady Visual Studio znamená, že implementace rozhraní vyhodnocovače (EE) vyžaduje výraz a volání běžné poskytovatele jazykového nastavení symbolu za běhu (SP) a rozhraní vazače. SP a vazače objekty, spolu s aktuální adresou spuštění jsou kontext, ve kterém jsou výrazy vyhodnocovány. Informace, které tato rozhraní produkovat a konzumovat představuje klíčových konceptů v architektuře EE.  
   

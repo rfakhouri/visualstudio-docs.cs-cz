@@ -12,18 +12,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 979ca1b0422cf3a333164570aec0a0b0dee39960
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: ca5c9294924b99f830ed05234c68bdba0e7a61a1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56693643"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412892"
 ---
 # <a name="idebugprocess3"></a>IDebugProcess3
 Toto rozhraní představuje spuštěného procesu a jeho programy. Toto rozhraní existuje jako náhrada do několika metod v [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) rozhraní. To umožňuje řídit všechny programy v procesu.
 
 > [!NOTE]
->  [Pokračovat](../../../extensibility/debugger/reference/idebugprogram2-continue.md), [Execute](../../../extensibility/debugger/reference/idebugprogram2-execute.md), a [krok](../../../extensibility/debugger/reference/idebugprogram2-step.md) metody jsou zastaralé a už musí být použity. Použít metody odpovídající na `IDebugProcess3` místo toho rozhraní.
+> [Pokračovat](../../../extensibility/debugger/reference/idebugprogram2-continue.md), [Execute](../../../extensibility/debugger/reference/idebugprogram2-execute.md), a [krok](../../../extensibility/debugger/reference/idebugprogram2-step.md) metody jsou zastaralé a už musí být použity. Použít metody odpovídající na `IDebugProcess3` místo toho rozhraní.
 
 ## <a name="syntax"></a>Syntaxe
 

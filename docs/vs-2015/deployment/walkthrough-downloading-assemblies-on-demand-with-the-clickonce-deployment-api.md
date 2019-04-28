@@ -17,12 +17,12 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 55dfa9a360d33a73b6298f186d12810f8510b1fc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: af03329a05501427f6d04d6cddbd637c3311b339
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063553"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434919"
 ---
 # <a name="walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api"></a>Návod: Stahování sestavení na vyžádání pomocí rozhraní API nasazení ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "60063553"
 Ve výchozím nastavení, všechna sestavení součástí [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikace se stáhne při prvním spuštění aplikace. Může však mít částí aplikace, které jsou používány malého počtu uživatelů. V takovém případě budete chtít stáhnout sestavení pouze v případě, že můžete vytvořit jeden z jeho typy. Následující návod ukazuje, jak označit určité sestavení v aplikaci jako "volitelné", a jak si je stáhnout pomocí tříd v <xref:System.Deployment.Application> obor názvů, když je modul CLR (CLR) požaduje.  
   
 > [!NOTE]
->  Vaše aplikace bude mít ke spuštění v režimu plné důvěryhodnosti k použití tohoto postupu.  
+> Vaše aplikace bude mít ke spuštění v režimu plné důvěryhodnosti k použití tohoto postupu.  
   
 ## <a name="prerequisites"></a>Požadavky  
  Budete potřebovat jednu z následujících komponent k dokončení tohoto návodu:  

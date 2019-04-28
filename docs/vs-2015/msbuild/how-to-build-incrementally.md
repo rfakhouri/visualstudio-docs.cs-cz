@@ -13,12 +13,12 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4aba200bff4bc8a017756ece6576e589f33e9df6
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: c4b2e6dd825cfcf67ffffd9ace27017c8d01aa33
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59662254"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431404"
 ---
 # <a name="how-to-build-incrementally"></a>Postupy: Přírůstkové sestavení
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ Při sestavování velkých projektů, je důležité nejsou, která dříve vyt
  Když v cíli jsou zadané vstupy a výstupy, každý výstup můžete mapovat pouze jeden vstup nebo může být žádné přímé mapování mezi vstupy a výstupy. V předchozím [CSC – úloha](../msbuild/csc-task.md), například výstup, hello.exe, nelze mapovat na jakýkoli jeden vstup – záleží na všechny z nich.  
   
 > [!NOTE]
->  Cíl, ve které není žádné přímé mapování mezi vstupy a výstupy vždy sestavovat častěji než cíl, ve kterém každý výstup můžete mapovat pouze jeden vstup protože [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] nelze určit výstupy, které je třeba znovu sestavit některých vstupních hodnot změnila-li .  
+> Cíl, ve které není žádné přímé mapování mezi vstupy a výstupy vždy sestavovat častěji než cíl, ve kterém každý výstup můžete mapovat pouze jeden vstup protože [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] nelze určit výstupy, které je třeba znovu sestavit některých vstupních hodnot změnila-li .  
   
  Úlohy, ve kterých můžete identifikovat přímé mapování mezi vstupů a výstupů, jako [LC – úloha](../msbuild/lc-task.md), jsou nejvhodnější pro přírůstkové sestavení, na rozdíl od úlohy, jako je například `Csc` a [Vbc –](../msbuild/vbc-task.md), které produkty jednu výstupní sestavení z počet vstupů.  
   
@@ -70,7 +70,7 @@ Při sestavování velkých projektů, je důležité nejsou, která dříve vyt
   Tento soubor projektu obsahuje i `Convert` a `Build` cíle. `GenerateContentFiles` a `BuildHelp` úkoly jsou umístěny v `Convert` a `Build` cílí v uvedeném pořadí tak, aby každý cíl je možné sestavit přírůstkově. S použitím `Output` elementu, výstupy `GenerateContentFiles` úloh jsou umístěny v `ContentFile` seznam položek, které lze použít jako vstupy pro `BuildHelp` úloh. Použití `Output` element tímto způsobem automaticky poskytuje výstupy z jednoho úkolu jako vstupy pro jiné úlohy tak, aby nebylo nutné jednotlivé položky seznamu nebo položky seznamů ručně v jednotlivých úkolech.  
   
 > [!NOTE]
->  I když `GenerateContentFiles` cílové můžete sestavit přírůstkově, všechny výstupy z tohoto cíle jsou vždy vyžaduje jako vstup pro `BuildHelp` cíl. [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] všechny výstupy z jednoho cíle automaticky poskytuje jako vstupy pro jiný cíl při použití `Output` elementu.  
+> I když `GenerateContentFiles` cílové můžete sestavit přírůstkově, všechny výstupy z tohoto cíle jsou vždy vyžaduje jako vstup pro `BuildHelp` cíl. [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] všechny výstupy z jednoho cíle automaticky poskytuje jako vstupy pro jiný cíl při použití `Output` elementu.  
   
 ```  
 <Project DefaultTargets="Build"  

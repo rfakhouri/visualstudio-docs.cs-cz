@@ -17,12 +17,12 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 04f6c78f3733bbc8aab3aec5811f1eb643ecca4e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 18c8dd4d0bc79ac2f3af44b8b5f8dd6faacb9f45
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056611"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434083"
 ---
 # <a name="how-to-install-prerequisites-with-a-clickonce-application"></a>Postupy: Instalace nezbytných součástí s aplikací ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,12 +32,12 @@ Všechny [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikace vyžadu
  Místo vytváření balíčků a publikování požadavky, můžete také zadat umístění pro stahování pro součásti. Například místo včetně předpokladů s každou aplikaci, kterou publikujete, můžete použít sdílené centralizovaného nebo umístění webu, který obsahuje instalační programy pro všechny vaše požadavky, během instalace, se stáhnou součásti a nainstalovat z tohoto umístění.  
   
 > [!IMPORTANT]
->  Před publikováním poprvé, měli byste přidat balíčky Instalační program požadovaných součástí na vývojovém počítači [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikace. Další informace najdete v tématu [jak: Zahrnutí předpokladů s aplikací ClickOnce](../deployment/how-to-include-prerequisites-with-a-clickonce-application.md).  
+> Před publikováním poprvé, měli byste přidat balíčky Instalační program požadovaných součástí na vývojovém počítači [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikace. Další informace najdete v tématu [jak: Zahrnutí předpokladů s aplikací ClickOnce](../deployment/how-to-include-prerequisites-with-a-clickonce-application.md).  
   
  Požadavky jsou spravovány v **požadavky** dialogové okno, přístupné **publikovat** podokně **Návrháře projektu**.  
   
 > [!NOTE]
->  Kromě předem určený seznam požadavky můžete přidat vlastní komponenty do seznamu. Další informace najdete v tématu [vytváření balíčků Bootstrapperu](../deployment/creating-bootstrapper-packages.md).  
+> Kromě předem určený seznam požadavky můžete přidat vlastní komponenty do seznamu. Další informace najdete v tématu [vytváření balíčků Bootstrapperu](../deployment/creating-bootstrapper-packages.md).  
   
 ### <a name="to-specify-prerequisites-to-install-with-a-clickonce-application"></a>Chcete-li určit požadavky pro instalaci s aplikací ClickOnce  
   
@@ -68,7 +68,7 @@ Všechny [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikace vyžadu
 6. Z rozevíracího seznamu vyberte umístění nebo zadejte adresu URL, cestu k souboru nebo umístění FTP a klikněte na **OK.**  
   
     > [!NOTE]
-    >  Ujistěte se, že existují instalační programy pro zadanou součástí v zadaném umístění.  
+    > Ujistěte se, že existují instalační programy pro zadanou součástí v zadaném umístění.  
   
 ## <a name="see-also"></a>Viz také  
  [Publikování aplikací ClickOnce](../deployment/publishing-clickonce-applications.md)   

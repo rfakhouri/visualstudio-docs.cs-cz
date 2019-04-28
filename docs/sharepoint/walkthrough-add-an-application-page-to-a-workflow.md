@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fe2e782723b35a8cdd5505c60f74d1be12bb2077
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 032447051bc03b037abba2920d48473f0d73935f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60083027"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63409550"
 ---
 # <a name="walkthrough-add-an-application-page-to-a-workflow"></a>Návod: Přidání stránky aplikace do pracovního postupu
   Tento návod ukazuje, jak přidat stránku aplikace, která zobrazuje data odvozená z pracovního postupu do projektu pracovního postupu. Je nástavbou projektu je popsáno v tématu [názorný postup: Vytvoření pracovního postupu pomocí formulářů přidružení a inicializace](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md).
@@ -295,7 +295,7 @@ ms.locfileid: "60083027"
     ```
 
     > [!WARNING]
-    >  Nezapomeňte nahradit "TestServer" v kódu s názvem platný server, na kterém běží SharePoint.
+    > Nezapomeňte nahradit "TestServer" v kódu s názvem platný server, na kterém běží SharePoint.
 
 ## <a name="test-the-application-page"></a>Otestování stránky aplikace
  Dál určete, zda stránka aplikace správně zobrazí data výdajů.

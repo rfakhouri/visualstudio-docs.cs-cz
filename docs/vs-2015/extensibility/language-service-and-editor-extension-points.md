@@ -10,12 +10,12 @@ ms.assetid: 91a6417e-a6fe-4bc2-9d9f-5173c634a99b
 caps.latest.revision: 34
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 295ff3e48e2b0598a8cf33bfd4842e35b7469737
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5bf0e34c76406b054ea2d27434f749b676b0b30c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60085517"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439803"
 ---
 # <a name="language-service-and-editor-extension-points"></a>Rozšiřovací body služeb jazyka a editoru
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -115,7 +115,7 @@ internal IContentTypeRegistryService ContentTypeRegistryService { get; set; }
  Chcete-li přidružit typu obsahu s příponou názvu souboru, použijte <xref:Microsoft.VisualStudio.Utilities.FileExtensionToContentTypeDefinition>.  
   
 > [!NOTE]
->  V sadě Visual Studio, jsou registrované přípony názvů souborů pomocí <xref:Microsoft.VisualStudio.Shell.ProvideLanguageExtensionAttribute> v balíčku služby jazyka. <xref:Microsoft.VisualStudio.Utilities.FileExtensionToContentTypeDefinition> Přidruží MEF typu obsahu s příponou názvu souboru, který byl zaregistrován tímto způsobem.  
+> V sadě Visual Studio, jsou registrované přípony názvů souborů pomocí <xref:Microsoft.VisualStudio.Shell.ProvideLanguageExtensionAttribute> v balíčku služby jazyka. <xref:Microsoft.VisualStudio.Utilities.FileExtensionToContentTypeDefinition> Přidruží MEF typu obsahu s příponou názvu souboru, který byl zaregistrován tímto způsobem.  
   
  Pokud chcete exportovat příponu názvu souboru do definice typu obsahu, musí obsahovat následující atributy:  
   
@@ -278,7 +278,7 @@ internal class TestTaggerProvider : ITaggerProvider
 - <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>: přidružené dalších úprav.  
   
   > [!NOTE]
-  >  Příklad <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>, viz HighlightWordTag definice v [názorný postup: Zvýraznění textu](../extensibility/walkthrough-highlighting-text.md).  
+  > Příklad <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>, viz HighlightWordTag definice v [názorný postup: Zvýraznění textu](../extensibility/walkthrough-highlighting-text.md).  
   
 - <xref:Microsoft.VisualStudio.Text.Tagging.OutliningRegionTag>: přidružené k oblasti, které můžete rozbalit nebo sbalit v osnovy.  
   
@@ -324,7 +324,7 @@ internal class HighlightWordFormatDefinition : MarkerFormatDefinition
  Použít tento formát definice pro značku, odkazovat na název, který jste nastavili v atribut názvu třídy (ne zobrazovaným názvem).  
   
 > [!NOTE]
->  Příklad <xref:Microsoft.VisualStudio.Text.Classification.MarkerFormatDefinition>, naleznete v tématu třídy HighlightWordFormatDefinition v [názorný postup: Zvýraznění textu](../extensibility/walkthrough-highlighting-text.md).  
+> Příklad <xref:Microsoft.VisualStudio.Text.Classification.MarkerFormatDefinition>, naleznete v tématu třídy HighlightWordFormatDefinition v [názorný postup: Zvýraznění textu](../extensibility/walkthrough-highlighting-text.md).  
   
 ## <a name="extending-adornments"></a>Rozšíření grafických doplňků  
  Vylepšení definování vizuální efekty, které je možné přidat buď na text, který se zobrazí v náhledu textu nebo textu zobrazení samotný. Můžete definovat vlastní dalších úprav jako libovolný typ <xref:System.Windows.UIElement>.  
@@ -516,7 +516,7 @@ internal sealed class TestOption : EditorOptionDefinition<bool>
 - <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource>  
   
 > [!IMPORTANT]
->  <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagSource> se už nepoužívá nahrazený <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource>.  
+> <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagSource> se už nepoužívá nahrazený <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource>.  
   
  Kromě toho je nutné implementovat zprostředkovatele stejného druhu:  
   
@@ -529,7 +529,7 @@ internal sealed class TestOption : EditorOptionDefinition<bool>
 - <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider>  
   
 > [!IMPORTANT]
->  <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagSourceProvider> se už nepoužívá nahrazený <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider>.  
+> <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagSourceProvider> se už nepoužívá nahrazený <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider>.  
   
  Je nutné exportovat poskytovatele společně s následujícími atributy:  
   
@@ -551,7 +551,7 @@ internal class TestCompletionSourceProvider : ICompletionSourceProvider
   
  Další informace o implementaci zdroje technologie IntelliSense najdete v následujících návodech:  
   
- [Návod: Zobrazení popisky rychlé informace](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)  
+ [Návod: Zobrazení popisů tlačítek s rychlými informacemi](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)  
   
  [Návod: Zobrazení vyhrazené nápovědy](../extensibility/walkthrough-displaying-signature-help.md)  
   
@@ -578,4 +578,4 @@ internal class TestIntellisenseControllerProvider : IIntellisenseControllerProvi
   
  Další informace o používání řadiče technologie IntelliSense najdete v následujících návodech:  
   
- [Návod: Zobrazení popisky rychlé informace](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)
+ [Návod: Zobrazení popisů tlačítek s rychlými informacemi](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)

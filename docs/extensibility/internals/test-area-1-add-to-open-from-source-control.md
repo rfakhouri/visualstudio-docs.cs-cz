@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 699496825e272fc492bac8ef4fe472019b1935d2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2ba64bdcf299f52d0200e1fa66dead11a8824c14
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60083514"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63429989"
 ---
 # <a name="test-area-1-add-toopen-from-source-control"></a>Testovací oblast 1: Přidat / otevřít ze správy zdrojového kódu
 Tento zdroj – ovládací prvek modulu plug-in testu pozadí oblasti uvedení řešení nebo projektů pod správou zdrojových kódů a načítání ze správy zdrojového kódu.
@@ -37,7 +37,7 @@ Tento zdroj – ovládací prvek modulu plug-in testu pozadí oblasti uvedení �
 - Pro [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)], přidejte ze zdrojového ovládacího prvku je k dispozici také z **souboru**, **přidat**, **existující projekt**; hledejte v [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)] umístění.
 
   > [!NOTE]
-  >  Cestu k místnímu souboru nebo místní služby IIS (web server) je možné v tomto testu.
+  > Cestu k místnímu souboru nebo místní služby IIS (web server) je možné v tomto testu.
 
 ## <a name="expected-behavior"></a>Očekávané chování
 

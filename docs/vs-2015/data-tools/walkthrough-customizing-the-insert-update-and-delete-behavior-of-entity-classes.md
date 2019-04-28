@@ -9,12 +9,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: df77c65d116bf0e44b700d15d0b810e9adf04c78
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a753ac6691e419267fdca34ed5e78a9a5b3cfdd3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60112114"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424803"
 ---
 # <a name="walkthrough-customizing-the-insert-update-and-delete-behavior-of-entity-classes"></a>Návod: Přizpůsobení vložit, aktualizovat a odstraňovat chování tříd entit
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +63,7 @@ ms.locfileid: "60112114"
 2. Pojmenujte projekt **UpdatingwithSProcsWalkthrough**.  
   
     > [!NOTE]
-    >  [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] Je podporována v [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] a projekty jazyka C#. Proto vytvořte nový projekt v jednom z těchto jazyků.  
+    > [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] Je podporována v [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] a projekty jazyka C#. Proto vytvořte nový projekt v jednom z těchto jazyků.  
   
 3. Klikněte na tlačítko **formulářová aplikace Windows** šablonu a klikněte na tlačítko **OK**. Další informace najdete v tématu [klientské aplikace](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
   
@@ -89,7 +89,7 @@ ms.locfileid: "60112114"
      Třídu entity s názvem **zákazníka** se vytvoří. Obsahuje vlastnosti, které odpovídají sloupcům v tabulce Zákazníci. Název třídy entity **zákazníka** (není **zákazníkům**) protože představuje jednoho zákazníka z tabulky Zákazníci.  
   
     > [!NOTE]
-    >  Toto chování přejmenovává se nazývá *pluralizace*. To je možné zapnout nebo vypnout [dialogové okno Možnosti](../ide/reference/options-dialog-box-visual-studio.md). Další informace najdete v tématu [jak: Zapnutí a vypnutí (O/R Designer) pluralizace](../data-tools/how-to-turn-pluralization-on-and-off-o-r-designer.md).  
+    > Toto chování přejmenovává se nazývá *pluralizace*. To je možné zapnout nebo vypnout [dialogové okno Možnosti](../ide/reference/options-dialog-box-visual-studio.md). Další informace najdete v tématu [jak: Zapnutí a vypnutí (O/R Designer) pluralizace](../data-tools/how-to-turn-pluralization-on-and-off-o-r-designer.md).  
   
 3. Na **sestavení** nabídky, klikněte na tlačítko **sestavení UpdatingwithSProcsWalkthrough** k sestavení projektu.  
   
@@ -102,7 +102,7 @@ ms.locfileid: "60112114"
 7. Rozbalte **UpdatingwithSProcsWalkthrough** uzlu a vyhledejte a vyberte **zákazníka** třídy.  
   
     > [!NOTE]
-    >  Pokud **zákazníka** třída není k dispozici, zavřete průvodce, sestavte projekt a spusťte průvodce znovu.  
+    > Pokud **zákazníka** třída není k dispozici, zavřete průvodce, sestavte projekt a spusťte průvodce znovu.  
   
 8. Klikněte na tlačítko **Dokončit** vytvořit zdroj dat a přidat **zákazníka** třídu entity **zdroje dat** okna.  
   
@@ -116,7 +116,7 @@ ms.locfileid: "60112114"
 2. Z **zdroje dat** okno, přetáhněte **zákazníka** uzlu do formuláře Form1.  
   
     > [!NOTE]
-    >  Pro zobrazení **zdroje dat** okna, klikněte na tlačítko **zobrazit zdroje dat** na **Data** nabídky.  
+    > Pro zobrazení **zdroje dat** okna, klikněte na tlačítko **zobrazit zdroje dat** na **Data** nabídky.  
   
 3. Otevřít v editoru kódu Form1.  
   
@@ -192,7 +192,7 @@ ms.locfileid: "60112114"
 9. Klikněte na tlačítko **použít** se uložit konfiguraci pro vybranou třídu nebo chování.  
   
     > [!NOTE]
-    >  Můžete pokračovat v konfiguraci chování pro každou kombinaci třídy nebo chování, tak dlouho, dokud kliknete **použít** po každé změně. Pokud změníte třídy nebo chování před kliknutím na **použít**, dialogové okno upozornění poskytuje možnost použity všechny změny se zobrazí.  
+    > Můžete pokračovat v konfiguraci chování pro každou kombinaci třídy nebo chování, tak dlouho, dokud kliknete **použít** po každé změně. Pokud změníte třídy nebo chování před kliknutím na **použít**, dialogové okno upozornění poskytuje možnost použity všechny změny se zobrazí.  
   
 10. Vyberte **aktualizace** v **chování** seznamu.  
   
@@ -205,7 +205,7 @@ ms.locfileid: "60112114"
 13. Mapování **Original_CustomerID** argument metody pro výraz **CustomerID (původní)** vlastnost třídy.  
   
     > [!NOTE]
-    >  Ve výchozím nastavení bude při názvy odpovídají argumenty metody mapovat na vlastnosti třídy. Pokud názvy vlastností byly změněny a už neodpovídá mezi tabulkou a třídu entity, budete možná muset vybrat možnost vlastnost ekvivalentní třídu pro mapování na, pokud O/R Designer nemůže určit správné mapování. Kromě toho Pokud argumenty metody nemají vlastnosti platnou třídu pro mapování na, můžete nastavit **vlastnosti třídy** hodnota, která se **(žádný)**.  
+    > Ve výchozím nastavení bude při názvy odpovídají argumenty metody mapovat na vlastnosti třídy. Pokud názvy vlastností byly změněny a už neodpovídá mezi tabulkou a třídu entity, budete možná muset vybrat možnost vlastnost ekvivalentní třídu pro mapování na, pokud O/R Designer nemůže určit správné mapování. Kromě toho Pokud argumenty metody nemají vlastnosti platnou třídu pro mapování na, můžete nastavit **vlastnosti třídy** hodnota, která se **(žádný)**.  
   
 14. Klikněte na tlačítko **použít** se uložit konfiguraci pro vybranou třídu nebo chování.  
   
@@ -220,7 +220,7 @@ ms.locfileid: "60112114"
 19. Klikněte na **OK**.  
   
 > [!NOTE]
->  Ačkoli to není problém pro tento konkrétní názorný postup, je vhodné poznamenat, který [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] zpracovává databáze vygenerovala hodnoty automaticky pro identitu (automatické zvyšování čísla), rowguidcol (GUID databáze vygenerovala) a sloupce časového razítka při vložení a aktualizace. Databáze vygenerovala hodnoty v jiných typech sloupců neočekávaně způsobí hodnotu null. Na návratové hodnoty generovaných databází, měli byste ručně nastavit <xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated%2A> k `true` a <xref:System.Data.Linq.Mapping.ColumnAttribute.AutoSync%2A> na jednu z následujících akcí: <xref:System.Data.Linq.Mapping.AutoSync>, <xref:System.Data.Linq.Mapping.AutoSync>, nebo <xref:System.Data.Linq.Mapping.AutoSync>.  
+> Ačkoli to není problém pro tento konkrétní názorný postup, je vhodné poznamenat, který [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] zpracovává databáze vygenerovala hodnoty automaticky pro identitu (automatické zvyšování čísla), rowguidcol (GUID databáze vygenerovala) a sloupce časového razítka při vložení a aktualizace. Databáze vygenerovala hodnoty v jiných typech sloupců neočekávaně způsobí hodnotu null. Na návratové hodnoty generovaných databází, měli byste ručně nastavit <xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated%2A> k `true` a <xref:System.Data.Linq.Mapping.ColumnAttribute.AutoSync%2A> na jednu z následujících akcí: <xref:System.Data.Linq.Mapping.AutoSync>, <xref:System.Data.Linq.Mapping.AutoSync>, nebo <xref:System.Data.Linq.Mapping.AutoSync>.  
   
 ## <a name="testing-the-application"></a>Testování aplikace  
  Spusťte aplikaci znovu, aby ověřil, zda **UpdateCustomers** uložená procedura aktualizuje správně záznam zákazníka v databázi.  

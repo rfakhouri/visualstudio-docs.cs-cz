@@ -10,18 +10,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 074c877e8fd8f1e29aee440bf54e73ceab68767a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 09222971ea5150b280014d85f801a82a8eccc5d2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649131"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406148"
 ---
 # <a name="concurrency-visualizer-command-line-utility-cvcollectioncmd"></a>Nástroj příkazového řádku ve Vizualizéru souběžnosti (CVCollectionCmd)
 Můžete použít nástroj příkazového řádku Vizualizéru souběžnosti (*CVCollectionCmd.exe*) Chcete-li shromažďovat trasování z příkazového řádku, takže můžete je zobrazit v Concurrency Visualizer pro sadu Visual Studio. Nástroje lze použít na počítačích, které nemají nainstalovanou sadu Visual Studio.
 
 > [!NOTE]
->  Spouští se v sadě Visual Studio 2013, Vizualizátor souběžnosti je volitelné rozšíření. (Dříve to bylo byl součástí sady Visual Studio.) Můžete stáhnout [Vizualizátor souběžnosti kolekce nástrojů pro Visual Studio 2015](http://www.microsoft.com/download/details.aspx?id=49103) ze služby Stažení softwaru.
+> Spouští se v sadě Visual Studio 2013, Vizualizátor souběžnosti je volitelné rozšíření. (Dříve to bylo byl součástí sady Visual Studio.) Můžete stáhnout [Vizualizátor souběžnosti kolekce nástrojů pro Visual Studio 2015](http://www.microsoft.com/download/details.aspx?id=49103) ze služby Stažení softwaru.
 
 ## <a name="download-the-concurrency-visualizer-command-line-utility"></a>Stáhněte si nástroj příkazového řádku Vizualizéru souběžnosti
  Chcete-li stáhnout a nainstalovat nástroj příkazového řádku, přejděte na [Concurrency Visualizer kolekce nástrojů pro Visual Studio 2015](http://www.microsoft.com/download/details.aspx?id=49103) a postupujte podle pokynů. Ve výchozím nastavení *CVCollectionCmd.exe* nachází v %ProgramFiles%\Microsoft Tools\ kolekce Vizualizéru souběžnosti (% ProgramFiles (x86) %\Microsoft Tools\ kolekce Vizualizátor souběžnosti na x64 počítače).
@@ -54,7 +54,7 @@ Můžete použít nástroj příkazového řádku Vizualizéru souběžnosti (*C
  Pokud chcete upravit nastavení kolekce shromažďovat trasování pomocí CVCollectionCmd, použijte konfigurační soubor se zadávají.
 
 > [!NOTE]
->  Když shromažďovat trasování pomocí sady Visual Studio, nemusíte upravovat přímo konfiguračního souboru.  Místo toho použijte [Upřesnit nastavení](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) dialogové okno Upravit nastavení.
+> Když shromažďovat trasování pomocí sady Visual Studio, nemusíte upravovat přímo konfiguračního souboru.  Místo toho použijte [Upřesnit nastavení](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) dialogové okno Upravit nastavení.
 
  Pokud chcete upravit nastavení shromažďování, vytvořte soubor konfigurace na počítači, kde budete spouštět nástroj CVCollectionCmd. Konfigurační soubor můžete vytvořit úplně od začátku, nebo můžete zkopírovat konfigurační soubor na počítači, který má nainstalovanou sadu Visual Studio a upravit. Soubor *UserConfig.xml* a nachází se v *místní AppData* složky. Když spustíte nástroj, použijte možnost konfigurace ve spojení s příkazem spuštění, připojit a analyzovat.  V parametru, který je spojen s možností konfigurace zadejte cestu konfigurační soubor.
 
@@ -73,7 +73,7 @@ Můžete použít nástroj příkazového řádku Vizualizéru souběžnosti (*C
 | MarkerProvider | Určuje zprostředkovatele jednu značku. | Musí obsahovat tyto prvky:<br /><br /> -Úroveň<br />-IDENTIFIKÁTOR GUID<br />– Název<br /><br /> Může obsahovat tyto prvky:<br /><br /> -Kategorie<br />-IsEnabled |
 | úroveň | Nastaví úroveň důležitosti MarkerProvider. | – Nízká<br />-Normální<br />– Vysoká<br />– Kritické<br />-Vše |
 | Guid | Globálně jedinečný identifikátor poskytovatele trasování událostí pro Windows značek. | A GUID. |
-| Name | Určuje popis poskytovatele značek. | Řetězec. |
+| Název | Určuje popis poskytovatele značek. | Řetězec. |
 | Kategorie | Určuje kategorie shromážděných pro poskytovatele značek. | Řetězec oddělených čárkou čísla nebo rozsahy čísel. |
 | hodnotu isEnabled | Nastaví hodnotu, která určuje, zda je povoleno poskytovatele značek pro kolekci. | -True<br />-False |
 | FilterConfig | Určuje seznam možností konfigurace událostí trasování událostí pro Windows, které jsou filtrovány z kolekce. | Může obsahovat tyto prvky:<br /><br /> -CollectClrEvents<br />-ClrCollectionOptions<br />-CollectSampleEvents<br />-CollectGpuEvents<br />-CollectFileIO |

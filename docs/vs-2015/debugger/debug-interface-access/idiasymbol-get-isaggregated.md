@@ -13,12 +13,12 @@ caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 406c57c6b1127e7a36f5653299e04eef5f5f9e2c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 9345aee08dcc5c27bfa6c20f9b5821d1875a5b99
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54779502"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422157"
 ---
 # <a name="idiasymbolgetisaggregated"></a>IDiaSymbol::get_isAggregated
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ HRESULT get_isAggregated(
  Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí `S_FALSE` nebo kód chyby.  
   
 > [!NOTE]
->  Vrácená hodnota `S_FALSE` znamená, že vlastnost není k dispozici pro symbol.  
+> Vrácená hodnota `S_FALSE` znamená, že vlastnost není k dispozici pro symbol.  
   
 ## <a name="remarks"></a>Poznámky  
  [Idiasymbol::get_issplitted –](../../debugger/debug-interface-access/idiasymbol-get-issplitted.md) je metoda `TRUE` pro symbol, který je nadřazeného člena agregované symboly.  

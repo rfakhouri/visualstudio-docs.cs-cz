@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: cbe90c182ada4d7e69313ff570b2f7d26087170c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54929549"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62861929"
 ---
 # <a name="ide-constants"></a>Konstanty integrovaného vývojového prostředí
 
@@ -29,7 +29,7 @@ ms.locfileid: "54929549"
 
 ## <a name="logical-and-physical-views"></a>Logické a fyzické zobrazení
 
-|Hodnota|Popis|
+|Value|Popis|
 |-----------|-----------------|
 |<xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.Code_guid>|<xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97> `cmdidOpenWith` obslužné rutiny by měla předat tuto hodnotu <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> metodu k získání **otevřít v** dialogové okno, v tomto případě na zobrazení kódu je to možné.|
 |<xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.Debugging_guid>|<xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97> `cmdidOpenWith` obslužné rutiny předat tuto hodnotu <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> metodu k získání **otevřít v** dialogové okno, v tomto případě vyplní možné <xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.Debugging_guid> ladění zobrazení, které mapují na stejném zobrazení jako <xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.Code_guid>.|
@@ -40,7 +40,7 @@ ms.locfileid: "54929549"
 
 ## <a name="editor-factory-flags"></a>Příznaky Factory editoru
 
-|Hodnota|Popis|
+|Value|Popis|
 |-----------|-----------------|
 |[CEF.CloneFile](<xref:Microsoft.VisualStudio.VSConstants.CEF#Microsoft_VisualStudio_VSConstants_CEF_CloneFile>)|Zastaralé příznak kombinovat bitový jako první parametr <xref:Microsoft.VisualStudio.Package.EditorFactory.CreateEditorInstance%2A> metody.|
 |[CEF.OpenAsNew](<xref:Microsoft.VisualStudio.VSConstants.CEF#Microsoft_VisualStudio_VSConstants_CEF_OpenAsNew>)|Bitový operátor jako první parametr v kombinaci <xref:Microsoft.VisualStudio.Package.EditorFactory.CreateEditorInstance%2A>, metoda, znamená to objekt factory editoru by měl provádět potřebné opravy.|
@@ -49,7 +49,7 @@ ms.locfileid: "54929549"
 
 ## <a name="visual-studio-errors"></a>Chyb sady Visual Studio
 
-|Hodnota|Popis|
+|Value|Popis|
 |-----------|-----------------|
 |<xref:Microsoft.VisualStudio.VSConstants.VS_E_BUSY>|Konstanta vrácené rozhraní asynchronní chování při v objektu již obsazeno.|
 |<xref:Microsoft.VisualStudio.VSConstants.VS_E_INCOMPATIBLEDOCDATA>|Chyba HRESULT, která je specifická pro Visual Studio pro "nekompatibilní dokumentu data".|
@@ -65,7 +65,7 @@ ms.locfileid: "54929549"
 
 ## <a name="visual-studio-constants"></a>Visual Studio konstanty
 
-|Hodnota|Popis|
+|Value|Popis|
 |-----------|-----------------|
 |<xref:Microsoft.VisualStudio.VSConstants.VS_S_PROJECTFORWARDED>|Chybu HRESULT, která je specifická pro Visual Studio a který určuje "Projekt předané."|
 |<xref:Microsoft.VisualStudio.VSConstants.VS_S_TBXMARKER>|Konstanta, která je specifická pro Visual Studio pro "panel nástrojů značku."|
@@ -80,7 +80,7 @@ ms.locfileid: "54929549"
 ## <a name="ivsselectionevents"></a>IVsSelectionEvents
  Popisuje, jaká součást rozhraní IDE jenom byl vybrán, v <xref:Microsoft.VisualStudio.Shell.Interop.IVsSelectionEvents.OnElementValueChanged%2A> volat, například.
 
-|Konstanta|Hodnota|
+|Konstanta|Value|
 |--------------|-----------|
 |[SelectionElement.DocumentFrame](<xref:Microsoft.VisualStudio.VSConstants.SelectionElement#Microsoft_VisualStudio_VSConstants_SelectionElement_DocumentFrame>)|0x2|
 |[SelectionElement.PropertyBrowserSID](<xref:Microsoft.VisualStudio.VSConstants.SelectionElement#Microsoft_VisualStudio_VSConstants_SelectionElement_PropertyBrowserSID>)|0x4|

@@ -22,12 +22,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1c9ea6398ca02291bb9dc11693c98336cd33b14b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d281b0ddb15a2acc455acd037c088c133c74c1f1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061984"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440988"
 ---
 # <a name="layer-diagrams-reference"></a>Diagramy vrstev: Odkaz
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -85,7 +85,7 @@ V sadě Visual Studio, můžete použít *diagram vrstev* můžete vizualizovat 
      **Průzkumník vrstev** otevře a zobrazí artefakty, které jsou propojeny s vrstvami vybrané. **Průzkumník vrstev** má sloupec, který zobrazuje vlastnosti propojení artefaktů.  
   
     > [!NOTE]
-    >  Pokud nevidíte všechny tyto vlastnosti, rozbalte **Průzkumník vrstev** okna.  
+    > Pokud nevidíte všechny tyto vlastnosti, rozbalte **Průzkumník vrstev** okna.  
   
     |**Sloupec v Průzkumníku vrstev**|**Popis**|  
     |----------------------------------|---------------------|  

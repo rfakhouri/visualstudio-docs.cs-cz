@@ -21,12 +21,12 @@ caps.latest.revision: 51
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: df11af5dee9ce510af01dab037a47a1bdd2f2880
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: baa62dc48b329cd3639c0623fccfdbe2325cf9e3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082201"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63429126"
 ---
 # <a name="walkthrough-manually-deploying-a-clickonce-application"></a>Návod: Ruční nasazení aplikace ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +57,7 @@ Pokud Visual Studio nelze použít k nasazení vaší [!INCLUDE[ndptecclick](../
      Předplatné nasazení s certifikátem Authenticode. Testovací certifikát můžete vygenerovat pomocí nástrojů sady Visual Studio, MageUI.exe, nebo MakeCert.exe a Pvk2Pfx.exe, nebo můžete získat certifikát z certifikační autority (CA). Pokud budete chtít použít nasazení důvěryhodné aplikace, musíte také provést jednorázová instalace certifikátu do všech klientských počítačů. Další informace najdete v tématu [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md).  
   
     > [!NOTE]
-    >  Můžete se přihlásit taky nasazení certifikátem CNG, který můžete získat od certifikační autority.  
+    > Můžete se přihlásit taky nasazení certifikátem CNG, který můžete získat od certifikační autority.  
   
 - Ujistěte se, že aplikace nemá manifest s informacemi o nástroji Řízení uživatelských účtů.  
   
@@ -76,7 +76,7 @@ Pokud Visual Studio nelze použít k nasazení vaší [!INCLUDE[ndptecclick](../
 2. V adresáři nasazení, který jste právě vytvořili vytvořte podadresář s verzí. Pokud je to poprvé, že nasazujete aplikace, název podadresáře verze **1.0.0.0**.  
   
     > [!NOTE]
-    >  Verze vašeho nasazení může být liší od verze vaší aplikace.  
+    > Verze vašeho nasazení může být liší od verze vaší aplikace.  
   
 3. Zkopírujte všechny soubory aplikace do podadresáře verze, včetně spustitelných souborů, sestavení, prostředky a datové soubory. V případě potřeby můžete vytvořit další podadresářů, které obsahují další soubory.  
   
@@ -89,7 +89,7 @@ Pokud Visual Studio nelze použít k nasazení vaší [!INCLUDE[ndptecclick](../
     ```  
   
     > [!NOTE]
-    >  Nezapomeňte použít tečku (.) po `-FromDirectory` možnost, která označuje aktuální adresář. Pokud neuvedete, tečky, musíte zadat cestu k souborům aplikace.  
+    > Nezapomeňte použít tečku (.) po `-FromDirectory` možnost, která označuje aktuální adresář. Pokud neuvedete, tečky, musíte zadat cestu k souborům aplikace.  
   
 6. Podepsat manifest aplikace certifikátem Authenticode. Nahraďte *mycert.pfx* s cestou k souboru certifikátu. Nahraďte *hesel* heslem pro váš soubor certifikátu.  
   
@@ -134,7 +134,7 @@ Pokud Visual Studio nelze použít k nasazení vaší [!INCLUDE[ndptecclick](../
 2. V adresáři nasazení, který jste právě vytvořili vytvořte podadresář s verzí. Pokud je to poprvé, že nasazujete aplikace, název podadresáře verze **1.0.0.0**.  
   
     > [!NOTE]
-    >  Verze vašeho nasazení je pravděpodobně odlišná od verze aplikace.  
+    > Verze vašeho nasazení je pravděpodobně odlišná od verze aplikace.  
   
 3. Zkopírujte všechny soubory aplikace do podadresáře verze, včetně spustitelných souborů, sestavení, prostředky a datové soubory. V případě potřeby můžete vytvořit další podadresářů, které obsahují další soubory.  
   

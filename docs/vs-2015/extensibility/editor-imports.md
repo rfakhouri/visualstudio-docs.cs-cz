@@ -10,12 +10,12 @@ ms.assetid: 8d096de3-33b4-427a-a122-4aeff8a72da0
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 461687e5d1e9570ea2e03610f838f6114fbc7643
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 4805bff12d284dc5a54451e157c9e8fb92deeae2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54779874"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432133"
 ---
 # <a name="editor-imports"></a>Importy do editoru
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ Můžete naimportovat celou řadou služeb editoru, objekty pro vytváření a z
  Použití editoru importu, importujete ho jako pole nebo vlastnosti třídy, která se exportuje součást Managed Extensibility Framework.  
   
 > [!NOTE]
->  Další informace o rozhraní Managed Extensibility Framework, naleznete v tématu [Managed Extensibility Framework (MEF)](http://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde).  
+> Další informace o rozhraní Managed Extensibility Framework, naleznete v tématu [Managed Extensibility Framework (MEF)](http://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde).  
   
 ## <a name="import-syntax"></a>Importovat syntaxe  
  Následující příklad ukazuje, jak importovat editoru možnosti výrobní službu.  
@@ -50,7 +50,7 @@ internal IEditorOptionsFactoryService m_editorOptions = null;
   
  [Návod: Zvýraznění textu](../extensibility/walkthrough-highlighting-text.md)  
   
- [Návod: Zobrazení popisky rychlé informace](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)  
+ [Návod: Zobrazení popisů tlačítek s rychlými informacemi](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)  
   
  [Návod: Zobrazení vyhrazené nápovědy](../extensibility/walkthrough-displaying-signature-help.md)  
   

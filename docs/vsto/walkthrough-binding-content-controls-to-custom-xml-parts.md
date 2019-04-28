@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 65cadbde0cde939d45161e3b8dc69685ae31fa69
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 52366cc268335df98da53701e5cde283c67a022d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60041615"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438706"
 ---
 # <a name="walkthrough-bind-content-controls-to-custom-xml-parts"></a>Návod: Vytvoření vazby ovládacích prvků obsahu do vlastní části XML
   Tento návod ukazuje, jak svázat ovládací prvky obsahu v přizpůsobení na úrovni dokumentu pro Word XML data, která je uložena v dokumentu.
@@ -85,7 +85,7 @@ ms.locfileid: "60041615"
 5. Na pásu karet, zvolte **Developer** kartu.
 
    > [!NOTE]
-   >  Pokud **Developer** karta není zobrazena, musíte ji nejdříve zobrazit. Další informace najdete v tématu [jak: Zobrazení karty Vývojář na pásu karet](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
+   > Pokud **Developer** karta není zobrazena, musíte ji nejdříve zobrazit. Další informace najdete v tématu [jak: Zobrazení karty Vývojář na pásu karet](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
 
 6. V **ovládací prvky** skupině, zvolte **Text** tlačítko ![plaintextcontentcontrol –](../vsto/media/plaintextcontrol.gif "plaintextcontentcontrol –") přidáte <xref:Microsoft.Office.Tools.Word.PlainTextContentControl>do první buňky.
 

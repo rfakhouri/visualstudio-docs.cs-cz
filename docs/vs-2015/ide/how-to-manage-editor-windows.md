@@ -14,12 +14,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 107b42500bbe2daed0d03d3e23e4817c9c3b3fc4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 29047f53b08472a0ff65960bfe694789f7f7cbe1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60089923"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430499"
 ---
 # <a name="how-to-manage-editor-windows"></a>Postupy: Správa Windows editoru
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "60089923"
 Můžete pracovat na kód na několika místech současně. To provést rozdělením okno editoru nebo otevřením několik instancí okna editoru.  
   
 > [!NOTE]
->  Ne všechna okna editoru podporují více instancí.  
+> Ne všechna okna editoru podporují více instancí.  
   
 ## <a name="splitting-an-editor-window"></a>Rozdělit okno editoru  
  Instance okno editoru je možné rozdělit na dvě samostatné zobrazení pro úpravy jednodušší.  
@@ -41,7 +41,7 @@ Můžete pracovat na kód na několika místech současně. To provést rozděle
      Oblast úprav rozdělí dvě podokna oddělené rozdělovač. Posuňte se na těchto podoken můžete vizualizaci nezávisle k zobrazení a úpravám různých součástí aktivního dokumentu ve stejnou dobu. V druhém se projeví všechny změny provedené v jedno podokno.  
   
     > [!TIP]
-    >  Chcete-li jedno podokno větší než ten druhý, přetáhněte oddělovač stoupající nebo klesající.  
+    > Chcete-li jedno podokno větší než ten druhý, přetáhněte oddělovač stoupající nebo klesající.  
   
 #### <a name="to-return-to-single-pane-view"></a>Se vrátíte do zobrazení jednoduché  
   

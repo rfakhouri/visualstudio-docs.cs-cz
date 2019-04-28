@@ -12,12 +12,12 @@ ms.assetid: e01cb44a-8105-4cf4-8223-dfae65f8597a
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 7e97e21b2d08d7398a4372ac31cda63b5cfb9fe9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8e838cb02aa1a620356f96d9e77f1752797ac409
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60100596"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441244"
 ---
 # <a name="upgrading-projects"></a>Upgrade projektů
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ K modelu projektu se změní z jedné verze [!INCLUDE[vsprvs](../../includes/vsp
  Po aktualizaci všechny relevantní soubory globální, každý objekt pro vytváření projektu můžete vytvořit instanci projektu. Implementace projektu musí podporovat <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade>. <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade.UpgradeProject%2A> Metoda je volána poté upgradovat všechny položky příslušného projektu.  
   
 > [!NOTE]
->  <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory.UpgradeProject%2A> Metoda neposkytuje SVsUpgradeLogger službu. Tato služba lze získat voláním <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService%2A>.  
+> <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory.UpgradeProject%2A> Metoda neposkytuje SVsUpgradeLogger službu. Tato služba lze získat voláním <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService%2A>.  
   
 ## <a name="best-practices"></a>Doporučené postupy  
  Použití <xref:Microsoft.VisualStudio.Shell.Interop.SVsQueryEditQuerySave> služby zkontrolujte, jestli můžete upravit soubor začnete upravovat a můžete ji uložit před uložením. To vám pomůže zálohování a upgradu implementace zpracovat soubory projektu pod správou zdrojových kódů, soubory s dostatečná oprávnění a tak dále.  

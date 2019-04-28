@@ -20,12 +20,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8572deb32ea5fab2ce8ad831deeaba783496cbc5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3a1e9a3abd6b16ae0365279a6eb9cb067bfeb225
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104327"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430857"
 ---
 # <a name="microsoft-help-viewer"></a>Microsoft Help Viewer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "60104327"
 Můžete nainstalovat a zobrazit obsah pro různé produkty a technologie v místním počítači pomocí aplikace Microsoft Help Viewer.  
   
 > [!WARNING]
->  Při instalaci sady Visual Studio získáte aplikaci Help Viewer. Začne číst témat nápovědy v aplikaci Help Viewer, nikoli na webu MSDN download, přejděte na **pomáhají** nabídky v sadě Visual Studio, vyberte **nastavení předvoleb nápovědy**a pak vyberte **spuštění v nápovědě Prohlížeč**. Offline témata nápovědy pro danou verzi sady Visual Studio jsou k dispozici až po konečnou verzi sady tuto verzi.  
+> Při instalaci sady Visual Studio získáte aplikaci Help Viewer. Začne číst témat nápovědy v aplikaci Help Viewer, nikoli na webu MSDN download, přejděte na **pomáhají** nabídky v sadě Visual Studio, vyberte **nastavení předvoleb nápovědy**a pak vyberte **spuštění v nápovědě Prohlížeč**. Offline témata nápovědy pro danou verzi sady Visual Studio jsou k dispozici až po konečnou verzi sady tuto verzi.  
   
  Můžete provádět následující akce:  
   

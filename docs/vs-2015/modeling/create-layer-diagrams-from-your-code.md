@@ -14,12 +14,12 @@ caps.latest.revision: 64
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a3ff96a68d66c95d4f1302ba2f419c873e8f077d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8fd8188ef0efbe540e086ca6ce284a49b71444ed
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050209"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433381"
 ---
 # <a name="create-layer-diagrams-from-your-code"></a>Vytváření diagramů vrstev z kódu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,9 +34,9 @@ Můžete vizualizovat váš softwarový systém logické architektury vysoké ú
  Před vytvořením diagramu vrstev zkontrolujte, zda má vaše řešení projekt modelování. Zobrazit [vytvořit modelování projektů a diagramů UML](../modeling/create-uml-modeling-projects-and-diagrams.md).  
   
 > [!IMPORTANT]
->  Nepřidávejte, nepřetahujte ani nekopírujte existující diagram vrstev z jednoho projektu modelování do jiného projektu modelování nebo jiného místa v řešení. Tím budou zachovány odkazy z původního diagramu i v případě, že změníte diagram. Rovněž to způsobí, že ověřování vrstev nebude fungovat správně. Důsledkem mohou být i další problémy, jako jsou například chybějící prvky nebo jiné chyby při pokusu o otevření diagramu.  
+> Nepřidávejte, nepřetahujte ani nekopírujte existující diagram vrstev z jednoho projektu modelování do jiného projektu modelování nebo jiného místa v řešení. Tím budou zachovány odkazy z původního diagramu i v případě, že změníte diagram. Rovněž to způsobí, že ověřování vrstev nebude fungovat správně. Důsledkem mohou být i další problémy, jako jsou například chybějící prvky nebo jiné chyby při pokusu o otevření diagramu.  
 >   
->  Místo toho přidejte do projektu modelování nový diagram vrstev. Zkopírujte prvky ze zdrojového diagramu do nového diagramu. Uložte projekt modelování i nový diagram vrstev.  
+> Místo toho přidejte do projektu modelování nový diagram vrstev. Zkopírujte prvky ze zdrojového diagramu do nového diagramu. Uložte projekt modelování i nový diagram vrstev.  
   
 #### <a name="to-add-a-new-layer-diagram-to-a-modeling-project"></a>Přidání nového diagramu vrstev do projektu modelování  
   
@@ -53,7 +53,7 @@ Můžete vizualizovat váš softwarový systém logické architektury vysoké ú
      Zvolte **vytvořte nový projekt modelování** přidat nový projekt modelování řešení.  
   
     > [!NOTE]
-    >  Diagram vrstev musí existovat v projektu modelování. Můžete jej však propojit s položkami kdekoli v řešení.  
+    > Diagram vrstev musí existovat v projektu modelování. Můžete jej však propojit s položkami kdekoli v řešení.  
   
 5. Nezapomeňte uložit projekt modelování i diagram vrstev.  
   
@@ -106,7 +106,7 @@ Můžete vizualizovat váš softwarový systém logické architektury vysoké ú
  Závislost existuje všude, kde artefakt, který je spojen s jednou vrstvou, odkazuje na artefakt, který je přidružen k jiné vrstvě. Třída v jedné vrstvě například deklaruje proměnnou, která má třídu v jiné vrstvě. Je možné provádět zpětnou analýzu existujících závislostí pro artefakty, které jsou propojeny s vrstvami v diagramu.  
   
 > [!NOTE]
->  Pro určité druhy artefaktů nelze provádět zpětnou analýzu žádných závislostí. Zpětnou analýzou například nebudou získány žádné závislosti z vrstvy nebo do ní, když je propojena s textovým souborem. Pokud chcete zobrazit, které artefakty mají závislosti, které je možné provádět zpětnou analýzu, otevřete místní nabídku pro jednu nebo více vrstev a klikněte na tlačítko **zobrazit odkazy**. V **Průzkumník vrstev**, zkontrolujte **podporuje ověřování** sloupce. Závislosti se nebudou provést zpětnou analýzu pro artefakty, u kterých tento sloupec zobrazuje **False**.  
+> Pro určité druhy artefaktů nelze provádět zpětnou analýzu žádných závislostí. Zpětnou analýzou například nebudou získány žádné závislosti z vrstvy nebo do ní, když je propojena s textovým souborem. Pokud chcete zobrazit, které artefakty mají závislosti, které je možné provádět zpětnou analýzu, otevřete místní nabídku pro jednu nebo více vrstev a klikněte na tlačítko **zobrazit odkazy**. V **Průzkumník vrstev**, zkontrolujte **podporuje ověřování** sloupce. Závislosti se nebudou provést zpětnou analýzu pro artefakty, u kterých tento sloupec zobrazuje **False**.  
   
 - Vyberte jednu nebo více vrstev, otevřete místní nabídku pro vybranou vrstvu a klikněte na tlačítko **generovat závislosti**.  
   

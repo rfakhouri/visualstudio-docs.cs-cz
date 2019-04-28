@@ -16,12 +16,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7b4d5e914566cc019a3882ed53923f84ecdddf85
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d8239b0ccbedfdb2965d8dc5f7738c50f9548e94
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069533"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431518"
 ---
 # <a name="how-to-retrieve-query-string-information-in-an-online-clickonce-application"></a>Postupy: Načtení informací řetězce dotazu do online aplikace ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,19 +33,19 @@ ms.locfileid: "60069533"
  Následující dva postupy ukazují, jak používat [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikace za účelem získání informací řetězce dotazu.  
   
 > [!NOTE]
->  Pokud se spuštění vaší aplikace pomocí protokolu HTTP, namísto použití sdílené složky nebo místního systému souborů, můžete předat pouze informace v řetězci dotazu.  
+> Pokud se spuštění vaší aplikace pomocí protokolu HTTP, namísto použití sdílené složky nebo místního systému souborů, můžete předat pouze informace v řetězci dotazu.  
   
  První procedura ukazuje jak vaše [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikace můžete použít malou část kódu ke čtení těchto hodnot při spuštění aplikace.  
   
  Následující postup ukazuje, jak nakonfigurovat váš [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikaci MageUI.exe tak, aby mohl přijímat parametry řetězce dotazu. Je potřeba to udělat pokaždé, když publikujete aplikaci.  
   
 > [!NOTE]
->  Než provedete rozhodnutí pro tuto funkci povolit, najdete v části "Zabezpečení" dále v tomto tématu.  
+> Než provedete rozhodnutí pro tuto funkci povolit, najdete v části "Zabezpečení" dále v tomto tématu.  
   
  Informace o tom, jak vytvořit [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] naleznete v tématu nasazení pomocí Mage.exe nebo MageUI.exe [názorný postup: Ruční nasazení aplikace ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
   
 > [!NOTE]
->  Spuštění v rozhraní .NET Framework 3.5 SP1, je možné předat argumenty příkazového řádku pro offline [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikace. Pokud chcete zadat argumenty do aplikace, můžete předat parametry do souboru zástupce s. Rozšíření APPREF MS.  
+> Spuštění v rozhraní .NET Framework 3.5 SP1, je možné předat argumenty příkazového řádku pro offline [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikace. Pokud chcete zadat argumenty do aplikace, můžete předat parametry do souboru zástupce s. Rozšíření APPREF MS.  
   
 ### <a name="to-obtain-query-string-information-from-a-clickonce-application"></a>K získání informací řetězce dotazu z aplikace ClickOnce  
   
@@ -71,7 +71,7 @@ ms.locfileid: "60069533"
 4. Z **souboru** nabídce vyberte možnost **Uložit**.  
   
 > [!NOTE]
->  Alternativně můžete povolit předávání řetězce dotazů v [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]. Vyberte **parametry povolit adresu URL, které se mají předat aplikaci** zaškrtávací políčko, které lze najít otevřením **vlastnosti projektu**, vyberete **publikovat** kartu, kliknutím **Možnosti** tlačítko a pak vyberete **manifesty**.  
+> Alternativně můžete povolit předávání řetězce dotazů v [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]. Vyberte **parametry povolit adresu URL, které se mají předat aplikaci** zaškrtávací políčko, které lze najít otevřením **vlastnosti projektu**, vyberete **publikovat** kartu, kliknutím **Možnosti** tlačítko a pak vyberete **manifesty**.  
   
 ## <a name="robust-programming"></a>Robustní programování  
  Při použití parametrů řetězce dotazu, je třeba zadat pečlivě promyslet na tom, jak je aplikace nainstalovaná a aktivovaná. Pokud je aplikace nakonfigurována k instalaci na počítač uživatele z webu nebo ze sdílené síťové složce, je pravděpodobné, že uživatel aktivuje aplikaci jenom jednou prostřednictvím adresy URL. Poté uživatel obvykle aktivovat svoji aplikaci pomocí zástupce v **Start** nabídky. V důsledku toho vaše aplikace je zaručeno, že přijímat argumenty řetězce dotazu pouze jednou během celé jeho životnosti. Pokud budete chtít uložit tyto argumenty v počítači uživatele pro budoucí použití, zodpovídáte za jejich ukládáním do bezpečným a zabezpečeným způsobem.  

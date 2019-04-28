@@ -10,12 +10,12 @@ helpviewer_keywords:
 ms.assetid: 0795ee94-17a8-4327-bf57-27cd5e312a4c
 caps.latest.revision: 29
 manager: jillfra
-ms.openlocfilehash: 2cbb93c5ecb3caf38b686a958d6daed845bdaec7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 53ff7b49414e3473c74a41008f381bb207e45fd0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54792793"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63414675"
 ---
 # <a name="hresult-information-in-managed-code"></a>Informace o HRESULT ve spravovaném kódu
 Interakce mezi spravovaným kódem a modelu COM může způsobit potíže, pokud nedojde k vrácené hodnoty HRESULT.  
@@ -42,7 +42,7 @@ Interakce mezi spravovaným kódem a modelu COM může způsobit potíže, pokud
  Ve výchozím nastavení <xref:Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure%2A> vyvolá výjimku, pokaždé, když je jí předán HRESULT, který má hodnotu menší než nula. V případech, kdy přípustné hodnoty jsou tyto výsledky HRESULT a měla by být vyvolána žádná výjimka, by měly být předány hodnoty HRESULT Další <xref:Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure%2A> po otestování hodnoty. Pokud hodnota HRESULT testován odpovídá všechny hodnoty HRESULT explicitně předán <xref:Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure%2A>, není vyvolána žádná výjimka.  
   
 > [!NOTE]
->  <xref:Microsoft.VisualStudio.VSConstants> Třída obsahuje konstanty pro běžné HRESULT, například <xref:Microsoft.VisualStudio.VSConstants.S_OK> a <xref:Microsoft.VisualStudio.VSConstants.E_NOTIMPL>, a [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] HRESULT, například <xref:Microsoft.VisualStudio.VSConstants.VS_E_INCOMPATIBLEDOCDATA> a <xref:Microsoft.VisualStudio.VSConstants.VS_E_UNSUPPORTEDFORMAT>. <xref:Microsoft.VisualStudio.VSConstants> poskytuje také <xref:Microsoft.VisualStudio.ErrorHandler.Succeeded%2A> a <xref:Microsoft.VisualStudio.ErrorHandler.Failed%2A> metody, které odpovídají úspěšné a NEÚSPĚŠNÉ makra v modelu COM.  
+> <xref:Microsoft.VisualStudio.VSConstants> Třída obsahuje konstanty pro běžné HRESULT, například <xref:Microsoft.VisualStudio.VSConstants.S_OK> a <xref:Microsoft.VisualStudio.VSConstants.E_NOTIMPL>, a [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] HRESULT, například <xref:Microsoft.VisualStudio.VSConstants.VS_E_INCOMPATIBLEDOCDATA> a <xref:Microsoft.VisualStudio.VSConstants.VS_E_UNSUPPORTEDFORMAT>. <xref:Microsoft.VisualStudio.VSConstants> poskytuje také <xref:Microsoft.VisualStudio.ErrorHandler.Succeeded%2A> a <xref:Microsoft.VisualStudio.ErrorHandler.Failed%2A> metody, které odpovídají úspěšné a NEÚSPĚŠNÉ makra v modelu COM.  
   
  Zvažte například následující volání funkce, ve kterém <xref:Microsoft.VisualStudio.VSConstants.E_NOTIMPL> je přijatelné vrácení hodnoty, ale jiné HRESULT menší než nula představuje chybu.  
   
@@ -60,7 +60,7 @@ Interakce mezi spravovaným kódem a modelu COM může způsobit potíže, pokud
  Pokud si nejste jistí výjimek má vyvolat, ale vy víte HRESULT chcete vrátit do modelu COM, můžete použít <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A> metodu pro příslušnou výjimku. Tento postup funguje i s nestandardní chybu, například <xref:Microsoft.VisualStudio.VSConstants.VS_E_INCOMPATIBLEDOCDATA>. <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A> pokusy o mapování hodnota HRESULT je do něho předaný silného typu výjimky. V případě nedostupnosti vyvolá k obecné výjimce modelu COM. místo. Výsledkem je hodnota HRESULT předání <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A> ze spravovaného kódu, které se vrátí do funkce modelu COM, která ji zavolala.  
   
 > [!NOTE]
->  Snížit výkon, výjimky, které slouží k označení neobvyklého podmínky. Podmínky, ke kterým dochází často by měla být zpracováván jako vložené, namísto vyvolané výjimky.  
+> Snížit výkon, výjimky, které slouží k označení neobvyklého podmínky. Podmínky, ke kterým dochází často by měla být zpracováván jako vložené, namísto vyvolané výjimky.  
   
 ## <a name="see-also"></a>Viz také  
  [Spravovaná rozšíření VSPackages](../misc/managed-vspackages.md)   

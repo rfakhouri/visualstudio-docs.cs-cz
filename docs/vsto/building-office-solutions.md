@@ -26,18 +26,18 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 17ca737e0796230b9af207bf2f203700676ac630
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e103b07b82d587ac00e2ff53e9ed7ea344267a85
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60078925"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440327"
 ---
 # <a name="build-office-solutions"></a>Vytváření řešení pro systém Office
   Obecně platí sestavování a ladění projektů Office je stejná jako sestavování a ladění ostatních typů projektů v sadě Visual Studio, jako jsou Windows Forms. Témata v této části popisují, které existují rozdíly. Obecné informace o tom, jak vytvářet aplikace, najdete v části [kompilace a sestavení v sadě Visual Studio](../ide/compiling-and-building-in-visual-studio.md).
 
 > [!NOTE]
->  Zajímá vás vývoj řešení, které rozšiřují Office prostředí napříč [více platforem](https://dev.office.com/add-in-availability)? Podívejte se na nové [Office Add-ins modelu](https://dev.office.com/docs/add-ins/overview/office-add-ins). Doplňky sady Office mají malé náklady v porovnání s doplňky VSTO a řešení a je můžete vytvořit s využitím téměř jakékoli webové programování technologie, jako je například HTML5, JavaScript, CSS3 a XML.
+> Zajímá vás vývoj řešení, které rozšiřují Office prostředí napříč [více platforem](https://dev.office.com/add-in-availability)? Podívejte se na nové [Office Add-ins modelu](https://dev.office.com/docs/add-ins/overview/office-add-ins). Doplňky sady Office mají malé náklady v porovnání s doplňky VSTO a řešení a je můžete vytvořit s využitím téměř jakékoli webové programování technologie, jako je například HTML5, JavaScript, CSS3 a XML.
 
 ## <a name="project-output-for-office-projects"></a>Výstup projektu pro projekty pro systém Office
  Je umístění výstupu pro projekty Office *projectname*\bin\release nebo *projectname*\bin\debug. Nelze sestavit do adresáře nasazení.
@@ -56,7 +56,7 @@ ms.locfileid: "60078925"
 - Databáze programu (*PDB*) soubor.
 
 > [!NOTE]
->  Pokud vytváříte úrovni dokumentu řešení do vzdáleného umístění, namísto místního počítače, přidejte plně kvalifikovanou cestu do seznamu důvěryhodných umístění v Centru zabezpečení aplikace. Další informace najdete v tématu části udělení vztah důvěryhodnosti s dokumenty v [řešení pro systém Office zabezpečení](../vsto/securing-office-solutions.md).
+> Pokud vytváříte úrovni dokumentu řešení do vzdáleného umístění, namísto místního počítače, přidejte plně kvalifikovanou cestu do seznamu důvěryhodných umístění v Centru zabezpečení aplikace. Další informace najdete v tématu části udělení vztah důvěryhodnosti s dokumenty v [řešení pro systém Office zabezpečení](../vsto/securing-office-solutions.md).
 
 ### <a name="application-level-projects"></a>Projekty na úrovni aplikace
  Při vytváření projektu doplňku VSTO ve výstupu projektu zahrnuje následující položky:

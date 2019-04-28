@@ -9,12 +9,12 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2f4de1b8202f95a76dd6688a8dcfcc786a435aed
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1c2f3bfe9fc40aa21e02268bb403d7497ac41529
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059069"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433830"
 ---
 # <a name="how-to-include-prerequisites-with-a-clickonce-application"></a>Postupy: Zahrnutí nezbytných součástí s aplikací ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "60059069"
 Před distribucí požadovaného softwaru se [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikace, musíte nejdřív stáhnout instalační balíčky pro tyto požadavky na vývojovém počítači. Když publikujete aplikaci a zvolte **stáhnout součásti ze stejného umístění, jako je má aplikace**, dojde k chybě, pokud instalační balíčky nejsou uloženy v **balíčky** složky.  
   
 > [!NOTE]
->  Přidání instalačního balíčku pro rozhraní .NET Framework naleznete v tématu [Průvodce nasazením rozhraní .NET Framework pro vývojáře](http://msdn.microsoft.com/library/ee942965\(v=vs.110\).aspx).  
+> Přidání instalačního balíčku pro rozhraní .NET Framework naleznete v tématu [Průvodce nasazením rozhraní .NET Framework pro vývojáře](http://msdn.microsoft.com/library/ee942965\(v=vs.110\).aspx).  
   
 ## <a name="Package"></a> K přidání instalačního balíčku pomocí souboru Package.xml  
   
@@ -37,10 +37,10 @@ Před distribucí požadovaného softwaru se [!INCLUDE[ndptecclick](../includes/
 4. Vyhledejte **název** element, který obsahuje **http://go.microsoft.com/fwlink**a zkopírujte adresu URL. Zahrnout **LinkID** část.  
   
     > [!NOTE]
-    >  Pokud ne **název** obsahuje element **http://go.microsoft.com/fwlink**, otevřete **Product.xml** soubor v kořenové složce požadovaného softwaru a vyhledejte **fwlink** řetězec.  
+    > Pokud ne **název** obsahuje element **http://go.microsoft.com/fwlink**, otevřete **Product.xml** soubor v kořenové složce požadovaného softwaru a vyhledejte **fwlink** řetězec.  
   
     > [!IMPORTANT]
-    >  Některé požadované softwarové programy mohou mít několik instalačních balíčků (například v 32bitových nebo 64bitových systémech). Pokud je položek víc **název** elementy obsahovat **fwlink**, musí zopakovat zbývající kroky pro každý z nich.  
+    > Některé požadované softwarové programy mohou mít několik instalačních balíčků (například v 32bitových nebo 64bitových systémech). Pokud je položek víc **název** elementy obsahovat **fwlink**, musí zopakovat zbývající kroky pro každý z nich.  
   
 5. Vložte adresu URL do adresního řádku prohlížeče a pak po zobrazení výzvy ke spuštění nebo uložení, zvolte **Uložit**.  
   

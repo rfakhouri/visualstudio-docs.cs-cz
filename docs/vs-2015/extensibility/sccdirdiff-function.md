@@ -12,12 +12,12 @@ ms.assetid: 26c9ba92-e3b9-4dd2-bd5e-76b17745e308
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f80636e8dd16d372ceaf3d6032e861738d97b46c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 81279e0fdb0df6600686adc57bb1c5489e8e7aab
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54788414"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432460"
 ---
 # <a name="sccdirdiff-function"></a>SccDirDiff – funkce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ SCCRTN SccDirDiff(
 ## <a name="return-value"></a>Návratová hodnota  
  Modul plug-in implementaci ovládacího prvku zdroje této funkce má vracet instanci jednoho z následujících hodnot:  
   
-|Hodnota|Popis|  
+|Value|Popis|  
 |-----------|-----------------|  
 |SCC_OK|Adresáře na disku je stejný jako projektu ve správě zdrojového kódu.|  
 |SCC_I_FILESDIFFER|Adresáře na disku se liší od projektu ve správě zdrojového kódu.|  
@@ -80,7 +80,7 @@ SCCRTN SccDirDiff(
 |SCC_DIFF_QD_TIME|Pokud se podporuje modul plug-in, tiše porovnává adresáře prostřednictvím její časové razítko nebo, pokud není podporován, přejde na SCC_DIFF_QD_CHECKSUM nebo SCC_DIFF_QD_CONTENTS.|  
   
 > [!NOTE]
->  Tato funkce využívá stejné příznaků příkazů, jako [sccdiff –](../extensibility/sccdiff-function.md). Modul plug-in správy zdrojového kódu však rozhodnout operace "rychlé diff" pro adresáře není podporována.  
+> Tato funkce využívá stejné příznaků příkazů, jako [sccdiff –](../extensibility/sccdiff-function.md). Modul plug-in správy zdrojového kódu však rozhodnout operace "rychlé diff" pro adresáře není podporována.  
   
 ## <a name="see-also"></a>Viz také  
  [Funkce modulu plug-in správy zdrojového kódu v rozhraní API](../extensibility/source-control-plug-in-api-functions.md)

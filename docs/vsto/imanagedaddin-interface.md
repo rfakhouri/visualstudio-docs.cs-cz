@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ed55c42211222ca94587b4358bb904f9637cb3f4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 320b20fa40250ca47dd414b362059e152eba2c3b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596318"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420984"
 ---
 # <a name="imanagedaddin-interface"></a>IManagedAddin – rozhraní
   Implementace imanagedaddin – rozhraní pro vytváření komponenty, která načte spravovaných doplňků VSTO. Toto rozhraní přidal v systému Microsoft Office 2007.
@@ -82,7 +82,7 @@ interface IManagedAddin : IUnknown
  Aplikace Microsoft Office můžete vytvořit objekt modelu COM, který implementuje imanagedaddin – tento identifikátor CLSID.
 
 > [!CAUTION]
->  Tento identifikátor CLSID také používá *knihovna VSTOLoader.dll* v [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. Proto pokud používáte imanagedaddin – k vytvoření doplňku VSTO zavaděč a součásti modulu runtime, nemůžete nasadit komponenty do počítačů, na kterých běží doplňků VSTO, které spoléhají na [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)].
+> Tento identifikátor CLSID také používá *knihovna VSTOLoader.dll* v [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. Proto pokud používáte imanagedaddin – k vytvoření doplňku VSTO zavaděč a součásti modulu runtime, nemůžete nasadit komponenty do počítačů, na kterých běží doplňků VSTO, které spoléhají na [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)].
 
 ## <a name="see-also"></a>Viz také:
 - [Nespravovaná referenční dokumentace rozhraní API &#40;vývoj pro Office v sadě Visual Studio&#41;](../vsto/unmanaged-api-reference-office-development-in-visual-studio.md)

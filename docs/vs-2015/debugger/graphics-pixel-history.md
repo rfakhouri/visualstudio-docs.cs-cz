@@ -11,12 +11,12 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a7e89f2c7b9e834f9896ca3609fd3211e2d41862
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 614977aef83092c64071524e33507848c34bf442
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60044067"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420074"
 ---
 # <a name="graphics-pixel-history"></a>Historie pixelů grafiky
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,7 +62,7 @@ Okno historie pixelů grafiky v analyzátoru grafiky sady Visual Studio vám pom
 3. V rámci primitivních vás zajímá, pomocí následujícího odkazu název shaderu – například pomocí následujícího odkazu **Vertex Shader obj:30** Chcete-li zobrazit zdrojový kód shaderu vrcholu.  
   
     > [!TIP]
-    >  Číslo objektu **obj:30**, identifikuje tento shader v celém rozhraní analyzátoru grafiky sady například v okně fáze tabulky a kanál objektu.  
+    > Číslo objektu **obj:30**, identifikuje tento shader v celém rozhraní analyzátoru grafiky sady například v okně fáze tabulky a kanál objektu.  
   
 ##### <a name="to-debug-a-shader"></a>K ladění shaderu  
   

@@ -24,12 +24,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c549beaf58e64d8026b3f6bd39a3b69922d6b7f6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a5ad9c363a590ef692bdcd1d8c00727d55113b97
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097411"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412361"
 ---
 # <a name="install-and-manage-local-content"></a>Instalace a správa místního obsahu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ Pomocí Microsoft Help Viewer můžete přidat, odebrat, aktualizovat a přesuno
 1. Na **spravovat obsah** , vyberte **disku** přepínač.  
   
     > [!NOTE]
-    >  **Disku** možnost nebude dostupná, pokud správce má že nesmíte měnit zdroj instalace obsahu. Další informace najdete v tématu [pomáhají Příručka pro správce prohlížeč](../ide/help-viewer-administrator-guide.md).  
+    > **Disku** možnost nebude dostupná, pokud správce má že nesmíte měnit zdroj instalace obsahu. Další informace najdete v tématu [pomáhají Příručka pro správce prohlížeč](../ide/help-viewer-administrator-guide.md).  
   
 2. Proveďte jeden z následujících kroků:  
   
@@ -60,7 +60,7 @@ Pomocí Microsoft Help Viewer můžete přidat, odebrat, aktualizovat a přesuno
  Pokud si stáhnete a nainstalujete obsah v místním počítači, můžete zobrazit témata bez připojení k Internetu.  
   
 > [!IMPORTANT]
->  Pokud chcete nainstalovat obsah, musí se přihlásit pomocí účtu, který má oprávnění správce.  
+> Pokud chcete nainstalovat obsah, musí se přihlásit pomocí účtu, který má oprávnění správce.  
   
  Pokud integrované vývojové prostředí sady Visual Studio je nastaven na jiný jazyk než angličtinu, můžete nainstalovat obsah v angličtině, lokalizovaný obsah nebo obojí. Ale žádný obsah se nezobrazí, pokud nainstalujete pouze anglickou verzi a **ve všech navigačních karet a žádostí F1 zahrnout anglický obsah** zaškrtávací políčko **možnosti prohlížeče** dialogové okno se vymaže.  
   
@@ -80,7 +80,7 @@ Pomocí Microsoft Help Viewer můžete přidat, odebrat, aktualizovat a přesuno
  Odstraněním nežádoucího obsahu z počítače můžete ušetřit místo na disku.  
   
 > [!IMPORTANT]
->  Musíte mít oprávnění správce k odebrání obsahu.  
+> Musíte mít oprávnění správce k odebrání obsahu.  
   
  Žádný obsah se nezobrazí, pokud integrovaném vývojovém prostředí sady Visual Studio je nastaven na jiný jazyk než angličtinu, odeberete lokalizovaný obsah a **ve všech záložkách a žádostí F1 zahrnout anglický obsah** zaškrtávací políčko **možnosti prohlížeče**  dialogové okno se vymaže.  
   
@@ -100,7 +100,7 @@ Pomocí Microsoft Help Viewer můžete přidat, odebrat, aktualizovat a přesuno
  Stavový řádek označuje, kdy jsou k dispozici aktualizace nainstalovaného obsahu.  
   
 > [!IMPORTANT]
->  Pokud chcete Help Viewer automaticky vyhledávala online aktualizace, je nutné otevřít **možnosti prohlížeče** dialogové okno a potom vyberte **přejít online pro kontrolu aktualizací obsahu** zaškrtávací políčko.  
+> Pokud chcete Help Viewer automaticky vyhledávala online aktualizace, je nutné otevřít **možnosti prohlížeče** dialogové okno a potom vyberte **přejít online pro kontrolu aktualizací obsahu** zaškrtávací políčko.  
   
 #### <a name="to-update-local-content"></a>Aktualizace místního obsahu  
   
@@ -112,7 +112,7 @@ Pomocí Microsoft Help Viewer můžete přidat, odebrat, aktualizovat a přesuno
  Přesunutím nainstalovaného obsahu z místního počítače do sdílené síťové složky nebo na jiný oddíl v místním počítači můžete ušetřit místo na disku.  
   
 > [!IMPORTANT]
->  Abyste mohli přesouvat obsah, musí se přihlásit pomocí účtu, který má oprávnění správce.  
+> Abyste mohli přesouvat obsah, musí se přihlásit pomocí účtu, který má oprávnění správce.  
   
 #### <a name="to-move-local-content"></a>Přesunutí místního obsahu  
   

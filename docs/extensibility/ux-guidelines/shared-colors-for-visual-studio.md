@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5ce63a9f5ab04748975521c225d207bee2b0937b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7e873250488bff50519cc12060841110325a48e8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60089550"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430236"
 ---
 # <a name="shared-colors-for-visual-studio"></a>Sdílené barvy pro Visual Studio
 Když vytváříte uživatelské rozhraní, které používá běžné prvky prostředí Visual Studio nebo prvek rozhraní konzistentní s podobnými funkcemi, například, vybrat a přiřadit barvy pomocí existující token názvy v souborech s definicí balíčku. Tím se zajistí, že vaše uživatelské rozhraní zůstane konzistentní s celkové prostředí sady Visual Studio a že se automaticky aktualizuje při přidávání nebo aktualizaci motivy.
@@ -299,7 +299,7 @@ Záhlaví sloupců se skládají z na pozadí, ohraničení, text nadpisu a voli
 | --- | --- |
 | Pozadí | Transparentní |
 | Popředí (Text) | `Environment.CommandBarTextActive` |
-| Ohraničení | Žádné |
+| Ohraničení | Žádný |
 
 **Seznam položek k zobrazení: aktivní stav**
 
@@ -873,7 +873,7 @@ Hierarchické organizační schéma, jehož barvy jsou řízeny názvy barev v p
 | Pozadí | `TreeView.Background` |
 | Popředí (Text) | `TreeView.Background` |
 | Popředí (piktogram) | `TreeView.Glyph` |
-| Ohraničení | Žádný |
+| Ohraničení | Žádné |
 
 **Položky zobrazení stromu: ukazatel stavu**
 
@@ -895,7 +895,7 @@ Hierarchické organizační schéma, jehož barvy jsou řízeny názvy barev v p
 | Pozadí | `TreeView.DragOverItem` |
 | Popředí (Text) | `TreeView.DragOverItem` |
 | Popředí (piktogram) | `TreeView.DragOverItemGlyph` |
-| Ohraničení | Žádné |
+| Ohraničení | Žádný |
 
 **Položky zobrazení stromu: vybrané, zaměřený stav**
 
@@ -917,7 +917,7 @@ Hierarchické organizační schéma, jehož barvy jsou řízeny názvy barev v p
 | Pozadí | `TreeView.SelectedItemInactive` |
 | Popředí (Text) | `TreeView.SelectedItemInactive` |
 | Popředí (piktogram) | `TreeView.SelectedItemInactiveGlyph` |
-| Ohraničení | Žádné |
+| Ohraničení | Žádný |
 
 **Položky zobrazení stromu: při přechodu myší, vybrali a zaměřena stavu**
 
@@ -1413,7 +1413,7 @@ Příkaz pruhový graf se skládá ze sady související ovládací prvky stavov
 #### <a name="BKMK_CommandDropDown"></a> Příkaz panel rozevírací seznamy
 
 > [!IMPORTANT]
->  Rozevírací seznamy jsou podobné polích se seznamem, ale nemají upravitelný text oblastech. Pokud rozevírací seznam obsahuje na oblast upravitelný text, použijte pro tokeny barvu [příkazový řádek se seznamem](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandComboBox).
+> Rozevírací seznamy jsou podobné polích se seznamem, ale nemají upravitelný text oblastech. Pokud rozevírací seznam obsahuje na oblast upravitelný text, použijte pro tokeny barvu [příkazový řádek se seznamem](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandComboBox).
 
 ![Příkaz panelu rozevíracího seznamu (červená značka)](../../extensibility/ux-guidelines/media/0303-042_dropdownredline.png "0303 042_DropdownRedline")<br />Příkaz panel rozevíracího seznamu (červená linka)
 

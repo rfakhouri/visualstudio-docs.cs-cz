@@ -23,12 +23,12 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5bc50d013f64543a60d6dad63531c9963fae869c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 99bd377ac54b664424b4bd29ab2917b00dae35fa
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60055636"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63429115"
 ---
 # <a name="add-custom-controls-to-the-data-sources-window"></a>Přidání vlastních ovládacích prvků do okna zdrojů dat
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Při přetažení položky z **zdroje dat** okno na návrhovou plochu vytvořít
  Další informace o výběru ovládacích prvků vázaných na data pro vytvoření pro položky v **zdroje dat** okna, naleznete v tématu [nastavení ovládacího prvku, který má být vytvořen při přetažení z okna zdroje dat](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).  
   
 > [!NOTE]
->  Dialogová okna a příkazy nabídek, které se zobrazí mohou lišit od těch popsaných v nápovědě v závislosti na aktivních nastaveních nebo edici. Chcete-li změnit nastavení na **nástroje** nabídce vyberte možnost **nastavení importu a exportu**. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Dialogová okna a příkazy nabídek, které se zobrazí mohou lišit od těch popsaných v nápovědě v závislosti na aktivních nastaveních nebo edici. Chcete-li změnit nastavení na **nástroje** nabídce vyberte možnost **nastavení importu a exportu**. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="customizinglist"></a> Přizpůsobení seznamu s možností vazby ovládacích prvků pro datový typ  
  Přidání nebo odebrání ze seznamu dostupných ovládacích prvků pro položky v ovládacích prvcích **zdroje dat** okno, které mají určitý datový typ, proveďte následující kroky.  
@@ -66,7 +66,7 @@ Při přetažení položky z **zdroje dat** okno na návrhovou plochu vytvořít
 5. V **související ovládací prvky** pole, vyberte každý ovládací prvek, který chcete mít k dispozici pro vybraný datový typ nebo zrušit výběr všech ovládacích prvků, které chcete odebrat ze seznamu.  
   
     > [!NOTE]
-    >  Pokud ovládací prvek, který chcete vybrat nezobrazí v **související ovládací prvky** pole, je nutné přidat do seznamu ovládacího prvku. Další informace najdete v tématu [přidání ovládacích prvků do seznamu z přidružené ovládací prvky pro datový typ](#addingcontrols).  
+    > Pokud ovládací prvek, který chcete vybrat nezobrazí v **související ovládací prvky** pole, je nutné přidat do seznamu ovládacího prvku. Další informace najdete v tématu [přidání ovládacích prvků do seznamu z přidružené ovládací prvky pro datový typ](#addingcontrols).  
   
 6. Klikněte na **OK**.  
   
@@ -94,7 +94,7 @@ Při přetažení položky z **zdroje dat** okno na návrhovou plochu vytvořít
 3. V **související ovládací prvky** pole ovládacího prvku, který jste právě přidali **nástrojů** by teď měl vypadat.  
   
     > [!NOTE]
-    >  Pouze ovládací prvky, které jsou umístěny v aktuálním řešení nebo v odkazovaném sestavení lze přidat do seznamu přidružených ovládacích prvcích. (Ovládací prvky musí také implementovat jeden z atributů datové vazby v předchozí tabulce.) Vazba dat na vlastní ovládací prvek, který není k dispozici v **zdroje dat** okno, přetáhněte ovládací prvek z **nástrojů** na návrhovou plochu a pak přetáhněte položky k vytvoření vazby k z **dat Zdroje** okna do ovládacího prvku.  
+    > Pouze ovládací prvky, které jsou umístěny v aktuálním řešení nebo v odkazovaném sestavení lze přidat do seznamu přidružených ovládacích prvcích. (Ovládací prvky musí také implementovat jeden z atributů datové vazby v předchozí tabulce.) Vazba dat na vlastní ovládací prvek, který není k dispozici v **zdroje dat** okno, přetáhněte ovládací prvek z **nástrojů** na návrhovou plochu a pak přetáhněte položky k vytvoření vazby k z **dat Zdroje** okna do ovládacího prvku.  
   
 ## <a name="see-also"></a>Viz také  
  [Vytvoření vazby ovládacích prvků k datům v sadě Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)

@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c8ceb1b6360fb45c3894823bbbf817057f16d99
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: fa265a3b7ebde80f7398f0c5972d5265533890f0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56609928"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433472"
 ---
 # <a name="how-to-specify-symbol-file-locations-from-the-command-line"></a>Postupy: Určení umístění souboru se symboly z příkazového řádku
 Chcete-li zobrazit informace o symbolech, jako jsou názvy funkcí a čísla řádků, příkazového řádku nástroje VSPerfReport vyžaduje přístup k symbolu (. *soubor PDB*) soubory profilovaných komponent a souborů systému Windows. Soubory symbolů se vytvoří při kompilaci komponentu. Další informace najdete v tématu [VSPerfReport](../profiling/vsperfreport.md). VSPerfReport automaticky vyhledá soubory symbolů v následujících umístěních:
@@ -35,7 +35,7 @@ Chcete-li zobrazit informace o symbolech, jako jsou názvy funkcí a čísla ř�
   Můžete také použít obě tyto metody.
 
 > [!NOTE]
->  Pokud [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] je nainstalována na místním počítači, do umístění pro soubory symbolů Windows pravděpodobně nebyl zadán již. Další informace najdete v tématu [jak: Referenční informace o symbolech Windows](../profiling/how-to-reference-windows-symbol-information.md). Stále je nutné nakonfigurovat nastavení nástroje VSPerfReport pro umístění a serveru, jak je popsáno dále v tomto tématu.
+> Pokud [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] je nainstalována na místním počítači, do umístění pro soubory symbolů Windows pravděpodobně nebyl zadán již. Další informace najdete v tématu [jak: Referenční informace o symbolech Windows](../profiling/how-to-reference-windows-symbol-information.md). Stále je nutné nakonfigurovat nastavení nástroje VSPerfReport pro umístění a serveru, jak je popsáno dále v tomto tématu.
 
 ## <a name="specify-windows-symbol-files"></a>Zadejte soubory symbolů Windows
 
