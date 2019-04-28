@@ -15,12 +15,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7e7f70808ff91ec32ef52deedc05724f9bac3f7d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 970f3828319e2e9c016baa66bb1e5fc2032b81ce
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079136"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387041"
 ---
 # <a name="how-to-add-update-or-remove-a-wcf-data-service-reference"></a>Postupy: Přidání, aktualizace nebo odebrání odkazu na datovou službu WCF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ A *odkaz na službu* umožňuje přístup k jedné nebo více projektu [!INCLUDE
 2. V **adresu** pole, zadejte adresu URL pro službu a pak klikněte na tlačítko **Přejít** k vyhledání služby. Pokud služba implementuje uživatelské jméno a heslo zabezpečení, vám může zobrazit výzva k zadání uživatelského jména a hesla.  
   
     > [!NOTE]
-    >  Služby by měly odkazovat pouze z důvěryhodného zdroje. Přidávání odkazů z nedůvěryhodných zdrojů může ohrozit zabezpečení.  
+    > Služby by měly odkazovat pouze z důvěryhodného zdroje. Přidávání odkazů z nedůvěryhodných zdrojů může ohrozit zabezpečení.  
   
      Můžete také vybrat adresu URL **adresu** seznam, který ukládá předchozí 15 adresy URL, na kterých byla nalezena platná metadata služby.  
   
@@ -91,7 +91,7 @@ A *odkaz na službu* umožňuje přístup k jedné nebo více projektu [!INCLUDE
      Klient služby bude odebrán z řešení a metadat, který popisuje službu se odebere ze souboru app.config.  
   
     > [!NOTE]
-    >  Veškerý kód, který odkazuje na odkaz na službu muset odebrat ručně.  
+    > Veškerý kód, který odkazuje na odkaz na službu muset odebrat ručně.  
   
 ## <a name="see-also"></a>Viz také  
  [Služby Windows Communication Foundation a služby WCF Data Services v sadě Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)

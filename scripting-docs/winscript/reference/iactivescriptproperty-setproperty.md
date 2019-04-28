@@ -17,12 +17,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f24f63612b5d4dcb1c6a5a65e0ad38f8056cf842
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: d689b7b2a252b208ae578f9bfd95ab93777f7cc5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58159384"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63385952"
 ---
 # <a name="iactivescriptpropertysetproperty"></a>IActiveScriptProperty::SetProperty
 Nastaví vlastnost, která je určená parametru.  
@@ -52,7 +52,7 @@ HRESULT SetProperty(
   
  Povolené hodnoty pro `dwProperty` jsou popsány v následující tabulce.  
   
-|Konstanta|Hodnota|Význam|  
+|Konstanta|Value|Význam|  
 |--------------|-----------|-------------|  
 |SCRIPTPROP_INTEGERMODE|0x00003000|Vynutí skriptovací stroj pro rozdělení v režimu celé číslo místo s plovoucí desetinnou čárkou režim bodu. Výchozí hodnota je `False`.|  
 |SCRIPTPROP_STRINGCOMPAREINSTANCE|0x00003001|Povolí používání funkce porovnání řetězce skriptovací stroj se nahradí.|  
@@ -76,7 +76,7 @@ HRESULT SetProperty(
  Chcete-li vybrat sadu jazykových funkcí na podporované, když [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] skriptovací stroj je inicializována, vyvolají `SetProperty` a předat hodnotu, která odpovídá sadě povolit u SCRIPTPROP_INVOKEVERSIONING funkcí jazyka. Pokud je tato vlastnost nastavena na hodnotu 1 (SCRIPTLANGUAGEVERSION_5_7), dostupné jazykové funkce jsou stejné jako ty, které se zobrazovaly ve verzi 5.7 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] skriptovací stroj. Pokud je nastavena na 2 (SCRIPTLANGUAGEVERSION_5_8), dostupné jazykové funkce jsou ty, které se zobrazovaly ve verzi 5.7 Kromě nových funkcí, které byly přidány ve verzi 5.8. Ve výchozím nastavení tato vlastnost nastavena na hodnotu 0 (SCRIPTLANGUAGEVERSION_DEFAULT), což je ekvivalentní k sadě funkcí jazyka, které se zobrazovalo ve verzi 5.7, pokud hostitel podporuje různé výchozí chování. Například v aplikaci Internet Explorer 8 požádá o [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] jazykové funkce, které jsou podporovány verze 5.8 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] skriptovací stroj ve výchozím nastavení při "Standardy aplikace Internet Explorer 8" režim je výchozí režim dokumentu pro aplikaci Internet Explorer 8. Přepnutí režimu dokumentů Internet Explorer 8 pro Internet Explorer 7, režim standardů nebo adaptivním režimu resetuje [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] skriptovací stroj pro podporu pouze jazykové sadě funkcí, které existovalo v na verzi 5.7 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] skriptovací stroj.  
   
 > [!NOTE]
->  SCRIPTPROP_INVOKEVERSIONING by měla být nastavena pouze tehdy, když [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] skriptovací stroj je inicializována.  
+> SCRIPTPROP_INVOKEVERSIONING by měla být nastavena pouze tehdy, když [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] skriptovací stroj je inicializována.  
   
 ## <a name="example"></a>Příklad  
  Následující příklad ukazuje, jak můžete vynutit skriptovací stroj použití dělení celého čísla a o tom, aby přetížení funkce porovnání.  
