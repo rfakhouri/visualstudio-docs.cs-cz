@@ -14,12 +14,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: db58bb1826aab9a26dcec6a9475c49fc99057891
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: e10279740d590b63bb3781afd3486f7952123664
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59661098"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431940"
 ---
 # <a name="entity-data-model-tools-in-visual-studio"></a>Nástroje modelu dat entity v sadě Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ Entity Framework je objektově relační mapování technologie, která umožňu
 - Můžete použít **aktualizace modelu průvodce** aktualizovat konceptuální model, úložiště modelu a mapování, když se provedly změny do databáze.
 
   > [!NOTE]
-  >  Od verze Visual Studio 2010, [!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)] nástroje nepodporují [!INCLUDE[ss2k](../includes/ss2k-md.md)].
+  > Od verze Visual Studio 2010, [!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)] nástroje nepodporují [!INCLUDE[ss2k](../includes/ss2k-md.md)].
 
   Nástroje pro generování nebo upravit soubor .edmx. Tento soubor obsahuje informace, které popisují konceptuálního modelu, model úložiště a mapování mezi nimi. Další informace najdete v tématu [EDMX](https://msdn.microsoft.com/data/jj650889.aspx).
 

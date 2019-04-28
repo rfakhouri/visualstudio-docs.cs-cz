@@ -19,11 +19,11 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: 2fdf92eae202f1ebb80b88e28307e7dacfbc0a39
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55952122"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62542387"
 ---
 # <a name="ca2126-type-link-demands-require-inheritance-demands"></a>CA2126: Požadavky na propojení typů vyžadují požadavky na dědičnost
 
@@ -34,7 +34,7 @@ ms.locfileid: "55952122"
 |Kategorie|Microsoft.Security|
 |Narušující změna|Narušující|
 
-## <a name="cause"></a>příčina
+## <a name="cause"></a>Příčina
  Veřejný nezapečetěný typ je chráněn pomocí požadavku propojení, má přepisovatelnou metodu a typ ani metoda nejsou chráněny pomocí vyžádané dědičnosti.
 
 ## <a name="rule-description"></a>Popis pravidla

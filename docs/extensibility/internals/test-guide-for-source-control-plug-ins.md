@@ -14,18 +14,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 40de16290e52755ab92d09edf0c90c045ad4dc86
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 120aed577f0365c9d595916e191779793271d90d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061031"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63429914"
 ---
 # <a name="test-guide-for-source-control-plug-ins"></a>Testovací příručka pro moduly plug-in správy zdrojového kódu
 Tato část obsahuje pokyny pro testování vašich plug-in správy zdrojových kódů s [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Je k dispozici rozsáhlý přehled nejběžnějších oblastí testování, jakož i některé komplikovanější oblastí, které může být problematické. Tento přehled není určena k tudíž nepředstavuje kompletní seznam testovacích případů.
 
 > [!NOTE]
->  Několik oprav chyb a vylepšení na nejnovější verzi [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrovaného vývojového prostředí může odhalit problémy s existující ovládací prvek moduly plug-in zdrojového kódu, které dříve nebyly nalezeny při používání předchozích verzích [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Důrazně doporučujeme, jakým testujete vaše stávající plug-in správy zdrojových kódů pro oblasti, které jsou uvedené v této části i v případě, že byly provedeny žádné změny v modulu plug-in od předchozí verze [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
+> Několik oprav chyb a vylepšení na nejnovější verzi [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrovaného vývojového prostředí může odhalit problémy s existující ovládací prvek moduly plug-in zdrojového kódu, které dříve nebyly nalezeny při používání předchozích verzích [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Důrazně doporučujeme, jakým testujete vaše stávající plug-in správy zdrojových kódů pro oblasti, které jsou uvedené v této části i v případě, že byly provedeny žádné změny v modulu plug-in od předchozí verze [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
 
 ## <a name="common-preparation"></a>Běžné přípravy
  Počítač s [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] a nainstalovaný, je potřeba cílového plug-in správy zdrojových kódů. Do druhého počítače podobně nakonfigurovaného lze použít pro některý ze otevřít ze správy zdrojových kódů testy.
@@ -51,7 +51,7 @@ Tato část obsahuje pokyny pro testování vašich plug-in správy zdrojových 
 
 ## <a name="test-areas-covered-in-this-section"></a>Oblasti testů, které jsou popsané v této části
 
-- [Testovací oblast 1: Přidat / otevřít ze správy zdrojového kódu](../../extensibility/internals/test-area-1-add-to-open-from-source-control.md)
+- [Testovací oblast 1: Přidání nebo otevření ze správy zdrojového kódu](../../extensibility/internals/test-area-1-add-to-open-from-source-control.md)
 
     - Případu 1a: Přidat řešení do správy zdrojového kódu
 
@@ -59,9 +59,9 @@ Tato část obsahuje pokyny pro testování vašich plug-in správy zdrojových 
 
     - Případ 1c: Přidat řešení ze správy zdrojového kódu
 
-- [Testovací oblast 2: Získat ze správy zdrojového kódu](../../extensibility/internals/test-area-2-get-from-source-control.md)
+- [Testovací oblast 2: Získání ze správy zdrojového kódu](../../extensibility/internals/test-area-2-get-from-source-control.md)
 
-- [Testovací oblast 3: Podívejte se na / Zrušit rezervaci](../../extensibility/internals/test-area-3-check-out-undo-checkout.md)
+- [Testovací oblast 3: Rezervace a zrušení rezervace](../../extensibility/internals/test-area-3-check-out-undo-checkout.md)
 
     - Případ 3: Podívejte se na / Zrušit rezervaci
 
@@ -75,7 +75,7 @@ Tato část obsahuje pokyny pro testování vašich plug-in správy zdrojových 
 
     - Případu 3e: Vrátit zpět rezervaci
 
-- [Testovací oblast 4: Přihlásit se](../../extensibility/internals/test-area-4-check-in.md)
+- [Testovací oblast 4: Vrácení se změnami](../../extensibility/internals/test-area-4-check-in.md)
 
     - Případu 4a: Změněné položky
 
@@ -83,7 +83,7 @@ Tato část obsahuje pokyny pro testování vašich plug-in správy zdrojových 
 
     - Případ 4c: Přidávání projektů
 
-- [Testovací oblast 5: Změnit správu zdrojového kódu](../../extensibility/internals/test-area-5-change-source-control.md)
+- [Testovací oblast 5: Změna správy zdrojového kódu](../../extensibility/internals/test-area-5-change-source-control.md)
 
     - Případu 5a: Vytvoření vazby
 
@@ -91,11 +91,11 @@ Tato část obsahuje pokyny pro testování vašich plug-in správy zdrojových 
 
     - Případ 5c: obnovení vazby
 
-- [Testovací oblast 6: Odstranit](../../extensibility/internals/test-area-6-delete.md)
+- [Testovací oblast 6: Odstranění](../../extensibility/internals/test-area-6-delete.md)
 
-- [Testovací oblast 7: sdílené složky](../../extensibility/internals/test-area-7-share.md)
+- [Testovací oblast 7: Sdílení](../../extensibility/internals/test-area-7-share.md)
 
-- [Testovací oblast 8: Přepínání modulu plug-in](../../extensibility/internals/test-area-8-plug-in-switching.md)
+- [Testovací oblast 8: Přepínání modulů plug-in](../../extensibility/internals/test-area-8-plug-in-switching.md)
 
     - Případu 8a: Automaticky změnit
 

@@ -24,12 +24,12 @@ caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 07930dc31651d11aedccc6c597070bbba62ff0b9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 2be23466642357d19dad52407fcb9bf82e843c5b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54796750"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424490"
 ---
 # <a name="uml-class-diagrams-reference"></a>Diagramy tříd UML: Odkaz
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ ms.locfileid: "54796750"
 Diagram tříd UML popisuje objektu a informace o strukturách používané aplikace, interně i v komunikaci se svým uživatelům. Popisuje informace, bez ohledu na žádnou konkrétní implementaci. Jeho tříd a vztahů je možné implementovat mnoha způsoby, například databázové tabulky, z uzlů XML nebo sestavení objektů softwaru.  
   
 > [!NOTE]
->  Toto téma se zabývá diagramy tříd UML. Existuje jiný typ diagramu tříd, diagram tříd .NET, který slouží k vizualizaci kódu programu. Další informace najdete v tématu [navrhování a zobrazování tříd a typů](http://go.microsoft.com/fwlink/?LinkId=142231).  
+> Toto téma se zabývá diagramy tříd UML. Existuje jiný typ diagramu tříd, diagram tříd .NET, který slouží k vizualizaci kódu programu. Další informace najdete v tématu [navrhování a zobrazování tříd a typů](http://go.microsoft.com/fwlink/?LinkId=142231).  
   
  Chcete-li vytvořit diagram tříd UML, na **architektury** nabídce zvolte **nové UML nebo diagramu vrstev**. Další informace o tom, jak nakreslit diagramy tříd UML, naleznete v tématu [diagramů tříd UML: Pokyny pro](../modeling/uml-class-diagrams-guidelines.md). Další informace o tom, jak vytvořit a kreslit diagramy modelování najdete v tématu [modelů a diagramů UML upravit](../modeling/edit-uml-models-and-diagrams.md).  
   

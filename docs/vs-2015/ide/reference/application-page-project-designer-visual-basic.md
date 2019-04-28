@@ -15,12 +15,12 @@ caps.latest.revision: 68
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d2484d0fc921d8a5bb42c8e89306a57c3ab6c11d
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 4c4e034659298cfa4aa67023767bd4c90ac745c9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59670378"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433749"
 ---
 # <a name="application-page-project-designer-visual-basic"></a>Stránka Aplikace, návrhář projektu (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ Použití **aplikace** stránky Návrháře projektu k určení nastavení aplik
  Pokud zrušíte výběr **kořenové Namespace**, obor názvů strukturu projektu můžete zadat v kódu.  
   
 > [!NOTE]
->  Pokud používáte Global – klíčové slovo v [příkaz Namespace](http://msdn.microsoft.com/library/a31fbd95-9ace-4c3d-bbb1-51222a2272b2), můžete definovat obor názvů mimo kořenový obor názvů vašeho projektu. Pokud zrušíte výběr **kořenové Namespace**, `Global` stane oboru nejvyšší úrovně, která eliminuje potřebu `Global` – klíčové slovo v `Namespace` příkaz. Další informace najdete v tématu "Globální – klíčové slovo v Namespace příkazy" v [obory názvů v jazyce Visual Basic](http://msdn.microsoft.com/library/cffac744-ab8c-4f1f-ba50-732c22ab4b88).  
+> Pokud používáte Global – klíčové slovo v [příkaz Namespace](http://msdn.microsoft.com/library/a31fbd95-9ace-4c3d-bbb1-51222a2272b2), můžete definovat obor názvů mimo kořenový obor názvů vašeho projektu. Pokud zrušíte výběr **kořenové Namespace**, `Global` stane oboru nejvyšší úrovně, která eliminuje potřebu `Global` – klíčové slovo v `Namespace` příkaz. Další informace najdete v tématu "Globální – klíčové slovo v Namespace příkazy" v [obory názvů v jazyce Visual Basic](http://msdn.microsoft.com/library/cffac744-ab8c-4f1f-ba50-732c22ab4b88).  
   
  Informace o tom, jak vytvořit obory názvů ve vašem kódu, naleznete v tématu [příkaz Namespace](http://msdn.microsoft.com/library/a31fbd95-9ace-4c3d-bbb1-51222a2272b2).  
   
@@ -57,7 +57,7 @@ Použití **aplikace** stránky Návrháře projektu k určení nastavení aplik
  Výchozí hodnota se shoduje s cílovou architekturu, která jste zadali v **nový projekt** dialogové okno.  
   
 > [!NOTE]
->  Požadované balíčky, které jsou uvedeny v [dialogové okno požadavky](../../ide/reference/prerequisites-dialog-box.md) se nastaví automaticky, když otevřete dialogové okno poprvé. Pokud později změníte cílový rámec projektu, je nutné zadat předpoklady ručně, aby odpovídaly novému cílovému rozhraní.  
+> Požadované balíčky, které jsou uvedeny v [dialogové okno požadavky](../../ide/reference/prerequisites-dialog-box.md) se nastaví automaticky, když otevřete dialogové okno poprvé. Pokud později změníte cílový rámec projektu, je nutné zadat předpoklady ručně, aby odpovídaly novému cílovému rozhraní.  
   
  Další informace najdete v tématu [jak: Cílení na určitou verzi rozhraní .NET Framework](../../ide/how-to-target-a-version-of-the-dotnet-framework.md) a [cílení na více verzí sady Visual Studio přehled](../../ide/visual-studio-multi-targeting-overview.md).  
   
@@ -69,7 +69,7 @@ Použití **aplikace** stránky Návrháře projektu k určení nastavení aplik
  Pokud zadáte **soubor WinMD** možnost, typy je možné promítnout do jakékoli Windows Runtime programovací jazyk. Balení výstup projektu jako soubor WinMD, může kód aplikace v několika jazycích a spolupracovat, jako kdyby jste napsali kód vše ve stejném jazyce. Můžete použít **soubor WinMD** možnost pro řešení, které se zaměřují na modul Windows Runtime knihovny, včetně [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)] aplikace. Další informace najdete v tématu [vytváření komponent Windows Runtime v jazyce C# a Visual Basic](http://go.microsoft.com/fwlink/?LinkId=231895).  
   
 > [!NOTE]
->  Modul Windows Runtime můžete promítnout typy tak, aby byly zobrazeny jako nativních objektů v libovolný preferovaný jazyk je využívá. Například použít jako sadu JavaScript – objekty jazyka JavaScript aplikace, které spolupracují s modulem Windows Runtime a aplikace C# použít knihovnu jako kolekce objektů .NET. Díky balení výstup projektu jako soubor WinMD, můžete využívat stejné technologie, která používá prostředí Windows Runtime.  
+> Modul Windows Runtime můžete promítnout typy tak, aby byly zobrazeny jako nativních objektů v libovolný preferovaný jazyk je využívá. Například použít jako sadu JavaScript – objekty jazyka JavaScript aplikace, které spolupracují s modulem Windows Runtime a aplikace C# použít knihovnu jako kolekce objektů .NET. Díky balení výstup projektu jako soubor WinMD, můžete využívat stejné technologie, která používá prostředí Windows Runtime.  
   
  Další informace o **typ aplikace** vlastnost, naleznete v tématu [/Target (Visual Basic)](http://msdn.microsoft.com/library/e0954147-548b-461f-9c4b-a8f88845616c). Informace o tom, jak programově přístup k této vlastnosti naleznete v tématu <xref:VSLangProj.ProjectProperties.OutputType%2A>.  
   

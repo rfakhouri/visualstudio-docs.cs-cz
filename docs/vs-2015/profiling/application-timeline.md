@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 316243f53871c9411af08d6721f2ca590fadea99
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5d49b870b83eeb4bce48c562f3944aacef871cd2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60078613"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431070"
 ---
 # <a name="application-timeline"></a>Časová osa aplikace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,13 +38,13 @@ Použití **časová osa aplikace** profiler k nalezení a opravení interakce a
 5. Windows 7  
   
 > [!NOTE]
->  Můžete shromažďovat a analyzovat data o využití procesoru a data o spotřebě energie spolu s **ApplicationTimeline** data. Zobrazit [spustit profilovací nástroje bez ladění](http://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)  
+> Můžete shromažďovat a analyzovat data o využití procesoru a data o spotřebě energie spolu s **ApplicationTimeline** data. Zobrazit [spustit profilovací nástroje bez ladění](http://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)  
   
 ## <a name="BKMK_Collect_Timeline_data_for_your_app"></a> Shromažďování dat časová osa aplikace  
  Rychlost odezvy své aplikace na místním počítači, připojené zařízení, simulátoru sady Visual Studio nebo emulátory nebo vzdáleného zařízení. Zobrazit [spustit profilovací nástroje bez ladění](http://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01).  
   
 > [!TIP]
->  Pokud je to možné spusťte aplikaci přímo v zařízení. Výkon aplikace pozorovaný na simulátoru nebo prostřednictvím připojení ke vzdálené ploše nemusí být stejný jako skutečný výkon v zařízení. Shromažďování dat pomocí Visual Studio Remote Tools na druhé straně neovlivní údaje o výkonu.  
+> Pokud je to možné spusťte aplikaci přímo v zařízení. Výkon aplikace pozorovaný na simulátoru nebo prostřednictvím připojení ke vzdálené ploše nemusí být stejný jako skutečný výkon v zařízení. Shromažďování dat pomocí Visual Studio Remote Tools na druhé straně neovlivní údaje o výkonu.  
   
  Zde jsou základní kroky:  
   
@@ -55,7 +55,7 @@ Použití **časová osa aplikace** profiler k nalezení a opravení interakce a
 3. Vyberte **časová osa aplikace** a potom klikněte na tlačítko **Start** v dolní části okna.  
   
     > [!NOTE]
-    >  Může se zobrazit okno Řízení uživatelských účtů ke spuštění VsEtwCollector.exe. Klikněte na **Ano**.  
+    > Může se zobrazit okno Řízení uživatelských účtů ke spuštění VsEtwCollector.exe. Klikněte na **Ano**.  
   
 4. Spusťte scénář zájem o profilování ve vaší aplikaci ke shromažďování dat výkonu.  
   
@@ -107,7 +107,7 @@ Použití **časová osa aplikace** profiler k nalezení a opravení interakce a
 |**XAML – ostatní**|Čas strávený prováděním kódu modulu runtime XAML.|  
   
 > [!TIP]
->  Zvolte **využití procesoru** společně s nástroji **časová osa aplikace** nástroj při spuštění profilace zobrazit aplikace metody, které jsou spouštěny na vlákně UI. Přesunutí kódu dlouho běžící aplikace do vlákna na pozadí může zvýšit rychlost odezvy UI.  
+> Zvolte **využití procesoru** společně s nástroji **časová osa aplikace** nástroj při spuštění profilace zobrazit aplikace metody, které jsou spouštěny na vlákně UI. Přesunutí kódu dlouho běžící aplikace do vlákna na pozadí může zvýšit rychlost odezvy UI.  
   
 #### <a name="BKMK_Customizing_Timeline_details_"></a> Přizpůsobení podrobnosti časové osy  
  Použití **podrobnosti časové osy** nástrojů můžete řadit, filtrovat a zadejte poznámky o **podrobnosti časové osy** zobrazení položek.  

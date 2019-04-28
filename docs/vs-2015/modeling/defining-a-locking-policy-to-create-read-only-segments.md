@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ed3eeb8e2907eb71a75884a19f174774055783c4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6044e9c47a0dcbc95fd1503906cbd81ac8e44526
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60062240"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422658"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>Definování zásady zamykání pro vytváření segmentů jen pro čtení
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ Rozhraní API neměnnosti [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Visualiza
  Kromě toho, jak vytvořit DSL, můžete definovat *uzamčení zásad.* Zásady zamykání definuje zámky, které jsou povolené, nejsou povolené nebo povinné. Například při publikování DSL je vstupní kontroly mohou pobídnout vývojářům třetích stran ho rozšířit pomocí nových příkazů. Ale můžete také použít zásady zamykání a zabrání tak jejich změnu stavu jen pro čtení zadaného součásti modelu.  
   
 > [!NOTE]
->  Zásady zamykání může být požadavky propojení obcházeny pomocí operace reflection. Poskytuje jasný hranice pro vývojáře třetích stran, ale neposkytuje silné zabezpečení.  
+> Zásady zamykání může být požadavky propojení obcházeny pomocí operace reflection. Poskytuje jasný hranice pro vývojáře třetích stran, ale neposkytuje silné zabezpečení.  
   
  Další informace a ukázky jsou k dispozici na [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] [Visualization and Modeling SDK](http://go.microsoft.com/fwlink/?LinkId=186128) webu.  
   
@@ -77,7 +77,7 @@ partition.SetLocks(Locks.Delete);
   
   Nelze nastavit zámek na oddíl nebo úložiště a současně zakázat zámek na jednotlivý element.  
   
-|Hodnota|To znamená pokud `IsLocked(Value)` má hodnotu true|  
+|Value|To znamená pokud `IsLocked(Value)` má hodnotu true|  
 |-----------|------------------------------------------|  
 |Žádný|Bez omezení.|  
 |Vlastnost|Vlastnosti domény prvků nelze změnit. To se nevztahuje na vlastnosti, které jsou generovány podle role doménové třídy v relaci.|  

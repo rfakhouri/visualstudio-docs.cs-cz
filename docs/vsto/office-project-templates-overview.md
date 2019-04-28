@@ -30,12 +30,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 49cb0af47f34abbda5bd212d8ce535e98c44d6b5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4e998b2367929f788ace5fb6a8de7fc5bb96c3e3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054570"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438776"
 ---
 # <a name="office-project-templates-overview"></a>Přehled šablon projektů Office
   Nástroje Microsoft Office developer tools v sadě Visual Studio obsahují šablony projektů pro vytváření následujících typů řešení pro systém Office:
@@ -77,7 +77,7 @@ ms.locfileid: "60054570"
   Šablony projektů Šablona aplikace Word a Šablona aplikace Excel se chovají stejně jako šablony projektů Dokument aplikace Word a Sešit aplikace Excel. Šablony projektů Šablona aplikace Word a Šablona aplikace Excel ale usnadňují uživatelům vytvoření nových místních kopií dokumentu nebo sešitu pomocí přizpůsobené šablony z vašeho řešení. Funkce vašeho řešení jsou k dispozici z nového dokumentu, který uživatel z šablony vytvoří.
 
 > [!NOTE]
->  Šablony aplikace Word, které odkazují na rozšíření spravovaného kódu nelze použít jako globální doplňky VSTO. Sestavení není voláno, pokud je šablona načtena z adresáře Po spuštění aplikace Word. Další informace najdete v tématu [omezení globálních šablon a doplňků aplikace Excel (souborů .xla)](#Limitations)
+> Šablony aplikace Word, které odkazují na rozšíření spravovaného kódu nelze použít jako globální doplňky VSTO. Sestavení není voláno, pokud je šablona načtena z adresáře Po spuštění aplikace Word. Další informace najdete v tématu [omezení globálních šablon a doplňků aplikace Excel (souborů .xla)](#Limitations)
 
  Informace, jak začít pracovat s těmito typy projektů, naleznete v následujících tématech:
 

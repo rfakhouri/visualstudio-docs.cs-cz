@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c2498029b5570a1576f62bcf042a7b87f856f3de
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 269ecdb67fe58a5ad2aff6af63ba6ea45647811a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60076651"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412621"
 ---
 # <a name="how-to-programmatically-group-rows-in-a-worksheet"></a>Postupy: Seskupování řádků v listech prostřednictvím kódu programu
   Můžete seskupit nejméně jeden celý řádek. Chcete-li vytvořit skupinu na listu, použijte <xref:Microsoft.Office.Tools.Excel.NamedRange> ovládací prvek nebo rozsah objekt nativní aplikace Excel.
@@ -43,7 +43,7 @@ ms.locfileid: "60076651"
      [!code-vb[Trin_VstcoreExcelAutomation#32](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#32)]
 
     > [!NOTE]
-    >  Chcete-li zrušit seskupení řádků, zavolejte <xref:Microsoft.Office.Tools.Excel.NamedRange.Ungroup%2A> metody.
+    > Chcete-li zrušit seskupení řádků, zavolejte <xref:Microsoft.Office.Tools.Excel.NamedRange.Ungroup%2A> metody.
 
 ## <a name="use-native-excel-ranges"></a>Použít nativní oblastí aplikace Excel
  Kód předpokládá, že máte tři oblasti aplikace Excel s názvem `data2001`, `data2002`, a `dataAll` v listu.
@@ -56,7 +56,7 @@ ms.locfileid: "60076651"
      [!code-vb[Trin_VstcoreExcelAutomation#33](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#33)]
 
     > [!NOTE]
-    >  Chcete-li zrušit seskupení řádků, zavolejte <xref:Microsoft.Office.Interop.Excel.Range.Ungroup%2A> metody.
+    > Chcete-li zrušit seskupení řádků, zavolejte <xref:Microsoft.Office.Interop.Excel.Range.Ungroup%2A> metody.
 
 ## <a name="see-also"></a>Viz také:
 - [Práce s listy](../vsto/working-with-worksheets.md)

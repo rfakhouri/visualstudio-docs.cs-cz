@@ -21,12 +21,12 @@ caps.latest.revision: 47
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c690e0c009e50cbb98b6dc4f61c1dc6284443edf
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f79ece781db19f2483ef1dd6cb0a81ff7cf78e06
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60074333"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430970"
 ---
 # <a name="navigating-through-code-with-the-debugger"></a>Procházení kódu s ladicím programem
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ Seznamte se s příkazy a klávesové zkratky pro navigaci kódu v ladicím prog
  Chcete-li zastavit na každém řádku kódu (každý příkaz) během ladění, použijte **F11** klávesovou zkratku (nebo **ladění** / **Krokovat s vnořením** v nabídce).  
   
 > [!TIP]
->  Při spuštění každého řádku kódu, můžete najedete myší proměnných najdete v jejich hodnoty nebo použít [lokální](../debugger/autos-and-locals-windows.md) a [Watch](../debugger/autos-and-locals-windows.md) windows a sledujte jejich hodnoty změnit.  
+> Při spuštění každého řádku kódu, můžete najedete myší proměnných najdete v jejich hodnoty nebo použít [lokální](../debugger/autos-and-locals-windows.md) a [Watch](../debugger/autos-and-locals-windows.md) windows a sledujte jejich hodnoty změnit.  
   
  Tady jsou některé podrobnosti o chování **Krokovat s vnořením**:  
   
@@ -87,7 +87,7 @@ Seznamte se s příkazy a klávesové zkratky pro navigaci kódu v ladicím prog
 |**Shift+F11**|**Krokovat s Vystoupením**|**Krokovat s Vystoupením** pokračuje v běhu programu a pozastaví provádění kódu, když aktuální funkce vrátí (přeskočí ladicí program pomocí aktuální funkce).|  
   
 > [!TIP]
->  Pokud je potřeba najít vstupní bod ve vaší aplikaci, začněte s **F10** nebo **F11**. Tyto příkazy jsou často užitečné při kontrole stavu vaší aplikace nebo při pokusu o další informace o jeho spuštění toku.  
+> Pokud je potřeba najít vstupní bod ve vaší aplikaci, začněte s **F10** nebo **F11**. Tyto příkazy jsou často užitečné při kontrole stavu vaší aplikace nebo při pokusu o další informace o jeho spuštění toku.  
   
 ## <a name="BKMK_Break_into_code_by_using_breakpoints_or_Break_All"></a> Spuštění do určitého umístění nebo – funkce  
  Preferovanou metodu ladění kódu, tyto metody jsou často užitečné při víte přesně jaký kód, který chcete zkontrolovat nebo alespoň víte, kde chcete spustit ladění.  
@@ -140,7 +140,7 @@ Seznamte se s příkazy a klávesové zkratky pro navigaci kódu v ladicím prog
 - V okně zpětný překlad nastavte kurzor na instrukci sestavení, který chcete spustit jako další, klikněte pravým tlačítkem na a zvolte **nastavit další příkaz**.  
   
 > [!CAUTION]
->  Nastavení dalšího příkazu způsobí, že čítač programu můžete přejít přímo do nového umístění. Použijte tento příkaz opatrně:  
+> Nastavení dalšího příkazu způsobí, že čítač programu můžete přejít přímo do nového umístění. Použijte tento příkaz opatrně:  
 > 
 > - Pokyny mezi body staré a nové spuštění nebudou provedeny.  
 >   - Pokud přesunete bod spuštění zpět, nebudou intervenující pokyny vráceny vrátit zpět.  
@@ -149,7 +149,7 @@ Seznamte se s příkazy a klávesové zkratky pro navigaci kódu v ladicím prog
 >   - Když upravit a pokračovat je povoleno, **nastavit další příkaz** nezdaří, pokud jste provedli změny, které upravit a pokračovat nemůže ihned opětovně mapovat. Tato situace může nastat, například, pokud se po úpravě kódu v bloku catch. Pokud k tomu dojde, zobrazí se vám chybová zpráva s oznámením, že operace není podporována.  
 > 
 > [!NOTE]
->  Ve spravovaném kódu nelze přesunout další příkaz za následujících podmínek:  
+> Ve spravovaném kódu nelze přesunout další příkaz za následujících podmínek:  
 > 
 > - Další příkaz je v jiné metody než aktuální příkaz.  
 >   - Ladění bylo zahájeno pomocí Just-In-Time ladění.  
@@ -166,7 +166,7 @@ Seznamte se s příkazy a klávesové zkratky pro navigaci kódu v ladicím prog
  Pokud funkce pouze můj kód je zakázán, ladicího programu můžete krokovat s vnořením neuživatelský kód a kód nepatřící uživateli se zobrazí v oknech ladicího programu.  
   
 > [!NOTE]
->  Funkce pouze můj kód není podporována pro projekty zařízení.  
+> Funkce pouze můj kód není podporována pro projekty zařízení.  
   
  **Krokovat přes systémová volání**  
   

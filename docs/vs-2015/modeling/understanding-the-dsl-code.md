@@ -11,12 +11,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 25c4359a5ff64a3ddd229e872aa8a52303c22bf2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fef5d4ab83d22b31b64c6e6ec509cab47a426f9b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60068428"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426956"
 ---
 # <a name="understanding-the-dsl-code"></a>Porozumění kódu DSL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "60068428"
  Při vytváření řešení, které je zdrojem většina příkladů v tomto tématu Vytvoření DSL z **komponenty modely** šablonu řešení. Toto je jeden standardní šablony, které se zobrazí, když vytvoříte nové řešení DSL.  
   
 > [!NOTE]
->  Šablona DSL diagramy součástí nesouvisí s diagramy komponent UML, které můžete vytvořit pomocí nabídky architektury v sadě Visual Studio. V **nový projekt** dialogového okna rozbalte **jiný projekt Types\Extensibility** a potom klikněte na tlačítko **návrháře jazyka specifického pro doménu**.  
+> Šablona DSL diagramy součástí nesouvisí s diagramy komponent UML, které můžete vytvořit pomocí nabídky architektury v sadě Visual Studio. V **nový projekt** dialogového okna rozbalte **jiný projekt Types\Extensibility** a potom klikněte na tlačítko **návrháře jazyka specifického pro doménu**.  
   
  Pokud nejste obeznámeni s touto šablonou řešení, stiskněte klávesu F5 a Experimentujte. Všimněte si zejména vytvořit porty přetažením nástroj portů do komponenty, a zda se můžete připojit porty.  
   
@@ -133,7 +133,7 @@ ms.locfileid: "60068428"
   Třída, která představuje model domény. Je odvozen z <xref:Microsoft.VisualStudio.Modeling.DomainModel>.  
   
 > [!NOTE]
->  To však není stejný jako kořenová třída modelu.  
+> To však není stejný jako kořenová třída modelu.  
   
  Kopírování a odstranit uzávěry definovat další prvky, které je třeba zahrnout při elementu zkopíruje nebo odstranit. Toto chování můžete ovládat nastavením **šíří kopírování** a **šíří odstranit** Vlastnosti rolí na každé straně všech relací. Pokud chcete hodnoty, které mají být dynamicky rozlišit, můžete napsat kód k přepsání metod třídy uzavření. Další informace najdete v části [jak: Program kopírování a vložení chování – přesměrování](../misc/how-to-program-copy-and-paste-behavior-redirect.md).  
   
@@ -344,7 +344,7 @@ explorerWindow.TreeContainer.ObjectModelBrowser.SelectedNode = treeNode;
  Chcete-li tento soubor upravit, upravit `.tt` souboru.  
   
 > [!WARNING]
->  Při úpravě souboru .tt prostředky, jako jsou ikony nebo obrázky, ujistěte se, že prostředek je zahrnuta v sestavení VSIX. V Průzkumníku řešení, vyberte ho a ujistěte se, že **zahrnout do VSIX** vlastnost `True`.  
+> Při úpravě souboru .tt prostředky, jako jsou ikony nebo obrázky, ujistěte se, že prostředek je zahrnuta v sestavení VSIX. V Průzkumníku řešení, vyberte ho a ujistěte se, že **zahrnout do VSIX** vlastnost `True`.  
   
  Tento soubor řídí, jak DSL je zabalená do Visual Studio integrace rozšíření (VSIX). Další informace najdete v tématu [nasazení řešení jazyka specifického pro doménu](../modeling/deploying-domain-specific-language-solutions.md).  
   

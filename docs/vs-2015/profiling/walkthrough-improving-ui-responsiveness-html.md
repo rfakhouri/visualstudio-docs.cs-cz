@@ -19,12 +19,12 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ae2bb442edbeb49de25b44056263607fa4f26111
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7224dc1ddcffc203c930a3ead01c2f541af2122f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071639"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433176"
 ---
 # <a name="walkthrough-improving-ui-responsiveness-html"></a>Návod: Zlepšení rychlosti odezvy uživatelského rozhraní (HTML)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ Tento názorný postup vás provede procesem identifikace a řešení potíží 
 1. V sadě Visual Studio vytvořte nový projekt univerzální JavaScript Windows. (Vyberte **soubor / nový / Project**. Zvolte **JavaScript** v levém podokně a pak zvolte **Windows**, **Windows 10**, pak buď **univerzální**, nebo  **Windows Phone**.  
   
 2. > [!IMPORTANT]
-    >  Aplikace pro Windows 8 se zobrazí výsledky diagnostiky, které jsou uvedené v tomto tématu.  
+    > Aplikace pro Windows 8 se zobrazí výsledky diagnostiky, které jsou uvedené v tomto tématu.  
   
 3. Zvolte jednu z prázdného projektu šablon v prostředním podokně, jako například **prázdnou aplikaci**.  
   

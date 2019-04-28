@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 529adc66ece75219e71d7ae8b17857f5036e1668
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 81ee263b3bb908daace4bf27f86cff710ae90684
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097281"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406789"
 ---
 # <a name="localize-clickonce-applications"></a>Lokalizace aplikací ClickOnce
 Lokalizace je proces zpřístupnění aplikace vhodné pro konkrétní jazykovou verzi. Tento proces zahrnuje text uživatelského rozhraní (UI) pro jazyk specifický pro oblast, pomocí správné datum a formátování měny, nastavení velikosti ovládacích prvků ve formuláři, překlad a zrcadlení ovládací prvky zprava doleva v případě potřeby.
@@ -51,7 +51,7 @@ Lokalizace je proces zpřístupnění aplikace vhodné pro konkrétní jazykovou
  Výhodou tohoto přístupu je, že vytváří jedno nasazení a zjednodušuje váš příběh lokalizované nasazení. V době běhu příslušného satelitního sestavení se použije, v závislosti na výchozí jazykovou verzi operačního systému uživatele Windows. Nevýhod tohoto přístupu je, že stáhne všechny satelitní sestavení pokaždé, když se aplikace instalaci nebo aktualizaci na klientském počítači. Pokud vaše aplikace má velký počet řetězců nebo vaši zákazníci mají pomalé síťové připojení, tento proces může ovlivnit výkon při aktualizaci aplikace.
 
 > [!NOTE]
->  Tento přístup předpokládá, že aplikace nastaví výšku, šířku a umístění ovládacích prvků automaticky tak, aby vyhovovaly velikosti řetězce jiným textovým v různé jazykové verze. Windows Forms obsahuje celou řadu ovládacích prvků a technologie, které vám umožní navrhnout vaše formuláře tak, aby ji snadno lokalizovatelný, včetně <xref:System.Windows.Forms.FlowLayoutPanel> a <xref:System.Windows.Forms.TableLayoutPanel> ovládací prvky také <xref:System.Windows.Forms.Control.AutoSize%2A> vlastnost.  Viz také [jak: Podpora lokalizace ve formulářích Windows pomocí AutoSize a TableLayoutPanel – ovládací prvek](/previous-versions/visualstudio/visual-studio-2010/1zkt8b33(v=vs.100)).
+> Tento přístup předpokládá, že aplikace nastaví výšku, šířku a umístění ovládacích prvků automaticky tak, aby vyhovovaly velikosti řetězce jiným textovým v různé jazykové verze. Windows Forms obsahuje celou řadu ovládacích prvků a technologie, které vám umožní navrhnout vaše formuláře tak, aby ji snadno lokalizovatelný, včetně <xref:System.Windows.Forms.FlowLayoutPanel> a <xref:System.Windows.Forms.TableLayoutPanel> ovládací prvky také <xref:System.Windows.Forms.Control.AutoSize%2A> vlastnost.  Viz také [jak: Podpora lokalizace ve formulářích Windows pomocí AutoSize a TableLayoutPanel – ovládací prvek](/previous-versions/visualstudio/visual-studio-2010/1zkt8b33(v=vs.100)).
 
 ## <a name="generate-one-deployment-for-each-culture"></a>Generovat jedno nasazení pro každou jazykovou verzi
  V této strategii nasazení můžete generovat více nasazení. Každé nasazení zahrnout pouze do satelitního sestavení potřebné pro konkrétní jazykovou verzi a označit nasazení jako specifické pro danou jazykovou verzi.

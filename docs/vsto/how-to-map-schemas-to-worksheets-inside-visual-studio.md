@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ae63dd41e18b9226967b77b8adec2f45d05d9447
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 80a19924aaf4fa0afe8e809006ada7fada0288f3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60057170"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428114"
 ---
 # <a name="how-to-map-schemas-to-worksheets-inside-visual-studio"></a>Postupy: Mapování schémat na listy v prostředí Visual Studio
   Můžete namapovat schématu XML listu listu je otevřen v sadě Visual Studio. Můžete používat stejné nástroje Microsoft Office Excel, které používáte, pokud se sešit otevřít mimo sadu Visual Studio. Office project vytvoří stejné objekty, zda mapování schématu do listu před nebo po vytvoření řešení pro Excel.
@@ -30,7 +30,7 @@ ms.locfileid: "60057170"
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]
 
 > [!NOTE]
->  V řešení pro aplikaci Excel nelze použít s více částmi schémat XML.
+> V řešení pro aplikaci Excel nelze použít s více částmi schémat XML.
 
 ## <a name="to-map-an-xml-schema-to-an-excel-worksheet-in-visual-studio"></a>K mapování schématu XML listu aplikace Excel v sadě Visual Studio
 
@@ -41,7 +41,7 @@ ms.locfileid: "60057170"
 3. Na pásu karet klikněte na tlačítko **Developer** kartu.
 
     > [!NOTE]
-    >  Pokud **Developer** karta není zobrazena, musíte ji nejdříve zobrazit. Další informace najdete v tématu [jak: Zobrazení karty Vývojář na pásu karet](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
+    > Pokud **Developer** karta není zobrazena, musíte ji nejdříve zobrazit. Další informace najdete v tématu [jak: Zobrazení karty Vývojář na pásu karet](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
 
 4. V **XML** klikněte na možnost **zdroj**.
 

@@ -11,12 +11,12 @@ ms.assetid: b4d0ddee-c04b-48dc-ba82-f6068570cef0
 caps.latest.revision: 25
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e210d8c03d3e99cf1e37608f5b65d5a4ab0656f4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 24a4db907ec859c6075c06956f86939047379897
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54771709"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63409361"
 ---
 # <a name="custom-colorable-items"></a>Vlastní položky, které lze zabarvit
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,11 +30,11 @@ Seznam typů můžete přepsat pro barevné označování, jako jsou klíčová 
  Protože zpracovává přepsání uživatele, které lze zabarvit položek v rozhraní IDE **písma a barvy** dialogové okno, je nutné zadat pouze položky vlastní které lze zabarvit s názvem. Tento název se, co se zobrazuje **zobrazení položek** seznamu. Zobrazí položky, které lze zabarvit v abecedním pořadí. K seskupení vlastní služba jazyka, které lze zabarvit položky, můžete začít názvem název jazyka, například **NewLanguage - komentář** a **NewLanguage – klíčové slovo**.  
   
 > [!CAUTION]
->  V které lze zabarvit název pro zabránění kolizím s existující názvy, které lze zabarvit položky, měli byste zahrnout název jazyka. Pokud změníte název jedné z položek aplikace které lze zabarvit během vývoje, je nutné obnovit, který byl vytvořen při prvním získal přístup k které lze zabarvit položky mezipaměti. Můžete resetovat experimentální mezipaměť nástroj CreateExpInstance, který se instaluje se sadou Visual Studio SDK, obvykle v adresáři  
+> V které lze zabarvit název pro zabránění kolizím s existující názvy, které lze zabarvit položky, měli byste zahrnout název jazyka. Pokud změníte název jedné z položek aplikace které lze zabarvit během vývoje, je nutné obnovit, který byl vytvořen při prvním získal přístup k které lze zabarvit položky mezipaměti. Můžete resetovat experimentální mezipaměť nástroj CreateExpInstance, který se instaluje se sadou Visual Studio SDK, obvykle v adresáři  
 >   
->  **C:\Program Files (x86)\Microsoft Visual Studio 14.0\VSSDK\VisualStudioIntegration\Tools\Bin**  
+> **C:\Program Files (x86)\Microsoft Visual Studio 14.0\VSSDK\VisualStudioIntegration\Tools\Bin**  
 >   
->  Resetování mezipaměti, volejte `CreateExpInstance /Reset`. Další informace o CreateExpInstance najdete v tématu [nástroj CreateExpInstance](../../extensibility/internals/createexpinstance-utility.md).  
+> Resetování mezipaměti, volejte `CreateExpInstance /Reset`. Další informace o CreateExpInstance najdete v tématu [nástroj CreateExpInstance](../../extensibility/internals/createexpinstance-utility.md).  
   
  První položka v seznamu položek, které lze zabarvit nikdy odkazován. První položka odpovídá na 0, které lze zabarvit položky index a [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] vždy poskytuje výchozí barvy textu a atributy pro danou položku. Nejjednodušší způsob práci s touto položkou neodkazovaná je zadat zástupný symbol které lze zabarvit položku v seznamu jako první položku.  
   
@@ -71,4 +71,4 @@ Seznam typů můžete přepsat pro barevné označování, jako jsou klíčová 
  [Barevné zvýrazňování syntaxe ve vlastních editorech](../../extensibility/syntax-coloring-in-custom-editors.md)   
  [Barevné zvýrazňování syntaxe ve službě starší verze jazyka](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)   
  [Implementace barevného zvýrazňování syntaxe](../../extensibility/internals/implementing-syntax-coloring.md)   
- [Postupy: Použití předdefinovaných položek které lze zabarvit](../../extensibility/internals/how-to-use-built-in-colorable-items.md)
+ [Postupy: Použití předdefinovaných položek, které lze zabarvit](../../extensibility/internals/how-to-use-built-in-colorable-items.md)

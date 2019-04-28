@@ -20,18 +20,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f4b920706a6a43f52ab861d392efe4b30f28c4ca
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: aee8be6904452cc40ab68130f98cf63caf0fc7fb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056572"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406994"
 ---
 # <a name="how-to-publish-a-project-that-has-a-specific-locale"></a>Postupy: Publikování projektu s konkrétním národním
 Není, že aplikace obsahuje součásti, které mají různá národní prostředí. V tomto scénáři by vytvářet řešení, která se má několik projektů a potom publikovat samostatné projekty pro každé národní prostředí. Tento postup ukazuje, jak pomocí makra publikování první projekt v řešení s použitím národního prostředí "en". Pokud chcete vyzkoušet tuto proceduru s národním prostředí než "en", nezapomeňte nastavit `localeString` v makru tak, aby odpovídaly národní prostředí, který používáte (pro příklad, "de" nebo "de-DE").
 
 > [!NOTE]
->  Při použití tohoto makra umístění publikování by mělo být platná adresa URL nebo Universal Naming Convention (UNC) sdílené složky. Internetové informační služby (IIS) má také nainstalované v počítači. Instalace služby IIS, na **Start** nabídky, klikněte na tlačítko **ovládací panely**. Dvakrát klikněte na panel **přidat nebo odebrat programy**. V **přidat nebo odebrat programy**, klikněte na tlačítko **přidat nebo odebrat součásti Windows**. V **Průvodce součásti Windows**, vyberte **Internetové informační služby (IIS)** zaškrtávací políčko **součásti** seznamu. Pak klikněte na tlačítko **Dokončit** zavřete průvodce.
+> Při použití tohoto makra umístění publikování by mělo být platná adresa URL nebo Universal Naming Convention (UNC) sdílené složky. Internetové informační služby (IIS) má také nainstalované v počítači. Instalace služby IIS, na **Start** nabídky, klikněte na tlačítko **ovládací panely**. Dvakrát klikněte na panel **přidat nebo odebrat programy**. V **přidat nebo odebrat programy**, klikněte na tlačítko **přidat nebo odebrat součásti Windows**. V **Průvodce součásti Windows**, vyberte **Internetové informační služby (IIS)** zaškrtávací políčko **součásti** seznamu. Pak klikněte na tlačítko **Dokončit** zavřete průvodce.
 
 ### <a name="to-create-the-publishing-macro"></a>Chcete-li vytvořit publikování – makro
 

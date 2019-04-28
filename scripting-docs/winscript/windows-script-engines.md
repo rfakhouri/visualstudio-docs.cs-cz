@@ -13,12 +13,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3434e9baaeb483e60087aec1b8536108c8af4471
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: 1acbc364e9ee2a5a4911564eb6d2c7d4c34de458
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58157760"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415996"
 ---
 # <a name="windows-script-engines"></a>Skriptovací stroje systému Windows
 K implementaci Microsoft Windows skriptovací stroj, vytvořte objekt OLE COM, který podporuje následující rozhraní.  
@@ -31,7 +31,7 @@ K implementaci Microsoft Windows skriptovací stroj, vytvořte objekt OLE COM, k
 |IPersist*|Poskytuje podporu trvalosti. Provádění splnit aspoň jednu z následujících rozhraní je vyžadována, pokud [IActiveScriptParse –](../winscript/reference/iactivescriptparse.md) není implementována.<br /><br /> IPersistStorage: Poskytuje podporu pro DATA = {url} atributu ve značce objektu.<br /><br /> IPersistStreamInit: Poskytuje podporu pro stejný jako `IPersistStorage` a také DATA = "datový proud bajtů kódovaný řetězec" atribut ve značce objektu.<br /><br /> IPersistPropertyBag: Poskytuje podporu pro PARAMETRECH = atribut ve značce objektu.|  
   
 > [!NOTE]
->  Je možné, že skriptovací stroj nebude nikdy volána po uložení nebo obnovení stavu skriptu prostřednictvím `IPersist*`. Místo toho [IActiveScriptParse –](../winscript/reference/iactivescriptparse.md) používá volání [IActiveScriptParse::InitNew](../winscript/reference/iactivescriptparse-initnew.md) vytvoření prázdné skriptu, pak skriptlety se přidají a připojených na události s [IActiveScriptParse –:: AddScriptlet](../winscript/reference/iactivescriptparse-addscriptlet.md) a obecné kód se přidá s [IActiveScriptParse::ParseScriptText](../winscript/reference/iactivescriptparse-parsescripttext.md). Skriptovací stroj musí však plně implementovat alespoň jedno `IPersist*` rozhraní (pokud možno `IPersistStreamInit`), protože ostatní hostovat aplikace se může pokusit provést jejich použití.  
+> Je možné, že skriptovací stroj nebude nikdy volána po uložení nebo obnovení stavu skriptu prostřednictvím `IPersist*`. Místo toho [IActiveScriptParse –](../winscript/reference/iactivescriptparse.md) používá volání [IActiveScriptParse::InitNew](../winscript/reference/iactivescriptparse-initnew.md) vytvoření prázdné skriptu, pak skriptlety se přidají a připojených na události s [IActiveScriptParse –:: AddScriptlet](../winscript/reference/iactivescriptparse-addscriptlet.md) a obecné kód se přidá s [IActiveScriptParse::ParseScriptText](../winscript/reference/iactivescriptparse-parsescripttext.md). Skriptovací stroj musí však plně implementovat alespoň jedno `IPersist*` rozhraní (pokud možno `IPersistStreamInit`), protože ostatní hostovat aplikace se může pokusit provést jejich použití.  
   
  Následující části popisují implementaci modul Windows Scripting podrobněji.  
   

@@ -21,12 +21,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1b7ef69d2bb7ac9390c82ffb4e17db27a49637aa
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1e9fd28a946911a019ee0a1e144e7565bac9e004
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60041588"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63402726"
 ---
 # <a name="validate-data-in-datasets"></a>Ověřování dat v datových sadách
 Ověřování dat je proces ověření, hodnot zadaných do datových objektů v souladu s omezeními ve schématu datové sady. Proces ověřování také potvrdí, že jsou tyto hodnoty dle pravidel, které se vytvořily pro vaši aplikaci. Je vhodné ověřit data před odesláním aktualizace do podkladové databáze. Tím se snižuje chyby, jakož i potenciální počet výměn mezi aplikací a databáze.
@@ -54,7 +54,7 @@ Několik události jsou vyvolány <xref:System.Data.DataTable> objektu, když pr
 Ve výchozím nastavení jednotlivé změny do sloupce tedy vyvolává čtyři události. První je <xref:System.Data.DataTable.ColumnChanging> a <xref:System.Data.DataTable.ColumnChanged> události pro určitý sloupec, který mění. Dále jsou <xref:System.Data.DataTable.RowChanging> a <xref:System.Data.DataTable.RowChanged> události. Pokud více změn jsou prováděny na řádek, události, bude vyvolána u každé změny.
 
 > [!NOTE]
->  Řádek dat <xref:System.Data.DataRow.BeginEdit%2A> metoda vypne <xref:System.Data.DataTable.RowChanging> a <xref:System.Data.DataTable.RowChanged> události po každé změně jednotlivých sloupců. V takovém případě není vyvolána událost až <xref:System.Data.DataRow.EndEdit%2A> metoda byla volána, když <xref:System.Data.DataTable.RowChanging> a <xref:System.Data.DataTable.RowChanged> události jsou vyvolány pouze jednou. Další informace najdete v tématu [vypnutí omezení při naplňování datové sady](../data-tools/turn-off-constraints-while-filling-a-dataset.md).
+> Řádek dat <xref:System.Data.DataRow.BeginEdit%2A> metoda vypne <xref:System.Data.DataTable.RowChanging> a <xref:System.Data.DataTable.RowChanged> události po každé změně jednotlivých sloupců. V takovém případě není vyvolána událost až <xref:System.Data.DataRow.EndEdit%2A> metoda byla volána, když <xref:System.Data.DataTable.RowChanging> a <xref:System.Data.DataTable.RowChanged> události jsou vyvolány pouze jednou. Další informace najdete v tématu [vypnutí omezení při naplňování datové sady](../data-tools/turn-off-constraints-while-filling-a-dataset.md).
 
 Události, kterou zvolíte, závisí na to, jak podrobné chtějí ověření bude. Pokud je to důležité zachytit chybu, okamžitě při změně sloupce, sestavení pomocí ověření <xref:System.Data.DataTable.ColumnChanging> událostí. Jinak použijte <xref:System.Data.DataTable.RowChanging> událost, což může vést k zachycení několik chyb najednou. Navíc pokud vaše data strukturovaná, aby hodnota jednoho sloupce ověření na základě obsahu jiného sloupce, proveďte ověření během <xref:System.Data.DataTable.RowChanging> událostí.
 
@@ -80,7 +80,7 @@ Pokud vaše aplikace používá typové datové sady, můžete vytvořit obsluž
 ## <a name="validate-data-during-column-changes"></a>Ověřování dat během úprav sloupců
 
 > [!NOTE]
->  **Návrhář Dataset** vytvoří částečnou třídu, která ověřování lze přidat logiku pro datovou sadu. Datová sada vygenerovaná návrhářem není odstranit ani nezmění žádný kód v dílčí třídě.
+> **Návrhář Dataset** vytvoří částečnou třídu, která ověřování lze přidat logiku pro datovou sadu. Datová sada vygenerovaná návrhářem není odstranit ani nezmění žádný kód v dílčí třídě.
 
 Data můžete ověřit při změně hodnoty ve sloupci data reakcí na <xref:System.Data.DataTable.ColumnChanging> událostí. Po vyvolání Tato událost předává argument události (<xref:System.Data.DataColumnChangeEventArgs.ProposedValue%2A>), který obsahuje hodnotu, která je právě navrhuje se pro aktuální sloupec. Na základě obsahu z `e.ProposedValue`, můžete:
 
@@ -102,7 +102,7 @@ Můžete napsat kód pro každý sloupec, který chcete ověřit, jestli obsahuj
 2. Poklepejte na záhlaví tabulky, kterou chcete ověřit. Tato akce automaticky vytvoří <xref:System.Data.DataTable.RowChanging> obslužná rutina události <xref:System.Data.DataTable> v souboru částečné třídy datové sady.
 
     > [!TIP]
-    >  Dvakrát klikněte na panel vlevo od názvu tabulky k vytvoření obslužné rutiny události měnící řádek. Pokud dvakrát kliknete na název tabulky, můžete ho upravit.
+    > Dvakrát klikněte na panel vlevo od názvu tabulky k vytvoření obslužné rutiny události měnící řádek. Pokud dvakrát kliknete na název tabulky, můžete ho upravit.
 
      [!code-vb[VbRaddataValidating#3](../data-tools/codesnippet/VisualBasic/validate-data-in-datasets_1.vb)]
 
@@ -113,7 +113,7 @@ Můžete napsat kód pro každý sloupec, který chcete ověřit, jestli obsahuj
 2. Poklepejte na záhlaví tabulky, kterou chcete ověřit. Tato akce vytvoří soubor částečné třídy pro <xref:System.Data.DataTable>.
 
     > [!NOTE]
-    >  **Návrhář Dataset** nevytváří automaticky obslužnou rutinu události pro <xref:System.Data.DataTable.RowChanging> událostí. Je nutné vytvořit metodu ke zpracování <xref:System.Data.DataTable.RowChanging> události a spouštění kódu k připojení události do metody inicializace tabulky.
+    > **Návrhář Dataset** nevytváří automaticky obslužnou rutinu události pro <xref:System.Data.DataTable.RowChanging> událostí. Je nutné vytvořit metodu ke zpracování <xref:System.Data.DataTable.RowChanging> události a spouštění kódu k připojení události do metody inicializace tabulky.
 
 3. Zkopírujte následující kód do částečné třídy:
 
@@ -141,7 +141,7 @@ Můžete napsat kód pro každý sloupec, který chcete ověřit, jestli obsahuj
 Má každý řádek v tabulce dat <xref:System.Data.DataRow.RowState%2A> vlastnost, která uchovává informace o aktuálním stavu daného řádku s použitím hodnoty <xref:System.Data.DataRowState> výčtu. Může vrátit změněných řádků z tabulky datovou sadu nebo dat pomocí volání `GetChanges` metodu <xref:System.Data.DataSet> nebo <xref:System.Data.DataTable>. Můžete ověřit, že existují změny před voláním `GetChanges` voláním <xref:System.Data.DataSet.HasChanges%2A> metoda datové sady.
 
 > [!NOTE]
->  Po potvrzení změn do datové sady nebo dat tabulky (voláním <xref:System.Data.DataSet.AcceptChanges%2A> metoda), `GetChanges` metoda nevrátí žádná data. Pokud vaše aplikace potřebuje ke zpracování změněných řádků, je nutné zpracovat změny před voláním `AcceptChanges` metody.
+> Po potvrzení změn do datové sady nebo dat tabulky (voláním <xref:System.Data.DataSet.AcceptChanges%2A> metoda), `GetChanges` metoda nevrátí žádná data. Pokud vaše aplikace potřebuje ke zpracování změněných řádků, je nutné zpracovat změny před voláním `AcceptChanges` metody.
 
 Volání <xref:System.Data.DataSet.GetChanges%2A> metoda datovou sadu nebo data tabulky vrátí novou tabulku datové sady nebo data, která obsahuje pouze záznamy, které se změnily. Pokud chcete získat konkrétních záznamů – například pouze nové záznamy nebo pouze změněné záznamy – můžete předat hodnotu z <xref:System.Data.DataRowState> výčet jako parametr, který se `GetChanges` metody.
 
@@ -183,7 +183,7 @@ Použití <xref:System.Data.DataRowVersion> výčtu pro přístup k různé verz
 Při změně na řádky dat, datová sada zachová původní (<xref:System.Data.DataRowVersion.Original>) i novou (<xref:System.Data.DataRowVersion.Current>) verzi řádku. Například před voláním `AcceptChanges` metoda, vaše aplikace můžou přistupovat k různé verze záznamu (jak je definováno ve <xref:System.Data.DataRowVersion> výčet) a odpovídajícím způsobem zpracovávat změny.
 
 > [!NOTE]
->  Různé verze řádku existují pouze poté, co byl upraven a před ní `AcceptChanges` byla volána metoda. Po `AcceptChanges` byla volána metoda, aktuální a původní verze jsou stejné.
+> Různé verze řádku existují pouze poté, co byl upraven a před ní `AcceptChanges` byla volána metoda. Po `AcceptChanges` byla volána metoda, aktuální a původní verze jsou stejné.
 
 Předání <xref:System.Data.DataRowVersion> hodnotu spolu indexem sloupce (nebo název sloupce jako řetězce) vrátí hodnotu z verze konkrétního řádku tohoto sloupce. Změněný sloupec je rozpoznán během <xref:System.Data.DataTable.ColumnChanging> a <xref:System.Data.DataTable.ColumnChanged> události. Toto je vhodná doba ke kontrole verze různých řádků pro účely ověření. Pokud jste dočasně pozastavili omezení, tyto události nebudou vyvolány a budete muset programově Identifikujte však sloupce, které se změnily. Uděláte to tak iterace <xref:System.Data.DataTable.Columns%2A> kolekce a porovnáním různých <xref:System.Data.DataRowVersion> hodnoty.
 

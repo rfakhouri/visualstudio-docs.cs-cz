@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fcdd4e2253652246e3d0cb3fcd829c8e5d7786bf
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
-ms.translationtype: MT
+ms.openlocfilehash: 2b3138e148ea44371c7bd9b5fb82c583cd00e832
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57869912"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436414"
 ---
 # <a name="create-sharepoint-solutions"></a>Vytvoření řešení služby SharePoint
   Můžete vytvořit aplikace služby SharePoint v sadě Visual Studio jako alternativu k jejich vytváření v SharePoint designeru. Visual Studio podporuje rychlý vývoj služby SharePoint poskytnutím funkcí, jako jsou Rozšířené ladicí nástroje, technologie IntelliSense, dokončování příkazů a šablony projektů. Visual Studio také využívá výhod rozšířených nástrojů založené na rozhraní .NET Framework a jazyků. Projekty SharePoint můžete vytvořit pomocí jazyka Visual Basic nebo Visual C# a můžete vyvíjet aplikace pro SharePoint projekty pomocí jazyka JavaScript.
@@ -25,7 +25,7 @@ ms.locfileid: "57869912"
  Informace o SharePoint 2013 a doplňky pro SharePoint, naleznete v tématu [SharePoint 2013](https://products.office.com/previous-versions/microsoft-sharepoint-2013) a [vytvářet aplikace pro SharePoint](/sharepoint/dev/sp-add-ins/sharepoint-add-ins).
 
 > [!NOTE]
->  Zjistěte, jak používat nové [modelu doplňku Sharepointu](/sharepoint/dev/sp-add-ins/sharepoint-add-ins) rozšířit prostředím SharePoint pro vaše uživatele. Tyto doplňky mají velmi malé pracovníkům ve srovnání s řešení služby SharePoint a je můžete vytvořit s využitím téměř jakékoli webové programování technologie, jako je například HTML5, JavaScript, CSS3 a XML.
+> Zjistěte, jak používat nové [modelu doplňku Sharepointu](/sharepoint/dev/sp-add-ins/sharepoint-add-ins) rozšířit prostředím SharePoint pro vaše uživatele. Tyto doplňky mají velmi malé pracovníkům ve srovnání s řešení služby SharePoint a je můžete vytvořit s využitím téměř jakékoli webové programování technologie, jako je například HTML5, JavaScript, CSS3 a XML.
 
 |||
 |-|-|

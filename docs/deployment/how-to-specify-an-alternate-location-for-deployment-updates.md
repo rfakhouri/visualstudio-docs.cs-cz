@@ -15,18 +15,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 14a1c072cb8415e8e0a20615c0c963e683f48b56
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6d312a213f630c3cc94a5a58ab41ed2014ca13bc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60041351"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406573"
 ---
 # <a name="how-to-specify-an-alternate-location-for-deployment-updates"></a>Postupy: Zadejte alternativní umístění pro aktualizace nasazení
 Můžete nainstalovat vaše [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace zpočátku z disku CD-ROM nebo sdílené složky, ale aplikace musíte hledat pravidelné aktualizace na webu. Můžete zadat alternativní umístění pro aktualizace v manifestu nasazení, tak, aby vaše aplikace můžete aktualizovat přímo z webu po počáteční instalaci.
 
 > [!NOTE]
->  Aplikace musí být nakonfigurován k instalaci místně pro tuto funkci používat. Další informace najdete v tématu [názorný postup: Ruční nasazení aplikace ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Kromě toho, pokud nainstalujete [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] v síti, nastavení způsobí, že alternativního umístění [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] použije toto umístění pro počáteční instalaci a všechny následné aktualizace. Pokud nainstalujete aplikaci místně (například z disku CD), počáteční instalace se provádí pomocí původního média a všechny následné aktualizace použije alternativního umístění.
+> Aplikace musí být nakonfigurován k instalaci místně pro tuto funkci používat. Další informace najdete v tématu [názorný postup: Ruční nasazení aplikace ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Kromě toho, pokud nainstalujete [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] v síti, nastavení způsobí, že alternativního umístění [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] použije toto umístění pro počáteční instalaci a všechny následné aktualizace. Pokud nainstalujete aplikaci místně (například z disku CD), počáteční instalace se provádí pomocí původního média a všechny následné aktualizace použije alternativního umístění.
 
 ### <a name="specify-an-alternate-location-for-updates-by-using-mageuiexe-windows-forms-based-utility"></a>Zadejte alternativní umístění pro aktualizace pomocí MageUI.exe (nástroj založený na Windows Forms)
 
@@ -53,7 +53,7 @@ Můžete nainstalovat vaše [!INCLUDE[ndptecclick](../deployment/includes/ndptec
 3. Uložte soubor.
 
    > [!NOTE]
-   >  Teď musíte znovu podepsat soubor s *Mage.exe*. Další informace najdete v tématu [názorný postup: Ruční nasazení aplikace ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).
+   > Teď musíte znovu podepsat soubor s *Mage.exe*. Další informace najdete v tématu [názorný postup: Ruční nasazení aplikace ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).
 
 ## <a name="net-framework-security"></a>Zabezpečení rozhraní .NET Framework
  Pokud nainstalujete aplikaci z offline média, jako je například disk CD-ROM a je počítač online, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] nejprve zkontroluje adrese URL zadané hodnotou `<deploymentProvider>` značky v manifestu nasazení, aby určilo, jestli umístění aktualizace obsahuje novější verzi aplikace. Pokud ano, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] nainstaluje aplikaci přímo z daného místa, místo v adresáři počáteční instalaci a common language runtime (CLR) určuje důvěryhodnost vaší aplikace pomocí na úrovni `<deploymentProvider>`. Pokud je počítač v režimu offline, nebo `<deploymentProvider>` nedostupný, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] instalace z disku CD-ROM a CLR uděluje vztah důvěryhodnosti podle umístění instalace; pro instalaci z disku CD, to znamená, že vaše aplikace obdrží úplný vztah důvěryhodnosti. Všechny následné aktualizace zdědí tuto úroveň důvěryhodnosti.

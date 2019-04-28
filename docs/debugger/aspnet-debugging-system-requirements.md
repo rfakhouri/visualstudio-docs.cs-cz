@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 455ed4c8fc4129c4e21123d359a088f6eac5cfca
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 63a94f9ae6c35ef304af334737a8f206da911afd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604961"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63402717"
 ---
 # <a name="aspnet-debugging-system-requirements"></a>Ladění ASP.NET: Požadavky na systém
 Toto téma popisuje požadavky na software a zabezpečení pro [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] ladění scénářů:
@@ -49,7 +49,7 @@ Toto téma popisuje požadavky na software a zabezpečení pro [!INCLUDE[vstecas
  Pokud změníte [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] pracovní proces pro spuštění v rámci vlastní uživatelský účet není potřeba mít oprávnění správce na serveru, na kterém běží služba IIS.
 
 > [!CAUTION]
->  Před změnou [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] pracovní proces spuštěn pod jiným účtem, pokud je to možné důsledků zvažte [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] pracovní proces by měl být zneužity během spuštění pod tímto účtem. Uživatelské účty ASPNET a NETWORK SERVICE spustit s minimálními oprávněními, pokud se hacker procesu snížení možné poškození. Pokud potřebujete změnit [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] pracovní proces spuštěn pod účtem, který má větší oprávnění, je možné škody větší.
+> Před změnou [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] pracovní proces spuštěn pod jiným účtem, pokud je to možné důsledků zvažte [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] pracovní proces by měl být zneužity během spuštění pod tímto účtem. Uživatelské účty ASPNET a NETWORK SERVICE spustit s minimálními oprávněními, pokud se hacker procesu snížení možné poškození. Pokud potřebujete změnit [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] pracovní proces spuštěn pod účtem, který má větší oprávnění, je možné škody větší.
 
 ## <a name="see-also"></a>Viz také
 

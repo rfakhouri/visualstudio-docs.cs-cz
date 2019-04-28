@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b464fd4e8c1748adf50e9997dbbac553288043da
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 61e71f31ce887c7e1ea9ec57b0aa3f24a45be364
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088519"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63414284"
 ---
 # <a name="walkthrough-insert-text-into-a-document-from-an-actions-pane"></a>Návod: Vkládání textu do dokumentu z podokna akcí
   Tento návod ukazuje, jak vytvořit podokna akcí v dokumentu aplikace Microsoft Office Word. V podokně Akce obsahuje dva ovládací prvky, shromažďovat vstup a odešlete textu do dokumentu.
@@ -34,7 +34,7 @@ ms.locfileid: "60088519"
 - Zobrazte podokno akcí při otevření aplikace.
 
 > [!NOTE]
->  Váš počítač může v následujících pokynech zobrazovat odlišné názvy nebo umístění některých prvků uživatelského rozhraní sady Visual Studio. Tyto prvky jsou určeny edicí sady Visual Studio a použitým nastavením. Další informace najdete v tématu [přizpůsobení integrovaného vývojového prostředí sady Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
+> Váš počítač může v následujících pokynech zobrazovat odlišné názvy nebo umístění některých prvků uživatelského rozhraní sady Visual Studio. Tyto prvky jsou určeny edicí sady Visual Studio a použitým nastavením. Další informace najdete v tématu [přizpůsobení integrovaného vývojového prostředí sady Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="prerequisites"></a>Požadavky
  K dokončení tohoto návodu budete potřebovat následující komponenty:
@@ -78,7 +78,7 @@ ms.locfileid: "60088519"
 2. Vybrat slovo **název**, bez výběru značku odstavce a klikněte na tlačítko **OK**.
 
     > [!NOTE]
-    >  Značku odstavce by měla být mimo záložky. Pokud značek odstavů nejsou viditelné v dokumentu, klikněte na tlačítko **nástroje** nabídky, přejděte **nástroje sady Microsoft Office Word** a potom klikněte na tlačítko **možnosti**. Klikněte na tlačítko **zobrazení** kartu a vyberte **odstavců** zaškrtávací políčko **značky formátování** část **možnosti** dialogové okno.
+    > Značku odstavce by měla být mimo záložky. Pokud značek odstavů nejsou viditelné v dokumentu, klikněte na tlačítko **nástroje** nabídky, přejděte **nástroje sady Microsoft Office Word** a potom klikněte na tlačítko **možnosti**. Klikněte na tlačítko **zobrazení** kartu a vyberte **odstavců** zaškrtávací políčko **značky formátování** část **možnosti** dialogové okno.
 
 3. V **vlastnosti** okno Změnit **název** vlastnost **Bookmark1** k **showName**.
 

@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: abbffa44ee7fa4db2a03e5f46820f707cae8d4fb
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928371"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62434075"
 ---
 # <a name="sequence-activity-designer"></a>Návrhář aktivity Sequence
 

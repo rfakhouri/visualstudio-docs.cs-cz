@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c5a6e0ae31068144cb7de5ff83ac562db8f833d9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1063a94ad2ff08942ec191e9162b4b2d506bb048
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045137"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63403449"
 ---
 # <a name="working-with-elements-in-xaml-designer"></a>Práce s elementy v Návrháři XAML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -94,7 +94,7 @@ Můžete přidat prvky – ovládací prvky, rozložení a tvary – do vaší a
      Když otevřete okrajů a není nastavená na opačnou okraj, je opačné okraj nastaven na správnou hodnotu podle umístění prvku v návrhové ploše. Opačné okrajů, jako **vlevo** a **vpravo** okrajů, alespoň jednu vlastnost je vždycky nastavený.  
   
     > [!IMPORTANT]
-    >  Prvky umístit do některé kontejnery rozložení, jako například <xref:Windows.UI.Xaml.Controls.Canvas>, nemají doplňků pro úpravy rozpětí. Umístí prvky uvnitř <xref:Windows.UI.Xaml.Controls.StackPanel> mají doplňků pro úpravy rozpětí pro buď levého a pravého okraje nebo horní a dolní okraj, v závislosti na orientaci ovládacího prvku `StackPanel`.  
+    > Prvky umístit do některé kontejnery rozložení, jako například <xref:Windows.UI.Xaml.Controls.Canvas>, nemají doplňků pro úpravy rozpětí. Umístí prvky uvnitř <xref:Windows.UI.Xaml.Controls.StackPanel> mají doplňků pro úpravy rozpětí pro buď levého a pravého okraje nebo horní a dolní okraj, v závislosti na orientaci ovládacího prvku `StackPanel`.  
   
 ## <a name="grouping-and-ungrouping-elements"></a>Seskupování a oddělování elementů  
  Seskupení dvou nebo více prvků v Návrháři XAML vytvoří nový kontejner rozložení a umístí tyto prvky v rámci tohoto kontejneru. Umístěním dvou nebo více prvků společně v kontejneru rozložení umožňuje snadno vybrat, přesun a transformaci skupiny, jako kdyby byly prvky v dané skupině jeden element. Seskupení je také užitečné pro identifikaci prvků, které se vztahují k sobě navzájem nějakým způsobem, jako je například tlačítka, která tvoří prvek navigace. Když oddělíte prvků, je jednoduše provedeno odstranění kontejner rozložení, který obsahoval prvky.  
@@ -106,7 +106,7 @@ Můžete přidat prvky – ovládací prvky, rozložení a tvary – do vaší a
 2. Klikněte pravým tlačítkem na vybrané elementy, přejděte na **seskupit do**a potom klikněte na typ kontejner rozložení, ve kterém chcete bude skupina nacházet.  
   
     > [!TIP]
-    >  Pokud vyberete <xref:Windows.UI.Xaml.Controls.Viewbox>, <xref:Windows.UI.Xaml.Controls.Border>, nebo <xref:Windows.UI.Xaml.Controls.ScrollViewer> k seskupení elementů, prvky jsou umístěny v novém <xref:Windows.UI.Xaml.Controls.Grid> panelu v rámci <xref:Windows.UI.Xaml.Controls.Viewbox>, <xref:Windows.UI.Xaml.Controls.Border>, nebo <xref:Windows.UI.Xaml.Controls.ScrollViewer>. Pokud oddělíte prvky v jednom z těchto kontejnerů rozložení, pouze <xref:Windows.UI.Xaml.Controls.Viewbox>, <xref:Windows.UI.Xaml.Controls.Border>, nebo <xref:Windows.UI.Xaml.Controls.ScrollViewer> se odstraní a <xref:Windows.UI.Xaml.Controls.Grid> panelu zůstane. Chcete-li odstranit `Grid` panelu, znovu zrušit seskupení elementů.  
+    > Pokud vyberete <xref:Windows.UI.Xaml.Controls.Viewbox>, <xref:Windows.UI.Xaml.Controls.Border>, nebo <xref:Windows.UI.Xaml.Controls.ScrollViewer> k seskupení elementů, prvky jsou umístěny v novém <xref:Windows.UI.Xaml.Controls.Grid> panelu v rámci <xref:Windows.UI.Xaml.Controls.Viewbox>, <xref:Windows.UI.Xaml.Controls.Border>, nebo <xref:Windows.UI.Xaml.Controls.ScrollViewer>. Pokud oddělíte prvky v jednom z těchto kontejnerů rozložení, pouze <xref:Windows.UI.Xaml.Controls.Viewbox>, <xref:Windows.UI.Xaml.Controls.Border>, nebo <xref:Windows.UI.Xaml.Controls.ScrollViewer> se odstraní a <xref:Windows.UI.Xaml.Controls.Grid> panelu zůstane. Chcete-li odstranit `Grid` panelu, znovu zrušit seskupení elementů.  
   
 #### <a name="to-ungroup-elements-and-delete-the-layout"></a>Zrušit seskupení elementů a odstranit rozložení  
   

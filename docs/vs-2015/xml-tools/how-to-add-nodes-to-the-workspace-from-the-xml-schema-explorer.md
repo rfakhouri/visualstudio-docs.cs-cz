@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6d4afaab4b0e687d1343e810002ae4ad46c869b5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1fef367b36a683111369b656c8c1ba5a285fe6df
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60043971"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417470"
 ---
 # <a name="how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer"></a>Postupy: Přidání uzlů do pracovního prostoru z Průzkumníka schémat XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "60043971"
 Toto téma vysvětluje, jak přidat uzly do [pracovní prostor návrháře schémat XML](../xml-tools/xml-schema-designer-workspace.md) z Průzkumníka schémat XML. Toho lze dosáhnout pomocí přetahování uzlů z Průzkumníka schémat XML do zobrazení o návrháři XSD nebo pomocí místní nabídky Průzkumníka schémat XML. Můžete také přidat uzly, kteří jsou zvýrazněni v důsledku vyhledávání prováděné Průzkumníka schémat XML. Další informace najdete v tématu [jak: Přidání uzlů výsledků hledání v sadě schémat do pracovního prostoru](../xml-tools/how-to-add-schema-set-search-result-nodes-to-the-workspace.md).  
   
 > [!NOTE]
->  Lze přidat pouze globální uzly [pracovní prostor návrháře schémat XML](../xml-tools/xml-schema-designer-workspace.md).  
+> Lze přidat pouze globální uzly [pracovní prostor návrháře schémat XML](../xml-tools/xml-schema-designer-workspace.md).  
   
 ### <a name="to-add-nodes-through-the-xml-explorer-context-menu"></a>Přidání uzlů do místní nabídky Průzkumníka XML  
   

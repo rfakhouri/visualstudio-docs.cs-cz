@@ -14,12 +14,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 442181aa78e539471aa35feb96ec7503e09a97ec
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 53f65b54888c254c93e72aafa00e239f95d85ddf
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60065828"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63416858"
 ---
 # <a name="how-to-customize-class-diagrams-class-designer"></a>Postupy: Přizpůsobení diagramů tříd (návrhář tříd)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Můžete změnit způsob, jak diagramy tříd zobrazují informace. Můžete př
  Můžete například upravit úroveň zvětšení celého diagramu tříd, změnit způsob seskupování a řazení jednotlivých členů typu, skrýt nebo zobrazit vztahy a přesunout jednotlivé typy nebo množiny typů kamkoli v diagramu.  
   
 > [!NOTE]
->  Upravením způsobu, jakým se tvary v diagramu zobrazují, nezměníte základní kód pro typy znázorněné v diagramu.  
+> Upravením způsobu, jakým se tvary v diagramu zobrazují, nezměníte základní kód pro typy znázorněné v diagramu.  
   
  Části, které obsahují členy typu, jako je například část Vlastnosti ve třídě, se nazývají oddíly. Jednotlivé oddíly a členy typu můžete skrýt nebo zobrazit.  
   
@@ -64,7 +64,7 @@ Můžete změnit způsob, jak diagramy tříd zobrazují informace. Můžete př
      Zadejte hodnotu přiblížení. Můžete použít **přiblížení** rozevíracím seznamu nebo zadejte platnou úroveň přiblížení (platný rozsah je od 10 do 400 %).  
   
     > [!NOTE]
-    >  Změna úrovně přiblížení neovlivní měřítko výtisku vašeho diagramu tříd.  
+    > Změna úrovně přiblížení neovlivní měřítko výtisku vašeho diagramu tříd.  
   
 ## <a name="CustomizeGroupingSorting"></a> Přizpůsobení seskupování a řazení členů typu  
   

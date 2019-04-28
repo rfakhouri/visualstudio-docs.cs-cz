@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 70563378ca3599c1e558cd9e359979383e10f78b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: a2ae77a390553fc95c7a29d24eff70fde231b7b0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56721515"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63410024"
 ---
 # <a name="anatomy-of-a-vsix-package"></a>Anatomie balíčku VSIX
 Je balíčku VSIX *VSIX* soubor, který obsahuje jeden nebo více rozšíření sady Visual Studio spolu s metadaty sady Visual Studio používá ke klasifikaci a nainstalovat rozšíření. Tato metadata jsou obsaženy v manifestu VSIX a *[Content_Types] .xml* souboru. Balíčku VSIX může obsahovat také jeden nebo více *Extension.vsixlangpack* soubory k poskytování lokalizované textu instalace a může obsahovat další balíčky VSIX nainstalovat závislosti.
@@ -25,7 +25,7 @@ Je balíčku VSIX *VSIX* soubor, který obsahuje jeden nebo více rozšíření 
  Formát balíčku VSIX dodržuje standardní konvence Open Packaging (OPC). Balíček obsahuje binární soubory a podpůrné soubory, spolu s *[Content_Types] .xml* souboru a *VSIX* soubor manifestu. Jeden VSIX balíček může obsahovat výstupu více projektů nebo dokonce více balíčků, které mají své vlastní manifest.
 
 > [!NOTE]
->  Názvy souborů součástí balíčků VSIX nesmí obsahovat mezery ani znaky, které jsou vyhrazené v identifikátory URI (Uniform Resource), jako jsou definované v části [ \[RFC2396\]](http://go.microsoft.com/fwlink/?LinkId=90339).
+> Názvy souborů součástí balíčků VSIX nesmí obsahovat mezery ani znaky, které jsou vyhrazené v identifikátory URI (Uniform Resource), jako jsou definované v části [ \[RFC2396\]](http://go.microsoft.com/fwlink/?LinkId=90339).
 
 ## <a name="the-vsix-manifest"></a>VSIX manifest
  VSIX manifest obsahuje informace o rozšíření k instalaci a způsobem VSX schématu. Další informace najdete v tématu [referenční dokumentace schématu 1.0 rozšíření VSIX](https://msdn.microsoft.com/library/76e410ec-b1fb-4652-ac98-4a4c52e09a2b). Manifest VSIX příklad naleznete v tématu [PackageManifest – element (kořenový element, schéma VSX)](https://msdn.microsoft.com/library/f8ae42ba-775a-4d2b-976a-f556e147f187).

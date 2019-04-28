@@ -10,12 +10,12 @@ helpviewer_keywords:
 ms.assetid: 3bac375d-8bd5-41be-a8de-32eb33c5cfac
 caps.latest.revision: 20
 manager: jillfra
-ms.openlocfilehash: 833783267c70c0a201e4b84bc5031bce517dc0a2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b66724542d45aa6f57b7c2748c7c1cab1ec8c064
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054479"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436567"
 ---
 # <a name="support-for-settings-categories"></a>Podpora pro kategorie nastavení
 Nastavení kategorie se skládá ze skupiny z možností, které přizpůsobení integrovaného vývojového prostředí (IDE). Například nastavení můžete řídit rozložení [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] windows a obsah nabídky. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
@@ -25,7 +25,7 @@ Nastavení kategorie se skládá ze skupiny z možností, které přizpůsobení
  Ovládací prvek stromové struktury v navigačním podokně na této stránce je uvedený seznam kategorií. Kategorie je skupina souvisejících nastavení, které se zobrazí jako "vlastní nastavení bod", tedy jako zaškrtávací políčko. Pomocí těchto zaškrtávacích políček vyberte kategorie, které chcete zachovat v souboru .vsettings. Průvodce vám umožní název souboru .vsettings a zadejte jeho cestu.  
   
 > [!NOTE]
->  Nastavení se uloží nebo obnovili kategorii a názvy jednotlivých nastavení nejsou zobrazeny v průvodci.  
+> Nastavení se uloží nebo obnovili kategorii a názvy jednotlivých nastavení nejsou zobrazeny v průvodci.  
   
  Rozhraní spravovaného balíčku (MPF) podporuje vytváření kategorie nastavení minimální další kód.  
   
@@ -48,7 +48,7 @@ Nastavení kategorie se skládá ze skupiny z možností, které přizpůsobení
  Cesta v registru nastavení kategorie je určen tím, že zkombinujete <xref:Microsoft.VisualStudio.Shell.Package.ApplicationRegistryRoot%2A>, slovo UserSettings, kategorie nastavení a název vlastních nastavení bodu. Názvy nastavení kategorie a vlastní nastavení bodu jsou připojené k a oddělená podtržítkem tvořit canonical, nelokalizovaný název, který se zobrazí v registru. Například vlastní nastavení přejděte název "nastavení" a ApplicationRegistryRoot HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp Pokud kategorie nastavení je "My kategorie", a pak nastavení kategorie má klíč registru, HKEY_LOCAL_ MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\UserSettings\My Category_My nastavení.  
   
 > [!NOTE]
->  Název v kanonickém tvaru nezobrazí v uživatelském rozhraní (UI). Je použito k přidružení čitelný název z kategorie nastavení, podobně jako programový identifikátor (ProgID).  
+> Název v kanonickém tvaru nezobrazí v uživatelském rozhraní (UI). Je použito k přidružení čitelný název z kategorie nastavení, podobně jako programový identifikátor (ProgID).  
   
 ### <a name="settings-category-attribute"></a>Atribut kategorie nastavení  
  <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> Určuje mapování kategorií, které mají vlastní nastavení okamžiky **Průvodce importem a exportem nastavení** přidruží kategorii sady VSPackage, která ho obsahuje. Předpokládejme následující fragment kódu:  

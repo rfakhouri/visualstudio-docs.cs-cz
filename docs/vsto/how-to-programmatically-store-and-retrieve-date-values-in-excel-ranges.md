@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 89c4a4598b92096d968225f7420d46244aeca3dc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3a2354df7027f3aa73f13e830b9a85895e54c920
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082903"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419287"
 ---
 # <a name="how-to-programmatically-store-and-retrieve-date-values-in-excel-ranges"></a>Postupy: Programově ukládání a načítání hodnot data do oblastí aplikace Excel
   Můžete ukládat a načítat hodnoty v <xref:Microsoft.Office.Tools.Excel.NamedRange> ovládací prvek nebo rozsah objekt nativní aplikace Excel.
@@ -34,7 +34,7 @@ ms.locfileid: "60082903"
  Pokud uložíte hodnotu data, která nebo po 1/1/1900 v rozsahu pomocí nástroje pro vývoj pro Office v sadě Visual Studio, je uložen ve formátu OLE Automation (OA). Je nutné použít <xref:System.DateTime.FromOADate%2A> metody k načtení hodnoty data OLE Automation (OA). Pokud je datum starší než 1/1/1900, uloží se jako řetězec.
 
 > [!NOTE]
->  Data aplikace Excel se liší od data OLE Automation na prvních dvou měsíců 1900. Existují také rozdíly pokud **1904 datum systému** zaškrtnutá možnost. Následující příklady kódu se nezabývají tyto rozdíly.
+> Data aplikace Excel se liší od data OLE Automation na prvních dvou měsíců 1900. Existují také rozdíly pokud **1904 datum systému** zaškrtnutá možnost. Následující příklady kódu se nezabývají tyto rozdíly.
 
 ## <a name="use-a-namedrange-control"></a>Použití ovládacího prvku NamedRange
 

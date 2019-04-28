@@ -9,12 +9,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a614a90fe6388d9189d2b63e02f9bf63f83f0b7b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: e949dd566a065b266bfdbf8eae36a099fa229ef7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54774175"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63403419"
 ---
 # <a name="wpf-data-binding-with-linq-to-xml-overview"></a>Datová vazba WPF s LINQ to XML přehled
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,7 +61,7 @@ Toto téma popisuje funkce vazby dynamických dat v <xref:System.Xml.Linq> oboru
  Tyto dynamické vlastnosti jsou speciální vlastnosti za běhu, které duplikují funkce stávajících metod a vlastností v <xref:System.Xml.Linq.XAttribute> a <xref:System.Xml.Linq.XElement> třídy. Byly přidány do těchto tříd výhradně, aby se mohly tak, aby fungoval jako zdroj dynamických dat pro WPF. Chcete-li splňuje tyto potřeby implementovat tyto dynamické vlastnosti oznámení o změnách. V další části, se poskytuje podrobné referenční pro tyto dynamické vlastnosti [XML dynamické vlastnosti LINQ to](../designers/linq-to-xml-dynamic-properties.md).  
   
 > [!NOTE]
->  Mnohé standardní veřejné vlastnosti v různých tříd v nalezen <xref:System.Xml.Linq> obor názvů, je možné pro jednorázové datovou vazbu. Nezapomeňte však, že zdrojový ani cílový dynamicky aktualizují v rámci tohoto režimu.  
+> Mnohé standardní veřejné vlastnosti v různých tříd v nalezen <xref:System.Xml.Linq> obor názvů, je možné pro jednorázové datovou vazbu. Nezapomeňte však, že zdrojový ani cílový dynamicky aktualizují v rámci tohoto režimu.  
   
 ### <a name="accessing-dynamic-properties"></a>Přístup k dynamické vlastnosti  
  Dynamické vlastnosti v <xref:System.Xml.Linq.XAttribute> a <xref:System.Xml.Linq.XElement> třídy nelze získat přístup, jako je standardní vlastnosti. Například CLS CLR jazyků C#, nemohou být:  

@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0dec32c47354f43cee33077985c122c92aaebc6f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: f70e8301b6a44397d351345fe3cb8fe0c3d3426e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56718115"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63414032"
 ---
 # <a name="idebugcoreserver3getserverfriendlyname"></a>IDebugCoreServer3::GetServerFriendlyName
 Načte popisný název serveru.
@@ -42,7 +42,7 @@ int GetServerFriendlyName(
  [out] Vrátí popisný název serveru.
 
 > [!NOTE]
->  Volající zodpovídá za uvolnění řetězec.
+> Volající zodpovídá za uvolnění řetězec.
 
 ## <a name="return-value"></a>Návratová hodnota
  Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.

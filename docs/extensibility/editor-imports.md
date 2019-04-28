@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 99619efa5181fbcf299e99cde60b8879731c0c74
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: b11ef172cdd8fb4b1c72b72b43198ad7ad8f74e5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56715632"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417343"
 ---
 # <a name="editor-imports"></a>Importy do editoru
 Můžete naimportovat celou řadou služeb editoru, objekty pro vytváření a zprostředkovatelů, které poskytují rozšíření s různými druhy přístup k základní editor. Například můžete importovat <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> abyste měli <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigator> pro daný typ obsahu. (Tento Navigátor umožňuje provádět různé druhy hledání na textovou vyrovnávací paměť).
@@ -23,7 +23,7 @@ Můžete naimportovat celou řadou služeb editoru, objekty pro vytváření a z
  Použití editoru importu, importujete ho jako pole nebo vlastnosti třídy, která se exportuje součást Managed Extensibility Framework.
 
 > [!NOTE]
->  Další informace o rozhraní Managed Extensibility Framework, naleznete v tématu [Managed Extensibility Framework (MEF)](/dotnet/framework/mef/index).
+> Další informace o rozhraní Managed Extensibility Framework, naleznete v tématu [Managed Extensibility Framework (MEF)](/dotnet/framework/mef/index).
 
 ## <a name="import-syntax"></a>Importovat syntaxe
  Následující příklad ukazuje, jak importovat editoru možnosti výrobní službu.
@@ -73,7 +73,7 @@ internal SVsServiceProvider ServiceProvider = null;
 |------------|--------------|
 |<xref:Microsoft.VisualStudio.Utilities.IFileExtensionRegistryService>|Vztah mezi přípony souborů a <xref:Microsoft.VisualStudio.Utilities.IContentType> objekty.|
 |<xref:Microsoft.VisualStudio.Utilities.IContentTypeRegistryService>|Kolekce <xref:Microsoft.VisualStudio.Utilities.IContentType> objekty.|
-|<xref:Microsoft.VisualStudio.Editor.IVsFontsAndColorsInformationService>|<xref:Microsoft.VisualStudio.Editor.IVsFontsAndColorsInformation>objekty.|
+|<xref:Microsoft.VisualStudio.Editor.IVsFontsAndColorsInformationService>|<xref:Microsoft.VisualStudio.Editor.IVsFontsAndColorsInformation> Objekty.|
 |<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService>|Mnoho objektů editoru adaptéru:<br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferCoordinator><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>|
 |<xref:Microsoft.VisualStudio.Text.IncrementalSearch.IIncrementalSearchFactoryService>|<xref:Microsoft.VisualStudio.Text.IncrementalSearch.IIncrementalSearch> Objekt pro zadaný text zobrazení.|
 |<xref:Microsoft.VisualStudio.Text.ITextBufferFactoryService>|<xref:Microsoft.VisualStudio.Text.ITextBuffer>.|

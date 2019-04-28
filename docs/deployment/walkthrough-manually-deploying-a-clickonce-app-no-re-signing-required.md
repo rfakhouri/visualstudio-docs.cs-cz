@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 773a9f5a990b3432484c1ff13012b173c9fac1cb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 50febcb027ec51b62bdde7ea06a7112470cdc247
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60076221"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63405840"
 ---
 # <a name="walkthrough-manually-deploy-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information"></a>Návod: Ruční nasazení aplikace ClickOnce, jež nevyžaduje opětovné podepsání a které zachovává údaje o poskytovateli
 Když vytvoříte [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace a pak mu přidělte zákazníkovi k publikování a nasazení, zákazník tradičně museli aktualizovat manifest nasazení a znovu podepsat. Který je stále upřednostňuje ve většině případů, rozhraní .NET Framework 3.5 vám umožní vytvořit [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] nasazení, která je možné nasadit pomocí zákazníky bez nutnosti znovu vygenerovat nový manifest nasazení. Další informace najdete v tématu [ClickOnce – nasazení aplikace pro testování a produkční servery bez opětovného podepsání](../deployment/deploying-clickonce-applications-for-testing-and-production-without-resigning.md).
@@ -35,7 +35,7 @@ Když vytvoříte [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.m
  Když vytvoříte [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace a pak mu přidělte zákazníkovi k publikování a nasazení, aplikace můžete použít značky zákazníka nebo můžete zachovat brandingu. Pokud aplikace je jednou vlastní aplikací, můžete chtít zachovat brandingu. Pokud aplikace je velmi upravili pro každého zákazníka, můžete chtít použít značky zákazníka. Rozhraní .NET Framework 3.5 umožňuje zachovat branding, informace o vydavateli a podpis zabezpečení při nasazení aplikace organizace. Další informace najdete v tématu [aplikací vytvořte ClickOnce k ostatním uživatelům nasadit](../deployment/creating-clickonce-applications-for-others-to-deploy.md).
 
 > [!NOTE]
->  V tomto návodu vytvoříte nasazení ručně pomocí nástroje příkazového řádku *Mage.exe* nebo grafického nástroje *MageUI.exe*. Další informace o ruční nasazení najdete v tématu [názorný postup: Ruční nasazení aplikace ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).
+> V tomto návodu vytvoříte nasazení ručně pomocí nástroje příkazového řádku *Mage.exe* nebo grafického nástroje *MageUI.exe*. Další informace o ruční nasazení najdete v tématu [názorný postup: Ruční nasazení aplikace ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).
 
 ## <a name="prerequisites"></a>Požadavky
  K provedení kroků v tomto návodu budete potřebovat následující:
@@ -51,7 +51,7 @@ Když vytvoříte [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.m
 2. Vytvořte adresář po aktuální verzi vašeho nasazení. Pokud je to poprvé, že nasazujete aplikaci, bude pravděpodobně zvolíte **1.0.0.0**.
 
    > [!NOTE]
-   >  Verze vašeho nasazení může být liší od verze souborů aplikace.
+   > Verze vašeho nasazení může být liší od verze souborů aplikace.
 
 3. Vytvořte podadresář s názvem **bin** a zkopírujte všechny soubory aplikací, včetně spustitelných souborů, sestavení, prostředky a datové soubory.
 
@@ -101,7 +101,7 @@ Když vytvoříte [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.m
 3. Vytvořte podadresář s názvem aktuální verzi vašeho nasazení. Pokud je to poprvé, že nasazujete aplikaci, bude pravděpodobně zvolíte **1.0.0.0**.
 
    > [!NOTE]
-   >  Verze vašeho nasazení může být liší od verze souborů aplikace.
+   > Verze vašeho nasazení může být liší od verze souborů aplikace.
 
 4. Přesunout \\ **bin** adresář do adresáře, který jste vytvořili v kroku 2.
 

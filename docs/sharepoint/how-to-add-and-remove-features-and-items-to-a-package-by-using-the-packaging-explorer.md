@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f62181909afef7f404270a085f9bbb1a5341c115
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ae44f7d4631316fc1250a79b9a8424c3731f1329
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104457"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431227"
 ---
 # <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer"></a>Postupy: Přidání nebo odebrání funkcí a položek z balíku pomocí Průzkumníku balíčků
   Pokud chcete nakonfigurovat balíček pro nasazení služby SharePoint položky a funkce, můžete Průzkumníku balíčků. Můžete upravit položky Sharepointového projektu a funkce v souboru WSP.
@@ -51,7 +51,7 @@ ms.locfileid: "60104457"
     - Otevřete místní nabídku pro funkci, zvolte **Vyjmout**, otevřete místní nabídku pro projekt, do kterého chcete přesunout tuto funkci a klikněte na tlačítko **vložit**.
 
     > [!NOTE]
-    >  Tento postup použijte, pokud máte více než jeden projekt služby SharePoint ve vašem řešení.
+    > Tento postup použijte, pokud máte více než jeden projekt služby SharePoint ve vašem řešení.
 
 ## <a name="validate-a-feature-or-package"></a>Ověření funkcí nebo balíčku
  Tím, že ověří soubory lze identifikovat případné problémy v součásti služby SharePoint a balíčky. Upozornění a chyby se zobrazují v okně Výstup a v okně Seznam chyb.

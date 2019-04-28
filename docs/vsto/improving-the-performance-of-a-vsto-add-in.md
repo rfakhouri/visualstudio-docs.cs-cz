@@ -10,12 +10,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: df17245a398c71e7ae9ce0077352f47b0b70ab9b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2add0dfced6a3b8e8263dafe133ee3a2f86637f5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071818"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420941"
 ---
 # <a name="improve-the-performance-of-a-vsto-add-in"></a>Zvýšení výkonu doplňku VSTO
   Může dát uživatelům lepší prostředí pomocí optimalizace doplňků VSTO, které vytvoříte pro Office, aplikace tak, aby jejich rychlé spuštění, vypnutí, otevřete položky a provádět další úlohy. Pokud váš doplněk VSTO pro Outlook, může snížit pravděpodobnost, že váš doplněk VSTO bude zakázána z důvodu nízký výkon. Můžete zvýšit výkon vašeho doplňku VSTO pomocí implementace následujících strategií:
@@ -93,7 +93,7 @@ ms.locfileid: "60071818"
 - Ověření digitálních podpisů manifesty nasazení.
 
   > [!NOTE]
-  >  Tento přístup není nutné v případě nasazení doplňku VSTO do zabezpečeného umístění v počítačích uživatelů.
+  > Tento přístup není nutné v případě nasazení doplňku VSTO do zabezpečeného umístění v počítačích uživatelů.
 
   Další informace najdete v tématu [nasazení řešení Office s použitím Instalační služby systému Windows](../vsto/deploying-an-office-solution-by-using-windows-installer.md).
 
@@ -111,7 +111,7 @@ ms.locfileid: "60071818"
  Vezměte v úvahu provádění časově náročných úloh (jako je například dlouhotrvající úlohy, připojení k databázi nebo jiné druhy volání sítě) v samostatném vlákně. Další informace najdete v tématu [podpora v systému Office práce s vlákny](../vsto/threading-support-in-office.md).
 
 > [!NOTE]
->  Veškerý kód, který volá do objektového modelu Office musí být spuštěn v hlavním vlákně.
+> Veškerý kód, který volá do objektového modelu Office musí být spuštěn v hlavním vlákně.
 
 ## <a name="see-also"></a>Viz také:
 

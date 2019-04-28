@@ -12,12 +12,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 66d6aa6a11ef0ce308c5ba2b089aaa8170b6441f
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
-ms.translationtype: MT
+ms.openlocfilehash: 30a33a434540fded8daab0628d0bd6dd7fb0ff38
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54760067"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412270"
 ---
 # <a name="logical-operators-in-search-expressions"></a>Logické operátory ve vyhledávacích výrazech
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "54760067"
 Pomocí logických operátorů, můžete upřesnit vyhledávání pro obsah tak, že vytvoříte složitější hledaných výrazů od těch jednodušší. Jako v následující tabulce jsou uvedeny, logické operátory určují, jak více podmínek vyhledávání by měly být kombinované vyhledávacího dotazu.  
   
 > [!IMPORTANT]
->  Logické operátory je nutné zadat velkými písmeny pro vyhledávače rozpoznány.  
+> Logické operátory je nutné zadat velkými písmeny pro vyhledávače rozpoznány.  
   
 |K vyhledání|Použití|Příklad|Výsledek|  
 |-------------------|---------|-------------|------------|  

@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d053bcd5e8b1824334f9953ac14881fdc0315be
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 613f8828cf7e966fb66468588c73e1a8b9dbdd3d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60083333"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63414738"
 ---
 # <a name="customizing-the-properties-window"></a>Přizpůsobení okna Vlastnosti
 Ve svém jazyce specifického pro doménu (DSL) v sadě Visual Studio můžete přizpůsobit vzhled a chování v okně Vlastnosti. V definici DSL definovat vlastnosti domény na každou doménovou třídu. Ve výchozím nastavení, když vyberete instance třídy v diagramu nebo v Průzkumníku modelu každé domény je uvedena vlastnost v okně Vlastnosti. To vám umožní zobrazit a upravit hodnoty vlastnosti domény, i když ještě je mapována na pole obrazec v diagramu.
@@ -59,7 +59,7 @@ Ve svém jazyce specifického pro doménu (DSL) v sadě Visual Studio můžete p
  Chcete-li předat vlastnost, definovat popisovač typu domény. Pokud máte doménového vztahu mezi dvěma doménovými třídami, můžete nastavení vlastnosti domény první třídy k hodnotě vlastnosti domény v druhém doménové třídy popisovač typu domény. Například, pokud máte vztah mezi **knihy** doménové třídy a **Autor** doménovou třídu, můžete použít popisovač typu domény provádět **název** vlastnost Knihy **Autor** se zobrazí v okně Vlastnosti, když uživatel vybere knihy.
 
 > [!NOTE]
->  Vlastnost předávání má vliv pouze v okně Vlastnosti, když uživatel upravuje model. Doménová vlastnost, která nedefinuje přijímající třídy. Pokud chcete získat přístup k vlastnosti předané domény v další části definice DSL nebo v programovém kódu, musí přístup k elementu předávání.
+> Vlastnost předávání má vliv pouze v okně Vlastnosti, když uživatel upravuje model. Doménová vlastnost, která nedefinuje přijímající třídy. Pokud chcete získat přístup k vlastnosti předané domény v další části definice DSL nebo v programovém kódu, musí přístup k elementu předávání.
 
  Následující postup předpokládá, že jste vytvořili DSL. První několika krocích vytvořit souhrn požadavky.
 
@@ -117,7 +117,7 @@ Ve svém jazyce specifického pro doménu (DSL) v sadě Visual Studio můžete p
         Nový záznam se zobrazí v části **typy domén** uzlu.
 
        > [!WARNING]
-       >  Položka nabídky není na uzlu root DSL **typy domén** uzlu.
+       > Položka nabídky není na uzlu root DSL **typy domén** uzlu.
 
    2. V okně Vlastnosti nastavte název a obor názvů nového typu.
 
@@ -177,7 +177,7 @@ Ve svém jazyce specifického pro doménu (DSL) v sadě Visual Studio můžete p
   Můžete také zadat grafická reprezentace hodnotu vlastnosti, která se zobrazí v mřížce vlastností. Chcete-li to provést, přepište `GetPaintValueSupported`, a `PaintValue`.  Další informace naleznete v tématu <xref:System.Drawing.Design.UITypeEditor>.
 
 > [!NOTE]
->  Přidejte kód v samostatném souboru kódu v **Dsl** projektu.
+> Přidejte kód v samostatném souboru kódu v **Dsl** projektu.
 
  Příklad:
 
@@ -207,7 +207,7 @@ internal class TextFileNameEditor : System.Windows.Forms.Design.FileNameEditor
  Můžete zadat seznam hodnot pro uživatele lze vybírat.
 
 > [!NOTE]
->  Tento postup obsahuje seznam hodnot, které můžete změnit za běhu. Pokud chcete poskytnout seznam, který se nemění, zvažte místo toho pomocí Výčtový typ jako typ doménové vlastnosti.
+> Tento postup obsahuje seznam hodnot, které můžete změnit za běhu. Pokud chcete poskytnout seznam, který se nemění, zvažte místo toho pomocí Výčtový typ jako typ doménové vlastnosti.
 
  Pokud chcete definovat seznam standardních hodnot, přidáte do doménová vlastnost CLR atribut, který má následující tvar:
 

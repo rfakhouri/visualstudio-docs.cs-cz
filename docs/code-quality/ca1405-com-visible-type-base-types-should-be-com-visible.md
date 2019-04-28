@@ -18,11 +18,11 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: 65bddd599bb544e000ca1d1269b84e53f51843bb
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55918556"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62546069"
 ---
 # <a name="ca1405-com-visible-type-base-types-should-be-com-visible"></a>CA1405: Základní typy viditelného typu modelu COM by měly být viditelné modelu COM
 
@@ -33,7 +33,7 @@ ms.locfileid: "55918556"
 |Kategorie|Microsoft.Interoperability|
 |Narušující změna|DependsOnFix|
 
-## <a name="cause"></a>příčina
+## <a name="cause"></a>Příčina
  Viditelného typu modelu COM (Component Object) je odvozen z typu, který není viditelné modelu COM.
 
 ## <a name="rule-description"></a>Popis pravidla

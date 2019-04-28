@@ -17,12 +17,12 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f2bd66ca5e5cc7e5884e98ddf4d5c2ba5df15742
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d74b989c5615f1fca079b9d8b41fdc7560e4e274
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60065140"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422450"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>Vytvoření kódu v době návrhu pomocí textových šablon T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Textové šablony T4 návrhu umožňují generování programového kódu a dal�
  Například můžete mít modelu, který definuje pracovního postupu, buď jako tabulka nebo diagramu. Z modelu můžete vygenerovat software, který se spustí pracovní postup. Když se změní požadavky uživatelů, je snadné diskutovat o nový pracovní postup s uživateli. Opětovné generování kódu z pracovního postupu je spolehlivější než aktualizace kódu ručně.  
   
 > [!NOTE]
->  A *modelu* se zdroji dat, který popisuje konkrétní aspekty aplikace. Může být libovolný formulář v nástrojích pro jakýkoli typ souboru nebo databáze. Nemusí být v libovolné formě konkrétní, jako je například modelu UML nebo model jazyka specifického pro doménu. Typické modely jsou ve formě tabulky a soubory XML.  
+> A *modelu* se zdroji dat, který popisuje konkrétní aspekty aplikace. Může být libovolný formulář v nástrojích pro jakýkoli typ souboru nebo databáze. Nemusí být v libovolné formě konkrétní, jako je například modelu UML nebo model jazyka specifického pro doménu. Typické modely jsou ve formě tabulky a soubory XML.  
   
  Pravděpodobně již máte zkušenosti s generování kódu. Při definování prostředků v **RESX** ve vašich [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] řešení, sadu tříd a metod se vygeneruje automaticky. Soubor prostředků je mnohem jednodušší a spolehlivější upravit prostředky než by bylo, pokud jste museli upravovat třídy a metody. Kód lze generovat stejným způsobem ze zdroje vlastní návrhu pomocí textových šablon.  
   
@@ -74,7 +74,7 @@ Textové šablony T4 návrhu umožňují generování programového kódu a dal�
 6. V **Průzkumníka řešení**, rozbalte uzel soubor šablony a zjistíte, který má příponu souboru **.txt**. Tento soubor obsahuje text vytvořený ze šablony.  
   
     > [!NOTE]
-    >  Pokud váš projekt je projekt jazyka Visual Basic, musíte kliknout na **zobrazit všechny soubory** Chcete-li zobrazit výstupní soubor.  
+    > Pokud váš projekt je projekt jazyka Visual Basic, musíte kliknout na **zobrazit všechny soubory** Chcete-li zobrazit výstupní soubor.  
   
 ### <a name="regenerating-the-code"></a>Opětovné generování kódu  
  Šablonu se spustí, generování pomocný soubor v některém z následujících případech:  
@@ -141,9 +141,9 @@ Textové šablony T4 návrhu umožňují generování programového kódu a dal�
   Šablona se spustí a zastaví na zarážce. Můžete prozkoumat proměnné a krokovat kód obvyklým způsobem.  
   
 > [!TIP]
->  `debug="true"` Díky generovaný kód přesněji namapovat na textové šablony, vložením další řádek číslování direktivy do vygenerovaného kódu. Ponecháte-li vyzkoušet, zarážky může přestat běžet v chybném stavu.  
+> `debug="true"` Díky generovaný kód přesněji namapovat na textové šablony, vložením další řádek číslování direktivy do vygenerovaného kódu. Ponecháte-li vyzkoušet, zarážky může přestat běžet v chybném stavu.  
 >   
->  Ale i v případě, že nejsou ladění můžete nechat v klauzuli v direktivě šablony. To způsobí, že jenom velmi malé pokles výkonu.  
+> Ale i v případě, že nejsou ladění můžete nechat v klauzuli v direktivě šablony. To způsobí, že jenom velmi malé pokles výkonu.  
   
 ## <a name="generating-code-or-resources-for-your-solution"></a>Generování kódu nebo prostředky pro vaše řešení  
  Můžete generovat programové soubory, které se liší v závislosti na modelu. Model je vstup například databáze, konfigurační soubor, modelu UML, modelu DSL nebo jiného zdroje. Několik obvykle generovat programové soubory pocházejí ze stejného modelu. Za tím účelem vytvořte soubor šablony pro každý soubor generovaného programu a přečetl(a) všechny šablony stejného modelu.  
@@ -293,7 +293,7 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
 ```  
   
 > [!TIP]
->  Textové šablony běží ve vlastní doméně aplikace a služby jsou dostupné přes zařazování. V této situaci je spolehlivější než GetService() GetCOMService().  
+> Textové šablony běží ve vlastní doméně aplikace a služby jsou dostupné přes zařazování. V této situaci je spolehlivější než GetService() GetCOMService().  
   
 ## <a name="Regenerating"></a> Znova se generuje kód automaticky  
  Obvykle několik souborů v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] řešení jsou generovány s jedním vstupním modelem. Každý soubor se generuje z vlastní šablony, ale šablony, které všechny odkazovat do stejného modelu.  

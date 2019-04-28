@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5a686d2a43fed0fdb8c5c1e8f21d4b35fd63f3a6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8e6f2d0da758a8897f28a22dec8adf1f8e05a36c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60075659"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419449"
 ---
 # <a name="how-to-customize-a-built-in-tab"></a>Postupy: Přizpůsobení předdefinované karty
   Můžete přidat skupiny a ovládací prvky k předdefinované kartě. Vestavěná karta je karta, který je již na pásu karet aplikace Microsoft Office. Například **Data** karta je integrovanou kartou v aplikaci Excel. Když vytvoříte vlastní skupiny, se zobrazí poslední na kartě, ale vaši skupinu můžete přesunout kamkoli na kartě.
@@ -26,14 +26,14 @@ ms.locfileid: "60075659"
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]
 
 > [!NOTE]
->  Můžete přidat skupiny k předdefinované kartě, ale předdefinované skupiny nelze odebrat z předdefinované karty.
+> Můžete přidat skupiny k předdefinované kartě, ale předdefinované skupiny nelze odebrat z předdefinované karty.
 
 ### <a name="to-add-groups-to-a-built-in-tab"></a>Přidání skupin do předdefinované karty
 
 1. Klikněte pravým tlačítkem na soubor kódu pásu karet v **Průzkumníka řešení**a potom klikněte na tlačítko **Návrhář zobrazení**.
 
     > [!NOTE]
-    >  Pokud soubor kódu pásu karet se nezobrazí v **Průzkumníka řešení**, je nutné přidat **položky pásu karet** do projektu. Zobrazit [jak: Začínáme s přizpůsobením pásu karet](../vsto/how-to-get-started-customizing-the-ribbon.md).
+    > Pokud soubor kódu pásu karet se nezobrazí v **Průzkumníka řešení**, je nutné přidat **položky pásu karet** do projektu. Zobrazit [jak: Začínáme s přizpůsobením pásu karet](../vsto/how-to-get-started-customizing-the-ribbon.md).
 
 2. Klikněte pravým tlačítkem na libovolné kartě v Návrháři pásu karet a potom klikněte na tlačítko **vlastnosti**.
 
@@ -48,7 +48,7 @@ ms.locfileid: "60075659"
 5. Z **ovládací prvky Ribbon Office** karty **nástrojů**, přetáhněte skupin na kartě.
 
     > [!NOTE]
-    >  Předdefinované skupiny v Návrháři nezobrazí. Proto je jediný způsob, jak určit, jestli pracujete s předdefinovanou kartu prozkoumat **ControlId** vlastnosti na kartě.
+    > Předdefinované skupiny v Návrháři nezobrazí. Proto je jediný způsob, jak určit, jestli pracujete s předdefinovanou kartu prozkoumat **ControlId** vlastnosti na kartě.
 
 ### <a name="to-position-groups-on-a-built-in-tab"></a>Pokud chcete umístit na integrované kartě skupiny
 

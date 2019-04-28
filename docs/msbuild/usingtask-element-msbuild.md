@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b97999b7a6aa56dc9be17d853c306c71a5ff290
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 36e310688b8305b2d5986a1b29d34895f02bc4d7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56645742"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411009"
 ---
 # <a name="usingtask-element-msbuild"></a>Usingtask – element (MSBuild)
 Mapuje na úkol, který se odkazuje v [úloh](../msbuild/task-element-msbuild.md) element na sestavení, které obsahuje implementaci úkolu.
@@ -69,7 +69,7 @@ Mapuje na úkol, který se odkazuje v [úloh](../msbuild/task-element-msbuild.md
  Proměnné prostředí, vlastnosti příkazového řádku, vlastností na úrovni projektu a položek na úrovni projektu může být odkazováno v `UsingTask` prvky, které jsou zahrnuty v souboru projektu, ať už přímo nebo prostřednictvím importovaném projektu souboru. Další informace najdete v tématu [úlohy](../msbuild/msbuild-tasks.md).
 
 > [!NOTE]
->  Vlastnosti na úrovni projektu a položky nemají význam, pokud `UsingTask` element pochází z jednoho z *.tasks* soubory, které jsou globálně zaregistrované stroji MSBuild engine. Hodnoty na úrovni projektu nejsou globální nástroji MSBuild.
+> Vlastnosti na úrovni projektu a položky nemají význam, pokud `UsingTask` element pochází z jednoho z *.tasks* soubory, které jsou globálně zaregistrované stroji MSBuild engine. Hodnoty na úrovni projektu nejsou globální nástroji MSBuild.
 
  V MSBuild 4.0 pomocí úlohy je možné načíst z *.overridetask* soubory.
 

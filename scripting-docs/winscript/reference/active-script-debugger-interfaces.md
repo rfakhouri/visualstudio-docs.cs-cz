@@ -14,18 +14,18 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6c63e20b802ff6c54ba17f8ddc55f390213e9043
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: ed8ff0361396deaaffd46f14ca1fc38869988593
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58155391"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422452"
 ---
 # <a name="active-script-debugger-interfaces"></a>Rozhraní ladicího programu aktivních skriptů
 Soubory hlaviček activdbg.h a souboru activdbg100.h poskytují rozhraní, výčty a struktury uvedené v této části. Jsou určeny pro ladění skriptu.  
   
 > [!NOTE]
->  `IJSDebug*` Rozhraní a `IEnumJsStackFrames` rozhraní první se objevily v aplikaci Internet Explorer 11 pro ladění nativního kódu pomocí skriptu. Hlavičkový soubor pro tato rozhraní je jscript9diag.h.  
+> `IJSDebug*` Rozhraní a `IEnumJsStackFrames` rozhraní první se objevily v aplikaci Internet Explorer 11 pro ladění nativního kódu pomocí skriptu. Hlavičkový soubor pro tato rozhraní je jscript9diag.h.  
   
 ## <a name="in-this-section"></a>V tomto oddílu  
  Následující rozhraní povolit jazykově neutrální, nezávislá na hostitele ladění:  

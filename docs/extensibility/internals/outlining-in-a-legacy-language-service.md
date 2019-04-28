@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ba6d709dae3b2a20332b3122585ad2060628016e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 7aa01918b8de718fc26c0dc0249615b327150020
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56601354"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422880"
 ---
 # <a name="outlining-in-a-legacy-language-service"></a>Osnova ve službě starší verze jazyka
 Sbalování umožňuje sbalit složitý program do přehled nebo osnovy. Například v jazyce C# všechny metody lze sbalit do jednoho řádku zobrazující pouze podpis metody. Kromě toho třídy a struktury mohou být sbalena zobrazit pouze názvy třídy a struktury. Uvnitř jedinou metodu, mohou být sbalena komplexní logiku tak celkový tok zobrazením pouze první řádek příkazy `foreach`, `if`, a `while`.
@@ -25,7 +25,7 @@ Sbalování umožňuje sbalit složitý program do přehled nebo osnovy. Napří
  Služby starší verze jazyka jsou implementovány jako součást sady VSPackage, ale novější způsob implementace funkce služba jazyka je pro použití rozšíření MEF. Další informace najdete v tématu [názorný postup: Sbalování](../../extensibility/walkthrough-outlining.md).
 
 > [!NOTE]
->  Doporučujeme vám, že začnete používat nový editor API co nejdříve. Tím vylepšíme výkonu vaší služby jazyka a umožňují využívat nové funkce editoru.
+> Doporučujeme vám, že začnete používat nový editor API co nejdříve. Tím vylepšíme výkonu vaší služby jazyka a umožňují využívat nové funkce editoru.
 
 ## <a name="enabling-support-for-outlining"></a>Povolení podpory pro sbalení
  `AutoOutlining` Položky registru je nastavená na 1, chcete-li povolit automatické sbalování. Automatické sbalování nastaví analýzy celého zdroje při načtení nebo změnit, aby bylo možné identifikovat skryté regiony a zobrazit sbalování glyfy souboru. Sbalení je možné řídit také ručně uživatelem.

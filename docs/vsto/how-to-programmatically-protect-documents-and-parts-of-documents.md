@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ac93b71d67bc842b2498fbd4d017b17d9ddcf00c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 62d84dcb7ce22f1199d12a958250a465cd25a49c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60062601"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412456"
 ---
 # <a name="how-to-programmatically-protect-documents-and-parts-of-documents"></a>Postupy: Zamykání dokumentů a částí dokumentů
   Přidat ochranu do dokumentů aplikace Microsoft Office Word zabráníte uživatelům provádět veškeré úpravy dokumentu.
@@ -29,7 +29,7 @@ ms.locfileid: "60062601"
  Můžete také označit určité oblasti dokumentu jako výjimky tak, aby zadaný uživatelé mohou upravovat pouze ty oblasti dokumentu. Můžete například chtít chránit celý dokument s výjimkou určitou záložku. Heslo můžete volitelně přidat tak, aby uživatelé nelze odebrat ochranu dokumentu, není-li heslo, které znají.
 
 > [!NOTE]
->  V následujícím příkladu nepoužívá ochrana heslem; Můžete však chtít vezměte v úvahu při přidání ochrany dokumentů pomocí hesla. Další informace najdete v ukázce ochrany dokumentů pomocí na [Office Ukázky a návody vývoje](../vsto/office-development-samples-and-walkthroughs.md).
+> V následujícím příkladu nepoužívá ochrana heslem; Můžete však chtít vezměte v úvahu při přidání ochrany dokumentů pomocí hesla. Další informace najdete v ukázce ochrany dokumentů pomocí na [Office Ukázky a návody vývoje](../vsto/office-development-samples-and-walkthroughs.md).
 
  Ovládací prvky obsahu můžete použít také k ochraně částí dokumentů. Další informace najdete v tématu [jak: Ochrana částí dokumentů pomocí ovládacích prvků obsahu](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md).
 

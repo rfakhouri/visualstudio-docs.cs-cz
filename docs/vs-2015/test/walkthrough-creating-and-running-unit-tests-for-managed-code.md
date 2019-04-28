@@ -14,12 +14,12 @@ ms.assetid: 2b018b18-b412-4e0e-b0ee-b580a2f3ba9c
 caps.latest.revision: 85
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ad9a30f5a54177a9df955cbe78d0ad0bc5d99ac3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7fcea011f78688630a94cff64f9d2a627acea88c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60058886"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408488"
 ---
 # <a name="walkthrough-creating-and-running-unit-tests-for-managed-code"></a>Návod: Vytváření a spouštění testů jednotek pro spravovaný kód
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,10 +47,10 @@ Tento návod vás postupně provede vytváření, spouštění a přizpůsobení
   [Použití jednotkových testů ke zlepšení kódu](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Use_unit_tests_to_improve_your_code)  
   
 > [!NOTE]
->  Tento návod používá rozhraní testování částí Microsoft pro spravovaný kód. Průzkumník testů může také spouštět testy z jednotky třetí strany rozhraní pro testování, které mají adaptéry pro Průzkumník testů. Další informace najdete v tématu [nainstalovat rozhraní pro testování jednotky třetí strany](../test/install-third-party-unit-test-frameworks.md)  
+> Tento návod používá rozhraní testování částí Microsoft pro spravovaný kód. Průzkumník testů může také spouštět testy z jednotky třetí strany rozhraní pro testování, které mají adaptéry pro Průzkumník testů. Další informace najdete v tématu [nainstalovat rozhraní pro testování jednotky třetí strany](../test/install-third-party-unit-test-frameworks.md)  
   
 > [!NOTE]
->  Informace o tom, ke spuštění testů z příkazového řádku najdete v tématu [návod: použití testování z příkazového řádku](http://msdn.microsoft.com/library/52c11992-9e94-4067-a4b7-59f19d69d867).  
+> Informace o tom, ke spuštění testů z příkazového řádku najdete v tématu [návod: použití testování z příkazového řádku](http://msdn.microsoft.com/library/52c11992-9e94-4067-a4b7-59f19d69d867).  
   
 ## <a name="prerequisites"></a>Požadavky  
   
@@ -71,12 +71,12 @@ Tento návod vás postupně provede vytváření, spouštění a přizpůsobení
 5. V **název** zadejte `Bank` a potom klikněte na tlačítko **OK**.  
   
    > [!NOTE]
-   >  Pokud již název "Banka" používán, zvolte jiný název projektu.  
+   > Pokud již název "Banka" používán, zvolte jiný název projektu.  
   
     Nový projekt banka se vytvoří a zobrazí v Průzkumníku řešení se soubor Class1.cs je otevřen v editoru kódu.  
   
    > [!NOTE]
-   >  Pokud soubor Class1.cs není otevřen v editoru kódu, dvakrát klikněte na soubor Class1.cs v Průzkumníku řešení otevřete.  
+   > Pokud soubor Class1.cs není otevřen v editoru kódu, dvakrát klikněte na soubor Class1.cs v Průzkumníku řešení otevřete.  
   
 6. Zkopírujte zdrojový kód z [ukázkový projekt pro vytvoření testů jednotek](../test/sample-project-for-creating-unit-tests.md).  
   

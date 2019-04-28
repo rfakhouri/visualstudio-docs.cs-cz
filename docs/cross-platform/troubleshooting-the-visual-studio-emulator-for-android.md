@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: 23c36922b3ce5dfa729099010dd7cdec3d92c40c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 55b863d1bff16fb0170e749d00ebb212588b2dd3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60098140"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63403043"
 ---
 # <a name="troubleshoot-the-visual-studio-emulator-for-android"></a>Poradce při potížích s emulátorem sady Visual Studio pro Android
 Toto téma obsahuje informace, které pomáhají při řešení problémů, které mohou nastat při používání Visual Studio Emulator for Android.
@@ -70,7 +70,7 @@ Toto téma obsahuje informace, které pomáhají při řešení problémů, kter
  ![Android&#95;Emu&#95;Install&#95;Issue](../cross-platform/media/android_emu_install_issue.png "Android_Emu_Install_Issue")
 
 > [!NOTE]
->  Tato zpráva platí jak pro Visual Studio Emulator for Android a emulátor Windows Phone. Windows 8.1 a Windows 10 podporovat emulátor.
+> Tato zpráva platí jak pro Visual Studio Emulator for Android a emulátor Windows Phone. Windows 8.1 a Windows 10 podporovat emulátor.
 
  Pokud se zobrazí tato zpráva, zkontrolujte, [požadavky na systém pro emulátor sady Visual Studio pro Android](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md) chcete zobrazit, zda lze spustit emulátor.
 

@@ -15,11 +15,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 38a12f851bb99eb553856556608aaf029c91c40d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54755148"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62429233"
 ---
 # <a name="targeting-a-specific-net-framework-version"></a>Cílení na konkrétní verzi rozhraní .NET Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ V sadě Visual Studio můžete zadat verzi nebo profil, který chcete svůj proj
  [Přehled cílení na více verzí sady Visual Studio](../ide/visual-studio-multi-targeting-overview.md)  
  Poskytuje přehled možností cílení na více funkcí v sadě Visual Studio.  
   
- [Postupy: Cílení na určitou verzi rozhraní .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md)  
+ [Postupy: Cílení na verzi rozhraní .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md)  
  Podrobně popisuje, jak určit konkrétní [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] v jazyce Visual Basic, Visual C# nebo vizuální F# projektu.  
   
 ## <a name="related-sections"></a>Související oddíly  

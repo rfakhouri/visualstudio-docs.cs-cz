@@ -12,12 +12,12 @@ ms.assetid: 09a18bd2-b788-411a-9da6-067d806e46f6
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 3f8317405c52850eceb816b958718835c029c6c4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2a5d5065ca427f0319174aa59e6b87d356816d4c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60068298"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432435"
 ---
 # <a name="sccget-function"></a>SccGet – funkce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -77,7 +77,7 @@ SCCRTN SccGet(
  `SCC_GET_ALL` Příznak je možné kombinovat s `SCC_GET_RECURSIVE` příznak načíst všechny soubory v daném adresáři a všech jeho podadresářích.  
   
 > [!NOTE]
->  `SCC_GET_RECURSIVE` měl by být nikdy předán bez `SCC_GET_ALL`. Všimněte si také, že pokud adresáře C:\A a C:\A\B obě předány rekurzivního získat, C:\A\B a všechny jeho podadresáře skutečně načte dvakrát. Zodpovídá za rozhraní IDE, a ne zdrojový ovládací prvek modulu plug-in – abyste měli jistotu, že duplicitní položky, jako je například tento uchovávají mimo pole.  
+> `SCC_GET_RECURSIVE` měl by být nikdy předán bez `SCC_GET_ALL`. Všimněte si také, že pokud adresáře C:\A a C:\A\B obě předány rekurzivního získat, C:\A\B a všechny jeho podadresáře skutečně načte dvakrát. Zodpovídá za rozhraní IDE, a ne zdrojový ovládací prvek modulu plug-in – abyste měli jistotu, že duplicitní položky, jako je například tento uchovávají mimo pole.  
   
  Nakonec i v případě, že modul plug-in správy zdrojových kódů zadaný `SCC_CAP_GET_NOUI` příznak při inicializaci, která udává, že nemá žádné uživatelské rozhraní pro příkaz Get, tato funkce může stále volat integrovaným vývojovým prostředím, aby načítala soubory. Příznak jednoduše znamená, že rozhraní IDE nezobrazí položku nabídky Get a že modul plug-in není očekává poskytování uživatelského rozhraní.  
   

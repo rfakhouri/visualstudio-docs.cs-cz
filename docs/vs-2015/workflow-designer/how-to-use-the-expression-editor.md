@@ -11,12 +11,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: caf878f6ea43a7f041285fb02b2f32175ca862b1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: cc876426c18184c966c277e8dafb5a373da332b7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60057183"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408383"
 ---
 # <a name="how-to-use-the-expression-editor"></a>Postupy: Používání editoru výrazů
 Je Editor výrazů [!INCLUDE[wfd1](../includes/wfd1-md.md)] ovládací prvek, který se používá v mnoha aktivit pracovního postupu jako způsob zadávání a vyhodnocování těchto výrazů. Editor výrazů nabízí plnohodnotný IDE editační rozhraní, včetně IntelliSense, zabarvení, ParamInfo podtržení vlnovkou u chyb, kromě jiných funkcí. Kompilátor ověří výraz poté, co je zadána. Pokud výraz není platný, zobrazí se ikona chyby. V editoru můžete otevřít také jako **Editor výrazů** dialogové okno.  
@@ -32,7 +32,7 @@ Je Editor výrazů [!INCLUDE[wfd1](../includes/wfd1-md.md)] ovládací prvek, kt
 - Pokud vám soustředit se na Editor výrazů v Návrháři postupu provádění se změněným hostováním, pak se chová stejně jako textové pole. Jakmile v Návrháři postupu provádění se změněným hostováním se ztratí fokus, editoru výrazů bude vypadat jako regulární TextBlock znovu.  
   
 > [!NOTE]
->  Technologie IntelliSense pro Editor výrazů je k dispozici jen uvnitř sady [!INCLUDE[vs2010](../includes/vs2010-md.md)]. V obou [!INCLUDE[vs2010](../includes/vs2010-md.md)] a provádění se změněným hostováním scénáře, kompilátor ověří výraz poté, co se zadají a editor výrazů zobrazuje ikonu chyby, pokud výraz není platný.  
+> Technologie IntelliSense pro Editor výrazů je k dispozici jen uvnitř sady [!INCLUDE[vs2010](../includes/vs2010-md.md)]. V obou [!INCLUDE[vs2010](../includes/vs2010-md.md)] a provádění se změněným hostováním scénáře, kompilátor ověří výraz poté, co se zadají a editor výrazů zobrazuje ikonu chyby, pokud výraz není platný.  
   
 ### <a name="using-the-expression-editor"></a>Pomocí editoru výrazů  
   
@@ -41,7 +41,7 @@ Je Editor výrazů [!INCLUDE[wfd1](../includes/wfd1-md.md)] ovládací prvek, kt
 2. Přidání, například <xref:System.Activities.Statements.Assign> aktivitu do pracovního postupu.  
   
     > [!NOTE]
-    >  Více aktivit pracovního postupu mít editory výrazu. Výraz objekty TextBlock se také zobrazují v Návrhář proměnných, Návrhář argumentů a Návrhář dynamických argumentů. <xref:System.Activities.Statements.Assign> Aktivita slouží jako příklad.  
+    > Více aktivit pracovního postupu mít editory výrazu. Výraz objekty TextBlock se také zobrazují v Návrhář proměnných, Návrhář argumentů a Návrhář dynamických argumentů. <xref:System.Activities.Statements.Assign> Aktivita slouží jako příklad.  
   
 3. Klikněte na levý výraz editoru v Návrháři aktivit pro <xref:System.Activities.Statements.Assign> aktivity.  
   

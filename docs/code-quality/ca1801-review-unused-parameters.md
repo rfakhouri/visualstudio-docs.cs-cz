@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ee9500938feb893627069e9a83f3052fa84bc224
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55949548"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62545508"
 ---
 # <a name="ca1801-review-unused-parameters"></a>CA1801: Zkontrolujte nepoužité parametry
 
@@ -31,7 +31,7 @@ ms.locfileid: "55949548"
 |Kategorie|Microsoft.Usage|
 |Narušující změna|Pevné – Pokud člen není viditelný mimo sestavení, bez ohledu na to, které provedete změnu.<br /><br /> Pevné – Pokud změníte členu, který chcete použít parametr v rámci svého těla.<br /><br /> Rozdělení – odeberte parametr a je viditelný mimo sestavení.|
 
-## <a name="cause"></a>příčina
+## <a name="cause"></a>Příčina
  Podpis metody obsahuje parametr, který není použit v těle metody. Toto pravidlo nezkoumá následujících metod:
 
 - Metody odkazuje delegáta.

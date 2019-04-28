@@ -12,18 +12,18 @@ helpviewer_keywords:
 ms.assetid: 15aedcc3-c79a-460b-b620-43223f1ae81e
 caps.latest.revision: 24
 manager: jillfra
-ms.openlocfilehash: d8e2bbf51aa6266411558e91f3c17905d0c8605c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 75f7cb153a976614ff790095141a820af80b5834
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54786064"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422758"
 ---
 # <a name="managed-package-framework-classes"></a>Managed Package Framework třídy
 Třídy spravované balíčků framework (MPF) slouží k vytváření balíčků VSPackage pomocí spravovaného kódu. Poskytuje výchozí implementaci pro mnoho rozhraní VSPackage. Skrýt podrobnosti implementace a složitosti, MPF vám umožní vytvořit [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] integrace produktů s minimální část kódu.  
   
 > [!WARNING]
->  Většina sestavení, které obsahují Managed Package Framework třídy, které se dodávají se sadou Visual Studio SDK. Můžete stáhnout zdrojový kód pro spravované zabalí rozhraní pro projekty v [Managed Package Framework pro projekty](http://mpfproj11.codeplex.com/).  
+> Většina sestavení, které obsahují Managed Package Framework třídy, které se dodávají se sadou Visual Studio SDK. Můžete stáhnout zdrojový kód pro spravované zabalí rozhraní pro projekty v [Managed Package Framework pro projekty](http://mpfproj11.codeplex.com/).  
   
 ## <a name="mpf-namespaces"></a>Obory názvů MPF  
  V následující tabulce jsou uvedeny MPF obory názvů poskytované [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)].  

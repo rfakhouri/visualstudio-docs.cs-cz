@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eab627b09c1544b69a8834711e51a3bbbdd63e5a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 2b23e10dfd00f4e1b9bde8520ef50aa60cd18b35
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58866783"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406737"
 ---
 # <a name="secure-clickonce-applications"></a>Zabezpečení aplikací ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace jsou v souladu s omezením zabezpečení přístupu kódu v rozhraní .NET Framework pomáhají omezit přístupu k chráněným prostředkům a operacím. Z tohoto důvodu je důležité, že chápete důsledky zabezpečení přístupu kódu k zápisu vaše [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace odpovídajícím způsobem. K omezení přístupu mohou vaše aplikace používat plnou důvěryhodnost nebo částečné zóny, jako jsou zóny pro Internet a Intranet.
@@ -71,7 +71,7 @@ ms.locfileid: "58866783"
  Nikdy byste neměli předávat argumenty načtené pomocí řetězce dotazu do databáze nebo příkazového řádku bez ověřování argumentů a zajištění jejich bezpečnosti. Nebezpečné argumenty jsou argumenty s řídicími znaky databáze nebo příkazového řádku, které by mohly umožnit uživateli se zlými úmysly manipulaci s aplikací a provádění libovolných příkazů.
 
 > [!NOTE]
->  Argumenty řetězce dotazu jsou pouze způsobem předávání argumentů [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] při spuštění aplikace. Argumenty nelze předat [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace z příkazového řádku.
+> Argumenty řetězce dotazu jsou pouze způsobem předávání argumentů [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] při spuštění aplikace. Argumenty nelze předat [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace z příkazového řádku.
 
 ## <a name="deploying-obfuscated-assemblies"></a>Nasazení obfuskovaných sestavení
  Visual Studio zahrnuje bezplatnou [PreEmptive ochranu – nástroj Dotfuscator Community](../ide/dotfuscator/index.md), který můžete použít k ochraně vašich aplikací ClickOnce pomocí obfuskace kódu a aktivní ochranná opatření.  Podrobnosti najdete v tématu [ClickOnce část v uživatelské příručce nástroje Dotfuscator Community](https://www.preemptive.com/dotfuscator/ce/docs/help/5.27/advanced_clickonce.html).

@@ -8,12 +8,12 @@ ms.assetid: f6337c35-acae-4c5f-b5d9-ac5ff687ef18
 caps.latest.revision: 18
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 404192923d25e3eccc0bb40064569bec3e6c6cec
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ef0a8d1867114cd655f1e361cf0401dab6bce1a5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059250"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63416647"
 ---
 # <a name="customizing-code-coverage-analysis"></a>Přizpůsobení analýzy pokrytí kódu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,7 +69,7 @@ Ve výchozím nastavení analyzuje nástroj pokrytí kódu Visual Studio všechn
 ```  
   
 > [!WARNING]
->  Vyhodnocování symbolů může trvat dobu, zvláště při použití vzdáleného umístění souborů s velkým množstvím sestavení. Zvažte proto možnost zkopírování vzdálených souborů s příponou .pdb do stejného umístění jako binární soubory (.dll a .exe).  
+> Vyhodnocování symbolů může trvat dobu, zvláště při použití vzdáleného umístění souborů s velkým množstvím sestavení. Zvažte proto možnost zkopírování vzdálených souborů s příponou .pdb do stejného umístění jako binární soubory (.dll a .exe).  
   
 ### <a name="excluding-and-including"></a>Vyloučení a zahrnutí  
  Vybraná sestavení lze vyloučit z analýzy pokrytí kódu. Příklad:  
@@ -134,7 +134,7 @@ Ve výchozím nastavení analyzuje nástroj pokrytí kódu Visual Studio všechn
 ```  
   
 > [!WARNING]
->  Pokud je v regulárním výrazu chyba, jako například neřídící a nesprávně umístěné závorky, analýza pokrytí kódu se nespustí.  
+> Pokud je v regulárním výrazu chyba, jako například neřídící a nesprávně umístěné závorky, analýza pokrytí kódu se nespustí.  
   
 ### <a name="other-ways-to-include-or-exclude-elements"></a>Další způsoby zahrnutí nebo vyloučení prvků  
  Zobrazit [ukázku na konci tohoto tématu](#sample) příklady.  

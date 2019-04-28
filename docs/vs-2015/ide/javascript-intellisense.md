@@ -26,12 +26,12 @@ caps.latest.revision: 67
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: af1484bef2baadf961eb00c952a50abec5c4a9f1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 84a630a679e95d8a6848592b183749c2ace3ea86
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60066582"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412310"
 ---
 # <a name="javascript-intellisense"></a>JavaScript IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -82,7 +82,7 @@ Technologie IntelliSense umožňuje napsat kód rychleji a s menším množství
 - [!INCLUDE[atlaslib_current_ext](../includes/atlaslib-current-ext-md.md)], Pokud pracujete v aplikaci s povoleným AJAX technologie ASP.NET.
 
     > [!NOTE]
-    >  Technologie IntelliSense není podporována pro skript, který je v atributech obslužné rutiny události na prvcích HTML nebo která je definována v `href` atributy.
+    > Technologie IntelliSense není podporována pro skript, který je v atributech obslužné rutiny události na prvcích HTML nebo která je definována v `href` atributy.
 
 ## <a name="ProcessingIntelliSenseInformation"></a> Zpracování informací technologie IntelliSense
  K poskytování technologie IntelliSense jazyka JavaScript provádí služba jazyka následující operace:
@@ -189,7 +189,7 @@ Technologie IntelliSense umožňuje napsat kód rychleji a s menším množství
  `/// <reference path="~/Services/MyService.asmx" />`
 
 > [!NOTE]
->  Technologie IntelliSense jazyka JavaScript není podporována pro skript, který je obsažen v souborech webové služby (.asmx) v projektech webových aplikací (WAP).
+> Technologie IntelliSense jazyka JavaScript není podporována pro skript, který je obsažen v souborech webové služby (.asmx) v projektech webových aplikací (WAP).
 
  Následující příklad ukazuje způsob vytvoření odkazu na skript na základě stránky.
 
@@ -233,18 +233,18 @@ Technologie IntelliSense umožňuje napsat kód rychleji a s menším množství
   Ve většině případů není nutné referenční skupiny měnit. Pokud však chcete provést změny, můžete použít možnosti konfigurace pro editor kódu jazyka JavaScript a určit soubory, které budou do referenčních skupin zahrnuty. Pokyny k používání této funkce najdete v tématu [možnosti, textový Editor, JavaScript, IntelliSense](../ide/reference/options-text-editor-javascript-intellisense.md).
 
 > [!TIP]
->  Reference IntelliSense se obvykle používají k zajištění podpory IntelliSense pro globální objekty a technologie IntelliSense [rozšíření](#Extensibility). Tuto funkci můžete použít také pro skripty, které musí být v době běhu načteny pomocí modulu pro zavádění skriptu.
+> Reference IntelliSense se obvykle používají k zajištění podpory IntelliSense pro globální objekty a technologie IntelliSense [rozšíření](#Extensibility). Tuto funkci můžete použít také pro skripty, které musí být v době běhu načteny pomocí modulu pro zavádění skriptu.
 
 ### <a name="remote-file-references"></a>Odkazy na vzdálené soubory
  Můžete nastavit, aby aplikace Visual Studio stáhla vzdálené soubory jazyka JavaScript, které jsou odkazovány v souboru jazyka JavaScript, s cílem poskytnout podporu technologie IntelliSense pro vzdálený soubor nebo knihovny. Při použití této funkce se soubory stáhnou, pokud je vložíte jako referenci do souboru s kódem JavaScript.
 
 > [!NOTE]
->  Tuto funkci lze použít pouze pro soubory jazyka JavaScript, které jsou otevřeny mimo kontext projektu, s výjimkou webových projektů. Pro webové projekty jsou ve výchozím nastavení vzdálené soubory, na které váš projekt odkazuje, staženy automaticky.
+> Tuto funkci lze použít pouze pro soubory jazyka JavaScript, které jsou otevřeny mimo kontext projektu, s výjimkou webových projektů. Pro webové projekty jsou ve výchozím nastavení vzdálené soubory, na které váš projekt odkazuje, staženy automaticky.
 
  Pokyny k používání této funkce najdete v tématu [možnosti, textový Editor, JavaScript, IntelliSense](../ide/reference/options-text-editor-javascript-intellisense.md).
 
 > [!WARNING]
->  Pokud tuto funkci povolíte a zaznamenáte snížení výkonu editoru kódu, doporučujeme ji zakázat.
+> Pokud tuto funkci povolíte a zaznamenáte snížení výkonu editoru kódu, doporučujeme ji zakázat.
 
 ### <a name="XMLDocComments"></a> Dokumentační komentáře XML
  Dokumentační komentáře XML jsou textové popisy prvků kódu, které můžete přidat do skriptu. Tyto textové popisy jsou zobrazovány v technologii IntelliSense při odkazu na skript s komentářem. Můžete například poskytnout informace o parametrech funkce a návratové hodnotě. Dokumentační komentáře XML jsou k dispozici pouze z odkazovaných souborů, sestavení a služeb. Další informace najdete v tématu [dokumentační komentáře XML](../ide/xml-documentation-comments-javascript.md) a [vytvořit dokumentační komentáře XML](../ide/create-xml-documentation-comments-for-javascript-intellisense.md).
@@ -263,7 +263,7 @@ Technologie IntelliSense umožňuje napsat kód rychleji a s menším množství
  Technologie ASP.NET AJAX podporuje také technologii IntelliSense jazyka JavaScript. Technologie ASP.NET AJAX obsahuje rozhraní klienta, které rozšiřuje standardní typy dostupné v jazyce ECMAScript (JavaScript). Pokud chcete povolit technologii IntelliSense jazyka JavaScript poskytovat podrobnosti o objektech AJAX technologie ASP.NET, byly přidány dokumentační komentáře XML v rámci [!INCLUDE[atlaslib_current_ext](../includes/atlaslib-current-ext-md.md)]. Tyto dokumentační komentáře XML se zobrazí při použití typů a členů, které jsou obsaženy v knihovně technologie ASP.NET AJAX.
 
 > [!NOTE]
->  Soukromé členy nejsou pomocí technologie IntelliSense jazyka JavaScript zobrazeny. Soukromé členy jsou v technologii ASP.NET AJAX označeny jako členy, které začínají podtržítkem (_).
+> Soukromé členy nejsou pomocí technologie IntelliSense jazyka JavaScript zobrazeny. Soukromé členy jsou v technologii ASP.NET AJAX označeny jako členy, které začínají podtržítkem (_).
 
 ## <a name="Extensibility"></a> Rozšíření technologie IntelliSense jazyka JavaScript
  Služba jazyka JavaScript poskytuje objekty a funkce, které vám umožní změnit prostředí technologie IntelliSense pro vývojáře, kteří používají knihovny třetích stran. Tyto funkce jsou zvláště užitečné v případě, že výchozí služba jazyka není schopna poskytnout všechny informace, které chcete poskytnout zákazníkům. Další informace najdete v tématu [rozšíření technologie IntelliSense jazyka JavaScript](../ide/extending-javascript-intellisense.md).

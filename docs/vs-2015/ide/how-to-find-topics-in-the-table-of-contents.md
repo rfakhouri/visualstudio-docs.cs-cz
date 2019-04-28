@@ -16,12 +16,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e439521d9a81bc418eb403bb87ee9576605b8e66
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8ab015fdfd459dbb13e81deed0fe0cc89f71cd1f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60055495"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63416692"
 ---
 # <a name="how-to-find-topics-in-the-table-of-contents"></a>Postupy: Hledání témat v obsahu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "60055495"
 V **obsah** kartu, můžete použít obsah (TOC) k nalezení informací o. Obsah je rozšiřitelný seznam, který obsahuje všechna témata v nainstalovaných knihách. Usnadnění informace o tom, jak procházení obsahu naleznete v tématu [klávesové zkratky (Help Viewer)](../ide/shortcut-keys-help-viewer.md).  
   
 > [!IMPORTANT]
->  Rozsah témat dostupných v obsahu závisí na filtru, který jste vybrali.  
+> Rozsah témat dostupných v obsahu závisí na filtru, který jste vybrali.  
   
 ## <a name="filter-the-toc"></a>Filtrování obsahu  
  Můžete filtrovat-li zúžit rozsah témat, která se zobrazí v obsahu **obsah** kartu. Zobrazí v seznamu jenom v případě, že obsahují kořen termínu, který zadáte. Například pokud zadáte "problém" jako filtr, pouze produkty, které obsahují text "problém" nebo "problém" zobrazí. Uzly, jejichž nadpisy neobsahují daný výraz, jsou sbaleny do jednoho uzlu se třemi tečkami (...).  
@@ -41,7 +41,7 @@ V **obsah** kartu, můžete použít obsah (TOC) k nalezení informací o. Obsah
 2. V **filtrovat obsahy** text zadejte termín.  
   
 > [!NOTE]
->  Pokud filtru trvá dlouhou dobu spuštění, můžete zobrazit výsledky rychleji pomocí `title:` operátoru pro rozšířené hledání.  
+> Pokud filtru trvá dlouhou dobu spuštění, můžete zobrazit výsledky rychleji pomocí `title:` operátoru pro rozšířené hledání.  
   
 ## <a name="synchronize-a-topic-with-the-toc"></a>Synchronizace tématu s obsahem  
  Pokud jste otevřeli téma pomocí rejstříku nebo funkcí fulltextového vyhledávání, můžete určit, kde je v tomto tématu v obsahu pomocí synchronizace obsahu s oknem tématu.  

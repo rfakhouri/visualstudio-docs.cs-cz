@@ -12,12 +12,12 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: aaebcb9bf5edb5fda6938d364b3f96dc8823576f
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 3f9a6f7985e3ebb3e77dcc605157f75e00a0842b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59653486"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426039"
 ---
 # <a name="msbuild-transforms"></a>Transformace nástroje MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Transformace je 1: 1 převod jednu položku seznamu do jiného. Kromě povolení
 ```  
   
 > [!NOTE]
->  Vlastní oddělovač pro transformovaná položky seznamu můžete zadat stejným způsobem zadejte oddělovač pro standardní položky seznamu. Například samostatné transformovaný položky seznamu oddělte čárkou (,) namísto výchozí středníkem (;), použijte následující kód XML.  
+> Vlastní oddělovač pro transformovaná položky seznamu můžete zadat stejným způsobem zadejte oddělovač pro standardní položky seznamu. Například samostatné transformovaný položky seznamu oddělte čárkou (,) namísto výchozí středníkem (;), použijte následující kód XML.  
   
 ```  
 @(RESXFile->'Toolset\%(filename)%(extension)', ',')  

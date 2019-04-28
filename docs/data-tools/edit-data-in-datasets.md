@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: d693113db28acc456625f7c22b671006ed17038b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: eb6651d788979343752fac30c4570d955b53068c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096982"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63402861"
 ---
 # <a name="edit-data-in-datasets"></a>Úpravy dat v datových sadách
 Můžete upravovat data v datových tabulkách stejně, jako úprava dat v tabulce v jakékoli databázi. Proces může obsahovat, vkládání, aktualizaci a odstranění záznamů v tabulce. Ve formě vázané na data můžete určit, která pole se uživatel upravovat. V těchto případech se datové vazby infrastruktury zpracovává všechny řešení change tracking, aby změny lze odeslat zpět do databáze později. Pokud provedete úpravy prostřednictvím kódu programu k datům a chcete odeslat změny zpět do databáze, musíte použít objekty a metody, které udělal za vás sledování změn.
@@ -58,7 +58,7 @@ Pokud aplikace nepotřebuje k odeslání aktualizací zpět do zdroje dat, je mo
      Tato metoda neodebere fyzicky záznamu. Místo toho označí záznamy pro odstranění.
 
     > [!NOTE]
-    >  Pokud se zobrazí vlastnosti count <xref:System.Data.DataRowCollection>, výsledný počet zahrnuje záznamy, které jsou označené k odstranění. Získáte přesný počet záznamů, které nejsou označené k odstranění můžete projít kolekce podíváme <xref:System.Data.DataRow.RowState%2A> vlastností každého záznamu. (Označená k odstranění záznamů <xref:System.Data.DataRow.RowState%2A> z <xref:System.Data.DataRowState.Deleted>.) Alternativně můžete vytvořit zobrazení dat pro datovou sadu, filtry založené na stavu řádků a získat počet vlastností z něj.
+    > Pokud se zobrazí vlastnosti count <xref:System.Data.DataRowCollection>, výsledný počet zahrnuje záznamy, které jsou označené k odstranění. Získáte přesný počet záznamů, které nejsou označené k odstranění můžete projít kolekce podíváme <xref:System.Data.DataRow.RowState%2A> vlastností každého záznamu. (Označená k odstranění záznamů <xref:System.Data.DataRow.RowState%2A> z <xref:System.Data.DataRowState.Deleted>.) Alternativně můžete vytvořit zobrazení dat pro datovou sadu, filtry založené na stavu řádků a získat počet vlastností z něj.
 
 Následující příklad ukazuje, jak volat <xref:System.Data.DataRow.Delete%2A> metoda k označení první řádek v `Customers` tabulky se odstranil:
 

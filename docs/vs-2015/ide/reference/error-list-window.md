@@ -16,18 +16,18 @@ caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9dc94abdfb35bc4537f0ba80f96f393157263e63
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 924e4414d668f4cb3a12f5d27b915117da0a7119
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59658146"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437230"
 ---
 # <a name="error-list-window"></a>Okno Seznam chyb
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 POZNÁMKA:]
->  V seznamu chyb zobrazí informace o určité chybové zprávě. Číslo chyby nebo text řetězce chyby můžete zkopírovat z okna výstup. Chcete-li zobrazit okno výstup, stiskněte Ctrl + Alt + O. Zobrazit [okna výstup](../../ide/reference/output-window.md).  
+> V seznamu chyb zobrazí informace o určité chybové zprávě. Číslo chyby nebo text řetězce chyby můžete zkopírovat z okna výstup. Chcete-li zobrazit okno výstup, stiskněte Ctrl + Alt + O. Zobrazit [okna výstup](../../ide/reference/output-window.md).  
   
  Můžete vyvíjet aplikace rychleji pomocí **seznam chyb** okna. Například můžete provádět následující úlohy:  
   
@@ -50,7 +50,7 @@ POZNÁMKA:]
   Chcete-li seřadit, klikněte na libovolné záhlaví sloupce. Chcete-li znovu řadit podle dalšího sloupce, podržte stisknutou klávesu SHIFT a klikněte na další záhlaví sloupce. Chcete-li vybrat sloupce, které se zobrazí a které jsou skryté, zvolte **zobrazit sloupce** z místní nabídky. Chcete-li změnit pořadí, ve kterém jsou sloupce zobrazeny, přetáhněte libovolné záhlaví sloupce doleva nebo doprava.  
   
 > [!NOTE]
->  Dialogová okna a příkazy nabídek, které se zobrazí mohou lišit od těch zde popsaných v závislosti na aktivních nastaveních nebo edici. Chcete-li změnit nastavení, klikněte na tlačítko **nástroje / Import a Export nastavení**. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Dialogová okna a příkazy nabídek, které se zobrazí mohou lišit od těch zde popsaných v závislosti na aktivních nastaveních nebo edici. Chcete-li změnit nastavení, klikněte na tlačítko **nástroje / Import a Export nastavení**. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="error-list-filters"></a>Filtry seznamů chyb  
  Existují dva typy filtru v dva rozevírací seznamy, jeden na pravé straně panelu nástrojů a druhý na levém panelu nástrojů. Určuje sadu souborech s kódem pomocí rozevíracího seznamu na levé straně panelu nástrojů (**celé řešení**, **otevřené dokumenty**, **aktuální projekt**,  **Aktuální dokument**).  
@@ -62,7 +62,7 @@ POZNÁMKA:]
 2. **Aktuální projekt**: Zobrazit chyby, varování a zprávy z aktuálně vybraného dokumentu v projektu **Editor** nebo vybraný projekt v **Průzkumníka řešení**.  
   
    > [!NOTE]
-   >  Filtrovaný seznam chyb, upozornění a zpráv se změní, pokud je projekt aktuálně vybraného dokumentu liší od projektu vybraného v **Průzkumníka řešení**.  
+   > Filtrovaný seznam chyb, upozornění a zpráv se změní, pokud je projekt aktuálně vybraného dokumentu liší od projektu vybraného v **Průzkumníka řešení**.  
   
 3. **Aktuální dokument**: Zobrazí chyby, varování a zprávy pro aktuálně vybraného dokumentu v **Editor** nebo **Průzkumníka řešení**.  
   

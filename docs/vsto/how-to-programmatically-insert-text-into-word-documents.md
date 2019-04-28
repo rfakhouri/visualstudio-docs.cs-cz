@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a24fde5f04a88de7eec34836df38bc1cca8669ab
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3e04f3b4420cc8f3b56eee304ae199cf87fa4a3a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060628"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412576"
 ---
 # <a name="how-to-programmatically-insert-text-into-word-documents"></a>Postupy: Vkládání textu do dokumentů aplikace Word prostřednictvím kódu programu
   Existují tři základní způsoby vkládání textu do dokumentů aplikace Microsoft Office Word:
@@ -33,7 +33,7 @@ ms.locfileid: "60060628"
 - Použití <xref:Microsoft.Office.Interop.Word.Selection.TypeText%2A> metodu <xref:Microsoft.Office.Interop.Word.Selection> objektu pro vložení textu na výběr nebo kurzor.
 
 > [!NOTE]
->  Můžete také vložit text do ovládacích prvků obsahu a záložky. Další informace najdete v tématu [ovládací prvky obsahu](../vsto/content-controls.md) a [Bookmark – ovládací prvek](../vsto/bookmark-control.md).
+> Můžete také vložit text do ovládacích prvků obsahu a záložky. Další informace najdete v tématu [ovládací prvky obsahu](../vsto/content-controls.md) a [Bookmark – ovládací prvek](../vsto/bookmark-control.md).
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 

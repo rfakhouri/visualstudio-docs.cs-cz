@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a5543805741f1c64627aee15590d61635a89b1c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fcc08f9af3452289b3e0e76fe6970e75e8f854db
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109826"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63414816"
 ---
 # <a name="customizing-copy-behavior"></a>Přizpůsobení chování kopírování
 V jazyce specifickém pro doménu (DSL) vytvořené pomocí Visual Studio Visualization and Modeling SDK je možné změnit, co se stane, když uživatel zkopíruje a vloží prvky.
@@ -232,7 +232,7 @@ Zobrazit [jak: Přidání obslužné rutiny operace přetažení myší](../mode
  Mnoho aspektů DSL chování s ohledem na kopírování, vložení, vytváření a odstraňování objektů se řídí instance <xref:Microsoft.VisualStudio.Modeling.ElementOperations> , který je s velkou provázaností do diagramu. Můžete změnit chování vašeho kódu DSL odvozením vlastních tříd z <xref:Microsoft.VisualStudio.Modeling.ElementOperations> a přepsáním <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.ElementOperations%2A> vlastnosti diagramu třídy.
 
 > [!TIP]
->  Další informace o přizpůsobení modelu pomocí kódu programu najdete v tématu [navigace a aktualizace modelu v programovém kódu](../modeling/navigating-and-updating-a-model-in-program-code.md).
+> Další informace o přizpůsobení modelu pomocí kódu programu najdete v tématu [navigace a aktualizace modelu v programovém kódu](../modeling/navigating-and-updating-a-model-in-program-code.md).
 
  ![Sekvenční diagram pro operace kopírování](../modeling/media/dslcopyseqdiagram.png)
 

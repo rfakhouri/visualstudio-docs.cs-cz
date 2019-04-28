@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6be7cad9034f67a00d8f795a5c4f4f9ad45c1abe
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MT
+ms.openlocfilehash: e5dfb9a6489fed2c21d05799e9196c813a224571
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55922365"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422947"
 ---
 # <a name="t4-assembly-directive"></a>T4 – direktiva Assembly
 
@@ -21,7 +21,7 @@ V době návrhu textové šablony sady Visual Studio `assembly` načte direktiva
  Obecný přehled o psaní textových šablon, naleznete v tématu [vytvoření textové šablony T4](../modeling/writing-a-t4-text-template.md).
 
 > [!NOTE]
->  Není nutné `assembly` direktivy šablony textu za běhu (Předzpracované). Místo toho přidejte potřebná sestavení do **odkazy** projektu sady Visual Studio.
+> Není nutné `assembly` direktivy šablony textu za běhu (Předzpracované). Místo toho přidejte potřebná sestavení do **odkazy** projektu sady Visual Studio.
 
 ## <a name="using-the-assembly-directive"></a>Použití direktivy assembly
  Syntaxe této direktivy je následující:

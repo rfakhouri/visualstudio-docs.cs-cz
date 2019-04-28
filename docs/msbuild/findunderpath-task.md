@@ -19,11 +19,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9c22e2465b79faa68f8789cefeeb181c2e15b73b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602180"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62539704"
 ---
 # <a name="findunderpath-task"></a>FindUnderPath – úloha
 Určuje, které položky v kolekci určenou položku mají cesty, které jsou v nebo nižší než zadané složky.

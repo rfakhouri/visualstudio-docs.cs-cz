@@ -11,21 +11,21 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d07ba77739b4ff9749591405daf12fa66bae94e5
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 255d752e09a14e784de276fbed0d86a587bc4512
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56715946"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411245"
 ---
 # <a name="how-to-debug-a-custom-debug-engine"></a>Postupy: Ladění vlastního ladicího stroje
 Typ projektu spustí ladicí stroj (DE) z <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg.DebugLaunch%2A> metody. To znamená, že je DE spuštění pod kontrolou instance [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] řízení typ projektu. Ale tuto instanci [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] nelze ladit DE. Následují kroky, které umožňují ladění vlastního DE.
 
 > [!NOTE]
->  :     V postupu "Ladění vlastního ladicího stroje" je nutné počkat DE spuštění než budete moct připojit k němu. Pokud jste na začátku vaše DE, který se zobrazí při spuštění DE okno se zprávou, můžete připojit v daném okamžiku a zrušte zaškrtnutí pole zprávy pokračujte. Tímto způsobem můžete zachytit všechny DE události.
+> :     V postupu "Ladění vlastního ladicího stroje" je nutné počkat DE spuštění než budete moct připojit k němu. Pokud jste na začátku vaše DE, který se zobrazí při spuštění DE okno se zprávou, můžete připojit v daném okamžiku a zrušte zaškrtnutí pole zprávy pokračujte. Tímto způsobem můžete zachytit všechny DE události.
 
 > [!WARNING]
->  Musíte mít nainstalován předtím, než se pokusíte následující postupy vzdálené ladění. Zobrazit [vzdálené ladění](../../debugger/remote-debugging.md) podrobnosti.
+> Musíte mít nainstalován předtím, než se pokusíte následující postupy vzdálené ladění. Zobrazit [vzdálené ladění](../../debugger/remote-debugging.md) podrobnosti.
 
 ## <a name="debug-a-custom-debug-engine"></a>Ladění vlastního ladicího stroje
 

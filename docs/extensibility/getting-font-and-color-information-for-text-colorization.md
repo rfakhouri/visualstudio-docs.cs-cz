@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1f6e55c99d874bd18f0045746bbab4ac96370bc5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8f03b23076b1eea203166bb0322f05927480a278
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60042404"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417161"
 ---
 # <a name="get-font-and-color-information-for-text-colorization"></a>Získání informací o písma a barvy pro barevné zvýraznění textu
 Proces, který vykreslí nebo barevně zvýrazněné text se zobrazí prvky uživatelského rozhraní (UI) závisí na typu projektu, technologie a developer předvolby. **Písma a barvy** stránku vlastností ukládá nastavení.
@@ -24,7 +24,7 @@ Proces, který vykreslí nebo barevně zvýrazněné text se zobrazí prvky uži
  Většina implementací, které se zobrazí text barevně zvýrazněné potřebují <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults> a přidružené rozhraní pro nastavení zobrazení prezentace, načítání a ukládání textu.
 
 > [!NOTE]
->  Při přizpůsobování základní editor (která podporuje **Text EditorCategory**), se doporučuje použít technologii barevné zvýraznění ve službě jazyka. Další informace najdete v tématu [přehled písma a barvy](../extensibility/font-and-color-overview.md).
+> Při přizpůsobování základní editor (která podporuje **Text EditorCategory**), se doporučuje použít technologii barevné zvýraznění ve službě jazyka. Další informace najdete v tématu [přehled písma a barvy](../extensibility/font-and-color-overview.md).
 
 ## <a name="get-default-font-and-color-information"></a>Získání informací o výchozí písmo a barvy
  Všechny **písma a barvy** nastavení jakékoli okno zobrazení textu musí být zadán v **zobrazit položky** jednoho **kategorie**. Další informace najdete v tématu [písma a barvy, prostředí, dialogové okno Možnosti](../ide/reference/fonts-and-colors-environment-options-dialog-box.md).

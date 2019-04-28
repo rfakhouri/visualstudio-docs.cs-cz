@@ -14,12 +14,12 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 862e89ad775d28669ed21e3fe2d292aefb363a91
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 15a6eeea6ebf75513419cc763b2e29a6b6264391
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59668185"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436798"
 ---
 # <a name="item-metadata-in-task-batching"></a>Metadata položek v dávkování úloh
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -86,7 +86,7 @@ ms.locfileid: "59668185"
  [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] více položek seznamů lze rozdělit do dávek na základě stejné metadat. To umožňuje snadno k rozdělení seznamů různých položek do dávek pro tvorbu více sestavení. Například můžete mít seznam položek souborů .cs rozdělit do batch aplikace a batch sestavení a souborů prostředků, které jsou rozdělené do batch aplikace a batch sestavení seznam položek. Můžete pak použít dávkové zpracování předat tyto seznamy položek do jednoho úkolu a vytvářejte aplikace a sestavení.  
   
 > [!NOTE]
->  Pokud seznam položek předávaný do úlohy neobsahuje žádné položky odkazované metadaty, každá položka v seznamu položek je předán do každé dávky.  
+> Pokud seznam položek předávaný do úlohy neobsahuje žádné položky odkazované metadaty, každá položka v seznamu položek je předán do každé dávky.  
   
  Následující příklad ukazuje, jak rozdělit do dávek na základě metadat položky seznamu více položek. `ExampColl` a `ExampColl2` každý seznamy položek jsou rozdělené do tří dávek na základě `Number` metadata položky. Přítomnost `%(Number)`v `Text` atribut informuje [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] , že má být provedena dávkování. `ExampColl` a `ExampColl2` seznamy položek jsou rozdělené do tří dávek na základě `Number` metadata a každá dávka je předán samostatně do úkolu.  
   

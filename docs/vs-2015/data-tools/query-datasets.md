@@ -9,12 +9,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c392323905676706835a94bd86fcd53e3f6b8cc7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 69ca24f45384ef650c4a692a8ec0afc079f19bac
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054778"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425375"
 ---
 # <a name="query-datasets"></a>Datové sady dotazů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ K vyhledání konkrétních záznamů v datové sadě, použijte metodu FindBy v
  V datové sadě, názvy tabulek a sloupců ve výchozím nastavení rozlišují – to znamená, tabulku v datovou sadu s názvem "Zákazníci" lze také odkazovat jako "zákazníci." To odpovídá zásady vytváření názvů v mnoha databází, včetně SQL Server.In SQL Server, výchozím chováním je, že názvy datových prvků nelze odlišit pouze ve velikosti písmen.  
   
 > [!NOTE]
->  Na rozdíl od datové sady dokumenty XML jsou malá a velká písmena, tak, aby byly názvy datových prvků, které jsou definovány ve schématech malá a velká písmena. Například protokol schéma umožňuje schéma pro definování tabulky nazvané "Zákazníci" a jiné tabulky nazvané "zákazníků." To může způsobit kolize názvů při schéma, které obsahuje prvky, které se liší pouze velikostí písma se používá ke generování třídy datové sady.  
+> Na rozdíl od datové sady dokumenty XML jsou malá a velká písmena, tak, aby byly názvy datových prvků, které jsou definovány ve schématech malá a velká písmena. Například protokol schéma umožňuje schéma pro definování tabulky nazvané "Zákazníci" a jiné tabulky nazvané "zákazníků." To může způsobit kolize názvů při schéma, které obsahuje prvky, které se liší pouze velikostí písma se používá ke generování třídy datové sady.  
   
  Rozlišování velikosti písmen, ale může být faktor při tom, jak je interpretován data v datové sadě. Například pokud můžete filtrovat data v tabulce datové sady, kritéria hledání může vrátit různé výsledky v závislosti na tom, jestli je výsledkem porovnávání malá a velká písmena. Rozlišování velikosti písmen filtrování, hledání a řazení podle nastavení datové sady můžete řídit <xref:System.Data.DataSet.CaseSensitive%2A> vlastnost. Podle výchozího nastavení dědí všechny tabulky v datové sadě hodnota této vlastnosti. (Tato vlastnost pro každé jednotlivé tabulky můžete přepsat tak, že nastavíte v tabulce <xref:System.Data.DataTable.CaseSensitive%2A> vlastnosti.)  
   

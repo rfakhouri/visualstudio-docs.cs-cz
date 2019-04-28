@@ -9,12 +9,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 23838c7e68a3da18ba5438a2c56814d6dc27f9b8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c8a701715c0adff479fa29dbe9c9b28287031dfd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60102650"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428291"
 ---
 # <a name="step-9-try-other-features"></a>Krok 9: Vyzkoušení dalších funkcí
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,22 +28,22 @@ Chcete-li získat další informace, zkuste změnit ikony a barvy, přidat časo
 - Nahraďte ikony a barvy těmi, které zvolíte.  
   
     > [!TIP]
-    >  Podívejte se na popisku [Forecolor](http://msdn.microsoft.com/library/system.windows.forms.control.forecolor%28v=vs.110%29.aspx) vlastnost.  
+    > Podívejte se na popisku [Forecolor](http://msdn.microsoft.com/library/system.windows.forms.control.forecolor%28v=vs.110%29.aspx) vlastnost.  
   
 - Přidejte časovač hry, který sleduje, jak dlouho hráči trvá, než vyhraje.  
   
     > [!TIP]
-    >  K tomu můžete přidat popisek, který ve formuláři nad kontejnerem TableLayoutPanel zobrazí uplynulý čas, a do formuláře přidat další časovač pro sledování času. Použijte kód ke spuštění časovače, když hráč zahájí hru, a zastavení časovače, jakmile hráč spojí poslední dvě ikony.  
+    > K tomu můžete přidat popisek, který ve formuláři nad kontejnerem TableLayoutPanel zobrazí uplynulý čas, a do formuláře přidat další časovač pro sledování času. Použijte kód ke spuštění časovače, když hráč zahájí hru, a zastavení časovače, jakmile hráč spojí poslední dvě ikony.  
   
 - Pokud hráč najde shodu, přidejte zvuk, jiný zvuk, když hráč odkryje dvě ikony, které neodpovídají, a třetí zvuk, když program znovu skryje ikony.  
   
     > [!TIP]
-    >  Chcete-li přehrát zvuky, můžete použít obor názvů System.media. Zobrazit [Play Sounds in Windows Forms App (C# .NET)](http://youtu.be/qOh4ooHg1UU) nebo [jak pro přehrávání Audio In Visual Basic](http://youtu.be/-4oPDeQrtMs) Další informace.  
+    > Chcete-li přehrát zvuky, můžete použít obor názvů System.media. Zobrazit [Play Sounds in Windows Forms App (C# .NET)](http://youtu.be/qOh4ooHg1UU) nebo [jak pro přehrávání Audio In Visual Basic](http://youtu.be/-4oPDeQrtMs) Další informace.  
   
 - Udělejte hru obtížnější tím, že zvětšíte hrací plochu.  
   
     > [!TIP]
-    >  Bude potřeba udělat více než jen přidat řádky a sloupce do kontejneru TableLayoutPanel – bude také nutné zvážit počet ikon, které vytvoříte.  
+    > Bude potřeba udělat více než jen přidat řádky a sloupce do kontejneru TableLayoutPanel – bude také nutné zvážit počet ikon, které vytvoříte.  
   
 - Udělejte hru náročnější tím, že skryjete první ikonu, pokud je hráč příliš pomalý a nezvolí druhou ikonu do vypršení určitého časového limitu.  
   

@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 179192e5935f3a97f38dc3a1b78dd1bd760c303d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 3ecbed7e1f57150e798818c24cb36a1de24e58aa
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56636775"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63423829"
 ---
 # <a name="project-configuration-for-building"></a>Konfigurace projektu pro sestavení
 Seznam konfigurací řešení pro dané řešení se spravuje přes dialogové okno konfigurace řešení.
@@ -26,7 +26,7 @@ Seznam konfigurací řešení pro dané řešení se spravuje přes dialogové o
  Pokud uživatel vytvoří nová konfigurace řešení s názvem MyConfig2, Project1 sváže jeho konfiguraci ladění konfigurace řešení ve výchozím nastavení. "Project2" také vytvoří vazbu jeho konfigurace MyConfig2 konfigurace řešení ve výchozím nastavení.
 
 > [!NOTE]
->  Vazba je velká a malá písmena.
+> Vazba je velká a malá písmena.
 
  Když uživatel vybere **vícenásobný výběr** položek v rozevíracím seznamu konfigurace prostředí se zobrazí dialogové okno, které poskytuje seznam dostupných konfigurací.
 
@@ -43,7 +43,7 @@ Seznam konfigurací řešení pro dané řešení se spravuje přes dialogové o
  Závislosti projektu určení pořadí, ve kterém sestavení projektů. Na kartě pořadí sestavení v dialogovém okně můžete zobrazit přesný pořadí, ve kterém se projekty v rámci řešení sestavení a chcete-li změnit pořadí sestavení, použijte kartu závislosti.
 
 > [!NOTE]
->  Projekty v seznamu, které jejich zaškrtnutých políček, ale zobrazují šedě, se přidaly prostředí z důvodu explicitní závislosti, které jsou určené <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildDependency> nebo <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployDependency> rozhraní a nedá se změnit. Například přidáním odkazu na projekt z [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] projektu do jiného projektu automaticky přidá závislost sestavení, který lze odebrat pouze tak, že odstraníte odkaz. Projekty, jejichž zaškrtávací políčka jasné a zobrazují šedě, nelze vybrat, protože to by vytvořilo smyčku závislosti (například Project1 by být závislá na "project2" a "project2" by být závislá na Project1), který by manipulace blokováním do sestavení.
+> Projekty v seznamu, které jejich zaškrtnutých políček, ale zobrazují šedě, se přidaly prostředí z důvodu explicitní závislosti, které jsou určené <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildDependency> nebo <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployDependency> rozhraní a nedá se změnit. Například přidáním odkazu na projekt z [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] projektu do jiného projektu automaticky přidá závislost sestavení, který lze odebrat pouze tak, že odstraníte odkaz. Projekty, jejichž zaškrtávací políčka jasné a zobrazují šedě, nelze vybrat, protože to by vytvořilo smyčku závislosti (například Project1 by být závislá na "project2" a "project2" by být závislá na Project1), který by manipulace blokováním do sestavení.
 
  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] procesy sestavení zahrnují typické kompilace a operace odkazů, které jsou vyvolány pomocí jediného příkazu sestavení. Dva procesy sestavení může také podporovat: spuštění operace vyčištění odstranit všechny výstupní položky od předchozího sestavení a kontrolu aktuálnosti k určení, jestli se změnila výstupní položky v konfiguraci.
 

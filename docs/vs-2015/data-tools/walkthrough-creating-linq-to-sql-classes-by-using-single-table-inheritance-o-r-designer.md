@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a7dfd293f5b2219eab6c3a2896c800a1337f2c8c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2dac656f9a765875fc552739b814538582200cc8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60111971"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424689"
 ---
 # <a name="walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>Návod: Vytvoření třídy LINQ to SQL s použitím dědičnosti jedné tabulky (O/R Designer)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ ms.locfileid: "60111971"
 1. V **Průzkumníka serveru**/**Průzkumník databáze**, klikněte pravým tlačítkem myši **tabulky** uzel a klikněte na tlačítko **přidat novou tabulku**.  
   
     > [!NOTE]
-    >  Můžete použít databázi Northwind nebo jakékoli jiné databáze, které můžete přidat tabulku.  
+    > Můžete použít databázi Northwind nebo jakékoli jiné databáze, které můžete přidat tabulku.  
   
 2. V Návrháři tabulek přidejte následující sloupce do tabulky:  
   
@@ -96,7 +96,7 @@ ms.locfileid: "60111971"
 2. Pojmenujte projekt **InheritanceWalkthrough**.  
   
     > [!NOTE]
-    >  [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] Se podporuje v projektech Visual Basic a C#. Vytvoření nového projektu v jednom z těchto jazyků.  
+    > [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] Se podporuje v projektech Visual Basic a C#. Vytvoření nového projektu v jednom z těchto jazyků.  
   
 3. Klikněte na tlačítko **formulářová aplikace Windows** šablonu a pak klikněte na tlačítko **OK**. Další informace najdete v tématu [klientské aplikace](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
   

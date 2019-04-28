@@ -14,12 +14,12 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 192fdd737816d2239b15530e2d5c03d73f82e0d5
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: bd65f12c065ee1d96934c6790779c8b4ca87b393
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59657503"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426307"
 ---
 # <a name="msbuild-toolset-toolsversion"></a>Sada nástrojů MSBuild (atribut ToolsVersion)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -97,7 +97,7 @@ Nástroj MSBuild používá sada nástrojů pro úkoly, cíle a nástrojů k ses
  Jak je popsáno výše v tomto tématu, nástroj MSBuild používá klíč registru pro zadání cesty základní nástroje. Pokud klíč podklíč, nástroj MSBuild používá pro zadání cesty dílčí, který obsahuje další nástroje. V takovém případě sada nástrojů je definována kombinací definice vlastností, které jsou definovány v obou klíčů.  
   
 > [!NOTE]
->  Pokud názvy vlastností sady nástrojů kolidují, přepíše hodnotu, která je definována pro podklíče cestu hodnotu, která je definována pro kořenovou cestu klíče.  
+> Pokud názvy vlastností sady nástrojů kolidují, přepíše hodnotu, která je definována pro podklíče cestu hodnotu, která je definována pro kořenovou cestu klíče.  
   
  Dílčí sady nástrojů aktivní, z nichž se nachází `VisualStudioVersion` vlastnost sestavení. Tato vlastnost může mít jednu z těchto hodnot:  
   

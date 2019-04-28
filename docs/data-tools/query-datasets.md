@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: ccd8bd0cb37aaa2d4bfad7ea20979987048bf862
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: bec1c878dce59ccb5444d74ba0255c9ceb705780
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050670"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63402745"
 ---
 # <a name="query-datasets"></a>Datové sady dotazů
 K vyhledání konkrétních záznamů v datové sadě, použijte `FindBy` metodu na objekt DataTable, psát vlastní příkazu foreach k vytvoření smyčky přes kolekce řádků v tabulce, nebo použijte [LINQ to DataSet](/dotnet/framework/data/adonet/linq-to-dataset).
@@ -25,7 +25,7 @@ K vyhledání konkrétních záznamů v datové sadě, použijte `FindBy` metodu
 V datové sadě, názvy tabulek a sloupců ve výchozím nastavení rozlišují – to znamená, tabulku v datovou sadu s názvem "Zákazníci" lze také odkazovat jako "zákazníci." To stejné zásady vytváření názvů v mnoha databází, včetně SQL serveru. V systému SQL Server výchozím chováním je, že názvy datových prvků nelze odlišit pouze ve velikosti písmen.
 
 > [!NOTE]
->  Na rozdíl od datové sady dokumenty XML jsou malá a velká písmena, tak, aby byly názvy datových prvků, které jsou definovány ve schématech malá a velká písmena. Například protokol schéma umožňuje schéma pro definování tabulky nazvané "Zákazníci" a jiné tabulky nazvané "zákazníků." To může způsobit kolize názvů při schéma, které obsahuje prvky, které se liší pouze velikostí písma se používá ke generování třídy datové sady.
+> Na rozdíl od datové sady dokumenty XML jsou malá a velká písmena, tak, aby byly názvy datových prvků, které jsou definovány ve schématech malá a velká písmena. Například protokol schéma umožňuje schéma pro definování tabulky nazvané "Zákazníci" a jiné tabulky nazvané "zákazníků." To může způsobit kolize názvů při schéma, které obsahuje prvky, které se liší pouze velikostí písma se používá ke generování třídy datové sady.
 
 Rozlišování velikosti písmen, ale může být faktor při tom, jak je interpretován data v datové sadě. Například pokud můžete filtrovat data v tabulce datové sady, kritéria hledání může vrátit různé výsledky v závislosti na tom, jestli je výsledkem porovnávání malá a velká písmena. Rozlišování velikosti písmen filtrování, hledání a řazení podle nastavení datové sady můžete řídit <xref:System.Data.DataSet.CaseSensitive%2A> vlastnost. Podle výchozího nastavení dědí všechny tabulky v datové sadě hodnota této vlastnosti. (Tato vlastnost pro každé jednotlivé tabulky můžete přepsat tak, že nastavíte v tabulce <xref:System.Data.DataTable.CaseSensitive%2A> vlastnosti.)
 
@@ -68,7 +68,7 @@ Můžete použít <xref:System.Data.DataRelation> objekt vyhledejte souvisejíc�
 Tato stránka obsahuje příklady použití typové datové sady. Informace o navigace v relacích v netypové datové sady, naleznete v tématu [procházení datových relací](/dotnet/framework/data/adonet/dataset-datatable-dataview/navigating-datarelations).
 
 > [!NOTE]
->  Pokud pracujete v aplikaci Windows Forms a používání funkcí datové vazby k zobrazení dat, generovaný návrhářem formuláře může poskytnout dostatek funkcí pro vaši aplikaci. Další informace najdete v tématu [vytvoření vazby ovládacích prvků k datům v sadě Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md). Konkrétně, naleznete v tématu [vztahy v datových sadách](relationships-in-datasets.md).
+> Pokud pracujete v aplikaci Windows Forms a používání funkcí datové vazby k zobrazení dat, generovaný návrhářem formuláře může poskytnout dostatek funkcí pro vaši aplikaci. Další informace najdete v tématu [vytvoření vazby ovládacích prvků k datům v sadě Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md). Konkrétně, naleznete v tématu [vztahy v datových sadách](relationships-in-datasets.md).
 
 Následující příklady kódu ukazují, jak procházet nahoru a dolů vztahy v typových datových sadách. Příklady použití kód zadali <xref:System.Data.DataRow>s (`NorthwindDataSet.OrdersRow`) a vygenerovaný FindBy*PrimaryKey* (`FindByCustomerID`) metody pro vyhledání požadovaný řádek a vrácení souvisejících záznamů. V příkladech kompilace a spuštění správně pouze v případě, že máte:
 

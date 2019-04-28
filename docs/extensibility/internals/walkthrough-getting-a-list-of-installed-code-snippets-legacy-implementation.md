@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4635030dad4b43aa27294c8425a70d3f53e5715e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 910ee20cf08c1d5a42e6b6a430f7b51ccddf4925
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056845"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63429380"
 ---
 # <a name="walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation"></a>Návod: Získání seznamu nainstalovaných fragmentů kódu (implementace starší verze)
 Fragment kódu je část kódu, který může být vložen do zdrojové vyrovnávací paměti pomocí příkazu nabídky (která umožňuje vybrat ze seznamu nainstalovaných fragmentů kódu,) nebo pomocí zástupce fragment výběrem ze seznamu doplňování technologie IntelliSense.
@@ -106,7 +106,7 @@ Fragment kódu je část kódu, který může být vložen do zdrojové vyrovná
 1. Následující metoda ukazuje, jak volat `GetSnippets` metoda po dokončení operace analýzy. <xref:Microsoft.VisualStudio.Package.LanguageService.OnParseComplete%2A> Metoda je volána pro provedení operace analýzy, která byla spuštěna s odůvodněním <xref:Microsoft.VisualStudio.Package.ParseReason>.
 
 > [!NOTE]
->  `expansionsList` Seznam pole se uloží do mezipaměti z důvodů výkonu. Změny fragmenty kódu se neprojeví v seznamu, dokud služba jazyka je zastavit a znovu načíst (třeba podle zastavení a restartování [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]).
+> `expansionsList` Seznam pole se uloží do mezipaměti z důvodů výkonu. Změny fragmenty kódu se neprojeví v seznamu, dokud služba jazyka je zastavit a znovu načíst (třeba podle zastavení a restartování [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]).
 
 ```csharp
 class TestLanguageService : LanguageService

@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.assetid: 9d3186f3-07d2-441f-b33e-435e95d8a0b8
 caps.latest.revision: 11
 ms.author: brgeorge
-ms.openlocfilehash: c09419d1294d51fe0b566acc649bc3f9612acfca
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 421ff85831bb611b655de2bc35f01423b61921a2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117173"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436576"
 ---
 # <a name="shared-colors"></a>Sdílené barvy
 Sem vložte úvod.  
@@ -31,7 +31,7 @@ Sem vložte úvod.
 - **Pomocí řízení barvy, které jsou vhodné pro jejich umístění.** V některých stavech některé ovládací prvky sady Visual Studio nemají samostatné ohraničení a barvy pozadí. Místo toho že sbírání tyto barvy z plochy za nimi stojí. Ujistěte se, že vždy používáte token názvy, které jsou vhodné pro umístění, ve kterém jsou umístění ovládacího prvku.  
   
 > [!IMPORTANT]
->  Nepoužívejte tokeny v kategorii "Stránka Start" nebo "Jablečného"!  
+> Nepoužívejte tokeny v kategorii "Stránka Start" nebo "Jablečného"!  
   
 ### <a name="command-structures"></a>Příkaz struktury  
   
@@ -65,7 +65,7 @@ Nepoužívejte...
   
 |Součást|Prvek|Název tokenu: Category.Color|  
 |---------------|-------------|--------------------------------|  
-|![Výchozí název nabídky](../extensibility/ux-guidelines/media/0303-002-menutitledefault.png "0303 002_MenuTitleDefault")<br /><br /> **Název nabídky**|Pozadí|Žádné|  
+|![Výchozí název nabídky](../extensibility/ux-guidelines/media/0303-002-menutitledefault.png "0303 002_MenuTitleDefault")<br /><br /> **Název nabídky**|Pozadí|Žádný|  
 |![Výchozí název nabídky](../extensibility/ux-guidelines/media/0303-002-menutitledefault.png "0303 002_MenuTitleDefault")<br /><br /> **Název nabídky**|Popředí (Text)|`Environment.CommandBarTextActive`|  
 |![Název nabídky s výchozí piktogram](../extensibility/ux-guidelines/media/0303-003-menutitlewithglyphdefault.png "0303 003_MenuTitleWithGlyphDefault")<br /><br /> **Název nabídky glyfem**|Popředí (piktogram)|`Environment.CommandBarMenuGlyph`|  
 |![Název nabídky s výchozí piktogram](../extensibility/ux-guidelines/media/0303-003-menutitlewithglyphdefault.png "0303 003_MenuTitleWithGlyphDefault")<br /><br /> **Název nabídky glyfem**|Ohraničení|Žádné|  
@@ -92,7 +92,7 @@ Nepoužívejte...
   
 |Součást|Prvek|Název tokenu: Category.Color|  
 |---------------|-------------|--------------------------------|  
-|![Název nabídky glyfem zakázané](../extensibility/ux-guidelines/media/0303-008-menutitlewithglyphdisabled.png "0303 008_MenuTitleWithGlyphDisabled")<br /><br /> **Název nabídky glyfem**|Pozadí|Žádný|  
+|![Název nabídky glyfem zakázané](../extensibility/ux-guidelines/media/0303-008-menutitlewithglyphdisabled.png "0303 008_MenuTitleWithGlyphDisabled")<br /><br /> **Název nabídky glyfem**|Pozadí|Žádné|  
 |![Název nabídky glyfem zakázané](../extensibility/ux-guidelines/media/0303-008-menutitlewithglyphdisabled.png "0303 008_MenuTitleWithGlyphDisabled")<br /><br /> **Název nabídky glyfem**|Popředí (Text)|`Environment.CommandBarTextInactive`|  
 |![Název nabídky glyfem zakázané](../extensibility/ux-guidelines/media/0303-008-menutitlewithglyphdisabled.png "0303 008_MenuTitleWithGlyphDisabled")<br /><br /> **Název nabídky glyfem**|Popředí (piktogram)|`Environment.CommandBarTextInactive`|  
 |![Název nabídky glyfem zakázané](../extensibility/ux-guidelines/media/0303-008-menutitlewithglyphdisabled.png "0303 008_MenuTitleWithGlyphDisabled")<br /><br /> **Název nabídky glyfem**|Ohraničení|Žádné|  
@@ -240,7 +240,7 @@ Nepoužívejte...
 ##### <a name="BKMK_CommandComboBox"></a> Pole se seznamem  
   
 > [!IMPORTANT]
->  Pole se seznamem se podobají rozevírací seznamy, ale zahrnují určitá oblast upravitelný text. Pokud rozevírací seznam neobsahuje určitá oblast upravitelný text, použití tokenů barva nalezené pod [rozevíracího seznamu](../misc/shared-colors.md#BKMK_CommandDropDown).  
+> Pole se seznamem se podobají rozevírací seznamy, ale zahrnují určitá oblast upravitelný text. Pokud rozevírací seznam neobsahuje určitá oblast upravitelný text, použití tokenů barva nalezené pod [rozevíracího seznamu](../misc/shared-colors.md#BKMK_CommandDropDown).  
   
  ![Červená pole se seznamem značka](../extensibility/ux-guidelines/media/0303-029-comboboxredline.png "0303 029_ComboBoxRedline")  
   
@@ -318,7 +318,7 @@ Nepoužívejte...
 ##### <a name="BKMK_CommandDropDown"></a> Rozevírací seznam  
   
 > [!IMPORTANT]
->  Rozevírací seznamy jsou podobné polích se seznamem, ale nemají upravitelný text oblastech. Pokud rozevírací seznam obsahuje určitá oblast upravitelný text, použití tokenů barva nalezené pod [– pole se seznamem](../misc/shared-colors.md#BKMK_CommandComboBox).  
+> Rozevírací seznamy jsou podobné polích se seznamem, ale nemají upravitelný text oblastech. Pokud rozevírací seznam obsahuje určitá oblast upravitelný text, použití tokenů barva nalezené pod [– pole se seznamem](../misc/shared-colors.md#BKMK_CommandComboBox).  
   
  ![Vyřadit&#45;dolů červená značka](../extensibility/ux-guidelines/media/0303-042-dropdownredline.png "0303 042_DropdownRedline")  
   
@@ -949,7 +949,7 @@ Nepoužívejte...
 |![Vstupní pole hledání zakázané](../extensibility/ux-guidelines/media/0303-121-searchinputfielddisabled.png "0303 121_SearchInputFieldDisabled")<br /><br /> **Vstupní pole**|Popředí (Text)|`SearchControl.Disabled`|  
 |![Vstupní pole hledání zakázané](../extensibility/ux-guidelines/media/0303-121-searchinputfielddisabled.png "0303 121_SearchInputFieldDisabled")<br /><br /> **Vstupní pole**|Ohraničení|`SearchControl.DisabledBorder`|  
 |![Vstupní pole hledání zakázané](../extensibility/ux-guidelines/media/0303-121-searchinputfielddisabled.png "0303 121_SearchInputFieldDisabled")<br /><br /> **Vstupní pole**|Oddělovač|`SearchControl.DropDownSeparator`|  
-|![Tlačítko hledání akce zakázané](../extensibility/ux-guidelines/media/0303-122-searchactionbuttondisabled.png "0303 122_SearchActionButtonDisabled")<br /><br /> **Akce tlačítka**|Pozadí|Žádné|  
+|![Tlačítko hledání akce zakázané](../extensibility/ux-guidelines/media/0303-122-searchactionbuttondisabled.png "0303 122_SearchActionButtonDisabled")<br /><br /> **Akce tlačítka**|Pozadí|Žádný|  
 |![Tlačítko hledání akce zakázané](../extensibility/ux-guidelines/media/0303-122-searchactionbuttondisabled.png "0303 122_SearchActionButtonDisabled")<br /><br /> **Akce tlačítka**|Popředí (piktogram)|`SearchControl.ActionButtonDisabledGlyph`|  
 |![Tlačítko hledání akce zakázané](../extensibility/ux-guidelines/media/0303-122-searchactionbuttondisabled.png "0303 122_SearchActionButtonDisabled")<br /><br /> **Akce tlačítka**|Ohraničení|Žádné|  
 |![Hledání rozevírací&#45;tlačítko zakázané](../extensibility/ux-guidelines/media/0303-123-searchdropdownbuttondisabled.png "0303 123_SearchDropdownButtonDisabled")<br /><br /> **Tlačítko rozevíracího seznamu**|Pozadí|Žádné|  
@@ -1433,7 +1433,7 @@ Nepoužívejte...
 |Stav|Součást|Prvek|Název tokenu: Category.Color|  
 |-----------|---------------|-------------|--------------------------------|  
 |Výchozí (vybrané)|Tabulátor|Pozadí|`ManifestDesigner.TabActive`|  
-|Výchozí (vybrané)|Karta|Ohraničení|Žádný|  
+|Výchozí (vybrané)|Karta|Ohraničení|Žádné|  
 |Výchozí (vybrané)|Podokno s popisem|Pozadí|`ManifestDesigner.DescriptionPane`|  
 |Výchozí (vybrané)|Stránka obsahu|Pozadí|`ManifestDesigner.Background`|  
 |Výchozí (vybrané)|Stránka obsahu|Dialogové okno text pomocné rutiny|`ManifestDesigner.WatermarkText`<br /><br /> Tento název tokenu se neshoduje s jeho funkci.|  
@@ -1576,8 +1576,8 @@ Použití...
 |---------------|-------------|--------------------------------|  
 |![Panel nástrojů nadřazený uzel](../extensibility/ux-guidelines/media/0303-190-toolboxparentnode.png "0303 190_ToolboxParentNode")<br /><br /> **Nadřazený uzel**|Pozadí|`Environment.ToolboxContent`<br /><br /> Záhlaví<br /><br /> `Environment.ToolWindowBackground`<br /><br /> Jednotlivé položky nebo celé okno, pokud žádné dostupné ovládací prvky|  
 |![Panel nástrojů podřízený uzel](../extensibility/ux-guidelines/media/0303-191-toolboxchildnode.png "0303 191_ToolboxChildNode")<br /><br /> **Podřízený uzel**|Pozadí|`Environment.ToolboxContent`<br /><br /> Záhlaví<br /><br /> `Environment.ToolWindowBackground`<br /><br /> Jednotlivé položky nebo celé okno, pokud žádné dostupné ovládací prvky|  
-|![Panel nástrojů nadřazený uzel](../extensibility/ux-guidelines/media/0303-190-toolboxparentnode.png "0303 190_ToolboxParentNode")<br /><br /> **Nadřazený uzel**|Ohraničení|Žádné|  
-|![Panel nástrojů podřízený uzel](../extensibility/ux-guidelines/media/0303-191-toolboxchildnode.png "0303 191_ToolboxChildNode")<br /><br /> **Podřízený uzel**|Ohraničení|Žádné|  
+|![Panel nástrojů nadřazený uzel](../extensibility/ux-guidelines/media/0303-190-toolboxparentnode.png "0303 190_ToolboxParentNode")<br /><br /> **Nadřazený uzel**|Ohraničení|Žádný|  
+|![Panel nástrojů podřízený uzel](../extensibility/ux-guidelines/media/0303-191-toolboxchildnode.png "0303 191_ToolboxChildNode")<br /><br /> **Podřízený uzel**|Ohraničení|Žádný|  
 |![Panel nástrojů nadřazený uzel](../extensibility/ux-guidelines/media/0303-190-toolboxparentnode.png "0303 190_ToolboxParentNode")<br /><br /> **Nadřazený uzel**|Popředí (piktogram)|`Environment.ToolboxContent`|  
 |![Panel nástrojů podřízený uzel](../extensibility/ux-guidelines/media/0303-191-toolboxchildnode.png "0303 191_ToolboxChildNode")<br /><br /> **Podřízený uzel**|Popředí (piktogram)|`Environment.ToolboxContent`|  
 |![Panel nástrojů nadřazený uzel](../extensibility/ux-guidelines/media/0303-190-toolboxparentnode.png "0303 190_ToolboxParentNode")<br /><br /> **Nadřazený uzel**|Popředí (Text)|`Environment.ToolboxContent`|  
@@ -1605,8 +1605,8 @@ Použití...
 |![Panel nástrojů podřízený uzel, zaměřuje](../extensibility/ux-guidelines/media/0303-194-toolboxchildnodefocused.png "0303 194_ToolboxChildNodeFocused")<br /><br /> **Cílené podřízený uzel**|Popředí (Text)|`TreeView.SelectedItemActive`<br /><br /> Z [zobrazení stromové struktury](../misc/shared-colors.md#BKMK_TreeView) kategorie|  
 |![Panel nástrojů nadřazený uzel bez fokusu](../extensibility/ux-guidelines/media/0303-195-toolboxparentnodeunfocused.png "0303 195_ToolboxParentNodeUnfocused")<br /><br /> **Bez fokusu nadřazený uzel**|Pozadí|`TreeView.SelectedItemInactive`<br /><br /> Z [zobrazení stromové struktury](../misc/shared-colors.md#BKMK_TreeView) kategorie|  
 |![Panel nástrojů podřízený uzel bez fokusu](../extensibility/ux-guidelines/media/0303-196-toolboxchildnodeunfocused.png "0303 196_ToolboxChildNodeUnfocused")<br /><br /> **Bez fokusu podřízený uzel**|Pozadí|`TreeView.SelectedItemInactive`<br /><br /> Z [zobrazení stromové struktury](../misc/shared-colors.md#BKMK_TreeView) kategorie|  
-|![Panel nástrojů nadřazený uzel bez fokusu](../extensibility/ux-guidelines/media/0303-195-toolboxparentnodeunfocused.png "0303 195_ToolboxParentNodeUnfocused")<br /><br /> **Bez fokusu nadřazený uzel**|Ohraničení|Žádný|  
-|![Panel nástrojů podřízený uzel bez fokusu](../extensibility/ux-guidelines/media/0303-196-toolboxchildnodeunfocused.png "0303 196_ToolboxChildNodeUnfocused")<br /><br /> **Bez fokusu podřízený uzel**|Ohraničení|Žádný|  
+|![Panel nástrojů nadřazený uzel bez fokusu](../extensibility/ux-guidelines/media/0303-195-toolboxparentnodeunfocused.png "0303 195_ToolboxParentNodeUnfocused")<br /><br /> **Bez fokusu nadřazený uzel**|Ohraničení|Žádné|  
+|![Panel nástrojů podřízený uzel bez fokusu](../extensibility/ux-guidelines/media/0303-196-toolboxchildnodeunfocused.png "0303 196_ToolboxChildNodeUnfocused")<br /><br /> **Bez fokusu podřízený uzel**|Ohraničení|Žádné|  
 |![Panel nástrojů nadřazený uzel bez fokusu](../extensibility/ux-guidelines/media/0303-195-toolboxparentnodeunfocused.png "0303 195_ToolboxParentNodeUnfocused")<br /><br /> **Bez fokusu nadřazený uzel**|Popředí (piktogram)|`TreeView.SelectedItemInactive`<br /><br /> Z [zobrazení stromové struktury](../misc/shared-colors.md#BKMK_TreeView) kategorie|  
 |![Panel nástrojů podřízený uzel bez fokusu](../extensibility/ux-guidelines/media/0303-196-toolboxchildnodeunfocused.png "0303 196_ToolboxChildNodeUnfocused")<br /><br /> **Bez fokusu podřízený uzel**|Popředí (piktogram)|`TreeView.SelectedItemInactive`<br /><br /> Z [zobrazení stromové struktury](../misc/shared-colors.md#BKMK_TreeView) kategorie|  
 |![Panel nástrojů nadřazený uzel bez fokusu](../extensibility/ux-guidelines/media/0303-195-toolboxparentnodeunfocused.png "0303 195_ToolboxParentNodeUnfocused")<br /><br /> **Bez fokusu nadřazený uzel**|Popředí (Text)|`TreeView.SelectedItemInactive`<br /><br /> Z [zobrazení stromové struktury](../misc/shared-colors.md#BKMK_TreeView) kategorie|  

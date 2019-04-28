@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 305f24204c1be7186b2d2d49fa61a0c32c52c8cb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 17d248fb0805c83feb64b2f0a28a645b1fa29d49
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104392"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422498"
 ---
 # <a name="how-to-programmatically-copy-worksheets"></a>Postupy: Kopírování listů prostřednictvím kódu programu
   Můžete vytvořit kopii tohoto listu a listu vložte před nebo po existujícího listu v sešitu. Pokud nezadáte, kam chcete vložit do listu, Excel vytvoří nový sešit obsahující nový list.
@@ -26,7 +26,7 @@ ms.locfileid: "60104392"
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
 > [!NOTE]
->  Ať už prostřednictvím kódu programu zkopírujte do listu, nebo koncový uživatel ručně zkopíruje do listu, není žádný kód za nový list a ovládacích prvků na nový list nefungují. Důvodem je, že je nově zkopírovaný list <xref:Microsoft.Office.Interop.Excel.Worksheet> objekt a ne <xref:Microsoft.Office.Tools.Excel.Worksheet> hostitelský objekt. Ovládacích prvků Windows Forms a hostitelských ovládacích prvků můžete přidat jenom do hostitelské položky. Další informace najdete v tématu [programová omezení hostitelských položek a hostitelských ovládacích prvků](../vsto/programmatic-limitations-of-host-items-and-host-controls.md).
+> Ať už prostřednictvím kódu programu zkopírujte do listu, nebo koncový uživatel ručně zkopíruje do listu, není žádný kód za nový list a ovládacích prvků na nový list nefungují. Důvodem je, že je nově zkopírovaný list <xref:Microsoft.Office.Interop.Excel.Worksheet> objekt a ne <xref:Microsoft.Office.Tools.Excel.Worksheet> hostitelský objekt. Ovládacích prvků Windows Forms a hostitelských ovládacích prvků můžete přidat jenom do hostitelské položky. Další informace najdete v tématu [programová omezení hostitelských položek a hostitelských ovládacích prvků](../vsto/programmatic-limitations-of-host-items-and-host-controls.md).
 
 ## <a name="to-add-a-copied-worksheet-to-a-workbook-in-a-document-level-customization"></a>Chcete-li přidat zkopírovaný list do sešitu v přizpůsobení na úrovni dokumentu
 

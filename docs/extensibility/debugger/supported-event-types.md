@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d74448479fc71af493ef720586541d92d614b24f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 71d7da44eacecfc8a06f202a27f7758d6eb2ca98
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56696295"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415643"
 ---
 # <a name="supported-event-types"></a>Podporované typy událostí
 Ladění aplikace Visual Studio nyní podporuje následující typy událostí:
@@ -43,7 +43,7 @@ Ladění aplikace Visual Studio nyní podporuje následující typy událostí:
     Rozhraní [IDebugBreakpointEvent2](../../extensibility/debugger/reference/idebugbreakpointevent2.md) a [IDebugExceptionEvent2](../../extensibility/debugger/reference/idebugexceptionevent2.md) patří události zastavení.
 
   > [!NOTE]
-  >  Asynchronní zastavení událostí nejsou podporovány. Jedná se o chybu pro odeslání události asynchronní zastavení.
+  > Asynchronní zastavení událostí nejsou podporovány. Jedná se o chybu pro odeslání události asynchronní zastavení.
 
 ## <a name="discussion"></a>Diskuse
  Skutečná implementace události závisí na návrhu vaší DE. Typ každá událost odeslaná je určen podle jeho atributy, které jsou nastaveny při návrhu DE. Například může odeslat jeden DE [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) jako asynchronní událost, zatímco jiné mohou odeslat jako událostí ukončení.
@@ -51,7 +51,7 @@ Ladění aplikace Visual Studio nyní podporuje následující typy událostí:
  Následující tabulka určuje, které aplikace a vlákna parametry jsou povinné, pro které události, stejně jako typy událostí. Jakákoli událost může být synchronní. Žádné události musí být synchronní.
 
 > [!NOTE]
->  [IDebugEngine2](../../extensibility/debugger/reference/idebugengine2.md) rozhraní se ale vyžaduje pro všechny události.
+> [IDebugEngine2](../../extensibility/debugger/reference/idebugengine2.md) rozhraní se ale vyžaduje pro všechny události.
 
 |Událost|IDebugProgram2|IDebugThread2|Zastavuje se události|
 |-----------|--------------------|-------------------|---------------------|

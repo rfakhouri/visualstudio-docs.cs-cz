@@ -11,18 +11,18 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 563d54c39b4d9ce3bb2d76a9e531161c2c4ee5b3
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56708092"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62929812"
 ---
 # <a name="space-tab-process-properties-dialog-box"></a>Karta Prostor, dialogové okno vlastností procesu
 Použití **místo** kartu prozkoumat adresního prostoru procesu. Pro zobrazení [dialogové okno vlastností procesu](../debugger/process-properties-dialog-box.md), přesunout fokus [zobrazení procesů](../debugger/processes-view.md) okno. Vyberte libovolný uzel procesu ve stromové struktuře a pak zvolte **vlastnosti** z **zobrazení** nabídky.
 
  Následující nastavení jsou k dispozici na **místo** kartu:
 
-|Položka|Popis|
+|Entry|Popis|
 |-----------|-----------------|
 |**Zobrazit pro prostor označený jako**|Toto pole se seznamem použijte k výběru kategorie místa (obrázků, mapována, vyhrazená nebo nepřiřazené).|
 |**Spustitelný soubor – bajty**|Pro vybranou kategorii součet všech adresní prostor, který tento proces používá. Spustitelný soubor paměti je paměť, která mohou být provedeny programy, ale nemusí číst nebo zapisovat.|

@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 5fd571f967e478b3a03347d6151deb9fc88f62ef
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56721326"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62433315"
 ---
 # <a name="sccbeginbatch-function"></a>Sccbeginbatch – funkce
 Tato funkce spustí batch posloupnost operací správy zdrojů. [Sccendbatch –](../extensibility/sccendbatch-function.md) bude volána k ukončení služby batch. Tyto dávek nemůže být vnořený.
@@ -34,7 +34,7 @@ SCCRTN SccBeginBatch(void);
 ## <a name="return-value"></a>Návratová hodnota
  Modul plug-in implementaci ovládacího prvku zdroje této funkce má vracet instanci jednoho z následujících hodnot:
 
-|Hodnota|Popis|
+|Value|Popis|
 |-----------|-----------------|
 |SCC_OK|Dávkové operace úspěšně začala.|
 |SCC_E_UNKNOWNERROR|K nespecifikované chybě.|

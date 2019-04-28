@@ -11,12 +11,12 @@ ms.assetid: 33416226-9083-41b5-b153-10d2bf35c012
 caps.latest.revision: 41
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 55c4ebc96d93d9b068c29d24727d40975518b1ef
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 60862d631d93788f10c372310da9eb3d181943ef
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60062825"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63414547"
 ---
 # <a name="installing-an-isolated-shell-application"></a>Instalace aplikací izolovaného prostředí
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -108,7 +108,7 @@ K instalaci prostředí aplikace musíte provést následující kroky.
 2. Určete součásti, které prostředí a aplikace prostředí vyžaduje jako v následujícím příkladu.  
   
     > [!NOTE]
-    >  Některé prvky mohou odkazovat na definice v jiných souborech WXS.  
+    > Některé prvky mohou odkazovat na definice v jiných souborech WXS.  
   
     ```xml  
     <Feature Id="ProductFeature" Title="$(var.ShortProductName)Shell" Level="1">  
@@ -159,7 +159,7 @@ K instalaci prostředí aplikace musíte provést následující kroky.
         ```  
   
     > [!NOTE]
-    >  Požadované závislosti pro aplikace prostředí Shell (izolovaný režim) jsou: DebuggerProxy MasterPkgDef, prostředky (hlavně soubor .winprf), aplikace a PkgDefs.  
+    > Požadované závislosti pro aplikace prostředí Shell (izolovaný režim) jsou: DebuggerProxy MasterPkgDef, prostředky (hlavně soubor .winprf), aplikace a PkgDefs.  
   
 ### <a name="registry-entries"></a>Položky registru  
  Šablona projektu Shell (izolovaný režim) obsahuje *ProjectName*soubor .reg pro klíče registru na sloučení na instalaci. Tyto položky registru musí být součástí MSI pro účely čištění a instalaci. Musíte taky vytvořit odpovídající bloky registru v ApplicationRegistry.wxs.  
@@ -211,7 +211,7 @@ K instalaci prostředí aplikace musíte provést následující kroky.
  Pokud chcete zjistit, jestli se musí nainstalovat Visual Studio Shell (izolovaný režim), nejprve určete, zda je již nainstalován kontrolou hodnotu registru HKLM\Software\Microsoft\DevDiv\vs\Servicing\ShellVersion\isoshell\LCID\Install.  
   
 > [!NOTE]
->  Tyto hodnoty jsou také číst detekce blok prostředí v Product.wxs.  
+> Tyto hodnoty jsou také číst detekce blok prostředí v Product.wxs.  
   
  HKLM\Software\Microsoft\AppEnv\14.0\ShellFolder Určuje umístění, kde byl nainstalován prostředí sady Visual Studio a můžete zkontrolovat soubory.  
   
@@ -369,4 +369,4 @@ dwResult = ExecCmd(boutiqueInstallCmd, FALSE);
 ```  
   
 ## <a name="see-also"></a>Viz také  
- [Návod: Vytváření základní aplikace izolovaného prostředí](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)
+ [Návod: Vytvoření základní aplikace izolovaného prostředí](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)

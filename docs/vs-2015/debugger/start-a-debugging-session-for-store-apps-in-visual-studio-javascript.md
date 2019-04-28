@@ -17,12 +17,12 @@ caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 12c5fb2db92c70144e38aa3ca2110b8b3d5c354e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 630b2896e7446cf62982dd62ed12f9f7b7ca4aa9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105087"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427300"
 ---
 # <a name="start-a-debugging-session-for-store-apps-in-visual-studio-javascript"></a>Spuštění ladicí relace pro aplikace pro Store v sadě Visual Studio (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "wi
  Toto téma popisuje způsob spuštění ladicí relace pro aplikace Windows Store v JavaScriptu a HTML5. Ladění jednoho jedním stisknutím tlačítka lze spustit, nebo můžete nakonfigurovat ladicí relace pro konkrétní scénáře a pak zvolte způsob, jak spustit aplikaci.
 
 > [!NOTE]
->  Pro aplikace napsané v XAML a Visual C#, Visual C++ nebo Visual Basic, naleznete v tématu [spustíte relaci ladění (VB, C#, C++ a XAML)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)
+> Pro aplikace napsané v XAML a Visual C#, Visual C++ nebo Visual Basic, naleznete v tématu [spustíte relaci ladění (VB, C#, C++ a XAML)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)
 
 ## <a name="BKMK_In_this_topic"></a> V tomto tématu
  [V tomto tématu](#BKMK_In_this_topic)
@@ -117,7 +117,7 @@ Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "wi
    ![Vyberte připojení vzdáleného ladicího programu](../debugger/media/vsrun-pro-selectremotedebuggerdlg.png "VSRUN_PRO_SelectRemoteDebuggerDlg")
 
   > [!NOTE]
-  >  V dialogovém okně vyberte připojení vzdáleného ladicího programu zobrazí počítače, které jsou na místní podsíť a počítačů, které jsou připojené přímo k sadě Visual Studio počítači pomocí kabelu Ethernet. Chcete-li určit jiný počítač, zadejte název do **název počítače** pole.
+  > V dialogovém okně vyberte připojení vzdáleného ladicího programu zobrazí počítače, které jsou na místní podsíť a počítačů, které jsou připojené přímo k sadě Visual Studio počítači pomocí kabelu Ethernet. Chcete-li určit jiný počítač, zadejte název do **název počítače** pole.
 
   ![Platí pouze pro Windows Phone](../debugger/media/phone-only-content.png "phone_only_content")
 
@@ -178,7 +178,7 @@ Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "wi
  Chcete-li nastavit nainstalovanou aplikaci pro spuštění v režimu ladění, postupujte takto:
 
 > [!NOTE]
->  Když spustíte tento postup, nesmí být spuštěná aplikace.
+> Když spustíte tento postup, nesmí být spuštěná aplikace.
 
 1. Na **ladění** nabídce zvolte **ladit nainstalovaný balíček aplikace**
 
@@ -226,9 +226,9 @@ Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "wi
 ### <a name="BKMK_Attach_the_debugger"></a> Připojit ladicí program
 
 > [!TIP]
->  JavaScript aplikace spusťte v instanci procesu wwahost.exe. Pokud jiných aplikací jazyka JavaScript jsou spuštěny po připojení k aplikaci, musíte znát id číselné procesu (PID) wwahost.exe, na kterém aplikace běží v.
+> JavaScript aplikace spusťte v instanci procesu wwahost.exe. Pokud jiných aplikací jazyka JavaScript jsou spuštěny po připojení k aplikaci, musíte znát id číselné procesu (PID) wwahost.exe, na kterém aplikace běží v.
 >
->  Zavřete všechny ostatní aplikace jazyka JavaScript je nejjednodušší způsob, jak zacházet s touto situací. Předtím, než spustíte aplikaci a poznamenejte si ID procesů wwahost.exe, v opačném případě můžete otevřít Správce úloh Windows. Pokud zadáte proces pro připojení v **procesy k dispozici** dialogovém okně wwahost.exe aplikace bude mít id, které se liší od těch, které jste si poznamenali.
+> Zavřete všechny ostatní aplikace jazyka JavaScript je nejjednodušší způsob, jak zacházet s touto situací. Předtím, než spustíte aplikaci a poznamenejte si ID procesů wwahost.exe, v opačném případě můžete otevřít Správce úloh Windows. Pokud zadáte proces pro připojení v **procesy k dispozici** dialogovém okně wwahost.exe aplikace bude mít id, které se liší od těch, které jste si poznamenali.
 
  Připojení ladicího programu:
 

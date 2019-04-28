@@ -29,12 +29,12 @@ caps.latest.revision: 62
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f0ebd89937eedfc2851c3b57998ef2628f9e8904
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: c7e352dcaccd328b4794389726277701014da7be
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60053296"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436813"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Připojení ke spuštěným procesům pomocí ladicího programu sady Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -133,10 +133,10 @@ Pro některé typy aplikací (např. aplikace pro Windows Store), nemusíte při
 |Ladění aplikace Universal Windows (UPW), OneCore, HoloLens a IoT, které se nepovedlo spustit ze sady Visual Studio|Ladit nainstalovaný balíček aplikace|Není k dispozici|Použití **ladění / jiné cíle ladění / ladění balíčku nainstalované aplikace** místo **připojit k procesu**|
 
 > [!WARNING]
->  Připojit k Windows univerzální aplikace, která je napsána v jazyce JavaScript, je nutné nejprve povolit ladění pro aplikace. Zobrazit [připojit ladicí program](../debugger/start-a-debugging-session-for-store-apps-in-visual-studio-javascript.md#BKMK_Attach_the_debugger) Windows Dev Center.
+> Připojit k Windows univerzální aplikace, která je napsána v jazyce JavaScript, je nutné nejprve povolit ladění pro aplikace. Zobrazit [připojit ladicí program](../debugger/start-a-debugging-session-for-store-apps-in-visual-studio-javascript.md#BKMK_Attach_the_debugger) Windows Dev Center.
 
 > [!NOTE]
->  Ladicí program připojil kód napsaný v jazyce C++, musí kód generovat `DebuggableAttribute`. Můžete přidat to do kódu automaticky díky propojení s [/assemblydebug](http://msdn.microsoft.com/library/94443af3-470c-41d7-83a0-7434563d7982) – možnost linkeru.
+> Ladicí program připojil kód napsaný v jazyce C++, musí kód generovat `DebuggableAttribute`. Můžete přidat to do kódu automaticky díky propojení s [/assemblydebug](http://msdn.microsoft.com/library/94443af3-470c-41d7-83a0-7434563d7982) – možnost linkeru.
 
 ## <a name="what-debugger-features-can-i-use"></a>Jaké funkce ladicího programu můžete použít?
 

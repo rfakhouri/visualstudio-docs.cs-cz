@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 8b237ded8ac0d22500986a9d390834147f24a2c6
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56721262"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62433185"
 ---
 # <a name="sccgetuseroption-function"></a>SccGetUserOption – funkce
 Tato funkce načítá širokou škálu možností specifické pro uživatele.
@@ -48,7 +48,7 @@ SCCRTN SccGetUserOption(
 ## <a name="return-value"></a>Návratová hodnota
  Modul plug-in implementaci ovládacího prvku zdroje této funkce má vracet instanci jednoho z následujících hodnot:
 
-|Hodnota|Popis|
+|Value|Popis|
 |-----------|-----------------|
 |SCC_OK|Možnost se načetla úspěšně.|
 |SCC_E_OPNOTSUPPORTED|možnost není podporována.|

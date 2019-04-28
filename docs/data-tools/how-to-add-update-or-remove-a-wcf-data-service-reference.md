@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4591c6b794905eb0b8742292c752762cdea991e0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e1fd14dcbe2ed5840fdaa2da755fe6a95d7c8e68
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099530"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63402923"
 ---
 # <a name="how-to-add-update-or-remove-a-wcf-data-service-reference"></a>Postupy: Přidání, aktualizace nebo odebrání odkazu na datovou službu WCF
 A *odkaz na službu* umožňuje přístup k jedné nebo více projektu [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]. Použití **přidat odkaz na službu** dialogové okno pro hledání [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] v aktuálním řešení místně, v místní síti nebo na Internetu.
@@ -37,7 +37,7 @@ A *odkaz na službu* umožňuje přístup k jedné nebo více projektu [!INCLUDE
 2. V **adresu** pole, zadejte adresu URL pro službu a pak klikněte na tlačítko **Přejít** k vyhledání služby. Pokud služba implementuje uživatelské jméno a heslo zabezpečení, vám může zobrazit výzva k zadání uživatelského jména a hesla.
 
     > [!NOTE]
-    >  Služby by měly odkazovat pouze z důvěryhodného zdroje. Přidávání odkazů z nedůvěryhodných zdrojů může ohrozit zabezpečení.
+    > Služby by měly odkazovat pouze z důvěryhodného zdroje. Přidávání odkazů z nedůvěryhodných zdrojů může ohrozit zabezpečení.
 
      Můžete také vybrat adresu URL **adresu** seznam, který ukládá předchozí 15 adresy URL, na kterých byla nalezena platná metadata služby.
 
@@ -88,7 +88,7 @@ A *odkaz na službu* umožňuje přístup k jedné nebo více projektu [!INCLUDE
      Klient služby bude odebrán z řešení a metadat, který popisuje službu se odebere z *app.config* souboru.
 
     > [!NOTE]
-    >  Veškerý kód, který odkazuje na odkaz na službu musí ručně odebrat.
+    > Veškerý kód, který odkazuje na odkaz na službu musí ručně odebrat.
 
 ## <a name="see-also"></a>Viz také:
 

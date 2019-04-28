@@ -11,12 +11,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e7daee59d754b8b09ed8684ff16a6bae81fa3bf8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 246ce82eef63559060c9c4ea4daabd3ae1e5a284
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079769"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435125"
 ---
 # <a name="how-to-troubleshoot-templates"></a>Postupy: Řešení problémů se šablonami
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ Pokud šablonu se nepodaří načíst ve vývojovém prostředí, nalezení prob
 5. Ověřte, že kód XML souboru .vstemplate dodržuje [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] schéma šablony. Další informace o schématu .vstemplate naleznete v tématu [Visual Studio odkaz na schéma šablon](../extensibility/visual-studio-template-schema-reference.md).  
   
     > [!NOTE]
-    >  Chcete-li získat podporu technologie IntelliSense při vytváření souboru .vstemplate, přidejte `xmlns` atribut `VSTemplate` element a přiřaďte ho hodnotu http://schemas.microsoft.com/developer/vstemplate/2005.  
+    > Chcete-li získat podporu technologie IntelliSense při vytváření souboru .vstemplate, přidejte `xmlns` atribut `VSTemplate` element a přiřaďte ho hodnotu http://schemas.microsoft.com/developer/vstemplate/2005.  
   
 6. Uložte a zavřete soubor .vstemplate.  
   

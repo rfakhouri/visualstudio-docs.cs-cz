@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 52e0dc775e5e9413fb251261a319e529f36393eb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6b4ed387d00c96c1d66fdac0bb92a0bfbae7c530
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60102182"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406682"
 ---
 # <a name="choose-a-clickonce-deployment-strategy"></a>Volba strategie nasazení ClickOnce
 Existují tři různé strategie pro nasazení [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace; strategie, kterou zvolíte, závisí především na typu aplikace, kterou nasazujete. Toto jsou zmíněné tři strategie nasazení:
@@ -32,7 +32,7 @@ Existují tři různé strategie pro nasazení [!INCLUDE[ndptecclick](../deploym
 - Spuštění aplikace z webu nebo sdíleného síťového umístění
 
     > [!NOTE]
-    >  Kromě výběru strategie nasazení budete chtít zvolit také strategii pro poskytování aktualizací aplikace. Další informace najdete v tématu [volba strategie aktualizace ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md).
+    > Kromě výběru strategie nasazení budete chtít zvolit také strategii pro poskytování aktualizací aplikace. Další informace najdete v tématu [volba strategie aktualizace ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md).
 
 ## <a name="install-from-the-web-or-a-network-share"></a>Nainstalovat z webu nebo sdílené síťové složky
  Použijete-li tuto strategii, vaše aplikace bude nasazena na webový server nebo do sdíleného síťového umístění. Chce-li koncový uživatel instalovat aplikaci, klikne na ikonu na webové stránce nebo dvakrát klikne na ikonu ve sdíleném umístění. Aplikace je poté stažena, nainstalována a spuštěna v počítači koncového uživatele. Položky jsou přidány do **Start** nabídky a **přidat nebo odebrat programy** v **ovládací panely**.
@@ -49,7 +49,7 @@ Existují tři různé strategie pro nasazení [!INCLUDE[ndptecclick](../deploym
  Tato strategie je stejná jako první zmíněná strategie, s výjimkou toho, že aplikace se chová jako webová aplikace. Pokud uživatel klikne na odkaz na webové stránce (nebo dvakrát klikne na ikonu ve sdíleném umístění), aplikace se spustí. Když uživatelé aplikaci ukončí, již není k dispozici na místním počítači; nic není přidáno do **Start** nabídky nebo **přidat nebo odebrat programy** v **ovládací panely**.
 
 > [!NOTE]
->  Z technického hlediska je aplikace stažena a nainstalována do mezipaměti aplikací na místním počítači stejně tak, jako je webová aplikace stažena do mezipaměti webu. Podobně jakou u mezipaměti webu jsou soubory nakonec z mezipaměti aplikací odstraněny. Uživatel však má dojem, že aplikace je spuštěna z webu nebo sdíleného umístění.
+> Z technického hlediska je aplikace stažena a nainstalována do mezipaměti aplikací na místním počítači stejně tak, jako je webová aplikace stažena do mezipaměti webu. Podobně jakou u mezipaměti webu jsou soubory nakonec z mezipaměti aplikací odstraněny. Uživatel však má dojem, že aplikace je spuštěna z webu nebo sdíleného umístění.
 
  Tato strategie je nejvhodnější pro aplikace, které se používají zřídka – příkladem je nástroj pro zaměstnanecké výhody, který se obvykle spouští pouze jednou ročně.
 

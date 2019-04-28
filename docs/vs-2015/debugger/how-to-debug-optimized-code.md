@@ -23,23 +23,23 @@ caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 35a5fc722a0d7b2ececa4aaa198381cdd3390a7b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 529fd979912d1743967109a11933140b482c2caf
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54790747"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435714"
 ---
 # <a name="how-to-debug-optimized-code"></a>Postupy: Ladění optimalizovaného kódu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 POZNÁMKA:]
->  Dialogová okna a příkazy nabídek, které vidíte, se mohou lišit od těch popsaných v nápovědě v závislosti na aktivních nastaveních nebo edici. Chcete-li změnit nastavení, zvolte nastavení importu a exportu v nabídce Nástroje. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Dialogová okna a příkazy nabídek, které vidíte, se mohou lišit od těch popsaných v nápovědě v závislosti na aktivních nastaveních nebo edici. Chcete-li změnit nastavení, zvolte nastavení importu a exportu v nabídce Nástroje. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 > [!NOTE]
->  [/Zo (vylepšit optimalizované ladění)](http://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f)– možnost kompilátoru (představíme v sadě Visual Studio Update 3) generuje rozsáhlejší informace ladění pro optimalizovaný kód (projekty, které nejsou sestaveny s **/Od** – možnost kompilátoru. Zobrazit [/O možnosti (Optimalizace kódu)](http://msdn.microsoft.com/library/77997af9-5555-4b3d-aa57-6615b27d4d5d)). To zahrnuje Vylepšená podpora ladění lokálních proměnných a vložené funkce.  
+> [/Zo (vylepšit optimalizované ladění)](http://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f)– možnost kompilátoru (představíme v sadě Visual Studio Update 3) generuje rozsáhlejší informace ladění pro optimalizovaný kód (projekty, které nejsou sestaveny s **/Od** – možnost kompilátoru. Zobrazit [/O možnosti (Optimalizace kódu)](http://msdn.microsoft.com/library/77997af9-5555-4b3d-aa57-6615b27d4d5d)). To zahrnuje Vylepšená podpora ladění lokálních proměnných a vložené funkce.  
 >   
->  [Upravit a pokračovat](../debugger/edit-and-continue-visual-csharp.md) vypnutá při **/Zo** ocompiler možnost se používá.  
+> [Upravit a pokračovat](../debugger/edit-and-continue-visual-csharp.md) vypnutá při **/Zo** ocompiler možnost se používá.  
   
  Když kompilátor optimalizuje kód, přemístí a změní uspořádání pokyny. Výsledkem je účinnější zkompilovaný kód. Z důvodu této změny uspořádání ladicí program nemůže vždy identifikovat zdrojový kód, který odpovídá sadu pokynů.  
   
@@ -80,7 +80,7 @@ POZNÁMKA:]
 9. Vyberte vlastnosti konfigurace, C/C++, uzel příkazového řádku na stránce Vlastnosti projektu a přidejte `(` [/Zo](http://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f) `)` k **další možnosti** textového pole.  
   
     > [!WARNING]
-    >  `/Zo` vyžaduje Visual Studio 2013 Update 3 nebo novější.  
+    > `/Zo` vyžaduje Visual Studio 2013 Update 3 nebo novější.  
     >   
     >  Přidání `/Zo` dojde k zakázání [upravit a pokračovat](../debugger/edit-and-continue-visual-csharp.md).  
   

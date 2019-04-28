@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 8a24b934b0ffe4cc22dc7be01aca19910ee3c768
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: cb70705d29ad636329803656aeaa1a27ddf237d5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096865"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63402767"
 ---
 # <a name="separate-datasets-and-tableadapters-into-different-projects"></a>Rozdělování datových sad a objektů TableAdapter do různých projektů
 Vylepšili jsme typové datové sady, aby [objekty TableAdapter](create-and-configure-tableadapters.md) a do samostatné projekty se můžou generovat třídy datové sady. To umožňuje rychle samostatné aplikace a generovat vícevrstvých datových aplikací.
@@ -33,7 +33,7 @@ Když oddělíte datové sady kód z třídy TableAdapter kódu projektu, který
 1. Otevřete řešení, která obsahuje datovou sadu (*XSD* souboru).
 
     > [!NOTE]
-    >  Pokud řešení obsahuje projekt, do kterého chcete rozdělení kódu datovou sadu, vytvořte projekt nebo přidat existující projekt do řešení.
+    > Pokud řešení obsahuje projekt, do kterého chcete rozdělení kódu datovou sadu, vytvořte projekt nebo přidat existující projekt do řešení.
 
 2. Poklikejte na soubor typové datové sady ( *XSD* souborů) v **Průzkumníku řešení** otevření datové sady v **Návrhář Dataset**.
 
@@ -46,7 +46,7 @@ Když oddělíte datové sady kód z třídy TableAdapter kódu projektu, který
      Jakmile vyberete projekt, do které chcete generovat kód datovou sadu **soubor datové sady** vlastnost se vyplní výchozí název souboru. Tento název lze změnit v případě potřeby. Kromě toho pokud chcete generovat kód datovou sadu do konkrétního adresáře, můžete nastavit **složky projektu** nastavte na název složky.
 
     > [!NOTE]
-    >  Když oddělíte datové sady a objekty TableAdapter (nastavením **projektu DataSet** vlastnost), existující částečné třídy v projektu nebudou automaticky přesunuty. Existující částečné třídy je nutné ručně přesunout do projektu datové sady.
+    > Když oddělíte datové sady a objekty TableAdapter (nastavením **projektu DataSet** vlastnost), existující částečné třídy v projektu nebudou automaticky přesunuty. Existující částečné třídy je nutné ručně přesunout do projektu datové sady.
 
 6. Uložte datovou sadu.
 
@@ -55,7 +55,7 @@ Když oddělíte datové sady kód z třídy TableAdapter kódu projektu, který
 Ve výchozím nastavení po oddělíte datové sady a kód třídy TableAdapter, výsledkem je soubor samostatné třídy v každém projektu. Původní projekt obsahuje soubor s názvem *DatasetName.Designer.vb* (nebo *DatasetName.Designer.cs*), která obsahuje kód objektu TableAdapter. Projekt, který je zadaný ve **projektu Dataset** vlastnost má soubor s názvem *DatasetName.DataSet.Designer.vb* (nebo *DatasetName.DataSet.Designer.cs*), který obsahuje kód datové sady.
 
 > [!NOTE]
->  Chcete-li zobrazit soubor generované třídy, vyberte datovou sadu nebo projekt TableAdapter. Potom v **Průzkumníka řešení**vyberte **zobrazit všechny soubory**.
+> Chcete-li zobrazit soubor generované třídy, vyberte datovou sadu nebo projekt TableAdapter. Potom v **Průzkumníka řešení**vyberte **zobrazit všechny soubory**.
 
 ## <a name="see-also"></a>Viz také:
 

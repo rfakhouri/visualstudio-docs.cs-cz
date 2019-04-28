@@ -11,12 +11,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b71b092bcadef24e564b14dd215bc9c328aa8e7f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d9170c6ed32c7a807af8c869ca9616db3bdff683
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60081135"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430471"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-2"></a>Návod: Vytvoření vlastní položky projektu akce pomocí šablony položky, část 2
   Po definování vlastního typu položky projektu služby SharePoint a přidružte jej k šabloně položky v sadě Visual Studio, můžete také poskytnout průvodce pro šablony. Průvodce můžete použít ke shromažďování informací od uživatelů při použití šablony přidáte novou instanci položky projektu do projektu. Informace, které slouží k inicializaci položky projektu.
@@ -34,7 +34,7 @@ ms.locfileid: "60081135"
 - Ladění a testování v průvodci.
 
 > [!NOTE]
->  Můžete si stáhnout ukázky z [Githubu](https://github.com/SharePoint/PnP/tree/master/Samples/Workflow.Activities) , který ukazuje, jak vytvořit vlastní aktivity pracovního postupu.
+> Můžete si stáhnout ukázky z [Githubu](https://github.com/SharePoint/PnP/tree/master/Samples/Workflow.Activities) , který ukazuje, jak vytvořit vlastní aktivity pracovního postupu.
 
 ## <a name="prerequisites"></a>Požadavky
  Chcete-li provést Tento názorný postup, musíte nejdřív vytvořit CustomActionProjectItem řešení provedením [názorný postup: Vytvoření vlastní položky projektu akce pomocí šablony položky, část 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md).
@@ -125,12 +125,12 @@ ms.locfileid: "60081135"
 2. V XAML zobrazení nahraďte aktuální XAML následující XAML. XAML definuje uživatelské rozhraní, které obsahuje nadpis, ovládací prvky pro určení chování vlastní akce a navigačních tlačítek v dolní části okna.
 
     > [!NOTE]
-    >  Po přidání tohoto kódu, bude mít projekt několik chyb kompilace. K těmto chybám předejdete přidáním kódu v dalších krocích.
+    > Po přidání tohoto kódu, bude mít projekt několik chyb kompilace. K těmto chybám předejdete přidáním kódu v dalších krocích.
 
      [!code-xml[SPExtensibility.ProjectItem.CustomAction#9](../sharepoint/codesnippet/Xaml/customactionprojectitem/itemtemplatewizard/wizardwindow.xaml#9)]
 
     > [!NOTE]
-    >  V okně, které se vytvoří v tomto XAML je odvozen z <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow> základní třídy. Když přidáte vlastní dialogové okno WPF se sadou Visual Studio, doporučujeme odvodit vaše dialogové okno z této třídy, aby stylů konzistentní vzhledem k aplikacím s další dialogová okna v sadě Visual Studio a aby se zabránilo problémům, které by jinak mohlo dojít s modálních dialogových oken. Další informace najdete v tématu [vytváření a správa modálních dialogových oken](/visualstudio/extensibility/creating-and-managing-modal-dialog-boxes).
+    > V okně, které se vytvoří v tomto XAML je odvozen z <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow> základní třídy. Když přidáte vlastní dialogové okno WPF se sadou Visual Studio, doporučujeme odvodit vaše dialogové okno z této třídy, aby stylů konzistentní vzhledem k aplikacím s další dialogová okna v sadě Visual Studio a aby se zabránilo problémům, které by jinak mohlo dojít s modálních dialogových oken. Další informace najdete v tématu [vytváření a správa modálních dialogových oken](/visualstudio/extensibility/creating-and-managing-modal-dialog-boxes).
 
 3. Pokud vyvíjíte projekt jazyka Visual Basic, odeberte `ItemTemplateWizard` obor názvů z `WizardWindow` název třídy v `x:Class` atribut `Window` elementu. Tento element má na prvním řádku XAML. Až budete hotovi, první řádek by měl vypadat následovně:
 
@@ -314,7 +314,7 @@ ms.locfileid: "60081135"
      Vlastní akce je zabalit a nasadit na web služby SharePoint, které jsou určené **adresa URL webu** vlastnosti projektu a webový prohlížeč otevře výchozí stránku webu.
 
     > [!NOTE]
-    >  Pokud **ladění skriptů zakázáno** dialogové okno se zobrazí, zvolte **Ano** tlačítko.
+    > Pokud **ladění skriptů zakázáno** dialogové okno se zobrazí, zvolte **Ano** tlačítko.
 
 2. V oblasti seznamy z webu služby SharePoint, zvolte **úlohy** odkaz.
 

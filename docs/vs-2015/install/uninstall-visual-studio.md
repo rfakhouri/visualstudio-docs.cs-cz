@@ -15,12 +15,12 @@ caps.latest.revision: 9
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: e00ca9212c03d4123259715da157201c06d90f2b
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: ed9d33501644c6fa7252dffa758f92c0919653b1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59667297"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62546899"
 ---
 # <a name="uninstall-visual-studio"></a>Odinstalace sady Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,12 +39,12 @@ Tato stránka vás provede odinstalací sady Visual Studio 2015, starší verzi 
 
 ## <a name="uninstall-visual-studio-and-all-other-related-files-that-is-to-uninstall-almost-everything"></a>Odinstalace sady Visual Studio a všech dalších souvisejících souborů (to znamená, že odinstalace téměř všeho)
 
-1.  Vyhledejte soubor .exe sady Visual Studio (vyhledejte například "vs_enterprise.exe").
+1. Vyhledejte soubor .exe sady Visual Studio (vyhledejte například "vs_enterprise.exe").
 
     > [!NOTE]
     > Soubor by měl být v podsložce "%ProgramData%\Package Cache", například: C:\ProgramData\Package Cache\\{37e19555-e88d-4aed-9d42-82d0784d2b79}\vs_enterprise.exe
 
-2.  Spusťte soubor .exe s použitím / uninstall/force parametry příkazového řádku.
+2. Spusťte soubor .exe s použitím / uninstall/force parametry příkazového řádku.
 
      Například spusťte ```vs_enterprise.exe /uninstall /force```, které se při výchozí odinstalaci odebrat sady Visual Studio a většina hlavních komponent, které se zachovají. Ale neodebere veškerý další obsah tohoto doplňky sady Visual Studio a rozšíření můžete nainstalovat (pro příklad, aktualizace sady Visual Studio a další volitelné komponenty).
 
@@ -53,9 +53,9 @@ Tato stránka vás provede odinstalací sady Visual Studio 2015, starší verzi 
 
 ## <a name="uninstall-visual-studio-in-silent-or-passive-modes-that-is-to-uninstall-from-source"></a>Odinstalace sady Visual Studio v tichém nebo pasivním režimu (tedy odinstalace ze zdroje)
 
-1.  V počítači s nainstalovanou sadou Visual Studio otevřete okno příkazového řádku systému Windows.
+1. V počítači s nainstalovanou sadou Visual Studio otevřete okno příkazového řádku systému Windows.
 
-2.  Zadejte následující parametry:
+2. Zadejte následující parametry:
 
      *DVDRoot* \\< Instalační_soubor\> \</quiet&#124;/passive > [/ norestart] / uninstall
 

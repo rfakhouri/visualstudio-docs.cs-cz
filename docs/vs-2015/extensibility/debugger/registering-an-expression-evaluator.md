@@ -11,18 +11,18 @@ ms.assetid: 236be234-e05f-4ad8-9200-24ce51768ecf
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 9b1f052392edab92dfd566c14bb0e452ca0056bf
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3595daa51fddf5c9c027d5643382918d85f83cc1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60113895"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435680"
 ---
 # <a name="registering-an-expression-evaluator"></a>Registrace vyhodnocovače výrazů
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 > [!IMPORTANT]
->  V sadě Visual Studio 2015 je zastaralý tímto způsobem implementace vyhodnocovače výrazů. Informace o implementace vyhodnocovače výrazů modulu CLR najdete v tématu [vyhodnocovače výrazů modulu CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) a [spravované ukázka Chyba při vyhodnocování výrazu](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+> V sadě Visual Studio 2015 je zastaralý tímto způsobem implementace vyhodnocovače výrazů. Informace o implementace vyhodnocovače výrazů modulu CLR najdete v tématu [vyhodnocovače výrazů modulu CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) a [spravované ukázka Chyba při vyhodnocování výrazu](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
  Chyba při vyhodnocování výrazu (EE) musí registrovat jako objekt pro vytváření tříd pomocí prostředí Windows COM i Visual Studio. EE je implementován jako knihovna DLL tak, že mohou být vloženy do adresního prostoru ladicí stroj (DE) nebo Visual Studio adresní prostor, v závislosti na tom, který vytvoří instanci entity EE.  
   
@@ -104,7 +104,7 @@ namespace EEMC
  EE knihovna DLL opakovaně implementuje `DllRegisterServer` funkce k registraci v prostředí modelu COM, stejně jako Visual Studio.  
   
 > [!NOTE]
->  Kód MyCEE ukázkový kód registru najdete v souboru dllentry.cpp, který je umístěn v programu VSIP instalace v části EnVSDK\MyCPkgs\MyCEE.  
+> Kód MyCEE ukázkový kód registru najdete v souboru dllentry.cpp, který je umístěn v programu VSIP instalace v části EnVSDK\MyCPkgs\MyCEE.  
   
 ### <a name="dll-server-process"></a>Proces serveru knihovny DLL  
  Při registraci EE, server knihovny DLL:  
@@ -121,7 +121,7 @@ namespace EEMC
     |`metricEngine`|`GUID`s ladicími stroji (DE), které využívají tento EE|  
   
     > [!NOTE]
-    >  `metricLanguage``GUID` Určuje jazyk podle názvu, ale je `guidLang` argument `SetEEMetric` , který vybere jazyk. Když kompilátor generuje soubor s informacemi o ladění, by měl napsat odpovídající `guidLang` tak, aby DE ví, které EE určený. Poskytovatel symbolů DE obvykle vyzve k zadání tohoto jazyka `GUID`, který je uložen v souboru ladicí informace.  
+    > `metricLanguage``GUID` Určuje jazyk podle názvu, ale je `guidLang` argument `SetEEMetric` , který vybere jazyk. Když kompilátor generuje soubor s informacemi o ladění, by měl napsat odpovídající `guidLang` tak, aby DE ví, které EE určený. Poskytovatel symbolů DE obvykle vyzve k zadání tohoto jazyka `GUID`, který je uložen v souboru ladicí informace.  
   
 3. Zaregistruje pomocí sady Visual Studio tak, že vytvoříte klíče HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*X.Y*, kde *X.Y* je verze sady Visual Studio k registraci ve službě.  
   

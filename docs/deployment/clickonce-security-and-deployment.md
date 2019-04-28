@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 29659af4fa05c6556656a0a11f13377119f9df9e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 86c69070a6c954ccf01581690e11237fea4e52c7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56612904"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406738"
 ---
 # <a name="clickonce-security-and-deployment"></a>ClickOnce – zabezpečení a nasazení
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] je technologie nasazení, která vám umožní vytvořit automatických aktualizací aplikace založené na Windows, které mohou být nainstalovány a spuštěny vyžadují minimální interakci uživatele. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] poskytuje plnou podporu pro publikování a aktualizace aplikací nasazených pomocí technologie ClickOnce, pokud jste vytvořili projekt v jazyce Visual Basic a Visual C#. Informace o nasazení aplikací v jazyce Visual C++, naleznete v tématu [ClickOnce – nasazení pro aplikace Visual C++](/cpp/ide/clickonce-deployment-for-visual-cpp-applications).
@@ -75,13 +75,13 @@ ms.locfileid: "56612904"
  Aplikace mohou být přidány do daného uživatele **Start** nabídky a **přidat nebo odebrat programy** skupiny **ovládací panely**. Na rozdíl od jiných technologií nasazení není nic přidáno do **Program Files** složky nebo registru a žádná práva pro správu se vyžadují pro instalaci
 
 > [!NOTE]
->  Je také možné zabránit aplikaci v přidávaný do **Start** nabídky a **přidat nebo odebrat programy** skupiny, ve skutečnosti chová jako webová aplikace. Další informace najdete v tématu [volba strategie nasazení ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md).
+> Je také možné zabránit aplikaci v přidávaný do **Start** nabídky a **přidat nebo odebrat programy** skupiny, ve skutečnosti chová jako webová aplikace. Další informace najdete v tématu [volba strategie nasazení ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md).
 
 ### <a name="update-clickonce-applications"></a>Aktualizace aplikací ClickOnce
  Když vývojáři aplikace vytvořit aktualizovanou verzi aplikace, vygenerovat nový manifest aplikace a zkopírujte soubory do umístění nasazení – obvykle na stejné úrovni složku pro původní nasazení aplikace. Správce aktualizuje manifest nasazení tak, aby odkazoval na umístění novou verzi aplikace.
 
 > [!NOTE]
->  **Průvodce publikováním** v sadě Visual Studio lze použít k provedení těchto kroků.
+> **Průvodce publikováním** v sadě Visual Studio lze použít k provedení těchto kroků.
 
  Kromě nasazení umístění manifestu nasazení také obsahuje umístění aktualizace (webové stránky nebo síťové sdílené), kde bude aplikace ověřovat aktualizované verze. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] **Publikování** vlastnosti se používají k určení, kdy a jak často by měla aplikace vyhledávat aktualizace. Chování aktualizace se dá nastavit v manifestu nasazení nebo ji lze zobrazit jako volby uživatele v uživatelském rozhraní aplikace prostřednictvím [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] rozhraní API. Kromě toho **publikovat** vlastnosti mohou být použity, proveďte aktualizace povinné nebo vrátit zpět na předchozí verzi. Další informace najdete v tématu [Výběr strategie aktualizace ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md).
 

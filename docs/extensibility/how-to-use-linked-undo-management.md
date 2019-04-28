@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ce6d86d84d6f51b995649d5cbfda652262dcfc66
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f11ea8e93d7d952f28315481f65149122a7b68a3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045718"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415575"
 ---
 # <a name="how-to-use-linked-undo-management"></a>Postupy: Použijte správu propojená operace vrácení zpět
 Propojená operace vrácení zpět mu umožní současně zpět stejné úpravy ve více souborech. Například změny souběžných textu do více souborů programu, jako je například soubor hlaviček a soubor jazyka Visual C++ je propojená operace vrácení zpět transakcí. Propojená operace vrácení zpět funkce je integrovaná do prostředí provádění správce akcí zpět a <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLinkedUndoTransactionManager> umožňuje manipulaci s tuto funkci. Propojená operace vrácení zpět je implementováno nadřazenou jednotku, která můžete propojit samostatné zpět zásobníky dohromady a považovány za celek jedno vrácení zpět. Postup pro používání propojená operace vrácení zpět je podrobně popsán v následující části.
@@ -29,7 +29,7 @@ Propojená operace vrácení zpět mu umožní současně zpět stejné úpravy 
 3. Volání <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLinkedUndoTransactionManager.CloseLinkedUndo%2A> vrátit zpět všechny jednotky propojená operace vrácení zpět jako jeden.
 
     > [!NOTE]
-    >  Implementace správy propojená operace vrácení zpět v editoru, přidáte zpět správy. Další informace o implementaci správy propojená operace vrácení zpět, najdete v části [jak: Implementace správy zpět](../extensibility/how-to-implement-undo-management.md).
+    > Implementace správy propojená operace vrácení zpět v editoru, přidáte zpět správy. Další informace o implementaci správy propojená operace vrácení zpět, najdete v části [jak: Implementace správy zpět](../extensibility/how-to-implement-undo-management.md).
 
 ## <a name="see-also"></a>Viz také:
 - <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompoundAction>

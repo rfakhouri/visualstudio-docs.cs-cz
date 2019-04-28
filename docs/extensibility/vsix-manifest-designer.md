@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 85b9d20dd67ff11f5bded7060440f2e768a205a9
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 84f82ab6e5cca57a1fabd600cecc7a5ee505c150
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56722860"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411091"
 ---
 # <a name="vsix-manifest-designer"></a>Návrhář manifestu VSIX
 Upraví soubor manifestu balíčku VSIX, který nastaví chování při instalaci rozšíření sady Visual Studio.
@@ -29,7 +29,7 @@ Upraví soubor manifestu balíčku VSIX, který nastaví chování při instalac
  Chcete-li otevřít **Návrhář manifestu VSIX**, vyhledejte *source.extension.vsixmanifest* ve **Průzkumníku řešení**a otevřete soubor. Pokud soubor neobsahuje platný kód XML, manifest designer nelze otevřít.
 
 > [!NOTE]
->  *Source.extension.vsixmanifest* soubor se nachází výstup do *extension.vsixmanifest* když je sestaven balíček.
+> *Source.extension.vsixmanifest* soubor se nachází výstup do *extension.vsixmanifest* když je sestaven balíček.
 
 ## <a name="uielement-list"></a>Seznam prvků uživatelského rozhraní
  **Návrhář manifestu VSIX** obsahuje čtyři oddíly, které odpovídají těmto nejvyšší úrovně prvky schématu:

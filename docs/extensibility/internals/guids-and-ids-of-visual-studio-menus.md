@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 279b9cc03b79efe2fbf9daa7457f5dce88e7a432
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 16871ba1115407e2665886d84b72594470f91287
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56597865"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420631"
 ---
 # <a name="guids-and-ids-of-visual-studio-menus"></a>Identifikátory GUID a ID sady Visual Studio nabídky
 Tento článek uvádí hodnoty GUID a ID nabídek a skupin v řádku nabídek sady Visual Studio. Tyto hodnoty jsou definovány v *.vsct* soubory, které se instalují jako součást sady Visual Studio SDK. Další informace najdete v tématu [příkazy definované prostředím IDE, nabídky a skupiny](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).
@@ -178,7 +178,7 @@ Tento článek uvádí hodnoty GUID a ID nabídek a skupin v řádku nabídek sa
  U následující hierarchie zobrazuje dílčích nabídek, které jsou spojeny s nabídkami v řádku nabídek sady Visual Studio. Protože nabídce jako jeho nadřazený objekt může mít pouze skupiny, každý podnabídky musí sestup ze skupiny v nabídce, namísto přímo z nabídky. Další informace o vztahu mezi nabídek, skupiny a podnabídek najdete v tématu [přidání podnabídky do nabídky](../../extensibility/adding-a-submenu-to-a-menu.md).
 
 > [!NOTE]
->  Názvy nabídek na řádku nabídek sady Visual Studio se nezobrazují samostatně v této hierarchii, vzhledem k tomu, že lze odvodit z zásady vytváření názvů skupin v integrovaném vývojovém prostředí, následujícím způsobem: *IDG_VS_\<název nabídky\>_\<název skupiny\>*.
+> Názvy nabídek na řádku nabídek sady Visual Studio se nezobrazují samostatně v této hierarchii, vzhledem k tomu, že lze odvodit z zásady vytváření názvů skupin v integrovaném vývojovém prostředí, následujícím způsobem: *IDG_VS_\<název nabídky\>_\<název skupiny\>*.
 
 |Nadřazená skupina|Podnabídka|Podřízené skupiny|
 |------------------|-------------|------------------|

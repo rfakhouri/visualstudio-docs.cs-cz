@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a1a6b131e75e61e319a691a0b132bb57b7d0c227
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 856ea1e59a32a64c6a48b52c3ef1dcad9e0bbb80
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061486"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406830"
 ---
 # <a name="how-to-create-a-localized-bootstrapper-package"></a>Postupy: Vytvoření lokalizovaného balíčku bootstrapperu
 Po vytvoření balíčku zaváděcího nástroje lokalizované verze balíčku zaváděcího nástroje můžete vytvořit tak, že vytvoříte dva další soubory pro každé národní prostředí: software licenčních podmínek souboru (například *eula.rtf*) a manifest balíčku (*package.xml*).
@@ -31,7 +31,7 @@ Po vytvoření balíčku zaváděcího nástroje lokalizované verze balíčku z
 3. Vytvoření manifestu balíčku s názvem *package.xml*, aktualizujte řetězce a jazykovou verzi a vložit ho do nové složky. Pokud jste již vytvořili zaváděcí nástroj sady Visual Studio v cílovém jazyce, můžete zkopírovat sady Visual Studio *package.xml* soubor a upravit ho v tomto kroku.
 
 > [!NOTE]
->  Pokud nasazení aplikace pomocí projektu instalace, je možné lokalizovat aplikaci tak, že změníte **lokalizace** vlastnost.
+> Pokud nasazení aplikace pomocí projektu instalace, je možné lokalizovat aplikaci tak, že změníte **lokalizace** vlastnost.
 
  [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 

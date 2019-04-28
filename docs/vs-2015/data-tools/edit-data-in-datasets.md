@@ -17,12 +17,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b1549cf23f87a56f724a0b5e56b7b59f4fa88ac2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9962bb1dbeef089d409cbe100daa37777b45e67d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105003"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425386"
 ---
 # <a name="edit-data-in-datasets"></a>Úpravy dat v datových sadách
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +63,7 @@ Můžete upravovat data v datových tabulkách stejně, jako úprava dat v tabul
      Tato metoda neodebere fyzicky záznamu. Místo toho označí záznamy pro odstranění.  
   
     > [!NOTE]
-    >  Pokud se zobrazí vlastnosti count <xref:System.Data.DataRowCollection>, výsledný počet zahrnuje záznamy, které jsou označené k odstranění. Získáte přesný počet záznamů, které nejsou označené k odstranění můžete projít kolekce podíváme <xref:System.Data.DataRow.RowState%2A> vlastností každého záznamu. (Označená k odstranění záznamů <xref:System.Data.DataRow.RowState%2A> z <xref:System.Data.DataRowState>.) Alternativně můžete vytvořit zobrazení dat pro datovou sadu, filtry založené na stavu řádků a získat počet vlastností z něj.  
+    > Pokud se zobrazí vlastnosti count <xref:System.Data.DataRowCollection>, výsledný počet zahrnuje záznamy, které jsou označené k odstranění. Získáte přesný počet záznamů, které nejsou označené k odstranění můžete projít kolekce podíváme <xref:System.Data.DataRow.RowState%2A> vlastností každého záznamu. (Označená k odstranění záznamů <xref:System.Data.DataRow.RowState%2A> z <xref:System.Data.DataRowState>.) Alternativně můžete vytvořit zobrazení dat pro datovou sadu, filtry založené na stavu řádků a získat počet vlastností z něj.  
   
      Následující příklad ukazuje, jak volat <xref:System.Data.DataRow.Delete%2A> metoda k označení první řádek v `Customers` tabulky se odstranil:  
   

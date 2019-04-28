@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 22cada0aaf77edd241992229c2bd6733be3ccc81
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: a8f2a4047fb44e2967e281becd90c78f66de9fdb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56711160"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63410021"
 ---
 # <a name="deleting-a-breakpoint"></a>Odstranění zarážky
 Následující část popisuje proces při odstraňování čekající zarážkou:
@@ -25,7 +25,7 @@ Následující část popisuje proces při odstraňování čekající zarážko
  Správce ladění relace (SDM) volá [IDebugPendingBreakpoint2::Delete](../../extensibility/debugger/reference/idebugpendingbreakpoint2-delete.md) metoda odebrání čekající zarážka a všechny vazby zarážky vázán z něj.
 
 > [!NOTE]
->  Jeden vázaná zarážka může také odstranit volání [IDebugBoundBreakpoint2::Delete](../../extensibility/debugger/reference/idebugboundbreakpoint2-delete.md).
+> Jeden vázaná zarážka může také odstranit volání [IDebugBoundBreakpoint2::Delete](../../extensibility/debugger/reference/idebugboundbreakpoint2-delete.md).
 
 ## <a name="see-also"></a>Viz také:
 - [Volání událostí ladicího programu](../../extensibility/debugger/calling-debugger-events.md)

@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 04af0f7a24cc4fc50cb65ac75f085ebf3385eeca
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4eb438db5fd911ed93f7072902281815633d06a7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60042116"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415448"
 ---
 # <a name="how-to-update-a-visual-studio-extension"></a>Postupy: Aktualizace rozšíření sady Visual Studio
 Rozšíření sady Visual Studio můžete aktualizovat v systému s použitím **rozšíření a aktualizace** k instalaci aktualizované verze. Pokud vytvoříte aktualizovanou verzi rozšíření, můžete ho místo při aktualizaci zvyšující číslo verze v manifestu VSIX.
@@ -43,7 +43,7 @@ Rozšíření sady Visual Studio můžete aktualizovat v systému s použitím *
 1. V sadě Visual Studio otevřete řešení rozšíření, které chcete aktualizovat. Proveďte požadované změny.
 
     > [!IMPORTANT]
-    >  Hodnota bez znaménka že všechna rozšíření uživatele aktualizován automaticky. Měli byste vždy podepsat vaše rozšíření.
+    > Hodnota bez znaménka že všechna rozšíření uživatele aktualizován automaticky. Měli byste vždy podepsat vaše rozšíření.
 
 2. V **Průzkumníka řešení**, otevřete *source.extension.manifest*.
 
@@ -58,7 +58,7 @@ Rozšíření sady Visual Studio můžete aktualizovat v systému s použitím *
      Můžete povolit nebo zakázat automatické zjišťování aktualizací v dolní části **aktualizace** podokně (**povolí nebo zakáže automatické zjišťování dostupných aktualizací**), které změny **vyhledat aktualizace** nastavení **nástroje** > **možnosti** > **prostředí**  >  **Rozšíření a aktualizace**.
 
     > [!NOTE]
-    >  Od verze Visual Studio 2015 Update 2, můžete zadat (v **nástroje** > **možnosti** > **prostředí**  >  **Rozšíření a aktualizace**) určuje, zda chcete automatické aktualizace pro rozšíření vázaná na uživatele, všechna rozšíření uživatele nebo obě (výchozí nastavení).
+    > Od verze Visual Studio 2015 Update 2, můžete zadat (v **nástroje** > **možnosti** > **prostředí**  >  **Rozšíření a aktualizace**) určuje, zda chcete automatické aktualizace pro rozšíření vázaná na uživatele, všechna rozšíření uživatele nebo obě (výchozí nastavení).
 
 ## <a name="see-also"></a>Viz také:
 - [Anatomie balíčku VSIX](../extensibility/anatomy-of-a-vsix-package.md)

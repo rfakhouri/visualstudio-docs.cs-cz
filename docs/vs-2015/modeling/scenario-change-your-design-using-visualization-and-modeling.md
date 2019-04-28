@@ -17,12 +17,12 @@ caps.latest.revision: 63
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7bca2a98ba4df4294d401e2cd5f5b6e80e5d31c4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 914d5806ed0b40a227d61c673e5f463624b0cc11
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099673"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63403574"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Scénář: Změna návrhu pomocí vizualizace a modelování
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -120,7 +120,7 @@ Ujistěte se, že softwarový systém vyhovuje potřebám uživatelů pomocí vi
 - [Ověřování kódu pomocí diagramů vrstev](../modeling/validate-code-with-layer-diagrams.md)  
   
   > [!NOTE]
-  >  Některé verze sady Visual Studio podporují ověřování vrstev a verze jen pro čtení z mapy kódu a diagramy UML pro vizualizaci a modelování. Tuto funkci podporovat kterou verzí sady Visual Studio najdete v tématu [podporované verze pro nástroje architektury a modelování](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
+  > Některé verze sady Visual Studio podporují ověřování vrstev a verze jen pro čtení z mapy kódu a diagramy UML pro vizualizaci a modelování. Tuto funkci podporovat kterou verzí sady Visual Studio najdete v tématu [podporované verze pro nástroje architektury a modelování](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
 ## <a name="UnderstandingCommunicating"></a> Pochopení a sdělování informací o systému  
  Neexistuje žádné předepsané pořadí pro použití sady Visual Studio modelování diagramů, takže je můžete využít podle jejich potřeb s vašim potřebám a přístupu. Obvykle týmy opravují své modely opakovaně a často v průběhu projektu. Každý diagram nabízí určité výhody, které umožňují porozumět, popsat a sdělit různé aspekty vyvíjeného systému.  

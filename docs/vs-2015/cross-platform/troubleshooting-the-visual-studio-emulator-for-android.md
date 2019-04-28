@@ -8,12 +8,12 @@ ms.assetid: f3fb5df4-3aae-40e4-9450-bbe15b0c5af5
 caps.latest.revision: 25
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: a1fc24d27d079576128cf437fb1ee05c2fc78404
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 62f40ffaa4df57672238274ca3a459dd3204bce3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60081551"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417090"
 ---
 # <a name="troubleshooting-the-visual-studio-emulator-for-android"></a>Poradce při potížích s emulátorem sady Visual Studio pro Android
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -21,7 +21,7 @@ ms.locfileid: "60081551"
 Toto téma obsahuje informace, které pomáhají při řešení problémů, které mohou nastat při používání Visual Studio Emulator for Android.
 
 > [!WARNING]
->  Po nainstalování emulátoru, instalační program zkontroluje požadavky pro spuštění softwaru. Upozornění se zobrazí, pokud požadavky nejsou k dispozici, ale ta je není nutné pro instalaci.
+> Po nainstalování emulátoru, instalační program zkontroluje požadavky pro spuštění softwaru. Upozornění se zobrazí, pokud požadavky nejsou k dispozici, ale ta je není nutné pro instalaci.
 
  Toto téma obsahuje následující části.
 
@@ -70,7 +70,7 @@ Toto téma obsahuje informace, které pomáhají při řešení problémů, kter
  ![Android&#95;Emu&#95;Install&#95;Issue](../cross-platform/media/android-emu-install-issue.png "Android_Emu_Install_Issue")
 
 > [!NOTE]
->  Tato zpráva platí jak pro Visual Studio Emulator for Android a emulátor Windows Phone. Windows 8.1 a Windows 10 podporovat emulátor.
+> Tato zpráva platí jak pro Visual Studio Emulator for Android a emulátor Windows Phone. Windows 8.1 a Windows 10 podporovat emulátor.
 
  Pokud se zobrazí tato zpráva, zkontrolujte, [požadavky na systém pro Visual Studio Emulator for Android](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md) chcete zobrazit, zda lze spustit emulátor.
 

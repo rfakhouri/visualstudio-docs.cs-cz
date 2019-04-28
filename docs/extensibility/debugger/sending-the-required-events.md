@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dcff0d559894e8d4ba322e4e8ebab71000a3809e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 45a65259c88eb9e8e946aa226eecc7cffa053552
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60083553"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415608"
 ---
 # <a name="send-the-required-events"></a>Odesílání požadovaných událostí
 Pomocí tohoto postupu pro odesílání požadovaných událostí.
@@ -34,7 +34,7 @@ Pomocí tohoto postupu pro odesílání požadovaných událostí.
 5. Pokud je aplikace k ladění, odesílat [IDebugEntryPointEvent2](../../extensibility/debugger/reference/idebugentrypointevent2.md) události objektu SDM po první instrukce kódu za běhu architektury se pokračovalo. Tato událost je vždy událostí ukončení. Při krokování s vnořením do relace ladění, rozhraní IDE přestane na této události.
 
 > [!NOTE]
->  Řadu jiných jazyků použití globálních inicializátorů nebo externí, předkompilované funkcí (z knihovny CRT nebo _Main) na začátku svůj kód. Pokud jazyk ladíte program obsahuje některý z těchto typů prvků před počáteční vstupní bod, je tento kód spuštěný a vstupního bodu událost je odeslána při vstupu uživatele bodu, jako například **hlavní** nebo `WinMain`, je byl dosažen.
+> Řadu jiných jazyků použití globálních inicializátorů nebo externí, předkompilované funkcí (z knihovny CRT nebo _Main) na začátku svůj kód. Pokud jazyk ladíte program obsahuje některý z těchto typů prvků před počáteční vstupní bod, je tento kód spuštěný a vstupního bodu událost je odeslána při vstupu uživatele bodu, jako například **hlavní** nebo `WinMain`, je byl dosažen.
 
 ## <a name="see-also"></a>Viz také:
 - [Povolení ladění programu](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)

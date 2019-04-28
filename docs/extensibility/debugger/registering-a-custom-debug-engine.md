@@ -10,18 +10,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bb9b7d406e7638a73e9c4db4974d493aa1d38e92
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 25b38f008df47dd2912fef042424e4c3d42becd8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56715320"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415663"
 ---
 # <a name="register-a-custom-debug-engine"></a>Registrace vlastního ladicího stroje
 Ladicí stroj musí registrovat jako objekt pro vytváření tříd, následující konvence COM také zaregistrovat pomocí sady Visual Studio prostřednictvím podklíč registru sady Visual Studio.
 
 > [!NOTE]
->  Příklad toho, jak zaregistrovat ladicího stroje v ukázce TextInterpreter, který je vytvořen jako součást můžete najít [kurzu: Vytváření ladicího stroje pomocí knihovny ATL modelu COM](https://msdn.microsoft.com/library/9097b71e-1fe7-48f7-bc00-009e25940c24).
+> Příklad toho, jak zaregistrovat ladicího stroje v ukázce TextInterpreter, který je vytvořen jako součást můžete najít [kurzu: Vytváření ladicího stroje pomocí knihovny ATL modelu COM](https://msdn.microsoft.com/library/9097b71e-1fe7-48f7-bc00-009e25940c24).
 
 ## <a name="dll-server-process"></a>Proces serveru knihovny DLL
  Ladicí stroj je obvykle nastavený v jeho vlastní knihovny DLL jako COM server. Ladicí stroj v důsledku toho musíte zaregistrovat CLSID jeho objekt pro vytváření tříd pomocí modelu COM před Visual Studio k němu přístup. Potom ladicí stroj musí registrovat pomocí sady Visual Studio k vytvoření libovolné vlastnosti (jinak známé jako metriky) ladění modul podporuje. Výběr metriky se zapisují do sady Visual Studio podklíč registru závisí na funkcích, které podporuje ladicí stroj.
@@ -32,7 +32,7 @@ Ladicí stroj musí registrovat jako objekt pro vytváření tříd, následují
  Následující příklad (z ukázky TextInterpreter) ukazuje způsob použití `SetMetric` – funkce (z *dbgmetric.lib*), k registraci ladicího stroje pomocí sady Visual Studio. Metriky předávaný jsou také definovány v *dbgmetric.lib*.
 
 > [!NOTE]
->  TextInterpreter je základní ladicí stroj; nejsou nastaveny – a tedy nezaregistruje – další funkce. Úplnější ladicí stroj bude mít celý seznam `SetMetric` volání nebo ekvivalentní, jeden pro každou funkci ladicí stroj podporuje.
+> TextInterpreter je základní ladicí stroj; nejsou nastaveny – a tedy nezaregistruje – další funkce. Úplnější ladicí stroj bude mít celý seznam `SetMetric` volání nebo ekvivalentní, jeden pro každou funkci ladicí stroj podporuje.
 
 ```
 // Define base registry subkey to Visual Studio.

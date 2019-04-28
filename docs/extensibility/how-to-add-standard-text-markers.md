@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 021e5f39f3296a475795b991283e60aa518b98dc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 53aece13887fc727e7b0b1497f9546ee7a2fe63b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060082"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415497"
 ---
 # <a name="how-to-add-standard-text-markers"></a>Postupy: Přidání standardní text značky
 Pomocí následujícího postupu vytvořte jeden výchozí typ značky text, opatřeného [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] základní editor.
@@ -27,7 +27,7 @@ Pomocí následujícího postupu vytvořte jeden výchozí typ značky text, opa
      Při volání této metody určete typ značky, rozsah textu pro vytvoření značky nad a <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> rozhraní. Tato metoda pak vrací ukazatel na nově vytvořený text značky. Typy značek pocházejí ze <xref:Microsoft.VisualStudio.TextManager.Interop.MARKERTYPE> výčtu. Zadejte <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> rozhraní, pokud chcete být informováni o událostech.
 
     > [!NOTE]
-    >  Vytvoření textu značky na pouze hlavní vlákno uživatelského rozhraní. Základní editor spoléhá na obsah vyrovnávací paměť textu pro vytvoření textu značek a textovou vyrovnávací paměť není bezpečné pro vlákna.
+    > Vytvoření textu značky na pouze hlavní vlákno uživatelského rozhraní. Základní editor spoléhá na obsah vyrovnávací paměť textu pro vytvoření textu značek a textovou vyrovnávací paměť není bezpečné pro vlákna.
 
 ## <a name="add-a-custom-command"></a>Přidat vlastní příkaz.
  Implementace `IVsTextMarkerClient` rozhraní a poskytuje ukazatel na ni z značku zlepšuje chování značky několika způsoby. Nejprve díky tomu můžete zajistit tipy pro vaši značku a příkazy. To vám také umožní příjem oznámení o události pro jednotlivé značky a vytvářet vlastní místní nabídky přes značky. Pomocí následujícího postupu přidejte vlastní příkaz na místní nabídku značky.

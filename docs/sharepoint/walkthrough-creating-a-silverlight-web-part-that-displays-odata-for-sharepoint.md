@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a331e94ad57fc4ca23dc859415c61609025f799b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c58762c1060475a85de643ed52fffcc9f311bd96
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60058249"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430391"
 ---
 # <a name="walkthrough-create-a-silverlight-web-part-that-displays-odata-for-sharepoint"></a>Návod: Vytvoření webové části Silverlight, která zobrazuje data OData pro službu SharePoint
   SharePoint 2010 zveřejňuje data seznamu pomocí protokolu OData. V Sharepointu službu OData je implementováno služba RESTful ListData.svc. Tento návod ukazuje, jak vytvořit webové části služby SharePoint, který je hostitelem aplikace Silverlight. Aplikace programu Silverlight zobrazí informace o seznamu Sharepointu oznámení pomocí ListData.svc. Další informace najdete v tématu [rozhraní REST služby SharePoint Foundation](http://go.microsoft.com/fwlink/?LinkId=225999) a [Open Data Protocol](http://go.microsoft.com/fwlink/?LinkId=226000).
@@ -35,7 +35,7 @@ ms.locfileid: "60058249"
  Nejprve vytvořte aplikaci Silverlight v sadě Visual Studio. Silverlight aplikace načte data ze seznamu Sharepointu oznámení pomocí služby ListData.svc.
 
 > [!NOTE]
->  Žádné verze Silverlight před 4.0 podporují požadovaná rozhraní pro odkazování na dat seznamu služby SharePoint.
+> Žádné verze Silverlight před 4.0 podporují požadovaná rozhraní pro odkazování na dat seznamu služby SharePoint.
 
 #### <a name="to-create-a-silverlight-application-and-silverlight-web-part"></a>K vytvoření aplikace Silverlight a webové části Silverlight
 
@@ -73,7 +73,7 @@ ms.locfileid: "60058249"
 2. V **Průzkumníka řešení**, otevřete místní nabídku pro **odkazy**a klikněte na tlačítko **přidat odkaz na službu**.
 
     > [!NOTE]
-    >  Pokud používáte jazyk Visual Basic, je třeba zvolit **zobrazit všechny soubory** ikonu v horní části **Průzkumníka řešení** zobrazíte **odkazy** uzlu.
+    > Pokud používáte jazyk Visual Basic, je třeba zvolit **zobrazit všechny soubory** ikonu v horní části **Průzkumníka řešení** zobrazíte **odkazy** uzlu.
 
 3. V poli Adresa **přidat odkaz na službu** dialogového okna zadejte adresu URL Sharepointového webu, jako například **http://MySPSite**a klikněte na tlačítko **Přejít** tlačítko.
 
@@ -228,7 +228,7 @@ ms.locfileid: "60058249"
      Webové části Silverlight by měl nyní zobrazování oznámení data z webu služby SharePoint. Ve výchozím nastavení na stránce uložený v seznamu stránky webu služby SharePoint.
 
     > [!NOTE]
-    >  Při přístupu k datům v programu Silverlight napříč doménami, Silverlight chrání před chybami zabezpečení, které je možné zneužít ohrožená místa webových aplikací. Pokud narazíte na potíže při přístupu ke vzdáleným datům v programu Silverlight, přečtěte si téma [zpřístupnění služby k dispozici napříč hranicemi domén](http://go.microsoft.com/fwlink/?LinkId=223276).
+    > Při přístupu k datům v programu Silverlight napříč doménami, Silverlight chrání před chybami zabezpečení, které je možné zneužít ohrožená místa webových aplikací. Pokud narazíte na potíže při přístupu ke vzdáleným datům v programu Silverlight, přečtěte si téma [zpřístupnění služby k dispozici napříč hranicemi domén](http://go.microsoft.com/fwlink/?LinkId=223276).
 
 ## <a name="see-also"></a>Viz také:
 - [Vytvoření webové části pro SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)

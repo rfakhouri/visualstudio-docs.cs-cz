@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 2b270d742cab45bebc48e37dd557ce4cdb2470b3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7bb6562c0eb74f537efb25be031e9c9be46d64b6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114337"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63402701"
 ---
 # <a name="walkthrough-create-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>Návod: Vytvoření tříd LINQ to SQL s použitím dědičnosti jedné tabulky (O/R Designer)
 [Technologie LINQ to SQL nástroje v sadě Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) podporuje dědičnosti jedné tabulky, jak se zpravidla implementuje v relačních systémech. Tento názorný postup rozšiřují obecných kroků uvedených v [jak: Konfigurace dědičnosti pomocí Návrháře relací objektů](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md) tématu a poskytuje některé reálná data pro demonstraci použití dědičnosti v [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)].
@@ -45,7 +45,7 @@ ms.locfileid: "60114337"
 1. V **Průzkumníka serveru** nebo **Průzkumník databáze**, klikněte pravým tlačítkem myši **tabulky** uzel a klikněte na tlačítko **přidat novou tabulku**.
 
     > [!NOTE]
-    >  Můžete použít databázi Northwind nebo jakékoli jiné databáze, které můžete přidat tabulku.
+    > Můžete použít databázi Northwind nebo jakékoli jiné databáze, které můžete přidat tabulku.
 
 2. V **návrháře tabulky**, přidejte následující sloupce v tabulce:
 

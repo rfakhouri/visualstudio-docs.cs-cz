@@ -11,21 +11,21 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e229bd791118b23e0b8c04a8a5384a4bbc3342c0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c634d394fb6d30a22763cd12efe2d97ba5269986
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60085530"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415626"
 ---
 # <a name="sample-implementation-of-changing-values"></a>Ukázková implementace změny hodnot
 > [!IMPORTANT]
->  V sadě Visual Studio 2015 je zastaralý tímto způsobem implementace vyhodnocovače výrazů. Informace o implementace vyhodnocovače výrazů modulu CLR najdete v tématu [vyhodnocovače výrazů modulu CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) a [ukázka Chyba při vyhodnocování výrazu spravované](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
+> V sadě Visual Studio 2015 je zastaralý tímto způsobem implementace vyhodnocovače výrazů. Informace o implementace vyhodnocovače výrazů modulu CLR najdete v tématu [vyhodnocovače výrazů modulu CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) a [ukázka Chyba při vyhodnocování výrazu spravované](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
 
  Každý místní zobrazí v **lokální** má okno [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) objekt přidružen. To `IDebugProperty2` objekt obsahuje název, hodnotu a typ na místní. Když uživatel změní hodnotu místní, Visual Studio volá [SetValueAsString](../../extensibility/debugger/reference/idebugproperty2-setvalueasstring.md) aktualizovat hodnoty místní proměnné v paměti. V tomto příkladu je reprezentována místní `CFieldProperty` třídu, která implementuje `IDebugProperty2` rozhraní.
 
 > [!NOTE]
->  Pro **Watch** a **QuickWatch** výrazy, mění hodnotu je reprezentována `CValueProperty` třídy v ukázce MyCEE. Ale implementace `IDebugProperty2::SetValueAsString` je stejný, jak je znázorněno zde.
+> Pro **Watch** a **QuickWatch** výrazy, mění hodnotu je reprezentována `CValueProperty` třídy v ukázce MyCEE. Ale implementace `IDebugProperty2::SetValueAsString` je stejný, jak je znázorněno zde.
 
  Provádění `IDebugProperty2::SetValueAsString` provádí následující úlohy:
 

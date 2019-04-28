@@ -17,12 +17,12 @@ caps.latest.revision: 84
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9967b0cb47bd397b7b0fa752eb2fff2518865b14
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
-ms.translationtype: MT
+ms.openlocfilehash: 4886a23272962d2dee03576504d60d64067faf20
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56840611"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433398"
 ---
 # <a name="code-generation-and-t4-text-templates"></a>Vytvoření kódu a textové šablony T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -93,7 +93,7 @@ namespace Fabrikam.FirstJob
  Další informace najdete v tématu [vytvoření kódu v době návrhu pomocí textových šablon T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md). Další informace o syntaxi šablony najdete v tématu [vytvoření textové šablony T4](../modeling/writing-a-t4-text-template.md).  
   
 > [!NOTE]
->  Termín *modelu* někdy se používá k popisu dat čtených jednu nebo více šablon. Model může být v libovolném formátu v libovolný typ souborů nebo databáze. Nemusí být modelu UML nebo model jazyka specifického pro doménu. "Vzor" právě označuje, že data lze definovat v podmínkách obchodních konceptů, spíše než podobné kód.  
+> Termín *modelu* někdy se používá k popisu dat čtených jednu nebo více šablon. Model může být v libovolném formátu v libovolný typ souborů nebo databáze. Nemusí být modelu UML nebo model jazyka specifického pro doménu. "Vzor" právě označuje, že data lze definovat v podmínkách obchodních konceptů, spíše než podobné kód.  
   
  Název funkce transformace textu šablony *T4*.  
   
@@ -110,7 +110,7 @@ namespace Fabrikam.FirstJob
  [Zápis textové šablony T4](../modeling/writing-a-t4-text-template.md)  
  Syntaxe soubor textové šablony.  
   
- [Návod: Generování kódu pomocí textových šablon](../modeling/walkthrough-generating-code-by-using-text-templates.md)  
+ [Návod: Vytvoření kódu pomocí textových šablon](../modeling/walkthrough-generating-code-by-using-text-templates.md)  
  Ukázka jeden ze způsobů použití generování kódu.  
   
  [Ladění textové šablony T4](../modeling/debugging-a-t4-text-template.md)  

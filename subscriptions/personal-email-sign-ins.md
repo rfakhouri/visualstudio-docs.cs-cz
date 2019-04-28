@@ -8,17 +8,17 @@ ms.topic: conceptual
 description: Předplatná sady Visual Studio – proč vidím Hotmailu nebo Gmailu adresy pro moje předplatitele?
 searchscope: VS Subscription
 ms.openlocfilehash: 0ba4029fcec0c8d35a58def14ab38afbb79e2fee
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843374"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62539453"
 ---
 # <a name="visual-studio-subscriptions--why-am-i-seeing-hotmail-or-gmail-addresses-for-my-subscribers"></a>Předplatná sady Visual Studio – proč vidím Hotmailu nebo Gmailu adresy pro moje předplatitele?
 
 Společností z na svazek licencování Service Center (VLSC) migraci na novou sadu Visual Studio [portál pro správu předplatných](https://manage.visualstudio.com), Správce může překvapeni, pokud chcete zjistit, který "Přihlášení e-mailovou adresu" pro některé předplatitele ukazuje 3. stran e-mailovou adresu jako Hotmail, Gmail nebo Yahoo.  Další informace, podívejte se na [toto video](https://www.youtube.com/watch?v=1op-i1zEMfY&t=0s&list=PLReL099Y5nRfDyvvwzNDBaZe7qTxmuM2T&index=6).
 
-## <a name="cause"></a>příčina
+## <a name="cause"></a>Příčina
 
 K této situaci dochází z důvodu přihlášení procesy, které byly přidruženy k starší verze prostředí pro předplatitele MSDN. Uživatelé se migrovaly ze svazku licence Service Center (VLSC) na nový portál bez úprav. Správci nemusí být vědomi, že uživatelé používala osobní účty pro přístup k svých předplatitelských výhod. Před migrací předplatitele sady Visual Studio, které byly dokončeny v 2016, byly dvě akce potřebné pro úspěšné fungování předplatné sady Visual Studio:
 1. Správce "přiřazeno" předplatné jednotlivých odběratele, pomocí jejich pracovních nebo školní e-mailovou adresu.

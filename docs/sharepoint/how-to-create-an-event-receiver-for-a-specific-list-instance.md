@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: deba5e493f58a99e672e362977406670e1eee0e1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 34114c12ef47fb796de7354aa3133af1fc704267
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60094343"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408561"
 ---
 # <a name="how-to-create-an-event-receiver-for-a-specific-list-instance"></a>Postupy: Vytvoření přijímače událostí pro specifickou instanci seznamu
   Příjemce událostí instance seznamu jsou reaguje na události, ke kterým dochází v žádné instanci definice seznamu. I když šablony příjemce události není povoleno zaměření na specifickou instanci seznamu, můžete upravit přijímače událostí, které působí na definici seznamu pro reakci na události v specifickou instanci seznamu.
@@ -43,7 +43,7 @@ ms.locfileid: "60094343"
 6. V **jaký typ příjemce událostí požadujete?** klikněte na položku **události položky seznamu**.
 
     > [!NOTE]
-    >  Můžete také vybrat jakýkoli jiný typ příjemce událostí, které obory, například s definicí seznamu **e-mailové události seznamu** nebo **události pracovního postupu seznamu**.
+    > Můžete také vybrat jakýkoli jiný typ příjemce událostí, které obory, například s definicí seznamu **e-mailové události seznamu** nebo **události pracovního postupu seznamu**.
 
 7. V **jaká položka by měla být zdroj událostí?** klikněte na položku **oznámení**.
 

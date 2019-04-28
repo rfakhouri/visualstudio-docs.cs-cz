@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d7eac5329fb5bfacb036e8f0ed585b96ded2a069
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b5c3f8995d5bfbbbfe890100b0ec1a1230450bb6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60084749"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431323"
 ---
 # <a name="how-to-manage-multiple-threads-in-managed-code"></a>Postupy: Správa více vláken ve spravovaném kódu
 Pokud máte spravované rozšíření VSPackage, která volá asynchronní metody nebo má operace, které jsou spouštěny na vlákna kromě vlákna uživatelského rozhraní Visual Studio, postupujte podle pokynů uvedených níže. Vlákna uživatelského rozhraní můžete zachovat responzivní, protože není nutné čekat pro práci v jiném vlákně, k dokončení. Můžete provést kódu efektivnější, protože není nutné další vlákna, které zabírají prostor v zásobníku a je možné provádět spolehlivější a snadněji ladit, protože zabránit zablokování a konflikty. program přestane reagovat.
@@ -21,7 +21,7 @@ Pokud máte spravované rozšíření VSPackage, která volá asynchronní metod
  Obecně platí, můžete přepnout z vlákna uživatelského rozhraní do jiného vlákna, nebo naopak. Po návratu metody, aktuální vlákno je vlákno, ze kterého byla původně volána.
 
 > [!IMPORTANT]
->  Tyto pokyny používají rozhraní API v <xref:Microsoft.VisualStudio.Threading> obor názvů, zejména <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory> třídy. Rozhraní API v tomto oboru názvů jsou novinkou [!INCLUDE[vs_dev12](../extensibility/includes/vs_dev12_md.md)]. Můžete získat instanci <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory> z <xref:Microsoft.VisualStudio.Shell.ThreadHelper> vlastnost `ThreadHelper.JoinableTaskFactory`.
+> Tyto pokyny používají rozhraní API v <xref:Microsoft.VisualStudio.Threading> obor názvů, zejména <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory> třídy. Rozhraní API v tomto oboru názvů jsou novinkou [!INCLUDE[vs_dev12](../extensibility/includes/vs_dev12_md.md)]. Můžete získat instanci <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory> z <xref:Microsoft.VisualStudio.Shell.ThreadHelper> vlastnost `ThreadHelper.JoinableTaskFactory`.
 
 ## <a name="switch-from-the-ui-thread-to-a-background-thread"></a>Přepnout z vlákna uživatelského rozhraní na vlákně na pozadí
 

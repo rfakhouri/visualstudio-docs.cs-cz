@@ -8,18 +8,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 34b25be50cee681ee9c45e446d86a6054099926b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 769d1760692cad6a6b813ece16d69f4abd3d26b1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60103742"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63402772"
 ---
 # <a name="how-to-turn-pluralization-on-and-off-or-designer"></a>Postupy: Pluralizace zapnutí a vypnutí (O/R Designer)
 Ve výchozím nastavení se při přetažení databázových objektů, které mají jména končící na s nebo dokumentu z **Průzkumníka serveru** nebo **Průzkumník databáze** na [technologie LINQ to SQL nástroje v sadě Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md), názvy generovaných tříd entit se mění v množném čísle pro singulární. To slouží k reprezentaci přesněji skutečnost, že třída vytvořenou instanci entity se mapuje na jeden záznam dat. Například přidáním `Customers` tabulky **O/R Designer** výsledkem třídu entity s názvem `Customer` protože třídy bude obsahovat data pro jediného zákazníka.
 
 > [!NOTE]
->  Pluralizace je ve výchozím pouze v anglické jazykové verzi sady Visual Studio.
+> Pluralizace je ve výchozím pouze v anglické jazykové verzi sady Visual Studio.
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
@@ -30,7 +30,7 @@ Ve výchozím nastavení se při přetažení databázových objektů, které ma
 2. V **možnosti** dialogového okna rozbalte **databázové nástroje**.
 
     > [!NOTE]
-    >  Vyberte **zobrazit všechna nastavení** Pokud **databázové nástroje** uzel není viditelný.
+    > Vyberte **zobrazit všechna nastavení** Pokud **databázové nástroje** uzel není viditelný.
 
 3. Klikněte na tlačítko **O/R Designer**.
 

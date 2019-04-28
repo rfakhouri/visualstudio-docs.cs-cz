@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a47ef550f18a0d26e6e0cea9894382ff8fdecb4a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 33ee57dc2576a9f8f40f1baa7c95f9e3bede2f7e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56629505"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406583"
 ---
 # <a name="code-access-security-for-clickonce-applications"></a>Zabezpečení přístupu ke kódu pro aplikace ClickOnce
 Aplikace ClickOnce jsou založeny na rozhraní .NET Framework a jsou v souladu s omezením zabezpečení přístupu kódu. Z tohoto důvodu je důležité, že rozumíte důsledkům kód přistupovat k zabezpečení a zapisovat vaše aplikace ClickOnce odpovídajícím způsobem.
@@ -43,7 +43,7 @@ Aplikace ClickOnce jsou založeny na rozhraní .NET Framework a jsou v souladu s
 - Pokud aplikace vyžaduje oprávnění plné důvěryhodnosti, koncový uživatel může zobrazit výzva k udělení oprávnění k aplikaci. To znamená, že aplikace neposkytuje skutečně ClickOnce prostředí a na řádku může být potenciálně matoucí pro méně zkušených uživatelů.
 
   > [!NOTE]
-  >  Při instalaci aplikace z vyměnitelných médií, jako je například disk CD-ROM, uživatel není vyzván. Kromě toho správce sítě můžete nakonfigurovat zásady sítě tak, aby se uživatelům nebude výzva při instalaci aplikace z důvěryhodného zdroje. Další informace najdete v tématu [Přehled nasazení důvěryhodných aplikací](../deployment/trusted-application-deployment-overview.md).
+  > Při instalaci aplikace z vyměnitelných médií, jako je například disk CD-ROM, uživatel není vyzván. Kromě toho správce sítě můžete nakonfigurovat zásady sítě tak, aby se uživatelům nebude výzva při instalaci aplikace z důvěryhodného zdroje. Další informace najdete v tématu [Přehled nasazení důvěryhodných aplikací](../deployment/trusted-application-deployment-overview.md).
 
   Pokud chcete omezit oprávnění pro aplikaci ClickOnce, můžete upravit oprávnění zabezpečení přístupu kódu pro vaši aplikaci na vyžádání, která nejlíp odpovídá oprávnění, která vaše aplikace vyžaduje zóny. Ve většině případů vyberete zónu, ze kterého je aplikace nasazena. Například pokud vaše aplikace je podniková aplikace, můžete použít **místní Intranet** zóny. Pokud je vaše aplikace internetovou aplikaci, můžete použít **Internet** zóny.
 

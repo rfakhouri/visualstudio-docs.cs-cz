@@ -9,12 +9,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 99fdded48ab720e7b5efbe0e4801926fe4c4c64a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4a13d0b648be87f1378ae74e6f321c1c369d7795
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60090612"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427054"
 ---
 # <a name="getting-started-with-domain-specific-languages"></a>Začínáme s jazyky specifickými pro doménu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -79,7 +79,7 @@ Toto téma vysvětluje základní koncepty při definování a používání jaz
     Řešení se vygeneruje, který obsahuje dva projekty. Jsou pojmenovány Dsl a DslPackage. Otevře soubor diagramu, který je pojmenovaný DslDefinition.dsl.  
   
    > [!NOTE]
-   >  Většinu kódu, který se zobrazí ve složkách v dva projekty se generuje z DslDefinition.dsl. Z tohoto důvodu se provádí většinu úpravy do vašeho DSL v tomto souboru.  
+   > Většinu kódu, který se zobrazí ve složkách v dva projekty se generuje z DslDefinition.dsl. Z tohoto důvodu se provádí většinu úpravy do vašeho DSL v tomto souboru.  
   
    Uživatelské rozhraní teď vypadá podobně jako na následujícím obrázku.  
   
@@ -104,7 +104,7 @@ Toto téma vysvětluje základní koncepty při definování a používání jaz
 1. Klikněte na tlačítko **Transformovat všechny šablony** v panelu nástrojů Průzkumníka řešení. To obnoví většinu zdrojový kód z DslDefinition.dsl.  
   
    > [!NOTE]
-   >  Pokaždé, když změníte DslDefinition.dsl, musíte kliknout na **Transformovat všechny šablony** předtím, než znovu sestavte řešení. Tento krok můžete automatizovat. Další informace najdete v tématu [jak automatizovat Transformovat všechny šablony](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a).  
+   > Pokaždé, když změníte DslDefinition.dsl, musíte kliknout na **Transformovat všechny šablony** předtím, než znovu sestavte řešení. Tento krok můžete automatizovat. Další informace najdete v tématu [jak automatizovat Transformovat všechny šablony](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a).  
   
 2. Stiskněte klávesu F5 nebo na **ladění** nabídky, klikněte na tlačítko **spustit ladění**.  
   
@@ -171,7 +171,7 @@ Toto téma vysvětluje základní koncepty při definování a používání jaz
    Do projektu můžete přidat libovolný počet soubory textových šablon. Každá šablona generuje jeden soubor s výsledky.  
   
 > [!NOTE]
->  Při změně definice DSL ukázkový kód šablony textu nebude fungovat, pokud ji aktualizovat.  
+> Při změně definice DSL ukázkový kód šablony textu nebude fungovat, pokud ji aktualizovat.  
   
  Další informace najdete v tématu [generování kódu z jazyka specifického pro doménu](../modeling/generating-code-from-a-domain-specific-language.md) a [psaní kódu pro úpravu jazyka specifického pro doménu specifického](../modeling/writing-code-to-customise-a-domain-specific-language.md).  
   
@@ -179,7 +179,7 @@ Toto téma vysvětluje základní koncepty při definování a používání jaz
  Pokud chcete upravit definici DSL, ukončete experimentální instanci a aktualizovat definici v hlavním [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] instance.  
   
 > [!NOTE]
->  Poté, co jste změnili definici DSL, může dojít ke ztrátě informací v modelech testu, které jste vytvořili pomocí starší verze.  Ladění řešení například obsahuje soubor s názvem vzorek, který obsahuje některé obrazců a konektorů. Po spuštění pro vývoj vaší definice DSL nebudou viditelné a budou ztraceny při uložení souboru.  
+> Poté, co jste změnili definici DSL, může dojít ke ztrátě informací v modelech testu, které jste vytvořili pomocí starší verze.  Ladění řešení například obsahuje soubor s názvem vzorek, který obsahuje některé obrazců a konektorů. Po spuštění pro vývoj vaší definice DSL nebudou viditelné a budou ztraceny při uložení souboru.  
   
  Můžete provádět širokou škálu rozšíření vašeho DSL. Následující příklady vám poskytne dojem možností.  
   
@@ -285,7 +285,7 @@ Toto téma vysvětluje základní koncepty při definování a používání jaz
          Nastavte její název, například **městě**.  
   
         > [!NOTE]
-        >  Každá třída domény s výjimkou kořen modelu musí být pro cílový alespoň jeden vztah obsažení, nebo musí dědit z třídy, která je cílem obsažení. Z tohoto důvodu je často vhodné vytvořit doménovou třídu s použitím nástroje vztah obsažení.  
+        > Každá třída domény s výjimkou kořen modelu musí být pro cílový alespoň jeden vztah obsažení, nebo musí dědit z třídy, která je cílem obsažení. Z tohoto důvodu je často vhodné vytvořit doménovou třídu s použitím nástroje vztah obsažení.  
   
     2. Přidat doménová vlastnost, která na novou třídu, například **název**.  
   
@@ -296,7 +296,7 @@ Toto téma vysvětluje základní koncepty při definování a používání jaz
          ![Fragment definice DSL: kořen stromu řady](../modeling/media/familyt-root.png "FamilyT_Root")  
   
         > [!NOTE]
-        >  Referenční stavy představují křížové odkazy z jedné části stromu modelu do jiného.  
+        > Referenční stavy představují křížové odkazy z jedné části stromu modelu do jiného.  
   
 3. Přidáte prvek k reprezentaci měst v diagramech modelů.  
   

@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 05dd21bbb423d75cd175f13ca945516024db01eb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: da666f237824ccae349a023611f7e7b78fdaf684
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049839"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63402835"
 ---
 # <a name="how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-or-designer"></a>Postupy: Přiřazení uložených procedur za účelem aktualizace, vložení a odstranění (O/R Designer)
 
@@ -59,7 +59,7 @@ Ve výchozím nastavení logika aktualizace databáze (vložení, aktualizace a 
 10. Klikněte na tlačítko **OK** nebo **použít**.
 
     > [!NOTE]
-    >  Můžete nadále konfigurovat chování pro každou kombinaci třídu a chování jako kliknete **použít** po každé změně. Pokud změníte třídy nebo chování před kliknutím na **použít**, zobrazí se dialogové okno upozornění a poskytuje možnost použít změny.
+    > Můžete nadále konfigurovat chování pro každou kombinaci třídu a chování jako kliknete **použít** po každé změně. Pokud změníte třídy nebo chování před kliknutím na **použít**, zobrazí se dialogové okno upozornění a poskytuje možnost použít změny.
 
 Pokud chcete vrátit k použití logiky výchozí modul runtime pro aktualizace, klikněte na tlačítko se třemi tečkami vedle **vložit**, **aktualizace**, nebo **odstranit** v příkaz **vlastnosti**  okna a pak vyberte **použít modul runtime** v **konfigurace chování** dialogové okno.
 

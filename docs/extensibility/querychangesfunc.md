@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a2c7a993bca55f1224661e15f9a7ecbf0a967e31
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60066985"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62433419"
 ---
 # <a name="querychangesfunc"></a>QUERYCHANGESFUNC
 Toto je funkce zpětného volání používané [sccquerychanges –](../extensibility/sccquerychanges-function.md) operace vytvoření výčtu kolekce názvů souborů a určit stav každého souboru.
@@ -46,7 +46,7 @@ typedef BOOL (*QUERYCHANGESFUNC)(
 ## <a name="return-value"></a>Návratová hodnota
  Rozhraní IDE vrátí odpovídající chybový kód:
 
-|Value|Popis|
+|Hodnota|Popis|
 |-----------|-----------------|
 |SCC_OK|Pokračujte ve zpracování.|
 |SCC_I_OPERATIONCANCELED|Zastavte zpracování.|

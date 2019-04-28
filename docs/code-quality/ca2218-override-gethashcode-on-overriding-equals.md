@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 155d983a68734038220ffb53aa7a5e9504abdb40
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55922976"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62541881"
 ---
 # <a name="ca2218-override-gethashcode-on-overriding-equals"></a>CA2218: Přepište GetHashCode při přepsání Equals
 
@@ -30,7 +30,7 @@ ms.locfileid: "55922976"
 |Kategorie|Microsoft.Usage|
 |Narušující změna|Pevné|
 
-## <a name="cause"></a>příčina
+## <a name="cause"></a>Příčina
  Veřejný typ přepisuje <xref:System.Object.Equals%2A?displayProperty=fullName> , ale nepřepisuje <xref:System.Object.GetHashCode%2A?displayProperty=fullName>.
 
 ## <a name="rule-description"></a>Popis pravidla

@@ -15,12 +15,12 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cc5415452c6837fa92e1a37ca5d8dfe2a4dd40f6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: cd0ba9030d658abb78605cf2e14b5afaa9678f78
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60068000"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424309"
 ---
 # <a name="uml-use-case-diagrams-guidelines"></a>Diagramy případů použití UML: Pokyny
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,7 +62,7 @@ V sadě Visual Studio, můžete nakreslit *diagramu případu použití* slouž�
 ## <a name="BasicSteps"></a> Základní postup pro vytvoření diagramy případů použití  
   
 > [!NOTE]
->  Podrobné pokyny k vytvoření všech diagramů modelování jsou popsány v [modelů a diagramů UML upravit](../modeling/edit-uml-models-and-diagrams.md).  
+> Podrobné pokyny k vytvoření všech diagramů modelování jsou popsány v [modelů a diagramů UML upravit](../modeling/edit-uml-models-and-diagrams.md).  
   
 #### <a name="to-create-a-new-use-case-diagram"></a>Chcete-li vytvořit nový diagram případu použití  
   
@@ -133,7 +133,7 @@ V sadě Visual Studio, můžete nakreslit *diagramu případu použití* slouž�
  Specializovaný objekt actor může mít svůj vlastní dodatečné využívání případy, které nejsou k dispozici pro jiné objekty actor.  
   
 > [!CAUTION]
->  Neprovádějte smyčky vztahů generalizace, jejichž výsledkem zobecňuje samotný prvek "actor". Smyčky může způsobit chyby.  
+> Neprovádějte smyčky vztahů generalizace, jejichž výsledkem zobecňuje samotný prvek "actor". Smyčky může způsobit chyby.  
   
 ### <a name="alternative-actor-icons"></a>Ikony alternativní objektu Actor  
  Vlastní ikony můžete použít k reprezentaci objektu actor, místo standardní obrázek. Můžete například změnit ho tak, aby připomínaly zařízení, restaurace, bank a tak dále.  
@@ -160,7 +160,7 @@ V sadě Visual Studio, můžete nakreslit *diagramu případu použití* slouž�
  ![Případ 1: 1 pomocí objektu actor](../modeling/media/uml-ucguidemulti1.png "UML_UCGuideMulti1")  
   
 > [!NOTE]
->  Násobnosti asociace v diagramu případu použití jsou skryté, pokud jsou oba **1**.  
+> Násobnosti asociace v diagramu případu použití jsou skryté, pokud jsou oba **1**.  
   
  Ve výchozím nastavení, je každý násobnost **1**. V striktní výklad modelu násobnost 1 znamená, že, například pouze jednoho zákazníka se účastní řazení každé jídlo a, že každého zákazníka objednávky jídla pouze jeden po druhém.  
   
@@ -197,7 +197,7 @@ V sadě Visual Studio, můžete nakreslit *diagramu případu použití* slouž�
    - **\\*** do stavu, který nula nebo víc instancí této role, na které se účastní odkazu.  
   
 > [!NOTE]
->  Mnoho týmů Neumísťujte násobnost informace na diagramy případů použití, byste museli opustit násobnosti na výchozí hodnotu 1. Místo toho poskytují informace v popisy případy použití. V takovém případě se skryjí všechny násobnosti v diagramech případů použití.  
+> Mnoho týmů Neumísťujte násobnost informace na diagramy případů použití, byste museli opustit násobnosti na výchozí hodnotu 1. Místo toho poskytují informace v popisy případy použití. V takovém případě se skryjí všechny násobnosti v diagramech případů použití.  
   
 ### <a name="using-an-actor-or-use-case-on-multiple-diagrams"></a>Pomocí objektu actor nebo použití případu na více diagramů  
  Můžete zobrazit stejné objekty actor a případy použití v několika diagramů. Příklad:  
@@ -215,7 +215,7 @@ V sadě Visual Studio, můžete nakreslit *diagramu případu použití* slouž�
 3. Přetáhněte prvek "actor" nebo případ použití vypnout **Průzkumníka modelů** do nového diagramu.  
   
     > [!NOTE]
-    >  Pokud umístíte na nový diagram prvek "actor" a případ použití, které jsou již propojeny, přidružení mezi nimi se automaticky zobrazí v novém diagramu.  
+    > Pokud umístíte na nový diagram prvek "actor" a případ použití, které jsou již propojeny, přidružení mezi nimi se automaticky zobrazí v novém diagramu.  
   
 ## <a name="Details"></a> Případy použití podrobně popisují  
  Představuje případ použití:  
@@ -277,7 +277,7 @@ V sadě Visual Studio, můžete nakreslit *diagramu případu použití* slouž�
 3. S novou artefakt vybrali, zadejte nebo vložte adresu URL do **hypertextový odkaz** vlastnost.  
   
 > [!NOTE]
->  Klikněte dvakrát na artefakt otevření diagramu nebo dokumentu na které odkazuje.  
+> Klikněte dvakrát na artefakt otevření diagramu nebo dokumentu na které odkazuje.  
   
 ### <a name="linking-use-cases-to-work-items"></a>Propojení případy použití s pracovními položkami  
  Pokud váš projekt používá [!INCLUDE[vstsTfsRosarioLong](../includes/vststfsrosariolong-md.md)] a máte [!INCLUDE[esprtfc](../includes/esprtfc-md.md)], každý případ použití můžete propojit s pracovní položkou v [!INCLUDE[esprfound](../includes/esprfound-md.md)]. Zjistěte, jak provést tyto odkazy, najdete v článku [propojení prvků modelu a pracovních položek](../modeling/link-model-elements-and-work-items.md).  
@@ -309,7 +309,7 @@ V sadě Visual Studio, můžete nakreslit *diagramu případu použití* slouž�
  Použití **zahrnout** vztah, chcete-li zobrazit tento případ použití jedné obsahuje také popis některých podrobností jiného. Na obrázku **objednávka pokrmu** zahrnuje **platit**, **zvolte nabídku**, a **zvolte položku nabídky**. Každá z případů využití zahrnutých, podrobnější je krok, který objekt actor nebo objekty actor možná třeba provést k dosažení celkového cíle včetně případu použití. Na šipku by měla odkazovat v případu použití podrobnější, součást.  
   
 > [!CAUTION]
->  Ve smyčkách obsahují vztahy, jejichž výsledkem případ použití, včetně samotného by neměla provést. Smyčky může způsobit chyby.  
+> Ve smyčkách obsahují vztahy, jejichž výsledkem případ použití, včetně samotného by neměla provést. Smyčky může způsobit chyby.  
   
  Můžete sdílet případy použití zahrnuté. V tomto příkladu **objednávka pokrmu** a **předplatit revize** zahrnují případy použití **platit**.  
   
@@ -346,7 +346,7 @@ V sadě Visual Studio, můžete nakreslit *diagramu případu použití* slouž�
  Například **platit** zobecňuje **platit kreditní kartou** a **platit platební**.  
   
 > [!CAUTION]
->  Neprovádějte smyčky generalizace vztahů, jejichž výsledkem zobecňuje samotný prvek "actor". Smyčky může způsobit chyby.  
+> Neprovádějte smyčky generalizace vztahů, jejichž výsledkem zobecňuje samotný prvek "actor". Smyčky může způsobit chyby.  
   
  Případy použití specializované vám umožňují zobrazit různé způsoby, že váš systém můžete dosáhnout stejné.  
   
@@ -374,7 +374,7 @@ V sadě Visual Studio, můžete nakreslit *diagramu případu použití* slouž�
  ![Jeden případ použití jiného rozšiřuje](../modeling/media/uml-ucguideextend.png "UML_UCGuideExtend")  
   
 > [!CAUTION]
->  Neměli byste provádět ve smyčkách rozšířit vztahů, jejichž výsledkem zobecňuje samotný prvek "actor". Smyčky může způsobit chyby.  
+> Neměli byste provádět ve smyčkách rozšířit vztahů, jejichž výsledkem zobecňuje samotný prvek "actor". Smyčky může způsobit chyby.  
   
  Například **přihlášení** případ použití typické webové stránky mohou zahrnovat **registrovat nové uživatele** – ale jenom Pokud uživatel již nemá účet.  
   
@@ -391,7 +391,7 @@ V sadě Visual Studio, můžete nakreslit *diagramu případu použití* slouž�
    3. Klikněte na tlačítko rozšířenému případu použití (**přihlášení** v příkladu).  
   
        > [!NOTE]
-       >  Vyhněte se vytváření smyčku vztahů rozšířit v diagramu. Je nesprávný pro případ použití bude rozšíření sebe sama.  
+       > Vyhněte se vytváření smyčku vztahů rozšířit v diagramu. Je nesprávný pro případ použití bude rozšíření sebe sama.  
   
 3. Pokud jste již vytvořili scénáře pro rozšířenému případu použití, přesuňte příslušné kroky do scénáře rozšíření.  
   
@@ -425,7 +425,7 @@ V sadě Visual Studio, můžete nakreslit *diagramu případu použití* slouž�
    Chcete-li vytvořit nový případ použití přímo v subsystému, klikněte na tlačítko **případ použití** v sadě nástrojů klikněte do subsystému.  
   
 > [!NOTE]
->  **Predmety** vlastnost způsobu použití určuje, jaké subsystém je obsažena v.  
+> **Predmety** vlastnost způsobu použití určuje, jaké subsystém je obsažena v.  
   
 ### <a name="use-cases-outside-the-system-scope"></a>Případy použití mimo obor systému  
  Je často užitečné umístit na případy použití diagramu, které jsou součástí obchodní, ale ne zabývat systému, které vyvíjíte. To pomáhá vývojářům, aby pochopili kontextu své práce. Například může poskytovat jídla zobrazit jako případ použití zahrnující actors restaurace a zákazníků, ale mimo odpovědnost na jídla řazení webu.  

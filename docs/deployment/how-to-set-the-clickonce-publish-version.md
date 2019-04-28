@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bc57639c988b33f4d1b5844151e983593bf52ddd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e2bd526203b777bafd77c79a4934d1f3e8754dee
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60074697"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406847"
 ---
 # <a name="how-to-set-the-clickonce-publish-version"></a>Postupy: Nastavení publikování ClickOnce verze
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] `Publish Version` Vlastnost určuje, zda aplikace, které publikujete bude považována za aktualizace. Každá verze se zvýší, aplikace bude publikována jako aktualizace.
@@ -29,7 +29,7 @@ ms.locfileid: "60074697"
  `Publish Version` Vlastnost lze nastavit na **publikovat** stránku **Návrháře projektu**.
 
 > [!NOTE]
->  Projekt možnost, bude automaticky zvýší `Publish Version` vlastnost pokaždé, když je aplikace publikována, tato možnost je standardně povolená. Další informace najdete v tématu [jak: Automaticky ClickOnce Inkrementace verze publikování](../deployment/how-to-automatically-increment-the-clickonce-publish-version.md).
+> Projekt možnost, bude automaticky zvýší `Publish Version` vlastnost pokaždé, když je aplikace publikována, tato možnost je standardně povolená. Další informace najdete v tématu [jak: Automaticky ClickOnce Inkrementace verze publikování](../deployment/how-to-automatically-increment-the-clickonce-publish-version.md).
 
 ### <a name="to-change-the-publish-version"></a>Chcete-li změnit verzi publikování
 
@@ -40,7 +40,7 @@ ms.locfileid: "60074697"
 3. V **publikovat verzi** pole, zvýší **hlavní**, **menší**, **sestavení**, nebo **revize** verze čísla.
 
     > [!NOTE]
-    >  Nikdy by měla snížit na číslo verze. To uděláte tak může způsobit nepředvídatelné chování aktualizace.
+    > Nikdy by měla snížit na číslo verze. To uděláte tak může způsobit nepředvídatelné chování aktualizace.
 
 ## <a name="see-also"></a>Viz také:
 - [Volba strategie aktualizace ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md)

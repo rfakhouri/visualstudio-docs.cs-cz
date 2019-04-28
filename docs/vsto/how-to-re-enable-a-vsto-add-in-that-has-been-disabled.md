@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8da3d003ea156ea3182ddbb5a5fd0da3c2681304
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9cdb05328d2a59eb61c57f8f028ade1af0f7ce2f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60095064"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63418817"
 ---
 # <a name="how-to-re-enable-a-vsto-add-in-that-has-been-disabled"></a>Postupy: Opětovné povolení VSTO doplňku, který byl zakázán
   Aplikace Microsoft Office můžete zakázat doplňků VSTO, které neočekávané chování. Pokud aplikace doplňku VSTO nenačte, při pokusu o ladění, aplikace může být zakázaný, pevný nebo obnovitelně zakázáno doplňku VSTO.
@@ -53,7 +53,7 @@ ms.locfileid: "60095064"
  Zakázání obnovitelně může dojít, když doplňku VSTO dojde k chybě, který nevyvolá aplikace neočekávaně zavřít. Například aplikace může být obnovitelné zakázat doplňku VSTO Pokud vyvolá neošetřenou výjimku při <xref:Microsoft.Office.Tools.AddIn.Startup> provádění obslužné rutiny události.
 
 > [!NOTE]
->  Při opětovném povolení doplňku VSTO konfigurace soft zakázáno, aplikace se okamžitě pokusí se načíst doplňku VSTO. Pokud problém, který původně způsobilo, že aplikace obnovitelně zakázání doplňku VSTO nebyl vyřešen, aplikace bude obnovitelné doplňku VSTO znovu zakázat.
+> Při opětovném povolení doplňku VSTO konfigurace soft zakázáno, aplikace se okamžitě pokusí se načíst doplňku VSTO. Pokud problém, který původně způsobilo, že aplikace obnovitelně zakázání doplňku VSTO nebyl vyřešen, aplikace bude obnovitelné doplňku VSTO znovu zakázat.
 
 ### <a name="to-re-enable-a-vsto-add-in"></a>Opětovné povolení doplňku VSTO
 

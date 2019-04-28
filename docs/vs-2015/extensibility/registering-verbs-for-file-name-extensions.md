@@ -10,12 +10,12 @@ ms.assetid: 81a58e40-7cd0-4ef4-a475-c4e1e84d6e06
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: ff021643313d267cc92d2f08afa8f41a3ce806b5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: bb8270de3635b6a9d28a6bf550b29a014d0fed9f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54799750"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432552"
 ---
 # <a name="registering-verbs-for-file-name-extensions"></a>Registrace operací pro přípony názvů souborů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ Přidružení příponu názvu souboru pomocí aplikace je obecně upřednostňo
   Kdykoli je to možné, zaregistrujte standardní příkaz. Nejběžnější je sloveso otevřít. Použijte příkaz upravit jenom v případě, že je vymazat rozdíl mezi otevřením souboru a úpravy souboru. Například otevřete soubor HTM jej zobrazí v prohlížeči, že úpravy něho soubor .htm spuštění editoru HTML. Standardní příkazy jsou lokalizovány s národním prostředím operačního systému.  
   
 > [!NOTE]
->  Při registraci standardní příkazy, nenastavujte výchozí hodnotu pro klíč otevřete. Výchozí hodnota obsahuje řetězec zobrazení v nabídce. Operační systém poskytuje tento řetězec pro standardní příkazy.  
+> Při registraci standardní příkazy, nenastavujte výchozí hodnotu pro klíč otevřete. Výchozí hodnota obsahuje řetězec zobrazení v nabídce. Operační systém poskytuje tento řetězec pro standardní příkazy.  
   
  Soubory projektu by měly být zaregistrovány spustit novou instanci třídy [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] když uživatel otevře soubor. Následující příklad ukazuje standardní příkaz registrace [!INCLUDE[csprcs](../includes/csprcs-md.md)] projektu.  
   
@@ -111,7 +111,7 @@ Přidružení příponu názvu souboru pomocí aplikace je obecně upřednostňo
  Je příkaz výchozí akci, která se spustí v případě, že uživatel dvakrát klikne soubor v Průzkumníku Windows. Výchozí příkaz je jako výchozí hodnota zadaná pro HKEY_CLASSES_ROOT operace\\*progid*\Shell klíč. Pokud není zadána žádná hodnota, výchozí příkaz je zadaná v HKEY_CLASSES_ROOT první operace\\*progid*\Shell seznam klíčů.  
   
 > [!NOTE]
->  Pokud chcete změnit výchozí příkaz rozšíření v nasazení vedle sebe, zvažte dopad na instalaci a odebrání. Během instalace se přepíše původní výchozí hodnotu.  
+> Pokud chcete změnit výchozí příkaz rozšíření v nasazení vedle sebe, zvažte dopad na instalaci a odebrání. Během instalace se přepíše původní výchozí hodnotu.  
   
 ## <a name="see-also"></a>Viz také  
  [Správa přidružení souborů vedle sebe](../extensibility/managing-side-by-side-file-associations.md)

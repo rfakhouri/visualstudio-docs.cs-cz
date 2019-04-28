@@ -11,12 +11,12 @@ ms.assetid: a8e2765c-cfb5-47b5-a414-6e48b434e0c2
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 47f752f00e1efe130f029a3cabdd2e3e3bf19449
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 638c9c0f0d024830124445485dcf9991678bd4d7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60072437"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63429013"
 ---
 # <a name="adding-visual-studio-commands-to-a-start-page"></a>Přidání příkazů sady Visual Studio na úvodní stránku
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ xmlns:vscom="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.Visua
 ```  
   
 > [!NOTE]
->  `x:` Alias, který odkazuje na schématu XAML, se vyžaduje na začátku všechny příkazy.  
+> `x:` Alias, který odkazuje na schématu XAML, se vyžaduje na začátku všechny příkazy.  
   
  Můžete nastavit hodnotu `Command` vlastnost jakýkoli příkaz, který je přístupný z **příkaz** okna. Seznam dostupných příkazů najdete v tématu [aliasy příkazů aplikace Visual Studio](../ide/reference/visual-studio-command-aliases.md).  
   
@@ -65,7 +65,7 @@ xmlns:vscom="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.Visua
  Příkazy můžete volat z registrovaných rozšíření VSPackages pomocí stejné syntaxe, která slouží k volání jiné příkazy sady Visual Studio. Například, pokud nainstalovaný balíček VSPackage správy kódu přidá **domovskou stránku** příkaz **zobrazení** nabídku, můžete volat příkaz tak, že nastavíte `CommandParameter` k `View.HomePage`.  
   
 > [!NOTE]
->  Pokud zavoláte příkaz, který je přidružený k VSPackage, musí být balíček načíst při vyvolání příkazu.  
+> Pokud zavoláte příkaz, který je přidružený k VSPackage, musí být balíček načíst při vyvolání příkazu.  
   
 ## <a name="adding-commands-from-assemblies"></a>Přidání příkazů ze sestavení  
  Volání příkazu ze sestavení nebo na přístupový kód v sadě VSPackage, která nejsou spojena s příkaz nabídky, musíte vytvořit alias pro sestavení a poté zavolejte alias.  
@@ -89,7 +89,7 @@ xmlns:vscom="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.Visua
     ```  
   
 > [!NOTE]
->  Musíte zkopírovat sestavení a vložte jej do... \\ *Instalační složky sady visual Studio*\Common7\IDE\PrivateAssemblies\ Ujistěte se, že je načteno předtím, než je volána.  
+> Musíte zkopírovat sestavení a vložte jej do... \\ *Instalační složky sady visual Studio*\Common7\IDE\PrivateAssemblies\ Ujistěte se, že je načteno předtím, než je volána.  
   
 ## <a name="adding-commands-with-the-dte-object"></a>Přidání komentářů k objektu DTE  
  Objekt DTE můžete přistupovat z úvodní stránku značek a kódu.  

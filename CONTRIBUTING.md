@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 1a53d6fed4b2900aa730f4a5c2e04d528b42d1b9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62419840"
+---
 # <a name="contribute-to-visual-studio-documentation"></a>Přispívání do dokumentace k sadě Visual Studio
 
 Děkujeme, že jste si udělali čas, abyste mohli přispívat do dokumentace sady Visual Studio.

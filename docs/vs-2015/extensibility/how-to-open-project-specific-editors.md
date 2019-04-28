@@ -12,12 +12,12 @@ ms.assetid: 83e56d39-c97b-4c6b-86d6-3ffbec97e8d1
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 46f6b64fecfbbe3a57dad130ad0a65475fad56af
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2439a07f63b8da854ca8dc331d26e30f49503257
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105393"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435941"
 ---
 # <a name="how-to-open-project-specific-editors"></a>Postupy: Otevření editorů pro konkrétní projekt
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Pokud je soubor položky jsou otevírány projekt vnitřně vázán na konkrétn
 1. Volání <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.FindAndLockDocument%2A> – metoda (RDT_EditLock) k určení, zda soubor (datový objekt dokumentu) je již otevřen.  
   
     > [!NOTE]
-    >  Další informace o data dokumentu a objekty zobrazení dokumentu najdete v tématu [dat dokumentů a zobrazení dokumentu ve vlastních editorech](../extensibility/document-data-and-document-view-in-custom-editors.md).  
+    > Další informace o data dokumentu a objekty zobrazení dokumentu najdete v tématu [dat dokumentů a zobrazení dokumentu ve vlastních editorech](../extensibility/document-data-and-document-view-in-custom-editors.md).  
   
 2. Pokud soubor již je otevřen, resurface soubor voláním <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.IsDocumentOpen%2A> metoda a zadáte třeba hodnotu IDO_ActivateIfOpen pro `grfIDO` parametru.  
   
@@ -56,4 +56,4 @@ Pokud je soubor položky jsou otevírány projekt vnitřně vázán na konkrétn
 ## <a name="see-also"></a>Viz také  
  [Otevření a uložení položek projektu](../extensibility/internals/opening-and-saving-project-items.md)   
  [Postupy: Otevřít standardních editorů](../extensibility/how-to-open-standard-editors.md)   
- [Postupy: Otevřít editorů pro otevřené dokumenty](../extensibility/how-to-open-editors-for-open-documents.md)
+ [Postupy: Otevření editorů pro otevřené dokumenty](../extensibility/how-to-open-editors-for-open-documents.md)

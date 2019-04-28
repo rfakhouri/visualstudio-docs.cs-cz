@@ -13,12 +13,12 @@ ms.assetid: dd3e8a6a-b366-433e-a409-b9a9b89da89a
 caps.latest.revision: 23
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a9874379586dd077f857a58800010391da36d19f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7ff078649703eef438ff7f4b14a51e7f7d155231
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069847"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428198"
 ---
 # <a name="walkthrough-creating-and-running-unit-tests-for-windows-store-apps"></a>Návod: Vytváření a spouštění testů jednotek pro aplikace Windows Store
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "60069847"
 Visual Studio zahrnuje podporu pro testování částí spravovaného [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] aplikace a obsahuje šablony knihoven testování jednotek pro jazyk Visual C#, Visual Basic a Visual C++.  
   
 > [!TIP]
->  Další informace o vývoji [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] aplikací, najdete v článku [Začínáme s aplikacemi pro Windows Store](http://go.microsoft.com/fwlink/?LinkID=241410).  
+> Další informace o vývoji [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] aplikací, najdete v článku [Začínáme s aplikacemi pro Windows Store](http://go.microsoft.com/fwlink/?LinkID=241410).  
   
  Visual Studio poskytuje následující funkce testování:  
   
@@ -54,7 +54,7 @@ Visual Studio zahrnuje podporu pro testování částí spravovaného [!INCLUDE[
 2. V části šablony vyberte programovací jazyk, kterou chcete vytvořit test jednotky a pak zvolte přidruženou [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] knihovna testu jednotek. Například zvolte **Visual C#** , klikněte na tlačítko **Windows Store**a klikněte na tlačítko **testovací knihovna jednotky (aplikace pro Windows Store)**.  
   
     > [!NOTE]
-    >  Visual Studio obsahuje šablony knihoven testování jednotek pro jazyk Visual C#, Visual Basic a Visual C++.  
+    > Visual Studio obsahuje šablony knihoven testování jednotek pro jazyk Visual C#, Visual Basic a Visual C++.  
   
 3. (Volitelné) V **název** textového pole zadejte název, kterou chcete použít pro [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]projekt testu jednotek.  
   
@@ -84,7 +84,7 @@ Visual Studio zahrnuje podporu pro testování částí spravovaného [!INCLUDE[
 3. V seznamu v části **možnosti**, vyberte možnosti, které potřebujete otestovat u vaší jednotky a kód, který je testován mít. Vyberte například **Internet** zaškrtávací políčko, pokud test jednotky a kód je testování musí mít přístup k Internetu.  
   
     > [!NOTE]
-    >  Možnosti výběru by měly obsahovat pouze funkce, které jsou nezbytné pro [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] testování částí fungovat správně. Možnosti by nikdy neměli obsahovat funkce, které nejsou součástí [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] aplikace otestovali a obecně by měly být dílčí funkce možností určených pro [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]diskutujete testovanou aplikaci.  
+    > Možnosti výběru by měly obsahovat pouze funkce, které jsou nezbytné pro [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] testování částí fungovat správně. Možnosti by nikdy neměli obsahovat funkce, které nejsou součástí [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] aplikace otestovali a obecně by měly být dílčí funkce možností určených pro [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]diskutujete testovanou aplikaci.  
   
      Další informace o návrháři manifestu naleznete v tématu [nakonfigurovat balíček aplikace pro Windows 8.1 pomocí návrháře manifestu](http://msdn.microsoft.com/library/24c58b7f-9c6d-41c3-b385-c1e8497d5b2d).  
   
@@ -111,22 +111,22 @@ Visual Studio zahrnuje podporu pro testování částí spravovaného [!INCLUDE[
      Jednotkový test je nyní obsažena.  
   
     > [!NOTE]
-    >  Třeba vytvořit řešení Chcete-li aktualizovat seznam testů jednotek v Průzkumníku testů.  
+    > Třeba vytvořit řešení Chcete-li aktualizovat seznam testů jednotek v Průzkumníku testů.  
   
     > [!WARNING]
-    >  Visual Studio známý problém: Průzkumník testů je nutné otevřít před sestavením zkušebního projektu.  
+    > Visual Studio známý problém: Průzkumník testů je nutné otevřít před sestavením zkušebního projektu.  
   
 3. V Průzkumníku testů vyberte test jednotky, kterou jste vytvořili.  
   
     > [!TIP]
-    >  Průzkumník testů obsahuje odkaz na zdrojový kód vedle **zdroj:**.  
+    > Průzkumník testů obsahuje odkaz na zdrojový kód vedle **zdroj:**.  
   
 4. Zvolte **spustit všechny**.  
   
      ![Průzkumník testů jednotek &#45; spustit test jednotek](../test/media/unit-test-win8-unittestexplorer-contextmenurun.png "Unit_Test_Win8_UnitTestExplorer_ContextMenuRun")  
   
     > [!TIP]
-    >  Vyberte jeden nebo více jednotek testů uvedených v Průzkumníkovi, klepněte pravým tlačítkem myši a zvolte **spustit vybrané testy**.  
+    > Vyberte jeden nebo více jednotek testů uvedených v Průzkumníkovi, klepněte pravým tlačítkem myši a zvolte **spustit vybrané testy**.  
     >   
     >  Kromě toho můžete také **ladit vybrané testy**, **Otevřít testovací**a použít **vlastnosti** možnost.  
     >   

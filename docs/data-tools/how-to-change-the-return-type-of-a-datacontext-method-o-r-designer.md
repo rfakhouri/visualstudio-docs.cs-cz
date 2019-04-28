@@ -8,18 +8,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 93d65574012d219d0f65d5b42600c75cf7a624fb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 03e24c11e18f092823ad8dd8c4479b50e531b78b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60046706"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63402811"
 ---
 # <a name="how-to-change-the-return-type-of-a-datacontext-method-or-designer"></a>Postupy: Změnu návratového typu metody DataContext (O/R Designer)
 Návratový typ <xref:System.Data.Linq.DataContext> – metoda (založeno na uložená procedura nebo funkce) se liší v závislosti na tom, kde vyřaďte uloženou proceduru nebo funkci v **O/R Designer**. Pokud přetáhnete položku přímo do existující entity třídy, <xref:System.Data.Linq.DataContext> metodu, která má návratový typ třídy entita se vytvoří (Pokud je schéma dat vrácené uloženou proceduru nebo funkci odpovídá obrazec třídy entity). Pokud přetáhnete položku na prázdnou oblast **O/R Designer**, <xref:System.Data.Linq.DataContext> vytvořené metodou, která vrací automaticky generovanému typu. Můžete změnit návratový typ <xref:System.Data.Linq.DataContext> metoda po přidání do podokna metody. Zkontrolovat nebo změnit návratový typ <xref:System.Data.Linq.DataContext> metoda, vyberte ho a klikněte **návratový typ** vlastnost v **vlastnosti** okna.
 
 > [!NOTE]
->  Nejde vrátit zpět <xref:System.Data.Linq.DataContext> metody, které mají návratový typ nastavena na třídu entity k vrácení automaticky generovaný typ pomocí **vlastnosti** okna. Vrátit zpět <xref:System.Data.Linq.DataContext> metodu pro návrat na automaticky generovaný typ, je třeba přetáhnout na původní objekt do databáze **O/R Designer** znovu.
+> Nejde vrátit zpět <xref:System.Data.Linq.DataContext> metody, které mají návratový typ nastavena na třídu entity k vrácení automaticky generovaný typ pomocí **vlastnosti** okna. Vrátit zpět <xref:System.Data.Linq.DataContext> metodu pro návrat na automaticky generovaný typ, je třeba přetáhnout na původní objekt do databáze **O/R Designer** znovu.
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 

@@ -18,12 +18,12 @@ caps.latest.revision: 28
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: ff4faf3fdd6bd4b9398e3448a63e4c6061d79cfb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 503f97d1530f8d22184f42a2452046782a997c18
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096501"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433001"
 ---
 # <a name="microsoft-language-interface-packs-lips-and-visual-studio"></a>Sady LIP (Microsoft Language Interface Pack) a Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ S použitím Windows Language Interface Pack (LIP), můžete nainstalovat jazyko
  Používá jednotný jazykové sady Visual Studio. K instalaci více než jedna jazyková verze sady těchto produktů, musíte nejprve nainstalovat produkt úplným jazykovým a potom nainstalovat jeden nebo více jazykových sad.
 
 > [!NOTE]
->  Visual Studio nepodporuje instalaci více jazykových verzí produktu úplným jazykovým ve stejném počítači. Po instalaci jeden produkt s úplným jazykovým s použitím jazykové sady musíte přidat jazykové verze. Můžete nainstalovat více produktů úplným jazykovým edice Express ve stejném počítači.
+> Visual Studio nepodporuje instalaci více jazykových verzí produktu úplným jazykovým ve stejném počítači. Po instalaci jeden produkt s úplným jazykovým s použitím jazykové sady musíte přidat jazykové verze. Můžete nainstalovat více produktů úplným jazykovým edice Express ve stejném počítači.
 
 ### <a name="support-for-code-pages"></a>Podpora znakové stránky
  Některé nástroje Visual Studio nezobrazují text správně, když text obsahuje znaky, které nejsou v aktuální znakové stránce. Místo toho zobrazí otazníky nebo text je poškozený. Jsou ovlivněny následující nástroje nebo oblastech:
@@ -76,7 +76,7 @@ S použitím Windows Language Interface Pack (LIP), můžete nainstalovat jazyko
 1. Klikněte na tlačítko **Start**, klikněte na tlačítko **ovládací panely**a pak otevřete **místní a jazykové nastavení** (nebo **oblasti** v [!INCLUDE[win8](../includes/win8-md.md)]).
 
     > [!NOTE]
-    >  Musíte být správcem počítače, postupujte podle těchto kroků.
+    > Musíte být správcem počítače, postupujte podle těchto kroků.
 
 2. Klikněte na tlačítko **Upřesnit** kartu.
 
@@ -88,7 +88,7 @@ S použitím Windows Language Interface Pack (LIP), můžete nainstalovat jazyko
  Když nainstalujete více jazykových verzí sady [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ve stejném počítači, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] uživatelského rozhraní výchozí hodnota je **totéž jako Windows Microsoft**. Toto nastavení znamená, že [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] se zobrazí text uživatelského rozhraní v jazyce, který je zadán jako jazyk operačního systému.
 
 > [!NOTE]
->  Pokud aplikace Visual Studio je nastaveno pro použití **totéž jako Windows Microsoft**a není nainstalovaná odpovídající jazyková sada Visual Studio, Visual Studio bude používat jazyk první instalaci sady Visual Studio.
+> Pokud aplikace Visual Studio je nastaveno pro použití **totéž jako Windows Microsoft**a není nainstalovaná odpovídající jazyková sada Visual Studio, Visual Studio bude používat jazyk první instalaci sady Visual Studio.
 
 #### <a name="to-set-the-language-that-is-used-for-the-ui-text-in-visual-studio"></a>Chcete-li nastavit jazyk, ve kterém se používá pro text uživatelského rozhraní v sadě Visual Studio
 

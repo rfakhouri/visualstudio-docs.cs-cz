@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: d6238919db971492ffd226708209b97bceceb9e0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970098"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62540765"
 ---
 # <a name="code-analysis-for-managed-code-warnings"></a>Upozornění Analýzy kódu pro spravovaný kód
 Nástroj pro analýzu spravovaného kódu poskytuje upozornění, které označují porušení pravidel v knihovnách spravovaného kódu. Upozornění jsou uspořádány do pravidla oblasti, jako jsou návrh, lokalizaci, výkonu a zabezpečení. Každému varování oznamuje porušení pravidla analýzy spravovaného kódu. Tato část poskytuje podrobné diskuze a příklady pro každé upozornění analýzy spravovaného kódu.
@@ -29,11 +29,11 @@ Nástroj pro analýzu spravovaného kódu poskytuje upozornění, které označu
 
 |Položka|Popis|
 |----------|-----------------|
-|Typ|Název typu pravidla.|
+|Type|Název typu pravidla.|
 |CheckId|Jedinečný identifikátor pro pravidlo. ID kontroly a kategorie se používají pro-source potlačení upozornění.|
 |Kategorie|Kategorie upozornění.|
 |Narušující změna|Určuje, zda oprava porušení tohoto pravidla je zásadní změnu. Zásadní změna znamená, že sestavení, které obsahuje závislost na cíl, který způsobil porušení nebude znovu zkompilovat pomocí nové verze nelze upravovat nebo může v době běhu selhat z důvodu této změny. Při více opravy jsou k dispozici a alespoň jednu opravu je zásadní změnu a jednu opravu není, jsou určeny "Přerušení" i "Bez přerušení".|
-|příčina|Konkrétní spravovaný kód, který způsobí, že pravidlo generování upozornění.|
+|Příčina|Konkrétní spravovaný kód, který způsobí, že pravidlo generování upozornění.|
 |Popis|Tento článek popisuje problémy, které jsou za upozornění.|
 |Jak vyřešit porušení|Vysvětluje, jak změnit zdrojový kód a splňovat pravidla zabránit generování upozornění.|
 |Kdy potlačit upozornění|Popisuje, když je bezpečný pro potlačení upozornění z pravidla.|

@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: d22d58eb8a2264d5c7765a15726db556c7d5569f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55949561"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62942899"
 ---
 # <a name="application-and-deployment-manifests-in-office-solutions"></a>Manifesty aplikace a nasazení v řešeních pro systém Office
   Manifest aplikace je soubor XML, který poskytuje informace, které používá řešení pro Office najít a aktualizovat jeho sestavení. Manifest aplikace je možné s manifestem nasazení, což je soubor XML, který je uložený na serveru, který poskytuje informace potřebné k vyhledání aktuální verze manifestu aplikace a sestavení.

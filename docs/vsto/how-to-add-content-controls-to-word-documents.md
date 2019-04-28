@@ -26,12 +26,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9efc655997a48e070ee60a1d66dc57be31362403
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6c7746137cf10e0146ff68eeb2cec9005b72a670
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60080408"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427623"
 ---
 # <a name="how-to-add-content-controls-to-word-documents"></a>Postupy: Přidat obsah ovládacích prvků do dokumentů aplikace Word
   V projektech aplikace Word úrovni dokumentu můžete přidat ovládací prvky obsahu v dokumentu v projektu, v době návrhu nebo za běhu. V projekty doplňku VSTO pro Word můžete přidat ovládací prvky obsahu do libovolného otevřeného dokumentu za běhu.
@@ -78,10 +78,10 @@ ms.locfileid: "60080408"
     - Přetáhněte ovládací prvek obsahu z **nástrojů** v dokumentu. Ovládací prvek obsahu se přidá na aktuální výběr v dokumentu, není v umístění ukazatele myši.
 
 > [!NOTE]
->  Nelze přidat <xref:Microsoft.Office.Tools.Word.GroupContentControl> pomocí **nástrojů**. Lze přidat pouze <xref:Microsoft.Office.Tools.Word.GroupContentControl> v aplikaci Word nebo za běhu.
+> Nelze přidat <xref:Microsoft.Office.Tools.Word.GroupContentControl> pomocí **nástrojů**. Lze přidat pouze <xref:Microsoft.Office.Tools.Word.GroupContentControl> v aplikaci Word nebo za běhu.
 
 > [!NOTE]
->  Visual Studio neposkytuje obsahu ovládacího prvku zaškrtávací políčko v panelu nástrojů. Chcete-li přidat ovládací prvek zaškrtávací políčko obsahu v dokumentu, musíte vytvořit <xref:Microsoft.Office.Tools.Word.ContentControl> objektu prostřednictvím kódu programu. Další informace najdete v tématu [ovládací prvky obsahu](../vsto/content-controls.md).
+> Visual Studio neposkytuje obsahu ovládacího prvku zaškrtávací políčko v panelu nástrojů. Chcete-li přidat ovládací prvek zaškrtávací políčko obsahu v dokumentu, musíte vytvořit <xref:Microsoft.Office.Tools.Word.ContentControl> objektu prostřednictvím kódu programu. Další informace najdete v tématu [ovládací prvky obsahu](../vsto/content-controls.md).
 
 #### <a name="to-add-a-content-control-to-a-document-in-word"></a>Chcete-li přidat ovládací prvek obsahu dokumentu ve Wordu
 
@@ -90,7 +90,7 @@ ms.locfileid: "60080408"
 2. Na pásu karet klikněte na tlačítko **Developer** kartu.
 
     > [!NOTE]
-    >  Pokud **Developer** karta není zobrazena, musíte ji nejdříve zobrazit. Další informace najdete v tématu [jak: Zobrazení karty Vývojář na pásu karet](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
+    > Pokud **Developer** karta není zobrazena, musíte ji nejdříve zobrazit. Další informace najdete v tématu [jak: Zobrazení karty Vývojář na pásu karet](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
 
 3. V **ovládací prvky** klikněte na ikonu ovládacího prvku obsahu, který chcete přidat.
 
@@ -106,7 +106,7 @@ ms.locfileid: "60080408"
   Dynamicky vytvoří obsah, který se jako trvalý ovládací prvky v dokumentu, při zavření dokumentu. Nativní ovládací prvek obsahu, ale zůstává v dokumentu. Můžete znovu vytvořit ovládací prvek obsahu, který je založen na nativním ovládacím prvku obsahu při příštím otevření dokumentu. Další informace najdete v tématu [přidání ovládacích prvků do dokumentů Office za běhu](../vsto/adding-controls-to-office-documents-at-run-time.md).
 
 > [!NOTE]
->  Chcete-li přidat ovládací prvek zaškrtávací políčko obsahu dokumentu v projektu aplikace Word 2010, musíte vytvořit <xref:Microsoft.Office.Tools.Word.ContentControl> objektu. Další informace najdete v tématu [ovládací prvky obsahu](../vsto/content-controls.md).
+> Chcete-li přidat ovládací prvek zaškrtávací políčko obsahu dokumentu v projektu aplikace Word 2010, musíte vytvořit <xref:Microsoft.Office.Tools.Word.ContentControl> objektu. Další informace najdete v tématu [ovládací prvky obsahu](../vsto/content-controls.md).
 
 ### <a name="to-add-a-content-control-at-the-current-selection"></a>Chcete-li přidat ovládací prvek obsahu v aktuálním výběru
 
@@ -149,7 +149,7 @@ ms.locfileid: "60080408"
   Další informace o generování hostitelských položkách v projekty doplňku VSTO v tématu [rozšíření Wordových dokumentů a Excelových sešitů v doplňcích VSTO za běhu](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).
 
 > [!NOTE]
->  Chcete-li do dokumentu přidat ovládací prvek zaškrtávací políčko obsahu, musíte vytvořit <xref:Microsoft.Office.Tools.Word.ContentControl> objektu. Další informace najdete v tématu [ovládací prvky obsahu](../vsto/content-controls.md).
+> Chcete-li do dokumentu přidat ovládací prvek zaškrtávací políčko obsahu, musíte vytvořit <xref:Microsoft.Office.Tools.Word.ContentControl> objektu. Další informace najdete v tématu [ovládací prvky obsahu](../vsto/content-controls.md).
 
 ### <a name="to-add-a-content-control-at-the-current-selection"></a>Chcete-li přidat ovládací prvek obsahu v aktuálním výběru
 

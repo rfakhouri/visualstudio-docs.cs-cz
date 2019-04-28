@@ -16,12 +16,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9c2b8df3878f67207b22127881722aedd8caae8e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 6befa20bcda7f30896fb2b04fadefb0eb5f21f8d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54775571"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408411"
 ---
 # <a name="advanced-search-operators-in-search-expressions"></a>Operátory rozšířeného vyhledávání ve vyhledávacích výrazech
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,11 +29,11 @@ ms.locfileid: "54775571"
 Pomocí operátory rozšířeného vyhledávání můžete upřesnit vyhledávání pro obsah tak, že vytvoříte složitější hledaných výrazů od těch jednodušší. Jak ukazuje následující tabulka tyto operátory omezení kontext, ve kterém se spouští dotaz.  
   
 > [!WARNING]
->  Je nutné zadat operátory rozšířeného vyhledávání konečné dvojtečku žádné použité mezeru před dvojtečku pro vyhledávací web rozpoznány.  
+> Je nutné zadat operátory rozšířeného vyhledávání konečné dvojtečku žádné použité mezeru před dvojtečku pro vyhledávací web rozpoznány.  
   
 |K vyhledání|Použití|Příklad|Výsledek|  
 |-------------------|---------|-------------|------------|  
-|Výraz v název tématu|Název:|Title: binaryreader|Témata, které obsahují "binaryreader" v názvech.|  
+|Výraz v název tématu|název:|Title: binaryreader|Témata, které obsahují "binaryreader" v názvech.|  
 |Termín v příkladu kódu|Kód:|kód: readdouble|Témata, které obsahují "readdouble" v příkladu kódu.|  
 |Výraz v příklad konkrétní programovací jazyk|vb: kód:|code:vb:string|Témata, které obsahují "string" v příkladu jazyka Visual Basic.|  
 |Téma, které souvisí s klíčovým slovem konkrétního indexu|klíčové slovo:|klíčové slovo: readbyte|Témata, které jsou spojeny s klíčovým slovem "readbyte" index.|  

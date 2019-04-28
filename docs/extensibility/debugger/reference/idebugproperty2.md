@@ -12,18 +12,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 32e571f46b30e4f54322fc0138ebfc9b27e3753a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 3e13233950940c01c758a0faf07611c1426475e8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56709002"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412676"
 ---
 # <a name="idebugproperty2"></a>IDebugProperty2
 Toto rozhraní představuje vlastnost rámce zásobníku, vlastnost dokumentu program nebo některé jiné vlastnosti. Vlastnost je obvykle výsledkem vyhodnocení výrazu.
 
 > [!NOTE]
->  Toto použití "vlastnosti" neměly by být zaměňovány s znamená členské proměnné třídy, i když `IDebugProperty2` může představovat taková entita.
+> Toto použití "vlastnosti" neměly by být zaměňovány s znamená členské proměnné třídy, i když `IDebugProperty2` může představovat taková entita.
 
 ## <a name="syntax"></a>Syntaxe
 

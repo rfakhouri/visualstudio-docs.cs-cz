@@ -13,12 +13,12 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 751b894e46fa6c76f866ddd3209d25c169ff6660
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 41c7aa12e4adf2a757689670cdfed394f2a534c6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649404"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433701"
 ---
 # <a name="call-hierarchy"></a>Hierarchie volání
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ Hierarchie volání – okno
 - **Okno Definice kódu**, pokud otevřete, zobrazí kód pro vybraného členu. Toto okno je k dispozici v jazyce C# a C++. Další informace o tomto okně najdete v tématu [zobrazení struktury kódu](../../ide/viewing-the-structure-of-code.md).  
   
 > [!NOTE]
->  Hierarchie volání nenajde metoda odkazy na skupinu obsahující místa, kde se přidá jako obslužná rutina události metodu, nebo je přiřazená delegáta. Pokud chcete najít všechny odkazy na metodu, můžete použít **najít všechny odkazy** příkazu.  
+> Hierarchie volání nenajde metoda odkazy na skupinu obsahující místa, kde se přidá jako obslužná rutina události metodu, nebo je přiřazená delegáta. Pokud chcete najít všechny odkazy na metodu, můžete použít **najít všechny odkazy** příkazu.  
   
 ## <a name="shortcut-menu-items"></a>Položky místní nabídky  
  Následující tabulka popisuje několik možnosti místní nabídky, které jsou k dispozici, když kliknete pravým tlačítkem myši na uzel v podokně se stromovým zobrazením.  

@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b2be6fbafc1520e190cc52bea839c6cf9e208ca4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9ad16165924a33a25dab2b1cfb49a0a7bbfe0875
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60090577"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63421538"
 ---
 # <a name="xmlnodes-control"></a>XMLNodes – ovládací prvek
   **Důležité** informace uvedené v tomto tématu týkající se Microsoft Word je zobrazené výhradně pro výhod a užívání o jednotlivci i organizacemi, kteří se nacházejí mimo Spojené státy a jeho území nebo kteří používají nebo vývoj programy, které běží na produkty Microsoft Word, které byly licencovaných společností Microsoft před 2010 dne, kdy Microsoft odebrána implementace konkrétní funkce související s vlastní XML z aplikace Microsoft Word. Tyto informace týkající se Microsoft Word nemusí být přečteny nebo používány jednotlivcům i organizacím v USA nebo v jeho území, které používáte, nebo vývoji programů, které běží na produkty Microsoft Word, které byly licencovaných společností Microsoft po 10. ledna 2010 ; tyto produkty se chovají stejně jako produkty licenci před tímto datem nebo zakoupených a licencovaná pro použití mimo území Spojených států.
@@ -30,7 +30,7 @@ ms.locfileid: "60090577"
  Poté, co Visual Studio vytvoří sadu uzlů XML, můžete programovat proti ovládacího prvku přímo, bez nutnosti procházení objektovému modelu Wordu. <xref:Microsoft.Office.Tools.Word.XMLNodes> Ovládací prvek lze odstranit pouze tak, že odeberete mapování elementu z dokumentu.
 
 > [!NOTE]
->  Pokud přistupujete podřízený prvek <xref:Microsoft.Office.Tools.Word.XMLNodes> řídit prostřednictvím <xref:Microsoft.Office.Tools.Word.XMLNodes.Item%2A> vrátí vlastnosti, <xref:Microsoft.Office.Interop.Word.XMLNode> objekt spíše než <xref:Microsoft.Office.Tools.Word.XMLNode> ovládacího prvku. Další informace najdete v tématu [programová omezení hostitelských položek a hostitelských ovládacích prvků](../vsto/programmatic-limitations-of-host-items-and-host-controls.md).
+> Pokud přistupujete podřízený prvek <xref:Microsoft.Office.Tools.Word.XMLNodes> řídit prostřednictvím <xref:Microsoft.Office.Tools.Word.XMLNodes.Item%2A> vrátí vlastnosti, <xref:Microsoft.Office.Interop.Word.XMLNode> objekt spíše než <xref:Microsoft.Office.Tools.Word.XMLNode> ovládacího prvku. Další informace najdete v tématu [programová omezení hostitelských položek a hostitelských ovládacích prvků](../vsto/programmatic-limitations-of-host-items-and-host-controls.md).
 
 ## <a name="bind-data-to-the-control"></a>Vytvoření vazby dat k ovládacímu prvku
  <xref:Microsoft.Office.Tools.Word.XMLNodes> Ovládací prvek nepodporuje vytváření datových vazeb. Je to proto, <xref:Microsoft.Office.Tools.Word.XMLNodes> ovládací prvek nemá rozšířené datové vazby funkce a nemůže představovat jednoduché datové vazby opakující se data.

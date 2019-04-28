@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: af4ac9e8dad60c28e5017c09f1f94ed7aaa00dfd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: c1acd55ad9ea2d671730a656a673fd1f2ca3aa19
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60101935"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430882"
 ---
 # <a name="specify-custom-build-events-in-visual-studio"></a>Určení vlastních událostí sestavení v sadě Visual Studio
 
@@ -53,7 +53,7 @@ Události sestavení, postupujte podle stejné syntaxe jako DOS příkazy, ale m
    Příklad: `for %I in (*.txt *.doc *.html) do copy %I c:\` *mydirectory*`\`
 
   > [!NOTE]
-  >  `%I` ve výše uvedeném kódu by měla být `%%I` v dávkových skriptů.
+  > `%I` ve výše uvedeném kódu by měla být `%%I` v dávkových skriptů.
 
 ## <a name="see-also"></a>Viz také:
 

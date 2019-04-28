@@ -12,12 +12,12 @@ caps.latest.revision: 42
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 046ae576880c6749c6bb033f66124c0085dfab16
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5bb3632e1ed7bf07e236322700ba8553b53a75cb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60057157"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426605"
 ---
 # <a name="in-source-suppression-overview"></a>Přehled potlačování ve zdroji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Potlačení v zdroje je možnost potlačit nebo ignorovat porušení zásad anal
  Zabránit potlačení v zdroje metadat přesouvání omylem byste neměli používat potlačení v zdroje u sestavení pro vydání. Vzhledem k zpracování potlačení-source může být také snížený výkon vaší aplikace zahrnutím potlačení v zdroje metadat.  
   
 > [!NOTE]
->  Není nutné ručně kód tyto atributy sami. Další informace najdete v tématu [jak: Potlačení upozornění použitím položky nabídky](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md). Položka nabídky není k dispozici pro kód C++.  
+> Není nutné ručně kód tyto atributy sami. Další informace najdete v tématu [jak: Potlačení upozornění použitím položky nabídky](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md). Položka nabídky není k dispozici pro kód C++.  
   
 ## <a name="suppressmessage-attribute"></a>Atributu SuppressMessage  
  Když kliknete pravým tlačítkem na upozornění analýzy kódu v **seznam chyb** a potom klikněte na tlačítko **potlačení zpráv**, **SuppressMessage** je ve vašem kódu nebo na Přidat atribut projektový soubor globálního potlačení.  
@@ -109,7 +109,7 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
  `[module: SuppressMessage("Microsoft.Design", "CA1020:AvoidNamespacesWithFewTypes", Scope = "namespace", Target = "MyNamespace")]`  
   
 > [!NOTE]
->  Při potlačení upozornění se obor názvů, potlačí případná upozornění pro obor názvů, samotného. Upozornění s typy v rámci oboru názvů je nepotlačuje.  
+> Při potlačení upozornění se obor názvů, potlačí případná upozornění pro obor názvů, samotného. Upozornění s typy v rámci oboru názvů je nepotlačuje.  
   
  Žádné potlačení lze vyjádřit zadáním výslovného oboru. Tyto potlačení musí být aktivní na globální úrovni. Potlačení na úrovni člena nelze zadat pomocí upravení typu.  
   
@@ -118,7 +118,7 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
  `[module: SuppressMessage("Microsoft.Design", "CA1055:AbstractTypesDoNotHavePublicConstructors", Scope="member", Target="Microsoft.Tools.FxCop.Type..ctor()")]`  
   
 > [!NOTE]
->  Target vždy obsahuje plně kvalifikovaný název.  
+> Target vždy obsahuje plně kvalifikovaný název.  
   
 ## <a name="global-suppression-file"></a>Soubor globálního potlačení  
  Soubor globálního potlačení udržuje potlačení, které jsou potlačení na globální úrovni nebo potlačení, u kterých není cíl. Například pro porušení úrovně sestavení jsou uložena v tomto souboru. Kromě toho některé technologie ASP.NET jsou uložena v tomto souboru vzhledem k tomu, že nastavení na úrovni projektu nejsou k dispozici pro kódu na pozadí formuláře. Globální potlačení je vytvořen a přidán do projektu poprvé, kterou jste vybrali **v souboru potlačení projektu** možnost **potlačení zpráv** příkazu v okně Seznam chyb. Další informace najdete v tématu [jak: Potlačení upozornění použitím položky nabídky](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md).  

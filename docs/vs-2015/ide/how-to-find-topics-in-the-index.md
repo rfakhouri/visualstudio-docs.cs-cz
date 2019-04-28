@@ -16,12 +16,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8c2ad1e97302a822bacc2fbbc983002626adb78a
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
-ms.translationtype: MT
+ms.openlocfilehash: 67eb54d06297458915edfe34718948b085c6e86b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54758166"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63416832"
 ---
 # <a name="how-to-find-topics-in-the-index"></a>Postupy: Hledání témat v rejstříku
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ Index obsahuje seznam klíčových slov, které jsou spojeny s tématy v nainsta
       Kliknutím na tlačítko filtru v horní části karty můžete zobrazit všechny položky, které obsahují text, který zadáte, nebo pouze ty položky, které začínaly textem, který zadáte.  
   
      > [!NOTE]
-     >  Jakmile se zobrazí tlačítko Filtr na tmavší pozadí s ohraničením, položky musí obsahovat text, který zadáte. Pokud se nezobrazují na pozadí a ohraničení, položky musí začínat textem, který zadáte.  
+     > Jakmile se zobrazí tlačítko Filtr na tmavší pozadí s ohraničením, položky musí obsahovat text, který zadáte. Pokud se nezobrazují na pozadí a ohraničení, položky musí začínat textem, který zadáte.  
   
    - Projděte si index a zvolte klíčové slovo.  
   

@@ -10,12 +10,12 @@ ms.assetid: 9a3f5b83-60b5-4ef0-91fe-a432105bd066
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f6c8aa5d32d579183b0bb42a9152232377423435
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ab9301f31976b084c3c8565329dca248503e40ae
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088688"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437417"
 ---
 # <a name="attaching-to-the-program"></a>Připojení k programu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -52,12 +52,12 @@ Po registraci svých programů s příslušný port je nutné připojit ladicí 
      Tím se vrátí `GUID` , který se používá k identifikaci program. `GUID` Musí být uložen v objektu, že představuje místní program určený k DE, a to je vrácena, pokud `IDebugProgram2::GetProgramId` metoda je volána na `IDebugProgram2` rozhraní.  
   
     > [!NOTE]
-    >  Pokud se rozhodnete implementovat `IDebugProgramNodeAttach2` rozhraní programu `GUID` je předán `IDebugProgramNodeAttach2::OnAttach` metoda. To `GUID` se používá v programu `GUID` vrácených `IDebugProgram2::GetProgramId` metody.  
+    > Pokud se rozhodnete implementovat `IDebugProgramNodeAttach2` rozhraní programu `GUID` je předán `IDebugProgramNodeAttach2::OnAttach` metoda. To `GUID` se používá v programu `GUID` vrácených `IDebugProgram2::GetProgramId` metody.  
   
 3. Odeslání [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) události objektu oznámit SDM, místní `IDebugProgram2` byl vytvořen objekt představující program DE. Podrobnosti najdete v tématu [odesílání událostí](../../extensibility/debugger/sending-events.md).  
   
     > [!NOTE]
-    >  To není stejné `IDebugProgram2` objekt, který byl předán `IDebugEngine2::Attach` metody. Dříve předaný `IDebugProgram2` objekt rozezná pouze port a je samostatný objekt.  
+    > To není stejné `IDebugProgram2` objekt, který byl předán `IDebugEngine2::Attach` metody. Dříve předaný `IDebugProgram2` objekt rozezná pouze port a je samostatný objekt.  
   
 ## <a name="see-also"></a>Viz také  
  [Příloha založená na spuštění](../../extensibility/debugger/launch-based-attachment.md)   

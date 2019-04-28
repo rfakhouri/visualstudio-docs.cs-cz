@@ -11,12 +11,12 @@ ms.assetid: 274673e7-72e7-476f-a263-3411b5b874be
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f8c230fd2ecd9183b131662a1033be3402859001
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: eda92d27781ec26fd33cfd82d18257015b494236
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060498"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430130"
 ---
 # <a name="troubleshooting-vspackages"></a>Řešení potíží s rozšířením VSPackages
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ Tady jsou běžné problémy, které může mít s vaší VSPackage a tipy pro �
 4. Otevřít **výstup** okno instance [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , které se nedaří načíst sady VSPackage. Informace o proč sady VSPackage nedaří se načíst může být zobrazen v tomto okně.  
   
     > [!NOTE]
-    >  Pokud začínáte experimentální verzi [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] z [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] integrované vývojové prostředí (IDE), zkontrolujte **výstup** okno obě verze.  
+    > Pokud začínáte experimentální verzi [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] z [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] integrované vývojové prostředí (IDE), zkontrolujte **výstup** okno obě verze.  
   
 5. Vyhledejte v protokolu aktivit.  
   
@@ -87,7 +87,7 @@ Tady jsou běžné problémy, které může mít s vaší VSPackage a tipy pro �
     4. Na **ladění** nabídky, klikněte na tlačítko **spustit ladění** nebo stiskněte klávesu F5.  
   
         > [!NOTE]
-        >  Když provádíte ladění projektu, vytvořit nebo načíst existující instanci projektu nyní.  
+        > Když provádíte ladění projektu, vytvořit nebo načíst existující instanci projektu nyní.  
   
 2. Použití protokolu aktivit.  
   

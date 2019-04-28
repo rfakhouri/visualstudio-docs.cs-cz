@@ -8,12 +8,12 @@ ms.topic: include
 ms.date: 05/23/2018
 ms.author: mikejo
 ms.custom: include file
-ms.openlocfilehash: 67ffd17c772221c356e8c25d14437c2a737fda9e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 3fa0569739ee81ec4b2aa0eec8157068ffc949cd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56723874"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63407765"
 ---
 1. V **Průzkumníka řešení**, klikněte pravým tlačítkem na uzel projektu a vyberte **publikovat** (pro webové formuláře **publikovat webovou aplikaci**).
 
@@ -43,7 +43,7 @@ ms.locfileid: "56723874"
 1. Zkopírujte adresář projektu ASP.NET ze sady Visual Studio do místního adresáře konfigurovat pro aplikace ASP.NET (v tomto příkladu **C:\Publish**) na počítač s Windows serverem. V tomto kurzu předpokládáme, kterou kopírujete ručně, ale můžete použít jiné nástroje, jako je PowerShell, příkazu Xcopy nebo Robocopy.
 
     > [!CAUTION]
-    >  Pokud potřebujete provést změny v kódu nebo znovu sestavit, musíte znovu publikovat a opakujte tento krok. Spustitelný soubor, který jste zkopírovali do vzdáleného počítače se musí přesně odpovídat, místní zdroje a symbolů.    Pokud jste neprovádějte tuto akci, zobrazí se `cannot find or open the PDB file` upozornění v sadě Visual Studio při pokusu o ladění procesu.
+    > Pokud potřebujete provést změny v kódu nebo znovu sestavit, musíte znovu publikovat a opakujte tento krok. Spustitelný soubor, který jste zkopírovali do vzdáleného počítače se musí přesně odpovídat, místní zdroje a symbolů.    Pokud jste neprovádějte tuto akci, zobrazí se `cannot find or open the PDB file` upozornění v sadě Visual Studio při pokusu o ladění procesu.
 
 1. V systému Windows Server ověřte, že aplikace spustit správně tak, že otevřete aplikaci v prohlížeči.
 

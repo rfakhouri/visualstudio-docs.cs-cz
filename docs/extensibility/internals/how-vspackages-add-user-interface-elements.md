@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ca4e817ae33d3129259de619e07bf256e6f544bd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b392c962a2ddbed57ca1af934c0ef9d8b5175595
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60092315"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63418403"
 ---
 # <a name="how-vspackages-add-user-interface-elements"></a>Jak balíčky VSPackages přidávají prvky uživatelského rozhraní
 Můžete přidat prvky uživatelského rozhraní (UI), například nabídky, panely nástrojů a nástrojů systému windows, do sady Visual Studio prostřednictvím VSPackage *.vsct* souboru.
@@ -63,7 +63,7 @@ Můžete přidat prvky uživatelského rozhraní (UI), například nabídky, pan
  Element nejvyšší úrovně `Symbols` oddíl je [guidsymbol – element](../../extensibility/guidsymbol-element.md). `GuidSymbol` prvky mapování jména na identifikátory GUID, které používají rozhraní IDE k identifikaci balíčky a jejich součásti.
 
 > [!NOTE]
->  GUID se automaticky generován balíček šablony sady Visual Studio. Jedinečný identifikátor GUID můžete také vytvořit kliknutím **Create GUID** na **nástroje** nabídky.
+> GUID se automaticky generován balíček šablony sady Visual Studio. Jedinečný identifikátor GUID můžete také vytvořit kliknutím **Create GUID** na **nástroje** nabídky.
 
  První `GuidSymbol` elementu `guid<PackageName>Pkg`, je GUID samotném balíčku. Toto je identifikátor GUID, který se používá sada Visual Studio k načtení balíčku. Obvykle nemá podřízené prvky.
 

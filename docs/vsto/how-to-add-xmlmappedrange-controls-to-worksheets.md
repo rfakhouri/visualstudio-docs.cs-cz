@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cef35cd1aa19ad27e7c47227b726a44756b0fae8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 60f1fe8330e3a40676738c4187273ee60215db6d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60085713"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427432"
 ---
 # <a name="how-to-add-xmlmappedrange-controls-to-worksheets"></a>Postupy: Přidání ovládacích prvků XMLMappedRange do listů
   Při mapování platný element XML do buňky v aplikaci Microsoft Office Excel sady Visual Studio automaticky přidá <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> ovládacího prvku do listu.
@@ -26,7 +26,7 @@ ms.locfileid: "60085713"
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]
 
 > [!NOTE]
->  <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> Ovládací prvek není k dispozici na **nástrojů** nebo **zdroje dat** okna. Kromě toho nelze vytvořit <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> řídí prostřednictvím kódu programu.
+> <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> Ovládací prvek není k dispozici na **nástrojů** nebo **zdroje dat** okna. Kromě toho nelze vytvořit <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> řídí prostřednictvím kódu programu.
 
 ## <a name="to-add-an-xmlmappedrange-control-to-a-worksheet"></a>Chcete-li přidat xmlmappedrange – ovládací prvek do listu
 
@@ -37,7 +37,7 @@ ms.locfileid: "60085713"
 3. Na **Developer** klikněte na tlačítko **zdroj**.
 
     > [!NOTE]
-    >  Pokud **Developer** karta není zobrazena na pásu karet, musíte ho nejdřív povolit. Další informace najdete v tématu [jak: Zobrazení karty Vývojář na pásu karet](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
+    > Pokud **Developer** karta není zobrazena na pásu karet, musíte ho nejdřív povolit. Další informace najdete v tématu [jak: Zobrazení karty Vývojář na pásu karet](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
 
      **XML použitého jako zdroj** se zobrazí v podokně úloh.
 
@@ -58,7 +58,7 @@ ms.locfileid: "60085713"
      <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> Je vytvořen a přidán do projektu.
 
     > [!NOTE]
-    >  Pokud přetáhnete nadřazený element z **XML použitého jako zdroj** podokna úloh <xref:Microsoft.Office.Tools.Excel.ListObject> ovládací prvek vytvořen.
+    > Pokud přetáhnete nadřazený element z **XML použitého jako zdroj** podokna úloh <xref:Microsoft.Office.Tools.Excel.ListObject> ovládací prvek vytvořen.
 
 ## <a name="see-also"></a>Viz také:
 - [Xmlmappedrange – ovládací prvek](../vsto/xmlmappedrange-control.md)

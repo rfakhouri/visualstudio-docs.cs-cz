@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a26d6f72cee0f2718e84a9e2b671c2be7977bbd5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 941bf3329b0724e19048afa6c93a9a9c3762d1c6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096241"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430745"
 ---
 # <a name="step-3-set-your-form-properties"></a>Krok 3: Nastavte vlastnosti svého formuláře
 Dále použijete **vlastnosti** okno a změně vzhledu formuláře.
@@ -27,7 +27,7 @@ Dále použijete **vlastnosti** okno a změně vzhledu formuláře.
 2. Klikněte kamkoli do formuláře **Form1** ji vyberte. Podívejte se na **vlastnosti** okno, které by nyní měly zobrazovat vlastnosti pro formulář. Formuláře mají různé vlastnosti. Můžete například nastavit popředí a pozadí, text nadpisu, který se zobrazí v horní části formuláře, velikost formuláře a dalších vlastností.
 
    > [!NOTE]
-   >  Pokud **vlastnosti** okno nezobrazí, ukončete program výběrem čtvercového **Zastavit ladění** tlačítko na panelu nástrojů nebo pouze zavřete okno. Pokud program je zastaven a stále nevidíte **vlastnosti** okna na řádku nabídek zvolte **zobrazení** > **okno vlastností**.
+   > Pokud **vlastnosti** okno nezobrazí, ukončete program výběrem čtvercového **Zastavit ladění** tlačítko na panelu nástrojů nebo pouze zavřete okno. Pokud program je zastaven a stále nevidíte **vlastnosti** okna na řádku nabídek zvolte **zobrazení** > **okno vlastností**.
 
 3. Po výběru formuláře vyhledejte **Text** vlastnost **vlastnosti** okna. V závislosti na tom, jak je seznam seřazen může být potřeba posuňte se dolů. Zvolte **Text**, typ **prohlížeče obrázků**a klikněte na tlačítko **Enter**.  Formulář by měl mít nyní text **prohlížeče obrázků** v jeho záhlaví a **vlastnosti** okno by mělo vypadat jako na následujícím obrázku.
 
@@ -35,7 +35,7 @@ Dále použijete **vlastnosti** okno a změně vzhledu formuláře.
    **vlastnosti** okna
 
    > [!NOTE]
-   >  Vlastnosti lze provést řazení podle **Categorized** nebo **Alphabetical** zobrazení. Můžete přepínat mezi těmito dvěma zobrazeními pomocí tlačítek na **vlastnosti** okna. V tomto kurzu je snazší nalézt vlastnosti prostřednictvím **Alphabetical** zobrazení.
+   > Vlastnosti lze provést řazení podle **Categorized** nebo **Alphabetical** zobrazení. Můžete přepínat mezi těmito dvěma zobrazeními pomocí tlačítek na **vlastnosti** okna. V tomto kurzu je snazší nalézt vlastnosti prostřednictvím **Alphabetical** zobrazení.
 
 4. Přejděte zpět na **Návrháře formulářů Windows**. Zvolte úchyt pro přetažení pravém formuláře, který je bílý čtvereček v pravém dolním formuláře a zobrazí se takto.
 

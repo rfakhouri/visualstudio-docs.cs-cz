@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5bde22809af69071f5484e25717a5aea7d78a603
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54795898"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62428531"
 ---
 # <a name="ltassemblyidentitygt-element-clickonce-application"></a>&lt;Vlastnost assemblyIdentity&gt; – Element (aplikace ClickOnce)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,4 +72,4 @@ Identifikuje nasazené v aplikaci [!INCLUDE[ndptecclick](../includes/ndptecclick
   
 ## <a name="see-also"></a>Viz také  
  [ClickOnce – Manifest aplikace](../deployment/clickonce-application-manifest.md)   
- [\<Vlastnost assemblyIdentity > – Element](../deployment/assemblyidentity-element-clickonce-deployment.md)
+ [Element \<assemblyIdentity>](../deployment/assemblyidentity-element-clickonce-deployment.md)

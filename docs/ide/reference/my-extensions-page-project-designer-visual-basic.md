@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d366ed403eba6fbfab4aec22f4542ee5362962f2
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55923236"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62540608"
 ---
 # <a name="my-extensions-page-project-designer-visual-basic"></a>Stránka Moje rozšíření, návrhář projektu (Visual Basic)
 Použití **Moje rozšíření** stránku **Návrháře projektu** ke správě `My` rozšíření oboru názvů ve vašem projektu. `My` rozšíření oboru názvů umožňují přizpůsobit `My` obor názvů pro přidání vlastních členů. Informace o vytváření vlastních `My` rozšíření oboru názvů, naleznete v tématu [rozšíření My Namespace v jazyce Visual Basic](/dotnet/visual-basic/developing-apps/customizing-extending-my/extending-the-my-namespace).

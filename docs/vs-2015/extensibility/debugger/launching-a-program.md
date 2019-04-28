@@ -11,12 +11,12 @@ ms.assetid: 6857e9c6-e44a-468a-afa4-f7c4a0b77844
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: cd23fdc3baf4afd6dde50a4310abf1b5c1841fd7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: b54250a54960f346f60c5d668755fb5d28ab376e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54788482"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430209"
 ---
 # <a name="launching-a-program"></a>Spuštění programu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,12 +32,12 @@ Uživatelé, kteří chtějí ladění programu, můžete stisknutím klávesy F
     Pokud není zadán Zavedenými, port, který volá operačního systému spustit program, což způsobí, že prostředí za běhu programu načíst.  
   
    > [!NOTE]
-   >  Pokud se Zavedenými používá ke spuštění programu, je pravděpodobné, že stejné DE bude připojen k programu.  
+   > Pokud se Zavedenými používá ke spuštění programu, je pravděpodobné, že stejné DE bude připojen k programu.  
   
 3. V závislosti na tom, zda je DE nebo port, který spustil program DE nebo běhové prostředí potom vytvoří popis programu, nebo uzel a upozorní port, který je spuštěn program.  
   
    > [!NOTE]
-   >  Doporučuje, běhové prostředí vytvořit uzel program, protože uzel programu je zjednodušené reprezentace program, který lze ladit. Není nutné načíst si celé DE jenom k vytvoření a registrace uzlu programu. Pokud je DE je navržená ke spuštění procesu prostředí IDE, ale bez integrovaného vývojového prostředí je ve skutečnosti spuštěn, musí být součást, která můžete přidat uzel, program na port.  
+   > Doporučuje, běhové prostředí vytvořit uzel program, protože uzel programu je zjednodušené reprezentace program, který lze ladit. Není nutné načíst si celé DE jenom k vytvoření a registrace uzlu programu. Pokud je DE je navržená ke spuštění procesu prostředí IDE, ale bez integrovaného vývojového prostředí je ve skutečnosti spuštěn, musí být součást, která můžete přidat uzel, program na port.  
   
    Nově vytvořený program, společně s další programy, související nebo nesouvisející, spuštění nebo připojené k ze stejného prostředí IDE, vytvořte relaci ladění.  
   

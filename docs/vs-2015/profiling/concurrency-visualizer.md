@@ -16,18 +16,18 @@ caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7c86228d21323d1928acb9fc94582fbb9d320248
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e9735f6ab6a44041deabdae0d57782da6f8c98b7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60084840"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434338"
 ---
 # <a name="concurrency-visualizer"></a>Vizualizér souběžnosti
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 POZNÁMKA:]
->  Vizualizátor souběžnosti je volitelné rozšíření pro Visual Studio. Vizualizátor souběžnosti a kolekce nástrojů pro Concurrency Visualizer můžete stáhněte z následující odkazy:  
+> Vizualizátor souběžnosti je volitelné rozšíření pro Visual Studio. Vizualizátor souběžnosti a kolekce nástrojů pro Concurrency Visualizer můžete stáhněte z následující odkazy:  
 > 
 > - Stáhněte si [Vizualizátor souběžnosti](https://visualstudiogallery.msdn.microsoft.com/a6c24ce9-beec-4545-9261-293061436ee9) rozšíření.  
 >   - Stáhněte si [Concurrency Visualizer kolekce nástrojů pro Visual Studio 2015](http://www.microsoft.com/download/details.aspx?id=49103).  
@@ -39,7 +39,7 @@ POZNÁMKA:]
  Vizualizátor souběžnosti spoléhá na [události trasování pro Windows](http://go.microsoft.com/fwlink/?LinkId=234579) funkce.  
   
 > [!NOTE]
->  Vizualizátor souběžnosti nepodporuje webové projekty.  
+> Vizualizátor souběžnosti nepodporuje webové projekty.  
   
 ## <a name="related-topics"></a>Související témata  
   

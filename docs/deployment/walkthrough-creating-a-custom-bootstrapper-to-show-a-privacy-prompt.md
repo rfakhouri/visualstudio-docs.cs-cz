@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1973d5d71308cc5fda6e48acfc60d256775ff2cc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 00c5266d57ae5633313465796c718d989f783ea6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60089169"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406866"
 ---
 # <a name="walkthrough-create-a-custom-bootstrapper-with-a-privacy-prompt"></a>Návod: Vytvoření vlastního bootstrapperu s dotazem souvisejícím se soukromím
 Můžete nakonfigurovat aplikace ClickOnce automaticky aktualizovat při sestavení pomocí novější verze souboru a verze sestavení k dispozici. Pokud chcete mít jistotu, že vaši zákazníci souhlas pro toto chování, můžete zobrazit soukromím k nim. Potom se můžete zvolit, jestli chcete udělit oprávnění k aplikaci automaticky aktualizovat. Pokud aplikace nemá povolný automaticky aktualizovat, ji není možné nainstalovat.
@@ -125,7 +125,7 @@ Můžete nakonfigurovat aplikace ClickOnce automaticky aktualizovat při sestave
     6. V **spouštěcí objekt** rozevírací nabídky vyberte **Module1**.
 
        > [!NOTE]
-       >  Zakázání aplikační platformu zakáže funkce, jako jsou vizuální styly Windows XP, události aplikace, úvodní obrazovka, jedna instance aplikace a další. Další informace najdete v tématu [stránka aplikace, Návrhář projektu (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md).
+       > Zakázání aplikační platformu zakáže funkce, jako jsou vizuální styly Windows XP, události aplikace, úvodní obrazovka, jedna instance aplikace a další. Další informace najdete v tématu [stránka aplikace, Návrhář projektu (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md).
 
        Visual C# pouze pro vývojáře:
 
@@ -151,12 +151,12 @@ Můžete nakonfigurovat aplikace ClickOnce automaticky aktualizovat při sestave
 1. Vytvořte adresář **UpdateConsentDialog** v *%PROGRAMFILES%\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages*.
 
     > [!NOTE]
-    >  Budete potřebovat oprávnění správce k vytvoření této složky.
+    > Budete potřebovat oprávnění správce k vytvoření této složky.
 
 2. V *UpdateConsentDialog* adresáře, vytvořte podadresář s názvem *en*.
 
     > [!NOTE]
-    >  Vytvořte nový adresář pro každé národní prostředí. Například můžete přidat podadresáře pro národní prostředí cs a Německo. Tyto adresáře by obsahoval francouzštinu a češtinu řetězce a jazykových sad v případě potřeby.
+    > Vytvořte nový adresář pro každé národní prostředí. Například můžete přidat podadresáře pro národní prostředí cs a Německo. Tyto adresáře by obsahoval francouzštinu a češtinu řetězce a jazykových sad v případě potřeby.
 
 #### <a name="step-2-to-create-the-productxml-manifest-file"></a>Krok 2: Chcete-li vytvořit soubor manifestu product.xml
 
@@ -221,7 +221,7 @@ Můžete nakonfigurovat aplikace ClickOnce automaticky aktualizovat při sestave
 4. Vytvořit dokument s názvem *eula.rtf* pro licenční podmínky pro software.
 
     > [!NOTE]
-    >  Licenční podmínky pro software by měl obsahovat informace o licencích, záruk, závazků a místními zákony. Tyto soubory by měl být specifické pro národní prostředí, proto se ujistěte, že je soubor uložen ve formátu, který podporuje znaky znakové sady MBCS a UNICODE. Vyhledejte právního oddělení o obsah licenčních podmínek softwaru.
+    > Licenční podmínky pro software by měl obsahovat informace o licencích, záruk, závazků a místními zákony. Tyto soubory by měl být specifické pro národní prostředí, proto se ujistěte, že je soubor uložen ve formátu, který podporuje znaky znakové sady MBCS a UNICODE. Vyhledejte právního oddělení o obsah licenčních podmínek softwaru.
 
 5. Uložte dokument do podadresáře en v *UpdateConsentDialog* adresáře zaváděcího nástroje.
 
@@ -241,7 +241,7 @@ Můžete nakonfigurovat aplikace ClickOnce automaticky aktualizovat při sestave
 4. Vyberte **dialogové okno aktualizace**.
 
     > [!NOTE]
-    >  Budete muset zavřít a znovu otevřete Visual Studio zobrazíte dialogové okno aktualizace souhlas v dialogovém okně požadavky.
+    > Budete muset zavřít a znovu otevřete Visual Studio zobrazíte dialogové okno aktualizace souhlas v dialogovém okně požadavky.
 
 5. Klikněte na **OK**.
 

@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 33bc2ce58f90f37a1219427558a01bd13e5654df
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54875329"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62414536"
 ---
 # <a name="ltformregiongt-element-office-development-in-visual-studio"></a>&lt;formRegion&gt; – element (vývoj pro Office v sadě Visual Studio)
   `formRegion` Elementu `vstov4` obor názvů identifikuje oblasti formuláře aplikace Microsoft Office Outlook, který je přidružený k doplňku VSTO.

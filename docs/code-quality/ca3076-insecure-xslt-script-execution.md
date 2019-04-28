@@ -8,11 +8,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5f98b022aef49a4d98ad4864793aa55732f8de6c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55929177"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62541087"
 ---
 # <a name="ca3076-insecure-xslt-script-execution"></a>CA3076: Spuštění nezabezpečeného skriptu XSLT
 
@@ -23,7 +23,7 @@ ms.locfileid: "55929177"
 |Kategorie|Microsoft.Security|
 |Narušující změna|Pevné|
 
-## <a name="cause"></a>příčina
+## <a name="cause"></a>Příčina
 
 Pokud spuštění šablony stylů transformace XSLT (Extensible Language) v aplikacích .NET nezabezpečeným způsobem, procesor může vyřešit nedůvěryhodné identifikátor URI odkazy, které může odhalit citlivé informace, které útočníci, což vede k Denial of Service a webů útoky. Další informace najdete v tématu [Considerations(.NET Guide) zabezpečení XSLT](/dotnet/standard/data/xml/xslt-security-considerations).
 

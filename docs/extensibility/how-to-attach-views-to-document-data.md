@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fa4679b4e9cf9356921be47afb726c45216974ab
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: b53748546633f8944ef0bd47ebc01326b322165e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56701391"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417114"
 ---
 # <a name="how-to-attach-views-to-document-data"></a>Postupy: Připojení zobrazení k datům dokumentu
 Pokud máte nové zobrazení dokumentů, je možné připojit k existující objekt dat dokumentu.
@@ -37,7 +37,7 @@ Pokud máte nové zobrazení dokumentů, je možné připojit k existující obj
 4. Pokud zavřete tento dokument, Visual Studio volá objekt pro vytváření editoru pro podruhé. Na toto volání `DocDataExisting` rovná parametru na hodnotu NULL. Vaše implementace objektu factory editoru pak můžete otevřít datový objekt dokumentu ve vlastním editoru.
 
    > [!NOTE]
-   >  Pokud chcete zjistit, jestli můžete pracovat s existující datový objekt dokumentu, můžete použít také privátní znalost implementace rozhraní přetypováním ukazatel skutečné [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] třída soukromá implementace. Například implementovat všechny standardní editory `IVsPersistFileFormat`, který dědí z <xref:Microsoft.VisualStudio.OLE.Interop.IPersist>. Proto můžete volat `QueryInterface` pro <xref:Microsoft.VisualStudio.OLE.Interop.IPersist.GetClassID%2A>, a pokud ID třídy na existující objekt dokumentu dat odpovídá vaší implementace ID třídy a pak můžete pracovat se datový objekt dokumentu.
+   > Pokud chcete zjistit, jestli můžete pracovat s existující datový objekt dokumentu, můžete použít také privátní znalost implementace rozhraní přetypováním ukazatel skutečné [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] třída soukromá implementace. Například implementovat všechny standardní editory `IVsPersistFileFormat`, který dědí z <xref:Microsoft.VisualStudio.OLE.Interop.IPersist>. Proto můžete volat `QueryInterface` pro <xref:Microsoft.VisualStudio.OLE.Interop.IPersist.GetClassID%2A>, a pokud ID třídy na existující objekt dokumentu dat odpovídá vaší implementace ID třídy a pak můžete pracovat se datový objekt dokumentu.
 
 ## <a name="robust-programming"></a>Robustní programování
  Když Visual Studio volá vaši implementaci <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> metody předá zpět ukazatel na existující objekt data dokumentu v `punkDocDataExisting` parametr, pokud existuje. Prozkoumat vrácené v dokumentu datový objekt `punkDocDataExisting` k určení, zda datový objekt dokumentu je vhodná pro váš editor, jak je uvedeno v poznámce v kroku 4 v rámci postupu v tomto tématu. Pokud je vhodné, pak objekt pro vytváření editoru by měla poskytnout druhý zobrazení dat, jak je uvedeno v [podporovat více zobrazení dokumentů](../extensibility/supporting-multiple-document-views.md). Pokud ne, pak by měl zobrazí příslušnou chybovou zprávu.

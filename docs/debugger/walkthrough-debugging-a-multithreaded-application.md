@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d55d4ae23b2fd8bf03e6aa9ad7301531aedcfcac
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: fddd8efd11d2a3d61f0cff33cb832ebd8a0c5d2a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60107759"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406943"
 ---
 # <a name="view-threads-in-the-visual-studio-debugger-by-using-the-threads-window-c-visual-basic-c"></a>Zobrazit vlákna v ladicím programu sady Visual Studio pomocí okna vlákna (C#, Visual Basic, C++)
 V **vlákna** okna, můžete prozkoumat a pracujte s vlákny v aplikaci, kterou ladíte. Podrobné pokyny o tom, jak používat **vlákna** okna, naleznete v tématu [názorný postup: Ladění pomocí okna vlákna](../debugger/how-to-use-the-threads-window.md).
@@ -85,7 +85,7 @@ V **vlákna** okna, můžete prozkoumat a pracujte s vlákny v aplikaci, kterou 
  Pozastavený počet ve spravovaném kódu změní při zmrazit nebo odblokovat vlákna. Je-li ukotvit vlákna ve spravovaném kódu, jeho pozastavený počet je 1. Při zablokování vlákna v nativním kódu, jeho pozastavený počet je 0, pokud jste použili `SuspendThread` volání.
 
 > [!NOTE]
->  Při ladění volání z nativního kódu pro spravovaný kód spravovaný kód běží ve stejné fyzické vlákno v nativním kódu, která ji zavolala. Pozastavení nebo zmrazení nativních vláken se taky zablokuje spravovaného kódu.
+> Při ladění volání z nativního kódu pro spravovaný kód spravovaný kód běží ve stejné fyzické vlákno v nativním kódu, která ji zavolala. Pozastavení nebo zmrazení nativních vláken se taky zablokuje spravovaného kódu.
 
 ### <a name="to-freeze-or-thaw-execution-of-a-thread"></a>Chcete-li zmrazit nebo odblokovat spuštění vlákna
 

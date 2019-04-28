@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 7e59548ac46196f86813aa312e68bbe043edf701
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 03ae7ecaf9998646d1dc13c4a93bbf34b53f5e47
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56701274"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408601"
 ---
 # <a name="debug-uwp-apps-using-prefetched-content-in-visual-studio"></a>Ladění aplikací pro UWP pomocí předem načteného obsahu v sadě Visual Studio
 
@@ -37,7 +37,7 @@ ms.locfileid: "56701274"
    Teď můžete ladit, testování nebo analyzovat aplikace s využitím předem načteného webových prostředků.
 
 > [!NOTE]
->  Tento postup opakujte, pokaždé, když přidáváte nebo odebíráte Zadaný webový obsah.
+> Tento postup opakujte, pokaždé, když přidáváte nebo odebíráte Zadaný webový obsah.
 
 ## <a name="see-also"></a>Viz také
 - [Blogový příspěvek: Aktivace předběžné načtení ve Windows Store Apps ve službě Visual Studio 2013 Update 2](https://devblogs.microsoft.com/devops/triggering-prefetch-for-windows-store-apps-in-visual-studio-2013-update-2/)

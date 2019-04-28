@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: dc61db134063c1e300a2620f611d62497fffe6e1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 49f494fa2c0fb35f7d2a65dc2ccb6b6d2d761cbe
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56608068"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428730"
 ---
 # <a name="how-to-add-a-finder-method"></a>Postupy: Přidání vyhledávací metody
   Chcete-li povolit službu Business Data Connectivity (BDC) zobrazíte seznam entit v seznamu nebo webové části, musíte vytvořit *Finder* metoda. Metoda hledání je zvláštní metoda, která vrátí kolekci instancí entity. Další informace naleznete v tématu [Model Připojení obchodních dat návrhu](../sharepoint/designing-a-business-data-connectivity-model.md).
@@ -44,7 +44,7 @@ ms.locfileid: "56608068"
 4. Popisovač typu nakonfigurujte jako popisovač typu kolekce entity. Další informace o tom, jak vytvořit popisovač typu kolekce entit najdete v tématu [jak: Definování deskriptoru typu pro parametr](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).
 
    > [!NOTE]
-   >  Není nutné tento krok provést, pokud jste přidali do entity konkrétní vyhledávací metoda. Visual Studio používá popisovač typu, který jste definovali v konkrétní vyhledávací metoda.
+   > Není nutné tento krok provést, pokud jste přidali do entity konkrétní vyhledávací metoda. Visual Studio používá popisovač typu, který jste definovali v konkrétní vyhledávací metoda.
 
 5. V **Průzkumníka řešení**, otevřete místní nabídku souboru služby kód, který byl vygenerován pro entitu a pak zvolte **zobrazit kód**. Další informace o souboru kód služby naleznete v tématu [vytvořit model připojení obchodních dat](../sharepoint/creating-a-business-data-connectivity-model.md).
 
@@ -57,7 +57,7 @@ ms.locfileid: "56608068"
      Následující příklad vrátí kolekci `Contact` entity pomocí dat z ukázkové databáze AdventureWorks pro SQL Server.
 
    > [!NOTE]
-   >  Nahraďte hodnotu `ServerName` pole s názvem vašeho serveru.
+   > Nahraďte hodnotu `ServerName` pole s názvem vašeho serveru.
 
     [!code-csharp[SP_BDC#2](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#2)]
     [!code-vb[SP_BDC#2](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#2)]

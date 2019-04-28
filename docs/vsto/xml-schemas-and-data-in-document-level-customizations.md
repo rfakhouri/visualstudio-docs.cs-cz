@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: eb56d2f9b6d2d5c08956d48f4f53a46305d9fd26
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: eb8bc9b9d3149112517d893cd3a704826b6d92d1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117926"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63421692"
 ---
 # <a name="xml-schemas-and-data-in-document-level-customizations"></a>Schémata XML a data v přizpůsobeních na úrovni dokumentu
   **Důležité** informace uvedené v tomto tématu týkající se Microsoft Word je zobrazené výhradně pro výhod a užívání o jednotlivci i organizacemi, kteří se nacházejí mimo Spojené státy a jeho území nebo kteří používají nebo vývoj programy, které běží na produkty Microsoft Word, které byly licencovaných společností Microsoft před 2010 dne, kdy Microsoft odebrána implementace konkrétní funkce související s vlastní XML z aplikace Microsoft Word. Tyto informace týkající se Microsoft Word nemusí být přečteny nebo používány jednotlivcům i organizacím v USA nebo v jeho území, které používáte, nebo vývoji programů, které běží na produkty Microsoft Word, které byly licencovaných společností Microsoft po 10. ledna 2010 ; tyto produkty se chovají stejně jako produkty licenci před tímto datem nebo zakoupených a licencovaná pro použití mimo území Spojených států.
@@ -33,7 +33,7 @@ ms.locfileid: "60117926"
  Visual Studio zpřístupňuje namapované elementy schématu v přizpůsobeních na úrovni dokumentu jako ovládací prvky v programovacím modelu. Pro aplikaci Excel Visual Studio přidává podporu pro vytvoření vazby ovládacích prvků na data v databází, webových služeb a objektů. Pro aplikace Word a Excel Visual Studio přidává podporu pro podokna akcí, které je možné použít s dokumentem mapované na schéma k vytvoření koncových uživatelů lepší prostředí pro vaše řešení. Další informace najdete v tématu [přehled podokna akcí](../vsto/actions-pane-overview.md).
 
 > [!NOTE]
->  V řešení pro aplikaci Excel nelze použít s více částmi schémat XML.
+> V řešení pro aplikaci Excel nelze použít s více částmi schémat XML.
 
 ## <a name="objects-created-when-schemas-are-attached-to-excel-workbooks"></a>Objekty vytvořené při schémata jsou připojena k Excelovým sešitům
  Když připojit schéma k sešitu sady Visual Studio automaticky vytvoří několik objektů a přidá je do projektu. Tyto objekty nesmí odstranit, pomocí nástrojů sady Visual Studio, protože se spravují v Excelu. Je odstranit, odeberte mapované prvky z listu nebo odpojit schématu s použitím nástroje aplikace Excel.
@@ -52,13 +52,13 @@ ms.locfileid: "60117926"
 - BindingSource. Při vytváření <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> mapováním neopakujícími element schématu na listu <xref:System.Windows.Forms.BindingSource> se vytvoří a <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> ovládací prvek vázán na <xref:System.Windows.Forms.BindingSource>. Je třeba svázat <xref:System.Windows.Forms.BindingSource> do instance zdroje dat, která odpovídá schématu namapované na dokument, jako je například instance zadaného objektu <xref:System.Data.DataSet> třídu, která byla vytvořena. Vytvoření vazby tak, že nastavíte <xref:System.Windows.Forms.BindingSource.DataSource%2A> a <xref:System.Windows.Forms.BindingSource.DataMember%2A> vlastnosti, které jsou přístupné **vlastnosti** okna.
 
     > [!NOTE]
-    >  <xref:System.Windows.Forms.BindingSource> Není vytvořena pro <xref:Microsoft.Office.Tools.Excel.ListObject> objekty. Musíte ručně vytvořit vazbu <xref:Microsoft.Office.Tools.Excel.ListObject> ke zdroji dat tím, že nastavíte <xref:System.Windows.Forms.BindingSource.DataSource%2A> a <xref:System.Windows.Forms.BindingSource.DataMember%2A> vlastnosti v **vlastnosti** okna.
+    > <xref:System.Windows.Forms.BindingSource> Není vytvořena pro <xref:Microsoft.Office.Tools.Excel.ListObject> objekty. Musíte ručně vytvořit vazbu <xref:Microsoft.Office.Tools.Excel.ListObject> ke zdroji dat tím, že nastavíte <xref:System.Windows.Forms.BindingSource.DataSource%2A> a <xref:System.Windows.Forms.BindingSource.DataMember%2A> vlastnosti v **vlastnosti** okna.
 
 ### <a name="office-mapped-schemas-and-the-visual-studio-data-sources-window"></a>Office mapovány schémata a v okně zdroje dat aplikace Visual Studio
  Funkce schématu pro mapovanou systému Office a sady Visual Studio **zdroje dat** okno vám umožňují prezentovat data na listu aplikace Excel pro vytváření sestav, nebo úpravy. V obou případech můžete přetáhnout datové prvky do Excelového listu. Obě metody vytvořit ovládací prvky, které jsou data svázána prostřednictvím <xref:System.Windows.Forms.BindingSource> ke zdroji dat, jako <xref:System.Data.DataSet> nebo webové službě.
 
 > [!NOTE]
->  Při namapování opakující se element schématu na listu, vytvoří Visual Studio <xref:Microsoft.Office.Tools.Excel.ListObject>. <xref:Microsoft.Office.Tools.Excel.ListObject> Není automaticky vázán na data prostřednictvím <xref:System.Windows.Forms.BindingSource>. Musíte ručně vytvořit vazbu <xref:Microsoft.Office.Tools.Excel.ListObject> ke zdroji dat tím, že nastavíte <xref:System.Windows.Forms.BindingSource.DataSource%2A> a <xref:System.Windows.Forms.BindingSource.DataMember%2A> vlastnosti v **vlastnosti** okna.
+> Při namapování opakující se element schématu na listu, vytvoří Visual Studio <xref:Microsoft.Office.Tools.Excel.ListObject>. <xref:Microsoft.Office.Tools.Excel.ListObject> Není automaticky vázán na data prostřednictvím <xref:System.Windows.Forms.BindingSource>. Musíte ručně vytvořit vazbu <xref:Microsoft.Office.Tools.Excel.ListObject> ke zdroji dat tím, že nastavíte <xref:System.Windows.Forms.BindingSource.DataSource%2A> a <xref:System.Windows.Forms.BindingSource.DataMember%2A> vlastnosti v **vlastnosti** okna.
 
  V následující tabulce jsou uvedeny některé rozdíly mezi dvěma způsoby.
 

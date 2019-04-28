@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 70b0be3caca70e7a0dbf6f113cb5658169011d7f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105100"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62432340"
 ---
 # <a name="subscribing-to-an-event"></a>Přihlášení k odběru události
 Tento návod popisuje, jak vytvořit okno nástroje, který reaguje na události v tabulce spuštěných dokumentů (r...). Panel nástrojů hostuje uživatelský ovládací prvek, který implementuje <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents>. <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.AdviseRunningDocTableEvents%2A> Metoda rozhraní se připojí k události.

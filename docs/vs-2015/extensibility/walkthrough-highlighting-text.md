@@ -10,12 +10,12 @@ ms.assetid: 64b772ad-4392-42e9-a237-5137f0384bf0
 caps.latest.revision: 43
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c263dfaa6f2326f6ed43c596cad4b96404443d17
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 512d2aaffe64ea6ed17e909d9177aad74c654462
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60076589"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408781"
 ---
 # <a name="walkthrough-highlighting-text"></a>Návod: Zvýraznění textu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -353,7 +353,7 @@ Různých vizuálních efektů můžete přidat do editoru tak, že vytvoříte 
  Pokud chcete vytvořit váš označovatel, je nutné implementovat <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider>. Tato třída je součást MEF, proto musíte nastavit správné atributy tak, aby toto rozšíření je rozpoznán.  
   
 > [!NOTE]
->  Další informace o rozhraní MEF, naleznete v tématu [Managed Extensibility Framework (MEF)](http://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde).  
+> Další informace o rozhraní MEF, naleznete v tématu [Managed Extensibility Framework (MEF)](http://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde).  
   
 #### <a name="to-create-a-tagger-provider"></a>K vytvoření poskytovatele označovatel  
   
@@ -408,4 +408,4 @@ Různých vizuálních efektů můžete přidat do editoru tak, že vytvoříte 
 4. Umístěte kurzor do jednoho z výskytů řetězce "hello". Každý výskyt by měl být zvýrazněn modrá.  
   
 ## <a name="see-also"></a>Viz také  
- [Návod: Propojení typu obsahu příponu názvu souboru](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+ [Návod: Propojení typu obsahu s příponou názvu souboru](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

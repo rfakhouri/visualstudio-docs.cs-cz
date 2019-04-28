@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5937a54c43cf972dcebb25c12cddf6b76b2cb4bc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2eac5778320b45b841cdff2c8d95f6a591386712
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069860"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406725"
 ---
 # <a name="how-to-publish-a-clickonce-application-using-the-publish-wizard"></a>Postupy: Publikování aplikace ClickOnce pomocí Průvodce publikováním
 Pro aplikaci ClickOnce zpřístupnit uživatelům, je nutné ji publikovat na sdílené složce nebo cestu, FTP server nebo vyměnitelná média. Aplikaci můžete publikovat pomocí Průvodce publikováním; Další vlastnosti týkající se publikování jsou k dispozici na **publikovat** stránku **Návrháře projektu**. Další informace najdete v tématu [publikování ClickOnce applications](../deployment/publishing-clickonce-applications.md).
@@ -80,7 +80,7 @@ Před spuštěním Průvodce publikováním byste měli odpovídajícím způsob
 4. Na **jak budou uživatelé aplikaci instalovat?** klikněte na z **CD-ROM nebo DVD-ROM**a potom klikněte na tlačítko **Další**.
 
    > [!NOTE]
-   >  Pokud chcete, aby se instalace spustila automaticky při vložení disku CD-ROM do jednotky, otevřete **publikovat** stránku **Návrháře projektu** a klikněte na tlačítko **možnosti** tlačítko a pak na **možnosti publikování** průvodce, vyberte **pro instalace z CD automaticky spustit instalační program po vložení disku CD**.
+   > Pokud chcete, aby se instalace spustila automaticky při vložení disku CD-ROM do jednotky, otevřete **publikovat** stránku **Návrháře projektu** a klikněte na tlačítko **možnosti** tlačítko a pak na **možnosti publikování** průvodce, vyberte **pro instalace z CD automaticky spustit instalační program po vložení disku CD**.
 
 5. Pokud distribuujete aplikaci na disku CD-ROM, můžete chtít poskytnout aktualizace z webu. V **kde bude aplikace vyhledávat aktualizace?** stránce, zvolte možnost aktualizace:
 
@@ -95,7 +95,7 @@ Před spuštěním Průvodce publikováním byste měli odpovídajícím způsob
     Stav publikování se zobrazí v oznamovací oblasti.
 
    > [!NOTE]
-   >  Po dokončení publikování budete muset použít CD-RW nebo DVD-RW ke zkopírování souborů z umístění zadaného v kroku 3 na médium CD-ROM nebo DVD-ROM.
+   > Po dokončení publikování budete muset použít CD-RW nebo DVD-RW ke zkopírování souborů z umístění zadaného v kroku 3 na médium CD-ROM nebo DVD-ROM.
 
 ## <a name="see-also"></a>Viz také:
 

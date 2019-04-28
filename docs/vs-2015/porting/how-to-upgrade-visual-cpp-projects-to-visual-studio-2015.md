@@ -12,12 +12,12 @@ caps.latest.revision: 26
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: 5b0153560173cf8b10ab5e20ebffd47d40baf735
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 198a848f953881af5a7ac4b042c74b368d202d06
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60095740"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425891"
 ---
 # <a name="how-to-upgrade-visual-c-projects-to-visual-studio-2015"></a>Postupy: Upgrade projektů Visual C++ pro Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ Při prvním otevření projektu Visual C++, který byl vytvořen v dřívějš�
     - Můžete aktualizovat projekt tím, že [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] provést změny, které jsou popsány dále v tomto tématu. Pokud máte více než jeden projekt Visual C++ ve vašem řešení, musíte aktualizovat všechny z nich.
 
         > [!NOTE]
-        >  Pokud aktualizaci odmítnete při první výzvě, můžete aktualizovat projekt později výběrem **aktualizovat projekt VC ++** na **projektu** nabídky. Pokud tento příkaz nezobrazí, není aktualizace požadována.
+        > Pokud aktualizaci odmítnete při první výzvě, můžete aktualizovat projekt později výběrem **aktualizovat projekt VC ++** na **projektu** nabídky. Pokud tento příkaz nezobrazí, není aktualizace požadována.
 
 ## <a name="upgrading-a-visual-c-project"></a>Upgrade projektu Visual C++
  Pokud je povoleno [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] automaticky aktualizovat projekt, budou provedeny tyto změny:

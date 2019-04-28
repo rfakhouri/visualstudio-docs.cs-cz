@@ -7,12 +7,12 @@ ms.date: 04/03/2019
 ms.topic: conceptual
 description: Zjistěte, jak stáhnout a nainstalovat Visual Studio IDE, které jsou součástí vašeho předplatného sady Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: ecd0baa87b2fd7cfddcc3e5f9bd1298393b5d7ef
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: af721e567e451c50533d0e476ec01acfa4022a53
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60113812"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420801"
 ---
 # <a name="using-the-visual-studio-2019-benefit"></a>Používání benefitu Visual Studio 2019
 
@@ -55,8 +55,10 @@ Chcete-li stáhnout integrovaném vývojovém prostředí:
 14. Otevře se Visual Studio. Jste připravení začít s použitím sady Visual Studio!
 
     ::: moniker range="vs-2017"
+
     > [!div class="mx-imgBorder"]
     > ![Začněte používat Visual Studio Enterprise](_img/vs-ide-experience/vs-ide-start-cropped.png)
+
     ::: moniker-end
 
 ## <a name="eligibility"></a>Způsobilost

@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fe0d5c3dd55380587f8f5f1c6477ee8c53bf1156
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 48ab55b58eee8f6444b253c09db1eeedcc8c5692
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60051658"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411360"
 ---
 # <a name="create-reusable-groups-of-buttons"></a>Vytváření znovu použitelných skupin tlačítek
 Skupina příkazu je kolekce příkazů, které se vždy zobrazují společně na nabídku nebo panel nástrojů. Všechny skupiny příkazů, lze ji znovu použít přiřazením do jiné nadřazené nabídky v části commandplacements – *.vsct* souboru.
@@ -81,7 +81,7 @@ Skupina příkazu je kolekce příkazů, které se vždy zobrazují společně n
     ```
 
     > [!NOTE]
-    >  Hodnota pole Priorita určuje pozici příkazu v nové skupině příkazu. Nastavení priority v commandplacement – element mají přednost před akcemi nastavené v definici položky. Příkazy, které mají nižší hodnoty priority se zobrazují před příkazy, které mají vyšší hodnoty priority. Priorita duplicitní hodnoty jsou povolené, ale relativní pozice příkazy, které mají stejnou hodnotu priority nemůže být zaručena, protože pořadí, ve kterém **devenv/Setup** příkaz vytvoří konečné rozhraní z registru mohou být nekonzistentní.
+    > Hodnota pole Priorita určuje pozici příkazu v nové skupině příkazu. Nastavení priority v commandplacement – element mají přednost před akcemi nastavené v definici položky. Příkazy, které mají nižší hodnoty priority se zobrazují před příkazy, které mají vyšší hodnoty priority. Priorita duplicitní hodnoty jsou povolené, ale relativní pozice příkazy, které mají stejnou hodnotu priority nemůže být zaručena, protože pořadí, ve kterém **devenv/Setup** příkaz vytvoří konečné rozhraní z registru mohou být nekonzistentní.
 
 ## <a name="to-put-a-reusable-group-of-buttons-on-a-menu"></a>Vložit opakovaně použitelných skupin tlačítek v nabídce
 

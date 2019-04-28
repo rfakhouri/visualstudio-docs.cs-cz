@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 58c68f8b61adab90f8437658d6efd04f0ca47818
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5b1b6817b31272bf01c92e77ff5b04dfff35f6ad
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60065516"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428131"
 ---
 # <a name="walkthrough-using-profiler-apis"></a>Návod: Použití rozhraní API profileru
 
@@ -63,7 +63,7 @@ DataCollection.CurrentId);
 1. Vytvořte nový projekt C# v sadě Visual Studio nebo pomocí příkazového řádku sestavení, v závislosti na vašich předvoleb.
 
     > [!NOTE]
-    >  Sestavení musí odkazovat *Microsoft.VisualStudio.Profiler.dll* knihovny, umístěný ve *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools* adresáře.
+    > Sestavení musí odkazovat *Microsoft.VisualStudio.Profiler.dll* knihovny, umístěný ve *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools* adresáře.
 
 2. Zkopírujte a vložte následující kód do vašeho projektu:
 

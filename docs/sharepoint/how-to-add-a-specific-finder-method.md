@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e6f52caf33820b230eb00b1be2999fe7f972176f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 8fdd467f2b3a06398198f6fd8452c6a548bf0872
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56615283"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431272"
 ---
 # <a name="how-to-add-a-specific-finder-method"></a>Postupy: Přidání konkrétní vyhledávací metody
   Může vrátit instanci jednu entitu tím, že vytvoříte *Specific Finder* metody. Služba obchodní Data připojení (BDC) provede metody Specific Finder, když uživatel vybere entity v obchodních dat webové části nebo externí seznam. Další informace najdete v tématu [navrhování modelu připojení obchodních dat](../sharepoint/designing-a-business-data-connectivity-model.md).
@@ -58,10 +58,10 @@ ms.locfileid: "56615283"
 5. Nakonfigurujte typ popisovače návratového parametru jako popisovač pro typ entity. Informace o tom, jak vytvořit popisovač typu entity, naleznete v tématu [jak: Definování deskriptoru typu pro parametr](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).
 
    > [!NOTE]
-   >  Není nutné tento krok proveďte, pokud jste přidali vyhledávací metody k entitě. Visual Studio používá typ popisovače, který jste definovali v vyhledávací metody.
+   > Není nutné tento krok proveďte, pokud jste přidali vyhledávací metody k entitě. Visual Studio používá typ popisovače, který jste definovali v vyhledávací metody.
 
    > [!NOTE]
-   >  Pokud identifikátor pole entity typu představuje pole v databázové tabulce, který je generován automaticky, nastavte **jen pro čtení** vlastnost identifikátor pole tak, aby **True**.
+   > Pokud identifikátor pole entity typu představuje pole v databázové tabulce, který je generován automaticky, nastavte **jen pro čtení** vlastnost identifikátor pole tak, aby **True**.
 
 6. V **podrobnosti metody** okna, vyberte instanci metody metody.
 
@@ -80,7 +80,7 @@ ms.locfileid: "56615283"
      Následující příklad vrátí kontakt z ukázkové databáze AdventureWorks pro SQL Server.
 
      > [!NOTE]
-     >  Nahraďte hodnotu `ServerName` pole s názvem vašeho serveru.
+     > Nahraďte hodnotu `ServerName` pole s názvem vašeho serveru.
 
      [!code-csharp[SP_BDC#3](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#3)]
      [!code-vb[SP_BDC#3](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#3)]

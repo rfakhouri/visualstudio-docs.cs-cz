@@ -15,12 +15,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 91b62fa8384bd2e0e9e90e9c9057a89e61869a2a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: a35e1498c4f2e6a10f56f1ab7687bd8516eb6808
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59658614"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63416702"
 ---
 # <a name="quick-launch-environment-options-dialog-box"></a>Dialogové okno Snadné spuštění, Prostředí, Možnosti
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ Můžete použít **Snadné spuštění** chcete rychle najít a spustit akce pr
 |Dokumenty|@doc<br /><br /> Třeba `@doc font`.|Omezuje vyhledávání na názvy souborů a cesty otevřené dokumenty pro kritéria vyhledávání, ale nebude hledat text mezi soubory sami.|  
   
 > [!NOTE]
->  Můžete změnit klávesové zkratky na **Obecné**, **klávesnice** stránku **možnosti** dialogové okno.  
+> Můžete změnit klávesové zkratky na **Obecné**, **klávesnice** stránku **možnosti** dialogové okno.  
   
 ## <a name="show-previous-results"></a>Zobrazit předchozí výsledky  
  Ve výchozím nastavení není mezi relacemi hledání trvalých hledaný termín, který zadáte. Hledaný řetězec není zaškrtnuto, je-li vyhledat termín, přesuňte kurzor mimo **Snadné spuštění** oblasti a pak se vraťte zpět. Pokud chcete zachovat výsledky hledání, přejděte na **možnosti** dialogového okna zvolte **Snadné spuštění**a pak vyberte **zobrazit výsledky předchozího vyhledávání. Pokud je aktivováno Snadné spuštění.** Zaškrtávací políčko. Při příštím hledání, ponechte v oblasti Snadné spuštění a vraťte, snadné spuštění bude uchovávat hledaný termín, naposledy použité a také zobrazit výsledky hledání.  

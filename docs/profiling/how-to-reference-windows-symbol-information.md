@@ -13,18 +13,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ec4fb02607ab4760f29acc2164c69fe8625e8fe
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 91b5c90b2451780458982ba73a0e04672fa2e507
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60090474"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422879"
 ---
 # <a name="how-to-reference-windows-symbol-information"></a>Postupy: Odkazování na informace o symbolech Windows
 Symbol použít profilování nástroje sady Visual Studio (. *soubor PDB*) soubory přeložil symbolické názvy, například názvy funkcí v aplikaci binární soubory. Provedením tohoto postupu automaticky stáhnout a aktualizujte správný. *pdb* soubory pro verzi systému Windows v místním počítači.
 
 > [!NOTE]
->  Toto nastavení nemá vliv na existující sestavy. Pouze sestavy vytvořené po zadání serveru symbolů, bude mít informace o symbolech.
+> Toto nastavení nemá vliv na existující sestavy. Pouze sestavy vytvořené po zadání serveru symbolů, bude mít informace o symbolech.
 
  Další informace najdete v tématu [zadání symbolu (. *soubor PDB*) a zdrojové soubory](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
 

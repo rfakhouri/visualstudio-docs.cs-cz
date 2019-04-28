@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d4dec78b368991da18c5bc0f5a673c1dca91fbfc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 34808d70a7df1bf5d030e4205de34ff3ec4d03b2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059991"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430392"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-1"></a>Návod: Vytvoření položky projektu sloupce webu pomocí šablony projektu, část 1
   Projekty SharePoint jsou kontejnery pro jeden nebo více položek projektu služby SharePoint. Systém projektu služby SharePoint v sadě Visual Studio můžete rozšířit vytvořením vlastních typů položek projektu služby SharePoint a potom jejich přidružení šablony projektu. V tomto návodu bude definovat typ položky projektu pro vytvoření sloupce webu a pak vytvoříte šablonu projektu, který slouží k vytvoření nového projektu, který obsahuje položky projektu sloupce webu.
@@ -75,7 +75,7 @@ ms.locfileid: "60059991"
 4. Rozbalte **jazyka Visual Basic** nebo **Visual C#** uzly a klikněte na tlačítko **rozšiřitelnost** uzlu.
 
     > [!NOTE]
-    >  **Rozšiřitelnost** uzel je dostupný jenom v případě, že nainstalujete Visual Studio SDK. Další informace najdete v oddílu požadavky dříve v tomto tématu.
+    > **Rozšiřitelnost** uzel je dostupný jenom v případě, že nainstalujete Visual Studio SDK. Další informace najdete v oddílu požadavky dříve v tomto tématu.
 
 5. V seznamu šablon projektu vyberte **projekt VSIX**.
 
@@ -162,7 +162,7 @@ ms.locfileid: "60059991"
 2. Vytvoření projektu služby SharePoint 2010, který je pojmenován **BaseSharePointProject**.
 
    > [!IMPORTANT]
-   >  V **Průvodce přizpůsobením SharePoint**, nevybírejte **nasadit jako řešení farmy** přepínač.
+   > V **Průvodce přizpůsobením SharePoint**, nevybírejte **nasadit jako řešení farmy** přepínač.
 
 3. Přidat prázdný Element položku do projektu a potom zadejte název položky **pole1**.
 
@@ -175,7 +175,7 @@ ms.locfileid: "60059991"
 7. V adresáři, který obsahuje projekt BaseSharePointProject, vyberte soubor klíč.snk a klikněte na tlačítko **přidat** tlačítko.
 
    > [!NOTE]
-   >  Šablony projektu, který vytvoříte v tomto názorném postupu používá stejný soubor klíč.snk k podepisování každý projekt, který je vytvořen pomocí šablony. Zjistěte, jak rozšířit této ukázky si vytvořte soubor různých klíč.snk u každé instance projektu, najdete v článku [názorný postup: Vytvoření položky projektu sloupce webu pomocí šablony projektu, část 2](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md).
+   > Šablony projektu, který vytvoříte v tomto názorném postupu používá stejný soubor klíč.snk k podepisování každý projekt, který je vytvořen pomocí šablony. Zjistěte, jak rozšířit této ukázky si vytvořte soubor různých klíč.snk u každé instance projektu, najdete v článku [názorný postup: Vytvoření položky projektu sloupce webu pomocí šablony projektu, část 2](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md).
 
 8. Opakujte kroky 5 až 8 přidejte následující soubory ze zadaného podsložek v adresáři BaseSharePointProject:
 
@@ -654,7 +654,7 @@ ms.locfileid: "60059991"
 6. V **typ** klikněte na položku **Microsoft.VisualStudio.ProjectTemplate**.
 
     > [!NOTE]
-    >  Tato hodnota odpovídá `ProjectTemplate` element v souboru extension.vsixmanifest. Tento prvek určuje podsložce v balíčku souboru VSIX, který obsahuje šablonu projektu. Další informace najdete v tématu [ProjectTemplate – Element (VSX schéma)](/previous-versions/visualstudio/visual-studio-2010/dd393735\(v\=vs.100\)).
+    > Tato hodnota odpovídá `ProjectTemplate` element v souboru extension.vsixmanifest. Tento prvek určuje podsložce v balíčku souboru VSIX, který obsahuje šablonu projektu. Další informace najdete v tématu [ProjectTemplate – Element (VSX schéma)](/previous-versions/visualstudio/visual-studio-2010/dd393735\(v\=vs.100\)).
 
 7. V **zdroj** klikněte na položku **projekt v aktuálním řešení**.
 
@@ -667,7 +667,7 @@ ms.locfileid: "60059991"
 10. V **typ** klikněte na položku **Microsoft.VisualStudio.MefComponent**.
 
     > [!NOTE]
-    >  Tato hodnota odpovídá `MefComponent` element v souboru extension.vsixmanifest. Tento prvek určuje název sestavení rozšíření v balíčku souboru VSIX. Další informace najdete v tématu [MEFComponent – Element (VSX schéma)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).
+    > Tato hodnota odpovídá `MefComponent` element v souboru extension.vsixmanifest. Tento prvek určuje název sestavení rozšíření v balíčku souboru VSIX. Další informace najdete v tématu [MEFComponent – Element (VSX schéma)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).
 
 11. V **zdroj** klikněte na položku **projekt v aktuálním řešení**.
 
@@ -715,14 +715,14 @@ ms.locfileid: "60059991"
      Tento krok určuje místního webu služby SharePoint ve vývojovém počítači, který chcete použít pro ladění.
 
     > [!NOTE]
-    >  **Adresa URL webu** vlastnost je ve výchozím nastavení prázdné, protože šablona projektu sloupce webu neposkytuje k shromažďování údajů o tuto hodnotu při vytvoření projektu průvodce. Zjistěte, jak přidat průvodce, který se zeptá vývojář pro tuto hodnotu a pak nastaví tuto vlastnost v novém projektu, najdete v článku [názorný postup: Vytvoření položky projektu sloupce webu pomocí šablony projektu, část 2](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md).
+    > **Adresa URL webu** vlastnost je ve výchozím nastavení prázdné, protože šablona projektu sloupce webu neposkytuje k shromažďování údajů o tuto hodnotu při vytvoření projektu průvodce. Zjistěte, jak přidat průvodce, který se zeptá vývojář pro tuto hodnotu a pak nastaví tuto vlastnost v novém projektu, najdete v článku [názorný postup: Vytvoření položky projektu sloupce webu pomocí šablony projektu, část 2](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md).
 
 3. Zvolte **F5** klíč.
 
      Sloupec webu je zabalit a nasadit na web služby SharePoint, který je zadán v **adresa URL webu** vlastnost projektu. Webový prohlížeč otevře výchozí stránku webu.
 
     > [!NOTE]
-    >  Pokud **ladění skriptů zakázáno** dialogové okno se zobrazí, zvolte **Ano** tlačítka pokračovat v ladění projektu.
+    > Pokud **ladění skriptů zakázáno** dialogové okno se zobrazí, zvolte **Ano** tlačítka pokračovat v ladění projektu.
 
 4. Na **Akce webu** nabídce zvolte **nastavení webu**.
 

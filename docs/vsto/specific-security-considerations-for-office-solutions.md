@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5c59824594a783ad952a7b15c47ee3f781aba79d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8a29c813a5217e68541fd076eadf62bf54710014
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60081317"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436489"
 ---
 # <a name="specific-security-considerations-for-office-solutions"></a>Specifické aspekty zabezpečení pro řešení pro systém Office
   Funkce zabezpečení poskytované rozhraní Microsoft .NET Framework a Microsoft Office může pomoct chránit vaše řešení pro systém Office proti možné bezpečnostní hrozby. Toto téma vysvětluje některé z těchto hrozeb a poskytuje doporučení, která pomáhá chránit před nimi. Obsahuje také informace o vlivu řešení pro systém Office v nastavení zabezpečení systému Microsoft Office.
@@ -74,7 +74,7 @@ ms.locfileid: "60081317"
  [!code-vb[Trin_VstcoreOutlookSecurity#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreOutlookSecurity/ThisAddIn.vb#2)]
 
 > [!NOTE]
->  Pokud použijete Outlook s Exchangem, získání všech objektů aplikace Outlook z `ThisAddIn.Application` nezaručuje, že váš doplněk VSTO bude mít přístup k celé objektový model aplikace Outlook. Například pokud správce Exchange Outlook automaticky nastaví na Odepřít všechny pokusy o přístup k informacím adresu použití objektového modelu aplikace Outlook, aplikaci Outlook nebude předchozí příklad kódu pro přístup k vlastnosti na povolit i v případě, že příklad kódu používá důvěryhodné `ThisAddIn.Application` pole.
+> Pokud použijete Outlook s Exchangem, získání všech objektů aplikace Outlook z `ThisAddIn.Application` nezaručuje, že váš doplněk VSTO bude mít přístup k celé objektový model aplikace Outlook. Například pokud správce Exchange Outlook automaticky nastaví na Odepřít všechny pokusy o přístup k informacím adresu použití objektového modelu aplikace Outlook, aplikaci Outlook nebude předchozí příklad kódu pro přístup k vlastnosti na povolit i v případě, že příklad kódu používá důvěryhodné `ThisAddIn.Application` pole.
 
 ### <a name="specify-which-add-ins-to-trust-when-using-exchange"></a>Zadejte které Add-ins důvěřovat při používání systému Exchange
  Při použití aplikace Outlook s Exchangem správci mohou určit spuštění některých Add-ins VSTO aniž se objeví ochrana modelů objektu. Aplikace Outlook doplňků VSTO vytvořené pomocí řešení pro systém Office v sadě Visual Studio nemůže být důvěryhodný samostatně. může být pouze důvěryhodné jako skupinu.

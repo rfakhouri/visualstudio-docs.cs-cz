@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 9466d067cd144f009f9c0a37d4ace5bacc12f8a2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061045"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62433458"
 ---
 # <a name="prepare-extensions-for-windows-installer-deployment"></a>Příprava rozšíření pro nasazení Instalační služby systému Windows
 Balíček Instalační služby systému Windows (MSI) nelze použít k nasazení balíčku VSIX. Můžete však extrahovat obsah balíčku VSIX pro nasazení MSI. Tento dokument ukazuje, jak připravit projektu, jehož výchozí výstup je balíčku VSIX pro zahrnutí do projektu instalace.

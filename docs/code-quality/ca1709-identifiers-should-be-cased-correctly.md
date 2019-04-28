@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f692218cd051338a6bd4e83a07d985bb52f907e6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55932076"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62546232"
 ---
 # <a name="ca1709-identifiers-should-be-cased-correctly"></a>CA1709: Malá a velká písmena identifikátorů by měla být použita správně
 
@@ -30,7 +30,7 @@ ms.locfileid: "55932076"
 |Kategorie|Microsoft.Naming|
 |Narušující změna|Zásadní – při aktivaci pro sestavení, oborů názvů, typy, členy a parametry.<br /><br /> Bez konce – při vyvolání v parametrech obecného typu.|
 
-## <a name="cause"></a>příčina
+## <a name="cause"></a>Příčina
  Název identifikátoru není správně formátováno.
 
  \- nebo –

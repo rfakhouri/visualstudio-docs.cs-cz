@@ -22,12 +22,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d069f48e39327cf73f741eb2b2ff02688fa4c3d4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8401a41c479dea70289cd0ebf072fc3b57eff78d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60095916"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434512"
 ---
 # <a name="create-lookup-tables-in-wpf-applications"></a>Vytváření vyhledávacích tabulek v aplikacích WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ Termín *vyhledávací tabulka* (říká se jim *vazbu vyhledávání*) popisuje
     - Objekty. Další informace najdete v tématu [jak: Připojte se k datům v objektech](http://msdn.microsoft.com/library/862fd351-0f4d-4220-9743-6103b87dc24b).  
   
     > [!NOTE]
-    >  Než vytvoříte vyhledávací tabulky, musí existovat dvě souvisejících tabulky nebo objekty jako zdroj dat pro projekt.  
+    > Než vytvoříte vyhledávací tabulky, musí existovat dvě souvisejících tabulky nebo objekty jako zdroj dat pro projekt.  
   
 2. Otevřít**Návrhář WPF**a ujistěte se, že návrhář obsahuje kontejner, který je platný cíl pro položky v **zdroje dat** okna.  
   
@@ -58,7 +58,7 @@ Termín *vyhledávací tabulka* (říká se jim *vazbu vyhledávání*) popisuje
 4. Rozbalte uzly v **zdroje dat** okna, dokud se nezobrazí nadřazená tabulka nebo objekt a související podřízené tabulky nebo objektu.  
   
     > [!NOTE]
-    >  Související podřízené tabulky nebo objektu je uzel, který se zobrazí jako jeden podřízený uzel v rámci nadřazené tabulky nebo objektu.  
+    > Související podřízené tabulky nebo objektu je uzel, který se zobrazí jako jeden podřízený uzel v rámci nadřazené tabulky nebo objektu.  
   
 5. Klikněte na rozevírací nabídku pro podřízený uzel a vyberte **podrobnosti**.  
   
@@ -73,12 +73,12 @@ Termín *vyhledávací tabulka* (říká se jim *vazbu vyhledávání*) popisuje
     - **ListView**  
   
         > [!NOTE]
-        >  Pokud **ListBox** nebo **ListView** ovládací prvek se nezobrazí v seznamu těchto ovládacích prvků můžete přidat do seznamu. Informace najdete v tématu [nastavení ovládacího prvku, který má být vytvořen při přetažení z okna zdroje dat](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).  
+        > Pokud **ListBox** nebo **ListView** ovládací prvek se nezobrazí v seznamu těchto ovládacích prvků můžete přidat do seznamu. Informace najdete v tématu [nastavení ovládacího prvku, který má být vytvořen při přetažení z okna zdroje dat](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).  
   
     - Vlastní ovládací prvek, který je odvozen od <xref:System.Windows.Controls.Primitives.Selector>.  
   
         > [!NOTE]
-        >  Pro informace o tom, jak přidat vlastní ovládací prvky pro seznam ovládacích prvků můžete určit pro položky v **zdroje dat** okna, naleznete v tématu [přidání vlastních ovládacích prvků do okna zdroje dat](../data-tools/add-custom-controls-to-the-data-sources-window.md).  
+        > Pro informace o tom, jak přidat vlastní ovládací prvky pro seznam ovládacích prvků můžete určit pro položky v **zdroje dat** okna, naleznete v tématu [přidání vlastních ovládacích prvků do okna zdroje dat](../data-tools/add-custom-controls-to-the-data-sources-window.md).  
   
 8. Přetáhněte podřízený uzel z **zdroje dat** okna do kontejneru v Návrháře WPF. (V předchozím příkladu je podřízený uzel **objednávky** uzlu.)  
   

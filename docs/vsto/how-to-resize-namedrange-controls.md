@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ba5603fe759f55a85425bc61da0a470aa38d636c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c57b3de77c2b32d7589fe50d55b3e81db08facd1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099605"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422485"
 ---
 # <a name="how-to-resize-namedrange-controls"></a>Postupy: Změna velikosti ovládacích prvků NamedRange
   Můžete nastavit velikost <xref:Microsoft.Office.Tools.Excel.NamedRange> ovládací prvek, když ho přidáte do dokumentu aplikace Microsoft Office Excel; však můžete chtít změnit jeho velikost později.
@@ -59,7 +59,7 @@ ms.locfileid: "60099605"
  Můžete změnit velikost pojmenované oblasti programově pomocí <xref:Microsoft.Office.Tools.Excel.NamedRange.RefersTo%2A> vlastnost.
 
 > [!NOTE]
->  V **vlastnosti** okno, <xref:Microsoft.Office.Tools.Excel.NamedRange.RefersTo%2A> vlastnost je označena jako jen pro čtení.
+> V **vlastnosti** okno, <xref:Microsoft.Office.Tools.Excel.NamedRange.RefersTo%2A> vlastnost je označena jako jen pro čtení.
 
 ### <a name="to-resize-a-named-range-programmatically"></a>Změna velikosti pojmenované oblasti prostřednictvím kódu programu
 

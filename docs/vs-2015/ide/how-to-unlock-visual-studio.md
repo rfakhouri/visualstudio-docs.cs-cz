@@ -10,12 +10,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 05153b7829281684ff9f27f2b5ac708903982b57
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0e1fc8e9bcb6f70a2665303eb6cac353a3f87bd9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60072549"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435088"
 ---
 # <a name="how-to-unlock-visual-studio"></a>Jak odemknout Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Můžete si vyzkoušet Visual Studio zdarma až po dobu 30 dnů. Při přihlašo
 2. Zadejte přihlašovací údaje pro účet Microsoft nebo pracovní nebo školní účet. Visual Studio najdete předplatné MSDN nebo Visual Studio Team Services předplatné spojené s vaším účtem.
 
 > [!IMPORTANT]
->  Visual Studio online přidružených předplatných automaticky vyhledá, když se připojíte k účtu Visual Studio Team Services z okna nástroje Průzkumník týmových projektů. Když se připojíte k účtu Visual Studio Team Services, můžete přihlásit pomocí Microsoft a pracovní nebo školní účty. Pokud pro tento uživatelský účet existuje s online předplatným, sada Visual Studio automaticky odemknout rozhraní IDE za vás.
+> Visual Studio online přidružených předplatných automaticky vyhledá, když se připojíte k účtu Visual Studio Team Services z okna nástroje Průzkumník týmových projektů. Když se připojíte k účtu Visual Studio Team Services, můžete přihlásit pomocí Microsoft a pracovní nebo školní účty. Pokud pro tento uživatelský účet existuje s online předplatným, sada Visual Studio automaticky odemknout rozhraní IDE za vás.
 
 ## <a name="to-unlock-visual-studio-with-a-product-key"></a>K odemknutí sady Visual Studio s kódem product key
 
@@ -43,7 +43,7 @@ Můžete si vyzkoušet Visual Studio zdarma až po dobu 30 dnů. Při přihlašo
 2. Zadejte kód product key v poskytnutém prostoru.
 
 > [!TIP]
->  Předběžné verze sady Visual Studio nemají žádné kódy product key. Musíte se přihlásit k prostředí IDE používat předběžné verze.
+> Předběžné verze sady Visual Studio nemají žádné kódy product key. Musíte se přihlásit k prostředí IDE používat předběžné verze.
 
 ## <a name="addressing-license-problem-states"></a>Základní adresování stavy problém licence
 
@@ -63,7 +63,7 @@ Můžete si vyzkoušet Visual Studio zdarma až po dobu 30 dnů. Při přihlašo
    Pokud není znovu zadat přihlašovací údaje tokenu se začne přejít zastaralé. Pokud k tomu dojde, dialogové okno nastavení účtu zjistíte, kolik dní zbývá před plně vyprší platnost tokenu. Po vypršení platnosti tokenu, je potřeba znovu zadat přihlašovací údaje pro tento účet nebo licenci s jinou metodu výše, než budete pokračovat, pomocí sady Visual Studio.
 
 > [!IMPORTANT]
->  Pokud používáte Visual Studio po delší dobu v prostředích s omezením nebo bez připojení k Internetu, by měl použít kód product key k odemknutí sady Visual Studio, aby se předešlo výpadkům.
+> Pokud používáte Visual Studio po delší dobu v prostředích s omezením nebo bez připojení k Internetu, by měl použít kód product key k odemknutí sady Visual Studio, aby se předešlo výpadkům.
 
 ### <a name="updating-expired-licenses"></a>Aktualizuje se licence s vypršenou platností
  Pokud vaše předplatné vypršelo úplně a už nebude mít přístupová práva ke službě Visual Studio, musíte mít:

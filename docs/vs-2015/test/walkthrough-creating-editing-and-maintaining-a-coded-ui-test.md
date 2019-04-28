@@ -8,12 +8,12 @@ ms.assetid: f7c25ba7-5c9c-455b-9242-701cda56f90c
 caps.latest.revision: 43
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8df705e1e4da6a54f060de45a90aed7c41691683
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 940a7551c83ec9a195ac0d54b430115ed926abf5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061811"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428236"
 ---
 # <a name="walkthrough-creating-editing-and-maintaining-a-coded-ui-test"></a>Návod: Vytváření, úpravy a údržba programového testu UI
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -123,7 +123,7 @@ V tomto návodu vytvoříte jednoduchou aplikaci Windows Presentation Foundation
 2. Vytvořte pro aplikaci SimpleWPFApp zástupce na ploše. Klikněte pravým tlačítkem na SimpleWPFApp.exe a zvolte **kopírování**. Na ploše, klikněte pravým tlačítkem a zvolte **Vložit zástupce**.  
   
     > [!TIP]
-    >  Zástupce aplikace usnadňuje přidávání nebo úpravu programových testů uživatelského rozhraní pro vaši aplikaci, protože umožňuje rychlé spuštění aplikace.  
+    > Zástupce aplikace usnadňuje přidávání nebo úpravu programových testů uživatelského rozhraní pro vaši aplikaci, protože umožňuje rychlé spuštění aplikace.  
   
 3. V Průzkumníku řešení klikněte pravým tlačítkem na řešení, zvolte **přidat** a pak vyberte **nový projekt**.  
   
@@ -154,7 +154,7 @@ V tomto návodu vytvoříte jednoduchou aplikaci Windows Presentation Foundation
      ![Pozastavit záznam](../test/media/cuit.png "CUIT_")  
   
     > [!WARNING]
-    >  Všechny akce provedené v klientských počítačích, bude zaznamenán. Pozastavte záznam, pokud provádíte akce, které může vést k citlivá data nebudou zahrnuty v záznamu.  
+    > Všechny akce provedené v klientských počítačích, bude zaznamenán. Pozastavte záznam, pokud provádíte akce, které může vést k citlivá data nebudou zahrnuty v záznamu.  
   
 9. Spusťte aplikaci SimpleWPFApp pomocí zástupce na ploše.  
   
@@ -203,7 +203,7 @@ V tomto návodu vytvoříte jednoduchou aplikaci Windows Presentation Foundation
 3. Chcete-li tento problém, můžete vytvořit programový test uživatelského rozhraní čekal pro ovládací prvek zaškrtávací políčko Povolit před pokračováním tohoto řádku pomocí `WaitForControlEnabled()` metody.  
   
     > [!WARNING]
-    >  Neupravujte soubor UIMap.Designer.cs. Jakékoli změny kódu v souboru UIMapDesigner.cs budou při každém vytvoření kódu pomocí nástroje UIMap – Tvůrce programového testu UI přepsány. Pokud je třeba změnit zaznamenanou metodu, musíte ji zkopírovat do souboru UIMap.cs a přejmenovat ji. Soubor UIMap.cs lze použít k přepsání metod a vlastností v souboru UIMapDesigner.cs. Je třeba odebrat odkaz na původní metodu v kódovaném souboru UITest.cs a nahradit ji názvem přejmenované metody.  
+    > Neupravujte soubor UIMap.Designer.cs. Jakékoli změny kódu v souboru UIMapDesigner.cs budou při každém vytvoření kódu pomocí nástroje UIMap – Tvůrce programového testu UI přepsány. Pokud je třeba změnit zaznamenanou metodu, musíte ji zkopírovat do souboru UIMap.cs a přejmenovat ji. Soubor UIMap.cs lze použít k přepsání metod a vlastností v souboru UIMapDesigner.cs. Je třeba odebrat odkaz na původní metodu v kódovaném souboru UITest.cs a nahradit ji názvem přejmenované metody.  
   
 4. V Průzkumníku řešení vyhledejte **UIMap.uitest** v projektu programového testu UI.  
   
@@ -224,7 +224,7 @@ V tomto návodu vytvoříte jednoduchou aplikaci Windows Presentation Foundation
      Aktualizace testovací metody jsou uloženy do souboru UIMap.Designer.  
   
     > [!CAUTION]
-    >  Po přesunutí metody ji nemůžete nadále upravovat pomocí Editoru programového testu uživatelského rozhraní. Musíte přidat vlastní kód a spravovat jej pomocí Editoru kódu.  
+    > Po přesunutí metody ji nemůžete nadále upravovat pomocí Editoru programového testu uživatelského rozhraní. Musíte přidat vlastní kód a spravovat jej pomocí Editoru kódu.  
   
 10. Přejmenujte metodu z `SimpleAppTest()` do `ModifiedSimpleAppTest()`  
   

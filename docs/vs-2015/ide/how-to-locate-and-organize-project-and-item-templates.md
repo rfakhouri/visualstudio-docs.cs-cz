@@ -16,12 +16,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1f4788ab9fa23049ded8107fe1d33a9419b79c00
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4b14a374214a605ec718ad60c6942752f3134edd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091236"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63416726"
 ---
 # <a name="how-to-locate-and-organize-project-and-item-templates"></a>Postupy: Hledání a organizace projektů a šablon položek
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +59,7 @@ Soubory šablony musí být umístěn do umístění, které Visual Studio rozpo
  Kategorie v **nový projekt** a **přidat novou položku** dialogová okna, aby odrážely struktury adresářů, které existují v umístění nainstalované a vlastní šablony. Tyto struktury adresářů pro uspořádání vašich šablon způsobem, který vám vyhovuje, můžete upravit.  
   
 > [!NOTE]
->  Nelze vytvořit novou kategorii na úrovni programovací jazyk. Nové kategorie lze vytvořit pouze v rámci jednotlivé jazyky.  
+> Nelze vytvořit novou kategorii na úrovni programovací jazyk. Nové kategorie lze vytvořit pouze v rámci jednotlivé jazyky.  
   
  Pokud struktury adresářů pro nainstalované a vlastní šablony pro konkrétní jazyk nemají stejnou strukturu (to znamená, že existují adresáře v rámci jedné složky, které neexistují v jiné) sady kategorií, které se zobrazují v **nový Projekt** dialogové okno bude spojení všech kategorií.  
   

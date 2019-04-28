@@ -19,18 +19,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e111b0d04b8e703a694917985a0559c05584e25b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d573de9889d286a7b634890e0d8b469541bc741f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60065503"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63407052"
 ---
 # <a name="deploy-clickonce-applications-for-testing-and-production-servers-without-resigning"></a>Nasazení aplikací ClickOnce pro testování a produkční servery bez opětovného podpisu
 Tento článek popisuje funkce zavedené v rozhraní .NET Framework verze 3.5, která umožňuje nasazení aplikací ClickOnce z více umístění v síti bez opětovné podepsání nebo změna ClickOnce, manifesty ClickOnce.
 
 > [!NOTE]
->  Opětovné podepisování je stále upřednostňovanou metodou pro nasazení nové verze aplikací. Kdykoli je to možné, použijte metodu opětovného podepisování. Další informace najdete v tématu [ *Mage.exe* (Manifest Generation and Editing Tool)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool).
+> Opětovné podepisování je stále upřednostňovanou metodou pro nasazení nové verze aplikací. Kdykoli je to možné, použijte metodu opětovného podepisování. Další informace najdete v tématu [ *Mage.exe* (Manifest Generation and Editing Tool)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool).
 
  Vývojáři třetích stran a nezávislé výrobce softwaru můžete vyjádřit výslovný souhlas k této funkci snadnější svým zákazníkům aktualizovat svoje aplikace. Tuto funkci můžete použít v následujících situacích:
 

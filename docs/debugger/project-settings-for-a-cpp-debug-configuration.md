@@ -112,18 +112,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 99c81952ee150e185f52edc624663c3cca9a9164
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: fb4f60c9e36b7c8c7a918b2298d7522e7c5d3793
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56722236"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63407889"
 ---
 # <a name="project-settings-for-a-c-debug-configuration"></a>Nastavení projektu pro konfiguraci ladění jazyka C++
 Můžete změnit nastavení projektu pro konfiguraci ladění jazyka C nebo Visual C++ v **stránky vlastností** dialogové okno, jak je popsáno v [jak: Nastavení ladění a vydání konfigurace](../debugger/how-to-set-debug-and-release-configurations.md). Následující tabulky popisují, kde najít nastavení související s ladicí program v **stránky vlastností** dialogové okno.
 
 > [!NOTE]
->  Nastavení ladění projektu v **konfigurační vlastnosti/ladění** kategorie se liší pro aplikace pro UPW a pro součásti, které jsou napsané v jazyce C++. Zobrazit [spustíte relaci ladění (VB, C#, C++ a XAML)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md).
+> Nastavení ladění projektu v **konfigurační vlastnosti/ladění** kategorie se liší pro aplikace pro UPW a pro součásti, které jsou napsané v jazyce C++. Zobrazit [spustíte relaci ladění (VB, C#, C++ a XAML)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md).
 
  Nastavení jednotlivých vlastností ladění automaticky zapíše a uloží do souboru "za user" (. vcxproj.user) pro vaše řešení při uložení vašeho řešení.
 

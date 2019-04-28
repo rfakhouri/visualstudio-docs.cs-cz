@@ -9,12 +9,12 @@ caps.latest.revision: 28
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: c4d1e6436d8f0fdeb80ad0e0c8a2631ba338d50c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 35c81dd879866d6a707e58add4a4fa94a254a918
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069897"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433032"
 ---
 # <a name="how-to-upgrade-from-a-trial-edition-of-visual-studio"></a>Postupy: Upgrade ze zkušební edice sady Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ Můžete si vyzkoušet předběžnou verzi sady Visual Studio za 14 dní bez reg
  Například, pokud si stáhnout a použít [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] pro 10 dnů a zaregistrujte ho, můžete ho dalších 80 dní. A pokračujte v používání produktu po 90 dnech, musíte poskytnout platný kód product key nebo přihlášení do sady Visual Studio s účtem Microsoft nebo účet organizace, který je přidružený k předplatnému MSDN nebo předplatného sady Visual Studio Online. Informace o tom, jak najít nebo získat kód product key, naleznete v tématu [jak: Vyhledejte Visual Studio Product Key](../install/how-to-locate-the-visual-studio-product-key.md) a [jak koupit Visual Studio](http://www.visualstudio.com/products/how-to-buy-vs).
 
 > [!IMPORTANT]
->  Zkušební období pro edice Express sady Visual Studio verze je také 30 dní. Chcete-li zkušební období pro edice Express sady Visual Studio neomezeně prodloužit, přihlaste se k sadě Visual Studio nebo produkt zaregistrujte.
+> Zkušební období pro edice Express sady Visual Studio verze je také 30 dní. Chcete-li zkušební období pro edice Express sady Visual Studio neomezeně prodloužit, přihlaste se k sadě Visual Studio nebo produkt zaregistrujte.
 
  Před zahájením inovace doporučujeme stáhnout a projít [sady Visual Studio a MSDN dokumentu White Paper licencování](http://www.microsoft.com/download/details.aspx?id=13350) na webu společnosti Microsoft. Další pomoc najdete v tématu [Support for Visual Studio](http://support.microsoft.com/ph/1117/en-us).
 
@@ -41,7 +41,7 @@ Můžete si vyzkoušet předběžnou verzi sady Visual Studio za 14 dní bez reg
 4. Zadejte platný kód product key a klikněte na tlačítko **použít** tlačítko.
 
     > [!NOTE]
-    >  K registraci a odemknutí všech edic sady Visual Studio je vyžadováno připojení k internetu. Po registraci sady Visual Studio je však připojení k internetu volitelné.
+    > K registraci a odemknutí všech edic sady Visual Studio je vyžadováno připojení k internetu. Po registraci sady Visual Studio je však připojení k internetu volitelné.
 
 ## <a name="see-also"></a>Viz také
  [Instalace sady Visual Studio](../install/install-visual-studio-2015.md) [přihlášení k sadě Visual Studio](../ide/signing-in-to-visual-studio.md) [jak: Vyhledejte kód Product Key sady Visual Studio](../install/how-to-locate-the-visual-studio-product-key.md) [Locate or Change the Product Key for Team Foundation Server](http://msdn.microsoft.com/library/64f29927-b520-4c9f-b633-bcb527e562cd) [přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)

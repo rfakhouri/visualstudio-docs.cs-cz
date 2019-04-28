@@ -12,18 +12,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 67a58ab1bf508ba1b2edc7117412638de6c2231a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9c714aec9bf4bb1fa28bd04a1b5e3375f98da4dd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099543"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63410082"
 ---
 # <a name="create-a-custom-debug-engine"></a>Vytvoření vlastního ladicího stroje
 Ladicí stroj (DE) je komponenta, která umožňuje ladění konkrétní za běhu architektury. Obvykle existuje pouze jedna implementace DE pro každé prostředí za běhu.
 
 > [!NOTE]
->  I když existují samostatné implementace DE pro příkazů jazyka Transact-SQL a JScript, sdílet jeden DE VBScript a JScript.
+> I když existují samostatné implementace DE pro příkazů jazyka Transact-SQL a JScript, sdílet jeden DE VBScript a JScript.
 
  Zavedenými spolupracuje s překladač nebo operace systému k poskytování těchto služeb ladění jako ovládací prvek, zarážky a výraz zkušební spuštění. Tyto služby jsou implementované pomocí rozhraní DE a může způsobit, že ladicí program pro přechod mezi různé provozní režimy. Další informace najdete v tématu [provozní režimy](../../extensibility/debugger/operational-modes.md).
 

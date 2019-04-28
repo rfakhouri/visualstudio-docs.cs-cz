@@ -10,12 +10,12 @@ ms.assetid: 306ea0b4-6d9e-4871-8d8d-a4032d422940
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: eeb378b09ffc3e12de8996d7feabbd20a4b40068
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: caf36e6713e49bb1470cd720ba2d04f689abba43
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54782925"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436666"
 ---
 # <a name="sending-startup-events-after-a-launch"></a>Odesílání událostí spuštění po spuštění
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Jakmile ladicího stroje (DE) je připojen k programu, odesílá řadu událost�
 - Událost dokončení zatížení, odeslali kód je načten a připravené ke spuštění, ale před provedením jakéhokoli kódu  
   
   > [!NOTE]
-  >  Při této události pokračuje, globální proměnné jsou inicializovány a spusťte po spuštění rutiny.  
+  > Při této události pokračuje, globální proměnné jsou inicializovány a spusťte po spuštění rutiny.  
   
 - Možný další vlákno, vytváření a události načtení modulu.  
   

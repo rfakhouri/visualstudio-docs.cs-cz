@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 825aba3c77d4986d9187b147f90725eda4d6e5aa
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56682606"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62433107"
 ---
 # <a name="sccsetoption-function"></a>SccSetOption – funkce
 Tato funkce nastaví možnosti, které řídí chování modulu plug-in správy zdrojového kódu.
@@ -48,7 +48,7 @@ SCCRTN SccSetOption(
 ## <a name="return-value"></a>Návratová hodnota
  Modul plug-in implementaci ovládacího prvku zdroje této funkce má vracet instanci jednoho z následujících hodnot:
 
-|Hodnota|Popis|
+|Value|Popis|
 |-----------|-----------------|
 |SCC_OK|Možnost byl úspěšně nastaven.|
 |SCC_I_SHARESUBPROJOK|Pokud vrácená `nOption` byl `SCC_OPT_SHARESUBPROJ` a modulu plug-in správy zdrojového kódu umožňuje rozhraní IDE k nastavení cílové složky.|

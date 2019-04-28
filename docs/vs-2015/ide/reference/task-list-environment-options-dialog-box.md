@@ -24,12 +24,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e4010d474c2f1ab1997b372fa551e168fe618021
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 0d24556be75547a4944ad1faca47c4545f8812ba
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59651653"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63410031"
 ---
 # <a name="task-list-environment-options-dialog-box"></a>Seznam úkolů, prostředí, dialogové okno Možnosti
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ Tato stránka možností umožňuje přidat, odstranit a změnit tokeny komentá
  Pokud je vybráno, pokaždé, když se odstranění uživatelského úkolu ze, zobrazí se okno se zprávou **seznamu úkolů**, umožňuje potvrďte odstranění. Ve výchozím nastavení je vybraná tato možnost.  
   
 > [!NOTE]
->  Odstranit komentář k úkolu, použijte odkaz k nalezení komentář a pak ji odebrat z vašeho kódu.  
+> Odstranit komentář k úkolu, použijte odkaz k nalezení komentář a pak ji odebrat z vašeho kódu.  
   
  Zobrazovat pouze názvy souborů  
  Při výběru, **souboru** sloupec **seznamu úkolů** zobrazuje pouze názvy souborů, které mají být upravena, není jejich úplné cesty.  
@@ -53,12 +53,12 @@ Tato stránka možností umožňuje přidat, odstranit a změnit tokeny komentá
  Zobrazí seznam tokenů a umožňuje přidat nebo odebrat vlastní tokeny. Tokeny komentáře se rozlišuje velikost písmen v jazyce Visual C# a Visual C++, ale ne v jazyce Visual Basic.  
   
 > [!NOTE]
->  Pokud nezadáte požadovaný token, přesně tak, jak se zobrazuje v **seznam tokenů**, úkolu komentář se nezobrazí v **seznamu úkolů**.  
+> Pokud nezadáte požadovaný token, přesně tak, jak se zobrazuje v **seznam tokenů**, úkolu komentář se nezobrazí v **seznamu úkolů**.  
   
  Priorita  
  Nastaví prioritu úlohy, které používají vybraný token. Komentáře k úkolu, které začínají s tímto tokenem jsou automaticky přiřazeny určené priority v **seznamu úkolů**.  
   
- Name  
+ Název  
  Zadejte řetězec tokenu. Díky tomu **přidat** tlačítko. Na **přidat**, tento řetězec je součástí **seznam tokenů**, a komentáře, které začínají s tímto názvem se zobrazí v **seznamu úkolů**.  
   
  Přidejte  
@@ -71,7 +71,7 @@ Tato stránka možností umožňuje přidat, odstranit a změnit tokeny komentá
  Kliknutím provést změny existujícího tokenu pomocí zadaných hodnot **název** a **Priority** pole.  
   
 > [!NOTE]
->  Nelze přejmenovat nebo odstranit výchozí token komentář, ale můžete změnit jeho úroveň priority.  
+> Nelze přejmenovat nebo odstranit výchozí token komentář, ale můžete změnit jeho úroveň priority.  
   
 ## <a name="see-also"></a>Viz také  
  [Pomocí seznamu úkolů](../../ide/using-the-task-list.md)   

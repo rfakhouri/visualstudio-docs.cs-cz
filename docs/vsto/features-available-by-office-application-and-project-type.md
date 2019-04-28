@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2cff118e31a10780a4573608a6516ddea9e4f73a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: df645fc7f53bbcd0ad5294182d13e96b57b5d42d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56626749"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431579"
 ---
 # <a name="features-available-by-office-application-and-project-type"></a>Zadejte dostupné funkce podle aplikace systému Office a projektu
   Visual Studio obsahuje několik typů šablon projektů, které podporují různé obchodní scénáře pro aplikace Microsoft Office, včetně následujících typů:
@@ -36,7 +36,7 @@ ms.locfileid: "56626749"
   Ne všechny aplikace mohou používat každý typ projektu. Například projekty na úrovni dokumentu jsou k dispozici pouze pro aplikace Microsoft Office Word a Microsoft Office Excel. Podobně některé funkce jsou dostupné jenom pro některé typy projektů nebo aplikace. Například v podokně Akce je dostupná jenom v projektech na úrovni dokumentu a pásu karet rozšíření jsou k dispozici jenom pro některé aplikace. Další informace o typech jiný projekt, naleznete v tématu [přehled vývoje řešení pro Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).
 
 > [!NOTE]
->  Šablony projektů pro Office jsou k dispozici pouze v některých edicích [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Další informace najdete v tématu [konfigurace počítače pro vývoj řešení pro systém Office](../vsto/configuring-a-computer-to-develop-office-solutions.md).
+> Šablony projektů pro Office jsou k dispozici pouze v některých edicích [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Další informace najdete v tématu [konfigurace počítače pro vývoj řešení pro systém Office](../vsto/configuring-a-computer-to-develop-office-solutions.md).
 
 ## <a name="project-types-available-for-different-microsoft-office-applications"></a>Typy projektů, které jsou k dispozici pro různé aplikace Microsoft Office
  V následující tabulce jsou uvedeny aplikace, které můžete použít s jednotlivými typu projektu.

@@ -8,12 +8,12 @@ ms.assetid: 41981ad6-673e-492e-b739-9863b14157b1
 caps.latest.revision: 26
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bb5648bfc823230998a324aedb0e21cf6606174d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 036c0ced92fd4da85989883ab5725455ed172db4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54779189"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63416298"
 ---
 # <a name="making-coded-ui-tests-wait-for-specific-events-during-playback"></a>Zajištění čekání programových testů UI na konkrétní události při přehrávání
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ Programové přehrávání testů uživatelského rozhraní webu můžete dát p
  Visual Studio Enterprise  
   
 > [!TIP]
->  Můžete také přidat zpoždění před akcí pomocí editoru programového testu UI. Další informace najdete v tématu [jak: Vložení prodlevy před akci uživatelského rozhraní pomocí editoru testů kódované UI](http://msdn.microsoft.com/library/509f8ef7-e105-4049-b11b-d64549e055b0).  
+> Můžete také přidat zpoždění před akcí pomocí editoru programového testu UI. Další informace najdete v tématu [jak: Vložení prodlevy před akci uživatelského rozhraní pomocí editoru testů kódované UI](http://msdn.microsoft.com/library/509f8ef7-e105-4049-b11b-d64549e055b0).  
   
  **UITestControl.WaitForControlXXX() Methods**  
   
@@ -105,7 +105,7 @@ UITestControl.WaitForCondition<UITestControl[]>(new UITestControl[] { statusText
  Playback.Wait() interně volá Thread.Sleep() (po výše výpočtu) do menších bloků v smyčky for vycházející z při kontrole operace cancel\break uživatele. Jinými slovy Playback.Wait() umožňuje, že zrušíte před koncem čekání přehrávání nejsou režimy spánku může nebo vyvolat výjimku.  
   
 > [!TIP]
->  Editor programového testu uživatelského rozhraní umožňuje snadno upravovat programové testy uživatelského rozhraní. Použití editoru programového testu UI, můžete vyhledat, zobrazit a upravit testovací metody. Můžete také upravit akce uživatelského rozhraní a jim přidružené ovládací prvky v mapování ovládacího prvku uživatelského rozhraní. Další informace najdete v tématu [testů uživatelského rozhraní programového úpravy pomocí editoru programového testu UI](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md).  
+> Editor programového testu uživatelského rozhraní umožňuje snadno upravovat programové testy uživatelského rozhraní. Použití editoru programového testu UI, můžete vyhledat, zobrazit a upravit testovací metody. Můžete také upravit akce uživatelského rozhraní a jim přidružené ovládací prvky v mapování ovládacího prvku uživatelského rozhraní. Další informace najdete v tématu [testů uživatelského rozhraní programového úpravy pomocí editoru programového testu UI](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md).  
   
  **Pokyny**  
   

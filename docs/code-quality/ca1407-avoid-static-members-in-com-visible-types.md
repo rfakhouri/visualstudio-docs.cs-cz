@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5b09122aebdc02b9eacb32df596914a0a08a9ea9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55932675"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62546255"
 ---
 # <a name="ca1407-avoid-static-members-in-com-visible-types"></a>CA1407: Vyhněte se statickým členům ve viditelných typech modelu COM
 
@@ -30,7 +30,7 @@ ms.locfileid: "55932675"
 |Kategorie|Microsoft.Interoperability|
 |Narušující změna|Nenarušující|
 
-## <a name="cause"></a>příčina
+## <a name="cause"></a>Příčina
  Obsahuje typ, který je označen jako viditelný pro Model COM (Component Object) `public``static` metoda.
 
 ## <a name="rule-description"></a>Popis pravidla

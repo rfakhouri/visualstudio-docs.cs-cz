@@ -9,12 +9,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d70a0c279c0720e79477b518ab63cf0326ca5237
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 227c9c84022e3c3340b4821df9dbd2dbe9465a03
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60111243"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63414690"
 ---
 # <a name="how-to-create-a-basic-lambert-shader"></a>Postupy: Vytvoření základního Lambertova shaderu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ Tento dokument popisuje způsob použití návrháře shaderu a orientovaného g
    Následující obrázek znázorňuje dokončené shader graf a náhled shaderu použité pro model čajové konvice.  
   
 > [!NOTE]
->  K předvedení lépe efekt shaderu na tomto obrázku, byl zadán oranžové barvy s použitím **MaterialDiffuse** parametr shaderu. Hry nebo aplikace můžete použít tento parametr slouží k poskytování hodnotu barvy jedinečný pro každý objekt. Informace o parametrech materiálu, naleznete v části Náhled shadery v [návrháře shaderu](../designers/shader-designer.md).  
+> K předvedení lépe efekt shaderu na tomto obrázku, byl zadán oranžové barvy s použitím **MaterialDiffuse** parametr shaderu. Hry nebo aplikace můžete použít tento parametr slouží k poskytování hodnotu barvy jedinečný pro každý objekt. Informace o parametrech materiálu, naleznete v části Náhled shadery v [návrháře shaderu](../designers/shader-designer.md).  
   
  ![Graf shaderu a jeho účinkem ve verzi preview. ](../designers/media/digit-lambert-effect-graph.png "Číslice Lambertova efekt grafu")  
   

@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d299fa1855b0bb5b342aa8206239dda398194b3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3bf5a994d173a11a8515e166c3b0bc3044bdc587
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096722"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63402898"
 ---
 # <a name="visual-studio-emulator-for-android"></a>Emulátor sady Visual Studio pro Android
 
@@ -44,7 +44,7 @@ Visual Studio Emulator for Android je desktopová aplikace, které emuluje zař�
  Odinstalovat Visual Studio Emulator pro Android pomocí panelu Přidat nebo odebrat programy v Ovládacích panelech.
 
 > [!NOTE]
->  Odinstalace sady Visual Studio nedojde k odinstalování emulátoru. Emulátor je nutné odinstalovat samostatně.
+> Odinstalace sady Visual Studio nedojde k odinstalování emulátoru. Emulátor je nutné odinstalovat samostatně.
 
  Když odinstalujete Visual Studio Emulator pro Android, technologie Hyper-V virtuální sítě Ethernet adaptéry, které byly vytvořeny pro emulátor používat automaticky neodeberou. Můžete ručně odebrat tyto virtuální adaptéry (Pokud nepoužíváte) otevřete Správce technologie Hyper-V, výběrem některé z imagí virtuálního pevného disku emulátor, výběrem karty sítě a zvolením **odebrat** všech přepínačích, které se zobrazí na této kartě.
 

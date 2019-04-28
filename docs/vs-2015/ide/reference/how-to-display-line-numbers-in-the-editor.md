@@ -14,12 +14,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7873d54ecdf3ce96ab64d94e9b1864c7ef2904b0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 33dfcd989a71785918cf4d121e2a2624654a5101
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088259"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63405675"
 ---
 # <a name="how-to-display-line-numbers-in-the-editor"></a>Postupy: Zobrazení čísel řádků v editoru
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "60088259"
 Můžete zobrazit nebo skrýt číslování řádku ve váš kód.  
   
 > [!NOTE]
->  V závislosti na aktivních nastaveních se dialogová okna a příkazy nabídek, které se zobrazí mohou lišit od těch, které jsou zde popsány. Chcete-li změnit nastavení, otevřete **nástroje / Import a Export nastavení**. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> V závislosti na aktivních nastaveních se dialogová okna a příkazy nabídek, které se zobrazí mohou lišit od těch, které jsou zde popsány. Chcete-li změnit nastavení, otevřete **nástroje / Import a Export nastavení**. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="display-line-numbers-in-code"></a>Zobrazení čísel řádků v kódu  
  Čísla řádků nejsou přidány do kódu; jsou to pouze pro referenci. Pokud chcete tisknout čísla řádků **tisk** dialogové okno, vyberte **zahrnutí čísel řádků** zaškrtávací políčko.  
@@ -39,7 +39,7 @@ Můžete zobrazit nebo skrýt číslování řádku ve váš kód.
 2. ![Možnosti pro zobrazení čísel řádků v editoru](../../ide/reference/media/vs-displaylinenumbers.png "VS_DisplayLineNumbers")  
   
 > [!NOTE]
->  V závislosti na jazyku nebo nastavení, možná budete muset vybrat **zobrazit všechna nastavení** zaškrtávací políčko **možnosti** dialogové okno zobrazit **všechny jazyky** podřízený uzel.  
+> V závislosti na jazyku nebo nastavení, možná budete muset vybrat **zobrazit všechna nastavení** zaškrtávací políčko **možnosti** dialogové okno zobrazit **všechny jazyky** podřízený uzel.  
   
 ## <a name="see-also"></a>Viz také  
  [Vlastní nastavení editoru](../../ide/customizing-the-editor.md)   

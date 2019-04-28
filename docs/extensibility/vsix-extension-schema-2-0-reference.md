@@ -11,18 +11,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1a029345afb8b54c85d35e500e4ada48c02c54ff
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7cf2840c22bcddb9090cb078be6a8ad53d1ca1aa
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114519"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411130"
 ---
 # <a name="vsix-extension-schema-20-reference"></a>VSIX extension schema 2.0 – referenční informace
 Soubor manifestu VSIX nasazení popisuje obsah balíčku VSIX. Formát souboru se řídí schéma. Verze 2.0 tato schématu podporuje přidávání vlastních typů a atributů.  Je možné rozšířit schéma manifestu. Manifestu zaváděcího programu ignoruje XML elementů a atributů, které ho nerozumí.
 
 > [!IMPORTANT]
->  Visual Studio 2015 můžete načíst soubory VSIX v sadě Visual Studio 2010, Visual Studio 2012 nebo Visual Studio 2013 formátech.
+> Visual Studio 2015 můžete načíst soubory VSIX v sadě Visual Studio 2010, Visual Studio 2012 nebo Visual Studio 2013 formátech.
 
 ## <a name="package-manifest-schema"></a>Schéma manifestu balíčku
  Kořenový element souboru manifestu XML je `<PackageManifest>`. Má jeden atribut `Version`, což je verze manifestu formátu. Pokud hlavní změny provedené ve formátu, je změnit formát verze. Tento článek popisuje formát manifestu verze 2.0, která je určená v manifestu tak, že nastavíte `Version` atributu na hodnotu verze = "2.0".

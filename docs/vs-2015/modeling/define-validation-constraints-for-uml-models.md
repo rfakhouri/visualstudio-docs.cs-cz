@@ -11,12 +11,12 @@ caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9591875b525d44e343f8326b7f5a145b04b57cff
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4107a5fb88392f9d02cca8f41b0f53d5844d9490
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071159"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422712"
 ---
 # <a name="define-validation-constraints-for-uml-models"></a>Definování omezení ověřování pro modely UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ Můžete definovat omezení ověření, které testují, zda model splňuje podm
     Další informace najdete v tématu [vyhodnocování omezení ověření](#Implementing).  
   
    > [!IMPORTANT]
-   >  Ujistěte se, že vaše **.cs** soubory obsahují následující `using` – příkaz:  
+   > Ujistěte se, že vaše **.cs** soubory obsahují následující `using` – příkaz:  
    >   
    >  `using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Uml;`  
   
@@ -223,7 +223,7 @@ using Microsoft.VisualStudio.Uml.Classes;
  Metoda ověření by měl určit, zda je omezení ověření, které chcete použít hodnotu true nebo false. Při hodnotě true by se neměla provádět žádnou akci. Pokud false, měli byste nahlásit chybu pomocí metod poskytovaných parametrem `ValidationContext` parametru.  
   
 > [!NOTE]
->  Metody ověřování by neměly měnit model. Neexistuje žádná záruka při nebo v jakém že se spustí omezení pořadí. Pokud musíte předat informace mezi po sobě jdoucích spuštěních metody ověřování v rámci ověřovacího běhu, můžete použít kontext mezipaměti popsaný v části [koordinace více ověření](#ContextCache).  
+> Metody ověřování by neměly měnit model. Neexistuje žádná záruka při nebo v jakém že se spustí omezení pořadí. Pokud musíte předat informace mezi po sobě jdoucích spuštěních metody ověřování v rámci ověřovacího běhu, můžete použít kontext mezipaměti popsaný v části [koordinace více ověření](#ContextCache).  
   
  Například pokud chcete zajistit, že každý typ (třída, rozhraní nebo výčet) má název, který je dlouhý alespoň tři znaky, můžete použít tuto metodu:  
   

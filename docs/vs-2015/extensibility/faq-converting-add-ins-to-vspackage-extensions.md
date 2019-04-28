@@ -8,12 +8,12 @@ ms.assetid: 3a01d333-6e31-423f-ae06-5091a4fcb7a9
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e23e242060eea31ae79fd8a3998fb4ee5d734647
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: bc6ed31f96fc2021d0d9e104692f0440cfb78a5e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60048672"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433743"
 ---
 # <a name="faq-converting-add-ins-to-vspackage-extensions"></a>Nejčastější dotazy: Převádění doplňků na rozšíření VSPackage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -21,14 +21,14 @@ ms.locfileid: "60048672"
 Nyní jsou zastaralé doplňky. Chcete-li nové rozšíření sady Visual Studio, je potřeba vytvořit rozšíření VSIX. Tady najdete odpovědi na některé nejčastější dotazy o tom, jak převést doplněk Visual Studio k rozšíření VSIX.  
   
 > [!WARNING]
->  Spouští se v sadě Visual Studio 2015 pro projekty jazyka C# a Visual Basic, můžete použít projekt VSIX a přidat položku šablony pro příkazy nabídky, panely nástrojů a rozšíření VSPackages. Další informace najdete v tématu [co je nového ve službě Visual Studio 2015 SDK](../extensibility/what-s-new-in-the-visual-studio-2015-sdk.md).  
+> Spouští se v sadě Visual Studio 2015 pro projekty jazyka C# a Visual Basic, můžete použít projekt VSIX a přidat položku šablony pro příkazy nabídky, panely nástrojů a rozšíření VSPackages. Další informace najdete v tématu [co je nového ve službě Visual Studio 2015 SDK](../extensibility/what-s-new-in-the-visual-studio-2015-sdk.md).  
   
 > [!IMPORTANT]
->  V mnoha případech můžete jednoduše převést kód doplňku do projektu VSIX s položkou projektu VSPackage. Můžete získat automatizační objekt DTE zavoláním <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> v <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> metody.  
+> V mnoha případech můžete jednoduše převést kód doplňku do projektu VSIX s položkou projektu VSPackage. Můžete získat automatizační objekt DTE zavoláním <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> v <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> metody.  
 >   
->  `DTE2 dte = (DTE2)GetService(typeof(DTE));`  
+> `DTE2 dte = (DTE2)GetService(typeof(DTE));`  
 >   
->  Další informace najdete v tématu [jak mohu spustit kód doplňku v sadě VSPackage?](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_RunAddin) níže.  
+> Další informace najdete v tématu [jak mohu spustit kód doplňku v sadě VSPackage?](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_RunAddin) níže.  
   
 ## <a name="what-software-do-i-need-to-develop-vsix-extensions"></a>Jaký software potřebujete pro vývoj rozšíření VSIX?  
  Spouští se v sadě Visual Studio 2015, nenainstalujete sadu Visual Studio SDK ze služby Stažení softwaru. Je zahrnut jako volitelná funkce v instalačním programu sady Visual Studio. VS SDK můžete také nainstalovat později. Další informace najdete v tématu [instalace sady Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  

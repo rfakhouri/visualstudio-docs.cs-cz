@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 87bf42ccb44c170321f36a9fe2fa7f44e274dcfe
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 597d0a29e153659359d3a6591970750bfd4de770
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099660"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63405748"
 ---
 # <a name="walkthrough-create-a-custom-installer-for-a-clickonce-application"></a>Návod: Vytvoření vlastního instalátoru pro aplikaci ClickOnce
 Na základě všech aplikací ClickOnce *.exe* souboru bezobslužné instalace a aktualizovat vlastní instalační program. Vlastní instalační program můžete implementovat vlastní uživatelské prostředí při instalaci, včetně vlastní dialogová okna pro operace zabezpečení a údržba. K provedení operace instalace, používá vlastní instalační program <xref:System.Deployment.Application.InPlaceHostingManager> třídy. Tento návod ukazuje, jak vytvořit vlastní instalační program, který tiché instalaci aplikace ClickOnce.
@@ -53,7 +53,7 @@ Na základě všech aplikací ClickOnce *.exe* souboru bezobslužné instalace a
      Tyto metody volat <xref:System.Deployment.Application.InPlaceHostingManager> metody se stáhnout manifest nasazení vyhodnocení příslušná oprávnění, požádat uživatele o oprávnění k instalaci a pak si stáhnout a nainstalovat aplikaci do mezipaměti ClickOnce. Vlastní instalační program můžete určit, že je předem důvěryhodné aplikace ClickOnce, nebo můžete odložit rozhodnutí důvěryhodnosti <xref:System.Deployment.Application.InPlaceHostingManager.AssertApplicationRequirements%2A> volání metody. Tento kód předběžně vztahy důvěryhodnosti aplikace.
 
     > [!NOTE]
-    >  Oprávnění přiřazená předem důvěryhodnou nesmí překročit oprávnění kód vlastní instalační služby.
+    > Oprávnění přiřazená předem důvěryhodnou nesmí překročit oprávnění kód vlastní instalační služby.
 
      [!code-vb[System.Deployment.Application.InPlaceHostingManager#1](../deployment/codesnippet/VisualBasic/walkthrough-creating-a-custom-installer-for-a-clickonce-application_1.vb)]
      [!code-csharp[System.Deployment.Application.InPlaceHostingManager#1](../deployment/codesnippet/CSharp/walkthrough-creating-a-custom-installer-for-a-clickonce-application_1.cs)]

@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9d7bf1be05ebabcaac319cce591cf82cd2ab5f5d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6b6f0b1f3afec1231778a54c82422d6761995eb1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60112283"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63402805"
 ---
 # <a name="how-to-create-an-association-between-linq-to-sql-classes-or-designer"></a>Postupy: Vytvoření přidružení mezi třídy LINQ to SQL (O/R Designer)
 Přidružení mezi třídami entit v [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] jsou podobná relace mezi tabulkami v databázi. Můžete vytvořit přidružení mezi třídami entit pomocí **Editor asociace** dialogové okno.
@@ -21,7 +21,7 @@ Přidružení mezi třídami entit v [!INCLUDE[vbtecdlinq](../data-tools/include
 Při použití musíte vybrat třídu nadřazené a podřízené třídy **Editor asociace** dialogové okno Vytvoření přidružení. Nadřazená třída je třída entity, která obsahuje primární klíč. podřízené třídy je třída entity, která obsahuje cizího klíče. Například, pokud tříd entit byly vytvořeny, která je namapována na `Northwind Customers` a `Orders` tabulky, `Customer` třídy by nadřazené třídy a `Order` třída by být podřízené třídy.
 
 > [!NOTE]
->  Při přetažení tabulky z **Průzkumníka serveru** nebo **Průzkumník databáze** na **Návrhář relací objektů** (**O/R Designer**), přidružení se automaticky vytvoří podle existující relace cizího klíče v databázi.
+> Při přetažení tabulky z **Průzkumníka serveru** nebo **Průzkumník databáze** na **Návrhář relací objektů** (**O/R Designer**), přidružení se automaticky vytvoří podle existující relace cizího klíče v databázi.
 
 ## <a name="association-properties"></a>Vlastnosti přidružení
 Po vytvoření asociace, když vyberete přidružení v **O/R Designer**, existuje několik konfigurovatelných vlastností v **vlastnosti** okna. (Přidružení je řádek mezi souvisejícími třídami.) Následující tabulka obsahuje popis vlastností asociace.

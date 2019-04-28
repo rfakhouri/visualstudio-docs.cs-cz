@@ -11,12 +11,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8301a4ecae71bfa2b215e20dfabf73e058c48dc4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e1b6477c112de7b19b00bcd173984533f5737014
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059107"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436725"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-2"></a>Návod: Vytvoření položky projektu sloupce webu pomocí šablony projektu, část 2
   Po definování vlastního typu položky projektu služby SharePoint a přidružení šablony projektu v sadě Visual Studio, můžete také poskytnout průvodce pro šablony. Průvodce můžete použít ke shromažďování informací od uživatelů při použití šablony k vytvoření nového projektu, který obsahuje položky projektu. Informace, které slouží k inicializaci položky projektu.
@@ -222,7 +222,7 @@ ms.locfileid: "60059107"
  Přidejte XAML k definování uživatelského rozhraní v okně průvodce a dva uživatelské ovládací prvky, které poskytují uživatelské rozhraní pro stránky průvodce a přidejte kód, který definuje chování okna a uživatelské ovládací prvky. Průvodce, který vytvoříte se podobá integrovaného průvodce pro projekty služby SharePoint v sadě Visual Studio.
 
 > [!NOTE]
->  V následujících krocích, vaše bude mít projekt několik chyb kompilace poté, co přidáte kód nebo XAML do projektu. K těmto chybám předejdete přidáním kódu v dalších krocích.
+> V následujících krocích, vaše bude mít projekt několik chyb kompilace poté, co přidáte kód nebo XAML do projektu. K těmto chybám předejdete přidáním kódu v dalších krocích.
 
 #### <a name="to-create-the-wizard-window-ui"></a>Chcete-li vytvořit v okně Průvodce uživatelského rozhraní
 
@@ -233,7 +233,7 @@ ms.locfileid: "60059107"
      [!code-xml[SPExtensibility.ProjectItem.SiteColumn#10](../sharepoint/codesnippet/Xaml/sitecolumnprojectitem/projecttemplatewizard/wizardwindow.xaml#10)]
 
     > [!NOTE]
-    >  V okně, které se vytvoří v tomto XAML je odvozen z <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow> základní třídy. Když přidáte vlastní dialogové okno WPF se sadou Visual Studio, doporučujeme odvodit vaše dialogové okno z této třídy mít konzistentní stylu s jiná dialogová okna Visual Studio a aby se zabránilo problémům modální dialogové okno, které by jinak mohlo dojít. Další informace najdete v tématu [vytváření a správa modálních dialogových oken](/visualstudio/extensibility/creating-and-managing-modal-dialog-boxes).
+    > V okně, které se vytvoří v tomto XAML je odvozen z <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow> základní třídy. Když přidáte vlastní dialogové okno WPF se sadou Visual Studio, doporučujeme odvodit vaše dialogové okno z této třídy mít konzistentní stylu s jiná dialogová okna Visual Studio a aby se zabránilo problémům modální dialogové okno, které by jinak mohlo dojít. Další informace najdete v tématu [vytváření a správa modálních dialogových oken](/visualstudio/extensibility/creating-and-managing-modal-dialog-boxes).
 
 3. Pokud vyvíjíte projekt jazyka Visual Basic, odeberte `ProjectTemplateWizard` obor názvů z `WizardWindow` název třídy v `x:Class` atribut `Window` elementu. Tento element má na prvním řádku XAML. Jakmile budete hotovi, první řádek by měl vypadat jako v následujícím příkladu.
 
@@ -513,7 +513,7 @@ ms.locfileid: "60059107"
      Sloupec webu je zabalit a nasadit do Sharepointu webu, který **adresa URL webu** určuje vlastnost projektu. Webový prohlížeč otevře výchozí stránku webu.
 
     > [!NOTE]
-    >  Pokud **ladění skriptů zakázáno** dialogové okno se zobrazí, zvolte **Ano** tlačítka pokračovat v ladění projektu.
+    > Pokud **ladění skriptů zakázáno** dialogové okno se zobrazí, zvolte **Ano** tlačítka pokračovat v ladění projektu.
 
 2. Na **Akce webu** nabídce zvolte **nastavení webu**.
 

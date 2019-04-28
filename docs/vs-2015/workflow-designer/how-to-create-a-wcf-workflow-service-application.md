@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f7cf338139da88fd4d3507ac7f6c7ab71dd881e3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 40b1d2961fa0f0187d11bd87df54ff2ad3124275
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054908"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433521"
 ---
 # <a name="how-to-create-a-wcf-workflow-service-application"></a>Postupy: Vytvoření aplikace služeb pracovního postupu WCF
 [!INCLUDE[indigo1](../includes/indigo1-md.md)] aplikace služeb pracovního postupu jsou distribuované komunikační služby, které předávání zpráv mezi klienty a sami přes hranice procesu. Implementace kontraktu služby na straně služby se provádí pomocí deklarace pomocí aktivit pracovního postupu v [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] způsobem, který je obdobou služby starší verze pracovních postupů v rozhraní .NET Framework 3.5.  
@@ -38,7 +38,7 @@ ms.locfileid: "60054908"
 7. V **řešení** vyberte vytvoření nového řešení a potom klikněte na **OK**.  
   
     > [!NOTE]
-    >  Pokud chcete přidat Konzolová aplikace pracovního postupu do existujícího řešení, otevřete toto řešení [!INCLUDE[vs2010](../includes/vs2010-md.md)], klikněte pravým tlačítkem na řešení v **Průzkumníka řešení**a vyberte **přidat**, pak  **Nový projekt...** Chcete-li otevřít **nový projekt** dialogové okno. Pokračujte, jak je popsáno výše v tomto postupu.  
+    > Pokud chcete přidat Konzolová aplikace pracovního postupu do existujícího řešení, otevřete toto řešení [!INCLUDE[vs2010](../includes/vs2010-md.md)], klikněte pravým tlačítkem na řešení v **Průzkumníka řešení**a vyberte **přidat**, pak  **Nový projekt...** Chcete-li otevřít **nový projekt** dialogové okno. Pokračujte, jak je popsáno výše v tomto postupu.  
   
 8. Šablona projektu vytvoří definici služby jako XAML. [!INCLUDE[wfd1](../includes/wfd1-md.md)] Do návrhového zobrazení se otevře <xref:System.Activities.Statements.Sequence> aktivitu, která obsahuje sadu <xref:System.ServiceModel.Activities.Receive> a <xref:System.ServiceModel.Activities.SendReply> aktivity.  
   

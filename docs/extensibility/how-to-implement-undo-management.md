@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d49c062540b50e442f2ac32e69ee37934c53bf2c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b29b95b9c53f18d6f97ac2455dd30aa6e26ccde4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60068610"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415480"
 ---
 # <a name="how-to-implement-undo-management"></a>Postupy: Implementace správy zpět
 Primární rozhraní používá ke správě vrácení zpět se ale <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager>, která je implementována pomocí prostředí. Pro podporu správy vrácení zpět, implementovat samostatné zpět jednotky (tedy <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoUnit>, který může obsahovat více jednotlivé kroky.
@@ -75,7 +75,7 @@ Primární rozhraní používá ke správě vrácení zpět se ale <xref:Microso
    `OleUndoManager` Třída reprezentuje instanci zásobníku jedno vrácení zpět. Proto je jeden objekt správce akcí zpět na datové entity, které jsou sledovány pro vrácení zpět nebo znovu.
 
 > [!NOTE]
->  Zatímco objekt správce akcí zpět hojně používají textový editor, je hlavní komponenty, která nemá žádné specifické podpoře pro textový editor. Pokud chcete zajistit podporu více úrovní zpět nebo znovu, můžete k tomu tento objekt.
+> Zatímco objekt správce akcí zpět hojně používají textový editor, je hlavní komponenty, která nemá žádné specifické podpoře pro textový editor. Pokud chcete zajistit podporu více úrovní zpět nebo znovu, můžete k tomu tento objekt.
 
 ## <a name="see-also"></a>Viz také:
 - <xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager>

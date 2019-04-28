@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 205fb184997130423072d556a60e1323a99e6ad8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 41b6ec5c91fe9dc16a07703358ee0bb951efb490
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60101454"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412592"
 ---
 # <a name="how-to-install-the-visual-studio-tools-for-office-runtime-redistributable"></a>Postupy: Nainstalovat Visual Studio Tools for Office runtime redistributable
   Visual Studio 2010 Tools for Office runtime musí být nainstalovaný na každém počítači, na kterém běží řešení, které jsou vytvořeny pomocí nástroje Microsoft Office developer tools v [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Modul runtime se nainstaluje automaticky při instalaci [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]a Microsoft Office. Další informace najdete v tématu [Visual Studio Tools for Office runtime instalace scénáře](../vsto/visual-studio-tools-for-office-runtime-installation-scenarios.md).
@@ -32,7 +32,7 @@ ms.locfileid: "60101454"
 - Je potřeba nainstalovat modul runtime na počítači, který již má všechny další požadavky pro řešení Office nainstalována.
 
     > [!NOTE]
-    >  Musíte být správce na vývojovém počítači, aby instalaci rozhraní .NET Framework a [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)].
+    > Musíte být správce na vývojovém počítači, aby instalaci rozhraní .NET Framework a [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)].
 
 ## <a name="to-install-the-visual-studio-tools-for-office-runtime"></a>Chcete-li nainstalovat Visual Studio Tools for Office runtime
 
