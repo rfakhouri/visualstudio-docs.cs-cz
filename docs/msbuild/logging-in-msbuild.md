@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 99bbb6ba880ace8b21ae6b6009ee84cffee79485
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56618728"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62856042"
 ---
 # <a name="logging-in-msbuild"></a>Protokolování v nástroji MSBuild
 Protokolování poskytuje způsob, jak můžete monitorovat průběh sestavení. Zachycení protokolování sestavení, události, zprávy, upozornění a chyby v souboru protokolu.

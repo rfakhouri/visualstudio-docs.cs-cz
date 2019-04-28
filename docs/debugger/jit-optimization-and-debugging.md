@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7346b6fd8fbd483021437638f9e134ead88a0b93
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56699142"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62846320"
 ---
 # <a name="jit-optimization-and-debugging"></a>Optimalizace a ladění JIT
 **Optimalizace jak fungují v rozhraní .NET:** Pokud se pokoušíte ladit kód, je jednodušší při, že kód je **není** optimalizované. Je to proto, když je kód zoptimalizovaný, kompilovacími a běhovými provést změny emitovaný kód procesoru tak, že běží rychleji, ale je méně přímé mapování na původní zdrojový kód. To znamená, že ladicí programy jsou často nelze zjistit hodnotu místní proměnné a kódu, krokování a zarážky nemusí fungovat podle očekávání.

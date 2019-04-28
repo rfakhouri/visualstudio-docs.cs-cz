@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 653340d3a682664670998c874344bfc931105892
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56624773"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62575218"
 ---
 # <a name="how-to-programmatically-create-a-custom-calendar"></a>Postupy: Vytváření vlastních kalendářů prostřednictvím kódu programu
   Tento příklad vytvoří novou složku kalendáře s názvem **PersonalCalendar**a vytvoří novou položku události a přidá jej do složky Kalendář. Kód poté zobrazí kalendář.

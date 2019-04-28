@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1f02545f1c19b57e46af302fbc0b2abaa7445612
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56646340"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62555039"
 ---
 # <a name="cvcfllang"></a>CV_CFL_LANG
 Určuje jazyk zdrojového kódu aplikace nebo propojeném modulu.
@@ -49,7 +49,7 @@ typedef enum CV_CFL_LANG {
 ## <a name="elements"></a>Elementy
 Je aplikace CV_CFL_C jazyka C.
 
-Je aplikace CV_CFL_CXX jazyk C++.
+Je jazyk aplikace CV_CFL_CXX C++.
 
 Je jazyk CV_CFL_FORTRAN aplikace až po FORTRAN.
 

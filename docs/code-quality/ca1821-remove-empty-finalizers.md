@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 16bb2786c4c7b0ca94fe60a9577e4b462d663bfc
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55957845"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62545710"
 ---
 # <a name="ca1821-remove-empty-finalizers"></a>CA1821: Odeberte prázdné finalizační metody
 
@@ -29,7 +29,7 @@ ms.locfileid: "55957845"
 |Kategorie|Microsoft.Performance|
 |Narušující změna|Nenarušující|
 
-## <a name="cause"></a>příčina
+## <a name="cause"></a>Příčina
  Typ implementuje finalizační metodu, která je prázdný, vyžaduje pouze základní typ finalizační metodu nebo volá pouze podmíněně vyslané metody.
 
 ## <a name="rule-description"></a>Popis pravidla
