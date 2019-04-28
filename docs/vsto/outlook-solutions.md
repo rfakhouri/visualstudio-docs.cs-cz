@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d1cf32a7fde4ebcc4f8a702c8f250018b6e7e68f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 4150751cbb8de64fc237335bc26407f932276075
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56606235"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442369"
 ---
 # <a name="outlook-solutions"></a>řešení pro aplikaci Outlook
   Visual Studio poskytuje šablony projektu, které slouží k vytváření doplňků VSTO pro aplikaci Microsoft Office Outlook. Doplňky VSTO slouží k automatizaci aplikace Outlook, rozšířit funkce aplikace Outlook nebo přizpůsobení uživatelského rozhraní (UI) aplikace Outlook. Další informace o doplňcích VSTO najdete v tématu [doplňků VSTO architektura](../vsto/architecture-of-vsto-add-ins.md).
@@ -31,7 +31,7 @@ ms.locfileid: "56606235"
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
 > [!NOTE]
->  Zajímá vás vývoj řešení, které rozšiřují Office prostředí napříč [více platforem](https://dev.office.com/add-in-availability)? Podívejte se na nové [Office Add-ins modelu](https://dev.office.com/docs/add-ins/overview/office-add-ins). Doplňky sady Office mají malé náklady v porovnání s doplňky VSTO a řešení a je můžete vytvořit s využitím téměř jakékoli webové programování technologie, jako je například HTML5, JavaScript, CSS3 a XML.
+> Zajímá vás vývoj řešení, které rozšiřují Office prostředí napříč [více platforem](https://dev.office.com/add-in-availability)? Podívejte se na nové [Office Add-ins modelu](https://dev.office.com/docs/add-ins/overview/office-add-ins). Doplňky sady Office mají malé náklady v porovnání s doplňky VSTO a řešení a je můžete vytvořit s využitím téměř jakékoli webové programování technologie, jako je například HTML5, JavaScript, CSS3 a XML.
 
 ## <a name="create-an-outlook-vsto-add-in-project"></a>Vytvoření projektu doplňku aplikace Outlook VSTO
  S vytvořením projektech Outlook **doplňku aplikace Outlook** šablonu projektu v **nový projekt** dialogové okno. Tato šablona obsahuje odkazy na požadovaná sestavení a soubory projektu.

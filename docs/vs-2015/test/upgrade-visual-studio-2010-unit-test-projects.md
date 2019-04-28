@@ -8,12 +8,12 @@ ms.assetid: f1502b51-d6db-4894-9fbf-4a5723e4bb1a
 caps.latest.revision: 8
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 63e6be6a6b7c3e739ab590dd9f952fbb5988176b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: c66d8ba2f630812b08358fa3557035f58266ef00
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54788636"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445905"
 ---
 # <a name="upgrade-visual-studio-2010-unit-test-projects"></a>Upgrade projektů testů jednotek sady Visual Studio 2010
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,13 +23,13 @@ ms.locfileid: "54788636"
  [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] zavádí několik změn pro testování částí. Z důvodů těchto změn je důležité pochopit, problémy s kompatibilitou mezi předchozí verze sady Visual Studio a [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]. Mezi změny do testování jednotek je významnou změnu, která [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] obsahuje více než jedna šablona projektu testů, včetně šablona projektu testů jednotek. Nové jednotkové testy jsou přidány do nové šablony projektu testů jednotek. Jednotkové testy mohou být součástí jiné nové šablony projektu testu nazývá šablona projekt programového testu uživatelského rozhraní. Další informace o nové šablony projektu testu, naleznete v tématu [upgradování testů ze starších verzí sady Visual Studio](http://msdn.microsoft.com/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52). Nové projekty testů jednotek již obsahovat soubor nastavení testu ve výchozím nastavení. Vyloučením soubor nastavení testu zlepšuje výkon testování částí. Z důvodu kompatibility můžete stále použít existující projekty testů, které jste vytvořili pomocí sady Visual Studio 2010. Doporučujeme však, že odeberete soubor nastavení testu, který je spojený s projektem testů z důvodů výkonu, pokud nemáte konkrétní požadavky pro soubor nastavení testu. Můžete například zachovat soubor nastavení testu, je-li spustit testování částí v distribuovaném prostředí, nebo potřebujete shromažďovat konkrétní diagnostická data. Pokud máte podobné Internetu věcí a potřebovali pomocí nové šablony projektu testu jednotky nebo programových testů UI šablony projektu, můžete ručně přidat soubor nastavení testu k nim také.
 
 > [!NOTE]
->  Testy jednotky existující v vaše [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] SP1 testovací projekty budou fungovat bez problémů mezi [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] SP1 a [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]. Nebudou provedeny žádné změny v souborech projektu testu při otevření sady Visual Studio 2010 testovací projekt obsahující testování částí v [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], nebo naopak.
+> Testy jednotky existující v vaše [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] SP1 testovací projekty budou fungovat bez problémů mezi [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] SP1 a [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]. Nebudou provedeny žádné změny v souborech projektu testu při otevření sady Visual Studio 2010 testovací projekt obsahující testování částí v [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], nebo naopak.
 
 > [!CAUTION]
->  Nejde otevřít Visual Studio 2010 a C + +/ CLI projektu tohoto cíle 11.0 nástrojů – to znamená, že projekt vytvořený v sadě Visual Studio 2012. Toto omezení platí pro všechny C + +/ CLI projekty, není právě C + +/ CLI projektů testů jednotek.
+> Nejde otevřít Visual Studio 2010 a C + +/ CLI projektu tohoto cíle 11.0 nástrojů – to znamená, že projekt vytvořený v sadě Visual Studio 2012. Toto omezení platí pro všechny C + +/ CLI projekty, není právě C + +/ CLI projektů testů jednotek.
 
 > [!NOTE]
->  Můžete spustit nové jednotkové testy použití vstest.console.exe z příkazového řádku. Další informace o použití vstest.console.exe naleznete v tématu [možnosti příkazového řádku VSTest.Console.exe](http://msdn.microsoft.com/library/52e1689d-b1a8-4589-bd98-99a55acd0a11), nebo spusťte příkaz s použitím přepínače nápovědy: **vstest.console.exe /?**. Můžete nadále spouštět existující testy jednotek pomocí MStest.exe. Další informace najdete v tématu [spuštění automatizovaných testů z příkazového řádku pomocí Mstestu](http://msdn.microsoft.com/library/39b61ad0-0055-44b5-963f-25d8a6b51581) a [možnosti příkazového řádku MSTest.exe](http://msdn.microsoft.com/library/8813ba7f-e790-4e92-9f91-7080508a1c36).
+> Můžete spustit nové jednotkové testy použití vstest.console.exe z příkazového řádku. Další informace o použití vstest.console.exe naleznete v tématu [možnosti příkazového řádku VSTest.Console.exe](http://msdn.microsoft.com/library/52e1689d-b1a8-4589-bd98-99a55acd0a11), nebo spusťte příkaz s použitím přepínače nápovědy: **vstest.console.exe /?**. Můžete nadále spouštět existující testy jednotek pomocí MStest.exe. Další informace najdete v tématu [spuštění automatizovaných testů z příkazového řádku pomocí Mstestu](http://msdn.microsoft.com/library/39b61ad0-0055-44b5-963f-25d8a6b51581) a [možnosti příkazového řádku MSTest.exe](http://msdn.microsoft.com/library/8813ba7f-e790-4e92-9f91-7080508a1c36).
 
  Další významné změnou je nový Průzkumníka testů. V [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], některé z testování windows je možné, že znáte z předchozí verze sady Visual Studio jsou zastaralé, jako je například v okně zobrazení testu. Průzkumník testů je navržená pro lepší podporu vývojářů a týmů, které začlenily testování jednotek v svých praktik vývoje. Další informace najdete v tématu [spouštění testů jednotek pomocí Průzkumníka testů](../test/run-unit-tests-with-test-explorer.md).
 

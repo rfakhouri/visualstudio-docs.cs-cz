@@ -15,12 +15,12 @@ caps.latest.revision: 50
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 626be40ed9889ff7d16c07d511cbd060232412af
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 16bc3bf0f2cb7fa51a42986ee99976410ca7874a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105059"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439729"
 ---
 # <a name="uml-activity-diagrams-guidelines"></a>Diagramy činnosti UML: Pokyny
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -76,7 +76,7 @@ V sadě Visual Studio můžete nakreslit diagram aktivity popisující obchodní
      Začněte tím, že umístění hlavní činnosti v diagramu, jejich propojení a následným přidáním poslední detaily, jako jsou počáteční a konečné uzly.  
   
     > [!NOTE]
-    >  Stávající prvky nelze přetáhnout do diagramu z Průzkumníku modelů UML.  
+    > Stávající prvky nelze přetáhnout do diagramu z Průzkumníku modelů UML.  
   
 2. Pro připojení prvky, postupujte takto:  
   
@@ -87,7 +87,7 @@ V sadě Visual Studio můžete nakreslit diagram aktivity popisující obchodní
     3. Klikněte na cílového prvku.  
   
         > [!NOTE]
-        >  Pokud chcete použít nástroj pro více než jednou, dvakrát klikněte na nástroj v soupravě nástrojů.  
+        > Pokud chcete použít nástroj pro více než jednou, dvakrát klikněte na nástroj v soupravě nástrojů.  
   
 #### <a name="to-move-an-activity-to-another-package"></a>Aktivita přesunout do jiného balíčku  
   
@@ -98,7 +98,7 @@ V sadě Visual Studio můžete nakreslit diagram aktivity popisující obchodní
 - V **Průzkumníku modelů UML**, klikněte pravým tlačítkem na aktivitu a klikněte na tlačítko **Vyjmout**. Klikněte pravým tlačítkem na balíček a klikněte na tlačítko **vložit**.  
   
     > [!NOTE]
-    >  Aktivity se zobrazí v Průzkumníku modelů UML pouze při přidání prvního prvku do diagramu.  
+    > Aktivity se zobrazí v Průzkumníku modelů UML pouze při přidání prvního prvku do diagramu.  
   
 ## <a name="SimpleControlFlow"></a> Popis toku řízení  
  Diagram činnosti popisuje algoritmu obchodního procesu nebo softwaru jako obnáší sérii akcí. Konektor šipky ukazují, jak řízení je předáno postupně z jedné akce na další. Obvykle akci můžete spustit až po dokončení předchozí akci.  
@@ -112,7 +112,7 @@ V sadě Visual Studio můžete nakreslit diagram aktivity popisující obchodní
 - Vytvoření **akce** (1) pro každou hlavní úkol, který se provádí pomocí uživatele, systém nebo obojí ve spolupráci.  
   
   > [!NOTE]
-  >  Pokuste Popsat algoritmus s několika akce nebo proces. Můžete použít **volání akce chování** definovat všechny akce podrobněji v samostatném diagramu, jak je popsáno v [popisující dílčí aktivity se volání akce chování](#Subactivities).  
+  > Pokuste Popsat algoritmus s několika akce nebo proces. Můžete použít **volání akce chování** definovat všechny akce podrobněji v samostatném diagramu, jak je popsáno v [popisující dílčí aktivity se volání akce chování](#Subactivities).  
   
 - Ujistěte se, že název každé akce jasně Určuje, co obvykle dosahuje.  
   
@@ -133,12 +133,12 @@ V sadě Visual Studio můžete nakreslit diagram aktivity popisující obchodní
 - Použití **sloučit uzel** (5) a dejte dohromady dvě nebo více alternativní toky, které rozvětvených na **rozhodnutí uzel**.  
   
     > [!NOTE]
-    >  Měli byste použít **sloučit uzel** spojit alternativních toků, namísto spojuje toků v akci. V tomto příkladu by správná připojení z uzlu rozhodnutí přímo zpět do **zvolte položku nabídky**. Je to proto, že akce se nespustí, dokud se všechny příchozí konektory dorazily vlákna ovládacího prvku. Proto vám by měl pohromadě pouze souběžných toků v akci. Další informace najdete v tématu [souběžných toků](#Concurrent).  
+    > Měli byste použít **sloučit uzel** spojit alternativních toků, namísto spojuje toků v akci. V tomto příkladu by správná připojení z uzlu rozhodnutí přímo zpět do **zvolte položku nabídky**. Je to proto, že akce se nespustí, dokud se všechny příchozí konektory dorazily vlákna ovládacího prvku. Proto vám by měl pohromadě pouze souběžných toků v akci. Další informace najdete v tématu [souběžných toků](#Concurrent).  
   
 - Pomocí větví popisují smyčky, jak je znázorněno v příkladu.  
   
     > [!NOTE]
-    >  Zkuste vnořit smyčky strukturované způsobem, jako byste to udělali v programovém kódu. Pokud jsou popisující existující obchodní proces, to může odhalit některé příležitosti pro vylepšení ho.  
+    > Zkuste vnořit smyčky strukturované způsobem, jako byste to udělali v programovém kódu. Pokud jsou popisující existující obchodní proces, to může odhalit některé příležitosti pro vylepšení ho.  
   
 ### <a name="starting-the-activity"></a>Spuštění aktivity  
  Existují dva způsoby označení vstupních bodů do aktivity:  
@@ -182,7 +182,7 @@ V sadě Visual Studio můžete nakreslit diagram aktivity popisující obchodní
 - Použití **výstupní kód Pin** a **zadání kódu Pin**. Tato metoda umožňuje samostatně popisují výstup z jednu akci a vstupy do jiného. PIN kódy jsou stejné jako parametry v aplikaci. PIN kódy představují porty, které objekty může vstupu a opuštění akce.  
   
     > [!NOTE]
-    >  Přehled prvků, které slouží v této části najdete v tématu Data proudí části tohoto tématu naleznete v tématu [diagramy činnosti UML: Referenční dokumentace](../modeling/uml-activity-diagrams-reference.md).  
+    > Přehled prvků, které slouží v této části najdete v tématu Data proudí části tohoto tématu naleznete v tématu [diagramy činnosti UML: Referenční dokumentace](../modeling/uml-activity-diagrams-reference.md).  
   
 ### <a name="describing-data-flow-with-object-nodes"></a>Popis toku dat s uzly objektu  
  Většina toků řízení přenášejí data. Například tok výstupu z akce "Zákazník poskytuje podrobnosti o" představuje odkaz na dodací adresu.  
@@ -198,7 +198,7 @@ V sadě Visual Studio můžete nakreslit diagram aktivity popisující obchodní
  Můžete nastavit **typ** z objektu uzlu v okně Vlastnosti. Typ může být primitivní typ jako celé číslo, nebo je třída, rozhraní nebo výčet, který jste definovali v diagramu tříd. Například můžete vytvořit třídu adresu dodávky, s atributy ulice, Město a tak dále, společně s přidružení k jiné třídy, která má název zákazníka. Další informace najdete v tématu [diagramů tříd UML: Pokyny pro](../modeling/uml-class-diagrams-guidelines.md).  
   
 > [!NOTE]
->  Pokud zadáte název typu, který ještě nebyl definován, položky budou přidány pod **nespecifikované typy** v Průzkumníku modelů UML. Pokud následně definovat typ s tímto názvem v diagramu tříd, byste měli obnovit typ uzlu objektu tak, aby odkazoval na nový typ.  
+> Pokud zadáte název typu, který ještě nebyl definován, položky budou přidány pod **nespecifikované typy** v Průzkumníku modelů UML. Pokud následně definovat typ s tímto názvem v diagramu tříd, byste měli obnovit typ uzlu objektu tak, aby odkazoval na nový typ.  
   
 #### <a name="buffering-data-in-object-nodes"></a>Ukládání do vyrovnávací paměti dat v uzly objektu  
  Objekt uzlu může fungovat jako vyrovnávací paměť pro více objektů. Na následujícím obrázku zobrazuje tok řízení, že uživatel přejít [vybrat více] smyčky (1) v mnoha případech, když uzel objektu zvolené položky nabídky (2) shromažďuje volby uživatele. Nakonec po dokončení jeho výběr uživatele řízení se předá do potvrzení objednávky akce (3), která přijímá úplný seznam možností z vyrovnávací paměti zvolené položky nabídky.  
@@ -265,7 +265,7 @@ V sadě Visual Studio můžete nakreslit diagram aktivity popisující obchodní
 4. Nastavte **chování** vlastnost **akce volání chování** k odkazování na diagram volané chování.  
   
     > [!NOTE]
-    >  Diagram činnosti dílčí musí mít některé prvky v něm nebo diagramu nebudou k dispozici v rozevíracím seznamu pro **chování** vlastnost. Navíc ikonu trident nebude zobrazovat na vaší **akce volání chování** obrazce, dokud nenastavíte jeho **chování** vlastnost.  
+    > Diagram činnosti dílčí musí mít některé prvky v něm nebo diagramu nebudou k dispozici v rozevíracím seznamu pro **chování** vlastnost. Navíc ikonu trident nebude zobrazovat na vaší **akce volání chování** obrazce, dokud nenastavíte jeho **chování** vlastnost.  
   
 5. Nastavte **je synchronní** vlastnost Akce, která označuje, zda vaše aktivita čeká na dokončení volané aktivity.  
   
@@ -279,7 +279,7 @@ V sadě Visual Studio můžete nakreslit diagram aktivity popisující obchodní
 - V diagramu dílčí činnosti, vytvořte **uzel parametru aktivity** (2) pro každý vstupní a výstupní kód pin na volání akce. Dejte každého uzlu se stejným názvem jako jeho odpovídajícího špendlíku.  
   
   > [!NOTE]
-  >  Některý uzel parametr aktivity se podobá uzel objektu. Jaký typ uzlu, který chcete zkontrolovat, klikněte pravým tlačítkem na uzel a potom klikněte na **vlastnosti**. Typ uzlu je zobrazený v záhlaví okna Vlastnosti.  
+  > Některý uzel parametr aktivity se podobá uzel objektu. Jaký typ uzlu, který chcete zkontrolovat, klikněte pravým tlačítkem na uzel a potom klikněte na **vlastnosti**. Typ uzlu je zobrazený v záhlaví okna Vlastnosti.  
   
 - V diagramu činnosti dílčí nakreslete konektory, které znázorňuje tok objektů do nebo ven z každého uzlu parametru aktivity.  
   

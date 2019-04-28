@@ -8,12 +8,12 @@ ms.assetid: f7e9e4a2-5d01-4f78-b408-5be3892bd162
 caps.latest.revision: 28
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a86811bb4d87dffcf9abdacae9bca1fdac4298ee
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e01165f12bcf3b41e4ef1279d12ce99bf8f6598f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60043039"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442795"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Konfigurace testování částí s použitím souboru .runsettings
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,11 +23,11 @@ Testování částí v sadě Visual Studio můžete konfigurovat pomocí souboru
  Pokud nechcete provést žádnou zvláštní konfiguraci, není nutné *.runsettings souboru. Nejčastěji se vyskytujících slouží k přizpůsobení [pokrytí kódu](../test/customizing-code-coverage-analysis.md).  
   
 > [!NOTE]
->  **.runsettings a .testsettings**  
+> **.runsettings a .testsettings**  
 >   
->  Existují dva typy souboru pro konfigurace testů. *.runsettings se používají pro testování částí. A \*.testsettings pro [laboratorních prostředí testů](http://msdn.microsoft.com/library/0c15317e-80c6-4317-aed3-82b8e15e3901), testování výkonnosti webů a zátěžové testy a pro přizpůsobení některých typů adaptérů diagnostických dat, jako jsou adaptéry IntelliTrace a protokolu událostí.  
+> Existují dva typy souboru pro konfigurace testů. *.runsettings se používají pro testování částí. A \*.testsettings pro [laboratorních prostředí testů](http://msdn.microsoft.com/library/0c15317e-80c6-4317-aed3-82b8e15e3901), testování výkonnosti webů a zátěžové testy a pro přizpůsobení některých typů adaptérů diagnostických dat, jako jsou adaptéry IntelliTrace a protokolu událostí.  
 >   
->  V předchozích verzích sady Visual Studio až 2010, jednotky testů byly také přizpůsobit pomocí *.testsettings souborů. Můžete dál tak učinit, ale testy poběží pomaleji než při použití ekvivalentní konfiguraci v \*soubor s příponou .runsettings.  
+> V předchozích verzích sady Visual Studio až 2010, jednotky testů byly také přizpůsobit pomocí *.testsettings souborů. Můžete dál tak učinit, ale testy poběží pomaleji než při použití ekvivalentní konfiguraci v \*soubor s příponou .runsettings.  
   
 ## <a name="customizing-tests-with-a-runsettings-file"></a>Přizpůsobení testů pomocí souboru .runsettings  
   

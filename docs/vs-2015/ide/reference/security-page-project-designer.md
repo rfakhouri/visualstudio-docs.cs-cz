@@ -19,12 +19,12 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cc6c7af3732f2f96ad53651b146898b655b68fdd
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 91b438e8646a215aeed3390e87ce9c20ca923fae
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59647924"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441283"
 ---
 # <a name="security-page-project-designer"></a>Stránka Zabezpečení, návrhář projektu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ ms.locfileid: "59647924"
  Určuje, zda je povoleno nastavení zabezpečení v době návrhu. Pokud tato možnost vybrána, všechny ostatní možnosti na **zabezpečení** stránky nejsou k dispozici.  
   
 > [!NOTE]
->  Když publikujete aplikaci s použitím **publikovat** průvodce, tato možnost je automaticky povolen.  
+> Když publikujete aplikaci s použitím **publikovat** průvodce, tato možnost je automaticky povolen.  
   
  Když vyberete tuto možnost, budete mít možnost výběru mezi dvěma přepínací tlačítka: **Toto je aplikace s úplným vztahem důvěryhodnosti** nebo **Toto je aplikace s částečnou důvěryhodností**.  
   

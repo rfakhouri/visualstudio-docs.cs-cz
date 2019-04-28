@@ -14,12 +14,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 63a2e1b98baa61ef0a83c1de65653dd2e57a8b2c
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
-ms.translationtype: MT
+ms.openlocfilehash: d3f842d45df1525cb3f736019eeec52dd65b67aa
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54755461"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443733"
 ---
 # <a name="managing-assembly-and-manifest-signing"></a>Správa sestavení a podepsání manifestu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Podepisování silným názvem poskytuje softwarová součást globálně jedine
   
  Informace o podepisování sestavení v projektech Visual Basic a C# najdete v tématu [vytvoření a použití sestavení](http://msdn.microsoft.com/library/ffbf6d9e-4a88-4a8a-9645-4ce0ee1ee5f9).  
   
- Informace o podepisování sestavení v projektech Visual C++, naleznete v tématu [sestavení se silným názvem (podepisování sestavení) (C + +/ CLI)](http://msdn.microsoft.com/library/c337cd3f-e5dd-4c6f-a1ad-437e85dba1cc).  
+ Informace o podepisování sestavení ve Vizuálu C++ projektů, naleznete v tématu [sestavení se silným názvem (podepisování sestavení) (C++vyhodnocovací)](http://msdn.microsoft.com/library/c337cd3f-e5dd-4c6f-a1ad-437e85dba1cc).  
   
 ## <a name="asset-types-and-signing"></a>Typy prostředků a podepisování  
  Můžete podepisovat manifesty aplikace a sestavení .NET. Patří mezi ně například:  
@@ -59,7 +59,7 @@ Podepisování silným názvem poskytuje softwarová součást globálně jedine
  Zadejte soubor klíče. Pokud budete chtít vytvořit nový soubor klíče, mějte na paměti, že se vždy vytváří nové soubory klíčů ve formátu .pfx. Budete potřebovat jméno a heslo pro nový soubor.  
   
 > [!WARNING]
->  Vždy byste měli chránit vašemu souboru s klíčem s heslem někdo zabránit jeho použití. Klíče můžete zabezpečit také pomocí zprostředkovatele nebo úložiště certifikátů.  
+> Vždy byste měli chránit vašemu souboru s klíčem s heslem někdo zabránit jeho použití. Klíče můžete zabezpečit také pomocí zprostředkovatele nebo úložiště certifikátů.  
   
  Může také odkazovat na klíč, který jste už vytvořili. Další informace o vytváření klíčů najdete v tématu [jak: Vytvoření páru veřejného a privátního klíče](http://msdn.microsoft.com/library/05026813-f3bd-4d7c-9e0b-fc588eb3d114).  
   

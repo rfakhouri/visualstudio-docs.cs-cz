@@ -11,12 +11,12 @@ ms.assetid: ffc89814-a7df-44fc-aef5-dd3dfeb28a9b
 caps.latest.revision: 49
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d93d14383ec755f14619f4d126c7f676acafc6c2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6c93851445ff5c2c85bdfd18bf3a23270fdbc4a6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60070105"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445949"
 ---
 # <a name="unit-tests-for-generic-methods"></a>Testování částí pro obecné metody
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -117,7 +117,7 @@ public void SizeOfLinkedListTest()
 ```  
   
 > [!NOTE]
->  Pokaždé, když SizeOfLinkedListTest testovací běhy, jeho TestHelper metoda je volána dvakrát. Příkaz kontrolní výraz se musí vyhodnotit na hodnotu true. pokaždé, když pro test proběhl úspěšně. Pokud se test nezdaří, nemusí být jasné, jestli volání, které zadané `<int>` nebo volání, které zadaná `<char>` způsobil, že k selhání. Odpovědi, může prozkoumat zásobník volání, nebo můžete nastavit zarážky v testovací metodě a ladění při spouštění testu. Další informace najdete v tématu [jak: Ladění během zpracování testu v řešení technologie ASP.NET](http://msdn.microsoft.com/library/de4d7aa1-4a1e-467e-a19b-4a85ec245b8b).  
+> Pokaždé, když SizeOfLinkedListTest testovací běhy, jeho TestHelper metoda je volána dvakrát. Příkaz kontrolní výraz se musí vyhodnotit na hodnotu true. pokaždé, když pro test proběhl úspěšně. Pokud se test nezdaří, nemusí být jasné, jestli volání, které zadané `<int>` nebo volání, které zadaná `<char>` způsobil, že k selhání. Odpovědi, může prozkoumat zásobník volání, nebo můžete nastavit zarážky v testovací metodě a ladění při spouštění testu. Další informace najdete v tématu [jak: Ladění během zpracování testu v řešení technologie ASP.NET](http://msdn.microsoft.com/library/de4d7aa1-4a1e-467e-a19b-4a85ec245b8b).  
   
 ### <a name="TypeConstraintNotSatisfied"></a> Příklad 2: Pomocí omezení typu  
  Tento příklad ukazuje testování částí pro obecné metody, která používá omezení typu, který není splněná. První část ukazuje kód z kódu v rámci testovacího projektu. Omezení typu je zvýrazněn.  

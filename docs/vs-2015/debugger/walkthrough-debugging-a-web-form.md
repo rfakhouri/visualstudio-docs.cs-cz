@@ -23,12 +23,12 @@ caps.latest.revision: 34
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ad6fa498fe9b89854f7fe3c74af9636b5b59e47f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 56a11c24ad8a38cc837659ac063987573c0ba492
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60053816"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444305"
 ---
 # <a name="walkthrough-debugging-a-web-form"></a>Návod: Ladění webového formuláře
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "60053816"
 Kroky v tomto názorném postupu ukazují, jak ladit [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] webovou aplikaci, označované také jako webového formuláře. To ukazuje, jak spustit a zastavit provádění, nastavit zarážky a zkontrolovat proměnné v **Watch** okna.  
   
 > [!NOTE]
->  K dokončení tohoto návodu, musí mít oprávnění správce na počítači serveru. Ve výchozím nastavení [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] procesu, aspnet_wp.exe nebo w3wp.exe, spouští jako [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] procesu. Chcete-li ladit [!INCLUDE[vstecasp](../includes/vstecasp-md.md)], musí mít oprávnění správce na počítači kde [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] ji spustí. Další informace najdete v tématu [požadavky na systém](../debugger/aspnet-debugging-system-requirements.md).  
+> K dokončení tohoto návodu, musí mít oprávnění správce na počítači serveru. Ve výchozím nastavení [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] procesu, aspnet_wp.exe nebo w3wp.exe, spouští jako [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] procesu. Chcete-li ladit [!INCLUDE[vstecasp](../includes/vstecasp-md.md)], musí mít oprávnění správce na počítači kde [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] ji spustí. Další informace najdete v tématu [požadavky na systém](../debugger/aspnet-debugging-system-requirements.md).  
   
  Dialogová okna a příkazy nabídek, které se zobrazí mohou lišit od těch popsaných v nápovědě v závislosti na aktivních nastaveních nebo edici. Chcete-li změnit nastavení, zvolte **nastavení importu a exportu** na **nástroje** nabídky. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   

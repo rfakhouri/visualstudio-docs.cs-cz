@@ -19,12 +19,12 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 95e0d070bb69bd6918025298f865236a382d16e0
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: bf2882120f2e4c27e33b105585ba56261122055d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59669039"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445654"
 ---
 # <a name="usingtask-element-msbuild"></a>UsingTask – element (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -73,7 +73,7 @@ Mapuje na úkol, který se odkazuje v [úloh](../msbuild/task-element-msbuild.md
  Proměnné prostředí, vlastnosti příkazového řádku a vlastností na úrovni projektu může být odkazováno kdekoli v `UsingTask` element, pokud se zobrazí v souboru projektu buď explicitně nebo importovaného souboru projektu. Další informace najdete v tématu [úlohy](../msbuild/msbuild-tasks.md).  
   
 > [!NOTE]
->  Na úrovni projektu vlastnosti nemají význam, pokud `UsingTask` element pochází z jednoho ze souborů .tasks globálně zaregistrovaných pomocí modulu MSBuild. Vlastnosti na úrovni projektu nejsou globální nástroji MSBuild.  
+> Na úrovni projektu vlastnosti nemají význam, pokud `UsingTask` element pochází z jednoho ze souborů .tasks globálně zaregistrovaných pomocí modulu MSBuild. Vlastnosti na úrovni projektu nejsou globální nástroji MSBuild.  
   
  V MSBuild 4.0 je možné pomocí úloh načíst ze souborů .overridetask.  
   

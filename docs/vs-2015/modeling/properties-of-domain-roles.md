@@ -9,12 +9,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2e9cef8726ad690508948ac0a9878df1bd85c96e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: b78c409a761a98439cbbbfdf088e052eca745f32
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54755103"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444463"
 ---
 # <a name="properties-of-domain-roles"></a>Vlastnosti rolí domény
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ Vlastnosti v následující tabulce jsou spojeny s rolí domény. Informace o ro
 |Zobrazovaný název vlastnosti|Název, který se zobrazí ve vygenerovaném návrháři u vlastnosti vygenerované role.|Upravená hodnota vlastností názvu vlastnosti.|  
   
 > [!NOTE]
->  Výchozí hodnota zobrazovaného názvu je založena na hodnotě přidružené vlastnosti vložením mezer před každý znak velká písmena, která předchází znak malé a, který není za nímž následuje jiný velké písmeno.  
+> Výchozí hodnota zobrazovaného názvu je založena na hodnotě přidružené vlastnosti vložením mezer před každý znak velká písmena, která předchází znak malé a, který není za nímž následuje jiný velké písmeno.  
   
 ## <a name="see-also"></a>Viz také  
  [Vlastnosti vztahů domény](../modeling/properties-of-domain-relationships.md)

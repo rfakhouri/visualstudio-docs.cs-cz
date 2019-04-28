@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 71d22bb6210bb515941ca00ebb8b8655a6c089e0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 90da60cb904ba6e3db2be3805256fcf4eb9122ee
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56639918"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444346"
 ---
 # <a name="localize-sharepoint-solutions"></a>Lokalizace řešení služby SharePoint
 
@@ -31,7 +31,7 @@ ms.locfileid: "56639918"
  Chcete-li lokalizovat řešení, odeberte z kódu pevně zakódované řetězce a přidáte je do souborů prostředků. Soubor prostředků je [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]– na základě souboru *RESX* rozšíření. Soubor prostředků obsahuje přeložené verze řetězců používané v rámci vašeho řešení. Další informace najdete v tématu [prostředky v aplikacích](http://go.microsoft.com/fwlink/?LinkID=155844).
 
 > [!NOTE]
->  Přidejte pouze prostředky řetězců do souborů prostředků řešení služby SharePoint. Přestože Editor prostředků umožňuje přidávat neřetězcové prostředky, neřetězcové prostředky nelze nasazovat do Sharepointu.
+> Přidejte pouze prostředky řetězců do souborů prostředků řešení služby SharePoint. Přestože Editor prostředků umožňuje přidávat neřetězcové prostředky, neřetězcové prostředky nelze nasazovat do Sharepointu.
 
 ## <a name="resource-files"></a>Soubory prostředků
  Existují tři typy souborů prostředků: výchozí, jazykově neutrální a specifické pro jazyk.
@@ -76,7 +76,7 @@ $Resources:String ID
  Nastavte **typ nasazení** vlastnosti každého souboru prostředků na **AppGlobalResource**. To způsobí, že soubory prostředků pro nasazení do složky App_GlobalResources, kde jsou k dispozici pro všechny stránky ASPX a ovládací prvky v řešení. Složka App_GlobalResources je umístěna v C:\inetpub\wwwroot\wss\VirtualDirectories\\< číslo portu\>\App_GlobalResources.
 
 > [!NOTE]
->  Pokud používáte jiné globální soubory prostředků, přesuňte je do složky položky projektu, aby vlastnost typ nasazení a další vlastnosti specifické pro SharePoint.
+> Pokud používáte jiné globální soubory prostředků, přesuňte je do složky položky projektu, aby vlastnost typ nasazení a další vlastnosti specifické pro SharePoint.
 
  Soubory prostředků značek ASPX lze také použít k lokalizaci kódu. Pokud používáte prostředky k lokalizaci kódu kromě značek ASPX, nechte akce sestavení vlastnost nastavení každého souboru jako vložený prostředek způsobit, že zdroj kompiloval do satelitního sestavení. Ale pokud používáte pouze k lokalizaci značky soubory prostředků, můžete volitelně změnit akce sestavení na obsah, který zabránit souboru v kompilaci do sestavení hlavní aplikace.
 

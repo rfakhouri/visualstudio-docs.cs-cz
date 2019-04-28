@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c2d06098d1643f4c9b5e64206cdf94362a2c97b4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8697a49c57840d358eeaa597fe984b6671958b09
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040143"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446962"
 ---
 # <a name="ribbon-overview"></a>Přehled pásu karet
   Na pásu karet je způsob, jak uspořádat příkazy související tak, aby byly snadněji najít. Příkazy se zobrazují jako ovládací prvky na pásu karet. Ovládací prvky jsou uspořádány do *skupiny* podél horizontální pruh v horním okrajem jeho okna aplikace. Související skupiny jsou uspořádány na kartách.
@@ -49,7 +49,7 @@ ms.locfileid: "60040143"
 - Přidáte vlastní skupiny na vlastní nebo integrovanou kartu.
 
   > [!NOTE]
-  >  Předdefinované karty nebo skupina je ten, který je už na pásu karet aplikace Microsoft Office. Například **Data** karta je integrovanou kartou v aplikaci Excel. **Připojení** skupina je předdefinovaná skupina na **Data** kartu.
+  > Předdefinované karty nebo skupina je ten, který je už na pásu karet aplikace Microsoft Office. Například **Data** karta je integrovanou kartou v aplikaci Excel. **Připojení** skupina je předdefinovaná skupina na **Data** kartu.
 
 - Přidání vlastních ovládacích prvků do vlastní skupiny.
 
@@ -96,7 +96,7 @@ ms.locfileid: "60040143"
 - Vytváření pásů karet pro aplikaci Outlook *kontroly*. Další informace najdete v tématu [přizpůsobte pás karet pro aplikaci Outlook](../vsto/customizing-a-ribbon-for-outlook.md).
 
     > [!NOTE]
-    >  Je kontrola je okno, které se otevře, když uživatelé provedou určité úlohy, jako je například vytváření e-mailové zprávy.
+    > Je kontrola je okno, které se otevře, když uživatelé provedou určité úlohy, jako je například vytváření e-mailové zprávy.
 
 - Vyberte, které pásu karet za běhu zobrazit.
 
@@ -106,7 +106,7 @@ ms.locfileid: "60040143"
  Vyberte pás karet zobrazíte za běhu přepsat `CreateRibbonExtensibilityObject` metoda ve `ThisAddin`, `ThisWorkbook`, nebo `ThisDocument` třídu vašeho projektu a vraťte se na pásu karet, který chcete zobrazit. Následující příklad zkontroluje hodnotu vlastnosti pole s názvem `myCondition` a vrátí odpovídající pásu karet.
 
 > [!NOTE]
->  Syntaxe používané v tomto příkladu vrátí pás karet, který byl vytvořen pomocí **pás karet (vizuální návrhář)** položky. Syntaxe pro vrácení pásu karet, který je vytvořen pomocí **pásu karet (XML)** položky se mírně liší. Další informace o vrácení **pásu karet (XML)** položky, naleznete v tématu [kódu XML pásu karet](../vsto/ribbon-xml.md).
+> Syntaxe používané v tomto příkladu vrátí pás karet, který byl vytvořen pomocí **pás karet (vizuální návrhář)** položky. Syntaxe pro vrácení pásu karet, který je vytvořen pomocí **pásu karet (XML)** položky se mírně liší. Další informace o vrácení **pásu karet (XML)** položky, naleznete v tématu [kódu XML pásu karet](../vsto/ribbon-xml.md).
 
  Přidejte následující kód:
 

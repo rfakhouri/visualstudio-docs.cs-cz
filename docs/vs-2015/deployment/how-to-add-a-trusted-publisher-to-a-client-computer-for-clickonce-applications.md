@@ -16,12 +16,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b8c2bc30814af9cdc6181d08b313df20146f855e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7129d8de5e37b24304b7f1cbf862e4cd299cdf72
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60080946"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442209"
 ---
 # <a name="how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications"></a>Postupy: Přidání důvěryhodného vydavatele na klientský počítač pro aplikace ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Pomocí nasazení důvěryhodné aplikace, můžete nakonfigurovat klientské po
  Příkazy, které můžete použít mírně lišit v závislosti na tom, jestli certifikační autorita (CA), která vydala certifikát je součástí klienta pro důvěryhodného kořenového. Pokud klientský počítač Windows je součástí domény, bude obsahovat, v seznamu certifikačních autorit, které jsou považovány za důvěryhodných kořenových certifikátů. Tento seznam je obvykle nakonfigurované správcem systému. Pokud váš certifikát byl vydán pomocí jedné z těchto důvěryhodných kořenových certifikátů nebo Certifikační autoritou, který je zřetězen do jednoho z těchto důvěryhodných kořenových certifikátů, můžete přidat certifikát do úložiště důvěryhodných kořenových klienta. Pokud na druhé straně certifikát nebyl vydán pomocí jedné z těchto důvěryhodných kořenových certifikátů, musíte přidat certifikát do úložiště důvěryhodných kořenových klienta i úložiště pro důvěryhodného vydavatele.  
   
 > [!NOTE]
->  Je nutné přidat certifikáty tímto způsobem na každém klientském počítači, ke které máte v úmyslu nasadit [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikaci, která vyžaduje zvýšenou úroveň oprávnění. Certifikáty se přidat buď ručně, nebo prostřednictvím aplikace, kterou nasadíte na klienty. Je potřeba jenom nastavení těchto počítačů jednou, po které můžete nasadit libovolný počet [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikace podepsané stejným certifikátem.  
+> Je nutné přidat certifikáty tímto způsobem na každém klientském počítači, ke které máte v úmyslu nasadit [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikaci, která vyžaduje zvýšenou úroveň oprávnění. Certifikáty se přidat buď ručně, nebo prostřednictvím aplikace, kterou nasadíte na klienty. Je potřeba jenom nastavení těchto počítačů jednou, po které můžete nasadit libovolný počet [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikace podepsané stejným certifikátem.  
   
  Můžete také přidat certifikát do úložiště prostřednictvím kódu programu pomocí <xref:System.Security.Cryptography.X509Certificates.X509Store> třídy.  
   

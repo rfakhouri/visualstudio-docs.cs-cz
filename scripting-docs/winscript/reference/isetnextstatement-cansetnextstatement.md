@@ -16,11 +16,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: eb65faaf107c42b44201ea18c1150f8093b1654c
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58158942"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62786612"
 ---
 # <a name="isetnextstatementcansetnextstatement"></a>ISetNextStatement::CanSetNextStatement
 Tato metoda určuje, zda lze nastavit bod provádění, která určuje dalšího příkazu ke spuštění kódu, do zadaného umístění.  
@@ -44,7 +44,7 @@ HRESULT CanSetNextStatement(
 ## <a name="return-value"></a>Návratová hodnota  
  Metoda vrátí `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
   
-|Hodnota|Popis|  
+|Value|Popis|  
 |-----------|-----------------|  
 |`S_OK`|Ke kontextu zadaný kód je možné aktualizovat následující příkaz.|  
 |`S_FALSE`|Další příkaz nejde aktualizovat na kontext zadaného kódu.|  

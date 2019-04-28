@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: alexhomer1
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 716e6141d9f5ae76773a47b81ae54f5d7b70a9ec
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4da615971004cb499fb6bab414517474c2bf6265
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104177"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445957"
 ---
 # <a name="unit-testing-a-visual-c-dll-for-store-apps"></a>Testování knihovny DLL Visual C++ pro aplikace pro Store
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -220,7 +220,7 @@ Toto téma popisuje jeden ze způsobů vytvoření testů jednotek pro knihovny 
     ```  
   
     > [!TIP]
-    >  Doporučujeme neměňte testy, které prošly. Místo toho přidat nový test, aktualizovat kód tak, aby byl test úspěšný a pak přidejte jiného testu, a tak dále.  
+    > Doporučujeme neměňte testy, které prošly. Místo toho přidat nový test, aktualizovat kód tak, aby byl test úspěšný a pak přidejte jiného testu, a tak dále.  
     >   
     >  Pokud uživatelé změní své požadavky, zakážete testy, které už nejsou správné. Psát nové testy a jejich fungování postupně, přírůstkové stejně.  
   
@@ -231,7 +231,7 @@ Toto téma popisuje jeden ze způsobů vytvoření testů jednotek pro knihovny 
      ![Nezdaří RangeTest](../test/media/ute-cpp-testexplorer-rangetest-fail.png "UTE_Cpp_TestExplorer_RangeTest_Fail")  
   
     > [!TIP]
-    >  Ověřte, že každý test selže okamžitě poté, co jste ho napsali. To umožňuje vyhnout se snadno chybu zápisu test, který se nikdy selže.  
+    > Ověřte, že každý test selže okamžitě poté, co jste ho napsali. To umožňuje vyhnout se snadno chybu zápisu test, který se nikdy selže.  
   
 4. Vylepšete testovaného kódu tak, aby nový test byl úspěšný. Přidejte následující text do **RooterLib.cpp**:  
   
@@ -259,7 +259,7 @@ Toto téma popisuje jeden ze způsobů vytvoření testů jednotek pro knihovny 
      Oba testy jsou úspěšné.  
   
 > [!TIP]
->  Vývoj kódu tak, že přidáte testy jeden po druhém. Ujistěte se, že všechny testy jsou úspěšné po každé iteraci.  
+> Vývoj kódu tak, že přidáte testy jeden po druhém. Ujistěte se, že všechny testy jsou úspěšné po každé iteraci.  
   
 ## <a name="BKMK_Debug_a_failing_test"></a> Ladit test chybou  
   
@@ -346,6 +346,6 @@ Toto téma popisuje jeden ze způsobů vytvoření testů jednotek pro knihovny 
 2. Zvolte **spustit všechny** testovací metoda refaktorovaný a ujistěte se, že nebyla zavedena regrese.  
   
     > [!TIP]
-    >  Se spouští stabilní sada testů jednotek dobré poskytuje jistotu, že nebyly zavedeny chyby při změně kódu.  
+    > Se spouští stabilní sada testů jednotek dobré poskytuje jistotu, že nebyly zavedeny chyby při změně kódu.  
     >   
     >  Zachovat refaktorování odděleně od jiných změn.

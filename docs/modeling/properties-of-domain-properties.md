@@ -9,18 +9,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 310a12b51987d9a324be24757ba3346b8b0303ee
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MT
+ms.openlocfilehash: 23bac93b6e5892e8a4d4680e6829240fed9a03d8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927851"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443123"
 ---
 # <a name="properties-of-domain-properties"></a>Vlastnosti vlastností domény
 A *doménovou vlastnost* je funkce, které může obsahovat hodnotu prvku modelu. Například `Person` doménová třída může mít vlastnosti `Name` a `BirthDate`. V definici DSL vlastnosti domény patří do domény pole třídy v diagramu a v rámci doménové třídy v Průzkumníku DSL. Další informace najdete v tématu [jak se definuje jazyk specifický pro doménu](../modeling/how-to-define-a-domain-specific-language.md).
 
 > [!NOTE]
->  Slovo "vlastnosti" má dvě použití. A *doménovou vlastnost* je funkce, které definujete na doménovou třídu. Naopak mají mnoho prvků DSL *vlastnosti*, které jsou uvedeny v **vlastnosti** okno v definici DSL. Například každá vlastnost domény má sadu vlastností, které jsou popsány v tomto tématu.
+> Slovo "vlastnosti" má dvě použití. A *doménovou vlastnost* je funkce, které definujete na doménovou třídu. Naopak mají mnoho prvků DSL *vlastnosti*, které jsou uvedeny v **vlastnosti** okno v definici DSL. Například každá vlastnost domény má sadu vlastností, které jsou popsány v tomto tématu.
 
  V době běhu, když uživatel vytvoří instance třídy domény, hodnoty vlastnosti domény můžete zobrazit v okně Vlastnosti a lze zobrazit na tvary.
 

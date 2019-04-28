@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6f793675d40c87e4c64c2a83d37327f5222d8d1f
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: 8a84640f020a1ff255b8c7e5dd753752e0d310a7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58144885"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446879"
 ---
 # <a name="idisperrorgetsource"></a>IDispError::GetSource
 Vrátí závislá na jazyku programový identifikátor pro třídu nebo aplikace, která vyvolala chybu.  
@@ -42,7 +42,7 @@ HRESULT GetSource(
 ## <a name="return-value"></a>Návratová hodnota  
  Metoda vrátí `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
   
-|Hodnota|Popis|  
+|Value|Popis|  
 |-----------|-----------------|  
 |`S_OK`|Metoda byla úspěšná.|  
   
@@ -50,7 +50,7 @@ HRESULT GetSource(
  Tato metoda se používá k určení třídy nebo aplikace, ve kterém k výjimce došlo. Programový identifikátor, mohou být vráceny v jazyce určeném zadat při vyvolání identifikátor národního prostředí (LCID).  
   
 > [!NOTE]
->  Tato metoda není implementována.  
+> Tato metoda není implementována.  
   
 ## <a name="see-also"></a>Viz také  
  [IDispError – rozhraní](../../winscript/reference/idisperror-interface.md)

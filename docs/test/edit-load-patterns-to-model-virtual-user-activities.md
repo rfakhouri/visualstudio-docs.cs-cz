@@ -10,12 +10,12 @@ ms.assetid: 0ba0363b-7f50-4bde-a919-0e3bce7bc115
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b09ebf838b33eaddff485e179209a564ae81807a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 299cca5249872b1be7f20cf4fca8c0dcd563794c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59657883"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62784243"
 ---
 # <a name="edit-load-patterns-to-model-virtual-user-activities"></a>Úpravy vzorů zatížení pro model aktivity virtuálního uživatele
 
@@ -82,7 +82,7 @@ Vzor zatížení je součástí scénáře. Scénáře, spolu s jejich vzory zat
 |Property Group|Vlastnost|Hodnota|
 |-|--------------|-|
 |Čítač výkonu|Kategorie|Procesor|
-|Čítač výkonu|Počítač|ContosoServer1|
+|Čítač výkonu|Computer|ContosoServer1|
 |Čítač výkonu|Čítač|% Času procesoru|
 |Čítač výkonu|instance|_Celkem|
 |Cílový rozsah čítače výkonu|Špičkové|90|
@@ -128,27 +128,27 @@ Vzor zatížení je součástí scénáře. Scénáře, spolu s jejich vzory zat
 
 ### <a name="to-change-the-load-pattern"></a>Chcete-li změnit vzor zatížení
 
-1.  Otevřete zátěžový test.
+1. Otevřete zátěžový test.
 
-2.  V **editoru zátěžového testu**v *scénáře* složky, rozbalte scénář, kterou chcete upravit vzoru zatížení pro a vyberete vzorek zatížení pro scénář.
+2. V **editoru zátěžového testu**v *scénáře* složky, rozbalte scénář, kterou chcete upravit vzoru zatížení pro a vyberete vzorek zatížení pro scénář.
 
     > [!NOTE]
     > Text uzlu vzor zatížení, který se zobrazí ve stromové struktuře scénář zátěžového testu, odráží profil zatížení, který jste si zvolili při vytváření zátěžového testu. Může být buď **konstantní zatížení profilu** nebo **profilu zatížení kroku**.
 
-3.  Stisknutím klávesy **F4** zobrazíte **vlastnosti** okna.
+3. Stisknutím klávesy **F4** zobrazíte **vlastnosti** okna.
 
      **Vzor zatížení** a **parametry** kategorií se zobrazují v **vlastnosti** okna.
 
-4.  (Volitelné) Změnit **vzor** vlastnost **vzor zatížení** kategorie.
+4. (Volitelné) Změnit **vzor** vlastnost **vzor zatížení** kategorie.
 
      Vaše volby pro **vzor** jsou vlastnosti **krok**, **konstantní**, a **Cílově**. Další informace o typech vzor zatížení, najdete v části [zadat počet virtuálních uživatelů se vzorci zatížení ve scénáři testu zatížení](../test/edit-load-patterns-to-model-virtual-user-activities.md).
 
-5.  (Volitelné) V **parametry** kategorie, změňte hodnoty.
+5. (Volitelné) V **parametry** kategorie, změňte hodnoty.
 
     > [!NOTE]
     > Hodnoty můžete nastavit pro **parametry** se liší podle hodnoty, který byl vybrán pro **vzor** vlastnost.
 
-6.  Po dokončení změn vlastností zvolte **Uložit** na **souboru** nabídky. Můžete spustit zátěžový test pomocí nového vzoru zatížení.
+6. Po dokončení změn vlastností zvolte **Uložit** na **souboru** nabídky. Můžete spustit zátěžový test pomocí nového vzoru zatížení.
 
 ## <a name="see-also"></a>Viz také:
 

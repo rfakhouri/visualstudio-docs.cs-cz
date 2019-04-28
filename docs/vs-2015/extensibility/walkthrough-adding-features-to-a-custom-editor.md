@@ -10,12 +10,12 @@ ms.assetid: bfe083b6-3e35-4b9c-ad4f-b30b9ff412a5
 caps.latest.revision: 39
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 42d4209c691d052a1715ae9cfbab5b1e576848cd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 71ecff799f0da84ca47456467e190edcf95b0a15
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071431"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442301"
 ---
 # <a name="walkthrough-adding-features-to-a-custom-editor"></a>Návod: Přidání funkcí do vlastního editoru
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +51,7 @@ Po vytvoření vlastního editoru můžete k němu přidat další funkce.
     2. Chcete-li reagovat na změny externí soubor, implementovat <xref:Microsoft.VisualStudio.Shell.Interop.IVsFileChangeEx> a <xref:Microsoft.VisualStudio.Shell.Interop.IVsDocDataFileChangeControl> na váš editor dokumentu datový objekt.  
   
         > [!NOTE]
-        >  Volání `QueryService` na <xref:Microsoft.VisualStudio.Shell.Interop.SVsFileChangeEx> k získání ukazatele na `IVsFileChangeEx`.  
+        > Volání `QueryService` na <xref:Microsoft.VisualStudio.Shell.Interop.SVsFileChangeEx> k získání ukazatele na `IVsFileChangeEx`.  
   
 7. Koordinovat událostí úpravy dokumentu pomocí správy zdrojového kódu. Použijte následující postup:  
   
@@ -138,7 +138,7 @@ Po vytvoření vlastního editoru můžete k němu přidat další funkce.
      <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponent>  
   
     > [!NOTE]
-    >  `IOleInPlaceComponent` Rozhraní se používá pro zabránění OLE 2 slučování nabídek.  
+    > `IOleInPlaceComponent` Rozhraní se používá pro zabránění OLE 2 slučování nabídek.  
   
      Vaše `IOleCommandTarget` implementace zpracovává příkazy, jako **Vyjmout**, **kopírování**, a **vložit**. Při implementaci `IOleCommandTarget`, rozhodněte, zda editor vyžaduje svou vlastní souboru .vsct definovat vlastní struktury příkaz nabídky nebo pokud můžete implementovat standardní příkazy určené [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Obvykle editory použít a rozšířit rozhraní IDE nabídky a definovat jejich vlastní panely nástrojů. Často je ale nutné definovat vlastní specifické příkazy kromě pomocí rozhraní IDE sady standardních příkazů editoru. K tomuto účelu musí deklarovat editor standardní příkazy používá a v souboru .vsct definovat nové příkazy, kontextové nabídky, nejvyšší úrovně nabídky a panely nástrojů. Pokud vytvoříte místní aktivace editoru, pak implementovat <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponent> a definovat nabídek a panelů nástrojů editoru v souboru .vsct namísto použití OLE 2 slučování nabídek.  
   
@@ -156,4 +156,4 @@ Po vytvoření vlastního editoru můžete k němu přidat další funkce.
   
 ## <a name="see-also"></a>Viz také  
  [Přispívání do modelu automatizace](../extensibility/internals/contributing-to-the-automation-model.md)   
- [Postupy: Poskytuje kontext pro editory](../extensibility/how-to-provide-context-for-editors.md)
+ [Postupy: Poskytnutí kontextu pro editory](../extensibility/how-to-provide-context-for-editors.md)

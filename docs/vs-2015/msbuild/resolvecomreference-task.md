@@ -19,12 +19,12 @@ caps.latest.revision: 29
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 830d2d7d077b65e205536e1b10579fe64633b21a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: fc9ca34d8b8afc01787db594ffba5a1a36ec190e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59664989"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439346"
 ---
 # <a name="resolvecomreference-task"></a>ResolveComReference – úloha
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,7 +75,7 @@ Přebírá seznam názvů knihoven typů nebo souborů .tlb a řeší tyto kniho
 |`WrapperTool`|Nepovinná položka metadat.<br /><br /> Určuje, že nástrojem obálky, který se používá ke generování sestavení obálky pro tuto knihovnu typů. Pokud není zadána tato metadata položky, úkol používá výchozí nástroj obálky "tlbimp". Jsou k dispozici, malá a velká písmena výběr typelibs:<br /><br /> -   `Primary`: Nástroj obálky, když chcete použít pro komponenty modelu COM již generované primární definiční sestavení. Použijete-li tento nástroj obálky, nezadávejte obálky výstupní adresář, protože, které způsobí selhání úlohy.<br />-   `TLBImp`: Při generování sestavení vzájemné spolupráce pro komponenty modelu COM, použijte tento nástroj obálky.<br />-   `AXImp`: Nástroj obálky, když chcete generování sestavení vzájemné spolupráce pro ovládací prvek ActiveX.|  
   
 > [!NOTE]
->  Další informace, které poskytnete k jednoznačné identifikaci knihovny typů, větší možnost, že úloha se přeloží správný soubor na disku.  
+> Další informace, které poskytnete k jednoznačné identifikaci knihovny typů, větší možnost, že úloha se přeloží správný soubor na disku.  
   
 ## <a name="remarks"></a>Poznámky  
  Kromě výše uvedených parametrů zdědí tento úkol parametry ze <xref:Microsoft.Build.Utilities.Task> třídy. Seznam těchto dalších parametrů a jejich popisy najdete v tématu [Třída Base úlohy](../msbuild/task-base-class.md).  

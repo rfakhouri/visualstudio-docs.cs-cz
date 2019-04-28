@@ -12,12 +12,12 @@ ms.assetid: 9118eaa4-0453-4dc5-9e16-c7062d254869
 caps.latest.revision: 31
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 42b5df2f6d3ff0958784463c5c48d457597945a5
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
-ms.translationtype: MT
+ms.openlocfilehash: 3c6c7bb6d149281048d281cb7af13fe51d75ffd5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57873522"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443894"
 ---
 # <a name="inside-the-visual-studio-sdk"></a>Práce se sadou Visual Studio SDK
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -90,7 +90,7 @@ Zobecněný zobrazení architektury v sadě Visual Studio
   
  Projekty mohou také shromáždit do jediného řešení, což je seskupení jednoho nebo více projektů, které vzájemně spolupracují na vytvoření aplikace. Projekt a stavové informace, které se vztahují k řešení je uložené v dva soubory řešení, soubor založený na textu řešení (.sln) a soubor binární řešení uživatelské možnosti (.suo). Tyto soubory jsou podobné soubory skupiny (.vbg), které byly použity v dřívějších verzích [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)], a pracovní prostor (.dsw) a uživatelské možnosti (.opt) soubory, které byly použity v dřívějších verzích [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)].  
   
- Další informace najdete v tématu [projekty](../../extensibility/internals/projects.md) a [řešení](../../extensibility/internals/solutions.md).  
+ Další informace najdete v tématu [projekty](../../extensibility/internals/projects.md) a [řešení](../../extensibility/internals/solutions-overview.md).  
   
 ## <a name="project-and-item-templates"></a>Šablony projektů a položek  
  Visual Studio obsahuje šablony projektů předdefinované a šablony položek projektu. Můžete také vytvořit vlastní šablony nebo získání šablony z komunity a integrovat je do sady Visual Studio. [Galerie kódů MSDN](https://code.msdn.microsoft.com/site/search?query=visual%20studio) je místo, kde lze získat šablony a rozšíření.  
@@ -98,7 +98,7 @@ Zobecněný zobrazení architektury v sadě Visual Studio
  Šablony obsahují projekt strukturu a základní soubory, které jsou nutné k vytvoření určitého druhu aplikace, ovládací prvek, knihovny nebo třídy. Pokud chcete k vývoji softwaru, který se podobá některou ze šablon, vytvořit projekt, který je založen na šabloně a potom upravte soubory v daném projektu.  
   
 > [!NOTE]
->  Tato architektura šablony není podporován pro [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] projekty. Informace o tom, jak vytvořit [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] šablony projektů, naleznete v tématu [návrhu průvodce](http://msdn.microsoft.com/library/a7c0be7e-9297-4fed-83e3-5645c896d56b).  
+> Tato architektura šablony není podporován pro [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] projekty. Informace o tom, jak vytvořit [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] šablony projektů, naleznete v tématu [návrhu průvodce](http://msdn.microsoft.com/library/a7c0be7e-9297-4fed-83e3-5645c896d56b).  
   
  Další informace najdete v tématu [přidání projektů a šablon položek projektu](../../extensibility/internals/adding-project-and-project-item-templates.md).  
   

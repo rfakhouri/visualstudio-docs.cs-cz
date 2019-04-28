@@ -24,12 +24,12 @@ caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d1a6167759d35dd67142e1919423df6aa380fe88
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c3f79e492440f98f733488afb241fa6f86e220b9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063527"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444230"
 ---
 # <a name="watch-and-quickwatch-windows"></a>Kukátko a Rychlé kukátko Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -162,7 +162,7 @@ var1 = var2
  Existují situace, kdy budete chtít sledovat chování konkrétního objektu. Můžete například chtít sledovat objekt odkazuje místní proměnné po této proměnné je nepřejdou mimo rozsah. V jazyce C# a Visual Basic můžete vytvořit ID pro určité instance odkazové typy objektů a jejich použití v okně kukátka a podmínky zarážky. ID objektu je generována modulem common language runtime (CLR) ladění služeb a přidružená k objektu.  
   
 > [!NOTE]
->  ID objektů vytvořit slabé odkazy a nezabrání objektu je uvolněna z paměti. Jsou platné pouze pro aktuální relaci ladění.  
+> ID objektů vytvořit slabé odkazy a nezabrání objektu je uvolněna z paměti. Jsou platné pouze pro aktuální relaci ladění.  
   
  Následující kód vytvoří jednu metodu `Person` pomocí místní proměnné, ale chcete zjistit, co `Person`jeho název je v jiné metody:  
   
@@ -215,7 +215,7 @@ public class Program
 6. Pokračovat v ladění, a při provádění zastaví v `DoSomething()` metody **Watch** v okně se zobrazí `Person` objektu.  
   
 > [!NOTE]
->  Pokud chcete zobrazit vlastnosti objektu, například `Person.Name` v předchozím příkladu musí mít povoleno vyhodnocování vlastnosti.  
+> Pokud chcete zobrazit vlastnosti objektu, například `Person.Name` v předchozím příkladu musí mít povoleno vyhodnocování vlastnosti.  
   
 ## <a name="using-registers-in-the-watch-window-c-only"></a>Pomocí registry v okně kukátko (pouze C++)  
  Pokud ladíte nativní kód, můžete přidat názvy registrů, jakož i názvy proměnných pomocí  **$ \<zaregistrovat název >** nebo  **@ \<zaregistrovat název >**.  Další informace najdete v tématu [Pseudoproměnné](../debugger/pseudovariables.md).  

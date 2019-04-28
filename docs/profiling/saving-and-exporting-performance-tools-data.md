@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 56a3f450cd41db34596c6fd5bbe9b07292aa5070
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: e4dbaf445e52ba6a15ad07dfa061dbd3aef7c7fc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60055701"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442765"
 ---
 # <a name="save-and-export-performance-tools-data"></a>Uložení a export dat nástrojů pro měření výkonu
 Tento článek popisuje, jak uložit a exportovat datových souborů výkonu.
@@ -47,7 +47,7 @@ Tento článek popisuje, jak uložit a exportovat datových souborů výkonu.
  Můžete exportovat z jednoho nebo více zobrazení sestav. *vsp* souboru nebo. *vsps* profilace datový soubor jako bude čárkami oddělený nebo soubor XML. Můžete filtrovat data v okně zobrazení sestava před exportem nebo mohou exportovat sestavy zobrazení celého datového souboru z **prohlížeč výkonu** okna.
 
 > [!NOTE]
->  Můžete také zkopírovat a vložit vybrané řádky z okna zobrazení sestav jako hodnoty oddělené tabulátorem.
+> Můžete také zkopírovat a vložit vybrané řádky z okna zobrazení sestav jako hodnoty oddělené tabulátorem.
 
 #### <a name="to-export-performance-reports-from-the-performance-explorer-window"></a>Export sestavy o výkonu z okna prohlížeče výkonu
 

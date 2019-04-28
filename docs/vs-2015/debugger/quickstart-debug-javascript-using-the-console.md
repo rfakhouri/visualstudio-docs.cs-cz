@@ -20,12 +20,12 @@ caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b03f7c69e5eac71f9edc790df31d9704a141e590
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 313c189a05ae2a4e338c6f6bb9d7e9341e34284c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60065685"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446115"
 ---
 # <a name="quickstart-debug-javascript-using-the-console"></a>Rychlý start: Ladění JavaScriptu pomocí konzoly
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +59,7 @@ Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "wi
 - [Přepínání kontextu spuštění skriptu](#Switching)  
   
 > [!TIP]
->  Pokud je zavření okna konzoly jazyka JavaScript, zvolte **ladění**>**Windows** > **konzoly jazyka JavaScript** znovu otevřít. V okně se zobrazí jenom při relaci ladění skriptu.  
+> Pokud je zavření okna konzoly jazyka JavaScript, zvolte **ladění**>**Windows** > **konzoly jazyka JavaScript** znovu otevřít. V okně se zobrazí jenom při relaci ladění skriptu.  
   
  Pomocí okna konzoly jazyka JavaScript, můžete pracovat s vaší aplikací bez zastavení a restartování ladicího programu. Další informace najdete v tématu [aktualizace aplikace (JavaScript)](../debugger/refresh-an-app-javascript.md). Informace o další funkce, například pomocí Průzkumníka modelu DOM a nastavovat zarážky, ladění jazyka JavaScript naleznete v tématu [rychlý start: Ladění kódu HTML a CSS](../debugger/quickstart-debug-html-and-css.md) a [ladění aplikací v sadě Visual Studio](../debugger/debug-store-apps-in-visual-studio.md).  
   
@@ -67,7 +67,7 @@ Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "wi
  Následujícím postupem se vytvoří `FlipView` aplikace a ukazují, jak interaktivně ladění JavaScriptu Chyba kódování.  
   
 > [!CAUTION]
->  Ukázková aplikace je aplikace Windows Store. Nicméně funkce konzoly je zde popsáno, platí také pro aplikace vytvořené pomocí nástrojů Visual Studio pro Apache Cordova.  
+> Ukázková aplikace je aplikace Windows Store. Nicméně funkce konzoly je zde popsáno, platí také pro aplikace vytvořené pomocí nástrojů Visual Studio pro Apache Cordova.  
   
 #### <a name="to-debug-javascript-code-in-the-flipview-app"></a>Chcete-li ladit kód jazyka JavaScript v aplikaci FlipView  
   
@@ -182,7 +182,7 @@ Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "wi
      Zkopírujte a vložte tento kód do řádku vstup konzoly jazyka JavaScript.  
   
     > [!TIP]
-    >  Při vkládání více řádků kódu do konzoly jazyka JavaScript vstup řádku, řádku konzoly vstup, automaticky se přepne do víceřádkového režimu. Můžete stisknout kombinaci kláves Ctrl + Alt + M víceřádkový režim zapnutí a vypnutí. Spustit skript v víceřádkový režim, stiskněte klávesy Ctrl + Enter nebo výběrem symbolu šipku v pravém dolním rohu okna. Další informace najdete v tématu [jednořádkový režim a víceřádkový režim v okně konzoly jazyka JavaScript](#SinglelineMultilineMode).  
+    > Při vkládání více řádků kódu do konzoly jazyka JavaScript vstup řádku, řádku konzoly vstup, automaticky se přepne do víceřádkového režimu. Můžete stisknout kombinaci kláves Ctrl + Alt + M víceřádkový režim zapnutí a vypnutí. Spustit skript v víceřádkový režim, stiskněte klávesy Ctrl + Enter nebo výběrem symbolu šipku v pravém dolním rohu okna. Další informace najdete v tématu [jednořádkový režim a víceřádkový režim v okně konzoly jazyka JavaScript](#SinglelineMultilineMode).  
   
 12. Opravte `push` funkce se volá v příkazovém řádku nahrazení `pages.push` s `Data.items.setAt`. Opravený kód by měl vypadat takto:  
   
@@ -193,7 +193,7 @@ Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "wi
     ```  
   
     > [!TIP]
-    >  Pokud chcete použít `pages` místo objektu `Data.items`, budete muset nastavit zarážku v kódu zachovat `pages` objekt v oboru.  
+    > Pokud chcete použít `pages` místo objektu `Data.items`, budete muset nastavit zarážku v kódu zachovat `pages` objekt v oboru.  
   
 13. Výběrem symbolu zelená šipka pro spuštění skriptu.  
   

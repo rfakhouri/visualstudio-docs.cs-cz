@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fbd6adeba6d2c131da10ce028c12c6f50b827444
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 21ca64f6661c4f0d7182bf20887ff8bdf754a6fc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088772"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440316"
 ---
 # <a name="chart-control"></a>Graf – ovládací prvek
   <xref:Microsoft.Office.Tools.Excel.Chart> Je ovládací prvek grafu objektu, který zpřístupňuje události. Když přidáte grafu na listu, vytvoří Visual Studio <xref:Microsoft.Office.Tools.Excel.Chart> objektu, můžete programovat proti přímo bez nutnosti procházení objektový model aplikace Microsoft Office Excel.
@@ -34,7 +34,7 @@ ms.locfileid: "60088772"
  Můžete přidat <xref:Microsoft.Office.Tools.Excel.Chart> ovládacích prvků na list za běhu v doplňku VSTO. Další informace najdete v tématu [jak: Přidání ovládacích prvků graf do listů](../vsto/how-to-add-chart-controls-to-worksheets.md).
 
 > [!NOTE]
->  Nejsou trvalé objekty dynamicky generovaný grafu v listu jako hostitele Určuje, kdy je uzavřen do listu. Další informace najdete v tématu [přidání ovládacích prvků do dokumentů Office za běhu](../vsto/adding-controls-to-office-documents-at-run-time.md).
+> Nejsou trvalé objekty dynamicky generovaný grafu v listu jako hostitele Určuje, kdy je uzavřen do listu. Další informace najdete v tématu [přidání ovládacích prvků do dokumentů Office za běhu](../vsto/adding-controls-to-office-documents-at-run-time.md).
 
 ## <a name="formatting"></a>Formátování
  Veškeré formátování, který lze použít <xref:Microsoft.Office.Interop.Excel.Chart> lze také použít u <xref:Microsoft.Office.Tools.Excel.Chart> ovládacího prvku. To zahrnuje ohraničení, písma, grafy, mřížky, legendy a popisky dat.

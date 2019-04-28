@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 628620005c43ae465107e43572684cb74c8d1aa9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7c088078ce594ab1333eb4ec2316e120cc153ced
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099738"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440387"
 ---
 # <a name="actions-pane-overview"></a>Přehled podokna akcí
   Podokna akcí je přizpůsobitelnou **akcích dokumentu** podokna úloh, které je připojené k určitým dokumentem aplikace Microsoft Office Word nebo sešit aplikace Microsoft Office Excel. V podokně Akce je umístěn uvnitř podokna úloh Office spolu s jiná podokna integrované úlohy, jako **XML použitého jako zdroj** podokna úloh v aplikaci Excel nebo **styly a formátování** podokna úloh v aplikaci Word. Ovládací prvky Windows Forms a ovládacích prvků WPF můžete použít k návrhu uživatelského rozhraní podokna akcí.
@@ -30,7 +30,7 @@ ms.locfileid: "60099738"
  Podokna akcí můžete vytvořit pouze v přizpůsobení na úrovni dokumentu pro aplikaci Word nebo Excel. Nelze vytvořit podokna akcí v doplňku VSTO. Další informace najdete v tématu [dostupné funkce podle typu aplikace a projekt sady Office](../vsto/features-available-by-office-application-and-project-type.md).
 
 > [!NOTE]
->  V podokně Akce se liší od vlastních podoken úloh. Vlastní podokna úloh jsou spojeny s aplikací, ne určitého dokumentu. Můžete vytvořit vlastní podokna úloh v doplňcích VSTO pro některé aplikace Microsoft Office. Další informace najdete v tématu [vlastní podokna úloh](../vsto/custom-task-panes.md).
+> V podokně Akce se liší od vlastních podoken úloh. Vlastní podokna úloh jsou spojeny s aplikací, ne určitého dokumentu. Můžete vytvořit vlastní podokna úloh v doplňcích VSTO pro některé aplikace Microsoft Office. Další informace najdete v tématu [vlastní podokna úloh](../vsto/custom-task-panes.md).
 
  ![odkaz na video](../vsto/media/playvideo.gif "odkaz na video") související video ukázku naleznete v tématu [postup: Použití ovládacích prvků WPF uvnitř podokna akcí aplikace Excel? ](http://go.microsoft.com/fwlink/?LinkId=132763).
 
@@ -50,7 +50,7 @@ ms.locfileid: "60099738"
 2. Přidání ovládacích prvků Windows Forms do <xref:System.Windows.Forms.UserControl> pomocí návrháře nebo napsáním kódu.
 
    > [!NOTE]
-   >  Můžete také přidat ovládací prvky WPF do podokna akcí tak, že přidáte WPF <xref:System.Windows.Controls.UserControl> do formulářů Windows <xref:System.Windows.Forms.UserControl>. Další informace najdete v tématu [řídí použití WPF v řešeních pro systém Office](../vsto/using-wpf-controls-in-office-solutions.md).
+   > Můžete také přidat ovládací prvky WPF do podokna akcí tak, že přidáte WPF <xref:System.Windows.Controls.UserControl> do formulářů Windows <xref:System.Windows.Forms.UserControl>. Další informace najdete v tématu [řídí použití WPF v řešeních pro systém Office](../vsto/using-wpf-controls-in-office-solutions.md).
 
 3. Přidá do ovládacích prvků, které jsou obsaženy v instanci vlastního uživatelského ovládacího prvku `ActionsPane` pole `ThisWorkbook` (pro aplikace Excel) nebo `ThisDocument` (pro aplikaci Word) třídy v projektu.
 
@@ -114,7 +114,7 @@ ms.locfileid: "60099738"
 |FromLeft|Stack – od levé části podokna akcí.|
 |FromRight|Stack – z pravé strany podokna akcí.|
 |FromTop|Stack – od horní části podokna akcí.|
-|Žádné|Žádné pořadí definovaný pořadí je řízen vývojářem.|
+|Žádný|Žádné pořadí definovaný pořadí je řízen vývojářem.|
 
  Následující kód nastaví <xref:Microsoft.Office.Tools.ActionsPane.StackOrder%2A> vlastnost zásobníku uživatelské ovládací prvky z horní části podokna akcí.
 
@@ -141,7 +141,7 @@ ms.locfileid: "60099738"
  [!code-vb[Trin_VstcoreActionsPaneWord#100](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#100)]
 
 > [!NOTE]
->  Koncovým uživatelům můžete přemístit ručně v podokně úloh v každém okamžiku. Neexistuje žádný způsob, jak zajistit, že v podokně úloh zůstane ukotvený na pozici, která jste prostřednictvím kódu programu. Můžete však zjišťovat změny orientace a ujistěte se, že ovládací prvky v podokně Akce jsou navršeny správným směrem. Další informace najdete v tématu [jak: Správa rozložení ovládacích prvků v podoknech akcí](../vsto/how-to-manage-control-layout-on-actions-panes.md).
+> Koncovým uživatelům můžete přemístit ručně v podokně úloh v každém okamžiku. Neexistuje žádný způsob, jak zajistit, že v podokně úloh zůstane ukotvený na pozici, která jste prostřednictvím kódu programu. Můžete však zjišťovat změny orientace a ujistěte se, že ovládací prvky v podokně Akce jsou navršeny správným směrem. Další informace najdete v tématu [jak: Správa rozložení ovládacích prvků v podoknech akcí](../vsto/how-to-manage-control-layout-on-actions-panes.md).
 
  Nastavení <xref:Microsoft.Office.Tools.ActionsPane.Top%2A> a <xref:Microsoft.Office.Tools.ActionsPane.Left%2A> vlastnosti <xref:Microsoft.Office.Tools.ActionsPane> nedojde ke změně jeho pozice vzhledem k tomu, <xref:Microsoft.Office.Tools.ActionsPane> objekt je vložen do podokna úloh.
 

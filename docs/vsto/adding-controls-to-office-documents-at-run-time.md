@@ -22,12 +22,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c7fa5073fca476159aa756b7a5527dd1007ab66b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6159a7763176be236b925dce9fae66e5fc915682
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60075802"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440392"
 ---
 # <a name="add-controls-to-office-documents-at-runtime"></a>Přidání ovládacích prvků do dokumentů Office za běhu
   Můžete přidat ovládací prvky do dokumentu Microsoft Office Word a sešit aplikace Microsoft Office Excel za běhu. Můžete také odebrat je za běhu. Ovládací prvky, které můžete přidat nebo odebrat za běhu se nazývají *dynamické ovládací prvky*.
@@ -74,7 +74,7 @@ ms.locfileid: "60075802"
  Nelze odebrat statické ovládací prvky za běhu. Pokud se pokusíte použít `Delete` nebo `Remove` metoda odebrání statický ovládací prvek <xref:Microsoft.Office.Tools.CannotRemoveControlException> bude vyvolána výjimka.
 
 > [!NOTE]
->  Neodebírejte programově ovládacích prvků v `Shutdown` obslužná rutina události dokumentu. Prvky uživatelského rozhraní dokumentu již nejsou k dispozici při `Shutdown` událost se vyvolá. Pokud chcete odebrat ovládací prvky před zavřením dokumentu, přidejte svůj kód obslužné rutiny události pro jiné události, jako například <xref:Microsoft.Office.Tools.Word.Document.BeforeClose> nebo <xref:Microsoft.Office.Tools.Word.Document.BeforeSave> pro Word, nebo <xref:Microsoft.Office.Tools.Excel.Workbook.BeforeClose>, nebo <xref:Microsoft.Office.Tools.Excel.Workbook.BeforeSave> pro aplikaci Excel.
+> Neodebírejte programově ovládacích prvků v `Shutdown` obslužná rutina události dokumentu. Prvky uživatelského rozhraní dokumentu již nejsou k dispozici při `Shutdown` událost se vyvolá. Pokud chcete odebrat ovládací prvky před zavřením dokumentu, přidejte svůj kód obslužné rutiny události pro jiné události, jako například <xref:Microsoft.Office.Tools.Word.Document.BeforeClose> nebo <xref:Microsoft.Office.Tools.Word.Document.BeforeSave> pro Word, nebo <xref:Microsoft.Office.Tools.Excel.Workbook.BeforeClose>, nebo <xref:Microsoft.Office.Tools.Excel.Workbook.BeforeSave> pro aplikaci Excel.
 
 ## <a name="HostControls"></a> Přidání hostitelských ovládacích prvků do dokumentů
 
@@ -103,7 +103,7 @@ Po uložení a pak zavření dokumentu z jejich události jsou odpojené všechn
  Po uložení a pak zavření dokumentu, se odeberou všechny dynamicky vytvořený ovládací prvky Windows Forms z dokumentu. Přidejte kód do svého řešení k opětovnému vytvoření ovládacích prvků, když znovu otevřete dokument. Pokud vytvoříte dynamické ovládací prvky Windows Forms pomocí doplňku VSTO, jsou ponechána obálky ActiveX pro ovládací prvky v dokumentu. Další informace najdete v tématu [uchování dynamických ovládacích prvků v dokumentech systému Office](../vsto/persisting-dynamic-controls-in-office-documents.md).
 
 > [!NOTE]
->  Ovládací prvky Windows Forms nelze přidat do chráněných dokumentů prostřednictvím kódu programu. Je-li programově odemknout Wordového dokumentu nebo listu aplikace Excel k přidání ovládacího prvku, musíte napsat další kód a odeberte obálky ovládacího prvku ActiveX při zavření dokumentu. Obálky ovládacího prvku ActiveX není automaticky odstraněn z chráněných dokumentů.
+> Ovládací prvky Windows Forms nelze přidat do chráněných dokumentů prostřednictvím kódu programu. Je-li programově odemknout Wordového dokumentu nebo listu aplikace Excel k přidání ovládacího prvku, musíte napsat další kód a odeberte obálky ovládacího prvku ActiveX při zavření dokumentu. Obálky ovládacího prvku ActiveX není automaticky odstraněn z chráněných dokumentů.
 
 ### <a name="add-custom-controls"></a>Přidání vlastních ovládacích prvků
  Pokud chcete přidat <xref:System.Windows.Forms.Control> , která není podporována k dispozici pomocné metody, jako jsou vlastní uživatelský ovládací prvek, pomocí následujících metod:

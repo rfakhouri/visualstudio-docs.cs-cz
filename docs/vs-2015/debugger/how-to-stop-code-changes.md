@@ -20,12 +20,12 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ba3ee5d8ee04b4a0f2cd360d6b213c69c6f8d1bc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: cb1747341de65a5f642790410c35eee35620575e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54799410"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442717"
 ---
 # <a name="how-to-stop-code-changes"></a>Postupy: Zastavení změn kódu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "54799410"
 Upravit a pokračovat je právě aplikování změn kódu, můžete zastavit operaci.  
   
 > [!CAUTION]
->  Zastavování změn kódu ve spravovaném kódu může vést k neočekávaným výsledkům. Provádění změn pro spravovaný kód je obvykle rychlé procesu, je málokdy potřeba zastavení změn kódu ve spravovaném kódu.  
+> Zastavování změn kódu ve spravovaném kódu může vést k neočekávaným výsledkům. Provádění změn pro spravovaný kód je obvykle rychlé procesu, je málokdy potřeba zastavení změn kódu ve spravovaném kódu.  
   
 ### <a name="to-stop-applying-code-changes"></a>Zastavit provádění změn kódu  
   

@@ -12,12 +12,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 823b853363e3044383da4673d7e88a96d9e5ea6a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: d96330c01ab340d4db67694f358717a2dae0bce3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59664333"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439365"
 ---
 # <a name="msbuild-batching"></a>Dávkování nástroje MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "59664333"
  Určete, jestli má [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] provádět dávkové zpracování s úlohami pomocí %(*ItemMetaDataName*) zápis v jednom z atributů úlohy. V následujícím příkladu se rozdělí `Example` na základě seznamu položek do dávek `Color` hodnotu položky metadat a předá do dávek `MyTask` úloh samostatně.  
   
 > [!NOTE]
->  Pokud Neodkazovat seznam položek jinde v atributech úloh nebo může být nejednoznačný název metadat, můžete použít %(*ItemCollection.ItemMetaDataName*) zápis k plnému určení hodnotu položky metadat pro dávkové zpracování.  
+> Pokud Neodkazovat seznam položek jinde v atributech úloh nebo může být nejednoznačný název metadat, můžete použít %(*ItemCollection.ItemMetaDataName*) zápis k plnému určení hodnotu položky metadat pro dávkové zpracování.  
   
 ```  
 <Project  

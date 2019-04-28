@@ -13,18 +13,18 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0051f18c67fffc9801ad326745a0dc9dd63f4391
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: b2cdde46484f95aa57404ebe6b6cb4c86ef458c9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58148851"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440508"
 ---
 # <a name="idebugapplicationthreadevents110-interface"></a>IDebugApplicationThreadEvents110 – rozhraní
 Přidá další vlákno události. Tyto události jsou jenom místní. To znamená, že k odběru je pouze v procesu se ladit, používá [IConnectionPoint](http://go.microsoft.com/fwlink/?LinkId=232738) dokáží a zrušíte avízo o metod na objekty vlákna aplikace PDM (objekty, které implementují [idebugapplicationthread – Rozhraní](../../winscript/reference/idebugapplicationthread-interface.md)). K nim dojde ve vlákně, které pocházejí z.  
   
 > [!IMPORTANT]
->  Toto rozhraní je implementováno komponentou PDM verze 11.0 nebo novější. Nachází se v souboru activdbg100.h.  
+> Toto rozhraní je implementováno komponentou PDM verze 11.0 nebo novější. Nachází se v souboru activdbg100.h.  
   
 ## <a name="methods"></a>Metody  
  `IDebugActivationThreadEvents110` Rozhraní poskytuje následující metody.  

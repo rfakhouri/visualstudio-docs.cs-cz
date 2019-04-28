@@ -13,12 +13,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 61b20ea728cd0b714ba61dfa7aef1893a91cfaca
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
-ms.translationtype: MT
+ms.openlocfilehash: 894378d6648139b7ec2b587eb0066a5725af7a71
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54758371"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443720"
 ---
 # <a name="manage-channels"></a>Správa kanálů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ V **zobrazení vláken** ve vizualizátoru souběžnosti můžete uspořádat ka
  Zvolte tento ovládací prvek, pokud chcete skrýt kanály. Například pokud vlákno je synchronizace 100 procent po celou dobu životnosti vašeho spravovaného procesu, ji může skrýt jak analyzovat jiných vláken.  
   
 > [!NOTE]
->  Skrytí vlákno také odebere ho z čas výpočtu, která se zobrazí v legendě aktivní a v sestavách profilu.  
+> Skrytí vlákno také odebere ho z čas výpočtu, která se zobrazí v legendě aktivní a v sestavách profilu.  
   
 ## <a name="show-all-channels"></a>Zobrazit všechny kanály  
  Tento ovládací prvek je aktivní, když jsou skryté jednoho nebo několika kanálů. Pokud jste ji zvolili, jsou uvedeny všechny prvky skrytý a jsou vráceny ve výpočtech čas.  

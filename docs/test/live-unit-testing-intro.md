@@ -10,16 +10,18 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7cdf118ef901e607d24609e521325e27b90d345b
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
-ms.translationtype: MT
+ms.openlocfilehash: a5acf1857309236727cd0bab4d9d981d814292b9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57222007"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62786078"
 ---
-# <a name="introducing-live-unit-testing"></a>Představujeme Live Unit Testing
+# <a name="live-unit-testing-introduction"></a>Live Unit Testing Úvod
 
-Live Unit Testing je technologie, která byla zavedena v sadě Visual Studio 2017. To spustí testy jednotky automaticky v reálném čase při provádění změn kódu. Live Unit Testing:
+Live Unit Testing je technologie, která byla zavedena v sadě Visual Studio 2017. To spustí testy jednotky automaticky v reálném čase při provádění změn kódu.
+
+Live Unit Testing:
 
 - Umožňuje Refaktorujte a změna kódu s větší jistotou. Live Unit Testing automaticky spustí všechny ovlivněné testy, při úpravě kódu k zajištění, že vaše změny nenaruší testy.
 
@@ -27,15 +29,18 @@ Live Unit Testing je technologie, která byla zavedena v sadě Visual Studio 201
 
 Pokud máte řešení, která obsahuje jeden nebo více projektů testů jednotek, můžete povolit Live Unit Testing tak, že vyberete **testování** > **Live Unit Testing** > **Start**  z nejvyšší úrovně nabídky sady Visual Studio.
 
+> [!NOTE]
+> Live Unit Testing je k dispozici pouze v edici Visual Studio Enterprise.
+
 Další informace o Live Unit Testing:
 
-- Projděte si úvodní kurz [začít pracovat s Live Unit Testing v sadě Visual Studio](live-unit-testing-start.md).
+- Projděte si úvodní kurz [začít pracovat s Live Unit Testing](live-unit-testing-start.md).
 
 - Přečtěte si podrobné dokumentaci [pomocí Live Unit Testing s Visual Studio Enterprise Edition](live-unit-testing.md).
 
-- Přečtěte si [Live Unit Testing – nejčastější dotazy](live-unit-testing-faq.md) se dozvíte, co je nového v Live Unit Testing, jakož i informace o tipy a techniky pro pomocí Live Unit Testing.
+- Přečtěte si [Live Unit Testing – nejčastější dotazy](live-unit-testing-faq.md) se dozvíte, co je nového v Live Unit Testing, jakož i informace o tipy a techniky.
 
-- Podívejte se na video s přehledem Live Unit Testing a jeho funkcí webu Channel 9. </p>
+- Podívejte se na video Channel 9 přehled Live Unit Testing a jeho funkcí. </p>
 
    > [!VIDEO https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T105/player]
 

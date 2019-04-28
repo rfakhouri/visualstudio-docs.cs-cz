@@ -15,12 +15,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ed23ea566bb27eaa8a315473fdf5345764ad5384
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 45a3f55e826133ce0fd55764e216824810ae45c4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60113947"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443274"
 ---
 # <a name="troubleshooting-broken-references"></a>Řešení potíží s poškozenými odkazy
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ Pokud vaše aplikace se pokusí použít poškozený odkaz, je vygenerována chy
   Toto jsou řešení těchto problémů.  
   
 > [!NOTE]
->  Soubory v sestavení je odkazováno pomocí absolutní cesty v souboru projektu. Proto je možné pro uživatele, kteří pracují v prostředí vývoj chybí odkazovaná sestavení svého místního prostředí. Aby nedocházelo k těmto chybám, je lepší v těchto případech pro přidání odkazů typu projekt projekt. Další informace najdete v tématu [NIB jak: Přidání nebo odebrání odkazů pomocí dialogového okna Přidat odkaz](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9) a [programování se sestaveními](http://msdn.microsoft.com/library/25918b15-701d-42c7-95fc-c290d08648d6).  
+> Soubory v sestavení je odkazováno pomocí absolutní cesty v souboru projektu. Proto je možné pro uživatele, kteří pracují v prostředí vývoj chybí odkazovaná sestavení svého místního prostředí. Aby nedocházelo k těmto chybám, je lepší v těchto případech pro přidání odkazů typu projekt projekt. Další informace najdete v tématu [NIB jak: Přidání nebo odebrání odkazů pomocí dialogového okna Přidat odkaz](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9) a [programování se sestaveními](http://msdn.microsoft.com/library/25918b15-701d-42c7-95fc-c290d08648d6).  
   
 ## <a name="reference-path-is-incorrect"></a>Cesta odkazu je nesprávný  
  Pokud projekty jsou sdíleny v různých počítačích, nemusí při komponenty se nachází v jiném adresáři na každém počítači nalezeny některé odkazy. Odkazy jsou uloženy pod názvem souboru součásti (například MyComponent). Při přidání odkazu do projektu, umístění složky souboru součásti (například C:\MyComponents\\) se připojí **ReferencePath** vlastnosti projektu.  
@@ -50,7 +50,7 @@ Pokud vaše aplikace se pokusí použít poškozený odkaz, je vygenerována chy
  Chcete-li vyřešit tento problém, můžete odstranit poškozený odkaz a nahradili ho pomocí dialogového okna Přidat odkaz. Druhým řešením je použít **cestu odkazu** položek na stránkách vlastností projektu a upravit složky v seznamu tak, aby odkazovala na správné umístění. **Cestu odkazu** trvale uloženou vlastnost pro každého uživatele na každém počítači. Změna cesty k odkazu proto neovlivňuje ostatní uživatelé z projektu.  
   
 > [!TIP]
->  Odkazy typu projekt projekt není nutné tyto problémy. Z tohoto důvodu je použijte místo odkazy na soubory, pokud je to možné.  
+> Odkazy typu projekt projekt není nutné tyto problémy. Z tohoto důvodu je použijte místo odkazy na soubory, pokud je to možné.  
   
 #### <a name="to-fix-a-broken-project-reference-by-correcting-the-reference-path"></a>Chcete-li vyřešit poškozený odkaz projektu tím, že opraví cesta odkazu  
   

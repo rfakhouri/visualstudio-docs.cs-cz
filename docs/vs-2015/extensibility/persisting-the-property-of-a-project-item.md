@@ -11,12 +11,12 @@ ms.assetid: d7a0f2b0-d427-4d49-9536-54edfb37c0f3
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: ccb468c5eca88207594a66d956717caf260666db
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 4adcf0f5c5770f5d3ffc0e0ed9bffdb108869c7f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54772170"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441547"
 ---
 # <a name="persisting-the-property-of-a-project-item"></a>Trvalé uložení vlastnosti položky projektu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Můžete chtít zachovat vlastnosti, které přidáte do položky projektu, jako
   
 ### <a name="to-obtain-the-project-hierarchy-with-the-dte-object"></a>Chcete-li získat hierarchii projektu s objekt DTE  
   
-1.  Přidejte následující kód do vašeho balíčku VSPackage:  
+1. Přidejte následující kód do vašeho balíčku VSPackage:  
   
     ```csharp  
     EnvDTE.DTE dte = (EnvDTE.DTE)Package.GetGlobalService(typeof(EnvDTE.DTE));  
@@ -43,7 +43,7 @@ Můžete chtít zachovat vlastnosti, které přidáte do položky projektu, jako
   
 ### <a name="to-persist-the-project-item-property-with-the-dte-object"></a>Zachovat vlastnosti položky projektu s objekt DTE  
   
-1.  Přidejte následující kód do kódu uvedeného v metodě v předchozím postupu:  
+1. Přidejte následující kód do kódu uvedeného v metodě v předchozím postupu:  
   
     ```csharp  
     IVsBuildPropertyStorage buildPropertyStorage =   
@@ -60,7 +60,7 @@ Můžete chtít zachovat vlastnosti, které přidáte do položky projektu, jako
   
 ### <a name="to-obtain-the-project-hierarchy-using-ivsmonitorselection"></a>Chcete-li získat hierarchii projektu pomocí IVsMonitorSelection  
   
-1.  Přidejte následující kód do vašeho balíčku VSPackage:  
+1. Přidejte následující kód do vašeho balíčku VSPackage:  
   
     ```csharp  
     IVsHierarchy hierarchy = null;  
@@ -102,11 +102,11 @@ Můžete chtít zachovat vlastnosti, které přidáte do položky projektu, jako
     }  
     ```  
   
-2.  
+2. 
   
 ### <a name="to-persist-the-selected-project-item-property-given-the-project-hierarchy"></a>Zachovat položky vlastnosti vybraného projektu dána hierarchie projektu  
   
-1.  Přidejte následující kód do kódu uvedeného v metodě v předchozím postupu:  
+1. Přidejte následující kód do kódu uvedeného v metodě v předchozím postupu:  
   
     ```  
     IVsBuildPropertyStorage buildPropertyStorage =   
@@ -119,16 +119,16 @@ Můžete chtít zachovat vlastnosti, které přidáte do položky projektu, jako
   
 ### <a name="to-verify-that-the-property-is-persisted"></a>Chcete-li ověřit, že vlastnost je trvalá.  
   
-1.  Spustit [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] a poté otevřete nebo vytvořte řešení.  
+1. Spustit [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] a poté otevřete nebo vytvořte řešení.  
   
-2.  Vyberte projekt položku VsPkg.cs v **Průzkumníka řešení**.  
+2. Vyberte projekt položku VsPkg.cs v **Průzkumníka řešení**.  
   
-3.  Použijte zarážku nebo jinak určit, že je načten vašeho balíčku VSPackage a že SetItemAttribute běží.  
+3. Použijte zarážku nebo jinak určit, že je načten vašeho balíčku VSPackage a že SetItemAttribute běží.  
   
     > [!NOTE]
-    >  Je možné vykonat autoload VSPackage v kontextu uživatelského rozhraní <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExists_guid>. Další informace najdete v tématu [načítání rozšíření VSPackages](../extensibility/loading-vspackages.md).  
+    > Je možné vykonat autoload VSPackage v kontextu uživatelského rozhraní <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExists_guid>. Další informace najdete v tématu [načítání rozšíření VSPackages](../extensibility/loading-vspackages.md).  
   
-4.  Zavřít [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] a pak otevřete soubor projektu v poznámkovém bloku. Měli byste vidět \<Autor > Označit hodnota vlastní, následujícím způsobem:  
+4. Zavřít [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] a pak otevřete soubor projektu v poznámkovém bloku. Měli byste vidět \<Autor > Označit hodnota vlastní, následujícím způsobem:  
   
     ```  
     <Compile Include="VsPkg.cs">  

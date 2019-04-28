@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2ec9dcc6f5458e33e5ea215d65aacd48c622f111
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0d8b99a547ebe80494d80aa26903c58060d44947
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60051997"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440372"
 ---
 # <a name="architecture-of-document-level-customizations"></a>Architektura přizpůsobení na úrovni dokumentu
   [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] zahrnuje projekty pro vytvoření přizpůsobení na úrovni dokumentu pro aplikaci Microsoft Office Word a Microsoft Office Excel. Toto téma popisuje následující aspekty přizpůsobení na úrovni dokumentu:
@@ -49,7 +49,7 @@ ms.locfileid: "60051997"
  Pokud uživatel otevře více přizpůsobení na úrovni dokumentu ve stejnou dobu, každé sestavení je načteno v jiné aplikační doméně. To znamená, že jedno řešení, který se chová nesprávně nemůže způsobit jiná řešení k selhání. Přizpůsobení na úrovni dokumentu jsou navrženy pro práci s jednotlivý dokument v jediné doméně aplikace. Nejsou určeny pro komunikaci mezi dokumenty. Další informace o aplikačních doménách najdete v tématu [aplikačních doménách](/dotnet/framework/app-domains/application-domains).
 
 > [!NOTE]
->  Přizpůsobení na úrovni dokumentu, které vytvoříte pomocí nástroje Office developer tools v sadě Visual Studio jsou navrženy pro se dá použít jenom při spuštění aplikace koncovým uživatelem. Pokud je aplikace spuštěna prostřednictvím kódu programu, například pomocí automatizace, přizpůsobení nemusí fungovat podle očekávání.
+> Přizpůsobení na úrovni dokumentu, které vytvoříte pomocí nástroje Office developer tools v sadě Visual Studio jsou navrženy pro se dá použít jenom při spuštění aplikace koncovým uživatelem. Pokud je aplikace spuštěna prostřednictvím kódu programu, například pomocí automatizace, přizpůsobení nemusí fungovat podle očekávání.
 
 ### <a name="design-time-and-run-time-experiences"></a>Možnosti návrhu a běhu
  Informace o tom architektura přizpůsobení na úrovni dokumentu, dobré pochopit možnosti návrhu řešení a spuštění řešení.
@@ -118,7 +118,7 @@ ms.locfileid: "60051997"
  ![Architektura přizpůsobení systému office 2007](../vsto/media/office07-custom.png "architektura přizpůsobení systému Office 2007")
 
 > [!NOTE]
->  V řešeních pro systém Office, které se zaměřují [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)], řešení pro volání do objektového modelu hostitelské aplikace podle pomocí primárních sestavení vzájemné spolupráce (PIA) informace o typu, který je vložen do sestavení řešení, namísto volání do PIA přímo. Další informace najdete v tématu [návrhu a vytvořte řešení pro systém Office](../vsto/designing-and-creating-office-solutions.md).
+> V řešeních pro systém Office, které se zaměřují [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)], řešení pro volání do objektového modelu hostitelské aplikace podle pomocí primárních sestavení vzájemné spolupráce (PIA) informace o typu, který je vložen do sestavení řešení, namísto volání do PIA přímo. Další informace najdete v tématu [návrhu a vytvořte řešení pro systém Office](../vsto/designing-and-creating-office-solutions.md).
 
 ### <a name="loading-process"></a>Proces načítání
  Když uživatel otevře dokument, který je součástí řešení Microsoft Office, dojde k následujícím krokům.

@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e3a77797cb519294c16329a432cf742746293c13
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
-ms.translationtype: MT
+ms.openlocfilehash: a8d3e78e4bd49c36174280c62ca8f24cdbd7f648
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57983400"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440035"
 ---
 # <a name="standard-and-custom-toolset-configurations"></a>Standardní a vlastní konfigurace sady nástrojů
 Sada nástrojů MSBuild obsahuje odkazy na úkoly, cíle a nástroje, které můžete použít k sestavení projektu aplikace. Nástroj MSBuild obsahuje standardní sadu nástrojů, ale můžete také vytvořit vlastní sady nástrojů. Informace o tom, jak určit sadu nástrojů najdete v tématu [sada nástrojů (atribut ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)
@@ -68,7 +68,7 @@ Visual Studio 2017 a novějších verzích nepoužívejte klíč registru pro ce
  `VisualStudioVersion` Vlastnost sestavení určuje, zda dílčí stane aktivním. Například `VisualStudioVersion` hodnota "12.0" Určuje dílčí nástroj MSBuild 12.0. Další informace najdete v části dílčí sady nástrojů v [sada nástrojů (atribut ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md).
 
 > [!NOTE]
->  Doporučujeme vám, že byste se vyhnout změnou tohoto nastavení. Můžete však přidat vlastní nastavení a definovat celý počítač vlastní definice sady nástrojů, podle popisu v následující části.
+> Doporučujeme vám, že byste se vyhnout změnou tohoto nastavení. Můžete však přidat vlastní nastavení a definovat celý počítač vlastní definice sady nástrojů, podle popisu v následující části.
 
 ## <a name="custom-toolset-definitions"></a>Definice vlastní sady nástrojů
  Když standardní sadu nástrojů nesplňuje vaše požadavky na sestavení, můžete vytvořit vlastní sadu nástrojů. Například může mít scénáři sestavení testovacího prostředí, ve kterém musí mít samostatný systém pro vytváření [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] projekty. Pomocí vlastních nástrojů můžete přiřadit vlastní hodnoty a `ToolsVersion` atribut při vytváření projektů nebo spustit *MSBuild.exe*. Tímto způsobem můžete také použít `$(MSBuildToolsPath)` vlastnost k importu *.targets* soubory z tohoto adresáře, jakož i definování vlastních nástrojů vlastností, které lze použít pro libovolný projekt, který používá tuto sadu nástrojů.
@@ -97,12 +97,12 @@ Visual Studio 2017 a novějších verzích nepoužívejte klíč registru pro ce
 ```
 
 > [!NOTE]
->  Čtení správně, `<configSections>` musí být první část v `<configuration>` oddílu.
+> Čtení správně, `<configSections>` musí být první část v `<configuration>` oddílu.
 
  `ToolsetConfigurationSection` je vlastního konfiguračního oddílu, který lze použít libovolný hostitel MSBuild pro vlastní konfiguraci. Pokud používáte vlastní sady nástrojů, není nutné dělat nic se inicializovat modul sestavení s tím rozdílem, poskytuje konfiguraci položek souboru hostitele. Definováním položky registru, můžete zadat celý počítač sady nástrojů, která se vztahují *MSBuild.exe*, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]a všechny hostitele nástroje MSBuild.
 
 > [!NOTE]
->  Pokud konfigurační soubor definuje nastavení pro `ToolsVersion` , který již byl definován v registru, nejsou sloučené dvě definice. Definice v konfiguračním souboru má přednost a nastavení v registru pro daný `ToolsVersion` jsou ignorovány.
+> Pokud konfigurační soubor definuje nastavení pro `ToolsVersion` , který již byl definován v registru, nejsou sloučené dvě definice. Definice v konfiguračním souboru má přednost a nastavení v registru pro daný `ToolsVersion` jsou ignorovány.
 
  Následující vlastnosti jsou specifické pro hodnotu `ToolsVersion` , který je používat v projektech:
 
