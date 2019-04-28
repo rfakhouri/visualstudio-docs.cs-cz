@@ -15,12 +15,12 @@ caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 94e2186fa13f7fe125457dc6f04d6d31d0bcc65d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e995d9cfd37c625c03df0b607a9dd5184bec5d08
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60046120"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441468"
 ---
 # <a name="extending-javascript-intellisense"></a>Rozšíření JavaScript IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,7 +75,7 @@ intellisense.addEventListener('statementcompletion', function (event) {
  Další příklady najdete \\ \\ *cestu instalace sady Visual Studio*\JavaScript\References složky. Soubor showPlainComments.js v této složce obsahuje příklady použití dalších událostí a poskytuje výchozí podporu technologie IntelliSense pro standardních značek komentářů jazyka JavaScript (/ /). Podobně jako underscorefilter.js showPlainComments.js je již dostupný jako rozšíření pracovní a zobrazí se výsledný informací technologie IntelliSense při použití značky pro komentáře v kódu pro proměnné, funkce a objekty. Další příklady najdete v tématu [příklady kódu](#CodeExamples).  
   
 > [!WARNING]
->  Při úpravě souborů rozšíření, které jsou součástí sady Visual Studio, můžete kdykoli deaktivovat technologie IntelliSense jazyka JavaScript nebo funkce podporované rozšířením.  
+> Při úpravě souborů rozšíření, které jsou součástí sady Visual Studio, můžete kdykoli deaktivovat technologie IntelliSense jazyka JavaScript nebo funkce podporované rozšířením.  
   
  Do kódu rozšíření, můžete vytvořit pomocí obslužné rutiny pro následující typy událostí `addEventListener`:  
   
@@ -88,7 +88,7 @@ intellisense.addEventListener('statementcompletion', function (event) {
   Příklady, které ukazují funkce technologie IntelliSense, jako je doplňování výrazů a informace o parametrech, rychlé informace najdete v tématu [pomocí technologie IntelliSense](../ide/using-intellisense.md).  
   
 > [!NOTE]
->  V jazyce JavaScript rychlé informace odkazuje na místním okně, které se zobrazí napravo od seznamu dokončení. Rychlé informace nelze vyvolat ručně.  
+> V jazyce JavaScript rychlé informace odkazuje na místním okně, které se zobrazí napravo od seznamu dokončení. Rychlé informace nelze vyvolat ručně.  
   
 ## <a name="intellisenseObject"></a> technologie IntelliSense objektu  
  V následující tabulce jsou uvedeny funkce, které jsou k dispozici pro `intellisense` objektu. `intellisense` Objekt je k dispozici pouze v době návrhu.  

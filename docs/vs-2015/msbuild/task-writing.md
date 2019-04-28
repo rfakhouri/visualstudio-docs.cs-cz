@@ -13,12 +13,12 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fab26a750dab2a1099280b886342731fe8a4612e
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: eaf927b1049709a04d8a883615d1997e9316599e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59656485"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445386"
 ---
 # <a name="task-writing"></a>Zápis úloh
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -105,7 +105,7 @@ namespace MyTasks
  [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] Soubor Microsoft.Common.Tasks je soubor projektu, který obsahuje seznam `UsingTask` prvky, které registrují všechny úkoly, které jsou součástí [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]. Tento soubor je automaticky zahrnuty při sestavování každý projekt. Pokud je úkol, který je registrován v Microsoft.Common.Tasks také zaregistrován v aktuálním souboru projektu, aktuální soubor projektu má přednost před; To znamená můžete přepsat výchozí úlohu s vlastní úkol, který má stejný název.  
   
 > [!TIP]
->  Zobrazí se seznam úloh, které jsou součástí [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] zobrazením obsah Microsoft.Common.Tasks.  
+> Zobrazí se seznam úloh, které jsou součástí [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] zobrazením obsah Microsoft.Common.Tasks.  
   
 ## <a name="raising-events-from-a-task"></a>Vyvolávání událostí z úlohy  
  Pokud vaše úlohy je odvozen od <xref:Microsoft.Build.Utilities.Task> pomocná třída, můžete použít některý z následujících metod helper na <xref:Microsoft.Build.Utilities.Task> třídy pro vyvolání události, které bude zachycena a zobrazí všechny registrované protokolovacích nástrojů:  

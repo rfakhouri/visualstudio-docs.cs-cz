@@ -11,12 +11,12 @@ caps.latest.revision: 28
 author: alexhomer1
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3c328b8522913dcb8095c09a031b2a2c80f58030
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0fc24dc76e59a04b9485a71ba4dff44e0c7ba64d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60086764"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442798"
 ---
 # <a name="create-and-run-unit-tests-for-a-store-app-in-visual-studio"></a>Vytváření a spouštění testů jednotek aplikace pro Store v sadě Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "60086764"
 Nástroje testování částí Visual Studio 2012 Express pro Windows 8 jsou navrženy pro podporu vývojářů a týmů, které začlenily testování jednotek v svých praktik vývoje. Testování částí poskytuje vývojářům a testerům, efektivní a udržovatelný způsob vyhledávání logických chyb v rámci metod tříd v projektech Visual C#, Visual Basic a Visual C++.
 
 > [!NOTE]
->  Témata v této části popisují funkce Visual Studio 2012 Express pro Windows 8. Visual Studio Ultimate, VS Premium a VS Professional poskytují další funkce pro testování částí.
+> Témata v této části popisují funkce Visual Studio 2012 Express pro Windows 8. Visual Studio Ultimate, VS Premium a VS Professional poskytují další funkce pro testování částí.
 >
 > - Ve VS Ultimate, VS Premium a VS Professional můžete použít libovolné rozhraní testování částí třetích stran nebo open zdroj, který byl vytvořen adaptér doplněk pro aplikaci Microsoft Test Explorer. Můžete také analyzovat a zobrazit informace o pokrytí kódu pro testy s VS Ultimate a VS Premium.
 >   - Ve VS Ultimate můžete spustit testy po každém sestavení. Můžete také použít Microsoft Fakes, izolované rozhraní pro spravovaný kód testy zaměřit se na váš vlastní kód nahrazením testovací kód pro systém a funkce třetích stran.

@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e93bd1c254f16b8034a267be90a90573b7ac86e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a1b4ef99f6b8e4dbe9d334fea0e8f5c34d5c6ffa
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60047797"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442056"
 ---
 # <a name="step-7-add-dialog-components-to-your-form"></a>Krok 7: Přidejte do svého formuláře komponenty dialogových oken
 Chcete-li povolit programu otevírání souborů obrázků a výběr barvy pozadí, v tomto kroku přidáte <xref:System.Windows.Forms.OpenFileDialog> komponenty a <xref:System.Windows.Forms.ColorDialog> komponentu do formuláře.
@@ -27,7 +27,7 @@ Chcete-li povolit programu otevírání souborů obrázků a výběr barvy pozad
 1. Zvolte **Návrháře formulářů Windows** (**Form1.cs [Design]** nebo **Form1.vb [Design]**) a pak otevřete **dialogová okna** skupiny  **Panel nástrojů**.
 
     > [!NOTE]
-    >  **Dialogová okna** skupiny **nástrojů** komponentami, které otevírají mnoho užitečných dialogových oken, které je možné použít pro otevírání a ukládání souborů, procházení složek a výběru písma a barvy. V tomto projektu použijete dvě komponenty dialogového okna: OpenFileDialog – a ColorDialog
+    > **Dialogová okna** skupiny **nástrojů** komponentami, které otevírají mnoho užitečných dialogových oken, které je možné použít pro otevírání a ukládání souborů, procházení složek a výběru písma a barvy. V tomto projektu použijete dvě komponenty dialogového okna: OpenFileDialog – a ColorDialog
 
 2. K přidání komponenty s názvem **openFileDialog1** do formuláře dvakrát klikněte na panel **OpenFileDialog**. K přidání komponenty s názvem **colorDialog1** do formuláře dvakrát klikněte na panel **ColorDialog** v **nástrojů**. (Můžete použít v dalším kroku výukového programu.) Měli byste vidět plochu v dolní části **Návrháře formulářů Windows** (pod **prohlížeče obrázků** formuláře), který má ikonu pro každou z komponent dvou dialogových oken, které jste přidali, jak je znázorněno na následujícím obrázku.
 
@@ -47,7 +47,7 @@ Chcete-li povolit programu otevírání souborů obrázků a výběr barvy pozad
          **Filtr** nastavení vlastností zadejte druhy typů souborů, které se zobrazí v **vybrat obrázek** dialogové okno souboru.
 
     > [!NOTE]
-    >  Chcete-li zobrazit příklad **otevřít soubor** dialogové okno v jiné aplikaci, otevřete **Poznámkový blok** nebo **Malování**a na panelu nabídek zvolte **souboru**  >  **Otevřít**. Všimněte si, jak je **soubory typu** rozevírací seznam v dolní části. Právě jste použili **filtr** vlastnost v **OpenFileDialog** součásti k tomuto nastavení. Všimněte si také, jak **Title** a **filtr** vlastnosti jsou zobrazeny tučným písmem v **vlastnosti** okna. Rozhraní IDE toto dělá, abyste viděli všechny vlastnosti, které byly změněny z výchozí hodnoty.
+    > Chcete-li zobrazit příklad **otevřít soubor** dialogové okno v jiné aplikaci, otevřete **Poznámkový blok** nebo **Malování**a na panelu nabídek zvolte **souboru**  >  **Otevřít**. Všimněte si, jak je **soubory typu** rozevírací seznam v dolní části. Právě jste použili **filtr** vlastnost v **OpenFileDialog** součásti k tomuto nastavení. Všimněte si také, jak **Title** a **filtr** vlastnosti jsou zobrazeny tučným písmem v **vlastnosti** okna. Rozhraní IDE toto dělá, abyste viděli všechny vlastnosti, které byly změněny z výchozí hodnoty.
 
 ## <a name="to-continue-or-review"></a>Chcete-li pokračovat nebo přezkoumat
 

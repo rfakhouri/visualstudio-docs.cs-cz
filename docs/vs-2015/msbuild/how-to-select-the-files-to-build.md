@@ -13,12 +13,12 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5a45720c739087c2caf43314cbcbc8aea162534c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0968dd8914b99e8d47ef1364231059175aaf73fe
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60064840"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437906"
 ---
 # <a name="how-to-select-the-files-to-build"></a>Postupy: Výběr souborů k sestavení
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ Při vytváření projektu, který obsahuje několik souborů, můžete vytvoři
      `<VBFile Include="form1.vb"/>`  
   
     > [!NOTE]
-    >  Pokud se položky v kolekci položek nejsou ve stejném adresáři jako soubor projektu, musíte zadat úplnou nebo relativní cesta k položce. Například: `Include="..\..\form2.cs"`.  
+    > Pokud se položky v kolekci položek nejsou ve stejném adresáři jako soubor projektu, musíte zadat úplnou nebo relativní cesta k položce. Například: `Include="..\..\form2.cs"`.  
   
 #### <a name="to-declare-multiple-items"></a>Chcete-li deklarovat více položek  
   
@@ -100,9 +100,9 @@ Při vytváření projektu, který obsahuje několik souborů, můžete vytvoři
      `<VBC Sources="@(VBFile)">...</VBC>`  
   
 > [!NOTE]
->  Je nutné použít zástupné znaky se položky, které chcete určit vstupy pro sestavení; Nelze zadat vstupy pomocí `Sources` atribut [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] úkoly, jako [Csc](../msbuild/csc-task.md) nebo [Vbc –](../msbuild/vbc-task.md). V následujícím příkladu není platný v souboru projektu:  
+> Je nutné použít zástupné znaky se položky, které chcete určit vstupy pro sestavení; Nelze zadat vstupy pomocí `Sources` atribut [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] úkoly, jako [Csc](../msbuild/csc-task.md) nebo [Vbc –](../msbuild/vbc-task.md). V následujícím příkladu není platný v souboru projektu:  
 >   
->  `<CSC Sources="*.cs">...</CSC>`  
+> `<CSC Sources="*.cs">...</CSC>`  
   
 ## <a name="example"></a>Příklad  
  Následující příklad kódu ukazuje projekt, který obsahuje všechny vstupní soubory samostatně.  

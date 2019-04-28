@@ -14,12 +14,12 @@ caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a0964e390455b2225ec35debe79cdc79c38ed931
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
-ms.translationtype: MT
+ms.openlocfilehash: cb538360992a77dac66e4135647890e2a7732df4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194558"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443148"
 ---
 # <a name="visual-studio-multi-targeting-overview"></a>Přehled cílení na více verzí sady Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "58194558"
 V této verzi [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], můžete určit verzi [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] , která je vyžadována pro vaši aplikaci. Proto pokud chcete používat tuto verzi [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] dalším vývoji projektu, který jste započali v dřívější verzi, není nutné změnit cílový rámec. Můžete také vytvořit řešení, které obsahuje projekty zaměřené na různé verze rozhraní Framework. Cílení rozhraní také pomáhá zajistit, že aplikace používá pouze funkce, které jsou k dispozici v zadané verzi rozhraní framework.
 
 > [!TIP]
->  Můžete také směrovat aplikace pro různé platformy. Další informace najdete v tématu [cílení na více verzí](../msbuild/msbuild-multitargeting-overview.md)
+> Můžete také směrovat aplikace pro různé platformy. Další informace najdete v tématu [cílení na více verzí](../msbuild/msbuild-multitargeting-overview.md)
 
 ## <a name="framework-targeting-features"></a>Funkce cílení rozhraní
  Cílení rozhraní zahrnuje následující funkce:
@@ -57,19 +57,19 @@ V této verzi [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], můžete určit verz
 - V případě sestavení používá verzi kompilátoru a možnosti kompilátoru, které jsou vhodné pro cílovou verzi.
 
 > [!NOTE]
->  Cílení rozhraní není zárukou, že vaše aplikace bude pracovat správně. Je nutné otestovat vaši aplikaci a ujistit se, že běží před cílovou verzi. Nelze zaměřit verze systému, které jsou starší než .NET Framework 2.0.
+> Cílení rozhraní není zárukou, že vaše aplikace bude pracovat správně. Je nutné otestovat vaši aplikaci a ujistit se, že běží před cílovou verzi. Nelze zaměřit verze systému, které jsou starší než .NET Framework 2.0.
 
 ## <a name="selecting-a-target-framework-version"></a>Výběr cílové verze rozhraní
  Při vytváření projektu vyberte cílovou [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] verze **nový projekt** dialogové okno. Seznam dostupných šablon projektu je filtrován podle výběru. V existujícím projektu, můžete změnit cíl [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] verze v dialogovém okně Vlastnosti projektu. Další informace najdete v tématu [jak: Cílení na určitou verzi rozhraní .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
 
 > [!NOTE]
->  V edicích Express sady Visual Studio, nelze nastavit cílové rozhraní **nový projekt** dialogové okno.
+> V edicích Express sady Visual Studio, nelze nastavit cílové rozhraní **nový projekt** dialogové okno.
 
 ## <a name="resolving-system-and-user-assembly-references"></a>Řešení systému a odkazy na sestavení uživatele
  K cílení na určitou verzi rozhraní .NET Framework, musíte nejprve nainstalovat odpovídající odkazy na sestavení. Odkazy na sestavení pro rozhraní .NET Framework verze 2.0, 3.0 a 3.5 jsou zahrnuty v rozhraní .NET Framework 3.5 SP1, který si můžete stáhnout z [Microsoft Download Center, Microsoft Visual Studio](https://www.microsoft.com/download/details.aspx?id=25150) webu. Odkazy na sestavení pro rozhraní .NET Framework 3.5 Client Profile, .NET Framework 4, .NET Framework 4 Client Profile a Silverlight jsou také k dispozici [stahování sady Visual Studio](http://go.microsoft.com/fwlink/?LinkId=179687) webu.
 
 > [!NOTE]
->  Rozhraní .NET Framework client profile je podmnožinou rozhraní .NET Framework, která poskytuje omezenou sadu knihoven a funkcí. Další informace o profilech klienta naleznete v tématu [rozhraní .NET Framework Client Profile](http://msdn.microsoft.com/library/f0219919-1f02-4588-8704-327a62fd91f1).
+> Rozhraní .NET Framework client profile je podmnožinou rozhraní .NET Framework, která poskytuje omezenou sadu knihoven a funkcí. Další informace o profilech klienta naleznete v tématu [rozhraní .NET Framework Client Profile](http://msdn.microsoft.com/library/f0219919-1f02-4588-8704-327a62fd91f1).
 
  **Přidat odkaz** dialogové okno zakáže sestavení systému, které se netýkají cílové [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] verzi tak, že není možné je přidat do projektu neúmyslně. (Systémová sestavení jsou soubory .dll, které jsou součástí [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] verze.) Odkazy, které patří do verze rozhraní, které je vyšší než cílová verze, neposkytne řešení a ovládací prvky, které jsou závislé na takovém odkazu nelze přidat. Pokud chcete povolit takový odkaz, resetuje [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] cíli projektu na takový, který obsahuje odkaz.  Další informace najdete v tématu [Úvod do Návrháře projektu](http://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7).
 

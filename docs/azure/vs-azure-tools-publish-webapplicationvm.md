@@ -1,27 +1,31 @@
 ---
 title: Publikování WebApplicationVM | Dokumentace Microsoftu
 description: Zjistěte, jak nasadit webovou aplikaci k virtuálnímu počítači. Tento skript vytvoří požadované prostředky ve vašem předplatném Azure, pokud ještě neexistují.
+services: visual-studio-online
 author: ghogen
-manager: jillfra
+manager: douge
 assetId: de4cec95-f73f-44d9-babd-9f47f2633cdb
+ms.prod: visual-studio-dev15
+ms.technology: vs-azure
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
-ms.date: 11/11/2016
-ms.author: ghogen
+origin.date: 11/11/2016
+ms.date: 09/10/2018
+ms.author: v-junlch
 ms.openlocfilehash: 8b4b7a05de87ab8b70046b51fe9f256f05d3aee5
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55948054"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62572282"
 ---
 # <a name="publish-webapplicationvm-windows-powershell-script"></a>Publish-WebApplicationVM (skript Windows PowerShellu)
 Nasadí webovou aplikaci k virtuálnímu počítači. Skript vytvoří požadované prostředky ve vašem předplatném Azure, pokud ještě neexistují.
 
 ```
 Publish-WebApplicationVM
-–Configuration <configuration>
+-Configuration <configuration>
 -SubscriptionName <subscriptionName>
 -WebDeployPackage <packageName>
 -VMPassword @{Name = "name"; Password = "password")
@@ -118,7 +122,7 @@ Konfigurační soubor JSON má podrobnosti o co se má nasadit. Obsahuje informa
         "cloudService": {
             "name": "myvmname",
             "affinityGroup": "",
-            "location": "West US",
+            "location": "China North",
             "virtualNetwork": "",
             "subnet": "",
             "availabilitySet": "",
@@ -180,3 +184,6 @@ Konfigurační soubor JSON má podrobnosti o co se má nasadit. Obsahuje informa
 ```
 
 Můžete upravit konfigurační soubor JSON, chcete-li změnit, co je zřízený. Virtuální počítače a cloudové služby jsou povinné, ale databáze část je nepovinná.
+
+
+<!-- Update_Description: update metedata properties -->

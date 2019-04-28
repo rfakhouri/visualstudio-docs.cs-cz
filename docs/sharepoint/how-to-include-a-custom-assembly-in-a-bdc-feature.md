@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8162e44d92399a4b2031f6dc30b1f9dc56ae22e3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6de3313dad06c009244a8b784e81bf7d2a768c3b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059620"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443118"
 ---
 # <a name="how-to-include-a-custom-assembly-in-a-bdc-feature"></a>Postupy: Zahrnutí vlastního sestavení ve funkci BDC
   Váš projekt může odkazovat na sestavení z jiných projektů ve stejném řešení. Ale musíte přidat tato sestavení do funkcí souboru projektu pomocí **přiřadit odkazovaná sestavení k objektům LobSystem** dialogové okno.
@@ -40,12 +40,12 @@ ms.locfileid: "60059620"
 4. V **vyberte sestavení** , zvolte vlastní sestavení.
 
     > [!NOTE]
-    >  Sestavení se zobrazí pouze v **přiřadit odkazovaná sestavení k objektům LobSystem** dialogovému oknu, pokud jste přidali odkaz na projekt, který obsahuje sestavení. Další informace najdete v tématu [jak: Přidání nebo odebrání odkazů pomocí dialogového okna Přidat odkaz](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).
+    > Sestavení se zobrazí pouze v **přiřadit odkazovaná sestavení k objektům LobSystem** dialogovému oknu, pokud jste přidali odkaz na projekt, který obsahuje sestavení. Další informace najdete v tématu [jak: Přidání nebo odebrání odkazů pomocí dialogového okna Přidat odkaz](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).
 
 5. V **vlastnosti odkazu** seskupit, otevřete seznam, který se zobrazí pro **rozsah objektu LobSystem** vlastnost, zvolte systému LOB z metod, které používají vlastní sestavení a klikněte na tlačítko **OK**  tlačítko.
 
     > [!NOTE]
-    >  Chcete-li ladit kód v vlastní sestavení, je nutné přidat sestavení do balíčku řešení. Další informace najdete v tématu [jak: Přidání a odebrání dalších sestavení](../sharepoint/how-to-add-and-remove-additional-assemblies.md).
+    > Chcete-li ladit kód v vlastní sestavení, je nutné přidat sestavení do balíčku řešení. Další informace najdete v tématu [jak: Přidání a odebrání dalších sestavení](../sharepoint/how-to-add-and-remove-additional-assemblies.md).
 
 ## <a name="see-also"></a>Viz také:
 - [Postupy: Určení lokalizovaných názvů, vlastností a oprávnění pomocí zdrojového souboru](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)

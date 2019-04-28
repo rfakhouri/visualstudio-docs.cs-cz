@@ -11,12 +11,12 @@ ms.assetid: d1f985bd-743e-40b7-9458-d9af53647c91
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 96e5bc47a12e838fb11aa82c18981805abc4ae7b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 35372b6d228c8d1c0dbe985379b7753c0f88d311
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54790785"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440119"
 ---
 # <a name="getting-font-and-color-information-for-text-colorization"></a>Písma a barvy informace pro barevné zvýraznění textu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ Proces, který vykreslí nebo barevně zvýrazněné text se zobrazí prvky uži
  Většina implementací, které se zobrazí text barevně zvýrazněné potřebují `T:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults` a přidružené rozhraní pro nastavení zobrazení prezentace, načítání a ukládání textu.  
   
 > [!NOTE]
->  Při přizpůsobování základní editor (která podporuje **Text EditorCategory**), důrazně doporučujeme používat technologii barevné zvýraznění ve službě jazyka. Další informace najdete v tématu [písma a barvy přehled](../extensibility/font-and-color-overview.md).  
+> Při přizpůsobování základní editor (která podporuje **Text EditorCategory**), důrazně doporučujeme používat technologii barevné zvýraznění ve službě jazyka. Další informace najdete v tématu [písma a barvy přehled](../extensibility/font-and-color-overview.md).  
   
 ## <a name="getting-default-font-and-color-information"></a>Získání výchozí písmo a barvy informace  
  Všechny **písma a barvy** nastavení jakékoli okno zobrazení textu musí být zadán v **zobrazit položky** jednoho **kategorie**. Další informace najdete v tématu [písma a barvy, prostředí, dialogové okno Možnosti](../ide/reference/fonts-and-colors-environment-options-dialog-box.md).  

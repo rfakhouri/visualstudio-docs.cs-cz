@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 957805caa946dced54d52f1aa6b4a7f96e75b31a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 401ce9b8421cd636fc72c59dcd6641ff4e05d968
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091073"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440351"
 ---
 # <a name="architecture-of-vsto-add-ins"></a>Architektura doplňků VSTO
   Doplňků VSTO vytvořené pomocí nástroje Office developer tools v sadě Visual Studio máte architektury funkce, které zdůrazňují stabilitu a zabezpečení a povolte je těsná spolupráce s Microsoft Office. Toto téma popisuje následující aspekty doplňků VSTO:
@@ -44,7 +44,7 @@ ms.locfileid: "60091073"
  Pokud je nainstalovaná více doplňků VSTO pro aplikaci, načíst je každý doplňku VSTO v různých aplikační domény. To znamená, že jeden doplňku VSTO, který se chová nesprávně nemůže způsobit jiných doplňků VSTO selhání. Pomáhá také ujistit, že při zavření aplikace všechna doplňku VSTO sestavení jsou uvolněna z paměti. Další informace o aplikačních doménách najdete v tématu [aplikačních doménách](/dotnet/framework/app-domains/application-domains).
 
 > [!NOTE]
->  Doplňků VSTO, které vytvoříte pomocí nástroje Office developer tools v sadě Visual Studio jsou navrženy pro použití pouze v případě, že hostitel aplikace Microsoft Office je tím, že koncový uživatel. Pokud je aplikace spuštěna prostřednictvím kódu programu (například pomocí automatizace), doplňku VSTO nemusí fungovat podle očekávání.
+> Doplňků VSTO, které vytvoříte pomocí nástroje Office developer tools v sadě Visual Studio jsou navrženy pro použití pouze v případě, že hostitel aplikace Microsoft Office je tím, že koncový uživatel. Pokud je aplikace spuštěna prostřednictvím kódu programu (například pomocí automatizace), doplňku VSTO nemusí fungovat podle očekávání.
 
 ## <a name="AddinComponents"></a> Součástí doplňků VSTO
  I když je sestavení doplňku VSTO hlavní komponenty, existuje několik komponent, které hrají důležitou roli v tom, jak aplikace Microsoft Office zjišťovat a načíst doplňky VSTO.
@@ -70,7 +70,7 @@ ms.locfileid: "60091073"
  ![Architektura doplňků office 2007](../vsto/media/office07addin.png "architektura doplněk Office 2007")
 
 > [!NOTE]
->  V řešeních pro systém Office, které se zaměřují [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] nebo [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)], řešení pro volání do objektového modelu hostitelské aplikace podle pomocí informací o typu PIA, který je vložen do sestavení řešení, namísto volání do PIA přímo. Další informace najdete v tématu [návrhu a vytvořte řešení pro systém Office](../vsto/designing-and-creating-office-solutions.md).
+> V řešeních pro systém Office, které se zaměřují [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] nebo [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)], řešení pro volání do objektového modelu hostitelské aplikace podle pomocí informací o typu PIA, který je vložen do sestavení řešení, namísto volání do PIA přímo. Další informace najdete v tématu [návrhu a vytvořte řešení pro systém Office](../vsto/designing-and-creating-office-solutions.md).
 
 ### <a name="loading-process"></a>Proces načítání
  Když uživatel spustí aplikaci dojde k následujícím krokům:
@@ -100,7 +100,7 @@ ms.locfileid: "60091073"
      Volitelně můžete přepsat tuto metodu za účelem rozšíření funkcí sady Microsoft Office tak, že vrací objekt, který implementuje rozhraní rozšíření. Další informace najdete v tématu [funkcí přizpůsobení uživatelského rozhraní pomocí rozšiřujících rozhraní](../vsto/customizing-ui-features-by-using-extensibility-interfaces.md).
 
     > [!NOTE]
-    >  [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Provede samostatná volání <xref:Microsoft.Office.Tools.AddInBase.RequestService%2A> metodu pro každé rozšíření rozhraní, který podporuje hostitelskou aplikaci. I když se první volání <xref:Microsoft.Office.Tools.AddInBase.RequestService%2A> metoda obvykle dochází, před voláním `ThisAddIn_Startup` metody doplňku VSTO neměl by jakkoli o tom, kdy <xref:Microsoft.Office.Tools.AddInBase.RequestService%2A> volaná metoda nebo jak často bude zavolána.
+    > [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Provede samostatná volání <xref:Microsoft.Office.Tools.AddInBase.RequestService%2A> metodu pro každé rozšíření rozhraní, který podporuje hostitelskou aplikaci. I když se první volání <xref:Microsoft.Office.Tools.AddInBase.RequestService%2A> metoda obvykle dochází, před voláním `ThisAddIn_Startup` metody doplňku VSTO neměl by jakkoli o tom, kdy <xref:Microsoft.Office.Tools.AddInBase.RequestService%2A> volaná metoda nebo jak často bude zavolána.
 
 11. [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Volání `ThisAddIn_Startup` metoda v doplňku VSTO. Tato metoda je obslužnou rutinu výchozí události pro <xref:Microsoft.Office.Tools.AddInBase.Startup> událostí. Další informace najdete v tématu [události v projektech pro systém Office](../vsto/events-in-office-projects.md).
 

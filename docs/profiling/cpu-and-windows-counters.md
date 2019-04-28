@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 37025177c026d0b6578644ca5765a6878be984ea
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56625683"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62552998"
 ---
 # <a name="cpu-and-windows-counters"></a>Čítače procesoru a systému Windows
 
@@ -121,7 +121,7 @@ Použití [VSPerfCmd](../profiling/vsperfcmd.md) nástroj příkazového řádku
 
 1. Otevřete okno příkazového řádku.
 
-2. Typ
+2. Type
 
      **\<Visual Studio výkonu nástroje adresář >/querycounters \VSPerfCmd**
 

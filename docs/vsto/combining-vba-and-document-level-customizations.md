@@ -24,12 +24,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3d28efe175bb5bf3e5088918375f580d8076cff9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5e1a4eeeaf6cc979fd9ee7c3ea36a900899596a4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60055298"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63447163"
 ---
 # <a name="combine-vba-and-document-level-customizations"></a>Kombinování přizpůsobení na úrovni dokumentu a VBA
   Používat Visual Basic for Applications (VBA) kódu v dokumentu, který je součástí přizpůsobení úrovni dokumentu pro aplikaci Microsoft Office Word nebo Microsoft Office Excel. Můžete volat kód VBA v dokumentu z vlastního nastavení sestavení nebo projektu, aby umožňoval kód VBA v dokumentu k volání kódu v sestavení přizpůsobení můžete nakonfigurovat.
@@ -69,7 +69,7 @@ Globals.Sheet1.Application.Run("MyMacro", missing, missing, missing,
 ```
 
 > [!NOTE]
->  Další informace o použití globálního `missing` proměnnou místo volitelné parametry v jazyce Visual C# naleznete v tématu [psaní kódu v řešeních pro systém Office](../vsto/writing-code-in-office-solutions.md).
+> Další informace o použití globálního `missing` proměnnou místo volitelné parametry v jazyce Visual C# naleznete v tématu [psaní kódu v řešeních pro systém Office](../vsto/writing-code-in-office-solutions.md).
 
 ## <a name="call-code-in-document-level-customizations-from-vba"></a>Volání kódu v přizpůsobeních na úrovni dokumentu z jazyka VBA
  Můžete nakonfigurovat úrovni dokumentu projektu pro aplikaci Word nebo Excel, tento kód Visual Basic for Applications (VBA) v dokumentu může volat kód v sestavení přizpůsobení. To je užitečné v následujících scénářích:
@@ -81,7 +81,7 @@ Globals.Sheet1.Application.Run("MyMacro", missing, missing, missing,
   Vývojářské nástroje balíku Office v sadě Visual Studio poskytuje podobné funkce pro doplňky VSTO. Pokud vyvíjíte doplňku VSTO, můžete volat kódu v doplňku VSTO z jiných řešení pro Microsoft Office. Další informace najdete v tématu [volání kódu v doplňcích VSTO z jiných řešení pro Office](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md).
 
 > [!NOTE]
->  Tuto funkci nelze použít v projektech aplikace Word šablony. Je možné pouze v Wordový dokument, sešit aplikace Excel nebo projektů šablona aplikace Excel.
+> Tuto funkci nelze použít v projektech aplikace Word šablony. Je možné pouze v Wordový dokument, sešit aplikace Excel nebo projektů šablona aplikace Excel.
 
 ## <a name="requirements"></a>Požadavky
  Před povolením kód VBA, chcete-li volat vlastního nastavení sestavení, váš projekt musí splňovat následující požadavky:
@@ -120,7 +120,7 @@ Globals.Sheet1.Application.Run("MyMacro", missing, missing, missing,
   **EnableVbaCallers** a **ReferenceAssemblyFromVbaProject** jsou k dispozici pouze ve vlastnosti **vlastnosti** okno v době návrhu, nelze je použít v době běhu . Chcete-li zobrazit vlastnosti, otevřete návrhář pro položku hostitele v [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Další informace o konkrétních úloh, které Visual Studio provádí při nastavování těchto vlastností najdete v tématu [úlohy prováděné vlastnosti hostitele](#PropertyTasks).
 
 > [!NOTE]
->  Pokud sešit nebo dokument už neobsahuje kód VBA, nebo pokud kód VBA v dokumentu není důvěryhodný pro spuštění, zobrazí se chybová zpráva při nastavení **EnableVbaCallers** nebo **ReferenceAssemblyFromVbaProject**  vlastnost **True**. Je to proto, že Visual Studio nelze upravit projektu VBA v dokumentu v této situaci.
+> Pokud sešit nebo dokument už neobsahuje kód VBA, nebo pokud kód VBA v dokumentu není důvěryhodný pro spuštění, zobrazí se chybová zpráva při nastavení **EnableVbaCallers** nebo **ReferenceAssemblyFromVbaProject**  vlastnost **True**. Je to proto, že Visual Studio nelze upravit projektu VBA v dokumentu v této situaci.
 
 ## <a name="use-members-in-vba-code-to-call-into-the-customization-assembly"></a>Použití členů v kód VBA pro volání do vlastního nastavení sestavení
  Po dokončení konfigurace projektu, aby umožňoval kód VBA, chcete-li volat vlastního nastavení sestavení Visual Studio přidá následující členy do projektu VBA v dokumentu:
@@ -132,7 +132,7 @@ Globals.Sheet1.Application.Run("MyMacro", missing, missing, missing,
   Můžete použít `CallVSTOAssembly` vlastnost nebo `GetManagedClass` metody pro přístup k veřejné členy třídy, která je vystavená pro kód VBA v projektu.
 
 > [!NOTE]
->  Při vývoji a nasazení vašeho řešení, existují různé kopie dokumentu ve kterém můžete přidat kód VBA. Další informace najdete v tématu [kódu pokyny pro přidání VBA v dokumentu](#Guidelines).
+> Při vývoji a nasazení vašeho řešení, existují různé kopie dokumentu ve kterém můžete přidat kód VBA. Další informace najdete v tématu [kódu pokyny pro přidání VBA v dokumentu](#Guidelines).
 
 ### <a name="use-the-callvstoassembly-property-in-a-visual-basic-project"></a>Vlastnost CallVSTOAssembly použít v projektu jazyka Visual Basic
  Použití `CallVSTOAssembly` vlastnosti pro přístup k veřejné členy, které jste přidali do třídy položku hostitele. Například následující makra VBA volá metodu s názvem `MyVSTOMethod` , která je definována v `Sheet1` třídu v projektu sešitu aplikace Excel.
@@ -189,7 +189,7 @@ GetManagedClass(pdispInteropObject Object) As Object
  Zatímco je otevřen v návrháři, nelze přidat kód VBA v dokumentu. Musíte nejprve zavřít dokument v návrháři a potom otevřete dokument přímo v aplikaci Word nebo Excel.
 
 > [!CAUTION]
->  Pokud chcete přidat kód VBA, který se spustí při otevření dokumentu, ve výjimečných případech tento kód může poškodit dokumentu nebo brání jeho otevření v návrháři.
+> Pokud chcete přidat kód VBA, který se spustí při otevření dokumentu, ve výjimečných případech tento kód může poškodit dokumentu nebo brání jeho otevření v návrháři.
 
 ### <a name="in-the-publish-or-installation-folder"></a>Ve složce instalace nebo publikovat
  V některých případech může být vhodné přidat kód VBA v dokumentu ve složce instalace nebo publikovat. Například můžete zvolit tuto možnost, pokud kód VBA, je vytvoření a otestování různých vývojáři, kteří v počítači, který nemá nainstalovanou sadu Visual Studio.
@@ -220,7 +220,7 @@ GetManagedClass(pdispInteropObject Object) As Object
 5. Odebírá **GetAutomationObject** metodu z třídy položku hostitele.
 
    > [!NOTE]
-   >  Visual Studio automaticky nenastaví **ReferenceAssemblyFromVbaProject** vlastnost zpět do **False**. Tuto vlastnost lze nastavit **False** ručně pomocí **vlastnosti** okna.
+   > Visual Studio automaticky nenastaví **ReferenceAssemblyFromVbaProject** vlastnost zpět do **False**. Tuto vlastnost lze nastavit **False** ručně pomocí **vlastnosti** okna.
 
 ### <a name="referenceassemblyfromvbaproject"></a>ReferenceAssemblyFromVbaProject
  Když **ReferenceAssemblyFromVbaProject** libovolné položky hostitele v projektu jazyka Visual Basic nebo Visual C# je nastavena na **True**, Visual Studio provede následující úlohy:

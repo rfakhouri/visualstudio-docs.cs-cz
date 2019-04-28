@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 2abf61bbc960e342a395e9c0ff3395ecde852137
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604863"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62580968"
 ---
 # <a name="create-site-definitions-for-sharepoint"></a>Vytváření definic webu pro službu SharePoint
   Do projektu definice webu služby SharePoint [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] umožňuje vytvářet *definice webu*, který slouží jako základ pro nový web Sharepointu. Tyto definice nejen určit vzhled a chování webu služby SharePoint, ale jeho výchozí obsah a funkce. V definici můžete umístit předkonfigurované seznamy, typy obsahu, přijímače událostí, obrázky a další položky. SharePoint obsahuje několik definic webu například BLOGU, třeba. Při vytváření webu na základě definice webu BLOGU webu obsahuje seznamy, webové části a další položky, které vyžaduje blogovací web.

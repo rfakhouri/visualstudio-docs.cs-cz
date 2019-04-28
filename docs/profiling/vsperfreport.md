@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: eb1e20b019e4d32aff1ed71d3e4483a1bd9bd143
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56619781"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62581263"
 ---
 # <a name="vsperfreport"></a>VSPerfReport
 Vsperfreport – nástroj příkazového řádku se používá k vytvoření sestavy, které používají [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] nástrojů pro profilaci sady souborů dat profilování. Výchozí formát sestavy. *sdíleného svazku clusteru* souboru.

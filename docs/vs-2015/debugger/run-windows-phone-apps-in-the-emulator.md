@@ -14,12 +14,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7d9b30dd50838eced1299e4aaae6999c8fb9f0e5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c594e3837a4fe2c8b2e5a7b69e5db93377a8dc8d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60052207"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442325"
 ---
 # <a name="run-windows-phone-apps-in-the-emulator"></a>Spouštění aplikací pro Windows Phone v emulátoru
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ Emulátor Windows Phone poskytuje virtualizované prostředí, ve kterém může
    Pokud vybraný emulátor je již spuštěn, je aplikace nasazena a spuštění v spuštěný emulátor. Najednou můžete spustit pouze jedna instance každé emulátoru.  
   
 > [!TIP]
->  Při testování vaší aplikace v emulátoru, ponechte emulátor, které jsou otevřené mezi ladicími relacemi, takže budete moci spustit vaši aplikaci znovu rychle pracovní postupy.  
+> Při testování vaší aplikace v emulátoru, ponechte emulátor, které jsou otevřené mezi ladicími relacemi, takže budete moci spustit vaši aplikaci znovu rychle pracovní postupy.  
   
 ### <a name="BKMK_vs"></a> Spuštění aplikace ze sady Visual Studio  
   

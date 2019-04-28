@@ -11,18 +11,18 @@ helpviewer_keywords:
 ms.assetid: abbd3c3c-3a6e-4539-bd6c-a5891dead234
 caps.latest.revision: 12
 manager: jillfra
-ms.openlocfilehash: a2b51b8f07a1cc049e4761001bfea754b6ca1819
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 33b4d8f1932429838f701df1f6ffaaceef321c4e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105640"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442922"
 ---
 # <a name="how-to-create-a-toolbox-control-that-uses-windows-forms"></a>Postupy: Vytvoření ovládacího prvku panel nástrojů, který používá Windows Forms
 Šablony ovládacího prvku Windows Forms panel nástrojů, který je součástí [!INCLUDE[vssdk_dev11_long](../includes/vssdk-dev11-long-md.md)] umožňuje vytvořit ovládací prvky Windows Forms, které jsou automaticky přidány do **nástrojů** při instalaci rozšíření. Toto téma ukazuje, jak použít šablonu k vytvoření **nástrojů** ovládacího prvku, které můžete distribuovat ostatním uživatelům...  
   
 > [!NOTE]
->  Stažení sady Visual Studio SDK naleznete v tématu [středisko pro vývojáře rozšiřitelnosti Visual Studio](http://go.microsoft.com/fwlink/?linkid=121964) na webové stránce MSDN.  
+> Stažení sady Visual Studio SDK naleznete v tématu [středisko pro vývojáře rozšiřitelnosti Visual Studio](http://go.microsoft.com/fwlink/?linkid=121964) na webové stránce MSDN.  
   
 ## <a name="creating-a-toolbox-control"></a>Vytvoření ovládacího prvku panel nástrojů  
  Pomocí šablony ovládacího prvku Windows Forms panel nástrojů pro vytvoření projektu a následně vytvořit uživatelské rozhraní (UI) v návrháři.  

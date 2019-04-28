@@ -16,12 +16,12 @@ caps.latest.revision: 53
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 020dd35d225d8629a8061d1a74b234b62960c830
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c95a361f00e9b744aa78f443ad7c173209a5a0bd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056156"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442430"
 ---
 # <a name="generate-code-from-uml-class-diagrams"></a>Generování kódu z diagramů tříd UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -101,7 +101,7 @@ Chcete-li generovat Visual C# .NET kódu z diagramů tříd UML v sadě Visual S
 2. V **vlastnosti** okna, klikněte na šipku rozevíracího seznamu v **Stereotypy** vlastnost a potom zaškrtněte políčko stereotypu, který chcete použít.  
 
    > [!TIP]
-   >  Pokud se stereotypy jazyka C# nezobrazí, povolte profil jazyka C# pro model nebo balíček obsahující prvky modelu, které vás zajímají. Vyberte balíček nebo kořen modelu v **Průzkumníku modelů UML**. Pak v **vlastnosti** okně zvolte **profilu**a poté povolte profil jazyka C#.  
+   > Pokud se stereotypy jazyka C# nezobrazí, povolte profil jazyka C# pro model nebo balíček obsahující prvky modelu, které vás zajímají. Vyberte balíček nebo kořen modelu v **Průzkumníku modelů UML**. Pak v **vlastnosti** okně zvolte **profilu**a poté povolte profil jazyka C#.  
 
 3. Rozbalte **Stereotypy** vlastnosti chcete zobrazit další vlastnosti, které můžete nastavit.  
 
@@ -144,7 +144,7 @@ Chcete-li generovat Visual C# .NET kódu z diagramů tříd UML v sadě Visual S
  Na prvek modelu lze použít více než jednu šablonu. Z každého prvku modelu lze vytvořit více než jeden soubor.  
 
 > [!NOTE]
->  Vazby připojené ke kořenu modelu jsou použity jako výchozí pro všechny prvky v modelu. Chcete-li zobrazit tyto výchozí vazby, otevřete **Průzkumníku modelů UML**. Otevřete místní nabídku projektu modelování, a pak zvolte **nastavení generování kódu**. Případně lze vybrat kořen modelu v Průzkumníku modelů UML. V okně Vlastnosti zvolte **[...]**  v **vazby textové šablony** vlastnost. Tyto vazby se nezobrazí, dokud jste použili **generovat kód** příkaz alespoň jednou. Vazby šablony nelze připojit k diagramu.  
+> Vazby připojené ke kořenu modelu jsou použity jako výchozí pro všechny prvky v modelu. Chcete-li zobrazit tyto výchozí vazby, otevřete **Průzkumníku modelů UML**. Otevřete místní nabídku projektu modelování, a pak zvolte **nastavení generování kódu**. Případně lze vybrat kořen modelu v Průzkumníku modelů UML. V okně Vlastnosti zvolte **[...]**  v **vazby textové šablony** vlastnost. Tyto vazby se nezobrazí, dokud jste použili **generovat kód** příkaz alespoň jednou. Vazby šablony nelze připojit k diagramu.  
 
 #### <a name="to-attach-text-template-bindings-to-a-package-or-other-model-element"></a>Připojení vazby textové šablony k balíčku nebo jinému prvku modelu  
 

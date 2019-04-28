@@ -13,12 +13,12 @@ caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d5b7e8dbe12f9c57c101c8f877dfcb0c6ee3196f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3a37350cf274fbb551326ac96387330b0f3956e7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60064690"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439702"
 ---
 # <a name="walkthrough-command-line-profiling-using-instrumentation"></a>Návod: Příkazový řádek, profilace s použitím instrumentace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ Tento názorný postup vás provede profilace [!INCLUDE[dnprdnshort](../includes
  Instrumentace je metodu profilace, podle kterého obsahují speciálně vytvořených verze profilovaných binárních souborů testu funkce, které shromažďovat informace o časování na vstupu a výstupu funkcí v instrumentovaném modulu. Vzhledem k tomu, že tato metoda profilování invazivnější než vzorkování, budou vám účtovány větší množství režie. Instrumentované binární soubory jsou také větší než ladění nebo vydání binární soubory a nejsou určeny pro nasazení.  
   
 > [!NOTE]
->  Neodesílejte instrumentované binární soubory pro vaše zákazníky. Instrumentované binární soubory může obsahovat několik rizik. Binární soubory zahrnují informace, které vaše aplikace usnadňuje zpětné analýzy, jakož i bezpečnostní rizika.  
+> Neodesílejte instrumentované binární soubory pro vaše zákazníky. Instrumentované binární soubory může obsahovat několik rizik. Binární soubory zahrnují informace, které vaše aplikace usnadňuje zpětné analýzy, jakož i bezpečnostní rizika.  
   
 #### <a name="to-profile-the-peopletrax-application-by-using-the-instrumentation-method"></a>Chcete-li Profilovat aplikaci PeopleTrax pomocí metody instrumentace  
   

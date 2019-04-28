@@ -11,12 +11,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d7d37db61f49db19d952cf5b45699b604a91e090
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 4282b865bbe85a70e1565e17987600da5c7960e5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54752910"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444050"
 ---
 # <a name="concurrency-visualizer-command-line-utility-cvcollectioncmd"></a>Nástroj příkazového řádku Vizualizéru souběžnosti (CVCollectionCmd)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "54752910"
 Můžete použít nástroj příkazového řádku Vizualizéru souběžnosti (CVCollectionCmd.exe) ke shromažďování trasování z příkazového řádku, takže můžete je zobrazit v Concurrency Visualizer pro sadu Visual Studio. Ostupné fondy lze použít v počítačích, v nichž není nainstalována sada Visual Studio.  
   
 > [!NOTE]
->  Spouští se v sadě Visual Studio 2013, Vizualizátor souběžnosti je volitelné rozšíření. (Dříve to bylo byl součástí sady Visual Studio.) Můžete stáhnout [Concurrency Visualizer kolekce nástrojů pro Visual Studio 2015](http://www.microsoft.com/download/details.aspx?id=49103) ze služby Stažení softwaru.  
+> Spouští se v sadě Visual Studio 2013, Vizualizátor souběžnosti je volitelné rozšíření. (Dříve to bylo byl součástí sady Visual Studio.) Můžete stáhnout [Concurrency Visualizer kolekce nástrojů pro Visual Studio 2015](http://www.microsoft.com/download/details.aspx?id=49103) ze služby Stažení softwaru.  
   
 ## <a name="download-the-concurrency-visualizer-command-line-utility"></a>Stáhněte si nástroj příkazového řádku Vizualizéru souběžnosti  
  Chcete-li stáhnout a nainstalovat nástroj příkazového řádku, přejděte na [Concurrency Visualizer kolekce nástrojů pro Visual Studio 2015](http://www.microsoft.com/download/details.aspx?id=49103) a postupujte podle pokynů. Ve výchozím nastavení, CVCollectionCmd.exe nachází v %ProgramFiles%\Microsoft Tools\ kolekce Vizualizéru souběžnosti (% ProgramFiles (x86) %\Microsoft Tools\ kolekce Vizualizátor souběžnosti na x64 počítače).  
@@ -43,7 +43,7 @@ Můžete použít nástroj příkazového řádku Vizualizéru souběžnosti (CV
   
 |Možnost|Popis|Parametry|Vrácené hodnoty|  
 |------------|-----------------|----------------|-------------------|  
-|Dotazy|Vrátí, zda shromažďování lze spustit.|Žádná|0, pokud kolekce je připraven ke spuštění.<br /><br /> 1, pokud kolekce je již spuštěna.<br /><br /> 2, pokud kolekce není v průběhu, ale jeden nebo více požadovaných [trasování událostí pro Windows](http://msdn.microsoft.com/library/ac99a063-e2d2-40cc-b659-d23c2f783f92) relace je již povolen.|  
+|Dotazy|Vrátí, zda shromažďování lze spustit.|Žádné|0, pokud kolekce je připraven ke spuštění.<br /><br /> 1, pokud kolekce je již spuštěna.<br /><br /> 2, pokud kolekce není v průběhu, ale jeden nebo více požadovaných [trasování událostí pro Windows](http://msdn.microsoft.com/library/ac99a063-e2d2-40cc-b659-d23c2f783f92) relace je již povolen.|  
 |Spuštění|Spustí zadaný procesu v rámci Vizualizátor souběžnosti.|Cesta ke spustitelnému souboru.|0, pokud spuštění úspěšné.<br /><br /> 1, pokud spuštění selhalo, protože nebylo možné spustit cílovou aplikaci.<br /><br /> 13, pokud spuštění selhalo, protože CVCollectionCmd nemá dostatečná oprávnění k zápisu do zadaného výstupního adresáře.|  
 |Připojit|Začne sběr trasování celého systému; v opačném případě připojí k procesu, pokud je zadaná.|Žádné|0, pokud byla úspěšná přílohy.<br /><br /> 1 pro přílohy se nezdařilo, protože určený proces je neplatný nebo nejednoznačný.<br /><br /> 13 Pokud přílohy se nezdařilo, protože CVCollectionCmd nemá dostatečná oprávnění k zápisu do zadaného výstupního adresáře:.|  
 |Odpojit|Zastaví shromažďování.|Žádné|0, pokud bylo úspěšné odpojení.<br /><br /> 1 pro odpojení se nezdařilo, protože kolekce není právě probíhá.<br /><br /> 2, pokud odpojení se nezdařilo, protože kolekce se nepovedlo zastavit.|  
@@ -57,7 +57,7 @@ Můžete použít nástroj příkazového řádku Vizualizéru souběžnosti (CV
  Pokud chcete upravit nastavení kolekce shromažďovat trasování pomocí CVCollectionCmd, použijte konfigurační soubor se zadávají.  
   
 > [!NOTE]
->  Když shromažďovat trasování pomocí sady Visual Studio, nemusíte upravovat přímo konfiguračního souboru.  Místo toho použijte [Upřesnit nastavení](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) dialogové okno Upravit nastavení.  
+> Když shromažďovat trasování pomocí sady Visual Studio, nemusíte upravovat přímo konfiguračního souboru.  Místo toho použijte [Upřesnit nastavení](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) dialogové okno Upravit nastavení.  
   
  Pokud chcete upravit nastavení shromažďování, vytvořte soubor konfigurace na počítači, kde budete spouštět nástroj CVCollectionCmd. Konfigurační soubor můžete vytvořit úplně od začátku, nebo můžete zkopírovat konfigurační soubor na počítači, který má nainstalovanou sadu Visual Studio a upravit. Soubor `UserConfig.xml` a nachází se v **místní AppData** složky. Když spustíte nástroj, použijte možnost konfigurace ve spojení s příkazem spuštění, připojit a analyzovat.  V parametru, který je spojen s možností konfigurace zadejte cestu konfigurační soubor.  
   

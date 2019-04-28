@@ -9,18 +9,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: afb835c883050064d96c32c80de75d58299892f7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c639ecc19f99f25fb5cb38539d2322131ddc2e0c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040687"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446322"
 ---
 # <a name="accessing-models-from-text-templates"></a>Přístup k modelům z textových šablon
 Pomocí textových šablon, můžete vytvořit sestavy soubory, soubory se zdrojovým kódem a jiné textové soubory, které jsou založeny na modely jazyka specifického pro doménu. Základní informace o textových šablonách naleznete v tématu [generování kódu a textové šablony T4](../modeling/code-generation-and-t4-text-templates.md). Textové šablony budou fungovat v experimentálním režimu při ladění vašeho DSL a budou fungovat i v počítači, na které jste nasadili DSL.
 
 > [!NOTE]
->  Když vytvoříte řešení DSL, ukázka textové šablony  **\*.tt** soubory jsou vygenerovány v ladění projektu. Při změně názvu doménové třídy tyto šablony už nebude fungovat. Nicméně, zahrnují základní direktivy, které potřebujete a uvádějte příklady, které můžete aktualizovat tak, aby odpovídaly vašeho DSL.
+> Když vytvoříte řešení DSL, ukázka textové šablony  **\*.tt** soubory jsou vygenerovány v ladění projektu. Při změně názvu doménové třídy tyto šablony už nebude fungovat. Nicméně, zahrnují základní direktivy, které potřebujete a uvádějte příklady, které můžete aktualizovat tak, aby odpovídaly vašeho DSL.
 
  Pro přístup k modelu z textové šablony:
 
@@ -97,7 +97,7 @@ Here is a list of elements in the model:
 ## <a name="Multiple"></a> Přístup k více modelů z textové šablony
 
 > [!NOTE]
->  Tato metoda umožňuje číst několik modelů v stejnou šablonu, ale nepodporuje odkazy ModelBus. Modely, které jsou vzájemně propojena ModelBus odkazy najdete v tématu [pomocí Visual Studio ModelBus v textové šabloně](../modeling/using-visual-studio-modelbus-in-a-text-template.md).
+> Tato metoda umožňuje číst několik modelů v stejnou šablonu, ale nepodporuje odkazy ModelBus. Modely, které jsou vzájemně propojena ModelBus odkazy najdete v tématu [pomocí Visual Studio ModelBus v textové šabloně](../modeling/using-visual-studio-modelbus-in-a-text-template.md).
 
  Pokud chcete pro přístup k více než jeden model ze stejné textové šablony, je nutné volat procesoru vygenerovaných direktiv vždy jednou pro každý model. Musíte zadat název souboru každý model v `requires` parametru. Je nutné zadat názvy, které chcete použít pro třídu kořenové domény v `provides` parametru. Je nutné zadat jiné hodnoty `provides` parametrů každé volání rozhraní direktiv. Předpokládejme například, že máte tři soubory modelu s názvem Library.xyz, School.xyz a Work.xyz. Pro přístup k nim ze stejné textové šablony, musí zapsat tři direktiv volání, které se podobají následující dotazy.
 
@@ -108,7 +108,7 @@ Here is a list of elements in the model:
 ```
 
 > [!NOTE]
->  Tento příklad kódu je pro jazyk, který je založen na šabloně minimální jazykový řešení.
+> Tento příklad kódu je pro jazyk, který je založen na šabloně minimální jazykový řešení.
 
  Pro přístup k modelů do textové šablony, teď můžete psát kód podobný kód v následujícím příkladu.
 

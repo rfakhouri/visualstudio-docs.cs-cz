@@ -29,11 +29,11 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 3b536a17df4f54158aa6f157a0d9795cf359ddc0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56633795"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62900268"
 ---
 # <a name="clickonce-unmanaged-api-reference"></a>ClickOnce – nespravované rozhraní API
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] nespravované veřejného rozhraní API z dfshim.dll.
@@ -52,7 +52,7 @@ ms.locfileid: "56633795"
 
 ### <a name="parameters"></a>Parametry
 
-|Parametr|Popis|Typ|
+|Parametr|Popis|Type|
 |---------------|-----------------|----------|
 |`pcwzActivationUrl`|Ukazatel `ActivationURL`.|LPCWSTR|
 |`pcwzPathToDeploymentManifest`|Ukazatel `PathToDeploymentManifest`.|LPCWSTR|
@@ -80,7 +80,7 @@ ms.locfileid: "56633795"
 
 ### <a name="parameters"></a>Parametry
 
-|Parametr|Popis|Typ|
+|Parametr|Popis|Type|
 |---------------|-----------------|----------|
 |`deploymentUrl`|Ukazatel na řetězec zakončený hodnotou NULL, který obsahuje adresu URL v manifestu nasazení.|LPCWSTR|
 |`data`|Vyhrazeno pro budoucí použití. Musí mít hodnotu NULL.|LPVOID –|

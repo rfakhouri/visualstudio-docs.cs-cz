@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cb6793855fc4df4080a7f94799cfe2372308a5a0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ced39d928b2d0d02c7008d6b44c934ccd053b09b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060303"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63409993"
 ---
 # <a name="create-a-basic-project-system-part-1"></a>Vytvoření systému základního projektu, část 1
 Projekty v sadě Visual Studio, jsou kontejnery, které vývojáři použít k uspořádání souborů se zdrojovým kódem a dalších zdrojů. Projekty se zobrazují jako podřízené objekty daného řešení **Průzkumníka řešení**. Projekty umožňují organizovat, sestavovat, ladit a nasadit zdrojový kód a vytvořit odkazy na webové služby, databáze a další prostředky.
@@ -25,7 +25,7 @@ Projekty v sadě Visual Studio, jsou kontejnery, které vývojáři použít k u
  Projekty jsou definovány v souborech projektu, například *.csproj* souboru pro projekt jazyka Visual C#. Můžete vytvořit vlastní typ projektu, který má vlastní příponou názvu souboru projektu. Další informace o typech projektů naleznete v tématu [typy projektů](../extensibility/internals/project-types.md).
 
 > [!NOTE]
->  Pokud potřebujete rozšířit do vlastního typu projektu sady Visual Studio, důrazně doporučujeme využívat [systém projektu sady Visual Studio](https://github.com/Microsoft/VSProjectSystem) (VSPS) která má několik výhod oproti sestavení systém projektu od začátku:
+> Pokud potřebujete rozšířit do vlastního typu projektu sady Visual Studio, důrazně doporučujeme využívat [systém projektu sady Visual Studio](https://github.com/Microsoft/VSProjectSystem) (VSPS) která má několik výhod oproti sestavení systém projektu od začátku:
 >
 > - Jednodušší registraci.  Dokonce i systému základního projektu vyžaduje desítky tisíc řádků kódu.  Využití VSPS snižuje náklady na připojování na pár kliknutí, předtím, než budete chtít přizpůsobit podle vašich potřeb.
 > - Snazší Údržba.  S využitím VSPS, stačí udržovat vlastní scénáře.  My se postaráme udržování infrastruktura systému projektu.
@@ -35,7 +35,7 @@ Projekty v sadě Visual Studio, jsou kontejnery, které vývojáři použít k u
  Tento návod ukazuje, jak vytvořit typ projektu, který má příponu názvu souboru projektu *.myproj*. Tento názorný postup vypůjčí z existující systém projektu Visual C#.
 
 > [!NOTE]
->  Další příklady rozšíření projektů, naleznete v tématu [VSSDK ukázky](https://aka.ms/vs2015sdksamples).
+> Další příklady rozšíření projektů, naleznete v tématu [VSSDK ukázky](https://aka.ms/vs2015sdksamples).
 
  Tento návod se naučíte k provedení následujících úkolů:
 
@@ -101,7 +101,7 @@ Projekty v sadě Visual Studio, jsou kontejnery, které vývojáři použít k u
    ```
 
    > [!IMPORTANT]
-   >  Toto není poslední formu *Program.cs* kódu; nahrazení parametrů se budou řešit v pozdějším kroku. Může se zobrazit chyby, ale tak dlouho, dokud soubor **BuildAction** je **obsahu**, byste měli moct sestavit a spustit projekt jako obvykle.
+   > Toto není poslední formu *Program.cs* kódu; nahrazení parametrů se budou řešit v pozdějším kroku. Může se zobrazit chyby, ale tak dlouho, dokud soubor **BuildAction** je **obsahu**, byste měli moct sestavit a spustit projekt jako obvykle.
 
 7. Uložte soubor.
 
@@ -110,7 +110,7 @@ Projekty v sadě Visual Studio, jsou kontejnery, které vývojáři použít k u
 9. V *Projects\SimpleProject* složky přidejte soubor XML s názvem *SimpleProject.myproj*.
 
    > [!NOTE]
-   >  Přípona názvu souboru pro všechny projekty tohoto typu je *.myproj*. Pokud chcete změnit, musíte jej změnit všude, kde je uvedený v tomto návodu.
+   > Přípona názvu souboru pro všechny projekty tohoto typu je *.myproj*. Pokud chcete změnit, musíte jej změnit všude, kde je uvedený v tomto návodu.
 
 10. Nahraďte existující obsah s následujícími řádky.
 
@@ -255,7 +255,7 @@ Templates
         ```
 
         > [!IMPORTANT]
-        >  Nezapomeňte zpětné lomítko na konci cesty.
+        > Nezapomeňte zpětné lomítko na konci cesty.
 
     3. Znovu načte projekt.
 

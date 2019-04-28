@@ -9,12 +9,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 59e8206bd1110a06c8b94b71ac9da8253a3a4b25
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
-ms.translationtype: MT
+ms.openlocfilehash: f27e09cd66c05a10648205850a9547d7b191d2de
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416294"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62787389"
 ---
 # <a name="get-started-with-live-unit-testing-in-visual-studio"></a>Začínáme s Live Unit Testing v sadě Visual Studio
 
@@ -34,7 +34,7 @@ Kompletní řešení jazyka Visual Basic si můžete stáhnout z [MicrosoftDocs/
 
 ## <a name="prerequisites"></a>Požadavky
 
-Tento kurz vyžaduje, že jste nainstalovali Visual Studio Enterprise Edition s úlohou .NET Core 2.0.
+Tento kurz vyžaduje, že jste nainstalovali Visual Studio Enterprise edition s úlohou .NET Core 2.0.
 
 ## <a name="create-the-solution-and-the-class-library-project"></a>Vytvoření řešení a projekt knihovny tříd
 
@@ -94,11 +94,11 @@ Teď, když jsme vytvořili řešení, vytvoříte knihovny tříd s názvem `St
 
    `StringLibrary` má tři statické metody:
 
-      - `StartsWithUpper` Vrátí `true` Pokud řetězec začíná velkým písmenem; v opačném případě vrátí `false`.
+   - `StartsWithUpper` Vrátí `true` Pokud řetězec začíná velkým písmenem; v opačném případě vrátí `false`.
 
-      - `StartsWithLower`Vrátí `true` Pokud řetězec začíná znakem znak malého písmene; v opačném případě vrátí `false`.
+   - `StartsWithLower`Vrátí `true` Pokud řetězec začíná znakem znak malého písmene; v opačném případě vrátí `false`.
 
-      - `HasEmbeddedSpaces` Vrátí `true` řetězec obsahuje vložený prázdný znak; v opačném případě vrátí `false`.
+   - `HasEmbeddedSpaces` Vrátí `true` řetězec obsahuje vložený prázdný znak; v opačném případě vrátí `false`.
 
 6. Vyberte **sestavení** > **sestavit řešení** z nejvyšší úrovně nabídky sady Visual Studio. Visual Studio by měl úspěšným sestavením své knihovny.
 
@@ -140,11 +140,11 @@ Teď, když jsme vytvořili řešení, vytvoříte knihovny tříd s názvem `St
 
    `StringLibrary` má tři statické metody:
 
-      - `StartsWithUpper` Vrátí `true` Pokud řetězec začíná velkým písmenem; v opačném případě vrátí `false`.
+   - `StartsWithUpper` Vrátí `true` Pokud řetězec začíná velkým písmenem; v opačném případě vrátí `false`.
 
-      - `StartsWithLower`Vrátí `true` Pokud řetězec začíná znakem znak malého písmene; v opačném případě vrátí `false`.
+   - `StartsWithLower`Vrátí `true` Pokud řetězec začíná znakem znak malého písmene; v opačném případě vrátí `false`.
 
-      - `HasEmbeddedSpaces` Vrátí `true` řetězec obsahuje vložený prázdný znak; v opačném případě vrátí `false`.
+   - `HasEmbeddedSpaces` Vrátí `true` řetězec obsahuje vložený prázdný znak; v opačném případě vrátí `false`.
 
 6. Klikněte pravým tlačítkem na projekt StringLibrary v **Průzkumníka řešení** a vyberte **vlastnosti**. V **aplikace** kartu, odstraníte tím stávající text v **kořenový obor názvů** textového pole, jak ukazuje následující obrázek. Kořenový obor názvů je definován [příkaz Namespace](/dotnet/visual-basic/language-reference/statements/namespace-statement) ve zdrojovém kódu.
 

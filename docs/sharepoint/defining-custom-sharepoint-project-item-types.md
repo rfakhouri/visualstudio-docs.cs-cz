@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: e5f32abba4c4cbdeab59ed66e38019d913e704e6
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604819"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62580781"
 ---
 # <a name="define-custom-sharepoint-project-item-types"></a>Definování vlastních typů položek projektu služby SharePoint
   Pokud chcete vytvořit nový typ položky projektu služby SharePoint, definujte novému typu položky projektu služby SharePoint. Například Visual Studio neobsahuje položky Sharepointového projektu pro přidání polí nebo vlastní akce na Sharepointový Web. Můžete definovat vlastní typy položek Sharepointového projektu pro vytvoření pole, vlastní akce nebo jiné typy součásti služby SharePoint.

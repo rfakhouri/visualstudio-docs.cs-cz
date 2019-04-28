@@ -13,12 +13,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0977a1f3cdac48b254140785f6adc5dffc321374
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 8ea0d3209e86db1d532e4b6bd6370dfc3521b15a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59652261"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446071"
 ---
 # <a name="installvstemplates-devenvexe"></a>/InstallVSTemplates (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "59652261"
 Registruje projekt nebo šablony položek, které se nacházejí v  *\<cestu instalace sady Visual Studio >* \Common7\IDE\ProjectTemplates\ nebo  *\<cestu instalace sady Visual Studio >* \Common7\IDE\ItemTemplates\ tak, aby k nim může přistupovat prostřednictvím **nový projekt** a **přidat novou položku** dialogových oknech.  
   
 > [!WARNING]
->  Tento přepínač je podporována pouze pro vývoj sady Visual Studio partner a není k dispozici ve verzích Express. Chcete-li použít musí spustit devenv jako správce [/Setup (devenv.exe)](../../ide/reference/setup-devenv-exe.md) a [/installvstemplates (devenv.exe)](../../ide/reference/installvstemplates-devenv-exe.md) přepínače. Další informace najdete v tématu [uživatelská oprávnění](../../ide/user-permissions-and-visual-studio.md).  
+> Tento přepínač je podporována pouze pro vývoj sady Visual Studio partner a není k dispozici ve verzích Express. Chcete-li použít musí spustit devenv jako správce [/Setup (devenv.exe)](../../ide/reference/setup-devenv-exe.md) a [/installvstemplates (devenv.exe)](../../ide/reference/installvstemplates-devenv-exe.md) přepínače. Další informace najdete v tématu [uživatelská oprávnění](../../ide/user-permissions-and-visual-studio.md).  
   
 ## <a name="syntax"></a>Syntaxe  
   

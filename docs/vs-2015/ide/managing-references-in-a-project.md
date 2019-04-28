@@ -23,12 +23,12 @@ caps.latest.revision: 55
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e344fa63a9778d0db45ceeb0e313faa4c6448241
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e4ac17ba5bc828e7974ced9519728aa5de15db94
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60057093"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424540"
 ---
 # <a name="managing-references-in-a-project"></a>Správa odkazů v projektu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,10 +68,10 @@ Předtím, než můžete napsat kód proti externí komponentě nebo připojené
 2. Přejděte na web dodavatele, který vlastní nepodporovanou sadu SDK rozšíření a nainstalujte verzi sady SDK rozšíření se závislostmi, které jsou kompatibilní s verzí platformy, na kterou váš projekt cílí.  
   
     > [!NOTE]
-    >  Jedním ze způsobů a zjistěte, zda rozšíření SDK má závislosti na dalších rozšířeních SDK je restartovat aplikaci Visual Studio, vytvořte nový projekt C# Windows Store, klikněte pravým tlačítkem na projekt a zvolte **přidat odkaz**, přejděte  **Windows** záložku, přejděte **rozšíření** dílčí kartu, vyberte sadu rozšíření SDK a podívejte se na v pravém podokně **správce odkazů**. Pokud existují závislosti, budou uvedeny zde.  
+    > Jedním ze způsobů a zjistěte, zda rozšíření SDK má závislosti na dalších rozšířeních SDK je restartovat aplikaci Visual Studio, vytvořte nový projekt C# Windows Store, klikněte pravým tlačítkem na projekt a zvolte **přidat odkaz**, přejděte  **Windows** záložku, přejděte **rozšíření** dílčí kartu, vyberte sadu rozšíření SDK a podívejte se na v pravém podokně **správce odkazů**. Pokud existují závislosti, budou uvedeny zde.  
   
     > [!IMPORTANT]
-    >  Pokud váš projekt je cílen na verzi Windows 10 a v předchozím kroku nainstalované rozšíření SDK obsahuje závislost na balíčku Microsoft Visual C++ Runtime, verze balíčku Microsoft Visual C++ Runtime, který je kompatibilní s Windows 10 je v14.0 a je nainstalovaná pomocí sady Visual Studio 2015.  
+    > Pokud váš projekt je cílen na verzi Windows 10 a v předchozím kroku nainstalované rozšíření SDK obsahuje závislost na balíčku Microsoft Visual C++ Runtime, verze balíčku Microsoft Visual C++ Runtime, který je kompatibilní s Windows 10 je v14.0 a je nainstalovaná pomocí sady Visual Studio 2015.  
   
 3. Pokud jste v předchozím kroku nainstalované rozšíření SDK má závislosti na dalších rozšířeních SDK, navštivte weby dodavatelů, kteří závislosti vlastní a nainstalujte verze těchto závislostí, které jsou kompatibilní s verzí platformy vaší Projekt je cílen na verzi.  
   
@@ -89,9 +89,9 @@ Předtím, než můžete napsat kód proti externí komponentě nebo připojené
 - Další adresáře projektu ve stejném řešení. (Můžete vyhledat tato sestavení na **projekty** tab.)  
   
 > [!NOTE]
->  Všechny projekty obsahují implicitní odkaz na mscorlib. Projekty Visual Basic obsahují implicitní odkaz na `Microsoft.VisualBasic`.  
+> Všechny projekty obsahují implicitní odkaz na mscorlib. Projekty Visual Basic obsahují implicitní odkaz na `Microsoft.VisualBasic`.  
 >   
->  Všechny projekty v sadě Visual Studio obsahují implicitní odkaz na `System.Core`i v případě `System.Core` se odebere ze seznamu odkazů.  
+> Všechny projekty v sadě Visual Studio obsahují implicitní odkaz na `System.Core`i v případě `System.Core` se odebere ze seznamu odkazů.  
   
 ## <a name="references-to-shared-components-at-run-time"></a>Odkazy na sdílené komponenty za běhu  
  V době běhu, musí být komponenty v cestě výstupu projektu nebo v [Global Assembly Cache](http://msdn.microsoft.com/library/cf5eacd0-d3ec-4879-b6da-5fd5e4372202) (GAC). Pokud projekt obsahuje odkaz na objekt, který se nenachází v jednom z těchto umístění, musíte zkopírovat odkaz na výstupní cestu k projektu při sestavování projektu. <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> Vlastnost určuje, zda tato kopie má být provedena. Pokud je hodnota **True**, odkaz je zkopírován do adresáře projektu při sestavování projektu. Pokud je hodnota **False**, odkaz není kopírován.  
@@ -111,7 +111,7 @@ Předtím, než můžete napsat kód proti externí komponentě nebo připojené
  Pokud máte projekt, který vytváří sestavení, by měla odkazovat na projekt a nepoužívat odkaz na soubor (viz níže). Výhodou odkazu typu projekt projekt je, že vytvoří závislost mezi projekty v systému sestavení. Závislý projekt bude vytvořen, pokud se změnil od posledního odkazujícího projektu. Odkaz na soubor nevytváří závislost sestavení, takže je možné sestavit odkazující projekt bez vytváření závislého projektu a odkaz se může stát zastaralým. (To znamená, že projekt může odkazovat na dřívější sestavené verze projektu.) Výsledkem může být několik verzí jednoho souboru knihovny DLL požadovaným v adresáři bin, což není možné. Pokud dojde k tomuto konfliktu, zobrazí se zpráva, jako [upozornění: závislost 'file' v projektu 'project' nelze zkopírovat do běhového adresáře, protože by přepsala odkaz 'file'. ](../misc/warning-the-dependency-file-in-project-project-cannot-be-copied.md). Další informace najdete v tématu [řešení potíží s nefunkční odkazy](../ide/troubleshooting-broken-references.md) a [jak: Vytváření a odebrání závislostí projektu](../ide/how-to-create-and-remove-project-dependencies.md).  
   
 > [!NOTE]
->  Odkaz na soubor místo odkazu typu projekt projekt je vytvořen, pokud cílová verze rozhraní .NET Framework jednoho projektu je verze 4.5 a cílová verze jiného projektu je verze 2, 3, 3.5 nebo 4.0.  
+> Odkaz na soubor místo odkazu typu projekt projekt je vytvořen, pokud cílová verze rozhraní .NET Framework jednoho projektu je verze 4.5 a cílová verze jiného projektu je verze 2, 3, 3.5 nebo 4.0.  
   
 ## <a name="file-references"></a>Odkazy na soubory  
  Odkazy na soubory jsou přímé odkazy na sestavení mimo kontext projektu sady Visual Studio. Vytvoření s použitím **Procházet** karty **správce odkazů**. Použijte odkaz na soubor, pokud jste právě sestavením nebo komponentou a nemají projekt, který vytvoří jako výstup.  

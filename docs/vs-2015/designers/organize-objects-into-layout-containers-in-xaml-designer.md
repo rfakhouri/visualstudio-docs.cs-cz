@@ -9,12 +9,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3ca6fc205585d832f4dadc5f4ce4709a71c7b6fe
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5c2aef08695d2cea04d23a343d318680bc53f44c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059198"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432603"
 ---
 # <a name="organize-objects-into-layout-containers-in-xaml-designer"></a>Uspořádání objektů do kontejnerů rozložení v Návrháři XAML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Představte si, kam chcete objektů se zobrazí na stránce. objekty, jako jsou 
  Tato stránka popisuje panely rozložení a ovládací prvky a pak přesměruje vás krátká videa, které vám pomůžou začít s nimi.  
   
 > [!NOTE]
->  Některé z videa, která mohou odkazovat na Blendu nebo Expression Blend, která pomocí stejného návrháře XAML sady Visual Studio i programu Blend for Visual Studio.  
+> Některé z videa, která mohou odkazovat na Blendu nebo Expression Blend, která pomocí stejného návrháře XAML sady Visual Studio i programu Blend for Visual Studio.  
   
 ## <a name="layout-panels"></a>Panely rozložení  
  Vaše stránka Začněte výběrem jedné z těchto panelů rozložení. Stránka může mít více než jeden. Například můžete začít s **mřížky** rozložení panelu a pak přidejte **StackPanel** na oblast v **mřížky** tak, aby si můžete uspořádat ovládací prvky v tomto elementu svisle.  

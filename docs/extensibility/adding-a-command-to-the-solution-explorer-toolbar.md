@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e6eadc98ccdc0960e4b4bc400a94f06b90fe89bd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 50b782beeb0496d781bcb6e9bd15f70278c4db73
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069494"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63410155"
 ---
 # <a name="add-a-command-to-the-solution-explorer-toolbar"></a>Přidání příkazu do panelu nástrojů Průzkumníka řešení
 Tento návod ukazuje, jak přidat tlačítko **Průzkumníka řešení** nástrojů.
@@ -27,7 +27,7 @@ Tento návod ukazuje, jak přidat tlačítko **Průzkumníka řešení** nástro
  Další informace o nabídkách, příkazy nástrojů a *.vsct* soubory, naleznete v tématu [příkazy, nabídky a panely nástrojů](../extensibility/internals/commands-menus-and-toolbars.md).
 
 > [!NOTE]
->  Pomocí tabulky příkazů XML (*.vsct*) místo příkazu konfigurace tabulky souborů (*.ctc*) soubory k definování, jak zobrazit nabídek a příkazů vaše rozšíření VSPackages. Další informace najdete v tématu [tabulky příkazů aplikace Visual Studio (. Vsct) soubory](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).
+> Pomocí tabulky příkazů XML (*.vsct*) místo příkazu konfigurace tabulky souborů (*.ctc*) soubory k definování, jak zobrazit nabídek a příkazů vaše rozšíření VSPackages. Další informace najdete v tématu [tabulky příkazů aplikace Visual Studio (. Vsct) soubory](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).
 
 ## <a name="prerequisites"></a>Požadavky
  Spouští se v sadě Visual Studio 2015, nenainstalujete sadu Visual Studio SDK ze služby Stažení softwaru. Je zahrnut jako volitelná funkce v instalačním programu sady Visual Studio. VS SDK můžete také nainstalovat později. Další informace najdete v tématu [instalace sady Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).

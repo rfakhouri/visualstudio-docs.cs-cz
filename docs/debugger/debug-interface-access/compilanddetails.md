@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 896832ac3e96e499aa564d5bce44dc06185090de
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56609225"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62555244"
 ---
 # <a name="compilanddetails"></a>CompilandDetails
 Kompilace informací je rozdělená mezi symboly s `SymTagCompiland` značky (nízké podrobnosti) a `SymTagCompilandDetails` značky (vysokou úroveň podrobností). `SymTagCompilandDetails` vyžaduje načítání dalších symbolů. Však nabízí celou řadu informací o souboru, který není k dispozici pro kompilaci `SymTagCompiland` symbol.

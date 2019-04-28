@@ -12,12 +12,12 @@ ms.assetid: 10e80b13-b39e-466c-a7c8-774a862355af
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e370f48559638e8c68ea5ac8e04eca6960983475
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6143b21884bc92ac79ae0fd7292a11780fec4478
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60046083"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439761"
 ---
 # <a name="localizing-vsix-packages"></a>Lokalizace balíčků VSIX
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ Je možné lokalizovat VSIX balíček vytvořením souboru Extension.vsixlangpac
  Extension.vsixlangpack  
   
 > [!NOTE]
->  Šablony projektů VSIX podporované v [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] generování manifestu VSIX a pojmenujte ho source.extension.vsixmanifest. Když Visual Studio vytvoří projekt, zkopíruje obsah tohoto souboru do Extension.VsixManifest v balíčku souboru VSIX.  
+> Šablony projektů VSIX podporované v [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] generování manifestu VSIX a pojmenujte ho source.extension.vsixmanifest. Když Visual Studio vytvoří projekt, zkopíruje obsah tohoto souboru do Extension.VsixManifest v balíčku souboru VSIX.  
   
 ## <a name="the-extensionvsixlangpack-file"></a>Soubor Extension.vsixlangpack  
  Následující soubor Extension.vsixlangpack [VSIX Language Pack Schema](../extensibility/vsx-language-pack-schema-reference.md). Toto schéma je [VSIXLanguagePack](../extensibility/vsixlanguagepack-element-vsix-language-pack-schema.md) kořenový element a těchto čtyřech podřízených prvků: [LocalizedName](../extensibility/localizedname-element-vsix-language-pack-schema.md), [LocalizedDescription](../extensibility/localizeddescription-element-vsix-language-pack-schema.md), [MoreInfoURL](../extensibility/moreinfourl-element-vsix-language-pack-schema.md), a [licence](../extensibility/license-element-vsix-language-pack-schema.md). Tyto podřízené prvky odpovídají `Name`, `Description`, `MoreInfoURL`, a `License` podřízených elementů `Identifier` element soubor Extension.vsixmanifest.  

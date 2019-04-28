@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: aff28f0f552bcad6792e4d252a92e45e9a6fd38c
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: 5505113ee650c6618be5a95bc77244daf90cfcb7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58146692"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446945"
 ---
 # <a name="idisperrorgetdescription"></a>IDispError::GetDescription
 Vrátí textový popis chyby.  
@@ -50,7 +50,7 @@ HRESULT GetDescription(
  Text se vrátí v jazyce určeném identifikátor národního prostředí (LCID), který byl předán `IDispatchEx::InvokeEx` metody došlo k chybě.  
   
 > [!NOTE]
->  Tato metoda není implementována.  
+> Tato metoda není implementována.  
   
 ## <a name="see-also"></a>Viz také  
  [Idisperror – rozhraní](../../winscript/reference/idisperror-interface.md)   

@@ -8,12 +8,12 @@ ms.assetid: 7e795873-1d4b-4a13-a52a-a411d87fb759
 caps.latest.revision: 15
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 18dbd175ddbf01a826d2a24b5d750cb00b64d28b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8010ad1f8bbb1e49afe9e5e527e9639f2fb14601
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60098884"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442810"
 ---
 # <a name="analyzing-coded-ui-tests-using-coded-ui-test-logs"></a>Analýza programových testů uživatelského rozhraní pomocí protokolů z těchto testů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -76,7 +76,7 @@ Programového uživatelského rozhraní testu protokoly filtr a záznam, který 
      Automatizované testy spustí a označení pokud úspěšný nebo neúspěšný.  
   
     > [!TIP]
-    >  Chcete-li zobrazit Průzkumník testování z **nabídka testu**, přejděte na **Windows** a klikněte na tlačítko **Průzkumník testů**.  
+    > Chcete-li zobrazit Průzkumník testování z **nabídka testu**, přejděte na **Windows** a klikněte na tlačítko **Průzkumník testů**.  
   
 4. Zvolte **výstup** odkaz v Průzkumníku testů výsledky.  
   

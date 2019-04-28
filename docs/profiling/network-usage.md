@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e9fb62abc7765d65c394e92b9a5e4cfa5fbe3fd1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2d0a806ef6e6c3fb20ce4d2697f3b4fe6ff6674e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063046"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63403552"
 ---
 # <a name="analyze-network-usage-in-uwp-apps"></a>Analýza využití sítě v aplikacích pro UWP
 Visual Studio **sítě** diagnostický nástroj, který shromažďuje data o síťových operacích pomocí provádí [Windows.Web.Http API](/uwp/api/windows.web.http). Analýza dat vám může pomoct vyřešit problémy, jako jsou problémy přístupu a ověřování, nesprávné použití mezipaměti a špatné zobrazení a stáhnout výkonu.
@@ -22,7 +22,7 @@ Visual Studio **sítě** diagnostický nástroj, který shromažďuje data o sí
  Nástroj pro sítě podporuje pouze aplikace UWP. Jiné platformy nejsou v tuto chvíli nepodporuje.
 
 > [!NOTE]
->  Úplný popis nástroj sítě, naleznete v tématu [Představujeme nástroje Visual Studio vaší sítě](https://devblogs.microsoft.com/visualstudio/introducing-visual-studios-network-tool/).
+> Úplný popis nástroj sítě, naleznete v tématu [Představujeme nástroje Visual Studio vaší sítě](https://devblogs.microsoft.com/visualstudio/introducing-visual-studios-network-tool/).
 
 ## <a name="collect-network-tool-data"></a>Shromažďovat data nástroj sítě.
  Měli byste spustit **sítě** nástroj s otevřít projekt aplikace Visual Studio na počítači aplikace Visual Studio.

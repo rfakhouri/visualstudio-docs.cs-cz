@@ -13,12 +13,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 04392545b5b5c352a35b9a3d523f0c6ff5d98b01
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
-ms.translationtype: MT
+ms.openlocfilehash: c1fb81261f52fa5aaf73c30579332779ae5bfa17
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54787073"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443184"
 ---
 # <a name="visual-c-classes-in-class-designer"></a>Třídy jazyka Visual C++ v návrháři tříd
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "54787073"
 Návrhář tříd podporuje C++ třídy a vizualizuje nativních tříd jazyka C++ stejně jako obrazců třídy jazyka Visual Basic a Visual C#, s tím rozdílem, že třídy C++ mohou mít více vztahů dědičnosti. Můžete rozbalit obrazec třídy na Zobrazit další pole a metody ve třídě nebo sbalit uchovejte prostor na disku.  
   
 > [!NOTE]
->  Návrhář tříd nepodporuje sjednocení (speciální typ třídy, ve kterém paměť přidělena je pouze množství potřebné pro unie největší datový člen).  
+> Návrhář tříd nepodporuje sjednocení (speciální typ třídy, ve kterém paměť přidělena je pouze množství potřebné pro unie největší datový člen).  
   
 ## <a name="simple-inheritance"></a>Jednoduchá dědičnost  
  Když přetáhnout více než jednu třídu do diagramu třídy a třídy mají vztah dědičnosti třídy, je šipka připojuje. Šipka body ve směru základní třídy. Například následující třídy jsou zobrazeny v diagramu tříd, šipka připojí, přejdete na b A:  
@@ -52,7 +52,7 @@ class Penguin : public Bird, public Swimmer {};
  Pravým tlačítkem myši na tvar třídy a pak levým na **zobrazit základní třídy** zobrazuje základní třídy, které pro vybranou třídu.  
   
 > [!NOTE]
->  **Zobrazit odvozené třídy** příkaz není podporován pro kód C++. Lze zobrazit odvozené třídy tak, že přejdete na zobrazení tříd, rozbalení uzlu typu, rozšíření **odvozené typy** podsložky a následným přetažením tyto typy do diagramu tříd.  
+> **Zobrazit odvozené třídy** příkaz není podporován pro kód C++. Lze zobrazit odvozené třídy tak, že přejdete na zobrazení tříd, rozbalení uzlu typu, rozšíření **odvozené typy** podsložky a následným přetažením tyto typy do diagramu tříd.  
   
  Další informace o dědičnosti více tříd, naleznete v tématu [vícenásobná dědičnost (NOTINBUILD)](http://msdn.microsoft.com/3b74185e-2beb-4e29-8684-441e51d2a2ca) a [více základních tříd](http://msdn.microsoft.com/library/a30c69fe-401c-4a87-96a0-e0da70c7c740).  
   

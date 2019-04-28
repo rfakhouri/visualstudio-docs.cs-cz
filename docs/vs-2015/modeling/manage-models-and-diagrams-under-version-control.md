@@ -11,12 +11,12 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2a7ba74c18097f7eb4b2f8ff50780dfd5ffb57df
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4c29b7e3279513e2876396abd5083c3ddefa0baf
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60080317"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440950"
 ---
 # <a name="manage-models-and-diagrams-under-version-control"></a>Správa modelů a diagramů pomocí správy verzí
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ Spravovat různé verze projekty modelování a diagramy, včetně mapy kódu (s
  Tuto funkci podporovat kterou verzí sady Visual Studio najdete v tématu [podporované verze pro nástroje architektury a modelování](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
 > [!IMPORTANT]
->  Buďte opatrní při práci více uživatelů na stejném projektu modelování. Zjistěte, jak můžete [uspořádat modely ve střední a velké projekty](../modeling/structure-your-modeling-solution.md).  
+> Buďte opatrní při práci více uživatelů na stejném projektu modelování. Zjistěte, jak můžete [uspořádat modely ve střední a velké projekty](../modeling/structure-your-modeling-solution.md).  
   
 ## <a name="ModelingProjects"></a> Soubory v projektu modelování  
  Více uživatelů může pracovat na projektu modelování ve stejnou dobu, pracují na různých souborech.  
@@ -42,7 +42,7 @@ Spravovat různé verze projekty modelování a diagramy, včetně mapy kódu (s
     - **DiagramName.classdiagram.layout** -li tento soubor odstraněn, tvary se nadále zobrazí v diagramu, ale dojde ke ztrátě jejich velikostí a umístění. Každý soubor rozložení je podřízený souboru diagramu. Zobrazíte ho kliknutím na [+] vedle souboru diagramu v Průzkumníku řešení.  
   
 > [!NOTE]
->  Je důležité zajistit konzistenci těchto souborů. Například pokud používáte správy zdrojového kódu vrátit zpět provedené změny v souboru s příponou UML, měli byste vrátit zpět odpovídající změny. * diagram a .layout soubory ve stejnou dobu. Elementy zastoupené v. \*soubor diagramu budou ztraceny, pokud nejsou také reprezentovány v souboru .uml.  
+> Je důležité zajistit konzistenci těchto souborů. Například pokud používáte správy zdrojového kódu vrátit zpět provedené změny v souboru s příponou UML, měli byste vrátit zpět odpovídající změny. * diagram a .layout soubory ve stejnou dobu. Elementy zastoupené v. \*soubor diagramu budou ztraceny, pokud nejsou také reprezentovány v souboru .uml.  
   
 ## <a name="Shared"></a> Práce na sdílených projektech modelování  
  Chcete-li minimalizovat konflikty mezi souběžnou prací na různých částech projektu:  
@@ -68,7 +68,7 @@ Spravovat různé verze projekty modelování a diagramy, včetně mapy kódu (s
 - Před provedením vždy zavřít všechny diagramy **získat** operace.  
   
     > [!NOTE]
-    >  Pokud je soubor otevřen při provedení **získat**, a operace vyústí v místní změny, pak budete vyzváni k opětovnému načtení souboru. V tomto případě klikněte na tlačítko **ne**a pak znovu načtěte celý projekt. V **Průzkumníka řešení**, modelování klikněte pravým tlačítkem na uzel projektu, klikněte na tlačítko **uvolnit projekt**a potom klikněte na tlačítko **znovu načíst projekt**.  
+    > Pokud je soubor otevřen při provedení **získat**, a operace vyústí v místní změny, pak budete vyzváni k opětovnému načtení souboru. V tomto případě klikněte na tlačítko **ne**a pak znovu načtěte celý projekt. V **Průzkumníka řešení**, modelování klikněte pravým tlačítkem na uzel projektu, klikněte na tlačítko **uvolnit projekt**a potom klikněte na tlačítko **znovu načíst projekt**.  
   
 ### <a name="Exclusive"></a> Změny vyžadující výhradní přístup k modelu  
  Před provedením následující typy změn, ujistěte se, že máte zámek rezervování na celém projektu.  
@@ -94,7 +94,7 @@ Spravovat různé verze projekty modelování a diagramy, včetně mapy kódu (s
      V Průzkumníku řešení klikněte pravým tlačítkem na cílovou složku nebo projekt, přejděte na **přidat**a potom klikněte na tlačítko **existující položku**. V dialogovém okně vyberte soubor diagramu a potom klikněte na tlačítko **přidat**. Soubor rozložení se přidají automaticky.  
   
     > [!NOTE]
-    >  Soubor nelze přesunout do jiného projektu.  
+    > Soubor nelze přesunout do jiného projektu.  
   
 ## <a name="Merging"></a> Sloučení změn v souborech a diagramech modelů  
  Po více než jeden uživatel má na modelu pracovat současně, [!INCLUDE[esprscc](../includes/esprscc-md.md)] vás vyzve ke sloučení změn v souborech modelu. Práce na samostatných projektech jak je popsáno v předchozích částech zabrání většině sloučení. Obvykle další konflikty lze bezpečně sloučit automaticky. Následující typy změn by neměly způsobit žádné problémy:  

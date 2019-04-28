@@ -10,12 +10,12 @@ ms.assetid: 43341928-9930-48cf-a57f-ddcc3984b787
 caps.latest.revision: 9
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 75a51cbe851b6566ab210a3c8ae12a9b7c2e0d2b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e78cefa9778e2889130f865e4c61cc8a97014db7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60107655"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444668"
 ---
 # <a name="analyze-net-framework-memory-issues"></a>Analýza problémů s pamětí rozhraní .NET Framework
 Hledání nevrácené paměti a neefektivní paměti použijte v kódu rozhraní .NET Framework pomocí sady Visual Studio managed analyzátoru paměti. Minimální verze rozhraní .NET Framework cílový kód je rozhraní .NET Framework 4.5.  
@@ -59,7 +59,7 @@ Hledání nevrácené paměti a neefektivní paměti použijte v kódu rozhraní
  Nástroj pro analýzu paměti analyzuje informace v *soubory s výpisem paměti* obsahující informace o haldě. V sadě Visual Studio můžete vytvořit soubory s výpisem paměti, nebo můžete použít nástroje, jako je [ProcDump](http://technet.microsoft.com/sysinternals/dd996900.aspx) z [Windows Sysinternals](http://technet.microsoft.com/sysinternals). Zobrazit [co je výpis paměti, a jak jeden vytvořit?](http://blogs.msdn.com/b/debugger/archive/2009/12/30/what-is-a-dump-and-how-do-i-create-one.aspx) na blogu týmu Visual Studio Debugger.  
   
 > [!NOTE]
->  Většina nástrojů může shromažďovat informace z výpisu paměti s nebo bez dat kompletní haldy paměti. Analyzátor paměti Visual Studio vyžaduje úplnou haldy informace.  
+> Většina nástrojů může shromažďovat informace z výpisu paměti s nebo bez dat kompletní haldy paměti. Analyzátor paměti Visual Studio vyžaduje úplnou haldy informace.  
   
  **Shromažďovat výpis ze sady Visual Studio**  
   

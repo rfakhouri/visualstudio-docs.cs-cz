@@ -11,11 +11,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 647548a59c965b6feacb994efa041ecd5b6c6b91
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55908801"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62786161"
 ---
 # <a name="edit-load-test-scenarios"></a>Úpravy scénářů zátěžových testů
 
@@ -43,7 +43,7 @@ Scénáře obsahují následující součásti:
 
 Má scénář několik dalších vlastností, které lze upravit pomocí **editoru zátěžových testů**. Další informace najdete v tématu [vlastnosti scénáře zátěžového testu](../test/load-test-scenario-properties.md).
 
-## <a name="tasks"></a>Úlohy
+## <a name="tasks"></a>Úkoly
 
 |Úlohy|Související témata|
 |-|-----------------------|

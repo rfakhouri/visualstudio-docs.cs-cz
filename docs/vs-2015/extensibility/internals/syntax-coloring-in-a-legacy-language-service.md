@@ -11,12 +11,12 @@ ms.assetid: f65ff67e-8c20-497a-bebf-5e2a5b5b012f
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 2ee09c334394e363d9621ddec887bd5d83726fba
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 59d25c338cb0c7406c533afeceaf3675fbd16e96
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60103573"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441275"
 ---
 # <a name="syntax-coloring-in-a-legacy-language-service"></a>Barevné zvýrazňování syntaxe ve službě starší verze jazyka
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "60103573"
 Jednoduché colorizer modelu  
   
 > [!NOTE]
->  Je oddělená od hlavní služby barevného označování syntaxe [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] mechanismus pro barevné zvýrazňování textu. Další informace o Obecné [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] mechanismus podporuje barevné zvýrazňování, naleznete v tématu [pomocí písma a barvy](../../extensibility/using-fonts-and-colors.md).  
+> Je oddělená od hlavní služby barevného označování syntaxe [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] mechanismus pro barevné zvýrazňování textu. Další informace o Obecné [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] mechanismus podporuje barevné zvýrazňování, naleznete v tématu [pomocí písma a barvy](../../extensibility/using-fonts-and-colors.md).  
   
  Kromě colorizer služba jazyka můžete zadat vlastní které lze zabarvit položky, které jsou používány reklamy, že poskytuje vlastní, které lze zabarvit položky pomocí editoru. Můžete to provést prostřednictvím implementace <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems> na stejný objekt, který implementuje rozhraní <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> rozhraní. Vrátí počet položek, které lze zabarvit vlastní, když volá editoru <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetItemCount%2A> metoda a vrací jednotlivé položky vlastní které lze zabarvit při volání editoru <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetColorableItem%2A> metody.  
   
@@ -51,7 +51,7 @@ Jednoduché colorizer modelu
 2. Sady VSPackage teď můžete získat a používat objekt colorizer následujícím způsobem:  
   
     > [!NOTE]
-    >  Rozšíření VSPackages, které používají základní editor není potřeba získat jazyk služby colorizer objekty explicitně. Jakmile instance základní editor získá služby příslušný jazyk, provádět všechny úlohy barevné zvýraznění je vidět tady.  
+    > Rozšíření VSPackages, které používají základní editor není potřeba získat jazyk služby colorizer objekty explicitně. Jakmile instance základní editor získá služby příslušný jazyk, provádět všechny úlohy barevné zvýraznění je vidět tady.  
   
     1. Získání objektu colorizer jazyková služba, která implementuje `T:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer`, a <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer2> rozhraní voláním <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetColorizer%2A> metoda na službě jazyka <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> objektu.  
   
@@ -62,13 +62,13 @@ Jednoduché colorizer modelu
     3. Zabarvení informace vrácené <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> metodu pro zobrazení vybraného textu.  
   
 > [!NOTE]
->  Kromě použití colorizer služby jazyka, VSPackage můžete také použít pro obecné účely [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] text obarvení mechanismus. Další informace o tomto mechanizmu, naleznete v tématu [pomocí písma a barvy](../../extensibility/using-fonts-and-colors.md).  
+> Kromě použití colorizer služby jazyka, VSPackage můžete také použít pro obecné účely [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] text obarvení mechanismus. Další informace o tomto mechanizmu, naleznete v tématu [pomocí písma a barvy](../../extensibility/using-fonts-and-colors.md).  
   
 ## <a name="in-this-section"></a>V tomto oddílu  
  [Implementace barevného zvýrazňování syntaxe](../../extensibility/internals/implementing-syntax-coloring.md)  
  Tento článek popisuje, jak editor přistupuje k službě jazyka barevné zvýrazňování syntaxe a služba jazyka musí implementovat pro podporu syntaxe barevné zvýrazňování.  
   
- [Postupy: Použití předdefinovaných položek které lze zabarvit](../../extensibility/internals/how-to-use-built-in-colorable-items.md)  
+ [Postupy: Použití předdefinovaných položek, které lze zabarvit](../../extensibility/internals/how-to-use-built-in-colorable-items.md)  
  Ukazuje, jak používat integrované které lze zabarvit položky ze služby jazyka.  
   
  [Vlastní položky, které lze zabarvit](../../extensibility/internals/custom-colorable-items.md)  

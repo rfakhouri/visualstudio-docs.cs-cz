@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 97a36c38eb0c4a96cb7182300c2f9aca6da68e8a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c5af5beb71dc2164df38180078cf7489f2da391e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60042745"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431143"
 ---
 # <a name="datacontext-methods-or-designer"></a>Metody DataContext (O/R Designer)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ DataContext] (assetId:///T:System.Data.Linq.DataContext?qualifyHint=False & auto
  <xref:System.Data.Linq.DataContext> metody, které se mapují na uložené procedury a funkce jsou zobrazeny v podokně metody [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]. Podokno metody je v podokně po straně **entity** podokně (hlavní návrhová plocha). Podokno metody jsou uvedeny všechny <xref:System.Data.Linq.DataContext> metody, které jste vytvořili pomocí [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]. Ve výchozím nastavení podokno metody je prázdná. Přetáhněte uložené procedury nebo funkce z **Průzkumníka serveru**/**Průzkumník databáze** na [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] vytvořit <xref:System.Data.Linq.DataContext> metody a naplňte jimi podokno metody. Další informace najdete v tématu [jak: Vytvoření metod DataContext namapovaných na uložené procedury a funkce (O/R Designer)](../data-tools/how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-o-r-designer.md).  
   
 > [!NOTE]
->  Otevření a zavření podokno metody kliknutím pravým tlačítkem myši [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] a pak levým na **skrýt podokno metody** nebo **zobrazit podokno metody**, nebo použijte klávesovou zkratku CTRL + 1.  
+> Otevření a zavření podokno metody kliknutím pravým tlačítkem myši [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] a pak levým na **skrýt podokno metody** nebo **zobrazit podokno metody**, nebo použijte klávesovou zkratku CTRL + 1.  
   
 ## <a name="two-types-of-datacontext-methods"></a>Dva typy metod DataContext  
  Metody DataContext jsou tyto metody, které se mapují na uložené procedury a funkce v databázi. Můžete vytvořit a přidat jednu metodu DataContext v podokně metody [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]. Existují dva odlišné typy <xref:System.Data.Linq.DataContext> metody; ty, které vrátí jeden nebo více sad výsledků dotazu a ty, které nejsou:  
@@ -44,7 +44,7 @@ DataContext] (assetId:///T:System.Data.Linq.DataContext?qualifyHint=False & auto
  Při přetažení uložených procedur a funkcí z **Průzkumníka serveru**/**Průzkumník databáze** na [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)], návratový typ vytvořeného <xref:System.Data.Linq.DataContext> metoda se liší v závislosti na tom, kde je vyřadit položku. Přetažení položek přímo do existující entity třídy vytvoří <xref:System.Data.Linq.DataContext> metoda s návratovým typem třídy entity; přetažení položek na prázdnou oblast [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] (v obou podokno) vytvoří <xref:System.Data.Linq.DataContext> metodu, která vrací automaticky generovanému typu. Automaticky generovanému typu, který je vytvořen má název, který odpovídá uloženou proceduru nebo název funkce a vlastnosti, které se mapují na pole vrácené uloženou proceduru nebo funkci.  
   
 > [!NOTE]
->  Můžete změnit návratový typ <xref:System.Data.Linq.DataContext> metoda po přidání do podokna metody. Zkontrolovat nebo změnit návratový typ <xref:System.Data.Linq.DataContext> metoda, vyberte ho a zkontrolujte **návratový typ** vlastnost **vlastnosti** okna. Další informace najdete v tématu [jak: Změna návratového typu metody DataContext (O/R Designer)](../data-tools/how-to-change-the-return-type-of-a-datacontext-method-o-r-designer.md).  
+> Můžete změnit návratový typ <xref:System.Data.Linq.DataContext> metoda po přidání do podokna metody. Zkontrolovat nebo změnit návratový typ <xref:System.Data.Linq.DataContext> metoda, vyberte ho a zkontrolujte **návratový typ** vlastnost **vlastnosti** okna. Další informace najdete v tématu [jak: Změna návratového typu metody DataContext (O/R Designer)](../data-tools/how-to-change-the-return-type-of-a-datacontext-method-o-r-designer.md).  
   
  Objekty, které můžete přetáhnout z databáze na plochu návrháře relací objektů bude mít název automaticky na základě názvu objekty v databázi. Pokud přetáhnete na stejný objekt více než jednou, číslo je připojen na konec nový název, který odlišuje názvy. Pokud názvy databázových objektů obsahují mezery nebo znaky nepodporované v jazyce Visual Basic nebo C#, se nahradí mezery nebo neplatné znaky podtržítkem.  
   

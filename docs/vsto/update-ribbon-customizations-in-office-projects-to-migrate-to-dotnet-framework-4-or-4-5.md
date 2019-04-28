@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0fae2dc72c44b90068212c09086c63c9e00fd2d0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 63f86011b7794ca0ddd17b890e3374327db3af0c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096540"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446942"
 ---
 # <a name="update-ribbon-customizations-in-office-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>Aktualizace vlastních nastavení pásu karet v projektech Office při migraci na rozhraní .NET Framework 4 nebo .NET Framework 4.5
   Pokud váš projekt obsahuje vlastní nastavení pásu karet, který byl vytvořen pomocí **pás karet (vizuální návrhář)** položku projektu, musíte proveďte následující změny do projektu kódu, pokud Cílová architektura, která se změní na [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] nebo později.
@@ -75,7 +75,7 @@ ms.locfileid: "60096540"
 3. V `InitializeComponent` metody upravit veškerý kód, který vytvoří ovládací prvek pásu karet tak, aby kód místo toho používá jednu z metod helper <xref:Microsoft.Office.Tools.Ribbon.RibbonFactory> objektu.
 
     > [!NOTE]
-    >  V projektech Visual C#, je třeba rozbalit oblast s názvem `Component Designer generated code` zobrazíte `InitializeComponent` metody.
+    > V projektech Visual C#, je třeba rozbalit oblast s názvem `Component Designer generated code` zobrazíte `InitializeComponent` metody.
 
      Předpokládejme například, že soubor obsahuje následující řádek kódu, který vytvoří instanci <xref:Microsoft.Office.Tools.Ribbon.RibbonButton> s názvem `button1` v projektu, který cílí na rozhraní .NET Framework 3.5.
 

@@ -13,12 +13,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ea48e1807291e935081f01e821cffafa794104f5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8de573e8d5f46988868f18114fdabb07f62690e0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60075756"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443166"
 ---
 # <a name="visual-c-intellisense"></a>Visual C# IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ Visual C# IntelliSense je k dispozici při psaní kódu v editoru a při laděn�
  V jazyce Visual C#, seznam pro doplňování obsahuje rozšiřující metody, které jsou v oboru.  
   
 > [!NOTE]
->  Seznam pro doplňování se nezobrazí všechny rozšiřující metody pro <xref:System.String> objekty.  
+> Seznam pro doplňování se nezobrazí všechny rozšiřující metody pro <xref:System.String> objekty.  
   
  Rozšiřující metody použít jinou ikonu než metody instance. Výpis seznamu ikon, naleznete v tématu [třídy View and Object Browser Icons](../ide/class-view-and-object-browser-icons.md). Jsou-li instanci metody a metody rozšíření se stejným názvem v oboru, seznam pro doplňování zobrazí ikona metody rozšíření.  
   
@@ -148,12 +148,12 @@ Visual C# IntelliSense je k dispozici při psaní kódu v editoru a při laděn�
  ![Generate Event Handler](../ide/media/vxgenerateeventhandler.gif "vxGenerateEventHandler")  
   
 > [!NOTE]
->  Pokud nový delegát, který je vytvořen pomocí technologie IntelliSense odkazuje na existující obslužné rutiny události, technologie IntelliSense komunikuje tyto informace v popisu. Poté můžete upravit tento odkaz. text je už vybraná v editoru kódu. V opačném případě propojení automatické událost dokončení v tomto okamžiku.  
+> Pokud nový delegát, který je vytvořen pomocí technologie IntelliSense odkazuje na existující obslužné rutiny události, technologie IntelliSense komunikuje tyto informace v popisu. Poté můžete upravit tento odkaz. text je už vybraná v editoru kódu. V opačném případě propojení automatické událost dokončení v tomto okamžiku.  
   
  Pokud stisknete klávesu TAB, technologie IntelliSense tříd stub si metodu se správným podpisem a umístí kurzor do těla obslužné rutiny události.  
   
 > [!NOTE]
->  Použití **přejít zpět** příkaz **zobrazení** nabídky (CTRL +-) se vrátíte do event – příkaz propojení.  
+> Použití **přejít zpět** příkaz **zobrazení** nabídky (CTRL +-) se vrátíte do event – příkaz propojení.  
   
  Následující úlohu ukazuje, jak technologie IntelliSense automaticky zavěšení do obslužné rutiny události s názvem `button1_Click` polem událost s názvem `button1.Click`.  
   

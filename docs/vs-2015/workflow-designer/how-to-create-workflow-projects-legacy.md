@@ -12,12 +12,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bc878a7f4469d7f8ef8bf61d0d5f3b721f39b7e1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6d779294f991786f90faf8dd1de756749b6baffc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117743"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444163"
 ---
 # <a name="how-to-create-workflow-projects-legacy"></a>Postupy: Vytvoření projektů pracovních postupů (starší verze)
 Postupujte podle těchto kroků můžete vytvořit [!INCLUDE[wf](../includes/wf-md.md)] projekt, který cílí [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] nebo [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]. Tento postup používá starší [!INCLUDE[wfd1](../includes/wfd1-md.md)] poskytované [!INCLUDE[vs2010](../includes/vs2010-md.md)].  
@@ -33,7 +33,7 @@ Postupujte podle těchto kroků můžete vytvořit [!INCLUDE[wf](../includes/wf-
 3. Vyberte buď **rozhraní .NET Framework 3.0** možnost nebo **rozhraní .NET Framework 3.5** možnost v rozevíracím seznamu v horní části **nový projekt** okna pro přístup k starší verze návrháře.  
   
     > [!NOTE]
-    >  Výchozí možnost v [!INCLUDE[vs2010](../includes/vs2010-md.md)] je **rozhraní .NET Framework 4**. Tato možnost slouží k vytvoření [!INCLUDE[wf](../includes/wf-md.md)] aplikací, které se zaměřují [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] a nepoužívá starší verze návrháře.  
+    > Výchozí možnost v [!INCLUDE[vs2010](../includes/vs2010-md.md)] je **rozhraní .NET Framework 4**. Tato možnost slouží k vytvoření [!INCLUDE[wf](../includes/wf-md.md)] aplikací, které se zaměřují [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] a nepoužívá starší verze návrháře.  
   
 4. V **typy projektů** podokně vyberte projekty Visual C# nebo Visual Basic projektů a pak vyberte **pracovního postupu**.  
   

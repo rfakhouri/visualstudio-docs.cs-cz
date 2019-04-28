@@ -14,11 +14,11 @@ dev_langs:
 - CSharp
 - VB
 ms.openlocfilehash: 255c82b09e87180149756ce684f001652f4b962a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60058718"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62577677"
 ---
 # <a name="walkthrough-connect-a-host-to-a-generated-directive-processor"></a>Návod: Připojení hostitele k procesoru vygenerovaných direktiv
 

@@ -9,12 +9,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f601c9cc404d605d5fb0ddf7ad149a595f77ef77
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c3fec670f7516d28e20b43b0e1968782a496ef49
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059861"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428584"
 ---
 # <a name="step-9-review-comment-and-test-your-code"></a>Krok 9: Kontrola, okomentování a otestování kódu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,10 +55,10 @@ Dále přidáte komentář do vašeho kódu. Komentář je Všimněte si, že ne
      [!code-vb[VbExpressTutorial1Step9_10#1](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial1step9_10/vb/form1.vb#1)]  
   
     > [!NOTE]
-    >  Vaše **showButton** Click tlačítka obslužná rutina události je nyní dokončena a pracuje. Zahájili jste psaní kódu, počínaje `if` příkazu. `if` Příkaz je, jak říct vašemu programu: "Zkontroluj tuto jednu věc a pokud je PRAVDA, proveď tyto akce." V takovém případě říkáte programu, otevřete **otevřít soubor** dialogové okno, a pokud uživatel vybere soubor a klikne **OK** tlačítko, načte soubor v ovládacím prvku PictureBox.  
+    > Vaše **showButton** Click tlačítka obslužná rutina události je nyní dokončena a pracuje. Zahájili jste psaní kódu, počínaje `if` příkazu. `if` Příkaz je, jak říct vašemu programu: "Zkontroluj tuto jednu věc a pokud je PRAVDA, proveď tyto akce." V takovém případě říkáte programu, otevřete **otevřít soubor** dialogové okno, a pokud uživatel vybere soubor a klikne **OK** tlačítko, načte soubor v ovládacím prvku PictureBox.  
   
     > [!TIP]
-    >  Rozhraní IDE je sestaveno k usnadnění psaní kódu a *fragmenty kódu* jsou jedním ze způsobů, který provádí. Fragment je zástupce, který se rozbalí do malého bloku kódu.  
+    > Rozhraní IDE je sestaveno k usnadnění psaní kódu a *fragmenty kódu* jsou jedním ze způsobů, který provádí. Fragment je zástupce, který se rozbalí do malého bloku kódu.  
     >   
     >  Zobrazí se všechny dostupné Výstřižky. V panelu nabídky zvolte **nástroje**, **Správce fragmentů kódů**. Pro jazyk Visual C# `if` fragment kódu je v **Visual C#** . V jazyce Visual Basic `if` fragmenty kódu jsou v **podmínkách a smyčkách**, **vzorů v kódu**. Tento správce můžete použít k vyhledání existujících fragmentů nebo přidání vlastních fragmentů.  
     >   
@@ -83,7 +83,7 @@ Prohlížeč obrázků
 2. Zvolte **zobrazit obrázek** tlačítko spustit kód, který jste napsali. Nejprve program otevře **otevřít soubor** dialogové okno. Ověřte, že vaše filtry se zobrazí v **soubory typu** rozevírací seznam v dolní části dialogového okna. Potom přejděte na obrázek a otevřete jej. Obvykle lze najít vzorové obrázky dodávané s operačním systémem Windows ve vaší **dokumenty** složky, uvnitř **Moje Obrázky\Příklady obrázků** složky.  
   
     > [!NOTE]
-    >  Pokud nevidíte žádné obrázky v **vyberte soubor s obrázkem** dialogové okno, ujistěte se, že "všechny soubory (*.\*)" filtru je vybrali v rozevíracím seznamu v dolní pravé části dialogových oken.  
+    > Pokud nevidíte žádné obrázky v **vyberte soubor s obrázkem** dialogové okno, ujistěte se, že "všechny soubory (*.\*)" filtru je vybrali v rozevíracím seznamu v dolní pravé části dialogových oken.  
   
 3. Načíst obrázek a zobrazí se ve vašem ovládacím prvku PictureBox. Zkuste změnit velikost formuláře přetažením jeho okrajů. Protože máte váš ovládací prvek PictureBox ukotven uvnitř kontejneru TableLayoutPanel, který je sám ukotven uvnitř formuláře, oblast vašeho obrázku změní velikost sebe sama tak, aby je stejně široká jako formulář a vyplní horních 90 procent formuláře. To je důvod, proč jste použili kontejnery TableLayoutPanel a FlowLayoutPanel: Udržují správnou velikost, když ji uživatel změní formuláře.  
   

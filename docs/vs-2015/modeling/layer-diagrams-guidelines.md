@@ -14,12 +14,12 @@ caps.latest.revision: 57
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 255843682034ab784f8271b2f454a60fdd4a77fa
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 373b5c8fd108e783123440820b38edf94a272a1d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096605"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440999"
 ---
 # <a name="layer-diagrams-guidelines"></a>Diagramy vrstev: Pokyny
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ Popisu architektury aplikace na vysoké úrovni tak, že vytvoříte *diagramy v
  Následující kroky poskytují přehled o tom, jak pomocí diagramů vrstev v procesu vývoje. Pozdější části tohoto tématu popisují další podrobnosti o každém kroku. Pokud vyvíjíte novou návrhu, vynechejte kroky, které odkazují na existující kód.  
   
 > [!NOTE]
->  Tyto kroky jsou v přibližné pořadí. Bude pravděpodobně chcete překrývat s úkoly, přeuspořádat je tak, aby vyhovovala vaší vlastní situaci a opakování na začátku každé iterace ve vašem projektu.  
+> Tyto kroky jsou v přibližné pořadí. Bude pravděpodobně chcete překrývat s úkoly, přeuspořádat je tak, aby vyhovovala vaší vlastní situaci a opakování na začátku každé iterace ve vašem projektu.  
   
 1. [Vytvoření diagramu vrstev](#Create) pro celou aplikaci nebo pro vrstvu v něm.  
   
@@ -59,7 +59,7 @@ Popisu architektury aplikace na vysoké úrovni tak, že vytvoříte *diagramy v
  Diagram vrstev musí být vytvořeny v projektu modelování. Můžete přidat do existujícího projektu modelování nový diagram vrstev, vytvořte nový projekt modelování pro diagram vrstev nebo zkopírovat existující diagram vrstev ve stejném projektu modelování.  
   
 > [!IMPORTANT]
->  Přidat, přetáhněte nebo zkopírujte existující diagram vrstev z jednoho projektu modelování do jiného projektu modelování nebo do jiného umístění v řešení. Diagram vrstev, který je tímto způsobem zkopírují budou mít stejné odkazy jako původní diagram i v případě, že změníte diagram. To zabrání ověřování vrstev podle vašich představ a může způsobit další problémy, jako jsou například chybějící prvky nebo jiné chyby při pokusu o otevření diagramu.  
+> Přidat, přetáhněte nebo zkopírujte existující diagram vrstev z jednoho projektu modelování do jiného projektu modelování nebo do jiného umístění v řešení. Diagram vrstev, který je tímto způsobem zkopírují budou mít stejné odkazy jako původní diagram i v případě, že změníte diagram. To zabrání ověřování vrstev podle vašich představ a může způsobit další problémy, jako jsou například chybějící prvky nebo jiné chyby při pokusu o otevření diagramu.  
   
  Zobrazit [vytváření diagramů vrstev z kódu](../modeling/create-layer-diagrams-from-your-code.md).  
   
@@ -69,7 +69,7 @@ Popisu architektury aplikace na vysoké úrovni tak, že vytvoříte *diagramy v
  V rámci obecných pokynů název vrstvy podle jejich funkce, například "Prezentaci" či "Službami". Pokud artefakty, které jsou úzce vzájemně závislé, je umístíte do stejné vrstvě. Pokud artefakty, které lze aktualizovat samostatně nebo použít v samostatné aplikace, je umístíte do různých vrstev. Informace o vzorech vrstev, navštivte web vzory a postupy v [ http://go.microsoft.com/fwlink/?LinkId=145794 ](http://go.microsoft.com/fwlink/?LinkId=145794).  
   
 > [!TIP]
->  Existují určité typy artefaktů, které lze propojit s vrstvami, ale nepodporují ověření proti diagramu vrstev. Chcete-li zobrazit, zda artefakt podporuje ověřování, otevřete **Průzkumník vrstev** prozkoumat **podporuje ověřování** vlastnosti propojení artefaktu. Zobrazit [zjistit existujících závislostech mezi vrstvami](#Generate).  
+> Existují určité typy artefaktů, které lze propojit s vrstvami, ale nepodporují ověření proti diagramu vrstev. Chcete-li zobrazit, zda artefakt podporuje ověřování, otevřete **Průzkumník vrstev** prozkoumat **podporuje ověřování** vlastnosti propojení artefaktu. Zobrazit [zjistit existujících závislostech mezi vrstvami](#Generate).  
   
  Při aktualizaci aplikace seznámeni, může také vytváření map kódu. Tyto diagramy vám můžou pomoct odhalit vzory a závislostí při zkoumání kódu. Průzkumník řešení používá k prozkoumání oborů názvů a třídy, které často odpovídají existujících vrstev. Přiřazení těchto kód artefaktů do vrstev jejich přetažením z Průzkumníka řešení do diagramů vrstev. Potom můžete diagramy vrstev můžete aktualizovat kód a zachování jejich konzistence s návrhu.  
   
@@ -85,7 +85,7 @@ Popisu architektury aplikace na vysoké úrovni tak, že vytvoříte *diagramy v
  Závislost existuje všude, kde artefakt, který je spojen s jednou vrstvou, odkazuje na artefakt, který je přidružen k jiné vrstvě. Třída v jedné vrstvě například deklaruje proměnnou, která má třídu v jiné vrstvě. Existujícího závislosti můžete zjistit pomocí zpětnou je.  
   
 > [!NOTE]
->  Pro určité druhy artefaktů nelze provádět zpětnou analýzu žádných závislostí. Zpětnou analýzou například nebudou získány žádné závislosti z vrstvy nebo do ní, když je propojena s textovým souborem. Pokud chcete zobrazit, které artefakty mají závislosti, které je možné provádět zpětnou analýzu, klikněte pravým tlačítkem na jednu nebo více vrstev a klikněte na **zobrazit odkazy**. V **Průzkumník vrstev**, zkontrolujte **podporuje ověřování** sloupce. Závislosti se nebudou provést zpětnou analýzu pro artefakty, u kterých tento sloupec zobrazuje **False**.  
+> Pro určité druhy artefaktů nelze provádět zpětnou analýzu žádných závislostí. Zpětnou analýzou například nebudou získány žádné závislosti z vrstvy nebo do ní, když je propojena s textovým souborem. Pokud chcete zobrazit, které artefakty mají závislosti, které je možné provádět zpětnou analýzu, klikněte pravým tlačítkem na jednu nebo více vrstev a klikněte na **zobrazit odkazy**. V **Průzkumník vrstev**, zkontrolujte **podporuje ověřování** sloupce. Závislosti se nebudou provést zpětnou analýzu pro artefakty, u kterých tento sloupec zobrazuje **False**.  
   
 #### <a name="to-reverse-engineer-existing-dependencies-between-layers"></a>Provádět zpětnou analýzu existujících závislostí mezi vrstvami  
   
@@ -155,7 +155,7 @@ Popisu architektury aplikace na vysoké úrovni tak, že vytvoříte *diagramy v
   Chcete-li tyto chyby odstranit, aktualizujte kód, dokud se během ověřování neobjeví žádné chyby. To je obvykle iterativní proces. Další informace o těchto chybách naleznete v tématu [ověřování kódu pomocí diagramů vrstev](../modeling/validate-code-with-layer-diagrams.md).  
   
 > [!NOTE]
->  Při vývoji a Refaktorovat kód, můžete mít nový artefakty k propojení do diagramu vrstev. Nicméně to nemusí být nezbytné, například když máte vrstvy, které představují stávající obory názvů a nový kód pouze přidá další materiály obory názvů.  
+> Při vývoji a Refaktorovat kód, můžete mít nový artefakty k propojení do diagramu vrstev. Nicméně to nemusí být nezbytné, například když máte vrstvy, které představují stávající obory názvů a nový kód pouze přidá další materiály obory názvů.  
   
  Během procesu vývoje můžete chtít potlačit některé vykázané konflikty během ověřování. Například můžete chtít potlačit chyby, které již řešíte nebo které nejsou relevantní k danému scénáři. Při potlačení chyby je praktikou zaznamenat pracovní položku [!INCLUDE[esprfound](../includes/esprfound-md.md)]. K provedení této úlohy, naleznete v tématu [ověřování kódu pomocí diagramů vrstev](../modeling/validate-code-with-layer-diagrams.md).  
   

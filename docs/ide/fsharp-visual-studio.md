@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: dc3a49c586b7a8f5a67d6c1a3a77d00772698389
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955855"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62793410"
 ---
 # <a name="develop-with-visual-f-in-visual-studio"></a>Vývoj s Vizuálem F# v sadě Visual Studio
 
@@ -49,7 +49,7 @@ Následující tabulka shrnuje funkce ve vlastnostech projektu pro F#:
 |Ikona a manifest|Ne|K dispozici prostřednictvím možnosti příkazového řádku kompilátoru.|
 |Klienta služby ASP.NET|Ne||
 |ClickOnce|Ne|Použijte projekt klienta v jiném jazyce rozhraní .NET Framework, pokud je k dispozici.|
-|Silné názvy|Ne|K dispozici prostřednictvím možnosti příkazového řádku kompilátoru.|
+|Vytváření silných názvů|Ne|K dispozici prostřednictvím možnosti příkazového řádku kompilátoru.|
 |Sestavení, publikování a správa verzí|Ne||
 |Analýza kódu|Ne|Nástroje pro analýzu kódu můžete spustit ručně nebo jako součást příkazu po sestavení.|
 |Zabezpečení (Změna úrovně důvěryhodnosti)|Ne||

@@ -16,12 +16,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9bec38846f7703ff3958aa1c0fcc9a660a5e080d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: daf77a60256e59cabd176990f3642a2206a7f0d8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54784132"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444549"
 ---
 # <a name="reorder-parameters-refactoring-c"></a>Refaktoring přeskupení parametrů (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,11 +31,11 @@ ms.locfileid: "54784132"
  K provedení `Reorder Parameters` operace, umístěte kurzor na nebo vedle metoda, indexer nebo delegáta. Když je ukazatel myši na pozici, vyvolat `Reorder Parameters` operace stisknutím klávesové zkratky, nebo klikněte na příkaz v místní nabídce.  
   
 > [!NOTE]
->  První parametr metody rozšíření nemůže změnit pořadí.  
+> První parametr metody rozšíření nemůže změnit pořadí.  
   
 ### <a name="to-reorder-parameters"></a>Chcete-li změnit pořadí parametrů  
   
-1.  Vytvoření knihovny tříd s názvem `ReorderParameters`a potom nahraďte `Class1` pomocí následujícího ukázkového kódu.  
+1. Vytvoření knihovny tříd s názvem `ReorderParameters`a potom nahraďte `Class1` pomocí následujícího ukázkového kódu.  
   
     ```csharp  
     class ProtoClassA  
@@ -56,21 +56,21 @@ ms.locfileid: "54784132"
     }  
     ```  
   
-2.  Umístěte kurzor na `MethodB`, buď v deklaraci metody nebo volání metody.  
+2. Umístěte kurzor na `MethodB`, buď v deklaraci metody nebo volání metody.  
   
-3.  Na **Refaktorovat** nabídky, klikněte na tlačítko **změnit uspořádání parametrů**.  
+3. Na **Refaktorovat** nabídky, klikněte na tlačítko **změnit uspořádání parametrů**.  
   
      **Změnit uspořádání parametrů** zobrazí se dialogové okno.  
   
-4.  V **změnit uspořádání parametrů** dialogu `int i` v **parametry** seznamu a potom klikněte na tlačítko dolů.  
+4. V **změnit uspořádání parametrů** dialogu `int i` v **parametry** seznamu a potom klikněte na tlačítko dolů.  
   
      Alternativně můžete přetáhnout `int i` po `bool b` v **parametry** seznamu.  
   
-5.  V **změnit uspořádání parametrů** dialogové okno, klikněte na tlačítko **OK**.  
+5. V **změnit uspořádání parametrů** dialogové okno, klikněte na tlačítko **OK**.  
   
      Pokud **náhled změn odkazu** je vybraná možnost v **změnit uspořádání parametrů** dialogovém okně **náhled změn – Změna pořadí parametrů** se zobrazí dialogové okno. Nabízí náhled změn v seznamu parametrů pro `MethodB` v podpisu a volání metody.  
   
-    1.  Pokud **náhled změn – Změna pořadí parametrů** dialogové okno se zobrazí, klikněte na tlačítko **použít**.  
+    1. Pokud **náhled změn – Změna pořadí parametrů** dialogové okno se zobrazí, klikněte na tlačítko **použít**.  
   
          V tomto příkladu deklarace metody a všechny metody místa pro volání `MethodB` se aktualizují.  
   

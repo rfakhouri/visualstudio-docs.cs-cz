@@ -9,12 +9,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 226f2281af2ccdb288ff2c186da280b329a2af1f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e58471c1676ce67e96ef2c325f5ec461f54cfc9c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071873"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441988"
 ---
 # <a name="step-1-create-a-project-and-add-labels-to-your-form"></a>Krok 1: Vytvoření projektu a přidání popisků do formuláře
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "60071873"
 Jako první kroky ve vývoji tohoto kvízu vytvoříte projekt a přidat popisky, tlačítka a další ovládací prvky do formuláře. Můžete také nastavit vlastnosti pro každý ovládací prvek, který přidáte. Projekt bude obsahovat formulář, ovládací prvky a (později v tomto návodu) kód. Tlačítko spustí kvíz, popisky zobrazí problémy kvízu a další ovládací prvky zobrazí odpovědi kvízu a čas, který zbývá do dokončení kvízu.  
   
 > [!NOTE]
->  Toto téma je součástí série kurzů o základních principech kódování. Přehled kurzu, naleznete v tématu [kurz 2: Vytvoření matematického kvízu](../ide/tutorial-2-create-a-timed-math-quiz.md).  
+> Toto téma je součástí série kurzů o základních principech kódování. Přehled kurzu, naleznete v tématu [kurz 2: Vytvoření matematického kvízu](../ide/tutorial-2-create-a-timed-math-quiz.md).  
   
 ### <a name="to-create-a-project-and-set-properties-for-a-form"></a>Chcete-li vytvořit projekt a nastavit vlastnosti pro formulář  
   
@@ -145,7 +145,7 @@ První řádek matematického kvízu
 9. Čtvrtý řádek pojmenujte první jmenovku **dividedLeftLabel**, změňte druhý popisek **Text** vlastnost **÷** (děleno), pojmenujte třetí jmenovku  **dividedRightLabel**a ovládací prvek NumericUpDown **podíl**.  
   
     > [!NOTE]
-    >  Můžete zkopírovat × znaménko násobení a dělení přihlašování ÷ z tohoto kurzu a vložte je do formuláře.  
+    > Můžete zkopírovat × znaménko násobení a dělení přihlašování ÷ z tohoto kurzu a vložte je do formuláře.  
   
 ### <a name="to-add-a-start-button-and-set-the-tab-index-order"></a>Přidání tlačítka start a nastavení pořadí indexů karty  
   
@@ -162,7 +162,7 @@ První řádek matematického kvízu
 6. Nastavte hodnotu **TabIndex** vlastnost **startButton** mít pod kontrolou **1**.  
   
     > [!NOTE]
-    >  **TabIndex** vlastnost nastavuje pořadí ovládacích prvků při kvízu, stiskne klávesu Tab. Pokud chcete zobrazit, jak to funguje, otevřete dialogové okno libovolný (například v panelu nabídek zvolte **souboru**, **otevřete**) a pak zvolte klávesu Tab několikrát. Podívejte se, jak se váš kurzor přesouvá z ovládacího prvku na ovládací prvek pokaždé, když klávesu Tabulátor. Programátor pořadí při vytváření formuláře.  
+    > **TabIndex** vlastnost nastavuje pořadí ovládacích prvků při kvízu, stiskne klávesu Tab. Pokud chcete zobrazit, jak to funguje, otevřete dialogové okno libovolný (například v panelu nabídek zvolte **souboru**, **otevřete**) a pak zvolte klávesu Tab několikrát. Podívejte se, jak se váš kurzor přesouvá z ovládacího prvku na ovládací prvek pokaždé, když klávesu Tabulátor. Programátor pořadí při vytváření formuláře.  
   
 7. Nastavte hodnotu **TabIndex** vlastnost pro součtový ovládací prvek NumericUpDown na **2**, pro ovládací prvek rozdílu na **3**, ovládací prvek produktu **4**a pro ovládací prvek podílu na **5**.  
   

@@ -12,12 +12,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5c6743f7466f1b6d2e17c1dbf9da523c87e63e77
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0beb86e3cb939a33a6b0fab3922b2a31a88a3307
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060316"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439257"
 ---
 # <a name="how-to-change-text-case-in-the-editor"></a>Postupy: Změna velikosti písmen v editoru
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "60060316"
 Příkazy nabídky nebo klávesové zkratky můžete použít k převodu případ vybraný text na velká písmena nebo velká písmena.  
   
 > [!NOTE]
->  Dialogová okna a příkazy nabídek, zobrazí se mohou lišit od těch popsaných v **pomáhají** v závislosti na aktivních nastaveních nebo edici. Chcete-li změnit nastavení, zvolte **nastavení importu a exportu** na **nástroje** nabídky. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Dialogová okna a příkazy nabídek, zobrazí se mohou lišit od těch popsaných v **pomáhají** v závislosti na aktivních nastaveních nebo edici. Chcete-li změnit nastavení, zvolte **nastavení importu a exportu** na **nástroje** nabídky. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="procedure"></a>Postup  
   
@@ -42,7 +42,7 @@ Příkazy nabídky nebo klávesové zkratky můžete použít k převodu přípa
      Chcete-li převést text na malá písmena, zvolte **Ujistěte se, malá písmena**, nebo stiskněte klávesu **CTRL**+**U**.  
   
     > [!TIP]
-    >  Chcete-li vrátit k předchozí větví formátování před touto změnou, vyberte **zpět** z **upravit** nabídky.  
+    > Chcete-li vrátit k předchozí větví formátování před touto změnou, vyberte **zpět** z **upravit** nabídky.  
   
 ## <a name="see-also"></a>Viz také  
  [Vlastní nastavení editoru](../ide/customizing-the-editor.md)   

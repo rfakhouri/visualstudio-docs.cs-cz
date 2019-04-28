@@ -12,12 +12,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3b5ce753b0e3e7523f7c88eac3ad20afc7b0c953
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 90aa5e77c6541b36619615fc253c55f5d78a6b45
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54788131"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445701"
 ---
 # <a name="hosting-process-vshostexe"></a>Proces hostování (vshost.exe)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "54788131"
 Hostitelský proces je funkce v sadě Visual Studio, který zlepšuje výkon ladění, umožňuje ladění v částečném vztahu důvěryhodnosti a umožňuje vyhodnocení výrazu pro dobu návrhu. Hostující proces soubory obsahují vshost v názvu souboru a jsou umístěny ve výstupní složce vašeho projektu. Další informace najdete v tématu [ladění a proces hostování](../debugger/debugging-and-the-hosting-process.md).  
   
 > [!NOTE]
->  Hostování souborů procesu (. vshost.exe) jsou určeny pro použití v aplikaci Visual Studio a by neměl být přímo spustit nebo nasazen s aplikací.  
+> Hostování souborů procesu (. vshost.exe) jsou určeny pro použití v aplikaci Visual Studio a by neměl být přímo spustit nebo nasazen s aplikací.  
   
 ## <a name="improved-debugging-performance"></a>Vylepšení ladění výkonu  
  Hostitelský proces vytvoří aplikační doménu a ladicí program přidruží k aplikaci. Provádění těchto úkolů můžete zavést významnému zpoždění mezi ladění v době spuštění a čas aplikace zahájí spuštění. Hostitelský proces vám pomůže zvýšit výkon tím vytváření domény aplikace a přidružení ladicího programu na pozadí a uložíte domény aplikace a spustí ladicí program stavu mezi aplikace. Další informace o aplikačních doménách najdete v tématu [aplikačních doménách](http://msdn.microsoft.com/library/113a8bbf-6875-4a72-a49d-ca2d92e19cc8).  

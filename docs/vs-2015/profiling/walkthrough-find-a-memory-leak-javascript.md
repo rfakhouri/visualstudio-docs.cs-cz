@@ -16,12 +16,12 @@ caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0533ed4a4d1fc45b41f1e324b087cc0e249e1083
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5617dc6cbe4b7ba096afe1f308d06e7f4aaf9c6a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60100443"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439652"
 ---
 # <a name="walkthrough-find-a-memory-leak-javascript"></a>Návod: Vyhledání nevrácené paměti (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "wi
 2. Zvolte **JavaScript** v levém podokně a pak zvolte **Windows**, **Windows 8**, pak buď **univerzální** nebo  **Windows Phone Apps**.  
   
     > [!IMPORTANT]
-    >  Výsledky využití paměti v tomto tématu je testován vůči aplikaci pro Windows 8.  
+    > Výsledky využití paměti v tomto tématu je testován vůči aplikaci pro Windows 8.  
   
 3. Zvolte **prázdnou aplikaci** šablonu projektu v prostředním podokně.  
   
@@ -55,7 +55,7 @@ Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "wi
     ```  
   
     > [!IMPORTANT]
-    >  Pokud používáte šablonu pro univerzální aplikace pro Windows 8.1, je potřeba aktualizovat kód HTML a CSS v obou. Windows a. WindowsPhone projekty.  
+    > Pokud používáte šablonu pro univerzální aplikace pro Windows 8.1, je potřeba aktualizovat kód HTML a CSS v obou. Windows a. WindowsPhone projekty.  
   
 6. Otevřete default.css a přidejte následující kód šablony stylů CSS:  
   
@@ -137,7 +137,7 @@ Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "wi
 1. Na **ladění** nástrojů v **spustit ladění** , zvolte cíl ladění pro aktualizovaný projekt: jednu emulátory Windows Phone nebo **simulátor**.  
   
    > [!TIP]
-   >  Aplikace pro Windows Store, můžete také zvolit **místního počítače** nebo **vzdálený počítač** v tomto seznamu. Výhodou použití emulátoru nebo simulátoru je však, že můžete umístit u sady Visual Studio a snadno přepínat mezi běžící aplikaci a analýzu paměti jazyka JavaScript. Další informace najdete v tématu [spouštění aplikací v sadě Visual Studio](../debugger/run-store-apps-from-visual-studio.md) a [aplikace Windows Store spustit ve vzdáleném počítači](../debugger/run-windows-store-apps-on-a-remote-machine.md).  
+   > Aplikace pro Windows Store, můžete také zvolit **místního počítače** nebo **vzdálený počítač** v tomto seznamu. Výhodou použití emulátoru nebo simulátoru je však, že můžete umístit u sady Visual Studio a snadno přepínat mezi běžící aplikaci a analýzu paměti jazyka JavaScript. Další informace najdete v tématu [spouštění aplikací v sadě Visual Studio](../debugger/run-store-apps-from-visual-studio.md) a [aplikace Windows Store spustit ve vzdáleném počítači](../debugger/run-windows-store-apps-on-a-remote-machine.md).  
   
 2. Na **ladění** nabídce zvolte **Profiler výkonu...** .  
   
@@ -152,7 +152,7 @@ Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "wi
     Při výběru tlačítka, zpracování kódu v souboru default.js nemá práce, kterou povede k nevrácení paměti událostí. To budete používat pro diagnostické účely.  
   
    > [!TIP]
-   >  Opakující se scénář, který chcete testovat nevracení paměti usnadňuje odfiltrovat nezajímavé informace, jako jsou objekty, které jsou přidány do haldy během inicializace aplikace nebo při načítání stránky.  
+   > Opakující se scénář, který chcete testovat nevracení paměti usnadňuje odfiltrovat nezajímavé informace, jako jsou objekty, které jsou přidány do haldy během inicializace aplikace nebo při načítání stránky.  
   
 5. Ze spuštěné aplikaci přepněte do sady Visual Studio (Alt + Tab).  
   
@@ -171,14 +171,14 @@ Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "wi
     ![Směrný plán snímek a snímek 2](../profiling/media/js-mem-app-snapshot2.png "JS_Mem_App_Snapshot2")  
   
    > [!NOTE]
-   >  Emulátor Windows Phone není uveden snímek aplikace v době pořízení snímku.  
+   > Emulátor Windows Phone není uveden snímek aplikace v době pořízení snímku.  
   
 9. Přepněte do aplikace a zvolte **nevracení paměti** tlačítko znovu.  
   
 10. Přepněte do aplikace Visual Studio a zvolte **udělat snímek haldy** třetí.  
   
     > [!TIP]
-    >  Pomocí třetí snímku v tomto pracovním postupu, se dá odfiltrovat změny z snímek směrného plánu na druhý snímek, které nejsou přidruženy k nevracení paměti. Například může být očekávané změny, jako je aktualizace záhlaví a zápatí stránky, které budou generovat některé změny využití paměti, ale pravděpodobně nemá vztah k nevracení paměti.  
+    > Pomocí třetí snímku v tomto pracovním postupu, se dá odfiltrovat změny z snímek směrného plánu na druhý snímek, které nejsou přidruženy k nevracení paměti. Například může být očekávané změny, jako je aktualizace záhlaví a zápatí stránky, které budou generovat některé změny využití paměti, ale pravděpodobně nemá vztah k nevracení paměti.  
   
      Tento obrázek ukazuje snímek č. 2 a snímek č. 3.  
   
@@ -191,7 +191,7 @@ Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "wi
     - Velikost haldy (zobrazené červeně na levé straně šipka nahoru) zvýšila o několik ve srovnání s snímku č. 1 KB.  
   
       > [!IMPORTANT]
-      >  Využití hodnoty přesné paměti pro velikost haldy závisí na cíl ladění.  
+      > Využití hodnoty přesné paměti pro velikost haldy závisí na cíl ladění.  
   
     - Počet objektů na haldě (zobrazené červená šipka vpravo nahoru) bylo zvýšeno ve srovnání s snímku č. 1. Jeden objekt se přidala (+ 1) a byly odebrány žádné objekty (-0).  
   
@@ -222,7 +222,7 @@ Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "wi
       V tuto chvíli vám pomůže určitá znalost aplikace: Výběr **nevracení paměti** tlačítko by odeberte DIV element a přidat prvek, takže kód vypadá, že nepodporuje pracovat přímo (to znamená, že nevrací paměť). V další části vysvětluje, jak to opravit.  
   
     > [!TIP]
-    >  V některých případech vyhledání objektu ve vztahu k `Global` objekt vám mohou pomoci identifikovat tohoto objektu. Chcete-li to provést, otevřete místní nabídku pro identifikátor a klikněte na tlačítko **zobrazit v zobrazení kořenů**.  
+    > V některých případech vyhledání objektu ve vztahu k `Global` objekt vám mohou pomoci identifikovat tohoto objektu. Chcete-li to provést, otevřete místní nabídku pro identifikátor a klikněte na tlačítko **zobrazit v zobrazení kořenů**.  
   
 ## <a name="FixingMemory"></a> Opravte problém paměti  
   

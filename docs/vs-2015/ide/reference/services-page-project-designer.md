@@ -14,12 +14,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8b089cd468b9b4a69a22a3be31059be51e05ee24
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: ed2e8ad333121a489c450a35daf81a368cd4aba8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59648351"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444721"
 ---
 # <a name="services-page-project-designer"></a>Stránka Služby, návrhář projektu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Klientské aplikační služby nabízejí zjednodušený přístup ke [!INCLUDE[
  Pro přístup **služby** stránky, vyberte uzel projektu v **Průzkumníku řešení**a potom klikněte na **vlastnosti** na **projektu** nabídky. Když **Návrháře projektu** se zobrazí, klikněte na tlačítko **služby** kartu.  
   
 > [!NOTE]
->  Klientské aplikační služby vyžadují plnou verzi rozhraní .NET Framework a nejsou podporovány v rozhraní .NET Framework Client Profile. Pokud **povolit klientské aplikační služby** zaškrtávací políčko je zakázaná. Ověřte, zda **Cílová architektura** je nastavená na rozhraní .NET Framework 3.5 nebo novější. Chcete-li zobrazit **Cílová architektura** nastavení v jazyce C#, otevřete Návrhář projektu a pak klikněte na tlačítko **aplikace** stránky. Chcete-li zobrazit **Cílová architektura** nastavení v jazyce Visual Basic, otevřete Návrhář projektu, klikněte na tlačítko **kompilaci** stránce a potom klikněte na **Upřesnit možnosti kompilace**.  
+> Klientské aplikační služby vyžadují plnou verzi rozhraní .NET Framework a nejsou podporovány v rozhraní .NET Framework Client Profile. Pokud **povolit klientské aplikační služby** zaškrtávací políčko je zakázaná. Ověřte, zda **Cílová architektura** je nastavená na rozhraní .NET Framework 3.5 nebo novější. Chcete-li zobrazit **Cílová architektura** nastavení v jazyce C#, otevřete Návrhář projektu a pak klikněte na tlačítko **aplikace** stránky. Chcete-li zobrazit **Cílová architektura** nastavení v jazyce Visual Basic, otevřete Návrhář projektu, klikněte na tlačítko **kompilaci** stránce a potom klikněte na **Upřesnit možnosti kompilace**.  
   
 ## <a name="task-list"></a>Seznam úkolů  
  [Postupy: Konfigurace klientských aplikačních služeb](http://msdn.microsoft.com/library/34a8688a-a32c-40d3-94be-c8e610c6a4e8)  

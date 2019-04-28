@@ -11,12 +11,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 35713751061e5a590a5a7bc9cc5fa03bccd56966
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: b9a5612a9d6fd04850134a51f62a02496deb1708
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54769301"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441932"
 ---
 # <a name="setting-bookmarks-in-code"></a>Nastavení záložek v kódu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Záložky můžete označit řádky v kódu tak, aby mohli rychle vrátit na ur�
  Chcete-li přidat záložku, umístěte kurzor na řádek, který chcete přidat k oblíbeným. Klikněte na tlačítko **přepnout** tlačítko, nebo stiskněte kombinaci kláves CTRL + K. Přidá záložku. Pokud kliknete na přepínací tlačítko (nebo stiskněte kombinaci kláves CTRL + K), Záložka bude odebrána. Záložky lze také odstranit klepnutím **odstranit** tlačítka v okně záložek.  
   
 > [!IMPORTANT]
->  Záložka je nastavena na číslo řádku, nikoli na kód. Pokud upravíte kód, bude tato záložka zachována na čísle řádku a nepřesune se s kódem.  
+> Záložka je nastavena na číslo řádku, nikoli na kód. Pokud upravíte kód, bude tato záložka zachována na čísle řádku a nepřesune se s kódem.  
   
  Můžete procházet mezi záložkami pomocí **Další záložka** a **předchozí Záložka** tlačítka v okně záložek.  
   

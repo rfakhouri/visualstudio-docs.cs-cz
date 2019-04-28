@@ -17,12 +17,12 @@ caps.latest.revision: 47
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c2d8ecd09487248b4c4be05b354133c710febf30
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: cfc486401792afc7d2c6295cacca843aa6c5b11b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60076195"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445021"
 ---
 # <a name="securing-clickonce-applications"></a>Zabezpečování aplikací ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -74,7 +74,7 @@ ms.locfileid: "60076195"
  Nikdy byste neměli předávat argumenty načtené pomocí řetězce dotazu do databáze nebo příkazového řádku bez ověřování argumentů a zajištění jejich bezpečnosti. Nebezpečné argumenty jsou argumenty s řídicími znaky databáze nebo příkazového řádku, které by mohly umožnit uživateli se zlými úmysly manipulaci s aplikací a provádění libovolných příkazů.  
   
 > [!NOTE]
->  Argumenty řetězce dotazu jsou pouze způsobem předávání argumentů [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] při spuštění aplikace. Argumenty nelze předat [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikace z příkazového řádku.  
+> Argumenty řetězce dotazu jsou pouze způsobem předávání argumentů [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] při spuštění aplikace. Argumenty nelze předat [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikace z příkazového řádku.  
   
 ## <a name="deploying-obfuscated-assemblies"></a>Nasazení obfuskovaných sestavení  
  Obfuskací aplikace pomocí nástroje Dotfuscator můžete zabránit ostatním uživatelům ve zpětné analýze kódu. Obfuskace sestavení však není integrována do integrovaného vývojového prostředí sady Visual Studio nebo procesu nasazení technologie ClickOnce. Proto budete muset provést obfuskaci mimo proces nasazení, případně pomocí kroku po sestavení. Po sestavení projektu byste měli následující kroky provést ručně mimo sadu Visual Studio:  

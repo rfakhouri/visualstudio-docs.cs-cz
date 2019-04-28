@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9b9a88aff9cd587f695ace56c44eaf9c8fcb8875
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 366416e4f18435bd01391657eb2fc4f65f8a4d62
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117197"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441768"
 ---
 # <a name="how-to-open-office-solutions-without-running-code"></a>Postupy: Otevření řešení pro systém Office bez spuštění kódu
   Řešení Microsoft Office vytvořené pomocí rozšíření spravovaného kódu spustí i v případě, že nastavení zabezpečení aplikace Office koncového uživatele je nastavena na hodnotu Vysoká. Je to proto, že spravuje zabezpečení kódu .NET sestavení rozhraní Microsoft .NET Framework, ne společnost Microsoft Office.
@@ -39,7 +39,7 @@ ms.locfileid: "60117197"
 - Otevřít dokumenty a sešity **souboru** nabídky při podržení **Shift** klíč zabránit vyvolávání událostí inicializace při otevírání dokumentů aplikace Word a Excel.
 
     > [!NOTE]
-    >  Pokud otevřete dokumentu nebo sešitu z **Začínáme** podokna úloh, podržte **Shift** nepoužívat kód. Navíc podržíte stisknutou klávesu SHIFT nebrání událostí vyvolaných po otevření dokumentu.
+    > Pokud otevřete dokumentu nebo sešitu z **Začínáme** podokna úloh, podržte **Shift** nepoužívat kód. Navíc podržíte stisknutou klávesu SHIFT nebrání událostí vyvolaných po otevření dokumentu.
 
      Tato metoda je užitečná, pokud chcete otevřít dokument provádět změny bez kódu, spouštění a nejprve změny dokumentu.
 

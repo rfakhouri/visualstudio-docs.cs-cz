@@ -13,18 +13,18 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3c040df103bac464e4f440f23674da966063f0ae
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: 0991f27077cf3ac3eb5cbfdcbb409fd5903d9a66
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58149666"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446372"
 ---
 # <a name="idebugapplication110-interface"></a>IDebugApplication110 – rozhraní
 `IDebugApplication110` Rozhraní rozšiřuje funkce [idebugapplication – rozhraní](../../winscript/reference/idebugapplication-interface.md). Instance tohoto rozhraní můžete získat pomocí volání QueryInterface u implementace [idebugapplication – rozhraní](../../winscript/reference/idebugapplication-interface.md).  
   
 > [!IMPORTANT]
->  Toto rozhraní je implementováno komponentou PDM verze 11.0 nebo novější. Nachází se v souboru activdbg100.h.  
+> Toto rozhraní je implementováno komponentou PDM verze 11.0 nebo novější. Nachází se v souboru activdbg100.h.  
   
 ## <a name="methods"></a>Metody  
  `IDebugApplication110` Rozhraní poskytuje následující metody.  

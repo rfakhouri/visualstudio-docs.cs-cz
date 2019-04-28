@@ -11,12 +11,12 @@ ms.assetid: f7fe9a7e-f669-4642-ad5d-186b2e6e6ec9
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 7d1bfcfc3176e14900553504a66307ff6e8dcf5a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f3bae21baa0c484f2deeb8406a703b92cadc874b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049254"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439046"
 ---
 # <a name="designer-initialization-and-metadata-configuration"></a>Inicializace návrháře a konfigurace metadat
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ Manipulace s metadata a filtrování atributů přiřazených pomocí návrhář
 1. Vytváří se implementaci objektu <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> třídy.  
   
    > [!NOTE]
-   >  <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> Třída by měla být implementována nikdy na stejný objekt jako <xref:Microsoft.VisualStudio.Shell.Package> třídy.  
+   > <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> Třída by měla být implementována nikdy na stejný objekt jako <xref:Microsoft.VisualStudio.Shell.Package> třídy.  
   
 2. Registrace třídy implementující <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> jako poskytují podporu pro rozšíření návrháře sady VSPackage použitím instance <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtensionAttribute>, <xref:Microsoft.VisualStudio.Shell.ProvideObjectAttribute> a <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute> ke třídě poskytuje implementaci sady VSPackage <xref:Microsoft.VisualStudio.Shell.Package> .  
   
@@ -93,7 +93,7 @@ Manipulace s metadata a filtrování atributů přiřazených pomocí návrhář
   `internal class MyPackage : Package {}`  
   
 > [!NOTE]
->  V současné době návrhové plochy podporuje pouze vytváření součástí a proto lze pouze součásti mají místních metadat. V předchozím příkladu jsme se pokouší změnit vlastnost, jako `Color` vlastnosti objektu. Pokud `false` byla předána pro globální příznak `CustomBrowser` by nikdy zobrazeny, protože návrhář vytvoří nikdy ve skutečnosti instance `Color`. Nastavení globální příznak `false` je užitečné pro součásti, například ovládací prvky, časovačů a dialogových oknech.  
+> V současné době návrhové plochy podporuje pouze vytváření součástí a proto lze pouze součásti mají místních metadat. V předchozím příkladu jsme se pokouší změnit vlastnost, jako `Color` vlastnosti objektu. Pokud `false` byla předána pro globální příznak `CustomBrowser` by nikdy zobrazeny, protože návrhář vytvoří nikdy ve skutečnosti instance `Color`. Nastavení globální příznak `false` je užitečné pro součásti, například ovládací prvky, časovačů a dialogových oknech.  
   
 ## <a name="see-also"></a>Viz také  
  <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension>   

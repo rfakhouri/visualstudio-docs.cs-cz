@@ -57,12 +57,12 @@ caps.latest.revision: 41
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ce3cfa8762c6202a7c36bd9606a0fa77ccdd94a4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d6dec053e1075865b51c14df951915308852f8a2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60084038"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445441"
 ---
 # <a name="managing-external-tools"></a>Správa externích nástrojů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -85,7 +85,7 @@ Externí nástroje je možné volat v rámci aplikace Visual Studio. Jsou k disp
 6. Editor konfigurace služby WCF: Umožňuje vytvářet a upravovat nastavení konfigurace pro služby WCF.  
   
 > [!WARNING]
->  V závislosti na nainstalované verzi aplikace Visual Studio a na použitém nastavení profilu je možné vidět odlišný seznam externích nástrojů. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> V závislosti na nainstalované verzi aplikace Visual Studio a na použitém nastavení profilu je možné vidět odlišný seznam externích nástrojů. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="adding-new-tools"></a>Přidání nových nástrojů  
  Můžete přidat externí nástroj **nástroje** nabídky. Otevřít **externích nástrojů** dialogové okno a klikněte na tlačítko **přidat**, následně vyplňte informace. Následující položka například způsobí otevření programu Průzkumník Windows v adresáři souboru aktuálně otevřeného v aplikaci Visual Studio:  
@@ -100,7 +100,7 @@ Externí nástroje je možné volat v rámci aplikace Visual Studio. Jsou k disp
  Následující argumenty jsou proměnné aplikace Visual Studio, které jsou přiřazeny při spuštění externího nástroje. Odkazy na externí nástroje, jako je Poznámkový blok nebo Spy ++, mohou být uvedeny v **nástroje** nabídky v dialogovém okně externí nástroje.  
   
 > [!NOTE]
->  Stavový řádek IDE zobrazuje pro označení místa bodu vložení v aktivním editoru kódu proměnné Current Line a Current Column. Proměnná Current Text vrací text nebo kód vybraný v rámci tohoto místa.  
+> Stavový řádek IDE zobrazuje pro označení místa bodu vložení v aktivním editoru kódu proměnné Current Line a Current Column. Proměnná Current Text vrací text nebo kód vybraný v rámci tohoto místa.  
   
 |Název|Argument|Popis|  
 |----------|--------------|-----------------|  

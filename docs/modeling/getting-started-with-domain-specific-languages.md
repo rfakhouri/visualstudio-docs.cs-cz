@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d2710e529ea558b87527e84865717645116b6b36
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 915a6c6d06380aa67c2c79ce52598668a9b33f18
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069546"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442384"
 ---
 # <a name="get-started-with-domain-specific-languages"></a>Začínáme s jazyky specifickými pro doménu
 
@@ -294,7 +294,7 @@ Přejmenujte existující doménovými třídami a vztahy. Například od defini
          Nastavte její název, například **městě**.
 
         > [!NOTE]
-        >  Každá třída domény s výjimkou kořen modelu musí být pro cílový alespoň jeden vztah obsažení, nebo musí dědit z třídy, která je cílem obsažení. Z tohoto důvodu je často vhodné vytvořit doménovou třídu s použitím nástroje vztah obsažení.
+        > Každá třída domény s výjimkou kořen modelu musí být pro cílový alespoň jeden vztah obsažení, nebo musí dědit z třídy, která je cílem obsažení. Z tohoto důvodu je často vhodné vytvořit doménovou třídu s použitím nástroje vztah obsažení.
 
     2. Přidat doménová vlastnost, která na novou třídu, například **název**.
 
@@ -305,7 +305,7 @@ Přejmenujte existující doménovými třídami a vztahy. Například od defini
          ![Fragment definice DSL: kořen stromu řady](../modeling/media/familyt_root.png)
 
         > [!NOTE]
-        >  Referenční stavy představují křížové odkazy z jedné části stromu modelu do jiného.
+        > Referenční stavy představují křížové odkazy z jedné části stromu modelu do jiného.
 
 3. Přidáte prvek k reprezentaci měst v diagramech modelů.
 

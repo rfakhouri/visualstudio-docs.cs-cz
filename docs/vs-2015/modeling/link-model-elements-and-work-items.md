@@ -19,12 +19,12 @@ caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2b0ec545defec941d9a59001841d8bea443aa522
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: cdfcb6bb07f167ea1da81101ae00613a5b2fac93
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071860"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440927"
 ---
 # <a name="link-model-elements-and-work-items"></a>Propojení prvků modelu a pracovních položek
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Sledujte úkoly, testovací případy, chyby, požadavky, problémy a další pr
  Tuto funkci podporovat kterou verzí sady Visual Studio najdete v tématu [podporované verze pro nástroje architektury a modelování](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
 > [!NOTE]
->  K vytváření a otvírání odkazů je nutné použít Průzkumník týmových projektů. Přesvědčte se, zda jsou vaše diagramy a projekt modelování zapsány do správy verzí, aby ostatní uživatelé mohli otevírat propojené diagramy.  
+> K vytváření a otvírání odkazů je nutné použít Průzkumník týmových projektů. Přesvědčte se, zda jsou vaše diagramy a projekt modelování zapsány do správy verzí, aby ostatní uživatelé mohli otevírat propojené diagramy.  
   
  Propojit můžete například:  
   
@@ -61,7 +61,7 @@ Sledujte úkoly, testovací případy, chyby, požadavky, problémy a další pr
 - Diagramy. Chcete-li zvolit diagram, vyberte prázdnou část diagramu.  
   
 > [!WARNING]
->  Musíte už být připojení k TFS zdrojového kódu ovládacího prvku (SCC) vytvořit nebo propojit s pracovní položkou. Pokud se pokusíte otevřít připojení k jiné SCC TFS, Visual Studio automaticky zavře aktuální řešení. Ujistěte se, že jste již připojeni k příslušné SCC než se pokusíte vytvořit nebo propojit s pracovní položkou. V pozdějších verzích sady Visual Studio příkazy nabídky nejsou k dispozici v případě, že nejste připojeni k SCC.  
+> Musíte už být připojení k TFS zdrojového kódu ovládacího prvku (SCC) vytvořit nebo propojit s pracovní položkou. Pokud se pokusíte otevřít připojení k jiné SCC TFS, Visual Studio automaticky zavře aktuální řešení. Ujistěte se, že jste již připojeni k příslušné SCC než se pokusíte vytvořit nebo propojit s pracovní položkou. V pozdějších verzích sady Visual Studio příkazy nabídky nejsou k dispozici v případě, že nejste připojeni k SCC.  
   
 - [Připojení k týmovému projektu](#ConnectTFS)  
   
@@ -99,7 +99,7 @@ Sledujte úkoly, testovací případy, chyby, požadavky, problémy a další pr
      Systém Visual Studio propojí prvek modelu s novou pracovní položkou. Zobrazí se ikona na prvku modelu nebo blízko něj.  
   
 > [!WARNING]
->  Musíte už být připojení k TFS zdrojového kódu ovládacího prvku (SCC) vytvořit nebo propojit s pracovní položkou. Pokud se pokusíte otevřít připojení k jiné SCC TFS, Visual Studio automaticky zavře aktuální řešení. Ujistěte se, že jste již připojeni k příslušné SCC než se pokusíte vytvořit nebo propojit s pracovní položkou. V pozdějších verzích sady Visual Studio příkazy nabídky nejsou k dispozici v případě, že nejste připojeni k SCC.  
+> Musíte už být připojení k TFS zdrojového kódu ovládacího prvku (SCC) vytvořit nebo propojit s pracovní položkou. Pokud se pokusíte otevřít připojení k jiné SCC TFS, Visual Studio automaticky zavře aktuální řešení. Ujistěte se, že jste již připojeni k příslušné SCC než se pokusíte vytvořit nebo propojit s pracovní položkou. V pozdějších verzích sady Visual Studio příkazy nabídky nejsou k dispozici v případě, že nejste připojeni k SCC.  
   
 ## <a name="LinkExisting"></a> Propojení prvku modelu s existující pracovní položkou  
  Při propojování prvků modelu s pracovními položkami začněte z prvku modelu, nikoli z pracovní položky.  
@@ -123,7 +123,7 @@ Sledujte úkoly, testovací případy, chyby, požadavky, problémy a další pr
      Jakmile budete hotovi, **pracovních položek** vlastnosti prvku modelu bude zobrazovat větší číslo než dříve. Rovněž se zobrazí ikona na prvku modelu nebo blízko něj.  
   
 > [!WARNING]
->  Musíte už být připojení k TFS zdrojového kódu ovládacího prvku (SCC) vytvořit nebo propojit s pracovní položkou. Pokud se pokusíte otevřít připojení k jiné SCC TFS, Visual Studio automaticky zavře aktuální řešení. Ujistěte se, že jste již připojeni k příslušné SCC než se pokusíte vytvořit nebo propojit s pracovní položkou. V pozdějších verzích sady Visual Studio příkazy nabídky nejsou k dispozici v případě, že nejste připojeni k SCC.  
+> Musíte už být připojení k TFS zdrojového kódu ovládacího prvku (SCC) vytvořit nebo propojit s pracovní položkou. Pokud se pokusíte otevřít připojení k jiné SCC TFS, Visual Studio automaticky zavře aktuální řešení. Ujistěte se, že jste již připojeni k příslušné SCC než se pokusíte vytvořit nebo propojit s pracovní položkou. V pozdějších verzích sady Visual Studio příkazy nabídky nejsou k dispozici v případě, že nejste připojeni k SCC.  
   
 ## <a name="OpenWorkItem"></a> Zobrazit pracovní položky propojeny s prvkem modelu  
   
@@ -132,7 +132,7 @@ Sledujte úkoly, testovací případy, chyby, požadavky, problémy a další pr
 2. V diagramu modelování nebo v **Průzkumníku modelů UML**, otevřete místní nabídku pro ovládací prvek modelu. Zvolte **zobrazit pracovní položky** k zobrazení seznamu propojených pracovních položek.  
   
     > [!NOTE]
-    >  Zobrazí se pouze pracovní položky z aktuálně připojeného serveru. Pokud se nezobrazí žádné pracovní položky, ujistěte se, že jste připojeni ke správnému serveru v **Team Exploreru**.  
+    > Zobrazí se pouze pracovní položky z aktuálně připojeného serveru. Pokud se nezobrazí žádné pracovní položky, ujistěte se, že jste připojeni ke správnému serveru v **Team Exploreru**.  
   
 ## <a name="ViewLinkedModels"></a> Zobrazení prvků modelu propojených s pracovní položkou  
  Můžete zobrazit diagramy modelování a prvky, které jsou propojeny s pracovní položkou v sadě Visual Studio Team Services a Team Foundation Server 2012 nebo novější. Pracovní položky mohou být například spojený s modely tříd, jež zobrazují návrh nových tříd, které budou implementovány.  
@@ -140,7 +140,7 @@ Sledujte úkoly, testovací případy, chyby, požadavky, problémy a další pr
 1. V **Team Exploreru**, ujistěte se, že jste připojeni k týmovému projektu kde jsou prvky modelu propojeny s pracovní položkou.  
   
     > [!NOTE]
-    >  K prohlížení propojených prvků modelu lze použít pouze Průzkumník týmových projektů, nikoli nástroj Team Web Access. Zkontrolujte, zda je váš pracovní prostor mapován na projekt modelování, který obsahuje prvky nebo diagramy modelování. Pokud nemáte pracovní prostor, je třeba jej vytvořit. Zobrazit [Poradce při potížích s](#Troubleshooting) a [vytváření a práci s pracovními prostory](http://msdn.microsoft.com/library/1d7f6ed8-ec7c-48f8-86da-9aea55a90d5a).  
+    > K prohlížení propojených prvků modelu lze použít pouze Průzkumník týmových projektů, nikoli nástroj Team Web Access. Zkontrolujte, zda je váš pracovní prostor mapován na projekt modelování, který obsahuje prvky nebo diagramy modelování. Pokud nemáte pracovní prostor, je třeba jej vytvořit. Zobrazit [Poradce při potížích s](#Troubleshooting) a [vytváření a práci s pracovními prostory](http://msdn.microsoft.com/library/1d7f6ed8-ec7c-48f8-86da-9aea55a90d5a).  
   
 2. Otevřít pracovní položku, zvolte **odkazy**. V části **odkaz modelu**, otevřete místní nabídku pro propojený prvek modelu. Zvolte **otevřít odkazovanou položku**.  
   
@@ -160,7 +160,7 @@ Sledujte úkoly, testovací případy, chyby, požadavky, problémy a další pr
     2. V **pracovních položek** vlastnost, zvolte tlačítko se třemi tečkami **[...]** .  
   
         > [!NOTE]
-        >  Zobrazí se pouze pracovní položky na aktuálním serveru. Pokud je seznam prázdný, ale počet pracovních položek není nulový, ujistěte se, že jste připojeni ke správnému serveru v **Team Exploreru**.  
+        > Zobrazí se pouze pracovní položky na aktuálním serveru. Pokud je seznam prázdný, ale počet pracovních položek není nulový, ujistěte se, že jste připojeni ke správnému serveru v **Team Exploreru**.  
   
 3. V části **odebrat odkazy na pracovní položky**, vymažte vybrané položky, které chcete odpojit. Zvolte **OK**.  
   

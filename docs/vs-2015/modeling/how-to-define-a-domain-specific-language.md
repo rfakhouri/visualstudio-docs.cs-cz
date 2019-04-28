@@ -18,12 +18,12 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ab840dfac15b917ff1b87a17d4a0670c3f275343
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9df436b51619211c1f79e7176479c7466f3de427
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60103469"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441065"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>Jak se definuje jazyk specifický pro doménu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,7 +66,7 @@ Do definice jazyka specifického pro doménu (DSL), můžete vytvořit [!INCLUDE
    - Vyberte **minimální jazykový** v ostatních případech, nebo pokud si nejste jisti.  
   
        > [!NOTE]
-       >  Pokud chcete vytvořit diagram tříd nebo diagramu komponent, zvažte použití modelů UML. Nástroje pro modelování UML poskytují sadu diagramy, které jsou integrované jednoho modelu. Jsou rozšiřitelný a je možné integrovat se službou vašeho DSL pomocí ModelBus. Další informace najdete v tématu [vytváření modelů pro aplikaci](../modeling/create-models-for-your-app.md).  
+       > Pokud chcete vytvořit diagram tříd nebo diagramu komponent, zvažte použití modelů UML. Nástroje pro modelování UML poskytují sadu diagramy, které jsou integrované jednoho modelu. Jsou rozšiřitelný a je možné integrovat se službou vašeho DSL pomocí ModelBus. Další informace najdete v tématu [vytváření modelů pro aplikaci](../modeling/create-models-for-your-app.md).  
   
    - Vyberte **minimální návrháře WinForm** nebo **minimální Návrhář WPF** vytvoření DSL, který se zobrazí na ploše Windows Forms a WPF. Budete muset psát kód, který definuje editoru. Další informace naleznete v následujících tématech:  
   
@@ -108,7 +108,7 @@ Do definice jazyka specifického pro doménu (DSL), můžete vytvořit [!INCLUDE
  Ukončete experimentální instanci [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
 > [!NOTE]
->  Změně DSL už budete moci zobrazit tvary v ukázce soubor testu. Nicméně je možné vytvářet nové elementy.  
+> Změně DSL už budete moci zobrazit tvary v ukázce soubor testu. Nicméně je možné vytvářet nové elementy.  
   
 ### <a name="modifying-the-template-dsl"></a>Úprava šablony DSL  
  Přejmenovat a zachovat některé nebo všechny doménové třídy a třídy tvar v šabloně definici DSL. Vaše nové názvy třídy musí být platné názvy CLR bez mezery ani interpunkci.  
@@ -137,7 +137,7 @@ Do definice jazyka specifického pro doménu (DSL), můžete vytvořit [!INCLUDE
   Následující části popisují, jak vytvořit nejužitečnější typy funkcí DSL. Existuje mnoho dalších vzorech, se kterými lze zkonstruovat DSL, ale ty se používají nejčastěji.  
   
 > [!NOTE]
->  Po přidání funkce, nezapomeňte kliknout na **Transformovat všechny šablony** na panelu nástrojů Průzkumník řešení před sestavení a spuštění vašeho DSL.  
+> Po přidání funkce, nezapomeňte kliknout na **Transformovat všechny šablony** na panelu nástrojů Průzkumník řešení před sestavení a spuštění vašeho DSL.  
   
  Následující obrázek ukazuje třídy a vztahy část DSL, která slouží jako příklad v tomto tématu.  
   
@@ -148,7 +148,7 @@ Do definice jazyka specifického pro doménu (DSL), můžete vytvořit [!INCLUDE
  ![Instance modelu DSL generované](../modeling/media/music-instance.png "Music_Instance")  
   
 > [!NOTE]
->  "Model" odkazuje na instanci tohoto kódu DSL, která uživatelé vytvářet a obvykle se zobrazí jako diagram. Toto téma popisuje diagramem definice DSL a diagramech modelů, které se zobrazí při použití vašeho DSL.  
+> "Model" odkazuje na instanci tohoto kódu DSL, která uživatelé vytvářet a obvykle se zobrazí jako diagram. Toto téma popisuje diagramem definice DSL a diagramech modelů, které se zobrazí při použití vašeho DSL.  
   
 ## <a name="classes"></a> Definování doménové třídy  
  Doménové třídy představoval pojmy tohoto kódu DSL. Instance jsou *elementům modelu*. Například v **MusicLibrary** DSL může mít doménové třídy s názvem **alba** a **skladby**.  
@@ -185,7 +185,7 @@ Do definice jazyka specifického pro doménu (DSL), můžete vytvořit [!INCLUDE
  Další informace najdete v tématu [vlastnosti vztahů domény](../modeling/properties-of-domain-relationships.md) a [Vlastnosti rolí domény](../modeling/properties-of-domain-roles.md).  
   
 > [!NOTE]
->  Vkládání není stejný jako dědičnosti. Podřízené položky v vztah obsažení nedědí ze svých nadřazených složek funkce.  
+> Vkládání není stejný jako dědičnosti. Podřízené položky v vztah obsažení nedědí ze svých nadřazených složek funkce.  
   
 ### <a name="add-domain-properties-to-each-domain-class"></a>Přidání vlastnosti domény do každé doménové třídy  
  Vlastnosti domény ukládání hodnot. Můžete například: Název, název, data publikování.  
@@ -296,7 +296,7 @@ Do definice jazyka specifického pro doménu (DSL), můžete vytvořit [!INCLUDE
    2. Klikněte pravým tlačítkem na uzel v rámci **karty panelu nástrojů** , který má stejný název jako vaše DSL, například MusicLibrary. Klikněte na tlačítko **přidat nástroj pro Element**.  
   
        > [!NOTE]
-       >  Pokud kliknete pravým tlačítkem **nástroje** uzlu, neuvidíte **přidat nástroj pro Element**. Místo toho klikněte na uzel nad ním.  
+       > Pokud kliknete pravým tlačítkem **nástroje** uzlu, neuvidíte **přidat nástroj pro Element**. Místo toho klikněte na uzel nad ním.  
   
    3. V okně Vlastnosti nový nástroj prvek vybraný, nastavte **třídy** do doménové třídy, které jste nedávno přidali.  
   
@@ -464,7 +464,7 @@ Do definice jazyka specifického pro doménu (DSL), můžete vytvořit [!INCLUDE
          V části **vlastnost Display, vlastnost**, vyberte vlastnost, která má být zobrazen v seznamu. V příkladu je to název.  
   
 > [!NOTE]
->  S použitím cesty pole v mapě Dekoratéru a prostoru pro mapování polí, můžete provést složitější vztahy mezi doménovými třídami a obrazce oddílu.  
+> S použitím cesty pole v mapě Dekoratéru a prostoru pro mapování polí, můžete provést složitější vztahy mezi doménovými třídami a obrazce oddílu.  
   
 #### <a name="to-define-a-tool-for-creating-the-shape"></a>Chcete-li definovat nástroj pro vytváření tvar  
   
@@ -475,7 +475,7 @@ Do definice jazyka specifického pro doménu (DSL), můžete vytvořit [!INCLUDE
 3. Klikněte pravým tlačítkem na uzel v rámci **karty panelu nástrojů** , který má stejný název jako vaše DSL, například MusicLibrary. Klikněte na tlačítko **přidat nástroj pro Element**.  
   
     > [!NOTE]
-    >  Pokud kliknete pravým tlačítkem **nástroje** uzlu, neuvidíte **přidat nástroj pro Element**. Místo toho klikněte na uzel nad ním.  
+    > Pokud kliknete pravým tlačítkem **nástroje** uzlu, neuvidíte **přidat nástroj pro Element**. Místo toho klikněte na uzel nad ním.  
   
 4. V okně Vlastnosti nový nástroj prvek vybraný, nastavte **třídy** do doménové třídy, které jste nedávno přidali.  
   

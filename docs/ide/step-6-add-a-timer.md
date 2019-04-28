@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b9c1585555c4c8039687bc514338fc86b61a7002
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b5fcbf5c7361fe2035730f52807073092f3433e5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050698"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442053"
 ---
 # <a name="step-6-add-a-timer"></a>Krok 6: Přidejte časovač
 V dalším kroku přidejte <xref:System.Windows.Forms.Timer> ovládacího prvku do porovnávací hry. Časovač čeká zadaný počet milisekund a potom vyvolá událost označovanou jako *značek*. To je užitečné při spuštění akce nebo opakování akce v pravidelných intervalech. V takovém případě můžete pomocí časovače povolit hráči zvolit dvě ikony a pokud se ikony neshodují, po krátké době tyto ikony opět skrýt.
@@ -26,7 +26,7 @@ V dalším kroku přidejte <xref:System.Windows.Forms.Timer> ovládacího prvku 
 **časovače**
 
     > [!NOTE]
-    >  Pokud je panel nástrojů prázdný, je nutné před otevřením sady nástrojů vybrat nástroj Návrhář a nikoli kód formuláře.
+    > Pokud je panel nástrojů prázdný, je nutné před otevřením sady nástrojů vybrat nástroj Návrhář a nikoli kód formuláře.
 
 2. Zvolte **Timer1** ikonu vyberte časovač. V **vlastnosti** okno, přepněte zobrazení z událostí na vlastnosti. Nastavte časovače **Interval** vlastnost **750**, ale ponechat jeho **povoleno** vlastnost nastavena na **False**. **Interval** vlastnost sděluje časovači, jak dlouho se má čekat mezi *značky*, nebo při aktivaci jeho <xref:System.Windows.Forms.Timer.Tick> událostí. Hodnota 750 říká časovači, aby před vyvoláním události impulzu čekal tři čtvrtiny sekundy (750 milisekund). Budete volat <xref:System.Windows.Forms.Timer.Start> metoda ke spuštění časovače, až poté, co hráč zvolí druhý popisek.
 
@@ -38,7 +38,7 @@ V dalším kroku přidejte <xref:System.Windows.Forms.Timer> ovládacího prvku 
      Obslužná rutina události impulzu provádí tři věci: Nejprve zkontroluje, zda není spuštěn časovač, voláním <xref:System.Windows.Forms.Timer.Stop> metody. Potom použije dvě referenční proměnné `firstClicked` a `secondClicked`k nastavení ikon dvou popisků, které hráč zvolí znovu neviditelné. Nakonec resetuje `firstClicked` a `secondClicked` referenční proměnné k `null` v jazyce Visual C# a `Nothing` v jazyce Visual Basic. Tento krok je důležitý, protože ukazuje, jak se program sám resetuje. Teď ji není udržování přehledu o některý <xref:System.Windows.Forms.Label> ovládací prvky a je připravený k si hráč znovu zvolí popisek.
 
     > [!NOTE]
-    >  Objekt časovače má `Start()` metodu, která spustí časovač, a `Stop()` metodu, která ho zastaví. Při nastavení časovače **povoleno** vlastnost **True** v **vlastnosti** okna, spustí tikání ihned po spuštění programu. Ale když necháte nastavené na **False**, nespustí tikání až do jeho `Start()` metoda je volána. Za normálních okolností časovač vyvolá událost impulzu znovu a znovu, pomocí **Interval** a určí počet milisekund k čekání mezi impulzy. Jste si všimli jak časovače `Stop()` metoda je volána uvnitř události impulzu. To vloží časovač do *jednorázovém režimu*, což znamená, že `Start()` metoda je volána, čeká na zadaný interval, spustí jednu událost impulzu a poté se zastaví.
+    > Objekt časovače má `Start()` metodu, která spustí časovač, a `Stop()` metodu, která ho zastaví. Při nastavení časovače **povoleno** vlastnost **True** v **vlastnosti** okna, spustí tikání ihned po spuštění programu. Ale když necháte nastavené na **False**, nespustí tikání až do jeho `Start()` metoda je volána. Za normálních okolností časovač vyvolá událost impulzu znovu a znovu, pomocí **Interval** a určí počet milisekund k čekání mezi impulzy. Jste si všimli jak časovače `Stop()` metoda je volána uvnitř události impulzu. To vloží časovač do *jednorázovém režimu*, což znamená, že `Start()` metoda je volána, čeká na zadaný interval, spustí jednu událost impulzu a poté se zastaví.
 
 4. Chcete-li vidět nový časovač v akci, přejděte k editoru kódu a přidejte následující kód do horní a dolní část `label_Click()` metoda obslužné rutiny události. (Přidáte `if` příkaz do horní části a tři příkazy do dolní části; zbývající část metody zůstává stejná.)
 

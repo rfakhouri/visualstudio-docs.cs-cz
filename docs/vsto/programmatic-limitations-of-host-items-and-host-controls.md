@@ -30,12 +30,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 488551d9b86ec7bd09adadd92d515cac1a53e841
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: d885ba9d32126e0d77828047adbde84d557fd821
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596141"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63447074"
 ---
 # <a name="programmatic-limitations-of-host-items-and-host-controls"></a>Programová omezení hostitelských položek a hostitelských ovládacích prvků
   Každý hostitelský objekt a hostitelský ovládací prvek slouží k chovat jako odpovídající nativní aplikace Microsoft Office Word nebo Microsoft Office Excel objektu s dalšími funkcemi. Existují však některé základní rozdíly v chování hostitelských položek a hostitelských ovládacích prvků a nativních objektů Office za běhu.
@@ -57,7 +57,7 @@ ms.locfileid: "56596141"
  Hostitelské ovládací prvky nelze přidat do nativní <xref:Microsoft.Office.Interop.Word.Document> nebo <xref:Microsoft.Office.Interop.Excel.Worksheet>.
 
 > [!NOTE]
->  Následující hostitelské ovládací prvky nelze programově přidat na listech nebo dokumenty: <xref:Microsoft.Office.Tools.Excel.XmlMappedRange>, <xref:Microsoft.Office.Tools.Word.XMLNode>, a <xref:Microsoft.Office.Tools.Word.XMLNodes>.
+> Následující hostitelské ovládací prvky nelze programově přidat na listech nebo dokumenty: <xref:Microsoft.Office.Tools.Excel.XmlMappedRange>, <xref:Microsoft.Office.Tools.Word.XMLNode>, a <xref:Microsoft.Office.Tools.Word.XMLNodes>.
 
 ## <a name="understand-type-differences-between-host-items-host-controls-and-native-office-objects"></a>Pochopení typů rozdíly mezi hostitelské položky, hostitelské ovládací prvky a nativních objektů sady Office
  Pro každý hostitelský objekt a hostitelského ovládacího prvku je základní nativní objekt aplikace Microsoft Office Word nebo Microsoft Office Excel. Základní objekt můžete přistupovat pomocí vlastnosti InnerObject položky hostitele nebo hostitelského ovládacího prvku. Neexistuje však žádný způsob, jak přetypovat na nativní objekt Office její odpovídající položka hostitele nebo hostitelského ovládacího prvku. Pokud se pokusíte nativní objekt Office přetypování na typ položky hostitele nebo hostitelského ovládacího prvku, <xref:System.InvalidCastException> je vyvolána výjimka.

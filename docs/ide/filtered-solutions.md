@@ -1,6 +1,6 @@
 ---
 title: Načtení dílčích projektů
-ms.date: 12/04/2018
+ms.date: 04/22/2019
 ms.prod: visual-studio-dev16
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,18 +10,16 @@ author: gewarren
 ms.author: stsu
 manager: jillfra
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 67ebbd94298c3325560b64945bed51c09db93833
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
-ms.translationtype: MT
+ms.openlocfilehash: 2612770b760bec70ec9ee6c679c47804d4e69f42
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57983881"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439873"
 ---
 # <a name="filtered-solutions-in-visual-studio"></a>Filtrované řešení v sadě Visual Studio
 
-**Nová funkce v aplikaci Visual Studio 2019**
-
-Velké vývojářské týmy se často spolupracovat pomocí jediného velkých řešení s mnoha projektů. Jednotliví vývojáři však obvykle fungují na malou podmnožinu těchto projektů. Kvůli zvýšení výkonu při otevírání velkých řešení se Visual Studio 2019 zavádí *filtrování řešení*. Filtrování umožňuje otevření řešení s pouze vybrané projekty řešení. Načítání dílčích projektů v řešení snižuje načtení řešení, sestavení a testování, čas spuštění a umožňuje víc zaměřené revize.
+Velké vývojářské týmy se často spolupracovat pomocí jediného velkých řešení s mnoha projektů. Jednotliví vývojáři však obvykle fungují na malou podmnožinu těchto projektů. Kvůli zvýšení výkonu při otevírání velkých řešení se Visual Studio 2019 zavedené *filtrování řešení*. Filtrování umožňuje otevření řešení s pouze vybrané projekty řešení. Načítání dílčích projektů v řešení snižuje načtení řešení, sestavení a testování, čas spuštění a umožňuje víc zaměřené revize.
 
 K dispozici jsou následující funkce:
 
@@ -33,7 +31,11 @@ K dispozici jsou následující funkce:
 
 ## <a name="open-a-filtered-solution"></a>Otevřete filtrované řešení
 
-Chcete-li otevřít řešení s jenom některé z jeho projektů, načíst, postupujte takto:
+Otevřít řešení bez jakéhokoli z jeho projektů přímo z načtení **otevřít projekt** dialogové okno nebo prostřednictvím [příkazového řádku](#command-line).
+
+### <a name="open-project-dialog"></a>Dialogové okno Otevřít projekt
+
+Chcete-li otevřít řešení bez jakéhokoli z jeho projektů načtení s použitím **otevřít projekt** dialogové okno:
 
 1. Zvolte **souboru** > **otevřít** > **projekt či řešení** z řádku nabídek.
 
@@ -51,15 +53,31 @@ Chcete-li otevřít řešení s jenom některé z jeho projektů, načíst, post
 
    Visual Studio si budou pamatovat projekty, které se načtou při příštím otevření řešení místně.
 
+### <a name="command-line"></a>Příkazový řádek
+
+(Nově ve verzi Visual Studio. 2019 verze 16.1.)
+
+Chcete-li otevřít řešení bez jakéhokoli z jeho projektů načtení z příkazového řádku, použijte [ `/donotloadprojects` ](../ide/reference/donotloadprojects-devenv-exe.md) přepínat, jak je znázorněno v následujícím příkladu:
+
+```cmd
+devenv /donotloadprojects MySln.sln
+```
+
 ## <a name="toggle-unloaded-project-visibility"></a>Přepnout viditelnost uvolnit projekt
 
 Můžete také zobrazit buď všechny projekty v řešení nebo pouze ty načíst pomocí jedné z následujících možností v **Průzkumníka řešení**:
 
 - Klikněte pravým tlačítkem na řešení a vyberte **zobrazit uvolněné projekty** nebo **skrýt uvolněné projekty**.
 
-- Vyberte **zobrazit všechny soubory** tlačítko pro přepínání viditelnosti uvolněné projekty.
+- Vyberte uzel řešení povolit **zobrazit všechny soubory** tlačítko; potom klikněte na tlačítko pro přepínání viditelnosti uvolněné projekty.
 
    ![Zobrazit tlačítko pro všechny soubory v Průzkumníku řešení sady Visual Studio](media/filtered-solutions/show-all-files.PNG)
+
+## <a name="load-project-dependencies"></a>Načtení závislostí projektu
+
+V řešení, ve kterém jsou načteny pouze vybrané projekty nemusí mít všechny závislosti projektu projekt načíst. Použití **načtení závislostí projektu** nabídky k zajištění, že se také načtou všechny projekty, které závisí projektu. Klikněte pravým tlačítkem na jeden nebo více načtených projektů v **Průzkumníka řešení** a zvolte **načtení závislostí projektu**.
+
+![Načtení závislostí projektu v aplikaci Visual Studio 2019](media/filtered-solutions/load-project-dependencies.png)
 
 ## <a name="solution-filter-files"></a>Filtr souborů řešení
 

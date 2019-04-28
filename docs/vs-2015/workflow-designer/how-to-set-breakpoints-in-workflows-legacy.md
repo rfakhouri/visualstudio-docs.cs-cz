@@ -14,12 +14,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 92950247420f49c4a5295d25aec2c8697efb3534
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7cec06813890523e604234ccefdbcd7d1de31653
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069962"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444181"
 ---
 # <a name="how-to-set-breakpoints-in-workflows-legacy"></a>Postupy: Nastavení zarážek v pracovních postupech (starší verze)
 Toto téma popisuje, jak nastavit zarážky [!INCLUDE[wf](../includes/wf-md.md)] sestavení aplikace pomocí starší verze [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Použijte starší [!INCLUDE[wfd2](../includes/wfd2-md.md)] při vaší [!INCLUDE[wf2](../includes/wf2-md.md)] aplikace musí cílit na platformu [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] nebo [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
@@ -39,7 +39,7 @@ Toto téma popisuje, jak nastavit zarážky [!INCLUDE[wf](../includes/wf-md.md)]
      Tuto možnost můžete použít také pro nastavení nového zarážky během ladění, když se ladicí program zastaví na zarážce.  
   
     > [!NOTE]
-    >  Nastavení zarážek v pracovních postupech, vyvolali se nepodporuje.  
+    > Nastavení zarážek v pracovních postupech, vyvolali se nepodporuje.  
   
 ### <a name="to-set-a-breakpoint-using-the-new-breakpoint-option-on-the-debug-menu"></a>Nastavení zarážky pomocí možnosti Nová zarážka v nabídce ladění  
   
@@ -52,7 +52,7 @@ Toto téma popisuje, jak nastavit zarážky [!INCLUDE[wf](../includes/wf-md.md)]
 3. Zadejte název aktivity v **funkce** textového pole s použitím této syntaxe: `QualifiedActivityId[:[FullClassName][:InstanceId]]`.  
   
     > [!NOTE]
-    >  Volitelně můžete místo názvu aktivity v **funkce** textového pole, můžete nastavit zarážku tak, že zadáte absolutní cestu aktivity pracovního postupu. Předpokládejme například, že máte řešení pracovního postupu s názvem **WorkflowConsoleApplication1** a pracovní postup v řešení s názvem **Workflow1** , která používá aktivitu volá **Delay1**. Můžete použít název aktivity **Delay1** nebo zadejte cestu jako **Delay1:WorkflowConsoleApplication1.Workflow1** nebo **Delay1:WorkflowConsoleApplication1.Workflow1: { 6614886A-608E-412B-BF98-99FF1559DDDF}**.  
+    > Volitelně můžete místo názvu aktivity v **funkce** textového pole, můžete nastavit zarážku tak, že zadáte absolutní cestu aktivity pracovního postupu. Předpokládejme například, že máte řešení pracovního postupu s názvem **WorkflowConsoleApplication1** a pracovní postup v řešení s názvem **Workflow1** , která používá aktivitu volá **Delay1**. Můžete použít název aktivity **Delay1** nebo zadejte cestu jako **Delay1:WorkflowConsoleApplication1.Workflow1** nebo **Delay1:WorkflowConsoleApplication1.Workflow1: { 6614886A-608E-412B-BF98-99FF1559DDDF}**.  
   
 4. Vyberte **použití IntelliSense** zaškrtávací políčko, chcete-li ověřit název funkce.  
   

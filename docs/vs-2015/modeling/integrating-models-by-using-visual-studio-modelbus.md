@@ -9,12 +9,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4530b12ff3c5fa05d63d845cf4d364d2c238ff77
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e9f0a185ce4f78a81d1ed806e38b102296093f48
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60041286"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441010"
 ---
 # <a name="integrating-models-by-using-visual-studio-modelbus"></a>Integrace modelů pomocí Visual Studio Modelbus
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "60041286"
  ModelBus umožňuje vytvářet jedinečné odkazu na model nebo na konkrétní elementu v modelu. Tento odkaz mohou být uloženy mimo model, například do prvku v jiném modelu. Až na novější příležitosti, nástroj chce získat přístup k elementu, bude infrastruktury sběrnice modelu načíst příslušný model a vraťte se element. Pokud chcete, můžete zobrazit modelu pro uživatele. Pokud soubor není přístupný v jeho předchozí umístění, ModelBus požádá uživatele o nalezení ho. Pokud uživatel vyhledá soubor, ModelBus opraví všechny odkazy na daný soubor.
 
 > [!NOTE]
->  V aktuálním [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] provádění ModelBus propojené modely musí být položky ve stejném [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] řešení.
+> V aktuálním [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] provádění ModelBus propojené modely musí být položky ve stejném [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] řešení.
 
  Další informace a ukázky kódu najdete v tématu:
 
@@ -130,7 +130,7 @@ ms.locfileid: "60041286"
 5. Klikněte na tlačítko **OK**a potom klikněte na tlačítko **Transformovat všechny šablony** na panelu nástrojů Průzkumník řešení.
 
     > [!WARNING]
-    >  Pokud jste nevybrali platný model nebo entity, na tlačítko OK se neprojeví, i když může zobrazit povoleno.
+    > Pokud jste nevybrali platný model nebo entity, na tlačítko OK se neprojeví, i když může zobrazit povoleno.
 
 6. Pokud zadáte seznam cílové typy, jako je například Company.FamilyTree.Person, pak je nutné přidat odkaz na sestavení do projektu DSL odkazování na knihovnu DLL cíle DSL, například Company.FamilyTree.Dsl.dll
 
@@ -143,7 +143,7 @@ ms.locfileid: "60041286"
 3. V ladění projektu v experimentální instanci [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], přidejte soubory, které jsou instancemi každý DSL.
 
     > [!NOTE]
-    >  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ModelBus lze vyřešit pouze odkazy na modely, které jsou položky v rámci stejného [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] řešení. Například nelze vytvořit odkaz na soubor modelu v jiné části systému souborů.
+    > [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ModelBus lze vyřešit pouze odkazy na modely, které jsou položky v rámci stejného [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] řešení. Například nelze vytvořit odkaz na soubor modelu v jiné části systému souborů.
 
 4. Vytvořte některé prvky a odkazy v instanci vystavené DSL a uložte ho.
 
@@ -163,7 +163,7 @@ ms.locfileid: "60041286"
  Chcete-li vytvořit odkaz na element, musíte pro soubor modelu a element, který chcete odkazovat na adaptér.
 
 > [!NOTE]
->  S [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ModelBus, můžete vytvořit odkazy pouze na položky v rámci stejného [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] řešení.
+> S [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ModelBus, můžete vytvořit odkazy pouze na položky v rámci stejného [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] řešení.
 
 ### <a name="import-the-exposed-dsl-assemblies"></a>Importovat vystavené sestavení DSL
  Používání projektu přidejte odkazy na sestavení DSL a objekt ModelBusAdapter vystavené DSL.
@@ -197,7 +197,7 @@ using System.Linq;
  Z AdapterManager můžete získat adaptér, který poskytuje přístup k jednotlivým prvkům v modelu.
 
 > [!NOTE]
->  Adaptér musí dispose po dokončení s ním. Je nejpohodlnější způsob, jak toho dosáhnout pomocí `using` příkazu. Toto dokládá následující příklad.
+> Adaptér musí dispose po dokončení s ním. Je nejpohodlnější způsob, jak toho dosáhnout pomocí `using` příkazu. Toto dokládá následující příklad.
 
 ```
 // The file path of a model instance of the FamilyTree DSL:

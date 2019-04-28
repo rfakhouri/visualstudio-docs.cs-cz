@@ -21,12 +21,12 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e60fe59b4d515f37593175f0b76d1562f170abfb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 2198ed401f714353be2dd18846dd527cc433e695
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059094"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63447320"
 ---
 # <a name="error-aspnet-not-installed"></a>Chyba: Prostředí ASP.NET není nainstalováno
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ K této chybě dochází při [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] n
      kde *verze* představuje číslo verze rozhraní .NET Framework nainstalované v počítači, jako je například v1.0.370. Můžete určit verzi rozhraní framework hledání `\WINDOWS\Microsoft.NET\Framework` adresáře.  
   
     > [!NOTE]
-    >  Se systémem Windows Server 2003, můžete nainstalovat [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] pomocí **přidat nebo odebrat programy** v Ovládacích panelech.  
+    > Se systémem Windows Server 2003, můžete nainstalovat [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] pomocí **přidat nebo odebrat programy** v Ovládacích panelech.  
   
 ## <a name="see-also"></a>Viz také  
  [Ladění webových aplikací: Chyby a řešení potíží](../debugger/debugging-web-applications-errors-and-troubleshooting.md)

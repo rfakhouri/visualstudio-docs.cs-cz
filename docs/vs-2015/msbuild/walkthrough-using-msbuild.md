@@ -11,12 +11,12 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f03c7260899db9e463282e45ef5bc76badb8a483
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b6e77934f8e565800eb4a7a753df4beb3b003fbb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082799"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445589"
 ---
 # <a name="walkthrough-using-msbuild"></a>Návod: Použití nástroje MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -132,7 +132,7 @@ Nástroj MSBuild je platforma sestavení pro společnost Microsoft a sady Visual
  Spustit nástroj MSBuild z **příkazový řádek sady Visual Studio** sestavit cíl HelloWorld výše. Použijte přepínač příkazového řádku/Target nebo /t vybrat cíl.  
   
 > [!NOTE]
->  Budeme **příkazový řádek sady Visual Studio** jako **příkazové okno** v následujících částech.  
+> Budeme **příkazový řádek sady Visual Studio** jako **příkazové okno** v následujících částech.  
   
 #### <a name="to-build-the-target"></a>K sestavení cíle  
   
@@ -154,12 +154,12 @@ Nástroj MSBuild je platforma sestavení pro společnost Microsoft a sady Visual
     ```  
   
 > [!NOTE]
->  Pokud místo toho uvidíte `The target "HelloWorld" does not exist in the project` pak pravděpodobně jste zapomněli uložte soubor projektu v editoru kódu. Uložte soubor a zkuste to znovu.  
+> Pokud místo toho uvidíte `The target "HelloWorld" does not exist in the project` pak pravděpodobně jste zapomněli uložte soubor projektu v editoru kódu. Uložte soubor a zkuste to znovu.  
   
  Podle střídavých mezi editorem kódu a příkazového okna, můžete změnit soubor projektu a rychle zobrazit výsledky.  
   
 > [!NOTE]
->  Při spuštění nástroje msbuild bez přepínače příkaz /t, msbuild vytvoří cíl Dal atribut DefaultTarget prvku projektu, v tomto případě "Sestavení". Tento postup sestaví aplikaci Windows Forms BuildApp.exe.  
+> Při spuštění nástroje msbuild bez přepínače příkaz /t, msbuild vytvoří cíl Dal atribut DefaultTarget prvku projektu, v tomto případě "Sestavení". Tento postup sestaví aplikaci Windows Forms BuildApp.exe.  
   
 ## <a name="build-properties"></a>Vlastnosti sestavení  
  Vlastnosti sestavení jsou páry název hodnota, která provede sestavení. Několik vlastností sestavení jsou již definovány v horní části souboru projektu:  
@@ -227,7 +227,7 @@ $(PropertyName)
     ```  
   
 > [!NOTE]
->  Pokud se tyto řádky pak jste pravděpodobně zapomněli uložte soubor projektu v editoru kódu. Uložte soubor a zkuste to znovu.  
+> Pokud se tyto řádky pak jste pravděpodobně zapomněli uložte soubor projektu v editoru kódu. Uložte soubor a zkuste to znovu.  
   
 ### <a name="conditional-properties"></a>Podmíněné vlastnosti  
  Mnoho vlastností, jako je konfigurace jsou definovány podmíněně, to znamená, se zobrazí v prvku vlastnost atributu podmínky. Podmíněné vlastnosti jsou definované nebo znovu definovat pouze v případě, že bude podmínka vyhodnocena jako "true". Všimněte si, že nedefinovanými vlastnostmi jsou uvedeny výchozí hodnotu prázdný řetězec. Například  
@@ -319,7 +319,7 @@ $(PropertyName)
  Další informace najdete v tématu [položky](../msbuild/msbuild-items.md).  
   
 > [!NOTE]
->  Cesty k souboru jsou relativní vzhledem ke složce obsahující soubor projektu MSBuild.  
+> Cesty k souboru jsou relativní vzhledem ke složce obsahující soubor projektu MSBuild.  
   
 ## <a name="examining-item-type-values"></a>Zkoumání hodnoty typu položky  
  K získání hodnot typu položky, použijte následující syntaxi, kde je ItemType název typu položky:  

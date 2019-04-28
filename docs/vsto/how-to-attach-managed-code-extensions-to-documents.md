@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 18ca5e0cbf341f27454377c544e20cd2aba1388f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f56d51817491726e6011e965bfd6d68630bb0dbf
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60044261"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441806"
 ---
 # <a name="how-to-attach-managed-code-extensions-to-documents"></a>Postupy: Připojení rozšíření spravovaného kódu k dokumentům
   Vytvoření vlastního nastavení sestavení můžete připojit k existující dokument aplikace Microsoft Office Word nebo sešit aplikace Microsoft Office Excel. Dokumentem nebo sešitem, může být v libovolném formátu souboru, který podporuje projekty Microsoft Office a nástroje pro vývoj v sadě Visual Studio. Další informace najdete v tématu [architektura přizpůsobení na úrovni dokumentu](../vsto/architecture-of-document-level-customizations.md).
@@ -28,7 +28,7 @@ ms.locfileid: "60044261"
  Přizpůsobení připojit k dokument aplikace Word nebo Excel, použijte <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.AddCustomization%2A> metodu <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> třídy. Vzhledem k tomu, <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> třídy slouží ke spuštění v počítači, který nemá nainstalovanou sadu Microsoft Office, můžete použít tuto metodu v řešení, které přímo nesouvisejí s vývoj pro Microsoft Office (například konzole nebo aplikace Windows Forms).
 
 > [!NOTE]
->  Přizpůsobení se nepodaří načíst, pokud kód očekává, že ovládací prvky, které nemá zadaný dokument.
+> Přizpůsobení se nepodaří načíst, pokud kód očekává, že ovládací prvky, které nemá zadaný dokument.
 
  ![odkaz na video](../vsto/media/playvideo.gif "odkaz na video") související video ukázku naleznete v tématu [postup: Připojení nebo odpojení sestavení VSTO z Wordového dokumentu? ](http://go.microsoft.com/fwlink/?LinkId=136782).
 

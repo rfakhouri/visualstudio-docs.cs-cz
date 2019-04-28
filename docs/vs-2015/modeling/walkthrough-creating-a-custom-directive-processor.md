@@ -12,12 +12,12 @@ caps.latest.revision: 76
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8d71c820435ccf5bd131c11bc79844ac157561c7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 438dd372cc2d70ecb8d1d41602751b6ce0cdf821
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105302"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446760"
 ---
 # <a name="walkthrough-creating-a-custom-directive-processor"></a>Návod: Vytvoření vlastního procesoru direktiv
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -86,7 +86,7 @@ End Property
 1. V sadě Visual Studio vytvořte projekt knihovny tříd jazyka C# nebo Visual Basic s názvem CustomDP.  
 
     > [!NOTE]
-    >  Pokud chcete procesor direktiv nainstalovat na více než jednom počítači, je vhodnější použít [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Extension (VSIX) projektu a zahrnout do rozšíření soubor .pkgdef. Další informace najdete v tématu [nasazení vlastního procesoru direktiv](../modeling/deploying-a-custom-directive-processor.md).  
+    > Pokud chcete procesor direktiv nainstalovat na více než jednom počítači, je vhodnější použít [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Extension (VSIX) projektu a zahrnout do rozšíření soubor .pkgdef. Další informace najdete v tématu [nasazení vlastního procesoru direktiv](../modeling/deploying-a-custom-directive-processor.md).  
 
 2. Přidejte odkazy na tato sestavení:  
 
@@ -619,7 +619,7 @@ End Property
  Než bude možné volat direktivu z textové šablony v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], je nutné přidat klíč registru pro procesor direktiv.  
 
 > [!NOTE]
->  Pokud chcete procesor direktiv nainstalovat na více než jednom počítači, je lepší definovat [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Extension (VSIX), která obsahuje soubor .pkgdef spolu se sestavením. Další informace najdete v tématu [nasazení vlastního procesoru direktiv](../modeling/deploying-a-custom-directive-processor.md).  
+> Pokud chcete procesor direktiv nainstalovat na více než jednom počítači, je lepší definovat [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Extension (VSIX), která obsahuje soubor .pkgdef spolu se sestavením. Další informace najdete v tématu [nasazení vlastního procesoru direktiv](../modeling/deploying-a-custom-directive-processor.md).  
 
  Klíče procesoru direktiv se v registru nacházejí na následujícím místě:  
 
@@ -636,7 +636,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
  V tomto oddílu přidáte na stejné místo v registru klíč pro vlastní procesor direktiv.  
 
 > [!CAUTION]
->  Nesprávná úprava registru může vážně poškodit systém. Před prováděním změn registru zazálohujte všechna cenná data v počítači.  
+> Nesprávná úprava registru může vážně poškodit systém. Před prováděním změn registru zazálohujte všechna cenná data v počítači.  
 
 #### <a name="to-add-a-registry-key-for-the-directive-processor"></a>Přidání klíče registru pro procesor direktiv  
 
@@ -649,7 +649,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 3. Přidejte nový klíč s názvem CustomDirectiveProcessor.  
 
    > [!NOTE]
-   >  Jedná se o název, který budete používat v poli Processor vlastních direktiv. Tento název se nemusí shodovat s názvem direktivy, názvem třídy procesoru direktiv ani s oborem názvů procesoru direktiv.  
+   > Jedná se o název, který budete používat v poli Processor vlastních direktiv. Tento název se nemusí shodovat s názvem direktivy, názvem třídy procesoru direktiv ani s oborem názvů procesoru direktiv.  
 
 4. Přidejte novou řetězcovou hodnotu s názvem Class, která má pro název nového řetězce hodnotu CustomDP.CustomDirectiveProcessor.  
 
@@ -687,7 +687,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 1. Vytvořte textový soubor s názvem `DocFile.xml` pomocí libovolného textového editoru (například Poznámkový blok).  
 
     > [!NOTE]
-    >  Tento soubor můžete vytvořit na libovolném místě (například C:\Test\DocFile.xml).  
+    > Tento soubor můžete vytvořit na libovolném místě (například C:\Test\DocFile.xml).  
 
 2. Do tohoto textového souboru přidejte následující text:  
 
@@ -743,7 +743,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 4. Změňte obsah souboru TestDP.tt na následující text.  
 
     > [!NOTE]
-    >  Nezapomeňte nahradit řetězec <`YOUR PATH>` s cestou k souboru DocFile.xml.  
+    > Nezapomeňte nahradit řetězec <`YOUR PATH>` s cestou k souboru DocFile.xml.  
 
      Jazyk textové šablony se nemusí shodovat s jazykem procesoru direktiv.  
 
@@ -830,7 +830,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
     ```  
 
     > [!NOTE]
-    >  V tomto příkladu, hodnota proměnné `Processor` parametr `CustomDirectiveProcessor`. Hodnota `Processor` parametru musí odpovídat názvu klíče registru procesoru.  
+    > V tomto příkladu, hodnota proměnné `Processor` parametr `CustomDirectiveProcessor`. Hodnota `Processor` parametru musí odpovídat názvu klíče registru procesoru.  
 
 5. Na **souboru** nabídky, klikněte na tlačítko **Uložit vše**.  
 
@@ -882,7 +882,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 1. Kód v souboru TestDP.tt nahraďte následujícím kódem. Kód HTML je zvýrazněn. Nezapomeňte nahradit řetězec `YOUR PATH` s cestou k souboru DocFile.xml.  
 
     > [!NOTE]
-    >  Dodatečné otevírací \<# a zavírací #> značky oddělují kód příkazu od značek HTML.  
+    > Dodatečné otevírací \<# a zavírací #> značky oddělují kód příkazu od značek HTML.  
 
     ```csharp  
     <#@ assembly name="System.Xml" #>  

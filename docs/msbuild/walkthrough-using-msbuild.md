@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fadc901ce09c6e85541956d800201a53b6d73490
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ee57e0fb78eadce226a7fa8371d395181c6060a1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054962"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445305"
 ---
 # <a name="walkthrough-use-msbuild"></a>Návod: Použití nástroje MSBuild
 
@@ -130,7 +130,7 @@ Nástroj MSBuild sleduje cíle sestavení a zaručuje, že každý cíl je vytvo
  Spustit nástroj MSBuild z **Developer Command Prompt** pro Visual Studio k vytvoření cílové HelloWorld výše. Použití - cíl nebo -t přepínač příkazového řádku a vyberte cíl.
 
 > [!NOTE]
->  Budeme **Developer Command Prompt** jako **příkazové okno** v následujících částech.
+> Budeme **Developer Command Prompt** jako **příkazové okno** v následujících částech.
 
 **K sestavení cíle**
 
@@ -156,7 +156,7 @@ Nástroj MSBuild sleduje cíle sestavení a zaručuje, že každý cíl je vytvo
     ```
 
 > [!NOTE]
->  Pokud místo toho uvidíte `The target "HelloWorld" does not exist in the project` pak pravděpodobně jste zapomněli uložte soubor projektu v editoru kódu. Uložte soubor a zkuste to znovu.
+> Pokud místo toho uvidíte `The target "HelloWorld" does not exist in the project` pak pravděpodobně jste zapomněli uložte soubor projektu v editoru kódu. Uložte soubor a zkuste to znovu.
 
  Podle střídavých mezi editorem kódu a příkazového okna, můžete změnit soubor projektu a rychle zobrazit výsledky.
 
@@ -239,7 +239,7 @@ $(PropertyName)
     ::: moniker-end
 
 > [!NOTE]
->  Pokud se tyto řádky pak jste pravděpodobně zapomněli uložte soubor projektu v editoru kódu. Uložte soubor a zkuste to znovu.
+> Pokud se tyto řádky pak jste pravděpodobně zapomněli uložte soubor projektu v editoru kódu. Uložte soubor a zkuste to znovu.
 
 ### <a name="conditional-properties"></a>Podmíněné vlastnosti
 
@@ -337,7 +337,7 @@ Další informace najdete v tématu [speciální znaky nástroje MSBuild](../msb
 Další informace najdete v tématu [položky](../msbuild/msbuild-items.md).
 
 > [!NOTE]
->  Cesty k souboru jsou relativní vzhledem ke složce obsahující soubor projektu MSBuild.
+> Cesty k souboru jsou relativní vzhledem ke složce obsahující soubor projektu MSBuild.
 
 ## <a name="examine-item-type-values"></a>Zkontrolujte položky typu hodnoty
 

@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c6af35b4532b14adc914ab2358745df53f68804
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 7fccae7d42d9e8f99c78fd55f74466e2f83e5dfa
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57868227"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62581779"
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Tipy k výkonu sady Visual Studio a triky
 
@@ -105,7 +105,17 @@ Informace o aspektech týkajících se výkonu .NET Compiler Platform ("Roslyn")
 
     Rozšíření jsou další softwarové komponenty se přidali do sady Visual Studio, které přinášejí nové funkce nebo rozšířit stávající funkce. Rozšíření lze často příčiny problémů s pamětí prostředků. Pokud máte problémy paměti prostředku, zkuste zakázat rozšíření jeden najednou zobrazit, jak to ovlivní scénáře nebo pracovních postupů.
 
+   ::: moniker range="vs-2017"
+
     Pokud chcete zakázat rozšíření, přejděte na **nástroje** > **rozšíření a aktualizace**a konkrétní rozšíření zakázat.
+
+   ::: moniker-end
+
+   ::: moniker range=">=vs-2019"
+
+    Pokud chcete zakázat rozšíření, přejděte na **rozšíření** > **spravovat rozšíření**a konkrétní rozšíření zakázat.
+
+   ::: moniker-end
 
 - **Zakázat návrháře XAML**
 

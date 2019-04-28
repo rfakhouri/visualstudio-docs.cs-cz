@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 93acd8466ae90a6db4d1f25d93460e501335af50
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7d6fb66684bd51c75e655bc2403cb6a9fb5846a2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60062214"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438813"
 ---
 # <a name="how-to-programmatically-protect-worksheets"></a>Postupy: Zamykání listů
   Funkce ochrany v aplikaci Microsoft Office Excel pomáhá zabránit uživatelům a kód v úpravách objektů v listu. Ve výchozím nastavení všechny buňky jsou zamknuté po zapnutí ochrany.
@@ -30,7 +30,7 @@ ms.locfileid: "60062214"
  V přizpůsobeních na úrovni dokumentu můžete chránit listů s použitím návrháře Excelu. Můžete také zamknout list prostřednictvím kódu programu za běhu v libovolným typem projektu.
 
 > [!NOTE]
->  Nelze přidat ovládací prvky Windows Forms k oblastem listu, které jsou chráněné.
+> Nelze přidat ovládací prvky Windows Forms k oblastem listu, které jsou chráněné.
 
 ## <a name="use-the-designer"></a>Pomocí návrháře
 

@@ -10,12 +10,12 @@ ms.assetid: 9a641d8f-211e-4486-a1b1-4a89fafe7ee8
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 65efd5a864863fb18f26d8fdfc3736423aad7aeb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ea55039de769598b26868727a93cfa11726e4838
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054089"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443917"
 ---
 # <a name="extending-the-isolated-shell"></a>Rozšíření izolovaného prostředí
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ ms.locfileid: "60054089"
 Prostředí sady Visual Studio, samostatný můžete rozšířit přidáním VSPackage, součást Managed Extensibility Framework (MEF) nebo projektu s obecným VSIX do vaší aplikace izolovaného prostředí.  
   
 > [!NOTE]
->  Následující kroky předpokládají, že jste vytvořili základní aplikace izolovaného prostředí pomocí Visual Studio Shell izolované šablony projektu. Další informace o této šabloně projektu naleznete v tématu [názorný postup: Vytvoření základní aplikace prostředí izolované](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).  
+> Následující kroky předpokládají, že jste vytvořili základní aplikace izolovaného prostředí pomocí Visual Studio Shell izolované šablony projektu. Další informace o této šabloně projektu naleznete v tématu [názorný postup: Vytvoření základní aplikace prostředí izolované](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).  
   
 ## <a name="locations-for-the-visual-studio-package-project-template"></a>Umístění pro šablony sady Visual Studio balíčku projektu  
  Šablona projektu balíček Visual Studio najdete ve třech různých umístěních v **nový projekt** dialogové okno:  
@@ -121,4 +121,4 @@ Prostředí sady Visual Studio, samostatný můžete rozšířit přidáním VSP
 8. Sestavte a spusťte řešení.  
   
 ## <a name="see-also"></a>Viz také  
- [Návod: Vytváření základní aplikace izolovaného prostředí](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)
+ [Návod: Vytvoření základní aplikace izolovaného prostředí](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)

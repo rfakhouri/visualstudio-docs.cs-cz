@@ -28,12 +28,12 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4d80f8b9a6786d84d645a91dead2ac05a829718b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1277370ca14044755988affc5ccf2bf1fb851a09
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60115065"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443212"
 ---
 # <a name="viewing-the-structure-of-code"></a>Zobrazení struktury kódu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ Můžete zkontrolovat objekty a členy v projektech Visual Studio a objekty a č
  Pokud máte Visual Studio Enterprise můžete vizualizovat strukturu kódu a jeho závislosti napříč celé řešení a potom přejít na části kódu, které vás zajímají map kódu. Další informace najdete v tématu [mapování závislostí napříč vaším řešením](../modeling/map-dependencies-across-your-solutions.md).  
   
 > [!NOTE]
->  Edice sady Visual Studio a nastavení, které používáte, může ovlivnit funkce v integrovaném vývojovém prostředí. Mohou se lišit od těch popsaných v tomto tématu.  
+> Edice sady Visual Studio a nastavení, které používáte, může ovlivnit funkce v integrovaném vývojovém prostředí. Mohou se lišit od těch popsaných v tomto tématu.  
   
 ## <a name="BKMK_ClassView"></a> Zobrazení tříd (Visual Basic, C# a C++)  
  **Zobrazení tříd** se zobrazí jako součást **Průzkumníka řešení** i v samostatném okně. **Zobrazení tříd** okno zobrazuje prvky aplikace. V horním podokně se zobrazí obory názvů, typy, rozhraní, výčty a třídy a dolním podokně zobrazí členy, které patří typ vybraný v horním podokně. Pomocí tohoto okna můžete přesunout do definice členů ve zdrojovém kódu (nebo **prohlížeče objektů** Pokud element je definován vně vašeho řešení).  

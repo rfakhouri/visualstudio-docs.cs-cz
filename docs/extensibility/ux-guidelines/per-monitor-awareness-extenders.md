@@ -17,11 +17,11 @@ ms.topic: reference
 ms.workload:
 - multiple
 ms.openlocfilehash: 44938c5753491521702867398a514f770cf831fb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099387"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62793633"
 ---
 # <a name="per-monitor-awareness-support-for-visual-studio-extenders"></a>Podpora sledování na sledování pro rozšíření sady Visual Studio
 Verze starší než Visual Studio 2019 měl svým kontextem povědomí o DPI nastavena na systém vědět, spíše než za sledování DPI vědět (PMA). Spouštění v systému sledování je v degradovaném stavu vizuálu pokaždé, když Visual Studio došlo k vykreslení na monitorech s jinou měřítko nebo vzdálené do počítačů s jiným zobrazením konfigurací např (jiné prostředí (například fuzzy písma nebo ikony) Windows škálování).

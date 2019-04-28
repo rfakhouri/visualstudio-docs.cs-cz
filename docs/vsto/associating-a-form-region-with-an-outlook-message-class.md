@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a1b6ef478b9f3661690383623df7c89fae28bb0c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5c264048887d3a1ba77d498784dc3e6cc4384159
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063540"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440365"
 ---
 # <a name="associate-a-form-region-with-an-outlook-message-class"></a>Přidružení oblasti formuláře k třídě zpráv aplikace Outlook
   Můžete určit oblast formuláře zobrazit podle přidružení oblasti formuláře k třídě zpráv každé položky, položky, které aplikace Microsoft Office Outlook. Například pokud se chcete připojit k dolnímu okraji položky pošty oblasti formuláře, můžete přidružit oblasti formuláře s `IPM.Note` třída zprávy.
@@ -45,7 +45,7 @@ ms.locfileid: "60063540"
  Můžete také zadat názvy vlastní třídy zpráv. Vlastní třídy zpráv identifikovat vlastních formulářů, které definujete v Outlooku.
 
 > [!NOTE]
->  Pro nahrazení a nahradit všechno formuláře oblasti můžete zadat nový název třídy vlastní zprávu. Nemusíte použít název třídy zpráv existujícího vlastního formuláře. Název třídy vlastní zprávu musí být jedinečný. Jeden způsob, jak zajistit, že název je jedinečný, je použít zásady vytváření názvů podobný následujícímu: \<*StandardMessageClassName*>.\< *Společnosti*>.\< *MessageClassName*> (například: `IPM.Note.Contoso.MyMessageClass`).
+> Pro nahrazení a nahradit všechno formuláře oblasti můžete zadat nový název třídy vlastní zprávu. Nemusíte použít název třídy zpráv existujícího vlastního formuláře. Název třídy vlastní zprávu musí být jedinečný. Jeden způsob, jak zajistit, že název je jedinečný, je použít zásady vytváření názvů podobný následujícímu: \<*StandardMessageClassName*>.\< *Společnosti*>.\< *MessageClassName*> (například: `IPM.Note.Contoso.MyMessageClass`).
 
 ## <a name="associate-a-form-region-with-an-outlook-message-class"></a>Přidružení oblasti formuláře k třídě zpráv aplikace Outlook
  Přidružení oblasti formuláře k třídu zpráv dvěma způsoby:
@@ -76,7 +76,7 @@ ms.locfileid: "60063540"
   **Novou oblast formuláře Outlooku** Průvodce ověří formát svůj vstup. po kliknutí na **Dokončit**.
 
 > [!NOTE]
->  **Novou oblast formuláře Outlooku** Průvodce neověřuje, že jsou názvy tříd zpráv, které poskytnete správný nebo platný.
+> **Novou oblast formuláře Outlooku** Průvodce neověřuje, že jsou názvy tříd zpráv, které poskytnete správný nebo platný.
 
  Po dokončení průvodce **novou oblast formuláře Outlooku** Průvodce použije atributy do třídy oblasti formuláře, která obsahují názvy tříd zadané zprávy. Tyto atributy můžete použít také ručně.
 
@@ -101,7 +101,7 @@ ms.locfileid: "60063540"
   Visual Studio ověří formát názvů tříd zpráv při sestavování projektu.
 
 > [!NOTE]
->  Visual Studio neověřuje, že jsou názvy tříd zpráv, které poskytnete správný nebo platný.
+> Visual Studio neověřuje, že jsou názvy tříd zpráv, které poskytnete správný nebo platný.
 
 ## <a name="see-also"></a>Viz také:
 - [Přístup k oblasti formuláře za běhu](../vsto/accessing-a-form-region-at-run-time.md)

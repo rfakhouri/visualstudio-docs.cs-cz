@@ -18,12 +18,12 @@ caps.latest.revision: 51
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9c0fa386d6f6df813cfbed1d4a618414f2810f86
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: b7f446d2c9a1b22488746eff9ba04044d2621013
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54802125"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439675"
 ---
 # <a name="use-code-maps-to-debug-your-applications"></a>Použití map kódu k ladění aplikací
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ Mapy kódu vám umožňují předcházet ztrátě orientace v rozsáhlých kóde
  ![Mapy kódu &#45; zobrazit metody a související pole](../modeling/media/codemapstoryboardpaint3.png "CodeMapStoryboardPaint3")  
   
 > [!TIP]
->  Zelené zvýraznění zobrazí poslední položky, které byly přidány do mapy. Zelená šipka ukazuje pozici kurzoru v kódu. Šipky mezi položkami představují různé vztahy. Na mapě můžete získat další informace o položkách hýbání myší nad nimi a Prozkoumáním jejich popisků.  
+> Zelené zvýraznění zobrazí poslední položky, které byly přidány do mapy. Zelená šipka ukazuje pozici kurzoru v kódu. Šipky mezi položkami představují různé vztahy. Na mapě můžete získat další informace o položkách hýbání myší nad nimi a Prozkoumáním jejich popisků.  
   
  ![Mapy kódu &#45; zobrazit popisy tlačítek](../modeling/media/codemapstoryboardpaint4.png "CodeMapStoryboardPaint4")  
   
@@ -65,7 +65,7 @@ Mapy kódu vám umožňují předcházet ztrátě orientace v rozsáhlých kóde
  ![Mapy kódu &#45; Zkontrolujte definici pole](../modeling/media/codemapstoryboardpaint5a.png "CodeMapStoryboardPaint5A")  
   
 > [!TIP]
->  Zelenou šipku na mapě můžete také přesunout přesunutím kurzoru v editoru kódu.  
+> Zelenou šipku na mapě můžete také přesunout přesunutím kurzoru v editoru kódu.  
   
 ## <a name="understand-relationships-between-pieces-of-code"></a>Pochopení vztahů mezi částmi kódu  
  Nyní chcete vědět, jaký další kód spolupracuje s `history` a `paintObjects` pole. Můžete do mapy přidat všechny metody, které odkazují na tato pole. Můžete to provést z mapy nebo z editoru kódu.  
@@ -75,14 +75,14 @@ Mapy kódu vám umožňují předcházet ztrátě orientace v rozsáhlých kóde
  ![Spustit nástroj Mapa kódu z editoru kódu](../modeling/media/codemapstoryboardpaint6a.PNG "CodeMapStoryboardPaint6A")  
   
 > [!NOTE]
->  Pokud chcete přidat položky z projektu, který je sdílen mezi více aplikacemi, jako jsou Windows Phone nebo Windows Store, pak tyto položky vždy se zobrazí s aktuálně aktivním projektem aplikace na mapě. Ano Pokud změníte kontext na jiný projekt aplikace, pak kontext na mapě změní také pro všechny nově přidané položky ze sdíleného projektu. Operace, které provádíte s položkou na mapě, se vztahují pouze na ty položky, které sdílejí stejný kontext.  
+> Pokud chcete přidat položky z projektu, který je sdílen mezi více aplikacemi, jako jsou Windows Phone nebo Windows Store, pak tyto položky vždy se zobrazí s aktuálně aktivním projektem aplikace na mapě. Ano Pokud změníte kontext na jiný projekt aplikace, pak kontext na mapě změní také pro všechny nově přidané položky ze sdíleného projektu. Operace, které provádíte s položkou na mapě, se vztahují pouze na ty položky, které sdílejí stejný kontext.  
   
  Změňte rozložení a uspořádejte tak tok vztahů a usnadněte čtení z mapy. Položky kolem mapy lze také přesunout přetažením.  
   
  ![Mapy kódu &#45; změnit rozložení](../modeling/media/codemapstoryboardpaint7a.png "CodeMapStoryboardPaint7A")  
   
 > [!TIP]
->  Ve výchozím nastavení **Inkrementální rozložení** zapnutý. To při přidání nových položek mění uspořádání mapy co nejméně. Chcete-li uspořádat celou mapu při každém přidání nových položek, vypněte **Inkrementální rozložení**.  
+> Ve výchozím nastavení **Inkrementální rozložení** zapnutý. To při přidání nových položek mění uspořádání mapy co nejméně. Chcete-li uspořádat celou mapu při každém přidání nových položek, vypněte **Inkrementální rozložení**.  
   
  ![Mapy kódu &#45; změnit rozložení](../modeling/media/codemapstoryboardpaint7.png "CodeMapStoryboardPaint7")  
   
@@ -136,7 +136,7 @@ Mapy kódu vám umožňují předcházet ztrátě orientace v rozsáhlých kóde
  ![Mapy kódu &#45; mapy aktualizované pomocí volání metody](../modeling/media/codemapstoryboardpaint17.png "CodeMapStoryboardPaint17")  
   
 > [!NOTE]
->  Při aktualizaci mapy se může zobrazit zpráva, že byl aktualizován index kódu použitý k vytvoření mapy. To znamená, že někdo změnil kód, což způsobilo, že se vaše mapa neshoduje s aktuálním kódem. To vám nezabrání v aktualizaci mapy, ale chcete-li ověřit, že mapa odpovídá kódu, pravděpodobně ji budete muset znovu vytvořit.  
+> Při aktualizaci mapy se může zobrazit zpráva, že byl aktualizován index kódu použitý k vytvoření mapy. To znamená, že někdo změnil kód, což způsobilo, že se vaše mapa neshoduje s aktuálním kódem. To vám nezabrání v aktualizaci mapy, ale chcete-li ověřit, že mapa odpovídá kódu, pravděpodobně ji budete muset znovu vytvořit.  
   
  Nyní je vaše šetření hotovo. Úspěšně jste našli a opravili problém pomocí mapování kódu. Máte k dispozici také mapu, která usnadňuje navigaci v rámci kódu, zapamatuje si, co jste se naučili, a zobrazí kroky, které jste provedli v zájmu vyřešení problému.  
   

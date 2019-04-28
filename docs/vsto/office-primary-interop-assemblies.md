@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 528a57ddf6dd9b193e767a4942d26e43789043c0
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
-ms.translationtype: MT
+ms.openlocfilehash: 1f6a8c3ca6c6c4015acc6c8be3914d4c458dfeb0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57525896"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63447089"
 ---
 # <a name="office-primary-interop-assemblies"></a>primární spolupracující sestavení sady Office
 
@@ -84,7 +84,7 @@ Ve většině případů byste měli přidat odkazy na PIA, které jsou nainstal
 Pokud máte nainstalována a registrována sestavení PIA v globální mezipaměti sestavení, tyto verze sestavení jsou uvedeny na **COM** karty **správce odkazů** dialogové okno. Můžete byste se vyhnout přidávání odkazů na tyto verze sestavení, protože existují některé problémy rozvoje, které může dojít, když je používáte. Například Pokud zaregistrujete různé verze PIA v globální mezipaměti sestavení, váš projekt bude automaticky svázán s verzí sestavení, která byla zaregistrována jako poslední – i v případě, že zadáte jinou verzi sestavení  **COM** karty **správce odkazů** dialogové okno.
 
 > [!NOTE]
->  Některá sestavení jsou přidány do projektu automaticky při přidání sestavení, které na ně odkazuje. Například odkazy *sestavení Office.dll* a *Microsoft.Vbe.Interop.dll* sestavení jsou přidány automaticky, když přidáte odkaz na aplikaci Word, Excel, Outlook, Microsoft Forms nebo grafu sestavení.
+> Některá sestavení jsou přidány do projektu automaticky při přidání sestavení, které na ně odkazuje. Například odkazy *sestavení Office.dll* a *Microsoft.Vbe.Interop.dll* sestavení jsou přidány automaticky, když přidáte odkaz na aplikaci Word, Excel, Outlook, Microsoft Forms nebo grafu sestavení.
 
 <a name="pialist"></a>
 

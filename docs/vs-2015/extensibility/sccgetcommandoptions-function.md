@@ -12,12 +12,12 @@ ms.assetid: bbe4aa4e-b4b0-403e-b7a0-5dd6eb24e5a9
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: cb5290b607d20ef38481cfae9eaa3310857915f6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 55d4d2cae73dd77fc601ca85ab45d969fc0e4de8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54790519"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432411"
 ---
 # <a name="sccgetcommandoptions-function"></a>SccGetCommandOptions – funkce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +51,7 @@ SCCRTN SccGetCommandOptions(
 ## <a name="return-value"></a>Návratová hodnota  
  Modul plug-in implementaci ovládacího prvku zdroje této funkce má vracet instanci jednoho z následujících hodnot:  
   
-|Hodnota|Popis|  
+|Value|Popis|  
 |-----------|-----------------|  
 |SCC_OK|Úspěch.|  
 |SCC_I_ADV_SUPPORT|Modul plug-in správy zdrojového kódu podporuje rozšířené možnosti pro příkaz.|  
@@ -75,7 +75,7 @@ SCCRTN SccGetCommandOptions(
  A konečně, když uživatel klikne na tlačítko **OK** v rozhraní IDE **získat** dialogové okno, volání integrované vývojové prostředí [sccget –](../extensibility/sccget-function.md), předejte strukturu vrácené v `ppvOptions` , která obsahuje Rozšířené možnosti.  
   
 > [!NOTE]
->  Příkaz `SCC_COMMAND_OPTIONS` se používá, když se zobrazí rozhraní IDE **možnosti** dialogové okno, které umožní uživateli nastavit předvolby, které řídí, jak integrace funguje. Pokud chce, aby modul plug-in správy zdrojového kódu slouží k poskytování své vlastní dialogové okno Předvolby, může zobrazit z **Upřesnit** tlačítko v dialogovém okně Předvolby rozhraní IDE. Modul plug-in je výhradně zodpovědná za získání a při zachování tyto informace; rozhraní IDE není používat ji nebo ji změňte.  
+> Příkaz `SCC_COMMAND_OPTIONS` se používá, když se zobrazí rozhraní IDE **možnosti** dialogové okno, které umožní uživateli nastavit předvolby, které řídí, jak integrace funguje. Pokud chce, aby modul plug-in správy zdrojového kódu slouží k poskytování své vlastní dialogové okno Předvolby, může zobrazit z **Upřesnit** tlačítko v dialogovém okně Předvolby rozhraní IDE. Modul plug-in je výhradně zodpovědná za získání a při zachování tyto informace; rozhraní IDE není používat ji nebo ji změňte.  
   
 ## <a name="see-also"></a>Viz také  
  [Funkce rozhraní API modulu Plug-in zdroje ovládacího prvku](../extensibility/source-control-plug-in-api-functions.md)   

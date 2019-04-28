@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f5d6c78f7d5c931272bb66b2706d3b5e531785cc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8dd8627c4e9baaa790a5d97a8021220a820356fb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60062635"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442439"
 ---
 # <a name="namedrange-control"></a>NamedRange – ovládací prvek
   <xref:Microsoft.Office.Tools.Excel.NamedRange> Ovládací prvek je oblast, která má jedinečný název, zpřístupní události a může být vázaný na data. Další informace najdete v tématu [přehled modelu objektů aplikace Excel](../vsto/excel-object-model-overview.md).
@@ -35,7 +35,7 @@ ms.locfileid: "60062635"
  Můžete přidat <xref:Microsoft.Office.Tools.Excel.NamedRange> ovládacích prvků na list za běhu v doplňku VSTO. Další informace najdete v tématu [jak: Přidání ovládacích prvků NamedRange do listů](../vsto/how-to-add-namedrange-controls-to-worksheets.md).
 
 > [!NOTE]
->  Ve výchozím nastavení, nejsou trvalé dynamicky generovaný pojmenované oblasti do listu jako hostitele Určuje, kdy je uzavřen do listu. Další informace najdete v tématu [přidání ovládacích prvků do dokumentů Office za běhu](../vsto/adding-controls-to-office-documents-at-run-time.md).
+> Ve výchozím nastavení, nejsou trvalé dynamicky generovaný pojmenované oblasti do listu jako hostitele Určuje, kdy je uzavřen do listu. Další informace najdete v tématu [přidání ovládacích prvků do dokumentů Office za běhu](../vsto/adding-controls-to-office-documents-at-run-time.md).
 
  <xref:Microsoft.Office.Tools.Excel.NamedRange> ovládací prvky se skládat jen z rozsahů na konkrétní listy. <xref:Microsoft.Office.Tools.Excel.NamedRange> ovládací prvky nemůže mít relativní názvy, které se vztahují na všechny listy a nemůže skládat z rozsahů, které jsou rozmístěny dva nebo víc listů v sešitech (3D rozsahy).
 

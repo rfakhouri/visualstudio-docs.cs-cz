@@ -17,12 +17,12 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0b8081946da2053d257691c8ec5dc2b1302e4d75
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 869a756b1995a1ae5de3736fcee4ccede6cb46e5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105835"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427116"
 ---
 # <a name="trusted-application-deployment-overview"></a>Přehled nasazení důvěryhodných aplikací
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Toto téma obsahuje přehled o tom, jak nasadit [!INCLUDE[ndptecclick](../includ
  Nasazení důvěryhodných aplikací, součástí [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] technologie nasazení usnadňuje pro organizace všech velikostí udělit další oprávnění, aby spravované aplikace bez vyzvání uživatele bezpečnější a lépe zabezpečeným způsobem. Pomocí nasazení důvěryhodné aplikace organizace jenom konfigurace klientského počítače na seznam důvěryhodných vydavatelů, kteří se identifikují pomocí technologie Authenticode certifikátů. Poté jakákoli [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] žádosti podepsány jednu z těchto důvěryhodných vydavatelů obdrží vyšší úroveň důvěryhodnosti.  
   
 > [!NOTE]
->  Důvěryhodné že aplikace nasazení vyžaduje jednorázovou konfiguraci počítače uživatele. Ve spravovaném prostředí plochy můžete tuto konfiguraci provést pomocí globálních zásad. Pokud je to, co jste, aby pro vaši aplikaci, místo toho použijte zvýšení oprávnění. Další informace najdete v tématu [zabezpečení aplikací ClickOnce](../deployment/securing-clickonce-applications.md).  
+> Důvěryhodné že aplikace nasazení vyžaduje jednorázovou konfiguraci počítače uživatele. Ve spravovaném prostředí plochy můžete tuto konfiguraci provést pomocí globálních zásad. Pokud je to, co jste, aby pro vaši aplikaci, místo toho použijte zvýšení oprávnění. Další informace najdete v tématu [zabezpečení aplikací ClickOnce](../deployment/securing-clickonce-applications.md).  
   
 ## <a name="trusted-application-deployment-basics"></a>Základní informace o nasazení důvěryhodné aplikace  
  Následující tabulka uvádí objekty a rolí, které jsou zahrnuty v Trusted Application Deployment.  
@@ -91,7 +91,7 @@ Toto téma obsahuje přehled o tom, jak nasadit [!INCLUDE[ndptecclick](../includ
  Po obdržení vašeho certifikátu, musíte použít ho k podepsání vašeho nasazení. Pokud nasazujete aplikaci s použitím [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Průvodce publikováním, průvodce automaticky vytvoří testovací certifikát za vás v případě špatných certifikát sami. Můžete také použít [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] okna Návrháře projektu, ale k poskytnutí certifikátu Certifikační autoritou.  Viz také [jak: Publikování aplikace ClickOnce pomocí Průvodce publikováním](http://msdn.microsoft.com/library/31kztyey\(v=vs.110\)) nebo [jak: Publikování aplikace ClickOnce pomocí Průvodce publikováním](http://msdn.microsoft.com/library/31kztyey\(v=vs.110\)).  
   
 > [!CAUTION]
->  Nedoporučujeme, nasadit aplikace pomocí testovacího certifikátu.  
+> Nedoporučujeme, nasadit aplikace pomocí testovacího certifikátu.  
   
  Můžete také podepsání aplikace pomocí nástroje Mage.exe nebo MageUI.exe SDK. Další informace najdete v tématu [názorný postup: Ruční nasazení aplikace ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Úplný seznam možností příkazového řádku související podepisování nasazení najdete v tématu [Mage.exe (Manifest Generation and Editing Tool)](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1).  
   

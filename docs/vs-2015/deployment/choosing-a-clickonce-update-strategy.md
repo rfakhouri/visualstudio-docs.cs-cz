@@ -17,12 +17,12 @@ caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f0f6d09dbd653dc332fd01414ff1ebb73cd2d014
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 8215b8e0955b79224341d5d43b51a473740f5fe5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54798572"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442339"
 ---
 # <a name="choosing-a-clickonce-update-strategy"></a>Výběr strategie aktualizace ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,10 +34,10 @@ ms.locfileid: "54798572"
  Kromě toho můžete určit, jak často bude aplikace aktualizace vyhledávat, a aktualizace můžete nastavit jako povinné.  
   
 > [!NOTE]
->  Aktualizace aplikace vyžadují připojení k síti. Pokud není k dispozici síťové připojení, bude aplikace spuštěna bez kontroly aktualizací, bez ohledu na vybranou strategii aktualizace.  
+> Aktualizace aplikace vyžadují připojení k síti. Pokud není k dispozici síťové připojení, bude aplikace spuštěna bez kontroly aktualizací, bez ohledu na vybranou strategii aktualizace.  
   
 > [!NOTE]
->  V rozhraní .NET Framework 2.0 a .NET Framework 3.0, kdykoli aplikace vyhledá aktualizace, před nebo po spuštění nebo pomocí <xref:System.Deployment.Application> rozhraní API, je nutné nastavit `deploymentProvider` v manifestu nasazení. `deploymentProvider` Odpovídající element v sadě Visual Studio **aktualizovat umístění** pole na **aktualizace** dialogovému oknu **publikovat** kartu. Toto pravidlo je v rozhraní .NET Framework 3.5 volné. Další informace najdete v tématu [nasazení ClickOnce aplikace pro testování a produkční servery bez Resigning](../deployment/deploying-clickonce-applications-for-testing-and-production-servers-without-resigning.md).  
+> V rozhraní .NET Framework 2.0 a .NET Framework 3.0, kdykoli aplikace vyhledá aktualizace, před nebo po spuštění nebo pomocí <xref:System.Deployment.Application> rozhraní API, je nutné nastavit `deploymentProvider` v manifestu nasazení. `deploymentProvider` Odpovídající element v sadě Visual Studio **aktualizovat umístění** pole na **aktualizace** dialogovému oknu **publikovat** kartu. Toto pravidlo je v rozhraní .NET Framework 3.5 volné. Další informace najdete v tématu [nasazení ClickOnce aplikace pro testování a produkční servery bez Resigning](../deployment/deploying-clickonce-applications-for-testing-and-production-servers-without-resigning.md).  
   
 ## <a name="checking-for-updates-after-application-startup"></a>Kontrola aktualizací po spuštění aplikace  
  Pomocí této strategie se aplikace pokusí po spuštění vyhledat a přečíst soubor manifestu nasazení na pozadí. Pokud je k dispozici aktualizace, bude při dalším spuštění aplikace uživatel vyzván ke stažení a instalaci aktualizace.  
@@ -79,7 +79,7 @@ ms.locfileid: "54798572"
  Mohou nastat situace, kdy požadujete, aby uživatelé spouštěli aktualizovanou verzi aplikace. Například můžete provést změnu externího prostředku, jako jsou webové služby, které by omezily správnou funkčnost starší verze aplikace. V tomto případě budete pravděpodobně chtít nastavit aktualizaci jako povinnou a zabránit uživatelům ve spouštění starší verze.  
   
 > [!NOTE]
->  Ačkoli můžete aktualizace vyžadovat prostřednictvím jiných strategií pro aktualizace, kontrola **před spuštěním aplikace** je jediný způsob, jak zaručit, že nemůže být spuštěna starší verze. Pokud je při spuštění zjištěna povinná aktualizace, musí uživatel aktualizaci přijmout, nebo musí aplikaci ukončit.  
+> Ačkoli můžete aktualizace vyžadovat prostřednictvím jiných strategií pro aktualizace, kontrola **před spuštěním aplikace** je jediný způsob, jak zaručit, že nemůže být spuštěna starší verze. Pokud je při spuštění zjištěna povinná aktualizace, musí uživatel aktualizaci přijmout, nebo musí aplikaci ukončit.  
   
  K označení aktualizace jako povinné, klikněte na tlačítko **zadat minimální požadovanou verzi této aplikace** v **aplikace aktualizuje** dialogové okno a poté zadejte verzi publikování (**hlavní**, **Menší**, **sestavení**, **revize**), která určuje nejnižší číslo verze aplikace, která je možné nainstalovat.  
   

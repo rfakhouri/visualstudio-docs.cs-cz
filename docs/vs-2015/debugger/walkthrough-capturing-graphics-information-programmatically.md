@@ -9,12 +9,12 @@ caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c1a5e5d8d33fed3c4e6348bcf2598f7093de5c98
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1eaa3547733432715c5362b20030fe3d4a886900
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60093101"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444342"
 ---
 # <a name="walkthrough-capturing-graphics-information-programmatically"></a>Návod: Zaznamenání grafických informací prostřednictvím kódu programu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ Můžete použít [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] diagnostiky grafi
 - Zachycení informací grafiky  
   
 > [!NOTE]
->  Předchozích implementacích zachytávání prostřednictvím kódu programu spoléhat Remote Tools for [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nakonfigurovánu zachycení, Windows 8.1 podporuje sběr dat přímo prostřednictvím rozhraní Direct3D 11.2. V důsledku toho již máte k instalaci na Windows 8.1 nástrojů Remote Tools pro zachytávání prostřednictvím kódu programu.  
+> Předchozích implementacích zachytávání prostřednictvím kódu programu spoléhat Remote Tools for [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nakonfigurovánu zachycení, Windows 8.1 podporuje sběr dat přímo prostřednictvím rozhraní Direct3D 11.2. V důsledku toho již máte k instalaci na Windows 8.1 nástrojů Remote Tools pro zachytávání prostřednictvím kódu programu.  
   
 ### <a name="preparing-your-app-to-use-programmatic-capture"></a>Příprava aplikace pro použití zachytávání prostřednictvím kódu programu  
  Použití zachytávání prostřednictvím kódu programu ve vaší aplikaci, musí zahrnovat potřebné hlavičky. Tyto hlavičky jsou součástí sady SDK pro Windows 8.1.  
@@ -58,10 +58,10 @@ Můžete použít [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] diagnostiky grafi
     ```  
   
     > [!IMPORTANT]
-    >  Záhlaví souboru vsgcapture.h—which podporuje zachytávání prostřednictvím kódu programu na Windows 8.0 a výše nezahrnují – provádět zachytávání prostřednictvím kódu programu do aplikace pro Windows 8.1. Není kompatibilní s rozhraním DirectX 11.2 této hlavičky. Pokud tento soubor je zahrnuto po záhlaví d3d11_2.h je zahrnuta, kompilátor vyvolá upozornění. Pokud před d3d11_2.h je zahrnutý vsgcapture.h, aplikace se nespustí.  
+    > Záhlaví souboru vsgcapture.h—which podporuje zachytávání prostřednictvím kódu programu na Windows 8.0 a výše nezahrnují – provádět zachytávání prostřednictvím kódu programu do aplikace pro Windows 8.1. Není kompatibilní s rozhraním DirectX 11.2 této hlavičky. Pokud tento soubor je zahrnuto po záhlaví d3d11_2.h je zahrnuta, kompilátor vyvolá upozornění. Pokud před d3d11_2.h je zahrnutý vsgcapture.h, aplikace se nespustí.  
   
     > [!NOTE]
-    >  Pokud červen 2010 na vašem počítači je nainstalovaná rozhraní DirectX SDK a cesty zahrnutí váš projekt obsahuje `%DXSDK_DIR%includex86`, přesunout na konec cesty zahrnutí. Proveďte totéž pro vaši cestu ke knihovně.  
+    > Pokud červen 2010 na vašem počítači je nainstalovaná rozhraní DirectX SDK a cesty zahrnutí váš projekt obsahuje `%DXSDK_DIR%includex86`, přesunout na konec cesty zahrnutí. Proveďte totéž pro vaši cestu ke knihovně.  
   
 #### <a name="windows-phone-81"></a>Windows Phone 8,1  
  Vzhledem k tomu, že Windows Phone 8.1 SDK neobsahuje záhlaví DXProgrammableCapture.h, budete muset definovat `IDXGraphicsAnalysis` sami rozhraní, aby mohli používat `BeginCapture()` a `EndCapture()` metody. Zahrnout další záhlaví, jak je popsáno v předchozí části.  
@@ -85,7 +85,7 @@ Můžete použít [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] diagnostiky grafi
  Než budete moct zachytit informace grafiky z rozhraní DirectX 11.2, budete muset získat rozhraní DXGI ladění.  
   
 > [!IMPORTANT]
->  Při použití zachytávání prostřednictvím kódu programu, musí i nadále spuštění aplikace v rámci diagnostiky grafiky (Alt + F5 v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]) nebo v části [nástroj příkazového řádku pro zachycení](../debugger/command-line-capture-tool.md).  
+> Při použití zachytávání prostřednictvím kódu programu, musí i nadále spuštění aplikace v rámci diagnostiky grafiky (Alt + F5 v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]) nebo v části [nástroj příkazového řádku pro zachycení](../debugger/command-line-capture-tool.md).  
   
 ##### <a name="to-get-the-idxgraphicsanalysis-interface"></a>Chcete-li získat IDXGraphicsAnalysis rozhraní  
   
@@ -106,7 +106,7 @@ Můžete použít [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] diagnostiky grafi
     ```  
   
     > [!NOTE]
-    >  Pokud `DXGIGetDebugInterface1` vrátí `E_NOINTERFACE` (`error: E_NOINTERFACE No such interface supported`), ujistěte se, že je aplikace spuštěna v rámci diagnostiky grafiky (Alt + F5 v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]).  
+    > Pokud `DXGIGetDebugInterface1` vrátí `E_NOINTERFACE` (`error: E_NOINTERFACE No such interface supported`), ujistěte se, že je aplikace spuštěna v rámci diagnostiky grafiky (Alt + F5 v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]).  
   
 ### <a name="capturing-graphics-information"></a>Zachycení informací grafiky  
  Teď, když máte platný `IDXGraphicsAnalysis` rozhraní, můžete použít `BeginCapture` a `EndCapture` k zachycení informací grafiky.  
@@ -150,7 +150,7 @@ Můžete použít [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] diagnostiky grafi
  Alternativně [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nainstaluje komponenty potřebné k provedení vzdálené zachycování pro 32bitové aplikace.  
   
 > [!NOTE]
->  Protože většina aplikací klasické pracovní plochy Windows – včetně [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]– nejsou podporovány na [!INCLUDE[win8](../includes/win8-md.md)] ARM zařízení pomocí nástroje Remote Tools for [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] spolu s zachytávání prostřednictvím kódu programu API je jediný způsob, jak zachycení diagnostiky grafiky v zařízeních ARM.  
+> Protože většina aplikací klasické pracovní plochy Windows – včetně [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]– nejsou podporovány na [!INCLUDE[win8](../includes/win8-md.md)] ARM zařízení pomocí nástroje Remote Tools for [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] spolu s zachytávání prostřednictvím kódu programu API je jediný způsob, jak zachycení diagnostiky grafiky v zařízeních ARM.  
   
 ### <a name="preparing-your-app-to-use-programmatic-capture"></a>Příprava aplikace pro použití zachytávání prostřednictvím kódu programu  
  Použití nástrojů diagnostiky grafiky, je nejprve nutné zachytit informace grafiky, která ho využívá. Informace můžete zaznamenat prostřednictvím kódu programu pomocí `CaptureCurrentFrame` rozhraní API.  
@@ -185,13 +185,13 @@ Můžete použít [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] diagnostiky grafi
   Pro [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] aplikace, umístění dočasného adresáře je specifická pro každého uživatele a aplikace a se obvykle nachází v umístění, jako je například C:\users\\*uživatelské jméno*\AppData\Local\Packages\\ *pfn*\TempState\\. Pro aplikace klasické pracovní plochy, umístění dočasného adresáře je specifická pro jednotlivé uživatele a obvykle nachází v umístění, jako je například C:\Users\\*uživatelské jméno*\AppData\Local\Temp\\.  
   
 > [!NOTE]
->  Zapsat do určitého umístění, musíte mít oprávnění k zápisu do tohoto umístění. v opačném případě dojde k chybě. Mějte na paměti, která [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] aplikace jsou omezeny více než aplikace klasické pracovní plochy o kde umožňuje zápis dat a můžou vyžadovat další konfiguraci k zápisu do určitých umístění.  
+> Zapsat do určitého umístění, musíte mít oprávnění k zápisu do tohoto umístění. v opačném případě dojde k chybě. Mějte na paměti, která [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] aplikace jsou omezeny více než aplikace klasické pracovní plochy o kde umožňuje zápis dat a můžou vyžadovat další konfiguraci k zápisu do určitých umístění.  
   
 ### <a name="capturing-the-graphics-information"></a>Zaznamenání grafických informací  
  Po aplikace připravené pro zachytávání prostřednictvím kódu programu a volitelně nakonfigurovat umístění a název grafiky souboru protokolu, sestavení aplikace a pak spusťte nebo ladění k zaznamenání dat; Nespouštějte nástroj Diagnostika grafiky z [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] při použití zachytávání prostřednictvím kódu programu rozhraní API. Protokol grafiky je zapsán do umístění, které jste zadali. Pokud chcete zachovat tuto verzi protokolu, přesuňte ho do jiného umístění; v opačném případě budou přepsány při dalším spuštění aplikace.  
   
 > [!TIP]
->  Můžete stále zachytit informace grafiky ručně při použití zachytávání prostřednictvím kódu programu, s aplikací fokus, stačí stisknout kombinaci kláves **Print Screen**. Tento postup můžete použít k zachycení další grafické informace, které nejsou zachyceny pomocí zachytávání prostřednictvím kódu programu API.  
+> Můžete stále zachytit informace grafiky ručně při použití zachytávání prostřednictvím kódu programu, s aplikací fokus, stačí stisknout kombinaci kláves **Print Screen**. Tento postup můžete použít k zachycení další grafické informace, které nejsou zachyceny pomocí zachytávání prostřednictvím kódu programu API.  
   
 ## <a name="next-steps"></a>Další kroky  
  Tento názorný postup ukázal, jak k zaznamenání grafických informací prostřednictvím kódu programu. V dalším kroku vezměte v úvahu tuto možnost:  

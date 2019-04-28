@@ -29,12 +29,12 @@ caps.latest.revision: 245
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1601853a99ebea5ef687fbe5679fd74b45d5c381
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1d74fc577044cd11ca161f099e2432fd03ecfad2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60107694"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440954"
 ---
 # <a name="map-dependencies-across-your-solutions"></a>Mapování závislostí napříč vaším řešením
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +59,7 @@ Pokud chcete pochopit závislosti ve vašem kódu, Vizualizujte si je vytvořen�
 - Visual Studio Professional: Otevření kódových map, provádění omezené úprav a vyhledání kódu.  
   
 > [!WARNING]
->  Než budete sdílet mapy vytvořené v sadě Visual Studio Enterprise s jinými uživateli, kteří používají Visual Studio Professional, ujistěte se, že všechny položky na mapě (jako jsou skryté položky, rozšířené skupiny a propojení mezi skupinami) jsou nastavena jako viditelná.  
+> Než budete sdílet mapy vytvořené v sadě Visual Studio Enterprise s jinými uživateli, kteří používají Visual Studio Professional, ujistěte se, že všechny položky na mapě (jako jsou skryté položky, rozšířené skupiny a propojení mezi skupinami) jsou nastavena jako viditelná.  
   
  **Můžete namapovat závislostí pro kód v těchto jazycích**:  
   
@@ -142,7 +142,7 @@ Pokud chcete pochopit závislosti ve vašem kódu, Vizualizujte si je vytvořen�
     Nebo pomocí klávesnice podle pak vyberete požadovanou položku a pak stisknete klávesu plus (**+**). Prozkoumat hlubší úrovně kódu, totéž proveďte pro obory názvů, typy a členy.  
   
    > [!TIP]
-   >  Další informace o práci s kódem mapuje pomocí myši, klávesnice a dotykového ovládání, naleznete v tématu [Procházet a uspořádání map kódu](../modeling/browse-and-rearrange-code-maps.md).  
+   > Další informace o práci s kódem mapuje pomocí myši, klávesnice a dotykového ovládání, naleznete v tématu [Procházet a uspořádání map kódu](../modeling/browse-and-rearrange-code-maps.md).  
   
 5. Pro zjednodušení mapy a zaměřte se na jednotlivé části, zvolte **filtry** na panelu nástrojů Mapa kódu a vyberte jenom typy uzlů a propojení se zajímáte. Lze například skrýt kontejnery složku řešení a sestavení.  
   
@@ -157,7 +157,7 @@ Pokud chcete pochopit závislosti ve vašem kódu, Vizualizujte si je vytvořen�
     V tomto příkladu fialové odkazy jsou volání tečkovaná odkazy jsou odkazy a světle modrá odkazy jsou přístup k poli. Zelená může se jednat o dědičnosti, nebo může být *agregovat odkazy* označující více než jeden typ vztahu (nebo *kategorie*).  
   
    > [!TIP]
-   >  Pokud se zobrazí zelená propojení, nemusí to znamenat, že není právě vztah dědičnosti. Může také být volání metody, ale ty jsou skryta vztah dědičnosti. Pokud chcete zobrazit konkrétní typy odkazů, pomocí zaškrtávacích políček v **filtry** podokně typy nepotřebujete.  
+   > Pokud se zobrazí zelená propojení, nemusí to znamenat, že není právě vztah dědičnosti. Může také být volání metody, ale ty jsou skryta vztah dědičnosti. Pokud chcete zobrazit konkrétní typy odkazů, pomocí zaškrtávacích políček v **filtry** podokně typy nepotřebujete.  
   
 7. Pokud chcete získat další informace o položce nebo propojení, přesuňte ukazatel myši dojde k jeho zvýraznění její popisek. Zobrazí podrobnosti o prvek kódu nebo kategorií, které představuje odkaz.  
   
@@ -196,7 +196,7 @@ Pokud chcete pochopit závislosti ve vašem kódu, Vizualizujte si je vytvořen�
 2. Přetáhněte sestavení nebo binární soubory, které chcete namapovat mimo aplikaci Visual Studio do mapy. Například přetáhněte sestavení nebo binární soubory z Průzkumníka Windows nebo Průzkumníka souborů.  
   
 > [!NOTE]
->  Sestavení nebo binární soubory můžete přetáhnout z Průzkumníka Windows nebo Průzkumníka souborů pouze v případě, že spustíte ho a sady Visual Studio na stejné úrovni oprávnění řízení přístupu uživatele (UAC). Například pokud je zapnutý nástroj Řízení uživatelských účtů a používáte Visual Studio jako správce, Průzkumník Windows nebo Průzkumníka souborů zablokuje možnost přetahování. Chcete-li tento problém obejít, ujistěte se, jak běží se stejnou úrovní oprávnění, nebo vypněte nástroj Řízení uživatelských účtů.  
+> Sestavení nebo binární soubory můžete přetáhnout z Průzkumníka Windows nebo Průzkumníka souborů pouze v případě, že spustíte ho a sady Visual Studio na stejné úrovni oprávnění řízení přístupu uživatele (UAC). Například pokud je zapnutý nástroj Řízení uživatelských účtů a používáte Visual Studio jako správce, Průzkumník Windows nebo Průzkumníka souborů zablokuje možnost přetahování. Chcete-li tento problém obejít, ujistěte se, jak běží se stejnou úrovní oprávnění, nebo vypněte nástroj Řízení uživatelských účtů.  
   
 ## <a name="SeeSpecificSource"></a> Zobrazit konkrétní závislosti  
  Předpokládejme například, že máte přezkoumání kódu provést některé soubory s probíhající změny. Zobrazení závislostí v tyto změny, můžete vytvořit mapu kódu z těchto souborů.  
@@ -218,7 +218,7 @@ Pokud chcete pochopit závislosti ve vašem kódu, Vizualizujte si je vytvořen�
      Můžete také přetáhnout položky z Průzkumníku řešení, zobrazení tříd nebo prohlížeči objektů na prázdnou hodnotu nebo existující mapy kódu. Chcete-li vytvořit prázdné mapování, naleznete v tématu [vytvořit mapu prázdný kód](#GetStarted). Chcete-li zahrnout nadřízenou hierarchii pro vaše položky, stiskněte a podržte **CTRL** klávesu můžete přetáhnout položky, nebo použít **zahrnout nadřazené položky** tlačítko na panelu nástrojů mapy kódu k určení výchozí akci.  
   
     > [!NOTE]
-    >  Když přidáváte položky z projektu, který je sdílen napříč více aplikacemi, jako jsou Windows Phone nebo Windows Store, tyto položky se zobrazí na mapě s aktuálně aktivním projektem aplikace. Pokud změníte kontext na jiný projekt aplikace a přidáte další položky ze sdíleného projektu, tyto položky se nyní zobrazí s nově aktivním projektem aplikace. Operace, které provádíte s položkou na mapě, se vztahují pouze na ty položky, které sdílejí stejný kontext.  
+    > Když přidáváte položky z projektu, který je sdílen napříč více aplikacemi, jako jsou Windows Phone nebo Windows Store, tyto položky se zobrazí na mapě s aktuálně aktivním projektem aplikace. Pokud změníte kontext na jiný projekt aplikace a přidáte další položky ze sdíleného projektu, tyto položky se nyní zobrazí s nově aktivním projektem aplikace. Operace, které provádíte s položkou na mapě, se vztahují pouze na ty položky, které sdílejí stejný kontext.  
   
 4. Chcete-li procházet položky, je rozbalte. Přesuňte ukazatel myši nad položku a pak klikněte na ikonu dvojité šipky (šipka) dolů, když se objeví.  
   
@@ -353,13 +353,13 @@ Pokud chcete pochopit závislosti ve vašem kódu, Vizualizujte si je vytvořen�
  Visual Studio uloží jako soubor .dgml, které můžete sdílet s ostatními uživateli aplikace Visual Studio Enterprise a Visual Studio Professional na mapě.  
   
 > [!NOTE]
->  Než budete sdílet mapu s uživateli, kteří používají Visual Studio Professional, ujistěte se, že chcete-li rozbalit všechny skupiny, zobrazit skryté uzly a odkazy křížové skupiny a načíst všechny odstraněné uzly, které mají jiní uživatelé vidět na mapě. Jinak ostatní uživatelé nebudou moci tyto položky zobrazit.  
+> Než budete sdílet mapu s uživateli, kteří používají Visual Studio Professional, ujistěte se, že chcete-li rozbalit všechny skupiny, zobrazit skryté uzly a odkazy křížové skupiny a načíst všechny odstraněné uzly, které mají jiní uživatelé vidět na mapě. Jinak ostatní uživatelé nebudou moci tyto položky zobrazit.  
 >   
->  Při ukládání mapu, která je v projektu modelování nebo byl zkopírován z projektu modelování do jiného umístění, může dojít k následující chybě:  
+> Při ukládání mapu, která je v projektu modelování nebo byl zkopírován z projektu modelování do jiného umístění, může dojít k následující chybě:  
 >   
->  "Nelze uložit *fileName* mimo adresář projektu. Propojené položky nejsou podporovány.“  
+> "Nelze uložit *fileName* mimo adresář projektu. Propojené položky nejsou podporovány.“  
 >   
->  Aplikace Visual Studio zobrazí chybu, ale přesto vytvoří uloženou verzi. Aby se zabránilo chybě, vytvořte mapu mimo projekt modelování. Potom jej můžete uložit do požadovaného umístění. Nebude fungovat, pokud budete chtít soubor pouze zkopírovat do jiného umístění v řešení a potom jej uložit.  
+> Aplikace Visual Studio zobrazí chybu, ale přesto vytvoří uloženou verzi. Aby se zabránilo chybě, vytvořte mapu mimo projekt modelování. Potom jej můžete uložit do požadovaného umístění. Nebude fungovat, pokud budete chtít soubor pouze zkopírovat do jiného umístění v řešení a potom jej uložit.  
   
 ### <a name="export-the-map-as-an-image-so-you-can-copy-it-into-other-applications-such-as-microsoft-word-or-powerpoint"></a>Exportovat mapu jako bitovou kopii, aby jej bylo možné zkopírovat do jiných aplikací, jako je například Microsoft Word nebo PowerPoint  
   

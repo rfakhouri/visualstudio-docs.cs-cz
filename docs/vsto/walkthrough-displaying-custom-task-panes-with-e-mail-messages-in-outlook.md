@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 583c15a5b605671e09ac47a42d49b068393ffe2e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8127b35c7b3c861ce0568acc5c0459d6d31eee08
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60062552"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440875"
 ---
 # <a name="walkthrough-display-custom-task-panes-with-email-messages-in-outlook"></a>Návod: Zobrazení vlastních podoken úloh s e-mailové zprávy v aplikaci Outlook
   Tento návod ukazuje, jak zobrazit jedinečnou instanci vlastního podokna úloh s každou e-mailové zprávy, který je vytvořen nebo otevřen. Uživatelům můžete zobrazit nebo skrýt podokno úloh s použitím tlačítko na pásu karet z každého e-mailové zprávy.
@@ -31,7 +31,7 @@ ms.locfileid: "60062552"
  K zobrazení vlastního podokna úloh s více Průzkumníka nebo kontrola systému windows, musíte vytvořit instance vlastního podokna úloh pro všechna okna, která je otevřena. Další informace o chování vlastních podoken úloh v aplikaci Outlook windows najdete v tématu [vlastní podokna úloh](../vsto/custom-task-panes.md).
 
 > [!NOTE]
->  Tento názorný postup představuje kód doplňku VSTO v malých oddílech, aby bylo snazší fattica logiku za kód.
+> Tento názorný postup představuje kód doplňku VSTO v malých oddílech, aby bylo snazší fattica logiku za kód.
 
  Tento návod znázorňuje následující úlohy:
 
@@ -48,7 +48,7 @@ ms.locfileid: "60062552"
 - Synchronizace přepínací tlačítko pásu karet pomocí vlastního podokna úloh.
 
 > [!NOTE]
->  Váš počítač může v následujících pokynech zobrazovat odlišné názvy nebo umístění některých prvků uživatelského rozhraní sady Visual Studio. Tyto prvky jsou určeny edicí sady Visual Studio a použitým nastavením. Další informace najdete v tématu [přizpůsobení integrovaného vývojového prostředí sady Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
+> Váš počítač může v následujících pokynech zobrazovat odlišné názvy nebo umístění některých prvků uživatelského rozhraní sady Visual Studio. Tyto prvky jsou určeny edicí sady Visual Studio a použitým nastavením. Další informace najdete v tématu [přizpůsobení integrovaného vývojového prostředí sady Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="prerequisites"></a>Požadavky
  K dokončení tohoto návodu budete potřebovat následující komponenty:

@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 6345fa74d78ab50229cb692ece58723fea38124a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054895"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62553650"
 ---
 # <a name="visual-studio-user-experience-guidelines"></a>Pravidla pro práci s uživatelským prostředím sady Visual Studio
 Při navrhování nových funkcí pro Visual Studio, postupujte podle pokynů prostředí pro uživatele Visual Studio. Tyto pokyny obsahují informace o běžných uživatelů modely a vzory interakcí tak, aby návrháři nové uživatelské rozhraní (UI) můžete vytvořit uživatelským prostředím, které jsou snadné a konzistentní v rámci vývojového prostředí.

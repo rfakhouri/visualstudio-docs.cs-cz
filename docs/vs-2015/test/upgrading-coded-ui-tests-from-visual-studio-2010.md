@@ -8,12 +8,12 @@ ms.assetid: 11232a83-73ea-46bd-bc0c-46f74f6e3a42
 caps.latest.revision: 35
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 58bfe0a2a6c337081ebb96464a701decb73cc022
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 42db6024353e3b26ddcaf6b5fa838ff791d964f4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60080693"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445891"
 ---
 # <a name="upgrading-coded-ui-tests-from-visual-studio-2010"></a>Upgrade programových testů UI z produktu Visual Studio 2010
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,19 +25,19 @@ Testovací projekty obsahující programové testy uživatelského rozhraní, kt
 - Visual Studio Enterprise
 
 > [!NOTE]
->  Visual Studio obsahuje více než jeden typ testovacího projektu. Pokud vytvoříte nový kódovaný test uživatelského rozhraní, vytvoří se v typu projektu programového testu uživatelského rozhraní. Další informace najdete v tématu [upgradování testů ze starších verzí sady Visual Studio](http://msdn.microsoft.com/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52).
+> Visual Studio obsahuje více než jeden typ testovacího projektu. Pokud vytvoříte nový kódovaný test uživatelského rozhraní, vytvoří se v typu projektu programového testu uživatelského rozhraní. Další informace najdete v tématu [upgradování testů ze starších verzí sady Visual Studio](http://msdn.microsoft.com/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52).
 
 > [!WARNING]
->  [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] projekty testů, které obsahují programové testy UI musí znovu vytvořit při otevření projektu testu v [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] nebo [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] – souběžně s [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)].
+> [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] projekty testů, které obsahují programové testy UI musí znovu vytvořit při otevření projektu testu v [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] nebo [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] – souběžně s [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)].
 
 > [!WARNING]
->  Pokud testovací projekt, který byl vytvořen v [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] a obsahuje pouze test jednotek je otevřen v [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]jsou kódované testy uživatelského rozhraní nelze přidat k němu. Podobně nelze přidat programový test uživatelského rozhraní pro projekt testování částí, který byl vytvořen v [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)].
+> Pokud testovací projekt, který byl vytvořen v [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] a obsahuje pouze test jednotek je otevřen v [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]jsou kódované testy uživatelského rozhraní nelze přidat k němu. Podobně nelze přidat programový test uživatelského rozhraní pro projekt testování částí, který byl vytvořen v [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)].
 
 ## <a name="compatibility-issues-between-visual-studio-2010-and-visual-studio-2012"></a>Problémy s kompatibilitou mezi Visual Studio 2010 a Visual Studio 2012
  V následující tabulce jsou uvedené problémy, které je potřeba vědět při migraci kódované testy uživatelského rozhraní mezi [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] a [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)].
 
 > [!CAUTION]
->  Existuje známý problém týkající se odkazy v projekty programového testu UI nezobrazují v Průzkumníku řešení. Další informace najdete v souboru ReadMe na [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] instalačního média.
+> Existuje známý problém týkající se odkazy v projekty programového testu UI nezobrazují v Průzkumníku řešení. Další informace najdete v souboru ReadMe na [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] instalačního média.
 
 |Programové funkce uživatelského rozhraní|Problém|Řešení|
 |----------------------------|-----------|--------------|

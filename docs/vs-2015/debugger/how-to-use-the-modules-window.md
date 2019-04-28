@@ -27,18 +27,18 @@ caps.latest.revision: 41
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2f332ef1a52ae49e51025614745fc1b5c4a44e07
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7b19237b94ed3d53c49f248e22b86d3af8180625
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60078281"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445048"
 ---
 # <a name="how-to-use-the-modules-window"></a>Postupy: Použití okna moduly
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 POZNÁMKA:]
->  Tato funkce není k dispozici pro SQL nebo ladění skriptů.  
+> Tato funkce není k dispozici pro SQL nebo ladění skriptů.  
   
  **Moduly** okně zobrazí knihovny DLL a EXE, které jsou používané vaším programem a zobrazuje relevantní informace pro každý.  
   

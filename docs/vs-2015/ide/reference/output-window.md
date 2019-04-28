@@ -17,12 +17,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9b373551444087ad8ff3789d927267a30efd5e4d
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 335058a6521f10313c94cbfbdd9657348cc90963
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59668909"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438065"
 ---
 # <a name="output-window"></a>Okno Výstup
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "59668909"
 **Výstup** okna můžete zobrazit stavové zprávy pro různé funkce v integrovaném vývojovém prostředí (IDE). Chcete-li otevřít **výstup** okna na řádku nabídek zvolte **zobrazení/Output** (nebo klikněte na tlačítko CTRL + ALT + O).  
   
 > [!WARNING]
->  V okně výstup nezobrazí v nabídce Zobrazit v edicích Visual Studio Express. Chcete-li ji vyvolat použijte klávesová zkratka CTRL + ALT + O.  
+> V okně výstup nezobrazí v nabídce Zobrazit v edicích Visual Studio Express. Chcete-li ji vyvolat použijte klávesová zkratka CTRL + ALT + O.  
   
 ## <a name="toolbar"></a>Panel nástrojů  
  **Zobrazit výstup z:**  

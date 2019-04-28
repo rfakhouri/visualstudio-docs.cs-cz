@@ -7,12 +7,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 211e9ca6e5b30d2a2b88f03430090c155ef7627a
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
-ms.translationtype: MT
+ms.openlocfilehash: a3518133ef269c76e1689d8d68583a2d6a0d09b1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223755"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62794090"
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>Vytvoření nastavení přenosné vlastního editoru pomocí řešení EditorConfig
 
@@ -25,7 +25,7 @@ Když přidáte soubor EditorConfig do projektu v sadě Visual Studio, formátov
 > [!NOTE]
 > Toto téma se vztahuje k sadě Visual Studio ve Windows. Visual Studio pro Mac, najdete v části [EditorConfig v sadě Visual Studio pro Mac](/visualstudio/mac/editorconfig).
 
-## <a name="coding-consistency"></a>Kódování konzistence
+## <a name="code-consistency"></a>Konzistence kódu
 
 Nastavení v souborech EditorConfig umožňují udržovat konzistentní kódování – styly a nastavení v základu kódu, jako je například odsazení stylu, šířku karty, znaky konce řádku, kódování, a další, bez ohledu na editor a integrované vývojové prostředí používáte. Například při psaní kódu v jazyce C#, pokud vašeho základu kódu obsahuje konvenci preferovat, odsazení vždy skládá z pěti znaky mezery, dokumenty pomocí kódování UTF-8 a každý řádek vždy končí řetězcem znaků CR/LF, můžete nakonfigurovat *.editorconfig* soubor, který chcete.
 
@@ -51,7 +51,7 @@ Editor v sadě Visual Studio podporuje základní sadu [EditorConfig vlastnosti]
 
 EditorConfig editor nastavení je podporované ve všech jazycích, Visual Studio podporované s výjimkou XML. Kromě toho podporuje EditorConfig [styl kódu](../ide/editorconfig-code-style-settings-reference.md) a [pojmenování](../ide/editorconfig-naming-conventions.md) konvence pro C# a Visual Basic.
 
-## <a name="adding-and-removing-editorconfig-files"></a>Přidávání a odebírání souborů EditorConfig
+## <a name="add-and-remove-editorconfig-files"></a>Přidání a odebrání souborů EditorConfig
 
 Přidání EditorConfig soubor do projektu nebo základ kódu nelze převést existující styly nové značky. Například pokud máte odsazení v souboru, které jsou formátovány pomocí karty a přidání EditorConfig souboru, který odsazení pomocí mezer, znaků odsazení nebudou automaticky převedena na mezery. Však žádné nové řádky kódu se formátují podle EditorConfig souboru. Kromě toho pokud formátovat dokument (**upravit** > **Upřesnit** > **formátovat dokument** nebo **Ctrl** + **K**, **Ctrl**+**D**), použijí se nastavení v souboru EditorConfig do existujícího kódu.
 
@@ -94,7 +94,7 @@ Existuje několik způsobů přidáte soubor EditorConfig do projektu:
 
 - Vyzkoušejte si [IntelliCode rozšíření](/visualstudio/intellicode/intellicode-visual-studio). Tento experimentální rozšíření odvodí z něj styl kódu z existujícího kódu a pak vytvoří neprázdný *.editorconfig* soubor s předvolby stylu kódu již definována.
 
-## <a name="override-editorconfig-settings"></a>Přepsat nastavení EditorConfig
+## <a name="file-hierarchy-and-precedence"></a>Hierarchie souborů a Priorita
 
 Když přidáte *.editorconfig* soubor do složky ve vaší hierarchii soubor, jeho nastavení platí pro všechny příslušné soubory na této úrovni a nižší. EditorConfig nastavení pro konkrétní projekt, základ kódu nebo části základu kódu, můžete také přepsat tak, aby používala různých konvencí než ostatní části základu kódu. To může být užitečné, když zahrnout kód z někde jinde a nechcete měnit její konvence.
 
@@ -109,9 +109,9 @@ Pokud je zapotřebí přepsat některé, ale ne všechna nastavení, zadejte pou
 root = true
 ```
 
-Čtení souborů EditorConfig shora dolů a posledního čtení nejbližší souborů EditorConfig. Vytváření z odpovídajících EditorConfig části se použijí v pořadí, ve kterém byly přečtěte si, tak vytváření názvů v blíže soubory přednost.
+Čtení souborů EditorConfig shora dolů. Pokud existuje více vlastností se stejným názvem, nejčastěji nedávno zjištěno, že má přednost před vlastnost s tímto názvem.
 
-## <a name="editing-editorconfig-files"></a>Úprava souborů EditorConfig
+## <a name="edit-editorconfig-files"></a>Úpravy souborů EditorConfig
 
 Visual Studio umožňuje upravit *.editorconfig* soubory poskytnutím seznamech doplňování technologie IntelliSense.
 
@@ -148,7 +148,7 @@ Teď, když stisknete **kartu** klíčů, získáte tabulátory místo mezer.
 
 ![Stisknutím klávesy TAB přidá znak Tab](../ide/media/vside_editorconfig_tab.png)
 
-## <a name="troubleshooting-editorconfig-settings"></a>Řešení potíží s nastavení EditorConfig
+## <a name="troubleshoot-editorconfig-settings"></a>Řešení potíží s nastavení EditorConfig
 
 Pokud je soubor EditorConfig kdekoli v adresářové struktuře dosahovalo nebo přesahovalo umístění vašeho projektu, Visual Studio použije nastavení editoru v tomto souboru k editoru. V takovém případě může zobrazit následující zprávy ve stavovém řádku:
 

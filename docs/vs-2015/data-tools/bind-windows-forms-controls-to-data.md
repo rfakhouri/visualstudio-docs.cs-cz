@@ -19,12 +19,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d2aefe68761d31f87d84c9215a6187c28e7b471b
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 3541dada6167bd2f0a95913d9ccc385dc3e5ccc3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59668987"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439475"
 ---
 # <a name="bind-windows-forms-controls-to-data"></a>Vytvoření vazby ovládacích prvků modelu Windows Forms k datům
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ Zdroje dat k ovládacím prvkům můžete svázat přetažením objektů ze **zd
  ![Vytvoření vazby zdroje dat na podrobnosti o](../data-tools/media/raddata-bind-data-source-to-details.png "zdroj dat raddata vazby a podrobnosti")  
   
 > [!IMPORTANT]
->  Všimněte si, že na předchozím obrázku, přetáhněte z vlastnosti objednávky v tabulce Zákazníci, ne z tabulky objednávky. Navázáním vlastnost Customer.Orders, se okamžitě projeví navigačními příkazy provedené v ovládacím prvku DataGridView v ovládacích prvcích podrobnosti. Pokud jste přetáhli z tabulky objednávky, ovládací prvky by být stále vázaná k datové sadě, ale nemusí není synchronizován s ovládacího prvku DataGridView.  
+> Všimněte si, že na předchozím obrázku, přetáhněte z vlastnosti objednávky v tabulce Zákazníci, ne z tabulky objednávky. Navázáním vlastnost Customer.Orders, se okamžitě projeví navigačními příkazy provedené v ovládacím prvku DataGridView v ovládacích prvcích podrobnosti. Pokud jste přetáhli z tabulky objednávky, ovládací prvky by být stále vázaná k datové sadě, ale nemusí není synchronizován s ovládacího prvku DataGridView.  
   
  Následující obrázek ukazuje výchozí ovládací prvky vázané na data, které jsou přidány do formuláře po vlastnost objednávky v tabulce Zákazníci je vázán na "Details" v **zdroje dat** okna.  
   

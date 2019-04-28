@@ -19,12 +19,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 836f3485eb923476271d6a2bae7899d66bd67db7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: faf99505c556594ad1281b0341ac1cad9acbae81
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054622"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443380"
 ---
 # <a name="working-with-visual-c-code-class-designer"></a>Práce s kódem jazyka Visual C++ (návrhář tříd)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ Vizuální návrhová plocha, volá se zobrazí návrhář tříd *diagram tří
 - Definice TypeDef  
   
 > [!NOTE]
->  To však není stejný jako diagram tříd UML, který vytvoříte v projektu modelování. Další informace najdete v tématu [diagramů tříd UML: Referenční dokumentace](../modeling/uml-class-diagrams-reference.md).  
+> To však není stejný jako diagram tříd UML, který vytvoříte v projektu modelování. Další informace najdete v tématu [diagramů tříd UML: Referenční dokumentace](../modeling/uml-class-diagrams-reference.md).  
   
 ## <a name="troubleshooting-type-resolution-and-display-issues"></a>Řešení potíží typu řešení a problémů zobrazení  
   

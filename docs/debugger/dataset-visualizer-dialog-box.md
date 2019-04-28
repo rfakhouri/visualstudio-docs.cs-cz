@@ -20,11 +20,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e4086c473270befcf2213f003e516128b45c4227
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59366988"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62563543"
 ---
 # <a name="dataset-visualizer-dialog-box"></a>Dialogové okno Vizualizér DataSetu
 Vizualizér datasetu vám umožní zobrazit obsah objektu datové sady, datové tabulky, zobrazení dat nebo objekt DataViewManager. Tento vizualizér se zpřístupní po kliknutí na ikonu lupy, které se zobrazí vedle hodnoty pro jeden z těchto objektů v okně ladicího programu proměnné nebo v datovém tipu.

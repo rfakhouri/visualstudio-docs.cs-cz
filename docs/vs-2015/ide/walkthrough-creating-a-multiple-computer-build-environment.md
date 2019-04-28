@@ -12,12 +12,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 40e2e4f3882a6bd3b3f7ce9b70aec45f244377d1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f0967f50c9dce325ff1595fec9d50138aa0a8d74
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60044300"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438130"
 ---
 # <a name="walkthrough-creating-a-multiple-computer-build-environment"></a>Návod: Vytvoření prostředí více počítačů sestavení
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -93,7 +93,7 @@ Můžete vytvořit prostředí sestavení v rámci organizace nainstalováním s
   Všimněte si, že název složky Program Files závisí na operačním systému, který je nainstalován. Na x x86 počítače, je název \Program Files\\; x x64 počítače, je název \Program Files (x86)\\. Bez ohledu na architekturu systému tento návod odkazuje na složku Program Files jako % ProgramFiles %.  
   
 > [!NOTE]
->  V počítači sestavení všechny relevantní soubory musí být na stejné jednotce; písmeno jednotky pro tuto jednotku však může být jiné než písmeno jednotky pro jednotku, kde je nainstalovaný Visual Studio v hostitelském počítači. V každém případě musíte vzít v úvahu umístění souborů při vytváření položky registru, jak je popsáno dále v tomto dokumentu.  
+> V počítači sestavení všechny relevantní soubory musí být na stejné jednotce; písmeno jednotky pro tuto jednotku však může být jiné než písmeno jednotky pro jednotku, kde je nainstalovaný Visual Studio v hostitelském počítači. V každém případě musíte vzít v úvahu umístění souborů při vytváření položky registru, jak je popsáno dále v tomto dokumentu.  
   
 #### <a name="to-copy-the-windows-sdk-files-to-the-build-computer"></a>Kopírování souborů Windows SDK do počítače sestavení  
   
@@ -223,7 +223,7 @@ Můžete vytvořit prostředí sestavení v rámci organizace nainstalováním s
 1. Určení nadřazené složky pro položky registru. Všechny položky registru jsou vytvořeny pod stejným nadřazeným klíčem. Na x x86 počítače, je nadřazený klíč HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\\. X x64 počítače nadřazený klíč je HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\. Bez ohledu na architekturu systému tento návod odkazuje na nadřazený klíč jako % RegistryRoot %.  
   
    > [!NOTE]
-   >  Pokud se architektura hostitelského počítače liší od vašeho počítače sestavení, nezapomeňte použít odpovídající nadřazený klíč na každém počítači. To je obzvláště důležité, pokud používáte automatizaci procesu exportu.  
+   > Pokud se architektura hostitelského počítače liší od vašeho počítače sestavení, nezapomeňte použít odpovídající nadřazený klíč na každém počítači. To je obzvláště důležité, pokud používáte automatizaci procesu exportu.  
    >   
    >  Pokud používáte jiné písmeno jednotky v počítači sestavení než ten, který používáte v hostitelském počítači, ujistěte se také, chcete-li změnit hodnoty položek registru tak, aby odpovídaly.  
   
@@ -334,7 +334,7 @@ Můžete vytvořit prostředí sestavení v rámci organizace nainstalováním s
      **Gacutil -i \<souboru >**  
   
     > [!NOTE]
-    >  Restartování může být vyžadováno pro sestavení plně nainstalovalo do GAC.  
+    > Restartování může být vyžadováno pro sestavení plně nainstalovalo do GAC.  
   
 ## <a name="BuildingProjects"></a> Vytváření projektů  
  Team Foundation Build můžete použít k sestavení [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] projekty a řešení nebo je můžete vytvořit na příkazovém řádku. Když k sestavení projektů můžete použít Team Foundation Build, vyvolá spustitelný soubor MSBuild, který odpovídá architektuře systému.  Na příkazovém řádku můžete použít 32bitový nástroj MSBuild nebo 64bitový MSBuild a můžete zvolit architekturu nástroje MSBuild nastavením proměnné prostředí PATH nebo přímo vyvoláním spustitelného souboru specifického pro architekturu MSBuild.  
@@ -346,17 +346,17 @@ Můžete vytvořit prostředí sestavení v rámci organizace nainstalováním s
  Další informace o tom, jak používat MSBuild na příkazovém řádku naleznete v tématu [Reference k příkazovému řádku](../msbuild/msbuild-command-line-reference.md).  
   
 > [!NOTE]
->  K vytvoření [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] projektů, je nutné použít sadu nástrojů platformy "v110". Pokud nechcete upravit [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] soubory projektu, můžete nastavit sadu nástrojů platformy pomocí tohoto argumentu příkazového řádku:  
+> K vytvoření [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] projektů, je nutné použít sadu nástrojů platformy "v110". Pokud nechcete upravit [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] soubory projektu, můžete nastavit sadu nástrojů platformy pomocí tohoto argumentu příkazového řádku:  
 >   
->  **msbuild** *solution.sln* **/p:PlatformToolset=v110**  
+> **msbuild** *solution.sln* **/p:PlatformToolset=v110**  
   
 ## <a name="CreatingForSourceControl"></a> Vytváření sestavení prostředí tak, aby mohla být zařazena do správy zdrojového kódu  
  Můžete vytvořit prostředí sestavení, který je možné nasadit na různých počítačích a nevyžaduje soubory GAC ani změny nastavení registru. Následující kroky jsou jen jedním ze způsobů jak toho dosáhnout. Přizpůsobit tento postup na jedinečné znaky prostředí sestavení.  
   
 > [!NOTE]
->  Musíte zakázat přírůstkové sestavení tak, aby tracker.exe nevyvolala chybu během sestavení. Chcete-li zakázat přírůstkové sestavování, nastavte tento parametr sestavení:  
+> Musíte zakázat přírůstkové sestavení tak, aby tracker.exe nevyvolala chybu během sestavení. Chcete-li zakázat přírůstkové sestavování, nastavte tento parametr sestavení:  
 >   
->  **msbuild** *solution.sln* **/p:TrackFileAccess=false**  
+> **msbuild** *solution.sln* **/p:TrackFileAccess=false**  
   
 #### <a name="to-create-a-build-environment-that-can-be-checked-into-source-control"></a>Chcete-li vytvořit prostředí sestavení, který může být zařazeno do správy zdrojového kódu  
   

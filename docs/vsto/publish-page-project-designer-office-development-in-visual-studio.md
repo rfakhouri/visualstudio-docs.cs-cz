@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 55a27a8d0c5c119870e92bfbf7cff4b85f90cf99
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 84a62fc796243172c9130c8113c4e6d289ed3092
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60103516"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63447012"
 ---
 # <a name="publish-page-project-designer-office-development-in-visual-studio"></a>Publikovat stranu, Návrhář projektů (vývoj pro Office v sadě Visual Studio)
   **Publikovat** stránku **Návrháře projektu** slouží ke konfiguraci vlastností pro nasazení.
@@ -29,7 +29,7 @@ ms.locfileid: "60103516"
  Pro přístup k této stránce, vyberte projekt v **Průzkumníka řešení**a potom na **projektu** nabídce zvolte *Projectname* **vlastnosti** . Pokud **publikovat** stránka se nezobrazí, zvolte **publikovat** kartu.
 
 > [!NOTE]
->  Můžete také nastavit umístění pro publikování **Průvodce publikováním**. Další informace najdete v tématu [jak: Publikování řešení Office s použitím technologie ClickOnce](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8).
+> Můžete také nastavit umístění pro publikování **Průvodce publikováním**. Další informace najdete v tématu [jak: Publikování řešení Office s použitím technologie ClickOnce](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8).
 
 ## <a name="uielement-list"></a>Seznam prvků uživatelského rozhraní
  **Umístění složky (webový server, ftp server nebo cesta k souboru) pro publikování** vyžaduje.

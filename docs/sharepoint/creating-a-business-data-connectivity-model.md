@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b4873085a4e4508b40b866eee79e79f624f3c01d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 9f3da13858507a3ff176aaa0a44051674fd5285f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605728"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443557"
 ---
 # <a name="create-a-business-data-connectivity-model"></a>Vytvoření modelu připojení obchodních dat
   Můžete vytvořit obchodní Data připojení (BDC) model nebo přizpůsobit existující model služby BDC pomocí sady Visual Studio. Každý projekt služby SharePoint může obsahovat pouze jeden model. Další informace najdete v tématu [integraci obchodních dat do služby SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md).
@@ -29,7 +29,7 @@ ms.locfileid: "56605728"
  Vytvořit nový model, vytvořte **Model Připojení obchodních dat** projektu nebo přidat **Model Připojení obchodních dat** položku **prázdný projekt SharePoint**.
 
 > [!NOTE]
->  Musíte mít [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] v počítači nainstalována.
+> Musíte mít [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] v počítači nainstalována.
 
  Visual Studio přidá složku do projektu. Tato složka obsahuje název, který zadáte pro **Model Připojení obchodních dat** položky v **přidat novou položku** dialogové okno. Pokud vytvoříte nový **Model Připojení obchodních dat** názvy složky projektu, Visual Studio **BdcModel1**.
 
@@ -47,7 +47,7 @@ ms.locfileid: "56605728"
  Při kompilaci projektu sady Visual Studio vytváří sestavení. Zajištění Nepřidávejte další položky pro projekt, který je přidání kódu k sestavení projektu (například: **sekvenčního pracovního postupu** položky nebo **webové části** položky). Kód pro tuto položku se nespustí, když nasadíte řešení, protože balíček řešení není zkopírujte sestavení do globální mezipaměti sestavení.  Balíček řešení nasadí do databáze služby BDC v Sharepointu pouze sestavení.
 
 > [!NOTE]
->  Sestavení sady Visual Studio kopíruje do obou umístěních v místním počítači, při ladění projektu.
+> Sestavení sady Visual Studio kopíruje do obou umístěních v místním počítači, při ladění projektu.
 
 ## <a name="add-an-existing-model"></a>Přidat existující model
  Můžete importovat modelu, který byl vytvořen pomocí jiných nástrojů, jako je SharePoint designeru. Můžete se rozhodnout pro import existujícího modelu do projektu v následujících situacích:

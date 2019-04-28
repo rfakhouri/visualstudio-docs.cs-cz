@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b457bf6491a9b82fc981c66722f4c6e19a517065
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 245a6c994d87ecfa9c5ef877563b70100e5eef6f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040335"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438998"
 ---
 # <a name="sharepoint-project-and-project-item-templates"></a>A šablony položek projektu služby SharePoint
   Následující části popisují dostupné projektu služby SharePoint a položky projektu, šablony a způsobu jejich použití.
@@ -80,7 +80,7 @@ ms.locfileid: "60040335"
  *Typ obsahu* položek vám umožní vytvořit vlastní typy obsahu, které jsou založené na stávající typ (základní) obsahu například dokument, oznámení nebo úkolu. Vlastní typ obsahu poskytuje stejné atributy a pole jako základní typ obsahu spolu s všechny sloupce webu (pole) můžete definovat. Například můžete vytvořit vlastní kontakt typu obsahu, který je založen na základní kontakt typ obsahu, která se dodává v Sharepointu. Typ obsahu můžete přizpůsobit změnou existující sloupce webu nebo přidat další sloupce webu k těm, které jsou již zahrnuty v základním typu obsahu.
 
 > [!NOTE]
->  Kvůli omezením služby SharePoint nelze vytvořit typ obsahu řešení farmy podle typu obsahu řešení v izolovaném prostoru.
+> Kvůli omezením služby SharePoint nelze vytvořit typ obsahu řešení farmy podle typu obsahu řešení v izolovaném prostoru.
 
  Další informace najdete v tématu [názorný postup: Vytvoření sloupce webu, typu obsahu a seznamu pro službu SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md) a [stavebních bloků: Typ obsahu](http://go.microsoft.com/fwlink/?LinkId=179413).
 

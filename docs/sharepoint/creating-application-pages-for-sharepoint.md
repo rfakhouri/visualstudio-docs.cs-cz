@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d8f02fbff9ed727359adbc5db1b25ee14dbccb3a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 8ac9340ea853a1852d039f05a3ecbb100845ab84
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56644442"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443540"
 ---
 # <a name="create-application-pages-for-sharepoint"></a>Vytváření stránek aplikací pro SharePoint
   *Stránky aplikace* je webová stránka ASP.NET, který je určený k použití na webu služby SharePoint. Stránky aplikací jsou speciální typ stránky ASP.NET. Hlavní rozdíl mezi stránku aplikace a standardní stránky technologie ASP.NET je, že stránky aplikace obsahuje obsah, který je sloučen s hlavní stránkou služby SharePoint. Hlavní stránky umožňuje, aby aplikace stránky, které sdílejí stejný vzhled a chování jako další stránky na webu.
@@ -36,7 +36,7 @@ ms.locfileid: "56644442"
  Stránky aplikací nemůžete provádět tyto akce. Stránky aplikace je ale nejlepší typ stránky pro vytvoření, pokud chcete, aby stránka obsahuje vlastní kód. I když přidáte vlastní kód na stránku webu, kód zastaví spuštění, když uživatel přizpůsobuje stránky s využitím nástrojů, jako je SharePoint designeru.
 
 > [!NOTE]
->  Visual Studio neposkytuje šablony, které vám pomůžou vytvořit stránky webu pro web služby SharePoint. Další informace najdete v tématu [typů stránku služby SharePoint](http://go.microsoft.com/fwlink/?LinkID=211584).
+> Visual Studio neposkytuje šablony, které vám pomůžou vytvořit stránky webu pro web služby SharePoint. Další informace najdete v tématu [typů stránku služby SharePoint](http://go.microsoft.com/fwlink/?LinkID=211584).
 
 ## <a name="create-an-application-page"></a>Vytvoření stránky aplikace
  Chcete-li vytvořit stránku aplikace, přidejte **stránky aplikace** položky projektu služby SharePoint. Při vytváření stránky aplikace Visual Studio přidá následující složky do projektu:
@@ -58,7 +58,7 @@ ms.locfileid: "56644442"
  Návrh obsah stránky aplikace pomocí návrháře zobrazení v sadě Visual Studio. Tento návrhář zobrazí při otevření stránky aplikace ve vašem projektu (poklepáním nebo otevřením jeho místní nabídku a následným výběrem možnosti **otevřete**) a klikněte na tlačítko **návrhu** tlačítko v dolní části editor.
 
 > [!NOTE]
->  Na stránce můžete navrhnout pouze v **zdroj** zobrazení návrháře. **Návrhu** zobrazení návrháře je zakázaná pro stránky aplikace.
+> Na stránce můžete navrhnout pouze v **zdroj** zobrazení návrháře. **Návrhu** zobrazení návrháře je zakázaná pro stránky aplikace.
 
  Stránky aplikace můžete ladit stejně, jako by ladění ostatních položek projektu služby SharePoint v sadě Visual Studio. Při spuštění ladicího programu sady Visual Studio, Visual Studio otevře web služby SharePoint.
 

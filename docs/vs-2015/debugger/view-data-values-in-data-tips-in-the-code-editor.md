@@ -21,12 +21,12 @@ caps.latest.revision: 41
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c6c6407c038c7d6847db073c1f00c103d9483e78
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 689d01c7e22cca430693a85e6dedcc7706fda41d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039112"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437688"
 ---
 # <a name="view-data-values-in-data-tips--in-the-code-editor"></a>Zobrazení hodnot dat v datových tipech v editoru kódu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ DataTips poskytují pohodlný způsob, jak zobrazit informace o proměnných ve 
     Zobrazí se DataTip.  
   
    > [!NOTE]
-   >  Datových tipech jsou vždy vyhodnoceny v kontextu, kde je spuštění pozastaveno, a ne je ukazatel myši. Pokud je ukazatel myši nad proměnnou v jiné funkce se stejným názvem jako proměnná, která je v aktuálním kontextu, zobrazí se jako hodnotu proměnné v aktuálním kontextu hodnotu proměnné v jiné funkci.  
+   > Datových tipech jsou vždy vyhodnoceny v kontextu, kde je spuštění pozastaveno, a ne je ukazatel myši. Pokud je ukazatel myši nad proměnnou v jiné funkce se stejným názvem jako proměnná, která je v aktuálním kontextu, zobrazí se jako hodnotu proměnné v aktuálním kontextu hodnotu proměnné v jiné funkci.  
   
 2. DataTip zmizí při odebrání ukazatel myši. Pro Připnutí DataTip tak, aby zůstane otevřený, klikněte na tlačítko **připojit ke zdroji** ikonu, nebo  
   

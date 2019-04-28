@@ -9,12 +9,12 @@ caps.latest.revision: 21
 author: alexhomer1
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: af4b6ba85982c926230100aac5c7a451df79b825
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4ec7d42fe5f1db8a44f17cf3dffdfd6174a58995
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60100180"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445941"
 ---
 # <a name="unit-testing-visual-c-code-in-a-store-app"></a>Testování jednotek kódu jazyka Visual C# v Store app
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ Toto téma popisuje jeden ze způsobů vytvoření testů jednotek pro třídy V
  V tomto tématu se vytvoří také jedno řešení sady Visual Studio a samostatné projekty pro testy jednotky a knihovny DLL, který chcete testovat. Můžete také zahrnout jednotkové testy přímo do projektu knihovny DLL, nebo můžete vytvořit samostatné řešení pro testování částí a knihovny DLL.  
   
 > [!NOTE]
->  Visual Studio Community, Enterprise. a Professional nabízí další funkce pro testování částí.  
+> Visual Studio Community, Enterprise. a Professional nabízí další funkce pro testování částí.  
 > 
 > - Použijte libovolné rozhraní testování částí třetích stran a open source, který byl vytvořen adaptér doplněk pro aplikaci Microsoft Test Explorer. Můžete také analyzovat a zobrazit informace o pokrytí kódu pro testy.  
 >   - Spusťte testy po každém sestavení.  
@@ -211,7 +211,7 @@ Toto téma popisuje jeden ze způsobů vytvoření testů jednotek pro třídy V
     ```  
   
     > [!TIP]
-    >  Doporučujeme neměňte testy, které prošly. Místo toho přidat nový test, aktualizovat kód tak, aby byl test úspěšný a pak přidejte jiného testu, a tak dále.  
+    > Doporučujeme neměňte testy, které prošly. Místo toho přidat nový test, aktualizovat kód tak, aby byl test úspěšný a pak přidejte jiného testu, a tak dále.  
     >   
     >  Pokud uživatelé změní své požadavky, zakážete testy, které už nejsou správné. Psát nové testy a jejich fungování postupně, přírůstkové stejně.  
   
@@ -222,7 +222,7 @@ Toto téma popisuje jeden ze způsobů vytvoření testů jednotek pro třídy V
      ![Nezdaří RangeTest](../test/media/ute-cpp-testexplorer-rangetest-fail.png "UTE_Cpp_TestExplorer_RangeTest_Fail")  
   
     > [!TIP]
-    >  Ihned poté, co jste ho napsali, ověřte, že každý test se nezdaří. To umožňuje vyhnout se snadno chybu zápisu test, který se nikdy selže.  
+    > Ihned poté, co jste ho napsali, ověřte, že každý test se nezdaří. To umožňuje vyhnout se snadno chybu zápisu test, který se nikdy selže.  
   
 4. Vylepšete testovaného kódu tak, aby nový test byl úspěšný. Změnit `SqareRoot` fungovat v **Rooter.cs** tomuto:  
   
@@ -247,7 +247,7 @@ Toto téma popisuje jeden ze způsobů vytvoření testů jednotek pro třídy V
      Všechny tři testy jsou nyní úspěšné.  
   
 > [!TIP]
->  Vývoj kódu tak, že přidáte testy jeden po druhém. Ujistěte se, že všechny testy jsou úspěšné po každé iteraci.  
+> Vývoj kódu tak, že přidáte testy jeden po druhém. Ujistěte se, že všechny testy jsou úspěšné po každé iteraci.  
   
 ## <a name="BKMK_Debug_a_failing_test"></a> Ladit test chybou  
   
@@ -332,7 +332,7 @@ Toto téma popisuje jeden ze způsobů vytvoření testů jednotek pro třídy V
 2. Zvolte **spustit všechny** testovací metoda refaktorovaný a ujistěte se, že nebyla zavedena regrese.  
   
 > [!TIP]
->  Se spouští stabilní sada testů jednotek dobré poskytuje jistotu, že nebyly zavedeny chyby při změně kódu.  
+> Se spouští stabilní sada testů jednotek dobré poskytuje jistotu, že nebyly zavedeny chyby při změně kódu.  
   
  **Testovací kód Refaktorujte k vyloučení duplicitním kódem.**  
   
@@ -365,4 +365,4 @@ Toto téma popisuje jeden ze způsobů vytvoření testů jednotek pro třídy V
 2. Zvolte **spustit všechny** testovací metoda refaktorovaný a ujistěte se, že nebyla zavedena chybu.  
   
 > [!NOTE]
->  Pokud chcete přidat do testovací třídy Pomocná metoda, nepřidávejte `[TestMethod]` atribut do metody. Průzkumník testů nezaregistruje metodu ke spuštění.
+> Pokud chcete přidat do testovací třídy Pomocná metoda, nepřidávejte `[TestMethod]` atribut do metody. Průzkumník testů nezaregistruje metodu ke spuštění.

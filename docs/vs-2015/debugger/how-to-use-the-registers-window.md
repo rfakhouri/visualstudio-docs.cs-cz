@@ -27,12 +27,12 @@ caps.latest.revision: 42
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f622440c5bd0f0d09967eff56479459a4a3bfbb0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 506425f4de218e258ca9a86bfad5154cbda5c223
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60042872"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445042"
 ---
 # <a name="how-to-use-the-registers-window"></a>Postupy: Použití okna registry
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ Okno registrů je k dispozici pouze v případě, že je povoleno ladění úrov
  Podrobný úvod ke konceptům za registry a o okně registr, najdete v části [základní informace o ladění: Registr – okno](../debugger/debugging-basics-registers-window.md).  
   
 > [!NOTE]
->  Dialogová okna a příkazy nabídek, které vidíte, se mohou lišit od těch popsaných v nápovědě v závislosti na aktivních nastaveních nebo edici. Chcete-li změnit nastavení, zvolte **nastavení importu a exportu** na **nástroje** nabídky. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Dialogová okna a příkazy nabídek, které vidíte, se mohou lišit od těch popsaných v nápovědě v závislosti na aktivních nastaveních nebo edici. Chcete-li změnit nastavení, zvolte **nastavení importu a exportu** na **nástroje** nabídky. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ### <a name="to-display-the-registers-window"></a>Chcete-li zobrazit okno registrů  
   
@@ -55,7 +55,7 @@ Okno registrů je k dispozici pouze v případě, že je povoleno ladění úrov
      Ladicí program musí být spuštěná nebo v režimu pozastavení.  
   
     > [!NOTE]
-    >  Informace o registru není k dispozici pro skript nebo aplikace SQL.  
+    > Informace o registru není k dispozici pro skript nebo aplikace SQL.  
   
 ## <a name="see-also"></a>Viz také  
  [Základy ladění: Registr – okno](../debugger/debugging-basics-registers-window.md)   

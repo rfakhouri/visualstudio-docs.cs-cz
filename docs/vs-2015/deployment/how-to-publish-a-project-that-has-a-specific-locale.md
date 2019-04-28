@@ -21,12 +21,12 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6d5bb4be34a6a476e975c240f8a9d99114b870f0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 76d0b61ba3eb8c0ff995aef4118fe21a83fc94c2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60092913"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442692"
 ---
 # <a name="how-to-publish-a-project-that-has-a-specific-locale"></a>Postupy: Publikování projektu s konkrétním národním prostředím
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "60092913"
 Není, že aplikace obsahuje součásti, které mají různá národní prostředí. V tomto scénáři by vytvářet řešení, která se má několik projektů a potom publikovat samostatné projekty pro každé národní prostředí. Tento postup ukazuje, jak pomocí makra publikování první projekt v řešení s použitím národního prostředí "en". Pokud chcete vyzkoušet tuto proceduru s národním prostředí než "en", nezapomeňte nastavit `localeString` v makru tak, aby odpovídaly národní prostředí, který používáte (pro příklad, "de" nebo "de-DE").  
   
 > [!NOTE]
->  Při použití tohoto makra umístění publikování by mělo být platná adresa URL nebo Universal Naming Convention (UNC) sdílené složky. Internetové informační služby (IIS) má také nainstalované v počítači. Instalace služby IIS, na **Start** nabídky, klikněte na tlačítko **ovládací panely**. Dvakrát klikněte na panel **přidat nebo odebrat programy**. V **přidat nebo odebrat programy**, klikněte na tlačítko **přidat nebo odebrat součásti Windows**. V **Průvodce součásti Windows**, vyberte **Internetové informační služby (IIS)** zaškrtávací políčko **součásti** seznamu. Pak klikněte na tlačítko **Dokončit** zavřete průvodce.  
+> Při použití tohoto makra umístění publikování by mělo být platná adresa URL nebo Universal Naming Convention (UNC) sdílené složky. Internetové informační služby (IIS) má také nainstalované v počítači. Instalace služby IIS, na **Start** nabídky, klikněte na tlačítko **ovládací panely**. Dvakrát klikněte na panel **přidat nebo odebrat programy**. V **přidat nebo odebrat programy**, klikněte na tlačítko **přidat nebo odebrat součásti Windows**. V **Průvodce součásti Windows**, vyberte **Internetové informační služby (IIS)** zaškrtávací políčko **součásti** seznamu. Pak klikněte na tlačítko **Dokončit** zavřete průvodce.  
   
 ### <a name="to-create-the-publishing-macro"></a>Chcete-li vytvořit publikování – makro  
   

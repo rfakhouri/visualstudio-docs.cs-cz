@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 89559798e342c8993e523517e5c85fc38e1c0cf8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a2727f0f3a5f2b46c5110a33e63b102f9d26bdaf
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110861"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446607"
 ---
 # <a name="walkthrough-import-items-from-an-existing-sharepoint-site"></a>Návod: Import položek z existující stránky SharePoint
   Tento návod ukazuje, jak importovat položky z existující stránky SharePoint do [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projektu služby SharePoint.
@@ -75,7 +75,7 @@ ms.locfileid: "60110861"
  V dalším kroku získat soubor nastavení (.wsp) služby SharePoint, který obsahuje položky služby SharePoint a prvků, které chcete importovat do vaší [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projektu služby SharePoint. Pokud již nemáte soubor WSP, pak musíte vytvořit jeden z existující stránky SharePoint. V tomto příkladu budete exportovat výchozí web služby SharePoint do souboru WSP.
 
 > [!IMPORTANT]
->  Pokud se zobrazí chyba za běhu provedením následujících kroků, budete muset provést postup v systému, který má přístup k webu služby SharePoint.
+> Pokud se zobrazí chyba za běhu provedením následujících kroků, budete muset provést postup v systému, který má přístup k webu služby SharePoint.
 
 ### <a name="to-export-an-existing-sharepoint-site"></a>Chcete-li exportovat existující stránky SharePoint
 
@@ -117,7 +117,7 @@ ms.locfileid: "60110861"
 6. V **zadat nový zdroj projektu** stránce, přejděte do umístění v systému, kam jste uložili *.wsp* dříve souboru a klikněte na tlačítko **Další** tlačítko.
 
    > [!NOTE]
-   >  Pokud se rozhodnete **Dokončit** tlačítko na této stránce, všechny dostupné položky v *.wsp* naimportuje soubor.
+   > Pokud se rozhodnete **Dokončit** tlačítko na této stránce, všechny dostupné položky v *.wsp* naimportuje soubor.
 
 7. V **vybrat položky k importu** pole, zrušte zaškrtnutí všech políček v seznamu, s výjimkou **Test sloupec**a klikněte na tlačítko **Dokončit** tlačítko.
 

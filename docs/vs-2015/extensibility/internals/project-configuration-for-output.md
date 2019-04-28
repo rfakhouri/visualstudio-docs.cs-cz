@@ -10,12 +10,12 @@ ms.assetid: a4517f73-45af-4745-9d7f-9fddf887b636
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: a2b3a4e904fa6ca45dc207c4b713577b1e29f840
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: d14435917e982328220aa6b778d081a8837f0396
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54794850"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443882"
 ---
 # <a name="project-configuration-for-output"></a>Konfigurace projektu pro výstup
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ Všechny konfigurace může podporovat sadu procesy sestavení, které se vytvo�
  Konstrukce vypracovanou organizací cccppf implementace `IVsOutputGroup` umožňuje projekty do výstupů skupiny podle využití. Například knihovny DLL mohou být seskupeny s jeho databázi programu (PDB).  
   
 > [!NOTE]
->  Soubor PDB obsahuje informace o ladění a je vytvořen, pokud je zadán parametr "Generovat ladicí informace při sestavování .dll nebo .exe. Soubor PDB se obvykle generuje pro ladění pouze v konfiguraci projektu.  
+> Soubor PDB obsahuje informace o ladění a je vytvořen, pokud je zadán parametr "Generovat ladicí informace při sestavování .dll nebo .exe. Soubor PDB se obvykle generuje pro ladění pouze v konfiguraci projektu.  
   
  Projekt musí vracet stejný počet skupin pro každou konfiguraci, která ho podporuje, i když počet výstupů obsažena ve skupině, které se mohou lišit od konfigurace. Například Matt v projektu knihovny DLL může zahrnovat mattd.dll a mattd.pdb v konfiguraci ladění, ale pouze matt.dll v prodejní konfiguraci.  
   

@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: c45635da013f360ccbb1fe2343bca23a58f142c4
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59504104"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62557129"
 ---
 # <a name="get-started-sharepoint-development-in-visual-studio"></a>Získejte Začínáme (vývoj pro SharePoint v sadě Visual Studio)
   Tato část pomůže je začít využívat [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] pro vývoj řešení služby SharePoint, které budou využívat [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] a [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)].

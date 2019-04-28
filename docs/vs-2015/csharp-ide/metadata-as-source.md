@@ -15,12 +15,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8d1a4d269b0b7e1afb151bea5bbd97d5ab770d00
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 5883708d0ed32f636c5e229147676cf1545f8a47
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54791051"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444596"
 ---
 # <a name="metadata-as-source"></a>Metadata jako zdroj
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ ms.locfileid: "54791051"
 Metadata jako zdroj umožňuje zobrazit metadata, která se zobrazí jako zdrojový kód C# ve vyrovnávací paměti jen pro čtení. To umožňuje zobrazení deklarací typů a členů (bez implementace). Metadata jako zdroj můžete zobrazit spuštěním **přejít k definici** příkaz pro typy nebo členy, jejíž zdrojový kód není k dispozici v projektu nebo řešení.  
   
 > [!NOTE]
->  Při pokusu o spuštění **přejít k definici** příkaz pro typy nebo členy, které jsou označeny jako vnitřní, integrované vývojové prostředí (IDE) nezobrazuje jejich metadata jako zdroj, bez ohledu na to, jestli se odkazující sestavení je přítele či nikoli.  
+> Při pokusu o spuštění **přejít k definici** příkaz pro typy nebo členy, které jsou označeny jako vnitřní, integrované vývojové prostředí (IDE) nezobrazuje jejich metadata jako zdroj, bez ohledu na to, jestli se odkazující sestavení je přítele či nikoli.  
   
  Můžete zobrazit metadata jako zdroj v obou editoru kódu nebo **definice kódu** okna.  
   

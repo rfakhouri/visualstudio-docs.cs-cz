@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e99e07f2f39ef4e01a2b79e5a391c32f6510e3a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: bb72f491046d16f028561c19995a27a6ab64a830
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59232590"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62557299"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>Zásady vytváření názvů .NET pro EditorConfig
 
 Konvence pojmenování se týkají názvy prvků kódu, jako jsou třídy, vlastnosti a metody. Můžete například určit, že musí velkými písmeny veřejné členy nebo, že musí asynchronních metod končí slovem "Async". Tato pravidla můžete vynutit tak, že zadáte je do [souboru .editorconfig](../ide/create-portable-custom-editor-options.md). Pojmenování porušení pravidel se zobrazí v **seznam chyb** nebo jako návrh pod názvem, v závislosti na závažnosti se rozhodnete pro pravidlo. Není nutné pro sestavení projektu, chcete-li zobrazit porušení.
 
-Zásady vytváření názvů by měl být seřazené od specifické pro většinu nejméně na konkrétní v *.editorconfig* souboru. Je první pravidlo došlo k, který lze použít pouze pravidlo, které se použije.
+Zásady vytváření názvů by měl být seřazené od specifické pro většinu nejméně na konkrétní EditorConfig souboru. Je první pravidlo došlo k, který lze použít pouze pravidlo, které se použije. Nicméně pokud existuje více pravidel *vlastnosti* se stejným názvem, naposledy nalezena vlastnost s tímto názvem má přednost před. Další informace najdete v tématu [souborů hierarchie a Priorita](create-portable-custom-editor-options.md#file-hierarchy-and-precedence).
 
 Pro každé zásady vytváření názvů je nutné zadat symboly, které se vztahuje na, styl pojmenování a závažnost pro vynucení konvence, pomocí vlastností popsaných níže. Vlastnosti pořadí není důležité.
 

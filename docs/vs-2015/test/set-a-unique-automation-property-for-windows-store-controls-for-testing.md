@@ -8,12 +8,12 @@ ms.assetid: 9bdd74ff-2534-4fc7-a5c3-a77bf7843037
 caps.latest.revision: 12
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6ce207776fe2f3dfe00ddc764546a370dbb53dca
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a765896ef8b4eb645c04536105bc2284fc5c3d16
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60107032"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446055"
 ---
 # <a name="set-a-unique-automation-property-for-windows-store-controls-for-testing"></a>Nastavení jedinečné vlastnosti automatizace pro ovládací prvky pro Windows Store za účelem testování
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -80,7 +80,7 @@ Pokud chcete spustit programové testy UI pro aplikace Windows Store založenýc
  **Blend for Visual Studio:** Použijte jednu z následujících metod k tomu blendu for Visual Studio.  
   
 > [!NOTE]
->  Tuto metodu můžete použít pouze pro ovládací prvky, které jsou vytvořeny staticky pomocí XAML.  
+> Tuto metodu můžete použít pouze pro ovládací prvky, které jsou vytvořeny staticky pomocí XAML.  
   
  **Chcete-li zadejte jedinečný název pro existující ovládací prvky**  
   
@@ -136,7 +136,7 @@ Pokud chcete spustit programové testy UI pro aplikace Windows Store založenýc
  U obou těchto příkladech musí pak přepsat metodu ToString() vlastnost ItemSource, jak je znázorněno, pomocí následujícího kódu. Tento kód zajišťuje, že hodnota AutomationProperties.Name nastavena a je jedinečný, protože nelze nastavit jedinečnou vlastnost automatizace pro každou položku seznamu vázaného data pomocí vazby. Nastavení jedinečnou hodnotu pro automatizaci Properties.Name stačí v tomto případě.  
   
 > [!NOTE]
->  Tento přístup vnitřní obsah položky seznamu, můžete také nastavit na řetězec ve třídě zaměstnance pomocí vazby. Jak je znázorněno v příkladu, ovládací prvek tlačítko každou položku seznamu je přiřazen jedinečný automatizace id, které je ID zaměstnance.  
+> Tento přístup vnitřní obsah položky seznamu, můžete také nastavit na řetězec ve třídě zaměstnance pomocí vazby. Jak je znázorněno v příkladu, ovládací prvek tlačítko každou položku seznamu je přiřazen jedinečný automatizace id, které je ID zaměstnance.  
   
 ```  
   

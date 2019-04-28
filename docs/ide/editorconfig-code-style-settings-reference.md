@@ -16,12 +16,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 4d6bb7092dfbd9ef1d3d8263305496eef86e264b
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 3cdd9f0b46c578f713b7f2af2940f4d7742df19a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649805"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62557213"
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>EditorConfig nastavení konvence psaní kódu .NET
 
@@ -329,13 +329,14 @@ V následující tabulce jsou uvedeny názvy pravidel, pravidel ID, použitelné
 
 **dotnet\_style\_require\_accessibility_modifiers**
 
-Toto pravidlo nepřijímá **true** nebo **false** hodnota; místo toho přijímá hodnotu z následující tabulky:
+Toto pravidlo přijímá hodnotu z následující tabulky:
 
-| Value | Popis |
+| Hodnota | Popis |
 | ----- |:----------- |
 | Vždy | Modifikátory dostupnosti. Chcete-li zadat raději |
-| for\_non\_interface_members | Preferovat modifikátory deklarovat s výjimkou veřejné členy. To je stejný jako **vždy** a byla přidána pro budoucí kontroly pravopisu, pokud C# přidá výchozí metody rozhraní. |
+| for\_non\_interface_members | Preferovat modifikátory deklarovat s výjimkou veřejné členy. (To je stejný jako **vždy** a byla přidána kontroly pravopisu budoucnost if C# přidá výchozí metody rozhraní.) |
 | Nikdy | Nepreferovat modifikátory zadání |
+| omit_if_default | Preferovat modifikátory dostupnosti. Chcete-li být zadaný – s výjimkou jsou ve výchozím nastavení modifikátor |
 
 Příklady kódu:
 
@@ -1056,7 +1057,7 @@ public static ComplexNumber operator + (ComplexNumber c1, ComplexNumber c2)
 
 Toto pravidlo je možné zadat hodnoty v následující tabulce:
 
-| Value | Popis |
+| Hodnota | Popis |
 | ----- |:----------- |
 | true | Preferovat s výrazem v těle členy pro vlastnosti |
 | when_on_single_line | Raději s výrazem v těle členy pro vlastnosti, když bude se jednat o jeden řádek |
@@ -1076,7 +1077,7 @@ public int Age { get { return _age; }}
 
 Toto pravidlo je možné zadat hodnoty v následující tabulce:
 
-| Hodnota | Popis |
+| Value | Popis |
 | ----- |:----------- |
 | true | Preferovat členové tvoření pro indexery |
 | when_on_single_line | Členové tvoření pro indexery dáváte přednost, když bude se jednat o jeden řádek |
@@ -1515,7 +1516,7 @@ V následující tabulce jsou uvedeny "nový řádek" názvy pravidel použiteln
 
 Toto pravidlo se týká, zda levou složenou závorku `{` by měly být umístěny na stejném řádku jako předchozí kód, nebo na nový řádek. Pro toto pravidlo nezadáte **true** nebo **false**. Místo toho zadáte **všechny**, **žádný**, nebo jeden nebo více prvky kódu, jako **metody** nebo **vlastnosti**, chcete-li definovat, kdy by měla být toto pravidlo použít. Úplný seznam povolených hodnot je uveden v následující tabulce:
 
-| Hodnota | Popis
+| Value | Popis
 | ------------- |:-------------|
 | přístupové objekty, anonymous_methods, anonymous_types, control_blocks, události, indexery, výrazů lambda, local_functions, metody, object_collection_array_initializers, vlastnosti, typy.<br>(Pro více typů, oddělte ","). | Požadování složených na nový řádek pro zadaný kód elementy (označované také jako "Allman" styl) |
 | všechny | Požadování složených na nový řádek pro všechny výrazy ("Allman" styl) |
@@ -1780,7 +1781,7 @@ default:
 
 Toto pravidlo nepřijímá **true** nebo **false** hodnota; místo toho přijímá hodnotu z následující tabulky:
 
-| Value | Popis |
+| Hodnota | Popis |
 | ----- |:----------- |
 | flush_left | Popisky jsou umístěny ve sloupci nejvíce vlevo |
 | one_less_than_current | Popisky jsou umístěny na jednom méně odsazení aktuálního kontextu |
@@ -2010,7 +2011,7 @@ class C :I
 
 Toto pravidlo je možné zadat jednu hodnotu z následující tabulky:
 
-| Hodnota | Popis |
+| Value | Popis |
 | ----- |:------------|
 | before_and_after | Vložit mezeru před a za binární operátor |
 | žádná | Odebrat mezery před a za binární operátor |

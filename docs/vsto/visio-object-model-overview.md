@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: dbae3a1e003c0d9381b80fc24227e65a18c1c8f1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1ca692e85396b11647c507b18c95ca095b3f8072
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096553"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438761"
 ---
 # <a name="visio-object-model-overview"></a>Přehled modelu objektů aplikace Visio
   K vývoji řešení pro systém Office pro aplikaci Microsoft Office Visio, můžete pracovat s modelu objektů aplikace Visio. Tento objektový model se skládá z třídy a rozhraní, které jsou k dispozici ve primárního spolupracujícího sestavení pro aplikaci Visio a jsou definovány v `Microsoft.Office.Interop.Visio` oboru názvů.
@@ -67,7 +67,7 @@ ms.locfileid: "60096553"
  Všechny objekty a členy v referenční dokumentace objektového modelu VBA odpovídají typy a členy v aplikaci Visio primární definiční sestavení (PIA). Například `Document` objektů v referenční dokumentace objektového modelu VBA odpovídá typu Microsoft.Office.Interop.Visio.Document ve Visiu PIA. I když referenční dokumentace objektového modelu VBA poskytuje příklady kódu pro většinu vlastnosti, metody a události, musí překládat kód VBA v této referenční dokumentace jazyka Visual Basic nebo Visual C# Pokud chcete použít v projektu doplňku VSTO pro Visio, který vytvoříte pomocí Visual Studio.
 
 > [!NOTE]
->  V současné době neexistuje žádná referenční dokumentace pro Visio primární definiční sestavení.
+> V současné době neexistuje žádná referenční dokumentace pro Visio primární definiční sestavení.
 
  Související ukázky a další nástroje pro vytváření řešení pro aplikaci Visio, naleznete v tématu [sada Visio 2010](http://go.microsoft.com/fwlink/?LinkId=196501).
 

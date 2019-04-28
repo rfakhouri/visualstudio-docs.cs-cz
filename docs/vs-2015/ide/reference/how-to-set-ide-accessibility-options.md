@@ -11,12 +11,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 18f03e2bd37d8275685f34a65c9ab96740ed80a3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: dbd746a52084d2a2fc90a0c6890e20687fe7ee26
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60051618"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63405632"
 ---
 # <a name="how-to-set-ide-accessibility-options"></a>Postupy: Nastavení možností usnadnění přístupu v integrovaném vývojovém prostředí
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "60051618"
  Kromě toho [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] podporuje typech klávesnic, které nejčastěji zadávané znaky přístupnější. Můžete také přizpůsobit výchozí klávesové zkratky, který je k dispozici [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Další informace najdete v tématu [určení a přizpůsobení klávesových zkratek](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).  
   
 > [!NOTE]
->  Dialogová okna a příkazy nabídek, které vidíte, se mohou lišit od těch popsaných v nápovědě v závislosti na aktivních nastaveních nebo edici. Chcete-li změnit nastavení, zvolte **nastavení importu a exportu** na **nástroje** nabídky. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Dialogová okna a příkazy nabídek, které vidíte, se mohou lišit od těch popsaných v nápovědě v závislosti na aktivních nastaveních nebo edici. Chcete-li změnit nastavení, zvolte **nastavení importu a exportu** na **nástroje** nabídky. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="editors-dialogs-and-tool-windows"></a>Editorech, dialogových oken a nástroj pro Windows  
  Ve výchozím nastavení, dialogová okna a okna nástrojů v [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] použít stejnou velikost písma a barvy jako operační systém. Nastavení barev pro rámce IDE, dialogová okna, panely nástrojů a okna nástrojů jsou založeny barevném schématu: světlý nebo tmavý. Můžete změnit aktuální barvu motivu v [Obecné, prostředí, dialogové okno Možnosti](../../ide/reference/general-environment-options-dialog-box.md).  
@@ -63,7 +63,7 @@ ms.locfileid: "60051618"
 6. V **velikost**, vyberte novou velikost písma.  
   
     > [!NOTE]
-    >  Chcete-li obnovit velikost okna textových nástrojů a editory, zvolte **použít výchozí hodnoty**.  
+    > Chcete-li obnovit velikost okna textových nástrojů a editory, zvolte **použít výchozí hodnoty**.  
   
 7. Zvolte **OK**.  
   
@@ -71,7 +71,7 @@ ms.locfileid: "60051618"
  Můžete také změnit výchozí barvy pro text, okraj ukazatele, prázdné znaky a prvky kódu v editoru.  
   
 > [!NOTE]
->  Chcete-li použít vysoký kontrast – barvy pro všechny aplikace pro windows v operačním systému, stiskněte vlevo <strong>ALT +</strong>vlevo **SHIFT + PRINT SCREEN**. Pokud [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] je otevřete, zavřete a znovu otevřít [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] plně implementovat vysoký kontrast – barvy.  
+> Chcete-li použít vysoký kontrast – barvy pro všechny aplikace pro windows v operačním systému, stiskněte vlevo <strong>ALT +</strong>vlevo **SHIFT + PRINT SCREEN**. Pokud [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] je otevřete, zavřete a znovu otevřít [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] plně implementovat vysoký kontrast – barvy.  
   
 ##### <a name="to-change-the-color-of-items-in-the-editor"></a>Chcete-li změnit barva položek v editoru  
   

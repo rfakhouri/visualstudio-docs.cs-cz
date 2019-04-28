@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f6a9b62c62b863448bb1333b162c6706c48cd72b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1b5a4152d655dd36eb258ff6b378bf79f87123a8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071756"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443824"
 ---
 # <a name="walkthrough-display-text-in-a-text-box-in-a-document-using-a-button"></a>Návod: Zobrazení textu v textovém poli v dokumentu s použitím tlačítka
   Tento návod ukazuje, jak pomocí tlačítka a textová pole v přizpůsobení na úrovni dokumentu pro aplikaci Microsoft Office Word.
@@ -60,7 +60,7 @@ ms.locfileid: "60071756"
 2. Z **běžné ovládací prvky** karty **nástrojů**, přetáhněte <xref:Microsoft.Office.Tools.Word.Controls.TextBox> ovládací prvek v dokumentu.
 
    > [!NOTE]
-   >  V aplikaci Word, se zahodí ovládacích prvků v řádku s textem ve výchozím nastavení. Můžete upravit způsob, jak ovládací prvky a shape – objekty jsou vloženy tak, že změníte výchozí na **upravit** karty **možnosti** dialogové okno v aplikaci Word.
+   > V aplikaci Word, se zahodí ovládacích prvků v řádku s textem ve výchozím nastavení. Můžete upravit způsob, jak ovládací prvky a shape – objekty jsou vloženy tak, že změníte výchozí na **upravit** karty **možnosti** dialogové okno v aplikaci Word.
 
 3. Na **zobrazení** nabídky, klikněte na tlačítko **okno vlastností**.
 

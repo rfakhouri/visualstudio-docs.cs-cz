@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f20b090f880168b3561cba547db319813ba3fe02
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: 3e5800a6de15d2d59208022fa44d3c2f4c931e14
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58148070"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446579"
 ---
 # <a name="idebugdocumenthostgetdeferredtext"></a>IDebugDocumentHost::GetDeferredText
 Vrátí rozsah znaků, které byly přidány pomocí `IDebugDocumentHelper::AddDeferredText` metoda v původním dokumentu hostitele.  
@@ -58,7 +58,7 @@ HRESULT GetDeferredText(
 ## <a name="return-value"></a>Návratová hodnota  
  Metoda vrátí `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
   
-|Hodnota|Popis|  
+|Value|Popis|  
 |-----------|-----------------|  
 |`S_OK`|Metoda byla úspěšná.|  
 |`E_NOTIMPL`|Metoda není implementována.|  
@@ -67,7 +67,7 @@ HRESULT GetDeferredText(
  Tato metoda může vrátit `E_NOTIMPL`, pokud hostitel nevolá `IDebugDocumentHelper::AddDeferredText`.  
   
 > [!NOTE]
->  Tato metoda vrátí text z původního dokumentu. Hostitel není udržovat přehled o úpravy nebo další změny v dokumentu.  
+> Tato metoda vrátí text z původního dokumentu. Hostitel není udržovat přehled o úpravy nebo další změny v dokumentu.  
   
 ## <a name="see-also"></a>Viz také  
  [Idebugdocumenthost – rozhraní](../../winscript/reference/idebugdocumenthost-interface.md)   

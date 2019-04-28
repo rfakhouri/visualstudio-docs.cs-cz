@@ -19,12 +19,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ae91a057dc983044caa9544030571a8be34deef7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8d1991ad3b99e3ab46e6ebea527ff839ef960ac7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60048072"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441112"
 ---
 # <a name="accessibility-products-and-services-from-microsoft"></a>Produkty a služby usnadnění přístupu od společnosti Microsoft
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ Microsoft usiluje o usnadnění svých produktů a služeb pro každodenní pou�
 - [Další informace](../../ide/reference/accessibility-products-and-services-from-microsoft.md#moreinfo)  
   
 > [!NOTE]
->  Informace v této části mohou platit pouze pro uživatele, kteří licencují produkty společnosti Microsoft ve Spojených státech. Pokud jste získali mimo Spojené státy tento produkt, můžete použít kartu s informacemi o pobočkách, která byla součástí vašeho softwarového balíčku, nebo navštívit [webu Microsoft Accessibility](http://go.microsoft.com/fwlink/?LinkId=8431) služby podpory společnosti Microsoft telefonních čísel a adres. Můžete se obrátit na pobočku společnosti a zjistěte, zda typu produktů a služeb popsaných v této části jsou k dispozici ve vaší oblasti. Informace o usnadnění jsou k dispozici v dalších jazycích včetně japonštiny a francouzštiny.  
+> Informace v této části mohou platit pouze pro uživatele, kteří licencují produkty společnosti Microsoft ve Spojených státech. Pokud jste získali mimo Spojené státy tento produkt, můžete použít kartu s informacemi o pobočkách, která byla součástí vašeho softwarového balíčku, nebo navštívit [webu Microsoft Accessibility](http://go.microsoft.com/fwlink/?LinkId=8431) služby podpory společnosti Microsoft telefonních čísel a adres. Můžete se obrátit na pobočku společnosti a zjistěte, zda typu produktů a služeb popsaných v této části jsou k dispozici ve vaší oblasti. Informace o usnadnění jsou k dispozici v dalších jazycích včetně japonštiny a francouzštiny.  
   
 ## <a name="windows"></a> Funkce usnadnění systému Windows  
  Operační systém Windows obsahuje mnoho vestavěných funkcí usnadnění, které jsou užitečné pro uživatele, kteří mají potíže se psaním nebo používáním myši, jsou nevidomí, nebo mají slabý zrak nebo kteří jsou osoby neslyšící či s vadou sluchu. Tyto funkce jsou instalovány během instalace. Další informace o těchto funkcích naleznete v nápovědě ve Windows a [webu Microsoft Accessibility](http://go.microsoft.com/fwlink/?LinkId=8431).  

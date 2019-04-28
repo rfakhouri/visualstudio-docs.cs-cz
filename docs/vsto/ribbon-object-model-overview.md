@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5958eb6fb8fd14dd510fa87d900efa76cb6f6a87
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 83f906ad9e5ded349250fe5324076527975c9bf6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040713"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446994"
 ---
 # <a name="ribbon-object-model-overview"></a>Přehled modelu objektů pásu karet
   [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Poskytuje model silně typovaných objektů, které můžete použít k získání a nastavení vlastností ovládacích prvků pásu karet za běhu. Například můžete dynamicky naplnit ovládací prvky nabídky nebo zobrazení a skrytí ovládacích prvků kontextově. Také můžete přidat karty, skupiny a ovládací prvky na pás karet, ale pouze před načtení aplikací Office. Informace najdete v tématu [nastavit vlastnosti, které budou jen pro čtení](#SettingReadOnlyProperties).
@@ -130,7 +130,7 @@ ms.locfileid: "60040713"
  V následující tabulce jsou uvedeny vlastnosti, které lze nastavit pouze před na pásu karet.
 
 > [!NOTE]
->  Kdykoli můžete nastavit vlastnosti ovládacích prvků na dynamické nabídky. Tato tabulka se nedá použít v tomto případě.
+> Kdykoli můžete nastavit vlastnosti ovládacích prvků na dynamické nabídky. Tato tabulka se nedá použít v tomto případě.
 
 |Vlastnost|Třída ovládacích prvků pásu karet|
 |--------------|--------------------------|
@@ -163,7 +163,7 @@ ms.locfileid: "60040713"
  Pokud máte podmíněnou logiku, která nastavuje některý z těchto vlastností na jinou hodnotu při vytváření dalších instancí na pásu karet, tento kód nebude mít žádný efekt.
 
 > [!NOTE]
->  Ujistěte se, **název** je nastavena pro každý ovládací prvek, který přidáte do pásu karet aplikace Outlook. Pokud přidáte ovládací prvek do aplikace Outlook pásu karet za běhu, musíte tuto vlastnost nastavíte v kódu. Pokud přidáte ovládací prvek na pásu karet aplikace Outlook v době návrhu, je automaticky nastavit vlastnost Name.
+> Ujistěte se, **název** je nastavena pro každý ovládací prvek, který přidáte do pásu karet aplikace Outlook. Pokud přidáte ovládací prvek do aplikace Outlook pásu karet za běhu, musíte tuto vlastnost nastavíte v kódu. Pokud přidáte ovládací prvek na pásu karet aplikace Outlook v době návrhu, je automaticky nastavit vlastnost Name.
 
 ## <a name="ribbon-control-events"></a>Události ovládacích prvků pásu karet
  Každá třída ovládací prvek obsahuje jeden nebo více událostí. Následující tabulka popisuje tyto události.

@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3340c55b99f9d2507bb129eff689cc1b510843f5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e170a5ed703a9bf5aae2e73126de52ecf88e8084
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60094395"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443517"
 ---
 # <a name="debug-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Ladění rozšíření pro nástroje služby SharePoint v sadě Visual Studio
   Můžete ladit rozšíření nástrojů SharePoint v experimentální instanci nebo pravidelné instanci aplikace Visual Studio. Pokud je potřeba Poradce při potížích s chováním rozšíření, můžete také změnit hodnoty registru, chcete-li zobrazit další informace o chybě a nakonfigurujte, jak Visual Studio provede příkazy serveru SharePoint.
@@ -102,7 +102,7 @@ ms.locfileid: "60094395"
 3. V **procesy k dispozici** klikněte na položku *vssphost.exe*.
 
     > [!NOTE]
-    >  Pokud se vssphost.exe v seznamu nezobrazí, je nutné spustit *vssphost4.exe* zpracovat v instanci aplikace Visual Studio, ve kterém jsou spuštěna rozšíření. Obvykle to provedete pomocí provádí akci, která způsobí, že Visual Studio pro připojení k webu služby SharePoint ve vývojovém počítači. Například Visual Studio spustí *vssphost4.exe* po rozbalení uzlu připojení k webu (uzel, který zobrazuje adresu URL webu) pod **připojení služby SharePoint** uzlu **Průzkumníka serveru**  okna, nebo když přidáte určité položky projektu služby SharePoint, jako například **instanci seznamu** nebo **příjemce událostí** položky projektu služby SharePoint.
+    > Pokud se vssphost.exe v seznamu nezobrazí, je nutné spustit *vssphost4.exe* zpracovat v instanci aplikace Visual Studio, ve kterém jsou spuštěna rozšíření. Obvykle to provedete pomocí provádí akci, která způsobí, že Visual Studio pro připojení k webu služby SharePoint ve vývojovém počítači. Například Visual Studio spustí *vssphost4.exe* po rozbalení uzlu připojení k webu (uzel, který zobrazuje adresu URL webu) pod **připojení služby SharePoint** uzlu **Průzkumníka serveru**  okna, nebo když přidáte určité položky projektu služby SharePoint, jako například **instanci seznamu** nebo **příjemce událostí** položky projektu služby SharePoint.
 
 4. Zvolte **připojit** tlačítko.
 
@@ -119,7 +119,7 @@ ms.locfileid: "60094395"
 
  Pokud vaše rozšíření obsahuje příkaz SharePoint, můžete vytvořit a nastavit další hodnoty, které vám pomohou vyřešit příkazu. Následující tabulka popisuje tyto hodnoty.
 
-|Hodnota|Popis|
+|Value|Popis|
 |-----------|-----------------|
 |AttachDebuggerToHostProcess|REG_DWORD, která určuje, jestli se má zobrazit dialogové okno, která umožňuje připojit ladicí program k *vssphost4.exe* ihned po jeho spuštění. To je užitečné, pokud příkaz, který chcete ladit, je spuštěn ve vssphost.exe ihned po svém spuštění a není k dispozici dostatek času ručně připojit ladicí program před provedením příkazu. Chcete-li zobrazit dialogové okno, *vssphost4.exe* volání <xref:System.Diagnostics.Debugger.Break%2A> při spuštění metodu.<br /><br /> Pokud chcete povolit toto chování, nastavte tuto hodnotu na 1. Chcete-li toto chování vypnout, nastavte tuto hodnotu na 0 nebo tuto hodnotu odstraňte.<br /><br /> Pokud nastavíte tuto hodnotu na 1, můžete také chtít zvýšit hodnotu HostProcessStartupTimeout, abyste měli dostatek času na připojení ladicího programu, než se očekává, že Visual Studio *vssphost4.exe* signál, že je úspěšně spuštěn.|
 |ChannelOperationTimeout|REG_DWORD, která určuje dobu v sekundách, po který Visual Studio čeká na provedení příkazu SharePoint. Pokud příkaz nespustí včas, <xref:Microsoft.VisualStudio.SharePoint.SharePointConnectionException> je vyvolána výjimka.<br /><br /> Výchozí hodnota je 120 sekund.|

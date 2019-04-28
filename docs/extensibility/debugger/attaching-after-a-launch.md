@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b5c763e18f30bec27837e248a27546df821ef33f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1b0a34505cf32e0e3fd4dc18bfeab4588856dba4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60065581"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63409953"
 ---
 # <a name="attach-after-a-launch"></a>Připojit po spuštění
 Po spuštění programu, relace ladění je připraven k připojení ladicího stroje (DE) do uvedeného programu.
@@ -28,7 +28,7 @@ Po spuštění programu, relace ladění je připraven k připojení ladicího s
 - Pokud to dává větší smysl nastavení komunikace mezi DE a program, vytvoří prostředí run-time společně DE. Tento návrh opustí SDM v jeden adresní prostor DE, běhové prostředí a program společně v jiném. Tento návrh je typický pro Zavedenými, které je implementováno s interpretu pro spuštění skriptovací jazyky.
 
     > [!NOTE]
-    >  Jak DE připojí k programu je závislý na implementaci. Komunikace mezi DE a program je také závislý na implementaci.
+    > Jak DE připojí k programu je závislý na implementaci. Komunikace mezi DE a program je také závislý na implementaci.
 
 ## <a name="implementation"></a>Implementace
  Prostřednictvím kódu programu, když správce ladění relace (SDM) nejprve obdrží [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) objektu, který představuje program spustit, volá [připojit](../../extensibility/debugger/reference/idebugprogram2-attach.md) metodu předáním [ IDebugEventCallback2](../../extensibility/debugger/reference/idebugeventcallback2.md) objektu, který je pozdější sloužící k předávání výjimky ladění zpět do SDM. `IDebugProgram2::Attach` Pak zavolá metodu [OnAttach](../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) metody. Další informace o způsobu SDM přijímá `IDebugProgram2` rozhraní najdete v tématu [upozornění portu](../../extensibility/debugger/notifying-the-port.md).
