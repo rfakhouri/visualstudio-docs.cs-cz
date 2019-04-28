@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 501818d000b2db69b0744649d8e4a472cb87a55b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56627711"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62982587"
 ---
 # <a name="querycounters"></a>QueryCounters
 **QueryCounters** Vypíše seznam čítačů výkonu procesoru (hardware), které jsou k dispozici v počítači.
@@ -27,7 +27,7 @@ VSPerfCmd.exe /QueryCounters
 ```
 
 #### <a name="parameters"></a>Parametry
- Žádná
+ Žádné
 
 ## <a name="remarks"></a>Poznámky
  Při použití metody instrumentace profileru můžete shromažďovat hodnoty jedné nebo více čítačů výkonu procesoru na každou událost shromažďování dat. Při použití metoda profilování vzorkování, můžete zadat jeden čítače událostí a počet výskytů události má být použit jako interval vzorkování.
