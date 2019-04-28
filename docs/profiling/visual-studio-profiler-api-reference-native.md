@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 3f0071e98c9e36f3af11d318f480b4b9c6ec4cc1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56615218"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62822817"
 ---
 # <a name="visual-studio-profiler-api-reference-native"></a>Visual Studio profiler API reference (nativní)
 Rozhraní API profileru Visual Studio umožňují programově řídit objemu shromážděných dat a vkládání značek časovým razítkem a profil během profilace. Použití nativních rozhraní API, můžete zahrnout *VSPerf.h* záhlaví a přidejte *VSPerf.lib* ve vašem projektu.

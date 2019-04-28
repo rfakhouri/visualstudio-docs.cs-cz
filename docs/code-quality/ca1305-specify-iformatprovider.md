@@ -17,11 +17,11 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: b96ca08b51bb5145357ef921bde753e133062203
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57868005"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62797535"
 ---
 # <a name="ca1305-specify-iformatprovider"></a>CA1305: Určete IFormatProvider
 
@@ -32,7 +32,7 @@ ms.locfileid: "57868005"
 |Kategorie|Microsoft.Globalization|
 |Narušující změna|Nenarušující|
 
-## <a name="cause"></a>příčina
+## <a name="cause"></a>Příčina
 
 Metoda nebo konstruktor volá jeden nebo více členů, které mají přetížení <xref:System.IFormatProvider?displayProperty=fullName> parametr a tato metoda nebo konstruktor nevolá přetížení přebírající <xref:System.IFormatProvider> parametru.
 

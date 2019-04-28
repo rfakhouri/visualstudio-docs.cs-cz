@@ -31,11 +31,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 58691d5c6a7f44361d40a50898395ed1200a06c6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60064363"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62817633"
 ---
 # <a name="link-task"></a>odkaz – úloha
 Zabalí nástroj linker Visual C++ *link.exe*. Nástroj linker propojení objektových souborů Common Object File Format (COFF) a knihovny, které chcete vytvořit spustitelný soubor (*.exe*) soubor nebo dynamická knihovna (DLL). Další informace najdete v tématu [možnosti Linkeru](/cpp/build/reference/linker-options).

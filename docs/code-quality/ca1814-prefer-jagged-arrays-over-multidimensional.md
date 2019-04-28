@@ -18,11 +18,11 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: 6d3dc26964a62c952b9c8d18c710e6163bf8ab08
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955320"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62796914"
 ---
 # <a name="ca1814-prefer-jagged-arrays-over-multidimensional"></a>CA1814: Upřednostněte vícenásobná pole před multidimenzionálními
 
@@ -33,7 +33,7 @@ ms.locfileid: "55955320"
 |Kategorie|Microsoft.Performance|
 |Narušující změna|Narušující|
 
-## <a name="cause"></a>příčina
+## <a name="cause"></a>Příčina
  Člen je deklarovaný jako multidimenzionálního pole.
 
 ## <a name="rule-description"></a>Popis pravidla

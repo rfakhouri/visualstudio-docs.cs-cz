@@ -1,18 +1,12 @@
 ---
 layout: LandingPage
 title: Nasazení aplikací | Dokumentace Microsoftu
-description: Zjistěte, jak pomocí sady Visual Studio k nasazení aplikací, služeb a komponent.
+description: 'Zjistěte, jak pomocí sady Visual Studio k nasazení aplikací, služeb a komponent.'
 ms.custom: seodec18
 ms.topic: landing-page
 ms.author: mikejo
 author: mikejo5000
 manager: jillfra
-ms.openlocfilehash: b1ffebc17d7915c7845a27cc2864623fa2f2d263
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
-ms.translationtype: MT
-ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58325013"
 ---
 # <a name="deployment-in-visual-studio"></a>Nasazení v sadě Visual Studio
 
@@ -291,7 +285,7 @@ Visual Studio poskytuje několik různých nástrojů, které vám pomohou při 
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Nasazení C + +/ CLR aplikace</h3>
+                        <h3>Nasazení C++aplikace/CLR</h3>
                     </div>
                 </div>
             </div>

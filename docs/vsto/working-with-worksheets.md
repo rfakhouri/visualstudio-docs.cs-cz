@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 1f518a3d6e271c4f457e50ad6f9affcc3afccdf9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56612501"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62814586"
 ---
 # <a name="work-with-worksheets"></a>Práce s listy
   <xref:Microsoft.Office.Tools.Excel.Worksheet> a <xref:Microsoft.Office.Interop.Excel.Worksheet> obsahují třídy, metody a vlastnosti, které můžete použít k provádění úloh s listy.

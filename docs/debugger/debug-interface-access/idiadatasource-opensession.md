@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 393abb3b1e1872a416865cbfee5c142bef98ce78
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56637071"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62838451"
 ---
 # <a name="idiadatasourceopensession"></a>IDiaDataSource::openSession
 Otevře relaci pro dotazování na symboly.
@@ -38,7 +38,7 @@ ppSession
 ## <a name="return-value"></a>Návratová hodnota
 Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby. V následující tabulce jsou uvedeny možné návratové hodnoty pro tuto metodu.
 
-|Hodnota|Popis|
+|Value|Popis|
 |-----------|-----------------|
 |E_UNEXPECTED, JE-|[Idiadatasource –](../../debugger/debug-interface-access/idiadatasource.md) objekt nebyl inicializován dříve se zdrojem symboly.|
 |E_INVALIDARG|Neplatný `ppSession` parametru.|

@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 7220e435090cc688d32a2d6d26917a8c05510d4f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56687910"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62806106"
 ---
 # <a name="parent-element"></a>Nadřazený element
 Nadřazené tlačítko nebo pole se seznamem pole může být pouze skupinu. Nadřazené nabídky nebo skupina může být jiné nabídky nebo skupiny. V [commandplacement – element](../extensibility/commandplacement-element.md), tento element je povinná hodnota. v ostatních instancích je volitelný. Pokud tento prvek je vynechán, nadřazený `Group_Undefined:0` bude implicitní.
@@ -38,7 +38,7 @@ Nadřazené tlačítko nebo pole se seznamem pole může být pouze skupinu. Nad
 |id|Povinný parametr. Identifikátor ID identifikátoru GUID a ID příkazu.|
 
 ### <a name="child-elements"></a>Podřízené prvky
- Žádná
+ Žádný
 
 ### <a name="parent-elements"></a>Nadřazené prvky
 

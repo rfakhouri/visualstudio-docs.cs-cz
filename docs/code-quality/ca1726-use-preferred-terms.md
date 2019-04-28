@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 469025e5856f284f4d8887b351865a0304e4d35c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55917309"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62797155"
 ---
 # <a name="ca1726-use-preferred-terms"></a>CA1726: Použijte upřednostňované výrazy
 
@@ -29,7 +29,7 @@ ms.locfileid: "55917309"
 |Kategorie|Microsoft.Naming|
 |Narušující změna|Zásadní - při vyvolání na sestavení<br /><br /> Bez konce – při vyvolání na parametry typu|
 
-## <a name="cause"></a>příčina
+## <a name="cause"></a>Příčina
 
 Název externě viditelného identifikátoru zahrnuje výraz, pro který existuje alternativní upřednostňovaný výraz. Nebo název obsahuje také výraz příznak nebo příznaky.
 

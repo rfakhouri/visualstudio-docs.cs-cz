@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6a644cf3dc934676a14f1c5c59a6582fcd45ae7d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55941150"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62806651"
 ---
 # <a name="ca2219-do-not-raise-exceptions-in-exception-clauses"></a>CA2219: Nevyvolávejte výjimky v klauzulích výjimky
 
@@ -30,7 +30,7 @@ ms.locfileid: "55941150"
 |Kategorie|Microsoft.Usage|
 |Narušující změna|Pevné dopadem na dřívější kód|
 
-## <a name="cause"></a>příčina
+## <a name="cause"></a>Příčina
  Z je vyvolána výjimka `finally`, filtr nebo klauzule fault.
 
 ## <a name="rule-description"></a>Popis pravidla

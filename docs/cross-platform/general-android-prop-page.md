@@ -23,11 +23,11 @@ f1_keywords:
 ms.workload:
 - xplat-cplusplus
 ms.openlocfilehash: 4bb6f26fe40b639b43cb803577a785fa9b48823d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54949906"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62818944"
 ---
 # <a name="general-project-properties-android-c"></a>Obecné vlastnosti projektů (Android C++)
 
@@ -42,5 +42,5 @@ Soubor protokolu sestavení | Určuje soubor protokolu sestavení pro zápis př
 Sada nástrojů platformy | Určuje, nástrojů pro sestavení aktuální konfigurace. Pokud není využito set, výchozí sady nástrojů
 Typ konfigurace | Určuje typ výstupu generovaného touto konfigurací. | **Dynamická knihovna (.so)** – dynamická knihovna (*.so*)<br>**Statická knihovna (.a)** – statická knihovna (*.a*)<br>**Nástroj** – nástroj<br>**Soubor pravidel** -souboru pravidel<br>
 Cílová úroveň rozhraní API | Android NDK rozhraní API: úroveň kterou míří tato konfigurace.
-Použití STL | Určuje, která standardní knihovna C++ použít pro tuto konfiguraci. | **Minimální knihovny prostředí runtime jazyka C++ (systém)**<br>**Statická knihovna runtime jazyka C++ (gabi ++ _static)**<br>**Sdílená knihovna runtime jazyka C++ (gabi ++ _shared)**<br>**Sdílená knihovna běhového prostředí stlport (stlport_static)**<br>**Sdílená knihovna běhového prostředí (stlport stlport_shared)**<br>**Statická knihovna GNU STL (gnustl_static)**<br>**Sdílená knihovna GNU STL (gnustl_shared)**<br>**Knihovna LLVM libc ++ statické (c ++ _static)**<br>**Knihovna LLVM libc ++ sdílené (c ++ _shared)**<br>
+Použití STL | Určuje, která standardní knihovna C++ použít pro tuto konfiguraci. | **Minimální knihovny prostředí runtime jazyka C++ (systém)**<br>**C++prostředí stlport (gabi ++ _static)**<br>**C++sdílená knihovna běhového (gabi ++ _shared)**<br>**Sdílená knihovna běhového prostředí stlport (stlport_static)**<br>**Sdílená knihovna běhového prostředí (stlport stlport_shared)**<br>**Statická knihovna GNU STL (gnustl_static)**<br>**Sdílená knihovna GNU STL (gnustl_shared)**<br>**Knihovna LLVM libc ++ statické (c ++ _static)**<br>**Knihovna LLVM libc ++ sdílené (c ++ _shared)**<br>
 Režim thumb | Generovat kód, který spouští pro mikroarchitekturu thumb. To platí jenom pro architekturu arm. | **Miniatury**<br>**Arm**<br>**Disabled** (Zakázáno)<br>

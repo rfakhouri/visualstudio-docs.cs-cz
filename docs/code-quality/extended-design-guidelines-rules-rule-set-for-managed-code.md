@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: e54a031e69957579974e67af124b0e88a0d95abb
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55918166"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62816608"
 ---
 # <a name="extended-design-guidelines-rules-rule-set-for-managed-code"></a>Sada pravidel Rozšířená pravidla pokynů návrhu pro spravovaný kód
 Sada pravidel pravidla obecných zásad rozšířené návrhu Microsoft rozšiřuje možnosti návrhu základní pravidla obecných zásad pro maximalizaci problémů použitelnosti a udržovatelnosti, které jsou hlášeny. Je kladen zvláštní důraz na pokyny pro pojmenování. Zvažte zahrnutí této sady, pokud váš projekt zahrnuje kód knihovny nebo pokud chcete zajistit nejvyšší standardy pro psaní kódu, který se snadnou údržbou pravidel.

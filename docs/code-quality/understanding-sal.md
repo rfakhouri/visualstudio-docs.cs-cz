@@ -8,12 +8,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f79796d186f5a365c37a8e24a3e523aba7ceb72
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MT
+ms.openlocfilehash: f306e0a30dc8faa8f961cb7096a31a049547a70e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55946649"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62820403"
 ---
 # <a name="understanding-sal"></a>Porozumění SAL
 
@@ -110,9 +110,9 @@ Tato implementace obsahuje běžnou chybou vypnuto po druhém. Naštěstí kódu
 
 #### <a name="to-use-visual-studio-code-analysis-tools-and-sal"></a>Použití nástrojů pro analýzu kódu sady Visual Studio a SAL
 
-1.  V sadě Visual Studio otevřete projekt C++ obsahující poznámky SAL.
+1. V sadě Visual Studio otevřete projekt C++ obsahující poznámky SAL.
 
-2.  V panelu nabídky zvolte **sestavení**, **spustit analýzu kódu na řešení**.
+2. V panelu nabídky zvolte **sestavení**, **spustit analýzu kódu na řešení**.
 
      Vezměte v úvahu \_v\_ příklad v této části. Je-li spustit analýzu kódu na ni, toto upozornění se zobrazí:
 
@@ -122,15 +122,15 @@ Tato implementace obsahuje běžnou chybou vypnuto po druhém. Naštěstí kódu
 
 `_In_` Anotace označuje, že:
 
--   Parametr musí být platná a se nezmění.
+- Parametr musí být platná a se nezmění.
 
--   Funkce přečte pouze z vyrovnávací paměti jedním prvkem.
+- Funkce přečte pouze z vyrovnávací paměti jedním prvkem.
 
--   Volající musí poskytnout vyrovnávací paměti a inicializujte ji.
+- Volající musí poskytnout vyrovnávací paměti a inicializujte ji.
 
--   `_In_` Určuje "jen pro čtení". Běžná chyba spočívá v použití `_In_` pro parametr, který by měl mít `_Inout_` anotace místo.
+- `_In_` Určuje "jen pro čtení". Běžná chyba spočívá v použití `_In_` pro parametr, který by měl mít `_Inout_` anotace místo.
 
--   `_In_` je povoleno, ale ignoruje Analyzer na typech bez ukazatele skaláry.
+- `_In_` je povoleno, ale ignoruje Analyzer na typech bez ukazatele skaláry.
 
 ```cpp
 void InCallee(_In_ int *pInt)

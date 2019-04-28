@@ -1,5 +1,5 @@
 ---
-title: Fragmentů XML
+title: Fragmenty kódu XML
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 348dbf64-3f09-4fff-b47a-a7ecdf3221cc
@@ -9,13 +9,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 66736431b295f974bda1ca855d88cd5f5f868e7d
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526152"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62807714"
 ---
-# <a name="xml-snippets"></a>Fragmentů XML
+# <a name="xml-snippets"></a>Fragmenty kódu XML
 
 XML editor nabízí funkci *fragmentů XML*, který umožňuje rychlejší vytváření souborů XML. Můžete znovu použít fragmentů XML tak, že vloží do vašich souborů. Můžete také vygenerovat XML dat založené na jazyk (XSD) schématu definice schématu XML.
 

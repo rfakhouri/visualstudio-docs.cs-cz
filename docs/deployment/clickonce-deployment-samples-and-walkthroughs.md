@@ -18,11 +18,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 651f981117cdd9b9cfb26aae61bbd4e2747e921d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55018368"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62900383"
 ---
 # <a name="clickonce-deployment-samples-and-walkthroughs"></a>Ukázky nasazení ClickOnce a podrobné návody
 Tato část obsahuje ukázkové aplikace, ukázkový kód a podrobné návody, které ukazují syntaxi, struktury a techniky, které jsou používány k nasazení Windows Forms, WPF a konzolové aplikace.

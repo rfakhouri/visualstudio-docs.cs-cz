@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 75b518e1bf59ebd0e92d7cef311277ccf7d98c82
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096748"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62815834"
 ---
 # <a name="how-to-run-code-analysis-manually-for-managed-code"></a>Postupy: Ruční spuštění analýzy kódu pro spravovaný kód
 Nástroj pro analýzu kódu vám poskytuje informace o možných chyb ve zdrojovém kódu. Můžete spustit analýzu kódu automaticky s každým sestavením projektu kódu a můžete také spustit analýzu kódu ručně. Pravidla, která jsou kontrolována při spuštění analýzy kódu jsou určeny na stránce analýzy kódu stránky vlastností projektu. Další informace najdete v tématu [jak: Konfigurace analýzy kódu pro spravovaný projekt kódu](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)

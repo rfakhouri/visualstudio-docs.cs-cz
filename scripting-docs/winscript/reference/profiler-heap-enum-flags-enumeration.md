@@ -12,11 +12,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: d613ed3bcb4699f20d521f08b6c34d55d8363ba4
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58152782"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62830354"
 ---
 # <a name="profilerheapenumflags-enumeration"></a>PROFILER_HEAP_ENUM_FLAGS – výčet
 Příznak, který označuje, zda je přístupný dodatečné informace o objektu haldy, na který je odkazováno v objektovém vztahu. Používáno [EnumHeap2](../../winscript/reference/iactivescriptprofilercontrol5-enumheap2-method.md) metody.  
@@ -29,7 +29,7 @@ typedef [v1_enum] enum {    PROFILER_HEAP_ENUM_FLAGS_NONE                      =
   
 ## <a name="members"></a>Členové  
   
-|Člen|Hodnota|Popis|  
+|Člen|Value|Popis|  
 |------------|-----------|-----------------|  
 |PROFILER_HEAP_ENUM_FLAGS_NONE|0x00000000|Tento objekt haldy nemůže vystavovat další informace o vztahu objektu. Tento objekt haldy se chová stejně jako [IActiveScriptProfilerControl3::HeapEnum](../../winscript/reference/iactivescriptprofilercontrol3-enumheap-method.md).|  
 |PROFILER_HEAP_ENUM_ENUM_ STORE_RELATIONSHIP_FLAGS|0x00000001|Tento objekt haldy bude vystavovat informace o tom, zda je objekt, na který je odkazováno v objektovém vztahu, metoda getter nebo setter. Tyto informace budou uloženy ve výšce 2 bajtů (16 bitů) z [PROFILER_HEAP_OBJECT_RELATIONSHIP.relationshipInfo](../../winscript/reference/profiler-heap-object-relationship-structure.md) pole jako jeden z [profiler_heap_object_relationship_flags –](../../winscript/reference/profiler-heap-object-relationship-flags-enumeration.md) hodnoty výčtu.|  

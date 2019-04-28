@@ -12,11 +12,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: a1652c6ebffff88782ffcc879158a5142f22395d
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58151190"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62823811"
 ---
 # <a name="profilerheapobject-structure"></a>PROFILER_HEAP_OBJECT – struktura
 Shromážděné objekty halda představuje [iactivescriptprofilercontrol3::enumheap – metoda](../../winscript/reference/iactivescriptprofilercontrol3-enumheap-method.md).  
@@ -31,7 +31,7 @@ typedef struct _PROFILER_HEAP_OBJECT
   
 ## <a name="members"></a>Členové  
   
-|Člen|Typ|Popis|  
+|Člen|Type|Popis|  
 |------------|----------|-----------------|  
 |ID objektu|[PROFILER_HEAP_OBJECT_ID – typ](../../winscript/reference/profiler-heap-object-id-type.md)|ID objektu haldy.|  
 |externalObjectAddress|[PROFILER_EXTERNAL_OBJECT_ADDRESS – typ](../../winscript/reference/profiler-external-object-address-type.md)|Adresa externí objekt objektu, například objekt přidělený C++, mimo haldu využívanou jazykem JavaScript.|  

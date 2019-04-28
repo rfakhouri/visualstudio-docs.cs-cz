@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: c48fe67c8d52f962589c9f8628ff49f12f7770c5
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970553"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62822999"
 ---
 # <a name="analyze-load-test-results-in-the-graphs-view-of-the-load-test-analyzer"></a>Analýza výsledků zátěžových testů v zobrazení grafů Analyzéru zátěžového testu
 
@@ -66,7 +66,7 @@ V následující tabulce jsou uvedeny předdefinované grafy, které jsou k disp
 |-|-|
 |instance|Název instance čítače.|
 |Kategorie|Název kategorie čítače.|
-|Počítač|Název počítače, do které se shromažďují čítače.|
+|Computer|Název počítače, do které se shromažďují čítače.|
 |Barva|Barva čáry v grafu.|
 |Rozsah|Označuje číslo, která je reprezentována 100 v grafu pro tento čítač. Pro rozsah, jejíž horní hodnota je 10 000 operací, například 100 popisek v horní části grafu představuje 10 000.|
 |Minimum|Určuje minimální hodnotu pro čítač v milisekundách.|

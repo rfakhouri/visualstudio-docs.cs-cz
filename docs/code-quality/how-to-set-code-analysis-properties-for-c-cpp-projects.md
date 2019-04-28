@@ -19,11 +19,11 @@ manager: wpickett
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 11eb9701c900284ee8021f908263bc5f27ab8206
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55917327"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62815818"
 ---
 # <a name="how-to-set-code-analysis-properties-for-cc-projects"></a>Postupy: Nastavení vlastností analýzy kódu pro projekty C/C++
 Můžete nakonfigurovat pravidla, která používá nástroj pro analýzu kódu pro analýzu kódu v každé konfiguraci projektu. Kromě toho může směrovat analýzy kódu pro potlačení varování z kódu, které se generují a přidávají do svého projektu pomocí nástroje třetích stran.

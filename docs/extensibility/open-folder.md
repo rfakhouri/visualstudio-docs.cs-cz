@@ -9,11 +9,11 @@ manager: viveis
 ms.workload:
 - vssdk
 ms.openlocfilehash: 2bb74703f639848d643f536edf620e30b1836310
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53986008"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62806446"
 ---
 # <a name="open-folder-extensibility"></a>Otevřete složku rozšíření
 
@@ -26,7 +26,7 @@ ms.locfileid: "53986008"
 
 Při použití úlohy pro vývoj pro .NET a C++, uživatelům se taky získat:
 
-* Propracovaná funkce Intellisense
+* Rich Intellisense
 * Funkce specifické pro jazyk
 
 Autoři rozšíření otevřenou složku můžou vytvářet bohaté funkce pro libovolný jazyk. Nejsou k dispozici rozhraní API pro podporu vytváření, ladění a hledání symbolu pro každý soubor v uživatel základu kódu. Aktuální zařízení Extender můžete aktualizovat svoje existující funkce sady Visual Studio k pochopení kódu bez pomocného projektů nebo řešení.

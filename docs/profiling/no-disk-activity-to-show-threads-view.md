@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a88679d5423fc0ed2340638e5e1634bb3c81a20c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56636798"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62794452"
 ---
 # <a name="no-disk-activity-to-show-threads-view"></a>Žádná disková aktivita k zobrazení (zobrazení vláken)
 Nelze zobrazit, aktivit disku pro aktuální časový rozsah v kanálech vstupně-výstupních operací disku. Disková aktivita může zobrazit, pokud oddálit nebo posouvání. Také se ujistěte, že žádné kanály disku jsou skryté.

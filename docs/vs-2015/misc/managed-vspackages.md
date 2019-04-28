@@ -11,11 +11,11 @@ ms.assetid: a4f17068-c563-45a8-bbbf-4203ea99e9d2
 caps.latest.revision: 34
 manager: jillfra
 ms.openlocfilehash: bde7742bc9165413abcf98bfb475c19ec0e45f51
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54753457"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62838760"
 ---
 # <a name="managed-vspackages"></a>Spravovaná rozšíření VSPackages
 Následující témata popisují, jak vytvořit VSPackage. VSPackage je softwarový modul, který rozšiřuje [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] integrované vývojové prostředí (IDE) tím, že poskytuje prvky uživatelského rozhraní (UI), služby, projekty, editory a návrháře. Další informace najdete v tématu [rozšíření VSPackages](../extensibility/internals/vspackages.md).  

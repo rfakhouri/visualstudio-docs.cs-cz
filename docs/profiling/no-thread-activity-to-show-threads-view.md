@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 91cc840a69135edf59603ba62d15985eb541df0e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60058926"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62794465"
 ---
 # <a name="no-thread-activity-to-show-threads-view"></a>Žádná aktivita vláken k zobrazení (zobrazení vláken)
 Tato oblast se zobrazí data o zobrazí vlákna v současném viditelném časovém rozsahu.

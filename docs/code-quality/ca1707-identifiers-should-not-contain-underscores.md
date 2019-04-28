@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1cbd6d3999525808180f69652290807d327b6814
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55917737"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62797353"
 ---
 # <a name="ca1707-identifiers-should-not-contain-underscores"></a>CA1707: Identifikátory by neměly obsahovat podtržítka
 
@@ -30,7 +30,7 @@ ms.locfileid: "55917737"
 |Kategorie|Microsoft.Naming|
 |Narušující změna|Zásadní – při aktivaci pro sestavení<br /><br /> Bez konce – při aktivaci pro parametry typu|
 
-## <a name="cause"></a>příčina
+## <a name="cause"></a>Příčina
 
 Název identifikátoru obsahuje podtržítko (\_) znaků.
 

@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - uwp
 ms.openlocfilehash: d5b04a64ea75458d23e64e83a405a103ae70a100
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227693"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62906043"
 ---
 # <a name="inspect-xaml-properties-while-debugging"></a>Kontrola vlastností XAML při ladění
 Můžete získat v reálném čase přehled o spuštění kódu XAML pomocí **Live Visual Tree** a **Live Property Explorer**. Tyto nástroje vám poskytnou stromové zobrazení prvků uživatelského rozhraní aplikace XAML spuštěné a zobrazit vlastnosti modulu runtime libovolný prvek uživatelského rozhraní, které vyberete.

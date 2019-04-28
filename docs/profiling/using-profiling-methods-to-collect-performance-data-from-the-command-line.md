@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a59e05932b9e2e20f06a02614f8153b665b8fd51
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 3a6350c16da79bc102f85a382ce57aa6924bb2c4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56624487"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62831440"
 ---
 # <a name="use-profiling-methods-to-collect-performance-data-from-the-command-line"></a>Použití metod profilace ke shromažďování dat výkonu z příkazového řádku
 Podle vaší volby [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] příkazového řádku nástrojů pro profilaci a možnosti závisí na faktorech jako typ aplikace, který profilujete, metodě profilování, který chcete použít, a určuje, zda je cílová aplikace napsané v nativní nebo [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]kódu.
@@ -37,17 +37,17 @@ Podle vaší volby [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] př
 
  **Typ cílové aplikace**
 
--   [Samostatné součásti rozhraní .NET framework](../profiling/how-to-instrument-a-dotnet-framework-component-and-collect-timing-data.md)
+- [Samostatné součásti rozhraní .NET framework](../profiling/how-to-instrument-a-dotnet-framework-component-and-collect-timing-data.md)
 
--   [Nativní samostatné součásti](../profiling/how-to-instrument-a-native-component-and-collect-timing-data.md)
+- [Nativní samostatné součásti](../profiling/how-to-instrument-a-native-component-and-collect-timing-data.md)
 
--   [Staticky kompilované webové aplikace ASP.NET](../profiling/how-to-instrument-statically-compiled-aspnet-and-collect-detailed-timing-data.md)
+- [Staticky kompilované webové aplikace ASP.NET](../profiling/how-to-instrument-statically-compiled-aspnet-and-collect-detailed-timing-data.md)
 
--   [Dynamicky kompilované webové aplikace ASP.NET](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-app-and-collect-timing-data.md)
+- [Dynamicky kompilované webové aplikace ASP.NET](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-app-and-collect-timing-data.md)
 
--   [Služby rozhraní .NET](../profiling/how-to-instrument-a-dotnet-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line.md)
+- [Služby rozhraní .NET](../profiling/how-to-instrument-a-dotnet-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line.md)
 
--   [Nativní služby](../profiling/how-to-instrument-a-native-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line.md)
+- [Nativní služby](../profiling/how-to-instrument-a-native-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line.md)
 
 ## <a name="use-net-memory-methods-to-collect-memory-allocation-and-object-lifetime-data"></a>Použijte metody paměti .NET ke shromažďování dat paměti přidělení a objekt životnosti
  Metoda paměti .NET nástrojů pro profilaci umožňuje shromažďovat [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] data o přidělování paměti a informace o životnosti objektů v [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].

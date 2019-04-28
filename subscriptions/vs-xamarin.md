@@ -8,11 +8,11 @@ ms.topic: conceptual
 description: Další informace o předplatném školení na Xamarin University součástí vybraného předplatného sady Visual Studio.
 searchscope: VS Subscription
 ms.openlocfilehash: faddafcc9c1bbc77a6d6c91b72bdb2865552583a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60066869"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62810551"
 ---
 # <a name="xamarin-university-training-benefit-in-visual-studio-subscriptions"></a>Xamarin University školení výhoda v předplatných sady Visual Studio
 

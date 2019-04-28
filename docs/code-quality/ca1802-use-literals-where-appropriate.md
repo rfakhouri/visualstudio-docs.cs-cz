@@ -18,11 +18,11 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: f4dbafb4c6f7ad590244842ac3def0e26f8a14fd
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57872963"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62797064"
 ---
 # <a name="ca1802-use-literals-where-appropriate"></a>CA1802: Použijte literály, kde je to vhodné
 
@@ -33,7 +33,7 @@ ms.locfileid: "57872963"
 |Kategorie|Microsoft.Performance|
 |Narušující změna|Nenarušující|
 
-## <a name="cause"></a>příčina
+## <a name="cause"></a>Příčina
 
 Pole je deklarován `static` a `readonly` (`Shared` a `ReadOnly` v jazyce Visual Basic) a je inicializován s hodnotou, kterou lze vypočítat v době kompilace.
 

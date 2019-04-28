@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fcd9032d550e79a47941540408dc6e98a15e33f7
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55949509"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62796715"
 ---
 # <a name="ca2135-level-2-assemblies-should-not-contain-linkdemands"></a>CA2135: Sestavení úrovně 2 by neměla obsahovat LinkDemands
 
@@ -26,7 +26,7 @@ ms.locfileid: "55949509"
 |Kategorie|Microsoft.Security|
 |Narušující změna|Narušující|
 
-## <a name="cause"></a>příčina
+## <a name="cause"></a>Příčina
  Používá třídu nebo člen třídy <xref:System.Security.Permissions.SecurityAction> v aplikaci, která používá zabezpečení úrovně 2.
 
 ## <a name="rule-description"></a>Popis pravidla

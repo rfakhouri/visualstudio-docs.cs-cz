@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: af56a0ecda516fd7cf3e775d58459b08790f9148
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56721599"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62891378"
 ---
 # <a name="command-line-switches-visual-studio-sdk"></a>Přepínače příkazového řádku (Visual Studio SDK)
 *Devenv.exe*, spustitelný soubor, který se spustí [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] podporuje integrované vývojové prostředí (IDE), přepínače příkazového řádku speciálně pro vývoj rozšíření VSPackages. Rozšíření VSPackages, můžete zpřístupnit svoje vlastní přepínače příkazového řádku nástroje Devenv. Následující témata obsahují informace o tom, jak pomocí přepínače příkazového řádku v integrovaném vývojovém prostředí.

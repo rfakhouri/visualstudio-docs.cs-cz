@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 512dfda8c95ecd56fe44eb6878e6abc0d942a782
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091899"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62826729"
 ---
 # <a name="how-to-change-the-position-of-a-tab-on-the-ribbon"></a>Postupy: Změna umístění karty na pásu karet
   Můžete změnit pořadí vlastních karet na pásu karet pomocí **kartu Editor kolekce**. Vlastní karty lze umístit před nebo za integrovanou kartu na pásu karet. Vestavěná karta je karta, který je již na pásu karet aplikace Microsoft Office. Například **Data** karta je integrovanou kartou v aplikaci Excel.

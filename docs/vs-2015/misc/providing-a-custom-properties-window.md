@@ -11,11 +11,11 @@ ms.assetid: 408dcdef-8ef9-4644-97d2-f311cd35824f
 caps.latest.revision: 12
 manager: jillfra
 ms.openlocfilehash: a244463832ff5620efa74a2c7fd20d6d47d79e76
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117522"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62810696"
 ---
 # <a name="providing-a-custom-properties-window"></a>Poskytování vlastních vlastností okna
 Je možné poskytnout vlastní **vlastnosti** okna pro daný projekt systému, místo rozšíření **vlastnosti** okno poskytované [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] integrované vývojové prostředí (IDE). Většina často došlo k chybě scénář je při sami implementaci objektu umístěn v rámci okna.  

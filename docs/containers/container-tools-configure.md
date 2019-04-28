@@ -7,11 +7,11 @@ ms.topic: conceptual
 ms.date: 03/20/2019
 ms.technology: vs-azure
 ms.openlocfilehash: 6fe51e0067ac15eb8e775786047009411c1e3181
-ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59537967"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62825104"
 ---
 # <a name="how-to-configure-visual-studio-container-tools"></a>Postup konfigurace nástroje kontejneru sady Visual Studio
 
@@ -40,7 +40,7 @@ Nástroje kontejneru sady **jednoho projektu** a **Docker Compose** nastavení:
 V následující tabulce může pomoct při rozhodování, jak nastavit tyto možnosti.
 
 ::: moniker range="vs-2017"
-| Name | Výchozí nastavení | Platí pro | Popis |
+| Název | Výchozí nastavení | Platí pro | Popis |
 | -----|:---------------:|:----------:| ----------- |
 | Automaticky získat požadované Image Dockeru při načtení projektu | On | Docker Compose | Pro zvýšení výkonu při načítání projektů sady Visual Studio spustí operaci Docker pull na pozadí tak, že až budete připraveni ke spuštění kódu, se image nestáhne již nebo probíhá stahování. Pokud jste právě načítá projekty a procházení kódu, můžete to vypnout aby se zabránilo stahování imagí kontejnerů, které nepotřebujete. |
 | Automaticky spustit kontejnery na pozadí | On | Docker Compose | Znovu pro zajištění zvýšeného výkonu sady Visual Studio vytvoří kontejner s připojí svazek připravené pro když sestavíte a spustíte svůj kontejner. Pokud chcete řídit, kdy se vytvoří kontejner, vypněte toto. |
@@ -52,14 +52,14 @@ V následující tabulce může pomoct při rozhodování, jak nastavit tyto mo�
 
 Následující tabulka popisuje **Obecné** nastavení:
 
-| Name | Výchozí nastavení | Platí pro | Popis |
+| Název | Výchozí nastavení | Platí pro | Popis |
 | -----|:---------------:|:----------:| ----------- |
 | V případě potřeby nainstalujte Docker Desktop | Zobrazit dotaz | Jeden projekt, Docker Compose | Zvolte, zda chcete být vyzváni, pokud není nainstalovaný Docker Desktop. |
 | Důvěřovat certifikátu ASP.NET Core SSL | Zobrazit dotaz | Projekty ASP.NET Core 2.x | Pokud je nastavena na **řádku mě**, pokud certifikát SSL pro localhost není důvěryhodný, Visual Studio zobrazí výzvu pokaždé, když spuštění projektu. |
 
 Následující tabulka popisuje **jednoho projektu** a **Docker Compose** nastavení:
 
-| Name | Výchozí nastavení | Platí pro | Popis |
+| Název | Výchozí nastavení | Platí pro | Popis |
 | -----|:---------------:|:----------:| ----------- |
 | Získat požadované Image Dockeru v projektu otevřít | Pravda | Jeden projekt, Docker Compose | Pro zvýšení výkonu při načítání projektů sady Visual Studio spustí operaci Docker pull na pozadí tak, že až budete připraveni ke spuštění kódu, se image nestáhne již nebo probíhá stahování. Pokud jste právě načítá projekty a procházení kódu, můžete nastavit na **False** aby se zabránilo stahování imagí kontejnerů, není nutné. |
 | Spouštění kontejnerů v projektu otevřít | Pravda | Jeden projekt, Docker Compose | Znovu pro zajištění zvýšeného výkonu sady Visual Studio vytvoří kontejner s připojí svazek připravené pro když sestavíte a spustíte svůj kontejner. Pokud chcete řídit, kdy se vytvoří kontejner, nastavte na **False**. |

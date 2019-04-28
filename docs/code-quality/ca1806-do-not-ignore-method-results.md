@@ -17,11 +17,11 @@ dev_langs:
 - VB
 manager: jillfra
 ms.openlocfilehash: d2a1dd9984601afa34e4aac7fa5ddc24061cf6ae
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55954501"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62797047"
 ---
 # <a name="ca1806-do-not-ignore-method-results"></a>CA1806: Neignorujte výsledky metody
 
@@ -32,7 +32,7 @@ ms.locfileid: "55954501"
 |Kategorie|Microsoft.Usage|
 |Narušující změna|Pevné|
 
-## <a name="cause"></a>příčina
+## <a name="cause"></a>Příčina
 
 Existuje několik možných důvodů pro toto upozornění:
 

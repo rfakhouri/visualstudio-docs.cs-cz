@@ -10,11 +10,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 62e7740915d341eee1bbf5e112c4f09297c98be1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60066140"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62813796"
 ---
 # <a name="how-to-handle-deployment-conflicts"></a>Postupy: Zpracování konfliktů nasazení
   Můžete zadat vlastní kód pro zpracování konfliktů nasazení pro položku Sharepointového projektu. Například může určit, zda všechny soubory v aktuální položce projektu již existuje v umístění nasazení a pak odstraňte nasazených souborů před nasazením aktuální položky projektu. Další informace o konfliktech nasazení najdete v tématu [rozšíření balení a nasazení SharePoint](../sharepoint/extending-sharepoint-packaging-and-deployment.md).

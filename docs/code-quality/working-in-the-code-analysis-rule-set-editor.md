@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 719d8f1e11365de0b864f41f54546fb4bfc64cd2
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55937216"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62820311"
 ---
 # <a name="use-the-code-analysis-rule-set-editor"></a>Použití editoru sad pravidel analýzy kódu
 
@@ -29,7 +29,7 @@ V následující tabulce jsou uvedeny možnosti závažnost:
 |Chyba|Dojde k chybě v **seznam chyb** a také v okamžiku sestavení.|
 |Informace o|Generuje zprávu ve **seznam chyb**.|
 |Hidden|Porušení zásad není viditelné pro uživatele. Rozhraní IDE je informováni o porušení zásad, ale.|
-|Žádná|Toto pravidlo je potlačeno. Chování je stejné jako v případě, že pravidlo se odebral ze sady pravidel.|
+|Žádné|Toto pravidlo je potlačeno. Chování je stejné jako v případě, že pravidlo se odebral ze sady pravidel.|
 
 Editor zobrazí pravidla ve stromové struktuře, která skupiny pravidla pomocí pravidla nastavena pole, které určíte. Chcete-li přidat nebo odebrat pravidla sadu pravidel, proveďte jeden nebo více z následujících kroků:
 

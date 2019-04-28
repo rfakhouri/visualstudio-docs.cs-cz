@@ -12,11 +12,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 0aa0a94668d06f75b959de2ee933ab079feba596
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58148110"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62808890"
 ---
 # <a name="profilerrelationshipinfo-enumeration"></a>PROFILER_RELATIONSHIP_INFO – výčet
 Představuje informace o objektu ve vztahu. Použít v [profiler_heap_object_relationship – struktura](../../winscript/reference/profiler-heap-object-relationship-structure.md).  
@@ -29,7 +29,7 @@ typedef [v1_enum] enum {    PROFILER_PROPERTY_TYPE_NUMBER = 0x01,    PROFILER_PR
   
 ## <a name="members"></a>Členové  
   
-|Člen|Hodnota|Popis|  
+|Člen|Value|Popis|  
 |------------|-----------|-----------------|  
 |PROFILER_PROPERTY_TYPE_NUMBER|0x01|Objekt je číslo.|  
 |PROFILER_PROPERTY_TYPE_STRING|0x02|Objekt je řetězec.|  

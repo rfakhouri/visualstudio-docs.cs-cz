@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5f52c862adcdaf7a95de6a90c2c330c39edcea13
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56598503"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62900341"
 ---
 # <a name="ltcommandsgt-element-bootstrapper"></a>&lt;Příkazy&gt; – element (zaváděcí nástroj)
 `Commands` Prvek implementuje testy, které jsou popsané prvky pod `InstallChecks` elementu a deklaruje balíčky, které [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] zaváděcího nástroje by měla nainstalovat, pokud se test nezdaří.

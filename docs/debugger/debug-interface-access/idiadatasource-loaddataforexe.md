@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4f95e8a9321ff7ae518e72496289f8ad0c7b4682
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56609641"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62829843"
 ---
 # <a name="idiadatasourceloaddataforexe"></a>IDiaDataSource::loadDataForExe
 Otevře a připraví data ladění přidružené k souboru.exe/.dll.
@@ -48,7 +48,7 @@ pCallback
 ## <a name="return-value"></a>Návratová hodnota
 Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby. V následující tabulce jsou uvedeny některé možné chybové kódy pro tuto metodu.
 
-|Hodnota|Popis|
+|Value|Popis|
 |-----------|-----------------|
 |E_PDB_NOT_FOUND|Nepovedlo se otevřít soubor nebo soubor má neplatný formát.|
 |E_PDB_FORMAT|Došlo k pokusu o přístup k souboru se zastaralý formát.|

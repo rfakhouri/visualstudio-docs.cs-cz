@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f74b539d9382bf8b5f5fe319ff319cdf6f372340
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55946012"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62806955"
 ---
 # <a name="ca2137-transparent-methods-must-contain-only-verifiable-il"></a>CA2137: Transparentní metody musí obsahovat pouze ověřitelné IL
 
@@ -26,7 +26,7 @@ ms.locfileid: "55946012"
 |Kategorie|Microsoft.Security|
 |Narušující změna|Narušující|
 
-## <a name="cause"></a>příčina
+## <a name="cause"></a>Příčina
  Metoda obsahuje kód, který nelze ověřit, nebo vrací typ odkazem.
 
 ## <a name="rule-description"></a>Popis pravidla

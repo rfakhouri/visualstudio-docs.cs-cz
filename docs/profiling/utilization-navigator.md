@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 94e2562e86af36d935679916c2bfb9669be1758d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56615231"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62823479"
 ---
 # <a name="utilization-navigator"></a>Navigátor využití
 Navigátor využití ve vizualizátoru souběžnosti můžete použít k výběru časový interval v trasování. Vizualizátor souběžnosti zobrazí využití jader procesoru cílového procesu v průběhu času. To usnadňuje prozkoumat vzory využití procesoru a také umožňuje srovnání využití dat a dat v ostatních zobrazeních. Navigátor využití se zobrazí v horní části každé zobrazení ve vizualizátoru souběžnosti. Následující obrázek znázorňuje Navigátor využití.

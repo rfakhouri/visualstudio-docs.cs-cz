@@ -27,11 +27,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 301ca4ee88368b9134bbbcd2dc41435590becaed
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071054"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62817568"
 ---
 # <a name="midl-task"></a>MIDL – úloha
 Zabalí nástroj kompilátoru Microsoft Interface Definition Language (MIDL) *midl.exe*. Další informace najdete v tématu [příkazového řádku MIDL odkazu](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
@@ -87,7 +87,7 @@ Zabalí nástroj kompilátoru Microsoft Interface Definition Language (MIDL) *mi
 
      Zadejte jednu z následujících hodnot, z nichž každý odpovídá možnosti příkazového řádku.
 
-    |Value|Možnost příkazového řádku|
+    |Hodnota|Možnost příkazového řádku|
     |-----------|--------------------------|
     |**podepsané**|**/ Char podepsané**|
     |**bez znaménka**|**/ Char unsigned**|
@@ -167,7 +167,7 @@ Zabalí nástroj kompilátoru Microsoft Interface Definition Language (MIDL) *mi
 
      Zadejte jednu z následujících hodnot, z nichž každý odpovídá možnosti příkazového řádku.
 
-    |Hodnota|Možnost příkazového řádku|
+    |Value|Možnost příkazového řádku|
     |-----------|--------------------------|
     |**Žádné**|**/ Client none**|
     |**Zástupné procedury**|**Zástupná procedura/Client**|
@@ -182,7 +182,7 @@ Zabalí nástroj kompilátoru Microsoft Interface Definition Language (MIDL) *mi
 
      Zadejte jednu z následujících hodnot, z nichž každý odpovídá možnosti příkazového řádku.
 
-    |Value|Možnost příkazového řádku|
+    |Hodnota|Možnost příkazového řádku|
     |-----------|--------------------------|
     |**Žádné**|**/ Server žádné**|
     |**Zástupné procedury**|**Zástupná Procedura/Server**|
@@ -356,7 +356,7 @@ Zabalí nástroj kompilátoru Microsoft Interface Definition Language (MIDL) *mi
 
      Zadejte jednu z následujících hodnot, z nichž každý odpovídá možnosti příkazového řádku.
 
-    |Hodnota|Možnost příkazového řádku|
+    |Value|Možnost příkazového řádku|
     |-----------|--------------------------|
     |**NewFormat**|**/newtlb**|
     |**OldFormat**|**/oldtlb**|
