@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ce4b5671d0e10d2f524ee96494d37cb68babe72a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6852b12e8a3cbc902770a2825d12697c12fc1760
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60058873"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436555"
 ---
 # <a name="troubleshooting-exceptions-systemservicemodelsecuritymessagesecurityexception"></a>Řešení potíží s výjimkami: System.ServiceModel.Security.MessageSecurityException
 A <xref:System.ServiceModel.Security.MessageSecurityException> výjimka je vyvolána, když [!INCLUDE[vsindigo](../includes/vsindigo-md.md)] Určuje, že zpráva není správně zabezpečené nebo nebude bylo manipulováno. Dojde k chybě nejčastěji Pokud jsou splněny všechny následující podmínky:  
@@ -35,7 +35,7 @@ A <xref:System.ServiceModel.Security.MessageSecurityException> výjimka je vyvol
  Pokud vzdálený uživatel může být spuštěn na webu pomocí [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] vývojový Server a také pracovat s webovou službu nebo službu WCF, můžete buď vytvořit vazbu vlastního služby, nebo vypnout zabezpečení NTLM.  
   
 > [!IMPORTANT]
->  Vypnutí zabezpečení NTLM se nedoporučuje a může představovat bezpečnostní hrozbu.  
+> Vypnutí zabezpečení NTLM se nedoporučuje a může představovat bezpečnostní hrozbu.  
   
  Pokud vytvoříte vlastní službu vazby, jsou chráněny stále ověřování protokolem NTLM.  
   
@@ -74,7 +74,7 @@ A <xref:System.ServiceModel.Security.MessageSecurityException> výjimka je vyvol
    Provedením následujících kroků zakázat zabezpečení NTLM, když pracujete s odkaz na službu WCF.  
   
 > [!IMPORTANT]
->  Vypnutí zabezpečení NTLM se nedoporučuje a může představovat bezpečnostní hrozbu.  
+> Vypnutí zabezpečení NTLM se nedoporučuje a může představovat bezpečnostní hrozbu.  
   
 #### <a name="to-turn-off-ntlm-security"></a>Chcete-li vypnout zabezpečení NTLM  
   

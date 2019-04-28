@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 078c2b7bfcf6ce2a86b5f059053f8f31376af595
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56644780"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62554528"
 ---
 # <a name="funcdebugstart"></a>FuncDebugStart
 Pokud je funkce bod definovaný v ladění, které se chcete začít, bod je identifikován symbol s `SymTagFuncDebugStart` značky.

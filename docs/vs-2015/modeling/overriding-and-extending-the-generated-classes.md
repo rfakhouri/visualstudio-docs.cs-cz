@@ -11,12 +11,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 34e40863883643955c4517337de5410f0745703d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: a7b9733a47b4763a0f28ee4b24b54fdfd44bf066
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54762701"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435007"
 ---
 # <a name="overriding-and-extending-the-generated-classes"></a>Přepisování a rozšiřování vygenerovaných tříd
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ Vaše definice DSL je platforma, na kterém můžete vytvářet výkonná sada n
  `} }`  
   
 > [!NOTE]
->  Přepsání metody ve vygenerované třídě, vždy napište svůj kód v souboru, který je oddělen od generované soubory. Soubor je obvykle obsažen ve složce s názvem CustomCode. Pokud provedete změny generovaný kód, budou ztraceny při opětovném vygenerování kódu v definici DSL.  
+> Přepsání metody ve vygenerované třídě, vždy napište svůj kód v souboru, který je oddělen od generované soubory. Soubor je obvykle obsažen ve složce s názvem CustomCode. Pokud provedete změny generovaný kód, budou ztraceny při opětovném vygenerování kódu v definici DSL.  
   
  Chcete-li zjistit, jaké metody můžete přepsat, zadejte **přepsat** ve třídě, za nímž následuje mezera. Popisu tlačítka technologie IntelliSense vám sdělí, jaké metody se dá přepsat.  
   

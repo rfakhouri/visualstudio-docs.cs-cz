@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 29fcd40a2fc64a12ed7b29845b0a9f0ea3db5589
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5ef444d78e5a486f9e384ea02d1eb88461e3fce2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040569"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430342"
 ---
 # <a name="walkthrough-extend-server-explorer-to-display-web-parts"></a>Návod: Rozšíření Průzkumníka serveru pro zobrazení částí webu
   V sadě Visual Studio, můžete použít **připojení služby SharePoint** uzlu **Průzkumníka serveru** zobrazíte komponenty na webech služby SharePoint. Ale **Průzkumníka serveru** nezobrazí některé součásti ve výchozím nastavení. V tomto návodu budete rozšíříte **Průzkumníka serveru** tak, aby zobrazil galerii webových částí na každý z nich připojený web služby SharePoint.
@@ -40,7 +40,7 @@ ms.locfileid: "60040569"
 - Ladění a testování rozšíření.
 
 > [!NOTE]
->  Alternativní verze tohoto názorného postupu, který používá namísto jeho objektový model serveru objektového modelu klienta pro službu SharePoint, naleznete v tématu [názorný postup: Volání do objektového modelu klienta SharePoint v rozšíření Průzkumníka serveru](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md).
+> Alternativní verze tohoto názorného postupu, který používá namísto jeho objektový model serveru objektového modelu klienta pro službu SharePoint, naleznete v tématu [názorný postup: Volání do objektového modelu klienta SharePoint v rozšíření Průzkumníka serveru](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md).
 
 ## <a name="prerequisites"></a>Požadavky
  Budete potřebovat následující komponenty na vývojovém počítači k dokončení tohoto návodu:
@@ -75,7 +75,7 @@ ms.locfileid: "60040569"
 3. V **nový projekt** dialogového okna rozbalte **Visual C#** nebo **jazyka Visual Basic** uzly a klikněte na tlačítko **rozšiřitelnost** uzlu.
 
     > [!NOTE]
-    >  **Rozšiřitelnost** uzel je dostupný jenom v případě, že nainstalujete Visual Studio SDK. Další informace najdete v oddílu požadavky dříve v tomto tématu.
+    > **Rozšiřitelnost** uzel je dostupný jenom v případě, že nainstalujete Visual Studio SDK. Další informace najdete v oddílu požadavky dříve v tomto tématu.
 
 4. V horní části dialogového okna zvolte **rozhraní .NET Framework 4.5** v seznam verzí rozhraní .NET Framework.
 
@@ -211,7 +211,7 @@ ms.locfileid: "60040569"
 1. V projektu WebPartNodeExtension otevřete soubor kódu SiteNodeExtension a vložte následující kód do něj.
 
     > [!NOTE]
-    >  Po přidání tohoto kódu, bude mít projekt několik chyb kompilace, ale zmizí při vložení kódu v dalších krocích.
+    > Po přidání tohoto kódu, bude mít projekt několik chyb kompilace, ale zmizí při vložení kódu v dalších krocích.
 
      [!code-csharp[SPExtensibility.SPExplorer.WebPartNodeWithCommands#1](../sharepoint/codesnippet/CSharp/WebPartNode/webpartnodeextension/sitenodeextension.cs#1)]
      [!code-vb[SPExtensibility.SPExplorer.WebPartNodeWithCommands#1](../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnodewithcommands.webpartnode/webpartnodeextension/sitenodeextension.vb#1)]
@@ -266,7 +266,7 @@ ms.locfileid: "60040569"
 1. V panelu nabídky zvolte **sestavení** > **sestavit řešení**.
 
     > [!WARNING]
-    >  V tomto okamžiku WebPartNode projektu může mít k chybě sestavení, protože soubor manifestu VSIX nemá hodnotu pro autora. Tato chyba zmizí při přidání hodnoty v dalších krocích.
+    > V tomto okamžiku WebPartNode projektu může mít k chybě sestavení, protože soubor manifestu VSIX nemá hodnotu pro autora. Tato chyba zmizí při přidání hodnoty v dalších krocích.
 
 ## <a name="create-a-vsix-package-to-deploy-the-extension"></a>Vytvoření balíčku VSIX k nasazení rozšíření
  Pokud chcete nasadit rozšíření, použijte VSIX projekt ve vašem řešení k vytvoření balíčku VSIX. Nejprve nakonfigurujte VSIX balíček úpravou souboru source.extension.vsixmanifest v projektu VSIX. Potom vytvořte VSIX balíček vytvořením řešení.
@@ -290,7 +290,7 @@ ms.locfileid: "60040569"
 6. V **typ** klikněte na položku **Microsoft.VisualStudio.MefComponent**.
 
     > [!NOTE]
-    >  Tato hodnota odpovídá `MefComponent` element v souboru extension.vsixmanifest. Tento prvek určuje název sestavení rozšíření v balíčku souboru VSIX. Další informace najdete v tématu [MEFComponent – Element (VSX schéma)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).
+    > Tato hodnota odpovídá `MefComponent` element v souboru extension.vsixmanifest. Tento prvek určuje název sestavení rozšíření v balíčku souboru VSIX. Další informace najdete v tématu [MEFComponent – Element (VSX schéma)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).
 
 7. V **zdroj** klikněte na položku **projekt v aktuálním řešení**.
 
@@ -303,7 +303,7 @@ ms.locfileid: "60040569"
 10. V **typ** zadejte **SharePoint.Commands.v4**.
 
     > [!NOTE]
-    >  Tento prvek určuje vlastní rozšíření, které chcete zahrnout do rozšíření aplikace Visual Studio. Další informace najdete v tématu [Asset – Element (VSX schéma)](https://msdn.microsoft.com/9fcfc098-edc7-484b-9d4c-acd17829d737).
+    > Tento prvek určuje vlastní rozšíření, které chcete zahrnout do rozšíření aplikace Visual Studio. Další informace najdete v tématu [Asset – Element (VSX schéma)](https://msdn.microsoft.com/9fcfc098-edc7-484b-9d4c-acd17829d737).
 
 11. V **zdroj** klikněte na položku **projekt v aktuálním řešení** položky seznamu.
 

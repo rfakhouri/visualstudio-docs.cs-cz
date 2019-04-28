@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5eedfa6104b5462b0fe61682635338cb9337a408
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c205a3c8e88603153ec4bfabaa2545d8ae8c62d3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117044"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430786"
 ---
 # <a name="step-2-run-your-program"></a>Krok 2: Spusťte svůj program
 Když vytvoříte nové řešení, sestavíte ve skutečnosti program, který se spouští. Mnoho neprovádí ještě – zobrazí pouze prázdné okno zobrazující **Form1** v záhlaví programu. Ale běží, jak brzy zjistíte.
@@ -52,7 +52,7 @@ Když vytvoříte nové řešení, sestavíte ve skutečnosti program, který se
     - Zvolte **X** tlačítko v horním rohu **Form1** okna.
 
     > [!NOTE]
-    >  Spustíte-li program zevnitř rozhraní IDE, nazývá se ladění, protože je obvykle děláte za účelem vypátrání a opravení chyb v programu. I když je tento program malý a ve skutečnosti ještě nic neumí, jde stále o skutečný program. Můžete postupujte stejným způsobem ke spuštění a ladění ostatních programů. Další informace o ladění, naleznete v tématu [nejdřív se podívejte na ladicí program](../debugger/debugger-feature-tour.md).
+    > Spustíte-li program zevnitř rozhraní IDE, nazývá se ladění, protože je obvykle děláte za účelem vypátrání a opravení chyb v programu. I když je tento program malý a ve skutečnosti ještě nic neumí, jde stále o skutečný program. Můžete postupujte stejným způsobem ke spuštění a ladění ostatních programů. Další informace o ladění, naleznete v tématu [nejdřív se podívejte na ladicí program](../debugger/debugger-feature-tour.md).
 
 ## <a name="to-continue-or-review"></a>Chcete-li pokračovat nebo přezkoumat
 

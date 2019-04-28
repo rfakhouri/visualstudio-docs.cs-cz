@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 1f8300043f9a16c7d92d72c4dcb22e4cd0432a06
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55937549"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62566968"
 ---
 # <a name="how-to-save-and-edit-connection-strings"></a>Postupy: Uložení a úpravy připojovacích řetězců
 Připojovací řetězce v aplikacích Visual Studio jsou uložené v konfiguračním souboru aplikace (také označované jako nastavení aplikace) nebo pevně zakódované přímo ve vaší aplikaci. Ukládání připojovacích řetězců v konfiguračním souboru aplikace zjednodušuje úlohu údržbu aplikace. Pokud je potřeba změnit připojovací řetězec, můžete ho aktualizovat v souboru nastavení aplikace (na rozdíl od nutnosti změna ve zdrojovém kódu a znovu zkompilovat aplikaci).

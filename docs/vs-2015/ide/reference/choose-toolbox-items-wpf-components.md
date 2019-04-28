@@ -14,12 +14,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4cbfaea72633f6f4bbeb7da3bf6e7c02069889f9
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 0d4ebb383e7dfb18ed4e119e9b34111ac809e2a6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59647699"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433691"
 ---
 # <a name="choose-toolbox-items-wpf-components"></a>Výběr položek sady nástrojů, součásti WPF
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,16 +29,16 @@ Tato karta **zvolit položky nástrojů** dialogové okno zobrazí seznam dostup
 - Pokud je zaškrtnuto políčko vedle komponenty, bude zobrazena ikona pro danou součást v **nástrojů**.  
   
   > [!TIP]
-  >  Chcete-li přidat instanci ovládacího prvku WPF do projektu dokument otevřený pro úpravy, přetáhněte jeho **nástrojů** ikonu na návrhovou plochu zobrazení. Výchozí značky a pro součásti jsou vloženy do svého projektu můžete upravit. Další informace najdete v tématu [jak: Správa okna nástrojů](http://msdn.microsoft.com/a022c3fe-298c-4a59-a48f-b050da90ebc2) a [jak: Manipulace s karty panelu nástrojů](http://msdn.microsoft.com/21285050-cadd-455a-b1f5-a2289a89c4db).  
+  > Chcete-li přidat instanci ovládacího prvku WPF do projektu dokument otevřený pro úpravy, přetáhněte jeho **nástrojů** ikonu na návrhovou plochu zobrazení. Výchozí značky a pro součásti jsou vloženy do svého projektu můžete upravit. Další informace najdete v tématu [jak: Správa okna nástrojů](http://msdn.microsoft.com/a022c3fe-298c-4a59-a48f-b050da90ebc2) a [jak: Manipulace s karty panelu nástrojů](http://msdn.microsoft.com/21285050-cadd-455a-b1f5-a2289a89c4db).  
   
 - Pokud je zrušeno zaškrtnutí políčka vedle komponenty, příslušnou ikonu se odebere z **sady nástrojů.**  
   
   > [!NOTE]
-  >  Součásti rozhraní .NET Framework nainstalované v počítači nadále k dispozici, zda jsou ikony pro ně zobrazí **nástrojů**.  
+  > Součásti rozhraní .NET Framework nainstalované v počítači nadále k dispozici, zda jsou ikony pro ně zobrazí **nástrojů**.  
   
   Sloupce **součásti WPF** karta obsahovat následující informace:  
   
-  Name  
+  Název  
   Seznamy názvů ovládacích prvků WPF pro položky, které existují v registru počítače.  
   
   Obor názvů  

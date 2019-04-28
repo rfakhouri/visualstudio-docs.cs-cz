@@ -11,12 +11,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d93c18f1b62ef7171fb35af896a8e9adbc461680
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: bc11af7d259f252d7659f559be15b85f4af90149
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60053530"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437943"
 ---
 # <a name="graphics-frame-analysis"></a>Analýza grafických snímků
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "60053530"
 Analýza grafických snímků v analyzátoru grafiky sady Visual Studio použijte k analýze a optimalizovat výkon vykreslování Direct3D hře nebo aplikaci.  
   
 > [!IMPORTANT]
->  Analyzátor grafiky podporuje analýzu snímků pro aplikace, které používají rozhraní Direct3D 11 na podporovaných platformách, včetně Windows 10. Analýza snímků se aktuálně nepodporuje pro aplikace, které používají rozhraní Direct3D 12.  
+> Analyzátor grafiky podporuje analýzu snímků pro aplikace, které používají rozhraní Direct3D 11 na podporovaných platformách, včetně Windows 10. Analýza snímků se aktuálně nepodporuje pro aplikace, které používají rozhraní Direct3D 12.  
   
 ## <a name="frame-analysis"></a>Analýza snímků  
  Analýza snímků používá stejné informace, které jsou zachyceny v souboru protokolu grafiky pro účely diagnostiky, ale používá ke shrnutí výkon vykreslování místo. Informace o výkonu se zaznamenávají do protokolu při zachytávání; Místo toho informace o výkonu je generováno později během analýzu snímků, události časování a shromažďování statistik přehrát rámce. Tento přístup má několik výhod oproti zaznamenávání informací o výkonu při zachytávání:  
@@ -118,7 +118,7 @@ Analýza grafických snímků v analyzátoru grafiky sady Visual Studio použijt
  Informace z čítače hardwaru poskytuje velmi podrobné zobrazení chování specifické hardwarové platformy pro každé volání draw, která vám pomůže identifikovat příčiny problémových míst výkonu velmi přesně.  
   
 > [!NOTE]
->  Jiné hardwarové platformy podporují různé čítače; neexistuje žádný standardní. Čítače a co představují jsou určeny výhradně každého výrobce GPU.  
+> Jiné hardwarové platformy podporují různé čítače; neexistuje žádný standardní. Čítače a co představují jsou určeny výhradně každého výrobce GPU.  
   
 ### <a name="marker-regions-and-events"></a>Oblasti značky a události  
  Analýza snímků podporuje uživatelem definované události značek a skupiny událostí. Jsou zobrazeny v souhrnnou tabulku a podrobností tabulky.  
@@ -145,7 +145,7 @@ Analýza grafických snímků v analyzátoru grafiky sady Visual Studio použijt
  Časová razítka jsou podporované na všech platformách, které podporují analýzu snímků. Hloubka uzavření dotazy – vyžadované pro čítač pixelů Occluded – jsou podporovány na platformách, které podporují úroveň funkcí 9.2 nebo vyšší.  
   
 > [!NOTE]
->  I když časová razítka se podporuje na všech platformách, které podporují analýzu snímků, přesnost a důslednost časová razítka se liší od platformách.  
+> I když časová razítka se podporuje na všech platformách, které podporují analýzu snímků, přesnost a důslednost časová razítka se liší od platformách.  
   
 ### <a name="gpu-counters"></a>Čítače GPU  
  Podpora GPU čítačů hardwaru je závislá na hardwaru.  
@@ -159,7 +159,7 @@ Analýza grafických snímků v analyzátoru grafiky sady Visual Studio použijt
   Žádná jiná platforma, která podporuje analýzu snímků shromažďuje čítače hardwarové GPU.  
   
 > [!NOTE]
->  Vzhledem k tomu čítačů hardwaru s GPU hardwarové prostředky, může trvat několik průchodů za účelem shromažďování kompletní sadu čítačů hardwaru pro každý typ variant vykreslování. V důsledku toho neurčené pořadí, ve které GPU se shromažďují čítače.  
+> Vzhledem k tomu čítačů hardwaru s GPU hardwarové prostředky, může trvat několik průchodů za účelem shromažďování kompletní sadu čítačů hardwaru pro každý typ variant vykreslování. V důsledku toho neurčené pořadí, ve které GPU se shromažďují čítače.  
   
 ### <a name="windows-phone"></a>Windows phone  
  Časová razítka, uzavření dotazy a čítačů hardwaru s GPU jsou podporovány pouze na mobilní telefony Windows Phone, které původně dodaných s Windows Phone 8.1. Analýza snímků vyžaduje aby bylo možné přehrát, že soubor protokolu grafiky. Mobilní telefony Windows Phone, které byly původně součástí Windows Phone 8 nepodporuje analýzu snímků, i pro mobilní telefony, které byly aktualizovány na Windows Phone 8.1.  
@@ -174,13 +174,13 @@ Analýza grafických snímků v analyzátoru grafiky sady Visual Studio použijt
  V analyzátoru grafiky sady při přehrávání souboru protokolu grafiky, která používá vyšší úroveň funkcí než počítač pro přehrávání podporuje, se automaticky vrátí k technologiím WARP. V analýza snímků se explicitně nepřecházel k WARP a vygeneruje chybu, je užitečné pro zkoumání správnosti aplikace Direct3D, ale ne pro zkoumání jeho výkon.  
   
 > [!NOTE]
->  I když je potřeba vzít v úvahu problémy úroveň funkcí, můžete zachytit a přehrávání souborů na zařízeních a jiné hardwarové konfigurace protokolu grafiky. Například můžete zachytit informace grafiky ve Windows Phone a přehrát jej zpět na stolním počítači a naopak je také podporována. V obou případech se v protokolu grafiky můžete přehrát zpět, dokud nebude obsahovat rozhraní API nebo použijte úrovní funkcí, které nejsou podporovány na počítači pro přehrávání souboru protokolu.  
+> I když je potřeba vzít v úvahu problémy úroveň funkcí, můžete zachytit a přehrávání souborů na zařízeních a jiné hardwarové konfigurace protokolu grafiky. Například můžete zachytit informace grafiky ve Windows Phone a přehrát jej zpět na stolním počítači a naopak je také podporována. V obou případech se v protokolu grafiky můžete přehrát zpět, dokud nebude obsahovat rozhraní API nebo použijte úrovní funkcí, které nejsou podporovány na počítači pro přehrávání souboru protokolu.  
   
 ### <a name="direct3d-10-and-lower"></a>Direct3D 10 a nižší  
  Analýza snímků je podporována pouze pro rozhraní API Direct3D 11. Pokud vaše aplikace volá rozhraní API Direct3D 10, analýza snímků nebudou rozpoznávání nebo je profil, i když jsou rozpoznány a používají jiné nástroje pro analyzátor grafiky sady. Pokud vaše aplikace používá Direct3D11 a rozhraní API Direct3D 10, jsou profilovány jen volá rozhraní Direct3D 11.  
   
 > [!NOTE]
->  To platí jenom pro rozhraní Direct3D volání rozhraní API, které používáte, není úrovní funkcí. Za předpokladu, že používáte rozhraní Direct3D 11, Direct3D 11.1 a Direct3D 11.2 rozhraní API, můžete použít jakýkoli úroveň funkcí vám líbí a analýza snímků budou prostě fungovat.  
+> To platí jenom pro rozhraní Direct3D volání rozhraní API, které používáte, není úrovní funkcí. Za předpokladu, že používáte rozhraní Direct3D 11, Direct3D 11.1 a Direct3D 11.2 rozhraní API, můžete použít jakýkoli úroveň funkcí vám líbí a analýza snímků budou prostě fungovat.  
   
 ## <a name="Variants"></a> Varianty  
  Každá změna, kterou analýza snímků se provede tak, jak je vykreslen blok při přehrávání se označuje jako *variant*. Varianty, které zkoumá analýza snímků odpovídají běžné, je poměrně snadné provedených změn může zlepšit výkon při vykreslování nebo kvality vaší aplikace – například nezmenšit velikost této textury, komprese textur nebo povolte různé druhy anti-aliasing. Varianty přepsání kontextu obvykle vykreslování a parametry vaší aplikace. Toto je souhrn:  

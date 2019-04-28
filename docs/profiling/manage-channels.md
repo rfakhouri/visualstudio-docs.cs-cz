@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c0f21042a7b49780dae3a46ec5a1f284dc0430a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 0b1480bab2f52383a8ca3a5b0ac22fd56acb5e01
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56646496"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435633"
 ---
 # <a name="manage-channels"></a>Správa kanálů
 V **zobrazení vláken** ve vizualizátoru souběžnosti můžete uspořádat kanály pro proces, takže můžete zkoumat konkrétní vzory. Můžete řadit kanály, je přesunout nahoru a dolů a skrýt nebo zobrazit jejich.
@@ -47,7 +47,7 @@ V **zobrazení vláken** ve vizualizátoru souběžnosti můžete uspořádat ka
  Zvolte tento ovládací prvek, pokud chcete skrýt kanály. Například pokud vlákno je synchronizace 100 procent po celou dobu životnosti vašeho spravovaného procesu, ji může skrýt jak analyzovat jiných vláken.
 
 > [!NOTE]
->  Skrytí vlákno také odebere ho z čas výpočtu, která se zobrazí v legendě aktivní a v sestavách profilu.
+> Skrytí vlákno také odebere ho z čas výpočtu, která se zobrazí v legendě aktivní a v sestavách profilu.
 
 ## <a name="show-all-channels"></a>Zobrazit všechny kanály
  Tento ovládací prvek je aktivní, když jsou skryté jednoho nebo několika kanálů. Pokud jste ji zvolili, jsou uvedeny všechny prvky skrytý a jsou vráceny ve výpočtech čas.

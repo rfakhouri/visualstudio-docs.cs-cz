@@ -13,12 +13,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d22db963f895c4ca53a44e20bc0babd0dff49853
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fa7db2f55a89bd6c542bff0cf30ee058e339f15c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60107583"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433292"
 ---
 # <a name="customizing-deletion-behavior"></a>Přizpůsobení chování odstranění
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -77,7 +77,7 @@ Odstranění elementu obvykle způsobí, že související prvky také odstranit
  Možnosti v souboru definic DSL pouze si můžete zvolit, jestli odstranění šíří do sousedního okamžitě. K implementaci složitější schéma šíření odstranit, můžete napsat kód programu.  
   
 > [!NOTE]
->  Přidat programový kód do definice DSL vytvořením samostatném souboru kódu v **Dsl** projektu a zapsat Částečná definice pro rozšíření třídy ve složce vygenerovaném kódu. Další informace najdete v tématu [psaní kódu pro úpravu jazyka specifického pro doménu specifického](../modeling/writing-code-to-customise-a-domain-specific-language.md).  
+> Přidat programový kód do definice DSL vytvořením samostatném souboru kódu v **Dsl** projektu a zapsat Částečná definice pro rozšíření třídy ve složce vygenerovaném kódu. Další informace najdete v tématu [psaní kódu pro úpravu jazyka specifického pro doménu specifického](../modeling/writing-code-to-customise-a-domain-specific-language.md).  
   
 ## <a name="closure"></a> Definování uzavření Delete  
  Operace odstranění používá třídu _YourModel_**DeleteClosure** určit prvky, které chcete odstranit, zadaný počáteční výběr. Volá `ShouldVisitRelationship()` a `ShouldVisitRolePlayer()` opakovaně, procházení grafu relací. Můžete také přepsat tyto metody. ShouldVisitRolePlayer je součástí identity odkazu a element v jedné z rolí na odkaz. Měla by vrátit jednu z následujících hodnot:  
@@ -213,7 +213,7 @@ partial class Artist
      Další informace najdete v tématu [obslužné rutiny rozšíření změny mimo the Model událostí](../modeling/event-handlers-propagate-changes-outside-the-model.md).  
   
     > [!WARNING]
-    >  Po odstranění prvku mají přístup k příslušné hodnoty vlastnosti domény, ale nedá se Navigovat vztah odkazy. Pokud jste nastavili pro odstraněnou událost na relaci, dostanete také dva prvky, které byly jeho aktérů role. Proto pokud chcete reagovat na odstranění prvku modelu, ale chtějí přístup k elementu, do které byl propojen, nastavení odstranění události v relaci místo prvku modelu doménové třídy.  
+    > Po odstranění prvku mají přístup k příslušné hodnoty vlastnosti domény, ale nedá se Navigovat vztah odkazy. Pokud jste nastavili pro odstraněnou událost na relaci, dostanete také dva prvky, které byly jeho aktérů role. Proto pokud chcete reagovat na odstranění prvku modelu, ale chtějí přístup k elementu, do které byl propojen, nastavení odstranění události v relaci místo prvku modelu doménové třídy.  
   
 ### <a name="example-deletion-rules"></a>Příklad pravidla odstranění  
   

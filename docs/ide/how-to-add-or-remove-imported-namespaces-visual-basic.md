@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 98968654837248763e366948c70a875d35bd44bb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 201702c794d70c32c0aeef410ad981d891d25d05
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105848"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438202"
 ---
 # <a name="how-to-add-or-remove-imported-namespaces-visual-basic"></a>Postupy: Přidání nebo odebrání importovaných oborů názvů (Visual Basic)
 
@@ -36,7 +36,7 @@ Import oboru názvů umožňuje použít elementy z daného oboru názvů ve va�
 3. V **importované obory názvů** seznam, zaškrtněte políčko pro obor názvů, který chcete přidat.
 
     > [!NOTE]
-    >  Aby bylo možné importovat, musí být obor názvů v odkazované součásti. Pokud obor názvů se nezobrazí v seznamu, musíte přidat odkaz na komponentu, která ji obsahuje. Další informace najdete v tématu [Správa odkazů v projektu](managing-references-in-a-project.md).
+    > Aby bylo možné importovat, musí být obor názvů v odkazované součásti. Pokud obor názvů se nezobrazí v seznamu, musíte přidat odkaz na komponentu, která ji obsahuje. Další informace najdete v tématu [Správa odkazů v projektu](managing-references-in-a-project.md).
 
 ### <a name="to-remove-an-imported-namespace"></a>Chcete-li odebrat importované oboru názvů
 

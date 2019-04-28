@@ -17,12 +17,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 12a4f736217374eefa32dda30111da5e71fbab39
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 945edb462b1ba849a3a1b9fd6797c8393b651163
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110476"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437682"
 ---
 # <a name="view-dom-event-listeners"></a>Zobrazení naslouchacích procesů událostí DOM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "wi
  V seznamu na **události** karta je dynamická. Pokud chcete přidat naslouchací proces událostí, když aplikace spuštěna, tam objeví nový naslouchací proces událostí. Informace o přidávání a odebírání naslouchacích procesů událostí, naleznete v tématu [tipy pro řešení problémů s naslouchacích procesů událostí](#Tips) v tomto tématu.
 
 > [!NOTE]
->  Naslouchacích procesů událostí pro prvky kódu, které nejsou prvky modelu DOM, jako například `xhr`, se nezobrazují na **události** kartu.
+> Naslouchacích procesů událostí pro prvky kódu, které nejsou prvky modelu DOM, jako například `xhr`, se nezobrazují na **události** kartu.
 
 ## <a name="view-event-listeners-for-dom-elements"></a>Zobrazení naslouchacích procesů událostí prvků modelu DOM
  Tento příklad ukazuje aplikace Windows Phone Store. Funkce Průzkumníku modelu DOM, který je zde popsáno, jsou také podporovány pro aplikace Windows Store.

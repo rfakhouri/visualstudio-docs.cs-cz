@@ -16,21 +16,21 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c693b85eb7441749300181da8108dae353e91ad1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 72f00a5235ac30c65c16da2fd5ef1d900779dbac
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60089366"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436461"
 ---
 # <a name="upgrade-and-migrate-office-solutions"></a>Upgrade a migrace řešení Office
   Pokud máte projekt Microsoft Office, který byl vytvořen v dřívější verzi sady Visual Studio, musíte upgradovat projekt pro použití v aktuálních verzích sady Visual Studio. K upgradu aplikace Microsoft Office project, otevřete ho ve verzi Visual Studio, která zahrnuje nástroje Microsoft Office developer tools. Další informace o verzích sady Visual Studio, které zahrnují nástroje Microsoft Office developer tools, naleznete v tématu [konfigurace počítače pro vývoj řešení pro systém Office](../vsto/configuring-a-computer-to-develop-office-solutions.md).
 
 > [!NOTE]
->  Zajímá vás vývoj řešení, které rozšiřují Office prostředí napříč [více platforem](https://dev.office.com/add-in-availability)? Podívejte se na nové [Office Add-ins modelu](https://dev.office.com/docs/add-ins/overview/office-add-ins). Doplňky sady Office mají malé náklady v porovnání s doplňky VSTO a řešení a je můžete vytvořit s využitím téměř jakékoli webové programování technologie, jako je například HTML5, JavaScript, CSS3 a XML.
+> Zajímá vás vývoj řešení, které rozšiřují Office prostředí napříč [více platforem](https://dev.office.com/add-in-availability)? Podívejte se na nové [Office Add-ins modelu](https://dev.office.com/docs/add-ins/overview/office-add-ins). Doplňky sady Office mají malé náklady v porovnání s doplňky VSTO a řešení a je můžete vytvořit s využitím téměř jakékoli webové programování technologie, jako je například HTML5, JavaScript, CSS3 a XML.
 
 > [!NOTE]
->  Visual Studio nemůže upgradovat projekty ze šablony formuláře InfoPath, které byly vytvořeny pomocí předchozí verze sady Visual Studio. Tyto typy projektů nejsou podporovány v aktuální verzi sady Visual Studio.
+> Visual Studio nemůže upgradovat projekty ze šablony formuláře InfoPath, které byly vytvořeny pomocí předchozí verze sady Visual Studio. Tyto typy projektů nejsou podporovány v aktuální verzi sady Visual Studio.
 
 ## <a name="changes-to-upgraded-projects"></a>Změny upgradovaných projektů
  Při upgradu aplikace Microsoft Office project Visual Studio změní projekt tak, aby cílil na následující položky:
@@ -56,7 +56,7 @@ ms.locfileid: "60089366"
  Při upgradu projektu sady Visual Studio 2013, Visual Studio změní projekt, aby cílil buď [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] nebo [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]. Verze rozhraní .NET framework, který je cílem projektu závisí na verzi systému Office nainstalovaného v počítači. Pokud [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] je nainstalován, Visual Studio změní projekt, aby mířil [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]. V opačném případě Visual Studio změní projekt, aby mířil [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)].
 
 > [!NOTE]
->  Možná budete muset provést některé další kroky ke spuštění znovu cíleného řešení na vývoj a počítačích koncových uživatelů a projekt nebude již kompilován, pokud používá určité funkce. Další informace najdete v tématu [řešení pro systém Office migrovat na rozhraní .NET Framework 4 nebo novější](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md).
+> Možná budete muset provést některé další kroky ke spuštění znovu cíleného řešení na vývoj a počítačích koncových uživatelů a projekt nebude již kompilován, pokud používá určité funkce. Další informace najdete v tématu [řešení pro systém Office migrovat na rozhraní .NET Framework 4 nebo novější](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md).
 
  Pokud cílíte [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] nebo později v projektu Office, můžete použít některé funkce, které nejsou k dispozici, pokud je cílem rozhraní .NET Framework 3.5. Další informace najdete v tématu [návrhu a vytvořte řešení pro systém Office](../vsto/designing-and-creating-office-solutions.md).
 
@@ -66,12 +66,12 @@ ms.locfileid: "60089366"
  Můžete cílit na projektech pro systém Office v sadě Visual Studio 2013 [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] a [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] aplikací. Visual Studio změní projekt cílit na nejnovější verzi office, kterou jste nainstalovali. Pokud nejsou nainstalované žádné z těchto verzí systému Office, Visual Studio upgrade projektu.
 
 > [!NOTE]
->  Pokud upgradujete projekt doplňku VSTO k cíli [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] nebo novější, ujistěte se, že `ThisAddIn_Startup` obslužná rutina události doplňku VSTO neobsahuje kód, který přistupuje k dokumentu v aplikaci. Další informace najdete v tématu [přístup k dokumentu, při spuštění aplikace Office](../vsto/programming-vsto-add-ins.md#AccessingDocuments).
+> Pokud upgradujete projekt doplňku VSTO k cíli [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] nebo novější, ujistěte se, že `ThisAddIn_Startup` obslužná rutina události doplňku VSTO neobsahuje kód, který přistupuje k dokumentu v aplikaci. Další informace najdete v tématu [přístup k dokumentu, při spuštění aplikace Office](../vsto/programming-vsto-add-ins.md#AccessingDocuments).
 
  Přizpůsobení na úrovni dokumentu [!INCLUDE[vs_current_short](../sharepoint/includes/vs-current-short-md.md)] převede dokumenty projektu, které mají binární formát, jako jsou například dokumenty, které mají *.xls* nebo *doc* rozšíření na formát Office Open XML. Další informace o Open XML naleznete v tématu [Úvod do nové přípony názvů souborů a Open XML formáty](https://support.office.com/en-nz/article/Introduction-to-new-file-name-extensions-eca81dcb-5626-4e5b-8362-524d13ae4ec1).
 
 > [!NOTE]
->  Inteligentní značky jsou zastaralé v aplikaci Excel 2010 a Word 2010. Proto pokud vaše řešení používá inteligentní značky, je nutné odebrat je bylo možné testovat a ladit v sadě Visual Studio 2013 nebo Visual Studio 2015.
+> Inteligentní značky jsou zastaralé v aplikaci Excel 2010 a Word 2010. Proto pokud vaše řešení používá inteligentní značky, je nutné odebrat je bylo možné testovat a ladit v sadě Visual Studio 2013 nebo Visual Studio 2015.
 
 ## <a name="upgrade-microsoft-office-2003-projects"></a>Upgrade projektů Microsoft Office 2003
  Existují některé další důležité aspekty upgradu přizpůsobení na úrovni dokumentu a doplňků VSTO, které se zaměřují Microsoft Office 2003.

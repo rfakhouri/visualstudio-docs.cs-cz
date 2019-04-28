@@ -11,12 +11,12 @@ helpviewer_keywords:
 ms.assetid: 89123eae-0fef-46d5-bd36-3d2a166b14e3
 caps.latest.revision: 24
 manager: jillfra
-ms.openlocfilehash: 209f5956d77e714f7f663693f9ac22241d428480
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b0ad8fce0fc582b42cc64944677f7b680aa96541
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105058"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436528"
 ---
 # <a name="visual-studio-interop-assembly-parameter-marshaling"></a>Parametr spolupracujícího sestavení sady Visual Studio zařazování
 Volání nebo volat nespravovaný kód com. pravděpodobně rozšíření VSPackages, která jsou napsána ve spravovaném kódu. Argumenty metody jsou obvykle, transformovat nebo zařadit automaticky interoperační zařazovač. Ale někdy argumenty nelze transformovat v přímočarým způsobem. V těchto případech parametry prototyp metody sestavení vzájemné spolupráce se používají tak, aby odpovídaly parametrům funkcí modelu COM co nejpřesněji. Další informace najdete v tématu [zařazování Interop](http://msdn.microsoft.com/library/115f7a2f-d422-4605-ab36-13a8dd28142a).  
@@ -46,7 +46,7 @@ Volání nebo volat nespravovaný kód com. pravděpodobně rozšíření VSPack
  V některých případech vygeneruje rozhraní modelu COM `IUnknown` objektu a rozhraní modelu COM pak ji předá jako typ. `void **`. Tato rozhraní jsou obzvláště důležité, protože pokud je proměnná definovaná jako [out] v IDL, pak bude `IUnknown` objekt je referenčně s `AddRef` metody. Nevracení paměti dochází, pokud objekt není správně zpracovat.  
   
 > [!NOTE]
->  `IUnknown` Objekt vytvořený rozhraní COM a vrátil [out] proměnné způsobí nevracení paměti, pokud není explicitně uvolněna.  
+> `IUnknown` Objekt vytvořený rozhraní COM a vrátil [out] proměnné způsobí nevracení paměti, pokud není explicitně uvolněna.  
   
  Spravované metody, které zpracovávají tyto objekty by měly zpracovávat <xref:System.IntPtr> jako ukazatel na `IUnknown` a následně zavolat <xref:System.Runtime.InteropServices.Marshal.GetObjectForIUnknown%2A> metodu k získání objektu. Volající by měl pak přetypovávat návratovou hodnotu pro jakýkoli typ je vhodný. Pokud objekt je už nepotřebujete, volání <xref:System.Runtime.InteropServices.Marshal.Release%2A> pro uvolnění.  
   
@@ -77,7 +77,7 @@ else
 ```  
   
 > [!NOTE]
->  Následující metody se ví, předejte `IUnknown` objektu ukazatele jako typ <xref:System.IntPtr>. Jejich zpracování, jak je popsáno v této části.  
+> Následující metody se ví, předejte `IUnknown` objektu ukazatele jako typ <xref:System.IntPtr>. Jejich zpracování, jak je popsáno v této části.  
   
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A>  
   

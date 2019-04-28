@@ -15,12 +15,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e9e12894a6c526e70e9d2ea814c2634a271098d4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 315a0e2f6c68a98eac8bb2c36d184ef68998e5ae
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104262"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435128"
 ---
 # <a name="how-to-specify-build-events-visual-basic"></a>Postupy: Určení událostí sestavení (Visual Basic)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Událostí sestavení v jazyce Visual Basic můžete použít ke spouštění sk
  Sestavení události jsou uvedeny v **události sestavení** dialogovém okně k dispozici **kompilaci** stránku **Návrháře projektu**.  
   
 > [!NOTE]
->  Visual Basic Express nepodporuje zadání událostí sestavení. To je podporováno pouze v plné verze produktu Visual Studio.  
+> Visual Basic Express nepodporuje zadání událostí sestavení. To je podporováno pouze v plné verze produktu Visual Studio.  
   
 ## <a name="how-to-specify-pre-build-and-post-build-events"></a>Určení události před sestavením a po sestavení  
   
@@ -45,10 +45,10 @@ Událostí sestavení v jazyce Visual Basic můžete použít ke spouštění sk
 4. Zadejte argumenty příkazového řádku pro vaši akci před sestavením nebo po sestavení a pak klikněte na tlačítko **OK**.  
   
     > [!NOTE]
-    >  Přidat `call` než vše post-build příkazy, které spouštějí soubory .bat. Například `call C:\MyFile.bat` nebo `call C:\MyFile.bat call C:\MyFile2.bat`.  
+    > Přidat `call` než vše post-build příkazy, které spouštějí soubory .bat. Například `call C:\MyFile.bat` nebo `call C:\MyFile.bat call C:\MyFile2.bat`.  
   
     > [!NOTE]
-    >  Pokud události před sestavením nebo po sestavení úspěšně nedokončí, můžete ukončit sestavení tak, že vaše akce události ukončení s kódem než nula (0), který označuje úspěšné akce.  
+    > Pokud události před sestavením nebo po sestavení úspěšně nedokončí, můžete ukončit sestavení tak, že vaše akce události ukončení s kódem než nula (0), který označuje úspěšné akce.  
   
 ## <a name="example-how-to-change-manifest-information-using-a-post-build-event"></a>Příklad: Jak změnit informace o manifestu pomocí událost po sestavení  
  Následující postup ukazuje, jak nastavit minimální verzi operačního systému v manifestu aplikace pomocí příkazu .exe volat z události po sestavení (. exe.manifest soubor v adresáři projektu). Minimální verzi operačního systému je složené ze čtyř částí čísla, jako je například 4.10.0.0. K tomu příkaz změní `<dependentOS>` manifestu:  

@@ -9,12 +9,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c5edf728df10d2418c4a3341fd54e4115439cc4a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: af470bbbebbf10fdfcf906c905171e86b0c100ba
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60055168"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433539"
 ---
 # <a name="how-to-add-activities-to-the-toolbox"></a>Postupy: Přidání aktivit do panelu nástrojů
 Aktivity mohou být přidány do **nástrojů** ve vašem řešení v několika různými způsoby. Můžete přidat z v rámci aktuálního projektu, odkazovat z jiného projektu nebo na ně odkazovat z jiného sestavení.  
@@ -28,13 +28,13 @@ Aktivity mohou být přidány do **nástrojů** ve vašem řešení v několika 
 3. Sestavte projekt. Pokud bylo sestavení úspěšné, novou kategorii v **nástrojů** s názvem "\<*název projektu*>" se zobrazí s vlastní aktivity zahrnuté do této kategorie spadají.  
   
     > [!NOTE]
-    >  Pokud panel nástrojů se vynuluje, vlastní aktivity se odebere, i v případě, řešení je vybudováno znovu. Pokud chcete znovu vytvořit panel nástrojů s vlastní aktivity po byla obnovena, restartujte [!INCLUDE[vs2010](../includes/vs2010-md.md)].  
+    > Pokud panel nástrojů se vynuluje, vlastní aktivity se odebere, i v případě, řešení je vybudováno znovu. Pokud chcete znovu vytvořit panel nástrojů s vlastní aktivity po byla obnovena, restartujte [!INCLUDE[vs2010](../includes/vs2010-md.md)].  
   
     > [!NOTE]
-    >  Panel nástrojů můžete zobrazit pouze jednu aktivitu daným názvem. Pokud dvě aktivity v různých sestaveních mají stejný název třídy, zobrazí se jenom jeden.  
+    > Panel nástrojů můžete zobrazit pouze jednu aktivitu daným názvem. Pokud dvě aktivity v různých sestaveních mají stejný název třídy, zobrazí se jenom jeden.  
   
     > [!NOTE]
-    >  Domény aplikace se sdílí mezi instance editoru; Pokud používáte statické proměnné, bude sdílena mezi instance editoru i. Pokud to není požadované chování, služba by měla sloužit ke sledování proměnné instance. Zobrazit [použití kontextu úprav ModelItem](http://msdn.microsoft.com/library/7f9f1ea5-0147-4079-8eca-be94f00d3aa1) informace o používání služby v rámci návrháře.  
+    > Domény aplikace se sdílí mezi instance editoru; Pokud používáte statické proměnné, bude sdílena mezi instance editoru i. Pokud to není požadované chování, služba by měla sloužit ke sledování proměnné instance. Zobrazit [použití kontextu úprav ModelItem](http://msdn.microsoft.com/library/7f9f1ea5-0147-4079-8eca-be94f00d3aa1) informace o používání služby v rámci návrháře.  
   
 ### <a name="to-add-an-activity-from-within-a-different-project"></a>Chcete-li přidat aktivitu z v rámci jiného projektu  
   

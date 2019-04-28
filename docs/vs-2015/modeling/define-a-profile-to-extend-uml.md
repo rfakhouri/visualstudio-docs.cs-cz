@@ -16,12 +16,12 @@ caps.latest.revision: 44
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 59e00fb6b4db879ed70904397ba9a54c8bc25a6f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b256971cd327098e22b243a1c171b0c9e82d32bc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069365"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433135"
 ---
 # <a name="define-a-profile-to-extend-uml"></a>Definování profilu pro rozšíření UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ Můžete definovat *profilu UML* k přizpůsobení prvků standardního modelu p
   Ke svému týmu můžete distribuovat vlastní profily. Každý člen týmu může nainstalovat váš profil. Díky tomu mohou upravovat a vytvářet modely, které používají jeho stereotypy.  
   
 > [!NOTE]
->  Pokud aplikujete Stereotypy profilu v modelu, že upravujete a pak model sdílíte s ostatními lidmi, se musí ve svých počítačích instalovat stejný profil. V opačném případě nebudou moci zobrazit Stereotypy, které jste už použili.  
+> Pokud aplikujete Stereotypy profilu v modelu, že upravujete a pak model sdílíte s ostatními lidmi, se musí ve svých počítačích instalovat stejný profil. V opačném případě nebudou moci zobrazit Stereotypy, které jste už použili.  
   
  Profil je často součástí většího [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] rozšíření. Můžete například definovat příkaz, který převede některé části modelu na kód. Můžete definovat profil, který uživatelé musí použít na balíčky, které chtějí překládat. Budete distribuovat váš nový příkaz spolu s profilem v jednom [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] rozšíření.  
   
@@ -83,7 +83,7 @@ Můžete definovat *profilu UML* k přizpůsobení prvků standardního modelu p
 1. Vytvořte projekt rozšíření aplikace Visual Studio.  
   
    > [!NOTE]
-   >  Je třeba mít nainstalovanou [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] k použití tohoto postupu.  
+   > Je třeba mít nainstalovanou [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] k použití tohoto postupu.  
   
    1. Na **souboru** nabídky, přejděte k **nový**a potom klikněte na tlačítko **projektu**.  
   
@@ -194,7 +194,7 @@ Můžete definovat *profilu UML* k přizpůsobení prvků standardního modelu p
 2. Přidáte nový adresář ve stejném adresáři jako výchozí soubor profilu.  
   
     > [!NOTE]
-    >  Pokud vytváříte rozšíření pomocí projektu rozšíření aplikace Visual Studio, přidejte novou složku do projektu pomocí Průzkumníka řešení.  
+    > Pokud vytváříte rozšíření pomocí projektu rozšíření aplikace Visual Studio, přidejte novou složku do projektu pomocí Průzkumníka řešení.  
   
 3. Změňte název nového adresáře na krátký kód ISO pro lokalizovanou jazykovou verzi, například `bg` pro bulharštinu, nebo `fr` pro francouzštinu. Používejte neutrální jazykovou verzi kódu, obvykle dvě písmena, nikoli konkrétní jazykovou verzi jako `fr-CA`. Další informace o kódech jazykových najdete v tématu [CultureInfo.GetCultures metody](http://go.microsoft.com/fwlink/?LinkId=160782), která poskytuje úplný seznam kódů jazykových verzí.  
   
@@ -211,7 +211,7 @@ Můžete definovat *profilu UML* k přizpůsobení prvků standardního modelu p
      `de\MyProfile.profile`  
   
     > [!NOTE]
-    >  By neměl vkládat do `extension.vsixmanifest` odkaz na lokalizované verze profilů. Zkopírované soubory profilu musí mít stejný název jako profil v nadřazené složce.  
+    > By neměl vkládat do `extension.vsixmanifest` odkaz na lokalizované verze profilů. Zkopírované soubory profilu musí mít stejný název jako profil v nadřazené složce.  
   
 5. Upravte novou kopii profilu, přitom přeložte do cílového jazyka všechny části, které budou viditelné pro uživatele, například `displayName` atributy.  
   
@@ -247,7 +247,7 @@ Můžete definovat *profilu UML* k přizpůsobení prvků standardního modelu p
 ```  
   
 > [!NOTE]
->  Vlastnost nazvaná `name` nesmí obsahovat mezery ani interpunkci. Atribut `displayName`, která se zobrazí v uživatelském rozhraní, by měl být platný řetězec XML.  
+> Vlastnost nazvaná `name` nesmí obsahovat mezery ani interpunkci. Atribut `displayName`, která se zobrazí v uživatelském rozhraní, by měl být platný řetězec XML.  
   
  Každý profil obsahuje tři hlavní části. V opačném pořadí jsou následující:  
   
@@ -310,7 +310,7 @@ Můžete definovat *profilu UML* k přizpůsobení prvků standardního modelu p
  `name` Atribut `metaclassMoniker` je odkaz na prvek v `<metaClasses>` oddílu.  
   
 > [!NOTE]
->  Zástupný název musí začínat `/yourProfileName/`, kde `yourProfileName` je definována v `name` profilu ("CSharpProfile" v tomto příkladu). Zástupný název končí názvem jedné z položek v části metatřídy.  
+> Zástupný název musí začínat `/yourProfileName/`, kde `yourProfileName` je definována v `name` profilu ("CSharpProfile" v tomto příkladu). Zástupný název končí názvem jedné z položek v části metatřídy.  
   
  Každý stereotyp může obsahovat seznam nula nebo více vlastností, které přidá k libovolnému prvku modelu, na který se použije. `<propertyType>` Obsahuje odkaz na jeden z typů, které jsou definovány v `<propertyTypes>` oddílu. Odkaz musí být buď `<externalTypeMoniker>` k odkazování na `<externalType>,` nebo `<enumerationTypeMoniker>` k odkazování na `<enumerationType>`. Opět odkaz začíná název vašeho profilu.  
   

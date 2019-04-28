@@ -14,12 +14,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 994b87de61aaa0b303b0b0bf8454dad716c9978f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b49b1aa1022b12dc2d409037a1241f51b469a14c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114505"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436232"
 ---
 # <a name="code-snippets-schema-reference"></a>Fragmenty kódu – odkaz schématu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ Fragmenty kódu technologie IntelliSense jsou předem vytvořené části kódu,
  Určuje název sestavení, na které se odkazuje fragment kódu.  
   
 > [!NOTE]
->  `Assembly` Prvek je podporován pouze fragmenty kódu jazyka Visual Basic.  
+> `Assembly` Prvek je podporován pouze fragmenty kódu jazyka Visual Basic.  
   
  Textová hodnota elementu **sestavení** element je buď popisný textový název sestavení, jako například `System.dll`, nebo jeho silný název, například `System,Version=1.0.0.1,Culture=neutral,PublicKeyToken=9b35aa323c18d4fb1`.  
   
@@ -240,7 +240,7 @@ is a great color. I love Blue.
  Určuje funkci, která se má provést, když literál nebo objekt získá fokus v sadě Visual Studio.  
   
 > [!NOTE]
->  `Function` Element je podporován pouze ve fragmentech kódu jazyka Visual C#.  
+> `Function` Element je podporován pouze ve fragmentech kódu jazyka Visual C#.  
   
 ```xml  
 <Function>  
@@ -289,7 +289,7 @@ is a great color. I love Blue.
  Určujte adresu URL s dalšími informacemi o fragmentu kódu.  
   
 > [!NOTE]
->  Visual Studio nebude používat `HelpUrl` elementu. Tento element je součástí schématu XML fragmentu kódu technologie IntelliSense a jakékoli fragmenty kódu, které tento element obsahují, budou úspěšně ověřeny, ale hodnota elementu nebude nikdy použita.  
+> Visual Studio nebude používat `HelpUrl` elementu. Tento element je součástí schématu XML fragmentu kódu technologie IntelliSense a jakékoli fragmenty kódu, které tento element obsahují, budou úspěšně ověřeny, ale hodnota elementu nebude nikdy použita.  
   
 ```xml  
 <HelpUrl>  
@@ -325,7 +325,7 @@ is a great color. I love Blue.
  Určuje naimportované obory názvů používané fragmentem kódu technologie IntelliSense.  
   
 > [!NOTE]
->  `Import` Element je podporována pouze pro projekty jazyka Visual Basic.  
+> `Import` Element je podporována pouze pro projekty jazyka Visual Basic.  
   
 ```xml  
 <Import>  
@@ -346,7 +346,7 @@ is a great color. I love Blue.
  Seskupuje jednotlivé `Import` elementy.  
   
 > [!NOTE]
->  `Imports` Element je podporována pouze pro projekty jazyka Visual Basic.  
+> `Imports` Element je podporována pouze pro projekty jazyka Visual Basic.  
   
 ```xml  
 <Imports>  
@@ -428,7 +428,7 @@ is a great color. I love Blue.
  Určuje obor názvů, který musí být naimportován, aby bylo možné fragment kódu zkompilovat a spustit. Obor názvů zadaný v `Namespace` element se automaticky přidá do `Imports` příkaz na začátku kódu, pokud ještě neexistuje.  
   
 > [!NOTE]
->  `Namespace` Element je podporována pouze pro projekty jazyka Visual Basic.  
+> `Namespace` Element je podporována pouze pro projekty jazyka Visual Basic.  
   
 ```xml  
 <Namespace>  
@@ -475,7 +475,7 @@ is a great color. I love Blue.
  Určuje informace o odkazech na sestavení vyžadovaných fragmentem kódu.  
   
 > [!NOTE]
->  `Reference` Element je podporována pouze pro projekty jazyka Visual Basic.  
+> `Reference` Element je podporována pouze pro projekty jazyka Visual Basic.  
   
 ```xml  
 <Reference>  
@@ -497,7 +497,7 @@ is a great color. I love Blue.
  Seskupuje jednotlivé `Reference` elementy.  
   
 > [!NOTE]
->  `References` Element je podporována pouze pro projekty jazyka Visual Basic.  
+> `References` Element je podporována pouze pro projekty jazyka Visual Basic.  
   
 ```xml  
 <References>  
@@ -517,7 +517,7 @@ is a great color. I love Blue.
  Určuje textovou zkratku, pomocí níž lze fragment kódu vložit. Textová hodnota elementu `Shortcut` element může obsahovat jenom alfanumerické znaky, spojovníky (-) a podtržítka (_).  
   
 > [!CAUTION]
->  _ a – nejsou podporované znaky pro zkratky fragmentu kódu v jazyce C++.  
+> _ a – nejsou podporované znaky pro zkratky fragmentu kódu v jazyce C++.  
   
 ```xml  
 <Shortcut>  
@@ -644,7 +644,7 @@ is a great color. I love Blue.
  Určuje adresu URL s dalšími informacemi o odkazovaném sestavení.  
   
 > [!NOTE]
->  `Url` Element je podporována pouze pro projekty jazyka Visual Basic.  
+> `Url` Element je podporována pouze pro projekty jazyka Visual Basic.  
   
 ```xml  
 <Url>  

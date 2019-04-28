@@ -6,12 +6,12 @@ ms.assetid: 2cfcad00-352c-4161-814c-f5ae32d8ada8
 caps.latest.revision: 19
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: b1e34fa5d4f49d0dfa415e0ac47e55cea236307e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 646d8949004f44041fe75d1c6fed2e6f989b92c9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60043307"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435288"
 ---
 # <a name="setup-and-install"></a>Nastavení a instalace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ K sestavení nativních aplikací pro iOS, Android a Windows aplikace z common j
 Pokud máte problémy s Xamarinem po provedení tohoto nastavení a instalaci, zveřejněte svůj dotaz na [forums.xamarin.com](http://forums.xamarin.com/).
   
 > [!NOTE]
->  Do 31. března 2016, všechny Xamarin je součástí všech edicí sady Visual Studio bez dalších nákladů a nepotřebuje samostatnou licenci. Xamarin Studio Community for Mac je taky zdarma pro studenty, vývojáře OSS a malé týmy. Všimněte si, že pro existující instalace sady Visual Studio, které mají nakonfigurované starší licence Xamarinu, je nutné aktualizovat Xamarin na verzi 4.0.3.214 nebo vyšší. Chcete-li to provést, přejděte na **nástroje > Možnosti > Xamarin > ostatní**, klikněte na tlačítko **zkontrolovat** odkaz a stáhnout 4.0.3.214 aktualizovat. Po restartování sady Visual Studio, přejděte na **nástroje > účet Xamarin...**  a měli byste vidět aktualizovaný stav.  
+> Do 31. března 2016, všechny Xamarin je součástí všech edicí sady Visual Studio bez dalších nákladů a nepotřebuje samostatnou licenci. Xamarin Studio Community for Mac je taky zdarma pro studenty, vývojáře OSS a malé týmy. Všimněte si, že pro existující instalace sady Visual Studio, které mají nakonfigurované starší licence Xamarinu, je nutné aktualizovat Xamarin na verzi 4.0.3.214 nebo vyšší. Chcete-li to provést, přejděte na **nástroje > Možnosti > Xamarin > ostatní**, klikněte na tlačítko **zkontrolovat** odkaz a stáhnout 4.0.3.214 aktualizovat. Po restartování sady Visual Studio, přejděte na **nástroje > účet Xamarin...**  a měli byste vidět aktualizovaný stav.  
   
  **V tomto tématu:**  
   
@@ -56,7 +56,7 @@ Pokud máte problémy s Xamarinem po provedení tohoto nastavení a instalaci, z
 ## <a name="windows"></a> Nastavení Windows (Visual Studio a Xamarin)  
   
 > [!TIP]
->  Tyto pokyny platí pro Visual Studio 2015. Xamarin pomocí sady Visual Studio 2013 (vyžaduje se aktualizace 2), postupujte podle pokynů pro [přímé instalace Xamarin](https://developer.xamarin.com/guides/cross-platform/getting_started/requirements/#install) (xamarin.com).  
+> Tyto pokyny platí pro Visual Studio 2015. Xamarin pomocí sady Visual Studio 2013 (vyžaduje se aktualizace 2), postupujte podle pokynů pro [přímé instalace Xamarin](https://developer.xamarin.com/guides/cross-platform/getting_started/requirements/#install) (xamarin.com).  
   
 1. [Stáhněte si a spusťte instalační program pro všechny edice sady Visual Studio 2015](https://www.visualstudio.com/downloads/download-visual-studio-vs.aspx) (Community, Professional nebo Enterprise). Visual Studio 2015 Community je bezplatné edice; edice Professional a Enterprise je možné na základě zkušební verze po dobu 30 dnů, po jejichž uplynutí bude nutné koupit licenci.  
   
@@ -83,7 +83,7 @@ Pokud máte problémy s Xamarinem po provedení tohoto nastavení a instalaci, z
     ![Kontrolují se aktualizace Xamarinu v sadě Visual Studio možnosti](../cross-platform/media/cross-plat-xamarin-setup-3.png "3 instalační program různé platformy Xamarin")  
   
    > [!NOTE]
-   >  Jak bylo uvedeno dříve, se aktualizovat na verzi 4.0.3.214 Xamarin nebo vyšší, aby se zabránilo problémům s starší licence Xamarinu.  
+   > Jak bylo uvedeno dříve, se aktualizovat na verzi 4.0.3.214 Xamarin nebo vyšší, aby se zabránilo problémům s starší licence Xamarinu.  
 
    Pokud nevidíte možnost pro Xamarin v **nástroje > Možnosti**, zkontrolujte vaši instalaci, nebo zkuste restartovat aplikaci Visual Studio. Můžete také prohledat pro Xamarin v dialogovém okně Možnosti.
       

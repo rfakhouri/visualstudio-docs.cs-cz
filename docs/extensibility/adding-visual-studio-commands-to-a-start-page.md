@@ -12,12 +12,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 8461fdd3fd0aaedbbdd770a4e2762c4912c3ce0d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 68bea9ff0d91819146cc5d89167373e0e8ed6f3a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040156"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63410124"
 ---
 # <a name="add-visual-studio-commands-to-a-start-page"></a>Přidání příkazů sady Visual Studio pro úvodní stránku
 
@@ -50,7 +50,7 @@ Můžete použít `vscom:` alias vytvoření vazby mezi příkazy sady Visual St
 ```
 
 > [!NOTE]
->  `x:` Alias, který odkazuje na schématu XAML, se vyžaduje na začátku všechny příkazy.
+> `x:` Alias, který odkazuje na schématu XAML, se vyžaduje na začátku všechny příkazy.
 
  Můžete nastavit hodnotu `Command` vlastnost jakýkoli příkaz, který je přístupný z **příkaz** okna. Seznam dostupných příkazů najdete v tématu [aliasy příkazů sady Visual Studio](../ide/reference/visual-studio-command-aliases.md).
 
@@ -66,7 +66,7 @@ Můžete použít `vscom:` alias vytvoření vazby mezi příkazy sady Visual St
  Příkazy můžete volat z registrovaných rozšíření VSPackages pomocí stejné syntaxe, která slouží k volání jiné příkazy sady Visual Studio. Například, pokud nainstalovaný balíček VSPackage správy kódu přidá **domovskou stránku** příkaz **zobrazení** nabídku, můžete volat příkaz tak, že nastavíte `CommandParameter` k `View.HomePage`.
 
 > [!NOTE]
->  Pokud zavoláte příkaz, který je přidružený k VSPackage, musí být balíček načíst při vyvolání příkazu.
+> Pokud zavoláte příkaz, který je přidružený k VSPackage, musí být balíček načíst při vyvolání příkazu.
 
 ## <a name="add-commands-from-assemblies"></a>Přidání příkazů ze sestavení
  Volání příkazu ze sestavení nebo na přístupový kód v sadě VSPackage, která nejsou spojena s příkaz nabídky, musíte vytvořit alias pro sestavení a poté zavolejte alias.
@@ -90,7 +90,7 @@ Můžete použít `vscom:` alias vytvoření vazby mezi příkazy sady Visual St
     ```
 
 > [!NOTE]
->  Musíte zkopírovat sestavení a vložte jej do *.. \\{Instalační složky sady visual Studio} \Common7\IDE\PrivateAssemblies\* k Ujistěte se, že je načteno předtím, než je volána.
+> Musíte zkopírovat sestavení a vložte jej do *.. \\{Instalační složky sady visual Studio} \Common7\IDE\PrivateAssemblies\* k Ujistěte se, že je načteno předtím, než je volána.
 
 ## <a name="add-commands-with-the-dte-object"></a>Přidání příkazů s objekt DTE
  Objekt DTE můžete přistupovat z úvodní stránku značek a kódu.

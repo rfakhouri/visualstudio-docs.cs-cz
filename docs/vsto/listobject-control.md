@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1df66fcc2e7844bb05ff9a09e8fc71b6fb59ea9f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 323286555bf1ed932b85ed6da84a344787fae265
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60073629"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438790"
 ---
 # <a name="listobject-control"></a>ListObject – ovládací prvek
   <xref:Microsoft.Office.Tools.Excel.ListObject> Je ovládací prvek seznamu, který zpřístupňuje události a může být vázaný na data. Když přidáte seznam do listu, vytvoří Visual Studio <xref:Microsoft.Office.Tools.Excel.ListObject> ovládací prvek, který můžete programovat proti přímo bez nutnosti procházení objektový model aplikace Microsoft Office Excel.
@@ -34,13 +34,13 @@ ms.locfileid: "60073629"
  Projekty na úrovni dokumentu, můžete přidat <xref:Microsoft.Office.Tools.Excel.ListObject> ovládacích prvků na list v době návrhu nebo v době běhu. Projekty doplňků VSTO, můžete přidat <xref:Microsoft.Office.Tools.Excel.ListObject> ovládacích prvků na listech pouze za běhu. Další informace najdete v tématu [jak: Přidání ovládacích prvků ListObject do listů](../vsto/how-to-add-listobject-controls-to-worksheets.md).
 
 > [!NOTE]
->  Ve výchozím nastavení, nejsou trvalé dynamicky vytvořený seznam objektů v listu jako hostitele Určuje, kdy je uzavřen do listu. Další informace najdete v tématu [přidání ovládacích prvků do dokumentů Office za běhu](../vsto/adding-controls-to-office-documents-at-run-time.md).
+> Ve výchozím nastavení, nejsou trvalé dynamicky vytvořený seznam objektů v listu jako hostitele Určuje, kdy je uzavřen do listu. Další informace najdete v tématu [přidání ovládacích prvků do dokumentů Office za běhu](../vsto/adding-controls-to-office-documents-at-run-time.md).
 
 ## <a name="bind-data-to-the-control"></a>Vytvoření vazby dat k ovládacímu prvku
  A <xref:Microsoft.Office.Tools.Excel.ListObject> ovládací prvek podporuje jednoduché a komplexní datovou vazbu. <xref:Microsoft.Office.Tools.Excel.ListObject> Ovládací prvek může být vázán na zdroji dat pomocí <xref:Microsoft.Office.Tools.Excel.ListObject.DataSource%2A> a <xref:Microsoft.Office.Tools.Excel.ListObject.DataMember%2A> vlastnosti v době návrhu nebo <xref:Microsoft.Office.Tools.Excel.ListObject.SetDataBinding%2A> metoda za běhu.
 
 > [!NOTE]
->  <xref:Microsoft.Office.Tools.Excel.ListObject> Automaticky aktualizuje, když je vázán na zdroj dat, jako například <xref:System.Data.DataTable>, která vyvolává události, když se data změní. Svážete-li <xref:Microsoft.Office.Tools.Excel.ListObject> ke zdroji dat, který nevyvolá události, když se data změní, musíte zavolat <xref:Microsoft.Office.Tools.Excel.ListObject.RefreshDataRow%2A> nebo <xref:Microsoft.Office.Tools.Excel.ListObject.RefreshDataRows%2A> způsob aktualizace <xref:Microsoft.Office.Tools.Excel.ListObject>.
+> <xref:Microsoft.Office.Tools.Excel.ListObject> Automaticky aktualizuje, když je vázán na zdroj dat, jako například <xref:System.Data.DataTable>, která vyvolává události, když se data změní. Svážete-li <xref:Microsoft.Office.Tools.Excel.ListObject> ke zdroji dat, který nevyvolá události, když se data změní, musíte zavolat <xref:Microsoft.Office.Tools.Excel.ListObject.RefreshDataRow%2A> nebo <xref:Microsoft.Office.Tools.Excel.ListObject.RefreshDataRows%2A> způsob aktualizace <xref:Microsoft.Office.Tools.Excel.ListObject>.
 
  Když přidáte <xref:Microsoft.Office.Tools.Excel.ListObject> na listu buňku mapováním opakující se element schématu na tuto buňku, Visual Studio automaticky mapuje <xref:Microsoft.Office.Tools.Excel.ListObject> pro generované datová sada. Ale <xref:Microsoft.Office.Tools.Excel.ListObject> není automaticky vázán na data. Můžete provést kroky k vytvoření vazby <xref:Microsoft.Office.Tools.Excel.ListObject> do datové sady v době návrhu nebo za běhu v projektu úrovni dokumentu. Můžete programově vytvořit vazbu <xref:Microsoft.Office.Tools.Excel.ListObject> k datové sadě za běhu v doplňku VSTO.
 
@@ -49,7 +49,7 @@ ms.locfileid: "60073629"
  Můžete rychle přejít k vyplnění <xref:Microsoft.Office.Tools.Excel.ListObject> ovládacího prvku pomocí vytvoření vazby <xref:Microsoft.Office.Tools.Excel.ListObject> ke zdroji dat. Pokud upravíte data v vázaný na data <xref:Microsoft.Office.Tools.Excel.ListObject>, změny se automaticky provedeny ve zdroji dat. Pokud chcete, aby vyplnil <xref:Microsoft.Office.Tools.Excel.ListObject> a potom povolit uživatelům změnit data v <xref:Microsoft.Office.Tools.Excel.ListObject> beze změny zdroje dat, můžete použít <xref:Microsoft.Office.Tools.Excel.ListObject.Disconnect%2A> metodu detach <xref:Microsoft.Office.Tools.Excel.ListObject> ze zdroje dat. Další informace najdete v tématu [jak: Vyplnění ovládacích prvků ListObject daty](../vsto/how-to-fill-listobject-controls-with-data.md).
 
 > [!NOTE]
->  Vytváření datových vazeb není podporováno na překrývající se <xref:Microsoft.Office.Tools.Excel.ListObject> ovládacích prvků.
+> Vytváření datových vazeb není podporováno na překrývající se <xref:Microsoft.Office.Tools.Excel.ListObject> ovládacích prvků.
 
 ### <a name="improve-performance-in-listobject-controls"></a>Zlepšení výkonu ovládacích prvků ListObject
  Čtení souboru XML do vázaný na data <xref:Microsoft.Office.Tools.Excel.ListObject> ovládací prvek je spíše pomalejší, pokud nejprve vazbu ovládacího prvku a následně zavolat <xref:System.Data.DataSet.ReadXml%2A> pro naplnění dataset. Chcete-li zvýšit výkon, zavolejte <xref:System.Data.DataSet.ReadXml%2A> před vazbu ovládacího prvku.

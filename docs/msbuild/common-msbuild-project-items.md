@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 54288f345276a019bf8fd6987a9e138c53c8a9e2
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59667375"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62569867"
 ---
 # <a name="common-msbuild-project-items"></a>Společné položky projektu nástroje MSBuild
 V [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], položka je pojmenovaný odkaz na jeden nebo více souborů. Položky obsahují metadat – například názvy souborů, cesty a čísel verzí. Všechny typy v projektu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] mají společnou několik položek. Tyto položky jsou definovány v souboru *Microsoft.Build.CommonTypes.xsd*.
@@ -34,7 +34,7 @@ V [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md
 |Název metadat položky|Popis|
 |---------------|-----------------|
 |HintPath|Volitelný řetězec. Relativní nebo absolutní cesta k sestavení.|
-|Name|Volitelný řetězec. Zobrazovaný název sestavení, například "System.Windows.Forms."|
+|Název|Volitelný řetězec. Zobrazovaný název sestavení, například "System.Windows.Forms."|
 |FusionName|Volitelný řetězec. Určuje jednoduchý nebo silné sloučeném názvu pro položku.<br /><br /> Když tento atribut je k dispozici, můžete ušetřit čas, protože není potřeba otevřít získat sloučeném názvu souboru sestavení.|
 |SpecificVersion|Nepovinný datový typ boolean. Určuje, zda by se měla odkazovat pouze verze ve sloučeném názvu.|
 |Aliasy|Volitelný řetězec. Všechny aliasy pro odkaz.|
@@ -45,7 +45,7 @@ V [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md
 
 |Název metadat položky|Popis|
 |---------------|-----------------|
-|Name|Volitelný řetězec. Zobrazovaný název součásti.|
+|Název|Volitelný řetězec. Zobrazovaný název součásti.|
 |Guid|Povinný řetězec. Identifikátor GUID pro komponentu ve formě {12345678-1234-1234-1234-1234567891234}.|
 |VersionMajor|Povinný řetězec. Hlavní část čísla verze komponenty. Například "5" Pokud celé číslo verze je "5.46."|
 |VersionMinor|Povinný řetězec. Dílčí část čísla verze komponenty. Například "46" Pokud celé číslo verze je "5.46."|
@@ -65,7 +65,7 @@ V [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md
 
 |Název metadat položky|Popis|
 |---------------|-----------------|
-|Name|Povinný řetězec. Základní název souboru manifestu.|
+|Název|Povinný řetězec. Základní název souboru manifestu.|
 |HintPath|Povinný řetězec. Relativní cesta souboru manifestu.|
 
 ### <a name="projectreference"></a>ProjectReference
@@ -73,7 +73,7 @@ V [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md
 
 |Název metadat položky|Popis|
 |---------------|-----------------|
-|Name|Volitelný řetězec. Zobrazovaný název odkazu.|
+|Název|Volitelný řetězec. Zobrazovaný název odkazu.|
 |Project|Volitelný řetězec. Identifikátor GUID pro odkaz ve formuláři {12345678-1234-1234-1234-1234567891234}.|
 |Balíček|Volitelný řetězec. Cesta souboru projektu, který se odkazuje.|
 |ReferenceOutputAssembly|Nepovinný datový typ boolean. Pokud nastavena na `false`, neobsahuje výstup Odkazovaný projekt jako [odkaz](#reference) tohoto projektu, ale přesto se zajistí, že jiný projekt sestavení před tímto. Výchozí hodnota je `true`.|

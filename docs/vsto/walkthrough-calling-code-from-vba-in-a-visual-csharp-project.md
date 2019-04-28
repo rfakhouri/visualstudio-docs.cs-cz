@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f4f71bbc725d6c9f9fe90f0e4421892fa34ed886
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 46f88b47e135331e5f1dc010aa4a73abed520f51
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082266"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438661"
 ---
 # <a name="walkthrough-call-code-from-vba-in-a-visual-c-project"></a>Návod: Volání kódu z jazyka VBA v Vizuálu C# projektu
   Tento návod ukazuje, jak volat metodu v přizpůsobení na úrovni dokumentu pro aplikaci Microsoft Office Excel z jazyka Visual Basic pro kód Applications (VBA) v sešitu. Postup zahrnuje tři základní kroky: Přidejte metodu k `Sheet1` hostování třída položek, zveřejňují metodu pro kód VBA v sešitu a poté zavolejte metodu z jazyka VBA kód v sešitu.
@@ -48,7 +48,7 @@ ms.locfileid: "60082266"
 - Volání metody z jazyka VBA kód.
 
 > [!NOTE]
->  Váš počítač může v následujících pokynech zobrazovat odlišné názvy nebo umístění některých prvků uživatelského rozhraní sady Visual Studio. Tyto prvky jsou určeny edicí sady Visual Studio a použitým nastavením. Další informace najdete v tématu [přizpůsobení integrovaného vývojového prostředí sady Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
+> Váš počítač může v následujících pokynech zobrazovat odlišné názvy nebo umístění některých prvků uživatelského rozhraní sady Visual Studio. Tyto prvky jsou určeny edicí sady Visual Studio a použitým nastavením. Další informace najdete v tématu [přizpůsobení integrovaného vývojového prostředí sady Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="prerequisites"></a>Požadavky
  K dokončení tohoto návodu budete potřebovat následující komponenty:
@@ -71,7 +71,7 @@ ms.locfileid: "60082266"
 3. Na pásu karet klikněte na tlačítko **Developer** kartu.
 
     > [!NOTE]
-    >  Pokud **Developer** karta není zobrazena, musíte ji nejdříve zobrazit. Další informace najdete v tématu [jak: Zobrazení karty Vývojář na pásu karet](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
+    > Pokud **Developer** karta není zobrazena, musíte ji nejdříve zobrazit. Další informace najdete v tématu [jak: Zobrazení karty Vývojář na pásu karet](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
 
 4. V **kód** klikněte na možnost **jazyka Visual Basic**.
 
@@ -209,7 +209,7 @@ ms.locfileid: "60082266"
  Nyní můžete volat `CreateVstoNamedRange` metodu z jazyka VBA kód v sešitu.
 
 > [!NOTE]
->  V tomto názorném postupu přidáte kód VBA v sešitu při ladění projektu. Kód VBA, který přidáte do tohoto dokumentu se přepíše při příštím sestavení projektu, protože Visual Studio nahradí kopii dokumentu ze složky projektu hlavní dokument ve výstupní složce sestavení. Pokud chcete uložit kód VBA, zkopírujte jej do dokumentu ve složce projektu. Další informace najdete v tématu [kombinovat VBA a přizpůsobení na úrovni dokumentu](../vsto/combining-vba-and-document-level-customizations.md).
+> V tomto názorném postupu přidáte kód VBA v sešitu při ladění projektu. Kód VBA, který přidáte do tohoto dokumentu se přepíše při příštím sestavení projektu, protože Visual Studio nahradí kopii dokumentu ze složky projektu hlavní dokument ve výstupní složce sestavení. Pokud chcete uložit kód VBA, zkopírujte jej do dokumentu ve složce projektu. Další informace najdete v tématu [kombinovat VBA a přizpůsobení na úrovni dokumentu](../vsto/combining-vba-and-document-level-customizations.md).
 
 ### <a name="to-call-the-method-from-vba-code"></a>Volat metodu z jazyka VBA kód
 

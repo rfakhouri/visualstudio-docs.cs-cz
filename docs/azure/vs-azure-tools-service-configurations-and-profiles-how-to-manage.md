@@ -4,17 +4,19 @@ description: Zjistěte, jak pracovat se soubory konfigurace profilů a konfigura
 author: ghogen
 manager: jillfra
 assetId: 7da8c551-fb06-4057-b5c7-c77f4b39d803
+ms.prod: visual-studio-dev14
+ms.technology: vs-azure
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/11/2017
 ms.author: ghogen
 ms.openlocfilehash: 353b98ae0ab186a4ff665566a8f3b7600db66274
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55919349"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62568999"
 ---
 # <a name="how-to-manage-service-configurations-and-profiles"></a>Postup správy konfigurací a profilů služby
 ## <a name="overview"></a>Přehled
@@ -31,28 +33,28 @@ Můžete také otevřít **spravovat konfigurace** dialogové okno stránky vlas
 
 ### <a name="to-add-a-service-configuration"></a>Chcete-li přidat konfiguraci služby
 1. V Průzkumníku řešení otevřete místní nabídku pro projekt Azure a pak vyberte **spravovat konfigurace**.
-
+   
     **Spravovat konfigurace služeb** zobrazí se dialogové okno.
 2. Chcete-li přidat konfiguraci služby, musíte vytvořit kopii existující konfigurace. K tomuto účelu zvolte konfiguraci, kterou chcete zkopírovat ze seznamu název a potom vyberte **vytvořit kopii**.
 3. (Volitelné) Aby byla konfigurace služby jiný název, vyberte novou konfiguraci služby ze seznamu název a pak vyberte **přejmenovat**. V **název** textové pole, zadejte název, který chcete použít pro tuto konfiguraci služby a potom vyberte **OK**.
-
+   
     Nová služba konfigurační soubor s názvem ServiceConfiguration. [Název] .cscfg je přidán do projektu Azure v Průzkumníku řešení.
 
 ### <a name="to-delete-a-service-configuration"></a>Odstranit konfiguraci služby
 1. V Průzkumníku řešení otevřete místní nabídku pro projekt Azure a pak vyberte **spravovat konfigurace**.
-
+   
     **Spravovat konfigurace služeb** zobrazí se dialogové okno.
 2. Chcete-li odstranit konfiguraci služby, zvolte konfiguraci, kterou chcete odstranit z **název** seznamu a pak vyberte **odebrat**. Chcete-li ověřit, že chcete odstranit tuto konfiguraci se zobrazí dialogové okno.
 3. Vyberte **Odstranit**.
-
+   
      Konfigurační soubor služby se odebere z projektu Azure v Průzkumníku řešení.
 
 ### <a name="to-rename-a-service-configuration"></a>Chcete-li přejmenovat konfigurace služby
 1. V Průzkumníku řešení otevřete místní nabídku pro projekt Azure a pak vyberte **spravovat konfigurace**.
-
+   
     **Spravovat konfigurace služeb** zobrazí se dialogové okno.
 2. Chcete-li přejmenovat konfigurace služby, zvolte novou konfiguraci služby z **název** seznamu a pak vyberte **přejmenovat**. V **název** textové pole, zadejte název, který chcete použít pro tuto konfiguraci služby a potom vyberte **OK**.
-
+   
     Název konfiguračního souboru služby se změnilo v projektu Azure v Průzkumníku řešení.
 
 ### <a name="to-change-a-service-configuration"></a>Chcete-li změnit konfiguraci služby
@@ -66,16 +68,16 @@ Při prvním spuštění průvodce, vytvoří se výchozí profil. Visual Studio
 ### <a name="to-add-a-profile"></a>Chcete-li přidat profil
 1. Otevřete místní nabídku pro projekt Azure a pak vyberte **publikovat**.
 2. Vedle položky **cílový profil** seznamu, vyberte **uložit profil** tlačítko, jako je vidět na následujícím obrázku. Tím se vytvoří profil, který pro vás.
-
+   
     ![Vytvořit nový profil](./media/vs-azure-tools-service-configurations-and-profiles-how-to-manage/create-new-profile.png)
 3. Po vytvoření profilu vyberte **< spravovat >** v **cílový profil** seznamu.
-
+   
     **Spravovat profily** zobrazí se dialogové okno, jako je vidět na následujícím obrázku.
-
+   
     ![Spravovat profily dialogového okna](./media/vs-azure-tools-service-configurations-and-profiles-how-to-manage/manage-profiles.png)
 4. V **název** seznamu, zvolte profil a potom vyberte **vytvořit kopii**.
 5. Zvolte **Zavřít** tlačítko.
-
+   
     Nový profil se zobrazí v seznamu cílů profilu.
 6. V **cílový profil** seznamu, vyberte profil, který jste právě vytvořili. Nastavení Průvodce publikování se vyplní možností profil, který jste vybrali.
 7. Vyberte **předchozí** a **Další** tlačítka pro zobrazení jednotlivých stránkách Průvodce publikováním a nastavení pro tento profil. Zobrazit [Průvodce publikováním aplikace Azure](http://go.microsoft.com/fwlink/p/?LinkID=623085) informace.

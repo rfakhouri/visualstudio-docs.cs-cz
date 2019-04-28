@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 595c9127aad71cac6f446f356c309809b7172d94
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 82763f78673391ab6a308ba026a6b9e53c3b474b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045484"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438831"
 ---
 # <a name="manage-documents-on-a-server-by-using-the-serverdocument-class"></a>Správa dokumentů na serveru s použitím třídy ServerDocument
   Můžete použít `ServerDocument` třídy v [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] ke správě několik aspektů přizpůsobení na úrovni dokumentu i v případě, že není nainstalovaný Microsoft Office Word nebo Microsoft Office Excel. Můžete provádět následující úlohy:
@@ -38,7 +38,7 @@ ms.locfileid: "60045484"
  Další informace o Visual Studio 2010 Tools pro systém Office Runtime, rozšíření Office pro rozhraní .NET Framework, naleznete v tématu [Visual Studio Tools for Office runtime přehled](../vsto/visual-studio-tools-for-office-runtime-overview.md).
 
 > [!NOTE]
->  Pokud máte starší verzi aplikace, která používá `ServerDocument` třídy v `Visual Studio Tools for Office` system (verze 3.0 Runtime), `Visual Studio Tools for Office` systém (verze 3.0 runtime) musí být nainstalován na počítačích, na kterých běží aplikace. `Visual Studio 2010 Tools for Office runtime` Nelze spustit tyto aplikace.
+> Pokud máte starší verzi aplikace, která používá `ServerDocument` třídy v `Visual Studio Tools for Office` system (verze 3.0 Runtime), `Visual Studio Tools for Office` systém (verze 3.0 runtime) musí být nainstalován na počítačích, na kterých běží aplikace. `Visual Studio 2010 Tools for Office runtime` Nelze spustit tyto aplikace.
 
 ## <a name="CachedData"></a> Práce s data uložená v mezipaměti v dokumentu
  `ServerDocument` Třída obsahuje členy, které slouží k práci s mezipamětí dat v upravené dokumenty. Další informace o data uložená v mezipaměti, naleznete v tématu [ukládat data do mezipaměti](../vsto/caching-data.md) a [přístup k datům v dokumentech na serveru](../vsto/accessing-data-in-documents-on-the-server.md).

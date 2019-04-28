@@ -18,12 +18,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 934073e5d266c2ddf645acd7dddcfb13711f92de
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: cdf7c5fe724ff4b043ca304eee3e5e0f31b0dd85
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54779786"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437710"
 ---
 # <a name="using-the-tasks-window"></a>Používání okna úloh
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ ms.locfileid: "54779786"
  ![Okno Paralelní úkoly](../debugger/media/parallel-tasks-window.png "Parallel_Tasks_Window")  
   
 > [!NOTE]
->  Ve spravovaném kódu <xref:System.Threading.Tasks.Task> , který je ve stavu <xref:System.Threading.Tasks.TaskStatus>, <xref:System.Threading.Tasks.TaskStatus>, nebo <xref:System.Threading.Tasks.TaskStatus> nemusí být zobrazeny v okně úlohy při spravovaná vlákna jsou v režimu spánku nebo připojení stavu.  
+> Ve spravovaném kódu <xref:System.Threading.Tasks.Task> , který je ve stavu <xref:System.Threading.Tasks.TaskStatus>, <xref:System.Threading.Tasks.TaskStatus>, nebo <xref:System.Threading.Tasks.TaskStatus> nemusí být zobrazeny v okně úlohy při spravovaná vlákna jsou v režimu spánku nebo připojení stavu.  
   
 ## <a name="tasks-column-information"></a>Informace o sloupci úlohy  
  Sloupce v **úlohy** v okně zobrazí následující informace.  

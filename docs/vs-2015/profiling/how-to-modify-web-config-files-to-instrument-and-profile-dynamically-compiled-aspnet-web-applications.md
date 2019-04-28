@@ -9,12 +9,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a16ad46722213a703785d08209d68b3c4ee6b04f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d9e4fc4dfdff336b9ddcbd04bd031b48a8acc4dd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099584"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432606"
 ---
 # <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>Postupy: Úprava souborů Web.Config za účelem instrumentace a profilování dynamicky kompilovaných webových aplikací ASP.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ Můžete použít [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nástrojů pro pr
  Toto téma popisuje, jak upravit konfigurační soubor web.config pro povolení instrumentace a profilování [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] webové aplikace.  
   
 > [!NOTE]
->  Není nutné upravit soubor web.config, použijete-li metoda profilování vzorkování nebo instrumentaci předkompilované [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] modulu.  
+> Není nutné upravit soubor web.config, použijete-li metoda profilování vzorkování nebo instrumentaci předkompilované [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] modulu.  
   
  Je kořenový soubor web.config **konfigurace** elementu. Účelem instrumentace a profilování dynamicky kompilovaných [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] webovou aplikaci, musíte přidat nebo upravit následující prvky:  
   

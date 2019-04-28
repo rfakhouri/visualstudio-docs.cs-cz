@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 49b46c9d5fc3ee24b845e488752c15e70082c833
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56642999"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62777060"
 ---
 # <a name="callercallee-view---net-memory-instrumentation-data"></a>Zobrazení volající/volaný – instrumentace paměti .NET dat
 Zobrazení volající/volaný – data profilace, která byla shromážděna pomocí metody instrumentace paměti .NET zobrazí přidělení a dat časování pro vybranou funkci a funkce nadřazené a podřízené vybrané funkce. Zobrazení volající/volaný obsahuje tři mřížky.

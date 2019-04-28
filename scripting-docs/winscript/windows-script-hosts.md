@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: eec1824bd3ba1a8acb7e3c540656151cd4b11d1f
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58145106"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62840041"
 ---
 # <a name="windows-script-hosts"></a>Moduly Windows Script Host
 Při implementaci Microsoft Windows Script host, můžete bezpečně předpokládat, že skriptovací stroj jen volá [iactivescriptsite –](../winscript/reference/iactivescriptsite.md) rozhraní v kontextu základní vlákna tak dlouho, dokud hostitel provede následující akce:  

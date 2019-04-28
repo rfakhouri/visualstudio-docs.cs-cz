@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a05aba81292fba9520defe39af6977682452b850
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ab2f063f684407c89cd3ec73cd256d0219805b66
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60080628"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63409431"
 ---
 # <a name="installshield-limited-edition"></a>InstallShield Limited Edition
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "60080628"
 Pomocí programu InstallShield Limited Edition, můžete vytvořit instalační soubor a distribuovat ji uživatelům tak, aby si můžou nainstalovat aplikace klasické pracovní plochy nebo komponenty bez připojení k síti. InstallShield Limited Edition je zdarma pro uživatele verze sady Visual Studio Professional a Enterprise. Nahradí Windows Installer, která sadě Visual Studio už nepodporuje. Jako alternativu můžete distribuovat aplikace a komponenty s použitím technologie ClickOnce, která vyžaduje připojení k síti. Zobrazit [ClickOnce – zabezpečení a nasazení](../deployment/clickonce-security-and-deployment.md).  
   
 > [!NOTE]
->  Můžete pokračovat v používání Instalační služby systému Windows projektů vytvořených v dřívějších verzích sady Visual Studio po instalaci rozšíření projektů instalačního programu Visual Studio. Zobrazit [instalační program sady Visual Studio projekty rozšíření](http://blogs.msdn.com/b/visualstudio/archive/2014/04/17/visual-studio-installer-projects-extension.aspx).  
+> Můžete pokračovat v používání Instalační služby systému Windows projektů vytvořených v dřívějších verzích sady Visual Studio po instalaci rozšíření projektů instalačního programu Visual Studio. Zobrazit [instalační program sady Visual Studio projekty rozšíření](http://blogs.msdn.com/b/visualstudio/archive/2014/04/17/visual-studio-installer-projects-extension.aspx).  
   
 ### <a name="to-enable-installshield-limited-edition"></a>To enable InstallShield Limited Edition  
   

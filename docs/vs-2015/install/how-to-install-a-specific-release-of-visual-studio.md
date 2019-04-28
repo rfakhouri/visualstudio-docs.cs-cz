@@ -11,12 +11,12 @@ caps.latest.revision: 20
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: fdf7417364d834b00369e211f584caa2ab4cbdf5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: dde0cefabf0523484ad76ac56f7f2760de8c7acc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054466"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433077"
 ---
 # <a name="how-to-install-a-specific-release-of-visual-studio"></a>Postupy: Instalace konkrétní verze sady Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ ms.locfileid: "60054466"
 |Visual Studio Enterprise (původní RTM s žádné aktualizace)|Visual Studio Enterprise RTM (k dispozici [stránce pro stažení předplatná MSDN](https://msdn.microsoft.com/subscriptions/downloads/))|`vs_enterprise.exe /OverrideFeedURI https://download.microsoft.com/download/5/7/B/57BF5016-E4F0-4EB5-BE27-2BFA87E7723F/20150713.1/enu/feed.xml`|Instalační program sady Visual Studio použije feed.xml, která byla k dispozici po vydání RTM|
 
 > [!IMPORTANT]
->  V závislosti na jazyku, který chcete použít nahraďte "CSY" (pro angličtinu) s jedním z následujících hodnot:
+> V závislosti na jazyku, který chcete použít nahraďte "CSY" (pro angličtinu) s jedním z následujících hodnot:
 >
 > - Kontextová nápověda (pro čínštinu (zjednodušenou))
 >   - Sada CHT (pro čínština (tradiční))

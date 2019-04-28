@@ -19,12 +19,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a39a2ef42463bd781f6bb8a24e3cfbc10b937b90
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 74c08f7ee338a38267ba0b259fbd8cb207b64d71
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056065"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432311"
 ---
 # <a name="identifying-and-customizing-keyboard-shortcuts-in-visual-studio"></a>Identifikování a přizpůsobení klávesových zkratek v sadě Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ Můžete určit klávesové zkratky pro příkazy sady Visual Studio, tyto zkrat
   Pokud je klávesová zkratka přiřazena k příkazu v globálním kontextu a bez jiných kontextů, tato zkratka vždy vyvolá daný příkaz. Klávesová zkratka může být však přiřazena k jednomu příkazu v globálním kontextu a k jinému příkazu ve specifickém kontextu. Používáte-li takovou klávesovou zkratku v konkrétním kontextu, tato zkratka vyvolá příkaz pro konkrétní kontext, nikoli pro globální kontext.
 
 > [!NOTE]
->  Vaše nastavení a edice sady Visual Studio může změnit názvy a umístění příkazů nabídky a možnosti, které se zobrazí v dialogových oknech. Toto téma vychází **obecným vývojovým nastavením**.
+> Vaše nastavení a edice sady Visual Studio může změnit názvy a umístění příkazů nabídky a možnosti, které se zobrazí v dialogových oknech. Toto téma vychází **obecným vývojovým nastavením**.
 
 ## <a name="bkmk_identify"></a> Určení klávesové zkratky
 
@@ -91,12 +91,12 @@ Můžete určit klávesové zkratky pro příkazy sady Visual Studio, tyto zkrat
      Například můžete použít **globální** Pokud chcete, aby zkratka fungovala ve všech kontextech. Můžete použít jakoukoli zkratku, která není namapována (jako globální) v jiném editoru. V opačném případě editor zkratku přepíše.
 
     > [!NOTE]
-    >  Následující klávesy nelze přiřadit jako součást klávesové zkratky v **globální**: Tisk navigátoru obrazovky/Sys Rq, Scroll Lock, Pause/Break, kartu, Caps Lock, Insert, domů, End, Page Up, Page Down, klávesu s logem Windows, klíč aplikace, klávesy se šipkami nebo Enter. Num Lock, Delete nebo Clear na numerické klávesnici; nebo Ctrl + Alt + Delete.
+    > Následující klávesy nelze přiřadit jako součást klávesové zkratky v **globální**: Tisk navigátoru obrazovky/Sys Rq, Scroll Lock, Pause/Break, kartu, Caps Lock, Insert, domů, End, Page Up, Page Down, klávesu s logem Windows, klíč aplikace, klávesy se šipkami nebo Enter. Num Lock, Delete nebo Clear na numerické klávesnici; nebo Ctrl + Alt + Delete.
 
 6. V **stiskněte klávesy zkratky** zadejte klávesovou zkratku, kterou chcete použít.
 
     > [!NOTE]
-    >  Můžete vytvořit zástupce, který kombinuje písmeno s klávesou Alt, klávesou Ctrl nebo oběma klávesami. Můžete také vytvořit zástupce, který kombinuje klávesu Shift a písmeno s klávesou Alt, klávesou Ctrl nebo oběma klávesami.
+    > Můžete vytvořit zástupce, který kombinuje písmeno s klávesou Alt, klávesou Ctrl nebo oběma klávesami. Můžete také vytvořit zástupce, který kombinuje klávesu Shift a písmeno s klávesou Alt, klávesou Ctrl nebo oběma klávesami.
 
      Pokud je klávesová zkratka již přiřazena k jinému příkazu, zobrazí se v **zkratku aktuálně používá** pole. V takovém případě stisknutím klávesy Backspace tuto klávesovou zkratku smažte a zkuste jinou.
 
@@ -105,7 +105,7 @@ Můžete určit klávesové zkratky pro příkazy sady Visual Studio, tyto zkrat
 7. Zvolte **přiřadit** tlačítko.
 
     > [!NOTE]
-    >  Pokud chcete zadat jinou zkratku pro příkaz, zvolte **přiřadit** tlačítko a klikněte na tlačítko **zrušit** tlačítko, dialog se zavře, ale změna se nevrátí.
+    > Pokud chcete zadat jinou zkratku pro příkaz, zvolte **přiřadit** tlačítko a klikněte na tlačítko **zrušit** tlačítko, dialog se zavře, ale změna se nevrátí.
 
 ## <a name="bkmk_transfer"></a> Sdílení vlastní klávesové zkratky
  Vlastní klávesové zkratky je možné sdílet exportováním do souboru a předáním souboru ostatním, aby data mohli importovat.

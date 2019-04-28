@@ -14,12 +14,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cb0502128b95716b0598b373be81519a06911f06
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 863df1da686e56a8b38c0652baf0aafab7436d08
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60052802"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434357"
 ---
 # <a name="define-packages-and-namespaces"></a>Definování balíčků a oborů názvů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -80,7 +80,7 @@ V sadě Visual Studio *balíčku* je kontejner pro definice elementů UML, jako 
 2. Klikněte pravým tlačítkem na balíček nebo model, ke kterému chcete přidat nový balíček.  
   
    > [!NOTE]
-   >  Je možné vnořovat balíček uvnitř jiného balíčku.  
+   > Je možné vnořovat balíček uvnitř jiného balíčku.  
   
 3. Přejděte na **přidat** a potom klikněte na tlačítko **balíčku**.  
   
@@ -95,7 +95,7 @@ V sadě Visual Studio *balíčku* je kontejner pro definice elementů UML, jako 
 - Přetáhněte tento balíček z Průzkumníku modelů UML na diagram tříd.  
   
     > [!NOTE]
-    >  Tím se vytvoří zobrazení balíčku na tomto diagramu. Nezobrazí se nutně všechny prvky, že balíček obsahuje. Ujistěte se, že se zobrazí veškerý obsah pro balíček, že ji zobrazte v Průzkumníku modelů UML.  
+    > Tím se vytvoří zobrazení balíčku na tomto diagramu. Nezobrazí se nutně všechny prvky, že balíček obsahuje. Ujistěte se, že se zobrazí veškerý obsah pro balíček, že ji zobrazte v Průzkumníku modelů UML.  
   
 ## <a name="Elements"></a> Vytvoření modelu elementů v rámci balíčky  
  Existují čtyři způsoby, ve kterých můžete umístit prvky modelu uvnitř balíčku:  
@@ -123,7 +123,7 @@ V sadě Visual Studio *balíčku* je kontejner pro definice elementů UML, jako 
 4. Zadejte název pro nový prvek.  
   
     > [!NOTE]
-    >  Nový prvek se nezobrazí na jakýkoliv diagram. Vytvoření zobrazení nového elementu, ji můžete přetáhnout z Průzkumníku modelů UML do diagramu. Diagram musí být typ, který se zobrazí tento typ elementu.  
+    > Nový prvek se nezobrazí na jakýkoliv diagram. Vytvoření zobrazení nového elementu, ji můžete přetáhnout z Průzkumníku modelů UML do diagramu. Diagram musí být typ, který se zobrazí tento typ elementu.  
   
 #### <a name="to-create-an-element-in-a-package-on-a-uml-class-diagram"></a>Chcete-li vytvořit element v balíčku v diagramu tříd UML  
   
@@ -173,7 +173,7 @@ V sadě Visual Studio *balíčku* je kontejner pro definice elementů UML, jako 
      Kvalifikovaný název elementu se změní na zobrazit jeho nové vlastnícího balíčku.  
   
     > [!NOTE]
-    >  Přetáhněte element z balíčku do prázdné části diagramu, jeho vlastnícího balíčku nezmění. Tímto způsobem můžete vytvořit diagram, který zobrazuje prvky z několika balíčky bez nutnosti zobrazit balíčky sami.  
+    > Přetáhněte element z balíčku do prázdné části diagramu, jeho vlastnícího balíčku nezmění. Tímto způsobem můžete vytvořit diagram, který zobrazuje prvky z několika balíčky bez nutnosti zobrazit balíčky sami.  
   
 ## <a name="Pasting"></a> Vkládání elementů do balíčku  
  Element můžete vložit do balíčku. Pokud skupina souvisejících prvků vložíte do balíčku, bude také vložit vztahy mezi nimi.  
@@ -185,7 +185,7 @@ V sadě Visual Studio *balíčku* je kontejner pro definice elementů UML, jako 
 2. Klikněte pravým tlačítkem na balíček a pak klikněte na tlačítko **vložit**.  
   
     > [!NOTE]
-    >  Balíček může být v různých diagramu.  
+    > Balíček může být v různých diagramu.  
   
 ## <a name="Import"></a> Importovat relace mezi balíčky  
  Můžete definovat vztah import mezi balíčky pomocí **importovat** nástroj.  

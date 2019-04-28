@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 2fc538b8a13458d82d23fe6039eb9c1e9406be52
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599061"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62562478"
 ---
 # <a name="programming-concepts-and-features-for-sharepoint-tools-extensions"></a>Programování konceptů a funkcí pro rozšíření nástrojů SharePoint
   Existuje několik důležité koncepty programování a funkce, které se týkají nástroje služby SharePoint v sadě Visual Studio. Tyto koncepty a funkce hraje důležitou roli v většina rozšíření nástrojů služby SharePoint.

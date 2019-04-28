@@ -8,12 +8,12 @@ ms.assetid: 4f4b5f10-7314-4725-8c6e-e72f52eff918
 caps.latest.revision: 16
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 02c819ee0311066fb2a4e543213faaedfee5a2ad
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d532234e50177222c3165638c0d77a8bd7c1b142
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109410"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437966"
 ---
 # <a name="writing-unit-tests-for-cc-with-the-microsoft-unit-testing-framework-for-c"></a>Zápis testů jednotek pro C/C++ s infrastrukturou testování částí Microsoft Unit Testing Framework pro C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -247,7 +247,7 @@ V sadě Visual Studio můžete vytvořit testy jednotek pro nespravovaný kód n
     ```  
   
     > [!TIP]
-    >  Doporučujeme neměňte testy, které prošly. Místo toho přidat nový test, aktualizovat kód tak, aby byl test úspěšný a pak přidejte jiného testu, a tak dále.  
+    > Doporučujeme neměňte testy, které prošly. Místo toho přidat nový test, aktualizovat kód tak, aby byl test úspěšný a pak přidejte jiného testu, a tak dále.  
     >   
     >  Pokud uživatelé změní své požadavky, zakážete testy, které už nejsou správné. Psát nové testy a jejich fungování postupně, přírůstkové stejně.  
   
@@ -258,7 +258,7 @@ V sadě Visual Studio můžete vytvořit testy jednotek pro nespravovaný kód n
      ![Nezdaří RangeTest](../test/media/ute-cpp-testexplorer-rangetest-fail.png "UTE_Cpp_TestExplorer_RangeTest_Fail")  
   
     > [!TIP]
-    >  Ověřte, že každý test selže okamžitě poté, co jste ho napsali. To umožňuje vyhnout se snadno chybu zápisu test, který se nikdy selže.  
+    > Ověřte, že každý test selže okamžitě poté, co jste ho napsali. To umožňuje vyhnout se snadno chybu zápisu test, který se nikdy selže.  
   
 3. Vylepšení testovaného kódu tak, aby byl nový test úspěšný:  
   
@@ -286,7 +286,7 @@ V sadě Visual Studio můžete vytvořit testy jednotek pro nespravovaný kód n
      ![Průzkumník testu jednotek &#45; rozsah Test prošel](../test/media/utecpp12.png "UteCpp12")  
   
     > [!TIP]
-    >  Vývoj kódu tak, že přidáte testy jeden po druhém. Ujistěte se, že všechny testy jsou úspěšné po každé iteraci.  
+    > Vývoj kódu tak, že přidáte testy jeden po druhém. Ujistěte se, že všechny testy jsou úspěšné po každé iteraci.  
   
 ### <a name="debug"></a> Ladit test chybou  
   
@@ -361,7 +361,7 @@ V sadě Visual Studio můžete vytvořit testy jednotek pro nespravovaný kód n
      ![Všechny testy byly úspěšné](../test/media/ute-ult-alltestspass.png "UTE_ULT_AllTestsPass")  
   
 > [!TIP]
->  Je-li jednotlivé testy nemají žádné závislosti, které brání spuštění v libovolném pořadí, zapněte paralelní provádění testů s ![USTIT&#95;parallelicon&#45;malé](../test/media/ute-parallelicon-small.png "UTE_parallelicon malé") přepínací tlačítko na panelu nástrojů. To může výrazně snížit čas potřebný ke spuštění všech testů.  
+> Je-li jednotlivé testy nemají žádné závislosti, které brání spuštění v libovolném pořadí, zapněte paralelní provádění testů s ![USTIT&#95;parallelicon&#45;malé](../test/media/ute-parallelicon-small.png "UTE_parallelicon malé") přepínací tlačítko na panelu nástrojů. To může výrazně snížit čas potřebný ke spuštění všech testů.  
   
 ### <a name="refactor"></a> Refaktorujte kód beze změn testů  
   
@@ -378,7 +378,7 @@ V sadě Visual Studio můžete vytvořit testy jednotek pro nespravovaný kód n
 2. Sestavte řešení a zvolte **spustit všechny**, abyste měli jistotu, že nebyla zavedena chybu.  
   
     > [!TIP]
-    >  Správnou sadu testů jednotek poskytuje jistotu, že nebyly zavedeny chyby při změně kódu.  
+    > Správnou sadu testů jednotek poskytuje jistotu, že nebyly zavedeny chyby při změně kódu.  
     >   
     >  Zachovat refaktorování odděleně od jiných změn.  
   
