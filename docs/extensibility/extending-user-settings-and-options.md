@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 00ccae86029e43933d5624c955ed6bfcc0a045be
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56697261"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62863162"
 ---
 # <a name="extend-user-settings-and-options"></a>Rozšířit možnosti a nastavení uživatele
 V sadě Visual Studio existují dva hlavní způsoby, jak předvoleb uživatelů. **Nástroje** > **možnosti** stránky povolit uživatelům nastavit vlastní hodnoty u různých druhů, obecné a jazykově specifické nastavení. Uživatelská nastavení umožňují uživatelům zadání obecných vlastností konfigurace sady Visual Studio. Další informace o stránky možnosti najdete v tématu [možnosti a stránky možnosti](../extensibility/internals/options-and-options-pages.md). Další informace o nastavení uživatele, najdete v části [podpora pro uživatelská nastavení](../extensibility/internals/support-for-user-settings.md).

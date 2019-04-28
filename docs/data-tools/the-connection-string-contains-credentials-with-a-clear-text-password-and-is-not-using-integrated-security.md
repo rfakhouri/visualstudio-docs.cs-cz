@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 960f5a3d51ee4bad60126c124edd6ba659ba391d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55914630"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62566976"
 ---
 # <a name="the-connection-string-contains-credentials-with-a-clear-text-password-and-is-not-using-integrated-security"></a>Připojovací řetězec obsahuje přihlašovací údaje s heslem uloženým jako nešifrovaný text a nevyužívá integrované zabezpečení.
 

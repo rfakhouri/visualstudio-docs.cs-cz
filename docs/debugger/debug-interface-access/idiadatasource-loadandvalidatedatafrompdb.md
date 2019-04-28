@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5426e27d7b100c42cd571935b1634d6dbd6e990f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56626138"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62833544"
 ---
 # <a name="idiadatasourceloadandvalidatedatafrompdb"></a>IDiaDataSource::loadAndValidateDataFromPdb
 Otevře a ověřuje, že soubor databáze (PDB) programu odpovídá podpis informací uvedených a připraví soubor typu .pdb jako zdroj dat ladění.
@@ -53,7 +53,7 @@ HRESULT loadAndValidateDataFromPdb ( 
 ## <a name="return-value"></a>Návratová hodnota
 Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby. V následující tabulce jsou uvedeny možné návratové hodnoty pro tuto metodu.
 
-|Hodnota|Popis|
+|Value|Popis|
 |-----------|-----------------|
 |E_PDB_NOT_FOUND|Nepovedlo se otevřít soubor nebo soubor má neplatný formát.|
 |E_PDB_FORMAT|Došlo k pokusu o přístup k souboru se zastaralý formát.|

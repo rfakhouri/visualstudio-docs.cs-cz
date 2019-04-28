@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 64d2ce58a0a543a6bccfca4d96ff57915d45ce49
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56686558"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62848247"
 ---
 # <a name="vsgdbgvsgdbg-destructor"></a>VsgDbg::~VsgDbg (destruktor)
 Odstraní instanci `VsgDbg` třídy. Je aktivně zaznamenávány informací grafiky, soubor protokolu grafiky je dokončena a zavřít a uvolnění prostředků, které byly použity při aktivně zaznamenání grafických informací.

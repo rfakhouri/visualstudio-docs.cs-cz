@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 853a131ce522da156f0e59aaea99bc289cd2a452
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56840901"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62909189"
 ---
 # <a name="projects"></a>Projekty
 V sadě Visual Studio jsou projekty kontejnery, které vývojáři použít k uspořádání souborů zdrojového kódu a další prostředky, které se zobrazují v **Průzkumníka řešení**. Projekty jsou obvykle soubory (například soubor .csproj projektu v jazyce C#), které ukládají odkazy na soubory se zdrojovým kódem a prostředky jako rastrové soubory. Projekty umožňují organizovat, vytváření, ladění a nasazení zdrojového kódu, odkazy na webové služby a databáze a další prostředky. Rozšíření VSPackages můžete rozšířit systém projektu sady Visual Studio třemi hlavními způsoby: *typy projektů*, *podtypů projektu*, a *vlastních nástrojů*.
@@ -37,7 +37,7 @@ V sadě Visual Studio jsou projekty kontejnery, které vývojáři použít k us
 
  Vysvětluje webový projekt, který zase vytvářet webové aplikace.
 
-- [Nová generace projektů: Pod pokličkou, část 1](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md) a [nová generace projektů: Pod pokličkou část 2](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)
+- [Nová generace projektů: Pod pokličkou, část 1](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md) a [nová generace projektů: Pod kapotou, část 2](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)
 
  Vysvětluje, co se ve skutečnosti stane při vytvoření nového projektu.
 

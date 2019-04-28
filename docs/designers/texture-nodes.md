@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 73f5bfe71866422cd3717c2a29f1eeb48d15cc76
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55911010"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62844213"
 ---
 # <a name="texture-nodes"></a>Uzly textury
 
@@ -28,7 +28,7 @@ V Návrháři shaderu uzly textury ukázkové různé typy textury a geometrie a
 |**Pan UV**|Testové koordinuje zadané textury jako funkce času.<br /><br /> To slouží k přesunutí textury nebo normálové mapy po povrchu objektu.<br /><br /> **Vstup:**<br /><br /> `UV`: `float2`<br /> Souřadnice posun.<br /><br /> `Time`: `float`<br /> Časový interval pro posouvání, během několika sekund.<br /><br /> **Výstup:**<br /><br /> `Output`: `float2`<br /> Panned souřadnice.|**Krok X**<br /> Počet elementů textury, které jsou přesunuty podél osy x za sekundu.<br /><br /> **Krok Y**<br /> Počet elementů textury, které jsou přesunuty podél osy y za sekundu.|
 |**Paralaxovat UV**|Aktivuje souřadnice textury zadané jako funkce výšky a úhel zobrazení.<br /><br /> Efekt, vytvoří se označuje jako *paralaxní mapování*, nebo mapování virtuálních přesunů. Můžete ho použít pro vytváření iluzí hloubky na plochém povrchu.<br /><br /> **Vstup:**<br /><br /> `UV`: `float2`<br /> Souřadnice odsadit.<br /><br /> `Height`: `float`<br /> Heightmap hodnotu, která je přidružena `UV` souřadnice.<br /><br /> **Výstup:**<br /><br /> `Output`: `float2`<br /> Posunutou souřadnice.|**Rovina hloubky**<br /> Referenční hloubka pro paralaxní efekt. Výchozí hodnota je 0,5. Menší hodnoty texturu; vyzdvihnou vetší ji zanoří do povrchu.<br /><br /> **Měřítko hloubky**<br /> Škálování změní velikost paralaxního efektu. Díky tomu byl dojem hloubky více či méně patrný. Typické hodnoty spadají do rozsahu od 0,02 po 0,1.|
 |**Otočit UV**|Otočí souřadnice textury zadané kolem centrální bod jako funkce času.<br /><br /> Může být využit k otáčení textury nebo normálové mapy povrchu objektu.<br /><br /> **Vstup:**<br /><br /> `UV`: `float2`<br /> Souřadnice otočí.<br /><br /> `Time`: `float`<br /> Časový interval pro posouvání, během několika sekund.<br /><br /> **Výstup:**<br /><br /> `Output`: `float2`<br /> Otočený souřadnice.|**Center X**<br /> Souřadnice x, která definuje střed otáčení.<br /><br /> **Střed (Y)**<br /> Souřadnice y, která definuje střed otáčení.<br /><br /> **rychlost**<br /> Úhel v radiánech, o který se textura pootočí za sekundu.|
-|**Souřadnice textury**|Souřadnice textury aktuálního pixelu.<br /><br /> Souřadnice textury jsou určeny pomocí interpolace mezi atributů souřadnic textury blízkých vrcholů. To si lze představit jako pozici aktuálního pixelu v prostoru textury.<br /><br /> **Výstup:**<br /><br /> `Output`: `float2`<br /> Souřadnice textury.|Žádná|
+|**Souřadnice textury**|Souřadnice textury aktuálního pixelu.<br /><br /> Souřadnice textury jsou určeny pomocí interpolace mezi atributů souřadnic textury blízkých vrcholů. To si lze představit jako pozici aktuálního pixelu v prostoru textury.<br /><br /> **Výstup:**<br /><br /> `Output`: `float2`<br /> Souřadnice textury.|Žádný|
 |**Rozměry textury**|Vrací šířku a výšku mapy 2D textury.<br /><br /> Rozměry textury můžete vzít v úvahu šířku a výšku textury v shaderu.<br /><br /> **Výstup:**<br /><br /> `Output`: `float2`<br /> Šířku a výšku textury, vyjádřené jako vektor. Šířka se ukládají v prvním prvku vektoru. Výška se ukládají v druhé elementu.|**Texture**<br /> Registr textur, který je spojen s rozměry textury.|
 |**Texel Delta**|Vrátí rozdíl (vzdálenost) mezi textury mapy 2D textury.<br /><br /> Delta elementů textury můžete použít pro vzorkování v shaderu sousedních hodnot texel.<br /><br /> **Výstup:**<br /><br /> `Output`: `float2`<br /> Rozdíl (vzdálenost) z texel na další texelu (šikmo ve směru pozitivní), vyjádřené jako v prostoru textury normalizovaný vektor. Pozice všech textury sousedních lze odvodit selektivně ignoruje nebo negace U nebo V souřadnice rozdílů.|**Texture**<br /> Registr textur, který je spojen s hodnoty delta elementů textury.|
 |**Vzorek textury**|Získá vzorek barvy z mapy 2D textury na zadaných souřadnicích.<br /><br /> Mapy textury můžete použít pro poskytnutí detailu barvy na povrchu objektu.<br /><br /> **Vstup:**<br /><br /> `UV`: `float2`<br /> Souřadnice, kde je vzorek odebírán.<br /><br /> **Výstup:**<br /><br /> `Output`: `float4`<br /> Ukázka barvy.|**Texture**<br /> Registr textur, který je spojen se vzorkovačem.|

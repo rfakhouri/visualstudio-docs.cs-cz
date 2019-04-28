@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: b3e02869abab65878412f96b77d5782b9717a1b6
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58155703"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62821925"
 ---
 # <a name="idebugasyncoperationstart"></a>IDebugAsyncOperation::Start
 Způsobí, že na začátek asynchronní operace.  
@@ -42,7 +42,7 @@ HRESULT Start(
 ## <a name="return-value"></a>Návratová hodnota  
  Metoda vrátí `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
   
-|Hodnota|Popis|  
+|Value|Popis|  
 |-----------|-----------------|  
 |`S_OK`|Metoda byla úspěšná.|  
 |`E_UNEXPECTED`|Operace již čeká na vyřízení.|  

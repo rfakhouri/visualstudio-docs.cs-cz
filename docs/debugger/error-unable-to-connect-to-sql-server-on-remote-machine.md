@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4038f1f65d688ee8d9bbf9ad01eb1698b811bee5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60075217"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62850115"
 ---
 # <a name="error-unable-to-connect-to-sql-server-on-remote-machine"></a>Chyba: Na vzdáleném počítači se nepodařilo připojit k SQL Serveru.
 Nelze se připojit k serveru SQL Server na vzdáleném počítači *název*. Přístup se odepřel. Ověřte, že máte nainstalovanou vzdáleného ladícího programu na vzdáleném počítači. Pokud vzdálený počítač není připojen k doméně, nebo pokud Visual Studio běží jako místní účet, vzdálený počítač musí mít účet se stejným uživatelským jménem a heslem jako místní účet.

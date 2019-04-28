@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 9cd5f25e1e87ba3db360b328b4f5a245697cba45
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56600425"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62860258"
 ---
 # <a name="installing-vspackages-with-windows-installer"></a>Instalace balíčků VSPackage pomocí Instalační služby systému Windows
 Integrace do vaší VSPackage [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] vyžaduje více než pouhé kopírování souborů na počítači uživatele. Instalační program vašeho balíčku VSPackage musíte nainstalovat sady VSPackage a jeho závislých souborů a zaregistrovat a integrovat je do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Vaše VSPackage můžete využít výhod funkcí pro integraci například ikonu zobrazení na [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] úvodní obrazovky a o dialogové okno.
@@ -56,7 +56,7 @@ Integrace do vaší VSPackage [!INCLUDE[vsprvs](../../code-quality/includes/vspr
 
  Popisuje, jak použít nový typ projektu agregátor pro typy projektů spravovaného kódu.
 
-- [Postupy: Vygenerování informací registru pro instalační službu](../../extensibility/internals/how-to-generate-registry-information-for-an-installer.md)
+- [Postupy: Vygenerování informací registru pro instalační program](../../extensibility/internals/how-to-generate-registry-information-for-an-installer.md)
 
  Vysvětluje způsob používání RegPkg.exe ke generování manifestu registrace pro spravovaná VSPackage.
 

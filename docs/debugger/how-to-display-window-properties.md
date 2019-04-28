@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2c1be02b5adb486cf101dc9b021ea70bbd72674a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56698427"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62906749"
 ---
 # <a name="how-to-display-window-properties"></a>Postupy: Zobrazení vlastností okna
 Najít další informace o okně uvedené v [zobrazení Windows](../debugger/windows-view.md), použijte [dialogové okno Vlastnosti okna](../debugger/window-properties-dialog-box.md).

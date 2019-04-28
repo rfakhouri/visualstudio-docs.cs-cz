@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: b022daee6e71cd0728c2c161eb3e75a865304d04
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56719714"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62912723"
 ---
 # <a name="taskstatecanceled-field"></a>Task_state_canceled – pole
 Úloha byla zrušena před dosáhla do stavu spuštěno nebo potvrzené jeho zrušení a dokončen bez výjimky.

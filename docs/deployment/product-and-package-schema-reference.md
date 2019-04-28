@@ -26,11 +26,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 489415eba929a73c25b8aea7262c3e930a5d90cd
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56598983"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62898130"
 ---
 # <a name="product-and-package-schema-reference"></a>Referenční dokumentace schématu produktů a balíčků
 A *souboru produktu* je souborů manifestu XML, který popisuje všechny externí závislosti vyžadované [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace. Příklady externích závislostí [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] a Microsoft Data Access Components (MDAC). Soubor balíčku se podobá souboru produktu, ale se používá k instalaci součásti závislých na jazykové verzi závislosti, jako je například lokalizované sestavení, licenční smlouvy a dokumentace.
@@ -39,13 +39,13 @@ A *souboru produktu* je souborů manifestu XML, který popisuje všechny extern�
 
 |Prvek|Popis|Atributy|
 |-------------|-----------------|----------------|
-|[\<Produkt > – Element](../deployment/product-element-bootstrapper.md)|Požadovaný element nejvyšší úrovně pro soubory produktu.|Žádná|
-|[\<Balíček > – Element](../deployment/package-element-bootstrapper.md)|Požadovaný element nejvyšší úrovně pro soubory balíčku.|`Culture`<br /><br /> `Name`<br /><br /> `EULA`|
-|[\<RelatedProducts > – Element](../deployment/relatedproducts-element-bootstrapper.md)|Volitelný element pro soubory produktu. Tyto další produkty, které tento produkt instaluje nebo závisí.|Žádná|
-|[\<InstallChecks > – Element](../deployment/installchecks-element-bootstrapper.md)|Požadovaný element. Seznamy kontroluje závislost provádět na místním počítači během instalace.|Žádná|
-|[\<Příkazy > – Element](../deployment/commands-element-bootstrapper.md)|Požadovaný element.  Spustí jeden nebo více kontroly instalace, jak je popsáno v `InstallChecks`a označuje balíčky, které k instalaci by se neměla kontrola selže.|Žádná|
-|[\<PackageFiles> Element](../deployment/packagefiles-element-bootstrapper.md)|Požadovaný element. Zobrazí seznam balíčků, které by mohl být nainstalován tímto procesem instalace.|Žádná|
-|[\<Řetězce > – Element](../deployment/strings-element-bootstrapper.md)|Požadovaný element. Ukládá lokalizované verze produktu název a chybové řetězce.|Žádná|
+|[Element \<Product>](../deployment/product-element-bootstrapper.md)|Požadovaný element nejvyšší úrovně pro soubory produktu.|Žádný|
+|[Element \<Package>](../deployment/package-element-bootstrapper.md)|Požadovaný element nejvyšší úrovně pro soubory balíčku.|`Culture`<br /><br /> `Name`<br /><br /> `EULA`|
+|[Element \<RelatedProducts>](../deployment/relatedproducts-element-bootstrapper.md)|Volitelný element pro soubory produktu. Tyto další produkty, které tento produkt instaluje nebo závisí.|Žádné|
+|[Element \<InstallChecks>](../deployment/installchecks-element-bootstrapper.md)|Požadovaný element. Seznamy kontroluje závislost provádět na místním počítači během instalace.|Žádné|
+|[Element \<Commands>](../deployment/commands-element-bootstrapper.md)|Požadovaný element.  Spustí jeden nebo více kontroly instalace, jak je popsáno v `InstallChecks`a označuje balíčky, které k instalaci by se neměla kontrola selže.|Žádné|
+|[Element \<PackageFiles>](../deployment/packagefiles-element-bootstrapper.md)|Požadovaný element. Zobrazí seznam balíčků, které by mohl být nainstalován tímto procesem instalace.|Žádné|
+|[Element \<Strings>](../deployment/strings-element-bootstrapper.md)|Požadovaný element. Ukládá lokalizované verze produktu název a chybové řetězce.|Žádný|
 
 ## <a name="remarks"></a>Poznámky
  Schéma balíčku je využívána *Setup.exe*, program se zakázaným inzerováním vygenerované pomocí MS Build spuštění úkolu, který obsahuje malý logiku svůj vlastní pevně zakódovaný. Schéma řídí všechny aspekty procesu instalace.

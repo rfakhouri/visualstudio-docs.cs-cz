@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3cc8ed99cad2fb0806c7072b1b2f494aa60e967c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56607886"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62854763"
 ---
 # <a name="symbol-locations"></a>Umístění symbolů
 Většina symboly mít definované umístění v rámci souboru obrázku. Umístění symbolu je zadaný s hodnotou od [locationtype – výčet](../../debugger/debug-interface-access/locationtype.md) výčtu. Symbol může podporovat další vlastnosti v závislosti na jeho umístění.

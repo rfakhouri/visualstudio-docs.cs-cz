@@ -22,11 +22,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e459d4429d712a9ca4c245d581c6be3578711cd6
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616748"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62855110"
 ---
 # <a name="overview-debug-interface-access-sdk"></a>Přehled (Přístup k rozhraní ladění SDK)
 Použijte DIA SDK pro přístup k Microsoft ladicí informace. DIA SDK poskytuje že com na základě sada rozhraní API, která eliminuje potřebu revize kódu pokaždé, když se změní formát ladicích informací společnosti Microsoft. DIA SDK také umožňuje čtení z vybrané sady z předchozí verze informací o ladění, umístěn v souborech PDB a dbg generovaných [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] verze 5.0 a novější.

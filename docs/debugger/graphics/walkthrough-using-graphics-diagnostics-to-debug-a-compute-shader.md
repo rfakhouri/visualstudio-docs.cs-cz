@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2ffdbee23ff363f7c0f1e843c30f09551f38ab3b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105367"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62849240"
 ---
 # <a name="walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader"></a>Návod: Použití diagnostiky grafiky k ladění výpočetního shaderu
 Tento návod ukazuje, jak použít nástrojů Diagnostika grafiky sady Visual Studio k vyšetření výpočetního shaderu, který generuje nesprávné výsledky.

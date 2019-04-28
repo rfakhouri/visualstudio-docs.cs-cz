@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9de3c3aed6b40ace1b841d2dac5c175963b1fecb
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56619287"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62842256"
 ---
 # <a name="msbuild-reference"></a>Referenční dokumentace nástroje MSBuild
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] je systém sestavení pro [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Následující odkazy vás přesměrují na témata, která obsahují [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] referenční informace.

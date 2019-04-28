@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 093c2e33b8fe3918c280bb68dabda54808cc5e3a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060823"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62859199"
 ---
 # <a name="running-document-table"></a>Spuštění tabulky dokumentů
 Rozhraní IDE udržuje seznam všech aktuálně otevřených dokumentů v vnitřní struktury nazvané spuštěnou tabulku dokumentů (r...). Tento seznam obsahuje všechny otevřené dokumenty v paměti, bez ohledu na to, zda tyto dokumenty jsou právě upravována. Dokument je všechny položky, které se ukládají, včetně souborů v projektu nebo souboru hlavního projektu (například soubor .vcxproj).

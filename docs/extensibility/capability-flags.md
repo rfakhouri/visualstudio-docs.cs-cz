@@ -11,16 +11,16 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 12dfcdf646d6584890e8f78cbe561a84d6f00752
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56718401"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62891633"
 ---
 # <a name="capability-flags"></a>Příznaky funkcí
 SCC_CAP_*xxx* příznaky jsou bitové příznaky, které slouží k označení funkce modulu plug-in správy zdrojového kódu. SCC_EXCAP_*xxx* příznaky jsou přírůstkové příznaky, které označují rozšířené možnosti a vyřešit celočíselné hodnoty.
 
-|Kód funkce|Hodnota|Popis|
+|Kód funkce|Value|Popis|
 |---------------------|-----------|-----------------|
 |`SCC_CAP_REMOVE`|0x00000001L|Podporuje [sccremove –](../extensibility/sccremove-function.md) a příkazů.|
 |`SCC_CAP_RENAME`|0x00000002L|Podporuje [sccrename –](../extensibility/sccrename-function.md) a příkazů.|
@@ -63,7 +63,7 @@ SCC_CAP_*xxx* příznaky jsou bitové příznaky, které slouží k označení f
 ## <a name="capability-bits-added-in-version-13"></a>Služba bits funkce byly přidány ve verzi 1.3
  Tyto příznaky jsou předány jednotlivě na [sccgetextendedcapabilities –](../extensibility/sccgetextendedcapabilities-function.md) funkce k určení, zda je funkce podporována.
 
-|Rozšířené funkce kódu|Hodnota|Popis|
+|Rozšířené funkce kódu|Value|Popis|
 |------------------------------|-----------|-----------------|
 |`SCC_EXCAP_CHECKOUT_LOCALVER`|1|Podporuje `SCC_CHECKOUT_LOCALVER` možnost pro rezervace.|
 |`SCC_EXCAP_BACKGROUND_GET`|2|Podporuje [sccbackgroundget –](../extensibility/sccbackgroundget-function.md).|

@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 2938da8f5f24c5c60cfe8d09423be886de1d0c86
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56705635"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62843849"
 ---
 # <a name="add-a-menu-controller-to-a-toolbar"></a>Přidání kontroleru nabídky do panelu nástrojů
 Tento návod vychází [přidat panel nástrojů do panelu nástrojů](../extensibility/adding-a-toolbar-to-a-tool-window.md) návod a ukazuje, jak přidat kontroleru nabídky do panelu nástrojů okno nástrojů. Zde uvedených kroků můžete použít také na panel nástrojů, který je vytvořen v [přidat panel nástrojů](../extensibility/adding-a-toolbar.md) návodu.

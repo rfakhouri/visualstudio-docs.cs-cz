@@ -8,11 +8,11 @@ manager: wpickett
 ms.workload:
 - multiple
 ms.openlocfilehash: 28d17301d81ee5b206feb0c3afefba35e50615cd
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55940578"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62560030"
 ---
 # <a name="best-practices-and-examples-sal"></a>Doporučené postupy a příklady (poznámky SAL)
 Tady jsou některé způsoby, jak získat maximum z zdrojového kódu anotace jazyka (SAL) a vyhnout se některé běžné problémy.
@@ -238,7 +238,7 @@ V tomto příkladu `_Out_opt_` říká, že ukazatel může mít hodnotu NULL ja
 
 ## <a name="see-also"></a>Viz také:
 
-[Použití poznámek SAL k omezení defektů kódu C/C++](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)
+[Použití poznámek SAL k snížení C /C++ chyb kódu](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)
 [Princip SAL](../code-quality/understanding-sal.md)
 [zadávání poznámek k parametrům funkcí a vrácené hodnoty](../code-quality/annotating-function-parameters-and-return-values.md) 
  [Zadávání poznámek k chování funkcí](../code-quality/annotating-function-behavior.md)

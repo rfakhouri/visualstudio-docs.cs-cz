@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: d45fa0be28fcad891366581e13425d3940a0a967
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56684608"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62878069"
 ---
 # <a name="debugaddress"></a>DEBUG_ADDRESS
 Tato struktura představuje adresu.
@@ -57,7 +57,7 @@ addr A [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-add
 ## <a name="remarks"></a>Poznámky
 Tato struktura je předán [GetAddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md) metoda být vyplněna.
 
-**Upozornění [pouze C++]**
+**Upozornění [C++ pouze]**
 
 Pokud `addr.dwKind` je `ADDRESS_KIND_METADATA_LOCAL` a pokud `addr.addr.addrLocal.pLocal` není hodnotou null, pak je nutné volat `Release` token ukazatele:
 

@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 6470b7ddb8a28c2aa22a23a55976f1f8831c4363
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56683737"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62864141"
 ---
 # <a name="document-data-and-document-view-in-custom-editors"></a>Data dokumentu a zobrazení dokumentu ve vlastních editorech
 Vlastní editor se skládá ze dvou částí: datový objekt dokumentu a objekt zobrazení dokumentu. Jak naznačují názvy, představuje datový objekt dokumentu textových dat, který se má zobrazit. Podobně objekt zobrazení dokumentů (nebo "Zobrazit") představuje jedno nebo více oken, ve kterém chcete zobrazit datový objekt dokumentu.

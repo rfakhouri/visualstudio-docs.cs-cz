@@ -18,11 +18,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2969e5c6e8e3a5fd5612fa843309e36f0dbc4c9b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60102325"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62850837"
 ---
 # <a name="error-debugging-failed-because-integrated-windows-authentication-is-not-enabled"></a>Chyba: Ladění se nezdařilo, protože ověření integrované Windows není povoleno.
 Ověření uživatele, který požaduje ladění nebylo možné kvůli chybě ověřování. Tato situace může nastat, když zkusíte Krokovat s vnořením webovou aplikaci nebo webové služby XML. Jednou z příčin této chyby je, že integrované ověřování Windows není povoleno. Ho Pokud chcete povolit, postupujte podle kroků v "K povolení integrované ověřování Windows."

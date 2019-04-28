@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: da18990620644834192c38c24ced9a25ecb56215
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071262"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62906106"
 ---
 # <a name="how-to-use-the-wpf-tree-visualizer"></a>Postupy: Použití vizualizéru stromu WPF
 Vizualizéru stromu WPF můžete použít k prozkoumání vizuálního stromu WPF objektu a chcete-li zobrazit vlastnosti závislosti WPF pro objekty, které jsou obsaženy ve stromové struktuře. Další informace o vizuální stromové struktury, naleznete v tématu [stromy v subsystému WPF](/dotnet/framework/wpf/advanced/trees-in-wpf). Další informace o vlastnosti závislosti, naleznete v tématu [přehled vlastností závislosti](/dotnet/framework/wpf/advanced/dependency-properties-overview).

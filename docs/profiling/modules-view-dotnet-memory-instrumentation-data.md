@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: cb3117ff480e124aab6333eaed612c0438ed3911
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56620925"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62830043"
 ---
 # <a name="modules-view---net-memory-instrumentation-data"></a>Zobrazení modulů – data instrumentace paměti .NET
 Moduly přehled shromážděných pomocí metody instrumentace data přidělení paměti .NET seskupí podle moduly, které byly spuštěny během spuštění profilování paměti a data časování. Data profilování pro funkce v modulu je uvedena pod uzel modulu.

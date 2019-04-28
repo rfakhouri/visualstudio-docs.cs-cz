@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 9d188729b68f8086da62d40ca28fc29945c8be7f
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58152233"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62840054"
 ---
 # <a name="textdocumentarray-structure"></a>TEXT_DOCUMENT_ARRAY – struktura
 Pole [idebugdocumenttext – rozhraní](../../winscript/reference/idebugdocumenttext-interface.md) objekty. Členy jsou přiděleny s CoTaskMemAlloc.  

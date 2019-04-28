@@ -26,11 +26,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: caaf36e286f1bdc664ebdbb10e3baf7ed28183e7
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57870517"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62849850"
 ---
 # <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>Specifikátory ve formátu C# v ladicím programu sady Visual Studio
 Můžete změnit formát, ve kterém se zobrazí hodnota v **Watch** okna pomocí specifikátorů formátu. Můžete také použít specifikátory formátu v **okamžité** okně **příkaz** okno v [zarážky s trasováním](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints)a ve zdrojových oknech. Pokud pozastavíte výraz v těchto oknech, výsledek se zobrazí v [datového tipu](../debugger/view-data-values-in-data-tips-in-the-code-editor.md) v zadaném formátu zobrazení.

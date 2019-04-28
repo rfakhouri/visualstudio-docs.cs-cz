@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 47647910b53b5f86b828ec87c62019b76204f124
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60078366"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62911558"
 ---
 # <a name="how-to-suppress-file-change-notifications"></a>Postupy: Potlačit oznámení o změně souborů
 Při změně fyzického souboru představující textovou vyrovnávací paměť, dialogové okno zobrazí se zpráva **chcete uložit změny následujících položek?** To se označuje jako oznámení o změně souboru. Pokud mnoho změn se bude do souboru, ale toto dialogové okno zobrazení tytéž může být nepříjemné.

@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - data-science
 ms.openlocfilehash: 7109e74e858aa308b8f49e6e1e335478f801070b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55948061"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62814880"
 ---
 # <a name="work-with-the-r-interactive-window"></a>Práce s interaktivním okně jazyka r.
 

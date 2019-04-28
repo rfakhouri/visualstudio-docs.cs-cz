@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 741d61f4f3a62638e56aabb1f62f97aac4519d0c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596578"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62861010"
 ---
 # <a name="hierarchies-and-selection"></a>Hierarchie a výběr
 Pokud přizpůsobíte [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], měli byste porozumět jak [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] zpracovává hierarchie, jako jsou projekty a jak ji používá kontext výběru k určení, co se zobrazí uživateli. Tato část popisuje koncepty [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] hierarchie a výběr.

@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5f07d4e2dc52ff05d67ec18d7f40f1119db582c0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55947447"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62894005"
 ---
 # <a name="get-started-with-wpf"></a>Začínáme s WPF (Windows Presentation Foundation)
 
@@ -21,7 +21,7 @@ Windows Presentation Foundation (WPF) je architekturu uživatelského rozhraní,
 
 ## <a name="where-should-i-start"></a>Kde bych měl(a) začít?
 
-|Subjekt|Články|
+|Subject|Články|
 |-|-|
 |Chci pustit do práce …|[Návod: Moje první desktopová aplikace WPF](/dotnet/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application)|
 |Chci, aby k porovnání návrhové nástroje XAML...|[Návrh XAML v sadě Visual Studio a nástroje Blend for Visual Studio](../designers/designing-xaml-in-visual-studio.md)|

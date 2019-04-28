@@ -11,11 +11,11 @@ manager: crdun
 ms.workload:
 - unity
 ms.openlocfilehash: ad52e9f97dfbb9a5d0b3d65085c6c2627ccb2232
-ms.sourcegitcommit: e6ef03cc415ca67f75fd1f26e0e7b8846857166d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39310082"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62819526"
 ---
 # <a name="customize-project-files-created-by-vstu"></a>Přizpůsobení souborů projektu vytvořených nástrojem VSTU
 Visual Studio Tools for Unity poskytuje stylu Unity zpětné volání při generování souboru projektu. Zaregistrujte se `VisualStudioIntegration.ProjectFileGeneration` událost pro úpravu souboru projektu pokaždé, když se znovu vygeneroval.

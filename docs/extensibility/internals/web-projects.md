@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 0c0e796632966c43c052f70fc872d550b57ad7d4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596539"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62856967"
 ---
 # <a name="web-projects"></a>Webové projekty
 Webový systém projektu je systém projektu, která vytváří webové projekty. Webové projekty zase vytvářet webové aplikace. Můžete naprogramovat webové stránky s využitím tradičních programovacích jazycích, jako například [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] nebo [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)], ke shromažďování a zpracování informací od uživatele, ukládat v databázi a tak dále. Webové stránky s přidružený kód se nazývají inteligentní webové stránky.

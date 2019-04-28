@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 7ca83cb6d2913e0c0a91f4a6e874640ae57c7708
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602426"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62860004"
 ---
 # <a name="opening-and-saving-project-items"></a>Otevření a uložení položek projektu
 Když přidáte nový typ projektu, musíte spravovat otevírání a ukládání souborů v projektech [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrované vývojové prostředí (IDE). Následující témata popisují různé přístupy k otevírání a ukládání souborů.
@@ -31,15 +31,15 @@ Když přidáte nový typ projektu, musíte spravovat otevírání a ukládání
 
  Poskytuje podrobné vysvětlení způsobu, jakým zpracovává integrovaného vývojového prostředí **otevřít v** příkaz dotazování otevření souboru, který má některé volba standardních editorů.
 
-- [Postupy: Otevřít editoru pro konkrétní projekt](../../extensibility/how-to-open-project-specific-editors.md)
+- [Postupy: Otevření editorů pro konkrétní projekt](../../extensibility/how-to-open-project-specific-editors.md)
 
  Obsahuje podrobné pokyny pro určení, že soubory určitého typu ve vašem projektu by měla otevřít pomocí editoru specifické pro projekt.
 
-- [Postupy: Otevřít standardních editorů](../../extensibility/how-to-open-standard-editors.md)
+- [Postupy: Otevření standardních editorů](../../extensibility/how-to-open-standard-editors.md)
 
  Obsahuje podrobné pokyny pro zadání povolení integrovaného vývojového prostředí otevřete standardní editor pro soubory ve vašem typu projektu.
 
-- [Postupy: Otevřít editorů pro otevřené dokumenty](../../extensibility/how-to-open-editors-for-open-documents.md)
+- [Postupy: Otevření editorů pro otevřené dokumenty](../../extensibility/how-to-open-editors-for-open-documents.md)
 
  Obsahuje podrobné pokyny k otevření editoru specifické pro projekt pro otevření souboru.
 

@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 119ccbc7a14f2879d27c9c8c8e20cf978593366a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56710042"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62863987"
 ---
 # <a name="net-compiler-platform-quotroslynquot-extensibility"></a>Sada .NET compiler Platform (&quot;Roslyn&quot;) rozšiřitelnosti
 Cíle základní platformě kompilátoru .NET ("Roslyn") se vám otevírají kompilátory jazyků C# a Visual Basic a povolení nástroje a mají vývojáři pro sdílení v kompilátorech široké škály informací o programech. Nástroje pro analýzu kódu zlepšení kvality kódu a kódu generátorů podpory vytváření aplikací. Jak získat inteligentnější nástroje, potřebujete přístup v více a více poznatků hloubkové kódu, které mají pouze kompilátory. Kompilátory Roslyn namísto neprůhledné překladače (zdrojový kód v a objektový kód navýšení kapacity), nabízejí rozhraní API, která můžete použít pro úlohy související s kódem v nástroje a aplikace.

@@ -9,13 +9,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 44e542bcbb801ee4035ba501b50bad81b53e8bdf
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091327"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62849304"
 ---
-# <a name="walkthrough-debugging-rendering-errors-due-to-shading"></a>Návod: Ladění chyb stínováním při vykreslování
+# <a name="walkthrough-debugging-rendering-errors-due-to-shading"></a>Návod: Ladění chyb vykreslování způsobených stínováním
 Tento návod ukazuje, jak používat [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] diagnostiky grafiky k prozkoumání objekt, který je nesprávně barevný z důvodu chyby shaderu.
 
  Tento návod ukazuje, jak:

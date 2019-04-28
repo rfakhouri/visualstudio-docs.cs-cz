@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 55b818940a8e2a779c7bbc0e17dec5cd891a2d88
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091392"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62848105"
 ---
 # <a name="how-to-display-wpf-trace-information"></a>Postupy: Zobrazení informací trasování WPF
 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] může přijímat informace o trasování ladění z aplikace WPF a zobrazení těchto informací v **výstup** okna. Chcete-li zobrazit informace o trasování ladění, musí být povoleno trasování WPF.

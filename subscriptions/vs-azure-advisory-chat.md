@@ -8,11 +8,11 @@ ms.topic: conceptual
 description: Naučte se, abyste mohli využívat výhody Azure Advisory Chat součástí předplatných sady Visual Studio.
 searchscope: VS Subscription
 ms.openlocfilehash: 03e55b29cea867d438ef0536a2db7ee9c4f47e36
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60102039"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62809088"
 ---
 # <a name="azure-advisory-chat"></a>Chat s poradcem pro Azure
 

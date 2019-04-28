@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a0d6a6cfeb3cb222d2ef58233b072f80e50c8d9e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056429"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62891888"
 ---
 # <a name="add-icons-to-menu-commands"></a>Přidání ikon k příkazům nabídky
 Příkazy se může objevit v nabídek a panelů nástrojů. Na panely nástrojů je běžné, že příkaz zobrazuje jenom ikona (pro úsporu místa) při v nabídkách příkaz obvykle se zobrazí se ikona i text.

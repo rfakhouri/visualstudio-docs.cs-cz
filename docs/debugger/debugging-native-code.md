@@ -21,11 +21,11 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 5a7cf0b150c45037941010bf7e611f4bc21252c7
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57870412"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62851906"
 ---
 # <a name="debugging-native-code"></a>Ladění nativního kódu
 Část popisuje některé běžné problémy ladění a techniky pro nativní aplikace. Techniky popsané v této části jsou techniky vysoké úrovně. Mechanismy pomocí ladicího programu sady Visual Studio, naleznete v tématu [nejdřív se podívejte na ladicí program](../debugger/debugger-feature-tour.md)).

@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: dfd0fb71aaca9cb3de2d7cc6d3b6229042a4e7fa
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318404"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62926403"
 ---
 # <a name="create-and-manage-modal-dialog-boxes"></a>Vytvoření a správa modálních dialogových oken
 Když vytvoříte modální dialogové okno v sadě Visual Studio, je nutné zajistit, že nadřazené okno dialogového okna je zakázán, když se zobrazí dialogové okno a potom znovu povolit nadřazené okno po zavření dialogových oken. Pokud to neprovedete, zobrazí se chybová zpráva: *Microsoft Visual Studio nelze vypnout, protože je aktivní modální dialogové okno. Zavřete aktivní dialogové okno a zkuste to znovu.*

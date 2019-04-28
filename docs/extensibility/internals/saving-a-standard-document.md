@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 460b948ea7b5bace1b91143d46a4ca2f4c823608
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60043455"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62859146"
 ---
 # <a name="saving-a-standard-document"></a>Uložení standardního dokumentu
 Prostředí zpracovává uložit, uložit jako a uložte všechny příkazy. Když uživatel vybere **Uložit**, **uložit jako**, nebo **Uložit vše** z **souboru** nabídky nebo zavření řešení, což vede k  **Uložit vše**, spustí následující proces.

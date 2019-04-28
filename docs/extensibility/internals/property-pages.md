@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 5df98f898c585d89c9bc493e606947f89b3206d2
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614945"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62909415"
 ---
 # <a name="property-pages"></a>Stránky vlastností
 Uživatelé mohou zobrazit a změnit závislé na konfiguraci a - nezávisle vlastnosti projektu pomocí stránky vlastností. A **stránky vlastností** tlačítko je dostupné v **vlastnosti** okně nebo na panelu nástrojů Průzkumník řešení pro objekty, které poskytují zobrazení stránky vlastností vybraného objektu. Stránky vlastností jsou vytvořeny pomocí prostředí a jsou k dispozici pro projekty a řešení. Může, ale také být k dispozici pro položky projektu, které používají závislé na konfiguraci vlastností. Tato funkce mohou být použity, pokud soubory v rámci projektu vyžadují různé přepínače kompilátor správně sestavila.

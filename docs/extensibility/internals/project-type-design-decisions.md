@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 5e420261810cec793cc553eac83bbc97edd1fb1c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56634537"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62909111"
 ---
 # <a name="project-type-design-decisions"></a>Rozhodnutí týkající se návrhu typu projektu
 Než vytvoříte nový typ projektu, je nutné provést několik rozhodnutí o návrhu týkající se vašeho typu projektu. Musíte se rozhodnout, jaké typy položek, které bude obsahovat vaše projekty, jak se soubory projektu trvalý a jaké závazku modelu, které použijete.

@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b7e540e56ce0e97ac2c6aa2e42012569f9e4f272
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56608121"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62553068"
 ---
 # <a name="cvcreatemarkerserieswithcodepagea-function"></a>Cvcreatemarkerserieswithcodepagea – funkce
 Vytvoří značku řady pro daného poskytovatele a zadanou znakovou stránku. Tato funkce slouží k určení znakovou stránku explicitně pro textu zapsaného funkce rozhraní API ANSI značky. Nastavení znakové stránky může být užitečné v případě trasování je zachycena a potom analyzovány na odlišných počítačích s různými národní prostředí nebo jazyky. Ve výchozím nastavení se používá znakovou stránku vrácená funkcí GetACP().

@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: c4bd2a688e2a10bf0b931851b0d4366684820bf1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049916"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62859002"
 ---
 # <a name="source-control-integration-overview"></a>Přehled integrace správy zdrojového kódu
 Tato část porovná dva způsoby, jak integrovat do správy zdrojového kódu sady Visual Studio; ovládací prvek zdroje modulu Plug-in a VSPackage, která poskytuje source řešení pro řízení a označuje nové funkce správy zdrojového kódu. Visual Studio umožňuje ruční přepínání mezi balíčků VSPackage správy zdrojového kódu a ovládací prvek moduly plug-in zdrojového kódu, stejně jako automatické přepínání založené na řešení.

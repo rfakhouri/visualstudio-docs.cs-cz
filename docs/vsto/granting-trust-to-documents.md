@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: be8a17496788b0f4fe8abc9859b46cbfa11a6ed7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60053010"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62827034"
 ---
 # <a name="grant-trust-to-documents"></a>Zajistit jeho důvěryhodnost do dokumentů
   Úrovni dokumentu projekt má stejné požadavky na zabezpečení jako projekty na úrovni aplikace: podepisování manifestů s certifikátem nebo kliknutím na výzvu vztahu důvěryhodnosti. Kromě toho dokumentem nebo sešitem, musí být umístěn v adresáři, který je určený jako důvěryhodného umístění.

@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: c19b623efca921e7557a818c3915faf6ea158641
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60087311"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62859710"
 ---
 # <a name="project-persistence"></a>Trvalost projektu
 Trvalost se v úvahu důležité pro váš projekt. Většina projektů pomocí položky projektu, které představují soubory. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] také podporuje projekty, jejichž data jsou v jiných souborech založené. Musíte nastavit jako trvalý, soubory vlastněné projektu a souboru projektu. Rozhraní IDE nastaví projekt tak, aby uložit samotné nebo položky projektu.

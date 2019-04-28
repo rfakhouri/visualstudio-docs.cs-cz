@@ -15,11 +15,11 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: 6cd61304e150da63d2d461ef364e7039789c71fc
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223082"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62825815"
 ---
 # <a name="suppress-code-analysis-warnings"></a>Potlačení upozornění analýzy kódu
 
@@ -27,7 +27,7 @@ ms.locfileid: "57223082"
 
 <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> Atribut je podmíněný atribut, který je součástí metadata IL sestavení spravovaného kódu, pouze v případě, že je definován symbol kompilace CODE_ANALYSIS v době kompilace.
 
-V jazyce C + +/ CLI, použijte makra certifikační Autority\_POTLAČIT\_zprávy nebo certifikační Autorita\_globální\_SUPPRESS_MESSAGE v hlavičkovém souboru při přidání atributu.
+V C++vyhodnocovací, použijte makra certifikační Autority\_POTLAČIT\_zprávy nebo certifikační Autorita\_globální\_SUPPRESS_MESSAGE v hlavičkovém souboru při přidání atributu.
 
 > [!NOTE]
 > Potlačení v zdroj byste neměli používat u sestavení pro vydání, aby se zabránilo omylem přesouvání potlačení v zdroje metadat. Navíc vzhledem k zpracování potlačení-source, může být snížený výkon vaší aplikace.

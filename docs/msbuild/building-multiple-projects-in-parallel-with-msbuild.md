@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: dd56fc50dda1dcbc7eee01ebca8f1e789a839851
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56600960"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62822986"
 ---
 # <a name="build-multiple-projects-in-parallel-with-msbuild"></a>Sestavování více projektů současně pomocí nástroje MSBuild
 Nástroj MSBuild lze použít pro rychlejší sestavení více projektů tak, že budou tyto projekty spuštěny paralelně. Pro paralelní spuštění sestavení je možné na počítači s více jádry nebo s více procesory použít následující nastavení:
@@ -43,7 +43,7 @@ msbuild.exe myproj.proj -maxcpucount:3
 ```
 
 ## <a name="buildinparallel-task-parameter"></a>Parametr úlohy BuildInParallel
-`BuildInParallel` je volitelný logický parametr úlohy nástroje [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Když `BuildInParallel` je nastavena na `true` (výchozí hodnota je `false`), více procesů, kolik je vytvořeno pro sestavení tolik projekty ve stejnou dobu jako možný. Aby tento postup správně fungoval, musí být přepínač `-maxcpucount` nastaven na hodnotu větší než 1 a systém musí být alespoň dvoujádrový nebo mít dva nebo více procesorů.
+`BuildInParallel` je volitelný logický parametr na [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] úloh. Když `BuildInParallel` je nastavena na `true` (výchozí hodnota je `false`), více procesů, kolik je vytvořeno pro sestavení tolik projekty ve stejnou dobu jako možný. Aby tento postup správně fungoval, musí být přepínač `-maxcpucount` nastaven na hodnotu větší než 1 a systém musí být alespoň dvoujádrový nebo mít dva nebo více procesorů.
 
 Následuje příklad, na základě *cílů microsoft.common.targets*, o tom, jak nastavit `BuildInParallel` parametru.
 

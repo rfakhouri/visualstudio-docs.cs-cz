@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 8592103bad3f6949f37a190c25633398af89a166
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56622940"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62909637"
 ---
 # <a name="implementing-a-legacy-language-service"></a>Implementace služby starší verze jazyka
 Pro implementaci jazyka služby pomocí rozhraní spravovaného balíčku (MPF), musí být odvozen ze třídy <xref:Microsoft.VisualStudio.Package.LanguageService> třídy a implementovat následující abstraktní metody a vlastnosti:

@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ebdfdb1503570e08f38eed8efd278830756e50fa
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60048434"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62817163"
 ---
 # <a name="how-to-manually-create-performance-sessions"></a>Postupy: Ruční vytváření výkonnostních relací
 Můžete ručně vytvořit relaci výkonu. Není nutné k otevření projektu v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] provedete to tak. Další informace najdete v tématu [konfigurace výkonnostních relací](../profiling/configuring-performance-sessions.md).

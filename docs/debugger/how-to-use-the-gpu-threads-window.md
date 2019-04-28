@@ -19,11 +19,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 59229b1ca2b055fc8242bf6446541a395eceaa56
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071353"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62846846"
 ---
 # <a name="how-to-use-the-gpu-threads-window-c"></a>Postupy: Použití okna vláken GPU (C++)
 V okně vlákna GPU můžete prozkoumat a práce s vlákny, která běží na grafickém procesoru v aplikaci, kterou ladíte. Další informace o aplikacích, které běží na GPU, naleznete v tématu [přehled modelu C++ AMP](/cpp/parallel/amp/cpp-amp-overview).

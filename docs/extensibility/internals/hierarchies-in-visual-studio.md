@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 437372a5b88e58c12b7a7d34102d87afce5c086b
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841776"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62909814"
 ---
 # <a name="hierarchies-in-visual-studio"></a>Hierarchie v sadě Visual Studio
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Integrované vývojové prostředí (IDE) se zobrazí jako projekt *hierarchie*. V integrovaném vývojovém prostředí hierarchie je strom z uzlů, kde má každý uzel sadu přidružené vlastnosti. A *projektu hierarchie* je kontejner, který obsahuje položky tohoto projektu, položek relací a přidružené vlastnosti položky a příkazy.

@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: c3680af73c281a01a7938805f859e0ff88c1ba44
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56641231"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62909980"
 ---
 # <a name="create-project-instances-by-using-project-factories"></a>Vytvoření instance projektu pomocí objektů pro vytváření projektů
 Typů projektů v [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] použít *objekt pro vytváření projektu* pro vytvoření instancí objektů projektu. Objekt pro vytváření projektu je podobná objekt pro vytváření tříd standardní cocreatable objektů COM. Nicméně objekty projektu nejsou cocreatable; mohou být vytvořeny pouze pomocí objekt pro vytváření projektu.

@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 7fab8a42d5559c23ce6816d5a247561a4376a7fe
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60075828"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62909154"
 ---
 # <a name="manifest-to-code"></a>Manifest do kódu
 Manifest pro nástroj kódu je konzolová aplikace, která přijímá soubor .imagemanifest Image služby Visual Studio a generuje soubory pro odkazování na image manifest hodnoty v jazyce C++, nebo soubor souhrnného C#, VB nebo .vsct soubory pro sadu Visual Studio rozšíření. Tento nástroj generuje obálky soubory, které lze použít pro žádost o Image z Image ve službě Visual Studio přímo, nebo pro předávání manifestu hodnot prostřednictvím rozhraní API, pokud kód zpracovává všechny své vlastní uživatelské rozhraní a vykreslování.

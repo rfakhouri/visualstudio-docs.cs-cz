@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 7c2a9570eeae6d9545bb91f7f1ed0c57df3a9c92
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913847"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62571365"
 ---
 # <a name="basic-design-guideline-rules-rule-set-for-managed-code"></a>Sada pravidel Základní pravidla obecných zásad návrhu pro spravovaný kód
 Můžete použít sadu soustředit na to, jak váš kód lépe pochopit a používat pravidel základní pravidla obecných zásad návrhu společnosti Microsoft. Měli byste zahrnout tuto sadu Pokud váš projekt zahrnuje kód knihovny nebo pokud chcete vynutit doporučené postupy pro kód, který se snadnou údržbou pravidel.

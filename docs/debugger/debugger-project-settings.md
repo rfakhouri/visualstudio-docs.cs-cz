@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: bfaf520658edfdcf5b80fb89f89489a47c7fffa3
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56695580"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62852696"
 ---
 # <a name="debugger-project-settings"></a>Nastavení projektu ladicího programu
 Určitá nastavení projektu také ovlivnit ladění. Tato nastavení určují, například jaké adresáře ladicí program zjistí, příkazu a argumentů příkazu použitý ke spuštění programu a zadejte informace o ladění pro program. V těchto nastavení můžete změnit **stránky vlastností** dialogové okno.

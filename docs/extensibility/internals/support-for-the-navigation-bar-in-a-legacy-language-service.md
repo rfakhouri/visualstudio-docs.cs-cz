@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: eccbf178b3515cd23695d899749beb478e942ff7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60085925"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62858123"
 ---
 # <a name="support-for-the-navigation-bar-in-a-legacy-language-service"></a>Podpora navigačního panelu ve službě starší verze jazyka
 Navigační panel v horní části zobrazení editoru se zobrazí typy a členy v souboru. V levém rozevíracího seznamu jsou uvedeny typy a členy se zobrazí v pravém rozevíracího seznamu. Když uživatel vybere typ, blikající kurzor je umístěn na prvním řádku typu. Když uživatel vybere člena, blikající kurzor je umístěn v definici člena. Rozevírací seznamy jsou aktualizovány tak, aby odrážela aktuální umístění znaku stříšky.

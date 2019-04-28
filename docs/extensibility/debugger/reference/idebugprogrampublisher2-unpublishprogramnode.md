@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 56eb23466d0364cbe22046bbb36be593a83a0998
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56698700"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62869664"
 ---
 # <a name="idebugprogrampublisher2unpublishprogramnode"></a>IDebugProgramPublisher2::UnpublishProgramNode
 Odebere zadaný program uzel z dostupnost pro ladění modulů (DEs) a správce ladění relace (SDM).

@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6ac6a7582c6fa59665390cfdb6b613fff6e36709
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56644676"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62836833"
 ---
 # <a name="idiasymbolgetisacceleratorgroupsharedlocal"></a>IDiaSymbol::get_isAcceleratorGroupSharedLocal
 Získá příznak označující, zda symbol odpovídá skupině sdílené místní proměnné v kódu zkompilovaném pro akcelerátor AMP C++.
@@ -30,7 +30,7 @@ HRESULT get_isAcceleratorGroupSharedLocal(
 #### <a name="parameters"></a>Parametry
  `pFlag`
 
-[out] Ukazatel `BOOL` , která označuje, zda symbol odpovídá skupině sdílené místní proměnné v kódu zkompilovaném pro akcelerátor AMP C++. Pokud `TRUE`, `get_baseDataSlot` a `get_baseDataOffset` metody slouží k získání informací o umístění úložiště pro proměnné.
+[out] Ukazatel `BOOL` , která označuje, zda symbol odpovídá skupině sdílené místní proměnné v kódu zkompilovaném pro C++ akcelerátor AMP. Pokud `TRUE`, `get_baseDataSlot` a `get_baseDataOffset` metody slouží k získání informací o umístění úložiště pro proměnné.
 
 ## <a name="return-value"></a>Návratová hodnota
  Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí `S_FALSE` nebo kód chyby.

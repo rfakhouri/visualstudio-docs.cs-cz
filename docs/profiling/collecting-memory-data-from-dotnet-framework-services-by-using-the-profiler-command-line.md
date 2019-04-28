@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: d39a81bbf504a36d65b86ffa35901eeaf1b0916b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56631936"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62831652"
 ---
 # <a name="collect-memory-data-from-net-framework-services-by-using-the-profiler-command-line"></a>Shromažďování dat paměti ze služeb rozhraní .NET Framework pomocí příkazového řádku profileru
 Tato část popisuje postupy a možnosti pro shromažďování paměť přidělení a objekt data o životním cyklu pro [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] služby pomocí metody vzorkování z příkazového řádku.

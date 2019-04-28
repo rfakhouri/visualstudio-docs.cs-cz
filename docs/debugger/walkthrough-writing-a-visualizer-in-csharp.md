@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: b527f959f093f155d74e2a85a1812d7ccb58d1e7
-ms.sourcegitcommit: 847d192013eb8225776243045c9b5a53d1ba4a59
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/15/2019
-ms.locfileid: "59584529"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62901227"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-c"></a>Návod: Zápis Vizualizéru v jazyce C\#
 Tento návod ukazuje, jak napsat Jednoduchý vizualizér pomocí jazyka C#. Vizualizaci, kterou vytvoříte v tomto názorném postupu se zobrazí obsah řetězce pomocí okna se zprávou formulářů Windows. Tento vizualizér jednoduchým řetězcem není zvlášť užitečné sám o sobě, ale zobrazuje základní kroky, které je třeba provést pro vytvoření užitečnější vizualizéry pro jiné datové typy.

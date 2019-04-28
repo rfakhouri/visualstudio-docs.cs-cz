@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 15d9b81bd342ccd8a5ee3377323e140ab1167c10
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56633041"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62899457"
 ---
 # <a name="how-to-create-file-associations-for-a-clickonce-application"></a>Postupy: Vytváření přidružení souborů pro aplikaci ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace může být přidružený jeden nebo více přípon souborů, tak, aby aplikaci spustit automaticky, když uživatel otevře soubor z těchto typů. Přidání podpory přípony názvu souboru [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikací je jednoduché.

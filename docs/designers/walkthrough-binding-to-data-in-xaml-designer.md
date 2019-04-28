@@ -13,13 +13,13 @@ manager: jillfra
 ms.workload:
 - uwp
 ms.openlocfilehash: 0c0d13603a2575a826a53bf145fd1f0218571243
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55957595"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62892838"
 ---
-# <a name="walkthrough-bind-to-data-in-xaml-designer"></a>Průvodce: Vazba s daty v Návrháři XAML
+# <a name="walkthrough-bind-to-data-in-xaml-designer"></a>Návod: Vazba s daty v Návrháři XAML
 
 V Návrháři XAML můžete nastavit vlastnosti datové vazby pomocí návrhové ploše nebo v okně Vlastnosti. V příkladu v tomto návodu ukazuje, jak k vytvoření vazby dat k ovládacímu prvku. Konkrétně návodu ukazuje, jak vytvořit jednoduchou nákupního košíku třídu, která má [DependencyProperty](/uwp/api/Windows.UI.Xaml.DependencyProperty) s názvem `ItemCount`a pak vytvoříte vazbu `ItemCount` vlastnost **Text** vlastnost nástroje [TextBlock](/uwp/api/Windows.UI.Xaml.Controls.TextBlock) ovládacího prvku.
 

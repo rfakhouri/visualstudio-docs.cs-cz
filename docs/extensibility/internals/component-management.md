@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 1ef2edb8996984f943ce3d7ec168eed0692f2493
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110073"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62910377"
 ---
 # <a name="component-management"></a>Správa komponent
 Jednotky úloh v instalačním programu sady Windows se označují jako součásti Instalační služby systému Windows (říká se jim WICs nebo pouze komponenty). Identifikátor GUID identifikuje každý WIC, což je základní jednotkou instalace a pro nastavení, která pomocí Instalační služby systému Windows pro počítání odkazů.

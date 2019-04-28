@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ad4cdb96a8d342e191e5c6e92e2916f49fd6406d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56609849"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62798351"
 ---
 # <a name="performance-rules-reference"></a>Referenční dokumentace pravidel výkonu
 Pravidla výkonu nástrojů pro profilaci poskytují další upozornění a informace o výkonu vaší aplikace. Pravidla výkonu, analýza dat během spuštění profilování, která se shromažďují ze zdrojů, jako jsou Windows a čítače výkonu procesoru. Pravidlo zprávy se zobrazují v okně chybový výstup [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] integrovaného vývojového prostředí. Zprávy jsou uvedeny pomocí jednoho z následujících úrovní pravidlo:

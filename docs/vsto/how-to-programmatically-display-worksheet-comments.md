@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: cc030fed25409f5c034abfd07f1f9358bfea593b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60048525"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62812693"
 ---
 # <a name="how-to-programmatically-display-worksheet-comments"></a>Postupy: Zobrazování komentářů v listech prostřednictvím kódu programu
   Můžete programově zobrazení a skrytí komentářů v listech aplikace Microsoft Office Excel.

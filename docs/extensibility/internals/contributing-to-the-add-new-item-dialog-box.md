@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 77008b6a4403270c77e24607fc0f4f6f4456296e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596617"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62861549"
 ---
 # <a name="contribute-to-the-add-new-item-dialog-box"></a>Přispívání do dialogového okna Přidat novou položku
 Podtyp projektu může poskytnout úplné nový adresář položek **přidat novou položku** dialogové okno tak, že zaregistrujete **přidat položku** šablony v části **projekty** podklíč registru.

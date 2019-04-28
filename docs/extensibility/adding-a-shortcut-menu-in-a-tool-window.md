@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: eede5f76a9689f79e769d23572a1d92f3ae3a867
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56681475"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62891901"
 ---
 # <a name="add-a-shortcut-menu-in-a-tool-window"></a>Přidat místní nabídku v panelu nástrojů
 Tento názorný postup vloží nabídku v panelu nástrojů. Místní nabídka je nabídka, která se zobrazí, když uživatel klepne pravým tlačítkem na tlačítko, textového pole nebo pozadí okna. Příkazy v místní nabídce se chová stejně jako příkazy na jiné nabídky nebo panely nástrojů. Pro podporu místní nabídky, zadejte ho *.vsct* souborů a zobrazit je v reakci na klikněte pravým tlačítkem myši.

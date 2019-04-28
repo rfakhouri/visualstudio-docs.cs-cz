@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 65ac417476752da832e5e9ebe693f6c83a5c1cfe
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57868072"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62797419"
 ---
 # <a name="ca1710-identifiers-should-have-correct-suffix"></a>CA1710: Identifikátory by měly mít správnou příponu
 
@@ -30,7 +30,7 @@ ms.locfileid: "57868072"
 |Kategorie|Microsoft.Naming|
 |Narušující změna|Narušující|
 
-## <a name="cause"></a>příčina
+## <a name="cause"></a>Příčina
 
 Identifikátor nemá správnou příponu.
 
@@ -49,12 +49,12 @@ V následující tabulce jsou uvedeny základní typy a rozhraní, které mají 
 |<xref:System.Attribute?displayProperty=fullName>|Atribut|
 |<xref:System.EventArgs?displayProperty=fullName>|EventArgs|
 |<xref:System.Exception?displayProperty=fullName>|Výjimka|
-|<xref:System.Collections.ICollection?displayProperty=fullName>|Kolekce|
+|<xref:System.Collections.ICollection?displayProperty=fullName>|Shromažďování|
 |<xref:System.Collections.IDictionary?displayProperty=fullName>|Slovník|
-|<xref:System.Collections.IEnumerable?displayProperty=fullName>|Kolekce|
+|<xref:System.Collections.IEnumerable?displayProperty=fullName>|Shromažďování|
 |<xref:System.Collections.Queue?displayProperty=fullName>|Kolekce nebo fronty|
 |<xref:System.Collections.Stack?displayProperty=fullName>|Kolekce nebo zásobníku|
-|<xref:System.Collections.Generic.ICollection%601?displayProperty=fullName>|Kolekce|
+|<xref:System.Collections.Generic.ICollection%601?displayProperty=fullName>|Shromažďování|
 |<xref:System.Collections.Generic.IDictionary%602?displayProperty=fullName>|Slovník|
 |<xref:System.Data.DataSet?displayProperty=fullName>|DataSet|
 |<xref:System.Data.DataTable?displayProperty=fullName>|Kolekci nebo tento objekt DataTable|

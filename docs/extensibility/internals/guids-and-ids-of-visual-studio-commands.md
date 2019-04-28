@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: daf131fd6d7940458252e734ab0cc222f2e3a357
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096127"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62860963"
 ---
 # <a name="guids-and-ids-of-visual-studio-commands"></a>Příkazy identifikátory GUID a ID sady Visual Studio
 Hodnoty GUID a ID příkazů součástí integrovaného vývojového prostředí (IDE) sady Visual Studio jsou definovány v souborech .vsct, které se instalují jako součást sady Visual Studio SDK. Další informace najdete v tématu [příkazy definované prostředím IDE, nabídky a skupiny](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).

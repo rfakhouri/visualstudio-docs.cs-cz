@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 6e60c314a6886831758f403402958cfe97c4a4fc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54795536"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62855426"
 ---
 # <a name="using-the-workflow-designer"></a>Návrhář postupu provádění
 Tato část podrobně popisuje, jak vytvořit nové aktivity a projekty pracovního postupu pomocí integrované návrháře a výraz editor, který je hostitelem některé z návrhářů aktivit.  
@@ -35,11 +35,11 @@ Tato část podrobně popisuje, jak vytvořit nové aktivity a projekty pracovn�
  [Postupy: Používání návrháře proměnných](../workflow-designer/how-to-use-the-variable-designer.md)  
  Ukazuje, jak vytvořit proměnné pro použití v scénáře datových vazeb a podmíněné příkazy.  
   
- [Postupy: Pomocí editoru výrazů](../workflow-designer/how-to-use-the-expression-editor.md)  
+ [Postupy: Používání editoru výrazů](../workflow-designer/how-to-use-the-expression-editor.md)  
  Ukazuje, jak pomocí editoru výrazů zadejte a vyhodnocujte výrazy.  
   
  [Postupy: Používání návrháře importů](../workflow-designer/how-to-use-the-imports-designer.md)  
  Ukazuje, jak zadejte obory názvů pro typy, které můžete použít ve výrazech.  
   
- [Postupy: Pomocí navigace s popisem cesty](../workflow-designer/how-to-use-breadcrumb-navigation.md)  
+ [Postupy: Používání navigace s popisem cesty](../workflow-designer/how-to-use-breadcrumb-navigation.md)  
  Ukazuje, jak přecházet mezi aktivity.

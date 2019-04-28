@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 376dcee6f23ec2633efe1b23f77552ebf33341f2
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56722600"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62891834"
 ---
 # <a name="add-command-line-switches"></a>Přidání přepínačů příkazového řádku
 Můžete přidat přepínače příkazového řádku, které se vztahují k vaší VSPackage při *devenv.exe* provádí. Použití <xref:Microsoft.VisualStudio.Shell.ProvideAppCommandLineAttribute> deklarovat název přepínače a její vlastnosti. V tomto příkladu se přidá MySwitch přepínač pro podtřídou třídy s názvem balíčku VSPackage **AddCommandSwitchPackage** bez argumentů a s VSPackage načteny automaticky.

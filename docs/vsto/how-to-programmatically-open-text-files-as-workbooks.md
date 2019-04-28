@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 61e51f6274bc22ed0d34d33f5ff85bfbfbd927bd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060135"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62812453"
 ---
 # <a name="how-to-programmatically-open-text-files-as-workbooks"></a>Postupy: Otevírání textových souborů jako sešitů prostřednictvím kódu programu
   Jako sešit můžete otevřít textový soubor. Musíte předat název textového souboru, který chcete otevřít. Můžete zadat několik volitelných parametrů, jako je číslo řádku, které analýza kódu na začátku a sloupec formát dat v souboru.

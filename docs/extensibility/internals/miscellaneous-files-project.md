@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 3a1d0530d6a7a759bfab557be1a3d80fcfc9df78
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56630818"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62860082"
 ---
 # <a name="miscellaneous-files-project"></a>Projekt Ostatní soubory
 Když uživatel otevře položky projektu, rozhraní IDE přiřadí různé soubory projektu všechny položky, které nejsou členy všechny projekty v řešení.
@@ -39,7 +39,7 @@ Když uživatel otevře položky projektu, rozhraní IDE přiřadí různé soub
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument>
 - <xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY>
-- [Postupy: Otevřít editoru pro konkrétní projekt](../../extensibility/how-to-open-project-specific-editors.md)
-- [Postupy: Otevřít standardních editorů](../../extensibility/how-to-open-standard-editors.md)
+- [Postupy: Otevření editorů pro konkrétní projekt](../../extensibility/how-to-open-project-specific-editors.md)
+- [Postupy: Otevření standardních editorů](../../extensibility/how-to-open-standard-editors.md)
 - [Přidávání šablon projektů a položek projektů](../../extensibility/internals/adding-project-and-project-item-templates.md)
 - [Přidávání šablon projektů a položek projektů](../../extensibility/internals/adding-project-and-project-item-templates.md)

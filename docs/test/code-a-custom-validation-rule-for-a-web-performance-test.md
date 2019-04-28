@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: c39518c03d1a599dbe9eecac3d609343b7394313
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099751"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62822598"
 ---
 # <a name="code-a-custom-validation-rule-for-a-web-performance-test"></a>Kód vlastního ověřovacího pravidla pro test výkonnosti webu
 
