@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 2c6bf3fb1d2fa5815c361110689efb0cfc248e57
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59659433"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62949029"
 ---
 # <a name="collect-net-framework-memory-data-by-using-the-profiler-command-line"></a>Shromažďování dat o paměti rozhraní .NET Framework pomocí příkazového řádku profileru
 

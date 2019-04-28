@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bb176f09fca04d177ef79d64a6061835669efbe6
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 826031c2030c2ed8662ff98517a36c1a7ade3cde
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56620509"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386652"
 ---
 # <a name="how-to-limit-instrumentation-to-specific-functions"></a>Postupy: Omezení instrumentace na konkrétní funkce
 Instrumentace a shromažďování dat na jeden nebo více funkcí můžete omezit tím, že nastavíte možnosti **Upřesnit** stránku **relace výkonu** nebo cílové stránky binárních vlastností:
@@ -27,7 +27,7 @@ Instrumentace a shromažďování dat na jeden nebo více funkcí můžete omezi
   Limitující kolekce dat tímto způsobem je podporována pouze v případě, že je vybraná metoda profilace instrumentace.
 
 > [!NOTE]
->  Můžete také použít **Upřesnit** stránku **relace výkonu** stránky vlastností pro nastavení Další možnosti, které jsou k dispozici pro nástroje pro profilaci [VSInstr](../profiling/vsinstr.md) příkazového řádku Nástroj instrumentace.
+> Můžete také použít **Upřesnit** stránku **relace výkonu** stránky vlastností pro nastavení Další možnosti, které jsou k dispozici pro nástroje pro profilaci [VSInstr](../profiling/vsinstr.md) příkazového řádku Nástroj instrumentace.
 
 ### <a name="to-limit-instrumentation-to-specific-functions-in-a-performance-session"></a>K omezení instrumentace na konkrétní funkce během relace výkonu
 
@@ -44,7 +44,7 @@ Instrumentace a shromažďování dat na jeden nebo více funkcí můžete omezi
     `FuncSpec` je název oboru názvů a funkce. Má formát `Namespace` **::**`FunctionName`. K oddělení více funkcí použijte středník. Použijte hvězdičku (\*) Chcete-li zadat zástupný znak pro jeden nebo více znaků. Například **/ include: MyNS::\\*** Určuje všechny funkce v oboru názvů MyNS.
 
    > [!NOTE]
-   >  Seznam funkcí v binární soubor, otevřete okno příkazového řádku v instalačním adresáři nástroje pro profilaci (naleznete v tématu [zadejte cestu k nástrojům příkazového řádku](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)) a pak zadejte **vsinstr /DumpFuncs**
+   > Seznam funkcí v binární soubor, otevřete okno příkazového řádku v instalačním adresáři nástroje pro profilaci (naleznete v tématu [zadejte cestu k nástrojům příkazového řádku](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)) a pak zadejte **vsinstr /DumpFuncs**
 
 ### <a name="to-limit-instrumentation-to-specific-functions-in-a-binary"></a>K omezení instrumentace na konkrétní funkce v binární soubor
 
@@ -63,7 +63,7 @@ Instrumentace a shromažďování dat na jeden nebo více funkcí můžete omezi
     `FuncSpec` je název oboru názvů a funkce. Má formát `Namespace` **::**`FunctionName`. K oddělení více funkcí použijte středník. Použijte hvězdičku (\*) Chcete-li zadat zástupný znak pro jeden nebo více znaků. Například **/ include: MyNS::\\*** Určuje všechny funkce v oboru názvů MyNS.
 
    > [!NOTE]
-   >  Seznam funkcí v binární soubor, otevřete okno příkazového řádku v instalačním adresáři nástroje pro profilaci (naleznete v tématu [zadejte cestu k nástrojům příkazového řádku](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)) a pak zadejte **vsinstr /DumpFuncs**
+   > Seznam funkcí v binární soubor, otevřete okno příkazového řádku v instalačním adresáři nástroje pro profilaci (naleznete v tématu [zadejte cestu k nástrojům příkazového řádku](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)) a pak zadejte **vsinstr /DumpFuncs**
 
 ## <a name="see-also"></a>Viz také:
 - [Řízení shromažďování dat](../profiling/controlling-data-collection.md)

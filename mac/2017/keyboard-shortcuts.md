@@ -6,11 +6,11 @@ author: bytesguy
 ms.author: adhartle
 ms.assetid: 48E06A61-7294-4EC8-A09D-1763C32AD910
 ms.openlocfilehash: 498cea9cdc32eab48d4f861f349e2076bb312bb2
-ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58573096"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62997166"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio-for-mac"></a>Výchozí klávesové zkratky v sadě Visual Studio pro Mac
 
@@ -105,7 +105,7 @@ Informace o přístupnost přes klávesnici, naleznete v tématu [jak: Pomocí n
 |Uložit|**⌘S**|
 |Uložit vše|**⇧⌘S**|
 
-## <a name="help"></a>Nápověda
+## <a name="help"></a>Help
 
 |Příkazy|Klávesové zkratky|
 |-|-|

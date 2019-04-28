@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: d781b2fe3ab597760a397c6ff0ec3c946bbe7653
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60083371"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63009408"
 ---
 # <a name="walkthrough-create-a-basic-site-definition-project"></a>Návod: Vytvoření základního projektu definice webu
   Tento návod ukazuje, jak vytvořit základní definici webu obsahující vizuální webovou část s některými ovládacími prvky na něj. Vizuální webové části, který vytvoříte přehlednosti má několik ovládacích prvků. Můžete však vytvořit složitější definic webu služby SharePoint, které zahrnují další funkce.

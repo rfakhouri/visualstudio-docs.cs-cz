@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e2ade3e1b5a2317d16d668079275506509aeef7a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60083098"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63001108"
 ---
 # <a name="concurrency-visualizer-sdk"></a>SDK Vizualizéru souběžnosti
 Můžete použít zdrojový kód pomocí sada Vizualizátor souběžnosti SDK k zobrazení dalších informací ve vizualizátoru souběžnosti. Doplňující data můžete přidružit fází a události ve vašem kódu. Tyto další vizualizace, jsou označovány jako *značky*.  Úvodní prohlídka, naleznete v tématu [Představujeme sada Vizualizátor souběžnosti SDK](http://go.microsoft.com/fwlink/?LinkId=235405).

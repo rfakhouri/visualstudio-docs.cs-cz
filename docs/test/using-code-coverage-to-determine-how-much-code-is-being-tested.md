@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a76b40e2a9848b0f80e755d15a9bd6e65fcf51da
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57222906"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62973053"
 ---
 # <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>Určení rozsahu testovaného kódu pomocí pokrytí kódu
 
@@ -240,7 +240,7 @@ Použijte následující makra:
 - Vyloučení musí být kompilována jako nespravovaný (nativní) kód buď nastavením možnosti kompilátoru, nebo pomocí `#pragma managed(off)`.
 
 > [!NOTE]
-> Pro vyloučení funkcí v jazyce C + +/ CLI kódu, použijte atribut `[System::Diagnostics::CodeAnalysis::ExcludeFromCodeCoverage]` funkci. Toto je stejné použití jako v jazyce C#.
+> Pro vyloučení funkcí v C++vyhodnocovací kódu, použijte atribut `[System::Diagnostics::CodeAnalysis::ExcludeFromCodeCoverage]` funkci. Toto je stejné použití jako v jazyce C#.
 
 ### <a name="include-or-exclude-additional-elements"></a>Zahrnutí nebo vyloučení dalších prvků
 

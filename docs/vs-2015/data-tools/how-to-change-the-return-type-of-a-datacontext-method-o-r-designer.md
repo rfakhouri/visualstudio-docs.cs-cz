@@ -9,12 +9,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3e44a2c9b5fab120432f412e7c70f35c8e1ecafd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: b51eff1525e166768c78b84a799f06e22045fb91
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60077469"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386822"
 ---
 # <a name="how-to-change-the-return-type-of-a-datacontext-method-or-designer"></a>Postupy: Změnu návratového typu metody DataContext (O/R Designer)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "60077469"
 Návratový typ <xref:System.Data.Linq.DataContext> – metoda (založeno na uložená procedura nebo funkce) se liší v závislosti na tom, kde vyřaďte uloženou proceduru nebo funkci v [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]. Pokud přetáhnete položku přímo do existující entity třídy, <xref:System.Data.Linq.DataContext> metodu, která má návratový typ třídy entita se vytvoří (Pokud je schéma dat vrácené uloženou proceduru nebo funkci odpovídá obrazec třídy entity). Pokud přetáhnete položku na prázdnou oblast [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)], <xref:System.Data.Linq.DataContext> vytvořené metodou, která vrací automaticky generovanému typu. Můžete změnit návratový typ <xref:System.Data.Linq.DataContext> metoda po přidání do podokna metody. Zkontrolovat nebo změnit návratový typ <xref:System.Data.Linq.DataContext> metoda, vyberte ho a klikněte **návratový typ** vlastnost v **vlastnosti** okna.  
   
 > [!NOTE]
->  Nejde vrátit zpět <xref:System.Data.Linq.DataContext> metody, které mají návratový typ nastavena na třídu entity k vrácení automaticky generovaný typ pomocí **vlastnosti** okna. Vrátit zpět <xref:System.Data.Linq.DataContext> metodu pro návrat na automaticky generovaný typ, je třeba přetáhnout na původní objekt databáze znovu do Návrháře relací objektů.  
+> Nejde vrátit zpět <xref:System.Data.Linq.DataContext> metody, které mají návratový typ nastavena na třídu entity k vrácení automaticky generovaný typ pomocí **vlastnosti** okna. Vrátit zpět <xref:System.Data.Linq.DataContext> metodu pro návrat na automaticky generovaný typ, je třeba přetáhnout na původní objekt databáze znovu do Návrháře relací objektů.  
   
  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   

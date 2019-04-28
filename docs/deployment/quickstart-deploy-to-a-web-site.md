@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 41b8a6a7c075a72f010de1e3b57d5a47514498dd
-ms.sourcegitcommit: 612f8c21d1448f1a013c30100cdecfbec5ddb24f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/01/2019
-ms.locfileid: "55571045"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62930274"
 ---
 # <a name="publish-a-web-app-to-a-web-site-using-visual-studio"></a>Publikování webové aplikace na webu pomocí sady Visual Studio
 
@@ -24,7 +24,7 @@ Můžete použít **publikovat** nástroj pro publikování aplikací ASP.NET, A
 [!INCLUDE [quickstart-prereqs](includes/quickstart-prereqs.md)]
 
 > [!NOTE]
-> Pokud potřebujete k publikování aplikací pro stolní počítače Windows do sdíleného síťového umístění, přečtěte si [nasazení stolní aplikace pomocí technologie ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# nebo Visual Basic). Pro C + +/ CLR, najdete v článku [nasazení nativní aplikace pomocí technologie ClickOnce](/cpp/ide/clickonce-deployment-for-visual-cpp-applications) nebo C/C++, naleznete v tématu [nasazení nativní aplikace pomocí projektu instalace](/cpp/ide/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
+> Pokud potřebujete k publikování aplikací pro stolní počítače Windows do sdíleného síťového umístění, přečtěte si [nasazení stolní aplikace pomocí technologie ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# nebo Visual Basic). Pro C++/CLR, najdete v článku [nasazení nativní aplikace pomocí technologie ClickOnce](/cpp/ide/clickonce-deployment-for-visual-cpp-applications) nebo pro C /C++, naleznete v tématu [nasazení nativní aplikace pomocí projektu instalace](/cpp/ide/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
 
 ## <a name="publish-to-a-web-site"></a>Publikování na web
 

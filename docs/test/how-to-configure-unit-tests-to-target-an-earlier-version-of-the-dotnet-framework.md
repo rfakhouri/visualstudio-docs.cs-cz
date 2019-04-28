@@ -8,11 +8,11 @@ ms.workload:
 - dotnet
 author: gewarren
 ms.openlocfilehash: 0d77bd4fa5a1797b5e405c0b1af12cd1c24b18f7
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58415938"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62979363"
 ---
 # <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>Postupy: Konfigurace testů jednotek pro cílení na dřívější verzi rozhraní .NET Framework
 
@@ -74,7 +74,7 @@ Když míříte znovu používat starší verze rozhraní .NET Framework testova
 
    ![Cílové rozhraní framework rozevírací&#45;seznamu dolů](../test/media/howtoconfigureunittest35frameworkcsharp.png)
 
-## <a name="retargeting-for-ccli-unit-test-projects"></a>Mění se cílení v C + +/ CLI projektů testů jednotek
+## <a name="retargeting-for-ccli-unit-test-projects"></a>Mění se cílení pro C++/projekty testování částí rozhraní příkazového řádku
 
 1. Vytvořit nový C++ **projekt testu jednotek** projektu.
 

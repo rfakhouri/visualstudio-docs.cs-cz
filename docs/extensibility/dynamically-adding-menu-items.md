@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 18c2100341a62abd0f8f12bd4b459c7e271a15bc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60048707"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62912517"
 ---
 # <a name="dynamically-add-menu-items"></a>Dynamicky přidat položky nabídky
 Můžete přidat položky nabídky v době běhu tak, že zadáte `DynamicItemStart` příkazu příznak na definici tlačítko zástupný symbol v příkazu table sady Visual Studio (*.vsct*) souboru a pak definovat (v kódu) počet položek nabídky pro zobrazení a zpracování příkazy. Při načítání sady VSPackage zástupný text nahrazen dynamickou nabídku položky.

@@ -13,12 +13,12 @@ ms.assetid: ba237712-f8c4-4d13-854b-ab4a16afa309
 caps.latest.revision: 128
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 05fd28e6b47d74c28edc491458b73b487d282a45
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: a2418df5a831416d74328e4ca926cdf8c3a721e2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60067726"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63383432"
 ---
 # <a name="welcome-to-visual-studio-2015"></a>Vítá vás Visual Studio 2015
 [!INCLUDE[vs2017banner](includes/vs2017banner.md)]
@@ -26,9 +26,9 @@ ms.locfileid: "60067726"
 Vítá vás Visual Studio! Máme všechno, co potřebujete k vytváření skvělých aplikací pro zařízení nebo aplikace klasické pracovní plochy, webu a v cloudu. Psaní kódu pro iOS, Android a Windows v jedné integrované vývojové prostředí. Získejte skvělé technologie IntelliSense, navigace v kódu snadné, rychlé sestavení a rychlé nasazení. Visual Studio zvyšují produktivitu a usnadňuje práci samostatně nebo jako součást větší tým.
 
 > [!NOTE]
->  Kliknutím sem získáte poznámky k verzi pro [Visual Studio 2015 update 3](https://www.visualstudio.com/news/releasenotes/vs2015-update3-vs).
+> Kliknutím sem získáte poznámky k verzi pro [Visual Studio 2015 update 3](https://www.visualstudio.com/news/releasenotes/vs2015-update3-vs).
 >
->  Kliknutím sem získáte poznámky k verzi pro [Visual Studio 2017](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes).
+> Kliknutím sem získáte poznámky k verzi pro [Visual Studio 2017](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes).
 
  Stáhněte si [Visual Studio Community](http://go.microsoft.com/fwlink/?LinkId=517106) zdarma a pusťte se do programování. Pokud chcete provést vývoj pro různé platformy, ujistěte se, že nainstalujete nepovinné balíčky. (Můžete získat víc funkcí s [jiných edicích sady Visual Studio](http://www.visualstudio.com/products/compare-visual-studio-products-vs).)
 

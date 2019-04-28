@@ -1,20 +1,20 @@
 ---
-title: Editor zdrojového kódu
+title: Editor zdroje
 description: Pomocí editoru zdrojového kódu v sadě Visual Studio for Mac
 author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: A018A314-C1C4-4F36-BCB6-2D434208FCFE
 ms.openlocfilehash: b284cde511b17863861908d9967bbea7672e297b
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295693"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63000270"
 ---
 # <a name="source-editor"></a>Editor zdrojového kódu
 
-Editor spolehlivý zdroj je zásadní pro ve zhuštěné a efektivní psaní kódu. Visual Studio for Mac obsahuje editor sofistikované zdrojového kódu, který je v centru vaši interakci s integrovaného vývojového prostředí. Editor zdrojového kódu obsahuje funkce, které můžou očekávat a potřebují k práci s lehkostí a elegancí: od základů takové zvýrazňování syntaxe, fragmenty kódu a skrývání kódu k výhodám její integraci kompilátoru Roslyn jako plně funkční IntelliSense kódu dokončení.
+Editor spolehlivý zdroj je zásadní pro ve zhuštěné a efektivní psaní kódu. Visual Studio for Mac obsahuje editor sofistikované zdrojového kódu, který je v centru vaši interakci s integrovaného vývojového prostředí. Editor zdrojového kódu obsahuje funkce, které můžou očekávat a potřebují k práci s lehkostí a elegancí: Od základů takové zvýrazňování syntaxe, fragmenty kódu a skrývání kódu k výhodám její integraci kompilátoru Roslyn jako plně funkční IntelliSense dokončování kódu.
 
 Editor zdrojového kódu v sadě Visual Studio for Mac umožňuje bezproblémové prostředí pro všechny ostatní funkce v rozhraní IDE, jako je ladění, refaktoring a integraci správy verzí.
 
@@ -50,7 +50,7 @@ Tuto položku je také možné povolit nebo zakázat skrývání kódu.
 
 Může být nutné k zobrazení neviditelné znaky ve zdrojovém kódu. Je to způsob viditelné, abyste měli jistotu, že jste už týkajícími se standardy kódování a není zbytečně zabírat místo. Je také užitečné při psaní F#, která závisí na přesně odsazené řádky za vaše rozhodnutí vyzkoušet kód.
 
-Nastavit možnosti Zobrazit prázdné znaky tak, že přejdete do **sady Visual Studio > Předvolby > textový Editor > značky a pravítka**. Tato volba povolí nastavení _při_ zobrazí neviditelné znaky: Nikdy, na výběr, nebo vždy:
+Nastavit možnosti Zobrazit prázdné znaky tak, že přejdete do **sady Visual Studio > Předvolby > textový Editor > značky a pravítka**. Tato volba povolí nastavení _při_ neviditelné znaky se zobrazí: Nikdy na výběr, nebo vždy:
 
 ![Zobrazit možnosti neviditelné znaky](media/source-editor-image3.png)
 

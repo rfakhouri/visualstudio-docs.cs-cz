@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 7b57e07245631d37594d66ea7907b16efd817b2b
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54869486"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63008240"
 ---
 # <a name="verify-and-debug-sharepoint-code"></a>Ověřte a ladění kódu pro SharePoint
 Pomocí IntelliTrace a testování částí lze snadněji ladit řešení služby SharePoint a zajistit správnou funkčnost každé metody. Tyto funkce můžete použít pro projekty služby SharePoint v sadě Visual Studio podle stejného postupu jako u ostatních typů projektů.

@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 42cd2ec74c92bce545c459765f32eea479a2d5b3
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 5bf3fcf00486ebb8ec54f2d692d483a7f9cf18d7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56694618"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387659"
 ---
 # <a name="how-to-use-the-finder-tool"></a>Postupy: Používání vyhledávacího nástroje
 Tažením nástroje hledání v můžete použít **najít okno** dialogové okno Vlastnosti okna a zprávy zobrazíte. Tažením nástroje hledání můžete také najít zakázané podřízená okna a rozpoznat, které okno, abyste měli na očích Pokud zakázané podřízená okna se překrývají.
@@ -41,7 +41,7 @@ Tažením nástroje hledání v můžete použít **najít okno** dialogové okn
      Pokud máte popisovač okna, které chcete prověřit (například zkopírovat z ladicího programu), zadejte ho do **zpracování** textového pole.
 
    > [!TIP]
-   >  Chcete-li přehlednost obrazovky, vyberte **skrýt Spy** možnost. Tato možnost ukrývá hlavním nástroje Spy ++ okně byste museli opustit pouze **najít okno** dialogové okno viditelné nad vaší aplikace. Obnovení hlavního okna nástroje Spy ++, po kliknutí na **OK** nebo **zrušit**, nebo pokud zrušíte výběr **skrýt Spy ++** možnost.
+   > Chcete-li přehlednost obrazovky, vyberte **skrýt Spy** možnost. Tato možnost ukrývá hlavním nástroje Spy ++ okně byste museli opustit pouze **najít okno** dialogové okno viditelné nad vaší aplikace. Obnovení hlavního okna nástroje Spy ++, po kliknutí na **OK** nebo **zrušit**, nebo pokud zrušíte výběr **skrýt Spy ++** možnost.
 
 4. V části **zobrazit**, vyberte buď **vlastnosti** nebo **zprávy**.
 

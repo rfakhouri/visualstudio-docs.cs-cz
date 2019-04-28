@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 794b9605664315e47e7ae2a778c76652c420a7f7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 30211d773036bbe12c0e807e3be18f13793360b7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60066387"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63388634"
 ---
 # <a name="hlsl-shader-debugger"></a>Ladicí program shaderu HLSL
 Ladicí program HLSL v analyzátoru grafiky sady Visual Studio vám pomůže porozumět fungování kódu shaderu HLSL aplikace skutečný podmínek.
@@ -55,7 +55,7 @@ Ladicí program HLSL v analyzátoru grafiky sady Visual Studio vám pomůže por
 2. Pod názvem fáze zřetězení zvolte **spustit ladění**, která se zobrazí jako malá zelená šipka.
 
     > [!NOTE]
-    >  Tento vstupní bod do ladicího programu HLSL ladí pouze první vlákno shaderu pro odpovídající fázi, tedy první vrchol nebo pixel, který je zpracován. Historie pixelů můžete použít pro přístup k jiným vláknům těchto fází shaderu.
+    > Tento vstupní bod do ladicího programu HLSL ladí pouze první vlákno shaderu pro odpovídající fázi, tedy první vrchol nebo pixel, který je zpracován. Historie pixelů můžete použít pro přístup k jiným vláknům těchto fází shaderu.
 
 #### <a name="to-start-the-hlsl-debugger-from-the-graphics-pixel-history"></a>Spuštění ladicího programu HLSL z okna Historie pixelů grafiky
 
@@ -68,7 +68,7 @@ Ladicí program HLSL v analyzátoru grafiky sady Visual Studio vám pomůže por
     Napravo od vybraného shaderu zvolte **spustit ladění**, která se zobrazí jako malá zelená šipka.
 
    > [!NOTE]
-   >  Tento vstupní bod do ladicího programu HLSL ladí buď vlákno funkce pixel shader, které odpovídá zvolenému volání draw, primitivu a pixelu, nebo vlákna funkce vertex shader, jejichž výsledky jsou interpolovány voláním draw, primitivem a pixelem, které jste vybrali. U funkcí vertex shader můžete dále upřesnit vstupní bod do určitého vrcholu rozbalením podrobností funkce vertex shader.
+   > Tento vstupní bod do ladicího programu HLSL ladí buď vlákno funkce pixel shader, které odpovídá zvolenému volání draw, primitivu a pixelu, nebo vlákna funkce vertex shader, jejichž výsledky jsou interpolovány voláním draw, primitivem a pixelem, které jste vybrali. U funkcí vertex shader můžete dále upřesnit vstupní bod do určitého vrcholu rozbalením podrobností funkce vertex shader.
 
    Příklady o tom, jak použít ladicí program HLSL k ladění chyb shaderu naleznete v tématu [příklady](graphics-diagnostics-examples.md) nebo v návodech v části Viz také.
 

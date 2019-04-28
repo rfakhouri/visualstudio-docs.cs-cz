@@ -8,11 +8,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 048116c07f30267c6beb2703c3eaa6fb4d3655f0
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58415522"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62998941"
 ---
 # <a name="properties-of-domain-roles"></a>Vlastnosti rolí domény
 Vlastnosti v následující tabulce jsou spojeny s rolí domény. Informace o rolích domény najdete v tématu [porozumění modelům, třídám a vztahům](../modeling/understanding-models-classes-and-relationships.md). Další informace o tom, jak pomocí těchto vlastností najdete v tématu [přizpůsobení a rozšíření jazyka specifického pro doménu](../modeling/customizing-and-extending-a-domain-specific-language.md).
@@ -26,7 +26,7 @@ Vlastnosti v následující tabulce jsou spojeny s rolí domény. Informace o ro
 |Modifikátor přístupu metody Getter vlastnosti|Modifikátor přístupu pro metodu getter vygenerované vlastnosti (`public`, `internal`, `private`, `protected`, nebo `protected internal`).|`public`|
 |Modifikátor přístupu metody Setter vlastnosti|Modifikátor přístupu pro metodu setter vygenerované vlastnosti (`public`, `internal`, `private`, `protected`, nebo `protected internal`).|`public`|
 |Násobnost|Počet elementů modelu, které můžete přehrát opačné role (`0..1`, `1..1`, `0..*`, nebo `1..*`). Pokud je násobnost `0..*` nebo `1..*`, pak představuje vygenerovaná vlastnost kolekci; jinak vygenerovaná vlastnost představuje prvek jednoho modelu.|Závisí na typu relace a zda je zdrojová nebo cílová role vztahu.|
-|Name|Název role domény. Tato vlastnost nemůže obsahovat prázdné znaky.|Název doménová třída aktéra role pro tuto roli.|
+|Název|Název role domény. Tato vlastnost nemůže obsahovat prázdné znaky.|Název doménová třída aktéra role pro tuto roli.|
 |Rozšíří kopírování|`DoNotPropagateCopy` -Aktéra role zkopírovaný bude mít žádné kopii tohoto odkazu.<br /><br /> `PropagateCopyToLinkOnly` -Zkopírovaný odkaz směřuje ke stávající Aktér opačné role.<br /><br /> `PropagateCopyToLinkAndOppositeRolePlayer` -Zkopírovaný odkaz odkazuje na kopii aktéra opačné role.|`PropagateCopyToLinkAndOppositeRolePlayer` pro zdrojové role přepisovaných objektů.<br /><br /> `DoNotPropagateCopy` pro jiné role.<br /><br /> Další informace najdete v tématu [přizpůsobení chování kopírování](../modeling/customizing-copy-behavior.md)|
 |Rozšíří Delete|`True` Chcete-li odstranit prvek, který přehraje tato role při odstraňování související odkaz.|`True` pro cíl vkládání role.<br /><br /> `False` pro jiné role.|
 |Název vlastnosti|Název vlastnosti vygenerované v kódu aktéra role. Tento název nemůže obsahovat prázdné znaky.|Název opačné role, pokud se tato role má nulovou k jednomu jinému nebo násobnost 1: 1; v opačném případě pluralized název opačné role.|

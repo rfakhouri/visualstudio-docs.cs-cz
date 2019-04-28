@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 101b4ad50777f796a3de82127f6ce3253b26ccaa
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56706753"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62930651"
 ---
 # <a name="spy-toolbar"></a>Panel nástrojů nástroje Spy++
 V panelu nabídek v nástroji Spy ++ se zobrazí panelu nástrojů. K zobrazení nebo skrytí panelu nástrojů na **zobrazení** nabídky, klikněte na tlačítko **nástrojů**.

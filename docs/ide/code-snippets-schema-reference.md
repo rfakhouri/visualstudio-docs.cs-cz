@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a57ff548aeb566605802a0e270534df727a7c0f
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 034fd1f31b24dce2d8ecc3d805b78c35c8498d6c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841854"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62974979"
 ---
 # <a name="code-snippets-schema-reference"></a>Referenční informace ke schématu fragmentů kódu
 
@@ -62,7 +62,7 @@ Určuje jméno autora fragmentu kódu. **Správce fragmentů kódů** zobrazí j
 
 Poskytuje kontejner pro krátké bloky kódu.
 
-### <a name="keywords"></a>Klíčová slova
+### <a name="keywords"></a>klíčová slova
 
 Dvě vyhrazená slova jsou k dispozici pro použití v textu `Code` element: `$end$` a `$selected$`. `$end$` označuje umístění, umístěte kurzor po vložení fragmentu kódu. `$selected$` představuje text vybraný v dokumentu, který má být do fragmentu kódu vložen při jeho vyvolání. Mějme například fragment kódu, který obsahuje:
 
@@ -123,7 +123,7 @@ Tři atributy nejsou k dispozici pro prvek kódu:
 
 - **Druh** - _volitelné_ atribut, který určuje druh kódu, který obsahuje fragment kódu a umístění, ve kterém musí být fragment kódu vložen pro fragment kódu pro kompilaci. Hodnota může být jeden z následujících akcí:
 
-   |Hodnota|Popis|
+   |Value|Popis|
    |-----|-----------|
    |`method body`|Určuje, že fragment kódu je tělo metody, a proto musí být vložen dovnitř deklarace metody.|
    |`method decl`|Určuje, že fragment kódu je metoda, a proto musí být vložen dovnitř třídy nebo modulu.|
@@ -318,10 +318,7 @@ Je vyžadována textová hodnota. Tento text určuje jedinečný identifikátor 
 
 ## <a name="import-element"></a>Import – element
 
-Určuje naimportované obory názvů používané fragmentem kódu technologie IntelliSense.
-
-> [!NOTE]
-> `Import` Element je podporována pouze pro projekty jazyka Visual Basic.
+Určuje, naimportované obory názvů používané fragmentem kódu technologie IntelliSense.
 
 ```xml
 <Import>
@@ -340,9 +337,6 @@ Určuje naimportované obory názvů používané fragmentem kódu technologie I
 ## <a name="imports-element"></a>Imports element
 
 Seskupuje jednotlivé `Import` elementy.
-
-> [!NOTE]
-> `Imports` Element je podporována pouze pro projekty jazyka Visual Basic.
 
 ```xml
 <Imports>
@@ -425,10 +419,7 @@ Literály a objekty nesmí obsahovat **ID** element s hodnotou selected nebo end
 
 ## <a name="namespace-element"></a>Namespace element
 
-Určuje obor názvů, který musí být naimportován, aby bylo možné fragment kódu zkompilovat a spustit. Obor názvů zadaný v `Namespace` element se automaticky přidá do `Imports` příkaz na začátku kódu, pokud ještě neexistuje.
-
-> [!NOTE]
-> `Namespace` Element je podporována pouze pro projekty jazyka Visual Basic.
+Určuje obor názvů, který musí být naimportován, aby bylo možné fragment kódu zkompilovat a spustit. Obor názvů zadaný v `Namespace` element je automaticky přidán do `using` – direktiva nebo `Imports` příkaz na začátku kódu, pokud ještě neexistuje.
 
 ```xml
 <Namespace>
@@ -515,7 +506,7 @@ Seskupuje jednotlivé `Reference` elementy.
 Určuje textovou zkratku, pomocí níž lze fragment kódu vložit. Textová hodnota elementu `Shortcut` element může obsahovat jenom alfanumerické znaky, spojovníky (-) a podtržítka (_).
 
 > [!CAUTION]
-> _ a – nejsou podporované znaky v zkratky fragmentu kódu C++.
+> _ a – nejsou podporované znaky v C++ zkratky fragmentu kódu.
 
 ```xml
 <Shortcut>
@@ -569,11 +560,11 @@ Určuje, jak sada Visual Studio vloží fragment kódu.
 
 Textová hodnota musí být jedna z následujících hodnot:
 
--   `SurroundsWith`: umožňuje umístit kolem vybrané části kódu fragment kódu.
+- `SurroundsWith`: umožňuje umístit kolem vybrané části kódu fragment kódu.
 
--   `Expansion`: umožňuje fragment kódu vložit na pozici kurzoru.
+- `Expansion`: umožňuje fragment kódu vložit na pozici kurzoru.
 
--   `Refactoring`: Určuje, že fragment kódu je používán během refaktoringu jazyka C#. `Refactoring` nelze použít ve vlastních fragmentech kódu.
+- `Refactoring`: Určuje, že fragment kódu je používán během refaktoringu jazyka C#. `Refactoring` nelze použít ve vlastních fragmentech kódu.
 
 ## <a name="snippettypes-element"></a>Snippettypes – element
 

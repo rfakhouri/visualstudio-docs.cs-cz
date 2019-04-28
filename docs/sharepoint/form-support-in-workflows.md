@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 704e08524bb9aaf014dbd29e7df7361a7e1bbefe
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604129"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62967406"
 ---
 # <a name="form-support-in-workflows"></a>Podpora formulářů v pracovních postupech
   Čtyři typy formulářů lze použít v pracovní postup: přidružení, inicializace, úloh a úpravy. Tyto typy formuláře může být založen na formulář ASPX nebo formuláře aplikace InfoPath. Úroveň podpory, který [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] poskytuje pro konkrétní formulář závisí na několika faktorech, které jsou popsány v následujících tabulkách. Další informace o typech formuláře pracovního postupu najdete v tématu [Přehled formuláře pracovního postupu](http://go.microsoft.com/fwlink/?LinkId=185228).
@@ -44,7 +44,7 @@ ms.locfileid: "56604129"
 |Přidružení|-Formuláři odkazuje *Elements.xml* soubor pracovního postupu.<br />– *Elements.xml* soubor pracovního postupu je teď vyčleněný při formuláře je přejmenována nebo odstraněna, nebo při změně jeho cesta nasazení.|-Formuláři importováno, ale neodkazuje v *Elements.xml* pracovního postupu.<br />– *Elements.xml* soubor pracovního postupu není Refaktorovat.|
 |Zahájení|-Formuláře se odkazuje pomocí pracovního postupu v *Elements.xml* soubor pracovního postupu.<br />– *Elements.xml* soubor pracovního postupu je teď vyčleněný při formuláře je přejmenována nebo odstraněna, nebo při změně jeho cesta nasazení.|-Formuláři importováno, ale neodkazuje v *Elements.xml* pracovního postupu.<br />– *Elements.xml* soubor pracovního postupu není Refaktorovat. **Poznámka:**  Pravidla a vlastnosti musí být přidán a změnit pro tento scénář fungovat.|
 |Úloha|-Formuláři odkazuje *Elements.xml* soubor pracovního postupu.<br />– *Elements.xml* soubor pracovního postupu není Refaktorovat.|-Formuláři importováno, ale neodkazuje v *Elements.xml* pracovního postupu.<br />– *Elements.xml* soubor pracovního postupu není Refaktorovat. **Poznámka:**  Pravidla a vlastnosti musí být přidán a změnit pro tento scénář fungovat.|
-|Úpravy|Nelze použít. Formuláře úprav ASPX nelze vytvořit v SharePoint designeru.|Nelze použít. Úpravy formulářů InfoPath nelze vytvořit v aplikaci SharePoint Designer, s výjimkou integrované serveru SharePoint Server pracovního postupu, která není zahrnutá v souboru WSP při exportu pracovního postupu.|
+|Úpravy|Není k dispozici. Formuláře úprav ASPX nelze vytvořit v SharePoint designeru.|Není k dispozici. Úpravy formulářů InfoPath nelze vytvořit v aplikaci SharePoint Designer, s výjimkou integrované serveru SharePoint Server pracovního postupu, která není zahrnutá v souboru WSP při exportu pracovního postupu.|
 
 ## <a name="see-also"></a>Viz také:
 - [Návod: Vytvoření pracovního postupu pomocí formulářů přidružení a inicializace](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)

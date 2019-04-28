@@ -1,5 +1,5 @@
 ---
-title: 'Průvodce: Chybějící objekty z důvodu použití funkce Vertex Shading | Dokumentace Microsoftu'
+title: 'Návod: Chybějící objekty z důvodu použití funkce Vertex Shading | Dokumentace Microsoftu'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: e42b54a0-8092-455c-945b-9ecafb129d93
@@ -8,25 +8,25 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 14a7ffd3542fd9562488b3b442f1efe19f44a869
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: cc3bd288044c9fea1da648b64cabc87148b8463a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56691745"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63388604"
 ---
-# <a name="walkthrough-missing-objects-due-to-vertex-shading"></a>Průvodce: Chybějící objekty z důvodu použití funkce Vertex Shading
+# <a name="walkthrough-missing-objects-due-to-vertex-shading"></a>Návod: Chybějící objekty z důvodu použití vertex shaderu
 Tento návod ukazuje, jak používat [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] nástrojů diagnostiky grafiky k prozkoumání objekt, který nebyl nalezen z důvodu chyby, ke které dojde během fáze vertex shader.
 
  Tento návod ilustruje tyto úkoly:
 
--   Použití **seznam událostí grafiky** k vyhledání potenciálních zdrojů problému.
+- Použití **seznam událostí grafiky** k vyhledání potenciálních zdrojů problému.
 
--   Použití **fáze zřetězení grafiky** okna zkontrolovat dopad `DrawIndexed` volání rozhraní API Direct3D.
+- Použití **fáze zřetězení grafiky** okna zkontrolovat dopad `DrawIndexed` volání rozhraní API Direct3D.
 
--   Použití **ladicí program HLSL** prozkoumat vertex shader.
+- Použití **ladicí program HLSL** prozkoumat vertex shader.
 
--   Použití **zásobník volání událostí grafiky** vám pomohou najít zdroje nesprávné konstanty HLSL.
+- Použití **zásobník volání událostí grafiky** vám pomohou najít zdroje nesprávné konstanty HLSL.
 
 ## <a name="scenario"></a>Scénář
  Jednou z běžných příčin chybí objekt v 3D aplikaci nastane vertex shader vrcholů objektu transformuje nesprávné nebo neočekávaným způsobem, například objekt může být škálovat velmi malé velikosti, nebo transformovat tak, aby se zobrazí za fotoaparátu/kamery , spíše než před tímto prvkem.
@@ -61,7 +61,7 @@ Tento návod ukazuje, jak používat [!INCLUDE[vsprvs](../../code-quality/includ
     V **fáze zřetězení grafiky** okně **vstupní Assembler** fáze ukazuje geometrie objektu před jeho transformovaný a **Vertex Shader** fáze zobrazuje stejné objekt po je transformaci. V tomto scénáři, víte, že jakmile se zobrazí v nenajdete chybějícím objektu **vstupní Assembler** fáze, ale nic se zobrazí v **Vertex Shader** fázi.
 
    > [!NOTE]
-   >  Pokud jiných geometrie fází – například, Shader trupu, Shader domény a Shader geometrie fází – proces objektu, mohou být příčinou problému. Obvykle problém souvisí s první fáze, ve kterém se nezobrazuje výsledek, nebo se zobrazí neočekávaným způsobem.
+   > Pokud jiných geometrie fází – například, Shader trupu, Shader domény a Shader geometrie fází – proces objektu, mohou být příčinou problému. Obvykle problém souvisí s první fáze, ve kterém se nezobrazuje výsledek, nebo se zobrazí neočekávaným způsobem.
 
 4. Zastavte při dosažení volání draw, která odpovídá chybějícím objektu. V tomto scénáři **fáze zřetězení grafiky** okno znamená, že byl vydán geometrii GPU (označená miniaturu vstupní Assembler), ale nezobrazí v cíle vykreslování, protože došlo k chybě během fáze shader vrcholu (označená miniaturu Vertex Shader):
 
@@ -104,7 +104,7 @@ Tento návod ukazuje, jak používat [!INCLUDE[vsprvs](../../code-quality/includ
     ![Kód, který nastaví konstantní vyrovnávací paměti objektu](media/gfx_diag_demo_missing_object_shader_step_7.png "gfx_diag_demo_missing_object_shader_step_7")
 
    > [!TIP]
-   >  Pokud jsou současně ladění vaší aplikace, můžete nastavit zarážku na tomto místě a při vykreslení dalšího snímku se dostanou. Pak si můžete prohlédnout členy `m_marbleConstantBufferData` potvrdit, že hodnota `projection` člen je nastavený na samými nulami, když se naplní vyrovnávací paměť konstant.
+   > Pokud jsou současně ladění vaší aplikace, můžete nastavit zarážku na tomto místě a při vykreslení dalšího snímku se dostanou. Pak si můžete prohlédnout členy `m_marbleConstantBufferData` potvrdit, že hodnota `projection` člen je nastavený na samými nulami, když se naplní vyrovnávací paměť konstant.
 
    Po vyhledání umístění, kde se naplní vyrovnávací paměť konstant a zjistit, že jeho hodnoty pocházejí z proměnné `m_marbleConstantBufferData`, dalším krokem je zjistit, kde `m_marbleConstantBufferData.projection` člen je nastavený na samými nulami. Můžete použít **najít všechny odkazy** rychle vyhledávat kód, který změní hodnotu `m_marbleConstantBufferData.projection`.
 

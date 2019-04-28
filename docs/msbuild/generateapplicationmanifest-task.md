@@ -20,11 +20,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 86593ca3ac437b9a36fb671694898a7d80434eba
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56626619"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63003633"
 ---
 # <a name="generateapplicationmanifest-task"></a>GenerateApplicationManifest – úloha
 Generuje [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifest aplikace nebo nativní manifest. Nativní manifest popisuje komponentu definováním jedinečné identity pro komponentu a identifikaci všech sestavení a souborů, které tvoří součást. A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifest aplikace rozšiřuje nativní manifest označením vstupního bodu aplikace a určením úrovně zabezpečení aplikace.

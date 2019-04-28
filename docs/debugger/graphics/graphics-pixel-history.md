@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 23bdabcdd19bd12729d7b505ef4897d38ba8ad69
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 23ada46a28d692daf238147ea07f34d440a99869
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60100987"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63388588"
 ---
 # <a name="graphics-pixel-history"></a>Historie pixelů grafiky
 Okno historie pixelů grafiky v analyzátoru grafiky sady Visual Studio vám pomůže pochopit, jak je ovlivněna konkrétní pixel událostmi rozhraní Direct3D, ke kterým dochází při snímku hře nebo aplikaci.
@@ -59,7 +59,7 @@ Okno historie pixelů grafiky v analyzátoru grafiky sady Visual Studio vám pom
 3. V rámci primitivních vás zajímá, pomocí následujícího odkazu název shaderu – například pomocí následujícího odkazu **Vertex Shader obj:30** Chcete-li zobrazit zdrojový kód shaderu vrcholu.
 
     > [!TIP]
-    >  Číslo objektu **obj:30**, identifikuje tento shader v celém rozhraní analyzátoru grafiky sady například v okně fáze tabulky a kanál objektu.
+    > Číslo objektu **obj:30**, identifikuje tento shader v celém rozhraní analyzátoru grafiky sady například v okně fáze tabulky a kanál objektu.
 
 ##### <a name="to-debug-a-shader"></a>K ladění shaderu
 

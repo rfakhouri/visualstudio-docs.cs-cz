@@ -23,11 +23,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a69649a7babacb0fe08b483380214f17f2e582f8
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603349"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62974654"
 ---
 # <a name="rc-task"></a>RC – úloha
 Zabalí nástroj Microsoft Windows Resource Compiler *rc.exe*. **RC** úloh zkompiluje prostředky, jako je například kurzorů, ikony, bitmapy, dialogová okna a písma, do prostředku (*.res*) soubor. Další informace najdete v tématu [Resource Compiler](https://docs.microsoft.com/windows/desktop/menurc/resource-compiler).

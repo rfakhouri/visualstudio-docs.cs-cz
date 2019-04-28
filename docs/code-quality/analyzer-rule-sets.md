@@ -1,6 +1,6 @@
 ---
 title: Sady pravidel v analyzátoru
-ms.date: 07/20/2018
+ms.date: 04/22/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - analyzers, rule sets
@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: da5eab1424ac6f6fe580ec0f71ec3efd6e120020
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 32ed328cb399f0cd3e9a2a147d29fad56b845399
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57866994"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387700"
 ---
 # <a name="rule-sets-for-roslyn-analyzers"></a>Sady pravidel pro analyzátory Roslyn
 
@@ -25,7 +25,7 @@ Pokud migrujete ze starší verze "FxCop" statické analýzy kódu pro analyzát
 
 ## <a name="use-analyzer-rule-sets"></a>Použití sad pravidel v analyzátoru
 
-Poté co [instalaci balíčku NuGet analyzátor](install-roslyn-analyzers.md), vyhledejte předem definované pravidlo, nastavte jeho *sady pravidel* adresáři, například *% USERPROFILE %\\.nuget\packages\ Microsoft.codequality.analyzers\<verze > \rulesets*. Odtud lze přetáhnout a vyřadit, nebo zkopírujte a vložte jednu nebo více pravidel do projektu sady Visual Studio v **Průzkumníka řešení**.
+Poté co [instalaci balíčku NuGet analyzátor](install-roslyn-analyzers.md), vyhledejte předem definované pravidlo, nastavte jeho *sady pravidel* adresáře. Například pokud odkazujete `Microsoft.CodeAnalysis.FxCopAnalyzers` analyzátor balíček pak můžete najít jeho adresáře sady pravidel v *% USERPROFILE %\\.nuget\packages\microsoft.codeanalysis.fxcopanalyzers\\\<verze \>\rulesets*. Odtud lze přetáhnout a vyřadit, nebo zkopírujte a vložte jednu nebo více pravidel do projektu sady Visual Studio v **Průzkumníka řešení**.
 
 Chcete-li aktivní sadu pravidel pro analýzu sadu pravidel, klikněte pravým tlačítkem na projekt v **Průzkumníka řešení** a zvolte **vlastnosti**. Na stránkách vlastností projektu, vyberte **analýzy kódu** kartu. V části **spustit tuto sadu pravidel**vyberte **Procházet**a potom vyberte požadované pravidlo sadu, kterou jste zkopírovali do adresáře projektu. Teď vidíte pouze porušení pravidel pro tato pravidla, které jsou povolené v vybranou sadu pravidel.
 

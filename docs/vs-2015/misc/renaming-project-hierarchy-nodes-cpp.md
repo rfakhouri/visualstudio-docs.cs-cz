@@ -10,12 +10,12 @@ helpviewer_keywords:
 ms.assetid: cea5968e-e9f8-41a5-b068-622df542247c
 caps.latest.revision: 12
 manager: jillfra
-ms.openlocfilehash: 7f6406936f293eea9c604b830f8eaab55a90a957
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 3d1d99bd49d7a5fd78b38262725b65c5d1b3aab9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54834566"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62978107"
 ---
 # <a name="renaming-project-hierarchy-nodes-c"></a>Přejmenování uzlů hierarchie projektu (C++)
 Uzel hierarchie projektu složku můžete přejmenovat pomocí rozhraní projektu HierUtil7 nespravované jazyka c++. Další informace najdete v tématu [HierUtil7 ukázka](http://msdn.microsoft.com/29c15184-a70c-4813-86c2-fb1d47442d11).  
@@ -24,7 +24,7 @@ Uzel hierarchie projektu složku můžete přejmenovat pomocí rozhraní projekt
   
 #### <a name="to-expand-the-hierarchy-node-and-rename-the-folder"></a>Rozbalte uzel hierarchie a přejmenovat složku  
   
-1.  Vyberte uzel hierarchie pomocí následující metody:  
+1. Vyberte uzel hierarchie pomocí následující metody:  
   
     ```  
     IfFailGo(pNode->ExtExpand(EXPF_SelectItem, GUID_MacroExplorer));  
@@ -38,7 +38,7 @@ Uzel hierarchie projektu složku můžete přejmenovat pomocí rozhraní projekt
   
      Soubor Hu_node.h najdete ve složce \<kořenové instalace > \Program Files\VSIP 8.0\EnvSDK\common\hierutil7:  
   
-2.  Tím, že publikuje příkaz rename s využitím přejmenujte složku <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.PostExecCommand%2A>  
+2. Tím, že publikuje příkaz rename s využitím přejmenujte složku <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.PostExecCommand%2A>  
   
     ```  
     IfFailGo(srpVsUIShell->PostExecCommand(&guidVSStd97, cmdidRename, 0, NULL));  

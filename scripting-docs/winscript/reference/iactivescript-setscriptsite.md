@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 3fdf5f3ae84d1a991d67170b5f2b02114b91ee05
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58157065"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62935551"
 ---
 # <a name="iactivescriptsetscriptsite"></a>IActiveScript::SetScriptSite
 Informuje o tom skriptovacího stroje ze [iactivescriptsite –](../../winscript/reference/iactivescriptsite.md) lokality rozhraní, které jsou poskytovány tímto hostitelem. Volejte tuto metodu před všemi ostatními [IActiveScript –](../../winscript/reference/iactivescript.md) metody rozhraní se používá.  

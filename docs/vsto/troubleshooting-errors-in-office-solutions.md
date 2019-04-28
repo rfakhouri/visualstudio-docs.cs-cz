@@ -21,11 +21,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: cdfa5724b25a551a65318fea3ebcaf52d7f397ba
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: HT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60084569"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62978442"
 ---
 # <a name="troubleshoot-errors-in-office-solutions"></a>Řešení potíží s chybami v řešeních pro systém Office
   Při provádění následujících úloh při vývoji řešení pro systém Office v sadě Visual Studio se můžete setkat s problémy:

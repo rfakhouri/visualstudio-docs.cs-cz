@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 756b8859c2f13c53eb46a0d9ae9d32836997f70f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9b498bdb491e3a15dddf005d43435d84b837fcd0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55035923"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387749"
 ---
 # <a name="how-to-debug-optimized-code"></a>Postupy: Ladění optimalizovaného kódu
 
@@ -77,7 +77,7 @@ ms.locfileid: "55035923"
 9. Vyberte vlastnosti konfigurace, C/C++, uzel příkazového řádku na stránce Vlastnosti projektu a přidejte `(` [/Zo](/cpp/build/reference/zo-enhance-optimized-debugging) `)` k **další možnosti** textového pole.
 
     > [!WARNING]
-    >  `/Zo` vyžaduje Visual Studio 2013 Update 3 nebo novější.
+    > `/Zo` vyžaduje Visual Studio 2013 Update 3 nebo novější.
     >
     >  Přidání `/Zo` dojde k zakázání [upravit a pokračovat](../debugger/edit-and-continue-visual-csharp.md).
 

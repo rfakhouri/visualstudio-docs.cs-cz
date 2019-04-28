@@ -19,11 +19,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9b47c3315236dc228d3c561c4a3e0f333f5c9600
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56615910"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63007090"
 ---
 # <a name="generateresource-task"></a>GenerateResource – úloha
 Převádí mezi *.txt* a *RESX* (formát založený na formátu XML prostředků) soubory a binární common language runtime *.resources* soubory, které může být vložen do binárního modulu runtime spustitelný soubor nebo soubor zkompilovaný do satelitních sestavení. Tato úloha je obvykle používána pro převod *.txt* nebo *RESX* soubory *.resources* soubory. `GenerateResource` Úkolu je funkčně podobný [resgen.exe](/dotnet/framework/tools/resgen-exe-resource-file-generator).

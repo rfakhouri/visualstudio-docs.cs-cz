@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 37639068b74b5d99864871355a8b9ef36906f6cd
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628725"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62987988"
 ---
 # <a name="api-reference-sharepoint-tools-extensibility"></a>Reference k rozhraní API (rozšíření nástrojů služby SharePoint)
   Tato část obsahuje referenční dokumentaci rozhraní API pro rozšíření nástrojů SharePoint v sadě Visual Studio.

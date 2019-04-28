@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: d1708b742a484a2e7d6d48cf759f15c08711e13d
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58148057"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62979185"
 ---
 # <a name="idebughelper-interface"></a>IDebugHelper – rozhraní
 Slouží jako objekt pro vytváření pro objekt prohlížeče a jednoduché spojovací body. Správce ladění procesu (PDM) implementuje toto rozhraní, která je využívána skriptovací stroje.  

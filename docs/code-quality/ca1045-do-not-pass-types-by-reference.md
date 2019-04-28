@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f64a7f7c018863e85900da2b09e018d29da4dfe
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d5174d00593b44d51b5628851039b1d0a37753c5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55922872"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387485"
 ---
 # <a name="ca1045-do-not-pass-types-by-reference"></a>CA1045: Nepředávejte typy odkazem
 
@@ -43,7 +43,7 @@ ms.locfileid: "55922872"
  I když vrácené hodnoty jsou běžné a nejčastěji používá správné použití `out` a `ref` parametry vyžaduje zprostředkující návrhu a dovednosti kódování. Knihovna architektům, kteří návrhu pro širokou veřejnost, by neměli očekávat uživatelům pracovat s `out` nebo `ref` parametry.
 
 > [!NOTE]
->  Při práci s parametry, které jsou velké struktury další prostředky, které jsou nutné ke zkopírování těchto struktur může způsobit, že vliv výkon při předání hodnotou. V těchto případech můžete zvážit použití `ref` nebo `out` parametry.
+> Při práci s parametry, které jsou velké struktury další prostředky, které jsou nutné ke zkopírování těchto struktur může způsobit, že vliv výkon při předání hodnotou. V těchto případech můžete zvážit použití `ref` nebo `out` parametry.
 
 ## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
  Chcete-li opravit porušení tohoto pravidla, která je způsobeno tím, typ hodnoty, mají metoda vrátit objekt jako jeho návratovou hodnotu. Metoda musí vracet více hodnot, změnit návrh jej vrátí jednu instanci objektu, který obsahuje hodnoty.

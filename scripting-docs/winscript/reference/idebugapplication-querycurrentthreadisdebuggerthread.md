@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 2ed53bcdb5e0d613a757c0c60f4791b0c59e3476
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58154254"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62990807"
 ---
 # <a name="idebugapplicationquerycurrentthreadisdebuggerthread"></a>IDebugApplication::QueryCurrentThreadIsDebuggerThread
 Určuje, zda je aktuální vlákno spuštěné vlákno ladicího programu.  
@@ -39,7 +39,7 @@ HRESULT QueryCurrentThreadIsDebuggerThread();
 ## <a name="return-value"></a>Návratová hodnota  
  Metoda vrátí `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
   
-|Hodnota|Popis|  
+|Value|Popis|  
 |-----------|-----------------|  
 |`S_OK`|Metoda byla úspěšná a aktuální vlákno spuštěné vlákno ladicího programu.|  
 |`S_FALSE`|Aktuální spuštěné vlákno není vlákno ladicího programu.|  

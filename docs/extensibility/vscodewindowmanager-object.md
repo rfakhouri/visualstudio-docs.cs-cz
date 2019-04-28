@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 3fa291eace866dd7c65aaa8263f036dbe388a475
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56711082"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950931"
 ---
 # <a name="vscodewindowmanager-object"></a>Vscodewindowmanager – objekt
 Služba jazyka implementuje Správce oken kódu a zodpovídá za správu vylepšení (například panel rozevíracího seznamu). Další informace najdete v tématu [přizpůsobení kódu Windows s použitím rozhraní API starší verze](../extensibility/customizing-code-windows-by-using-the-legacy-api.md).

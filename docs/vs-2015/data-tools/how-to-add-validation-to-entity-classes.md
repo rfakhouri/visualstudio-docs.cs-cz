@@ -9,12 +9,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 722d318d05b37a7dc9c41c8e7078c9b486de6318
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 5381c33790cbe9a7b5083f29d2602af39387bf61
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59668350"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386748"
 ---
 # <a name="how-to-add-validation-to-entity-classes"></a>Postupy: Přidání ověřování do tříd entit
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "59668350"
  [LINQ to SQL nástroje v sadě Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) poskytuje částečným metodám, které uživatelům umožňují rozšířit kód generovaný návrhářem, který spustí během vložení, aktualizace a odstranění kompletní entit a také během a po jednotlivých sloupců změny.  
   
 > [!NOTE]
->  Toto téma popisuje základní kroky pro přidání ověřování do tříd entit pomocí [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]. Vzhledem k tomu může být obtížné postupovat podle následujících obecných kroků bez ohledu na konkrétní entitu třídu, byl poskytnut návod, který používá skutečná data.  
+> Toto téma popisuje základní kroky pro přidání ověřování do tříd entit pomocí [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]. Vzhledem k tomu může být obtížné postupovat podle následujících obecných kroků bez ohledu na konkrétní entitu třídu, byl poskytnut návod, který používá skutečná data.  
   
 ## <a name="adding-validation-for-changes-to-the-value-in-a-specific-column"></a>Přidání ověřování pro změny s hodnotou v určitém sloupci  
  Tento postup ukazuje, jak ověřit data při změně hodnoty ve sloupci. Protože ověření se provede uvnitř definice třídy (místo v uživatelském rozhraní) je vyvolána výjimka, pokud hodnota způsobí selhání ověření. Implementace zpracování chyb pro kód ve vaší aplikaci, která se pokusí změnit hodnoty ve sloupcích.  
@@ -78,7 +78,7 @@ ms.locfileid: "59668350"
  Kromě kontroly toho hodnoty během změny, můžete také ověřit data při pokusu o aktualizaci třídu úplnou entitu. Ověření během pokusu o aktualizaci můžete porovnat hodnoty ve více sloupcích, pokud to vyžadují obchodní pravidla. Následující postup ukazuje, jak ověřit při pokusu o aktualizaci třídu úplnou entitu.  
   
 > [!NOTE]
->  Ověřovací kód pro aktualizace dokončete tříd entit je proveden v částečnou <xref:System.Data.Linq.DataContext> třídy (místo v dílčí třídě konkrétní entity třídy).  
+> Ověřovací kód pro aktualizace dokončete tříd entit je proveden v částečnou <xref:System.Data.Linq.DataContext> třídy (místo v dílčí třídě konkrétní entity třídy).  
   
 #### <a name="to-validate-data-during-an-update-to-an-entity-class"></a>Ověření dat během aktualizace do třídy entity  
   

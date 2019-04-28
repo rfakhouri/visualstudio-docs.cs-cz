@@ -8,11 +8,11 @@ ms.topic: conceptual
 description: Další informace o benefitech RStudio Desktop součástí předplatných sady Visual Studio Enterprise
 searchscope: VS Subscription
 ms.openlocfilehash: 59d0e3de91417969e904221e05b5fcd74d8ba44a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60043065"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62947058"
 ---
 # <a name="the-rstudio-desktop-benefit-included-in-visual-studio-enterprise-subscriptions"></a>Výhoda RStudio Desktop součástí předplatných sady Visual Studio Enterprise
 

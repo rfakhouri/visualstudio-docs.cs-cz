@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 284948bc1167a78b2e99b02607b94ce28cc47a0e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 535e7ea155200b06b0783e79d95f4eba96ce1eed
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56631039"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63399509"
 ---
 # <a name="debug-xaml-in-blend"></a>Ladění kódu XAML v programu Blend
 Můžete použít nástroje v [!INCLUDE[blend_first](../debugger/includes/blend_first_md.md)] pro ladění XAML ve vaší aplikaci. Při vytváření projektu se zobrazí nějaké chyby v **výsledky** panelu. Klikněte dvakrát na chybu najděte značku týkající se chyby. Pokud potřebujete více místa k práci, můžete skrýt **výsledky** panel stisknutím klávesy F12.
@@ -27,7 +27,7 @@ Můžete použít nástroje v [!INCLUDE[blend_first](../debugger/includes/blend_
  Chyby syntaxe dojít, pokud XAML nebo soubory kódu na pozadí nepostupujte podle pravidla formátování jazyka. Popis chyby, pomůže vám pochopit, jak ho opravit. V seznamu také určuje název souboru a číslo řádku, kde dojde k chybě. XAML chyby jsou uvedené na **značek** kartu **výsledky** panelu.
 
 > [!TIP]
->  XAML je jazyk založený na formátu XML kód a řídí se pravidla syntaxe jazyka XML.
+> XAML je jazyk založený na formátu XML kód a řídí se pravidla syntaxe jazyka XML.
 
  Některé běžné příčiny chyby syntaxe XAML:
 

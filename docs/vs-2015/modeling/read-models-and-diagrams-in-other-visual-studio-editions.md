@@ -11,12 +11,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 20c449148b98c89f1eb64beb61588661f02ab74a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 21dc0cb7f02639ca6faa89ae4c067f21e083d6d3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60073524"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387502"
 ---
 # <a name="read-models-and-diagrams-in-other-visual-studio-editions"></a>Čtení modelů a diagramů v jiných edicích sady Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,14 +31,14 @@ Při otevření modelu ve verzi sady Visual Studio, který nepodporuje vytvořen
  Z tohoto důvodu Pokud si chcete přečíst diagramu UML nebo diagramu vrstev musí máte také přístup k projektu modelování, ve kterém byla vytvořena. Uděláte to buď díky přístupu do projektu z [!INCLUDE[esprscc](../includes/esprscc-md.md)], nebo prostřednictvím provedeného kopírování souborů projektu.  
   
 > [!NOTE]
->  Tato akce není požadována kódu mapy a .NET třídy diagramy generované z kódu. Tyto diagramy lze zobrazit nezávisle na projektu modelování.  
+> Tato akce není požadována kódu mapy a .NET třídy diagramy generované z kódu. Tyto diagramy lze zobrazit nezávisle na projektu modelování.  
   
  Další UML diagram nebo diagramu vrstvy, je minimální sadu souborů, které budete potřebovat:  
   
 - Dva soubory pro diagram, který si chcete přečíst, například diagramů **MyDiagram.classdiagram a MyDiagram.classdiagram.layout**.  
   
     > [!NOTE]
-    >  Pro diagramy vrstev, také byste měli mít soubor s názvem _MyDiagram_**. layerdiagram.suppressions**.  
+    > Pro diagramy vrstev, také byste měli mít soubor s názvem _MyDiagram_**. layerdiagram.suppressions**.  
   
 - Soubor projektu modelování (**MyModel.modelproj**)  
   

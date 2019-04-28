@@ -12,12 +12,12 @@ caps.latest.revision: 42
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: da7b1f1bda7fac222d0d47c6bf2a15eaf3a8396f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: fa3a91df779094e3e11722dfc7bfc03c58bcea7e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60052061"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63383409"
 ---
 # <a name="walkthrough-configuring-and-using-a-custom-rule-set"></a>Návod: Konfigurace a používání vlastní sady pravidel
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -70,7 +70,7 @@ Tento návod ukazuje, jak pomocí nástrojů pro analýzu kódu, které jsou nak
     V nabídce Soubor klikněte na tlačítko **uložit vybrané položky** aktualizovat soubor projektu s jeho nastavení a informace o sadě pravidel, kterou jste vybrali.  
   
    > [!TIP]
-   >  V reálné situaci, je vhodné použít pro určení priority problémy, které chcete cílit s analýzou kódu začínat **Minimální doporučená pravidla** sada pravidel a opravit problémy požadované a postupně přidat Další pravidla nebo pravidlo se nastaví na Najít a opravit další problémy.  
+   > V reálné situaci, je vhodné použít pro určení priority problémy, které chcete cílit s analýzou kódu začínat **Minimální doporučená pravidla** sada pravidel a opravit problémy požadované a postupně přidat Další pravidla nebo pravidlo se nastaví na Najít a opravit další problémy.  
   
    V dalším kroku přidáte nějaký kód do knihovny tříd, který se použije k předvedení porušení CA1704 "Identifikátory by měly být zadány správně" pravidel nástroje Analýza kódu. Další informace najdete v tématu [CA1704: Identifikátory by měly být zadány správně](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md).  
   

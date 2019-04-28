@@ -14,11 +14,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: fa5a6da8d45435fc7c755905a19e95e90a98ad57
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54802385"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63000151"
 ---
 # <a name="legacy-workflow-activities"></a>Aktivity starších verzí pracovních postupů
 [!INCLUDE[wf](../includes/wf-md.md)] obsahuje výchozí sadu aktivit, které poskytují funkce pro tok řízení, podmínky, zpracování událostí, správu stavu a komunikaci s aplikacemi a službami. Při návrhu pracovních postupů, můžete použít aktivity poskytnuté systémem, které jsou poskytovány [!INCLUDE[wfd1](../includes/wfd1-md.md)], nebo můžete vytvořit vlastní vlastní aktivity.  
@@ -80,10 +80,10 @@ ms.locfileid: "54802385"
  [Postupy: Vytvoření sady pravidel aktivit zásad (starší verze)](../workflow-designer/how-to-create-a-policyactivity-rule-set-legacy.md)  
  Ukazuje postup vytvoření sady pravidel aktivit zásad.  
   
- [Postupy: Implementace operace kontraktu WCF (starší verze)](../workflow-designer/how-to-implement-a-windows-communication-foundation-contract-operation-legacy.md)  
+ [Postupy: Implementace operace kontraktu technologie WCF (starší verze)](../workflow-designer/how-to-implement-a-windows-communication-foundation-contract-operation-legacy.md)  
  Zobrazuje kroky k implementaci [!INCLUDE[indigo2](../includes/indigo2-md.md)] smlouvy operace.  
   
- [Postupy: Vyvolání operace kontraktu WCF (starší verze)](../workflow-designer/how-to-invoke-a-windows-communication-foundation-contract-operation-legacy.md)  
+ [Postupy: Vyvolání operace kontraktu technologie WCF (starší verze)](../workflow-designer/how-to-invoke-a-windows-communication-foundation-contract-operation-legacy.md)  
  Ukazuje postup vyvolání [!INCLUDE[indigo2](../includes/indigo2-md.md)] smlouvy operace.  
   
 ## <a name="see-also"></a>Viz také  

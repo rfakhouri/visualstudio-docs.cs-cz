@@ -23,12 +23,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: eb2f257feaa8faa6acf58c8e8763d15d08a1079e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 7a2531f1cc6352a03acf0b3d6af82c35e47c2743
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596565"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387719"
 ---
 # <a name="bdc-model-design-tools-overview"></a>Přehled nástroje pro navrhování modelů služby BDC
   Obchodní Data připojení (BDC) model můžete navrhnout pomocí návrháře služby BDC **podrobnosti metody služby BDC** okně a **služby BDC Explorer**.
@@ -63,13 +63,13 @@ ms.locfileid: "56596565"
  Při výběru uzly v **služby BDC Explorer**, vlastnosti každý uzel, který zvolíte se zobrazí v **vlastnosti** okna. Mnohé z těchto vlastností odpovídají atributy v souboru modelu. Model můžete vyhledat pomocí vyhledávacího pole v horní části **služby BDC Explorer**.
 
 > [!NOTE]
->  **Služby BDC Explorer** nezobrazuje identifikátory, vlastní vlastnosti, lokalizované řetězce, přidružení skupin, akce, deskriptory filtrů, seznamy řízení akce a výchozí hodnoty parametrů.
+> **Služby BDC Explorer** nezobrazuje identifikátory, vlastní vlastnosti, lokalizované řetězce, přidružení skupin, akce, deskriptory filtrů, seznamy řízení akce a výchozí hodnoty parametrů.
 
 ### <a name="define-type-descriptors"></a>Definování popisovače typu
  Použití **služby BDC Explorer** k definování popisovače typu. Průzkumník modelu BDC umožňuje definovat popisovač typu jednou a pak znovu použít tento typ popisovače jinde v modelu. K tomu, popisovač typu zkopírujte a vložte ji na všechny ostatní parametry nebo zadejte popisovač.
 
 > [!NOTE]
->  Změny v původní popisovač typu neovlivňují kopie tento typ popisovače.
+> Změny v původní popisovač typu neovlivňují kopie tento typ popisovače.
 
  Další informace najdete v tématu [jak: Definování deskriptoru typu pro parametr](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).
 

@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: c47ed9639a33ecdea3451c63b729d959f6855e5d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628660"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62982335"
 ---
 # <a name="use-office-functionality-inside-of-visual-studio"></a>Použití funkcí systému Office v sadě Visual Studio
   Při vytváření projektu úrovni dokumentu dokument a přidružené aplikace jsou hostované v sadě Visual Studio vám umožní navrhnout a pracovat přímo s dokumentem. Pokud máte v sadě Visual Studio otevřete aplikaci Microsoft Office, obecně funguje podle očekávání. Některé z funkcí aplikace je však jinou nebo nedostupný.

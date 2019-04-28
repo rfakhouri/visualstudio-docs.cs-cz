@@ -9,13 +9,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e4a56249c0a87b2516dc233818208f7c7c4b696e
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526214"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63002054"
 ---
-# <a name="how-to-use-xml-snippets"></a>Postupy: Použití fragmentů XML
+# <a name="how-to-use-xml-snippets"></a>Postupy: Použití fragmentů kódu XML
 
 Fragmenty XML lze vyvolat pomocí následujících dvou příkazů v místní nabídce editoru XML. **Vložit fragment** příkaz vloží fragment kódu XML na pozici kurzoru. **Obklopit fragmentem** příkaz zabalí fragment kódu XML okolo vybraného textu. Každý fragment kódu XML určil typy fragment kódu. Typy fragment určují, zda fragment kódu je k dispozici **Vložit fragment** příkazu **obklopit fragmentem** příkazu, nebo obojí.
 
@@ -98,7 +98,7 @@ Následující postupy popisují, jak získat přístup k **obklopit fragmentem*
 
 3. Vyberte fragment kódu ze seznamu pomocí myši nebo zadáním názvu fragmentu kódu a stisknutím klávesy **kartu** nebo **Enter**.
 
-## <a name="use-xml-snippets"></a>Použití fragmentů XML
+## <a name="use-xml-snippets"></a>Použití fragmentů kódu XML
 
 Po zvolení fragmentu XML je automaticky vložen text fragmentu kódu na pozici kurzoru. Jsou zvýrazněny všechna upravitelné pole v tomto fragmentu kódu a je automaticky vybrána první upravitelné pole. Aktuálně vybrané pole je zabalená.
 

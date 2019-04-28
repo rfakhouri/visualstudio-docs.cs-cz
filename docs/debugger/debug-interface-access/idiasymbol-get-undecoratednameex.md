@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 83fda196a50c433de182a64f39faef7a6ba6cb17
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f2a952c074e62e7fe999826882e382a552789f3a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56607847"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63400570"
 ---
 # <a name="idiasymbolgetundecoratednameex"></a>IDiaSymbol::get_undecoratedNameEx
 Načte část nebo všechny nedekorovaný název pro C++ dekorovaného názvu (propojení).
@@ -38,19 +38,19 @@ HRESULT get_undecoratedNameEx( 
 
  `pRetVal`
 
-[out] Vrátí že nedekorovaný název pro C++ dekorovaného názvu.
+[out] Vrátí nedekorovaný název C++ dekorovaného názvu.
 
 ## <a name="return-value"></a>Návratová hodnota
  Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí `S_FALSE` nebo kód chyby.
 
 > [!NOTE]
->  Vrácená hodnota `S_FALSE` znamená, že vlastnost není k dispozici pro symbol.
+> Vrácená hodnota `S_FALSE` znamená, že vlastnost není k dispozici pro symbol.
 
 ## <a name="remarks"></a>Poznámky
  `undecorateOptions` Může obsahovat kombinaci následující příznaky.
 
 > [!NOTE]
->  Příznak názvy nejsou definované v sadě DIA SDK, budete muset přidat deklarace do kódu nebo používat nezpracované hodnoty.
+> Příznak názvy nejsou definované v sadě DIA SDK, budete muset přidat deklarace do kódu nebo používat nezpracované hodnoty.
 
 |Příznak|Hodnota|Popis|
 |----------|-----------|-----------------|

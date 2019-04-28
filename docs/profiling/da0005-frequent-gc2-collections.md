@@ -14,13 +14,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e338bb4bc2040359c4b72ba258fcfceb689c6b30
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56600799"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62936571"
 ---
-# <a name="da0005-frequent-gc2-collections"></a>DA0005: Časté kolekce GC2
+# <a name="da0005-frequent-gc2-collections"></a>DA0005: Časté shromažďování GC2
 
 |||
 |-|-|
@@ -30,7 +30,7 @@ ms.locfileid: "56600799"
 |Zpráva|Mnoho objektů je shromažďováno v uvolnění paměti generace 2.|
 |Typ zprávy|Upozornění|
 
-## <a name="cause"></a>příčina
+## <a name="cause"></a>Příčina
  Velké množství paměti objektů .NET jsou právě uvolněny v procesu uvolnění paměti generace 2.
 
 ## <a name="rule-description"></a>Popis pravidla

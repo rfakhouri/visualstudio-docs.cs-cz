@@ -9,12 +9,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a4c170b533b1eadb60be2ec1ca5d5fe000c5b4d6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 76a45297062b42b559f07867b20bdadac79cc082
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60055728"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386846"
 ---
 # <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>Postupy: Zobrazení a úpravy kódu s použitím funkce Náhled definice (Alt + F12)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ Můžete použít **definice operace Peek** příkaz k zobrazení a úpravám k�
  Můžete použít **definice operace Peek** s kódem jazyka C#, Visual Basic a C++. V jazyce Visual Basic **definice operace Peek** zobrazuje odkaz **prohlížeče objektů** pro symboly, které neobsahují metadata definice (například typy rozhraní .NET Framework, které jsou integrované v).  
   
 > [!IMPORTANT]
->  Tento příkaz nelze použít v žádné verzi Express sady Visual Studio 2013.  
+> Tento příkaz nelze použít v žádné verzi Express sady Visual Studio 2013.  
   
 ## <a name="working-with-peek-definition"></a>Práce s náhledem definice  
   
@@ -76,7 +76,7 @@ Můžete použít **definice operace Peek** příkaz k zobrazení a úpravám k�
     |Přepnout mezi oknem editoru kódu a oknem definice|Shift+Esc|  
   
     > [!NOTE]
-    >  Můžete také použít stejné klávesové zkratky pro úpravu kódu v **definice operace Peek** okno jako můžete použít na jiném místě v sadě Visual Studio.  
+    > Můžete také použít stejné klávesové zkratky pro úpravu kódu v **definice operace Peek** okno jako můžete použít na jiném místě v sadě Visual Studio.  
   
 ## <a name="see-also"></a>Viz také  
  [Tipy pro vyšší produktivitu](../ide/productivity-tips-for-visual-studio.md)

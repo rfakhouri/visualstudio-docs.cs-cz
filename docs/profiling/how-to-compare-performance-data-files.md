@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 101512cb15bca022e5e3b473c84bd433a7269e15
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60043630"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62973900"
 ---
 # <a name="how-to-compare-performance-data-files"></a>Postupy: Porovnání datových souborů výkonu
 Můžete porovnat výsledky dvou souborů dat profileru jinou (. *Vsp* nebo. *vsps*) tak, že vytvoříte porovnání ("Diff") sestav nebo zobrazení. Srovnání ukazuje rozdíly, regrese výkonu a vylepšení, ke kterým došlo v jedné relaci profilace na druhý.

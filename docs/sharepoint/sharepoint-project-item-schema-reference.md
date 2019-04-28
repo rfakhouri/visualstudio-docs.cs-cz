@@ -24,11 +24,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: bc15ff5c384ec63f99ed50a5f3c700efd7ba3c18
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56608718"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63007716"
 ---
 # <a name="sharepoint-project-item-schema-reference"></a>Referenční dokumentace schématu položek projektu služby SharePoint
   Visual Studio používá k ověření obsahu schématu položek projektu služby SharePoint *.spdata* soubory. *.Spdata* Určuje soubor obsahu a chování položky Sharepointového projektu. Další informace o obsahu položky Sharepointového projektu naleznete v tématu [položky vytvářet šablony a šablony projektů pro položky Sharepointového projektu](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md).

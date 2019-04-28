@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 997245f8e4fd43ac2162587f07e4c8711af7caac
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58148682"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62992735"
 ---
 # <a name="iactivescriptsitegetiteminfo"></a>IActiveScriptSite::GetItemInfo
 Umožňuje získat informace o položce přidán s skriptovací stroj [IActiveScript::AddNamedItem](../../winscript/reference/iactivescript-addnameditem.md) metody.  
@@ -45,7 +45,7 @@ HRESULT GetItemInfo(
  `dwReturnMask`  
  [in] Bitová maska určující, jaké informace o položce by měla být vrácena. Skriptovací modul by měl požádat o minimální množství informací je to možné, protože některé z návratových parametrů (například `ITypeInfo`) může trvat docela dlouho načíst nebo vytvořit. Může být kombinací následujícího:  
   
-|Hodnota|Význam|  
+|Value|Význam|  
 |-----------|-------------|  
 |SCRIPTINFO_IUNKNOWN|Vrátí `IUnknown` rozhraní pro tuto položku.|  
 |SCRIPTINFO_ITYPEINFO|Vrátí `ITypeInfo` rozhraní pro tuto položku.|  

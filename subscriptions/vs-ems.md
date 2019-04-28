@@ -8,11 +8,11 @@ ms.topic: conceptual
 description: Další informace o Enterprise Mobility + Security výhodu součástí vašeho předplatného sady Visual Studio.
 searchscope: VS Subscription
 ms.openlocfilehash: d670db0d083c4b8f32f970c790859a7c82e5dff1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60073134"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62948869"
 ---
 # <a name="enterprise-mobility--security-ems-in-visual-studio-subscriptions"></a>Enterprise Mobility + Security (EMS) v předplatných sady Visual Studio
 

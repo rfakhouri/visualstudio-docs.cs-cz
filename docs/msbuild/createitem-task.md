@@ -18,18 +18,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a33b8a3f7cfe9dea56ca7abc0f2e82506e3edef1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 369bad5a66ac4a3c41a1a3e22941b11ef27902d2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56600412"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63385906"
 ---
 # <a name="createitem-task"></a>CreateItem – úloha
 Naplní položku kolekce s vstupních položek. To umožňuje položky, které se mají zkopírovat z jednoho seznamu do jiného.
 
 > [!NOTE]
->  Tato úloha je zastaralý. Od verze rozhraní .NET Framework 3.5, položky skupiny může být umístěn v rámci [cílové](../msbuild/target-element-msbuild.md) elementy. Další informace najdete v tématu [položky](../msbuild/msbuild-items.md).
+> Tato úloha je zastaralý. Od verze rozhraní .NET Framework 3.5, položky skupiny může být umístěn v rámci [cílové](../msbuild/target-element-msbuild.md) elementy. Další informace najdete v tématu [položky](../msbuild/msbuild-items.md).
 
 ## <a name="attributes"></a>Atributy
  Následující tabulka popisuje parametry `CreateItem` úloh.

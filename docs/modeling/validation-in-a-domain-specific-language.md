@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 09c16e55766c0239346540dfcc74b99b2ed8579b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: fcc35f74625b17762656451e598d131dfe85417e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60103588"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63385854"
 ---
 # <a name="validation-in-a-domain-specific-language"></a>Ověřování v jazyce specifickém pro doménu
 Jako autoři jazyka specifického pro doménu (DSL) můžete definovat omezení ověření můžete ověřit, že model vytvořený uživatelem smysluplné. Například pokud vaše DSL umožňuje uživatelům nakreslit řady strom osoby a jejich předchůdci, můžete napsat omezení, které zajišťuje, že mají podřízené položky data narození po jejich nadřazených objektů.
@@ -25,7 +25,7 @@ Jako autoři jazyka specifického pro doménu (DSL) můžete definovat omezení 
  Ověření je zvlášť důležité při psaní textové šablony nebo jiné nástroje, které zpracovávají modely vašich uživatelů. Ověření zajišťuje, že modely splňují předpoklady předpokládá, že pomocí těchto nástrojů.
 
 > [!WARNING]
->  Můžete také povolit omezení ověření je definovat v samostatném rozšíření vašeho DSL, společně s příkazy rozšíření nabídky a obslužné rutiny gesta. Uživatelé mohou nainstalovat tato rozšíření kromě vašeho DSL. Další informace najdete v tématu [rozšíření vašeho DSL pomocí MEF](../modeling/extend-your-dsl-by-using-mef.md).
+> Můžete také povolit omezení ověření je definovat v samostatném rozšíření vašeho DSL, společně s příkazy rozšíření nabídky a obslužné rutiny gesta. Uživatelé mohou nainstalovat tato rozšíření kromě vašeho DSL. Další informace najdete v tématu [rozšíření vašeho DSL pomocí MEF](../modeling/extend-your-dsl-by-using-mef.md).
 
 ## <a name="running-validation"></a>Spouštění ověření
  Když uživatel upravuje model, to znamená, že instance jazyka specifického pro doménu tyto akce můžete spustit ověření:
@@ -48,7 +48,7 @@ Jako autoři jazyka specifického pro doménu (DSL) můžete definovat omezení 
  Každá metoda ověřování hlásí chyby, které nalezne.
 
 > [!NOTE]
->  Metody ověřování zprávy o chybách, ale neměňte modelu. Pokud chcete upravit nebo zakázat některé změny, přečtěte si [alternativy k ověření](#alternatives).
+> Metody ověřování zprávy o chybách, ale neměňte modelu. Pokud chcete upravit nebo zakázat některé změny, přečtěte si [alternativy k ověření](#alternatives).
 
 #### <a name="to-define-a-validation-constraint"></a>Chcete-li definovat omezení ověření
 
@@ -310,7 +310,7 @@ private void TestForCircularLinks(ValidationContext context)
 ```
 
 > [!NOTE]
->  Můžete před metodu s tolika `[ValidationMethod()]` atributy, jak chcete. Přidejte metodu pro standardní i vlastní kategorie.
+> Můžete před metodu s tolika `[ValidationMethod()]` atributy, jak chcete. Přidejte metodu pro standardní i vlastní kategorie.
 
  Chcete-li vyvolat vlastní ověřování:
 

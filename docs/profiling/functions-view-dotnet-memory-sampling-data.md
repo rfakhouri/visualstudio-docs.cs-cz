@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: b0e8c14779f9f7b3f14fab2dfc1022db0319aeb4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56637968"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62974056"
 ---
 # <a name="functions-view---net-memory-sampling-data"></a>Zobrazení funkcí – data vzorkování paměti .NET
 Zobrazení funkcí data, která byla shromážděna pomocí metody vzorkování profilace přidělování paměti .NET jsou uvedeny funkce, které přidělené paměti během spuštění profilování a sestavy, velikost a počet přidělení.

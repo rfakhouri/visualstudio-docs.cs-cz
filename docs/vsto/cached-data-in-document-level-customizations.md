@@ -19,11 +19,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 62b0d04e37072af1f0053a6e395edcb856a115c1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56645378"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62939316"
 ---
 # <a name="cached-data-in-document-level-customizations"></a>Data uložená v mezipaměti v přizpůsobeních na úrovni dokumentu
   Primární cílem přizpůsobení na úrovni dokumentu je oddělení dat ze zobrazení v dokumentech systému Office. Data představují informace, které jsou uloženy v dokumentu, včetně čísel a text. Zobrazení odkazuje na uživatelské rozhraní a objektový model Microsoft Office Word a Microsoft Office Excel.

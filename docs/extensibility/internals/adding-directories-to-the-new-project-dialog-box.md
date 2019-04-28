@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 9d8e68413795b7004542ee312dcb27492e55e7f0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56626190"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62910779"
 ---
 # <a name="add-directories-to-the-new-project-dialog-box"></a>Přidat adresářů do dialogového okna Nový projekt
 Při vytváření nových typů projektů také můžete zaregistrovat nový adresář v **nový projekt** dialogové okno se zobrazí pro použití jako šablony. Následující příklad vysvětluje, jak zaregistrovat nový adresář, označované také jako uzel. V tomto příkladu šablony vystavené sady VSPackage *CLSID_Package*, jsou registrované. V důsledku toho na levé straně **nový projekt** dialogové okno nabízí přidání uzel s názvem určené *Folder_Label_ResID* prostředků. Tento prostředek je načtena z balíčku VSPackage satelitní knihovny DLL.

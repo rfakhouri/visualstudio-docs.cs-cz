@@ -18,11 +18,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 00271d77cb5b172fbbbf02682eb7e23c6246ca23
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60064008"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62939331"
 ---
 # <a name="bookmark-control"></a>Bookmark – ovládací prvek
   <xref:Microsoft.Office.Tools.Word.Bookmark> Ovládací prvek je záložku, která má jedinečný název, zpřístupní události a může být vázaný na data. Záložka může sloužit jako zástupný symbol pro označení položku nebo místo v dokumentu aplikace Microsoft Office Word. <xref:Microsoft.Office.Tools.Word.Bookmark> Ovládací prvek je kombinací identifikátoru <xref:Microsoft.Office.Interop.Word.Bookmark> objektu a <xref:Microsoft.Office.Interop.Word.Range> objektu.
